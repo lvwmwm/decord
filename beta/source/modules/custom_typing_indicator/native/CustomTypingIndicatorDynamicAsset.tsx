@@ -1,10 +1,10 @@
-// Module ID: 14583
-// Function ID: 14584
+// Module ID: 14585
+// Function ID: 14586
 // Name: CustomTypingIndicatorDynamicAsset
-// Dependencies: [19, 17, 21, 5306, 6327, 6010, 5919, 1113, 14579, 2]
+// Dependencies: [19, 17, 21, 5306, 6327, 6010, 5919, 1113, 14581, 2]
 // Exports: default
 
-// Module 14583 (CustomTypingIndicatorDynamicAsset)
+// Module 14585 (CustomTypingIndicatorDynamicAsset)
 import react_native from "react-native" /* 17 */;
 import FastImageDefault from "FastImage" /* 6010 */;
 import react from "react" /* 19 */;

@@ -1,22 +1,22 @@
-// Module ID: 18621
-// Function ID: 18622
+// Module ID: 18623
+// Function ID: 18624
 // Name: SystemNotifPermissionLayout
-// Dependencies: [5, 32, 19, 14825, 18622, 1072, 6892, 14826, 21, 3029, 5306, 575, 14835, 18108, 504, 1380, 1256, 14827, 12923, 6327, 7445, 10994, 5919, 1113, 5926, 18625, 8199, 14828, 18626, 2]
+// Dependencies: [5, 32, 19, 14827, 18624, 1072, 6892, 14828, 21, 3029, 5306, 575, 14837, 18110, 504, 1380, 1256, 14829, 12925, 6327, 7445, 10994, 5919, 1113, 5926, 18627, 8199, 14830, 18628, 2]
 // Exports: default
 
-// Module 18621 (SystemNotifPermissionLayout)
+// Module 18623 (SystemNotifPermissionLayout)
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import _modDef3029 from "module_3029" /* 3029 */;
 import NativePermissionConstants from "NativePermissionConstants" /* 6892 */;
-import NotificationPermissionUtil from "NotificationPermissionUtil" /* 14827 */;
+import NotificationPermissionUtil from "NotificationPermissionUtil" /* 14829 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 14825 */;
-import DeclarativeSystemNotifPermissionStore from "DeclarativeSystemNotifPermissionStore" /* 18622 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 14827 */;
+import DeclarativeSystemNotifPermissionStore from "DeclarativeSystemNotifPermissionStore" /* 18624 */;
 import Constants from "Constants" /* 1072 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 14826 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 14828 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
@@ -37,7 +37,7 @@ let obj6;
 let size;
 let tmp;
 let unpackModuleId;
-const react_nativeDefault = tmp(12923);
+const react_nativeDefault = tmp(12925);
 function SystemNotifPermissionHeader() {
   let BellSlashIcon;
   let Button;

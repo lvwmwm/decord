@@ -1,10 +1,10 @@
-// Module ID: 15812
-// Function ID: 15813
+// Module ID: 15814
+// Function ID: 15815
 // Name: ClipsExperiment
 // Dependencies: [5922, 8827, 2133, 1388, 1390, 6065, 504, 2174, 1380, 2]
 // Exports: areClipsAvailable, isClientClipsCapable, isScreenshotKeybindEnabled, isUserPremiumTypeForClipsEarlyAccess, useIsClipsAvailable, useIsClipsPlatformSupported, useScreenshotKeybindEnabled
 
-// Module 15812 (ClipsExperiment)
+// Module 15814 (ClipsExperiment)
 import get_initialized from "get initialized" /* 504 */;
 import PlatformUtilsAll from "PlatformUtils" /* 1380 */;
 import PremiumConstants from "PremiumConstants" /* 1390 */;
@@ -16,7 +16,7 @@ import MediaEngineStore from "MediaEngineStore" /* 2133 */;
 import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 
-const f112368 = () => {
+const f112374 = () => {
   isDeveloper = isDeveloper.isDeveloper && DevSettingsStore.get("clips_ignore_platform_requirement");
   return isDeveloper;
 };
@@ -53,7 +53,7 @@ export function useIsClipsPlatformSupported() {
   const items = [DevSettingsStore, DeveloperExperimentStore];
   const obj3 = get_initialized;
   if (!isDesktopResult) {
-    isDesktopResult = obj3.useStateFromStores(items, f112368);
+    isDesktopResult = obj3.useStateFromStores(items, f112374);
   }
   return isDesktopResult;
 }
@@ -65,7 +65,7 @@ export function useIsClipsAvailable() {
   const items = [DevSettingsStore, DeveloperExperimentStore];
   const obj3 = get_initialized;
   if (!isDesktopResult) {
-    isDesktopResult = obj3.useStateFromStores(items, f112368);
+    isDesktopResult = obj3.useStateFromStores(items, f112374);
   }
   const items1 = [UserStore];
   const tmp4Result = get_initialized;

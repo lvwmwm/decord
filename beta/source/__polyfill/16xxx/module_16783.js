@@ -1,26 +1,42 @@
 // Module ID: 16783
 // Function ID: 16784
-// Dependencies: [16772, 16747]
+// Dependencies: [16775, 16774, 16782]
 
 // Module 16783
-import _mod16747 from "module_16747" /* 16747 */;
-import module_16772 from "module_16772" /* 16772 */;
+import _mod16774 from "module_16774" /* 16774 */;
+import _mod16775 from "module_16775" /* 16775 */;
+import _mod16782 from "module_16782" /* 16782 */;
 
-let _moduleResult = module_16772(_mod16747.document);
-if (_moduleResult) {
-  const _module1 = module_16772;
-  _moduleResult = _module1(_mod16747.document.createElement);
-}
-let c2 = _moduleResult;
 
-export default (arg0) => {
-  let element;
-  const tmp = c2;
-  if (tmp) {
-    const _document = _mod16747.document;
-    element = _document.createElement(arg0);
-  } else {
-    element = {};
+export default (arg0, arg1) => {
+  if ("string" === arg1) {
+    const toString = arg0.toString;
+    if (_mod16775(toString)) {
+      const tmpResult = _mod16774;
+      const tmp4 = _mod16782(toString, arg0);
+      if (!tmpResult(tmp4)) {
+        return tmp4;
+      }
+    }
   }
-  return element;
+  const valueOf = arg0.valueOf;
+  if (_mod16775(valueOf)) {
+    const tmp5Result = _mod16774;
+    const tmp8 = _mod16782(valueOf, arg0);
+    if (!tmp5Result(tmp8)) {
+      return tmp8;
+    }
+  }
+  if ("string" !== arg1) {
+    const toString2 = arg0.toString;
+    if (_mod16775(toString2)) {
+      const tmp5Result2 = _mod16774;
+      const tmp10 = _mod16782(toString2, arg0);
+      if (!tmp5Result2(tmp10)) {
+        return tmp10;
+      }
+    }
+  }
+  const tmp11 = new TypeError("Can't convert object to primitive value");
+  throw tmp11;
 };

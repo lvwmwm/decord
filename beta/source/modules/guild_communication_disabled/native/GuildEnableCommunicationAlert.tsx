@@ -1,10 +1,10 @@
-// Module ID: 14144
-// Function ID: 14145
+// Module ID: 14146
+// Function ID: 14147
 // Name: GuildEnableCommunicationAlert
-// Dependencies: [5, 32, 19, 17, 1388, 5220, 1072, 21, 5306, 9204, 5889, 1256, 14143, 6005, 1113, 6330, 5919, 6341, 10913, 2]
+// Dependencies: [5, 32, 19, 17, 1388, 5220, 1072, 21, 5306, 9204, 5889, 1256, 14145, 6005, 1113, 6330, 5919, 6341, 10913, 2]
 // Exports: default
 
-// Module 14144 (GuildEnableCommunicationAlert)
+// Module 14146 (GuildEnableCommunicationAlert)
 import react_native from "react-native" /* 17 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import CountDownDefault from "CountDown" /* 10913 */;

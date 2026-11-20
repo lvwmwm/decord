@@ -1,10 +1,10 @@
-// Module ID: 19959
-// Function ID: 19960
+// Module ID: 19961
+// Function ID: 19962
 // Name: VoicePanelController
-// Dependencies: [32, 19, 17, 5307, 5154, 7016, 10192, 12904, 12719, 5155, 2133, 6061, 5209, 6891, 11985, 11983, 1072, 5949, 5973, 11986, 21, 19960, 1655, 11333, 1708, 1089, 504, 6005, 1113, 10604, 15767, 19961, 6215, 12741, 19962, 1496, 1630, 19966, 11993, 19967, 11987, 11989, 12, 1269, 1108, 1263, 12013, 13810, 6762, 1256, 11951, 2146, 10041, 7025, 19925, 5367, 19969, 6056, 5491, 6057, 7587, 19970, 19971, 14573, 5227, 19972, 19973, 19978, 19979, 19927, 11995, 11984, 5508, 2]
+// Dependencies: [32, 19, 17, 5307, 5154, 7016, 10192, 12906, 12721, 5155, 2133, 6061, 5209, 6891, 11985, 11983, 1072, 5949, 5973, 11986, 21, 19962, 1655, 11333, 1708, 1089, 504, 6005, 1113, 10604, 15769, 19963, 6215, 12743, 19964, 1496, 1630, 19968, 11993, 19969, 11987, 11989, 12, 1269, 1108, 1263, 12013, 13812, 6762, 1256, 11951, 2146, 10041, 7025, 19927, 5367, 19971, 6056, 5491, 6057, 7587, 19972, 19973, 14575, 5227, 19974, 19975, 19980, 19981, 19929, 11995, 11984, 5508, 2]
 // Exports: default
 
-// Module 19959 (VoicePanelController)
+// Module 19961 (VoicePanelController)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import DurationsDefault from "Durations" /* 1089 */;
@@ -13,15 +13,15 @@ import ActivityPanelConstants from "ActivityPanelConstants" /* 5949 */;
 import CallConstants from "CallConstants" /* 5973 */;
 import MorphablePanelConstants from "MorphablePanelConstants" /* 11986 */;
 import VoicePanelPIPStateContext from "VoicePanelPIPStateContext" /* 11995 */;
-import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 12741 */;
+import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 12743 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5307 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5154 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 7016 */;
 import AppFreezeStore from "AppFreezeStore" /* 10192 */;
-import SafeAreaDisabledStore from "SafeAreaDisabledStore" /* 12904 */;
-import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 12719 */;
+import SafeAreaDisabledStore from "SafeAreaDisabledStore" /* 12906 */;
+import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 12721 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import MediaEngineStore from "MediaEngineStore" /* 2133 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 6061 */;

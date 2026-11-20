@@ -1,13 +1,13 @@
-// Module ID: 16309
-// Function ID: 16310
+// Module ID: 16311
+// Function ID: 16312
 // Name: BuildOverrideModal
-// Dependencies: [19, 17, 12367, 21, 5306, 575, 5537, 5313, 16310, 16311, 504, 14059, 2169, 7415, 6010, 5919, 1113, 5926, 6838, 2]
+// Dependencies: [19, 17, 12367, 21, 5306, 575, 5537, 5313, 16312, 16313, 504, 14061, 2169, 7415, 6010, 5919, 1113, 5926, 6838, 2]
 // Exports: default
 
-// Module 16309 (BuildOverrideModal)
+// Module 16311 (BuildOverrideModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 14059 */;
+import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 14061 */;
 import react from "react" /* 19 */;
 import BuildOverrideStore from "BuildOverrideStore" /* 12367 */;
 import Fragment from "Fragment" /* 21 */;
@@ -56,9 +56,9 @@ export default function BuildOverrideModal(overrideUrl) {
   const tmp4 = stateFromStores(5537)();
   const obj = str(5313);
   if (obj.isThemeDark(tmp4)) {
-    tmp2Result = tmp2(16310);
+    tmp2Result = tmp2(16312);
   } else {
-    tmp2Result = tmp2(16311);
+    tmp2Result = tmp2(16313);
   }
   const items = [BuildOverrideStore];
   const items1 = [str];
@@ -69,7 +69,7 @@ export default function BuildOverrideModal(overrideUrl) {
   if (override != null) {
     const targetBuildOverride = override.targetBuildOverride;
     if (targetBuildOverride != null) {
-      const tmp9 = targetBuildOverride[str(undefined, 14059).DEVICE_FIELD];
+      const tmp9 = targetBuildOverride[str(undefined, 14061).DEVICE_FIELD];
       if (tmp9 != null) {
         id = tmp9.id;
       }

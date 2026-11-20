@@ -1,164 +1,66 @@
 // Module ID: 13909
 // Function ID: 13910
 // Name: tokenize
-// Dependencies: [13831]
+// Dependencies: [13833]
 
 // Module 13909 (tokenize)
-import tokenize from "tokenize" /* 13831 */;
+import tokenize from "tokenize" /* 13833 */;
 
+let items;
 let obj2;
-function eatHexSequence(arg0, arg1) {
-  const self = this;
-  let sum = this.scanner.tokenStart + arg0;
-  let num = 0;
-  let num2 = 0;
-  if (sum < this.scanner.tokenEnd) {
-    while (true) {
-      let source = self.scanner.source;
-      let charCodeAtResult = source.charCodeAt(sum);
-      if (45 === charCodeAtResult) {
-        if (arg1) {
-          if (0 !== num) {
-            break;
-          }
-        }
-      }
-      let obj = tokenize;
-      if (!obj.isHexDigit(charCodeAtResult)) {
-        let str;
-        if (arg1) {
-          if (0 !== num) {
-            let str2 = "";
-            if (num < 6) {
-              str2 = " or hex digit";
-            }
-            let _HermesInternal = HermesInternal;
-            str = "HyphenMinus" + str2 + " is expected";
-            let tmp7Result = tmp7(str, sum);
-          }
-        }
-        str = "Unexpected input";
-        if (num < 6) {
-          str = "Hex digit is expected";
-        }
-      }
-      let sum1 = num + 1;
-      if (6 < sum1) {
-        let errorResult = self.error("Too many hex digits", sum);
-      }
-      sum = sum + 1;
-      num = sum1;
-      num2 = sum1;
-    }
-    if (0 === eatHexSequence.call(self, arg0 + num + 1, false)) {
-      self.error();
-    }
-    return -1;
-  }
-  const iter = self.scanner;
-  iter.next();
-  return num2;
+function consumeRaw(arg0) {
+  return this.Raw(arg0, null, false);
 }
-function eatQuestionMarkSequence(arg0) {
-  let scanner2;
-  const self = this;
-  const scanner = this.scanner;
-  let num = 0;
-  if (scanner.isDelim(63)) {
-    do {
-      let sum = num + 1;
-      if (sum > arg0) {
-        let errorResult = self.error("Too many question marks");
-      }
-      let iter = self.scanner;
-      let nextResult = iter.next();
-      scanner2 = self.scanner;
-      num = sum;
-    } while (scanner2.isDelim(63));
-  }
-}
-function startsWith(arg0) {
-  const self = this;
-  const source = this.scanner.source;
-  if (source.charCodeAt(this.scanner.tokenStart) !== arg0) {
-    self.error(`${tokenize.NAME[arg0]} is expected`);
-  }
-}
-function scanUnicodeRange() {
-  let tmp3;
-  const self = this;
-  const scanner = this.scanner;
-  if (scanner.isDelim(43)) {
-    this.scanner.next();
-    if (self.scanner.tokenType === Ident) {
-      const callResult = eatHexSequence.call(self, 0, true);
-      if (callResult > 0) {
-        eatQuestionMarkSequence.call(self, 6 - callResult);
-      }
-    } else {
-      const scanner3 = self.scanner;
-      if (scanner3.isDelim(63)) {
-        const iter2 = self.scanner;
-        iter2.next();
-        eatQuestionMarkSequence.call(self, 5);
-      } else {
-        self.error("Hex digit or question mark is expected");
-      }
-    }
-    tmp3 = tmp12;
-  } else if (this.scanner.tokenType === Number) {
-    startsWith.call(self, 43);
-    const scanner2 = self.scanner;
-    const callResult4 = eatHexSequence.call(self, 1, true);
-    const obj = startsWith;
-    const obj2 = eatHexSequence;
-    if (scanner2.isDelim(63)) {
-      eatQuestionMarkSequence.call(self, 6 - callResult4);
-    } else if (self.scanner.tokenType === Dimension) {
-      obj.call(self, 45);
-      obj2.call(self, 1, false);
-    }
-    tmp3 = tmp8;
-  } else if (self.scanner.tokenType === Dimension) {
-    startsWith.call(self, 43);
-    const callResult9 = eatHexSequence.call(self, 1, true);
-    if (callResult9 > 0) {
-      eatQuestionMarkSequence.call(self, 6 - callResult9);
-    }
-  } else {
-    self.error();
-  }
-  return tmp3;
-}
-const Ident = tokenize.TYPE.Ident;
-const Number = tokenize.TYPE.Number;
-const Dimension = tokenize.TYPE.Dimension;
-let obj = {
-  name: "UnicodeRange",
+const WhiteSpace = tokenize.TYPE.WhiteSpace;
+const Comment = tokenize.TYPE.Comment;
+const AtKeyword = tokenize.TYPE.AtKeyword;
+const CDO = tokenize.TYPE.CDO;
+const CDC = tokenize.TYPE.CDC;
+const obj = {
+  name: "StyleSheet",
   structure: obj2,
   parse() {
-    let scanner;
     const self = this;
     const tokenStart = this.scanner.tokenStart;
-    const obj = tokenize;
-    if (!obj.cmpChar(this.scanner.source, tokenStart, 117)) {
-      self.error("U is expected");
+    const list = this.createList();
+    if (!this.scanner.eof) {
+      do {
+        let tokenType = self.scanner.tokenType;
+        if (WhiteSpace === tokenType) {
+          let iter2 = self.scanner;
+          let nextResult = iter2.next();
+        } else {
+          let CommentResult;
+          if (Comment === tokenType) {
+            let source = self.scanner.source;
+            if (33 !== source.charCodeAt(self.scanner.tokenStart + 2)) {
+              let iter = self.scanner;
+              let nextResult1 = iter.next();
+            } else {
+              CommentResult = self.Comment();
+            }
+          } else if (CDO === tokenType) {
+            CommentResult = self.CDO();
+          } else if (CDC === tokenType) {
+            CommentResult = self.CDC();
+          } else if (AtKeyword === tokenType) {
+            CommentResult = self.parseWithFallback(self.Atrule, consumeRaw);
+          } else {
+            CommentResult = self.parseWithFallback(self.Rule, consumeRaw);
+          }
+          let arr = list.push(CommentResult);
+        }
+      } while (!self.scanner.eof);
     }
-    const tmpResult = tokenize;
-    if (!tmpResult.cmpChar(self.scanner.source, tokenStart + 1, 43)) {
-      self.error("Plus sign is expected");
-    }
-    const iter = self.scanner;
-    iter.next();
-    scanUnicodeRange.call(self);
-    const obj2 = { type: "UnicodeRange", loc: self.getLocation(tokenStart, self.scanner.tokenStart), value: scanner.substrToCursor(tokenStart) };
-    scanner = self.scanner;
-    return obj2;
+    const element = { type: "StyleSheet", loc: self.getLocation(tokenStart, self.scanner.tokenStart), children: list };
+    return element;
   },
-  generate(value) {
-    this.chunk(value.value);
-  }
+  generate(arg0) {
+    this.children(arg0);
+  },
+  walkContext: "stylesheet"
 };
-obj2 = { value: String };
+obj2 = { children: items };
+items = [["Comment", "CDO", "CDC", "Atrule", "Rule", "Raw"]];
 
 export default obj;

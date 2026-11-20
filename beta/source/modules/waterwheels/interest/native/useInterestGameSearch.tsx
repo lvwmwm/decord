@@ -1,10 +1,10 @@
-// Module ID: 19040
-// Function ID: 19041
+// Module ID: 19042
+// Function ID: 19043
 // Name: useInterestGameSearch
 // Dependencies: [5, 32, 19, 9378, 10256, 9379, 10255, 10496, 10254, 2]
 // Exports: default
 
-// Module 19040 (useInterestGameSearch)
+// Module 19042 (useInterestGameSearch)
 import GameAutocompleteUtils from "GameAutocompleteUtils" /* 9379 */;
 import GameSearchSession from "GameSearchSession" /* 10255 */;
 import GameSearchFilterGroup from "GameSearchFilterGroup" /* 10256 */;

@@ -1,14 +1,14 @@
-// Module ID: 14609
-// Function ID: 14610
+// Module ID: 14611
+// Function ID: 14612
 // Name: ForumPost
-// Dependencies: [19, 5155, 5248, 14610, 21, 14611, 14615, 14626, 504, 38, 11896, 9107, 14629, 14630, 9111, 14637, 5165, 2]
+// Dependencies: [19, 5155, 5248, 14612, 21, 14613, 14617, 14628, 504, 38, 11896, 9107, 14631, 14632, 9111, 14639, 5165, 2]
 // Exports: ForumPostListDisabled
 
-// Module 14609 (ForumPost)
-import ForumChannelStore from "ForumChannelStore" /* 14610 */;
-import ForumPostGridHeaderDefault from "ForumPostGridHeader" /* 14611 */;
-import ForumPostGridBodyDefault from "ForumPostGridBody" /* 14615 */;
-import ForumPostGridFooterDefault from "ForumPostGridFooter" /* 14626 */;
+// Module 14611 (ForumPost)
+import ForumChannelStore from "ForumChannelStore" /* 14612 */;
+import ForumPostGridHeaderDefault from "ForumPostGridHeader" /* 14613 */;
+import ForumPostGridBodyDefault from "ForumPostGridBody" /* 14617 */;
+import ForumPostGridFooterDefault from "ForumPostGridFooter" /* 14628 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import RelationshipStore from "RelationshipStore" /* 5248 */;
@@ -158,8 +158,8 @@ export function ForumPostListDisabled(threadId) {
   const tmp = threadId;
   const tmp4 = stateFromStores;
   if (loaded) {
-    const obj4 = { style, children: closure_6(tmp4(14630), obj5) };
-    const ForumPostDisabledContainer = tmp(14629).ForumPostDisabledContainer;
+    const obj4 = { style, children: closure_6(tmp4(14632), obj5) };
+    const ForumPostDisabledContainer = tmp(14631).ForumPostDisabledContainer;
     obj5 = { thread: stateFromStores, parentChannel: stateFromStores1, firstMessage, messageContent: tmp10, media: localDeviceMedia, hasUnreads: true, isNew: false, firstMessageLoaded: loaded, isLocalDeviceMedia: true };
     tmp5 = closure_6(ForumPostDisabledContainer, obj4);
   }

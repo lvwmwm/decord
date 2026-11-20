@@ -1,12 +1,12 @@
-// Module ID: 16110
-// Function ID: 16111
+// Module ID: 16112
+// Function ID: 16113
 // Name: InputConnection
-// Dependencies: [6089, 3, 16111, 16112, 6179, 2]
+// Dependencies: [6089, 3, 16113, 16114, 6179, 2]
 
-// Module 16110 (InputConnection)
+// Module 16112 (InputConnection)
 import LoggerDefault from "Logger" /* 3 */;
 import RTCConnectionEvent from "RTCConnectionEvent" /* 6179 */;
-import InputEvent from "InputEvent" /* 16111 */;
+import InputEvent from "InputEvent" /* 16113 */;
 import TypedEventEmitter from "TypedEventEmitter" /* 6089 */;
 import size from "module_2" /* 2 */;
 
@@ -25,14 +25,14 @@ class InputConnection extends TypedEventEmitter {
     const onWebTransportAck = obj.onWebTransportAck;
     new LoggerDefault("InputConnection");
     obj.webTransportAck = onWebTransportAck.bind(obj);
-    obj.on(obj(16111).InputEvent.Connect, () => {
+    obj.on(obj(16113).InputEvent.Connect, () => {
       obj.state = Connected.Connected;
     });
     ({ on, onDisconnect } = obj);
-    on(obj(16111).InputEvent.Disconnect, onDisconnect.bind(obj));
+    on(obj(16113).InputEvent.Disconnect, onDisconnect.bind(obj));
     ({ on: on2, onLogMessage } = obj);
-    on2(obj(16111).InputEvent.Log, onLogMessage.bind(obj));
-    const obj2 = obj(16112);
+    on2(obj(16113).InputEvent.Log, onLogMessage.bind(obj));
+    const obj2 = obj(16114);
     obj.worker = obj2.createInputWorker();
     if (null != obj.worker) {
       obj.worker.onmessage = (data) => {

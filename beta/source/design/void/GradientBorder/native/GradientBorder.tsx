@@ -1,9 +1,9 @@
-// Module ID: 16595
-// Function ID: 16596
+// Module ID: 16597
+// Function ID: 16598
 // Name: GradientBorder
 // Dependencies: [19, 17, 1072, 21, 6778, 575, 5883, 2]
 
-// Module 16595 (GradientBorder)
+// Module 16597 (GradientBorder)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

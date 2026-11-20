@@ -1,10 +1,10 @@
-// Module ID: 15970
-// Function ID: 15971
+// Module ID: 15972
+// Function ID: 15973
 // Name: Header
 // Dependencies: [19, 17, 1072, 21, 5306, 575, 1414, 1187, 5919, 10870, 1406, 1113, 2]
 // Exports: default
 
-// Module 15970 (Header)
+// Module 15972 (Header)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;

@@ -1,10 +1,10 @@
-// Module ID: 19118
-// Function ID: 19119
+// Module ID: 19120
+// Function ID: 19121
 // Name: HomeDrawerDM
-// Dependencies: [19, 17, 5159, 5248, 6948, 1388, 1083, 21, 5306, 504, 5944, 19119, 17940, 11928, 10994, 5919, 11045, 5984, 19086, 5488, 5485, 2]
+// Dependencies: [19, 17, 5159, 5248, 6948, 1388, 1083, 21, 5306, 504, 5944, 19121, 17942, 11928, 10994, 5919, 11045, 5984, 19088, 5488, 5485, 2]
 // Exports: default
 
-// Module 19118 (HomeDrawerDM)
+// Module 19120 (HomeDrawerDM)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1083 */;
 import ChannelRecord from "ChannelRecord" /* 5159 */;
@@ -13,7 +13,7 @@ import Text_Text from "Text/Text" /* 5919 */;
 import useChannelName from "useChannelName" /* 5944 */;
 import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 5984 */;
 import ChannelRowPreview2 from "ChannelRowPreview" /* 11045 */;
-import useMessagePreviewsDefault from "useMessagePreviews" /* 17940 */;
+import useMessagePreviewsDefault from "useMessagePreviews" /* 17942 */;
 import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 5248 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6948 */;
@@ -52,7 +52,7 @@ function HomeDrawerDMExpandedChildren(channel) {
     }
     return tmp2;
   });
-  const obj3 = channel(19119);
+  const obj3 = channel(19121);
   let tmp3 = useMessagePreviewsDefault(channel, { unread: obj3.useBaseChannelUnreadBadgeState(channel, false).unread });
   let closure_4 = tmp3;
   const items2 = [UserGuildSettingsStore];
@@ -121,7 +121,7 @@ function HomeDrawerDMExpandedChildren(channel) {
     }
     return tmp2;
   }, items5);
-  return closure_10(channel(19086).HomeDrawerSharedItem, { title, subtitle });
+  return closure_10(channel(19088).HomeDrawerSharedItem, { title, subtitle });
 }
 const View = react_native.View;
 const isMultiUserDM = ChannelRecord.isMultiUserDM;

@@ -1,10 +1,10 @@
-// Module ID: 18217
-// Function ID: 18218
+// Module ID: 18219
+// Function ID: 18220
 // Name: DevToolsAnalyticsScreen
-// Dependencies: [32, 19, 17, 1388, 16849, 1072, 21, 5306, 575, 5919, 7443, 11354, 2169, 10930, 7428, 7943, 6023, 504, 7888, 6327, 7746, 7954, 12100, 6030, 18212, 7825, 2]
+// Dependencies: [32, 19, 17, 1388, 16851, 1072, 21, 5306, 575, 5919, 7443, 11354, 2169, 10930, 7428, 7943, 6023, 504, 7888, 6327, 7746, 7954, 12100, 6030, 18214, 7825, 2]
 // Exports: default
 
-// Module 18217 (DevToolsAnalyticsScreen)
+// Module 18219 (DevToolsAnalyticsScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -14,7 +14,7 @@ import ClipboardUtils from "ClipboardUtils" /* 7943 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1388 */;
-import AnalyticsLogStore from "AnalyticsLogStore" /* 16849 */;
+import AnalyticsLogStore from "AnalyticsLogStore" /* 16851 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
@@ -227,7 +227,7 @@ export default function DevToolsAnalyticsScreen() {
   const obj4 = { icon: closure_8(trimmed(12100).ArrowsUpDownIcon, {}), label: "Reverse Events", value: first, onValueChange: tmp7 };
   const TableSwitchRow = tmp2(7954).TableSwitchRow;
   items2 = [closure_8(TableSwitchRow, obj4), ];
-  const obj5 = { arrow: true, variant: "danger", icon: closure_8(trimmed(6030).TrashIcon, { color: "text-feedback-critical" }), label: "Clear Analytics Log", onPress: trimmed(18212).clearAnalyticsLog };
+  const obj5 = { arrow: true, variant: "danger", icon: closure_8(trimmed(6030).TrashIcon, { color: "text-feedback-critical" }), label: "Clear Analytics Log", onPress: trimmed(18214).clearAnalyticsLog };
   const TableRow = tmp2(7443).TableRow;
   items2[1] = closure_8(TableRow, obj5);
   const items3 = [closure_9(TableRowGroup, obj3), , ];

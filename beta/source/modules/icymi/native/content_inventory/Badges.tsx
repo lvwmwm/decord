@@ -1,10 +1,10 @@
-// Module ID: 15720
-// Function ID: 15721
+// Module ID: 15722
+// Function ID: 15723
 // Name: Badges
-// Dependencies: [19, 17, 2189, 21, 575, 5306, 15718, 8419, 5919, 504, 7438, 12555, 15721, 1113, 15723, 15725, 10667, 11095, 10324, 1089, 2]
+// Dependencies: [19, 17, 2189, 21, 575, 5306, 15720, 8419, 5919, 504, 7438, 12557, 15723, 1113, 15725, 15727, 10667, 11095, 10324, 1089, 2]
 // Exports: BadgesContainer, CustomStatusTimestampBadge, GameTimestampBadge, MarathonBadge, NewGameBadge, ResurrectedBadge, StreakBadge, TopGameBadge, TrendingBadge
 
-// Module 15720 (Badges)
+// Module 15722 (Badges)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -15,10 +15,10 @@ import utils from "utils" /* 8419 */;
 import TrophyIcon from "TrophyIcon" /* 10324 */;
 import FireIcon from "FireIcon" /* 10667 */;
 import RetryIcon from "RetryIcon" /* 11095 */;
-import TimerIcon2 from "TimerIcon" /* 12555 */;
-import NewUserIcon from "NewUserIcon" /* 15721 */;
-import FlashIcon from "FlashIcon" /* 15723 */;
-import TrendingType from "TrendingType" /* 15725 */;
+import TimerIcon2 from "TimerIcon" /* 12557 */;
+import NewUserIcon from "NewUserIcon" /* 15723 */;
+import FlashIcon from "FlashIcon" /* 15725 */;
+import TrendingType from "TrendingType" /* 15727 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2189 */;
 import Fragment from "Fragment" /* 21 */;
@@ -36,7 +36,7 @@ class ActiveTimestamp {
   constructor(entry) {
     entry = entry.entry;
     const style = entry.style;
-    obj = entry(15718);
+    obj = entry(15720);
     const now = obj.useTimestampTickedNow().now;
     const items = [entry, now];
     const children = react.useMemo(() => {

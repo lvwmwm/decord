@@ -29,7 +29,7 @@ export default function RoleIcon(arg0) {
     size = 20;
   }
   const size1 = { height: size, width: size };
-  const obj = { fontFamily: "System", fontSize: size * num, lineHeight: "channel_id", textAlign: true, width: size, marginBottom: true };
+  const obj = { fontFamily: "System", fontSize: size * num, lineHeight: "channel_id", textAlign: "<string:4268818845>", width: size, marginBottom: "<string:3443618326>" };
   if (null != src) {
     const obj3 = { uri: src };
     tmp = jsx(FastImageDefault, { resizeMode: "contain", source: obj3, style: size1 });

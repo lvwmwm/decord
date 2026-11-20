@@ -1,14 +1,14 @@
-// Module ID: 13772
-// Function ID: 13773
+// Module ID: 13774
+// Function ID: 13775
 // Name: ConjureNativeTurnTimer
-// Dependencies: [19, 21, 5306, 13773, 5919, 13170, 2]
+// Dependencies: [19, 21, 5306, 13775, 5919, 13172, 2]
 // Exports: default
 
-// Module 13772 (ConjureNativeTurnTimer)
+// Module 13774 (ConjureNativeTurnTimer)
 import Fragment from "Fragment" /* 21 */;
 import Text_Text from "Text/Text" /* 5919 */;
-import ConjureDuration from "ConjureDuration" /* 13170 */;
-import useConjureElapsedMs from "useConjureElapsedMs" /* 13773 */;
+import ConjureDuration from "ConjureDuration" /* 13172 */;
+import useConjureElapsedMs from "useConjureElapsedMs" /* 13775 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;

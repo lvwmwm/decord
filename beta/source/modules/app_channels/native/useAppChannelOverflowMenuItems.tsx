@@ -1,10 +1,10 @@
-// Module ID: 15622
-// Function ID: 15623
+// Module ID: 15624
+// Function ID: 15625
 // Name: useAppChannelOverflowMenuItems
-// Dependencies: [19, 7020, 5967, 13297, 7261, 15623, 15624, 13298, 15149, 15625, 8476, 15628, 1113, 13308, 12295, 4131, 11224, 6027, 11328, 2]
+// Dependencies: [19, 7020, 5967, 13299, 7261, 15625, 15626, 13300, 15151, 15627, 8476, 15630, 1113, 13310, 12295, 4131, 11224, 6027, 11328, 2]
 // Exports: default
 
-// Module 15622 (useAppChannelOverflowMenuItems)
+// Module 15624 (useAppChannelOverflowMenuItems)
 import intl6 from "intl" /* 1113 */;
 import _modDef4131 from "module_4131" /* 4131 */;
 import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5967 */;
@@ -13,9 +13,9 @@ import FramesConstants from "FramesConstants" /* 7020 */;
 import ShieldIcon from "ShieldIcon" /* 11224 */;
 import FlagIcon from "FlagIcon" /* 11328 */;
 import DoorExitIcon from "DoorExitIcon" /* 12295 */;
-import restartFrames from "restartFrames" /* 13298 */;
-import RefreshIcon from "RefreshIcon" /* 13308 */;
-import closeFrameDefault from "closeFrame" /* 15149 */;
+import restartFrames from "restartFrames" /* 13300 */;
+import RefreshIcon from "RefreshIcon" /* 13310 */;
+import closeFrameDefault from "closeFrame" /* 15151 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -38,7 +38,7 @@ function useAppChannelAppActions(channel) {
     const obj = { type: EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL, channelId: channel.id, guildId: channel.guild_id };
     return obj;
   }, items);
-  const tmp5 = application_id(13297)(application_id, memo);
+  const tmp5 = application_id(13299)(application_id, memo);
   dependencyMap = tmp5;
   const obj2 = require("useAppChannelApplication");
   const appChannelApplication = obj2.useAppChannelApplication(channel);
@@ -46,9 +46,9 @@ function useAppChannelAppActions(channel) {
   if (appChannelApplication != null) {
     bot = appChannelApplication.bot;
   }
-  const tmp8 = application_id(15623)(application_id);
+  const tmp8 = application_id(15625)(application_id);
   let closure_4 = tmp8;
-  const tmp9 = application_id(15624)(application_id).length > 0;
+  const tmp9 = application_id(15626)(application_id).length > 0;
   let closure_5 = tmp9;
   const items1 = [application_id, bot, channel, tmp8, tmp5, tmp9];
   return obj.useMemo(() => {
@@ -131,34 +131,34 @@ export default function useAppChannelOverflowMenuItems(channel) {
     } else {
       const items = [];
       if (null != reload) {
+        const push4 = items.push;
+        const obj2 = { label: intl4.string(intl6.t.kHie4V), IconComponent: RefreshIcon.RefreshIcon, action: tmp26 };
+        intl4 = intl6.intl;
+        push4(obj2);
+      }
+      if (null != close) {
         const push = items.push;
-        const obj = { label: intl.string(intl6.t.kHie4V), IconComponent: RefreshIcon.RefreshIcon, action: tmp40 };
+        const obj = { label: intl.string(intl6.t.VkMnR2), IconComponent: DoorExitIcon.DoorExitIcon, action: tmp2 };
         intl = intl6.intl;
         push(obj);
       }
-      if (null != close) {
-        const push2 = items.push;
-        const obj2 = { label: intl2.string(intl6.t.VkMnR2), IconComponent: DoorExitIcon.DoorExitIcon, action: tmp9 };
-        intl2 = intl6.intl;
-        push2(obj2);
-      }
       const items1 = [];
       if (null != devicePermissions) {
-        const push3 = items1.push;
-        const obj3 = { label: intl3.string(_modDef4131.wum6n2), IconComponent: ShieldIcon.ShieldIcon, action: tmp17 };
-        intl3 = intl6.intl;
-        push3(obj3);
+        const push2 = items1.push;
+        const obj3 = { label: intl2.string(_modDef4131.wum6n2), IconComponent: ShieldIcon.ShieldIcon, action: tmp10 };
+        intl2 = intl6.intl;
+        push2(obj3);
       }
       if (null != appInfo) {
-        const push4 = items1.push;
-        const obj4 = { label: intl4.string(intl6.t.Sh2z9g), IconComponent: CircleInformationIcon.CircleInformationIcon, action: tmp25 };
-        intl4 = intl6.intl;
-        push4(obj4);
+        const push5 = items1.push;
+        const obj4 = { label: intl5.string(intl6.t.Sh2z9g), IconComponent: CircleInformationIcon.CircleInformationIcon, action: tmp18 };
+        intl5 = intl6.intl;
+        push5(obj4);
       }
-      const push5 = items1.push;
-      const obj5 = { label: intl5.string(intl6.t.NgA5vp), IconComponent: FlagIcon.FlagIcon, variant: "destructive", action: tmp };
-      intl5 = intl6.intl;
-      push5(obj5);
+      const push3 = items1.push;
+      const obj5 = { label: intl3.string(intl6.t.NgA5vp), IconComponent: FlagIcon.FlagIcon, variant: "destructive", action: tmp };
+      intl3 = intl6.intl;
+      push3(obj5);
       const items2 = [items, items1];
       return items2.filter((item) => item.length > 0);
     }

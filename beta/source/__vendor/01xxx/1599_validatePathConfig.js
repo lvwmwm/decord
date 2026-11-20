@@ -8,7 +8,7 @@ function formatToList(arg0) {
 
 }
 function validatePathConfig(config) {
-  const f85022 = (item) => {
+  const f85026 = (item) => {
     let tmp;
     let tmp2;
     [tmp, tmp2] = item;
@@ -61,12 +61,12 @@ function validatePathConfig(config) {
         if (typeof config === "function") {
           const _Object2 = Object;
           const entries = Object.entries(fromEntriesResult);
-          const mapped1 = entries.map(f85022);
+          const mapped1 = entries.map(f85026);
           const joined = mapped1.join("\n");
           if (typeof tmp7 === "function") {
             const _Object3 = Object;
             const entries1 = Object.entries(obj2);
-            const mapped2 = entries1.map(f85022);
+            const mapped2 = entries1.map(f85026);
             let _HermesInternal2 = HermesInternal;
             const self3 = this;
             const self4 = this;

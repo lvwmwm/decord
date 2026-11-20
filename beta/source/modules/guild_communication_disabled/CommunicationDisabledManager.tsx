@@ -1,9 +1,9 @@
-// Module ID: 14894
-// Function ID: 14895
+// Module ID: 14896
+// Function ID: 14897
 // Name: CommunicationDisabledManager
 // Dependencies: [5218, 1388, 5225, 572, 7882, 2]
 
-// Module 14894 (CommunicationDisabledManager)
+// Module 14896 (CommunicationDisabledManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 5225 */;
 import GuildMemberStore_mod from "GuildMemberStore" /* 5218 */;

@@ -1,10 +1,10 @@
-// Module ID: 15473
-// Function ID: 15474
+// Module ID: 15475
+// Function ID: 15476
 // Name: useCanOpenBadgeDirectoryFromProfile
 // Dependencies: [10078, 10076, 2]
 // Exports: useCanOpenBadgeDirectoryFromProfile
 
-// Module 15473 (useCanOpenBadgeDirectoryFromProfile)
+// Module 15475 (useCanOpenBadgeDirectoryFromProfile)
 import BadgeDirectoryUpdatesExperiment from "BadgeDirectoryUpdatesExperiment" /* 10076 */;
 import BadgeManagementExperiment from "BadgeManagementExperiment" /* 10078 */;
 import size from "module_2" /* 2 */;

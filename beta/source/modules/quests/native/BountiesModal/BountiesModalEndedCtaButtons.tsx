@@ -1,10 +1,10 @@
-// Module ID: 17590
-// Function ID: 17591
+// Module ID: 17592
+// Function ID: 17593
 // Name: BountiesModalEndedCtaButtons
-// Dependencies: [21, 5306, 575, 10168, 1655, 5538, 5541, 17585, 5926, 10170, 6961, 6959, 8834, 1113, 2]
+// Dependencies: [21, 5306, 575, 10168, 1655, 5538, 5541, 17587, 5926, 10170, 6961, 6959, 8834, 1113, 2]
 // Exports: default
 
-// Module 17590 (BountiesModalEndedCtaButtons)
+// Module 17592 (BountiesModalEndedCtaButtons)
 import nativeDefault from "native" /* 575 */;
 import _modDef1655 from "module_1655" /* 1655 */;
 import QuestContent from "QuestContent" /* 6959 */;
@@ -79,7 +79,7 @@ export default function BountiesModalEndedCtaButtons(bounty) {
   BountiesModalEndedCtaButtonsTsx1.__workletHash = 17030874897727;
   BountiesModalEndedCtaButtonsTsx1.__initData = tmp5;
   const animatedStyle = useAnimatedStyle(BountiesModalEndedCtaButtonsTsx1);
-  bounty(17585);
+  bounty(17587);
   if (visible) {
     let obj2 = { style: items2, children: items3 };
     items2 = [tmp.container, animatedStyle];

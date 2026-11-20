@@ -1,10 +1,10 @@
-// Module ID: 18548
-// Function ID: 18549
+// Module ID: 18550
+// Function ID: 18551
 // Name: SettingsSecureFramesVerificationsScreen
-// Dependencies: [19, 17, 1388, 21, 5306, 10627, 7443, 1113, 7428, 7549, 5919, 7812, 1502, 504, 5362, 9051, 18544, 7888, 2]
+// Dependencies: [19, 17, 1388, 21, 5306, 10627, 7443, 1113, 7428, 7549, 5919, 7812, 1502, 504, 5362, 9051, 18546, 7888, 2]
 // Exports: default
 
-// Module 18548 (SettingsSecureFramesVerificationsScreen)
+// Module 18550 (SettingsSecureFramesVerificationsScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1113 */;
@@ -117,7 +117,7 @@ export default function SettingsSecureFramesVerificationsScreen() {
     intl = intl3.intl;
     setOptions(obj);
   });
-  const obj5 = userId(18544);
+  const obj5 = userId(18546);
   secureFramesUserVerifiedKeys = obj5.useSecureFramesUserVerifiedKeys(userId);
   const items1 = [userId, secureFramesUserVerifiedKeys];
   const items2 = [navigation, secureFramesUserVerifiedKeys];

@@ -1,10 +1,10 @@
-// Module ID: 18945
-// Function ID: 18946
+// Module ID: 18947
+// Function ID: 18948
 // Name: preloadChannelAppFrame
 // Dependencies: [5155, 5238, 7019, 7020, 1072, 6828, 6848, 5964, 7341, 7022, 7342, 7055, 2]
 // Exports: preloadChannelAppFrame
 
-// Module 18945 (preloadChannelAppFrame)
+// Module 18947 (preloadChannelAppFrame)
 import getURLForApplicationDefault from "getURLForApplication" /* 5964 */;
 import AgeGateUtils from "AgeGateUtils" /* 6828 */;
 import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6848 */;

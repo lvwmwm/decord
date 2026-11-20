@@ -1,9 +1,9 @@
-// Module ID: 20208
-// Function ID: 20209
+// Module ID: 20210
+// Function ID: 20211
 // Name: ConjureBackgroundFramesManager
-// Dependencies: [5, 7882, 5967, 16988, 2121, 2]
+// Dependencies: [5, 7882, 5967, 16990, 2121, 2]
 
-// Module 20208 (ConjureBackgroundFramesManager)
+// Module 20210 (ConjureBackgroundFramesManager)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;
 import size from "module_2" /* 2 */;

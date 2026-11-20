@@ -1,15 +1,15 @@
-// Module ID: 14967
-// Function ID: 14968
+// Module ID: 14969
+// Function ID: 14970
 // Name: ChannelSafeAreaBottomAnimated
-// Dependencies: [19, 17, 21, 12007, 1655, 12018, 12016, 14573, 2]
+// Dependencies: [19, 17, 21, 12007, 1655, 12018, 12016, 14575, 2]
 
-// Module 14967 (ChannelSafeAreaBottomAnimated)
+// Module 14969 (ChannelSafeAreaBottomAnimated)
 import Fragment from "Fragment" /* 21 */;
 import _mod1655 from "module_1655" /* 1655 */;
 import useChannelSafeAreaHeightSharedValue from "useChannelSafeAreaHeightSharedValue" /* 12007 */;
 import useIsChannelFullyOpenDefault from "useIsChannelFullyOpen" /* 12016 */;
 import useChannelSafeAreaBottomStylesDefault from "useChannelSafeAreaBottomStyles" /* 12018 */;
-import MobileRTCV2Experiment from "MobileRTCV2Experiment" /* 14573 */;
+import MobileRTCV2Experiment from "MobileRTCV2Experiment" /* 14575 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;

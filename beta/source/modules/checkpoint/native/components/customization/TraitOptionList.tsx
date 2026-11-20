@@ -1,16 +1,16 @@
-// Module ID: 14539
-// Function ID: 14540
+// Module ID: 14541
+// Function ID: 14542
 // Name: TraitOptionList
-// Dependencies: [32, 19, 17, 5307, 6367, 21, 575, 5306, 14540, 8263, 6734, 504, 14488, 14518, 5558, 5907, 1496, 5544, 2]
+// Dependencies: [32, 19, 17, 5307, 6367, 21, 575, 5306, 14542, 8263, 6734, 504, 14490, 14520, 5558, 5907, 1496, 5544, 2]
 // Exports: default
 
-// Module 14539 (TraitOptionList)
+// Module 14541 (TraitOptionList)
 import nativeDefault from "native" /* 575 */;
 import HapticUtils from "HapticUtils" /* 5544 */;
 import CheckpointConstants from "CheckpointConstants" /* 6367 */;
 import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6734 */;
 import inlineStyles from "inlineStyles" /* 8263 */;
-import TraitOptionItem from "TraitOptionItem" /* 14540 */;
+import TraitOptionItem from "TraitOptionItem" /* 14542 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -99,8 +99,8 @@ export default function TraitOptionList(size) {
   let obj = size(504);
   const items = [closure_7];
   let closure_6 = obj.useStateFromStores(items, () => closure_7.useReducedMotion);
-  const tmp4 = options(14488);
-  closure_7 = tmp4(options(14518));
+  const tmp4 = options(14490);
+  closure_7 = tmp4(options(14520));
   let obj2 = size(5558);
   const isScreenReaderEnabled = obj2.useIsScreenReaderEnabled();
   react.useRef(null);
@@ -110,7 +110,7 @@ export default function TraitOptionList(size) {
   const tmp8 = options(5907)(bound);
   [tmp10, c12] = disabled(react.useState(options(1496)().width), 2);
   const tmp9 = disabled(react.useState(options(1496)().width), 2);
-  const width = size(14540).TRAIT_OPTION_SIZE_TO_DIMENSIONS[size].width;
+  const width = size(14542).TRAIT_OPTION_SIZE_TO_DIMENSIONS[size].width;
   const sum = width + closure_11;
   c13 = sum;
   const items1 = [disabled, isScreenReaderEnabled];

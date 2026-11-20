@@ -1,10 +1,10 @@
-// Module ID: 15484
-// Function ID: 15485
+// Module ID: 15486
+// Function ID: 15487
 // Name: NameplateProductPreview
 // Dependencies: [19, 17, 5307, 21, 5306, 575, 9402, 2111, 1113, 5919, 5883, 9409, 8624, 8541, 504, 5362, 6740, 10064, 10065, 1187, 10889, 7443, 2]
 // Exports: default
 
-// Module 15484 (NameplateProductPreview)
+// Module 15486 (NameplateProductPreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
@@ -62,7 +62,7 @@ function NameplateUser(arg0) {
   }
   const items1 = [currentUser, tmp5Result, stateFromStores];
   const icon = react.useMemo(() => {
-    const obj = { user: currentUser, guildId: "a", size: native.AvatarSizes.NORMAL, avatarDecoration, animate: !stateFromStores, autoStatusCutout: "keyExtractor is not defined, maintainVisibleContentPosition may not work as expected.", "aria-hidden": "Exceeded max renders without commit. This might mean that you have duplicate keys in your keyExtractor output or your list is nested in a ScrollView causing a lot of items to render at once. If it's none of those and is causing a real issue or error, consider reporing this on FlashList Github" };
+    const obj = { user: currentUser, guildId: "a", size: native.AvatarSizes.NORMAL, avatarDecoration, animate: !stateFromStores, autoStatusCutout: null, "aria-hidden": "\u{1FA80}" };
     const Avatar = native.Avatar;
     return metroRequire(Avatar, obj);
   }, items1);

@@ -1,10 +1,10 @@
-// Module ID: 13505
-// Function ID: 13506
+// Module ID: 13507
+// Function ID: 13508
 // Name: AppLauncherAutocompleteOption
-// Dependencies: [32, 19, 17, 1191, 21, 5306, 7639, 5892, 575, 2020, 5542, 13506, 2121, 13504, 7428, 5919, 2]
+// Dependencies: [32, 19, 17, 1191, 21, 5306, 7639, 5892, 575, 2020, 5542, 13508, 2121, 13506, 7428, 5919, 2]
 // Exports: default
 
-// Module 13505 (AppLauncherAutocompleteOption)
+// Module 13507 (AppLauncherAutocompleteOption)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
@@ -15,7 +15,7 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542
 import useToken from "useToken" /* 5892 */;
 import Pressables from "Pressables" /* 7428 */;
 import InputFieldContainer2 from "InputFieldContainer" /* 7639 */;
-import useAnimationDelayedAutoFocus from "useAnimationDelayedAutoFocus" /* 13504 */;
+import useAnimationDelayedAutoFocus from "useAnimationDelayedAutoFocus" /* 13506 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5306 */;
@@ -61,7 +61,7 @@ export default function AppLauncherAutocompleteOption(arg0) {
       onDismissAutocompleteSheet: _slicedToArray,
       optionValues: ANDROID_FOREGROUND_RIPPLE.current
     };
-    obj2.openLazy(asyncRequire(13506, dependencyMap.paths), "AppLauncherAutocompleteActionSheet", obj3);
+    obj2.openLazy(asyncRequire(13508, dependencyMap.paths), "AppLauncherAutocompleteActionSheet", obj3);
   }
   ({ autoFocus, hasError } = arg0);
   [initChoice, closure_9] = react.useState(() => {

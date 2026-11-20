@@ -1,7 +1,9 @@
 // Module ID: 15910
 // Function ID: 15911
-// Dependencies: []
+// Dependencies: [15911]
 
 // Module 15910
+import _mod15911 from "module_15911" /* 15911 */;
 
-export default "SECRET_DO_NOT_PASS_THIS_OR_YOU_WILL_BE_FIRED";
+
+export default _mod15911();

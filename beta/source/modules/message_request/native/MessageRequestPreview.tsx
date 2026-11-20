@@ -1,9 +1,9 @@
-// Module ID: 19748
-// Function ID: 19749
+// Module ID: 19750
+// Function ID: 19751
 // Name: MessageRequestPreview
-// Dependencies: [19, 17, 5248, 1072, 21, 5306, 6816, 575, 14920, 504, 1256, 1113, 8646, 6782, 1187, 2]
+// Dependencies: [19, 17, 5248, 1072, 21, 5306, 6816, 575, 14922, 504, 1256, 1113, 8646, 6782, 1187, 2]
 
-// Module 19748 (MessageRequestPreview)
+// Module 19750 (MessageRequestPreview)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
@@ -41,7 +41,7 @@ const memoResult = react.memo(function MessageRequestPreview(channel) {
   channel = channel.channel;
   const style = channel.style;
   const tmp = closure_9();
-  let obj = channel(14920);
+  let obj = channel(14922);
   const messageRequestPreview = obj.useMessageRequestPreview(channel);
   const message = messageRequestPreview.message;
   ({ loaded, error } = messageRequestPreview);

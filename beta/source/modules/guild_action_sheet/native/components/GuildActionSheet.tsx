@@ -1,9 +1,9 @@
-// Module ID: 16420
-// Function ID: 16421
+// Module ID: 16422
+// Function ID: 16423
 // Name: GuildActionSheet
-// Dependencies: [19, 17, 21, 5306, 575, 1630, 8559, 5556, 5560, 1380, 16415, 16421, 16348, 16426, 16429, 5891, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 1630, 8559, 5556, 5560, 1380, 16417, 16423, 16350, 16428, 16431, 5891, 2]
 
-// Module 16420 (GuildActionSheet)
+// Module 16422 (GuildActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
@@ -12,11 +12,11 @@ import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5556 */;
 import BottomSheetModal from "BottomSheetModal" /* 5560 */;
 import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 5891 */;
 import react2 from "react" /* 8559 */;
-import GuildActionSheetActions from "GuildActionSheetActions" /* 16348 */;
-import GuildActionSheetHeaderDefault from "GuildActionSheetHeader" /* 16415 */;
-import GuildActionSheetTabItemsDefault from "GuildActionSheetTabItems" /* 16421 */;
-import GuildActionSheetProgressDefault from "GuildActionSheetProgress" /* 16426 */;
-import GuildActionSheetEmojiSectionDefault from "GuildActionSheetEmojiSection" /* 16429 */;
+import GuildActionSheetActions from "GuildActionSheetActions" /* 16350 */;
+import GuildActionSheetHeaderDefault from "GuildActionSheetHeader" /* 16417 */;
+import GuildActionSheetTabItemsDefault from "GuildActionSheetTabItems" /* 16423 */;
+import GuildActionSheetProgressDefault from "GuildActionSheetProgress" /* 16428 */;
+import GuildActionSheetEmojiSectionDefault from "GuildActionSheetEmojiSection" /* 16431 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5306 */;

@@ -1,12 +1,12 @@
-// Module ID: 15593
-// Function ID: 15594
+// Module ID: 15595
+// Function ID: 15596
 // Name: getApplicationFromMessage
-// Dependencies: [2143, 15590, 7291, 2]
+// Dependencies: [2143, 15592, 7291, 2]
 // Exports: getApplicationFromMessage
 
-// Module 15593 (getApplicationFromMessage)
+// Module 15595 (getApplicationFromMessage)
 import SpotifyConstants from "SpotifyConstants" /* 7291 */;
-import SpotifyApplicationRecord from "SpotifyApplicationRecord" /* 15590 */;
+import SpotifyApplicationRecord from "SpotifyApplicationRecord" /* 15592 */;
 import ApplicationRecord from "ApplicationRecord" /* 2143 */;
 import size from "module_2" /* 2 */;
 

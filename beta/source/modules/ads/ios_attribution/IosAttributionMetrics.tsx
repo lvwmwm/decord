@@ -1,10 +1,10 @@
-// Module ID: 15247
-// Function ID: 15248
+// Module ID: 15249
+// Function ID: 15250
 // Name: IosAttributionMetrics
 // Dependencies: [1072, 6761, 6766, 1256, 2]
 // Exports: trackIosAttributionClick, trackIosAttributionImpression
 
-// Module 15247 (IosAttributionMetrics)
+// Module 15249 (IosAttributionMetrics)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import MonitoringAgentDefault from "MonitoringAgent" /* 6761 */;

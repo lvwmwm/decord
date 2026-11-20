@@ -1,10 +1,10 @@
-// Module ID: 16003
-// Function ID: 16004
+// Module ID: 16005
+// Function ID: 16006
 // Name: orderMarketablePerksForDisplay
 // Dependencies: [32, 5515, 5517, 2]
 // Exports: default
 
-// Module 16003 (orderMarketablePerksForDisplay)
+// Module 16005 (orderMarketablePerksForDisplay)
 import GameServerConstants from "GameServerConstants" /* 5515 */;
 import Powerups from "Powerups" /* 5517 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

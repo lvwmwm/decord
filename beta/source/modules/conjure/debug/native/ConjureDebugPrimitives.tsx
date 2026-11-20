@@ -1,16 +1,16 @@
-// Module ID: 14017
-// Function ID: 14018
+// Module ID: 14019
+// Function ID: 14020
 // Name: ConjureDebugPrimitives
-// Dependencies: [19, 17, 21, 5306, 575, 5919, 1113, 4131, 14015, 5926, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 5919, 1113, 4131, 14017, 5926, 2]
 // Exports: DebugMeter, DebugNote, DebugSection, DebugSnapshotToolbar, DebugStatRow
 
-// Module 14017 (ConjureDebugPrimitives)
+// Module 14019 (ConjureDebugPrimitives)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import _modDef4131 from "module_4131" /* 4131 */;
 import Text_Text from "Text/Text" /* 5919 */;
 import components_Button_Button from "components/Button/Button" /* 5926 */;
-import ConjureDebugFormat from "ConjureDebugFormat" /* 14015 */;
+import ConjureDebugFormat from "ConjureDebugFormat" /* 14017 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

@@ -1,19 +1,19 @@
-// Module ID: 14886
-// Function ID: 14887
+// Module ID: 14888
+// Function ID: 14889
 // Name: ChatInputGuardGuildMemberVerification
-// Dependencies: [19, 5307, 13804, 1072, 21, 5306, 14887, 5342, 14888, 1113, 6057, 6914, 14889, 7549, 7684, 504, 14878, 6010, 5913, 14890, 2]
+// Dependencies: [19, 5307, 13806, 1072, 21, 5306, 14889, 5342, 14890, 1113, 6057, 6914, 14891, 7549, 7684, 504, 14880, 6010, 5913, 14892, 2]
 
-// Module 14886 (ChatInputGuardGuildMemberVerification)
+// Module 14888 (ChatInputGuardGuildMemberVerification)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import intl5 from "intl" /* 1113 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6057 */;
 import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 6914 */;
 import MemberVerificationModalActionCreators from "MemberVerificationModalActionCreators" /* 7684 */;
-import ChatInputConstants from "ChatInputConstants" /* 13804 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 14878 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14888 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14889 */;
+import ChatInputConstants from "ChatInputConstants" /* 13806 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 14880 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14890 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14891 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5307 */;
 import createStyles from "createStyles" /* 5306 */;
@@ -34,7 +34,7 @@ const memoResult = react.memo(function ChatInputGuardGuildMemberVerification(gui
   guildId = guildId.guildId;
   const tmp = closure_7();
   const tmp2 = guildId;
-  let obj = guildId(14887);
+  let obj = guildId(14889);
   const currentUserGuildJoinRequest = obj.useCurrentUserGuildJoinRequest(guildId);
   let applicationStatus;
   if (currentUserGuildJoinRequest != null) {

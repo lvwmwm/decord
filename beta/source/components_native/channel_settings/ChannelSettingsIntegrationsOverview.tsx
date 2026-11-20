@@ -1,10 +1,10 @@
-// Module ID: 19707
-// Function ID: 19708
+// Module ID: 19709
+// Function ID: 19710
 // Name: ChannelSettingsIntegrationsOverview
-// Dependencies: [19, 5159, 5155, 1072, 21, 1502, 7259, 7746, 1113, 7443, 8151, 5306, 575, 504, 8106, 6327, 19573, 19708, 2]
+// Dependencies: [19, 5159, 5155, 1072, 21, 1502, 7259, 7746, 1113, 7443, 8151, 5306, 575, 504, 8106, 6327, 19575, 19710, 2]
 // Exports: default
 
-// Module 19707 (ChannelSettingsIntegrationsOverview)
+// Module 19709 (ChannelSettingsIntegrationsOverview)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -12,8 +12,8 @@ import intl5 from "intl" /* 1113 */;
 import useNavigation from "useNavigation" /* 1502 */;
 import ChannelRecord from "ChannelRecord" /* 5159 */;
 import TableRowApplicationIconDefault from "TableRowApplicationIcon" /* 8151 */;
-import WebhookIcon from "WebhookIcon" /* 19573 */;
-import ChannelsFollowedIcon from "ChannelsFollowedIcon" /* 19708 */;
+import WebhookIcon from "WebhookIcon" /* 19575 */;
+import ChannelsFollowedIcon from "ChannelsFollowedIcon" /* 19710 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import Fragment from "Fragment" /* 21 */;

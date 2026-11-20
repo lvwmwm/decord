@@ -1,10 +1,10 @@
-// Module ID: 15741
-// Function ID: 15742
+// Module ID: 15743
+// Function ID: 15744
 // Name: useActivityTimer
 // Dependencies: [32, 19, 1089, 8419, 5150, 2]
 // Exports: default, formatTime, formatTimeForA11yLabel
 
-// Module 15741 (useActivityTimer)
+// Module 15743 (useActivityTimer)
 import DurationsDefault from "Durations" /* 1089 */;
 import utils from "utils" /* 8419 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

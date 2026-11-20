@@ -1,16 +1,16 @@
-// Module ID: 13756
-// Function ID: 13757
+// Module ID: 13758
+// Function ID: 13759
 // Name: ConjureRestoreProposalCard
-// Dependencies: [19, 21, 13273, 13211, 6327, 5919, 1113, 4131, 5926, 2]
+// Dependencies: [19, 21, 13275, 13213, 6327, 5919, 1113, 4131, 5926, 2]
 // Exports: default
 
-// Module 13756 (ConjureRestoreProposalCard)
+// Module 13758 (ConjureRestoreProposalCard)
 import intl3 from "intl" /* 1113 */;
 import _modDef4131 from "module_4131" /* 4131 */;
 import Text_Text from "Text/Text" /* 5919 */;
 import Stack_Stack from "Stack/Stack" /* 6327 */;
-import ConjureNativeCardSurfaceDefault from "ConjureNativeCardSurface" /* 13211 */;
-import ConjureHistoryFormat from "ConjureHistoryFormat" /* 13273 */;
+import ConjureNativeCardSurfaceDefault from "ConjureNativeCardSurface" /* 13213 */;
+import ConjureHistoryFormat from "ConjureHistoryFormat" /* 13275 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

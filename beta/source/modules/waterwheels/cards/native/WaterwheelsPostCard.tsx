@@ -1,10 +1,10 @@
-// Module ID: 19011
-// Function ID: 19012
+// Module ID: 19013
+// Function ID: 19014
 // Name: WaterwheelsPostCard
 // Dependencies: [19, 17, 21, 5306, 575, 5367, 10225, 7087, 6010, 1414, 5328, 6019, 5919, 5926, 2]
 // Exports: default
 
-// Module 19011 (WaterwheelsPostCard)
+// Module 19013 (WaterwheelsPostCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AvatarUtils from "AvatarUtils" /* 1414 */;

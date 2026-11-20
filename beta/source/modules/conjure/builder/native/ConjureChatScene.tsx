@@ -1,10 +1,10 @@
-// Module ID: 13127
-// Function ID: 13128
+// Module ID: 13129
+// Function ID: 13130
 // Name: ConjureChatScene
-// Dependencies: [5, 32, 19, 17, 2165, 7365, 7330, 7017, 7377, 7020, 21, 5306, 575, 1502, 13128, 1630, 13129, 1644, 1708, 504, 13132, 7329, 7055, 13133, 13137, 13138, 13139, 5964, 13140, 7396, 13141, 13135, 1655, 13143, 1113, 4131, 10560, 13144, 1496, 7983, 7394, 7347, 13145, 13171, 13189, 13192, 13193, 5542, 13194, 10978, 13265, 6005, 13269, 13271, 6004, 13273, 13274, 13276, 13295, 13296, 7339, 13297, 13298, 1503, 13299, 13206, 13302, 13326, 13327, 13328, 10939, 13312, 12289, 13329, 10733, 13340, 7420, 13164, 10271, 5919, 5926, 13342, 13343, 13162, 13224, 13564, 7499, 2]
+// Dependencies: [5, 32, 19, 17, 2165, 7365, 7330, 7017, 7377, 7020, 21, 5306, 575, 1502, 13130, 1630, 13131, 1644, 1708, 504, 13134, 7329, 7055, 13135, 13139, 13140, 13141, 5964, 13142, 7396, 13143, 13137, 1655, 13145, 1113, 4131, 10560, 13146, 1496, 7983, 7394, 7347, 13147, 13173, 13191, 13194, 13195, 5542, 13196, 10978, 13267, 6005, 13271, 13273, 6004, 13275, 13276, 13278, 13297, 13298, 7339, 13299, 13300, 1503, 13301, 13208, 13304, 13328, 13329, 13330, 10939, 13314, 12289, 13331, 10733, 13342, 7420, 13166, 10271, 5919, 5926, 13344, 13345, 13164, 13226, 13566, 7499, 2]
 // Exports: default
 
-// Module 13127 (ConjureChatScene)
+// Module 13129 (ConjureChatScene)
 import nativeDefault from "native" /* 575 */;
 import intl9 from "intl" /* 1113 */;
 import _modDef4131 from "module_4131" /* 4131 */;
@@ -16,15 +16,15 @@ import ConjureConnectionStore from "ConjureConnectionStore" /* 7365 */;
 import ConjurePreviewActionCreators from "ConjurePreviewActionCreators" /* 7394 */;
 import useNavigatorBackPressHandler from "useNavigatorBackPressHandler" /* 7499 */;
 import ConjureRemixSheet from "ConjureRemixSheet" /* 10978 */;
-import conjureStandaloneScenes from "conjureStandaloneScenes" /* 13139 */;
-import conjurePreviewTargets from "conjurePreviewTargets" /* 13143 */;
-import ConjureSettingsSheet from "ConjureSettingsSheet" /* 13194 */;
-import ConjureConnectToolSheet from "ConjureConnectToolSheet" /* 13265 */;
-import ConjureHistorySheet from "ConjureHistorySheet" /* 13276 */;
-import restartFrames from "restartFrames" /* 13298 */;
-import ConjureChatMoreSheet from "ConjureChatMoreSheet" /* 13302 */;
-import showConjureShareToServerSheetDefault from "showConjureShareToServerSheet" /* 13312 */;
-import openConjureShareSheetDefault from "openConjureShareSheet" /* 13329 */;
+import conjureStandaloneScenes from "conjureStandaloneScenes" /* 13141 */;
+import conjurePreviewTargets from "conjurePreviewTargets" /* 13145 */;
+import ConjureSettingsSheet from "ConjureSettingsSheet" /* 13196 */;
+import ConjureConnectToolSheet from "ConjureConnectToolSheet" /* 13267 */;
+import ConjureHistorySheet from "ConjureHistorySheet" /* 13278 */;
+import restartFrames from "restartFrames" /* 13300 */;
+import ConjureChatMoreSheet from "ConjureChatMoreSheet" /* 13304 */;
+import showConjureShareToServerSheetDefault from "showConjureShareToServerSheet" /* 13314 */;
+import openConjureShareSheetDefault from "openConjureShareSheet" /* 13331 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

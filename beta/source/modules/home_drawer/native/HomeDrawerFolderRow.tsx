@@ -1,10 +1,10 @@
-// Module ID: 19085
-// Function ID: 19086
+// Module ID: 19087
+// Function ID: 19088
 // Name: HomeDrawerFolderRow
-// Dependencies: [19, 17, 7060, 5177, 6946, 6948, 5971, 1072, 21, 5306, 504, 10994, 5919, 1113, 19086, 5488, 5485, 2]
+// Dependencies: [19, 17, 7060, 5177, 6946, 6948, 5971, 1072, 21, 5306, 504, 10994, 5919, 1113, 19088, 5488, 5485, 2]
 // Exports: default
 
-// Module 19085 (HomeDrawerFolderRow)
+// Module 19087 (HomeDrawerFolderRow)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import intl5 from "intl" /* 1113 */;

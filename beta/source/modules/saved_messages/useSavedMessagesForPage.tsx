@@ -35,7 +35,7 @@ export default function useSavedMessagesForPage() {
   let closure_3;
   let items1;
   let obj2;
-  const f103582 = (saveData) => saveData.saveData;
+  const f103586 = (saveData) => saveData.saveData;
   let ALL = arg0;
   if (arg0 === undefined) {
     let tmp = ALL;
@@ -55,7 +55,7 @@ export default function useSavedMessagesForPage() {
     } else {
       messageBookmarks = SavedMessagesStore.getSavedMessages();
     }
-    return messageBookmarks.map(f103582);
+    return messageBookmarks.map(f103586);
   }), 2);
   [c1, c2] = tmp3;
   _slicedToArray = react.useRef(SavedMessagesStore.getIsStale());
@@ -80,7 +80,7 @@ export default function useSavedMessagesForPage() {
             } else {
               messageBookmarks = obj.getSavedMessages();
             }
-            tmp2(messageBookmarks.map(f103582));
+            tmp2(messageBookmarks.map(f103586));
           }
         }
         c2((arg0) => {

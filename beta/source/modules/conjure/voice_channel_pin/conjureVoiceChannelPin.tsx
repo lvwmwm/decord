@@ -1,10 +1,10 @@
-// Module ID: 13157
-// Function ID: 13158
+// Module ID: 13159
+// Function ID: 13160
 // Name: conjureVoiceChannelPin
 // Dependencies: [5, 5155, 5238, 1072, 572, 7335, 10919, 2]
 // Exports: parseVoiceChannelPinOutcome, pinVoiceChannel, resolveVoiceChannelPin
 
-// Module 13157 (conjureVoiceChannelPin)
+// Module 13159 (conjureVoiceChannelPin)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import conjureProjectSockets from "conjureProjectSockets" /* 7335 */;
 import ChannelSettingsActionCreators from "ChannelSettingsActionCreators" /* 10919 */;

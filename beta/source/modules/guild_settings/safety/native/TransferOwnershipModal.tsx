@@ -1,18 +1,18 @@
-// Module ID: 14146
-// Function ID: 14147
+// Module ID: 14148
+// Function ID: 14149
 // Name: TransferOwnershipModal
-// Dependencies: [5, 19, 14147, 21, 14145, 1264, 1113, 7493, 14148, 7766, 8404, 6004, 7490, 2]
+// Dependencies: [5, 19, 14149, 21, 14147, 1264, 1113, 7493, 14150, 7766, 8404, 6004, 7490, 2]
 // Exports: default
 
-// Module 14146 (TransferOwnershipModal)
+// Module 14148 (TransferOwnershipModal)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1113 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
 import NavigatorHeader from "NavigatorHeader" /* 7493 */;
-import TransferOwnershipModalActionCreatorsDefault from "TransferOwnershipModalActionCreators" /* 14145 */;
+import TransferOwnershipModalActionCreatorsDefault from "TransferOwnershipModalActionCreators" /* 14147 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import TransferOwnershipConstants from "TransferOwnershipConstants" /* 14147 */;
+import TransferOwnershipConstants from "TransferOwnershipConstants" /* 14149 */;
 import size from "module_2" /* 2 */;
 
 let c0;

@@ -1,10 +1,10 @@
-// Module ID: 19006
-// Function ID: 19007
+// Module ID: 19008
+// Function ID: 19009
 // Name: WaterwheelsJoinOutcome
 // Dependencies: [1072, 6912, 2]
 // Exports: classifyWaterwheelsJoinFailure
 
-// Module 19006 (WaterwheelsJoinOutcome)
+// Module 19008 (WaterwheelsJoinOutcome)
 import Constants from "Constants" /* 1072 */;
 import JoinGuildRefusedError from "JoinGuildRefusedError" /* 6912 */;
 import size from "module_2" /* 2 */;

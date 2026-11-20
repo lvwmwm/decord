@@ -1,10 +1,10 @@
-// Module ID: 18349
-// Function ID: 18350
+// Module ID: 18351
+// Function ID: 18352
 // Name: DevToolsGuildPowerupsConstants
 // Dependencies: [5139, 2]
 // Exports: getGuildDCString, getUserDCString
 
-// Module 18349 (DevToolsGuildPowerupsConstants)
+// Module 18351 (DevToolsGuildPowerupsConstants)
 import dismissible_content from "dismissible_content" /* 5139 */;
 import size from "module_2" /* 2 */;
 

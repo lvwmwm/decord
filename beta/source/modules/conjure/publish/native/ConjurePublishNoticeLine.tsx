@@ -1,18 +1,18 @@
-// Module ID: 13643
-// Function ID: 13644
+// Module ID: 13645
+// Function ID: 13646
 // Name: ConjurePublishNoticeLine
-// Dependencies: [19, 21, 13637, 13644, 13645, 5919, 1113, 13568, 7231, 13646, 4131, 5542, 13647, 2]
+// Dependencies: [19, 21, 13639, 13646, 13647, 5919, 1113, 13570, 7231, 13648, 4131, 5542, 13649, 2]
 // Exports: default
 
-// Module 13643 (ConjurePublishNoticeLine)
+// Module 13645 (ConjurePublishNoticeLine)
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5542 */;
 import Text_Text from "Text/Text" /* 5919 */;
 import transitionToGuild from "transitionToGuild" /* 7231 */;
-import useConjurePublishedAppNameDefault from "useConjurePublishedAppName" /* 13637 */;
-import useConjurePublishedServerNameDefault from "useConjurePublishedServerName" /* 13644 */;
-import useConjureAutomodSettingsLinkDefault from "useConjureAutomodSettingsLink" /* 13645 */;
-import useConjurePatchNotesLink from "useConjurePatchNotesLink" /* 13646 */;
-import ConjurePublishNotesSheet from "ConjurePublishNotesSheet" /* 13647 */;
+import useConjurePublishedAppNameDefault from "useConjurePublishedAppName" /* 13639 */;
+import useConjurePublishedServerNameDefault from "useConjurePublishedServerName" /* 13646 */;
+import useConjureAutomodSettingsLinkDefault from "useConjureAutomodSettingsLink" /* 13647 */;
+import useConjurePatchNotesLink from "useConjurePatchNotesLink" /* 13648 */;
+import ConjurePublishNotesSheet from "ConjurePublishNotesSheet" /* 13649 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -133,7 +133,7 @@ export default function ConjurePublishNoticeLine(arg0) {
   const children = [format(publishNoticeMessageResult, obj), ];
   if (null != tmp4.guildId) {
     const obj2 = { guildId: tmp4.guildId, update: notice.update };
-    tmp10 = closure_3(tmp6(13645).ConjureAutomodSettingsLink, obj2);
+    tmp10 = closure_3(tmp6(13647).ConjureAutomodSettingsLink, obj2);
   } else {
     tmp10 = null;
     if (!tmp4.automod) {

@@ -1,10 +1,10 @@
-// Module ID: 12456
-// Function ID: 12457
+// Module ID: 12458
+// Function ID: 12459
 // Name: useScrollHandlers
 // Dependencies: [19, 11865, 3, 5558, 10280, 1263, 11882, 8779, 11884, 6957, 2]
 // Exports: default
 
-// Module 12456 (useScrollHandlers)
+// Module 12458 (useScrollHandlers)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 1263 */;
 import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5558 */;

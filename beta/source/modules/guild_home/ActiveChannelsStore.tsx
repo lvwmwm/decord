@@ -1,9 +1,9 @@
-// Module ID: 16211
-// Function ID: 16212
+// Module ID: 16213
+// Function ID: 16214
 // Name: ActiveChannelsStore
 // Dependencies: [5155, 5339, 5162, 11, 12, 504, 572, 2]
 
-// Module 16211 (ActiveChannelsStore)
+// Module 16213 (ActiveChannelsStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;

@@ -1,10 +1,10 @@
-// Module ID: 20272
-// Function ID: 20273
+// Module ID: 20274
+// Function ID: 20275
 // Name: SoundpackActions
 // Dependencies: [11034, 1072, 1256, 572, 2]
 // Exports: setSoundpack
 
-// Module 20272 (SoundpackActions)
+// Module 20274 (SoundpackActions)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;

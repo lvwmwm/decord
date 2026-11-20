@@ -1,14 +1,14 @@
-// Module ID: 19968
-// Function ID: 19969
+// Module ID: 19970
+// Function ID: 19971
 // Name: useIsDockCoveredByActivity
-// Dependencies: [7019, 5949, 7020, 19923, 504, 2]
+// Dependencies: [7019, 5949, 7020, 19925, 504, 2]
 // Exports: default
 
-// Module 19968 (useIsDockCoveredByActivity)
+// Module 19970 (useIsDockCoveredByActivity)
 import get_initialized from "get initialized" /* 504 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 5949 */;
 import FramesConstants from "FramesConstants" /* 7020 */;
-import ActivityPanelUtils from "ActivityPanelUtils" /* 19923 */;
+import ActivityPanelUtils from "ActivityPanelUtils" /* 19925 */;
 import FramesStore from "FramesStore" /* 7019 */;
 import size from "module_2" /* 2 */;
 

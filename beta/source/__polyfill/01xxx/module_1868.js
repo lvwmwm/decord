@@ -17,8 +17,8 @@ let closure_6 = _classPrivateFieldKey("eventViewTag");
 class NativeEventsManager {
   constructor(self, _options) {
     _classCallCheck(this, NativeEventsManager);
-    Object.defineProperty(this, closure_4, { writable: true, value: "a" });
-    Object.defineProperty(this, closure_5, { writable: true, value: "a" });
+    Object.defineProperty(this, closure_4, { writable: true, value: "Boolean" });
+    Object.defineProperty(this, closure_5, { writable: true, value: "Boolean" });
     Object.defineProperty(this, closure_6, { writable: true, value: -1 });
     _classPrivateFieldBase(this, closure_4)[closure_4] = self;
     _classPrivateFieldBase(this, closure_5)[closure_5] = _options;

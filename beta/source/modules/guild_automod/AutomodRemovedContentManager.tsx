@@ -1,10 +1,10 @@
-// Module ID: 20181
-// Function ID: 20182
+// Module ID: 20183
+// Function ID: 20184
 // Name: AutomodRemovedContentManager
-// Dependencies: [6362, 5209, 20182, 7882, 2]
+// Dependencies: [6362, 5209, 20184, 7882, 2]
 
-// Module 20181 (AutomodRemovedContentManager)
-import AutomodRemovedContentActionCreators from "AutomodRemovedContentActionCreators" /* 20182 */;
+// Module 20183 (AutomodRemovedContentManager)
+import AutomodRemovedContentActionCreators from "AutomodRemovedContentActionCreators" /* 20184 */;
 import MessageStore from "MessageStore" /* 6362 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;

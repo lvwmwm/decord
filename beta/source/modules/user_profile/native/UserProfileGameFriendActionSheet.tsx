@@ -1,10 +1,10 @@
-// Module ID: 15782
-// Function ID: 15783
+// Module ID: 15784
+// Function ID: 15785
 // Name: UserProfileGameFriendActionSheet
-// Dependencies: [5, 32, 19, 17, 5248, 1072, 21, 5306, 575, 12123, 7953, 7549, 1187, 5919, 15783, 7259, 6341, 8137, 6004, 5542, 7951, 7913, 1113, 2]
+// Dependencies: [5, 32, 19, 17, 5248, 1072, 21, 5306, 575, 12123, 7953, 7549, 1187, 5919, 15785, 7259, 6341, 8137, 6004, 5542, 7951, 7913, 1113, 2]
 // Exports: default
 
-// Module 15782 (UserProfileGameFriendActionSheet)
+// Module 15784 (UserProfileGameFriendActionSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;

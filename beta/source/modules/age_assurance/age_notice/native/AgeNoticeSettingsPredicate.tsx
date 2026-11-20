@@ -1,10 +1,10 @@
-// Module ID: 17209
-// Function ID: 17210
+// Module ID: 17211
+// Function ID: 17212
 // Name: AgeNoticeSettingsPredicate
 // Dependencies: [6831, 6832, 2]
 // Exports: useIsAgeNoticeSettingsEnabled
 
-// Module 17209 (AgeNoticeSettingsPredicate)
+// Module 17211 (AgeNoticeSettingsPredicate)
 import AgeNoticeConstants from "AgeNoticeConstants" /* 6831 */;
 import AgeNoticeExperiment from "AgeNoticeExperiment" /* 6832 */;
 import size from "module_2" /* 2 */;

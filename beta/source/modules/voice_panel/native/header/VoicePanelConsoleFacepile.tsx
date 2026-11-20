@@ -1,10 +1,10 @@
-// Module ID: 20002
-// Function ID: 20003
+// Module ID: 20004
+// Function ID: 20005
 // Name: VoicePanelConsoleFacepile
 // Dependencies: [19, 1072, 21, 5306, 575, 10837, 1113, 10817, 1255, 7722, 1187, 2]
 // Exports: default
 
-// Module 20002 (VoicePanelConsoleFacepile)
+// Module 20004 (VoicePanelConsoleFacepile)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;

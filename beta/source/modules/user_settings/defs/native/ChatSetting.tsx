@@ -1,13 +1,13 @@
-// Module ID: 18080
-// Function ID: 18081
+// Module ID: 18082
+// Function ID: 18083
 // Name: ChatSetting
-// Dependencies: [1072, 12406, 1113, 18081, 18083, 2]
+// Dependencies: [1072, 12408, 1113, 18083, 18085, 2]
 
-// Module 18080 (ChatSetting)
+// Module 18082 (ChatSetting)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
-import ImageTextIcon from "ImageTextIcon" /* 18081 */;
-import SettingBuilders from "SettingBuilders" /* 12406 */;
+import ImageTextIcon from "ImageTextIcon" /* 18083 */;
+import SettingBuilders from "SettingBuilders" /* 12408 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,9 +1,9 @@
-// Module ID: 17895
-// Function ID: 17896
+// Module ID: 17897
+// Function ID: 17898
 // Name: SettingsAppearanceConstants
 // Dependencies: [2]
 
-// Module 17895 (SettingsAppearanceConstants)
+// Module 17897 (SettingsAppearanceConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_settings/appearance/native/SettingsAppearanceConstants.tsx");

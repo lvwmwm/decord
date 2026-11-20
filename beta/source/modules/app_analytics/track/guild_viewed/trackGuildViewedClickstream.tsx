@@ -1,10 +1,10 @@
-// Module ID: 19588
-// Function ID: 19589
+// Module ID: 19590
+// Function ID: 19591
 // Name: trackGuildViewedClickstream
 // Dependencies: [1072, 5357, 8669, 2]
 // Exports: default
 
-// Module 19588 (trackGuildViewedClickstream)
+// Module 19590 (trackGuildViewedClickstream)
 import Constants from "Constants" /* 1072 */;
 import RouteUtils from "RouteUtils" /* 5357 */;
 import Clickstream from "Clickstream" /* 8669 */;

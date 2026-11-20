@@ -1,10 +1,10 @@
-// Module ID: 16407
-// Function ID: 16408
+// Module ID: 16409
+// Function ID: 16410
 // Name: GameOrganizationInviteNoFriends
 // Dependencies: [19, 21, 5306, 575, 5542, 5483, 6327, 5919, 1113, 2565, 5926, 2]
 // Exports: default
 
-// Module 16407 (GameOrganizationInviteNoFriends)
+// Module 16409 (GameOrganizationInviteNoFriends)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import _modDef2565 from "module_2565" /* 2565 */;

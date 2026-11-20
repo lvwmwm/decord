@@ -1,10 +1,10 @@
-// Module ID: 15467
-// Function ID: 15468
+// Module ID: 15469
+// Function ID: 15470
 // Name: UserProfilePrimaryInfo
-// Dependencies: [32, 19, 17, 8547, 1388, 8479, 7962, 1072, 8410, 8549, 21, 575, 5306, 1380, 10064, 10065, 10870, 7428, 10560, 5919, 15468, 5483, 15470, 1113, 15472, 8480, 6010, 15276, 8604, 6005, 8608, 10135, 10138, 6957, 9503, 10078, 15473, 504, 11819, 8545, 15272, 15273, 10113, 15474, 1496, 9487, 13997, 8409, 10654, 5362, 2]
+// Dependencies: [32, 19, 17, 8547, 1388, 8479, 7962, 1072, 8410, 8549, 21, 575, 5306, 1380, 10064, 10065, 10870, 7428, 10560, 5919, 15470, 5483, 15472, 1113, 15474, 8480, 6010, 15278, 8604, 6005, 8608, 10135, 10138, 6957, 9503, 10078, 15475, 504, 11819, 8545, 15274, 15275, 10113, 15476, 1496, 9487, 13999, 8409, 10654, 5362, 2]
 // Exports: default
 
-// Module 15467 (UserProfilePrimaryInfo)
+// Module 15469 (UserProfilePrimaryInfo)
 import nativeDefault from "native" /* 575 */;
 import Constants2 from "Constants" /* 1072 */;
 import UserUtilsDefault from "UserUtils" /* 5362 */;
@@ -25,8 +25,8 @@ import captureAdUserAction2 from "captureAdUserAction" /* 10135 */;
 import captureAdUserActionTypes from "captureAdUserActionTypes" /* 10138 */;
 import GuildTagDefault from "GuildTag" /* 10654 */;
 import BotTagDefault from "BotTag" /* 10870 */;
-import trackBadgeDirectoryActionDefault from "trackBadgeDirectoryAction" /* 15272 */;
-import openBadgeDirectoryScreen from "openBadgeDirectoryScreen" /* 15273 */;
+import trackBadgeDirectoryActionDefault from "trackBadgeDirectoryAction" /* 15274 */;
+import openBadgeDirectoryScreen from "openBadgeDirectoryScreen" /* 15275 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

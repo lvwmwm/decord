@@ -1,12 +1,12 @@
-// Module ID: 20461
-// Function ID: 20462
+// Module ID: 20463
+// Function ID: 20464
 // Name: guild_automod/ExperimentUtils
-// Dependencies: [20462, 7053, 2]
+// Dependencies: [20464, 7053, 2]
 // Exports: useIsApplicationRuleEnabled
 
-// Module 20461 (guild_automod/ExperimentUtils)
+// Module 20463 (guild_automod/ExperimentUtils)
 import ConjureGuildExperiment from "ConjureGuildExperiment" /* 7053 */;
-import AutomodExperiment from "AutomodExperiment" /* 20462 */;
+import AutomodExperiment from "AutomodExperiment" /* 20464 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_automod/ExperimentUtils.tsx");

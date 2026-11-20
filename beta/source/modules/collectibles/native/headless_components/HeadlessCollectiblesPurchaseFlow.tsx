@@ -1,10 +1,10 @@
-// Module ID: 15515
-// Function ID: 15516
+// Module ID: 15517
+// Function ID: 15518
 // Name: HeadlessCollectiblesPurchaseFlow
-// Dependencies: [19, 1072, 1083, 21, 9410, 9518, 11796, 1380, 2186, 11743, 9722, 5542, 9407, 15516, 2]
+// Dependencies: [19, 1072, 1083, 21, 9410, 9518, 11796, 1380, 2186, 11743, 9722, 5542, 9407, 15518, 2]
 // Exports: default
 
-// Module 15515 (HeadlessCollectiblesPurchaseFlow)
+// Module 15517 (HeadlessCollectiblesPurchaseFlow)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import Constants2 from "Constants" /* 1083 */;

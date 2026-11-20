@@ -1,10 +1,10 @@
-// Module ID: 14820
-// Function ID: 14821
+// Module ID: 14822
+// Function ID: 14823
 // Name: DescriptionEllipsis
 // Dependencies: [19, 17, 21, 5306, 575, 2]
 // Exports: default
 
-// Module 14820 (DescriptionEllipsis)
+// Module 14822 (DescriptionEllipsis)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;

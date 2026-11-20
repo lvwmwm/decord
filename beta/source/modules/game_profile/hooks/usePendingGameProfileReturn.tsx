@@ -1,10 +1,10 @@
-// Module ID: 14866
-// Function ID: 14867
+// Module ID: 14868
+// Function ID: 14869
 // Name: usePendingGameProfileReturn
 // Dependencies: [32, 19, 2141, 10283, 1072, 504, 10281, 10286, 2]
 // Exports: default
 
-// Module 14866 (usePendingGameProfileReturn)
+// Module 14868 (usePendingGameProfileReturn)
 import Constants from "Constants" /* 1072 */;
 import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 10281 */;
 import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 10286 */;

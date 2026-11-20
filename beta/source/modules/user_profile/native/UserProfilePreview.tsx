@@ -1,7 +1,7 @@
 // Module ID: 9528
 // Function ID: 9529
 // Name: UserProfilePreview
-// Dependencies: [32, 19, 17, 8542, 7962, 21, 5306, 575, 504, 8482, 8590, 8607, 9529, 8601, 8541, 8561, 9401, 8409, 8608, 8587, 5367, 8583, 8567, 8612, 9495, 8622, 9530, 9531, 15467, 15478, 9493, 2]
+// Dependencies: [32, 19, 17, 8542, 7962, 21, 5306, 575, 504, 8482, 8590, 8607, 9529, 8601, 8541, 8561, 9401, 8409, 8608, 8587, 5367, 8583, 8567, 8612, 9495, 8622, 9530, 9531, 15469, 15480, 9493, 2]
 // Exports: default
 
 // Module 9528 (UserProfilePreview)
@@ -302,7 +302,7 @@ export default function UserProfilePreview(compact) {
   }
   items8 = [tmp31Result5, , ];
   const obj17 = { user, themeType: constants.PREVIEW, displayName, pronouns: tmp47, badges: items1, badgeContainerBackground: containerBackground, showBadgeToastOnPress: false, pendingDisplayNameStyles, primaryGuildOverride: tmp49, guildId, hideBadges: flag3 };
-  const tmp4Result10 = isPremiumTryItOut(15467);
+  const tmp4Result10 = isPremiumTryItOut(15469);
   if (displayName == null) {
     displayName = pendingGlobalName;
   }
@@ -328,7 +328,7 @@ export default function UserProfilePreview(compact) {
     items9 = [tmp9.card, tmp8.aboutMeCard, ];
     const obj20 = { backgroundColor: containerBackground };
     items9[2] = obj20;
-    tmp31Result6 = tmp31(tmp4(15478), obj19);
+    tmp31Result6 = tmp31(tmp4(15480), obj19);
   }
   items8[2] = tmp31Result6;
   items6[1] = closure_10(tmp4Result9, obj14);

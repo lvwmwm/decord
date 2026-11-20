@@ -1,10 +1,10 @@
-// Module ID: 19916
-// Function ID: 19917
+// Module ID: 19918
+// Function ID: 19919
 // Name: getAdjustedBottomOffsets
 // Dependencies: [1380, 2]
 // Exports: default
 
-// Module 19916 (getAdjustedBottomOffsets)
+// Module 19918 (getAdjustedBottomOffsets)
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import size from "module_2" /* 2 */;
 

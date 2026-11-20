@@ -1,8 +1,8 @@
-// Module ID: 20681
-// Function ID: 20682
+// Module ID: 20683
+// Function ID: 20684
 // Dependencies: [2]
 
-// Module 20681
+// Module 20683
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/CoinsAndBagSpotIllustration-1x.png.js");

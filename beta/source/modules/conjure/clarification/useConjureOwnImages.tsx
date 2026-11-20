@@ -1,12 +1,12 @@
-// Module ID: 13735
-// Function ID: 13736
+// Module ID: 13737
+// Function ID: 13738
 // Name: useConjureOwnImages
-// Dependencies: [109, 32, 19, 1113, 4131, 13228, 2]
+// Dependencies: [109, 32, 19, 1113, 4131, 13230, 2]
 // Exports: inertOwnImageControls, useConjureOwnImages
 
-// Module 13735 (useConjureOwnImages)
+// Module 13737 (useConjureOwnImages)
 import _modDef4131 from "module_4131" /* 4131 */;
-import conjureAttachmentRequests from "conjureAttachmentRequests" /* 13228 */;
+import conjureAttachmentRequests from "conjureAttachmentRequests" /* 13230 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -131,7 +131,7 @@ export function useConjureOwnImages(projectId, arg1, arg2) {
       let busy;
       let closure_3;
       let error;
-      const f142904 = (arg0) => {
+      const f142913 = (arg0) => {
         obj = {};
         const merged = Object.assign(arg0);
         obj[obj] = true;
@@ -264,7 +264,7 @@ export function useConjureOwnImages(projectId, arg1, arg2) {
                   });
                   const tmp5 = closure_1;
                   if (tmp5) {
-                    closure_1_8(f142904);
+                    closure_1_8(f142913);
                   } else {
                     _null((arg0) => {
                       let tmp2 = arg0;
@@ -327,7 +327,7 @@ export function useConjureOwnImages(projectId, arg1, arg2) {
                 });
                 const tmp3 = closure_1;
                 if (tmp3) {
-                  closure_1_8(f142904);
+                  closure_1_8(f142913);
                 } else {
                   _null((arg0) => {
                     let tmp2 = arg0;

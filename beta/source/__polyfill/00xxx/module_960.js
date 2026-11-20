@@ -8,7 +8,7 @@ import _mod890 from "module_890" /* 890 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 
 const require = globalThis.__r;
-let _require, c0, c1, c4, c5, closure_2, dependencyMap, f83316, getAllKeys;
+let _require, c0, c1, c4, c5, closure_2, dependencyMap, f83320, getAllKeys;
 
 function _push(fn, arg1, arg2) {
   let closure_0 = arg1;
@@ -142,7 +142,7 @@ function _shift(fn) {
 function createIndexedDbStore(arg0) {
   let dbName = arg0;
   function getStore() {
-    if (null == f83316) {
+    if (null == f83320) {
       let str = dbName.dbName;
       const tmp5 = dbName;
       if (!str) {
@@ -166,7 +166,7 @@ function createIndexedDbStore(arg0) {
         closure_0.onerror = fn2;
         closure_0.onabort = fn2;
       });
-      f83316 = (arg0) => {
+      f83320 = (arg0) => {
         closure_0 = arg0;
         return promise.then((transaction) => {
           const transactionResult = transaction.transaction(closure_0, "readwrite");
@@ -174,7 +174,7 @@ function createIndexedDbStore(arg0) {
         });
       };
     }
-    return f83316;
+    return f83320;
   }
   let obj = {
     push(arg0) {

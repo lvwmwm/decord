@@ -1,56 +1,24 @@
 // Module ID: 13908
 // Function ID: 13909
 // Name: tokenize
-// Dependencies: [13831]
+// Dependencies: [13833]
 
 // Module 13908 (tokenize)
-import tokenize from "tokenize" /* 13831 */;
+import tokenize from "tokenize" /* 13833 */;
 
 let obj2;
-function eatIdentifierOrAsterisk() {
-  const self = this;
-  let tmp = this.scanner.tokenType !== Ident;
-  if (tmp) {
-    const scanner = self.scanner;
-    tmp = false === scanner.isDelim(42);
-  }
-  if (tmp) {
-    self.error("Identifier or asterisk is expected");
-  }
-  const iter = self.scanner;
-  iter.next();
-}
-const Ident = tokenize.TYPE.Ident;
+const String = tokenize.TYPE.String;
 let obj = {
-  name: "TypeSelector",
+  name: "String",
   structure: obj2,
   parse() {
-    let scanner3;
-    const self = this;
-    const tokenStart = this.scanner.tokenStart;
-    const scanner = this.scanner;
-    if (scanner.isDelim(124)) {
-      const iter2 = self.scanner;
-      iter2.next();
-      eatIdentifierOrAsterisk.call(self);
-    } else {
-      eatIdentifierOrAsterisk.call(self);
-      const scanner2 = self.scanner;
-      const obj = eatIdentifierOrAsterisk;
-      if (scanner2.isDelim(124)) {
-        const iter = self.scanner;
-        iter.next();
-        obj.call(self);
-      }
-    }
-    const obj2 = { type: "TypeSelector", loc: self.getLocation(tokenStart, self.scanner.tokenStart), name: scanner3.substrToCursor(tokenStart) };
-    scanner3 = self.scanner;
-    return obj2;
+    const obj = { type: "String", loc: this.getLocation(this.scanner.tokenStart, this.scanner.tokenEnd), value: this.consume(String) };
+    return obj;
   },
-  generate(name) {
-    this.chunk(name.name);
+  generate(value) {
+    this.chunk(value.value);
   }
 };
-obj2 = { name: String };
+obj2 = { value: String };
 
 export default obj;

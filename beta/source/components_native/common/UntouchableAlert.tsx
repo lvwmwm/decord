@@ -1,9 +1,9 @@
-// Module ID: 17866
-// Function ID: 17867
+// Module ID: 17868
+// Function ID: 17869
 // Name: UntouchableAlert
 // Dependencies: [19, 17, 21, 5306, 5367, 7418, 2]
 
-// Module 17866 (UntouchableAlert)
+// Module 17868 (UntouchableAlert)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import native from "native" /* 5367 */;

@@ -1,18 +1,18 @@
-// Module ID: 16421
-// Function ID: 16422
+// Module ID: 16423
+// Function ID: 16424
 // Name: GuildActionSheetTabItems
-// Dependencies: [19, 5155, 5236, 5209, 1072, 21, 16401, 9241, 504, 8464, 8460, 6941, 7988, 1113, 9981, 575, 6057, 16422, 16423, 5542, 6942, 10982, 9173, 7883, 10570, 8404, 16424, 2]
+// Dependencies: [19, 5155, 5236, 5209, 1072, 21, 16403, 9241, 504, 8464, 8460, 6941, 7988, 1113, 9981, 575, 6057, 16424, 16425, 5542, 6942, 10982, 9173, 7883, 10570, 8404, 16426, 2]
 // Exports: default
 
-// Module 16421 (GuildActionSheetTabItems)
+// Module 16423 (GuildActionSheetTabItems)
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6057 */;
 import BoostingActionCreatorsAll from "BoostingActionCreators" /* 6942 */;
 import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7883 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8404 */;
 import utils_InstantInviteUtils from "utils/InstantInviteUtils" /* 8464 */;
-import GuildActionSheetAnalyticsUtils from "GuildActionSheetAnalyticsUtils" /* 16422 */;
-import GuildActionSheetTypes from "GuildActionSheetTypes" /* 16423 */;
+import GuildActionSheetAnalyticsUtils from "GuildActionSheetAnalyticsUtils" /* 16424 */;
+import GuildActionSheetTypes from "GuildActionSheetTypes" /* 16425 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import GuildChannelStore from "GuildChannelStore" /* 5236 */;
@@ -46,7 +46,7 @@ export default function GuildActionSheetTabItems(guild) {
   let obj7;
   guild = guild.guild;
   const tmp = guild;
-  let obj = guild(16401);
+  let obj = guild(16403);
   let canAccessSettings = obj.useGuildActionSheetPermissions(guild).canAccessSettings;
   let tmp3 = canAccessSettings;
   const total = canAccessSettings(9241)(guild.id).total;
@@ -162,6 +162,6 @@ export default function GuildActionSheetTabItems(guild) {
     canAccessSettings = tmp7(IconButton4, obj10);
   }
   items2[3] = canAccessSettings;
-  items2[4] = closure_12(tmp3(16424), { guild });
+  items2[4] = closure_12(tmp3(16426), { guild });
   return tmp6(ButtonGroup, obj4);
 };

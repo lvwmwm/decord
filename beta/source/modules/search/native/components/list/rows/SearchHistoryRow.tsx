@@ -1,16 +1,16 @@
-// Module ID: 19482
-// Function ID: 19483
+// Module ID: 19484
+// Function ID: 19485
 // Name: SearchHistoryRow
-// Dependencies: [5, 19, 17, 5155, 7015, 1388, 9066, 21, 5306, 575, 14765, 7428, 7549, 19471, 14761, 19465, 5919, 7826, 563, 19481, 7350, 8134, 19480, 19483, 19496, 1113, 2]
+// Dependencies: [5, 19, 17, 5155, 7015, 1388, 9066, 21, 5306, 575, 14767, 7428, 7549, 19473, 14763, 19467, 5919, 7826, 563, 19483, 7350, 8134, 19482, 19485, 19498, 1113, 2]
 
-// Module 19482 (SearchHistoryRow)
+// Module 19484 (SearchHistoryRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5919 */;
 import UserActionCreators from "UserActionCreators" /* 7350 */;
 import SearchConstants from "SearchConstants" /* 9066 */;
-import TrackingDefault from "Tracking" /* 14761 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 14765 */;
+import TrackingDefault from "Tracking" /* 14763 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 14767 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
@@ -46,7 +46,7 @@ function SearchHistoryTextRow(searchContext) {
   const searchHistoryItem = searchContext.searchHistoryItem;
   const tmp = closure_12();
   dependencyMap = tmp;
-  let obj = searchContext(19471);
+  let obj = searchContext(19473);
   const onPressSearchHistoryText = obj.useOnPressSearchHistoryText({ searchContext });
   const items = [onPressSearchHistoryText, searchContext, , , ];
   ({ tags: arr[2], text: arr[3], type: arr[4] } = searchHistoryItem);
@@ -59,7 +59,7 @@ function SearchHistoryTextRow(searchContext) {
   let obj2 = { style: tmp.textContainer, children: items1 };
   const tags = searchHistoryItem.tags;
   let mapped;
-  const SearchListRow = searchContext(19465).SearchListRow;
+  const SearchListRow = searchContext(19467).SearchListRow;
   const tmp7 = closure_11;
   if (tags != null) {
     mapped = tags.map((children) => {

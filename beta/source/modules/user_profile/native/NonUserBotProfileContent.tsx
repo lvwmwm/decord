@@ -1,7 +1,7 @@
 // Module ID: 8606
 // Function ID: 8607
 // Name: NonUserBotProfileContent
-// Dependencies: [19, 17, 7962, 5557, 21, 8607, 8545, 6341, 5362, 8608, 8593, 8609, 1630, 8590, 8601, 7943, 6004, 8610, 1655, 8622, 15467, 1113, 15478, 2]
+// Dependencies: [19, 17, 7962, 5557, 21, 8607, 8545, 6341, 5362, 8608, 8593, 8609, 1630, 8590, 8601, 7943, 6004, 8610, 1655, 8622, 15469, 1113, 15480, 2]
 
 // Module 8606 (NonUserBotProfileContent)
 import react_native from "react-native" /* 17 */;
@@ -15,8 +15,8 @@ import useUserProfileBannerHeightDefault from "useUserProfileBannerHeight" /* 85
 import UserProfileSharedStylesDefault from "UserProfileSharedStyles" /* 8607 */;
 import useBadgesDefault from "useBadges" /* 8608 */;
 import useUserProfileOverscrollStylesDefault from "useUserProfileOverscrollStyles" /* 8609 */;
-import UserProfilePrimaryInfoDefault from "UserProfilePrimaryInfo" /* 15467 */;
-import UserProfileAboutMeCardDefault from "UserProfileAboutMeCard" /* 15478 */;
+import UserProfilePrimaryInfoDefault from "UserProfilePrimaryInfo" /* 15469 */;
+import UserProfileAboutMeCardDefault from "UserProfileAboutMeCard" /* 15480 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 7962 */;
 import Fragment from "Fragment" /* 21 */;

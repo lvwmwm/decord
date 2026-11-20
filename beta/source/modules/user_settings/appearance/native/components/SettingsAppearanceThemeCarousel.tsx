@@ -1,10 +1,10 @@
-// Module ID: 17894
-// Function ID: 17895
+// Module ID: 17896
+// Function ID: 17897
 // Name: SettingsAppearanceThemeCarousel
-// Dependencies: [32, 19, 17, 17895, 1072, 5331, 21, 1655, 1187, 5306, 575, 5558, 5534, 17085, 6957, 1627, 5336, 5538, 5541, 12, 17896, 11214, 5919, 11689, 5544, 1113, 17638, 5367, 17108, 17899, 2]
+// Dependencies: [32, 19, 17, 17897, 1072, 5331, 21, 1655, 1187, 5306, 575, 5558, 5534, 17087, 6957, 1627, 5336, 5538, 5541, 12, 17898, 11214, 5919, 11689, 5544, 1113, 17640, 5367, 17110, 17901, 2]
 // Exports: default
 
-// Module 17894 (SettingsAppearanceThemeCarousel)
+// Module 17896 (SettingsAppearanceThemeCarousel)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -15,7 +15,7 @@ import HapticUtils from "HapticUtils" /* 5544 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 17895 */;
+import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 17897 */;
 import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5331 */;
 import Fragment from "Fragment" /* 21 */;
 import module_1655 from "module_1655" /* 1655 */;

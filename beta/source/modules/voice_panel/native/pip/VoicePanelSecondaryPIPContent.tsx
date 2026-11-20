@@ -1,15 +1,15 @@
-// Module ID: 20070
-// Function ID: 20071
+// Module ID: 20072
+// Function ID: 20073
 // Name: VoicePanelSecondaryPIPContent
-// Dependencies: [19, 5154, 7019, 5155, 5949, 7020, 12706, 21, 5306, 11984, 11995, 504, 5227, 1655, 10576, 5970, 19932, 13355, 13359, 12848, 2]
+// Dependencies: [19, 5154, 7019, 5155, 5949, 7020, 12708, 21, 5306, 11984, 11995, 504, 5227, 1655, 10576, 5970, 19934, 13357, 13361, 12850, 2]
 // Exports: default
 
-// Module 20070 (VoicePanelSecondaryPIPContent)
+// Module 20072 (VoicePanelSecondaryPIPContent)
 import Fragment from "Fragment" /* 21 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 5949 */;
 import roundToNearestPixelDefault from "roundToNearestPixel" /* 10576 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11984 */;
-import Constants from "Constants" /* 12706 */;
+import Constants from "Constants" /* 12708 */;
 import react from "react" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5154 */;
 import FramesStore from "FramesStore" /* 7019 */;
@@ -24,9 +24,9 @@ let metroImportAll;
 let tmp;
 const _modDef1655 = tmp(1655);
 const isVoiceEmbeddedActivityDefault = tmp(5970);
-const EmbeddedActivityViewDefault = tmp(12848);
-const FrameRenderTargetDefault = tmp(13355);
-const getActivityContainerPIPStylesSpecDefault = tmp(19932);
+const EmbeddedActivityViewDefault = tmp(12850);
+const FrameRenderTargetDefault = tmp(13357);
+const getActivityContainerPIPStylesSpecDefault = tmp(19934);
 const ActivityPanelModes = ActivityPanelConstants.ActivityPanelModes;
 ({ asLaunched: metroImportAll, FrameLayoutModes: c9, getPipOrientationLockStateForFrame: c10 } = FramesConstants);
 const ActivityLayoutMode = Constants.ActivityLayoutMode;
@@ -181,7 +181,7 @@ export default function VoicePanelSecondaryPIPContent() {
     if (null != mainFrameId && framePanelMode === ActivityPanelModes.PIP) {
       let tmp26Result;
       if (null != mainFrameId) {
-        const obj7 = { frameId: mainFrameId, level: connectedEmbeddedActivityChannelId(13359).FrameStackLevel.AboveAppContent, presentation: obj8 };
+        const obj7 = { frameId: mainFrameId, level: connectedEmbeddedActivityChannelId(13361).FrameStackLevel.AboveAppContent, presentation: obj8 };
         obj8 = { layoutMode: constants.PIP };
         const tmpResult = FrameRenderTargetDefault;
         tmp26Result = tmp26(tmpResult, obj7);

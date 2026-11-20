@@ -1,9 +1,9 @@
-// Module ID: 20058
-// Function ID: 20059
+// Module ID: 20060
+// Function ID: 20061
 // Name: VoicePanelDockPIPOverlay
-// Dependencies: [32, 19, 17, 5307, 1388, 6065, 21, 1655, 5306, 575, 5932, 7722, 13060, 6086, 6223, 20059, 7432, 15761, 1113, 11984, 5538, 1708, 11995, 11253, 504, 1187, 9516, 19947, 7550, 12992, 7433, 17580, 3253, 2]
+// Dependencies: [32, 19, 17, 5307, 1388, 6065, 21, 1655, 5306, 575, 5932, 7722, 13062, 6086, 6223, 20061, 7432, 15763, 1113, 11984, 5538, 1708, 11995, 11253, 504, 1187, 9516, 19949, 7550, 12994, 7433, 17582, 3253, 2]
 
-// Module 20058 (VoicePanelDockPIPOverlay)
+// Module 20060 (VoicePanelDockPIPOverlay)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1655 from "module_1655" /* 1655 */;
@@ -12,7 +12,7 @@ import ButtonConstants from "ButtonConstants" /* 5932 */;
 import Constants from "Constants" /* 6065 */;
 import PerceptualVolumeUtils from "PerceptualVolumeUtils" /* 6223 */;
 import NativeViewDefault from "NativeView" /* 7722 */;
-import useMuteAwareLocalVolumeDefault from "useMuteAwareLocalVolume" /* 13060 */;
+import useMuteAwareLocalVolumeDefault from "useMuteAwareLocalVolume" /* 13062 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5307 */;
@@ -60,7 +60,7 @@ function StreamVolumeSlider(stacked) {
   handleVolumeChange = tmp4Result.handleVolumeChange;
   const items = [handleVolumeChange];
   const effectiveVolume = tmp4Result.effectiveVolume;
-  let obj = { Icon: handleVolumeChange(20059).VoiceLowIcon };
+  let obj = { Icon: handleVolumeChange(20061).VoiceLowIcon };
   const callback = react.useCallback((arg0) => {
     const obj = PerceptualVolumeUtils;
     return handleVolumeChange(obj.perceptualToAmplitude(arg0));
@@ -79,7 +79,7 @@ function StreamVolumeSlider(stacked) {
     accessibilityLabel: intl.string(handleVolumeChange(1113).t.pEAl4b)
   };
   const tmp11 = NativeViewDefault;
-  Slider = tmp5(15761).Slider;
+  Slider = tmp5(15763).Slider;
   tmp5Result = handleVolumeChange(6223);
   intl = tmp5(1113).intl;
   const tmp8Result = closure_9(tmp11, obj3);
@@ -312,8 +312,8 @@ const memoResult = react.memo(function VoicePanelDockPIPOverlay(ownerId) {
       }
       const obj9 = { pointerEvents: "none", children: tmp29Result4 };
       items10 = [closure_9(tmp2Result8, obj9), ];
-      const obj10 = { icon: tmp2("video" === kind ? 7550 : 12992), onPress: onStopWatching, accessibilityLabel: stringResult };
-      const tmp2Result9 = tmp2(19947);
+      const obj10 = { icon: tmp2("video" === kind ? 7550 : 12994), onPress: onStopWatching, accessibilityLabel: stringResult };
+      const tmp2Result9 = tmp2(19949);
       const intl = tmp12(1113).intl;
       const string = intl.string;
       const t = tmp12(1113).t;
@@ -336,14 +336,14 @@ const memoResult = react.memo(function VoicePanelDockPIPOverlay(ownerId) {
       let tmp29Result5 = null;
       if ("video" !== kind) {
         const obj12 = { icon: tmp2(7433), onPress: onToggleVolume, accessibilityLabel: intl2.string(ownerId(1113).t.pEAl4b) };
-        const tmp2Result11 = tmp2(19947);
+        const tmp2Result11 = tmp2(19949);
         intl2 = tmp12(1113).intl;
         tmp29Result5 = tmp29(tmp2Result11, obj12);
       }
       items13 = [tmp29Result5, ];
       const obj13 = { children: items11 };
-      const obj14 = { icon: tmp2(17580), onPress: onOpenCall, accessibilityLabel: intl3.string(tmp2(3253).MPtef8) };
-      const tmp2Result12 = tmp2(19947);
+      const obj14 = { icon: tmp2(17582), onPress: onOpenCall, accessibilityLabel: intl3.string(tmp2(3253).MPtef8) };
+      const tmp2Result12 = tmp2(19949);
       intl3 = tmp12(1113).intl;
       items13[1] = closure_9(tmp2Result12, obj14);
       items11[1] = closure_10(tmp2Result10, obj11);

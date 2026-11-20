@@ -1,16 +1,16 @@
-// Module ID: 18857
-// Function ID: 18858
+// Module ID: 18859
+// Function ID: 18860
 // Name: FavoritesGuildActionSheet
-// Dependencies: [19, 5158, 21, 18858, 18859, 504, 7951, 7913, 1113, 7953, 3679, 8071, 6838, 18860, 2121, 12100, 18862, 7633, 6030, 2]
+// Dependencies: [19, 5158, 21, 18860, 18861, 504, 7951, 7913, 1113, 7953, 3679, 8071, 6838, 18862, 2121, 12100, 18864, 7633, 6030, 2]
 // Exports: default
 
-// Module 18857 (FavoritesGuildActionSheet)
+// Module 18859 (FavoritesGuildActionSheet)
 import asyncRequire from "asyncRequire" /* 2121 */;
 import _modDef3679 from "module_3679" /* 3679 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
-import useFavoritesGuildHideActionDefault from "useFavoritesGuildHideAction" /* 18858 */;
-import useFavoritesGuildResetActionDefault from "useFavoritesGuildResetAction" /* 18859 */;
-import openFavoritesGuildChannelSortModalDefault from "openFavoritesGuildChannelSortModal" /* 18862 */;
+import useFavoritesGuildHideActionDefault from "useFavoritesGuildHideAction" /* 18860 */;
+import useFavoritesGuildResetActionDefault from "useFavoritesGuildResetAction" /* 18861 */;
+import openFavoritesGuildChannelSortModalDefault from "openFavoritesGuildChannelSortModal" /* 18864 */;
 import react from "react" /* 19 */;
 import FavoriteStore from "FavoriteStore" /* 5158 */;
 import Fragment from "Fragment" /* 21 */;
@@ -65,7 +65,7 @@ export default function FavoritesGuildActionSheet(onClose) {
     onPress() {
       onClose();
       const obj = ModalActionCreatorsDefault;
-      obj.pushLazy(asyncRequire(18860, dependencyMap.paths), undefined, "FavoritesGuildCleanupModal");
+      obj.pushLazy(asyncRequire(18862, dependencyMap.paths), undefined, "FavoritesGuildCleanupModal");
     }
   };
   ActionSheetRow = onClose(7953).ActionSheetRow;

@@ -1,10 +1,10 @@
-// Module ID: 17670
-// Function ID: 17671
+// Module ID: 17672
+// Function ID: 17673
 // Name: OrbsArcadeRewardsCollectedModal
-// Dependencies: [32, 19, 17, 5307, 1072, 1390, 21, 5306, 575, 10024, 7994, 5919, 9409, 504, 11832, 9402, 9500, 17663, 1113, 10029, 5926, 8527, 10423, 17669, 8604, 5892, 5883, 1092, 7415, 7988, 10867, 17648, 6941, 2]
+// Dependencies: [32, 19, 17, 5307, 1072, 1390, 21, 5306, 575, 10024, 7994, 5919, 9409, 504, 11832, 9402, 9500, 17665, 1113, 10029, 5926, 8527, 10423, 17671, 8604, 5892, 5883, 1092, 7415, 7988, 10867, 17650, 6941, 2]
 // Exports: default
 
-// Module 17670 (OrbsArcadeRewardsCollectedModal)
+// Module 17672 (OrbsArcadeRewardsCollectedModal)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -24,9 +24,9 @@ import useHandleUseNow from "useHandleUseNow" /* 10029 */;
 import FractionalNitroCoinIllustration from "FractionalNitroCoinIllustration" /* 10423 */;
 import AssetRegistryDefault from "AssetRegistry" /* 10867 */;
 import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 11832 */;
-import OrbsArcadeTypes from "OrbsArcadeTypes" /* 17648 */;
-import OrbsArcadeRewardPreviewDefault from "OrbsArcadeRewardPreview" /* 17663 */;
-import openOrbsArcadeRewardsCollectedModal from "openOrbsArcadeRewardsCollectedModal" /* 17669 */;
+import OrbsArcadeTypes from "OrbsArcadeTypes" /* 17650 */;
+import OrbsArcadeRewardPreviewDefault from "OrbsArcadeRewardPreview" /* 17665 */;
+import openOrbsArcadeRewardsCollectedModal from "openOrbsArcadeRewardsCollectedModal" /* 17671 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -343,7 +343,7 @@ export default function OrbsArcadeRewardsCollectedModal(arg0) {
     const rect = { style: tmp.main, top: true, bottom: true, left: true, right: true, children: items4 };
     const obj8 = { style: tmp.header, children: closure_10(IconButton, obj9) };
     const SafeAreaPaddingView = tmp2(7415).SafeAreaPaddingView;
-    obj9 = { variant: "tertiary", icon: AssetRegistryDefault, accessibilityLabel: intl3.string(tmp2(1113).t.cpT0Cq), onPress: tmp2(17669).closeOrbsArcadeRewardsCollectedModal };
+    obj9 = { variant: "tertiary", icon: AssetRegistryDefault, accessibilityLabel: intl3.string(tmp2(1113).t.cpT0Cq), onPress: tmp2(17671).closeOrbsArcadeRewardsCollectedModal };
     IconButton = tmp2(7988).IconButton;
     intl3 = tmp2(1113).intl;
     items4 = [closure_10(closure_6, obj8), , ];
@@ -412,7 +412,7 @@ export default function OrbsArcadeRewardsCollectedModal(arg0) {
     }
     items5 = [tmp27Result4, ];
     const ButtonGroup = tmp2(6941).ButtonGroup;
-    if (rewards[bound].type === tmp2(17648).OrbsArcadeRewardType.COLLECTIBLE) {
+    if (rewards[bound].type === tmp2(17650).OrbsArcadeRewardType.COLLECTIBLE) {
       const obj16 = { reward: rewards[bound] };
       tmp27Result5 = tmp27(CollectibleRewardPrimaryAction, obj16, tmp14.id);
     } else {

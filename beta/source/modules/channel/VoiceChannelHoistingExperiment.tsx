@@ -1,10 +1,10 @@
-// Module ID: 20205
-// Function ID: 20206
+// Module ID: 20207
+// Function ID: 20208
 // Name: VoiceChannelHoistingExperiment
 // Dependencies: [5523, 5520, 2]
 // Exports: useVoiceChannelHoistingExperiment
 
-// Module 20205 (VoiceChannelHoistingExperiment)
+// Module 20207 (VoiceChannelHoistingExperiment)
 import ExperimentConstants from "ExperimentConstants" /* 5523 */;
 import createExperiment from "module_5520" /* 5520 */;
 import size from "module_2" /* 2 */;

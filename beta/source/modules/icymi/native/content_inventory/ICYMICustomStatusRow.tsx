@@ -1,10 +1,10 @@
-// Module ID: 19344
-// Function ID: 19345
+// Module ID: 19346
+// Function ID: 19347
 // Name: ICYMICustomStatusRow
-// Dependencies: [32, 19, 17, 1388, 10205, 21, 575, 5306, 19287, 1187, 11857, 5919, 1113, 9060, 5303, 504, 6740, 10066, 9532, 10864, 1380, 7428, 6030, 10901, 12672, 10409, 11, 1089, 19341, 5362, 7034, 19345, 9503, 2]
+// Dependencies: [32, 19, 17, 1388, 10205, 21, 575, 5306, 19289, 1187, 11857, 5919, 1113, 9060, 5303, 504, 6740, 10066, 9532, 10864, 1380, 7428, 6030, 10901, 12674, 10409, 11, 1089, 19343, 5362, 7034, 19347, 9503, 2]
 // Exports: default
 
-// Module 19344 (ICYMICustomStatusRow)
+// Module 19346 (ICYMICustomStatusRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
@@ -15,14 +15,14 @@ import Pressables from "Pressables" /* 7428 */;
 import ReactionIcon from "ReactionIcon" /* 10409 */;
 import PencilIcon from "PencilIcon" /* 10901 */;
 import AssetRegistryDefault from "AssetRegistry" /* 11857 */;
-import ArrowAngleLeftUpIcon from "ArrowAngleLeftUpIcon" /* 12672 */;
+import ArrowAngleLeftUpIcon from "ArrowAngleLeftUpIcon" /* 12674 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import UserStore from "UserStore" /* 1388 */;
 import ICYMIStore from "ICYMIStore" /* 10205 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5306 */;
-import createICYMIStyles from "createICYMIStyles" /* 19287 */;
+import createICYMIStyles from "createICYMIStyles" /* 19289 */;
 import size_mod from "module_2" /* 2 */;
 
 let c10;

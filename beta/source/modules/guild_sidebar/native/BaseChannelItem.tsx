@@ -1,10 +1,10 @@
-// Module ID: 14789
-// Function ID: 14790
+// Module ID: 14791
+// Function ID: 14792
 // Name: BaseChannelItem
-// Dependencies: [19, 17, 6050, 6949, 21, 5306, 575, 5919, 1360, 1187, 14790, 7997, 14791, 2]
+// Dependencies: [19, 17, 6050, 6949, 21, 5306, 575, 5919, 1360, 1187, 14792, 7997, 14793, 2]
 // Exports: BaseChannelIcon, BaseChannelName, default, getChannelSubtitleTextProps, useChannelNameTextProps
 
-// Module 14789 (BaseChannelItem)
+// Module 14791 (BaseChannelItem)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
@@ -120,7 +120,7 @@ export default function BaseChannelItem(mode) {
   if (!hideIcon) {
     const obj2 = { style: tmp2.unreadIndicator, unread, resolvedUnreadSetting: ALL_MESSAGES };
     const tmp6 = closure_8;
-    const tmp9 = hideIcon(14790);
+    const tmp9 = hideIcon(14792);
     if (mode === obj.UNREAD_LESS_IMPORTANT) {
       ALL_MESSAGES = UnreadSetting.ONLY_MENTIONS;
     } else {
@@ -131,7 +131,7 @@ export default function BaseChannelItem(mode) {
   items1 = [tmp6Result, !hideIcon && icon, name, channelInfo];
   const tmp3Result = closure_9(tmp4, obj);
   if (flag) {
-    AnimatedPressableHighlight = hideIcon(14791);
+    AnimatedPressableHighlight = hideIcon(14793);
   } else {
     AnimatedPressableHighlight = mode(7997).AnimatedPressableHighlight;
   }

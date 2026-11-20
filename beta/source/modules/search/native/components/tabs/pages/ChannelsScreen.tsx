@@ -1,18 +1,18 @@
-// Module ID: 19541
-// Function ID: 19542
+// Module ID: 19543
+// Function ID: 19544
 // Name: ChannelsScreen
-// Dependencies: [19, 6064, 14767, 14754, 9066, 9065, 21, 14747, 504, 18960, 19471, 1113, 5315, 19475, 14761, 19534, 19466, 19479, 2]
+// Dependencies: [19, 6064, 14769, 14756, 9066, 9065, 21, 14749, 504, 18962, 19473, 1113, 5315, 19477, 14763, 19536, 19468, 19481, 2]
 
-// Module 19541 (ChannelsScreen)
+// Module 19543 (ChannelsScreen)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1113 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5315 */;
 import TrackingConstants from "TrackingConstants" /* 9065 */;
-import TrackingDefault from "Tracking" /* 14761 */;
+import TrackingDefault from "Tracking" /* 14763 */;
 import react from "react" /* 19 */;
 import SortedVoiceStateStore from "SortedVoiceStateStore" /* 6064 */;
-import SearchGuildChannelTabStore from "SearchGuildChannelTabStore" /* 14767 */;
-import SearchQueryStore from "SearchQueryStore" /* 14754 */;
+import SearchGuildChannelTabStore from "SearchGuildChannelTabStore" /* 14769 */;
+import SearchQueryStore from "SearchQueryStore" /* 14756 */;
 import SearchConstants from "SearchConstants" /* 9066 */;
 import size from "module_2" /* 2 */;
 

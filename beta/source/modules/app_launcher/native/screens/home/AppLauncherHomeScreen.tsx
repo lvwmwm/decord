@@ -1,10 +1,10 @@
-// Module ID: 13414
-// Function ID: 13415
+// Module ID: 13416
+// Function ID: 13417
 // Name: AppLauncherHomeScreen
-// Dependencies: [32, 19, 17, 5154, 11406, 5922, 13404, 5238, 13376, 1501, 1072, 5152, 21, 2153, 11055, 5984, 11064, 575, 13408, 5306, 5919, 1113, 13388, 12698, 7443, 13383, 1414, 10576, 13415, 12898, 504, 5975, 13416, 6010, 7997, 13417, 13392, 7771, 1630, 13418, 11253, 7824, 12578, 1496, 12579, 12741, 13420, 13419, 13421, 13422, 13424, 13425, 13384, 8724, 13426, 12, 6057, 7587, 13428, 13429, 6328, 1264, 5338, 5139, 13430, 13431, 13433, 7825, 13435, 1255, 13443, 13444, 13445, 13448, 13409, 13449, 13371, 13450, 13453, 7864, 12736, 13402, 12700, 13454, 13441, 13455, 1406, 13456, 13457, 2]
+// Dependencies: [32, 19, 17, 5154, 11406, 5922, 13406, 5238, 13378, 1501, 1072, 5152, 21, 2153, 11055, 5984, 11064, 575, 13410, 5306, 5919, 1113, 13390, 12700, 7443, 13385, 1414, 10576, 13417, 12900, 504, 5975, 13418, 6010, 7997, 13419, 13394, 7771, 1630, 13420, 11253, 7824, 12580, 1496, 12581, 12743, 13422, 13421, 13423, 13424, 13426, 13427, 13386, 8724, 13428, 12, 6057, 7587, 13430, 13431, 6328, 1264, 5338, 5139, 13432, 13433, 13435, 7825, 13437, 1255, 13445, 13446, 13447, 13450, 13411, 13451, 13373, 13452, 13455, 7864, 12738, 13404, 12702, 13456, 13443, 13457, 1406, 13458, 13459, 2]
 // Exports: default
 
-// Module 13414 (AppLauncherHomeScreen)
+// Module 13416 (AppLauncherHomeScreen)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
@@ -21,28 +21,28 @@ import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6057 */;
 import useIsWindowLargeDefault from "useIsWindowLarge" /* 7771 */;
 import roundToNearestPixelDefault from "roundToNearestPixel" /* 10576 */;
 import MessagePreviewMarkup from "MessagePreviewMarkup" /* 11055 */;
-import AppLauncherContext from "AppLauncherContext" /* 12578 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 12579 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 12698 */;
-import EmbeddedActivitiesActionCreatorsAll from "EmbeddedActivitiesActionCreators" /* 12741 */;
-import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 12898 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 13383 */;
-import FrecencySection from "FrecencySection" /* 13384 */;
-import EntityBorderAppIconDefault from "EntityBorderAppIcon" /* 13388 */;
-import ApplicationCollectionSurface from "ApplicationCollectionSurface" /* 13408 */;
-import HeroMedia from "HeroMedia" /* 13415 */;
-import ActivityShelfBadgeDefault from "ActivityShelfBadge" /* 13417 */;
-import AppLauncherHomeTypes from "AppLauncherHomeTypes" /* 13419 */;
-import AppLauncherOnboardingActionCreators from "AppLauncherOnboardingActionCreators" /* 13430 */;
+import AppLauncherContext from "AppLauncherContext" /* 12580 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 12581 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 12700 */;
+import EmbeddedActivitiesActionCreatorsAll from "EmbeddedActivitiesActionCreators" /* 12743 */;
+import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 12900 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 13385 */;
+import FrecencySection from "FrecencySection" /* 13386 */;
+import EntityBorderAppIconDefault from "EntityBorderAppIcon" /* 13390 */;
+import ApplicationCollectionSurface from "ApplicationCollectionSurface" /* 13410 */;
+import HeroMedia from "HeroMedia" /* 13417 */;
+import ActivityShelfBadgeDefault from "ActivityShelfBadge" /* 13419 */;
+import AppLauncherHomeTypes from "AppLauncherHomeTypes" /* 13421 */;
+import AppLauncherOnboardingActionCreators from "AppLauncherOnboardingActionCreators" /* 13432 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5154 */;
 import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 11406 */;
 import DevSettingsStore from "DevSettingsStore" /* 5922 */;
-import ApplicationDirectoryCollectionsStore from "ApplicationDirectoryCollectionsStore" /* 13404 */;
+import ApplicationDirectoryCollectionsStore from "ApplicationDirectoryCollectionsStore" /* 13406 */;
 import PermissionStore from "PermissionStore" /* 5238 */;
-import AppLauncherOnboardingPersistedStore from "AppLauncherOnboardingPersistedStore" /* 13376 */;
+import AppLauncherOnboardingPersistedStore from "AppLauncherOnboardingPersistedStore" /* 13378 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1501 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
@@ -119,18 +119,18 @@ class BaseAppRow {
     }
     let tmp5 = application;
     let FAKE_BUILT_IN_APP = application;
-    const getSectionName = application(12698).getSectionName;
-    application(12698);
+    const getSectionName = application(12700).getSectionName;
+    application(12700);
     if (application == null) {
-      FAKE_BUILT_IN_APP = tmp5(12698).FAKE_BUILT_IN_APP;
+      FAKE_BUILT_IN_APP = tmp5(12700).FAKE_BUILT_IN_APP;
     }
     const sectionName = getSectionName(FAKE_BUILT_IN_APP);
     if (!flag2) {
       let FAKE_BUILT_IN_APP2 = application;
-      const isPromotedApplication = tmp5(12698).isPromotedApplication;
-      tmp5(12698);
+      const isPromotedApplication = tmp5(12700).isPromotedApplication;
+      tmp5(12700);
       if (application == null) {
-        FAKE_BUILT_IN_APP2 = tmp5(12698).FAKE_BUILT_IN_APP;
+        FAKE_BUILT_IN_APP2 = tmp5(12700).FAKE_BUILT_IN_APP;
       }
       flag2 = isPromotedApplication(FAKE_BUILT_IN_APP2);
     }
@@ -140,7 +140,7 @@ class BaseAppRow {
       const getSectionDescription = AppLauncherUtils.getSectionDescription;
       AppLauncherUtils;
       if (application == null) {
-        FAKE_BUILT_IN_APP = tmp(12698).FAKE_BUILT_IN_APP;
+        FAKE_BUILT_IN_APP = tmp(12700).FAKE_BUILT_IN_APP;
       }
       const sectionDescription = getSectionDescription(FAKE_BUILT_IN_APP);
       let tmp5 = null;
@@ -202,7 +202,7 @@ function ActivityRow(section) {
   let tmp6 = null != applicationIconSource;
   if (tmp6) {
     let obj2 = { iconSource: applicationIconSource };
-    tmp6 = closure_19(tmp(13388), obj2);
+    tmp6 = closure_19(tmp(13390), obj2);
   }
   const items = [section];
   const items1 = [section, onPress];
@@ -247,7 +247,7 @@ function ActivityItemTuple(arg0) {
   const items = [containerWidth];
   size = react.useMemo(() => {
     if (null == containerWidth) {
-      return { width: "Array", height: "Path" };
+      return { width: "ip", height: "r" };
     } else {
       const tmp5 = roundToNearestPixelDefault(tmp / 2 - DEFAULT_CONTENT_PADDING - 6);
       size = { width: tmp5, height: roundToNearestPixelDefault(tmp5 / c22) };
@@ -284,7 +284,7 @@ function ActivityItem(context) {
   let onActivityItemSelected;
   let tmp19;
   let width;
-  const f107346 = () => {
+  const f107352 = () => {
     const items = [EmbeddedActivitiesStore.isLaunchingActivity(), ];
     let id1;
     const getLaunchState = EmbeddedActivitiesStore.getLaunchState;
@@ -325,8 +325,8 @@ function ActivityItem(context) {
   let items = [EmbeddedActivitiesStore];
   const tmp2Result = context(flag[30]);
   let isLaunching = null != tmp14;
-  const first1 = tmp5(tmp2Result.useStateFromStoresArray(items, f107346), 2)[0];
-  const tmp5Result = tmp5(tmp2Result.useStateFromStoresArray(items, f107346), 2);
+  const first1 = tmp5(tmp2Result.useStateFromStoresArray(items, f107352), 2)[0];
+  const tmp5Result = tmp5(tmp2Result.useStateFromStoresArray(items, f107352), 2);
   if (isLaunching) {
     isLaunching = tmp14.isLaunching;
   }
@@ -411,7 +411,7 @@ function RecommendationItemTuple(isLastTuple) {
   const items1 = [containerWidth, num];
   styles = react.useMemo(() => {
     if (null == containerWidth) {
-      return { width: "Array", height: "Path" };
+      return { width: "ip", height: "r" };
     } else {
       const tmp6 = roundToNearestPixelDefault((tmp - 2 * DEFAULT_CONTENT_PADDING - 12 * (2 - 1)) / 2);
       size = { width: tmp6, height: roundToNearestPixelDefault(tmp6 / c22) };
@@ -486,7 +486,7 @@ function RecommendationItem(onPress) {
   }
   const tmp13 = "loading" === tmp9Result.state || null == tmp9Result.url;
   if (tmp12) {
-    tmp14 = closure_19(tmp8(13416), {});
+    tmp14 = closure_19(tmp8(13418), {});
   } else {
     tmp14 = null;
     if (!tmp13) {
@@ -587,7 +587,7 @@ function getRecommendationItemsWithViewAll(arr, sectionName, section, arg3) {
     const tmp11 = _require;
     if (bound < arr.length) {
       let obj = {
-        type: tmp11(13419).AppLauncherHomeListItemType.VIEW_ALL,
+        type: tmp11(13421).AppLauncherHomeListItemType.VIEW_ALL,
         applications: arr.map((application) => application.application),
         promotedApplicationIds: reduce((add, showsPromoted) => {
               if (showsPromoted.showsPromoted) {
@@ -933,7 +933,7 @@ export default function AppLauncherHomeScreen(route) {
   }
   items13[1] = sections1;
   let memo5 = useMemo(() => {
-    const f145921 = (commands) => Object.keys(commands.commands).length > 0;
+    const f145931 = (commands) => Object.keys(commands.commands).length > 0;
     result = result.result;
     let sections;
     if (result != null) {
@@ -951,11 +951,11 @@ export default function AppLauncherHomeScreen(route) {
       sections1 = {};
     }
     const values = Object.values(sections);
-    let someResult = values.some(f145921);
+    let someResult = values.some(f145931);
     if (!someResult) {
       const _Object = Object;
       const values2 = Object.values(sections1);
-      someResult = values2.some(f145921);
+      someResult = values2.some(f145931);
     }
     return someResult;
   }, items13);

@@ -1,10 +1,10 @@
-// Module ID: 17288
-// Function ID: 17289
+// Module ID: 17290
+// Function ID: 17291
 // Name: TwoFASetupScan
-// Dependencies: [32, 19, 21, 5306, 575, 7943, 17286, 17282, 7415, 1187, 1113, 5919, 7428, 2]
+// Dependencies: [32, 19, 21, 5306, 575, 7943, 17288, 17284, 7415, 1187, 1113, 5919, 7428, 2]
 // Exports: default
 
-// Module 17288 (TwoFASetupScan)
+// Module 17290 (TwoFASetupScan)
 import nativeDefault from "native" /* 575 */;
 import ClipboardUtils from "ClipboardUtils" /* 7943 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -45,9 +45,9 @@ export default function TwoFASetupScan(totpSecret) {
     const obj = ClipboardUtils;
     obj.copy(totpSecret.replace(/[^a-zA-Z0-9]/g, ""));
   }, items);
-  let obj = totpSecret(17286);
+  let obj = totpSecret(17288);
   const twoFASetupStyles = obj.useTwoFASetupStyles();
-  const TwoFASetupModalScreen = totpSecret(17282).TwoFASetupModalScreen;
+  const TwoFASetupModalScreen = totpSecret(17284).TwoFASetupModalScreen;
   const obj2 = { bottom: true, style: tmp.container, children: items2 };
   const SafeAreaPaddingView = totpSecret(7415).SafeAreaPaddingView;
   const obj3 = { style: items1, children: intl.string(totpSecret(1113).t["hg/+aT"]) };

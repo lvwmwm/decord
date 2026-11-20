@@ -1,10 +1,10 @@
-// Module ID: 15971
-// Function ID: 15972
+// Module ID: 15973
+// Function ID: 15974
 // Name: OAuth2AuthorizeContent
 // Dependencies: [32, 19, 17, 21, 5306, 575, 1496, 1630, 7474, 10313, 2]
 // Exports: default
 
-// Module 15971 (OAuth2AuthorizeContent)
+// Module 15973 (OAuth2AuthorizeContent)
 import nativeDefault from "native" /* 575 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;

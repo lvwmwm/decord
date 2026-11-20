@@ -1,20 +1,20 @@
-// Module ID: 16008
-// Function ID: 16009
+// Module ID: 16010
+// Function ID: 16011
 // Name: GuildBoostingMarketingProgressBarMarker
-// Dependencies: [19, 17, 1072, 21, 16009, 16010, 16011, 5306, 575, 5537, 1655, 5303, 5313, 5929, 10795, 6010, 12481, 5919, 9235, 2]
+// Dependencies: [19, 17, 1072, 21, 16011, 16012, 16013, 5306, 575, 5537, 1655, 5303, 5313, 5929, 10795, 6010, 12483, 5919, 9235, 2]
 // Exports: default
 
-// Module 16008 (GuildBoostingMarketingProgressBarMarker)
+// Module 16010 (GuildBoostingMarketingProgressBarMarker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import useThemeDefault from "useTheme" /* 5537 */;
 import spring_spring from "spring/spring" /* 5929 */;
 import FastImageDefault from "FastImage" /* 6010 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12481 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 16009 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 16010 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 16011 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12483 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 16011 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 16012 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 16013 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;

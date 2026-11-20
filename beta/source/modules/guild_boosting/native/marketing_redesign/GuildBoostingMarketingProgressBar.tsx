@@ -1,16 +1,16 @@
-// Module ID: 16007
-// Function ID: 16008
+// Module ID: 16009
+// Function ID: 16010
 // Name: GuildBoostingMarketingProgressBar
-// Dependencies: [32, 19, 17, 5307, 1072, 21, 5306, 16008, 575, 5537, 563, 1655, 1708, 9235, 5929, 5883, 5313, 2]
+// Dependencies: [32, 19, 17, 5307, 1072, 21, 5306, 16010, 575, 5537, 563, 1655, 1708, 9235, 5929, 5883, 5313, 2]
 // Exports: default
 
-// Module 16007 (GuildBoostingMarketingProgressBar)
+// Module 16009 (GuildBoostingMarketingProgressBar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import spring_spring from "spring/spring" /* 5929 */;
 import GuildBoostingUtils from "GuildBoostingUtils" /* 9235 */;
-import GuildBoostingMarketingProgressBarMarker from "GuildBoostingMarketingProgressBarMarker" /* 16008 */;
+import GuildBoostingMarketingProgressBarMarker from "GuildBoostingMarketingProgressBarMarker" /* 16010 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5307 */;

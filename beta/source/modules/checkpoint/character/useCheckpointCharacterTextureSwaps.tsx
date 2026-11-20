@@ -1,10 +1,10 @@
-// Module ID: 14473
-// Function ID: 14474
+// Module ID: 14475
+// Function ID: 14476
 // Name: useCheckpointCharacterTextureSwaps
 // Dependencies: [32, 5, 19, 2]
 // Exports: useCheckpointCharacterTextureSwaps
 
-// Module 14473 (useCheckpointCharacterTextureSwaps)
+// Module 14475 (useCheckpointCharacterTextureSwaps)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;

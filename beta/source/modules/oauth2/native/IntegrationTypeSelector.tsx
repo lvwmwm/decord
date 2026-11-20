@@ -1,10 +1,10 @@
-// Module ID: 15957
-// Function ID: 15958
+// Module ID: 15959
+// Function ID: 15960
 // Name: IntegrationTypeSelector
-// Dependencies: [19, 17, 21, 5306, 575, 1414, 5943, 6013, 1113, 10939, 6010, 5919, 13480, 7746, 7443, 1187, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 1414, 5943, 6013, 1113, 10939, 6010, 5919, 13482, 7746, 7443, 1187, 2]
 // Exports: default
 
-// Module 15957 (IntegrationTypeSelector)
+// Module 15959 (IntegrationTypeSelector)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;

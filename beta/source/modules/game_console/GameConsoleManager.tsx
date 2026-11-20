@@ -1,9 +1,9 @@
-// Module ID: 20257
-// Function ID: 20258
+// Module ID: 20259
+// Function ID: 20260
 // Name: GameConsoleManager
-// Dependencies: [5, 502, 2133, 6061, 6063, 5971, 6062, 7471, 6065, 3, 38, 6215, 13052, 7882, 5150, 10821, 1255, 6258, 1113, 20258, 10825, 2]
+// Dependencies: [5, 502, 2133, 6061, 6063, 5971, 6062, 7471, 6065, 3, 38, 6215, 13054, 7882, 5150, 10821, 1255, 6258, 1113, 20260, 10825, 2]
 
-// Module 20257 (GameConsoleManager)
+// Module 20259 (GameConsoleManager)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
 import intl3 from "intl" /* 1113 */;
@@ -13,7 +13,7 @@ import Constants from "Constants" /* 6065 */;
 import AudioActionCreatorsDefault from "AudioActionCreators" /* 6215 */;
 import GameConsoleActionCreators from "GameConsoleActionCreators" /* 10821 */;
 import GameConsoleAlertUtilsDefault from "GameConsoleAlertUtils" /* 10825 */;
-import _modDef20258 from "module_20258" /* 20258 */;
+import _modDef20260 from "module_20260" /* 20260 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 2133 */;
@@ -270,7 +270,7 @@ class GameConsoleManager extends AutomaticLifecycleManager {
               str2 = "";
             }
             let device = getDevice(type, str2);
-            const tmp8 = _modDef20258;
+            const tmp8 = _modDef20260;
             if (device == null) {
               obj = { id: "id", platform: intl.string(intl3.t["UQMV/E"]), name: intl2.string(intl3.t["UQMV/E"]) };
               intl = intl3.intl;

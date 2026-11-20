@@ -1,10 +1,10 @@
-// Module ID: 18854
-// Function ID: 18855
+// Module ID: 18856
+// Function ID: 18857
 // Name: useStickyServerHeaderSubtitle
 // Dependencies: [5526, 1072, 504, 2]
 // Exports: default
 
-// Module 18854 (useStickyServerHeaderSubtitle)
+// Module 18856 (useStickyServerHeaderSubtitle)
 import Constants from "Constants" /* 1072 */;
 import GuildMemberCountStore from "GuildMemberCountStore" /* 5526 */;
 import size from "module_2" /* 2 */;

@@ -1,10 +1,10 @@
-// Module ID: 13644
-// Function ID: 13645
+// Module ID: 13646
+// Function ID: 13647
 // Name: useConjurePublishedServerName
 // Dependencies: [5177, 7017, 504, 2]
 // Exports: default
 
-// Module 13644 (useConjurePublishedServerName)
+// Module 13646 (useConjurePublishedServerName)
 import GuildStore from "GuildStore" /* 5177 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 7017 */;
 import size from "module_2" /* 2 */;

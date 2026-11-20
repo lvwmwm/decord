@@ -1,18 +1,18 @@
-// Module ID: 17738
-// Function ID: 17739
+// Module ID: 17740
+// Function ID: 17741
 // Name: VideoQuestPlayer
-// Dependencies: [32, 19, 8810, 6954, 21, 17732, 10131, 10146, 5221, 17554, 17739, 8831, 17741, 1379, 15249, 10133, 17749, 17569, 1380, 2]
+// Dependencies: [32, 19, 8810, 6954, 21, 17734, 10131, 10146, 5221, 17556, 17741, 8831, 17743, 1379, 15251, 10133, 17751, 17571, 1380, 2]
 
-// Module 17738 (VideoQuestPlayer)
+// Module 17740 (VideoQuestPlayer)
 import Fragment from "Fragment" /* 21 */;
 import react_native from "react-native" /* 1379 */;
 import QuestConstants from "QuestConstants" /* 6954 */;
 import QuestActionCreators from "QuestActionCreators" /* 10133 */;
 import AssetUtils from "AssetUtils" /* 10146 */;
-import VideoQuestUtils from "VideoQuestUtils" /* 15249 */;
-import AdsVideoTypes from "AdsVideoTypes" /* 17554 */;
-import SimpleMuxWrapper from "SimpleMuxWrapper" /* 17741 */;
-import VideoQuestCaptions2 from "VideoQuestCaptions" /* 17749 */;
+import VideoQuestUtils from "VideoQuestUtils" /* 15251 */;
+import AdsVideoTypes from "AdsVideoTypes" /* 17556 */;
+import SimpleMuxWrapper from "SimpleMuxWrapper" /* 17743 */;
+import VideoQuestCaptions2 from "VideoQuestCaptions" /* 17751 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import VideoQuestUIStore from "VideoQuestUIStore" /* 8810 */;

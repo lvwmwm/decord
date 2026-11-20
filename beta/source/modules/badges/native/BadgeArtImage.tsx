@@ -1,10 +1,10 @@
-// Module ID: 15277
-// Function ID: 15278
+// Module ID: 15279
+// Function ID: 15280
 // Name: BadgeArtImage
 // Dependencies: [32, 5, 19, 17, 21, 5426, 1089, 6069, 8263, 6010, 2]
 // Exports: default
 
-// Module 15277 (BadgeArtImage)
+// Module 15279 (BadgeArtImage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import DurationsDefault from "Durations" /* 1089 */;

@@ -1,10 +1,10 @@
-// Module ID: 13206
-// Function ID: 13207
+// Module ID: 13208
+// Function ID: 13209
 // Name: conjureRemoveApp
 // Dependencies: [19, 2165, 7352, 5236, 5218, 5177, 5238, 5248, 1388, 7377, 7017, 1072, 7351, 5944, 504, 12, 7018, 1113, 4131, 6907, 7384, 2]
 // Exports: canRemoveConjureAppFromServer, conjureDeleteProjectBody, conjureDeleteProjectItems, conjureRemoveAppKeptChannels, conjureTitleWithAppTag, isPublishedConjureUserApp, readConjureOtherRemoveTargets, readConjureViewedRemoveTarget, useConjureProjectServers, useConjureRemoveTarget, useConjureViewedRemoveTarget, useIsPublishedConjureUserApp
 
-// Module 13206 (conjureRemoveApp)
+// Module 13208 (conjureRemoveApp)
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
 import _modDef4131 from "module_4131" /* 4131 */;
@@ -28,7 +28,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require;
 
-const f106762 = () => {
+const f106768 = () => {
   let guild;
   let tmp2;
   project = null;
@@ -169,7 +169,7 @@ export function useConjureRemoveTarget(id) {
   items = [ConjureProjectStore, ApplicationStore, GuildMemberStore, GuildStore];
   const items1 = [id];
   const obj = require("get initialized");
-  const stateFromStores = obj.useStateFromStores(items, f106762, items1, require("module_12").isEqual);
+  const stateFromStores = obj.useStateFromStores(items, f106768, items1, require("module_12").isEqual);
   const items2 = [stateFromStores];
   const effect = react.useEffect(() => {
     let botUserIds;
@@ -245,7 +245,7 @@ export function useConjureProjectServers(projectId) {
   let obj = require("get initialized");
   items = [ConjureProjectStore, ApplicationStore, GuildMemberStore, GuildStore];
   const items1 = [projectId];
-  const stateFromStores = obj.useStateFromStores(items, f106762, items1, require("module_12").isEqual);
+  const stateFromStores = obj.useStateFromStores(items, f106768, items1, require("module_12").isEqual);
   const items2 = [stateFromStores];
   const effect = react.useEffect(() => {
     let botUserIds;

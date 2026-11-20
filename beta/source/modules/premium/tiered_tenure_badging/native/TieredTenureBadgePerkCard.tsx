@@ -1,7 +1,7 @@
 // Module ID: 10075
 // Function ID: 10076
 // Name: TieredTenureBadgePerkCard
-// Dependencies: [19, 17, 1388, 1072, 21, 5306, 10076, 10077, 10078, 10079, 10083, 504, 10085, 1256, 10110, 8480, 5542, 15286, 2121, 15286, 1113, 15289, 5919, 15287, 9986, 6010, 2]
+// Dependencies: [19, 17, 1388, 1072, 21, 5306, 10076, 10077, 10078, 10079, 10083, 504, 10085, 1256, 10110, 8480, 5542, 15288, 2121, 15288, 1113, 15291, 5919, 15289, 9986, 6010, 2]
 // Exports: TieredTenureBadgePerkCard
 
 // Module 10075 (TieredTenureBadgePerkCard)
@@ -12,7 +12,7 @@ import asyncRequire from "asyncRequire" /* 2121 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import BadgeId from "BadgeId" /* 8480 */;
 import openBadgeDetailsSheet2 from "openBadgeDetailsSheet" /* 10110 */;
-import TieredTenureBadgeActionSheet from "TieredTenureBadgeActionSheet" /* 15286 */;
+import TieredTenureBadgeActionSheet from "TieredTenureBadgeActionSheet" /* 15288 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;

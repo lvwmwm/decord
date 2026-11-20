@@ -1,15 +1,15 @@
-// Module ID: 14961
-// Function ID: 14962
+// Module ID: 14963
+// Function ID: 14964
 // Name: ChatPlaceholder
-// Dependencies: [19, 17, 11865, 21, 5306, 575, 1630, 5903, 1496, 7475, 1655, 14962, 14963, 14964, 2]
+// Dependencies: [19, 17, 11865, 21, 5306, 575, 1630, 5903, 1496, 7475, 1655, 14964, 14965, 14966, 2]
 
-// Module 14961 (ChatPlaceholder)
+// Module 14963 (ChatPlaceholder)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 11865 */;
-import getChatPlaceholderRowHeightDefault from "getChatPlaceholderRowHeight" /* 14963 */;
-import ChatPlaceholderRowDefault from "ChatPlaceholderRow" /* 14964 */;
+import getChatPlaceholderRowHeightDefault from "getChatPlaceholderRowHeight" /* 14965 */;
+import ChatPlaceholderRowDefault from "ChatPlaceholderRow" /* 14966 */;
 import react from "react" /* 19 */;
 import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
@@ -78,7 +78,7 @@ const memoResult = react.memo(function ChatPlaceholder(screenIndex) {
     return tmp2;
   }, []);
   const items2 = [height, sum, tmp2, callback];
-  const tmp13 = tmp3(14962)({ visible: true, animated: true });
+  const tmp13 = tmp3(14964)({ visible: true, animated: true });
   const memo = callback.useMemo(() => {
     let diff;
     const items = [];

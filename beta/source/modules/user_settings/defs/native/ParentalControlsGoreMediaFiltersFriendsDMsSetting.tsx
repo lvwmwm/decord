@@ -1,15 +1,15 @@
-// Module ID: 18597
-// Function ID: 18598
+// Module ID: 18599
+// Function ID: 18600
 // Name: ParentalControlsGoreMediaFiltersFriendsDMsSetting
-// Dependencies: [8740, 9202, 17346, 8853, 17350, 17356, 1113, 1196, 12406, 2]
+// Dependencies: [8740, 9202, 17348, 8853, 17352, 17358, 1113, 1196, 12408, 2]
 
-// Module 18597 (ParentalControlsGoreMediaFiltersFriendsDMsSetting)
+// Module 18599 (ParentalControlsGoreMediaFiltersFriendsDMsSetting)
 import intl3 from "intl" /* 1113 */;
 import SettingsConstants from "SettingsConstants" /* 9202 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 17346 */;
-import FamilyCenterControlledSettingsUtils from "FamilyCenterControlledSettingsUtils" /* 17350 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 17348 */;
+import FamilyCenterControlledSettingsUtils from "FamilyCenterControlledSettingsUtils" /* 17352 */;
 import FamilyCenterStore from "FamilyCenterStore" /* 8740 */;
-import SettingBuilders from "SettingBuilders" /* 12406 */;
+import SettingBuilders from "SettingBuilders" /* 12408 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
@@ -41,7 +41,7 @@ let obj = {
     let items;
     const selectedTeenId = FamilyCenterStore.getSelectedTeenId();
     if (null != selectedTeenId) {
-      let obj = selectedTeenId(17350);
+      let obj = selectedTeenId(17352);
       const goreContentFriendDm = obj.getGoreContentSettingOrDefault(selectedTeenId).goreContentFriendDm;
       let obj2 = {
         title: intl.string(selectedTeenId(1113).t["16/3Bi"]),
@@ -54,8 +54,8 @@ let obj = {
         currentValue: goreContentFriendDm,
         excluded: items
       };
-      const handleSensitiveMediaFilterPress = selectedTeenId(17356).handleSensitiveMediaFilterPress;
-      selectedTeenId(17356);
+      const handleSensitiveMediaFilterPress = selectedTeenId(17358).handleSensitiveMediaFilterPress;
+      selectedTeenId(17358);
       intl = selectedTeenId(1113).intl;
       intl2 = selectedTeenId(1113).intl;
       items = [selectedTeenId(1196).ExplicitContentRedaction.SHOW];

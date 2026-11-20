@@ -1,10 +1,10 @@
-// Module ID: 18438
-// Function ID: 18439
+// Module ID: 18440
+// Function ID: 18441
 // Name: UserSettingsDesignSystemTextInput
-// Dependencies: [32, 19, 17, 21, 5306, 575, 7445, 6327, 7619, 8087, 16487, 5556, 7913, 7789, 7859, 5919, 8078, 7620, 7825, 7988, 10569, 7626, 5926, 5542, 16488, 2]
+// Dependencies: [32, 19, 17, 21, 5306, 575, 7445, 6327, 7619, 8087, 16489, 5556, 7913, 7789, 7859, 5919, 8078, 7620, 7825, 7988, 10569, 7626, 5926, 5542, 16490, 2]
 // Exports: default
 
-// Module 18438 (UserSettingsDesignSystemTextInput)
+// Module 18440 (UserSettingsDesignSystemTextInput)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
@@ -22,8 +22,8 @@ import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7913 */;
 import IconButton2 from "IconButton" /* 7988 */;
 import TextIcon from "TextIcon" /* 8078 */;
 import SettingsIcon from "SettingsIcon" /* 10569 */;
-import GhostInput2 from "GhostInput" /* 16487 */;
-import SplitTextInput from "SplitTextInput" /* 16488 */;
+import GhostInput2 from "GhostInput" /* 16489 */;
+import SplitTextInput from "SplitTextInput" /* 16490 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -38,7 +38,7 @@ let metroRequire;
 let obj2;
 let tmp6;
 const AtIcon = tmp6(8087);
-const f117589 = () => {
+const f117595 = () => {
   let tmp = closure_0((arg0) => {
     let tmp = closure_1_8[(closure_1_8.indexOf(closure_1_8, arg0) + 1) % closure_1_8.length];
     if (tmp == null) {
@@ -204,7 +204,7 @@ function CountryCodeExample(label) {
   label = label.label;
   const tmp = _slicedToArray(react.useState("US +1"), 2);
   _require = tmp[1];
-  const items = [tmp[0], react.useCallback(f117589, [])];
+  const items = [tmp[0], react.useCallback(f117595, [])];
   const tmp2 = _slicedToArray(items, 2);
   const first = tmp2[0];
   const obj = { label, description: "Tap the country code to cycle through a few examples.", placeholder: "Phone number", keyboardType: "phone-pad", leadingText: first, leadingPressableProps: obj2 };
@@ -222,7 +222,7 @@ function PhoneOrEmailExample() {
   let tmp7;
   let tmp = _slicedToArray(react.useState("US +1"), 2);
   _require = tmp[1];
-  const items = [tmp[0], react.useCallback(f117589, [])];
+  const items = [tmp[0], react.useCallback(f117595, [])];
   [first, tmp4] = items;
   [tmp6, tmp7] = react.useState("");
   _slicedToArray(react.useState(""), 2);

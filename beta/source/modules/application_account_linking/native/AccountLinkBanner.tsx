@@ -1,10 +1,10 @@
-// Module ID: 18913
-// Function ID: 18914
+// Module ID: 18915
+// Function ID: 18916
 // Name: AccountLinkBanner
 // Dependencies: [19, 17, 1388, 5152, 21, 575, 7924, 6051, 5932, 5306, 563, 7918, 7937, 7445, 7428, 7549, 1187, 5919, 1113, 5926, 10386, 2]
 // Exports: getScaledAccountLinkBannerHeight
 
-// Module 18913 (AccountLinkBanner)
+// Module 18915 (AccountLinkBanner)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;

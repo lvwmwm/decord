@@ -1,8 +1,8 @@
-// Module ID: 14436
-// Function ID: 14437
+// Module ID: 14438
+// Function ID: 14439
 // Dependencies: [2]
 
-// Module 14436
+// Module 14438
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_outfit_14_magical_sapphire.webp.js");

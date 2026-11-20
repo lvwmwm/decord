@@ -1,10 +1,10 @@
-// Module ID: 12905
-// Function ID: 12906
+// Module ID: 12907
+// Function ID: 12908
 // Name: StageChannelCallNavigator
-// Dependencies: [32, 19, 17, 1083, 21, 12906, 1655, 5929, 575, 12907, 12974, 12909, 11007, 11006, 9069, 11990, 6056, 12975, 13056, 5367, 12715, 13064, 13065, 12913, 13070, 13079, 13081, 13110, 13111, 5306, 13112, 12934, 2]
+// Dependencies: [32, 19, 17, 1083, 21, 12908, 1655, 5929, 575, 12909, 12976, 12911, 11007, 11006, 9069, 11990, 6056, 12977, 13058, 5367, 12717, 13066, 13067, 12915, 13072, 13081, 13083, 13112, 13113, 5306, 13114, 12936, 2]
 // Exports: default
 
-// Module 12905 (StageChannelCallNavigator)
+// Module 12907 (StageChannelCallNavigator)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import _mod1655 from "module_1655" /* 1655 */;
@@ -12,11 +12,11 @@ import spring_spring from "spring/spring" /* 5929 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 6056 */;
 import MessageManagerDefault from "MessageManager" /* 9069 */;
 import participantHasVideoDefault from "participantHasVideo" /* 11990 */;
-import ModeratorOverlayState from "ModeratorOverlayState" /* 12906 */;
-import ModeratorStartStageViewDefault from "ModeratorStartStageView" /* 12907 */;
-import StageActionBarButtons from "StageActionBarButtons" /* 12934 */;
-import JoinStageViewDefault from "JoinStageView" /* 12974 */;
-import ThemeContextProvider_RootThemeContextProvider from "ThemeContextProvider/RootThemeContextProvider" /* 13112 */;
+import ModeratorOverlayState from "ModeratorOverlayState" /* 12908 */;
+import ModeratorStartStageViewDefault from "ModeratorStartStageView" /* 12909 */;
+import StageActionBarButtons from "StageActionBarButtons" /* 12936 */;
+import JoinStageViewDefault from "JoinStageView" /* 12976 */;
+import ThemeContextProvider_RootThemeContextProvider from "ThemeContextProvider/RootThemeContextProvider" /* 13114 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

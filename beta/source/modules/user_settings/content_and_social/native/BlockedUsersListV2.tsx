@@ -1,10 +1,10 @@
-// Module ID: 17327
-// Function ID: 17328
+// Module ID: 17329
+// Function ID: 17330
 // Name: BlockedUsersListV2
-// Dependencies: [19, 17, 5248, 21, 5306, 575, 7918, 7937, 1187, 17328, 1113, 7415, 5919, 7746, 17332, 504, 2]
+// Dependencies: [19, 17, 5248, 21, 5306, 575, 7918, 7937, 1187, 17330, 1113, 7415, 5919, 7746, 17334, 504, 2]
 // Exports: default
 
-// Module 17327 (BlockedUsersListV2)
+// Module 17329 (BlockedUsersListV2)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -14,8 +14,8 @@ import Text_Text from "Text/Text" /* 5919 */;
 import common_SafeAreaView from "common/SafeAreaView" /* 7415 */;
 import TableRowGroup2 from "TableRowGroup" /* 7746 */;
 import useAnalyticsLocations from "useAnalyticsLocations" /* 7918 */;
-import Blocked from "Blocked" /* 17328 */;
-import BlockedUserRowV2Default from "BlockedUserRowV2" /* 17332 */;
+import Blocked from "Blocked" /* 17330 */;
+import BlockedUserRowV2Default from "BlockedUserRowV2" /* 17334 */;
 import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 5248 */;
 import Fragment from "Fragment" /* 21 */;

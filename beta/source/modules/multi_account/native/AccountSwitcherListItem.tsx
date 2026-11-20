@@ -1,17 +1,17 @@
-// Module ID: 18657
-// Function ID: 18658
+// Module ID: 18659
+// Function ID: 18660
 // Name: AccountSwitcherListItem
-// Dependencies: [19, 17, 1407, 5363, 1388, 14829, 21, 5306, 504, 7930, 575, 6027, 5919, 1113, 7428, 5368, 1187, 5362, 2]
+// Dependencies: [19, 17, 1407, 5363, 1388, 14831, 21, 5306, 504, 7930, 575, 6027, 5919, 1113, 7428, 5368, 1187, 5362, 2]
 // Exports: default
 
-// Module 18657 (AccountSwitcherListItem)
+// Module 18659 (AccountSwitcherListItem)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;
 import UserUtilsDefault from "UserUtils" /* 5362 */;
 import react_native from "react-native" /* 5368 */;
-import MultiAccountStore from "MultiAccountStore" /* 14829 */;
+import MultiAccountStore from "MultiAccountStore" /* 14831 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import UserRecord from "UserRecord" /* 1407 */;
@@ -123,7 +123,7 @@ export default function AccountSwitcherListItem(arg0) {
     const merged = Object.assign(sortHandlers);
     items2 = [leading, , ];
     const obj8 = { style: tmp.accountInfo, children: items3 };
-    const obj9 = { user: obj3, guildId: "Array" };
+    const obj9 = { user: obj3, guildId: "y" };
     items3 = [React4(native.Avatar, obj9), ];
     const obj10 = { style: tmp.accountListTag, children: items5 };
     const obj11 = { style: tmp.tagContainer, children: items4 };

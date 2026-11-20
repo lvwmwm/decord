@@ -1,20 +1,20 @@
-// Module ID: 17671
-// Function ID: 17672
+// Module ID: 17673
+// Function ID: 17674
 // Name: OrbsArcadePlayButton
-// Dependencies: [19, 17, 10129, 17647, 21, 5306, 1113, 9442, 575, 5919, 5932, 7918, 17672, 504, 17673, 17657, 5542, 17674, 17654, 5926, 17675, 5927, 2]
+// Dependencies: [19, 17, 10129, 17649, 21, 5306, 1113, 9442, 575, 5919, 5932, 7918, 17674, 504, 17675, 17659, 5542, 17676, 17656, 5926, 17677, 5927, 2]
 // Exports: default
 
-// Module 17671 (OrbsArcadePlayButton)
+// Module 17673 (OrbsArcadePlayButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import Text_Text from "Text/Text" /* 5919 */;
 import ButtonConstants from "ButtonConstants" /* 5932 */;
-import OrbsArcadeAnalytics from "OrbsArcadeAnalytics" /* 17657 */;
-import launchOrbsArcadeGameDefault from "launchOrbsArcadeGame" /* 17674 */;
+import OrbsArcadeAnalytics from "OrbsArcadeAnalytics" /* 17659 */;
+import launchOrbsArcadeGameDefault from "launchOrbsArcadeGame" /* 17676 */;
 import react from "react" /* 19 */;
 import QuestHomeNavigationStore from "QuestHomeNavigationStore" /* 10129 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 17647 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 17649 */;
 import createStyles from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -105,13 +105,13 @@ export default function OrbsArcadePlayButton(game) {
       const formatToPlainString2 = intl3.formatToPlainString;
       const obj4 = { count: tmp5Result3.getOrbsArcadeClaimableRewards(game.rewards, stateFromStores).length };
       const v18ToNc = tmp5(tmp3[6]).t["18ToNc"];
-      tmp19Result1 = <Button2 grow size={DEFAULT_BUTTON_SIZE} variant="primary" text={formatToPlainString2(v18ToNc, obj4)} disabled onPress="Boolean" />;
+      tmp19Result1 = <Button2 grow size={DEFAULT_BUTTON_SIZE} variant="primary" text={formatToPlainString2(v18ToNc, obj4)} disabled onPress="a" />;
       tmp5Result3 = game(surface[18]);
     }
     return tmp19Result1;
   }
   if (null != tmp7) {
-    const obj5 = { grow: true, size: DEFAULT_BUTTON_SIZE, variant: "primary", text: formatToPlainStringResult, disabled: true, onPress: "Boolean" };
+    const obj5 = { grow: true, size: DEFAULT_BUTTON_SIZE, variant: "primary", text: formatToPlainStringResult, disabled: true, onPress: "a" };
     const Button = tmp5(tmp3[19]).Button;
     const tmp14 = jsx;
     if (null != tmp7.timeUntilNextRound) {

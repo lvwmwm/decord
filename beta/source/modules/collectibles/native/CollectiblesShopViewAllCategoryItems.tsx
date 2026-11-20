@@ -1,9 +1,9 @@
-// Module ID: 18537
-// Function ID: 18538
+// Module ID: 18539
+// Function ID: 18540
 // Name: CollectiblesShopViewAllCategoryItems
-// Dependencies: [5, 32, 19, 17, 5922, 9451, 9302, 1074, 1072, 21, 5306, 575, 1502, 18538, 504, 2186, 10433, 9686, 7937, 10446, 18539, 1113, 5919, 5926, 18488, 10022, 7918, 1630, 17612, 1655, 5929, 5930, 1256, 8534, 9420, 11743, 18540, 18517, 18532, 2]
+// Dependencies: [5, 32, 19, 17, 5922, 9451, 9302, 1074, 1072, 21, 5306, 575, 1502, 18540, 504, 2186, 10433, 9686, 7937, 10446, 18541, 1113, 5919, 5926, 18490, 10022, 7918, 1630, 17614, 1655, 5929, 5930, 1256, 8534, 9420, 11743, 18542, 18519, 18534, 2]
 
-// Module 18537 (CollectiblesShopViewAllCategoryItems)
+// Module 18539 (CollectiblesShopViewAllCategoryItems)
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import spring_spring from "spring/spring" /* 5929 */;

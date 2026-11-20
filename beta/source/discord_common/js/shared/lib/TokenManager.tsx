@@ -13,7 +13,7 @@ let c7, closure_8;
 
 let c2;
 let c3;
-const f83709 = (acc, item) => {
+const f83713 = (acc, item) => {
   let tmp;
   let tmp2;
   [tmp, tmp2] = item;
@@ -145,7 +145,7 @@ function encryptAndStoreTokens() {
         items[1] = combined;
         return items;
       }), 0);
-      closure_11 = items.reduce(f83709, {});
+      closure_11 = items.reduce(f83713, {});
       c9 = true;
     } else {
       closure_8 = tmp8;
@@ -263,7 +263,7 @@ export function init() {
         [, tmp] = item;
         return null != tmp;
       }), 0);
-      closure_10 = items.reduce(f83709, {});
+      closure_10 = items.reduce(f83713, {});
       c13 = true;
     }
     obj3 = { decryptedToken: null, wasEncrypted: false };

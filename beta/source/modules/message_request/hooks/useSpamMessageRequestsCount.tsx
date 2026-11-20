@@ -1,10 +1,10 @@
-// Module ID: 19755
-// Function ID: 19756
+// Module ID: 19757
+// Function ID: 19758
 // Name: useSpamMessageRequestsCount
 // Dependencies: [7031, 504, 2]
 // Exports: useSpamMessageRequestCount
 
-// Module 19755 (useSpamMessageRequestsCount)
+// Module 19757 (useSpamMessageRequestsCount)
 import get_initialized from "get initialized" /* 504 */;
 import SpamMessageRequestStore from "SpamMessageRequestStore" /* 7031 */;
 import size from "module_2" /* 2 */;

@@ -1,10 +1,10 @@
-// Module ID: 17914
-// Function ID: 17915
+// Module ID: 17916
+// Function ID: 17917
 // Name: SettingsAppearanceMessagesHeaderItem
 // Dependencies: [19, 17, 21, 5306, 575, 5919, 1113, 2]
 // Exports: default
 
-// Module 17914 (SettingsAppearanceMessagesHeaderItem)
+// Module 17916 (SettingsAppearanceMessagesHeaderItem)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

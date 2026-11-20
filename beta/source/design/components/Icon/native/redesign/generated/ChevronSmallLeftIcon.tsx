@@ -1,14 +1,14 @@
-// Module ID: 13254
-// Function ID: 13255
+// Module ID: 13256
+// Function ID: 13257
 // Name: ChevronSmallLeftIcon
-// Dependencies: [19, 21, 575, 6009, 13255, 2]
+// Dependencies: [19, 21, 575, 6009, 13257, 2]
 // Exports: ChevronSmallLeftIcon
 
-// Module 13254 (ChevronSmallLeftIcon)
+// Module 13256 (ChevronSmallLeftIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 6009 */;
-import AssetRegistry from "AssetRegistry" /* 13255 */;
+import AssetRegistry from "AssetRegistry" /* 13257 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

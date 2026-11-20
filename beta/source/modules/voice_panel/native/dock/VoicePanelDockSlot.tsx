@@ -1,20 +1,20 @@
-// Module ID: 19179
-// Function ID: 19180
+// Module ID: 19181
+// Function ID: 19182
 // Name: VoicePanelDockSlot
-// Dependencies: [19, 17, 17696, 14855, 21, 12017, 1655, 11253, 11984, 19180, 19182, 19235, 5929, 14573, 12423, 5487, 12011, 504, 2]
+// Dependencies: [19, 17, 17698, 14857, 21, 12017, 1655, 11253, 11984, 19182, 19184, 19237, 5929, 14575, 12425, 5487, 12011, 504, 2]
 
-// Module 19179 (VoicePanelDockSlot)
+// Module 19181 (VoicePanelDockSlot)
 import react_native from "react-native" /* 17 */;
 import _mod1655 from "module_1655" /* 1655 */;
 import useBaseAppContainerDimensionsDefault from "useBaseAppContainerDimensions" /* 5487 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11984 */;
 import MainTabsNavigatorPanelContextDefault from "MainTabsNavigatorPanelContext" /* 12011 */;
 import VoicePanelSheetMorph from "VoicePanelSheetMorph" /* 12017 */;
-import VoicePanelDockSlotStore from "VoicePanelDockSlotStore" /* 14855 */;
-import VoicePanelDockGlow from "VoicePanelDockGlow" /* 19180 */;
-import useVoicePanelDockMicLiveDefault from "useVoicePanelDockMicLive" /* 19235 */;
+import VoicePanelDockSlotStore from "VoicePanelDockSlotStore" /* 14857 */;
+import VoicePanelDockGlow from "VoicePanelDockGlow" /* 19182 */;
+import useVoicePanelDockMicLiveDefault from "useVoicePanelDockMicLive" /* 19237 */;
 import react from "react" /* 19 */;
-import QuestDockStore from "QuestDockStore" /* 17696 */;
+import QuestDockStore from "QuestDockStore" /* 17698 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let tmp5;
 const _modDef1655 = tmp(1655);
 const spring_spring = tmp(5929);
 const useStateFromSharedValueDefault = tmp(11253);
-const VoicePanelDockDefault = tmp(19182);
+const VoicePanelDockDefault = tmp(19184);
 function VoicePanelDockSlotDock(micLive) {
   let dockMinimizeProgress;
   let dockTouched;
@@ -388,10 +388,10 @@ let closure_19 = { code: "(function VoicePanelDockSlotTsx8(){let[withSpring,isQu
 let closure_20 = { code: "(function VoicePanelDockSlotTsx9(){let[dockHeight,sheetExitProgress,questBarHideProgress,dockEntryProgress,isQuestBarExpanded,isDockInLayout,dockTouched]=this.__closure;const height=dockHeight.get();const isLeaving=sheetExitProgress.get()>0;return{height:height,opacity:1-questBarHideProgress.get(),transform:[{translateY:(1-dockEntryProgress.get()+sheetExitProgress.get())*height}],pointerEvents:!isLeaving&&!isQuestBarExpanded&&(isDockInLayout.get()||dockTouched.get())?'box-none':'none'};})" };
 const memoResult = react.memo(function VoicePanelDockSlot(placement) {
   placement = placement.placement;
-  const obj = placement(14573);
+  const obj = placement(14575);
   const isMobileRTCV2Enabled = obj.useIsMobileRTCV2Enabled("VoicePanelDockSlot");
   const tmp2 = useVoicePanelDockState();
-  const obj2 = placement(12423);
+  const obj2 = placement(12425);
   const drawerWidth = obj2.useDrawerWidth({ whileSliding: "wider" });
   let width = useBaseAppContainerDimensionsDefault().width;
   const isNavigatorPanelsBesideChannelList = react.useContext(MainTabsNavigatorPanelContextDefault).isNavigatorPanelsBesideChannelList;

@@ -1,10 +1,10 @@
-// Module ID: 15472
-// Function ID: 15473
+// Module ID: 15474
+// Function ID: 15475
 // Name: TieredTenureBadgeCoachmark
 // Dependencies: [32, 19, 17, 1072, 5152, 21, 5306, 10085, 6010, 7361, 5139, 9560, 1113, 8604, 9567, 2]
 // Exports: default
 
-// Module 15472 (TieredTenureBadgeCoachmark)
+// Module 15474 (TieredTenureBadgeCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;

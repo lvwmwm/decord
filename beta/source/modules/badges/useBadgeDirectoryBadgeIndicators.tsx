@@ -1,10 +1,10 @@
-// Module ID: 15278
-// Function ID: 15279
+// Module ID: 15280
+// Function ID: 15281
 // Name: useBadgeDirectoryBadgeIndicators
 // Dependencies: [19, 10112, 10113, 8552, 504, 2]
 // Exports: dismissBadgeDirectoryBadgeIndicator, isNewIndicatorBadgeId, useBadgeDirectoryBadgeIndicators, useDismissBadgeDirectoryBadgeIndicator
 
-// Module 15278 (useBadgeDirectoryBadgeIndicators)
+// Module 15280 (useBadgeDirectoryBadgeIndicators)
 import BadgeUtils from "BadgeUtils" /* 10113 */;
 import react from "react" /* 19 */;
 import BadgeDirectorySeenStore from "BadgeDirectorySeenStore" /* 10112 */;

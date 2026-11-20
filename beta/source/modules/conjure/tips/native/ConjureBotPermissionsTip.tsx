@@ -1,13 +1,13 @@
-// Module ID: 13607
-// Function ID: 13608
+// Module ID: 13609
+// Function ID: 13610
 // Name: ConjureBotPermissionsTip
-// Dependencies: [5, 19, 21, 13162, 13608, 11224, 1113, 4131, 13612, 2]
+// Dependencies: [5, 19, 21, 13164, 13610, 11224, 1113, 4131, 13614, 2]
 
-// Module 13607 (ConjureBotPermissionsTip)
+// Module 13609 (ConjureBotPermissionsTip)
 import Fragment from "Fragment" /* 21 */;
 import _modDef4131 from "module_4131" /* 4131 */;
-import ConjureTipHintDefault from "ConjureTipHint" /* 13608 */;
-import conjureBotPermissionsTip from "conjureBotPermissionsTip" /* 13612 */;
+import ConjureTipHintDefault from "ConjureTipHint" /* 13610 */;
+import conjureBotPermissionsTip from "conjureBotPermissionsTip" /* 13614 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -18,7 +18,7 @@ function BotPermissionsHint(projectId) {
   let closure_1;
   let closure_2;
   projectId = projectId.projectId;
-  dependencyMap = react.useContext(projectId(13162).ConjurePublishActionContext);
+  dependencyMap = react.useContext(projectId(13164).ConjurePublishActionContext);
   ConjureTipHintDefault;
   const intl = projectId(1113).intl;
   const format = intl.format;

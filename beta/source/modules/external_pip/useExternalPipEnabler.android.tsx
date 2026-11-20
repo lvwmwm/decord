@@ -1,11 +1,11 @@
-// Module ID: 19904
-// Function ID: 19905
+// Module ID: 19906
+// Function ID: 19907
 // Name: useExternalPipEnabler
-// Dependencies: [7016, 502, 6061, 504, 19905, 2]
+// Dependencies: [7016, 502, 6061, 504, 19907, 2]
 // Exports: default
 
-// Module 19904 (useExternalPipEnabler)
-import ExternalPipEnablerState from "ExternalPipEnablerState" /* 19905 */;
+// Module 19906 (useExternalPipEnabler)
+import ExternalPipEnablerState from "ExternalPipEnablerState" /* 19907 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 7016 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 6061 */;

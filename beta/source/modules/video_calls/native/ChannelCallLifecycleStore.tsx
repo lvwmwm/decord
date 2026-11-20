@@ -1,9 +1,9 @@
-// Module ID: 12719
-// Function ID: 12720
+// Module ID: 12721
+// Function ID: 12722
 // Name: ChannelCallLifecycleStore
 // Dependencies: [5209, 11004, 10041, 1345, 504, 572, 2]
 
-// Module 12719 (ChannelCallLifecycleStore)
+// Module 12721 (ChannelCallLifecycleStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import _modDef1345 from "module_1345" /* 1345 */;
@@ -20,10 +20,12 @@ let c5 = false;
 let c6 = false;
 let visible = false;
 let obj = {};
-let size = { x: "Array", y: "s", width: "applicationId", height: "useMemo", screenOrientation: DeviceOrientation.OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: null, isInitialized: null, isVisible: null };
-obj[VoiceCallOverlayType.VOICE_CONTROLS_TOGGLE_BUTTON] = size;
-const size1 = { x: "Array", y: "s", width: "applicationId", height: "useMemo", screenOrientation: DeviceOrientation.OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: null, isInitialized: null, isVisible: null };
-obj[VoiceCallOverlayType.CAMERA_PREVIEW_PICTURE_IN_PICTURE] = size1;
+let size = { x: "Array", y: "s", width: "channel_id", height: "typeName", screenOrientation: DeviceOrientation.OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: 422417, isInitialized: 8388608, isVisible: 1359020032 };
+const VOICE_CONTROLS_TOGGLE_BUTTON = VoiceCallOverlayType.VOICE_CONTROLS_TOGGLE_BUTTON;
+obj[VOICE_CONTROLS_TOGGLE_BUTTON] = size;
+const size1 = { x: "Array", y: "s", width: "channel_id", height: "typeName", screenOrientation: DeviceOrientation.OrientationType.PORTRAIT, hasUserInteractedSinceOrientationChange: 422417, isInitialized: 8388608, isVisible: 1359020032 };
+const CAMERA_PREVIEW_PICTURE_IN_PICTURE = VoiceCallOverlayType.CAMERA_PREVIEW_PICTURE_IN_PICTURE;
+obj[CAMERA_PREVIEW_PICTURE_IN_PICTURE] = size1;
 let c10 = true;
 const Store = get_initializedDefault.Store;
 class ChannelCallLifecycleStore extends Store {

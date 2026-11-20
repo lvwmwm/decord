@@ -1,10 +1,10 @@
-// Module ID: 12458
-// Function ID: 12459
+// Module ID: 12460
+// Function ID: 12461
 // Name: useRelativeTimestampUpdates
 // Dependencies: [19, 9160, 6332, 7790, 9374, 11063, 1089, 2]
 // Exports: default
 
-// Module 12458 (useRelativeTimestampUpdates)
+// Module 12460 (useRelativeTimestampUpdates)
 import DurationsDefault from "Durations" /* 1089 */;
 import MarkupTypes from "MarkupTypes" /* 6332 */;
 import TimestampUtils from "TimestampUtils" /* 9374 */;

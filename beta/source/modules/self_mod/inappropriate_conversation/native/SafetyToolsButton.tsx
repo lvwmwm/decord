@@ -1,10 +1,10 @@
-// Module ID: 15653
-// Function ID: 15654
+// Module ID: 15655
+// Function ID: 15656
 // Name: SafetyToolsButton
-// Dependencies: [32, 19, 17, 21, 5306, 575, 12306, 12308, 1113, 12038, 5889, 12039, 12303, 9426, 15621, 11225, 2]
+// Dependencies: [32, 19, 17, 21, 5306, 575, 12306, 12308, 1113, 12038, 5889, 12039, 12303, 9426, 15623, 11225, 2]
 // Exports: SafetyToolsButton
 
-// Module 15653 (SafetyToolsButton)
+// Module 15655 (SafetyToolsButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

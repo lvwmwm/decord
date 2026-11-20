@@ -1,10 +1,10 @@
-// Module ID: 18972
-// Function ID: 18973
+// Module ID: 18974
+// Function ID: 18975
 // Name: GuildRoleSubscriptionTierTemplateUpsellActionSheet
 // Dependencies: [32, 19, 17, 5307, 1072, 5152, 21, 5306, 575, 8560, 563, 5556, 1113, 9730, 5919, 6327, 5926, 8404, 5542, 2]
 // Exports: default
 
-// Module 18972 (GuildRoleSubscriptionTierTemplateUpsellActionSheet)
+// Module 18974 (GuildRoleSubscriptionTierTemplateUpsellActionSheet)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 575 */;

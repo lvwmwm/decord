@@ -1,15 +1,15 @@
-// Module ID: 15892
-// Function ID: 15893
+// Module ID: 15894
+// Function ID: 15895
 // Name: InstantInviteShareApps
-// Dependencies: [32, 19, 17, 15893, 21, 5306, 575, 5934, 5588, 15923, 7988, 12290, 2]
+// Dependencies: [32, 19, 17, 15895, 21, 5306, 575, 5934, 5588, 15925, 7988, 12290, 2]
 
-// Module 15892 (InstantInviteShareApps)
+// Module 15894 (InstantInviteShareApps)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import InstantInviteConstants from "components/InstantInviteConstants" /* 15893 */;
+import InstantInviteConstants from "components/InstantInviteConstants" /* 15895 */;
 import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 

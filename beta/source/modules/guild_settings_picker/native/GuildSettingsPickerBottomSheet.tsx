@@ -1,15 +1,15 @@
-// Module ID: 16328
-// Function ID: 16329
+// Module ID: 16330
+// Function ID: 16331
 // Name: GuildSettingsPickerBottomSheet
-// Dependencies: [19, 17, 21, 5306, 575, 16329, 5556, 7913, 16333, 5542, 5926, 38, 8404, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 16331, 5556, 7913, 16335, 5542, 5926, 38, 8404, 2]
 
-// Module 16328 (GuildSettingsPickerBottomSheet)
+// Module 16330 (GuildSettingsPickerBottomSheet)
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 575 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8404 */;
-import GuildPickerDefault from "GuildPicker" /* 16333 */;
+import GuildPickerDefault from "GuildPicker" /* 16335 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5306 */;
@@ -38,7 +38,7 @@ class GuildSettingsPickerBottomSheet {
     feature = feature.feature;
     ({ section: importDefault, subsection: dependencyMap, guildId } = feature);
     const tmp = closure_6();
-    let obj = feature(16329);
+    let obj = feature(16331);
     const guildSettingsPickerFeature = obj.useGuildSettingsPickerFeature(feature);
     ({ selectGuildCta, title, description, isGuildSupported } = guildSettingsPickerFeature);
     let obj2 = { startExpanded: true, header: closure_4(feature(7913).BottomSheetTitleHeader, { title, subtitle: description }), children: closure_5(guildId, obj3) };

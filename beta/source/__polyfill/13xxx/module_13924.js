@@ -6,11 +6,9 @@
 let obj2;
 const obj = { parse: obj2 };
 obj2 = {
-  prelude() {
-    return this.createSingleNodeList(this.MediaQueryList());
-  },
+  prelude: null,
   block() {
-    return this.Block(false);
+    return this.Block(true);
   }
 };
 

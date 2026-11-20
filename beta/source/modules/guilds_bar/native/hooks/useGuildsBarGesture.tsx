@@ -1,10 +1,10 @@
-// Module ID: 19064
-// Function ID: 19065
+// Module ID: 19066
+// Function ID: 19067
 // Name: useGuildsBarGesture
-// Dependencies: [5, 19, 17, 5177, 6946, 19065, 19062, 1655, 551, 5544, 5313, 12, 1242, 1113, 7847, 18744, 5892, 575, 5221, 10576, 1263, 6907, 6232, 9149, 1380, 1630, 5558, 19066, 19067, 9149, 17702, 5588, 1708, 2]
+// Dependencies: [5, 19, 17, 5177, 6946, 19067, 19064, 1655, 551, 5544, 5313, 12, 1242, 1113, 7847, 18746, 5892, 575, 5221, 10576, 1263, 6907, 6232, 9149, 1380, 1630, 5558, 19068, 19069, 9149, 17704, 5588, 1708, 2]
 // Exports: default
 
-// Module 19064 (useGuildsBarGesture)
+// Module 19066 (useGuildsBarGesture)
 import react_native from "react-native" /* 17 */;
 import intl15 from "intl" /* 1113 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
@@ -20,8 +20,8 @@ import ContextMenuState from "ContextMenuState" /* 9149 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 5177 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 19065 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 19062 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 19067 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 19064 */;
 import "module_1655";
 import module_1655_mod from "module_1655" /* 1655 */;
 import debounce from "debounce" /* 551 */;
@@ -702,7 +702,7 @@ export default function useGuildsBarGesture() {
         const close = menu.requestClose(-1 === activeIndex.get());
       }
     }
-    setStateShallow({ dragSpecs: "Array", overSpecs: "Path" });
+    setStateShallow({ dragSpecs: "ip", overSpecs: "r" });
     const value = gestureState.get();
     if (null != value.mode) {
       const obj10 = { mode: null };

@@ -1,10 +1,10 @@
-// Module ID: 14161
-// Function ID: 14162
+// Module ID: 14163
+// Function ID: 14164
 // Name: showBanConfirmModal
-// Dependencies: [5542, 6838, 14162, 2121, 2]
+// Dependencies: [5542, 6838, 14164, 2121, 2]
 // Exports: default
 
-// Module 14161 (showBanConfirmModal)
+// Module 14163 (showBanConfirmModal)
 import asyncRequire from "asyncRequire" /* 2121 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
@@ -16,5 +16,5 @@ export default function showBanConfirmModal(merged) {
   const obj = ActionSheetActionCreatorsDefault;
   obj.hideActionSheet();
   const obj2 = ModalActionCreatorsDefault;
-  obj2.pushLazy(asyncRequire(14162, dependencyMap.paths), merged);
+  obj2.pushLazy(asyncRequire(14164, dependencyMap.paths), merged);
 };

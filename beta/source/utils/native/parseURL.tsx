@@ -1,7 +1,7 @@
 // Module ID: 6038
 // Function ID: 6039
 // Name: parseURL
-// Dependencies: [32, 1072, 1074, 5947, 6039, 6040, 1490, 2070, 1383, 6041, 6045, 15948, 12440, 6745, 16283, 1381, 5946, 11, 7402, 9713, 1627, 1380, 10637, 1256, 1254, 16284, 2]
+// Dependencies: [32, 1072, 1074, 5947, 6039, 6040, 1490, 2070, 1383, 6041, 6045, 15950, 12442, 6745, 16285, 1381, 5946, 11, 7402, 9713, 1627, 1380, 10637, 1256, 1254, 16286, 2]
 // Exports: default
 
 // Module 6038 (parseURL)
@@ -22,10 +22,10 @@ import GiftCodeUtils from "GiftCodeUtils" /* 6745 */;
 import Authorize from "Authorize" /* 7402 */;
 import MobileWebRedirectCheckoutUtils from "MobileWebRedirectCheckoutUtils" /* 9713 */;
 import SecureFramesDeeplinkExperiment from "SecureFramesDeeplinkExperiment" /* 10637 */;
-import conjureProjectLink from "conjureProjectLink" /* 12440 */;
-import useVirtualCurrencyMobileEnabled from "useVirtualCurrencyMobileEnabled" /* 15948 */;
-import QRLoginUtils from "QRLoginUtils" /* 16283 */;
-import urlPartToSettingsEnumDefault from "urlPartToSettingsEnum" /* 16284 */;
+import conjureProjectLink from "conjureProjectLink" /* 12442 */;
+import useVirtualCurrencyMobileEnabled from "useVirtualCurrencyMobileEnabled" /* 15950 */;
+import QRLoginUtils from "QRLoginUtils" /* 16285 */;
+import urlPartToSettingsEnumDefault from "urlPartToSettingsEnum" /* 16286 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import Constants from "Constants" /* 1072 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;

@@ -1,10 +1,10 @@
-// Module ID: 19443
-// Function ID: 19444
+// Module ID: 19445
+// Function ID: 19446
 // Name: useChannelAppFrameTeardown
 // Dependencies: [19, 5155, 5238, 7019, 7020, 1072, 504, 7349, 2]
 // Exports: default
 
-// Module 19443 (useChannelAppFrameTeardown)
+// Module 19445 (useChannelAppFrameTeardown)
 import Constants from "Constants" /* 1072 */;
 import FramesConstants from "FramesConstants" /* 7020 */;
 import leaveFrame from "leaveFrame" /* 7349 */;

@@ -1,10 +1,10 @@
-// Module ID: 14615
-// Function ID: 14616
+// Module ID: 14617
+// Function ID: 14618
 // Name: ForumPostGridBody
-// Dependencies: [32, 19, 17, 21, 5306, 575, 1187, 14616, 14617, 11857, 5919, 12421, 1255, 14618, 11158, 9111, 14622, 2]
+// Dependencies: [32, 19, 17, 21, 5306, 575, 1187, 14618, 14619, 11857, 5919, 12423, 1255, 14620, 11158, 9111, 14624, 2]
 // Exports: default
 
-// Module 14615 (ForumPostGridBody)
+// Module 14617 (ForumPostGridBody)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
@@ -12,9 +12,9 @@ import GlobalUtils from "GlobalUtils" /* 1255 */;
 import Text_Text from "Text/Text" /* 5919 */;
 import ForumPostMediaUtils from "ForumPostMediaUtils" /* 9111 */;
 import AssetRegistryDefault from "AssetRegistry" /* 11857 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14616 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 14617 */;
-import ForumPostMedia from "ForumPostMedia" /* 14618 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14618 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 14619 */;
+import ForumPostMedia from "ForumPostMedia" /* 14620 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment_mod from "Fragment" /* 21 */;
@@ -118,7 +118,7 @@ export default function ForumPostGridBody(thread) {
   const memo = react.useMemo(() => media.slice(0, 4), items);
   const bound = Math.max(0, media.length - 4);
   const isMediaPostResult = thread.isMediaPost();
-  const tmp10 = media(12421)();
+  const tmp10 = media(12423)();
   dependencyMap = tmp10;
   const items1 = [memo];
   const memo1 = react.useMemo(() => {
@@ -186,7 +186,7 @@ export default function ForumPostGridBody(thread) {
   items5[1] = tmp17;
   items6 = [closure_6(View, obj3), , , ];
   if (tmp16Result) {
-    const obj4 = { style: tmp.footerLeftContainer, children: closure_6(tmp2(14622).ForumPostAppliedTagPills, obj5) };
+    const obj4 = { style: tmp.footerLeftContainer, children: closure_6(tmp2(14624).ForumPostAppliedTagPills, obj5) };
     obj5 = { appliedTags: first, additionalTagsCount: tmp5, hasUnreads };
     tmp16Result = tmp16(tmp14, obj4);
   }

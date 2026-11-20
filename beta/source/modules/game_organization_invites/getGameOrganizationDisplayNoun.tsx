@@ -1,10 +1,10 @@
-// Module ID: 12539
-// Function ID: 12540
+// Module ID: 12541
+// Function ID: 12542
 // Name: getGameOrganizationDisplayNoun
 // Dependencies: [12369, 1113, 2565, 2]
 // Exports: default
 
-// Module 12539 (getGameOrganizationDisplayNoun)
+// Module 12541 (getGameOrganizationDisplayNoun)
 import intl3 from "intl" /* 1113 */;
 import _modDef2565 from "module_2565" /* 2565 */;
 import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 12369 */;

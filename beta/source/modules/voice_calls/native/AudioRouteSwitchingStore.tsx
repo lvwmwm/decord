@@ -1,9 +1,9 @@
-// Module ID: 19998
-// Function ID: 19999
+// Module ID: 20000
+// Function ID: 20001
 // Name: AudioRouteSwitchingStore
 // Dependencies: [17, 5155, 6061, 6081, 6082, 504, 572, 2]
 
-// Module 19998 (AudioRouteSwitchingStore)
+// Module 20000 (AudioRouteSwitchingStore)
 import react_native from "react-native" /* 17 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;

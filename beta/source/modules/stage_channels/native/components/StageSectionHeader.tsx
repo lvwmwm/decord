@@ -1,10 +1,10 @@
-// Module ID: 13093
-// Function ID: 13094
+// Module ID: 13095
+// Function ID: 13096
 // Name: StageSectionHeader
 // Dependencies: [19, 17, 21, 5306, 575, 1655, 5538, 5919, 1187, 7914, 2]
 // Exports: default
 
-// Module 13093 (StageSectionHeader)
+// Module 13095 (StageSectionHeader)
 import nativeDefault from "native" /* 575 */;
 import _mod1655 from "module_1655" /* 1655 */;
 import timing_timing from "timing/timing" /* 5538 */;

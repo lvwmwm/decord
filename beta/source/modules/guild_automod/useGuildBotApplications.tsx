@@ -1,10 +1,10 @@
-// Module ID: 20482
-// Function ID: 20483
+// Module ID: 20484
+// Function ID: 20485
 // Name: useGuildBotApplications
-// Dependencies: [19, 8405, 504, 8413, 20483, 1255, 2]
+// Dependencies: [19, 8405, 504, 8413, 20485, 1255, 2]
 // Exports: useGuildBotApplications
 
-// Module 20482 (useGuildBotApplications)
+// Module 20484 (useGuildBotApplications)
 import GlobalUtils from "GlobalUtils" /* 1255 */;
 import GuildSettingsFetchActionCreators from "GuildSettingsFetchActionCreators" /* 8413 */;
 import react from "react" /* 19 */;

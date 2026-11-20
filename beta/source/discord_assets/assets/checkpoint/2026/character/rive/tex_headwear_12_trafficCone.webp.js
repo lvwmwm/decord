@@ -1,8 +1,8 @@
-// Module ID: 14363
-// Function ID: 14364
+// Module ID: 14365
+// Function ID: 14366
 // Dependencies: [2]
 
-// Module 14363
+// Module 14365
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_headwear_12_trafficCone.webp.js");

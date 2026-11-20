@@ -1,10 +1,10 @@
-// Module ID: 15506
-// Function ID: 15507
+// Module ID: 15508
+// Function ID: 15509
 // Name: useVirtualCurrencyBalance
 // Dependencies: [10039, 504, 2]
 // Exports: getVirtualCurrencyBalance, useHasEnoughVirtualCurrency, useVirtualCurrencyBalance
 
-// Module 15506 (useVirtualCurrencyBalance)
+// Module 15508 (useVirtualCurrencyBalance)
 import get_initialized from "get initialized" /* 504 */;
 import VirtualCurrencyStore from "VirtualCurrencyStore" /* 10039 */;
 import size from "module_2" /* 2 */;

@@ -1,9 +1,9 @@
-// Module ID: 14837
-// Function ID: 14838
+// Module ID: 14839
+// Function ID: 14840
 // Name: ChatInputContextBar
-// Dependencies: [19, 17, 5307, 8725, 1388, 1072, 21, 1187, 5306, 575, 5892, 5919, 1113, 7428, 7648, 504, 5368, 6740, 10066, 9189, 14838, 5476, 1655, 5538, 1708, 12641, 1256, 12639, 1099, 6739, 14839, 9004, 9048, 9032, 2]
+// Dependencies: [19, 17, 5307, 8725, 1388, 1072, 21, 1187, 5306, 575, 5892, 5919, 1113, 7428, 7648, 504, 5368, 6740, 10066, 9189, 14840, 5476, 1655, 5538, 1708, 12643, 1256, 12641, 1099, 6739, 14841, 9004, 9048, 9032, 2]
 
-// Module 14837 (ChatInputContextBar)
+// Module 14839 (ChatInputContextBar)
 import nativeDefault from "native" /* 575 */;
 import intl9 from "intl" /* 1113 */;
 import native from "native" /* 1187 */;

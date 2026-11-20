@@ -29,7 +29,7 @@ let c9;
 let metroImportAll;
 let metroImportDefault;
 let unpackModuleId;
-const f93593 = () => locale.locale;
+const f93597 = () => locale.locale;
 function useSKUPrice(sku) {
   sku = sku.sku;
   let DEFAULT = sku.priceSetAssignmentPurchaseType;
@@ -279,12 +279,12 @@ export function transformStorefrontPricesServer(storefront_pricing) {
       let obj = _modDef12;
       return obj.mapValues(arg0, (user_price) => {
         let obj2;
-        const f93585 = (currency) => ({ currency: currency.currency, amount: currency.amount });
+        const f93589 = (currency) => ({ currency: currency.currency, amount: currency.amount });
         let obj = {
-          userPrice: user_price.map(f93585),
+          userPrice: user_price.map(f93589),
           prices: obj2.mapValues(user_price.prices, (arg0) => {
             const obj = closure_1_1(closure_1_2[6]);
-            return obj.mapValues(arg0, (arr) => arr.map(f93585));
+            return obj.mapValues(arg0, (arr) => arr.map(f93589));
           })
         };
         user_price = user_price.user_price;
@@ -359,7 +359,7 @@ export function useFormattedSKUPrice(priceSetAssignmentPurchaseType) {
   _require = tmp2;
   const items = [LocaleStore];
   const obj = require("get initialized");
-  const stateFromStores = obj.useStateFromStores(items, f93593);
+  const stateFromStores = obj.useStateFromStores(items, f93597);
   const items1 = [tmp2, stateFromStores];
   return react.useMemo(() => formatSKUPrice(closure_0, stateFromStores), items1);
 }
@@ -368,7 +368,7 @@ export function useFormatSKUPrice(arg0) {
   _require = arg0;
   const items = [LocaleStore];
   const obj = require("get initialized");
-  const stateFromStores = obj.useStateFromStores(items, f93593);
+  const stateFromStores = obj.useStateFromStores(items, f93597);
   const items1 = [arg0, stateFromStores];
   return react.useMemo(() => formatSKUPrice(closure_0, stateFromStores), items1);
 }

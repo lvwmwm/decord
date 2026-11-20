@@ -1,10 +1,10 @@
-// Module ID: 15886
-// Function ID: 15887
+// Module ID: 15888
+// Function ID: 15889
 // Name: AppCrash
-// Dependencies: [19, 21, 8183, 15887, 15888, 15889, 5313, 6010, 2]
+// Dependencies: [19, 21, 8183, 15889, 15890, 15891, 5313, 6010, 2]
 // Exports: AppCrash, getAppCrashSource, useAppCrashSource
 
-// Module 15886 (AppCrash)
+// Module 15888 (AppCrash)
 import Fragment from "Fragment" /* 21 */;
 import shared from "shared" /* 5313 */;
 import FastImageDefault from "FastImage" /* 6010 */;

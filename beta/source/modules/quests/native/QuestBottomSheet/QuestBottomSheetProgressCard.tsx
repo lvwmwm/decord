@@ -1,10 +1,10 @@
-// Module ID: 17764
-// Function ID: 17765
+// Module ID: 17766
+// Function ID: 17767
 // Name: QuestBottomSheetProgressCard
-// Dependencies: [19, 17, 1388, 21, 5306, 575, 10131, 10170, 504, 10151, 8829, 1113, 5919, 6962, 7445, 17737, 10146, 17729, 10128, 17723, 7428, 9730, 5883, 6010, 17765, 7606, 2]
+// Dependencies: [19, 17, 1388, 21, 5306, 575, 10131, 10170, 504, 10151, 8829, 1113, 5919, 6962, 7445, 17739, 10146, 17731, 10128, 17725, 7428, 9730, 5883, 6010, 17767, 7606, 2]
 // Exports: QuestBottomSheetProgressCardInGameTask, QuestBottomSheetProgressCardPlayStreamTask, QuestBottomSheetProgressCardWatchTask
 
-// Module 17764 (QuestBottomSheetProgressCard)
+// Module 17766 (QuestBottomSheetProgressCard)
 import nativeDefault from "native" /* 575 */;
 import intl8 from "intl" /* 1113 */;
 import LinearGradientDefault from "LinearGradient" /* 5883 */;
@@ -13,9 +13,9 @@ import FirstPartyQuestTaskTypes from "FirstPartyQuestTaskTypes" /* 6962 */;
 import Card_Card from "Card/Card" /* 7445 */;
 import hooks_QuestHooks from "hooks/QuestHooks" /* 10131 */;
 import AssetUtils from "AssetUtils" /* 10146 */;
-import openQuestAccessSuspendedBottomSheetDefault from "openQuestAccessSuspendedBottomSheet" /* 17723 */;
-import QuestProgressIndicatorDefault from "QuestProgressIndicator" /* 17737 */;
-import QuestDockBlurredContentBackgroundDefault from "QuestDockBlurredContentBackground" /* 17765 */;
+import openQuestAccessSuspendedBottomSheetDefault from "openQuestAccessSuspendedBottomSheet" /* 17725 */;
+import QuestProgressIndicatorDefault from "QuestProgressIndicator" /* 17739 */;
+import QuestDockBlurredContentBackgroundDefault from "QuestDockBlurredContentBackground" /* 17767 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1388 */;
@@ -173,7 +173,7 @@ export function QuestBottomSheetProgressCardPlayStreamTask(quest) {
   let obj4 = { style: tmp.content, children: items2 };
   const Card = tmp2(7445).Card;
   let obj5 = { quest, size: "lg", progress: questTaskDetails.percentComplete, loading: !tmp7, hasConfetti: true };
-  const tmp19 = isQuestProgressing(17737);
+  const tmp19 = isQuestProgressing(17739);
   if (!tmp7) {
     tmp7 = isQuestProgressing;
   }
@@ -232,7 +232,7 @@ export function QuestBottomSheetProgressCardWatchTask(quest) {
     return obj.getQuestAsset(quest, AssetUtils.QuestAssetType.QUEST_BAR_HERO_IMAGE);
   }, items2);
   let isHeroVideoSupportedResult = null != memo;
-  const obj2 = quest(17729);
+  const obj2 = quest(17731);
   const obj3 = { questId: quest.id, sourceQuestContent };
   const watchTaskPressHandler = obj2.useWatchTaskPressHandler(obj3);
   if (isHeroVideoSupportedResult) {

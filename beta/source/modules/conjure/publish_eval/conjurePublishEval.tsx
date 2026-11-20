@@ -1,15 +1,15 @@
-// Module ID: 13164
-// Function ID: 13165
+// Module ID: 13166
+// Function ID: 13167
 // Name: conjurePublishEval
-// Dependencies: [32, 5, 19, 5177, 1388, 7321, 7377, 13165, 13166, 504, 572, 4131, 1113, 13167, 2]
+// Dependencies: [32, 5, 19, 5177, 1388, 7321, 7377, 13167, 13168, 504, 572, 4131, 1113, 13169, 2]
 // Exports: conjurePublishEvalDimensionLabel, conjurePublishEvalScoreLabel, getPendingConjurePublishEval, isConjurePublishEvalUser, requestConjurePublishEval, useConjurePublishEvalForm, useIsConjurePublishEvalUser, usePendingConjurePublishEval
 
-// Module 13164 (conjurePublishEval)
+// Module 13166 (conjurePublishEval)
 import get_initialized from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl3 from "intl" /* 1113 */;
 import _modDef4131 from "module_4131" /* 4131 */;
-import ConjurePublishEvalTypes from "ConjurePublishEvalTypes" /* 13166 */;
+import ConjurePublishEvalTypes from "ConjurePublishEvalTypes" /* 13168 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
@@ -17,13 +17,13 @@ import GuildStore from "GuildStore" /* 5177 */;
 import UserStore from "UserStore" /* 1388 */;
 import ConjureChatStore from "ConjureChatStore" /* 7321 */;
 import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 7377 */;
-import ConjurePublishEvalStore from "ConjurePublishEvalStore" /* 13165 */;
+import ConjurePublishEvalStore from "ConjurePublishEvalStore" /* 13167 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, c1, c3, c6, c7, importDefault, publishStatus;
 
-const f106651 = (item) => null != guild.getGuild(item);
+const f106657 = (item) => null != guild.getGuild(item);
 let obj = function _submitConjurePublishEval() {
   obj = _asyncToGenerator(async function(arg0, value, arg2) {
     let published_revision;
@@ -125,7 +125,7 @@ const result = size.fileFinishedImporting("modules/conjure/publish_eval/conjureP
 export function isConjurePublishEvalUser() {
   let closure_0 = GuildStore;
   const CONJURE_PUBLISH_EVAL_GUILD_IDS = ConjurePublishEvalTypes.CONJURE_PUBLISH_EVAL_GUILD_IDS;
-  return CONJURE_PUBLISH_EVAL_GUILD_IDS.some(f106651);
+  return CONJURE_PUBLISH_EVAL_GUILD_IDS.some(f106657);
 }
 export function useIsConjurePublishEvalUser() {
   const items = [GuildStore];
@@ -133,7 +133,7 @@ export function useIsConjurePublishEvalUser() {
   return obj.useStateFromStores(items, () => {
     let closure_0 = GuildStore;
     const CONJURE_PUBLISH_EVAL_GUILD_IDS = require("ConjurePublishEvalTypes").CONJURE_PUBLISH_EVAL_GUILD_IDS;
-    return CONJURE_PUBLISH_EVAL_GUILD_IDS.some(f106651);
+    return CONJURE_PUBLISH_EVAL_GUILD_IDS.some(f106657);
   });
 }
 export function getPendingConjurePublishEval() {
@@ -151,7 +151,7 @@ export function getPendingConjurePublishEval() {
       let closure_0 = GuildStore;
       const CONJURE_PUBLISH_EVAL_GUILD_IDS = ConjurePublishEvalTypes.CONJURE_PUBLISH_EVAL_GUILD_IDS;
       tmp2 = null;
-      if (CONJURE_PUBLISH_EVAL_GUILD_IDS.some(f106651)) {
+      if (CONJURE_PUBLISH_EVAL_GUILD_IDS.some(f106657)) {
         tmp2 = pending;
       }
     }
@@ -182,7 +182,7 @@ export function usePendingConjurePublishEval(projectId) {
         closure_0 = GuildStore;
         const CONJURE_PUBLISH_EVAL_GUILD_IDS = ConjurePublishEvalTypes.CONJURE_PUBLISH_EVAL_GUILD_IDS;
         tmp3 = null;
-        if (CONJURE_PUBLISH_EVAL_GUILD_IDS.some(f106651)) {
+        if (CONJURE_PUBLISH_EVAL_GUILD_IDS.some(f106657)) {
           tmp3 = pending;
         }
       }
@@ -201,7 +201,7 @@ export function requestConjurePublishEval(projectId) {
   if (someResult) {
     let closure_0 = GuildStore;
     const CONJURE_PUBLISH_EVAL_GUILD_IDS = ConjurePublishEvalTypes.CONJURE_PUBLISH_EVAL_GUILD_IDS;
-    someResult = CONJURE_PUBLISH_EVAL_GUILD_IDS.some(f106651);
+    someResult = CONJURE_PUBLISH_EVAL_GUILD_IDS.some(f106657);
   }
   if (someResult) {
     obj = { userId: id1, projectId, publishTurnId: null, createdAt: null };

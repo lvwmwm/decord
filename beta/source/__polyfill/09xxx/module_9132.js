@@ -143,16 +143,16 @@ export function useHeaderConfigProps(headerLargeTitle) {
   let tmp21;
   let tmp34Result;
   let tmp34Result2;
-  let tmp41Result;
-  let tmp51;
+  let tmp43Result;
   let tmp53;
   let tmp55;
   let tmp57;
   let tmp59;
+  let tmp61;
   let unstable_headerInsets;
   let unstable_headerLeftItems;
   let unstable_headerRightItems;
-  const f97858 = function(type, index) {
+  const f97862 = function(type, index) {
     let badge;
     let icon;
     let items;
@@ -284,7 +284,7 @@ export function useHeaderConfigProps(headerLargeTitle) {
       }
     }
   };
-  const f97859 = (item) => null != item;
+  const f97863 = (item) => null != item;
   ({ headerBackIcon, headerBackImageSource, headerBackTitle, headerBackVisible, headerShadowVisible, headerLargeTitleEnabled } = headerLargeTitle);
   ({ headerBackButtonDisplayMode, headerBackButtonMenuEnabled, headerBackTitleStyle, headerLargeStyle } = headerLargeTitle);
   if (headerLargeTitleEnabled === undefined) {
@@ -365,7 +365,7 @@ export function useHeaderConfigProps(headerLargeTitle) {
   let tmp19 = null != headerBack;
   let headerLeftResult;
   if (headerLeft != null) {
-    let obj5 = { tintColor: text, canGoBack: tmp19, label: tmp21, href: "Array" };
+    let obj5 = { tintColor: text, canGoBack: tmp19, label: tmp21, href: "a" };
     tmp21 = headerBackTitle;
     if (headerBackTitle == null) {
       let title1;
@@ -426,41 +426,41 @@ export function useHeaderConfigProps(headerLargeTitle) {
     }
     const obj11 = { style: obj10, children: items5 };
     items5 = [headerLeftResult, ];
-    let tmp63Result = null;
+    let tmp38Result = null;
     if ("center" !== headerTitleAlign) {
       let obj13;
-      const tmp64 = closure_9;
+      const tmp39 = closure_9;
       if (typeof headerTitle === "function") {
         obj13 = { style: { flex: 1 }, children: headerTitleResult };
         const obj12 = { style: { flex: 1 }, children: headerTitleResult };
       } else {
-        obj13 = { style: { flex: 1 }, children: closure_10(colors(7500).HeaderTitle, obj14) };
+        obj13 = { style: { flex: 1 }, children: tmp38(colors(7500).HeaderTitle, obj14) };
         obj14 = { tintColor: text, style: obj4, children: headerTitle1 };
       }
-      tmp63Result = tmp63(tmp64, obj13);
+      tmp38Result = tmp38(tmp39, obj13);
     }
-    items5[1] = tmp63Result;
+    items5[1] = tmp38Result;
     tmp34Result = tmp34(ScreenStackHeaderLeftView, obj11);
   } else {
     tmp34Result = null;
   }
   const items6 = [tmp34Result, ];
-  let tmp39Result = null;
+  let tmp41Result = null;
   if ("center" === headerTitleAlign) {
     const ScreenStackHeaderCenterView = tmp2(6266).ScreenStackHeaderCenterView;
     if (typeof headerTitle !== "function") {
       const obj15 = { tintColor: text, style: obj4, children: headerTitle1 };
-      headerTitleResult = tmp39(tmp2(7500).HeaderTitle, obj15);
+      headerTitleResult = tmp41(tmp2(7500).HeaderTitle, obj15);
     }
     const obj16 = { children: headerTitleResult };
-    tmp39Result = tmp39(ScreenStackHeaderCenterView, obj16);
+    tmp41Result = tmp41(ScreenStackHeaderCenterView, obj16);
   }
-  items6[1] = tmp39Result;
+  items6[1] = tmp41Result;
   const items7 = [tmp34(tmp35, { children: items6 }), , , ];
   if (undefined !== headerBackIcon) {
     let source;
     const ScreenStackHeaderBackButtonImage = tmp2(6266).ScreenStackHeaderBackButtonImage;
-    const tmp41 = closure_10;
+    const tmp43 = closure_10;
     if (headerBackIcon != null) {
       source = headerBackIcon.source;
     }
@@ -468,84 +468,84 @@ export function useHeaderConfigProps(headerLargeTitle) {
       source = headerBackImageSource;
     }
     const obj17 = { source };
-    tmp41Result = tmp41(ScreenStackHeaderBackButtonImage, obj17);
+    tmp43Result = tmp43(ScreenStackHeaderBackButtonImage, obj17);
   } else {
-    tmp41Result = null;
+    tmp43Result = null;
   }
-  items7[1] = tmp41Result;
-  let tmp43 = null;
+  items7[1] = tmp43Result;
+  let tmp45 = null;
   if (null != headerRightResult) {
     const obj18 = { hidesSharedBackground: true, children: headerRightResult };
-    tmp43 = closure_10(tmp2(6266).ScreenStackHeaderRightView, obj18);
+    tmp45 = closure_10(tmp2(6266).ScreenStackHeaderRightView, obj18);
   }
-  items7[2] = tmp43;
-  let tmp45 = null;
+  items7[2] = tmp45;
+  let tmp47 = null;
   if (isSearchBarAvailableForCurrentPlatform2) {
     const obj19 = { children: closure_10(SearchBar, obj20) };
     const ScreenStackHeaderSearchBarView = tmp2(6266).ScreenStackHeaderSearchBarView;
     obj20 = {};
     SearchBar = tmp2(6266).SearchBar;
     let merged = Object.assign(headerSearchBarOptions);
-    tmp45 = closure_10(ScreenStackHeaderSearchBarView, obj19);
+    tmp47 = closure_10(ScreenStackHeaderSearchBarView, obj19);
   }
-  items7[3] = tmp45;
-  const obj21 = { backButtonInCustomView: tmp25, backgroundColor, backTitle: headerBackTitle, backTitleVisible: "minimal" !== headerBackButtonDisplayMode, backButtonDisplayMode: "fileFinishedImporting", backTitleFontFamily: tmp11, backTitleFontSize: fontSize, blurEffect: headerBlurEffect, color: text, direction, disableBackButtonMenu: false === headerBackButtonMenuEnabled, hidden: false === headerShown, hideBackButton: false === headerBackVisible, hideShadow: tmp51, largeTitle: headerLargeTitleEnabled, largeTitleBackgroundColor: backgroundColor2, largeTitleColor: color, largeTitleFontFamily: tmp12, largeTitleFontSize: fontSize2, largeTitleFontWeight: fontWeight2, largeTitleHideShadow: false === headerLargeTitleShadowVisible, title: headerTitle1, titleColor: headerTintColor, titleFontFamily: tmp13, titleFontSize: fontSize1, titleFontWeight: String(fontWeight), topInsetEnabled: headerTopInsetEnabled, disableTopInsetApplication: tmp53, disableLeftInsetApplication: tmp55, disableRightInsetApplication: tmp57, disableBottomInsetApplication: tmp59, translucent: true === tmp27, children: tmp34Result2, headerLeftBarButtonItems: true, headerRightBarButtonItems: "sentences", experimental_userInterfaceStyle: 343.42 };
-  tmp51 = false === headerShadowVisible;
+  items7[3] = tmp47;
+  const obj21 = { backButtonInCustomView: tmp25, backgroundColor, backTitle: headerBackTitle, backTitleVisible: "minimal" !== headerBackButtonDisplayMode, backButtonDisplayMode: "fileFinishedImporting", backTitleFontFamily: tmp11, backTitleFontSize: fontSize, blurEffect: headerBlurEffect, color: text, direction, disableBackButtonMenu: false === headerBackButtonMenuEnabled, hidden: false === headerShown, hideBackButton: false === headerBackVisible, hideShadow: tmp53, largeTitle: headerLargeTitleEnabled, largeTitleBackgroundColor: backgroundColor2, largeTitleColor: color, largeTitleFontFamily: tmp12, largeTitleFontSize: fontSize2, largeTitleFontWeight: fontWeight2, largeTitleHideShadow: false === headerLargeTitleShadowVisible, title: headerTitle1, titleColor: headerTintColor, titleFontFamily: tmp13, titleFontSize: fontSize1, titleFontWeight: String(fontWeight), topInsetEnabled: headerTopInsetEnabled, disableTopInsetApplication: tmp55, disableLeftInsetApplication: tmp57, disableRightInsetApplication: tmp59, disableBottomInsetApplication: tmp61, translucent: true === tmp27, children: tmp34Result2, headerLeftBarButtonItems: null, headerRightBarButtonItems: null, experimental_userInterfaceStyle: null };
+  tmp53 = false === headerShadowVisible;
   tmp34Result2 = closure_12(closure_11, { children: items7 });
-  if (!tmp51) {
-    tmp51 = null != headerBackground;
+  if (!tmp53) {
+    tmp53 = null != headerBackground;
   }
-  if (!tmp51) {
+  if (!tmp53) {
     if (headerTransparent) {
       headerTransparent = true !== headerShadowVisible;
     }
-    tmp51 = headerTransparent;
+    tmp53 = headerTransparent;
   }
   let top;
   if (unstable_headerInsets != null) {
     top = unstable_headerInsets.top;
   }
   if (undefined !== top) {
-    tmp53 = !unstable_headerInsets.top;
+    tmp55 = !unstable_headerInsets.top;
   } else {
-    tmp53 = !headerTopInsetEnabled;
+    tmp55 = !headerTopInsetEnabled;
   }
   let left;
   if (unstable_headerInsets != null) {
     left = unstable_headerInsets.left;
   }
-  tmp55 = undefined;
+  tmp57 = undefined;
   if (undefined !== left) {
-    tmp55 = !unstable_headerInsets.left;
+    tmp57 = !unstable_headerInsets.left;
   }
   let right;
   if (unstable_headerInsets != null) {
     right = unstable_headerInsets.right;
   }
-  tmp57 = undefined;
+  tmp59 = undefined;
   if (undefined !== right) {
-    tmp57 = !unstable_headerInsets.right;
+    tmp59 = !unstable_headerInsets.right;
   }
   let bottom;
   if (unstable_headerInsets != null) {
     bottom = unstable_headerInsets.bottom;
   }
-  tmp59 = undefined;
+  tmp61 = undefined;
   if (undefined !== bottom) {
-    tmp59 = !unstable_headerInsets.bottom;
+    tmp61 = !unstable_headerInsets.bottom;
   }
   if (typeof processBarButtonItems === "function") {
     let found;
     if (result != null) {
-      const mapped = result.map(f97858);
-      found = mapped.filter(f97859);
+      const mapped = result.map(f97862);
+      found = mapped.filter(f97863);
     }
     obj21.headerLeftBarButtonItems = found;
-    if (typeof tmp60 === "function") {
+    if (typeof tmp62 === "function") {
       let found1;
       if (reversed != null) {
-        const mapped1 = reversed.map(f97858);
-        found1 = mapped1.filter(f97859);
+        const mapped1 = reversed.map(f97862);
+        found1 = mapped1.filter(f97863);
       }
       obj21.headerRightBarButtonItems = found1;
       let str3 = "light";

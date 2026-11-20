@@ -1,10 +1,10 @@
-// Module ID: 16290
-// Function ID: 16291
+// Module ID: 16292
+// Function ID: 16293
 // Name: AddFriendById
 // Dependencies: [32, 19, 17, 1072, 21, 5306, 575, 1113, 5919, 7626, 8141, 8137, 6004, 1256, 5315, 7859, 5926, 2]
 // Exports: default
 
-// Module 16290 (AddFriendById)
+// Module 16292 (AddFriendById)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;

@@ -1,10 +1,10 @@
-// Module ID: 14540
-// Function ID: 14541
+// Module ID: 14542
+// Function ID: 14543
 // Name: TraitOptionItem
 // Dependencies: [17, 6367, 21, 575, 6734, 5306, 6368, 9436, 8263, 6413, 6010, 5368, 2]
 // Exports: default
 
-// Module 14540 (TraitOptionItem)
+// Module 14542 (TraitOptionItem)
 import nativeDefault from "native" /* 575 */;
 import react_native from "react-native" /* 5368 */;
 import FastImageDefault from "FastImage" /* 6010 */;

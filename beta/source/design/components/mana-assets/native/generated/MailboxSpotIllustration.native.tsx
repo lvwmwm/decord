@@ -1,26 +1,26 @@
-// Module ID: 19280
-// Function ID: 19281
+// Module ID: 19282
+// Function ID: 19283
 // Name: MailboxSpotIllustration
-// Dependencies: [19, 21, 19281, 19282, 19283, 7755, 6010, 2]
+// Dependencies: [19, 21, 19283, 19284, 19285, 7755, 6010, 2]
 // Exports: MailboxSpotIllustration
 
-// Module 19280 (MailboxSpotIllustration)
+// Module 19282 (MailboxSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
 import react_native from "react-native" /* 7755 */;
-import _modDef19281 from "module_19281" /* 19281 */;
-import _modDef19282 from "module_19282" /* 19282 */;
 import _modDef19283 from "module_19283" /* 19283 */;
+import _modDef19284 from "module_19284" /* 19284 */;
+import _modDef19285 from "module_19285" /* 19285 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef19281 };
+let obj2 = { uri: _modDef19283 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef19282 };
+let obj3 = { uri: _modDef19284 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef19283 };
-({ uri: _modDef19283 });
+obj[3] = { uri: _modDef19285 };
+({ uri: _modDef19285 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/MailboxSpotIllustration.native.tsx");
 

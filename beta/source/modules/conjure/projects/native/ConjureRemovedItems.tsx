@@ -1,10 +1,10 @@
-// Module ID: 13209
-// Function ID: 13210
+// Module ID: 13211
+// Function ID: 13212
 // Name: ConjureRemovedItems
-// Dependencies: [19, 17, 21, 5306, 575, 1113, 10870, 8101, 12682, 8072, 6327, 5919, 5368, 7734, 4131, 7746, 7733, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 1113, 10870, 8101, 12684, 8072, 6327, 5919, 5368, 7734, 4131, 7746, 7733, 2]
 // Exports: ConjureRemoveEverythingField, default, formatWithAppTag
 
-// Module 13209 (ConjureRemovedItems)
+// Module 13211 (ConjureRemovedItems)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import _modDef4131 from "module_4131" /* 4131 */;
@@ -17,7 +17,7 @@ import TableRowGroup2 from "TableRowGroup" /* 7746 */;
 import FolderIcon from "FolderIcon" /* 8072 */;
 import AppsIcon from "AppsIcon" /* 8101 */;
 import BotTagDefault from "BotTag" /* 10870 */;
-import RobotIcon from "RobotIcon" /* 12682 */;
+import RobotIcon from "RobotIcon" /* 12684 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment_mod from "Fragment" /* 21 */;

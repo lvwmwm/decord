@@ -1,9 +1,9 @@
-// Module ID: 20803
-// Function ID: 20804
+// Module ID: 20805
+// Function ID: 20806
 // Name: clips/ClipsManager
-// Dependencies: [32, 5, 6080, 1231, 502, 5155, 2133, 6061, 6792, 1388, 2139, 8845, 1072, 6793, 6065, 20804, 7882, 15812, 6086, 6798, 1256, 5131, 572, 20805, 20806, 16108, 2]
+// Dependencies: [32, 5, 6080, 1231, 502, 5155, 2133, 6061, 6792, 1388, 2139, 8845, 1072, 6793, 6065, 20806, 7882, 15814, 6086, 6798, 1256, 5131, 572, 20807, 20808, 16110, 2]
 
-// Module 20803 (clips/ClipsManager)
+// Module 20805 (clips/ClipsManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import UserSettings from "UserSettings" /* 5131 */;
@@ -12,8 +12,8 @@ import SystemAnalyticsStore from "SystemAnalyticsStore" /* 6080 */;
 import BaseConnectionEvent from "BaseConnectionEvent" /* 6086 */;
 import Constants3 from "Constants" /* 6793 */;
 import StreamKeyUtils from "StreamKeyUtils" /* 6798 */;
-import ClipsExperiment from "ClipsExperiment" /* 15812 */;
-import AutoclipsExperimentDefault from "AutoclipsExperiment" /* 20805 */;
+import ClipsExperiment from "ClipsExperiment" /* 15814 */;
+import AutoclipsExperimentDefault from "AutoclipsExperiment" /* 20807 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
@@ -40,7 +40,7 @@ let closure_19;
 let closure_20;
 let closure_21;
 let tmp;
-const isClipsEnabled = tmp(16108);
+const isClipsEnabled = tmp(16110);
 function getCodecSurvey() {
   return obj(...arguments);
 }
@@ -513,7 +513,7 @@ class ClipsManager extends AutomaticLifecycleManager {
           let tmp7 = tmp6 && classification === tmp.MEETS_AUTO_ENABLE;
           let allowDefaultOn = null;
           if (true === nsfwAllowed) {
-            const tmp2Result = tmp2(20806);
+            const tmp2Result = tmp2(20808);
             allowDefaultOn = tmp2Result.getConfig({ location: "getClipsDefaultSettingsDecision" }).allowDefaultOn;
           }
           const obj2 = { clipsEnabled: tmp7, enableAutoclipping: tmp7, allowVoiceRecording: true === allowDefaultOn, nsfwAllowed, geoAllowed: allowDefaultOn };

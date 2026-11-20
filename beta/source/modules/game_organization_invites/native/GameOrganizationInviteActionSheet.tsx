@@ -1,19 +1,19 @@
-// Module ID: 16404
-// Function ID: 16405
+// Module ID: 16406
+// Function ID: 16407
 // Name: GameOrganizationInviteActionSheet
-// Dependencies: [19, 17, 16349, 21, 5306, 575, 8474, 16405, 16406, 16402, 504, 12539, 1113, 2565, 7951, 6327, 5919, 7825, 16407, 16408, 2]
+// Dependencies: [19, 17, 16351, 21, 5306, 575, 8474, 16407, 16408, 16404, 504, 12541, 1113, 2565, 7951, 6327, 5919, 7825, 16409, 16410, 2]
 // Exports: default
 
-// Module 16404 (GameOrganizationInviteActionSheet)
+// Module 16406 (GameOrganizationInviteActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef2565 from "module_2565" /* 2565 */;
 import UserPlaceholderRowDefault from "UserPlaceholderRow" /* 8474 */;
-import getGameOrganizationDisplayNounDefault from "getGameOrganizationDisplayNoun" /* 12539 */;
-import useGameOrganizationInviteSuggestionsDefault from "useGameOrganizationInviteSuggestions" /* 16405 */;
-import useLinkedGameOrganizationInviteSenderDefault from "useLinkedGameOrganizationInviteSender" /* 16406 */;
+import getGameOrganizationDisplayNounDefault from "getGameOrganizationDisplayNoun" /* 12541 */;
+import useGameOrganizationInviteSuggestionsDefault from "useGameOrganizationInviteSuggestions" /* 16407 */;
+import useLinkedGameOrganizationInviteSenderDefault from "useLinkedGameOrganizationInviteSender" /* 16408 */;
 import react from "react" /* 19 */;
-import GameOrganizationStore from "GameOrganizationStore" /* 16349 */;
+import GameOrganizationStore from "GameOrganizationStore" /* 16351 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
@@ -62,7 +62,7 @@ export default function GameOrganizationInviteActionSheet(guildId) {
   useGameOrganizationInviteSuggestionsDefault();
   ({ getSendState, handleInvite } = useLinkedGameOrganizationInviteSenderDefault(guildId));
   useLinkedGameOrganizationInviteSenderDefault(guildId);
-  const obj = guildId(16402);
+  const obj = guildId(16404);
   const data = obj.useLinkedGameOrganization(guildId).data;
   const items = [GameOrganizationStore];
   const items1 = [guildId];
@@ -101,10 +101,10 @@ export default function GameOrganizationInviteActionSheet(guildId) {
     tmp11Result = tmp11(Loading, {});
   } else if (hasNoFriends) {
     const obj11 = { noun: tmp9 };
-    tmp11Result = tmp11(tmp2(16407), obj11);
+    tmp11Result = tmp11(tmp2(16409), obj11);
   } else {
     const obj12 = { users, getSendState, onInvite: handleInvite };
-    tmp11Result = tmp11(tmp2(16408), obj12);
+    tmp11Result = tmp11(tmp2(16410), obj12);
   }
   return closure_5(ActionSheet, obj5);
 };

@@ -1,13 +1,13 @@
-// Module ID: 15362
-// Function ID: 15363
+// Module ID: 15364
+// Function ID: 15365
 // Name: PremiumGroupStore
-// Dependencies: [2179, 2187, 1072, 15363, 504, 572, 2]
+// Dependencies: [2179, 2187, 1072, 15365, 504, 572, 2]
 
-// Module 15362 (PremiumGroupStore)
+// Module 15364 (PremiumGroupStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
-import PremiumGroupActionCreators from "PremiumGroupActionCreators" /* 15363 */;
+import PremiumGroupActionCreators from "PremiumGroupActionCreators" /* 15365 */;
 import SubscriptionStore from "SubscriptionStore" /* 2179 */;
 import PremiumGroupConstants from "PremiumGroupConstants" /* 2187 */;
 import size from "module_2" /* 2 */;

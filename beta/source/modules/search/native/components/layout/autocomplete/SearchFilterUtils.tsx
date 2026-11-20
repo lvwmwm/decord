@@ -1,23 +1,23 @@
-// Module ID: 19453
-// Function ID: 19454
+// Module ID: 19455
+// Function ID: 19456
 // Name: SearchFilterUtils
-// Dependencies: [9066, 9065, 1072, 1113, 10553, 11048, 16277, 8087, 8457, 19454, 13549, 12682, 14748, 14765, 14740, 5542, 8019, 2121, 14761, 2]
+// Dependencies: [9066, 9065, 1072, 1113, 10553, 11048, 16279, 8087, 8457, 19456, 13551, 12684, 14750, 14767, 14742, 5542, 8019, 2121, 14763, 2]
 // Exports: getSearchFilterSuggestions, getSearchTokenIcon, getSearchTokenLabel, getSearchTokenPressHandler, getSearchTokenSubLabel
 
-// Module 19453 (SearchFilterUtils)
+// Module 19455 (SearchFilterUtils)
 import intl10 from "intl" /* 1113 */;
 import AtIcon from "AtIcon" /* 8087 */;
 import CalendarIcon from "CalendarIcon" /* 8457 */;
 import TrackingConstants from "TrackingConstants" /* 9065 */;
 import UserIcon from "UserIcon" /* 10553 */;
 import AttachmentIcon from "AttachmentIcon" /* 11048 */;
-import RobotIcon from "RobotIcon" /* 12682 */;
-import CalendarPlusIcon from "CalendarPlusIcon" /* 13549 */;
-import SearchPlatformUtils from "SearchPlatformUtils" /* 14740 */;
-import SearchTokens from "SearchTokens" /* 14748 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 14765 */;
-import ChannelListMagnifyingGlassIcon from "ChannelListMagnifyingGlassIcon" /* 16277 */;
-import CalendarMinusIcon from "CalendarMinusIcon" /* 19454 */;
+import RobotIcon from "RobotIcon" /* 12684 */;
+import CalendarPlusIcon from "CalendarPlusIcon" /* 13551 */;
+import SearchPlatformUtils from "SearchPlatformUtils" /* 14742 */;
+import SearchTokens from "SearchTokens" /* 14750 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 14767 */;
+import ChannelListMagnifyingGlassIcon from "ChannelListMagnifyingGlassIcon" /* 16279 */;
+import CalendarMinusIcon from "CalendarMinusIcon" /* 19456 */;
 import SearchConstants from "SearchConstants" /* 9066 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;
@@ -247,7 +247,7 @@ export function getSearchTokenPressHandler(arg0, token, CONTEXT_MENU) {
 export function getSearchFilterSuggestions(textInputValue) {
   let closure_0 = textInputValue;
   const items = [];
-  const keys = Object.keys(items(14748));
+  const keys = Object.keys(items(14750));
   const item = keys.forEach(function(token) {
     const obj = SearchTokens;
     if (obj.isSearchFilterTokenType(token)) {

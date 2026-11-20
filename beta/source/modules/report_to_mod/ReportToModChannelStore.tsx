@@ -1,10 +1,10 @@
-// Module ID: 15127
-// Function ID: 15128
+// Module ID: 15129
+// Function ID: 15130
 // Name: ReportToModChannelStore
 // Dependencies: [560, 5496, 1263, 8812, 2]
 // Exports: useShouldShowResolvedFlagsForChannel
 
-// Module 15127 (ReportToModChannelStore)
+// Module 15129 (ReportToModChannelStore)
 import module_560 from "module_560" /* 560 */;
 import combine_mod from "combine" /* 5496 */;
 import size from "module_2" /* 2 */;

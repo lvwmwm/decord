@@ -1,9 +1,9 @@
-// Module ID: 20914
-// Function ID: 20915
+// Module ID: 20916
+// Function ID: 20917
 // Name: native_required_assets_icons
-// Dependencies: [8040, 8038, 12673, 10269, 7498, 14289, 11049, 11929, 9982, 16278, 7739, 14897, 7898, 10561, 7457, 20915, 20916, 17688, 17502, 14158, 20917, 20918, 19178, 19176, 6026, 7636, 7634, 7439, 9334, 7437, 11953, 20504, 20919, 8054, 8055, 6020, 8066, 11150, 13738, 12949, 13049, 10605, 7421, 9342, 9126, 12319, 9194, 9103, 9105, 10540, 7607, 10470, 11639, 10410, 13309, 10468, 16276, 12577, 18805, 8018, 10738, 9559, 8035, 17829, 12624, 9326, 7433, 13019, 8161, 15196, 7550, 10309, 2]
+// Dependencies: [8040, 8038, 12675, 10269, 7498, 14291, 11049, 11929, 9982, 16280, 7739, 14899, 7898, 10561, 7457, 20917, 20918, 17690, 17504, 14160, 20919, 20920, 19180, 19178, 6026, 7636, 7634, 7439, 9334, 7437, 11953, 20506, 20921, 8054, 8055, 6020, 8066, 11150, 13740, 12951, 13051, 10605, 7421, 9342, 9126, 12319, 9194, 9103, 9105, 10540, 7607, 10470, 11639, 10410, 13311, 10468, 16278, 12579, 18807, 8018, 10738, 9559, 8035, 17831, 12626, 9326, 7433, 13021, 8161, 15198, 7550, 10309, 2]
 
-// Module 20914 (native_required_assets_icons)
+// Module 20916 (native_required_assets_icons)
 import AssetRegistryDefault from "AssetRegistry" /* 6020 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 6026 */;
 import AssetRegistryDefault3 from "AssetRegistry" /* 7421 */;
@@ -50,32 +50,32 @@ import AssetRegistryDefault43 from "AssetRegistry" /* 11639 */;
 import AssetRegistryDefault44 from "AssetRegistry" /* 11929 */;
 import AssetRegistryDefault45 from "AssetRegistry" /* 11953 */;
 import AssetRegistryDefault46 from "AssetRegistry" /* 12319 */;
-import AssetRegistryDefault47 from "AssetRegistry" /* 12577 */;
-import AssetRegistryDefault48 from "AssetRegistry" /* 12624 */;
-import AssetRegistryDefault49 from "AssetRegistry" /* 12673 */;
-import AssetRegistryDefault50 from "AssetRegistry" /* 12949 */;
-import AssetRegistryDefault51 from "AssetRegistry" /* 13019 */;
-import AssetRegistryDefault52 from "AssetRegistry" /* 13049 */;
-import AssetRegistryDefault53 from "AssetRegistry" /* 13309 */;
-import AssetRegistryDefault54 from "AssetRegistry" /* 13738 */;
-import AssetRegistryDefault55 from "AssetRegistry" /* 14158 */;
-import AssetRegistryDefault56 from "AssetRegistry" /* 14289 */;
-import AssetRegistryDefault57 from "AssetRegistry" /* 14897 */;
-import AssetRegistryDefault58 from "AssetRegistry" /* 15196 */;
-import AssetRegistryDefault59 from "AssetRegistry" /* 16276 */;
-import AssetRegistryDefault60 from "AssetRegistry" /* 16278 */;
-import AssetRegistryDefault61 from "AssetRegistry" /* 17502 */;
-import AssetRegistryDefault62 from "AssetRegistry" /* 17688 */;
-import AssetRegistryDefault63 from "AssetRegistry" /* 17829 */;
-import AssetRegistryDefault64 from "AssetRegistry" /* 18805 */;
-import AssetRegistryDefault65 from "AssetRegistry" /* 19176 */;
-import AssetRegistryDefault66 from "AssetRegistry" /* 19178 */;
-import AssetRegistryDefault67 from "AssetRegistry" /* 20504 */;
-import AssetRegistryDefault68 from "AssetRegistry" /* 20915 */;
-import AssetRegistryDefault69 from "AssetRegistry" /* 20916 */;
-import AssetRegistryDefault70 from "AssetRegistry" /* 20917 */;
-import AssetRegistryDefault71 from "AssetRegistry" /* 20918 */;
-import AssetRegistryDefault72 from "AssetRegistry" /* 20919 */;
+import AssetRegistryDefault47 from "AssetRegistry" /* 12579 */;
+import AssetRegistryDefault48 from "AssetRegistry" /* 12626 */;
+import AssetRegistryDefault49 from "AssetRegistry" /* 12675 */;
+import AssetRegistryDefault50 from "AssetRegistry" /* 12951 */;
+import AssetRegistryDefault51 from "AssetRegistry" /* 13021 */;
+import AssetRegistryDefault52 from "AssetRegistry" /* 13051 */;
+import AssetRegistryDefault53 from "AssetRegistry" /* 13311 */;
+import AssetRegistryDefault54 from "AssetRegistry" /* 13740 */;
+import AssetRegistryDefault55 from "AssetRegistry" /* 14160 */;
+import AssetRegistryDefault56 from "AssetRegistry" /* 14291 */;
+import AssetRegistryDefault57 from "AssetRegistry" /* 14899 */;
+import AssetRegistryDefault58 from "AssetRegistry" /* 15198 */;
+import AssetRegistryDefault59 from "AssetRegistry" /* 16278 */;
+import AssetRegistryDefault60 from "AssetRegistry" /* 16280 */;
+import AssetRegistryDefault61 from "AssetRegistry" /* 17504 */;
+import AssetRegistryDefault62 from "AssetRegistry" /* 17690 */;
+import AssetRegistryDefault63 from "AssetRegistry" /* 17831 */;
+import AssetRegistryDefault64 from "AssetRegistry" /* 18807 */;
+import AssetRegistryDefault65 from "AssetRegistry" /* 19178 */;
+import AssetRegistryDefault66 from "AssetRegistry" /* 19180 */;
+import AssetRegistryDefault67 from "AssetRegistry" /* 20506 */;
+import AssetRegistryDefault68 from "AssetRegistry" /* 20917 */;
+import AssetRegistryDefault69 from "AssetRegistry" /* 20918 */;
+import AssetRegistryDefault70 from "AssetRegistry" /* 20919 */;
+import AssetRegistryDefault71 from "AssetRegistry" /* 20920 */;
+import AssetRegistryDefault72 from "AssetRegistry" /* 20921 */;
 import size from "module_2" /* 2 */;
 
 const obj = { AnnouncementsIcon: AssetRegistryDefault18, AppsIcon: AssetRegistryDefault17, ArrowAngleLeftUpIcon: AssetRegistryDefault49, ArrowAngleRightUpIcon: AssetRegistryDefault32, ArrowLargeLeftIcon: AssetRegistryDefault8, ArrowLargeRightIcon: AssetRegistryDefault56, AttachmentIcon: AssetRegistryDefault41, BellZIcon: AssetRegistryDefault44, BoostGemIcon: AssetRegistryDefault31, ChannelListMagnifyingGlassIcon: AssetRegistryDefault60, CheckmarkLargeIcon: AssetRegistryDefault13, ChatXIcon: AssetRegistryDefault57, CheckmarkSmallIcon: AssetRegistryDefault14, ChevronSmallDownIcon: AssetRegistryDefault38, ChevronSmallRightIcon: AssetRegistryDefault7, CircleErrorIcon: AssetRegistryDefault68, CircleInformationIcon: AssetRegistryDefault69, CircleQuestionIcon: AssetRegistryDefault62, ClipsIcon: AssetRegistryDefault61, ClockWarningIcon: AssetRegistryDefault55, ConnectionAverageIcon: AssetRegistryDefault70, ConnectionBadIcon: AssetRegistryDefault71, ConnectionFineIcon: AssetRegistryDefault66, ConnectionUnknownIcon: AssetRegistryDefault65, DownloadIcon: AssetRegistryDefault2, EyeIcon: AssetRegistryDefault12, EyeSlashIcon: AssetRegistryDefault11, GameControllerIcon: AssetRegistryDefault6, GifIcon: AssetRegistryDefault28, GroupIcon: AssetRegistryDefault5, HandRequestSpeakIcon: AssetRegistryDefault45, HomeIcon: AssetRegistryDefault67, ImageBrokenIcon: AssetRegistryDefault72, ImageIcon: AssetRegistryDefault19, ImageWarningIcon: AssetRegistryDefault20, LinkIcon: AssetRegistryDefault, LockIcon: AssetRegistryDefault21, LockUnlockedIcon: AssetRegistryDefault42, MaximizeIcon: AssetRegistryDefault54, MicrophoneArrowRightIcon: AssetRegistryDefault50, MicrophoneIcon: AssetRegistryDefault52, MicrophoneSlashIcon: AssetRegistryDefault39, MoreHorizontalIcon: AssetRegistryDefault3, MusicIcon: AssetRegistryDefault29, PaperIcon: AssetRegistryDefault25, PauseIcon: AssetRegistryDefault46, PencilIcon: AssetRegistryDefault26, PhoneCallIcon: AssetRegistryDefault23, PhoneHangUpIcon: AssetRegistryDefault24, PinIcon: AssetRegistryDefault37, PlayIcon: AssetRegistryDefault10, PlaystationNeutralIcon: AssetRegistryDefault36, PollsIcon: AssetRegistryDefault43, ReactionIcon: AssetRegistryDefault34, RefreshIcon: AssetRegistryDefault53, ScreenIcon: AssetRegistryDefault35, SignPostIcon: AssetRegistryDefault59, SlashBoxIcon: AssetRegistryDefault47, SpotifyNeutralIcon: AssetRegistryDefault64, StageIcon: AssetRegistryDefault15, StickerIcon: AssetRegistryDefault40, SuperReactionIcon: AssetRegistryDefault30, ThreadIcon: AssetRegistryDefault16, TicketIcon: AssetRegistryDefault63, TopicsIcon: AssetRegistryDefault48, UserCheckIcon: AssetRegistryDefault27, VoiceNormalIcon: AssetRegistryDefault4, VoiceXIcon: AssetRegistryDefault51, WarningIcon: AssetRegistryDefault22, WindowLaunchIcon: AssetRegistryDefault58, XSmallIcon: AssetRegistryDefault9, XboxNeutralIcon: AssetRegistryDefault33 };

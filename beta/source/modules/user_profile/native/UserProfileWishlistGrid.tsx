@@ -1,10 +1,10 @@
-// Module ID: 15856
-// Function ID: 15857
+// Module ID: 15858
+// Function ID: 15859
 // Name: UserProfileWishlistGrid
-// Dependencies: [5, 32, 19, 17, 8485, 11823, 9465, 9468, 9466, 1388, 7070, 7352, 8479, 1072, 1074, 1390, 21, 3, 5306, 575, 5367, 5313, 5919, 1113, 15689, 8545, 7918, 11669, 9723, 504, 15841, 9405, 15780, 15857, 15860, 5483, 6005, 5542, 12547, 2174, 8580, 6259, 11661, 7937, 1360, 10018, 7249, 11729, 8476, 2186, 8484, 11794, 10489, 5118, 9407, 15861, 2121, 6027, 5926, 13997, 7988, 10901, 11821, 7363, 2]
+// Dependencies: [5, 32, 19, 17, 8485, 11823, 9465, 9468, 9466, 1388, 7070, 7352, 8479, 1072, 1074, 1390, 21, 3, 5306, 575, 5367, 5313, 5919, 1113, 15691, 8545, 7918, 11669, 9723, 504, 15843, 9405, 15782, 15859, 15862, 5483, 6005, 5542, 12549, 2174, 8580, 6259, 11661, 7937, 1360, 10018, 7249, 11729, 8476, 2186, 8484, 11794, 10489, 5118, 9407, 15863, 2121, 6027, 5926, 13999, 7988, 10901, 11821, 7363, 2]
 // Exports: default
 
-// Module 15856 (UserProfileWishlistGrid)
+// Module 15858 (UserProfileWishlistGrid)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
@@ -125,7 +125,7 @@ export default function UserProfileWishlistGrid(wishlistId) {
   let stringResult;
   let tmp31;
   let tmp5;
-  const f112485 = () => {
+  const f112491 = () => {
     set = new Set();
     return set;
   };
@@ -284,10 +284,10 @@ export default function UserProfileWishlistGrid(wishlistId) {
     userId1 = stateFromStores.userId;
   }
   closure_14 = tmp2Result3({ ownerId: userId1, wishlistId, isVisible });
-  [c15, c16] = analyticsLocations(obj12.useState(f112485), 2);
+  [c15, c16] = analyticsLocations(obj12.useState(f112491), 2);
   let obj4 = { wishlistId, onAction: trackUserProfileWishlistAction, productLines: tmp31, isVisible };
   tmp31 = null;
-  analyticsLocations(obj12.useState(f112485), 2);
+  analyticsLocations(obj12.useState(f112491), 2);
   const tmp2Result4 = tmp2(tmp3[34]);
   if (null != stateFromStores) {
     tmp31 = memo1(stateFromStores);
@@ -646,7 +646,7 @@ export default function UserProfileWishlistGrid(wishlistId) {
     tmp(obj);
     const obj2 = ActionSheetActionCreatorsDefault;
     const obj3 = { wishlistId: tmp2, analyticsContext: context, analyticsLocations };
-    obj2.openLazy(asyncRequire(15861, dependencyMap.paths), "EditWishlistActionSheet", obj3, "stack");
+    obj2.openLazy(asyncRequire(15863, dependencyMap.paths), "EditWishlistActionSheet", obj3, "stack");
   }, items14);
   const callback1 = obj12.useCallback(() => {
     let items;

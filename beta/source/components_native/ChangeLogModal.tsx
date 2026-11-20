@@ -1,10 +1,10 @@
-// Module ID: 18176
-// Function ID: 18177
+// Module ID: 18178
+// Function ID: 18179
 // Name: ChangeLogModal
-// Dependencies: [19, 17, 1072, 5208, 21, 5306, 575, 5367, 1256, 8627, 18177, 6010, 9730, 1113, 7428, 8451, 11368, 1187, 9349, 1496, 9350, 1503, 7493, 2169, 9351, 5919, 6838, 7490, 2]
+// Dependencies: [19, 17, 1072, 5208, 21, 5306, 575, 5367, 1256, 8627, 18179, 6010, 9730, 1113, 7428, 8451, 11368, 1187, 9349, 1496, 9350, 1503, 7493, 2169, 9351, 5919, 6838, 7490, 2]
 // Exports: default
 
-// Module 18176 (ChangeLogModal)
+// Module 18178 (ChangeLogModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -19,7 +19,7 @@ import openMediaModal2 from "openMediaModal" /* 8627 */;
 import ChangeLogStandardTemplateDefault from "ChangeLogStandardTemplate" /* 9349 */;
 import common_VideoDefault from "common/Video" /* 9730 */;
 import AssetRegistryDefault from "AssetRegistry" /* 11368 */;
-import _modDef18177 from "module_18177" /* 18177 */;
+import _modDef18179 from "module_18179" /* 18179 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
@@ -251,21 +251,21 @@ class ChangeLog extends PureComponent2 {
     const self = this;
     const changeLog = this.props.changeLog;
     if (null != changeLog) {
-      const obj3 = { change_log_id: "" + changeLog.date + ":" + changeLog.revision };
+      const obj2 = { change_log_id: "" + changeLog.date + ":" + changeLog.revision };
       const _HermesInternal = HermesInternal;
       const merged = Object.assign(obj);
-      let tmp10 = obj3;
+      let tmp4 = obj2;
       if (arg0 === AnalyticEvents.CHANGE_LOG_CLOSED) {
         const _Math = Math;
         const _Date = Date;
         const _parseInt = parseInt;
         const obj4 = { seconds_open: Math.round((Date.now() - self.mountedAt) / 1000), max_scrolled_percentage: 100 * parseInt(maxScrolledPercentage.toPrecision(4), 10) };
         maxScrolledPercentage = self.maxScrolledPercentage;
-        const merged1 = Object.assign(obj3);
-        tmp10 = obj4;
+        const merged1 = Object.assign(obj2);
+        tmp4 = obj4;
       }
-      const obj2 = AnalyticsUtilsDefault;
-      obj2.track(arg0, tmp10);
+      const obj3 = AnalyticsUtilsDefault;
+      obj3.track(arg0, tmp4);
     }
   }
   renderVideo() {
@@ -306,7 +306,7 @@ class ChangeLog extends PureComponent2 {
               },
           useLocalHTML: true
         };
-        items = [closure_7(_modDef18177, obj4), ];
+        items = [closure_7(_modDef18179, obj4), ];
         let tmp6Result = null;
         const tmp4 = closure_8;
         const tmp5 = View;

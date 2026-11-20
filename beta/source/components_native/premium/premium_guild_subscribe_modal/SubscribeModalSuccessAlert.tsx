@@ -1,10 +1,10 @@
-// Module ID: 16049
-// Function ID: 16050
+// Module ID: 16051
+// Function ID: 16052
 // Name: SubscribeModalSuccessAlert
-// Dependencies: [32, 19, 17, 5177, 9435, 21, 5306, 575, 16050, 16051, 504, 5537, 6330, 1113, 6259, 6942, 5883, 1092, 6010, 5313, 16052, 16053, 5919, 2]
+// Dependencies: [32, 19, 17, 5177, 9435, 21, 5306, 575, 16052, 16053, 504, 5537, 6330, 1113, 6259, 6942, 5883, 1092, 6010, 5313, 16054, 16055, 5919, 2]
 // Exports: default
 
-// Module 16049 (SubscribeModalSuccessAlert)
+// Module 16051 (SubscribeModalSuccessAlert)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -16,8 +16,8 @@ import LinearGradientDefault from "LinearGradient" /* 5883 */;
 import FastImageDefault from "FastImage" /* 6010 */;
 import AlertDefault from "Alert" /* 6330 */;
 import ColorConstants from "ColorConstants" /* 9435 */;
-import SequencedLottieAnimationViewDefault from "SequencedLottieAnimationView" /* 16050 */;
-import _mod16051 from "module_16051" /* 16051 */;
+import SequencedLottieAnimationViewDefault from "SequencedLottieAnimationView" /* 16052 */;
+import _mod16053 from "module_16053" /* 16053 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 5177 */;
@@ -38,7 +38,7 @@ class PremiumPaymentGuildAnimation {
     let nextScene;
     let onSceneComplete;
     ({ nextScene, onSceneComplete, loop } = arg0);
-    const obj = { nextScene, onSceneComplete, loop, sceneSegments, style: closure_10().animation, source: _mod16051 };
+    const obj = { nextScene, onSceneComplete, loop, sceneSegments, style: closure_10().animation, source: _mod16053 };
     const tmp2 = SequencedLottieAnimationViewDefault;
     return metroImportAll(tmp2, obj);
   }
@@ -127,9 +127,9 @@ export default function SubscribeModalSuccessAlert(arg0) {
   tmp17 = FastImageDefault;
   const tmp2Result = shared;
   if (tmp2Result.isThemeLight(tmp11)) {
-    tmp10Result = tmp10(16052);
+    tmp10Result = tmp10(16054);
   } else {
-    tmp10Result = tmp10(16053);
+    tmp10Result = tmp10(16055);
   }
   const items2 = [closure_8(tmp16, obj4), ];
   const obj7 = { style: tmp.successInfo, children: items3 };

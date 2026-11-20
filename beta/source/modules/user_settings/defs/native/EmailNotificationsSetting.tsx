@@ -1,15 +1,15 @@
-// Module ID: 18119
-// Function ID: 18120
+// Module ID: 18121
+// Function ID: 18122
 // Name: EmailNotificationsSetting
-// Dependencies: [9202, 1072, 1113, 18120, 12406, 16902, 18113, 2]
+// Dependencies: [9202, 1072, 1113, 18122, 12408, 16904, 18115, 2]
 
-// Module 18119 (EmailNotificationsSetting)
+// Module 18121 (EmailNotificationsSetting)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import SettingsConstants from "SettingsConstants" /* 9202 */;
-import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 16902 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 18113 */;
-import SettingBuilders_mod from "SettingBuilders" /* 12406 */;
+import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 16904 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 18115 */;
+import SettingBuilders_mod from "SettingBuilders" /* 12408 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

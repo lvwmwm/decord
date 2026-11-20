@@ -1,10 +1,10 @@
-// Module ID: 19140
-// Function ID: 19141
+// Module ID: 19142
+// Function ID: 19143
 // Name: useYouBarCoachmark
-// Dependencies: [32, 19, 5339, 5152, 1113, 5139, 1655, 17241, 1503, 504, 16204, 6069, 9560, 19141, 9567, 2]
+// Dependencies: [32, 19, 5339, 5152, 1113, 5139, 1655, 17243, 1503, 504, 16206, 6069, 9560, 19143, 9567, 2]
 // Exports: useYouBarCoachmark
 
-// Module 19140 (useYouBarCoachmark)
+// Module 19142 (useYouBarCoachmark)
 import dismissible_content from "dismissible_content" /* 5139 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

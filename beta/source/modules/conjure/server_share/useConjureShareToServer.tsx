@@ -1,10 +1,10 @@
-// Module ID: 13189
-// Function ID: 13190
+// Module ID: 13191
+// Function ID: 13192
 // Name: useConjureShareToServer
-// Dependencies: [5, 32, 19, 5177, 5238, 7017, 7377, 1072, 7018, 7260, 504, 13190, 1113, 4131, 13191, 7329, 13162, 7384, 2]
+// Dependencies: [5, 32, 19, 5177, 5238, 7017, 7377, 1072, 7018, 7260, 504, 13192, 1113, 4131, 13193, 7329, 13164, 7384, 2]
 // Exports: canAddConjureProjectToAnotherServer, default
 
-// Module 13189 (useConjureShareToServer)
+// Module 13191 (useConjureShareToServer)
 import Constants from "Constants" /* 1072 */;
 import ConjureProjectStore2 from "ConjureProjectStore" /* 7017 */;
 import ConjureProjectTypes from "ConjureProjectTypes" /* 7018 */;
@@ -24,7 +24,7 @@ const ConjureProjectStore = ConjureProjectStore2;
 let _require, c4, c5;
 
 function refreshUntilBotJoins(arg0, arg1) {
-  const f106692 = () => {
+  const f106698 = () => {
     const integrationStatus = ConjureProjectStore.getIntegrationStatus(closure_0);
     let prop;
     if (integrationStatus != null) {
@@ -37,13 +37,13 @@ function refreshUntilBotJoins(arg0, arg1) {
         closure_0 = tmp;
         let closure_1 = tmp7 - 1;
         const _setTimeout = setTimeout;
-        const timerId = setTimeout(f106692, 1500);
+        const timerId = setTimeout(f106698, 1500);
       }
     }
   };
   let closure_0 = arg0;
   let c1 = 6;
-  let timerId = setTimeout(f106692, 1500);
+  let timerId = setTimeout(f106698, 1500);
 }
 let obj = function _waitForPublishStatus() {
   obj = _asyncToGenerator(async function(arg0, value) {

@@ -1,9 +1,9 @@
-// Module ID: 15122
-// Function ID: 15123
+// Module ID: 15124
+// Function ID: 15125
 // Name: VoicePanelDockScrim
-// Dependencies: [19, 17, 12009, 21, 575, 12008, 5892, 5476, 14668, 2]
+// Dependencies: [19, 17, 12009, 21, 575, 12008, 5892, 5476, 14670, 2]
 
-// Module 15122 (VoicePanelDockScrim)
+// Module 15124 (VoicePanelDockScrim)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 5476 */;
@@ -17,7 +17,7 @@ import size from "module_2" /* 2 */;
 let StyleSheet;
 let c3;
 let tmp3;
-const ChatInputScrimGradient2 = tmp3(14668);
+const ChatInputScrimGradient2 = tmp3(14670);
 ({ StyleSheet, View: c3 } = react_native);
 let closure_4 = VoicePanelDockConstants.getVoicePanelDockButtonsTop;
 const jsx = Fragment.jsx;

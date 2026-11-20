@@ -1,10 +1,10 @@
-// Module ID: 12426
-// Function ID: 12427
+// Module ID: 12428
+// Function ID: 12429
 // Name: transformContentInventoryEntryMessageComponent
-// Dependencies: [17, 2165, 2189, 1388, 2145, 8421, 6341, 1417, 8376, 8538, 12427, 5303, 8419, 1089, 1113, 9340, 7439, 8038, 7313, 12429, 12430, 8420, 2]
+// Dependencies: [17, 2165, 2189, 1388, 2145, 8421, 6341, 1417, 8376, 8538, 12429, 5303, 8419, 1089, 1113, 9340, 7439, 8038, 7313, 12431, 12432, 8420, 2]
 // Exports: transformToRowGeneratedContentInventoryEntryComponent
 
-// Module 12426 (transformContentInventoryEntryMessageComponent)
+// Module 12428 (transformContentInventoryEntryMessageComponent)
 import react_native from "react-native" /* 17 */;
 import intl5 from "intl" /* 1113 */;
 import utils_AvatarUtils from "utils/AvatarUtils" /* 1417 */;
@@ -18,8 +18,8 @@ import utils from "utils" /* 8419 */;
 import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8421 */;
 import useAvatarColor from "useAvatarColor" /* 8538 */;
 import AssetRegistryDefault3 from "AssetRegistry" /* 9340 */;
-import useHeroColors from "useHeroColors" /* 12427 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 12430 */;
+import useHeroColors from "useHeroColors" /* 12429 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 12432 */;
 import ApplicationStore from "ApplicationStore" /* 2165 */;
 import LocaleStore from "LocaleStore" /* 2189 */;
 import UserStore from "UserStore" /* 1388 */;
@@ -116,8 +116,8 @@ export function transformToRowGeneratedContentInventoryEntryComponent(component)
             const obj3 = { text: sum };
             items2.push(obj3);
           }
-          tmp50 = { imageUrl: tmp46, title: contentInventoryEntry.extra.media_title, subtitles: items2, gradientColors: tmp48, platformIconUrl: obj27.resolveAssetSource(tmp47(12429)).uri };
-          const obj4 = { imageUrl: tmp46, title: contentInventoryEntry.extra.media_title, subtitles: items2, gradientColors: tmp48, platformIconUrl: obj27.resolveAssetSource(tmp47(12429)).uri };
+          tmp50 = { imageUrl: tmp46, title: contentInventoryEntry.extra.media_title, subtitles: items2, gradientColors: tmp48, platformIconUrl: obj27.resolveAssetSource(tmp47(12431)).uri };
+          const obj4 = { imageUrl: tmp46, title: contentInventoryEntry.extra.media_title, subtitles: items2, gradientColors: tmp48, platformIconUrl: obj27.resolveAssetSource(tmp47(12431)).uri };
         }
         tmp21 = tmp50;
       } else if (ContentInventoryEntryType.ContentInventoryEntryType.TOP_ARTIST === content_type) {

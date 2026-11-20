@@ -1,10 +1,10 @@
-// Module ID: 17109
-// Function ID: 17110
+// Module ID: 17111
+// Function ID: 17112
 // Name: useHexagonCampaignDaysLeft
 // Dependencies: [19, 1388, 5331, 1089, 504, 5334, 9440, 2]
 // Exports: useHexagonCampaignDaysLeft
 
-// Module 17109 (useHexagonCampaignDaysLeft)
+// Module 17111 (useHexagonCampaignDaysLeft)
 import DurationsDefault from "Durations" /* 1089 */;
 import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5331 */;
 import HexagonCampaignUtils from "HexagonCampaignUtils" /* 5334 */;

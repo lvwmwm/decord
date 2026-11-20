@@ -1,13 +1,13 @@
-// Module ID: 12578
-// Function ID: 12579
+// Module ID: 12580
+// Function ID: 12581
 // Name: AppLauncherContext
-// Dependencies: [19, 1655, 12579, 12580, 2]
+// Dependencies: [19, 1655, 12581, 12582, 2]
 // Exports: useAppLauncherChatInputRefDummy, useAppLauncherContext, useRequiredAppLauncherContext
 
-// Module 12578 (AppLauncherContext)
+// Module 12580 (AppLauncherContext)
 import _mod1655 from "module_1655" /* 1655 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 12579 */;
-import useDefaultAppLauncherWidth from "useDefaultAppLauncherWidth" /* 12580 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 12581 */;
+import useDefaultAppLauncherWidth from "useDefaultAppLauncherWidth" /* 12582 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,17 +1,17 @@
-// Module ID: 20584
-// Function ID: 20585
+// Module ID: 20586
+// Function ID: 20587
 // Name: InRolePromptNotice
-// Dependencies: [19, 17, 1072, 21, 5306, 575, 1406, 20585, 1187, 12834, 5919, 1113, 2]
+// Dependencies: [19, 17, 1072, 21, 5306, 575, 1406, 20587, 1187, 12836, 5919, 1113, 2]
 // Exports: default
 
-// Module 20584 (InRolePromptNotice)
+// Module 20586 (InRolePromptNotice)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl3 from "intl" /* 1113 */;
 import FlagUtils from "FlagUtils" /* 1406 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12834 */;
-import GuildSettingsUtils from "GuildSettingsUtils" /* 20585 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12836 */;
+import GuildSettingsUtils from "GuildSettingsUtils" /* 20587 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;

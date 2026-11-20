@@ -1,36 +1,24 @@
 // Module ID: 13898
 // Function ID: 13899
 // Name: tokenize
-// Dependencies: [13831]
+// Dependencies: [13833]
 
 // Module 13898 (tokenize)
-import tokenize from "tokenize" /* 13831 */;
+import tokenize from "tokenize" /* 13833 */;
 
-let items;
 let obj2;
-const LeftParenthesis = tokenize.TYPE.LeftParenthesis;
-const RightParenthesis = tokenize.TYPE.RightParenthesis;
-const obj = {
-  name: "Parentheses",
+const Number = tokenize.TYPE.Number;
+let obj = {
+  name: "Number",
   structure: obj2,
-  parse(call, arg1) {
-    const self = this;
-    const tokenStart = this.scanner.tokenStart;
-    this.eat(LeftParenthesis);
-    const callResult = call.call(self, arg1);
-    if (!self.scanner.eof) {
-      self.eat(RightParenthesis);
-    }
-    const element = { type: "Parentheses", loc: self.getLocation(tokenStart, self.scanner.tokenStart), children: callResult };
-    return element;
+  parse() {
+    const obj = { type: "Number", loc: this.getLocation(this.scanner.tokenStart, this.scanner.tokenEnd), value: this.consume(Number) };
+    return obj;
   },
-  generate(arg0) {
-    this.chunk("(");
-    this.children(arg0);
-    this.chunk(")");
+  generate(value) {
+    this.chunk(value.value);
   }
 };
-obj2 = { children: items };
-items = [[]];
+obj2 = { value: String };
 
 export default obj;

@@ -1,10 +1,10 @@
-// Module ID: 15288
-// Function ID: 15289
+// Module ID: 15290
+// Function ID: 15291
 // Name: useCanUseTenureBadge
 // Dependencies: [1388, 504, 10081, 2]
 // Exports: useCanUseTenureBadge
 
-// Module 15288 (useCanUseTenureBadge)
+// Module 15290 (useCanUseTenureBadge)
 import get_initialized from "get initialized" /* 504 */;
 import PremiumPerkGates from "PremiumPerkGates" /* 10081 */;
 import UserStore from "UserStore" /* 1388 */;

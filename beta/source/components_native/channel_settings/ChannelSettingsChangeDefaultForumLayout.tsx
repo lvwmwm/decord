@@ -1,10 +1,10 @@
-// Module ID: 19725
-// Function ID: 19726
+// Module ID: 19727
+// Function ID: 19728
 // Name: ChannelSettingsChangeDefaultForumLayout
-// Dependencies: [32, 19, 17, 5155, 21, 5306, 575, 10919, 7745, 1113, 5165, 7747, 19681, 16065, 5919, 7746, 6010, 19726, 19727, 504, 2]
+// Dependencies: [32, 19, 17, 5155, 21, 5306, 575, 10919, 7745, 1113, 5165, 7747, 19683, 16067, 5919, 7746, 6010, 19728, 19729, 504, 2]
 // Exports: default
 
-// Module 19725 (ChannelSettingsChangeDefaultForumLayout)
+// Module 19727 (ChannelSettingsChangeDefaultForumLayout)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import FastImageDefault from "FastImage" /* 6010 */;
@@ -60,11 +60,11 @@ class ChannelSettingsChangeDefaultForumLayout {
     if (tmp3 == null) {
       LIST = tmp7(5165).ForumLayout.LIST;
     }
-    let obj3 = { icon: closure_7(channel(19681).GridSquareIcon, {}), label: intl2.string(channel(1113).t["U+rQfW"]), value: channel(5165).ForumLayout.GRID };
+    let obj3 = { icon: closure_7(channel(19683).GridSquareIcon, {}), label: intl2.string(channel(1113).t["U+rQfW"]), value: channel(5165).ForumLayout.GRID };
     const TableRadioRow = tmp7(7747).TableRadioRow;
     intl2 = tmp7(1113).intl;
     items1 = [closure_7(TableRadioRow, obj3), ];
-    let obj4 = { icon: closure_7(channel(16065).ListViewIcon, {}), label: intl3.string(channel(1113).t.tuHPRX), value: channel(5165).ForumLayout.LIST };
+    let obj4 = { icon: closure_7(channel(16067).ListViewIcon, {}), label: intl3.string(channel(1113).t.tuHPRX), value: channel(5165).ForumLayout.LIST };
     const TableRadioRow2 = tmp7(7747).TableRadioRow;
     intl3 = tmp7(1113).intl;
     items1[1] = closure_7(TableRadioRow2, obj4);
@@ -81,9 +81,9 @@ class ChannelSettingsChangeDefaultForumLayout {
     const tmp11 = FastImageDefault;
     const tmp9 = closure_7;
     if (tmp3 === channel(5165).ForumLayout.GRID) {
-      tmp10Result = tmp10(19726);
+      tmp10Result = tmp10(19728);
     } else {
-      tmp10Result = tmp10(19727);
+      tmp10Result = tmp10(19729);
     }
     items2[3] = tmp9(tmp11, obj7);
     return closure_8(tmp6, obj);

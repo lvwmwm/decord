@@ -1,10 +1,10 @@
-// Module ID: 12951
-// Function ID: 12952
+// Module ID: 12953
+// Function ID: 12954
 // Name: StageAudienceActionSheet
-// Dependencies: [32, 19, 17, 5155, 5218, 21, 5306, 575, 12952, 7954, 1113, 7918, 504, 6348, 6899, 7443, 1187, 8476, 6327, 9157, 7633, 9981, 7988, 12948, 7549, 5919, 4261, 6928, 6939, 12953, 12955, 7951, 7913, 7888, 7746, 7937, 2]
+// Dependencies: [32, 19, 17, 5155, 5218, 21, 5306, 575, 12954, 7954, 1113, 7918, 504, 6348, 6899, 7443, 1187, 8476, 6327, 9157, 7633, 9981, 7988, 12950, 7549, 5919, 4261, 6928, 6939, 12955, 12957, 7951, 7913, 7888, 7746, 7937, 2]
 // Exports: default
 
-// Module 12951 (StageAudienceActionSheet)
+// Module 12953 (StageAudienceActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
@@ -16,8 +16,8 @@ import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7918 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
 import TableSwitchRow2 from "TableSwitchRow" /* 7954 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8476 */;
-import useRequestToSpeakPermission from "useRequestToSpeakPermission" /* 12952 */;
-import useStageSummaryDefault from "useStageSummary" /* 12955 */;
+import useRequestToSpeakPermission from "useRequestToSpeakPermission" /* 12954 */;
+import useStageSummaryDefault from "useStageSummary" /* 12957 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
@@ -96,13 +96,13 @@ function StageAudienceActionSheetContent(channel) {
   const canToggleRequestToSpeak = obj2.useCanToggleRequestToSpeak(channel);
   let obj3 = channel(6939);
   const sortedRequestToSpeakParticipants = obj3.useSortedRequestToSpeakParticipants(channel.id);
-  let obj4 = channel(12953);
+  let obj4 = channel(12955);
   const throttledStageAudience = obj4.useThrottledStageAudience(channel.id);
   let items = [canToggleRequestToSpeak, sortedRequestToSpeakParticipants, throttledStageAudience];
   const memo = react.useMemo(() => {
     let intl;
     let intl2;
-    let obj3;
+    let obj2;
     let obj4;
     const items = [];
     const tmp = items;
@@ -110,21 +110,21 @@ function StageAudienceActionSheetContent(channel) {
       items.push({ type: "toggle" });
     }
     if (sortedRequestToSpeakParticipants.length > 0) {
-      const push2 = items.push;
-      const obj2 = { type: "header", label: intl2.formatToPlainString(canToggleRequestToSpeak(throttledStageAudience[10]).t["5z7q5a"], obj3) };
-      intl2 = canToggleRequestToSpeak(throttledStageAudience[10]).intl;
-      obj3 = { numHands: sortedRequestToSpeakParticipants.length };
-      push2(obj2);
+      let obj = { type: "header", label: intl.formatToPlainString(canToggleRequestToSpeak(throttledStageAudience[10]).t["5z7q5a"], obj2) };
+      const push = items.push;
+      intl = canToggleRequestToSpeak(throttledStageAudience[10]).intl;
+      obj2 = { numHands: sortedRequestToSpeakParticipants.length };
+      push(obj);
       const item = arr2.forEach((participant, index) => {
         const obj = { type: "request", participant, start: 0 === index, end: index === sortedRequestToSpeakParticipants.length - 1 };
         return items.push(obj);
       });
     }
-    let obj = { type: "header", label: intl.formatToPlainString(canToggleRequestToSpeak(throttledStageAudience[10]).t.vUrsZ9, obj4) };
-    const push = items.push;
-    intl = canToggleRequestToSpeak(throttledStageAudience[10]).intl;
+    const push2 = items.push;
+    const obj3 = { type: "header", label: intl2.formatToPlainString(canToggleRequestToSpeak(throttledStageAudience[10]).t.vUrsZ9, obj4) };
+    intl2 = canToggleRequestToSpeak(throttledStageAudience[10]).intl;
     obj4 = { audienceSize: throttledStageAudience.length };
-    push(obj);
+    push2(obj3);
     const arr3 = throttledStageAudience;
     if (0 === throttledStageAudience.length) {
       items.push({ type: "empty" });

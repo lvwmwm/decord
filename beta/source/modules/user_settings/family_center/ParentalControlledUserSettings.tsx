@@ -1,17 +1,17 @@
-// Module ID: 17347
-// Function ID: 17348
+// Module ID: 17349
+// Function ID: 17350
 // Name: ParentalControlledUserSettings
-// Dependencies: [5133, 1072, 17348, 5131, 558, 1227, 1196, 17349, 2]
+// Dependencies: [5133, 1072, 17350, 5131, 558, 1227, 1196, 17351, 2]
 
-// Module 17347 (ParentalControlledUserSettings)
+// Module 17349 (ParentalControlledUserSettings)
 import shallowEqualDefault from "shallowEqual" /* 558 */;
 import Constants from "Constants" /* 1072 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
 import wrappers from "wrappers" /* 1227 */;
 import UserSettings from "UserSettings" /* 5131 */;
 import DMSafetyConstants from "DMSafetyConstants" /* 5133 */;
-import SpendingLimitUtils from "SpendingLimitUtils" /* 17349 */;
-import ParentalControlledUserSettingsDefinitions_mod from "ParentalControlledUserSettingsDefinitions" /* 17348 */;
+import SpendingLimitUtils from "SpendingLimitUtils" /* 17351 */;
+import ParentalControlledUserSettingsDefinitions_mod from "ParentalControlledUserSettingsDefinitions" /* 17350 */;
 import size from "module_2" /* 2 */;
 
 let oneTimePurchaseLimit;

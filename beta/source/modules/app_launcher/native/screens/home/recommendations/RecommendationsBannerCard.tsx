@@ -1,17 +1,17 @@
-// Module ID: 13422
-// Function ID: 13423
+// Module ID: 13424
+// Function ID: 13425
 // Name: RecommendationsBannerCard
-// Dependencies: [19, 17, 1072, 21, 5306, 575, 12698, 8483, 1414, 13414, 7428, 13423, 2119, 13417, 5919, 1113, 13388, 7456, 2]
+// Dependencies: [19, 17, 1072, 21, 5306, 575, 12700, 8483, 1414, 13416, 7428, 13425, 2119, 13419, 5919, 1113, 13390, 7456, 2]
 // Exports: default
 
-// Module 13422 (RecommendationsBannerCard)
+// Module 13424 (RecommendationsBannerCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
 import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8483 */;
-import ActivityShelfBadgeDefault from "ActivityShelfBadge" /* 13417 */;
-import RecommendationsBannerDefault from "RecommendationsBanner" /* 13423 */;
+import ActivityShelfBadgeDefault from "ActivityShelfBadge" /* 13419 */;
+import RecommendationsBannerDefault from "RecommendationsBanner" /* 13425 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
@@ -65,10 +65,10 @@ export default function RecommendationsBannerCard(application) {
   const overrideImageUrl = application.overrideImageUrl;
   let tmp = closure_8();
   if (!showsPromoted) {
-    const obj = application(12698);
+    const obj = application(12700);
     showsPromoted = obj.isPromotedApplication(application);
   }
-  const obj2 = application(12698);
+  const obj2 = application(12700);
   const shelfBadgeTypeIfActive = obj2.getShelfBadgeTypeIfActive(application);
   let bot = application.bot;
   let id;
@@ -94,7 +94,7 @@ export default function RecommendationsBannerCard(application) {
   const applicationIconSource = obj3.getApplicationIconSource(obj4);
   if (isLandscape) {
     const obj5 = { application, iconSource: applicationIconSource, onPress, isFirstRow: isFirst, isLastRow: isLast };
-    tmp12Result2 = closure_6(tmp4(13414).BaseAppRow, obj5);
+    tmp12Result2 = closure_6(tmp4(13416).BaseAppRow, obj5);
   } else {
     let tmp12Result;
     const items1 = [tmp.container, , ];
@@ -115,7 +115,7 @@ export default function RecommendationsBannerCard(application) {
     const obj10 = { applicationBot: application.bot, isActivity: tmp4Result.isActivityApp(application), applicationId: null, applicationIcon: icon, overrideImageUrl };
     const tmp10Result = RecommendationsBannerDefault;
     ({ id: obj8.applicationId, icon } = application);
-    tmp4Result = application(12698);
+    tmp4Result = application(12700);
     items2 = [closure_6(tmp10Result, obj10), ];
     if (showsPromoted) {
       const obj11 = { style: tmp.notifsContainer, children: items3 };
@@ -139,7 +139,7 @@ export default function RecommendationsBannerCard(application) {
     const obj15 = { style: tmp.appDetailsContainer, children: items5 };
     if (tmp14Result) {
       const obj16 = { iconSource: applicationIconSource, iconSize: 36, wrapperStyle: tmp.appIconContainer };
-      tmp14Result = tmp14(tmp10(13388), obj16);
+      tmp14Result = tmp14(tmp10(13390), obj16);
     }
     items5 = [tmp14Result, , ];
     const obj17 = { style: tmp.appDetails, children: items6 };

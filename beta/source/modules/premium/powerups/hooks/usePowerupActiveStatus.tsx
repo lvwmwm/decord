@@ -19,8 +19,8 @@ let closure_4;
 let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
-const f100950 = () => GuildStore.getGuild(closure_0);
-const f100951 = () => GuildPowerupsStore.getStateForGuild(closure_0);
+const f100954 = () => GuildStore.getGuild(closure_0);
+const f100955 = () => GuildPowerupsStore.getStateForGuild(closure_0);
 ({ GUILD_POWERUP_TIER_3_OVERRIDDEN_SKUS: closure_4, PowerupActiveStatusType: hasOwnProperty, POWERUPS_INCLUDED_IN_LEVEL: metroRequire, BOOSTING_TIER_TO_LEVEL_SKU_ID: metroImportDefault } = GuildPowerupsConstants);
 const GuildFeatures = Constants.GuildFeatures;
 let closure_9 = GameServerConstants.GAME_SERVER_POWERUP_SKU_ID;
@@ -41,10 +41,10 @@ export default function usePowerupActiveStatus(arg0, arg1) {
   _require = arg0;
   let obj = require("get initialized");
   const items1 = [unlockedPowerups];
-  stateFromStores = obj.useStateFromStores(items1, f100950);
+  stateFromStores = obj.useStateFromStores(items1, f100954);
   let obj2 = require("get initialized");
   const items2 = [flag];
-  unlockedPowerups = obj2.useStateFromStores(items2, f100951);
+  unlockedPowerups = obj2.useStateFromStores(items2, f100955);
   flag = undefined;
   if (stateFromStores != null) {
     let features = stateFromStores.features;
@@ -73,8 +73,8 @@ export default function usePowerupActiveStatus(arg0, arg1) {
         if (hasItem) {
           INACTIVE = hasOwnProperty.POWERUP_ACTIVATED;
         }
-        obj3 = { type: INACTIVE, powerup: skuId, sourceEntitlement: "r", sourcePowerup: "isArray" };
-        const obj2 = { type: INACTIVE, powerup: skuId, sourceEntitlement: "r", sourcePowerup: "isArray" };
+        obj3 = { type: INACTIVE, powerup: skuId, sourceEntitlement: "r", sourcePowerup: "HermesInternal" };
+        const obj2 = { type: INACTIVE, powerup: skuId, sourceEntitlement: "r", sourcePowerup: "HermesInternal" };
       }
       INACTIVE = hasOwnProperty.INACTIVE;
     } else {
@@ -83,7 +83,7 @@ export default function usePowerupActiveStatus(arg0, arg1) {
           let obj;
           if (null != unlockedPowerups) {
             if (null == metroRequire[skuId.skuId]) {
-              obj = { isActiveFromLevel: false, levelEntitlement: "ip", levelPowerup: "Array" };
+              obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "alignItems" };
             } else {
               let tmp4;
               const tmp = tmp18.premiumTier >= metroRequire[skuId.skuId];
@@ -122,7 +122,7 @@ export default function usePowerupActiveStatus(arg0, arg1) {
           if (tmp10 == null) {
             tmp10 = null;
           }
-          obj3 = { type: hasOwnProperty.INACTIVE, powerup: skuId, sourceEntitlement: "r", sourcePowerup: "isArray" };
+          obj3 = { type: hasOwnProperty.INACTIVE, powerup: skuId, sourceEntitlement: "r", sourcePowerup: "HermesInternal" };
           if (isActiveFromLevel) {
             obj3 = { type: hasOwnProperty.LEVEL_ACTIVATED, powerup: skuId, sourceEntitlement: levelEntitlement, sourcePowerup: levelPowerup };
             const obj4 = { type: hasOwnProperty.LEVEL_ACTIVATED, powerup: skuId, sourceEntitlement: levelEntitlement, sourcePowerup: levelPowerup };
@@ -135,12 +135,12 @@ export default function usePowerupActiveStatus(arg0, arg1) {
           }
         }
       }
-      obj = { isActiveFromLevel: false, levelEntitlement: "ip", levelPowerup: "Array" };
+      obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "alignItems" };
     }
     return obj3;
   });
   if (mapped.length <= 0) {
-    let obj3 = { type: constants.INACTIVE, sourceEntitlement: "Array", sourcePowerup: "context" };
+    let obj3 = { type: constants.INACTIVE, sourceEntitlement: "Array", sourcePowerup: "alignItems" };
     let tmp4 = constants;
     first = obj3;
   } else {
@@ -157,10 +157,10 @@ export function usePowerupsActiveStatuses(guildId, powerups) {
   _require = guildId;
   const items = [closure_2];
   const obj = require("get initialized");
-  stateFromStores = obj.useStateFromStores(items, f100950);
+  stateFromStores = obj.useStateFromStores(items, f100954);
   const items1 = [flag];
   const obj2 = require("get initialized");
-  closure_2 = obj2.useStateFromStores(items1, f100951);
+  closure_2 = obj2.useStateFromStores(items1, f100955);
   flag = undefined;
   if (stateFromStores != null) {
     const features = stateFromStores.features;
@@ -189,8 +189,8 @@ export function usePowerupsActiveStatuses(guildId, powerups) {
         if (hasItem) {
           INACTIVE = hasOwnProperty.POWERUP_ACTIVATED;
         }
-        obj3 = { type: INACTIVE, powerup: skuId, sourceEntitlement: "r", sourcePowerup: "isArray" };
-        const obj2 = { type: INACTIVE, powerup: skuId, sourceEntitlement: "r", sourcePowerup: "isArray" };
+        obj3 = { type: INACTIVE, powerup: skuId, sourceEntitlement: "r", sourcePowerup: "HermesInternal" };
+        const obj2 = { type: INACTIVE, powerup: skuId, sourceEntitlement: "r", sourcePowerup: "HermesInternal" };
       }
       INACTIVE = hasOwnProperty.INACTIVE;
     } else {
@@ -199,7 +199,7 @@ export function usePowerupsActiveStatuses(guildId, powerups) {
           let obj;
           if (null != unlockedPowerups) {
             if (null == metroRequire[skuId.skuId]) {
-              obj = { isActiveFromLevel: false, levelEntitlement: "ip", levelPowerup: "Array" };
+              obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "alignItems" };
             } else {
               let tmp4;
               const tmp = tmp18.premiumTier >= metroRequire[skuId.skuId];
@@ -238,7 +238,7 @@ export function usePowerupsActiveStatuses(guildId, powerups) {
           if (tmp10 == null) {
             tmp10 = null;
           }
-          obj3 = { type: hasOwnProperty.INACTIVE, powerup: skuId, sourceEntitlement: "r", sourcePowerup: "isArray" };
+          obj3 = { type: hasOwnProperty.INACTIVE, powerup: skuId, sourceEntitlement: "r", sourcePowerup: "HermesInternal" };
           if (isActiveFromLevel) {
             obj3 = { type: hasOwnProperty.LEVEL_ACTIVATED, powerup: skuId, sourceEntitlement: levelEntitlement, sourcePowerup: levelPowerup };
             const obj4 = { type: hasOwnProperty.LEVEL_ACTIVATED, powerup: skuId, sourceEntitlement: levelEntitlement, sourcePowerup: levelPowerup };
@@ -251,7 +251,7 @@ export function usePowerupsActiveStatuses(guildId, powerups) {
           }
         }
       }
-      obj = { isActiveFromLevel: false, levelEntitlement: "ip", levelPowerup: "Array" };
+      obj = { isActiveFromLevel: false, levelEntitlement: "Boolean", levelPowerup: "alignItems" };
     }
     return obj3;
   });

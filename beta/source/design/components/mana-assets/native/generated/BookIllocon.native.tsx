@@ -1,27 +1,27 @@
-// Module ID: 15045
-// Function ID: 15046
+// Module ID: 15047
+// Function ID: 15048
 // Name: BookIllocon
-// Dependencies: [19, 21, 15046, 15047, 15048, 7755, 6010, 2]
+// Dependencies: [19, 21, 15048, 15049, 15050, 7755, 6010, 2]
 // Exports: BookIllocon
 
-// Module 15045 (BookIllocon)
+// Module 15047 (BookIllocon)
 import Fragment from "Fragment" /* 21 */;
 import FastImageDefault from "FastImage" /* 6010 */;
 import react_native from "react-native" /* 7755 */;
-import _modDef15046 from "module_15046" /* 15046 */;
-import _modDef15047 from "module_15047" /* 15047 */;
 import _modDef15048 from "module_15048" /* 15048 */;
+import _modDef15049 from "module_15049" /* 15049 */;
+import _modDef15050 from "module_15050" /* 15050 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef15046 };
+let obj2 = { uri: _modDef15048 };
 obj[1] = obj2;
-obj[2] = { uri: _modDef15047 };
-({ uri: _modDef15047 });
-obj[3] = { uri: _modDef15048 };
-({ uri: _modDef15048 });
+obj[2] = { uri: _modDef15049 };
+({ uri: _modDef15049 });
+obj[3] = { uri: _modDef15050 };
+({ uri: _modDef15050 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/BookIllocon.native.tsx");
 

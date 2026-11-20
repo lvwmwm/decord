@@ -1,10 +1,10 @@
-// Module ID: 19390
-// Function ID: 19391
+// Module ID: 19392
+// Function ID: 19393
 // Name: SubscribeButton
-// Dependencies: [5, 32, 19, 17, 5209, 5231, 1072, 5162, 21, 17846, 504, 9723, 5919, 6259, 1113, 7684, 2169, 1187, 19384, 5542, 19391, 2121, 19380, 7683, 5926, 11264, 2]
+// Dependencies: [5, 32, 19, 17, 5209, 5231, 1072, 5162, 21, 17848, 504, 9723, 5919, 6259, 1113, 7684, 2169, 1187, 19386, 5542, 19393, 2121, 19382, 7683, 5926, 11264, 2]
 // Exports: default
 
-// Module 19390 (SubscribeButton)
+// Module 19392 (SubscribeButton)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
@@ -37,7 +37,7 @@ function SwitchTiersButton(activeSubscription) {
   activeSubscription = activeSubscription.activeSubscription;
   const activeListingId = activeSubscription.activeListingId;
   const changeToListingId = activeSubscription.changeToListingId;
-  let obj = changeToListingId(17846);
+  let obj = changeToListingId(17848);
   const first = _slicedToArray(obj.useName(activeListingId), 1)[0];
   const obj3 = { children: items };
   const obj2 = activeListingId(2169)(activeSubscription.currentPeriodEnd);
@@ -53,11 +53,11 @@ function SwitchTiersButton(activeSubscription) {
       const openLazy = ActionSheetActionCreatorsDefault.openLazy;
       ActionSheetActionCreatorsDefault;
       const obj = { activeSubscription, activeListingId, changeToListingId };
-      const tmp2 = asyncRequire(19391, dependencyMap.paths);
+      const tmp2 = asyncRequire(19393, dependencyMap.paths);
       openLazy(tmp2, "ChangeSubscriptionCard:" + changeToListingId, obj);
     }
   };
-  const ArrowButton = activeSubscription(19384).ArrowButton;
+  const ArrowButton = activeSubscription(19386).ArrowButton;
   intl2 = activeSubscription(1113).intl;
   items[2] = closure_12(ArrowButton, obj6);
   return closure_13(View, obj3);

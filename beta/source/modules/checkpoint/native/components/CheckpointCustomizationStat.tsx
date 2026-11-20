@@ -1,10 +1,10 @@
-// Module ID: 14533
-// Function ID: 14534
+// Module ID: 14535
+// Function ID: 14536
 // Name: CheckpointCustomizationStat
-// Dependencies: [19, 17, 14253, 6367, 21, 5306, 575, 6734, 13048, 1113, 3317, 8069, 3285, 10939, 14281, 7438, 8457, 504, 14506, 6737, 14515, 14479, 14271, 2]
+// Dependencies: [19, 17, 14255, 6367, 21, 5306, 575, 6734, 13050, 1113, 3317, 8069, 3285, 10939, 14283, 7438, 8457, 504, 14508, 6737, 14517, 14481, 14273, 2]
 // Exports: default
 
-// Module 14533 (CheckpointCustomizationStat)
+// Module 14535 (CheckpointCustomizationStat)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -17,14 +17,14 @@ import GameControllerIcon from "GameControllerIcon" /* 7438 */;
 import ChatIcon from "ChatIcon" /* 8069 */;
 import CalendarIcon from "CalendarIcon" /* 8457 */;
 import ServerIcon from "ServerIcon" /* 10939 */;
-import MicrophoneIcon from "MicrophoneIcon" /* 13048 */;
-import CheckpointTextDefault from "CheckpointText" /* 14271 */;
-import EmojiSlightlySmilingFaceIcon from "EmojiSlightlySmilingFaceIcon" /* 14281 */;
-import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 14479 */;
-import CheckpointNumberUtils from "CheckpointNumberUtils" /* 14506 */;
-import CheckpointTagDefault from "CheckpointTag" /* 14515 */;
+import MicrophoneIcon from "MicrophoneIcon" /* 13050 */;
+import CheckpointTextDefault from "CheckpointText" /* 14273 */;
+import EmojiSlightlySmilingFaceIcon from "EmojiSlightlySmilingFaceIcon" /* 14283 */;
+import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 14481 */;
+import CheckpointNumberUtils from "CheckpointNumberUtils" /* 14508 */;
+import CheckpointTagDefault from "CheckpointTag" /* 14517 */;
 import react from "react" /* 19 */;
-import CheckpointStore from "CheckpointStore" /* 14253 */;
+import CheckpointStore from "CheckpointStore" /* 14255 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;

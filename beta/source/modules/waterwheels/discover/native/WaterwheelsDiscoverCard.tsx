@@ -1,10 +1,10 @@
-// Module ID: 19021
-// Function ID: 19022
+// Module ID: 19023
+// Function ID: 19024
 // Name: WaterwheelsDiscoverCard
-// Dependencies: [32, 19, 17, 5177, 1072, 21, 575, 5306, 5169, 504, 19022, 5934, 10225, 6010, 5919, 10390, 7963, 1113, 2569, 5926, 5883, 10323, 18741, 7438, 19011, 19010, 2]
+// Dependencies: [32, 19, 17, 5177, 1072, 21, 575, 5306, 5169, 504, 19024, 5934, 10225, 6010, 5919, 10390, 7963, 1113, 2569, 5926, 5883, 10323, 18743, 7438, 19013, 19012, 2]
 // Exports: default
 
-// Module 19021 (WaterwheelsDiscoverCard)
+// Module 19023 (WaterwheelsDiscoverCard)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
@@ -14,10 +14,10 @@ import Text_Text from "Text/Text" /* 5919 */;
 import GameControllerIcon2 from "GameControllerIcon" /* 7438 */;
 import ChevronSmallRightIcon2 from "ChevronSmallRightIcon" /* 7963 */;
 import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 10225 */;
-import useChannelListWidthDefault from "useChannelListWidth" /* 18741 */;
-import entry_data_ErrorBoundary from "entry_data/ErrorBoundary" /* 19010 */;
-import WaterwheelsPostCardDefault from "WaterwheelsPostCard" /* 19011 */;
-import selectDiscoverServerAction from "selectDiscoverServerAction" /* 19022 */;
+import useChannelListWidthDefault from "useChannelListWidth" /* 18743 */;
+import entry_data_ErrorBoundary from "entry_data/ErrorBoundary" /* 19012 */;
+import WaterwheelsPostCardDefault from "WaterwheelsPostCard" /* 19013 */;
+import selectDiscoverServerAction from "selectDiscoverServerAction" /* 19024 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

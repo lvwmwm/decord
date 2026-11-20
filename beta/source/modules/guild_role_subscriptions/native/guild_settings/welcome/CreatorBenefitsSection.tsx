@@ -1,23 +1,23 @@
-// Module ID: 20684
-// Function ID: 20685
+// Module ID: 20686
+// Function ID: 20687
 // Name: CreatorBenefitsSection
-// Dependencies: [19, 17, 17826, 21, 5306, 575, 5313, 5537, 5919, 1113, 20685, 20689, 20693, 20697, 20701, 20705, 2]
+// Dependencies: [19, 17, 17828, 21, 5306, 575, 5313, 5537, 5919, 1113, 20687, 20691, 20695, 20699, 20703, 20707, 2]
 // Exports: default
 
-// Module 20684 (CreatorBenefitsSection)
+// Module 20686 (CreatorBenefitsSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import shared from "shared" /* 5313 */;
 import useThemeDefault from "useTheme" /* 5537 */;
 import Text_Text from "Text/Text" /* 5919 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17826 */;
-import AvatarRoseExample from "AvatarRoseExample" /* 20685 */;
-import AvatarLokyExample from "AvatarLokyExample" /* 20689 */;
-import AvatarGraggleExample from "AvatarGraggleExample" /* 20693 */;
-import AvatarMoatmonsturrExample from "AvatarMoatmonsturrExample" /* 20697 */;
-import StarKeySpotIllustration from "StarKeySpotIllustration" /* 20701 */;
-import StarCoinsSpotIllustration from "StarCoinsSpotIllustration" /* 20705 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17828 */;
+import AvatarRoseExample from "AvatarRoseExample" /* 20687 */;
+import AvatarLokyExample from "AvatarLokyExample" /* 20691 */;
+import AvatarGraggleExample from "AvatarGraggleExample" /* 20695 */;
+import AvatarMoatmonsturrExample from "AvatarMoatmonsturrExample" /* 20699 */;
+import StarKeySpotIllustration from "StarKeySpotIllustration" /* 20703 */;
+import StarCoinsSpotIllustration from "StarCoinsSpotIllustration" /* 20707 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;

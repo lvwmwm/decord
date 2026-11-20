@@ -1,16 +1,16 @@
-// Module ID: 15018
-// Function ID: 15019
+// Module ID: 15020
+// Function ID: 15021
 // Name: ContactSyncInviteFriends
-// Dependencies: [19, 17, 1388, 1072, 21, 5306, 575, 504, 6010, 15019, 5919, 1113, 5926, 1256, 5362, 10230, 2]
+// Dependencies: [19, 17, 1388, 1072, 21, 5306, 575, 504, 6010, 15021, 5919, 1113, 5926, 1256, 5362, 10230, 2]
 // Exports: default
 
-// Module 15018 (ContactSyncInviteFriends)
+// Module 15020 (ContactSyncInviteFriends)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import FastImageDefault from "FastImage" /* 6010 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15019 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15021 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;

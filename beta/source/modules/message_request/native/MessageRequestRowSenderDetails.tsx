@@ -1,16 +1,16 @@
-// Module ID: 19746
-// Function ID: 19747
+// Module ID: 19748
+// Function ID: 19749
 // Name: MessageRequestRowSenderDetails
-// Dependencies: [19, 17, 5248, 21, 5306, 1187, 575, 504, 5362, 19747, 1417, 5919, 1113, 19748, 19749, 2]
+// Dependencies: [19, 17, 5248, 21, 5306, 1187, 575, 504, 5362, 19749, 1417, 5919, 1113, 19750, 19751, 2]
 // Exports: default
 
-// Module 19746 (MessageRequestRowSenderDetails)
+// Module 19748 (MessageRequestRowSenderDetails)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import utils_AvatarUtilsDefault from "utils/AvatarUtils" /* 1417 */;
 import UserUtilsDefault from "UserUtils" /* 5362 */;
-import MessageRequestMutualServersDefault from "MessageRequestMutualServers" /* 19749 */;
+import MessageRequestMutualServersDefault from "MessageRequestMutualServers" /* 19751 */;
 import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 5248 */;
 import Fragment from "Fragment" /* 21 */;
@@ -65,7 +65,7 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
     }
     return tmp2;
   });
-  const obj2 = otherUser(19747);
+  const obj2 = otherUser(19749);
   const messageRequestRelativeTimestampText = obj2.useMessageRequestRelativeTimestampText(channel);
   const random = Math.random();
   const obj3 = { style: tmp.avatarContainer, children: closure_5(Avatar, obj5) };
@@ -121,7 +121,7 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
   let tmp12Result = !flag;
   if (tmp12Result) {
     const obj12 = { style: tmp.messagePreview, channel };
-    tmp12Result = tmp12(tmp7(19748), obj12);
+    tmp12Result = tmp12(tmp7(19750), obj12);
   }
   items5[1] = tmp12Result;
   if (flag) {

@@ -1,10 +1,10 @@
-// Module ID: 19584
-// Function ID: 19585
+// Module ID: 19586
+// Function ID: 19587
 // Name: FavoritesEmptyState
-// Dependencies: [19, 17, 21, 5306, 575, 15154, 10950, 6327, 5919, 1113, 3679, 5926, 13997, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 15156, 10950, 6327, 5919, 1113, 3679, 5926, 13999, 2]
 // Exports: default
 
-// Module 19584 (FavoritesEmptyState)
+// Module 19586 (FavoritesEmptyState)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
@@ -13,8 +13,8 @@ import Text_Text from "Text/Text" /* 5919 */;
 import components_Button_Button from "components/Button/Button" /* 5926 */;
 import Stack_Stack from "Stack/Stack" /* 6327 */;
 import FavoritesSpotIllustration from "FavoritesSpotIllustration" /* 10950 */;
-import PlusMediumIcon from "PlusMediumIcon" /* 13997 */;
-import openFavoritesGuildAddChannelModalDefault from "openFavoritesGuildAddChannelModal" /* 15154 */;
+import PlusMediumIcon from "PlusMediumIcon" /* 13999 */;
+import openFavoritesGuildAddChannelModalDefault from "openFavoritesGuildAddChannelModal" /* 15156 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5306 */;

@@ -1,22 +1,22 @@
-// Module ID: 17804
-// Function ID: 17805
+// Module ID: 17806
+// Function ID: 17807
 // Name: QuestDockEnrolledBody
-// Dependencies: [5, 19, 17, 8808, 17696, 6954, 17698, 21, 5306, 575, 17702, 17699, 11253, 17693, 17730, 6957, 17726, 17725, 17728, 17727, 1630, 8831, 2]
+// Dependencies: [5, 19, 17, 8808, 17698, 6954, 17700, 21, 5306, 575, 17704, 17701, 11253, 17695, 17732, 6957, 17728, 17727, 17730, 17729, 1630, 8831, 2]
 
-// Module 17804 (QuestDockEnrolledBody)
+// Module 17806 (QuestDockEnrolledBody)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
 import QuestTypes from "QuestTypes" /* 6957 */;
-import QuestBottomSheet from "QuestBottomSheet" /* 17725 */;
-import QuestBottomSheetHeaderDefault from "QuestBottomSheetHeader" /* 17726 */;
-import QuestBottomSheetFooterDefault from "QuestBottomSheetFooter" /* 17728 */;
+import QuestBottomSheet from "QuestBottomSheet" /* 17727 */;
+import QuestBottomSheetHeaderDefault from "QuestBottomSheetHeader" /* 17728 */;
+import QuestBottomSheetFooterDefault from "QuestBottomSheetFooter" /* 17730 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import QuestStore from "QuestStore" /* 8808 */;
-import QuestDockStore from "QuestDockStore" /* 17696 */;
+import QuestDockStore from "QuestDockStore" /* 17698 */;
 import QuestConstants from "QuestConstants" /* 6954 */;
-import QuestDockConstants from "QuestDockConstants" /* 17698 */;
+import QuestDockConstants from "QuestDockConstants" /* 17700 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
@@ -209,10 +209,10 @@ const memoResult = react.memo(function QuestDockEnrolledBody() {
   let items2;
   let minExpandedContentHeight;
   let tmp5Result;
-  let obj = minExpandedContentHeight(17727);
+  let obj = minExpandedContentHeight(17729);
   const questDockQuest = obj.useQuestDockQuest();
   const tmp2 = closure_15();
-  minExpandedContentHeight = react.useContext(minExpandedContentHeight(17699).QuestDockGestureContext).minExpandedContentHeight;
+  minExpandedContentHeight = react.useContext(minExpandedContentHeight(17701).QuestDockGestureContext).minExpandedContentHeight;
   const items = [minExpandedContentHeight];
   const bottom = useSafeAreaInsetsDefault().bottom;
   const items1 = [minExpandedContentHeight];

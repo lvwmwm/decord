@@ -1,10 +1,10 @@
-// Module ID: 18355
-// Function ID: 18356
+// Module ID: 18357
+// Function ID: 18358
 // Name: MobileBottomSheetCopy
 // Dependencies: [1113, 9676, 10073, 2]
 // Exports: getMobileBottomSheetCopy
 
-// Module 18355 (MobileBottomSheetCopy)
+// Module 18357 (MobileBottomSheetCopy)
 import intl from "intl" /* 1113 */;
 import MarketingStringFormat from "MarketingStringFormat" /* 9676 */;
 import PromotionStringUtils from "PromotionStringUtils" /* 10073 */;

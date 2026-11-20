@@ -10,7 +10,7 @@ let fn = () => {
   let handler = function r(arg0, arg1, arg2) {
     let fn;
     let tmp2;
-    const f140331 = function(arg0) {
+    const f140339 = function(arg0) {
       closure_0 = tmp2;
       if (!closure_1[closure_0[closure_0][1][arg0] || arg0]) {
         let _exports;
@@ -19,7 +19,7 @@ let fn = () => {
           closure_1[closure_0[closure_0][1][arg0] || arg0] = obj;
           const first = tmp[tmp2][0];
           const _exports2 = obj.exports;
-          const fn = f140331;
+          const fn = f140339;
           const _exports3 = obj.exports;
           first.call(_exports2, fn, obj, _exports3, closure_0, closure_0, closure_1, closure_2);
         } else {
@@ -64,7 +64,7 @@ let fn = () => {
             arg1[tmp2] = obj;
             let first = arg0[tmp2][0];
             let _exports = obj.exports;
-            fn = f140331;
+            fn = f140339;
             let _exports2 = obj.exports;
             let tmp10 = closure_0;
             let callResult = first.call(_exports, fn, obj, _exports2, tmp10, arg0, arg1, arg2);
@@ -107,7 +107,7 @@ let fn = () => {
           tmp[arg0] = obj;
           let first = tmp2[arg0][0];
           let _exports = obj.exports;
-          fn = f140331;
+          fn = f140339;
           let _exports2 = obj.exports;
           first.call(_exports, fn, obj, _exports2, closure_0, tmp2, tmp, closure_2);
         } else {
@@ -675,7 +675,7 @@ let fn = () => {
           }
           arr2 = this._events[global];
           if (arr2) {
-            item = arr2.forEach(function() { /* body not rendered: F145168 */ });
+            item = arr2.forEach(function() { /* body not rendered: F145177 */ });
           }
           return;
         }
@@ -713,7 +713,7 @@ let fn = () => {
             obj = ExtendedPromise;
             self2 = this;
             self3 = this;
-            promise1 = new ExtendedPromise.Promise(function() { /* body not rendered: F145169 */ });
+            promise1 = new ExtendedPromise.Promise(function() { /* body not rendered: F145178 */ });
             tmp2 = promise1;
             self._promise = promise1;
             tmp3 = global || {};
@@ -721,7 +721,7 @@ let fn = () => {
             self._onReject = tmp3.onReject || obj.defaultOnReject;
             if (obj.shouldCatchExceptions(tmp3)) {
               _promise = self._promise;
-              catchPromise = _promise.catch(function() { /* body not rendered: F145170 */ });
+              catchPromise = _promise.catch(function() { /* body not rendered: F145179 */ });
             }
             _resetStateResult = self._resetState();
           } else {
@@ -814,9 +814,9 @@ let fn = () => {
             tmp2 = ExtendedPromise;
             _Promise = ExtendedPromise.Promise;
             resolveResult = _Promise.resolve();
-            nextPromise = resolveResult.then(function() { /* body not rendered: F145171 */ });
-            nextPromise1 = nextPromise.then(function() { /* body not rendered: F145172 */ });
-            catchPromise = nextPromise1.catch(function() { /* body not rendered: F145173 */ });
+            nextPromise = resolveResult.then(function() { /* body not rendered: F145180 */ });
+            nextPromise1 = nextPromise.then(function() { /* body not rendered: F145181 */ });
+            catchPromise = nextPromise1.catch(function() { /* body not rendered: F145182 */ });
           }
           return self;
         }
@@ -829,9 +829,9 @@ let fn = () => {
             tmp2 = ExtendedPromise;
             _Promise = ExtendedPromise.Promise;
             resolveResult = _Promise.resolve();
-            nextPromise = resolveResult.then(function() { /* body not rendered: F145174 */ });
-            nextPromise1 = nextPromise.then(function() { /* body not rendered: F145175 */ });
-            catchPromise = nextPromise1.catch(function() { /* body not rendered: F145176 */ });
+            nextPromise = resolveResult.then(function() { /* body not rendered: F145183 */ });
+            nextPromise1 = nextPromise.then(function() { /* body not rendered: F145184 */ });
+            catchPromise = nextPromise1.catch(function() { /* body not rendered: F145185 */ });
           }
           return self;
         }
@@ -1268,7 +1268,7 @@ let fn = () => {
         arg0.loadAxo = function loadAxo(arg0) {
           closure_0 = arg0;
           let self = this;
-          const f145187 = function() {
+          const f145196 = function() {
             function sent() {
               if (1 & closure_1_4[0]) {
                 throw closure_1_4[1];
@@ -1276,12 +1276,12 @@ let fn = () => {
                 return closure_1_4[1];
               }
             }
-            const f145181 = function() {
+            const f145190 = function() {
               return this;
             };
             let btSdkVersion = this;
             let minified = function(label) {
-              const f1451842 = function() {
+              const f1451932 = function() {
                 let braintree = this;
                 let VERSION1 = function(arg0) {
                   let combined3;
@@ -1802,7 +1802,7 @@ let fn = () => {
                 let c0 = 2;
                 if (typeof Symbol === "function") {
                   const _Symbol = Symbol;
-                  obj[Symbol.iterator] = f145181;
+                  obj[Symbol.iterator] = f145190;
                 }
                 return obj;
               };
@@ -1888,7 +1888,7 @@ let fn = () => {
                   if (undefined === minified) {
                     c2 = true;
                   }
-                  let f145184 = f1451842;
+                  let f145193 = f1451932;
                   const self7 = this;
                   const self8 = this;
                   let promise = new Promise(function(fn, arg1) {
@@ -1896,7 +1896,7 @@ let fn = () => {
                     let closure_1 = arg1;
                     function fulfilled(result) {
                       try {
-                        step(f145184.next(result));
+                        step(f145193.next(result));
                       } catch (tmp5) {
                         closure_1(tmp5);
                       }
@@ -1904,7 +1904,7 @@ let fn = () => {
                     let iter = fulfilled;
                     function rejected(arg0) {
                       try {
-                        step(f145184.throw(arg0));
+                        step(f145193.throw(arg0));
                       } catch (tmp5) {
                         closure_1(tmp5);
                       }
@@ -1964,7 +1964,7 @@ let fn = () => {
                           let flag = true;
                           c2 = true;
                         }
-                        f145184 = f1451842;
+                        f145193 = f1451932;
                         let self3 = this;
                         let self4 = this;
                         const promise3 = new Promise(function(fn, arg1) {
@@ -1972,7 +1972,7 @@ let fn = () => {
                           let closure_1 = arg1;
                           function fulfilled(result) {
                             try {
-                              step(f145184.next(result));
+                              step(f145193.next(result));
                             } catch (tmp5) {
                               closure_1(tmp5);
                             }
@@ -1980,7 +1980,7 @@ let fn = () => {
                           let iter = fulfilled;
                           function rejected(arg0) {
                             try {
-                              step(f145184.throw(arg0));
+                              step(f145193.throw(arg0));
                             } catch (tmp5) {
                               closure_1(tmp5);
                             }
@@ -2030,7 +2030,7 @@ let fn = () => {
                         if (undefined === minified) {
                           c2 = true;
                         }
-                        f145184 = f1451842;
+                        f145193 = f1451932;
                         let self5 = this;
                         let self6 = this;
                         const promise4 = new Promise(function(fn, arg1) {
@@ -2038,7 +2038,7 @@ let fn = () => {
                           let closure_1 = arg1;
                           function fulfilled(result) {
                             try {
-                              step(f145184.next(result));
+                              step(f145193.next(result));
                             } catch (tmp5) {
                               closure_1(tmp5);
                             }
@@ -2046,7 +2046,7 @@ let fn = () => {
                           let iter = fulfilled;
                           function rejected(arg0) {
                             try {
-                              step(f145184.throw(arg0));
+                              step(f145193.throw(arg0));
                             } catch (tmp5) {
                               closure_1(tmp5);
                             }
@@ -2542,7 +2542,7 @@ let fn = () => {
             let c0 = 2;
             if (typeof Symbol === "function") {
               let _Symbol = Symbol;
-              obj[Symbol.iterator] = f145181;
+              obj[Symbol.iterator] = f145190;
             }
             return obj;
           };
@@ -2551,7 +2551,7 @@ let fn = () => {
             let closure_1 = arg1;
             function fulfilled(result) {
               try {
-                step(f145184.next(result));
+                step(f145193.next(result));
               } catch (tmp5) {
                 closure_1(tmp5);
               }
@@ -2559,7 +2559,7 @@ let fn = () => {
             let iter = fulfilled;
             function rejected(arg0) {
               try {
-                step(f145184.throw(arg0));
+                step(f145193.throw(arg0));
               } catch (tmp5) {
                 closure_1(tmp5);
               }
@@ -3031,7 +3031,7 @@ let fn = () => {
               if (flag) {
                 if (self.limitBroadcastToFramesArray) {
                   result = self.targetFramesAsWindows();
-                  item = result.forEach(function() { /* body not rendered: F145190 */ });
+                  item = result.forEach(function() { /* body not rendered: F145199 */ });
                   flag = true;
                 } else {
                   obj1 = { origin: null, frame: null };
@@ -3057,7 +3057,7 @@ let fn = () => {
           closure_0 = fn;
           closure_1 = arg1;
           self = this;
-          promise = new Framebus.Promise(function() { /* body not rendered: F145191 */ });
+          promise = new Framebus.Promise(function() { /* body not rendered: F145200 */ });
           return promise;
         }
         on(arg0, arg1) {
@@ -3076,7 +3076,7 @@ let fn = () => {
             if (flag) {
               fn = arg1;
               if (self.hasAdditionalChecksForOnListeners) {
-                fn = function d() { /* body not rendered: F145192 */ };
+                fn = function d() { /* body not rendered: F145201 */ };
               }
               listeners = self.listeners;
               obj = { eventName: null, handler: null, originalHandler: null };
@@ -3193,8 +3193,8 @@ let fn = () => {
         targetFramesAsWindows() {
           if (this.limitBroadcastToFramesArray) {
             targetFrames = this.targetFrames;
-            mapped = targetFrames.map(function() { /* body not rendered: F145193 */ });
-            found = mapped.filter(function() { /* body not rendered: F145194 */ });
+            mapped = targetFrames.map(function() { /* body not rendered: F145202 */ });
+            found = mapped.filter(function() { /* body not rendered: F145203 */ });
           } else {
             found = [];
           }
@@ -3207,7 +3207,7 @@ let fn = () => {
             result = self.targetFramesAsWindows();
             tmp = globalThis;
             _Boolean = Boolean;
-            return Boolean(result.find(function() { /* body not rendered: F145195 */ }));
+            return Boolean(result.find(function() { /* body not rendered: F145204 */ }));
           } else {
             flag = true;
             return true;
@@ -3911,7 +3911,7 @@ let fn = () => {
             obj4 = { method: "get", endpoint: "payment_methods/amex_rewards_balance", data: null };
             obj4.data = tmp9;
             requestResult = _client.request(obj4);
-            catchPromise = requestResult.catch(function() { /* body not rendered: F140394 */ });
+            catchPromise = requestResult.catch(function() { /* body not rendered: F140402 */ });
           } else {
             tmp = globalThis;
             _Promise = Promise;
@@ -3942,7 +3942,7 @@ let fn = () => {
             obj4.paymentMethodNonce = global.nonce;
             obj1.data = obj4;
             requestResult = _client.request(obj1);
-            catchPromise = requestResult.catch(function() { /* body not rendered: F140395 */ });
+            catchPromise = requestResult.catch(function() { /* body not rendered: F140403 */ });
           } else {
             tmp = globalThis;
             _Promise = Promise;
@@ -4031,7 +4031,7 @@ let fn = () => {
             resolved = Promise.resolve();
           } else {
             _createPromise = self._createPromise;
-            fn = function() { /* body not rendered: F140398 */ };
+            fn = function() { /* body not rendered: F140406 */ };
             resolved = _createPromise.then(fn.bind(self));
           }
           return resolved;
@@ -4056,7 +4056,7 @@ let fn = () => {
             result = self._createPaymentRequestSynchronously(global);
           } else {
             _waitForClientResult = self._waitForClient();
-            fn = function() { /* body not rendered: F140399 */ };
+            fn = function() { /* body not rendered: F140407 */ };
             result = _waitForClientResult.then(fn.bind(self));
           }
           return result;
@@ -4068,7 +4068,7 @@ let fn = () => {
           tmp = applePayWeb.merchantCapabilities || ["supports3DS"];
           obj.merchantCapabilities = tmp;
           supportedNetworks = applePayWeb.supportedNetworks;
-          obj.supportedNetworks = supportedNetworks.map(function() { /* body not rendered: F140400 */ });
+          obj.supportedNetworks = supportedNetworks.map(function() { /* body not rendered: F140408 */ });
           return Object.assign({}, obj, global);
         }
         performValidation(arg0) {
@@ -4078,9 +4078,9 @@ let fn = () => {
           if (global) {
             if (global.validationURL) {
               _waitForClientResult = self._waitForClient();
-              nextPromise = _waitForClientResult.then(function() { /* body not rendered: F140401 */ });
-              nextPromise1 = nextPromise.then(function() { /* body not rendered: F140402 */ });
-              catchPromise = nextPromise1.catch(function() { /* body not rendered: F140403 */ });
+              nextPromise = _waitForClientResult.then(function() { /* body not rendered: F140409 */ });
+              nextPromise1 = nextPromise.then(function() { /* body not rendered: F140410 */ });
+              catchPromise = nextPromise1.catch(function() { /* body not rendered: F140411 */ });
             }
             return catchPromise;
           }
@@ -4095,9 +4095,9 @@ let fn = () => {
           self = this;
           if (global.token) {
             _waitForClientResult = self._waitForClient();
-            nextPromise = _waitForClientResult.then(function() { /* body not rendered: F140404 */ });
-            nextPromise1 = nextPromise.then(function() { /* body not rendered: F140405 */ });
-            catchPromise = nextPromise1.catch(function() { /* body not rendered: F140406 */ });
+            nextPromise = _waitForClientResult.then(function() { /* body not rendered: F140412 */ });
+            nextPromise1 = nextPromise.then(function() { /* body not rendered: F140413 */ });
+            catchPromise = nextPromise1.catch(function() { /* body not rendered: F140414 */ });
           } else {
             tmp = globalThis;
             _Promise = Promise;
@@ -4382,7 +4382,7 @@ let fn = () => {
               if ("api" in tmp) {
                 str5 = tmp.api;
               }
-              let obj = { method: tmp.method, graphQL: str5._graphQL, timeout: tmp.timeout, metadata: str5._configuration.analyticsMetadata, url: _clientApiBaseUrl + tmp.endpoint, sendAnalyticsEvent() { /* body not rendered: F145198 */ } };
+              let obj = { method: tmp.method, graphQL: str5._graphQL, timeout: tmp.timeout, metadata: str5._configuration.analyticsMetadata, url: _clientApiBaseUrl + tmp.endpoint, sendAnalyticsEvent() { /* body not rendered: F145207 */ } };
               let obj2 = str5;
               if ("clientApi" === str5) {
                 _clientApiBaseUrl = obj2._clientApiBaseUrl;
@@ -4405,7 +4405,7 @@ let fn = () => {
                 const obj7 = { Authorization: `Bearer ${_configuration.authorizationFingerprint || _configuration.authorization}`, "Braintree-Version": endpoint };
                 obj.headers = obj7;
               }
-              obj2._request(obj, function() { /* body not rendered: F145199 */ });
+              obj2._request(obj, function() { /* body not rendered: F145208 */ });
             }
           });
           tmp = promise;
@@ -4804,7 +4804,7 @@ let fn = () => {
         let supportedCardBrands3;
         let supportedCardBrands4;
         let supportedFeatures;
-        const f140424 = (arr, item) => {
+        const f140432 = (arr, item) => {
           let combined = arr;
           const tmp = closure_0;
           if (closure_0.hasOwnProperty(item)) {
@@ -4833,7 +4833,7 @@ let fn = () => {
               obj.applePayWeb = clientConfiguration.applePayWeb;
               const supportedCardBrands = clientConfiguration.applePayWeb.supportedCardBrands;
               closure_0 = closure_3;
-              obj.applePayWeb.supportedNetworks = supportedCardBrands.reduce(f140424, []);
+              obj.applePayWeb.supportedNetworks = supportedCardBrands.reduce(f140432, []);
               delete obj.applePayWeb["supportedCardBrands"];
             }
             if (clientConfiguration.fastlane) {
@@ -4849,7 +4849,7 @@ let fn = () => {
             if (clientConfiguration.creditCard) {
               const challenges = clientConfiguration.creditCard.challenges;
               obj.challenges = challenges.map((item) => item.toLowerCase());
-              const obj5 = { supportedCardTypes: supportedCardBrands1.reduce(f140424, []) };
+              const obj5 = { supportedCardTypes: supportedCardBrands1.reduce(f140432, []) };
               supportedCardBrands1 = clientConfiguration.creditCard.supportedCardBrands;
               closure_0 = closure_2;
               obj.creditCards = obj5;
@@ -4862,7 +4862,7 @@ let fn = () => {
               obj.threeDSecureEnabled = false;
             }
             if (clientConfiguration.googlePay) {
-              const obj7 = { displayName: clientConfiguration.googlePay.displayName, enabled: true, environment: str2.toLowerCase(), googleAuthorizationFingerprint: clientConfiguration.googlePay.googleAuthorization, paypalClientId: clientConfiguration.googlePay.paypalClientId, supportedNetworks: supportedCardBrands2.reduce(f140424, []) };
+              const obj7 = { displayName: clientConfiguration.googlePay.displayName, enabled: true, environment: str2.toLowerCase(), googleAuthorizationFingerprint: clientConfiguration.googlePay.googleAuthorization, paypalClientId: clientConfiguration.googlePay.paypalClientId, supportedNetworks: supportedCardBrands2.reduce(f140432, []) };
               supportedCardBrands2 = clientConfiguration.googlePay.supportedCardBrands;
               closure_0 = closure_5;
               str2 = clientConfiguration.googlePay.environment;
@@ -4888,13 +4888,13 @@ let fn = () => {
               obj.unionPay = obj9;
             }
             if (clientConfiguration.visaCheckout) {
-              const obj10 = { apikey: clientConfiguration.visaCheckout.apiKey, encryptionKey: clientConfiguration.visaCheckout.encryptionKey, externalClientId: clientConfiguration.visaCheckout.externalClientId, supportedCardTypes: supportedCardBrands3.reduce(f140424, []) };
+              const obj10 = { apikey: clientConfiguration.visaCheckout.apiKey, encryptionKey: clientConfiguration.visaCheckout.encryptionKey, externalClientId: clientConfiguration.visaCheckout.externalClientId, supportedCardTypes: supportedCardBrands3.reduce(f140432, []) };
               supportedCardBrands3 = clientConfiguration.visaCheckout.supportedCardBrands;
               closure_0 = closure_4;
               obj.visaCheckout = obj10;
             }
             if (clientConfiguration.masterpass) {
-              const obj11 = { merchantCheckoutId: clientConfiguration.masterpass.merchantCheckoutId, supportedNetworks: supportedCardBrands4.reduce(f140424, []) };
+              const obj11 = { merchantCheckoutId: clientConfiguration.masterpass.merchantCheckoutId, supportedNetworks: supportedCardBrands4.reduce(f140432, []) };
               supportedCardBrands4 = clientConfiguration.masterpass.supportedCardBrands;
               closure_0 = closure_6;
               obj.masterpass = obj11;
@@ -5055,14 +5055,14 @@ let fn = () => {
   obj[101] = items100;
   const items101 = [
     (arg0, arg1, arg2) => {
-      const f140425 = (field) => {
+      const f140433 = (field) => {
 
       };
       function addFieldError(arr, message, fieldErrors) {
         let obj2;
         const first = arr[0];
         if (1 !== arr.length) {
-          const item = fieldErrors.forEach(f140425);
+          const item = fieldErrors.forEach(f140433);
           const tmp5 = obj2;
           if (!tmp5) {
             obj2 = { field: first, fieldErrors: [] };
@@ -5091,7 +5091,7 @@ let fn = () => {
               let obj2;
               const first = substr[0];
               if (1 !== substr.length) {
-                const item = arr3.forEach(f140425);
+                const item = arr3.forEach(f140433);
                 const tmp6 = obj2;
                 if (!tmp6) {
                   obj2 = { field: first, fieldErrors: [] };
@@ -5102,7 +5102,7 @@ let fn = () => {
                 let obj3;
                 const first1 = substr1[0];
                 if (1 !== substr1.length) {
-                  const item1 = fieldErrors.forEach(f140425);
+                  const item1 = fieldErrors.forEach(f140433);
                   const tmp14 = obj3;
                   if (!tmp14) {
                     obj3 = { field: first1, fieldErrors: [] };
@@ -5374,8 +5374,8 @@ let fn = () => {
             features = this._config.features;
             closure_0 = module;
             tmp7 = closure_1;
-            someResult = features.some(function() { /* body not rendered: F140426 */ });
-            someResult1 = closure_1.some(function() { /* body not rendered: F145207 */ });
+            someResult = features.some(function() { /* body not rendered: F140434 */ });
+            someResult1 = closure_1.some(function() { /* body not rendered: F145216 */ });
             tmp9 = !someResult1 && someResult;
             tmp4 = tmp9;
           }
@@ -5436,7 +5436,7 @@ let fn = () => {
               obj = {};
               const _Object = Object;
               const keys = Object.keys(tmp6);
-              item = keys.forEach(f140427);
+              item = keys.forEach(f140435);
               obj[tmp] = obj;
             } else if (typeof _data[item] === "number") {
               const _String = String;
@@ -7593,7 +7593,7 @@ let fn = () => {
             resolved = Promise.resolve();
           } else {
             _createPromise = self._createPromise;
-            fn = function() { /* body not rendered: F140441 */ };
+            fn = function() { /* body not rendered: F140449 */ };
             resolved = _createPromise.then(fn.bind(self));
           }
           return resolved;
@@ -7622,7 +7622,7 @@ let fn = () => {
           closure_0 = _getDefaultConfigResult;
           if (global.allowedPaymentMethods) {
             prop = global.allowedPaymentMethods;
-            item = prop.forEach(function() { /* body not rendered: F140442 */ });
+            item = prop.forEach(function() { /* body not rendered: F140450 */ });
           }
           return assign({}, _getDefaultConfigResult, global);
         }
@@ -7631,7 +7631,7 @@ let fn = () => {
           closure_0 = global;
           if (this._useDeferredClient) {
             _waitForClientResult = self._waitForClient();
-            fn = function() { /* body not rendered: F140443 */ };
+            fn = function() { /* body not rendered: F140451 */ };
             nextPromise = _waitForClientResult.then(fn.bind(self));
           } else {
             nextPromise = self._createPaymentDataRequestSyncronously(global);
@@ -7658,8 +7658,8 @@ let fn = () => {
           closure_0 = global;
           self = this;
           resolved = Promise.resolve();
-          nextPromise = resolved.then(function() { /* body not rendered: F140444 */ });
-          return nextPromise.catch(function() { /* body not rendered: F140445 */ });
+          nextPromise = resolved.then(function() { /* body not rendered: F140452 */ });
+          return nextPromise.catch(function() { /* body not rendered: F140453 */ });
         }
         teardown() {
           tmp = closure_2(this, closure_7(GooglePayment.prototype));
@@ -8032,7 +8032,7 @@ let fn = () => {
               tmp15 = tmp14;
               self._bus = tmp14;
               _destructor = self._destructor;
-              result = _destructor.registerFunctionForTeardown(function() { /* body not rendered: F140450 */ });
+              result = _destructor.registerFunctionForTeardown(function() { /* body not rendered: F140458 */ });
               tmp17 = closure_19;
               sendEvent = closure_19.sendEvent;
               _clientPromise = self._clientPromise;
@@ -8045,46 +8045,46 @@ let fn = () => {
               }
               _Object2 = Object;
               keys = Object.keys(global.fields);
-              fn = function() { /* body not rendered: F140451 */ };
+              fn = function() { /* body not rendered: F140459 */ };
               item = keys.forEach(fn.bind(self));
               if (self._merchantConfigurationOptions.styles) {
                 _Object3 = Object;
                 keys1 = Object.keys(self._merchantConfigurationOptions.styles);
-                item1 = keys1.forEach(function() { /* body not rendered: F140452 */ });
+                item1 = keys1.forEach(function() { /* body not rendered: F140460 */ });
               }
               _bus = self._bus;
               tmp22 = events;
-              onResult = _bus.on(events.REMOVE_FOCUS_INTERCEPTS, function() { /* body not rendered: F140453 */ });
+              onResult = _bus.on(events.REMOVE_FOCUS_INTERCEPTS, function() { /* body not rendered: F140461 */ });
               _bus2 = self._bus;
               tmp24 = closure_28;
               obj10 = { onRemoveFocusIntercepts: null, onTriggerInputFocus: null };
-              obj10.onRemoveFocusIntercepts = function onRemoveFocusIntercepts() { /* body not rendered: F140454 */ };
-              obj10.onTriggerInputFocus = function onTriggerInputFocus() { /* body not rendered: F140455 */ };
+              obj10.onRemoveFocusIntercepts = function onRemoveFocusIntercepts() { /* body not rendered: F140462 */ };
+              obj10.onTriggerInputFocus = function onTriggerInputFocus() { /* body not rendered: F140463 */ };
               onResult1 = _bus2.on(events.TRIGGER_FOCUS_CHANGE, closure_28.createFocusChangeHandler(tmp, obj10));
               _bus3 = self._bus;
-              onResult2 = _bus3.on(events.READY_FOR_CLIENT, function() { /* body not rendered: F140456 */ });
+              onResult2 = _bus3.on(events.READY_FOR_CLIENT, function() { /* body not rendered: F140464 */ });
               _bus4 = self._bus;
-              onResult3 = _bus4.on(events.CARD_FORM_ENTRY_HAS_BEGUN, function() { /* body not rendered: F140457 */ });
+              onResult3 = _bus4.on(events.CARD_FORM_ENTRY_HAS_BEGUN, function() { /* body not rendered: F140465 */ });
               _bus5 = self._bus;
-              onResult4 = _bus5.on(events.BIN_AVAILABLE, function() { /* body not rendered: F140458 */ });
+              onResult4 = _bus5.on(events.BIN_AVAILABLE, function() { /* body not rendered: F140466 */ });
               _setTimeout = setTimeout;
               tmp29 = INTEGRATION_TIMEOUT_MS;
-              closure_1 = setTimeout(function() { /* body not rendered: F140459 */ }, INTEGRATION_TIMEOUT_MS);
+              closure_1 = setTimeout(function() { /* body not rendered: F140467 */ }, INTEGRATION_TIMEOUT_MS);
               _Promise = Promise;
               allPromises = Promise.all(items);
-              nextPromise = allPromises.then(function() { /* body not rendered: F140460 */ });
+              nextPromise = allPromises.then(function() { /* body not rendered: F140468 */ });
               _bus6 = self._bus;
-              onResult5 = _bus6.on(events.FRAME_READY, function() { /* body not rendered: F140461 */ });
+              onResult5 = _bus6.on(events.FRAME_READY, function() { /* body not rendered: F140469 */ });
               _bus7 = self._bus;
               closure_0 = obj;
-              fn2 = function() { /* body not rendered: F145217 */ };
+              fn2 = function() { /* body not rendered: F145226 */ };
               onResult6 = _bus7.on(events.INPUT_EVENT, fn2.bind(self));
               _destructor2 = self._destructor;
-              result1 = _destructor2.registerFunctionForTeardown(function() { /* body not rendered: F140462 */ });
+              result1 = _destructor2.registerFunctionForTeardown(function() { /* body not rendered: F140470 */ });
               _destructor3 = self._destructor;
-              result2 = _destructor3.registerFunctionForTeardown(function() { /* body not rendered: F140463 */ });
+              result2 = _destructor3.registerFunctionForTeardown(function() { /* body not rendered: F140471 */ });
               _destructor4 = self._destructor;
-              result3 = _destructor4.registerFunctionForTeardown(function() { /* body not rendered: F140464 */ });
+              result3 = _destructor4.registerFunctionForTeardown(function() { /* body not rendered: F140472 */ });
               return;
             }
           }
@@ -8094,7 +8094,7 @@ let fn = () => {
         }
         _setupLabelFocus(arg0, arg1) {
           closure_0 = global;
-          triggerFocus = function triggerFocus() { /* body not rendered: F140465 */ };
+          triggerFocus = function triggerFocus() { /* body not rendered: F140473 */ };
           self = this;
           obj = closure_23(module);
           if (null != module.id) {
@@ -8119,7 +8119,7 @@ let fn = () => {
             str = "label";
             combined1 = obj3.concat(closure_14(module, "label"));
             closure_1 = combined1;
-            found = combined1.filter(function() { /* body not rendered: F140466 */ });
+            found = combined1.filter(function() { /* body not rendered: F140474 */ });
             closure_1 = found;
             num = 0;
             closure_2 = 0;
@@ -8137,14 +8137,14 @@ let fn = () => {
               } while (sum < length);
             }
             _destructor = this._destructor;
-            result = _destructor.registerFunctionForTeardown(function() { /* body not rendered: F140467 */ });
+            result = _destructor.registerFunctionForTeardown(function() { /* body not rendered: F140475 */ });
           }
           return;
         }
         _getAnyFieldContainer() {
           self = this;
           keys = Object.keys(this._fields);
-          return keys.reduce(function() { /* body not rendered: F140468 */ }, null);
+          return keys.reduce(function() { /* body not rendered: F140476 */ }, null);
         }
         _cleanUpFocusIntercepts() {
           self = this;
@@ -8158,7 +8158,7 @@ let fn = () => {
             first = closure_14(self._getAnyFieldContainer(), "form")[0];
             if (first) {
               tmp5 = closure_28;
-              fn = function() { /* body not rendered: F140469 */ };
+              fn = function() { /* body not rendered: F140477 */ };
               result = closure_28.removeExtraFocusElements(first, fn.bind(self));
             } else {
               _bus = self._bus;
@@ -8179,22 +8179,22 @@ let fn = () => {
             self = this;
             global.details.invalidFields = {};
             invalidFieldKeys = global.details.invalidFieldKeys;
-            fn = function() { /* body not rendered: F140470 */ };
+            fn = function() { /* body not rendered: F140478 */ };
             item = invalidFieldKeys.forEach(fn.bind(this));
           }
           return;
         }
         getChallenges() {
           _clientPromise = this._clientPromise;
-          return _clientPromise.then(function() { /* body not rendered: F140471 */ });
+          return _clientPromise.then(function() { /* body not rendered: F140479 */ });
         }
         getSupportedCardTypes() {
           _clientPromise = this._clientPromise;
-          return _clientPromise.then(function() { /* body not rendered: F140472 */ });
+          return _clientPromise.then(function() { /* body not rendered: F140480 */ });
         }
         teardown() {
           self = this;
-          promise = new Promise(function() { /* body not rendered: F140473 */ });
+          promise = new Promise(function() { /* body not rendered: F140481 */ });
           return promise;
         }
         tokenize(arg0) {
@@ -8203,7 +8203,7 @@ let fn = () => {
           if (!global) {
             closure_0 = {};
           }
-          promise = new Promise(function() { /* body not rendered: F140474 */ });
+          promise = new Promise(function() { /* body not rendered: F140482 */ });
           return promise;
         }
         addClass(arg0, arg1) {
@@ -8380,7 +8380,7 @@ let fn = () => {
           } else {
             self = this;
             self2 = this;
-            rejectResult = new _Promise(function() { /* body not rendered: F140475 */ });
+            rejectResult = new _Promise(function() { /* body not rendered: F140483 */ });
           }
           return rejectResult;
         }
@@ -8509,7 +8509,7 @@ let fn = () => {
                 tmp13 = globalThis;
                 _setTimeout = setTimeout;
                 num = 5;
-                timerId = setTimeout(function() { /* body not rendered: F140476 */ }, 5);
+                timerId = setTimeout(function() { /* body not rendered: F140484 */ }, 5);
               }
             } else {
               tmp6 = closure_7;
@@ -9159,7 +9159,7 @@ let fn = () => {
     (arg0, arg1, arg2) => {
       module.exports = function camelCaseToSnakeCase(arr) {
         let reduced;
-        const f140484 = (arr) => {
+        const f140492 = (arr) => {
           let closure_0 = arr;
           reduced = undefined;
           let tmp = reduced;
@@ -9171,20 +9171,20 @@ let fn = () => {
             let _Array = Array;
             if (Array.isArray(arr)) {
               let items = [];
-              let item = arr.forEach(f140484);
+              let item = arr.forEach(f140492);
               reduced = items;
             } else {
               reduced = arr;
               if (typeof arr === "object") {
                 let _Object = Object;
                 let keys = Object.keys(arr);
-                reduced = keys.reduce(f140485, {});
+                reduced = keys.reduce(f140493, {});
               }
             }
           }
           arr = push(reduced);
         };
-        const f140485 = (acc, item) => {
+        const f140493 = (acc, item) => {
           let str = item.replace(/([a-z\d])([A-Z])/g, "$1_$2");
           let str2 = str.replace(/([A-Z]+)([A-Z][a-z\d]+)/g, "$1_$2");
           let formatted = str2.toLowerCase();
@@ -9200,14 +9200,14 @@ let fn = () => {
               let _Array = Array;
               if (Array.isArray(arr)) {
                 let items = [];
-                item = arr.forEach(f140484);
+                item = arr.forEach(f140492);
                 reduced = items;
               } else {
                 reduced = arr;
                 if (typeof arr === "object") {
                   let _Object = Object;
                   let keys = Object.keys(arr);
-                  reduced = keys.reduce(f140485, {});
+                  reduced = keys.reduce(f140493, {});
                 }
               }
             }
@@ -9224,14 +9224,14 @@ let fn = () => {
           const _Array = Array;
           if (Array.isArray(arr)) {
             const items = [];
-            const item = arr.forEach(f140484);
+            const item = arr.forEach(f140492);
             reduced = items;
           } else {
             reduced = arr;
             if (typeof arr === "object") {
               const _Object = Object;
               const keys = Object.keys(arr);
-              reduced = keys.reduce(f140485, {});
+              reduced = keys.reduce(f140493, {});
             }
           }
         }
@@ -9428,7 +9428,7 @@ let fn = () => {
             flag = true;
             self._isTearingDown = true;
             tmp = closure_0;
-            fn = function() { /* body not rendered: F140490 */ };
+            fn = function() { /* body not rendered: F140498 */ };
             tmp2 = closure_0(self._teardownRegistry, fn.bind(self));
           }
           return;
@@ -10585,8 +10585,8 @@ let fn = () => {
         _initialize() {
           self = this;
           _client = this._client;
-          closure_2 = setTimeout(function() { /* body not rendered: F140506 */ }, INTEGRATION_TIMEOUT_MS);
-          promise = new Promise(function() { /* body not rendered: F140507 */ });
+          closure_2 = setTimeout(function() { /* body not rendered: F140514 */ }, INTEGRATION_TIMEOUT_MS);
+          promise = new Promise(function() { /* body not rendered: F140515 */ });
           return promise;
         }
         startPayment(arg0) {
@@ -10954,7 +10954,7 @@ let fn = () => {
               _isRedirectFlow = self._isRedirectFlow;
             }
             if (!_isRedirectFlow) {
-              self._startPaymentCallback = self._createStartPaymentCallback(function() { /* body not rendered: F140508 */ }, function() { /* body not rendered: F140509 */ });
+              self._startPaymentCallback = self._createStartPaymentCallback(function() { /* body not rendered: F140516 */ }, function() { /* body not rendered: F140517 */ });
               _frameService = self._frameService;
               num15 = size.width;
               open = _frameService.open;
@@ -10970,8 +10970,8 @@ let fn = () => {
             obj21 = { method: "post", endpoint: "local_payments/create", data: null };
             obj21.data = obj1;
             requestResult = _client.request(obj21);
-            nextPromise = requestResult.then(function() { /* body not rendered: F140510 */ });
-            catchPromise = nextPromise.catch(function() { /* body not rendered: F140511 */ });
+            nextPromise = requestResult.then(function() { /* body not rendered: F140518 */ });
+            catchPromise = nextPromise.catch(function() { /* body not rendered: F140519 */ });
             rejectResult = tmp62;
           }
           return rejectResult;
@@ -11017,8 +11017,8 @@ let fn = () => {
                 request = _client.request;
                 obj.data = self._formatTokenizeData(queryItems);
                 requestResult = request(obj);
-                nextPromise = requestResult.then(function() { /* body not rendered: F140512 */ });
-                rejectResult = nextPromise.catch(function() { /* body not rendered: F140513 */ });
+                nextPromise = requestResult.then(function() { /* body not rendered: F140520 */ });
+                rejectResult = nextPromise.catch(function() { /* body not rendered: F140521 */ });
               }
             }
             return rejectResult;
@@ -11052,7 +11052,7 @@ let fn = () => {
           closure_1 = module;
           self = this;
           _client = this._client;
-          return function() { /* body not rendered: F140514 */ };
+          return function() { /* body not rendered: F140522 */ };
         }
         _formatTokenizePayload(arg0) {
           first = {};
@@ -11235,7 +11235,7 @@ let fn = () => {
         }
         _initialize() {
           self = this;
-          promise = new Promise(function() { /* body not rendered: F140517 */ });
+          promise = new Promise(function() { /* body not rendered: F140525 */ });
           return promise;
         }
         tokenize(arg0) {
@@ -11274,7 +11274,7 @@ let fn = () => {
               } else {
                 self = this;
                 self2 = this;
-                rejectResult = new _Promise(function() { /* body not rendered: F140518 */ });
+                rejectResult = new _Promise(function() { /* body not rendered: F140526 */ });
               }
             }
             return rejectResult;
@@ -11295,14 +11295,14 @@ let fn = () => {
           obj1.requestToken = obj4;
           obj.data = obj1;
           requestResult = _client.request(obj);
-          nextPromise = requestResult.then(function() { /* body not rendered: F140519 */ });
-          return nextPromise.catch(function() { /* body not rendered: F140520 */ });
+          nextPromise = requestResult.then(function() { /* body not rendered: F140527 */ });
+          return nextPromise.catch(function() { /* body not rendered: F140528 */ });
         }
         _createFrameOpenHandler(arg0, arg1) {
           closure_0 = global;
           closure_1 = module;
           self = this;
-          return window.popupBridge ? (function() { /* body not rendered: F140521 */ }) : (function() { /* body not rendered: F140522 */ });
+          return window.popupBridge ? (function() { /* body not rendered: F140529 */ }) : (function() { /* body not rendered: F140530 */ });
         }
         _tokenizeMasterpass(arg0) {
           self = this;
@@ -11325,7 +11325,7 @@ let fn = () => {
           } else {
             items = [, , ];
             ({ oauth_verifier: arr[0], oauth_token: arr[1], checkout_resource_url: arr[2] } = global);
-            if (items.some(function() { /* body not rendered: F145235 */ })) {
+            if (items.some(function() { /* body not rendered: F145244 */ })) {
               tmp2 = closure_4;
               str = "masterpass.tokenization.closed.missing-payload";
               sendEventResult1 = closure_4.sendEvent(self._client, "masterpass.tokenization.closed.missing-payload");
@@ -11349,8 +11349,8 @@ let fn = () => {
               obj1.masterpassCard = obj4;
               obj.data = obj1;
               requestResult = _client.request(obj);
-              nextPromise = requestResult.then(function() { /* body not rendered: F140523 */ });
-              reject2Result = nextPromise.catch(function() { /* body not rendered: F140524 */ });
+              nextPromise = requestResult.then(function() { /* body not rendered: F140531 */ });
+              reject2Result = nextPromise.catch(function() { /* body not rendered: F140532 */ });
             }
           }
           return reject2Result;
@@ -11363,7 +11363,7 @@ let fn = () => {
         }
         teardown() {
           self = this;
-          promise = new Promise(function() { /* body not rendered: F140525 */ });
+          promise = new Promise(function() { /* body not rendered: F140533 */ });
           return promise;
         }
       }
@@ -11495,7 +11495,7 @@ let fn = () => {
           self._googleMerchantId = "18278000977346790994";
           self._supportedPaymentMethods = self._constructDefaultSupportedPaymentMethods();
           keys = Object.keys(self._supportedPaymentMethods);
-          fn = function() { /* body not rendered: F140529 */ };
+          fn = function() { /* body not rendered: F140537 */ };
           self._defaultSupportedPaymentMethods = keys.map(fn.bind(self));
           obj1 = { channel: self._componentId };
           tmp2 = new closure_2(obj1);
@@ -11518,7 +11518,7 @@ let fn = () => {
             obj1 = { supportedMethods: "basic-card", data: null };
             obj5 = { supportedNetworks: null };
             supportedCardTypes = creditCards.supportedCardTypes;
-            obj5.supportedNetworks = supportedCardTypes.reduce(function() { /* body not rendered: F140530 */ }, []);
+            obj5.supportedNetworks = supportedCardTypes.reduce(function() { /* body not rendered: F140538 */ }, []);
             obj1.data = obj5;
             obj.basicCard = obj1;
           }
@@ -11552,7 +11552,7 @@ let fn = () => {
             _Promise = Promise;
             self = this;
             self2 = this;
-            rejectResult = new Promise(function() { /* body not rendered: F140531 */ });
+            rejectResult = new Promise(function() { /* body not rendered: F140539 */ });
           }
           return rejectResult;
         }
@@ -11587,7 +11587,7 @@ let fn = () => {
         tokenize(arg0) {
           closure_0 = global;
           self = this;
-          promise = new Promise(function() { /* body not rendered: F140532 */ });
+          promise = new Promise(function() { /* body not rendered: F140540 */ });
           return promise;
         }
         canMakePayment(arg0) {
@@ -11596,7 +11596,7 @@ let fn = () => {
           if (window.PaymentRequest) {
             if (global.supportedPaymentMethods) {
               prop = global.supportedPaymentMethods;
-              item = prop.forEach(function() { /* body not rendered: F140533 */ });
+              item = prop.forEach(function() { /* body not rendered: F140541 */ });
               tmp6 = supportedMethods;
               if (tmp6) {
                 _Promise3 = Promise;
@@ -11621,7 +11621,7 @@ let fn = () => {
             _Promise2 = Promise;
             self = this;
             self2 = this;
-            rejectResult = new Promise(function() { /* body not rendered: F140534 */ });
+            rejectResult = new Promise(function() { /* body not rendered: F140542 */ });
           } else {
             tmp2 = closure_0;
             str = "payment-request.can-make-payment.not-available";
@@ -11920,11 +11920,11 @@ let fn = () => {
           }
           obj4 = { authorization: global.authorization, client: global.client, debug: global.debug, assetsUrl: closure_3.create(global.authorization), name: "PayPal Checkout" };
           obj5 = closure_2.create(obj4);
-          fn = function() { /* body not rendered: F140538 */ };
+          fn = function() { /* body not rendered: F140546 */ };
           self._clientPromise = obj5.then(fn.bind(self));
           if (global.client) {
             _clientPromise = self._clientPromise;
-            fn2 = function() { /* body not rendered: F140539 */ };
+            fn2 = function() { /* body not rendered: F140547 */ };
             nextPromise = _clientPromise.then(fn2.bind(self));
           } else {
             tmp4 = globalThis;
@@ -11939,12 +11939,12 @@ let fn = () => {
           tmp = new closure_4();
           closure_1 = tmp;
           configuration = global.getConfiguration();
-          closure_2 = setTimeout(function() { /* body not rendered: F140540 */ }, INTEGRATION_TIMEOUT_MS);
+          closure_2 = setTimeout(function() { /* body not rendered: F140548 */ }, INTEGRATION_TIMEOUT_MS);
           obj._assetsUrl = `${tmp2.gatewayConfiguration.paypal.assetsUrl}/web/3.112.1`;
           obj._isDebug = configuration.isDebug;
           obj._loadingFrameUrl = `${`${obj._assetsUrl}/html/paypal-landing-frame`}${closure_12(obj._isDebug)}.html`;
           obj1 = { name: "braintreepaypallanding", dispatchFrameUrl: `${`${obj._assetsUrl}/html/dispatch-frame`}${closure_12(obj._isDebug)}.html`, openFrameUrl: obj._loadingFrameUrl };
-          fn = function() { /* body not rendered: F140541 */ };
+          fn = function() { /* body not rendered: F140549 */ };
           obj3 = closure_9.create(obj1, fn.bind(obj));
           return tmp;
         }
@@ -11959,7 +11959,7 @@ let fn = () => {
               str = "paypal-checkout.createPayment";
               sendEventResult = closure_0.sendEvent(this._clientPromise, "paypal-checkout.createPayment");
               result = this._createPaymentResource(global);
-              nextPromise = result.then(function() { /* body not rendered: F140542 */ });
+              nextPromise = result.then(function() { /* body not rendered: F140550 */ });
             }
             return nextPromise;
           }
@@ -11987,8 +11987,8 @@ let fn = () => {
             sendEventResult = closure_0.sendEvent(self._clientPromise, "paypal-checkout.credit.offered");
           }
           _clientPromise = self._clientPromise;
-          nextPromise = _clientPromise.then(function() { /* body not rendered: F140543 */ });
-          return nextPromise.catch(function() { /* body not rendered: F140544 */ });
+          nextPromise = _clientPromise.then(function() { /* body not rendered: F140551 */ });
+          return nextPromise.catch(function() { /* body not rendered: F140552 */ });
         }
         updatePayment(arg0) {
           self = this;
@@ -12004,8 +12004,8 @@ let fn = () => {
                 str3 = "paypal-checkout.updatePayment";
                 sendEventResult = sendEvent(_clientPromise, "paypal-checkout.updatePayment");
                 _clientPromise1 = self._clientPromise;
-                nextPromise = _clientPromise1.then(function() { /* body not rendered: F140545 */ });
-                catchPromise = nextPromise.catch(function() { /* body not rendered: F140546 */ });
+                nextPromise = _clientPromise1.then(function() { /* body not rendered: F140553 */ });
+                catchPromise = nextPromise.catch(function() { /* body not rendered: F140554 */ });
               } else {
                 str = "paypal-checkout.updatePayment.inconsistent-currencies";
                 sendEventResult1 = sendEvent(_clientPromise, "paypal-checkout.updatePayment.inconsistent-currencies");
@@ -12063,7 +12063,7 @@ let fn = () => {
             reject2Result = reject2(tmp21);
           } else {
             tmp = closure_17;
-            item = closure_17.forEach(function() { /* body not rendered: F140547 */ });
+            item = closure_17.forEach(function() { /* body not rendered: F140555 */ });
             tmp3 = assign;
             if (tmp3) {
               tmp9 = globalThis;
@@ -12094,9 +12094,9 @@ let fn = () => {
               str = "paypal-checkout.startVaultInitiatedCheckout.started";
               sendEventResult1 = closure_0.sendEvent(self._clientPromise, "paypal-checkout.startVaultInitiatedCheckout.started");
               result = self._waitForVaultInitiatedCheckoutDependencies();
-              nextPromise = result.then(function() { /* body not rendered: F140548 */ });
-              catchPromise = nextPromise.catch(function() { /* body not rendered: F140549 */ });
-              reject2Result = catchPromise.then(function() { /* body not rendered: F140550 */ });
+              nextPromise = result.then(function() { /* body not rendered: F140556 */ });
+              catchPromise = nextPromise.catch(function() { /* body not rendered: F140557 */ });
+              reject2Result = catchPromise.then(function() { /* body not rendered: F140558 */ });
             }
           }
           return reject2Result;
@@ -12127,7 +12127,7 @@ let fn = () => {
               str5 = "0.7";
               self._modalBackdrop.style.opacity = "0.7";
               _modalBackdrop2 = self._modalBackdrop;
-              fn = function() { /* body not rendered: F140551 */ };
+              fn = function() { /* body not rendered: F140559 */ };
               str6 = "click";
               listener = _modalBackdrop2.addEventListener("click", fn.bind(self));
             }
@@ -12155,23 +12155,23 @@ let fn = () => {
             sendEventResult = closure_0.sendEvent(self._clientPromise, "paypal-checkout.startVaultInitiatedCheckout.canceled.by-merchant");
           }
           result = self._waitForVaultInitiatedCheckoutDependencies();
-          fn = function() { /* body not rendered: F140552 */ };
+          fn = function() { /* body not rendered: F140560 */ };
           return result.then(fn.bind(self));
         }
         focusVaultInitiatedCheckoutWindow() {
           result = this._waitForVaultInitiatedCheckoutDependencies();
-          fn = function() { /* body not rendered: F140553 */ };
+          fn = function() { /* body not rendered: F140561 */ };
           return result.then(fn.bind(this));
         }
         _createFrameServiceCallback(arg0) {
           closure_0 = global;
           self = this;
-          return function() { /* body not rendered: F140554 */ };
+          return function() { /* body not rendered: F140562 */ };
         }
         _waitForVaultInitiatedCheckoutDependencies() {
           self = this;
           _clientPromise = this._clientPromise;
-          return _clientPromise.then(function() { /* body not rendered: F140555 */ });
+          return _clientPromise.then(function() { /* body not rendered: F140563 */ });
         }
         _constructVaultCheckutUrl(arg0) {
           text = `${this._assetsUrl}/html/${global}`;
@@ -12190,13 +12190,13 @@ let fn = () => {
           obj.vault = flag;
           sendEventResult = closure_0.sendEvent(self._clientPromise, "paypal-checkout.tokenization.started");
           _clientPromise = self._clientPromise;
-          nextPromise = _clientPromise.then(function() { /* body not rendered: F140556 */ });
-          nextPromise1 = nextPromise.then(function() { /* body not rendered: F140557 */ });
-          return nextPromise1.catch(function() { /* body not rendered: F140558 */ });
+          nextPromise = _clientPromise.then(function() { /* body not rendered: F140564 */ });
+          nextPromise1 = nextPromise.then(function() { /* body not rendered: F140565 */ });
+          return nextPromise1.catch(function() { /* body not rendered: F140566 */ });
         }
         getClientId() {
           _clientPromise = this._clientPromise;
-          return _clientPromise.then(function() { /* body not rendered: F140559 */ });
+          return _clientPromise.then(function() { /* body not rendered: F140567 */ });
         }
         loadPayPalSDK(arg0) {
           closure_0 = global;
@@ -12238,9 +12238,9 @@ let fn = () => {
             tmp3.intent = str3 || "authorize";
             tmp3.currency = tmp3.currency || "USD";
           }
-          self._paypalScript.onload = function onload() { /* body not rendered: F140560 */ };
+          self._paypalScript.onload = function onload() { /* body not rendered: F140568 */ };
           keys = Object.keys(tmp);
-          fn = function() { /* body not rendered: F140561 */ };
+          fn = function() { /* body not rendered: F140569 */ };
           item = keys.forEach(fn.bind(self));
           if (tmp3["client-id"]) {
             _Promise = Promise;
@@ -12248,9 +12248,9 @@ let fn = () => {
           } else {
             resolved = self.getClientId();
           }
-          fn2 = function() { /* body not rendered: F140562 */ };
+          fn2 = function() { /* body not rendered: F140570 */ };
           nextPromise = resolved.then(fn2.bind(self));
-          fn3 = function() { /* body not rendered: F140563 */ };
+          fn3 = function() { /* body not rendered: F140571 */ };
           return promise.then(fn3.bind(self));
         }
         _attachPreloadPixel(arg0) {
@@ -12361,7 +12361,7 @@ let fn = () => {
           everyResult = !currency;
           if (currency) {
             shippingOptions = global.shippingOptions;
-            everyResult = shippingOptions.every(function() { /* body not rendered: F140564 */ });
+            everyResult = shippingOptions.every(function() { /* body not rendered: F140572 */ });
           }
           return everyResult;
         }
@@ -12505,8 +12505,8 @@ let fn = () => {
             removeChildResult = parentNode.removeChild(self._paypalScript);
           }
           _frameServicePromise = self._frameServicePromise;
-          catchPromise = _frameServicePromise.catch(function() { /* body not rendered: F140565 */ });
-          return catchPromise.then(function() { /* body not rendered: F140566 */ });
+          catchPromise = _frameServicePromise.catch(function() { /* body not rendered: F140573 */ });
+          return catchPromise.then(function() { /* body not rendered: F140574 */ });
         }
       }
       handler = global("../lib/analytics");
@@ -12555,7 +12555,7 @@ let fn = () => {
           promise = new Promise((arg0) => {
             _self = arg0;
             const obj = { name: constants.LANDING_FRAME_NAME, dispatchFrameUrl: `${`${closure_0._assetsUrl}/html/dispatch-frame`}${closure_1_3(closure_0._isDebug)}.html`, openFrameUrl: _self._loadingFrameUrl };
-            self.create(obj, function() { /* body not rendered: F145244 */ });
+            self.create(obj, function() { /* body not rendered: F145253 */ });
           });
           return promise;
         }
@@ -13004,16 +13004,16 @@ let fn = () => {
           self = this;
           obj = { authorization: global.authorization, client: global.client, debug: global.debug, assetsUrl: closure_1.create(global.authorization), name: "PreferredPaymentMethods" };
           obj1 = closure_2.create(obj);
-          this._clientPromise = obj1.catch(function() { /* body not rendered: F140581 */ });
+          this._clientPromise = obj1.catch(function() { /* body not rendered: F140589 */ });
           sendEventResult = closure_0.sendEvent(this._clientPromise, "preferred-payment-methods.initialized");
           return Promise.resolve(this);
         }
         fetchPreferredPaymentMethods() {
           self = this;
           _clientPromise = this._clientPromise;
-          nextPromise = _clientPromise.then(function() { /* body not rendered: F140582 */ });
-          nextPromise1 = nextPromise.then(function() { /* body not rendered: F140583 */ });
-          return nextPromise1.catch(function() { /* body not rendered: F140584 */ });
+          nextPromise = _clientPromise.then(function() { /* body not rendered: F140590 */ });
+          nextPromise1 = nextPromise.then(function() { /* body not rendered: F140591 */ });
+          return nextPromise1.catch(function() { /* body not rendered: F140592 */ });
         }
       }
       const globalResult = global("@braintree/wrap-promise");
@@ -13231,15 +13231,15 @@ let fn = () => {
               if (MANDATE_TYPE_ENUM.includes(global.mandateType)) {
                 tmp12 = closure_3;
                 mandate = closure_3.createMandate(self._client, tmp);
-                nextPromise = mandate.then(function() { /* body not rendered: F140594 */ });
+                nextPromise = mandate.then(function() { /* body not rendered: F140602 */ });
                 if (self._isRedirectFlow) {
                   tmp14 = globalThis;
                   _Promise2 = Promise;
                   resolved = Promise.resolve();
                 } else {
-                  nextPromise1 = nextPromise.then(function() { /* body not rendered: F140595 */ });
-                  nextPromise2 = nextPromise1.then(function() { /* body not rendered: F140596 */ });
-                  resolved = nextPromise2.catch(function() { /* body not rendered: F140597 */ });
+                  nextPromise1 = nextPromise.then(function() { /* body not rendered: F140603 */ });
+                  nextPromise2 = nextPromise1.then(function() { /* body not rendered: F140604 */ });
+                  resolved = nextPromise2.catch(function() { /* body not rendered: F140605 */ });
                 }
                 rejectResult = resolved;
               } else {
@@ -13403,7 +13403,7 @@ let fn = () => {
             resolved = Promise.resolve();
           } else {
             _createPromise = self._createPromise;
-            fn = function() { /* body not rendered: F140601 */ };
+            fn = function() { /* body not rendered: F140609 */ };
             resolved = _createPromise.then(fn.bind(self));
           }
           return resolved;
@@ -13430,11 +13430,11 @@ let fn = () => {
             result1 = self._formatVerifyCardOptions(global);
             closure_0 = result1;
             _formatLookupDataResult = self._formatLookupData(result1);
-            nextPromise = _formatLookupDataResult.then(function() { /* body not rendered: F140602 */ });
-            nextPromise1 = nextPromise.then(function() { /* body not rendered: F140603 */ });
-            nextPromise2 = nextPromise1.then(function() { /* body not rendered: F140604 */ });
-            nextPromise3 = nextPromise2.then(function() { /* body not rendered: F140605 */ });
-            rejectResult = nextPromise3.catch(function() { /* body not rendered: F140606 */ });
+            nextPromise = _formatLookupDataResult.then(function() { /* body not rendered: F140610 */ });
+            nextPromise1 = nextPromise.then(function() { /* body not rendered: F140611 */ });
+            nextPromise2 = nextPromise1.then(function() { /* body not rendered: F140612 */ });
+            nextPromise3 = nextPromise2.then(function() { /* body not rendered: F140613 */ });
+            rejectResult = nextPromise3.catch(function() { /* body not rendered: F140614 */ });
           }
           return rejectResult;
         }
@@ -13462,7 +13462,7 @@ let fn = () => {
           self = this;
           closure_2 = `payment_methods/${global}/three_d_secure/lookup`;
           _waitForClientResult = this._waitForClient();
-          return _waitForClientResult.then(function() { /* body not rendered: F140607 */ });
+          return _waitForClientResult.then(function() { /* body not rendered: F140615 */ });
         }
         _existsAndIsNumeric(arg0) {
           isArray = null == global;
@@ -13546,7 +13546,7 @@ let fn = () => {
           self._verifyCardPromisePlus = _verifyCardPromisePlus;
           result = self._handleLookupResponse(global, obj);
           prop = self._verifyCardPromisePlus;
-          return prop.then(function() { /* body not rendered: F140608 */ });
+          return prop.then(function() { /* body not rendered: F140616 */ });
         }
         _handleLookupResponse(arg0, arg1) {
           acsUrl = global.lookup;
@@ -13689,7 +13689,7 @@ let fn = () => {
           obj = { channel: tmp, verifyDomain: lookupResponse };
           obj2 = new closure_8(obj);
           closure_4 = `${`${this._assetsUrl}/html/three-d-secure-authentication-complete-frame.html?channel=`}${encodeURIComponent(tmp)}&`;
-          onResult = obj2.on(closure_13, function() { /* body not rendered: F140609 */ });
+          onResult = obj2.on(closure_13, function() { /* body not rendered: F140617 */ });
           onResult1 = obj2.on(closure_11.AUTHENTICATION_COMPLETE, global.handleAuthResponse);
           return obj2;
         }
@@ -13847,7 +13847,7 @@ let fn = () => {
           closure_0 = global;
           setUpEventListeners = closure_0.prototype.setUpEventListeners;
           callResult = setUpEventListeners.call(self, global);
-          onResult = self.on(InlineIframeFramework.events.AUTHENTICATION_IFRAME_AVAILABLE, function() { /* body not rendered: F140610 */ });
+          onResult = self.on(InlineIframeFramework.events.AUTHENTICATION_IFRAME_AVAILABLE, function() { /* body not rendered: F140618 */ });
           return;
         }
         _createCardinalConfigurationOptions(arg0) {
@@ -13858,7 +13858,7 @@ let fn = () => {
         }
         _addV1IframeToPage() {
           obj = { element: this._v1Modal };
-          _emitResult = this._emit(InlineIframeFramework.events.AUTHENTICATION_IFRAME_AVAILABLE, obj, function() { /* body not rendered: F140611 */ });
+          _emitResult = this._emit(InlineIframeFramework.events.AUTHENTICATION_IFRAME_AVAILABLE, obj, function() { /* body not rendered: F140619 */ });
           return;
         }
         _setupFrameworkSpecificListeners() {
@@ -13918,7 +13918,7 @@ let fn = () => {
                 tmp13 = InlineIframeFramework;
                 obj = { element: null };
                 obj.element = element;
-                _emitResult = this._emit(InlineIframeFramework.events.AUTHENTICATION_IFRAME_AVAILABLE, obj, function() { /* body not rendered: F140612 */ });
+                _emitResult = this._emit(InlineIframeFramework.events.AUTHENTICATION_IFRAME_AVAILABLE, obj, function() { /* body not rendered: F140620 */ });
               }
             }
           }
@@ -13963,7 +13963,7 @@ let fn = () => {
         _createIframe(arg0) {
           closure_0 = global;
           self = this;
-          obj = { nonce: global.nonce, lookupResponse: global.lookupResponse, showLoader: global.showLoader, handleAuthResponse() { /* body not rendered: F140613 */ } };
+          obj = { nonce: global.nonce, lookupResponse: global.lookupResponse, showLoader: global.showLoader, handleAuthResponse() { /* body not rendered: F140621 */ } };
           _setupV1ElementsResult = this._setupV1Elements(obj);
           return this._v1Iframe;
         }
@@ -13972,7 +13972,7 @@ let fn = () => {
           _v1Bus = this._v1Bus;
           teardownResult = _v1Bus.teardown();
           removeFrameResult = module.removeFrame();
-          fn = function() { /* body not rendered: F140614 */ };
+          fn = function() { /* body not rendered: F140622 */ };
           tmp3 = closure_1(fn.bind(this))();
           return;
         }
@@ -13998,7 +13998,7 @@ let fn = () => {
           self = this;
           _formatLookupData = closure_0.prototype._formatLookupData;
           callResult = _formatLookupData.call(this, global);
-          return callResult.then(function() { /* body not rendered: F140615 */ });
+          return callResult.then(function() { /* body not rendered: F140623 */ });
         }
         _presentChallenge(arg0, arg1) {
           obj = { showLoader: module.showLoader, lookupResponse: global.lookup, nonce: global.paymentMethod.nonce, removeFrame: module.removeFrame };
@@ -14035,13 +14035,13 @@ let fn = () => {
         }
         setUpEventListeners(arg0) {
           closure_0 = global;
-          onResult = this.on(SongbirdFramework.events.LOOKUP_COMPLETE, function() { /* body not rendered: F140616 */ });
-          onResult1 = this.on(SongbirdFramework.events.CUSTOMER_CANCELED, function() { /* body not rendered: F140617 */ });
-          onResult2 = this.on(SongbirdFramework.events["UI.CLOSE"], function() { /* body not rendered: F140618 */ });
-          onResult3 = this.on(SongbirdFramework.events["UI.RENDER"], function() { /* body not rendered: F140619 */ });
-          onResult4 = this.on(SongbirdFramework.events["UI.RENDERHIDDEN"], function() { /* body not rendered: F140620 */ });
-          onResult5 = this.on(SongbirdFramework.events["UI.LOADING.CLOSE"], function() { /* body not rendered: F140621 */ });
-          onResult6 = this.on(SongbirdFramework.events["UI.LOADING.RENDER"], function() { /* body not rendered: F140622 */ });
+          onResult = this.on(SongbirdFramework.events.LOOKUP_COMPLETE, function() { /* body not rendered: F140624 */ });
+          onResult1 = this.on(SongbirdFramework.events.CUSTOMER_CANCELED, function() { /* body not rendered: F140625 */ });
+          onResult2 = this.on(SongbirdFramework.events["UI.CLOSE"], function() { /* body not rendered: F140626 */ });
+          onResult3 = this.on(SongbirdFramework.events["UI.RENDER"], function() { /* body not rendered: F140627 */ });
+          onResult4 = this.on(SongbirdFramework.events["UI.RENDERHIDDEN"], function() { /* body not rendered: F140628 */ });
+          onResult5 = this.on(SongbirdFramework.events["UI.LOADING.CLOSE"], function() { /* body not rendered: F140629 */ });
+          onResult6 = this.on(SongbirdFramework.events["UI.LOADING.RENDER"], function() { /* body not rendered: F140630 */ });
           return;
         }
         prepareLookup(arg0) {
@@ -14049,17 +14049,17 @@ let fn = () => {
           closure_1 = assign({}, global);
           self = this;
           dfReferenceId = this.getDfReferenceId();
-          nextPromise = dfReferenceId.then(function() { /* body not rendered: F140623 */ });
-          nextPromise1 = nextPromise.then(function() { /* body not rendered: F140624 */ });
-          catchPromise = nextPromise1.catch(function() { /* body not rendered: F140625 */ });
-          nextPromise2 = catchPromise.then(function() { /* body not rendered: F140626 */ });
-          return nextPromise2.then(function() { /* body not rendered: F140627 */ });
+          nextPromise = dfReferenceId.then(function() { /* body not rendered: F140631 */ });
+          nextPromise1 = nextPromise.then(function() { /* body not rendered: F140632 */ });
+          catchPromise = nextPromise1.catch(function() { /* body not rendered: F140633 */ });
+          nextPromise2 = catchPromise.then(function() { /* body not rendered: F140634 */ });
+          return nextPromise2.then(function() { /* body not rendered: F140635 */ });
         }
         initializeChallengeWithLookupResponse(arg0, arg1) {
           closure_0 = global;
           closure_1 = module;
           setupSongbirdResult = this.setupSongbird();
-          fn = function() { /* body not rendered: F140628 */ };
+          fn = function() { /* body not rendered: F140636 */ };
           return setupSongbirdResult.then(fn.bind(this));
         }
         handleSongbirdError(arg0) {
@@ -14077,7 +14077,7 @@ let fn = () => {
           closure_1 = Date.now();
           Cardinal = window.Cardinal;
           triggerResult = Cardinal.trigger("bin.process", global);
-          return triggerResult.then(function() { /* body not rendered: F140629 */ });
+          return triggerResult.then(function() { /* body not rendered: F140637 */ });
         }
         transformBillingAddress(arg0, arg1) {
           tmp = module;
@@ -14102,13 +14102,13 @@ let fn = () => {
           return element;
         }
         _createV1IframeModal(arg0) {
-          closeHandler = function closeHandler() { /* body not rendered: F140630 */ };
+          closeHandler = function closeHandler() { /* body not rendered: F140638 */ };
           result = this._createV1IframeModalElement(global);
           closure_0 = result;
           element = result.querySelector("[data-braintree-v1-fallback-close-button]");
           element1 = result.querySelector("[data-braintree-v1-fallback-backdrop]");
           self = this;
-          this._onV1Keyup = function _onV1Keyup() { /* body not rendered: F140631 */ };
+          this._onV1Keyup = function _onV1Keyup() { /* body not rendered: F140639 */ };
           if (element) {
             str = "click";
             listener = element.addEventListener("click", closeHandler);
@@ -14145,8 +14145,8 @@ let fn = () => {
             str = "reason-unknown";
             self._v2SetupFailureReason = "reason-unknown";
             _loadCardinalScriptResult = self._loadCardinalScript(obj);
-            nextPromise = _loadCardinalScriptResult.then(function() { /* body not rendered: F140632 */ });
-            catchPromise = nextPromise.catch(function() { /* body not rendered: F140633 */ });
+            nextPromise = _loadCardinalScriptResult.then(function() { /* body not rendered: F140640 */ });
+            catchPromise = nextPromise.catch(function() { /* body not rendered: F140641 */ });
           }
           return self._songbirdPromise;
         }
@@ -14154,9 +14154,9 @@ let fn = () => {
           closure_0 = global;
           self = this;
           _waitForClientResult = this._waitForClient();
-          nextPromise = _waitForClientResult.then(function() { /* body not rendered: F140634 */ });
-          nextPromise1 = nextPromise.then(function() { /* body not rendered: F140635 */ });
-          return nextPromise1.catch(function() { /* body not rendered: F140636 */ });
+          nextPromise = _waitForClientResult.then(function() { /* body not rendered: F140642 */ });
+          nextPromise1 = nextPromise.then(function() { /* body not rendered: F140643 */ });
+          return nextPromise1.catch(function() { /* body not rendered: F140644 */ });
         }
         setCardinalListener(arg0, arg1) {
           _cardinalEvents = this._cardinalEvents;
@@ -14188,8 +14188,8 @@ let fn = () => {
           closure_0 = global;
           self = this;
           _waitForClientResult = this._waitForClient();
-          nextPromise = _waitForClientResult.then(function() { /* body not rendered: F140637 */ });
-          return nextPromise.catch(function() { /* body not rendered: F140638 */ });
+          nextPromise = _waitForClientResult.then(function() { /* body not rendered: F140645 */ });
+          return nextPromise.catch(function() { /* body not rendered: F140646 */ });
         }
         _getCardinalScriptSource() {
           _client = this._client;
@@ -14207,7 +14207,7 @@ let fn = () => {
         }
         _createPaymentsSetupCompleteCallback() {
           self = this;
-          return function() { /* body not rendered: F140639 */ };
+          return function() { /* body not rendered: F140647 */ };
         }
         getDfReferenceId() {
           return this._getDfReferenceIdPromisePlus;
@@ -14232,13 +14232,13 @@ let fn = () => {
           }
           sendEventResult1 = closure_5.sendEvent(self._createPromise, "three-d-secure.verification-flow.upgrade-payment-method.started");
           _waitForClientResult = self._waitForClient();
-          nextPromise = _waitForClientResult.then(function() { /* body not rendered: F140640 */ });
-          nextPromise1 = nextPromise.then(function() { /* body not rendered: F140641 */ });
-          return nextPromise1.catch(function() { /* body not rendered: F140642 */ });
+          nextPromise = _waitForClientResult.then(function() { /* body not rendered: F140648 */ });
+          nextPromise1 = nextPromise.then(function() { /* body not rendered: F140649 */ });
+          return nextPromise1.catch(function() { /* body not rendered: F140650 */ });
         }
         _createPaymentsValidatedCallback() {
           self = this;
-          return function() { /* body not rendered: F140643 */ };
+          return function() { /* body not rendered: F140651 */ };
         }
         _checkForVerifyCardError(arg0, arg1) {
           if (global.bin) {
@@ -14295,7 +14295,7 @@ let fn = () => {
           self = this;
           _onLookupComplete = closure_0.prototype._onLookupComplete;
           callResult = _onLookupComplete.call(this, global);
-          return callResult.then(function() { /* body not rendered: F140644 */ });
+          return callResult.then(function() { /* body not rendered: F140652 */ });
         }
         _presentChallenge(arg0) {
           tmp = !this._songbirdInitFailed && global.lookup.transactionId;
@@ -14320,18 +14320,18 @@ let fn = () => {
           self = this;
           _formatLookupData = closure_0.prototype._formatLookupData;
           callResult = _formatLookupData.call(this, global);
-          return callResult.then(function() { /* body not rendered: F140645 */ });
+          return callResult.then(function() { /* body not rendered: F140653 */ });
         }
         cancelVerifyCard(arg0) {
           closure_0 = global;
           self = this;
           cancelVerifyCard = closure_0.prototype.cancelVerifyCard;
           callResult = cancelVerifyCard.call(this);
-          return callResult.then(function() { /* body not rendered: F140646 */ });
+          return callResult.then(function() { /* body not rendered: F140654 */ });
         }
         _removeSongbirdListeners() {
           _cardinalEvents = this._cardinalEvents;
-          item = _cardinalEvents.forEach(function() { /* body not rendered: F140647 */ });
+          item = _cardinalEvents.forEach(function() { /* body not rendered: F140655 */ });
           this._cardinalEvents = [];
           return;
         }
@@ -14347,7 +14347,7 @@ let fn = () => {
           self = this;
           closure_1 = Date.now();
           teardownResult = this.teardown();
-          return teardownResult.then(function() { /* body not rendered: F140648 */ });
+          return teardownResult.then(function() { /* body not rendered: F140656 */ });
         }
       }
       const globalResult = global("./base");
@@ -14387,7 +14387,7 @@ let fn = () => {
           tmp1 = new tmp(global);
           self._framework = tmp1;
           _framework = self._framework;
-          setUpEventListenersResult = _framework.setUpEventListeners(function() { /* body not rendered: F140649 */ });
+          setUpEventListenersResult = _framework.setUpEventListeners(function() { /* body not rendered: F140657 */ });
           return;
         }
         verifyCard(arg0) {
@@ -14411,7 +14411,7 @@ let fn = () => {
         prepareLookup(arg0) {
           _framework = this._framework;
           prepareLookupResult = _framework.prepareLookup(global);
-          return prepareLookupResult.then(function() { /* body not rendered: F140650 */ });
+          return prepareLookupResult.then(function() { /* body not rendered: F140658 */ });
         }
         cancelVerifyCard() {
           _framework = this._framework;
@@ -14658,12 +14658,12 @@ let fn = () => {
             obj1.creditCard = obj4;
             obj.data = obj1;
             requestResult = client.request(obj);
-            nextPromise = requestResult.then(function() { /* body not rendered: F140654 */ });
-            reject3Result = nextPromise.catch(function() { /* body not rendered: F140655 */ });
+            nextPromise = requestResult.then(function() { /* body not rendered: F140662 */ });
+            reject3Result = nextPromise.catch(function() { /* body not rendered: F140663 */ });
           } else if (hostedFields) {
             if (hostedFields._bus) {
               result = self._initializeHostedFields();
-              nextPromise1 = result.then(function() { /* body not rendered: F140656 */ });
+              nextPromise1 = result.then(function() { /* body not rendered: F140664 */ });
             } else {
               tmp8 = globalThis;
               _Promise2 = Promise;
@@ -14713,7 +14713,7 @@ let fn = () => {
                 } else {
                   self9 = this;
                   self10 = this;
-                  reject5Result = new _Promise4(function() { /* body not rendered: F140657 */ });
+                  reject5Result = new _Promise4(function() { /* body not rendered: F140665 */ });
                 }
                 reject4Result = reject5Result;
               } else {
@@ -14758,8 +14758,8 @@ let fn = () => {
                   obj4 = { method: "post", endpoint: "union_pay_enrollments", data: null };
                   obj4.data = obj;
                   requestResult = client.request(obj4);
-                  nextPromise = requestResult.then(function() { /* body not rendered: F140658 */ });
-                  return nextPromise.catch(function() { /* body not rendered: F140659 */ });
+                  nextPromise = requestResult.then(function() { /* body not rendered: F140666 */ });
+                  return nextPromise.catch(function() { /* body not rendered: F140667 */ });
                 }
               }
               tmp6 = globalThis;
@@ -14834,8 +14834,8 @@ let fn = () => {
             obj8 = { method: "post", endpoint: "payment_methods/credit_cards", data: null };
             obj8.data = obj;
             requestResult = client.request(obj8);
-            nextPromise = requestResult.then(function() { /* body not rendered: F140660 */ });
-            reject3Result = nextPromise.catch(function() { /* body not rendered: F140661 */ });
+            nextPromise = requestResult.then(function() { /* body not rendered: F140668 */ });
+            reject3Result = nextPromise.catch(function() { /* body not rendered: F140669 */ });
           } else {
             tmp = globalThis;
             if (hostedFields) {
@@ -14843,7 +14843,7 @@ let fn = () => {
               if (hostedFields._bus) {
                 self5 = this;
                 self6 = this;
-                _Promise21 = new _Promise2(function() { /* body not rendered: F140662 */ });
+                _Promise21 = new _Promise2(function() { /* body not rendered: F140670 */ });
               } else {
                 tmp7 = self;
                 tmp8 = closure_7;
@@ -14889,7 +14889,7 @@ let fn = () => {
             _Promise = Promise;
             self2 = this;
             self3 = this;
-            promise = new Promise(function() { /* body not rendered: F140663 */ });
+            promise = new Promise(function() { /* body not rendered: F140671 */ });
             tmp3 = promise;
             self._hostedFieldsInitializePromise = promise;
           }
@@ -15067,8 +15067,8 @@ let fn = () => {
           obj9.variables = obj10;
           obj8.data = obj9;
           requestResult = _client.request(obj8);
-          nextPromise = requestResult.then(function() { /* body not rendered: F140668 */ });
-          return nextPromise.catch(function() { /* body not rendered: F140669 */ });
+          nextPromise = requestResult.then(function() { /* body not rendered: F140676 */ });
+          return nextPromise.catch(function() { /* body not rendered: F140677 */ });
         }
         _tokenizeBankLogin(arg0) {
           self = this;
@@ -15096,7 +15096,7 @@ let fn = () => {
                 _Promise3 = Promise;
                 self6 = this;
                 self7 = this;
-                reject3Result = new Promise(function() { /* body not rendered: F140670 */ });
+                reject3Result = new Promise(function() { /* body not rendered: F140678 */ });
               }
               reject2Result = reject3Result;
             } else {
@@ -15143,9 +15143,9 @@ let fn = () => {
             if (element) {
               closure_0 = element;
               closure_1 = tmp;
-              loadHandler2 = function loadHandler() { /* body not rendered: F140666 */ };
+              loadHandler2 = function loadHandler() { /* body not rendered: F140674 */ };
               loadHandler = loadHandler2;
-              errorHandler2 = function errorHandler() { /* body not rendered: F140667 */ };
+              errorHandler2 = function errorHandler() { /* body not rendered: F140675 */ };
               errorHandler = errorHandler2;
               str7 = "error";
               listener = element.addEventListener("error", errorHandler2);
@@ -15163,8 +15163,8 @@ let fn = () => {
               element1.async = true;
               closure_0 = element1;
               closure_1 = tmp;
-              loadHandler = function loadHandler() { /* body not rendered: F140666 */ };
-              errorHandler = function errorHandler() { /* body not rendered: F140667 */ };
+              loadHandler = function loadHandler() { /* body not rendered: F140674 */ };
+              errorHandler = function errorHandler() { /* body not rendered: F140675 */ };
               str4 = "error";
               listener3 = element1.addEventListener("error", errorHandler);
               str5 = "load";
@@ -15283,8 +15283,8 @@ let fn = () => {
               obj3 = { input: obj4 };
               obj4 = { singleUseTokenId };
               const requestResult = getConfiguration.request(obj);
-              const nextPromise = requestResult.then(function() { /* body not rendered: F145261 */ });
-              catchPromise = nextPromise.catch(function() { /* body not rendered: F145262 */ });
+              const nextPromise = requestResult.then(function() { /* body not rendered: F145270 */ });
+              catchPromise = nextPromise.catch(function() { /* body not rendered: F145271 */ });
             } else {
               let tmp3 = constants;
               let self = this;
@@ -15663,7 +15663,7 @@ let fn = () => {
                     const promise = new self.Promise((arg0, arg1) => {
                       let closure_0 = arg0;
                       closure_1 = arg1;
-                      const timerId = setTimeout(function() { /* body not rendered: F146917 */ }, 1000);
+                      const timerId = setTimeout(function() { /* body not rendered: F146927 */ }, 1000);
                     });
                     return promise;
                   }
@@ -16207,7 +16207,7 @@ let fn = () => {
   obj[244] = items243;
   const items244 = [
     (arg0, arg1, arg2) => {
-      const f140703 = (acc, item) => {
+      const f140711 = (acc, item) => {
         const parts = item.split("=");
         const str = decodeURIComponent(parts[0]);
         const tmp2 = closure_1_14(str.replace(/\W/g, ""));
@@ -16254,7 +16254,7 @@ let fn = () => {
               let str;
               _self = getConfiguration;
               const gatewayConfiguration = getConfiguration.getConfiguration().gatewayConfiguration;
-              let obj = { url: `${gatewayConfiguration.assetsUrl}/web/${closure_1_18}/html/venmo-desktop-frame.html`, environment: str, profileId: _self._profileId || gatewayConfiguration.payWithVenmo.merchantId, paymentMethodUsage: null, displayName: null, Promise: Promise, apiRequest() { /* body not rendered: F145282 */ }, sendEvent() { /* body not rendered: F145283 */ }, verifyDomain };
+              let obj = { url: `${gatewayConfiguration.assetsUrl}/web/${closure_1_18}/html/venmo-desktop-frame.html`, environment: str, profileId: _self._profileId || gatewayConfiguration.payWithVenmo.merchantId, paymentMethodUsage: null, displayName: null, Promise: Promise, apiRequest() { /* body not rendered: F145291 */ }, sendEvent() { /* body not rendered: F145292 */ }, verifyDomain };
               str = "SANDBOX";
               const tmp = closure_1_16;
               if ("production" === gatewayConfiguration.environment) {
@@ -16262,8 +16262,8 @@ let fn = () => {
               }
               ({ _paymentMethodUsage: obj.paymentMethodUsage, _displayName: obj.displayName } = _self);
               const tmpResult = tmp(obj);
-              const nextPromise = tmpResult.then(function() { /* body not rendered: F145284 */ });
-              return nextPromise.catch(function() { /* body not rendered: F145285 */ });
+              const nextPromise = tmpResult.then(function() { /* body not rendered: F145293 */ });
+              return nextPromise.catch(function() { /* body not rendered: F145294 */ });
             });
           } else if (self._shouldCreateVenmoPaymentContext) {
             num = 250;
@@ -16282,16 +16282,16 @@ let fn = () => {
               const obj2 = { assetsUrl: configuration.gatewayConfiguration.assetsUrl, debug: configuration.isDebug };
               const setupDesktopWebLoginResult = closure_1_13.setupDesktopWebLogin(obj2);
               const str2 = configuration.gatewayConfiguration.environment;
-              const nextPromise = setupDesktopWebLoginResult.then(function() { /* body not rendered: F145286 */ });
-              const catchPromise = nextPromise.catch(function() { /* body not rendered: F145287 */ });
+              const nextPromise = setupDesktopWebLoginResult.then(function() { /* body not rendered: F145295 */ });
+              const catchPromise = nextPromise.catch(function() { /* body not rendered: F145296 */ });
               obj._mobilePollingContextEnvironment = str2.toUpperCase();
               const result = obj._createVenmoPaymentContext(getConfiguration);
               const items = [catchPromise, ];
-              const nextPromise1 = result.then(function() { /* body not rendered: F145288 */ });
-              items[1] = nextPromise1.catch(function() { /* body not rendered: F145289 */ });
+              const nextPromise1 = result.then(function() { /* body not rendered: F145297 */ });
+              items[1] = nextPromise1.catch(function() { /* body not rendered: F145298 */ });
               const allResult = globalResult1.all(items);
-              const nextPromise2 = allResult.then(function() { /* body not rendered: F145290 */ });
-              return nextPromise2.catch(function() { /* body not rendered: F145291 */ });
+              const nextPromise2 = allResult.then(function() { /* body not rendered: F145299 */ });
+              return nextPromise2.catch(function() { /* body not rendered: F145300 */ });
             });
           }
           return;
@@ -16376,7 +16376,7 @@ let fn = () => {
               let result = 0.6666 * (date - new Date(expiresAt.createdAt));
               new Date(expiresAt.createdAt);
               clearTimeout(self._refreshPaymentContextTimeout);
-              self._refreshPaymentContextTimeout = setTimeout(function() { /* body not rendered: F145292 */ }, result);
+              self._refreshPaymentContextTimeout = setTimeout(function() { /* body not rendered: F145301 */ }, result);
               const tmp6 = closure_1 && self._tokenizationInProgress;
               if (!tmp6) {
                 ({ status: tmp4._venmoPaymentContextStatus, id: tmp4._venmoPaymentContextId } = expiresAt);
@@ -16503,7 +16503,7 @@ let fn = () => {
             str = str2.substring(1);
           }
           const parts = str.split("&");
-          const reduced = parts.reduce(f140703, {});
+          const reduced = parts.reduce(f140711, {});
           if (reduced.resourceId) {
             reduced.id = reduced.resourceId;
           }
@@ -16553,14 +16553,14 @@ let fn = () => {
             nextPromise = result.then((result) => {
               _self = result;
               const _createPromise = _self._createPromise;
-              const nextPromise = _createPromise.then(function() { /* body not rendered: F145293 */ });
-              return nextPromise.then(function() { /* body not rendered: F145294 */ });
+              const nextPromise = _createPromise.then(function() { /* body not rendered: F145302 */ });
+              return nextPromise.then(function() { /* body not rendered: F145303 */ });
             });
             rejectResult = nextPromise.catch((error) => {
               _self = error;
               const _createPromise = _self._createPromise;
-              const nextPromise = _createPromise.then(function() { /* body not rendered: F145295 */ });
-              return nextPromise.then(function() { /* body not rendered: F145296 */ });
+              const nextPromise = _createPromise.then(function() { /* body not rendered: F145304 */ });
+              return nextPromise.then(function() { /* body not rendered: F145305 */ });
             });
           }
           return rejectResult;
@@ -16603,8 +16603,8 @@ let fn = () => {
             _checkPaymentContextStatus = self._checkPaymentContextStatus;
             _checkPaymentContextStatusAndProcessResult = self._checkPaymentContextStatusAndProcessResult;
             const runWebLoginResult = runWebLogin(obj);
-            const nextPromise = runWebLoginResult.then(function() { /* body not rendered: F145297 */ });
-            nextPromise.catch(function() { /* body not rendered: F145298 */ });
+            const nextPromise = runWebLoginResult.then(function() { /* body not rendered: F145306 */ });
+            nextPromise.catch(function() { /* body not rendered: F145307 */ });
             return self._tokenizePromise;
           });
         }
@@ -16647,7 +16647,7 @@ let fn = () => {
                 return reject(tmp8);
               }
             }
-            const promise = new Promise(function() { /* body not rendered: F145299 */ });
+            const promise = new Promise(function() { /* body not rendered: F145308 */ });
             return promise;
           });
         }
@@ -16701,7 +16701,7 @@ let fn = () => {
                 const tmp9 = new closure_9(constants["VENMO_MOBILE_POLLING_TOKENIZATION_" + status.status]);
                 return reject(tmp9);
               }
-              const promise = new Promise(function() { /* body not rendered: F145300 */ });
+              const promise = new Promise(function() { /* body not rendered: F145309 */ });
               return promise;
             });
           }
@@ -16743,8 +16743,8 @@ let fn = () => {
           closure_0 = global;
           completeFlow = function completeFlow(arg0) {
             const result = self.processHashChangeFlowResults(arg0);
-            const catchPromise = result.catch(f145301);
-            catchPromise.then(function() { /* body not rendered: F145302 */ });
+            const catchPromise = result.catch(f145310);
+            catchPromise.then(function() { /* body not rendered: F145311 */ });
           };
           self = this;
           if (this.hasTokenizationResult()) {
@@ -16772,8 +16772,8 @@ let fn = () => {
                 clearTimeout(closure_2);
                 let c0;
                 let result = obj.processHashChangeFlowResults(tmp);
-                const catchPromise = result.catch(f145301);
-                catchPromise.then(function() { /* body not rendered: F145302 */ });
+                const catchPromise = result.catch(f145310);
+                catchPromise.then(function() { /* body not rendered: F145311 */ });
               }
             };
             _window2 = window;
@@ -16791,7 +16791,7 @@ let fn = () => {
             url = self.getUrl();
             return url.then((result) => {
               self.appSwitch(result);
-              const timerId = setTimeout(function() { /* body not rendered: F145303 */ }, constants.DOCUMENT_VISIBILITY_CHANGE_EVENT_DELAY);
+              const timerId = setTimeout(function() { /* body not rendered: F145312 */ }, constants.DOCUMENT_VISIBILITY_CHANGE_EVENT_DELAY);
               return self._tokenizePromise;
             });
           }
@@ -16965,8 +16965,8 @@ let fn = () => {
               }
             } else {
               const _pollForStatusChangeResult = obj._pollForStatusChange();
-              const nextPromise = _pollForStatusChangeResult.then(function() { /* body not rendered: F145304 */ });
-              nextPromise.catch(function() { /* body not rendered: F145305 */ });
+              const nextPromise = _pollForStatusChangeResult.then(function() { /* body not rendered: F145313 */ });
+              nextPromise.catch(function() { /* body not rendered: F145314 */ });
             }
             const result = obj._clearFragmentParameters();
           });
@@ -17094,7 +17094,7 @@ let fn = () => {
             settings.payment = payment;
             if (!tmp6.settings.payment.cardBrands) {
               supportedCardTypes = gatewayConfiguration.visaCheckout.supportedCardTypes;
-              tmp6.settings.payment.cardBrands = supportedCardTypes.reduce(function() { /* body not rendered: F145306 */ }, []);
+              tmp6.settings.payment.cardBrands = supportedCardTypes.reduce(function() { /* body not rendered: F145315 */ }, []);
             }
             return tmp6;
           } else {
@@ -17121,8 +17121,8 @@ let fn = () => {
                 obj1.visaCheckoutCard = obj4;
                 obj.data = obj1;
                 requestResult = _client.request(obj);
-                nextPromise = requestResult.then(function() { /* body not rendered: F140736 */ });
-                catchPromise = nextPromise.catch(function() { /* body not rendered: F140737 */ });
+                nextPromise = requestResult.then(function() { /* body not rendered: F140744 */ });
+                catchPromise = nextPromise.catch(function() { /* body not rendered: F140745 */ });
               }
               return catchPromise;
             }

@@ -1,8 +1,8 @@
-// Module ID: 17144
-// Function ID: 17145
+// Module ID: 17146
+// Function ID: 17147
 // Dependencies: [2]
 
-// Module 17144
+// Module 17146
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/user_profile/try_it_out/above_the_clouds_banner.png.js");

@@ -1,13 +1,13 @@
 // Module ID: 7319
 // Function ID: 7320
 // Name: FirstPartyRichPresenceStore
-// Dependencies: [7320, 15985, 1345, 504, 572, 2]
+// Dependencies: [7320, 15987, 1345, 504, 572, 2]
 
 // Module 7319 (FirstPartyRichPresenceStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import _modDef1345 from "module_1345" /* 1345 */;
-import StageChannelSelfRichPresenceStoreDefault from "StageChannelSelfRichPresenceStore" /* 15985 */;
+import StageChannelSelfRichPresenceStoreDefault from "StageChannelSelfRichPresenceStore" /* 15987 */;
 import ConjureRichPresenceStore from "ConjureRichPresenceStore" /* 7320 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 12880
-// Function ID: 12881
+// Module ID: 12882
+// Function ID: 12883
 // Name: useStableSafeAreaInsets
 // Dependencies: [32, 19, 1499, 1380, 1642, 1630, 12013, 2]
 // Exports: default, getStableSafeAreaInsets
 
-// Module 12880 (useStableSafeAreaInsets)
+// Module 12882 (useStableSafeAreaInsets)
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import AppEntryKeyContext from "AppEntryKeyContext" /* 1499 */;
 import react_nativeDefault from "react-native" /* 1642 */;

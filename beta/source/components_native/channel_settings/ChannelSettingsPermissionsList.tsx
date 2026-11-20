@@ -1,9 +1,9 @@
-// Module ID: 19694
-// Function ID: 19695
+// Module ID: 19696
+// Function ID: 19697
 // Name: ChannelSettingsPermissionsList
 // Dependencies: [32, 19, 17, 5155, 5218, 5212, 1388, 1072, 21, 5306, 575, 504, 7073, 1502, 1630, 7824, 8134, 5243, 7443, 11241, 2119, 10929, 7825, 1113, 7830, 1187, 8596, 2]
 
-// Module 19694 (ChannelSettingsPermissionsList)
+// Module 19696 (ChannelSettingsPermissionsList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Server from "Server" /* 2119 */;

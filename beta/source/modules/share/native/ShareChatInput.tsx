@@ -1,10 +1,10 @@
-// Module ID: 15192
-// Function ID: 15193
+// Module ID: 15194
+// Function ID: 15195
 // Name: ShareChatInput
 // Dependencies: [32, 19, 17, 1072, 21, 5306, 575, 1380, 11157, 8112, 1113, 7428, 10409, 2]
 // Exports: default
 
-// Module 15192 (ShareChatInput)
+// Module 15194 (ShareChatInput)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;

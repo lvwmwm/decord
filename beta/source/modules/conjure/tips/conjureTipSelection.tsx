@@ -1,10 +1,10 @@
-// Module ID: 13605
-// Function ID: 13606
+// Module ID: 13607
+// Function ID: 13608
 // Name: conjureTipSelection
 // Dependencies: [2]
 // Exports: selectConjureTips
 
-// Module 13605 (conjureTipSelection)
+// Module 13607 (conjureTipSelection)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/tips/conjureTipSelection.tsx");

@@ -1,14 +1,14 @@
-// Module ID: 14645
-// Function ID: 14646
+// Module ID: 14647
+// Function ID: 14648
 // Name: ThreadPlusIcon
-// Dependencies: [19, 21, 575, 6009, 14646, 2]
+// Dependencies: [19, 21, 575, 6009, 14648, 2]
 // Exports: ThreadPlusIcon
 
-// Module 14645 (ThreadPlusIcon)
+// Module 14647 (ThreadPlusIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 6009 */;
-import AssetRegistry from "AssetRegistry" /* 14646 */;
+import AssetRegistry from "AssetRegistry" /* 14648 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

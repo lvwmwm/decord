@@ -116,7 +116,7 @@ function pnpm_decayTs3(arg0, arg1) {
       initialVelocity: 0,
       current: "disabled",
       lastTimestamp: null,
-      startTimestamp: "server-calendar",
+      startTimestamp: "button",
       reduceMotion: closure_6(obj.reduceMotion)
     };
     num = obj.velocity;

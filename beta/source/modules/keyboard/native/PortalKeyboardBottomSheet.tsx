@@ -1,10 +1,10 @@
-// Module ID: 13410
-// Function ID: 13411
+// Module ID: 13412
+// Function ID: 13413
 // Name: PortalKeyboardBottomSheet
-// Dependencies: [32, 19, 17, 11041, 21, 1380, 5306, 575, 7997, 5558, 1655, 13411, 5367, 5888, 13412, 504, 5560, 5544, 7048, 1708, 2020, 5889, 5892, 1630, 1496, 5498, 5478, 6318, 11246, 5902, 2]
+// Dependencies: [32, 19, 17, 11041, 21, 1380, 5306, 575, 7997, 5558, 1655, 13413, 5367, 5888, 13414, 504, 5560, 5544, 7048, 1708, 2020, 5889, 5892, 1630, 1496, 5498, 5478, 6318, 11246, 5902, 2]
 // Exports: default
 
-// Module 13410 (PortalKeyboardBottomSheet)
+// Module 13412 (PortalKeyboardBottomSheet)
 import nativeDefault from "native" /* 575 */;
 import _modDef1655 from "module_1655" /* 1655 */;
 import HapticUtils from "HapticUtils" /* 5544 */;

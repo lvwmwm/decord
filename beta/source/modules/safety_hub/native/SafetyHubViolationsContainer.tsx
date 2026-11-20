@@ -1,10 +1,10 @@
-// Module ID: 17273
-// Function ID: 17274
+// Module ID: 17275
+// Function ID: 17276
 // Name: SafetyHubViolationsContainer
-// Dependencies: [32, 19, 17, 8231, 8206, 1072, 21, 5306, 575, 8451, 8160, 5919, 1113, 15459, 10560, 8205, 11, 17274, 8207, 6838, 14180, 2121, 14184, 504, 1256, 14182, 2]
+// Dependencies: [32, 19, 17, 8231, 8206, 1072, 21, 5306, 575, 8451, 8160, 5919, 1113, 15461, 10560, 8205, 11, 17276, 8207, 6838, 14182, 2121, 14186, 504, 1256, 14184, 2]
 // Exports: ConnectedSafetyHubViolationsContainer
 
-// Module 17273 (SafetyHubViolationsContainer)
+// Module 17275 (SafetyHubViolationsContainer)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
@@ -16,7 +16,7 @@ import WarningIcon2 from "WarningIcon" /* 8160 */;
 import SafetyHubUtils from "SafetyHubUtils" /* 8205 */;
 import SafetyHubModels from "SafetyHubModels" /* 8207 */;
 import TouchableHitBoxDefault from "TouchableHitBox" /* 8451 */;
-import useSafetyHubClassifications from "useSafetyHubClassifications" /* 14182 */;
+import useSafetyHubClassifications from "useSafetyHubClassifications" /* 14184 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -94,7 +94,7 @@ function SafetyHubViolationsHeader(count) {
   items1[1] = unpackModuleId(Text2, { variant: "footnote/normal", color: "text-muted", children: stringResult });
   items[1] = authStore2(metroRequire, obj4);
   if (opened) {
-    ChevronSmallDownIcon = tmp7(15459).ChevronSmallUpIcon;
+    ChevronSmallDownIcon = tmp7(15461).ChevronSmallUpIcon;
   } else {
     ChevronSmallDownIcon = tmp7(10560).ChevronSmallDownIcon;
   }
@@ -226,7 +226,7 @@ function ClassificationDetail(classification) {
     onPress() {
       const obj = ModalActionCreatorsDefault;
       const obj2 = { classificationId: id, source: metroImportAll.StandingTab };
-      obj.pushLazy(asyncRequire(14180, dependencyMap.paths), obj2);
+      obj.pushLazy(asyncRequire(14182, dependencyMap.paths), obj2);
     },
     children: tmp12(closure_6, obj5)
   };
@@ -255,7 +255,7 @@ class SafetyHubViolationsContainer {
     let obj11;
     let obj9;
     let status;
-    const f115024 = (classification) => {
+    const f115030 = (classification) => {
       const obj = { classification };
       return closure_1_11(ClassificationDetail, obj, classification.id);
     };
@@ -270,7 +270,7 @@ class SafetyHubViolationsContainer {
     const tmp4 = first1(react.useState(3), 2);
     first1 = tmp4[0];
     react = tmp4[1];
-    let obj = classifications(14184);
+    let obj = classifications(14186);
     const safetyHubAccountStanding = obj.useSafetyHubAccountStanding();
     const items = [memo];
     const obj2 = classifications(504);
@@ -305,9 +305,9 @@ class SafetyHubViolationsContainer {
     items3[0] = closure_11(SafetyHubViolationsHeader, obj4);
     if (opened) {
       const obj5 = { style: tmp.separator };
-      const items4 = [closure_11(stateFromStores, obj5), memo.length > 0 && memo.map(f115024), , , ];
+      const items4 = [closure_11(stateFromStores, obj5), memo.length > 0 && memo.map(f115030), , , ];
       let tmp11Result = memo.length < classifications.length;
-      memo.length > 0 && memo.map(f115024);
+      memo.length > 0 && memo.map(f115030);
       if (tmp11Result) {
         const obj6 = { children: items5 };
         const obj7 = { style: tmp.separator };

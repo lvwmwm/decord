@@ -1,10 +1,10 @@
-// Module ID: 12446
-// Function ID: 12447
+// Module ID: 12448
+// Function ID: 12449
 // Name: conjureMessageAuthors
 // Dependencies: [5, 19, 1388, 7350, 504, 2]
 // Exports: requestMessageAuthor, resolveMessageAuthor, useMessageAuthorUser
 
-// Module 12446 (conjureMessageAuthors)
+// Module 12448 (conjureMessageAuthors)
 import UserActionCreatorsAll from "UserActionCreators" /* 7350 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;

@@ -1,10 +1,10 @@
-// Module ID: 19847
-// Function ID: 19848
+// Module ID: 19849
+// Function ID: 19850
 // Name: HexagonCampaignExpiredPromoSheet
-// Dependencies: [5, 32, 19, 5152, 21, 17085, 6957, 17635, 5889, 6005, 1113, 8834, 17104, 10713, 17642, 4516, 5919, 5926, 2]
+// Dependencies: [5, 32, 19, 5152, 21, 17087, 6957, 17637, 5889, 6005, 1113, 8834, 17106, 10713, 17644, 4516, 5919, 5926, 2]
 // Exports: default
 
-// Module 19847 (HexagonCampaignExpiredPromoSheet)
+// Module 19849 (HexagonCampaignExpiredPromoSheet)
 import Fragment from "Fragment" /* 21 */;
 import _modDef4516 from "module_4516" /* 4516 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
@@ -32,9 +32,9 @@ export default function HexagonCampaignExpiredPromoSheet(markAsDismissed) {
   importDefault = undefined;
   let callback;
   react = undefined;
-  const tmp = markAsDismissed(17085);
+  const tmp = markAsDismissed(17087);
   const useTrackHexagonCampaignContentViewed = tmp.useTrackHexagonCampaignContentViewed;
-  const trackHexagonCampaignContentViewed = useTrackHexagonCampaignContentViewed(markAsDismissed(6957).QuestContent.AD_PERK_MODAL, markAsDismissed(17085).HexagonCampaignContentSurface.EXPIRED_SHEET, true);
+  const trackHexagonCampaignContentViewed = useTrackHexagonCampaignContentViewed(markAsDismissed(6957).QuestContent.AD_PERK_MODAL, markAsDismissed(17087).HexagonCampaignContentSurface.EXPIRED_SHEET, true);
   const tmp3 = callback(react.useState(false), 2);
   [tmp4, c1] = tmp3;
   dependencyMap = react.useRef(false);

@@ -1,9 +1,9 @@
-// Module ID: 12525
-// Function ID: 12526
+// Module ID: 12527
+// Function ID: 12528
 // Name: GuildChannelUserList
-// Dependencies: [32, 19, 17, 7315, 5155, 5218, 5177, 5209, 1388, 1072, 21, 10247, 504, 11621, 7075, 550, 12526, 7918, 7824, 5243, 12528, 8131, 6341, 5362, 1113, 8476, 575, 7825, 10577, 2]
+// Dependencies: [32, 19, 17, 7315, 5155, 5218, 5177, 5209, 1388, 1072, 21, 10247, 504, 11621, 7075, 550, 12528, 7918, 7824, 5243, 12530, 8131, 6341, 5362, 1113, 8476, 575, 7825, 10577, 2]
 
-// Module 12525 (GuildChannelUserList)
+// Module 12527 (GuildChannelUserList)
 import react_native from "react-native" /* 17 */;
 import intl2 from "intl" /* 1113 */;
 import PermissionUtilsAll from "PermissionUtils" /* 5243 */;

@@ -1,9 +1,9 @@
-// Module ID: 20317
-// Function ID: 20318
+// Module ID: 20319
+// Function ID: 20320
 // Name: MetricKitManager
 // Dependencies: [7882, 2]
 
-// Module 20317 (MetricKitManager)
+// Module 20319 (MetricKitManager)
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;
 import size from "module_2" /* 2 */;
 

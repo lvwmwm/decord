@@ -27,7 +27,7 @@ let uniqueKey;
 
 let tmp;
 const UserProfileClipsGalleryWidgetTypes = tmp(7360);
-const f103939 = (item) => item instanceof UserProfileClipsGalleryWidgetTypes.ClipsGalleryWidget;
+const f103943 = (item) => item instanceof UserProfileClipsGalleryWidgetTypes.ClipsGalleryWidget;
 function findGameWidget(widgetType) {
   let widgets;
   let closure_0 = widgetType;
@@ -258,7 +258,7 @@ export function addUploadingClipToClipsGalleryWidget(arg0) {
       widgets = [];
     }
   }
-  let found = widgets.find(f103939);
+  let found = widgets.find(f103943);
   if (found == null) {
     found = null;
   }
@@ -314,7 +314,7 @@ export function hasUploadingClipInClipsGalleryWidget(arg0) {
       widgets = [];
     }
   }
-  let found = widgets.find(f103939);
+  let found = widgets.find(f103943);
   if (found == null) {
     found = null;
   }
@@ -355,7 +355,7 @@ export function updateUnsavedClipThumbnailInClipsGalleryWidget(arg0, arg1) {
       widgets = [];
     }
   }
-  let found = widgets.find(f103939);
+  let found = widgets.find(f103943);
   if (found == null) {
     found = null;
   }
@@ -417,7 +417,7 @@ export function commitUploadedClipInClipsGalleryWidget(arg0, arg1) {
       widgets = [];
     }
   }
-  let found = widgets.find(f103939);
+  let found = widgets.find(f103943);
   if (found == null) {
     found = null;
   }
@@ -483,7 +483,7 @@ export function updateClipTitleInClipsGalleryWidget(arg0, str) {
       widgets = [];
     }
   }
-  let found = widgets.find(f103939);
+  let found = widgets.find(f103943);
   if (found == null) {
     found = null;
   }
@@ -538,7 +538,7 @@ export function reorderClipsInClipsGalleryWidget(arg0, arg1) {
       widgets = [];
     }
   }
-  let found = widgets.find(f103939);
+  let found = widgets.find(f103943);
   if (found == null) {
     found = null;
   }
@@ -591,7 +591,7 @@ export function updateClipTagsInClipsGalleryWidget(arg0, arg1) {
         widgets = [];
       }
     }
-    let found = widgets.find(f103939);
+    let found = widgets.find(f103943);
     if (found == null) {
       found = null;
     }
@@ -651,7 +651,7 @@ export function removeTagFromClip(arg0, arg1) {
       widgets = [];
     }
   }
-  let found = widgets.find(f103939);
+  let found = widgets.find(f103943);
   if (found == null) {
     found = null;
   }
@@ -693,7 +693,7 @@ export function removeTagFromClip(arg0, arg1) {
             widgets1 = [];
           }
         }
-        let found3 = widgets1.find(f103939);
+        let found3 = widgets1.find(f103943);
         if (found3 == null) {
           found3 = null;
         }
@@ -752,7 +752,7 @@ export function removeClipFromClipsGalleryWidget(arg0) {
       widgets = [];
     }
   }
-  let found = widgets.find(f103939);
+  let found = widgets.find(f103943);
   if (found == null) {
     found = null;
   }

@@ -1,10 +1,10 @@
-// Module ID: 17423
-// Function ID: 17424
+// Module ID: 17425
+// Function ID: 17426
 // Name: useSelectedTeenUser
 // Dependencies: [1388, 8743, 8740, 9617, 563, 2]
 // Exports: useHasLoadedSettingsForTeen, useSelectedTeenUser, useShouldLoadSettingsForSelectedTeenUser, useTeenUserForId
 
-// Module 17423 (useSelectedTeenUser)
+// Module 17425 (useSelectedTeenUser)
 import useIsInAdultAgeGroupDefault from "useIsInAdultAgeGroup" /* 9617 */;
 import UserStore from "UserStore" /* 1388 */;
 import FamilyCenterControlledSettingsStore from "FamilyCenterControlledSettingsStore" /* 8743 */;

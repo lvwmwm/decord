@@ -1,10 +1,10 @@
-// Module ID: 18428
-// Function ID: 18429
+// Module ID: 18430
+// Function ID: 18431
 // Name: UserSettingsDesignSystemSegmentedControl
-// Dependencies: [32, 19, 17, 21, 5306, 575, 5919, 7994, 7983, 6327, 11251, 14944, 5926, 5315, 2]
+// Dependencies: [32, 19, 17, 21, 5306, 575, 5919, 7994, 7983, 6327, 11251, 14946, 5926, 5315, 2]
 // Exports: default
 
-// Module 18428 (UserSettingsDesignSystemSegmentedControl)
+// Module 18430 (UserSettingsDesignSystemSegmentedControl)
 import nativeDefault from "native" /* 575 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5315 */;
 import useMeasuredLayoutDefault from "useMeasuredLayout" /* 7994 */;
@@ -80,7 +80,7 @@ export default function UserSettingsDesignSystemSegmentedControl() {
   obj3 = { style: tmp5.container, ref, onLayout, children: closure_7(Stack, obj4) };
   obj4 = { spacing: 24, children: items1 };
   Stack = first(6327).Stack;
-  items1 = [closure_8(first(11251).SegmentedControl, { state: segmentedControlState }), closure_8(first(14944).SegmentedControlPages, { state: segmentedControlState }), ];
+  items1 = [closure_8(first(11251).SegmentedControl, { state: segmentedControlState }), closure_8(first(14946).SegmentedControlPages, { state: segmentedControlState }), ];
   const obj5 = { spacing: 8, direction: "horizontal", children: items2 };
   const Stack2 = first(6327).Stack;
   items2 = [, ];

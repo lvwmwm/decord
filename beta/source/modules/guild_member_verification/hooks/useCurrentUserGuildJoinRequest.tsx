@@ -1,10 +1,10 @@
-// Module ID: 14887
-// Function ID: 14888
+// Module ID: 14889
+// Function ID: 14890
 // Name: useCurrentUserGuildJoinRequest
 // Dependencies: [5340, 504, 2]
 // Exports: useCurrentUserGuildJoinRequest
 
-// Module 14887 (useCurrentUserGuildJoinRequest)
+// Module 14889 (useCurrentUserGuildJoinRequest)
 import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 5340 */;
 import size from "module_2" /* 2 */;
 

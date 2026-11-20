@@ -1,10 +1,10 @@
-// Module ID: 18828
-// Function ID: 18829
+// Module ID: 18830
+// Function ID: 18831
 // Name: RedesignCategory
-// Dependencies: [19, 17, 8734, 7881, 6948, 6050, 21, 5306, 1380, 575, 5919, 13997, 7428, 10560, 12475, 10894, 504, 5944, 15153, 18829, 18830, 7877, 1113, 7949, 12476, 7629, 2]
+// Dependencies: [19, 17, 8734, 7881, 6948, 6050, 21, 5306, 1380, 575, 5919, 13999, 7428, 10560, 12477, 10894, 504, 5944, 15155, 18831, 18832, 7877, 1113, 7949, 12478, 7629, 2]
 // Exports: CategoryChannel, RecentlyActiveCategory, SuggestedCategory, useCategoryPressEvents
 
-// Module 18828 (RedesignCategory)
+// Module 18830 (RedesignCategory)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
@@ -13,9 +13,9 @@ import useChannelNameDefault from "useChannelName" /* 5944 */;
 import CircleXIcon from "CircleXIcon" /* 7629 */;
 import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 7877 */;
 import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 7949 */;
-import useFavoritesGuildCategoryAddActionDefault from "useFavoritesGuildCategoryAddAction" /* 15153 */;
-import useFavoritesGuildCategoryFullNoticeDefault from "useFavoritesGuildCategoryFullNotice" /* 18829 */;
-import useFavoritesGuildCategoryLongPressDefault from "useFavoritesGuildCategoryLongPress" /* 18830 */;
+import useFavoritesGuildCategoryAddActionDefault from "useFavoritesGuildCategoryAddAction" /* 15155 */;
+import useFavoritesGuildCategoryFullNoticeDefault from "useFavoritesGuildCategoryFullNotice" /* 18831 */;
+import useFavoritesGuildCategoryLongPressDefault from "useFavoritesGuildCategoryLongPress" /* 18832 */;
 import react from "react" /* 19 */;
 import RecentlyActiveCollapseStore from "RecentlyActiveCollapseStore" /* 8734 */;
 import CategoryCollapseStore from "CategoryCollapseStore" /* 7881 */;
@@ -92,7 +92,7 @@ function renderCategoryItem(muted) {
     Icon = trailingAction.Icon;
   }
   if (Icon == null) {
-    Icon = trailingAction(13997).PlusMediumIcon;
+    Icon = trailingAction(13999).PlusMediumIcon;
   }
   let tmp10Result = null;
   if (null != trailingAction) {

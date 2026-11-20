@@ -1,22 +1,22 @@
-// Module ID: 20782
-// Function ID: 20783
+// Module ID: 20784
+// Function ID: 20785
 // Name: GuildSettingsRoleSubscriptionTierTemplateSelection
-// Dependencies: [32, 19, 17, 17853, 20733, 1072, 21, 575, 5306, 5919, 7888, 20783, 563, 17833, 17834, 13543, 20789, 1630, 1502, 1256, 6057, 20742, 10901, 1113, 7493, 6328, 1264, 20729, 1187, 2]
+// Dependencies: [32, 19, 17, 17855, 20735, 1072, 21, 575, 5306, 5919, 7888, 20785, 563, 17835, 17836, 13545, 20791, 1630, 1502, 1256, 6057, 20744, 10901, 1113, 7493, 6328, 1264, 20731, 1187, 2]
 // Exports: default
 
-// Module 20782 (GuildSettingsRoleSubscriptionTierTemplateSelection)
+// Module 20784 (GuildSettingsRoleSubscriptionTierTemplateSelection)
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6057 */;
 import NavigatorHeader from "NavigatorHeader" /* 7493 */;
-import GroupListingsFetchContext from "GroupListingsFetchContext" /* 17834 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 20733 */;
-import GuildRoleSubscriptionsActionCreatorExtrasAll from "GuildRoleSubscriptionsActionCreatorExtras" /* 20742 */;
-import GuildRoleSubscriptionTierTemplatePreviewCardDefault from "GuildRoleSubscriptionTierTemplatePreviewCard" /* 20783 */;
+import GroupListingsFetchContext from "GroupListingsFetchContext" /* 17836 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 20735 */;
+import GuildRoleSubscriptionsActionCreatorExtrasAll from "GuildRoleSubscriptionsActionCreatorExtras" /* 20744 */;
+import GuildRoleSubscriptionTierTemplatePreviewCardDefault from "GuildRoleSubscriptionTierTemplatePreviewCard" /* 20785 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildRoleSubscriptionTierTemplatesStore from "GuildRoleSubscriptionTierTemplatesStore" /* 17853 */;
+import GuildRoleSubscriptionTierTemplatesStore from "GuildRoleSubscriptionTierTemplatesStore" /* 17855 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
@@ -74,7 +74,7 @@ function TierTemplatesRenderer(groupListingId) {
                   return closure_1_13(closure_1_8, obj);
                 },
           decelerationRate: "fast",
-          snapToInterval: guildId(20783).CARD_WIDTH + PX_16,
+          snapToInterval: guildId(20785).CARD_WIDTH + PX_16,
           renderItem(template) {
                   const obj = { template: template.item, priceTiers: tiers, guildId, groupListingId, editGroupId: guildId };
                   return map1(GuildRoleSubscriptionTierTemplatePreviewCardDefault, obj);

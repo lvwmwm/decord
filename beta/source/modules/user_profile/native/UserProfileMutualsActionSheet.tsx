@@ -1,10 +1,10 @@
-// Module ID: 14938
-// Function ID: 14939
+// Module ID: 14940
+// Function ID: 14941
 // Name: UserProfileMutualsActionSheet
-// Dependencies: [19, 17, 6058, 8479, 21, 5306, 575, 7027, 504, 7443, 1187, 6341, 10845, 7720, 5919, 7994, 14931, 7983, 14939, 14940, 14932, 14933, 14934, 1113, 13262, 14944, 2]
+// Dependencies: [19, 17, 6058, 8479, 21, 5306, 575, 7027, 504, 7443, 1187, 6341, 10845, 7720, 5919, 7994, 14933, 7983, 14941, 14942, 14934, 14935, 14936, 1113, 13264, 14946, 2]
 // Exports: default
 
-// Module 14938 (UserProfileMutualsActionSheet)
+// Module 14940 (UserProfileMutualsActionSheet)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import NicknameUtilsDefault from "NicknameUtils" /* 6341 */;
@@ -13,10 +13,10 @@ import GuildIcon from "GuildIcon" /* 7720 */;
 import useMeasuredLayoutDefault from "useMeasuredLayout" /* 7994 */;
 import Constants from "Constants" /* 8479 */;
 import ActivityStatusDefault from "ActivityStatus" /* 10845 */;
-import useUserProfileMutualsDefault from "useUserProfileMutuals" /* 14931 */;
-import UserProfileStackedActionSheetDefault from "UserProfileStackedActionSheet" /* 14932 */;
-import getMutualGuildsLabelDefault from "getMutualGuildsLabel" /* 14933 */;
-import getMutualFriendsLabelDefault from "getMutualFriendsLabel" /* 14939 */;
+import useUserProfileMutualsDefault from "useUserProfileMutuals" /* 14933 */;
+import UserProfileStackedActionSheetDefault from "UserProfileStackedActionSheet" /* 14934 */;
+import getMutualGuildsLabelDefault from "getMutualGuildsLabel" /* 14935 */;
+import getMutualFriendsLabelDefault from "getMutualFriendsLabel" /* 14941 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import PresenceStore from "PresenceStore" /* 6058 */;
@@ -172,7 +172,7 @@ export default function UserProfileMutualsActionSheet(user) {
     tmp11 = closure_7(closure_3, obj3);
     tmp10 = closure_7;
   } else if (0 === mutualFriends.length) {
-    const obj4 = { style: tmp.emptyState, children: closure_7(user(14940).NoMutualFriends, {}) };
+    const obj4 = { style: tmp.emptyState, children: closure_7(user(14942).NoMutualFriends, {}) };
     tmp11 = closure_7(closure_3, obj4);
     tmp10 = closure_7;
   } else {
@@ -196,7 +196,7 @@ export default function UserProfileMutualsActionSheet(user) {
           return closure_1_7(MutualFriendRow, obj);
         }
     };
-    tmp11 = closure_7(tmp6(14932).UserProfileStackedActionSheetList, obj5);
+    tmp11 = closure_7(tmp6(14934).UserProfileStackedActionSheetList, obj5);
   }
   items = [obj2, ];
   let length1;
@@ -209,7 +209,7 @@ export default function UserProfileMutualsActionSheet(user) {
     const obj7 = { style: tmp.loadingState, children: tmp10(closure_4, {}) };
     tmp10Result = tmp10(closure_3, obj7);
   } else if (0 === mutualGuilds.length) {
-    const obj8 = { style: tmp.emptyState, children: tmp10(user(14934).NoMutualServers, {}) };
+    const obj8 = { style: tmp.emptyState, children: tmp10(user(14936).NoMutualServers, {}) };
     tmp10Result = tmp10(closure_3, obj8);
   } else {
     const obj9 = {
@@ -231,7 +231,7 @@ export default function UserProfileMutualsActionSheet(user) {
           return closure_1_7(MutualGuildRow, obj);
         }
     };
-    tmp10Result = tmp10(tmp6(14932).UserProfileStackedActionSheetList, obj9);
+    tmp10Result = tmp10(tmp6(14934).UserProfileStackedActionSheetList, obj9);
   }
   items[1] = obj6;
   const segmentedControlState = useSegmentedControlState(obj);
@@ -240,9 +240,9 @@ export default function UserProfileMutualsActionSheet(user) {
   intl = tmp6(1113).intl;
   obj11 = { style: tmp.container, ref, onLayout, children: items1 };
   items1 = [, ];
-  const obj12 = { children: tmp10(user(13262).Tabs, { state: segmentedControlState }) };
+  const obj12 = { children: tmp10(user(13264).Tabs, { state: segmentedControlState }) };
   items1[0] = tmp10(closure_3, obj12);
-  items1[1] = tmp10(user(14944).SegmentedControlPages, { state: segmentedControlState, bounces: false });
+  items1[1] = tmp10(user(14946).SegmentedControlPages, { state: segmentedControlState, bounces: false });
   return tmp10(tmp2Result4, obj10);
 };
 export { MutualGuildRow };

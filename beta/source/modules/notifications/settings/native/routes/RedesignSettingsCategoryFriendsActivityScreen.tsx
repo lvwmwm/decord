@@ -1,17 +1,17 @@
-// Module ID: 18630
-// Function ID: 18631
+// Module ID: 18632
+// Function ID: 18633
 // Name: RedesignSettingsCategoryFriendsActivityScreen
-// Dependencies: [19, 9202, 21, 18620, 1113, 12406, 5889, 18111, 18621, 2]
+// Dependencies: [19, 9202, 21, 18622, 1113, 12408, 5889, 18113, 18623, 2]
 
-// Module 18630 (RedesignSettingsCategoryFriendsActivityScreen)
+// Module 18632 (RedesignSettingsCategoryFriendsActivityScreen)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
 import useMountEffectDefault from "useMountEffect" /* 5889 */;
 import SettingsConstants from "SettingsConstants" /* 9202 */;
-import SettingBuilders from "SettingBuilders" /* 12406 */;
-import FamilyCenterAgeGroupPrefetch from "FamilyCenterAgeGroupPrefetch" /* 18111 */;
-import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 18620 */;
-import SystemNotifPermissionLayoutDefault from "SystemNotifPermissionLayout" /* 18621 */;
+import SettingBuilders from "SettingBuilders" /* 12408 */;
+import FamilyCenterAgeGroupPrefetch from "FamilyCenterAgeGroupPrefetch" /* 18113 */;
+import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 18622 */;
+import SystemNotifPermissionLayoutDefault from "SystemNotifPermissionLayout" /* 18623 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

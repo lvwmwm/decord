@@ -1,10 +1,10 @@
-// Module ID: 19355
-// Function ID: 19356
+// Module ID: 19357
+// Function ID: 19358
 // Name: NewContentPill
-// Dependencies: [32, 19, 17, 5177, 10205, 21, 5306, 575, 9503, 7720, 504, 5537, 10210, 10216, 1655, 5929, 1505, 7428, 14031, 5919, 1113, 5313, 2]
+// Dependencies: [32, 19, 17, 5177, 10205, 21, 5306, 575, 9503, 7720, 504, 5537, 10210, 10216, 1655, 5929, 1505, 7428, 14033, 5919, 1113, 5313, 2]
 // Exports: default
 
-// Module 19355 (NewContentPill)
+// Module 19357 (NewContentPill)
 import nativeDefault from "native" /* 575 */;
 import GuildIcon from "GuildIcon" /* 7720 */;
 import ClipView from "ClipView" /* 9503 */;

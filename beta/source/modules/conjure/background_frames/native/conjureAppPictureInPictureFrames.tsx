@@ -1,37 +1,37 @@
-// Module ID: 16993
-// Function ID: 16994
+// Module ID: 16995
+// Function ID: 16996
 // Name: conjureAppPictureInPictureFrames
-// Dependencies: [2165, 7019, 1194, 15974, 7017, 7020, 16992, 7339, 16989, 16994, 7348, 504, 15149, 6005, 1113, 4131, 12743, 2]
+// Dependencies: [2165, 7019, 1194, 15976, 7017, 7020, 16994, 7339, 16991, 16996, 7348, 504, 15151, 6005, 1113, 4131, 12745, 2]
 // Exports: enterConjureAppPictureInPicture, exitConjureAppPictureInPicture, getFloatableFrames, getStrandedFloatingFrames, isConjureAppPictureInPictureInteractive, useConjureAppPictureInPictureFrameIds
 
-// Module 16993 (conjureAppPictureInPictureFrames)
+// Module 16995 (conjureAppPictureInPictureFrames)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1113 */;
 import _modDef4131 from "module_4131" /* 4131 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 6005 */;
 import conjurePreviewSurface from "conjurePreviewSurface" /* 7339 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 12743 */;
-import closeFrameDefault from "closeFrame" /* 15149 */;
-import conjureBackgroundFrameRules from "conjureBackgroundFrameRules" /* 16989 */;
-import isConjureAppChannelFrameDefault from "isConjureAppChannelFrame" /* 16992 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 12745 */;
+import closeFrameDefault from "closeFrame" /* 15151 */;
+import conjureBackgroundFrameRules from "conjureBackgroundFrameRules" /* 16991 */;
+import isConjureAppChannelFrameDefault from "isConjureAppChannelFrame" /* 16994 */;
 import ApplicationStore from "ApplicationStore" /* 2165 */;
 import FramesStore from "FramesStore" /* 7019 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1194 */;
-import ConjureBuilderPreviewStore from "ConjureBuilderPreviewStore" /* 15974 */;
+import ConjureBuilderPreviewStore from "ConjureBuilderPreviewStore" /* 15976 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 7017 */;
 import FramesConstants from "FramesConstants" /* 7020 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
 let metroRequire;
-const f114393 = (id) => id.id;
+const f114399 = (id) => id.id;
 function canFloat(id) {
   let tmp3;
   if (isConjureAppChannelFrameDefault(id)) {
     const obj = conjureBackgroundFrameRules;
     tmp3 = !obj.isBuilderPreviewFrame(id);
   } else {
-    tmp3 = tmp(16994)(id);
+    tmp3 = tmp(16996)(id);
   }
   if (tmp3) {
     tmp3 = tmp(7348)(id, UnsyncedUserSettingsStore);
@@ -52,7 +52,7 @@ function isConjureAppPictureInPictureFrame(frame) {
     const obj = conjureBackgroundFrameRules;
     tmp3 = !obj.isBuilderPreviewFrame(frame);
   } else {
-    tmp3 = tmp(16994)(frame);
+    tmp3 = tmp(16996)(frame);
   }
   if (tmp3) {
     tmp3 = tmp(7348)(frame, UnsyncedUserSettingsStore);
@@ -78,7 +78,7 @@ function isConjureAppPictureInPictureFrame(frame) {
 function getConjureAppPictureInPictureFrameIds() {
   const allFrames = FramesStore.getAllFrames();
   const found = allFrames.filter(isConjureAppPictureInPictureFrame);
-  return found.map(f114393);
+  return found.map(f114399);
 }
 function closeToMakeRoom(frameId) {
   let intl;
@@ -182,7 +182,7 @@ export function enterConjureAppPictureInPicture(id) {
       const obj2 = conjureBackgroundFrameRules;
       tmp2 = !obj2.isBuilderPreviewFrame(frame);
     } else {
-      tmp2 = tmp13(16994)(frame);
+      tmp2 = tmp13(16996)(frame);
     }
     if (tmp2) {
       tmp2 = tmp13(7348)(frame, UnsyncedUserSettingsStore);
@@ -200,7 +200,7 @@ export function enterConjureAppPictureInPicture(id) {
       if (!isConjureAppPictureInPictureFrame(frame)) {
         const allFrames = obj.getAllFrames();
         const found = allFrames.filter(tmp7);
-        const mapped = found.map(f114393);
+        const mapped = found.map(f114399);
         const _Math = Math;
         const substr = mapped.slice(0, Math.max(0, mapped.length - 2 + 1));
         const item = substr.forEach(closeToMakeRoom);

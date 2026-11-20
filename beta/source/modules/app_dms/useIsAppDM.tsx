@@ -1,10 +1,10 @@
-// Module ID: 13479
-// Function ID: 13480
+// Module ID: 13481
+// Function ID: 13482
 // Name: useIsAppDM
 // Dependencies: [1388, 563, 2]
 // Exports: default
 
-// Module 13479 (useIsAppDM)
+// Module 13481 (useIsAppDM)
 import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
 

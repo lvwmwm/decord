@@ -1,9 +1,9 @@
-// Module ID: 18757
-// Function ID: 18758
+// Module ID: 18759
+// Function ID: 18760
 // Name: MessagesItemChannelContent
-// Dependencies: [19, 17, 7015, 6949, 21, 5306, 575, 1187, 8557, 7634, 11084, 10540, 5328, 5537, 504, 17940, 2169, 7067, 18758, 11, 5944, 18759, 5892, 10064, 10065, 5919, 10654, 10870, 11045, 5984, 10845, 1113, 18761, 2]
+// Dependencies: [19, 17, 7015, 6949, 21, 5306, 575, 1187, 8557, 7634, 11084, 10540, 5328, 5537, 504, 17942, 2169, 7067, 18760, 11, 5944, 18761, 5892, 10064, 10065, 5919, 10654, 10870, 11045, 5984, 10845, 1113, 18763, 2]
 
-// Module 18757 (MessagesItemChannelContent)
+// Module 18759 (MessagesItemChannelContent)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
@@ -20,8 +20,8 @@ import AssetRegistryDefault3 from "AssetRegistry" /* 10540 */;
 import ActivityStatusDefault from "ActivityStatus" /* 10845 */;
 import BotTagDefault from "BotTag" /* 10870 */;
 import AssetRegistryDefault4 from "AssetRegistry" /* 11084 */;
-import useMessagePreviewsDefault from "useMessagePreviews" /* 17940 */;
-import usePrivateChannelWaveDefault from "usePrivateChannelWave" /* 18759 */;
+import useMessagePreviewsDefault from "useMessagePreviews" /* 17942 */;
+import usePrivateChannelWaveDefault from "usePrivateChannelWave" /* 18761 */;
 import react from "react" /* 19 */;
 import ReadStateStore from "ReadStateStore" /* 7015 */;
 import Fragment from "Fragment" /* 21 */;
@@ -171,8 +171,8 @@ const memoResult = react.memo(function MessagesItemChannelContent(channel) {
   if (tmp12) {
     tmp12 = !tmp3(7067)(channel.id);
   }
-  const useRelativeTimestamp = channel(18758).useRelativeTimestamp;
-  channel(18758);
+  const useRelativeTimestamp = channel(18760).useRelativeTimestamp;
+  channel(18760);
   let id = stateFromStores;
   const extractTimestamp = SnowflakeUtilsDefault.extractTimestamp;
   SnowflakeUtilsDefault;
@@ -318,7 +318,7 @@ const memoResult = react.memo(function MessagesItemChannelContent(channel) {
       const tmp43 = closure_8;
       if (waveShouldShow) {
         const obj23 = { wavePressed, hasNameplate };
-        tmp22Result8 = tmp22(tmp3(18761), obj23);
+        tmp22Result8 = tmp22(tmp3(18763), obj23);
       }
       const obj24 = { children: items9 };
       items9[1] = tmp22Result8;

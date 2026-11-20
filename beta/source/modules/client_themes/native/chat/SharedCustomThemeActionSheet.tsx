@@ -1,10 +1,10 @@
-// Module ID: 14555
-// Function ID: 14556
+// Module ID: 14557
+// Function ID: 14558
 // Name: SharedCustomThemeActionSheet
-// Dependencies: [32, 19, 17, 2179, 1072, 1390, 21, 5306, 575, 1256, 14556, 5366, 5556, 7913, 1113, 2933, 5919, 6232, 5926, 504, 2174, 9590, 7937, 1187, 1239, 2]
+// Dependencies: [32, 19, 17, 2179, 1072, 1390, 21, 5306, 575, 1256, 14558, 5366, 5556, 7913, 1113, 2933, 5919, 6232, 5926, 504, 2174, 9590, 7937, 1187, 1239, 2]
 // Exports: default
 
-// Module 14555 (SharedCustomThemeActionSheet)
+// Module 14557 (SharedCustomThemeActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -17,7 +17,7 @@ import ThemeActionCreators from "ThemeActionCreators" /* 5366 */;
 import UserSettingsActionCreators from "UserSettingsActionCreators" /* 6232 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
 import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 9590 */;
-import CustomThemeMobileActionCreators from "CustomThemeMobileActionCreators" /* 14556 */;
+import CustomThemeMobileActionCreators from "CustomThemeMobileActionCreators" /* 14558 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import "react";
 import react from "react" /* 19 */;
@@ -99,7 +99,7 @@ export default function _default(message) {
   let items4;
   let items5;
   let obj8;
-  const f109563 = (item) => "#" + item;
+  const f109569 = (item) => "#" + item;
   const sharedClientTheme = message.message.sharedClientTheme;
   let tmp = closure_14();
   let tmp2 = closure_7(null);
@@ -108,7 +108,7 @@ export default function _default(message) {
   let tmp4;
   const useState = first1.useState;
   if (undefined !== sharedClientTheme) {
-    let obj4 = { colors: colors.map(f109563), gradientColorStops: [], gradientAngle: null, baseMix: null };
+    let obj4 = { colors: colors.map(f109569), gradientColorStops: [], gradientAngle: null, baseMix: null };
     colors = sharedClientTheme.colors;
     ({ gradient_angle: obj2.gradientAngle, base_mix: obj2.baseMix } = sharedClientTheme);
     tmp4 = obj4;
@@ -133,7 +133,7 @@ export default function _default(message) {
     let tmp4;
     const tmp = closure_3;
     if (undefined !== sharedClientTheme) {
-      const obj = { colors: colors.map(f109563), gradientColorStops: [], gradientAngle: null, baseMix: null };
+      const obj = { colors: colors.map(f109569), gradientColorStops: [], gradientAngle: null, baseMix: null };
       colors = tmp2.colors;
       ({ gradient_angle: obj.gradientAngle, base_mix: obj.baseMix } = sharedClientTheme);
       tmp4 = obj;

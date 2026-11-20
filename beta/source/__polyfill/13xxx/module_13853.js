@@ -1,103 +1,195 @@
 // Module ID: 13853
 // Function ID: 13854
-// Dependencies: [13826, 13831]
+// Dependencies: []
 
 // Module 13853
-import TokenStream from "TokenStream" /* 13826 */;
-import tokenize from "tokenize" /* 13831 */;
-
-function prepareTokens(arg0, items) {
-  let node1 = null;
-  if (items) {
-    node1 = items[0].node;
-  }
-  items = [];
-  tokenize(arg0, closure_2);
-  let num = 0;
-  let num2 = 0;
-  while (!closure_2.eof) {
-    let tmp6 = node1;
-    let tmp7 = num;
-    let tmp8 = num2;
-    if (items) {
-      tmp6 = node1;
-      tmp7 = num;
-      tmp8 = num2;
-      if (num < items.length) {
-        let tmp12 = num;
-        let tmp13 = num2;
-        tmp6 = node1;
-        tmp7 = num;
-        tmp8 = num2;
-        if (num2 + items[num].len <= closure_2.tokenStart) {
-          let sum = tmp12 + 1;
-          let sum1 = tmp13 + items[tmp12].len;
-          let node = items[sum].node;
-          tmp6 = node;
-          tmp8 = sum1;
-          tmp7 = sum;
-          while (sum < items.length) {
-            tmp12 = sum;
-            tmp13 = sum1;
-            tmp6 = node;
-            tmp7 = sum;
-            tmp8 = sum1;
-            if (sum1 + items[sum].len > closure_2.tokenStart) {
-              break;
-            }
-          }
-        }
-      }
-    }
-    let obj = { type: closure_2.tokenType, value: closure_2.getTokenValue(), index: closure_2.tokenIndex, balance: closure_2.balance[closure_2.tokenIndex], node: tmp6 };
-    let push = items.push;
-    let arr = push(obj);
-    let nextResult = closure_2.next();
-    node1 = tmp6;
-    num = tmp7;
-    num2 = tmp8;
-  }
-  return items;
+function noop(arg0) {
+  return arg0;
 }
-let tmp = new TokenStream();
-let closure_2 = tmp;
-let closure_3 = {
-  decorator(children) {
-    let node = null;
-    let obj = { len: 0, node: null };
-    const items = [obj];
-    let closure_4 = "";
-    return {
-      children: children.children,
-      node(arg0) {
-        let closure_1 = arg0;
-        node = children.node;
-        node.call(this, arg0);
-        const tmp = closure_1;
-        closure_1 = tmp;
-      },
-      chunk(arg0) {
-        closure_4 = closure_4 + arg0;
-        if (obj.node !== node) {
-          obj = { len: arg0.length, node };
-          items.push(obj);
-        } else {
-          obj.len = obj.len + arg0.length;
+function generate(type, fn, arg2, arg3) {
+  let closure_1;
+  let str = ",";
+  switch (type.type) {
+    case "Group":
+    {
+      let closure_0 = fn;
+      generate = arg2;
+      let closure_2 = arg3;
+      if (" " !== type.combinator) {
+        let combinator;
+        if (!arg3) {
+          combinator = `${" " + type.combinator} `;
         }
-      },
-      result() {
-        return prepareTokens(closure_4, items);
+        const terms = type.terms;
+        const mapped = terms.map((item) => generate(item, fn, closure_1, closure_2));
+        const joined = mapped.join(combinator);
+        const explicit = type.explicit || arg2;
+        let sum1 = joined;
+        if (explicit) {
+          let str27;
+          if (arg3) {
+            str27 = "[";
+          } else {
+            str27 = "[ ";
+          }
+          let str28 = " ]";
+          const sum = str27 + joined;
+          if (arg3) {
+            str28 = "]";
+          }
+          sum1 = sum + str28;
+        }
+        let str29 = "";
+        if (type.disallowEmpty) {
+          str29 = "!";
+        }
+        str = sum1 + str29;
+        return fn(str, type);
       }
-    };
+      combinator = type.combinator;
+      break;
+    }
+    case "Multiplier":
+    {
+      let str16;
+      const tmp11 = generate(type.term, fn, arg2, arg3);
+      if (0 !== type.min) {
+        let str17;
+        if (0 !== type.min) {
+          let str18;
+          if (1 === type.min) {
+            if (0 === type.max) {
+              let str25 = "+";
+              if (type.comma) {
+                str25 = "#";
+              }
+              str18 = str25;
+            }
+            str17 = str18;
+          }
+          if (1 !== type.min) {
+            let text;
+            let str19 = "";
+            let str20 = "";
+            if (type.comma) {
+              str20 = "#";
+            }
+            if (type.min === type.max) {
+              text = `${"{" + type.min}}`;
+            } else {
+              const text1 = `{${type.min}`;
+              if (0 !== type.max) {
+                str19 = type.max;
+              }
+              text = `${tmp12 + "," + str19}}`;
+            }
+            str18 = str20 + text;
+          } else {
+            str18 = "";
+          }
+        } else {
+          str17 = "?";
+        }
+        str16 = str17;
+      } else {
+        str16 = "*";
+      }
+      return tmp11 + fn(str16, type);
+    }
+    case "Type":
+    {
+      let str7 = "";
+      const text2 = `<${type.name}`;
+      if (type.opts) {
+        const opts = type.opts;
+        if ("Range" === opts.type) {
+          let str11 = "-\u221E";
+          if (null !== opts.min) {
+            str11 = opts.min;
+          }
+          let str13 = "\u221E";
+          const text3 = ` [${str11}`;
+          if (null !== opts.max) {
+            str13 = opts.max;
+          }
+          str7 = fn(text3 + "," + str13 + "]", type.opts);
+        } else {
+          const _Error = Error;
+          const self = this;
+          const self2 = this;
+          const error = new Error("Unknown node type `" + opts.type + "`");
+          throw error;
+        }
+      }
+      str = `${tmp + str7}>`;
+      break;
+    }
+    case "Property":
+    {
+      str = `${"<'" + type.name}'>`;
+      break;
+    }
+    case "Keyword":
+    {
+      str = type.name;
+      break;
+    }
+    case "AtKeyword":
+    {
+      str = `@${type.name}`;
+      break;
+    }
+    case "Function":
+    {
+      str = `${type.name}(`;
+      break;
+    }
+    case "String":
+    {
+      str = type.value;
+      break;
+    }
+    case "Token":
+    {
+      str = type.value;
+      break;
+    }
+    case "Comma":
+    {
+      break;
+    }
+    default:
+    {
+      const _Error2 = Error;
+      const self3 = this;
+      const self4 = this;
+      const error1 = new Error("Unknown node type `" + type.type + "`");
+      throw error1;
+    }
   }
-};
+}
 
-export default (str, generate) => {
-  let generateResult;
-  if (typeof str === "string") {
-    generateResult = prepareTokens(str, null);
-  } else {
-    generateResult = generate.generate(str, closure_3);
+export default (arg0, forceBraces) => {
+  let decorate = noop;
+  let flag = false;
+  let flag2 = false;
+  let tmp = forceBraces;
+  if (typeof forceBraces !== "function") {
+    flag = false;
+    flag2 = false;
+    tmp = decorate;
+    if (forceBraces) {
+      const _Boolean = Boolean;
+      const _Boolean2 = Boolean;
+      const BooleanResult = Boolean(forceBraces.forceBraces);
+      const BooleanResult1 = Boolean(forceBraces.compact);
+      if (typeof forceBraces.decorate === "function") {
+        decorate = forceBraces.decorate;
+      }
+      tmp = decorate;
+      flag = BooleanResult1;
+      flag2 = BooleanResult;
+    }
   }
-  return generateResult;
+  return generate(arg0, tmp, flag2, flag);
 };

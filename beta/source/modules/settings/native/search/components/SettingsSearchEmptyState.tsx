@@ -1,9 +1,9 @@
-// Module ID: 17226
-// Function ID: 17227
+// Module ID: 17228
+// Function ID: 17229
 // Name: SettingsSearchEmptyState
 // Dependencies: [19, 17, 21, 5306, 5315, 1113, 8182, 6327, 5919, 2]
 
-// Module 17226 (SettingsSearchEmptyState)
+// Module 17228 (SettingsSearchEmptyState)
 import react_native from "react-native" /* 17 */;
 import intl3 from "intl" /* 1113 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5315 */;

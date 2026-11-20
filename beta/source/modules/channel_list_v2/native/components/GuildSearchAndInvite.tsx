@@ -1,9 +1,9 @@
-// Module ID: 14694
-// Function ID: 14695
+// Module ID: 14696
+// Function ID: 14697
 // Name: GuildSearchAndInvite
-// Dependencies: [19, 17, 5155, 5236, 5177, 5209, 6050, 1072, 21, 5306, 575, 14695, 2121, 6260, 1502, 14696, 7790, 14697, 14740, 7452, 7988, 10982, 1113, 8458, 5926, 7827, 1655, 14780, 504, 8464, 8460, 14781, 14782, 14784, 2]
+// Dependencies: [19, 17, 5155, 5236, 5177, 5209, 6050, 1072, 21, 5306, 575, 14697, 2121, 6260, 1502, 14698, 7790, 14699, 14742, 7452, 7988, 10982, 1113, 8458, 5926, 7827, 1655, 14782, 504, 8464, 8460, 14783, 14784, 14786, 2]
 
-// Module 14694 (GuildSearchAndInvite)
+// Module 14696 (GuildSearchAndInvite)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
@@ -15,10 +15,10 @@ import AssetRegistryDefault from "AssetRegistry" /* 8458 */;
 import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8460 */;
 import utils_InstantInviteUtils from "utils/InstantInviteUtils" /* 8464 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 10982 */;
-import GuildDirectorySearchModalActionCreatorsDefault from "GuildDirectorySearchModalActionCreators" /* 14697 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 14740 */;
-import useCanSeeEventsInChannelListDefault from "useCanSeeEventsInChannelList" /* 14782 */;
-import useEventsButtonPropsDefault from "useEventsButtonProps" /* 14784 */;
+import GuildDirectorySearchModalActionCreatorsDefault from "GuildDirectorySearchModalActionCreators" /* 14699 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 14742 */;
+import useCanSeeEventsInChannelListDefault from "useCanSeeEventsInChannelList" /* 14784 */;
+import useEventsButtonPropsDefault from "useEventsButtonProps" /* 14786 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import GuildChannelStore from "GuildChannelStore" /* 5236 */;
@@ -179,7 +179,7 @@ const memoResult = react.memo(function ConnectedGuildSearchAndInviteInner(guild)
     const obj = instant_invite_InstantInviteUtils;
     const result = obj.handleOpenInviteActionsheet(guild, channelId, channels, unpackModuleId.GUILD_HEADER);
   });
-  const obj2 = guild(14781);
+  const obj2 = guild(14783);
   const shouldShowInvitesDisabledNotif = obj2.useShouldShowInvitesDisabledNotif(guild);
   const tmp4 = useCanSeeEventsInChannelListDefault(guild.id);
   const tmp5 = useEventsButtonPropsDefault(guild);

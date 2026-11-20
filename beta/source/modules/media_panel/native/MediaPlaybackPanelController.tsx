@@ -1,15 +1,15 @@
-// Module ID: 20128
-// Function ID: 20129
+// Module ID: 20130
+// Function ID: 20131
 // Name: MediaPlaybackPanelController
-// Dependencies: [32, 19, 5307, 5154, 6891, 17020, 5949, 11986, 21, 1655, 1630, 19914, 17019, 504, 20129, 2]
+// Dependencies: [32, 19, 5307, 5154, 6891, 17022, 5949, 11986, 21, 1655, 1630, 19916, 17021, 504, 20131, 2]
 // Exports: default
 
-// Module 20128 (MediaPlaybackPanelController)
+// Module 20130 (MediaPlaybackPanelController)
 import Fragment from "Fragment" /* 21 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 5949 */;
 import MorphablePanelConstants from "MorphablePanelConstants" /* 11986 */;
-import MediaPlayerManagerDefault from "MediaPlayerManager" /* 17019 */;
-import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 17020 */;
+import MediaPlayerManagerDefault from "MediaPlayerManager" /* 17021 */;
+import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 17022 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AccessibilityStore_mod from "AccessibilityStore" /* 5307 */;

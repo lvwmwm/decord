@@ -1,60 +1,24 @@
 // Module ID: 13883
 // Function ID: 13884
 // Name: tokenize
-// Dependencies: [13831]
+// Dependencies: [13833]
 
 // Module 13883 (tokenize)
-import tokenize from "tokenize" /* 13831 */;
+import tokenize from "tokenize" /* 13833 */;
 
-let obj2;
-const Ident = tokenize.TYPE.Ident;
+const CDO = tokenize.TYPE.CDO;
 let obj = {
-  name: "Combinator",
-  structure: obj2,
+  name: "CDO",
+  structure: [],
   parse() {
-    let scanner3;
-    const self = this;
     const tokenStart = this.scanner.tokenStart;
-    const source = this.scanner.source;
-    const charCodeAtResult = source.charCodeAt(this.scanner.tokenStart);
-    if (62 !== charCodeAtResult) {
-      if (43 !== charCodeAtResult) {
-        if (126 !== charCodeAtResult) {
-          if (47 === charCodeAtResult) {
-            const iter = self.scanner;
-            iter.next();
-            let tmp5 = self.scanner.tokenType === Ident;
-            if (tmp5) {
-              const scanner = self.scanner;
-              tmp5 = false !== scanner.lookupValue(0, "deep");
-            }
-            if (!tmp5) {
-              self.error("Identifier `deep` is expected");
-            }
-            const iter2 = self.scanner;
-            iter2.next();
-            const scanner2 = self.scanner;
-            if (!scanner2.isDelim(47)) {
-              self.error("Solidus is expected");
-            }
-            const iter3 = self.scanner;
-            iter3.next();
-          } else {
-            self.error("Combinator is expected");
-          }
-        }
-        const obj = { type: "Combinator", loc: self.getLocation(tokenStart, self.scanner.tokenStart), name: scanner3.substrToCursor(tokenStart) };
-        scanner3 = self.scanner;
-        return obj;
-      }
-    }
-    const iter4 = self.scanner;
-    iter4.next();
+    this.eat(CDO);
+    const obj = { type: "CDO", loc: this.getLocation(tokenStart, this.scanner.tokenStart) };
+    return obj;
   },
-  generate(name) {
-    this.chunk(name.name);
+  generate() {
+    this.chunk("<!--");
   }
 };
-obj2 = { name: String };
 
 export default obj;

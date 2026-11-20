@@ -1,10 +1,10 @@
-// Module ID: 13069
-// Function ID: 13070
+// Module ID: 13071
+// Function ID: 13072
 // Name: SingleVideoCall
-// Dependencies: [19, 11003, 21, 1630, 7918, 12808, 1187, 12795, 6056, 8476, 2]
+// Dependencies: [19, 11003, 21, 1630, 7918, 12810, 1187, 12797, 6056, 8476, 2]
 // Exports: default
 
-// Module 13069 (SingleVideoCall)
+// Module 13071 (SingleVideoCall)
 import Fragment from "Fragment" /* 21 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 6056 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8476 */;

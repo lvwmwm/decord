@@ -1,9 +1,9 @@
-// Module ID: 17576
-// Function ID: 17577
+// Module ID: 17578
+// Function ID: 17579
 // Name: VideoQuestPlayerControlButton
 // Dependencies: [19, 21, 5306, 575, 671, 7428, 5896, 2]
 
-// Module 17576 (VideoQuestPlayerControlButton)
+// Module 17578 (VideoQuestPlayerControlButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import VisualEffectViewDefault from "VisualEffectView" /* 5896 */;

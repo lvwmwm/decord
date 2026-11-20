@@ -1,10 +1,10 @@
-// Module ID: 19174
-// Function ID: 19175
+// Module ID: 19176
+// Function ID: 19177
 // Name: ConnectionBanner
-// Dependencies: [32, 19, 17, 16190, 17701, 1072, 21, 5306, 575, 1113, 5892, 19175, 19177, 5919, 671, 1655, 7533, 5883, 504, 1256, 17700, 5929, 1708, 16191, 2]
+// Dependencies: [32, 19, 17, 16192, 17703, 1072, 21, 5306, 575, 1113, 5892, 19177, 19179, 5919, 671, 1655, 7533, 5883, 504, 1256, 17702, 5929, 1708, 16193, 2]
 // Exports: default
 
-// Module 19174 (ConnectionBanner)
+// Module 19176 (ConnectionBanner)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import Constants from "Constants" /* 1072 */;
@@ -15,11 +15,11 @@ import useToken from "useToken" /* 5892 */;
 import Text_Text from "Text/Text" /* 5919 */;
 import spring_spring from "spring/spring" /* 5929 */;
 import _modDef7533 from "module_7533" /* 7533 */;
-import ConnectivityIndicatorStateStore2 from "ConnectivityIndicatorStateStore" /* 16190 */;
+import ConnectivityIndicatorStateStore2 from "ConnectivityIndicatorStateStore" /* 16192 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import YouBarConstants from "YouBarConstants" /* 17701 */;
+import YouBarConstants from "YouBarConstants" /* 17703 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
@@ -53,12 +53,12 @@ function ConnectionBannerIcon(state) {
   } else if (constants.NO_CONNECTION === state) {
     const obj4 = { style: tmp.leadingSlot, children: authStore2(ConnectionUnknownIcon, obj5) };
     obj5 = { size: "xs", color: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT };
-    ConnectionUnknownIcon = tmp2(19175).ConnectionUnknownIcon;
+    ConnectionUnknownIcon = tmp2(19177).ConnectionUnknownIcon;
     return authStore2(metroRequire, obj4);
   } else if (constants.BACK_ONLINE === state) {
     const obj = { style: tmp.leadingSlot, children: authStore2(ConnectionFineIcon, obj6) };
     obj6 = { size: "xs", color: nativeDefault.colors.ICON_FEEDBACK_POSITIVE };
-    ConnectionFineIcon = tmp2(19177).ConnectionFineIcon;
+    ConnectionFineIcon = tmp2(19179).ConnectionFineIcon;
     return authStore2(metroRequire, obj);
   }
 }
@@ -278,7 +278,7 @@ export default function ConnectionBanner() {
   let ref;
   let state;
   let stateFromStores;
-  let obj = stateFromStores(16191);
+  let obj = stateFromStores(16193);
   const config = obj.useConfig({ location: "ConnectionBanner" });
   const hidden = config.hidden;
   const timeoutMs = config.timeoutMs;

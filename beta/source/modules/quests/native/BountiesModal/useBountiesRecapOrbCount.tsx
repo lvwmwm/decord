@@ -1,13 +1,13 @@
-// Module ID: 17552
-// Function ID: 17553
+// Module ID: 17554
+// Function ID: 17555
 // Name: useBountiesRecapOrbCount
-// Dependencies: [32, 19, 1655, 17551, 1708, 2]
+// Dependencies: [32, 19, 1655, 17553, 1708, 2]
 // Exports: useBountiesRecapOrbCount
 
-// Module 17552 (useBountiesRecapOrbCount)
+// Module 17554 (useBountiesRecapOrbCount)
 import _mod1655 from "module_1655" /* 1655 */;
 import _mod1708 from "module_1708" /* 1708 */;
-import useBountiesRecapScroll from "useBountiesRecapScroll" /* 17551 */;
+import useBountiesRecapScroll from "useBountiesRecapScroll" /* 17553 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

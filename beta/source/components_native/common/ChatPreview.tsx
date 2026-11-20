@@ -1,10 +1,10 @@
-// Module ID: 15617
-// Function ID: 15618
+// Module ID: 15619
+// Function ID: 15620
 // Name: ChatPreview
-// Dependencies: [19, 17, 5307, 5543, 5155, 1388, 9160, 21, 5306, 575, 5367, 12452, 9159, 11864, 11882, 14560, 5128, 1113, 11881, 12, 9121, 6053, 12586, 12504, 12463, 6374, 2020, 12630, 9199, 11866, 8863, 12462, 12464, 12503, 12506, 11980, 11982, 14196, 1380, 7415, 7428, 5919, 5131, 504, 1496, 6848, 6828, 2]
+// Dependencies: [19, 17, 5307, 5543, 5155, 1388, 9160, 21, 5306, 575, 5367, 12454, 9159, 11864, 11882, 14562, 5128, 1113, 11881, 12, 9121, 6053, 12588, 12506, 12465, 6374, 2020, 12632, 9199, 11866, 8863, 12464, 12466, 12505, 12508, 11980, 11982, 14198, 1380, 7415, 7428, 5919, 5131, 504, 1496, 6848, 6828, 2]
 // Exports: ChatPreview
 
-// Module 15617 (ChatPreview)
+// Module 15619 (ChatPreview)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
@@ -22,15 +22,15 @@ import computeScrollDataDefault from "computeScrollData" /* 11881 */;
 import NativeChatUtils from "NativeChatUtils" /* 11882 */;
 import GuildNSFWDefault from "GuildNSFW" /* 11980 */;
 import ChannelSpoilerDefault from "ChannelSpoiler" /* 11982 */;
-import ChatManagerDefault from "ChatManager" /* 12452 */;
-import handleMessagesTapImage from "handleMessagesTapImage" /* 12462 */;
-import MessageDataSnowflakeUtils from "MessageDataSnowflakeUtils" /* 12463 */;
-import handleMessagesTapChannel from "handleMessagesTapChannel" /* 12464 */;
-import showLongPressURLActionSheetDefault from "showLongPressURLActionSheet" /* 12504 */;
-import contentHandlers2 from "contentHandlers" /* 12506 */;
-import handleMessagesTapLink2 from "handleMessagesTapLink" /* 12586 */;
-import showLongPressMessageActionSheet2 from "showLongPressMessageActionSheet" /* 12630 */;
-import ChatDefault from "Chat" /* 14196 */;
+import ChatManagerDefault from "ChatManager" /* 12454 */;
+import handleMessagesTapImage from "handleMessagesTapImage" /* 12464 */;
+import MessageDataSnowflakeUtils from "MessageDataSnowflakeUtils" /* 12465 */;
+import handleMessagesTapChannel from "handleMessagesTapChannel" /* 12466 */;
+import showLongPressURLActionSheetDefault from "showLongPressURLActionSheet" /* 12506 */;
+import contentHandlers2 from "contentHandlers" /* 12508 */;
+import handleMessagesTapLink2 from "handleMessagesTapLink" /* 12588 */;
+import showLongPressMessageActionSheet2 from "showLongPressMessageActionSheet" /* 12632 */;
+import ChatDefault from "Chat" /* 14198 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5307 */;
@@ -56,7 +56,7 @@ let obj3;
 let obj4;
 let tmp;
 let unpackModuleId;
-const handleMessagesLongPressChannel = tmp(12503);
+const handleMessagesLongPressChannel = tmp(12505);
 ({ View: hasOwnProperty, StyleSheet } = react_native);
 ({ Changeset: c10, RowType: unpackModuleId, SeparatorType: closure_12 } = RowGeneratorConstants);
 ({ jsx: map1, jsxs: closure_14 } = Fragment);
@@ -156,7 +156,7 @@ class ChatPreviewBase extends PureComponent {
         let item1 = items.forEach((arr, index) => {
           let c1;
           let obj8;
-          const f146031 = (message) => {
+          const f146041 = (message) => {
             const content = obj3.content;
             const obj = { rowType: constants2.MESSAGE, changeType: constants.NOOP, roleStyle, message, isFirst: message === closure_0 };
             content.unshift(obj);
@@ -194,7 +194,7 @@ class ChatPreviewBase extends PureComponent {
               tmp8 = obj3;
             }
             obj3 = tmp8;
-            const item = arr.forEach(f146031);
+            const item = arr.forEach(f146041);
             tmp8.revealed = arr[arr.length - 1].id === messages.revealedMessageId;
             tmp8.context = arr[arr.length - 1].id;
             const intl2 = _undefined(changeType[17]).intl;
@@ -210,7 +210,7 @@ class ChatPreviewBase extends PureComponent {
               tmp14 = obj5;
             }
             obj5 = tmp14;
-            const item1 = arr.forEach(f146031);
+            const item1 = arr.forEach(f146041);
             tmp14.revealed = arr[arr.length - 1].id === messages.revealedMessageId;
             tmp14.context = arr[arr.length - 1].id;
             const intl = _undefined(changeType[17]).intl;
@@ -335,7 +335,7 @@ class ChatPreviewBase extends PureComponent {
         },
         message: require.getMessage(data.messageId),
         messageChannel: channel,
-        selectedChannelId: "asc",
+        selectedChannelId: "updateVideo",
         tapLinkData: nativeEvent
       };
       const handleMessagesTapLink = handleMessagesTapLink2.handleMessagesTapLink;

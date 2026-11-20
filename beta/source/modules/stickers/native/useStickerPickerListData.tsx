@@ -56,13 +56,13 @@ export default function useStickerPickerListData(containerWidth) {
         flag = false;
       }
       if (true === arg2) {
-        obj = { type: obj.NSFW, stickersByRow: [] };
-        items3.push(obj);
+        const obj2 = { type: obj.NSFW, stickersByRow: [] };
+        items3.push(obj2);
         items.push(1);
       } else {
         const found = nitroLocked.filter((format_type) => items1.includes(format_type.format_type));
-        const obj2 = _modDef12;
-        const chunkResult = obj2.chunk(found, rounded);
+        obj = _modDef12;
+        const chunkResult = obj.chunk(found, rounded);
         const obj3 = { type: obj.STICKERS, stickersByRow: chunkResult };
         items3.push(obj3);
         items.push(chunkResult.length);

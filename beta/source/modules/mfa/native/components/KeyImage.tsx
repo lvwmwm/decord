@@ -1,14 +1,14 @@
-// Module ID: 17315
-// Function ID: 17316
+// Module ID: 17317
+// Function ID: 17318
 // Name: KeyImage
-// Dependencies: [17, 21, 5306, 575, 17316, 2]
+// Dependencies: [17, 21, 5306, 575, 17318, 2]
 // Exports: KeyImage
 
-// Module 17315 (KeyImage)
+// Module 17317 (KeyImage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import SecurityKeySpotIllustration from "SecurityKeySpotIllustration" /* 17316 */;
+import SecurityKeySpotIllustration from "SecurityKeySpotIllustration" /* 17318 */;
 import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 

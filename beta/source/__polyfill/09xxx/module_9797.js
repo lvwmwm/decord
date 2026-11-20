@@ -11,7 +11,7 @@ let _require, c0, dependencyMap;
 function consoleSandbox(fn) {
   let closure_1;
   let console;
-  const f98997 = (item) => {
+  const f99001 = (item) => {
     console[item] = closure_1[item];
   };
   const tmp = console;
@@ -26,10 +26,10 @@ function consoleSandbox(fn) {
     });
     try {
       const tmp6 = fn();
-      const item1 = keys.forEach(f98997);
+      const item1 = keys.forEach(f99001);
       return tmp6;
     } catch (tmp8) {
-      const item2 = keys.forEach(f98997);
+      const item2 = keys.forEach(f99001);
       throw tmp8;
     }
   } else {

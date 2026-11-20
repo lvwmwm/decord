@@ -1,12 +1,12 @@
-// Module ID: 20303
-// Function ID: 20304
+// Module ID: 20305
+// Function ID: 20306
 // Name: MessageCodedLinkManager
-// Dependencies: [5, 8461, 6042, 1083, 6041, 6045, 20304, 7660, 8128, 20311, 12531, 20313, 14101, 20314, 13402, 7882, 20315, 2]
+// Dependencies: [5, 8461, 6042, 1083, 6041, 6045, 20306, 7660, 8128, 20313, 12533, 20315, 14103, 20316, 13404, 7882, 20317, 2]
 
-// Module 20303 (MessageCodedLinkManager)
+// Module 20305 (MessageCodedLinkManager)
 import Constants from "Constants" /* 1083 */;
 import findCodedLinksDefault from "findCodedLinks" /* 6041 */;
-import setupLoadFromMessageManagerHandlersDefault from "setupLoadFromMessageManagerHandlers" /* 20315 */;
+import setupLoadFromMessageManagerHandlersDefault from "setupLoadFromMessageManagerHandlers" /* 20317 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import GuildTemplateStore from "GuildTemplateStore" /* 8461 */;
 import InviteStore from "InviteStore" /* 6042 */;

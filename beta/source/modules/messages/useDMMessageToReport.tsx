@@ -1,14 +1,14 @@
-// Module ID: 14917
-// Function ID: 14918
+// Module ID: 14919
+// Function ID: 14920
 // Name: useDMMessageToReport
-// Dependencies: [14918, 14919, 12272, 14880, 14920, 2]
+// Dependencies: [14920, 14921, 12272, 14882, 14922, 2]
 // Exports: useDMMessageToReport
 
-// Module 14917 (useDMMessageToReport)
-import useLongestChannelMessageBeforeReply from "useLongestChannelMessageBeforeReply" /* 14880 */;
-import useIsRelationshipTypeSpamReportable from "useIsRelationshipTypeSpamReportable" /* 14918 */;
-import getApplicationFromBotUserIdDefault from "getApplicationFromBotUserId" /* 14919 */;
-import useMessageRequestPreview from "useMessageRequestPreview" /* 14920 */;
+// Module 14919 (useDMMessageToReport)
+import useLongestChannelMessageBeforeReply from "useLongestChannelMessageBeforeReply" /* 14882 */;
+import useIsRelationshipTypeSpamReportable from "useIsRelationshipTypeSpamReportable" /* 14920 */;
+import getApplicationFromBotUserIdDefault from "getApplicationFromBotUserId" /* 14921 */;
+import useMessageRequestPreview from "useMessageRequestPreview" /* 14922 */;
 import size from "module_2" /* 2 */;
 
 let tmp4;

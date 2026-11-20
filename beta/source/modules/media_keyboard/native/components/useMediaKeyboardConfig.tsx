@@ -1,13 +1,13 @@
-// Module ID: 13535
-// Function ID: 13536
+// Module ID: 13537
+// Function ID: 13538
 // Name: useMediaKeyboardConfig
-// Dependencies: [19, 1626, 1072, 8861, 13536, 7287, 7864, 11635, 2119, 2]
+// Dependencies: [19, 1626, 1072, 8861, 13538, 7287, 7864, 11635, 2119, 2]
 // Exports: default
 
-// Module 13535 (useMediaKeyboardConfig)
+// Module 13537 (useMediaKeyboardConfig)
 import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1626 */;
 import Server from "Server" /* 2119 */;
-import useUploadDisabledDefault from "useUploadDisabled" /* 13536 */;
+import useUploadDisabledDefault from "useUploadDisabled" /* 13538 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;

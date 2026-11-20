@@ -1,10 +1,10 @@
-// Module ID: 17591
-// Function ID: 17592
+// Module ID: 17593
+// Function ID: 17594
 // Name: BountiesScrollRecapFooter
 // Dependencies: [19, 17, 5307, 21, 5306, 575, 1380, 1113, 5919, 9442, 504, 5433, 2]
 // Exports: BountiesScrollRecapFooter, BountiesScrollRecapFooterGradient
 
-// Module 17591 (BountiesScrollRecapFooter)
+// Module 17593 (BountiesScrollRecapFooter)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;

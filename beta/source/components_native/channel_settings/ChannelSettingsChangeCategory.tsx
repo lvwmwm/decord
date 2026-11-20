@@ -1,10 +1,10 @@
-// Module ID: 19722
-// Function ID: 19723
+// Module ID: 19724
+// Function ID: 19725
 // Name: ChannelSettingsChangeCategory
-// Dependencies: [32, 717, 19, 5155, 7875, 5177, 5238, 5248, 1388, 1072, 21, 5306, 575, 5367, 7876, 14832, 5243, 6907, 6258, 1113, 5944, 7443, 7746, 8106, 6327, 5919, 504, 1502, 12560, 38, 2]
+// Dependencies: [32, 717, 19, 5155, 7875, 5177, 5238, 5248, 1388, 1072, 21, 5306, 575, 5367, 7876, 14834, 5243, 6907, 6258, 1113, 5944, 7443, 7746, 8106, 6327, 5919, 504, 1502, 12562, 38, 2]
 // Exports: default
 
-// Module 19722 (ChannelSettingsChangeCategory)
+// Module 19724 (ChannelSettingsChangeCategory)
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -79,7 +79,7 @@ class ChannelSettingsChangeCategory extends Component {
   handleSetCategory(id) {
     let obj7;
     let parent_id;
-    const f138190 = () => closure_1_2.pop();
+    const f138198 = () => closure_1_2.pop();
     let self = this;
     _require = id;
     function saveUpdates() {
@@ -92,7 +92,7 @@ class ChannelSettingsChangeCategory extends Component {
       } else {
         const obj = GuildActionCreatorsDefault;
         const batchChannelUpdateResult = obj.batchChannelUpdate(tmp, GuildCategoryStore);
-        return batchChannelUpdateResult.then(f138190);
+        return batchChannelUpdateResult.then(f138198);
       }
     }
     const props = this.props;
@@ -209,7 +209,7 @@ class ChannelSettingsChangeCategory extends Component {
                           } else {
                             const obj = channel(channel1[17]);
                             const batchChannelUpdateResult = obj.batchChannelUpdate(tmp, closure_1_7);
-                            batchChannelUpdateResult.then(f138190);
+                            batchChannelUpdateResult.then(f138198);
                           }
                         },
                   onCancel: saveUpdates,
@@ -239,7 +239,7 @@ class ChannelSettingsChangeCategory extends Component {
           } else {
             const obj5 = GuildActionCreatorsDefault;
             let batchChannelUpdateResult = obj5.batchChannelUpdate(tmp26, GuildCategoryStore);
-            batchChannelUpdateResult.then(f138190);
+            batchChannelUpdateResult.then(f138198);
           }
         });
       }
@@ -339,7 +339,7 @@ export default function ConnectedChannelSettingsChangeCategory(channelId) {
   const channel = obj.useStateFromStores(items, () => ChannelStore.getChannel(channelId));
   const obj2 = channelId(1502);
   navigation = obj2.useNavigation();
-  const obj3 = channelId(12560);
+  const obj3 = channelId(12562);
   const appChannelBotUserId = obj3.useAppChannelBotUserId(channel);
   _modDef38(null != channel, "ConnectedChannelSettingsChangeCategory: channel cannot be undefined");
   return closure_13(ChannelSettingsChangeCategory, { channel, navigation, appChannelBotUserId });

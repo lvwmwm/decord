@@ -1,26 +1,26 @@
 // Module ID: 16739
 // Function ID: 16740
-// Dependencies: [16650, 16740]
-// Exports: getSupportedUnits
+// Dependencies: [16652, 16740]
+// Exports: getSupportedTimeZones
 
 // Module 16739
 const require = globalThis.__r;
 let _require;
 
 
-export function getSupportedUnits(locale) {
+export function getSupportedTimeZones(locale) {
   _require = locale;
-  const units = require("module_16740").units;
-  return units.filter((item) => {
-    function isSupported(unit, arg1) {
+  const timezones = require("module_16740").timezones;
+  return timezones.filter((item) => {
+    function isSupported(timeZone, arg1) {
       let str = arg1;
       if (undefined === arg1) {
         str = "en";
       }
       try {
-        const obj = { style: "unit", unit };
-        const memoizedNumberFormat = locale(closure_1_1[0]).createMemoizedNumberFormat(str, obj);
-        return memoizedNumberFormat.resolvedOptions().unit === unit;
+        const obj = { timeZone };
+        const memoizedDateTimeFormat = locale(closure_1_1[0]).createMemoizedDateTimeFormat(str, obj);
+        return memoizedDateTimeFormat.resolvedOptions().timeZone === timeZone;
       } catch (err) {
         return false;
       }

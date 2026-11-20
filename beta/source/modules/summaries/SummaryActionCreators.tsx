@@ -18,7 +18,7 @@ import size from "module_2" /* 2 */;
 
 let channel, closure_3;
 
-const f103734 = () => connected.isConnected();
+const f103738 = () => connected.isConnected();
 function fetchSummary() {
   return obj(...arguments);
 }
@@ -503,7 +503,7 @@ function useChannelSummaries(channelIds) {
   let memo;
   obj = channelIds(memo[12]);
   const items = [GatewayConnectionStore];
-  const stateFromStores = obj.useStateFromStores(items, f103734);
+  const stateFromStores = obj.useStateFromStores(items, f103738);
   const items1 = [channelIds];
   memo = react.useMemo(() => channelIds.join(","), items1);
   const items2 = [memo, stateFromStores];
@@ -717,7 +717,7 @@ export function useMaybeFetchChannelAffinitiesAndSummaries() {
   let memo;
   const items1 = [GatewayConnectionStore];
   obj = items(memo[12]);
-  const stateFromStores = obj.useStateFromStores(items1, f103734);
+  const stateFromStores = obj.useStateFromStores(items1, f103738);
   const items2 = [items];
   memo = react.useMemo(() => channelIds.join(","), items2);
   const items3 = [memo, stateFromStores];

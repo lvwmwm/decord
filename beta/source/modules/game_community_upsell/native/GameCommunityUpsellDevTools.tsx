@@ -1,15 +1,15 @@
-// Module ID: 18253
-// Function ID: 18254
+// Module ID: 18255
+// Function ID: 18256
 // Name: GameCommunityUpsellDevTools
-// Dependencies: [19, 17, 16216, 18254, 21, 5306, 575, 504, 18255, 16218, 16217, 7746, 7443, 13308, 7456, 2]
+// Dependencies: [19, 17, 16218, 18256, 21, 5306, 575, 504, 18257, 16220, 16219, 7746, 7443, 13310, 7456, 2]
 // Exports: default
 
-// Module 18253 (GameCommunityUpsellDevTools)
+// Module 18255 (GameCommunityUpsellDevTools)
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import LocalAppDetectionStore from "LocalAppDetectionStore" /* 16216 */;
-import MobileGameCommunitiesStore from "MobileGameCommunitiesStore" /* 18254 */;
+import LocalAppDetectionStore from "LocalAppDetectionStore" /* 16218 */;
+import MobileGameCommunitiesStore from "MobileGameCommunitiesStore" /* 18256 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;

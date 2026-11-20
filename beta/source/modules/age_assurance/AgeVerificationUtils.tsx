@@ -29,8 +29,8 @@ let _require, c0, c1, dependencyMap, importDefault;
 
 let AgeGateSource;
 let c10;
-const f92856 = () => currentUser.getCurrentUser();
-const f92857 = () => {
+const f92860 = () => currentUser.getCurrentUser();
+const f92861 = () => {
   currentUser = currentUser.getCurrentUser();
   let prop;
   if (currentUser != null) {
@@ -39,14 +39,14 @@ const f92857 = () => {
   const tmp5 = prop === require("Server").AgeVerificationStatusUkAndAusOnly.INFERRED_ADULT || prop === require("Server").AgeVerificationStatusUkAndAusOnly.INFERRED_TEEN;
   return tmp5;
 };
-const f92858 = () => currentUser.getCurrentUser();
+const f92862 = () => currentUser.getCurrentUser();
 function useShouldCallReactiveCheck() {
   let closure_0;
   let currentUser;
   let tmp = _require;
   const items = [UserStore];
   obj = require("get initialized");
-  const stateFromStores = obj.useStateFromStores(items, f92858);
+  const stateFromStores = obj.useStateFromStores(items, f92862);
   let prop;
   if (stateFromStores != null) {
     prop = stateFromStores.ageVerificationStatus;
@@ -178,7 +178,7 @@ export function useNeedsAgeVerification() {
   let currentUser;
   const items = [UserStore];
   obj = get_initialized;
-  const stateFromStores = obj.useStateFromStores(items, f92856);
+  const stateFromStores = obj.useStateFromStores(items, f92860);
   let prop;
   if (stateFromStores != null) {
     prop = stateFromStores.ageVerificationStatus;
@@ -224,7 +224,7 @@ export function isVerifiedAdult() {
 export function useIsVerifiedAdult() {
   const items = [UserStore];
   obj = get_initialized;
-  const stateFromStores = obj.useStateFromStores(items, f92856);
+  const stateFromStores = obj.useStateFromStores(items, f92860);
   let prop;
   if (stateFromStores != null) {
     prop = stateFromStores.ageVerificationStatus;
@@ -244,12 +244,12 @@ export function isAssignedByDiscord() {
 export function useIsAssignedByDiscord() {
   const items = [UserStore];
   obj = get_initialized;
-  return obj.useStateFromStores(items, f92857);
+  return obj.useStateFromStores(items, f92861);
 }
 export function useShowAssignedAgeGroupSettings() {
   const items = [UserStore];
   obj = get_initialized;
-  const stateFromStores = obj.useStateFromStores(items, f92857);
+  const stateFromStores = obj.useStateFromStores(items, f92861);
   const obj2 = RegionalFeatureConfigUtils;
   const tmp2 = obj2.useIsFeatureAgeGated(AgeGatedFeature.AgeGatedFeature.REACTIVE_CHECK) && stateFromStores;
   return tmp2;
@@ -273,7 +273,7 @@ export function isAgeVerified() {
 export function useIsAgeVerified() {
   const items = [UserStore];
   obj = get_initialized;
-  const stateFromStores = obj.useStateFromStores(items, f92858);
+  const stateFromStores = obj.useStateFromStores(items, f92862);
   let prop;
   if (stateFromStores != null) {
     prop = stateFromStores.ageVerificationStatus;

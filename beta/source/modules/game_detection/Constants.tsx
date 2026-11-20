@@ -1,10 +1,10 @@
-// Module ID: 12709
-// Function ID: 12710
+// Module ID: 12711
+// Function ID: 12712
 // Name: Constants
 // Dependencies: [1072, 1255, 2]
 // Exports: detectableGamesPayloadCdnUrl, detectableNonGamesPayloadCdnUrl
 
-// Module 12709 (Constants)
+// Module 12711 (Constants)
 import Constants from "Constants" /* 1072 */;
 import GlobalUtils from "GlobalUtils" /* 1255 */;
 import size from "module_2" /* 2 */;

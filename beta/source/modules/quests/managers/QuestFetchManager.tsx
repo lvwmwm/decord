@@ -1,9 +1,9 @@
-// Module ID: 20815
-// Function ID: 20816
+// Module ID: 20817
+// Function ID: 20818
 // Name: QuestFetchManager
-// Dependencies: [5, 8808, 1089, 7882, 10132, 1242, 10133, 1380, 7047, 20816, 2]
+// Dependencies: [5, 8808, 1089, 7882, 10132, 1242, 10133, 1380, 7047, 20818, 2]
 
-// Module 20815 (QuestFetchManager)
+// Module 20817 (QuestFetchManager)
 import DurationsDefault from "Durations" /* 1089 */;
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;

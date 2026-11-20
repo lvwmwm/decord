@@ -9,7 +9,7 @@ import reactDefault from "react" /* 5907 */;
 import uniqueIdDefault from "uniqueId" /* 6329 */;
 import size from "module_2" /* 2 */;
 
-const f97896 = () => uniqueIdDefault("uid_");
+const f97900 = () => uniqueIdDefault("uid_");
 const result = size.fileFinishedImporting("modules/core/web/UID.tsx");
 
 export function uid() {
@@ -20,8 +20,8 @@ export function uid() {
   return uniqueIdDefault(str);
 }
 export function useUID() {
-  return reactDefault(f97896);
+  return reactDefault(f97900);
 }
 export function UID(children) {
-  return children.children(reactDefault(f97896));
+  return children.children(reactDefault(f97900));
 }

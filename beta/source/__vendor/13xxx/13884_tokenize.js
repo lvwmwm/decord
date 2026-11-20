@@ -1,44 +1,32 @@
 // Module ID: 13884
 // Function ID: 13885
 // Name: tokenize
-// Dependencies: [13831]
+// Dependencies: [13833]
 
 // Module 13884 (tokenize)
-import tokenize from "tokenize" /* 13831 */;
+import tokenize from "tokenize" /* 13833 */;
 
 let obj2;
-const Comment = tokenize.TYPE.Comment;
+const Ident = tokenize.TYPE.Ident;
 let obj = {
-  name: "Comment",
+  name: "ClassSelector",
   structure: obj2,
   parse() {
     const self = this;
-    const tokenStart = this.scanner.tokenStart;
-    const tokenEnd = this.scanner.tokenEnd;
-    this.eat(Comment);
-    const sum = tokenEnd - tokenStart + 2;
-    let tmp3 = sum >= 2;
-    if (2 <= sum) {
-      const source = self.scanner.source;
-      tmp3 = 42 === source.charCodeAt(tokenEnd - 2);
+    const scanner = this.scanner;
+    if (!scanner.isDelim(46)) {
+      self.error("Full stop is expected");
     }
-    if (tmp3) {
-      const source2 = self.scanner.source;
-      tmp3 = 47 === source2.charCodeAt(tokenEnd - 1);
-    }
-    let diff = tokenEnd;
-    if (tmp3) {
-      diff = tokenEnd - 2;
-    }
-    const obj = { type: "Comment", loc: self.getLocation(tokenStart, self.scanner.tokenStart), value: str.substring(tokenStart + 2, diff) };
+    const iter = self.scanner;
+    iter.next();
+    const obj = { type: "ClassSelector", loc: self.getLocation(self.scanner.tokenStart - 1, self.scanner.tokenEnd), name: self.consume(Ident) };
     return obj;
   },
-  generate(value) {
-    this.chunk("/*");
-    this.chunk(value.value);
-    this.chunk("*/");
+  generate(name) {
+    this.chunk(".");
+    this.chunk(name.name);
   }
 };
-obj2 = { value: String };
+obj2 = { name: String };
 
 export default obj;

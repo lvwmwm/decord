@@ -1,14 +1,19 @@
 // Module ID: 16812
 // Function ID: 16813
-// Dependencies: [16791, 16790]
+// Dependencies: [16764, 16771]
 
 // Module 16812
-import _mod16790 from "module_16790" /* 16790 */;
-import _mod16791 from "module_16791" /* 16791 */;
+import _mod16764 from "module_16764" /* 16764 */;
+import _mod16771 from "module_16771" /* 16771 */;
 
-let tmp = Object.keys || (function keys(arg0) {
-  const tmp = _mod16791;
-  return tmp(arg0, _mod16790);
-});
+let closure_2 = _mod16764("keys");
 
-export default tmp;
+export default (arg0) => {
+  let tmp2 = closure_2[arg0];
+  if (!tmp2) {
+    const tmp5 = _mod16771(arg0);
+    tmp[arg0] = tmp5;
+    tmp2 = tmp5;
+  }
+  return tmp2;
+};

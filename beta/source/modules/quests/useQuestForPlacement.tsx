@@ -1,10 +1,10 @@
-// Module ID: 17721
-// Function ID: 17722
+// Module ID: 17723
+// Function ID: 17724
 // Name: useQuestForPlacement
-// Dependencies: [19, 8805, 8808, 1089, 10132, 8806, 7047, 10133, 17722, 504, 8815, 6961, 2]
+// Dependencies: [19, 8805, 8808, 1089, 10132, 8806, 7047, 10133, 17724, 504, 8815, 6961, 2]
 // Exports: default, useAdDecisionForPlacement, useAdRefreshLoop, useDeliveredCreativeForPlacement
 
-// Module 17721 (useQuestForPlacement)
+// Module 17723 (useQuestForPlacement)
 import DurationsDefault from "Durations" /* 1089 */;
 import AdCreativeType from "AdCreativeType" /* 6961 */;
 import react from "react" /* 19 */;
@@ -18,7 +18,7 @@ let _require;
 let c3;
 let closure_4;
 let hasOwnProperty;
-const f115976 = () => {
+const f115982 = () => {
   let first = adDecisionsForPlacement.getAdDecisionsForPlacement(closure_0)[0];
   if (first == null) {
     first = null;
@@ -39,7 +39,7 @@ export default function useFetchQuestForAdPlacement(arg0) {
   let obj = require("get initialized");
   const items = [AdDeliveryStore];
   const items1 = [arg0];
-  stateFromStores = obj.useStateFromStores(items, f115976, items1);
+  stateFromStores = obj.useStateFromStores(items, f115982, items1);
   const items2 = [stateFromStores, arg0];
   const tmp4 = closure_3(() => {
     let current;
@@ -115,7 +115,7 @@ export default function useFetchQuestForAdPlacement(arg0) {
   let obj2 = require("get initialized");
   const items3 = [AdDeliveryStore];
   const items4 = [arg0];
-  const stateFromStores1 = obj2.useStateFromStores(items3, f115976, items4);
+  const stateFromStores1 = obj2.useStateFromStores(items3, f115982, items4);
   let creative;
   const getDeliveredQuestId = require("AdDecisionUtils").getDeliveredQuestId;
   const tmp6 = require("AdDecisionUtils");
@@ -153,7 +153,7 @@ export function useAdDecisionForPlacement(arg0) {
   const items = [AdDeliveryStore];
   const items1 = [arg0];
   const obj = require("get initialized");
-  return obj.useStateFromStores(items, f115976, items1);
+  return obj.useStateFromStores(items, f115982, items1);
 }
 export function useAdRefreshLoop(MOBILE_HOME_DOCK_AREA) {
   let stateFromStores;
@@ -162,7 +162,7 @@ export function useAdRefreshLoop(MOBILE_HOME_DOCK_AREA) {
   const items = [AdDeliveryStore];
   const items1 = [MOBILE_HOME_DOCK_AREA];
   const obj = require("get initialized");
-  stateFromStores = obj.useStateFromStores(items, f115976, items1);
+  stateFromStores = obj.useStateFromStores(items, f115982, items1);
   const items2 = [stateFromStores, MOBILE_HOME_DOCK_AREA];
   closure_3(() => {
     let current;
@@ -249,7 +249,7 @@ export function useDeliveredCreativeForPlacement(MOBILE_HOME_DOCK_AREA, QUEST_BA
   let obj2 = require("get initialized");
   const items2 = [AdDeliveryStore];
   const items3 = [MOBILE_HOME_DOCK_AREA];
-  const stateFromStores1 = obj2.useStateFromStores(items2, f115976, items3);
+  const stateFromStores1 = obj2.useStateFromStores(items2, f115982, items3);
   let creative;
   const getDeliveredQuestId = require("AdDecisionUtils").getDeliveredQuestId;
   const tmp3 = QuestStore;

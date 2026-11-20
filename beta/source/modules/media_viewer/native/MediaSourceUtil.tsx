@@ -36,7 +36,7 @@ let _require, closure_2, dependencyMap, importDefault;
 
 let hasOwnProperty;
 let metroRequire;
-const f96421 = () => {
+const f96425 = () => {
   if (ConstantsIOS.MediaType.IMAGE === VIDEO) {
     const tmp2Result = ToastUtils;
     tmp2Result.presentImageSaved();
@@ -782,11 +782,11 @@ export function extractMediaFromMessageComponents(getContentMessage, contentMess
       let tmp7 = require;
       if (Server.ComponentType.MEDIA_GALLERY === type) {
         let items = tmp5.items;
-        for (const item10029 of items) {
-          let tmp13 = item10029;
-          let tmp17 = toMediaSourceFromUnfurledMedia(getContentMessage, getContentMessage, item10029.media, item10029.description, item10029.spoiler);
-          if (null != tmp17) {
-            let obj = { sources: tmp18, unfurledMediaItem: tmp13.media };
+        for (const item10035 of items) {
+          let tmp15 = item10035;
+          let tmp19 = toMediaSourceFromUnfurledMedia(getContentMessage, getContentMessage, item10035.media, item10035.description, item10035.spoiler);
+          if (null != tmp19) {
+            let obj = { sources: tmp20, unfurledMediaItem: tmp15.media };
             let arr = items1.push(obj);
           }
           continue;
@@ -1044,7 +1044,7 @@ export function downloadMediaAsset(mediaUrl, VIDEO) {
   let closure_0 = VIDEO;
   const obj = react_nativeDefault;
   const downloadMediaAssetResult = obj.downloadMediaAsset(mediaUrl, VIDEO);
-  return downloadMediaAssetResult.then(f96421, handleDownloadError);
+  return downloadMediaAssetResult.then(f96425, handleDownloadError);
 }
 export function downloadMediaAssetWithContentType(mediaUrl, VIDEO, contentType) {
   let result;
@@ -1056,7 +1056,7 @@ export function downloadMediaAssetWithContentType(mediaUrl, VIDEO, contentType) 
     const obj = react_nativeDefault;
     result = obj.downloadMediaAsset(mediaUrl, VIDEO);
   }
-  return result.then(f96421, handleDownloadError);
+  return result.then(f96425, handleDownloadError);
 }
 export function getYoutubeClipVideoIdFromURI(uri) {
   const match = uri.match(/^https:\/\/www\.youtube\.com\/embed\/([A-Za-z0-9_-]*)(\?clip=([A-Za-z0-9_-]+)(&clipt=([A-Za-z0-9_-]+)))?$/);

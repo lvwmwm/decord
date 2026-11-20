@@ -1,10 +1,10 @@
-// Module ID: 15513
-// Function ID: 15514
+// Module ID: 15515
+// Function ID: 15516
 // Name: useCanGiftProduct
 // Dependencies: [9409, 8497, 8496, 2174, 2114, 2186, 2]
 // Exports: useCanGiftProduct
 
-// Module 15513 (useCanGiftProduct)
+// Module 15515 (useCanGiftProduct)
 import PremiumUtilsDefault from "PremiumUtils" /* 2174 */;
 import BillingPlatformUtils from "BillingPlatformUtils" /* 2186 */;
 import CollectiblesProductUtils from "CollectiblesProductUtils" /* 8496 */;

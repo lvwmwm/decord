@@ -1,10 +1,10 @@
-// Module ID: 20160
-// Function ID: 20161
+// Module ID: 20162
+// Function ID: 20163
 // Name: RestrictedHoursModal
-// Dependencies: [32, 19, 17, 1388, 21, 5306, 575, 7418, 1630, 20161, 504, 1655, 5538, 1113, 2701, 8208, 6010, 20162, 5465, 5919, 7490, 20163, 6834, 20159, 6322, 12523, 2]
+// Dependencies: [32, 19, 17, 1388, 21, 5306, 575, 7418, 1630, 20163, 504, 1655, 5538, 1113, 2701, 8208, 6010, 20164, 5465, 5919, 7490, 20165, 6834, 20161, 6322, 12525, 2]
 // Exports: default
 
-// Module 20160 (RestrictedHoursModal)
+// Module 20162 (RestrictedHoursModal)
 import nativeDefault from "native" /* 575 */;
 import _mod1655 from "module_1655" /* 1655 */;
 import timing_timing from "timing/timing" /* 5538 */;
@@ -12,8 +12,8 @@ import Text_Text from "Text/Text" /* 5919 */;
 import useBackPressHandlerDefault from "useBackPressHandler" /* 6322 */;
 import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6834 */;
 import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 7418 */;
-import RestrictedHoursActionCreators from "RestrictedHoursActionCreators" /* 20159 */;
-import useIsInRestrictedHoursDefault from "useIsInRestrictedHours" /* 20163 */;
+import RestrictedHoursActionCreators from "RestrictedHoursActionCreators" /* 20161 */;
+import useIsInRestrictedHoursDefault from "useIsInRestrictedHours" /* 20165 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

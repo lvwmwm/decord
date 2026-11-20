@@ -1,9 +1,9 @@
-// Module ID: 16258
-// Function ID: 16259
+// Module ID: 16260
+// Function ID: 16261
 // Name: RTCConnectionDesyncStore
 // Dependencies: [5972, 5155, 6061, 1388, 5971, 6064, 1072, 5973, 2160, 6341, 7027, 6086, 504, 572, 2]
 
-// Module 16258 (RTCConnectionDesyncStore)
+// Module 16260 (RTCConnectionDesyncStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import CachedEntriesMapDefault from "CachedEntriesMap" /* 2160 */;

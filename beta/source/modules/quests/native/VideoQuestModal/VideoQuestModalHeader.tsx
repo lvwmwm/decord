@@ -1,10 +1,10 @@
-// Module ID: 17757
-// Function ID: 17758
+// Module ID: 17759
+// Function ID: 17760
 // Name: VideoQuestModalHeader
-// Dependencies: [19, 17, 8810, 21, 5306, 575, 17732, 10131, 8831, 5221, 15249, 5919, 1113, 17753, 2]
+// Dependencies: [19, 17, 8810, 21, 5306, 575, 17734, 10131, 8831, 5221, 15251, 5919, 1113, 17755, 2]
 // Exports: default
 
-// Module 17757 (VideoQuestModalHeader)
+// Module 17759 (VideoQuestModalHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import VideoQuestUIStore from "VideoQuestUIStore" /* 8810 */;
@@ -50,7 +50,7 @@ export default function VideoQuestModalHeader(showCurrentVideoTime) {
   const withTextShadow = showCurrentVideoTime.withTextShadow;
   let textShadow = undefined !== withTextShadow && withTextShadow;
   const tmp2 = closure_7();
-  let obj = quest(17732);
+  let obj = quest(17734);
   quest = obj.useVideoQuestModalContext().quest;
   let obj2 = quest(10131);
   const questTaskDetails = obj2.useQuestTaskDetails(quest);
@@ -72,7 +72,7 @@ export default function VideoQuestModalHeader(showCurrentVideoTime) {
     completedAt = userStatus.completedAt;
   }
   if (null == completedAt) {
-    const tmp3Result = quest(15249);
+    const tmp3Result = quest(15251);
     videoQuestProgressRemainingAccessibilityLabel = tmp3Result.getVideoQuestProgressRemainingAccessibilityLabel(questTaskDetails, tmp8);
   }
   let obj3 = { style: items, children: items2 };
@@ -100,6 +100,6 @@ export default function VideoQuestModalHeader(showCurrentVideoTime) {
     }
   }
   items1[1] = closure_5(Text2, obj7);
-  items2 = [closure_6(View, obj4), closure_5(questTaskDetails(17753), { iconColor: closeButtonIconColor, onClose })];
+  items2 = [closure_6(View, obj4), closure_5(questTaskDetails(17755), { iconColor: closeButtonIconColor, onClose })];
   return closure_6(View, obj3);
 };

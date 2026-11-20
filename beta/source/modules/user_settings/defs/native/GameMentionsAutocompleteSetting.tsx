@@ -1,13 +1,13 @@
-// Module ID: 17946
-// Function ID: 17947
+// Module ID: 17948
+// Function ID: 17949
 // Name: GameMentionsAutocompleteSetting
-// Dependencies: [9202, 12406, 1113, 5131, 2]
+// Dependencies: [9202, 12408, 1113, 5131, 2]
 
-// Module 17946 (GameMentionsAutocompleteSetting)
+// Module 17948 (GameMentionsAutocompleteSetting)
 import intl2 from "intl" /* 1113 */;
 import UserSettings from "UserSettings" /* 5131 */;
 import SettingsConstants from "SettingsConstants" /* 9202 */;
-import SettingBuilders from "SettingBuilders" /* 12406 */;
+import SettingBuilders from "SettingBuilders" /* 12408 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

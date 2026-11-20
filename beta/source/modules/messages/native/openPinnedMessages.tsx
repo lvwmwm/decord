@@ -1,10 +1,10 @@
-// Module ID: 12587
-// Function ID: 12588
+// Module ID: 12589
+// Function ID: 12590
 // Name: openPinnedMessages
 // Dependencies: [10897, 5483, 2]
 // Exports: default
 
-// Module 12587 (openPinnedMessages)
+// Module 12589 (openPinnedMessages)
 import RootNavigationRef from "RootNavigationRef" /* 5483 */;
 import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10897 */;
 import size from "module_2" /* 2 */;

@@ -1,10 +1,10 @@
-// Module ID: 13167
-// Function ID: 13168
+// Module ID: 13169
+// Function ID: 13170
 // Name: conjurePublishEvalConnection
 // Dependencies: [572, 1269, 7335, 2]
 // Exports: releasePublishEvalOnTicketRefused, sendConjurePublishEval
 
-// Module 13167 (conjurePublishEvalConnection)
+// Module 13169 (conjurePublishEvalConnection)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import v1 from "v1" /* 1269 */;
 import size from "module_2" /* 2 */;

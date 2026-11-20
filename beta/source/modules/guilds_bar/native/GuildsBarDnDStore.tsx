@@ -1,10 +1,10 @@
-// Module ID: 19065
-// Function ID: 19066
+// Module ID: 19067
+// Function ID: 19068
 // Name: GuildsBarDnDStore
 // Dependencies: [6946, 1258, 1655, 1263, 1242, 5221, 2]
 // Exports: useFolderBGHeightOffset, useItemDragState
 
-// Module 19065 (GuildsBarDnDStore)
+// Module 19067 (GuildsBarDnDStore)
 import SentryUtilsDefault from "SentryUtils" /* 1242 */;
 import react_native from "react-native" /* 1263 */;
 import _slicedToArray from "_slicedToArray" /* 5221 */;
@@ -77,7 +77,7 @@ const withEqualityFn = module_1258.createWithEqualityFn((arg0, arg1) => {
       } else {
         const obj4 = dropSpecs(tmp2[3]);
         obj4.batchUpdates(() => {
-          const obj = { dropSpecs, dragSpecs: "Array", overSpecs: "context" };
+          const obj = { dropSpecs, dragSpecs: "Array", overSpecs: "alignItems" };
           return dropSpecs(obj);
         });
         const _clearTimeout = clearTimeout;

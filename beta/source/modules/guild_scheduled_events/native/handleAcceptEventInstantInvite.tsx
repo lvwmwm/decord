@@ -1,10 +1,10 @@
-// Module ID: 12585
-// Function ID: 12586
+// Module ID: 12587
+// Function ID: 12588
 // Name: handleAcceptEventInstantInvite
 // Dependencies: [7029, 8841, 7660, 7989, 10805, 2]
 // Exports: default
 
-// Module 12585 (handleAcceptEventInstantInvite)
+// Module 12587 (handleAcceptEventInstantInvite)
 import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 7660 */;
 import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7029 */;
 import size from "module_2" /* 2 */;

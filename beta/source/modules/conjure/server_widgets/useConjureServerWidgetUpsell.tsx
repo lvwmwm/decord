@@ -1,12 +1,12 @@
-// Module ID: 15807
-// Function ID: 15808
+// Module ID: 15809
+// Function ID: 15810
 // Name: useConjureServerWidgetUpsell
-// Dependencies: [32, 19, 5177, 7017, 510, 15808, 504, 7259, 12446, 12264, 2]
+// Dependencies: [32, 19, 5177, 7017, 510, 15810, 504, 7259, 12448, 12264, 2]
 // Exports: useConjureServerWidgetUpsellDetails, useConjureServerWidgetUpsellOffer
 
-// Module 15807 (useConjureServerWidgetUpsell)
+// Module 15809 (useConjureServerWidgetUpsell)
 import Storage3 from "Storage" /* 510 */;
-import useConjureServerWidgetOffersDefault from "useConjureServerWidgetOffers" /* 15808 */;
+import useConjureServerWidgetOffersDefault from "useConjureServerWidgetOffers" /* 15810 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 5177 */;

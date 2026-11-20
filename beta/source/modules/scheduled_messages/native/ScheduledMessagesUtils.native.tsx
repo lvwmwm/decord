@@ -1,7 +1,7 @@
 // Module ID: 9048
 // Function ID: 9049
 // Name: ScheduledMessagesUtils
-// Dependencies: [5, 9004, 5491, 1113, 2169, 9030, 6838, 9049, 2121, 15660, 9032, 9029, 9033, 7948, 5542, 11924, 2]
+// Dependencies: [5, 9004, 5491, 1113, 2169, 9030, 6838, 9049, 2121, 15662, 9032, 9029, 9033, 7948, 5542, 11924, 2]
 // Exports: cancelScheduledMessage, openRescheduleMessageActionSheet, openScheduleMessageActionSheet, openScheduledMessageEditContentModal, pickScheduledMessageTime, sendScheduledMessageNow, showScheduledMessagesModal
 
 // Module 9048 (ScheduledMessagesUtils)
@@ -395,7 +395,7 @@ export function showScheduledMessagesModal() {
 export function openScheduledMessageEditContentModal(scheduledMessage) {
   obj = ModalActionCreatorsDefault;
   const obj2 = { scheduledMessage };
-  obj.pushLazy(asyncRequire(15660, dependencyMap.paths), obj2, "scheduled-message-edit-content", { presentation: "modal" });
+  obj.pushLazy(asyncRequire(15662, dependencyMap.paths), obj2, "scheduled-message-edit-content", { presentation: "modal" });
 }
 export function openRescheduleMessageActionSheet(scheduledMessageId, sendAtTimestamp, channelId) {
   let intl;

@@ -1,10 +1,10 @@
-// Module ID: 14255
-// Function ID: 14256
+// Module ID: 14257
+// Function ID: 14258
 // Name: CheckpointFlows
-// Dependencies: [6735, 6737, 14256, 14257, 2]
+// Dependencies: [6735, 6737, 14258, 14259, 2]
 // Exports: getCheckpointFlow, getCheckpointReplayRoute, getCheckpointRoutes, hasCheckpointSummaryRoute
 
-// Module 14255 (CheckpointFlows)
+// Module 14257 (CheckpointFlows)
 import CheckpointNavigation from "CheckpointNavigation" /* 6735 */;
 import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6737 */;
 import size from "module_2" /* 2 */;
@@ -31,9 +31,9 @@ function getAdjacentCheckpointRoute(arg0) {
     isCharacterCreatorEnabled = true;
   }
   if (flow === require("CheckpointNavigation").CheckpointFlow.SHARED_DATA) {
-    prop = tmp2(14256).CHECKPOINT_SHARED_DATA_FLOW;
+    prop = tmp2(14258).CHECKPOINT_SHARED_DATA_FLOW;
   } else {
-    prop = tmp2(14257).CHECKPOINT_NO_SHARED_DATA_FLOW;
+    prop = tmp2(14259).CHECKPOINT_NO_SHARED_DATA_FLOW;
   }
   const found = prop.filter((item) => {
     if (item === CheckpointNavigation.CheckpointRoute.SHARE) {
@@ -153,9 +153,9 @@ export function getCheckpointRoutes(flow) {
     isCharacterCreatorEnabled = true;
   }
   if (flow === CheckpointNavigation.CheckpointFlow.SHARED_DATA) {
-    prop = tmp(14256).CHECKPOINT_SHARED_DATA_FLOW;
+    prop = tmp(14258).CHECKPOINT_SHARED_DATA_FLOW;
   } else {
-    prop = tmp(14257).CHECKPOINT_NO_SHARED_DATA_FLOW;
+    prop = tmp(14259).CHECKPOINT_NO_SHARED_DATA_FLOW;
   }
   return prop.filter((item) => {
     if (item === CheckpointNavigation.CheckpointRoute.SHARE) {

@@ -1,10 +1,10 @@
-// Module ID: 15092
-// Function ID: 15093
+// Module ID: 15094
+// Function ID: 15095
 // Name: HubEmailConnectionContent
-// Dependencies: [5, 32, 19, 17, 5155, 15080, 1072, 21, 5306, 575, 5320, 1502, 5903, 5542, 15093, 2121, 15094, 6747, 1113, 5919, 15088, 15095, 7617, 1187, 5926, 2]
+// Dependencies: [5, 32, 19, 17, 5155, 15082, 1072, 21, 5306, 575, 5320, 1502, 5903, 5542, 15095, 2121, 15096, 6747, 1113, 5919, 15090, 15097, 7617, 1187, 5926, 2]
 // Exports: default
 
-// Module 15092 (HubEmailConnectionContent)
+// Module 15094 (HubEmailConnectionContent)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl8 from "intl" /* 1113 */;
@@ -15,7 +15,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
-import HubConstants from "HubConstants" /* 15080 */;
+import HubConstants from "HubConstants" /* 15082 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
@@ -33,8 +33,8 @@ let tmp;
 const native = tmp(1187);
 const Text_Text = tmp(5919);
 const components_Button_Button = tmp(5926);
-const HubEmailConnectionModal = tmp(15088);
-const InkQuillSpotIllustration = tmp(15095);
+const HubEmailConnectionModal = tmp(15090);
+const InkQuillSpotIllustration = tmp(15097);
 let react = react_mod;
 ({ View: metroRequire, ScrollView: metroImportDefault } = react_native);
 ({ HubEmailConnectionSteps: c9, INVITE_ROUTING_HUB_GUILD_ID: c10 } = HubConstants);
@@ -310,7 +310,7 @@ export default function HubEmailConnectionContent(arg0) {
   let obj10 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: tmp3.title, accessibilityRole: "header", children: formatToPlainStringResult };
   items2[1] = closure_12(Text_Text.Text, obj10);
   let obj11 = { style: tmp3.description, children: mapped };
-  const tmp19 = ref;
+  const tmp20 = ref;
   if (obj4.usesLearnMoreHook) {
     mapped = arr.map((item, index) => {
       let tmp = item;
@@ -323,7 +323,7 @@ export default function HubEmailConnectionContent(arg0) {
     });
   } else {
     let obj12 = { style: tmp3.descriptionText, variant: "body-sm/medium", color: "text-default", children: formatResult };
-    mapped = tmp17(Text_Text.Text, obj12);
+    mapped = tmp18(Text_Text.Text, obj12);
   }
   items2[2] = closure_12(c6, obj11);
   const obj13 = {
@@ -366,9 +366,9 @@ export default function HubEmailConnectionContent(arg0) {
   if (obj2 != null) {
     anyErrorMessage = obj2.getAnyErrorMessage();
   }
-  const obj15 = { children: closure_13(tmp19, obj6) };
+  const obj15 = { children: closure_13(tmp20, obj6) };
   items2[3] = closure_12(tmp10Result, obj13);
-  items3 = [tmp18(tmp20, obj8), , ];
+  items3 = [tmp19(tmp21, obj8), , ];
   const obj16 = { style: tmp3.growSpacing };
   items3[1] = closure_12(c6, obj16);
   const obj17 = { style: tmp3.buttonContainer, children: closure_12(Button, obj18) };

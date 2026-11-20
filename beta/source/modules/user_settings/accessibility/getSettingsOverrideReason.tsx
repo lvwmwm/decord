@@ -1,10 +1,10 @@
-// Module ID: 17953
-// Function ID: 17954
+// Module ID: 17955
+// Function ID: 17956
 // Name: getSettingsOverrideReason
 // Dependencies: [5132, 1082, 1113, 4292, 504, 2]
 // Exports: default, useIsSettingLockedByOverride, useSettingsOverrideReason
 
-// Module 17953 (getSettingsOverrideReason)
+// Module 17955 (getSettingsOverrideReason)
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
 import intl4 from "intl" /* 1113 */;
 import _modDef4292 from "module_4292" /* 4292 */;

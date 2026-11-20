@@ -1,10 +1,10 @@
-// Module ID: 14181
-// Function ID: 14182
+// Module ID: 14183
+// Function ID: 14184
 // Name: ClassificationDetail
-// Dependencies: [19, 17, 2189, 8231, 8206, 1072, 21, 5306, 575, 5919, 8207, 1113, 504, 3417, 8451, 6002, 11224, 7443, 5926, 14182, 14184, 8230, 6823, 1256, 14185, 6761, 6766, 14187, 7415, 14192, 8205, 2]
+// Dependencies: [19, 17, 2189, 8231, 8206, 1072, 21, 5306, 575, 5919, 8207, 1113, 504, 3417, 8451, 6002, 11224, 7443, 5926, 14184, 14186, 8230, 6823, 1256, 14187, 6761, 6766, 14189, 7415, 14194, 8205, 2]
 // Exports: default
 
-// Module 14181 (ClassificationDetail)
+// Module 14183 (ClassificationDetail)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl4 from "intl" /* 1113 */;
@@ -18,8 +18,8 @@ import MetricEvents from "MetricEvents" /* 6766 */;
 import TableRow2 from "TableRow" /* 7443 */;
 import SafetyHubModels from "SafetyHubModels" /* 8207 */;
 import TouchableHitBoxDefault from "TouchableHitBox" /* 8451 */;
-import AutomatedUnderageAppealModalActionCreatorsDefault from "AutomatedUnderageAppealModalActionCreators" /* 14185 */;
-import AppealIngestionModalActionCreatorsDefault from "AppealIngestionModalActionCreators" /* 14187 */;
+import AutomatedUnderageAppealModalActionCreatorsDefault from "AutomatedUnderageAppealModalActionCreators" /* 14187 */;
+import AppealIngestionModalActionCreatorsDefault from "AppealIngestionModalActionCreators" /* 14189 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import LocaleStore from "LocaleStore" /* 2189 */;

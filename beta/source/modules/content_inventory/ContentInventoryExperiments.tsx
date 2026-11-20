@@ -1,10 +1,10 @@
-// Module ID: 16196
-// Function ID: 16197
+// Module ID: 16198
+// Function ID: 16199
 // Name: ContentInventoryExperiments
 // Dependencies: [5523, 1452, 5520, 10220, 2]
 // Exports: isEligibleForContentInventoryV1, isEligibleForImpressionCapping
 
-// Module 16196 (ContentInventoryExperiments)
+// Module 16198 (ContentInventoryExperiments)
 import ExperimentConstants from "ExperimentConstants" /* 5523 */;
 import ICYMIExperiment from "ICYMIExperiment" /* 10220 */;
 import ApexExperiment from "ApexExperiment" /* 1452 */;

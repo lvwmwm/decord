@@ -103,13 +103,13 @@ export default function resolvedValuesFromUserApplicationIdentityProfile(profile
   if (null == profile) {
     obj2 = {};
   } else {
-    const obj3 = {};
+    const obj = {};
     if (null != profile.username) {
-      obj3.username = { type: resolvedValues.ResolvedValueType.STRING, value: profile.username };
-      const obj = { type: resolvedValues.ResolvedValueType.STRING, value: profile.username };
+      obj.username = { type: resolvedValues.ResolvedValueType.STRING, value: profile.username };
+      const obj3 = { type: resolvedValues.ResolvedValueType.STRING, value: profile.username };
     }
     obj2 = {};
-    const merged = Object.assign(obj3);
+    const merged = Object.assign(obj);
     const merged1 = Object.assign(resolvedValuesFromPrimary(profile));
     const merged2 = Object.assign(resolvedValuesFromDynamic(profile));
   }

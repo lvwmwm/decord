@@ -1,9 +1,9 @@
-// Module ID: 15991
-// Function ID: 15992
+// Module ID: 15993
+// Function ID: 15994
 // Name: GuildMemberSubscriptions
 // Dependencies: [1089, 5150, 11, 3, 12, 2]
 
-// Module 15991 (GuildMemberSubscriptions)
+// Module 15993 (GuildMemberSubscriptions)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;

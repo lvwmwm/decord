@@ -1,10 +1,10 @@
-// Module ID: 14926
-// Function ID: 14927
+// Module ID: 14928
+// Function ID: 14929
 // Name: openConjureProjectInBuilder
 // Dependencies: [10536, 2]
 // Exports: default
 
-// Module 14926 (openConjureProjectInBuilder)
+// Module 14928 (openConjureProjectInBuilder)
 import openConjureHomeScreenDefault from "openConjureHomeScreen" /* 10536 */;
 import size from "module_2" /* 2 */;
 

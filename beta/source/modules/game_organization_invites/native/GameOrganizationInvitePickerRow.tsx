@@ -1,15 +1,15 @@
-// Module ID: 12564
-// Function ID: 12565
+// Module ID: 12566
+// Function ID: 12567
 // Name: GameOrganizationInvitePickerRow
-// Dependencies: [19, 12565, 8842, 21, 5306, 575, 12566, 7443, 6010, 7928, 6327, 7436, 5919, 1113, 2565, 12567, 2]
+// Dependencies: [19, 12567, 8842, 21, 5306, 575, 12568, 7443, 6010, 7928, 6327, 7436, 5919, 1113, 2565, 12569, 2]
 
-// Module 12564 (GameOrganizationInvitePickerRow)
+// Module 12566 (GameOrganizationInvitePickerRow)
 import nativeDefault from "native" /* 575 */;
 import FastImageDefault from "FastImage" /* 6010 */;
 import TableRow2 from "TableRow" /* 7443 */;
 import Constants from "Constants" /* 8842 */;
-import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 12565 */;
-import getGameOrganizationInviteSendStateKey from "getGameOrganizationInviteSendStateKey" /* 12566 */;
+import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 12567 */;
+import getGameOrganizationInviteSendStateKey from "getGameOrganizationInviteSendStateKey" /* 12568 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5306 */;
@@ -23,7 +23,7 @@ let size;
 let tmp2;
 const _modDef2565 = tmp2(2565);
 const AssetRegistryDefault = tmp2(7928);
-const InviteButtonDefault = tmp2(12567);
+const InviteButtonDefault = tmp2(12569);
 let closure_4 = InstantInviteSendStateStore.useInstantInviteSendStates;
 const InviteSendStates = Constants.InviteSendStates;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);

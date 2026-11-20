@@ -1,14 +1,14 @@
-// Module ID: 15582
-// Function ID: 15583
+// Module ID: 15584
+// Function ID: 15585
 // Name: UserProfileEmbed
-// Dependencies: [7352, 1388, 8842, 9170, 1113, 15583, 2]
+// Dependencies: [7352, 1388, 8842, 9170, 1113, 15585, 2]
 // Exports: createUserProfileEmbed
 
-// Module 15582 (UserProfileEmbed)
+// Module 15584 (UserProfileEmbed)
 import intl2 from "intl" /* 1113 */;
 import Constants from "Constants" /* 8842 */;
 import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 9170 */;
-import UserProfileEmbedRenderingMobileExperiment from "UserProfileEmbedRenderingMobileExperiment" /* 15583 */;
+import UserProfileEmbedRenderingMobileExperiment from "UserProfileEmbedRenderingMobileExperiment" /* 15585 */;
 import UserProfileStore from "UserProfileStore" /* 7352 */;
 import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;

@@ -1,14 +1,9 @@
 // Module ID: 16535
 // Function ID: 16536
-// Dependencies: [16518]
+// Dependencies: [16534]
 
 // Module 16535
-import _mod16518 from "module_16518" /* 16518 */;
+import _mod16534 from "module_16534" /* 16534 */;
 
 
-export default (arg0, arg1, arg2) => {
-  const obj = new _mod16518(arg0, arg2);
-  const tmp = new _mod16518(arg1, arg2);
-  const tmp2 = obj.compare(tmp) || obj.compareBuild(tmp);
-  return tmp2;
-};
+export default (arg0, arg1, arg2) => _mod16534(arg1, arg0, arg2);

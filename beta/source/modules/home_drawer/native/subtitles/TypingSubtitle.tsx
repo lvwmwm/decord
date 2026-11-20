@@ -1,13 +1,13 @@
-// Module ID: 19103
-// Function ID: 19104
+// Module ID: 19105
+// Function ID: 19106
 // Name: TypingSubtitle
-// Dependencies: [19, 17, 21, 19102, 8033, 8078, 5919, 2]
+// Dependencies: [19, 17, 21, 19104, 8033, 8078, 5919, 2]
 // Exports: default
 
-// Module 19103 (TypingSubtitle)
+// Module 19105 (TypingSubtitle)
 import react_native from "react-native" /* 17 */;
 import utils_ChannelUtils from "utils/ChannelUtils" /* 8033 */;
-import useSubtitleStyles from "useSubtitleStyles" /* 19102 */;
+import useSubtitleStyles from "useSubtitleStyles" /* 19104 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

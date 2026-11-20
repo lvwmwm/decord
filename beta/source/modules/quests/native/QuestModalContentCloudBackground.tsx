@@ -1,10 +1,10 @@
-// Module ID: 17733
-// Function ID: 17734
+// Module ID: 17735
+// Function ID: 17736
 // Name: QuestModalContentCloudBackground
-// Dependencies: [19, 17, 21, 5306, 5328, 5537, 5883, 6010, 17734, 17735, 2]
+// Dependencies: [19, 17, 21, 5306, 5328, 5537, 5883, 6010, 17736, 17737, 2]
 // Exports: default
 
-// Module 17733 (QuestModalContentCloudBackground)
+// Module 17735 (QuestModalContentCloudBackground)
 import themes from "themes" /* 5328 */;
 import useTheme from "useTheme" /* 5537 */;
 import LinearGradientDefault from "LinearGradient" /* 5883 */;
@@ -92,7 +92,7 @@ export default function QuestModalContentCloudBackground(align) {
     tmp9 = tmp7;
   }
   items1 = [tmp7Result, ];
-  const obj5 = { style: items2, source: importDefault(isThemeDarkResult ? 17734 : 17735), resizeMode: str2 };
+  const obj5 = { style: items2, source: importDefault(isThemeDarkResult ? 17736 : 17737), resizeMode: str2 };
   items2 = [isThemeDarkResult ? tmp.cloudsImage : tmp.cloudsImageLight, imgStyle];
   const tmp12 = FastImageDefault;
   items1[1] = tmp9(tmp12, obj5);

@@ -1,10 +1,10 @@
-// Module ID: 16069
-// Function ID: 16070
+// Module ID: 16071
+// Function ID: 16072
 // Name: StageSettingsActionSheet
-// Dependencies: [19, 17, 7016, 5155, 5238, 5160, 6896, 1072, 21, 5306, 575, 5542, 504, 5163, 6898, 7951, 8106, 1113, 1187, 8016, 6893, 16070, 8604, 16071, 10919, 16072, 16073, 12063, 2]
+// Dependencies: [19, 17, 7016, 5155, 5238, 5160, 6896, 1072, 21, 5306, 575, 5542, 504, 5163, 6898, 7951, 8106, 1113, 1187, 8016, 6893, 16072, 8604, 16073, 10919, 16074, 16075, 12063, 2]
 // Exports: default
 
-// Module 16069 (StageSettingsActionSheet)
+// Module 16071 (StageSettingsActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import StageChannelPermissions from "StageChannelPermissions" /* 5163 */;

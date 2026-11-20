@@ -1,10 +1,10 @@
-// Module ID: 12634
-// Function ID: 12635
+// Module ID: 12636
+// Function ID: 12637
 // Name: useShouldHideMediaOptions
 // Dependencies: [5155, 5162, 563, 2]
 // Exports: default
 
-// Module 12634 (useShouldHideMediaOptions)
+// Module 12636 (useShouldHideMediaOptions)
 import ChannelConstants from "ChannelConstants" /* 5162 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import size from "module_2" /* 2 */;

@@ -1,10 +1,10 @@
-// Module ID: 15668
-// Function ID: 15669
+// Module ID: 15670
+// Function ID: 15671
 // Name: validateComponent
 // Dependencies: [2119, 6366, 1113, 38, 2]
 // Exports: default
 
-// Module 15668 (validateComponent)
+// Module 15670 (validateComponent)
 import _modDef38 from "module_38" /* 38 */;
 import Server from "Server" /* 2119 */;
 import InteractionComponentUtils from "InteractionComponentUtils" /* 6366 */;

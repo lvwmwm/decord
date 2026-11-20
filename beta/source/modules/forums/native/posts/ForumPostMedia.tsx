@@ -1,18 +1,18 @@
-// Module ID: 14618
-// Function ID: 14619
+// Module ID: 14620
+// Function ID: 14621
 // Name: ForumPostMedia
-// Dependencies: [32, 19, 17, 1192, 1191, 21, 5306, 575, 6010, 5896, 14619, 8853, 14620, 1380, 8639, 7428, 8190, 6823, 14621, 5313, 5131, 11145, 1495, 2]
+// Dependencies: [32, 19, 17, 1192, 1191, 21, 5306, 575, 6010, 5896, 14621, 8853, 14622, 1380, 8639, 7428, 8190, 6823, 14623, 5313, 5131, 11145, 1495, 2]
 // Exports: ForumPostGridMedia, ForumPostMediaThumbnail, useSharedMediaProps
 
-// Module 14618 (ForumPostMedia)
+// Module 14620 (ForumPostMedia)
 import nativeDefault from "native" /* 575 */;
 import FormConstants from "FormConstants" /* 1191 */;
 import utils_ImageUtils from "utils/ImageUtils" /* 1495 */;
 import shared from "shared" /* 5313 */;
 import VisualEffectViewDefault from "VisualEffectView" /* 5896 */;
 import FastImageDefault from "FastImage" /* 6010 */;
-import SpoilerIconDefault from "SpoilerIcon" /* 14619 */;
-import MessageAttachmentUtils from "MessageAttachmentUtils" /* 14621 */;
+import SpoilerIconDefault from "SpoilerIcon" /* 14621 */;
+import MessageAttachmentUtils from "MessageAttachmentUtils" /* 14623 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -108,7 +108,7 @@ function ForumPostMedia(obscureReason) {
   const shouldAgeVerifyForReason = obj.useShouldAgeVerifyForReason(obscureReason.obscureReason);
   if (obscureReason.isMediaPost) {
     let obj2 = {};
-    const tmp19 = ref(14620);
+    const tmp19 = ref(14622);
     const merged = Object.assign(obscureReason);
     tmp6Result = closure_9(tmp19, obj2);
     tmp12 = closure_9;

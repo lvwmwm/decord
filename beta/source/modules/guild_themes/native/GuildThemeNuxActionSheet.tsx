@@ -1,10 +1,10 @@
-// Module ID: 18879
-// Function ID: 18880
+// Module ID: 18881
+// Function ID: 18882
 // Name: GuildThemeNuxActionSheet
-// Dependencies: [5, 32, 19, 17, 5339, 5512, 5152, 21, 3, 5306, 575, 18880, 5533, 504, 5542, 1113, 5556, 18881, 5919, 7745, 7747, 8159, 5926, 2]
+// Dependencies: [5, 32, 19, 17, 5339, 5512, 5152, 21, 3, 5306, 575, 18882, 5533, 504, 5542, 1113, 5556, 18883, 5919, 7745, 7747, 8159, 5926, 2]
 // Exports: default
 
-// Module 18879 (GuildThemeNuxActionSheet)
+// Module 18881 (GuildThemeNuxActionSheet)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
@@ -87,7 +87,7 @@ export default function GuildThemeNuxActionSheet(guildId) {
   const tmp = closure_14();
   let tmp2 = guildId;
   const tmp3 = dependencyMap;
-  const tmp4 = _slicedToArray(react.useState(guildId(18880).getInitialGuildThemeNuxSelection), 2);
+  const tmp4 = _slicedToArray(react.useState(guildId(18882).getInitialGuildThemeNuxSelection), 2);
   [tmp5, c2] = tmp4;
   [tmp7, c3] = _slicedToArray(react.useState(null), 2);
   const tmp6 = _slicedToArray(react.useState(null), 2);
@@ -231,7 +231,7 @@ export default function GuildThemeNuxActionSheet(guildId) {
   let obj3 = { startExpanded: true, dismissAccessibilityLabel: intl2.string(tmp2(1113).t.cpT0Cq), onDismiss: callback3, contentStyles: tmp.container, children: items7 };
   const BottomSheet = tmp2(5556).BottomSheet;
   intl2 = tmp2(1113).intl;
-  items7 = [closure_10(markAsDismissed(18881), { themeSettings: stateFromStores1, isPersonal: tmp10 }), , , , , , ];
+  items7 = [closure_10(markAsDismissed(18883), { themeSettings: stateFromStores1, isPersonal: tmp10 }), , , , , , ];
   let obj4 = { accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: tmp.title, children: intl3.string(tmp2(1113).t.Q9zFy9) };
   const Text = tmp2(5919).Text;
   intl3 = tmp2(1113).intl;

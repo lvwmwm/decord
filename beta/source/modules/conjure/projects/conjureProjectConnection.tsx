@@ -1,9 +1,9 @@
-// Module ID: 15980
-// Function ID: 15981
+// Module ID: 15982
+// Function ID: 15983
 // Name: conjureProjectConnection
 // Dependencies: [7017, 572, 7329, 2]
 
-// Module 15980 (conjureProjectConnection)
+// Module 15982 (conjureProjectConnection)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import ConjureActionCreators from "ConjureActionCreators" /* 7329 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 7017 */;

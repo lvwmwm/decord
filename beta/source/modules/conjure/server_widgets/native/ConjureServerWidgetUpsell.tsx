@@ -1,15 +1,15 @@
-// Module ID: 15806
-// Function ID: 15807
+// Module ID: 15808
+// Function ID: 15809
 // Name: ConjureServerWidgetUpsell
-// Dependencies: [19, 17, 1388, 21, 5306, 575, 15807, 6327, 7720, 5919, 1113, 4131, 13788, 5926, 15815, 12146, 504, 2]
+// Dependencies: [19, 17, 1388, 21, 5306, 575, 15809, 6327, 7720, 5919, 1113, 4131, 13790, 5926, 15817, 12146, 504, 2]
 // Exports: default
 
-// Module 15806 (ConjureServerWidgetUpsell)
+// Module 15808 (ConjureServerWidgetUpsell)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import useConjureServerWidgetUpsell from "useConjureServerWidgetUpsell" /* 15807 */;
-import turnOnConjureServerWidgetDefault from "turnOnConjureServerWidget" /* 15815 */;
+import useConjureServerWidgetUpsell from "useConjureServerWidgetUpsell" /* 15809 */;
+import turnOnConjureServerWidgetDefault from "turnOnConjureServerWidget" /* 15817 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
@@ -46,7 +46,7 @@ function ServerWidgetUpsellCard(cardStyle) {
   ({ guildId, onDismiss } = cardStyle);
   cardStyle = cardStyle.cardStyle;
   const tmp = closure_7();
-  const obj = widget(15807);
+  const obj = widget(15809);
   const conjureServerWidgetUpsellDetails = obj.useConjureServerWidgetUpsellDetails(userId, widget, guildId);
   if (null == conjureServerWidgetUpsellDetails) {
     return null;
@@ -74,7 +74,7 @@ function ServerWidgetUpsellCard(cardStyle) {
     let tmp10Result = null;
     if (null != creator) {
       const obj10 = { creator, guildId };
-      tmp10Result = tmp10(tmp9(13788), obj10);
+      tmp10Result = tmp10(tmp9(13790), obj10);
     }
     items1[2] = tmp10Result;
     items[1] = closure_6(Stack3, obj5);

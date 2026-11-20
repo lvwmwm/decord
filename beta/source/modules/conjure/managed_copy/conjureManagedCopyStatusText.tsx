@@ -1,10 +1,10 @@
-// Module ID: 13203
-// Function ID: 13204
+// Module ID: 13205
+// Function ID: 13206
 // Name: conjureManagedCopyStatusText
 // Dependencies: [1113, 4131, 5128, 2]
 // Exports: conjureCopySourceLine, conjureCopySyncLine
 
-// Module 13203 (conjureManagedCopyStatusText)
+// Module 13205 (conjureManagedCopyStatusText)
 import intl7 from "intl" /* 1113 */;
 import _modDef4131 from "module_4131" /* 4131 */;
 import DateUtils from "DateUtils" /* 5128 */;

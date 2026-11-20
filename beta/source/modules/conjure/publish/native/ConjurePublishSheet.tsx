@@ -1,10 +1,10 @@
-// Module ID: 13173
-// Function ID: 13174
+// Module ID: 13175
+// Function ID: 13176
 // Name: ConjurePublishSheet
-// Dependencies: [5, 19, 17, 7017, 21, 10467, 7432, 7018, 12682, 13174, 13176, 11224, 5306, 575, 6005, 5542, 13162, 504, 13178, 6322, 5887, 8100, 8101, 1113, 4131, 7951, 13184, 10543, 7619, 7859, 5919, 7720, 10553, 5926, 7954, 5944, 2]
+// Dependencies: [5, 19, 17, 7017, 21, 10467, 7432, 7018, 12684, 13176, 13178, 11224, 5306, 575, 6005, 5542, 13164, 504, 13180, 6322, 5887, 8100, 8101, 1113, 4131, 7951, 13186, 10543, 7619, 7859, 5919, 7720, 10553, 5926, 7954, 5944, 2]
 // Exports: default
 
-// Module 13173 (ConjurePublishSheet)
+// Module 13175 (ConjurePublishSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef4131 from "module_4131" /* 4131 */;
@@ -18,10 +18,10 @@ import TableSwitchRow2 from "TableSwitchRow" /* 7954 */;
 import AppsIcon2 from "AppsIcon" /* 8101 */;
 import ScreenIcon from "ScreenIcon" /* 10467 */;
 import ShieldIcon from "ShieldIcon" /* 11224 */;
-import RobotIcon from "RobotIcon" /* 12682 */;
-import useConjurePublishActionDefault from "useConjurePublishAction" /* 13162 */;
-import ActivitiesIcon from "ActivitiesIcon" /* 13174 */;
-import BadgeIcon from "BadgeIcon" /* 13176 */;
+import RobotIcon from "RobotIcon" /* 12684 */;
+import useConjurePublishActionDefault from "useConjurePublishAction" /* 13164 */;
+import ActivitiesIcon from "ActivitiesIcon" /* 13176 */;
+import BadgeIcon from "BadgeIcon" /* 13178 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 7017 */;
@@ -221,7 +221,7 @@ function PublishSheetBody(entryPoint) {
   };
   const tmp = closure_13();
   const tmp3 = dependencyMap;
-  const tmp4 = entryPoint(13178)(project, publish);
+  const tmp4 = entryPoint(13180)(project, publish);
   dependencyMap = tmp4;
   entryPoint(6322)(() => true, tmp4.saving);
   obj = react;
@@ -299,7 +299,7 @@ function PublishSheetBody(entryPoint) {
           }
         }
     };
-    tmp15Result = tmp15(tmp12(13184).ConjureAppIconTile, obj4);
+    tmp15Result = tmp15(tmp12(13186).ConjureAppIconTile, obj4);
   } else {
     const obj5 = { project, size: "dialog" };
     tmp15Result = tmp15(tmp2(10543), obj5);

@@ -1,12 +1,12 @@
-// Module ID: 18423
-// Function ID: 18424
+// Module ID: 18425
+// Function ID: 18426
 // Name: DesignSystemsAlertModalSetting
-// Dependencies: [9202, 1072, 12406, 18424, 2]
+// Dependencies: [9202, 1072, 12408, 18426, 2]
 
-// Module 18423 (DesignSystemsAlertModalSetting)
+// Module 18425 (DesignSystemsAlertModalSetting)
 import Constants from "Constants" /* 1072 */;
 import SettingsConstants from "SettingsConstants" /* 9202 */;
-import SettingBuilders from "SettingBuilders" /* 12406 */;
+import SettingBuilders from "SettingBuilders" /* 12408 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,13 +1,13 @@
-// Module ID: 20839
-// Function ID: 20840
+// Module ID: 20841
+// Function ID: 20842
 // Name: AVErrorStreamSendHighPacketLoss
-// Dependencies: [6810, 6792, 6798, 20837, 6247, 20834, 2]
+// Dependencies: [6810, 6792, 6798, 20839, 6247, 20836, 2]
 
-// Module 20839 (AVErrorStreamSendHighPacketLoss)
+// Module 20841 (AVErrorStreamSendHighPacketLoss)
 import AVError from "AVError" /* 6247 */;
 import StreamKeyUtils from "StreamKeyUtils" /* 6798 */;
-import AVErrorContext from "AVErrorContext" /* 20834 */;
-import AVErrorUtils from "AVErrorUtils" /* 20837 */;
+import AVErrorContext from "AVErrorContext" /* 20836 */;
+import AVErrorUtils from "AVErrorUtils" /* 20839 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6810 */;
 import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 6792 */;
 import size from "module_2" /* 2 */;

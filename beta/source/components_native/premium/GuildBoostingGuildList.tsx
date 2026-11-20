@@ -1,10 +1,10 @@
-// Module ID: 15411
-// Function ID: 15412
+// Module ID: 15413
+// Function ID: 15414
 // Name: GuildBoostingGuildList
-// Dependencies: [19, 17, 5177, 6946, 1072, 21, 5306, 575, 5537, 504, 9241, 8451, 7231, 7809, 7720, 5919, 6010, 11381, 1113, 15380, 2]
+// Dependencies: [19, 17, 5177, 6946, 1072, 21, 5306, 575, 5537, 504, 9241, 8451, 7231, 7809, 7720, 5919, 6010, 11381, 1113, 15382, 2]
 // Exports: default
 
-// Module 15411 (GuildBoostingGuildList)
+// Module 15413 (GuildBoostingGuildList)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -17,7 +17,7 @@ import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreat
 import TouchableHitBoxDefault from "TouchableHitBox" /* 8451 */;
 import useGuildPowerupsBoostCountDefault from "useGuildPowerupsBoostCount" /* 9241 */;
 import AssetRegistryDefault from "AssetRegistry" /* 11381 */;
-import BoostedGuildTierProgressCircleDefault from "BoostedGuildTierProgressCircle" /* 15380 */;
+import BoostedGuildTierProgressCircleDefault from "BoostedGuildTierProgressCircle" /* 15382 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 5177 */;
 import SortedGuildStore from "SortedGuildStore" /* 6946 */;

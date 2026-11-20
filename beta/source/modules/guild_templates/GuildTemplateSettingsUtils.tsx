@@ -1,10 +1,10 @@
-// Module ID: 20604
-// Function ID: 20605
+// Module ID: 20606
+// Function ID: 20607
 // Name: GuildTemplateSettingsUtils
 // Dependencies: [5, 32, 19, 5155, 5238, 8461, 1072, 504, 8128, 6747, 2]
 // Exports: isGuildTemplateNameValid, useCanViewAllChannels, useGuildTemplate
 
-// Module 20604 (GuildTemplateSettingsUtils)
+// Module 20606 (GuildTemplateSettingsUtils)
 import Constants from "Constants" /* 1072 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

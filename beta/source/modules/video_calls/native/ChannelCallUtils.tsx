@@ -1,10 +1,10 @@
-// Module ID: 20119
-// Function ID: 20120
+// Module ID: 20121
+// Function ID: 20122
 // Name: ChannelCallUtils
-// Dependencies: [19, 6792, 1072, 21, 1113, 20120, 8604, 5542, 6056, 6259, 20117, 2121, 20121, 6798, 20122, 8460, 12540, 13044, 16072, 7, 6005, 10230, 2]
+// Dependencies: [19, 6792, 1072, 21, 1113, 20122, 8604, 5542, 6056, 6259, 20119, 2121, 20123, 6798, 20124, 8460, 12542, 13046, 16074, 7, 6005, 10230, 2]
 // Exports: invite, openHideSelfStreamAndVideoConfirmDialog, reportStreamIssue, rtcDebugPanel, selfVideoHidden, shareActivityLogs, videoParticipantsHidden, voiceSettings
 
-// Module 20119 (ChannelCallUtils)
+// Module 20121 (ChannelCallUtils)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1113 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
@@ -13,11 +13,11 @@ import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 6056 *
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6259 */;
 import StreamKeyUtils from "StreamKeyUtils" /* 6798 */;
 import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8460 */;
-import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 12540 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13044 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 16072 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 20120 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 20121 */;
+import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 12542 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13046 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 16074 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 20122 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 20123 */;
 import react from "react" /* 19 */;
 import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 6792 */;
 import Constants from "Constants" /* 1072 */;
@@ -77,7 +77,7 @@ export function openHideSelfStreamAndVideoConfirmDialog(arg0, arg1) {
     importer() {
       let onConfirm;
       let type;
-      const promise = asyncRequire(20117, dependencyMap.paths);
+      const promise = asyncRequire(20119, dependencyMap.paths);
       return promise.then((result) => {
         closure_0 = result.default;
         return (arg0) => {
@@ -121,7 +121,7 @@ export function reportStreamIssue(stream) {
       const merged = Object.assign(videoStats);
       const openLazy = ActionSheetActionCreatorsDefault.openLazy;
       ActionSheetActionCreatorsDefault;
-      const tmp7 = asyncRequire(20122, tmp2.paths);
+      const tmp7 = asyncRequire(20124, tmp2.paths);
       openLazy(tmp7, "StreamReportProblem" + stream.ownerId, { stream, analyticsData: obj3 });
     }
   };

@@ -1,26 +1,26 @@
-// Module ID: 15095
-// Function ID: 15096
+// Module ID: 15097
+// Function ID: 15098
 // Name: InkQuillSpotIllustration
-// Dependencies: [19, 21, 15096, 15097, 15098, 7755, 6010, 2]
+// Dependencies: [19, 21, 15098, 15099, 15100, 7755, 6010, 2]
 // Exports: InkQuillSpotIllustration
 
-// Module 15095 (InkQuillSpotIllustration)
+// Module 15097 (InkQuillSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
 import react_native from "react-native" /* 7755 */;
-import _modDef15096 from "module_15096" /* 15096 */;
-import _modDef15097 from "module_15097" /* 15097 */;
 import _modDef15098 from "module_15098" /* 15098 */;
+import _modDef15099 from "module_15099" /* 15099 */;
+import _modDef15100 from "module_15100" /* 15100 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef15096 };
+let obj2 = { uri: _modDef15098 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef15097 };
+let obj3 = { uri: _modDef15099 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef15098 };
-({ uri: _modDef15098 });
+obj[3] = { uri: _modDef15100 };
+({ uri: _modDef15100 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/InkQuillSpotIllustration.native.tsx");
 

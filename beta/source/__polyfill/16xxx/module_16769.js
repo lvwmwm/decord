@@ -1,20 +1,47 @@
 // Module ID: 16769
 // Function ID: 16770
-// Dependencies: [16754]
+// Dependencies: [16749, 16770]
 
 // Module 16769
-import _mod16754 from "module_16754" /* 16754 */;
+import _mod16749 from "module_16749" /* 16749 */;
+import _mod16770 from "module_16770" /* 16770 */;
 
-let _window = 0;
-let closure_1 = Math.random();
-let closure_2 = _mod16754((1).toString);
-
-export default (arg0) => {
-  let _window;
-  let str = "";
-  if (undefined !== arg0) {
-    str = arg0;
+let tmp4;
+let tmp = _mod16749.process && _mod16749.process.versions;
+if (!tmp) {
+  tmp = _mod16749.Deno && _mod16749.Deno.version;
+  _mod16749.Deno && _mod16749.Deno.version;
+}
+let tmp3;
+if (tmp && tmp.v8) {
+  let num3;
+  const parts = str.split(".");
+  if (parts[0] <= 0) {
+    num3 = +parts[0] + parts[1];
+  } else {
+    num3 = 1;
   }
-  _window = _window + 1;
-  return `Symbol(${str}` + ")_" + closure_2(_window + closure_1, 36);
-};
+  tmp3 = num3;
+  tmp4 = parts;
+}
+let match1 = !tmp3 && _mod16770;
+if (match1) {
+  const str3 = _mod16770;
+  const match = str3.match(/Edge\/(\d+)/);
+  let tmp8 = !match;
+  if (match) {
+    tmp8 = match[1] >= 74;
+  }
+  match1 = tmp8;
+  tmp4 = match;
+}
+if (match1) {
+  const str4 = _mod16770;
+  match1 = str4.match(/Chrome\/(\d+)/);
+  tmp4 = match1;
+}
+if (match1) {
+  tmp3 = +tmp4[1];
+}
+
+export default tmp3;

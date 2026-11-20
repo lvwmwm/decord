@@ -1,8 +1,8 @@
-// Module ID: 14416
-// Function ID: 14417
+// Module ID: 14418
+// Function ID: 14419
 // Dependencies: [2]
 
-// Module 14416
+// Module 14418
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_outfit_10_traveler_umber.webp.js");

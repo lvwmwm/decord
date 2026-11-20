@@ -1,10 +1,10 @@
-// Module ID: 19426
-// Function ID: 19427
+// Module ID: 19428
+// Function ID: 19429
 // Name: useSortedMemberApplications
 // Dependencies: [19, 6923, 504, 5342, 2]
 // Exports: useSortedMemberApplications
 
-// Module 19426 (useSortedMemberApplications)
+// Module 19428 (useSortedMemberApplications)
 import MemberVerificationTypes from "MemberVerificationTypes" /* 5342 */;
 import react from "react" /* 19 */;
 import GuildJoinRequestStore from "GuildJoinRequestStore" /* 6923 */;

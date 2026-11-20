@@ -1,8 +1,8 @@
-// Module ID: 14451
-// Function ID: 14452
+// Module ID: 14453
+// Function ID: 14454
 // Dependencies: [2]
 
-// Module 14451
+// Module 14453
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_wearable_01_stickers.webp.js");

@@ -1,102 +1,88 @@
 // Module ID: 16555
 // Function ID: 16556
-// Dependencies: [16518, 16547, 16538, 16543, 16539, 16542, 16549, 16546]
+// Dependencies: [16549, 16520, 16540]
 
 // Module 16555
-import _mod16546 from "module_16546" /* 16546 */;
+import _mod16520 from "module_16520" /* 16520 */;
 
-const require = globalThis.__r;
-let _require, closure_1, dependencyMap;
+let tmp;
+const _mod16540 = tmp(16540);
 
-
-export default function(arg0, arg1, arg2, arg3) {
-  let closure_0;
+export default function(arg0, arg1) {
   let obj;
-  let str;
-  let str3;
-  let tmpResult;
-  let tmpResult4;
-  _require = arg3;
-  let tmp = _require;
-  let tmp2 = dependencyMap;
-  const tmp3 = new require("module_16518")(arg0, arg3);
-  let tmp4 = new require("module_16547")(arg1, arg3);
-  if (">" === arg2) {
-    dependencyMap = tmp(16538);
-    tmpResult = tmp(16543);
-    const tmpResult3 = tmp(16539);
-    let closure_2 = tmpResult3;
-    str3 = ">=";
-    str = ">";
-    tmpResult4 = tmpResult3;
+  let tmp = obj;
+  obj = new obj(16549)(arg0, arg1);
+  const tmp3 = new obj(16520)("0.0.0");
+  if (obj.test(tmp3)) {
+    return tmp3;
   } else {
-    str = "<";
-    if ("<" === arg2) {
-      dependencyMap = tmp(16539);
-      tmpResult = tmp(16542);
-      tmpResult4 = tmp(16538);
-      closure_2 = tmpResult4;
-      str3 = "<=";
+    let self = this;
+    let self2 = this;
+    const tmp4 = new tmp(16520)("0.0.0-0");
+    if (obj.test(tmp4)) {
+      return tmp4;
     } else {
-      const _TypeError = TypeError;
-      let self = this;
-      let self2 = this;
-      const typeError = new TypeError("Must provide a hilo val of \"<\" or \">\"");
-      throw typeError;
-    }
-  }
-  if (tmp(16549)(tmp3, tmp4, arg3)) {
-    return false;
-  } else {
-    let num = 0;
-    let num3 = 0;
-    if (0 < tmp4.set.length) {
-      while (true) {
-        let arr = tmp4.set[num3];
-        _require = null;
-        dependencyMap = null;
-        let item = arr.forEach(function(semver) {
-          let tmp = semver;
-          if (semver.semver === _mod16546.ANY) {
-            const self = this;
-            const self2 = this;
-            tmp = new _mod16546(">=0.0.0");
-          }
-          semver = semver || tmp;
-          closure_1 = closure_1 || tmp;
-          const tmp4 = semver;
-          if (closure_1(tmp.semver, semver.semver, semver)) {
-            semver = tmp;
-          } else if (closure_2(tmp.semver, closure_1.semver, tmp4)) {
-            closure_1 = tmp;
-          }
-        });
-        if (_require.operator !== str) {
-          if (_require.operator !== str3) {
-            if (!dependencyMap.operator) {
-              if (tmpResult(tmp3, dependencyMap.semver)) {
-                obj = { v: false };
+      let num = 0;
+      let num3 = 0;
+      let tmp7 = null;
+      let tmp8 = null;
+      if (0 < obj.set.length) {
+        do {
+          let arr = obj.set[num3];
+          obj = null;
+          let item = arr.forEach(function(semver) {
+            obj = new _mod16520(semver.semver.version);
+            const operator = semver.operator;
+            if (">" === operator) {
+              if (0 === obj.prerelease.length) {
+                obj.patch = obj.patch + 1;
+              } else {
+                const prerelease = obj.prerelease;
+                prerelease.push(0);
+              }
+              obj.raw = obj.format();
+            } else if ("" !== operator) {
+              if (">=" !== operator) {
+                if ("<" !== operator) {
+                  if ("<=" !== operator) {
+                    const _Error = Error;
+                    const _HermesInternal = HermesInternal;
+                    const self = this;
+                    const self2 = this;
+                    const error = new Error("Unexpected operation: " + semver.operator);
+                    throw error;
+                  }
+                }
               }
             }
-            let obj2;
-            if (dependencyMap.operator === str3) {
-              if (tmpResult4(tmp3, dependencyMap.semver)) {
-                obj2 = { v: false };
-              }
-            }
-            obj = obj2;
-          }
+            obj && !_mod16540(obj, obj);
+          });
+          let tmp11 = !obj;
+          let tmp12 = tmp7;
           if (obj) {
-            break;
-          } else {
-            num3 = num + 1;
-            num = num3;
+            let tmp14 = tmp12;
+            if (tmp14) {
+              tmp14 = !obj(16540)(tmp12, obj);
+            }
+            tmp11 = tmp14;
           }
-        }
-        obj = { v: false };
+          if (!tmp11) {
+            tmp12 = obj;
+          }
+          num3 = num + 1;
+          tmp7 = tmp12;
+          tmp8 = tmp12;
+          num = num3;
+        } while (num3 < obj.set.length);
       }
-      return obj.v;
+      let tmp18 = null;
+      if (tmp8) {
+        tmp18 = null;
+        if (obj.test(tmp8)) {
+          tmp18 = tmp8;
+        }
+      }
+      return tmp18;
     }
-    return true;
   }
 };

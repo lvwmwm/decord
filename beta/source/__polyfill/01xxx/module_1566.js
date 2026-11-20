@@ -6,12 +6,12 @@
 // Module 1566
 
 export function isArrayEqual(arr, arg1) {
-  const f84941 = (item, index) => Object.is(item, closure_0[index]);
+  const f84945 = (item, index) => Object.is(item, closure_0[index]);
   let closure_0 = arg1;
   let tmp = arr === arg1;
   if (!tmp) {
-    tmp = arr.length === arg1.length && arr.every(f84941);
-    arr.length === arg1.length && arr.every(f84941);
+    tmp = arr.length === arg1.length && arr.every(f84945);
+    arr.length === arg1.length && arr.every(f84945);
   }
   return tmp;
 }

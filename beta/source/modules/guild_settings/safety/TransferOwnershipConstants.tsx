@@ -1,9 +1,9 @@
-// Module ID: 14147
-// Function ID: 14148
+// Module ID: 14149
+// Function ID: 14150
 // Name: TransferOwnershipConstants
 // Dependencies: [2]
 
-// Module 14147 (TransferOwnershipConstants)
+// Module 14149 (TransferOwnershipConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_settings/safety/TransferOwnershipConstants.tsx");

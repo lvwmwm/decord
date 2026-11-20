@@ -1,10 +1,10 @@
-// Module ID: 17799
-// Function ID: 17800
+// Module ID: 17801
+// Function ID: 17802
 // Name: QuestDockHeaderTitle
 // Dependencies: [19, 21, 5306, 5919, 2]
 // Exports: default
 
-// Module 17799 (QuestDockHeaderTitle)
+// Module 17801 (QuestDockHeaderTitle)
 import Fragment from "Fragment" /* 21 */;
 import Text_Text from "Text/Text" /* 5919 */;
 import react from "react" /* 19 */;

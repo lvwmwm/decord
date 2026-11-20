@@ -1,12 +1,12 @@
-// Module ID: 19522
-// Function ID: 19523
+// Module ID: 19524
+// Function ID: 19525
 // Name: MessageSearchResultParser
-// Dependencies: [5249, 9066, 19523, 14747, 19524, 12, 2]
+// Dependencies: [5249, 9066, 19525, 14749, 19526, 12, 2]
 
-// Module 19522 (MessageSearchResultParser)
+// Module 19524 (MessageSearchResultParser)
 import _mod12 from "module_12" /* 12 */;
 import SearchConstants from "SearchConstants" /* 9066 */;
-import CachedSearchResultParser2 from "CachedSearchResultParser" /* 19523 */;
+import CachedSearchResultParser2 from "CachedSearchResultParser" /* 19525 */;
 import MessageRecord from "MessageRecord" /* 5249 */;
 import size from "module_2" /* 2 */;
 

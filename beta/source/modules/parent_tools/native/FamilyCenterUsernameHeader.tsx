@@ -1,10 +1,10 @@
-// Module ID: 17422
-// Function ID: 17423
+// Module ID: 17424
+// Function ID: 17425
 // Name: FamilyCenterUsernameHeader
 // Dependencies: [19, 17, 21, 5306, 5362, 5919, 2]
 // Exports: default
 
-// Module 17422 (FamilyCenterUsernameHeader)
+// Module 17424 (FamilyCenterUsernameHeader)
 import react_native from "react-native" /* 17 */;
 import UserUtilsDefault from "UserUtils" /* 5362 */;
 import Text_Text from "Text/Text" /* 5919 */;

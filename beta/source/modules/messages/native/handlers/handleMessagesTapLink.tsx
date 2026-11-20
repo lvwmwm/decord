@@ -1,10 +1,10 @@
-// Module ID: 12586
-// Function ID: 12587
+// Module ID: 12588
+// Function ID: 12589
 // Name: handleMessagesTapLink
-// Dependencies: [11406, 2165, 9165, 12000, 1407, 5155, 6042, 6362, 1388, 1072, 1501, 5162, 6837, 1112, 12584, 6038, 8841, 12585, 10286, 10281, 7653, 12460, 8476, 5542, 10655, 2121, 6925, 6852, 12587, 10902, 12588, 8660, 7937, 12589, 1628, 12590, 6739, 1099, 9221, 12593, 12616, 2]
+// Dependencies: [11406, 2165, 9165, 12000, 1407, 5155, 6042, 6362, 1388, 1072, 1501, 5162, 6837, 1112, 12586, 6038, 8841, 12587, 10286, 10281, 7653, 12462, 8476, 5542, 10655, 2121, 6925, 6852, 12589, 10902, 12590, 8660, 7937, 12591, 1628, 12592, 6739, 1099, 9221, 12595, 12618, 2]
 // Exports: handleMessagesTapLink
 
-// Module 12586 (handleMessagesTapLink)
+// Module 12588 (handleMessagesTapLink)
 import router_utils from "router_utils" /* 1099 */;
 import ThreadConstants from "ThreadConstants" /* 1112 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1501 */;
@@ -26,13 +26,13 @@ import GameProfileActionCreators from "GameProfileActionCreators" /* 10281 */;
 import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 10286 */;
 import showChatGDMCustomizeActionSheetDefault from "showChatGDMCustomizeActionSheet" /* 10902 */;
 import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 11406 */;
-import isAlertOrActionSheetOpen from "isAlertOrActionSheetOpen" /* 12460 */;
-import MarkupReactLinkUtils from "MarkupReactLinkUtils" /* 12584 */;
-import openPinnedMessagesDefault from "openPinnedMessages" /* 12587 */;
-import GuildAutomodMessageActionCreators from "GuildAutomodMessageActionCreators" /* 12588 */;
-import ApplicationInteractionInfoUtils from "ApplicationInteractionInfoUtils" /* 12589 */;
-import showExecutedApplicationCommandPopoutDefault from "showExecutedApplicationCommandPopout" /* 12590 */;
-import GuildHighlightsNotificationsActionCreators from "GuildHighlightsNotificationsActionCreators" /* 12593 */;
+import isAlertOrActionSheetOpen from "isAlertOrActionSheetOpen" /* 12462 */;
+import MarkupReactLinkUtils from "MarkupReactLinkUtils" /* 12586 */;
+import openPinnedMessagesDefault from "openPinnedMessages" /* 12589 */;
+import GuildAutomodMessageActionCreators from "GuildAutomodMessageActionCreators" /* 12590 */;
+import ApplicationInteractionInfoUtils from "ApplicationInteractionInfoUtils" /* 12591 */;
+import showExecutedApplicationCommandPopoutDefault from "showExecutedApplicationCommandPopout" /* 12592 */;
+import GuildHighlightsNotificationsActionCreators from "GuildHighlightsNotificationsActionCreators" /* 12595 */;
 import ApplicationStore from "ApplicationStore" /* 2165 */;
 import GuildAutomodMessageStore from "GuildAutomodMessageStore" /* 9165 */;
 import SummaryStore from "SummaryStore" /* 12000 */;
@@ -72,7 +72,7 @@ function handleMessagesTapURLLink(data, channelId) {
               num = !tmp2Result.isGuildScheduledEventInviteEmbed(invite);
             }
             if (!num) {
-              tmp4(12585)(invite);
+              tmp4(12587)(invite);
               num = 0;
             }
             flag2 = !num;
@@ -113,7 +113,7 @@ function handleMessagesTapURLLink(data, channelId) {
       MaskedLinkUtils;
       const tmp19 = require;
       if (isLinkTrustedResult) {
-        const tmp19Result = tmp19(12584);
+        const tmp19Result = tmp19(12586);
         isLinkTrustedResult = tmp19Result.isLinkTrusted(data.node);
       }
       handleClick(obj4);
@@ -389,7 +389,7 @@ export function handleMessagesTapLink(tapLinkData) {
               } else {
                 const obj45 = { location: constants.MESSAGE_EMBED, messageId: data.message.id, notificationType: TOP_MESSAGE_PUSH };
                 TOP_MESSAGE_PUSH = data.notificationType;
-                const tmp107 = asyncRequire(12616, dependencyMap.paths);
+                const tmp107 = asyncRequire(12618, dependencyMap.paths);
                 const openLazy2 = ActionSheetActionCreatorsDefault.openLazy;
                 ActionSheetActionCreatorsDefault;
                 if (TOP_MESSAGE_PUSH == null) {

@@ -1,9 +1,9 @@
-// Module ID: 17027
-// Function ID: 17028
+// Module ID: 17029
+// Function ID: 17030
 // Name: ICYMIManager
 // Dependencies: [10215, 10217, 1089, 2123, 572, 10220, 2]
 
-// Module 17027 (ICYMIManager)
+// Module 17029 (ICYMIManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1089 */;
 import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 10217 */;
@@ -27,7 +27,7 @@ class ICYMIManager extends LifecycleManager {
   }
   handlePostConnectionOpen() {
     let timeout;
-    const f114489 = () => {
+    const f114495 = () => {
       let timeout;
       const obj = WaterwheelsDiscoverExperiment;
       if (!obj.getWaterwheelsDiscoverEnabled("ICYMIManager")) {
@@ -39,7 +39,7 @@ class ICYMIManager extends LifecycleManager {
         const _clearTimeout = clearTimeout;
         clearTimeout(timeout);
       }
-      timeout = setTimeout(f114489, 15 * require("Durations").Millis.MINUTE);
+      timeout = setTimeout(f114495, 15 * require("Durations").Millis.MINUTE);
     };
     const tmp = require;
     let obj = ICYMIExperiment;
@@ -55,7 +55,7 @@ class ICYMIManager extends LifecycleManager {
         clearTimeout(timeout);
       }
       const _setTimeout = setTimeout;
-      timeout = setTimeout(f114489, 15 * DurationsDefault.Millis.MINUTE);
+      timeout = setTimeout(f114495, 15 * DurationsDefault.Millis.MINUTE);
       const obj5 = ICYMIActionCreatorsDefault;
       const guildChannelScores = obj5.getGuildChannelScores();
       const obj6 = ICYMIActionCreatorsDefault;

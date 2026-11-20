@@ -1,15 +1,15 @@
-// Module ID: 13443
-// Function ID: 13444
+// Module ID: 13445
+// Function ID: 13446
 // Name: InThisServerSection
-// Dependencies: [19, 17, 21, 5306, 575, 13419, 1255, 5919, 1113, 7428, 13383, 7997, 12579, 13388, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 13421, 1255, 5919, 1113, 7428, 13385, 7997, 12581, 13390, 2]
 // Exports: default
 
-// Module 13443 (InThisServerSection)
+// Module 13445 (InThisServerSection)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import GlobalUtils from "GlobalUtils" /* 1255 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 12579 */;
-import AppLauncherHomeTypes from "AppLauncherHomeTypes" /* 13419 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 12581 */;
+import AppLauncherHomeTypes from "AppLauncherHomeTypes" /* 13421 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -30,7 +30,7 @@ function AppInThisServer(onAppSelected) {
   let tmp = closure_7();
   const application = appItem.application;
   let tmp2 = onAppSelected;
-  let obj = onAppSelected(13383);
+  let obj = onAppSelected(13385);
   const appLauncherIconSource = obj.getAppLauncherIconSource(application);
   let tmp6 = null;
   const obj2 = {
@@ -55,7 +55,7 @@ function AppInThisServer(onAppSelected) {
   const tmp5 = closure_6;
   if (null != appLauncherIconSource) {
     const obj3 = { iconSource: appLauncherIconSource, wrapperStyle: tmp.iconContainer, iconSize: 36 };
-    tmp6 = closure_5(application(13388), obj3);
+    tmp6 = closure_5(application(13390), obj3);
   }
   items = [tmp6, ];
   const obj4 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: application.name };

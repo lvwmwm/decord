@@ -1,9 +1,9 @@
-// Module ID: 18771
-// Function ID: 18772
+// Module ID: 18773
+// Function ID: 18774
 // Name: DmGdmListRenderTriggerPoint
 // Dependencies: [5523, 9715, 2]
 
-// Module 18771 (DmGdmListRenderTriggerPoint)
+// Module 18773 (DmGdmListRenderTriggerPoint)
 import ExperimentConstants from "ExperimentConstants" /* 5523 */;
 import Helpers from "Helpers" /* 9715 */;
 import size from "module_2" /* 2 */;

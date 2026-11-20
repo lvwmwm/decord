@@ -1,9 +1,9 @@
-// Module ID: 13413
-// Function ID: 13414
+// Module ID: 13415
+// Function ID: 13416
 // Name: AppLauncherNavigator
-// Dependencies: [109, 19, 1501, 1072, 21, 9128, 5306, 575, 7918, 7937, 1503, 6325, 5493, 1628, 7490, 6057, 13414, 13458, 13487, 13531, 12578, 2]
+// Dependencies: [109, 19, 1501, 1072, 21, 9128, 5306, 575, 7918, 7937, 1503, 6325, 5493, 1628, 7490, 6057, 13416, 13460, 13489, 13533, 12580, 2]
 
-// Module 13413 (AppLauncherNavigator)
+// Module 13415 (AppLauncherNavigator)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1501 */;

@@ -1,10 +1,10 @@
-// Module ID: 14692
-// Function ID: 14693
+// Module ID: 14694
+// Function ID: 14695
 // Name: Divider
 // Dependencies: [19, 17, 21, 5306, 575, 2]
 // Exports: default
 
-// Module 14692 (Divider)
+// Module 14694 (Divider)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

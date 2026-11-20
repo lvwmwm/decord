@@ -1,12 +1,12 @@
-// Module ID: 19569
-// Function ID: 19570
+// Module ID: 19571
+// Function ID: 19572
 // Name: useAutoTrackSearchTabCountsViewedAnalytics
-// Dependencies: [19, 9066, 14761, 2]
+// Dependencies: [19, 9066, 14763, 2]
 // Exports: useAutoTrackSearchTabCountsViewedAnalytics
 
-// Module 19569 (useAutoTrackSearchTabCountsViewedAnalytics)
+// Module 19571 (useAutoTrackSearchTabCountsViewedAnalytics)
 import SearchConstants from "SearchConstants" /* 9066 */;
-import TrackingDefault from "Tracking" /* 14761 */;
+import TrackingDefault from "Tracking" /* 14763 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

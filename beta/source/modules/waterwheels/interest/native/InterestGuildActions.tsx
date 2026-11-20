@@ -1,10 +1,10 @@
-// Module ID: 19020
-// Function ID: 19021
+// Module ID: 19022
+// Function ID: 19023
 // Name: InterestGuildActions
 // Dependencies: [5, 5340, 5157, 1072, 5342, 6907, 6912, 6004, 1113, 2569, 2]
 // Exports: getInterestGuildJoinsInFlight, joinInterestGuild
 
-// Module 19020 (InterestGuildActions)
+// Module 19022 (InterestGuildActions)
 import Constants from "Constants" /* 1072 */;
 import MemberVerificationTypes from "MemberVerificationTypes" /* 5342 */;
 import GuildActionCreatorsDefault from "GuildActionCreators" /* 6907 */;

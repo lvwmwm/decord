@@ -1,10 +1,10 @@
-// Module ID: 18420
-// Function ID: 18421
+// Module ID: 18422
+// Function ID: 18423
 // Name: UserSettingsDesignSystemExperimentalButtons
 // Dependencies: [19, 17, 1072, 21, 5892, 575, 7997, 6327, 7746, 7457, 7827, 6024, 5926, 5919, 5367, 5883, 8108, 10570, 2]
 // Exports: default
 
-// Module 18420 (UserSettingsDesignSystemExperimentalButtons)
+// Module 18422 (UserSettingsDesignSystemExperimentalButtons)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import native from "native" /* 5367 */;

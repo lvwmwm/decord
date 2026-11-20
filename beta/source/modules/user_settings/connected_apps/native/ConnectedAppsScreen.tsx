@@ -1,10 +1,10 @@
-// Module ID: 17472
-// Function ID: 17473
+// Module ID: 17474
+// Function ID: 17475
 // Name: ConnectedAppsScreen
-// Dependencies: [19, 17, 7221, 502, 7085, 2189, 1072, 21, 5306, 575, 5537, 8706, 504, 15853, 1503, 7466, 5919, 1113, 4548, 6327, 17473, 17474, 7445, 7422, 17482, 6010, 1414, 5313, 5926, 1630, 17483, 1502, 5542, 17484, 2121, 7888, 2]
+// Dependencies: [19, 17, 7221, 502, 7085, 2189, 1072, 21, 5306, 575, 5537, 8706, 504, 15855, 1503, 7466, 5919, 1113, 4548, 6327, 17475, 17476, 7445, 7422, 17484, 6010, 1414, 5313, 5926, 1630, 17485, 1502, 5542, 17486, 2121, 7888, 2]
 // Exports: default
 
-// Module 17472 (ConnectedAppsScreen)
+// Module 17474 (ConnectedAppsScreen)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import intl6 from "intl" /* 1113 */;
@@ -13,10 +13,10 @@ import shared from "shared" /* 5313 */;
 import useThemeDefault from "useTheme" /* 5537 */;
 import FastImageDefault from "FastImage" /* 6010 */;
 import Card_Card from "Card/Card" /* 7445 */;
-import useConnectionFilteredAppIdentitiesDefault from "useConnectionFilteredAppIdentities" /* 15853 */;
-import ConnectedApplicationIdentityDefault from "ConnectedApplicationIdentity" /* 17473 */;
-import ConnectedAccountDefault from "ConnectedAccount" /* 17474 */;
-import UserSettingsAuthedApps from "UserSettingsAuthedApps" /* 17483 */;
+import useConnectionFilteredAppIdentitiesDefault from "useConnectionFilteredAppIdentities" /* 15855 */;
+import ConnectedApplicationIdentityDefault from "ConnectedApplicationIdentity" /* 17475 */;
+import ConnectedAccountDefault from "ConnectedAccount" /* 17476 */;
+import UserSettingsAuthedApps from "UserSettingsAuthedApps" /* 17485 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AuthorizedAppsStore from "AuthorizedAppsStore" /* 7221 */;
@@ -216,7 +216,7 @@ export default function ConnectedAppsScreen() {
   let stackNavigation;
   const tmp = closure_14();
   const bottom = stackNavigation(1630)().bottom;
-  let obj = apps(17483);
+  let obj = apps(17485);
   const authorizedApps = obj.useAuthorizedApps();
   apps = authorizedApps.apps;
   const loading = authorizedApps.loading;
@@ -237,7 +237,7 @@ export default function ConnectedAppsScreen() {
   const obj3 = {
     contentContainerStyle: items1,
     ListHeaderComponent: closure_12(closure_13, obj5),
-    ListEmptyComponent: closure_11(apps(17483).AuthorizedAppsEmpty, { loading }),
+    ListEmptyComponent: closure_11(apps(17485).AuthorizedAppsEmpty, { loading }),
     data: apps,
     renderItem(app) {
       const index = app.index;
@@ -253,6 +253,6 @@ export default function ConnectedAppsScreen() {
   const FlashList = apps(7888).FlashList;
   items1[1] = obj4;
   obj5 = { children: items2 };
-  items2 = [closure_11(ConnectionsSection, { onAdd: callback }), closure_11(apps(17483).AuthorizedAppsHeader, {})];
+  items2 = [closure_11(ConnectionsSection, { onAdd: callback }), closure_11(apps(17485).AuthorizedAppsHeader, {})];
   return closure_11(FlashList, obj3);
 };

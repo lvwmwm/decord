@@ -1,18 +1,18 @@
-// Module ID: 18400
-// Function ID: 18401
+// Module ID: 18402
+// Function ID: 18403
 // Name: DevToolsContent
-// Dependencies: [32, 19, 17, 12367, 5522, 1246, 21, 5306, 575, 504, 14059, 18401, 5919, 7428, 5544, 14031, 14033, 1502, 1630, 7746, 7443, 6005, 17057, 2]
+// Dependencies: [32, 19, 17, 12367, 5522, 1246, 21, 5306, 575, 504, 14061, 18403, 5919, 7428, 5544, 14033, 14035, 1502, 1630, 7746, 7443, 6005, 17059, 2]
 
-// Module 18400 (DevToolsContent)
+// Module 18402 (DevToolsContent)
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
 import HapticUtils from "HapticUtils" /* 5544 */;
 import Text_Text from "Text/Text" /* 5919 */;
 import Pressables from "Pressables" /* 7428 */;
-import ArrowSmallUpIcon from "ArrowSmallUpIcon" /* 14031 */;
-import ArrowSmallDownIcon from "ArrowSmallDownIcon" /* 14033 */;
-import DevToolsNavigator from "DevToolsNavigator" /* 17057 */;
-import useSortedDevToolsScreens from "useSortedDevToolsScreens" /* 18401 */;
+import ArrowSmallUpIcon from "ArrowSmallUpIcon" /* 14033 */;
+import ArrowSmallDownIcon from "ArrowSmallDownIcon" /* 14035 */;
+import DevToolsNavigator from "DevToolsNavigator" /* 17059 */;
+import useSortedDevToolsScreens from "useSortedDevToolsScreens" /* 18403 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

@@ -1,10 +1,10 @@
-// Module ID: 18861
-// Function ID: 18862
+// Module ID: 18863
+// Function ID: 18864
 // Name: useFavoritesCleanup
 // Dependencies: [5, 32, 19, 5158, 504, 10944, 2]
 // Exports: default
 
-// Module 18861 (useFavoritesCleanup)
+// Module 18863 (useFavoritesCleanup)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

@@ -1,8 +1,8 @@
-// Module ID: 15697
-// Function ID: 15698
+// Module ID: 15699
+// Function ID: 15700
 // Dependencies: [2]
 
-// Module 15697
+// Module 15699
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/BumpingFistsSpotIllustration-2x.png.js");

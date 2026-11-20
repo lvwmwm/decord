@@ -1,10 +1,10 @@
-// Module ID: 15716
-// Function ID: 15717
+// Module ID: 15718
+// Function ID: 15719
 // Name: UserProfileActivityCardBadges
-// Dependencies: [19, 17, 21, 6059, 15717, 2]
+// Dependencies: [19, 17, 21, 6059, 15719, 2]
 // Exports: default
 
-// Module 15716 (UserProfileActivityCardBadges)
+// Module 15718 (UserProfileActivityCardBadges)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
@@ -19,13 +19,13 @@ export default function UserProfileActivityCardBadges(activity) {
   activity = activity.activity;
   const style = activity.style;
   if (activity.type === activity(6059).ActivityTypes.PLAYING) {
-    const items = [activity(15717).PartyBadge, activity(15717).TimestampBadge];
+    const items = [activity(15719).PartyBadge, activity(15719).TimestampBadge];
     items3 = items;
   } else if (activity.type === activity(6059).ActivityTypes.LISTENING) {
-    const items1 = [activity(15717).TimestampBadge];
+    const items1 = [activity(15719).TimestampBadge];
     items3 = items1;
   } else if (activity.type === activity(6059).ActivityTypes.WATCHING) {
-    const items2 = [activity(15717).TimestampBadge, activity(15717).EpisodeBadge];
+    const items2 = [activity(15719).TimestampBadge, activity(15719).EpisodeBadge];
     items3 = items2;
   } else {
     items3 = [];

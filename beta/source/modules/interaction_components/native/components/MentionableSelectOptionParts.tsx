@@ -1,10 +1,10 @@
-// Module ID: 13241
-// Function ID: 13242
+// Module ID: 13243
+// Function ID: 13244
 // Name: MentionableSelectOptionParts
 // Dependencies: [19, 17, 5212, 6058, 1388, 1072, 21, 5306, 575, 6374, 1187, 7942, 7959, 8173, 10930, 5919, 10553, 1113, 2]
 // Exports: mentionableOptionAccessibilityLabel, renderMentionableOptionDescription, renderMentionableOptionIcon, renderMentionableOptionSuffix
 
-// Module 13241 (MentionableSelectOptionParts)
+// Module 13243 (MentionableSelectOptionParts)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;

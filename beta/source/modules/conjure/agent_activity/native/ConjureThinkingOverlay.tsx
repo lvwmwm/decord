@@ -1,14 +1,14 @@
-// Module ID: 13759
-// Function ID: 13760
+// Module ID: 13761
+// Function ID: 13762
 // Name: ConjureThinkingOverlay
-// Dependencies: [19, 17, 7321, 21, 5306, 575, 13760, 13290, 504, 13292, 7445, 11318, 5919, 1113, 4131, 2]
+// Dependencies: [19, 17, 7321, 21, 5306, 575, 13762, 13292, 504, 13294, 7445, 11318, 5919, 1113, 4131, 2]
 // Exports: default
 
-// Module 13759 (ConjureThinkingOverlay)
+// Module 13761 (ConjureThinkingOverlay)
 import nativeDefault from "native" /* 575 */;
 import _modDef4131 from "module_4131" /* 4131 */;
-import ConjureNativeMarkdownDefault from "ConjureNativeMarkdown" /* 13290 */;
-import conjureThinkingTail from "conjureThinkingTail" /* 13760 */;
+import ConjureNativeMarkdownDefault from "ConjureNativeMarkdown" /* 13292 */;
+import conjureThinkingTail from "conjureThinkingTail" /* 13762 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ConjureChatStore from "ConjureChatStore" /* 7321 */;
@@ -104,8 +104,8 @@ export default function ConjureThinkingOverlay(projectId) {
   const obj = projectId(504);
   const stateFromStores = obj.useStateFromStores(items, () => ConjureChatStore.getThinkingActivity(projectId), items1);
   let str;
-  const useConjureRevealedText = projectId(13292).useConjureRevealedText;
-  projectId(13292);
+  const useConjureRevealedText = projectId(13294).useConjureRevealedText;
+  projectId(13294);
   if (stateFromStores != null) {
     str = stateFromStores.text;
   }

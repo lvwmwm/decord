@@ -1,18 +1,10 @@
 // Module ID: 16799
 // Function ID: 16800
-// Dependencies: [16772]
+// Dependencies: []
 
 // Module 16799
-import _mod16772 from "module_16772" /* 16772 */;
+const tmp = Math.trunc || (function trunc(arg0) {
+  return 0 < +arg0 ? floor : ceil(+arg0);
+});
 
-
-export default function(arg0) {
-  if (_mod16772(arg0)) {
-    return arg0;
-  } else {
-    const self = this;
-    const self2 = this;
-    const tmp3 = new TypeError(String(arg0) + " is not an object");
-    throw tmp3;
-  }
-};
+export default tmp;

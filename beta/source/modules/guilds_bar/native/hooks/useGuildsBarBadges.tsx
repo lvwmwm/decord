@@ -1,15 +1,15 @@
-// Module ID: 19106
-// Function ID: 19107
+// Module ID: 19108
+// Function ID: 19109
 // Name: useGuildsBarBadges
-// Dependencies: [109, 19, 11013, 5340, 5218, 5177, 5238, 1388, 1072, 21, 5306, 504, 5341, 19107, 5892, 575, 1187, 19108, 19078, 19077, 2]
+// Dependencies: [109, 19, 11013, 5340, 5218, 5177, 5238, 1388, 1072, 21, 5306, 504, 5341, 19109, 5892, 575, 1187, 19110, 19080, 19079, 2]
 // Exports: default
 
-// Module 19106 (useGuildsBarBadges)
+// Module 19108 (useGuildsBarBadges)
 import Fragment from "Fragment" /* 21 */;
 import native from "native" /* 1187 */;
 import GuildJoinRequestUtils from "GuildJoinRequestUtils" /* 5341 */;
-import computeGuildsBarCutoutDefault from "computeGuildsBarCutout" /* 19078 */;
-import GuildsBarActivityIndicator from "GuildsBarActivityIndicator" /* 19108 */;
+import computeGuildsBarCutoutDefault from "computeGuildsBarCutout" /* 19080 */;
+import GuildsBarActivityIndicator from "GuildsBarActivityIndicator" /* 19110 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import GuildIncidentsStore from "GuildIncidentsStore" /* 11013 */;

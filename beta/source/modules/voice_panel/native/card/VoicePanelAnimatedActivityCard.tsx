@@ -1,9 +1,9 @@
-// Module ID: 20025
-// Function ID: 20026
+// Module ID: 20027
+// Function ID: 20028
 // Name: VoicePanelAnimatedActivityCard
-// Dependencies: [32, 19, 5154, 12719, 5155, 11985, 11983, 1072, 2145, 12706, 21, 5306, 575, 11984, 13129, 504, 20026, 12736, 7259, 12842, 7918, 7937, 11297, 5968, 1655, 1708, 7025, 5588, 2146, 1496, 11008, 20027, 12848, 20028, 20029, 20033, 5367, 2]
+// Dependencies: [32, 19, 5154, 12721, 5155, 11985, 11983, 1072, 2145, 12708, 21, 5306, 575, 11984, 13131, 504, 20028, 12738, 7259, 12844, 7918, 7937, 11297, 5968, 1655, 1708, 7025, 5588, 2146, 1496, 11008, 20029, 12850, 20030, 20031, 20035, 5367, 2]
 
-// Module 20025 (VoicePanelAnimatedActivityCard)
+// Module 20027 (VoicePanelAnimatedActivityCard)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import useWindowDimensions from "useWindowDimensions" /* 1496 */;
@@ -13,12 +13,12 @@ import EmbeddedActivityOrientationLockState from "EmbeddedActivityOrientationLoc
 import native from "native" /* 5367 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 5588 */;
 import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11983 */;
-import Constants3 from "Constants" /* 12706 */;
-import fetchShelf from "fetchShelf" /* 12736 */;
+import Constants3 from "Constants" /* 12708 */;
+import fetchShelf from "fetchShelf" /* 12738 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5154 */;
-import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 12719 */;
+import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 12721 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import VoicePanelConstants from "VoicePanelConstants" /* 11985 */;
 import Fragment from "Fragment" /* 21 */;

@@ -1,10 +1,10 @@
-// Module ID: 16949
-// Function ID: 16950
+// Module ID: 16951
+// Function ID: 16952
 // Name: activityShareLink
 // Dependencies: [6041, 1381, 1113, 2]
 // Exports: resolveActivityShareMessageContent
 
-// Module 16949 (activityShareLink)
+// Module 16951 (activityShareLink)
 import URLUtilsDefault from "URLUtils" /* 1381 */;
 import findCodedLinks from "findCodedLinks" /* 6041 */;
 import size from "module_2" /* 2 */;

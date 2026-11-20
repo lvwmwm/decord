@@ -1,10 +1,10 @@
-// Module ID: 16340
-// Function ID: 16341
+// Module ID: 16342
+// Function ID: 16343
 // Name: ShareUtils
 // Dependencies: [5, 8725, 5311, 6005, 6027, 11153, 9004, 8850, 8873, 8786, 11409, 8660, 2]
 // Exports: sendShareMessage, showInformationToast
 
-// Module 16340 (ShareUtils)
+// Module 16342 (ShareUtils)
 import MessageConstants from "MessageConstants" /* 5311 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 6005 */;
 import CircleInformationIcon from "CircleInformationIcon" /* 6027 */;

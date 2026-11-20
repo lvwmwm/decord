@@ -1,10 +1,10 @@
-// Module ID: 15828
-// Function ID: 15829
+// Module ID: 15830
+// Function ID: 15831
 // Name: UserProfileWidgetAddActionSheet
-// Dependencies: [32, 19, 17, 21, 5306, 575, 5919, 1113, 1630, 5560, 15824, 15819, 15825, 10516, 15826, 5542, 7259, 7443, 13466, 4131, 15815, 7746, 15829, 15823, 15808, 7983, 7951, 7913, 13262, 14944, 2]
+// Dependencies: [32, 19, 17, 21, 5306, 575, 5919, 1113, 1630, 5560, 15826, 15821, 15827, 10516, 15828, 5542, 7259, 7443, 13468, 4131, 15817, 7746, 15831, 15825, 15810, 7983, 7951, 7913, 13264, 14946, 2]
 // Exports: default
 
-// Module 15828 (UserProfileWidgetAddActionSheet)
+// Module 15830 (UserProfileWidgetAddActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
@@ -14,14 +14,14 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542
 import BottomSheetModal from "BottomSheetModal" /* 5560 */;
 import Text_Text from "Text/Text" /* 5919 */;
 import ConjureMobileExperiment from "ConjureMobileExperiment" /* 10516 */;
-import useConjureServerWidgetOffersDefault from "useConjureServerWidgetOffers" /* 15808 */;
-import turnOnConjureServerWidgetDefault from "turnOnConjureServerWidget" /* 15815 */;
-import UserProfileWidgetOptionAddButtonDefault from "UserProfileWidgetOptionAddButton" /* 15819 */;
-import UserProfileAddableWidgetCategories from "UserProfileAddableWidgetCategories" /* 15823 */;
-import useAddProfileWidgetDefault from "useAddProfileWidget" /* 15824 */;
-import ConjureCustomWidget from "ConjureCustomWidget" /* 15825 */;
-import UserProfileWidgetOptionConjureButtonDefault from "UserProfileWidgetOptionConjureButton" /* 15826 */;
-import useStableAddableWidgetsDefault from "useStableAddableWidgets" /* 15829 */;
+import useConjureServerWidgetOffersDefault from "useConjureServerWidgetOffers" /* 15810 */;
+import turnOnConjureServerWidgetDefault from "turnOnConjureServerWidget" /* 15817 */;
+import UserProfileWidgetOptionAddButtonDefault from "UserProfileWidgetOptionAddButton" /* 15821 */;
+import UserProfileAddableWidgetCategories from "UserProfileAddableWidgetCategories" /* 15825 */;
+import useAddProfileWidgetDefault from "useAddProfileWidget" /* 15826 */;
+import ConjureCustomWidget from "ConjureCustomWidget" /* 15827 */;
+import UserProfileWidgetOptionConjureButtonDefault from "UserProfileWidgetOptionConjureButton" /* 15828 */;
+import useStableAddableWidgetsDefault from "useStableAddableWidgets" /* 15831 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -141,7 +141,7 @@ function ServerWidgetOptionRow(widget) {
     }
   };
   const TableRow = tmp(7443).TableRow;
-  obj3 = { IconComponent: widget(13466).CirclePlusIcon };
+  obj3 = { IconComponent: widget(13468).CirclePlusIcon };
   Icon = tmp(7443).TableRow.Icon;
   intl = tmp(1113).intl;
   return closure_6(TableRow, obj2);

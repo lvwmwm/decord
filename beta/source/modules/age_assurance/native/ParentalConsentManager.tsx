@@ -1,12 +1,12 @@
-// Module ID: 20368
-// Function ID: 20369
+// Module ID: 20370
+// Function ID: 20371
 // Name: ParentalConsentManager
-// Dependencies: [1072, 7882, 20369, 8387, 2]
+// Dependencies: [1072, 7882, 20371, 8387, 2]
 
-// Module 20368 (ParentalConsentManager)
+// Module 20370 (ParentalConsentManager)
 import Constants from "Constants" /* 1072 */;
 import AppStoreAgeSignalReport from "AppStoreAgeSignalReport" /* 8387 */;
-import AppStoreConsentReinstatement from "AppStoreConsentReinstatement" /* 20369 */;
+import AppStoreConsentReinstatement from "AppStoreConsentReinstatement" /* 20371 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;
 import size from "module_2" /* 2 */;
 

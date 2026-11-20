@@ -1,16 +1,16 @@
-// Module ID: 18608
-// Function ID: 18609
+// Module ID: 18610
+// Function ID: 18611
 // Name: NotifyFriendsOnCustomStatusUpdateSetting
-// Dependencies: [9202, 12406, 1113, 2869, 5131, 18609, 18610, 2]
+// Dependencies: [9202, 12408, 1113, 2869, 5131, 18611, 18612, 2]
 
-// Module 18608 (NotifyFriendsOnCustomStatusUpdateSetting)
+// Module 18610 (NotifyFriendsOnCustomStatusUpdateSetting)
 import intl2 from "intl" /* 1113 */;
 import _modDef2869 from "module_2869" /* 2869 */;
 import UserSettings from "UserSettings" /* 5131 */;
 import SettingsConstants from "SettingsConstants" /* 9202 */;
-import NotifyFriendsOnCustomStatusUpdateUtils from "NotifyFriendsOnCustomStatusUpdateUtils" /* 18609 */;
-import NotifyFriendsOnCustomStatusUpdateExperiment from "NotifyFriendsOnCustomStatusUpdateExperiment" /* 18610 */;
-import SettingBuilders from "SettingBuilders" /* 12406 */;
+import NotifyFriendsOnCustomStatusUpdateUtils from "NotifyFriendsOnCustomStatusUpdateUtils" /* 18611 */;
+import NotifyFriendsOnCustomStatusUpdateExperiment from "NotifyFriendsOnCustomStatusUpdateExperiment" /* 18612 */;
+import SettingBuilders from "SettingBuilders" /* 12408 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

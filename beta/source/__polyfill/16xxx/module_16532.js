@@ -1,14 +1,12 @@
 // Module ID: 16532
 // Function ID: 16533
-// Dependencies: [16518]
+// Dependencies: [16520]
 
 // Module 16532
-import _mod16518 from "module_16518" /* 16518 */;
+import _mod16520 from "module_16520" /* 16520 */;
 
 
-export default (arg0, arg1, arg2) => {
-  const compare = new _mod16518(arg0, arg2).compare;
-  new _mod16518(arg0, arg2);
-  const tmp2 = new _mod16518(arg1, arg2);
-  return compare(tmp2);
+export default (arg0, arg1) => {
+  const tmp = new _mod16520(arg0, arg1);
+  return tmp.patch;
 };

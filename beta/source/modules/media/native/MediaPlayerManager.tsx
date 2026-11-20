@@ -1,10 +1,10 @@
-// Module ID: 17019
-// Function ID: 17020
+// Module ID: 17021
+// Function ID: 17022
 // Name: MediaPlayerManager
-// Dependencies: [17, 5154, 6891, 5155, 6362, 5238, 2120, 1072, 5949, 17020, 1083, 3, 560, 1263, 2123, 5483, 572, 1380, 558, 8660, 7048, 2]
+// Dependencies: [17, 5154, 6891, 5155, 6362, 5238, 2120, 1072, 5949, 17022, 1083, 3, 560, 1263, 2123, 5483, 572, 1380, 558, 8660, 7048, 2]
 // Exports: isPlaybackComplete
 
-// Module 17019 (MediaPlayerManager)
+// Module 17021 (MediaPlayerManager)
 import LoggerDefault from "Logger" /* 3 */;
 import shallowEqualDefault from "shallowEqual" /* 558 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
@@ -21,7 +21,7 @@ import ChannelStore from "ChannelStore" /* 5155 */;
 import MessageStore from "MessageStore" /* 6362 */;
 import PermissionStore from "PermissionStore" /* 5238 */;
 import AppStateStore from "AppStateStore" /* 2120 */;
-import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 17020 */;
+import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 17022 */;
 import module_560 from "module_560" /* 560 */;
 import LifecycleManager from "LifecycleManager" /* 2123 */;
 import size from "module_2" /* 2 */;
@@ -53,7 +53,7 @@ const useMediaPlayerManagerStore = module_560.create((arg0) => {
     wasPipClosedByUser: null,
     progress: null,
     rate: "Path",
-    showPip: "Lithuania",
+    showPip: "Jordan",
     closePip() {
       const obj = react_native;
       obj.batchUpdates(() => closure_1_0({ showPip: false }));
@@ -320,7 +320,7 @@ class MediaPlayerManager extends LifecycleManager {
       const tmp8 = source;
       if (!tmp7(activeMediaPlayerSource, tmp8)) {
         const setState = tmp.setState;
-        obj = { activeMediaPlayerSource: source, mediaSourceMessage: orFetchMediaSourceMessage, progress: "ip", rate: false, isPlaying: false, wasPipClosedByUser: "KeyboardBackgroundView" };
+        obj = { activeMediaPlayerSource: source, mediaSourceMessage: orFetchMediaSourceMessage, progress: "ip", rate: false, isPlaying: false, wasPipClosedByUser: "_constrainToItemCount" };
         orFetchMediaSourceMessage = undefined;
         if (null != source) {
           orFetchMediaSourceMessage = self.getOrFetchMediaSourceMessage(tmp4);

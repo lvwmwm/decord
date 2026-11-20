@@ -1,10 +1,10 @@
-// Module ID: 19350
-// Function ID: 19351
+// Module ID: 19352
+// Function ID: 19353
 // Name: ICYMIServerRecommendationRow
-// Dependencies: [32, 5, 19, 17, 5307, 5177, 10205, 1072, 21, 19287, 575, 504, 1414, 5169, 9503, 6010, 7720, 10217, 6005, 1113, 6907, 5919, 5926, 19326, 7830, 2]
+// Dependencies: [32, 5, 19, 17, 5307, 5177, 10205, 1072, 21, 19289, 575, 504, 1414, 5169, 9503, 6010, 7720, 10217, 6005, 1113, 6907, 5919, 5926, 19328, 7830, 2]
 // Exports: ICYMIServerRecommendationRow
 
-// Module 19350 (ICYMIServerRecommendationRow)
+// Module 19352 (ICYMIServerRecommendationRow)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -14,7 +14,7 @@ import GuildRecordUtils from "GuildRecordUtils" /* 5169 */;
 import GuildIconDefault from "GuildIcon" /* 7720 */;
 import FastestListDefault from "FastestList" /* 7830 */;
 import ClipViewDefault from "ClipView" /* 9503 */;
-import ICYMIShared from "ICYMIShared" /* 19326 */;
+import ICYMIShared from "ICYMIShared" /* 19328 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -23,7 +23,7 @@ import GuildStore from "GuildStore" /* 5177 */;
 import ICYMIStore from "ICYMIStore" /* 10205 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 19287 */;
+import createICYMIStyles from "createICYMIStyles" /* 19289 */;
 import size_mod from "module_2" /* 2 */;
 
 let c1, c2, c3, closure_0;

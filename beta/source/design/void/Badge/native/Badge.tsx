@@ -1,10 +1,10 @@
-// Module ID: 16627
-// Function ID: 16628
+// Module ID: 16629
+// Function ID: 16630
 // Name: void/Badge/Badge
 // Dependencies: [19, 17, 2189, 1189, 21, 5306, 575, 504, 5919, 2027, 2]
 // Exports: MaskedBadge
 
-// Module 16627 (void/Badge/Badge)
+// Module 16629 (void/Badge/Badge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

@@ -1,10 +1,10 @@
-// Module ID: 15464
-// Function ID: 15465
+// Module ID: 15466
+// Function ID: 15467
 // Name: CustomStatusPreview
-// Dependencies: [19, 17, 7962, 21, 5306, 575, 8482, 8608, 8590, 8607, 8601, 5491, 5542, 15465, 2121, 5367, 8612, 8622, 9530, 9531, 15467, 9493, 2]
+// Dependencies: [19, 17, 7962, 21, 5306, 575, 8482, 8608, 8590, 8607, 8601, 5491, 5542, 15467, 2121, 5367, 8612, 8622, 9530, 9531, 15469, 9493, 2]
 // Exports: default
 
-// Module 15464 (CustomStatusPreview)
+// Module 15466 (CustomStatusPreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
@@ -72,7 +72,7 @@ export default function CustomStatusPreview(user) {
     obj.dismissKeyboard();
     const obj2 = ActionSheetActionCreatorsDefault;
     const obj3 = { user, previewText: pendingStatusText, previewEmoji: pendingStatusEmoji };
-    obj2.openLazy(asyncRequire(15465, dependencyMap.paths), "UserProfileCustomStatusActionSheet", obj3, "stack");
+    obj2.openLazy(asyncRequire(15467, dependencyMap.paths), "UserProfileCustomStatusActionSheet", obj3, "stack");
   }, items);
   let obj2 = { theme, primaryColor, secondaryColor, children: closure_8(View, obj3) };
   obj3 = { style: tmp7.profileContainer, children: items1 };

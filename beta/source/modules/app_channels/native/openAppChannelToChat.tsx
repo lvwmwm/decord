@@ -1,10 +1,10 @@
-// Module ID: 15147
-// Function ID: 15148
+// Module ID: 15149
+// Function ID: 15150
 // Name: openAppChannelToChat
 // Dependencies: [6053, 9068, 2]
 // Exports: default
 
-// Module 15147 (openAppChannelToChat)
+// Module 15149 (openAppChannelToChat)
 import transitionToChannel from "transitionToChannel" /* 6053 */;
 import openChannelSecondaryViewChatDefault from "openChannelSecondaryViewChat" /* 9068 */;
 import size from "module_2" /* 2 */;

@@ -1,18 +1,18 @@
-// Module ID: 17140
-// Function ID: 17141
+// Module ID: 17142
+// Function ID: 17143
 // Name: usePremiumTryItOutPresetShuffle
-// Dependencies: [19, 8542, 1072, 5537, 5313, 17141, 9399, 17069, 7808, 1256, 1113, 2]
+// Dependencies: [19, 8542, 1072, 5537, 5313, 17143, 9399, 17071, 7808, 1256, 1113, 2]
 // Exports: default
 
-// Module 17140 (usePremiumTryItOutPresetShuffle)
+// Module 17142 (usePremiumTryItOutPresetShuffle)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import shared from "shared" /* 5313 */;
 import ProfilePendingImageTypes from "ProfilePendingImageTypes" /* 7808 */;
 import UserProfileActionCreators from "UserProfileActionCreators" /* 9399 */;
-import ProfilePendingImageUtils from "ProfilePendingImageUtils" /* 17069 */;
-import TryItOutPresets from "TryItOutPresets" /* 17141 */;
+import ProfilePendingImageUtils from "ProfilePendingImageUtils" /* 17071 */;
+import TryItOutPresets from "TryItOutPresets" /* 17143 */;
 import react from "react" /* 19 */;
 import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8542 */;
 import size from "module_2" /* 2 */;
@@ -38,7 +38,7 @@ export default function usePremiumTryItOutPresetShuffle() {
     UserProfileActionCreators;
     obj4 = ProfilePendingImageUtils;
     themeColors = tryItOutPresetConfig.themeColors;
-    obj3 = { assetOrigin: ProfilePendingImageTypes.AssetOriginTypes.NEW_ASSET, imageUri: tryItOutPresetConfig.getBannerSrc(false), staticImageUri: tryItOutPresetConfig.getBannerSrc(true), description: tryItOutPresetConfig.getBannerAltText(), originalAsset: "fileFinishedImporting" };
+    obj3 = { assetOrigin: ProfilePendingImageTypes.AssetOriginTypes.NEW_ASSET, imageUri: tryItOutPresetConfig.getBannerSrc(false), staticImageUri: tryItOutPresetConfig.getBannerSrc(true), description: tryItOutPresetConfig.getBannerAltText(), originalAsset: "Array" };
     setTryItOutPreset(obj2);
   }, items);
   const items1 = [callback];

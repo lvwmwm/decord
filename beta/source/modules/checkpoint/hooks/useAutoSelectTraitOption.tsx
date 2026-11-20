@@ -1,10 +1,10 @@
-// Module ID: 14543
-// Function ID: 14544
+// Module ID: 14545
+// Function ID: 14546
 // Name: react
 // Dependencies: [19, 2]
 // Exports: useAutoSelectTraitOption
 
-// Module 14543 (react)
+// Module 14545 (react)
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

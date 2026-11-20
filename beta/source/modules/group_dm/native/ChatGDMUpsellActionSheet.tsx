@@ -1,10 +1,10 @@
-// Module ID: 12553
-// Function ID: 12554
+// Module ID: 12555
+// Function ID: 12556
 // Name: ChatGDMUpsellActionSheet
-// Dependencies: [19, 17, 21, 5306, 575, 1630, 5338, 5139, 5542, 5556, 6010, 12554, 5926, 1113, 5560, 5919, 12555, 6019, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 1630, 5338, 5139, 5542, 5556, 6010, 12556, 5926, 1113, 5560, 5919, 12557, 6019, 2]
 // Exports: default
 
-// Module 12553 (ChatGDMUpsellActionSheet)
+// Module 12555 (ChatGDMUpsellActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
@@ -12,7 +12,7 @@ import dismissible_content from "dismissible_content" /* 5139 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5338 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import FastImageDefault from "FastImage" /* 6010 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12554 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12556 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
@@ -109,7 +109,7 @@ export default function ChatGDMUpsellActionSheet(onClick) {
   const obj13 = { style: tmp.innerContainer, children: items4 };
   items4 = [, ];
   const obj12 = { style: tmp.noticeContainer, children: items5 };
-  const obj14 = { style: tmp.item, children: closure_5(onClick(12555).TimerIcon, { size: "sm" }) };
+  const obj14 = { style: tmp.item, children: closure_5(onClick(12557).TimerIcon, { size: "sm" }) };
   items4[0] = closure_5(View, obj14);
   const obj15 = { style: tmp.text, variant: "body-sm/medium", color: "text-default", children: intl5.string(onClick(1113).t.Fq3DJb) };
   const Text3 = onClick(5919).Text;

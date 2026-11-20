@@ -1,10 +1,10 @@
-// Module ID: 18447
-// Function ID: 18448
+// Module ID: 18449
+// Function ID: 18450
 // Name: UserSettingsDesignSystemBackdrop
 // Dependencies: [32, 19, 17, 21, 5306, 7445, 6327, 5919, 5926, 1655, 5929, 5930, 6317, 5894, 2]
 // Exports: default
 
-// Module 18447 (UserSettingsDesignSystemBackdrop)
+// Module 18449 (UserSettingsDesignSystemBackdrop)
 import _mod1655 from "module_1655" /* 1655 */;
 import Backdrop from "Backdrop" /* 5894 */;
 import Text_Text from "Text/Text" /* 5919 */;

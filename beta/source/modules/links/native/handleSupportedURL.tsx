@@ -1,10 +1,10 @@
-// Module ID: 16285
-// Function ID: 16286
+// Module ID: 16287
+// Function ID: 16288
 // Name: handleSupportedURL
-// Dependencies: [109, 5, 7661, 7029, 9589, 9984, 502, 5339, 1072, 5162, 6793, 6892, 12765, 8741, 6040, 16286, 9202, 14993, 6838, 5483, 16287, 8476, 8604, 15273, 10401, 14045, 2020, 12379, 1256, 12381, 7263, 12505, 11729, 10018, 16293, 7070, 7937, 14221, 16294, 15026, 7399, 2121, 12766, 12764, 16296, 16298, 1627, 8192, 16307, 6002, 16309, 5177, 7231, 7970, 7965, 10489, 6889, 10821, 5482, 6966, 1099, 572, 7466, 1381, 8404, 16312, 16327, 1380, 6259, 16336, 8460, 14216, 16344, 6757, 16345, 8484, 10631, 16432, 8825, 6959, 10128, 15256, 6960, 11661, 16433, 6942, 12744, 16434, 10286, 10281, 10536, 13776, 6034, 2]
+// Dependencies: [109, 5, 7661, 7029, 9589, 9984, 502, 5339, 1072, 5162, 6793, 6892, 12767, 8741, 6040, 16288, 9202, 14995, 6838, 5483, 16289, 8476, 8604, 15275, 10401, 14047, 2020, 12379, 1256, 12381, 7263, 12507, 11729, 10018, 16295, 7070, 7937, 14223, 16296, 15028, 7399, 2121, 12768, 12766, 16298, 16300, 1627, 8192, 16309, 6002, 16311, 5177, 7231, 7970, 7965, 10489, 6889, 10821, 5482, 6966, 1099, 572, 7466, 1381, 8404, 16314, 16329, 1380, 6259, 16338, 8460, 14218, 16346, 6757, 16347, 8484, 10631, 16434, 8825, 6959, 10128, 15258, 6960, 11661, 16435, 6942, 12746, 16436, 10286, 10281, 10536, 13778, 6034, 2]
 // Exports: default
 
-// Module 16285 (handleSupportedURL)
+// Module 16287 (handleSupportedURL)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 2020 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
@@ -32,15 +32,15 @@ import GameProfileActionCreators from "GameProfileActionCreators" /* 10281 */;
 import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 10286 */;
 import DisplayedInviteActionCreators from "DisplayedInviteActionCreators" /* 10401 */;
 import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 10631 */;
-import closeVoicePanelsDefault from "closeVoicePanels" /* 12744 */;
-import ApplicationUtils from "ApplicationUtils" /* 12764 */;
-import Constants3 from "Constants" /* 12765 */;
-import guild_templates_GuildTemplateActionCreatorsDefault from "guild_templates/GuildTemplateActionCreators" /* 14045 */;
-import BountyActionCreators from "BountyActionCreators" /* 15256 */;
-import ShareScreenConstants from "ShareScreenConstants" /* 16286 */;
-import MidjourneyOnboardingUtils from "MidjourneyOnboardingUtils" /* 16294 */;
-import GuildSettingsPickerActionCreators from "GuildSettingsPickerActionCreators" /* 16327 */;
-import AgeKeyReturnHandler from "AgeKeyReturnHandler" /* 16432 */;
+import closeVoicePanelsDefault from "closeVoicePanels" /* 12746 */;
+import ApplicationUtils from "ApplicationUtils" /* 12766 */;
+import Constants3 from "Constants" /* 12767 */;
+import guild_templates_GuildTemplateActionCreatorsDefault from "guild_templates/GuildTemplateActionCreators" /* 14047 */;
+import BountyActionCreators from "BountyActionCreators" /* 15258 */;
+import ShareScreenConstants from "ShareScreenConstants" /* 16288 */;
+import MidjourneyOnboardingUtils from "MidjourneyOnboardingUtils" /* 16296 */;
+import GuildSettingsPickerActionCreators from "GuildSettingsPickerActionCreators" /* 16329 */;
+import AgeKeyReturnHandler from "AgeKeyReturnHandler" /* 16434 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7029 */;
@@ -60,9 +60,9 @@ let closure_18;
 let map1;
 let tmp;
 let tmp3;
-const authorizeCallbackDefault = tmp(12766);
-const FamilyCenterNativeUtils = tmp3(14221);
-const CreateGuildModalActionCreatorsDefault = tmp(15026);
+const authorizeCallbackDefault = tmp(12768);
+const FamilyCenterNativeUtils = tmp3(14223);
+const CreateGuildModalActionCreatorsDefault = tmp(15028);
 let closure_4 = ["code", "state"];
 PostConnectionCallbackStore.addPostConnectionCallback;
 let closure_9 = PremiumPlanPurchasedStore.handleMobileWebCheckoutStatus;
@@ -232,7 +232,7 @@ export default function handleSupportedURL(payload) {
     let flag3 = null != giftCode;
     if (flag3) {
       const obj37 = payload(inviteCode[27]);
-      const giftCode1 = obj37.resolveGiftCode(giftCode);
+      const giftCode1 = obj37.resolveGiftCode(giftCode, { withGiftSubscriptionAgreement: true });
       let nextPromise = giftCode1.then((giftCode) => {
         giftCode = giftCode.giftCode;
         const obj = rootNavigationRef1(inviteCode[28]);
@@ -337,9 +337,9 @@ export default function handleSupportedURL(payload) {
           }
           inviteCode = 3;
           return { value: "HermesInternal", done: null };
-        } catch (tmp22) {
+        } catch (tmp26) {
           inviteCode = 3;
-          throw tmp22;
+          throw tmp26;
         }
       }
     }));
@@ -413,7 +413,7 @@ export default function handleSupportedURL(payload) {
               });
             } else {
               const obj3 = { callback: authorizeCallbackDefault };
-              const openOAuth2Modal = tmp4(12764).openOAuth2Modal;
+              const openOAuth2Modal = tmp4(12766).openOAuth2Modal;
               ApplicationUtils;
               let merged = Object.assign(payload.props);
               openOAuth2Modal(obj3);
@@ -432,7 +432,7 @@ export default function handleSupportedURL(payload) {
           pathname(null != remoteAuthFingerprint ? (() => {
             const obj = ModalActionCreatorsDefault;
             const obj2 = { remoteAuthFingerprint };
-            obj.pushLazy(asyncRequire(16298, dependencyMap.paths), obj2, "REMOTE_AUTH_MODAL");
+            obj.pushLazy(asyncRequire(16300, dependencyMap.paths), obj2, "REMOTE_AUTH_MODAL");
           }) : (() => {
             let paths;
             let tmp = inviteCode;
@@ -1083,7 +1083,7 @@ export default function handleSupportedURL(payload) {
                 });
                 flag = true;
               } else if (tmp.BOOST_MARKETING === type) {
-                pathname(() => {
+                const tmp26 = pathname(() => {
                   const obj = BoostingActionCreators;
                   obj.openApplyBoostModal(payload.guildId);
                 });

@@ -1,10 +1,10 @@
-// Module ID: 14606
-// Function ID: 14607
+// Module ID: 14608
+// Function ID: 14609
 // Name: ChatInputSendUtils
-// Dependencies: [5, 8725, 8792, 8872, 1388, 1072, 5311, 1390, 11153, 9004, 1242, 14605, 14602, 8786, 8660, 12641, 11166, 11157, 2174, 11170, 6258, 1113, 1256, 11228, 9111, 5542, 14607, 2121, 8875, 7937, 12763, 11397, 13437, 5975, 2]
+// Dependencies: [5, 8725, 8792, 8872, 1388, 1072, 5311, 1390, 11153, 9004, 1242, 14607, 14604, 8786, 8660, 12643, 11166, 11157, 2174, 11170, 6258, 1113, 1256, 11228, 9111, 5542, 14609, 2121, 8875, 7937, 12765, 11397, 13439, 5975, 2]
 // Exports: chatInputCreateThread, chatInputHandleSendText, chatInputSendApplicationCommand
 
-// Module 14606 (ChatInputSendUtils)
+// Module 14608 (ChatInputSendUtils)
 import intl4 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import PremiumConstants from "PremiumConstants" /* 1390 */;
@@ -22,7 +22,7 @@ import useMessageMaxLength from "useMessageMaxLength" /* 11157 */;
 import handleUploadAttachmentErrors from "handleUploadAttachmentErrors" /* 11166 */;
 import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 11170 */;
 import ChatRestrictions from "ChatRestrictions" /* 11228 */;
-import ChatInputCommandOptionParser from "ChatInputCommandOptionParser" /* 14602 */;
+import ChatInputCommandOptionParser from "ChatInputCommandOptionParser" /* 14604 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import SlowmodeStore from "SlowmodeStore" /* 8792 */;
 import UploadAttachmentStore from "UploadAttachmentStore" /* 8872 */;
@@ -99,7 +99,7 @@ function chatInputSendMessage(params) {
   if (current2 != null) {
     current2.showSideActions();
   }
-  let obj3 = channel(14605);
+  let obj3 = channel(14607);
   const handleLegacyCommandsResult = obj3.handleLegacyCommands(text, { channel, isEdit: false });
   let tmp15 = tts;
   parsed = parsedMessage;
@@ -131,7 +131,7 @@ function chatInputSendMessage(params) {
   if (null != mentionTimestamps) {
     result = tmp17;
     if (mentionTimestamps.size > 0) {
-      const tmp13Result = channel(14602);
+      const tmp13Result = channel(14604);
       result = tmp13Result.serializeComposerTimestampMentions(tmp17, mentionTimestamps);
     }
   }
@@ -170,7 +170,7 @@ function chatInputSendMessage(params) {
   if (scheduledMessage != null) {
     scheduledTimestamp = scheduledMessage.scheduledTimestamp;
   }
-  const tmp13Result2 = channel(12641);
+  const tmp13Result2 = channel(12643);
   tmp13Result2.deletePendingReply(channel.id);
   if (applicationCommandManager != null) {
     const result1 = applicationCommandManager.clearTimestampMentions();
@@ -447,7 +447,7 @@ export function chatInputHandleSendText(text) {
               body: checkResult.body,
               confirmText: intl2.string(intl4.t.KJnHq3),
               onConfirm() {
-                          obj = { text: require, parsedMessage, tts: "alignItems", source: true, params };
+                          obj = { text: require, parsedMessage, tts: "alignItems", source: false, params };
                           chatInputSendMessage(obj);
                         },
               cancelText: intl3.string(intl4.t.fsBWmS)
@@ -470,15 +470,15 @@ export function chatInputHandleSendText(text) {
               threadId: channel.id,
               attachments: uploads,
               sendMessage() {
-                          obj = { text: require, parsedMessage, tts: "alignItems", source: true, params };
+                          obj = { text: require, parsedMessage, tts: "alignItems", source: null, params };
                           chatInputSendMessage(obj);
                         }
             };
             const obj5 = params(5542);
-            obj5.openLazy(tmp20(2121)(14607, tmp21.paths), "add-media-to-original-forum-post", obj4);
+            obj5.openLazy(tmp20(2121)(14609, tmp21.paths), "add-media-to-original-forum-post", obj4);
           }
         }
-        const obj6 = { text, parsedMessage: tmp2, tts: "alignItems", source: true, params };
+        const obj6 = { text, parsedMessage: tmp2, tts: "alignItems", source: "openAppStoreOverlayMediaModal", params };
         chatInputSendMessage(obj6);
       }
     }

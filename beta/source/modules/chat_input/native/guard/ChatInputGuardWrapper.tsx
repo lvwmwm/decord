@@ -1,10 +1,10 @@
-// Module ID: 14864
-// Function ID: 14865
+// Module ID: 14866
+// Function ID: 14867
 // Name: ChatInputGuardWrapper
-// Dependencies: [19, 5239, 5159, 5218, 5177, 6927, 5248, 1388, 13804, 1072, 7818, 21, 504, 7280, 5225, 5244, 14865, 14866, 12027, 12026, 14867, 14868, 6057, 8137, 6838, 7817, 2121, 7820, 7740, 12487, 11843, 14870, 14879, 14878, 6027, 1113, 14881, 14884, 14885, 14886, 14891, 14892, 14895, 14896, 8457, 14898, 2]
+// Dependencies: [19, 5239, 5159, 5218, 5177, 6927, 5248, 1388, 13806, 1072, 7818, 21, 504, 7280, 5225, 5244, 14867, 14868, 12027, 12026, 14869, 14870, 6057, 8137, 6838, 7817, 2121, 7820, 7740, 12489, 11843, 14872, 14881, 14880, 6027, 1113, 14883, 14886, 14887, 14888, 14893, 14894, 14897, 14898, 8457, 14900, 2]
 // Exports: default
 
-// Module 14864 (ChatInputGuardWrapper)
+// Module 14866 (ChatInputGuardWrapper)
 import Fragment from "Fragment" /* 21 */;
 import ChannelRecord from "ChannelRecord" /* 5159 */;
 import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 5225 */;
@@ -13,8 +13,8 @@ import MemberVerificationUtils from "MemberVerificationUtils" /* 7280 */;
 import PhoneConstants from "PhoneConstants" /* 7818 */;
 import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 8137 */;
 import navigateToThreadCreation from "navigateToThreadCreation" /* 11843 */;
-import GuildRoleConnectionsModalActionCreators from "GuildRoleConnectionsModalActionCreators" /* 12487 */;
-import ChatInputConstants from "ChatInputConstants" /* 13804 */;
+import GuildRoleConnectionsModalActionCreators from "GuildRoleConnectionsModalActionCreators" /* 12489 */;
+import ChatInputConstants from "ChatInputConstants" /* 13806 */;
 import react from "react" /* 19 */;
 import LurkingStore from "LurkingStore" /* 5239 */;
 import GuildMemberStore from "GuildMemberStore" /* 5218 */;

@@ -1,10 +1,10 @@
-// Module ID: 20190
-// Function ID: 20191
+// Module ID: 20192
+// Function ID: 20193
 // Name: background_sync/BackgroundSync
-// Dependencies: [32, 5, 5159, 5155, 7015, 2120, 8682, 1072, 7010, 6969, 5177, 3, 1089, 510, 8856, 1380, 572, 1242, 1256, 5184, 1285, 5185, 11, 12, 8760, 8763, 8761, 16154, 18208, 8680, 1255, 8690, 2]
+// Dependencies: [32, 5, 5159, 5155, 7015, 2120, 8682, 1072, 7010, 6969, 5177, 3, 1089, 510, 8856, 1380, 572, 1242, 1256, 5184, 1285, 5185, 11, 12, 8760, 8763, 8761, 16156, 18210, 8680, 1255, 8690, 2]
 // Exports: backgroundSync
 
-// Module 20190 (background_sync/BackgroundSync)
+// Module 20192 (background_sync/BackgroundSync)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
 import Storage4 from "Storage" /* 510 */;

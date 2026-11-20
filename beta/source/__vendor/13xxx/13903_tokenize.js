@@ -1,47 +1,67 @@
 // Module ID: 13903
 // Function ID: 13904
 // Name: tokenize
-// Dependencies: [13831, 13875]
+// Dependencies: [13833]
 
 // Module 13903 (tokenize)
-import tokenize from "tokenize" /* 13831 */;
-import tokenize2 from "tokenize" /* 13875 */;
+import tokenize from "tokenize" /* 13833 */;
 
-function consumeRaw(arg0) {
-  return this.Raw(arg0, tokenize2.mode.leftCurlyBracket, true);
-}
-function consumePrelude() {
-  const self = this;
-  const SelectorListResult = this.SelectorList();
-  const tmp2 = "Raw" !== SelectorListResult.type && false === self.scanner.eof && self.scanner.tokenType !== LeftCurlyBracket;
-  if (tmp2) {
-    self.error();
-  }
-  return SelectorListResult;
-}
-const LeftCurlyBracket = tokenize.TYPE.LeftCurlyBracket;
+let items;
+let obj2;
+const Ident = tokenize.TYPE.Ident;
+const Function = tokenize.TYPE.Function;
+const Colon = tokenize.TYPE.Colon;
+const RightParenthesis = tokenize.TYPE.RightParenthesis;
 let obj = {
-  name: "Rule",
-  structure: { prelude: ["SelectorList", "Raw"], block: ["Block"] },
+  name: "PseudoElementSelector",
+  structure: obj2,
   parse() {
-    let BlockResult;
-    let parseWithFallbackResult;
+    let consumeResult;
+    let tmp5;
     const self = this;
     const tokenStart = this.scanner.tokenStart;
-    if (this.parseRulePrelude) {
-      parseWithFallbackResult = self.parseWithFallback(consumePrelude, consumeRaw);
+    this.eat(Colon);
+    this.eat(Colon);
+    if (this.scanner.tokenType === Function) {
+      let list;
+      const str = self.consumeFunctionName();
+      const formatted = str.toLowerCase();
+      const pseudo = self.pseudo;
+      if (pseudo.hasOwnProperty(formatted)) {
+        const scanner = self.scanner;
+        scanner.skipSC();
+        const scanner2 = self.scanner;
+        const obj = self.pseudo[formatted];
+        const callResult = obj.call(self);
+        scanner2.skipSC();
+        list = callResult;
+      } else {
+        list = self.createList();
+        list.push(self.Raw(self.scanner.tokenIndex, null, false));
+      }
+      self.eat(RightParenthesis);
+      tmp5 = list;
+      consumeResult = str;
     } else {
-      parseWithFallbackResult = consumeRaw.call(self, tmp);
+      consumeResult = self.consume(Ident);
+      tmp5 = null;
     }
-    const obj = { type: "Rule", loc: self.getLocation(tokenStart, self.scanner.tokenStart), prelude: parseWithFallbackResult, block: BlockResult };
-    BlockResult = self.Block(true);
-    return obj;
+    const element = { type: "PseudoElementSelector", loc: self.getLocation(tokenStart, self.scanner.tokenStart), name: consumeResult, children: tmp5 };
+    return element;
   },
-  generate(prelude) {
-    this.node(prelude.prelude);
-    this.node(prelude.block);
+  generate(name) {
+    const self = this;
+    this.chunk("::");
+    this.chunk(name.name);
+    if (null !== name.children) {
+      self.chunk("(");
+      self.children(name);
+      self.chunk(")");
+    }
   },
-  walkContext: "rule"
+  walkContext: "function"
 };
+obj2 = { name: String, children: items };
+items = [["Raw"], null];
 
 export default obj;

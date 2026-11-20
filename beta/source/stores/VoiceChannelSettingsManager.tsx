@@ -1,16 +1,16 @@
-// Module ID: 20422
-// Function ID: 20423
+// Module ID: 20424
+// Function ID: 20425
 // Name: VoiceChannelSettingsManager
-// Dependencies: [502, 16504, 5155, 5209, 16505, 1072, 572, 7882, 2]
+// Dependencies: [502, 16506, 5155, 5209, 16507, 1072, 572, 7882, 2]
 
-// Module 20422 (VoiceChannelSettingsManager)
+// Module 20424 (VoiceChannelSettingsManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1072 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import BitRateStore from "BitRateStore" /* 16504 */;
+import BitRateStore from "BitRateStore" /* 16506 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
-import VideoQualityModeStore from "VideoQualityModeStore" /* 16505 */;
+import VideoQualityModeStore from "VideoQualityModeStore" /* 16507 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;
 import size from "module_2" /* 2 */;
 

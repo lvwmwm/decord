@@ -1,17 +1,17 @@
-// Module ID: 18493
-// Function ID: 18494
+// Module ID: 18495
+// Function ID: 18496
 // Name: HeroBlock
-// Dependencies: [19, 17, 8485, 1074, 21, 5306, 575, 10455, 10416, 17652, 18494, 18497, 18500, 504, 10132, 18501, 18502, 17612, 7918, 7937, 9420, 18512, 18514, 5906, 18515, 1113, 7888, 2]
+// Dependencies: [19, 17, 8485, 1074, 21, 5306, 575, 10455, 10416, 17654, 18496, 18499, 18502, 504, 10132, 18503, 18504, 17614, 7918, 7937, 9420, 18514, 18516, 5906, 18517, 1113, 7888, 2]
 // Exports: default
 
-// Module 18493 (HeroBlock)
+// Module 18495 (HeroBlock)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 9420 */;
 import CollectiblesShopCardV2 from "CollectiblesShopCardV2" /* 10416 */;
 import SkeletonCardDefault from "SkeletonCard" /* 10455 */;
-import OrbsArcadeExperiment2 from "OrbsArcadeExperiment" /* 17652 */;
+import OrbsArcadeExperiment2 from "OrbsArcadeExperiment" /* 17654 */;
 import react_mod from "react" /* 19 */;
 import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 8485 */;
 import Fragment from "Fragment" /* 21 */;
@@ -23,7 +23,7 @@ let metroImportAll;
 let metroImportDefault;
 let obj2;
 let tmp2;
-const FeaturedFirstCardCoachmarkAnchorDefault = tmp2(18512);
+const FeaturedFirstCardCoachmarkAnchorDefault = tmp2(18514);
 function SkeletonLoading(accessibilityLabel) {
   let arr;
   let obj = {
@@ -48,10 +48,10 @@ function OrbsExclusiveHeroHeader(heroBlock) {
   const OrbsArcadeExperiment = OrbsArcadeExperiment2.OrbsArcadeExperiment;
   if (OrbsArcadeExperiment.useConfig({ location: "HeroBlock" }).enabled) {
     const obj2 = { productsTitle: heroBlock.mobileProductsTitle };
-    tmp2Result = tmp2(tmp3(18497), obj2);
+    tmp2Result = tmp2(tmp3(18499), obj2);
   } else {
     const obj = { heroBlock, category };
-    tmp2Result = tmp2(tmp3(18494), obj);
+    tmp2Result = tmp2(tmp3(18496), obj);
   }
   return tmp2Result;
 }

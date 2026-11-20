@@ -1,15 +1,15 @@
-// Module ID: 13423
-// Function ID: 13424
+// Module ID: 13425
+// Function ID: 13426
 // Name: RecommendationsBanner
-// Dependencies: [19, 17, 1407, 1072, 21, 5306, 12578, 13415, 12898, 6010, 8482, 8612, 1414, 8538, 2]
+// Dependencies: [19, 17, 1407, 1072, 21, 5306, 12580, 13417, 12900, 6010, 8482, 8612, 1414, 8538, 2]
 
-// Module 13423 (RecommendationsBanner)
+// Module 13425 (RecommendationsBanner)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
 import useDisplayProfileDefault from "useDisplayProfile" /* 8482 */;
 import useAvatarColorDefault from "useAvatarColor" /* 8538 */;
-import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 12898 */;
+import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 12900 */;
 import react from "react" /* 19 */;
 import UserRecord from "UserRecord" /* 1407 */;
 import Constants from "Constants" /* 1072 */;
@@ -37,9 +37,9 @@ let closure_10 = react.memo(function RecommendationBannerEmbedded(applicationId)
   importDefault = undefined;
   applicationId = applicationId.applicationId;
   const tmp = dependencyMap;
-  let obj = heroMediaDimensions(12578);
+  let obj = heroMediaDimensions(12580);
   const width = obj.useRequiredAppLauncherContext().width;
-  let obj2 = heroMediaDimensions(13415);
+  let obj2 = heroMediaDimensions(13417);
   heroMediaDimensions = obj2.useHeroMediaDimensions({ width });
   let obj3 = { applicationId, size: heroMediaDimensions.width, names: ["embedded_cover"] };
   const tmp4 = useEmbeddedActivityBackgroundDefault(obj3);

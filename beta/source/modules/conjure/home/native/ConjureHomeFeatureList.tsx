@@ -1,9 +1,9 @@
-// Module ID: 13976
-// Function ID: 13977
+// Module ID: 13978
+// Function ID: 13979
 // Name: ConjureHomeFeatureList
-// Dependencies: [19, 17, 21, 5306, 575, 7930, 5883, 10324, 5919, 9458, 12682, 1113, 4131, 5892, 6032, 11224, 671, 13977, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 7930, 5883, 10324, 5919, 9458, 12684, 1113, 4131, 5892, 6032, 11224, 671, 13979, 2]
 
-// Module 13976 (ConjureHomeFeatureList)
+// Module 13978 (ConjureHomeFeatureList)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import intl3 from "intl" /* 1113 */;
@@ -12,7 +12,7 @@ import LinearGradientDefault from "LinearGradient" /* 5883 */;
 import Text_Text from "Text/Text" /* 5919 */;
 import CircleCheckIcon2 from "CircleCheckIcon" /* 7930 */;
 import ShieldIcon2 from "ShieldIcon" /* 11224 */;
-import RobotIcon2 from "RobotIcon" /* 12682 */;
+import RobotIcon2 from "RobotIcon" /* 12684 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

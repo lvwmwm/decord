@@ -1,13 +1,13 @@
-// Module ID: 16570
-// Function ID: 16571
+// Module ID: 16572
+// Function ID: 16573
 // Name: KeyboardLayoutMapUtils
-// Dependencies: [32, 5, 1362, 8707, 3, 1380, 16569, 510, 2]
+// Dependencies: [32, 5, 1362, 8707, 3, 1380, 16571, 510, 2]
 // Exports: __DEV_overrideLayoutMapKey, getKeyboardEventShapeFromAny, getKeyboardEventShapeFromKey, getKeyboardEventShapeFromKeycode, getLayoutMap, initializeKeyboardMapper, resetKeyboardMapper
 
-// Module 16570 (KeyboardLayoutMapUtils)
+// Module 16572 (KeyboardLayoutMapUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import Storage2 from "Storage" /* 510 */;
-import keyCodeDefault from "keyCode" /* 16569 */;
+import keyCodeDefault from "keyCode" /* 16571 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1362 */;
@@ -23,7 +23,7 @@ let WindowsKeyToCode;
 function createKeyboardMapper() {
   return obj(...arguments);
 }
-const f113722 = (item) => {
+const f113728 = (item) => {
   let tmp;
   [tmp, obj] = item;
   const items = [tmp, ];
@@ -389,8 +389,8 @@ class DiscordKeyboardLayoutMap {
     }
     obj = Object.create(new.target.prototype);
     const entries = Object.entries(tmp);
-    obj.map = new Map(entries.map(f113722));
-    new Map(entries.map(f113722));
+    obj.map = new Map(entries.map(f113728));
+    new Map(entries.map(f113728));
     return obj;
   }
   get(arg0) {
@@ -430,7 +430,7 @@ Object.defineProperty(DiscordKeyboardLayoutMap.prototype, "size", {
 });
 obj = Object.create(DiscordKeyboardLayoutMap.prototype);
 let entries = Object.entries(frozen);
-let map = new Map(entries.map(f113722));
+let map = new Map(entries.map(f113728));
 obj.map = map;
 let c15 = "keyboard-layout-map";
 class BaseKeyboardMapper {

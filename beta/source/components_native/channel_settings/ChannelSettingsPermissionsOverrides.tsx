@@ -1,21 +1,21 @@
-// Module ID: 19695
-// Function ID: 19696
+// Module ID: 19697
+// Function ID: 19698
 // Name: ChannelSettingsPermissionsOverrides
-// Dependencies: [32, 5, 19, 17, 19696, 5173, 5155, 5212, 5177, 5238, 5248, 1388, 1072, 21, 5306, 575, 504, 19698, 1502, 1630, 7261, 12560, 19697, 19701, 5243, 8133, 1084, 2119, 5362, 6258, 1113, 6002, 2188, 5163, 19702, 9051, 5919, 5944, 10929, 7443, 8159, 7746, 19706, 1380, 2]
+// Dependencies: [32, 5, 19, 17, 19698, 5173, 5155, 5212, 5177, 5238, 5248, 1388, 1072, 21, 5306, 575, 504, 19700, 1502, 1630, 7261, 12562, 19699, 19703, 5243, 8133, 1084, 2119, 5362, 6258, 1113, 6002, 2188, 5163, 19704, 9051, 5919, 5944, 10929, 7443, 8159, 7746, 19708, 1380, 2]
 // Exports: default
 
-// Module 19695 (ChannelSettingsPermissionsOverrides)
+// Module 19697 (ChannelSettingsPermissionsOverrides)
 import nativeDefault from "native" /* 575 */;
 import StageChannelPermissions from "StageChannelPermissions" /* 5163 */;
 import GuildRecord from "GuildRecord" /* 5173 */;
 import TableRowGroup2 from "TableRowGroup" /* 7746 */;
-import AppChannelPermissionUtils from "AppChannelPermissionUtils" /* 12560 */;
-import PermissionSpecUtilsDefault from "PermissionSpecUtils" /* 19702 */;
+import AppChannelPermissionUtils from "AppChannelPermissionUtils" /* 12562 */;
+import PermissionSpecUtilsDefault from "PermissionSpecUtils" /* 19704 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelPermissionOverwriteEditStore from "ChannelPermissionOverwriteEditStore" /* 19696 */;
+import ChannelPermissionOverwriteEditStore from "ChannelPermissionOverwriteEditStore" /* 19698 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import GuildRoleStore from "GuildRoleStore" /* 5212 */;
 import GuildStore from "GuildStore" /* 5177 */;
@@ -119,7 +119,7 @@ export default function ChannelSettingsPermissionsOverrides(channelId) {
   const stateFromStores = obj2.useStateFromStores(items, () => ChannelStore.getChannel(channelId));
   let obj3 = channelId(7261);
   const appChannelApplication = obj3.useAppChannelApplication(stateFromStores);
-  let obj4 = channelId(12560);
+  let obj4 = channelId(12562);
   const appChannelBotUserId = obj4.useAppChannelBotUserId(stateFromStores);
   let tmp9 = null;
   if (appChannelBotUserId === id) {

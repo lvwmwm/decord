@@ -1,18 +1,18 @@
-// Module ID: 20100
-// Function ID: 20101
+// Module ID: 20102
+// Function ID: 20103
 // Name: VoicePanelSoundboardButton
-// Dependencies: [19, 21, 5306, 575, 11984, 20087, 19210, 20088, 1113, 7722, 10726, 2]
+// Dependencies: [19, 21, 5306, 575, 11984, 20089, 19212, 20090, 1113, 7722, 10726, 2]
 // Exports: default
 
-// Module 20100 (VoicePanelSoundboardButton)
+// Module 20102 (VoicePanelSoundboardButton)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import NativeViewDefault from "NativeView" /* 7722 */;
 import SoundboardIcon from "SoundboardIcon" /* 10726 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11984 */;
-import useSoundboardConfig from "useSoundboardConfig" /* 19210 */;
-import VoicePanelStyles from "VoicePanelStyles" /* 20087 */;
-import VoicePanelAnimatedButtonWrapperDefault from "VoicePanelAnimatedButtonWrapper" /* 20088 */;
+import useSoundboardConfig from "useSoundboardConfig" /* 19212 */;
+import VoicePanelStyles from "VoicePanelStyles" /* 20089 */;
+import VoicePanelAnimatedButtonWrapperDefault from "VoicePanelAnimatedButtonWrapper" /* 20090 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5306 */;

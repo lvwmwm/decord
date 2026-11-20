@@ -1,10 +1,10 @@
-// Module ID: 16341
-// Function ID: 16342
+// Module ID: 16343
+// Function ID: 16344
 // Name: ShareAttachments
 // Dependencies: [19, 17, 21, 1655, 5883, 1187, 5306, 575, 5538, 5303, 1113, 11124, 8879, 2]
 // Exports: default
 
-// Module 16341 (ShareAttachments)
+// Module 16343 (ShareAttachments)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;

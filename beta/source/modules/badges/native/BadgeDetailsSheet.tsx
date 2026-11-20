@@ -1,7 +1,7 @@
 // Module ID: 10111
 // Function ID: 10112
 // Name: BadgeDetailsSheet
-// Dependencies: [5, 32, 19, 17, 5307, 1388, 10112, 8547, 1072, 5557, 21, 5306, 575, 6027, 5919, 1655, 10113, 504, 10114, 10115, 10116, 1708, 10117, 2153, 1392, 10118, 10127, 15272, 5542, 10110, 15273, 8604, 1113, 7459, 15279, 15277, 15284, 5926, 15285, 8552, 5538, 1630, 10076, 15278, 11819, 8559, 5887, 5556, 5560, 5891, 2]
+// Dependencies: [5, 32, 19, 17, 5307, 1388, 10112, 8547, 1072, 5557, 21, 5306, 575, 6027, 5919, 1655, 10113, 504, 10114, 10115, 10116, 1708, 10117, 2153, 1392, 10118, 10127, 15274, 5542, 10110, 15275, 8604, 1113, 7459, 15281, 15279, 15286, 5926, 15287, 8552, 5538, 1630, 10076, 15280, 11819, 8559, 5887, 5556, 5560, 5891, 2]
 // Exports: default
 
 // Module 10111 (BadgeDetailsSheet)
@@ -16,8 +16,8 @@ import CircleInformationIcon2 from "CircleInformationIcon" /* 6027 */;
 import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8552 */;
 import openBadgeDetailsSheet from "openBadgeDetailsSheet" /* 10110 */;
 import BadgeUtils from "BadgeUtils" /* 10113 */;
-import trackBadgeDirectoryActionDefault from "trackBadgeDirectoryAction" /* 15272 */;
-import useBadgeDirectoryBadgeIndicators from "useBadgeDirectoryBadgeIndicators" /* 15278 */;
+import trackBadgeDirectoryActionDefault from "trackBadgeDirectoryAction" /* 15274 */;
+import useBadgeDirectoryBadgeIndicators from "useBadgeDirectoryBadgeIndicators" /* 15280 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

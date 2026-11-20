@@ -1,10 +1,10 @@
-// Module ID: 17112
-// Function ID: 17113
+// Module ID: 17114
+// Function ID: 17115
 // Name: CustomizeBadgesSheet
-// Dependencies: [19, 17, 8542, 1388, 8547, 1072, 5557, 1390, 21, 5306, 575, 5544, 9150, 17113, 9148, 1113, 7635, 7633, 6027, 7445, 15276, 5919, 10113, 7997, 7790, 1655, 5538, 5541, 15844, 1708, 9149, 5588, 5315, 10078, 1630, 504, 2174, 7918, 7937, 5887, 9579, 10954, 8546, 1256, 8552, 6005, 5556, 10576, 17114, 7418, 7913, 5560, 2]
+// Dependencies: [19, 17, 8542, 1388, 8547, 1072, 5557, 1390, 21, 5306, 575, 5544, 9150, 17115, 9148, 1113, 7635, 7633, 6027, 7445, 15278, 5919, 10113, 7997, 7790, 1655, 5538, 5541, 15846, 1708, 9149, 5588, 5315, 10078, 1630, 504, 2174, 7918, 7937, 5887, 9579, 10954, 8546, 1256, 8552, 6005, 5556, 10576, 17116, 7418, 7913, 5560, 2]
 // Exports: default
 
-// Module 17112 (CustomizeBadgesSheet)
+// Module 17114 (CustomizeBadgesSheet)
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
@@ -30,9 +30,9 @@ import ContextMenuConstants from "ContextMenuConstants" /* 9150 */;
 import openPremiumModalDefault from "openPremiumModal" /* 9579 */;
 import BadgeUtils from "BadgeUtils" /* 10113 */;
 import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10954 */;
-import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 15276 */;
-import PendingBadgeSettings from "PendingBadgeSettings" /* 15844 */;
-import BadgeGrid from "BadgeGrid" /* 17113 */;
+import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 15278 */;
+import PendingBadgeSettings from "PendingBadgeSettings" /* 15846 */;
+import BadgeGrid from "BadgeGrid" /* 17115 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8542 */;
@@ -98,7 +98,7 @@ function BadgeVisibilityMenu(badge) {
   }
   const obj2 = { items, align: str, disableGesture: true, triggerOnLongPress: true, children };
   items = [obj];
-  const result = index % tmp2(17113).BADGE_GRID_COLUMNS;
+  const result = index % tmp2(17115).BADGE_GRID_COLUMNS;
   str = "right";
   if (0 !== result) {
     let str2 = "above";

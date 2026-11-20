@@ -1,10 +1,10 @@
-// Module ID: 18845
-// Function ID: 18846
+// Module ID: 18847
+// Function ID: 18848
 // Name: VoiceUserItem
-// Dependencies: [19, 17, 1072, 21, 1187, 6051, 5306, 575, 11050, 10650, 10652, 1256, 1414, 18846, 10602, 10604, 10598, 10600, 11046, 8038, 10837, 10653, 2]
+// Dependencies: [19, 17, 1072, 21, 1187, 6051, 5306, 575, 11050, 10650, 10652, 1256, 1414, 18848, 10602, 10604, 10598, 10600, 11046, 8038, 10837, 10653, 2]
 // Exports: getVoiceUserHeight
 
-// Module 18845 (VoiceUserItem)
+// Module 18847 (VoiceUserItem)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;

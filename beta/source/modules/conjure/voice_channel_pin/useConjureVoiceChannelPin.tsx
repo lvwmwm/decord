@@ -1,13 +1,13 @@
-// Module ID: 13639
-// Function ID: 13640
+// Module ID: 13641
+// Function ID: 13642
 // Name: useConjureVoiceChannelPin
-// Dependencies: [5, 32, 19, 5155, 5236, 5238, 5248, 1388, 7017, 7381, 1072, 504, 5944, 13157, 2]
+// Dependencies: [5, 32, 19, 5155, 5236, 5238, 5248, 1388, 7017, 7381, 1072, 504, 5944, 13159, 2]
 // Exports: useConjureVoiceChannelPinForm, useConjureVoiceChannelPinOutcome
 
-// Module 13639 (useConjureVoiceChannelPin)
+// Module 13641 (useConjureVoiceChannelPin)
 import GuildChannelStore2 from "GuildChannelStore" /* 5236 */;
 import useChannelName from "useChannelName" /* 5944 */;
-import conjureVoiceChannelPin from "conjureVoiceChannelPin" /* 13157 */;
+import conjureVoiceChannelPin from "conjureVoiceChannelPin" /* 13159 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

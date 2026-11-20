@@ -1,7 +1,7 @@
 // Module ID: 7659
 // Function ID: 7660
 // Name: getOnClick
-// Dependencies: [32, 5, 2165, 7029, 7246, 502, 5218, 5177, 6042, 6362, 5209, 5339, 6946, 1072, 1074, 7247, 572, 6043, 7660, 7970, 2121, 6907, 7262, 7965, 6041, 6045, 8796, 5998, 1256, 14552, 12697, 15553, 12705, 8797, 15947, 12434, 11729, 10132, 1381, 10128, 6959, 15948, 8484, 6057, 5946, 12509, 12511, 2]
+// Dependencies: [32, 5, 2165, 7029, 7246, 502, 5218, 5177, 6042, 6362, 5209, 5339, 6946, 1072, 1074, 7247, 572, 6043, 7660, 7970, 2121, 6907, 7262, 7965, 6041, 6045, 8796, 5998, 1256, 14554, 12699, 15555, 12707, 8797, 15949, 12436, 11729, 10132, 1381, 10128, 6959, 15950, 8484, 6057, 5946, 12511, 12513, 2]
 // Exports: default
 
 // Module 7659 (getOnClick)
@@ -18,9 +18,9 @@ import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 
 import _slicedToArray2 from "_slicedToArray" /* 8796 */;
 import activityBookmarkUtils from "activityBookmarkUtils" /* 8797 */;
 import QuestUtils from "QuestUtils" /* 10128 */;
-import storefrontCodedLink from "storefrontCodedLink" /* 12434 */;
-import SuspiciousDownloadModalActionCreatorsDefault from "SuspiciousDownloadModalActionCreators" /* 12511 */;
-import GamesActionCreatorsDefault from "GamesActionCreators" /* 12705 */;
+import storefrontCodedLink from "storefrontCodedLink" /* 12436 */;
+import SuspiciousDownloadModalActionCreatorsDefault from "SuspiciousDownloadModalActionCreators" /* 12513 */;
+import GamesActionCreatorsDefault from "GamesActionCreators" /* 12707 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStore from "ApplicationStore" /* 2165 */;
@@ -322,7 +322,7 @@ export default function getOnClick(assetURL) {
           const tmp3Result = _slicedToArray2;
           result = tmp3Result.parseStorefrontSkuCodedLink(code);
           if (result == null) {
-            result = { applicationId: "Array", skuId: "Path" };
+            result = { applicationId: "ip", skuId: "r" };
           }
         }
         ({ applicationId, skuId } = result);
@@ -337,7 +337,7 @@ export default function getOnClick(assetURL) {
         openURLDefault(assetURL);
         return true;
       }
-      result = { applicationId: code, skuId: "Array" };
+      result = { applicationId: code, skuId: "y" };
     };
   }
   if (null != findCodedLinkResult) {
@@ -414,7 +414,7 @@ export default function getOnClick(assetURL) {
         }
         [closure_129_0, closure_129_1] = _undefined.code.split("-");
         _slicedToArray(_undefined.code.split("-"), 2);
-        const promise = asyncRequire(15947, dependencyMap.paths);
+        const promise = asyncRequire(15949, dependencyMap.paths);
         promise.then((openGuildProductLink) => {
           openGuildProductLink.openGuildProductLink(closure_1_0, closure_1_1);
         });
@@ -622,7 +622,7 @@ export default function getOnClick(assetURL) {
   const tmp2Result3 = tmp2(5946);
   let result = tmp2Result3.tryParseEventDetailsPath(pathname);
   if (!skipExtensionCheck) {
-    const tmp2Result4 = tmp2(12509);
+    const tmp2Result4 = tmp2(12511);
     if (null != tmp2Result4.isSuspiciousDownload(assetURL)) {
       fn = (preventDefault) => {
         if (preventDefault != null) {

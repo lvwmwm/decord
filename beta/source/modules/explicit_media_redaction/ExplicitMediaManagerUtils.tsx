@@ -1,10 +1,10 @@
-// Module ID: 20233
-// Function ID: 20234
+// Module ID: 20235
+// Function ID: 20236
 // Name: ExplicitMediaManagerUtils
 // Dependencies: [2]
 // Exports: hasAttachmentsEmbedsComponentsOrSnapshots
 
-// Module 20233 (ExplicitMediaManagerUtils)
+// Module 20235 (ExplicitMediaManagerUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/explicit_media_redaction/ExplicitMediaManagerUtils.tsx");

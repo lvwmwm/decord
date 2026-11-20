@@ -1,17 +1,17 @@
-// Module ID: 14819
-// Function ID: 14820
+// Module ID: 14821
+// Function ID: 14822
 // Name: ApplicationCommandBar
-// Dependencies: [32, 19, 17, 5218, 21, 5306, 575, 6951, 7428, 1113, 1187, 504, 14640, 6010, 5919, 8106, 6826, 14820, 2]
+// Dependencies: [32, 19, 17, 5218, 21, 5306, 575, 6951, 7428, 1113, 1187, 504, 14642, 6010, 5919, 8106, 6826, 14822, 2]
 // Exports: default
 
-// Module 14819 (ApplicationCommandBar)
+// Module 14821 (ApplicationCommandBar)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import Text_Text from "Text/Text" /* 5919 */;
 import usePreviousDefault from "usePrevious" /* 6826 */;
 import LegacyTokens from "LegacyTokens" /* 6951 */;
 import Pressables from "Pressables" /* 7428 */;
-import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 14640 */;
+import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 14642 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -41,7 +41,7 @@ let size1;
 let tmp2;
 let tmp4;
 const native = tmp4(1187);
-const DescriptionEllipsisDefault = tmp2(14820);
+const DescriptionEllipsisDefault = tmp2(14822);
 function ApplicationCommandOptionItem(arg0) {
   let LegacyText;
   let intl;

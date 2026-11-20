@@ -1,9 +1,9 @@
-// Module ID: 13800
-// Function ID: 13801
+// Module ID: 13802
+// Function ID: 13803
 // Name: ChatInputActionButton
 // Dependencies: [19, 17, 21, 5306, 575, 5892, 7428, 2]
 
-// Module 13800 (ChatInputActionButton)
+// Module 13802 (ChatInputActionButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

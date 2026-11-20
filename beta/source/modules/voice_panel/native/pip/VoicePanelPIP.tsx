@@ -1,10 +1,10 @@
-// Module ID: 20065
-// Function ID: 20066
+// Module ID: 20067
+// Function ID: 20068
 // Name: VoicePanelPIP
-// Dependencies: [19, 17, 5154, 7019, 6891, 11985, 11983, 19912, 5949, 7020, 21, 5306, 11984, 11995, 11993, 19974, 1655, 19911, 11989, 5929, 5538, 1187, 5588, 1708, 19982, 6171, 504, 5227, 12743, 12741, 11253, 1113, 20066, 7722, 20070, 20071, 5367, 2]
+// Dependencies: [19, 17, 5154, 7019, 6891, 11985, 11983, 19914, 5949, 7020, 21, 5306, 11984, 11995, 11993, 19976, 1655, 19913, 11989, 5929, 5538, 1187, 5588, 1708, 19984, 6171, 504, 5227, 12745, 12743, 11253, 1113, 20068, 7722, 20072, 20073, 5367, 2]
 // Exports: usePIPTileHandoff
 
-// Module 20065 (VoicePanelPIP)
+// Module 20067 (VoicePanelPIP)
 import intl2 from "intl" /* 1113 */;
 import native from "native" /* 5367 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 5949 */;
@@ -13,15 +13,15 @@ import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11983 *
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11984 */;
 import VoicePanelPIPHandoff from "VoicePanelPIPHandoff" /* 11993 */;
 import VoicePanelPIPStateContext from "VoicePanelPIPStateContext" /* 11995 */;
-import EmbeddedActivitiesActionCreatorsAll from "EmbeddedActivitiesActionCreators" /* 12741 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 12743 */;
+import EmbeddedActivitiesActionCreatorsAll from "EmbeddedActivitiesActionCreators" /* 12743 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 12745 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5154 */;
 import FramesStore from "FramesStore" /* 7019 */;
 import VoicePanelStore from "VoicePanelStore" /* 6891 */;
 import VoicePanelConstants from "VoicePanelConstants" /* 11985 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19912 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19914 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
@@ -538,7 +538,7 @@ class VoicePanelPIPTiles {
         constructor(arg0) {
           closure_0 = arg0;
           allTouches = arg0.allTouches;
-          found = allTouches.filter(function() { /* body not rendered: F146843 */ });
+          found = allTouches.filter(function() { /* body not rendered: F146853 */ });
           if (0 !== found.length) {
             tmp4 = closure_2;
             tmp5 = closure_2(found);

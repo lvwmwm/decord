@@ -1,16 +1,16 @@
-// Module ID: 18860
-// Function ID: 18861
+// Module ID: 18862
+// Function ID: 18863
 // Name: FavoritesGuildCleanupModal
-// Dependencies: [19, 17, 5168, 21, 5306, 575, 6838, 1630, 18861, 6327, 7745, 1113, 3679, 7747, 5919, 5926, 7493, 12523, 2]
+// Dependencies: [19, 17, 5168, 21, 5306, 575, 6838, 1630, 18863, 6327, 7745, 1113, 3679, 7747, 5919, 5926, 7493, 12525, 2]
 // Exports: default
 
-// Module 18860 (FavoritesGuildCleanupModal)
+// Module 18862 (FavoritesGuildCleanupModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef3679 from "module_3679" /* 3679 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import TableRadioRow7 from "TableRadioRow" /* 7747 */;
-import Modal from "Modal" /* 12523 */;
+import Modal from "Modal" /* 12525 */;
 import react from "react" /* 19 */;
 import FavoritesConstants from "FavoritesConstants" /* 5168 */;
 import Fragment from "Fragment" /* 21 */;
@@ -62,7 +62,7 @@ function CleanupScreen() {
   let tmp = loading;
   const tmp2 = dependencyMap;
   const tmp3 = closure_14(loading(1630)().bottom);
-  const tmp4 = loading(18861)(closeCleanup);
+  const tmp4 = loading(18863)(closeCleanup);
   _require = tmp4;
   loading = tmp4.loading;
   let obj = { style: tmp3.container, spacing: 0, children: items4 };

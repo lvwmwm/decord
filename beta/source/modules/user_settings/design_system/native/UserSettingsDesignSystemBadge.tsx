@@ -1,10 +1,10 @@
-// Module ID: 18457
-// Function ID: 18458
+// Module ID: 18459
+// Function ID: 18460
 // Name: UserSettingsDesignSystemBadge
 // Dependencies: [32, 19, 17, 21, 5306, 575, 8092, 9521, 10119, 10121, 10123, 10125, 10183, 6327, 5919, 7459, 7745, 7747, 7619, 7954, 7445, 1187, 2]
 // Exports: default
 
-// Module 18457 (UserSettingsDesignSystemBadge)
+// Module 18459 (UserSettingsDesignSystemBadge)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import Text_Text from "Text/Text" /* 5919 */;

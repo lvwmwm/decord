@@ -1,39 +1,25 @@
 // Module ID: 13913
 // Function ID: 13914
-// Dependencies: [13914, 13921, 13927, 13872]
+// Dependencies: []
 
 // Module 13913
-import _mod13872 from "module_13872" /* 13872 */;
-import _mod13914 from "module_13914" /* 13914 */;
-import _mod13921 from "module_13921" /* 13921 */;
-import _mod13927 from "module_13927" /* 13927 */;
-
+let items;
 let obj2;
-const obj = { parseContext: obj2, scope: _mod13914, atrule: _mod13921, pseudo: _mod13927, node: _mod13872 };
-obj2 = {
-  default: "StyleSheet",
-  stylesheet: "StyleSheet",
-  atrule: "Atrule",
-  atrulePrelude(atrule) {
-    let StringResult = null;
-    const AtrulePrelude = this.AtrulePrelude;
-    if (atrule.atrule) {
-      const _String = String;
-      StringResult = String(atrule.atrule);
-    }
-    return AtrulePrelude(StringResult);
+const obj = {
+  name: "Value",
+  structure: obj2,
+  parse() {
+    let sequence;
+    const tokenStart = this.scanner.tokenStart;
+    const element = { type: "Value", loc: this.getLocation(tokenStart, this.scanner.tokenStart), children: sequence };
+    sequence = this.readSequence(this.scope.Value);
+    return element;
   },
-  mediaQueryList: "MediaQueryList",
-  mediaQuery: "MediaQuery",
-  rule: "Rule",
-  selectorList: "SelectorList",
-  selector: "Selector",
-  block() {
-    return this.Block(true);
-  },
-  declarationList: "DeclarationList",
-  declaration: "Declaration",
-  value: "Value"
+  generate(arg0) {
+    this.children(arg0);
+  }
 };
+obj2 = { children: items };
+items = [[]];
 
 export default obj;

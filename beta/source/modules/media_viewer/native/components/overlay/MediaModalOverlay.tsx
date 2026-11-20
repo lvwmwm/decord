@@ -1,10 +1,10 @@
-// Module ID: 15197
-// Function ID: 15198
+// Module ID: 15199
+// Function ID: 15200
 // Name: MediaModalOverlay
-// Dependencies: [32, 19, 17, 21, 5306, 575, 7415, 8451, 1113, 15198, 13054, 15199, 15200, 15201, 8631, 10188, 1380, 5896, 15202, 10195, 15204, 1655, 15208, 8630, 15209, 15210, 15203, 8628, 8633, 2]
+// Dependencies: [32, 19, 17, 21, 5306, 575, 7415, 8451, 1113, 15200, 13056, 15201, 15202, 15203, 8631, 10188, 1380, 5896, 15204, 10195, 15206, 1655, 15210, 8630, 15211, 15212, 15205, 8628, 8633, 2]
 // Exports: default
 
-// Module 15197 (MediaModalOverlay)
+// Module 15199 (MediaModalOverlay)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
@@ -18,9 +18,9 @@ import MediaPlayerMuteManager from "MediaPlayerMuteManager" /* 8631 */;
 import MediaSourceUtil from "MediaSourceUtil" /* 8633 */;
 import useMediaModalFooterAction from "useMediaModalFooterAction" /* 10188 */;
 import MediaViewerDimensionsContext from "MediaViewerDimensionsContext" /* 10195 */;
-import useOverlayLayoutDriver from "useOverlayLayoutDriver" /* 15201 */;
-import MediaViewerThumbnailsDefault from "MediaViewerThumbnails" /* 15202 */;
-import MediaModalOverlayHeader from "MediaModalOverlayHeader" /* 15204 */;
+import useOverlayLayoutDriver from "useOverlayLayoutDriver" /* 15203 */;
+import MediaViewerThumbnailsDefault from "MediaViewerThumbnails" /* 15204 */;
+import MediaModalOverlayHeader from "MediaModalOverlayHeader" /* 15206 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -35,7 +35,7 @@ let obj2;
 let obj3;
 let rect;
 let tmp23;
-const MediaModalOverlayAltTextDefault = tmp23(15208);
+const MediaModalOverlayAltTextDefault = tmp23(15210);
 function OverlayMuteButton(isMuted) {
   let stringResult;
   isMuted = isMuted.isMuted;
@@ -51,7 +51,7 @@ function OverlayMuteButton(isMuted) {
   } else {
     stringResult = string(t.w4m945);
   }
-  const obj = { accessibilityRole: "button", accessibilityLabel: stringResult, source: importDefault(isMuted ? 15198 : 13054), color: nativeDefault.unsafe_rawColors.WHITE, onPress: onToggleMute, style: tmp.overlayButton, iconStyle: tmp.overlayButtonIcon };
+  const obj = { accessibilityRole: "button", accessibilityLabel: stringResult, source: importDefault(isMuted ? 15200 : 13056), color: nativeDefault.unsafe_rawColors.WHITE, onPress: onToggleMute, style: tmp.overlayButton, iconStyle: tmp.overlayButtonIcon };
   const rect = { left: true, right: true, children: tmp2(tmp5, obj) };
   return metroImportDefault(SafeAreaPaddingView, rect);
 }
@@ -62,7 +62,7 @@ function OverlayObscureToggleButton(arg0) {
   ({ spoilerActive, onToggleObscure } = arg0);
   const tmp = closure_10();
   const SafeAreaPaddingView = common_SafeAreaView.SafeAreaPaddingView;
-  const obj = { accessibilityRole: "button", accessibilityLabel: intl.string(intl2.t.UIsxUw), source: importDefault(spoilerActive ? 15199 : 15200), color: nativeDefault.unsafe_rawColors.WHITE, onPress: onToggleObscure, style: null, iconStyle: null };
+  const obj = { accessibilityRole: "button", accessibilityLabel: intl.string(intl2.t.UIsxUw), source: importDefault(spoilerActive ? 15201 : 15202), color: nativeDefault.unsafe_rawColors.WHITE, onPress: onToggleObscure, style: null, iconStyle: null };
   const tmp5 = TouchableHitBoxDefault;
   intl = intl2.intl;
   const rect = { left: true, right: true, children: metroImportDefault(tmp5, obj) };
@@ -76,7 +76,7 @@ function MediaModalOverlay(getVideoControls) {
   ({ source, index } = getVideoControls);
   const videoControls = getVideoControls.getVideoControls(index, source);
   const tmp2 = videoControls(8630)(index, source, videoControls);
-  let obj = index(15203);
+  let obj = index(15205);
   const items = [index];
   const first = _slicedToArray(obj.useMediaItemSpoilerState(index), 1)[0];
   const items1 = [videoControls];
@@ -204,14 +204,14 @@ let closure_13 = react.memo(function MediaModalOverlayMemo(arg0) {
   items3[1] = tmp20Result;
   if (null != mediaModalFooterActionStore) {
     const obj13 = { footerAction: mediaModalFooterActionStore, sliderElement: slider, syncer };
-    tmp22Result5 = tmp22(tmp2(15209).MediaModalOverlayFooterAction, obj13);
+    tmp22Result5 = tmp22(tmp2(15211).MediaModalOverlayFooterAction, obj13);
   } else if (disableMediaOverlayFooter) {
     const obj14 = { bottom: true, style: tmp.invisibleFooter };
     tmp22Result5 = tmp22(tmp2(7415).SafeAreaPaddingView, obj14);
   } else if (height >= 600) {
     const obj15 = { sliderElement: slider, syncer, guildId: null, channelId: null, messageId: null, onClose, onFullViewToggled: tmp8, overlayEnabled, entranceAnimationDriver };
     ({ guildId: obj16.guildId, channelId: obj16.channelId, messageId: obj16.messageId } = source);
-    tmp22Result5 = tmp22(tmp2(15210).MediaModalOverlayFooter, obj15);
+    tmp22Result5 = tmp22(tmp2(15212).MediaModalOverlayFooter, obj15);
   }
   const obj17 = { children: items1 };
   items3[2] = tmp22Result5;

@@ -1,10 +1,10 @@
-// Module ID: 12741
-// Function ID: 12742
+// Module ID: 12743
+// Function ID: 12744
 // Name: EmbeddedActivitiesActionCreators
-// Dependencies: [32, 5, 11406, 2165, 7016, 6853, 502, 5155, 5177, 5238, 1388, 5971, 5154, 2145, 1072, 1365, 5152, 12742, 8852, 12743, 12754, 12755, 12759, 12760, 572, 7341, 7342, 12761, 7346, 6748, 6370, 2151, 5967, 7864, 12762, 2119, 12763, 12769, 11397, 1256, 12770, 12778, 6828, 12779, 6258, 1113, 5970, 12780, 1264, 6841, 5227, 7025, 6056, 1285, 7660, 7665, 8660, 8134, 8786, 5140, 5139, 2]
+// Dependencies: [32, 5, 11406, 2165, 7016, 6853, 502, 5155, 5177, 5238, 1388, 5971, 5154, 2145, 1072, 1365, 5152, 12744, 8852, 12745, 12756, 12757, 12761, 12762, 572, 7341, 7342, 12763, 7346, 6748, 6370, 2151, 5967, 7864, 12764, 2119, 12765, 12771, 11397, 1256, 12772, 12780, 6828, 12781, 6258, 1113, 5970, 12782, 1264, 6841, 5227, 7025, 6056, 1285, 7660, 7665, 8660, 8134, 8786, 5140, 5139, 2]
 // Exports: consumeRequestToReactToSeriousThermalState, dismissNewActivityIndicator, disregardSeriousThermalState, maybeDisconnectFromCurrentActivity, refreshProxyTicket, requestRespondToSeriousThermalState, runPrimaryAppCommandOrJoinEmbeddedActivity, sendEmbeddedActivityInvite, sendEmbeddedActivityInviteUser, updateActivityPanelMode, updateActivityPopoutWindowLayout, updateFocusedActivityLayout, uploadImageAttachment, validateTestMode
 
-// Module 12741 (EmbeddedActivitiesActionCreators)
+// Module 12743 (EmbeddedActivitiesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import HTTPUtils from "HTTPUtils" /* 1285 */;
 import ApplicationConstants from "ApplicationConstants" /* 1365 */;

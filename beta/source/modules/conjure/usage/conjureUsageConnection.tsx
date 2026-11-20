@@ -1,9 +1,9 @@
-// Module ID: 15981
-// Function ID: 15982
+// Module ID: 15983
+// Function ID: 15984
 // Name: conjureUsageConnection
 // Dependencies: [572, 2]
 
-// Module 15981 (conjureUsageConnection)
+// Module 15983 (conjureUsageConnection)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 

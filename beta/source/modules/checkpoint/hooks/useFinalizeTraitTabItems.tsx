@@ -1,13 +1,13 @@
-// Module ID: 14546
-// Function ID: 14547
+// Module ID: 14548
+// Function ID: 14549
 // Name: useFinalizeTraitTabItems
-// Dependencies: [19, 14253, 6734, 504, 6412, 6411, 2]
+// Dependencies: [19, 14255, 6734, 504, 6412, 6411, 2]
 // Exports: default
 
-// Module 14546 (useFinalizeTraitTabItems)
+// Module 14548 (useFinalizeTraitTabItems)
 import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6734 */;
 import react from "react" /* 19 */;
-import CheckpointStore from "CheckpointStore" /* 14253 */;
+import CheckpointStore from "CheckpointStore" /* 14255 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,10 +1,10 @@
-// Module ID: 14640
-// Function ID: 14641
+// Module ID: 14642
+// Function ID: 14643
 // Name: application_commands/ApplicationCommandUtils
-// Dependencies: [8725, 8872, 6335, 1414, 14641, 14642, 5975, 2109, 11633, 11153, 2]
+// Dependencies: [8725, 8872, 6335, 1414, 14643, 14644, 5975, 2109, 11633, 11153, 2]
 // Exports: getApplicationCommandsIconSource, openCommandAttachmentPreview
 
-// Module 14640 (application_commands/ApplicationCommandUtils)
+// Module 14642 (application_commands/ApplicationCommandUtils)
 import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
 import AssetRegistryDefault from "AssetRegistry" /* 2109 */;
 import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5975 */;
@@ -12,8 +12,8 @@ import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6335 */
 import DraftStore from "DraftStore" /* 8725 */;
 import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 11153 */;
 import showUploadPreviewActionSheetDefault from "showUploadPreviewActionSheet" /* 11633 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14641 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 14642 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14643 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 14644 */;
 import UploadAttachmentStore from "UploadAttachmentStore" /* 8872 */;
 import size from "module_2" /* 2 */;
 

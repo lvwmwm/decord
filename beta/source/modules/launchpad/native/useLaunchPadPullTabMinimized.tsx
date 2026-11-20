@@ -1,10 +1,10 @@
-// Module ID: 19868
-// Function ID: 19869
+// Module ID: 19870
+// Function ID: 19871
 // Name: useLaunchPadPullTabMinimized
 // Dependencies: [19, 17, 1655, 11950, 2]
 // Exports: default
 
-// Module 19868 (useLaunchPadPullTabMinimized)
+// Module 19870 (useLaunchPadPullTabMinimized)
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;

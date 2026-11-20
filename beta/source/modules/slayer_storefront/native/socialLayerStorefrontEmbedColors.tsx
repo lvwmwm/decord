@@ -1,9 +1,9 @@
-// Module ID: 15578
-// Function ID: 15579
+// Module ID: 15580
+// Function ID: 15581
 // Name: socialLayerStorefrontEmbedColors
 // Dependencies: [5306, 575, 2]
 
-// Module 15578 (socialLayerStorefrontEmbedColors)
+// Module 15580 (socialLayerStorefrontEmbedColors)
 import nativeDefault from "native" /* 575 */;
 import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;

@@ -1,13 +1,13 @@
-// Module ID: 14854
-// Function ID: 14855
+// Module ID: 14856
+// Function ID: 14857
 // Name: useVoicePanelDockLevelProps
-// Dependencies: [19, 5155, 2133, 5209, 6931, 14855, 1072, 14573, 504, 13046, 13022, 2]
+// Dependencies: [19, 5155, 2133, 5209, 6931, 14857, 1072, 14575, 504, 13048, 13024, 2]
 // Exports: useVoicePanelDockGlowLevelProps, useVoicePanelDockSpeakerLevelProps
 
-// Module 14854 (useVoicePanelDockLevelProps)
+// Module 14856 (useVoicePanelDockLevelProps)
 import Constants from "Constants" /* 1072 */;
 import MediaEngineStore2 from "MediaEngineStore" /* 2133 */;
-import VoicePanelDockSlotStore from "VoicePanelDockSlotStore" /* 14855 */;
+import VoicePanelDockSlotStore from "VoicePanelDockSlotStore" /* 14857 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
@@ -33,13 +33,13 @@ export function useVoicePanelDockGlowLevelProps() {
   let voiceChannelId;
   let obj = react;
   const context = react.useContext(closure_9);
-  const obj2 = num2(14573);
+  const obj2 = num2(14575);
   const shouldAnimateSpeakerLevels = obj2.useShouldAnimateSpeakerLevels("VoicePanelDock");
   const items = [SelectedChannelStore, ChannelStore];
   const obj3 = num2(504);
   const stateFromStores = obj3.useStateFromStores(items, () => channel.getChannel(voiceChannelId.getVoiceChannelId()));
-  const obj4 = num2(13046);
-  const mute = obj4.createMuteHandler(floorDb(13022)(stateFromStores)).mute;
+  const obj4 = num2(13048);
+  const mute = obj4.createMuteHandler(floorDb(13024)(stateFromStores)).mute;
   const items1 = [MediaEngineStore, SpeakingStore];
   const obj5 = num2(504);
   const stateFromStoresObject = obj5.useStateFromStoresObject(items1, () => {

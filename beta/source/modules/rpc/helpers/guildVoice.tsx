@@ -1,10 +1,10 @@
-// Module ID: 16918
-// Function ID: 16919
+// Module ID: 16920
+// Function ID: 16921
 // Name: guildVoice
 // Dependencies: [5155, 5177, 5238, 6751, 1072, 7307, 7303, 2]
 // Exports: getGuildVoiceChannel, isGuildVoiceSocket
 
-// Module 16918 (guildVoice)
+// Module 16920 (guildVoice)
 import Constants2 from "Constants" /* 6751 */;
 import RPCErrorDefault from "RPCError" /* 7303 */;
 import OAuth2Scopes from "OAuth2Scopes" /* 7307 */;

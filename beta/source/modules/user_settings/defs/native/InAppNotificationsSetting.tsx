@@ -1,9 +1,9 @@
-// Module ID: 18112
-// Function ID: 18113
+// Module ID: 18114
+// Function ID: 18115
 // Name: InAppNotificationsSetting
-// Dependencies: [9202, 1072, 5131, 11021, 1113, 3029, 1256, 12406, 16902, 18113, 2]
+// Dependencies: [9202, 1072, 5131, 11021, 1113, 3029, 1256, 12408, 16904, 18115, 2]
 
-// Module 18112 (InAppNotificationsSetting)
+// Module 18114 (InAppNotificationsSetting)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
@@ -11,9 +11,9 @@ import _modDef3029 from "module_3029" /* 3029 */;
 import UserSettings from "UserSettings" /* 5131 */;
 import SettingsConstants from "SettingsConstants" /* 9202 */;
 import FocusModeUtils from "FocusModeUtils" /* 11021 */;
-import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 16902 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 18113 */;
-import SettingBuilders_mod from "SettingBuilders" /* 12406 */;
+import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 16904 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 18115 */;
+import SettingBuilders_mod from "SettingBuilders" /* 12408 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

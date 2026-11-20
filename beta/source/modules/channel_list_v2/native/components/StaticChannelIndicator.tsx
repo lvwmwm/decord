@@ -1,10 +1,10 @@
-// Module ID: 14790
-// Function ID: 14791
+// Module ID: 14792
+// Function ID: 14793
 // Name: StaticChannelIndicator
 // Dependencies: [17, 6949, 21, 5306, 575, 5892, 2]
 // Exports: default
 
-// Module 14790 (StaticChannelIndicator)
+// Module 14792 (StaticChannelIndicator)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import useToken from "useToken" /* 5892 */;

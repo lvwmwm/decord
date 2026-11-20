@@ -1,10 +1,10 @@
-// Module ID: 13310
-// Function ID: 13311
+// Module ID: 13312
+// Function ID: 13313
 // Name: conjureProjectActions
-// Dependencies: [5, 7365, 7377, 7017, 5162, 13311, 6004, 6264, 1113, 4131, 7943, 6346, 6005, 6023, 13206, 13312, 13207, 7329, 10996, 10994, 7332, 10976, 6025, 13317, 6019, 11629, 10569, 13189, 10939, 12295, 13319, 10553, 13320, 7633, 13321, 6030, 2]
+// Dependencies: [5, 7365, 7377, 7017, 5162, 13313, 6004, 6264, 1113, 4131, 7943, 6346, 6005, 6023, 13208, 13314, 13209, 7329, 10996, 10994, 7332, 10976, 6025, 13319, 6019, 11629, 10569, 13191, 10939, 12295, 13321, 10553, 13322, 7633, 13323, 6030, 2]
 // Exports: canUnpublishConjureUserApp, conjureProjectActions, copyConjureProjectId, copyConjureProjectLink, exportConjureProject, importConjureProject, openConjureAddToAnotherServerSheet
 
-// Module 13310 (conjureProjectActions)
+// Module 13312 (conjureProjectActions)
 import intl13 from "intl" /* 1113 */;
 import _modDef4131 from "module_4131" /* 4131 */;
 import ChannelConstants from "ChannelConstants" /* 5162 */;
@@ -15,11 +15,11 @@ import ChannelUtils from "ChannelUtils" /* 6346 */;
 import ConjureActionCreators from "ConjureActionCreators" /* 7329 */;
 import conjureProjectMute from "conjureProjectMute" /* 7332 */;
 import ClipboardUtils from "ClipboardUtils" /* 7943 */;
-import conjureRemoveApp from "conjureRemoveApp" /* 13206 */;
-import openConjureRemoveAppAlertDefault from "openConjureRemoveAppAlert" /* 13207 */;
-import showConjureShareToServerSheetDefault from "showConjureShareToServerSheet" /* 13312 */;
-import openConjureMakePersonalAlertDefault from "openConjureMakePersonalAlert" /* 13320 */;
-import openConjureUnpublishUserAppAlertDefault from "openConjureUnpublishUserAppAlert" /* 13321 */;
+import conjureRemoveApp from "conjureRemoveApp" /* 13208 */;
+import openConjureRemoveAppAlertDefault from "openConjureRemoveAppAlert" /* 13209 */;
+import showConjureShareToServerSheetDefault from "showConjureShareToServerSheet" /* 13314 */;
+import openConjureMakePersonalAlertDefault from "openConjureMakePersonalAlert" /* 13322 */;
+import openConjureUnpublishUserAppAlertDefault from "openConjureUnpublishUserAppAlert" /* 13323 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ConjureConnectionStore from "ConjureConnectionStore" /* 7365 */;
 import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 7377 */;

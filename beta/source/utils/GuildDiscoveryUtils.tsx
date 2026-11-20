@@ -243,11 +243,11 @@ obj = function _fetchPublicDiscoveryGuild() {
         const uRL = new URL(body.seo.canonical_url);
         const pathname = uRL.pathname;
         slug = pathname.slice(9);
-        const obj7 = { guild: body.data.guild, slug };
+        obj = { guild: body.data.guild, slug };
         let c3 = 0;
         let c4 = 3;
-        obj = { value: obj7, done: true };
-        return obj;
+        const obj7 = { value: obj, done: true };
+        return obj7;
       }
     }
     return null;

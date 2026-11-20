@@ -1,10 +1,10 @@
-// Module ID: 18837
-// Function ID: 18838
+// Module ID: 18839
+// Function ID: 18840
 // Name: ThreadLongPressActionSheet
 // Dependencies: [19, 5155, 5177, 7015, 5971, 5240, 1072, 21, 10989, 1113, 10990, 10992, 7635, 7874, 10975, 6017, 8864, 10981, 9102, 6032, 10866, 11149, 8092, 10901, 10919, 6019, 10983, 10994, 5542, 11081, 2121, 10996, 10997, 11894, 504, 7287, 12, 9117, 5944, 5131, 11897, 7720, 1187, 7951, 11898, 7953, 11629, 7943, 6004, 2]
 // Exports: default
 
-// Module 18837 (ThreadLongPressActionSheet)
+// Module 18839 (ThreadLongPressActionSheet)
 import _modDef12 from "module_12" /* 12 */;
 import ToastUtils from "ToastUtils" /* 6004 */;
 import ClipboardUtils from "ClipboardUtils" /* 7943 */;

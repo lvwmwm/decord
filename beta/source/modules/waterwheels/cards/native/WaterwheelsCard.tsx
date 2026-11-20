@@ -1,21 +1,21 @@
-// Module ID: 19009
-// Function ID: 19010
+// Module ID: 19011
+// Function ID: 19012
 // Name: WaterwheelsCard
-// Dependencies: [19, 17, 7085, 14825, 1072, 6892, 21, 5306, 575, 10225, 504, 19010, 6010, 5919, 19011, 5926, 7723, 1113, 7963, 2]
+// Dependencies: [19, 17, 7085, 14827, 1072, 6892, 21, 5306, 575, 10225, 504, 19012, 6010, 5919, 19013, 5926, 7723, 1113, 7963, 2]
 // Exports: WaterwheelsCard, useWaterwheelsCardEligible
 
-// Module 19009 (WaterwheelsCard)
+// Module 19011 (WaterwheelsCard)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import Text_Text from "Text/Text" /* 5919 */;
 import FastImageDefault from "FastImage" /* 6010 */;
 import NativePermissionConstants from "NativePermissionConstants" /* 6892 */;
 import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 10225 */;
-import entry_data_ErrorBoundary from "entry_data/ErrorBoundary" /* 19010 */;
+import entry_data_ErrorBoundary from "entry_data/ErrorBoundary" /* 19012 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ConnectedAccountsStore from "ConnectedAccountsStore" /* 7085 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 14825 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 14827 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
@@ -162,7 +162,7 @@ function WaterwheelsCardContent(card) {
         type = action.type;
       }
       if (type === tmp2(10225).WaterwheelsActionType.OPEN_CONNECTION) {
-        const obj12 = { style: tmp.card, children: closure_10(onAction(19011), obj13) };
+        const obj12 = { style: tmp.card, children: closure_10(onAction(19013), obj13) };
         obj13 = { post: layout, action, onAction: handleAction };
         tmp25Result = closure_10(closure_5, obj12);
       } else {

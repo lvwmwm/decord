@@ -1,18 +1,18 @@
-// Module ID: 13302
-// Function ID: 13303
+// Module ID: 13304
+// Function ID: 13305
 // Name: ConjureChatMoreSheet
-// Dependencies: [19, 5177, 5238, 1388, 13303, 21, 5542, 7954, 7455, 7443, 7332, 13142, 13206, 504, 1452, 13189, 13305, 7951, 1113, 4131, 7746, 2]
+// Dependencies: [19, 5177, 5238, 1388, 13305, 21, 5542, 7954, 7455, 7443, 7332, 13144, 13208, 504, 1452, 13191, 13307, 7951, 1113, 4131, 7746, 2]
 // Exports: default
 
-// Module 13302 (ConjureChatMoreSheet)
+// Module 13304 (ConjureChatMoreSheet)
 import Fragment from "Fragment" /* 21 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
-import useConjureShareToServer from "useConjureShareToServer" /* 13189 */;
+import useConjureShareToServer from "useConjureShareToServer" /* 13191 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 5177 */;
 import PermissionStore from "PermissionStore" /* 5238 */;
 import UserStore from "UserStore" /* 1388 */;
-import conjureDesignFeedbackStore from "conjureDesignFeedbackStore" /* 13303 */;
+import conjureDesignFeedbackStore from "conjureDesignFeedbackStore" /* 13305 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;

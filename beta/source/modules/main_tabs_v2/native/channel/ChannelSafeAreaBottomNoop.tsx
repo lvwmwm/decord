@@ -1,9 +1,9 @@
-// Module ID: 14966
-// Function ID: 14967
+// Module ID: 14968
+// Function ID: 14969
 // Name: ChannelSafeAreaBottomNoop
 // Dependencies: [19, 17, 21, 2]
 
-// Module 14966 (ChannelSafeAreaBottomNoop)
+// Module 14968 (ChannelSafeAreaBottomNoop)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;

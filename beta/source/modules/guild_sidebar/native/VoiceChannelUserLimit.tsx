@@ -1,14 +1,14 @@
-// Module ID: 18842
-// Function ID: 18843
+// Module ID: 18844
+// Function ID: 18845
 // Name: VoiceChannelUserLimit
-// Dependencies: [19, 17, 21, 5306, 575, 1187, 16098, 5919, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 1187, 16100, 5919, 2]
 
-// Module 18842 (VoiceChannelUserLimit)
+// Module 18844 (VoiceChannelUserLimit)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import Text_Text from "Text/Text" /* 5919 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16098 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16100 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;

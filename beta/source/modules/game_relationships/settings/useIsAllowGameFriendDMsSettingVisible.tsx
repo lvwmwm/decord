@@ -1,10 +1,10 @@
-// Module ID: 18584
-// Function ID: 18585
+// Module ID: 18586
+// Function ID: 18587
 // Name: useIsAllowGameFriendDMsSettingVisible
 // Dependencies: [8765, 504, 2]
 // Exports: useIsAllowGameFriendDMsSettingVisible
 
-// Module 18584 (useIsAllowGameFriendDMsSettingVisible)
+// Module 18586 (useIsAllowGameFriendDMsSettingVisible)
 import get_initialized from "get initialized" /* 504 */;
 import GameRelationshipStore from "GameRelationshipStore" /* 8765 */;
 import size from "module_2" /* 2 */;

@@ -1,15 +1,15 @@
-// Module ID: 18582
-// Function ID: 18583
+// Module ID: 18584
+// Function ID: 18585
 // Name: ConnectedGamesRouteSetting
-// Dependencies: [9202, 1072, 12406, 1113, 6008, 18563, 2]
+// Dependencies: [9202, 1072, 12408, 1113, 6008, 18565, 2]
 
-// Module 18582 (ConnectedGamesRouteSetting)
+// Module 18584 (ConnectedGamesRouteSetting)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import FriendsIcon from "FriendsIcon" /* 6008 */;
 import SettingsConstants from "SettingsConstants" /* 9202 */;
-import ContentAndSocialScreen from "ContentAndSocialScreen" /* 18563 */;
-import SettingBuilders from "SettingBuilders" /* 12406 */;
+import ContentAndSocialScreen from "ContentAndSocialScreen" /* 18565 */;
+import SettingBuilders from "SettingBuilders" /* 12408 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

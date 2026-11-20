@@ -1,10 +1,10 @@
-// Module ID: 13571
-// Function ID: 13572
+// Module ID: 13573
+// Function ID: 13574
 // Name: ConjureClarification
-// Dependencies: [5155, 5248, 1388, 1072, 1113, 4131, 5944, 13572, 2]
+// Dependencies: [5155, 5248, 1388, 1072, 1113, 4131, 5944, 13574, 2]
 // Exports: clarificationAnswerAttachments, clarificationAnswersPayload, clarificationChannelEntities, clarificationChannelType, clarificationDraftAnswer, clarificationDraftPlaceholder, clarificationEntities, clarificationPickerPlaceholder, clarificationShowsOtherAnswer, entityAnswer, followingClarificationStep, formatClarificationAnswers, isClarificationComplete, isTypedClarificationQuestion, liveClarification, nextClarificationStep, skippedClarificationAnswers, submitClarificationAnswers, toggleClarificationOption, uploadNoteAnswer
 
-// Module 13571 (ConjureClarification)
+// Module 13573 (ConjureClarification)
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import _modDef4131 from "module_4131" /* 4131 */;
@@ -21,7 +21,7 @@ let items1;
 let items2;
 let items3;
 let items4;
-const f107870 = (answer) => {
+const f107876 = (answer) => {
   let tmp = null != answer.answer;
   if (tmp) {
     const str = answer.answer.text;
@@ -29,7 +29,7 @@ const f107870 = (answer) => {
   }
   return tmp;
 };
-const f107871 = (answer) => {
+const f107877 = (answer) => {
   const sum = answer.index + 1;
   const str = answer.answer.text;
   return "" + sum + ". " + answer.question.question + " \u2192 " + str.trim();
@@ -272,8 +272,8 @@ export function skippedClarificationAnswers(clarification, arg1, bound) {
     } else {
       const questions1 = clarification.questions;
       const mapped = questions1.map((question, index) => ({ question, index, answer: closure_0[question.id] }));
-      const found = mapped.filter(f107870);
-      const mapped1 = found.map(f107871);
+      const found = mapped.filter(f107876);
+      const mapped1 = found.map(f107877);
       tmp10 = null;
     }
     return tmp10;
@@ -283,8 +283,8 @@ export function formatClarificationAnswers(questions, arg1) {
   let closure_0 = arg1;
   questions = questions.questions;
   const mapped = questions.map((question, index) => ({ question, index, answer: closure_0[question.id] }));
-  const found = mapped.filter(f107870);
-  const mapped1 = found.map(f107871);
+  const found = mapped.filter(f107876);
+  const mapped1 = found.map(f107877);
   return mapped1.join("\n");
 }
 export function toggleClarificationOption(options, arr, id) {
@@ -381,7 +381,7 @@ export function clarificationEntities(project, items, arg2, arg3) {
     let tmp;
     let closure_0 = id;
     obj = { id, name: tmp };
-    tmp = f107882(id);
+    tmp = f107888(id);
     if (tmp == null) {
       const found = closure_2.find((id) => id.id === closure_0);
       let name;
@@ -438,7 +438,7 @@ export function clarificationChannelEntities(stateFromStores1, arg1) {
   let closure_0 = stateFromStores1;
   const items = [stateFromStores1.id];
   let channel = "channel";
-  const f107882 = () => {
+  const f107888 = () => {
     obj = channel(dependencyMap[6]);
     return obj.computeChannelName(channel, user, RelationshipStore);
   };
@@ -449,7 +449,7 @@ export function clarificationChannelEntities(stateFromStores1, arg1) {
     let tmp;
     let closure_0 = id;
     obj = { id, name: tmp };
-    tmp = f107882(id);
+    tmp = f107888(id);
     if (tmp == null) {
       const found = closure_2.find((id) => id.id === closure_0);
       let name;
@@ -658,8 +658,8 @@ export function submitClarificationAnswers(projectId, clarification, arg2, build
   _require = arg2;
   let questions = clarification.questions;
   const mapped = questions.map((question, index) => ({ question, index, answer: closure_0[question.id] }));
-  const found = mapped.filter(f107870);
-  const mapped1 = found.map(f107871);
+  const found = mapped.filter(f107876);
+  const mapped1 = found.map(f107877);
   const joined = mapped1.join("\n");
   if ("" !== joined) {
     let tmp2 = projectId;

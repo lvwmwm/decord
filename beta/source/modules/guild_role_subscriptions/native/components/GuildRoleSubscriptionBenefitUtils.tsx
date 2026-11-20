@@ -1,10 +1,10 @@
-// Module ID: 17863
-// Function ID: 17864
+// Module ID: 17865
+// Function ID: 17866
 // Name: GuildRoleSubscriptionBenefitUtils
 // Dependencies: [19, 21, 5252, 8033, 8078, 2]
 // Exports: getBenefitEmojiId, getChannelIconComponentOrDefault, renderChannelIcon
 
-// Module 17863 (GuildRoleSubscriptionBenefitUtils)
+// Module 17865 (GuildRoleSubscriptionBenefitUtils)
 import Fragment from "Fragment" /* 21 */;
 import UnicodeEmojisDefault from "UnicodeEmojis" /* 5252 */;
 import utils_ChannelUtils from "utils/ChannelUtils" /* 8033 */;

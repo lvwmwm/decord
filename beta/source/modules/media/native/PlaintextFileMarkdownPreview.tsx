@@ -1,16 +1,16 @@
-// Module ID: 12514
-// Function ID: 12515
+// Module ID: 12516
+// Function ID: 12517
 // Name: PlaintextFileMarkdownPreview
-// Dependencies: [32, 19, 17, 1083, 21, 5306, 575, 5919, 7653, 6002, 12504, 1380, 12515, 2]
+// Dependencies: [32, 19, 17, 1083, 21, 5306, 575, 5919, 7653, 6002, 12506, 1380, 12517, 2]
 // Exports: default
 
-// Module 12514 (PlaintextFileMarkdownPreview)
+// Module 12516 (PlaintextFileMarkdownPreview)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import Text_Text from "Text/Text" /* 5919 */;
 import MaskedLinkUtils from "MaskedLinkUtils" /* 7653 */;
-import showLongPressURLActionSheetDefault from "showLongPressURLActionSheet" /* 12504 */;
-import PlaintextFileMarkdownParser from "PlaintextFileMarkdownParser" /* 12515 */;
+import showLongPressURLActionSheetDefault from "showLongPressURLActionSheet" /* 12506 */;
+import PlaintextFileMarkdownParser from "PlaintextFileMarkdownParser" /* 12517 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -36,7 +36,7 @@ let obj6;
 let obj7;
 let obj8;
 let obj9;
-const f105400 = (type) => {
+const f105406 = (type) => {
   let tmp = typeof type !== "string";
   if (typeof type !== "string") {
     let tmp3 = "link" === type.type;
@@ -44,7 +44,7 @@ const f105400 = (type) => {
       let someResult = "element" === type.type;
       if (someResult) {
         const children = type.children;
-        someResult = children.some(f105400);
+        someResult = children.some(f105406);
       }
       tmp3 = someResult;
     }
@@ -52,7 +52,7 @@ const f105400 = (type) => {
   }
   return tmp;
 };
-const f105401 = (type, index) => {
+const f105407 = (type, index) => {
   let children;
   let children1;
   let children2;
@@ -67,24 +67,24 @@ const f105401 = (type, index) => {
       if ("strong" === tag) {
         const obj2 = { variant: obj3.strongVariant };
         const merged = Object.assign(tmp);
-        obj3 = { variant: obj2.variant, color: "none", children: children.map(f105401) };
+        obj3 = { variant: obj2.variant, color: "none", children: children.map(f105407) };
         children = type.children;
         const Text3 = Text_Text.Text;
         tmp10 = metroImportDefault(Text3, obj3, index);
       } else if ("em" === tag) {
-        const obj4 = { variant: obj3.variant, color: "none", style: styles.italic, children: children1.map(f105401) };
+        const obj4 = { variant: obj3.variant, color: "none", style: styles.italic, children: children1.map(f105407) };
         children1 = type.children;
         let closure_0 = tmp;
         const Text2 = Text_Text.Text;
         tmp10 = metroImportDefault(Text2, obj4, index);
       } else if ("s" === tag) {
-        const obj5 = { variant: obj3.variant, color: "none", style: styles.strikethrough, children: children2.map(f105401) };
+        const obj5 = { variant: obj3.variant, color: "none", style: styles.strikethrough, children: children2.map(f105407) };
         children2 = type.children;
         closure_0 = tmp;
         const Text = Text_Text.Text;
         tmp10 = metroImportDefault(Text, obj5, index);
       } else {
-        const obj6 = { children: children3.map(f105401) };
+        const obj6 = { children: children3.map(f105407) };
         children3 = type.children;
         closure_0 = tmp;
         const Fragment = react.Fragment;
@@ -174,7 +174,7 @@ function MarkdownLink(arg0) {
       const obj = { urlString: _undefined };
       showLongPressURLActionSheetDefault(obj);
     },
-    children: children.map(f105401)
+    children: children.map(f105407)
   };
   children = node.children;
   const Text = require("Text/Text").Text;
@@ -187,7 +187,7 @@ function InlineText(arg0) {
   let tmp4;
   let tmp6;
   ({ nodes, context, textAlign } = arg0);
-  const obj = { variant: context.variant, color: "text-default", style: tmp4, selectable: tmp6, children: nodes.map(f105401) };
+  const obj = { variant: context.variant, color: "text-default", style: tmp4, selectable: tmp6, children: nodes.map(f105407) };
   tmp4 = undefined;
   const Text = context(5919).Text;
   const tmp = closure_7;
@@ -200,7 +200,7 @@ function InlineText(arg0) {
   const isAndroidResult = tmp2Result.isAndroid();
   tmp6 = !isAndroidResult;
   if (isAndroidResult) {
-    tmp6 = !nodes.some(f105400);
+    tmp6 = !nodes.some(f105406);
   }
   return tmp(Text, obj);
 }
@@ -385,7 +385,7 @@ function renderBlock(type, length, styles) {
           let tmp3 = closure_10[type.tag];
           if (null != tmp3) {
             let obj3 = { styles, variant: tmp3, strongVariant: tmp3 };
-            let obj4 = { variant: obj3.variant, color: "text-strong", selectable: tmp20, children: children1.map(f105401) };
+            let obj4 = { variant: obj3.variant, color: "text-strong", selectable: tmp20, children: children1.map(f105407) };
             let children = type.children;
             const Heading = obj3(5919).Heading;
             const obj10 = obj3(1380);
@@ -393,7 +393,7 @@ function renderBlock(type, length, styles) {
             tmp20 = !isAndroidResult;
             const tmp16 = closure_7;
             if (isAndroidResult) {
-              tmp20 = !children.some(f105400);
+              tmp20 = !children.some(f105406);
             }
             children1 = type.children;
             return tmp16(Heading, obj4, length);

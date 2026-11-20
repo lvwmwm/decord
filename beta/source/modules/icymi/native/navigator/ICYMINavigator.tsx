@@ -1,10 +1,10 @@
-// Module ID: 19284
-// Function ID: 19285
+// Module ID: 19286
+// Function ID: 19287
 // Name: ICYMINavigator
-// Dependencies: [21, 9128, 7490, 19285, 19236, 2]
+// Dependencies: [21, 9128, 7490, 19287, 19238, 2]
 // Exports: default
 
-// Module 19284 (ICYMINavigator)
+// Module 19286 (ICYMINavigator)
 import Fragment from "Fragment" /* 21 */;
 import NativeStackView from "NativeStackView" /* 9128 */;
 import size from "module_2" /* 2 */;

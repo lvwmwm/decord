@@ -1,9 +1,9 @@
-// Module ID: 17736
-// Function ID: 17737
+// Module ID: 17738
+// Function ID: 17739
 // Name: VideoQuestModalContentInProgress
-// Dependencies: [32, 19, 17, 6954, 1083, 21, 671, 575, 17737, 5306, 1380, 10146, 1655, 5538, 1630, 7415, 5367, 17738, 17753, 17754, 17733, 17755, 6327, 7428, 5919, 17756, 6010, 5926, 10156, 7988, 1113, 12290, 10921, 10131, 15249, 17699, 11253, 5883, 17757, 10920, 17574, 17570, 17572, 12289, 7420, 17732, 17758, 5542, 17760, 2121, 10168, 8829, 10135, 10138, 6961, 8834, 6957, 10230, 17761, 10128, 17762, 6962, 2]
+// Dependencies: [32, 19, 17, 6954, 1083, 21, 671, 575, 17739, 5306, 1380, 10146, 1655, 5538, 1630, 7415, 5367, 17740, 17755, 17756, 17735, 17757, 6327, 7428, 5919, 17758, 6010, 5926, 10156, 7988, 1113, 12290, 10921, 10131, 15251, 17701, 11253, 5883, 17759, 10920, 17576, 17572, 17574, 12289, 7420, 17734, 17760, 5542, 17762, 2121, 10168, 8829, 10135, 10138, 6961, 8834, 6957, 10230, 17763, 10128, 17764, 6962, 2]
 
-// Module 17736 (VideoQuestModalContentInProgress)
+// Module 17738 (VideoQuestModalContentInProgress)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
@@ -688,7 +688,7 @@ const memoResult = react.memo(function VideoQuestModalContentInProgress(arg0) {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     ActionSheetActionCreatorsDefault;
     const obj = { quest };
-    const tmp2 = asyncRequire(17760, dependencyMap.paths);
+    const tmp2 = asyncRequire(17762, dependencyMap.paths);
     openLazy(tmp2, "transcript-" + quest.id, obj);
   }, items2);
   let obj3 = sourceQuestContent(getQuestImpressionId[50]);

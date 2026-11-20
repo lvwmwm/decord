@@ -1,10 +1,10 @@
-// Module ID: 16597
-// Function ID: 16598
+// Module ID: 16599
+// Function ID: 16600
 // Name: NewTag
 // Dependencies: [19, 17, 1072, 21, 5306, 575, 5883, 5919, 1113, 2]
 // Exports: default
 
-// Module 16597 (NewTag)
+// Module 16599 (NewTag)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;

@@ -1,18 +1,18 @@
-// Module ID: 20373
-// Function ID: 20374
+// Module ID: 20375
+// Function ID: 20376
 // Name: ConnectGuardianShareModal
-// Dependencies: [19, 17, 8740, 21, 5306, 575, 1113, 2701, 6004, 6838, 14224, 563, 17410, 8208, 8210, 6327, 5919, 17411, 7418, 7493, 12523, 2]
+// Dependencies: [19, 17, 8740, 21, 5306, 575, 1113, 2701, 6004, 6838, 14226, 563, 17412, 8208, 8210, 6327, 5919, 17413, 7418, 7493, 12525, 2]
 // Exports: default
 
-// Module 20373 (ConnectGuardianShareModal)
+// Module 20375 (ConnectGuardianShareModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import _modDef2701 from "module_2701" /* 2701 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import NavigatorHeader from "NavigatorHeader" /* 7493 */;
-import Modal2 from "Modal" /* 12523 */;
-import useOnNewPendingRequestDefault from "useOnNewPendingRequest" /* 17410 */;
+import Modal2 from "Modal" /* 12525 */;
+import useOnNewPendingRequestDefault from "useOnNewPendingRequest" /* 17412 */;
 import react from "react" /* 19 */;
 import FamilyCenterStore from "FamilyCenterStore" /* 8740 */;
 import Fragment from "Fragment" /* 21 */;
@@ -40,7 +40,7 @@ function ConnectGuardianShareScreen() {
     const arr = ModalActionCreatorsDefault;
     arr.pop();
   }, []);
-  const obj2 = getLinkCode(14224);
+  const obj2 = getLinkCode(14226);
   getLinkCode = obj2.useFamilyCenterActions({ onError: callback }).getLinkCode;
   const items = [FamilyCenterStore];
   const obj3 = getLinkCode(563);
@@ -78,7 +78,7 @@ function ConnectGuardianShareScreen() {
     let tmp11Result;
     if (null != stateFromStores1) {
       const obj11 = { shareActions: "full", linkCode: stateFromStores, expiresAt: stateFromStores1, onRefresh: getLinkCode };
-      tmp11Result = tmp11(tmp2(17411).ConnectGuardianCard, obj11);
+      tmp11Result = tmp11(tmp2(17413).ConnectGuardianCard, obj11);
     }
     const obj12 = { children: closure_6(ModalContent, obj13) };
     items4[1] = tmp11Result;

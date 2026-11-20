@@ -1,9 +1,9 @@
-// Module ID: 15814
-// Function ID: 15815
+// Module ID: 15816
+// Function ID: 15817
 // Name: UserProfileAddableWidgetTypes
 // Dependencies: [7353, 2]
 
-// Module 15814 (UserProfileAddableWidgetTypes)
+// Module 15816 (UserProfileAddableWidgetTypes)
 import WidgetType from "WidgetType" /* 7353 */;
 import size from "module_2" /* 2 */;
 

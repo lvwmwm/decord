@@ -1,10 +1,10 @@
-// Module ID: 19915
-// Function ID: 19916
+// Module ID: 19917
+// Function ID: 19918
 // Name: useScreenNameSharedValue
 // Dependencies: [19, 5483, 1655, 2]
 // Exports: default
 
-// Module 19915 (useScreenNameSharedValue)
+// Module 19917 (useScreenNameSharedValue)
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

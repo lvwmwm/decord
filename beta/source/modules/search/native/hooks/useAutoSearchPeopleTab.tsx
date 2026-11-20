@@ -1,17 +1,17 @@
-// Module ID: 19568
-// Function ID: 19569
+// Module ID: 19570
+// Function ID: 19571
 // Name: useAutoSearchPeopleTab
-// Dependencies: [19, 14754, 14756, 11783, 14765, 12, 14740, 2]
+// Dependencies: [19, 14756, 14758, 11783, 14767, 12, 14742, 2]
 // Exports: useAutoSearchPeopleTab
 
-// Module 19568 (useAutoSearchPeopleTab)
+// Module 19570 (useAutoSearchPeopleTab)
 import _mod12 from "module_12" /* 12 */;
 import UserAffinitiesActionCreators from "UserAffinitiesActionCreators" /* 11783 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 14740 */;
-import SearchPlatformConstants from "SearchPlatformConstants" /* 14756 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 14765 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 14742 */;
+import SearchPlatformConstants from "SearchPlatformConstants" /* 14758 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 14767 */;
 import react from "react" /* 19 */;
-import SearchQueryStore from "SearchQueryStore" /* 14754 */;
+import SearchQueryStore from "SearchQueryStore" /* 14756 */;
 import size from "module_2" /* 2 */;
 
 let closure_5 = SearchPlatformConstants.SEARCH_TEXT_INPUT_DEBOUNCE_TIME;

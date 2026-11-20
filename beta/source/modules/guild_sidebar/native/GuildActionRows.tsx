@@ -1,10 +1,10 @@
-// Module ID: 18927
-// Function ID: 18928
+// Module ID: 18929
+// Function ID: 18930
 // Name: GuildActionRows
-// Dependencies: [19, 17, 8735, 7015, 6050, 7866, 6949, 21, 5306, 575, 7223, 5338, 5139, 563, 8731, 6838, 12466, 2121, 14789, 14688, 1113, 16277, 2]
+// Dependencies: [19, 17, 8735, 7015, 6050, 7866, 6949, 21, 5306, 575, 7223, 5338, 5139, 563, 8731, 6838, 12468, 2121, 14791, 14690, 1113, 16279, 2]
 // Exports: GuildRolesAndChannelsRow
 
-// Module 18927 (GuildActionRows)
+// Module 18929 (GuildActionRows)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
@@ -52,11 +52,11 @@ export function GuildRolesAndChannelsRow(guild) {
   const callback = react.useCallback(() => {
     const obj = ModalActionCreatorsDefault;
     const obj2 = { guildId: id };
-    obj.pushLazy(asyncRequire(12466, dependencyMap.paths), obj2, closure_7);
+    obj.pushLazy(asyncRequire(12468, dependencyMap.paths), obj2, closure_7);
   }, items2);
-  let SELECTED = guild(14789).ChannelModes.DEFAULT;
+  let SELECTED = guild(14791).ChannelModes.DEFAULT;
   if (selected) {
-    SELECTED = tmp5(14789).ChannelModes.SELECTED;
+    SELECTED = tmp5(14791).ChannelModes.SELECTED;
   }
   let tmp10 = !result;
   if (result) {
@@ -67,9 +67,9 @@ export function GuildRolesAndChannelsRow(guild) {
   }
   let tmp11 = null;
   if (tmp10) {
-    tmp11 = <View style={tmp.channelInfoContainer}>{jsx(guild(14688).NewBadge, {})}</View>;
+    tmp11 = <View style={tmp.channelInfoContainer}>{jsx(guild(14690).NewBadge, {})}</View>;
   }
-  tmp2(14789);
+  tmp2(14791);
   const intl = tmp5(1113).intl;
   const string = intl.string;
   const t = tmp5(1113).t;
@@ -78,7 +78,7 @@ export function GuildRolesAndChannelsRow(guild) {
   } else {
     stringResult = string(t.et6wav);
   }
-  const BaseChannelName = tmp5(14789).BaseChannelName;
+  const BaseChannelName = tmp5(14791).BaseChannelName;
   const intl2 = tmp5(1113).intl;
   const string2 = intl2.string;
   const t2 = tmp5(1113).t;
@@ -87,7 +87,7 @@ export function GuildRolesAndChannelsRow(guild) {
   } else {
     string2(t2.et6wav);
   }
-  ({ mode: SELECTED, IconComponent: guild(16277).ChannelListMagnifyingGlassIcon });
-  const BaseChannelIcon = tmp5(14789).BaseChannelIcon;
+  ({ mode: SELECTED, IconComponent: guild(16279).ChannelListMagnifyingGlassIcon });
+  const BaseChannelIcon = tmp5(14791).BaseChannelIcon;
   return <tmp2Result onPress={callback} style={tmp.container} accessible accessibilityLabel={stringResult} accessibilityState={{ selected }} mode={SELECTED} name={null} icon={null} channelInfo={tmp11} />;
 }

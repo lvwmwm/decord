@@ -1,10 +1,10 @@
-// Module ID: 15923
-// Function ID: 15924
+// Module ID: 15925
+// Function ID: 15926
 // Name: ImageButton
 // Dependencies: [19, 17, 21, 5306, 5932, 575, 5933, 1655, 5929, 5930, 6010, 5935, 7448, 5919, 2]
 // Exports: ImageButton
 
-// Module 15923 (ImageButton)
+// Module 15925 (ImageButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1655 from "module_1655" /* 1655 */;

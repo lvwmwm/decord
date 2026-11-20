@@ -1,10 +1,10 @@
-// Module ID: 19036
-// Function ID: 19037
+// Module ID: 19038
+// Function ID: 19039
 // Name: useInterestCoverColor
 // Dependencies: [5, 32, 19, 5313, 1456, 671, 1493, 2]
 // Exports: coverArtColor, default
 
-// Module 19036 (useInterestCoverColor)
+// Module 19038 (useInterestCoverColor)
 import _modDef671 from "module_671" /* 671 */;
 import LRUCacheDefault from "LRUCache" /* 1456 */;
 import shared from "shared" /* 5313 */;

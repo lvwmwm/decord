@@ -1,10 +1,10 @@
-// Module ID: 15544
-// Function ID: 15545
+// Module ID: 15546
+// Function ID: 15547
 // Name: ExecutedCommand
-// Dependencies: [17, 1407, 5155, 1388, 1072, 1417, 1414, 6739, 12589, 575, 8724, 6371, 9189, 9191, 7864, 1113, 12698, 2]
+// Dependencies: [17, 1407, 5155, 1388, 1072, 1417, 1414, 6739, 12591, 575, 8724, 6371, 9189, 9191, 7864, 1113, 12700, 2]
 // Exports: createExecutedCommand
 
-// Module 15544 (ExecutedCommand)
+// Module 15546 (ExecutedCommand)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -15,8 +15,8 @@ import ActivitiesInTextUtils from "ActivitiesInTextUtils" /* 7864 */;
 import ApplicationCommandUtils from "ApplicationCommandUtils" /* 8724 */;
 import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 9189 */;
 import createDisplayNameStylesMobile from "createDisplayNameStylesMobile" /* 9191 */;
-import ApplicationInteractionInfoUtils from "ApplicationInteractionInfoUtils" /* 12589 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 12698 */;
+import ApplicationInteractionInfoUtils from "ApplicationInteractionInfoUtils" /* 12591 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 12700 */;
 import UserRecord from "UserRecord" /* 1407 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import UserStore from "UserStore" /* 1388 */;

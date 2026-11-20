@@ -1,13 +1,13 @@
-// Module ID: 17392
-// Function ID: 17393
+// Module ID: 17394
+// Function ID: 17395
 // Name: RequestDataContent
-// Dependencies: [32, 19, 17, 1072, 21, 5306, 1502, 1113, 7733, 5919, 2188, 7746, 5926, 6258, 17393, 2]
+// Dependencies: [32, 19, 17, 1072, 21, 5306, 1502, 1113, 7733, 5919, 2188, 7746, 5926, 6258, 17395, 2]
 
-// Module 17392 (RequestDataContent)
+// Module 17394 (RequestDataContent)
 import Constants from "Constants" /* 1072 */;
 import intl11 from "intl" /* 1113 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 6258 */;
-import DataHarvestActionCreators from "DataHarvestActionCreators" /* 17393 */;
+import DataHarvestActionCreators from "DataHarvestActionCreators" /* 17395 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

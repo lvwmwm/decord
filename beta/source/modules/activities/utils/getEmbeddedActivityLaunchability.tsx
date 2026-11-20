@@ -1,15 +1,15 @@
-// Module ID: 12778
-// Function ID: 12779
+// Module ID: 12780
+// Function ID: 12781
 // Name: getEmbeddedActivityLaunchability
-// Dependencies: [5155, 5177, 5238, 5971, 2145, 1072, 12734, 6828, 504, 1113, 2]
+// Dependencies: [5155, 5177, 5238, 5971, 2145, 1072, 12736, 6828, 504, 1113, 2]
 // Exports: getEmbeddedActivityLaunchabilityForChannel, getEmbeddedActivityLaunchabilityLabel, useEmbeddedActivityLaunchability
 
-// Module 12778 (getEmbeddedActivityLaunchability)
+// Module 12780 (getEmbeddedActivityLaunchability)
 import Constants from "Constants" /* 1072 */;
 import intl5 from "intl" /* 1113 */;
 import Constants2 from "Constants" /* 2145 */;
 import AgeGateUtils from "AgeGateUtils" /* 6828 */;
-import useIsActivitiesEnabledForCurrentPlatform from "useIsActivitiesEnabledForCurrentPlatform" /* 12734 */;
+import useIsActivitiesEnabledForCurrentPlatform from "useIsActivitiesEnabledForCurrentPlatform" /* 12736 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import GuildStore from "GuildStore" /* 5177 */;
 import PermissionStore from "PermissionStore" /* 5238 */;

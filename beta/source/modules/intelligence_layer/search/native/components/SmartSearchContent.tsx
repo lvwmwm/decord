@@ -1,15 +1,15 @@
-// Module ID: 19517
-// Function ID: 19518
+// Module ID: 19519
+// Function ID: 19520
 // Name: SmartSearchContent
-// Dependencies: [19, 21, 14745, 19518, 19519, 19462, 2]
+// Dependencies: [19, 21, 14747, 19520, 19521, 19464, 2]
 // Exports: SmartSearchContent
 
-// Module 19517 (SmartSearchContent)
+// Module 19519 (SmartSearchContent)
 import Fragment from "Fragment" /* 21 */;
-import SmartSearchTypes from "SmartSearchTypes" /* 14745 */;
-import SuggestedSearchListDefault from "SuggestedSearchList" /* 19462 */;
-import SmartSearchSkeletonDefault from "SmartSearchSkeleton" /* 19518 */;
-import SmartSearchResults from "SmartSearchResults" /* 19519 */;
+import SmartSearchTypes from "SmartSearchTypes" /* 14747 */;
+import SuggestedSearchListDefault from "SuggestedSearchList" /* 19464 */;
+import SmartSearchSkeletonDefault from "SmartSearchSkeleton" /* 19520 */;
+import SmartSearchResults from "SmartSearchResults" /* 19521 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ export function SmartSearchContent(arg0) {
     return jsx(SmartSearchResults.SmartSearchResults, { smartSearchQuery, hasKeywordResults, entry });
   } else {
     if (SmartSearchTypes.SmartSearchStatus.ERROR !== status) {
-      const EMPTY = tmp(14745).SmartSearchStatus.EMPTY;
+      const EMPTY = tmp(14747).SmartSearchStatus.EMPTY;
     }
     return jsx(SuggestedSearchListDefault, { smartSearchQuery, source: "smart_search_row" });
   }

@@ -1,23 +1,23 @@
-// Module ID: 13777
-// Function ID: 13778
+// Module ID: 13779
+// Function ID: 13780
 // Name: ConjureProjectAboutSheet
-// Dependencies: [5, 19, 17, 21, 5306, 575, 13778, 7994, 10516, 13779, 5542, 13776, 1113, 4131, 7951, 7913, 7415, 5560, 13783, 5919, 13784, 13785, 6327, 13786, 13788, 13790, 5926, 2]
+// Dependencies: [5, 19, 17, 21, 5306, 575, 13780, 7994, 10516, 13781, 5542, 13778, 1113, 4131, 7951, 7913, 7415, 5560, 13785, 5919, 13786, 13787, 6327, 13788, 13790, 13792, 5926, 2]
 // Exports: default
 
-// Module 13777 (ConjureProjectAboutSheet)
+// Module 13779 (ConjureProjectAboutSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef4131 from "module_4131" /* 4131 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import useMeasuredLayoutDefault from "useMeasuredLayout" /* 7994 */;
-import openConjureProjectAboutSheet from "openConjureProjectAboutSheet" /* 13776 */;
-import useConjureSharedProjectDefault from "useConjureSharedProject" /* 13778 */;
-import useConjureSharedProjectCoverActionDefault from "useConjureSharedProjectCoverAction" /* 13779 */;
-import ConjureAppSheetIconDefault from "ConjureAppSheetIcon" /* 13784 */;
-import conjureSharedProjectSurfaces from "conjureSharedProjectSurfaces" /* 13785 */;
-import useConjureProjectCreator from "useConjureProjectCreator" /* 13786 */;
-import ConjureCreatorBylineDefault from "ConjureCreatorByline" /* 13788 */;
-import openConjureSharedProjectRemixSheetDefault from "openConjureSharedProjectRemixSheet" /* 13790 */;
+import openConjureProjectAboutSheet from "openConjureProjectAboutSheet" /* 13778 */;
+import useConjureSharedProjectDefault from "useConjureSharedProject" /* 13780 */;
+import useConjureSharedProjectCoverActionDefault from "useConjureSharedProjectCoverAction" /* 13781 */;
+import ConjureAppSheetIconDefault from "ConjureAppSheetIcon" /* 13786 */;
+import conjureSharedProjectSurfaces from "conjureSharedProjectSurfaces" /* 13787 */;
+import useConjureProjectCreator from "useConjureProjectCreator" /* 13788 */;
+import ConjureCreatorBylineDefault from "ConjureCreatorByline" /* 13790 */;
+import openConjureSharedProjectRemixSheetDefault from "openConjureSharedProjectRemixSheet" /* 13792 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -270,7 +270,7 @@ export default function ConjureProjectAboutSheet(arg0) {
   BottomSheetScrollView = tmp8(5560).BottomSheetScrollView;
   if (null != application) {
     const obj7 = { application, action: type, launching, onPress: callback };
-    const items1 = [closure_6(tmp(13783), obj7), , ];
+    const items1 = [closure_6(tmp(13785), obj7), , ];
     let tmp14Result4 = null;
     const tmp20 = closure_8;
     if (launchFailed) {

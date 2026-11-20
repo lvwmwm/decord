@@ -1,10 +1,10 @@
-// Module ID: 19674
-// Function ID: 19675
+// Module ID: 19676
+// Function ID: 19677
 // Name: getCannotSwapApplicationText
 // Dependencies: [2189, 5238, 5245, 1113, 7413, 2]
 // Exports: default
 
-// Module 19674 (getCannotSwapApplicationText)
+// Module 19676 (getCannotSwapApplicationText)
 import LocaleStore from "LocaleStore" /* 2189 */;
 import PermissionStore from "PermissionStore" /* 5238 */;
 import size from "module_2" /* 2 */;

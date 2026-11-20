@@ -1,10 +1,10 @@
-// Module ID: 17483
-// Function ID: 17484
+// Module ID: 17485
+// Function ID: 17486
 // Name: UserSettingsAuthedApps
-// Dependencies: [19, 17, 7221, 1072, 21, 5306, 575, 7406, 8163, 15968, 6027, 504, 1503, 7410, 5919, 1113, 1502, 7443, 8151, 7809, 7813, 2]
+// Dependencies: [19, 17, 7221, 1072, 21, 5306, 575, 7406, 8163, 15970, 6027, 504, 1503, 7410, 5919, 1113, 1502, 7443, 8151, 7809, 7813, 2]
 // Exports: AuthorizedAppRow, AuthorizedAppsEmpty, AuthorizedAppsHeader, DisclosureIcon, useAuthorizedApps
 
-// Module 17483 (UserSettingsAuthedApps)
+// Module 17485 (UserSettingsAuthedApps)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import Text_Text from "Text/Text" /* 5919 */;
@@ -15,7 +15,7 @@ import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreat
 import UserSettingsUtils from "UserSettingsUtils" /* 7813 */;
 import TableRowApplicationIconDefault from "TableRowApplicationIcon" /* 8151 */;
 import GlobeEarthIcon from "GlobeEarthIcon" /* 8163 */;
-import EmbedIcon from "EmbedIcon" /* 15968 */;
+import EmbedIcon from "EmbedIcon" /* 15970 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1072 */;

@@ -1,9 +1,9 @@
-// Module ID: 18962
-// Function ID: 18963
+// Module ID: 18964
+// Function ID: 18965
 // Name: UnknownChannel
-// Dependencies: [19, 6050, 6949, 21, 5306, 575, 6005, 1113, 6027, 5944, 10894, 18838, 2]
+// Dependencies: [19, 6050, 6949, 21, 5306, 575, 6005, 1113, 6027, 5944, 10894, 18840, 2]
 
-// Module 18962 (UnknownChannel)
+// Module 18964 (UnknownChannel)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
@@ -13,7 +13,7 @@ import CircleInformationIcon from "CircleInformationIcon" /* 6027 */;
 import RedesignChannelListConstants from "RedesignChannelListConstants" /* 6050 */;
 import ReadStateConstants from "ReadStateConstants" /* 6949 */;
 import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 10894 */;
-import ChannelItemDefault from "ChannelItem" /* 18838 */;
+import ChannelItemDefault from "ChannelItem" /* 18840 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;

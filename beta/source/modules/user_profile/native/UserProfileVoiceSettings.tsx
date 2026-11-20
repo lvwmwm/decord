@@ -1,10 +1,10 @@
-// Module ID: 15759
-// Function ID: 15760
+// Module ID: 15761
+// Function ID: 15762
 // Name: UserProfileVoiceSettings
-// Dependencies: [19, 17, 6359, 6810, 2133, 5238, 6061, 1072, 1083, 6065, 21, 5306, 8545, 504, 6348, 10646, 13060, 6086, 13002, 6215, 13017, 7746, 15760, 1113, 6223, 15762, 15764, 7961, 10604, 13048, 15765, 10726, 1256, 15767, 11046, 7623, 5919, 12123, 10815, 8106, 5542, 10631, 10627, 2]
+// Dependencies: [19, 17, 6359, 6810, 2133, 5238, 6061, 1072, 1083, 6065, 21, 5306, 8545, 504, 6348, 10646, 13062, 6086, 13004, 6215, 13019, 7746, 15762, 1113, 6223, 15764, 15766, 7961, 10604, 13050, 15767, 10726, 1256, 15769, 11046, 7623, 5919, 12123, 10815, 8106, 5542, 10631, 10627, 2]
 // Exports: default
 
-// Module 15759 (UserProfileVoiceSettings)
+// Module 15761 (UserProfileVoiceSettings)
 import react_native from "react-native" /* 17 */;
 import Constants2 from "Constants" /* 1083 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
@@ -14,7 +14,7 @@ import AudioActionCreatorsDefault from "AudioActionCreators" /* 6215 */;
 import PerceptualVolumeUtils from "PerceptualVolumeUtils" /* 6223 */;
 import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 10631 */;
 import UserProfileAlertUtils from "UserProfileAlertUtils" /* 12123 */;
-import completeStreamVolumeMovedTutorialDefault from "completeStreamVolumeMovedTutorial" /* 15764 */;
+import completeStreamVolumeMovedTutorialDefault from "completeStreamVolumeMovedTutorial" /* 15766 */;
 import react from "react" /* 19 */;
 import SoundboardStore from "SoundboardStore" /* 6359 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6810 */;
@@ -383,7 +383,7 @@ function CurrentUserVoiceSettings(channel) {
       if (stateFromStores) {
         MicrophoneIcon = tmp2(10604).MicrophoneSlashIcon;
       } else {
-        MicrophoneIcon = tmp2(13048).MicrophoneIcon;
+        MicrophoneIcon = tmp2(13050).MicrophoneIcon;
       }
       obj6 = { children: closure_13(UserProfileFormRow, obj5, "mute") };
       tmp9Result = tmp9(tmp6Result, obj4);

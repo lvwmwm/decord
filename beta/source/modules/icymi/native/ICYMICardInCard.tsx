@@ -1,10 +1,10 @@
-// Module ID: 19328
-// Function ID: 19329
+// Module ID: 19330
+// Function ID: 19331
 // Name: ICYMICardInCard
-// Dependencies: [19, 17, 5155, 5218, 5177, 1072, 21, 19287, 575, 9503, 7720, 1187, 5934, 504, 6740, 10066, 6341, 5919, 5944, 19329, 1113, 8078, 19327, 7428, 7034, 7420, 2]
+// Dependencies: [19, 17, 5155, 5218, 5177, 1072, 21, 19289, 575, 9503, 7720, 1187, 5934, 504, 6740, 10066, 6341, 5919, 5944, 19331, 1113, 8078, 19329, 7428, 7034, 7420, 2]
 // Exports: default
 
-// Module 19328 (ICYMICardInCard)
+// Module 19330 (ICYMICardInCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -14,14 +14,14 @@ import Text_Text from "Text/Text" /* 5919 */;
 import GuildIcon from "GuildIcon" /* 7720 */;
 import TextIcon2 from "TextIcon" /* 8078 */;
 import ClipView from "ClipView" /* 9503 */;
-import openDetailsActionSheet from "openDetailsActionSheet" /* 19327 */;
-import getIconForChannel from "getIconForChannel" /* 19329 */;
+import openDetailsActionSheet from "openDetailsActionSheet" /* 19329 */;
+import getIconForChannel from "getIconForChannel" /* 19331 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import GuildMemberStore from "GuildMemberStore" /* 5218 */;
 import GuildStore from "GuildStore" /* 5177 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 19287 */;
+import createICYMIStyles from "createICYMIStyles" /* 19289 */;
 import size_mod from "module_2" /* 2 */;
 
 const GuildIconDefault = GuildIcon;

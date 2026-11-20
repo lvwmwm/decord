@@ -1,10 +1,10 @@
-// Module ID: 13642
-// Function ID: 13643
+// Module ID: 13644
+// Function ID: 13645
 // Name: conjureSettingsSummary
-// Dependencies: [1113, 4131, 13603, 2]
+// Dependencies: [1113, 4131, 13605, 2]
 // Exports: conjureConnectedKeysSummary, conjureSettingsSummary
 
-// Module 13642 (conjureSettingsSummary)
+// Module 13644 (conjureSettingsSummary)
 import intl7 from "intl" /* 1113 */;
 import _modDef4131 from "module_4131" /* 4131 */;
 import size from "module_2" /* 2 */;

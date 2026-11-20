@@ -1,10 +1,10 @@
-// Module ID: 15810
-// Function ID: 15811
+// Module ID: 15812
+// Function ID: 15813
 // Name: useAddableWidgets
-// Dependencies: [19, 12266, 1388, 7355, 12251, 5131, 563, 12121, 15811, 15812, 15813, 7937, 12270, 7357, 15814, 7353, 1255, 7358, 7360, 7354, 2]
+// Dependencies: [19, 12266, 1388, 7355, 12251, 5131, 563, 12121, 15813, 15814, 15815, 7937, 12270, 7357, 15816, 7353, 1255, 7358, 7360, 7354, 2]
 // Exports: default
 
-// Module 15810 (useAddableWidgets)
+// Module 15812 (useAddableWidgets)
 import UserProfileWidgetConstants from "UserProfileWidgetConstants" /* 7355 */;
 import ApplicationWidgetConfigSurface from "ApplicationWidgetConfigSurface" /* 12251 */;
 import ApplicationWidgetConfigActions from "ApplicationWidgetConfigActions" /* 12270 */;

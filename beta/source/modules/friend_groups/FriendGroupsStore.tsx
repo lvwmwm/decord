@@ -1,9 +1,9 @@
-// Module ID: 16206
-// Function ID: 16207
+// Module ID: 16208
+// Function ID: 16209
 // Name: FriendGroupsStore
 // Dependencies: [8553, 6836, 5248, 1388, 504, 572, 2]
 
-// Module 16206 (FriendGroupsStore)
+// Module 16208 (FriendGroupsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 8553 */;
@@ -80,11 +80,11 @@ let obj = {
     return false;
   },
   CREATE_FRIEND_GROUP: function handleCreateFriendGroup(groupId) {
-    const f113287 = (id) => id.id === groupId;
+    const f113293 = (id) => id.id === groupId;
     groupId = groupId.groupId;
     const name = groupId.name;
-    let flag = !found.some(f113287);
-    found.some(f113287);
+    let flag = !found.some(f113293);
+    found.some(f113293);
     if (flag) {
       const obj = { id: groupId, name, userIds: [] };
       found.push(obj);

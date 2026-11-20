@@ -1,10 +1,10 @@
-// Module ID: 15933
-// Function ID: 15934
+// Module ID: 15935
+// Function ID: 15936
 // Name: EndEventActionSheet
-// Dependencies: [19, 17, 5161, 1072, 21, 5306, 575, 8426, 5542, 10583, 15934, 1187, 1113, 5919, 5926, 7970, 2]
+// Dependencies: [19, 17, 5161, 1072, 21, 5306, 575, 8426, 5542, 10583, 15936, 1187, 1113, 5919, 5926, 7970, 2]
 // Exports: default
 
-// Module 15933 (EndEventActionSheet)
+// Module 15935 (EndEventActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -55,7 +55,7 @@ export default function EndEventActionSheet(channel) {
     }
     let obj2 = { children: closure_6(View, obj3) };
     obj3 = { style: tmp.container, children: items };
-    const tmp7 = activeEvent(15934);
+    const tmp7 = activeEvent(15936);
     const obj4 = { style: tmp.title, accessibilityRole: "header", children: intl.string(channel(1113).t["4Ao8LC"]) };
     const LegacyText = tmp2(1187).LegacyText;
     intl = tmp2(1113).intl;

@@ -1,10 +1,10 @@
-// Module ID: 17460
-// Function ID: 17461
+// Module ID: 17462
+// Function ID: 17463
 // Name: FamilyCenterModalCancel
-// Dependencies: [19, 17, 21, 5306, 575, 9617, 6838, 6004, 1113, 14224, 38, 8208, 8210, 17455, 7430, 5919, 2701, 17422, 14079, 6941, 5926, 7493, 12523, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 9617, 6838, 6004, 1113, 14226, 38, 8208, 8210, 17457, 7430, 5919, 2701, 17424, 14081, 6941, 5926, 7493, 12525, 2]
 // Exports: default
 
-// Module 17460 (FamilyCenterModalCancel)
+// Module 17462 (FamilyCenterModalCancel)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
@@ -42,7 +42,7 @@ function FamilyCenterModalCancelScreen(otherUser) {
     const intl = otherUser(dependencyMap[8]).intl;
     presentFailedToast(intl.string(otherUser(dependencyMap[8]).t.R0RpRX));
   }, []);
-  const obj = otherUser(14224);
+  const obj = otherUser(14226);
   const familyCenterActions = obj.useFamilyCenterActions({ onSuccess: callback, onError: callback1 });
   cancelLinkRequest = familyCenterActions.cancelLinkRequest;
   const isCancelLoading = familyCenterActions.isCancelLoading;
@@ -57,16 +57,16 @@ function FamilyCenterModalCancelScreen(otherUser) {
   obj4 = { style: tmp.header, children: items1 };
   const ModalContent = otherUser(8210).ModalContent;
   const obj5 = { otherUser, iconSrc: cancelLinkRequest(7430) };
-  const tmp8 = cancelLinkRequest(17455);
+  const tmp8 = cancelLinkRequest(17457);
   items1 = [closure_5(tmp8, obj5), , ];
   const obj6 = { style: tmp.headerText, variant: "body-lg/semibold", children: intl.string(cancelLinkRequest(2701).HynllX) };
   const Text = otherUser(5919).Text;
   intl = otherUser(1113).intl;
   items1[1] = closure_5(Text, obj6);
-  items1[2] = closure_5(cancelLinkRequest(17422), { user: otherUser });
+  items1[2] = closure_5(cancelLinkRequest(17424), { user: otherUser });
   items2 = [closure_5(ModalContent, obj3), ];
   const obj7 = { children: closure_6(ButtonGroup, obj8) };
-  const ModalFooter = otherUser(14079).ModalFooter;
+  const ModalFooter = otherUser(14081).ModalFooter;
   obj8 = { children: items3 };
   ButtonGroup = otherUser(6941).ButtonGroup;
   const obj9 = { variant: "destructive", disabled: isCancelLoading, loading: isCancelLoading, text: intl2.string(cancelLinkRequest(2701).mK40bk), onPress: callback2 };
@@ -114,7 +114,7 @@ export default function FamilyCenterModalCancel(otherUser) {
     return obj;
   }, items);
   let obj = { initialRouteName: "CANCEL", screens: memo, headerBackTitle: intl.string(otherUser(1113).t["13/7kX"]) };
-  const Modal = otherUser(12523).Modal;
+  const Modal = otherUser(12525).Modal;
   intl = otherUser(1113).intl;
   return closure_5(Modal, obj);
 };

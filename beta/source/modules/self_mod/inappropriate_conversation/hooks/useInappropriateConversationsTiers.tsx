@@ -1,10 +1,10 @@
-// Module ID: 15152
-// Function ID: 15153
+// Module ID: 15154
+// Function ID: 15155
 // Name: useInappropriateConversationsTiers
 // Dependencies: [1388, 10896, 12032, 504, 12031, 2]
 // Exports: useInappropriateConversationsTiers
 
-// Module 15152 (useInappropriateConversationsTiers)
+// Module 15154 (useInappropriateConversationsTiers)
 import get_initialized from "get initialized" /* 504 */;
 import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10896 */;
 import useInappropriateConversationBannerForChannel from "useInappropriateConversationBannerForChannel" /* 12031 */;

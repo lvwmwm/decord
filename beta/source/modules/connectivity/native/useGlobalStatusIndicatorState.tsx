@@ -1,14 +1,14 @@
-// Module ID: 12914
-// Function ID: 12915
+// Module ID: 12916
+// Function ID: 12917
 // Name: useGlobalStatusIndicatorState
-// Dependencies: [5155, 6061, 12915, 1072, 12723, 10818, 504, 11949, 12911, 5482, 6890, 11950, 12916, 2]
+// Dependencies: [5155, 6061, 12917, 1072, 12725, 10818, 504, 11949, 12913, 5482, 6890, 11950, 12918, 2]
 // Exports: useGlobalStatusIndicatorState
 
-// Module 12914 (useGlobalStatusIndicatorState)
+// Module 12916 (useGlobalStatusIndicatorState)
 import Constants from "Constants" /* 1072 */;
 import useVoiceStateForRemoteSessionDefault from "useVoiceStateForRemoteSession" /* 10818 */;
 import useIsInvitedToSpeakDefault from "useIsInvitedToSpeak" /* 11949 */;
-import ConnectivityConstants from "ConnectivityConstants" /* 12915 */;
+import ConnectivityConstants from "ConnectivityConstants" /* 12917 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 6061 */;
 import size from "module_2" /* 2 */;
@@ -16,7 +16,7 @@ import size from "module_2" /* 2 */;
 let importDefault;
 
 let tmp4;
-const useMyCurrentStageChannelDefault = tmp4(12916);
+const useMyCurrentStageChannelDefault = tmp4(12918);
 const RTC_PANEL_HEIGHT = ConnectivityConstants.RTC_PANEL_HEIGHT;
 const EMPTY_STRING_SNOWFLAKE_ID = Constants.EMPTY_STRING_SNOWFLAKE_ID;
 const result = size.fileFinishedImporting("modules/connectivity/native/useGlobalStatusIndicatorState.tsx");
@@ -28,7 +28,7 @@ export function useGlobalStatusIndicatorState(flag) {
   }
   let stateFromStores;
   importDefault = undefined;
-  const obj = stateFromStores(12723);
+  const obj = stateFromStores(12725);
   let hasPipParticipant = obj.useHasPipParticipant({ isActivityViewFocused: false });
   const tmp5 = useVoiceStateForRemoteSessionDefault();
   const items = [RTCConnectionStore];
@@ -50,7 +50,7 @@ export function useGlobalStatusIndicatorState(flag) {
     }
     return isGuildStageVoiceResult;
   }, items2);
-  const obj4 = stateFromStores(12911);
+  const obj4 = stateFromStores(12913);
   let num = obj4.useGetStageRTCPanelHeight(stateFromStores);
   stateFromStores(5482);
   let tmp12 = null != tmp5;

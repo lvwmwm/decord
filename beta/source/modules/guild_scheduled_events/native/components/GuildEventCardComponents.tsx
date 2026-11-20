@@ -1,7 +1,7 @@
 // Module ID: 7984
 // Function ID: 7985
 // Name: GuildEventCardComponents
-// Dependencies: [5, 32, 19, 17, 502, 5155, 5218, 5177, 5238, 1388, 7029, 5161, 1072, 1083, 21, 5306, 575, 7985, 7987, 7988, 1113, 7989, 7943, 6004, 12290, 6020, 504, 8030, 7421, 7738, 10996, 15927, 7972, 6907, 7231, 6912, 15928, 6259, 7970, 6330, 6890, 1255, 1496, 1414, 15926, 6010, 7968, 1187, 7436, 5537, 7979, 7980, 15564, 7428, 5919, 8457, 8422, 5944, 7975, 8417, 8418, 7720, 2]
+// Dependencies: [5, 32, 19, 17, 502, 5155, 5218, 5177, 5238, 1388, 7029, 5161, 1072, 1083, 21, 5306, 575, 7985, 7987, 7988, 1113, 7989, 7943, 6004, 12290, 6020, 504, 8030, 7421, 7738, 10996, 15929, 7972, 6907, 7231, 6912, 15930, 6259, 7970, 6330, 6890, 1255, 1496, 1414, 15928, 6010, 7968, 1187, 7436, 5537, 7979, 7980, 15566, 7428, 5919, 8457, 8422, 5944, 7975, 8417, 8418, 7720, 2]
 // Exports: GuildEventCardGuildInfo, GuildEventCardHeader, GuildEventCardImageHeader, GuildEventCardMetaInfo, GuildEventCardSimpleGuildInfo, GuildEventIndicateInterestAction, GuildEventModeratorAction, GuildEventShareAction, GuildEventSimpleLocation, useEventRsvpState
 
 // Module 7984 (GuildEventCardComponents)
@@ -25,7 +25,7 @@ import ScheduleUtils from "ScheduleUtils" /* 7972 */;
 import useCanInviteForGuildEventDefault from "useCanInviteForGuildEvent" /* 7985 */;
 import guild_scheduled_events_GuildScheduledEventModalActionCreators from "guild_scheduled_events/GuildScheduledEventModalActionCreators" /* 7989 */;
 import guildEventDetailsParser from "guildEventDetailsParser" /* 8422 */;
-import ThrottledButtonDefault from "ThrottledButton" /* 15927 */;
+import ThrottledButtonDefault from "ThrottledButton" /* 15929 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -157,7 +157,7 @@ class GuildEventCardRSVPAction {
       BellIcon = tmp(10996).BellIcon;
     }
     const obj2 = { accessibilityRole: "togglebutton", accessibilityState: { checked: first }, accessibilityLabel: "" + intl.string(event(1113).t.DlcqlU) + ", " + event.name, variant: str, icon: closure_21(BellIcon, { size: "sm" }), text: intl2.string(event(1113).t.DlcqlU), onPress: tmp5, grow: true };
-    const tmp6 = recurrenceId(15927);
+    const tmp6 = recurrenceId(15929);
     intl = tmp(1113).intl;
     intl2 = tmp(1113).intl;
     return closure_21(tmp6, obj2);
@@ -686,7 +686,7 @@ export function GuildEventCardImageHeader(event) {
     }
     const obj2 = { style: tmp.imageHeaderContainer, onLayout: tmp6, children: closure_21(FastImageDefault, obj3) };
     const obj = AvatarUtils;
-    const source = obj.makeSource(tmp2(15926)(event, width));
+    const source = obj.makeSource(tmp2(15928)(event, width));
     obj3 = { style: tmp.imageHeaderBanner, source, resizeMode: "cover" };
     return closure_21(metroRequire, obj2);
   }

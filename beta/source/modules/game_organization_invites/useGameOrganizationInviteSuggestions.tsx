@@ -1,16 +1,16 @@
-// Module ID: 16405
-// Function ID: 16406
+// Module ID: 16407
+// Function ID: 16408
 // Name: useGameOrganizationInviteSuggestions
-// Dependencies: [5, 32, 19, 14732, 5248, 1388, 8463, 12529, 504, 14731, 2]
+// Dependencies: [5, 32, 19, 14734, 5248, 1388, 8463, 12531, 504, 14733, 2]
 // Exports: default
 
-// Module 16405 (useGameOrganizationInviteSuggestions)
+// Module 16407 (useGameOrganizationInviteSuggestions)
 import InstantInviteUtils from "InstantInviteUtils" /* 8463 */;
-import InviteSuggestionsActionCreators from "InviteSuggestionsActionCreators" /* 14731 */;
+import InviteSuggestionsActionCreators from "InviteSuggestionsActionCreators" /* 14733 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import InviteSuggestionsStore from "InviteSuggestionsStore" /* 14732 */;
+import InviteSuggestionsStore from "InviteSuggestionsStore" /* 14734 */;
 import RelationshipStore from "RelationshipStore" /* 5248 */;
 import UserStore from "UserStore" /* 1388 */;
 import size from "module_2" /* 2 */;
@@ -33,7 +33,7 @@ export default function useGameOrganizationInviteSuggestions() {
   let closure_2;
   let hasNoFriends;
   let isLoading;
-  const f113564 = (item) => item.item;
+  const f113570 = (item) => item.item;
   let obj = require("get initialized");
   const items = [InviteSuggestionsStore, RelationshipStore, UserStore];
   const users = obj.useStateFromStoresArray(items, () => {
@@ -45,7 +45,7 @@ export default function useGameOrganizationInviteSuggestions() {
     }
     closure_1 = closure_7;
     const found = inviteSuggestionRows.filter(closure_9);
-    const mapped = found.map(f113564);
+    const mapped = found.map(f113570);
     return mapped.filter((item) => closure_2_1(ref[7])(item, id, closure_1));
   });
   [isLoading, _require] = react.useState(true);
@@ -72,7 +72,7 @@ export default function useGameOrganizationInviteSuggestions() {
           }
           closure_1 = closure_7;
           const found = inviteSuggestionRows.filter(closure_9);
-          const mapped = found.map(f113564);
+          const mapped = found.map(f113570);
           return mapped.filter((item) => closure_2_1(ref[7])(item, id, closure_1));
         }
         if (c5 === 2) {

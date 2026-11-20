@@ -1,18 +1,18 @@
-// Module ID: 19895
-// Function ID: 19896
+// Module ID: 19897
+// Function ID: 19898
 // Name: FramePool
-// Dependencies: [32, 19, 17, 7019, 7020, 21, 5306, 1496, 504, 13357, 12879, 12853, 12743, 19896, 2]
+// Dependencies: [32, 19, 17, 7019, 7020, 21, 5306, 1496, 504, 13359, 12881, 12855, 12745, 19898, 2]
 // Exports: default
 
-// Module 19895 (FramePool)
+// Module 19897 (FramePool)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
-import FramesActionCreatorsDefault from "FramesActionCreators" /* 12743 */;
-import makeIframeIdDefault from "makeIframeId" /* 12853 */;
-import WebViewContext from "WebViewContext" /* 12879 */;
-import FramePoolManagerDefault from "FramePoolManager" /* 13357 */;
+import FramesActionCreatorsDefault from "FramesActionCreators" /* 12745 */;
+import makeIframeIdDefault from "makeIframeId" /* 12855 */;
+import WebViewContext from "WebViewContext" /* 12881 */;
+import FramePoolManagerDefault from "FramePoolManager" /* 13359 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import FramesStore from "FramesStore" /* 7019 */;
@@ -29,7 +29,7 @@ function PooledFrame(frame) {
   let _undefined;
   let tmp2;
   let tmp3;
-  const f121580 = () => {
+  const f121586 = () => {
     const obj = { iframeId: makeIframeIdDefault(), proxyTicket };
     return obj;
   };
@@ -38,11 +38,11 @@ function PooledFrame(frame) {
   const id = frame.id;
   const proxyTicket = frame.data.proxyTicket;
   let obj = react;
-  [tmp2, tmp3] = iframeId(react.useState(f121580), 2);
+  [tmp2, tmp3] = iframeId(react.useState(f121586), 2);
   dependencyMap = tmp3;
-  const tmp = iframeId(react.useState(f121580), 2);
+  const tmp = iframeId(react.useState(f121586), 2);
   if (tmp2.proxyTicket !== proxyTicket) {
-    let obj2 = { iframeId: proxyTicket(12853)(), proxyTicket };
+    let obj2 = { iframeId: proxyTicket(12855)(), proxyTicket };
     tmp3(obj2);
   }
   iframeId = tmp2.iframeId;
@@ -69,13 +69,13 @@ function PooledFrame(frame) {
       return obj;
     });
   }, []);
-  let syncExternalStore = obj.useSyncExternalStore(proxyTicket(13357).subscribe, () => {
+  let syncExternalStore = obj.useSyncExternalStore(proxyTicket(13359).subscribe, () => {
     const obj = FramePoolManagerDefault;
     return obj.getWinningTargetState(id);
   });
   const obj3 = { frame, iframeId, onActivityCrash: callback, presentation: syncExternalStore };
   const tmp11 = jsx;
-  const tmp12 = proxyTicket(19896);
+  const tmp12 = proxyTicket(19898);
   if (syncExternalStore == null) {
     syncExternalStore = { layoutMode: constants.FOCUSED };
     const obj4 = { layoutMode: constants.FOCUSED };

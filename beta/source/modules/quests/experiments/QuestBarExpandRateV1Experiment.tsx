@@ -1,10 +1,10 @@
-// Module ID: 17791
-// Function ID: 17792
+// Module ID: 17793
+// Function ID: 17794
 // Name: QuestBarExpandRateV1Experiment
 // Dependencies: [1452, 2]
 // Exports: useQuestBarExpandRateV1Config
 
-// Module 17791 (QuestBarExpandRateV1Experiment)
+// Module 17793 (QuestBarExpandRateV1Experiment)
 import ApexExperiment from "ApexExperiment" /* 1452 */;
 import size from "module_2" /* 2 */;
 

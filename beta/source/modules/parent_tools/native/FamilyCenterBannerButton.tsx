@@ -1,10 +1,10 @@
-// Module ID: 17406
-// Function ID: 17407
+// Module ID: 17408
+// Function ID: 17409
 // Name: FamilyCenterBannerButton
-// Dependencies: [19, 17, 1388, 8740, 8741, 1072, 6892, 21, 5306, 575, 9616, 6004, 1113, 14224, 563, 17407, 1256, 17408, 5542, 17409, 2121, 6327, 5926, 12289, 2701, 17412, 6838, 1381, 14221, 1627, 8192, 16307, 2]
+// Dependencies: [19, 17, 1388, 8740, 8741, 1072, 6892, 21, 5306, 575, 9616, 6004, 1113, 14226, 563, 17409, 1256, 17410, 5542, 17411, 2121, 6327, 5926, 12289, 2701, 17414, 6838, 1381, 14223, 1627, 8192, 16309, 2]
 // Exports: FamilyCenterParentQRCodeButton, FamilyCenterTeenQRCodeButton
 
-// Module 17406 (FamilyCenterBannerButton)
+// Module 17408 (FamilyCenterBannerButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -16,8 +16,8 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542
 import components_Button_Button from "components/Button/Button" /* 5926 */;
 import NativePermissionConstants from "NativePermissionConstants" /* 6892 */;
 import useUserLinks from "useUserLinks" /* 9616 */;
-import shareGuardianConnectLink from "shareGuardianConnectLink" /* 17408 */;
-import QrCodeIcon from "QrCodeIcon" /* 17412 */;
+import shareGuardianConnectLink from "shareGuardianConnectLink" /* 17410 */;
+import QrCodeIcon from "QrCodeIcon" /* 17414 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1388 */;
 import FamilyCenterStore from "FamilyCenterStore" /* 8740 */;
@@ -99,7 +99,7 @@ function FamilyCenterTeenQRCodeButtonInner() {
       obj.track(AnalyticEvents.FAMILY_CENTER_ACTION, obj2);
       const obj4 = { linkCode: tmp, expiresAt: stateFromStores2, onRefresh: getLinkCode2 };
       const obj3 = ActionSheetActionCreatorsDefault;
-      obj3.openLazy(asyncRequire(17409, dependencyMap.paths), metroImportDefault, obj4);
+      obj3.openLazy(asyncRequire(17411, dependencyMap.paths), metroImportDefault, obj4);
     }
   }, items4);
   const obj8 = { direction: "horizontal", spacing: getLinkCode2(stateFromStores[9]).space.PX_8, style: tmp.container, children: items5 };

@@ -1,10 +1,10 @@
-// Module ID: 19691
-// Function ID: 19692
+// Module ID: 19693
+// Function ID: 19694
 // Name: ChannelSettingsPermissionsOverview
-// Dependencies: [32, 5, 19, 17, 5213, 5155, 5212, 5177, 5248, 1388, 1072, 21, 5306, 575, 6258, 1113, 5944, 5243, 12560, 8133, 10919, 12, 7746, 7443, 13308, 1502, 13997, 11241, 17935, 504, 2119, 10929, 19692, 15078, 9051, 8134, 1655, 2]
+// Dependencies: [32, 5, 19, 17, 5213, 5155, 5212, 5177, 5248, 1388, 1072, 21, 5306, 575, 6258, 1113, 5944, 5243, 12562, 8133, 10919, 12, 7746, 7443, 13310, 1502, 13999, 11241, 17937, 504, 2119, 10929, 19694, 15080, 9051, 8134, 1655, 2]
 // Exports: default
 
-// Module 19691 (ChannelSettingsPermissionsOverview)
+// Module 19693 (ChannelSettingsPermissionsOverview)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
@@ -16,8 +16,8 @@ import TableRow3 from "TableRow" /* 7443 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 8134 */;
 import DetailedGuildIdentityUserRowDefault from "DetailedGuildIdentityUserRow" /* 10929 */;
 import RoleLabel from "RoleLabel" /* 11241 */;
-import CircleMinusIcon2 from "CircleMinusIcon" /* 17935 */;
-import useGetOrFetchChannelOverwriteUsersDefault from "useGetOrFetchChannelOverwriteUsers" /* 19692 */;
+import CircleMinusIcon2 from "CircleMinusIcon" /* 17937 */;
+import useGetOrFetchChannelOverwriteUsersDefault from "useGetOrFetchChannelOverwriteUsers" /* 19694 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
@@ -165,7 +165,7 @@ function ChannelPermissionSyncModule(channel) {
     formatToPlainStringResult = formatToPlainString(t.OIhm0M, obj4);
   }
   obj5 = { title: formatToPlainStringResult, hasIcons: true, children: tmp6(TableRow, obj6) };
-  obj6 = { icon: tmp6(tmp3(13308).RefreshIcon, {}), label: intl2.string(tmp3(1113).t.NVwuHq), onPress: callback };
+  obj6 = { icon: tmp6(tmp3(13310).RefreshIcon, {}), label: intl2.string(tmp3(1113).t.NVwuHq), onPress: callback };
   TableRow = tmp3(7443).TableRow;
   intl2 = tmp3(1113).intl;
   return closure_16(tmp7, obj2);
@@ -230,7 +230,7 @@ function RoleRow(onDelete) {
     tmp2Result = null;
     if (!tmp) {
       const obj2 = { color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, accessibilityLabel: intl.string(intl5.t.N86XcP) };
-      const CircleMinusIcon = tmp3(17935).CircleMinusIcon;
+      const CircleMinusIcon = tmp3(17937).CircleMinusIcon;
       intl = tmp3(1113).intl;
       tmp2Result = tmp2(CircleMinusIcon, obj2);
     }

@@ -23,7 +23,7 @@ function useOnLoad(arg0, arg1) {
     isFirstLayoutComplete = isFirstLayoutComplete.getIsFirstLayoutComplete() && !ref.current;
     if (isFirstLayoutComplete) {
       ref.current = true;
-      f91676();
+      f91680();
     }
   });
 }
@@ -46,11 +46,11 @@ export const useOnListLoad = (getDataLength, arg1) => {
   }, items);
   if (typeof useOnLoad === "function") {
     closure_0 = getDataLength;
-    const f91676 = () => {
+    const f91680 = () => {
       const elapsedTimeInMs = Date.now() - ref.current;
       const tmp = closure_4(() => {
         elapsedTimeInMs.isFirstPaintOnUiComplete = true;
-        if (f91676 != null) {
+        if (f91680 != null) {
           const obj = { elapsedTimeInMs };
           tmp(obj);
         }
@@ -62,7 +62,7 @@ export const useOnListLoad = (getDataLength, arg1) => {
       isFirstLayoutComplete = isFirstLayoutComplete.getIsFirstLayoutComplete() && !ref.current;
       if (isFirstLayoutComplete) {
         ref.current = true;
-        f91676();
+        f91680();
       }
     });
     return { isLoaded: tmp3 };

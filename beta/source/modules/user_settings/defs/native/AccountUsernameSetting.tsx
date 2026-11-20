@@ -1,19 +1,19 @@
-// Module ID: 17229
-// Function ID: 17230
+// Module ID: 17231
+// Function ID: 17232
 // Name: AccountUsernameSetting
-// Dependencies: [19, 1388, 9202, 1072, 21, 504, 5362, 14175, 5919, 12406, 1113, 17230, 2]
+// Dependencies: [19, 1388, 9202, 1072, 21, 504, 5362, 14177, 5919, 12408, 1113, 17232, 2]
 
-// Module 17229 (AccountUsernameSetting)
+// Module 17231 (AccountUsernameSetting)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1072 */;
 import intl2 from "intl" /* 1113 */;
 import UserUtilsDefault from "UserUtils" /* 5362 */;
 import SettingsConstants from "SettingsConstants" /* 9202 */;
-import AutomodQuarantineUtils from "AutomodQuarantineUtils" /* 14175 */;
+import AutomodQuarantineUtils from "AutomodQuarantineUtils" /* 14177 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1388 */;
-import SettingBuilders from "SettingBuilders" /* 12406 */;
+import SettingBuilders from "SettingBuilders" /* 12408 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

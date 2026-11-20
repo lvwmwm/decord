@@ -1,7 +1,7 @@
 // Module ID: 9983
 // Function ID: 9984
 // Name: PremiumNitroHome
-// Dependencies: [32, 19, 17, 5307, 2179, 9984, 1072, 5152, 1390, 21, 671, 575, 5306, 1502, 7428, 7497, 5919, 1113, 9985, 9307, 9986, 10010, 9627, 10013, 10014, 10015, 10075, 15290, 1256, 15313, 15314, 15316, 15317, 15318, 1630, 15326, 7994, 504, 8529, 9317, 15327, 7983, 5588, 1655, 5929, 5313, 15328, 5338, 5139, 9306, 5140, 6010, 15329, 15330, 14944, 11251, 5883, 1380, 5895, 2]
+// Dependencies: [32, 19, 17, 5307, 2179, 9984, 1072, 5152, 1390, 21, 671, 575, 5306, 1502, 7428, 7497, 5919, 1113, 9985, 9307, 9986, 10010, 9627, 10013, 10014, 10015, 10075, 15292, 1256, 15315, 15316, 15318, 15319, 15320, 1630, 15328, 7994, 504, 8529, 9317, 15329, 7983, 5588, 1655, 5929, 5313, 15330, 5338, 5139, 9306, 5140, 6010, 15331, 15332, 14946, 11251, 5883, 1380, 5895, 2]
 // Exports: default
 
 // Module 9983 (PremiumNitroHome)
@@ -24,7 +24,7 @@ import PremiumPerkCardDefault from "PremiumPerkCard" /* 9986 */;
 import reactDefault from "react" /* 10013 */;
 import PremiumNitroHomeUtils from "PremiumNitroHomeUtils" /* 10014 */;
 import MarketingPageBannerTileDefault from "MarketingPageBannerTile" /* 10015 */;
-import PremiumPerkCarouselDefault from "PremiumPerkCarousel" /* 15313 */;
+import PremiumPerkCarouselDefault from "PremiumPerkCarousel" /* 15315 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -349,13 +349,13 @@ export default function PremiumNitroHome(onClose) {
   let tmp = bottom;
   const tmp2 = dependencyMap;
   onClose = onClose.onClose;
-  let obj = bottom(15316);
-  const commonTriggerPoint = obj.useCommonTriggerPoint(bottom(15317).OpenNitroTriggerPoint);
-  let obj2 = bottom(15318);
+  let obj = bottom(15318);
+  const commonTriggerPoint = obj.useCommonTriggerPoint(bottom(15319).OpenNitroTriggerPoint);
+  let obj2 = bottom(15320);
   const giftCardMobileConsumptionHalfsheet = obj2.useGiftCardMobileConsumptionHalfsheet();
   const tmp5 = closure_22();
   bottom = navigation(1630)().bottom;
-  let obj3 = bottom(15326);
+  let obj3 = bottom(15328);
   const youBarSettingsCustomHeaderPaddingTop = obj3.useYouBarSettingsCustomHeaderPaddingTop();
   let obj4 = bottom(1502);
   navigation = obj4.useNavigation();
@@ -399,7 +399,7 @@ export default function PremiumNitroHome(onClose) {
   const tmp19 = navigation(8529)();
   const tmpResult13 = tmp(9317);
   const isInReverseTrial = tmpResult13.useIsInReverseTrial();
-  const tmpResult14 = tmp(15327);
+  const tmpResult14 = tmp(15329);
   const maybeFetchTieredTenureBadgeData = tmpResult14.useMaybeFetchTieredTenureBadgeData();
   const field = PremiumNitroNavigationStore.useField("scrollToSectionId");
   const effect = obj5.useEffect(() => () => {
@@ -462,8 +462,8 @@ export default function PremiumNitroHome(onClose) {
   const tmpResult19 = tmp(5313);
   const isThemeDarkResult = tmpResult19.isThemeDark(theme);
   const ONYX = constants2.ONYX;
-  const tmp6Result = navigation(15328);
-  const tmp6ResultResult = tmp6Result(tmp19.endsAt, tmp(15328).CountDownMessageTypes.ENDS_IN);
+  const tmp6Result = navigation(15330);
+  const tmp6ResultResult = tmp6Result(tmp19.endsAt, tmp(15330).CountDownMessageTypes.ENDS_IN);
   const tmpResult20 = tmp(9307);
   isEligibleSenderForReferralProgram = tmpResult20.useIsEligibleSenderForReferralProgram();
   const items7 = [isEligibleSenderForReferralProgram];
@@ -510,17 +510,17 @@ export default function PremiumNitroHome(onClose) {
   }, items8);
   const obj11 = { style: items9, children: items10 };
   items9 = [tmp5.container, { paddingTop: youBarSettingsCustomHeaderPaddingTop }];
-  const obj12 = { style: tmp5.background, source: navigation(15329) };
+  const obj12 = { style: tmp5.background, source: navigation(15331) };
   const tmp6Result3 = navigation(6010);
   items10 = [closure_16(tmp6Result3, obj12), closure_16(NitroHomeHeader, { onClose, subscription: stateFromStores1 }), , , ];
   let tmp25Result = tmp19.fractionalState !== FractionalPremiumStates.NONE && !isInReverseTrial;
   if (tmp25Result) {
     const obj13 = { countdownText: tmp6ResultResult };
-    tmp25Result = tmp25(tmp6(15330), obj13);
+    tmp25Result = tmp25(tmp6(15332), obj13);
   }
   items10[2] = tmp25Result;
   const obj14 = { style: tmp5.tabContent, children: items11 };
-  items11 = [closure_16(tmp(14944).SegmentedControlPages, { state: segmentedControlState, nativeGesture: memo }), ];
+  items11 = [closure_16(tmp(14946).SegmentedControlPages, { state: segmentedControlState, nativeGesture: memo }), ];
   if (tmp25Result4) {
     const obj15 = { style: tmp5.backSwipeSensor };
     tmp25Result4 = closure_16(sharedValue, obj15);

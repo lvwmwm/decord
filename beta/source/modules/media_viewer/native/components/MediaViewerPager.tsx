@@ -1,14 +1,14 @@
-// Module ID: 15238
-// Function ID: 15239
+// Module ID: 15240
+// Function ID: 15241
 // Name: MediaViewerPager
-// Dependencies: [32, 19, 21, 8633, 8632, 12634, 15232, 1655, 15230, 5491, 5588, 8628, 1380, 15234, 15239, 15240, 2]
+// Dependencies: [32, 19, 21, 8633, 8632, 12636, 15234, 1655, 15232, 5491, 5588, 8628, 1380, 15236, 15241, 15242, 2]
 
-// Module 15238 (MediaViewerPager)
+// Module 15240 (MediaViewerPager)
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 5588 */;
 import useMediaViewerSources from "useMediaViewerSources" /* 8628 */;
-import MediaViewerItemPresenterDefault from "MediaViewerItemPresenter" /* 15234 */;
+import MediaViewerItemPresenterDefault from "MediaViewerItemPresenter" /* 15236 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

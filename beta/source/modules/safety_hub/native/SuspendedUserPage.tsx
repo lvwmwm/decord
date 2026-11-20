@@ -1,10 +1,10 @@
-// Module ID: 19779
-// Function ID: 19780
+// Module ID: 19781
+// Function ID: 19782
 // Name: SuspendedUserPage
-// Dependencies: [19, 17, 8231, 8206, 21, 5306, 575, 504, 7415, 7988, 1113, 6834, 7430, 5919, 6002, 17266, 2]
+// Dependencies: [19, 17, 8231, 8206, 21, 5306, 575, 504, 7415, 7988, 1113, 6834, 7430, 5919, 6002, 17268, 2]
 // Exports: default
 
-// Module 19779 (SuspendedUserPage)
+// Module 19781 (SuspendedUserPage)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -13,7 +13,7 @@ import LinkingDefault from "Linking" /* 6002 */;
 import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6834 */;
 import common_SafeAreaView from "common/SafeAreaView" /* 7415 */;
 import AssetRegistryDefault from "AssetRegistry" /* 7430 */;
-import SafetyHubPageDefault from "SafetyHubPage" /* 17266 */;
+import SafetyHubPageDefault from "SafetyHubPage" /* 17268 */;
 import react from "react" /* 19 */;
 import SafetyHubStore from "SafetyHubStore" /* 8231 */;
 import SafetyHubConstants from "SafetyHubConstants" /* 8206 */;

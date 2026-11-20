@@ -1,10 +1,10 @@
-// Module ID: 17245
-// Function ID: 17246
+// Module ID: 17247
+// Function ID: 17248
 // Name: AgeNoticePromoSheet
-// Dependencies: [19, 6831, 1072, 5152, 21, 5306, 575, 6820, 17246, 5542, 17244, 8190, 6823, 2188, 8604, 1113, 3353, 10713, 6010, 17247, 6941, 5926, 2]
+// Dependencies: [19, 6831, 1072, 5152, 21, 5306, 575, 6820, 17248, 5542, 17246, 8190, 6823, 2188, 8604, 1113, 3353, 10713, 6010, 17249, 6941, 5926, 2]
 // Exports: default
 
-// Module 17245 (AgeNoticePromoSheet)
+// Module 17247 (AgeNoticePromoSheet)
 import nativeDefault from "native" /* 575 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
 import _modDef3353 from "module_3353" /* 3353 */;
@@ -14,7 +14,7 @@ import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 682
 import AgeNoticeConstants from "AgeNoticeConstants" /* 6831 */;
 import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8190 */;
 import openUserSettings from "openUserSettings" /* 8604 */;
-import openAgeNoticePromoSheet from "openAgeNoticePromoSheet" /* 17244 */;
+import openAgeNoticePromoSheet from "openAgeNoticePromoSheet" /* 17246 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
@@ -52,7 +52,7 @@ export default function AgeNoticePromoSheet(markAsDismissed) {
   const tmp = closure_10();
   let obj = dismissOnce(6820);
   const isVerifiedTeen = obj.useIsVerifiedTeen();
-  let obj2 = dismissOnce(17246);
+  let obj2 = dismissOnce(17248);
   dismissOnce = obj2.useDismissOnce(markAsDismissed);
   const items = [dismissOnce];
   const items1 = [dismissOnce];
@@ -113,7 +113,7 @@ export default function AgeNoticePromoSheet(markAsDismissed) {
   }
   const obj4 = { illustration: closure_8(tmp14Result, obj5), title: intl2.string(tmp14(3353).GdTVPF), description: formatResult, onDismiss: callback, actions: closure_9(ButtonGroup, obj8) };
   const PromoSheet = tmp2(10713).PromoSheet;
-  obj5 = { source: tmp14(17247), style: tmp.illustration, resizeMode: "contain" };
+  obj5 = { source: tmp14(17249), style: tmp.illustration, resizeMode: "contain" };
   tmp14Result = tmp14(6010);
   intl2 = tmp2(1113).intl;
   const intl3 = tmp2(1113).intl;

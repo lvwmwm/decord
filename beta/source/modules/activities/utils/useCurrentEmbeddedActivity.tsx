@@ -1,10 +1,10 @@
-// Module ID: 12843
-// Function ID: 12844
+// Module ID: 12845
+// Function ID: 12846
 // Name: useCurrentEmbeddedActivity
 // Dependencies: [5154, 504, 2]
 // Exports: default
 
-// Module 12843 (useCurrentEmbeddedActivity)
+// Module 12845 (useCurrentEmbeddedActivity)
 import get_initialized from "get initialized" /* 504 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5154 */;
 import size from "module_2" /* 2 */;

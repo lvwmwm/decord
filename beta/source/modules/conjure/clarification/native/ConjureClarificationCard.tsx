@@ -1,14 +1,14 @@
-// Module ID: 13732
-// Function ID: 13733
+// Module ID: 13734
+// Function ID: 13735
 // Name: ConjureClarificationCard
-// Dependencies: [32, 19, 17, 21, 5306, 575, 1113, 4131, 13733, 13734, 13735, 13571, 7619, 13211, 5919, 7988, 7549, 13736, 7746, 7733, 7445, 13740, 13744, 5926, 2]
+// Dependencies: [32, 19, 17, 21, 5306, 575, 1113, 4131, 13735, 13736, 13737, 13573, 7619, 13213, 5919, 7988, 7549, 13738, 7746, 7733, 7445, 13742, 13746, 5926, 2]
 // Exports: default
 
-// Module 13732 (ConjureClarificationCard)
+// Module 13734 (ConjureClarificationCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ConjureClarification from "ConjureClarification" /* 13571 */;
-import ConjureImageOptions from "ConjureImageOptions" /* 13734 */;
+import ConjureClarification from "ConjureClarification" /* 13573 */;
+import ConjureImageOptions from "ConjureImageOptions" /* 13736 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -78,7 +78,7 @@ export default function ConjureClarificationCard(projectId) {
   let tmp69;
   let tmp70;
   let tmp8;
-  const f108189 = () => {
+  const f108195 = () => {
     const questions = clarification.questions;
     return Object.fromEntries(questions.flatMap((default_entities) => {
       let items2;
@@ -121,8 +121,8 @@ export default function ConjureClarificationCard(projectId) {
   [tmp6, c7] = tmp5;
   let tmp7 = _slicedToArray(react.useState({}), 2);
   [tmp8, c8] = tmp7;
-  [tmp10, c9] = _slicedToArray(react.useState(f108189), 2);
-  const tmp9 = _slicedToArray(react.useState(f108189), 2);
+  [tmp10, c9] = _slicedToArray(react.useState(f108195), 2);
+  const tmp9 = _slicedToArray(react.useState(f108195), 2);
   [first1, closure_10] = react.useState({});
   const tmp15 = clarification(onSubmit[8])(projectId, clarification, tmp10);
   const builds = tmp15.builds;
@@ -165,7 +165,7 @@ export default function ConjureClarificationCard(projectId) {
       const result = obj.followingClarificationStep(clarification, arg0, bound);
       const tmp3 = require;
       if (null == result) {
-        const tmp3Result = tmp3(13571);
+        const tmp3Result = tmp3(13573);
         result1 = tmp3Result.submitClarificationAnswers(projectId, tmp5, arg0, builds, tmp);
       } else {
         closure_12(result);

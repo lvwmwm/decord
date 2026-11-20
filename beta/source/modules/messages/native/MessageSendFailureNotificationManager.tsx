@@ -1,14 +1,14 @@
-// Module ID: 20818
-// Function ID: 20819
+// Module ID: 20820
+// Function ID: 20821
 // Name: MessageSendFailureNotificationManager
-// Dependencies: [5209, 5339, 1388, 2120, 1072, 7397, 11025, 11027, 12920, 1113, 7882, 2]
+// Dependencies: [5209, 5339, 1388, 2120, 1072, 7397, 11025, 11027, 12922, 1113, 7882, 2]
 
-// Module 20818 (MessageSendFailureNotificationManager)
+// Module 20820 (MessageSendFailureNotificationManager)
 import intl3 from "intl" /* 1113 */;
 import Constants2 from "Constants" /* 7397 */;
 import InAppNotificationUtils from "InAppNotificationUtils" /* 11025 */;
 import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 11027 */;
-import PushNotificationDefault from "PushNotification" /* 12920 */;
+import PushNotificationDefault from "PushNotification" /* 12922 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5339 */;
 import UserStore from "UserStore" /* 1388 */;

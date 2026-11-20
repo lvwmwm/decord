@@ -1,66 +1,36 @@
 // Module ID: 13900
 // Function ID: 13901
 // Name: tokenize
-// Dependencies: [13831]
+// Dependencies: [13833]
 
 // Module 13900 (tokenize)
-import tokenize from "tokenize" /* 13831 */;
+import tokenize from "tokenize" /* 13833 */;
 
 let items;
 let obj2;
-const Ident = tokenize.TYPE.Ident;
-const Function = tokenize.TYPE.Function;
-const Colon = tokenize.TYPE.Colon;
+const LeftParenthesis = tokenize.TYPE.LeftParenthesis;
 const RightParenthesis = tokenize.TYPE.RightParenthesis;
-let obj = {
-  name: "PseudoClassSelector",
+const obj = {
+  name: "Parentheses",
   structure: obj2,
-  parse() {
-    let consumeResult;
-    let tmp4;
+  parse(call, arg1) {
     const self = this;
     const tokenStart = this.scanner.tokenStart;
-    this.eat(Colon);
-    if (this.scanner.tokenType === Function) {
-      let list;
-      const str = self.consumeFunctionName();
-      const formatted = str.toLowerCase();
-      const pseudo = self.pseudo;
-      if (pseudo.hasOwnProperty(formatted)) {
-        const scanner = self.scanner;
-        scanner.skipSC();
-        const scanner2 = self.scanner;
-        const obj = self.pseudo[formatted];
-        const callResult = obj.call(self);
-        scanner2.skipSC();
-        list = callResult;
-      } else {
-        list = self.createList();
-        list.push(self.Raw(self.scanner.tokenIndex, null, false));
-      }
+    this.eat(LeftParenthesis);
+    const callResult = call.call(self, arg1);
+    if (!self.scanner.eof) {
       self.eat(RightParenthesis);
-      tmp4 = list;
-      consumeResult = str;
-    } else {
-      consumeResult = self.consume(Ident);
-      tmp4 = null;
     }
-    const element = { type: "PseudoClassSelector", loc: self.getLocation(tokenStart, self.scanner.tokenStart), name: consumeResult, children: tmp4 };
+    const element = { type: "Parentheses", loc: self.getLocation(tokenStart, self.scanner.tokenStart), children: callResult };
     return element;
   },
-  generate(name) {
-    const self = this;
-    this.chunk(":");
-    this.chunk(name.name);
-    if (null !== name.children) {
-      self.chunk("(");
-      self.children(name);
-      self.chunk(")");
-    }
-  },
-  walkContext: "function"
+  generate(arg0) {
+    this.chunk("(");
+    this.children(arg0);
+    this.chunk(")");
+  }
 };
-obj2 = { name: String, children: items };
-items = [["Raw"], null];
+obj2 = { children: items };
+items = [[]];
 
 export default obj;

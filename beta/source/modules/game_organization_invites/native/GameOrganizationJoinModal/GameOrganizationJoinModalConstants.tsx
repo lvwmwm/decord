@@ -1,10 +1,10 @@
-// Module ID: 14074
-// Function ID: 14075
+// Module ID: 14076
+// Function ID: 14077
 // Name: GameOrganizationJoinModalConstants
 // Dependencies: [12369, 6838, 2]
 // Exports: closeGameOrganizationJoinModal
 
-// Module 14074 (GameOrganizationJoinModalConstants)
+// Module 14076 (GameOrganizationJoinModalConstants)
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 12369 */;
 import size from "module_2" /* 2 */;

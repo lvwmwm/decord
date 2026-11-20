@@ -1,10 +1,10 @@
-// Module ID: 15203
-// Function ID: 15204
+// Module ID: 15205
+// Function ID: 15206
 // Name: useMediaItemSpoilerState
 // Dependencies: [32, 19, 8632, 1655, 5538, 1187, 1708, 2]
 // Exports: useMediaItemSpoilerState
 
-// Module 15203 (useMediaItemSpoilerState)
+// Module 15205 (useMediaItemSpoilerState)
 import native from "native" /* 1187 */;
 import _mod1708 from "module_1708" /* 1708 */;
 import timing_timing from "timing/timing" /* 5538 */;

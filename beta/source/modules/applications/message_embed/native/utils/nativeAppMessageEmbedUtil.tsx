@@ -1,14 +1,14 @@
-// Module ID: 14553
-// Function ID: 14554
+// Module ID: 14555
+// Function ID: 14556
 // Name: nativeAppMessageEmbedUtil
-// Dependencies: [5303, 575, 8538, 12427, 1414, 2]
+// Dependencies: [5303, 575, 8538, 12429, 1414, 2]
 // Exports: getAppGradientColors, getAppIconSrc
 
-// Module 14553 (nativeAppMessageEmbedUtil)
+// Module 14555 (nativeAppMessageEmbedUtil)
 import nativeDefault from "native" /* 575 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
 import useAvatarColor from "useAvatarColor" /* 8538 */;
-import useHeroColors from "useHeroColors" /* 12427 */;
+import useHeroColors from "useHeroColors" /* 12429 */;
 import ColorUtils_mod from "ColorUtils" /* 5303 */;
 import size from "module_2" /* 2 */;
 

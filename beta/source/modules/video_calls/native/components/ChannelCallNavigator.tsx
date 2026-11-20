@@ -1,10 +1,10 @@
-// Module ID: 12903
-// Function ID: 12904
+// Module ID: 12905
+// Function ID: 12906
 // Name: ChannelCallNavigator
-// Dependencies: [5, 32, 19, 17, 12904, 11004, 1072, 12765, 21, 5306, 1496, 11009, 1655, 1708, 12905, 11002, 11007, 6828, 6838, 7399, 2121, 1108, 12971, 11980, 5478, 12917, 1380, 5367, 5508, 7490, 2]
+// Dependencies: [5, 32, 19, 17, 12906, 11004, 1072, 12767, 21, 5306, 1496, 11009, 1655, 1708, 12907, 11002, 11007, 6828, 6838, 7399, 2121, 1108, 12973, 11980, 5478, 12919, 1380, 5367, 5508, 7490, 2]
 // Exports: default
 
-// Module 12903 (ChannelCallNavigator)
+// Module 12905 (ChannelCallNavigator)
 import Constants from "Constants" /* 1072 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
 import _mod1655 from "module_1655" /* 1655 */;
@@ -12,12 +12,12 @@ import _mod1708 from "module_1708" /* 1708 */;
 import reactDefault from "react" /* 5508 */;
 import ChannelCallConstants from "ChannelCallConstants" /* 11004 */;
 import VoiceChatModalContext from "VoiceChatModalContext" /* 11009 */;
-import Constants2 from "Constants" /* 12765 */;
+import Constants2 from "Constants" /* 12767 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SafeAreaDisabledStore from "SafeAreaDisabledStore" /* 12904 */;
+import SafeAreaDisabledStore from "SafeAreaDisabledStore" /* 12906 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
@@ -190,7 +190,7 @@ function CallWithVoiceChat(channel) {
   let tmp31 = null;
   if (channel.isGuildStageVoice()) {
     const obj4 = { channel };
-    tmp31 = authStore2(tmp2(12905), obj4);
+    tmp31 = authStore2(tmp2(12907), obj4);
   }
   items9 = [tmp31, ];
   const obj5 = { pointerEvents: "box-none", style: items10 };
@@ -319,7 +319,7 @@ function MainCallScreen(channel) {
       }
     };
   }, []);
-  isConnectedToVoiceChannel(12971);
+  isConnectedToVoiceChannel(12973);
   if (isChannelContentGated) {
     let obj3 = { onReturnToSafety: id(6838).pop, guildId: null, channelId: null };
     ({ guild_id: obj6.guildId, id: obj6.channelId } = channel);
@@ -340,13 +340,13 @@ function MainCallScreen(channel) {
     if (channel.isGuildStageVoice()) {
       let tmp17 = id;
       const obj7 = { channel };
-      tmp14Result = tmp14(id(12905), obj7);
+      tmp14Result = tmp14(id(12907), obj7);
     }
     tmp14Result2 = tmp14(tmp15, obj5);
     tmp11 = tmp14;
   }
   const tmp21 = id(5478)();
-  const tmp22 = id(12917);
+  const tmp22 = id(12919);
   const tmp2Result = isConnectedToVoiceChannel(1380);
   const tmp23 = tmp2Result.isAndroid() || !isConnectedToVoiceChannel;
   const obj8 = { forceHide: tmp23, showWhenParticipantOnScreen: !isConnectedToVoiceChannel, children: tmp11(isConnectedToVoiceChannel(5367).ThemeContextProvider, { gradient: tmp21, children: tmp14Result2 }) };

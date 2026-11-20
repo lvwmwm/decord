@@ -1,10 +1,10 @@
-// Module ID: 14070
-// Function ID: 14071
+// Module ID: 14072
+// Function ID: 14073
 // Name: openGameOrganizationCantJoinActionSheet
-// Dependencies: [12369, 5542, 14071, 2121, 2]
+// Dependencies: [12369, 5542, 14073, 2121, 2]
 // Exports: default
 
-// Module 14070 (openGameOrganizationCantJoinActionSheet)
+// Module 14072 (openGameOrganizationCantJoinActionSheet)
 import asyncRequire from "asyncRequire" /* 2121 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 12369 */;
@@ -16,5 +16,5 @@ const result = size.fileFinishedImporting("modules/game_organization_invites/nat
 export default function openGameOrganizationCantJoinActionSheet(code, reason) {
   const obj = ActionSheetActionCreatorsDefault;
   const obj2 = { code, reason };
-  obj.openLazy(asyncRequire(14071, dependencyMap.paths), closure_3, obj2);
+  obj.openLazy(asyncRequire(14073, dependencyMap.paths), closure_3, obj2);
 };

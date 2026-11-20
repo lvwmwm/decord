@@ -1,10 +1,10 @@
-// Module ID: 17636
-// Function ID: 17637
+// Module ID: 17638
+// Function ID: 17639
 // Name: AppIcon
 // Dependencies: [19, 17, 11179, 21, 5306, 575, 5537, 5313, 6010, 2]
 // Exports: default
 
-// Module 17636 (AppIcon)
+// Module 17638 (AppIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

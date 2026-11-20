@@ -1,10 +1,10 @@
-// Module ID: 13518
-// Function ID: 13519
+// Module ID: 13520
+// Function ID: 13521
 // Name: UsernameText
 // Dependencies: [19, 21, 6341, 5919, 2]
 // Exports: default
 
-// Module 13518 (UsernameText)
+// Module 13520 (UsernameText)
 import NicknameUtils from "NicknameUtils" /* 6341 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

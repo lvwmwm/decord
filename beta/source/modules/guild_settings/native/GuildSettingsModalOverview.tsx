@@ -1,10 +1,10 @@
-// Module ID: 20446
-// Function ID: 20447
+// Module ID: 20448
+// Function ID: 20449
 // Name: GuildSettingsModalOverview
-// Dependencies: [19, 5173, 5155, 5236, 5526, 5238, 5248, 1388, 8405, 1072, 21, 5306, 575, 1113, 5367, 6004, 7493, 7427, 8404, 11963, 20447, 1406, 7948, 6259, 6330, 7619, 5944, 7746, 7443, 9221, 20206, 7243, 7954, 7745, 7747, 2188, 20451, 1414, 12002, 7859, 7688, 8106, 6327, 5902, 1502, 504, 2]
+// Dependencies: [19, 5173, 5155, 5236, 5526, 5238, 5248, 1388, 8405, 1072, 21, 5306, 575, 1113, 5367, 6004, 7493, 7427, 8404, 11963, 20449, 1406, 7948, 6259, 6330, 7619, 5944, 7746, 7443, 9221, 20208, 7243, 7954, 7745, 7747, 2188, 20453, 1414, 12002, 7859, 7688, 8106, 6327, 5902, 1502, 504, 2]
 // Exports: default
 
-// Module 20446 (GuildSettingsModalOverview)
+// Module 20448 (GuildSettingsModalOverview)
 import nativeDefault from "native" /* 575 */;
 import intl13 from "intl" /* 1113 */;
 import FlagUtils from "FlagUtils" /* 1406 */;
@@ -32,7 +32,7 @@ import _mod8106 from "module_8106" /* 8106 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 8404 */;
 import openChannelPickerDefault from "openChannelPicker" /* 11963 */;
 import ChannelSummariesExperiment from "ChannelSummariesExperiment" /* 12002 */;
-import AssetChooserDefault from "AssetChooser" /* 20451 */;
+import AssetChooserDefault from "AssetChooser" /* 20453 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import GuildChannelStore from "GuildChannelStore" /* 5236 */;
@@ -477,7 +477,7 @@ class GuildSettingsModalOverview extends PureComponent {
       const tmpResult14 = tmp(1406);
       hasFlagResult1 = tmpResult14.hasFlag(guild.systemChannelFlags, constants6.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATION_REPLIES);
     }
-    const tmpResult15 = tmp(20206);
+    const tmpResult15 = tmp(20208);
     let result1 = tmpResult15.isPastVcActivityMessagesEnabled(guild.id, "GuildSettingsModalOverview");
     if (!result1) {
       const tmpResult16 = tmp(1406);

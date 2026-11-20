@@ -1,10 +1,10 @@
-// Module ID: 19556
-// Function ID: 19557
+// Module ID: 19558
+// Function ID: 19559
 // Name: ThreadBrowserRowSubtext
-// Dependencies: [19, 17, 5307, 5218, 1388, 8871, 1072, 1083, 21, 5306, 575, 504, 9008, 6340, 6907, 5919, 1113, 5362, 14150, 6739, 11, 1187, 8646, 9189, 2]
+// Dependencies: [19, 17, 5307, 5218, 1388, 8871, 1072, 1083, 21, 5306, 575, 504, 9008, 6340, 6907, 5919, 1113, 5362, 14152, 6739, 11, 1187, 8646, 9189, 2]
 // Exports: ThreadSubtext
 
-// Module 19556 (ThreadBrowserRowSubtext)
+// Module 19558 (ThreadBrowserRowSubtext)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
@@ -52,7 +52,7 @@ function MessageContent(arg0) {
   c4 = undefined;
   let roleStyle;
   let tmp = closure_13();
-  let obj = message(14150);
+  let obj = message(14152);
   items = [message.author.id];
   const subscribeGuildMembers = obj.useSubscribeGuildMembers({ [thread.guild_id]: items }, "ThreadBrowserRowSubtext");
   const items1 = [UserStore];

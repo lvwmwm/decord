@@ -1,10 +1,10 @@
-// Module ID: 15669
-// Function ID: 15670
+// Module ID: 15671
+// Function ID: 15672
 // Name: MediaSlider
-// Dependencies: [32, 19, 17, 21, 5306, 1380, 15224, 5907, 12, 671, 8897, 7428, 1113, 7606, 12318, 5919, 13007, 15670, 575, 2]
+// Dependencies: [32, 19, 17, 21, 5306, 1380, 15226, 5907, 12, 671, 8897, 7428, 1113, 7606, 12318, 5919, 13009, 15672, 575, 2]
 // Exports: default
 
-// Module 15669 (MediaSlider)
+// Module 15671 (MediaSlider)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

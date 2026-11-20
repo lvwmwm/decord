@@ -1,10 +1,10 @@
-// Module ID: 17525
-// Function ID: 17526
+// Module ID: 17527
+// Function ID: 17528
 // Name: useQuestHomeHeader
-// Dependencies: [19, 17, 6954, 1072, 1074, 21, 5306, 575, 10562, 5919, 1113, 10038, 17526, 1256, 7937, 5542, 8484, 10043, 17540, 2121, 7448, 13801, 1502, 15948, 2]
+// Dependencies: [19, 17, 6954, 1072, 1074, 21, 5306, 575, 10562, 5919, 1113, 10038, 17528, 1256, 7937, 5542, 8484, 10043, 17542, 2121, 7448, 13803, 1502, 15950, 2]
 // Exports: default
 
-// Module 17525 (useQuestHomeHeader)
+// Module 17527 (useQuestHomeHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
@@ -51,7 +51,7 @@ function QuestHomeHeaderRight(isVirtualCurrencyEnabled) {
   const tmp2 = closure_11();
   let obj = balance(10038);
   balance = obj.useFetchVirtualCurrencyBalance().balance;
-  let obj2 = balance(17526);
+  let obj2 = balance(17528);
   const orbBalanceEntrypoint = obj2.useOrbBalanceEntrypoint({ location: "MobileQuestHomeHeader" });
   const openBalanceWidgetActionSheet = orbBalanceEntrypoint.openBalanceWidgetActionSheet;
   let items = [balance, openBalanceWidgetActionSheet];
@@ -93,7 +93,7 @@ function FiltersButton(setSelectedSortMethod) {
   const callback = selectedSortMethod.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { onSortMethodChange: setSelectedSortMethod, onFiltersChange: setSelectedFilters, initialSortMethod: selectedSortMethod, initialFilters: selectedFilters };
-    obj.openLazy(asyncRequire(17540, dependencyMap.paths), "QuestHomeSortingFilteringBottomSheet", obj2);
+    obj.openLazy(asyncRequire(17542, dependencyMap.paths), "QuestHomeSortingFilteringBottomSheet", obj2);
   }, items);
   let obj = { icon: closure_9(setSelectedSortMethod(tmp3[21]).FiltersHorizontalIcon, { size: "sm", color: INTERACTIVE_TEXT_DEFAULT }), size: "sm", variant: str, onPress: callback, accessibilityLabel: intl.string(setSelectedSortMethod(tmp3[10]).t.UdhTtk), scaleAmountInPx: 4 };
   const BaseIconButton = setSelectedSortMethod(tmp3[20]).BaseIconButton;

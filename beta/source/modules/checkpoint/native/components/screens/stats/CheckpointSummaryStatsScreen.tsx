@@ -1,10 +1,10 @@
-// Module ID: 14531
-// Function ID: 14532
+// Module ID: 14533
+// Function ID: 14534
 // Name: CheckpointSummaryStatsScreen
-// Dependencies: [19, 17, 5307, 14253, 6367, 21, 575, 5306, 1360, 504, 14270, 6391, 14485, 7994, 14532, 14271, 1113, 3317, 1414, 8375, 3285, 7720, 5919, 6737, 11328, 14512, 5252, 7894, 6010, 14506, 14479, 2]
+// Dependencies: [19, 17, 5307, 14255, 6367, 21, 575, 5306, 1360, 504, 14272, 6391, 14487, 7994, 14534, 14273, 1113, 3317, 1414, 8375, 3285, 7720, 5919, 6737, 11328, 14514, 5252, 7894, 6010, 14508, 14481, 2]
 // Exports: default
 
-// Module 14531 (CheckpointSummaryStatsScreen)
+// Module 14533 (CheckpointSummaryStatsScreen)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -18,16 +18,16 @@ import GuildIcon from "GuildIcon" /* 7720 */;
 import EmojiDefault from "Emoji" /* 7894 */;
 import useMeasuredLayoutDefault from "useMeasuredLayout" /* 7994 */;
 import FlagIcon from "FlagIcon" /* 11328 */;
-import CheckpointScreen from "CheckpointScreen" /* 14270 */;
-import CheckpointTextDefault from "CheckpointText" /* 14271 */;
-import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 14479 */;
-import useIsCheckpointWideDefault from "useIsCheckpointWide" /* 14485 */;
-import CheckpointNumberUtils from "CheckpointNumberUtils" /* 14506 */;
-import CheckpointDisplayTextDefault from "CheckpointDisplayText" /* 14512 */;
-import CheckpointRecapCardDefault from "CheckpointRecapCard" /* 14532 */;
+import CheckpointScreen from "CheckpointScreen" /* 14272 */;
+import CheckpointTextDefault from "CheckpointText" /* 14273 */;
+import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 14481 */;
+import useIsCheckpointWideDefault from "useIsCheckpointWide" /* 14487 */;
+import CheckpointNumberUtils from "CheckpointNumberUtils" /* 14508 */;
+import CheckpointDisplayTextDefault from "CheckpointDisplayText" /* 14514 */;
+import CheckpointRecapCardDefault from "CheckpointRecapCard" /* 14534 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5307 */;
-import CheckpointStore from "CheckpointStore" /* 14253 */;
+import CheckpointStore from "CheckpointStore" /* 14255 */;
 import CheckpointConstants from "CheckpointConstants" /* 6367 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
@@ -244,7 +244,7 @@ function UserSummaryStats(stats) {
   const obj7 = { style: tmp.container, children: items5 };
   if (null != stateFromStores) {
     const obj9 = { isStepFocusTarget: true, character: stateFromStores, maxHeight: diff };
-    tmp22Result4 = tmp22(tmp9(14532), obj9);
+    tmp22Result4 = tmp22(tmp9(14534), obj9);
   } else {
     const obj10 = { style: tmp.heading, children: items4 };
     const obj11 = { style: tmp.headingLabel, children: items3 };

@@ -1,10 +1,10 @@
-// Module ID: 15929
-// Function ID: 15930
+// Module ID: 15931
+// Function ID: 15932
 // Name: EventDetailInfoSheet
 // Dependencies: [19, 17, 5307, 5218, 5177, 6061, 1388, 5161, 7966, 1083, 21, 5306, 575, 6816, 5542, 504, 7971, 7969, 7968, 7984, 10996, 5919, 1113, 1187, 5362, 8432, 6941, 8433, 2]
 // Exports: closeGuildEventInfoActionSheet, default
 
-// Module 15929 (EventDetailInfoSheet)
+// Module 15931 (EventDetailInfoSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;

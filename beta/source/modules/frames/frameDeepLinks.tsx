@@ -1,10 +1,10 @@
-// Module ID: 15993
-// Function ID: 15994
+// Module ID: 15995
+// Function ID: 15996
 // Name: frameDeepLinks
 // Dependencies: [32, 572, 5967, 2]
 // Exports: clearFrameDeepLinks, getFrameDeepLinkChannelId, queueFrameDeepLink, queueFrameDeepLinkFromUrl, setFrameRelaunchDeepLink, takeFrameDeepLink
 
-// Module 15993 (frameDeepLinks)
+// Module 15995 (frameDeepLinks)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5967 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

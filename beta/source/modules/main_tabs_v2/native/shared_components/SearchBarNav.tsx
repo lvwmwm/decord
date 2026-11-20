@@ -1,10 +1,10 @@
-// Module ID: 14739
-// Function ID: 14740
+// Module ID: 14741
+// Function ID: 14742
 // Name: SearchBarNav
 // Dependencies: [19, 17, 21, 5306, 5882, 575, 7428, 1113, 1380, 7497, 5919, 7825, 2]
 // Exports: default
 
-// Module 14739 (SearchBarNav)
+// Module 14741 (SearchBarNav)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;

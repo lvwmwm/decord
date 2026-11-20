@@ -1,14 +1,14 @@
-// Module ID: 20321
-// Function ID: 20322
+// Module ID: 20323
+// Function ID: 20324
 // Name: ArrowsLeftRightIcon
-// Dependencies: [19, 21, 575, 6009, 20322, 2]
+// Dependencies: [19, 21, 575, 6009, 20324, 2]
 // Exports: ArrowsLeftRightIcon
 
-// Module 20321 (ArrowsLeftRightIcon)
+// Module 20323 (ArrowsLeftRightIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 6009 */;
-import AssetRegistry from "AssetRegistry" /* 20322 */;
+import AssetRegistry from "AssetRegistry" /* 20324 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

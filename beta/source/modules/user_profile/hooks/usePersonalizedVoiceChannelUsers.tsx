@@ -1,10 +1,10 @@
-// Module ID: 15743
-// Function ID: 15744
+// Module ID: 15745
+// Function ID: 15746
 // Name: usePersonalizedVoiceChannelUsers
 // Dependencies: [8553, 6836, 1388, 6064, 1072, 504, 2]
 // Exports: default
 
-// Module 15743 (usePersonalizedVoiceChannelUsers)
+// Module 15745 (usePersonalizedVoiceChannelUsers)
 import Constants from "Constants" /* 1072 */;
 import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 8553 */;
 import ConsentStore from "ConsentStore" /* 6836 */;

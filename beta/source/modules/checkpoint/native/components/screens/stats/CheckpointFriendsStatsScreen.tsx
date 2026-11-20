@@ -1,10 +1,10 @@
-// Module ID: 14527
-// Function ID: 14528
+// Module ID: 14529
+// Function ID: 14530
 // Name: CheckpointFriendsStatsScreen
-// Dependencies: [5, 32, 19, 17, 5307, 1388, 14253, 6367, 21, 575, 5541, 1655, 1360, 5306, 1414, 504, 14528, 14529, 14270, 5362, 6735, 5443, 14271, 1113, 3317, 3285, 6008, 14512, 14506, 8069, 14479, 13048, 13129, 1496, 5486, 1644, 5538, 14530, 14260, 6004, 1187, 14251, 11661, 7937, 11817, 6021, 2]
+// Dependencies: [5, 32, 19, 17, 5307, 1388, 14255, 6367, 21, 575, 5541, 1655, 1360, 5306, 1414, 504, 14530, 14531, 14272, 5362, 6735, 5443, 14273, 1113, 3317, 3285, 6008, 14514, 14508, 8069, 14481, 13050, 13131, 1496, 5486, 1644, 5538, 14532, 14262, 6004, 1187, 14253, 11661, 7937, 11817, 6021, 2]
 // Exports: default
 
-// Module 14527 (CheckpointFriendsStatsScreen)
+// Module 14529 (CheckpointFriendsStatsScreen)
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1113 */;
 import _mod1655 from "module_1655" /* 1655 */;
@@ -15,19 +15,19 @@ import FriendsIcon from "FriendsIcon" /* 6008 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
 import ChatIcon from "ChatIcon" /* 8069 */;
 import utils_openGiftModal from "utils/openGiftModal" /* 11661 */;
-import MicrophoneIcon from "MicrophoneIcon" /* 13048 */;
-import Tracking from "Tracking" /* 14251 */;
-import CheckpointTextDefault from "CheckpointText" /* 14271 */;
-import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 14479 */;
-import CheckpointNumberUtils from "CheckpointNumberUtils" /* 14506 */;
-import CheckpointDisplayTextDefault from "CheckpointDisplayText" /* 14512 */;
+import MicrophoneIcon from "MicrophoneIcon" /* 13050 */;
+import Tracking from "Tracking" /* 14253 */;
+import CheckpointTextDefault from "CheckpointText" /* 14273 */;
+import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 14481 */;
+import CheckpointNumberUtils from "CheckpointNumberUtils" /* 14508 */;
+import CheckpointDisplayTextDefault from "CheckpointDisplayText" /* 14514 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5307 */;
 import UserStore from "UserStore" /* 1388 */;
-import CheckpointStore from "CheckpointStore" /* 14253 */;
+import CheckpointStore from "CheckpointStore" /* 14255 */;
 import CheckpointConstants from "CheckpointConstants" /* 6367 */;
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "utils/PlatformUtils" /* 1360 */;
@@ -252,7 +252,7 @@ function SidekickMessageInput(user) {
   ref = ref.useRef(null);
   obj2 = user(1655);
   const sharedValue = obj2.useSharedValue(0);
-  const tmp13 = value(13129)();
+  const tmp13 = value(13131)();
   let obj3 = user(1360);
   const isIOSResult = obj3.isIOS();
   size = value(1496)({ ignoreKeyboard: true });
@@ -318,7 +318,7 @@ function SidekickMessageInput(user) {
     }
   }, items4);
   let tmp33 = null != value;
-  const tmp32 = value(14530)(user.id);
+  const tmp32 = value(14532)(user.id);
   if (tmp33) {
     tmp33 = value.length > 0;
   }

@@ -1,10 +1,10 @@
-// Module ID: 19772
-// Function ID: 19773
+// Module ID: 19774
+// Function ID: 19775
 // Name: Settings
-// Dependencies: [19, 17, 21, 5306, 575, 19628, 1630, 7771, 5263, 19773, 19625, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 19630, 1630, 7771, 5263, 19775, 19627, 2]
 // Exports: default
 
-// Module 19772 (Settings)
+// Module 19774 (Settings)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

@@ -1,13 +1,13 @@
-// Module ID: 13205
-// Function ID: 13206
+// Module ID: 13207
+// Function ID: 13208
 // Name: ConjureProjectServers
-// Dependencies: [19, 7017, 21, 13206, 7746, 1113, 4131, 7443, 5926, 13207, 2]
+// Dependencies: [19, 7017, 21, 13208, 7746, 1113, 4131, 7443, 5926, 13209, 2]
 // Exports: default
 
-// Module 13205 (ConjureProjectServers)
+// Module 13207 (ConjureProjectServers)
 import Fragment from "Fragment" /* 21 */;
 import _modDef4131 from "module_4131" /* 4131 */;
-import openConjureRemoveAppAlertDefault from "openConjureRemoveAppAlert" /* 13207 */;
+import openConjureRemoveAppAlertDefault from "openConjureRemoveAppAlert" /* 13209 */;
 import react from "react" /* 19 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 7017 */;
 import size from "module_2" /* 2 */;
@@ -21,7 +21,7 @@ export default function ConjureProjectServers(projectId) {
   projectId = projectId.projectId;
   const tmp = projectId;
   const tmp2 = dependencyMap;
-  let obj = projectId(13206);
+  let obj = projectId(13208);
   const conjureProjectServers = obj.useConjureProjectServers(projectId);
   let tmp3 = null;
   if (0 !== conjureProjectServers.length) {

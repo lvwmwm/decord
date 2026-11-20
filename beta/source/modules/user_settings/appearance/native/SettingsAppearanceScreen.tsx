@@ -1,9 +1,9 @@
-// Module ID: 17885
-// Function ID: 17886
+// Module ID: 17887
+// Function ID: 17888
 // Name: SettingsAppearanceScreen
-// Dependencies: [19, 5330, 1193, 1192, 17886, 9202, 1072, 21, 1502, 1380, 9051, 1113, 6052, 1263, 3679, 2188, 5889, 17887, 563, 12406, 17213, 2]
+// Dependencies: [19, 5330, 1193, 1192, 17888, 9202, 1072, 21, 1502, 1380, 9051, 1113, 6052, 1263, 3679, 2188, 5889, 17889, 563, 12408, 17215, 2]
 
-// Module 17885 (SettingsAppearanceScreen)
+// Module 17887 (SettingsAppearanceScreen)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import intl6 from "intl" /* 1113 */;
@@ -14,7 +14,7 @@ import react from "react" /* 19 */;
 import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5330 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1193 */;
 import ThemeStore from "ThemeStore" /* 1192 */;
-import FontScaleStore from "FontScaleStore" /* 17886 */;
+import FontScaleStore from "FontScaleStore" /* 17888 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -150,7 +150,7 @@ const memoResult = react.memo(function SettingsAppearanceScreen() {
     items1[8] = obj12;
     return createList(obj);
   }, []);
-  nativeStackNavigation(17213);
+  nativeStackNavigation(17215);
   return <tmp8 key={"" + theme + "-" + gradientPresetId} node={node} />;
 });
 const result = size.fileFinishedImporting("modules/user_settings/appearance/native/SettingsAppearanceScreen.tsx");

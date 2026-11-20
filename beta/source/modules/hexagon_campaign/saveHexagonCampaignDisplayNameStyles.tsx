@@ -1,10 +1,10 @@
-// Module ID: 17634
-// Function ID: 17635
+// Module ID: 17636
+// Function ID: 17637
 // Name: saveHexagonCampaignDisplayNameStyles
 // Dependencies: [5, 7800, 2]
 // Exports: saveHexagonCampaignDisplayNameStyles
 
-// Module 17634 (saveHexagonCampaignDisplayNameStyles)
+// Module 17636 (saveHexagonCampaignDisplayNameStyles)
 import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 7800 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;

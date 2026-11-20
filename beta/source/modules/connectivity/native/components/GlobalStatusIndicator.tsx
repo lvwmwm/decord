@@ -1,10 +1,10 @@
-// Module ID: 12917
-// Function ID: 12918
+// Module ID: 12919
+// Function ID: 12920
 // Name: GlobalStatusIndicator
-// Dependencies: [19, 17, 5543, 7016, 11041, 5155, 6061, 21, 10818, 504, 11009, 6890, 1113, 12918, 1655, 12914, 2]
+// Dependencies: [19, 17, 5543, 7016, 11041, 5155, 6061, 21, 10818, 504, 11009, 6890, 1113, 12920, 1655, 12916, 2]
 // Exports: default, useGlobalStatusIndicatorHeightSharedValue
 
-// Module 12917 (GlobalStatusIndicator)
+// Module 12919 (GlobalStatusIndicator)
 import _mod1655 from "module_1655" /* 1655 */;
 import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 6890 */;
 import react from "react" /* 19 */;

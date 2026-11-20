@@ -1,10 +1,10 @@
-// Module ID: 17069
-// Function ID: 17070
+// Module ID: 17071
+// Function ID: 17072
 // Name: ProfilePendingImageUtils
 // Dependencies: [7808, 1255, 2]
 // Exports: createPendingImage
 
-// Module 17069 (ProfilePendingImageUtils)
+// Module 17071 (ProfilePendingImageUtils)
 import GlobalUtils from "GlobalUtils" /* 1255 */;
 import ProfilePendingImageTypes from "ProfilePendingImageTypes" /* 7808 */;
 import size from "module_2" /* 2 */;

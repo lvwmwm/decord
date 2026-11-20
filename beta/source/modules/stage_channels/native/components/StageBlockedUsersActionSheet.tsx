@@ -1,10 +1,10 @@
-// Module ID: 16068
-// Function ID: 16069
+// Module ID: 16070
+// Function ID: 16071
 // Name: StageBlockedUsersActionSheet
-// Dependencies: [32, 19, 17, 5248, 6932, 6896, 21, 5306, 575, 504, 1113, 1187, 13072, 5919, 5542, 12912, 7415, 5926, 5556, 7847, 2]
+// Dependencies: [32, 19, 17, 5248, 6932, 6896, 21, 5306, 575, 504, 1113, 1187, 13074, 5919, 5542, 12914, 7415, 5926, 5556, 7847, 2]
 // Exports: default
 
-// Module 16068 (StageBlockedUsersActionSheet)
+// Module 16070 (StageBlockedUsersActionSheet)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -72,7 +72,7 @@ function RestrictedUser(guildId) {
   items2 = [closure_9(CutoutableAvatarImage, obj5), ];
   if (speaker) {
     const obj6 = { style: tmp.iconContainer, children: closure_9(Icon, obj7) };
-    obj7 = { style: tmp.icon, source: user(13072), color: user(575).unsafe_rawColors.WHITE };
+    obj7 = { style: tmp.icon, source: user(13074), color: user(575).unsafe_rawColors.WHITE };
     Icon = tmp2(1187).Icon;
     speaker = tmp11(tmp10, obj6);
   }
@@ -203,9 +203,9 @@ export default function StageBlockedUsersActionSheet(channel) {
   const tmp3 = items1(react.useState(0), 2);
   dependencyMap = tmp3[1];
   const first = tmp3[0];
-  let obj = channel(12912);
+  let obj = channel(12914);
   const stageBlockedUsers = obj.useStageBlockedUsers(channel.id);
-  const obj2 = channel(12912);
+  const obj2 = channel(12914);
   const stageIgnoredUsers = obj2.useStageIgnoredUsers(channel.id);
   const length = stageBlockedUsers.length;
   const length2 = stageIgnoredUsers.length;

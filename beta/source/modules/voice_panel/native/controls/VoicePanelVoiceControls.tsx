@@ -1,9 +1,9 @@
-// Module ID: 20114
-// Function ID: 20115
+// Module ID: 20116
+// Function ID: 20117
 // Name: VoicePanelVoiceControls
-// Dependencies: [19, 17, 5155, 11983, 21, 5306, 575, 1655, 11984, 20109, 12778, 5131, 19989, 13002, 16100, 11951, 6327, 20115, 7746, 20125, 1113, 13031, 504, 13434, 5558, 5588, 1627, 7722, 7415, 14679, 2]
+// Dependencies: [19, 17, 5155, 11983, 21, 5306, 575, 1655, 11984, 20111, 12780, 5131, 19991, 13004, 16102, 11951, 6327, 20117, 7746, 20127, 1113, 13033, 504, 13436, 5558, 5588, 1627, 7722, 7415, 14681, 2]
 
-// Module 20114 (VoicePanelVoiceControls)
+// Module 20116 (VoicePanelVoiceControls)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
@@ -14,13 +14,13 @@ import Stack_Stack from "Stack/Stack" /* 6327 */;
 import StageChannelUnifiedCallExperiment from "StageChannelUnifiedCallExperiment" /* 11951 */;
 import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11983 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11984 */;
-import getEmbeddedActivityLaunchability from "getEmbeddedActivityLaunchability" /* 12778 */;
-import MobileAudioOutputExperimentDefault from "MobileAudioOutputExperiment" /* 13002 */;
-import UserSettingsVoiceProcessing from "UserSettingsVoiceProcessing" /* 13031 */;
-import useSelectedActiveStreamDefault from "useSelectedActiveStream" /* 16100 */;
-import MobileGoLiveEntrypointExperiment from "MobileGoLiveEntrypointExperiment" /* 19989 */;
-import useShowConnectedControlsDefault from "useShowConnectedControls" /* 20109 */;
-import VoicePanelVoiceControlsButtons from "VoicePanelVoiceControlsButtons" /* 20115 */;
+import getEmbeddedActivityLaunchability from "getEmbeddedActivityLaunchability" /* 12780 */;
+import MobileAudioOutputExperimentDefault from "MobileAudioOutputExperiment" /* 13004 */;
+import UserSettingsVoiceProcessing from "UserSettingsVoiceProcessing" /* 13033 */;
+import useSelectedActiveStreamDefault from "useSelectedActiveStream" /* 16102 */;
+import MobileGoLiveEntrypointExperiment from "MobileGoLiveEntrypointExperiment" /* 19991 */;
+import useShowConnectedControlsDefault from "useShowConnectedControls" /* 20111 */;
+import VoicePanelVoiceControlsButtons from "VoicePanelVoiceControlsButtons" /* 20117 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import Fragment from "Fragment" /* 21 */;
@@ -36,7 +36,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp;
-const StreamVolumeMovedNoticeDefault = tmp(20125);
+const StreamVolumeMovedNoticeDefault = tmp(20127);
 function NOOP() {
 
 }
@@ -79,7 +79,7 @@ let closure_10 = react.memo(function ListItems(arg0) {
   }
   if (tmp10) {
     const obj5 = { channel, openTab };
-    tmp10 = hasOwnProperty(tmp4(20115).StageButtons, obj5);
+    tmp10 = hasOwnProperty(tmp4(20117).StageButtons, obj5);
   }
   const children = [tmp10, , , , , , , ];
   let tmp9Result = tmp3 && !isStageUnifiedCall;
@@ -90,13 +90,13 @@ let closure_10 = react.memo(function ListItems(arg0) {
     const items1 = [hasOwnProperty(VoicePanelVoiceControlsButtons.ActivitiesButton, obj6), ];
     if (MobileGoLiveEntrypointExperiment.MobileGoLiveEntrypointTreatment.SCREENSHARE_REPLACES_CHAT === treatment) {
       const obj7 = { openTab };
-      tmp13Result = tmp13(tmp4(20115).ChatButton, obj7);
+      tmp13Result = tmp13(tmp4(20117).ChatButton, obj7);
     } else if (MobileGoLiveEntrypointExperiment.MobileGoLiveEntrypointTreatment.SCREENSHARE_REPLACES_SOUNDBOARD === treatment) {
       const obj8 = { channel };
-      tmp13Result = tmp13(tmp4(20115).SoundboardButton, obj8);
+      tmp13Result = tmp13(tmp4(20117).SoundboardButton, obj8);
     } else {
       const obj9 = { channel };
-      tmp13Result = tmp13(tmp4(20115).ScreenshareButton, obj9);
+      tmp13Result = tmp13(tmp4(20117).ScreenshareButton, obj9);
     }
     const obj10 = { hasIcons: true, children: items1 };
     items1[1] = tmp13Result;
@@ -106,11 +106,11 @@ let closure_10 = react.memo(function ListItems(arg0) {
   let tmp15 = !isStageUnifiedCall;
   if (tmp15) {
     const obj11 = { channel, connected: tmp3 };
-    tmp15 = hasOwnProperty(tmp4(20115).GameConsoles, obj11);
+    tmp15 = hasOwnProperty(tmp4(20117).GameConsoles, obj11);
   }
   children[2] = tmp15;
   if (nonContextualStreamOutputPresent) {
-    StreamVolumeItem = tmp4(20115).StreamVolumeItem;
+    StreamVolumeItem = tmp4(20117).StreamVolumeItem;
   } else {
     StreamVolumeItem = StreamVolumeMovedNoticeDefault;
   }
@@ -122,14 +122,14 @@ let closure_10 = react.memo(function ListItems(arg0) {
   let tmp17Result = !isStageUnifiedCall;
   if (tmp17Result) {
     const obj13 = { channelId };
-    tmp17Result = tmp17(tmp4(20115).HideNonVideoParticipants, obj13);
+    tmp17Result = tmp17(tmp4(20117).HideNonVideoParticipants, obj13);
   }
   items2[2] = tmp17Result;
   items2[3] = hasOwnProperty(VoicePanelVoiceControlsButtons.HideSelfVideo, {});
   let tmp17Result3 = tmp3;
   if (tmp17Result3) {
     const obj14 = { channel, connected: tmp3 };
-    tmp17Result3 = tmp17(tmp4(20115).InviteButton, obj14);
+    tmp17Result3 = tmp17(tmp4(20117).InviteButton, obj14);
   }
   items2[4] = tmp17Result3;
   children[4] = metroRequire(TableRowGroup2, obj12);
@@ -141,7 +141,7 @@ let closure_10 = react.memo(function ListItems(arg0) {
   let tmp17Result4 = null != tmp7;
   if (tmp17Result4) {
     const obj16 = { stream: tmp7 };
-    tmp17Result4 = tmp17(tmp4(20115).ReportStreamIssueButton, obj16);
+    tmp17Result4 = tmp17(tmp4(20117).ReportStreamIssueButton, obj16);
   }
   items3[1] = tmp17Result4;
   children[6] = metroRequire(TableRowGroup3, { hasIcons: true, children: items3 });

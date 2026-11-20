@@ -1,10 +1,10 @@
-// Module ID: 15877
-// Function ID: 15878
+// Module ID: 15879
+// Function ID: 15880
 // Name: UserProfileContactButtons
-// Dependencies: [19, 17, 5248, 1072, 21, 5306, 575, 5926, 7918, 8545, 15783, 504, 5362, 15878, 6013, 1113, 12123, 8137, 12581, 5542, 6838, 8134, 15880, 7988, 8069, 9102, 15636, 2]
+// Dependencies: [19, 17, 5248, 1072, 21, 5306, 575, 5926, 7918, 8545, 15785, 504, 5362, 15880, 6013, 1113, 12123, 8137, 12583, 5542, 6838, 8134, 15882, 7988, 8069, 9102, 15638, 2]
 // Exports: default
 
-// Module 15877 (UserProfileContactButtons)
+// Module 15879 (UserProfileContactButtons)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -14,8 +14,8 @@ import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 8134 */;
 import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 8137 */;
 import UserProfileAlertUtils from "UserProfileAlertUtils" /* 12123 */;
-import navigateToLastChannelDefault from "navigateToLastChannel" /* 12581 */;
-import ConfirmStartCall from "ConfirmStartCall" /* 15636 */;
+import navigateToLastChannelDefault from "navigateToLastChannel" /* 12583 */;
+import ConfirmStartCall from "ConfirmStartCall" /* 15638 */;
 import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 5248 */;
 import Fragment from "Fragment" /* 21 */;
@@ -72,7 +72,7 @@ function FriendRequestButton(user) {
     _location = newestAnalyticsLocation;
   }
   dependencyMap = { location: _location };
-  const tmp3Result = user(15783);
+  const tmp3Result = user(15785);
   const gameFriendsForUser = tmp3Result.useGameFriendsForUser(user.id);
   const items = [userDisplayName];
   const tmp3Result2 = user(504);
@@ -90,7 +90,7 @@ function FriendRequestButton(user) {
         let stringResult;
         let string2Result;
         if (stateFromStores === RelationshipTypes.PENDING_OUTGOING) {
-          UserPlusIcon = tmp3(15878).UserClockIcon;
+          UserPlusIcon = tmp3(15880).UserClockIcon;
         } else {
           UserPlusIcon = tmp3(6013).UserPlusIcon;
         }

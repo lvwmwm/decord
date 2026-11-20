@@ -1,10 +1,10 @@
-// Module ID: 13333
-// Function ID: 13334
+// Module ID: 13335
+// Function ID: 13336
 // Name: conjureSharingFlags
 // Dependencies: [7018, 2]
 // Exports: conjureSharingFlags
 
-// Module 13333 (conjureSharingFlags)
+// Module 13335 (conjureSharingFlags)
 import ConjureProjectTypes from "ConjureProjectTypes" /* 7018 */;
 import size from "module_2" /* 2 */;
 

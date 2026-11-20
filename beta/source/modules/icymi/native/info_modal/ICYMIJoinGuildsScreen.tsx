@@ -1,10 +1,10 @@
-// Module ID: 19317
-// Function ID: 19318
+// Module ID: 19319
+// Function ID: 19320
 // Name: ICYMIJoinGuildsScreen
-// Dependencies: [5, 32, 19, 17, 5307, 5177, 19316, 1072, 21, 19287, 575, 7720, 10939, 1655, 5538, 7830, 504, 1414, 9503, 6010, 7428, 5919, 5926, 7930, 1113, 1630, 16851, 10217, 6005, 6838, 19302, 7888, 2]
+// Dependencies: [5, 32, 19, 17, 5307, 5177, 19318, 1072, 21, 19289, 575, 7720, 10939, 1655, 5538, 7830, 504, 1414, 9503, 6010, 7428, 5919, 5926, 7930, 1113, 1630, 16853, 10217, 6005, 6838, 19304, 7888, 2]
 // Exports: default
 
-// Module 19317 (ICYMIJoinGuildsScreen)
+// Module 19319 (ICYMIJoinGuildsScreen)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
@@ -12,17 +12,17 @@ import GuildIcon from "GuildIcon" /* 7720 */;
 import ClipViewDefault from "ClipView" /* 9503 */;
 import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 10217 */;
 import ServerIcon2 from "ServerIcon" /* 10939 */;
-import ICYMIAnalytics2 from "ICYMIAnalytics" /* 16851 */;
-import ICYMIInfoModalTypes from "ICYMIInfoModalTypes" /* 19302 */;
+import ICYMIAnalytics2 from "ICYMIAnalytics" /* 16853 */;
+import ICYMIInfoModalTypes from "ICYMIInfoModalTypes" /* 19304 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5307 */;
 import GuildStore from "GuildStore" /* 5177 */;
-import ICYMIPopularGuildsStore from "ICYMIPopularGuildsStore" /* 19316 */;
+import ICYMIPopularGuildsStore from "ICYMIPopularGuildsStore" /* 19318 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 19287 */;
+import createICYMIStyles from "createICYMIStyles" /* 19289 */;
 import size_mod from "module_2" /* 2 */;
 
 const GuildIconDefault = GuildIcon;

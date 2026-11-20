@@ -1,10 +1,10 @@
-// Module ID: 15964
-// Function ID: 15965
+// Module ID: 15966
+// Function ID: 15967
 // Name: WebhookGuildChannelSelector
 // Dependencies: [5, 32, 19, 17, 5159, 5248, 1388, 21, 5306, 575, 5542, 8009, 2121, 1113, 5944, 7409, 5919, 1187, 8106, 2]
 // Exports: default
 
-// Module 15964 (WebhookGuildChannelSelector)
+// Module 15966 (WebhookGuildChannelSelector)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;

@@ -1,10 +1,10 @@
-// Module ID: 20755
-// Function ID: 20756
+// Module ID: 20757
+// Function ID: 20758
 // Name: GuildRoleSubscriptionBenefitEditorModal
-// Dependencies: [5, 32, 19, 17, 5248, 1388, 20754, 17826, 21, 5306, 575, 5926, 1113, 6030, 20734, 1630, 7746, 20756, 5944, 7619, 20758, 20759, 7859, 2]
+// Dependencies: [5, 32, 19, 17, 5248, 1388, 20756, 17828, 21, 5306, 575, 5926, 1113, 6030, 20736, 1630, 7746, 20758, 5944, 7619, 20760, 20761, 7859, 2]
 // Exports: default
 
-// Module 20755 (GuildRoleSubscriptionBenefitEditorModal)
+// Module 20757 (GuildRoleSubscriptionBenefitEditorModal)
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1113 */;
 import components_Button_Button from "components/Button/Button" /* 5926 */;
@@ -16,8 +16,8 @@ import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import RelationshipStore from "RelationshipStore" /* 5248 */;
 import UserStore from "UserStore" /* 1388 */;
-import GuildRoleSubscriptionBenefitEditorModalStateStore_mod from "GuildRoleSubscriptionBenefitEditorModalStateStore" /* 20754 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17826 */;
+import GuildRoleSubscriptionBenefitEditorModalStateStore_mod from "GuildRoleSubscriptionBenefitEditorModalStateStore" /* 20756 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17828 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
@@ -235,7 +235,7 @@ export default function GuildRoleSubscriptionBenefitEditorModal(arg0) {
   const tmp2 = closure_15();
   const tmp3 = value;
   const tmp4 = dependencyMap;
-  const tmp5 = value(20734)();
+  const tmp5 = value(20736)();
   const tmp6 = _slicedToArray(GuildRoleSubscriptionBenefitEditorModalStateStore.useNameState(), 2);
   value = tmp6[0];
   dependencyMap = tmp7;
@@ -303,7 +303,7 @@ export default function GuildRoleSubscriptionBenefitEditorModal(arg0) {
     stringResult2 = intl5.string(tmp21(1113).t.NNqncc);
   }
   if (merged.benefitType === obj.CHANNEL) {
-    let obj2 = { title: stringResult1, hasIcons: true, children: closure_13(tmp3(20756), obj3) };
+    let obj2 = { title: stringResult1, hasIcons: true, children: closure_13(tmp3(20758), obj3) };
     const TableRowGroup = tmp21(7746).TableRowGroup;
     obj3 = {
       channelId: first4,
@@ -334,14 +334,14 @@ export default function GuildRoleSubscriptionBenefitEditorModal(arg0) {
     },
     listingId: merged.listingId
   };
-  items = [tmp28(tmp3(20758), obj5), ];
+  items = [tmp28(tmp3(20760), obj5), ];
   const obj6 = { keyboardShouldPersistTaps: "handled", showsVerticalScrollIndicator: false, alwaysBounceVertical: false, contentContainerStyle: items1, children: items2 };
   items1 = [tmp2.scrollContainer, tmp5.container, ];
   const obj7 = { paddingBottom: sum + tmp3(575).space.PX_16 };
   sum = bottom + tmp3(575).space.PX_32;
   items1[2] = obj7;
   items2 = [tmp27, , , ];
-  const obj8 = { title: intl8.string(tmp21(1113).t.sMOuuS), hasIcons: true, children: tmp28(tmp3(20759), obj9) };
+  const obj8 = { title: intl8.string(tmp21(1113).t.sMOuuS), hasIcons: true, children: tmp28(tmp3(20761), obj9) };
   const TableRowGroup2 = tmp21(7746).TableRowGroup;
   intl8 = tmp21(1113).intl;
   obj9 = {

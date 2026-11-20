@@ -1,10 +1,10 @@
-// Module ID: 18887
-// Function ID: 18888
+// Module ID: 18889
+// Function ID: 18890
 // Name: GuildThemeMemberCoachmark
-// Dependencies: [19, 5307, 5513, 5514, 5152, 21, 5306, 575, 504, 5517, 10718, 18888, 9241, 6942, 1113, 2733, 10721, 9567, 2]
+// Dependencies: [19, 5307, 5513, 5514, 5152, 21, 5306, 575, 504, 5517, 10718, 18890, 9241, 6942, 1113, 2733, 10721, 9567, 2]
 // Exports: default
 
-// Module 18887 (GuildThemeMemberCoachmark)
+// Module 18889 (GuildThemeMemberCoachmark)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
@@ -60,7 +60,7 @@ export default function GuildThemeMemberCoachmark(guildId) {
   const obj3 = guildId(10718);
   guildPowerupBannerImage = obj3.getGuildPowerupBannerImage(stateFromStores, stateFromStores1, true);
   if (guildPowerupBannerImage == null) {
-    guildPowerupBannerImage = markAsDismissed(18888);
+    guildPowerupBannerImage = markAsDismissed(18890);
   }
   const diff = onDismiss - markAsDismissed(9241)(guildId).available;
   c5 = diff;

@@ -1,10 +1,10 @@
-// Module ID: 15862
-// Function ID: 15863
+// Module ID: 15864
+// Function ID: 15865
 // Name: UserProfileWishlistSuggestionsGrid
-// Dependencies: [19, 17, 5307, 9465, 8479, 7962, 1072, 1074, 21, 575, 5306, 504, 15863, 8545, 15689, 7918, 5907, 1269, 15864, 9471, 5542, 8484, 7937, 5926, 10565, 1113, 15865, 1655, 5919, 7988, 7549, 15866, 2]
+// Dependencies: [19, 17, 5307, 9465, 8479, 7962, 1072, 1074, 21, 575, 5306, 504, 15865, 8545, 15691, 7918, 5907, 1269, 15866, 9471, 5542, 8484, 7937, 5926, 10565, 1113, 15867, 1655, 5919, 7988, 7549, 15868, 2]
 // Exports: default
 
-// Module 15862 (UserProfileWishlistSuggestionsGrid)
+// Module 15864 (UserProfileWishlistSuggestionsGrid)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants2 from "Constants" /* 1072 */;
@@ -15,9 +15,9 @@ import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7918 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
 import Constants3 from "Constants" /* 8479 */;
 import CollectiblesActionCreators from "CollectiblesActionCreators" /* 8484 */;
-import useCardGridLayoutDefault from "useCardGridLayout" /* 15689 */;
-import useWishlistSuggestionsDismissibleContentDefault from "useWishlistSuggestionsDismissibleContent" /* 15863 */;
-import AddToWishlistGridDefault from "AddToWishlistGrid" /* 15866 */;
+import useCardGridLayoutDefault from "useCardGridLayout" /* 15691 */;
+import useWishlistSuggestionsDismissibleContentDefault from "useWishlistSuggestionsDismissibleContent" /* 15865 */;
+import AddToWishlistGridDefault from "AddToWishlistGrid" /* 15868 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5307 */;
 import WishlistStore from "WishlistStore" /* 9465 */;
@@ -137,7 +137,7 @@ function WishlistSuggestionsGridContents(arg0) {
     const obj = trackUserProfileWishlistAction(dependencyMap[17]);
     return obj.v4();
   });
-  const obj4 = trackUserProfileWishlistAction(15864);
+  const obj4 = trackUserProfileWishlistAction(15866);
   const obj5 = { userId, wishlist, numWishlistItemsToRecommend: 15, maxWishlistItemsToShow: 9, source: trackUserProfileWishlistAction(9471).WishlistFetchSource.USER_PROFILE };
   const items2 = obj4.useAddToWishlistGridItems(obj5).items;
   const items3 = [trackUserProfileWishlistAction];
@@ -165,7 +165,7 @@ function WishlistSuggestionsGridContents(arg0) {
   } else {
     const obj8 = { newValue: obj9, children: closure_13(View, obj10) };
     obj9 = { impressionSessionId: tmp7, surface: "user_profile_wishlist_suggestions_grid", wishlistOwnerId: userId, wishlistId, analyticsLocations };
-    const WishlistAnalyticsProvider = tmp(15865).WishlistAnalyticsProvider;
+    const WishlistAnalyticsProvider = tmp(15867).WishlistAnalyticsProvider;
     obj10 = { style: tmp3.container, entering: null, exiting: null, layout: null, children: items6 };
     ({ entering: obj16.entering, exiting: obj16.exiting, layout: obj16.layout } = memo);
     const obj11 = { style: tmp3.headerRow, children: items4 };

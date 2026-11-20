@@ -1,9 +1,9 @@
-// Module ID: 16892
-// Function ID: 16893
+// Module ID: 16894
+// Function ID: 16895
 // Name: SystemTelecomManager
-// Dependencies: [5, 32, 17, 6790, 5159, 502, 5155, 2133, 6061, 5248, 5209, 1388, 5971, 6064, 1072, 6065, 3, 16893, 572, 16894, 1256, 6057, 7937, 6925, 11, 8136, 6215, 8858, 1269, 16895, 5944, 8134, 1380, 2123, 2]
+// Dependencies: [5, 32, 17, 6790, 5159, 502, 5155, 2133, 6061, 5248, 5209, 1388, 5971, 6064, 1072, 6065, 3, 16895, 572, 16896, 1256, 6057, 7937, 6925, 11, 8136, 6215, 8858, 1269, 16897, 5944, 8134, 1380, 2123, 2]
 
-// Module 16892 (SystemTelecomManager)
+// Module 16894 (SystemTelecomManager)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
@@ -20,8 +20,8 @@ import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 8134 */;
 import CallActionCreatorsDefault from "CallActionCreators" /* 8136 */;
 import RequestGatewaySocketAll from "RequestGatewaySocket" /* 8858 */;
-import SystemTelecomPlatform from "SystemTelecomPlatform" /* 16894 */;
-import SystemTelecomUtils from "SystemTelecomUtils" /* 16895 */;
+import SystemTelecomPlatform from "SystemTelecomPlatform" /* 16896 */;
+import SystemTelecomUtils from "SystemTelecomUtils" /* 16897 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 6790 */;
@@ -36,7 +36,7 @@ import VoiceStateStore from "VoiceStateStore" /* 5971 */;
 import SortedVoiceStateStore from "SortedVoiceStateStore" /* 6064 */;
 import Constants_mod from "Constants" /* 1072 */;
 import Constants_mod2 from "Constants" /* 6065 */;
-import react_native2 from "react-native" /* 16893 */;
+import react_native2 from "react-native" /* 16895 */;
 import LifecycleManager from "LifecycleManager" /* 2123 */;
 import size from "module_2" /* 2 */;
 

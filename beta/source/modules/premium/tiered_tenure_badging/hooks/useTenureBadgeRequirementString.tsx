@@ -1,10 +1,10 @@
-// Module ID: 15287
-// Function ID: 15288
+// Module ID: 15289
+// Function ID: 15290
 // Name: useTenureBadgeRequirementString
 // Dependencies: [1390, 10079, 7361, 1113, 2]
 // Exports: getTenureBadgeRequirementString, useTenureBadgeRequirementString
 
-// Module 15287 (useTenureBadgeRequirementString)
+// Module 15289 (useTenureBadgeRequirementString)
 import intl3 from "intl" /* 1113 */;
 import PremiumConstants from "PremiumConstants" /* 1390 */;
 import TieredTenureBadgeUtils from "TieredTenureBadgeUtils" /* 7361 */;

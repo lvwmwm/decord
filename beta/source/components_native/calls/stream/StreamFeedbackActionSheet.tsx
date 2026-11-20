@@ -1,21 +1,21 @@
-// Module ID: 20242
-// Function ID: 20243
+// Module ID: 20244
+// Function ID: 20245
 // Name: StreamFeedbackActionSheet
-// Dependencies: [19, 502, 1072, 12596, 21, 8468, 504, 1113, 2965, 12599, 20243, 1256, 20123, 20244, 5542, 20245, 2121, 6004, 2]
+// Dependencies: [19, 502, 1072, 12598, 21, 8468, 504, 1113, 2965, 12601, 20245, 1256, 20125, 20246, 5542, 20247, 2121, 6004, 2]
 // Exports: default
 
-// Module 20242 (StreamFeedbackActionSheet)
+// Module 20244 (StreamFeedbackActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import Constants2 from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
 import ToastUtils from "ToastUtils" /* 6004 */;
-import FeedbackUtils from "FeedbackUtils" /* 12599 */;
-import trackStreamProblemDefault from "trackStreamProblem" /* 20123 */;
-import shouldShowLogUploadForCategory from "shouldShowLogUploadForCategory" /* 20244 */;
+import FeedbackUtils from "FeedbackUtils" /* 12601 */;
+import trackStreamProblemDefault from "trackStreamProblem" /* 20125 */;
+import shouldShowLogUploadForCategory from "shouldShowLogUploadForCategory" /* 20246 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import Constants from "Constants" /* 12596 */;
+import Constants from "Constants" /* 12598 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -67,7 +67,7 @@ export default function StreamFeedbackActionSheet(stream) {
     tmp10 = tmp8;
   }
   intl5 = tmp(1113).intl;
-  tmpResult = tmp(12599);
+  tmpResult = tmp(12601);
   obj4 = { value: constants2.FREEFORM, label: intl6.string(tmp(1113).t.emlT91) };
   intl6 = tmp(1113).intl;
   let obj5 = {
@@ -140,7 +140,7 @@ export default function StreamFeedbackActionSheet(stream) {
             const obj7 = { mediaSessionId: null, rtcConnectionId: null };
             ({ media_session_id: obj6.mediaSessionId, rtc_connection_id: obj6.rtcConnectionId } = tmp9);
             const tmp22Result = tmp22(5542);
-            tmp22Result.openLazy(asyncRequire(20245, dependencyMap.paths), "UploadLogs", obj7);
+            tmp22Result.openLazy(asyncRequire(20247, dependencyMap.paths), "UploadLogs", obj7);
           }
         }
         const obj4 = ToastUtils;
@@ -148,7 +148,7 @@ export default function StreamFeedbackActionSheet(stream) {
       }
     }
   };
-  const tmp10Result = tmp10(20243);
+  const tmp10Result = tmp10(20245);
   const tmp11 = jsx;
   if (stateFromStores) {
     stringResult2 = stringResult1;

@@ -1,9 +1,9 @@
-// Module ID: 17062
-// Function ID: 17063
+// Module ID: 17064
+// Function ID: 17065
 // Name: ProfileCustomizationSettingScreen
-// Dependencies: [5, 109, 32, 19, 17, 10035, 8542, 12091, 6946, 1082, 1072, 21, 5306, 575, 1113, 17063, 17187, 7800, 12093, 17196, 15805, 5892, 5367, 7994, 1502, 7812, 7983, 15462, 17083, 17188, 504, 6057, 10037, 17198, 7493, 7427, 1503, 13112, 17201, 13262, 14944, 2]
+// Dependencies: [5, 109, 32, 19, 17, 10035, 8542, 12091, 6946, 1082, 1072, 21, 5306, 575, 1113, 17065, 17189, 7800, 12093, 17198, 15807, 5892, 5367, 7994, 1502, 7812, 7983, 15464, 17085, 17190, 504, 6057, 10037, 17200, 7493, 7427, 1503, 13114, 17203, 13264, 14946, 2]
 
-// Module 17062 (ProfileCustomizationSettingScreen)
+// Module 17064 (ProfileCustomizationSettingScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
@@ -12,9 +12,9 @@ import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6057 */;
 import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 7800 */;
 import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 10037 */;
 import WidgetActionCreatorsDefault from "WidgetActionCreators" /* 12093 */;
-import maybeShowUnsavedChangesAlertDefault from "maybeShowUnsavedChangesAlert" /* 15462 */;
-import UserSettingsEditUserProfileDefault from "UserSettingsEditUserProfile" /* 17063 */;
-import UserSettingsEditGuildProfileDefault from "UserSettingsEditGuildProfile" /* 17187 */;
+import maybeShowUnsavedChangesAlertDefault from "maybeShowUnsavedChangesAlert" /* 15464 */;
+import UserSettingsEditUserProfileDefault from "UserSettingsEditUserProfile" /* 17065 */;
+import UserSettingsEditGuildProfileDefault from "UserSettingsEditGuildProfile" /* 17189 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

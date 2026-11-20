@@ -301,8 +301,8 @@ export function getOrderedStorefrontSkuIds(arg0) {
   }
   return items;
 }
-export function isGameItemSKU(stateFromStores1) {
-  return null != stateFromStores1 && stateFromStores1.productLine === constants2.SOCIAL_LAYER_GAME_ITEM;
+export function isGameItemSKU(stateFromStores2) {
+  return null != stateFromStores2 && stateFromStores2.productLine === constants2.SOCIAL_LAYER_GAME_ITEM;
 }
 export function getMarketingGuildId() {
   const guild = GuildStore.getGuild(authStore2);
@@ -476,7 +476,7 @@ export function getPrimaryCarouselItemInfo(tenantMetadata, id) {
         let obj3;
         const first = tenantMetadata.tenantMetadata.socialLayer.carouselItems[0];
         if (null == first.labelIconAssetId) {
-          obj3 = { primaryIconAsset: "Array", primaryIconLabel: "Path" };
+          obj3 = { primaryIconAsset: "ip", primaryIconLabel: "r" };
         } else {
           const toURLSafe = URLUtilsDefault.toURLSafe;
           URLUtilsDefault;
@@ -488,7 +488,7 @@ export function getPrimaryCarouselItemInfo(tenantMetadata, id) {
       }
     }
   }
-  return { primaryIconAsset: "Array", primaryIconLabel: "Path" };
+  return { primaryIconAsset: "ip", primaryIconLabel: "r" };
 }
 export function getGameItemThumbnailUrl(value2) {
   let obj = arg1;

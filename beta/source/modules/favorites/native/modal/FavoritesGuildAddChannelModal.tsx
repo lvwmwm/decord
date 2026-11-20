@@ -1,10 +1,10 @@
-// Module ID: 15155
-// Function ID: 15156
+// Module ID: 15157
+// Function ID: 15158
 // Name: FavoritesGuildAddChannelModal
-// Dependencies: [5, 32, 19, 17, 5168, 10244, 21, 5306, 575, 15156, 15157, 10245, 1255, 6004, 1113, 10944, 15154, 1496, 1380, 10270, 3679, 10271, 10272, 15158, 15160, 2]
+// Dependencies: [5, 32, 19, 17, 5168, 10244, 21, 5306, 575, 15158, 15159, 10245, 1255, 6004, 1113, 10944, 15156, 1496, 1380, 10270, 3679, 10271, 10272, 15160, 15162, 2]
 // Exports: default
 
-// Module 15155 (FavoritesGuildAddChannelModal)
+// Module 15157 (FavoritesGuildAddChannelModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
@@ -46,8 +46,8 @@ export default function FavoritesGuildAddChannelModal(parentId) {
   const source = parentId.source;
   const tmp = closure_11();
   const tmp3 = dependencyMap;
-  const tmp4 = first(15156)();
-  first(15157)(source);
+  const tmp4 = first(15158)();
+  first(15159)(source);
   const tmp2 = first;
   [first, dependencyMap] = react.useState([]);
   const callback = react.useCallback((arg0) => {
@@ -134,7 +134,7 @@ export default function FavoritesGuildAddChannelModal(parentId) {
     }, items1),
     children: items2
   };
-  let obj2 = { title: intl.string(first(3679).Rp35U1), onClose: parentId(15154).closeFavoritesGuildAddChannelModal };
+  let obj2 = { title: intl.string(first(3679).Rp35U1), onClose: parentId(15156).closeFavoritesGuildAddChannelModal };
   const tmp12 = first(10270);
   intl = parentId(1113).intl;
   items2 = [closure_9(tmp12, obj2), ];
@@ -148,8 +148,8 @@ export default function FavoritesGuildAddChannelModal(parentId) {
   }
   items3[1] = closure_9(tmp14, obj4);
   let obj5 = { isVisible: length > 0, floatingBackgroundColor: tmp.container.backgroundColor, text: tmp13Result.getFavoritesAddButtonLabel(first.length), onPress: callback1 };
-  const ModalFloatingAction = tmp13(15158).ModalFloatingAction;
-  tmp13Result = parentId(15160);
+  const ModalFloatingAction = tmp13(15160).ModalFloatingAction;
+  tmp13Result = parentId(15162);
   items3[2] = closure_9(ModalFloatingAction, obj5);
   items2[1] = closure_10(View, obj3);
   return closure_10(View, obj);

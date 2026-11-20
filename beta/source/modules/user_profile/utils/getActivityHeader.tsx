@@ -1,16 +1,16 @@
-// Module ID: 15726
-// Function ID: 15727
+// Module ID: 15728
+// Function ID: 15729
 // Name: getActivityHeader
-// Dependencies: [1072, 15727, 15728, 6059, 1113, 15730, 15731, 10861, 2]
+// Dependencies: [1072, 15729, 15730, 6059, 1113, 15732, 15733, 10861, 2]
 // Exports: default
 
-// Module 15726 (getActivityHeader)
+// Module 15728 (getActivityHeader)
 import Constants from "Constants" /* 1072 */;
 import ActivityTypes from "ActivityTypes" /* 6059 */;
-import parseProviderRouteHeadlessSessionIdDefault from "parseProviderRouteHeadlessSessionId" /* 15727 */;
-import getActivityPlatformDefault from "getActivityPlatform" /* 15728 */;
-import isOnMetaHorizonDefault from "isOnMetaHorizon" /* 15730 */;
-import getActivityPlatformDisplayNameDefault from "getActivityPlatformDisplayName" /* 15731 */;
+import parseProviderRouteHeadlessSessionIdDefault from "parseProviderRouteHeadlessSessionId" /* 15729 */;
+import getActivityPlatformDefault from "getActivityPlatform" /* 15730 */;
+import isOnMetaHorizonDefault from "isOnMetaHorizon" /* 15732 */;
+import getActivityPlatformDisplayNameDefault from "getActivityPlatformDisplayName" /* 15733 */;
 import size from "module_2" /* 2 */;
 
 let tmp5;

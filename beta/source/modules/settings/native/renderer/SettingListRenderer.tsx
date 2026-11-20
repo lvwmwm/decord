@@ -1,21 +1,21 @@
-// Module ID: 17214
-// Function ID: 17215
+// Module ID: 17216
+// Function ID: 17217
 // Name: SettingListRenderer
-// Dependencies: [19, 17, 17215, 17059, 12407, 21, 5306, 575, 7746, 5919, 17216, 1630, 17217, 17222, 7888, 17223, 17226, 17227, 2020, 2]
+// Dependencies: [19, 17, 17217, 17061, 12409, 21, 5306, 575, 7746, 5919, 17218, 1630, 17219, 17224, 7888, 17225, 17228, 17229, 2020, 2]
 
-// Module 17214 (SettingListRenderer)
+// Module 17216 (SettingListRenderer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5919 */;
 import TableRowGroup from "TableRowGroup" /* 7746 */;
-import SettingRendererConstants from "SettingRendererConstants" /* 12407 */;
-import SettingRenderer from "SettingRenderer" /* 17216 */;
-import SettingRendererUtils from "SettingRendererUtils" /* 17217 */;
-import SettingsSearchEmptyStateDefault from "SettingsSearchEmptyState" /* 17226 */;
+import SettingRendererConstants from "SettingRendererConstants" /* 12409 */;
+import SettingRenderer from "SettingRenderer" /* 17218 */;
+import SettingRendererUtils from "SettingRendererUtils" /* 17219 */;
+import SettingsSearchEmptyStateDefault from "SettingsSearchEmptyState" /* 17228 */;
 import react from "react" /* 19 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 17215 */;
-import SettingBlocklistStore from "SettingBlocklistStore" /* 17059 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 17217 */;
+import SettingBlocklistStore from "SettingBlocklistStore" /* 17061 */;
 import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
@@ -118,7 +118,7 @@ const memoResult = react.memo(function SettingsList(node) {
     return obj.toSettingListItems(node, field);
   }, items);
   const ref = react.useRef(null);
-  let obj = node(17222);
+  let obj = node(17224);
   obj.useAutoScrollToSearchResultSetting(ref, memo, node.scrollTarget);
   const obj4 = { paddingBottom: bottom + field(575).space.PX_16 };
   const FlashList = node(7888).FlashList;

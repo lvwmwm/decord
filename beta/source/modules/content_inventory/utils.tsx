@@ -466,13 +466,13 @@ export function getFullResurrectedBadgeText(start) {
 export function getEpisodeBadgeText(large_text) {
   if (null != large_text) {
     if ("" !== large_text) {
-      const obj2 = /\w+ (\d+), \w+ (\d+)/;
-      const match = obj2.exec(large_text);
+      const obj = /\w+ (\d+), \w+ (\d+)/;
+      const match = obj.exec(large_text);
       let formatToPlainStringResult = null;
       if (null != match) {
         const intl = intl4.intl;
-        const obj = { seasonNum: match[1], episodeNum: match[2] };
-        formatToPlainStringResult = intl.formatToPlainString(intl4.t.ijVm6y, obj);
+        const obj2 = { seasonNum: match[1], episodeNum: match[2] };
+        formatToPlainStringResult = intl.formatToPlainString(intl4.t.ijVm6y, obj2);
       }
       return formatToPlainStringResult;
     }

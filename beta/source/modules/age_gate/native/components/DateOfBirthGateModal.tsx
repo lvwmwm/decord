@@ -1,14 +1,14 @@
-// Module ID: 20174
-// Function ID: 20175
+// Module ID: 20176
+// Function ID: 20177
 // Name: DateOfBirthGateModal
-// Dependencies: [19, 1097, 20171, 21, 1380, 6005, 1113, 6833, 8742, 20172, 1264, 7493, 20175, 20177, 18693, 15939, 7490, 2]
+// Dependencies: [19, 1097, 20173, 21, 1380, 6005, 1113, 6833, 8742, 20174, 1264, 7493, 20177, 20179, 18695, 15941, 7490, 2]
 // Exports: default
 
-// Module 20174 (DateOfBirthGateModal)
+// Module 20176 (DateOfBirthGateModal)
 import Fragment from "Fragment" /* 21 */;
 import AgeGateConstants from "AgeGateConstants" /* 1097 */;
-import ExistingUserAgeGateConstants from "ExistingUserAgeGateConstants" /* 20171 */;
-import ageGateNavigationCallbacks from "ageGateNavigationCallbacks" /* 20172 */;
+import ExistingUserAgeGateConstants from "ExistingUserAgeGateConstants" /* 20173 */;
+import ageGateNavigationCallbacks from "ageGateNavigationCallbacks" /* 20174 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

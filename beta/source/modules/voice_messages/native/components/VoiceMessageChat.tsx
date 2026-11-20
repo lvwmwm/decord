@@ -1,21 +1,21 @@
-// Module ID: 14970
-// Function ID: 14971
+// Module ID: 14972
+// Function ID: 14973
 // Name: VoiceMessageChat
-// Dependencies: [32, 19, 17, 5307, 14570, 14571, 21, 1655, 5306, 575, 1380, 5929, 5930, 5538, 5892, 8897, 5919, 2]
+// Dependencies: [32, 19, 17, 5307, 14572, 14573, 21, 1655, 5306, 575, 1380, 5929, 5930, 5538, 5892, 8897, 5919, 2]
 
-// Module 14970 (VoiceMessageChat)
+// Module 14972 (VoiceMessageChat)
 import nativeDefault from "native" /* 575 */;
 import _mod1655 from "module_1655" /* 1655 */;
 import timing_timing from "timing/timing" /* 5538 */;
 import spring_spring from "spring/spring" /* 5929 */;
 import springPresets from "springPresets" /* 5930 */;
 import utils_TimeUtils from "utils/TimeUtils" /* 8897 */;
-import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 14570 */;
+import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 14572 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5307 */;
-import VoiceMessageConstants from "VoiceMessageConstants" /* 14571 */;
+import VoiceMessageConstants from "VoiceMessageConstants" /* 14573 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1380 */;
@@ -186,7 +186,7 @@ function Duration(animationValue) {
   const items2 = [first1];
   const first2 = tmp14[0];
   const effect1 = react.useEffect(() => {
-    const f143172 = (arg0) => !arg0;
+    const f143181 = (arg0) => !arg0;
     if (null != first1) {
       if (first1 !== constants.ENDED) {
         let num = 1000;
@@ -198,10 +198,10 @@ function Duration(animationValue) {
           num = num2;
         }
         function flash() {
-          closure_6(f143172);
+          closure_6(f143181);
           const timeout = setTimeout(flash, num);
         }
-        closure_6(f143172);
+        closure_6(f143181);
         const _setTimeout = setTimeout;
         let timeout = setTimeout(flash, num);
         return () => {

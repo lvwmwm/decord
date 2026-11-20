@@ -1,10 +1,10 @@
-// Module ID: 19348
-// Function ID: 19349
+// Module ID: 19350
+// Function ID: 19351
 // Name: CaughtUpRow
-// Dependencies: [5, 32, 19, 17, 21, 1655, 5919, 19287, 575, 10217, 19304, 19300, 5483, 5538, 5892, 15723, 1113, 5926, 19326, 5883, 1092, 671, 2]
+// Dependencies: [5, 32, 19, 17, 21, 1655, 5919, 19289, 575, 10217, 19306, 19302, 5483, 5538, 5892, 15725, 1113, 5926, 19328, 5883, 1092, 671, 2]
 // Exports: default
 
-// Module 19348 (CaughtUpRow)
+// Module 19350 (CaughtUpRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5919 */;
@@ -13,7 +13,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import module_1655 from "module_1655" /* 1655 */;
-import createICYMIStyles from "createICYMIStyles" /* 19287 */;
+import createICYMIStyles from "createICYMIStyles" /* 19289 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -268,7 +268,7 @@ export default function ExploreServersRow(visible) {
   let obj2 = { children: items13 };
   let obj3 = { style: tmp.container, children: items11 };
   let obj4 = { style: tmp.textContainer, children: items8 };
-  let obj5 = { style: items7, children: closure_7(tmp2(15723).FlashIcon, obj6) };
+  let obj5 = { style: items7, children: closure_7(tmp2(15725).FlashIcon, obj6) };
   items7 = [tmp.iconWrapper, animatedStyle];
   View = sharedValue(1655).View;
   obj6 = { size: "custom", style: tmp.icon, color: "background-brand" };
@@ -292,7 +292,7 @@ export default function ExploreServersRow(visible) {
   intl4 = tmp2(1113).intl;
   items12[1] = closure_7(Button2, obj11);
   items11[1] = closure_8(View, obj9);
-  items13 = [closure_8(View, obj3), closure_7(tmp2(19326).Separator, {}), ];
+  items13 = [closure_8(View, obj3), closure_7(tmp2(19328).Separator, {}), ];
   const obj12 = { style: tmp.gradient, start: tmp2(1092).VerticalGradient.START, end: tmp2(1092).VerticalGradient.END, colors: items14, pointerEvents: "none" };
   const tmp33 = sharedValue(5883);
   items14 = [, ];

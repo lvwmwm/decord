@@ -1,15 +1,15 @@
-// Module ID: 17630
-// Function ID: 17631
+// Module ID: 17632
+// Function ID: 17633
 // Name: HexagonCampaignPreviousPerkValues
-// Dependencies: [5330, 1238, 1192, 1194, 5331, 1240, 1195, 5534, 1241, 5334, 17084, 2]
+// Dependencies: [5330, 1238, 1192, 1194, 5331, 1240, 1195, 5534, 1241, 5334, 17086, 2]
 // Exports: getHexagonCampaignClientThemeItem, saveHexagonCampaignPreviousClientTheme
 
-// Module 17630 (HexagonCampaignPreviousPerkValues)
+// Module 17632 (HexagonCampaignPreviousPerkValues)
 import ThemeConstants from "ThemeConstants" /* 1195 */;
 import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5331 */;
 import HexagonCampaignUtils from "HexagonCampaignUtils" /* 5334 */;
 import MobileThemesUtils from "MobileThemesUtils" /* 5534 */;
-import HexagonActionCreators from "HexagonActionCreators" /* 17084 */;
+import HexagonActionCreators from "HexagonActionCreators" /* 17086 */;
 import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5330 */;
 import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1238 */;
 import ThemeStore from "ThemeStore" /* 1192 */;

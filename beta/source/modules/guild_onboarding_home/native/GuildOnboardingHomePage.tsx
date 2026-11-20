@@ -1,16 +1,16 @@
-// Module ID: 19393
-// Function ID: 19394
+// Module ID: 19395
+// Function ID: 19396
 // Name: GuildOnboardingHomePage
-// Dependencies: [19, 5522, 7080, 9001, 1072, 21, 1655, 504, 7082, 14682, 1256, 6057, 6907, 19394, 19395, 19399, 19403, 19404, 19407, 7079, 2]
+// Dependencies: [19, 5522, 7080, 9001, 1072, 21, 1655, 504, 7082, 14684, 1256, 6057, 6907, 19396, 19397, 19401, 19405, 19406, 19409, 7079, 2]
 // Exports: default
 
-// Module 19393 (GuildOnboardingHomePage)
+// Module 19395 (GuildOnboardingHomePage)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6057 */;
 import GuildActionCreatorsDefault from "GuildActionCreators" /* 6907 */;
 import GuildOnboardingHomeSettingsStore2 from "GuildOnboardingHomeSettingsStore" /* 7080 */;
-import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 14682 */;
+import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 14684 */;
 import react from "react" /* 19 */;
 import ExperimentStore from "ExperimentStore" /* 5522 */;
 import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 9001 */;
@@ -108,21 +108,21 @@ function GuildOnboardingHomePage(guildId) {
     let obj4 = { guildId, hideDescription: tmp5 };
     const obj3 = { guildId, scrollValue: sharedValue, children: items3 };
     items3 = [, ];
-    const tmp4Result = stateFromStores(19394);
-    items3[0] = closure_9(stateFromStores(19395), obj4);
+    const tmp4Result = stateFromStores(19396);
+    items3[0] = closure_9(stateFromStores(19397), obj4);
     if (tmp5) {
       let tmp15 = closure_10;
       const obj5 = { children: items4 };
       const obj6 = { guildId };
-      items4 = [tmp13(tmp4(19399), obj6), , ];
+      items4 = [tmp13(tmp4(19401), obj6), , ];
       const obj7 = { guildId };
-      items4[1] = closure_9(stateFromStores(19403), obj7);
+      items4[1] = closure_9(stateFromStores(19405), obj7);
       const obj8 = { guildId };
-      items4[2] = closure_9(stateFromStores(19404), obj8);
+      items4[2] = closure_9(stateFromStores(19406), obj8);
       tmp13Result = tmp11(closure_10, obj5);
     } else {
       const obj9 = { guildId };
-      tmp13Result = tmp13(tmp4(19407), obj9);
+      tmp13Result = tmp13(tmp4(19409), obj9);
     }
     items3[1] = tmp13Result;
     tmp11Result2 = tmp11(tmp4Result, obj3);

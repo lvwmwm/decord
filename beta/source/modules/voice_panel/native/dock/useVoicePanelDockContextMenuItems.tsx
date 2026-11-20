@@ -1,10 +1,10 @@
-// Module ID: 19183
-// Function ID: 19184
+// Module ID: 19185
+// Function ID: 19186
 // Name: useVoicePanelDockContextMenuItems
-// Dependencies: [19, 1072, 11984, 19184, 12971, 19185, 19186, 19187, 11956, 6929, 1108, 19189, 1113, 6013, 19190, 19192, 3253, 15767, 11046, 13174, 8069, 10569, 19194, 2]
+// Dependencies: [19, 1072, 11984, 19186, 12973, 19187, 19188, 19189, 11956, 6929, 1108, 19191, 1113, 6013, 19192, 19194, 3253, 15769, 11046, 13176, 8069, 10569, 19196, 2]
 // Exports: default
 
-// Module 19183 (useVoicePanelDockContextMenuItems)
+// Module 19185 (useVoicePanelDockContextMenuItems)
 import Constants from "Constants" /* 1072 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
 import intl6 from "intl" /* 1113 */;
@@ -12,8 +12,8 @@ import _modDef3253 from "module_3253" /* 3253 */;
 import UserPlusIcon from "UserPlusIcon" /* 6013 */;
 import ChatIcon from "ChatIcon" /* 8069 */;
 import SettingsIcon from "SettingsIcon" /* 10569 */;
-import ActivitiesIcon from "ActivitiesIcon" /* 13174 */;
-import trackVoicePanelTabOpened from "trackVoicePanelTabOpened" /* 19189 */;
+import ActivitiesIcon from "ActivitiesIcon" /* 13176 */;
+import trackVoicePanelTabOpened from "trackVoicePanelTabOpened" /* 19191 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -89,9 +89,9 @@ export default function useVoicePanelDockContextMenuItems(id, arg1) {
       const obj2 = { label: closure_6.text, IconComponent: MobilePhoneShareIcon, action: tmp14.onPress };
       tmp14 = closure_6;
       if (closure_6.isActive) {
-        MobilePhoneShareIcon = tmp15(19190).MobilePhoneXIcon;
+        MobilePhoneShareIcon = tmp15(19192).MobilePhoneXIcon;
       } else {
-        MobilePhoneShareIcon = tmp15(19192).MobilePhoneShareIcon;
+        MobilePhoneShareIcon = tmp15(19194).MobilePhoneShareIcon;
       }
       push2(obj2);
     }
@@ -116,7 +116,7 @@ export default function useVoicePanelDockContextMenuItems(id, arg1) {
       }
       const obj3 = { label: stringResult, IconComponent: VideoIcon, action: closure_7.onPress };
       if (closure_7.isVideoEnabled) {
-        VideoIcon = tmp28(15767).VideoSlashIcon;
+        VideoIcon = tmp28(15769).VideoSlashIcon;
       } else {
         VideoIcon = tmp28(11046).VideoIcon;
       }

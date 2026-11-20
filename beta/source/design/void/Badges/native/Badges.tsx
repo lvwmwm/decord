@@ -1,10 +1,10 @@
-// Module ID: 16630
-// Function ID: 16631
+// Module ID: 16632
+// Function ID: 16633
 // Name: Badges/Badges
 // Dependencies: [19, 17, 21, 5306, 575, 5919, 2]
 // Exports: TextBadge
 
-// Module 16630 (Badges/Badges)
+// Module 16632 (Badges/Badges)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

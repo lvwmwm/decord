@@ -1,9 +1,9 @@
-// Module ID: 19196
-// Function ID: 19197
+// Module ID: 19198
+// Function ID: 19199
 // Name: VoicePanelSettingsOverview
-// Dependencies: [19, 5154, 7016, 12719, 502, 5155, 2133, 5238, 1388, 6064, 1072, 5973, 10628, 21, 5306, 575, 504, 19197, 5944, 11951, 12955, 10646, 10608, 7722, 5919, 10815, 1113, 8092, 7, 6005, 19194, 10230, 7443, 7455, 18196, 16072, 7456, 572, 7954, 5131, 6215, 6056, 10919, 12998, 5542, 19198, 2121, 10631, 10649, 19199, 19184, 19185, 12363, 10594, 19200, 10569, 19201, 10600, 19202, 11046, 12980, 10981, 10982, 2]
+// Dependencies: [19, 5154, 7016, 12721, 502, 5155, 2133, 5238, 1388, 6064, 1072, 5973, 10628, 21, 5306, 575, 504, 19199, 5944, 11951, 12957, 10646, 10608, 7722, 5919, 10815, 1113, 8092, 7, 6005, 19196, 10230, 7443, 7455, 18198, 16074, 7456, 572, 7954, 5131, 6215, 6056, 10919, 13000, 5542, 19200, 2121, 10631, 10649, 19201, 19186, 19187, 12363, 10594, 19202, 10569, 19203, 10600, 19204, 11046, 12982, 10981, 10982, 2]
 
-// Module 19196 (VoicePanelSettingsOverview)
+// Module 19198 (VoicePanelSettingsOverview)
 import LogAggregator from "LogAggregator" /* 7 */;
 import get_initialized from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
@@ -28,15 +28,15 @@ import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 1063
 import useIsSecureFramesUIEnabled from "useIsSecureFramesUIEnabled" /* 10646 */;
 import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 10919 */;
 import StageChannelUnifiedCallExperiment from "StageChannelUnifiedCallExperiment" /* 11951 */;
-import ChannelCallConnectingScreen from "ChannelCallConnectingScreen" /* 12998 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16072 */;
-import WrenchIcon from "WrenchIcon" /* 18196 */;
-import VoicePanelSettingsActionCreators from "VoicePanelSettingsActionCreators" /* 19194 */;
-import getChannelInfoSubtitleDefault from "getChannelInfoSubtitle" /* 19197 */;
+import ChannelCallConnectingScreen from "ChannelCallConnectingScreen" /* 13000 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16074 */;
+import WrenchIcon from "WrenchIcon" /* 18198 */;
+import VoicePanelSettingsActionCreators from "VoicePanelSettingsActionCreators" /* 19196 */;
+import getChannelInfoSubtitleDefault from "getChannelInfoSubtitle" /* 19199 */;
 import react from "react" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5154 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 7016 */;
-import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 12719 */;
+import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 12721 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import MediaEngineStore from "MediaEngineStore" /* 2133 */;
@@ -83,7 +83,7 @@ class VoicePanelSettingsOverviewHeader {
     const tmp7 = channelId(5944)(stateFromStores1);
     const obj3 = StageChannelUnifiedCallExperiment;
     const isStageUnifiedCall = obj3.useIsStageUnifiedCall(stateFromStores1, "VoicePanelSettingsOverviewHeader");
-    const tmp9 = channelId(12955)(channelId);
+    const tmp9 = channelId(12957)(channelId);
     const obj4 = useIsSecureFramesUIEnabled;
     let isSecureFramesUIEnabled = obj4.useIsSecureFramesUIEnabled({ channelId });
     const obj5 = useIsSecureFramesVerified;
@@ -314,7 +314,7 @@ const memoResult = react.memo(function VoicePanelSettingsOverview(guildId) {
   const callback4 = stateFromStores1.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { channelId };
-    obj.openLazy(asyncRequire(19198, dependencyMap.paths), closure_17, obj2);
+    obj.openLazy(asyncRequire(19200, dependencyMap.paths), closure_17, obj2);
   }, items10);
   const callback5 = stateFromStores1.useCallback(() => {
     if (null != stateFromStores4) {

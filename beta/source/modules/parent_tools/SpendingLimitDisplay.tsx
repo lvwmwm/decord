@@ -1,15 +1,15 @@
-// Module ID: 17440
-// Function ID: 17441
+// Module ID: 17442
+// Function ID: 17443
 // Name: SpendingLimitDisplay
-// Dependencies: [1231, 8740, 1390, 504, 17349, 7253, 7254, 1113, 2701, 2]
+// Dependencies: [1231, 8740, 1390, 504, 17351, 7253, 7254, 1113, 2701, 2]
 // Exports: useSpendingLimitDisplayState, useSpendingLimitFromUserSettings
 
-// Module 17440 (SpendingLimitDisplay)
+// Module 17442 (SpendingLimitDisplay)
 import get_initialized from "get initialized" /* 504 */;
 import PremiumConstants from "PremiumConstants" /* 1390 */;
 import _modDef2701 from "module_2701" /* 2701 */;
 import PriceUtils from "PriceUtils" /* 7253 */;
-import SpendingLimitUtils from "SpendingLimitUtils" /* 17349 */;
+import SpendingLimitUtils from "SpendingLimitUtils" /* 17351 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
 import FamilyCenterStore from "FamilyCenterStore" /* 8740 */;
 import size from "module_2" /* 2 */;

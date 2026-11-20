@@ -1,10 +1,10 @@
-// Module ID: 14216
-// Function ID: 14217
+// Module ID: 14218
+// Function ID: 14219
 // Name: openAccountStanding
 // Dependencies: [1072, 8604, 2]
 // Exports: openAccountStanding
 
-// Module 14216 (openAccountStanding)
+// Module 14218 (openAccountStanding)
 import Constants from "Constants" /* 1072 */;
 import openUserSettings from "openUserSettings" /* 8604 */;
 import size from "module_2" /* 2 */;

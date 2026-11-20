@@ -1,10 +1,10 @@
-// Module ID: 17173
-// Function ID: 17174
+// Module ID: 17175
+// Function ID: 17176
 // Name: UserProfileTryItOutEditForm
-// Dependencies: [19, 17, 8542, 7962, 21, 7918, 7937, 17067, 17080, 1113, 8607, 17082, 17088, 17140, 1630, 17174, 504, 8482, 9529, 9401, 8608, 8590, 8601, 575, 5367, 9530, 17175, 9531, 15467, 5926, 9437, 17163, 13112, 17177, 2]
+// Dependencies: [19, 17, 8542, 7962, 21, 7918, 7937, 17069, 17082, 1113, 8607, 17084, 17090, 17142, 1630, 17176, 504, 8482, 9529, 9401, 8608, 8590, 8601, 575, 5367, 9530, 17177, 9531, 15469, 5926, 9437, 17165, 13114, 17179, 2]
 // Exports: default
 
-// Module 17173 (UserProfileTryItOutEditForm)
+// Module 17175 (UserProfileTryItOutEditForm)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1113 */;
@@ -21,16 +21,16 @@ import RecentAvatarUtils from "RecentAvatarUtils" /* 9401 */;
 import userSettingToActivity from "userSettingToActivity" /* 9529 */;
 import UserProfileGradientContainerDefault from "UserProfileGradientContainer" /* 9530 */;
 import UserProfileCustomStatusBubbleDefault from "UserProfileCustomStatusBubble" /* 9531 */;
-import UserProfilePrimaryInfoDefault from "UserProfilePrimaryInfo" /* 15467 */;
-import useOpenChangeBannerActionSheetDefault from "useOpenChangeBannerActionSheet" /* 17067 */;
-import UserProfileEditBannerButtonDefault from "UserProfileEditBannerButton" /* 17080 */;
-import UserProfileEditFormSharedStylesDefault from "UserProfileEditFormSharedStyles" /* 17082 */;
-import UserProfilePremiumTryItOutMobileRefreshExperiment from "UserProfilePremiumTryItOutMobileRefreshExperiment" /* 17088 */;
-import usePremiumTryItOutPresetShuffleDefault from "usePremiumTryItOutPresetShuffle" /* 17140 */;
-import UserProfileTryItOutFieldsDefault from "UserProfileTryItOutFields" /* 17163 */;
-import UserProfileFloatingUpsell from "UserProfileFloatingUpsell" /* 17174 */;
-import EditUserProfileAvatarDefault from "EditUserProfileAvatar" /* 17175 */;
-import UserProfileTryItOutGetPremiumUpsellDefault from "UserProfileTryItOutGetPremiumUpsell" /* 17177 */;
+import UserProfilePrimaryInfoDefault from "UserProfilePrimaryInfo" /* 15469 */;
+import useOpenChangeBannerActionSheetDefault from "useOpenChangeBannerActionSheet" /* 17069 */;
+import UserProfileEditBannerButtonDefault from "UserProfileEditBannerButton" /* 17082 */;
+import UserProfileEditFormSharedStylesDefault from "UserProfileEditFormSharedStyles" /* 17084 */;
+import UserProfilePremiumTryItOutMobileRefreshExperiment from "UserProfilePremiumTryItOutMobileRefreshExperiment" /* 17090 */;
+import usePremiumTryItOutPresetShuffleDefault from "usePremiumTryItOutPresetShuffle" /* 17142 */;
+import UserProfileTryItOutFieldsDefault from "UserProfileTryItOutFields" /* 17165 */;
+import UserProfileFloatingUpsell from "UserProfileFloatingUpsell" /* 17176 */;
+import EditUserProfileAvatarDefault from "EditUserProfileAvatar" /* 17177 */;
+import UserProfileTryItOutGetPremiumUpsellDefault from "UserProfileTryItOutGetPremiumUpsell" /* 17179 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8542 */;
@@ -191,7 +191,7 @@ export default function UserProfileTryItOutEditForm(currentUser) {
   items2[1] = metroImportAll(tmpResult, obj9);
   items10 = [metroImportAll(tmp22, obj16), ];
   const obj18 = { children: metroImportDefault(UserProfileTryItOutGetPremiumUpsellDefault, { onLayout }) };
-  const DisableCustomTheme = tmp5(13112).DisableCustomTheme;
+  const DisableCustomTheme = tmp5(13114).DisableCustomTheme;
   items10[1] = metroImportDefault(DisableCustomTheme, obj18);
   return metroImportDefault(ThemeContextProvider, obj6);
 };

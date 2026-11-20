@@ -1,17 +1,17 @@
-// Module ID: 18343
-// Function ID: 18344
+// Module ID: 18345
+// Function ID: 18346
 // Name: OrbWalletEntryRow
-// Dependencies: [19, 17, 16242, 21, 5306, 575, 7459, 1113, 2333, 7445, 9442, 5919, 7963, 2]
+// Dependencies: [19, 17, 16244, 21, 5306, 575, 7459, 1113, 2333, 7445, 9442, 5919, 7963, 2]
 // Exports: OrbWalletEntryRow
 
-// Module 18343 (OrbWalletEntryRow)
+// Module 18345 (OrbWalletEntryRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1113 */;
 import _modDef2333 from "module_2333" /* 2333 */;
 import Card_Card from "Card/Card" /* 7445 */;
 import Badge_Badge from "Badge/Badge" /* 7459 */;
-import OrbChallengesStore from "OrbChallengesStore" /* 16242 */;
+import OrbChallengesStore from "OrbChallengesStore" /* 16244 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;

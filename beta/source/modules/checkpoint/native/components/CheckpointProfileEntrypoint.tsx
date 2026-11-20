@@ -1,18 +1,18 @@
-// Module ID: 19657
-// Function ID: 19658
+// Module ID: 19659
+// Function ID: 19660
 // Name: CheckpointProfileEntrypoint
-// Dependencies: [17, 14253, 21, 14258, 5542, 19658, 2121, 6738, 504, 7443, 1113, 3317, 15190, 2]
+// Dependencies: [17, 14255, 21, 14260, 5542, 19660, 2121, 6738, 504, 7443, 1113, 3317, 15192, 2]
 // Exports: default
 
-// Module 19657 (CheckpointProfileEntrypoint)
+// Module 19659 (CheckpointProfileEntrypoint)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
 import _modDef3317 from "module_3317" /* 3317 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import CheckpointExperiments from "CheckpointExperiments" /* 6738 */;
-import openCheckpoint from "openCheckpoint" /* 14258 */;
-import CheckpointStore from "CheckpointStore" /* 14253 */;
+import openCheckpoint from "openCheckpoint" /* 14260 */;
+import CheckpointStore from "CheckpointStore" /* 14255 */;
 import size from "module_2" /* 2 */;
 
 function handlePress() {
@@ -34,7 +34,7 @@ function CheckpointProfileEntrypointRow() {
   if (stateFromStores) {
     tmp5Result = tmp5(ActivityIndicator, {});
   } else {
-    const obj4 = { IconComponent: checkpointQAMode(15190).ExperimentalCheckpointIcon };
+    const obj4 = { IconComponent: checkpointQAMode(15192).ExperimentalCheckpointIcon };
     const Icon = tmp(7443).TableRow.Icon;
     tmp5Result = tmp5(Icon, obj4);
   }
@@ -43,7 +43,7 @@ function CheckpointProfileEntrypointRow() {
     fn = () => {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { mode: checkpointQAMode };
-      obj.openLazy(asyncRequire(19658, dependencyMap.paths), "CheckpointTestingActionSheet", obj2);
+      obj.openLazy(asyncRequire(19660, dependencyMap.paths), "CheckpointTestingActionSheet", obj2);
     };
   }
   return <TableRow label={intl.string(_modDef3317["8hclXY"])} subLabel={intl2.string(_modDef3317.BFc4lY)} icon={tmp5Result} onPress={handlePress} onLongPress={fn} arrow start end />;

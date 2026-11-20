@@ -1,10 +1,10 @@
-// Module ID: 14136
-// Function ID: 14137
+// Module ID: 14138
+// Function ID: 14139
 // Name: GuildSettingsModalMemberEdit
-// Dependencies: [19, 17, 5173, 5213, 5218, 5212, 5177, 5238, 1388, 14137, 1072, 21, 5306, 575, 5243, 12, 7733, 14138, 7443, 1113, 7746, 5367, 7427, 7493, 5362, 5919, 10870, 5225, 8106, 6327, 1187, 7619, 14139, 14140, 6004, 14145, 1502, 504, 38, 11418, 14150, 5902, 14151, 14155, 5907, 7490, 2]
+// Dependencies: [19, 17, 5173, 5213, 5218, 5212, 5177, 5238, 1388, 14139, 1072, 21, 5306, 575, 5243, 12, 7733, 14140, 7443, 1113, 7746, 5367, 7427, 7493, 5362, 5919, 10870, 5225, 8106, 6327, 1187, 7619, 14141, 14142, 6004, 14147, 1502, 504, 38, 11418, 14152, 5902, 14153, 14157, 5907, 7490, 2]
 // Exports: default
 
-// Module 14136 (GuildSettingsModalMemberEdit)
+// Module 14138 (GuildSettingsModalMemberEdit)
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 575 */;
@@ -21,9 +21,9 @@ import HeaderActionButton2 from "HeaderActionButton" /* 7427 */;
 import NavigatorHeader2 from "NavigatorHeader" /* 7493 */;
 import BotTagDefault from "BotTag" /* 10870 */;
 import useCanToggleCommunicationDisableOnUser from "useCanToggleCommunicationDisableOnUser" /* 11418 */;
-import GuildSettingsModalMembersActionCreatorsDefault from "GuildSettingsModalMembersActionCreators" /* 14139 */;
-import GuildDisableCommunicationActionCreators from "GuildDisableCommunicationActionCreators" /* 14140 */;
-import TransferOwnershipModalActionCreatorsDefault from "TransferOwnershipModalActionCreators" /* 14145 */;
+import GuildSettingsModalMembersActionCreatorsDefault from "GuildSettingsModalMembersActionCreators" /* 14141 */;
+import GuildDisableCommunicationActionCreators from "GuildDisableCommunicationActionCreators" /* 14142 */;
+import TransferOwnershipModalActionCreatorsDefault from "TransferOwnershipModalActionCreators" /* 14147 */;
 import react from "react" /* 19 */;
 import GuildRecord from "GuildRecord" /* 5173 */;
 import GuildMemberStore from "GuildMemberStore" /* 5218 */;
@@ -31,7 +31,7 @@ import GuildRoleStore from "GuildRoleStore" /* 5212 */;
 import GuildStore from "GuildStore" /* 5177 */;
 import PermissionStore from "PermissionStore" /* 5238 */;
 import UserStore from "UserStore" /* 1388 */;
-import GuildSettingsModalMembersStore from "GuildSettingsModalMembersStore" /* 14137 */;
+import GuildSettingsModalMembersStore from "GuildSettingsModalMembersStore" /* 14139 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5306 */;

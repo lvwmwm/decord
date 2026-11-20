@@ -1,10 +1,10 @@
-// Module ID: 12443
-// Function ID: 12444
+// Module ID: 12445
+// Function ID: 12446
 // Name: conjureSharedProjectHome
 // Dependencies: [7018, 2]
 // Exports: canLaunchSharedProject, isSharedProjectHomeServer
 
-// Module 12443 (conjureSharedProjectHome)
+// Module 12445 (conjureSharedProjectHome)
 import ConjureProjectTypes from "ConjureProjectTypes" /* 7018 */;
 import size from "module_2" /* 2 */;
 

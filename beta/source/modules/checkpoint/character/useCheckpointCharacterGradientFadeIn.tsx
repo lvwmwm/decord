@@ -1,11 +1,11 @@
-// Module ID: 14475
-// Function ID: 14476
+// Module ID: 14477
+// Function ID: 14478
 // Name: useCheckpointCharacterGradientFadeIn
-// Dependencies: [32, 19, 5307, 6367, 504, 6735, 14476, 2]
+// Dependencies: [32, 19, 5307, 6367, 504, 6735, 14478, 2]
 // Exports: useCheckpointCharacterGradientFadeIn
 
-// Module 14475 (useCheckpointCharacterGradientFadeIn)
-import _mod14476 from "module_14476" /* 14476 */;
+// Module 14477 (useCheckpointCharacterGradientFadeIn)
+import _mod14478 from "module_14478" /* 14478 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5307 */;
@@ -58,7 +58,7 @@ export function useCheckpointCharacterGradientFadeIn(dataBinding) {
       let _requestAnimationFrame = requestAnimationFrame;
       function handleAnimationFrame() {
         const bound = Math.max(Math.min(Date.now() - closure_0, hasOwnProperty), 0);
-        const obj = _mod14476;
+        const obj = _mod14478;
         closure_3(obj.easeOutCubic(bound, 0, 1, hasOwnProperty));
         if (bound < hasOwnProperty) {
           const _requestAnimationFrame = requestAnimationFrame;

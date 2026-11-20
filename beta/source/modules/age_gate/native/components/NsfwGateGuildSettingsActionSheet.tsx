@@ -1,13 +1,13 @@
-// Module ID: 16346
-// Function ID: 16347
+// Module ID: 16348
+// Function ID: 16349
 // Name: NsfwGateGuildSettingsActionSheet
-// Dependencies: [19, 21, 16347, 7951, 7913, 7953, 1113, 5542, 7883, 16348, 2]
+// Dependencies: [19, 21, 16349, 7951, 7913, 7953, 1113, 5542, 7883, 16350, 2]
 // Exports: default
 
-// Module 16346 (NsfwGateGuildSettingsActionSheet)
+// Module 16348 (NsfwGateGuildSettingsActionSheet)
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
 import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7883 */;
-import GuildActionSheetActions from "GuildActionSheetActions" /* 16348 */;
+import GuildActionSheetActions from "GuildActionSheetActions" /* 16350 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -25,7 +25,7 @@ export default function NsfwGateGuildSettingsActionSheet(guild) {
   let obj3;
   let obj4;
   guild = guild.guild;
-  let obj = guild(16347);
+  let obj = guild(16349);
   const messageRequestPrivacyOption = obj.useMessageRequestPrivacyOption({ guild });
   let obj2 = { header: closure_3(guild(7913).BottomSheetTitleHeader, obj3), children: closure_4(Group, obj4) };
   const ActionSheet = guild(7951).ActionSheet;
@@ -43,7 +43,7 @@ export default function NsfwGateGuildSettingsActionSheet(guild) {
   };
   const ActionSheetRow = guild(7953).ActionSheetRow;
   intl = guild(1113).intl;
-  items = [closure_3(ActionSheetRow, obj5), closure_3(guild(16348).RestrictedGuildPrivacyOption, { guild }), messageRequestPrivacyOption, ];
+  items = [closure_3(ActionSheetRow, obj5), closure_3(guild(16350).RestrictedGuildPrivacyOption, { guild }), messageRequestPrivacyOption, ];
   const obj6 = {
     variant: "danger",
     label: intl2.string(guild(1113).t.J2TBi3),

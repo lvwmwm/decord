@@ -1,10 +1,10 @@
-// Module ID: 19982
-// Function ID: 19983
+// Module ID: 19984
+// Function ID: 19985
 // Name: triggerIOSHaptic
 // Dependencies: [11985, 5544, 2]
 // Exports: default
 
-// Module 19982 (triggerIOSHaptic)
+// Module 19984 (triggerIOSHaptic)
 import HapticUtils from "HapticUtils" /* 5544 */;
 import VoicePanelConstants from "VoicePanelConstants" /* 11985 */;
 import size from "module_2" /* 2 */;

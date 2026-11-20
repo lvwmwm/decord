@@ -1,14 +1,14 @@
-// Module ID: 18804
-// Function ID: 18805
+// Module ID: 18806
+// Function ID: 18807
 // Name: SpotifyNeutralIcon
-// Dependencies: [19, 21, 575, 6009, 18805, 2]
+// Dependencies: [19, 21, 575, 6009, 18807, 2]
 // Exports: SpotifyNeutralIcon
 
-// Module 18804 (SpotifyNeutralIcon)
+// Module 18806 (SpotifyNeutralIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 6009 */;
-import AssetRegistry from "AssetRegistry" /* 18805 */;
+import AssetRegistry from "AssetRegistry" /* 18807 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 13284
-// Function ID: 13285
+// Module ID: 13286
+// Function ID: 13287
 // Name: useUsesPreviewApp
 // Dependencies: [7017, 504, 7018, 2]
 // Exports: default
 
-// Module 13284 (useUsesPreviewApp)
+// Module 13286 (useUsesPreviewApp)
 import ConjureProjectTypes from "ConjureProjectTypes" /* 7018 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 7017 */;
 import size from "module_2" /* 2 */;

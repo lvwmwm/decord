@@ -1,18 +1,18 @@
-// Module ID: 20856
-// Function ID: 20857
+// Module ID: 20858
+// Function ID: 20859
 // Name: RequestToStreamManager
-// Dependencies: [6810, 6362, 15705, 15739, 1072, 7882, 15734, 11, 15736, 6852, 2]
+// Dependencies: [6810, 6362, 15707, 15741, 1072, 7882, 15736, 11, 15738, 6852, 2]
 
-// Module 20856 (RequestToStreamManager)
+// Module 20858 (RequestToStreamManager)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Constants from "Constants" /* 1072 */;
 import StreamActionCreatorsAll from "StreamActionCreators" /* 6852 */;
-import MobileRequestToStreamExperiment2 from "MobileRequestToStreamExperiment" /* 15734 */;
-import useStreamRequestActivities from "useStreamRequestActivities" /* 15736 */;
-import RequestToStreamConstants from "RequestToStreamConstants" /* 15739 */;
+import MobileRequestToStreamExperiment2 from "MobileRequestToStreamExperiment" /* 15736 */;
+import useStreamRequestActivities from "useStreamRequestActivities" /* 15738 */;
+import RequestToStreamConstants from "RequestToStreamConstants" /* 15741 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6810 */;
 import MessageStore from "MessageStore" /* 6362 */;
-import RequestToStreamStore from "RequestToStreamStore" /* 15705 */;
+import RequestToStreamStore from "RequestToStreamStore" /* 15707 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;
 import size from "module_2" /* 2 */;
 

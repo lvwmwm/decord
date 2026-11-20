@@ -1,10 +1,10 @@
-// Module ID: 12919
-// Function ID: 12920
+// Module ID: 12921
+// Function ID: 12922
 // Name: GlobalStageChannelStatus
-// Dependencies: [5, 32, 19, 17, 5543, 5160, 1072, 21, 5306, 575, 5944, 1113, 504, 5889, 12920, 12912, 12911, 6898, 8190, 6823, 6899, 6893, 1187, 5919, 12924, 5927, 5926, 11949, 11956, 5537, 5328, 11827, 8033, 2]
+// Dependencies: [5, 32, 19, 17, 5543, 5160, 1072, 21, 5306, 575, 5944, 1113, 504, 5889, 12922, 12914, 12913, 6898, 8190, 6823, 6899, 6893, 1187, 5919, 12926, 5927, 5926, 11949, 11956, 5537, 5328, 11827, 8033, 2]
 // Exports: default
 
-// Module 12919 (GlobalStageChannelStatus)
+// Module 12921 (GlobalStageChannelStatus)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -14,7 +14,7 @@ import useChannelNameDefault from "useChannelName" /* 5944 */;
 import StageChannelActionCreators from "StageChannelActionCreators" /* 6899 */;
 import StatusBarDefault from "StatusBar" /* 11827 */;
 import useIsInvitedToSpeakDefault from "useIsInvitedToSpeak" /* 11949 */;
-import PushNotificationDefault from "PushNotification" /* 12920 */;
+import PushNotificationDefault from "PushNotification" /* 12922 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -175,20 +175,20 @@ class StageChannelRaiseHandAck {
     [tmp10, c3] = _slicedToArray(react.useState(false), 2);
     const tmp9 = _slicedToArray(react.useState(false), 2);
     let id1;
-    const useStageBlockedUsersCount = channel(12912).useStageBlockedUsersCount;
-    const tmp11 = channel(12912);
+    const useStageBlockedUsersCount = channel(12914).useStageBlockedUsersCount;
+    const tmp11 = channel(12914);
     if (channel != null) {
       id1 = channel.id;
     }
     const stageBlockedUsersCount = useStageBlockedUsersCount(id1);
     let id2;
-    const useStageIgnoredUsersCount = tmp6(12912).useStageIgnoredUsersCount;
-    channel(12912);
+    const useStageIgnoredUsersCount = tmp6(12914).useStageIgnoredUsersCount;
+    channel(12914);
     if (channel != null) {
       id2 = channel.id;
     }
     const stageIgnoredUsersCount = useStageIgnoredUsersCount(id2);
-    channel(12911);
+    channel(12913);
     if (channel != null) {
       const id = channel.id;
     }
@@ -206,7 +206,7 @@ class StageChannelRaiseHandAck {
       items3 = [closure_10(View, obj4), , ];
       if (stageBlockedUsersCount > 0) {
         const obj6 = { style: tmp.row, children: closure_10(Text, obj7) };
-        obj7 = { variant: "body-xs/medium", color: "text-overlay-light", children: tmp2(12924)(stageBlockedUsersCount, stageIgnoredUsersCount) };
+        obj7 = { variant: "body-xs/medium", color: "text-overlay-light", children: tmp2(12926)(stageBlockedUsersCount, stageIgnoredUsersCount) };
         Text = tmp6(5919).Text;
         tmp22Result = tmp22(tmp21, obj6);
       } else {

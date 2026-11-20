@@ -1,10 +1,10 @@
-// Module ID: 14808
-// Function ID: 14809
+// Module ID: 14810
+// Function ID: 14811
 // Name: ChannelAutocompleteAnalytics
 // Dependencies: [1072, 1256, 6057, 2]
 // Exports: iOSTrackAutocompleteOpen, iOSTrackAutocompleteSelect
 
-// Module 14808 (ChannelAutocompleteAnalytics)
+// Module 14810 (ChannelAutocompleteAnalytics)
 import Constants from "Constants" /* 1072 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6057 */;

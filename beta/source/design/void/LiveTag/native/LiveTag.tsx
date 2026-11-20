@@ -1,10 +1,10 @@
-// Module ID: 16622
-// Function ID: 16623
+// Module ID: 16624
+// Function ID: 16625
 // Name: LiveTag
 // Dependencies: [19, 17, 21, 5306, 575, 1380, 5919, 1113, 2]
 // Exports: default
 
-// Module 16622 (LiveTag)
+// Module 16624 (LiveTag)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

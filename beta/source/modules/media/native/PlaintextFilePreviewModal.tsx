@@ -1,10 +1,10 @@
-// Module ID: 12508
-// Function ID: 12509
+// Module ID: 12510
+// Function ID: 12511
 // Name: PlaintextFilePreviewModal
-// Dependencies: [32, 19, 17, 1083, 21, 5306, 575, 6838, 12507, 12509, 12511, 6002, 12513, 5919, 1113, 7418, 12514, 12522, 7897, 7493, 9148, 7427, 7420, 12523, 2]
+// Dependencies: [32, 19, 17, 1083, 21, 5306, 575, 6838, 12509, 12511, 12513, 6002, 12515, 5919, 1113, 7418, 12516, 12524, 7897, 7493, 9148, 7427, 7420, 12525, 2]
 // Exports: default
 
-// Module 12508 (PlaintextFilePreviewModal)
+// Module 12510 (PlaintextFilePreviewModal)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1083 */;
@@ -14,8 +14,8 @@ import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
 import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 7418 */;
 import NavigatorHeader from "NavigatorHeader" /* 7493 */;
 import CheckmarkSmallIcon2 from "CheckmarkSmallIcon" /* 7897 */;
-import openPlaintextFilePreview from "openPlaintextFilePreview" /* 12507 */;
-import useDownloadedFile from "useDownloadedFile" /* 12513 */;
+import openPlaintextFilePreview from "openPlaintextFilePreview" /* 12509 */;
+import useDownloadedFile from "useDownloadedFile" /* 12515 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -103,7 +103,7 @@ export default function PlaintextFilePreviewModal(url) {
   let tmp2 = first(react.useState(true), 2);
   first = tmp2[0];
   react = tmp2[1];
-  const MARKDOWN_LANGUAGES = url(12522).MARKDOWN_LANGUAGES;
+  const MARKDOWN_LANGUAGES = url(12524).MARKDOWN_LANGUAGES;
   const has = MARKDOWN_LANGUAGES.has;
   const parts = str.split(".");
   const hasItem = has(parts.slice(-1)[0]);
@@ -214,5 +214,5 @@ export default function PlaintextFilePreviewModal(url) {
     obj3 = NavigatorHeader;
     return obj;
   }, items1);
-  return jsx(url(12523).Modal, { screens: memo1, initialRouteName: memo.PREVIEW });
+  return jsx(url(12525).Modal, { screens: memo1, initialRouteName: memo.PREVIEW });
 };

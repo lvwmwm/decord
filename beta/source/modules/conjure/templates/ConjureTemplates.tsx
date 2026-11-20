@@ -1,10 +1,10 @@
-// Module ID: 13987
-// Function ID: 13988
+// Module ID: 13989
+// Function ID: 13990
 // Name: ConjureTemplates
 // Dependencies: [7365, 1113, 4131, 2]
 // Exports: conjureTemplates, startConjureTemplateProject, templateImportMessage
 
-// Module 13987 (ConjureTemplates)
+// Module 13989 (ConjureTemplates)
 import intl7 from "intl" /* 1113 */;
 import _modDef4131 from "module_4131" /* 4131 */;
 import ConjureConnectionStore from "ConjureConnectionStore" /* 7365 */;

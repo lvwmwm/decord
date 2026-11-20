@@ -1,9 +1,9 @@
-// Module ID: 20895
-// Function ID: 20896
+// Module ID: 20897
+// Function ID: 20898
 // Name: QuestProgressManager
-// Dependencies: [5, 32, 5154, 7019, 2140, 6810, 2159, 6064, 8808, 19944, 6954, 7020, 1089, 8816, 8815, 15252, 6955, 10133, 6957, 8834, 6803, 6802, 7882, 6962, 8831, 6798, 1255, 6801, 8829, 2]
+// Dependencies: [5, 32, 5154, 7019, 2140, 6810, 2159, 6064, 8808, 19946, 6954, 7020, 1089, 8816, 8815, 15254, 6955, 10133, 6957, 8834, 6803, 6802, 7882, 6962, 8831, 6798, 1255, 6801, 8829, 2]
 
-// Module 20895 (QuestProgressManager)
+// Module 20897 (QuestProgressManager)
 import DurationsDefault from "Durations" /* 1089 */;
 import GlobalUtils from "GlobalUtils" /* 1255 */;
 import StreamKeyUtils from "StreamKeyUtils" /* 6798 */;
@@ -17,7 +17,7 @@ import QuestExpirationUtils from "QuestExpirationUtils" /* 8815 */;
 import utils_QuestUtils from "utils/QuestUtils" /* 8829 */;
 import QuestTaskUtils from "QuestTaskUtils" /* 8831 */;
 import QuestActionCreators from "QuestActionCreators" /* 10133 */;
-import QuestMatchingUtils from "QuestMatchingUtils" /* 15252 */;
+import QuestMatchingUtils from "QuestMatchingUtils" /* 15254 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5154 */;
@@ -27,7 +27,7 @@ import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6810 */;
 import DetectableGameStore from "DetectableGameStore" /* 2159 */;
 import SortedVoiceStateStore from "SortedVoiceStateStore" /* 6064 */;
 import QuestStore from "QuestStore" /* 8808 */;
-import UnenrolledActivityQuestStore from "UnenrolledActivityQuestStore" /* 19944 */;
+import UnenrolledActivityQuestStore from "UnenrolledActivityQuestStore" /* 19946 */;
 import QuestConstants from "QuestConstants" /* 6954 */;
 import getQuestLogger from "getQuestLogger" /* 8816 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;

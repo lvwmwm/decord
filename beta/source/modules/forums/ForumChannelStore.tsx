@@ -1,10 +1,10 @@
-// Module ID: 14610
-// Function ID: 14611
+// Module ID: 14612
+// Function ID: 14613
 // Name: ForumChannelStore
 // Dependencies: [5155, 5165, 5164, 5166, 1263, 38, 8993, 560, 504, 2]
 // Exports: useForumChannelStore, useForumChannelStoreApi
 
-// Module 14610 (ForumChannelStore)
+// Module 14612 (ForumChannelStore)
 import _modDef38 from "module_38" /* 38 */;
 import ThreadSortOrder from "ThreadSortOrder" /* 5164 */;
 import ForumLayout from "ForumLayout" /* 5165 */;

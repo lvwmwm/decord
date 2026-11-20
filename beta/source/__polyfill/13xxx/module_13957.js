@@ -1,140 +1,316 @@
 // Module ID: 13957
 // Function ID: 13958
-// Dependencies: []
-// Exports: parse
+// Dependencies: [13958, 13946]
 
 // Module 13957
-new Set([9, 10, 12, 13, 32]);
-let closure_1 = "0".charCodeAt(0);
-let closure_2 = "9".charCodeAt(0);
+import _mod13946 from "module_13946" /* 13946 */;
+import nthCheck2 from "nthCheck" /* 13958 */;
 
-export function parse(str) {
-  str = str.trim();
-  const str2 = str.toLowerCase();
-  if ("even" === str2) {
-    return [2, 0];
-  } else if ("odd" === str2) {
-    return [2, 1];
+function dynamicPseudo(arg0, arg1, arg2) {
+  let active;
+  let closure_0 = arg0;
+  let tmp = arg2.adapter[isActive];
+  let closure_1 = tmp;
+  if (typeof tmp !== "function") {
+    active = module_13946.default.falseFunc;
   } else {
-    let num2;
-    let sum1 = 0;
-    if ("-" === str2.charAt(sum1)) {
-      sum1 = sum1 + 1;
-      num2 = -1;
-    } else {
-      let tmp = sum1;
-      let num = 1;
-      num2 = 1;
-      if ("+" === str2.charAt(sum1)) {
-        sum1 = sum1 + 1;
-        num2 = 1;
+    active = function active(arg0) {
+      const tmp = closure_1(arg0) && closure_0(arg0);
+      return tmp;
+    };
+  }
+  return active;
+}
+const fn = this && this.__importDefault || ((__esModule) => {
+  let tmp2;
+  const tmp = __esModule;
+  if (!tmp) {
+    tmp2 = { default: __esModule };
+    const obj = { default: __esModule };
+  } else {
+    tmp2 = __esModule;
+  }
+  return tmp2;
+});
+const nthCheck = fn(nthCheck2);
+const module_13946 = fn(_mod13946);
+let obj = {
+  contains(arg0, arg1, adapter) {
+    let closure_0 = arg0;
+    let closure_1 = arg1;
+    adapter = adapter.adapter;
+    return function contains(arg0) {
+      let hasItem = closure_0(arg0);
+      if (hasItem) {
+        const text = adapter.getText(arg0);
+        hasItem = text.includes(closure_1);
       }
-    }
-    function readNumber() {
-      let num = 0;
-      const tmp = sum1;
-      if (sum1 < str2.length) {
-        num = 0;
-        if (str2.charCodeAt(sum1) >= closure_1) {
+      return hasItem;
+    };
+  },
+  icontains(arg0, str, adapter) {
+    let closure_0 = arg0;
+    adapter = adapter.adapter;
+    let closure_2 = str.toLowerCase();
+    return function icontains(arg0) {
+      let hasItem = closure_0(arg0);
+      if (hasItem) {
+        const str = adapter.getText(arg0);
+        const formatted = str.toLowerCase();
+        hasItem = formatted.includes(closure_2);
+      }
+      return hasItem;
+    };
+  },
+  "nth-child": (arg0, arg1, adapter) => {
+    let nthChild;
+    let closure_0 = arg0;
+    adapter = adapter.adapter;
+    const equals = adapter.equals;
+    const defaultResult = nthCheck.default(arg1);
+    let tmp2 = module_13946;
+    if (defaultResult === module_13946.default.falseFunc) {
+      nthChild = tmp2.default.falseFunc;
+    } else if (defaultResult === tmp2.default.trueFunc) {
+      closure_0 = arg0;
+      nthChild = (arg0) => {
+        const parent = adapter.getParent(arg0);
+        let tmp2 = null != parent && adapter.isTag(parent);
+        if (tmp2) {
+          tmp2 = closure_0(arg0);
+        }
+        return tmp2;
+      };
+    } else {
+      nthChild = function nthChild(arg0) {
+        const siblings = adapter.getSiblings(arg0);
+        let num = 0;
+        if (0 < siblings.length) {
           let num3 = 0;
+          let num4 = 0;
           num = 0;
-          if (str2.charCodeAt(sum1) <= closure_2) {
-            const sum = 10 * num3 + (str2.charCodeAt(sum1) - closure_1);
-            sum1 = sum1 + 1;
-            num = sum;
-            while (sum1 < str2.length) {
+          if (!equals(arg0, siblings[0])) {
+            while (true) {
+              let sum = num4;
+              if (adapter.isTag(siblings[num3])) {
+                sum = num4 + 1;
+              }
+              let sum1 = num3 + 1;
               num = sum;
-              if (obj2.charCodeAt(sum1) < tmp7) {
+              if (sum1 >= siblings.length) {
                 break;
               } else {
-                num3 = sum;
+                num3 = sum1;
+                num4 = sum;
                 num = sum;
-                if (obj2.charCodeAt(sum1) > closure_2) {
+                if (equals(arg0, siblings[sum1])) {
                   break;
                 }
               }
             }
           }
         }
-      }
-      let tmp14 = null;
-      if (sum1 !== tmp) {
-        tmp14 = num;
-      }
-      return tmp14;
+        const tmp8 = defaultResult(num) && closure_0(arg0);
+        return tmp8;
+      };
     }
-    const number = readNumber();
-    let tmp6 = sum1 < str2.length;
-    if (tmp6) {
-      const tmp7 = sum1;
-      tmp6 = "n" === str2.charAt(sum1);
-    }
-    let tmp8 = number;
-    let tmp9 = num2;
-    let num3 = 0;
-    if (tmp6) {
-      let sum = sum1 + 1;
-      sum1 = sum;
-      let tmp12 = null;
-      let num5 = 1;
-      if (null != number) {
-        num5 = number;
-      }
-      if (sum < str2.length) {
-        let tmp13 = str2;
-        let tmp14 = sum1;
-        if (str2.has(str2.charCodeAt(sum1))) {
-          sum1 = sum1 + 1;
-          while (sum1 < str2.length) {
-            if (!str2.has(str2.charCodeAt(sum1))) {
-              break;
-            }
-          }
+    return nthChild;
+  },
+  "nth-last-child": (arg0, arg1, adapter) => {
+    let nthLastChild;
+    let closure_0 = arg0;
+    adapter = adapter.adapter;
+    const equals = adapter.equals;
+    const defaultResult = nthCheck.default(arg1);
+    if (defaultResult === module_13946.default.falseFunc) {
+      nthLastChild = tmp2.default.falseFunc;
+    } else if (defaultResult === module_13946.default.trueFunc) {
+      closure_0 = arg0;
+      nthLastChild = (arg0) => {
+        const parent = adapter.getParent(arg0);
+        let tmp2 = null != parent && adapter.isTag(parent);
+        if (tmp2) {
+          tmp2 = closure_0(arg0);
         }
-      }
-      let num6 = 0;
-      let num7 = 0;
-      if (sum1 < str2.length) {
-        let num8;
-        if ("-" === str2.charAt(sum1)) {
-          sum1 = sum1 + 1;
-          num8 = -1;
-        } else {
-          num8 = 1;
-          if ("+" === str2.charAt(sum1)) {
-            sum1 = sum1 + 1;
-            num8 = 1;
-          }
-        }
-        if (sum1 < str2.length) {
-          if (str2.has(str2.charCodeAt(sum1))) {
-            const sum2 = sum1 + 1;
-            sum1 = sum2;
-            while (sum2 < str2.length) {
-              if (!str2.has(str2.charCodeAt(sum1))) {
+        return tmp2;
+      };
+    } else {
+      nthLastChild = function nthLastChild(arg0) {
+        const siblings = adapter.getSiblings(arg0);
+        let diff = siblings.length - 1;
+        let num = 0;
+        if (0 <= diff) {
+          let num2 = 0;
+          num = 0;
+          if (!equals(arg0, siblings[diff])) {
+            while (true) {
+              let sum = num2;
+              if (adapter.isTag(siblings[diff])) {
+                sum = num2 + 1;
+              }
+              let diff1 = diff - 1;
+              num = sum;
+              if (0 > diff1) {
                 break;
+              } else {
+                diff = diff1;
+                num2 = sum;
+                num = sum;
+                if (equals(arg0, siblings[diff1])) {
+                  break;
+                }
               }
             }
           }
         }
-        num6 = readNumber();
-        num7 = num8;
-      }
-      num3 = num2 * num5;
-      tmp8 = num6;
-      tmp9 = num7;
+        const tmp9 = defaultResult(num) && closure_0(arg0);
+        return tmp9;
+      };
     }
-    if (null !== tmp8) {
-      if (sum1 >= str2.length) {
-        const items = [num3, tmp9 * tmp8];
-        return items;
-      }
+    return nthLastChild;
+  },
+  "nth-of-type": (arg0, arg1, adapter) => {
+    let nthOfType;
+    let closure_0 = arg0;
+    adapter = adapter.adapter;
+    const equals = adapter.equals;
+    const defaultResult = nthCheck.default(arg1);
+    if (defaultResult === module_13946.default.falseFunc) {
+      nthOfType = tmp2.default.falseFunc;
+    } else if (defaultResult === module_13946.default.trueFunc) {
+      closure_0 = arg0;
+      nthOfType = (arg0) => {
+        const parent = adapter.getParent(arg0);
+        let tmp2 = null != parent && adapter.isTag(parent);
+        if (tmp2) {
+          tmp2 = closure_0(arg0);
+        }
+        return tmp2;
+      };
+    } else {
+      nthOfType = function nthOfType(arg0) {
+        const siblings = adapter.getSiblings(arg0);
+        let num = 0;
+        let num2 = 0;
+        let num3 = 0;
+        if (0 < siblings.length) {
+          num = num3;
+          while (!equals(arg0, siblings[num2])) {
+            let obj = adapter;
+            let isTagResult = adapter.isTag(tmp);
+            if (isTagResult) {
+              let name = obj.getName(tmp);
+              isTagResult = name === obj.getName(arg0);
+            }
+            let sum = num3;
+            if (isTagResult) {
+              sum = num3 + 1;
+            }
+            num2 = num2 + 1;
+            num3 = sum;
+            num = sum;
+            if (num2 >= siblings.length) {
+              break;
+            }
+          }
+        }
+        const tmp8 = defaultResult(num) && closure_0(arg0);
+        return tmp8;
+      };
     }
-    const _Error = Error;
-    const concat = "n-th rule couldn't be parsed ('".concat;
-    const self = this;
-    const self2 = this;
-    const error = new Error("n-th rule couldn't be parsed ('".concat(str2, "')"));
-    throw error;
-  }
-}
+    return nthOfType;
+  },
+  "nth-last-of-type": (arg0, arg1, adapter) => {
+    let nthLastOfType;
+    let closure_0 = arg0;
+    adapter = adapter.adapter;
+    const equals = adapter.equals;
+    const defaultResult = nthCheck.default(arg1);
+    let tmp2 = module_13946;
+    if (defaultResult === module_13946.default.falseFunc) {
+      nthLastOfType = tmp2.default.falseFunc;
+    } else if (defaultResult === tmp2.default.trueFunc) {
+      closure_0 = arg0;
+      nthLastOfType = (arg0) => {
+        const parent = adapter.getParent(arg0);
+        let tmp2 = null != parent && adapter.isTag(parent);
+        if (tmp2) {
+          tmp2 = closure_0(arg0);
+        }
+        return tmp2;
+      };
+    } else {
+      nthLastOfType = function nthLastOfType(arg0) {
+        const siblings = adapter.getSiblings(arg0);
+        let diff = siblings.length - 1;
+        let num = 0;
+        let num2 = 0;
+        if (0 <= diff) {
+          num2 = num;
+          while (!equals(arg0, siblings[diff])) {
+            let obj = adapter;
+            let isTagResult = adapter.isTag(tmp2);
+            if (isTagResult) {
+              let name = obj.getName(tmp2);
+              isTagResult = name === obj.getName(arg0);
+            }
+            let sum = num;
+            if (isTagResult) {
+              sum = num + 1;
+            }
+            diff = diff - 1;
+            num = sum;
+            num2 = sum;
+            if (0 > diff) {
+              break;
+            }
+          }
+        }
+        const tmp9 = defaultResult(num2) && closure_0(arg0);
+        return tmp9;
+      };
+    }
+    return nthLastOfType;
+  },
+  root(arg0, arg1, adapter) {
+    let closure_0 = arg0;
+    adapter = adapter.adapter;
+    return (arg0) => {
+      const parent = adapter.getParent(arg0);
+      let tmp2 = null == parent || !adapter.isTag(parent);
+      if (tmp2) {
+        tmp2 = closure_0(arg0);
+      }
+      return tmp2;
+    };
+  },
+  scope(arg0, arg1, equals, arg3) {
+    let closure_0 = arg0;
+    let closure_1 = arg3;
+    equals = equals.equals;
+    if (arg3) {
+      let rootResult;
+      if (0 !== arg3.length) {
+        rootResult = 1 === arg3.length ? ((arg0) => {
+          const tmp = equals(closure_1[0], arg0) && closure_0(arg0);
+          return tmp;
+        }) : ((arg0) => {
+          const hasItem = closure_1.includes(arg0) && closure_0(arg0);
+          return hasItem;
+        });
+      }
+      return rootResult;
+    }
+    const filters = exports.filters;
+    rootResult = filters.root(arg0, arg1, equals);
+  },
+  hover: dynamicPseudo,
+  visited: dynamicPseudo,
+  active: dynamicPseudo
+};
+const isHovered = "isHovered";
+const isVisited = "isVisited";
+const isActive = "isActive";
+const filters_export = obj;
+
+export { filters_export as filters };

@@ -1,15 +1,15 @@
-// Module ID: 14012
-// Function ID: 14013
+// Module ID: 14014
+// Function ID: 14015
 // Name: ConjureDebugLogsTab
-// Dependencies: [32, 19, 17, 7371, 21, 5306, 575, 14013, 10560, 7963, 5919, 14006, 1113, 4131, 7428, 7445, 1630, 504, 7983, 14014, 11251, 7825, 14016, 14017, 7888, 2]
+// Dependencies: [32, 19, 17, 7371, 21, 5306, 575, 14015, 10560, 7963, 5919, 14008, 1113, 4131, 7428, 7445, 1630, 504, 7983, 14016, 11251, 7825, 14018, 14019, 7888, 2]
 // Exports: default
 
-// Module 14012 (ConjureDebugLogsTab)
+// Module 14014 (ConjureDebugLogsTab)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef4131 from "module_4131" /* 4131 */;
-import ConjureDebugJson from "ConjureDebugJson" /* 14013 */;
-import ConjureDebugLabels from "ConjureDebugLabels" /* 14014 */;
+import ConjureDebugJson from "ConjureDebugJson" /* 14015 */;
+import ConjureDebugLabels from "ConjureDebugLabels" /* 14016 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ConjureDebugLogStore from "ConjureDebugLogStore" /* 7371 */;
@@ -77,7 +77,7 @@ let closure_11 = react.memo(function LogRow(entry) {
   let obj = { style: tmp.row, children: items2 };
   const obj2 = { style: tmp.rowHead, children: items1 };
   const Text = tmp6(5919).Text;
-  const tmp6Result = tmp6(14006);
+  const tmp6Result = tmp6(14008);
   let ts = tmp6Result.formatClockTime(entry.ts);
   if (ts == null) {
     ts = entry.ts;

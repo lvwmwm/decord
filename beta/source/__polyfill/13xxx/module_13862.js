@@ -3,229 +3,123 @@
 // Dependencies: []
 
 // Module 13862
-function noop() {
-
-}
-
-export default function(type, enter, arg2) {
-  let obj;
-  let obj2;
-  let obj3;
-  let obj4;
-  let tmp4;
-  let tmp5;
-  let closure_0 = arg2;
-  enter = noop;
-  let leave = noop;
-  if (typeof enter === "function") {
-    obj = tmp;
-    obj2 = enter;
-    obj3 = tmp;
-    obj4 = enter;
-    tmp4 = tmp;
-    tmp5 = enter;
-  } else {
-    obj = tmp;
-    obj2 = tmp;
-    obj3 = tmp;
-    obj4 = tmp;
-    tmp4 = tmp;
-    tmp5 = tmp;
-    if (enter) {
-      enter = enter.enter;
-      let tmp2 = tmp;
-      if (typeof enter === "function") {
-        tmp2 = enter;
-      }
-      enter = tmp2;
-      leave = enter.leave;
-      let tmp3 = tmp;
-      if (typeof leave === "function") {
-        tmp3 = leave;
-      }
-      leave = tmp3;
-      obj = tmp3;
-      obj2 = tmp2;
-      obj3 = tmp3;
-      obj4 = tmp2;
-      tmp4 = tmp3;
-      tmp5 = tmp2;
-    }
-  }
-  if (tmp5 === noop) {
-    if (tmp4 === noop) {
-      const _Error3 = Error;
-      const self5 = this;
-      const self6 = this;
-      let error = new Error("Neither `enter` nor `leave` walker handler is set or both aren't a function");
-      throw error;
-    }
-  }
-  function walk(term) {
-    enter.call(closure_0, term);
-    switch (term.type) {
-      case "Group":
-      {
-        const terms = term.terms;
-        const item = terms.forEach(walk);
-        leave.call(closure_0, term);
-        break;
-      }
-      case "Multiplier":
-      {
-        walk(term.term);
-        break;
-      }
-      case "Type":
-      {
-        break;
-      }
-      case "Property":
-      {
-        break;
-      }
-      case "Keyword":
-      {
-        break;
-      }
-      case "AtKeyword":
-      {
-        break;
-      }
-      case "Function":
-      {
-        break;
-      }
-      case "String":
-      {
-        break;
-      }
-      case "Token":
-      {
-        break;
-      }
-      case "Comma":
-      {
-        break;
-      }
-      default:
-      {
-        const _Error = Error;
-        const self = this;
-        const self2 = this;
-        const error = new Error("Unknown type: " + term.type);
-        throw error;
+let closure_1 = Object.create(null);
+let closure_2 = Object.create(null);
+let obj = {
+  keyword: function getKeywordDescriptor(str) {
+    const obj = hasOwnProperty;
+    if (hasOwnProperty.call(closure_1, str)) {
+      return closure_1[str];
+    } else {
+      const formatted = str.toLowerCase();
+      if (obj.call(closure_1, formatted)) {
+        closure_1[str] = closure_1[formatted];
+        return closure_1[formatted];
+      } else {
+        let tmp2 = length >= 2;
+        if (2 <= formatted.length) {
+          tmp2 = 45 === formatted.charCodeAt(0);
+        }
+        if (tmp2) {
+          tmp2 = 45 === formatted.charCodeAt(1);
+        }
+        let str2 = "";
+        if (!tmp2) {
+          let str3 = "";
+          if (3 <= formatted.length) {
+            str3 = "";
+            if (45 === formatted.charCodeAt(0)) {
+              str3 = "";
+              if (45 !== formatted.charCodeAt(1)) {
+                const index = formatted.indexOf("-", 2);
+                str3 = "";
+                if (-1 !== index) {
+                  str3 = formatted.substring(0, index + 1);
+                }
+              }
+            }
+          }
+          str2 = str3;
+        }
+        const _Object = Object;
+        const obj2 = { basename: formatted.substr(str2.length), name: formatted, vendor: str2, prefix: str2, custom: tmp2 };
+        const freezeResult = freeze(obj2);
+        closure_1[str] = freezeResult;
+        return freezeResult;
       }
     }
-  }
-  obj4.call(arg2, type);
-  switch (type.type) {
-    case "Group":
-    {
-      let terms = type.terms;
-      let item = terms.forEach(walk);
-      obj3.call(arg2, type);
-      break;
-    }
-    case "Multiplier":
-    {
-      const term = type.term;
-      obj2.call(arg2, term);
-      switch (term.type) {
-        case "Group":
-        {
-          const terms1 = term.terms;
-          const item1 = terms1.forEach(walk);
-          obj.call(arg2, term);
-          break;
+  },
+  property: function getPropertyDescriptor(str) {
+    const obj = hasOwnProperty;
+    if (hasOwnProperty.call(closure_2, str)) {
+      return closure_2[str];
+    } else {
+      str = str[0];
+      let str2 = "/";
+      if ("/" === str) {
+        if (`/` === str[1]) {
+          str2 = "//";
         }
-        case "Multiplier":
-        {
-          walk(term.term);
-          break;
-        }
-        case "Type":
-        {
-          break;
-        }
-        case "Property":
-        {
-          break;
-        }
-        case "Keyword":
-        {
-          break;
-        }
-        case "AtKeyword":
-        {
-          break;
-        }
-        case "Function":
-        {
-          break;
-        }
-        case "String":
-        {
-          break;
-        }
-        case "Token":
-        {
-          break;
-        }
-        case "Comma":
-        {
-          break;
-        }
-        default:
-        {
-          let _Error = Error;
-          let self = this;
-          let self2 = this;
-          const error1 = new Error("Unknown type: " + term.type);
-          throw error1;
+        str = str2;
+      } else {
+        const tmp2 = "_" !== str && "*" !== str && "$" !== str && "#" !== str && "+" !== str && "&" !== str;
+        if (tmp2) {
+          str = "";
         }
       }
-      break;
+      const tmp4 = str.length - tmp3 >= 2 && 45 === str.charCodeAt(tmp3) && 45 === str.charCodeAt(tmp3 + 1);
+      let arr = str;
+      if (!tmp4) {
+        const formatted = str.toLowerCase();
+        arr = formatted;
+        if (obj.call(closure_2, formatted)) {
+          closure_2[str] = closure_2[formatted];
+          return closure_2[formatted];
+        }
+      }
+      let str10 = "";
+      if (!tmp4) {
+        let str11 = "";
+        if (arr.length - (str.length || 0) >= 3) {
+          str11 = "";
+          if (45 === arr.charCodeAt(str.length || 0)) {
+            str11 = "";
+            if (45 !== arr.charCodeAt((str.length || 0) + 1)) {
+              const index = arr.indexOf("-", tmp7 + 2);
+              str11 = "";
+              if (-1 !== index) {
+                str11 = arr.substring(tmp7, index + 1);
+              }
+            }
+          }
+        }
+        str10 = str11;
+      }
+      const substr = arr.substr(0, str.length + str10.length);
+      const _Object = Object;
+      const obj2 = { basename: arr.substr(substr.length), name: arr.substr(str.length), hack: str, vendor: str10, prefix: substr, custom: tmp4 };
+      const freezeResult = freeze(obj2);
+      closure_2[str] = freezeResult;
+      return freezeResult;
     }
-    case "Type":
-    {
-      break;
+  },
+  isCustomProperty(callResult, arg1) {
+    const tmp2 = callResult.length - tmp >= 2 && 45 === callResult.charCodeAt(tmp) && 45 === callResult.charCodeAt(tmp + 1);
+    return tmp2;
+  },
+  vendorPrefix: function getVendorPrefix(str, arg1) {
+    if (str.length - (arg1 || 0) >= 3) {
+      if (45 === str.charCodeAt(arg1 || 0)) {
+        if (45 !== str.charCodeAt((arg1 || 0) + 1)) {
+          const index = str.indexOf("-", tmp + 2);
+          if (-1 !== index) {
+            return str.substring(arg1 || 0, index + 1);
+          }
+        }
+      }
     }
-    case "Property":
-    {
-      break;
-    }
-    case "Keyword":
-    {
-      break;
-    }
-    case "AtKeyword":
-    {
-      break;
-    }
-    case "Function":
-    {
-      break;
-    }
-    case "String":
-    {
-      break;
-    }
-    case "Token":
-    {
-      break;
-    }
-    case "Comma":
-    {
-      break;
-    }
-    default:
-    {
-      const _Error2 = Error;
-      const self3 = this;
-      const self4 = this;
-      const error2 = new Error("Unknown type: " + type.type);
-      throw error2;
-    }
+    return "";
   }
 };
+
+export default obj;

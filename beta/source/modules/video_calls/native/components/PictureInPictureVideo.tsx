@@ -1,18 +1,18 @@
-// Module ID: 12782
-// Function ID: 12783
+// Module ID: 12784
+// Function ID: 12785
 // Name: PictureInPictureVideo
-// Dependencies: [32, 19, 17, 5154, 7016, 502, 2133, 5209, 6931, 12719, 11003, 5973, 21, 5306, 1187, 575, 11009, 12, 12716, 12783, 504, 6056, 12784, 12787, 12795, 11990, 12808, 12841, 12712, 12899, 5892, 8538, 12834, 12726, 12722, 12725, 1496, 1380, 10041, 2]
+// Dependencies: [32, 19, 17, 5154, 7016, 502, 2133, 5209, 6931, 12721, 11003, 5973, 21, 5306, 1187, 575, 11009, 12, 12718, 12785, 504, 6056, 12786, 12789, 12797, 11990, 12810, 12843, 12714, 12901, 5892, 8538, 12836, 12728, 12724, 12727, 1496, 1380, 10041, 2]
 
-// Module 12782 (PictureInPictureVideo)
+// Module 12784 (PictureInPictureVideo)
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
 import CallConstants from "CallConstants" /* 5973 */;
 import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 6056 */;
-import transitionToActivityDefault from "transitionToActivity" /* 12712 */;
-import useShouldForcePipOrientation from "useShouldForcePipOrientation" /* 12722 */;
-import usePipDimensionsDefault from "usePipDimensions" /* 12725 */;
-import useIsViewingActivity from "useIsViewingActivity" /* 12726 */;
+import transitionToActivityDefault from "transitionToActivity" /* 12714 */;
+import useShouldForcePipOrientation from "useShouldForcePipOrientation" /* 12724 */;
+import usePipDimensionsDefault from "usePipDimensions" /* 12727 */;
+import useIsViewingActivity from "useIsViewingActivity" /* 12728 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -22,7 +22,7 @@ import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 2133 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
 import SpeakingStore from "SpeakingStore" /* 6931 */;
-import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 12719 */;
+import ChannelCallLifecycleStore from "ChannelCallLifecycleStore" /* 12721 */;
 import ChannelCallStore from "ChannelCallStore" /* 11003 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
@@ -227,11 +227,11 @@ let closure_22 = react.memo(function ActivityPictureInPictureVideo(arg0) {
   let tmp5;
   let tmp6;
   let tmp9;
-  const f105961 = () => {
+  const f105967 = () => {
     const items = [ChannelCallLifecycleStore.consumedRequestToRespondToSeriousThermalState(), ChannelCallLifecycleStore.isReactingToThermalState()];
     return items;
   };
-  const f132621 = () => {
+  const f132629 = () => {
     const items = [ChannelRTCStore.getParticipants(id), ChannelRTCStore.getVideoParticipants(id), ChannelRTCStore.getParticipantsVersion(id)];
     return items;
   };
@@ -242,16 +242,16 @@ let closure_22 = react.memo(function ActivityPictureInPictureVideo(arg0) {
   const obj = id(leadingEdgeDebounce[20]);
   id = channel.id;
   leadingEdgeDebounce = undefined;
-  [tmp5, tmp6] = obj.useStateFromStoresArray(items, f105961);
-  _slicedToArray(obj.useStateFromStoresArray(items, f105961), 2);
+  [tmp5, tmp6] = obj.useStateFromStoresArray(items, f105967);
+  _slicedToArray(obj.useStateFromStoresArray(items, f105967), 2);
   const items1 = [ChannelCallLifecycleStore];
   const obj2 = id(leadingEdgeDebounce[20]);
   const stateFromStores = obj2.useStateFromStores(items1, () => ChannelCallLifecycleStore.isReactingToThermalState());
   const items2 = [ChannelRTCStore];
   const items3 = [id];
   const obj3 = id(leadingEdgeDebounce[20]);
-  [arr5, tmp9] = obj3.useStateFromStores(items2, f132621, items3, areParticipantsEqual);
-  _slicedToArray(obj3.useStateFromStores(items2, f132621, items3, areParticipantsEqual), 2);
+  [arr5, tmp9] = obj3.useStateFromStores(items2, f132629, items3, areParticipantsEqual);
+  _slicedToArray(obj3.useStateFromStores(items2, f132629, items3, areParticipantsEqual), 2);
   const items4 = [SpeakingStore];
   const items5 = [selfParticipant];
   const obj4 = id(leadingEdgeDebounce[20]);

@@ -1,10 +1,10 @@
-// Module ID: 17436
-// Function ID: 17437
+// Module ID: 17438
+// Function ID: 17439
 // Name: FamilyCenterSettingsControls
-// Dependencies: [19, 17, 8741, 1072, 21, 5306, 575, 5919, 1113, 2701, 6838, 17437, 2121, 17440, 7443, 9616, 17423, 1502, 17441, 6327, 7746, 5926, 9620, 8526, 6004, 17347, 8742, 17442, 2]
+// Dependencies: [19, 17, 8741, 1072, 21, 5306, 575, 5919, 1113, 2701, 6838, 17439, 2121, 17442, 7443, 9616, 17425, 1502, 17443, 6327, 7746, 5926, 9620, 8526, 6004, 17349, 8742, 17444, 2]
 // Exports: default
 
-// Module 17436 (FamilyCenterSettingsControls)
+// Module 17438 (FamilyCenterSettingsControls)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -16,7 +16,7 @@ import LayerActionCreators from "LayerActionCreators" /* 8526 */;
 import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 8742 */;
 import useUserLinks from "useUserLinks" /* 9616 */;
 import openLinkedUsersChannelDefault from "openLinkedUsersChannel" /* 9620 */;
-import useUserIsTeenAgeGroupDefault from "useUserIsTeenAgeGroup" /* 17442 */;
+import useUserIsTeenAgeGroupDefault from "useUserIsTeenAgeGroup" /* 17444 */;
 import react from "react" /* 19 */;
 import FamilyCenterConstants from "FamilyCenterConstants" /* 8741 */;
 import Fragment from "Fragment" /* 21 */;
@@ -59,7 +59,7 @@ function SpendingLimitRow(teenId) {
     flag = true;
   }
   const tmp = closure_10();
-  let obj = teenId(17440);
+  let obj = teenId(17442);
   const spendingLimitDisplayState = obj.useSpendingLimitDisplayState(cap);
   const kind = spendingLimitDisplayState.kind;
   if ("off" === kind) {
@@ -112,7 +112,7 @@ function SpendingLimitRow(teenId) {
     fn = () => {
       const obj = ModalActionCreatorsDefault;
       const obj2 = { teenId };
-      obj.pushLazy(asyncRequire(17437, dependencyMap.paths), obj2, hasOwnProperty, { animation: "slide_from_right" });
+      obj.pushLazy(asyncRequire(17439, dependencyMap.paths), obj2, hasOwnProperty, { animation: "slide_from_right" });
     };
   }
   return tmp15(TableRow, obj15);
@@ -232,9 +232,9 @@ function FamilyCenterSettingsParentalControls() {
   const tmp = closure_10();
   let tmp2 = selectedTeenUser;
   let tmp3 = dependencyMap;
-  let obj = selectedTeenUser(17423);
+  let obj = selectedTeenUser(17425);
   selectedTeenUser = obj.useSelectedTeenUser();
-  const obj2 = selectedTeenUser(17423);
+  const obj2 = selectedTeenUser(17425);
   const shouldLoadSettingsForSelectedTeenUser = obj2.useShouldLoadSettingsForSelectedTeenUser();
   const obj3 = selectedTeenUser(1502);
   dependencyMap = obj3.useNavigation();
@@ -248,7 +248,7 @@ function FamilyCenterSettingsParentalControls() {
   if (rules == null) {
     rules = [];
   }
-  const ParentalControlledSpendingLimit = tmp2(17347).ParentalControlledSpendingLimit;
+  const ParentalControlledSpendingLimit = tmp2(17349).ParentalControlledSpendingLimit;
   let id;
   const useControlledSetting = ParentalControlledSpendingLimit.useControlledSetting;
   if (selectedTeenUser != null) {
@@ -256,8 +256,8 @@ function FamilyCenterSettingsParentalControls() {
   }
   const controlledSetting = useControlledSetting(id);
   let id1;
-  const useHasLoadedSettingsForTeen = tmp2(17423).useHasLoadedSettingsForTeen;
-  tmp2(17423);
+  const useHasLoadedSettingsForTeen = tmp2(17425).useHasLoadedSettingsForTeen;
+  tmp2(17425);
   if (selectedTeenUser != null) {
     id1 = selectedTeenUser.id;
   }
@@ -279,9 +279,9 @@ function FamilyCenterSettingsParentalControls() {
       const teenSettingsAndConsents = obj.fetchTeenSettingsAndConsents(tmp.id);
     }
   }, items);
-  ({ subLabel, trailing } = shouldLoadSettingsForSelectedTeenUser(17441)(rules));
+  ({ subLabel, trailing } = shouldLoadSettingsForSelectedTeenUser(17443)(rules));
   const obj4 = { style: tmp.parentalControlsContainer, children: items1 };
-  shouldLoadSettingsForSelectedTeenUser(17441)(rules);
+  shouldLoadSettingsForSelectedTeenUser(17443)(rules);
   const Stack = tmp2(6327).Stack;
   const obj5 = { variant: "body-sm/semibold", children: intl.string(shouldLoadSettingsForSelectedTeenUser(2701).ahKIJO) };
   const Text = tmp2(5919).Text;

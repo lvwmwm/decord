@@ -373,7 +373,7 @@ const withEqualityFn = module_1258.createWithEqualityFn((arg0, arg1) => {
     },
     setLoadingSucceeded(arg0) {
       if (closure_1().inProgressLocale === arg0) {
-        closure_0({ isLoading: false, inProgressLocale: "ip", error: "Array" });
+        closure_0({ isLoading: false, inProgressLocale: "Boolean", error: "alignItems" });
       }
     },
     setLoadingFailed(error, arg1) {

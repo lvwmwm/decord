@@ -1,10 +1,10 @@
-// Module ID: 12560
-// Function ID: 12561
+// Module ID: 12562
+// Function ID: 12563
 // Name: AppChannelPermissionUtils
 // Dependencies: [2165, 1072, 7261, 1084, 5245, 2]
 // Exports: getAppChannelBotUserId, getAppChannelBotUserIdFromApplication, isAppChannelFloorPermission, useAppChannelBotUserId
 
-// Module 12560 (AppChannelPermissionUtils)
+// Module 12562 (AppChannelPermissionUtils)
 import Constants from "Constants" /* 1072 */;
 import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
 import AppChannelPermissions from "AppChannelPermissions" /* 5245 */;

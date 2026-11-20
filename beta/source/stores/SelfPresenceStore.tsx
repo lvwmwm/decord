@@ -1,7 +1,7 @@
 // Module ID: 7316
 // Function ID: 7317
 // Name: SelfPresenceStore
-// Dependencies: [5154, 7290, 1231, 5155, 2159, 7041, 2163, 7317, 6058, 6063, 1072, 6059, 8531, 5131, 15989, 10860, 1345, 12, 504, 572, 2]
+// Dependencies: [5154, 7290, 1231, 5155, 2159, 7041, 2163, 7317, 6058, 6063, 1072, 6059, 8531, 5131, 15991, 10860, 1345, 12, 504, 572, 2]
 
 // Module 7316 (SelfPresenceStore)
 import get_initializedDefault from "get initialized" /* 504 */;
@@ -11,7 +11,7 @@ import UserSettings from "UserSettings" /* 5131 */;
 import PresenceStore2 from "PresenceStore" /* 6058 */;
 import ActivityTypes from "ActivityTypes" /* 6059 */;
 import LibraryApplicationUtils from "LibraryApplicationUtils" /* 8531 */;
-import isGuildSpaceEmbeddedActivityDefault from "isGuildSpaceEmbeddedActivity" /* 15989 */;
+import isGuildSpaceEmbeddedActivityDefault from "isGuildSpaceEmbeddedActivity" /* 15991 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5154 */;
 import SpotifyStore from "SpotifyStore" /* 7290 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;

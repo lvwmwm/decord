@@ -1,10 +1,10 @@
-// Module ID: 19337
-// Function ID: 19338
+// Module ID: 19339
+// Function ID: 19340
 // Name: ICYMIShareModal
-// Dependencies: [32, 5, 19, 17, 5155, 1072, 10244, 5311, 21, 5306, 575, 7987, 1113, 19338, 6005, 5903, 15180, 15192, 5926, 6838, 10245, 1255, 8786, 8660, 1630, 1496, 1380, 10270, 10272, 2]
+// Dependencies: [32, 5, 19, 17, 5155, 1072, 10244, 5311, 21, 5306, 575, 7987, 1113, 19340, 6005, 5903, 15182, 15194, 5926, 6838, 10245, 1255, 8786, 8660, 1630, 1496, 1380, 10270, 10272, 2]
 // Exports: GameShareModal, GuildEventShareModal
 
-// Module 19337 (ICYMIShareModal)
+// Module 19339 (ICYMIShareModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -15,7 +15,7 @@ import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAwar
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 6005 */;
 import ShareEventUtils from "ShareEventUtils" /* 7987 */;
 import UserRowConstants from "UserRowConstants" /* 10244 */;
-import useShareChatInputActions from "useShareChatInputActions" /* 15180 */;
+import useShareChatInputActions from "useShareChatInputActions" /* 15182 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
@@ -31,7 +31,7 @@ let closure_12;
 let obj2;
 let tmp5;
 let unpackModuleId;
-const ShareChatInputDefault = tmp5(15192);
+const ShareChatInputDefault = tmp5(15194);
 function GravityShareFooter(arg0) {
   let count;
   let handleMessageBlur;

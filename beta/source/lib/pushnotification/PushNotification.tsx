@@ -1,13 +1,13 @@
-// Module ID: 12920
-// Function ID: 12921
+// Module ID: 12922
+// Function ID: 12923
 // Name: PushNotification
-// Dependencies: [17, 1380, 12921, 11106, 12922, 12923, 2]
+// Dependencies: [17, 1380, 12923, 11106, 12924, 12925, 2]
 
-// Module 12920 (PushNotification)
+// Module 12922 (PushNotification)
 import PlatformUtils from "PlatformUtils" /* 1380 */;
-import _modDef12921 from "module_12921" /* 12921 */;
-import react_nativeDefault from "react-native" /* 12922 */;
-import react_nativeDefault2 from "react-native" /* 12923 */;
+import _modDef12923 from "module_12923" /* 12923 */;
+import react_nativeDefault from "react-native" /* 12924 */;
+import react_nativeDefault2 from "react-native" /* 12925 */;
 import react_native2 from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 
@@ -89,7 +89,7 @@ let obj = {
       });
     } else {
       let tmp2 = importDefault;
-      const obj2 = _modDef12921;
+      const obj2 = _modDef12923;
       initialNotification = obj2.getInitialNotification();
     }
     return initialNotification;
@@ -131,7 +131,7 @@ let obj = {
   setApplicationIconBadgeNumber(arg0) {
     const obj = PlatformUtils;
     if (!obj.isAndroid()) {
-      const obj2 = _modDef12921;
+      const obj2 = _modDef12923;
       const result = obj2.setApplicationIconBadgeNumber(arg0);
     }
   },
@@ -140,7 +140,7 @@ let obj = {
     if (obj.isAndroid()) {
       const result = PushNotificationAndroid.clearAllNotifications();
     } else {
-      const obj2 = _modDef12921;
+      const obj2 = _modDef12923;
       const result1 = obj2.setApplicationIconBadgeNumber(0);
     }
   },
@@ -149,7 +149,7 @@ let obj = {
     if (obj.isAndroid()) {
       const result = PushNotificationAndroid.presentLocalNotification(arg0);
     } else {
-      const obj2 = _modDef12921;
+      const obj2 = _modDef12923;
       const result1 = obj2.presentLocalNotification(arg0);
     }
   },
@@ -162,7 +162,7 @@ let obj = {
       const self = this;
       const self2 = this;
       resolveResult = new _Promise((arg0) => {
-        const obj = _modDef12921;
+        const obj = _modDef12923;
         const deliveredNotifications = obj.getDeliveredNotifications(arg0);
       });
     }
@@ -171,14 +171,14 @@ let obj = {
   removeDeliveredNotifications(arg0) {
     const obj = PlatformUtils;
     if (!obj.isAndroid()) {
-      const obj2 = _modDef12921;
+      const obj2 = _modDef12923;
       const result = obj2.removeDeliveredNotifications(arg0);
     }
   },
   scheduleLocalNotification(arg0) {
     const obj = PlatformUtils;
     if (!obj.isAndroid()) {
-      const obj2 = _modDef12921;
+      const obj2 = _modDef12923;
       const result = obj2.scheduleLocalNotification(arg0);
     }
   },
@@ -199,7 +199,7 @@ let obj = {
   cancelAllLocalNotifications() {
     const obj = PlatformUtils;
     if (!obj.isAndroid()) {
-      const obj2 = _modDef12921;
+      const obj2 = _modDef12923;
       const result = obj2.cancelAllLocalNotifications();
     }
   },
@@ -208,7 +208,7 @@ let obj = {
     if (obj.isAndroid()) {
       fn({});
     } else {
-      const obj2 = _modDef12921;
+      const obj2 = _modDef12923;
       obj2.checkPermissions(fn);
     }
   },
@@ -220,7 +220,7 @@ let obj = {
       const self2 = this;
       permissions = new Promise((fn) => fn({}));
     } else {
-      const obj2 = _modDef12921;
+      const obj2 = _modDef12923;
       permissions = obj2.requestPermissions(arg0);
     }
     return permissions;
@@ -261,7 +261,7 @@ let obj = {
       }
       const result = PushNotificationAndroid.registerEventListener(localNotification);
     } else {
-      const obj2 = _modDef12921;
+      const obj2 = _modDef12923;
       const listener = obj2.addEventListener(localNotification, handleLocalNotification);
     }
   },
@@ -274,7 +274,7 @@ let obj = {
       });
       const result = PushNotificationAndroid.registerEventListener("register");
     } else {
-      const obj2 = _modDef12921;
+      const obj2 = _modDef12923;
       const listener = obj2.addEventListener("register", handleToken);
     }
   },

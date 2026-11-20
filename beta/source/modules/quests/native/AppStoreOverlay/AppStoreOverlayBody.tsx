@@ -1,7 +1,7 @@
 // Module ID: 10177
 // Function ID: 10178
 // Name: AppStoreOverlayBody
-// Dependencies: [19, 17, 1072, 5557, 21, 5306, 575, 8825, 6010, 5919, 10178, 1113, 10185, 15241, 1630, 5892, 671, 5883, 5926, 2]
+// Dependencies: [19, 17, 1072, 5557, 21, 5306, 575, 8825, 6010, 5919, 10178, 1113, 10185, 15243, 1630, 5892, 671, 5883, 5926, 2]
 // Exports: AppStoreOverlayBody, AppStoreOverlayFooter
 
 // Module 10177 (AppStoreOverlayBody)
@@ -14,7 +14,7 @@ import FastImageDefault from "FastImage" /* 6010 */;
 import AnalyticsActions from "AnalyticsActions" /* 8825 */;
 import AppStoreOverlayStatsCarouselDefault from "AppStoreOverlayStatsCarousel" /* 10178 */;
 import AppStoreOverlayMediaCarouselDefault from "AppStoreOverlayMediaCarousel" /* 10185 */;
-import AppStoreOverlayAboutSectionDefault from "AppStoreOverlayAboutSection" /* 15241 */;
+import AppStoreOverlayAboutSectionDefault from "AppStoreOverlayAboutSection" /* 15243 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;

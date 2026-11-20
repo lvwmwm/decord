@@ -1,10 +1,10 @@
-// Module ID: 18488
-// Function ID: 18489
+// Module ID: 18490
+// Function ID: 18491
 // Name: ShopCategory
-// Dependencies: [19, 17, 1074, 1072, 21, 10416, 5306, 575, 1655, 5538, 1113, 7918, 1502, 17612, 18485, 7888, 18489, 9420, 10446, 5542, 9407, 8484, 7937, 7428, 6010, 7963, 2]
+// Dependencies: [19, 17, 1074, 1072, 21, 10416, 5306, 575, 1655, 5538, 1113, 7918, 1502, 17614, 18487, 7888, 18491, 9420, 10446, 5542, 9407, 8484, 7937, 7428, 6010, 7963, 2]
 // Exports: ShopCategory, ShopCategorySkeleton
 
-// Module 18488 (ShopCategory)
+// Module 18490 (ShopCategory)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
@@ -143,11 +143,11 @@ export function ShopCategory(category) {
   dependencyMap = obj.useNavigation();
   const unpublishedAt = category.unpublishedAt;
   const products = category.products;
-  let obj2 = category(17612);
+  let obj2 = category(17614);
   const obj3 = { products, bypassAndroidUnsyncedFilter: category.isOrbsExclusive };
   const filteredAndSortedProducts = obj2.useFilteredAndSortedProducts(obj3);
   const mobileBannerUrl = category.mobileBannerUrl;
-  const obj4 = category(18485);
+  const obj4 = category(18487);
   const collectiblesShopDeepLinkProps = obj4.useCollectiblesShopDeepLinkProps({ products: filteredAndSortedProducts });
   ({ productIndex, initialProductSkuId } = collectiblesShopDeepLinkProps);
   const initialVariantIndex = collectiblesShopDeepLinkProps.initialVariantIndex;
@@ -161,12 +161,12 @@ export function ShopCategory(category) {
     }
   });
   let tmp10 = null != productIndex;
-  const useScrollToInitialIndexOnce = category(18489).useScrollToInitialIndexOnce;
-  const tmp9 = category(18489);
+  const useScrollToInitialIndexOnce = category(18491).useScrollToInitialIndexOnce;
+  const tmp9 = category(18491);
   if (tmp10) {
     tmp10 = productIndex > 0;
   }
-  const obj7 = { shouldScroll: tmp10, initialScrollIndex: productIndex, flashListRef: ref, afterMs: category(18489).INITIAL_SCROLL_DELAY_MS, resetKey: category.storeListingId };
+  const obj7 = { shouldScroll: tmp10, initialScrollIndex: productIndex, flashListRef: ref, afterMs: category(18491).INITIAL_SCROLL_DELAY_MS, resetKey: category.storeListingId };
   const scrollToInitialIndexOnce = useScrollToInitialIndexOnce(obj7);
   const tmp4Result = category(9420);
   collectiblesAnalyticsContext = tmp4Result.useCollectiblesAnalyticsContext();

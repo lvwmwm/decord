@@ -1,9 +1,9 @@
-// Module ID: 19251
-// Function ID: 19252
+// Module ID: 19253
+// Function ID: 19254
 // Name: ForYouItems
-// Dependencies: [5, 32, 19, 17, 5307, 2165, 5155, 5177, 1388, 19245, 1072, 6837, 21, 5306, 5919, 575, 6331, 19250, 1113, 1406, 9282, 8861, 11857, 11392, 13072, 504, 8646, 1187, 14950, 19252, 1502, 6038, 16285, 7033, 1256, 15543, 11318, 12593, 6005, 12616, 2121, 5542, 19253, 6030, 19247, 7948, 19254, 19255, 11, 7428, 19256, 7034, 15873, 1503, 5131, 5984, 19266, 19267, 19268, 19269, 19270, 19276, 674, 19277, 19278, 1255, 19249, 7994, 12008, 7888, 19279, 2]
+// Dependencies: [5, 32, 19, 17, 5307, 2165, 5155, 5177, 1388, 19247, 1072, 6837, 21, 5306, 5919, 575, 6331, 19252, 1113, 1406, 9282, 8861, 11857, 11392, 13074, 504, 8646, 1187, 14952, 19254, 1502, 6038, 16287, 7033, 1256, 15545, 11318, 12595, 6005, 12618, 2121, 5542, 19255, 6030, 19249, 7948, 19256, 19257, 11, 7428, 19258, 7034, 15875, 1503, 5131, 5984, 19268, 19269, 19270, 19271, 19272, 19278, 674, 19279, 19280, 1255, 19251, 7994, 12008, 7888, 19281, 2]
 
-// Module 19251 (ForYouItems)
+// Module 19253 (ForYouItems)
 import nativeDefault from "native" /* 575 */;
 import _mod674 from "module_674" /* 674 */;
 import GlobalUtils from "GlobalUtils" /* 1255 */;
@@ -14,18 +14,18 @@ import parseURLDefault from "parseURL" /* 6038 */;
 import CustomMarkupAll from "CustomMarkup" /* 6331 */;
 import PushNotificationConstants from "PushNotificationConstants" /* 6837 */;
 import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 7033 */;
-import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 14950 */;
-import handleSupportedURLDefault from "handleSupportedURL" /* 16285 */;
-import NotificationCenterStoreActions from "NotificationCenterStoreActions" /* 19249 */;
-import ForYouMentionPlaceholder from "ForYouMentionPlaceholder" /* 19250 */;
-import ForYouReadSectionHeader from "ForYouReadSectionHeader" /* 19266 */;
-import ForYouRecentActivitySectionHeader from "ForYouRecentActivitySectionHeader" /* 19267 */;
-import ForYouHoistedItemsHeader from "ForYouHoistedItemsHeader" /* 19268 */;
-import ForYouSuggestedFriendsSectionHeaderDefault from "ForYouSuggestedFriendsSectionHeader" /* 19269 */;
-import ForYouSuggestedFriendRowDefault from "ForYouSuggestedFriendRow" /* 19270 */;
-import ForYouShowAllRow from "ForYouShowAllRow" /* 19276 */;
-import ForYouUnreadClearedState from "ForYouUnreadClearedState" /* 19277 */;
-import ForYouLoadMore from "ForYouLoadMore" /* 19278 */;
+import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 14952 */;
+import handleSupportedURLDefault from "handleSupportedURL" /* 16287 */;
+import NotificationCenterStoreActions from "NotificationCenterStoreActions" /* 19251 */;
+import ForYouMentionPlaceholder from "ForYouMentionPlaceholder" /* 19252 */;
+import ForYouReadSectionHeader from "ForYouReadSectionHeader" /* 19268 */;
+import ForYouRecentActivitySectionHeader from "ForYouRecentActivitySectionHeader" /* 19269 */;
+import ForYouHoistedItemsHeader from "ForYouHoistedItemsHeader" /* 19270 */;
+import ForYouSuggestedFriendsSectionHeaderDefault from "ForYouSuggestedFriendsSectionHeader" /* 19271 */;
+import ForYouSuggestedFriendRowDefault from "ForYouSuggestedFriendRow" /* 19272 */;
+import ForYouShowAllRow from "ForYouShowAllRow" /* 19278 */;
+import ForYouUnreadClearedState from "ForYouUnreadClearedState" /* 19279 */;
+import ForYouLoadMore from "ForYouLoadMore" /* 19280 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -35,7 +35,7 @@ import ApplicationStore from "ApplicationStore" /* 2165 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
 import GuildStore from "GuildStore" /* 5177 */;
 import UserStore from "UserStore" /* 1388 */;
-import NotificationCenterStore from "NotificationCenterStore" /* 19245 */;
+import NotificationCenterStore from "NotificationCenterStore" /* 19247 */;
 import Constants from "Constants" /* 1072 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
@@ -302,7 +302,7 @@ function ForYouMessagePreviewV2(item) {
     } else {
       tmp33 = null;
       if (constants4.VOICE_MESSAGE === ATTACHMENT) {
-        tmp33 = guild_id(13072);
+        tmp33 = guild_id(13074);
       }
     }
     obj7 = { source: tmp33, size: item(1187).IconSizes.SMALL, style: tmp.messagePreviewIconV2 };

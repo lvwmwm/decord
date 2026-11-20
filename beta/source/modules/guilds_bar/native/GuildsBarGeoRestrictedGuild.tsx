@@ -1,17 +1,17 @@
-// Module ID: 19122
-// Function ID: 19123
+// Module ID: 19124
+// Function ID: 19125
 // Name: GuildsBarGeoRestrictedGuild
-// Dependencies: [19, 19062, 21, 5306, 575, 19078, 19074, 1414, 7720, 6258, 1113, 8404, 19123, 19094, 6010, 2]
+// Dependencies: [19, 19064, 21, 5306, 575, 19080, 19076, 1414, 7720, 6258, 1113, 8404, 19125, 19096, 6010, 2]
 
-// Module 19122 (GuildsBarGeoRestrictedGuild)
+// Module 19124 (GuildsBarGeoRestrictedGuild)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 6258 */;
 import GuildIcon from "GuildIcon" /* 7720 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 19062 */;
-import GuildsBarAnimatedItemWrapperDefault from "GuildsBarAnimatedItemWrapper" /* 19074 */;
-import computeGuildsBarCutoutDefault from "computeGuildsBarCutout" /* 19078 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 19064 */;
+import GuildsBarAnimatedItemWrapperDefault from "GuildsBarAnimatedItemWrapper" /* 19076 */;
+import computeGuildsBarCutoutDefault from "computeGuildsBarCutout" /* 19080 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
@@ -29,7 +29,7 @@ const memoResult = react.memo(function GuildsBarGeoRestrictedGuild(restrictedGui
   let tmp8Result;
   restrictedGuild = restrictedGuild.restrictedGuild;
   let tmp = closure_5();
-  let obj = restrictedGuild(19074);
+  let obj = restrictedGuild(19076);
   let animatableSourceWithFallback = null;
   const guildsBarAnimatedWrapperStyles = obj.useGuildsBarAnimatedWrapperStyles({ disableSelectedColor: true, disableBGColor: true });
   const tmp2 = restrictedGuild;

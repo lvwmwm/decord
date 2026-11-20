@@ -1,10 +1,10 @@
-// Module ID: 12391
-// Function ID: 12392
+// Module ID: 12393
+// Function ID: 12394
 // Name: SlayerStorefrontGiftPreview
 // Dependencies: [19, 17, 21, 5306, 9515, 5919, 1113, 10833, 4031, 2]
 // Exports: default
 
-// Module 12391 (SlayerStorefrontGiftPreview)
+// Module 12393 (SlayerStorefrontGiftPreview)
 import react_native from "react-native" /* 17 */;
 import intl2 from "intl" /* 1113 */;
 import Text_Text from "Text/Text" /* 5919 */;

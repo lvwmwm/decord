@@ -1,18 +1,18 @@
-// Module ID: 15645
-// Function ID: 15646
+// Module ID: 15647
+// Function ID: 15648
 // Name: GroupDMNitroCapCoachmark
-// Dependencies: [32, 19, 17, 12543, 5152, 21, 5306, 12541, 12548, 12544, 9560, 5139, 1113, 7459, 10982, 9436, 575, 12540, 9567, 2]
+// Dependencies: [32, 19, 17, 12545, 5152, 21, 5306, 12543, 12550, 12546, 9560, 5139, 1113, 7459, 10982, 9436, 575, 12542, 9567, 2]
 // Exports: default
 
-// Module 15645 (GroupDMNitroCapCoachmark)
+// Module 15647 (GroupDMNitroCapCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;
 import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
 import AssetRegistryDefault from "AssetRegistry" /* 10982 */;
-import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 12541 */;
-import GroupDMConstants from "GroupDMConstants" /* 12543 */;
+import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 12543 */;
+import GroupDMConstants from "GroupDMConstants" /* 12545 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import createStyles from "createStyles" /* 5306 */;
@@ -44,15 +44,15 @@ export default function GroupDMNitroCapCoachmark(channelId) {
   let obj = react;
   const ref = react.useRef(null);
   const tmp3 = channelId;
-  let obj2 = channelId(12541);
+  let obj2 = channelId(12543);
   const groupDMNitroAudience = obj2.useGroupDMNitroAudience();
   const tmp6 = "entitled" === groupDMNitroAudience;
   react = tmp6;
-  let obj3 = { audience: groupDMNitroAudience, location: _location, acquisitionStrategy: channelId(12541).GroupDMNitroAcquisitionStrategy.MARKETING };
-  let tmp7 = _location(12548);
+  let obj3 = { audience: groupDMNitroAudience, location: _location, acquisitionStrategy: channelId(12543).GroupDMNitroAcquisitionStrategy.MARKETING };
+  let tmp7 = _location(12550);
   const tmp7Result = tmp7(obj3);
   let closure_5 = tmp7Result;
-  const obj4 = _location(12544);
+  const obj4 = _location(12546);
   const enabled = obj4.useConfig({ location: _location }).enabled;
   channelId(9560);
   if (enabled) {

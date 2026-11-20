@@ -1,7 +1,7 @@
 // Module ID: 6809
 // Function ID: 6810
 // Name: VoiceEngineStreamingManager
-// Dependencies: [5, 17, 6810, 5155, 5209, 1072, 2145, 3, 5150, 5131, 572, 1285, 6851, 2123, 2135, 38, 6852, 6056, 6798, 1496, 1380, 12981, 12920, 1113, 2]
+// Dependencies: [5, 17, 6810, 5155, 5209, 1072, 2145, 3, 5150, 5131, 572, 1285, 6851, 2123, 2135, 38, 6852, 6056, 6798, 1496, 1380, 12983, 12922, 1113, 2]
 
 // Module 6809 (VoiceEngineStreamingManager)
 import LoggerDefault from "Logger" /* 3 */;
@@ -18,7 +18,7 @@ import Timers from "Timers" /* 5150 */;
 import StreamKeyUtils from "StreamKeyUtils" /* 6798 */;
 import AndroidStopAndPauseVideoExperimentDefault from "AndroidStopAndPauseVideoExperiment" /* 6851 */;
 import StreamActionCreators from "StreamActionCreators" /* 6852 */;
-import PushNotificationDefault from "PushNotification" /* 12920 */;
+import PushNotificationDefault from "PushNotification" /* 12922 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6810 */;
 import ChannelStore from "ChannelStore" /* 5155 */;
@@ -35,7 +35,7 @@ let c9;
 let metroImportAll;
 let tmp2;
 let unpackModuleId;
-const useScreenshareUtils = tmp2(12981);
+const useScreenshareUtils = tmp2(12983);
 function handleThumbnailUpload() {
   return obj(...arguments);
 }

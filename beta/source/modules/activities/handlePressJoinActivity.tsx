@@ -1,14 +1,14 @@
-// Module ID: 12847
-// Function ID: 12848
+// Module ID: 12849
+// Function ID: 12850
 // Name: handlePressJoinActivity
-// Dependencies: [5, 2143, 5155, 5177, 5238, 1388, 5971, 5154, 12844, 12779, 6258, 1113, 7055, 6828, 12734, 12711, 2]
+// Dependencies: [5, 2143, 5155, 5177, 5238, 1388, 5971, 5154, 12846, 12781, 6258, 1113, 7055, 6828, 12736, 12713, 2]
 // Exports: maybeJoinEmbeddedActivity
 
-// Module 12847 (handlePressJoinActivity)
+// Module 12849 (handlePressJoinActivity)
 import intl11 from "intl" /* 1113 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 6258 */;
-import showActivitiesInvalidPermissionsAlert from "showActivitiesInvalidPermissionsAlert" /* 12779 */;
-import getEmbeddedActivityJoinability from "getEmbeddedActivityJoinability" /* 12844 */;
+import showActivitiesInvalidPermissionsAlert from "showActivitiesInvalidPermissionsAlert" /* 12781 */;
+import getEmbeddedActivityJoinability from "getEmbeddedActivityJoinability" /* 12846 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApplicationRecord from "ApplicationRecord" /* 2143 */;
 import ChannelStore from "ChannelStore" /* 5155 */;

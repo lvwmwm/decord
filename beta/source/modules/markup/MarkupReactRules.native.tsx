@@ -1,7 +1,7 @@
 // Module ID: 6048
 // Function ID: 6049
 // Name: MarkupReactRules
-// Dependencies: [19, 17, 5307, 5155, 5212, 1072, 5162, 1083, 21, 575, 6049, 5919, 5306, 6053, 5946, 5483, 6838, 8476, 6258, 1113, 7943, 6004, 7720, 1187, 1381, 7653, 6002, 12584, 12504, 9355, 504, 5303, 9189, 5542, 12524, 2121, 11, 5131, 6010, 12574, 12482, 16275, 16277, 6019, 12465, 16279, 12575, 11061, 6332, 1380, 6334, 8033, 11057, 11062, 2]
+// Dependencies: [19, 17, 5307, 5155, 5212, 1072, 5162, 1083, 21, 575, 6049, 5919, 5306, 6053, 5946, 5483, 6838, 8476, 6258, 1113, 7943, 6004, 7720, 1187, 1381, 7653, 6002, 12586, 12506, 9355, 504, 5303, 9189, 5542, 12526, 2121, 11, 5131, 6010, 12576, 12484, 16277, 16279, 6019, 12467, 16281, 12577, 11061, 6332, 1380, 6334, 8033, 11057, 11062, 2]
 // Exports: default, plainMentionRenderer, plainSpoilerRenderer
 
 // Module 6048 (MarkupReactRules)
@@ -28,10 +28,10 @@ import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 84
 import MarkupRulesUtils from "MarkupRulesUtils" /* 9355 */;
 import MarkupReactGameMentionRule from "MarkupReactGameMentionRule" /* 11057 */;
 import TimestampDefault from "Timestamp" /* 11062 */;
-import openStaticChannelRouteDefault from "openStaticChannelRoute" /* 12465 */;
-import showLongPressURLActionSheetDefault from "showLongPressURLActionSheet" /* 12504 */;
-import showEmojiActionSheetDefault from "showEmojiActionSheet" /* 12574 */;
-import MarkupReactCommandRuleDefault from "MarkupReactCommandRule" /* 12575 */;
+import openStaticChannelRouteDefault from "openStaticChannelRoute" /* 12467 */;
+import showLongPressURLActionSheetDefault from "showLongPressURLActionSheet" /* 12506 */;
+import showEmojiActionSheetDefault from "showEmojiActionSheet" /* 12576 */;
+import MarkupReactCommandRuleDefault from "MarkupReactCommandRule" /* 12577 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 5307 */;
@@ -77,7 +77,7 @@ class MarkupText {
     let tmp = null;
     const merged = Object.assign(color, Object.assign({ children: 0, color: 0, variant: 0 }));
     if (react.useContext(Spoiler.SpoilerHiddenContext)) {
-      const obj = { style: items, onPress: "alignItems", onLongPress: "jsxs", accessibilityRole: "formatToPlainString" };
+      const obj = { style: items, onPress: "channel_id", onLongPress: "state", accessibilityRole: "name" };
       items = [merged.style, obj.spoilerHiddenText];
       tmp = obj;
     }
@@ -272,13 +272,13 @@ function MarkupMention(styles) {
           const obj2 = { guildId: null, roleId: null, channelId: null };
           ({ guildId: obj5.guildId, roleId: obj5.roleId, channelId: obj5.channelId } = node);
           const obj4 = ActionSheetActionCreatorsDefault;
-          obj4.openLazy(asyncRequire(12524, dependencyMap.paths), "RoleMembersActionSheet", obj2, "stack");
+          obj4.openLazy(asyncRequire(12526, dependencyMap.paths), "RoleMembersActionSheet", obj2, "stack");
         }
       }
       if ("@everyone" === node.roleName) {
         if (null != node.guildId) {
           const openLazy = ActionSheetActionCreatorsDefault.openLazy;
-          const tmp13 = asyncRequire(12524, dependencyMap.paths);
+          const tmp13 = asyncRequire(12526, dependencyMap.paths);
           const obj6 = { guildId: node.guildId, roleId: obj3.castGuildIdAsEveryoneGuildRoleId(node.guildId), channelId: node.channelId };
           obj3 = SnowflakeUtilsDefault;
           openLazy(tmp13, "RoleMembersActionSheet", obj6, "stack");
@@ -536,7 +536,7 @@ function MarkupChannelMention(state) {
   items = [outputResult, , ];
   let tmp8Result = null;
   if (null != node.inContent) {
-    const obj3 = { themedColor: node(575).colors.MENTION_FOREGROUND, style: size, source: tmp9(12482), size: tmp4(1187).Icon.Sizes.CUSTOM };
+    const obj3 = { themedColor: node(575).colors.MENTION_FOREGROUND, style: size, source: tmp9(12484), size: tmp4(1187).Icon.Sizes.CUSTOM };
     const ThemedIcon = tmp4(1187).ThemedIcon;
     const fontScale = closure_4.getFontScale();
     const tmp8 = closure_12;
@@ -634,7 +634,7 @@ function MarkupStaticRouteLink(state) {
   const node = state.node;
   ({ output, styles, variants } = state);
   let tmp = closure_16();
-  let SignPostIcon = state(16275).SignPostIcon;
+  let SignPostIcon = state(16277).SignPostIcon;
   const channelId = node.channelId;
   if (StaticChannelId.GUILD_HOME !== channelId) {
     if (StaticChannelId.SERVER_GUIDE !== channelId) {
@@ -645,7 +645,7 @@ function MarkupStaticRouteLink(state) {
           }
         }
       }
-      SignPostIcon = tmp2(16277).ChannelListMagnifyingGlassIcon;
+      SignPostIcon = tmp2(16279).ChannelListMagnifyingGlassIcon;
     }
     let str = "button";
     if (state.noStyleAndInteraction) {
@@ -719,7 +719,7 @@ function MarkupStaticRouteLink(state) {
       return tmp7Result;
     }
   }
-  SignPostIcon = tmp2(16275).SignPostIcon;
+  SignPostIcon = tmp2(16277).SignPostIcon;
 }
 function MarkupAttachmentLink(state) {
   let SMALL;
@@ -745,7 +745,7 @@ function MarkupAttachmentLink(state) {
     str2 = "body-xs/medium";
   }
   let obj = { variant: str2, style: tmp.channelMentionText, children: items };
-  const obj2 = { themedColor: node(575).colors.MENTION_FOREGROUND, source: node(16279), size: SMALL };
+  const obj2 = { themedColor: node(575).colors.MENTION_FOREGROUND, source: node(16281), size: SMALL };
   const ThemedIcon = tmp3(1187).ThemedIcon;
   const fontScale = closure_4.getFontScale();
   if (fontScale < 1) {
@@ -824,7 +824,7 @@ let style = { unicodeEmoji: obj2, emoji: { width: EMOJI_CHAT_SIZE, height: EMOJI
 obj2 = { transform: items };
 let obj3 = { translateY: nativeDefault.space.PX_4 };
 items = [obj3];
-obj4 = { color: Spoiler.SPOILER_HIDDEN_TEXT_COLOR, backgroundColor: "Array" };
+obj4 = { color: Spoiler.SPOILER_HIDDEN_TEXT_COLOR, backgroundColor: "y" };
 let createStyles = createStyles_mod;
 let obj5 = { link: obj6, channelMention: obj7, channelMentionText: obj8, mention: obj9, inlineCode: obj10, codeBlock: obj11, blockQuote: obj12 };
 obj6 = { fontFamily: Fonts.PRIMARY_BOLD, color: nativeDefault.colors.TEXT_LINK };

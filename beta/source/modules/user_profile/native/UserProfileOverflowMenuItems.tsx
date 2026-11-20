@@ -1,10 +1,10 @@
-// Module ID: 15691
-// Function ID: 15692
+// Module ID: 15693
+// Function ID: 15694
 // Name: UserProfileOverflowMenuItems
-// Dependencies: [1072, 12054, 1113, 8137, 5542, 12056, 2121, 1264, 6905, 12055, 15692, 15692, 12063, 1380, 12123, 1256, 7943, 6004, 5362, 7949, 2]
+// Dependencies: [1072, 12054, 1113, 8137, 5542, 12056, 2121, 1264, 6905, 12055, 15694, 15694, 12063, 1380, 12123, 1256, 7943, 6004, 5362, 7949, 2]
 // Exports: getBlockMenuItem, getDeveloperCopyMenuItem, getIgnoreMenuItem, getReportMenuItem
 
-// Module 15691 (UserProfileOverflowMenuItems)
+// Module 15693 (UserProfileOverflowMenuItems)
 import intl6 from "intl" /* 1113 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
@@ -18,7 +18,7 @@ import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 7949 */
 import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 8137 */;
 import ReportModals from "ReportModals" /* 12063 */;
 import UserProfileAlertUtils from "UserProfileAlertUtils" /* 12123 */;
-import BotReportChooser from "BotReportChooser" /* 15692 */;
+import BotReportChooser from "BotReportChooser" /* 15694 */;
 import Constants from "Constants" /* 1072 */;
 import RestrictionConfirmationConstants from "RestrictionConfirmationConstants" /* 12054 */;
 import size from "module_2" /* 2 */;
@@ -171,7 +171,7 @@ export function getReportMenuItem(user, isInIarUserReportingExperiment) {
           if (user.bot) {
             const openLazy = ActionSheetActionCreatorsDefault.openLazy;
             const obj4 = { user, entrypoint, contextualGuildId: tmp3, contextualChannelId: importDefault };
-            const tmp19 = asyncRequire(15692, dependencyMap.paths);
+            const tmp19 = asyncRequire(15694, dependencyMap.paths);
             openLazy(tmp19, BotReportChooser.BOT_REPORT_CHOOSER_KEY, obj4, "replaceAll");
           } else {
             const obj2 = ReportModals;

@@ -1,9 +1,9 @@
-// Module ID: 16093
-// Function ID: 16094
+// Module ID: 16095
+// Function ID: 16096
 // Name: VoiceMemberUser
-// Dependencies: [19, 17, 6359, 1192, 502, 7023, 5155, 5218, 2133, 6058, 1072, 21, 5306, 575, 10597, 7026, 504, 5313, 16094, 16095, 1187, 16096, 16097, 16098, 16099, 12834, 5919, 1113, 8106, 8468, 13097, 5482, 6890, 5542, 7428, 8136, 6341, 8142, 5362, 2]
+// Dependencies: [19, 17, 6359, 1192, 502, 7023, 5155, 5218, 2133, 6058, 1072, 21, 5306, 575, 10597, 7026, 504, 5313, 16096, 16097, 1187, 16098, 16099, 16100, 16101, 12836, 5919, 1113, 8106, 8468, 13099, 5482, 6890, 5542, 7428, 8136, 6341, 8142, 5362, 2]
 
-// Module 16093 (VoiceMemberUser)
+// Module 16095 (VoiceMemberUser)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import UserUtilsDefault from "UserUtils" /* 5362 */;
@@ -90,7 +90,7 @@ function StreamingUserRow(user) {
     let guildId;
     const obj5 = { style: tmp.streamPreview, children: tmp10(tmp17, obj6) };
     const tmp15 = closure_3;
-    tmp17 = channel(13097);
+    tmp17 = channel(13099);
     if (channel != null) {
       guildId = channel.getGuildId();
     }
@@ -330,7 +330,7 @@ let closure_17 = react.memo(function VoiceMemberUserRow(user) {
       const tmp26 = closure_13;
       const tmp27 = id;
       if (isSpectating) {
-        const obj11 = { size: user(1187).Icon.Sizes.REFRESH_SMALL_16, source: channel(16099), style: tmp22 };
+        const obj11 = { size: user(1187).Icon.Sizes.REFRESH_SMALL_16, source: channel(16101), style: tmp22 };
         const Icon = tmp2(1187).Icon;
         tmp23Result = tmp23(Icon, obj11);
       }
@@ -340,9 +340,9 @@ let closure_17 = react.memo(function VoiceMemberUserRow(user) {
         let tmp8Result;
         const tmp2Result = user(5313);
         if (tmp2Result.isThemeDark(stateFromStores1)) {
-          tmp8Result = tmp8(16094);
+          tmp8Result = tmp8(16096);
         } else {
-          tmp8Result = tmp8(16095);
+          tmp8Result = tmp8(16097);
         }
         const obj12 = { size: user(1187).Icon.Sizes.REFRESH_SMALL_16, source: tmp8Result, style: tmp5.voiceStatusIconMargin, color: tmp22.tintColor, disableColor: localMute };
         const Icon2 = tmp2(1187).Icon;
@@ -351,7 +351,7 @@ let closure_17 = react.memo(function VoiceMemberUserRow(user) {
       items4[1] = tmp23Result5;
       let tmp23Result6 = null;
       if (tmp16) {
-        const obj13 = { size: user(1187).Icon.Sizes.REFRESH_SMALL_16, source: channel(16096), style: tmp22 };
+        const obj13 = { size: user(1187).Icon.Sizes.REFRESH_SMALL_16, source: channel(16098), style: tmp22 };
         const Icon3 = tmp2(1187).Icon;
         tmp23Result6 = tmp23(Icon3, obj13);
       }
@@ -361,10 +361,10 @@ let closure_17 = react.memo(function VoiceMemberUserRow(user) {
         let obj15;
         const Icon4 = tmp2(1187).Icon;
         if (localVideoDisabled) {
-          obj15 = { size: user(1187).Icon.Sizes.REFRESH_SMALL_16, source: channel(16097), style: tmp5.voiceStatusIconMargin, disableColor: true };
-          const obj14 = { size: user(1187).Icon.Sizes.REFRESH_SMALL_16, source: channel(16097), style: tmp5.voiceStatusIconMargin, disableColor: true };
+          obj15 = { size: user(1187).Icon.Sizes.REFRESH_SMALL_16, source: channel(16099), style: tmp5.voiceStatusIconMargin, disableColor: true };
+          const obj14 = { size: user(1187).Icon.Sizes.REFRESH_SMALL_16, source: channel(16099), style: tmp5.voiceStatusIconMargin, disableColor: true };
         } else {
-          obj15 = { size: user(1187).Icon.Sizes.REFRESH_SMALL_16, source: channel(16098), style: tmp22 };
+          obj15 = { size: user(1187).Icon.Sizes.REFRESH_SMALL_16, source: channel(16100), style: tmp22 };
         }
         tmp23Result7 = tmp23(Icon4, obj15);
       }
@@ -401,7 +401,7 @@ let closure_17 = react.memo(function VoiceMemberUserRow(user) {
   }
   if (localVideoAutoDisabled) {
     const obj21 = { style: tmp5.autoDisabledVideo, children: items7 };
-    const obj22 = { source: channel(12834), size: user(1187).Icon.Sizes.EXTRA_SMALL, disableColor: true };
+    const obj22 = { source: channel(12836), size: user(1187).Icon.Sizes.EXTRA_SMALL, disableColor: true };
     const Icon5 = tmp2(1187).Icon;
     items7 = [closure_12(Icon5, obj22), ];
     const obj23 = { variant: "body-xs/medium", color: "text-default", style: tmp5.autoDisabledVideoLabel, children: intl3.string(user(1113).t.m2Hyj0) };

@@ -1,10 +1,10 @@
-// Module ID: 14076
-// Function ID: 14077
+// Module ID: 14078
+// Function ID: 14079
 // Name: GameOrganizationIcon
 // Dependencies: [32, 19, 17, 21, 5306, 575, 6010, 2157, 2]
 // Exports: default
 
-// Module 14076 (GameOrganizationIcon)
+// Module 14078 (GameOrganizationIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

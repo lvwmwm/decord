@@ -1,10 +1,10 @@
-// Module ID: 15500
-// Function ID: 15501
+// Module ID: 15502
+// Function ID: 15503
 // Name: ProductDetailsActionSheetPurchaseSection
-// Dependencies: [32, 19, 17, 8500, 1074, 1072, 10030, 1390, 21, 5306, 575, 7988, 11817, 5542, 11794, 1113, 10436, 10451, 9518, 5933, 1502, 7918, 6838, 15501, 2121, 8484, 15509, 1075, 15510, 10020, 9442, 5919, 5927, 2114, 9409, 504, 15469, 2174, 8497, 8496, 10437, 9723, 9405, 10435, 10029, 15512, 15513, 1630, 9452, 5926, 15514, 1242, 1380, 6762, 6259, 2]
+// Dependencies: [32, 19, 17, 8500, 1074, 1072, 10030, 1390, 21, 5306, 575, 7988, 11817, 5542, 11794, 1113, 10436, 10451, 9518, 5933, 1502, 7918, 6838, 15503, 2121, 8484, 15511, 1075, 15512, 10020, 9442, 5919, 5927, 2114, 9409, 504, 15471, 2174, 8497, 8496, 10437, 9723, 9405, 10435, 10029, 15514, 15515, 1630, 9452, 5926, 15516, 1242, 1380, 6762, 6259, 2]
 // Exports: default
 
-// Module 15500 (ProductDetailsActionSheetPurchaseSection)
+// Module 15502 (ProductDetailsActionSheetPurchaseSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1113 */;
@@ -197,7 +197,7 @@ function VCButton(balance) {
         }
       }
     };
-    obj2.pushLazy(asyncRequire(15501, dependencyMap.paths), obj3, ORB_CHECKOUT_MODAL);
+    obj2.pushLazy(asyncRequire(15503, dependencyMap.paths), obj3, ORB_CHECKOUT_MODAL);
   }, items);
   if (null == price) {
     return null;

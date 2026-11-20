@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1119 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/intl/messages", scales: [1], hash: "0ae1c385a4ec3fe4283a6ec8e1cd18c9", name: "untranslated.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/intl/messages", scales: [1], hash: "52d7feaf309857edc6fd8640f057b56e", name: "llm-pilot.compiled.messages", type: "jsona" });

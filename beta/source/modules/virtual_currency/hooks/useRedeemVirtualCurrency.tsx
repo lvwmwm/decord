@@ -155,12 +155,12 @@ export function useRedeemVirtualCurrency(useOrdersAPI) {
             c8 = 3;
             return { value: "HermesInternal", done: null };
           }
-        } catch (tmp52) {
-          closure_5 = tmp52;
+        } catch (tmp58) {
+          closure_5 = tmp58;
           if (0 === v0) {
             c8 = 3;
-            throw tmp52;
-          } else if (1 === tmp54) {
+            throw tmp58;
+          } else if (1 === tmp60) {
             v3 = 2;
           } else {
             v3 = 3;

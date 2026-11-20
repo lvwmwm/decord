@@ -1,10 +1,10 @@
-// Module ID: 15597
-// Function ID: 15598
+// Module ID: 15599
+// Function ID: 15600
 // Name: getCoverImageFromActivity
 // Dependencies: [2145, 7313, 2]
 // Exports: default
 
-// Module 15597 (getCoverImageFromActivity)
+// Module 15599 (getCoverImageFromActivity)
 import Constants from "Constants" /* 2145 */;
 import ApplicationAssetUtils from "ApplicationAssetUtils" /* 7313 */;
 import size from "module_2" /* 2 */;

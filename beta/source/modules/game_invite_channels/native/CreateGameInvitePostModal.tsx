@@ -1,10 +1,10 @@
-// Module ID: 15135
-// Function ID: 15136
+// Module ID: 15137
+// Function ID: 15138
 // Name: CreateGameInvitePostModal
-// Dependencies: [32, 19, 17, 5155, 8792, 21, 5306, 575, 7918, 504, 7499, 15134, 5903, 15136, 6053, 5542, 11860, 2121, 1113, 7428, 7549, 5919, 4067, 7859, 14632, 7746, 7443, 7954, 5906, 14595, 5926, 2]
+// Dependencies: [32, 19, 17, 5155, 8792, 21, 5306, 575, 7918, 504, 7499, 15136, 5903, 15138, 6053, 5542, 11860, 2121, 1113, 7428, 7549, 5919, 4067, 7859, 14634, 7746, 7443, 7954, 5906, 14597, 5926, 2]
 // Exports: default
 
-// Module 15135 (CreateGameInvitePostModal)
+// Module 15137 (CreateGameInvitePostModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1113 */;
@@ -82,7 +82,7 @@ function CreateGameInvitePostContent(parentChannel) {
     set = new Set(first.map((id) => id.id));
     return set;
   }, items);
-  let obj = parentChannel(15136);
+  let obj = parentChannel(15138);
   let obj2 = {
     parentChannel,
     description: tmp5,
@@ -147,7 +147,7 @@ function CreateGameInvitePostContent(parentChannel) {
   items4[1] = closure_8(Text, obj6);
   items5 = [closure_9(View, obj4), , ];
   const obj7 = { style: tmp.body, children: items6 };
-  const obj8 = { label: intl3.string(tmp2(4067)["/mEbGf"]), placeholder: intl4.string(tmp2(4067)["SU/IAE"]), value: tmp5, onChange: tmp6, maxLength: parentChannel(14632).GAME_INVITE_POST_MESSAGE_MAX_LENGTH, autoFocus: true };
+  const obj8 = { label: intl3.string(tmp2(4067)["/mEbGf"]), placeholder: intl4.string(tmp2(4067)["SU/IAE"]), value: tmp5, onChange: tmp6, maxLength: parentChannel(14634).GAME_INVITE_POST_MESSAGE_MAX_LENGTH, autoFocus: true };
   const TextArea = parentChannel(7859).TextArea;
   intl3 = parentChannel(1113).intl;
   intl4 = parentChannel(1113).intl;
@@ -189,7 +189,7 @@ function CreateGameInvitePostContent(parentChannel) {
   let tmp15Result4 = null;
   const LayerScope = tmp9(5906).LayerScope;
   if (isSlowmodeEnabled) {
-    const obj16 = { style: tmp.slowmodeRow, children: closure_8(tmp2(14595), obj17) };
+    const obj16 = { style: tmp.slowmodeRow, children: closure_8(tmp2(14597), obj17) };
     obj17 = { channel: parentChannel, hasTypingText: false, slowmodeType: SlowmodeType.CreateThread };
     tmp15Result4 = tmp15(tmp14, obj16);
   }

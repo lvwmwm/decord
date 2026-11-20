@@ -1,13 +1,13 @@
-// Module ID: 13207
-// Function ID: 13208
+// Module ID: 13209
+// Function ID: 13210
 // Name: openConjureRemoveAppAlert
-// Dependencies: [32, 5, 19, 21, 5306, 13208, 1113, 4131, 6005, 6264, 13209, 6327, 5919, 13206, 7329, 6260, 2]
+// Dependencies: [32, 5, 19, 21, 5306, 13210, 1113, 4131, 6005, 6264, 13211, 6327, 5919, 13208, 7329, 6260, 2]
 // Exports: default
 
-// Module 13207 (openConjureRemoveAppAlert)
+// Module 13209 (openConjureRemoveAppAlert)
 import useAlertStore from "useAlertStore" /* 6260 */;
-import conjureRemoveApp from "conjureRemoveApp" /* 13206 */;
-import useConjureRemoveFromServer from "useConjureRemoveFromServer" /* 13208 */;
+import conjureRemoveApp from "conjureRemoveApp" /* 13208 */;
+import useConjureRemoveFromServer from "useConjureRemoveFromServer" /* 13210 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -104,7 +104,7 @@ function ConjureRemoveFromServerAlert(target) {
     return obj(...arguments);
   };
   const tmp = obj;
-  const tmp3 = obj(13208)(target);
+  const tmp3 = obj(13210)(target);
   ({ optionalItems, notes, error, submit: c0 } = tmp3);
   const body = tmp3.body;
   const tmp4 = closure_9();
@@ -118,7 +118,7 @@ function ConjureRemoveFromServerAlert(target) {
   Stack = require("Stack/Stack").Stack;
   if (optionalItems.length > 0) {
     let obj5 = { items: [], optionalItems };
-    tmp5Result = tmp5(tmp(13209), obj5);
+    tmp5Result = tmp5(tmp(13211), obj5);
   }
   items = [
     tmp5Result,

@@ -1,177 +1,225 @@
 // Module ID: 16172
 // Function ID: 16173
-// Dependencies: []
-// Exports: getParsedType
+// Dependencies: [16173, 16174]
+// Exports: default
 
 // Module 16172
-let hasOwnProperty;
+import _mod16173 from "module_16173" /* 16173 */;
+import _mod16174 from "module_16174" /* 16174 */;
 
-let obj = {
-  assertEqual: (arg0) => arg0,
-  assertIs(arg0) {
 
-  },
-  assertNever(arg0) {
-    const error = new Error();
-    throw error;
-  },
-  arrayToEnum: (arg0) => {
-    const obj = {};
-    const iter = arg0[Symbol.iterator]();
-    const nextResult = iter.next();
-    while (iter !== undefined) {
-      obj[nextResult] = nextResult;
-      continue;
+export default function(code, defaultError) {
+  let message;
+  code = code.code;
+  if (_mod16173.ZodIssueCode.invalid_type === code) {
+    let str63 = "Required";
+    if (code.received !== _mod16174.ZodParsedType.undefined) {
+      const _HermesInternal19 = HermesInternal;
+      str63 = "Expected " + code.expected + ", received " + code.received;
     }
-    return obj;
-  },
-  getValidEnumValues: (arg0) => {
-    let closure_0 = arg0;
-    const objectKeysResult = obj.objectKeys(arg0);
-    const found = objectKeysResult.filter((item) => typeof closure_0[closure_0[item]] !== "number");
-    obj = {};
-    for (const item10012 of found) {
-      obj[item10012] = arg0[item10012];
-      continue;
-    }
-    return obj.objectValues(obj);
-  },
-  objectValues: (arg0) => {
-    let closure_0 = arg0;
-    const objectKeysResult = obj.objectKeys(arg0);
-    return objectKeysResult.map((item) => closure_0[item]);
-  },
-  objectKeys: typeof Object.keys === "function" ? ((arg0) => Object.keys(arg0)) : ((obj) => {
-    const items = [];
-    for (const key10005 in obj) {
-      let _Object = Object;
-      hasOwnProperty = Object.prototype.hasOwnProperty;
-      if (!hasOwnProperty.call(obj, key10005)) {
-        continue;
+    message = str63;
+  } else if (_mod16173.ZodIssueCode.invalid_literal === code) {
+    const _JSON = JSON;
+    const _HermesInternal18 = HermesInternal;
+    message = "Invalid literal value, expected " + JSON.stringify(code.expected, tmp(16174).util.jsonStringifyReplacer);
+  } else if (_mod16173.ZodIssueCode.unrecognized_keys === code) {
+    const util4 = tmp(16174).util;
+    const _HermesInternal17 = HermesInternal;
+    message = "Unrecognized key(s) in object: " + util4.joinValues(code.keys, ", ");
+  } else {
+    let str31 = "Invalid input";
+    message = "Invalid input";
+    if (_mod16173.ZodIssueCode.invalid_union !== code) {
+      if (_mod16173.ZodIssueCode.invalid_union_discriminator === code) {
+        const util3 = tmp(16174).util;
+        const _HermesInternal16 = HermesInternal;
+        message = "Invalid discriminator value. Expected " + util3.joinValues(code.options);
+      } else if (_mod16173.ZodIssueCode.invalid_enum_value === code) {
+        const util2 = tmp(16174).util;
+        const _HermesInternal15 = HermesInternal;
+        message = "Invalid enum value. Expected " + util2.joinValues(code.options) + ", received '" + code.received + "'";
       } else {
-        let arr = items.push(key10005);
-        continue;
-      }
-      continue;
-    }
-    return items;
-  }),
-  find: (arg0, fn) => {
-    const iter = arg0[Symbol.iterator]();
-    const nextResult = iter.next();
-    while (iter !== undefined) {
-      if (fn(nextResult)) {
-        iter.return();
-        return nextResult;
-      }
-    }
-  },
-  isInteger: typeof Number.isInteger === "function" ? ((arg0) => Number.isInteger(arg0)) : ((result1) => {
-    let isFiniteResult = typeof result1 === "number";
-    if (typeof result1 === "number") {
-      const _isFinite = isFinite;
-      isFiniteResult = isFinite(result1);
-    }
-    if (isFiniteResult) {
-      const _Math = Math;
-      isFiniteResult = Math.floor(result1) === result1;
-    }
-    return isFiniteResult;
-  }),
-  joinValues(arr) {
-    let str = arg1;
-    if (arg1 === undefined) {
-      str = " | ";
-    }
-    const mapped = arr.map((item) => {
-      let combined = item;
-      if (typeof item === "string") {
-        const _HermesInternal = HermesInternal;
-        combined = "'" + item + "'";
-      }
-      return combined;
-    });
-    return mapped.join(str);
-  },
-  jsonStringifyReplacer: (arg0, arg1) => {
-    let str = arg1;
-    if (typeof arg1 === "bigint") {
-      str = arg1.toString();
-    }
-    return str;
-  }
-};
-const obj2 = {
-  mergeShapes: (arg0, arg1) => {
-    const obj = {};
-    const merged = Object.assign(arg0);
-    const merged1 = Object.assign(arg1);
-    return obj;
-  }
-};
-
-export const util = obj;
-export const objectUtil = obj2;
-export const ZodParsedType = obj.arrayToEnum(["string", "nan", "number", "integer", "float", "boolean", "date", "bigint", "symbol", "function", "undefined", "null", "array", "object", "unknown", "promise", "void", "never", "map", "set"]);
-export const getParsedType = (self) => {
-  if ("undefined" === typeof self) {
-    return exports.ZodParsedType.undefined;
-  } else if ("string" === typeof self) {
-    return exports.ZodParsedType.string;
-  } else if ("number" === typeof self) {
-    const _isNaN = isNaN;
-    const ZodParsedType = exports.ZodParsedType;
-    return isNaN(self) ? ZodParsedType.nan : ZodParsedType.number;
-  } else if ("boolean" === typeof self) {
-    return exports.ZodParsedType.boolean;
-  } else if ("function" === typeof self) {
-    return exports.ZodParsedType.function;
-  } else if ("bigint" === typeof self) {
-    return exports.ZodParsedType.bigint;
-  } else if ("symbol" === typeof self) {
-    return exports.ZodParsedType.symbol;
-  } else if ("object" === typeof self) {
-    let _null;
-    const _Array = Array;
-    if (Array.isArray(self)) {
-      _null = exports.ZodParsedType.array;
-    } else if (null === self) {
-      _null = exports.ZodParsedType.null;
-    } else {
-      if (self.then) {
-        if (typeof self.then === "function") {
-          if (self.catch) {
-            if (typeof self.catch === "function") {
-              _null = exports.ZodParsedType.promise;
+        message = "Invalid function arguments";
+        if (_mod16173.ZodIssueCode.invalid_arguments !== code) {
+          message = "Invalid function return type";
+          if (_mod16173.ZodIssueCode.invalid_return_type !== code) {
+            message = "Invalid date";
+            if (_mod16173.ZodIssueCode.invalid_date !== code) {
+              if (_mod16173.ZodIssueCode.invalid_string === code) {
+                if (typeof code.validation === "object") {
+                  const validation = code.validation;
+                  if ("includes" in code.validation) {
+                    const _HermesInternal14 = HermesInternal;
+                    const combined = "Invalid input: must include \"" + validation.includes + "\"";
+                    message = combined;
+                    if (typeof code.validation.position === "number") {
+                      const _HermesInternal20 = HermesInternal;
+                      message = "" + combined + " at one or more positions greater than or equal to " + code.validation.position;
+                    }
+                  } else {
+                    const validation2 = code.validation;
+                    if ("startsWith" in validation) {
+                      const _HermesInternal13 = HermesInternal;
+                      message = "Invalid input: must start with \"" + validation2.startsWith + "\"";
+                    } else if ("endsWith" in validation2) {
+                      const _HermesInternal12 = HermesInternal;
+                      message = "Invalid input: must end with \"" + code.validation.endsWith + "\"";
+                    } else {
+                      const util = tmp(16174).util;
+                      util.assertNever(code.validation);
+                    }
+                  }
+                } else {
+                  let str46 = "Invalid";
+                  if ("regex" !== code.validation) {
+                    const _HermesInternal11 = HermesInternal;
+                    str46 = "Invalid " + code.validation;
+                  }
+                  message = str46;
+                }
+              } else if (_mod16173.ZodIssueCode.too_small === code) {
+                if ("array" === code.type) {
+                  let str40 = "exactly";
+                  if (!code.exact) {
+                    let str41 = "more than";
+                    if (code.inclusive) {
+                      str41 = "at least";
+                    }
+                    str40 = str41;
+                  }
+                  const _HermesInternal10 = HermesInternal;
+                  str31 = "Array must contain " + str40 + " " + code.minimum + " element(s)";
+                } else if ("string" === code.type) {
+                  let str35 = "exactly";
+                  if (!code.exact) {
+                    let str36 = "over";
+                    if (code.inclusive) {
+                      str36 = "at least";
+                    }
+                    str35 = str36;
+                  }
+                  const _HermesInternal9 = HermesInternal;
+                  str31 = "String must contain " + str35 + " " + code.minimum + " character(s)";
+                } else if ("number" === code.type) {
+                  let str32 = "exactly equal to ";
+                  if (!code.exact) {
+                    let str33 = "greater than ";
+                    if (code.inclusive) {
+                      str33 = "greater than or equal to ";
+                    }
+                    str32 = str33;
+                  }
+                  const _HermesInternal8 = HermesInternal;
+                  str31 = "Number must be " + str32 + code.minimum;
+                } else if ("date" === code.type) {
+                  let str28 = "exactly equal to ";
+                  if (!code.exact) {
+                    let str29 = "greater than ";
+                    if (code.inclusive) {
+                      str29 = "greater than or equal to ";
+                    }
+                    str28 = str29;
+                  }
+                  const _Date2 = Date;
+                  const _Number2 = Number;
+                  const self3 = this;
+                  const self4 = this;
+                  const _HermesInternal7 = HermesInternal;
+                  const date = new Date(Number(code.minimum));
+                  str31 = "Date must be " + str28 + date;
+                }
+                message = str31;
+              } else if (_mod16173.ZodIssueCode.too_big === code) {
+                let combined1;
+                if ("array" === code.type) {
+                  let str21 = "exactly";
+                  if (!code.exact) {
+                    let str22 = "less than";
+                    if (code.inclusive) {
+                      str22 = "at most";
+                    }
+                    str21 = str22;
+                  }
+                  const _HermesInternal6 = HermesInternal;
+                  combined1 = "Array must contain " + str21 + " " + code.maximum + " element(s)";
+                } else if ("string" === code.type) {
+                  let str16 = "exactly";
+                  if (!code.exact) {
+                    let str17 = "under";
+                    if (code.inclusive) {
+                      str17 = "at most";
+                    }
+                    str16 = str17;
+                  }
+                  const _HermesInternal5 = HermesInternal;
+                  combined1 = "String must contain " + str16 + " " + code.maximum + " character(s)";
+                } else if ("number" === code.type) {
+                  let str12 = "exactly";
+                  if (!code.exact) {
+                    let str13 = "less than";
+                    if (code.inclusive) {
+                      str13 = "less than or equal to";
+                    }
+                    str12 = str13;
+                  }
+                  const _HermesInternal4 = HermesInternal;
+                  combined1 = "Number must be " + str12 + " " + code.maximum;
+                } else if ("bigint" === code.type) {
+                  let str8 = "exactly";
+                  if (!code.exact) {
+                    let str9 = "less than";
+                    if (code.inclusive) {
+                      str9 = "less than or equal to";
+                    }
+                    str8 = str9;
+                  }
+                  const _HermesInternal3 = HermesInternal;
+                  combined1 = "BigInt must be " + str8 + " " + code.maximum;
+                } else {
+                  combined1 = str31;
+                  if ("date" === code.type) {
+                    let str4 = "exactly";
+                    if (!code.exact) {
+                      let str5 = "smaller than";
+                      if (code.inclusive) {
+                        str5 = "smaller than or equal to";
+                      }
+                      str4 = str5;
+                    }
+                    const _Date = Date;
+                    const _Number = Number;
+                    const self = this;
+                    const self2 = this;
+                    const _HermesInternal2 = HermesInternal;
+                    const date1 = new Date(Number(code.maximum));
+                    combined1 = "Date must be " + str4 + " " + date1;
+                  }
+                }
+                message = combined1;
+              } else {
+                message = str31;
+                if (_mod16173.ZodIssueCode.custom !== code) {
+                  message = "Intersection results could not be merged";
+                  if (_mod16173.ZodIssueCode.invalid_intersection_types !== code) {
+                    if (_mod16173.ZodIssueCode.not_multiple_of === code) {
+                      const _HermesInternal = HermesInternal;
+                      message = "Number must be a multiple of " + code.multipleOf;
+                    } else {
+                      message = "Number must be finite";
+                      if (_mod16173.ZodIssueCode.not_finite !== code) {
+                        message = defaultError.defaultError;
+                        const util5 = tmp(16174).util;
+                        util5.assertNever(code);
+                      }
+                    }
+                  }
+                }
+              }
             }
           }
         }
       }
-      const _Map = Map;
-      if (typeof Map !== "undefined") {
-        const _Map2 = Map;
-        if (self instanceof Map) {
-          _null = exports.ZodParsedType.map;
-        }
-      }
-      const _Set = Set;
-      if (typeof Set !== "undefined") {
-        const _Set2 = Set;
-        if (self instanceof Set) {
-          _null = exports.ZodParsedType.set;
-        }
-      }
-      const _Date = Date;
-      if (typeof Date !== "undefined") {
-        const _Date2 = Date;
-        if (self instanceof Date) {
-          _null = exports.ZodParsedType.date;
-        }
-      }
-      _null = exports.ZodParsedType.object;
     }
-    return _null;
-  } else {
-    return exports.ZodParsedType.unknown;
   }
+  return { message };
 };

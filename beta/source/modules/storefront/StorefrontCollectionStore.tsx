@@ -386,10 +386,10 @@ let obj = {
     tmp[requestKey] = { state: "loading", collectionIds };
   },
   STOREFRONT_COLLECTIONS_AFTER_FETCH_SUCCESS: function handleCollectionsAfterFetchSuccess(collections) {
-    const f98210 = (id) => id.id;
+    const f98214 = (id) => id.id;
     collections = collections.collections;
-    closure_4[collections.requestKey] = { state: "success", collectionIds: collections.map(f98210), fetchedAt: Date.now() };
-    ({ state: "success", collectionIds: collections.map(f98210), fetchedAt: Date.now() });
+    closure_4[collections.requestKey] = { state: "success", collectionIds: collections.map(f98214), fetchedAt: Date.now() };
+    ({ state: "success", collectionIds: collections.map(f98214), fetchedAt: Date.now() });
     const item = collections.forEach((id) => {
       closure_1_5[id.id] = id;
     });

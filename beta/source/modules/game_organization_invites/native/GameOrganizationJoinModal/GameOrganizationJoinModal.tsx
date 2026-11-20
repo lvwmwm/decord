@@ -1,14 +1,14 @@
-// Module ID: 14073
-// Function ID: 14074
+// Module ID: 14075
+// Function ID: 14076
 // Name: GameOrganizationJoinModal
-// Dependencies: [19, 14074, 21, 7490, 7493, 14075, 14080, 14098, 1113, 2]
+// Dependencies: [19, 14076, 21, 7490, 7493, 14077, 14082, 14100, 1113, 2]
 // Exports: default
 
-// Module 14073 (GameOrganizationJoinModal)
+// Module 14075 (GameOrganizationJoinModal)
 import Fragment from "Fragment" /* 21 */;
 import NavigatorHeader from "NavigatorHeader" /* 7493 */;
 import react from "react" /* 19 */;
-import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 14074 */;
+import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 14076 */;
 import size from "module_2" /* 2 */;
 
 const GameOrganizationJoinScenes = GameOrganizationJoinModalConstants.GameOrganizationJoinScenes;
@@ -53,7 +53,7 @@ export default function GameOrganizationJoinModal(code) {
     obj5 = NavigatorHeader;
     return obj;
   }, items);
-  const StepModal = code(14098).StepModal;
+  const StepModal = code(14100).StepModal;
   const intl = code(1113).intl;
   return <StepModal screens={navigatorScreens} initialRouteName={GameOrganizationJoinScenes.VIEW} steps={items} headerBackTitle={intl.string(code(1113).t["13/7kX"])} gradientColor="purple" />;
 };

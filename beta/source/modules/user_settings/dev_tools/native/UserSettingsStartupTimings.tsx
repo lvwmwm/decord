@@ -1,10 +1,10 @@
-// Module ID: 18201
-// Function ID: 18202
+// Module ID: 18203
+// Function ID: 18204
 // Name: UserSettingsStartupTimings
 // Dependencies: [5, 32, 19, 17, 1362, 1072, 21, 5306, 575, 5919, 5489, 1630, 11108, 504, 9, 8678, 10230, 7888, 6327, 7746, 7733, 1363, 7443, 12289, 2]
 // Exports: default
 
-// Module 18201 (UserSettingsStartupTimings)
+// Module 18203 (UserSettingsStartupTimings)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;

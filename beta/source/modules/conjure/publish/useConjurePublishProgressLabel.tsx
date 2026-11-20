@@ -1,10 +1,10 @@
-// Module ID: 13169
-// Function ID: 13170
+// Module ID: 13171
+// Function ID: 13172
 // Name: useConjurePublishProgressLabel
-// Dependencies: [32, 19, 7377, 4131, 504, 1113, 13170, 2]
+// Dependencies: [32, 19, 7377, 4131, 504, 1113, 13172, 2]
 // Exports: default
 
-// Module 13169 (useConjurePublishProgressLabel)
+// Module 13171 (useConjurePublishProgressLabel)
 import _modDef4131 from "module_4131" /* 4131 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -52,7 +52,7 @@ export default function useConjurePublishProgressLabel(arg0) {
     const obj2 = { action: intl2.string(obj[stateFromStores.stage]), detail: tmpResult.formatElapsed(first - stateFromStores.stageStartedAt) };
     const prop = stateFromStores(4131)["ndkR+x"];
     intl2 = tmp(1113).intl;
-    tmpResult = tmp(13170);
+    tmpResult = tmp(13172);
     formatToPlainStringResult = formatToPlainString(prop, obj2);
   }
   return formatToPlainStringResult;

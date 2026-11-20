@@ -1,10 +1,10 @@
-// Module ID: 17613
-// Function ID: 17614
+// Module ID: 17615
+// Function ID: 17616
 // Name: useBadBundleFilter
 // Dependencies: [19, 1388, 8500, 563, 2174, 9518, 8497, 8496, 2]
 // Exports: useBadBundleFilter
 
-// Module 17613 (useBadBundleFilter)
+// Module 17615 (useBadBundleFilter)
 import react from "react" /* 19 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2174 */;

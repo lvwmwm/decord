@@ -1,9 +1,9 @@
-// Module ID: 19061
-// Function ID: 19062
+// Module ID: 19063
+// Function ID: 19064
 // Name: HomePanelContent
-// Dependencies: [19, 17, 18738, 1072, 19062, 21, 5306, 18744, 19063, 1496, 1655, 10576, 10271, 18747, 9062, 5892, 575, 1360, 6321, 19137, 2]
+// Dependencies: [19, 17, 18740, 1072, 19064, 21, 5306, 18746, 19065, 1496, 1655, 10576, 10271, 18749, 9062, 5892, 575, 1360, 6321, 19139, 2]
 
-// Module 19061 (HomePanelContent)
+// Module 19063 (HomePanelContent)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1072 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1360 */;
@@ -11,12 +11,12 @@ import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
 import _mod1655 from "module_1655" /* 1655 */;
 import ThemedGradientDefault from "ThemedGradient" /* 10271 */;
 import roundToNearestPixelDefault from "roundToNearestPixel" /* 10576 */;
-import useHomeDrawerGesture from "useHomeDrawerGesture" /* 18744 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 19062 */;
-import GuildsBarDefault from "GuildsBar" /* 19063 */;
+import useHomeDrawerGesture from "useHomeDrawerGesture" /* 18746 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 19064 */;
+import GuildsBarDefault from "GuildsBar" /* 19065 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
-import HomeDrawerStore from "HomeDrawerStore" /* 18738 */;
+import HomeDrawerStore from "HomeDrawerStore" /* 18740 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
@@ -104,13 +104,13 @@ function HomeDrawerPanelContent() {
   let tmp = GUILD_LIST_WIDTH;
   let tmp2 = closure_11();
   const tmp3 = ref;
-  let obj = ref(18747);
+  let obj = ref(18749);
   const drawerOpen = obj.useDrawerOpen();
-  let obj2 = ref(18744);
+  let obj2 = ref(18746);
   let obj3 = react;
   const doesLandOnHomeDrawer = obj2.useDoesLandOnHomeDrawer();
   ref = react.useRef(null);
-  const obj4 = ref(18744);
+  const obj4 = ref(18746);
   const homeDrawerState = obj4.useHomeDrawerState();
   const panelTranslateX = homeDrawerState.panelTranslateX;
   const guildsBarDrawerStyle = homeDrawerState.guildsBarDrawerStyle;
@@ -176,7 +176,7 @@ function HomeDrawerPanelContent() {
   tmp3(1655);
   items3[1] = tmp3(1655).interpolate;
   items3[2] = panelTranslateX;
-  items3[3] = tmp3(18744).INITIAL_OPEN_WIDTH;
+  items3[3] = tmp3(18746).INITIAL_OPEN_WIDTH;
   items3[4] = tmp3(1655).Extrapolation;
   items3[5] = isClientThemeOrCustomThemeActive;
   items3[6] = tmp3(1655).interpolateColor;
@@ -237,7 +237,7 @@ function HomeDrawerPanelContent() {
   items7[1] = closure_9(View3, obj10);
   let tmp36Result2 = null;
   if (doesLandOnHomeDrawer) {
-    tmp36Result2 = tmp36(tmp11(19137), {});
+    tmp36Result2 = tmp36(tmp11(19139), {});
   }
   items7[2] = tmp36Result2;
   return closure_9(View, obj8);

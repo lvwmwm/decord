@@ -1,16 +1,16 @@
-// Module ID: 18520
-// Function ID: 18521
+// Module ID: 18522
+// Function ID: 18523
 // Name: FeedBlock
-// Dependencies: [19, 17, 5307, 1192, 1074, 21, 5306, 575, 504, 5313, 10446, 18502, 18481, 10457, 18503, 8484, 10433, 9723, 17612, 7937, 7918, 1113, 5919, 7428, 5542, 18521, 2121, 6027, 5926, 18515, 6010, 18522, 18523, 18524, 18525, 2]
+// Dependencies: [19, 17, 5307, 1192, 1074, 21, 5306, 575, 504, 5313, 10446, 18504, 18483, 10457, 18505, 8484, 10433, 9723, 17614, 7937, 7918, 1113, 5919, 7428, 5542, 18523, 2121, 6027, 5926, 18517, 6010, 18524, 18525, 18526, 18527, 2]
 // Exports: default
 
-// Module 18520 (FeedBlock)
+// Module 18522 (FeedBlock)
 import react_native from "react-native" /* 17 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
 import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 10433 */;
-import uniqByDefault from "uniqBy" /* 18503 */;
+import uniqByDefault from "uniqBy" /* 18505 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 5307 */;
 import ThemeStore from "ThemeStore" /* 1192 */;

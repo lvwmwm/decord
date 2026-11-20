@@ -1,10 +1,10 @@
-// Module ID: 19112
-// Function ID: 19113
+// Module ID: 19114
+// Function ID: 19115
 // Name: usePreloadedGuildAsset
 // Dependencies: [32, 19, 7416, 2025, 2]
 // Exports: default
 
-// Module 19112 (usePreloadedGuildAsset)
+// Module 19114 (usePreloadedGuildAsset)
 import react_nativeDefault from "react-native" /* 2025 */;
 import useRefValueDefault from "useRefValue" /* 7416 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;

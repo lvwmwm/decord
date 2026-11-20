@@ -1,10 +1,10 @@
-// Module ID: 15829
-// Function ID: 15830
+// Module ID: 15831
+// Function ID: 15832
 // Name: useStableAddableWidgets
-// Dependencies: [32, 19, 15810, 7357, 2]
+// Dependencies: [32, 19, 15812, 7357, 2]
 // Exports: default
 
-// Module 15829 (useStableAddableWidgets)
+// Module 15831 (useStableAddableWidgets)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

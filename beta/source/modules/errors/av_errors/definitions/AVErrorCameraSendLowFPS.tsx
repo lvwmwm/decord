@@ -1,13 +1,13 @@
-// Module ID: 20851
-// Function ID: 20852
+// Module ID: 20853
+// Function ID: 20854
 // Name: AVErrorCameraSendLowFPS
-// Dependencies: [502, 2133, 6061, 1089, 20837, 6247, 20834, 2]
+// Dependencies: [502, 2133, 6061, 1089, 20839, 6247, 20836, 2]
 
-// Module 20851 (AVErrorCameraSendLowFPS)
+// Module 20853 (AVErrorCameraSendLowFPS)
 import DurationsDefault from "Durations" /* 1089 */;
 import AVError from "AVError" /* 6247 */;
-import AVErrorContext from "AVErrorContext" /* 20834 */;
-import AVErrorUtils from "AVErrorUtils" /* 20837 */;
+import AVErrorContext from "AVErrorContext" /* 20836 */;
+import AVErrorUtils from "AVErrorUtils" /* 20839 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 2133 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 6061 */;

@@ -6,13 +6,4 @@
 import _mod16797 from "module_16797" /* 16797 */;
 
 
-export default (arg0) => {
-  let num = 0;
-  {
-    num = 0;
-    if (0 !== +arg0) {
-      num = _mod16797(tmp);
-    }
-  }
-  return num;
-};
+export default (arg0) => _mod16797(arg0.length);

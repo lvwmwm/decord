@@ -1,66 +1,44 @@
 // Module ID: 13907
 // Function ID: 13908
 // Name: tokenize
-// Dependencies: [13831]
+// Dependencies: [13833]
 
 // Module 13907 (tokenize)
-import tokenize from "tokenize" /* 13831 */;
+import tokenize from "tokenize" /* 13833 */;
 
 let items;
 let obj2;
-function consumeRaw(arg0) {
-  return this.Raw(arg0, null, false);
-}
-const WhiteSpace = tokenize.TYPE.WhiteSpace;
-const Comment = tokenize.TYPE.Comment;
-const AtKeyword = tokenize.TYPE.AtKeyword;
-const CDO = tokenize.TYPE.CDO;
-const CDC = tokenize.TYPE.CDC;
+const Comma = tokenize.TYPE.Comma;
 const obj = {
-  name: "StyleSheet",
+  name: "SelectorList",
   structure: obj2,
   parse() {
     const self = this;
-    const tokenStart = this.scanner.tokenStart;
     const list = this.createList();
     if (!this.scanner.eof) {
-      do {
-        let tokenType = self.scanner.tokenType;
-        if (WhiteSpace === tokenType) {
-          let iter2 = self.scanner;
-          let nextResult = iter2.next();
-        } else {
-          let CommentResult;
-          if (Comment === tokenType) {
-            let source = self.scanner.source;
-            if (33 !== source.charCodeAt(self.scanner.tokenStart + 2)) {
-              let iter = self.scanner;
-              let nextResult1 = iter.next();
-            } else {
-              CommentResult = self.Comment();
-            }
-          } else if (CDO === tokenType) {
-            CommentResult = self.CDO();
-          } else if (CDC === tokenType) {
-            CommentResult = self.CDC();
-          } else if (AtKeyword === tokenType) {
-            CommentResult = self.parseWithFallback(self.Atrule, consumeRaw);
-          } else {
-            CommentResult = self.parseWithFallback(self.Rule, consumeRaw);
+      list.push(self.Selector());
+      if (self.scanner.tokenType === Comma) {
+        const iter = self.scanner;
+        iter.next();
+        while (!self.scanner.eof) {
+          let arr3 = list.push(self.Selector());
+          if (self.scanner.tokenType !== Comma) {
+            break;
           }
-          let arr = list.push(CommentResult);
         }
-      } while (!self.scanner.eof);
+      }
     }
-    const element = { type: "StyleSheet", loc: self.getLocation(tokenStart, self.scanner.tokenStart), children: list };
+    const element = { type: "SelectorList", loc: self.getLocationFromList(list), children: list };
     return element;
   },
   generate(arg0) {
-    this.children(arg0);
+    this.children(arg0, function() {
+      this.chunk(",");
+    });
   },
-  walkContext: "stylesheet"
+  walkContext: "selector"
 };
 obj2 = { children: items };
-items = [["Comment", "CDO", "CDC", "Atrule", "Rule", "Raw"]];
+items = [["Selector", "Raw"]];
 
 export default obj;

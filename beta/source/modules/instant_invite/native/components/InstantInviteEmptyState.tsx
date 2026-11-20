@@ -1,15 +1,15 @@
-// Module ID: 15890
-// Function ID: 15891
+// Module ID: 15892
+// Function ID: 15893
 // Name: InstantInviteEmptyState
-// Dependencies: [19, 17, 8462, 21, 5306, 575, 504, 1187, 15891, 1113, 7647, 7428, 10569, 5919, 8463, 5926, 2]
+// Dependencies: [19, 17, 8462, 21, 5306, 575, 504, 1187, 15893, 1113, 7647, 7428, 10569, 5919, 8463, 5926, 2]
 // Exports: default
 
-// Module 15890 (InstantInviteEmptyState)
+// Module 15892 (InstantInviteEmptyState)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import FreeFormTextInputDefault from "FreeFormTextInput" /* 7647 */;
 import InstantInviteUtilsDefault from "InstantInviteUtils" /* 8463 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15891 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15893 */;
 import react from "react" /* 19 */;
 import CreateInviteModalStore from "CreateInviteModalStore" /* 8462 */;
 import Fragment from "Fragment" /* 21 */;

@@ -1,9 +1,9 @@
-// Module ID: 12721
-// Function ID: 12722
+// Module ID: 12723
+// Function ID: 12724
 // Name: PictureInPicture
-// Dependencies: [32, 19, 17, 11003, 1072, 21, 5306, 1187, 12722, 1496, 5903, 12725, 1655, 5929, 12726, 12727, 5588, 1380, 2]
+// Dependencies: [32, 19, 17, 11003, 1072, 21, 5306, 1187, 12724, 1496, 5903, 12727, 1655, 5929, 12728, 12729, 5588, 1380, 2]
 
-// Module 12721 (PictureInPicture)
+// Module 12723 (PictureInPicture)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import PlatformUtils from "PlatformUtils" /* 1380 */;
@@ -12,10 +12,10 @@ import _mod1655 from "module_1655" /* 1655 */;
 import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5903 */;
 import spring_spring from "spring/spring" /* 5929 */;
 import ChannelCallStore from "ChannelCallStore" /* 11003 */;
-import useShouldForcePipOrientation from "useShouldForcePipOrientation" /* 12722 */;
-import usePipDimensionsDefault from "usePipDimensions" /* 12725 */;
-import useIsViewingActivity from "useIsViewingActivity" /* 12726 */;
-import useDraggablePip2 from "useDraggablePip" /* 12727 */;
+import useShouldForcePipOrientation from "useShouldForcePipOrientation" /* 12724 */;
+import usePipDimensionsDefault from "usePipDimensions" /* 12727 */;
+import useIsViewingActivity from "useIsViewingActivity" /* 12728 */;
+import useDraggablePip2 from "useDraggablePip" /* 12729 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

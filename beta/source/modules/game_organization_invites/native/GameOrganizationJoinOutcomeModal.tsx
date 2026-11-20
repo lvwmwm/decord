@@ -1,10 +1,10 @@
-// Module ID: 14082
-// Function ID: 14083
+// Module ID: 14084
+// Function ID: 14085
 // Name: GameOrganizationJoinOutcomeModal
-// Dependencies: [19, 12369, 21, 5306, 6838, 14072, 14083, 8208, 8210, 6327, 575, 14084, 5919, 14079, 5926, 7490, 7493, 12523, 2]
+// Dependencies: [19, 12369, 21, 5306, 6838, 14074, 14085, 8208, 8210, 6327, 575, 14086, 5919, 14081, 5926, 7490, 7493, 12525, 2]
 // Exports: default
 
-// Module 14082 (GameOrganizationJoinOutcomeModal)
+// Module 14084 (GameOrganizationJoinOutcomeModal)
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5919 */;
 import components_Button_Button from "components/Button/Button" /* 5926 */;
@@ -14,9 +14,9 @@ import NavigatorHeader from "NavigatorHeader" /* 7493 */;
 import ModalScreen2 from "ModalScreen" /* 8208 */;
 import ModalContent2 from "ModalContent" /* 8210 */;
 import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 12369 */;
-import useResolvedGameOrganizationInviteDefault from "useResolvedGameOrganizationInvite" /* 14072 */;
-import useGameOrganizationJoinOutcomeDefault from "useGameOrganizationJoinOutcome" /* 14083 */;
-import GameOrganizationJoinSuccessGraphicDefault from "GameOrganizationJoinSuccessGraphic" /* 14084 */;
+import useResolvedGameOrganizationInviteDefault from "useResolvedGameOrganizationInvite" /* 14074 */;
+import useGameOrganizationJoinOutcomeDefault from "useGameOrganizationJoinOutcome" /* 14085 */;
+import GameOrganizationJoinSuccessGraphicDefault from "GameOrganizationJoinSuccessGraphic" /* 14086 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5306 */;
@@ -67,7 +67,7 @@ function GameOrganizationJoinOutcomeScreen(arg0) {
     items[1] = hasOwnProperty(Stack2, obj3);
     items2 = [React3(ModalContent, obj7), ];
     const obj8 = { children: React3(components_Button_Button.Button, obj17) };
-    const ModalFooter = tmp10(14079).ModalFooter;
+    const ModalFooter = tmp10(14081).ModalFooter;
     obj17 = { text: null, size: "lg", onPress: null, disabled: tmp7 };
     ({ text: obj9.text, action: obj9.onPress } = cta);
     items2[1] = React3(ModalFooter, obj8);
@@ -106,5 +106,5 @@ export default function GameOrganizationJoinOutcomeModal(code) {
     return obj;
   }, items);
   let obj2 = { screens: navigatorScreens, initialRouteName: constants.OUTCOME, gradientColor: "purple" };
-  return closure_4(code(12523).Modal, obj2);
+  return closure_4(code(12525).Modal, obj2);
 };

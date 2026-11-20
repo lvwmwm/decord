@@ -1,12 +1,12 @@
-// Module ID: 12740
-// Function ID: 12741
+// Module ID: 12742
+// Function ID: 12743
 // Name: IgnoreThermalStateAlert
-// Dependencies: [19, 21, 5306, 6330, 1113, 12741, 5919, 2]
+// Dependencies: [19, 21, 5306, 6330, 1113, 12743, 5919, 2]
 // Exports: IgnoreThermalStateAlert
 
-// Module 12740 (IgnoreThermalStateAlert)
+// Module 12742 (IgnoreThermalStateAlert)
 import AlertDefault from "Alert" /* 6330 */;
-import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 12741 */;
+import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 12743 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 5306 */;

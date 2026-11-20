@@ -1,10 +1,10 @@
-// Module ID: 13553
-// Function ID: 13554
+// Module ID: 13555
+// Function ID: 13556
 // Name: PollAnswerInput
-// Dependencies: [32, 19, 17, 5155, 8725, 9011, 1391, 21, 5306, 575, 13554, 1113, 8861, 7428, 1187, 9543, 11153, 7639, 5542, 13555, 2121, 10410, 8106, 6031, 13558, 2]
+// Dependencies: [32, 19, 17, 5155, 8725, 9011, 1391, 21, 5306, 575, 13556, 1113, 8861, 7428, 1187, 9543, 11153, 7639, 5542, 13557, 2121, 10410, 8106, 6031, 13560, 2]
 // Exports: default
 
-// Module 13553 (PollAnswerInput)
+// Module 13555 (PollAnswerInput)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import EmojiConstants from "EmojiConstants" /* 1391 */;
@@ -211,7 +211,7 @@ export default function PollAnswerInput(answer) {
     openImageInputActionSheet() {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { channelId, index, answer, onSaveAltText: handleSaveAltText, onRemoveAnswerImage, openExpressionPicker };
-      obj.openLazy(asyncRequire(13555, dependencyMap.paths), unpackModuleId, obj2);
+      obj.openLazy(asyncRequire(13557, dependencyMap.paths), unpackModuleId, obj2);
     },
     iconSrc: index(channelId[21]),
     containerStyle: tmp.defaultImageContainer,
@@ -239,13 +239,13 @@ export default function PollAnswerInput(answer) {
     blurOnSubmit: false,
     style: tmp.pollAnswerTextInput,
     selectionColor: "channel_id",
-    textContentType: 12210435,
+    textContentType: "LAYER_POP_START",
     accessibilityLabel: intl2.formatToPlainString(answer(channelId[11]).t["3+V8G9"], obj6),
     accessibilityHint: formatToPlainStringResult,
     maxLength,
-    returnKeyType: 1347485696,
-    required: 14767005,
-    autoCorrect: -1830452324,
+    returnKeyType: "INTERACTIONS",
+    required: "isArrayBuffer",
+    autoCorrect: "promotedLabel",
     "aria-invalid": error
   };
   const FormInput = tmp9(tmp10[22]).FormInput;

@@ -1,10 +1,10 @@
-// Module ID: 17771
-// Function ID: 17772
+// Module ID: 17773
+// Function ID: 17774
 // Name: QuestOrbMultiplierPerkInfoActionSheet
-// Dependencies: [19, 17, 1072, 21, 5306, 575, 5542, 8604, 11279, 6002, 2188, 5926, 1113, 1630, 5891, 5457, 5919, 10154, 3935, 5556, 17768, 2]
+// Dependencies: [19, 17, 1072, 21, 5306, 575, 5542, 8604, 11279, 6002, 2188, 5926, 1113, 1630, 5891, 5457, 5919, 10154, 3935, 5556, 17770, 2]
 // Exports: default
 
-// Module 17771 (QuestOrbMultiplierPerkInfoActionSheet)
+// Module 17773 (QuestOrbMultiplierPerkInfoActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
@@ -188,6 +188,6 @@ export default function QuestOrbMultiplierPerkInfoActionSheet(multiplier) {
   let obj2 = { scrollable: false, handleDisabled: true, startExpanded: true, contentStyles, children: closure_8(tmp7, obj3) };
   const BottomSheet = tmp(5556).BottomSheet;
   obj3 = { visible: tmp4, children: closure_8(SheetContent, { title: memo, body: memo1, eligibleToReceivePremiumRewards: result }) };
-  tmp7 = orbMultiplierEligibility(17768);
+  tmp7 = orbMultiplierEligibility(17770);
   return closure_8(BottomSheet, obj2);
 };

@@ -1,12 +1,12 @@
-// Module ID: 19024
-// Function ID: 19025
+// Module ID: 19026
+// Function ID: 19027
 // Name: WaterwheelsDiscoverNavigation
-// Dependencies: [5339, 1072, 10215, 19025, 7231, 2]
+// Dependencies: [5339, 1072, 10215, 19027, 7231, 2]
 // Exports: leaveWaterwheelsDiscover, selectWaterwheelsDiscover, selectWaterwheelsDiscoverFromGuildsBar
 
-// Module 19024 (WaterwheelsDiscoverNavigation)
+// Module 19026 (WaterwheelsDiscoverNavigation)
 import WaterwheelsDiscoverExperiment from "WaterwheelsDiscoverExperiment" /* 10215 */;
-import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 19025 */;
+import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 19027 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 5339 */;
 import Constants from "Constants" /* 1072 */;
 import size from "module_2" /* 2 */;

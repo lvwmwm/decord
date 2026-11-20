@@ -1,14 +1,14 @@
-// Module ID: 15819
-// Function ID: 15820
+// Module ID: 15821
+// Function ID: 15822
 // Name: UserProfileWidgetOptionAddButton
-// Dependencies: [19, 17, 21, 575, 5306, 12110, 6010, 15820, 15822, 13466, 5919, 2]
+// Dependencies: [19, 17, 21, 575, 5306, 12110, 6010, 15822, 15824, 13468, 5919, 2]
 // Exports: default
 
-// Module 15819 (UserProfileWidgetOptionAddButton)
+// Module 15821 (UserProfileWidgetOptionAddButton)
 import nativeDefault from "native" /* 575 */;
 import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 12110 */;
-import AddWidgetButtonConfig from "AddWidgetButtonConfig" /* 15820 */;
-import UserProfileApplicationWidgetPreviewDefault from "UserProfileApplicationWidgetPreview" /* 15822 */;
+import AddWidgetButtonConfig from "AddWidgetButtonConfig" /* 15822 */;
+import UserProfileApplicationWidgetPreviewDefault from "UserProfileApplicationWidgetPreview" /* 15824 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -182,7 +182,7 @@ export default function UserProfileWidgetOptionAddButton(onPress) {
   items = [tmp9, ];
   const obj7 = { style: tmp3.overlay, children: items1 };
   const obj8 = { size: "md", color: nativeDefault.colors.TEXT_DEFAULT };
-  const CirclePlusIcon = tmp4(13466).CirclePlusIcon;
+  const CirclePlusIcon = tmp4(13468).CirclePlusIcon;
   items1 = [hasOwnProperty(CirclePlusIcon, obj8), ];
   const obj9 = { variant: "body-md/medium", color: "text-strong", children: tmp4Result.getAddWidgetTitle(widget) };
   const Text = tmp4(5919).Text;

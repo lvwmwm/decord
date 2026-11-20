@@ -1,94 +1,56 @@
 // Module ID: 13910
 // Function ID: 13911
 // Name: tokenize
-// Dependencies: [13831]
+// Dependencies: [13833]
 
 // Module 13910 (tokenize)
-import tokenize from "tokenize" /* 13831 */;
+import tokenize from "tokenize" /* 13833 */;
 
-const Function = tokenize.TYPE.Function;
-const Url = tokenize.TYPE.Url;
-const RightParenthesis = tokenize.TYPE.RightParenthesis;
+let obj2;
+function eatIdentifierOrAsterisk() {
+  const self = this;
+  let tmp = this.scanner.tokenType !== Ident;
+  if (tmp) {
+    const scanner = self.scanner;
+    tmp = false === scanner.isDelim(42);
+  }
+  if (tmp) {
+    self.error("Identifier or asterisk is expected");
+  }
+  const iter = self.scanner;
+  iter.next();
+}
+const Ident = tokenize.TYPE.Ident;
 let obj = {
-  name: "Url",
-  structure: { value: ["String", "Raw"] },
+  name: "TypeSelector",
+  structure: obj2,
   parse() {
-    let StringResult;
-    let str4;
+    let scanner3;
     const self = this;
     const tokenStart = this.scanner.tokenStart;
-    const tokenType = this.scanner.tokenType;
-    if (Url === tokenType) {
-      const sum = tokenStart + 4;
-      const diff = self.scanner.tokenEnd - 1;
-      let tmp14 = sum;
-      if (sum < diff) {
-        const source3 = self.scanner.source;
-        let tmp18 = sum;
-        tmp14 = sum;
-        const obj6 = tokenize;
-        if (obj6.isWhiteSpace(source3.charCodeAt(sum))) {
-          const sum1 = tmp18 + 1;
-          tmp14 = sum1;
-          while (sum1 < diff) {
-            let obj2 = tokenize;
-            let source = self.scanner.source;
-            tmp18 = sum1;
-            tmp14 = sum1;
-            if (!obj2.isWhiteSpace(source.charCodeAt(sum1))) {
-              break;
-            }
-          }
-        }
-      }
-      let tmp19 = diff;
-      if (tmp14 < diff) {
-        const source4 = self.scanner.source;
-        let tmp23 = diff;
-        tmp19 = diff;
-        const obj7 = tokenize;
-        if (obj7.isWhiteSpace(source4.charCodeAt(diff - 1))) {
-          const diff1 = tmp23 - 1;
-          tmp19 = diff1;
-          while (tmp14 < diff1) {
-            let obj3 = tokenize;
-            let source2 = self.scanner.source;
-            tmp23 = diff1;
-            tmp19 = diff1;
-            if (!obj3.isWhiteSpace(source2.charCodeAt(diff1 - 1))) {
-              break;
-            }
-          }
-        }
-      }
-      const obj4 = { type: "Raw", loc: self.getLocation(tmp14, tmp19), value: str4.substring(tmp14, tmp19) };
-      str4 = self.scanner.source;
-      self.eat(Url);
-      StringResult = obj4;
-    } else if (Function === tokenType) {
-      const obj = tokenize;
-      if (!obj.cmpStr(self.scanner.source, self.scanner.tokenStart, self.scanner.tokenEnd, "url(")) {
-        self.error("Function name must be `url`");
-      }
-      self.eat(tmp26);
-      const scanner = self.scanner;
-      scanner.skipSC();
-      StringResult = self.String();
-      const scanner2 = self.scanner;
-      scanner2.skipSC();
-      self.eat(RightParenthesis);
+    const scanner = this.scanner;
+    if (scanner.isDelim(124)) {
+      const iter2 = self.scanner;
+      iter2.next();
+      eatIdentifierOrAsterisk.call(self);
     } else {
-      self.error("Url or Function is expected");
+      eatIdentifierOrAsterisk.call(self);
+      const scanner2 = self.scanner;
+      const obj = eatIdentifierOrAsterisk;
+      if (scanner2.isDelim(124)) {
+        const iter = self.scanner;
+        iter.next();
+        obj.call(self);
+      }
     }
-    const obj5 = { type: "Url", loc: self.getLocation(tokenStart, self.scanner.tokenStart), value: StringResult };
-    return obj5;
+    const obj2 = { type: "TypeSelector", loc: self.getLocation(tokenStart, self.scanner.tokenStart), name: scanner3.substrToCursor(tokenStart) };
+    scanner3 = self.scanner;
+    return obj2;
   },
-  generate(value) {
-    this.chunk("url");
-    this.chunk("(");
-    this.node(value.value);
-    this.chunk(")");
+  generate(name) {
+    this.chunk(name.name);
   }
 };
+obj2 = { name: String };
 
 export default obj;

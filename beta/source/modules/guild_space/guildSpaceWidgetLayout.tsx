@@ -1,14 +1,14 @@
-// Module ID: 20449
-// Function ID: 20450
+// Module ID: 20451
+// Function ID: 20452
 // Name: guildSpaceWidgetLayout
 // Dependencies: [2]
 // Exports: addWidget, getFullColumnIndex, moveWidget, renumberWidgets, splitWidgetsByColumn
 
-// Module 20449 (guildSpaceWidgetLayout)
+// Module 20451 (guildSpaceWidgetLayout)
 import size from "module_2" /* 2 */;
 
-const f123068 = (position) => 1 !== position.position.column;
-const f123069 = (position) => 1 === position.position.column;
+const f123074 = (position) => 1 !== position.position.column;
+const f123075 = (position) => 1 === position.position.column;
 function byOrder(position, position2) {
   return position.position.order - position2.position.order;
 }
@@ -17,16 +17,16 @@ const result = size.fileFinishedImporting("modules/guild_space/guildSpaceWidgetL
 export const LEFT_COLUMN = 0;
 export const RIGHT_COLUMN = 1;
 export function splitWidgetsByColumn(arr) {
-  const found = arr.filter(f123068);
+  const found = arr.filter(f123074);
   const items = [found.sort(byOrder), ];
-  const found1 = arr.filter(f123069);
+  const found1 = arr.filter(f123075);
   items[1] = found1.sort(byOrder);
   return items;
 }
 export function renumberWidgets(arr) {
-  const found = arr.filter(f123068);
+  const found = arr.filter(f123074);
   const items = [found.sort(byOrder), ];
-  const found1 = arr.filter(f123069);
+  const found1 = arr.filter(f123075);
   items[1] = found1.sort(byOrder);
   return items.flatMap((arr, index) => {
     let closure_0 = index;
@@ -46,9 +46,9 @@ export function renumberWidgets(arr) {
   });
 }
 export function addWidget(arr, arg1, column) {
-  const found = arr.filter(f123068);
+  const found = arr.filter(f123074);
   const items = [found.sort(byOrder), ];
-  const found1 = arr.filter(f123069);
+  const found1 = arr.filter(f123075);
   items[1] = found1.sort(byOrder);
   column = undefined;
   if (column != null) {
@@ -110,9 +110,9 @@ export function moveWidget(arr, arg1, arg2, arg3) {
   if (null == found) {
     return null;
   } else {
-    const found1 = arr.filter(f123068);
+    const found1 = arr.filter(f123074);
     const items = [found1.sort(byOrder), ];
-    const found2 = arr.filter(f123069);
+    const found2 = arr.filter(f123075);
     items[1] = found2.sort(byOrder);
     const first = items[0];
     const items1 = [first.filter((id) => id.id !== closure_0), ];

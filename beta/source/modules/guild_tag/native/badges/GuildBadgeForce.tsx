@@ -1,13 +1,13 @@
-// Module ID: 16370
-// Function ID: 16371
+// Module ID: 16372
+// Function ID: 16373
 // Name: GuildBadgeForce
-// Dependencies: [19, 21, 1269, 16357, 8263, 2]
+// Dependencies: [19, 21, 1269, 16359, 8263, 2]
 // Exports: GuildBadgeForce
 
-// Module 16370 (GuildBadgeForce)
+// Module 16372 (GuildBadgeForce)
 import v1 from "v1" /* 1269 */;
 import inlineStyles from "inlineStyles" /* 8263 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 16357 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 16359 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

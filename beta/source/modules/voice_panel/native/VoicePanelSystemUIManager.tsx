@@ -1,9 +1,9 @@
-// Module ID: 20051
-// Function ID: 20052
+// Module ID: 20053
+// Function ID: 20054
 // Name: VoicePanelSystemUIManager
-// Dependencies: [32, 19, 7016, 11985, 11983, 5973, 21, 11984, 1263, 1380, 551, 1655, 11333, 1708, 11827, 12717, 2]
+// Dependencies: [32, 19, 7016, 11985, 11983, 5973, 21, 11984, 1263, 1380, 551, 1655, 11333, 1708, 11827, 12719, 2]
 
-// Module 20051 (VoicePanelSystemUIManager)
+// Module 20053 (VoicePanelSystemUIManager)
 import react_native from "react-native" /* 1263 */;
 import CallConstants from "CallConstants" /* 5973 */;
 import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11983 */;
@@ -23,7 +23,7 @@ let c9;
 let tmp;
 let unpackModuleId;
 const StatusBarDefault = tmp(11827);
-const HomeIndicatorDefault = tmp(12717);
+const HomeIndicatorDefault = tmp(12719);
 const VoicePanelModes = VoicePanelConstants.VoicePanelModes;
 const VoicePanelControlsModes = VoicePanelControlsConstants.VoicePanelControlsModes;
 const ParticipantTypes = CallConstants.ParticipantTypes;

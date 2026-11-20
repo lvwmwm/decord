@@ -1,10 +1,10 @@
-// Module ID: 19576
-// Function ID: 19577
+// Module ID: 19578
+// Function ID: 19579
 // Name: ChannelDetailsMoreButton
 // Dependencies: [19, 21, 10894, 9054, 9051, 1113, 8437, 2]
 // Exports: default
 
-// Module 19576 (ChannelDetailsMoreButton)
+// Module 19578 (ChannelDetailsMoreButton)
 import Fragment from "Fragment" /* 21 */;
 import AssetRegistryDefault from "AssetRegistry" /* 8437 */;
 import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 9054 */;

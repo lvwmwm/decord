@@ -1,16 +1,16 @@
-// Module ID: 18882
-// Function ID: 18883
+// Module ID: 18884
+// Function ID: 18885
 // Name: GuildThemePreviewArt
-// Dependencies: [19, 17, 21, 5306, 575, 5479, 18883, 5537, 5883, 2]
+// Dependencies: [19, 17, 21, 5306, 575, 5479, 18885, 5537, 5883, 2]
 // Exports: default
 
-// Module 18882 (GuildThemePreviewArt)
+// Module 18884 (GuildThemePreviewArt)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import GuildThemePresets from "GuildThemePresets" /* 5479 */;
 import useThemeDefault from "useTheme" /* 5537 */;
-import GuildThemePreviewOverlayDefault from "GuildThemePreviewOverlay" /* 18883 */;
+import GuildThemePreviewOverlayDefault from "GuildThemePreviewOverlay" /* 18885 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;

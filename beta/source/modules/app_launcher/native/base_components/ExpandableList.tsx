@@ -1,10 +1,10 @@
-// Module ID: 13441
-// Function ID: 13442
+// Module ID: 13443
+// Function ID: 13444
 // Name: ExpandableList
 // Dependencies: [32, 19, 17, 21, 5306, 6826, 1655, 5538, 5541, 7443, 1113, 5919, 2]
 // Exports: default
 
-// Module 13441 (ExpandableList)
+// Module 13443 (ExpandableList)
 import react_native from "react-native" /* 17 */;
 import _mod1655 from "module_1655" /* 1655 */;
 import timing_timing from "timing/timing" /* 5538 */;
@@ -51,7 +51,7 @@ export default function ExpandableList(onExpand) {
   let tmp21;
   let tmp22;
   let tmp23;
-  const f133216 = (fn, index) => {
+  const f133224 = (fn, index) => {
     const isLastRow = closure_1 && index === memo1.length - 1;
     return fn({ isLastRow });
   };
@@ -169,7 +169,7 @@ export default function ExpandableList(onExpand) {
     onLayout: function handleCollapsedListLayout(nativeEvent) {
       const result = sharedValue.set(nativeEvent.nativeEvent.layout.height);
     },
-    children: memo.map(f133216)
+    children: memo.map(f133224)
   };
   View = _modDef1655.View;
   const tmp26 = metroImportAll;
@@ -187,7 +187,7 @@ export default function ExpandableList(onExpand) {
         },
       accessibilityElementsHidden: !first,
       importantForAccessibility: "no-hide-descendants",
-      children: memo1.map(f133216)
+      children: memo1.map(f133224)
     };
     tmp27Result = tmp27(tmp28, obj7);
   }

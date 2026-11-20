@@ -1,10 +1,10 @@
-// Module ID: 13464
-// Function ID: 13465
+// Module ID: 13466
+// Function ID: 13467
 // Name: AppDetailsOverflowMenu
-// Dependencies: [19, 21, 12698, 13465, 1113, 13466, 5131, 7943, 6004, 11629, 9148, 7988, 7421, 2]
+// Dependencies: [19, 21, 12700, 13467, 1113, 13468, 5131, 7943, 6004, 11629, 9148, 7988, 7421, 2]
 // Exports: default
 
-// Module 13464 (AppDetailsOverflowMenu)
+// Module 13466 (AppDetailsOverflowMenu)
 import Fragment from "Fragment" /* 21 */;
 import ToastUtils from "ToastUtils" /* 6004 */;
 import ClipboardUtils from "ClipboardUtils" /* 7943 */;
@@ -22,10 +22,10 @@ export default function AppDetailsOverflowMenu(application) {
   let intl2;
   application = application.application;
   const onAddAppMenuClick = application.onAddAppMenuClick;
-  let obj = application(12698);
+  let obj = application(12700);
   dependencyMap = obj.getInstallAppProps(application);
-  const tmp3 = onAddAppMenuClick(13465);
-  let obj2 = application(12698);
+  const tmp3 = onAddAppMenuClick(13467);
+  let obj2 = application(12700);
   const items = [];
   const tmp3Result = tmp3(obj2.getInstallableApplication(application)) && null != onAddAppMenuClick;
   if (tmp3Result) {
@@ -36,7 +36,7 @@ export default function AppDetailsOverflowMenu(application) {
           const obj = { installAppProps };
           return onAddAppMenuClick(obj);
         },
-      IconComponent: application(13466).CirclePlusIcon
+      IconComponent: application(13468).CirclePlusIcon
     };
     intl = tmp(1113).intl;
     push(obj3);

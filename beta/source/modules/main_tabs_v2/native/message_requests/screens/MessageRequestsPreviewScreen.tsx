@@ -1,10 +1,10 @@
-// Module ID: 19764
-// Function ID: 19765
+// Module ID: 19766
+// Function ID: 19767
 // Name: MessageRequestsPreviewScreen
-// Dependencies: [19, 7015, 1072, 21, 14871, 9069, 11010, 19765, 11976, 2]
+// Dependencies: [19, 7015, 1072, 21, 14873, 9069, 11010, 19767, 11976, 2]
 // Exports: default
 
-// Module 19764 (MessageRequestsPreviewScreen)
+// Module 19766 (MessageRequestsPreviewScreen)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1072 */;
 import MessageManagerDefault from "MessageManager" /* 9069 */;
@@ -20,7 +20,7 @@ export default function MessageRequestsScreen(route) {
   let tmp5Result;
   const channelId = route.route.params.channelId;
   const ref = react.useRef(null);
-  let obj = channelId(14871);
+  let obj = channelId(14873);
   const items = [channelId];
   const isMessageRequestRestrictedViewer = obj.useIsMessageRequestRestrictedViewer();
   const effect = react.useEffect(() => {
@@ -31,7 +31,7 @@ export default function MessageRequestsScreen(route) {
   const ChannelContainer = channelId(11010).ChannelContainer;
   if (isMessageRequestRestrictedViewer) {
     const obj3 = { channelId };
-    tmp5Result = tmp5(tmp7(19765), obj3);
+    tmp5Result = tmp5(tmp7(19767), obj3);
   } else {
     const obj4 = { guildId: tmp6, channelId, chatInputRef: ref, HACK_fixModalInteraction: true, screenIndex: "message-request" };
     tmp5Result = tmp5(tmp7(11976), obj4);

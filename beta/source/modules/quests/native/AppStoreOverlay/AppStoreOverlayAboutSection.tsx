@@ -1,10 +1,10 @@
-// Module ID: 15241
-// Function ID: 15242
+// Module ID: 15243
+// Function ID: 15244
 // Name: AppStoreOverlayAboutSection
 // Dependencies: [32, 19, 17, 21, 575, 5306, 10350, 1113, 5919, 10378, 2]
 // Exports: default
 
-// Module 15241 (AppStoreOverlayAboutSection)
+// Module 15243 (AppStoreOverlayAboutSection)
 import nativeDefault from "native" /* 575 */;
 import DEFAULT_MAX_HTML_LENGTH from "DEFAULT_MAX_HTML_LENGTH" /* 10350 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;

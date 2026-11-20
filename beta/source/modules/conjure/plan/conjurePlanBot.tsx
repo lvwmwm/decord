@@ -1,20 +1,20 @@
-// Module ID: 13721
-// Function ID: 13722
+// Module ID: 13723
+// Function ID: 13724
 // Name: conjurePlanBot
-// Dependencies: [2119, 13710, 7018, 2]
+// Dependencies: [2119, 13712, 7018, 2]
 // Exports: getConjurePlanBotExchanges, getConjurePlanBotInteraction, getConjurePlanExperienceBotExchanges, getConjurePlanSectionBotExchanges, mergeConjurePlanBotExchanges
 
-// Module 13721 (conjurePlanBot)
+// Module 13723 (conjurePlanBot)
 import Server from "Server" /* 2119 */;
 import ConjureProjectTypes from "ConjureProjectTypes" /* 7018 */;
-import conjurePlanTags from "conjurePlanTags" /* 13710 */;
+import conjurePlanTags from "conjurePlanTags" /* 13712 */;
 import size from "module_2" /* 2 */;
 
-const f108158 = (bot) => {
+const f108164 = (bot) => {
   const str = bot.bot;
   return "" !== str.trim();
 };
-const f108159 = (item) => {
+const f108165 = (item) => {
   let bot;
   let obj2;
   let user;
@@ -32,7 +32,7 @@ const f108159 = (item) => {
   }
   return obj2;
 };
-const f108160 = (kind) => {
+const f108166 = (kind) => {
   let tmp = "command" === kind.kind;
   if (!tmp) {
     tmp = "user_command" === kind.kind || "message_command" === kind.kind;
@@ -127,14 +127,14 @@ export function getConjurePlanBotInteraction(bot) {
   return tmp2;
 }
 export function getConjurePlanExperienceBotExchanges(arr) {
-  const found = arr.filter(f108158);
+  const found = arr.filter(f108164);
   const substr = found.slice(0, 3);
-  return substr.map(f108159);
+  return substr.map(f108165);
 }
 export function mergeConjurePlanBotExchanges(arr, arg1) {
   if (0 !== arg1.length) {
     let items;
-    if (!arr.some(f108160)) {
+    if (!arr.some(f108166)) {
       items = [];
       items[HermesBuiltin.arraySpread(items, arr.slice(0, 2), 0)] = arg1[0];
     }
@@ -151,15 +151,15 @@ export function getConjurePlanSectionBotExchanges(kind, arg1, arg2) {
       example_exchanges = [];
     }
     let arr2 = arg1;
-    const found = example_exchanges.filter(f108158);
+    const found = example_exchanges.filter(f108164);
     const substr = found.slice(0, 3);
-    const mapped = substr.map(f108159);
+    const mapped = substr.map(f108165);
     if (mapped.length > 0) {
       arr2 = mapped;
     }
     if (0 !== arg2.length) {
       let items;
-      if (!arr2.some(f108160)) {
+      if (!arr2.some(f108166)) {
         items = [];
         let tmp2 = items;
         items[HermesBuiltin.arraySpread(items, arr2.slice(0, 2), 0)] = arg2[0];

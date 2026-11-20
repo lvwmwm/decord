@@ -1,10 +1,10 @@
-// Module ID: 15475
-// Function ID: 15476
+// Module ID: 15477
+// Function ID: 15478
 // Name: ClearAfterOptionsActionSheet
-// Dependencies: [32, 19, 17, 9537, 21, 5306, 575, 5556, 7913, 1113, 7745, 7747, 15476, 5926, 5542, 2]
+// Dependencies: [32, 19, 17, 9537, 21, 5306, 575, 5556, 7913, 1113, 7745, 7747, 15478, 5926, 5542, 2]
 // Exports: default
 
-// Module 15475 (ClearAfterOptionsActionSheet)
+// Module 15477 (ClearAfterOptionsActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1113 */;

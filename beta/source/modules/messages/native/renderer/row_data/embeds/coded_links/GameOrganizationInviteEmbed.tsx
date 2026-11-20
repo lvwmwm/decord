@@ -1,10 +1,10 @@
-// Module ID: 15585
-// Function ID: 15586
+// Module ID: 15587
+// Function ID: 15588
 // Name: GameOrganizationInviteEmbed
-// Dependencies: [12368, 5177, 11891, 12369, 8842, 9170, 1113, 2565, 12539, 9163, 575, 8655, 7856, 15586, 14063, 12538, 7437, 5303, 2]
+// Dependencies: [12368, 5177, 11891, 12369, 8842, 9170, 1113, 2565, 12541, 9163, 575, 8655, 7856, 15588, 14065, 12540, 7437, 5303, 2]
 // Exports: createGameOrganizationInviteEmbed
 
-// Module 15585 (GameOrganizationInviteEmbed)
+// Module 15587 (GameOrganizationInviteEmbed)
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
 import _modDef2565 from "module_2565" /* 2565 */;
@@ -17,10 +17,10 @@ import react_native from "react-native" /* 9163 */;
 import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 9170 */;
 import CodedLinksConstants from "CodedLinksConstants" /* 11891 */;
 import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 12369 */;
-import isGameOrganizationFullDefault from "isGameOrganizationFull" /* 12538 */;
-import getGameOrganizationDisplayNounDefault from "getGameOrganizationDisplayNoun" /* 12539 */;
-import canGoToGameOrganizationGuildDefault from "canGoToGameOrganizationGuild" /* 14063 */;
-import getGameOrganizationInviteCtaStateDefault from "getGameOrganizationInviteCtaState" /* 15586 */;
+import isGameOrganizationFullDefault from "isGameOrganizationFull" /* 12540 */;
+import getGameOrganizationDisplayNounDefault from "getGameOrganizationDisplayNoun" /* 12541 */;
+import canGoToGameOrganizationGuildDefault from "canGoToGameOrganizationGuild" /* 14065 */;
+import getGameOrganizationInviteCtaStateDefault from "getGameOrganizationInviteCtaState" /* 15588 */;
 import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 12368 */;
 import GuildStore from "GuildStore" /* 5177 */;
 import size from "module_2" /* 2 */;

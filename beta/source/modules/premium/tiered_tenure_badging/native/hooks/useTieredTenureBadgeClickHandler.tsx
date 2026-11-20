@@ -1,10 +1,10 @@
-// Module ID: 15468
-// Function ID: 15469
+// Module ID: 15470
+// Function ID: 15471
 // Name: useTieredTenureBadgeClickHandler
-// Dependencies: [19, 1388, 1390, 8549, 1072, 7962, 15469, 15288, 7361, 504, 8604, 5542, 15286, 2121, 15286, 1256, 2]
+// Dependencies: [19, 1388, 1390, 8549, 1072, 7962, 15471, 15290, 7361, 504, 8604, 5542, 15288, 2121, 15288, 1256, 2]
 // Exports: useTieredTenureBadgeClickHandler
 
-// Module 15468 (useTieredTenureBadgeClickHandler)
+// Module 15470 (useTieredTenureBadgeClickHandler)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
 import PremiumConstants from "PremiumConstants" /* 1390 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
@@ -12,7 +12,7 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542
 import Constants2 from "Constants" /* 7962 */;
 import Constants3 from "Constants" /* 8549 */;
 import openUserSettings from "openUserSettings" /* 8604 */;
-import TieredTenureBadgeActionSheet from "TieredTenureBadgeActionSheet" /* 15286 */;
+import TieredTenureBadgeActionSheet from "TieredTenureBadgeActionSheet" /* 15288 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1388 */;
 import Constants from "Constants" /* 1072 */;
@@ -71,7 +71,7 @@ export function useTieredTenureBadgeClickHandler(id, userId, themeType) {
       } else {
         const openLazy = ActionSheetActionCreatorsDefault.openLazy;
         const obj = { userId };
-        const tmp5 = asyncRequire(15286, dependencyMap.paths);
+        const tmp5 = asyncRequire(15288, dependencyMap.paths);
         openLazy(tmp5, TieredTenureBadgeActionSheet.TIERED_TENURE_BADGE_ACTION_SHEET_KEY, obj, "stack");
       }
       const tmp15 = canUseTenureBadge;

@@ -1,9 +1,9 @@
-// Module ID: 13560
-// Function ID: 13561
+// Module ID: 13562
+// Function ID: 13563
 // Name: MediaKeyboardFloatingSend
 // Dependencies: [32, 19, 17, 8872, 21, 5306, 575, 504, 1655, 1630, 5929, 5930, 671, 5883, 8004, 1113, 6021, 2]
 
-// Module 13560 (MediaKeyboardFloatingSend)
+// Module 13562 (MediaKeyboardFloatingSend)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;

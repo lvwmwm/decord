@@ -1,14 +1,14 @@
-// Module ID: 13458
-// Function ID: 13459
+// Module ID: 13460
+// Function ID: 13461
 // Name: AppLauncherApplicationViewScreen
-// Dependencies: [19, 17, 11406, 1501, 6335, 21, 5306, 12578, 13459, 12698, 1628, 13460, 7259, 1655, 13461, 2]
+// Dependencies: [19, 17, 11406, 1501, 6335, 21, 5306, 12580, 13461, 12700, 1628, 13462, 7259, 1655, 13463, 2]
 // Exports: default
 
-// Module 13458 (AppLauncherApplicationViewScreen)
+// Module 13460 (AppLauncherApplicationViewScreen)
 import Fragment from "Fragment" /* 21 */;
 import KeyboardTypes from "KeyboardTypes" /* 1628 */;
 import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6335 */;
-import AppLauncherContext from "AppLauncherContext" /* 12578 */;
+import AppLauncherContext from "AppLauncherContext" /* 12580 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 11406 */;

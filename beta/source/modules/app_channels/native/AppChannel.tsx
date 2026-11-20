@@ -1,10 +1,10 @@
-// Module ID: 19432
-// Function ID: 19433
+// Module ID: 19434
+// Function ID: 19435
 // Name: AppChannel
-// Dependencies: [19, 17, 19433, 21, 5306, 575, 2023, 5903, 13345, 19434, 16988, 13344, 13346, 7260, 6053, 13355, 13359, 19437, 7394, 19438, 19441, 1113, 7055, 6010, 1414, 10546, 5926, 5967, 19442, 9068, 7052, 19443, 11977, 2]
+// Dependencies: [19, 17, 19435, 21, 5306, 575, 2023, 5903, 13347, 19436, 16990, 13346, 13348, 7260, 6053, 13357, 13361, 19439, 7394, 19440, 19443, 1113, 7055, 6010, 1414, 10546, 5926, 5967, 19444, 9068, 7052, 19445, 11977, 2]
 // Exports: default
 
-// Module 19432 (AppChannel)
+// Module 19434 (AppChannel)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1113 */;
@@ -18,11 +18,11 @@ import ConjurePreviewActionCreators from "ConjurePreviewActionCreators" /* 7394 
 import openChannelSecondaryViewChat from "openChannelSecondaryViewChat" /* 9068 */;
 import ConjureAppIconTileDefault from "ConjureAppIconTile" /* 10546 */;
 import useChannelContentGate from "useChannelContentGate" /* 11977 */;
-import getInlineFramePresentationDefault from "getInlineFramePresentation" /* 13345 */;
-import ConjureFrameUpdateStore from "ConjureFrameUpdateStore" /* 19433 */;
-import FrameSurfaceState from "FrameSurfaceState" /* 19441 */;
-import useAppChannelClosedDefault from "useAppChannelClosed" /* 19442 */;
-import useChannelAppFrameTeardownDefault from "useChannelAppFrameTeardown" /* 19443 */;
+import getInlineFramePresentationDefault from "getInlineFramePresentation" /* 13347 */;
+import ConjureFrameUpdateStore from "ConjureFrameUpdateStore" /* 19435 */;
+import FrameSurfaceState from "FrameSurfaceState" /* 19443 */;
+import useAppChannelClosedDefault from "useAppChannelClosed" /* 19444 */;
+import useChannelAppFrameTeardownDefault from "useChannelAppFrameTeardown" /* 19445 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
@@ -250,7 +250,7 @@ export default function ConnectedAppChannel(channel) {
     result = tmpResult2.renderChannelContentGate(channelContentGate);
   } else if (null == application_id) {
     const obj2 = { heading: intl.string(intl6.t.tU5fiM), description: intl2.string(intl6.t.E94mJf) };
-    const FrameSurfaceExplanation = tmp(19441).FrameSurfaceExplanation;
+    const FrameSurfaceExplanation = tmp(19443).FrameSurfaceExplanation;
     intl = tmp(1113).intl;
     intl2 = tmp(1113).intl;
     result = metroRequire(FrameSurfaceExplanation, obj2);

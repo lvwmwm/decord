@@ -1,16 +1,16 @@
-// Module ID: 17918
-// Function ID: 17919
+// Module ID: 17920
+// Function ID: 17921
 // Name: HappeningNowCard
-// Dependencies: [19, 17, 17917, 21, 5306, 7771, 5478, 7445, 5919, 2]
+// Dependencies: [19, 17, 17919, 21, 5306, 7771, 5478, 7445, 5919, 2]
 // Exports: HappeningNowCardHeader, HappeningNowCardSubtitle, default
 
-// Module 17918 (HappeningNowCard)
+// Module 17920 (HappeningNowCard)
 import react_native from "react-native" /* 17 */;
 import Text_Text from "Text/Text" /* 5919 */;
 import Card_Card from "Card/Card" /* 7445 */;
 import useIsWindowLargeDefault from "useIsWindowLarge" /* 7771 */;
 import react from "react" /* 19 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 17917 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 17919 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;

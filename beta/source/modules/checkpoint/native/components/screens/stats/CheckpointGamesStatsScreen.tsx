@@ -1,26 +1,26 @@
-// Module ID: 14522
-// Function ID: 14523
+// Module ID: 14524
+// Function ID: 14525
 // Name: CheckpointGamesStatsScreen
-// Dependencies: [17, 14253, 6367, 21, 5306, 575, 6737, 1113, 3317, 7438, 14271, 14506, 14505, 14507, 14523, 14514, 14273, 14481, 14482, 14512, 504, 14270, 2]
+// Dependencies: [17, 14255, 6367, 21, 5306, 575, 6737, 1113, 3317, 7438, 14273, 14508, 14507, 14509, 14525, 14516, 14275, 14483, 14484, 14514, 504, 14272, 2]
 // Exports: default
 
-// Module 14522 (CheckpointGamesStatsScreen)
+// Module 14524 (CheckpointGamesStatsScreen)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1113 */;
 import _modDef3317 from "module_3317" /* 3317 */;
-import CheckpointTextDefault from "CheckpointText" /* 14271 */;
-import CheckpointApngPlayerDefault from "CheckpointApngPlayer" /* 14273 */;
-import _modDef14481 from "module_14481" /* 14481 */;
-import _modDef14482 from "module_14482" /* 14482 */;
-import CheckpointCountUpStatNumberDefault from "CheckpointCountUpStatNumber" /* 14505 */;
-import CheckpointNumberUtils from "CheckpointNumberUtils" /* 14506 */;
-import CheckpointEmphasisDefault from "CheckpointEmphasis" /* 14507 */;
-import CheckpointDisplayTextDefault from "CheckpointDisplayText" /* 14512 */;
-import CheckpointRankTagDefault from "CheckpointRankTag" /* 14514 */;
-import CheckpointGameCard2 from "CheckpointGameCard" /* 14523 */;
-import CheckpointStore from "CheckpointStore" /* 14253 */;
+import CheckpointTextDefault from "CheckpointText" /* 14273 */;
+import CheckpointApngPlayerDefault from "CheckpointApngPlayer" /* 14275 */;
+import _modDef14483 from "module_14483" /* 14483 */;
+import _modDef14484 from "module_14484" /* 14484 */;
+import CheckpointCountUpStatNumberDefault from "CheckpointCountUpStatNumber" /* 14507 */;
+import CheckpointNumberUtils from "CheckpointNumberUtils" /* 14508 */;
+import CheckpointEmphasisDefault from "CheckpointEmphasis" /* 14509 */;
+import CheckpointDisplayTextDefault from "CheckpointDisplayText" /* 14514 */;
+import CheckpointRankTagDefault from "CheckpointRankTag" /* 14516 */;
+import CheckpointGameCard2 from "CheckpointGameCard" /* 14525 */;
+import CheckpointStore from "CheckpointStore" /* 14255 */;
 import CheckpointConstants from "CheckpointConstants" /* 6367 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 5306 */;
@@ -158,7 +158,7 @@ function GlobalGames(gameStats) {
   ({ container: arr[0], globalContainer: arr[1] } = tmp);
   let obj2 = { style: tmp.header, children: items2 };
   let obj3 = { style: tmp.globalHeading, children: items1 };
-  const obj4 = { animatedUri: _modDef14481, staticUri: _modDef14482, style: tmp.globe };
+  const obj4 = { animatedUri: _modDef14483, staticUri: _modDef14484, style: tmp.globe };
   const tmp2 = CheckpointApngPlayerDefault;
   items1 = [closure_7(tmp2, obj4), ];
   const obj5 = { isStepHeading: true, children: stringResult.toLocaleUpperCase() };

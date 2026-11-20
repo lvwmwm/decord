@@ -1,16 +1,16 @@
-// Module ID: 20424
-// Function ID: 20425
+// Module ID: 20426
+// Function ID: 20427
 // Name: DeprecatedModalManager
-// Dependencies: [8405, 8462, 20425, 5149, 1072, 5483, 5482, 6839, 20340, 20426, 20434, 7882, 20435, 20792, 20794, 2]
+// Dependencies: [8405, 8462, 20427, 5149, 1072, 5483, 5482, 6839, 20342, 20428, 20436, 7882, 20437, 20794, 20796, 2]
 
-// Module 20424 (DeprecatedModalManager)
+// Module 20426 (DeprecatedModalManager)
 import NavigationRouteUtils from "NavigationRouteUtils" /* 5482 */;
 import RootNavigationRef from "RootNavigationRef" /* 5483 */;
 import getDeprecatedModalDataDefault from "getDeprecatedModalData" /* 6839 */;
-import isFullScreenVerificationModalRequiredDefault from "isFullScreenVerificationModalRequired" /* 20340 */;
+import isFullScreenVerificationModalRequiredDefault from "isFullScreenVerificationModalRequired" /* 20342 */;
 import GuildSettingsStore from "GuildSettingsStore" /* 8405 */;
 import CreateInviteModalStore from "CreateInviteModalStore" /* 8462 */;
-import NotificationSettingsModalStore from "NotificationSettingsModalStore" /* 20425 */;
+import NotificationSettingsModalStore from "NotificationSettingsModalStore" /* 20427 */;
 import UserRequiredActionStore from "UserRequiredActionStore" /* 5149 */;
 import Constants from "Constants" /* 1072 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;

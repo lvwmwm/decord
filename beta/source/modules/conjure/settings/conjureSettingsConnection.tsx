@@ -1,14 +1,14 @@
-// Module ID: 13218
-// Function ID: 13219
+// Module ID: 13220
+// Function ID: 13221
 // Name: conjureSettingsConnection
-// Dependencies: [5, 7379, 572, 7394, 13219, 559, 13216, 2]
+// Dependencies: [5, 7379, 572, 7394, 13221, 559, 13218, 2]
 // Exports: requestProjectRebuild, retryFailedOverlayProjectSettings, submitProjectSettings
 
-// Module 13218 (conjureSettingsConnection)
+// Module 13220 (conjureSettingsConnection)
 import BackoffDefault from "Backoff" /* 559 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import ConjurePreviewActionCreators from "ConjurePreviewActionCreators" /* 7394 */;
-import conjureWorkerFetch from "conjureWorkerFetch" /* 13219 */;
+import conjureWorkerFetch from "conjureWorkerFetch" /* 13221 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ConjureSettingsStore from "ConjureSettingsStore" /* 7379 */;
 import size from "module_2" /* 2 */;

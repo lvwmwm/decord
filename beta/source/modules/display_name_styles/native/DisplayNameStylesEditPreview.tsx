@@ -1,10 +1,10 @@
-// Module ID: 17637
-// Function ID: 17638
+// Module ID: 17639
+// Function ID: 17640
 // Name: DisplayNameStylesEditPreview
-// Dependencies: [19, 17, 5307, 8542, 21, 5306, 575, 8541, 2111, 504, 9401, 9528, 1113, 3125, 10063, 17636, 7027, 9396, 5128, 1187, 8613, 10064, 10065, 5919, 2]
+// Dependencies: [19, 17, 5307, 8542, 21, 5306, 575, 8541, 2111, 504, 9401, 9528, 1113, 3125, 10063, 17638, 7027, 9396, 5128, 1187, 8613, 10064, 10065, 5919, 2]
 // Exports: default
 
-// Module 17637 (DisplayNameStylesEditPreview)
+// Module 17639 (DisplayNameStylesEditPreview)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;

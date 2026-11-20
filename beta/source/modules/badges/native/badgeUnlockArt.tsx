@@ -1,10 +1,10 @@
-// Module ID: 15283
-// Function ID: 15284
+// Module ID: 15285
+// Function ID: 15286
 // Name: badgeUnlockArt
 // Dependencies: [10117, 2]
 // Exports: getBadgeUnlockArt
 
-// Module 15283 (badgeUnlockArt)
+// Module 15285 (badgeUnlockArt)
 import BadgeDetailsUtils from "BadgeDetailsUtils" /* 10117 */;
 import size from "module_2" /* 2 */;
 

@@ -1,12 +1,12 @@
-// Module ID: 16202
-// Function ID: 16203
+// Module ID: 16204
+// Function ID: 16205
 // Name: requestReviewModal
-// Dependencies: [5, 3, 16203, 2]
+// Dependencies: [5, 3, 16205, 2]
 // Exports: default
 
-// Module 16202 (requestReviewModal)
+// Module 16204 (requestReviewModal)
 import LoggerDefault from "Logger" /* 3 */;
-import react_nativeDefault from "react-native" /* 16203 */;
+import react_nativeDefault from "react-native" /* 16205 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

@@ -1,16 +1,16 @@
-// Module ID: 13090
-// Function ID: 13091
+// Module ID: 13092
+// Function ID: 13093
 // Name: SpeakerTileStatuses
-// Dependencies: [19, 17, 2133, 5971, 6932, 21, 5306, 575, 504, 10597, 13050, 12836, 12837, 1187, 13091, 13092, 7634, 2]
+// Dependencies: [19, 17, 2133, 5971, 6932, 21, 5306, 575, 504, 10597, 13052, 12838, 12839, 1187, 13093, 13094, 7634, 2]
 // Exports: BlockedStatus, IgnoredStatus
 
-// Module 13090 (SpeakerTileStatuses)
+// Module 13092 (SpeakerTileStatuses)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1187 */;
 import AssetRegistryDefault from "AssetRegistry" /* 7634 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13092 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13094 */;
 import react from "react" /* 19 */;
 import MediaEngineStore from "MediaEngineStore" /* 2133 */;
 import VoiceStateStore from "VoiceStateStore" /* 5971 */;
@@ -64,15 +64,15 @@ const memoResult = react.memo(function VoiceStatus(userId) {
     flag2 = false;
   }
   if (stateFromStores) {
-    tmp7 = channelId(13050);
+    tmp7 = channelId(13052);
     flag3 = true;
   } else if (flag2) {
-    tmp7 = channelId(12836);
+    tmp7 = channelId(12838);
     flag3 = false;
   } else {
     flag3 = false;
     if (flag) {
-      tmp7 = channelId(12837);
+      tmp7 = channelId(12839);
       flag3 = false;
     }
   }
@@ -95,7 +95,7 @@ const memoResult1 = react.memo(function ModeratorStatus(userId) {
   const tmp = closure_8();
   const obj = userId(504);
   if (obj.useStateFromStores(items, () => StageChannelRoleStore.isModerator(userId, channelId), items1)) {
-    tmp4 = channelId(13091);
+    tmp4 = channelId(13093);
   }
   let tmp6 = null;
   if (null != tmp4) {

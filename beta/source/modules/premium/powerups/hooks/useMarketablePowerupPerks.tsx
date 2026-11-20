@@ -1,10 +1,10 @@
-// Module ID: 16002
-// Function ID: 16003
+// Module ID: 16004
+// Function ID: 16005
 // Name: useMarketablePowerupPerks
 // Dependencies: [19, 5513, 5514, 5517, 504, 10787, 5519, 2]
 // Exports: default
 
-// Module 16002 (useMarketablePowerupPerks)
+// Module 16004 (useMarketablePowerupPerks)
 import Powerups from "Powerups" /* 5517 */;
 import react from "react" /* 19 */;
 import GuildPowerupsStore from "GuildPowerupsStore" /* 5513 */;

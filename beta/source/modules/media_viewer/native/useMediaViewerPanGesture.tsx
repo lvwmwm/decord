@@ -1,10 +1,10 @@
-// Module ID: 15230
-// Function ID: 15231
+// Module ID: 15232
+// Function ID: 15233
 // Name: useMediaViewerPanGesture
 // Dependencies: [19, 1655, 8630, 8629, 5929, 1708, 7790, 5588, 2]
 // Exports: useMediaViewerPanGesture, useMediaViewerPanGestureConfig
 
-// Module 15230 (useMediaViewerPanGesture)
+// Module 15232 (useMediaViewerPanGesture)
 import _mod1708 from "module_1708" /* 1708 */;
 import LegacyBaseButton from "LegacyBaseButton" /* 5588 */;
 import spring_spring from "spring/spring" /* 5929 */;

@@ -70,8 +70,8 @@ function handleFormInit(type) {
     CLOSED = FormStates.OPEN;
     errors = {};
     c38 = null;
-    const obj5 = SnowflakeUtilsDefault;
-    roleId = obj5.castGuildIdAsEveryoneGuildRoleId(guildId);
+    const obj6 = SnowflakeUtilsDefault;
+    roleId = obj6.castGuildIdAsEveryoneGuildRoleId(guildId);
     NONE = guild.mfaLevel;
     obj = obj2;
     c12 = null;
@@ -83,15 +83,15 @@ function handleFormInit(type) {
       }
     }
     if (null != section) {
-      const items = [{ key: "landing", name: constants.LANDING }];
-      const obj3 = { key: "landing", name: constants.LANDING };
+      obj2 = { key: "landing", name: constants.LANDING };
+      const items = [obj2];
       if (section === constants.TAG_CUSTOMIZE) {
         const obj4 = { key: null, name: null };
-        ({ TAG: obj2.key, TAG: obj2.name } = constants);
+        ({ TAG: obj3.key, TAG: obj3.name } = constants);
         items.push(obj4);
       }
-      const obj6 = { key: section, name: section };
-      items.push(obj6);
+      const obj5 = { key: section, name: section };
+      items.push(obj5);
       c11 = { type: "stack", routes: items };
       const obj10 = { type: "stack", routes: items };
     }

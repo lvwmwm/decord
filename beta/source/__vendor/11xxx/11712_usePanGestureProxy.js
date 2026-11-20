@@ -47,7 +47,7 @@ export const usePanGestureProxy = (onConfigurePanGesture) => {
     const Gesture = LegacyBaseButton.Gesture;
     const PanResult = Gesture.Pan();
     const withTestIdResult = PanResult.withTestId("rnrc-gesture-handler");
-    let obj = { onBegin: "scales", onStart: "channel_id", onUpdate: "ddd", onEnd: "max", onFinalize: "channel_id" };
+    let obj = { onBegin: "Array", onStart: "channel_id", onUpdate: "s", onEnd: "warn", onFinalize: "HermesInternal" };
     withTestIdResult.onBegin = (onBegin) => {
       obj.onBegin = onBegin;
       return withTestIdResult;

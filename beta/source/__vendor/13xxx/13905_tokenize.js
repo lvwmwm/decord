@@ -1,44 +1,47 @@
 // Module ID: 13905
 // Function ID: 13906
 // Name: tokenize
-// Dependencies: [13831]
+// Dependencies: [13833, 13877]
 
 // Module 13905 (tokenize)
-import tokenize from "tokenize" /* 13831 */;
+import tokenize from "tokenize" /* 13833 */;
+import tokenize2 from "tokenize" /* 13877 */;
 
-let items;
-let obj2;
-const Comma = tokenize.TYPE.Comma;
-const obj = {
-  name: "SelectorList",
-  structure: obj2,
+function consumeRaw(arg0) {
+  return this.Raw(arg0, tokenize2.mode.leftCurlyBracket, true);
+}
+function consumePrelude() {
+  const self = this;
+  const SelectorListResult = this.SelectorList();
+  const tmp2 = "Raw" !== SelectorListResult.type && false === self.scanner.eof && self.scanner.tokenType !== LeftCurlyBracket;
+  if (tmp2) {
+    self.error();
+  }
+  return SelectorListResult;
+}
+const LeftCurlyBracket = tokenize.TYPE.LeftCurlyBracket;
+let obj = {
+  name: "Rule",
+  structure: { prelude: ["SelectorList", "Raw"], block: ["Block"] },
   parse() {
+    let BlockResult;
+    let parseWithFallbackResult;
     const self = this;
-    const list = this.createList();
-    if (!this.scanner.eof) {
-      list.push(self.Selector());
-      if (self.scanner.tokenType === Comma) {
-        const iter = self.scanner;
-        iter.next();
-        while (!self.scanner.eof) {
-          let arr3 = list.push(self.Selector());
-          if (self.scanner.tokenType !== Comma) {
-            break;
-          }
-        }
-      }
+    const tokenStart = this.scanner.tokenStart;
+    if (this.parseRulePrelude) {
+      parseWithFallbackResult = self.parseWithFallback(consumePrelude, consumeRaw);
+    } else {
+      parseWithFallbackResult = consumeRaw.call(self, tmp);
     }
-    const element = { type: "SelectorList", loc: self.getLocationFromList(list), children: list };
-    return element;
+    const obj = { type: "Rule", loc: self.getLocation(tokenStart, self.scanner.tokenStart), prelude: parseWithFallbackResult, block: BlockResult };
+    BlockResult = self.Block(true);
+    return obj;
   },
-  generate(arg0) {
-    this.children(arg0, function() {
-      this.chunk(",");
-    });
+  generate(prelude) {
+    this.node(prelude.prelude);
+    this.node(prelude.block);
   },
-  walkContext: "selector"
+  walkContext: "rule"
 };
-obj2 = { children: items };
-items = [["Selector", "Raw"]];
 
 export default obj;

@@ -1,10 +1,10 @@
-// Module ID: 20749
-// Function ID: 20750
+// Module ID: 20751
+// Function ID: 20752
 // Name: FormTrialIntervalPicker
-// Dependencies: [19, 21, 7443, 1113, 17850, 5542, 8009, 2121, 2]
+// Dependencies: [19, 21, 7443, 1113, 17852, 5542, 8009, 2121, 2]
 // Exports: default
 
-// Module 20749 (FormTrialIntervalPicker)
+// Module 20751 (FormTrialIntervalPicker)
 import Fragment from "Fragment" /* 21 */;
 import intl4 from "intl" /* 1113 */;
 import asyncRequire from "asyncRequire" /* 2121 */;
@@ -70,7 +70,7 @@ export default function FormTrialIntervalPicker(interval) {
     const intl3 = tmp2(1113).intl;
     stringResult = intl3.string(tmp2(1113).t.WZG1BU);
   } else {
-    const tmp2Result = tmp2(17850);
+    const tmp2Result = tmp2(17852);
     stringResult = tmp2Result.formatPlanIntervalDuration(interval);
   }
   return tmp(TableRow, obj);

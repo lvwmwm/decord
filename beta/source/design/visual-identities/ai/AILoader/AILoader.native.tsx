@@ -1,16 +1,16 @@
-// Module ID: 13349
-// Function ID: 13350
+// Module ID: 13351
+// Function ID: 13352
 // Name: AILoader
-// Dependencies: [19, 17, 13350, 21, 5306, 1655, 5538, 13351, 5367, 2]
+// Dependencies: [19, 17, 13352, 21, 5306, 1655, 5538, 13353, 5367, 2]
 
-// Module 13349 (AILoader)
+// Module 13351 (AILoader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import _mod1655 from "module_1655" /* 1655 */;
 import timing_timing from "timing/timing" /* 5538 */;
-import AIGlyphText from "AIGlyphText" /* 13351 */;
+import AIGlyphText from "AIGlyphText" /* 13353 */;
 import react from "react" /* 19 */;
-import AILoaderConstants from "AILoaderConstants" /* 13350 */;
+import AILoaderConstants from "AILoaderConstants" /* 13352 */;
 import createStyles from "createStyles" /* 5306 */;
 import size_mod from "module_2" /* 2 */;
 

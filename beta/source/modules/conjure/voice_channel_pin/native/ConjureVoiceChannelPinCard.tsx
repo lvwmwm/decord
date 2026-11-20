@@ -1,10 +1,10 @@
-// Module ID: 13638
-// Function ID: 13639
+// Module ID: 13640
+// Function ID: 13641
 // Name: ConjureVoiceChannelPinCard
-// Dependencies: [19, 17, 5177, 5248, 1388, 21, 5306, 575, 13639, 5919, 1113, 4131, 13211, 8033, 7746, 7443, 5944, 7455, 5542, 11964, 5926, 2]
+// Dependencies: [19, 17, 5177, 5248, 1388, 21, 5306, 575, 13641, 5919, 1113, 4131, 13213, 8033, 7746, 7443, 5944, 7455, 5542, 11964, 5926, 2]
 // Exports: default
 
-// Module 13638 (ConjureVoiceChannelPinCard)
+// Module 13640 (ConjureVoiceChannelPinCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1113 */;
@@ -12,8 +12,8 @@ import _modDef4131 from "module_4131" /* 4131 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5542 */;
 import Text_Text from "Text/Text" /* 5919 */;
 import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 11964 */;
-import ConjureNativeCardSurfaceDefault from "ConjureNativeCardSurface" /* 13211 */;
-import useConjureVoiceChannelPin from "useConjureVoiceChannelPin" /* 13639 */;
+import ConjureNativeCardSurfaceDefault from "ConjureNativeCardSurface" /* 13213 */;
+import useConjureVoiceChannelPin from "useConjureVoiceChannelPin" /* 13641 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 5177 */;
 import RelationshipStore from "RelationshipStore" /* 5248 */;
@@ -52,7 +52,7 @@ function ConjureVoiceChannelPinForm(projectId) {
   projectId = projectId.projectId;
   let tmp2 = channels;
   const tmp = closure_10();
-  let obj = channels(13639);
+  let obj = channels(13641);
   const conjureVoiceChannelPinForm = obj.useConjureVoiceChannelPinForm(projectId);
   ({ guildId, channels } = conjureVoiceChannelPinForm);
   const selected = conjureVoiceChannelPinForm.selected;
