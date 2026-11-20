@@ -1,21 +1,21 @@
-// Module ID: 19765
-// Function ID: 19766
+// Module ID: 19583
+// Function ID: 19584
 // Name: AssetChooser
-// Dependencies: [5, 19, 17, 1072, 21, 4792, 575, 4853, 8355, 6911, 1113, 5479, 19766, 19767, 1187, 2]
+// Dependencies: [5, 19, 17, 1071, 21, 4794, 575, 4855, 8354, 6910, 1112, 5481, 19584, 19585, 1186, 2]
 
-// Module 19765 (AssetChooser)
+// Module 19583 (AssetChooser)
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import intl3 from "intl" /* 1113 */;
-import native from "native" /* 4853 */;
-import FastImageDefault from "FastImage" /* 5479 */;
-import Pressables from "Pressables" /* 6911 */;
-import AssetRegistryDefault from "AssetRegistry" /* 19767 */;
+import Constants from "Constants" /* 1071 */;
+import intl3 from "intl" /* 1112 */;
+import native from "native" /* 4855 */;
+import FastImageDefault from "FastImage" /* 5481 */;
+import Pressables from "Pressables" /* 6910 */;
+import AssetRegistryDefault from "AssetRegistry" /* 19585 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let c2, c3;
@@ -59,7 +59,7 @@ class AssetChooser extends PureComponent {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -110,7 +110,7 @@ class AssetChooser extends PureComponent {
               }
             }
             c3 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp15) {
           c3 = 3;
@@ -161,7 +161,7 @@ class AssetChooser extends PureComponent {
     const tmp10 = FastImageDefault;
     const tmp4 = React4;
     if (null == source) {
-      tmp9Result = tmp9(19766);
+      tmp9Result = tmp9(19584);
     }
     items = [, ];
     const obj3 = { source: tmp9Result, style: tmp.assetImage };
@@ -181,8 +181,8 @@ class AssetChooser extends PureComponent {
       if (!disabled) {
         const obj6 = { accessibilityRole: "button", onPress: this.handleRemoveAsset, children: metroImportDefault(LegacyText, obj7) };
         obj7 = { style: tmp.remove, children: intl2.string(intl3.t.N86XcP) };
-        LegacyText = tmp6(1187).LegacyText;
-        intl2 = tmp6(1113).intl;
+        LegacyText = tmp6(1186).LegacyText;
+        intl2 = tmp6(1112).intl;
         tmp5Result2 = tmp5(hasOwnProperty, obj6);
       }
     }

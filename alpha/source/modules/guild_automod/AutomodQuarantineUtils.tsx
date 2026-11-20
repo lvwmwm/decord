@@ -1,24 +1,24 @@
-// Module ID: 12318
-// Function ID: 12319
+// Module ID: 12288
+// Function ID: 12289
 // Name: AutomodQuarantineUtils
-// Dependencies: [19, 9305, 502, 4704, 4663, 4724, 4825, 1072, 4710, 1082, 563, 4730, 1113, 9306, 9307, 8075, 2]
+// Dependencies: [19, 9305, 502, 4706, 4665, 4726, 4827, 1071, 4712, 1081, 563, 4732, 1112, 9306, 9307, 8074, 2]
 // Exports: useCurrentUserHasAutomodQuarantinedProfile, useGuildAutomodProfileQuarantineErrors, useOpenFixQuarantinedProfileModal
 
-// Module 12318 (AutomodQuarantineUtils)
-import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
-import intl4 from "intl" /* 1113 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 4710 */;
-import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4730 */;
-import openUserSettings2 from "openUserSettings" /* 8075 */;
+// Module 12288 (AutomodQuarantineUtils)
+import UserSettingsConstants from "UserSettingsConstants" /* 1081 */;
+import intl4 from "intl" /* 1112 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4712 */;
+import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4732 */;
+import openUserSettings2 from "openUserSettings" /* 8074 */;
 import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 9307 */;
 import react from "react" /* 19 */;
 import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 9305 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 4704 */;
-import GuildStore from "GuildStore" /* 4663 */;
-import PermissionStore from "PermissionStore" /* 4724 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4825 */;
-import Constants from "Constants" /* 1072 */;
+import GuildMemberStore from "GuildMemberStore" /* 4706 */;
+import GuildStore from "GuildStore" /* 4665 */;
+import PermissionStore from "PermissionStore" /* 4726 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4827 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -58,7 +58,7 @@ export function useGuildAutomodProfileQuarantineErrors(id) {
     if (id == null) {
       guildId = SelectedGuildStore.getGuildId();
     }
-    const obj = { nick: "Array", bio: "Path" };
+    const obj = { nick: "Array", bio: "analyticsLocations" };
     const guild = GuildStore.getGuild(guildId);
     if (null != guild) {
       if (null != guildId) {
@@ -75,10 +75,10 @@ export function useGuildAutomodProfileQuarantineErrors(id) {
           if (automodQuarantinedProfileFlags.has(GuildMemberFlags.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME)) {
             let items1;
             if (null == tmp) {
-              const intl2 = tmp8(1113).intl;
+              const intl2 = tmp8(1112).intl;
               const formatToPlainString = intl2.formatToPlainString;
               let str = guild.name;
-              const WBUh3O = tmp8(1113).t.WBUh3O;
+              const WBUh3O = tmp8(1112).t.WBUh3O;
               if (str == null) {
                 str = "";
               }
@@ -86,13 +86,13 @@ export function useGuildAutomodProfileQuarantineErrors(id) {
               const items = [formatToPlainString(WBUh3O, obj2)];
               items1 = items;
             } else {
-              const intl = tmp8(1113).intl;
+              const intl = tmp8(1112).intl;
               items1 = [intl.string(intl4.t.EPZCrM)];
             }
             obj.nick = items1;
           }
           if (automodQuarantinedProfileFlags.has(tmp11.AUTOMOD_QUARANTINED_BIO)) {
-            const intl3 = tmp8(1113).intl;
+            const intl3 = tmp8(1112).intl;
             const items2 = [intl3.string(intl4.t.dZh1vz)];
             obj.bio = items2;
           }

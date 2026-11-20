@@ -1,27 +1,27 @@
-// Module ID: 10886
-// Function ID: 10887
+// Module ID: 10828
+// Function ID: 10829
 // Name: PremiumFeatureUpsell
-// Dependencies: [19, 17, 5533, 1390, 1072, 8831, 21, 8428, 2174, 1113, 4792, 575, 10397, 10887, 1256, 8426, 10888, 1187, 10889, 10885, 5383, 8832, 5347, 1092, 5393, 5394, 7401, 10674, 10536, 1655, 8827, 2]
+// Dependencies: [19, 17, 5535, 1388, 1071, 8831, 21, 8427, 2172, 1112, 4794, 575, 10339, 10829, 1255, 8425, 10830, 1186, 10831, 10827, 5385, 8832, 5349, 1091, 5395, 5396, 7400, 10616, 10478, 1653, 8827, 2]
 // Exports: default
 
-// Module 10886 (PremiumFeatureUpsell)
+// Module 10828 (PremiumFeatureUpsell)
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import ConstantsIOS from "ConstantsIOS" /* 1092 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import PremiumUtils from "PremiumUtils" /* 2174 */;
-import LinearGradientDefault from "LinearGradient" /* 5347 */;
-import spring_spring from "spring/spring" /* 5393 */;
-import springPresets from "springPresets" /* 5394 */;
-import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 8426 */;
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 8428 */;
+import Constants from "Constants" /* 1071 */;
+import ConstantsIOS from "ConstantsIOS" /* 1091 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import PremiumUtils from "PremiumUtils" /* 2172 */;
+import LinearGradientDefault from "LinearGradient" /* 5349 */;
+import spring_spring from "spring/spring" /* 5395 */;
+import springPresets from "springPresets" /* 5396 */;
+import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 8425 */;
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 8427 */;
 import ColorConstants from "ColorConstants" /* 8831 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5533 */;
-import PremiumConstants from "PremiumConstants" /* 1390 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5535 */;
+import PremiumConstants from "PremiumConstants" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -153,7 +153,7 @@ function PremiumFeatureUpsellPill(featureName) {
       } else {
         const items1 = [closure_3.nitroWheelButton, ];
         let nitroWheelDisabled = loading;
-        const NitroWheel = tmp2(1187).NitroWheel;
+        const NitroWheel = tmp2(1186).NitroWheel;
         if (loading) {
           nitroWheelDisabled = closure_3.nitroWheelDisabled;
         }

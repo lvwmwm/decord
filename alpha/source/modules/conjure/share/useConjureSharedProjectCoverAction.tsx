@@ -1,11 +1,11 @@
-// Module ID: 12216
-// Function ID: 12217
+// Module ID: 12158
+// Function ID: 12159
 // Name: useConjureSharedProjectCoverAction
-// Dependencies: [19, 12217, 12218, 10626, 2]
+// Dependencies: [19, 12159, 12160, 10568, 2]
 // Exports: default
 
-// Module 12216 (useConjureSharedProjectCoverAction)
-import openFrameDefault from "openFrame" /* 10626 */;
+// Module 12158 (useConjureSharedProjectCoverAction)
+import openFrameDefault from "openFrame" /* 10568 */;
 import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

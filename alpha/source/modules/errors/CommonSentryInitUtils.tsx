@@ -1,10 +1,10 @@
-// Module ID: 1373
-// Function ID: 1374
+// Module ID: 1371
+// Function ID: 1372
 // Name: CommonSentryInitUtils
 // Dependencies: [2]
 // Exports: filterThrottle
 
-// Module 1373 (CommonSentryInitUtils)
+// Module 1371 (CommonSentryInitUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/errors/CommonSentryInitUtils.tsx");

@@ -1,13 +1,13 @@
-// Module ID: 13224
-// Function ID: 13225
+// Module ID: 13194
+// Function ID: 13195
 // Name: ScheduledMessageDraftCoachmark
-// Dependencies: [19, 4638, 21, 1113, 13225, 8967, 2]
+// Dependencies: [19, 4640, 21, 1112, 13195, 8967, 2]
 // Exports: default
 
-// Module 13224 (ScheduledMessageDraftCoachmark)
+// Module 13194 (ScheduledMessageDraftCoachmark)
 import Fragment from "Fragment" /* 21 */;
-import intl3 from "intl" /* 1113 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4638 */;
+import intl3 from "intl" /* 1112 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4640 */;
 import useCoachmark from "useCoachmark" /* 8967 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

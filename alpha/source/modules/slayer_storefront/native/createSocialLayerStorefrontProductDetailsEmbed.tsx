@@ -1,31 +1,31 @@
-// Module ID: 14224
-// Function ID: 14225
+// Module ID: 14194
+// Function ID: 14195
 // Name: createSocialLayerStorefrontProductDetailsEmbed
-// Dependencies: [17, 2165, 6837, 8863, 502, 1388, 6553, 8319, 10351, 1390, 8561, 1113, 13402, 6733, 6728, 3989, 14222, 11902, 2174, 6740, 8839, 14223, 8857, 8855, 11904, 2]
+// Dependencies: [17, 2163, 6837, 8863, 502, 1386, 6555, 8318, 10293, 1388, 8560, 1112, 13372, 6733, 6728, 3991, 14192, 11844, 2172, 6740, 8839, 14193, 8857, 8855, 11846, 2]
 // Exports: createSocialLayerStorefrontProductDetailsEmbed
 
-// Module 14224 (createSocialLayerStorefrontProductDetailsEmbed)
+// Module 14194 (createSocialLayerStorefrontProductDetailsEmbed)
 import react_native from "react-native" /* 17 */;
-import intl6 from "intl" /* 1113 */;
-import PremiumConstants from "PremiumConstants" /* 1390 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2174 */;
+import intl6 from "intl" /* 1112 */;
+import PremiumConstants from "PremiumConstants" /* 1388 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2172 */;
 import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 6728 */;
 import StorefrontUtils from "StorefrontUtils" /* 6733 */;
 import OrbCheckoutUtils from "OrbCheckoutUtils" /* 6740 */;
-import Constants from "Constants" /* 8319 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8561 */;
-import CodedLinksConstants from "CodedLinksConstants" /* 10351 */;
-import socialLayerStorefrontEmbedPrice2 from "socialLayerStorefrontEmbedPrice" /* 11902 */;
-import SocialLayerStorefrontMobileEmbedExperiment from "SocialLayerStorefrontMobileEmbedExperiment" /* 11904 */;
-import isSocialLayerApplicationDefault from "isSocialLayerApplication" /* 13402 */;
-import getSocialLayerStorefrontSkuEmbedDetails from "getSocialLayerStorefrontSkuEmbedDetails" /* 14222 */;
-import socialLayerStorefrontEmbedColors from "socialLayerStorefrontEmbedColors" /* 14223 */;
-import ApplicationStore from "ApplicationStore" /* 2165 */;
+import Constants from "Constants" /* 8318 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8560 */;
+import CodedLinksConstants from "CodedLinksConstants" /* 10293 */;
+import socialLayerStorefrontEmbedPrice2 from "socialLayerStorefrontEmbedPrice" /* 11844 */;
+import SocialLayerStorefrontMobileEmbedExperiment from "SocialLayerStorefrontMobileEmbedExperiment" /* 11846 */;
+import isSocialLayerApplicationDefault from "isSocialLayerApplication" /* 13372 */;
+import getSocialLayerStorefrontSkuEmbedDetails from "getSocialLayerStorefrontSkuEmbedDetails" /* 14192 */;
+import socialLayerStorefrontEmbedColors from "socialLayerStorefrontEmbedColors" /* 14193 */;
+import ApplicationStore from "ApplicationStore" /* 2163 */;
 import UserProfileStore from "UserProfileStore" /* 6837 */;
 import WishlistStore from "WishlistStore" /* 8863 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import UserStore from "UserStore" /* 1388 */;
-import SKUStore from "SKUStore" /* 6553 */;
+import UserStore from "UserStore" /* 1386 */;
+import SKUStore from "SKUStore" /* 6555 */;
 import size from "module_2" /* 2 */;
 
 const Image = react_native.Image;
@@ -75,7 +75,7 @@ export function createSocialLayerStorefrontProductDetailsEmbed(arg0) {
       name = application.name;
     }
     if (name == null) {
-      const intl4 = tmp(1113).intl;
+      const intl4 = tmp(1112).intl;
       const str5 = intl4.string(intl6.t.vyaWs7);
       name = str5.toUpperCase();
     }
@@ -128,9 +128,9 @@ export function createSocialLayerStorefrontProductDetailsEmbed(arg0) {
                 ({ badgeText: obj14.overlayBadgeText, badgeIconUrl: obj14.overlayBadgeIconUrl } = socialLayerStorefrontSkuEmbedDetails);
                 tmpResult9 = socialLayerStorefrontEmbedColors;
                 tmpResult10 = socialLayerStorefrontEmbedColors;
-                const intl5 = tmp(1113).intl;
+                const intl5 = tmp(1112).intl;
                 string2 = intl5.string;
-                t = tmp(1113).t;
+                t = tmp(1112).t;
                 tmp36 = obj4;
               } else {
                 tmp36 = null;
@@ -164,7 +164,7 @@ export function createSocialLayerStorefrontProductDetailsEmbed(arg0) {
       name1 = application1.name;
     }
     if (name1 == null) {
-      const intl = tmp(1113).intl;
+      const intl = tmp(1112).intl;
       const str = intl.string(intl6.t.vyaWs7);
       name1 = str.toUpperCase();
     }
@@ -190,13 +190,13 @@ export function createSocialLayerStorefrontProductDetailsEmbed(arg0) {
                 }
                 const obj6 = { headerText: name1, headerColor: colors.headerColor, titleText: value.name, titleColor: colors.titleColor, subtitle: intl2.string(intl6.t.V91tvy), subtitleColor: colors.subtitleColor, thumbnailUrl: str1, thumbnailBackgroundColor: colors.thumbnailBackgroundColor, acceptLabelText: stringResult, acceptLabelColor: prop, acceptLabelBackgroundColor: result2 ? colors.acceptLabelGreenBackgroundColor : colors.acceptBlurpleLabelBackgroundColor, embedCanBeTapped: true, canBeAccepted: true, type: InviteTypes.GUILD };
                 const merged2 = Object.assign(baseColors);
-                intl2 = tmp(1113).intl;
-                const intl3 = tmp(1113).intl;
+                intl2 = tmp(1112).intl;
+                const intl3 = tmp(1112).intl;
                 const string = intl3.string;
                 if (result2) {
-                  stringResult = string(tmp(1113).t.boqtTA);
+                  stringResult = string(tmp(1112).t.boqtTA);
                 } else {
-                  stringResult = string(tmp4(3989).BKf0MM);
+                  stringResult = string(tmp4(3991).BKf0MM);
                 }
                 prop = undefined;
                 if (result2) {

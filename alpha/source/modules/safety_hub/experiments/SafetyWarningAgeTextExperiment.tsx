@@ -1,11 +1,11 @@
-// Module ID: 14254
-// Function ID: 14255
+// Module ID: 14224
+// Function ID: 14225
 // Name: SafetyWarningAgeTextExperiment
-// Dependencies: [1452, 2]
+// Dependencies: [1450, 2]
 // Exports: getIsSafetyWarningAgeTextEnabled, useIsSafetyWarningAgeTextEnabled
 
-// Module 14254 (SafetyWarningAgeTextExperiment)
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+// Module 14224 (SafetyWarningAgeTextExperiment)
+import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2026-09-safety-warning-age-text", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };

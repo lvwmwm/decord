@@ -1,16 +1,16 @@
-// Module ID: 17562
-// Function ID: 17563
+// Module ID: 17389
+// Function ID: 17390
 // Name: useAppFrame
-// Dependencies: [17, 4792, 575, 1630, 4971, 4749, 2]
+// Dependencies: [17, 4794, 575, 1628, 4973, 4751, 2]
 // Exports: default
 
-// Module 17562 (useAppFrame)
+// Module 17389 (useAppFrame)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import DeviceUtils from "DeviceUtils" /* 4749 */;
-import useChatLayoutDefault from "useChatLayout" /* 4971 */;
-import createStyles from "createStyles" /* 4792 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
+import DeviceUtils from "DeviceUtils" /* 4751 */;
+import useChatLayoutDefault from "useChatLayout" /* 4973 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const StyleSheet = react_native.StyleSheet;

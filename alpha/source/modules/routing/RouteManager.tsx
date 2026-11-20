@@ -1,15 +1,15 @@
-// Module ID: 13653
-// Function ID: 13654
+// Module ID: 13623
+// Function ID: 13624
 // Name: RouteManager
-// Dependencies: [6273, 13654, 1072, 1099, 13655, 673, 2]
+// Dependencies: [6275, 13624, 1071, 1098, 13625, 673, 2]
 
-// Module 13653 (RouteManager)
+// Module 13623 (RouteManager)
 import addSentryBreadcrumbDefault from "addSentryBreadcrumb" /* 673 */;
-import Constants from "Constants" /* 1072 */;
-import router_utils from "router_utils" /* 1099 */;
-import convertRouteToNavigation from "convertRouteToNavigation" /* 13655 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6273 */;
-import KeybindRouterStore from "KeybindRouterStore" /* 13654 */;
+import Constants from "Constants" /* 1071 */;
+import router_utils from "router_utils" /* 1098 */;
+import convertRouteToNavigation from "convertRouteToNavigation" /* 13625 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6275 */;
+import KeybindRouterStore from "KeybindRouterStore" /* 13624 */;
 import size from "module_2" /* 2 */;
 
 function handleConnectionChange() {
@@ -29,7 +29,7 @@ function handleRouteChange(pathname, REPLACE) {
       obj = convertRouteToNavigation;
       const tmp2 = require;
       if (!obj.convertRouteToNavigation(pathname)) {
-        const tmp2Result = tmp2(1099);
+        const tmp2Result = tmp2(1098);
         tmp2Result.replaceWith(Routes.ME);
       }
     }
@@ -111,7 +111,7 @@ class RouteManager {
           let obj3 = { message: "RouteManager.handleRouteChange: A route rewrite is replacing the current route", data: obj4 };
           obj4 = { replacePath: tmp7Result.path, previousPath: pathname };
           let tmp14 = addSentryBreadcrumbDefault(obj3);
-          let tmp9Result = tmp9(1099);
+          let tmp9Result = tmp9(1098);
           let replaceWithResult = tmp9Result.replaceWith(tmp7Result.path, tmp7Result.state);
           obj.return();
           let flag = true;
@@ -162,7 +162,7 @@ class RouteManager {
       const tmp3 = voiceRouteRewriter(_location, obj2.getHistory().action);
       const tmp = require;
       if (null != tmp3) {
-        const tmpResult = tmp(1099);
+        const tmpResult = tmp(1098);
         tmpResult.replaceWith(tmp3.path, tmp3.state);
       }
     }

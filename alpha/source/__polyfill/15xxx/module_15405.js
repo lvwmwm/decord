@@ -1,23 +1,30 @@
 // Module ID: 15405
 // Function ID: 15406
-// Dependencies: [15395, 15398]
-// Exports: LookupSupportedLocales
+// Dependencies: [15318, 15406]
+// Exports: getSupportedTimeZones
 
 // Module 15405
-import _mod15395 from "module_15395" /* 15395 */;
-import BestAvailableLocale from "BestAvailableLocale" /* 15398 */;
+const require = globalThis.__r;
+let _require;
 
 
-export function LookupSupportedLocales(arg0, arg1) {
-  let num;
-  const items = [];
-  for (let num = 0; num < arg1.length; num = num + 1) {
-    let str = arg1[num];
-    let replaced = str.replace(_mod15395.UNICODE_EXTENSION_SEQUENCE_REGEX, "");
-    let BestAvailableLocaleResult = BestAvailableLocale.BestAvailableLocale(arg0, replaced);
-    if (BestAvailableLocaleResult) {
-      let arr = items.push(BestAvailableLocaleResult);
+export function getSupportedTimeZones(locale) {
+  _require = locale;
+  const timezones = require("module_15406").timezones;
+  return timezones.filter((item) => {
+    function isSupported(timeZone, arg1) {
+      let str = arg1;
+      if (undefined === arg1) {
+        str = "en";
+      }
+      try {
+        const obj = { timeZone };
+        const memoizedDateTimeFormat = locale(closure_1_1[0]).createMemoizedDateTimeFormat(str, obj);
+        return memoizedDateTimeFormat.resolvedOptions().timeZone === timeZone;
+      } catch (err) {
+        return false;
+      }
     }
-  }
-  return items;
+    return isSupported(item, locale);
+  });
 }

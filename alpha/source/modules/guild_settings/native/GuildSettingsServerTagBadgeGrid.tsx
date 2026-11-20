@@ -1,20 +1,20 @@
-// Module ID: 19870
-// Function ID: 19871
+// Module ID: 19690
+// Function ID: 19691
 // Name: GuildSettingsServerTagBadgeGrid
-// Dependencies: [19, 17, 7881, 21, 575, 4792, 19871, 13278, 5808, 5383, 1113, 19872, 19873, 15044, 7446, 2]
+// Dependencies: [19, 17, 7880, 21, 575, 4794, 19691, 13248, 5810, 5385, 1112, 19692, 19693, 15008, 7445, 2]
 // Exports: default
 
-// Module 19870 (GuildSettingsServerTagBadgeGrid)
+// Module 19690 (GuildSettingsServerTagBadgeGrid)
 import nativeDefault from "native" /* 575 */;
-import GuildTagConstants from "GuildTagConstants" /* 7881 */;
-import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 13278 */;
-import useGuildTagBadgeCollectionDefault from "useGuildTagBadgeCollection" /* 19871 */;
-import GuildSettingsServerTagPickerCellDefault from "GuildSettingsServerTagPickerCell" /* 19872 */;
-import getGuildTagBadgeLabelDefault from "getGuildTagBadgeLabel" /* 19873 */;
+import GuildTagConstants from "GuildTagConstants" /* 7880 */;
+import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 13248 */;
+import useGuildTagBadgeCollectionDefault from "useGuildTagBadgeCollection" /* 19691 */;
+import GuildSettingsServerTagPickerCellDefault from "GuildSettingsServerTagPickerCell" /* 19692 */;
+import getGuildTagBadgeLabelDefault from "getGuildTagBadgeLabel" /* 19693 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;
@@ -56,10 +56,10 @@ export default function GuildSettingsServerTagBadgeGrid(guildId) {
     openGuildPowerupsModalDefault(obj);
   }, items);
   let obj = { spacing: nativeDefault.space.PX_8, children: items1 };
-  const Stack = guildId(5808).Stack;
-  const obj2 = { variant: "body-md/medium", color: "text-subtle", accessibilityRole: "header", children: intl.string(guildId(1113).t.wRnfnY) };
-  const Text = guildId(5383).Text;
-  intl = guildId(1113).intl;
+  const Stack = guildId(5810).Stack;
+  const obj2 = { variant: "body-md/medium", color: "text-subtle", accessibilityRole: "header", children: intl.string(guildId(1112).t.wRnfnY) };
+  const Text = guildId(5385).Text;
+  intl = guildId(1112).intl;
   items1 = [closure_7(Text, obj2), , ];
   const obj3 = {
     accessibilityRole: "radiogroup",
@@ -83,8 +83,8 @@ export default function GuildSettingsServerTagBadgeGrid(guildId) {
   let tmp6Result = lockedBadges.length > 0;
   const tmp9 = closure_5;
   if (tmp6Result) {
-    const obj4 = { accessibilityRole: "button", accessibilityLabel: intl2.string(guildId(1113).t.U5p3GZ), onPress: callback, style: tmp.upsellCard, children: items2 };
-    intl2 = tmp7(1113).intl;
+    const obj4 = { accessibilityRole: "button", accessibilityLabel: intl2.string(guildId(1112).t.U5p3GZ), onPress: callback, style: tmp.upsellCard, children: items2 };
+    intl2 = tmp7(1112).intl;
     const obj5 = {
       style: tmp.upsellPreview,
       children: substr.map((badge) => {
@@ -94,12 +94,12 @@ export default function GuildSettingsServerTagBadgeGrid(guildId) {
     };
     substr = lockedBadges.slice(0, 10);
     items2 = [closure_7(tmp9, obj5), , ];
-    const obj6 = { variant: "body-md/medium", color: "text-subtle", style: tmp.upsellText, children: intl3.string(guildId(1113).t.U5p3GZ) };
-    const Text2 = tmp7(5383).Text;
-    intl3 = tmp7(1113).intl;
+    const obj6 = { variant: "body-md/medium", color: "text-subtle", style: tmp.upsellText, children: intl3.string(guildId(1112).t.U5p3GZ) };
+    const Text2 = tmp7(5385).Text;
+    intl3 = tmp7(1112).intl;
     items2[1] = closure_7(Text2, obj6);
     const obj7 = { size: "md", color: nativeDefault.colors.ICON_SUBTLE };
-    const ChevronSmallRightIcon = tmp7(7446).ChevronSmallRightIcon;
+    const ChevronSmallRightIcon = tmp7(7445).ChevronSmallRightIcon;
     items2[2] = closure_7(ChevronSmallRightIcon, obj7);
     tmp6Result = tmp6(closure_4, obj4);
   }

@@ -1,13 +1,13 @@
-// Module ID: 14803
-// Function ID: 14804
+// Module ID: 14767
+// Function ID: 14768
 // Name: InputHost
-// Dependencies: [5, 3, 14801, 14804, 14805, 5539, 2]
+// Dependencies: [5, 3, 14766, 14768, 14769, 5541, 2]
 
-// Module 14803 (InputHost)
+// Module 14767 (InputHost)
 import LoggerDefault from "Logger" /* 3 */;
-import RTCConnection from "RTCConnection" /* 5539 */;
-import InputEvent from "InputEvent" /* 14801 */;
-import PassTheControllerExperimentDefault from "PassTheControllerExperiment" /* 14805 */;
+import RTCConnection from "RTCConnection" /* 5541 */;
+import InputEvent from "InputEvent" /* 14766 */;
+import PassTheControllerExperimentDefault from "PassTheControllerExperiment" /* 14769 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -73,7 +73,7 @@ class InputHost {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -110,7 +110,7 @@ class InputHost {
           } else {
             pid.hook = value;
             c2 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp9) {
           c2 = 3;

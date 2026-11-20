@@ -1,17 +1,17 @@
-// Module ID: 19335
-// Function ID: 19336
+// Module ID: 19155
+// Function ID: 19156
 // Name: VoicePanelNoStageSpeakersCard
-// Dependencies: [19, 21, 4792, 575, 7205, 5383, 1113, 4219, 2]
+// Dependencies: [19, 21, 4794, 575, 7204, 5385, 1112, 4221, 2]
 
-// Module 19335 (VoicePanelNoStageSpeakersCard)
+// Module 19155 (VoicePanelNoStageSpeakersCard)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1113 */;
-import _modDef4219 from "module_4219" /* 4219 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import NativeViewDefault from "NativeView" /* 7205 */;
+import intl2 from "intl" /* 1112 */;
+import _modDef4221 from "module_4221" /* 4221 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import NativeViewDefault from "NativeView" /* 7204 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let size;
@@ -22,7 +22,7 @@ let closure_4 = createStyles.createStyles(obj);
 const memoResult = react.memo(function VoicePanelNoStageSpeakersCard() {
   let intl;
   const tmp = closure_4();
-  ({ style: tmp.label, variant: "heading-sm/semibold", color: "text-overlay-light", children: intl.string(_modDef4219["P63Z/o"]) });
+  ({ style: tmp.label, variant: "heading-sm/semibold", color: "text-overlay-light", children: intl.string(_modDef4221["P63Z/o"]) });
   NativeViewDefault;
   const Heading = Text_Text.Heading;
   intl = intl2.intl;

@@ -1,11 +1,11 @@
 // Module ID: 9400
 // Function ID: 9401
-// Dependencies: [19, 21, 1655]
+// Dependencies: [19, 21, 1653]
 // Exports: GlobalStateProvider, useGlobalState
 
 // Module 9400
 import Fragment from "Fragment" /* 21 */;
-import _mod1655 from "module_1655" /* 1655 */;
+import _mod1653 from "module_1653" /* 1653 */;
 import react from "react" /* 19 */;
 
 const jsx = Fragment.jsx;
@@ -21,9 +21,9 @@ export const GlobalStateProvider = (value) => {
   let tmp6;
   value = value.value;
   const children = value.children;
-  let obj = _mod1655;
+  let obj = _mod1653;
   const sharedValue = obj.useSharedValue({ width: 0, height: 0 });
-  const obj2 = _mod1655;
+  const obj2 = _mod1653;
   const sharedValue1 = obj2.useSharedValue({});
   const items = [closure_5, sharedValue1];
   [tmp3, tmp4] = items;

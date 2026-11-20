@@ -1,16 +1,16 @@
-// Module ID: 18334
-// Function ID: 18335
+// Module ID: 18165
+// Function ID: 18166
 // Name: useConjureProjectServerChange
-// Dependencies: [5, 32, 19, 6500, 18335, 504, 6719, 6814, 12295, 18336, 1113, 4089, 2]
+// Dependencies: [5, 32, 19, 6502, 18166, 504, 6719, 6814, 12265, 18167, 1112, 4091, 18168, 2]
 // Exports: default, useConjureProjectServerCandidates
 
-// Module 18334 (useConjureProjectServerChange)
+// Module 18165 (useConjureProjectServerChange)
 import ConjureActionCreators from "ConjureActionCreators" /* 6814 */;
-import conjureChangeRows from "conjureChangeRows" /* 18336 */;
+import conjureChangeRows from "conjureChangeRows" /* 18167 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6500 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6502 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -112,7 +112,7 @@ export default function useConjureProjectServerChange(id) {
     closure_7(arg0);
     closure_10(null);
   }, []);
-  const items7 = [str, found, conjureRemoveTarget, moving, id];
+  const items7 = [str, found, conjureRemoveTarget, moving, stateFromStores, id];
   let obj5 = {
     appName: str,
     moving,
@@ -137,7 +137,7 @@ export default function useConjureProjectServerChange(id) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -181,22 +181,22 @@ export default function useConjureProjectServerChange(id) {
                 message = body.message;
               }
             }
-            const tmp12 = closure_129_10;
+            const tmp27 = closure_129_10;
             if (typeof message === "string") {
               stringResult = message;
             } else {
               let qDjkvv;
               const intl2 = id(body[10]).intl;
               const string = intl2.string;
-              const tmp55 = tmp(body[11]);
+              const tmp64 = tmp(body[11]);
               if (closure_129_2) {
-                qDjkvv = tmp55.mdrXGt;
+                qDjkvv = tmp64.mdrXGt;
               } else {
-                qDjkvv = tmp55.qDjkvv;
+                qDjkvv = tmp64.qDjkvv;
               }
               stringResult = string(qDjkvv);
             }
-            tmp12(stringResult);
+            tmp27(stringResult);
             closure_129_4(null);
             closure_129_9(false);
             c5 = 3;
@@ -213,24 +213,28 @@ export default function useConjureProjectServerChange(id) {
             let yHhjsi;
             c3 = 0;
             closure_129_9(false);
+            const tmp6 = null == closure_129_1 || closure_129_2;
+            if (!tmp6) {
+              tmp(body[12])(closure_129_1, "added");
+            }
             const intl = id(body[10]).intl;
             const formatToPlainString = intl.formatToPlainString;
-            const tmp48 = tmp(body[11]);
+            const tmp19 = tmp(body[11]);
             if (closure_129_2) {
-              yHhjsi = tmp48["B+Xtjy"];
+              yHhjsi = tmp19["B+Xtjy"];
             } else {
-              yHhjsi = tmp48.yHhjsi;
+              yHhjsi = tmp19.yHhjsi;
             }
             const obj = { app: closure_129_11, server: closure_129_8.name };
             c5 = 3;
             const obj8 = { value: formatToPlainString(yHhjsi, obj), done: true };
             return obj8;
           }
-        } catch (tmp32) {
-          body = tmp32;
+        } catch (tmp47) {
+          body = tmp47;
           if (0 === c3) {
             c5 = 3;
-            throw tmp32;
+            throw tmp47;
           } else {
             c4 = 1;
           }

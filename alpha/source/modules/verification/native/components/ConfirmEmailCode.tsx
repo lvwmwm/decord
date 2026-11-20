@@ -1,19 +1,19 @@
-// Module ID: 7249
-// Function ID: 7250
+// Module ID: 7248
+// Function ID: 7249
 // Name: ConfirmEmailCode
-// Dependencies: [5, 32, 19, 17, 1388, 7225, 21, 4792, 575, 504, 6229, 5383, 1113, 7100, 7250, 5474, 5390, 2]
+// Dependencies: [5, 32, 19, 17, 1386, 7224, 21, 4794, 575, 504, 6231, 5385, 1112, 7099, 7249, 5476, 5392, 2]
 // Exports: default
 
-// Module 7249 (ConfirmEmailCode)
+// Module 7248 (ConfirmEmailCode)
 import nativeDefault from "native" /* 575 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1388 */;
-import ChangeEmailStore from "ChangeEmailStore" /* 7225 */;
+import UserStore from "UserStore" /* 1386 */;
+import ChangeEmailStore from "ChangeEmailStore" /* 7224 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let _undefined, c4;
@@ -87,7 +87,7 @@ export default function ConfirmEmailCode(onFormSubmit) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -148,7 +148,7 @@ export default function ConfirmEmailCode(onFormSubmit) {
           c3 = 0;
           closure_129_5(false);
           _undefined = 3;
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp39) {
         onResend = tmp39;
@@ -197,7 +197,7 @@ export default function ConfirmEmailCode(onFormSubmit) {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "HermesInternal", done: "+60" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             let c3;
@@ -251,7 +251,7 @@ export default function ConfirmEmailCode(onFormSubmit) {
                   c3 = 0;
                 }
                 c5 = 3;
-                return { value: "HermesInternal", done: "+60" };
+                return { value: "HermesInternal", done: null };
               }
             } catch (tmp29) {
               onResend = tmp29;

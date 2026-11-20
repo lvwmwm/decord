@@ -1,10 +1,10 @@
 // Module ID: 12918
 // Function ID: 12919
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 12918 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "c5aa55bc0a42077cb2682a6e299457fd", name: "ShopIcon", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/empties", width: 141, height: 128, scales: [2, 3], hash: "2d906861c73988d1392c3f207cda799f", name: "empty_quick_switcher", type: "png" });

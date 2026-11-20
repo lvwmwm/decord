@@ -1,17 +1,17 @@
-// Module ID: 16956
-// Function ID: 16957
+// Module ID: 16780
+// Function ID: 16781
 // Name: SettingsEmailNotificationsScreen
-// Dependencies: [19, 14931, 8593, 21, 4792, 575, 15573, 16957, 504, 16958, 11875, 1113, 7071, 5808, 7643, 3051, 15898, 2]
+// Dependencies: [19, 14895, 8592, 21, 4794, 575, 15537, 16781, 504, 16782, 11817, 1112, 7070, 5810, 7642, 3053, 15862, 2]
 
-// Module 16956 (SettingsEmailNotificationsScreen)
+// Module 16780 (SettingsEmailNotificationsScreen)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import SettingsConstants from "SettingsConstants" /* 8593 */;
-import SettingBuilders from "SettingBuilders" /* 11875 */;
-import EmailSettingsActionCreators from "EmailSettingsActionCreators" /* 16958 */;
+import SettingsConstants from "SettingsConstants" /* 8592 */;
+import SettingBuilders from "SettingBuilders" /* 11817 */;
+import EmailSettingsActionCreators from "EmailSettingsActionCreators" /* 16782 */;
 import react from "react" /* 19 */;
-import EmailSettingsStore from "EmailSettingsStore" /* 14931 */;
-import createStyles from "createStyles" /* 4792 */;
+import EmailSettingsStore from "EmailSettingsStore" /* 14895 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let emailSettings;
@@ -68,8 +68,8 @@ const memoResult = react.memo(function SettingsEmailNotificationsScreen() {
     const createList = SettingBuilders.createList;
     SettingBuilders;
     if (enabled) {
-      const intl = tmp2(1113).intl;
-      stringResult = intl.string(tmp2(1113).t.WViBDk);
+      const intl = tmp2(1112).intl;
+      stringResult = intl.string(tmp2(1112).t.WViBDk);
     }
     const obj2 = { sections: items };
     items = [obj, ];

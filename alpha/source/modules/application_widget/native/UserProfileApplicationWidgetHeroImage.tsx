@@ -1,18 +1,18 @@
-// Module ID: 10265
-// Function ID: 10266
+// Module ID: 10205
+// Function ID: 10206
 // Name: UserProfileApplicationWidgetHeroImage
-// Dependencies: [19, 17, 1072, 21, 4792, 7016, 5347, 5479, 2]
+// Dependencies: [19, 17, 1071, 21, 4794, 7015, 5349, 5481, 2]
 // Exports: default
 
-// Module 10265 (UserProfileApplicationWidgetHeroImage)
+// Module 10205 (UserProfileApplicationWidgetHeroImage)
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1072 */;
-import LinearGradientDefault from "LinearGradient" /* 5347 */;
-import FastImageDefault from "FastImage" /* 5479 */;
-import _modDef7016 from "module_7016" /* 7016 */;
+import Constants from "Constants" /* 1071 */;
+import LinearGradientDefault from "LinearGradient" /* 5349 */;
+import FastImageDefault from "FastImage" /* 5481 */;
+import _modDef7015 from "module_7015" /* 7015 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;
@@ -82,7 +82,7 @@ export default function UserProfileApplicationWidgetHeroImage(arg0) {
     }
   }
   let str2 = bound;
-  const tmp12 = _modDef7016;
+  const tmp12 = _modDef7015;
   if (bound == null) {
     str2 = "100%";
   }

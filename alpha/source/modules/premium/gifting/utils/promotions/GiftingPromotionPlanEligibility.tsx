@@ -1,11 +1,11 @@
 // Module ID: 9356
 // Function ID: 9357
 // Name: GiftingPromotionPlanEligibility
-// Dependencies: [1390, 2]
+// Dependencies: [1388, 2]
 // Exports: isPlanEligibleForGiftingPromotion
 
 // Module 9356 (GiftingPromotionPlanEligibility)
-import PremiumConstants from "PremiumConstants" /* 1390 */;
+import PremiumConstants from "PremiumConstants" /* 1388 */;
 import size from "module_2" /* 2 */;
 
 const SubscriptionPlans = PremiumConstants.SubscriptionPlans;

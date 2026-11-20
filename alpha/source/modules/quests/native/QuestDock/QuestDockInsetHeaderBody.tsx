@@ -1,23 +1,23 @@
-// Module ID: 16641
-// Function ID: 16642
+// Module ID: 16464
+// Function ID: 16465
 // Name: QuestDockInsetHeaderBody
-// Dependencies: [19, 17, 16529, 21, 575, 4792, 13660, 13659, 16526, 1630, 16603, 16600, 5383, 5390, 1187, 2]
+// Dependencies: [19, 17, 16352, 21, 575, 4794, 13631, 13630, 16349, 1628, 16426, 16423, 5385, 5392, 1186, 2]
 // Exports: QuestDockBodyQuestRewardTile, QuestDockBodyRewardTile
 
-// Module 16641 (QuestDockInsetHeaderBody)
+// Module 16464 (QuestDockInsetHeaderBody)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import QuestRewardTileDefault from "QuestRewardTile" /* 13659 */;
-import QuestDockRewardTileDefault from "QuestDockRewardTile" /* 13660 */;
-import QuestDockHooks from "QuestDockHooks" /* 16526 */;
-import QuestDockBlurredContentBackgroundDefault from "QuestDockBlurredContentBackground" /* 16600 */;
-import PremiumRewardGradientDefault from "PremiumRewardGradient" /* 16603 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import QuestRewardTileDefault from "QuestRewardTile" /* 13630 */;
+import QuestDockRewardTileDefault from "QuestDockRewardTile" /* 13631 */;
+import QuestDockHooks from "QuestDockHooks" /* 16349 */;
+import QuestDockBlurredContentBackgroundDefault from "QuestDockBlurredContentBackground" /* 16423 */;
+import PremiumRewardGradientDefault from "PremiumRewardGradient" /* 16426 */;
 import react from "react" /* 19 */;
-import QuestDockConstants from "QuestDockConstants" /* 16529 */;
+import QuestDockConstants from "QuestDockConstants" /* 16352 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -101,7 +101,7 @@ const memoResult = react.memo(function QuestDockInsetHeaderBody(showBonusOrbsGra
     tmp8Result = tmp8(tmp7, obj8);
   }
   items3 = [tmp8Result, , ];
-  const obj9 = { style: tmp.titleRow, children: hasOwnProperty(Text_Text.Text, { variant: "heading-sm/medium", color: "mobile-text-heading-primary", children: title }) };
+  const obj9 = { style: tmp.titleRow, children: hasOwnProperty(Text_Text.Text, { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", children: title }) };
   items3[1] = hasOwnProperty(View, obj9);
   items3[2] = hasOwnProperty(Text_Text.Text, { color: "text-default", variant: "body-sm/normal", children: description });
   items2[1] = metroRequire(View, obj7);
@@ -123,14 +123,14 @@ const memoResult = react.memo(function QuestDockInsetHeaderBody(showBonusOrbsGra
   if ("primary" === ctaButtonVariant) {
     const obj14 = { variant: "primary", grow: true, onPress: onCtaPress, loading: ctaLoading, icon: renderCtaIconResult, text: ctaText };
     renderCtaIconResult = undefined;
-    const Button = tmp2(5390).Button;
+    const Button = tmp2(5392).Button;
     if (renderCtaIcon != null) {
       renderCtaIconResult = renderCtaIcon();
     }
     tmp8Result4 = tmp8(Button, obj14);
   } else {
     const obj15 = { style: tmp.questDockCta, onPress: onCtaPress, loading: ctaLoading, renderIcon: renderCtaIcon, text: ctaText, shineDisabled: !isQuestDockExpanded };
-    tmp8Result4 = tmp8(tmp2(1187).ShinyButton, obj15);
+    tmp8Result4 = tmp8(tmp2(1186).ShinyButton, obj15);
   }
   items7[1] = tmp8Result4;
   items6[1] = metroRequire(View, obj13);

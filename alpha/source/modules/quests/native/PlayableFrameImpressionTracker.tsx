@@ -1,13 +1,13 @@
-// Module ID: 19267
-// Function ID: 19268
+// Module ID: 19086
+// Function ID: 19087
 // Name: PlayableFrameImpressionTracker
-// Dependencies: [19, 16525, 21, 504, 13666, 6444, 6440, 2]
+// Dependencies: [19, 16347, 21, 504, 13637, 6446, 6442, 2]
 // Exports: default
 
-// Module 19267 (PlayableFrameImpressionTracker)
+// Module 19086 (PlayableFrameImpressionTracker)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
-import PlayableStore from "PlayableStore" /* 16525 */;
+import PlayableStore from "PlayableStore" /* 16347 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -23,7 +23,7 @@ export default function PlayableFrameImpressionTracker(frameId) {
   let tmp4 = null;
   if (null != stateFromStores) {
     const QuestContentImpressionTrackerNative = tmp(tmp2[4]).QuestContentImpressionTrackerNative;
-    tmp4 = <QuestContentImpressionTrackerNative adContentId={stateFromStores.id} adCreativeType={frameId(children[5]).AdCreativeType.PLAYABLE} questContent={frameId(children[6]).QuestContent.RUNNING_ACTIVITY} sourceQuestContent={frameId(children[6]).QuestContent.QUEST_BAR_MOBILE} overrideVisibility>{function children() {
+    tmp4 = <QuestContentImpressionTrackerNative adContentId={stateFromStores.id} adCreativeType={frameId(children[5]).AdCreativeType.PLAYABLE} questContent={frameId(children[6]).QuestContent.PLAYABLE_SHEET_MOBILE} sourceQuestContent={frameId(children[6]).QuestContent.QUEST_BAR_MOBILE} overrideVisibility>{function children() {
       return children;
     }}</QuestContentImpressionTrackerNative>;
   }

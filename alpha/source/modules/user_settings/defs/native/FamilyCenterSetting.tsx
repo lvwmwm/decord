@@ -1,19 +1,19 @@
-// Module ID: 16079
-// Function ID: 16080
+// Module ID: 16043
+// Function ID: 16044
 // Name: FamilyCenterSetting
-// Dependencies: [19, 1072, 21, 16080, 16081, 7644, 575, 1113, 2723, 11875, 6919, 16084, 2]
+// Dependencies: [19, 1071, 21, 16044, 16045, 7643, 575, 1112, 2725, 11817, 6918, 16048, 2]
 
-// Module 16079 (FamilyCenterSetting)
+// Module 16043 (FamilyCenterSetting)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import intl2 from "intl" /* 1113 */;
-import _modDef2723 from "module_2723" /* 2723 */;
-import GroupIcon from "GroupIcon" /* 6919 */;
-import useIsParentalConsentBannerActive from "useIsParentalConsentBannerActive" /* 16080 */;
-import useParentalConsentWarning from "useParentalConsentWarning" /* 16081 */;
+import Constants from "Constants" /* 1071 */;
+import intl2 from "intl" /* 1112 */;
+import _modDef2725 from "module_2725" /* 2725 */;
+import GroupIcon from "GroupIcon" /* 6918 */;
+import useIsParentalConsentBannerActive from "useIsParentalConsentBannerActive" /* 16044 */;
+import useParentalConsentWarning from "useParentalConsentWarning" /* 16045 */;
 import react from "react" /* 19 */;
-import SettingBuilders from "SettingBuilders" /* 11875 */;
+import SettingBuilders from "SettingBuilders" /* 11817 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -23,7 +23,7 @@ const jsx = Fragment.jsx;
 let obj = {
   useTitle() {
     const intl = intl2.intl;
-    return intl.string(_modDef2723.RZqaJn);
+    return intl.string(_modDef2725.RZqaJn);
   },
   parent: null,
   IconComponent: GroupIcon.GroupIcon,
@@ -45,9 +45,9 @@ let obj = {
       if (null != daysRemaining) {
         tmp6 = null;
         if (daysRemaining >= 0) {
-          const WarningIcon = tmp(7644).WarningIcon;
-          const intl = tmp(1113).intl;
-          tmp6 = <WarningIcon size="sm" color={nativeDefault.colors.ICON_FEEDBACK_WARNING} accessible accessibilityLabel={intl.string(_modDef2723.wucWfE)} />;
+          const WarningIcon = tmp(7643).WarningIcon;
+          const intl = tmp(1112).intl;
+          tmp6 = <WarningIcon size="sm" color={nativeDefault.colors.ICON_FEEDBACK_WARNING} accessible accessibilityLabel={intl.string(_modDef2725.wucWfE)} />;
         }
       }
     }

@@ -1,24 +1,24 @@
-// Module ID: 10379
-// Function ID: 10380
+// Module ID: 10321
+// Function ID: 10322
 // Name: CommandPermissionContext
-// Dependencies: [19, 4697, 4645, 4659, 502, 4641, 4704, 4663, 4724, 1388, 1072, 10380, 504, 1084, 2119, 2]
+// Dependencies: [19, 4699, 4647, 4661, 502, 4643, 4706, 4665, 4726, 1386, 1071, 10322, 504, 1083, 2117, 2]
 // Exports: buildPermissionContext, computeCommandContextType, getContextGuildId, usePermissionContext
 
-// Module 10379 (CommandPermissionContext)
-import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
-import Server from "Server" /* 2119 */;
-import ChannelRecord from "ChannelRecord" /* 4645 */;
-import GuildRecord from "GuildRecord" /* 4659 */;
-import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 10380 */;
+// Module 10321 (CommandPermissionContext)
+import BigFlagUtilsAll from "BigFlagUtils" /* 1083 */;
+import Server from "Server" /* 2117 */;
+import ChannelRecord from "ChannelRecord" /* 4647 */;
+import GuildRecord from "GuildRecord" /* 4661 */;
+import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 10322 */;
 import react_mod from "react" /* 19 */;
-import ImpersonateStore from "ImpersonateStore" /* 4697 */;
+import ImpersonateStore from "ImpersonateStore" /* 4699 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import GuildMemberStore from "GuildMemberStore" /* 4704 */;
-import GuildStore from "GuildStore" /* 4663 */;
-import PermissionStore from "PermissionStore" /* 4724 */;
-import UserStore from "UserStore" /* 1388 */;
-import Constants from "Constants" /* 1072 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import GuildMemberStore from "GuildMemberStore" /* 4706 */;
+import GuildStore from "GuildStore" /* 4665 */;
+import PermissionStore from "PermissionStore" /* 4726 */;
+import UserStore from "UserStore" /* 1386 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

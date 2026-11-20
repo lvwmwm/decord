@@ -1,10 +1,10 @@
-// Module ID: 2144
-// Function ID: 2145
+// Module ID: 2142
+// Function ID: 2143
 // Name: CompanyRecord
-// Dependencies: [1408, 2]
+// Dependencies: [1406, 2]
 
-// Module 2144 (CompanyRecord)
-import Record from "Record" /* 1408 */;
+// Module 2142 (CompanyRecord)
+import Record from "Record" /* 1406 */;
 import size from "module_2" /* 2 */;
 
 class CompanyRecord extends Record {

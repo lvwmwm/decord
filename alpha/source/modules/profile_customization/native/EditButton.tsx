@@ -1,14 +1,14 @@
-// Module ID: 15763
-// Function ID: 15764
+// Module ID: 15727
+// Function ID: 15728
 // Name: EditButton
-// Dependencies: [19, 17, 21, 7472, 8585, 2]
+// Dependencies: [19, 17, 21, 7471, 8584, 2]
 // Exports: default
 
-// Module 15763 (EditButton)
+// Module 15727 (EditButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import IconButton2 from "IconButton" /* 7472 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8585 */;
+import IconButton2 from "IconButton" /* 7471 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8584 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

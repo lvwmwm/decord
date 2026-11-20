@@ -1,20 +1,20 @@
-// Module ID: 15661
-// Function ID: 15662
+// Module ID: 15625
+// Function ID: 15626
 // Name: conjureBackgroundFrameRules
-// Dependencies: [4640, 6502, 1194, 15662, 14645, 6503, 6833, 15585, 5436, 6824, 2]
+// Dependencies: [4642, 6504, 1193, 15626, 14613, 6505, 6833, 15549, 5438, 6824, 2]
 // Exports: isBuilderPreviewFrame, shouldRunInBackgroundOnRelease
 
-// Module 15661 (conjureBackgroundFrameRules)
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5436 */;
-import FramesConstants from "FramesConstants" /* 6503 */;
+// Module 15625 (conjureBackgroundFrameRules)
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5438 */;
+import FramesConstants from "FramesConstants" /* 6505 */;
 import conjurePreviewSurface from "conjurePreviewSurface" /* 6824 */;
 import frameRunsInBackgroundDefault from "frameRunsInBackground" /* 6833 */;
-import validateConjureAppFrame from "validateConjureAppFrame" /* 15585 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4640 */;
-import FramesStore from "FramesStore" /* 6502 */;
-import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1194 */;
-import VoiceChannelAppStore from "VoiceChannelAppStore" /* 15662 */;
-import ConjureBuilderPreviewStore from "ConjureBuilderPreviewStore" /* 14645 */;
+import validateConjureAppFrame from "validateConjureAppFrame" /* 15549 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4642 */;
+import FramesStore from "FramesStore" /* 6504 */;
+import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1193 */;
+import VoiceChannelAppStore from "VoiceChannelAppStore" /* 15626 */;
+import ConjureBuilderPreviewStore from "ConjureBuilderPreviewStore" /* 14613 */;
 import size from "module_2" /* 2 */;
 
 const FrameIntent = FramesConstants.FrameIntent;

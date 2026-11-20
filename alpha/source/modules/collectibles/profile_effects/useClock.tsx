@@ -1,7 +1,7 @@
 // Module ID: 8898
 // Function ID: 8899
 // Name: useClock
-// Dependencies: [19, 38, 5353, 2]
+// Dependencies: [19, 38, 5355, 2]
 // Exports: default
 
 // Module 8898 (useClock)

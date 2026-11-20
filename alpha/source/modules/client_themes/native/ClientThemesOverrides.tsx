@@ -1,14 +1,14 @@
-// Module ID: 8451
-// Function ID: 8452
+// Module ID: 8450
+// Function ID: 8451
 // Name: ClientThemesOverrides
-// Dependencies: [19, 4792, 4962, 8452, 2]
+// Dependencies: [19, 4794, 4964, 8451, 2]
 // Exports: useClientThemesOverride, useGradientBottom, useGradientMidpoint, useGradientTop
 
-// Module 8451 (ClientThemesOverrides)
-import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 4962 */;
-import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 8452 */;
+// Module 8450 (ClientThemesOverrides)
+import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 4964 */;
+import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 8451 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let closure_4 = createStyles.createStyles({ none: { backgroundColor: "transparent" } });

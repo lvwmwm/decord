@@ -1,16 +1,16 @@
-// Module ID: 7619
-// Function ID: 7620
+// Module ID: 7618
+// Function ID: 7619
 // Name: ChangelogStore
-// Dependencies: [2189, 1231, 4694, 510, 4617, 504, 572, 2]
+// Dependencies: [2187, 1230, 4696, 510, 4619, 504, 572, 2]
 
-// Module 7619 (ChangelogStore)
+// Module 7618 (ChangelogStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage3 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import UserSettings from "UserSettings" /* 4617 */;
-import LocaleStore from "LocaleStore" /* 2189 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import ChangelogConstants from "ChangelogConstants" /* 4694 */;
+import UserSettings from "UserSettings" /* 4619 */;
+import LocaleStore from "LocaleStore" /* 2187 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1230 */;
+import ChangelogConstants from "ChangelogConstants" /* 4696 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

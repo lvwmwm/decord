@@ -1,16 +1,16 @@
-// Module ID: 16151
-// Function ID: 16152
+// Module ID: 16115
+// Function ID: 16116
 // Name: FamilyCenterParentalControlsScreenTime
-// Dependencies: [17, 1072, 21, 4792, 575, 11042, 6926, 5383, 1113, 2723, 16108, 1502, 7229, 2]
+// Dependencies: [17, 1071, 21, 4794, 575, 10984, 6925, 5385, 1112, 2725, 16072, 1500, 7228, 2]
 // Exports: default
 
-// Module 16151 (FamilyCenterParentalControlsScreenTime)
+// Module 16115 (FamilyCenterParentalControlsScreenTime)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import _modDef2723 from "module_2723" /* 2723 */;
+import Constants from "Constants" /* 1071 */;
+import _modDef2725 from "module_2725" /* 2725 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -31,16 +31,16 @@ function ScheduleRuleRow(rule) {
   if (readOnly === undefined) {
     readOnly = false;
   }
-  let obj = rule(11042);
+  let obj = rule(10984);
   const scheduleRuleDateRange = obj.getScheduleRuleDateRange(rule);
-  let obj2 = rule(11042);
+  let obj2 = rule(10984);
   const obj3 = { label: scheduleRuleDateRange, subLabel: obj2.formatDays(rule.days), trailing: closure_5(Text, { variant: "body-sm/medium", color: "text-subtle", children: stringResult }), arrow: !readOnly, onPress: fn };
-  const TableRow = rule(6926).TableRow;
-  Text = rule(5383).Text;
+  const TableRow = rule(6925).TableRow;
+  Text = rule(5385).Text;
   const enabled = rule.enabled;
-  const intl = rule(1113).intl;
+  const intl = rule(1112).intl;
   const string = intl.string;
-  const tmp4 = _modDef2723;
+  const tmp4 = _modDef2725;
   if (enabled) {
     stringResult = string(tmp4["8vDHRq"]);
   } else {
@@ -103,7 +103,7 @@ export default function FamilyCenterParentalControlsScreenTime(readOnly) {
   const sortRulesByStartTimeResult = tmp2Result.sortRulesByStartTime(rules);
   if (null != id) {
     const obj3 = { style: tmp.container, children: items };
-    const obj4 = { variant: "body-sm/semibold", color: "text-subtle", style: tmp.header, children: intl.string(require("module_2723")["72CmJd"]) };
+    const obj4 = { variant: "body-sm/semibold", color: "text-subtle", style: tmp.header, children: intl.string(require("module_2725")["72CmJd"]) };
     const Text = tmp2(tmp3[7]).Text;
     intl = tmp2(tmp3[8]).intl;
     items = [closure_5(Text, obj4), ];

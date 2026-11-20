@@ -1,11 +1,11 @@
-// Module ID: 19666
-// Function ID: 19667
+// Module ID: 19484
+// Function ID: 19485
 // Name: InterestGuildsAPI
-// Dependencies: [5, 1072, 19667, 1285, 1256, 2]
+// Dependencies: [5, 1071, 19485, 1284, 1255, 2]
 // Exports: createInterestGuildsResource
 
-// Module 19666 (InterestGuildsAPI)
-import Constants from "Constants" /* 1072 */;
+// Module 19484 (InterestGuildsAPI)
+import Constants from "Constants" /* 1071 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ export function createInterestGuildsResource() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

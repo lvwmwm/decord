@@ -1,26 +1,26 @@
-// Module ID: 13201
-// Function ID: 13202
+// Module ID: 13171
+// Function ID: 13172
 // Name: ChatInputContextBar
-// Dependencies: [19, 17, 4793, 8196, 1388, 1072, 21, 1187, 4792, 575, 5356, 5383, 1113, 6911, 7131, 504, 4854, 6221, 9336, 8580, 13202, 4962, 1655, 5002, 1708, 12069, 1256, 12067, 1099, 6220, 13203, 8395, 8439, 8423, 2]
+// Dependencies: [19, 17, 4795, 8195, 1386, 1071, 21, 1186, 4794, 575, 5358, 5385, 1112, 6910, 7130, 504, 4856, 6223, 9336, 8579, 13172, 4964, 1653, 5004, 1706, 12011, 1255, 12009, 1098, 6222, 13173, 8394, 8438, 8422, 2]
 
-// Module 13201 (ChatInputContextBar)
+// Module 13171 (ChatInputContextBar)
 import nativeDefault from "native" /* 575 */;
-import intl9 from "intl" /* 1113 */;
-import native from "native" /* 1187 */;
-import useToken from "useToken" /* 5356 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import Pressables from "Pressables" /* 6911 */;
-import DraftStore2 from "DraftStore" /* 8196 */;
-import DraftActionCreatorsDefault from "DraftActionCreators" /* 8395 */;
-import ScheduledMessageTypes from "ScheduledMessageTypes" /* 8423 */;
-import ScheduledMessagesUtils from "ScheduledMessagesUtils" /* 8439 */;
+import intl9 from "intl" /* 1112 */;
+import native from "native" /* 1186 */;
+import useToken from "useToken" /* 5358 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import Pressables from "Pressables" /* 6910 */;
+import DraftStore2 from "DraftStore" /* 8195 */;
+import DraftActionCreatorsDefault from "DraftActionCreators" /* 8394 */;
+import ScheduledMessageTypes from "ScheduledMessageTypes" /* 8422 */;
+import ScheduledMessagesUtils from "ScheduledMessagesUtils" /* 8438 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4793 */;
-import UserStore from "UserStore" /* 1388 */;
-import Constants from "Constants" /* 1072 */;
+import AccessibilityStore from "AccessibilityStore" /* 4795 */;
+import UserStore from "UserStore" /* 1386 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 const DraftStore = DraftStore2;
@@ -34,7 +34,7 @@ let hasOwnProperty;
 let map1;
 let tmp4;
 let unpackModuleId;
-const AssetRegistryDefault = tmp4(7131);
+const AssetRegistryDefault = tmp4(7130);
 function ChatInputReplyBarNoAuthor(onCancelReplying) {
   let Icon;
   let PressableOpacity;
@@ -65,7 +65,7 @@ function ChatInputReplyBarNoAuthor(onCancelReplying) {
     tmp10 = bound;
   }
   obj7 = { source: AssetRegistryDefault, size: native.Icon.Sizes.CUSTOM, style: tmp.floatingCloseIcon };
-  Icon = tmp2(1187).Icon;
+  Icon = tmp2(1186).Icon;
   items[1] = authStore2(hasOwnProperty, obj5);
   return tmp7(hasOwnProperty, obj3);
 }
@@ -311,7 +311,7 @@ function ChatInputEditBar(onCancelEditing) {
     tmp9 = bound;
   }
   obj5 = { source: AssetRegistryDefault, size: native.Icon.Sizes.CUSTOM, style: tmp.floatingCloseIcon };
-  Icon = tmp2(1187).Icon;
+  Icon = tmp2(1186).Icon;
   const obj6 = { style: tmp.contextBarRow, children: map1(gesture, obj7) };
   obj7 = { children: items };
   items = [tmp8, ];
@@ -355,7 +355,7 @@ function ChatInputScheduledMessageBar(scheduledTimestamp) {
     tmp10 = bound;
   }
   obj6 = { source: AssetRegistryDefault, size: native.Icon.Sizes.CUSTOM, style: tmp.floatingCloseIcon };
-  Icon = tmp2(1187).Icon;
+  Icon = tmp2(1186).Icon;
   const obj7 = { style: tmp.contextBarRow, children: map1(gesture, obj8) };
   obj8 = { children: items };
   items = [tmp9, ];
@@ -376,16 +376,16 @@ function ContextBarItem(arg0) {
   dependencyMap = undefined;
   ({ children, ref } = arg0);
   let tmp = dependencyMap;
-  obj = sharedValue(4962);
-  backgroundColor = closure_16(obj.useGradientValue(sharedValue(4962).GradientPercentage.END)).contextBar.backgroundColor;
+  obj = sharedValue(4964);
+  backgroundColor = closure_16(obj.useGradientValue(sharedValue(4964).GradientPercentage.END)).contextBar.backgroundColor;
   let tmp2 = closure_17();
-  const obj2 = sharedValue(1655);
+  const obj2 = sharedValue(1653);
   sharedValue = obj2.useSharedValue(0);
   let items = [closure_22, backgroundColor, sharedValue];
   let c0;
   let c1;
   [tmp4, tmp5, tmp6] = items;
-  const obj3 = sharedValue(1655);
+  const obj3 = sharedValue(1653);
   class ChatInputContextBarTsx1 {
     constructor() {
       obj = { backgroundColor, maxHeight: _undefined.get() };
@@ -455,7 +455,7 @@ function ContextBarItem(arg0) {
   });
   const obj4 = { style: items3, children };
   items3 = [animatedStyle, tmp2.floatingContextBar];
-  return closure_12(ref1(1655).View, obj4);
+  return closure_12(ref1(1653).View, obj4);
 }
 ({ StyleSheet: closure_4, View: hasOwnProperty } = react_native);
 const DraftType = DraftStore2.DraftType;

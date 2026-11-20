@@ -1,17 +1,17 @@
-// Module ID: 15638
-// Function ID: 15639
+// Module ID: 15602
+// Function ID: 15603
 // Name: commands/userProfile
-// Dependencies: [5, 6233, 1072, 15614, 15586, 15639, 15640, 15593, 2]
+// Dependencies: [5, 6235, 1071, 15578, 15550, 15603, 15604, 15557, 2]
 
-// Module 15638 (commands/userProfile)
-import Constants from "Constants" /* 1072 */;
-import Constants2 from "Constants" /* 6233 */;
-import validateEmbeddedAppFrameDefault from "validateEmbeddedAppFrame" /* 15586 */;
-import _asyncToGeneratorDefault from "_asyncToGenerator" /* 15614 */;
-import getFrameProfileContextDefault from "getFrameProfileContext" /* 15639 */;
-import userProfile from "userProfile" /* 15640 */;
+// Module 15602 (commands/userProfile)
+import Constants from "Constants" /* 1071 */;
+import Constants2 from "Constants" /* 6235 */;
+import validateEmbeddedAppFrameDefault from "validateEmbeddedAppFrame" /* 15550 */;
+import _asyncToGeneratorDefault from "_asyncToGenerator" /* 15578 */;
+import getFrameProfileContextDefault from "getFrameProfileContext" /* 15603 */;
+import userProfile from "userProfile" /* 15604 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 15593 */;
+import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 15557 */;
 import size from "module_2" /* 2 */;
 
 let c1, c3, c4, iframeId, userId;
@@ -37,7 +37,7 @@ let value = function _openUserProfileForSocket() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

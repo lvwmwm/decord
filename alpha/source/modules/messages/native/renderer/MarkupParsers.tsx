@@ -1,35 +1,38 @@
-// Module ID: 8733
-// Function ID: 8734
+// Module ID: 8671
+// Function ID: 8672
 // Name: MarkupParsers
-// Dependencies: [1072, 1089, 1456, 5516, 8734, 8738, 8117, 8754, 1242, 2]
-// Exports: parseEmbedDescriptionMarkup, parseEmbedTitleMarkup, parseEmbedTitleMarkupWithoutLinks, parseMessageMarkup
+// Dependencies: [1071, 1088, 1454, 5518, 8606, 8672, 8676, 8116, 8692, 1241, 2]
+// Exports: parseEmbedDescriptionMarkup, parseEmbedTitleMarkup, parseEmbedTitleMarkupWithoutLinks, parseMessageMarkup, parsePollMarkup
 
-// Module 8733 (MarkupParsers)
-import Constants from "Constants" /* 1072 */;
-import DurationsDefault from "Durations" /* 1089 */;
-import SentryUtilsDefault from "SentryUtils" /* 1242 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 5516 */;
-import renderMessageMarkup from "renderMessageMarkup" /* 8117 */;
-import NativeMarkdownExperiment from "NativeMarkdownExperiment" /* 8734 */;
-import parseNativeMarkupDefault from "parseNativeMarkup" /* 8754 */;
-import LRUCache_mod from "LRUCache" /* 1456 */;
+// Module 8671 (MarkupParsers)
+import Constants from "Constants" /* 1071 */;
+import DurationsDefault from "Durations" /* 1088 */;
+import SentryUtilsDefault from "SentryUtils" /* 1241 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 5518 */;
+import renderMessageMarkup from "renderMessageMarkup" /* 8116 */;
+import markup_MarkupParser from "markup/MarkupParser" /* 8606 */;
+import NativeMarkdownExperiment from "NativeMarkdownExperiment" /* 8672 */;
+import parseNativeMarkupDefault from "parseNativeMarkup" /* 8692 */;
+import LRUCache_mod from "LRUCache" /* 1454 */;
 import size from "module_2" /* 2 */;
 
 let LRUCache;
 let tmp;
-const ChangeLogStandardTemplate = tmp(8738);
+const ChangeLogStandardTemplate = tmp(8676);
 const MessageTypes = Constants.MessageTypes;
 let obj = { max: Infinity, maxAge: 15 * DurationsDefault.Millis.MINUTE, updateAgeOnGet: true };
 const tmp2 = new LRUCache(obj);
 let closure_4 = tmp2;
 let closure_5 = new LRUCache(obj);
-let obj2 = { updateAgeOnGet: false };
 const tmp3 = new LRUCache(obj);
+let tmp4 = new LRUCache(obj);
+let closure_6 = tmp4;
+let obj2 = { updateAgeOnGet: false };
 LRUCache = LRUCache_mod;
 let merged = Object.assign(obj);
 const importDefaultResult1 = new LRUCache(obj2);
-const tmp7 = new LRUCache(obj);
-let closure_7 = tmp7;
+const tmp8 = new LRUCache(obj);
+let closure_8 = tmp8;
 let result = size.fileFinishedImporting("modules/messages/native/renderer/MarkupParsers.tsx");
 
 export function parseEmbedTitleMarkup(rawName, channelId) {
@@ -57,6 +60,33 @@ export function parseEmbedTitleMarkupWithoutLinks(arg0, channelId) {
     value = result;
   }
   return value;
+}
+export function parsePollMarkup(text, arg1) {
+  let flag = arg1;
+  if (arg1 === undefined) {
+    flag = true;
+  }
+  if (null != text) {
+    const _HermesInternal = HermesInternal;
+    const combined = "" + text + "-" + flag;
+    let value = closure_6.get(combined);
+    const obj = closure_6;
+    if (null == value) {
+      const obj2 = MarkupUtilsDefault;
+      const parsePollToASTResult = obj2.parsePollToAST(text, true);
+      if (!flag) {
+        const obj3 = markup_MarkupParser;
+        obj3.walkAst(parsePollToASTResult, (type) => {
+          if ("timestamp" === type.type) {
+            type.interactive = false;
+          }
+        });
+      }
+      const result = obj.set(combined, parsePollToASTResult);
+      value = parsePollToASTResult;
+    }
+    return value;
+  }
 }
 export function parseEmbedDescriptionMarkup(arg0) {
   let channelId;
@@ -133,8 +163,8 @@ export function parseMessageMarkup(message, message2, forceHideSimpleEmbedConten
   let tmp = require;
   let obj = NativeMarkdownExperiment;
   result = obj.isNativeMarkdownEnabled({ location: "parseMessageMarkup" });
-  let obj2 = closure_7;
-  const value = closure_7.get(message);
+  let obj2 = closure_8;
+  const value = closure_8.get(message);
   if (null != value) {
     if (value.isInlineReplyPreview === flag) {
       if (value.nativeMarkdownEnabled === result) {

@@ -1,17 +1,17 @@
-// Module ID: 16497
-// Function ID: 16498
+// Module ID: 16319
+// Function ID: 16320
 // Name: OrbsArcadeRewardStatusLabel
-// Dependencies: [19, 17, 21, 4792, 16479, 1113, 5383, 7576, 575, 2]
+// Dependencies: [19, 17, 21, 4794, 16302, 1112, 5385, 7575, 575, 2]
 // Exports: default
 
-// Module 16497 (OrbsArcadeRewardStatusLabel)
+// Module 16319 (OrbsArcadeRewardStatusLabel)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import OrbsArcadeTypes from "OrbsArcadeTypes" /* 16479 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import OrbsArcadeTypes from "OrbsArcadeTypes" /* 16302 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -36,24 +36,24 @@ export default function OrbsArcadeRewardStatusLabel(status) {
   const tmp = hasOwnProperty;
   const tmp2 = View;
   if (OrbsArcadeTypes.OrbsArcadeRewardStatus.CLAIMED === status) {
-    const intl2 = tmp4(1113).intl;
-    stringResult = intl2.string(tmp4(1113).t.R6Ksr9);
+    const intl2 = tmp4(1112).intl;
+    stringResult = intl2.string(tmp4(1112).t.R6Ksr9);
   } else if (OrbsArcadeTypes.OrbsArcadeRewardStatus.CLAIMABLE === status) {
-    const intl = tmp4(1113).intl;
+    const intl = tmp4(1112).intl;
     const string = intl.string;
-    const t = tmp4(1113).t;
+    const t = tmp4(1112).t;
     stringResult = string(tmp9 ? t.pxxI1f : t["A7+nP8"]);
   } else if (OrbsArcadeTypes.OrbsArcadeRewardStatus.LOCKED === status) {
-    const intl3 = tmp4(1113).intl;
+    const intl3 = tmp4(1112).intl;
     const string2 = intl3.string;
-    const t2 = tmp4(1113).t;
+    const t2 = tmp4(1112).t;
     stringResult = string2(tmp9 ? t2.vJFuxl : t2["++O7TA"]);
   }
   items = [React3(Text, obj2), ];
   let tmp3Result = null;
   if (status === OrbsArcadeTypes.OrbsArcadeRewardStatus.LOCKED) {
     const obj3 = { size: "xxs", color: nativeDefault.colors.ICON_MUTED };
-    const LockIcon = tmp4(7576).LockIcon;
+    const LockIcon = tmp4(7575).LockIcon;
     tmp3Result = tmp3(LockIcon, obj3);
   }
   items[1] = tmp3Result;

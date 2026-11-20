@@ -1,18 +1,18 @@
-// Module ID: 4663
-// Function ID: 4664
+// Module ID: 4665
+// Function ID: 4666
 // Name: GuildStore
-// Dependencies: [4656, 4664, 4659, 502, 4654, 4658, 4666, 11, 4655, 4667, 2]
+// Dependencies: [4658, 4666, 4661, 502, 4656, 4660, 4668, 11, 4657, 4669, 2]
 
-// Module 4663 (GuildStore)
+// Module 4665 (GuildStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import FavoritesConstants from "FavoritesConstants" /* 4654 */;
-import GuildRecordUtilsAll from "GuildRecordUtils" /* 4655 */;
-import SetUtils from "SetUtils" /* 4658 */;
-import LibdiscoreStore2 from "LibdiscoreStore" /* 4664 */;
-import FavoritesUtils from "FavoritesUtils" /* 4666 */;
-import libdiscoreExperiments from "libdiscoreExperiments" /* 4667 */;
-import PlainRecord from "PlainRecord" /* 4656 */;
-import GuildRecord from "GuildRecord" /* 4659 */;
+import FavoritesConstants from "FavoritesConstants" /* 4656 */;
+import GuildRecordUtilsAll from "GuildRecordUtils" /* 4657 */;
+import SetUtils from "SetUtils" /* 4660 */;
+import LibdiscoreStore2 from "LibdiscoreStore" /* 4666 */;
+import FavoritesUtils from "FavoritesUtils" /* 4668 */;
+import libdiscoreExperiments from "libdiscoreExperiments" /* 4669 */;
+import PlainRecord from "PlainRecord" /* 4658 */;
+import GuildRecord from "GuildRecord" /* 4661 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
 

@@ -1,20 +1,20 @@
 // Module ID: 8907
 // Function ID: 8908
 // Name: NameplateDummyUserPreview
-// Dependencies: [19, 17, 1192, 21, 1187, 575, 4792, 504, 4814, 8908, 8910, 8911, 2]
+// Dependencies: [19, 17, 1191, 21, 1186, 575, 4794, 504, 4816, 8908, 8910, 8911, 2]
 // Exports: NameplateDummyUserPreview
 
 // Module 8907 (NameplateDummyUserPreview)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 1187 */;
-import themes from "themes" /* 4814 */;
+import native from "native" /* 1186 */;
+import themes from "themes" /* 4816 */;
 import NameplateDefault from "Nameplate" /* 8908 */;
 import react from "react" /* 19 */;
-import ThemeStore from "ThemeStore" /* 1192 */;
+import ThemeStore from "ThemeStore" /* 1191 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;

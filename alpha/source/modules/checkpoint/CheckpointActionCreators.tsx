@@ -1,19 +1,19 @@
-// Module ID: 12408
-// Function ID: 12409
+// Module ID: 12378
+// Function ID: 12379
 // Name: CheckpointActionCreators
-// Dependencies: [5, 4641, 12400, 1072, 572, 12398, 6218, 12401, 1285, 7618, 8263, 8131, 9938, 1255, 2]
+// Dependencies: [5, 4643, 12370, 1071, 572, 12368, 6220, 12371, 1284, 7617, 8262, 8130, 9941, 1254, 2]
 // Exports: completeCheckpoint, fetchCheckpointData, resetCheckpoint, saveCheckpointProgress, selectCharacterTrait, sendCheckpointCard, sendSidekickMessage, setVolume, toggleMute
 
-// Module 12408 (CheckpointActionCreators)
+// Module 12378 (CheckpointActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import Constants from "Constants" /* 1072 */;
-import HTTPUtils from "HTTPUtils" /* 1285 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7618 */;
-import formatResults from "formatResults" /* 9938 */;
-import Tracking from "Tracking" /* 12398 */;
-import CheckpointStore2 from "CheckpointStore" /* 12400 */;
+import Constants from "Constants" /* 1071 */;
+import HTTPUtils from "HTTPUtils" /* 1284 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7617 */;
+import formatResults from "formatResults" /* 9941 */;
+import Tracking from "Tracking" /* 12368 */;
+import CheckpointStore2 from "CheckpointStore" /* 12370 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
 import size from "module_2" /* 2 */;
 
 const CheckpointStore = CheckpointStore2;
@@ -33,7 +33,7 @@ let obj = function _fetchCheckpointData() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c6;
@@ -180,7 +180,7 @@ obj = function _completeCheckpoint() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -255,7 +255,7 @@ obj = function _resetCheckpoint() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c2;
@@ -329,7 +329,7 @@ obj = function _sendSidekickMessage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -422,7 +422,7 @@ obj = function _sendCheckpointCard() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       while (true) {
@@ -504,7 +504,7 @@ obj = function _sendCheckpointCard() {
               }
             }
             c10 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           c8 = 0;

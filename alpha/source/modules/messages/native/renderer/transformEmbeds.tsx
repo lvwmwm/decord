@@ -1,23 +1,23 @@
 // Module ID: 8774
 // Function ID: 8775
 // Name: transformEmbeds
-// Dependencies: [17, 1072, 8775, 8776, 6263, 8777, 8778, 1380, 8126, 5832, 1113, 1090, 8733, 4614, 8105, 8111, 6290, 8780, 2]
+// Dependencies: [17, 1071, 8775, 8776, 6265, 8777, 8778, 1378, 8125, 5834, 1112, 1089, 8671, 4616, 8104, 8110, 6292, 8780, 2]
 // Exports: default
 
 // Module 8774 (transformEmbeds)
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1072 */;
-import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
-import intl6 from "intl" /* 1113 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
-import DateUtils from "DateUtils" /* 4614 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 5832 */;
-import EmbedUtils from "EmbedUtils" /* 6263 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6290 */;
-import ObscuredMediaUtils from "ObscuredMediaUtils" /* 8105 */;
-import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 8111 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8126 */;
-import MarkupParsers from "MarkupParsers" /* 8733 */;
+import Constants from "Constants" /* 1071 */;
+import utils_ColorUtils from "utils/ColorUtils" /* 1089 */;
+import intl6 from "intl" /* 1112 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
+import DateUtils from "DateUtils" /* 4616 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 5834 */;
+import EmbedUtils from "EmbedUtils" /* 6265 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6292 */;
+import ObscuredMediaUtils from "ObscuredMediaUtils" /* 8104 */;
+import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 8110 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8125 */;
+import MarkupParsers from "MarkupParsers" /* 8671 */;
 import sanitizeMediaDimension from "sanitizeMediaDimension" /* 8775 */;
 import RowGeneratorUtilsDefault from "RowGeneratorUtils" /* 8776 */;
 import utils from "utils" /* 8777 */;
@@ -195,7 +195,7 @@ export default function transformEmbeds(arg0) {
                               }
                               ({ proxyURL: proxyURL4, url: url4 } = type.video);
                               let tmp49 = url4;
-                              const isWebPlayerVideoUrl = tmp3(5832).isWebPlayerVideoUrl;
+                              const isWebPlayerVideoUrl = tmp3(5834).isWebPlayerVideoUrl;
                               MediaFormatTesters;
                               if (null != proxyURL4) {
                                 tmp49 = url4;
@@ -239,8 +239,8 @@ export default function transformEmbeds(arg0) {
                       if (tmp53) {
                         const obj7 = { role: intl.string(intl6.t.OBp3V3), hint: intl2.string(intl6.t.IPzNKE) };
                         const merged5 = Object.assign(tmp31);
-                        intl = tmp3(1113).intl;
-                        intl2 = tmp3(1113).intl;
+                        intl = tmp3(1112).intl;
+                        intl2 = tmp3(1112).intl;
                         tmp54 = obj7;
                       }
                       const tmp58 = borderLeftColor;
@@ -252,7 +252,7 @@ export default function transformEmbeds(arg0) {
                       if (null != type.url) {
                         let parseEmbedTitleMarkup;
                         if ("" !== type.url) {
-                          parseEmbedTitleMarkup = tmp3(8733).parseEmbedTitleMarkupWithoutLinks;
+                          parseEmbedTitleMarkup = tmp3(8671).parseEmbedTitleMarkupWithoutLinks;
                         }
                         if (type.type === MessageEmbedTypes.RICH) {
                           let rawTitle;
@@ -364,14 +364,14 @@ export default function transformEmbeds(arg0) {
                             tmp82 = closure_13(mapped2);
                           }
                           const obj12 = { type: ExplicitMediaRedactionModels.ObscuredMediaTypes.Embed, media: type };
-                          const getMediaObscuredReasonFromBitmask = tmp3(8105).getMediaObscuredReasonFromBitmask;
+                          const getMediaObscuredReasonFromBitmask = tmp3(8104).getMediaObscuredReasonFromBitmask;
                           ObscuredMediaUtils;
                           let isMediaScanPendingResult = !closure_10;
                           const mediaObscuredReasonFromBitmask = getMediaObscuredReasonFromBitmask(obj12, closure_9);
                           const tmp87 = closure_9;
                           if (!closure_10) {
                             const obj13 = { type: ExplicitMediaRedactionModels.ObscuredMediaTypes.Embed, media: type };
-                            const isMediaScanPending = tmp3(8105).isMediaScanPending;
+                            const isMediaScanPending = tmp3(8104).isMediaScanPending;
                             ObscuredMediaUtils;
                             isMediaScanPendingResult = isMediaScanPending(obj13, tmp87);
                           }
@@ -396,18 +396,18 @@ export default function transformEmbeds(arg0) {
                           str10 = "";
                           str11 = "";
                           if (dependencyMap) {
-                            const intl3 = tmp3(1113).intl;
+                            const intl3 = tmp3(1112).intl;
                             const str12 = intl3.string(intl6.t["F+x38C"]);
                             str11 = str12.toUpperCase();
                           }
                           stringResult = str10;
                           if (mediaObscuredReasonFromBitmask.length > 0) {
-                            const intl4 = tmp3(1113).intl;
-                            stringResult = intl4.string(tmp3(1113).t.SpxcUR);
+                            const intl4 = tmp3(1112).intl;
+                            stringResult = intl4.string(tmp3(1112).t.SpxcUR);
                           }
                           if (isMediaScanPendingResult) {
-                            const intl5 = tmp3(1113).intl;
-                            str10 = intl5.string(tmp3(1113).t.MRdR7z);
+                            const intl5 = tmp3(1112).intl;
+                            str10 = intl5.string(tmp3(1112).t.MRdR7z);
                           }
                           provider = type.provider;
                           url5 = type.url;
@@ -422,7 +422,7 @@ export default function transformEmbeds(arg0) {
                         }
                         rawTitle = type.rawTitle;
                       }
-                      parseEmbedTitleMarkup = tmp3(8733).parseEmbedTitleMarkup;
+                      parseEmbedTitleMarkup = tmp3(8671).parseEmbedTitleMarkup;
                     }
                     let tmp27 = null == tmp25;
                     if (!tmp27) {

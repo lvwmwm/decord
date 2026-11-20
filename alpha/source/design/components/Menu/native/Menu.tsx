@@ -1,25 +1,25 @@
-// Module ID: 15126
-// Function ID: 15127
+// Module ID: 15090
+// Function ID: 15091
 // Name: Menu
-// Dependencies: [32, 19, 17, 1072, 21, 15127, 4792, 575, 1655, 1708, 4806, 1630, 1496, 1380, 4801, 1113, 5802, 5002, 5803, 15128, 15129, 5393, 2]
+// Dependencies: [32, 19, 17, 1071, 21, 15091, 4794, 575, 1653, 1706, 4808, 1628, 1494, 1378, 4803, 1112, 5804, 5004, 5805, 15092, 15093, 5395, 2]
 // Exports: Menu
 
-// Module 15126 (Menu)
+// Module 15090 (Menu)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import intl2 from "intl" /* 1113 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import _mod1708 from "module_1708" /* 1708 */;
-import timing_timing from "timing/timing" /* 5002 */;
-import spring_spring from "spring/spring" /* 5393 */;
-import react_native from "react-native" /* 5802 */;
-import Easing_Easing from "Easing/Easing" /* 15127 */;
+import Constants from "Constants" /* 1071 */;
+import intl2 from "intl" /* 1112 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import _mod1706 from "module_1706" /* 1706 */;
+import timing_timing from "timing/timing" /* 5004 */;
+import spring_spring from "spring/spring" /* 5395 */;
+import react_native from "react-native" /* 5804 */;
+import Easing_Easing from "Easing/Easing" /* 15091 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -46,7 +46,7 @@ const merged = Object.assign(StyleSheet.absoluteFillObject);
 obj4 = { position: "absolute", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH, borderRadius: nativeDefault.radii.sm, width: 220 };
 let closure_10 = createStyles(obj2);
 const context = react.createContext({ menuClose: NOOP, menuDismiss: NOOP });
-let items = [{ code: "(function measureButtonRef_MenuTsx1(ref,setDimensions){let[measure,scheduleOnRN]=this.__closure;const measurements=measure(ref);if(measurements==null)return;scheduleOnRN(setDimensions,measurements);})" }, _mod1655.measure, _mod1708.scheduleOnRN];
+let items = [{ code: "(function measureButtonRef_MenuTsx1(ref,setDimensions){let[measure,scheduleOnRN]=this.__closure;const measurements=measure(ref);if(measurements==null)return;scheduleOnRN(setDimensions,measurements);})" }, _mod1653.measure, _mod1706.scheduleOnRN];
 let c0;
 let c1;
 [tmp6, tmp7, tmp8] = items;
@@ -124,9 +124,9 @@ export function Menu(toggleButtonRef) {
   function openMenuCallback() {
     obj = PlatformUtils;
     if (obj.isAndroid()) {
-      const AccessibilityAnnouncer = tmp(4801).AccessibilityAnnouncer;
+      const AccessibilityAnnouncer = tmp(4803).AccessibilityAnnouncer;
       const announce = AccessibilityAnnouncer.announce;
-      const intl = tmp(1113).intl;
+      const intl = tmp(1112).intl;
       announce(intl.string(intl2.t.ZqK0uI));
     }
     const obj2 = { ref };
@@ -157,7 +157,7 @@ export function Menu(toggleButtonRef) {
     }
     const tmp3 = null != current && null == size2;
     if (tmp3) {
-      obj = _mod1708;
+      obj = _mod1706;
       obj.scheduleOnUI(measureButtonRef, toggleButtonRef, closure_3);
     }
   }, items);
@@ -173,7 +173,7 @@ export function Menu(toggleButtonRef) {
     set = sharedValue.set;
     const withTiming = timing_timing.withTiming;
     timing_timing;
-    items[1] = _mod1708.scheduleOnRN;
+    items[1] = _mod1706.scheduleOnRN;
     items[2] = onClose;
     let c0;
     let c1;
@@ -388,7 +388,7 @@ export function Menu(toggleButtonRef) {
       set = sharedValue.set;
       const withSpring = spring_spring.withSpring;
       spring_spring;
-      items[1] = _mod1708.scheduleOnRN;
+      items[1] = _mod1706.scheduleOnRN;
       items[2] = openMenuCallback;
       let c0;
       let c1;

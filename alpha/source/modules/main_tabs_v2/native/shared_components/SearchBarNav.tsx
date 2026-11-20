@@ -1,19 +1,19 @@
-// Module ID: 13106
-// Function ID: 13107
+// Module ID: 13076
+// Function ID: 13077
 // Name: SearchBarNav
-// Dependencies: [19, 17, 21, 4792, 5346, 575, 6911, 1113, 1380, 6980, 5383, 7308, 2]
+// Dependencies: [19, 17, 21, 4794, 5348, 575, 6910, 1112, 1378, 6979, 5385, 7307, 2]
 // Exports: default
 
-// Module 13106 (SearchBarNav)
+// Module 13076 (SearchBarNav)
 import nativeDefault from "native" /* 575 */;
-import intl3 from "intl" /* 1113 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
-import NavigatorConstants from "NavigatorConstants" /* 5346 */;
-import Pressables from "Pressables" /* 6911 */;
+import intl3 from "intl" /* 1112 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
+import NavigatorConstants from "NavigatorConstants" /* 5348 */;
+import Pressables from "Pressables" /* 6910 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -53,11 +53,11 @@ export default function SearchBarNav(arg0) {
   const obj2 = PlatformUtils;
   if (obj2.isAndroid()) {
     const obj3 = { style: tmp2.cancelIcon };
-    tmp3Result = tmp3(tmp4(6980).ArrowLargeLeftIcon, obj3);
+    tmp3Result = tmp3(tmp4(6979).ArrowLargeLeftIcon, obj3);
   } else {
     const obj4 = { style: tmp2.cancelText, maxFontSizeMultiplier: 2, variant: "body-md/semibold", color: "mobile-text-heading-primary", children: intl2.string(intl3.t["ETE/oC"]) };
-    const Text = tmp4(5383).Text;
-    intl2 = tmp4(1113).intl;
+    const Text = tmp4(5385).Text;
+    intl2 = tmp4(1112).intl;
     tmp3Result = tmp3(Text, obj4);
   }
   const tmp3Result2 = _false(PressableOpacity, obj);
@@ -72,7 +72,7 @@ export default function SearchBarNav(arg0) {
   const obj6 = { style: tmp2.flex, children: _false(React2, obj7) };
   obj7 = { children: _false(SearchBar, obj8) };
   obj8 = { size: "md", round: true, ref };
-  SearchBar = tmp4(7308).SearchBar;
+  SearchBar = tmp4(7307).SearchBar;
   const merged1 = Object.assign(merged);
   items[1] = _false(React2, obj6);
   let tmp12 = null;

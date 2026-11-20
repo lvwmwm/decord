@@ -1,21 +1,21 @@
-// Module ID: 14607
-// Function ID: 14608
+// Module ID: 14575
+// Function ID: 14576
 // Name: NsfwGateGuild
-// Dependencies: [19, 17, 4704, 1388, 10461, 1072, 21, 4792, 575, 1113, 2188, 1256, 10380, 7197, 5479, 14608, 5383, 5390, 2]
+// Dependencies: [19, 17, 4706, 1386, 10403, 1071, 21, 4794, 575, 1112, 2186, 1255, 10322, 7196, 5481, 14576, 5385, 5392, 2]
 // Exports: default
 
-// Module 14607 (NsfwGateGuild)
+// Module 14575 (NsfwGateGuild)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 10380 */;
-import Constants2 from "Constants" /* 10461 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 10322 */;
+import Constants2 from "Constants" /* 10403 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 4704 */;
-import UserStore from "UserStore" /* 1388 */;
-import Constants from "Constants" /* 1072 */;
+import GuildMemberStore from "GuildMemberStore" /* 4706 */;
+import UserStore from "UserStore" /* 1386 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -40,15 +40,15 @@ export default function NsfwGateGuild(guildId) {
   let currentUser;
   const onClose = guildId.onClose;
   const tmp = closure_12();
-  const intl = guildId(1113).intl;
-  const stringResult = intl.string(guildId(1113).t.vAymlG);
-  const intl2 = guildId(1113).intl;
-  const stringResult1 = intl2.string(guildId(1113).t.Crj6eC);
-  const intl3 = guildId(1113).intl;
+  const intl = guildId(1112).intl;
+  const stringResult = intl.string(guildId(1112).t.vAymlG);
+  const intl2 = guildId(1112).intl;
+  const stringResult1 = intl2.string(guildId(1112).t.Crj6eC);
+  const intl3 = guildId(1112).intl;
   const format = intl3.format;
   let obj = { helpURL: obj2.getArticleURL(constants2.NSFW_GUILD_GUIDELINES) };
-  const Z12LNW = guildId(1113).t.Z12LNW;
-  obj2 = currentUser(2188);
+  const Z12LNW = guildId(1112).t.Z12LNW;
+  obj2 = currentUser(2186);
   const formatResult = format(Z12LNW, obj);
   currentUser = UserStore.getCurrentUser();
   const items = [guildId, currentUser];
@@ -83,19 +83,19 @@ export default function NsfwGateGuild(guildId) {
     track(GUILD_NSFW_GATE_VIEWED, obj);
   }, items);
   const obj3 = { style: tmp.container, children: items1 };
-  items1 = [closure_10(currentUser(7197), {}), , , , , ];
-  const obj4 = { source: currentUser(14608), style: tmp.image };
-  const tmp7 = currentUser(5479);
+  items1 = [closure_10(currentUser(7196), {}), , , , , ];
+  const obj4 = { source: currentUser(14576), style: tmp.image };
+  const tmp7 = currentUser(5481);
   items1[1] = closure_10(tmp7, obj4);
   const obj5 = { style: tmp.header, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: stringResult };
-  items1[2] = closure_10(guildId(5383).Heading, obj5);
+  items1[2] = closure_10(guildId(5385).Heading, obj5);
   const obj6 = { style: tmp.description, variant: "body-md/normal", color: "text-default", children: stringResult1 };
-  items1[3] = closure_10(guildId(5383).Text, obj6);
+  items1[3] = closure_10(guildId(5385).Text, obj6);
   const obj7 = { style: tmp.description, variant: "body-md/normal", color: "text-default", children: formatResult };
-  items1[4] = closure_10(guildId(5383).Text, obj7);
-  const obj8 = { onPress: onClose, size: "md", text: intl4.string(guildId(1113).t.gRqiWV) };
-  const Button = guildId(5390).Button;
-  intl4 = guildId(1113).intl;
+  items1[4] = closure_10(guildId(5385).Text, obj7);
+  const obj8 = { onPress: onClose, size: "md", text: intl4.string(guildId(1112).t.gRqiWV) };
+  const Button = guildId(5392).Button;
+  intl4 = guildId(1112).intl;
   items1[5] = closure_10(Button, obj8);
   return closure_11(View, obj3);
 };

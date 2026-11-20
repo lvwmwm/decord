@@ -1,18 +1,18 @@
-// Module ID: 7225
-// Function ID: 7226
+// Module ID: 7224
+// Function ID: 7225
 // Name: ChangeEmailStore
-// Dependencies: [560, 1263, 2]
+// Dependencies: [560, 1262, 2]
 // Exports: resetChangeEmailStore, setChangeEmailError, setEmailToken, useChangeEmailError
 
-// Module 7225 (ChangeEmailStore)
-import react_native from "react-native" /* 1263 */;
+// Module 7224 (ChangeEmailStore)
+import react_native from "react-native" /* 1262 */;
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, dependencyMap, errors;
 
-const f91939 = () => state.setState((errors) => {
+const f90312 = () => state.setState((errors) => {
   let obj2;
   const obj = { errors: obj2 };
   obj2 = {};
@@ -32,7 +32,7 @@ export function setChangeEmailError(arg0, arg1) {
   _require = arg0;
   dependencyMap = arg1;
   const obj = require("react-native");
-  obj.batchUpdates(f91939);
+  obj.batchUpdates(f90312);
 }
 export function useChangeEmailError(arg0) {
   let obj;
@@ -50,7 +50,7 @@ export function useChangeEmailError(arg0) {
       let state;
       let closure_1 = arg0;
       let obj = react_native;
-      obj.batchUpdates(f91939);
+      obj.batchUpdates(f90312);
     }
   ];
   return items;

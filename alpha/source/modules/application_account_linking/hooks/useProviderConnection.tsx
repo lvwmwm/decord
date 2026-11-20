@@ -1,14 +1,14 @@
-// Module ID: 7419
-// Function ID: 7420
+// Module ID: 7418
+// Function ID: 7419
 // Name: useProviderConnection
-// Dependencies: [5, 19, 6568, 504, 6949, 2]
+// Dependencies: [5, 19, 6570, 504, 6948, 2]
 // Exports: useProviderConnection
 
-// Module 7419 (useProviderConnection)
-import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 6949 */;
+// Module 7418 (useProviderConnection)
+import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 6948 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6568 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6570 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -48,7 +48,7 @@ export function useProviderConnection(provider_id) {
         const obj = { value, done: true };
         return obj;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c5;

@@ -1,8 +1,8 @@
-// Module ID: 16425
-// Function ID: 16426
+// Module ID: 16247
+// Function ID: 16248
 // Dependencies: [2]
 
-// Module 16425
+// Module 16247
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/quests/bounties/_3d_orbs.mov.js");

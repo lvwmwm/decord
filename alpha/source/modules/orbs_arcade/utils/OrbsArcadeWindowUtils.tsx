@@ -1,11 +1,11 @@
-// Module ID: 16506
-// Function ID: 16507
+// Module ID: 16328
+// Function ID: 16329
 // Name: OrbsArcadeWindowUtils
-// Dependencies: [1113, 2]
+// Dependencies: [1112, 2]
 // Exports: formatOrbsArcadeTimeUntil
 
-// Module 16506 (OrbsArcadeWindowUtils)
-import intl4 from "intl" /* 1113 */;
+// Module 16328 (OrbsArcadeWindowUtils)
+import intl4 from "intl" /* 1112 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/orbs_arcade/utils/OrbsArcadeWindowUtils.tsx");

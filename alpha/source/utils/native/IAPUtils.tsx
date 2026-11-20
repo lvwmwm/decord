@@ -1,7 +1,7 @@
 // Module ID: 9167
 // Function ID: 9168
 // Name: IAPUtils
-// Dependencies: [5, 17, 5386, 5456, 1388, 8691, 1072, 1390, 1380, 9168, 9169, 3, 38, 9188, 8051, 12, 1269, 4605, 504, 9189, 1379, 4749, 9190, 2]
+// Dependencies: [5, 17, 5388, 5458, 1386, 8731, 1071, 1388, 1378, 9168, 9169, 3, 38, 9188, 8050, 12, 1268, 4607, 504, 9189, 1377, 4751, 9190, 2]
 // Exports: makeIAPRequest, manageSubscription, shouldMockIAPForceEnable, useCanPurchaseIAP
 
 // Module 9167 (IAPUtils)
@@ -9,22 +9,22 @@ import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
-import v1 from "v1" /* 1269 */;
-import react_nativeAll from "react-native" /* 1379 */;
-import PremiumConstants from "PremiumConstants" /* 1390 */;
-import DeviceUtils from "DeviceUtils" /* 4749 */;
-import CountryCodeUtils from "CountryCodeUtils" /* 5456 */;
+import v1 from "v1" /* 1268 */;
+import react_nativeAll from "react-native" /* 1377 */;
+import PremiumConstants from "PremiumConstants" /* 1388 */;
+import DeviceUtils from "DeviceUtils" /* 4751 */;
+import CountryCodeUtils from "CountryCodeUtils" /* 5458 */;
 import react_native2 from "react-native" /* 9168 */;
 import _mod9169 from "module_9169" /* 9169 */;
 import StorekitIAPQueueDefault from "StorekitIAPQueue" /* 9188 */;
 import GeneratedPaymentCurrencies from "GeneratedPaymentCurrencies" /* 9189 */;
 import iapProducts from "iapProducts" /* 9190 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import DevSettingsStore from "DevSettingsStore" /* 5386 */;
-import UserStore from "UserStore" /* 1388 */;
-import IAPStore from "IAPStore" /* 8691 */;
-import Constants from "Constants" /* 1072 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1380 */;
+import DevSettingsStore from "DevSettingsStore" /* 5388 */;
+import UserStore from "UserStore" /* 1386 */;
+import IAPStore from "IAPStore" /* 8731 */;
+import Constants from "Constants" /* 1071 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1378 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -33,7 +33,7 @@ let _require, arr4, c4, closure_3, closure_4, closure_5;
 let IOS_BUNDLE_ID;
 let metroImportAll;
 let tmp;
-const ProductIds = tmp(8051);
+const ProductIds = tmp(8050);
 function serializePurchaseResponse(originalTransactionDate) {
   let parsed;
   _modDef38(null != originalTransactionDate.transactionId, "should have transactionId");
@@ -69,7 +69,7 @@ let obj = function _makeIAPRequest() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -174,7 +174,7 @@ obj = function _purchaseProduct() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -267,7 +267,7 @@ obj = function _restorePurchases() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -464,7 +464,7 @@ obj = function _fetchStoreFront() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;

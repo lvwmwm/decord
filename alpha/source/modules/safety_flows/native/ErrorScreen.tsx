@@ -1,17 +1,17 @@
-// Module ID: 20216
-// Function ID: 20217
+// Module ID: 20036
+// Function ID: 20037
 // Name: ErrorScreen
-// Dependencies: [5, 32, 19, 17, 21, 4792, 575, 1502, 20194, 20198, 5383, 1113, 5808, 5390, 6304, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4794, 575, 1500, 20014, 20018, 5385, 1112, 5810, 5392, 6306, 2]
 // Exports: default
 
-// Module 20216 (ErrorScreen)
+// Module 20036 (ErrorScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -52,7 +52,7 @@ export default function ErrorScreen() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -99,7 +99,7 @@ export default function ErrorScreen() {
             c3 = 0;
             closure_129_0(false);
             c5 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp29) {
           closure_2 = tmp29;

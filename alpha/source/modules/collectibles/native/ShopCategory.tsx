@@ -1,25 +1,25 @@
-// Module ID: 17335
-// Function ID: 17336
+// Module ID: 17162
+// Function ID: 17163
 // Name: ShopCategory
-// Dependencies: [19, 17, 1074, 1072, 21, 9425, 4792, 575, 1655, 5002, 1113, 7401, 1502, 16443, 17332, 7371, 17336, 8816, 9455, 5006, 8798, 7955, 7420, 6911, 5479, 7446, 2]
+// Dependencies: [19, 17, 1073, 1071, 21, 9425, 4794, 575, 1653, 5004, 1112, 7400, 1500, 16265, 17159, 7370, 17163, 8816, 9455, 5008, 8798, 7954, 7419, 6910, 5481, 7445, 2]
 // Exports: ShopCategory, ShopCategorySkeleton
 
-// Module 17335 (ShopCategory)
+// Module 17162 (ShopCategory)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import timing_timing from "timing/timing" /* 5002 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7420 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7955 */;
+import Constants from "Constants" /* 1071 */;
+import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1073 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import timing_timing from "timing/timing" /* 5004 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5008 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7419 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7954 */;
 import openProductDetailsActionSheet2 from "openProductDetailsActionSheet" /* 8798 */;
 import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 8816 */;
 import CollectiblesShopCardV2 from "CollectiblesShopCardV2" /* 9425 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -73,20 +73,20 @@ export function ShopCategorySkeleton() {
   let tmp7;
   const tmp = closure_9();
   _require = tmp;
-  let obj = require("module_1655");
+  let obj = require("module_1653");
   const sharedValue = obj.useSharedValue(0.3);
   const items = [sharedValue];
   const effect = react.useEffect(() => {
     set = sharedValue.set;
-    const withRepeat = _mod1655.withRepeat;
-    _mod1655;
+    const withRepeat = _mod1653.withRepeat;
+    _mod1653;
     const obj = timing_timing;
     const result = set(withRepeat(obj.withTiming(1, { duration: 650 }), -1, true));
   }, items);
   const items1 = [closure_12, sharedValue];
   let c0;
   [tmp6, tmp7] = items1;
-  const obj2 = require("module_1655");
+  const obj2 = require("module_1653");
   class ShopCategoryTsx1 {
     constructor() {
       const obj = { opacity: _undefined.get() };
@@ -100,8 +100,8 @@ export function ShopCategorySkeleton() {
   const animatedStyle = obj2.useAnimatedStyle(ShopCategoryTsx1);
   const obj3 = { style: items3, accessibilityLabel: intl.string(require("intl").t.ZTNur7), accessibilityState: { busy: true }, accessible: true, children: items4 };
   items3 = [tmp.categoryContainer, animatedStyle];
-  View = sharedValue(1655).View;
-  intl = tmp2(1113).intl;
+  View = sharedValue(1653).View;
+  intl = tmp2(1112).intl;
   items4 = [, ];
   const obj4 = { style: tmp.categoryHeaderSkeleton };
   items4[0] = closure_7(View, obj4);
@@ -137,23 +137,23 @@ export function ShopCategory(category) {
   let isInImprovedMobileShopLoading;
   let tmp = analyticsLocations;
   ({ index, isDarkTheme } = category);
-  analyticsLocations = analyticsLocations(7401)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7400)().analyticsLocations;
   const tmp3 = isInImprovedMobileShopLoading();
-  let obj = category(1502);
+  let obj = category(1500);
   dependencyMap = obj.useNavigation();
   const unpublishedAt = category.unpublishedAt;
   const products = category.products;
-  let obj2 = category(16443);
+  let obj2 = category(16265);
   const obj3 = { products, bypassAndroidUnsyncedFilter: category.isOrbsExclusive };
   const filteredAndSortedProducts = obj2.useFilteredAndSortedProducts(obj3);
   const mobileBannerUrl = category.mobileBannerUrl;
-  const obj4 = category(17332);
+  const obj4 = category(17159);
   const collectiblesShopDeepLinkProps = obj4.useCollectiblesShopDeepLinkProps({ products: filteredAndSortedProducts });
   ({ productIndex, initialProductSkuId } = collectiblesShopDeepLinkProps);
   const initialVariantIndex = collectiblesShopDeepLinkProps.initialVariantIndex;
   const ref = unpublishedAt.useRef(null);
   let items = [category.storeListingId];
-  const obj6 = category(7371);
+  const obj6 = category(7370);
   const recyclingState = obj6.useRecyclingState(null, items, () => {
     const current = ref.current;
     if (current != null) {
@@ -161,12 +161,12 @@ export function ShopCategory(category) {
     }
   });
   let tmp10 = null != productIndex;
-  const useScrollToInitialIndexOnce = category(17336).useScrollToInitialIndexOnce;
-  const tmp9 = category(17336);
+  const useScrollToInitialIndexOnce = category(17163).useScrollToInitialIndexOnce;
+  const tmp9 = category(17163);
   if (tmp10) {
     tmp10 = productIndex > 0;
   }
-  const obj7 = { shouldScroll: tmp10, initialScrollIndex: productIndex, flashListRef: ref, afterMs: category(17336).INITIAL_SCROLL_DELAY_MS, resetKey: category.storeListingId };
+  const obj7 = { shouldScroll: tmp10, initialScrollIndex: productIndex, flashListRef: ref, afterMs: category(17163).INITIAL_SCROLL_DELAY_MS, resetKey: category.storeListingId };
   const scrollToInitialIndexOnce = useScrollToInitialIndexOnce(obj7);
   const tmp4Result = category(8816);
   collectiblesAnalyticsContext = tmp4Result.useCollectiblesAnalyticsContext();
@@ -211,8 +211,8 @@ export function ShopCategory(category) {
   const obj10 = {
     style: items3,
     accessibilityRole: "button",
-    accessibilityLabel: intl.formatToPlainString(category(1113).t.FNtLb3, obj11),
-    accessibilityHint: intl2.string(category(1113).t.F8ma9x),
+    accessibilityLabel: intl.formatToPlainString(category(1112).t.FNtLb3, obj11),
+    accessibilityHint: intl2.string(category(1112).t.F8ma9x),
     activeOpacity: 0.8,
     androidRippleConfig: { radius: tmp(575).radii.lg },
     hitSlop: 8,
@@ -232,24 +232,24 @@ export function ShopCategory(category) {
     },
     children: items4
   };
-  const PressableOpacity = tmp4(6911).PressableOpacity;
-  intl = tmp4(1113).intl;
+  const PressableOpacity = tmp4(6910).PressableOpacity;
+  intl = tmp4(1112).intl;
   obj11 = { category: category.name };
-  intl2 = tmp4(1113).intl;
+  intl2 = tmp4(1112).intl;
   let tmp16Result = null != mobileBannerUrl;
   ({ radius: tmp(575).radii.lg });
   if (tmp16Result) {
     const obj13 = { source: obj14, resizeMode: "cover", style: tmp3.imageBackground };
     obj14 = { uri: mobileBannerUrl };
-    tmp16Result = tmp16(tmp(5479), obj13);
+    tmp16Result = tmp16(tmp(5481), obj13);
   }
   items4 = [tmp16Result, ];
-  const obj15 = { style: tmp3.viewAllIcon, children: ref(category(7446).ChevronSmallRightIcon, { size: "sm", color: "white" }) };
+  const obj15 = { style: tmp3.viewAllIcon, children: ref(category(7445).ChevronSmallRightIcon, { size: "sm", color: "white" }) };
   items4[1] = ref(filteredAndSortedProducts, obj15);
   items5 = [collectiblesAnalyticsContext(PressableOpacity, obj10, category.storeListingId), ];
-  const obj16 = { ref, horizontal: true, accessibilityLabel: intl3.formatToPlainString(category(1113).t.FNtLb3, obj17), accessibilityRole: "list", data: filteredAndSortedProducts, renderItem: callback, drawDistance: 150, decelerationRate: "fast", snapToInterval: category(9425).COLLECTIBLES_SHOP_CARD_WIDTH + 12, showsHorizontalScrollIndicator: false, ListHeaderComponent: HeaderAndFooterSpacing, ListFooterComponent: HeaderAndFooterSpacing, ItemSeparatorComponent: Spacing, initialScrollIndex: productIndex };
-  const FlashList = tmp4(7371).FlashList;
-  intl3 = tmp4(1113).intl;
+  const obj16 = { ref, horizontal: true, accessibilityLabel: intl3.formatToPlainString(category(1112).t.FNtLb3, obj17), accessibilityRole: "list", data: filteredAndSortedProducts, renderItem: callback, drawDistance: 150, decelerationRate: "fast", snapToInterval: category(9425).COLLECTIBLES_SHOP_CARD_WIDTH + 12, showsHorizontalScrollIndicator: false, ListHeaderComponent: HeaderAndFooterSpacing, ListFooterComponent: HeaderAndFooterSpacing, ItemSeparatorComponent: Spacing, initialScrollIndex: productIndex };
+  const FlashList = tmp4(7370).FlashList;
+  intl3 = tmp4(1112).intl;
   obj17 = { category: category.name };
   items5[1] = ref(FlashList, obj16);
   return ref(CollectiblesAnalyticsProvider, obj8);

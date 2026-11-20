@@ -1,19 +1,19 @@
-// Module ID: 6942
-// Function ID: 6943
+// Module ID: 6941
+// Function ID: 6942
 // Name: Badge/Badge
-// Dependencies: [17, 21, 1113, 575, 4792, 5356, 5347, 6943, 5383, 2]
+// Dependencies: [17, 21, 1112, 575, 4794, 5358, 5349, 6942, 5385, 2]
 // Exports: Badge, getBadgeText
 
-// Module 6942 (Badge/Badge)
+// Module 6941 (Badge/Badge)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl5 from "intl" /* 1113 */;
-import LinearGradientDefault from "LinearGradient" /* 5347 */;
-import useToken from "useToken" /* 5356 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import BadgeShared from "BadgeShared" /* 6943 */;
+import intl5 from "intl" /* 1112 */;
+import LinearGradientDefault from "LinearGradient" /* 5349 */;
+import useToken from "useToken" /* 5358 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import BadgeShared from "BadgeShared" /* 6942 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

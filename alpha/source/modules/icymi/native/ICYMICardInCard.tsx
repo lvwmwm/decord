@@ -1,27 +1,27 @@
-// Module ID: 18179
-// Function ID: 18180
+// Module ID: 18006
+// Function ID: 18007
 // Name: ICYMICardInCard
-// Dependencies: [19, 17, 4641, 4704, 4663, 1072, 21, 18138, 575, 8903, 7203, 1187, 5398, 504, 6221, 9336, 5822, 5383, 5408, 18180, 1113, 7562, 18178, 6911, 6517, 6903, 2]
+// Dependencies: [19, 17, 4643, 4706, 4665, 1071, 21, 17965, 575, 8903, 7202, 1186, 5400, 504, 6223, 9336, 5824, 5385, 5410, 18007, 1112, 7561, 18005, 6910, 6519, 6902, 2]
 // Exports: default
 
-// Module 18179 (ICYMICardInCard)
+// Module 18006 (ICYMICardInCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import intl3 from "intl" /* 1113 */;
-import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import GuildIcon from "GuildIcon" /* 7203 */;
-import TextIcon2 from "TextIcon" /* 7562 */;
+import Constants from "Constants" /* 1071 */;
+import intl3 from "intl" /* 1112 */;
+import native from "native" /* 1186 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import GuildIcon from "GuildIcon" /* 7202 */;
+import TextIcon2 from "TextIcon" /* 7561 */;
 import ClipView from "ClipView" /* 8903 */;
-import openDetailsActionSheet from "openDetailsActionSheet" /* 18178 */;
-import getIconForChannel from "getIconForChannel" /* 18180 */;
+import openDetailsActionSheet from "openDetailsActionSheet" /* 18005 */;
+import getIconForChannel from "getIconForChannel" /* 18007 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import GuildMemberStore from "GuildMemberStore" /* 4704 */;
-import GuildStore from "GuildStore" /* 4663 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import GuildMemberStore from "GuildMemberStore" /* 4706 */;
+import GuildStore from "GuildStore" /* 4665 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 18138 */;
+import createICYMIStyles from "createICYMIStyles" /* 17965 */;
 import size_mod from "module_2" /* 2 */;
 
 const GuildIconDefault = GuildIcon;

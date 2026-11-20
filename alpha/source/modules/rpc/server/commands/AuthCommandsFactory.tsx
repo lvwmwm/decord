@@ -1,21 +1,21 @@
-// Module ID: 15655
-// Function ID: 15656
+// Module ID: 15619
+// Function ID: 15620
 // Name: AuthCommandsFactory
-// Dependencies: [32, 5, 2165, 2143, 1388, 6233, 1072, 10745, 1089, 510, 6790, 2151, 5407, 10641, 6892, 6888, 6895, 4729, 1084, 1285, 572, 15593, 6794, 1490, 2]
+// Dependencies: [32, 5, 2163, 2141, 1386, 6235, 1071, 10687, 1088, 510, 6790, 2149, 5409, 10583, 6891, 6887, 6894, 4731, 1083, 1284, 572, 15557, 6794, 1488, 2]
 // Exports: default
 
-// Module 15655 (AuthCommandsFactory)
+// Module 15619 (AuthCommandsFactory)
 import Storage3 from "Storage" /* 510 */;
-import DurationsDefault from "Durations" /* 1089 */;
+import DurationsDefault from "Durations" /* 1088 */;
 import RPCErrorDefault from "RPCError" /* 6790 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 2165 */;
-import ApplicationRecord from "ApplicationRecord" /* 2143 */;
-import UserStore from "UserStore" /* 1388 */;
-import Constants_mod from "Constants" /* 6233 */;
-import Constants_mod2 from "Constants" /* 1072 */;
-import LeakyBucket_mod from "LeakyBucket" /* 10745 */;
+import ApplicationStore from "ApplicationStore" /* 2163 */;
+import ApplicationRecord from "ApplicationRecord" /* 2141 */;
+import UserStore from "UserStore" /* 1386 */;
+import Constants_mod from "Constants" /* 6235 */;
+import Constants_mod2 from "Constants" /* 1071 */;
+import LeakyBucket_mod from "LeakyBucket" /* 10687 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -68,7 +68,7 @@ let obj = function _authorizeWithPrompt() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -438,7 +438,7 @@ obj = function _authenticate() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c5;
@@ -611,7 +611,7 @@ export default function createAuthCommandHandlers(arg0, arg1) {
   let obj2 = require("CONTEXT_MENU_ICON_NAMES");
   let obj3 = {
     handler(socket) {
-      const f140070 = function(result) {
+      const f137953 = function(result) {
         let access_token;
         let expires_in;
         let scope;
@@ -717,7 +717,7 @@ export default function createAuthCommandHandlers(arg0, arg1) {
                   let obj3 = { client_id: tmp, scope: IDENTIFY, response_type: "token", signal, isSocketRpcPrivateScope: false };
                   let tmp8 = signal;
                   const promise = authorizeWithPrompt(obj3, closure_0, closure_1);
-                  return promise.then(f140070);
+                  return promise.then(f137953);
                 } else {
                   let str = "Trying to call a non-function";
                   throw new TypeError("Trying to call a non-function");
@@ -726,7 +726,7 @@ export default function createAuthCommandHandlers(arg0, arg1) {
             } else {
               let obj3 = { client_id: id, scope: IDENTIFY, response_type: "token", signal, isSocketRpcPrivateScope: false };
               let promise = authorizeWithPrompt(obj3, socket, signal);
-              catchPromise = promise.then(f140070);
+              catchPromise = promise.then(f137953);
             }
             return catchPromise;
           }

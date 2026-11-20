@@ -1,11 +1,11 @@
-// Module ID: 16626
-// Function ID: 16627
+// Module ID: 16449
+// Function ID: 16450
 // Name: QuestBarExpandRateV1Experiment
-// Dependencies: [1452, 2]
+// Dependencies: [1450, 2]
 // Exports: useQuestBarExpandRateV1Config
 
-// Module 16626 (QuestBarExpandRateV1Experiment)
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+// Module 16449 (QuestBarExpandRateV1Experiment)
+import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2026-11-quest-bar-expand-rate-asset-cta", kind: "user", defaultConfig: { squareAsset: "default", rewardMessage: "generic" }, variations: { 0: { squareAsset: "default", rewardMessage: "generic" }, 1: { squareAsset: "reward", rewardMessage: "generic" }, 2: { squareAsset: "reward", rewardMessage: "orbAmount" }, 3: { squareAsset: "reward", rewardMessage: "bountyIllustration" }, 4: { squareAsset: "advertiser", rewardMessage: "orbAmount" }, 5: { squareAsset: "advertiser", rewardMessage: "bountyIllustration" } } };

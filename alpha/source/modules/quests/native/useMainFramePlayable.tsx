@@ -1,14 +1,14 @@
-// Module ID: 19262
-// Function ID: 19263
+// Module ID: 19081
+// Function ID: 19082
 // Name: useMainFramePlayable
-// Dependencies: [6502, 16525, 6503, 504, 2]
+// Dependencies: [6504, 16347, 6505, 504, 2]
 // Exports: default
 
-// Module 19262 (useMainFramePlayable)
+// Module 19081 (useMainFramePlayable)
 import get_initialized from "get initialized" /* 504 */;
-import FramesConstants from "FramesConstants" /* 6503 */;
-import FramesStore from "FramesStore" /* 6502 */;
-import PlayableStore from "PlayableStore" /* 16525 */;
+import FramesConstants from "FramesConstants" /* 6505 */;
+import FramesStore from "FramesStore" /* 6504 */;
+import PlayableStore from "PlayableStore" /* 16347 */;
 import size from "module_2" /* 2 */;
 
 let playableForFrame;

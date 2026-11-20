@@ -1,13 +1,13 @@
-// Module ID: 18266
-// Function ID: 18267
+// Module ID: 18093
+// Function ID: 18094
 // Name: showMembersManagementActionSheet
-// Dependencies: [1388, 1113, 5006, 18267, 2121, 6768, 18268, 7431, 2]
+// Dependencies: [1386, 1112, 5008, 18094, 2119, 6768, 18095, 7430, 2]
 // Exports: default, getMembersManagementActions
 
-// Module 18266 (showMembersManagementActionSheet)
-import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
-import UserStore from "UserStore" /* 1388 */;
+// Module 18093 (showMembersManagementActionSheet)
+import asyncRequire from "asyncRequire" /* 2119 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5008 */;
+import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/guild_settings/native/showMembersManagementActionSheet.tsx");
@@ -21,14 +21,14 @@ export default function showMembersManagementActionSheet(guild) {
   guild = guild.guild;
   ({ canPrune, selectedRoleId: importDefault, onFilterRoleId: dependencyMap } = guild);
   let obj = {
-    label: intl.string(guild(1113).t.pEasFX),
+    label: intl.string(guild(1112).t.pEasFX),
     onPress() {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { guild, selectedRoleId: importDefault, onFilterRoleId: dependencyMap };
-      obj.openLazy(asyncRequire(18267, dependencyMap.paths), "MembersFilter", obj2);
+      obj.openLazy(asyncRequire(18094, dependencyMap.paths), "MembersFilter", obj2);
     }
   };
-  intl = guild(1113).intl;
+  intl = guild(1112).intl;
   const items = [obj];
   if (canPrune == null) {
     const tmpResult = guild(6768);
@@ -36,19 +36,19 @@ export default function showMembersManagementActionSheet(guild) {
   }
   if (canPrune) {
     let obj2 = {
-      label: intl2.string(guild(1113).t["2mIlKQ"]),
+      label: intl2.string(guild(1112).t["2mIlKQ"]),
       onPress() {
           const obj = ActionSheetActionCreatorsDefault;
           const obj2 = { guild };
-          obj.openLazy(asyncRequire(18268, dependencyMap.paths), "MembersPrune", obj2);
+          obj.openLazy(asyncRequire(18095, dependencyMap.paths), "MembersPrune", obj2);
         },
       isDestructive: true
     };
     const push = items.push;
-    intl2 = tmp(1113).intl;
+    intl2 = tmp(1112).intl;
     push(obj2);
   }
-  const tmpResult2 = guild(7431);
+  const tmpResult2 = guild(7430);
   const result = tmpResult2.showSimpleActionSheet({ key: "GuildSettingsMembersMore", options: items, hasIcons: false });
 };
 export function getMembersManagementActions(guild) {
@@ -60,14 +60,14 @@ export function getMembersManagementActions(guild) {
   guild = guild.guild;
   ({ canPrune, selectedRoleId: importDefault, onFilterRoleId: dependencyMap } = guild);
   let obj = {
-    label: intl.string(guild(1113).t.pEasFX),
+    label: intl.string(guild(1112).t.pEasFX),
     action() {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { guild, selectedRoleId: importDefault, onFilterRoleId: dependencyMap };
-      obj.openLazy(asyncRequire(18267, dependencyMap.paths), "MembersFilter", obj2);
+      obj.openLazy(asyncRequire(18094, dependencyMap.paths), "MembersFilter", obj2);
     }
   };
-  intl = guild(1113).intl;
+  intl = guild(1112).intl;
   const items = [obj];
   if (canPrune == null) {
     const tmpResult = guild(6768);
@@ -75,16 +75,16 @@ export function getMembersManagementActions(guild) {
   }
   if (canPrune) {
     let obj2 = {
-      label: intl2.string(guild(1113).t["2mIlKQ"]),
+      label: intl2.string(guild(1112).t["2mIlKQ"]),
       action() {
           const obj = ActionSheetActionCreatorsDefault;
           const obj2 = { guild };
-          obj.openLazy(asyncRequire(18268, dependencyMap.paths), "MembersPrune", obj2);
+          obj.openLazy(asyncRequire(18095, dependencyMap.paths), "MembersPrune", obj2);
         },
       variant: "destructive"
     };
     const push = items.push;
-    intl2 = tmp(1113).intl;
+    intl2 = tmp(1112).intl;
     push(obj2);
   }
   return items;

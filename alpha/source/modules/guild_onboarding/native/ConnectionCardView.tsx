@@ -1,18 +1,18 @@
-// Module ID: 7412
-// Function ID: 7413
+// Module ID: 7411
+// Function ID: 7412
 // Name: ConnectionCardView
-// Dependencies: [19, 17, 21, 4792, 575, 5383, 1113, 7413, 5390, 2]
+// Dependencies: [19, 17, 21, 4794, 575, 5385, 1112, 7412, 5392, 2]
 // Exports: default
 
-// Module 7412 (ConnectionCardView)
+// Module 7411 (ConnectionCardView)
 import nativeDefault from "native" /* 575 */;
-import intl3 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import CircleCheckIcon from "CircleCheckIcon" /* 7413 */;
+import intl3 from "intl" /* 1112 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import CircleCheckIcon from "CircleCheckIcon" /* 7412 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let c2;
@@ -63,7 +63,7 @@ export default function ConnectionCardView(description) {
   let tmp4Result = null != description && description.length > 0;
   if (tmp4Result) {
     const obj5 = { variant: "body-sm/normal", color: "text-subtle", children: description };
-    tmp4Result = tmp4(tmp5(5383).Text, obj5);
+    tmp4Result = tmp4(tmp5(5385).Text, obj5);
   }
   items1[1] = tmp4Result;
   items[1] = hasOwnProperty(React2, obj4);
@@ -73,14 +73,14 @@ export default function ConnectionCardView(description) {
   } else if (isConnected) {
     const obj6 = { style: tmp.connectedStatus, children: items3 };
     const obj7 = { variant: "body-sm/medium", color: "text-feedback-positive", children: intl2.string(intl3.t["LV+CXH"]) };
-    const Text = tmp5(5383).Text;
-    intl2 = tmp5(1113).intl;
+    const Text = tmp5(5385).Text;
+    intl2 = tmp5(1112).intl;
     items3 = [React3(Text, obj7), React3(CircleCheckIcon.CircleCheckIcon, { size: "sm", color: "status-positive" })];
     tmp4Result2 = tmp2(tmp3, obj6);
   } else {
     const obj8 = { variant: "primary", size: "sm", onPress: onConnect, text: intl.string(intl3.t.S0W8Z5), disabled: !canConnect };
-    const Button = tmp5(5390).Button;
-    intl = tmp5(1113).intl;
+    const Button = tmp5(5392).Button;
+    intl = tmp5(1112).intl;
     tmp4Result2 = tmp4(Button, obj8);
   }
   items2[1] = tmp4Result2;

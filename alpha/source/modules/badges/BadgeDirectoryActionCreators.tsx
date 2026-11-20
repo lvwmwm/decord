@@ -1,14 +1,14 @@
-// Module ID: 8023
-// Function ID: 8024
+// Module ID: 8022
+// Function ID: 8023
 // Name: BadgeDirectoryActionCreators
-// Dependencies: [5, 1388, 1072, 572, 1285, 6244, 6249, 559, 1089, 1242, 2]
+// Dependencies: [5, 1386, 1071, 572, 1284, 6246, 6251, 559, 1088, 1241, 2]
 // Exports: ackBadge, fetchBadgeDirectory, fetchBadgeSummary, markBadgeDirectoryBadgeIndicatorSeen
 
-// Module 8023 (BadgeDirectoryActionCreators)
-import HTTPUtils from "HTTPUtils" /* 1285 */;
+// Module 8022 (BadgeDirectoryActionCreators)
+import HTTPUtils from "HTTPUtils" /* 1284 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserStore from "UserStore" /* 1388 */;
-import Constants from "Constants" /* 1072 */;
+import UserStore from "UserStore" /* 1386 */;
+import Constants from "Constants" /* 1071 */;
 import Dispatcher from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
@@ -49,7 +49,7 @@ let obj = function _requestBadgeDirectory() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -173,7 +173,7 @@ let obj = function _requestBadgeDirectory() {
               c6 = 0;
             }
             c8 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp77) {
           closure_5 = tmp77;
@@ -207,7 +207,7 @@ obj = function _fetchBadge() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -267,7 +267,7 @@ obj = function _fetchBadge() {
             c6 = 0;
           }
           c8 = 3;
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp30) {
           closure_5 = tmp30;
           if (0 === c6) {
@@ -299,7 +299,7 @@ obj = function _requestBadgeSummary() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -370,7 +370,7 @@ obj = function _requestBadgeSummary() {
               c7 = 0;
             }
             c9 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp48) {
           closure_6 = tmp48;
@@ -401,7 +401,7 @@ obj = function _ackBadge() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -454,7 +454,7 @@ obj = function _ackBadge() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp28) {
           closure_3 = tmp28;
           if (0 === c4) {
@@ -543,7 +543,7 @@ export function fetchBadgeDirectory(id, arg1) {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "HermesInternal", done: "+60" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             let c3;
@@ -604,7 +604,7 @@ export function fetchBadgeDirectory(id, arg1) {
                   map.delete(closure_128_1);
                 }
                 c4 = 3;
-                return { value: "HermesInternal", done: "+60" };
+                return { value: "HermesInternal", done: null };
               }
             } catch (tmp40) {
               closure_2 = tmp40;

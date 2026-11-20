@@ -1,13 +1,13 @@
-// Module ID: 13868
-// Function ID: 13869
+// Module ID: 13837
+// Function ID: 13838
 // Name: useTieredTenureBadgeForUser
-// Dependencies: [6837, 1388, 504, 6844, 13869, 2]
+// Dependencies: [6837, 1386, 504, 6844, 13838, 2]
 // Exports: useTieredTenureBadgeForUser
 
-// Module 13868 (useTieredTenureBadgeForUser)
-import PremiumPerkGates from "PremiumPerkGates" /* 13869 */;
+// Module 13837 (useTieredTenureBadgeForUser)
+import PremiumPerkGates from "PremiumPerkGates" /* 13838 */;
 import UserProfileStore from "UserProfileStore" /* 6837 */;
-import UserStore from "UserStore" /* 1388 */;
+import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

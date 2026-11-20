@@ -1,17 +1,17 @@
-// Module ID: 15632
-// Function ID: 15633
+// Module ID: 15596
+// Function ID: 15597
 // Name: StoreListingActionCreators
-// Dependencies: [2165, 6553, 15633, 1072, 6238, 1285, 572, 9200, 2]
+// Dependencies: [2163, 6555, 15597, 1071, 6240, 1284, 572, 9200, 2]
 // Exports: fetchAllStoreListingsForApplication, fetchStoreListingForSku, fetchStoreListingsForApplications
 
-// Module 15632 (StoreListingActionCreators)
+// Module 15596 (StoreListingActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import Constants from "Constants" /* 1072 */;
-import HTTPUtils from "HTTPUtils" /* 1285 */;
-import StoreUtils from "StoreUtils" /* 6238 */;
-import ApplicationStore from "ApplicationStore" /* 2165 */;
-import SKUStore from "SKUStore" /* 6553 */;
-import StoreListingStore from "StoreListingStore" /* 15633 */;
+import Constants from "Constants" /* 1071 */;
+import HTTPUtils from "HTTPUtils" /* 1284 */;
+import StoreUtils from "StoreUtils" /* 6240 */;
+import ApplicationStore from "ApplicationStore" /* 2163 */;
+import SKUStore from "SKUStore" /* 6555 */;
+import StoreListingStore from "StoreListingStore" /* 15597 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -101,7 +101,7 @@ export function fetchStoreListingForSku(skuId) {
     STORE_LISTINGS_SKUResult = obj4.STORE_PUBLISHED_LISTINGS_SKU(skuId);
   }
   const obj5 = { url: STORE_LISTINGS_SKUResult, rejectWithError: tmp7Result.rejectWithMigratedError() };
-  tmp7Result = tmp7(1285);
+  tmp7Result = tmp7(1284);
   const result1 = httpGetWithCountryCodeQuery(obj5);
   const nextPromise = result1.then((body) => {
     const dispatch = DispatcherDefault.dispatch;

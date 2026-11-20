@@ -1,7 +1,7 @@
 // Module ID: 8793
 // Function ID: 8794
 // Name: useShopProductItems
-// Dependencies: [19, 2114, 2]
+// Dependencies: [19, 2112, 2]
 // Exports: getProductItems, getPurchasedItem, useShopProductItems
 
 // Module 8793 (useShopProductItems)

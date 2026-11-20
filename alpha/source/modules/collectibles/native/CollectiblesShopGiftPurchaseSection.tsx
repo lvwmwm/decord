@@ -1,26 +1,26 @@
-// Module ID: 13823
-// Function ID: 13824
+// Module ID: 13792
+// Function ID: 13793
 // Name: CollectiblesShopGiftPurchaseSection
-// Dependencies: [5, 32, 19, 17, 8018, 8992, 1072, 1390, 21, 4792, 575, 5367, 504, 7951, 7401, 13815, 1256, 13824, 572, 6308, 5740, 13825, 2121, 1380, 9389, 9362, 5383, 1113, 5390, 2]
+// Dependencies: [5, 32, 19, 17, 8017, 8992, 1071, 1388, 21, 4794, 575, 5369, 504, 7950, 7400, 13784, 1255, 13793, 572, 6310, 5742, 13794, 2119, 1378, 9389, 9362, 5385, 1112, 5392, 2]
 // Exports: default
 
-// Module 13823 (CollectiblesShopGiftPurchaseSection)
+// Module 13792 (CollectiblesShopGiftPurchaseSection)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import nativeDefault from "native" /* 575 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5740 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6308 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5742 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6310 */;
 import NativeCheckoutStore from "NativeCheckoutStore" /* 8992 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8018 */;
-import Constants from "Constants" /* 1072 */;
-import PremiumConstants from "PremiumConstants" /* 1390 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8017 */;
+import Constants from "Constants" /* 1071 */;
+import PremiumConstants from "PremiumConstants" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2;
@@ -216,7 +216,7 @@ export default function CollectiblesShopGiftPurchaseSection(product) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -253,7 +253,7 @@ export default function CollectiblesShopGiftPurchaseSection(product) {
               closure_128_9();
             }
             c2 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp14) {
           c2 = 3;

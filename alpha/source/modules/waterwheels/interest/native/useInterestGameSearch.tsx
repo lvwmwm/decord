@@ -1,18 +1,18 @@
-// Module ID: 17885
-// Function ID: 17886
+// Module ID: 17712
+// Function ID: 17713
 // Name: useInterestGameSearch
-// Dependencies: [5, 32, 19, 8767, 9810, 8768, 9808, 9809, 9807, 2]
+// Dependencies: [5, 32, 19, 8705, 9812, 8706, 9810, 9811, 9809, 2]
 // Exports: default
 
-// Module 17885 (useInterestGameSearch)
-import GameAutocompleteUtils from "GameAutocompleteUtils" /* 8768 */;
-import GameSearchSession from "GameSearchSession" /* 9808 */;
-import GameSearchSurfaces from "GameSearchSurfaces" /* 9809 */;
-import GameSearchFilterGroup from "GameSearchFilterGroup" /* 9810 */;
+// Module 17712 (useInterestGameSearch)
+import GameAutocompleteUtils from "GameAutocompleteUtils" /* 8706 */;
+import GameSearchSession from "GameSearchSession" /* 9810 */;
+import GameSearchSurfaces from "GameSearchSurfaces" /* 9811 */;
+import GameSearchFilterGroup from "GameSearchFilterGroup" /* 9812 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GameAutocompleteStore from "GameAutocompleteStore" /* 8767 */;
+import GameAutocompleteStore from "GameAutocompleteStore" /* 8705 */;
 import size from "module_2" /* 2 */;
 
 let c5, c6, closure_3, dependencyMap, results;
@@ -67,7 +67,7 @@ export default function useInterestGameSearch(name) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c4;
@@ -97,7 +97,7 @@ export default function useInterestGameSearch(name) {
                 } else if (query.signal.aborted) {
                   c4 = 0;
                   c6 = 3;
-                  return { value: "HermesInternal", done: "+60" };
+                  return { value: "HermesInternal", done: null };
                 } else {
                   results = GameAutocompleteStore.getResults(query, DEFAULT);
                   query = results;
@@ -127,7 +127,7 @@ export default function useInterestGameSearch(name) {
               return obj;
             }
             c6 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           } catch (tmp39) {
             closure_3 = tmp39;
             if (0 === c4) {

@@ -1,17 +1,17 @@
-// Module ID: 11047
-// Function ID: 11048
+// Module ID: 10989
+// Function ID: 10990
 // Name: FocusModeUtils
-// Dependencies: [6801, 4737, 1072, 4617, 4622, 1227, 1256, 5739, 1113, 11048, 2]
+// Dependencies: [6801, 4739, 1071, 4619, 4624, 1226, 1255, 5741, 1112, 10990, 2]
 // Exports: getFocusModeEnabled, setFocusMode, useFocusModeEnabled
 
-// Module 11047 (FocusModeUtils)
-import wrappers from "wrappers" /* 1227 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import UserSettings from "UserSettings" /* 4617 */;
-import NotificationConstants from "NotificationConstants" /* 4737 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5739 */;
+// Module 10989 (FocusModeUtils)
+import wrappers from "wrappers" /* 1226 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import UserSettings from "UserSettings" /* 4619 */;
+import NotificationConstants from "NotificationConstants" /* 4739 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5741 */;
 import SelfPresenceStore from "SelfPresenceStore" /* 6801 */;
-import Constants from "Constants" /* 1072 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -107,21 +107,21 @@ export function setFocusMode(quiet_mode_enabled, arg1) {
   }
   if (tmp7) {
     const obj3 = {
-      title: intl.string(tmp(1113).t["B+cbLS"]),
-      body: intl2.string(tmp(1113).t.CYVgLI),
-      cancelText: intl3.string(tmp(1113).t.f3Pet9),
-      confirmText: intl4.string(tmp(1113).t.BddRzS),
+      title: intl.string(tmp(1112).t["B+cbLS"]),
+      body: intl2.string(tmp(1112).t.CYVgLI),
+      cancelText: intl3.string(tmp(1112).t.f3Pet9),
+      confirmText: intl4.string(tmp(1112).t.BddRzS),
       onConfirm() {
           const obj = { nextStatus: constants.ONLINE };
           closure_1(dependencyMap[9])(obj);
         }
     };
-    const show = tmp5(5739).show;
+    const show = tmp5(5741).show;
     AlertActionCreatorsDefault;
-    intl = tmp(1113).intl;
-    intl2 = tmp(1113).intl;
-    intl3 = tmp(1113).intl;
-    intl4 = tmp(1113).intl;
+    intl = tmp(1112).intl;
+    intl2 = tmp(1112).intl;
+    intl3 = tmp(1112).intl;
+    intl4 = tmp(1112).intl;
     show(obj3);
   }
 }

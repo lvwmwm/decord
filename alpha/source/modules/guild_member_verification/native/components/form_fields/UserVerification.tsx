@@ -1,15 +1,15 @@
-// Module ID: 7219
-// Function ID: 7220
+// Module ID: 7218
+// Function ID: 7219
 // Name: UserVerification
-// Dependencies: [19, 21, 4792, 4828, 7220, 5383, 1113, 2]
+// Dependencies: [19, 21, 4794, 4830, 7219, 5385, 1112, 2]
 // Exports: default
 
-// Module 7219 (UserVerification)
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4828 */;
-import IdentityVerificationFieldDefault from "IdentityVerificationField" /* 7220 */;
+// Module 7218 (UserVerification)
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4830 */;
+import IdentityVerificationFieldDefault from "IdentityVerificationField" /* 7219 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -41,14 +41,14 @@ export default function UserVerification(arg0) {
     const tmp8 = IdentityVerificationFieldDefault;
     items[1] = _false(tmp8, obj2);
     const obj3 = { style: tmp.emailPhoneNote, variant: "body-xs/medium", color: "text-default", children: stringResult };
-    const Text = tmp12(5383).Text;
+    const Text = tmp12(5385).Text;
     const tmp6 = _false;
     if (platform === MemberVerificationTypes.UserVerificationFieldPlatforms.PHONE) {
-      const intl2 = tmp12(1113).intl;
-      stringResult = intl2.string(tmp12(1113).t["jMh+TY"]);
+      const intl2 = tmp12(1112).intl;
+      stringResult = intl2.string(tmp12(1112).t["jMh+TY"]);
     } else {
-      const intl = tmp12(1113).intl;
-      stringResult = intl.string(tmp12(1113).t.Vgv9ip);
+      const intl = tmp12(1112).intl;
+      stringResult = intl.string(tmp12(1112).t.Vgv9ip);
     }
     const obj4 = { children: items };
     items[2] = tmp6(Text, obj3);

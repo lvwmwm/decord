@@ -1,22 +1,22 @@
-// Module ID: 6380
-// Function ID: 6381
+// Module ID: 6382
+// Function ID: 6383
 // Name: StartStageChannelActionSheet
-// Dependencies: [5, 32, 19, 17, 4646, 6379, 1072, 4647, 21, 4792, 575, 504, 6381, 5353, 1256, 2020, 6382, 5006, 6228, 5383, 1113, 5020, 6898, 7102, 7904, 5390, 2]
+// Dependencies: [5, 32, 19, 17, 4648, 6381, 1071, 4649, 21, 4794, 575, 504, 6383, 5355, 1255, 2018, 6384, 5008, 6230, 5385, 1112, 5022, 6897, 7101, 7903, 5392, 2]
 // Exports: default
 
-// Module 6380 (StartStageChannelActionSheet)
+// Module 6382 (StartStageChannelActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4647 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4649 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import StageInstanceStore from "StageInstanceStore" /* 4646 */;
-import StageChannelsConstants from "StageChannelsConstants" /* 6379 */;
-import Constants from "Constants" /* 1072 */;
+import StageInstanceStore from "StageInstanceStore" /* 4648 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 6381 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let c5, dependencyMap;
@@ -77,7 +77,7 @@ export default function StartStageChannelEventActionSheet(channel) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -152,7 +152,7 @@ export default function StartStageChannelEventActionSheet(channel) {
             }
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp40) {
           if (0 === c3) {
             c5 = 3;
@@ -186,9 +186,9 @@ export default function StartStageChannelEventActionSheet(channel) {
   const tmp8 = obj(obj2.useState(false), 2);
   [obj3, c4] = obj(obj2.useState(null), 2);
   const tmp10 = obj(obj2.useState(null), 2);
-  const tmp2Result = channel(6381);
+  const tmp2Result = channel(6383);
   const shouldAgeVerifyToSpeakForCurrentUser = tmp2Result.useShouldAgeVerifyToSpeakForCurrentUser(channel.id);
-  stateFromStores(5353)(() => {
+  stateFromStores(5355)(() => {
     let id;
     const track = AnalyticsUtilsDefault.track;
     const START_STAGE_OPENED = unpackModuleId.START_STAGE_OPENED;
@@ -201,43 +201,43 @@ export default function StartStageChannelEventActionSheet(channel) {
   });
   let obj4 = { style: tmp.header, children: items1 };
   let obj5 = { style: tmp.headerTitle, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: stringResult };
-  const Text = tmp2(5383).Text;
+  const Text = tmp2(5385).Text;
   const tmp12 = stateFromStores;
   if (null == stateFromStores) {
-    const intl2 = tmp2(1113).intl;
-    stringResult = intl2.string(tmp2(1113).t.DDF0cJ);
+    const intl2 = tmp2(1112).intl;
+    stringResult = intl2.string(tmp2(1112).t.DDF0cJ);
   } else {
-    const intl = tmp2(1113).intl;
-    stringResult = intl.string(tmp2(1113).t["5BKP4y"]);
+    const intl = tmp2(1112).intl;
+    stringResult = intl.string(tmp2(1112).t["5BKP4y"]);
   }
   items1 = [tmp16(Text, obj5), ];
   let obj6 = { style: tmp.headerSubtitle, variant: "body-sm/medium", color: "text-default", children: stringResult1 };
-  const Text2 = tmp2(5383).Text;
+  const Text2 = tmp2(5385).Text;
   if (null == stateFromStores) {
-    const intl4 = tmp2(1113).intl;
-    stringResult1 = intl4.string(tmp2(1113).t.bqQIwa);
+    const intl4 = tmp2(1112).intl;
+    stringResult1 = intl4.string(tmp2(1112).t.bqQIwa);
   } else {
-    const intl3 = tmp2(1113).intl;
-    stringResult1 = intl3.string(tmp2(1113).t["I+9bLx"]);
+    const intl3 = tmp2(1112).intl;
+    stringResult1 = intl3.string(tmp2(1112).t["I+9bLx"]);
   }
   items1[1] = closure_13(Text2, obj6);
   let stringResult2;
   const tmp14Result = closure_14(View, obj4);
   if (null == stateFromStores) {
-    const intl5 = tmp2(1113).intl;
-    stringResult2 = intl5.string(tmp2(1113).t.gR66jX);
+    const intl5 = tmp2(1112).intl;
+    stringResult2 = intl5.string(tmp2(1112).t.gR66jX);
   }
   function handleSave() {
     return obj(...arguments);
   }
-  const BottomSheet = tmp2(5020).BottomSheet;
+  const BottomSheet = tmp2(5022).BottomSheet;
   let obj7 = { bottom: true, style: tmp.container, children: items2 };
   items2 = [tmp14Result, , , , , ];
-  const SafeAreaPaddingView = tmp2(6898).SafeAreaPaddingView;
-  let obj8 = { label: intl6.string(tmp2(1113).t["5FPBOB"]), maxLength, value, placeholder: intl7.string(tmp2(1113).t.ZwWruY), onChange: tmp7, autoFocus: true, returnKeyType: "done", clearable: true, onSubmitEditing: handleSave };
-  const TextInput = tmp2(7102).TextInput;
-  intl6 = tmp2(1113).intl;
-  intl7 = tmp2(1113).intl;
+  const SafeAreaPaddingView = tmp2(6897).SafeAreaPaddingView;
+  let obj8 = { label: intl6.string(tmp2(1112).t["5FPBOB"]), maxLength, value, placeholder: intl7.string(tmp2(1112).t.ZwWruY), onChange: tmp7, autoFocus: true, returnKeyType: "done", clearable: true, onSubmitEditing: handleSave };
+  const TextInput = tmp2(7101).TextInput;
+  intl6 = tmp2(1112).intl;
+  intl7 = tmp2(1112).intl;
   items2[1] = closure_13(TextInput, obj8);
   const obj9 = {
     onConfirmPress() {
@@ -247,30 +247,30 @@ export default function StartStageChannelEventActionSheet(channel) {
     style: tmp.ageVerificationNotice,
     channelId: channel.id
   };
-  items2[2] = closure_13(tmp12(7904), obj9);
+  items2[2] = closure_13(tmp12(7903), obj9);
   let tmp16Result = null;
   if (null != obj3) {
     const obj10 = { style: tmp.error, variant: "body-xs/medium", color: "text-feedback-critical", children: obj3.getAnyErrorMessage() };
-    const Text3 = tmp2(5383).Text;
+    const Text3 = tmp2(5385).Text;
     tmp16Result = tmp16(Text3, obj10);
   }
   items2[3] = tmp16Result;
   const obj11 = { style: tmp.startButton, children: closure_13(Button, obj12) };
-  Button = tmp2(5390).Button;
+  Button = tmp2(5392).Button;
   if (null == stateFromStores) {
-    const intl9 = tmp2(1113).intl;
-    stringResult3 = intl9.string(tmp2(1113).t.s8mM8A);
+    const intl9 = tmp2(1112).intl;
+    stringResult3 = intl9.string(tmp2(1112).t.s8mM8A);
   } else {
-    const intl8 = tmp2(1113).intl;
-    stringResult3 = intl8.string(tmp2(1113).t.K344S7);
+    const intl8 = tmp2(1112).intl;
+    stringResult3 = intl8.string(tmp2(1112).t.K344S7);
   }
   obj12 = { text: stringResult3, onPress: handleSave, disabled: "" === value, loading: tmp9, accessibilityHint: stringResult2 };
   items2[4] = closure_13(View, obj11);
   let tmp16Result2 = null != stringResult2 && !shouldAgeVerifyToSpeakForCurrentUser;
   if (tmp16Result2) {
-    const obj13 = { accessible: false, style: tmp.buttonSubtitle, variant: "body-xs/medium", color: "text-default", children: intl10.string(channel(1113).t.gR66jX) };
-    const Text4 = tmp2(5383).Text;
-    intl10 = tmp2(1113).intl;
+    const obj13 = { accessible: false, style: tmp.buttonSubtitle, variant: "body-xs/medium", color: "text-default", children: intl10.string(channel(1112).t.gR66jX) };
+    const Text4 = tmp2(5385).Text;
+    intl10 = tmp2(1112).intl;
     tmp16Result2 = tmp16(Text4, obj13);
   }
   items2[5] = tmp16Result2;

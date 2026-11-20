@@ -1,10 +1,10 @@
-// Module ID: 18689
-// Function ID: 18690
+// Module ID: 18513
+// Function ID: 18514
 // Name: createConjureProject
-// Dependencies: [5, 6848, 6814, 18690, 2]
+// Dependencies: [5, 6848, 6814, 18514, 2]
 // Exports: default
 
-// Module 18689 (createConjureProject)
+// Module 18513 (createConjureProject)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ConjureConnectionStore from "ConjureConnectionStore" /* 6848 */;
 import size from "module_2" /* 2 */;
@@ -30,7 +30,7 @@ let obj = function _createConjureProject() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

@@ -1,40 +1,40 @@
-// Module ID: 14111
-// Function ID: 14112
+// Module ID: 14080
+// Function ID: 14081
 // Name: UserProfilePrimaryInfo
-// Dependencies: [32, 19, 17, 8018, 1388, 7950, 7445, 1072, 7881, 8020, 21, 575, 4792, 1380, 9334, 9335, 10325, 6911, 12707, 5383, 14112, 4969, 14114, 1113, 14116, 7951, 5479, 13920, 8075, 5474, 8079, 9839, 9842, 6440, 8903, 13866, 14117, 504, 13841, 8016, 13916, 13917, 13901, 14118, 1496, 8887, 13617, 7880, 9623, 4848, 2]
+// Dependencies: [32, 19, 17, 8017, 1386, 7949, 7444, 1071, 7880, 8019, 21, 575, 4794, 1378, 9334, 9335, 10267, 6910, 12677, 5385, 14081, 4971, 14083, 1112, 14085, 7950, 5481, 13889, 8074, 5476, 8078, 9841, 9844, 6442, 8903, 13835, 14086, 504, 13810, 8015, 13885, 13886, 13870, 14087, 1494, 8887, 13587, 7879, 9623, 4850, 2]
 // Exports: default
 
-// Module 14111 (UserProfilePrimaryInfo)
+// Module 14080 (UserProfilePrimaryInfo)
 import nativeDefault from "native" /* 575 */;
-import Constants2 from "Constants" /* 1072 */;
-import UserUtilsDefault from "UserUtils" /* 4848 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5474 */;
-import QuestTypes from "QuestTypes" /* 6440 */;
-import GuildTagUtils from "GuildTagUtils" /* 7880 */;
-import GuildTagConstants from "GuildTagConstants" /* 7881 */;
-import Constants3 from "Constants" /* 7950 */;
-import BadgeId from "BadgeId" /* 7951 */;
-import Constants4 from "Constants" /* 8020 */;
-import openUserSettings from "openUserSettings" /* 8075 */;
-import useBadges from "useBadges" /* 8079 */;
+import Constants2 from "Constants" /* 1071 */;
+import UserUtilsDefault from "UserUtils" /* 4850 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5476 */;
+import QuestTypes from "QuestTypes" /* 6442 */;
+import GuildTagUtils from "GuildTagUtils" /* 7879 */;
+import GuildTagConstants from "GuildTagConstants" /* 7880 */;
+import Constants3 from "Constants" /* 7949 */;
+import BadgeId from "BadgeId" /* 7950 */;
+import Constants4 from "Constants" /* 8019 */;
+import openUserSettings from "openUserSettings" /* 8074 */;
+import useBadges from "useBadges" /* 8078 */;
 import ClipView from "ClipView" /* 8903 */;
 import UsernameWithEffectsDefault from "UsernameWithEffects" /* 9334 */;
 import GuildTagDefault from "GuildTag" /* 9623 */;
-import captureAdUserAction2 from "captureAdUserAction" /* 9839 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9842 */;
-import BotTagDefault from "BotTag" /* 10325 */;
-import BadgeUtils from "BadgeUtils" /* 13901 */;
-import trackBadgeDirectoryActionDefault from "trackBadgeDirectoryAction" /* 13916 */;
-import openBadgeDirectoryScreen from "openBadgeDirectoryScreen" /* 13917 */;
+import captureAdUserAction2 from "captureAdUserAction" /* 9841 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9844 */;
+import BotTagDefault from "BotTag" /* 10267 */;
+import BadgeUtils from "BadgeUtils" /* 13870 */;
+import trackBadgeDirectoryActionDefault from "trackBadgeDirectoryAction" /* 13885 */;
+import openBadgeDirectoryScreen from "openBadgeDirectoryScreen" /* 13886 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8018 */;
-import UserStore from "UserStore" /* 1388 */;
-import Constants from "Constants" /* 7445 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8017 */;
+import UserStore from "UserStore" /* 1386 */;
+import Constants from "Constants" /* 7444 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap, importDefault;
@@ -53,7 +53,7 @@ let obj4;
 let obj5;
 let tmp4;
 let unpackModuleId;
-const PlatformUtils = tmp4(1380);
+const PlatformUtils = tmp4(1378);
 class DisplayName {
   constructor(user) {
     let closure_1;
@@ -111,7 +111,7 @@ class DisplayName {
     } else {
       let tmp12 = closure_16;
       const obj7 = { onPress, accessibilityRole: "button", accessibilityLabel: name, accessibilityHint, style: tmp.displayName, children: items1 };
-      const PressableOpacity = user(6911).PressableOpacity;
+      const PressableOpacity = user(6910).PressableOpacity;
       const obj8 = { userId: user.id, guildId, userName: name, variant: headingVariant, effectDisplayType: user(9335).EffectDisplayType.STATIC, lineClamp: 2, pendingDisplayNameStyles, defaultColor: "mobile-text-heading-primary", accessibilityRole: displayNameAccessibilityRole, style: null, containerStyle: null };
       ({ displayNameText: obj4.style, displayNameText: obj4.containerStyle } = tmp);
       const tmp17 = UsernameWithEffectsDefault;
@@ -119,7 +119,7 @@ class DisplayName {
       const tmp13 = user;
       const tmp15 = closure_15;
       if (showChevron) {
-        showChevron = tmp15(tmp13(12707).ChevronSmallDownIcon, { size: "sm", color: "icon-muted" });
+        showChevron = tmp15(tmp13(12677).ChevronSmallDownIcon, { size: "sm", color: "icon-muted" });
       }
       items1[2] = showChevron;
       tmp12Result = tmp12(PressableOpacity, obj7);
@@ -174,7 +174,7 @@ class UserTagAndPronouns {
           const tmp6 = require;
           if (null != onPressUserTag) {
             const obj3 = { onPress: tmp11, accessibilityRole: "button", accessibilityLabel: userTag, accessibilityHint: userTagAccessibilityHint, children: tmp10 };
-            tmp5Result = tmp5(tmp6(6911).PressableOpacity, obj3);
+            tmp5Result = tmp5(tmp6(6910).PressableOpacity, obj3);
           } else {
             const obj = { children: tmp10 };
             tmp5Result = tmp5(metroRequire, obj);

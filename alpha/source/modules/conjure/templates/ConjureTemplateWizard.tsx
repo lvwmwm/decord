@@ -1,14 +1,14 @@
-// Module ID: 18705
-// Function ID: 18706
+// Module ID: 18529
+// Function ID: 18530
 // Name: ConjureTemplateWizard
-// Dependencies: [5, 6848, 1113, 4089, 18706, 6746, 2]
+// Dependencies: [5, 6848, 1112, 4091, 18530, 6746, 2]
 // Exports: canLeaveConjureWizardQuestion, conjureTemplateWizardGuilds, conjureTemplateWizardSteps, conjureWizardIntro, conjureWizardQuestions, conjureWizardServerCopy, conjureWizardServerStep, formatConjureWizardAnswers, isConjureWizardComplete, latestConjureIntake, startConjureTemplateWizard
 
-// Module 18705 (ConjureTemplateWizard)
-import intl3 from "intl" /* 1113 */;
-import _modDef4089 from "module_4089" /* 4089 */;
+// Module 18529 (ConjureTemplateWizard)
+import intl3 from "intl" /* 1112 */;
+import _modDef4091 from "module_4091" /* 4091 */;
 import ConjureUtils from "ConjureUtils" /* 6746 */;
-import conjureTemplateIntakeRequests from "conjureTemplateIntakeRequests" /* 18706 */;
+import conjureTemplateIntakeRequests from "conjureTemplateIntakeRequests" /* 18530 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ConjureConnectionStore from "ConjureConnectionStore" /* 6848 */;
 import size from "module_2" /* 2 */;
@@ -21,7 +21,7 @@ function conjureTemplateStartMessage(templateName) {
   const intl = intl3.intl;
   const formatToPlainString = intl.formatToPlainString;
   obj = { templateName, locale: intl3.intl.currentLocale };
-  const prop = _modDef4089["/qSx7+"];
+  const prop = _modDef4091["/qSx7+"];
   return formatToPlainString(prop, obj);
 }
 let obj = function _startConjureTemplateWizard() {
@@ -41,7 +41,7 @@ let obj = function _startConjureTemplateWizard() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -205,7 +205,7 @@ export function conjureWizardServerCopy(stateFromStores1) {
     server = stateFromStores1.server;
   }
   if (server == null) {
-    obj = { title: intl.string(_modDef4089.vcxYIA), hint: intl2.string(_modDef4089.auUHPZ) };
+    obj = { title: intl.string(_modDef4091.vcxYIA), hint: intl2.string(_modDef4091.auUHPZ) };
     intl = intl3.intl;
     intl2 = intl3.intl;
     server = obj;

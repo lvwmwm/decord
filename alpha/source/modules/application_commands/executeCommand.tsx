@@ -1,26 +1,26 @@
-// Module ID: 10615
-// Function ID: 10616
+// Module ID: 10557
+// Function ID: 10558
 // Name: executeCommand
-// Dependencies: [5, 6452, 2189, 4663, 8348, 1388, 8398, 1072, 4797, 5444, 572, 8340, 8195, 2119, 10616, 10618, 38, 10619, 5529, 8396, 10391, 4738, 1255, 8328, 10487, 5852, 8407, 10568, 10620, 6835, 8327, 8131, 8366, 8351, 8323, 1113, 8418, 2]
+// Dependencies: [5, 6454, 2187, 4665, 8347, 1386, 8397, 1071, 4799, 5446, 572, 8339, 8194, 2117, 10558, 10560, 38, 10561, 5531, 8395, 10333, 4740, 1254, 8327, 10429, 5854, 8406, 10510, 10562, 6835, 8326, 8130, 8365, 8350, 8322, 1112, 8417, 2]
 // Exports: default, retryCommandMessage
 
-// Module 10615 (executeCommand)
-import MessageConstants from "MessageConstants" /* 4797 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5444 */;
-import UploadUtils from "UploadUtils" /* 8323 */;
-import FileUtils from "FileUtils" /* 8351 */;
-import UploadLimits from "UploadLimits" /* 8366 */;
-import MessageQueue from "MessageQueue" /* 8407 */;
-import InteractionActionCreatorsAll from "InteractionActionCreators" /* 10487 */;
-import ApplicationCommandQueryApiAll from "ApplicationCommandQueryApi" /* 10620 */;
+// Module 10557 (executeCommand)
+import MessageConstants from "MessageConstants" /* 4799 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5446 */;
+import UploadUtils from "UploadUtils" /* 8322 */;
+import FileUtils from "FileUtils" /* 8350 */;
+import UploadLimits from "UploadLimits" /* 8365 */;
+import MessageQueue from "MessageQueue" /* 8406 */;
+import InteractionActionCreatorsAll from "InteractionActionCreators" /* 10429 */;
+import ApplicationCommandQueryApiAll from "ApplicationCommandQueryApi" /* 10562 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import EmojiStore from "EmojiStore" /* 6452 */;
-import LocaleStore from "LocaleStore" /* 2189 */;
-import GuildStore from "GuildStore" /* 4663 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 8348 */;
-import UserStore from "UserStore" /* 1388 */;
-import ApplicationCommandStore from "ApplicationCommandStore" /* 8398 */;
-import Constants from "Constants" /* 1072 */;
+import EmojiStore from "EmojiStore" /* 6454 */;
+import LocaleStore from "LocaleStore" /* 2187 */;
+import GuildStore from "GuildStore" /* 4665 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8347 */;
+import UserStore from "UserStore" /* 1386 */;
+import ApplicationCommandStore from "ApplicationCommandStore" /* 8397 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 const MessageQueueDefault = MessageQueue;
@@ -52,7 +52,7 @@ let obj = function _executeCommand() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         while (true) {
@@ -652,7 +652,7 @@ let obj = function _executeCommand() {
               }
             }
             c16 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         }
       }
@@ -678,7 +678,7 @@ obj = function _retryCommandMessage() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -718,7 +718,7 @@ obj = function _retryCommandMessage() {
             closure_4(obj5);
           }
           c6 = 3;
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp12) {
           c6 = 3;
           throw tmp12;
@@ -753,12 +753,12 @@ function enqueueCommandInteraction(interactionLifecycleOptions) {
     message = { applicationId, channelId: id, guildId: id1, data: tmp, nonce, attachments, maxSizeCallback, analytics_location: tmp2, sectionName: tmp3, source: tmp4 };
     nonce = interactionLifecycleOptions.nonce;
     if (nonce == null) {
-      const obj2 = onMessageSuccess(8328);
+      const obj2 = onMessageSuccess(8327);
       nonce = obj2.createNonce();
     }
     const obj4 = { messageId: null, onCreate: null, onSuccess: null, onFailure: null, data: obj5 };
     ({ messageId: obj3.messageId, onCreate: obj3.onCreate, onSuccess: obj3.onSuccess, onFailure: obj3.onFailure } = interactionLifecycleOptions);
-    obj5 = { interactionType: onMessageSuccess(5852).InteractionTypes.APPLICATION_COMMAND, applicationId, channelId: id };
+    obj5 = { interactionType: onMessageSuccess(5854).InteractionTypes.APPLICATION_COMMAND, applicationId, channelId: id };
     const addQueued = InteractionActionCreatorsAll.addQueued;
     const nonce2 = message.nonce;
     InteractionActionCreatorsAll;
@@ -796,9 +796,9 @@ function enqueueCommandInteraction(interactionLifecycleOptions) {
         });
       }
     }
-    const obj8 = { type: tmp11(8407).MessageDataType.COMMAND, message };
-    let enqueue = message(8407).enqueue;
-    message(8407);
+    const obj8 = { type: tmp11(8406).MessageDataType.COMMAND, message };
+    let enqueue = message(8406).enqueue;
+    message(8406);
     enqueue(obj8, (ok) => {
       let applicationId;
       let channelId;
@@ -842,7 +842,7 @@ obj = function _displayInteractionLifecycleInChat() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -1016,7 +1016,7 @@ obj = function _getMaxAndTotalFileSize() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         while (true) {

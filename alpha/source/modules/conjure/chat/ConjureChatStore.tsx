@@ -1,25 +1,25 @@
 // Module ID: 6806
 // Function ID: 6807
 // Name: ConjureChatStore
-// Dependencies: [32, 109, 6500, 6807, 6809, 6808, 504, 6810, 6811, 1113, 4089, 572, 2]
+// Dependencies: [32, 109, 6502, 6807, 6809, 6808, 504, 6810, 6811, 1112, 4091, 572, 2]
 // Exports: getOlderHistoryCursor
 
 // Module 6806 (ConjureChatStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import _modDef4089 from "module_4089" /* 4089 */;
+import _modDef4091 from "module_4091" /* 4091 */;
 import conjureChatTurns from "conjureChatTurns" /* 6807 */;
 import conjureStepTimeline from "conjureStepTimeline" /* 6808 */;
 import conjureChatHistory from "conjureChatHistory" /* 6809 */;
 import conjureAgentReaction from "conjureAgentReaction" /* 6810 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6500 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6502 */;
 import size from "module_2" /* 2 */;
 
 let set3;
 
-const f91230 = (kind) => "preview_ready" === kind.kind;
+const f89605 = (kind) => "preview_ready" === kind.kind;
 function patchTurn(projectId, turnId, fn) {
   const value = map.get(projectId);
   if (null != value) {
@@ -626,7 +626,7 @@ let obj = {
             }
             if (everyResult) {
               const steps = tmp53.steps;
-              everyResult = steps.every(f91230);
+              everyResult = steps.every(f89605);
             }
             if (everyResult) {
               const obj5 = conjureChatTurns;
@@ -768,7 +768,7 @@ let obj = {
           let everyResult = null != tmp11 && "assistant" === tmp11.role && null == tmp11.turn_id;
           if (everyResult) {
             const steps = tmp11.steps;
-            everyResult = steps.every(f91230);
+            everyResult = steps.every(f89605);
           }
           if (everyResult) {
             const tmp2Result = id(6807);
@@ -1347,7 +1347,7 @@ let obj = {
                 const obj = { provisionalTodo: undefined, steps: items };
                 const merged = Object.assign(disposition);
                 items = [];
-                const obj2 = { type: "step", kind: "terminal_error", message: intl.string(_modDef4089.lmiuFX) };
+                const obj2 = { type: "step", kind: "terminal_error", message: intl.string(_modDef4091.lmiuFX) };
                 const arraySpreadResult = HermesBuiltin.arraySpread(items, disposition.steps, 0);
                 intl = tmp11(tmp12[9]).intl;
                 items[arraySpreadResult] = obj2;

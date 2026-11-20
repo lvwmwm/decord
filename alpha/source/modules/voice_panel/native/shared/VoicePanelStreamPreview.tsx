@@ -1,21 +1,21 @@
-// Module ID: 14407
-// Function ID: 14408
+// Module ID: 14375
+// Function ID: 14376
 // Name: VoicePanelStreamPreview
-// Dependencies: [19, 17, 6279, 502, 21, 1655, 5390, 4792, 575, 11022, 504, 6280, 5002, 5479, 5383, 1113, 2]
+// Dependencies: [19, 17, 6281, 502, 21, 1653, 5392, 4794, 575, 10964, 504, 6282, 5004, 5481, 5385, 1112, 2]
 // Exports: VoicePanelStreamPreview
 
-// Module 14407 (VoicePanelStreamPreview)
+// Module 14375 (VoicePanelStreamPreview)
 import nativeDefault from "native" /* 575 */;
-import components_Button_Button from "components/Button/Button" /* 5390 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6280 */;
-import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 11022 */;
+import components_Button_Button from "components/Button/Button" /* 5392 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6282 */;
+import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 10964 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6279 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6281 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Fragment from "Fragment" /* 21 */;
-import module_1655_mod from "module_1655" /* 1655 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import module_1653_mod from "module_1653" /* 1653 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let Pressable;
@@ -27,13 +27,13 @@ let obj2;
 let obj3;
 let size;
 let tmp2;
-const FastImageDefault = tmp2(5479);
+const FastImageDefault = tmp2(5481);
 ({ StyleSheet: c3, View: closure_4, Pressable } = react_native);
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
-let module_1655 = module_1655_mod;
-let closure_9 = module_1655.createAnimatedComponent(Pressable);
-module_1655 = module_1655_mod;
-let closure_10 = module_1655.createAnimatedComponent(components_Button_Button.Button);
+let module_1653 = module_1653_mod;
+let closure_9 = module_1653.createAnimatedComponent(Pressable);
+module_1653 = module_1653_mod;
+let closure_10 = module_1653.createAnimatedComponent(components_Button_Button.Button);
 let closure_11 = { duration: 200 };
 let createStyles = createStyles_mod;
 let obj = { roundedCard: size, streamPreviewImage: { position: "absolute", width: "100%", height: "100%", opacity: 0.5 }, ownStreamTextContainer: obj2, ownStreamText: obj3 };
@@ -97,9 +97,9 @@ export function VoicePanelStreamPreview(stream) {
     return tmp2;
   }, items1);
   const items2 = [closure_13, mode, , ];
-  const useAnimatedStyle = stream(1655).useAnimatedStyle;
-  stream(1655);
-  items2[2] = stream(5002).withTiming;
+  const useAnimatedStyle = stream(1653).useAnimatedStyle;
+  stream(1653);
+  items2[2] = stream(5004).withTiming;
   items2[3] = closure_11;
   let c0;
   let c1;
@@ -137,25 +137,25 @@ export function VoicePanelStreamPreview(stream) {
   let tmp19 = null;
   if (null != previewUrl) {
     const obj3 = { layout, style: tmp.streamPreviewImage, children: closure_7(FastImageDefault, obj4) };
-    const View = module_1655.View;
+    const View = module_1653.View;
     obj4 = { source: obj5, style: absoluteFill.absoluteFill, resizeMode: "cover" };
     obj5 = { uri: previewUrl };
     tmp19 = closure_7(View, obj3);
   }
   items4 = [tmp19, ];
   const obj6 = { layout, children: closure_7(View3, obj7) };
-  const View2 = module_1655.View;
+  const View2 = module_1653.View;
   obj7 = { style: animatedStyle, children: tmp22Result };
-  View3 = module_1655.View;
+  View3 = module_1653.View;
   if (stateFromStores) {
     const obj8 = { style: tmp.ownStreamTextContainer, children: closure_7(Text, obj9) };
-    obj9 = { variant: "body-sm/semibold", color: "text-overlay-light", style: tmp.ownStreamText, children: intl2.string(stream(1113).t["ro/HN8"]) };
-    Text = tmp8(5383).Text;
-    intl2 = tmp8(1113).intl;
+    obj9 = { variant: "body-sm/semibold", color: "text-overlay-light", style: tmp.ownStreamText, children: intl2.string(stream(1112).t["ro/HN8"]) };
+    Text = tmp8(5385).Text;
+    intl2 = tmp8(1112).intl;
     tmp22Result = tmp22(closure_4, obj8);
   } else {
-    const obj10 = { layout, disabled, text: intl.string(stream(1113).t["7Xq/nV"]), size: "sm", variant: "primary-overlay", onPress };
-    intl = tmp8(1113).intl;
+    const obj10 = { layout, disabled, text: intl.string(stream(1112).t["7Xq/nV"]), size: "sm", variant: "primary-overlay", onPress };
+    intl = tmp8(1112).intl;
     tmp22Result = tmp22(closure_10, obj10);
   }
   items4[1] = closure_7(View2, obj6);

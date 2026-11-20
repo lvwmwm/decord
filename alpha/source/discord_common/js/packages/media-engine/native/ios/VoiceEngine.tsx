@@ -1,21 +1,21 @@
-// Module ID: 2136
-// Function ID: 2137
+// Module ID: 2134
+// Function ID: 2135
 // Name: VoiceEngine
-// Dependencies: [17, 4, 2137, 2]
+// Dependencies: [17, 4, 2135, 2]
 
-// Module 2136 (VoiceEngine)
+// Module 2134 (VoiceEngine)
 import logger_Logger from "logger/Logger" /* 4 */;
 import react_native from "react-native" /* 17 */;
-import VoiceEngineModule from "VoiceEngineModule" /* 2137 */;
+import VoiceEngineModule from "VoiceEngineModule" /* 2135 */;
 import size from "module_2" /* 2 */;
 
 let stateUpdate;
 
-const f84182 = (arg0) => {
+const f82544 = (arg0) => {
   let applyResult;
   if (c1 != null) {
     const items = [];
-    HermesBuiltin.arraySpread(items, f28097(arg0), 0);
+    HermesBuiltin.arraySpread(items, f27745(arg0), 0);
     applyResult = HermesBuiltin.apply(tmp2, items, undefined);
   }
   return applyResult;
@@ -155,17 +155,17 @@ class VoiceConnection {
         closure_0(Buffer.from(arg0, "base64").buffer);
       });
     };
-    obj.prepareMLSCommitTransition = function prepareMLSCommitTransition(arg0, arg1, arg2) {
+    obj.prepareMLSCommitTransition = function prepareMLSCommitTransition(result1, arg1, arg2) {
       const str = Buffer.from(arg1);
       const str1 = str.toString("base64");
       const result = obj.boundConnectionMethod("prepareMLSCommitTransitionB64");
-      result(arg0, str1, obj.wrapRosterCallback(arg2));
+      result(result1, str1, obj.wrapRosterCallback(arg2));
     };
-    obj.processMLSWelcome = function processMLSWelcome(arg0, arg1, arg2) {
+    obj.processMLSWelcome = function processMLSWelcome(result1, arg1, arg2) {
       const str = Buffer.from(arg1);
       const str1 = str.toString("base64");
       const result = obj.boundConnectionMethod("processMLSWelcomeB64");
-      result(arg0, str1, obj.wrapRosterCallback(arg2));
+      result(result1, str1, obj.wrapRosterCallback(arg2));
     };
     obj.setOnMLSFailureCallback = obj.callbackSetter("mls-failure-callback", (arg0) => {
       const items = [, ];
@@ -274,111 +274,111 @@ VoiceEngineModule.VoiceEngine.createOwnStreamConnectionWithOptions = (arg0, arg1
   closure_7(obj.getId(), arg0, arg1, arg2);
   return obj;
 };
-const f28082 = (input) => {
+const f27730 = (input) => {
   const items = [input.input];
   return items;
 };
 const VoiceEngine2 = VoiceEngineModule.VoiceEngine;
 let VoiceEngineEmitter = VoiceEngineModule.VoiceEngineEmitter;
-VoiceEngineEmitter.addListener("no-input-callback", f84182);
+VoiceEngineEmitter.addListener("no-input-callback", f82544);
 VoiceEngine2.setNoInputCallback = setNoInputCallback;
-const f28083 = (arg0) => {
+const f27731 = (arg0) => {
   const items = [, ];
   ({ level: arr[0], speaking: arr[1] } = arg0);
   return items;
 };
 const VoiceEngine3 = VoiceEngineModule.VoiceEngine;
 const VoiceEngineEmitter2 = VoiceEngineModule.VoiceEngineEmitter;
-VoiceEngineEmitter2.addListener("on-voice", f84182);
+VoiceEngineEmitter2.addListener("on-voice", f82544);
 VoiceEngine3.setOnVoiceCallback = setNoInputCallback;
-const f28084 = (muted) => {
+const f27732 = (muted) => {
   const items = [muted.muted];
   return items;
 };
 const VoiceEngine4 = VoiceEngineModule.VoiceEngine;
 const VoiceEngineEmitter3 = VoiceEngineModule.VoiceEngineEmitter;
-VoiceEngineEmitter3.addListener("native-mute-state-changed", f84182);
+VoiceEngineEmitter3.addListener("native-mute-state-changed", f82544);
 VoiceEngine4.setOnNativeMuteChangedCallback = setNoInputCallback;
-const f28085 = (arg0) => {
+const f27733 = (arg0) => {
   const items = [, , ];
   ({ inputDevices: arr[0], outputDevices: arr[1], videoInputDevices: arr[2] } = arg0);
   return items;
 };
 const VoiceEngine5 = VoiceEngineModule.VoiceEngine;
 const VoiceEngineEmitter4 = VoiceEngineModule.VoiceEngineEmitter;
-VoiceEngineEmitter4.addListener("device-changed", f84182);
+VoiceEngineEmitter4.addListener("device-changed", f82544);
 VoiceEngine5.setDeviceChangeCallback = setNoInputCallback;
-const f28086 = (arg0) => {
+const f27734 = (arg0) => {
   const items = [, ];
   ({ inputVolume: arr[0], outputVolume: arr[1] } = arg0);
   return items;
 };
 const VoiceEngine6 = VoiceEngineModule.VoiceEngine;
 const VoiceEngineEmitter5 = VoiceEngineModule.VoiceEngineEmitter;
-VoiceEngineEmitter5.addListener("volume-changed", f84182);
+VoiceEngineEmitter5.addListener("volume-changed", f82544);
 VoiceEngine6.setVolumeChangeCallback = setNoInputCallback;
-const f28087 = (arg0) => {
+const f27735 = (arg0) => {
   const items = [, ];
   ({ streamId: arr[0], active: arr[1] } = arg0);
   return items;
 };
 const VoiceEngine7 = VoiceEngineModule.VoiceEngine;
 const VoiceEngineEmitter6 = VoiceEngineModule.VoiceEngineEmitter;
-VoiceEngineEmitter6.addListener("active-sinks-change", f84182);
+VoiceEngineEmitter6.addListener("active-sinks-change", f82544);
 VoiceEngine7.setActiveSinksChangeCallback = setNoInputCallback;
-const f28088 = () => [];
+const f27736 = () => [];
 const VoiceEngine8 = VoiceEngineModule.VoiceEngine;
 const VoiceEngineEmitter7 = VoiceEngineModule.VoiceEngineEmitter;
-VoiceEngineEmitter7.addListener("on-broadcast-requested", f84182);
+VoiceEngineEmitter7.addListener("on-broadcast-requested", f82544);
 VoiceEngine8.setBroadcastRequestCallback = setNoInputCallback;
-const f28089 = () => [];
+const f27737 = () => [];
 const VoiceEngine9 = VoiceEngineModule.VoiceEngine;
 const VoiceEngineEmitter8 = VoiceEngineModule.VoiceEngineEmitter;
-VoiceEngineEmitter8.addListener("on-broadcast-finished", f84182);
+VoiceEngineEmitter8.addListener("on-broadcast-finished", f82544);
 VoiceEngine9.setBroadcastFinishedCallback = setNoInputCallback;
-const f28090 = (appBundleIdentifier) => {
+const f27738 = (appBundleIdentifier) => {
   const items = [appBundleIdentifier.appBundleIdentifier];
   return items;
 };
 const VoiceEngine10 = VoiceEngineModule.VoiceEngine;
 const VoiceEngineEmitter9 = VoiceEngineModule.VoiceEngineEmitter;
-VoiceEngineEmitter9.addListener("on-broadcast-annotated", f84182);
+VoiceEngineEmitter9.addListener("on-broadcast-annotated", f82544);
 VoiceEngine10.setBroadcastAnnotatedCallback = setNoInputCallback;
-const f28091 = () => [];
+const f27739 = () => [];
 const VoiceEngine11 = VoiceEngineModule.VoiceEngine;
 const VoiceEngineEmitter10 = VoiceEngineModule.VoiceEngineEmitter;
-VoiceEngineEmitter10.addListener("on-broadcast-blocked", f84182);
+VoiceEngineEmitter10.addListener("on-broadcast-blocked", f82544);
 VoiceEngine11.setBroadcastBlockedCallback = setNoInputCallback;
-const f28092 = (isVisible) => {
+const f27740 = (isVisible) => {
   const items = [isVisible.isVisible];
   return items;
 };
 const VoiceEngine12 = VoiceEngineModule.VoiceEngine;
 const VoiceEngineEmitter11 = VoiceEngineModule.VoiceEngineEmitter;
-VoiceEngineEmitter11.addListener("on-broadcast-visibility-changed", f84182);
+VoiceEngineEmitter11.addListener("on-broadcast-visibility-changed", f82544);
 VoiceEngine12.setBroadcastVisibilityChangedCallback = setNoInputCallback;
-const f28093 = (mode) => {
+const f27741 = (mode) => {
   const items = [mode.mode];
   return items;
 };
 const VoiceEngine13 = VoiceEngineModule.VoiceEngine;
 const VoiceEngineEmitter12 = VoiceEngineModule.VoiceEngineEmitter;
-VoiceEngineEmitter12.addListener("system-microphone-mode-change", f84182);
+VoiceEngineEmitter12.addListener("system-microphone-mode-change", f82544);
 VoiceEngine13.setSystemMicrophoneModeChangeCallback = setNoInputCallback;
-const f28094 = (error) => {
+const f27742 = (error) => {
   const items = [error.error];
   return items;
 };
 const VoiceEngine14 = VoiceEngineModule.VoiceEngine;
 const VoiceEngineEmitter13 = VoiceEngineModule.VoiceEngineEmitter;
-VoiceEngineEmitter13.addListener("voice-processing-error-callback", f84182);
+VoiceEngineEmitter13.addListener("voice-processing-error-callback", f82544);
 VoiceEngine14.setVoiceProcessingErrorCallback = setNoInputCallback;
-const f28095 = (imgdata) => {
+const f27743 = (imgdata) => {
   const items = [imgdata.imgdata];
   return items;
 };
 const VoiceEngineEmitter14 = VoiceEngineModule.VoiceEngineEmitter;
-VoiceEngineEmitter14.addListener("on-broadcast-thumbnail", f84182);
+VoiceEngineEmitter14.addListener("on-broadcast-thumbnail", f82544);
 const setAudioInputInitializationCallback = setNoInputCallback;
 VoiceEngineModule.VoiceEngine.setBroadcastThumbnailCallback = (arg0, arg1, arg2, arg3) => {
   if (typeof setAudioInputInitializationCallback === "function") {
@@ -389,14 +389,14 @@ VoiceEngineModule.VoiceEngine.setBroadcastThumbnailCallback = (arg0, arg1, arg2,
     throw new TypeError("Trying to call a non-function");
   }
 };
-const f28097 = (arg0) => {
+const f27745 = (arg0) => {
   const items = [arg0];
   return items;
 };
 let c1 = null;
 const VoiceEngine15 = VoiceEngineModule.VoiceEngine;
 const VoiceEngineEmitter15 = VoiceEngineModule.VoiceEngineEmitter;
-VoiceEngineEmitter15.addListener("audio-input-initialized", f84182);
+VoiceEngineEmitter15.addListener("audio-input-initialized", f82544);
 VoiceEngine15.setAudioInputInitializationCallback = setNoInputCallback;
 const VoiceEngine16 = VoiceEngineModule.VoiceEngine;
 VoiceEngine16.initializeEngine();

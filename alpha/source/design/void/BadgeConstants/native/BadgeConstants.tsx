@@ -1,9 +1,9 @@
-// Module ID: 1189
-// Function ID: 1190
+// Module ID: 1188
+// Function ID: 1189
 // Name: BadgeConstants
 // Dependencies: [575, 2]
 
-// Module 1189 (BadgeConstants)
+// Module 1188 (BadgeConstants)
 import nativeDefault from "native" /* 575 */;
 import size from "module_2" /* 2 */;
 

@@ -1,16 +1,16 @@
-// Module ID: 10571
-// Function ID: 10572
+// Module ID: 10513
+// Function ID: 10514
 // Name: IntlLink
-// Dependencies: [19, 21, 4792, 575, 4806, 5471, 2070, 1187, 2]
+// Dependencies: [19, 21, 4794, 575, 4808, 5473, 2068, 1186, 2]
 // Exports: IntlLink
 
-// Module 10571 (IntlLink)
+// Module 10513 (IntlLink)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef2070 from "module_2070" /* 2070 */;
-import LinkingDefault from "Linking" /* 5471 */;
+import _modDef2068 from "module_2068" /* 2068 */;
+import LinkingDefault from "Linking" /* 5473 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -34,12 +34,12 @@ export function IntlLink(target) {
   target = target.target;
   const children = target.children;
   const tmp = target;
-  const tmp3 = closure_5(react.useContext(target(4806).AccessibilityPreferencesContext).alwaysShowLinkDecorations);
+  const tmp3 = closure_5(react.useContext(target(4808).AccessibilityPreferencesContext).alwaysShowLinkDecorations);
   if (typeof target === "string") {
     fn = function y() {
       const openURL = LinkingDefault.openURL;
       LinkingDefault;
-      const obj = _modDef2070;
+      const obj = _modDef2068;
       return openURL(obj.sanitizeUrl(target));
     };
     str = "link";
@@ -59,5 +59,5 @@ export function IntlLink(target) {
       }
     }
   }
-  return jsx(tmp(1187).LegacyText, { accessible: true, accessibilityRole: str, onPress: fn, style: tmp3.link, children });
+  return jsx(tmp(1186).LegacyText, { accessible: true, accessibilityRole: str, onPress: fn, style: tmp3.link, children });
 }

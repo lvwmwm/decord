@@ -1,14 +1,14 @@
-// Module ID: 13401
-// Function ID: 13402
+// Module ID: 13371
+// Function ID: 13372
 // Name: UserSettingsAuthedAppDeleteWarningModal
-// Dependencies: [21, 13402, 1113, 13403, 10968, 5745, 2]
+// Dependencies: [21, 13372, 1112, 13373, 10910, 5747, 2]
 // Exports: default
 
-// Module 13401 (UserSettingsAuthedAppDeleteWarningModal)
-import intl7 from "intl" /* 1113 */;
-import InfoBox from "InfoBox" /* 10968 */;
-import isSocialLayerApplication from "isSocialLayerApplication" /* 13402 */;
-import shouldWarnAuthorizedAppTwoWayDefault from "shouldWarnAuthorizedAppTwoWay" /* 13403 */;
+// Module 13371 (UserSettingsAuthedAppDeleteWarningModal)
+import intl7 from "intl" /* 1112 */;
+import InfoBox from "InfoBox" /* 10910 */;
+import isSocialLayerApplication from "isSocialLayerApplication" /* 13372 */;
+import shouldWarnAuthorizedAppTwoWayDefault from "shouldWarnAuthorizedAppTwoWay" /* 13373 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -39,13 +39,13 @@ export default function UserSettingsAuthedAppDeleteWarningModal(application) {
   const intl = intl7.intl;
   if (result) {
     const obj2 = { applicationName: application.name };
-    formatToPlainStringResult = intl.formatToPlainString(tmp(1113).t["paC+US"], obj2);
+    formatToPlainStringResult = intl.formatToPlainString(tmp(1112).t["paC+US"], obj2);
   } else {
-    formatToPlainStringResult = intl.string(tmp(1113).t["DT39A+"]);
+    formatToPlainStringResult = intl.string(tmp(1112).t["DT39A+"]);
   }
-  const intl2 = tmp(1113).intl;
+  const intl2 = tmp(1112).intl;
   const formatToPlainString = intl2.formatToPlainString;
-  const t = tmp(1113).t;
+  const t = tmp(1112).t;
   if (result) {
     const obj3 = { applicationName: application.name };
     formatToPlainStringResult1 = formatToPlainString(t.inM1Yt, obj3);
@@ -57,7 +57,7 @@ export default function UserSettingsAuthedAppDeleteWarningModal(application) {
   if (tmp9) {
     const obj5 = { children: intl3.format(intl7.t.KRnERi, obj6) };
     const tmp8Result = InfoBoxDefault;
-    intl3 = tmp(1113).intl;
+    intl3 = tmp(1112).intl;
     obj6 = { applicationName: application.name };
     tmp9 = _false(tmp8Result, obj5);
   }
@@ -66,20 +66,20 @@ export default function UserSettingsAuthedAppDeleteWarningModal(application) {
   if (tmp12) {
     const obj7 = { look: InfoBox.InfoBoxLooks.WARNING, children: intl4.string(intl7.t.LY35Zy) };
     const tmp8Result2 = InfoBoxDefault;
-    intl4 = tmp(1113).intl;
+    intl4 = tmp(1112).intl;
     tmp12 = _false(tmp8Result2, obj7);
   }
   items[1] = tmp12;
   const obj8 = { title: formatToPlainStringResult, content: formatToPlainStringResult1, extraContent: hasOwnProperty(React3, { children: items }), actions: hasOwnProperty(React3, obj9) };
   obj9 = { children: items1 };
-  const AlertModal = tmp(5745).AlertModal;
+  const AlertModal = tmp(5747).AlertModal;
   const obj10 = { variant: "destructive", text: intl5.string(intl7.t.xUqheM), onPress: onDelete };
-  const AlertActionButton = tmp(5745).AlertActionButton;
-  intl5 = tmp(1113).intl;
+  const AlertActionButton = tmp(5747).AlertActionButton;
+  intl5 = tmp(1112).intl;
   items1 = [_false(AlertActionButton, obj10, "confirm"), ];
   const obj11 = { variant: "secondary", text: intl6.string(intl7.t["ETE/oC"]) };
-  const AlertActionButton2 = tmp(5745).AlertActionButton;
-  intl6 = tmp(1113).intl;
+  const AlertActionButton2 = tmp(5747).AlertActionButton;
+  intl6 = tmp(1112).intl;
   items1[1] = _false(AlertActionButton2, obj11, "cancel");
   return _false(AlertModal, obj8);
 };

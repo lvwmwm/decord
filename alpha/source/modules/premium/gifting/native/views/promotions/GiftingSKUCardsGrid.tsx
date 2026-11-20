@@ -1,30 +1,30 @@
-// Module ID: 13851
-// Function ID: 13852
+// Module ID: 13820
+// Function ID: 13821
 // Name: GiftingSKUCardsGrid
-// Dependencies: [19, 17, 7961, 2112, 7962, 7963, 1072, 8890, 21, 575, 4792, 8800, 8914, 8900, 5479, 8913, 8893, 8912, 5356, 4789, 5347, 8885, 4854, 11856, 6911, 5383, 1113, 1496, 12, 2]
+// Dependencies: [19, 17, 7960, 2110, 7961, 7962, 1071, 8890, 21, 575, 4794, 8800, 8914, 8900, 5481, 8913, 8893, 8912, 5358, 4791, 5349, 8885, 4856, 11798, 6910, 5385, 1112, 1494, 12, 2]
 // Exports: default
 
-// Module 13851 (GiftingSKUCardsGrid)
+// Module 13820 (GiftingSKUCardsGrid)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
-import NameplateRecord from "NameplateRecord" /* 2112 */;
-import ColorUtils from "ColorUtils" /* 4789 */;
-import react_native from "react-native" /* 4854 */;
-import LinearGradientDefault from "LinearGradient" /* 5347 */;
-import useToken from "useToken" /* 5356 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7961 */;
-import ProfileEffectRecord from "ProfileEffectRecord" /* 7962 */;
-import ProfileFrameRecord from "ProfileFrameRecord" /* 7963 */;
+import Constants from "Constants" /* 1071 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
+import NameplateRecord from "NameplateRecord" /* 2110 */;
+import ColorUtils from "ColorUtils" /* 4791 */;
+import react_native from "react-native" /* 4856 */;
+import LinearGradientDefault from "LinearGradient" /* 5349 */;
+import useToken from "useToken" /* 5358 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7960 */;
+import ProfileEffectRecord from "ProfileEffectRecord" /* 7961 */;
+import ProfileFrameRecord from "ProfileFrameRecord" /* 7962 */;
 import CheckmarkLargeBoldIcon from "CheckmarkLargeBoldIcon" /* 8885 */;
 import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 8890 */;
-import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 11856 */;
+import useFetchCollectiblesProduct from "useFetchCollectiblesProduct" /* 11798 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -68,7 +68,7 @@ function GiftingSKUCardItemPreview(arg0) {
     const obj4 = { style: tmp.profileEffect, children: items1 };
     const obj5 = { source: obj6, style: tmp.sampleProfile, resizeMode: "cover" };
     obj6 = { uri: currentUser(8913) };
-    const tmp19 = currentUser(5479);
+    const tmp19 = currentUser(5481);
     items1 = [closure_10(tmp19, obj5), ];
     const obj7 = { skuId: item.skuId, useThumbnail: !isSelected };
     items1[1] = closure_10(currentUser(8893), obj7);
@@ -190,7 +190,7 @@ let closure_22 = react.memo(function GiftingSKUCard(rewardSkuId) {
     const first = product.items[0];
     const items = [tmp.card, ];
     let selected = isSelected;
-    const PressableOpacity = tmp2(6911).PressableOpacity;
+    const PressableOpacity = tmp2(6910).PressableOpacity;
     if (isSelected) {
       selected = tmp.selected;
     }
@@ -215,10 +215,10 @@ let closure_22 = react.memo(function GiftingSKUCard(rewardSkuId) {
     const obj5 = { style: tmp.textContainer, children: items2 };
     const obj6 = { variant: "heading-xs/semibold", color: "mobile-text-heading-primary", lineClamp: 1, accessibilityRole: "header", children: product.name };
     items2 = [authStore(Text_Text.Text, obj6), ];
-    const Text = tmp2(5383).Text;
-    const intl = tmp2(1113).intl;
+    const Text = tmp2(5385).Text;
+    const intl = tmp2(1112).intl;
     const string = intl.string;
-    const t = tmp2(1113).t;
+    const t = tmp2(1112).t;
     const tmp8 = React3;
     const tmp9 = authStore;
     if (claimed) {

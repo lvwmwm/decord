@@ -1,18 +1,18 @@
-// Module ID: 19394
-// Function ID: 19395
+// Module ID: 19214
+// Function ID: 19215
 // Name: VoicePanelConsoleStatus
-// Dependencies: [19, 11688, 11691, 11686, 21, 4792, 575, 11687, 19388, 1655, 4853, 19395, 19393, 5393, 1708, 7205, 1187, 5383, 6911, 10956, 1113, 19396, 2]
+// Dependencies: [19, 11630, 11633, 11628, 21, 4794, 575, 11629, 19208, 1653, 4855, 19215, 19213, 5395, 1706, 7204, 1186, 5385, 6910, 10898, 1112, 19216, 2]
 // Exports: renderVoicePanelConsoleStatus
 
-// Module 19394 (VoicePanelConsoleStatus)
+// Module 19214 (VoicePanelConsoleStatus)
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 4853 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11686 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11688 */;
-import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11691 */;
+import native from "native" /* 4855 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11628 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11630 */;
+import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11633 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let tmp3;
@@ -66,28 +66,28 @@ class VoicePanelConsoleStatus {
     ({ accessoryHeights, cleanUp } = arg0);
     let tmp = closure_8();
     let tmp2 = sharedValue;
-    const context = react.useContext(sharedValue(11687));
+    const context = react.useContext(sharedValue(11629));
     ({ windowDimensions, mode, channelId } = context);
-    const tmp5 = sharedValue(19388)(channelId);
+    const tmp5 = sharedValue(19208)(channelId);
     const tmp6 = state;
     ({ icon, text, color, displayCancel } = tmp5);
-    let obj = state(1655);
+    let obj = state(1653);
     sharedValue = obj.useSharedValue(false);
     let items = [sharedValue, state];
     const effect = react.useEffect(() => {
       const result = sharedValue.set(state !== native.TransitionStates.YEETED);
     }, items);
-    const tmp9 = sharedValue(19395)(mode, wrapperSpecs, accessoryHeights);
-    ({ hiddenProps, hiddenStyles } = sharedValue(19393)(mode, wrapperSpecs));
-    sharedValue(19393)(mode, wrapperSpecs);
+    const tmp9 = sharedValue(19215)(mode, wrapperSpecs, accessoryHeights);
+    ({ hiddenProps, hiddenStyles } = sharedValue(19213)(mode, wrapperSpecs));
+    sharedValue(19213)(mode, wrapperSpecs);
     let items1 = [closure_11, color, windowDimensions, EDGE_GUTTER, CONTROLS_HEIGHT, 36, , , , , , ];
-    const useAnimatedStyle = state(1655).useAnimatedStyle;
-    state(1655);
-    items1[6] = state(5393).withSpring;
+    const useAnimatedStyle = state(1653).useAnimatedStyle;
+    state(1653);
+    items1[6] = state(5395).withSpring;
     items1[7] = sharedValue;
     items1[8] = obj4;
     items1[9] = closure_10;
-    items1[10] = state(1708).scheduleOnRN;
+    items1[10] = state(1706).scheduleOnRN;
     items1[11] = cleanUp;
     let c0;
     let c1;
@@ -151,7 +151,7 @@ class VoicePanelConsoleStatus {
     c0 = undefined;
     c1 = undefined;
     [tmp26, tmp27, tmp28] = items3;
-    const tmp6Result = tmp6(1655);
+    const tmp6Result = tmp6(1653);
     class VoicePanelConsoleStatusTsx3 {
       constructor() {
         const obj = { width: _undefined.get().width - 2 * c1 };
@@ -165,32 +165,32 @@ class VoicePanelConsoleStatus {
     const animatedStyle1 = tmp6Result.useAnimatedStyle(VoicePanelConsoleStatusTsx3);
     const obj2 = { style: items5, animatedProps: hiddenProps, children: items7 };
     items5 = [tmp.consoleParentContainer, tmp9, hiddenStyles];
-    const View = tmp2(1655).View;
+    const View = tmp2(1653).View;
     const obj3 = { style: tmp.consoleContainer, children: closure_6(View2, obj4) };
     obj4 = { style: animatedStyle, children: closure_7(tmp2Result2, obj5) };
-    const tmp2Result = tmp2(7205);
-    View2 = tmp2(1655).View;
+    const tmp2Result = tmp2(7204);
+    View2 = tmp2(1653).View;
     obj5 = { style: tmp.consoleItemContainer, children: items6 };
-    const obj6 = { source: icon, color: tmp2(575).unsafe_rawColors.WHITE, size: tmp6(1187).IconSizes.SMALL };
-    tmp2Result2 = tmp2(7205);
-    const Icon = tmp6(1187).Icon;
+    const obj6 = { source: icon, color: tmp2(575).unsafe_rawColors.WHITE, size: tmp6(1186).IconSizes.SMALL };
+    tmp2Result2 = tmp2(7204);
+    const Icon = tmp6(1186).Icon;
     items6 = [closure_6(Icon, obj6), , ];
     const obj7 = { variant: "body-sm/medium", color: "text-overlay-light", style: tmp.consoleText, children: text };
-    items6[1] = closure_6(tmp6(5383).Text, obj7);
+    items6[1] = closure_6(tmp6(5385).Text, obj7);
     let tmp31Result = null;
     if (displayCancel) {
-      const obj8 = { hitSlop: 4, onPress: tmp6(10956).disconnectRemote, children: closure_6(Text, obj9) };
-      const PressableOpacity = tmp6(6911).PressableOpacity;
-      obj9 = { variant: "body-sm/medium", color: "text-overlay-light", children: intl.string(tmp6(1113).t["ETE/oC"]) };
-      Text = tmp6(5383).Text;
-      intl = tmp6(1113).intl;
+      const obj8 = { hitSlop: 4, onPress: tmp6(10898).disconnectRemote, children: closure_6(Text, obj9) };
+      const PressableOpacity = tmp6(6910).PressableOpacity;
+      obj9 = { variant: "body-sm/medium", color: "text-overlay-light", children: intl.string(tmp6(1112).t["ETE/oC"]) };
+      Text = tmp6(5385).Text;
+      intl = tmp6(1112).intl;
       tmp31Result = tmp31(PressableOpacity, obj8);
     }
     items6[2] = tmp31Result;
     items7 = [closure_6(tmp2Result, obj3), ];
-    const obj10 = { style: items8, children: closure_6(tmp6(19396).VoicePanelVisualEffectView, {}) };
+    const obj10 = { style: items8, children: closure_6(tmp6(19216).VoicePanelVisualEffectView, {}) };
     items8 = [tmp.blockingControlCover, animatedStyle1];
-    const View3 = tmp2(1655).View;
+    const View3 = tmp2(1653).View;
     items7[1] = closure_6(View3, obj10);
     return closure_7(View, obj2);
   }

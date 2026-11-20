@@ -1,19 +1,19 @@
-// Module ID: 14462
-// Function ID: 14463
+// Module ID: 14430
+// Function ID: 14431
 // Name: useConjureServerWidgetOffers
-// Dependencies: [5, 19, 10272, 4663, 1388, 14461, 559, 10276, 1285, 504, 1452, 6746, 14463, 10090, 6842, 14464, 14465, 2]
+// Dependencies: [5, 19, 10212, 4665, 1386, 14429, 559, 10216, 1284, 504, 1450, 6746, 14431, 10093, 6842, 14432, 14433, 2]
 // Exports: default
 
-// Module 14462 (useConjureServerWidgetOffers)
+// Module 14430 (useConjureServerWidgetOffers)
 import BackoffDefault from "Backoff" /* 559 */;
 import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 6842 */;
-import useAddableWidgets from "useAddableWidgets" /* 14465 */;
+import useAddableWidgets from "useAddableWidgets" /* 14433 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ApplicationWidgetConfigStore from "ApplicationWidgetConfigStore" /* 10272 */;
-import GuildStore from "GuildStore" /* 4663 */;
-import UserStore from "UserStore" /* 1388 */;
-import ConjureServerWidgetStore from "ConjureServerWidgetStore" /* 14461 */;
+import ApplicationWidgetConfigStore from "ApplicationWidgetConfigStore" /* 10212 */;
+import GuildStore from "GuildStore" /* 4665 */;
+import UserStore from "UserStore" /* 1386 */;
+import ConjureServerWidgetStore from "ConjureServerWidgetStore" /* 14429 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -33,7 +33,7 @@ let obj = function _loadWidgetConfigs() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c9;
@@ -72,7 +72,7 @@ let obj = function _loadWidgetConfigs() {
                   const obj3 = { value, done: true };
                   return obj3;
                 } else {
-                  return { value: "HermesInternal", done: "+60" };
+                  return { value: "HermesInternal", done: null };
                 }
               } else {
                 try {
@@ -170,7 +170,7 @@ let obj = function _loadWidgetConfigs() {
                       c4 = 0;
                     }
                     c6 = 3;
-                    return { value: "HermesInternal", done: "+60" };
+                    return { value: "HermesInternal", done: null };
                   }
                 } catch (tmp30) {
                   closure_3 = tmp30;
@@ -189,7 +189,7 @@ let obj = function _loadWidgetConfigs() {
             closure_2 = closure_0[Symbol.iterator]();
             if (closure_2 === undefined) {
               c12 = 3;
-              return { value: "HermesInternal", done: "+60" };
+              return { value: "HermesInternal", done: null };
             } else {
               c9 = 1;
               c3 = tmp29;

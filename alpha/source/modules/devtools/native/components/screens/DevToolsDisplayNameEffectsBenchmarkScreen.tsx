@@ -1,17 +1,17 @@
-// Module ID: 17221
-// Function ID: 17222
+// Module ID: 17045
+// Function ID: 17046
 // Name: DevToolsDisplayNameEffectsBenchmarkScreen
-// Dependencies: [32, 19, 17, 1388, 1397, 21, 1399, 9344, 1113, 9340, 3147, 4792, 575, 5808, 5383, 5390, 9334, 9335, 504, 17222, 7229, 6926, 14634, 6223, 2]
+// Dependencies: [32, 19, 17, 1386, 1395, 21, 1397, 9344, 1112, 9340, 3149, 4794, 575, 5810, 5385, 5392, 9334, 9335, 504, 17046, 7228, 6925, 14602, 6225, 2]
 // Exports: default
 
-// Module 17221 (DevToolsDisplayNameEffectsBenchmarkScreen)
+// Module 17045 (DevToolsDisplayNameEffectsBenchmarkScreen)
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1113 */;
-import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1397 */;
-import DisplayNameEffect from "DisplayNameEffect" /* 1399 */;
-import _modDef3147 from "module_3147" /* 3147 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import Stack_Stack from "Stack/Stack" /* 5808 */;
+import intl2 from "intl" /* 1112 */;
+import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1395 */;
+import DisplayNameEffect from "DisplayNameEffect" /* 1397 */;
+import _modDef3149 from "module_3149" /* 3149 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import Stack_Stack from "Stack/Stack" /* 5810 */;
 import UsernameWithEffectsDefault from "UsernameWithEffects" /* 9334 */;
 import types from "types" /* 9335 */;
 import useDisplayNameStylesEffectConfigs from "useDisplayNameStylesEffectConfigs" /* 9340 */;
@@ -19,9 +19,9 @@ import _mod9344 from "module_9344" /* 9344 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1388 */;
+import UserStore from "UserStore" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -38,7 +38,7 @@ function effectName(arg0) {
   const string = intl.string;
   let OpWJ3f = useDisplayNameStylesEffectConfigs.DISPLAY_NAME_STYLES_EFFECT_NAMES[arg0];
   if (OpWJ3f == null) {
-    OpWJ3f = _modDef3147.OpWJ3f;
+    OpWJ3f = _modDef3149.OpWJ3f;
   }
   return string(OpWJ3f);
 }

@@ -1,16 +1,16 @@
-// Module ID: 19628
-// Function ID: 19629
+// Module ID: 19446
+// Function ID: 19447
 // Name: useGameOrganizationInviteFetch
-// Dependencies: [5, 11833, 11834, 1072, 504, 1089, 11993, 11994, 2]
+// Dependencies: [5, 11775, 11776, 1071, 504, 1088, 11935, 11936, 2]
 
-// Module 19628 (useGameOrganizationInviteFetch)
-import Constants from "Constants" /* 1072 */;
-import DurationsDefault from "Durations" /* 1089 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11834 */;
-import isRetryableFetchErrorDefault from "isRetryableFetchError" /* 11993 */;
-import GameOrganizationInviteActionCreatorsDefault from "GameOrganizationInviteActionCreators" /* 11994 */;
+// Module 19446 (useGameOrganizationInviteFetch)
+import Constants from "Constants" /* 1071 */;
+import DurationsDefault from "Durations" /* 1088 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11776 */;
+import isRetryableFetchErrorDefault from "isRetryableFetchError" /* 11935 */;
+import GameOrganizationInviteActionCreatorsDefault from "GameOrganizationInviteActionCreators" /* 11936 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 11833 */;
+import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 11775 */;
 import get_initialized from "get initialized" /* 504 */;
 import size from "module_2" /* 2 */;
 
@@ -55,7 +55,7 @@ let closure_2 = _asyncToGenerator(async (arg0, value) => {
       const obj3 = { value, done: true };
       return obj3;
     } else {
-      return { value: "HermesInternal", done: "+60" };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -84,7 +84,7 @@ let closure_2 = _asyncToGenerator(async (arg0, value) => {
         return obj;
       } else {
         c1 = 3;
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } catch (tmp7) {
       c1 = 3;

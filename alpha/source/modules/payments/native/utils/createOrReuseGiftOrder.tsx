@@ -1,14 +1,14 @@
 // Module ID: 9353
 // Function ID: 9354
 // Name: createOrReuseGiftOrder
-// Dependencies: [5, 19, 5509, 1390, 1083, 3, 1380, 8801, 9127, 8997, 2169, 4605, 2]
+// Dependencies: [5, 19, 5511, 1388, 1082, 3, 1378, 8801, 9127, 8997, 2167, 4607, 2]
 // Exports: useCreateOrReuseGiftOrder
 
 // Module 9353 (createOrReuseGiftOrder)
 import LoggerDefault from "Logger" /* 3 */;
-import Constants from "Constants" /* 1083 */;
-import PremiumConstants from "PremiumConstants" /* 1390 */;
-import PaymentConstants from "PaymentConstants" /* 5509 */;
+import Constants from "Constants" /* 1082 */;
+import PremiumConstants from "PremiumConstants" /* 1388 */;
+import PaymentConstants from "PaymentConstants" /* 5511 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -61,7 +61,7 @@ export function useCreateOrReuseGiftOrder(GiftPurchaseButton) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;

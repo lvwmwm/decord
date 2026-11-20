@@ -1,37 +1,37 @@
-// Module ID: 12689
-// Function ID: 12690
+// Module ID: 12659
+// Function ID: 12660
 // Name: CheckpointSummaryStatsScreen
-// Dependencies: [19, 17, 4793, 12400, 5848, 21, 575, 4792, 1360, 12637, 504, 12417, 5872, 7478, 12690, 12418, 1113, 3339, 1496, 1414, 7858, 3307, 7203, 5383, 6218, 10146, 12665, 4738, 7377, 5479, 12659, 12631, 2]
+// Dependencies: [19, 17, 4795, 12370, 5850, 21, 575, 4794, 1358, 12607, 504, 12387, 5874, 7477, 12660, 12388, 1112, 3341, 1494, 1412, 7857, 3309, 7202, 5385, 6220, 10149, 12635, 4740, 7376, 5481, 12629, 12601, 2]
 // Exports: default
 
-// Module 12689 (CheckpointSummaryStatsScreen)
+// Module 12659 (CheckpointSummaryStatsScreen)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import _modDef3307 from "module_3307" /* 3307 */;
-import _modDef3339 from "module_3339" /* 3339 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4738 */;
-import CheckpointCardColors from "CheckpointCardColors" /* 5872 */;
-import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6218 */;
-import GuildIcon from "GuildIcon" /* 7203 */;
-import EmojiDefault from "Emoji" /* 7377 */;
-import useMeasuredLayoutDefault from "useMeasuredLayout" /* 7478 */;
-import FlagIcon from "FlagIcon" /* 10146 */;
-import CheckpointScreen from "CheckpointScreen" /* 12417 */;
-import CheckpointTextDefault from "CheckpointText" /* 12418 */;
-import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 12631 */;
-import useIsCheckpointWideDefault from "useIsCheckpointWide" /* 12637 */;
-import CheckpointNumberUtils from "CheckpointNumberUtils" /* 12659 */;
-import CheckpointDisplayTextDefault from "CheckpointDisplayText" /* 12665 */;
-import CheckpointRecapCard from "CheckpointRecapCard" /* 12690 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
+import _modDef3309 from "module_3309" /* 3309 */;
+import _modDef3341 from "module_3341" /* 3341 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4740 */;
+import CheckpointCardColors from "CheckpointCardColors" /* 5874 */;
+import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6220 */;
+import GuildIcon from "GuildIcon" /* 7202 */;
+import EmojiDefault from "Emoji" /* 7376 */;
+import useMeasuredLayoutDefault from "useMeasuredLayout" /* 7477 */;
+import FlagIcon from "FlagIcon" /* 10149 */;
+import CheckpointScreen from "CheckpointScreen" /* 12387 */;
+import CheckpointTextDefault from "CheckpointText" /* 12388 */;
+import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 12601 */;
+import useIsCheckpointWideDefault from "useIsCheckpointWide" /* 12607 */;
+import CheckpointNumberUtils from "CheckpointNumberUtils" /* 12629 */;
+import CheckpointDisplayTextDefault from "CheckpointDisplayText" /* 12635 */;
+import CheckpointRecapCard from "CheckpointRecapCard" /* 12660 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4793 */;
-import CheckpointStore from "CheckpointStore" /* 12400 */;
-import CheckpointConstants from "CheckpointConstants" /* 5848 */;
+import AccessibilityStore from "AccessibilityStore" /* 4795 */;
+import CheckpointStore from "CheckpointStore" /* 12370 */;
+import CheckpointConstants from "CheckpointConstants" /* 5850 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
-import PlatformUtils from "utils/PlatformUtils" /* 1360 */;
+import createStyles_mod from "createStyles" /* 4794 */;
+import PlatformUtils from "utils/PlatformUtils" /* 1358 */;
 import size_mod from "module_2" /* 2 */;
 
 const GuildIconDefault = GuildIcon;
@@ -57,7 +57,7 @@ let obj8;
 let obj9;
 let size;
 let tmp2;
-const intl14 = tmp2(1113);
+const intl14 = tmp2(1112);
 function GlobalSummaryStats() {
   let character;
   let intl;
@@ -106,7 +106,7 @@ function GlobalSummaryStats() {
   if (!tmp7) {
     noDataDescriptionText = tmp.noDataDescriptionText;
   }
-  obj6 = { variant: "body-md/medium", style: items3, children: intl.string(_modDef3339["GL+yOs"]) };
+  obj6 = { variant: "body-md/medium", style: items3, children: intl.string(_modDef3341["GL+yOs"]) };
   items3 = [noDataDescriptionText, { color: primaryBackgroundColor }];
   intl = intl14.intl;
   items2[1] = metroImportAll(View, obj5);
@@ -188,30 +188,30 @@ function UserSummaryStats(stats) {
   const checkpointScreenContentHeight = tmp5Result7.useCheckpointScreenContentHeight(tmp4);
   ({ height, ref, onLayout } = useMeasuredLayoutDefault());
   useMeasuredLayoutDefault();
-  size = tmp2(1496)({ ignoreKeyboard: true });
+  size = tmp2(1494)({ ignoreKeyboard: true });
   let num = 1;
   if (Math.min(size.width, size.height) >= 600) {
     num = 1.4;
   }
   let diff;
   if (null != height) {
-    diff = checkpointScreenContentHeight - map1 - PX_16 - height;
+    diff = checkpointScreenContentHeight - map1 - PX_24 - height;
   }
   let minResult = diff;
   if (tmp4) {
     let num2 = 240;
     const _Math = Math;
     if (1 < num) {
-      num2 = tmp5(12690).CARD_HEIGHT * num;
+      num2 = tmp5(12660).CARD_HEIGHT * num;
     }
     minResult = min(num2, checkpointScreenContentHeight);
   }
   if (null != diff) {
     const _Math2 = Math;
     const _Math3 = Math;
-    map1 = PX_16 + Math.min(Math.max(diff - tmp5(12690).CARD_HEIGHT * num, 0), PX_48 - PX_16);
+    map1 = PX_24 + Math.min(Math.max(diff - tmp5(12660).CARD_HEIGHT * num, 0), PX_48 - PX_24);
   } else {
-    map1 = PX_16;
+    map1 = PX_24;
   }
   let wideStatsExpanded = tmp4 && null != height && height <= checkpointScreenContentHeight - 2 * closure_14;
   let first1;
@@ -246,13 +246,13 @@ function UserSummaryStats(stats) {
     const tmp2Result6 = AvatarUtilsDefault;
     applicationIconURL = tmp2Result6.getApplicationIconURL(obj3);
   }
-  let tmp28Result6 = metroImportAll(tmp5(7858).UnknownGameIcon, { size: "md", color: primaryBackgroundColor });
-  const intl = tmp5(1113).intl;
-  const stringResult = intl.string(_modDef3339.s4qVni);
+  let tmp28Result6 = metroImportAll(tmp5(7857).UnknownGameIcon, { size: "md", color: primaryBackgroundColor });
+  const intl = tmp5(1112).intl;
+  const stringResult = intl.string(_modDef3341.s4qVni);
   const toLocaleUpperCaseResult = stringResult.toLocaleUpperCase();
-  const intl2 = tmp5(1113).intl;
+  const intl2 = tmp5(1112).intl;
   let icon;
-  const stringResult1 = intl2.string(_modDef3307.y4M1na);
+  const stringResult1 = intl2.string(_modDef3309.y4M1na);
   const toLocaleUpperCaseResult1 = stringResult1.toLocaleUpperCase();
   if (first != null) {
     icon = first.guild.icon;
@@ -268,7 +268,7 @@ function UserSummaryStats(stats) {
       items2 = [, ];
       ({ itemIcon: arr14[0], guildAcronym: arr14[1] } = tmp);
       obj6 = { variant: "body-md/semibold", color: "text-overlay-light", allowFontScaling: false, children: tmp5Result8.getGuildAcronymCharacter(first.guild.name) };
-      Text = tmp5(5383).Text;
+      Text = tmp5(5385).Text;
       tmp5Result8 = CheckpointStatsUtils;
       tmp28Result = tmp28(View, obj5);
     }
@@ -305,9 +305,9 @@ function UserSummaryStats(stats) {
     let tmp39 = tmp4;
     if (tmp39) {
       let CARD_HEIGHT = minResult;
-      const CARD_WIDTH = tmp5(12690).CARD_WIDTH;
+      const CARD_WIDTH = tmp5(12660).CARD_WIDTH;
       if (minResult == null) {
-        CARD_HEIGHT = tmp5(12690).CARD_HEIGHT;
+        CARD_HEIGHT = tmp5(12660).CARD_HEIGHT;
       }
       const obj12 = { width: result / CheckpointRecapCard.CARD_HEIGHT };
       result = CARD_WIDTH * CARD_HEIGHT;
@@ -338,8 +338,8 @@ function UserSummaryStats(stats) {
   const obj18 = { style: items8, ref, onLayout, children: items10 };
   items8[2] = wideStatsExpanded;
   const obj19 = { style: items3, children: items9 };
-  const obj20 = { style: wideLeftStat, label: intl3.string(_modDef3339.MSrV9z), statType: "voice", value: round(num6), color: primaryBackgroundColor };
-  intl3 = tmp5(1113).intl;
+  const obj20 = { style: wideLeftStat, label: intl3.string(_modDef3341.MSrV9z), statType: "voice", value: round(num6), color: primaryBackgroundColor };
+  intl3 = tmp5(1112).intl;
   num6 = undefined;
   const _Math4 = Math;
   round = Math.round;
@@ -350,8 +350,8 @@ function UserSummaryStats(stats) {
     num6 = 0;
   }
   items9 = [metroImportAll(NumberStat, obj20), ];
-  const obj21 = { style: wideRightStat, label: intl4.string(_modDef3339.hhh11L), statType: "messages", value: round2(num7), color: primaryBackgroundColor };
-  intl4 = tmp5(1113).intl;
+  const obj21 = { style: wideRightStat, label: intl4.string(_modDef3341.hhh11L), statType: "messages", value: round2(num7), color: primaryBackgroundColor };
+  intl4 = tmp5(1112).intl;
   num7 = undefined;
   const _Math5 = Math;
   round2 = Math.round;
@@ -364,8 +364,8 @@ function UserSummaryStats(stats) {
   items9[1] = metroImportAll(NumberStat, obj21);
   items10 = [React4(View, obj19), , , ];
   const obj22 = { style: items3, children: items11 };
-  const obj23 = { style: wideLeftStat, label: intl5.string(_modDef3339["f5S+pt"]), statType: "topServerDays", value: round3(num8), color: primaryBackgroundColor };
-  intl5 = tmp5(1113).intl;
+  const obj23 = { style: wideLeftStat, label: intl5.string(_modDef3341["f5S+pt"]), statType: "topServerDays", value: round3(num8), color: primaryBackgroundColor };
+  intl5 = tmp5(1112).intl;
   num8 = undefined;
   const _Math6 = Math;
   round3 = Math.round;
@@ -376,19 +376,19 @@ function UserSummaryStats(stats) {
     num8 = 0;
   }
   items11 = [metroImportAll(NumberStat, obj23), ];
-  const obj24 = { style: wideRightStat, singleLine: tmp4, label: intl6.string(_modDef3307["8XPMJj"]), name, color: primaryBackgroundColor, icon: tmp28Result };
-  intl6 = tmp5(1113).intl;
+  const obj24 = { style: wideRightStat, singleLine: tmp4, label: intl6.string(_modDef3309["8XPMJj"]), name, color: primaryBackgroundColor, icon: tmp28Result };
+  intl6 = tmp5(1112).intl;
   if (null != first) {
     name = first.guild.name;
   } else {
-    const intl7 = tmp5(1113).intl;
-    name = intl7.string(tmp2(3339).GultYJ);
+    const intl7 = tmp5(1112).intl;
+    name = intl7.string(tmp2(3341).GultYJ);
   }
   items11[1] = metroImportAll(ItemStat, obj24);
   items10[1] = React4(View, obj22);
   const obj25 = { style: items3, children: items12 };
-  const obj26 = { style: wideLeftStat, label: intl8.string(_modDef3339.xVSlv3), statType: "emoji", value: round4(num9), color: primaryBackgroundColor };
-  intl8 = tmp5(1113).intl;
+  const obj26 = { style: wideLeftStat, label: intl8.string(_modDef3341.xVSlv3), statType: "emoji", value: round4(num9), color: primaryBackgroundColor };
+  intl8 = tmp5(1112).intl;
   num9 = undefined;
   const _Math7 = Math;
   round4 = Math.round;
@@ -399,11 +399,11 @@ function UserSummaryStats(stats) {
     num9 = 0;
   }
   items12 = [metroImportAll(NumberStat, obj26), ];
-  const obj27 = { style: wideRightStat, singleLine: tmp4, label: intl9.string(_modDef3307["3sARW7"]), name: stringResult2, color: primaryBackgroundColor, icon: tmp28Result5 };
-  intl9 = tmp5(1113).intl;
+  const obj27 = { style: wideRightStat, singleLine: tmp4, label: intl9.string(_modDef3309["3sARW7"]), name: stringResult2, color: primaryBackgroundColor, icon: tmp28Result5 };
+  intl9 = tmp5(1112).intl;
   if (null == first1) {
-    const intl10 = tmp5(1113).intl;
-    stringResult2 = intl10.string(tmp5(1113).t.PoWNfe);
+    const intl10 = tmp5(1112).intl;
+    stringResult2 = intl10.string(tmp5(1112).t.PoWNfe);
   } else if (null == first1.id) {
     const tmp2Result9 = UnicodeEmojisDefault;
     stringResult2 = tmp2Result9.convertSurrogateToName(first1.name);
@@ -425,8 +425,8 @@ function UserSummaryStats(stats) {
   items12[1] = metroImportAll(ItemStat, obj27);
   items10[2] = React4(View, obj25);
   const obj29 = { style: items3, children: items13 };
-  const obj30 = { style: wideLeftStat, label: intl11.string(_modDef3339.y2Y1DD), statType: "gameDays", value: round5(num10), color: primaryBackgroundColor };
-  intl11 = tmp5(1113).intl;
+  const obj30 = { style: wideLeftStat, label: intl11.string(_modDef3341.y2Y1DD), statType: "gameDays", value: round5(num10), color: primaryBackgroundColor };
+  intl11 = tmp5(1112).intl;
   num10 = undefined;
   const _Math8 = Math;
   round5 = Math.round;
@@ -437,18 +437,18 @@ function UserSummaryStats(stats) {
     num10 = 0;
   }
   items13 = [metroImportAll(NumberStat, obj30), ];
-  const obj31 = { style: wideRightStat, singleLine: tmp4, label: intl12.string(_modDef3307.RbT4Zq), name: name2, color: primaryBackgroundColor, icon: tmp28Result6 };
-  intl12 = tmp5(1113).intl;
+  const obj31 = { style: wideRightStat, singleLine: tmp4, label: intl12.string(_modDef3309.RbT4Zq), name: name2, color: primaryBackgroundColor, icon: tmp28Result6 };
+  intl12 = tmp5(1112).intl;
   if (null != game) {
     name2 = game.name;
   } else {
-    const intl13 = tmp5(1113).intl;
-    name2 = intl13.string(tmp5(1113).t.PoWNfe);
+    const intl13 = tmp5(1112).intl;
+    name2 = intl13.string(tmp5(1112).t.PoWNfe);
   }
   if (null != applicationIconURL) {
     const obj32 = { source: obj34, style: tmp.itemIcon };
     obj34 = { uri: applicationIconURL };
-    tmp28Result6 = tmp28(tmp2(5479), obj32);
+    tmp28Result6 = tmp28(tmp2(5481), obj32);
   }
   items13[1] = metroImportAll(ItemStat, obj31);
   items10[3] = React4(View, obj29);
@@ -516,22 +516,22 @@ function ItemStat(arg0) {
 const View = react_native.View;
 ({ CHECKPOINT_PRIMARY: metroImportDefault, CHECKPOINT_CONTROL_SIZE, CHECKPOINT_NAV_HEIGHT } = CheckpointConstants);
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
-const PX_16 = nativeDefault.space.PX_16;
+const PX_24 = nativeDefault.space.PX_24;
 const PX_48 = nativeDefault.space.PX_48;
 const PX_32 = nativeDefault.space.PX_32;
 const sum = CHECKPOINT_CONTROL_SIZE + nativeDefault.space.PX_16;
 let map1 = sum;
-const PX_24 = nativeDefault.space.PX_24;
+const PX_242 = nativeDefault.space.PX_24;
 let closure_14 = CHECKPOINT_NAV_HEIGHT + nativeDefault.space.PX_24;
 let createStyles = createStyles_mod;
-let obj = { container: { width: "100%", maxWidth: 400, alignSelf: "center", flexGrow: 1, alignItems: "center", gap: PX_16, paddingBottom: sum }, noDataContainer: { justifyContent: "center", gap: PX_32 }, noDataWideContainer: { flexDirection: "row", maxWidth: "100%" }, heading: obj2, headingLabel: obj3, wideContainer: obj4, wideCardClearControls: obj5, wideHeading: { alignSelf: "center" }, wideStats: obj6, wideStatsExpanded: obj7, wideRow: { columnGap: PX_24 }, wideLeftStat: { flex: 140 }, wideRightStat: { flex: 240 }, stats: obj8, noDataDescription: { width: 240 }, noDataDescriptionText: { textAlign: "center" }, row: obj9, stat: obj10, statNumber: { height: 24, justifyContent: "center" }, item: obj11, itemName: { flexShrink: 1 }, itemIcon: size, guildAcronym: obj12, emoji: { width: 28, height: 28 }, textEmoji: { fontSize: 24, lineHeight: num, textAlign: "center" } };
+let obj = { container: { width: "100%", maxWidth: 400, alignSelf: "center", flexGrow: 1, alignItems: "center", justifyContent: "center", gap: PX_24, paddingBottom: sum }, noDataContainer: { justifyContent: "center", gap: PX_32 }, noDataWideContainer: { flexDirection: "row", maxWidth: "100%" }, heading: obj2, headingLabel: obj3, wideContainer: obj4, wideCardClearControls: obj5, wideHeading: { alignSelf: "center" }, wideStats: obj6, wideStatsExpanded: obj7, wideRow: { columnGap: PX_242 }, wideLeftStat: { flex: 140 }, wideRightStat: { flex: 240 }, stats: obj8, noDataDescription: { width: 240 }, noDataDescriptionText: { textAlign: "center" }, row: obj9, stat: obj10, statNumber: { height: 24, justifyContent: "center" }, item: obj11, itemName: { flexShrink: 1 }, itemIcon: size, guildAcronym: obj12, emoji: { width: 28, height: 28 }, textEmoji: { fontSize: 24, lineHeight: num, textAlign: "center" } };
 obj2 = { alignSelf: "stretch", gap: nativeDefault.space.PX_8 };
 createStyles = createStyles.createStyles;
 obj3 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 };
 obj4 = { flexGrow: 1, flexDirection: "row", alignItems: "center", justifyContent: "center", columnGap: nativeDefault.space.PX_40, paddingRight: 116 };
 obj5 = { paddingBottom: nativeDefault.space.PX_48 };
-obj6 = { alignSelf: "center", width: 280 + PX_24, gap: nativeDefault.space.PX_16 };
-obj7 = { width: 140 + PX_24 + 240 };
+obj6 = { alignSelf: "center", width: 280 + PX_242, gap: nativeDefault.space.PX_16 };
+obj7 = { width: 140 + PX_242 + 240 };
 obj8 = { alignSelf: "stretch", gap: nativeDefault.space.PX_24 };
 obj9 = { flexDirection: "row", columnGap: nativeDefault.space.PX_16 };
 obj10 = { flex: 1, gap: nativeDefault.space.PX_8 };

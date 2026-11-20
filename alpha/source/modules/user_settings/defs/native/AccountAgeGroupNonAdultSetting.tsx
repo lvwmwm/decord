@@ -1,17 +1,17 @@
-// Module ID: 15941
-// Function ID: 15942
+// Module ID: 15905
+// Function ID: 15906
 // Name: AccountAgeGroupNonAdultSetting
-// Dependencies: [8593, 7674, 6293, 6290, 1113, 5454, 15894, 11875, 2]
+// Dependencies: [8592, 7673, 6295, 6292, 1112, 5456, 15858, 11817, 2]
 
-// Module 15941 (AccountAgeGroupNonAdultSetting)
-import intl3 from "intl" /* 1113 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5454 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6290 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6293 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7674 */;
-import SettingsConstants from "SettingsConstants" /* 8593 */;
-import AgeNoticeSettingsPredicate from "AgeNoticeSettingsPredicate" /* 15894 */;
-import SettingBuilders from "SettingBuilders" /* 11875 */;
+// Module 15905 (AccountAgeGroupNonAdultSetting)
+import intl3 from "intl" /* 1112 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5456 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6292 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6295 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7673 */;
+import SettingsConstants from "SettingsConstants" /* 8592 */;
+import AgeNoticeSettingsPredicate from "AgeNoticeSettingsPredicate" /* 15858 */;
+import SettingBuilders from "SettingBuilders" /* 11817 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
@@ -27,8 +27,8 @@ let obj = {
     const intl = intl3.intl;
     let stringResult = intl.string(intl3.t.lKDPGA);
     if (isAgeVerified) {
-      const intl2 = tmp(1113).intl;
-      stringResult = intl2.string(tmp(1113).t.sK0dmH);
+      const intl2 = tmp(1112).intl;
+      stringResult = intl2.string(tmp(1112).t.sK0dmH);
     }
     return stringResult;
   },

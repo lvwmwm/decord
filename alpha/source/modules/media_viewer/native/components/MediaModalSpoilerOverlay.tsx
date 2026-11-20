@@ -1,21 +1,21 @@
-// Module ID: 10525
-// Function ID: 10526
+// Module ID: 10467
+// Function ID: 10468
 // Name: MediaModalSpoilerOverlay
-// Dependencies: [32, 19, 17, 21, 4792, 575, 1380, 5356, 10027, 1655, 5360, 7563, 5383, 1113, 2]
+// Dependencies: [32, 19, 17, 21, 4794, 575, 1378, 5358, 10030, 1653, 5362, 7562, 5385, 1112, 2]
 
-// Module 10525 (MediaModalSpoilerOverlay)
+// Module 10467 (MediaModalSpoilerOverlay)
 import nativeDefault from "native" /* 575 */;
-import intl3 from "intl" /* 1113 */;
-import useToken from "useToken" /* 5356 */;
-import VisualEffectViewDefault from "VisualEffectView" /* 5360 */;
-import ImageWarningIcon from "ImageWarningIcon" /* 7563 */;
-import useMediaItemSpoilerState from "useMediaItemSpoilerState" /* 10027 */;
+import intl3 from "intl" /* 1112 */;
+import useToken from "useToken" /* 5358 */;
+import VisualEffectViewDefault from "VisualEffectView" /* 5362 */;
+import ImageWarningIcon from "ImageWarningIcon" /* 7562 */;
+import useMediaItemSpoilerState from "useMediaItemSpoilerState" /* 10030 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1380 */;
+import createStyles_mod from "createStyles" /* 4794 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1378 */;
 import size from "module_2" /* 2 */;
 
 let PlatformUtils;
@@ -57,7 +57,7 @@ const memoResult = react.memo(function MediaModalSpoilerOverlay(source) {
     let str;
     const obj3 = { style: items, children: items1 };
     items = [style, absoluteFill.absoluteFill, tmp7];
-    const View = tmp4(1655).View;
+    const View = tmp4(1653).View;
     const tmp10 = absoluteFill;
     const tmp4Result = VisualEffectViewDefault;
     if (source.obscure) {
@@ -74,16 +74,16 @@ const memoResult = react.memo(function MediaModalSpoilerOverlay(source) {
       obj6.style = tmp.obscureContentContainer;
       const items2 = [metroRequire(ImageWarningIcon.ImageWarningIcon, { size: "lg", color: "white" }), ];
       const obj7 = { accessibilityRole: "text", variant: "heading-sm/medium", color: "text-overlay-light", children: intl2.string(intl3.t.SpxcUR) };
-      const Text2 = tmp2(5383).Text;
-      intl2 = tmp2(1113).intl;
+      const Text2 = tmp2(5385).Text;
+      intl2 = tmp2(1112).intl;
       items2[1] = metroRequire(Text2, obj7);
       obj6.children = items2;
       tmp11Result = tmp9(tmp13, obj6);
     } else {
       obj6.style = tmp.spoilerOverlayBackground;
       const obj8 = { accessibilityRole: "text", variant: "heading-sm/medium", color: "text-overlay-light", children: str2.toUpperCase() };
-      const Text = tmp2(5383).Text;
-      const intl = tmp2(1113).intl;
+      const Text = tmp2(5385).Text;
+      const intl = tmp2(1112).intl;
       str2 = intl.string(intl3.t["F+x38C"]);
       obj6.children = metroRequire(Text, obj8);
       tmp11Result = tmp11(tmp13, obj6);

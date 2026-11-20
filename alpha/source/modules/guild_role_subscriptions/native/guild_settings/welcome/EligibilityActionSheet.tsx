@@ -1,17 +1,17 @@
-// Module ID: 19993
-// Function ID: 19994
+// Module ID: 19813
+// Function ID: 19814
 // Name: EligibilityActionSheet
-// Dependencies: [19, 1072, 21, 4792, 5006, 7875, 8075, 19994, 5020, 5383, 1113, 19998, 2]
+// Dependencies: [19, 1071, 21, 4794, 5008, 7874, 8074, 19814, 5022, 5385, 1112, 19818, 2]
 // Exports: default
 
-// Module 19993 (EligibilityActionSheet)
-import Constants from "Constants" /* 1072 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
-import useCreatorMonetizationEligibilityItemsDefault from "useCreatorMonetizationEligibilityItems" /* 19994 */;
-import EligibilityChecklistDefault from "EligibilityChecklist" /* 19998 */;
+// Module 19813 (EligibilityActionSheet)
+import Constants from "Constants" /* 1071 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5008 */;
+import useCreatorMonetizationEligibilityItemsDefault from "useCreatorMonetizationEligibilityItems" /* 19814 */;
+import EligibilityChecklistDefault from "EligibilityChecklist" /* 19818 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -53,10 +53,10 @@ export default function EligibilityActionSheet(onRequireModeratorMFAClick) {
   }, items);
   let obj = { startExpanded: true, children: items1 };
   const tmp3 = useCreatorMonetizationEligibilityItemsDefault(eligibility, memo);
-  const BottomSheet = onRequireModeratorMFAClick(5020).BottomSheet;
-  let obj2 = { style: tmp.title, variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl.string(onRequireModeratorMFAClick(1113).t["3s47iN"]) };
-  const Heading = onRequireModeratorMFAClick(5383).Heading;
-  intl = onRequireModeratorMFAClick(1113).intl;
+  const BottomSheet = onRequireModeratorMFAClick(5022).BottomSheet;
+  let obj2 = { style: tmp.title, variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl.string(onRequireModeratorMFAClick(1112).t["3s47iN"]) };
+  const Heading = onRequireModeratorMFAClick(5385).Heading;
+  intl = onRequireModeratorMFAClick(1112).intl;
   items1 = [closure_5(Heading, obj2), ];
   let obj3 = { style: tmp.container, items: tmp3 };
   items1[1] = closure_5(EligibilityChecklistDefault, obj3);

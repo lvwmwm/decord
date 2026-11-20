@@ -1,9 +1,9 @@
-// Module ID: 7148
-// Function ID: 7149
+// Module ID: 7147
+// Function ID: 7148
 // Name: InviteTargetTypes
 // Dependencies: [2]
 
-// Module 7148 (InviteTargetTypes)
+// Module 7147 (InviteTargetTypes)
 import size from "module_2" /* 2 */;
 
 const obj = { HIDDEN: new Set([3, 4, 5]), USER_CREATABLE: new Set([1, 2]), STORE_PAGE: new Set([3, 4]) };

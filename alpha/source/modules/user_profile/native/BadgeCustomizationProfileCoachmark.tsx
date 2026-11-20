@@ -1,15 +1,15 @@
-// Module ID: 18959
-// Function ID: 18960
+// Module ID: 18783
+// Function ID: 18784
 // Name: BadgeCustomizationProfileCoachmark
-// Dependencies: [19, 1388, 4638, 504, 2174, 4806, 18960, 1113, 4860, 8967, 2]
+// Dependencies: [19, 1386, 4640, 504, 2172, 4808, 18784, 1112, 4862, 8967, 2]
 // Exports: default
 
-// Module 18959 (BadgeCustomizationProfileCoachmark)
-import intl4 from "intl" /* 1113 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4638 */;
-import BadgesCoachmarkRive from "BadgesCoachmarkRive" /* 4860 */;
+// Module 18783 (BadgeCustomizationProfileCoachmark)
+import intl4 from "intl" /* 1112 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4640 */;
+import BadgesCoachmarkRive from "BadgesCoachmarkRive" /* 4862 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1388 */;
+import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
@@ -50,7 +50,7 @@ export default function BadgeCustomizationProfileCoachmark(markAsDismissed) {
       onDismiss() {
         return markAsDismissed(constants.USER_DISMISS);
       },
-      buttonLabel: intl3.string(tmp(1113).t["4P5I8V"]),
+      buttonLabel: intl3.string(tmp(1112).t["4P5I8V"]),
       buttonVariant: "primary",
       onButtonPress() {
         markAsDismissed(constants.TAKE_ACTION);
@@ -64,7 +64,7 @@ export default function BadgeCustomizationProfileCoachmark(markAsDismissed) {
     obj2 = { type: "rive", rive: BadgesCoachmarkRive.BadgesCoachmarkRive, aspectRatio: "16/9", riveProps: obj3 };
     obj3 = { dataBinding: obj4 };
     obj4 = { on: visible, reducedMotion: reducedMotion.enabled };
-    intl3 = tmp(1113).intl;
+    intl3 = tmp(1112).intl;
     return obj;
   }, items1);
   let obj2 = visible(onTryItOut[9]);

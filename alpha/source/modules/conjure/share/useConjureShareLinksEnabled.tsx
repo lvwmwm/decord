@@ -1,10 +1,10 @@
-// Module ID: 18318
-// Function ID: 18319
+// Module ID: 18136
+// Function ID: 18137
 // Name: useConjureShareLinksEnabled
 // Dependencies: [32, 5, 19, 6814, 2]
 // Exports: default
 
-// Module 18318 (useConjureShareLinksEnabled)
+// Module 18136 (useConjureShareLinksEnabled)
 import ConjureActionCreators from "ConjureActionCreators" /* 6814 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -31,7 +31,7 @@ let obj = function _readShareLinksEnabled() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -125,7 +125,7 @@ export default function useConjureShareLinksEnabled(arg0) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -163,7 +163,7 @@ export default function useConjureShareLinksEnabled(arg0) {
                 }
               }
               c3 = 3;
-              return { value: "HermesInternal", done: "+60" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp22) {
             c3 = 3;
@@ -193,7 +193,7 @@ export default function useConjureShareLinksEnabled(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -229,7 +229,7 @@ export default function useConjureShareLinksEnabled(arg0) {
               closure_129_3(closure_0);
             }
             c3 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp18) {
           c3 = 3;

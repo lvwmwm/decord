@@ -1,10 +1,10 @@
-// Module ID: 14488
-// Function ID: 14489
+// Module ID: 14456
+// Function ID: 14457
 // Name: UserProfileAddableWidgetCategories
 // Dependencies: [6842, 2]
 // Exports: partitionAddableWidgets
 
-// Module 14488 (UserProfileAddableWidgetCategories)
+// Module 14456 (UserProfileAddableWidgetCategories)
 import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 6842 */;
 import size from "module_2" /* 2 */;
 

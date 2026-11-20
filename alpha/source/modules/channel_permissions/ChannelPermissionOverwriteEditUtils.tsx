@@ -1,12 +1,12 @@
-// Module ID: 19004
-// Function ID: 19005
+// Module ID: 18828
+// Function ID: 18829
 // Name: ChannelPermissionOverwriteEditUtils
-// Dependencies: [4729, 1084, 2]
+// Dependencies: [4731, 1083, 2]
 // Exports: applyChannelPermissionOverwriteEdit, getChannelPermissionOverwrite, getChannelPermissionOverwriteValue
 
-// Module 19004 (ChannelPermissionOverwriteEditUtils)
-import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
-import PermissionUtils from "PermissionUtils" /* 4729 */;
+// Module 18828 (ChannelPermissionOverwriteEditUtils)
+import BigFlagUtilsAll from "BigFlagUtils" /* 1083 */;
+import PermissionUtils from "PermissionUtils" /* 4731 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/channel_permissions/ChannelPermissionOverwriteEditUtils.tsx");
@@ -33,7 +33,7 @@ export function getChannelPermissionOverwriteValue(effectiveOverwrite, flag) {
     if (obj2.has(effectiveOverwrite.allow, flag)) {
       ALLOW = PermissionUtils.ALLOW;
     } else {
-      const tmp8Result = tmp8(1084);
+      const tmp8Result = tmp8(1083);
       const hasItem = tmp8Result.has(effectiveOverwrite.deny, flag);
       const tmp3 = PermissionUtils;
       ALLOW = hasItem ? tmp3.DENY : tmp3.PASSTHROUGH;

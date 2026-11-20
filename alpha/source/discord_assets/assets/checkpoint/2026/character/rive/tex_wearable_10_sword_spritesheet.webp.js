@@ -1,8 +1,8 @@
-// Module ID: 12611
-// Function ID: 12612
+// Module ID: 12581
+// Function ID: 12582
 // Dependencies: [2]
 
-// Module 12611
+// Module 12581
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_wearable_10_sword_spritesheet.webp.js");

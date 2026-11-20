@@ -1,10 +1,10 @@
-// Module ID: 12229
-// Function ID: 12230
+// Module ID: 12171
+// Function ID: 12172
 // Name: conjureRemixConnection
 // Dependencies: [32, 5, 572, 6821, 6820, 2]
 // Exports: acceptRemix, sendRetryRemix
 
-// Module 12229 (conjureRemixConnection)
+// Module 12171 (conjureRemixConnection)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import conjureProjectSockets from "conjureProjectSockets" /* 6820 */;
 import ConjureWorkerTickets from "ConjureWorkerTickets" /* 6821 */;
@@ -16,11 +16,14 @@ let c4, c5, c7;
 
 let obj = function _acceptRemix() {
   obj = _asyncToGenerator(async function(arg0, value) {
-    let obj9;
+    let _fetchResult;
+    let obj11;
+    let stringify;
     let closure_0 = arg0;
     let closure_1 = value;
-    if (c5 === 2) {
-      c5 = 3;
+    let closure_2 = arg2;
+    if (c6 === 2) {
+      c6 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
     } else if (tmp3 === 3) {
       if (arg0 === 1) {
@@ -29,128 +32,158 @@ let obj = function _acceptRemix() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
-        let closure_2;
+        let closure_4;
+        let closure_3;
+        let flag;
+        let closure_5;
         let ticket;
         let uRLSearchParams;
-        let closure_5;
-        let closure_6;
-        c5 = 2;
-        if (0 === c4) {
+        let closure_8;
+        let closure_9;
+        c6 = 2;
+        if (0 === c5) {
           if (arg0 === 1) {
-            c5 = 3;
+            c6 = 3;
             throw value;
           } else if (arg0 === 2) {
-            c5 = 3;
+            c6 = 3;
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            closure_0 = undefined;
-            closure_1 = undefined;
-            closure_2 = undefined;
+            closure_4 = tmp4;
+            closure_3 = tmp;
+            flag = closure_2;
+            if (closure_2 === undefined) {
+              flag = false;
+            }
+            closure_3 = undefined;
+            closure_4 = undefined;
+            closure_5 = undefined;
             ticket = undefined;
             uRLSearchParams = undefined;
-            closure_5 = undefined;
-            closure_6 = undefined;
-            const items = [closure_0, ];
-            const obj12 = ConjureWorkerTickets;
-            items[1] = obj12.mintWorkerTicket(closure_1);
-            c4 = 1;
+            closure_8 = undefined;
+            closure_9 = undefined;
             c5 = 1;
-            const obj4 = { value: all(items), done: false };
+            c6 = 1;
+            return { value: "Path", done: true };
+          }
+        } else if (1 === c5) {
+          if (arg0 === 1) {
+            c6 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c6 = 3;
+            const obj4 = { value, done: true };
             return obj4;
+          } else {
+            const items = [closure_0, ];
+            const obj9 = closure_132_0(closure_132_2[3]);
+            items[1] = obj9.mintWorkerTicket(closure_1);
+            c5 = 2;
+            c6 = 1;
+            const obj5 = { value: all(items), done: false };
+            return obj5;
           }
         } else {
-          if (1 === c4) {
+          let obj12;
+          if (2 === c5) {
             if (arg0 === 1) {
-              c5 = 3;
+              c6 = 3;
               throw value;
             } else if (arg0 === 2) {
-              c5 = 3;
-              const obj5 = { value, done: true };
-              return obj5;
+              c6 = 3;
+              const obj6 = { value, done: true };
+              return obj6;
             } else {
-              closure_0 = value;
-              closure_1 = closure_131_3(closure_0, 2);
-              closure_2 = closure_1[0];
-              ticket = closure_1[1];
+              closure_3 = value;
+              closure_4 = closure_132_3(closure_3, 2);
+              closure_5 = closure_4[0];
+              ticket = closure_4[1];
               const _URLSearchParams = URLSearchParams;
-              const obj6 = { ticket: closure_2.ticket };
+              const obj7 = { ticket: closure_5.ticket };
               const self3 = this;
               const self4 = this;
-              uRLSearchParams = new URLSearchParams(obj6);
-              closure_5 = 1;
+              uRLSearchParams = new URLSearchParams(obj7);
+              closure_8 = 1;
             }
-          } else if (2 === c4) {
+          } else if (3 === c5) {
             if (arg0 === 1) {
-              c5 = 3;
+              c6 = 3;
               throw value;
             } else if (arg0 === 2) {
-              c5 = 3;
-              const obj7 = { value, done: true };
-              return obj7;
+              c6 = 3;
+              const obj8 = { value, done: true };
+              return obj8;
             } else {
-              closure_6 = value;
-              if (null != closure_6) {
-                if (closure_6 < 300) {
-                  c5 = 3;
+              closure_9 = value;
+              if (null != closure_9) {
+                if (closure_9 < 300) {
+                  c6 = 3;
                   return { value: "accepted", done: true };
                 }
               }
-              if (409 === closure_6) {
-                c5 = 3;
+              if (409 === closure_9) {
+                c6 = 3;
                 return { value: "unreachable", done: true };
               } else {
-                if (null != closure_6) {
-                  if (closure_6 < 500) {
-                    if (429 !== closure_6) {
-                      c5 = 3;
+                if (null != closure_9) {
+                  if (closure_9 < 500) {
+                    if (429 !== closure_9) {
+                      c6 = 3;
                       return { value: "rejected", done: true };
                     }
                   }
                 }
-                if (3 === closure_5) {
-                  c5 = 3;
+                if (3 === closure_8) {
+                  c6 = 3;
                   return { value: "unreachable", done: true };
                 } else {
                   const self = this;
                   const self2 = this;
                   const promise = new Promise((arg0) => setTimeout(arg0, 1000));
-                  c4 = 3;
-                  c5 = 1;
-                  const obj8 = { value: promise, done: false };
-                  return obj8;
+                  c5 = 4;
+                  c6 = 1;
+                  const obj10 = { value: promise, done: false };
+                  return obj10;
                 }
               }
             }
           } else if (arg0 === 1) {
-            c5 = 3;
+            c6 = 3;
             throw value;
           } else if (arg0 === 2) {
-            c5 = 3;
+            c6 = 3;
             obj = { value, done: true };
             return obj;
           } else {
-            closure_5 = closure_5 + 1;
+            closure_8 = closure_8 + 1;
           }
-          const _fetch = fetch;
           const _HermesInternal = HermesInternal;
-          const request = { method: "POST", headers: { "content-type": "application/json" }, body: JSON.stringify(obj9) };
+          const _fetch = fetch;
+          const request = { method: "POST", headers: { "content-type": "application/json" }, body: stringify(obj11) };
+          obj11 = { dest_ticket: ticket.ticket };
+          const combined = "" + closure_5.baseUrl + "/agent/fork?" + uRLSearchParams;
           const _JSON = JSON;
-          obj9 = { dest_ticket: ticket.ticket };
-          const combined = "" + closure_2.baseUrl + "/agent/fork?" + uRLSearchParams;
-          const response = fetch(combined, request);
-          c4 = 2;
-          c5 = 1;
-          const obj10 = { value: response.then((status) => status.status, () => null), done: false };
-          return obj10;
+          stringify = JSON.stringify;
+          if (flag) {
+            obj12 = { copy: true };
+          } else {
+            obj12 = {};
+          }
+          const merged = Object.assign(obj12);
+          c5 = 3;
+          c6 = 1;
+          const obj13 = { value: _fetchResult.then((status) => status.status, () => null), done: false };
+          _fetchResult = _fetch(combined, request);
+          return obj13;
         }
-      } catch (tmp26) {
-        c5 = 3;
-        throw tmp26;
+      } catch (tmp39) {
+        c6 = 3;
+        throw tmp39;
       }
     }
   });
@@ -172,7 +205,7 @@ obj = function _mintUpstreamTicket() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c6;
@@ -227,7 +260,7 @@ obj = function _mintUpstreamTicket() {
             c6 = 0;
           }
           c7 = 3;
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp21) {
         status = tmp21;

@@ -1,26 +1,25 @@
-// Module ID: 19856
-// Function ID: 19857
+// Module ID: 19674
+// Function ID: 19675
 // Name: SoundboardRecordSoundActionSheet
-// Dependencies: [32, 5, 19, 17, 2133, 6375, 12734, 21, 5558, 13029, 4792, 575, 12, 7676, 5473, 7665, 1113, 7434, 5383, 19857, 8373, 5390, 19858, 2]
+// Dependencies: [32, 5, 19, 17, 2131, 6377, 12704, 21, 5560, 12999, 4794, 575, 12, 7675, 5475, 7664, 1112, 7433, 5385, 19675, 8372, 5392, 19676, 2]
 // Exports: default
 
-// Module 19856 (SoundboardRecordSoundActionSheet)
+// Module 19674 (SoundboardRecordSoundActionSheet)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl6 from "intl" /* 1113 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 6375 */;
-import reactDefault from "react" /* 7665 */;
-import utils_TimeUtils from "utils/TimeUtils" /* 8373 */;
-import VoiceMessageUtils from "VoiceMessageUtils" /* 13029 */;
-import showSoundboardSoundEditModalDefault from "showSoundboardSoundEditModal" /* 19858 */;
+import intl6 from "intl" /* 1112 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 6377 */;
+import reactDefault from "react" /* 7664 */;
+import utils_TimeUtils from "utils/TimeUtils" /* 8372 */;
+import showSoundboardSoundEditModalDefault from "showSoundboardSoundEditModal" /* 19676 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
-import MediaEngineStore from "MediaEngineStore" /* 2133 */;
-import VoiceMessageConstants from "VoiceMessageConstants" /* 12734 */;
+import MediaEngineStore from "MediaEngineStore" /* 2131 */;
+import VoiceMessageConstants from "VoiceMessageConstants" /* 12704 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -29,7 +28,6 @@ let _require, _undefined, c3, c5, c6, dependencyMap, guildId;
 let c10;
 let c9;
 let closure_12;
-let closure_14;
 let map1;
 let obj2;
 let obj3;
@@ -38,20 +36,17 @@ let obj5;
 let obj6;
 let tmp13;
 let unpackModuleId;
-const SoundboardWaveformDisplayDefault = tmp13(19857);
-const f120183 = (waveform) => {
-  let closure_1;
-  const timeout = setTimeout(() => {
-    obj = { uri: "", durationSecs: 0, waveform };
-    return waveform(obj);
-  }, 5000);
-  mediaEngine = mediaEngine.getMediaEngine();
-  const result = mediaEngine.stopLocalAudioRecording((uri, arg1) => {
-    clearTimeout(closure_1);
-    obj = { uri, durationSecs: arg1 / 1000, waveform };
-    waveform(obj);
-  });
+const SoundboardRecordingWaveformDefault = tmp13(19675);
+const f118315 = (arg0) => {
+  let num = arg0;
+  if (arg0 == null) {
+    num = 0;
+  }
+  return num;
 };
+function getRecordedLevels(arg0) {
+  return Array.from(arg0, f118315);
+}
 let obj = function _startSoundboardRecording() {
   obj = _asyncToGenerator(async (arg0, value) => {
     let obj5;
@@ -66,7 +61,7 @@ let obj = function _startSoundboardRecording() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -112,7 +107,7 @@ let obj = function _startSoundboardRecording() {
         } else {
           c4 = 0;
           c6 = 3;
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp15) {
         closure_3 = tmp15;
@@ -127,21 +122,36 @@ let obj = function _startSoundboardRecording() {
   });
   return obj(...arguments);
 };
-function stopSoundboardRecording(arg0, current) {
-  let closure_0;
+function stopSoundboardRecording(arg0, items, arg2) {
+  let closure_2;
+  _require = items;
+  let closure_1 = arg2;
   const mediaEngine = MediaEngineStore.getMediaEngine();
   mediaEngine.removeListener(require("BaseConnectionEvent").MediaEngineEvent.VoiceActivity, arg0);
   const obj2 = require("VoiceMessageUtils");
-  _require = obj2.generateBase64EncodedWaveform(current);
-  const promise = new Promise(f120183);
+  dependencyMap = obj2.generateBase64EncodedWaveform(items);
+  const promise = new Promise((arg0) => {
+    let waveform;
+    let closure_0 = arg0;
+    const reachedLimit = setTimeout(() => {
+      obj = { uri: "", durationSecs: 0, waveform, waveformLevels: items, reachedLimit };
+      return closure_0(obj);
+    }, 5000);
+    mediaEngine = mediaEngine.getMediaEngine();
+    const result = mediaEngine.stopLocalAudioRecording((uri, arg1) => {
+      clearTimeout(closure_1);
+      obj = { uri, durationSecs: arg1 / 1000, waveform, waveformLevels: items, reachedLimit };
+      closure_0(obj);
+    });
+  });
   return promise;
 }
 let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
 const View = react_native.View;
 const NativePermissionTypes = NativePermissionConstants.NativePermissionTypes;
-({ VOICE_RECORDING_MAX_DB: c9, VOICE_RECORDING_MIN_DB: c10, VOICE_RECORDING_MIN_DURATION_MILLIS: unpackModuleId, WAVEFORM_WAVE_MAX_VALUE: closure_12 } = VoiceMessageConstants);
-({ jsx: map1, jsxs: closure_14 } = Fragment);
+({ VOICE_RECORDING_MAX_DB: c9, VOICE_RECORDING_MIN_DURATION_MILLIS: c10, WAVEFORM_WAVE_MAX_VALUE: unpackModuleId } = VoiceMessageConstants);
+({ jsx: closure_12, jsxs: map1 } = Fragment);
 let createStyles = createStyles_mod;
 obj = { container: obj2, title: obj3, waveform: obj4, elapsed: obj5, button: { width: "100%" }, nextButton: obj6 };
 obj2 = { padding: nativeDefault.space.PX_16, alignItems: "center" };
@@ -158,18 +168,17 @@ export default function SoundboardRecordSoundActionSheet(arg0) {
   let Button2;
   let accessibilityActions;
   let analyticsSource;
-  let c14;
   let c2;
+  let c7;
   let closure_3;
   let closure_5;
-  let durationSecs;
   let first;
   let first1;
   let handleRecordPressIn;
   let intl2;
   let intl3;
   let intl5;
-  let items4;
+  let items5;
   let obj10;
   let obj7;
   let onAccessibilityAction;
@@ -177,131 +186,149 @@ export default function SoundboardRecordSoundActionSheet(arg0) {
   let string2;
   let t2;
   let timeFormat;
-  let tmp10;
   let tmp16Result2;
   let tmp3;
+  let waveformLevels;
   ({ guildId: require, analyticsSource: importDefault } = arg0);
   dependencyMap = undefined;
   _slicedToArray = undefined;
   first1 = undefined;
   react = undefined;
-  c14 = undefined;
-  closure_17 = undefined;
-  let tmp = closure_17();
+  c7 = undefined;
+  let callback1;
+  let tmp = callback1();
   obj = react;
-  const tmp2 = _slicedToArray(react.useState(false), 2);
+  let tmp2 = _slicedToArray(react.useState(false), 2);
   [tmp3, c2] = tmp2;
   [first, _slicedToArray] = react.useState(0);
   [first1, react] = react.useState(null);
-  react.useRef([]);
+  const ref = react.useRef([]);
+  [waveformLevels, c7] = _slicedToArray(react.useState([]), 2);
+  const tmp8 = _slicedToArray(react.useState([]), 2);
   const ref2 = react.useRef(null);
   const ref3 = react.useRef(false);
-  let closure_9 = react.useRef(false);
   let closure_10 = react.useRef(false);
   let closure_11 = react.useRef(false);
-  let closure_12 = react.useRef(null);
-  const ref = react.useRef(() => {
+  let closure_12 = react.useRef(false);
+  let closure_13 = react.useRef(null);
+  const ref4 = react.useRef(() => {
 
   });
-  [tmp10, c14] = _slicedToArray(react.useState(0), 2);
-  const tmp9 = _slicedToArray(react.useState(0), 2);
   const memo = react.useMemo(() => {
-    let ref4;
     obj = _modDef12;
-    return obj.throttle((arg0) => {
-      if (null != ref2.current) {
-        if (ref3.current) {
-          current = ref.current;
-          const _Math = Math;
-          const _Math2 = Math;
-          current.push(Math.max(0, Math.min(closure_12, closure_12 * ((arg0 - closure_10) / (closure_9 - closure_10)))));
-          const _performance = performance;
-          const diff = performance.now() - tmp.current;
-          closure_1_3(diff);
-          closure_1_14((arg0) => arg0 + 1);
-          if (diff >= 15000) {
-            ref4.current();
-          }
+    return obj.throttle((arg0, arg1) => {
+      let closure_0 = arg1;
+      let tmp = closure_1_3(arg0);
+      closure_1_7((arg0) => {
+        let tmp = closure_0;
+        obj = closure_2_1(closure_2_2[12]);
+        if (obj.isEqual(arg0, closure_0)) {
+          tmp = arg0;
         }
-      }
+        return tmp;
+      });
     }, 100);
   }, []);
-  const items = [memo];
-  let current = react.useCallback(first1(function*(arg0, value) {
-    let v1;
-    if (c3 === 2) {
-      c3 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp4 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        const obj2 = { value, done: true };
-        return obj2;
-      } else {
-        return { value: "HermesInternal", done: "+60" };
-      }
-    } else {
-      try {
-        let durationSecs;
-        c3 = 2;
-        if (0 === _undefined) {
-          if (arg0 === 1) {
-            c3 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c3 = 3;
-            const obj3 = { value, done: true };
-            return obj3;
-          } else {
-            let closure_1 = tmp;
-            durationSecs = undefined;
-            if (null != ref2.current) {
-              if (ref3.current) {
-                tmp31.current = null;
-                tmp20.current = false;
-                closure_10.current = true;
-                _undefined(false);
-                _undefined = 1;
-                c3 = 1;
-                const obj4 = { value: current(memo, ref.current), done: false };
-                return obj4;
-              }
-            }
-          }
-        } else if (arg0 === 1) {
-          c3 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c3 = 3;
-          obj = { value, done: true };
-          return obj;
-        } else {
-          durationSecs = value;
-          closure_129_10.current = false;
-          if (1000 * durationSecs.durationSecs >= closure_1_11) {
-            closure_129_5(durationSecs);
-          } else {
-            closure_129_5(closure_129_12.current);
-          }
+  let items = [memo];
+  const callback = react.useCallback((arg0) => {
+    if (null != ref2.current) {
+      if (ref3.current) {
+        const _performance = performance;
+        const diff = performance.now() - tmp.current;
+        const _Math = Math;
+        const _Math2 = Math;
+        let num = 312.5;
+        const bound = Math.min(31, Math.floor(diff / 312.5));
+        let num3 = ref.current[bound];
+        const current = ref.current;
+        const _Math3 = Math;
+        const tmp5 = ref;
+        if (num3 == null) {
+          num3 = 0;
         }
-        c3 = 3;
-        return { value: "HermesInternal", done: "+60" };
-      } catch (tmp27) {
-        c3 = 3;
-        throw tmp27;
+        const _Math4 = Math;
+        const _Math5 = Math;
+        current[bound] = max(num3, Math.max(0, Math.min(unpackModuleId, unpackModuleId * ((arg0 - -70) / (React4 - -70)))));
+        if (diff >= 10000) {
+          ref4.current(true);
+        } else {
+          const _Array = Array;
+          memo(diff, Array.from(tmp5.current, f118315));
+        }
       }
     }
-  }), items);
-  ref.current = current;
-  const items1 = [first1, memo];
-  closure_17 = react.useCallback(first1(function*(arg0, value) {
+  }, items);
+  const items1 = [callback, memo];
+  callback1 = react.useCallback(first1(function*(arg0, value) {
+    let flag4;
+    let closure_0 = arg0;
+    if (1 === c3) {
+      if (arg0 === 1) {
+        let c4 = 3;
+        throw value;
+      } else if (arg0 === 2) {
+        c4 = 3;
+        const obj4 = { value, done: true };
+        return obj4;
+      } else if (null != closure_130_8.current) {
+        if (closure_130_9.current) {
+          const _performance = performance;
+          let closure_1 = performance.now() - closure_130_8.current;
+          closure_130_8.current = null;
+          closure_130_9.current = false;
+          closure_130_11.current = true;
+          closure_130_15.cancel();
+          let num7 = 10000;
+          const tmp30 = closure_130_3;
+          if (!flag4) {
+            num7 = closure_1;
+          }
+          tmp30(num7);
+          closure_130_2(false);
+          let closure_2 = ref4(closure_130_6.current);
+          c3 = 2;
+          c4 = 1;
+          const obj5 = { value: callback(closure_130_16, closure_2, flag4), done: false };
+          return obj5;
+        }
+      }
+    } else if (arg0 === 1) {
+      c4 = 3;
+      throw value;
+    } else if (arg0 === 2) {
+      c4 = 3;
+      obj = { value, done: true };
+      return obj;
+    } else {
+      const durationSecs = value;
+      closure_130_11.current = false;
+      if (1000 * durationSecs.durationSecs >= closure_1_10) {
+        closure_130_5(durationSecs);
+      } else {
+        closure_130_5(closure_130_13.current);
+      }
+    }
+    yield "HermesInternal";
+    closure_2 = tmp4;
+    closure_1 = tmp;
+    flag4 = closure_0;
+    if (closure_0 === undefined) {
+      flag4 = false;
+    }
+    return "Path";
+  }), items1);
+  const items2 = [callback1];
+  const effect = react.useEffect(() => {
+    ref4.current = callback1;
+  }, items2);
+  const items3 = [first1, callback];
+  let closure_18 = react.useCallback(first1(function*(arg0, value) {
     let c2;
     let closure_0;
     let closure_1;
     let obj6;
     function isStillHeldAndIdle() {
-      current = ref2.current && null == ref.current && !ref3.current;
+      const current = ref2.current && null == ref.current && !ref3.current;
       return current;
     }
     function startSoundboardRecording() {
@@ -317,7 +344,7 @@ export default function SoundboardRecordSoundActionSheet(arg0) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -338,7 +365,7 @@ export default function SoundboardRecordSoundActionSheet(arg0) {
                   ref3.current = true;
                   c3 = 1;
                   c4 = 1;
-                  const obj5 = { value: obj6.requestPermission(constants.AUDIO), done: false };
+                  const obj5 = { value: obj6.requestPermission(ref.AUDIO), done: false };
                   obj6 = tmp(_undefined[13]);
                   return obj5;
                 }
@@ -355,31 +382,31 @@ export default function SoundboardRecordSoundActionSheet(arg0) {
             return obj7;
           } else {
             guildId = value;
-            closure_129_11.current = false;
+            closure_129_12.current = false;
             const tmp55 = guildId;
             if (tmp55) {
               if (isStillHeldAndIdle()) {
-                closure_129_12.current = closure_129_4;
+                closure_129_13.current = closure_129_4;
                 closure_129_5(null);
                 closure_129_6.current = [];
+                closure_129_7([]);
                 closure_129_3(0);
-                closure_129_14((arg0) => arg0 + 1);
                 closure_129_2(true);
                 const _performance2 = performance;
-                closure_129_7.current = performance.now();
+                closure_129_8.current = performance.now();
                 _undefined = 1;
                 c3 = 3;
                 c4 = 1;
-                const obj8 = { value: startSoundboardRecording(closure_129_15), done: false };
+                const obj8 = { value: startSoundboardRecording(closure_129_16), done: false };
                 return obj8;
               }
             }
           }
         } else if (2 === c3) {
           _undefined = 0;
-          closure_129_7.current = null;
+          closure_129_8.current = null;
           closure_129_2(false);
-          closure_129_5(closure_129_12.current);
+          closure_129_5(closure_129_13.current);
           const obj2 = guildId(_undefined[14]);
           const result = obj2.showVoiceRecordingFailed();
           c4 = 3;
@@ -396,14 +423,14 @@ export default function SoundboardRecordSoundActionSheet(arg0) {
         } else {
           _undefined = 0;
           const _performance = performance;
-          closure_129_7.current = performance.now();
-          closure_129_8.current = true;
-          if (!closure_129_9.current) {
-            closure_129_13.current();
+          closure_129_8.current = performance.now();
+          closure_129_9.current = true;
+          if (!closure_129_10.current) {
+            closure_129_14.current();
           }
         }
         c4 = 3;
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp45) {
         if (0 === _undefined) {
           c4 = 3;
@@ -413,114 +440,121 @@ export default function SoundboardRecordSoundActionSheet(arg0) {
         }
       }
     }
-  }), items1);
+  }), items3);
   const tmp15 = reactDefault;
   const intl = intl6.intl;
   const string = intl.string;
   const t = intl6.t;
   const fn = () => {
     if (null != ref2.current) {
-      closure_9.current = false;
-      callback();
+      closure_10.current = false;
+      callback1();
     } else {
-      closure_9.current = true;
-      closure_17();
+      closure_10.current = true;
+      closure_18();
     }
   };
-  const items2 = [memo];
+  const items4 = [callback, memo];
   ({ accessibilityActions, onAccessibilityAction } = tmp15(fn, string(tmp3 ? t.hHBkuG : t["/VJ/Sp"])));
   tmp15(fn, string(tmp3 ? t.hHBkuG : t["/VJ/Sp"]));
-  const effect = obj.useEffect(() => (function() {
-    closure_1_9.current = false;
+  const effect1 = obj.useEffect(() => (function() {
+    closure_1_10.current = false;
     memo.cancel();
-    current = null != ref.current;
-    const tmp = memo;
-    const tmp3 = ref;
+    let current = null != ref.current;
+    const tmp2 = ref;
     if (current) {
       current = ref2.current;
     }
     if (current) {
-      tmp3.current = null;
+      tmp2.current = null;
       ref2.current = false;
-      let mediaEngine = ref.getMediaEngine();
-      mediaEngine.removeListener(require("BaseConnectionEvent").MediaEngineEvent.VoiceActivity, tmp);
+      const items = [];
+      let c1 = false;
+      mediaEngine = mediaEngine.getMediaEngine();
+      mediaEngine.removeListener(require("BaseConnectionEvent").MediaEngineEvent.VoiceActivity, callback);
       const obj2 = require("VoiceMessageUtils");
-      let closure_0 = obj2.generateBase64EncodedWaveform([]);
+      let closure_2 = obj2.generateBase64EncodedWaveform(items);
       const self = this;
-      new Promise(f120183);
+      new Promise((arg0) => {
+        let waveform;
+        let closure_0 = arg0;
+        const reachedLimit = setTimeout(() => {
+          obj = { uri: "", durationSecs: 0, waveform, waveformLevels: items, reachedLimit };
+          return closure_0(obj);
+        }, 5000);
+        mediaEngine = mediaEngine.getMediaEngine();
+        const result = mediaEngine.stopLocalAudioRecording((uri, arg1) => {
+          clearTimeout(closure_1);
+          obj = { uri, durationSecs: arg1 / 1000, waveform, waveformLevels: items, reachedLimit };
+          closure_0(obj);
+        });
+      });
     }
-  }), items2);
-  const items3 = [tmp10];
-  let tmp20 = !tmp3;
-  const memo1 = obj.useMemo(() => {
-    obj = VoiceMessageUtils;
-    return obj.generateBase64EncodedWaveform(ref.current);
-  }, items3);
-  if (!tmp3) {
-    tmp20 = null != first1;
+  }), items4);
+  if (!tmp3 && null != first1) {
+    waveformLevels = first1.waveformLevels;
   }
-  let waveform = memo1;
-  if (tmp20) {
-    waveform = first1.waveform;
+  let result = first / 1000;
+  if (!tmp3 && null != first1) {
+    let num = 10;
+    if (!first1.reachedLimit) {
+      num = first1.durationSecs;
+    }
+    result = num;
   }
-  if (tmp20) {
-    durationSecs = first1.durationSecs;
-  } else {
-    durationSecs = first / 1000;
-  }
-  let obj2 = { style: tmp.container, children: items4 };
-  const ActionSheet = tmp16(7434).ActionSheet;
-  let obj3 = { variant: "heading-lg/semibold", style: tmp.title, children: intl2.string(tmp16(1113).t["/VJ/Sp"]) };
-  const Text = tmp16(5383).Text;
-  intl2 = tmp16(1113).intl;
-  items4 = [ref(Text, obj3), , , , ];
-  let obj4 = { style: tmp.waveform, children: ref(SoundboardWaveformDisplayDefault, { waveform, height: 64 }) };
-  items4[1] = ref(ref, obj4);
-  let obj5 = { variant: "body-sm/medium", color: "text-muted", style: tmp.elapsed, children: "" + timeFormat + " / " + tmp16Result2.getTimeFormat(15) };
-  const Text2 = tmp16(5383).Text;
+  let obj2 = { style: tmp.container, children: items5 };
+  const ActionSheet = tmp16(7433).ActionSheet;
+  let obj3 = { variant: "heading-lg/semibold", style: tmp.title, children: intl2.string(tmp16(1112).t["/VJ/Sp"]) };
+  const Text = tmp16(5385).Text;
+  intl2 = tmp16(1112).intl;
+  items5 = [closure_12(Text, obj3), , , , ];
+  let obj4 = { style: tmp.waveform, children: closure_12(SoundboardRecordingWaveformDefault, { levels: waveformLevels, slotCount: 32, height: 64 }) };
+  items5[1] = closure_12(ref, obj4);
+  let obj5 = { variant: "body-sm/medium", color: "text-muted", style: tmp.elapsed, children: "" + timeFormat + " / " + tmp16Result2.getTimeFormat(10) };
+  const Text2 = tmp16(5385).Text;
   const tmp16Result = utils_TimeUtils;
-  timeFormat = tmp16Result.getTimeFormat(durationSecs);
+  timeFormat = tmp16Result.getTimeFormat(result);
   tmp16Result2 = utils_TimeUtils;
-  items4[2] = ref(Text2, obj5);
+  items5[2] = closure_12(Text2, obj5);
   let obj6 = { style: tmp.button, children: tmp21(Button, obj7) };
   let str = "secondary";
-  Button = tmp16(5390).Button;
-  const tmp22 = c14;
+  Button = tmp16(5392).Button;
+  const tmp22 = closure_13;
   if (tmp3) {
     str = "destructive";
   }
   obj7 = {
     variant: str,
-    text: intl3.string(tmp16(1113).t["hP6+07"]),
+    text: intl3.string(tmp16(1112).t["hP6+07"]),
     accessibilityLabel: string2(tmp3 ? t2.hHBkuG : t2["/VJ/Sp"]),
     accessibilityActions,
     onAccessibilityAction,
     onPressIn: handleRecordPressIn,
     onPressOut: function handleRecordPressOut() {
-      closure_9.current = false;
+      closure_10.current = false;
       if (ref3.current) {
-        callback();
+        callback1();
       }
     },
     onPress() {
 
     }
   };
-  intl3 = tmp16(1113).intl;
-  const intl4 = tmp16(1113).intl;
+  intl3 = tmp16(1112).intl;
+  const intl4 = tmp16(1112).intl;
   string2 = intl4.string;
-  t2 = tmp16(1113).t;
+  t2 = tmp16(1112).t;
   let obj8 = { startExpanded: true, children: tmp22(tmp23, obj2) };
   handleRecordPressIn = function handleRecordPressIn() {
-    closure_9.current = true;
-    closure_17();
+    closure_10.current = true;
+    closure_18();
   };
-  items4[3] = ref(ref, obj6);
+  items5[3] = closure_12(ref, obj6);
   let obj9 = { style: tmp.nextButton, children: tmp21(Button2, obj10) };
   obj10 = {
     variant: "primary",
     text: intl5.string(intl6.t.PDTjLN),
-    disabled: !tmp20,
+    disabled: !(!tmp3 && null != first1),
     onPress: function handleNext() {
       let obj2;
       if (null != first1) {
@@ -530,8 +564,8 @@ export default function SoundboardRecordSoundActionSheet(arg0) {
       }
     }
   };
-  Button2 = tmp16(5390).Button;
-  intl5 = tmp16(1113).intl;
-  items4[4] = ref(ref, obj9);
-  return ref(ActionSheet, obj8);
+  Button2 = tmp16(5392).Button;
+  intl5 = tmp16(1112).intl;
+  items5[4] = closure_12(ref, obj9);
+  return closure_12(ActionSheet, obj8);
 };

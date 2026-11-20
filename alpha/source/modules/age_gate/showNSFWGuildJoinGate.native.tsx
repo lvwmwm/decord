@@ -1,12 +1,12 @@
-// Module ID: 14606
-// Function ID: 14607
+// Module ID: 14574
+// Function ID: 14575
 // Name: showNSFWGuildJoinGate
-// Dependencies: [6308, 14607, 2121, 2]
+// Dependencies: [6310, 14575, 2119, 2]
 // Exports: showNSFWGuildJoinGate
 
-// Module 14606 (showNSFWGuildJoinGate)
-import asyncRequire from "asyncRequire" /* 2121 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6308 */;
+// Module 14574 (showNSFWGuildJoinGate)
+import asyncRequire from "asyncRequire" /* 2119 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6310 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/age_gate/showNSFWGuildJoinGate.native.tsx");
@@ -14,5 +14,5 @@ const result = size.fileFinishedImporting("modules/age_gate/showNSFWGuildJoinGat
 export function showNSFWGuildJoinGate(id) {
   const obj = ModalActionCreatorsDefault;
   const obj2 = { guildId: id };
-  obj.pushLazy(asyncRequire(14607, dependencyMap.paths), obj2);
+  obj.pushLazy(asyncRequire(14575, dependencyMap.paths), obj2);
 }

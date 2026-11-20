@@ -1,23 +1,23 @@
-// Module ID: 9949
-// Function ID: 9950
+// Module ID: 9952
+// Function ID: 9953
 // Name: ForwardDestinationUtils
-// Dependencies: [19, 6493, 4645, 4641, 4724, 4734, 1388, 1072, 9938, 1255, 504, 1093, 6265, 2119, 6298, 6290, 5454, 6295, 9950, 1113, 6263, 8270, 4848, 5408, 2]
+// Dependencies: [19, 6495, 4647, 4643, 4726, 4736, 1386, 1071, 9941, 1254, 504, 1092, 6267, 2117, 6300, 6292, 5456, 6297, 9953, 1112, 6265, 8269, 4850, 5410, 2]
 // Exports: getDestinationIsUnavailable, isRatelimitedInChannel, useDestinationNamesWithSlowmode, useSelectedDestinationChannel, useSelectedDestinationNames
 
-// Module 9949 (ForwardDestinationUtils)
-import ChannelTypes from "ChannelTypes" /* 1093 */;
-import GlobalUtils from "GlobalUtils" /* 1255 */;
-import StickersUtils from "StickersUtils" /* 6265 */;
-import SlowmodeUtils from "SlowmodeUtils" /* 8270 */;
-import ForwardAgeRestrictedDestinationsExperimentDefault from "ForwardAgeRestrictedDestinationsExperiment" /* 9950 */;
+// Module 9952 (ForwardDestinationUtils)
+import ChannelTypes from "ChannelTypes" /* 1092 */;
+import GlobalUtils from "GlobalUtils" /* 1254 */;
+import StickersUtils from "StickersUtils" /* 6267 */;
+import SlowmodeUtils from "SlowmodeUtils" /* 8269 */;
+import ForwardAgeRestrictedDestinationsExperimentDefault from "ForwardAgeRestrictedDestinationsExperiment" /* 9953 */;
 import react from "react" /* 19 */;
-import StickersStore from "StickersStore" /* 6493 */;
-import ChannelRecord from "ChannelRecord" /* 4645 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import PermissionStore from "PermissionStore" /* 4724 */;
-import RelationshipStore from "RelationshipStore" /* 4734 */;
-import UserStore from "UserStore" /* 1388 */;
-import Constants from "Constants" /* 1072 */;
+import StickersStore from "StickersStore" /* 6495 */;
+import ChannelRecord from "ChannelRecord" /* 4647 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import PermissionStore from "PermissionStore" /* 4726 */;
+import RelationshipStore from "RelationshipStore" /* 4736 */;
+import UserStore from "UserStore" /* 1386 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -34,8 +34,8 @@ const result = size.fileFinishedImporting("modules/forwarding/ForwardDestination
 
 export function useSelectedDestinationChannel(selectedDestinations) {
   let found;
-  const mapped = selectedDestinations.map(found(9938).getChannelIdFromDestinationId);
-  found = mapped.find(found(1255).isNotNullish);
+  const mapped = selectedDestinations.map(found(9941).getChannelIdFromDestinationId);
+  found = mapped.find(found(1254).isNotNullish);
   let obj = found(504);
   const items = [ChannelStore];
   const items1 = [found];
@@ -84,7 +84,7 @@ export function getDestinationIsUnavailable(components, channel, type, fn) {
           require("AgeGateUtils");
         }
         const obj2 = { label: intl.string(require("intl").t.KgPx1D), lineClamp: 2 };
-        intl = tmp13(1113).intl;
+        intl = tmp13(1112).intl;
         return obj2;
       }
       let flag2 = false;
@@ -101,7 +101,7 @@ export function getDestinationIsUnavailable(components, channel, type, fn) {
           let needsAgeVerificationResult = tmp13Result9.needsAgeVerification();
           if (needsAgeVerificationResult) {
             const tmp13Result10 = require("RegionalFeatureConfigUtils");
-            needsAgeVerificationResult = tmp13Result10.isFeatureAgeGated(tmp13(6295).AgeGatedFeature.AGE_GATED_SPACES);
+            needsAgeVerificationResult = tmp13Result10.isFeatureAgeGated(tmp13(6297).AgeGatedFeature.AGE_GATED_SPACES);
           }
           let disableAgeRestrictedDestinations = !(false !== nsfwAllowed && !needsAgeVerificationResult);
           if (disableAgeRestrictedDestinations) {
@@ -113,14 +113,14 @@ export function getDestinationIsUnavailable(components, channel, type, fn) {
       }
       if (flag2) {
         const obj3 = { label: intl7.string(require("intl").t.QHrFo6), lineClamp: 2 };
-        intl7 = tmp13(1113).intl;
+        intl7 = tmp13(1112).intl;
         return obj3;
       } else if (type instanceof closure_5) {
         if (closure_6(type.type)) {
           if (components.attachments.length > 0) {
             if (!PermissionStore.can(constants2.ATTACH_FILES, type)) {
               const obj4 = { label: intl2.string(require("intl").t.P7yvbm) };
-              intl2 = tmp13(1113).intl;
+              intl2 = tmp13(1112).intl;
               return obj4;
             }
           } else {
@@ -132,7 +132,7 @@ export function getDestinationIsUnavailable(components, channel, type, fn) {
               const tmp13Result12 = require("EmbedUtils");
               if (!tmp13Result12.shouldStripEmbeds(components)) {
                 const obj5 = { label: intl3.string(require("intl").t.Wr4RIX) };
-                intl3 = tmp13(1113).intl;
+                intl3 = tmp13(1112).intl;
                 return obj5;
               }
             }
@@ -143,7 +143,7 @@ export function getDestinationIsUnavailable(components, channel, type, fn) {
             const tmp13Result13 = require("EmbedUtils");
             if (!tmp13Result13.canEmbedLinks(type, PermissionStore)) {
               const obj6 = { label: intl4.string(require("intl").t.Wr4RIX) };
-              intl4 = tmp13(1113).intl;
+              intl4 = tmp13(1112).intl;
               return obj6;
             }
           }
@@ -171,7 +171,7 @@ export function getDestinationIsUnavailable(components, channel, type, fn) {
                 return isGuildStickerResult;
               })) {
                 const obj8 = { label: intl5.string(require("intl").t["0Yyrua"]) };
-                intl5 = tmp13(1113).intl;
+                intl5 = tmp13(1112).intl;
                 return obj8;
               }
             }
@@ -179,7 +179,7 @@ export function getDestinationIsUnavailable(components, channel, type, fn) {
           if (components.hasFlag(constants.IS_VOICE_MESSAGE)) {
             if (!PermissionStore.can(constants2.SEND_VOICE_MESSAGES, type)) {
               const obj9 = { label: intl6.string(require("intl").t.quj4DY) };
-              intl6 = tmp13(1113).intl;
+              intl6 = tmp13(1112).intl;
               return obj9;
             }
           } else {

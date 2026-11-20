@@ -1,13 +1,13 @@
-// Module ID: 17360
-// Function ID: 17361
+// Module ID: 17187
+// Function ID: 17188
 // Name: WishlistButtonCoachmark
-// Dependencies: [32, 19, 4638, 8858, 4625, 8960, 17347, 1113, 8967, 2]
+// Dependencies: [32, 19, 4640, 8858, 4627, 8960, 17174, 1112, 8967, 2]
 // Exports: default
 
-// Module 17360 (WishlistButtonCoachmark)
-import intl3 from "intl" /* 1113 */;
-import dismissible_content from "dismissible_content" /* 4625 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4638 */;
+// Module 17187 (WishlistButtonCoachmark)
+import intl3 from "intl" /* 1112 */;
+import dismissible_content from "dismissible_content" /* 4627 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4640 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -42,9 +42,9 @@ export default function WishlistButtonCoachmark(anchorRef) {
   const obj2 = hasNeverWishlisted(8960);
   const tmp3 = _slicedToArray(obj2.useSelectedDismissibleContent(memo), 2);
   dependencyMap = tmp4;
-  const tmp5 = tmp3[0] === hasNeverWishlisted(4625).DismissibleContent.WISHLIST_MOBILE_NUX_PRODUCT_CARD_COACHMARK;
+  const tmp5 = tmp3[0] === hasNeverWishlisted(4627).DismissibleContent.WISHLIST_MOBILE_NUX_PRODUCT_CARD_COACHMARK;
   _slicedToArray = tmp5;
-  const obj3 = hasNeverWishlisted(17347);
+  const obj3 = hasNeverWishlisted(17174);
   registerDismiss = obj3.useCollectiblesCoachmarkScrollDismissContext().registerDismiss;
   let items1 = [tmp5, registerDismiss, tmp3[1]];
   const effect = registerDismiss.useEffect(() => {

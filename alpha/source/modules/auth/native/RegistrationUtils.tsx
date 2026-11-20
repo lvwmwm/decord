@@ -1,18 +1,18 @@
-// Module ID: 17506
-// Function ID: 17507
+// Module ID: 17333
+// Function ID: 17334
 // Name: RegistrationUtils
-// Dependencies: [19, 5511, 7938, 17497, 17498, 1072, 21, 1256, 17494, 6983, 2]
+// Dependencies: [19, 5513, 7937, 17324, 17325, 1071, 21, 1255, 17321, 6982, 2]
 // Exports: BackButtonWithTracking, getCommonErrorDetails, getTrackRegTransition, hasAllRegistrationFieldsCompleted
 
-// Module 17506 (RegistrationUtils)
+// Module 17333 (RegistrationUtils)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import Constants from "Constants" /* 1071 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import react from "react" /* 19 */;
-import InviteStore from "InviteStore" /* 5511 */;
-import DisplayedInviteStore from "DisplayedInviteStore" /* 7938 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 17497 */;
-import RegistrationConstants from "RegistrationConstants" /* 17498 */;
+import InviteStore from "InviteStore" /* 5513 */;
+import DisplayedInviteStore from "DisplayedInviteStore" /* 7937 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 17324 */;
+import RegistrationConstants from "RegistrationConstants" /* 17325 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -169,7 +169,7 @@ export function BackButtonWithTracking(arg0) {
   let step;
   _require = react.useContext(require("Auth").TrackRegistrationContext);
   ({ destinationStep: importDefault, onPress: dependencyMap } = arg0);
-  const HeaderBackButton = require("module_6983").HeaderBackButton;
+  const HeaderBackButton = require("module_6982").HeaderBackButton;
   const merged = Object.assign(arg0);
   return <HeaderBackButton onPress={function handlePress() {
     if (null != dependencyMap) {

@@ -1,16 +1,16 @@
-// Module ID: 16201
-// Function ID: 16202
+// Module ID: 16165
+// Function ID: 16166
 // Name: PremiumManageSubscriptionsSetting
-// Dependencies: [19, 1072, 8985, 9192, 9825, 1113, 11875, 16202, 2174, 16200, 2]
+// Dependencies: [19, 1071, 8985, 9192, 9827, 1112, 11817, 16166, 2172, 16164, 2]
 
-// Module 16201 (PremiumManageSubscriptionsSetting)
-import Constants from "Constants" /* 1072 */;
-import PremiumUtils from "PremiumUtils" /* 2174 */;
+// Module 16165 (PremiumManageSubscriptionsSetting)
+import Constants from "Constants" /* 1071 */;
+import PremiumUtils from "PremiumUtils" /* 2172 */;
 import BlockedPaymentsCountryExperiment from "BlockedPaymentsCountryExperiment" /* 8985 */;
-import MapleSyrupExperiments from "MapleSyrupExperiments" /* 9825 */;
-import SubscriptionIcon from "SubscriptionIcon" /* 16202 */;
+import MapleSyrupExperiments from "MapleSyrupExperiments" /* 9827 */;
+import SubscriptionIcon from "SubscriptionIcon" /* 16166 */;
 import react from "react" /* 19 */;
-import SettingBuilders from "SettingBuilders" /* 11875 */;
+import SettingBuilders from "SettingBuilders" /* 11817 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -22,14 +22,14 @@ let obj = {
     const obj = MapleSyrupExperiments;
     const mapleSyrup2Treatment = obj.useMapleSyrup2Treatment("useTitle");
     if ("A" === mapleSyrup2Treatment) {
-      const intl3 = tmp(1113).intl;
-      stringResult = intl3.string(tmp(1113).t.XFZr3P);
+      const intl3 = tmp(1112).intl;
+      stringResult = intl3.string(tmp(1112).t.XFZr3P);
     } else if ("B" === mapleSyrup2Treatment) {
-      const intl2 = tmp(1113).intl;
-      stringResult = intl2.string(tmp(1113).t.Gl5dnA);
+      const intl2 = tmp(1112).intl;
+      stringResult = intl2.string(tmp(1112).t.Gl5dnA);
     } else {
-      const intl = tmp(1113).intl;
-      stringResult = intl.string(tmp(1113).t["z5YcJ+"]);
+      const intl = tmp(1112).intl;
+      stringResult = intl.string(tmp(1112).t["z5YcJ+"]);
     }
     return stringResult;
   },

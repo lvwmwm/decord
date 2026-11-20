@@ -1,7 +1,7 @@
 // Module ID: 6848
 // Function ID: 6849
 // Name: ConjureConnectionStore
-// Dependencies: [32, 5, 1388, 6806, 6849, 6500, 6852, 6853, 6854, 6856, 6857, 6858, 6859, 6860, 6861, 6862, 6863, 6864, 572, 6865, 6868, 6869, 6871, 6873, 6874, 6875, 6876, 14655, 14661, 14662, 12229, 14664, 14666, 14667, 14668, 14669, 6866, 14670, 14652, 6821, 14671, 559, 14672, 6820, 14673, 6879, 14674, 8328, 14647, 504, 2]
+// Dependencies: [32, 5, 1386, 6806, 6849, 6502, 6852, 6853, 6854, 6856, 6857, 6858, 6859, 6860, 6861, 6862, 6863, 6864, 572, 6865, 6867, 6868, 6870, 6872, 6873, 6874, 6875, 12178, 12196, 14621, 12171, 14623, 14625, 14626, 14627, 14628, 6866, 14629, 14618, 6821, 14630, 559, 14631, 6820, 14632, 6878, 14633, 8327, 14615, 504, 2]
 // Exports: closeConnection, ensureConnection, interruptTurn, loadOlderHistory, optimisticMessageId, prepareTemplate, resetHistoryPaging, sendUserMessage, showUserMessage, stageModelSettings, subscribeDebugBacklog, withdrawUserMessage
 
 // Module 6848 (ConjureConnectionStore)
@@ -10,32 +10,32 @@ import DispatcherDefault from "Dispatcher" /* 572 */;
 import ConjureChatStore2 from "ConjureChatStore" /* 6806 */;
 import conjureProjectSockets from "conjureProjectSockets" /* 6820 */;
 import conjureChatConnection from "conjureChatConnection" /* 6865 */;
-import conjureBrowserSessionsConnection from "conjureBrowserSessionsConnection" /* 6868 */;
-import conjureDebugConnection from "conjureDebugConnection" /* 6869 */;
-import ConjureHostApproval from "ConjureHostApproval" /* 6871 */;
-import conjureLiveReloadConnection from "conjureLiveReloadConnection" /* 6873 */;
-import conjureManagedCopyConnection from "conjureManagedCopyConnection" /* 6874 */;
-import conjureModelSettingsConnection from "conjureModelSettingsConnection" /* 6875 */;
-import conjurePreviewConnection from "conjurePreviewConnection" /* 6876 */;
-import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 6879 */;
-import createNonce from "createNonce" /* 8328 */;
-import conjureRemixConnection from "conjureRemixConnection" /* 12229 */;
-import conjureMediaTickets from "conjureMediaTickets" /* 14647 */;
-import conjurePreviewClaims from "conjurePreviewClaims" /* 14652 */;
-import conjurePublishConnection from "conjurePublishConnection" /* 14655 */;
-import conjurePublishEvalConnection from "conjurePublishEvalConnection" /* 14661 */;
-import conjurePublishScheduleRequests from "conjurePublishScheduleRequests" /* 14662 */;
-import conjureSettingsConnection from "conjureSettingsConnection" /* 14664 */;
-import conjureSmartContextConnection from "conjureSmartContextConnection" /* 14666 */;
-import conjureAppBuildRequestConnection from "conjureAppBuildRequestConnection" /* 14667 */;
-import conjureProjectConnection from "conjureProjectConnection" /* 14668 */;
-import conjureUsageConnection from "conjureUsageConnection" /* 14669 */;
-import conjureLinkEmbeds from "conjureLinkEmbeds" /* 14674 */;
+import conjureBrowserSessionsConnection from "conjureBrowserSessionsConnection" /* 6867 */;
+import conjureDebugConnection from "conjureDebugConnection" /* 6868 */;
+import ConjureHostApproval from "ConjureHostApproval" /* 6870 */;
+import conjureLiveReloadConnection from "conjureLiveReloadConnection" /* 6872 */;
+import conjureManagedCopyConnection from "conjureManagedCopyConnection" /* 6873 */;
+import conjureModelSettingsConnection from "conjureModelSettingsConnection" /* 6874 */;
+import conjurePreviewConnection from "conjurePreviewConnection" /* 6875 */;
+import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 6878 */;
+import createNonce from "createNonce" /* 8327 */;
+import conjureRemixConnection from "conjureRemixConnection" /* 12171 */;
+import conjurePublishConnection from "conjurePublishConnection" /* 12178 */;
+import conjurePublishEvalConnection from "conjurePublishEvalConnection" /* 12196 */;
+import conjureMediaTickets from "conjureMediaTickets" /* 14615 */;
+import conjurePreviewClaims from "conjurePreviewClaims" /* 14618 */;
+import conjurePublishScheduleRequests from "conjurePublishScheduleRequests" /* 14621 */;
+import conjureSettingsConnection from "conjureSettingsConnection" /* 14623 */;
+import conjureSmartContextConnection from "conjureSmartContextConnection" /* 14625 */;
+import conjureAppBuildRequestConnection from "conjureAppBuildRequestConnection" /* 14626 */;
+import conjureProjectConnection from "conjureProjectConnection" /* 14627 */;
+import conjureUsageConnection from "conjureUsageConnection" /* 14628 */;
+import conjureLinkEmbeds from "conjureLinkEmbeds" /* 14633 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserStore from "UserStore" /* 1388 */;
+import UserStore from "UserStore" /* 1386 */;
 import ConjureDebugStore from "ConjureDebugStore" /* 6849 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6500 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6502 */;
 import ConjureBrowserSessionsStore from "ConjureBrowserSessionsStore" /* 6852 */;
 import ConjureSmartContextStore from "ConjureSmartContextStore" /* 6853 */;
 import ConjureDebugLogStore from "ConjureDebugLogStore" /* 6854 */;
@@ -418,7 +418,7 @@ let obj = function _openWithFreshTicket() {
         obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c6;
@@ -459,7 +459,7 @@ let obj = function _openWithFreshTicket() {
             c6 = 0;
             if (closure_1.disposed) {
               c8 = 3;
-              return { value: "HermesInternal", done: "+60" };
+              return { value: "HermesInternal", done: null };
             } else {
               closure_132_13(closure_0, "failed");
               open = closure_1;
@@ -511,7 +511,7 @@ let obj = function _openWithFreshTicket() {
             if (closure_1.disposed) {
               c6 = 0;
               c8 = 3;
-              return { value: "HermesInternal", done: "+60" };
+              return { value: "HermesInternal", done: null };
             } else {
               const ws = closure_1.ws;
               open = ws.open;
@@ -545,7 +545,7 @@ let obj = function _openWithFreshTicket() {
             }
           }
           c8 = 3;
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp70) {
         if (0 === c6) {

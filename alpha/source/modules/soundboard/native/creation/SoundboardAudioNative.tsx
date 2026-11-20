@@ -1,12 +1,12 @@
-// Module ID: 19855
-// Function ID: 19856
+// Module ID: 19673
+// Function ID: 19674
 // Name: SoundboardAudioNative
-// Dependencies: [32, 5, 19, 17, 1380, 4749, 2]
+// Dependencies: [32, 5, 19, 17, 1378, 4751, 2]
 // Exports: loadSoundboardAudioPreview, trimSoundboardAudio, useIsSoundboardSoundCreationSupported
 
-// Module 19855 (SoundboardAudioNative)
+// Module 19673 (SoundboardAudioNative)
 import react_native from "react-native" /* 17 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -37,7 +37,7 @@ let obj = function _checkOpusEncoderAvailable() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -113,7 +113,7 @@ obj = function _isSoundboardSoundCreationSupported() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -215,7 +215,7 @@ export function useIsSoundboardSoundCreationSupported() {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -251,7 +251,7 @@ export function useIsSoundboardSoundCreationSupported() {
                 tmp(tmp);
               }
               c3 = 3;
-              return { value: "HermesInternal", done: "+60" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp12) {
             c3 = 3;

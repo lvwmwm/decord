@@ -1,16 +1,16 @@
-// Module ID: 12218
-// Function ID: 12219
+// Module ID: 12160
+// Function ID: 12161
 // Name: useConjureSharedProjectAppChannel
-// Dependencies: [19, 4641, 4663, 4724, 504, 11912, 11913, 2]
+// Dependencies: [19, 4643, 4665, 4726, 504, 11854, 11855, 2]
 // Exports: default
 
-// Module 12218 (useConjureSharedProjectAppChannel)
-import ChannelStore2 from "ChannelStore" /* 4641 */;
-import conjureSharedProjectHome from "conjureSharedProjectHome" /* 11912 */;
-import findLoadedAppChannelDefault from "findLoadedAppChannel" /* 11913 */;
+// Module 12160 (useConjureSharedProjectAppChannel)
+import ChannelStore2 from "ChannelStore" /* 4643 */;
+import conjureSharedProjectHome from "conjureSharedProjectHome" /* 11854 */;
+import findLoadedAppChannelDefault from "findLoadedAppChannel" /* 11855 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4663 */;
-import PermissionStore from "PermissionStore" /* 4724 */;
+import GuildStore from "GuildStore" /* 4665 */;
+import PermissionStore from "PermissionStore" /* 4726 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

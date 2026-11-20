@@ -1,13 +1,13 @@
-// Module ID: 18319
-// Function ID: 18320
+// Module ID: 18135
+// Function ID: 18136
 // Name: useConjureSharingMode
-// Dependencies: [5, 32, 19, 6500, 1113, 4089, 504, 18318, 18320, 6814, 6501, 2]
+// Dependencies: [5, 32, 19, 6502, 1112, 4091, 504, 18136, 18137, 6814, 6503, 2]
 // Exports: conjureSharingOptions, default
 
-// Module 18319 (useConjureSharingMode)
-import intl4 from "intl" /* 1113 */;
-import _modDef4089 from "module_4089" /* 4089 */;
-import ConjureProjectStore2 from "ConjureProjectStore" /* 6500 */;
+// Module 18135 (useConjureSharingMode)
+import intl4 from "intl" /* 1112 */;
+import _modDef4091 from "module_4091" /* 4091 */;
+import ConjureProjectStore2 from "ConjureProjectStore" /* 6502 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -50,9 +50,8 @@ export default function useConjureSharingMode(arg0) {
   const first = tmp7[0];
   const useCallback = reload.useCallback;
   _require = loadFailed(function*(arg0, value) {
-    let closure_1;
-    let obj5;
-    let tmp31;
+    let obj6;
+    let tmp33;
     let v1;
     let v3;
     closure_0 = arg0;
@@ -66,7 +65,7 @@ export default function useConjureSharingMode(arg0) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -83,13 +82,14 @@ export default function useConjureSharingMode(arg0) {
             return obj3;
           } else {
             let closure_2 = tmp;
-            id = tmp31;
+            id = tmp33;
             c0 = undefined;
+            value = undefined;
             let conjureSharingChangeResult = null;
             if (null != id) {
               if (null != closure_2) {
-                const obj4 = closure_0(shareLinksEnabled[8]);
-                conjureSharingChangeResult = obj4.conjureSharingChange(tmp38, tmp19, tmp37);
+                const obj5 = closure_0(shareLinksEnabled[8]);
+                conjureSharingChangeResult = obj5.conjureSharingChange(tmp40, tmp21, tmp39);
               } else {
                 conjureSharingChangeResult = null;
               }
@@ -101,18 +101,22 @@ export default function useConjureSharingMode(arg0) {
                 if (0 !== Object.keys(conjureSharingChangeResult).length) {
                   closure_1_6(closure_0);
                   closure_1_7(false);
+                  value = true;
                   c3 = 1;
                   c4 = 3;
                   c5 = 1;
-                  const obj6 = { value: obj5.updateProjectSettings(id.id, conjureSharingChangeResult), done: false };
-                  obj5 = closure_0(shareLinksEnabled[9]);
-                  return obj6;
+                  const obj4 = { value: obj6.updateProjectSettings(id.id, conjureSharingChangeResult), done: false };
+                  obj6 = closure_0(shareLinksEnabled[9]);
+                  return obj4;
                 }
               }
             }
+            c5 = 3;
+            return { value: true, done: true };
           }
         } else if (1 === c4) {
           c3 = 0;
+          value = false;
           closure_1_7(true);
           c4 = 2;
           c5 = 1;
@@ -143,14 +147,15 @@ export default function useConjureSharingMode(arg0) {
             c3 = 0;
           }
           closure_1_6(null);
+          c5 = 3;
+          const obj9 = { value, done: true };
+          return obj9;
         }
-        c5 = 3;
-        return { value: "HermesInternal", done: "+60" };
-      } catch (tmp30) {
-        tmp31 = c3;
+      } catch (tmp32) {
+        tmp33 = c3;
         if (0 === c3) {
           c5 = 3;
-          throw tmp30;
+          throw tmp32;
         } else {
           c4 = 1;
         }
@@ -205,13 +210,13 @@ export function conjureSharingOptions() {
   let intl;
   let intl2;
   let intl3;
-  const obj = { value: "collaborators", label: intl.string(_modDef4089["a/Tlqf"]) };
+  const obj = { value: "collaborators", label: intl.string(_modDef4091["a/Tlqf"]) };
   intl = intl4.intl;
   const items = [obj, , ];
-  const obj2 = { value: "link", label: intl2.string(_modDef4089.e0VakN) };
+  const obj2 = { value: "link", label: intl2.string(_modDef4091.e0VakN) };
   intl2 = intl4.intl;
   items[1] = obj2;
-  const obj3 = { value: "public", label: intl3.string(_modDef4089["98MAcX"]) };
+  const obj3 = { value: "public", label: intl3.string(_modDef4091["98MAcX"]) };
   intl3 = intl4.intl;
   items[2] = obj3;
   return items;

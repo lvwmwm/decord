@@ -1,12 +1,12 @@
-// Module ID: 18006
-// Function ID: 18007
+// Module ID: 17833
+// Function ID: 17834
 // Name: FocusModeOptionsActionSheet
-// Dependencies: [19, 21, 1089, 1113, 11047, 7434, 7229, 6926, 2]
+// Dependencies: [19, 21, 1088, 1112, 10989, 7433, 7228, 6925, 2]
 // Exports: default
 
-// Module 18006 (FocusModeOptionsActionSheet)
-import DurationsDefault from "Durations" /* 1089 */;
-import intl5 from "intl" /* 1113 */;
+// Module 17833 (FocusModeOptionsActionSheet)
+import DurationsDefault from "Durations" /* 1088 */;
+import intl5 from "intl" /* 1112 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -70,28 +70,28 @@ export default function FocusModeOptionsActionSheet(onSelect) {
   let intl3;
   let intl4;
   onSelect = onSelect.onSelect;
-  let obj = onSelect(11047);
+  let obj = onSelect(10989);
   const focusModeEnabled = obj.useFocusModeEnabled();
-  const ActionSheet = onSelect(7434).ActionSheet;
-  const obj2 = { title: intl.string(onSelect(1113).t["sNX1E+"]), hasIcons: false, children: items };
-  const TableRowGroup = onSelect(7229).TableRowGroup;
-  intl = onSelect(1113).intl;
+  const ActionSheet = onSelect(7433).ActionSheet;
+  const obj2 = { title: intl.string(onSelect(1112).t["sNX1E+"]), hasIcons: false, children: items };
+  const TableRowGroup = onSelect(7228).TableRowGroup;
+  intl = onSelect(1112).intl;
   let tmp4Result = null;
   const tmp5 = closure_3;
   if (focusModeEnabled) {
     const obj3 = {
-      accessibilityLabel: intl2.string(onSelect(1113).t.rk35Gm),
-      accessibilityHint: intl3.string(onSelect(1113).t.rk35Gm),
+      accessibilityLabel: intl2.string(onSelect(1112).t.rk35Gm),
+      accessibilityHint: intl3.string(onSelect(1112).t.rk35Gm),
       onPress() {
           onSelect(false, undefined);
         },
       trailing: null,
-      label: intl4.string(onSelect(1113).t.rk35Gm)
+      label: intl4.string(onSelect(1112).t.rk35Gm)
     };
-    let TableRow = tmp(6926).TableRow;
-    intl2 = tmp(1113).intl;
-    intl3 = tmp(1113).intl;
-    intl4 = tmp(1113).intl;
+    let TableRow = tmp(6925).TableRow;
+    intl2 = tmp(1112).intl;
+    intl3 = tmp(1112).intl;
+    intl4 = tmp(1112).intl;
     tmp4Result = tmp4(TableRow, obj3);
   }
   items = [tmp4Result, ];

@@ -1,9 +1,9 @@
-// Module ID: 6563
-// Function ID: 6564
+// Module ID: 6565
+// Function ID: 6566
 // Name: GuildOnboardingHomeSettingsStore
 // Dependencies: [504, 572, 2]
 
-// Module 6563 (GuildOnboardingHomeSettingsStore)
+// Module 6565 (GuildOnboardingHomeSettingsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;

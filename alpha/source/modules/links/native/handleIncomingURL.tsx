@@ -1,21 +1,21 @@
-// Module ID: 20227
-// Function ID: 20228
+// Module ID: 20047
+// Function ID: 20048
 // Name: handleIncomingURL
-// Dependencies: [5, 4641, 5533, 2120, 1072, 3, 8149, 20226, 6373, 1256, 14974, 5507, 14683, 5512, 1254, 7143, 17495, 20228, 2]
+// Dependencies: [5, 4643, 5535, 2118, 1071, 3, 8148, 20046, 6375, 1255, 14938, 5509, 14642, 5514, 1253, 7142, 17322, 20048, 2]
 // Exports: default
 
-// Module 20227 (handleIncomingURL)
+// Module 20047 (handleIncomingURL)
 import LoggerDefault from "Logger" /* 3 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 6373 */;
-import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 8149 */;
-import handleSupportedURLDefault from "handleSupportedURL" /* 14974 */;
-import DeepLinkTypes from "DeepLinkTypes" /* 20226 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 6375 */;
+import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 8148 */;
+import handleSupportedURLDefault from "handleSupportedURL" /* 14938 */;
+import DeepLinkTypes from "DeepLinkTypes" /* 20046 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5533 */;
-import AppStateStore from "AppStateStore" /* 2120 */;
-import Constants from "Constants" /* 1072 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5535 */;
+import AppStateStore from "AppStateStore" /* 2118 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 let channel, channelId, closure_2, closure_3, closure_4, closure_5, message;
@@ -53,7 +53,7 @@ let obj = function _handleIncomingURL() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -175,18 +175,18 @@ let obj = function _handleIncomingURL() {
                       }
                     }
                     c8 = 3;
-                    return { value: "HermesInternal", done: "+60" };
+                    return { value: "HermesInternal", done: null };
                   } else {
                     const parts = url.split("voice/");
                     if (2 !== parts.length) {
                       c8 = 3;
-                      return { value: "HermesInternal", done: "+60" };
+                      return { value: "HermesInternal", done: null };
                     } else {
                       const str36 = parts[1];
                       const parts1 = str36.split("/");
                       if (0 === parts1.length) {
                         c8 = 3;
-                        return { value: "HermesInternal", done: "+60" };
+                        return { value: "HermesInternal", done: null };
                       } else if ("user" !== parts1[0]) {
                         if ("invite" === parts1[0]) {
                           const obj13 = { payload: obj14, isAppStartupNavigation };
@@ -226,7 +226,7 @@ let obj = function _handleIncomingURL() {
                 }
               }
               c8 = 3;
-              return { value: "HermesInternal", done: "+60" };
+              return { value: "HermesInternal", done: null };
             }
           } else if (1 === tmp4) {
             c6 = 0;

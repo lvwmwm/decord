@@ -1,18 +1,18 @@
-// Module ID: 13100
-// Function ID: 13101
+// Module ID: 13070
+// Function ID: 13071
 // Name: CreateGuild
-// Dependencies: [19, 17, 1388, 1072, 21, 4792, 575, 5022, 5802, 5808, 5383, 1113, 12147, 7102, 7437, 5390, 7132, 2]
+// Dependencies: [19, 17, 1386, 1071, 21, 4794, 575, 5024, 5804, 5810, 5385, 1112, 12089, 7101, 7436, 5392, 7131, 2]
 // Exports: default
 
-// Module 13100 (CreateGuild)
+// Module 13070 (CreateGuild)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import react_native2 from "react-native" /* 5802 */;
+import Constants from "Constants" /* 1071 */;
+import react_native2 from "react-native" /* 5804 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1388 */;
+import UserStore from "UserStore" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -60,7 +60,7 @@ export default function CreateGuild(arg0) {
     isStaffResult = currentUser.isStaff();
   }
   const tmp3 = !isStaffResult;
-  let obj2 = isScreenReaderEnabled(5022);
+  let obj2 = isScreenReaderEnabled(5024);
   isScreenReaderEnabled = obj2.useIsScreenReaderEnabled();
   ref = react.useRef(null);
   const items = [isScreenReaderEnabled];
@@ -73,28 +73,28 @@ export default function CreateGuild(arg0) {
     }
   }, items);
   let obj = { style: tmp.flex, contentInset: { top: 0 }, automaticallyAdjustContentInsets: false, keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, contentContainerStyle: tmp.contentContainer, children: tmp11(Stack, { children: items1 }) };
-  Stack = isScreenReaderEnabled(5808).Stack;
+  Stack = isScreenReaderEnabled(5810).Stack;
   const obj3 = { ref, style: tmp.header, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: customTitle };
-  const Text = isScreenReaderEnabled(5383).Text;
+  const Text = isScreenReaderEnabled(5385).Text;
   const tmp10 = ScrollView;
   tmp11 = closure_8;
   if (customTitle == null) {
-    const intl = tmp4(1113).intl;
-    customTitle = intl.string(tmp4(1113).t.XioBx6);
+    const intl = tmp4(1112).intl;
+    customTitle = intl.string(tmp4(1112).t.XioBx6);
   }
   items1 = [closure_7(Text, obj3), , , , , , , ];
   const obj4 = { style: tmp.description, variant: "body-sm/medium", color: "text-default", children: customDescription };
-  const Text2 = tmp4(5383).Text;
+  const Text2 = tmp4(5385).Text;
   if (customDescription == null) {
-    const intl2 = tmp4(1113).intl;
-    customDescription = intl2.string(tmp4(1113).t["/k/L/j"]);
+    const intl2 = tmp4(1112).intl;
+    customDescription = intl2.string(tmp4(1112).t["/k/L/j"]);
   }
   items1[1] = closure_7(Text2, obj4);
   const obj5 = { iconBackgroundColor: tmp.contentContainer.backgroundColor, style: tmp.iconUploader, onPress: onIconPress, icon: guild.icon };
-  items1[2] = closure_7(ref(12147), obj5);
-  const obj6 = { clearable: true, label: intl3.string(isScreenReaderEnabled(1113).t.dBih7e), errorMessage: firstFieldErrorMessage, value: guild.name, onChange: onNameChange, autoFocus, autoCorrect: false, returnKeyType: "done" };
-  const TextInput = tmp4(7102).TextInput;
-  intl3 = tmp4(1113).intl;
+  items1[2] = closure_7(ref(12089), obj5);
+  const obj6 = { clearable: true, label: intl3.string(isScreenReaderEnabled(1112).t.dBih7e), errorMessage: firstFieldErrorMessage, value: guild.name, onChange: onNameChange, autoFocus, autoCorrect: false, returnKeyType: "done" };
+  const TextInput = tmp4(7101).TextInput;
+  intl3 = tmp4(1112).intl;
   firstFieldErrorMessage = undefined;
   const tmp12 = ref;
   if (error != null) {
@@ -106,22 +106,22 @@ export default function CreateGuild(arg0) {
   let tmp9Result = !tmp3;
   items1[3] = closure_7(TextInput, obj6);
   if (tmp9Result) {
-    const obj7 = { onValueChange: onStaffOnlyChange, value: guild.staffOnly, start: true, end: true, label: "Staff Only", subLabel: intl4.string(isScreenReaderEnabled(1113).t.edQ5va) };
-    const TableSwitchRow = tmp4(7437).TableSwitchRow;
-    intl4 = tmp4(1113).intl;
+    const obj7 = { onValueChange: onStaffOnlyChange, value: guild.staffOnly, start: true, end: true, label: "Staff Only", subLabel: intl4.string(isScreenReaderEnabled(1112).t.edQ5va) };
+    const TableSwitchRow = tmp4(7436).TableSwitchRow;
+    intl4 = tmp4(1112).intl;
     tmp9Result = tmp9(TableSwitchRow, obj7);
   }
   items1[4] = tmp9Result;
-  const obj8 = { style: tmp.hint, variant: "body-xs/medium", color: "text-muted", children: intl5.format(isScreenReaderEnabled(1113).t["2bprXx"], obj9) };
-  const Text3 = tmp4(5383).Text;
-  intl5 = tmp4(1113).intl;
+  const obj8 = { style: tmp.hint, variant: "body-xs/medium", color: "text-muted", children: intl5.format(isScreenReaderEnabled(1112).t["2bprXx"], obj9) };
+  const Text3 = tmp4(5385).Text;
+  intl5 = tmp4(1112).intl;
   obj9 = { guidelinesURL: MarketingURLs.GUIDELINES };
   items1[5] = closure_7(Text3, obj8);
   const obj10 = { disabled: "" === guild.name, size: "md", grow: true, text: customButtonLabel, onPress: onCreate, loading: submitting };
-  const Button = tmp4(5390).Button;
+  const Button = tmp4(5392).Button;
   if (customButtonLabel == null) {
-    const intl6 = tmp4(1113).intl;
-    customButtonLabel = intl6.string(tmp4(1113).t["O0p/lS"]);
+    const intl6 = tmp4(1112).intl;
+    customButtonLabel = intl6.string(tmp4(1112).t["O0p/lS"]);
   }
   items1[6] = closure_7(Button, obj10);
   let firstFieldErrorMessage1;
@@ -143,7 +143,7 @@ export default function CreateGuild(arg0) {
       tmp9Result2 = null;
       if ("" !== message1) {
         let message2;
-        const tmp12Result = tmp12(7132);
+        const tmp12Result = tmp12(7131);
         if (error != null) {
           message2 = error.message;
         }

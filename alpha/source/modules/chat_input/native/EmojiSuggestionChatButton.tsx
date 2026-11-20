@@ -1,24 +1,24 @@
-// Module ID: 13213
-// Function ID: 13214
+// Module ID: 13183
+// Function ID: 13184
 // Name: EmojiSuggestionChatButton
-// Dependencies: [32, 19, 17, 1192, 4638, 1228, 21, 4792, 575, 1380, 5356, 13206, 13214, 1655, 5393, 1708, 11708, 13215, 5052, 12954, 6911, 1113, 5479, 4799, 7378, 7379, 11238, 1187, 2]
+// Dependencies: [32, 19, 17, 1191, 4640, 1227, 21, 4794, 575, 1378, 5358, 13176, 13184, 1653, 5395, 1706, 11650, 13185, 5054, 12924, 6910, 1112, 5481, 4801, 7377, 7378, 11180, 1186, 2]
 // Exports: EmojiSuggestionChatButton
 
-// Module 13213 (EmojiSuggestionChatButton)
+// Module 13183 (EmojiSuggestionChatButton)
 import nativeDefault from "native" /* 575 */;
-import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1228 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
-import _mod1708 from "module_1708" /* 1708 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4638 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5052 */;
-import spring_spring from "spring/spring" /* 5393 */;
-import EmojiSuggestionBarUtils from "EmojiSuggestionBarUtils" /* 13206 */;
+import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1227 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
+import _mod1706 from "module_1706" /* 1706 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4640 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5054 */;
+import spring_spring from "spring/spring" /* 5395 */;
+import EmojiSuggestionBarUtils from "EmojiSuggestionBarUtils" /* 13176 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ThemeStore from "ThemeStore" /* 1192 */;
+import ThemeStore from "ThemeStore" /* 1191 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let gesture, set, set2, tmp;
@@ -143,7 +143,7 @@ export function EmojiSuggestionChatButton(arg0) {
       set2 = sharedValue.set;
       const withSpring = spring_spring.withSpring;
       const ITEM_ENTRANCE_SPRING_CONFIG = EmojiSuggestionBarUtils.ITEM_ENTRANCE_SPRING_CONFIG;
-      const items = [closure_13, _mod1708.scheduleOnRN, _undefined];
+      const items = [closure_13, _mod1706.scheduleOnRN, _undefined];
       let c0;
       let c1;
       [tmp2, tmp3, tmp4] = items;
@@ -238,7 +238,7 @@ export function EmojiSuggestionChatButton(arg0) {
     const items2 = [closure_16, , ];
     const onStart = failOffsetXResult.failOffsetY([-15, 15]).onStart;
     failOffsetXResult.failOffsetY([-15, 15]);
-    items2[1] = _mod1708.scheduleOnRN;
+    items2[1] = _mod1706.scheduleOnRN;
     items2[2] = callback1;
     let c0;
     let c1;

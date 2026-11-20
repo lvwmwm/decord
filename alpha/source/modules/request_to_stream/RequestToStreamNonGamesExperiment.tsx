@@ -1,10 +1,10 @@
-// Module ID: 8410
-// Function ID: 8411
+// Module ID: 8409
+// Function ID: 8410
 // Name: RequestToStreamNonGamesExperiment
-// Dependencies: [1452, 2]
+// Dependencies: [1450, 2]
 
-// Module 8410 (RequestToStreamNonGamesExperiment)
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+// Module 8409 (RequestToStreamNonGamesExperiment)
+import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

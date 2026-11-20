@@ -1,21 +1,21 @@
-// Module ID: 19438
-// Function ID: 19439
+// Module ID: 19258
+// Function ID: 19259
 // Name: VoicePanelControlsAppLauncher
-// Dependencies: [19, 4641, 11686, 1072, 21, 4792, 8451, 11687, 10536, 504, 38, 13044, 1108, 12044, 10614, 1655, 12859, 13045, 1113, 2]
+// Dependencies: [19, 4643, 11628, 1071, 21, 4794, 8450, 11629, 10478, 504, 38, 13014, 1107, 11986, 10556, 1653, 12829, 13015, 1112, 2]
 
-// Module 19438 (VoicePanelControlsAppLauncher)
+// Module 19258 (VoicePanelControlsAppLauncher)
 import _modDef38 from "module_38" /* 38 */;
-import Constants from "Constants" /* 1072 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
-import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 10536 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11687 */;
-import AppLauncherNavigatorDefault from "AppLauncherNavigator" /* 12859 */;
-import VoicePanelControlsDrawerTitleDefault from "VoicePanelControlsDrawerTitle" /* 13045 */;
+import Constants from "Constants" /* 1071 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1107 */;
+import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 10478 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11629 */;
+import AppLauncherNavigatorDefault from "AppLauncherNavigator" /* 12829 */;
+import VoicePanelControlsDrawerTitleDefault from "VoicePanelControlsDrawerTitle" /* 13015 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11686 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11628 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
@@ -55,7 +55,7 @@ const memoResult = react.memo(function VoicePanelControlsAppLauncher(gestureSpec
   let setControlsMode;
   importDefault = undefined;
   const tmp = closure_10();
-  let obj = setControlsMode(8451);
+  let obj = setControlsMode(8450);
   const gradientTop = obj.useGradientTop();
   const context = react.useContext(VoicePanelStateContextDefault);
   setControlsMode = context.setControlsMode;
@@ -67,7 +67,7 @@ const memoResult = react.memo(function VoicePanelControlsAppLauncher(gestureSpec
   const stateFromStores = obj2.useStateFromStores(items, () => ChannelStore.getChannel(c1));
   _modDef38(null != stateFromStores, "channel should not be null");
   const items1 = [setControlsMode];
-  const obj3 = setControlsMode(13044);
+  const obj3 = setControlsMode(13014);
   const controlsDrawerOpenWidth = obj3.getControlsDrawerOpenWidth(tmp7.width, rect.left, rect.right);
   const callback = react.useCallback(() => {
     const ComponentDispatch = ComponentDispatchUtils.ComponentDispatch;
@@ -75,19 +75,19 @@ const memoResult = react.memo(function VoicePanelControlsAppLauncher(gestureSpec
     const obj = { mode: hasOwnProperty.HIDDEN };
     setControlsMode(obj);
   }, items1);
-  const obj4 = setControlsMode(12044);
+  const obj4 = setControlsMode(11986);
   const appLauncherChatInputRefDummy = obj4.useAppLauncherChatInputRefDummy({ noop: true });
-  const VOICE = setControlsMode(10614).AppLauncherEntrypoint.VOICE;
-  const ref = react.useRef(setControlsMode(12044).AppLauncherKeyboardCloseReason.DISMISSED);
+  const VOICE = setControlsMode(10556).AppLauncherEntrypoint.VOICE;
+  const ref = react.useRef(setControlsMode(11986).AppLauncherKeyboardCloseReason.DISMISSED);
   const ref1 = react.useRef(undefined);
-  const obj5 = setControlsMode(1655);
+  const obj5 = setControlsMode(1653);
   const sharedValue = obj5.useSharedValue(0);
-  const obj6 = setControlsMode(1655);
+  const obj6 = setControlsMode(1653);
   const sharedValue1 = obj6.useSharedValue(0);
   const items2 = [closure_11, gestureSpecs];
   let c0;
   [tmp17, tmp18] = items2;
-  const obj7 = setControlsMode(1655);
+  const obj7 = setControlsMode(1653);
   class VoicePanelControlsAppLauncherTsx1 {
     constructor() {
       return _undefined.get().active;
@@ -101,7 +101,7 @@ const memoResult = react.memo(function VoicePanelControlsAppLauncher(gestureSpec
   const items4 = [closure_12, gestureSpecs];
   c0 = undefined;
   [tmp20, tmp21] = items4;
-  const tmp2Result = setControlsMode(1655);
+  const tmp2Result = setControlsMode(1653);
   class VoicePanelControlsAppLauncherTsx2 {
     constructor() {
       return _undefined.get().isDrawer;
@@ -118,7 +118,7 @@ const memoResult = react.memo(function VoicePanelControlsAppLauncher(gestureSpec
   let c2;
   let c3;
   [tmp23, tmp24, tmp25, tmp26, tmp27] = items6;
-  const tmp2Result2 = setControlsMode(1655);
+  const tmp2Result2 = setControlsMode(1653);
   class VoicePanelControlsAppLauncherTsx3 {
     constructor() {
       let height;
@@ -138,13 +138,13 @@ const memoResult = react.memo(function VoicePanelControlsAppLauncher(gestureSpec
   const animatedStyle = tmp2Result2.useAnimatedStyle(VoicePanelControlsAppLauncherTsx3);
   obj9 = { style: items8, children: items9 };
   items8 = [tmp.container, gradientTop, animatedStyle];
-  View = tmp5(1655).View;
+  View = tmp5(1653).View;
   items9 = [, ];
   const obj10 = { bottomSheetIndex: sharedValue1, bottomSheetPosition: sharedValue, bottomSheetExpandReasonRef: ref1, context: { type: "channel", channel: stateFromStores }, chatInputRef: appLauncherChatInputRefDummy, entrypoint: VOICE, keyboardCloseReasonRef: ref, onActivityItemSelected: callback, width: controlsDrawerOpenWidth };
   items9[0] = closure_7(AppLauncherNavigatorDefault, obj10);
-  const obj11 = { title: intl.string(setControlsMode(1113).t.shUONg), disablePill: true };
+  const obj11 = { title: intl.string(setControlsMode(1112).t.shUONg), disablePill: true };
   const tmp5Result = VoicePanelControlsDrawerTitleDefault;
-  intl = tmp2(1113).intl;
+  intl = tmp2(1112).intl;
   items9[1] = closure_7(tmp5Result, obj11);
   return closure_7(closure_9, obj8);
 });

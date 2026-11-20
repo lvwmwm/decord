@@ -1,17 +1,17 @@
-// Module ID: 13705
-// Function ID: 13706
+// Module ID: 13674
+// Function ID: 13675
 // Name: conjureRailActivity
-// Dependencies: [32, 19, 1231, 6498, 6806, 6500, 6860, 6817, 6816, 504, 2]
+// Dependencies: [32, 19, 1230, 6500, 6806, 6502, 6860, 6817, 6816, 504, 2]
 // Exports: useConjureRailTabActivity
 
-// Module 13705 (conjureRailActivity)
+// Module 13674 (conjureRailActivity)
 import conjureProjectMute from "conjureProjectMute" /* 6817 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import ReadStateStore from "ReadStateStore" /* 6498 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1230 */;
+import ReadStateStore from "ReadStateStore" /* 6500 */;
 import ConjureChatStore from "ConjureChatStore" /* 6806 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6500 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6502 */;
 import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 6860 */;
 import size from "module_2" /* 2 */;
 

@@ -1,9 +1,9 @@
-// Module ID: 7093
-// Function ID: 7094
+// Module ID: 7092
+// Function ID: 7093
 // Name: CrunchyrollConnectionConstants
 // Dependencies: [6794, 2]
 
-// Module 7093 (CrunchyrollConnectionConstants)
+// Module 7092 (CrunchyrollConnectionConstants)
 import OAuth2Scopes from "OAuth2Scopes" /* 6794 */;
 import size from "module_2" /* 2 */;
 

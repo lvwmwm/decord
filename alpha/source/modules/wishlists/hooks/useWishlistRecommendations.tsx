@@ -1,15 +1,15 @@
 // Module ID: 9464
 // Function ID: 9465
 // Name: useWishlistRecommendations
-// Dependencies: [32, 19, 6837, 502, 9465, 6729, 1089, 504, 8862, 1255, 8870, 8869, 12, 8871, 7954, 9466, 9467, 2]
+// Dependencies: [32, 19, 6837, 502, 9465, 6729, 1088, 504, 8862, 1254, 8870, 8869, 12, 8871, 7953, 9466, 9467, 2]
 // Exports: useRecommendationsForApplicationIds, useRecommendationsForSingleUser, useWishlistRecommendationsForSingleUser
 
 // Module 9464 (useWishlistRecommendations)
 import _mod12 from "module_12" /* 12 */;
-import DurationsDefault from "Durations" /* 1089 */;
-import GlobalUtils from "GlobalUtils" /* 1255 */;
+import DurationsDefault from "Durations" /* 1088 */;
+import GlobalUtils from "GlobalUtils" /* 1254 */;
 import WishlistRecommendationRecord2 from "WishlistRecommendationRecord" /* 6729 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7954 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7953 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserProfileStore from "UserProfileStore" /* 6837 */;

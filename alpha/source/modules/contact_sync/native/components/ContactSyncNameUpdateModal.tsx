@@ -1,22 +1,22 @@
-// Module ID: 16060
-// Function ID: 16061
+// Module ID: 16024
+// Function ID: 16025
 // Name: ContactSyncNameUpdateModal
-// Dependencies: [5, 32, 19, 17, 13493, 21, 6308, 4792, 575, 5346, 13495, 13499, 5474, 1113, 13513, 6976, 6973, 2]
+// Dependencies: [5, 32, 19, 17, 13463, 21, 6310, 4794, 575, 5348, 13465, 13469, 5476, 1112, 13483, 6975, 6972, 2]
 // Exports: default
 
-// Module 16060 (ContactSyncNameUpdateModal)
+// Module 16024 (ContactSyncNameUpdateModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import NavigatorConstants from "NavigatorConstants" /* 5346 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6308 */;
-import Navigator from "Navigator" /* 6973 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 13493 */;
+import NavigatorConstants from "NavigatorConstants" /* 5348 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6310 */;
+import Navigator from "Navigator" /* 6972 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 13463 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4792 */;
-import NavigatorHeader_mod from "NavigatorHeader" /* 6976 */;
+import createStyles from "createStyles" /* 4794 */;
+import NavigatorHeader_mod from "NavigatorHeader" /* 6975 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -49,7 +49,7 @@ function ContactSyncNameInputScreen() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -95,7 +95,7 @@ function ContactSyncNameInputScreen() {
               c3 = 0;
             }
             c4 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp25) {
           if (0 === c3) {

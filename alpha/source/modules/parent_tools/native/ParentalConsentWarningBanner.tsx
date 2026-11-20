@@ -1,22 +1,22 @@
-// Module ID: 19199
-// Function ID: 19200
+// Module ID: 19018
+// Function ID: 19019
 // Name: ParentalConsentWarningBanner
-// Dependencies: [19, 17, 8217, 1072, 21, 575, 4792, 1630, 16081, 16080, 19200, 10789, 5356, 7966, 1256, 8218, 8075, 5383, 5347, 1113, 2723, 2]
+// Dependencies: [19, 17, 8216, 1071, 21, 575, 4794, 1628, 16045, 16044, 19019, 10731, 5358, 7965, 1255, 8217, 8074, 5385, 5349, 1112, 2725, 2]
 // Exports: default
 
-// Module 19199 (ParentalConsentWarningBanner)
+// Module 19018 (ParentalConsentWarningBanner)
 import nativeDefault from "native" /* 575 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import _modDef7966 from "module_7966" /* 7966 */;
-import openUserSettings from "openUserSettings" /* 8075 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 8217 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 8218 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import _modDef7965 from "module_7965" /* 7965 */;
+import openUserSettings from "openUserSettings" /* 8074 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 8216 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 8217 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1072 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -79,7 +79,7 @@ export default function ParentalConsentWarningBanner(children) {
   daysRemaining = undefined;
   const memo = react.useMemo(() => {
     const items = [token, ];
-    const obj = _modDef7966(token);
+    const obj = _modDef7965(token);
     const setAlphaResult = obj.setAlpha(0);
     items[1] = setAlphaResult.toRgbString();
     return items;

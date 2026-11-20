@@ -1,11 +1,11 @@
-// Module ID: 8249
-// Function ID: 8250
+// Module ID: 8248
+// Function ID: 8249
 // Name: AuthenticationUtils
-// Dependencies: [1098, 2]
+// Dependencies: [1097, 2]
 // Exports: getToken, isAuthenticated
 
-// Module 8249 (AuthenticationUtils)
-import TokenManagerAll from "TokenManager" /* 1098 */;
+// Module 8248 (AuthenticationUtils)
+import TokenManagerAll from "TokenManager" /* 1097 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("utils/AuthenticationUtils.tsx");

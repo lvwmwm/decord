@@ -1,14 +1,14 @@
 // Module ID: 9322
 // Function ID: 9323
 // Name: BalanceCounter
-// Dependencies: [32, 19, 21, 1655, 4806, 5393, 1708, 9323, 5383, 2]
+// Dependencies: [32, 19, 21, 1653, 4808, 5395, 1706, 9323, 5385, 2]
 
 // Module 9322 (BalanceCounter)
 import Fragment from "Fragment" /* 21 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import _mod1708 from "module_1708" /* 1708 */;
-import react2 from "react" /* 4806 */;
-import spring_spring from "spring/spring" /* 5393 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import _mod1706 from "module_1706" /* 1706 */;
+import react2 from "react" /* 4808 */;
+import spring_spring from "spring/spring" /* 5395 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -20,33 +20,40 @@ let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const Text_Text = tmp(5383);
+const Text_Text = tmp(5385);
 let react = react_mod;
 ({ useState: closure_4, useEffect: hasOwnProperty, useRef: metroRequire, useCallback: metroImportDefault } = react);
 react = react_mod;
-const jsx = Fragment.jsx;
+let jsx = Fragment.jsx;
 let closure_10 = { code: "(function BalanceCounterTsx1(){let[scheduleOnRN,setIsAnimating]=this.__closure;scheduleOnRN(setIsAnimating,false);})" };
 let closure_11 = { code: "(function BalanceCounterTsx2(){let[isAnimating,animatedValue,scheduleOnRN,setDisplayValue,setMaxDigits]=this.__closure;if(isAnimating){const roundedValue=Math.round(animatedValue.get());scheduleOnRN(setDisplayValue,roundedValue);scheduleOnRN(setMaxDigits,roundedValue.toString().length);}return{};})" };
 class BalanceCounter {
   constructor(value) {
     let Text;
     let _undefined;
-    let closure_8;
-    let items3;
+    let _undefined2;
+    let c8;
+    let closure_9;
+    let num;
     let obj2;
     let obj5;
     let onValueReached;
     let ref;
     let style;
-    let tmp14;
-    let tmp15;
-    let tmp16;
+    let textColor;
+    let tmp10;
+    let tmp11;
+    let tmp13;
     let tmp17;
     let tmp18;
     let tmp19;
-    let tmp5;
-    let tmp7;
+    let tmp20;
+    let tmp21;
+    let tmp22;
+    let tmp23;
+    let tmp25;
     let tmp8;
+    let trimBottomFontSpace;
     value = value.value;
     require = value;
     const onValueChange = value.onValueChange;
@@ -55,7 +62,12 @@ class BalanceCounter {
     if (str === undefined) {
       str = "body-sm/semibold";
     }
-    let c6;
+    ({ trimBottomFontSpace, textColor } = value);
+    if (trimBottomFontSpace === undefined) {
+      trimBottomFontSpace = false;
+    }
+    let closure_6;
+    let c7;
     react = undefined;
     function clearAnimationTimeout() {
       if (null != ref2.current) {
@@ -63,37 +75,45 @@ class BalanceCounter {
         clearTimeout(ref2.current);
         ref2.current = null;
       }
-      closure_7(false);
+      _undefined2(false);
     }
-    const textColor = value.textColor;
-    dependencyMap = c6(null);
+    dependencyMap = closure_6(null);
     const tmp2 = dependencyMap;
     let tmp = require;
-    let obj = _mod1655;
+    let obj = _mod1653;
     const sharedValue = obj.useSharedValue(0);
-    const ref2 = c6(null);
+    const ref2 = closure_6(null);
     const enabled = react.useContext(react2.AccessibilityPreferencesContext).reducedMotion.enabled;
     const tmp4 = sharedValue(ref2(0), 2);
-    [obj2, tmp5] = tmp4;
-    c6 = tmp5;
-    [tmp7, tmp8] = sharedValue(ref2(1), 2);
-    const tmp6 = sharedValue(ref2(1), 2);
-    const tmp9 = sharedValue(ref2(false), 2);
-    let closure_7 = tmp9[1];
-    const first = tmp9[0];
-    const tmp11 = closure_7((set, channelDockHeight, duration) => {
+    closure_6 = tmp4[1];
+    const first = tmp4[0];
+    const tmp6 = c7((nativeEvent) => {
+      const lines = nativeEvent.nativeEvent.lines;
+      if (null != lines[lines.length - 1]) {
+        const _Math = Math;
+        closure_6(Math.abs(lines[lines.length - 1].descender));
+      }
+    }, []);
+    [obj2, tmp8] = sharedValue(ref2(0), 2);
+    c7 = tmp8;
+    const tmp7 = sharedValue(ref2(0), 2);
+    [tmp10, tmp11] = sharedValue(ref2(1), 2);
+    const tmp9 = sharedValue(ref2(1), 2);
+    let tmp12 = sharedValue(ref2(false), 2);
+    [tmp13, c8] = tmp12;
+    const tmp14 = c7((set, bound, duration) => {
       let tmp3;
       let tmp4;
       let tmp5;
-      closure_7(true);
+      _undefined2(true);
       const items = [, , ];
       const obj = { duration, damping: 15, stiffness: 150, mass: 1 };
       set = set.set;
       items[0] = closure_10;
       const withSpring = spring_spring.withSpring;
       spring_spring;
-      items[1] = _mod1708.scheduleOnRN;
-      items[2] = closure_7;
+      items[1] = _mod1706.scheduleOnRN;
+      items[2] = _undefined2;
       let c0;
       let c1;
       [tmp3, tmp4, tmp5] = items;
@@ -107,11 +127,11 @@ class BalanceCounter {
       BalanceCounterTsx1.__closure = items1;
       BalanceCounterTsx1.__workletHash = 2321092596604;
       BalanceCounterTsx1.__initData = tmp3;
-      const result = set(withSpring(channelDockHeight, obj, "respect-motion-settings", BalanceCounterTsx1));
+      const result = set(withSpring(bound, obj, "respect-motion-settings", BalanceCounterTsx1));
     }, []);
-    react = tmp11;
-    let items = [value, onValueChange, onValueReached, sharedValue, tmp11, enabled];
-    let tmp12 = enabled(() => {
+    jsx = tmp14;
+    let items = [value, onValueChange, onValueReached, sharedValue, tmp14, enabled];
+    enabled(() => {
       let duration;
       if (null !== duration) {
         if (null !== ref.current) {
@@ -133,10 +153,10 @@ class BalanceCounter {
                 clearTimeout(ref2.current);
                 ref2.current = null;
               }
-              closure_7(false);
+              _undefined2(false);
               const _setTimeout = setTimeout;
               ref2.current = setTimeout(() => {
-                closure_8(sharedValue, require, duration);
+                closure_9(sharedValue, require, duration);
                 ref2.current = null;
               }, delay);
               return tmp12;
@@ -150,14 +170,14 @@ class BalanceCounter {
         ref.current = duration;
       }
     }, items);
-    _mod1655;
-    let items1 = [closure_11, first, sharedValue, _mod1708.scheduleOnRN, tmp5, tmp8];
+    _mod1653;
+    let items1 = [closure_11, tmp13, sharedValue, _mod1706.scheduleOnRN, tmp8, tmp11];
     let c0;
     let c1;
     let c2;
     let c3;
     let c4;
-    [tmp14, tmp15, tmp16, tmp17, tmp18, tmp19] = items1;
+    [tmp17, tmp18, tmp19, tmp20, tmp21, tmp22] = items1;
     class BalanceCounterTsx2 {
       constructor() {
         const tmp = c0;
@@ -170,23 +190,30 @@ class BalanceCounter {
         return {};
       }
     }
-    const items2 = [tmp15, tmp16, tmp17, tmp18, tmp19];
+    const items2 = [tmp18, tmp19, tmp20, tmp21, tmp22];
     BalanceCounterTsx2.__closure = items2;
     BalanceCounterTsx2.__workletHash = 10121586392867;
-    BalanceCounterTsx2.__initData = tmp14;
-    let tmp21 = null;
+    BalanceCounterTsx2.__initData = tmp17;
+    let tmp26Result = null;
     if (null !== value) {
-      let tmp23 = onValueChange;
-      const obj3 = { style: items3, children: clearAnimationTimeout(Text, obj5) };
-      items3 = [tmp20, ];
-      const obj4 = { minWidth: 7 * tmp7 };
-      items3[1] = obj4;
-      const View = onValueChange(1655).View;
-      obj5 = { variant: str, color: textColor, style, maxFontSizeMultiplier: 2, children: obj2.toFixed(0) };
+      const items3 = [tmp23, ];
+      const obj3 = { minWidth: 7 * tmp10, marginBottom: num };
+      num = 0;
+      const View = onValueChange(1653).View;
+      if (trimBottomFontSpace) {
+        num = -first;
+      }
+      items3[1] = obj3;
+      const obj4 = { style: items3, children: jsx(Text, obj5) };
+      obj5 = { variant: str, color: textColor, style, maxFontSizeMultiplier: 2, onTextLayout: tmp25, children: obj2.toFixed(0) };
+      tmp25 = undefined;
       Text = Text_Text.Text;
-      tmp21 = clearAnimationTimeout(View, obj3);
+      if (trimBottomFontSpace) {
+        tmp25 = tmp6;
+      }
+      tmp26Result = tmp26(View, obj4);
     }
-    return tmp21;
+    return tmp26Result;
   }
 }
 let result = size.fileFinishedImporting("modules/virtual_currency/native/BalanceCounter.tsx");

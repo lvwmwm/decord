@@ -1,21 +1,21 @@
-// Module ID: 8592
-// Function ID: 8593
+// Module ID: 8591
+// Function ID: 8592
 // Name: DoubleTapNitroAlert
-// Dependencies: [19, 17, 8588, 1072, 8593, 21, 4792, 8075, 5741, 5745, 7106, 1113, 2]
+// Dependencies: [19, 17, 8587, 1071, 8592, 21, 4794, 8074, 5743, 5747, 7105, 1112, 2]
 // Exports: default
 
-// Module 8592 (DoubleTapNitroAlert)
+// Module 8591 (DoubleTapNitroAlert)
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1072 */;
-import intl5 from "intl" /* 1113 */;
-import AlertModal2 from "AlertModal" /* 5745 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 7106 */;
-import openUserSettings from "openUserSettings" /* 8075 */;
-import DoubleTapToRaectConstants from "DoubleTapToRaectConstants" /* 8588 */;
-import SettingsConstants from "SettingsConstants" /* 8593 */;
+import Constants from "Constants" /* 1071 */;
+import intl5 from "intl" /* 1112 */;
+import AlertModal2 from "AlertModal" /* 5747 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 7105 */;
+import openUserSettings from "openUserSettings" /* 8074 */;
+import DoubleTapToRaectConstants from "DoubleTapToRaectConstants" /* 8587 */;
+import SettingsConstants from "SettingsConstants" /* 8592 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let c9;

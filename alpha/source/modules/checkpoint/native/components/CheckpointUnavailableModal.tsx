@@ -1,30 +1,30 @@
-// Module ID: 12409
-// Function ID: 12410
+// Module ID: 12379
+// Function ID: 12380
 // Name: CheckpointUnavailableModal
-// Dependencies: [17, 5848, 1083, 21, 4792, 575, 5008, 6308, 1630, 1113, 12410, 12412, 12413, 12414, 4853, 12415, 12416, 12418, 3339, 12419, 2]
+// Dependencies: [17, 5850, 1082, 21, 4794, 575, 5010, 6310, 1628, 1112, 12380, 12382, 12383, 12384, 4855, 12385, 12386, 12388, 3341, 12389, 2]
 // Exports: default
 
-// Module 12409 (CheckpointUnavailableModal)
+// Module 12379 (CheckpointUnavailableModal)
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1083 */;
-import intl3 from "intl" /* 1113 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import _modDef3339 from "module_3339" /* 3339 */;
-import native from "native" /* 4853 */;
-import HapticUtils from "HapticUtils" /* 5008 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6308 */;
-import useCheckpointMusicDefault from "useCheckpointMusic" /* 12410 */;
-import useCheckpointStepAnalytics from "useCheckpointStepAnalytics" /* 12412 */;
-import useCheckpointForegroundTrackingDefault from "useCheckpointForegroundTracking" /* 12413 */;
-import CheckpointStepHeaderRefContext from "CheckpointStepHeaderRefContext" /* 12414 */;
-import CheckpointBackgroundDefault from "CheckpointBackground" /* 12415 */;
-import CheckpointUnavailableScreenDefault from "CheckpointUnavailableScreen" /* 12416 */;
-import CheckpointTextDefault from "CheckpointText" /* 12418 */;
-import CheckpointHeaderDefault from "CheckpointHeader" /* 12419 */;
+import Constants from "Constants" /* 1082 */;
+import intl3 from "intl" /* 1112 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
+import _modDef3341 from "module_3341" /* 3341 */;
+import native from "native" /* 4855 */;
+import HapticUtils from "HapticUtils" /* 5010 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6310 */;
+import useCheckpointMusicDefault from "useCheckpointMusic" /* 12380 */;
+import useCheckpointStepAnalytics from "useCheckpointStepAnalytics" /* 12382 */;
+import useCheckpointForegroundTrackingDefault from "useCheckpointForegroundTracking" /* 12383 */;
+import CheckpointStepHeaderRefContext from "CheckpointStepHeaderRefContext" /* 12384 */;
+import CheckpointBackgroundDefault from "CheckpointBackground" /* 12385 */;
+import CheckpointUnavailableScreenDefault from "CheckpointUnavailableScreen" /* 12386 */;
+import CheckpointTextDefault from "CheckpointText" /* 12388 */;
+import CheckpointHeaderDefault from "CheckpointHeader" /* 12389 */;
 import react_native from "react-native" /* 17 */;
-import CheckpointConstants from "CheckpointConstants" /* 5848 */;
+import CheckpointConstants from "CheckpointConstants" /* 5850 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let CHECKPOINT_CONTROL_SIZE;
@@ -75,7 +75,7 @@ export default function CheckpointUnavailableModal() {
   ThemeContextProvider = native.ThemeContextProvider;
   items = [metroRequire(CheckpointBackgroundDefault, {}), , , ];
   const obj5 = { children: metroRequire(tmp7, obj6) };
-  obj6 = { isStepHeading: true, variant: "heading-lg/medium", children: intl2.string(_modDef3339.IaTl5H) };
+  obj6 = { isStepHeading: true, variant: "heading-lg/medium", children: intl2.string(_modDef3341.IaTl5H) };
   const tmp6 = CheckpointUnavailableScreenDefault;
   tmp7 = CheckpointTextDefault;
   intl2 = intl3.intl;

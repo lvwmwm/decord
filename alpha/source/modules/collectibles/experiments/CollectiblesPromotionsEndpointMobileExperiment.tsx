@@ -1,11 +1,11 @@
 // Module ID: 8802
 // Function ID: 8803
 // Name: CollectiblesPromotionsEndpointMobileExperiment
-// Dependencies: [1452, 2]
+// Dependencies: [1450, 2]
 // Exports: useCollectiblesPromotionEndpointReferenceMobile
 
 // Module 8802 (CollectiblesPromotionsEndpointMobileExperiment)
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2026-10-collectibles-promotion-endpoint-reference-mobile", kind: "user", defaultConfig: { useEndpoint: false }, variations: { 0: { useEndpoint: false }, 1: { useEndpoint: true } } };

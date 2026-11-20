@@ -1,15 +1,15 @@
-// Module ID: 8555
-// Function ID: 8556
+// Module ID: 8554
+// Function ID: 8555
 // Name: MessageWithContent
-// Dependencies: [8556, 8551, 8558, 1113, 8776, 2]
+// Dependencies: [8555, 8550, 8557, 1112, 8776, 2]
 // Exports: generateMessageRowData
 
-// Module 8555 (MessageWithContent)
-import intl6 from "intl" /* 1113 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 8551 */;
-import createMessageContentDefault from "createMessageContent" /* 8558 */;
+// Module 8554 (MessageWithContent)
+import intl6 from "intl" /* 1112 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 8550 */;
+import createMessageContentDefault from "createMessageContent" /* 8557 */;
 import RowGeneratorUtilsDefault from "RowGeneratorUtils" /* 8776 */;
-import GuildAutomodMessageStore from "GuildAutomodMessageStore" /* 8556 */;
+import GuildAutomodMessageStore from "GuildAutomodMessageStore" /* 8555 */;
 import size from "module_2" /* 2 */;
 
 const RowType = RowGeneratorConstants.RowType;
@@ -74,9 +74,9 @@ export function generateMessageRowData(canShowImages, options, theme) {
     canReply = canShowImages.canReply;
   }
   tmp11 = options.enableSwipeActions && canShowImages.canEdit;
-  intl3 = tmp6(1113).intl;
-  intl4 = tmp6(1113).intl;
-  intl5 = tmp6(1113).intl;
+  intl3 = tmp6(1112).intl;
+  intl4 = tmp6(1112).intl;
+  intl5 = tmp6(1112).intl;
   forcedTheme = options.forcedTheme;
   return obj;
 }

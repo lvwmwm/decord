@@ -1,15 +1,15 @@
-// Module ID: 11663
-// Function ID: 11664
+// Module ID: 11605
+// Function ID: 11606
 // Name: AnnouncementChannelLurkerBar
-// Dependencies: [19, 17, 21, 4792, 575, 5383, 1113, 5390, 11664, 2]
+// Dependencies: [19, 17, 21, 4794, 575, 5385, 1112, 5392, 11606, 2]
 
-// Module 11663 (AnnouncementChannelLurkerBar)
+// Module 11605 (AnnouncementChannelLurkerBar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import showChannelFollowingActionSheet from "showChannelFollowingActionSheet" /* 11664 */;
+import showChannelFollowingActionSheet from "showChannelFollowingActionSheet" /* 11606 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -23,9 +23,9 @@ class AnnouncementChannelLurkerBar {
     channel = channel.channel;
     const tmp = closure_5();
     let obj = { style: tmp.wrapper, children: items };
-    const obj2 = { style: tmp.text, variant: "body-sm/medium", color: "mobile-text-heading-primary", children: intl.string(channel(1113).t.Hl0Mqh) };
-    const Text = channel(5383).Text;
-    intl = channel(1113).intl;
+    const obj2 = { style: tmp.text, variant: "body-sm/medium", color: "mobile-text-heading-primary", children: intl.string(channel(1112).t.Hl0Mqh) };
+    const Text = channel(5385).Text;
+    intl = channel(1112).intl;
     items = [closure_3(Text, obj2), ];
     const obj3 = {
       onPress: function handleFollowing() {
@@ -36,13 +36,13 @@ class AnnouncementChannelLurkerBar {
           const result = obj.showChannelFollowingActionSheet(id, guildId);
         }
       },
-      text: intl2.string(channel(1113).t["4z5PU1"]),
+      text: intl2.string(channel(1112).t["4z5PU1"]),
       size: "sm",
       variant: "secondary",
       grow: true
     };
-    const Button = channel(5390).Button;
-    intl2 = channel(1113).intl;
+    const Button = channel(5392).Button;
+    intl2 = channel(1112).intl;
     items[1] = closure_3(Button, obj3);
     return closure_4(View, obj);
   }

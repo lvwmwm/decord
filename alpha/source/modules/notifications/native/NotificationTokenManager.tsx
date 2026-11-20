@@ -1,27 +1,27 @@
-// Module ID: 15568
-// Function ID: 15569
+// Module ID: 15532
+// Function ID: 15533
 // Name: NotificationTokenManager
-// Dependencies: [17, 1246, 13193, 14808, 502, 15569, 1072, 2123, 1380, 15572, 572, 10799, 15575, 1242, 1113, 3051, 15576, 1256, 13192, 2]
+// Dependencies: [17, 1245, 13163, 14772, 502, 15533, 1071, 2121, 1378, 15536, 572, 10741, 15539, 1241, 1112, 3053, 15540, 1255, 13162, 2]
 
-// Module 15568 (NotificationTokenManager)
+// Module 15532 (NotificationTokenManager)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import Constants from "Constants" /* 1072 */;
-import intl32 from "intl" /* 1113 */;
-import SentryUtilsDefault from "SentryUtils" /* 1242 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
-import _modDef3051 from "module_3051" /* 3051 */;
-import PushNotificationDefault from "PushNotification" /* 10799 */;
-import PushNotificationActionCreatorsDefault from "PushNotificationActionCreators" /* 13192 */;
-import NotificationSettingsConstants from "NotificationSettingsConstants" /* 15569 */;
-import NotifSettingsUtilsDefault from "NotifSettingsUtils" /* 15575 */;
-import react_nativeDefault from "react-native" /* 15576 */;
-import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
-import MultiAccountStore from "MultiAccountStore" /* 13193 */;
-import MultiAccountSwitchStore from "MultiAccountSwitchStore" /* 14808 */;
+import Constants from "Constants" /* 1071 */;
+import intl32 from "intl" /* 1112 */;
+import SentryUtilsDefault from "SentryUtils" /* 1241 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
+import _modDef3053 from "module_3053" /* 3053 */;
+import PushNotificationDefault from "PushNotification" /* 10741 */;
+import PushNotificationActionCreatorsDefault from "PushNotificationActionCreators" /* 13162 */;
+import NotificationSettingsConstants from "NotificationSettingsConstants" /* 15533 */;
+import NotifSettingsUtilsDefault from "NotifSettingsUtils" /* 15539 */;
+import react_nativeDefault from "react-native" /* 15540 */;
+import ApexExperimentStore from "ApexExperimentStore" /* 1245 */;
+import MultiAccountStore from "MultiAccountStore" /* 13163 */;
+import MultiAccountSwitchStore from "MultiAccountSwitchStore" /* 14772 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import LifecycleManager from "LifecycleManager" /* 2123 */;
+import LifecycleManager from "LifecycleManager" /* 2121 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -108,10 +108,10 @@ class NotificationTokenManager extends LifecycleManager {
   }
   _initialize() {
     const self = this;
-    const obj = self(1380);
+    const obj = self(1378);
     const tmp = self;
     if (obj.isAndroid()) {
-      const tmpResult = tmp(15572);
+      const tmpResult = tmp(15536);
       self._denylistUnsubscribe = tmpResult.initializeClientNotifDenylist();
     }
     if (null != self.token) {
@@ -218,7 +218,7 @@ class NotificationTokenManager extends LifecycleManager {
     const registerNotificationCategories = NativeModules.DCDNotificationCategoryUtils.registerNotificationCategories;
     const registerNotificationCategoriesAndGroups = NativeModules.DCDNotificationCategoryUtils.registerNotificationCategoriesAndGroups;
     if (null != registerNotificationCategoriesAndGroups) {
-      const obj = { calls: intl.string(_modDef3051["IUH/Oe"]), mediaConnections: intl2.string(_modDef3051.VeBD1N), messages: intl3.string(_modDef3051["4qWUAO"]), directMessages: intl4.string(_modDef3051.NGdNZb), friendRequests: intl5.string(_modDef3051.NxgGZA), polls: intl6.string(_modDef3051.MOjygY), social: intl7.string(_modDef3051["UzRF+8"]), stageLive: intl8.string(_modDef3051["4n388K"]), guildEventLive: intl9.string(_modDef3051["40TIqW"]), guildHighlights: intl10.string(intl32.t.p5jg9S), forumThreadCreated: intl11.string(_modDef3051.HibKoy), systemMessages: intl12.string(_modDef3051.zJlwvV), other: intl13.string(_modDef3051.kIrLfg), default: intl14.string(_modDef3051["T+79Eo"]), reactions: intl15.string(intl32.t.gHp0C4) };
+      const obj = { calls: intl.string(_modDef3053["IUH/Oe"]), mediaConnections: intl2.string(_modDef3053.VeBD1N), messages: intl3.string(_modDef3053["4qWUAO"]), directMessages: intl4.string(_modDef3053.NGdNZb), friendRequests: intl5.string(_modDef3053.NxgGZA), polls: intl6.string(_modDef3053.MOjygY), social: intl7.string(_modDef3053["UzRF+8"]), stageLive: intl8.string(_modDef3053["4n388K"]), guildEventLive: intl9.string(_modDef3053["40TIqW"]), guildHighlights: intl10.string(intl32.t.p5jg9S), forumThreadCreated: intl11.string(_modDef3053.HibKoy), systemMessages: intl12.string(_modDef3053.zJlwvV), other: intl13.string(_modDef3053.kIrLfg), default: intl14.string(_modDef3053["T+79Eo"]), reactions: intl15.string(intl32.t.gHp0C4) };
       intl = intl32.intl;
       intl2 = intl32.intl;
       intl3 = intl32.intl;
@@ -234,7 +234,7 @@ class NotificationTokenManager extends LifecycleManager {
       intl13 = intl32.intl;
       intl14 = intl32.intl;
       intl15 = intl32.intl;
-      const obj2 = { realtime: intl16.string(_modDef3051.S5cB9e), social: intl17.string(_modDef3051["UzRF+8"]), server: intl18.string(_modDef3051.zRKbpz), other: intl19.string(_modDef3051.q5M7HV) };
+      const obj2 = { realtime: intl16.string(_modDef3053.S5cB9e), social: intl17.string(_modDef3053["UzRF+8"]), server: intl18.string(_modDef3053.zRKbpz), other: intl19.string(_modDef3053.q5M7HV) };
       intl16 = intl32.intl;
       intl17 = intl32.intl;
       intl18 = intl32.intl;
@@ -278,7 +278,7 @@ class NotificationTokenManager extends LifecycleManager {
             return hasItem;
           });
           const obj2 = { disabled_channels: found.map((channelId) => channelId.channelId) };
-          const track = tmp4(1256).track;
+          const track = tmp4(1255).track;
           const ANDROID_NOTIFICATION_CHANNELS_SYNCED = AnalyticEvents.ANDROID_NOTIFICATION_CHANNELS_SYNCED;
           AnalyticsUtilsDefault;
           track(ANDROID_NOTIFICATION_CHANNELS_SYNCED, obj2);

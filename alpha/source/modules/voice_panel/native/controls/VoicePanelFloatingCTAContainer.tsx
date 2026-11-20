@@ -1,24 +1,24 @@
-// Module ID: 19392
-// Function ID: 19393
+// Module ID: 19212
+// Function ID: 19213
 // Name: VoicePanelFloatingCTAContainer
-// Dependencies: [32, 19, 4641, 11688, 11691, 1083, 21, 12969, 575, 4792, 5808, 7592, 4853, 11687, 19277, 8961, 563, 19274, 19393, 1655, 13044, 9970, 5393, 11550, 2]
+// Dependencies: [32, 19, 4643, 11630, 11633, 1082, 21, 12939, 575, 4794, 5810, 7591, 4855, 11629, 19097, 8961, 563, 19094, 19213, 1653, 13014, 9973, 5395, 11492, 2]
 // Exports: getFloatingCTATotalViewHeight, renderVoicePanelFloatingCTA
 
-// Module 19392 (VoicePanelFloatingCTAContainer)
+// Module 19212 (VoicePanelFloatingCTAContainer)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1083 */;
-import native from "native" /* 4853 */;
-import Stack_Stack from "Stack/Stack" /* 5808 */;
-import RowButton2 from "RowButton" /* 7592 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11688 */;
-import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11691 */;
-import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 12969 */;
-import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 19274 */;
+import Constants from "Constants" /* 1082 */;
+import native from "native" /* 4855 */;
+import Stack_Stack from "Stack/Stack" /* 5810 */;
+import RowButton2 from "RowButton" /* 7591 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11630 */;
+import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11633 */;
+import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 12939 */;
+import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 19094 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import createStyles from "createStyles" /* 4792 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let rect;

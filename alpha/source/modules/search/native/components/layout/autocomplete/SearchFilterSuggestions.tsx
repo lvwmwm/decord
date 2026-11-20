@@ -1,25 +1,25 @@
-// Module ID: 18764
-// Function ID: 18765
+// Module ID: 18588
+// Function ID: 18589
 // Name: SearchFilterSuggestions
-// Dependencies: [32, 19, 17, 8456, 21, 4792, 575, 18765, 6926, 5383, 1655, 5393, 5394, 4853, 1708, 18759, 18768, 13107, 2]
+// Dependencies: [32, 19, 17, 8455, 21, 4794, 575, 18589, 6925, 5385, 1653, 5395, 5396, 4855, 1706, 18583, 18592, 13077, 2]
 
-// Module 18764 (SearchFilterSuggestions)
+// Module 18588 (SearchFilterSuggestions)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 4853 */;
-import TrackingConstants from "TrackingConstants" /* 8456 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 13107 */;
-import SearchFilterUtils from "SearchFilterUtils" /* 18765 */;
+import native from "native" /* 4855 */;
+import TrackingConstants from "TrackingConstants" /* 8455 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 13077 */;
+import SearchFilterUtils from "SearchFilterUtils" /* 18589 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, set, token;
 
 let obj2;
-const f117106 = (text) => text.text;
+const f115258 = (text) => text.text;
 function SearchFilterPrefixRow(text) {
   text = text.text;
   const require = text;
@@ -50,7 +50,7 @@ function SearchFilterPrefixRow(text) {
   return <TableRow icon={memo} onPress={callback} label={null} subLabel={memo1} />;
 }
 function getSuggestionsKey(arr) {
-  const mapped = arr.map(f117106);
+  const mapped = arr.map(f115258);
   return mapped.join(" ");
 }
 function AnimatedEnterExitContainer(state) {
@@ -68,18 +68,18 @@ function AnimatedEnterExitContainer(state) {
   state = state.state;
   ({ children, cleanUp } = state);
   let tmp = dependencyMap;
-  let obj = state(1655);
+  let obj = state(1653);
   const sharedValue = obj.useSharedValue(0);
-  const tmp3 = state(1655);
+  const tmp3 = state(1653);
   let items = [closure_12, , , , , , , , ];
   const useAnimatedStyle = tmp3.useAnimatedStyle;
-  items[1] = state(5393).withSpring;
+  items[1] = state(5395).withSpring;
   items[2] = sharedValue;
-  items[3] = state(5394).springStandard;
+  items[3] = state(5396).springStandard;
   items[4] = closure_11;
   items[5] = state;
-  items[6] = state(4853).TransitionStates;
-  items[7] = state(1708).scheduleOnRN;
+  items[6] = state(4855).TransitionStates;
+  items[7] = state(1706).scheduleOnRN;
   items[8] = cleanUp;
   let c0;
   let c1;
@@ -152,7 +152,7 @@ function AnimatedEnterExitContainer(state) {
     }
     const result = set(num);
   }, items2);
-  return jsx(sharedValue(1655).View, { style, children });
+  return jsx(sharedValue(1653).View, { style, children });
 }
 const View = react_native.View;
 const SearchFilterAddLocations = TrackingConstants.SearchFilterAddLocations;
@@ -183,12 +183,12 @@ const memoResult = react.memo(function SearchFilterSuggestions(searchContext) {
   let tmp = memo();
   dependencyMap = tmp;
   let tmp2 = searchContext;
-  let obj = searchContext(18759);
+  let obj = searchContext(18583);
   const searchSuggestionsContext = obj.useSearchSuggestionsContext();
   const suggestionsRef = searchSuggestionsContext.suggestionsRef;
   const suggestionsMounted = searchSuggestionsContext.suggestionsMounted;
   const dismissed = searchSuggestionsContext.dismissed;
-  let obj2 = searchContext(18768);
+  let obj2 = searchContext(18592);
   const validFilterTokens = obj2.useValidFilterTokens(searchContext);
   const tmp6 = suggestionsRef(suggestionsMounted.useState([]), 2);
   const first = tmp6[0];
@@ -222,10 +222,10 @@ const memoResult = react.memo(function SearchFilterSuggestions(searchContext) {
               }
             });
             closure_7((arr) => {
-              const mapped = arr.map(f117106);
+              const mapped = arr.map(f115258);
               let tmp2 = closure_1;
               const joined = mapped.join(" ");
-              const mapped1 = closure_1.map(f117106);
+              const mapped1 = closure_1.map(f115258);
               if (joined === mapped1.join(" ")) {
                 tmp2 = arr;
               }
@@ -242,7 +242,7 @@ const memoResult = react.memo(function SearchFilterSuggestions(searchContext) {
   let items1 = [closure_15, dismissed];
   let c0;
   [tmp11, tmp12] = items1;
-  const tmp10 = searchContext(1655);
+  const tmp10 = searchContext(1653);
   class SearchFilterSuggestionsTsx3 {
     constructor() {
       return _undefined.get();
@@ -254,7 +254,7 @@ const memoResult = react.memo(function SearchFilterSuggestions(searchContext) {
   SearchFilterSuggestionsTsx3.__initData = tmp11;
   const items3 = [closure_16, , , ];
   const useAnimatedReaction = tmp10.useAnimatedReaction;
-  items3[1] = tmp2(1708).scheduleOnRN;
+  items3[1] = tmp2(1706).scheduleOnRN;
   items3[2] = tmp6[1];
   items3[3] = closure_14;
   c0 = undefined;
@@ -308,7 +308,7 @@ const memoResult = react.memo(function SearchFilterSuggestions(searchContext) {
     });
     return <AnimatedEnterExitContainer key={arg0} state={arg2} cleanUp={arg3}>{null}</AnimatedEnterExitContainer>;
   }, items8);
-  return jsx(tmp2(4853).TransitionGroup, { items: memo1, renderItem: callback, getItemKey: getSuggestionsKey });
+  return jsx(tmp2(4855).TransitionGroup, { items: memo1, renderItem: callback, getItemKey: getSuggestionsKey });
 });
 let result = size.fileFinishedImporting("modules/search/native/components/layout/autocomplete/SearchFilterSuggestions.tsx");
 

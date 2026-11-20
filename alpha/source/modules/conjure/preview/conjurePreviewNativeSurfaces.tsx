@@ -1,13 +1,13 @@
-// Module ID: 14643
-// Function ID: 14644
+// Module ID: 14611
+// Function ID: 14612
 // Name: conjurePreviewNativeSurfaces
-// Dependencies: [6502, 1072, 14644, 14271, 14648, 6796, 2]
+// Dependencies: [6504, 1071, 14612, 12181, 12179, 6796, 2]
 // Exports: beginNativeSurfaceSessionForFrame, holdPreviewGameCaptureAnswers
 
-// Module 14643 (conjurePreviewNativeSurfaces)
-import Constants from "Constants" /* 1072 */;
+// Module 14611 (conjurePreviewNativeSurfaces)
+import Constants from "Constants" /* 1071 */;
 import RpcCommandInterception from "RpcCommandInterception" /* 6796 */;
-import FramesStore from "FramesStore" /* 6502 */;
+import FramesStore from "FramesStore" /* 6504 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -96,7 +96,7 @@ function answerFor(cmd) {
                       return conjureDevicePermissionStatus;
                     })
           };
-          prop = tmp9(14271).CONJURE_DEVICE_PERMISSION_NAMES;
+          prop = tmp9(12181).CONJURE_DEVICE_PERMISSION_NAMES;
         }
         tmp8 = obj3;
       }
@@ -215,15 +215,15 @@ let obj = {
   },
   [RPCCommands.REQUEST_DEVICE_PERMISSIONS]: (args) => {
     let found;
-    const f107871 = (permission) => ({ permission, state: "denied" });
+    const f106197 = (permission) => ({ permission, state: "denied" });
     if (Array.isArray(args.args.permissions)) {
       const permissions = args.args.permissions;
       found = permissions.filter((item) => typeof item === "string");
     } else {
       found = [];
     }
-    obj = { result: { permissions: found.map(f107871) }, answered: "denied; an agent may not grant device access", options: found };
-    ({ permissions: found.map(f107871) });
+    obj = { result: { permissions: found.map(f106197) }, answered: "denied; an agent may not grant device access", options: found };
+    ({ permissions: found.map(f106197) });
     return obj;
   },
   [RPCCommands.CAPTURE_SCREEN]: () => ({ result: { status: "permission_denied" }, answered: "denied; an agent may not capture the screen" }),
@@ -244,8 +244,8 @@ let obj = {
   [RPCCommands.HIDE_TOOLTIP]: () => ({ result: { hidden: true }, answered: "hidden" }),
   [RPCCommands.OPEN_MEDIA_VIEWER]: () => ({ result: { opened: true }, answered: "opened" }),
   [RPCCommands.SHOW_TOAST]: () => ({ result: { shown: true }, answered: "shown" }),
-  [RPCCommands.OPEN_INVITE_DIALOG]: () => ({ result: "channel_id", answered: "jsxs" }),
-  [RPCCommands.OPEN_SHARE_MOMENT_DIALOG]: () => ({ result: "channel_id", answered: "jsxs" })
+  [RPCCommands.OPEN_INVITE_DIALOG]: () => ({ result: "channel_id", answered: 1245 }),
+  [RPCCommands.OPEN_SHARE_MOMENT_DIALOG]: () => ({ result: "channel_id", answered: 1245 })
 };
 let closure_7 = {
   drain() {

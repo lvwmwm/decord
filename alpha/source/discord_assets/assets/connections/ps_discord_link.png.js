@@ -1,8 +1,8 @@
-// Module ID: 7080
-// Function ID: 7081
+// Module ID: 7079
+// Function ID: 7080
 // Dependencies: [2]
 
-// Module 7080
+// Module 7079
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/connections/ps_discord_link.png.js");

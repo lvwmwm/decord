@@ -1,32 +1,32 @@
-// Module ID: 9896
-// Function ID: 9897
+// Module ID: 9899
+// Function ID: 9900
 // Name: MediaModal
-// Dependencies: [19, 17, 9897, 2120, 1072, 21, 8099, 9898, 8101, 504, 1380, 8104, 9903, 9906, 9908, 9134, 2020, 9311, 5008, 5009, 5006, 9909, 2121, 10020, 8102, 10514, 10516, 10521, 10526, 10527, 2]
+// Dependencies: [19, 17, 9900, 2118, 1071, 21, 8098, 9901, 8100, 504, 1378, 8103, 9906, 9909, 9911, 9134, 2018, 9311, 5010, 5011, 5008, 9912, 2119, 10023, 8101, 10456, 10458, 10463, 10468, 10469, 2]
 // Exports: default
 
-// Module 9896 (MediaModal)
+// Module 9899 (MediaModal)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1072 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
-import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
-import HapticUtils from "HapticUtils" /* 5008 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5009 */;
-import useVideoControls from "useVideoControls" /* 8101 */;
-import MediaSourceUtil from "MediaSourceUtil" /* 8104 */;
+import Constants from "Constants" /* 1071 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
+import asyncRequire from "asyncRequire" /* 2119 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5008 */;
+import HapticUtils from "HapticUtils" /* 5010 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5011 */;
+import useVideoControls from "useVideoControls" /* 8100 */;
+import MediaSourceUtil from "MediaSourceUtil" /* 8103 */;
 import common_Video from "common/Video" /* 9134 */;
-import MediaModalPortal from "MediaModalPortal" /* 9903 */;
-import MediaModalTiktok from "MediaModalTiktok" /* 9906 */;
-import MediaModalWebVideoFile from "MediaModalWebVideoFile" /* 9908 */;
-import MediaModalOverlayDefault from "MediaModalOverlay" /* 10020 */;
-import MediaModalYoutubeDefault from "MediaModalYoutube" /* 10514 */;
-import MediaModalWebEmbedDefault from "MediaModalWebEmbed" /* 10516 */;
-import MediaModalVideoDefault from "MediaModalVideo" /* 10521 */;
-import MediaModalImageDefault from "MediaModalImage" /* 10526 */;
+import MediaModalPortal from "MediaModalPortal" /* 9906 */;
+import MediaModalTiktok from "MediaModalTiktok" /* 9909 */;
+import MediaModalWebVideoFile from "MediaModalWebVideoFile" /* 9911 */;
+import MediaModalOverlayDefault from "MediaModalOverlay" /* 10023 */;
+import MediaModalYoutubeDefault from "MediaModalYoutube" /* 10456 */;
+import MediaModalWebEmbedDefault from "MediaModalWebEmbed" /* 10458 */;
+import MediaModalVideoDefault from "MediaModalVideo" /* 10463 */;
+import MediaModalImageDefault from "MediaModalImage" /* 10468 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AppFreezeStore from "AppFreezeStore" /* 9897 */;
-import AppStateStore from "AppStateStore" /* 2120 */;
+import AppFreezeStore from "AppFreezeStore" /* 9900 */;
+import AppStateStore from "AppStateStore" /* 2118 */;
 import size_mod from "module_2" /* 2 */;
 
 const MediaModalPortalDefault = MediaModalPortal;
@@ -152,7 +152,7 @@ export default function MediaModal(initialIndex) {
         portalControls = tmpResult5.createWebFileVideoControls();
       } else {
         const tmpResult6 = common_Video;
-        portalControls = tmpResult6.createVideoControls(tmp(8101).setPausedState);
+        portalControls = tmpResult6.createVideoControls(tmp(8100).setPausedState);
       }
       tmp5.current[combined] = portalControls;
       return portalControls;
@@ -210,7 +210,7 @@ export default function MediaModal(initialIndex) {
         const result = tmp2Result.triggerHapticFeedback(haptics_HapticFeedbackTypesDefault.IMPACT_LIGHT);
         const obj2 = { source: selectedMediaSource, disableDownload, shareable: tmp };
         const obj3 = ActionSheetActionCreatorsDefault;
-        obj3.openLazy(asyncRequire(9909, tmp3.paths), "MediaShareActionSheet", obj2);
+        obj3.openLazy(asyncRequire(9912, tmp3.paths), "MediaShareActionSheet", obj2);
       }
     }
   }, items5);

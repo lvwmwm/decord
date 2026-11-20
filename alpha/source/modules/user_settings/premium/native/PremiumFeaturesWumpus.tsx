@@ -1,16 +1,16 @@
 // Module ID: 9377
 // Function ID: 9378
 // Name: PremiumFeaturesWumpus
-// Dependencies: [19, 1390, 21, 4792, 7254, 9007, 9378, 9379, 9380, 9381, 9009, 5479, 2]
+// Dependencies: [19, 1388, 21, 4794, 7253, 9007, 9378, 9379, 9380, 9381, 9009, 5481, 2]
 // Exports: default
 
 // Module 9377 (PremiumFeaturesWumpus)
-import PremiumConstants from "PremiumConstants" /* 1390 */;
+import PremiumConstants from "PremiumConstants" /* 1388 */;
 import AssetRegistryDefault from "AssetRegistry" /* 9007 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 9009 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -34,7 +34,7 @@ export default function PremiumFeaturesWumpus(premiumType) {
   let wumpusImageSource;
   premiumType = premiumType.premiumType;
   const tmp = closure_7();
-  const tmp2 = premiumType(7254)();
+  const tmp2 = premiumType(7253)();
   dependencyMap = tmp2;
   const items = [premiumType, tmp2];
   const memo = react.useMemo(() => {
@@ -58,10 +58,10 @@ export default function PremiumFeaturesWumpus(premiumType) {
   ({ wumpusImageSource, cloudsImageSource } = memo);
   let tmp4 = closure_6;
   let obj = { style: tmp.clouds, resizeMode: "contain", source: cloudsImageSource };
-  const items1 = [closure_4(premiumType(5479), obj), ];
+  const items1 = [closure_4(premiumType(5481), obj), ];
   const items2 = [tmp.wumpus, ];
   let wumpusLeft = premiumType === PremiumTypes.TIER_0;
-  const tmp7 = premiumType(5479);
+  const tmp7 = premiumType(5481);
   const tmp5 = closure_5;
   const tmp6 = closure_4;
   if (wumpusLeft) {

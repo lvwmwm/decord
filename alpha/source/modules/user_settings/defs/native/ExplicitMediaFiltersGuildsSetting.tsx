@@ -1,19 +1,19 @@
-// Module ID: 16045
-// Function ID: 16046
+// Module ID: 16009
+// Function ID: 16010
 // Name: ExplicitMediaFiltersGuildsSetting
-// Dependencies: [8593, 10069, 16031, 16040, 8329, 8112, 1113, 16041, 1196, 11875, 2]
+// Dependencies: [8592, 10072, 15995, 16004, 8328, 8111, 1112, 16005, 1195, 11817, 2]
 
-// Module 16045 (ExplicitMediaFiltersGuildsSetting)
-import intl4 from "intl" /* 1113 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
-import SensitiveMediaExplicitRedactionSettingsUtils from "SensitiveMediaExplicitRedactionSettingsUtils" /* 8112 */;
-import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8329 */;
-import SettingsConstants from "SettingsConstants" /* 8593 */;
-import useUserIsTeen from "useUserIsTeen" /* 10069 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 16031 */;
-import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 16040 */;
-import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 16041 */;
-import SettingBuilders from "SettingBuilders" /* 11875 */;
+// Module 16009 (ExplicitMediaFiltersGuildsSetting)
+import intl4 from "intl" /* 1112 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1195 */;
+import SensitiveMediaExplicitRedactionSettingsUtils from "SensitiveMediaExplicitRedactionSettingsUtils" /* 8111 */;
+import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8328 */;
+import SettingsConstants from "SettingsConstants" /* 8592 */;
+import useUserIsTeen from "useUserIsTeen" /* 10072 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 15995 */;
+import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 16004 */;
+import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 16005 */;
+import SettingBuilders from "SettingBuilders" /* 11817 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

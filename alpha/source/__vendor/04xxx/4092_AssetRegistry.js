@@ -1,10 +1,10 @@
 // Module ID: 4092
 // Function ID: 4093
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 4092 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9jdXN0b21fdHlwaW5nX2luZGljYXRvci9pbnRs", scales: [1], hash: "abb367604ff11a4dde180a721067445e", name: "bg.messages.abb367604ff11a4dde180a721067445e.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/conjure/intl", scales: [1], hash: "079b18e700d32b63022d072957a0f924", name: "ConjureUntranslated.compiled.messages", type: "jsona" });

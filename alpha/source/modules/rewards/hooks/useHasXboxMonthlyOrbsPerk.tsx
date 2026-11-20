@@ -1,15 +1,15 @@
-// Module ID: 14920
-// Function ID: 14921
+// Module ID: 14884
+// Function ID: 14885
 // Name: useHasXboxMonthlyOrbsPerk
-// Dependencies: [1388, 1390, 2174, 1394, 1401, 504, 2]
+// Dependencies: [1386, 1388, 2172, 1392, 1399, 504, 2]
 // Exports: hasCrepeMonthlyOrbsPerk, useHasXboxMonthlyOrbsPerk
 
-// Module 14920 (useHasXboxMonthlyOrbsPerk)
+// Module 14884 (useHasXboxMonthlyOrbsPerk)
 import get_initialized from "get initialized" /* 504 */;
-import PremiumConstants from "PremiumConstants" /* 1390 */;
-import PerksStateUtils from "PerksStateUtils" /* 1394 */;
-import PremiumUtils from "PremiumUtils" /* 2174 */;
-import UserStore from "UserStore" /* 1388 */;
+import PremiumConstants from "PremiumConstants" /* 1388 */;
+import PerksStateUtils from "PerksStateUtils" /* 1392 */;
+import PremiumUtils from "PremiumUtils" /* 2172 */;
+import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 
 const PremiumUtilsDefault = PremiumUtils;
@@ -33,8 +33,8 @@ export function hasCrepeMonthlyOrbsPerk(currentUser) {
     if (currentUser != null) {
       perks = currentUser.perks;
     }
-    const perkSource = getPerkSource(perks, tmp4(1401).Perk.MONTHLY_ORBS);
-    const hasItem = null != perkSource && perkSource.includes(tmp4(1401).PerkSource.SOURCE_THIRDPARTY_CROISSANT);
+    const perkSource = getPerkSource(perks, tmp4(1399).Perk.MONTHLY_ORBS);
+    const hasItem = null != perkSource && perkSource.includes(tmp4(1399).PerkSource.SOURCE_THIRDPARTY_CROISSANT);
     return hasItem;
   }
   return false;
@@ -61,8 +61,8 @@ export function useHasXboxMonthlyOrbsPerk() {
       if (stateFromStores != null) {
         perks = stateFromStores.perks;
       }
-      const perkSource = getPerkSource(perks, tmp(1401).Perk.MONTHLY_ORBS);
-      const hasItem = null != perkSource && perkSource.includes(tmp(1401).PerkSource.SOURCE_THIRDPARTY_CROISSANT);
+      const perkSource = getPerkSource(perks, tmp(1399).Perk.MONTHLY_ORBS);
+      const hasItem = null != perkSource && perkSource.includes(tmp(1399).PerkSource.SOURCE_THIRDPARTY_CROISSANT);
       flag2 = hasItem;
     } else {
       flag2 = false;

@@ -1,12 +1,12 @@
-// Module ID: 15664
-// Function ID: 15665
+// Module ID: 15628
+// Function ID: 15629
 // Name: isConjureAppChannelFrame
-// Dependencies: [5436, 6824, 6511, 2]
+// Dependencies: [5438, 6824, 6513, 2]
 // Exports: default
 
-// Module 15664 (isConjureAppChannelFrame)
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5436 */;
-import isConjureApplicationDefault from "isConjureApplication" /* 6511 */;
+// Module 15628 (isConjureAppChannelFrame)
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5438 */;
+import isConjureApplicationDefault from "isConjureApplication" /* 6513 */;
 import size from "module_2" /* 2 */;
 
 let tmp;

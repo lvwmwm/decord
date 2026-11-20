@@ -1,31 +1,31 @@
 // Module ID: 9624
 // Function ID: 9625
 // Name: GuildProfileActionSheet
-// Dependencies: [19, 17, 1072, 21, 4792, 575, 5001, 5356, 8030, 671, 9625, 13726, 13720, 5020, 5347, 5024, 5355, 2]
+// Dependencies: [19, 17, 1071, 21, 4794, 575, 5003, 5358, 8029, 671, 9625, 13695, 13689, 5022, 5349, 5026, 5357, 2]
 // Exports: default
 
 // Module 9624 (GuildProfileActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
-import Constants from "Constants" /* 1072 */;
-import useThemeDefault from "useTheme" /* 5001 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5020 */;
-import BottomSheetModal from "BottomSheetModal" /* 5024 */;
-import LinearGradientDefault from "LinearGradient" /* 5347 */;
-import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 5355 */;
+import Constants from "Constants" /* 1071 */;
+import useThemeDefault from "useTheme" /* 5003 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5022 */;
+import BottomSheetModal from "BottomSheetModal" /* 5026 */;
+import LinearGradientDefault from "LinearGradient" /* 5349 */;
+import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 5357 */;
 import GuildProfileSheetBodyDefault from "GuildProfileSheetBody" /* 9625 */;
-import GuildProfileCTADefault from "GuildProfileCTA" /* 13726 */;
+import GuildProfileCTADefault from "GuildProfileCTA" /* 13695 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp4;
-const GuildProfileCreateTagUpsellDefault = tmp4(13720);
+const GuildProfileCreateTagUpsellDefault = tmp4(13689);
 let react = react_mod;
 const View = react_native.View;
 const VerticalGradient = Constants.VerticalGradient;
@@ -49,12 +49,12 @@ export default function GuildProfileActionSheet(guildId) {
   let colors;
   react = colors();
   let tmp = useThemeDefault();
-  let obj = guildId(5356);
+  let obj = guildId(5358);
   const backgroundColor = obj.useToken(nativeDefault.colors.INTERACTIVE_TEXT_HOVER, tmp);
-  let obj2 = guildId(8030);
+  let obj2 = guildId(8029);
   const bottomSheetRef = obj2.useBottomSheetRef();
   ({ bottomSheetRef: c5, bottomSheetClose } = bottomSheetRef);
-  let obj3 = guildId(5356);
+  let obj3 = guildId(5358);
   const token = obj3.useToken(nativeDefault.colors.BACKGROUND_BASE_LOW);
   let items = [token];
   colors = react.useMemo(() => {

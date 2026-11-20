@@ -1,12 +1,12 @@
 // Module ID: 9413
 // Function ID: 9414
 // Name: usePanGestureProxy
-// Dependencies: [19, 5052, 9414]
+// Dependencies: [19, 5054, 9414]
 // Exports: usePanGestureProxy
 
 // Module 9413 (usePanGestureProxy)
 import react from "react" /* 19 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5052 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5054 */;
 
 const useMemo = react.useMemo;
 let closure_3 = { code: "(function pnpm_usePanGestureProxyTs1(e){let[userDefinedConflictGestures]=this.__closure;if(userDefinedConflictGestures.onBegin)userDefinedConflictGestures.onBegin(e);})" };
@@ -47,7 +47,7 @@ export const usePanGestureProxy = (onConfigurePanGesture) => {
     const Gesture = LegacyBaseButton.Gesture;
     const PanResult = Gesture.Pan();
     const withTestIdResult = PanResult.withTestId("rnrc-gesture-handler");
-    let obj = { onBegin: "ind", onStart: "channel_id", onUpdate: "__packager_asset", onEnd: "format", onFinalize: "ip" };
+    let obj = { onBegin: "Array", onStart: "channel_id", onUpdate: "__closure", onEnd: "user", onFinalize: "HermesInternal" };
     withTestIdResult.onBegin = (onBegin) => {
       obj.onBegin = onBegin;
       return withTestIdResult;

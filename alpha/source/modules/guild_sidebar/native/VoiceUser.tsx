@@ -1,18 +1,18 @@
-// Module ID: 17691
-// Function ID: 17692
+// Module ID: 17518
+// Function ID: 17519
 // Name: VoiceUser
-// Dependencies: [19, 4640, 6279, 502, 2133, 5535, 5440, 21, 504, 17692, 2]
+// Dependencies: [19, 4642, 6281, 502, 2131, 5537, 5442, 21, 504, 17519, 2]
 // Exports: default
 
-// Module 17691 (VoiceUser)
+// Module 17518 (VoiceUser)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4640 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6279 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4642 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6281 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaEngineStore from "MediaEngineStore" /* 2133 */;
-import SessionsStore from "SessionsStore" /* 5535 */;
-import VoiceStateStore from "VoiceStateStore" /* 5440 */;
+import MediaEngineStore from "MediaEngineStore" /* 2131 */;
+import SessionsStore from "SessionsStore" /* 5537 */;
+import VoiceStateStore from "VoiceStateStore" /* 5442 */;
 import size from "module_2" /* 2 */;
 
 let userIds;

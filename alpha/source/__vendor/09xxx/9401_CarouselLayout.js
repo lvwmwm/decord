@@ -1,12 +1,12 @@
 // Module ID: 9401
 // Function ID: 9402
 // Name: CarouselLayout
-// Dependencies: [19, 17, 21, 9400, 9395, 9402, 1655, 9407, 9408, 9393, 9411, 5052, 9412, 9415]
+// Dependencies: [19, 17, 21, 9400, 9395, 9402, 1653, 9407, 9408, 9393, 9411, 5054, 9412, 9415]
 
 // Module 9401 (CarouselLayout)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import _mod1655 from "module_1655" /* 1655 */;
+import _mod1653 from "module_1653" /* 1653 */;
 import convertToSharedIndex from "convertToSharedIndex" /* 9393 */;
 import react from "react" /* 19 */;
 
@@ -114,13 +114,13 @@ const forwardRefResult = react.forwardRef((arg0, ref) => {
     fixedDirection,
     duration: scrollAnimationDuration,
     onScrollEnd() {
-      const obj = _mod1655;
+      const obj = _mod1653;
       return obj.runOnJS(callback)();
     },
     onScrollStart() {
       let tmp2 = onScrollStart;
       if (tmp2) {
-        const obj = _mod1655;
+        const obj = _mod1653;
         tmp2 = obj.runOnJS(tmp)();
       }
       return tmp2;

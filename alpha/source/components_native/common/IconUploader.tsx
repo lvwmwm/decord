@@ -1,22 +1,22 @@
-// Module ID: 10479
-// Function ID: 10480
+// Module ID: 10421
+// Function ID: 10422
 // Name: IconUploader
-// Dependencies: [5, 19, 17, 1072, 21, 4792, 8355, 7203, 1414, 5479, 10480, 6911, 1113, 2]
+// Dependencies: [5, 19, 17, 1071, 21, 4794, 8354, 7202, 1412, 5481, 10422, 6910, 1112, 2]
 // Exports: default
 
-// Module 10479 (IconUploader)
+// Module 10421 (IconUploader)
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1072 */;
-import intl2 from "intl" /* 1113 */;
-import AvatarUtils from "AvatarUtils" /* 1414 */;
-import FastImageDefault from "FastImage" /* 5479 */;
-import Pressables from "Pressables" /* 6911 */;
-import GuildIcon from "GuildIcon" /* 7203 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10480 */;
+import Constants from "Constants" /* 1071 */;
+import intl2 from "intl" /* 1112 */;
+import AvatarUtils from "AvatarUtils" /* 1412 */;
+import FastImageDefault from "FastImage" /* 5481 */;
+import Pressables from "Pressables" /* 6910 */;
+import GuildIcon from "GuildIcon" /* 7202 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10422 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const GuildIconDefault = GuildIcon;
@@ -71,7 +71,7 @@ export default function IconUploader(disabled) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -118,7 +118,7 @@ export default function IconUploader(disabled) {
             closure_129_2.current = false;
           }
           c3 = 3;
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp21) {
           c3 = 3;
           throw tmp21;

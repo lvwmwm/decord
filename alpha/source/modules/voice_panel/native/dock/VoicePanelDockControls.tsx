@@ -1,31 +1,31 @@
-// Module ID: 18060
-// Function ID: 18061
+// Module ID: 17887
+// Function ID: 17888
 // Name: VoicePanelDockControls
-// Dependencies: [19, 17, 4641, 2133, 6374, 11706, 1072, 21, 4792, 575, 504, 10947, 10923, 5356, 5008, 7472, 1113, 9562, 10948, 6408, 8496, 13328, 11687, 18057, 18061, 18081, 18084, 2]
+// Dependencies: [19, 17, 4643, 2131, 6376, 11648, 1071, 21, 4794, 575, 504, 10889, 10865, 5358, 5010, 7471, 1112, 9562, 10890, 6410, 8495, 13298, 11629, 17884, 17888, 17908, 17911, 2]
 
-// Module 18060 (VoicePanelDockControls)
+// Module 17887 (VoicePanelDockControls)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import native from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import intl2 from "intl" /* 1113 */;
-import HapticUtils from "HapticUtils" /* 5008 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6408 */;
-import IconButton2 from "IconButton" /* 7472 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8496 */;
-import VoiceActionUtils from "VoiceActionUtils" /* 10947 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11687 */;
-import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11706 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13328 */;
-import useDockBoxShadowDefault from "useDockBoxShadow" /* 18057 */;
-import useSoundboardConfig from "useSoundboardConfig" /* 18061 */;
-import VoicePanelDockButtonRimDefault from "VoicePanelDockButtonRim" /* 18084 */;
+import Constants from "Constants" /* 1071 */;
+import intl2 from "intl" /* 1112 */;
+import HapticUtils from "HapticUtils" /* 5010 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6410 */;
+import IconButton2 from "IconButton" /* 7471 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8495 */;
+import VoiceActionUtils from "VoiceActionUtils" /* 10889 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11629 */;
+import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11648 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13298 */;
+import useDockBoxShadowDefault from "useDockBoxShadow" /* 17884 */;
+import useSoundboardConfig from "useSoundboardConfig" /* 17888 */;
+import VoicePanelDockButtonRimDefault from "VoicePanelDockButtonRim" /* 17911 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import MediaEngineStore from "MediaEngineStore" /* 2133 */;
-import VoicePanelStore from "VoicePanelStore" /* 6374 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import MediaEngineStore from "MediaEngineStore" /* 2131 */;
+import VoicePanelStore from "VoicePanelStore" /* 6376 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const nativeDefault = native;
@@ -60,7 +60,7 @@ function DockMuteButton(channelId) {
     if (!tmp4) {
       const triggerHapticFeedback = HapticUtils.triggerHapticFeedback;
       HapticUtils;
-      const HapticFeedbackTypes = tmp2(5008).HapticFeedbackTypes;
+      const HapticFeedbackTypes = tmp2(5010).HapticFeedbackTypes;
       const result = triggerHapticFeedback(mute ? HapticFeedbackTypes.TOGGLE_ON : HapticFeedbackTypes.TOGGLE_OFF);
     }
     onPress();
@@ -94,9 +94,9 @@ function DockHangUpButton(channelId) {
     const state = VoicePanelStore.getState();
     state.closeChannel(channelId);
   }, items);
-  let obj = { accessibilityLabel: intl.string(channelId(1113).t["6vrfgt"]), variant: "critical-primary", size: "sm", icon: AssetRegistryDefault, onPress: callback };
-  const IconButton = channelId(7472).IconButton;
-  intl = channelId(1113).intl;
+  let obj = { accessibilityLabel: intl.string(channelId(1112).t["6vrfgt"]), variant: "critical-primary", size: "sm", icon: AssetRegistryDefault, onPress: callback };
+  const IconButton = channelId(7471).IconButton;
+  intl = channelId(1112).intl;
   return closure_9(IconButton, obj);
 }
 function DockSoundboardButton(arg0) {
@@ -140,7 +140,7 @@ const memoResult = react.memo(function VoicePanelDockControls(measureGlowOffset)
   const tmp8 = authStore;
   if (obj.useStateFromStores(items, () => mode.getMode() === constants.PUSH_TO_TALK)) {
     const obj3 = { measureGlowOffset };
-    tmp10Result = tmp10(tmp2(18081), obj3);
+    tmp10Result = tmp10(tmp2(17908), obj3);
     tmp14 = tmp10;
   } else {
     const obj4 = { measureGlowOffset, hideWhilePressed: true, style: items1, children: React4(DockMuteButton, obj6) };

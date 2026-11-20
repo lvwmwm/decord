@@ -1,21 +1,21 @@
-// Module ID: 20124
-// Function ID: 20125
+// Module ID: 19944
+// Function ID: 19945
 // Name: AdvancedInstantInvite
-// Dependencies: [19, 17, 4734, 1388, 21, 4792, 7517, 5408, 20125, 7937, 20126, 5006, 20127, 2121, 18439, 1113, 7203, 6938, 5808, 575, 7229, 6926, 7437, 1406, 7160, 2]
+// Dependencies: [19, 17, 4736, 1386, 21, 4794, 7516, 5410, 19945, 7936, 19946, 5008, 19947, 2119, 18224, 1112, 7202, 6937, 5810, 575, 7228, 6925, 7436, 1404, 7159, 2]
 // Exports: default
 
-// Module 20124 (AdvancedInstantInvite)
+// Module 19944 (AdvancedInstantInvite)
 import react_native from "react-native" /* 17 */;
-import intl13 from "intl" /* 1113 */;
-import FlagUtils from "FlagUtils" /* 1406 */;
-import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
-import GuildInviteFlags from "GuildInviteFlags" /* 7160 */;
+import intl13 from "intl" /* 1112 */;
+import FlagUtils from "FlagUtils" /* 1404 */;
+import asyncRequire from "asyncRequire" /* 2119 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5008 */;
+import GuildInviteFlags from "GuildInviteFlags" /* 7159 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4734 */;
-import UserStore from "UserStore" /* 1388 */;
+import RelationshipStore from "RelationshipStore" /* 4736 */;
+import UserStore from "UserStore" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -69,7 +69,7 @@ export default function AdvancedInstantInvite(maxAge) {
   let tmp29;
   let tmp33Result;
   let tmp33Result5;
-  const f120867 = (value) => value.value === maxUses;
+  const f119005 = (value) => value.value === maxUses;
   ({ channel, guild } = maxAge);
   maxAge = maxAge.maxAge;
   const onChangeMaxAge = maxAge.onChangeMaxAge;
@@ -122,7 +122,7 @@ export default function AdvancedInstantInvite(maxAge) {
     if (tmp) {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { assignableRoles, selectedRoleIds: roleIds, onSave: onChangeRoleIds };
-      obj.openLazy(asyncRequire(20127, dependencyMap.paths), "SelectInviteRolesActionSheet", obj2, "stack");
+      obj.openLazy(asyncRequire(19947, dependencyMap.paths), "SelectInviteRolesActionSheet", obj2, "stack");
     }
   }, items);
   const items2 = [maxUses, maxUsesOptions, onChangeMaxUses];
@@ -130,7 +130,7 @@ export default function AdvancedInstantInvite(maxAge) {
     let intl;
     if (null != onChangeMaxAge) {
       const openLazy = ActionSheetActionCreatorsDefault.openLazy;
-      const tmp6 = asyncRequire(18439, dependencyMap.paths);
+      const tmp6 = asyncRequire(18224, dependencyMap.paths);
       const obj = { title: intl.string(intl13.t.gKmKP0), options: maxAgeOptions, value: maxAge, onChange: tmp };
       intl = intl13.intl;
       openLazy(tmp6, "InviteMaxAgeActionSheet", obj, "stack");
@@ -141,7 +141,7 @@ export default function AdvancedInstantInvite(maxAge) {
     let intl;
     if (null != onChangeMaxUses) {
       const openLazy = ActionSheetActionCreatorsDefault.openLazy;
-      const tmp6 = asyncRequire(18439, dependencyMap.paths);
+      const tmp6 = asyncRequire(18224, dependencyMap.paths);
       const obj = { title: intl.string(intl13.t["+3vH1h"]), options: maxUsesOptions, value: maxUses, onChange: tmp };
       intl = intl13.intl;
       openLazy(tmp6, "InviteMaxUsesActionSheet", obj, "stack");
@@ -156,12 +156,12 @@ export default function AdvancedInstantInvite(maxAge) {
     const obj4 = { count: memo };
     formatToPlainStringResult = intl.formatToPlainString(guild(onChangeMaxAge[15]).t["eXU3/V"], obj4);
   }
-  const found = maxAgeOptions.find(f120867);
+  const found = maxAgeOptions.find(f119005);
   let label;
   if (found != null) {
     label = found.label;
   }
-  const found1 = maxUsesOptions.find(f120867);
+  const found1 = maxUsesOptions.find(f119005);
   let label1;
   if (found1 != null) {
     label1 = found1.label;

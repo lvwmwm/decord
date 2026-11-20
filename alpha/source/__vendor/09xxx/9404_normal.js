@@ -1,11 +1,11 @@
 // Module ID: 9404
 // Function ID: 9405
 // Name: normal
-// Dependencies: [1655]
+// Dependencies: [1653]
 // Exports: normalLayout
 
 // Module 9404 (normal)
-import _mod1655 from "module_1655" /* 1655 */;
+import _mod1653 from "module_1653" /* 1653 */;
 
 let closure_2 = { code: "(function pnpm_normalTs1(value){let[interpolate,size,vertical]=this.__closure;const translate=interpolate(value,[-1,0,1],[-size,0,size]);return{transform:[vertical?{translateY:translate}:{translateX:translate}]};})" };
 
@@ -17,7 +17,7 @@ export function normalLayout(arg0) {
   let vertical;
   let items = [closure_2, , , ];
   ({ size, vertical } = arg0);
-  items[1] = _mod1655.interpolate;
+  items[1] = _mod1653.interpolate;
   items[2] = size;
   items[3] = vertical;
   let c0;

@@ -1,13 +1,13 @@
-// Module ID: 11213
-// Function ID: 11214
+// Module ID: 11155
+// Function ID: 11156
 // Name: useExpressionPickerTabData
-// Dependencies: [19, 1228, 1113, 2]
+// Dependencies: [19, 1227, 1112, 2]
 // Exports: default
 
-// Module 11213 (useExpressionPickerTabData)
-import intl4 from "intl" /* 1113 */;
+// Module 11155 (useExpressionPickerTabData)
+import intl4 from "intl" /* 1112 */;
 import react from "react" /* 19 */;
-import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1228 */;
+import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1227 */;
 import size from "module_2" /* 2 */;
 
 let c3;

@@ -1,18 +1,18 @@
-// Module ID: 17474
-// Function ID: 17475
+// Module ID: 17301
+// Function ID: 17302
 // Name: EffectiveNotifSettingsActionCreators
-// Dependencies: [5, 502, 14853, 1072, 559, 14867, 572, 1285, 14856, 2]
+// Dependencies: [5, 502, 14815, 1071, 559, 14829, 572, 1284, 14818, 2]
 // Exports: cancelEffectiveNotifSettingsRetry, retryEffectiveNotifSettings
 
-// Module 17474 (EffectiveNotifSettingsActionCreators)
+// Module 17301 (EffectiveNotifSettingsActionCreators)
 import BackoffDefault from "Backoff" /* 559 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import Constants from "Constants" /* 1072 */;
-import HTTPUtils from "HTTPUtils" /* 1285 */;
-import DeclarativeNotificationSettingsRedesignExperiment from "DeclarativeNotificationSettingsRedesignExperiment" /* 14867 */;
+import Constants from "Constants" /* 1071 */;
+import HTTPUtils from "HTTPUtils" /* 1284 */;
+import DeclarativeNotificationSettingsRedesignExperiment from "DeclarativeNotificationSettingsRedesignExperiment" /* 14829 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import NotifSettingsProtoStore from "NotifSettingsProtoStore" /* 14853 */;
+import NotifSettingsProtoStore from "NotifSettingsProtoStore" /* 14815 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, closure_2, id, sum;
@@ -41,7 +41,7 @@ let obj = function _fetchEffectiveNotifSettings() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -113,7 +113,7 @@ let obj = function _fetchEffectiveNotifSettings() {
                 c3 = undefined;
               }
               c5 = 3;
-              return { value: "HermesInternal", done: "+60" };
+              return { value: "HermesInternal", done: null };
             }
           } else if (arg0 === 1) {
             c5 = 3;
@@ -159,14 +159,14 @@ let obj = function _fetchEffectiveNotifSettings() {
                 c3 = undefined;
               }
               c5 = 3;
-              return { value: "HermesInternal", done: "+60" };
+              return { value: "HermesInternal", done: null };
             } else {
               c3 = 0;
               if (c3 === requestId) {
                 c3 = undefined;
               }
               c5 = 3;
-              return { value: "HermesInternal", done: "+60" };
+              return { value: "HermesInternal", done: null };
             }
           }
           c3 = 0;
@@ -175,7 +175,7 @@ let obj = function _fetchEffectiveNotifSettings() {
           }
         }
         c5 = 3;
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp82) {
         closure_2 = tmp82;
         if (0 === c3) {

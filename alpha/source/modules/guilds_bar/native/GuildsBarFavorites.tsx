@@ -1,21 +1,21 @@
-// Module ID: 17935
-// Function ID: 17936
+// Module ID: 17762
+// Function ID: 17763
 // Name: GuildsBarFavorites
-// Dependencies: [19, 4644, 1072, 21, 17919, 11158, 504, 17936, 17922, 17870, 17703, 1113, 17937, 9888, 575, 2]
+// Dependencies: [19, 4646, 1071, 21, 17746, 11100, 504, 17763, 17749, 17697, 17530, 1112, 17764, 9891, 575, 2]
 
-// Module 17935 (GuildsBarFavorites)
+// Module 17762 (GuildsBarFavorites)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import intl2 from "intl" /* 1113 */;
-import StarIcon2 from "StarIcon" /* 9888 */;
-import FavoritesHooks from "FavoritesHooks" /* 11158 */;
-import GuildsBarAnimatedItemWrapper from "GuildsBarAnimatedItemWrapper" /* 17919 */;
-import useGuildsBarBottomRightBadgeDefault from "useGuildsBarBottomRightBadge" /* 17922 */;
-import useFavoritesGuildUnreadsDefault from "useFavoritesGuildUnreads" /* 17936 */;
+import Constants from "Constants" /* 1071 */;
+import intl2 from "intl" /* 1112 */;
+import StarIcon2 from "StarIcon" /* 9891 */;
+import FavoritesHooks from "FavoritesHooks" /* 11100 */;
+import GuildsBarAnimatedItemWrapper from "GuildsBarAnimatedItemWrapper" /* 17746 */;
+import useGuildsBarBottomRightBadgeDefault from "useGuildsBarBottomRightBadge" /* 17749 */;
+import useFavoritesGuildUnreadsDefault from "useFavoritesGuildUnreads" /* 17763 */;
 import react from "react" /* 19 */;
-import FavoriteStore from "FavoriteStore" /* 4644 */;
+import FavoriteStore from "FavoriteStore" /* 4646 */;
 import size from "module_2" /* 2 */;
 
 const GuildsBarAnimatedItemWrapperDefault = GuildsBarAnimatedItemWrapper;
@@ -72,7 +72,7 @@ const memoResult = react.memo(function GuildsBarFavorites() {
   let intl = intl2.intl;
   const StarIcon = StarIcon2.StarIcon;
   const colors = nativeDefault.colors;
-  return <tmp9 selected={isFavoritesGuildSelected} circle={false} unread={unread} styles={guildsBarAnimatedWrapperStyles} cutouts={cutouts} overState="l" config={memo} accessibilityActions={accessibilityActions} onAccessibilityAction={onAccessibilityAction} label={intl.string(intl2.t.wMWyci)} externalChildren={badge2} expandedChildren="quest_open_game_link">{"body-md/semibold"}</tmp9>;
+  return <tmp9 selected={isFavoritesGuildSelected} circle={false} unread={unread} styles={guildsBarAnimatedWrapperStyles} cutouts={cutouts} overState="l" config={memo} accessibilityActions={accessibilityActions} onAccessibilityAction={onAccessibilityAction} label={intl.string(intl2.t.wMWyci)} externalChildren={badge2} expandedChildren={null}>{"quest_open_game_link"}</tmp9>;
 });
 const result = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBarFavorites.tsx");
 

@@ -1,25 +1,25 @@
-// Module ID: 19297
-// Function ID: 19298
+// Module ID: 19117
+// Function ID: 19118
 // Name: VoicePanelDockSheetLayers
-// Dependencies: [19, 17, 13220, 21, 4792, 11687, 1655, 18057, 575, 10536, 19298, 4984, 2]
+// Dependencies: [19, 17, 13190, 21, 4794, 11629, 1653, 17884, 575, 10478, 19118, 4986, 2]
 // Exports: default
 
-// Module 19297 (VoicePanelDockSheetLayers)
+// Module 19117 (VoicePanelDockSheetLayers)
 import native from "native" /* 575 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import Portal from "Portal" /* 4984 */;
-import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 10536 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11687 */;
-import useDockBoxShadowDefault from "useDockBoxShadow" /* 18057 */;
-import voicePanelLayoutTransitionDefault from "voicePanelLayoutTransition" /* 19298 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import Portal from "Portal" /* 4986 */;
+import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 10478 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11629 */;
+import useDockBoxShadowDefault from "useDockBoxShadow" /* 17884 */;
+import voicePanelLayoutTransitionDefault from "voicePanelLayoutTransition" /* 19118 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import VoicePanelDockSlotStore from "VoicePanelDockSlotStore" /* 13220 */;
+import VoicePanelDockSlotStore from "VoicePanelDockSlotStore" /* 13190 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
-const _modDef1655 = _mod1655;
+const _modDef1653 = _mod1653;
 let num, obj1, value;
 
 let StyleSheet;
@@ -77,7 +77,7 @@ export default function VoicePanelDockSheetLayers(wrapperTransformStyles) {
   ({ handleDockSheetLayout, dockPTTPortalHostName, dockPTTMeasureHostRef, dockSheetLeft, wrapperDimensions } = context);
   const tmp4 = closure_10();
   metroRequire(context);
-  let obj = _mod1655;
+  let obj = _mod1653;
   let items = [closure_11, wrapperDimensions, dockSheetLeft];
   let c0;
   let c1;
@@ -104,7 +104,7 @@ export default function VoicePanelDockSheetLayers(wrapperTransformStyles) {
   const items2 = [closure_12, isDockInLayout];
   c0 = undefined;
   [tmp14, tmp15] = items2;
-  const tmp6Result = _mod1655;
+  const tmp6Result = _mod1653;
   class VoicePanelDockSheetLayersTsx2 {
     constructor() {
       obj = closure_0;
@@ -129,27 +129,27 @@ export default function VoicePanelDockSheetLayers(wrapperTransformStyles) {
   let obj2 = { style: items4, accessibilityElementsHidden: tmp13, importantForAccessibility: str, children: metroImportAll(View2, obj4) };
   items4 = [tmp4.dockSheetLayers, animatedStyle1];
   str = "auto";
-  const View = tmp(1655).View;
+  const View = tmp(1653).View;
   const tmp18 = React4;
   if (tmp13) {
     str = "no-hide-descendants";
   }
   const obj3 = { children: items8 };
   obj4 = { style: wrapperTransformStyles, pointerEvents: "box-none", children: items6 };
-  View2 = tmp(1655).View;
+  View2 = tmp(1653).View;
   const obj5 = { style: items5, pointerEvents: "none" };
   items5 = [tmp4.dockSurfaceShadow, { boxShadow: tmpResultResult }, wrapperSurfaceLayerStyles];
-  items6 = [metroImportDefault(_modDef1655.View, obj5), ];
+  items6 = [metroImportDefault(_modDef1653.View, obj5), ];
   const obj6 = { style: items7, layout: voicePanelLayoutTransitionDefault, children: metroImportDefault(View4, obj7) };
   items7 = [tmp4.dockSurfaceClip, wrapperSurfaceStyles];
-  const View3 = tmp(1655).View;
+  const View3 = tmp(1653).View;
   obj7 = { style: animatedStyle, onLayout: handleDockSheetLayout, children: metroImportDefault(hasOwnProperty.Provider, { value: tmp13, children }) };
-  View4 = tmp(1655).View;
+  View4 = tmp(1653).View;
   items6[1] = metroImportDefault(View3, obj6);
   items8 = [metroImportDefault(View, obj2), ];
   const obj8 = { style: tmp4.dockSheetLayers, pointerEvents: "box-none", children: metroImportDefault(View5, obj9) };
   obj9 = { ref: dockPTTMeasureHostRef, style: wrapperTransformStyles, pointerEvents: "box-none", collapsable: false, children: metroImportDefault(Portal.PortalHost, { name: dockPTTPortalHostName }) };
-  View5 = tmp(1655).View;
+  View5 = tmp(1653).View;
   items8[1] = metroImportDefault(React3, obj8);
   return metroImportAll(tmp18, obj3);
 };

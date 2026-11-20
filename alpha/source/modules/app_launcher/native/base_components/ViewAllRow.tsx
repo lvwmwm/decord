@@ -1,16 +1,16 @@
-// Module ID: 12871
-// Function ID: 12872
+// Module ID: 12841
+// Function ID: 12842
 // Name: ViewAllRow
-// Dependencies: [19, 17, 21, 4792, 6926, 1113, 5383, 2]
+// Dependencies: [19, 17, 21, 4794, 6925, 1112, 5385, 2]
 // Exports: default
 
-// Module 12871 (ViewAllRow)
+// Module 12841 (ViewAllRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import intl3 from "intl" /* 1113 */;
-import TableRow2 from "TableRow" /* 6926 */;
+import intl3 from "intl" /* 1112 */;
+import TableRow2 from "TableRow" /* 6925 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;
@@ -26,12 +26,12 @@ export default function ViewAllRow(title) {
   const tmp = closure_4();
   const TableRow = TableRow2.TableRow;
   if (null != title) {
-    const intl = tmp3(1113).intl;
+    const intl = tmp3(1112).intl;
     const obj = { title };
-    formatToPlainStringResult = intl.formatToPlainString(tmp3(1113).t["bj/2kV"], obj);
+    formatToPlainStringResult = intl.formatToPlainString(tmp3(1112).t["bj/2kV"], obj);
   }
   ({ color: "text-brand", variant: "body-md/semibold", children: intl2.format(intl3.t.gVw57p, {}) });
-  const Text = tmp3(5383).Text;
-  intl2 = tmp3(1113).intl;
+  const Text = tmp3(5385).Text;
+  intl2 = tmp3(1112).intl;
   return <TableRow accessibilityLabel={formatToPlainStringResult} label={null} onPress={onPress} end />;
 };

@@ -1,21 +1,21 @@
-// Module ID: 7351
-// Function ID: 7352
+// Module ID: 7350
+// Function ID: 7351
 // Name: GuildOnboardingPromptsActionCreators
-// Dependencies: [5, 502, 4704, 4663, 7352, 6701, 1072, 4710, 1256, 5529, 572, 1285, 1406, 2]
+// Dependencies: [5, 502, 4706, 4665, 7351, 6703, 1071, 4712, 1255, 5531, 572, 1284, 1404, 2]
 // Exports: loadOnboardingPrompts, maybeFetchOnboardingPrompts
 
-// Module 7351 (GuildOnboardingPromptsActionCreators)
+// Module 7350 (GuildOnboardingPromptsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 4710 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5529 */;
-import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 6701 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4712 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5531 */;
+import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 6703 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 4704 */;
-import GuildStore from "GuildStore" /* 4663 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7352 */;
-import Constants from "Constants" /* 1072 */;
+import GuildMemberStore from "GuildMemberStore" /* 4706 */;
+import GuildStore from "GuildStore" /* 4665 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7351 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -63,7 +63,7 @@ let obj = function _maybeFetchOnboardingPrompts() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

@@ -1,22 +1,22 @@
-// Module ID: 19263
-// Function ID: 19264
+// Module ID: 19082
+// Function ID: 19083
 // Name: PlayableActivityFrameHeader
-// Dependencies: [19, 17, 5418, 6437, 21, 4792, 575, 19264, 19258, 19243, 5052, 16417, 5383, 1113, 4540, 7472, 7032, 6834, 2]
+// Dependencies: [19, 17, 5420, 6439, 21, 4794, 575, 19083, 19077, 19062, 5054, 16239, 5385, 1112, 4542, 7471, 7031, 6834, 2]
 // Exports: default
 
-// Module 19263 (PlayableActivityFrameHeader)
+// Module 19082 (PlayableActivityFrameHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl4 from "intl" /* 1113 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5052 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5418 */;
-import QuestConstants from "QuestConstants" /* 6437 */;
+import intl4 from "intl" /* 1112 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5054 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5420 */;
+import QuestConstants from "QuestConstants" /* 6439 */;
 import leaveFrame from "leaveFrame" /* 6834 */;
-import ActivityPanelHeader from "ActivityPanelHeader" /* 19243 */;
+import ActivityPanelHeader from "ActivityPanelHeader" /* 19062 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -61,10 +61,10 @@ export default function PlayableActivityFrameHeader(arg0) {
   ({ frameId: require, playable } = arg0);
   let setMode;
   const tmp = closure_9();
-  const tmp4 = setMode(19264)(playable.id);
+  const tmp4 = setMode(19083)(playable.id);
   let isClaimed = tmp4.isClaimed;
   const remainingSeconds = tmp4.remainingSeconds;
-  const context = react.useContext(setMode(19258));
+  const context = react.useContext(setMode(19077));
   setMode = context.setMode;
   ({ wrapperOffset, pipState } = context);
   let obj = ActivityPanelHeader;
@@ -77,23 +77,23 @@ export default function PlayableActivityFrameHeader(arg0) {
   const obj6 = { style: tmp.info, children: items1 };
   items1 = [, ];
   const obj7 = { isCompleted: isClaimed, totalSeconds: playable.rewardTimerSeconds, remainingSeconds };
-  items1[0] = closure_7(setMode(16417), obj7);
+  items1[0] = closure_7(setMode(16239), obj7);
   const obj8 = { style: tmp.titleGroup, children: items2 };
   const obj9 = { variant: "body-md/semibold", color: "text-strong", lineClamp: 1, maxFontSizeMultiplier: 1.25, style: tmp.textShadow, children: productName };
   const Text = Text_Text.Text;
   if (isClaimed) {
-    const intl = tmp6(1113).intl;
-    productName = intl.string(tmp2(4540)["08Kgg0"]);
+    const intl = tmp6(1112).intl;
+    productName = intl.string(tmp2(4542)["08Kgg0"]);
   } else {
     productName = playable.productName;
   }
   items2 = [closure_7(Text, obj9), ];
   if (isClaimed) {
-    const obj10 = { variant: "body-sm/medium", color: "text-strong", lineClamp: 1, maxFontSizeMultiplier: 1.25, style: items3, children: intl2.formatToPlainString(setMode(4540).Hshnic, obj11) };
+    const obj10 = { variant: "body-sm/medium", color: "text-strong", lineClamp: 1, maxFontSizeMultiplier: 1.25, style: items3, children: intl2.formatToPlainString(setMode(4542).Hshnic, obj11) };
     items3 = [, ];
     ({ textShadow: arr4[0], subtitle: arr4[1] } = tmp);
-    const Text2 = tmp6(5383).Text;
-    intl2 = tmp6(1113).intl;
+    const Text2 = tmp6(5385).Text;
+    intl2 = tmp6(1112).intl;
     obj11 = { orbAmount };
     isClaimed = tmp7(Text2, obj10);
   }
@@ -113,10 +113,10 @@ export default function PlayableActivityFrameHeader(arg0) {
       }, 400);
     }
   };
-  const IconButton = tmp6(7472).IconButton;
+  const IconButton = tmp6(7471).IconButton;
   obj13 = { size: "sm", color: setMode(575).colors.CONTROL_OVERLAY_SECONDARY_TEXT_DEFAULT };
-  XSmallIcon = tmp6(7032).XSmallIcon;
-  intl3 = tmp6(1113).intl;
+  XSmallIcon = tmp6(7031).XSmallIcon;
+  intl3 = tmp6(1112).intl;
   items[2] = closure_7(IconButton, obj12);
   return closure_7(GestureDetector, obj2);
 };

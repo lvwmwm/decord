@@ -1,23 +1,23 @@
-// Module ID: 13591
-// Function ID: 13592
+// Module ID: 13561
+// Function ID: 13562
 // Name: HubEmailConnectionContent
-// Dependencies: [5, 32, 19, 17, 4641, 13579, 1072, 21, 4792, 575, 4806, 1502, 5367, 5006, 13592, 2121, 13593, 6228, 1113, 5383, 13587, 13594, 7100, 1187, 5390, 2]
+// Dependencies: [5, 32, 19, 17, 4643, 13549, 1071, 21, 4794, 575, 4808, 1500, 5369, 5008, 13562, 2119, 13563, 6230, 1112, 5385, 13557, 13564, 7099, 1186, 5392, 2]
 // Exports: default
 
-// Module 13591 (HubEmailConnectionContent)
+// Module 13561 (HubEmailConnectionContent)
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import intl8 from "intl" /* 1113 */;
-import useNavigation from "useNavigation" /* 1502 */;
-import react2 from "react" /* 4806 */;
+import Constants from "Constants" /* 1071 */;
+import intl8 from "intl" /* 1112 */;
+import useNavigation from "useNavigation" /* 1500 */;
+import react2 from "react" /* 4808 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import HubConstants from "HubConstants" /* 13579 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import HubConstants from "HubConstants" /* 13549 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -30,11 +30,11 @@ let map1;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const native = tmp(1187);
-const Text_Text = tmp(5383);
-const components_Button_Button = tmp(5390);
-const HubEmailConnectionModal = tmp(13587);
-const InkQuillSpotIllustration = tmp(13594);
+const native = tmp(1186);
+const Text_Text = tmp(5385);
+const components_Button_Button = tmp(5392);
+const HubEmailConnectionModal = tmp(13557);
+const InkQuillSpotIllustration = tmp(13564);
 let react = react_mod;
 ({ View: metroRequire, ScrollView: metroImportDefault } = react_native);
 ({ HubEmailConnectionSteps: c9, INVITE_ROUTING_HUB_GUILD_ID: c10 } = HubConstants);
@@ -97,7 +97,7 @@ export default function HubEmailConnectionContent(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c5;
@@ -225,7 +225,7 @@ export default function HubEmailConnectionContent(arg0) {
             c5 = 0;
             closure_131_5(false);
             c7 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp78) {
           closure_4 = tmp78;
@@ -255,7 +255,7 @@ export default function HubEmailConnectionContent(arg0) {
   const first1 = tmp7[0];
   [obj2, c6] = value(react.useState(null), 2);
   const tmp9 = value(react.useState(null), 2);
-  const insets = invite(5367)().insets;
+  const insets = invite(5369)().insets;
   const ref = react.useRef(null);
   let intl = intl8.intl;
   const stringResult = intl.string(intl8.t.H1jCHH);
@@ -357,7 +357,7 @@ export default function HubEmailConnectionContent(arg0) {
       }, 100);
     }
   };
-  const tmp10Result = invite(7100);
+  const tmp10Result = invite(7099);
   intl4 = intl8.intl;
   intl5 = intl8.intl;
   intl6 = intl8.intl;

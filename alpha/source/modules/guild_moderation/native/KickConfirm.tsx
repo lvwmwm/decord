@@ -1,18 +1,18 @@
-// Module ID: 12287
-// Function ID: 12288
+// Module ID: 12259
+// Function ID: 12260
 // Name: KickConfirm
-// Dependencies: [32, 19, 17, 4663, 1388, 21, 4792, 575, 5367, 11592, 504, 12288, 6390, 5479, 12289, 5383, 1113, 4848, 12290, 4089, 12291, 12292, 7342, 5390, 2]
+// Dependencies: [32, 19, 17, 4665, 1386, 21, 4794, 575, 5369, 11534, 504, 12260, 6392, 5481, 12261, 5385, 1112, 4850, 12262, 4091, 12263, 12264, 7341, 5392, 2]
 
-// Module 12287 (KickConfirm)
+// Module 12259 (KickConfirm)
 import nativeDefault from "native" /* 575 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6390 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6392 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore from "GuildStore" /* 4663 */;
-import UserStore from "UserStore" /* 1388 */;
+import GuildStore from "GuildStore" /* 4665 */;
+import UserStore from "UserStore" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -54,6 +54,7 @@ const memoResult = react.memo(function KickConfirm(guildId) {
   let format2;
   let formatResult;
   let formatToPlainString;
+  let formatWithAppTag;
   let intl4;
   let items;
   let items4;
@@ -67,14 +68,14 @@ const memoResult = react.memo(function KickConfirm(guildId) {
   let obj28;
   let obj6;
   let tmp16;
-  let tmp4Result5;
+  let tmp4Result10;
   let tmp4Result6;
   let tmp4Result7;
   let tmp4Result8;
-  let tmp7Result3;
+  let tmp4Result9;
   let tmp7Result4;
   let v1Ie87p;
-  const f103365 = () => ({ kicking: false, kickError: false });
+  const f101689 = () => ({ kicking: false, kickError: false });
   guildId = guildId.guildId;
   const userId = guildId.userId;
   const onKick = guildId.onKick;
@@ -105,16 +106,15 @@ const memoResult = react.memo(function KickConfirm(guildId) {
     result = tmp7Result.conjureApplicationIdForBot(userId);
   }
   const conjureServerApp = useConjureServerApp(guildId, result);
-  const tmp14 = null != conjureServerApp && !conjureServerApp.targetIsPreview;
   ref = obj.useRef("");
-  [tmp16, c6] = stateFromStores(stateFromStores1.useState(f103365), 2);
+  [tmp16, c6] = stateFromStores(stateFromStores1.useState(f101689), 2);
   const items3 = [stateFromStores, onKick, stateFromStores1];
   let tmp19Result6 = null;
-  stateFromStores(stateFromStores1.useState(f103365), 2);
+  stateFromStores(stateFromStores1.useState(f101689), 2);
   if (null != stateFromStores1) {
     tmp19Result6 = null;
     if (null != stateFromStores) {
-      let obj13;
+      let obj14;
       let tmp21Result;
       const obj5 = { style: tmp.container, ref, contentContainerStyle: obj6, children: closure_11(closure_10, obj28) };
       obj6 = { paddingHorizontal: userId(onKick[7]).space.PX_24, paddingBottom: insets.bottom };
@@ -129,28 +129,30 @@ const memoResult = react.memo(function KickConfirm(guildId) {
         const Text = tmp7(tmp5[15]).Text;
         const intl = tmp7(tmp5[16]).intl;
         formatToPlainString = intl.formatToPlainString;
-        obj11 = { user: tmp4Result5.getName(stateFromStores1) };
+        obj11 = { user: tmp4Result6.getName(stateFromStores1) };
         v1Ie87p = tmp7(tmp5[16]).t["1Ie87p"];
-        tmp4Result5 = userId(onKick[17]);
+        tmp4Result6 = userId(onKick[17]);
         items5 = [closure_9(Text, obj10), ];
         const obj12 = { variant: "body-lg/semibold", color: "text-feedback-warning", children: stateFromStores.name };
         items5[1] = closure_9(guildId(onKick[15]).Text, obj12);
-        obj13 = obj9;
+        obj14 = obj9;
       } else {
-        obj13 = { children: items6 };
-        const obj14 = { style: tmp.conjureTitle, variant: "body-lg/semibold", color: "mobile-text-heading-primary", children: tmp7Result3.formatWithAppTag(userId(onKick[19]).x6FvsZ, conjureServerApp.targetAppName) };
+        const obj13 = { style: tmp.conjureTitle, variant: "body-lg/semibold", color: "mobile-text-heading-primary", children: formatWithAppTag(null != conjureServerApp && !conjureServerApp.targetIsPreview ? tmp4Result7.m8KWic : tmp4Result7.x6FvsZ, conjureServerApp.targetAppName) };
         const Text4 = tmp7(tmp5[15]).Text;
-        tmp7Result3 = guildId(onKick[18]);
-        items6 = [closure_9(Text4, obj14), ];
+        formatWithAppTag = tmp7(tmp5[18]).formatWithAppTag;
+        guildId(onKick[18]);
+        tmp4Result7 = userId(onKick[19]);
+        obj14 = { children: items6 };
+        items6 = [closure_9(Text4, obj13), ];
         const obj15 = { style: tmp.conjureServerName, variant: "body-md/semibold", color: "text-muted", children: stateFromStores.name };
         items6[1] = closure_9(guildId(onKick[15]).Text, obj15);
       }
-      items4[1] = closure_11(closure_10, obj13);
+      items4[1] = closure_11(closure_10, obj14);
       const items7 = [closure_11(ref, obj7), , ];
-      if (tmp14) {
-        const obj16 = { style: tmp.conjureRemove, children: closure_9(tmp4Result6, obj17) };
+      if (null != conjureServerApp && !conjureServerApp.targetIsPreview) {
+        const obj16 = { style: tmp.conjureRemove, children: closure_9(tmp4Result8, obj17) };
         obj17 = { target: tmp7Result4.conjureRemoveTargetFromServerApp(conjureServerApp), onRemoved: onKick };
-        tmp4Result6 = userId(onKick[20]);
+        tmp4Result8 = userId(onKick[20]);
         tmp7Result4 = guildId(onKick[21]);
         tmp21Result = tmp19(tmp23, obj16);
       } else {
@@ -160,9 +162,9 @@ const memoResult = react.memo(function KickConfirm(guildId) {
         if (null == conjureServerApp) {
           const intl3 = tmp7(tmp5[16]).intl;
           const format = intl3.format;
-          const obj19 = { user: tmp4Result7.getName(stateFromStores1) };
+          const obj19 = { user: tmp4Result9.getName(stateFromStores1) };
           const prop = tmp7(tmp5[16]).t["/yH0UT"];
-          tmp4Result7 = userId(onKick[17]);
+          tmp4Result9 = userId(onKick[17]);
           formatResult = format(prop, obj19);
         } else {
           const intl2 = tmp7(tmp5[16]).intl;
@@ -208,9 +210,9 @@ const memoResult = react.memo(function KickConfirm(guildId) {
         const Text3 = tmp7(tmp5[15]).Text;
         const intl6 = tmp7(tmp5[16]).intl;
         format2 = intl6.format;
-        obj27 = { user: tmp4Result8.getName(stateFromStores1) };
+        obj27 = { user: tmp4Result10.getName(stateFromStores1) };
         UktD5J = tmp7(tmp5[16]).t.UktD5J;
-        tmp4Result8 = userId(onKick[17]);
+        tmp4Result10 = userId(onKick[17]);
         tmp19Result5 = tmp19(Text3, obj26);
       }
       obj28 = { children: items7 };

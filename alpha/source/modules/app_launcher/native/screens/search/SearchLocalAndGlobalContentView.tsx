@@ -1,27 +1,27 @@
-// Module ID: 12881
-// Function ID: 12882
+// Module ID: 12851
+// Function ID: 12852
 // Name: SearchLocalAndGlobalContentView
-// Dependencies: [32, 19, 17, 10374, 12845, 1501, 21, 4792, 575, 12829, 12834, 12882, 10614, 1113, 6926, 10612, 12832, 1630, 7307, 7347, 12844, 5444, 8195, 12883, 12884, 4801, 12867, 12860, 12879, 5383, 12885, 7481, 12886, 2]
+// Dependencies: [32, 19, 17, 10316, 12815, 1499, 21, 4794, 575, 12799, 12804, 12852, 10556, 1112, 6925, 10554, 12802, 1628, 7306, 7346, 12814, 5446, 8194, 12853, 12854, 4803, 12837, 12830, 12849, 5385, 12855, 7480, 12856, 2]
 // Exports: SearchLocalAndGlobalContentView
 
-// Module 12881 (SearchLocalAndGlobalContentView)
+// Module 12851 (SearchLocalAndGlobalContentView)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl5 from "intl" /* 1113 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4801 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5444 */;
-import TableRow2 from "TableRow" /* 6926 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 8195 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 10374 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 10614 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12829 */;
-import react2 from "react" /* 12832 */;
-import ApplicationDirectorySearchStore from "ApplicationDirectorySearchStore" /* 12845 */;
+import intl5 from "intl" /* 1112 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4803 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5446 */;
+import TableRow2 from "TableRow" /* 6925 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 8194 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 10316 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 10556 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12799 */;
+import react2 from "react" /* 12802 */;
+import ApplicationDirectorySearchStore from "ApplicationDirectorySearchStore" /* 12815 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1501 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1499 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let nativeEvent, navigation, set;
@@ -69,15 +69,15 @@ function CommandRow(arg0) {
   let onPressSend;
   let tmp = hasOptions;
   ({ context, onPress, isFirstRow, isLastRow, beforeExecuteCommand, onExecuteCommand } = arg0);
-  obj = hasOptions(12829);
+  obj = hasOptions(12799);
   const appLauncherIconSource = obj.getAppLauncherIconSource(application);
   let tmp4 = null != appLauncherIconSource;
   if (tmp4) {
     const obj2 = { iconSource: appLauncherIconSource };
-    tmp4 = closure_10(onPressSend(12834), obj2);
+    tmp4 = closure_10(onPressSend(12804), obj2);
   }
-  const tmpResult = tmp(12882);
-  const obj3 = { command, context, beforeExecuteCommand, onExecuteCommand, sectionName: tmp(10614).AppLauncherSectionName.SEARCH };
+  const tmpResult = tmp(12852);
+  const obj3 = { command, context, beforeExecuteCommand, onExecuteCommand, sectionName: tmp(10556).AppLauncherSectionName.SEARCH };
   const commandRowSend = tmpResult.useCommandRowSend(obj3);
   hasOptions = commandRowSend.hasOptions;
   onPressSend = commandRowSend.onPressSend;
@@ -100,9 +100,9 @@ function CommandRow(arg0) {
       onPressSend();
     }
   }, items1);
-  const obj4 = { icon: tmp4, label: command.displayName, subLabel: tmpResult2.getSectionName(application), subLabelLineClamp: 1, start: isFirstRow, end: isLastRow, onPress, accessibilityActions: memo, onAccessibilityAction: callback, trailing: closure_10(onPressSend(12882), { hasOptions, sending, onPressSend }) };
-  const TableRow = tmp(6926).TableRow;
-  tmpResult2 = tmp(10612);
+  const obj4 = { icon: tmp4, label: command.displayName, subLabel: tmpResult2.getSectionName(application), subLabelLineClamp: 1, start: isFirstRow, end: isLastRow, onPress, accessibilityActions: memo, onAccessibilityAction: callback, trailing: closure_10(onPressSend(12852), { hasOptions, sending, onPressSend }) };
+  const TableRow = tmp(6925).TableRow;
+  tmpResult2 = tmp(10554);
   return closure_10(TableRow, obj4);
 }
 function PlaceholderCommandRow(isFirstRow) {

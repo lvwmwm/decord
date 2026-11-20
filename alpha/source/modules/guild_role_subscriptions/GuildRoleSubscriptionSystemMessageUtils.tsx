@@ -1,18 +1,18 @@
-// Module ID: 8610
-// Function ID: 8611
+// Module ID: 8609
+// Function ID: 8610
 // Name: GuildRoleSubscriptionSystemMessageUtils
-// Dependencies: [4663, 1388, 8611, 1072, 11, 1113, 6752, 5529, 2]
+// Dependencies: [4665, 1386, 8610, 1071, 11, 1112, 6752, 5531, 2]
 // Exports: getRoleSubscriptionPurchaseStickerCTA, getRoleSubscriptionPurchaseSystemMessageAstFormattedContent, getRoleSubscriptionPurchaseSystemMessageContentMobile, getRoleSubscriptionPurchaseSystemMessageEventProperties, getRoleSubscriptionPurchaseSystemMessageFormattedContent, isEligibleForRoleSubscriptionPurchaseSystemMessageSettings, pickRoleSubscriptionPurchaseSticker, trackRoleSubscriptionPurchaseMessageTierClick
 
-// Module 8610 (GuildRoleSubscriptionSystemMessageUtils)
+// Module 8609 (GuildRoleSubscriptionSystemMessageUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import intl2 from "intl" /* 1113 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5529 */;
+import intl2 from "intl" /* 1112 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5531 */;
 import useIsCreatorMonetizationEnabledGuild from "useIsCreatorMonetizationEnabledGuild" /* 6752 */;
-import GuildStore from "GuildStore" /* 4663 */;
-import UserStore from "UserStore" /* 1388 */;
-import GuildRoleSubscriptionSystemMessageConstants from "GuildRoleSubscriptionSystemMessageConstants" /* 8611 */;
-import Constants from "Constants" /* 1072 */;
+import GuildStore from "GuildStore" /* 4665 */;
+import UserStore from "UserStore" /* 1386 */;
+import GuildRoleSubscriptionSystemMessageConstants from "GuildRoleSubscriptionSystemMessageConstants" /* 8610 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -169,7 +169,7 @@ export function getRoleSubscriptionPurchaseSystemMessageContentMobile(usernameOn
     OxP1NC = t["6Z1E+7"];
     tmp7 = tmp3;
   }
-  const intl = tmp7(1113).intl;
+  const intl = tmp7(1112).intl;
   let name;
   const formatToParts = intl.formatToParts;
   if (guild != null) {

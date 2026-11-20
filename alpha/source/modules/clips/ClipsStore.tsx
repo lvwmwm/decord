@@ -1,24 +1,24 @@
-// Module ID: 2139
-// Function ID: 2140
+// Module ID: 2137
+// Function ID: 2138
 // Name: ClipsStore
-// Dependencies: [32, 5, 2140, 502, 8322, 1072, 5633, 15203, 4603, 15204, 1406, 15205, 15207, 15208, 504, 572, 2]
+// Dependencies: [32, 5, 2138, 502, 8321, 1071, 5635, 15167, 4605, 15168, 1404, 15169, 15171, 15172, 504, 572, 2]
 
-// Module 2139 (ClipsStore)
+// Module 2137 (ClipsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import FlagUtils from "FlagUtils" /* 1406 */;
-import DiscordNativeDefault from "DiscordNative" /* 4603 */;
-import ClipsDefaultSettingsUtils from "ClipsDefaultSettingsUtils" /* 15203 */;
-import clipPOVOverlap from "clipPOVOverlap" /* 15205 */;
-import DistributedClipsExperimentDefault from "DistributedClipsExperiment" /* 15207 */;
-import AutoclippingDefaultOverrideExperiment2 from "AutoclippingDefaultOverrideExperiment" /* 15208 */;
+import FlagUtils from "FlagUtils" /* 1404 */;
+import DiscordNativeDefault from "DiscordNative" /* 4605 */;
+import ClipsDefaultSettingsUtils from "ClipsDefaultSettingsUtils" /* 15167 */;
+import clipPOVOverlap from "clipPOVOverlap" /* 15169 */;
+import DistributedClipsExperimentDefault from "DistributedClipsExperiment" /* 15171 */;
+import AutoclippingDefaultOverrideExperiment2 from "AutoclippingDefaultOverrideExperiment" /* 15172 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import RunningGameStore from "RunningGameStore" /* 2140 */;
+import RunningGameStore from "RunningGameStore" /* 2138 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ClipsConstants from "ClipsConstants" /* 8322 */;
-import Constants from "Constants" /* 1072 */;
-import StreamSettingsConstants from "StreamSettingsConstants" /* 5633 */;
+import ClipsConstants from "ClipsConstants" /* 8321 */;
+import Constants from "Constants" /* 1071 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 5635 */;
 import size from "module_2" /* 2 */;
 
 let _null, c4, c5, closure_2, revision;
@@ -49,7 +49,7 @@ let obj = function _migrateDefaultStorage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -119,7 +119,7 @@ let obj = function _migrateDefaultStorage() {
           closure_129_54.emitChange();
         }
         c5 = 3;
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp33) {
         closure_2 = tmp33;
         if (0 === c3) {

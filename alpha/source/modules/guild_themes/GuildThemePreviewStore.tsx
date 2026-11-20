@@ -1,16 +1,16 @@
-// Module ID: 4996
-// Function ID: 4997
+// Module ID: 4998
+// Function ID: 4999
 // Name: GuildThemePreviewStore
-// Dependencies: [502, 4997, 4636, 572, 4662, 12, 504, 2]
+// Dependencies: [502, 4999, 4638, 572, 4664, 12, 504, 2]
 
-// Module 4996 (GuildThemePreviewStore)
+// Module 4998 (GuildThemePreviewStore)
 import _mod12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import Timers from "Timers" /* 4636 */;
-import guildThemeSerialization from "guildThemeSerialization" /* 4662 */;
+import Timers from "Timers" /* 4638 */;
+import guildThemeSerialization from "guildThemeSerialization" /* 4664 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildThemePreviewConstants from "GuildThemePreviewConstants" /* 4997 */;
+import GuildThemePreviewConstants from "GuildThemePreviewConstants" /* 4999 */;
 import size from "module_2" /* 2 */;
 
 let closure_5;
@@ -141,7 +141,7 @@ let obj = {
     if (null == closure_5.guildId) {
       return false;
     } else {
-      const obj2 = { presetId: tmp, customUserThemeSettings: "r" };
+      const obj2 = { presetId: tmp, customUserThemeSettings: "Array" };
       const obj3 = _mod12;
       const isEqualResult = obj3.isEqual(closure_5.draft, obj2);
       let flag = !isEqualResult;

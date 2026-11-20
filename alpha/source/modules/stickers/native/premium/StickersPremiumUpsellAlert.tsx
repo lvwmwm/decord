@@ -1,26 +1,26 @@
-// Module ID: 11328
-// Function ID: 11329
+// Module ID: 11270
+// Function ID: 11271
 // Name: StickersPremiumUpsellAlert
-// Dependencies: [19, 17, 8691, 1072, 1390, 21, 11329, 1113, 575, 11330, 11331, 4792, 1187, 5383, 8987, 9374, 1496, 7401, 5811, 1256, 8979, 6911, 6913, 5479, 11332, 2]
+// Dependencies: [19, 17, 8731, 1071, 1388, 21, 11271, 1112, 575, 11272, 11273, 4794, 1186, 5385, 8987, 9374, 1494, 7400, 5813, 1255, 8979, 6910, 6912, 5481, 11274, 2]
 // Exports: default
 
-// Module 11328 (StickersPremiumUpsellAlert)
+// Module 11270 (StickersPremiumUpsellAlert)
 import nativeDefault from "native" /* 575 */;
-import intl4 from "intl" /* 1113 */;
-import native from "native" /* 1187 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import Text_Text from "Text/Text" /* 5383 */;
+import intl4 from "intl" /* 1112 */;
+import native from "native" /* 1186 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import Text_Text from "Text/Text" /* 5385 */;
 import openPremiumModalDefault from "openPremiumModal" /* 8979 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11329 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11330 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 11331 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11271 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11272 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 11273 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import IAPStore from "IAPStore" /* 8691 */;
-import Constants from "Constants" /* 1072 */;
-import PremiumConstants from "PremiumConstants" /* 1390 */;
+import IAPStore from "IAPStore" /* 8731 */;
+import Constants from "Constants" /* 1071 */;
+import PremiumConstants from "PremiumConstants" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -124,8 +124,8 @@ export default function StickersPremiumUpsellAlert(arg0) {
   if (tmp5 != null) {
     priceString = tmp5.priceString;
   }
-  const height = tmp3(1496)().height;
-  analyticsLocations = tmp3(7401)().analyticsLocations;
+  const height = tmp3(1494)().height;
+  analyticsLocations = tmp3(7400)().analyticsLocations;
   let obj = {
     cancelText: intl.string(intl4.t.f3Pet9),
     confirmColor: native.ButtonColors.GREEN,
@@ -147,7 +147,7 @@ export default function StickersPremiumUpsellAlert(arg0) {
     style: items,
     children: items1
   };
-  const tmp3Result = analyticsLocations(5811);
+  const tmp3Result = analyticsLocations(5813);
   intl = intl4.intl;
   intl2 = intl4.intl;
   items = [tmp.alert, ];
@@ -158,9 +158,9 @@ export default function StickersPremiumUpsellAlert(arg0) {
   items[1] = shortHeightAlert;
   let obj2 = { style: tmp.closeContainer, children: closure_13(PressableOpacity, obj3) };
   obj3 = { accessibilityRole: "button", accessibilityLabel: "close", onPress: onClose, children: closure_13(Icon, obj4) };
-  PressableOpacity = tmp9(6911).PressableOpacity;
-  obj4 = { source: analyticsLocations(6913) };
-  Icon = tmp9(1187).Icon;
+  PressableOpacity = tmp9(6910).PressableOpacity;
+  obj4 = { source: analyticsLocations(6912) };
+  Icon = tmp9(1186).Icon;
   items1 = [closure_13(closure_4, obj2), ];
   const obj5 = {
     style: tmp.content,
@@ -169,14 +169,14 @@ export default function StickersPremiumUpsellAlert(arg0) {
     },
     children: items2
   };
-  const obj6 = { source: analyticsLocations(11332), style: tmp.imageHeader };
-  const tmp3Result2 = analyticsLocations(5479);
+  const obj6 = { source: analyticsLocations(11274), style: tmp.imageHeader };
+  const tmp3Result2 = analyticsLocations(5481);
   items2 = [closure_13(tmp3Result2, obj6), , ];
   const obj7 = { style: tmp.description, variant: "body-md/medium", children: format(TBsJfQ, { monthlyPrice: priceString }) };
-  const Text = tmp9(5383).Text;
-  const intl3 = tmp9(1113).intl;
+  const Text = tmp9(5385).Text;
+  const intl3 = tmp9(1112).intl;
   format = intl3.format;
-  TBsJfQ = tmp9(1113).t.TBsJfQ;
+  TBsJfQ = tmp9(1112).t.TBsJfQ;
   const tmp13 = closure_5;
   if (priceString == null) {
     priceString = closure_12;

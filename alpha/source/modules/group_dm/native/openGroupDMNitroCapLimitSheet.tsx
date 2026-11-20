@@ -1,12 +1,12 @@
-// Module ID: 12002
-// Function ID: 12003
+// Module ID: 11944
+// Function ID: 11945
 // Name: openGroupDMNitroCapLimitSheet
-// Dependencies: [5006, 12003, 2121, 2]
+// Dependencies: [5008, 11945, 2119, 2]
 // Exports: default
 
-// Module 12002 (openGroupDMNitroCapLimitSheet)
-import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
+// Module 11944 (openGroupDMNitroCapLimitSheet)
+import asyncRequire from "asyncRequire" /* 2119 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5008 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/group_dm/native/openGroupDMNitroCapLimitSheet.tsx");
@@ -14,5 +14,5 @@ const result = size.fileFinishedImporting("modules/group_dm/native/openGroupDMNi
 export default function openGroupDMNitroCapLimitSheet(location) {
   const obj = ActionSheetActionCreatorsDefault;
   const obj2 = { location };
-  obj.openLazy(asyncRequire(12003, dependencyMap.paths), "GroupDMNitroCapLimitSheet", obj2);
+  obj.openLazy(asyncRequire(11945, dependencyMap.paths), "GroupDMNitroCapLimitSheet", obj2);
 };

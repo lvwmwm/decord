@@ -1,13 +1,13 @@
-// Module ID: 18833
-// Function ID: 18834
+// Module ID: 18657
+// Function ID: 18658
 // Name: SmartSearchCitation
-// Dependencies: [5, 19, 8457, 21, 18783, 13131, 13129, 18834, 18814, 2]
+// Dependencies: [5, 19, 8456, 21, 18607, 13101, 13099, 18658, 18638, 2]
 // Exports: SmartSearchCitation
 
-// Module 18833 (SmartSearchCitation)
+// Module 18657 (SmartSearchCitation)
 import Fragment from "Fragment" /* 21 */;
-import SearchConstants from "SearchConstants" /* 8457 */;
-import MessageSearchResultParserDefault from "MessageSearchResultParser" /* 18834 */;
+import SearchConstants from "SearchConstants" /* 8456 */;
+import MessageSearchResultParserDefault from "MessageSearchResultParser" /* 18658 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -45,7 +45,7 @@ export function SmartSearchCitation(smartSearchQuery) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -89,7 +89,7 @@ export function SmartSearchCitation(smartSearchQuery) {
         }
         closure_128_4(closure_128_1.channelId, closure_128_1.messageId);
         c3 = 3;
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp12) {
         if (0 === index) {
           c3 = 3;

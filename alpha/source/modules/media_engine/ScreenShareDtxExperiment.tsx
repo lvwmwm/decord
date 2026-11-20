@@ -1,11 +1,11 @@
-// Module ID: 5681
-// Function ID: 5682
+// Module ID: 5683
+// Function ID: 5684
 // Name: ScreenShareDtxExperiment
-// Dependencies: [1452, 2]
+// Dependencies: [1450, 2]
 // Exports: getIsScreenShareDtxEnabled
 
-// Module 5681 (ScreenShareDtxExperiment)
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+// Module 5683 (ScreenShareDtxExperiment)
+import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2026-11-screen-share-dtx", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };

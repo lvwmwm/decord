@@ -1,16 +1,16 @@
-// Module ID: 9860
-// Function ID: 9861
+// Module ID: 9862
+// Function ID: 9863
 // Name: QuestCopyUtils
-// Dependencies: [6437, 1113, 6444, 9839, 9842, 7426, 2]
+// Dependencies: [6439, 1112, 6446, 9841, 9844, 7425, 2]
 // Exports: copyShareLink, getContextualEntrypointHeading, getCtaLink, getDefaultReward, getDisclosureText, getExternalCtaLabel, getFilterGroupHeadingText, getFilterTypeText, getQuestUrl, getSortMethodText
 
-// Module 9860 (QuestCopyUtils)
-import intl7 from "intl" /* 1113 */;
-import AdCreativeType from "AdCreativeType" /* 6444 */;
-import ClipboardUtils from "ClipboardUtils" /* 7426 */;
-import captureAdUserAction from "captureAdUserAction" /* 9839 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9842 */;
-import QuestConstants from "QuestConstants" /* 6437 */;
+// Module 9862 (QuestCopyUtils)
+import intl7 from "intl" /* 1112 */;
+import AdCreativeType from "AdCreativeType" /* 6446 */;
+import ClipboardUtils from "ClipboardUtils" /* 7425 */;
+import captureAdUserAction from "captureAdUserAction" /* 9841 */;
+import captureAdUserActionTypes from "captureAdUserActionTypes" /* 9844 */;
+import QuestConstants from "QuestConstants" /* 6439 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -86,18 +86,18 @@ export function getDisclosureText(arg0) {
   if (isTargetedDisclosure) {
     let stringResult1;
     if (isContextualDisclosure) {
-      const intl5 = tmp(1113).intl;
-      stringResult1 = intl5.string(tmp(1113).t.nPg6f1);
+      const intl5 = tmp(1112).intl;
+      stringResult1 = intl5.string(tmp(1112).t.nPg6f1);
     } else {
       let formatToPlainStringResult;
       if (null == cosponsorName) {
-        const intl4 = tmp(1113).intl;
+        const intl4 = tmp(1112).intl;
         const obj2 = { gamePublisher };
-        formatToPlainStringResult = intl4.formatToPlainString(tmp(1113).t.Piihy1, obj2);
+        formatToPlainStringResult = intl4.formatToPlainString(tmp(1112).t.Piihy1, obj2);
       } else {
-        const intl3 = tmp(1113).intl;
+        const intl3 = tmp(1112).intl;
         const obj3 = { gamePublisher, cosponsorName };
-        formatToPlainStringResult = intl3.formatToPlainString(tmp(1113).t.DV47Gy, obj3);
+        formatToPlainStringResult = intl3.formatToPlainString(tmp(1112).t.DV47Gy, obj3);
       }
       const _HermesInternal = HermesInternal;
       stringResult1 = "" + formatToPlainStringResult + " " + stringResult;
@@ -107,9 +107,9 @@ export function getDisclosureText(arg0) {
     tmp4 = stringResult;
     if (adCreativeType === AdCreativeType.AdCreativeType.QUEST) {
       let formatToPlainStringResult1;
-      const intl2 = tmp(1113).intl;
+      const intl2 = tmp(1112).intl;
       const formatToPlainString = intl2.formatToPlainString;
-      const t = tmp(1113).t;
+      const t = tmp(1112).t;
       if (isVideoQuest) {
         const obj4 = { gamePublisher };
         formatToPlainStringResult1 = formatToPlainString(t.rctMRl, obj4);

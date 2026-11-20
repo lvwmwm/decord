@@ -1,13 +1,13 @@
-// Module ID: 20068
-// Function ID: 20069
+// Module ID: 19888
+// Function ID: 19889
 // Name: useArchiveOrDelete
-// Dependencies: [5, 32, 19, 16670, 16683, 1113, 5740, 1187, 38, 5473, 2]
+// Dependencies: [5, 32, 19, 16494, 16507, 1112, 5742, 1186, 38, 5475, 2]
 // Exports: default
 
-// Module 20068 (useArchiveOrDelete)
-import intl13 from "intl" /* 1113 */;
-import ToastUtilsAll from "ToastUtils" /* 5473 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16683 */;
+// Module 19888 (useArchiveOrDelete)
+import intl13 from "intl" /* 1112 */;
+import ToastUtilsAll from "ToastUtils" /* 5475 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16507 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -52,7 +52,7 @@ export default function useArchiveOrDelete(guildId, groupListingId, editStateId,
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -125,7 +125,7 @@ export default function useArchiveOrDelete(guildId, groupListingId, editStateId,
               closure_128_3.goBack();
             }
             c2 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp30) {
           c2 = 3;
@@ -167,19 +167,19 @@ export default function useArchiveOrDelete(guildId, groupListingId, editStateId,
     let stringResult1;
     let closure_6;
     if (!tmp9) {
-      let intl = tmp(1113).intl;
+      let intl = tmp(1112).intl;
       let obj6 = { tierName: first };
-      formatToPlainStringResult = intl.formatToPlainString(tmp(1113).t.OuuIOY, obj6);
-      const intl2 = tmp(1113).intl;
-      stringResult = intl2.string(tmp(1113).t.RL0wjm);
-      const intl3 = tmp(1113).intl;
-      stringResult1 = intl3.string(tmp(1113).t["5/Jeg2"]);
-      const intl4 = tmp(1113).intl;
-      let closure_4 = intl4.string(tmp(1113).t.N5AIuE);
-      const intl5 = tmp(1113).intl;
-      _slicedToArray = intl5.string(tmp(1113).t.TEKiiP);
-      const intl6 = tmp(1113).intl;
-      closure_6 = intl6.string(tmp(1113).t["170XOL"]);
+      formatToPlainStringResult = intl.formatToPlainString(tmp(1112).t.OuuIOY, obj6);
+      const intl2 = tmp(1112).intl;
+      stringResult = intl2.string(tmp(1112).t.RL0wjm);
+      const intl3 = tmp(1112).intl;
+      stringResult1 = intl3.string(tmp(1112).t["5/Jeg2"]);
+      const intl4 = tmp(1112).intl;
+      let closure_4 = intl4.string(tmp(1112).t.N5AIuE);
+      const intl5 = tmp(1112).intl;
+      _slicedToArray = intl5.string(tmp(1112).t.TEKiiP);
+      const intl6 = tmp(1112).intl;
+      closure_6 = intl6.string(tmp(1112).t["170XOL"]);
     }
     const items = [error];
     closure_6(() => {
@@ -208,24 +208,24 @@ export default function useArchiveOrDelete(guildId, groupListingId, editStateId,
     };
     return obj7;
   }
-  const intl7 = tmp(1113).intl;
-  const formatToPlainStringResult1 = intl7.formatToPlainString(tmp(1113).t.x2qwWL, { tierName: first });
-  const intl8 = tmp(1113).intl;
-  const stringResult2 = intl8.string(tmp(1113).t.GMtG6p);
-  const intl9 = tmp(1113).intl;
+  const intl7 = tmp(1112).intl;
+  const formatToPlainStringResult1 = intl7.formatToPlainString(tmp(1112).t.x2qwWL, { tierName: first });
+  const intl8 = tmp(1112).intl;
+  const stringResult2 = intl8.string(tmp(1112).t.GMtG6p);
+  const intl9 = tmp(1112).intl;
   const string = intl9.string;
-  const t = tmp(1113).t;
+  const t = tmp(1112).t;
   if (tmp9) {
     stringResult3 = string(t.DHWKJS);
   } else {
     stringResult3 = string(t.Y4KjUN);
   }
-  const intl10 = tmp(1113).intl;
-  closure_4 = intl10.string(tmp(1113).t["4H6RLl"]);
-  const intl11 = tmp(1113).intl;
-  _slicedToArray = intl11.string(tmp(1113).t.uG6b1w);
-  const intl12 = tmp(1113).intl;
-  closure_6 = intl12.string(tmp(1113).t.JoCdPC);
+  const intl10 = tmp(1112).intl;
+  closure_4 = intl10.string(tmp(1112).t["4H6RLl"]);
+  const intl11 = tmp(1112).intl;
+  _slicedToArray = intl11.string(tmp(1112).t.uG6b1w);
+  const intl12 = tmp(1112).intl;
+  closure_6 = intl12.string(tmp(1112).t.JoCdPC);
   stringResult1 = stringResult3;
   stringResult = stringResult2;
   formatToPlainStringResult = formatToPlainStringResult1;

@@ -1,16 +1,16 @@
-// Module ID: 18340
-// Function ID: 18341
+// Module ID: 18173
+// Function ID: 18174
 // Name: useConjureMakePersonal
-// Dependencies: [5, 32, 19, 6500, 6814, 12295, 18336, 1113, 4089, 2]
+// Dependencies: [5, 32, 19, 6502, 6814, 12265, 18167, 1112, 4091, 18168, 2]
 // Exports: default
 
-// Module 18340 (useConjureMakePersonal)
+// Module 18173 (useConjureMakePersonal)
 import ConjureActionCreators from "ConjureActionCreators" /* 6814 */;
-import conjureChangeRows from "conjureChangeRows" /* 18336 */;
+import conjureChangeRows from "conjureChangeRows" /* 18167 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6500 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6502 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -57,7 +57,7 @@ export default function useConjureMakePersonal(id) {
     const obj = conjureChangeRows;
     return obj.conjureMakePersonalRows(id, target);
   }, items1);
-  const items2 = [appName, conjureRemoveTarget, id.id];
+  const items2 = [appName, conjureRemoveTarget, id];
   let obj3 = { appName, rows: memo, keptChannels: result, pending: first, error: first1, submit: callback };
   result = null;
   callback = obj.useCallback(conjureRemoveTarget(function*(arg0, value) {
@@ -74,7 +74,7 @@ export default function useConjureMakePersonal(id) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c2;
@@ -121,6 +121,7 @@ export default function useConjureMakePersonal(id) {
           let TWYUzf;
           c2 = 0;
           closure_129_1(false);
+          tmp(c2[9])(closure_129_0, "removed");
           integrationStatus = integrationStatus.getIntegrationStatus(closure_129_0.id);
           let prop;
           if (integrationStatus != null) {
@@ -151,7 +152,7 @@ export default function useConjureMakePersonal(id) {
     }
   }), items2);
   if (null != target) {
-    const tmp6Result = tmp6(12295);
+    const tmp6Result = tmp6(12265);
     result = tmp6Result.conjureRemoveAppKeptChannels(target);
   }
   return obj3;

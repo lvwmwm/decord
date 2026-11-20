@@ -1,25 +1,25 @@
-// Module ID: 15809
-// Function ID: 15810
+// Module ID: 15773
+// Function ID: 15774
 // Name: EditProfileFrameActionSheet
-// Dependencies: [32, 19, 17, 7971, 7963, 1072, 21, 4792, 575, 7953, 8030, 7401, 7420, 1256, 8789, 8793, 5020, 7396, 1113, 8794, 9355, 504, 15810, 14169, 8012, 7954, 15811, 14175, 14176, 8795, 9332, 5347, 2]
+// Dependencies: [32, 19, 17, 7970, 7962, 1071, 21, 4794, 575, 7952, 8029, 7400, 7419, 1255, 8789, 8793, 5022, 7395, 1112, 8794, 9355, 504, 15774, 14138, 8011, 7953, 15775, 14144, 14145, 8795, 9332, 5349, 2]
 // Exports: default
 
-// Module 15809 (EditProfileFrameActionSheet)
+// Module 15773 (EditProfileFrameActionSheet)
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7420 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7954 */;
-import ProfileFrameRecord from "ProfileFrameRecord" /* 7963 */;
+import Constants from "Constants" /* 1071 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7419 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7953 */;
+import ProfileFrameRecord from "ProfileFrameRecord" /* 7962 */;
 import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8789 */;
 import useShopProductItems from "useShopProductItems" /* 8793 */;
-import EditProfileFrameSection from "EditProfileFrameSection" /* 15811 */;
+import EditProfileFrameSection from "EditProfileFrameSection" /* 15775 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7971 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7970 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -162,7 +162,7 @@ function ProfileFrameSectionPreview(arg0) {
   items1 = [closure_9(purchase(9332), { user, guildId, profileFrame: memo, maxWidth: 280 }), ];
   const obj2 = { style: tmp.previewGradient, start: { x: 0, y: 0.6 }, end: { x: 0, y: 1 }, colors: items2 };
   items2 = [, ];
-  const tmp4 = purchase(5347);
+  const tmp4 = purchase(5349);
   items2[0] = "" + tmp.previewGradient.color + "00";
   items2[1] = tmp.previewGradient.color;
   items1[1] = closure_9(tmp4, obj2);

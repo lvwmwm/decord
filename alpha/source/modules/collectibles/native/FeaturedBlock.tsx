@@ -1,18 +1,18 @@
-// Module ID: 17365
-// Function ID: 17366
+// Module ID: 17192
+// Function ID: 17193
 // Name: FeaturedBlock
-// Dependencies: [19, 17, 21, 575, 4792, 8816, 17366, 7401, 7420, 2]
+// Dependencies: [19, 17, 21, 575, 4794, 8816, 17193, 7400, 7419, 2]
 // Exports: default
 
-// Module 17365 (FeaturedBlock)
+// Module 17192 (FeaturedBlock)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import useAnalyticsLocations from "useAnalyticsLocations" /* 7401 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7420 */;
+import useAnalyticsLocations from "useAnalyticsLocations" /* 7400 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7419 */;
 import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 8816 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const useAnalyticsLocationsDefault = useAnalyticsLocations;

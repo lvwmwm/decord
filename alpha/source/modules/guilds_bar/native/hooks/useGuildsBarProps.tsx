@@ -1,27 +1,27 @@
-// Module ID: 17917
-// Function ID: 17918
+// Module ID: 17744
+// Function ID: 17745
 // Name: useGuildsBarProps
-// Dependencies: [19, 6273, 4725, 6513, 6514, 14939, 6430, 4704, 4663, 14946, 4825, 6429, 17910, 17907, 21, 17918, 17932, 17933, 17935, 17938, 17962, 17965, 17969, 17970, 17971, 17973, 17974, 17975, 17976, 17977, 17979, 5356, 575, 1630, 16524, 16534, 9918, 16784, 17966, 504, 6541, 17981, 17982, 5022, 1496, 17984, 7330, 2]
+// Dependencies: [19, 6275, 4727, 6515, 6516, 14903, 6432, 4706, 4665, 14910, 4827, 6431, 17737, 17734, 21, 17745, 17759, 17760, 17762, 17765, 17789, 17792, 17796, 17797, 17798, 17800, 17801, 17802, 17803, 17804, 17806, 5358, 575, 1628, 16346, 16357, 9921, 16608, 17793, 504, 6543, 17808, 17809, 5024, 1494, 17811, 7329, 2]
 // Exports: default
 
-// Module 17917 (useGuildsBarProps)
+// Module 17744 (useGuildsBarProps)
 import Fragment from "Fragment" /* 21 */;
-import useWindowDimensions from "useWindowDimensions" /* 1496 */;
-import SortedGuildStore2 from "SortedGuildStore" /* 6429 */;
-import GuildsBarFooterWrapperDefault from "GuildsBarFooterWrapper" /* 17973 */;
+import useWindowDimensions from "useWindowDimensions" /* 1494 */;
+import SortedGuildStore2 from "SortedGuildStore" /* 6431 */;
+import GuildsBarFooterWrapperDefault from "GuildsBarFooterWrapper" /* 17800 */;
 import react from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6273 */;
-import LurkingStore from "LurkingStore" /* 4725 */;
-import MessageRequestStore from "MessageRequestStore" /* 6513 */;
-import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6514 */;
-import GeoRestrictedGuildStore from "GeoRestrictedGuildStore" /* 14939 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6430 */;
-import GuildMemberStore from "GuildMemberStore" /* 4704 */;
-import GuildStore from "GuildStore" /* 4663 */;
-import PrivateChannelReadStateStore from "PrivateChannelReadStateStore" /* 14946 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4825 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 17910 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 17907 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6275 */;
+import LurkingStore from "LurkingStore" /* 4727 */;
+import MessageRequestStore from "MessageRequestStore" /* 6515 */;
+import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6516 */;
+import GeoRestrictedGuildStore from "GeoRestrictedGuildStore" /* 14903 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6432 */;
+import GuildMemberStore from "GuildMemberStore" /* 4706 */;
+import GuildStore from "GuildStore" /* 4665 */;
+import PrivateChannelReadStateStore from "PrivateChannelReadStateStore" /* 14910 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4827 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 17737 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 17734 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

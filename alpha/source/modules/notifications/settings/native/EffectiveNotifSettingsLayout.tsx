@@ -1,20 +1,20 @@
-// Module ID: 17473
-// Function ID: 17474
+// Module ID: 17300
+// Function ID: 17301
 // Name: EffectiveNotifSettingsLayout
-// Dependencies: [19, 1231, 502, 14853, 21, 4792, 575, 17474, 5808, 7643, 1113, 3051, 14867, 504, 572, 15898, 7071, 2]
+// Dependencies: [19, 1230, 502, 14815, 21, 4794, 575, 17301, 5810, 7642, 1112, 3053, 14829, 504, 572, 15862, 7070, 2]
 // Exports: default
 
-// Module 17473 (EffectiveNotifSettingsLayout)
+// Module 17300 (EffectiveNotifSettingsLayout)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef3051 from "module_3051" /* 3051 */;
-import EffectiveNotifSettingsActionCreators from "EffectiveNotifSettingsActionCreators" /* 17474 */;
+import _modDef3053 from "module_3053" /* 3053 */;
+import EffectiveNotifSettingsActionCreators from "EffectiveNotifSettingsActionCreators" /* 17301 */;
 import react from "react" /* 19 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1230 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import NotifSettingsProtoStore from "NotifSettingsProtoStore" /* 14853 */;
+import NotifSettingsProtoStore from "NotifSettingsProtoStore" /* 14815 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -51,12 +51,12 @@ function EffectiveSettingsHeader() {
   let tmp8 = null;
   if (unavailable) {
     let obj = { style: tmp.notice, children: closure_7(InlineNotice, obj2) };
-    const Stack = loading(5808).Stack;
-    obj2 = { type: "warning", role: "status", message: intl.string(_modDef3051.Nu2TMI), action: obj3 };
-    InlineNotice = loading(7643).InlineNotice;
-    intl = loading(1113).intl;
-    obj3 = { text: intl2.string(loading(1113).t["5911Lb"]), onPress: callback, loading };
-    intl2 = loading(1113).intl;
+    const Stack = loading(5810).Stack;
+    obj2 = { type: "warning", role: "status", message: intl.string(_modDef3053.Nu2TMI), action: obj3 };
+    InlineNotice = loading(7642).InlineNotice;
+    intl = loading(1112).intl;
+    obj3 = { text: intl2.string(loading(1112).t["5911Lb"]), onPress: callback, loading };
+    intl2 = loading(1112).intl;
     tmp8 = closure_7(Stack, obj);
   }
   children[1] = tmp8;

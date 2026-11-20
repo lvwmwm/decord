@@ -1,13 +1,13 @@
-// Module ID: 13802
-// Function ID: 13803
+// Module ID: 13771
+// Function ID: 13772
 // Name: useAppChannelRunningApp
-// Dependencies: [6502, 1072, 6503, 504, 13803, 1113, 2]
+// Dependencies: [6504, 1071, 6505, 504, 13772, 1112, 2]
 // Exports: default
 
-// Module 13802 (useAppChannelRunningApp)
-import Constants from "Constants" /* 1072 */;
-import FramesStore from "FramesStore" /* 6502 */;
-import FramesConstants from "FramesConstants" /* 6503 */;
+// Module 13771 (useAppChannelRunningApp)
+import Constants from "Constants" /* 1071 */;
+import FramesStore from "FramesStore" /* 6504 */;
+import FramesConstants from "FramesConstants" /* 6505 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -49,7 +49,7 @@ export default function useAppChannelRunningApp(arg0) {
     }
     return tmp4;
   }, items1);
-  let tmp4 = stateFromStores(13803)(stateFromStores);
+  let tmp4 = stateFromStores(13772)(stateFromStores);
   const items2 = [FramesStore];
   const items3 = [stateFromStores];
   const obj2 = require("get initialized");
@@ -75,8 +75,8 @@ export default function useAppChannelRunningApp(arg0) {
   stringResult = null;
   ({ audible, userMuted } = stateFromStoresObject);
   if (tmp4) {
-    const intl = tmp(1113).intl;
-    stringResult = intl.string(tmp(1113).t["1yCkJY"]);
+    const intl = tmp(1112).intl;
+    stringResult = intl.string(tmp(1112).t["1yCkJY"]);
   }
   return obj3;
 };

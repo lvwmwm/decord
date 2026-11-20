@@ -1,21 +1,21 @@
-// Module ID: 13448
-// Function ID: 13449
+// Module ID: 13418
+// Function ID: 13419
 // Name: ApplicationIconAndName
-// Dependencies: [21, 4792, 575, 1187, 5383, 2]
+// Dependencies: [21, 4794, 575, 1186, 5385, 2]
 // Exports: default
 
-// Module 13448 (ApplicationIconAndName)
+// Module 13418 (ApplicationIconAndName)
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 1187 */;
+import native from "native" /* 1186 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let c3;
 let closure_4;
 let hasOwnProperty;
 let tmp5;
-const Text_Text = tmp5(5383);
+const Text_Text = tmp5(5385);
 ({ jsx: c3, Fragment: closure_4, jsxs: hasOwnProperty } = Fragment);
 let closure_6 = createStyles.createStyles((width) => {
   const obj = { gameIcon: size };

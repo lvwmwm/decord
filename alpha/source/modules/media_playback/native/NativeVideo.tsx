@@ -1,7 +1,7 @@
 // Module ID: 9138
 // Function ID: 9139
 // Name: NativeVideo
-// Dependencies: [109, 32, 19, 17, 21, 4792, 81, 9139, 5479, 2]
+// Dependencies: [109, 32, 19, 17, 21, 4794, 81, 9139, 5481, 2]
 // Exports: default
 
 // Module 9138 (NativeVideo)
@@ -10,7 +10,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_10, dependencyMap, sum;
@@ -48,7 +48,7 @@ export default function NativeVideo(ref) {
   let tmp21;
   let tmp6;
   let type;
-  const f96134 = (item) => {
+  const f94514 = (item) => {
     let tmp;
     let tmp2;
     [tmp, tmp2] = item;
@@ -95,7 +95,7 @@ export default function NativeVideo(ref) {
   }
   const tmp4Result = str(obj.useState(() => {
     let entries;
-    const obj = { id: String(c10), uri: str, headersKey: json, headers: entries.map(f96134) };
+    const obj = { id: String(c10), uri: str, headersKey: json, headers: entries.map(f94514) };
     c10 = c10 + 1;
     const parsed = JSON.parse(json);
     entries = Object.entries(parsed);
@@ -109,7 +109,7 @@ export default function NativeVideo(ref) {
   }
   if (!tmp15) {
     const _JSON2 = JSON;
-    let obj4 = { id: String(sum), uri: str, headersKey: json, headers: entries.map(f96134) };
+    let obj4 = { id: String(sum), uri: str, headersKey: json, headers: entries.map(f94514) };
     const _String = String;
     sum = closure_10 + 1;
     closure_10 = sum;
@@ -369,7 +369,7 @@ export default function NativeVideo(ref) {
     let obj8 = { accessible: false, style: tmp2.content, source: obj9, resizeMode: str2 };
     obj9 = { uri: obj2.poster };
     str2 = "center";
-    const tmp27Result = tmp27(5479);
+    const tmp27Result = tmp27(5481);
     if ("none" !== obj2.posterResizeMode) {
       let str4 = obj2.posterResizeMode;
       if (str4 == null) {

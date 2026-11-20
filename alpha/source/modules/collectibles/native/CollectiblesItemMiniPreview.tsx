@@ -1,18 +1,18 @@
 // Module ID: 8925
 // Function ID: 8926
 // Name: CollectiblesItemMiniPreview
-// Dependencies: [19, 17, 7961, 2112, 7962, 7963, 8055, 8890, 21, 575, 4792, 8900, 8912, 5479, 8913, 8893, 2111, 8908, 2]
+// Dependencies: [19, 17, 7960, 2110, 7961, 7962, 8054, 8890, 21, 575, 4794, 8900, 8912, 5481, 8913, 8893, 2109, 8908, 2]
 
 // Module 8925 (CollectiblesItemMiniPreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import utils from "utils" /* 2111 */;
-import NameplateRecord from "NameplateRecord" /* 2112 */;
-import FastImageDefault from "FastImage" /* 5479 */;
-import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7961 */;
-import ProfileEffectRecord from "ProfileEffectRecord" /* 7962 */;
-import ProfileFrameRecord from "ProfileFrameRecord" /* 7963 */;
-import ProfileFrameConstants from "ProfileFrameConstants" /* 8055 */;
+import utils from "utils" /* 2109 */;
+import NameplateRecord from "NameplateRecord" /* 2110 */;
+import FastImageDefault from "FastImage" /* 5481 */;
+import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7960 */;
+import ProfileEffectRecord from "ProfileEffectRecord" /* 7961 */;
+import ProfileFrameRecord from "ProfileFrameRecord" /* 7962 */;
+import ProfileFrameConstants from "ProfileFrameConstants" /* 8054 */;
 import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 8890 */;
 import ProfileEffectDefault from "ProfileEffect" /* 8893 */;
 import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 8900 */;
@@ -21,7 +21,7 @@ import ProfileFrameSamplePreviewDefault from "ProfileFrameSamplePreview" /* 8912
 import _modDef8913 from "module_8913" /* 8913 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let c10;

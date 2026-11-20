@@ -1,30 +1,30 @@
-// Module ID: 14075
-// Function ID: 14076
+// Module ID: 14044
+// Function ID: 14045
 // Name: UserSettingsPremiumGifting
-// Dependencies: [32, 19, 17, 8018, 8001, 1072, 1390, 21, 4792, 575, 7229, 8982, 1502, 1630, 504, 12, 6226, 8985, 9824, 7951, 9256, 8004, 8987, 8023, 7292, 7296, 10443, 5479, 14076, 5383, 1113, 14077, 14083, 14096, 14099, 14101, 9122, 7298, 2819, 14102, 6901, 2]
+// Dependencies: [32, 19, 17, 8017, 8000, 1071, 1388, 21, 4794, 575, 7228, 8982, 1500, 1628, 504, 12, 6228, 8985, 9826, 7950, 9256, 8003, 8987, 8022, 7291, 7295, 10385, 5481, 14045, 5385, 1112, 14046, 14052, 14065, 14068, 14070, 9122, 7297, 2821, 14071, 6900, 2]
 // Exports: default
 
-// Module 14075 (UserSettingsPremiumGifting)
+// Module 14044 (UserSettingsPremiumGifting)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 575 */;
-import GiftCodeUtils from "GiftCodeUtils" /* 6226 */;
-import TableRowGroup from "TableRowGroup" /* 7229 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7292 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7296 */;
-import EntitlementActionCreators from "EntitlementActionCreators" /* 8004 */;
+import GiftCodeUtils from "GiftCodeUtils" /* 6228 */;
+import TableRowGroup from "TableRowGroup" /* 7228 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7291 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7295 */;
+import EntitlementActionCreators from "EntitlementActionCreators" /* 8003 */;
 import BillingActionCreatorsDefault from "BillingActionCreators" /* 8987 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10443 */;
-import OutboundPromotionCardDefault from "OutboundPromotionCard" /* 14077 */;
-import EntitlementGiftGroupCardDefault from "EntitlementGiftGroupCard" /* 14083 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10385 */;
+import OutboundPromotionCardDefault from "OutboundPromotionCard" /* 14046 */;
+import EntitlementGiftGroupCardDefault from "EntitlementGiftGroupCard" /* 14052 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8018 */;
-import EntitlementStore from "EntitlementStore" /* 8001 */;
-import Constants from "Constants" /* 1072 */;
-import PremiumConstants from "PremiumConstants" /* 1390 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8017 */;
+import EntitlementStore from "EntitlementStore" /* 8000 */;
+import Constants from "Constants" /* 1071 */;
+import PremiumConstants from "PremiumConstants" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

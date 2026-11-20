@@ -1,15 +1,15 @@
-// Module ID: 13322
-// Function ID: 13323
+// Module ID: 13292
+// Function ID: 13293
 // Name: GuildPowerupsImage
-// Dependencies: [4793, 21, 4792, 504, 5479, 2]
+// Dependencies: [4795, 21, 4794, 504, 5481, 2]
 // Exports: default
 
-// Module 13322 (GuildPowerupsImage)
+// Module 13292 (GuildPowerupsImage)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
-import FastImageDefault from "FastImage" /* 5479 */;
-import AccessibilityStore from "AccessibilityStore" /* 4793 */;
-import createStyles from "createStyles" /* 4792 */;
+import FastImageDefault from "FastImage" /* 5481 */;
+import AccessibilityStore from "AccessibilityStore" /* 4795 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;

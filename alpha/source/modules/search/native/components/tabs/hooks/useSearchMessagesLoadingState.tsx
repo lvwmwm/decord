@@ -1,16 +1,16 @@
-// Module ID: 18856
-// Function ID: 18857
+// Module ID: 18680
+// Function ID: 18681
 // Name: useSearchMessagesLoadingState
-// Dependencies: [6520, 13121, 8457, 18787, 504, 13114, 2]
+// Dependencies: [6522, 13091, 8456, 18611, 504, 13084, 2]
 // Exports: useSearchMessagesLoadingState
 
-// Module 18856 (useSearchMessagesLoadingState)
+// Module 18680 (useSearchMessagesLoadingState)
 import get_initialized from "get initialized" /* 504 */;
-import SearchConstants from "SearchConstants" /* 8457 */;
-import SearchUtils from "SearchUtils" /* 13114 */;
-import usePlaceholderStyles from "usePlaceholderStyles" /* 18787 */;
-import SearchMessageStore from "SearchMessageStore" /* 6520 */;
-import SearchQueryStore from "SearchQueryStore" /* 13121 */;
+import SearchConstants from "SearchConstants" /* 8456 */;
+import SearchUtils from "SearchUtils" /* 13084 */;
+import usePlaceholderStyles from "usePlaceholderStyles" /* 18611 */;
+import SearchMessageStore from "SearchMessageStore" /* 6522 */;
+import SearchQueryStore from "SearchQueryStore" /* 13091 */;
 import size from "module_2" /* 2 */;
 
 let closure_4 = SearchConstants.SEARCH_TABS_TO_SEARCH_QUERY_LIMITS;

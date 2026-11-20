@@ -1,18 +1,18 @@
-// Module ID: 18058
-// Function ID: 18059
+// Module ID: 17885
+// Function ID: 17886
 // Name: VoicePanelDockBadgedIcon
-// Dependencies: [19, 17, 11706, 21, 1187, 17953, 4792, 4853, 5002, 1708, 1655, 8903, 2]
+// Dependencies: [19, 17, 11648, 21, 1186, 17780, 4794, 4855, 5004, 1706, 1653, 8903, 2]
 // Exports: default
 
-// Module 18058 (VoicePanelDockBadgedIcon)
+// Module 17885 (VoicePanelDockBadgedIcon)
 import react_native from "react-native" /* 17 */;
-import native from "native" /* 1187 */;
-import native2 from "native" /* 4853 */;
+import native from "native" /* 1186 */;
+import native2 from "native" /* 4855 */;
 import react from "react" /* 19 */;
-import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11706 */;
+import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11648 */;
 import Fragment from "Fragment" /* 21 */;
-import GuildsBarActivityIndicator from "GuildsBarActivityIndicator" /* 17953 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import GuildsBarActivityIndicator from "GuildsBarActivityIndicator" /* 17780 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let set, set2, tmp2;
@@ -25,8 +25,8 @@ let metroRequire;
 let obj2;
 let size;
 let tmp;
-const _mod1708 = tmp(1708);
-const timing_timing = tmp(5002);
+const _mod1706 = tmp(1706);
+const timing_timing = tmp(5004);
 function StreamBadge(progress) {
   let items1;
   let tmp3Result;
@@ -46,7 +46,7 @@ function StreamBadge(progress) {
       const items = [closure_14, , ];
       const withTiming = timing_timing.withTiming;
       const tmpResult = timing_timing;
-      items[1] = _mod1708.scheduleOnRN;
+      items[1] = _mod1706.scheduleOnRN;
       items[2] = cleanUp;
       let c0;
       let c1;
@@ -134,19 +134,19 @@ export default function VoicePanelDockBadgedIcon(streaming) {
   const children = streaming.children;
   const tmp = closure_13();
   let num = 0;
-  const useSharedValue = sharedValue(1655).useSharedValue;
-  const tmp4 = sharedValue(1655);
+  const useSharedValue = sharedValue(1653).useSharedValue;
+  const tmp4 = sharedValue(1653);
   if (streaming) {
     num = 1;
   }
   sharedValue = useSharedValue(num);
   let items = [closure_16, , , , , ];
-  const useAnimatedStyle = tmp2(1655).useAnimatedStyle;
-  sharedValue(1655);
-  items[1] = sharedValue(1655).interpolate;
+  const useAnimatedStyle = tmp2(1653).useAnimatedStyle;
+  sharedValue(1653);
+  items[1] = sharedValue(1653).interpolate;
   items[2] = sharedValue;
   items[3] = 0.7;
-  items[4] = sharedValue(1655).Extrapolation;
+  items[4] = sharedValue(1653).Extrapolation;
   items[5] = 0.8;
   let c0;
   let c1;
@@ -173,11 +173,11 @@ export default function VoicePanelDockBadgedIcon(streaming) {
   VoicePanelDockBadgedIconTsx2.__initData = tmp7;
   animatedStyle = useAnimatedStyle(VoicePanelDockBadgedIconTsx2);
   const items2 = [closure_17, sharedValue, , , , , , , , , ];
-  const useAnimatedProps = tmp2(1655).useAnimatedProps;
-  sharedValue(1655);
-  items2[2] = sharedValue(1655).interpolate;
+  const useAnimatedProps = tmp2(1653).useAnimatedProps;
+  sharedValue(1653);
+  items2[2] = sharedValue(1653).interpolate;
   items2[3] = 0.7;
-  items2[4] = sharedValue(1655).Extrapolation;
+  items2[4] = sharedValue(1653).Extrapolation;
   items2[5] = 0.8;
   items2[6] = sum2;
   items2[7] = sharedValue(8903).CutoutShape;
@@ -226,7 +226,7 @@ export default function VoicePanelDockBadgedIcon(streaming) {
   }, items4);
   let obj = { style: tmp.clip, animatedProps, children };
   const items5 = [closure_5(tmp2(8903).ClipViewAnimated, obj), ];
-  const TransitionItem = tmp2(4853).TransitionItem;
+  const TransitionItem = tmp2(4855).TransitionItem;
   let obj2 = { children: items5 };
   items5[1] = closure_5(TransitionItem, { item: streaming, renderItem: callback });
   return closure_7(RoundedRect, obj2);

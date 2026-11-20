@@ -1,10 +1,10 @@
 // Module ID: 2656
 // Function ID: 2657
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 2656 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_space", scales: [1], hash: "43072982f3c341a1a105ddd69d2a9708", name: "GuildSpace.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9ndWlsZF9zcGFjZQ==", scales: [1], hash: "d38ef89f59635a32d8ea76f33e3bd427", name: "zh-CN.messages.d38ef89f59635a32d8ea76f33e3bd427.compiled.messages", type: "jsona" });

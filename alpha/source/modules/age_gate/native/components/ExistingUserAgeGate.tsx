@@ -1,21 +1,21 @@
-// Module ID: 19487
-// Function ID: 19488
+// Module ID: 19307
+// Function ID: 19308
 // Name: ExistingUserAgeGate
-// Dependencies: [5, 32, 19, 17, 4635, 1097, 19483, 1072, 21, 4792, 1502, 504, 1256, 1113, 2188, 38, 17513, 6308, 2169, 17535, 6898, 5383, 19488, 5390, 2]
+// Dependencies: [5, 32, 19, 17, 4637, 1096, 19303, 1071, 21, 4794, 1500, 504, 1255, 1112, 2186, 38, 17340, 6310, 2167, 17362, 6897, 5385, 19308, 5392, 2]
 // Exports: default
 
-// Module 19487 (ExistingUserAgeGate)
+// Module 19307 (ExistingUserAgeGate)
 import react_native from "react-native" /* 17 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import ExistingUserAgeGateConstants from "ExistingUserAgeGateConstants" /* 19483 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import ExistingUserAgeGateConstants from "ExistingUserAgeGateConstants" /* 19303 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import UserRequiredActionStore from "UserRequiredActionStore" /* 4635 */;
-import AgeGateConstants from "AgeGateConstants" /* 1097 */;
-import Constants from "Constants" /* 1072 */;
+import UserRequiredActionStore from "UserRequiredActionStore" /* 4637 */;
+import AgeGateConstants from "AgeGateConstants" /* 1096 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -77,7 +77,7 @@ export default function ExistingUserAgeGate(source) {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -178,7 +178,7 @@ export default function ExistingUserAgeGate(source) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -221,7 +221,7 @@ export default function ExistingUserAgeGate(source) {
             return obj;
           }
           c0 = 3;
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp9) {
           c0 = 3;
           throw tmp9;

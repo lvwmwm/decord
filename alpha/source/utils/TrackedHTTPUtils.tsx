@@ -1,10 +1,10 @@
-// Module ID: 6311
-// Function ID: 6312
+// Module ID: 6313
+// Function ID: 6314
 // Name: TrackedHTTPUtils
-// Dependencies: [109, 1256, 1285, 2]
+// Dependencies: [109, 1255, 1284, 2]
 
-// Module 6311 (TrackedHTTPUtils)
-import AnalyticsUtils from "AnalyticsUtils" /* 1256 */;
+// Module 6313 (TrackedHTTPUtils)
+import AnalyticsUtils from "AnalyticsUtils" /* 1255 */;
 import _objectWithoutProperties_mod from "_objectWithoutProperties" /* 109 */;
 import size from "module_2" /* 2 */;
 
@@ -188,15 +188,15 @@ const obj = {
     });
     return promise;
   },
-  patch(trackedActionData) {
+  patch(request) {
     let closure_3;
     let patch;
+    let trackedActionData;
     patch = patch(trackedActionData[2]).HTTP.patch;
-    trackedActionData = undefined;
     closure_2 = undefined;
     _objectWithoutProperties = undefined;
-    trackedActionData = trackedActionData.trackedActionData;
-    const tmp = _objectWithoutProperties(trackedActionData, closure_2);
+    trackedActionData = request.trackedActionData;
+    const tmp = _objectWithoutProperties(request, closure_2);
     closure_2 = tmp;
     _objectWithoutProperties = { url: tmp.url, request_method: "patch" };
     const promise = new Promise((arg0, arg1) => {

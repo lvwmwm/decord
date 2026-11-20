@@ -1,12 +1,12 @@
-// Module ID: 18655
-// Function ID: 18656
+// Module ID: 18479
+// Function ID: 18480
 // Name: useConjurePublishScheduleProposal
-// Dependencies: [5, 32, 19, 6500, 504, 14662, 14663, 1113, 4089, 18369, 2]
+// Dependencies: [5, 32, 19, 6502, 504, 14621, 14622, 1112, 4091, 18203, 2]
 // Exports: default
 
-// Module 18655 (useConjurePublishScheduleProposal)
-import _modDef4089 from "module_4089" /* 4089 */;
-import ConjureProjectStore2 from "ConjureProjectStore" /* 6500 */;
+// Module 18479 (useConjurePublishScheduleProposal)
+import _modDef4091 from "module_4091" /* 4091 */;
+import ConjureProjectStore2 from "ConjureProjectStore" /* 6502 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -56,7 +56,7 @@ export default function useConjurePublishScheduleProposal(arg0, trigger, arg2) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -108,7 +108,7 @@ export default function useConjurePublishScheduleProposal(arg0, trigger, arg2) {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp35) {
         dependencyMap = tmp35;
@@ -123,16 +123,16 @@ export default function useConjurePublishScheduleProposal(arg0, trigger, arg2) {
   }), items2);
   let formatToPlainStringResult = null;
   if (trigger.next_run_at > _slicedToArray(react.useState(() => Date.now()), 1)[0]) {
-    let intl = tmp(1113).intl;
+    let intl = tmp(1112).intl;
     const formatToPlainString = intl.formatToPlainString;
     let obj2 = { time: tmpResult.formatPublishScheduleTime(trigger.next_run_at) };
-    const orZDqY = _modDef4089.orZDqY;
-    tmpResult = tmp(18369);
+    const orZDqY = _modDef4091.orZDqY;
+    tmpResult = tmp(18203);
     formatToPlainStringResult = formatToPlainString(orZDqY, obj2);
   }
   let obj3 = { summary: tmpResult2.publishScheduleSummary(trigger.trigger), firstPublish: formatToPlainStringResult, status: tmp5, error: first, onTurnOn: tmp11 };
   tmp11 = undefined;
-  tmpResult2 = tmp(18369);
+  tmpResult2 = tmp(18203);
   if (stateFromStores) {
     let tmp12 = arg2;
     if (tmp12) {

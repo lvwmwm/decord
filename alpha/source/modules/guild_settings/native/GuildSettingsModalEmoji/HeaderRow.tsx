@@ -1,22 +1,22 @@
-// Module ID: 19835
-// Function ID: 19836
+// Module ID: 19653
+// Function ID: 19654
 // Name: HeaderRow
-// Dependencies: [5, 32, 19, 17, 19829, 1072, 1391, 21, 4792, 575, 7514, 10332, 1256, 1113, 1269, 8355, 5390, 5383, 504, 2]
+// Dependencies: [5, 32, 19, 17, 19647, 1071, 1389, 21, 4794, 575, 7513, 10274, 1255, 1112, 1268, 8354, 5392, 5385, 504, 2]
 // Exports: ConnectedHeaderRow
 
-// Module 19835 (HeaderRow)
+// Module 19653 (HeaderRow)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import EmojiConstants from "EmojiConstants" /* 1391 */;
-import Text_Text from "Text/Text" /* 5383 */;
+import EmojiConstants from "EmojiConstants" /* 1389 */;
+import Text_Text from "Text/Text" /* 5385 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildSettingsEmojiStore from "GuildSettingsEmojiStore" /* 19829 */;
-import Constants from "Constants" /* 1072 */;
+import GuildSettingsEmojiStore from "GuildSettingsEmojiStore" /* 19647 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let c8, closure_1, id, upload_id;
@@ -81,7 +81,7 @@ function HeaderRow(guild) {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c5;
@@ -205,7 +205,7 @@ function HeaderRow(guild) {
             c5 = 0;
             closure_132_4(false);
             c8 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp28) {
           upload_id = tmp28;
@@ -230,32 +230,32 @@ function HeaderRow(guild) {
   [c6, c7] = tmp6;
   let tmp7 = guild;
   let tmp8 = dependencyMap;
-  obj = guild(7514);
+  obj = guild(7513);
   let canCreateExpressions = obj.useManageResourcePermissions(guild).canCreateExpressions;
-  let intl = guild(1113).intl;
+  let intl = guild(1112).intl;
   let obj2 = { id: "GUILD_SETTINGS_EMOJI_UPLOAD_REQUIREMENTS_" + 1, text: stringResult };
-  stringResult = intl.string(guild(1113).t.N2qTQ3);
+  stringResult = intl.string(guild(1112).t.N2qTQ3);
   let items = [obj2, , , ];
-  let intl2 = guild(1113).intl;
+  let intl2 = guild(1112).intl;
   let obj3 = { maxSize: EMOJI_MAX_FILESIZE_KB };
   let obj4 = { id: "GUILD_SETTINGS_EMOJI_UPLOAD_REQUIREMENTS_" + 2, text: formatToPlainStringResult };
   items[1] = obj4;
-  formatToPlainStringResult = intl2.formatToPlainString(guild(1113).t.gfAXoR, obj3);
-  let intl3 = guild(1113).intl;
+  formatToPlainStringResult = intl2.formatToPlainString(guild(1112).t.gfAXoR, obj3);
+  let intl3 = guild(1112).intl;
   let obj5 = { id: "GUILD_SETTINGS_EMOJI_UPLOAD_REQUIREMENTS_" + 3, text: stringResult1 };
   items[2] = obj5;
-  stringResult1 = intl3.string(guild(1113).t.rnwKPH);
-  const intl4 = guild(1113).intl;
+  stringResult1 = intl3.string(guild(1112).t.rnwKPH);
+  const intl4 = guild(1112).intl;
   let obj6 = { id: "GUILD_SETTINGS_EMOJI_UPLOAD_REQUIREMENTS_" + 4, text: stringResult2 };
   items[3] = obj6;
   let tmp13 = closure_13;
   let tmp15 = closure_12;
   let tmp16 = c6;
   let obj7 = { style: tmp.headerContainer, children: items1 };
-  stringResult2 = intl4.string(guild(1113).t["8Vr5Qd"]);
+  stringResult2 = intl4.string(guild(1112).t["8Vr5Qd"]);
   const tmp14 = closure_14;
   if (canCreateExpressions) {
-    const Button = tmp7(5390).Button;
+    const Button = tmp7(5392).Button;
     if (!tmp3) {
       tmp3 = isUploading;
     }
@@ -265,26 +265,26 @@ function HeaderRow(guild) {
       onPress: function handleImagePicker() {
           return obj(...arguments);
         },
-      text: intl5.string(tmp7(1113).t["DU0dy/"]),
+      text: intl5.string(tmp7(1112).t["DU0dy/"]),
       disabled: uploadDisabled
     };
-    intl5 = tmp7(1113).intl;
+    intl5 = tmp7(1112).intl;
     canCreateExpressions = tmp13(Button, obj8);
   }
   items1 = [canCreateExpressions, , ];
   let tmp13Result = null != tmp5;
   if (tmp13Result) {
     let obj9 = { style: tmp.errorText, variant: "body-sm/medium", color: "text-feedback-critical", children: tmp5 };
-    tmp13Result = tmp13(tmp7(5383).Text, obj9);
+    tmp13Result = tmp13(tmp7(5385).Text, obj9);
   }
   let obj10 = { children: tmp15(tmp16, obj7) };
   items1[1] = tmp13Result;
   let obj11 = { style: tmp.uploadInstructionsContainer, children: items2 };
-  items2 = [tmp13(tmp7(5383).Text, { variant: "body-sm/medium", color: "text-muted", children: description }), , ];
+  items2 = [tmp13(tmp7(5385).Text, { variant: "body-sm/medium", color: "text-muted", children: description }), , ];
   const obj12 = { variant: "body-xs/semibold", color: "text-muted", style: tmp.uploadInstructionsHeading, children: str.toUpperCase() };
-  const Text = tmp7(5383).Text;
-  const intl6 = tmp7(1113).intl;
-  str = intl6.string(tmp7(1113).t.jrXfyw);
+  const Text = tmp7(5385).Text;
+  const intl6 = tmp7(1112).intl;
+  str = intl6.string(tmp7(1112).t.jrXfyw);
   items2[1] = tmp13(Text, obj12);
   const obj13 = {
     style: tmp.uploadInstructionsList,

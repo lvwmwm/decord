@@ -1,30 +1,32 @@
 // Module ID: 5147
 // Function ID: 5148
-// Dependencies: [5123, 5140, 5114]
-// Exports: useLongPressGesture
+// Dependencies: [5098]
+// Exports: createLastUpdateEventMap
 
 // Module 5147
-import ComposedGestureName from "ComposedGestureName" /* 5114 */;
-import _mod5123 from "module_5123" /* 5123 */;
-import _mod5140 from "module_5140" /* 5140 */;
+import reanimatedWrapper from "reanimatedWrapper" /* 5098 */;
 
-function transformLongPressProps(shouldCancelWhenOutside) {
-  if (undefined === shouldCancelWhenOutside.shouldCancelWhenOutside) {
-    shouldCancelWhenOutside.shouldCancelWhenOutside = true;
-  }
-  return shouldCancelWhenOutside;
-}
-const items = [["minDuration", "minDurationMs"], ["maxDistance", "maxDist"]];
-const map = new Map(items);
-let closure_4 = {};
+let map;
 
-export function useLongPressGesture(gestureHandlerProps) {
-  let tmp = gestureHandlerProps;
-  if (gestureHandlerProps === undefined) {
-    tmp = closure_4;
+
+export function createLastUpdateEventMap() {
+  const Worklets = reanimatedWrapper.Worklets;
+  let createShareable1;
+  if (Worklets != null) {
+    createShareable1 = Worklets.createShareable;
   }
-  const obj = _mod5123;
-  const clonedAndRemappedConfig = obj.useClonedAndRemappedConfig(tmp, map, transformLongPressProps);
-  const obj2 = _mod5140;
-  return obj2.useGesture(ComposedGestureName.SingleGestureName.LongPress, clonedAndRemappedConfig);
+  if (undefined !== createShareable1) {
+    if (undefined !== reanimatedWrapper.Worklets.UIRuntimeId) {
+      if (undefined !== reanimatedWrapper.Reanimated) {
+        const Worklets2 = tmp(5098).Worklets;
+        const createShareable = Worklets2.createShareable;
+        const _Map = Map;
+        const self = this;
+        const self2 = this;
+        const UIRuntimeId = tmp(5098).Worklets.UIRuntimeId;
+        map = new Map();
+        return createShareable(UIRuntimeId, map);
+      }
+    }
+  }
 }

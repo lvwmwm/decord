@@ -1,17 +1,17 @@
-// Module ID: 16125
-// Function ID: 16126
+// Module ID: 16089
+// Function ID: 16090
 // Name: SpendingLimitDisplay
-// Dependencies: [1231, 8216, 1390, 504, 16034, 6737, 6738, 1113, 2723, 2]
+// Dependencies: [1230, 8215, 1388, 504, 15998, 6737, 6738, 1112, 2725, 2]
 // Exports: useSpendingLimitDisplayState, useSpendingLimitFromUserSettings
 
-// Module 16125 (SpendingLimitDisplay)
+// Module 16089 (SpendingLimitDisplay)
 import get_initialized from "get initialized" /* 504 */;
-import PremiumConstants from "PremiumConstants" /* 1390 */;
-import _modDef2723 from "module_2723" /* 2723 */;
+import PremiumConstants from "PremiumConstants" /* 1388 */;
+import _modDef2725 from "module_2725" /* 2725 */;
 import PriceUtils from "PriceUtils" /* 6737 */;
-import SpendingLimitUtils from "SpendingLimitUtils" /* 16034 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 8216 */;
+import SpendingLimitUtils from "SpendingLimitUtils" /* 15998 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1230 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 8215 */;
 import size from "module_2" /* 2 */;
 
 function getSpendingLimitDisplayState(amount, arg1) {
@@ -40,10 +40,10 @@ function getSpendingLimitDisplayState(amount, arg1) {
       const diff = amount.amount - arg1;
       if (diff <= 10 * 10 ** num) {
         const obj3 = { kind: "close-to-limit", monthlyText: formatRateResult, remainingText: formatToPlainString(prop, obj4) };
-        const intl = tmp6(1113).intl;
+        const intl = tmp6(1112).intl;
         formatToPlainString = intl.formatToPlainString;
         obj4 = { amount: tmp6Result.formatPrice(diff, currency) };
-        prop = _modDef2723["+Q+bU1"];
+        prop = _modDef2725["+Q+bU1"];
         obj = obj3;
         tmp6Result = PriceUtils;
       } else {

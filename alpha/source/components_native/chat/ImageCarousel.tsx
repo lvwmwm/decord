@@ -1,33 +1,33 @@
-// Module ID: 11554
-// Function ID: 11555
+// Module ID: 11496
+// Function ID: 11497
 // Name: ImageCarousel
-// Dependencies: [19, 17, 8196, 8348, 11555, 21, 4792, 575, 1655, 5002, 1187, 5393, 38, 8326, 504, 11556, 1113, 11598, 8082, 5383, 7089, 7118, 6911, 11131, 7131, 1496, 10391, 11558, 8350, 2]
+// Dependencies: [19, 17, 8195, 8347, 11497, 21, 4794, 575, 1653, 5004, 1186, 5395, 38, 8325, 504, 11498, 1112, 11540, 8081, 5385, 7088, 7117, 6910, 11073, 7130, 1494, 10333, 11500, 8349, 2]
 
-// Module 11554 (ImageCarousel)
+// Module 11496 (ImageCarousel)
 import nativeDefault from "native" /* 575 */;
-import intl5 from "intl" /* 1113 */;
-import native from "native" /* 1187 */;
-import useWindowDimensions from "useWindowDimensions" /* 1496 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import timing_timing from "timing/timing" /* 5002 */;
-import spring_spring from "spring/spring" /* 5393 */;
-import Pressables from "Pressables" /* 6911 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7131 */;
-import DraftStore from "DraftStore" /* 8196 */;
-import Upload from "Upload" /* 8350 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 10391 */;
-import AttachmentPreviewDefault from "AttachmentPreview" /* 11131 */;
-import showUploadPreviewActionSheetDefault from "showUploadPreviewActionSheet" /* 11556 */;
-import MediaKeyboardUtils from "MediaKeyboardUtils" /* 11558 */;
+import intl5 from "intl" /* 1112 */;
+import native from "native" /* 1186 */;
+import useWindowDimensions from "useWindowDimensions" /* 1494 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import timing_timing from "timing/timing" /* 5004 */;
+import spring_spring from "spring/spring" /* 5395 */;
+import Pressables from "Pressables" /* 6910 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7130 */;
+import DraftStore from "DraftStore" /* 8195 */;
+import Upload from "Upload" /* 8349 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 10333 */;
+import AttachmentPreviewDefault from "AttachmentPreview" /* 11073 */;
+import showUploadPreviewActionSheetDefault from "showUploadPreviewActionSheet" /* 11498 */;
+import MediaKeyboardUtils from "MediaKeyboardUtils" /* 11500 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 8348 */;
-import ImageCarouselConstants from "ImageCarouselConstants" /* 11555 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8347 */;
+import ImageCarouselConstants from "ImageCarouselConstants" /* 11497 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
-const _modDef1655 = _mod1655;
+const _modDef1653 = _mod1653;
 let current;
 
 let StyleSheet;
@@ -51,15 +51,15 @@ function useTileEntranceAnimatedStyle(itemKey) {
   let tmp6;
   let tmp7;
   let tmp8;
-  let obj = _mod1655;
+  let obj = _mod1653;
   const sharedValue = obj.useSharedValue(0);
   let items = [sharedValue, itemKey];
   const effect = react.useEffect(() => {
     const result = sharedValue.set(1);
   }, items);
   const items1 = [closure_14, , , , ];
-  const useAnimatedStyle = _mod1655.useAnimatedStyle;
-  _mod1655;
+  const useAnimatedStyle = _mod1653.useAnimatedStyle;
+  _mod1653;
   items1[1] = timing_timing.withTiming;
   items1[2] = sharedValue;
   items1[3] = native.STANDARD_EASING;
@@ -299,18 +299,18 @@ class ImageCarouselTile {
     items2[1] = isHighlighted;
     obj4 = { style: items3, children: items4 };
     items3 = [tmp.tileContainer, { width: tmp6, height: diff }, tmp8];
-    View = _modDef1655.View;
+    View = _modDef1653.View;
     size = { uri, isImage, isVideo, width: tmp6, height: diff, maxFileWidth: num2, fileName, borderRadius: nativeDefault.radii.md };
     const tmp14 = AttachmentPreviewDefault;
     items4 = [unpackModuleId(tmp14, size), children];
     items5 = [unpackModuleId(PressableOpacity, obj2), ];
     const obj5 = { accessibilityRole: "button", accessibilityLabel: removeAccessibilityLabel, style: tmp.closeButton, onPress: onRemove, hitSlop: { top: 4, bottom: 4, left: 4, right: 4 }, children: unpackModuleId(View2, obj6) };
-    const PressableOpacity2 = tmp9(6911).PressableOpacity;
+    const PressableOpacity2 = tmp9(6910).PressableOpacity;
     obj6 = { style: items6, children: unpackModuleId(Icon, obj7) };
     items6 = [tmp.closeContainer, tmp8];
-    View2 = _modDef1655.View;
+    View2 = _modDef1653.View;
     obj7 = { source: AssetRegistryDefault, size: native.Icon.Sizes.MEDIUM, color: nativeDefault.unsafe_rawColors.PRIMARY_500, style: tmp.closeButtonIcon };
-    Icon = tmp9(1187).Icon;
+    Icon = tmp9(1186).Icon;
     items5[1] = unpackModuleId(PressableOpacity2, obj5);
     return authStore2(tmp12, obj3);
   }

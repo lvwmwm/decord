@@ -1,20 +1,20 @@
-// Module ID: 12209
-// Function ID: 12210
+// Module ID: 12151
+// Function ID: 12152
 // Name: useGuildProfileCTA
-// Dependencies: [19, 502, 4704, 4663, 5511, 1388, 1072, 504, 1406, 7160, 12210, 7880, 7172, 2]
+// Dependencies: [19, 502, 4706, 4665, 5513, 1386, 1071, 504, 1404, 7159, 12152, 7879, 7171, 2]
 // Exports: default, getGuildProfileCTAType
 
-// Module 12209 (useGuildProfileCTA)
-import FlagUtils from "FlagUtils" /* 1406 */;
-import GuildTagUtils from "GuildTagUtils" /* 7880 */;
-import usePendingFolderGuildIds from "usePendingFolderGuildIds" /* 12210 */;
+// Module 12151 (useGuildProfileCTA)
+import FlagUtils from "FlagUtils" /* 1404 */;
+import GuildTagUtils from "GuildTagUtils" /* 7879 */;
+import usePendingFolderGuildIds from "usePendingFolderGuildIds" /* 12152 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 4704 */;
-import GuildStore from "GuildStore" /* 4663 */;
-import InviteStore from "InviteStore" /* 5511 */;
-import UserStore from "UserStore" /* 1388 */;
-import Constants from "Constants" /* 1072 */;
+import GuildMemberStore from "GuildMemberStore" /* 4706 */;
+import GuildStore from "GuildStore" /* 4665 */;
+import InviteStore from "InviteStore" /* 5513 */;
+import UserStore from "UserStore" /* 1386 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -81,7 +81,7 @@ export default function useGuildProfileCTA(id, arg1, arg2) {
       if (invite.state !== validInviteKey.BANNED) {
         let obj;
         if (invite.state !== tmp9.EXPIRED) {
-          obj = { validInviteKey: inviteKeyForGuildId, isBypassInvite: hasFlag(num, tmp6(7160).GuildInviteFlags.IS_APPLICATION_BYPASS), inviteRoles: invite.roles };
+          obj = { validInviteKey: inviteKeyForGuildId, isBypassInvite: hasFlag(num, tmp6(7159).GuildInviteFlags.IS_APPLICATION_BYPASS), inviteRoles: invite.roles };
           num = invite.flags;
           hasFlag = FlagUtils.hasFlag;
           FlagUtils;
@@ -254,7 +254,7 @@ export function getGuildProfileCTAType(guildProfileFromInvite, code) {
         if (num == null) {
           num = 0;
         }
-        flag = hasFlag(num, tmp13(7160).GuildInviteFlags.IS_APPLICATION_BYPASS);
+        flag = hasFlag(num, tmp13(7159).GuildInviteFlags.IS_APPLICATION_BYPASS);
         tmp11 = inviteKeyForGuildId;
       }
     }

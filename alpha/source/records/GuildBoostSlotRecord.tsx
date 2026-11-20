@@ -1,10 +1,10 @@
-// Module ID: 8629
-// Function ID: 8630
+// Module ID: 8628
+// Function ID: 8629
 // Name: GuildBoostSlotRecord
-// Dependencies: [1408, 2]
+// Dependencies: [1406, 2]
 
-// Module 8629 (GuildBoostSlotRecord)
-import Record from "Record" /* 1408 */;
+// Module 8628 (GuildBoostSlotRecord)
+import Record from "Record" /* 1406 */;
 import size from "module_2" /* 2 */;
 
 class GuildBoostSlotRecord extends Record {

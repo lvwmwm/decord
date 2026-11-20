@@ -1,14 +1,14 @@
-// Module ID: 17725
-// Function ID: 17726
+// Module ID: 17552
+// Function ID: 17553
 // Name: GuildThemeNuxUtils
-// Dependencies: [5, 1231, 6270, 4622, 2]
+// Dependencies: [5, 1230, 6272, 4624, 2]
 // Exports: getInitialGuildThemeNuxSelection, saveGuildThemeNuxPreference
 
-// Module 17725 (GuildThemeNuxUtils)
-import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4622 */;
-import flow_Client from "flow/Client" /* 6270 */;
+// Module 17552 (GuildThemeNuxUtils)
+import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4624 */;
+import flow_Client from "flow/Client" /* 6272 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1230 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5;
@@ -29,7 +29,7 @@ let obj = function _saveGuildThemeNuxPreference() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -82,7 +82,7 @@ let obj = function _saveGuildThemeNuxPreference() {
           return obj;
         } else {
           c5 = 3;
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp12) {
         c5 = 3;
@@ -98,9 +98,9 @@ export function getInitialGuildThemeNuxSelection() {
   let GUILD;
   const defaultGuildThemePreference = UserSettingsProtoStore.getDefaultGuildThemePreference();
   if (defaultGuildThemePreference === flow_Client.GuildThemeSourcePreference.PERSONAL) {
-    GUILD = tmp2(6270).GuildThemeSourcePreference.PERSONAL;
+    GUILD = tmp2(6272).GuildThemeSourcePreference.PERSONAL;
   } else {
-    GUILD = tmp2(6270).GuildThemeSourcePreference.GUILD;
+    GUILD = tmp2(6272).GuildThemeSourcePreference.GUILD;
   }
   return GUILD;
 }

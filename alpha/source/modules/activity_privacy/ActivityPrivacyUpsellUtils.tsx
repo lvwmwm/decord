@@ -1,18 +1,18 @@
-// Module ID: 16066
-// Function ID: 16067
+// Module ID: 16030
+// Function ID: 16031
 // Name: ActivityPrivacyUpsellUtils
-// Dependencies: [6552, 5413, 4663, 6429, 1196, 7296, 1113, 4617, 2]
+// Dependencies: [6554, 5415, 4665, 6431, 1195, 7295, 1112, 4619, 2]
 // Exports: applyBulkGuildRestrictionChange, computeProfileToActivityUpsell, getActivityRestrictionSettingName, getPermissiveness, getProfileToActivityUpsellStrings, getUpsellStrings, profileVisibilityToActivityRestriction, sortGuildIdsByFrecency
 
-// Module 16066 (ActivityPrivacyUpsellUtils)
-import intl5 from "intl" /* 1113 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
-import UserSettings from "UserSettings" /* 4617 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7296 */;
-import FrecencyStore from "FrecencyStore" /* 6552 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5413 */;
-import GuildStore from "GuildStore" /* 4663 */;
-import SortedGuildStore from "SortedGuildStore" /* 6429 */;
+// Module 16030 (ActivityPrivacyUpsellUtils)
+import intl5 from "intl" /* 1112 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1195 */;
+import UserSettings from "UserSettings" /* 4619 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7295 */;
+import FrecencyStore from "FrecencyStore" /* 6554 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5415 */;
+import GuildStore from "GuildStore" /* 4665 */;
+import SortedGuildStore from "SortedGuildStore" /* 6431 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, set;
@@ -28,20 +28,20 @@ function computeAffectedGuilds(setting, ACTIVITY_STATUS_OFF) {
     const tmp8 = EXPANDING;
     let num2 = 2;
     let num = 2;
-    if (EXPANDING(1196).GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_OFF !== setting) {
+    if (EXPANDING(1195).GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_OFF !== setting) {
       num = 1;
-      if (tmp8(1196).GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS !== setting) {
+      if (tmp8(1195).GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS !== setting) {
         num = -1;
-        if (tmp8(1196).GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_ON === setting) {
+        if (tmp8(1195).GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_ON === setting) {
           num = 0;
         }
       }
     }
-    if (tmp8(1196).GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_OFF !== ACTIVITY_STATUS_OFF) {
+    if (tmp8(1195).GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_OFF !== ACTIVITY_STATUS_OFF) {
       num2 = 1;
-      if (tmp8(1196).GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS !== ACTIVITY_STATUS_OFF) {
+      if (tmp8(1195).GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS !== ACTIVITY_STATUS_OFF) {
         num2 = -1;
-        if (tmp8(1196).GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_ON === ACTIVITY_STATUS_OFF) {
+        if (tmp8(1195).GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_ON === ACTIVITY_STATUS_OFF) {
           num2 = 0;
         }
       }
@@ -55,14 +55,14 @@ function computeAffectedGuilds(setting, ACTIVITY_STATUS_OFF) {
           const tmp = obj;
           EXPANDING = obj.EXPANDING;
         }
-        const tmp8Result = tmp8(7296);
+        const tmp8Result = tmp8(7295);
         dependencyMap = tmp8Result.getSanitizedActivityRestrictedGuilds();
         const flattenedGuildIds = SortedGuildStore.getFlattenedGuildIds();
-        if (setting !== tmp8(1196).GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_OFF) {
-          if (setting !== tmp8(1196).GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS) {
-            if (setting !== tmp8(1196).GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_ON) {
+        if (setting !== tmp8(1195).GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_OFF) {
+          if (setting !== tmp8(1195).GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS) {
+            if (setting !== tmp8(1195).GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_ON) {
               let str3 = "all";
-              if (setting === tmp8(1196).GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS) {
+              if (setting === tmp8(1195).GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS) {
                 str3 = "all";
               }
             }
@@ -157,15 +157,15 @@ function computeAffectedGuilds(setting, ACTIVITY_STATUS_OFF) {
 }
 function getProfileVisibilitySettingName(NumberResult) {
   if (preloaded_user_settings.ProfileVisibility.FRIENDS_AND_ALL_GUILDS === NumberResult) {
-    const intl3 = tmp(1113).intl;
+    const intl3 = tmp(1112).intl;
     const str4 = intl3.string(intl5.t.Boxc8R);
     return str4.toLowerCase();
   } else if (preloaded_user_settings.ProfileVisibility.FRIENDS_AND_SMALL_GUILDS === NumberResult) {
-    const intl2 = tmp(1113).intl;
+    const intl2 = tmp(1112).intl;
     const str3 = intl2.string(intl5.t.YOIKBt);
     return str3.toLowerCase();
   } else if (preloaded_user_settings.ProfileVisibility.FRIENDS_ONLY === NumberResult) {
-    const intl = tmp(1113).intl;
+    const intl = tmp(1112).intl;
     const str2 = intl.string(intl5.t.u0nlJv);
     return str2.toLowerCase();
   } else {
@@ -204,15 +204,15 @@ export function profileVisibilityToActivityRestriction(arg0) {
 export { computeAffectedGuilds };
 export function getActivityRestrictionSettingName(NumberResult) {
   if (preloaded_user_settings.GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_OFF === NumberResult) {
-    const intl3 = tmp(1113).intl;
+    const intl3 = tmp(1112).intl;
     const str4 = intl3.string(intl5.t.FzgQna);
     return str4.toLowerCase();
   } else if (preloaded_user_settings.GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_ON_FOR_LARGE_GUILDS === NumberResult) {
-    const intl2 = tmp(1113).intl;
+    const intl2 = tmp(1112).intl;
     const str3 = intl2.string(intl5.t["1hvuGH"]);
     return str3.toLowerCase();
   } else if (preloaded_user_settings.GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_ON === NumberResult) {
-    const intl = tmp(1113).intl;
+    const intl = tmp(1112).intl;
     const str2 = intl.string(intl5.t.fQc5la);
     return str2.toLowerCase();
   } else {
@@ -232,16 +232,16 @@ export function getProfileToActivityUpsellStrings(arg0, settingName) {
   const string = intl.string;
   const t = intl5.t;
   const obj = { title: string(arg0 ? t.eYDA7D : t["9jYwjo"]), subtitle: format(arg0 ? t2["c5/jDc"] : t2.ajzh8S, obj2), confirmText: string2(arg0 ? t3["6uPZV1"] : t3.a9PIyD), toastContent: string3(arg0 ? t4.AdpgML : t4["Q7E+QF"]) };
-  const intl2 = tmp(1113).intl;
+  const intl2 = tmp(1112).intl;
   format = intl2.format;
-  t2 = tmp(1113).t;
+  t2 = tmp(1112).t;
   obj2 = { settingName };
-  const intl3 = tmp(1113).intl;
+  const intl3 = tmp(1112).intl;
   string2 = intl3.string;
-  t3 = tmp(1113).t;
-  const intl4 = tmp(1113).intl;
+  t3 = tmp(1112).t;
+  const intl4 = tmp(1112).intl;
   string3 = intl4.string;
-  t4 = tmp(1113).t;
+  t4 = tmp(1112).t;
   return obj;
 }
 export function getUpsellStrings(arg0, settingName) {
@@ -256,16 +256,16 @@ export function getUpsellStrings(arg0, settingName) {
   const string = intl.string;
   const t = intl5.t;
   const obj = { title: string(arg0 ? t.jRx1Aa : t.S0Y0bh), subtitle: format(arg0 ? t2.Fs96LO : t2.GcoYX8, obj2), confirmText: string2(arg0 ? t3["4DM5HJ"] : t3.WRrDtI), toastContent: string3(arg0 ? t4.AdpgML : t4["Q7E+QF"]) };
-  const intl2 = tmp(1113).intl;
+  const intl2 = tmp(1112).intl;
   format = intl2.format;
-  t2 = tmp(1113).t;
+  t2 = tmp(1112).t;
   obj2 = { settingName };
-  const intl3 = tmp(1113).intl;
+  const intl3 = tmp(1112).intl;
   string2 = intl3.string;
-  t3 = tmp(1113).t;
-  const intl4 = tmp(1113).intl;
+  t3 = tmp(1112).t;
+  const intl4 = tmp(1112).intl;
   string3 = intl4.string;
-  t4 = tmp(1113).t;
+  t4 = tmp(1112).t;
   return obj;
 }
 export function computeProfileToActivityUpsell(setting, NumberResult) {
@@ -281,7 +281,7 @@ export function computeProfileToActivityUpsell(setting, NumberResult) {
   } else {
     let ACTIVITY_STATUS_OFF2 = obj.get(setting);
     if (ACTIVITY_STATUS_OFF2 == null) {
-      ACTIVITY_STATUS_OFF2 = tmp3(1196).GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_OFF;
+      ACTIVITY_STATUS_OFF2 = tmp3(1195).GuildActivityStatusRestrictionDefaultV2.ACTIVITY_STATUS_OFF;
     }
     let num = 2;
     let num2 = 2;
@@ -356,7 +356,7 @@ export function applyBulkGuildRestrictionChange(direction, affectedGuildIds) {
     const self2 = this;
     const self3 = this;
     const set1 = new Set(items);
-    const ActivityRestrictedGuilds2 = tmp(4617).ActivityRestrictedGuilds;
+    const ActivityRestrictedGuilds2 = tmp(4619).ActivityRestrictedGuilds;
     const items1 = [];
     const updateSetting = ActivityRestrictedGuilds2.updateSetting;
     HermesBuiltin.arraySpread(items1, set1, 0);
@@ -365,7 +365,7 @@ export function applyBulkGuildRestrictionChange(direction, affectedGuildIds) {
     const items2 = [];
     HermesBuiltin.arraySpread(items2, sanitizedActivityRestrictedGuilds, 0);
     const found = items2.filter((item) => !set.has(item));
-    const ActivityRestrictedGuilds = tmp(4617).ActivityRestrictedGuilds;
+    const ActivityRestrictedGuilds = tmp(4619).ActivityRestrictedGuilds;
     ActivityRestrictedGuilds.updateSetting(found);
   }
 }

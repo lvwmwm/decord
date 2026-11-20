@@ -1,16 +1,16 @@
-// Module ID: 9824
-// Function ID: 9825
+// Module ID: 9826
+// Function ID: 9827
 // Name: PromotionsHooks
-// Dependencies: [19, 1388, 9023, 1390, 504, 9281, 2174, 9280, 2]
+// Dependencies: [19, 1386, 9023, 1388, 504, 9281, 2172, 9280, 2]
 // Exports: useHasActiveBogoPromotion, useIsInPromotion, useOutboundPromotions, useUnseenOutboundPromotions
 
-// Module 9824 (PromotionsHooks)
+// Module 9826 (PromotionsHooks)
 import get_initialized from "get initialized" /* 504 */;
-import PremiumConstants from "PremiumConstants" /* 1390 */;
+import PremiumConstants from "PremiumConstants" /* 1388 */;
 import PromotionsActionCreatorsDefault from "PromotionsActionCreators" /* 9280 */;
 import PromotionUtils from "PromotionUtils" /* 9281 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1388 */;
+import UserStore from "UserStore" /* 1386 */;
 import PromotionsStore from "PromotionsStore" /* 9023 */;
 import size from "module_2" /* 2 */;
 

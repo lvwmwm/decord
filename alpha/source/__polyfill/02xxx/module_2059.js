@@ -4,42 +4,43 @@
 
 // Module 2059
 const obj = {
-  locale: "ro",
+  locale: "sv",
   pluralRuleFunction(arg0, arg1) {
-    let str2;
+    let str3;
     const str = String(arg0);
     const parts = str.split(".");
-    let substr = Number(parts[0]) == arg0;
+    const tmp2 = parts[1];
+    let substr1 = Number(parts[0]) == arg0;
+    let substr = substr1;
     if (substr) {
       const first = parts[0];
-      substr = first.slice(-2);
+      substr = first.slice(-1);
+    }
+    if (substr1) {
+      const first1 = parts[0];
+      substr1 = first1.slice(-2);
     }
     if (arg1) {
-      let str5 = "other";
-      if (1 == arg0) {
-        str5 = "one";
-      }
-      str2 = str5;
-    } else if (1 != arg0) {
-      if (!parts[1]) {
+      if (1 == substr) {
         let str4;
-        if (0 != arg0) {
-          str4 = "other";
-          if (1 != arg0) {
-            str4 = "other";
-            if (substr >= 1) {
-              str4 = "other";
-            }
-          }
+        if (11 != substr1) {
+          str4 = "one";
         }
-        str2 = str4;
+        str3 = str4;
       }
-      str4 = "few";
+      str4 = "other";
     } else {
-      str2 = "one";
+      str3 = "other";
+      if (1 == arg0) {
+        str3 = "other";
+        if (!tmp2) {
+          str3 = "one";
+        }
+      }
     }
-    return str2;
+    return str3;
   }
 };
 globalThis.IntlMessageFormat.__addLocaleData(obj);
-globalThis.IntlMessageFormat.__addLocaleData({ locale: "ro-MD", parentLocale: "ro" });
+globalThis.IntlMessageFormat.__addLocaleData({ locale: "sv-AX", parentLocale: "sv" });
+globalThis.IntlMessageFormat.__addLocaleData({ locale: "sv-FI", parentLocale: "sv" });

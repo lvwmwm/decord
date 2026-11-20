@@ -1,25 +1,21 @@
 // Module ID: 1756
 // Function ID: 1757
-// Dependencies: [1712, 1719]
-// Exports: createSynchronizable
+// Dependencies: [1757, 1771, 1776]
 
 // Module 1756
-import WorkletsModule2 from "WorkletsModule" /* 1712 */;
+import normalizeAnimationKeyframes from "normalizeAnimationKeyframes" /* 1757 */;
+import normalizeDelay from "normalizeDelay" /* 1771 */;
+import normalizeCSSTransitionProperties from "normalizeCSSTransitionProperties" /* 1776 */;
 
-let tmp3;
-const registerCustomSerializable = tmp3(1719);
-
-export function createSynchronizable(__initData, fixedType) {
-  fixedType = undefined;
-  if (fixedType != null) {
-    fixedType = fixedType.fixedType;
-  }
-  const WorkletsModule = WorkletsModule2.WorkletsModule;
-  let serializable = __initData;
-  const createSynchronizable = WorkletsModule.createSynchronizable;
-  if (!fixedType) {
-    const tmp3Result = registerCustomSerializable;
-    serializable = tmp3Result.createSerializable(__initData);
-  }
-  return globalThis.__synchronizableUnpacker(createSynchronizable(serializable, fixedType), fixedType);
+for (const key10013 in normalizeAnimationKeyframes) {
+  exports[key10013] = normalizeAnimationKeyframes[key10013];
+  continue;
+}
+for (const key10017 in normalizeDelay) {
+  exports[key10017] = normalizeDelay[key10017];
+  continue;
+}
+for (const key10021 in normalizeCSSTransitionProperties) {
+  exports[key10021] = normalizeCSSTransitionProperties[key10021];
+  continue;
 }

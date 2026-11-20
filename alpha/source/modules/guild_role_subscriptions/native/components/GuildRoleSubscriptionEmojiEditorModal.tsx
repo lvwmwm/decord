@@ -1,21 +1,21 @@
-// Module ID: 20088
-// Function ID: 20089
+// Module ID: 19908
+// Function ID: 19909
 // Name: GuildRoleSubscriptionEmojiEditorModal
-// Dependencies: [5, 32, 19, 17, 4747, 21, 4792, 575, 20080, 504, 5479, 1414, 20086, 1113, 5739, 5811, 7216, 20076, 5383, 2]
+// Dependencies: [5, 32, 19, 17, 4749, 21, 4794, 575, 19900, 504, 5481, 1412, 19906, 1112, 5741, 5813, 7215, 19896, 5385, 2]
 // Exports: default
 
-// Module 20088 (GuildRoleSubscriptionEmojiEditorModal)
+// Module 19908 (GuildRoleSubscriptionEmojiEditorModal)
 import nativeDefault from "native" /* 575 */;
-import intl5 from "intl" /* 1113 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5739 */;
-import AlertDefault from "Alert" /* 5811 */;
+import intl5 from "intl" /* 1112 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5741 */;
+import AlertDefault from "Alert" /* 5813 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SubscriptionRoleStore from "SubscriptionRoleStore" /* 4747 */;
+import SubscriptionRoleStore from "SubscriptionRoleStore" /* 4749 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let c1, c4, roles, set;
@@ -71,7 +71,7 @@ export default function GuildRoleSubscriptionEmojiEditorModal(guildId) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -109,7 +109,7 @@ export default function GuildRoleSubscriptionEmojiEditorModal(guildId) {
               c3 = 0;
             }
             c4 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp11) {
           let closure_2 = tmp11;

@@ -1,12 +1,12 @@
-// Module ID: 14242
-// Function ID: 14243
+// Module ID: 14212
+// Function ID: 14213
 // Name: isMostRecentDeadEndInvite
-// Dependencies: [1072, 12116, 2]
+// Dependencies: [1071, 12058, 2]
 // Exports: isMostRecentDeadEndInvite
 
-// Module 14242 (isMostRecentDeadEndInvite)
-import Constants from "Constants" /* 1072 */;
-import isInviteActiveDefault from "isInviteActive" /* 12116 */;
+// Module 14212 (isMostRecentDeadEndInvite)
+import Constants from "Constants" /* 1071 */;
+import isInviteActiveDefault from "isInviteActive" /* 12058 */;
 import size from "module_2" /* 2 */;
 
 const ActivityActionTypes = Constants.ActivityActionTypes;

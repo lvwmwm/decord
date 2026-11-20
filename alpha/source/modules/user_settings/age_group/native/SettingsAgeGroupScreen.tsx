@@ -1,31 +1,31 @@
-// Module ID: 15935
-// Function ID: 15936
+// Module ID: 15899
+// Function ID: 15900
 // Name: SettingsAgeGroupScreen
-// Dependencies: [19, 17, 8593, 1072, 21, 4792, 575, 7674, 2188, 5383, 1113, 3343, 15894, 11875, 15936, 15898, 2]
+// Dependencies: [19, 17, 8592, 1071, 21, 4794, 575, 7673, 2186, 5385, 1112, 3345, 15858, 11817, 15900, 15862, 2]
 // Exports: default
 
-// Module 15935 (SettingsAgeGroupScreen)
+// Module 15899 (SettingsAgeGroupScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import intl3 from "intl" /* 1113 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
-import _modDef3343 from "module_3343" /* 3343 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7674 */;
-import SettingsConstants from "SettingsConstants" /* 8593 */;
-import SettingBuilders from "SettingBuilders" /* 11875 */;
-import SettingLayoutDefault from "SettingLayout" /* 15898 */;
+import Constants from "Constants" /* 1071 */;
+import intl3 from "intl" /* 1112 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2186 */;
+import _modDef3345 from "module_3345" /* 3345 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7673 */;
+import SettingsConstants from "SettingsConstants" /* 8592 */;
+import SettingBuilders from "SettingBuilders" /* 11817 */;
+import SettingLayoutDefault from "SettingLayout" /* 15862 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
 let metroImportDefault;
 let obj2;
 let tmp;
-const AgeNoticeAgeGroupHeader2 = tmp(15936);
+const AgeNoticeAgeGroupHeader2 = tmp(15900);
 function SettingsAgeGroupHeader() {
   let intl;
   let intl2;
@@ -38,11 +38,11 @@ function SettingsAgeGroupHeader() {
     const obj = HelpdeskUtilsDefault;
     openUrl(obj.getArticleURL(constants.AGE_VERIFICATION_LEARN_MORE));
   }, []);
-  const obj2 = { variant: "body-sm/semibold", color: "mobile-text-heading-primary", children: intl.string(_modDef3343.PY4MA0) };
+  const obj2 = { variant: "body-sm/semibold", color: "mobile-text-heading-primary", children: intl.string(_modDef3345.PY4MA0) };
   const Text = Text_Text.Text;
   intl = intl3.intl;
   items = [metroImportDefault(Text, obj2), ];
-  const obj3 = { variant: "body-sm/normal", color: "text-default", children: intl2.format(_modDef3343["1DN29p"], { handleOnHelpUrlHook: callback }) };
+  const obj3 = { variant: "body-sm/normal", color: "text-default", children: intl2.format(_modDef3345["1DN29p"], { handleOnHelpUrlHook: callback }) };
   const Text2 = Text_Text.Text;
   intl2 = intl3.intl;
   items[1] = metroImportDefault(Text2, obj3);
@@ -59,7 +59,7 @@ const result = size.fileFinishedImporting("modules/user_settings/age_group/nativ
 
 export default function SettingsAgeGroupScreen() {
   let isAgeNoticeSettingsEnabled;
-  let obj = isAgeNoticeSettingsEnabled(15894);
+  let obj = isAgeNoticeSettingsEnabled(15858);
   isAgeNoticeSettingsEnabled = obj.useIsAgeNoticeSettingsEnabled();
   let items = [isAgeNoticeSettingsEnabled];
   const node = react.useMemo(() => {
@@ -68,7 +68,7 @@ export default function SettingsAgeGroupScreen() {
     let items;
     let items1;
     const obj = { sections: items1, ListHeaderComponent: AgeNoticeAgeGroupHeader };
-    const obj2 = { label: intl.string(_modDef3343["5Mi5TE"]), settings: items };
+    const obj2 = { label: intl.string(_modDef3345["5Mi5TE"]), settings: items };
     const createList = SettingBuilders.createList;
     SettingBuilders;
     intl = intl3.intl;

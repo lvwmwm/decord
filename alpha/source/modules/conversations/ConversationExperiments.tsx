@@ -1,13 +1,13 @@
-// Module ID: 8510
-// Function ID: 8511
+// Module ID: 8509
+// Function ID: 8510
 // Name: ConversationExperiments
-// Dependencies: [4663, 1072, 1452, 504, 2]
+// Dependencies: [4665, 1071, 1450, 504, 2]
 // Exports: isConversationDebugUXEnabled, isTopicalNavEnabled, useIsConversationDebugUXEnabled, useIsTopicalNavEnabled
 
-// Module 8510 (ConversationExperiments)
-import Constants from "Constants" /* 1072 */;
-import GuildStore from "GuildStore" /* 4663 */;
-import ApexExperiment_mod from "ApexExperiment" /* 1452 */;
+// Module 8509 (ConversationExperiments)
+import Constants from "Constants" /* 1071 */;
+import GuildStore from "GuildStore" /* 4665 */;
+import ApexExperiment_mod from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,17 +1,17 @@
-// Module ID: 1396
-// Function ID: 1397
+// Module ID: 1394
+// Function ID: 1395
 // Name: DisplayNameStylesUtils
-// Dependencies: [32, 1397, 558, 1400, 1399, 671, 1090, 2]
+// Dependencies: [32, 1395, 558, 1398, 1397, 671, 1089, 2]
 // Exports: areDisplayNameStylesEqual, buildGummyColors, createColorPaletteList, doesEffectImpactLayout, generateColorVariants, generateRandomDisplayNameStyles, getEffectColorCount, hasNonLatinLetters, hueToGummyColor, isSolidPresetColor, normalizeDisplayNameStylesForApply, parseServerDisplayNameStyles, rebuildGummySourceColor, toEditorDisplayNameStyles, wrapHue
 
-// Module 1396 (DisplayNameStylesUtils)
+// Module 1394 (DisplayNameStylesUtils)
 import shallowEqual from "shallowEqual" /* 558 */;
 import _modDef671 from "module_671" /* 671 */;
-import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
-import DisplayNameEffect from "DisplayNameEffect" /* 1399 */;
-import ColorPaletteUtils from "ColorPaletteUtils" /* 1400 */;
+import utils_ColorUtils from "utils/ColorUtils" /* 1089 */;
+import DisplayNameEffect from "DisplayNameEffect" /* 1397 */;
+import ColorPaletteUtils from "ColorPaletteUtils" /* 1398 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1397 */;
+import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1395 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

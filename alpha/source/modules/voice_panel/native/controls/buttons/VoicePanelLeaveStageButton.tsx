@@ -1,14 +1,14 @@
-// Module ID: 19420
-// Function ID: 19421
+// Module ID: 19240
+// Function ID: 19241
 // Name: VoicePanelLeaveStageButton
-// Dependencies: [19, 4641, 21, 11687, 504, 19399, 19400, 6382, 1113, 10837, 2]
+// Dependencies: [19, 4643, 21, 11629, 504, 19219, 19220, 6384, 1112, 10779, 2]
 // Exports: default
 
-// Module 19420 (VoicePanelLeaveStageButton)
+// Module 19240 (VoicePanelLeaveStageButton)
 import Fragment from "Fragment" /* 21 */;
-import StageChannelActionCreators from "StageChannelActionCreators" /* 6382 */;
+import StageChannelActionCreators from "StageChannelActionCreators" /* 6384 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -19,22 +19,22 @@ export default function LeaveStageButton(arg0) {
   let wrapperSpecs;
   let stateFromStores;
   ({ props, wrapperSpecs } = arg0);
-  const channelId = react.useContext(stateFromStores(11687)).channelId;
+  const channelId = react.useContext(stateFromStores(11629)).channelId;
   let obj = channelId(504);
   const items = [ChannelStore];
   const items1 = [channelId];
   const tmp = stateFromStores;
   stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(channelId), items1);
-  const obj2 = channelId(19399);
+  const obj2 = channelId(19219);
   const voicePanelButtonStyles = obj2.useVoicePanelButtonStyles(wrapperSpecs);
   let tmp6 = null;
   if (null != stateFromStores) {
-    tmp(19400);
-    const intl = tmp3(1113).intl;
+    tmp(19220);
+    const intl = tmp3(1112).intl;
     tmp6 = <tmpResult onPress={function onPress() {
       const obj = StageChannelActionCreators;
       return obj.audienceAckRequestToSpeak(stateFromStores, true);
-    }} props={props} accessibilityLabel={intl.string(channelId(1113).t.ezLpY6)} style={voicePanelButtonStyles.iconBg}>{null}</tmpResult>;
+    }} props={props} accessibilityLabel={intl.string(channelId(1112).t.ezLpY6)} style={voicePanelButtonStyles.iconBg}>{null}</tmpResult>;
   }
   return tmp6;
 };

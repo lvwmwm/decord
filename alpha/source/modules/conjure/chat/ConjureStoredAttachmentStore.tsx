@@ -1,9 +1,9 @@
-// Module ID: 18354
-// Function ID: 18355
+// Module ID: 18188
+// Function ID: 18189
 // Name: ConjureStoredAttachmentStore
 // Dependencies: [504, 572, 2]
 
-// Module 18354 (ConjureStoredAttachmentStore)
+// Module 18188 (ConjureStoredAttachmentStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;

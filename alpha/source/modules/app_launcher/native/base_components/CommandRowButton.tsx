@@ -1,13 +1,13 @@
-// Module ID: 12882
-// Function ID: 12883
+// Module ID: 12852
+// Function ID: 12853
 // Name: CommandRowButton
-// Dependencies: [5, 32, 19, 21, 12806, 10612, 12770, 5444, 6939, 5390, 1113, 5490, 575, 2]
+// Dependencies: [5, 32, 19, 21, 12776, 10554, 12740, 5446, 6938, 5392, 1112, 5492, 575, 2]
 // Exports: default, useCommandRowSend
 
-// Module 12882 (CommandRowButton)
+// Module 12852 (CommandRowButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1113 */;
+import intl2 from "intl" /* 1112 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -23,13 +23,13 @@ export default function CommandRowIcon(hasOptions) {
   let intl;
   let tmp3Result;
   if (hasOptions.hasOptions) {
-    tmp3Result = tmp3(tmp4(6939).TableRowArrow, {});
+    tmp3Result = tmp3(tmp4(6938).TableRowArrow, {});
   } else {
     const obj = { size: "sm", text: intl.string(intl2.t.TXNS7S), onPress: tmp2, icon: null, iconPosition: "end", grow: false, variant: "tertiary", disabled: tmp };
-    const Button = tmp4(5390).Button;
-    intl = tmp4(1113).intl;
+    const Button = tmp4(5392).Button;
+    intl = tmp4(1112).intl;
     ({ size: "sm", color: nativeDefault.colors.REDESIGN_BUTTON_TERTIARY_TEXT });
-    const SendMessageIcon = tmp4(5490).SendMessageIcon;
+    const SendMessageIcon = tmp4(5492).SendMessageIcon;
     tmp3Result = tmp3(Button, obj);
   }
   return tmp3Result;
@@ -71,7 +71,7 @@ export function useCommandRowSend(command) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -120,7 +120,7 @@ export function useCommandRowSend(command) {
           c3 = 0;
           closure_128_5(false);
           c4 = 3;
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp25) {
         onExecuteCommand = tmp25;

@@ -1,12 +1,12 @@
-// Module ID: 14184
-// Function ID: 14185
+// Module ID: 14154
+// Function ID: 14155
 // Name: VoiceChannelBadgeExperiment
-// Dependencies: [5410, 5732, 2]
+// Dependencies: [5412, 5734, 2]
 // Exports: getVoiceChannelBadgeExperiment, useVoiceChannelBadgeExperiment
 
-// Module 14184 (VoiceChannelBadgeExperiment)
-import ExperimentConstants from "ExperimentConstants" /* 5410 */;
-import createExperiment from "module_5732" /* 5732 */;
+// Module 14154 (VoiceChannelBadgeExperiment)
+import ExperimentConstants from "ExperimentConstants" /* 5412 */;
+import createExperiment from "module_5734" /* 5734 */;
 import size from "module_2" /* 2 */;
 
 let items;

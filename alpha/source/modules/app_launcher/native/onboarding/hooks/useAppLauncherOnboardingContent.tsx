@@ -1,15 +1,15 @@
-// Module ID: 12815
-// Function ID: 12816
+// Module ID: 12785
+// Function ID: 12786
 // Name: useAppLauncherOnboardingContent
-// Dependencies: [32, 10375, 4641, 4638, 4824, 4625, 504, 12816, 12821, 8960, 2]
+// Dependencies: [32, 10317, 4643, 4640, 4826, 4627, 504, 12786, 12791, 8960, 2]
 // Exports: default
 
-// Module 12815 (useAppLauncherOnboardingContent)
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4638 */;
-import useCanShowAppLauncherOnboardingDefault from "useCanShowAppLauncherOnboarding" /* 12821 */;
+// Module 12785 (useAppLauncherOnboardingContent)
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4640 */;
+import useCanShowAppLauncherOnboardingDefault from "useCanShowAppLauncherOnboarding" /* 12791 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ApplicationFrecencyStore from "ApplicationFrecencyStore" /* 10375 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
+import ApplicationFrecencyStore from "ApplicationFrecencyStore" /* 10317 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
 import size from "module_2" /* 2 */;
 
 const constants = DismissibleContentConstants.DismissibleContentGroupName;
@@ -61,11 +61,11 @@ export default function useAppLauncherOnboardingContent(channelId) {
   const tmp3 = useCanShowAppLauncherOnboardingDefault({ channelId });
   const canShowAppsOrActivitiesBanner = tmp3.canShowAppsOrActivitiesBanner;
   if (tmp3.canShowBotsBanner) {
-    items.push(tmp(4625).DismissibleContent.APP_LAUNCHER_ONBOARDING_BOTS_BANNER);
+    items.push(tmp(4627).DismissibleContent.APP_LAUNCHER_ONBOARDING_BOTS_BANNER);
   }
   if (canShowAppsOrActivitiesBanner) {
     const push = items.push;
-    const DismissibleContent = tmp(4625).DismissibleContent;
+    const DismissibleContent = tmp(4627).DismissibleContent;
     if (hasUsedActivities) {
       push(DismissibleContent.APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER);
     } else {

@@ -1,15 +1,15 @@
-// Module ID: 15792
-// Function ID: 15793
+// Module ID: 15756
+// Function ID: 15757
 // Name: useHexagonCampaignDaysLeft
-// Dependencies: [19, 1388, 4817, 1089, 504, 4820, 8836, 2]
+// Dependencies: [19, 1386, 4819, 1088, 504, 4822, 8836, 2]
 // Exports: useHexagonCampaignDaysLeft
 
-// Module 15792 (useHexagonCampaignDaysLeft)
-import DurationsDefault from "Durations" /* 1089 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4817 */;
-import HexagonCampaignUtils from "HexagonCampaignUtils" /* 4820 */;
+// Module 15756 (useHexagonCampaignDaysLeft)
+import DurationsDefault from "Durations" /* 1088 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4819 */;
+import HexagonCampaignUtils from "HexagonCampaignUtils" /* 4822 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1388 */;
+import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

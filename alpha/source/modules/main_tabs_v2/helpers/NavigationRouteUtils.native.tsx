@@ -1,15 +1,15 @@
-// Module ID: 4968
-// Function ID: 4969
+// Module ID: 4970
+// Function ID: 4971
 // Name: NavigationRouteUtils
-// Dependencies: [32, 19, 4969, 1503, 1269, 4970, 4975, 4976, 4977, 2]
+// Dependencies: [32, 19, 4971, 1501, 1268, 4972, 4977, 4978, 4979, 2]
 // Exports: coerceChannelSecondaryViewChatRoute, coerceICYMIRoute, coerceModalRoute, coerceSidebarRoute, getCurrentNavigationRouteName, getCurrentRouteParents, getICYMIRouteIfActive, getOpenModalKey, getSelectedChannelFromRoute, getSelectedGuildFromRoute, getTabsRouteIfActive, isGuildsOnTopOfTabs, navigateToChannel, navigateToContextMenuCommands, navigateToCreateThread, navigateToNewGroupDM, navigateToRootTab, popAllModals, popModalsAboveKey, popScreens, pushModal, resetToAuthRoute, routesBelowFirstRemoved, setHomeDrawerState, useCurrentNavigationRouteName, useIsModalOpen, useOpenModalKey
 
-// Module 4968 (NavigationRouteUtils)
-import v1 from "v1" /* 1269 */;
-import Link from "Link" /* 1503 */;
-import RootNavigationRef from "RootNavigationRef" /* 4969 */;
-import react_nativeDefault from "react-native" /* 4975 */;
-import ChatInputUtils from "ChatInputUtils" /* 4977 */;
+// Module 4970 (NavigationRouteUtils)
+import v1 from "v1" /* 1268 */;
+import Link from "Link" /* 1501 */;
+import RootNavigationRef from "RootNavigationRef" /* 4971 */;
+import react_nativeDefault from "react-native" /* 4977 */;
+import ChatInputUtils from "ChatInputUtils" /* 4979 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -20,7 +20,7 @@ let _require;
 let closure_4;
 let hasOwnProperty;
 let tmp;
-const Types = tmp(4976);
+const Types = tmp(4978);
 function modalRoutesAboveMain(routes) {
   const items = [];
   const substr = routes.slice(1);
@@ -37,10 +37,10 @@ function modalRoutesAboveMain(routes) {
     return items;
   }
 }
-function coerceMainRoute(routes) {
-  if (null != routes) {
-    if ("main" === routes.name) {
-      return routes;
+function coerceMainRoute(findLastResult) {
+  if (null != findLastResult) {
+    if ("main" === findLastResult.name) {
+      return findLastResult;
     }
   }
 }
@@ -51,10 +51,10 @@ function coerceChannelRoute(currentRoute) {
     }
   }
 }
-function coerceTabsRoute(item10077) {
-  if (null != item10077) {
-    if ("tabs" === item10077.name) {
-      return item10077;
+function coerceTabsRoute(item10080) {
+  if (null != item10080) {
+    if ("tabs" === item10080.name) {
+      return item10080;
     }
   }
 }
@@ -216,8 +216,9 @@ export function navigateToChannel(channelId) {
   let obj3;
   let obj5;
   let replaceChannelAndFixRoot;
+  let subRouteId;
   let tmp2Result2;
-  ({ channelId, guildId, messageId, replaceChannelAndFixRoot } = channelId);
+  ({ channelId, guildId, messageId, subRouteId, replaceChannelAndFixRoot } = channelId);
   if (replaceChannelAndFixRoot === undefined) {
     replaceChannelAndFixRoot = false;
   }
@@ -245,7 +246,7 @@ export function navigateToChannel(channelId) {
               const obj2 = { params: obj3 };
               const merged = Object.assign(tmp49);
               obj4 = obj2;
-              obj3 = { channelId, guildId, messageId };
+              obj3 = { channelId, guildId, messageId, subRouteId };
             } else {
               let combined = channelId;
               if (channelId == null) {
@@ -254,13 +255,13 @@ export function navigateToChannel(channelId) {
                 combined = "channel-" + tmp2Result.v4();
               }
               obj4 = { name: "channel", key: combined, params: obj5 };
-              obj5 = { channelId, guildId, messageId };
+              obj5 = { channelId, guildId, messageId, subRouteId };
             }
             let tmp19 = null;
             const routes = tmp13.state.routes;
-            for (const item10077 of routes) {
+            for (const item10080 of routes) {
               let state;
-              let tmp23 = coerceTabsRoute(item10077);
+              let tmp23 = coerceTabsRoute(item10080);
               tmp19 = tmp23;
               if (null != tmp23) {
                 obj12.return();
@@ -332,18 +333,20 @@ export function navigateToChannel(channelId) {
         const tmp6 = coerceChannelRoute(rootNavigationRef.getCurrentRoute());
         if (null != tmp6) {
           if (tmp6.params.channelId === channelId) {
-            const dispatch = rootNavigationRef.dispatch;
-            const obj14 = { source: tmp6.key };
-            const CommonActions = tmp2(1503).CommonActions;
-            const obj15 = { channelId, guildId, messageId };
-            const merged7 = Object.assign(CommonActions.setParams(obj15));
-            dispatch(obj14);
+            if (tmp6.params.subRouteId === subRouteId) {
+              const dispatch = rootNavigationRef.dispatch;
+              const obj14 = { source: tmp6.key };
+              const CommonActions = tmp2(1501).CommonActions;
+              const obj15 = { channelId, guildId, messageId, subRouteId };
+              const merged7 = Object.assign(CommonActions.setParams(obj15));
+              dispatch(obj14);
+            }
+            return true;
           }
-          return true;
         }
         const navigate = rootNavigationRef.navigate;
         const _HermesInternal = HermesInternal;
-        const obj16 = { channelId, guildId, messageId, screenKey: "channel-" + tmp2Result2.v4() };
+        const obj16 = { channelId, guildId, messageId, subRouteId, screenKey: "channel-" + tmp2Result2.v4() };
         tmp2Result2 = v1;
         navigate("channel", obj16);
       }
@@ -359,7 +362,7 @@ export function navigateToRootTab(drawerOpen) {
   let obj3;
   let screen;
   let tmp2Result4;
-  let obj = icymiScreen(4969);
+  let obj = icymiScreen(4971);
   const rootNavigationRef = obj.getRootNavigationRef();
   ({ screen, forceNavigate } = drawerOpen);
   if (null != rootNavigationRef) {
@@ -378,23 +381,23 @@ export function navigateToRootTab(drawerOpen) {
           if (forceNavigate) {
             let obj2 = { screen, params: obj3 };
             obj3 = { guildId, channelId, drawerOpen: drawerOpen.drawerOpen };
-            const tmp2Result = icymiScreen(4969);
+            const tmp2Result = icymiScreen(4971);
             const rootNavigationRef1 = tmp2Result.getRootNavigationRef();
             if (null != rootNavigationRef1) {
               if (rootNavigationRef1.isReady()) {
                 if (tmp4) {
                   const rootState = rootNavigationRef1.getRootState();
                   const obj4 = { name: "tabs", key: "tabs-" + tmp2Result4.v4(), params: obj2 };
-                  const wrapRouteForRootNavigator = icymiScreen(4970).wrapRouteForRootNavigator;
-                  icymiScreen(4970);
+                  const wrapRouteForRootNavigator = icymiScreen(4972).wrapRouteForRootNavigator;
+                  icymiScreen(4972);
                   const _HermesInternal = HermesInternal;
                   const items = [obj4];
                   const items1 = [];
-                  tmp2Result4 = icymiScreen(1269);
+                  tmp2Result4 = icymiScreen(1268);
                   const arraySpreadResult = HermesBuiltin.arraySpread(items1, wrapRouteForRootNavigator(items), 0);
                   HermesBuiltin.arraySpread(items1, modalRoutesAboveMain(rootState.routes), arraySpreadResult);
                   const dispatch = rootNavigationRef1.dispatch;
-                  let CommonActions = tmp2(1503).CommonActions;
+                  let CommonActions = tmp2(1501).CommonActions;
                   const reset = CommonActions.reset;
                   const obj5 = { routes: items1, index: items1.length - 1 };
                   const merged = Object.assign(rootState);
@@ -458,7 +461,7 @@ export function pushModal(trigger) {
   let tmp4 = null == rootNavigationRef || !rootNavigationRef.isReady();
   if (!tmp4) {
     if (runningTTIAutomationResult) {
-      runningTTIAutomationResult = trigger.trigger !== tmp(4976).ModalOpenTrigger.USER_INTERACTION;
+      runningTTIAutomationResult = trigger.trigger !== tmp(4978).ModalOpenTrigger.USER_INTERACTION;
     }
     tmp4 = runningTTIAutomationResult;
   }

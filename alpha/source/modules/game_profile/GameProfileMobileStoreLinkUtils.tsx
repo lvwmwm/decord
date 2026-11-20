@@ -1,11 +1,11 @@
 // Module ID: 9709
 // Function ID: 9710
 // Name: GameProfileMobileStoreLinkUtils
-// Dependencies: [9659, 1091, 2]
+// Dependencies: [9659, 1090, 2]
 // Exports: getMobileStoreLink
 
 // Module 9709 (GameProfileMobileStoreLinkUtils)
-import ApplicationDistributors from "ApplicationDistributors" /* 1091 */;
+import ApplicationDistributors from "ApplicationDistributors" /* 1090 */;
 import ThirdPartyGameApplicationWebsiteCategory from "ThirdPartyGameApplicationWebsiteCategory" /* 9659 */;
 import size from "module_2" /* 2 */;
 

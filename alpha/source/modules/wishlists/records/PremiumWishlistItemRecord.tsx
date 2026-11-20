@@ -1,12 +1,12 @@
 // Module ID: 8867
 // Function ID: 8868
 // Name: PremiumWishlistItemRecord
-// Dependencies: [2167, 8865, 1072, 2]
+// Dependencies: [2165, 8865, 1071, 2]
 // Exports: isPremiumWishlistItemRecord
 
 // Module 8867 (PremiumWishlistItemRecord)
-import Constants from "Constants" /* 1072 */;
-import SKURecord from "SKURecord" /* 2167 */;
+import Constants from "Constants" /* 1071 */;
+import SKURecord from "SKURecord" /* 2165 */;
 import BaseWishlistItemRecord from "BaseWishlistItemRecord" /* 8865 */;
 import size from "module_2" /* 2 */;
 

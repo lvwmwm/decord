@@ -1,18 +1,18 @@
-// Module ID: 10142
-// Function ID: 10143
+// Module ID: 10145
+// Function ID: 10146
 // Name: UserProfileWidgetExpandableItems
-// Dependencies: [32, 19, 17, 21, 4792, 575, 5383, 1113, 2]
+// Dependencies: [32, 19, 17, 21, 4794, 575, 5385, 1112, 2]
 // Exports: WidgetViewMoreButton, useExpandableItems
 
-// Module 10142 (UserProfileWidgetExpandableItems)
+// Module 10145 (UserProfileWidgetExpandableItems)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5383 */;
+import intl2 from "intl" /* 1112 */;
+import Text_Text from "Text/Text" /* 5385 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -50,10 +50,10 @@ export function WidgetViewMoreButton(hiddenCount) {
     const intl = intl2.intl;
     const tmp5 = Pressable;
     if (expanded) {
-      let stringResult = intl.string(tmp7(1113).t["6MwJo/"]);
+      let stringResult = intl.string(tmp7(1112).t["6MwJo/"]);
     } else {
       const obj = { numberOfItems: hiddenCount };
-      stringResult = intl.formatToPlainString(tmp7(1113).t.zr0Y5R, obj);
+      stringResult = intl.formatToPlainString(tmp7(1112).t.zr0Y5R, obj);
     }
     tmp4Result = tmp4(tmp5, obj2);
   }

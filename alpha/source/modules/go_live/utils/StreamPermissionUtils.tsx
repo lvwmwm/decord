@@ -1,20 +1,20 @@
-// Module ID: 6287
-// Function ID: 6288
+// Module ID: 6289
+// Function ID: 6290
 // Name: StreamPermissionUtils
-// Dependencies: [5534, 4645, 4722, 4663, 4724, 5440, 1072, 6288, 5827, 6289, 6298, 504, 2]
+// Dependencies: [5536, 4647, 4724, 4665, 4726, 5442, 1071, 6290, 5829, 6291, 6300, 504, 2]
 // Exports: getStreamEligibleChannels, useCanWatchStream
 
-// Module 6287 (StreamPermissionUtils)
-import Constants from "Constants" /* 1072 */;
-import ChannelRecord from "ChannelRecord" /* 4645 */;
-import GuildChannelStore from "GuildChannelStore" /* 4722 */;
-import ChannelUtils from "ChannelUtils" /* 5827 */;
-import canJoinVoiceChannelDefault from "canJoinVoiceChannel" /* 6288 */;
-import shouldAgeVerifyForAgeGate from "shouldAgeVerifyForAgeGate" /* 6289 */;
-import GameConsoleStore from "GameConsoleStore" /* 5534 */;
-import GuildStore from "GuildStore" /* 4663 */;
-import PermissionStore from "PermissionStore" /* 4724 */;
-import VoiceStateStore from "VoiceStateStore" /* 5440 */;
+// Module 6289 (StreamPermissionUtils)
+import Constants from "Constants" /* 1071 */;
+import ChannelRecord from "ChannelRecord" /* 4647 */;
+import GuildChannelStore from "GuildChannelStore" /* 4724 */;
+import ChannelUtils from "ChannelUtils" /* 5829 */;
+import canJoinVoiceChannelDefault from "canJoinVoiceChannel" /* 6290 */;
+import shouldAgeVerifyForAgeGate from "shouldAgeVerifyForAgeGate" /* 6291 */;
+import GameConsoleStore from "GameConsoleStore" /* 5536 */;
+import GuildStore from "GuildStore" /* 4665 */;
+import PermissionStore from "PermissionStore" /* 4726 */;
+import VoiceStateStore from "VoiceStateStore" /* 5442 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -74,7 +74,7 @@ function canWatchStream(basicChannel1, VoiceStateStore, GuildStore, PermissionSt
     let result = obj2.shouldAgeVerifyForAgeGate();
     const tmp11 = require;
     if (result) {
-      const tmp11Result = tmp11(6298);
+      const tmp11Result = tmp11(6300);
       result = tmp11Result.shouldShowAgeGateForChannelId(basicChannel1.id);
     }
     if (tmp10) {

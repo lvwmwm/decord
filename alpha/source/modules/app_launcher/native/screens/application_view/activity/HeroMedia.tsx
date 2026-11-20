@@ -1,23 +1,23 @@
-// Module ID: 12861
-// Function ID: 12862
+// Module ID: 12831
+// Function ID: 12832
 // Name: HeroMedia
-// Dependencies: [19, 4793, 1501, 21, 4792, 12045, 10772, 504, 6745, 12836, 9134, 1113, 2]
+// Dependencies: [19, 4795, 1499, 21, 4794, 11987, 10714, 504, 6745, 12806, 9134, 1112, 2]
 // Exports: default, useHeroMediaDimensions
 
-// Module 12861 (HeroMedia)
+// Module 12831 (HeroMedia)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1501 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1499 */;
 import useGetOrFetchApplications from "useGetOrFetchApplications" /* 6745 */;
-import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 10772 */;
-import useDefaultAppLauncherWidth from "useDefaultAppLauncherWidth" /* 12045 */;
+import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 10714 */;
+import useDefaultAppLauncherWidth from "useDefaultAppLauncherWidth" /* 11987 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4793 */;
-import createStyles from "createStyles" /* 4792 */;
+import AccessibilityStore from "AccessibilityStore" /* 4795 */;
+import createStyles from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let tmp6;
-const getPreviewVideoAssetUrlDefault = tmp6(12836);
+const getPreviewVideoAssetUrlDefault = tmp6(12806);
 const DEFAULT_CONTENT_PADDING = AppLauncherNativeConstants.DEFAULT_CONTENT_PADDING;
 const jsx = Fragment.jsx;
 let closure_6 = createStyles.createStyles({ mediaBackground: { backgroundColor: "black" } });
@@ -79,10 +79,10 @@ export default function HeroMedia(arg0) {
         size.height = rounded;
         size.width = contentWidth2;
         size.poster = tmp7.url;
-        const intl = tmp2(1113).intl;
+        const intl = tmp2(1112).intl;
         const formatToPlainString = intl.formatToPlainString;
         let str3;
-        const prop2 = tmp2(1113).t["Af+EQD"];
+        const prop2 = tmp2(1112).t["Af+EQD"];
         if (getOrFetchApplication != null) {
           str3 = getOrFetchApplication.name;
         }

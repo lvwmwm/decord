@@ -1,12 +1,12 @@
-// Module ID: 8412
-// Function ID: 8413
+// Module ID: 8411
+// Function ID: 8412
 // Name: UploadStore
-// Dependencies: [5843, 504, 572, 2]
+// Dependencies: [5845, 504, 572, 2]
 
-// Module 8412 (UploadStore)
+// Module 8411 (UploadStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import MessageStore from "MessageStore" /* 5843 */;
+import MessageStore from "MessageStore" /* 5845 */;
 import size_mod from "module_2" /* 2 */;
 
 let cancel, closure_8, item;
@@ -57,17 +57,18 @@ let obj = {
     let file;
     let message;
     let uploader;
-    ({ channelId, file, uploader, message } = arg0);
+    ({ channelId, file } = arg0);
+    ({ uploader, message } = arg0);
     if (!uploader._aborted) {
       if (!uploader._errored) {
-        let tmp3 = closure_4[channelId];
+        let arr = closure_4[channelId];
         const tmp2 = closure_4;
-        if (tmp3 == null) {
-          tmp3 = closure_3;
+        if (arr == null) {
+          arr = closure_3;
         }
         closure_5[file.id] = uploader;
         const items1 = [];
-        items1[HermesBuiltin.arraySpread(items1, tmp3, 0)] = file;
+        items1[HermesBuiltin.arraySpread(items1, arr.filter((id) => id.id !== id.id), 0)] = file;
         tmp2[channelId] = items1;
         if (null != message) {
           closure_6[file.id] = message;
@@ -84,7 +85,7 @@ let obj = {
           }
           const items2 = file.items;
           let mapped;
-          const tmp12 = closure_8;
+          const tmp10 = closure_8;
           if (items2 != null) {
             mapped = items2.map((item) => {
               let num2;
@@ -114,7 +115,7 @@ let obj = {
           if (mapped == null) {
             mapped = [];
           }
-          tmp12[id2] = mapped;
+          tmp10[id2] = mapped;
         }
       }
     }

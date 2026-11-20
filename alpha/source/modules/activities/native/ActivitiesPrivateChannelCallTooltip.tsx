@@ -1,28 +1,28 @@
-// Module ID: 13644
-// Function ID: 13645
+// Module ID: 13614
+// Function ID: 13615
 // Name: ActivitiesPrivateChannelCallTooltip
-// Dependencies: [19, 17, 4793, 2145, 21, 4792, 504, 1655, 5002, 1187, 1113, 5390, 2]
+// Dependencies: [19, 17, 4795, 2143, 21, 4794, 504, 1653, 5004, 1186, 1112, 5392, 2]
 // Exports: default
 
-// Module 13644 (ActivitiesPrivateChannelCallTooltip)
+// Module 13614 (ActivitiesPrivateChannelCallTooltip)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
-import _modDef1655 from "module_1655" /* 1655 */;
-import Constants from "Constants" /* 2145 */;
+import _modDef1653 from "module_1653" /* 1653 */;
+import Constants from "Constants" /* 2143 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4793 */;
-import createStyles from "createStyles" /* 4792 */;
+import AccessibilityStore from "AccessibilityStore" /* 4795 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let items;
 let obj2;
 let tmp2;
-const intl4 = tmp2(1113);
-const native = tmp2(1187);
-const _mod1655 = tmp2(1655);
-const timing_timing = tmp2(5002);
-const components_Button_Button = tmp2(5390);
+const intl4 = tmp2(1112);
+const native = tmp2(1186);
+const _mod1653 = tmp2(1653);
+const timing_timing = tmp2(5004);
+const components_Button_Button = tmp2(5392);
 let View = react_native.View;
 const helpdeskUrl = Constants.EMBEDDED_ACTIVITIES_BLOG_POST_URL;
 const jsx = Fragment.jsx;
@@ -57,10 +57,10 @@ export default function ActivitiesPrivateChannelCallTooltip(onClosePress) {
     num = 0;
   }
   const items1 = [closure_9, , , , , , ];
-  const useAnimatedStyle = _mod1655.useAnimatedStyle;
-  _mod1655;
-  items1[1] = _mod1655.withRepeat;
-  items1[2] = _mod1655.withSequence;
+  const useAnimatedStyle = _mod1653.useAnimatedStyle;
+  _mod1653;
+  items1[1] = _mod1653.withRepeat;
+  items1[2] = _mod1653.withSequence;
   items1[3] = timing_timing.withTiming;
   items1[4] = 40;
   items1[5] = num;
@@ -91,7 +91,7 @@ export default function ActivitiesPrivateChannelCallTooltip(onClosePress) {
   ActivitiesPrivateChannelCallTooltipTsx1.__initData = tmp5;
   const animatedStyle = useAnimatedStyle(ActivitiesPrivateChannelCallTooltipTsx1);
   const items3 = [tmp.tooltipContainer, animatedStyle];
-  View = _modDef1655.View;
+  View = _modDef1653.View;
   ({ containerStyle: tmp.tooltip, labelStyle: tmp.tooltipText, arrowStyle: tmp.arrow, label: intl.format(intl4.t.xAW71b, obj4), title: intl2.string(intl4.t.HOPqzR), children: null });
   const Tooltip = native.Tooltip;
   intl = intl4.intl;

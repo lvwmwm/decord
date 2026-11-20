@@ -1,12 +1,12 @@
-// Module ID: 7863
-// Function ID: 7864
+// Module ID: 7862
+// Function ID: 7863
 // Name: AppStoreAgeSignalActionCreators
-// Dependencies: [5, 1072, 1285, 2]
+// Dependencies: [5, 1071, 1284, 2]
 // Exports: registerAgeSignalAttestKey, reinstateAppStoreConsent, requestAgeSignalChallenge, submitAgeSignal
 
-// Module 7863 (AppStoreAgeSignalActionCreators)
-import Constants from "Constants" /* 1072 */;
-import HTTPUtils from "HTTPUtils" /* 1285 */;
+// Module 7862 (AppStoreAgeSignalActionCreators)
+import Constants from "Constants" /* 1071 */;
+import HTTPUtils from "HTTPUtils" /* 1284 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -44,7 +44,7 @@ obj = function _requestAgeSignalChallenge() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -95,7 +95,7 @@ obj = function _requestAgeSignalChallenge() {
               }
             }
             c4 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp11) {
           c4 = 3;
@@ -147,7 +147,7 @@ obj = function _submitAgeSignal() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -203,7 +203,7 @@ obj = function _submitAgeSignal() {
               };
               const HTTP = closure_135_0(closure_135_1[2]).HTTP;
               const request = { url: closure_135_3.AGE_SIGNAL, body: obj5, rejectWithError: true, failImmediatelyWhenRateLimited: true };
-              obj5 = { platform: closure_0.platform, age_lower: closure_0.ageLower, age_upper: closure_0.ageUpper, google_age_signals_status: closure_0.googleAgeSignalsStatus, google_age_range_source: closure_0.googleAgeRangeSource, google_significant_change_status: closure_0.googleSignificantChangeStatus, apple_verified_method: closure_0.appleVerifiedMethod, is_cold_launch, integrity_token, attest_key_id: keyId, attest_assertion: assertion, source: str };
+              obj5 = { platform: closure_0.platform, age_lower: closure_0.ageLower, age_upper: closure_0.ageUpper, google_age_signals_status: closure_0.googleAgeSignalsStatus, google_age_range_source: closure_0.googleAgeRangeSource, google_significant_change_status: closure_0.googleSignificantChangeStatus, google_install_id: closure_0.googleInstallId, apple_verified_method: closure_0.appleVerifiedMethod, is_cold_launch, integrity_token, attest_key_id: keyId, attest_assertion: assertion, source: str };
               keyId = undefined;
               const post = HTTP.post;
               if (closure_4 != null) {

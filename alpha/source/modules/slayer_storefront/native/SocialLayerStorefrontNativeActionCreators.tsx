@@ -1,17 +1,17 @@
 // Module ID: 9469
 // Function ID: 9470
 // Name: SocialLayerStorefrontNativeActionCreators
-// Dependencies: [5, 6837, 8863, 502, 6553, 21, 5740, 1113, 3989, 8870, 9288, 6308, 9470, 2121, 2186, 9474, 9490, 13816, 2]
+// Dependencies: [5, 6837, 8863, 502, 6555, 21, 5742, 1112, 3991, 8870, 9288, 6310, 9470, 2119, 2184, 9474, 9490, 13785, 2]
 // Exports: closeSocialLayerStorefrontGiftModal, closeSocialLayerStorefrontProductDetailsModal, openSocialLayerStorefrontGiftModal, openSocialLayerStorefrontProductDetailsModal, openSocialLayerStorefrontProductGiftPurchaseSuccessModal, openSocialLayerStorefrontProductSelfPurchaseSuccessModal, openSocialLayerStorefrontUnsupportedOnMobileAlert, toggleSocialLayerStorefrontWishlist
 
 // Module 9469 (SocialLayerStorefrontNativeActionCreators)
 import Fragment from "Fragment" /* 21 */;
-import intl3 from "intl" /* 1113 */;
-import asyncRequire from "asyncRequire" /* 2121 */;
-import BillingPlatformUtils from "BillingPlatformUtils" /* 2186 */;
-import _modDef3989 from "module_3989" /* 3989 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5740 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6308 */;
+import intl3 from "intl" /* 1112 */;
+import asyncRequire from "asyncRequire" /* 2119 */;
+import BillingPlatformUtils from "BillingPlatformUtils" /* 2184 */;
+import _modDef3991 from "module_3991" /* 3991 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5742 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6310 */;
 import WishlistActionCreatorsDefault from "WishlistActionCreators" /* 8870 */;
 import SocialLayerStorefrontActionCreators from "SocialLayerStorefrontActionCreators" /* 9288 */;
 import redirectToSlayerStorefrontWebDefault from "redirectToSlayerStorefrontWeb" /* 9474 */;
@@ -19,7 +19,7 @@ import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserProfileStore from "UserProfileStore" /* 6837 */;
 import WishlistStore from "WishlistStore" /* 8863 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import SKUStore from "SKUStore" /* 6553 */;
+import SKUStore from "SKUStore" /* 6555 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2, firstWishlistId, id;
@@ -39,7 +39,7 @@ let obj = function _toggleSocialLayerStorefrontWishlist() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -92,7 +92,7 @@ let obj = function _toggleSocialLayerStorefrontWishlist() {
             return obj;
           }
           c1 = 3;
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp11) {
         c1 = 3;
@@ -114,7 +114,7 @@ export const SOCIAL_LAYER_STOREFRONT_GIFT_PURCHASE_SUCCESS_MODAL_KEY = "social-l
 export function openSocialLayerStorefrontUnsupportedOnMobileAlert() {
   let intl;
   let intl2;
-  obj = { title: intl.string(_modDef3989.XjhkM5), body: intl2.string(_modDef3989.NBFa62) };
+  obj = { title: intl.string(_modDef3991.XjhkM5), body: intl2.string(_modDef3991.NBFa62) };
   const show = actions_AlertActionCreatorsDefault.show;
   actions_AlertActionCreatorsDefault;
   intl = intl3.intl;
@@ -160,7 +160,7 @@ export function openSocialLayerStorefrontProductSelfPurchaseSuccessModal(arg0) {
   obj = actions_AlertActionCreatorsDefault;
   const obj2 = {
     importer() {
-      const promise = asyncRequire(13816, dependencyMap.paths);
+      const promise = asyncRequire(13785, dependencyMap.paths);
       return promise.then((SocialLayerStorefrontProductSelfPurchaseSuccessModal) => {
         closure_0 = SocialLayerStorefrontProductSelfPurchaseSuccessModal.SocialLayerStorefrontProductSelfPurchaseSuccessModal;
         return (arg0) => {
@@ -179,7 +179,7 @@ export function openSocialLayerStorefrontProductGiftPurchaseSuccessModal(arg0) {
   obj = actions_AlertActionCreatorsDefault;
   const obj2 = {
     importer() {
-      const promise = asyncRequire(13816, dependencyMap.paths);
+      const promise = asyncRequire(13785, dependencyMap.paths);
       return promise.then((SocialLayerStorefrontProductGiftPurchaseSuccessModal) => {
         closure_0 = SocialLayerStorefrontProductGiftPurchaseSuccessModal.SocialLayerStorefrontProductGiftPurchaseSuccessModal;
         return (arg0) => {

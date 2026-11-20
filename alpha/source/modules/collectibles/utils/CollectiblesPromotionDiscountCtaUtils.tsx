@@ -1,10 +1,10 @@
-// Module ID: 14156
-// Function ID: 14157
+// Module ID: 14125
+// Function ID: 14126
 // Name: CollectiblesPromotionDiscountCtaUtils
-// Dependencies: [8840, 8844, 8850, 8846, 1113, 2]
+// Dependencies: [8840, 8844, 8850, 8846, 1112, 2]
 // Exports: useDiscountPromotionPurchaseCtaText
 
-// Module 14156 (CollectiblesPromotionDiscountCtaUtils)
+// Module 14125 (CollectiblesPromotionDiscountCtaUtils)
 import useCollectiblesPromotionForProduct from "useCollectiblesPromotionForProduct" /* 8840 */;
 import CollectiblesStorefrontPricingIntegrationExperiment from "CollectiblesStorefrontPricingIntegrationExperiment" /* 8844 */;
 import CollectiblesPromotionDiscountUtils from "CollectiblesPromotionDiscountUtils" /* 8846 */;
@@ -31,11 +31,11 @@ export function useDiscountPromotionPurchaseCtaText(product) {
       let stringResult;
       const tmpResult = CollectiblesPromotionDiscountUtils;
       if (100 === tmpResult.getPromotionFiatPercentOff(collectiblesPromotionForProduct)) {
-        const intl2 = tmp(1113).intl;
-        stringResult = intl2.string(tmp(1113).t["302tKP"]);
+        const intl2 = tmp(1112).intl;
+        stringResult = intl2.string(tmp(1112).t["302tKP"]);
       } else {
-        const intl = tmp(1113).intl;
-        stringResult = intl.string(tmp(1113).t["7EGhnE"]);
+        const intl = tmp(1112).intl;
+        stringResult = intl.string(tmp(1112).t["7EGhnE"]);
       }
       tmp6 = stringResult;
     } else {

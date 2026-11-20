@@ -1,23 +1,23 @@
-// Module ID: 6429
-// Function ID: 6430
+// Module ID: 6431
+// Function ID: 6432
 // Name: SortedGuildStore
-// Dependencies: [4826, 4725, 1231, 6392, 6430, 4704, 4663, 1071, 6431, 1388, 6433, 1345, 38, 1255, 2161, 2]
+// Dependencies: [4828, 4727, 1230, 6394, 6432, 4706, 4665, 1070, 6433, 1386, 6435, 1343, 38, 1254, 2159, 2]
 
-// Module 6429 (SortedGuildStore)
+// Module 6431 (SortedGuildStore)
 import _modDef38 from "module_38" /* 38 */;
-import _modDef1345 from "module_1345" /* 1345 */;
-import GuildsTree from "GuildsTree" /* 6433 */;
-import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4826 */;
-import LurkingStore from "LurkingStore" /* 4725 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import ExpandedGuildFolderStore from "ExpandedGuildFolderStore" /* 6392 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6430 */;
-import GuildMemberStore from "GuildMemberStore" /* 4704 */;
-import GuildStore from "GuildStore" /* 4663 */;
-import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1071 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6431 */;
-import UserStore from "UserStore" /* 1388 */;
-import FunctionUtils_mod from "FunctionUtils" /* 2161 */;
+import _modDef1343 from "module_1343" /* 1343 */;
+import GuildsTree from "GuildsTree" /* 6435 */;
+import UserGuildJoinRequestStore from "UserGuildJoinRequestStore" /* 4828 */;
+import LurkingStore from "LurkingStore" /* 4727 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1230 */;
+import ExpandedGuildFolderStore from "ExpandedGuildFolderStore" /* 6394 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6432 */;
+import GuildMemberStore from "GuildMemberStore" /* 4706 */;
+import GuildStore from "GuildStore" /* 4665 */;
+import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1070 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6433 */;
+import UserStore from "UserStore" /* 1386 */;
+import FunctionUtils_mod from "FunctionUtils" /* 2159 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -137,7 +137,7 @@ function rebuildTree(arg0, arg1) {
       return addNode(obj.createGuildNode(item10030), guildsTree.root, false);
     });
     guildsTree.version = guildsTree.version;
-    const tmp69 = _modDef1345(guildsTree, guildsTree);
+    const tmp69 = _modDef1343(guildsTree, guildsTree);
     if (tmp69) {
       guildsTree = tmp;
     } else {
@@ -193,7 +193,7 @@ function handleSettingsUpdate() {
   let tmp6Result = null == guildFolders1;
   const tmp = UserSettingsProtoStore;
   if (!tmp6Result) {
-    tmp6Result = !_modDef1345(guildFolders1, guildFolders1);
+    tmp6Result = !_modDef1343(guildFolders1, guildFolders1);
   }
   if (tmp6Result) {
     const tmp6 = rebuildTree;
@@ -244,7 +244,7 @@ function handleMoveById(targetId) {
       const tmp13 = require;
       if (combine) {
         let convertToFolderResult = node1;
-        if (node1.type !== tmp13(6433).GuildsNodeType.FOLDER) {
+        if (node1.type !== tmp13(6435).GuildsNodeType.FOLDER) {
           convertToFolderResult = guildsTree.convertToFolder(node1);
         }
         guildsTree.moveInto(node, convertToFolderResult, moveToBelow);
@@ -347,12 +347,12 @@ function handleGuildFolderDeleteLocal(targetId) {
   const element = guildsTree.getNode(targetId.targetId);
   let tmp = null != element;
   if (tmp) {
-    const tmp4 = element.type === element(6433).GuildsNodeType.FOLDER;
+    const tmp4 = element.type === element(6435).GuildsNodeType.FOLDER;
     const tmp2 = element;
     if (tmp4) {
       const children = element.children;
       const mapped = children.map((id) => id.id);
-      const found = mapped.filter(tmp2(1255).isNotNullish);
+      const found = mapped.filter(tmp2(1254).isNotNullish);
       const item = found.forEach((item) => {
         const node = guildsTree.getNode(item);
         if (null != node) {

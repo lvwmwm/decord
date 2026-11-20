@@ -1,11 +1,11 @@
-// Module ID: 10538
-// Function ID: 10539
+// Module ID: 10480
+// Function ID: 10481
 // Name: MediaViewerImprovementsExperiment
-// Dependencies: [1452, 2]
+// Dependencies: [1450, 2]
 // Exports: useIsMediaViewerImprovementsEnabled
 
-// Module 10538 (MediaViewerImprovementsExperiment)
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+// Module 10480 (MediaViewerImprovementsExperiment)
+import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

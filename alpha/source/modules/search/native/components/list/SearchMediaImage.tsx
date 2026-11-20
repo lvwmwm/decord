@@ -1,25 +1,25 @@
-// Module ID: 18810
-// Function ID: 18811
+// Module ID: 18634
+// Function ID: 18635
 // Name: SearchMediaImage
-// Dependencies: [32, 19, 17, 4641, 6520, 1072, 21, 4792, 5001, 4799, 8110, 11594, 7563, 5360, 504, 11889, 1495, 12789, 1380, 5479, 1113, 9766, 10007, 1406, 6318, 8104, 9698, 11131, 2]
+// Dependencies: [32, 19, 17, 4643, 6522, 1071, 21, 4794, 5003, 4801, 8109, 11536, 7562, 5362, 504, 11831, 1493, 12759, 1378, 5481, 1112, 9767, 10010, 1404, 6320, 8103, 9698, 11073, 2]
 // Exports: SearchAttachmentMediaImage, SearchComponentMediaImage, SearchEmbedMediaImage, SearchFileMediaImage, SearchSoundMediaImage
 
-// Module 18810 (SearchMediaImage)
-import Constants from "Constants" /* 1072 */;
-import ImageWarningIcon from "ImageWarningIcon" /* 7563 */;
-import MediaSourceUtil from "MediaSourceUtil" /* 8104 */;
-import ObscureMediaModels from "ObscureMediaModels" /* 8110 */;
+// Module 18634 (SearchMediaImage)
+import Constants from "Constants" /* 1071 */;
+import ImageWarningIcon from "ImageWarningIcon" /* 7562 */;
+import MediaSourceUtil from "MediaSourceUtil" /* 8103 */;
+import ObscureMediaModels from "ObscureMediaModels" /* 8109 */;
 import CirclePlayIcon from "CirclePlayIcon" /* 9698 */;
-import AttachmentPreview from "AttachmentPreview" /* 11131 */;
-import generated_SpoilerIcon from "generated/SpoilerIcon" /* 11594 */;
-import MessageAttachmentUtils from "MessageAttachmentUtils" /* 12789 */;
+import AttachmentPreview from "AttachmentPreview" /* 11073 */;
+import generated_SpoilerIcon from "generated/SpoilerIcon" /* 11536 */;
+import MessageAttachmentUtils from "MessageAttachmentUtils" /* 12759 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import SearchMessageStore from "SearchMessageStore" /* 6520 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import SearchMessageStore from "SearchMessageStore" /* 6522 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -194,17 +194,17 @@ export function SearchAttachmentMediaImage(attachment) {
   const authorId = attachment.authorId;
   const merged = Object.assign(attachment, Object.assign({ attachment: 0, channelId: 0, authorId: 0 }));
   dependencyMap = undefined;
-  let obj = attachment(10007);
+  let obj = attachment(10010);
   const enabledHarmTypesBitmaskForChannelAndAuthorId = obj.useEnabledHarmTypesBitmaskForChannelAndAuthorId(channelId, authorId);
   let num = attachment.flags;
-  const hasFlag = attachment(1406).hasFlag;
-  attachment(1406);
+  const hasFlag = attachment(1404).hasFlag;
+  attachment(1404);
   if (num == null) {
     num = 0;
   }
   let hasFlagResult = hasFlag(num, MessageAttachmentFlags.IS_SPOILER);
   if (!hasFlagResult) {
-    const tmp2Result = attachment(6318);
+    const tmp2Result = attachment(6320);
     hasFlagResult = tmp2Result.isChannelSpoilerGated(ChannelStore.getChannel(channelId));
   }
   dependencyMap = hasFlagResult;
@@ -214,7 +214,7 @@ export function SearchAttachmentMediaImage(attachment) {
     return obj.getObscureReasonForAttachment(attachment, enabledHarmTypesBitmaskForChannelAndAuthorId, c2);
   }, items);
   const obj2 = { channelId, obscureReason: memo, mediaUrl: attachmentUrl };
-  const tmp2Result2 = attachment(8104);
+  const tmp2Result2 = attachment(8103);
   attachmentUrl = tmp2Result2.getAttachmentUrl(attachment);
   const merged1 = Object.assign(merged);
   ({ height: obj4.mediaHeight, width: obj4.mediaWidth } = attachment);
@@ -227,9 +227,9 @@ export function SearchEmbedMediaImage(embed) {
   const authorId = embed.authorId;
   const merged = Object.assign(embed, Object.assign({ embed: 0, sources: 0, messageId: 0, channelId: 0, authorId: 0 }));
   let tmp2 = embed;
-  let obj = embed(10007);
+  let obj = embed(10010);
   let closure_3 = obj.useEnabledHarmTypesBitmaskForChannelAndAuthorId(channelId, authorId);
-  const obj2 = embed(6318);
+  const obj2 = embed(6320);
   let closure_4 = obj2.useIsChannelSpoilerGated(ChannelStore.getChannel(channelId));
   const items = [SearchMessageStore];
   let video = embed.thumbnail;
@@ -249,8 +249,8 @@ export function SearchEmbedMediaImage(embed) {
       if (flag2 == null) {
         flag2 = false;
       }
-      const getObscureReasonForEmbed = tmp2(12789).getObscureReasonForEmbed;
-      const tmp2Result = tmp2(12789);
+      const getObscureReasonForEmbed = tmp2(12759).getObscureReasonForEmbed;
+      const tmp2Result = tmp2(12759);
       if (!flag2) {
         flag2 = closure_4;
       }
@@ -265,7 +265,7 @@ export function SearchEmbedMediaImage(embed) {
   }
   let embedUrl = null;
   if (null != video) {
-    let tmp2Result = tmp2(8104);
+    let tmp2Result = tmp2(8103);
     const obj4 = { proxyURL: null, url: null };
     ({ proxyURL: obj5.proxyURL, url: obj5.url } = video);
     embedUrl = tmp2Result.getEmbedUrl(obj4);

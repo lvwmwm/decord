@@ -1,21 +1,21 @@
-// Module ID: 16645
-// Function ID: 16646
+// Module ID: 16468
+// Function ID: 16469
 // Name: useIsQuestDockModeActiveOrExiting
-// Dependencies: [19, 16529, 16530, 1655, 5393, 10536, 2]
+// Dependencies: [19, 16352, 16353, 1653, 5395, 10478, 2]
 // Exports: default
 
-// Module 16645 (useIsQuestDockModeActiveOrExiting)
-import _mod1655 from "module_1655" /* 1655 */;
-import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 10536 */;
-import QuestDockConstants from "QuestDockConstants" /* 16529 */;
-import QuestDockGestureContext from "QuestDockGestureContext" /* 16530 */;
+// Module 16468 (useIsQuestDockModeActiveOrExiting)
+import _mod1653 from "module_1653" /* 1653 */;
+import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 10478 */;
+import QuestDockConstants from "QuestDockConstants" /* 16352 */;
+import QuestDockGestureContext from "QuestDockGestureContext" /* 16353 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 let _undefined, _undefined2, _undefined3;
 
 let tmp;
-const spring_spring = tmp(5393);
+const spring_spring = tmp(5395);
 let closure_4 = QuestDockConstants.QUEST_DOCK_MODE_CHANGE_PHYSICS;
 let closure_5 = { code: "(function useIsQuestDockModeActiveOrExitingTsx1(){let[activeQuestDockMode,mode]=this.__closure;return activeQuestDockMode.get()===mode;})" };
 let closure_6 = { code: "(function useIsQuestDockModeActiveOrExitingTsx2(finished){let[activeQuestDockMode,mode,isActiveOrExiting]=this.__closure;if(finished===true&&activeQuestDockMode.get()!==mode){isActiveOrExiting.set(false);}})" };
@@ -37,11 +37,11 @@ export default function useIsQuestDockModeActiveOrExiting(arg0) {
   let tmp2 = dependencyMap;
   let tmp = require;
   const activeQuestDockMode = react.useContext(QuestDockGestureContext.QuestDockGestureContext).activeQuestDockMode;
-  const obj = _mod1655;
+  const obj = _mod1653;
   const sharedValue = obj.useSharedValue(activeQuestDockMode.get() === arg0);
-  const obj2 = _mod1655;
+  const obj2 = _mod1653;
   const sharedValue1 = obj2.useSharedValue(0);
-  const tmp5 = _mod1655;
+  const tmp5 = _mod1653;
   let items = [closure_5, activeQuestDockMode, arg0];
   [tmp6, tmp7, tmp8] = items;
   function useIsQuestDockModeActiveOrExitingTsx1() {

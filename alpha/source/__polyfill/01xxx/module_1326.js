@@ -1,0 +1,10 @@
+// Module ID: 1326
+// Function ID: 1327
+// Dependencies: []
+
+// Module 1326
+const isNaN = Number.isNaN || (function isNaN(arg0) {
+  return arg0 != arg0;
+});
+
+export default isNaN;

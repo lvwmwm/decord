@@ -1,21 +1,21 @@
-// Module ID: 17366
-// Function ID: 17367
+// Module ID: 17193
+// Function ID: 17194
 // Name: FeaturedCategorySubblock
-// Dependencies: [19, 7956, 1074, 1072, 21, 4792, 1502, 8816, 9455, 504, 17348, 17361, 6911, 1113, 575, 1256, 7955, 7420, 5479, 7968, 8829, 2]
+// Dependencies: [19, 7955, 1073, 1071, 21, 4794, 1500, 8816, 9455, 504, 17175, 17188, 6910, 1112, 575, 1255, 7954, 7419, 5481, 7967, 8829, 2]
 // Exports: default
 
-// Module 17366 (FeaturedCategorySubblock)
+// Module 17193 (FeaturedCategorySubblock)
 import nativeDefault from "native" /* 575 */;
-import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7420 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7955 */;
-import VisibilitySensorDefault from "VisibilitySensor" /* 17361 */;
+import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1073 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7419 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7954 */;
+import VisibilitySensorDefault from "VisibilitySensor" /* 17188 */;
 import react from "react" /* 19 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7956 */;
-import Constants from "Constants" /* 1072 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7955 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, importDefault;
@@ -25,7 +25,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp10;
-const FastImageDefault = tmp10(5479);
+const FastImageDefault = tmp10(5481);
 let closure_4 = CollectiblesShopConstants.CollectiblesMobileShopScreen;
 ({ AnalyticEvents: hasOwnProperty, UserSettingsSections: metroRequire } = Constants);
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
@@ -45,7 +45,7 @@ export default function _default(subblock) {
   subblock = subblock.subblock;
   dependencyMap = undefined;
   const tmp = closure_9();
-  let obj = subblock(1502);
+  let obj = subblock(1500);
   importDefault = obj.useNavigation();
   const obj2 = subblock(8816);
   dependencyMap = obj2.useCollectiblesAnalyticsContext();
@@ -56,7 +56,7 @@ export default function _default(subblock) {
   let items = [closure_3];
   const stateFromStores = obj4.useStateFromStores(items, () => CollectiblesCategoryStore.getCategoryByStoreListingId(subblock.categoryStoreListingId));
   let unpublishedAt = subblock.unpublishedAt;
-  const obj5 = subblock(17348);
+  const obj5 = subblock(17175);
   const handleCardVisibilityChange = obj5.useTrackProductCardImpression(subblock.categoryStoreListingId, "mobile_home", "featured_block").handleCardVisibilityChange;
   if (unpublishedAt == null) {
     let unpublishedAt1;
@@ -77,8 +77,8 @@ export default function _default(subblock) {
   const tmp11 = VisibilitySensorDefault;
   obj7 = {
     accessibilityRole: "button",
-    accessibilityLabel: intl.formatToPlainString(tmp2(1113).t.FNtLb3, obj8),
-    accessibilityHint: intl2.string(tmp2(1113).t.F8ma9x),
+    accessibilityLabel: intl.formatToPlainString(tmp2(1112).t.FNtLb3, obj8),
+    accessibilityHint: intl2.string(tmp2(1112).t.F8ma9x),
     activeOpacity: 0.8,
     androidRippleConfig: { radius: nativeDefault.radii.lg },
     hitSlop: 8,
@@ -134,10 +134,10 @@ export default function _default(subblock) {
     style: tmp.container,
     children: items1
   };
-  PressableOpacity = tmp2(6911).PressableOpacity;
-  intl = tmp2(1113).intl;
+  PressableOpacity = tmp2(6910).PressableOpacity;
+  intl = tmp2(1112).intl;
   obj8 = { category: subblock.name };
-  intl2 = tmp2(1113).intl;
+  intl2 = tmp2(1112).intl;
   let tmp9Result = null != assetUrl;
   ({ radius: nativeDefault.radii.lg });
   if (tmp9Result) {
@@ -146,7 +146,7 @@ export default function _default(subblock) {
     tmp9Result = tmp9(FastImageDefault, obj10);
   }
   items1 = [tmp9Result, ];
-  const tmp2Result = subblock(7968);
+  const tmp2Result = subblock(7967);
   let result = tmp2Result.shouldShowLimitedTimeBadge(date);
   if (result) {
     const obj12 = { style: tmp.limitedTimeBadge };

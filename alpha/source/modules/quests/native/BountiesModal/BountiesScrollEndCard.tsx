@@ -1,30 +1,30 @@
-// Module ID: 16418
-// Function ID: 16419
+// Module ID: 16240
+// Function ID: 16241
 // Name: BountiesScrollEndCard
-// Dependencies: [19, 17, 4793, 6437, 21, 4792, 575, 5002, 5005, 1655, 5347, 16419, 16421, 16378, 504, 16379, 8827, 2]
+// Dependencies: [19, 17, 4795, 6439, 21, 4794, 575, 5004, 5007, 1653, 5349, 16241, 16243, 16200, 504, 16201, 8827, 2]
 // Exports: default
 
-// Module 16418 (BountiesScrollEndCard)
+// Module 16240 (BountiesScrollEndCard)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import timing_timing from "timing/timing" /* 5002 */;
-import timingPresets from "timingPresets" /* 5005 */;
-import LinearGradientDefault from "LinearGradient" /* 5347 */;
-import QuestConstants from "QuestConstants" /* 6437 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import timing_timing from "timing/timing" /* 5004 */;
+import timingPresets from "timingPresets" /* 5007 */;
+import LinearGradientDefault from "LinearGradient" /* 5349 */;
+import QuestConstants from "QuestConstants" /* 6439 */;
 import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 8827 */;
-import BountiesModalTransitionsRefactorExperiment from "BountiesModalTransitionsRefactorExperiment" /* 16378 */;
-import useVisibilityTransition from "useVisibilityTransition" /* 16379 */;
-import BountiesEndCardPressableCtaDefault from "BountiesEndCardPressableCta" /* 16419 */;
-import BountiesModalEndedCtaButtonsDefault from "BountiesModalEndedCtaButtons" /* 16421 */;
+import BountiesModalTransitionsRefactorExperiment from "BountiesModalTransitionsRefactorExperiment" /* 16200 */;
+import useVisibilityTransition from "useVisibilityTransition" /* 16201 */;
+import BountiesEndCardPressableCtaDefault from "BountiesEndCardPressableCta" /* 16241 */;
+import BountiesModalEndedCtaButtonsDefault from "BountiesModalEndedCtaButtons" /* 16243 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4793 */;
+import AccessibilityStore from "AccessibilityStore" /* 4795 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
-const _modDef1655 = _mod1655;
+const _modDef1653 = _mod1653;
 
 let c9;
 let closure_4;
@@ -58,8 +58,8 @@ function BountiesScrollEndCardContent(arg0) {
   const tmp = closure_10();
   let tmp2 = dependencyMap;
   const items = [closure_13, isScrollingInBoundsSharedValue, , , ];
-  const useAnimatedStyle = _mod1655.useAnimatedStyle;
-  _mod1655;
+  const useAnimatedStyle = _mod1653.useAnimatedStyle;
+  _mod1653;
   items[2] = timing_timing.withTiming;
   items[3] = isActive;
   items[4] = timingPresets.timingStandard;
@@ -95,13 +95,13 @@ function BountiesScrollEndCardContent(arg0) {
   let obj = { style: items2, pointerEvents: "box-none", children: items3 };
   items2 = [tmp.container, opacityStyle];
   let obj2 = { style: tmp.backdropTint, pointerEvents: "none" };
-  const View = _modDef1655.View;
+  const View = _modDef1653.View;
   items3 = [metroImportAll(hasOwnProperty, obj2), , ];
   const obj3 = { colors: ["rgba(0, 0, 0, 0.48)", "rgba(0, 0, 0, 0.8)"], style: tmp.backdropGradient, pointerEvents: "none" };
   items3[1] = metroImportAll(LinearGradientDefault, obj3);
   const obj4 = { style: items4, pointerEvents: "box-none", children: items5 };
   items4 = [tmp.overlayContent, animatedStyle];
-  const View2 = _modDef1655.View;
+  const View2 = _modDef1653.View;
   items5 = [, ];
   const obj5 = { bounty, sourceQuestContent, disabled: !isActive };
   items5[0] = metroImportAll(BountiesEndCardPressableCtaDefault, obj5);

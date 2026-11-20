@@ -1,13 +1,13 @@
-// Module ID: 8230
-// Function ID: 8231
+// Module ID: 8229
+// Function ID: 8230
 // Name: Channels
-// Dependencies: [4645, 502, 4641, 4670, 2]
+// Dependencies: [4647, 502, 4643, 4672, 2]
 
-// Module 8230 (Channels)
-import ChannelRecord from "ChannelRecord" /* 4645 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 4670 */;
+// Module 8229 (Channels)
+import ChannelRecord from "ChannelRecord" /* 4647 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 4672 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
 import size from "module_2" /* 2 */;
 
 let closure_2 = ChannelRecord.createChannelRecordFromServer;

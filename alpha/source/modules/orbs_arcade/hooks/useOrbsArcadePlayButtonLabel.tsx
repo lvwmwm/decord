@@ -1,11 +1,11 @@
-// Module ID: 16503
-// Function ID: 16504
+// Module ID: 16325
+// Function ID: 16326
 // Name: useOrbsArcadePlayButtonLabel
-// Dependencies: [16478, 504, 14150, 1113, 2]
+// Dependencies: [16300, 504, 14119, 1112, 2]
 // Exports: default
 
-// Module 16503 (useOrbsArcadePlayButtonLabel)
-import OrbsArcadeStore from "OrbsArcadeStore" /* 16478 */;
+// Module 16325 (useOrbsArcadePlayButtonLabel)
+import OrbsArcadeStore from "OrbsArcadeStore" /* 16300 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -47,26 +47,26 @@ export default function useOrbsArcadePlayButtonLabel(orbCost) {
   }
   if (num > 0 && null != stateFromStores && stateFromStores <= 0) {
     let formatToPlainStringResult;
-    const intl3 = tmp(1113).intl;
+    const intl3 = tmp(1112).intl;
     if (null == virtualCurrencyBalance || virtualCurrencyBalance - stateFromStores1 >= num) {
       const obj4 = { count: num };
-      formatToPlainStringResult = intl3.formatToPlainString(tmp(1113).t["L1yi/U"], obj4);
+      formatToPlainStringResult = intl3.formatToPlainString(tmp(1112).t["L1yi/U"], obj4);
     } else {
-      formatToPlainStringResult = intl3.string(tmp(1113).t.T1eNyO);
+      formatToPlainStringResult = intl3.string(tmp(1112).t.T1eNyO);
     }
     return { text: formatToPlainStringResult, isPaidPlay: num > 0 && null != stateFromStores && stateFromStores <= 0, canAffordPlay: null == virtualCurrencyBalance || virtualCurrencyBalance - stateFromStores1 >= num };
   } else {
     if (num > 0) {
       let obj8;
       if (null != stateFromStores) {
-        const obj6 = { text: intl2.formatToPlainString(tmp(1113).t.onJEzB, obj7), isPaidPlay: num > 0 && null != stateFromStores && stateFromStores <= 0, canAffordPlay: true };
-        intl2 = tmp(1113).intl;
+        const obj6 = { text: intl2.formatToPlainString(tmp(1112).t.onJEzB, obj7), isPaidPlay: num > 0 && null != stateFromStores && stateFromStores <= 0, canAffordPlay: true };
+        intl2 = tmp(1112).intl;
         obj8 = obj6;
         obj7 = { count: stateFromStores };
       }
       return obj8;
     }
-    obj8 = { text: intl.string(tmp(1113).t["7/xnly"]), isPaidPlay: num > 0 && null != stateFromStores && stateFromStores <= 0, canAffordPlay: true };
-    intl = tmp(1113).intl;
+    obj8 = { text: intl.string(tmp(1112).t["7/xnly"]), isPaidPlay: num > 0 && null != stateFromStores && stateFromStores <= 0, canAffordPlay: true };
+    intl = tmp(1112).intl;
   }
 };

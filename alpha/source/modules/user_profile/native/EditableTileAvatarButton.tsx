@@ -1,23 +1,23 @@
-// Module ID: 15865
-// Function ID: 15866
+// Module ID: 15829
+// Function ID: 15830
 // Name: EditableTileAvatarButton
-// Dependencies: [19, 4793, 8013, 21, 504, 4617, 8792, 1187, 1414, 15864, 1113, 15853, 15859, 2]
+// Dependencies: [19, 4795, 8012, 21, 504, 4619, 8792, 1186, 1412, 15828, 1112, 15817, 15823, 2]
 // Exports: TryItOutEditableTileAvatarButton
 
-// Module 15865 (EditableTileAvatarButton)
+// Module 15829 (EditableTileAvatarButton)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
-import intl2 from "intl" /* 1113 */;
-import native from "native" /* 1187 */;
-import AvatarUtils from "AvatarUtils" /* 1414 */;
-import UserSettings from "UserSettings" /* 4617 */;
+import intl2 from "intl" /* 1112 */;
+import native from "native" /* 1186 */;
+import AvatarUtils from "AvatarUtils" /* 1412 */;
+import UserSettings from "UserSettings" /* 4619 */;
 import RecentAvatarUtils from "RecentAvatarUtils" /* 8792 */;
-import UserProfileEditingAccessibilityUtils from "UserProfileEditingAccessibilityUtils" /* 15853 */;
-import SpinAnimationDefault from "SpinAnimation" /* 15859 */;
-import UserProfileEditableTileBaseDefault from "UserProfileEditableTileBase" /* 15864 */;
+import UserProfileEditingAccessibilityUtils from "UserProfileEditingAccessibilityUtils" /* 15817 */;
+import SpinAnimationDefault from "SpinAnimation" /* 15823 */;
+import UserProfileEditableTileBaseDefault from "UserProfileEditableTileBase" /* 15828 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4793 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8013 */;
+import AccessibilityStore from "AccessibilityStore" /* 4795 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8012 */;
 import size from "module_2" /* 2 */;
 
 class EditableTileAvatarButtonBase {
@@ -41,7 +41,7 @@ class EditableTileAvatarButtonBase {
     const obj2 = { userId: user.id, image: avatarChange };
     const tmpResult = RecentAvatarUtils;
     const pendingAvatarSrc = tmpResult.getPendingAvatarSrc(obj2);
-    const AVATAR_SIZE_MAP = tmp(1187).AVATAR_SIZE_MAP;
+    const AVATAR_SIZE_MAP = tmp(1186).AVATAR_SIZE_MAP;
     if (null === avatarChange) {
       const tmpResult4 = AvatarUtils;
       defaultAvatarURL = tmpResult4.getDefaultAvatarURL(user.id, user.discriminator);
@@ -52,14 +52,14 @@ class EditableTileAvatarButtonBase {
       }
     }
     UserProfileEditableTileBaseDefault;
-    const intl = tmp(1113).intl;
+    const intl = tmp(1112).intl;
     const tmpResult5 = UserProfileEditingAccessibilityUtils;
     SpinAnimationDefault;
     if (tmp4) {
       tmp4 = enableSpinAnimation;
     }
     ({ source: tmpResult6.makeSource(defaultAvatarURL), size: native.AvatarSizes.XLARGE_72 });
-    const Avatar = tmp(1187).Avatar;
+    const Avatar = tmp(1186).Avatar;
     tmpResult6 = AvatarUtils;
     return <tmp9 accessibilityLabel={intl.string(intl2.t.lqaIxI)} accessibilityValue={tmpResult5.getAvatarAccessibleValue(avatarChange, user.avatar)} onPress={onPress}>{null}</tmp9>;
   }

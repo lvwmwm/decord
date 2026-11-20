@@ -1,28 +1,28 @@
-// Module ID: 18783
-// Function ID: 18784
+// Module ID: 18607
+// Function ID: 18608
 // Name: useOnPressSearchItem
-// Dependencies: [5, 19, 8224, 4641, 13121, 8457, 18784, 8456, 1072, 4648, 13107, 13132, 1381, 5473, 1113, 7136, 5471, 1502, 13215, 18785, 13110, 8512, 8530, 1108, 6318, 8098, 7618, 5525, 6373, 2121, 6298, 14604, 5826, 7166, 7167, 1099, 13128, 2]
+// Dependencies: [5, 19, 8223, 4643, 13091, 8456, 18608, 8455, 1071, 4650, 13077, 13102, 1379, 5475, 1112, 7135, 5473, 1500, 13185, 18609, 13080, 8511, 8529, 1107, 6320, 8097, 7617, 5527, 6375, 2119, 6300, 14572, 5828, 7165, 7166, 1098, 13098, 2]
 // Exports: useOnPressConversationCitation, useOnPressDMItem, useOnPressGroupDMItem, useOnPressGuildTextChannel, useOnPressGuildVoiceChannel, useOnPressMediaItem, useOnPressMessageItem, useOnPressSearchHistoryText, useOnPressSearchLink
 
-// Module 18783 (useOnPressSearchItem)
-import intl2 from "intl" /* 1113 */;
-import URLUtilsDefault from "URLUtils" /* 1381 */;
-import ChannelConstants from "ChannelConstants" /* 4648 */;
-import ToastUtils from "ToastUtils" /* 5473 */;
-import MaskedLinkUtils from "MaskedLinkUtils" /* 7136 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7618 */;
-import TrackingConstants from "TrackingConstants" /* 8456 */;
-import SearchPlatformUtils from "SearchPlatformUtils" /* 13107 */;
-import TrackingDefault from "Tracking" /* 13128 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13132 */;
-import SearchNavigatorConstants from "SearchNavigatorConstants" /* 18784 */;
+// Module 18607 (useOnPressSearchItem)
+import intl2 from "intl" /* 1112 */;
+import URLUtilsDefault from "URLUtils" /* 1379 */;
+import ChannelConstants from "ChannelConstants" /* 4650 */;
+import ToastUtils from "ToastUtils" /* 5475 */;
+import MaskedLinkUtils from "MaskedLinkUtils" /* 7135 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7617 */;
+import TrackingConstants from "TrackingConstants" /* 8455 */;
+import SearchPlatformUtils from "SearchPlatformUtils" /* 13077 */;
+import TrackingDefault from "Tracking" /* 13098 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13102 */;
+import SearchNavigatorConstants from "SearchNavigatorConstants" /* 18608 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 8224 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import SearchQueryStore from "SearchQueryStore" /* 13121 */;
-import SearchConstants from "SearchConstants" /* 8457 */;
-import Constants from "Constants" /* 1072 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 8223 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import SearchQueryStore from "SearchQueryStore" /* 13091 */;
+import SearchConstants from "SearchConstants" /* 8456 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -66,7 +66,7 @@ let obj = function _handleVoiceOrStageChannelConnectPress() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -96,7 +96,7 @@ let obj = function _handleVoiceOrStageChannelConnectPress() {
         } else {
           value.openGuildVoiceModal(closure_0, "Channel List");
           c3 = 3;
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp11) {
         c3 = 3;
@@ -234,7 +234,7 @@ export function useOnPressConversationCitation(searchContext) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -301,7 +301,7 @@ export function useOnPressConversationCitation(searchContext) {
               }
             });
             c4 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         }
       } catch (tmp9) {
@@ -434,7 +434,7 @@ export function useOnPressMediaItem(searchContext) {
 }
 export function useOnPressGroupDMItem(searchContext) {
   searchContext = searchContext.searchContext;
-  obj = searchContext(1502);
+  obj = searchContext(1500);
   navigation = obj.useNavigation();
   const items = [navigation, searchContext];
   return react.useCallback((channelId) => {
@@ -463,7 +463,7 @@ export function useOnPressGroupDMItem(searchContext) {
 }
 export function useOnPressDMItem(searchContext) {
   searchContext = searchContext.searchContext;
-  obj = searchContext(1502);
+  obj = searchContext(1500);
   navigation = obj.useNavigation();
   const items = [navigation, searchContext];
   return react.useCallback((userId, arg1) => {
@@ -538,7 +538,7 @@ export function useOnPressGuildVoiceChannel(searchContext) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -583,7 +583,7 @@ export function useOnPressGuildVoiceChannel(searchContext) {
               }
             }
             c3 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } else if (arg0 === 1) {
           c3 = 3;

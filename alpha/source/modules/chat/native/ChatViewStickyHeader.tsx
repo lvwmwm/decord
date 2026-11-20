@@ -1,19 +1,19 @@
-// Module ID: 11719
-// Function ID: 11720
+// Module ID: 11661
+// Function ID: 11662
 // Name: ChatViewStickyHeader
-// Dependencies: [32, 19, 11720, 21, 11721, 11727, 11731, 11732, 11750, 11756, 11785, 11788, 11819, 11823, 11826, 2]
+// Dependencies: [32, 19, 11662, 21, 11663, 11669, 11673, 11674, 11692, 11698, 11727, 11730, 11761, 11765, 11768, 2]
 
-// Module 11719 (ChatViewStickyHeader)
-import Constants from "Constants" /* 11720 */;
-import useStrangerDangerWarning from "useStrangerDangerWarning" /* 11721 */;
-import useInappropriateConversationBannerForChannel from "useInappropriateConversationBannerForChannel" /* 11727 */;
-import useLikelyAtoWarning from "useLikelyAtoWarning" /* 11731 */;
-import LikelyAtoWarningBannerDefault from "LikelyAtoWarningBanner" /* 11732 */;
-import StrangerDangerWarningBannerDefault from "StrangerDangerWarningBanner" /* 11750 */;
-import InappropriateConversationWarningBannerDefault from "InappropriateConversationWarningBanner" /* 11756 */;
-import useUnreadSettingNoticeDefault from "useUnreadSettingNotice" /* 11785 */;
-import PinotLazy from "PinotLazy" /* 11788 */;
-import ChatBannerDefault from "ChatBanner" /* 11826 */;
+// Module 11661 (ChatViewStickyHeader)
+import Constants from "Constants" /* 11662 */;
+import useStrangerDangerWarning from "useStrangerDangerWarning" /* 11663 */;
+import useInappropriateConversationBannerForChannel from "useInappropriateConversationBannerForChannel" /* 11669 */;
+import useLikelyAtoWarning from "useLikelyAtoWarning" /* 11673 */;
+import LikelyAtoWarningBannerDefault from "LikelyAtoWarningBanner" /* 11674 */;
+import StrangerDangerWarningBannerDefault from "StrangerDangerWarningBanner" /* 11692 */;
+import InappropriateConversationWarningBannerDefault from "InappropriateConversationWarningBanner" /* 11698 */;
+import useUnreadSettingNoticeDefault from "useUnreadSettingNotice" /* 11727 */;
+import PinotLazy from "PinotLazy" /* 11730 */;
+import ChatBannerDefault from "ChatBanner" /* 11768 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -89,7 +89,7 @@ const memoResult = react.memo(function StickyHeader(channel) {
     tmp13 = null;
     if (first) {
       const obj3 = { channel };
-      tmp13 = metroRequire(tmp3(11819), obj3);
+      tmp13 = metroRequire(tmp3(11761), obj3);
     }
   }
   items[1] = tmp13;
@@ -102,7 +102,7 @@ const memoResult = react.memo(function StickyHeader(channel) {
   let tmp18 = null;
   if (showUnreadsNotice) {
     const obj5 = { channel, clearUnreadsNotice };
-    tmp18 = metroRequire(tmp3(11823), obj5);
+    tmp18 = metroRequire(tmp3(11765), obj5);
   }
   const obj6 = { children: items };
   items[3] = tmp18;

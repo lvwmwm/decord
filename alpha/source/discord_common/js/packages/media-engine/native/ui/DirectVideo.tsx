@@ -1,13 +1,13 @@
-// Module ID: 5563
-// Function ID: 5564
+// Module ID: 5565
+// Function ID: 5566
 // Name: DirectVideo
-// Dependencies: [19, 21, 4, 5564, 5565, 2]
+// Dependencies: [19, 21, 4, 5566, 5567, 2]
 // Exports: default
 
-// Module 5563 (DirectVideo)
+// Module 5565 (DirectVideo)
 import logger_Logger from "logger/Logger" /* 4 */;
 import Fragment from "Fragment" /* 21 */;
-import DirectVideoStream from "DirectVideoStream" /* 5564 */;
+import DirectVideoStream from "DirectVideoStream" /* 5566 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -29,13 +29,14 @@ export default function DirectVideo(streamId, onContainerResized) {
   if (flag2 === undefined) {
     flag2 = true;
   }
+  const onVideoElement = streamId.onVideoElement;
   const className = streamId.className;
-  const merged = Object.assign(streamId, Object.assign({ streamId: 0, paused: 0, onReady: 0, onResize: 0, reportContainerResized: 0, className: 0 }));
+  const merged = Object.assign(streamId, Object.assign({ streamId: 0, paused: 0, onReady: 0, onResize: 0, reportContainerResized: 0, onVideoElement: 0, className: 0 }));
   onResize.useRef(null);
   const ref = onResize.useRef(null);
-  let closure_7 = onResize.useRef({ width: 0, height: 0 });
+  let closure_8 = onResize.useRef({ width: 0, height: 0 });
   let obj = { streamId, paused: flag, onReady, onResize, onContainerResized };
-  let closure_8 = onResize.useRef(obj);
+  let closure_9 = onResize.useRef(obj);
   const items = [flag2];
   const layoutEffect = onResize.useLayoutEffect(() => {
     let ref2;
@@ -63,10 +64,10 @@ export default function DirectVideo(streamId, onContainerResized) {
             let result = window.devicePixelRatio * tmp9.target.clientWidth;
             let _window2 = window;
             let result1 = window.devicePixelRatio * tmp9.target.clientHeight;
-            let current = closure_1_8.current;
+            let current = closure_1_9.current;
             let onContainerResized = current.onContainerResized;
             if (onContainerResized != null) {
-              let onContainerResizedResult = onContainerResized(closure_1_8.current.streamId, result, result1);
+              let onContainerResizedResult = onContainerResized(closure_1_9.current.streamId, result, result1);
             }
           }
           continue;
@@ -83,7 +84,7 @@ export default function DirectVideo(streamId, onContainerResized) {
       element.autoplay = true;
       element.muted = true;
       const listener = element.addEventListener("pause", function handlePause() {
-        if (!closure_1_8.current.paused) {
+        if (!closure_1_9.current.paused) {
           const current = ref.current;
           if (current != null) {
             current.play();
@@ -114,7 +115,7 @@ export default function DirectVideo(streamId, onContainerResized) {
         }
         if (width !== num) {
           size = { width: num, height: num2 };
-          const current3 = closure_1_8.current;
+          const current3 = closure_1_9.current;
           onResize = current3.onResize;
           if (onResize != null) {
             onResize(size);
@@ -123,18 +124,18 @@ export default function DirectVideo(streamId, onContainerResized) {
         }
       });
       const listener2 = element.addEventListener("canplaythrough", function handleReady() {
-        ref.info("handleReady for " + closure_1_8.current.streamId + ", have onReady callback = " + null != closure_1_8.current.onReady);
-        const current = closure_1_8.current;
+        onVideoElement.info("handleReady for " + closure_1_9.current.streamId + ", have onReady callback = " + null != closure_1_9.current.onReady);
+        const current = closure_1_9.current;
         onReady = current.onReady;
         if (onReady != null) {
           onReady();
         }
       });
       const _HermesInternal2 = HermesInternal;
-      logger.info("create video element for " + closure_8.current.streamId + ", readyState=" + element.readyState);
+      logger.info("create video element for " + closure_9.current.streamId + ", readyState=" + element.readyState);
       let num = 3;
       const obj3 = logger;
-      const tmp13 = closure_8;
+      const tmp13 = closure_9;
       if (element.readyState > 3) {
         const _HermesInternal = HermesInternal;
         obj3.error("video element for " + tmp13.current.streamId + " was ready before attached");
@@ -145,13 +146,27 @@ export default function DirectVideo(streamId, onContainerResized) {
       ref.current = element;
     }
   }, items);
+  const items1 = [onVideoElement];
+  const layoutEffect1 = onResize.useLayoutEffect(() => {
+    let tmp;
+    if (onVideoElement != null) {
+      tmp(ref.current);
+    }
+    return () => {
+      let tmp;
+      if (onVideoElement != null) {
+        tmp = onVideoElement(null);
+      }
+      return tmp;
+    };
+  }, items1);
   const effect = onResize.useEffect(() => {
-    closure_8.current.streamId = streamId;
-    closure_8.current.paused = flag;
-    closure_8.current.onReady = onReady;
-    closure_8.current.onResize = onResize;
+    closure_9.current.streamId = streamId;
+    closure_9.current.paused = flag;
+    closure_9.current.onReady = onReady;
+    closure_9.current.onResize = onResize;
   });
-  const items1 = [flag, streamId];
+  const items2 = [flag, streamId];
   const effect1 = onResize.useEffect(() => {
     const current = ref.current;
     if (null != current) {
@@ -172,7 +187,7 @@ export default function DirectVideo(streamId, onContainerResized) {
         };
       }
     }
-  }, items1);
+  }, items2);
   const obj2 = { className: flag(onReady[4])("media-engine-video", className), ref };
   const merged1 = Object.assign(merged);
   return flag2("div", obj2);

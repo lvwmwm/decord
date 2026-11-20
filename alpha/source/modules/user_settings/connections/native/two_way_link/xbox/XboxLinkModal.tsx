@@ -1,17 +1,17 @@
-// Module ID: 6908
-// Function ID: 6909
+// Module ID: 6907
+// Function ID: 6908
 // Name: XboxLinkModal
-// Dependencies: [19, 6909, 1072, 21, 6910, 6913, 6907, 1113, 6914, 6945, 6946, 6953, 6961, 6966, 6968, 6925, 6972, 6973, 2]
+// Dependencies: [19, 6908, 1071, 21, 6909, 6912, 6906, 1112, 6913, 6944, 6945, 6952, 6960, 6965, 6967, 6924, 6971, 6972, 2]
 // Exports: default
 
-// Module 6908 (XboxLinkModal)
+// Module 6907 (XboxLinkModal)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1072 */;
-import intl2 from "intl" /* 1113 */;
-import XboxLinkModalActionCreatorsDefault from "XboxLinkModalActionCreators" /* 6907 */;
-import XboxLinkConstants from "XboxLinkConstants" /* 6909 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 6910 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6913 */;
+import Constants from "Constants" /* 1071 */;
+import intl2 from "intl" /* 1112 */;
+import XboxLinkModalActionCreatorsDefault from "XboxLinkModalActionCreators" /* 6906 */;
+import XboxLinkConstants from "XboxLinkConstants" /* 6908 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 6909 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6912 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -34,7 +34,7 @@ export default function XboxLinkModal(startAtSignIn) {
   if (flag === undefined) {
     flag = false;
   }
-  let obj = flag(6925);
+  let obj = flag(6924);
   const twoWayLinkStyles = obj.useTwoWayLinkStyles();
   const items = [twoWayLinkStyles, flag];
   const tmp6 = flag ? XboxLinkModalScenes.PRE_CONNECT : XboxLinkModalScenes.LANDING;
@@ -115,9 +115,9 @@ export default function XboxLinkModal(startAtSignIn) {
       }
     };
   }, items);
-  const tmpResult = flag(6972);
+  const tmpResult = flag(6971);
   const accountLinkStepTracking = tmpResult.useAccountLinkStepTracking(PlatformTypes.XBOX, locationStack, tmp6);
-  const Navigator = tmp(6973).Navigator;
-  const intl = tmp(1113).intl;
-  return <Navigator onStateChange={accountLinkStepTracking} screens={memo} initialRouteName={tmp6} headerBackTitle={intl.string(flag(1113).t["13/7kX"])} />;
+  const Navigator = tmp(6972).Navigator;
+  const intl = tmp(1112).intl;
+  return <Navigator onStateChange={accountLinkStepTracking} screens={memo} initialRouteName={tmp6} headerBackTitle={intl.string(flag(1112).t["13/7kX"])} />;
 };

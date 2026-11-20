@@ -1,13 +1,13 @@
-// Module ID: 17469
-// Function ID: 17470
+// Module ID: 17296
+// Function ID: 17297
 // Name: DeclarativeSystemNotifPermissionStore
-// Dependencies: [32, 504, 17470, 17471, 572, 2]
+// Dependencies: [32, 504, 17297, 17298, 572, 2]
 
-// Module 17469 (DeclarativeSystemNotifPermissionStore)
+// Module 17296 (DeclarativeSystemNotifPermissionStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import DeclarativeSystemNotifPermissionHelpersDefault from "DeclarativeSystemNotifPermissionHelpers" /* 17470 */;
-import DeclarativeSystemNotifPermissionAnalytics from "DeclarativeSystemNotifPermissionAnalytics" /* 17471 */;
+import DeclarativeSystemNotifPermissionHelpersDefault from "DeclarativeSystemNotifPermissionHelpers" /* 17297 */;
+import DeclarativeSystemNotifPermissionAnalytics from "DeclarativeSystemNotifPermissionAnalytics" /* 17298 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

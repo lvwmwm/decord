@@ -1,13 +1,13 @@
 // Module ID: 9406
 // Function ID: 9407
 // Name: stack
-// Dependencies: [19, 17, 1655]
+// Dependencies: [19, 17, 1653]
 // Exports: useHorizontalStackLayout, verticalStackLayout
 
 // Module 9406 (stack)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 19 */;
-import _mod1655 from "module_1655" /* 1655 */;
+import _mod1653 from "module_1653" /* 1653 */;
 
 let tmp2;
 let tmp3;
@@ -24,7 +24,7 @@ function horizontalStackLayout(arg0) {
   if (arg0 === undefined) {
     obj = {};
   }
-  let items = [closure_4, closure_3, obj, getCommonVariables, getCommonStyles, _mod1655.interpolate, _mod1655.Extrapolation];
+  let items = [closure_4, closure_3, obj, getCommonVariables, getCommonStyles, _mod1653.interpolate, _mod1653.Extrapolation];
   let c0;
   let c1;
   let c2;
@@ -153,7 +153,7 @@ function getCommonVariables(showLength) {
 }
 getCommonVariables.__workletHash = 16254543886864;
 getCommonVariables.__initData = tmp2;
-let items1 = [{ code: "(function getCommonStyles_Pnpm_stackTs4(opts){let[interpolate]=this.__closure;const{snapDirection:snapDirection,validLength:validLength,value:value,opacityInterval:opacityInterval}=opts;let zIndex;let opacity;if(snapDirection===\"left\"){zIndex=Math.floor(interpolate(value,[-1.5,-1,-1+Number.MIN_VALUE,0,validLength],[Number.MIN_VALUE,validLength,validLength,validLength-1,-1])*10000)/100;opacity=interpolate(value,[-1,0,validLength-1,validLength],[0.25,1,1-(validLength-1)*opacityInterval,0.25]);}else if(snapDirection===\"right\"){zIndex=Math.floor(interpolate(value,[-validLength,0,1-Number.MIN_VALUE,1,1.5],[1,validLength-1,validLength,validLength,Number.MIN_VALUE])*10000)/100;opacity=interpolate(value,[-validLength,1-validLength,0,1],[0.25,1-(validLength-1)*opacityInterval,1,0.25]);}else{throw new Error(\"snapDirection must be set to either left or right\");}return{zIndex:Math.round(zIndex),opacity:opacity};})" }, _mod1655.interpolate];
+let items1 = [{ code: "(function getCommonStyles_Pnpm_stackTs4(opts){let[interpolate]=this.__closure;const{snapDirection:snapDirection,validLength:validLength,value:value,opacityInterval:opacityInterval}=opts;let zIndex;let opacity;if(snapDirection===\"left\"){zIndex=Math.floor(interpolate(value,[-1.5,-1,-1+Number.MIN_VALUE,0,validLength],[Number.MIN_VALUE,validLength,validLength,validLength-1,-1])*10000)/100;opacity=interpolate(value,[-1,0,validLength-1,validLength],[0.25,1,1-(validLength-1)*opacityInterval,0.25]);}else if(snapDirection===\"right\"){zIndex=Math.floor(interpolate(value,[-validLength,0,1-Number.MIN_VALUE,1,1.5],[1,validLength-1,validLength,validLength,Number.MIN_VALUE])*10000)/100;opacity=interpolate(value,[-validLength,1-validLength,0,1],[0.25,1-(validLength-1)*opacityInterval,1,0.25]);}else{throw new Error(\"snapDirection must be set to either left or right\");}return{zIndex:Math.round(zIndex),opacity:opacity};})" }, _mod1653.interpolate];
 let c0;
 [tmp3, tmp4] = items1;
 function getCommonStyles(arg0) {
@@ -240,7 +240,7 @@ export function verticalStackLayout() {
   if (arg0 === undefined) {
     obj = {};
   }
-  let items = [closure_6, closure_3, obj, getCommonVariables, getCommonStyles, _mod1655.interpolate, _mod1655.Extrapolation];
+  let items = [closure_6, closure_3, obj, getCommonVariables, getCommonStyles, _mod1653.interpolate, _mod1653.Extrapolation];
   let c0;
   let c1;
   let c2;

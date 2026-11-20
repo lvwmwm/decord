@@ -1,18 +1,18 @@
-// Module ID: 10331
-// Function ID: 10332
+// Module ID: 10273
+// Function ID: 10274
 // Name: useEmojiAndSource
-// Dependencies: [5, 32, 19, 4663, 6452, 7204, 1072, 4741, 563, 2]
+// Dependencies: [5, 32, 19, 4665, 6454, 7203, 1071, 4743, 563, 2]
 // Exports: useEmojiAndSource
 
-// Module 10331 (useEmojiAndSource)
-import Constants from "Constants" /* 1072 */;
-import EmojiTypes from "EmojiTypes" /* 4741 */;
+// Module 10273 (useEmojiAndSource)
+import Constants from "Constants" /* 1071 */;
+import EmojiTypes from "EmojiTypes" /* 4743 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4663 */;
-import EmojiStore from "EmojiStore" /* 6452 */;
-import ExpressionSourceRecord from "ExpressionSourceRecord" /* 7204 */;
+import GuildStore from "GuildStore" /* 4665 */;
+import EmojiStore from "EmojiStore" /* 6454 */;
+import ExpressionSourceRecord from "ExpressionSourceRecord" /* 7203 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -141,7 +141,7 @@ export function useEmojiAndSource(emojiId) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -196,7 +196,7 @@ export function useEmojiAndSource(emojiId) {
               current();
             }
             c3 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           } catch (tmp33) {
             c3 = 3;
             throw tmp33;

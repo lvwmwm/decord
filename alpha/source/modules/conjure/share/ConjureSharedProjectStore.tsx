@@ -1,9 +1,9 @@
-// Module ID: 11908
-// Function ID: 11909
+// Module ID: 11850
+// Function ID: 11851
 // Name: ConjureSharedProjectStore
 // Dependencies: [504, 8779, 572, 2]
 
-// Module 11908 (ConjureSharedProjectStore)
+// Module 11850 (ConjureSharedProjectStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import conjureProjectLink from "conjureProjectLink" /* 8779 */;

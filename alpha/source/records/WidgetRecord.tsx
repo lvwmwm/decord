@@ -1,10 +1,10 @@
-// Module ID: 14874
-// Function ID: 14875
+// Module ID: 14836
+// Function ID: 14837
 // Name: WidgetRecord
-// Dependencies: [1408, 2]
+// Dependencies: [1406, 2]
 
-// Module 14874 (WidgetRecord)
-import Record from "Record" /* 1408 */;
+// Module 14836 (WidgetRecord)
+import Record from "Record" /* 1406 */;
 import size_mod from "module_2" /* 2 */;
 
 let size = size_mod;
@@ -74,7 +74,7 @@ class WidgetRecord extends Record {
     const size1 = { width: 0, height: 0 };
     const merged = Object.assign(id.size);
     tmp7.size = size1;
-    const size2 = { width: "Array", height: "Path" };
+    const size2 = { width: "Array", height: "analyticsLocations" };
     const merged1 = Object.assign(id.minSize);
     tmp7.minSize = size2;
     tmp7.pinned = id.pinned;

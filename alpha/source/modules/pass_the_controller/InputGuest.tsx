@@ -1,12 +1,12 @@
-// Module ID: 14806
-// Function ID: 14807
+// Module ID: 14770
+// Function ID: 14771
 // Name: InputGuest
-// Dependencies: [5, 3, 14801, 572, 2]
+// Dependencies: [5, 3, 14766, 572, 2]
 
-// Module 14806 (InputGuest)
+// Module 14770 (InputGuest)
 import LoggerDefault from "Logger" /* 3 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import InputEvent from "InputEvent" /* 14801 */;
+import InputEvent from "InputEvent" /* 14766 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -77,6 +77,7 @@ class InputGuest {
   _handleKeyEvent(preventDefault) {
     const self = this;
     preventDefault.preventDefault();
+    const result = preventDefault.stopImmediatePropagation();
     if (this.isMouseCaptured) {
       if ("Escape" === preventDefault.code) {
         self._dropController();
@@ -84,7 +85,7 @@ class InputGuest {
     }
     if (null != closure_4[preventDefault.code]) {
       const connection = self.connection;
-      connection.sendKey(self.sessionId, tmp2[preventDefault.code], "keydown" === preventDefault.type);
+      connection.sendKey(self.sessionId, tmp3[preventDefault.code], "keydown" === preventDefault.type);
     } else {
       const logger = self.logger;
       const _HermesInternal = HermesInternal;
@@ -94,6 +95,7 @@ class InputGuest {
   _handleMouseEvent(preventDefault) {
     const self = this;
     preventDefault.preventDefault();
+    const result = preventDefault.stopImmediatePropagation();
     if ("mousemove" === preventDefault.type) {
       const connection3 = self.connection;
       connection3.sendMouseMove(self.sessionId, preventDefault.movementX, preventDefault.movementY);
@@ -125,7 +127,7 @@ class InputGuest {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -198,7 +200,7 @@ class InputGuest {
               closure_128_0.isMouseCaptured = true;
             }
             c4 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp21) {
           let closure_2 = tmp21;

@@ -1,21 +1,21 @@
-// Module ID: 17653
-// Function ID: 17654
+// Module ID: 17480
+// Function ID: 17481
 // Name: HappeningNowAvatarStack
-// Dependencies: [32, 19, 17, 2189, 14400, 21, 4792, 575, 1187, 1655, 563, 5393, 1708, 8903, 5383, 2027, 17654, 2]
+// Dependencies: [32, 19, 17, 2187, 14368, 21, 4794, 575, 1186, 1653, 563, 5395, 1706, 8903, 5385, 2025, 17481, 2]
 // Exports: HappeningNowAvatarStack
 
-// Module 17653 (HappeningNowAvatarStack)
+// Module 17480 (HappeningNowAvatarStack)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 1187 */;
-import spring_spring from "spring/spring" /* 5393 */;
+import native from "native" /* 1186 */;
+import spring_spring from "spring/spring" /* 5395 */;
 import ClipView from "ClipView" /* 8903 */;
-import ChannelAnimationConstants from "ChannelAnimationConstants" /* 14400 */;
+import ChannelAnimationConstants from "ChannelAnimationConstants" /* 14368 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import LocaleStore_mod from "LocaleStore" /* 2189 */;
+import LocaleStore_mod from "LocaleStore" /* 2187 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -25,7 +25,7 @@ let set;
 let c9;
 let metroImportAll;
 let tmp2;
-const _mod1708 = tmp2(1708);
+const _mod1706 = tmp2(1706);
 let View = react_native.View;
 let LocaleStore = LocaleStore_mod;
 const CHANNEL_SPRING_CONFIG = ChannelAnimationConstants.CHANNEL_SPRING_CONFIG;
@@ -114,7 +114,7 @@ export function HappeningNowAvatarStack(userLimit) {
   [tmp5, c7] = tmp4;
   let tmp6 = require;
   let tmp7 = isStage;
-  const tmp8 = require("module_1655");
+  const tmp8 = require("module_1653");
   let num4 = 0;
   const useSharedValue = tmp8.useSharedValue;
   if (isTyping) {
@@ -160,7 +160,7 @@ export function HappeningNowAvatarStack(userLimit) {
     if (isTyping) {
       num = 1;
     }
-    const items = [closure_13, _mod1708.scheduleOnRN, c7, tmp5];
+    const items = [closure_13, _mod1706.scheduleOnRN, c7, tmp5];
     let c0;
     let c1;
     let c2;

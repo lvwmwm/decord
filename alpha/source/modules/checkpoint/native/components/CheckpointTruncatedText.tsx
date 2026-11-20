@@ -1,12 +1,12 @@
-// Module ID: 12669
-// Function ID: 12670
+// Module ID: 12639
+// Function ID: 12640
 // Name: CheckpointTruncatedText
-// Dependencies: [32, 19, 17, 21, 5474, 5383, 2]
+// Dependencies: [32, 19, 17, 21, 5476, 5385, 2]
 // Exports: default
 
-// Module 12669 (CheckpointTruncatedText)
-import Text_Text from "Text/Text" /* 5383 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5474 */;
+// Module 12639 (CheckpointTruncatedText)
+import Text_Text from "Text/Text" /* 5385 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5476 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

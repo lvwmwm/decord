@@ -1,9 +1,9 @@
-// Module ID: 17715
-// Function ID: 17716
+// Module ID: 17542
+// Function ID: 17543
 // Name: SortableChannels
-// Dependencies: [19, 17, 21, 12, 1496, 2]
+// Dependencies: [19, 17, 21, 12, 1494, 2]
 
-// Module 17715 (SortableChannels)
+// Module 17542 (SortableChannels)
 import react2 from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -521,7 +521,7 @@ class SortableChannels extends Component3 {
     obj.dy = 0;
     obj.direction = "down";
     obj.scrollValue = 0;
-    const obj4 = obj(1496);
+    const obj4 = obj(1494);
     obj.scrollContainerHeight = 1.2 * obj4.getWindowDimensions().height;
     obj.state = { active: null, activeIndex: -1, hoveringIndex: -1, panResponder, pan: valueXY };
     obj.layoutMap = {};

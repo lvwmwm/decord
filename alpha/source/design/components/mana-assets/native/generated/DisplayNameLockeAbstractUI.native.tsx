@@ -1,26 +1,26 @@
-// Module ID: 18955
-// Function ID: 18956
+// Module ID: 18779
+// Function ID: 18780
 // Name: DisplayNameLockeAbstractUI
-// Dependencies: [19, 21, 18956, 18957, 18958, 7238, 5479, 2]
+// Dependencies: [19, 21, 18780, 18781, 18782, 7237, 5481, 2]
 // Exports: DisplayNameLockeAbstractUI
 
-// Module 18955 (DisplayNameLockeAbstractUI)
+// Module 18779 (DisplayNameLockeAbstractUI)
 import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 7238 */;
-import _modDef18956 from "module_18956" /* 18956 */;
-import _modDef18957 from "module_18957" /* 18957 */;
-import _modDef18958 from "module_18958" /* 18958 */;
+import react_native from "react-native" /* 7237 */;
+import _modDef18780 from "module_18780" /* 18780 */;
+import _modDef18781 from "module_18781" /* 18781 */;
+import _modDef18782 from "module_18782" /* 18782 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef18956 };
+let obj2 = { uri: _modDef18780 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef18957 };
+let obj3 = { uri: _modDef18781 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef18958 };
-({ uri: _modDef18958 });
+obj[3] = { uri: _modDef18782 };
+({ uri: _modDef18782 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/DisplayNameLockeAbstractUI.native.tsx");
 

@@ -1,12 +1,12 @@
-// Module ID: 19390
-// Function ID: 19391
+// Module ID: 19210
+// Function ID: 19211
 // Name: getConsoleConnectingText
-// Dependencies: [1072, 1113, 2]
+// Dependencies: [1071, 1112, 2]
 // Exports: getConsoleConnectingText
 
-// Module 19390 (getConsoleConnectingText)
-import Constants from "Constants" /* 1072 */;
-import intl5 from "intl" /* 1113 */;
+// Module 19210 (getConsoleConnectingText)
+import Constants from "Constants" /* 1071 */;
+import intl5 from "intl" /* 1112 */;
 import size from "module_2" /* 2 */;
 
 const PlatformTypes = Constants.PlatformTypes;

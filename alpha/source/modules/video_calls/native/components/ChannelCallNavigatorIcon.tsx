@@ -1,21 +1,21 @@
-// Module ID: 10849
-// Function ID: 10850
+// Module ID: 10791
+// Function ID: 10792
 // Name: ChannelCallNavigatorIcon
-// Dependencies: [19, 17, 10574, 1072, 21, 4792, 575, 6911, 4799, 5360, 1187, 2]
+// Dependencies: [19, 17, 10516, 1071, 21, 4794, 575, 6910, 4801, 5362, 1186, 2]
 // Exports: default
 
-// Module 10849 (ChannelCallNavigatorIcon)
+// Module 10791 (ChannelCallNavigatorIcon)
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 1187 */;
-import shared from "shared" /* 4799 */;
-import VisualEffectViewDefault from "VisualEffectView" /* 5360 */;
-import Pressables from "Pressables" /* 6911 */;
-import ChannelCallStore from "ChannelCallStore" /* 10574 */;
+import native from "native" /* 1186 */;
+import shared from "shared" /* 4801 */;
+import VisualEffectViewDefault from "VisualEffectView" /* 5362 */;
+import Pressables from "Pressables" /* 6910 */;
+import ChannelCallStore from "ChannelCallStore" /* 10516 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1072 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -106,14 +106,14 @@ export default function ChannelCallNavigatorIcon(disableBackground) {
     tmp3Result3 = tmp3(IconComponent, obj5);
   } else {
     const obj6 = { source, color: tmp2.iconColor.color, size: native.Icon.Sizes.SMALL_20 };
-    const Icon = tmp6(1187).Icon;
+    const Icon = tmp6(1186).Icon;
     tmp3Result3 = tmp3(Icon, obj6);
   }
   items1[1] = tmp3Result3;
   let tmp3Result4 = null != membersCount && membersCount > 0;
   if (tmp3Result4) {
     const obj7 = { style: tmp2.text, children: membersCount };
-    tmp3Result4 = tmp3(tmp6(1187).LegacyText, obj7);
+    tmp3Result4 = tmp3(tmp6(1186).LegacyText, obj7);
   }
   items1[2] = tmp3Result4;
   items2 = [closure_8(closure_3, obj3), children];

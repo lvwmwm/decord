@@ -1,10 +1,10 @@
-// Module ID: 15207
-// Function ID: 15208
+// Module ID: 15171
+// Function ID: 15172
 // Name: DistributedClipsExperiment
-// Dependencies: [1452, 2]
+// Dependencies: [1450, 2]
 
-// Module 15207 (DistributedClipsExperiment)
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+// Module 15171 (DistributedClipsExperiment)
+import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

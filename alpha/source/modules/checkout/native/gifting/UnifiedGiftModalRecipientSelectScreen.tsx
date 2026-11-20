@@ -1,7 +1,7 @@
 // Module ID: 9525
 // Function ID: 9526
 // Name: UnifiedGiftModalRecipientSelectScreen
-// Dependencies: [19, 17, 9526, 21, 4792, 575, 1502, 9527, 9493, 2]
+// Dependencies: [19, 17, 9526, 21, 4794, 575, 1500, 9527, 9493, 2]
 // Exports: default
 
 // Module 9525 (UnifiedGiftModalRecipientSelectScreen)
@@ -11,7 +11,7 @@ import nativeDefault from "native" /* 575 */;
 import UnifiedGiftModalTypes from "UnifiedGiftModalTypes" /* 9493 */;
 import UserRowConstants from "UserRowConstants" /* 9526 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
@@ -27,7 +27,7 @@ const result = size.fileFinishedImporting("modules/checkout/native/gifting/Unifi
 
 export default function UnifiedGiftModalRecipientSelectScreen(setRecipientUser) {
   setRecipientUser = setRecipientUser.setRecipientUser;
-  const obj = setRecipientUser(1502);
+  const obj = setRecipientUser(1500);
   importDefault = obj.useNavigation();
   return <View style={closure_6().container}>{null}</View>;
 };

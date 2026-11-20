@@ -7,7 +7,7 @@
 import size from "module_2" /* 2 */;
 
 const items = ["logitech", "youtube", "best_buy", "call_of_duty"];
-const items1 = ["logitech", "steelseries"];
+const items1 = ["logitech", "steelseries", "voicemod"];
 const set = new Set(items);
 const result = size.fileFinishedImporting("modules/premium/promotions/constants.tsx");
 

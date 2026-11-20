@@ -1,10 +1,10 @@
-// Module ID: 19754
-// Function ID: 19755
+// Module ID: 19572
+// Function ID: 19573
 // Name: SoundboardMobileCreationExperiment
-// Dependencies: [1452, 2]
+// Dependencies: [1450, 2]
 
-// Module 19754 (SoundboardMobileCreationExperiment)
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+// Module 19572 (SoundboardMobileCreationExperiment)
+import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

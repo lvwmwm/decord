@@ -1,22 +1,22 @@
-// Module ID: 15747
-// Function ID: 15748
+// Module ID: 15711
+// Function ID: 15712
 // Name: ChangeBannerActionSheet
-// Dependencies: [5, 19, 17, 8013, 1072, 21, 4792, 575, 7401, 2174, 15748, 5006, 8355, 15749, 7291, 7434, 7396, 1113, 8832, 7229, 6926, 7590, 15750, 15751, 15752, 504, 8792, 7953, 8085, 1090, 8789, 15753, 15755, 5383, 1187, 15760, 2]
+// Dependencies: [5, 19, 17, 8012, 1071, 21, 4794, 575, 7400, 2172, 15712, 5008, 8354, 15713, 7290, 7433, 7395, 1112, 8832, 7228, 6925, 7589, 15714, 15715, 15716, 504, 8792, 7952, 8084, 1089, 8789, 15717, 15719, 5385, 1186, 15724, 2]
 // Exports: default
 
-// Module 15747 (ChangeBannerActionSheet)
+// Module 15711 (ChangeBannerActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5008 */;
 import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8789 */;
-import ProfileEditSheetNitroUpdatesExperiment from "ProfileEditSheetNitroUpdatesExperiment" /* 15748 */;
-import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 15753 */;
+import ProfileEditSheetNitroUpdatesExperiment from "ProfileEditSheetNitroUpdatesExperiment" /* 15712 */;
+import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 15717 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8013 */;
-import Constants from "Constants" /* 1072 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8012 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -34,13 +34,13 @@ let obj6;
 let obj7;
 let tmp4;
 let unpackModuleId;
-const intl13 = tmp4(1113);
-const TableRow7 = tmp4(6926);
-const TableRowGroup3 = tmp4(7229);
-const BottomSheetTitleHeader3 = tmp4(7396);
-const useAnalyticsLocations = tmp4(7401);
-const ActionSheet3 = tmp4(7434);
-const _mod7590 = tmp4(7590);
+const intl13 = tmp4(1112);
+const TableRow7 = tmp4(6925);
+const TableRowGroup3 = tmp4(7228);
+const BottomSheetTitleHeader3 = tmp4(7395);
+const useAnalyticsLocations = tmp4(7400);
+const ActionSheet3 = tmp4(7433);
+const _mod7589 = tmp4(7589);
 const NitroWheelIcon = tmp4(8832);
 function ChangeBannerColorRow(arg0) {
   let FormLabel;
@@ -76,7 +76,7 @@ function ChangeBannerColorRow(arg0) {
   const obj2 = require("RecentAvatarUtils");
   const obj3 = { userId: user.id, image: pendingAvatar };
   let pendingAvatarSrc = obj2.getPendingAvatarSrc(obj3);
-  const tmp7 = pendingAccentColor(7953)(user.id);
+  const tmp7 = pendingAccentColor(7952)(user.id);
   if (pendingAvatarSrc == null) {
     pendingAvatarSrc = user.getAvatarURL(undefined, 80);
   }
@@ -113,26 +113,26 @@ function ChangeBannerColorRow(arg0) {
     const obj = UserProfileSettingsActionCreators;
     obj.setPendingChanges({ accentColor: tmp });
   }, items1);
-  const TableRow = tmp2(6926).TableRow;
+  const TableRow = tmp2(6925).TableRow;
   if (showHexValue) {
     const obj4 = { label: closure_9(FormLabel, obj5), trailing: closure_10(View, obj6), onPress: handleChangeColor };
     obj5 = { style: tmp.label, text: intl2.string(require("intl").t.xzNfPz) };
-    FormLabel = tmp2(7590).FormLabel;
-    intl2 = tmp2(1113).intl;
+    FormLabel = tmp2(7589).FormLabel;
+    intl2 = tmp2(1112).intl;
     obj6 = { style: tmp.selectedColor, children: items2 };
     const obj7 = { style: tmp.bannerColor, color: pendingAccentColor };
-    items2 = [closure_9(pendingAccentColor(15755), obj7), , ];
+    items2 = [closure_9(pendingAccentColor(15719), obj7), , ];
     const obj8 = { style: tmp.selectedColorHex, variant: "body-md/medium", color: "interactive-text-default", children: tmp2Result7.int2hex(pendingAccentColor) };
-    const Text = tmp2(5383).Text;
+    const Text = tmp2(5385).Text;
     tmp2Result7 = require("utils/ColorUtils");
     items2[1] = closure_9(Text, obj8);
-    const obj9 = { style: tmp.rowArrow, size: require("native").Icon.Sizes.CUSTOM, source: pendingAccentColor(15760) };
-    const Icon = tmp2(1187).Icon;
+    const obj9 = { style: tmp.rowArrow, size: require("native").Icon.Sizes.CUSTOM, source: pendingAccentColor(15724) };
+    const Icon = tmp2(1186).Icon;
     items2[2] = closure_9(Icon, obj9);
     obj10 = obj4;
   } else {
-    obj10 = { label: intl.string(require("intl").t.xzNfPz), trailing: closure_9(pendingAccentColor(15755), obj11), arrow: true, accessibilityValue: obj12, onPress: handleChangeColor };
-    intl = tmp2(1113).intl;
+    obj10 = { label: intl.string(require("intl").t.xzNfPz), trailing: closure_9(pendingAccentColor(15719), obj11), arrow: true, accessibilityValue: obj12, onPress: handleChangeColor };
+    intl = tmp2(1112).intl;
     obj11 = { style: tmp.bannerColor, color: pendingAccentColor };
     obj12 = { text: tmp2Result8.int2hex(pendingAccentColor) };
     tmp2Result8 = require("utils/ColorUtils");
@@ -203,7 +203,7 @@ export default function ChangeBannerActionSheet(analyticsLocations) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -249,7 +249,7 @@ export default function ChangeBannerActionSheet(analyticsLocations) {
               closure_129_0(createPendingImage(obj));
             }
             c3 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp20) {
           c3 = 3;
@@ -261,9 +261,9 @@ export default function ChangeBannerActionSheet(analyticsLocations) {
   };
   let tmp = closure_12();
   const tmp3 = dependencyMap;
-  const analyticsLocations2 = obj(7401)(analyticsLocations).analyticsLocations;
+  const analyticsLocations2 = obj(7400)(analyticsLocations).analyticsLocations;
   if (!flag) {
-    const tmp2Result = obj(2174);
+    const tmp2Result = obj(2172);
     flag = tmp2Result.canUsePremiumProfileCustomization(user);
   }
   function handleBannerUploadSelect() {
@@ -279,7 +279,7 @@ export default function ChangeBannerActionSheet(analyticsLocations) {
   const profileEditSheetNitroUpdatesConfig = obj2.useProfileEditSheetNitroUpdatesConfig("change_banner_action_sheet_native");
   if (profileEditSheetNitroUpdatesConfig.enabled) {
     obj = { text: intl6.string(intl13.t.TiLCgw) };
-    const tmp2Result3 = obj(15751);
+    const tmp2Result3 = obj(15715);
     intl6 = intl13.intl;
     const tmp7Result = closure_9(tmp2Result3, obj);
     let obj3 = { value: analyticsLocations2, children: tmp26(ActionSheet2, obj11) };
@@ -299,7 +299,7 @@ export default function ChangeBannerActionSheet(analyticsLocations) {
     let tmp7Result10 = !flag;
     if (tmp7Result10) {
       let string3Result;
-      const tmp2Result4 = obj(15752);
+      const tmp2Result4 = obj(15716);
       const intl8 = intl13.intl;
       const string3 = intl8.string;
       const t3 = intl13.t;
@@ -366,7 +366,7 @@ export default function ChangeBannerActionSheet(analyticsLocations) {
     const items3 = [tmp7Result12, , , ];
     const obj16 = { style: tmp.label, children: items4 };
     const TableRow = TableRow7.TableRow;
-    const FormLabel = _mod7590.FormLabel;
+    const FormLabel = _mod7589.FormLabel;
     const intl2 = intl13.intl;
     const string = intl2.string;
     const t = intl13.t;
@@ -385,7 +385,7 @@ export default function ChangeBannerActionSheet(analyticsLocations) {
     items4[1] = tmp7Result13;
     const obj19 = { label: closure_10(View, obj16), subLabel: closure_10(tmp16, obj23), onPress: tmp20 };
     const obj20 = { style: tmp.sublabel, numberOfLines: 2, text: string2Result };
-    const FormSubLabel = _mod7590.FormSubLabel;
+    const FormSubLabel = _mod7589.FormSubLabel;
     const intl3 = intl13.intl;
     const string2 = intl3.string;
     const t2 = intl13.t;
@@ -398,7 +398,7 @@ export default function ChangeBannerActionSheet(analyticsLocations) {
     const items5 = [tmp7(FormSubLabel, obj20), ];
     let tmp7Result14 = !flag;
     if (tmp7Result14) {
-      const obj21 = { style: tmp.upsellButton, children: closure_9(obj(15750), obj22) };
+      const obj21 = { style: tmp.upsellButton, children: closure_9(obj(15714), obj22) };
       obj22 = { analyticsObject: constants.EDIT_PROFILE_BANNER };
       tmp7Result14 = tmp7(tmp13, obj21);
     }
@@ -424,7 +424,7 @@ export default function ChangeBannerActionSheet(analyticsLocations) {
       items6 = [, ];
       ({ label: arr5[0], remove: arr5[1] } = tmp);
       stringResult1 = removeText;
-      const FormLabel2 = _mod7590.FormLabel;
+      const FormLabel2 = _mod7589.FormLabel;
       if (removeText == null) {
         const intl5 = intl13.intl;
         stringResult1 = intl5.string(intl13.t.tT9n7D);

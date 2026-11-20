@@ -1,25 +1,25 @@
-// Module ID: 19862
-// Function ID: 19863
+// Module ID: 19681
+// Function ID: 19682
 // Name: SoundboardSoundCreationPreview
-// Dependencies: [32, 5, 19, 17, 4793, 5842, 5693, 21, 4792, 575, 5356, 1655, 9140, 7273, 10825, 1380, 19855, 504, 5002, 15700, 5473, 1113, 6901, 19857, 19863, 5383, 5390, 2]
+// Dependencies: [32, 5, 19, 17, 4795, 5844, 5695, 21, 4794, 575, 5358, 1653, 9140, 7272, 10767, 1378, 19673, 504, 5004, 8085, 15664, 5475, 1112, 6900, 19682, 19683, 5385, 5392, 2]
 // Exports: default
 
-// Module 19862 (SoundboardSoundCreationPreview)
+// Module 19681 (SoundboardSoundCreationPreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import timing_timing from "timing/timing" /* 5002 */;
-import useToken from "useToken" /* 5356 */;
-import Constants from "Constants" /* 5693 */;
-import SoundboardConstants from "SoundboardConstants" /* 5842 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import timing_timing from "timing/timing" /* 5004 */;
+import useToken from "useToken" /* 5358 */;
+import Constants from "Constants" /* 5695 */;
+import SoundboardConstants from "SoundboardConstants" /* 5844 */;
 import TextTrackTypeDefault from "TextTrackType" /* 9140 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4793 */;
+import AccessibilityStore from "AccessibilityStore" /* 4795 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
+import createStyles_mod from "createStyles" /* 4794 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
 import size_mod from "module_2" /* 2 */;
 
 let c4, c5, dependencyMap, diff, set;
@@ -32,7 +32,7 @@ let obj4;
 let size;
 let tmp3;
 let unpackModuleId;
-const _modDef1655 = tmp3(1655);
+const _modDef1653 = tmp3(1653);
 function PlayheadLine(arg0) {
   let items2;
   let progress;
@@ -50,7 +50,7 @@ function PlayheadLine(arg0) {
   let c1;
   let c2;
   [tmp5, tmp6, tmp7, tmp8] = items;
-  const obj2 = _mod1655;
+  const obj2 = _mod1653;
   class SoundboardSoundCreationPreviewTsx1 {
     constructor() {
       obj = { left: null, opacity: null };
@@ -71,7 +71,7 @@ function PlayheadLine(arg0) {
   const animatedStyle = obj2.useAnimatedStyle(SoundboardSoundCreationPreviewTsx1);
   const obj3 = { pointerEvents: "none", style: items2 };
   items2 = [tmp.playheadLine, animatedStyle, { backgroundColor: token }];
-  return authStore(_modDef1655.View, obj3);
+  return authStore(_modDef1653.View, obj3);
 }
 let react = react_mod;
 const View = react_native.View;
@@ -115,11 +115,11 @@ let closure_16 = PlatformUtils.isIOS() ? (function VideoPreviewPlayer(onLoad) {
   uri = uri.uri;
   let volume = uri.volume;
   ({ onLoad, onEnd, onError } = uri);
-  let tmp = volume(7273)(onLoad);
+  let tmp = volume(7272)(onLoad);
   dependencyMap = tmp;
-  const tmp2 = volume(7273)(onEnd);
+  const tmp2 = volume(7272)(onEnd);
   let closure_3 = tmp2;
-  const tmp3 = volume(7273)(onError);
+  const tmp3 = volume(7272)(onError);
   let closure_4 = tmp3;
   const items = [uri, volume, tmp, tmp2, tmp3];
   const effect = react.useEffect(() => {
@@ -142,7 +142,7 @@ let closure_16 = PlatformUtils.isIOS() ? (function VideoPreviewPlayer(onLoad) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c3;
@@ -197,7 +197,7 @@ let closure_16 = PlatformUtils.isIOS() ? (function VideoPreviewPlayer(onLoad) {
                 c3 = 0;
               }
               c5 = 3;
-              return { value: "HermesInternal", done: "+60" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp17) {
             closure_2 = tmp17;
@@ -232,15 +232,15 @@ export default function SoundboardSoundCreationPreview(source) {
   let c13;
   let closure_5;
   let intl;
-  let intl2;
   let items10;
   let num2;
   let num3;
   let obj14;
   let obj16;
   let tmp14;
-  let tmp34Result;
-  let tmp48;
+  let tmp37Result;
+  let tmp49;
+  let tmp52;
   source = source.source;
   const volume = source.volume;
   let onDurationChange = source.onDurationChange;
@@ -257,6 +257,7 @@ export default function SoundboardSoundCreationPreview(source) {
   let first4;
   let closure_17;
   let memo;
+  let closure_19;
   let tmp = c13();
   const uri = source.uri;
   let obj = react;
@@ -290,7 +291,7 @@ export default function SoundboardSoundCreationPreview(source) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c2;
@@ -339,7 +340,7 @@ export default function SoundboardSoundCreationPreview(source) {
                 c2 = 0;
               }
               c4 = 3;
-              return { value: "HermesInternal", done: "+60" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp18) {
             if (0 === c2) {
@@ -428,7 +429,7 @@ export default function SoundboardSoundCreationPreview(source) {
     if (!tmp2) {
       const result = sharedValue.set(tmp.fromRatio);
       set = sharedValue.set;
-      const obj = { duration: first2.durationMs, easing: _mod1655.Easing.linear };
+      const obj = { duration: first2.durationMs, easing: _mod1653.Easing.linear };
       const withTiming = timing_timing.withTiming;
       const toRatio = tmp.toRatio;
       timing_timing;
@@ -439,14 +440,15 @@ export default function SoundboardSoundCreationPreview(source) {
     closure_10(null);
     const result = sharedValue.set(-1);
   }, items6);
-  const items7 = [uri, preview, first2, first3, memo, first4, volume];
-  let tmp31 = null == preview;
-  const callback3 = obj.useCallback(uri(function*(arg0, value) {
+  const tmp31 = volume(onDurationChange[19])();
+  closure_19 = tmp31;
+  const items7 = [uri, preview, first2, first3, memo, first4, volume, tmp31];
+  let callback3 = obj.useCallback(uri(function*(arg0, value) {
     let closure_0;
     let closure_1;
     let closure_2;
-    let obj2;
-    let obj6;
+    let obj3;
+    let obj7;
     if (c5 === 2) {
       c5 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
@@ -454,10 +456,10 @@ export default function SoundboardSoundCreationPreview(source) {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
-        const obj3 = { value, done: true };
-        return obj3;
+        const obj2 = { value, done: true };
+        return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -475,22 +477,22 @@ export default function SoundboardSoundCreationPreview(source) {
           } else {
             source = undefined;
             tmp = undefined;
-            const tmp61 = preview;
+            const tmp79 = preview;
             if (null != preview) {
               if (null == first2) {
-                const tmp63 = first3;
-                if (!tmp63) {
+                const tmp81 = first3;
+                if (!tmp81) {
                   if (null != memo) {
                     closure_12(true);
                     c3 = 2;
                     c4 = 3;
                     c5 = 1;
-                    const obj7 = { value: obj6.trimSoundboardAudio(uri, tmp33), done: false };
-                    obj6 = source(onDurationChange[16]);
-                    return obj7;
+                    const obj5 = { value: obj7.trimSoundboardAudio(uri, tmp58), done: false };
+                    obj7 = source(onDurationChange[16]);
+                    return obj5;
                   } else {
-                    const obj8 = { uri: null, fromRatio: 0, toRatio: 1, durationMs: null, volume: tmp(onDurationChange[19])(volume) };
-                    ({ audioUri: obj5.uri, durationMs: obj5.durationMs } = tmp61);
+                    const obj8 = { uri: null, fromRatio: 0, toRatio: 1, durationMs: null, volume: tmp(onDurationChange[20])(volume) };
+                    ({ audioUri: obj6.uri, durationMs: obj6.durationMs } = tmp79);
                     closure_10(obj8);
                   }
                 }
@@ -499,22 +501,29 @@ export default function SoundboardSoundCreationPreview(source) {
           }
         } else if (1 === c4) {
           c3 = 0;
-          closure_129_12(false);
-          throw onDurationChange;
+          const tmp52 = onDurationChange;
+          if (closure_129_19()) {
+            closure_129_12(false);
+          }
+          throw tmp52;
         } else {
           if (2 === c4) {
             c3 = 1;
-            const presentError = source(onDurationChange[20]).presentError;
-            const tmp19 = source(onDurationChange[20]);
-            const intl = source(onDurationChange[21]).intl;
-            presentError(intl.string(source(onDurationChange[21]).t.M17qLj));
+            if (closure_129_19()) {
+              const presentError = source(onDurationChange[21]).presentError;
+              const tmp40 = source(onDurationChange[21]);
+              const intl = source(onDurationChange[22]).intl;
+              presentError(intl.string(source(onDurationChange[22]).t.M17qLj));
+            }
           } else if (3 === c4) {
             if (arg0 === 1) {
               c5 = 3;
               throw value;
             } else if (arg0 === 2) {
               c3 = 0;
-              closure_129_12(false);
+              if (closure_129_19()) {
+                closure_129_12(false);
+              }
               c5 = 3;
               const obj9 = { value, done: true };
               return obj9;
@@ -522,37 +531,50 @@ export default function SoundboardSoundCreationPreview(source) {
               source = value;
               c4 = 4;
               c5 = 1;
-              const obj17 = { value: obj2.loadSoundboardAudioPreview(source, 1), done: false };
-              obj2 = source(onDurationChange[16]);
-              return obj17;
+              const obj10 = { value: obj3.loadSoundboardAudioPreview(source, 1), done: false };
+              obj3 = source(onDurationChange[16]);
+              return obj10;
             }
           } else if (arg0 === 1) {
             c5 = 3;
             throw value;
           } else if (arg0 === 2) {
             c3 = 0;
-            closure_129_12(false);
+            if (closure_129_19()) {
+              closure_129_12(false);
+            }
             c5 = 3;
-            const obj = { value, done: true };
-            return obj;
+            const obj17 = { value, done: true };
+            return obj17;
           } else {
             tmp = value;
-            const obj18 = { uri: tmp.audioUri, fromRatio: null, toRatio: null, durationMs: tmp.durationMs, volume: tmp(onDurationChange[19])(closure_129_1) };
-            ({ start: obj10.fromRatio, end: obj10.toRatio } = closure_129_16);
-            closure_129_10(obj18);
-            c3 = 1;
+            if (closure_129_19()) {
+              const obj = { uri: tmp.audioUri, fromRatio: null, toRatio: null, durationMs: tmp.durationMs, volume: tmp(onDurationChange[20])(closure_129_1) };
+              ({ start: obj.fromRatio, end: obj.toRatio } = closure_129_16);
+              closure_129_10(obj);
+              c3 = 1;
+            } else {
+              c3 = 0;
+              if (closure_129_19()) {
+                closure_129_12(false);
+              }
+              c5 = 3;
+              return { value: "HermesInternal", done: null };
+            }
           }
           c3 = 0;
-          closure_129_12(false);
+          if (closure_129_19()) {
+            closure_129_12(false);
+          }
         }
         c5 = 3;
-        return { value: "HermesInternal", done: "+60" };
-      } catch (tmp44) {
-        onDurationChange = tmp44;
+        return { value: "HermesInternal", done: null };
+      } catch (tmp69) {
+        onDurationChange = tmp69;
         if (0 === c3) {
           c5 = 3;
-          throw tmp44;
-        } else if (1 === tmp46) {
+          throw tmp69;
+        } else if (1 === tmp71) {
           c4 = 1;
         } else {
           c4 = 2;
@@ -560,87 +582,93 @@ export default function SoundboardSoundCreationPreview(source) {
       }
     }
   }), items7);
-  const tmp24 = num;
-  if (tmp31) {
-    tmp31 = !first1;
-  }
   let waveform;
+  const tmp24 = num;
+  const tmp33 = null == preview && !first1;
   if (preview != null) {
     waveform = preview.waveform;
   }
   if (waveform == null) {
     waveform = source.fallbackWaveform;
   }
-  const tmp33 = null != preview;
-  let tmp36 = null;
+  let tmp39 = null;
   if (null != first2) {
+    let tmp40 = closure_10;
     let obj7 = { uri: null, volume: null, onLoad: callback1, onEnd: callback2, onError: callback2 };
     ({ uri: obj6.uri, volume: obj6.volume } = first2);
-    tmp36 = closure_10(first4, obj7);
+    tmp39 = closure_10(first4, obj7);
   }
-  const items8 = [tmp36, , ];
+  const items8 = [tmp39, , ];
   let obj8 = { style: tmp.waveformCard, children: items10 };
   let obj9 = {
     style: tmp.waveformContainer,
     onLayout(nativeEvent) {
       return _undefined(nativeEvent.nativeEvent.layout.width);
     },
-    children: tmp34Result
+    children: tmp37Result
   };
-  if (tmp31) {
-    tmp34Result = tmp40(tmp15(tmp16[22]).ActivityIndicator, {});
+  if (tmp33) {
+    tmp37Result = tmp43(tmp15(tmp16[23]).ActivityIndicator, {});
   } else {
-    const obj10 = { waveform, barCount: tmp15(tmp16[16]).WAVEFORM_BAR_COUNT, height: 96, trimStartRatio: num2, trimEndRatio: num3 };
+    let obj10 = { waveform, barCount: tmp15(tmp16[16]).WAVEFORM_BAR_COUNT, height: 96, trimStartRatio: num2, trimEndRatio: num3 };
     num2 = 0;
-    const tmp41 = volume;
-    const tmp42 = volume(onDurationChange[23]);
-    if (tmp33) {
+    const tmp30Result = volume(onDurationChange[24]);
+    if (null != preview) {
       num2 = first4.start;
     }
     num3 = 1;
-    if (tmp33) {
+    if (null != preview) {
       num3 = first4.end;
     }
-    const items9 = [tmp40(tmp42, obj10), , ];
-    let tmp40Result4 = null;
+    const items9 = [tmp43(tmp30Result, obj10), , ];
+    let tmp43Result4 = null;
     if (!stateFromStores) {
-      tmp40Result4 = null;
+      tmp43Result4 = null;
       if (tmp14 > 0) {
-        const tmp44 = stateFromStores;
         const obj11 = { width: tmp14, progress: sharedValue };
-        tmp40Result4 = tmp40(stateFromStores, obj11);
+        tmp43Result4 = tmp43(stateFromStores, obj11);
       }
     }
-    items9[1] = tmp40Result4;
-    let tmp40Result5 = null;
-    if (tmp33) {
-      tmp40Result5 = null;
+    items9[1] = tmp43Result4;
+    let tmp43Result5 = null;
+    if (null != preview) {
+      tmp43Result5 = null;
       if (tmp14 > 0) {
-        size = { width: tmp14, height: 96, startRatio: sharedValue1, endRatio: sharedValue2, onChange: callback };
-        tmp40Result5 = tmp40(tmp41(tmp16[24]), size);
+        size = { width: tmp14, height: 96, startRatio: sharedValue1, endRatio: sharedValue2, onChange: callback, disabled: tmp49 };
+        tmp49 = tmp36;
+        const tmp30Result2 = volume(onDurationChange[25]);
+        if (null == first2) {
+          tmp49 = first3;
+        }
+        tmp43Result5 = tmp43(tmp30Result2, size);
       }
     }
     const obj12 = { children: items9 };
-    items9[2] = tmp40Result5;
-    tmp34Result = tmp34(tmp35, obj12);
+    items9[2] = tmp43Result5;
+    tmp37Result = tmp37(tmp38, obj12);
   }
-  items10 = [tmp40(tmp39, obj9), ];
-  let tmp40Result6 = null;
+  items10 = [tmp43(tmp42, obj9), ];
+  let tmp43Result6 = null;
   if (tmp25) {
-    const obj13 = { variant: "body-xs/medium", color: "text-feedback-warning", style: tmp.trimError, children: intl.format(source(onDurationChange[21]).t["e12/z4"], obj14) };
-    const Text = tmp15(tmp16[25]).Text;
-    intl = tmp15(tmp16[21]).intl;
+    const obj13 = { variant: "body-xs/medium", color: "text-feedback-warning", style: tmp.trimError, children: intl.format(source(onDurationChange[22]).t["e12/z4"], obj14) };
+    const Text = tmp15(tmp16[26]).Text;
+    intl = tmp15(tmp16[22]).intl;
     obj14 = { limit: tmp24 };
-    tmp40Result6 = tmp40(Text, obj13);
+    tmp43Result6 = tmp43(Text, obj13);
   }
-  items10[1] = tmp40Result6;
+  items10[1] = tmp43Result6;
   items8[1] = closure_12(closure_6, obj8);
   const obj15 = { style: tmp.previewButton, children: closure_10(Button, obj16) };
-  obj16 = { variant: "secondary", text: intl2.string(source(onDurationChange[21]).t.CCRKNz), onPress: callback3, disabled: tmp48, loading: first3 };
-  Button = tmp15(tmp16[26]).Button;
-  intl2 = tmp15(tmp16[21]).intl;
+  Button = tmp15(tmp16[27]).Button;
+  const intl2 = tmp15(tmp16[22]).intl;
+  const string = intl2.string;
+  const t = tmp15(tmp16[22]).t;
+  obj16 = { variant: "secondary", text: string(null != first2 ? t.hHBkuG : t.CCRKNz), onPress: callback3, disabled: tmp52, loading: first3 };
+  if (null != first2) {
+    callback3 = callback2;
+  }
+  tmp52 = null == preview || first3;
   let obj17 = { children: items8 };
-  tmp48 = null == preview || null != first2 || first3;
   items8[2] = closure_10(closure_6, obj15);
   return closure_12(first3, obj17);
 };

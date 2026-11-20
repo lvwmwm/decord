@@ -1,20 +1,20 @@
-// Module ID: 15765
-// Function ID: 15766
+// Module ID: 15729
+// Function ID: 15730
 // Name: useUserProfileEditForm
-// Dependencies: [109, 5, 32, 19, 8013, 6837, 10084, 1388, 1072, 4817, 504, 7283, 15766, 9302, 4820, 7290, 15767, 6440, 7293, 15768, 6228, 1113, 8790, 572, 15769, 6835, 8023, 14503, 4617, 10096, 6839, 8017, 15042, 2]
+// Dependencies: [109, 5, 32, 19, 8012, 6837, 10087, 1386, 1071, 4819, 504, 7282, 15730, 9302, 4822, 7289, 15731, 6442, 7292, 15732, 6230, 1112, 8790, 572, 15733, 6835, 8022, 14471, 4619, 10099, 6839, 8016, 15006, 2]
 // Exports: default
 
-// Module 15765 (useUserProfileEditForm)
-import Constants from "Constants" /* 1072 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4817 */;
+// Module 15729 (useUserProfileEditForm)
+import Constants from "Constants" /* 1071 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4819 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8013 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8012 */;
 import UserProfileStore from "UserProfileStore" /* 6837 */;
-import WidgetStore from "WidgetStore" /* 10084 */;
-import UserStore from "UserStore" /* 1388 */;
+import WidgetStore from "WidgetStore" /* 10087 */;
+import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 
 let c13, c3, isSubmitting;
@@ -63,7 +63,7 @@ export default function useUserProfileEditForm() {
         const obj = { value, done: true };
         return obj;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       c13 = 2;
@@ -84,7 +84,7 @@ export default function useUserProfileEditForm() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -130,7 +130,7 @@ export default function useUserProfileEditForm() {
           }
         }
         c3 = 3;
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp15) {
         c3 = 3;
         throw tmp15;

@@ -1,18 +1,18 @@
-// Module ID: 13918
-// Function ID: 13919
+// Module ID: 13887
+// Function ID: 13888
 // Name: BadgeDirectoryScreen
-// Dependencies: [19, 1388, 21, 4792, 5346, 575, 504, 1113, 6976, 13917, 13919, 6973, 11981, 2]
+// Dependencies: [19, 1386, 21, 4794, 5348, 575, 504, 1112, 6975, 13886, 13888, 6972, 11923, 2]
 // Exports: default
 
-// Module 13918 (BadgeDirectoryScreen)
+// Module 13887 (BadgeDirectoryScreen)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import NavigatorConstants from "NavigatorConstants" /* 5346 */;
-import NavigatorHeader from "NavigatorHeader" /* 6976 */;
-import openBadgeDirectoryScreen from "openBadgeDirectoryScreen" /* 13917 */;
+import NavigatorConstants from "NavigatorConstants" /* 5348 */;
+import NavigatorHeader from "NavigatorHeader" /* 6975 */;
+import openBadgeDirectoryScreen from "openBadgeDirectoryScreen" /* 13886 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1388 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import UserStore from "UserStore" /* 1386 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let currentUser, dependencyMap;
@@ -68,9 +68,9 @@ export default function BadgeDirectoryScreen(targetUserId) {
       let formatToPlainStringResult;
       let tmp9Result;
       if (null != stateFromStores1) {
-        const intl2 = tmp2(1113).intl;
+        const intl2 = tmp2(1112).intl;
         let obj3 = { username: stateFromStores1 };
-        formatToPlainStringResult = intl2.formatToPlainString(tmp2(1113).t.EIcwoe, obj3);
+        formatToPlainStringResult = intl2.formatToPlainString(tmp2(1112).t.EIcwoe, obj3);
       }
       dependencyMap = formatToPlainStringResult;
       const items2 = [formatToPlainStringResult, targetUserId, stateFromStores1];
@@ -89,18 +89,18 @@ export default function BadgeDirectoryScreen(targetUserId) {
         obj3 = NavigatorHeader;
         return obj;
       }, items2);
-      const tmp2Result = targetUserId(13917);
+      const tmp2Result = targetUserId(13886);
       if (tmp2Result.isBadgeDirectoryIOSPageSheet()) {
         const obj4 = { screens: memo, initialRouteName, headerStatusBarHeight: 0, headerStyle: null, viewStyle: null };
         ({ sheetHeader: obj6.headerStyle, view: obj6.viewStyle } = tmp);
-        tmp9Result = tmp9(tmp2(6973).Navigator, obj4);
+        tmp9Result = tmp9(tmp2(6972).Navigator, obj4);
       } else {
         const obj5 = { screens: memo, initialRouteName, viewStyle: tmp.view };
-        tmp9Result = tmp9(tmp2(11981).Modal, obj5);
+        tmp9Result = tmp9(tmp2(11923).Modal, obj5);
       }
       return tmp9Result;
     }
   }
-  const intl = tmp2(1113).intl;
-  formatToPlainStringResult = intl.string(tmp2(1113).t.UqnlQF);
+  const intl = tmp2(1112).intl;
+  formatToPlainStringResult = intl.string(tmp2(1112).t.UqnlQF);
 };

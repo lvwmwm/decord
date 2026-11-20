@@ -1,16 +1,16 @@
-// Module ID: 18678
-// Function ID: 18679
+// Module ID: 18502
+// Function ID: 18503
 // Name: conjureHomeInspirationArt
-// Dependencies: [18679, 18680, 18681, 18682, 18683, 18684, 18685, 2]
+// Dependencies: [18503, 18504, 18505, 18506, 18507, 18508, 18509, 2]
 
-// Module 18678 (conjureHomeInspirationArt)
-import AssetRegistry from "AssetRegistry" /* 18679 */;
-import AssetRegistry2 from "AssetRegistry" /* 18680 */;
-import AssetRegistry3 from "AssetRegistry" /* 18681 */;
-import AssetRegistry4 from "AssetRegistry" /* 18682 */;
-import AssetRegistry5 from "AssetRegistry" /* 18683 */;
-import AssetRegistry6 from "AssetRegistry" /* 18684 */;
-import AssetRegistry7 from "AssetRegistry" /* 18685 */;
+// Module 18502 (conjureHomeInspirationArt)
+import AssetRegistry from "AssetRegistry" /* 18503 */;
+import AssetRegistry2 from "AssetRegistry" /* 18504 */;
+import AssetRegistry3 from "AssetRegistry" /* 18505 */;
+import AssetRegistry4 from "AssetRegistry" /* 18506 */;
+import AssetRegistry5 from "AssetRegistry" /* 18507 */;
+import AssetRegistry6 from "AssetRegistry" /* 18508 */;
+import AssetRegistry7 from "AssetRegistry" /* 18509 */;
 import size from "module_2" /* 2 */;
 
 const obj = { "server-calendar": AssetRegistry, "cowboy-chat-bot": AssetRegistry2, "library-voice-channel": AssetRegistry3, "flappy-discord": AssetRegistry4, "no-yelling": AssetRegistry5, "what-should-we-play": AssetRegistry6, "kd-tracker": AssetRegistry7 };

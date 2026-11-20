@@ -1,13 +1,13 @@
-// Module ID: 5694
-// Function ID: 5695
+// Module ID: 5696
+// Function ID: 5697
 // Name: AudioSettingsUtils
-// Dependencies: [1082, 5558, 5695, 5696, 2]
+// Dependencies: [1081, 5560, 5697, 5698, 2]
 // Exports: coerceAudioContextForProto, snapVolumeToDefault
 
-// Module 5694 (AudioSettingsUtils)
-import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 5558 */;
-import PerceptualVolumeUtils from "PerceptualVolumeUtils" /* 5696 */;
+// Module 5696 (AudioSettingsUtils)
+import UserSettingsConstants from "UserSettingsConstants" /* 1081 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 5560 */;
+import PerceptualVolumeUtils from "PerceptualVolumeUtils" /* 5698 */;
 import size from "module_2" /* 2 */;
 
 const constants = UserSettingsConstants.ProtoAudioSettingsContextTypes;
@@ -16,9 +16,9 @@ let result = size.fileFinishedImporting("modules/user_settings/voice/AudioSettin
 export function snapVolumeToDefault(effectiveVolume, DEFAULT) {
   let USER;
   if (DEFAULT === BaseConnectionEvent.MediaEngineContextTypes.STREAM) {
-    USER = tmp(5695).AudioSettingsDefaultVolumes.STREAM;
+    USER = tmp(5697).AudioSettingsDefaultVolumes.STREAM;
   } else {
-    USER = tmp(5695).AudioSettingsDefaultVolumes.USER;
+    USER = tmp(5697).AudioSettingsDefaultVolumes.USER;
   }
   let tmp3 = effectiveVolume;
   const tmpResult = PerceptualVolumeUtils;

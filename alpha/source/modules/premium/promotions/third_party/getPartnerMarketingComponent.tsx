@@ -1,13 +1,13 @@
 // Module ID: 9259
 // Function ID: 9260
 // Name: getPartnerMarketingComponent
-// Dependencies: [32, 1388, 9023, 9026, 9081, 2]
+// Dependencies: [32, 1386, 9023, 9026, 9081, 2]
 // Exports: default
 
 // Module 9259 (getPartnerMarketingComponent)
 import MarketingSurfaceTypeUtils from "MarketingSurfaceTypeUtils" /* 9026 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import UserStore from "UserStore" /* 1388 */;
+import UserStore from "UserStore" /* 1386 */;
 import PromotionsStore from "PromotionsStore" /* 9023 */;
 import size from "module_2" /* 2 */;
 

@@ -1,29 +1,29 @@
-// Module ID: 9781
-// Function ID: 9782
+// Module ID: 9783
+// Function ID: 9784
 // Name: GameProfileDetails
-// Dependencies: [19, 17, 9656, 21, 8877, 9782, 7269, 9678, 9784, 9786, 9668, 4792, 575, 5471, 9788, 9789, 9689, 1113, 2119, 4614, 9790, 5383, 2]
+// Dependencies: [19, 17, 9656, 21, 8877, 9784, 7268, 9678, 9786, 9788, 9668, 4794, 575, 5473, 9790, 9791, 9689, 1112, 2117, 4616, 9792, 5385, 2]
 // Exports: default
 
-// Module 9781 (GameProfileDetails)
+// Module 9783 (GameProfileDetails)
 import nativeDefault from "native" /* 575 */;
-import intl13 from "intl" /* 1113 */;
-import Server from "Server" /* 2119 */;
-import DateUtilsAll from "DateUtils" /* 4614 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import LinkingDefault from "Linking" /* 5471 */;
-import MobilePhoneIcon from "MobilePhoneIcon" /* 7269 */;
+import intl13 from "intl" /* 1112 */;
+import Server from "Server" /* 2117 */;
+import DateUtilsAll from "DateUtils" /* 4616 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import LinkingDefault from "Linking" /* 5473 */;
+import MobilePhoneIcon from "MobilePhoneIcon" /* 7268 */;
 import PlatformType from "PlatformType" /* 8877 */;
 import ContentInventoryConstants from "ContentInventoryConstants" /* 9656 */;
 import RobloxNeutralIcon from "RobloxNeutralIcon" /* 9668 */;
 import XboxNeutralIcon from "XboxNeutralIcon" /* 9678 */;
 import SKUUtils from "SKUUtils" /* 9689 */;
-import ScreenIcon from "ScreenIcon" /* 9782 */;
-import PlaystationNeutralIcon from "PlaystationNeutralIcon" /* 9784 */;
-import NintendoSwitchNeutralIcon from "NintendoSwitchNeutralIcon" /* 9786 */;
+import ScreenIcon from "ScreenIcon" /* 9784 */;
+import PlaystationNeutralIcon from "PlaystationNeutralIcon" /* 9786 */;
+import NintendoSwitchNeutralIcon from "NintendoSwitchNeutralIcon" /* 9788 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let c9;

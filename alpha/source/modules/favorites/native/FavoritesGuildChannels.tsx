@@ -1,20 +1,20 @@
-// Module ID: 17896
-// Function ID: 17897
+// Module ID: 17723
+// Function ID: 17724
 // Name: FavoritesGuildChannels
-// Dependencies: [19, 17765, 21, 7307, 5398, 17897, 17898, 17828, 17899, 17619, 17702, 17764, 17904, 17672, 2]
+// Dependencies: [19, 17592, 21, 7306, 5400, 17724, 17725, 17655, 17726, 17446, 17529, 17591, 17731, 17499, 2]
 // Exports: default
 
-// Module 17896 (FavoritesGuildChannels)
-import useFontScale from "useFontScale" /* 5398 */;
-import useScaledRowHeightDefault from "useScaledRowHeight" /* 7307 */;
-import ChannelListPanelBackdropDefault from "ChannelListPanelBackdrop" /* 17619 */;
-import ChannelListStickyHeaderDefault from "ChannelListStickyHeader" /* 17702 */;
-import FavoritesGuildSuggestedChannels from "FavoritesGuildSuggestedChannels" /* 17764 */;
-import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 17765 */;
-import useShouldRenderChannelList from "useShouldRenderChannelList" /* 17828 */;
-import FavoritesGuildChannelList from "FavoritesGuildChannelList" /* 17897 */;
-import useFavoritesPruneInactiveThreadsDefault from "useFavoritesPruneInactiveThreads" /* 17898 */;
-import FavoritesGuildSuggestionsLoaderDefault from "FavoritesGuildSuggestionsLoader" /* 17899 */;
+// Module 17723 (FavoritesGuildChannels)
+import useFontScale from "useFontScale" /* 5400 */;
+import useScaledRowHeightDefault from "useScaledRowHeight" /* 7306 */;
+import ChannelListPanelBackdropDefault from "ChannelListPanelBackdrop" /* 17446 */;
+import ChannelListStickyHeaderDefault from "ChannelListStickyHeader" /* 17529 */;
+import FavoritesGuildSuggestedChannels from "FavoritesGuildSuggestedChannels" /* 17591 */;
+import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 17592 */;
+import useShouldRenderChannelList from "useShouldRenderChannelList" /* 17655 */;
+import FavoritesGuildChannelList from "FavoritesGuildChannelList" /* 17724 */;
+import useFavoritesPruneInactiveThreadsDefault from "useFavoritesPruneInactiveThreads" /* 17725 */;
+import FavoritesGuildSuggestionsLoaderDefault from "FavoritesGuildSuggestionsLoader" /* 17726 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -59,13 +59,13 @@ export default function FavoritesGuildChannels(guild) {
       items1[1] = React3(FavoritesGuildSuggestedChannelsDefault, {});
       let tmp13Result = null;
       if (shouldShowEmptyState) {
-        tmp13Result = tmp13(tmp2(17904), {});
+        tmp13Result = tmp13(tmp2(17731), {});
       }
       items1[2] = tmp13Result;
       tmp13Result1 = tmp11(tmp2Result, obj5);
     } else {
       const obj8 = { guildChannels, guildChannelsVersion: 0, favoritesSuggestionsNoticeHeight: tmp5Result.getFavoritesSuggestionsNoticeHeight(fontScale, tmp4, tmp) };
-      const ChannelList = tmp5(17672).ChannelList;
+      const ChannelList = tmp5(17499).ChannelList;
       const merged = Object.assign(guild);
       tmp5Result = FavoritesGuildSuggestedChannels;
       tmp13Result1 = tmp13(ChannelList, obj8);

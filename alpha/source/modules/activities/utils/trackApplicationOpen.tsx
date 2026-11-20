@@ -1,12 +1,12 @@
-// Module ID: 10630
-// Function ID: 10631
+// Module ID: 10572
+// Function ID: 10573
 // Name: trackApplicationOpen
-// Dependencies: [1072, 1256, 2]
+// Dependencies: [1071, 1255, 2]
 // Exports: default
 
-// Module 10630 (trackApplicationOpen)
-import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+// Module 10572 (trackApplicationOpen)
+import Constants from "Constants" /* 1071 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

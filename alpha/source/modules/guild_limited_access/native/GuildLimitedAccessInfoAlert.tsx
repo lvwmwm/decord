@@ -1,21 +1,21 @@
-// Module ID: 6284
-// Function ID: 6285
+// Module ID: 6286
+// Function ID: 6287
 // Name: GuildLimitedAccessInfoAlert
-// Dependencies: [19, 4663, 6285, 1072, 21, 4792, 6286, 575, 1113, 5811, 1187, 5383, 2]
+// Dependencies: [19, 4665, 6287, 1071, 21, 4794, 6288, 575, 1112, 5813, 1186, 5385, 2]
 // Exports: default
 
-// Module 6284 (GuildLimitedAccessInfoAlert)
+// Module 6286 (GuildLimitedAccessInfoAlert)
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import intl4 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import AlertDefault from "Alert" /* 5811 */;
-import GuildLimitedAccessConstants from "GuildLimitedAccessConstants" /* 6285 */;
+import Constants from "Constants" /* 1071 */;
+import intl4 from "intl" /* 1112 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import AlertDefault from "Alert" /* 5813 */;
+import GuildLimitedAccessConstants from "GuildLimitedAccessConstants" /* 6287 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4663 */;
+import GuildStore from "GuildStore" /* 4665 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
-import TextStyles from "TextStyles" /* 6286 */;
+import createStyles_mod from "createStyles" /* 4794 */;
+import TextStyles from "TextStyles" /* 6288 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -46,15 +46,15 @@ export default function GuildLimitedAccessInfoAlert(arg0) {
   let formatResult1 = formatResult;
   const tmp4 = helpdeskArticle;
   if (null != guild) {
-    const intl2 = tmp2(1113).intl;
+    const intl2 = tmp2(1112).intl;
     const obj2 = { guildName: guild.name, helpdeskArticle: tmp4 };
-    formatResult1 = intl2.format(tmp2(1113).t.jn0Xyx, obj2);
+    formatResult1 = intl2.format(tmp2(1112).t.jn0Xyx, obj2);
   }
   const obj3 = { onClose, children: items };
   const obj4 = { style: tmp.header, children: intl3.string(intl4.t.kJwpBW) };
   const tmp8 = AlertDefault;
-  const LegacyText = tmp2(1187).LegacyText;
-  intl3 = tmp2(1113).intl;
+  const LegacyText = tmp2(1186).LegacyText;
+  intl3 = tmp2(1112).intl;
   items = [hasOwnProperty(LegacyText, obj4), ];
   const obj5 = { style: tmp.text, variant: "body-md/medium", children: formatResult1 };
   items[1] = hasOwnProperty(Text_Text.Text, obj5);

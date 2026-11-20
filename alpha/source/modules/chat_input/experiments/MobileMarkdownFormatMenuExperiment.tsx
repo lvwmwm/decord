@@ -1,11 +1,11 @@
-// Module ID: 13024
-// Function ID: 13025
+// Module ID: 12994
+// Function ID: 12995
 // Name: MobileMarkdownFormatMenuExperiment
-// Dependencies: [1452, 2]
+// Dependencies: [1450, 2]
 // Exports: useIsMobileMarkdownFormatMenuEnabled
 
-// Module 13024 (MobileMarkdownFormatMenuExperiment)
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+// Module 12994 (MobileMarkdownFormatMenuExperiment)
+import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2026-10-mobile-markdown-format-menu", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };

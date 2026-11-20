@@ -1,23 +1,23 @@
-// Module ID: 20093
-// Function ID: 20094
+// Module ID: 19913
+// Function ID: 19914
 // Name: GuildRoleSubscriptionTierConfirmationModal
-// Dependencies: [5, 32, 19, 17, 20061, 21, 4792, 575, 20062, 20072, 20064, 1113, 7229, 5479, 5383, 20094, 2]
+// Dependencies: [5, 32, 19, 17, 19881, 21, 4794, 575, 19882, 19892, 19884, 1112, 7228, 5481, 5385, 19914, 2]
 // Exports: default
 
-// Module 20093 (GuildRoleSubscriptionTierConfirmationModal)
+// Module 19913 (GuildRoleSubscriptionTierConfirmationModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl5 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import FormStylesDefault from "FormStyles" /* 20062 */;
-import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 20064 */;
-import EditStateContextProvider from "EditStateContextProvider" /* 20072 */;
+import intl5 from "intl" /* 1112 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import FormStylesDefault from "FormStyles" /* 19882 */;
+import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 19884 */;
+import EditStateContextProvider from "EditStateContextProvider" /* 19892 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 20061 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 19881 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let _undefined, c4, closure_2;
@@ -26,7 +26,7 @@ let c9;
 let metroImportAll;
 let size;
 let tmp3;
-const FastImageDefault = tmp3(5479);
+const FastImageDefault = tmp3(5481);
 const View = react_native.View;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
 let obj = { coverPhoto: size };
@@ -79,7 +79,7 @@ export default function GuildRoleSubscriptionTierConfirmationModal(onDone) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -119,7 +119,7 @@ export default function GuildRoleSubscriptionTierConfirmationModal(onDone) {
           c3 = 0;
           closure_128_1(false);
           c4 = 3;
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp19) {
         closure_2 = tmp19;
@@ -144,8 +144,8 @@ export default function GuildRoleSubscriptionTierConfirmationModal(onDone) {
       let obj4 = { children: items1 };
       const tmp19 = metroImportAll;
       const obj5 = { title: intl3.string(intl5.t["3S8gA7"]) };
-      const TableRowGroupTitle = tmp6(7229).TableRowGroupTitle;
-      intl3 = tmp6(1113).intl;
+      const TableRowGroupTitle = tmp6(7228).TableRowGroupTitle;
+      intl3 = tmp6(1112).intl;
       items1 = [metroImportAll(TableRowGroupTitle, obj5), ];
       const obj6 = { style: tmp2.coverPhoto, resizeMode: "cover", source: first };
       items1[1] = metroImportAll(FastImageDefault, obj6);
@@ -154,14 +154,14 @@ export default function GuildRoleSubscriptionTierConfirmationModal(onDone) {
     items2 = [tmp14Result, ];
     const obj7 = { children: items3 };
     const obj8 = { title: intl4.string(intl5.t["74JctW"]) };
-    const TableRowGroupTitle2 = tmp6(7229).TableRowGroupTitle;
-    intl4 = tmp6(1113).intl;
+    const TableRowGroupTitle2 = tmp6(7228).TableRowGroupTitle;
+    intl4 = tmp6(1112).intl;
     items3 = [metroImportAll(TableRowGroupTitle2, obj8), ];
     const obj9 = { variant: "body-md/medium", color: "interactive-text-active", children: first1 };
     items3[1] = metroImportAll(Text_Text.Text, obj9);
     items2[1] = React4(View, obj7);
     flag = tmp14(tmp17, obj3);
   }
-  items4 = [flag, metroImportAll(tmp6(20094).GuildRoleSubscriptionListingPreview, { guildId, listingId: editStateId })];
+  items4 = [flag, metroImportAll(tmp6(19914).GuildRoleSubscriptionListingPreview, { guildId, listingId: editStateId })];
   return React4(tmp15, obj2);
 };

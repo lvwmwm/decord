@@ -1,19 +1,19 @@
-// Module ID: 12940
-// Function ID: 12941
+// Module ID: 12910
+// Function ID: 12911
 // Name: CommandOptionView
-// Dependencies: [19, 17, 4793, 21, 2119, 4792, 575, 504, 1655, 12941, 12942, 5383, 12943, 7106, 2]
+// Dependencies: [19, 17, 4795, 21, 2117, 4794, 575, 504, 1653, 12911, 12912, 5385, 12913, 7105, 2]
 // Exports: default
 
-// Module 12940 (CommandOptionView)
+// Module 12910 (CommandOptionView)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef1655 from "module_1655" /* 1655 */;
-import Server from "Server" /* 2119 */;
-import AppLauncherCommandOptionDefault from "AppLauncherCommandOption" /* 12943 */;
+import _modDef1653 from "module_1653" /* 1653 */;
+import Server from "Server" /* 2117 */;
+import AppLauncherCommandOptionDefault from "AppLauncherCommandOption" /* 12913 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4793 */;
+import AccessibilityStore from "AccessibilityStore" /* 4795 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -56,9 +56,9 @@ export default function CommandOptionView(option) {
   const items = [AccessibilityStore];
   const obj = option(504);
   const stateFromStores = obj.useStateFromStores(items, () => AccessibilityStore.useReducedMotion);
-  const ReduceMotion = option(1655).ReduceMotion;
+  const ReduceMotion = option(1653).ReduceMotion;
   const tmp5 = stateFromStores ? ReduceMotion.Always : ReduceMotion.Never;
-  const tmp2Result = option(12941);
+  const tmp2Result = option(12911);
   const optionEnteringAnimation = tmp2Result.useOptionEnteringAnimation();
   let fn = optionEnteringAnimation.registerAnimationCompleteCallback;
   const EnteringAnimation = optionEnteringAnimation.EnteringAnimation;
@@ -66,9 +66,9 @@ export default function CommandOptionView(option) {
     if (option.required || isPreSelectedOption) {
       fn = (fn) => fn();
     }
-    const FadeOut = tmp2(1655).FadeOut;
+    const FadeOut = tmp2(1653).FadeOut;
     const reduceMotionResult = FadeOut.reduceMotion(tmp5);
-    const FadeInUp = tmp2(1655).FadeInUp;
+    const FadeInUp = tmp2(1653).FadeInUp;
     const obj2 = { transform: items1 };
     items1 = [{ translateY: -10 }];
     const withInitialValuesResult = FadeInUp.withInitialValues(obj2);
@@ -83,25 +83,25 @@ export default function CommandOptionView(option) {
     }
     let hasItem1 = items1.includes(option.type) && null == option.choices;
     const obj3 = { skipEntering: option.required || isPreSelectedOption, children: closure_5(AwaitAnimationContext, obj4) };
-    const LayoutAnimationConfig = tmp2(1655).LayoutAnimationConfig;
+    const LayoutAnimationConfig = tmp2(1653).LayoutAnimationConfig;
     obj4 = { handleQueuedCallback: fn, children: closure_5(View, obj5) };
-    AwaitAnimationContext = tmp2(12942).AwaitAnimationContext;
+    AwaitAnimationContext = tmp2(12912).AwaitAnimationContext;
     obj5 = {
       collapsable: false,
       entering: EnteringAnimation,
-      exiting: option(12941).ExitingAnimation,
-      layout: option(12941).LayoutAnimation,
+      exiting: option(12911).ExitingAnimation,
+      layout: option(12911).LayoutAnimation,
       onLayout(arg0) {
           importDefault(arg0, option);
         },
       children: closure_6(tmp21, obj6)
     };
-    View = _modDef1655.View;
+    View = _modDef1653.View;
     obj6 = { collapsable: false, style, children: items2 };
     tmp21 = View;
     if (hasItem1) {
       const obj7 = { style: tmp.labelText, variant: "body-sm/semibold", color: "text-subtle", children: option.displayName };
-      hasItem1 = tmp18(tmp2(5383).Text, obj7);
+      hasItem1 = tmp18(tmp2(5385).Text, obj7);
     }
     items2 = [hasItem1, , , ];
     const obj8 = {
@@ -127,13 +127,13 @@ export default function CommandOptionView(option) {
     };
     items2[1] = closure_5(AppLauncherCommandOptionDefault, obj8);
     const obj9 = { style: tmp.optionDescription, variant: "body-xs/medium", color: "text-muted", children: option.displayDescription };
-    items2[2] = closure_5(option(5383).Text, obj9);
+    items2[2] = closure_5(option(5385).Text, obj9);
     if (hasItem) {
       const obj10 = { collapsable: false, entering: reduceMotionResult1, exiting: reduceMotionResult, style: tmp.optionErrorContainer, children: items3 };
-      const View2 = tmp19(1655).View;
-      items3 = [closure_5(option(7106).CircleErrorIcon, { size: "xs", color: "text-feedback-critical" }), ];
+      const View2 = tmp19(1653).View;
+      items3 = [closure_5(option(7105).CircleErrorIcon, { size: "xs", color: "text-feedback-critical" }), ];
       const obj11 = { variant: "body-xs/medium", color: "text-feedback-critical", children: optionValidationResults[option.name].error };
-      items3[1] = closure_5(option(5383).Text, obj11);
+      items3[1] = closure_5(option(5385).Text, obj11);
       hasItem = tmp20(View2, obj10);
     }
     items2[3] = hasItem;

@@ -1,15 +1,15 @@
-// Module ID: 16704
-// Function ID: 16705
+// Module ID: 16528
+// Function ID: 16529
 // Name: VoiceSetting
-// Dependencies: [2133, 1072, 504, 1113, 11875, 10949, 16705, 2]
+// Dependencies: [2131, 1071, 504, 1112, 11817, 10891, 16529, 2]
 
-// Module 16704 (VoiceSetting)
+// Module 16528 (VoiceSetting)
 import get_initialized from "get initialized" /* 504 */;
-import intl3 from "intl" /* 1113 */;
-import MicrophoneIcon from "MicrophoneIcon" /* 10949 */;
-import MediaEngineStore from "MediaEngineStore" /* 2133 */;
-import Constants from "Constants" /* 1072 */;
-import SettingBuilders from "SettingBuilders" /* 11875 */;
+import intl3 from "intl" /* 1112 */;
+import MicrophoneIcon from "MicrophoneIcon" /* 10891 */;
+import MediaEngineStore from "MediaEngineStore" /* 2131 */;
+import Constants from "Constants" /* 1071 */;
+import SettingBuilders from "SettingBuilders" /* 11817 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -30,11 +30,11 @@ let obj = {
     const items = [MediaEngineStore];
     const obj = get_initialized;
     if (obj.useStateFromStores(items, () => mode.getMode()) === constants.PUSH_TO_TALK) {
-      const intl2 = tmp(1113).intl;
-      stringResult = intl2.string(tmp(1113).t.Q8gkVL);
+      const intl2 = tmp(1112).intl;
+      stringResult = intl2.string(tmp(1112).t.Q8gkVL);
     } else {
-      const intl = tmp(1113).intl;
-      stringResult = intl.string(tmp(1113).t.cHCEOJ);
+      const intl = tmp(1112).intl;
+      stringResult = intl.string(tmp(1112).t.cHCEOJ);
     }
     return stringResult;
   },

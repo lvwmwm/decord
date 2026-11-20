@@ -1,12 +1,12 @@
-// Module ID: 7721
-// Function ID: 7722
+// Module ID: 7720
+// Function ID: 7721
 // Name: AgeVerificationMethodsV2
-// Dependencies: [5, 502, 1072, 1285, 2]
+// Dependencies: [5, 502, 1071, 1284, 2]
 // Exports: fetchAgeVerificationMethodsV2, fetchAgeVerificationMethodsV2SuspendedUser
 
-// Module 7721 (AgeVerificationMethodsV2)
-import Constants from "Constants" /* 1072 */;
-import HTTPUtils from "HTTPUtils" /* 1285 */;
+// Module 7720 (AgeVerificationMethodsV2)
+import Constants from "Constants" /* 1071 */;
+import HTTPUtils from "HTTPUtils" /* 1284 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;

@@ -1,19 +1,19 @@
 // Module ID: 9429
 // Function ID: 9430
 // Name: CollectiblesShopVariantsUIStore
-// Dependencies: [1258, 4707, 9426, 7967, 2]
+// Dependencies: [1257, 4709, 9426, 7966, 2]
 // Exports: setSelectedVariantIndex, useSelectedVariantIndex
 
 // Module 9429 (CollectiblesShopVariantsUIStore)
-import _slicedToArray from "_slicedToArray" /* 4707 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7967 */;
-import module_1258 from "module_1258" /* 1258 */;
+import _slicedToArray from "_slicedToArray" /* 4709 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7966 */;
+import module_1257 from "module_1257" /* 1257 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, map;
 
-const state = module_1258.createWithEqualityFn(() => {
+const state = module_1257.createWithEqualityFn(() => {
   const obj = { selectionStates: new Map() };
   new Map();
   return obj;

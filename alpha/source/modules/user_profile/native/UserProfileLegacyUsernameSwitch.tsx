@@ -1,12 +1,12 @@
-// Module ID: 15821
-// Function ID: 15822
+// Module ID: 15785
+// Function ID: 15786
 // Name: UserProfileLegacyUsernameSwitch
-// Dependencies: [19, 21, 4617, 15782, 1113, 7283, 8789, 2]
+// Dependencies: [19, 21, 4619, 15746, 1112, 7282, 8789, 2]
 // Exports: default
 
-// Module 15821 (UserProfileLegacyUsernameSwitch)
+// Module 15785 (UserProfileLegacyUsernameSwitch)
 import Fragment from "Fragment" /* 21 */;
-import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 7283 */;
+import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 7282 */;
 import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8789 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -21,7 +21,7 @@ export default function UserProfileLegacyUsernameSwitch(pendingLegacyUsernameDis
   pendingLegacyUsernameDisabled = pendingLegacyUsernameDisabled.pendingLegacyUsernameDisabled;
   let setting;
   const legacyUsername = pendingLegacyUsernameDisabled.legacyUsername;
-  const LegacyUsernameDisabled = setting(4617).LegacyUsernameDisabled;
+  const LegacyUsernameDisabled = setting(4619).LegacyUsernameDisabled;
   setting = LegacyUsernameDisabled.useSetting();
   let tmp4 = setting;
   if (undefined !== pendingLegacyUsernameDisabled) {
@@ -29,9 +29,9 @@ export default function UserProfileLegacyUsernameSwitch(pendingLegacyUsernameDis
   }
   let obj = {
     value: !tmp4,
-    label: intl.string(tmp(1113).t["3cWDuO"]),
+    label: intl.string(tmp(1112).t["3cWDuO"]),
     subLabel: stringResult,
-    accessibilityLabel: intl3.string(tmp(1113).t["3cWDuO"]),
+    accessibilityLabel: intl3.string(tmp(1112).t["3cWDuO"]),
     onValueChange(arg0) {
       if (!arg0 === setting) {
         const obj3 = UserSettingsAccountActionCreators;
@@ -43,16 +43,16 @@ export default function UserProfileLegacyUsernameSwitch(pendingLegacyUsernameDis
       }
     }
   };
-  const UserProfileEditFormSwitch = tmp(15782).UserProfileEditFormSwitch;
-  intl = tmp(1113).intl;
-  const intl2 = tmp(1113).intl;
+  const UserProfileEditFormSwitch = tmp(15746).UserProfileEditFormSwitch;
+  intl = tmp(1112).intl;
+  const intl2 = tmp(1112).intl;
   const tmp5 = jsx;
   if (tmp4) {
-    stringResult = intl2.string(tmp(1113).t.eD6Yq0);
+    stringResult = intl2.string(tmp(1112).t.eD6Yq0);
   } else {
     let obj2 = { username: legacyUsername };
-    stringResult = intl2.formatToPlainString(tmp(1113).t.aYhclf, obj2);
+    stringResult = intl2.formatToPlainString(tmp(1112).t.aYhclf, obj2);
   }
-  intl3 = tmp(1113).intl;
+  intl3 = tmp(1112).intl;
   return tmp5(UserProfileEditFormSwitch, obj);
 };

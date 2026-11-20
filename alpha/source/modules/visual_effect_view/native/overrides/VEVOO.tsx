@@ -1,25 +1,25 @@
-// Module ID: 17485
-// Function ID: 17486
+// Module ID: 17312
+// Function ID: 17313
 // Name: VEVOO
-// Dependencies: [19, 17, 5386, 573, 21, 4792, 575, 1655, 5393, 5394, 7590, 17486, 17488, 17489, 13732, 7032, 504, 17175, 2]
+// Dependencies: [19, 17, 5388, 573, 21, 4794, 575, 1653, 5395, 5396, 7589, 17313, 17315, 17316, 13701, 7031, 504, 16999, 2]
 
-// Module 17485 (VEVOO)
+// Module 17312 (VEVOO)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 573 */;
 import nativeDefault from "native" /* 575 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import spring_spring from "spring/spring" /* 5393 */;
-import springPresets from "springPresets" /* 5394 */;
-import XSmallIcon from "XSmallIcon" /* 7032 */;
-import ActionButtonDefault from "ActionButton" /* 13732 */;
-import VEVOOPropBlurAmountDefault from "VEVOOPropBlurAmount" /* 17486 */;
-import VEVOOPropTintColorDefault from "VEVOOPropTintColor" /* 17488 */;
-import VEVOOPropBlurEffectNameDefault from "VEVOOPropBlurEffectName" /* 17489 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import spring_spring from "spring/spring" /* 5395 */;
+import springPresets from "springPresets" /* 5396 */;
+import XSmallIcon from "XSmallIcon" /* 7031 */;
+import ActionButtonDefault from "ActionButton" /* 13701 */;
+import VEVOOPropBlurAmountDefault from "VEVOOPropBlurAmount" /* 17313 */;
+import VEVOOPropTintColorDefault from "VEVOOPropTintColor" /* 17315 */;
+import VEVOOPropBlurEffectNameDefault from "VEVOOPropBlurEffectName" /* 17316 */;
 import react from "react" /* 19 */;
-import DevSettingsStore from "DevSettingsStore" /* 5386 */;
+import DevSettingsStore from "DevSettingsStore" /* 5388 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -50,8 +50,8 @@ function VisualEffectViewOverrideOverlay_(arg0) {
   const tmp = closure_8();
   const PX_8 = nativeDefault.space.PX_8;
   const items = [closure_9, , , , , , ];
-  const useAnimatedStyle = _mod1655.useAnimatedStyle;
-  _mod1655;
+  const useAnimatedStyle = _mod1653.useAnimatedStyle;
+  _mod1653;
   items[1] = spring_spring.withSpring;
   items[2] = y;
   items[3] = PX_8;
@@ -79,9 +79,9 @@ function VisualEffectViewOverrideOverlay_(arg0) {
   const obj = { style: items2, children: items4 };
   items2 = [tmp.wrapper, animatedStyle];
   const obj2 = { style: tmp.scrollView, children: metroImportDefault(FormSection, obj3) };
-  const View = tmp2(1655).View;
+  const View = tmp2(1653).View;
   obj3 = { title: "Blur View Global Overrides", sectionBodyStyle: tmp.scrollViewContent, children: items3 };
-  FormSection = tmp4(7590).FormSection;
+  FormSection = tmp4(7589).FormSection;
   items3 = [metroRequire(VEVOOPropBlurAmountDefault, {}), metroRequire(VEVOOPropTintColorDefault, {}), metroRequire(VEVOOPropBlurEffectNameDefault, {})];
   items4 = [metroRequire(ScrollView, obj2), ];
   const obj4 = { styles: tmp.close, type: "neutral", IconComponent: XSmallIcon.XSmallIcon, onPress: onClose, accessibilityLabel: "Close" };

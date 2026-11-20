@@ -1,14 +1,14 @@
-// Module ID: 18312
-// Function ID: 18313
+// Module ID: 18157
+// Function ID: 18158
 // Name: useConjureProjectSettingsDraft
-// Dependencies: [5, 32, 19, 6500, 504, 18313, 18315, 18317, 6871, 18318, 18319, 6501, 6746, 18322, 6836, 18299, 1113, 4089, 18323, 6814, 2]
+// Dependencies: [5, 32, 19, 6502, 504, 18158, 18130, 18160, 6870, 18136, 18135, 6503, 6746, 18161, 6836, 12176, 1112, 4091, 18139, 6814, 2]
 // Exports: default
 
-// Module 18312 (useConjureProjectSettingsDraft)
+// Module 18157 (useConjureProjectSettingsDraft)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6500 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6502 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -323,7 +323,7 @@ export default function useConjureProjectSettingsDraft(arg0, arg1) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -466,7 +466,7 @@ export default function useConjureProjectSettingsDraft(arg0, arg1) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -525,7 +525,7 @@ export default function useConjureProjectSettingsDraft(arg0, arg1) {
           c3 = 0;
         }
         c4 = 3;
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp13) {
         tmp14 = c3;
         if (0 === c3) {
@@ -569,7 +569,7 @@ export default function useConjureProjectSettingsDraft(arg0, arg1) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;

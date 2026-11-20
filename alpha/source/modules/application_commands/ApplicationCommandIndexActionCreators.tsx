@@ -1,13 +1,13 @@
-// Module ID: 10378
-// Function ID: 10379
+// Module ID: 10320
+// Function ID: 10321
 // Name: ApplicationCommandIndexActionCreators
-// Dependencies: [5, 1072, 572, 1285, 1089, 1256, 1255, 2]
+// Dependencies: [5, 1071, 572, 1284, 1088, 1255, 1254, 2]
 // Exports: fetchApplicationCommandIndex, requestApplicationCommandIndex
 
-// Module 10378 (ApplicationCommandIndexActionCreators)
+// Module 10320 (ApplicationCommandIndexActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants from "Constants" /* 1072 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -30,7 +30,7 @@ let obj = function _fetchApplicationCommandIndex() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -62,7 +62,7 @@ let obj = function _fetchApplicationCommandIndex() {
                       const obj2 = { value, done: true };
                       return obj2;
                     } else {
-                      return { value: "HermesInternal", done: "+60" };
+                      return { value: "HermesInternal", done: null };
                     }
                   } else {
                     try {
@@ -217,7 +217,7 @@ let obj = function _fetchApplicationCommandIndex() {
             return obj;
           } else {
             c2 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp8) {
           c2 = 3;

@@ -1,23 +1,23 @@
-// Module ID: 19179
-// Function ID: 19180
+// Module ID: 18998
+// Function ID: 18999
 // Name: SimpleGuildContainer
-// Dependencies: [19, 17, 21, 4792, 8447, 17953, 575, 19178, 5356, 19180, 1655, 5393, 2]
+// Dependencies: [19, 17, 21, 4794, 8446, 17780, 575, 18997, 5358, 18999, 1653, 5395, 2]
 // Exports: SimpleGuildContainer, SimpleGuildContainerAnimated
 
-// Module 19179 (SimpleGuildContainer)
-import _mod1655 from "module_1655" /* 1655 */;
-import spring_spring from "spring/spring" /* 5393 */;
-import MaskedBadgeDefault from "MaskedBadge" /* 8447 */;
-import GuildsBarActivityIndicator from "GuildsBarActivityIndicator" /* 17953 */;
-import useSimpleGuildDefaultColorsDefault from "useSimpleGuildDefaultColors" /* 19178 */;
-import CutoutImageDefault from "CutoutImage" /* 19180 */;
+// Module 18998 (SimpleGuildContainer)
+import _mod1653 from "module_1653" /* 1653 */;
+import spring_spring from "spring/spring" /* 5395 */;
+import MaskedBadgeDefault from "MaskedBadge" /* 8446 */;
+import GuildsBarActivityIndicator from "GuildsBarActivityIndicator" /* 17780 */;
+import useSimpleGuildDefaultColorsDefault from "useSimpleGuildDefaultColors" /* 18997 */;
+import CutoutImageDefault from "CutoutImage" /* 18999 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
-const _modDef1655 = _mod1655;
+const _modDef1653 = _mod1653;
 const GuildsBarActivityIndicatorDefault = GuildsBarActivityIndicator;
 
 let closure_4;
@@ -268,7 +268,7 @@ export function SimpleGuildContainerAnimated(arg0) {
   const items = [closure_13, borderRadius];
   let c0;
   [tmp5, tmp6] = items;
-  const obj = _mod1655;
+  const obj = _mod1653;
   class SimpleGuildContainerTsx1 {
     constructor() {
       return closure_0;
@@ -282,7 +282,7 @@ export function SimpleGuildContainerAnimated(arg0) {
   const items2 = [closure_14, selected];
   c0 = undefined;
   [tmp8, tmp9] = items2;
-  const tmp4Result = _mod1655;
+  const tmp4Result = _mod1653;
   class SimpleGuildContainerTsx2 {
     constructor() {
       num = 0;
@@ -298,8 +298,8 @@ export function SimpleGuildContainerAnimated(arg0) {
   SimpleGuildContainerTsx2.__initData = tmp8;
   const derivedValue1 = tmp4Result.useDerivedValue(SimpleGuildContainerTsx2);
   const items4 = [closure_15, , , , , ];
-  const useAnimatedStyle = _mod1655.useAnimatedStyle;
-  _mod1655;
+  const useAnimatedStyle = _mod1653.useAnimatedStyle;
+  _mod1653;
   items4[1] = spring_spring.withSpring;
   items4[2] = derivedValue;
   items4[3] = closure_9;
@@ -324,12 +324,12 @@ export function SimpleGuildContainerAnimated(arg0) {
   const animatedStyle = useAnimatedStyle(SimpleGuildContainerTsx3);
   const BRAND_500 = tmp(575).unsafe_rawColors.BRAND_500;
   const items6 = [closure_16, , , , , , , ];
-  const useAnimatedStyle2 = _mod1655.useAnimatedStyle;
-  _mod1655;
+  const useAnimatedStyle2 = _mod1653.useAnimatedStyle;
+  _mod1653;
   items6[1] = spring_spring.withSpring;
   items6[2] = derivedValue;
   items6[3] = closure_9;
-  items6[4] = _mod1655.interpolate;
+  items6[4] = _mod1653.interpolate;
   items6[5] = derivedValue1;
   items6[6] = BRAND_500;
   items6[7] = 48;
@@ -353,12 +353,12 @@ export function SimpleGuildContainerAnimated(arg0) {
   SimpleGuildContainerTsx4.__initData = tmp21;
   const animatedStyle2 = useAnimatedStyle2(SimpleGuildContainerTsx4);
   const items8 = [closure_17, , , , , , , ];
-  const useAnimatedStyle3 = _mod1655.useAnimatedStyle;
-  _mod1655;
+  const useAnimatedStyle3 = _mod1653.useAnimatedStyle;
+  _mod1653;
   items8[1] = spring_spring.withSpring;
   items8[2] = derivedValue;
   items8[3] = closure_9;
-  items8[4] = _mod1655.interpolate;
+  items8[4] = _mod1653.interpolate;
   items8[5] = derivedValue1;
   items8[6] = backgroundColor;
   items8[7] = 48;
@@ -382,7 +382,7 @@ export function SimpleGuildContainerAnimated(arg0) {
   SimpleGuildContainerTsx5.__initData = tmp31;
   const obj2 = { children: items10 };
   const animatedStyle3 = useAnimatedStyle3(SimpleGuildContainerTsx5);
-  items10 = [metroRequire(_modDef1655.View, { style: animatedStyle, children }), metroRequire(_modDef1655.View, { style: animatedStyle3 }), metroRequire(_modDef1655.View, { style: animatedStyle2 }), metroRequire(closure_12, { backgroundColor, guildId, activityIndicatorState }), metroRequire(closure_11, { backgroundColor, badge, unread })];
+  items10 = [metroRequire(_modDef1653.View, { style: animatedStyle, children }), metroRequire(_modDef1653.View, { style: animatedStyle3 }), metroRequire(_modDef1653.View, { style: animatedStyle2 }), metroRequire(closure_12, { backgroundColor, guildId, activityIndicatorState }), metroRequire(closure_11, { backgroundColor, badge, unread })];
   const tmp41 = metroImportAll(metroImportDefault, obj2);
   if (null != onPress) {
     const obj3 = { ref: guildIconRef, style, onPress, onLongPress, accessibilityRole: "button", accessible: true, accessibilityLabel, accessibilityState: obj4, onAccessibilityAction, onLayout, children: tmp41 };

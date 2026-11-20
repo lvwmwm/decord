@@ -1,22 +1,22 @@
-// Module ID: 9883
-// Function ID: 9884
+// Module ID: 9886
+// Function ID: 9887
 // Name: AppStoreOverlayStatsCarousel
-// Dependencies: [19, 17, 21, 575, 4792, 9884, 1113, 9885, 5383, 1380, 5052, 8302, 8311, 2]
+// Dependencies: [19, 17, 21, 575, 4794, 9887, 1112, 9888, 5385, 1378, 5054, 8301, 8310, 2]
 // Exports: default
 
-// Module 9883 (AppStoreOverlayStatsCarousel)
+// Module 9886 (AppStoreOverlayStatsCarousel)
 import nativeDefault from "native" /* 575 */;
-import intl3 from "intl" /* 1113 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5052 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import AnalyticsActions from "AnalyticsActions" /* 8302 */;
-import AppStoreOverlayStatCardUtils from "AppStoreOverlayStatCardUtils" /* 9884 */;
-import AppStoreOverlayStarRatingDefault from "AppStoreOverlayStarRating" /* 9885 */;
+import intl3 from "intl" /* 1112 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5054 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import AnalyticsActions from "AnalyticsActions" /* 8301 */;
+import AppStoreOverlayStatCardUtils from "AppStoreOverlayStatCardUtils" /* 9887 */;
+import AppStoreOverlayStarRatingDefault from "AppStoreOverlayStarRating" /* 9888 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -61,15 +61,15 @@ function AppStoreOverlayStatCardItem(onRatingPress) {
     let result1;
     if (null != stat.ratingCount) {
       const tmp9Result = AppStoreOverlayStatCardUtils;
-      result1 = tmp9Result.formatAppStoreRatingCount(stat.ratingCount, tmp9(1113).intl.currentLocale);
+      result1 = tmp9Result.formatAppStoreRatingCount(stat.ratingCount, tmp9(1112).intl.currentLocale);
     }
     const tmp9Result2 = AppStoreOverlayStatCardUtils;
     const appStoreStarFillAmounts = tmp9Result2.getAppStoreStarFillAmounts(stat.rating, num);
-    const intl = tmp9(1113).intl;
+    const intl = tmp9(1112).intl;
     const formatToPlainString = intl.formatToPlainString;
     const obj4 = { label: stat.label, rating: result, maxRating: num, ratingCount: num2 };
     num2 = stat.ratingCount;
-    const prop = tmp9(1113).t["/0p2sz"];
+    const prop = tmp9(1112).t["/0p2sz"];
     if (num2 == null) {
       num2 = 0;
     }
@@ -122,7 +122,7 @@ function AppStoreOverlayStatCardItem(onRatingPress) {
     const tmp26 = metroRequire;
     if (null == secondaryContent) {
       const obj9 = { variant: "body-xs/medium", color: "text-subtle", lineClamp: 1, children: secondaryText };
-      secondaryContent = tmp24(tmp21(5383).Text, obj9);
+      secondaryContent = tmp24(tmp21(5385).Text, obj9);
     }
     tmp24Result = tmp24(tmp26, obj8);
   }
@@ -134,8 +134,8 @@ function AppStoreOverlayStatCardItem(onRatingPress) {
     const tmp21Result = PlatformUtils;
     const tmp30 = React3;
     if (tmp21Result.isIOS()) {
-      const intl2 = tmp21(1113).intl;
-      stringResult = intl2.string(tmp21(1113).t.quJD0Y);
+      const intl2 = tmp21(1112).intl;
+      stringResult = intl2.string(tmp21(1112).t.quJD0Y);
     }
     tmp24Result2 = tmp24(tmp30, obj10);
   } else {
@@ -193,9 +193,9 @@ export default function AppStoreOverlayStatsCarousel(arg0) {
         if (bound !== current) {
           const obj = { carouselType: AnalyticsActions.AppStoreOverlayCarouselTypes.STATS, scrollingDirection: LEFT, carouselPosition: bound, carouselSize: length };
           if (bound > current) {
-            LEFT = tmp2(8311).HorizontalScrollingDirection.RIGHT;
+            LEFT = tmp2(8310).HorizontalScrollingDirection.RIGHT;
           } else {
-            LEFT = tmp2(8311).HorizontalScrollingDirection.LEFT;
+            LEFT = tmp2(8310).HorizontalScrollingDirection.LEFT;
           }
           tmp(obj);
           tmp11.current = bound;

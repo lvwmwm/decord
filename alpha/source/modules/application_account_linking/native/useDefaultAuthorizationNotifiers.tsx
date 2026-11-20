@@ -1,16 +1,16 @@
-// Module ID: 17832
-// Function ID: 17833
+// Module ID: 17659
+// Function ID: 17660
 // Name: useDefaultAuthorizationNotifiers
-// Dependencies: [19, 2120, 1072, 504, 5503, 6296, 5474, 1113, 3569, 2]
+// Dependencies: [19, 2118, 1071, 504, 5505, 6298, 5476, 1112, 3571, 2]
 // Exports: useDefaultAuthorizationNotifiers
 
-// Module 17832 (useDefaultAuthorizationNotifiers)
-import Constants from "Constants" /* 1072 */;
-import intl2 from "intl" /* 1113 */;
-import _modDef3569 from "module_3569" /* 3569 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5474 */;
+// Module 17659 (useDefaultAuthorizationNotifiers)
+import Constants from "Constants" /* 1071 */;
+import intl2 from "intl" /* 1112 */;
+import _modDef3571 from "module_3571" /* 3571 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5476 */;
 import react_mod from "react" /* 19 */;
-import AppStateStore from "AppStateStore" /* 2120 */;
+import AppStateStore from "AppStateStore" /* 2118 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -65,7 +65,7 @@ export function useDefaultAuthorizationNotifiers(startAuthorization, hasAlreadyL
           if (tmp3) {
             tmp.current = false;
             if (false) {
-              const obj = { text: intl.string(_modDef3569.uG6teD) };
+              const obj = { text: intl.string(_modDef3571.uG6teD) };
               const open = ToastActionCreatorsDefault.open;
               ToastActionCreatorsDefault;
               intl = intl2.intl;

@@ -1,10 +1,10 @@
 // Module ID: 11444
 // Function ID: 11445
-// Dependencies: [41, 42, 93, 95, 98, 11377, 11360]
+// Dependencies: [41, 42, 93, 95, 98, 11319, 11302]
 
 // Module 11444
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 11360 */;
-import now2 from "now" /* 11377 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 11302 */;
+import now2 from "now" /* 11319 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import map from "_possibleConstructorReturn" /* 93 */;
@@ -124,12 +124,12 @@ if (!fn) {
   };
 }
 const now = fn(now2);
-class NLCasualDateParser {
+class ESCasualDateParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, NLCasualDateParser);
-    const obj = _getPrototypeOf(NLCasualDateParser);
+    _classCallCheck(this, ESCasualDateParser);
+    const obj = _getPrototypeOf(ESCasualDateParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = map;
     if (_isNativeReflectConstruct()) {
@@ -141,11 +141,11 @@ class NLCasualDateParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(NLCasualDateParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(ESCasualDateParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
   key: "innerPattern",
   value: function innerPattern(arg0) {
-    return /(nu|vandaag|morgen|morgend|gisteren)(?=\W|$)/i;
+    return /(ahora|hoy|mañana|ayer)(?=\W|$)/i;
   }
 };
 let items = [
@@ -155,24 +155,19 @@ let items = [
     value: function innerExtract(reference, arg1) {
       const str = arg1[0];
       const formatted = str.toLowerCase();
-      if ("nu" === formatted) {
+      if ("ahora" === formatted) {
         return now.now(reference.reference);
-      } else if ("vandaag" === formatted) {
+      } else if ("hoy" === formatted) {
         return now.today(reference.reference);
-      } else {
-        if ("morgen" !== formatted) {
-          if ("morgend" !== formatted) {
-            if ("gisteren" === formatted) {
-              return now.yesterday(reference.reference);
-            } else {
-              return tmp2;
-            }
-          }
-        }
+      } else if ("ma\u00F1ana" === formatted) {
         return now.tomorrow(reference.reference);
+      } else if ("ayer" === formatted) {
+        return now.yesterday(reference.reference);
+      } else {
+        return tmp2;
       }
     }
   }
 ];
 
-export default _createClass(NLCasualDateParser, items);
+export default _createClass(ESCasualDateParser, items);

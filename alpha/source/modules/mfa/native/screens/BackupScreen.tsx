@@ -1,15 +1,15 @@
-// Module ID: 17154
-// Function ID: 17155
+// Module ID: 16978
+// Function ID: 16979
 // Name: BackupScreen
-// Dependencies: [5, 32, 19, 21, 17152, 5383, 1113, 7253, 17147, 17153, 17150, 2]
+// Dependencies: [5, 32, 19, 21, 16976, 5385, 1112, 7252, 16971, 16977, 16974, 2]
 // Exports: default
 
-// Module 17154 (BackupScreen)
-import intl10 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import useWideAuthViewDefault from "useWideAuthView" /* 7253 */;
-import MfaOptionScreenDefault from "MfaOptionScreen" /* 17147 */;
-import MFA from "MFA" /* 17152 */;
+// Module 16978 (BackupScreen)
+import intl10 from "intl" /* 1112 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import useWideAuthViewDefault from "useWideAuthView" /* 7252 */;
+import MfaOptionScreenDefault from "MfaOptionScreen" /* 16971 */;
+import MFA from "MFA" /* 16976 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -22,8 +22,8 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const buttonDefault = tmp(17150);
-const ClipboardCopyInputDefault = tmp(17153);
+const buttonDefault = tmp(16974);
+const ClipboardCopyInputDefault = tmp(16977);
 function isValidClipboardCode(arg0) {
   let tmp3 = arg0.length >= MFA.BACKUP_CODE_MIN_LENGTH;
   if (tmp3) {
@@ -103,7 +103,7 @@ export default function BackupScreen(finish) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c5;
@@ -160,7 +160,7 @@ export default function BackupScreen(finish) {
           }
           message2(false);
           c7 = 3;
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp27) {
         if (0 === c5) {
@@ -184,25 +184,25 @@ export default function BackupScreen(finish) {
   tmp18 = metroImportAll;
   if (first1 > 0) {
     let obj2 = { variant: "body-md/normal", children: items2 };
-    const intl3 = tmp16(1113).intl;
-    items2 = [intl3.string(tmp16(1113).t.RRtlLg), ];
-    const intl4 = tmp16(1113).intl;
+    const intl3 = tmp16(1112).intl;
+    items2 = [intl3.string(tmp16(1112).t.RRtlLg), ];
+    const intl4 = tmp16(1112).intl;
     let obj3 = { countdown: first1 };
     items2[1] = intl4.format(intl10.t.tsWkAE, obj3);
     obj4 = obj2;
   } else {
     obj4 = { variant: "body-md/normal", children: items3 };
-    const intl8 = tmp16(1113).intl;
-    items3 = [intl8.string(tmp16(1113).t.RRtlLg), ];
-    const intl9 = tmp16(1113).intl;
+    const intl8 = tmp16(1112).intl;
+    items3 = [intl8.string(tmp16(1112).t.RRtlLg), ];
+    const intl9 = tmp16(1112).intl;
     items3[1] = intl9.string(intl10.t.v3a6Pd);
   }
   const items4 = [metroRequire(Text, obj4), ];
   let obj5 = {
-    label: intl5.string(tmp16(1113).t["C/ZAw/"]),
-    placeholder: intl6.string(tmp16(1113).t.fZSi1D),
+    label: intl5.string(tmp16(1112).t["C/ZAw/"]),
+    placeholder: intl6.string(tmp16(1112).t.fZSi1D),
     isValidClipboardCode,
-    maxLength: tmp16(17152).BACKUP_CODE_MAX_LENGTH,
+    maxLength: tmp16(16976).BACKUP_CODE_MAX_LENGTH,
     onChangeCode(arg0) {
       closure_3(arg0);
       _undefined(undefined);
@@ -212,8 +212,8 @@ export default function BackupScreen(finish) {
     autoFocus: !tmp3
   };
   const tmpResult = ClipboardCopyInputDefault;
-  intl5 = tmp16(1113).intl;
-  intl6 = tmp16(1113).intl;
+  intl5 = tmp16(1112).intl;
+  intl6 = tmp16(1112).intl;
   obj6 = { children: items4 };
   tmp20 = tmp5 || tmp10;
   items4[1] = metroImportDefault(tmpResult, obj5);
@@ -227,12 +227,12 @@ export default function BackupScreen(finish) {
     disabled: tmp5
   };
   tmpResult2 = buttonDefault;
-  intl7 = tmp16(1113).intl;
+  intl7 = tmp16(1112).intl;
   if (!tmp5) {
     tmp5 = tmp10;
   }
   if (!tmp5) {
-    tmp5 = first.length < tmp16(17152).BACKUP_CODE_MIN_LENGTH;
+    tmp5 = first.length < tmp16(16976).BACKUP_CODE_MIN_LENGTH;
   }
   if (!tmp5) {
     tmp5 = first1 > 0;

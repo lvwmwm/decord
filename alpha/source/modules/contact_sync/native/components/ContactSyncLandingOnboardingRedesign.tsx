@@ -1,22 +1,22 @@
-// Module ID: 13508
-// Function ID: 13509
+// Module ID: 13478
+// Function ID: 13479
 // Name: ContactSyncLandingOnboardingRedesign
-// Dependencies: [5, 19, 17, 6375, 21, 4792, 575, 5346, 7676, 5479, 13509, 5383, 1113, 5390, 13510, 13501, 2]
+// Dependencies: [5, 19, 17, 6377, 21, 4794, 575, 5348, 7675, 5481, 13479, 5385, 1112, 5392, 13480, 13471, 2]
 // Exports: default
 
-// Module 13508 (ContactSyncLandingOnboardingRedesign)
+// Module 13478 (ContactSyncLandingOnboardingRedesign)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import NavigatorConstants from "NavigatorConstants" /* 5346 */;
-import FastImageDefault from "FastImage" /* 5479 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 6375 */;
-import RedesignContactSyncDiscoverabilityFooterDefault from "RedesignContactSyncDiscoverabilityFooter" /* 13501 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13509 */;
-import ContactSyncErrorDefault from "ContactSyncError" /* 13510 */;
+import NavigatorConstants from "NavigatorConstants" /* 5348 */;
+import FastImageDefault from "FastImage" /* 5481 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 6377 */;
+import RedesignContactSyncDiscoverabilityFooterDefault from "RedesignContactSyncDiscoverabilityFooter" /* 13471 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13479 */;
+import ContactSyncErrorDefault from "ContactSyncError" /* 13480 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let c1, c2;
@@ -78,7 +78,7 @@ export default function ContactSyncLandingOnboardingRedesign(onNext) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -111,7 +111,7 @@ export default function ContactSyncLandingOnboardingRedesign(onNext) {
             closure_128_0();
           }
           c2 = 3;
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp10) {
         c2 = 3;
@@ -122,18 +122,18 @@ export default function ContactSyncLandingOnboardingRedesign(onNext) {
   let obj3 = { resizeMode: "contain", style: tmp.headerImage, source: AssetRegistryDefault };
   const tmp3 = FastImageDefault;
   items1 = [closure_7(tmp3, obj3), , , , ];
-  let obj4 = { style: tmp.title, variant: "heading-xl/semibold", children: intl.string(onNext(1113).t["/G+nci"]) };
-  const Text = onNext(5383).Text;
-  intl = onNext(1113).intl;
+  let obj4 = { style: tmp.title, variant: "heading-xl/semibold", children: intl.string(onNext(1112).t["/G+nci"]) };
+  const Text = onNext(5385).Text;
+  intl = onNext(1112).intl;
   items1[1] = closure_7(Text, obj4);
-  let obj5 = { style: tmp.subtitle, variant: "body-sm/medium", children: intl2.string(onNext(1113).t.G8zcHt) };
-  const Text2 = onNext(5383).Text;
-  intl2 = onNext(1113).intl;
+  let obj5 = { style: tmp.subtitle, variant: "body-sm/medium", children: intl2.string(onNext(1112).t.G8zcHt) };
+  const Text2 = onNext(5385).Text;
+  intl2 = onNext(1112).intl;
   items1[2] = closure_7(Text2, obj5);
   const obj6 = { style: tmp.buttonContainer, children: closure_7(Button, obj7) };
-  obj7 = { variant: "primary", size: "lg", text: intl3.string(onNext(1113).t.LhlgY9), onPress: callback, loading };
-  Button = onNext(5390).Button;
-  intl3 = onNext(1113).intl;
+  obj7 = { variant: "primary", size: "lg", text: intl3.string(onNext(1112).t.LhlgY9), onPress: callback, loading };
+  Button = onNext(5392).Button;
+  intl3 = onNext(1112).intl;
   items1[3] = closure_7(View, obj6);
   items1[4] = closure_7(ContactSyncErrorDefault, { error });
   items2 = [closure_8(View, obj2), ];

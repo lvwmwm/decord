@@ -1,27 +1,27 @@
-// Module ID: 19485
-// Function ID: 19486
+// Module ID: 19305
+// Function ID: 19306
 // Name: AgeGateVerify
-// Dependencies: [19, 17, 21, 4792, 575, 6298, 6898, 5383, 5390, 7674, 6293, 2]
+// Dependencies: [19, 17, 21, 4794, 575, 6300, 6897, 5385, 5392, 7673, 6295, 2]
 // Exports: default
 
-// Module 19485 (AgeGateVerify)
+// Module 19305 (AgeGateVerify)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6293 */;
-import AgeGateUtils from "AgeGateUtils" /* 6298 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6898 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7674 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6295 */;
+import AgeGateUtils from "AgeGateUtils" /* 6300 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6897 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7673 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
 let hasOwnProperty;
 let obj2;
 let tmp2;
-const components_Button_Button = tmp2(5390);
+const components_Button_Button = tmp2(5392);
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let obj = { container: obj2, header: { textAlign: "center" }, body: { textAlign: "center" }, buttonWrapper: { width: "100%" } };

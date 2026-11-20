@@ -1,23 +1,23 @@
-// Module ID: 19111
-// Function ID: 19112
+// Module ID: 18930
+// Function ID: 18931
 // Name: AppIconsCoachmark
-// Dependencies: [19, 17, 1388, 4638, 21, 4792, 575, 504, 2174, 5006, 5020, 5479, 19112, 1187, 10885, 5383, 1113, 5390, 13958, 2]
+// Dependencies: [19, 17, 1386, 4640, 21, 4794, 575, 504, 2172, 5008, 5022, 5481, 18931, 1186, 10827, 5385, 1112, 5392, 13927, 2]
 // Exports: default
 
-// Module 19111 (AppIconsCoachmark)
+// Module 18930 (AppIconsCoachmark)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2174 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4638 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
-import FastImageDefault from "FastImage" /* 5479 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10885 */;
-import AppIconUtils from "AppIconUtils" /* 13958 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 19112 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2172 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4640 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5008 */;
+import FastImageDefault from "FastImage" /* 5481 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10827 */;
+import AppIconUtils from "AppIconUtils" /* 13927 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 18931 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1388 */;
+import UserStore from "UserStore" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -70,24 +70,24 @@ export default function AppIconsCoachmarkActionSheet(markAsDismissed) {
     children: items4
   };
   const obj4 = { style: tmp.info, children: items2 };
-  const BottomSheet = markAsDismissed(5020).BottomSheet;
+  const BottomSheet = markAsDismissed(5022).BottomSheet;
   const obj5 = { source: AssetRegistryDefault2, style: tmp.image };
   const tmp10 = FastImageDefault;
   items2 = [closure_7(tmp10, obj5), , ];
   const obj6 = { style: tmp.titleContainer, children: items3 };
-  const obj7 = { source: AssetRegistryDefault, size: markAsDismissed(1187).IconSizes.MEDIUM, style: tmp.nitroWheel, disableColor: true };
-  const Icon = markAsDismissed(1187).Icon;
+  const obj7 = { source: AssetRegistryDefault, size: markAsDismissed(1186).IconSizes.MEDIUM, style: tmp.nitroWheel, disableColor: true };
+  const Icon = markAsDismissed(1186).Icon;
   items3 = [closure_7(Icon, obj7), ];
-  const obj8 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.string(markAsDismissed(1113).t.EfA4Cq) };
-  const Text = markAsDismissed(5383).Text;
-  intl = markAsDismissed(1113).intl;
+  const obj8 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.string(markAsDismissed(1112).t.EfA4Cq) };
+  const Text = markAsDismissed(5385).Text;
+  intl = markAsDismissed(1112).intl;
   items3[1] = closure_7(Text, obj8);
   items2[1] = closure_8(View, obj6);
   const obj9 = { variant: "body-md/normal", color: "text-default", style: tmp.subtitle, children: stringResult };
-  const Text2 = markAsDismissed(5383).Text;
-  const intl2 = markAsDismissed(1113).intl;
+  const Text2 = markAsDismissed(5385).Text;
+  const intl2 = markAsDismissed(1112).intl;
   const string = intl2.string;
-  const t = markAsDismissed(1113).t;
+  const t = markAsDismissed(1112).t;
   if (isPremiumResult) {
     stringResult = string(t.IgchKK);
   } else {
@@ -97,7 +97,7 @@ export default function AppIconsCoachmarkActionSheet(markAsDismissed) {
   items4 = [closure_8(View, obj4), ];
   const obj10 = { style: tmp.footer, children: items5 };
   const obj11 = {
-    text: intl3.string(tmp2(1113).t.Pt547C),
+    text: intl3.string(tmp2(1112).t.Pt547C),
     onPress: function handleOnTryIt() {
       const obj = ActionSheetActionCreatorsDefault;
       obj.hideActionSheet();
@@ -108,12 +108,12 @@ export default function AppIconsCoachmarkActionSheet(markAsDismissed) {
       const result = obj2.navigateToAppIconSettings();
     }
   };
-  const Button = tmp2(5390).Button;
-  intl3 = tmp2(1113).intl;
+  const Button = tmp2(5392).Button;
+  intl3 = tmp2(1112).intl;
   items5 = [closure_7(Button, obj11), ];
-  const obj12 = { variant: "secondary", text: intl4.string(tmp2(1113).t.iSrIIZ), onPress: callback };
-  const Button2 = tmp2(5390).Button;
-  intl4 = tmp2(1113).intl;
+  const obj12 = { variant: "secondary", text: intl4.string(tmp2(1112).t.iSrIIZ), onPress: callback };
+  const Button2 = tmp2(5392).Button;
+  intl4 = tmp2(1112).intl;
   items5[1] = closure_7(Button2, obj12);
   items4[1] = closure_8(View, obj10);
   return closure_8(BottomSheet, obj3);

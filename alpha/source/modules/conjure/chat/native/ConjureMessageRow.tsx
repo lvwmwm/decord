@@ -1,29 +1,29 @@
-// Module ID: 18516
-// Function ID: 18517
+// Module ID: 18340
+// Function ID: 18341
 // Name: ConjureMessageRow
-// Dependencies: [19, 17, 1388, 21, 4792, 18508, 18517, 18518, 575, 18473, 6807, 18487, 18413, 18519, 18351, 504, 18527, 18528, 18522, 18468, 18393, 18288, 18520, 5383, 1113, 18526, 18529, 18530, 18531, 18532, 18533, 18541, 4089, 18548, 18550, 18551, 18401, 18552, 18601, 18342, 18602, 18472, 18604, 18630, 18642, 18644, 18538, 18647, 18652, 18653, 18654, 18656, 18478, 2]
+// Dependencies: [19, 17, 1386, 21, 4794, 18332, 18341, 18342, 575, 18298, 6807, 18311, 18257, 18343, 18185, 504, 18351, 18352, 18346, 18293, 18237, 18113, 18344, 5385, 1112, 18350, 18353, 18354, 18355, 18356, 18357, 18365, 4091, 18372, 18374, 18375, 18245, 18376, 18425, 18176, 18426, 18297, 18428, 18458, 18469, 18471, 18362, 18474, 18476, 18477, 18478, 18480, 18303, 2]
 
-// Module 18516 (ConjureMessageRow)
+// Module 18340 (ConjureMessageRow)
 import nativeDefault from "native" /* 575 */;
 import conjureChatTurns from "conjureChatTurns" /* 6807 */;
-import ConjureVersionRestoreConfirm from "ConjureVersionRestoreConfirm" /* 18393 */;
-import ConjureNativeMarkdown from "ConjureNativeMarkdown" /* 18401 */;
-import ConjureDesignFeedback from "ConjureDesignFeedback" /* 18413 */;
-import conjureQueuedMessage from "conjureQueuedMessage" /* 18468 */;
-import ConjureTimelineTree from "ConjureTimelineTree" /* 18473 */;
-import conjureAttachmentDrafts from "conjureAttachmentDrafts" /* 18478 */;
-import ConjureTodoAgents from "ConjureTodoAgents" /* 18487 */;
-import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 18508 */;
-import conjureNativeChatLayout from "conjureNativeChatLayout" /* 18517 */;
-import ConjureRepliedMessage from "ConjureRepliedMessage" /* 18518 */;
-import ConjureMessageActionSheet from "ConjureMessageActionSheet" /* 18522 */;
-import ConjureChatRestore from "ConjureChatRestore" /* 18527 */;
-import ConjureActivityBox from "ConjureActivityBox" /* 18552 */;
+import ConjureVersionRestoreConfirm from "ConjureVersionRestoreConfirm" /* 18237 */;
+import ConjureNativeMarkdown from "ConjureNativeMarkdown" /* 18245 */;
+import ConjureDesignFeedback from "ConjureDesignFeedback" /* 18257 */;
+import conjureQueuedMessage from "conjureQueuedMessage" /* 18293 */;
+import ConjureTimelineTree from "ConjureTimelineTree" /* 18298 */;
+import conjureAttachmentDrafts from "conjureAttachmentDrafts" /* 18303 */;
+import ConjureTodoAgents from "ConjureTodoAgents" /* 18311 */;
+import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 18332 */;
+import conjureNativeChatLayout from "conjureNativeChatLayout" /* 18341 */;
+import ConjureRepliedMessage from "ConjureRepliedMessage" /* 18342 */;
+import ConjureMessageActionSheet from "ConjureMessageActionSheet" /* 18346 */;
+import ConjureChatRestore from "ConjureChatRestore" /* 18351 */;
+import ConjureActivityBox from "ConjureActivityBox" /* 18376 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1388 */;
+import UserStore from "UserStore" /* 1386 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const ConjureActivityBoxDefault = ConjureActivityBox;
@@ -100,9 +100,8 @@ const memoResult = react.memo(function ConjureMessageRow(projectId) {
   let result;
   let secretRequestStatus;
   let showsClosingMessage;
+  let tmp11Result17;
   let tmp11Result18;
-  let tmp11Result19;
-  let tmp11Result20;
   let tmp18Result;
   let tmp53;
   projectId = projectId.projectId;
@@ -209,8 +208,8 @@ const memoResult = react.memo(function ConjureMessageRow(projectId) {
     user_id = message.user_id;
   }
   const items9 = [onTogglePlan];
-  const tmp11Result11 = projectId(tmp12[15]);
-  stateFromStores = tmp11Result11.useStateFromStores(items9, () => {
+  const tmp11Result10 = projectId(tmp12[15]);
+  stateFromStores = tmp11Result10.useStateFromStores(items9, () => {
     const currentUser = onTogglePlan.getCurrentUser();
     let id;
     if (currentUser != null) {
@@ -264,31 +263,31 @@ const memoResult = react.memo(function ConjureMessageRow(projectId) {
   if ("" === trimmed) {
     if (null == user_id) {
       if ("user" === message.role) {
-        let tmp92Result;
+        let tmp91Result;
         if ("" === trimmed) {
-          let tmp92Result2;
+          let tmp91Result2;
           if (null == memo4) {
-            tmp92Result2 = null;
+            tmp91Result2 = null;
           }
-          return tmp92Result2;
+          return tmp91Result2;
         }
         let obj3 = { style: items8, onLongPress: tmp22, accessible: false, children: items12 };
-        let tmp94 = null;
-        const tmp93 = onToggleChecklist;
+        let tmp93 = null;
+        const tmp92 = onToggleChecklist;
         if (groupStart) {
           let obj4 = { style: tmp.avatar, children: replied(tmp11(tmp12[22]).ConjureUserAvatar, obj5) };
           obj5 = { userId: message.user_id };
-          tmp94 = replied(planSuperseded, obj4);
+          tmp93 = replied(planSuperseded, obj4);
         }
-        items12 = [tmp94, , , , ];
-        let tmp97 = null;
+        items12 = [tmp93, , , , ];
+        let tmp96 = null;
         if (groupStart) {
           const obj6 = { style: tmp.header, children: replied(projectId(tmp12[22]).ConjureUserHeader, obj7) };
           obj7 = { userId: null, at: null };
-          ({ user_id: obj56.userId, created_at: obj56.at } = message);
-          tmp97 = replied(planSuperseded, obj6);
+          ({ user_id: obj55.userId, created_at: obj55.at } = message);
+          tmp96 = replied(planSuperseded, obj6);
         }
-        items12[1] = tmp97;
+        items12[1] = tmp96;
         if ("" !== trimmed) {
           let combined;
           const Text3 = tmp11(tmp12[23]).Text;
@@ -297,13 +296,13 @@ const memoResult = react.memo(function ConjureMessageRow(projectId) {
             const _HermesInternal = HermesInternal;
             combined = "" + intl3.string(tmp11(tmp12[24]).t.KD6OJJ) + ": " + conjureMentionNames;
           }
-          let tmp103 = null;
+          let tmp102 = null;
           const obj8 = { variant: "body-md/normal", color: "text-default", accessibilityLabel: combined, children: items13 };
           if (null != memo4) {
             const obj9 = { label: memo4.label, variant: "body-md/medium" };
-            tmp103 = replied(tmp18(tmp12[25]), obj9);
+            tmp102 = replied(tmp18(tmp12[25]), obj9);
           }
-          items13 = [tmp103, , ];
+          items13 = [tmp102, , ];
           let str5 = null;
           if (null != memo4) {
             str5 = null;
@@ -314,32 +313,32 @@ const memoResult = react.memo(function ConjureMessageRow(projectId) {
           items13[1] = str5;
           const obj10 = { text: trimmed, variant: "body-md/normal" };
           items13[2] = replied(message(tmp12[26]), obj10);
-          tmp92Result = tmp92(Text3, obj8);
+          tmp91Result = tmp91(Text3, obj8);
         } else {
-          tmp92Result = null;
+          tmp91Result = null;
         }
-        items12[2] = tmp92Result;
-        let tmp106 = null;
+        items12[2] = tmp91Result;
+        let tmp105 = null;
         if (null != tmp14) {
           const obj11 = { projectId, attachments: tmp14 };
-          tmp106 = replied(tmp18(tmp12[27]), obj11);
+          tmp105 = replied(tmp18(tmp12[27]), obj11);
         }
-        items12[3] = tmp106;
-        let tmp108 = null;
+        items12[3] = tmp105;
+        let tmp107 = null;
         if (null != message.agentReaction) {
           const obj12 = { reaction: message.agentReaction };
-          tmp108 = replied(tmp18(tmp12[28]), obj12);
+          tmp107 = replied(tmp18(tmp12[28]), obj12);
         }
-        items12[4] = tmp108;
-        tmp92Result2 = tmp92(tmp93, obj3);
+        items12[4] = tmp107;
+        tmp91Result2 = tmp91(tmp92, obj3);
       } else if ("context_boundary" === message.kind) {
-        let tmp88 = null;
+        let tmp87 = null;
         if (null != message.contextSwitch) {
           const obj13 = { style: tmp.boundaryRow, children: replied(message(tmp12[29]), obj14) };
           obj14 = { projectId, contextSwitch: message.contextSwitch };
-          tmp88 = replied(planSuperseded, obj13);
+          tmp87 = replied(planSuperseded, obj13);
         }
-        return tmp88;
+        return tmp87;
       } else {
         if ("project_event" === message.kind) {
           if (null != message.projectEvent) {
@@ -371,8 +370,8 @@ const memoResult = react.memo(function ConjureMessageRow(projectId) {
           if ("proposal" === message.kind) {
             proposal = message.proposal;
           }
-          const tmp11Result12 = projectId(tmp12[10]);
-          const turnSettledResult = tmp11Result12.turnSettled(message);
+          const tmp11Result11 = projectId(tmp12[10]);
+          const turnSettledResult = tmp11Result11.turnSettled(message);
           let ideas = null;
           if (turnSettledResult) {
             ideas = null;
@@ -400,8 +399,8 @@ const memoResult = react.memo(function ConjureMessageRow(projectId) {
             tmp28 = secretRequest;
           }
           if ("open" === secretRequestStatus) {
-            const tmp11Result13 = projectId(tmp12[34]);
-            tmp11Result13.activeAwaitingUser(message, isNewest);
+            const tmp11Result12 = projectId(tmp12[34]);
+            tmp11Result12.activeAwaitingUser(message, isNewest);
           }
           let tmp32 = null;
           if (turnSettledResult) {
@@ -471,8 +470,8 @@ const memoResult = react.memo(function ConjureMessageRow(projectId) {
             }
           }
           const obj23 = { steps: message.steps, content: trimmed, hasProposal: null != proposal, hasLiveClarification: null != clarification, hasAttachments: null != tmp14 };
-          const tmp11Result14 = projectId(tmp12[35]);
-          const turnPresentation = tmp11Result14.resolveTurnPresentation(obj23);
+          const tmp11Result13 = projectId(tmp12[35]);
+          const turnPresentation = tmp11Result13.resolveTurnPresentation(obj23);
           ({ showsClosingMessage, replyKey: c23 } = turnPresentation);
           let tmp43 = memo.steps.length > 0;
           const closingContent = turnPresentation.closingContent;
@@ -512,8 +511,8 @@ const memoResult = react.memo(function ConjureMessageRow(projectId) {
               }
             }
           }
-          const tmp11Result15 = projectId(tmp12[35]);
-          const turnLeadsWithStretchResult = tmp11Result15.turnLeadsWithStretch(tmp43, turnPresentation);
+          const tmp11Result14 = projectId(tmp12[35]);
+          const turnLeadsWithStretchResult = tmp11Result14.turnLeadsWithStretch(tmp43, turnPresentation);
           c24 = turnLeadsWithStretchResult;
           const found = memo1.filter((hasWork) => hasWork.hasWork);
           const atResult = found.at(-1);
@@ -521,24 +520,24 @@ const memoResult = react.memo(function ConjureMessageRow(projectId) {
           if (atResult != null) {
             index = atResult.index;
           }
-          const tmp11Result16 = projectId(tmp12[10]);
-          const tmp47 = !tmp11Result16.turnSettled(message);
+          const tmp11Result15 = projectId(tmp12[10]);
+          const tmp47 = !tmp11Result15.turnSettled(message);
           closure_26 = tmp47;
           const obj24 = { turnActive: tmp47 };
-          const tmp11Result17 = projectId(tmp12[9]);
-          open = tmp11Result17.turnLifecycle(memo1, obj24).open;
+          const tmp11Result16 = projectId(tmp12[9]);
+          open = tmp11Result16.turnLifecycle(memo1, obj24).open;
           let avatarSpokenReplying = groupStart && null != replied;
           let tmp51Result = null;
           const tmp49 = closure_9;
           if (avatarSpokenReplying) {
             const obj25 = { replied, onJump: tmp53 };
             tmp53 = undefined;
-            const tmp18Result7 = message(tmp12[7]);
+            const tmp18Result6 = message(tmp12[7]);
             const tmp51 = replied;
             if (null != onJumpToReplied) {
               tmp53 = callback2;
             }
-            tmp51Result = tmp51(tmp18Result7, obj25);
+            tmp51Result = tmp51(tmp18Result6, obj25);
           }
           const items14 = [tmp51Result, , ];
           const items15 = [, , ];
@@ -672,9 +671,9 @@ const memoResult = react.memo(function ConjureMessageRow(projectId) {
           items17[1] = tmp54Result17;
           let tmp54Result18 = null;
           if ("side_reply" === message.kind) {
-            const obj36 = { variant: "body-xs/normal", color: "text-muted", children: tmp11Result18.midTurnCaption(message.acknowledges) };
+            const obj36 = { variant: "body-xs/normal", color: "text-muted", children: tmp11Result17.midTurnCaption(message.acknowledges) };
             const Text = tmp11(tmp12[23]).Text;
-            tmp11Result18 = projectId(tmp12[38]);
+            tmp11Result17 = projectId(tmp12[38]);
             tmp54Result18 = tmp54(Text, obj36);
           }
           items17[2] = tmp54Result18;
@@ -685,15 +684,15 @@ const memoResult = react.memo(function ConjureMessageRow(projectId) {
           }
           items17[3] = tmp54Result19;
           if (null != items18) {
-            const tmp18Result8 = message(tmp12[39]);
-            const tmp18Result9 = message(tmp12[40]);
+            const tmp18Result7 = message(tmp12[39]);
+            const tmp18Result8 = message(tmp12[40]);
             if (items18 == null) {
               items18 = [];
             }
-            const obj38 = { children: replied(tmp18Result9, obj39) };
-            obj39 = { todos: items18, provisional: provisionalTodo, agents: memo3, live: tmp11Result19.checklistLive(message), superseded: checklistSuperseded, expanded: checklistExpanded, onToggleExpanded: callback };
-            tmp11Result19 = projectId(tmp12[41]);
-            tmp54Result20 = tmp54(tmp18Result8, obj38);
+            const obj38 = { children: replied(tmp18Result8, obj39) };
+            obj39 = { todos: items18, provisional: provisionalTodo, agents: memo3, live: tmp11Result18.checklistLive(message), superseded: checklistSuperseded, expanded: checklistExpanded, onToggleExpanded: callback };
+            tmp11Result18 = projectId(tmp12[41]);
+            tmp54Result20 = tmp54(tmp18Result7, obj38);
           } else {
             tmp54Result20 = null;
           }
@@ -746,10 +745,8 @@ const memoResult = react.memo(function ConjureMessageRow(projectId) {
           items17[9] = tmp54Result25;
           let tmp54Result26 = null;
           if (null != tmp26) {
-            const obj45 = { projectId, turnId: tmp11Result20.turnIdOfSegment(message), cta: tmp26 };
-            const tmp18Result10 = message(tmp12[47]);
-            tmp11Result20 = projectId(tmp12[10]);
-            tmp54Result26 = tmp54(tmp18Result10, obj45);
+            const obj45 = { projectId, cta: tmp26 };
+            tmp54Result26 = tmp54(tmp18(tmp12[47]), obj45);
           }
           items17[10] = tmp54Result26;
           let tmp54Result27 = null;
@@ -762,7 +759,7 @@ const memoResult = react.memo(function ConjureMessageRow(projectId) {
           if (null != restoreProposal) {
             const obj47 = { proposal: restoreProposal, onRestore: fn };
             fn = undefined;
-            const tmp18Result11 = message(tmp12[49]);
+            const tmp18Result9 = message(tmp12[49]);
             if (isNewest) {
               if (null != onRestoreVersion) {
                 fn = () => {
@@ -777,7 +774,7 @@ const memoResult = react.memo(function ConjureMessageRow(projectId) {
                 };
               }
             }
-            tmp54Result28 = tmp54(tmp18Result11, obj47);
+            tmp54Result28 = tmp54(tmp18Result9, obj47);
           }
           items17[12] = tmp54Result28;
           let tmp54Result29 = null;
@@ -790,14 +787,14 @@ const memoResult = react.memo(function ConjureMessageRow(projectId) {
           if (null != tmp36) {
             const obj49 = { projectId, change: tmp36, current: isNewest, onReply: fn2 };
             fn2 = undefined;
-            const tmp18Result12 = message(tmp12[51]);
+            const tmp18Result10 = message(tmp12[51]);
             if (canSend) {
               fn2 = (implementation_prompt) => {
                 const obj = conjureAttachmentDrafts;
                 return obj.sendConjureCardReply(projectId, implementation_prompt);
               };
             }
-            tmp54Result30 = tmp54(tmp18Result12, obj49);
+            tmp54Result30 = tmp54(tmp18Result10, obj49);
           }
           items17[14] = tmp54Result30;
           tmp48Result2 = tmp48(tmp55, obj34);

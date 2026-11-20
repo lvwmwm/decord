@@ -1,17 +1,17 @@
-// Module ID: 13398
-// Function ID: 13399
+// Module ID: 13368
+// Function ID: 13369
 // Name: useMessageRequestPreview
-// Dependencies: [5, 5843, 6498, 13399, 1072, 504, 12, 1285, 572, 2]
+// Dependencies: [5, 5845, 6500, 13369, 1071, 504, 12, 1284, 572, 2]
 // Exports: useMessageRequestPreview
 
-// Module 13398 (useMessageRequestPreview)
+// Module 13368 (useMessageRequestPreview)
 import _modDef12 from "module_12" /* 12 */;
-import Constants from "Constants" /* 1072 */;
-import HTTPUtils from "HTTPUtils" /* 1285 */;
+import Constants from "Constants" /* 1071 */;
+import HTTPUtils from "HTTPUtils" /* 1284 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import MessageStore from "MessageStore" /* 5843 */;
-import ReadStateStore from "ReadStateStore" /* 6498 */;
-import MessageRequestPreviewStore from "MessageRequestPreviewStore" /* 13399 */;
+import MessageStore from "MessageStore" /* 5845 */;
+import ReadStateStore from "ReadStateStore" /* 6500 */;
+import MessageRequestPreviewStore from "MessageRequestPreviewStore" /* 13369 */;
 import size from "module_2" /* 2 */;
 
 let c1, c10, c11, c4, closure_4;
@@ -31,7 +31,7 @@ let obj = function _loadMessageRequestData() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -75,7 +75,7 @@ let obj = function _loadMessageRequestData() {
         c3 = 0;
         c9 = null;
         c4 = 3;
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp19) {
         closure_2 = tmp19;
         if (0 === c3) {
@@ -105,7 +105,7 @@ obj = function _loadMessageRequestDataHelper() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       while (true) {
@@ -209,7 +209,7 @@ obj = function _loadMessageRequestDataHelper() {
               continue;
             }
             c11 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         }
       }

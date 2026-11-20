@@ -1,13 +1,13 @@
-// Module ID: 15642
-// Function ID: 15643
+// Module ID: 15606
+// Function ID: 15607
 // Name: userSettings
-// Dependencies: [2189, 1072, 15593, 6794, 2]
+// Dependencies: [2187, 1071, 15557, 6794, 2]
 
-// Module 15642 (userSettings)
-import Constants from "Constants" /* 1072 */;
+// Module 15606 (userSettings)
+import Constants from "Constants" /* 1071 */;
 import OAuth2Scopes from "OAuth2Scopes" /* 6794 */;
-import LocaleStore from "LocaleStore" /* 2189 */;
-import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 15593 */;
+import LocaleStore from "LocaleStore" /* 2187 */;
+import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 15557 */;
 import size from "module_2" /* 2 */;
 
 const RPCCommands = Constants.RPCCommands;

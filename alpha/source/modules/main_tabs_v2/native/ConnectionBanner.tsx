@@ -1,27 +1,27 @@
-// Module ID: 18023
-// Function ID: 18024
+// Module ID: 17850
+// Function ID: 17851
 // Name: ConnectionBanner
-// Dependencies: [32, 19, 17, 14880, 16532, 1072, 21, 4792, 575, 1113, 5356, 18024, 18026, 5383, 671, 1655, 7016, 5347, 504, 1256, 16531, 5393, 1708, 14881, 2]
+// Dependencies: [32, 19, 17, 14842, 16355, 1071, 21, 4794, 575, 1112, 5358, 17851, 17853, 5385, 671, 1653, 7015, 5349, 504, 1255, 16354, 5395, 1706, 14843, 2]
 // Exports: default
 
-// Module 18023 (ConnectionBanner)
+// Module 17850 (ConnectionBanner)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
-import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import _modDef1655 from "module_1655" /* 1655 */;
-import LinearGradientDefault from "LinearGradient" /* 5347 */;
-import useToken from "useToken" /* 5356 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import spring_spring from "spring/spring" /* 5393 */;
-import _modDef7016 from "module_7016" /* 7016 */;
-import ConnectivityIndicatorStateStore2 from "ConnectivityIndicatorStateStore" /* 14880 */;
+import Constants from "Constants" /* 1071 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import _modDef1653 from "module_1653" /* 1653 */;
+import LinearGradientDefault from "LinearGradient" /* 5349 */;
+import useToken from "useToken" /* 5358 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import spring_spring from "spring/spring" /* 5395 */;
+import _modDef7015 from "module_7015" /* 7015 */;
+import ConnectivityIndicatorStateStore2 from "ConnectivityIndicatorStateStore" /* 14842 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import YouBarConstants from "YouBarConstants" /* 16532 */;
+import YouBarConstants from "YouBarConstants" /* 16355 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -36,7 +36,7 @@ let metroRequire;
 let obj2;
 let rect;
 let tmp2;
-const _mod1708 = tmp2(1708);
+const _mod1706 = tmp2(1706);
 function ConnectionBannerIcon(state) {
   let ConnectionFineIcon;
   let ConnectionUnknownIcon;
@@ -53,12 +53,12 @@ function ConnectionBannerIcon(state) {
   } else if (constants.NO_CONNECTION === state) {
     const obj4 = { style: tmp.leadingSlot, children: authStore2(ConnectionUnknownIcon, obj5) };
     obj5 = { size: "xs", color: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT };
-    ConnectionUnknownIcon = tmp2(18024).ConnectionUnknownIcon;
+    ConnectionUnknownIcon = tmp2(17851).ConnectionUnknownIcon;
     return authStore2(metroRequire, obj4);
   } else if (constants.BACK_ONLINE === state) {
     const obj = { style: tmp.leadingSlot, children: authStore2(ConnectionFineIcon, obj6) };
     obj6 = { size: "xs", color: nativeDefault.colors.ICON_FEEDBACK_POSITIVE };
-    ConnectionFineIcon = tmp2(18026).ConnectionFineIcon;
+    ConnectionFineIcon = tmp2(17853).ConnectionFineIcon;
     return authStore2(metroRequire, obj);
   }
 }
@@ -78,14 +78,14 @@ function ConnectionBannerContent(state) {
   }
   const obj2 = { variant: "body-sm/medium", color: str, maxFontSizeMultiplier: 1.5, children: stringResult };
   if (constants.WAITING_FOR_NETWORK === state) {
-    const intl2 = tmp4(1113).intl;
-    stringResult = intl2.string(tmp4(1113).t.XKk1gp);
+    const intl2 = tmp4(1112).intl;
+    stringResult = intl2.string(tmp4(1112).t.XKk1gp);
   } else if (constants.NO_CONNECTION === state) {
-    const intl = tmp4(1113).intl;
-    stringResult = intl.string(tmp4(1113).t.zPerw8);
+    const intl = tmp4(1112).intl;
+    stringResult = intl.string(tmp4(1112).t.zPerw8);
   } else if (constants.BACK_ONLINE === state) {
-    const intl3 = tmp4(1113).intl;
-    stringResult = intl3.string(tmp4(1113).t.j8lYE2);
+    const intl3 = tmp4(1112).intl;
+    stringResult = intl3.string(tmp4(1112).t.j8lYE2);
   }
   items[1] = tmp3(Text, obj2);
   return tmp(tmp2, obj);
@@ -99,7 +99,7 @@ function BackOnlineGlow(progress) {
   let token;
   progress = progress.progress;
   const tmp = closure_21();
-  let obj = token(5356);
+  let obj = token(5358);
   token = obj.useToken(nativeDefault.colors.ICON_FEEDBACK_POSITIVE);
   let items = [token];
   const memo = react.useMemo(() => {
@@ -117,11 +117,11 @@ function BackOnlineGlow(progress) {
   }, items);
   const obj2 = { style: items1, pointerEvents: "none", children: closure_12(tmp4, obj3) };
   items1 = [tmp.glow, { opacity: progress }];
-  const View = _modDef1655.View;
+  const View = _modDef1653.View;
   obj3 = { style: tmp.glow, maskElement: closure_12(LinearGradientDefault, obj4), children: closure_12(LinearGradientDefault, obj5) };
   obj4 = { style: tmp.glowMaskGradient, colors, locations, start, end };
   obj5 = { style: tmp.glowMaskGradient, colors: memo, locations: locations2, start: start2, end: end2 };
-  tmp4 = _modDef7016;
+  tmp4 = _modDef7015;
   return closure_12(View, obj2);
 }
 function ConnectionBannerInner() {
@@ -179,7 +179,7 @@ function ConnectionBannerInner() {
     if (closure_0) {
       num = 1;
     }
-    const items = [closure_25, tmp5, _mod1708.scheduleOnRN, _slicedToArray];
+    const items = [closure_25, tmp5, _mod1706.scheduleOnRN, _slicedToArray];
     let c0;
     let c1;
     let c2;
@@ -236,7 +236,7 @@ function ConnectionBannerInner() {
   const obj3 = { pointerEvents: "none", style: items5, children: items6 };
   items5 = [tmp.container, { height: youBarBottomMargin + CONNECTION_BANNER_HEIGHT }, animatedStyle];
   let tmp25 = null;
-  const View = require("module_1655").View;
+  const View = require("module_1653").View;
   const tmp24 = closure_13;
   if (tmp12 === tmp6.BACK_ONLINE) {
     const obj5 = { progress: sharedValue };
@@ -278,7 +278,7 @@ export default function ConnectionBanner() {
   let ref;
   let state;
   let stateFromStores;
-  let obj = stateFromStores(14881);
+  let obj = stateFromStores(14843);
   const config = obj.useConfig({ location: "ConnectionBanner" });
   const hidden = config.hidden;
   const timeoutMs = config.timeoutMs;

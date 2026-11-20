@@ -1,21 +1,21 @@
-// Module ID: 19882
-// Function ID: 19883
+// Module ID: 19702
+// Function ID: 19703
 // Name: GuildSettingsModalSecurity
-// Dependencies: [19, 17, 4659, 4663, 1388, 7876, 1072, 21, 4792, 575, 504, 7875, 5383, 1113, 5390, 5479, 15978, 5366, 2]
+// Dependencies: [19, 17, 4661, 4665, 1386, 7875, 1071, 21, 4794, 575, 504, 7874, 5385, 1112, 5392, 5481, 15942, 5368, 2]
 // Exports: default
 
-// Module 19882 (GuildSettingsModalSecurity)
+// Module 19702 (GuildSettingsModalSecurity)
 import nativeDefault from "native" /* 575 */;
-import GuildRecord from "GuildRecord" /* 4659 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 7875 */;
+import GuildRecord from "GuildRecord" /* 4661 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 7874 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore from "GuildStore" /* 4663 */;
-import UserStore from "UserStore" /* 1388 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 7876 */;
-import Constants from "Constants" /* 1072 */;
+import GuildStore from "GuildStore" /* 4665 */;
+import UserStore from "UserStore" /* 1386 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 7875 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -89,15 +89,15 @@ export default function GuildSettingsModalSecurity(guildId) {
       obj.updateMFALevel(obj2);
     }
   }, items2);
-  const obj5 = { style: tmp.label, variant: "body-md/medium", color: "mobile-text-heading-primary", children: intl.string(guildId(1113).t.Wi9LEV) };
-  const Text = tmp2(5383).Text;
-  intl = tmp2(1113).intl;
+  const obj5 = { style: tmp.label, variant: "body-md/medium", color: "mobile-text-heading-primary", children: intl.string(guildId(1112).t.Wi9LEV) };
+  const Text = tmp2(5385).Text;
+  intl = tmp2(1112).intl;
   items4 = [closure_12(Text, obj5), , ];
   const obj6 = { style: tmp.button, children: closure_12(Button, obj7) };
-  Button = tmp2(5390).Button;
-  const intl2 = tmp2(1113).intl;
+  Button = tmp2(5392).Button;
+  const intl2 = tmp2(1112).intl;
   const string = intl2.string;
-  const t = tmp2(1113).t;
+  const t = tmp2(1112).t;
   const tmp15 = closure_14;
   const tmp16 = closure_5;
   if (stateFromStores1 === constants2.ELEVATED) {
@@ -118,24 +118,24 @@ export default function GuildSettingsModalSecurity(guildId) {
   }
   let tmp18Result = null;
   if (hasItem) {
-    const obj8 = { variant: "body-sm/normal", color: "text-feedback-critical", children: intl3.string(guildId(1113).t["KG1V/E"]) };
-    const Text2 = tmp2(5383).Text;
-    intl3 = tmp2(1113).intl;
+    const obj8 = { variant: "body-sm/normal", color: "text-feedback-critical", children: intl3.string(guildId(1112).t["KG1V/E"]) };
+    const Text2 = tmp2(5385).Text;
+    intl3 = tmp2(1112).intl;
     tmp18Result = tmp18(Text2, obj8);
   }
   const obj9 = { children: items7 };
   items4[2] = tmp18Result;
   items5 = [closure_13(closure_4, obj4), ];
   const obj10 = { style: tmp.center, children: items6 };
-  const obj11 = { source: stateFromStores(15978), style: tmp.image, resizeMode: "contain" };
-  const tmp23 = stateFromStores(5479);
+  const obj11 = { source: stateFromStores(15942), style: tmp.image, resizeMode: "contain" };
+  const tmp23 = stateFromStores(5481);
   items6 = [closure_12(tmp23, obj11), ];
   const obj12 = { style: tmp.infoWrapper, children: closure_12(Text3, obj13) };
-  obj13 = { variant: "body-sm/medium", color: "text-muted", children: intl4.format(guildId(1113).t["FK0+iX"], {}) };
-  Text3 = tmp2(5383).Text;
-  intl4 = tmp2(1113).intl;
+  obj13 = { variant: "body-sm/medium", color: "text-muted", children: intl4.format(guildId(1112).t["FK0+iX"], {}) };
+  Text3 = tmp2(5385).Text;
+  intl4 = tmp2(1112).intl;
   items6[1] = closure_12(closure_4, obj12);
   items5[1] = closure_13(closure_4, obj10);
-  items7 = [closure_13(tmp16, obj3), closure_12(tmp2(5366).NavScrim, {})];
+  items7 = [closure_13(tmp16, obj3), closure_12(tmp2(5368).NavScrim, {})];
   return closure_13(tmp15, obj9);
 };

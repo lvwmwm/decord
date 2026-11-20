@@ -1,12 +1,12 @@
 // Module ID: 6759
 // Function ID: 6760
 // Name: GuildProductsEligibility
-// Dependencies: [4663, 1072, 504, 2]
+// Dependencies: [4665, 1071, 504, 2]
 // Exports: isGuildEligibleForGuildProducts, useGuildEligibleForGuildProducts
 
 // Module 6759 (GuildProductsEligibility)
-import Constants from "Constants" /* 1072 */;
-import GuildStore from "GuildStore" /* 4663 */;
+import Constants from "Constants" /* 1071 */;
+import GuildStore from "GuildStore" /* 4665 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

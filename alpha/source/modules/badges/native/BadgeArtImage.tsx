@@ -1,17 +1,17 @@
-// Module ID: 13921
-// Function ID: 13922
+// Module ID: 13890
+// Function ID: 13891
 // Name: BadgeArtImage
-// Dependencies: [32, 5, 19, 17, 21, 4912, 1089, 5541, 7746, 5479, 2]
+// Dependencies: [32, 5, 19, 17, 21, 4914, 1088, 5543, 7745, 5481, 2]
 // Exports: default
 
-// Module 13921 (BadgeArtImage)
+// Module 13890 (BadgeArtImage)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import DurationsDefault from "Durations" /* 1089 */;
-import utils_FunctionUtils from "utils/FunctionUtils" /* 4912 */;
-import FastImageDefault from "FastImage" /* 5479 */;
-import TimeUtils from "TimeUtils" /* 5541 */;
-import inlineStyles from "inlineStyles" /* 7746 */;
+import DurationsDefault from "Durations" /* 1088 */;
+import utils_FunctionUtils from "utils/FunctionUtils" /* 4914 */;
+import FastImageDefault from "FastImage" /* 5481 */;
+import TimeUtils from "TimeUtils" /* 5543 */;
+import inlineStyles from "inlineStyles" /* 7745 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -38,7 +38,7 @@ let obj = function _timeOut() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -119,7 +119,7 @@ function SvgArt(url) {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "HermesInternal", done: "+60" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
@@ -193,7 +193,7 @@ function SvgArt(url) {
                   c2 = 0;
                 }
                 c4 = 3;
-                return { value: "HermesInternal", done: "+60" };
+                return { value: "HermesInternal", done: null };
               }
             } catch (tmp18) {
               if (0 === c2) {
@@ -235,7 +235,7 @@ function SvgArt(url) {
       let tmp11 = url;
       let tmp12 = dependencyMap;
       size = { width, height };
-      tmp9 = jsx(url(7746).SvgAst, { ast: tmp2, override: size });
+      tmp9 = jsx(url(7745).SvgAst, { ast: tmp2, override: size });
     }
     fallback = tmp9;
   }

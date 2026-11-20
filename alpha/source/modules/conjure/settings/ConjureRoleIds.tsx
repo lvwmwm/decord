@@ -1,10 +1,10 @@
-// Module ID: 18322
-// Function ID: 18323
+// Module ID: 18161
+// Function ID: 18162
 // Name: ConjureRoleIds
 // Dependencies: [2]
 // Exports: haveSameRoleIds
 
-// Module 18322 (ConjureRoleIds)
+// Module 18161 (ConjureRoleIds)
 import size from "module_2" /* 2 */;
 
 let set;

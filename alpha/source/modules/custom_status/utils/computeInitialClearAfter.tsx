@@ -1,11 +1,11 @@
 // Module ID: 8939
 // Function ID: 8940
 // Name: computeInitialClearAfter
-// Dependencies: [8937, 4617, 2]
+// Dependencies: [8937, 4619, 2]
 // Exports: default
 
 // Module 8939 (computeInitialClearAfter)
-import UserSettings from "UserSettings" /* 4617 */;
+import UserSettings from "UserSettings" /* 4619 */;
 import Constants from "Constants" /* 8937 */;
 import size from "module_2" /* 2 */;
 

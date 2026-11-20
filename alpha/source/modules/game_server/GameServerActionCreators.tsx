@@ -1,23 +1,23 @@
-// Module ID: 13281
-// Function ID: 13282
+// Module ID: 13251
+// Function ID: 13252
 // Name: GameServerActionCreators
-// Dependencies: [2189, 1388, 13282, 8214, 1072, 572, 13283, 6238, 1285, 13285, 8633, 1256, 13286, 13284, 2]
+// Dependencies: [2187, 1386, 13252, 8213, 1071, 572, 13253, 6240, 1284, 13255, 8632, 1255, 13256, 13254, 2]
 // Exports: acceptGameServerToS, disableGameServerForGuild, enableGameServerForGuild, fetchGameServerCatalog, fetchGameServerGlobalCatalog, fetchGameServerInstances, fetchGameServerInstructions, fetchGameServerRegions, fetchMyGameServerRegions, fetchMyGameServers, optimisticallyMarkGameServerResizing, resetGameServerRegionState, updateGameServerForGuild, updateGameServerRegionPingState, updateMyGameServerName, wakeGameServer, wakeMyGameServer
 
-// Module 13281 (GameServerActionCreators)
+// Module 13251 (GameServerActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import HTTPUtils from "HTTPUtils" /* 1285 */;
-import StoreUtils from "StoreUtils" /* 6238 */;
-import GameServerConstants from "GameServerConstants" /* 8214 */;
-import gameServerResponseToInstanceDefault from "gameServerResponseToInstance" /* 8633 */;
-import GameServerMocks from "GameServerMocks" /* 13283 */;
-import GameServerStatus from "GameServerStatus" /* 13284 */;
-import regionResponseToRegionDefault from "regionResponseToRegion" /* 13286 */;
-import LocaleStore from "LocaleStore" /* 2189 */;
-import UserStore from "UserStore" /* 1388 */;
-import OwnedGameServersStore from "OwnedGameServersStore" /* 13282 */;
-import Constants from "Constants" /* 1072 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import HTTPUtils from "HTTPUtils" /* 1284 */;
+import StoreUtils from "StoreUtils" /* 6240 */;
+import GameServerConstants from "GameServerConstants" /* 8213 */;
+import gameServerResponseToInstanceDefault from "gameServerResponseToInstance" /* 8632 */;
+import GameServerMocks from "GameServerMocks" /* 13253 */;
+import GameServerStatus from "GameServerStatus" /* 13254 */;
+import regionResponseToRegionDefault from "regionResponseToRegion" /* 13256 */;
+import LocaleStore from "LocaleStore" /* 2187 */;
+import UserStore from "UserStore" /* 1386 */;
+import OwnedGameServersStore from "OwnedGameServersStore" /* 13252 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -25,7 +25,7 @@ let _require;
 
 let metroImportAll;
 let metroImportDefault;
-const f105335 = (body) => {
+const f103661 = (body) => {
   body = body.body;
   let game_servers = body.game_servers;
   const dispatch = closure_1_1(closure_1_2[5]).dispatch;
@@ -288,7 +288,7 @@ export function fetchMyGameServers() {
   const HTTP = HTTPUtils.HTTP;
   const obj = { url: metroImportAll.GAME_SERVERS_ME, rejectWithError: true, oldFormErrors: true, retries: 3 };
   const value = HTTP.get(obj);
-  return value.then(f105335);
+  return value.then(f103661);
 }
 export function optimisticallyMarkGameServerResizing(arg0) {
   let obj2;
@@ -330,7 +330,7 @@ export function updateMyGameServerName(arg0, name) {
       const HTTP = closure_0(dependencyMap[8]).HTTP;
       const obj = { url: constants.GAME_SERVERS_ME, rejectWithError: true, oldFormErrors: true, retries: 3 };
       const value = HTTP.get(obj);
-      const nextPromise = value.then(f105335);
+      const nextPromise = value.then(f103661);
       nextPromise.catch(() => {
 
       });
@@ -339,7 +339,7 @@ export function updateMyGameServerName(arg0, name) {
       const HTTP = closure_0(dependencyMap[8]).HTTP;
       const obj = { url: constants.GAME_SERVERS_ME, rejectWithError: true, oldFormErrors: true, retries: 3 };
       const value = HTTP.get(obj);
-      const nextPromise = value.then(f105335);
+      const nextPromise = value.then(f103661);
       nextPromise.catch(() => {
 
       });
@@ -385,7 +385,7 @@ export function wakeMyGameServer(arg0) {
     const HTTP = closure_0(dependencyMap[8]).HTTP;
     let obj = { url: constants.GAME_SERVERS_ME, rejectWithError: true, oldFormErrors: true, retries: 3 };
     const value = HTTP.get(obj);
-    const nextPromise = value.then(f105335);
+    const nextPromise = value.then(f103661);
     nextPromise.catch(() => {
 
     });

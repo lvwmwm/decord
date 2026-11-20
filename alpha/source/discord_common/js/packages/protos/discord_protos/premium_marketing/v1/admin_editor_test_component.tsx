@@ -1,10 +1,10 @@
 // Module ID: 9053
 // Function ID: 9054
 // Name: admin_editor_test_component
-// Dependencies: [32, 1197, 9030, 9034, 9031, 9032, 9040, 9035, 2]
+// Dependencies: [32, 1196, 9030, 9034, 9031, 9032, 9040, 9035, 2]
 
 // Module 9053 (admin_editor_test_component)
-import _mod1197 from "module_1197" /* 1197 */;
+import _mod1196 from "module_1196" /* 1196 */;
 import localized_string from "localized_string" /* 9030 */;
 import help_article from "help_article" /* 9031 */;
 import cta_button from "cta_button" /* 9032 */;
@@ -14,18 +14,19 @@ import gradient from "gradient" /* 9040 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
-let internalBinaryWrite, internalBinaryWrite2, internalBinaryWrite3, internalBinaryWrite4, internalBinaryWrite5, internalBinaryWrite6, internalBinaryWrite7, internalBinaryWrite8;
+const require = globalThis.__r;
+let internalBinaryWrite, internalBinaryWrite2, internalBinaryWrite3, internalBinaryWrite4, internalBinaryWrite5, internalBinaryWrite6, internalBinaryWrite7, internalBinaryWrite8, internalBinaryWrite9;
 
 let tmp;
 let tmp2;
 function T() {
-  return localized_string.LocalizedString;
+  return require("localized_string").LocalizedString;
 }
 const T2 = function T() {
-  return theme_aware_asset.ThemeAwareAsset;
+  return require("theme_aware_asset").ThemeAwareAsset;
 };
 const AdminEditorTestSelectOption = { UNSPECIFIED: 0, [0]: "UNSPECIFIED", FIRST: 1, [1]: "FIRST", SECOND: 2, [2]: "SECOND" };
-const MessageType = _mod1197.MessageType;
+const MessageType = _mod1196.MessageType;
 class AdminEditorTestComponent$Type extends MessageType {
   constructor() {
     let items = [
@@ -35,7 +36,7 @@ class AdminEditorTestComponent$Type extends MessageType {
         name: "localized_text_field",
         kind: "message",
         T() {
-          return localized_string.LocalizedString;
+          return require("localized_string").LocalizedString;
         }
       },
       { no: 3, name: "plain_text_field", kind: "scalar", T: 9 },
@@ -44,7 +45,7 @@ class AdminEditorTestComponent$Type extends MessageType {
         name: "textarea_field",
         kind: "message",
         T() {
-          return localized_string.LocalizedString;
+          return require("localized_string").LocalizedString;
         }
       },
       { no: 5, name: "checkbox_field", kind: "scalar", T: 8 },
@@ -54,7 +55,7 @@ class AdminEditorTestComponent$Type extends MessageType {
         name: "themed_asset_field",
         kind: "message",
         T() {
-          return theme_aware_asset.ThemeAwareAsset;
+          return require("theme_aware_asset").ThemeAwareAsset;
         }
       },
       {
@@ -62,7 +63,7 @@ class AdminEditorTestComponent$Type extends MessageType {
         name: "help_article_field",
         kind: "message",
         T() {
-          return help_article.HelpArticle;
+          return require("help_article").HelpArticle;
         }
       },
       {
@@ -70,7 +71,7 @@ class AdminEditorTestComponent$Type extends MessageType {
         name: "cta_field",
         kind: "message",
         T() {
-          return cta_button.CTAButton;
+          return require("cta_button").CTAButton;
         }
       },
       {
@@ -78,7 +79,7 @@ class AdminEditorTestComponent$Type extends MessageType {
         name: "gradient_field",
         kind: "message",
         T() {
-          return gradient.Gradient;
+          return require("gradient").Gradient;
         }
       },
       {
@@ -100,34 +101,45 @@ class AdminEditorTestComponent$Type extends MessageType {
           return items;
         }
       },
+      {
+        no: 13,
+        name: "list_field",
+        kind: "message",
+        repeat: 1,
+        T() {
+          return internalBinaryWrite;
+        }
+      },
+    ,
     ,
 
     ];
-    const obj = { no: 13, name: "list_field", kind: "message", repeat: 1, T };
+    const obj = { no: 14, name: "tab_gradient_colors_field", kind: "message", T };
     class T {
       constructor() {
-        return internalBinaryWrite;
+        return require("tab_gradient_colors").TabGradientColors;
       }
     }
-    items[12] = obj;
-    items[13] = {
-      no: 14,
-      name: "tab_gradient_colors_field",
+    items[13] = obj;
+    items[14] = { no: 15, name: "shown_when_checkbox_field", kind: "scalar", T: 8 };
+    items[15] = {
+      no: 16,
+      name: "shown_when_field",
       kind: "message",
       T() {
-        return tab_gradient_colors.TabGradientColors;
+        return require("tab_gradient_colors").TabGradientColors;
       }
     };
     const tmp2 = new tmp("discord_protos.premium_marketing.v1.AdminEditorTestComponent", items, T);
     return tmp2;
   }
   create(partialSettings) {
-    const obj = { deprecatedField: "", plainTextField: "", checkboxField: false, assetField: "", selectField: 0, multiSelectField: [], listField: [] };
+    const obj = { deprecatedField: "", plainTextField: "", checkboxField: false, assetField: "", selectField: 0, multiSelectField: [], listField: [], shownWhenCheckboxField: false };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1197;
+      const tmpResult = _mod1196;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -148,42 +160,42 @@ class AdminEditorTestComponent$Type extends MessageType {
     let length;
     let length2;
     if ("" !== deprecatedField.deprecatedField) {
-      const tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
+      const tagResult = tag.tag(1, _mod1196.WireType.LengthDelimited);
       tagResult.string(deprecatedField.deprecatedField);
     }
     if (deprecatedField.localizedTextField) {
       const LocalizedString = localized_string.LocalizedString;
       internalBinaryWrite = LocalizedString.internalBinaryWrite;
       const localizedTextField = deprecatedField.localizedTextField;
-      const tagResult1 = tag.tag(2, _mod1197.WireType.LengthDelimited);
+      const tagResult1 = tag.tag(2, _mod1196.WireType.LengthDelimited);
       const internalBinaryWriteResult = internalBinaryWrite(localizedTextField, tagResult1.fork(), writeUnknownFields);
       const joined = internalBinaryWriteResult.join();
     }
     if ("" !== deprecatedField.plainTextField) {
-      const tagResult2 = tag.tag(3, _mod1197.WireType.LengthDelimited);
+      const tagResult2 = tag.tag(3, _mod1196.WireType.LengthDelimited);
       tagResult2.string(deprecatedField.plainTextField);
     }
     if (deprecatedField.textareaField) {
       const LocalizedString2 = localized_string.LocalizedString;
       internalBinaryWrite2 = LocalizedString2.internalBinaryWrite;
       const textareaField = deprecatedField.textareaField;
-      const tagResult3 = tag.tag(4, _mod1197.WireType.LengthDelimited);
+      const tagResult3 = tag.tag(4, _mod1196.WireType.LengthDelimited);
       const internalBinaryWrite2Result = internalBinaryWrite2(textareaField, tagResult3.fork(), writeUnknownFields);
       const joined1 = internalBinaryWrite2Result.join();
     }
     if (false !== deprecatedField.checkboxField) {
-      const tagResult4 = tag.tag(5, _mod1197.WireType.Varint);
+      const tagResult4 = tag.tag(5, _mod1196.WireType.Varint);
       tagResult4.bool(deprecatedField.checkboxField);
     }
     if ("" !== deprecatedField.assetField) {
-      const tagResult5 = tag.tag(6, _mod1197.WireType.LengthDelimited);
+      const tagResult5 = tag.tag(6, _mod1196.WireType.LengthDelimited);
       tagResult5.string(deprecatedField.assetField);
     }
     if (deprecatedField.themedAssetField) {
       const ThemeAwareAsset = theme_aware_asset.ThemeAwareAsset;
       internalBinaryWrite3 = ThemeAwareAsset.internalBinaryWrite;
       const themedAssetField = deprecatedField.themedAssetField;
-      const tagResult6 = tag.tag(7, _mod1197.WireType.LengthDelimited);
+      const tagResult6 = tag.tag(7, _mod1196.WireType.LengthDelimited);
       const internalBinaryWrite3Result = internalBinaryWrite3(themedAssetField, tagResult6.fork(), writeUnknownFields);
       const joined2 = internalBinaryWrite3Result.join();
     }
@@ -191,7 +203,7 @@ class AdminEditorTestComponent$Type extends MessageType {
       const HelpArticle = help_article.HelpArticle;
       internalBinaryWrite4 = HelpArticle.internalBinaryWrite;
       const helpArticleField = deprecatedField.helpArticleField;
-      const tagResult7 = tag.tag(8, _mod1197.WireType.LengthDelimited);
+      const tagResult7 = tag.tag(8, _mod1196.WireType.LengthDelimited);
       const internalBinaryWrite4Result = internalBinaryWrite4(helpArticleField, tagResult7.fork(), writeUnknownFields);
       const joined3 = internalBinaryWrite4Result.join();
     }
@@ -199,7 +211,7 @@ class AdminEditorTestComponent$Type extends MessageType {
       const CTAButton = cta_button.CTAButton;
       internalBinaryWrite5 = CTAButton.internalBinaryWrite;
       const ctaField = deprecatedField.ctaField;
-      const tagResult8 = tag.tag(9, _mod1197.WireType.LengthDelimited);
+      const tagResult8 = tag.tag(9, _mod1196.WireType.LengthDelimited);
       const internalBinaryWrite5Result = internalBinaryWrite5(ctaField, tagResult8.fork(), writeUnknownFields);
       const joined4 = internalBinaryWrite5Result.join();
     }
@@ -207,16 +219,16 @@ class AdminEditorTestComponent$Type extends MessageType {
       const Gradient = gradient.Gradient;
       internalBinaryWrite6 = Gradient.internalBinaryWrite;
       const gradientField = deprecatedField.gradientField;
-      const tagResult9 = tag.tag(10, _mod1197.WireType.LengthDelimited);
+      const tagResult9 = tag.tag(10, _mod1196.WireType.LengthDelimited);
       const internalBinaryWrite6Result = internalBinaryWrite6(gradientField, tagResult9.fork(), writeUnknownFields);
       const joined5 = internalBinaryWrite6Result.join();
     }
     if (0 !== deprecatedField.selectField) {
-      const tagResult10 = tag.tag(11, _mod1197.WireType.Varint);
+      const tagResult10 = tag.tag(11, _mod1196.WireType.Varint);
       tagResult10.int32(deprecatedField.selectField);
     }
     if (deprecatedField.multiSelectField.length) {
-      const tagResult11 = tag.tag(12, _mod1197.WireType.LengthDelimited);
+      const tagResult11 = tag.tag(12, _mod1196.WireType.LengthDelimited);
       tagResult11.fork();
       let num14 = 0;
       if (0 < deprecatedField.multiSelectField.length) {
@@ -233,7 +245,7 @@ class AdminEditorTestComponent$Type extends MessageType {
       do {
         internalBinaryWrite7 = internalBinaryWrite.internalBinaryWrite;
         let tmp40 = deprecatedField.listField[num15];
-        let tagResult12 = tag.tag(13, _mod1197.WireType.LengthDelimited);
+        let tagResult12 = tag.tag(13, _mod1196.WireType.LengthDelimited);
         let internalBinaryWrite7Result = internalBinaryWrite7(tmp40, tagResult12.fork(), writeUnknownFields);
         let joined7 = internalBinaryWrite7Result.join();
         num15 = num15 + 1;
@@ -244,14 +256,26 @@ class AdminEditorTestComponent$Type extends MessageType {
       const TabGradientColors = tab_gradient_colors.TabGradientColors;
       internalBinaryWrite8 = TabGradientColors.internalBinaryWrite;
       const tabGradientColorsField = deprecatedField.tabGradientColorsField;
-      const tagResult13 = tag.tag(14, _mod1197.WireType.LengthDelimited);
+      const tagResult13 = tag.tag(14, _mod1196.WireType.LengthDelimited);
       const internalBinaryWrite8Result = internalBinaryWrite8(tabGradientColorsField, tagResult13.fork(), writeUnknownFields);
       const joined8 = internalBinaryWrite8Result.join();
+    }
+    if (false !== deprecatedField.shownWhenCheckboxField) {
+      const tagResult14 = tag.tag(15, _mod1196.WireType.Varint);
+      tagResult14.bool(deprecatedField.shownWhenCheckboxField);
+    }
+    if (deprecatedField.shownWhenField) {
+      const TabGradientColors2 = tab_gradient_colors.TabGradientColors;
+      internalBinaryWrite9 = TabGradientColors2.internalBinaryWrite;
+      const shownWhenField = deprecatedField.shownWhenField;
+      const tagResult15 = tag.tag(16, _mod1196.WireType.LengthDelimited);
+      const internalBinaryWrite9Result = internalBinaryWrite9(shownWhenField, tagResult15.fork(), writeUnknownFields);
+      const joined9 = internalBinaryWrite9Result.join();
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+        onWrite = _mod1196.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, deprecatedField, tag);
@@ -261,7 +285,7 @@ class AdminEditorTestComponent$Type extends MessageType {
 }
 const prototype = AdminEditorTestComponent$Type.prototype;
 const adminEditorTestComponentType = new AdminEditorTestComponent$Type();
-const MessageType2 = _mod1197.MessageType;
+const MessageType2 = _mod1196.MessageType;
 class AdminEditorTestListItem$Type extends MessageType2 {
   constructor() {
     const items = [, , ];
@@ -276,9 +300,9 @@ class AdminEditorTestListItem$Type extends MessageType2 {
     const obj = { text: "" };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1197;
+      const tmpResult = _mod1196;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -321,7 +345,7 @@ class AdminEditorTestListItem$Type extends MessageType2 {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1197.UnknownFieldHandler.onRead;
+                onRead = _mod1196.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -336,7 +360,7 @@ class AdminEditorTestListItem$Type extends MessageType2 {
       const LocalizedString = localized_string.LocalizedString;
       internalBinaryWrite = LocalizedString.internalBinaryWrite;
       textLocalized = textLocalized.textLocalized;
-      const tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
+      const tagResult = tag.tag(1, _mod1196.WireType.LengthDelimited);
       const internalBinaryWriteResult = internalBinaryWrite(textLocalized, tagResult.fork(), writeUnknownFields);
       const joined = internalBinaryWriteResult.join();
     }
@@ -344,18 +368,18 @@ class AdminEditorTestListItem$Type extends MessageType2 {
       const ThemeAwareAsset = theme_aware_asset.ThemeAwareAsset;
       internalBinaryWrite2 = ThemeAwareAsset.internalBinaryWrite;
       const asset = textLocalized.asset;
-      const tagResult1 = tag.tag(2, _mod1197.WireType.LengthDelimited);
+      const tagResult1 = tag.tag(2, _mod1196.WireType.LengthDelimited);
       const internalBinaryWrite2Result = internalBinaryWrite2(asset, tagResult1.fork(), writeUnknownFields);
       const joined1 = internalBinaryWrite2Result.join();
     }
     if ("" !== textLocalized.text) {
-      const tagResult2 = tag.tag(3, _mod1197.WireType.LengthDelimited);
+      const tagResult2 = tag.tag(3, _mod1196.WireType.LengthDelimited);
       tagResult2.string(textLocalized.text);
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+        onWrite = _mod1196.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, textLocalized, tag);

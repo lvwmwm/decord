@@ -1,171 +1,225 @@
 // Module ID: 1793
 // Function ID: 1794
-// Dependencies: [41, 42, 1758, 1665, 1761]
+// Dependencies: [41, 42, 93, 95, 98, 1657, 1785]
 
 // Module 1793
-import _createClassDefault from "_createClass" /* 42 */;
-import _mod1665 from "module_1665" /* 1665 */;
-import _mod1758 from "module_1758" /* 1758 */;
-import _mod1761 from "module_1761" /* 1761 */;
+import cssCallbacksRegistry2 from "cssCallbacksRegistry" /* 1657 */;
+import CSSCallbackStore from "CSSCallbackStore" /* 1785 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
-class CSSTransitionsManager {
-  constructor(shadowNodeWrapper, viewTag) {
-    _classCallCheck(this, CSSTransitionsManager);
-    this.prevProps = null;
-    this.propsWithTransitions = new Set();
-    this.hasTransition = false;
-    this.appliedEventMask = 0;
-    this.viewTag = viewTag;
-    this.shadowNodeWrapper = shadowNodeWrapper;
-    new Set();
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
 }
-const entry = {
-  key: "update",
-  value: function update(prevTransitionProperties, arg1) {
-    let num = arg2;
-    if (arg2 === undefined) {
-      num = 0;
-    }
-    let result = prevTransitionProperties;
-    if (result) {
-      const obj = _mod1758;
-      result = obj.normalizeCSSTransitionProperties(prevTransitionProperties);
-    }
-    let tmp4 = arg1;
-    let obj2 = arg1;
-    if (arg1 == null) {
-      obj2 = {};
-    }
+class AnimationCallbacks {
+  constructor(onMaskChange) {
+    let constructResult;
     const self = this;
-    const prevProps = this.prevProps;
-    if (tmp4 == null) {
-      tmp4 = null;
+    _classCallCheck(this, AnimationCallbacks);
+    const items = [Object.values(cssCallbacksRegistry2.ANIMATION_CALLBACK_PROP_BY_EVENT_TYPE)];
+    const obj = _getPrototypeOf(AnimationCallbacks);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
+    } else {
+      constructResult = obj.apply(self, items);
     }
-    self.prevProps = tmp4;
-    if (prevProps) {
-      if (result) {
-        const result1 = self.processTransitionConfig(prevProps, obj2, result);
-        const _Object = Object;
-        if (Object.keys(result1).length) {
-          self.appliedEventMask = num;
-          const obj4 = _mod1665;
-          obj4.runCSSTransition(self.shadowNodeWrapper, result1, num);
-          self.hasTransition = true;
-        } else {
-          const tmp8 = self.hasTransition && num !== self.appliedEventMask;
-          if (tmp8) {
-            self.appliedEventMask = num;
-            const obj3 = _mod1665;
-            obj3.runCSSTransition(self.shadowNodeWrapper, {}, num);
-          }
-        }
-        return false;
-      }
-    }
-    let flag = self.hasTransition;
-    if (flag) {
-      self.detach();
-      flag = true;
-    }
-    return flag;
+    const tmp3Result = tmp3(self, constructResult);
+    tmp3Result.onMaskChange = onMaskChange;
+    tmp3Result.eventMask = 0;
+    return tmp3Result;
+  }
+}
+_inherits(AnimationCallbacks, CSSCallbackStore.CSSCallbackStore);
+const entry = {
+  key: "getMask",
+  value: function getMask() {
+    return this.eventMask;
   }
 };
 let items = [
   entry,
   {
-    key: "unmountCleanup",
-    value: function unmountCleanup() {
-
+    key: "handleEvent",
+    value: function handleEvent(animationName) {
+      const obj = { animationName: animationName.name, elapsedTime: animationName.elapsedTime };
+      this.invoke(cssCallbacksRegistry2.ANIMATION_CALLBACK_PROP_BY_EVENT_TYPE[animationName.type], obj);
+    }
+  },
+  {
+    key: "onPresenceChanged",
+    value: function onPresenceChanged(arg0) {
+      const obj = cssCallbacksRegistry2;
+      this.eventMask = obj.getAnimationEventMaskFromProps(arg0);
+      this.onMaskChange();
+    }
+  }
+];
+let closure_6 = _createClass(AnimationCallbacks, items);
+class TransitionCallbacks {
+  constructor(onMaskChange) {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, TransitionCallbacks);
+    const items = [Object.values(cssCallbacksRegistry2.TRANSITION_CALLBACK_PROP_BY_EVENT_TYPE)];
+    const obj = _getPrototypeOf(TransitionCallbacks);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
+    } else {
+      constructResult = obj.apply(self, items);
+    }
+    const tmp3Result = tmp3(self, constructResult);
+    tmp3Result.onMaskChange = onMaskChange;
+    tmp3Result.eventMask = 0;
+    return tmp3Result;
+  }
+}
+_inherits(TransitionCallbacks, CSSCallbackStore.CSSCallbackStore);
+const entry1 = {
+  key: "getMask",
+  value: function getMask() {
+    return this.eventMask;
+  }
+};
+const items1 = [
+  entry1,
+  {
+    key: "handleEvent",
+    value: function handleEvent(name) {
+      const obj = { propertyName: name.name, elapsedTime: name.elapsedTime };
+      this.invoke(cssCallbacksRegistry2.TRANSITION_CALLBACK_PROP_BY_EVENT_TYPE[name.type], obj);
+    }
+  },
+  {
+    key: "onPresenceChanged",
+    value: function onPresenceChanged(arg0) {
+      const obj = cssCallbacksRegistry2;
+      this.eventMask = obj.getTransitionEventMaskFromProps(arg0);
+      this.onMaskChange();
+    }
+  }
+];
+let closure_7 = _createClass(TransitionCallbacks, items1);
+class CSSCallbacksManager {
+  constructor(viewTag) {
+    const self = this;
+    _classCallCheck(this, CSSCallbacksManager);
+    this.viewTag = viewTag;
+    function updateRegistration() {
+      return self.updateRegistration();
+    }
+    this.animationCallbacks = new closure_6(updateRegistration);
+    new closure_6(updateRegistration);
+    this.transitionCallbacks = new closure_7(updateRegistration);
+    new closure_7(updateRegistration);
+  }
+}
+const entry2 = {
+  key: "getAnimationEventMask",
+  value: function getAnimationEventMask() {
+    const animationCallbacks = this.animationCallbacks;
+    return animationCallbacks.getMask();
+  }
+};
+const items2 = [
+  entry2,
+  {
+    key: "getTransitionEventMask",
+    value: function getTransitionEventMask() {
+      const transitionCallbacks = this.transitionCallbacks;
+      return transitionCallbacks.getMask();
+    }
+  },
+  {
+    key: "syncAnimationCallbacks",
+    value: function syncAnimationCallbacks(arg0) {
+      let obj = arg0;
+      const sync = this.animationCallbacks.sync;
+      if (arg0 == null) {
+        obj = {};
+      }
+      sync(obj);
+    }
+  },
+  {
+    key: "syncTransitionCallbacks",
+    value: function syncTransitionCallbacks(arg0) {
+      let obj = arg0;
+      const sync = this.transitionCallbacks.sync;
+      if (arg0 == null) {
+        obj = {};
+      }
+      sync(obj);
     }
   },
   {
     key: "detach",
     value: function detach() {
-      const obj = _mod1665;
-      const result = obj.unregisterCSSTransition(this.viewTag);
-      const propsWithTransitions = this.propsWithTransitions;
-      propsWithTransitions.clear();
-      this.hasTransition = false;
-      this.appliedEventMask = 0;
+      const animationCallbacks = this.animationCallbacks;
+      animationCallbacks.detach();
+      const transitionCallbacks = this.transitionCallbacks;
+      transitionCallbacks.detach();
     }
   },
   {
-    key: "processTransitionConfig",
-    value: function processTransitionConfig(prevProps, obj, specificProperties) {
+    key: "retire",
+    value: function retire() {
       const self = this;
-      let closure_1 = prevProps;
-      let closure_2 = obj;
-      let closure_3 = specificProperties;
-      obj = {};
-      specificProperties = specificProperties.specificProperties;
-      function isAllowedProperty(key10014) {
-        let hasItem = !specificProperties;
-        if (specificProperties) {
-          hasItem = obj.has(key10014);
-        }
-        return hasItem;
+      if (-1 !== this.viewTag) {
+        const cssCallbacksRegistry = cssCallbacksRegistry2.cssCallbacksRegistry;
+        cssCallbacksRegistry.retire(self.viewTag, self);
       }
-      function getPropertySettings(arg0) {
-
+    }
+  },
+  {
+    key: "handleCSSEvent",
+    value: function handleCSSEvent(nextResult) {
+      const self = this;
+      if (nextResult.type in cssCallbacksRegistry2.ANIMATION_CALLBACK_PROP_BY_EVENT_TYPE) {
+        const animationCallbacks = self.animationCallbacks;
+        animationCallbacks.handleEvent(nextResult);
+      } else if (nextResult.type in cssCallbacksRegistry2.TRANSITION_CALLBACK_PROP_BY_EVENT_TYPE) {
+        const transitionCallbacks = self.transitionCallbacks;
+        transitionCallbacks.handleEvent(nextResult);
       }
-      function triggerTransition(key10014) {
-        let items;
-        if (typeof getPropertySettings === "function") {
-          let all = closure_3.settings[key10014];
-          if (all == null) {
-            all = closure_3.settings.all;
-          }
-          obj = { value: items };
-          const merged = Object.assign(all);
-          items = [closure_1[key10014], closure_2[key10014]];
-          tmp[key10014] = obj;
-          const propsWithTransitions = self.propsWithTransitions;
-          propsWithTransitions.add(key10014);
+    }
+  },
+  {
+    key: "updateRegistration",
+    value: function updateRegistration() {
+      const self = this;
+      if (-1 !== this.viewTag) {
+        const animationEventMask = self.getAnimationEventMask();
+        const tmp2 = animationEventMask | self.getTransitionEventMask();
+        const cssCallbacksRegistry = cssCallbacksRegistry2.cssCallbacksRegistry;
+        if (tmp2) {
+          cssCallbacksRegistry.register(self.viewTag, self);
         } else {
-          throw new TypeError("Trying to call a non-function");
+          cssCallbacksRegistry.unregister(self.viewTag, self);
         }
       }
-      for (const key10014 in obj) {
-        let isAllowedPropertyResult = isAllowedProperty(key10014);
-        if (isAllowedPropertyResult) {
-          let tmp = require;
-          let obj2 = _mod1761;
-          isAllowedPropertyResult = !obj2.deepEqual(obj[key10014], prevProps[key10014]);
-        }
-        if (!isAllowedPropertyResult) {
-          continue;
-        } else {
-          let triggerTransitionResult = triggerTransition(key10014);
-          continue;
-        }
-        continue;
-      }
-      const iter = self.propsWithTransitions[Symbol.iterator]();
-      const nextResult = iter.next();
-      while (iter !== undefined) {
-        let tmp6 = nextResult;
-        if (!isAllowedProperty(nextResult)) {
-          obj[tmp6] = null;
-          let propsWithTransitions = self.propsWithTransitions;
-          let deleteResult = propsWithTransitions.delete(tmp6);
-        }
-        continue;
-      }
-      for (const key10041 in prevProps) {
-        let isAllowedPropertyResult1 = isAllowedProperty(key10041) && !(key10041 in obj);
-        if (!isAllowedPropertyResult1) {
-          continue;
-        } else {
-          let triggerTransitionResult1 = triggerTransition(key10041);
-          continue;
-        }
-        continue;
-      }
-      return obj;
     }
   }
 ];
 
-export default _createClassDefault(CSSTransitionsManager, items);
+export default _createClass(CSSCallbacksManager, items2);

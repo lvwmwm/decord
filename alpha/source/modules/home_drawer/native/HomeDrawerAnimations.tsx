@@ -1,24 +1,24 @@
-// Module ID: 17586
-// Function ID: 17587
+// Module ID: 17413
+// Function ID: 17414
 // Name: HomeDrawerAnimations
-// Dependencies: [1655, 2]
+// Dependencies: [1653, 2]
 
-// Module 17586 (HomeDrawerAnimations)
-import _mod1655 from "module_1655" /* 1655 */;
+// Module 17413 (HomeDrawerAnimations)
+import _mod1653 from "module_1653" /* 1653 */;
 import size from "module_2" /* 2 */;
 
 let Easing;
 let Easing3;
 let Easing4;
 let out;
-const obj = { duration: 200, easing: Easing.out(_mod1655.Easing.cubic) };
-Easing = _mod1655.Easing;
+const obj = { duration: 200, easing: Easing.out(_mod1653.Easing.cubic) };
+Easing = _mod1653.Easing;
 const obj2 = { duration: 100, easing: out(Easing3.poly(4)) };
-const Easing2 = _mod1655.Easing;
+const Easing2 = _mod1653.Easing;
 out = Easing2.out;
-Easing3 = _mod1655.Easing;
+Easing3 = _mod1653.Easing;
 const obj3 = { duration: 180, easing: Easing4.bezier(0, 0, 0.2, 1) };
-Easing4 = _mod1655.Easing;
+Easing4 = _mod1653.Easing;
 const result = size.fileFinishedImporting("modules/home_drawer/native/HomeDrawerAnimations.tsx");
 
 export const HOME_DRAWER_SETTLE_TIMING = obj;

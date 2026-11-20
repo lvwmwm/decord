@@ -1,10 +1,10 @@
-// Module ID: 4978
-// Function ID: 4979
+// Module ID: 4980
+// Function ID: 4981
 // Name: ScreenIndexFrozen
-// Dependencies: [19, 1655, 2]
+// Dependencies: [19, 1653, 2]
 // Exports: addFrozenScreenIndexesChangedListener, freezeScreenIndex, isScreenIndexFrozen, removeFrozenScreenIndexesChangedListener, useIsScreenIndexFrozenSharedValue
 
-// Module 4978 (ScreenIndexFrozen)
+// Module 4980 (ScreenIndexFrozen)
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -41,7 +41,7 @@ export function useIsScreenIndexFrozenSharedValue(arg0) {
   let closure_0;
   let sharedValue;
   _require = arg0;
-  const obj = require("module_1655");
+  const obj = require("module_1653");
   sharedValue = obj.useSharedValue(set.has(arg0));
   const items = [arg0, sharedValue];
   const effect = react.useEffect(() => {

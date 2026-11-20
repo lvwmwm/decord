@@ -1,7 +1,7 @@
 // Module ID: 9657
 // Function ID: 9658
 // Name: useInAppBrowserReturn
-// Dependencies: [19, 9651, 1360, 5503, 9649, 9654, 2]
+// Dependencies: [19, 9651, 1358, 5505, 9649, 9654, 2]
 // Exports: default
 
 // Module 9657 (useInAppBrowserReturn)

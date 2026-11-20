@@ -1,11 +1,11 @@
-// Module ID: 17728
-// Function ID: 17729
+// Module ID: 17555
+// Function ID: 17556
 // Name: GuildThemePreviewOverlay
-// Dependencies: [19, 21, 7746, 2]
+// Dependencies: [19, 21, 7745, 2]
 // Exports: default
 
-// Module 17728 (GuildThemePreviewOverlay)
-import inlineStyles from "inlineStyles" /* 7746 */;
+// Module 17555 (GuildThemePreviewOverlay)
+import inlineStyles from "inlineStyles" /* 7745 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

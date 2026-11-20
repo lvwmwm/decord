@@ -1,23 +1,23 @@
-// Module ID: 16962
-// Function ID: 16963
+// Module ID: 16786
+// Function ID: 16787
 // Name: AndroidMessageNotificationsSetting
-// Dependencies: [16943, 8593, 1380, 11875, 1113, 15573, 3051, 16949, 2]
+// Dependencies: [16767, 8592, 1378, 11817, 1112, 15537, 3053, 16773, 2]
 // Exports: useAndroidMessageNotificationsSettingValue, useHasAndroidMessageNotificationsSetting
 
-// Module 16962 (AndroidMessageNotificationsSetting)
-import intl2 from "intl" /* 1113 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
-import _modDef3051 from "module_3051" /* 3051 */;
-import SettingsConstants from "SettingsConstants" /* 8593 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 16949 */;
-import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 16943 */;
-import SettingBuilders_mod from "SettingBuilders" /* 11875 */;
+// Module 16786 (AndroidMessageNotificationsSetting)
+import intl2 from "intl" /* 1112 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
+import _modDef3053 from "module_3053" /* 3053 */;
+import SettingsConstants from "SettingsConstants" /* 8592 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 16773 */;
+import AndroidNotificationSettingsStore from "AndroidNotificationSettingsStore" /* 16767 */;
+import SettingBuilders_mod from "SettingBuilders" /* 11817 */;
 import size from "module_2" /* 2 */;
 
 let c3;
 let setAndroidMessageNotificationsEnabled;
 let tmp2;
-const notifications_NotificationSettingsUtils = tmp2(15573);
+const notifications_NotificationSettingsUtils = tmp2(15537);
 function useAndroidMessageNotificationsSettingValue() {
   let flag = _false();
   if (flag == null) {
@@ -57,11 +57,11 @@ const createToggle2 = SettingBuilders.createToggle;
 const obj3 = {
   useTitle() {
     const intl = intl2.intl;
-    return intl.string(_modDef3051.odJXYJ);
+    return intl.string(_modDef3053.odJXYJ);
   },
   useDescription() {
     const intl = intl2.intl;
-    return intl.string(_modDef3051["+jwUmI"]);
+    return intl.string(_modDef3053["+jwUmI"]);
   },
   parent: MobileNotifSettings.MobileNotifSettings.NOTIFICATIONS_REDESIGN,
   usePredicate() {

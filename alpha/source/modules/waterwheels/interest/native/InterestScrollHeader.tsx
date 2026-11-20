@@ -1,20 +1,20 @@
-// Module ID: 17887
-// Function ID: 17888
+// Module ID: 17714
+// Function ID: 17715
 // Name: InterestScrollHeader
-// Dependencies: [19, 17, 21, 4792, 1655, 1708, 575, 5383, 2]
+// Dependencies: [19, 17, 21, 4794, 1653, 1706, 575, 5385, 2]
 // Exports: InterestCompactTitle, interestHeaderElevation, useInterestScrollHeader
 
-// Module 17887 (InterestScrollHeader)
+// Module 17714 (InterestScrollHeader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import _mod1708 from "module_1708" /* 1708 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import _mod1706 from "module_1706" /* 1706 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
-const _modDef1655 = _mod1655;
+const _modDef1653 = _mod1653;
 let max, min, value;
 
 let tmp3;
@@ -42,12 +42,12 @@ export function useInterestScrollHeader(onScroll) {
   let tmp4;
   let tmp5;
   let tmp6;
-  const obj = _mod1655;
+  const obj = _mod1653;
   const sharedValue = obj.useSharedValue(0);
-  const tmp2 = _mod1655;
+  const tmp2 = _mod1653;
   const items = [closure_6, sharedValue, onScroll, ];
   const useAnimatedScrollHandler = tmp2.useAnimatedScrollHandler;
-  items[3] = _mod1708.scheduleOnRN;
+  items[3] = _mod1706.scheduleOnRN;
   let c0;
   let c1;
   let c2;
@@ -82,7 +82,7 @@ export function InterestCompactTitle(collapseOffset) {
     num = 160;
   }
   const tmp = closure_5();
-  let obj = _mod1655;
+  let obj = _mod1653;
   const items = [closure_7, scrollY, num];
   let c0;
   let c1;
@@ -103,6 +103,6 @@ export function InterestCompactTitle(collapseOffset) {
   InterestScrollHeaderTsx3.__initData = tmp4;
   const animatedStyle = obj.useAnimatedStyle(InterestScrollHeaderTsx3);
   const items2 = [tmp.normal, animatedStyle];
-  View = _modDef1655.View;
+  View = _modDef1653.View;
   return <View style={tmp.title} collapsable={false}>{null}</View>;
 }

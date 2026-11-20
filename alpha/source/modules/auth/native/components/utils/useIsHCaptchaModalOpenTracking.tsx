@@ -1,14 +1,14 @@
-// Module ID: 17549
-// Function ID: 17550
+// Module ID: 17376
+// Function ID: 17377
 // Name: useIsHCaptchaModalOpenTracking
-// Dependencies: [19, 17497, 17498, 17494, 4969, 4968, 2]
+// Dependencies: [19, 17324, 17325, 17321, 4971, 4970, 2]
 // Exports: useIsHCaptchaModalOpenTracking
 
-// Module 17549 (useIsHCaptchaModalOpenTracking)
-import RootNavigationRef from "RootNavigationRef" /* 4969 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 17497 */;
+// Module 17376 (useIsHCaptchaModalOpenTracking)
+import RootNavigationRef from "RootNavigationRef" /* 4971 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 17324 */;
 import react from "react" /* 19 */;
-import RegistrationConstants from "RegistrationConstants" /* 17498 */;
+import RegistrationConstants from "RegistrationConstants" /* 17325 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -20,7 +20,7 @@ const result = size.fileFinishedImporting("modules/auth/native/components/utils/
 export function useIsHCaptchaModalOpenTracking() {
   let constants2;
   let context;
-  context = react.useContext(context(17494).TrackRegistrationContext);
+  context = react.useContext(context(17321).TrackRegistrationContext);
   const items = [context];
   const layoutEffect = react.useLayoutEffect(() => {
     let obj = RootNavigationRef;

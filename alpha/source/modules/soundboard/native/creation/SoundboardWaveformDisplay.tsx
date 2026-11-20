@@ -1,17 +1,17 @@
-// Module ID: 19857
-// Function ID: 19858
+// Module ID: 19682
+// Function ID: 19683
 // Name: SoundboardWaveformDisplay
-// Dependencies: [19, 17, 12734, 21, 4792, 575, 206, 13030, 2]
+// Dependencies: [19, 17, 12704, 21, 4794, 575, 206, 13000, 2]
 // Exports: default
 
-// Module 19857 (SoundboardWaveformDisplay)
+// Module 19682 (SoundboardWaveformDisplay)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import VoiceMessageConstants from "VoiceMessageConstants" /* 12734 */;
-import downsampleWaveformDefault from "downsampleWaveform" /* 13030 */;
+import VoiceMessageConstants from "VoiceMessageConstants" /* 12704 */;
+import downsampleWaveformDefault from "downsampleWaveform" /* 13000 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

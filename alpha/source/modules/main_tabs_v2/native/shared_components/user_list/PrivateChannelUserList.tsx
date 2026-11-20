@@ -1,21 +1,21 @@
-// Module ID: 12968
-// Function ID: 12969
+// Module ID: 12938
+// Function ID: 12939
 // Name: PrivateChannelUserList
-// Dependencies: [32, 19, 17, 4641, 4734, 1388, 1072, 21, 7401, 504, 12, 1255, 11986, 11999, 11998, 5356, 575, 12969, 1113, 8832, 12970, 7948, 9536, 2]
+// Dependencies: [32, 19, 17, 4643, 4736, 1386, 1071, 21, 7400, 504, 12, 1254, 11928, 11941, 11940, 5358, 575, 12939, 1112, 8832, 12940, 7947, 9536, 2]
 
-// Module 12968 (PrivateChannelUserList)
+// Module 12938 (PrivateChannelUserList)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
-import intl2 from "intl" /* 1113 */;
-import GlobalUtils from "GlobalUtils" /* 1255 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7948 */;
-import openGroupDMNitroCapInfoActionSheetDefault from "openGroupDMNitroCapInfoActionSheet" /* 12970 */;
+import intl2 from "intl" /* 1112 */;
+import GlobalUtils from "GlobalUtils" /* 1254 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7947 */;
+import openGroupDMNitroCapInfoActionSheetDefault from "openGroupDMNitroCapInfoActionSheet" /* 12940 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import RelationshipStore from "RelationshipStore" /* 4734 */;
-import UserStore from "UserStore" /* 1388 */;
-import Constants from "Constants" /* 1072 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import RelationshipStore from "RelationshipStore" /* 4736 */;
+import UserStore from "UserStore" /* 1386 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 

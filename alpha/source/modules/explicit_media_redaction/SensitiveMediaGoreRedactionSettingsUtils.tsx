@@ -1,18 +1,18 @@
-// Module ID: 8114
-// Function ID: 8115
+// Module ID: 8113
+// Function ID: 8114
 // Name: SensitiveMediaGoreRedactionSettingsUtils
-// Dependencies: [19, 1388, 1072, 1196, 5454, 5462, 6290, 4617, 2]
+// Dependencies: [19, 1386, 1071, 1195, 5456, 5464, 6292, 4619, 2]
 // Exports: getGoreContentSettingOrDefault, resolveGoreSettingWithDefaultsForTeen, updateGoreContentSetting, useSensitiveContentFilterHelpArticle
 
-// Module 8114 (SensitiveMediaGoreRedactionSettingsUtils)
-import Constants from "Constants" /* 1072 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
-import UserSettings from "UserSettings" /* 4617 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5454 */;
-import SettingsDefaultFeature from "SettingsDefaultFeature" /* 5462 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6290 */;
+// Module 8113 (SensitiveMediaGoreRedactionSettingsUtils)
+import Constants from "Constants" /* 1071 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1195 */;
+import UserSettings from "UserSettings" /* 4619 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5456 */;
+import SettingsDefaultFeature from "SettingsDefaultFeature" /* 5464 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6292 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1388 */;
+import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 
 function resolveGoreSettingWithDefaults(isFriend) {
@@ -48,10 +48,10 @@ function resolveGoreSettingWithDefaults(isFriend) {
       }
       if (flag2) {
         if (!flag3) {
-          BLUR = tmp4(1196).ExplicitContentRedaction.BLOCK;
+          BLUR = tmp4(1195).ExplicitContentRedaction.BLOCK;
         }
       }
-      BLUR = tmp4(1196).ExplicitContentRedaction.BLUR;
+      BLUR = tmp4(1195).ExplicitContentRedaction.BLUR;
     }
     return BLUR;
   }
@@ -69,11 +69,11 @@ function resolveGoreSettingWithDefaults(isFriend) {
     if (isDm) {
       let BLUR2;
       if (flag) {
-        BLUR2 = tmp4(1196).ExplicitContentRedaction.BLUR;
+        BLUR2 = tmp4(1195).ExplicitContentRedaction.BLUR;
       }
       SHOW = BLUR2;
     }
-    const ExplicitContentRedaction2 = tmp4(1196).ExplicitContentRedaction;
+    const ExplicitContentRedaction2 = tmp4(1195).ExplicitContentRedaction;
     BLUR2 = isDm ? ExplicitContentRedaction2.BLOCK : ExplicitContentRedaction2.BLUR;
   } else {
     let flag4 = isDm;
@@ -86,10 +86,10 @@ function resolveGoreSettingWithDefaults(isFriend) {
     }
     if (flag4) {
       if (flag5) {
-        SHOW = tmp4(1196).ExplicitContentRedaction.SHOW;
+        SHOW = tmp4(1195).ExplicitContentRedaction.SHOW;
       }
     }
-    const ExplicitContentRedaction = tmp4(1196).ExplicitContentRedaction;
+    const ExplicitContentRedaction = tmp4(1195).ExplicitContentRedaction;
     SHOW = flag4 ? ExplicitContentRedaction.BLOCK : ExplicitContentRedaction.SHOW;
   }
   BLUR = SHOW;

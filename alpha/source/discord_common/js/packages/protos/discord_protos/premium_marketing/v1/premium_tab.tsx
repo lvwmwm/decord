@@ -1,10 +1,10 @@
 // Module ID: 9033
 // Function ID: 9034
 // Name: premium_tab
-// Dependencies: [32, 1197, 9030, 9034, 9035, 2]
+// Dependencies: [32, 1196, 9030, 9034, 9035, 2]
 
 // Module 9033 (premium_tab)
-import _mod1197 from "module_1197" /* 1197 */;
+import _mod1196 from "module_1196" /* 1196 */;
 import localized_string from "localized_string" /* 9030 */;
 import theme_aware_asset from "theme_aware_asset" /* 9034 */;
 import tab_gradient_colors from "tab_gradient_colors" /* 9035 */;
@@ -24,7 +24,7 @@ const T3 = function T() {
 const T4 = function T() {
   return require("tab_gradient_colors").TabGradientColors;
 };
-const MessageType = _mod1197.MessageType;
+const MessageType = _mod1196.MessageType;
 class PremiumTab$Type extends MessageType {
   constructor() {
     const items = [{ no: 1, name: "badge_label", kind: "scalar", T: 9 }, { no: 2, name: "acknowledged_badge_label", kind: "scalar", T: 9 }, { no: 3, name: "show_hover_gradient", kind: "scalar", T: 8 }, { no: 4, name: "deeplink_section", kind: "scalar", T: 9 }, { no: 5, name: "badge_label_localized", kind: "message", T: T2 }, { no: 6, name: "acknowledged_badge_label_localized", kind: "message", T: T3 }, , ];
@@ -43,9 +43,9 @@ class PremiumTab$Type extends MessageType {
     const obj = { badgeLabel: "", acknowledgedBadgeLabel: "", showHoverGradient: false, deeplinkSection: "" };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1197;
+      const tmpResult = _mod1196;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -100,7 +100,7 @@ class PremiumTab$Type extends MessageType {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1197.UnknownFieldHandler.onRead;
+                onRead = _mod1196.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -112,26 +112,26 @@ class PremiumTab$Type extends MessageType {
   }
   internalBinaryWrite(badgeLabel, tag, writeUnknownFields) {
     if ("" !== badgeLabel.badgeLabel) {
-      const tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
+      const tagResult = tag.tag(1, _mod1196.WireType.LengthDelimited);
       tagResult.string(badgeLabel.badgeLabel);
     }
     if ("" !== badgeLabel.acknowledgedBadgeLabel) {
-      const tagResult1 = tag.tag(2, _mod1197.WireType.LengthDelimited);
+      const tagResult1 = tag.tag(2, _mod1196.WireType.LengthDelimited);
       tagResult1.string(badgeLabel.acknowledgedBadgeLabel);
     }
     if (false !== badgeLabel.showHoverGradient) {
-      const tagResult2 = tag.tag(3, _mod1197.WireType.Varint);
+      const tagResult2 = tag.tag(3, _mod1196.WireType.Varint);
       tagResult2.bool(badgeLabel.showHoverGradient);
     }
     if ("" !== badgeLabel.deeplinkSection) {
-      const tagResult3 = tag.tag(4, _mod1197.WireType.LengthDelimited);
+      const tagResult3 = tag.tag(4, _mod1196.WireType.LengthDelimited);
       tagResult3.string(badgeLabel.deeplinkSection);
     }
     if (badgeLabel.badgeLabelLocalized) {
       const LocalizedString = localized_string.LocalizedString;
       internalBinaryWrite = LocalizedString.internalBinaryWrite;
       const badgeLabelLocalized = badgeLabel.badgeLabelLocalized;
-      const tagResult4 = tag.tag(5, _mod1197.WireType.LengthDelimited);
+      const tagResult4 = tag.tag(5, _mod1196.WireType.LengthDelimited);
       const internalBinaryWriteResult = internalBinaryWrite(badgeLabelLocalized, tagResult4.fork(), writeUnknownFields);
       const joined = internalBinaryWriteResult.join();
     }
@@ -139,7 +139,7 @@ class PremiumTab$Type extends MessageType {
       const LocalizedString2 = localized_string.LocalizedString;
       internalBinaryWrite2 = LocalizedString2.internalBinaryWrite;
       const acknowledgedBadgeLabelLocalized = badgeLabel.acknowledgedBadgeLabelLocalized;
-      const tagResult5 = tag.tag(6, _mod1197.WireType.LengthDelimited);
+      const tagResult5 = tag.tag(6, _mod1196.WireType.LengthDelimited);
       const internalBinaryWrite2Result = internalBinaryWrite2(acknowledgedBadgeLabelLocalized, tagResult5.fork(), writeUnknownFields);
       const joined1 = internalBinaryWrite2Result.join();
     }
@@ -147,7 +147,7 @@ class PremiumTab$Type extends MessageType {
       const ThemeAwareAsset = theme_aware_asset.ThemeAwareAsset;
       internalBinaryWrite3 = ThemeAwareAsset.internalBinaryWrite;
       const backgroundImage = badgeLabel.backgroundImage;
-      const tagResult6 = tag.tag(7, _mod1197.WireType.LengthDelimited);
+      const tagResult6 = tag.tag(7, _mod1196.WireType.LengthDelimited);
       const internalBinaryWrite3Result = internalBinaryWrite3(backgroundImage, tagResult6.fork(), writeUnknownFields);
       const joined2 = internalBinaryWrite3Result.join();
     }
@@ -155,14 +155,14 @@ class PremiumTab$Type extends MessageType {
       const TabGradientColors = tab_gradient_colors.TabGradientColors;
       internalBinaryWrite4 = TabGradientColors.internalBinaryWrite;
       const hoverGradientColors = badgeLabel.hoverGradientColors;
-      const tagResult7 = tag.tag(8, _mod1197.WireType.LengthDelimited);
+      const tagResult7 = tag.tag(8, _mod1196.WireType.LengthDelimited);
       const internalBinaryWrite4Result = internalBinaryWrite4(hoverGradientColors, tagResult7.fork(), writeUnknownFields);
       const joined3 = internalBinaryWrite4Result.join();
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+        onWrite = _mod1196.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, badgeLabel, tag);

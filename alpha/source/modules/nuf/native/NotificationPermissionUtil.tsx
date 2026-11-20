@@ -1,30 +1,30 @@
-// Module ID: 13191
-// Function ID: 13192
+// Module ID: 13161
+// Function ID: 13162
 // Name: NotificationPermissionUtil
-// Dependencies: [32, 5, 19, 17, 502, 13189, 13190, 1072, 6375, 7683, 1256, 1242, 10803, 13192, 13198, 13199, 504, 2]
+// Dependencies: [32, 5, 19, 17, 502, 13159, 13160, 1071, 6377, 7682, 1255, 1241, 10745, 13162, 13168, 13169, 504, 2]
 // Exports: enableProvisionalPushNotification, requestAndroidNotificationPermission, requestPushNotificationPermission, useCanSeePushNotificationNudge, useShouldShowPushNotificationNudgeByPromptType, useShowReactivationPrompt
 
-// Module 13191 (NotificationPermissionUtil)
+// Module 13161 (NotificationPermissionUtil)
 import get_initialized from "get initialized" /* 504 */;
-import Constants from "Constants" /* 1072 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 6375 */;
-import react_nativeDefault from "react-native" /* 7683 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13190 */;
-import PushNotificationActionCreators from "PushNotificationActionCreators" /* 13192 */;
-import RegionalTeenUtils from "RegionalTeenUtils" /* 13199 */;
+import Constants from "Constants" /* 1071 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 6377 */;
+import react_nativeDefault from "react-native" /* 7682 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13160 */;
+import PushNotificationActionCreators from "PushNotificationActionCreators" /* 13162 */;
+import RegionalTeenUtils from "RegionalTeenUtils" /* 13169 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13189 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13159 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2, c4, closure_3, closure_4;
 
 let metroImportDefault;
 let metroRequire;
-const f105098 = () => state.authorizationStatus;
+const f103424 = () => state.authorizationStatus;
 let obj = function _requestAndroidNotificationPermission() {
   let Version;
   let token;
@@ -39,7 +39,7 @@ let obj = function _requestAndroidNotificationPermission() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -90,7 +90,7 @@ let obj = function _requestAndroidNotificationPermission() {
           if (_Number !== token2) {
             c3 = 0;
             c5 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           } else {
             _Number = closure_1;
             if (closure_1 !== closure_129_12.AUTHORIZED) {
@@ -108,7 +108,7 @@ let obj = function _requestAndroidNotificationPermission() {
           return obj8;
         } else {
           c5 = 3;
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp25) {
         closure_2 = tmp25;
@@ -141,7 +141,7 @@ obj = function _requestPushNotificationPermission() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -207,7 +207,7 @@ obj = function _requestPushNotificationPermission() {
               return obj;
             }
             c6 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp35) {
           c6 = 3;
@@ -233,7 +233,7 @@ obj = function _enableProvisionalPushNotification() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -288,7 +288,7 @@ obj = function _enableProvisionalPushNotification() {
             });
           }
           c3 = 3;
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp12) {
         c3 = 3;
@@ -332,7 +332,7 @@ export function useShowReactivationPrompt() {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -364,7 +364,7 @@ export function useShowReactivationPrompt() {
                 tmp3(true);
               }
               c2 = 3;
-              return { value: "HermesInternal", done: "+60" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp11) {
             c2 = 3;
@@ -388,7 +388,7 @@ export function useCanSeePushNotificationNudge() {
   const isTeenInStrictCountry = obj.useIsTeenInStrictCountry();
   const items = [PushNotificationPermissionStore];
   const obj2 = get_initialized;
-  const stateFromStores = obj2.useStateFromStores(items, f105098);
+  const stateFromStores = obj2.useStateFromStores(items, f103424);
   [tmp4, require] = react.useState(false);
   _slicedToArray(react.useState(false), 2);
   const effect = react.useEffect(() => {
@@ -423,7 +423,7 @@ export function useShouldShowPushNotificationNudgeByPromptType(CHANNEL_BANNER) {
   const isTeenInStrictCountry = obj.useIsTeenInStrictCountry();
   const items = [PushNotificationPermissionStore];
   const obj2 = get_initialized;
-  const stateFromStores = obj2.useStateFromStores(items, f105098);
+  const stateFromStores = obj2.useStateFromStores(items, f103424);
   [tmp7, require] = react.useState(false);
   _slicedToArray(react.useState(false), 2);
   const effect = react.useEffect(() => {

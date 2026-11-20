@@ -1,30 +1,27 @@
 // Module ID: 15443
 // Function ID: 15444
-// Dependencies: [15354, 15444]
-// Exports: getSupportedUnits
+// Dependencies: [15441, 15415]
 
 // Module 15443
-const require = globalThis.__r;
-let _require;
+import _mod15415 from "module_15415" /* 15415 */;
+import _mod15441 from "module_15441" /* 15441 */;
 
 
-export function getSupportedUnits(locale) {
-  _require = locale;
-  const units = require("module_15444").units;
-  return units.filter((item) => {
-    function isSupported(unit, arg1) {
-      let str = arg1;
-      if (undefined === arg1) {
-        str = "en";
-      }
-      try {
-        const obj = { style: "unit", unit };
-        const memoizedNumberFormat = locale(closure_1_1[0]).createMemoizedNumberFormat(str, obj);
-        return memoizedNumberFormat.resolvedOptions().unit === unit;
-      } catch (err) {
-        return false;
-      }
+export default function(arg0, arg1) {
+  let tmp3;
+  if (arguments.length < 2) {
+    const tmp7 = _mod15415[arg0];
+    let tmp8;
+    if (_mod15441(tmp7)) {
+      tmp8 = tmp7;
     }
-    return isSupported(item, locale);
-  });
-}
+    tmp3 = tmp8;
+  } else {
+    tmp3 = _mod15415[arg0];
+    const tmp = require;
+    if (tmp3) {
+      tmp3 = tmp(15415)[arg0][arg1];
+    }
+  }
+  return tmp3;
+};

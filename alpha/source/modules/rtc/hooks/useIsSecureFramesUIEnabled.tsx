@@ -1,13 +1,13 @@
 // Module ID: 9615
 // Function ID: 9616
 // Name: useIsSecureFramesUIEnabled
-// Dependencies: [4641, 5533, 9588, 504, 2]
+// Dependencies: [4643, 5535, 9588, 504, 2]
 // Exports: useIsSecureFramesUIEnabled
 
 // Module 9615 (useIsSecureFramesUIEnabled)
 import SecureFramesConstants from "SecureFramesConstants" /* 9588 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5533 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5535 */;
 import size from "module_2" /* 2 */;
 
 let closure_4 = SecureFramesConstants.END_TO_END_ENCRYPTION_DISABLED;

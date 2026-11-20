@@ -1,19 +1,19 @@
-// Module ID: 17990
-// Function ID: 17991
+// Module ID: 17817
+// Function ID: 17818
 // Name: usePrivateProfileCoachmarkProps
-// Dependencies: [19, 17, 1072, 4638, 21, 4792, 17991, 1196, 1113, 10069, 4617, 4625, 8075, 2]
+// Dependencies: [19, 17, 1071, 4640, 21, 4794, 17818, 1195, 1112, 10072, 4619, 4627, 8074, 2]
 // Exports: usePrivateProfileCoachmarkProps
 
-// Module 17990 (usePrivateProfileCoachmarkProps)
+// Module 17817 (usePrivateProfileCoachmarkProps)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1072 */;
-import intl4 from "intl" /* 1113 */;
-import dismissible_content from "dismissible_content" /* 4625 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4638 */;
-import PrivateProfileAbstractUI from "PrivateProfileAbstractUI" /* 17991 */;
+import Constants from "Constants" /* 1071 */;
+import intl4 from "intl" /* 1112 */;
+import dismissible_content from "dismissible_content" /* 4627 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4640 */;
+import PrivateProfileAbstractUI from "PrivateProfileAbstractUI" /* 17818 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 function PrivateProfileCoachmarkImage() {

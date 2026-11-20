@@ -1,19 +1,19 @@
-// Module ID: 13683
-// Function ID: 13684
+// Module ID: 13654
+// Function ID: 13655
 // Name: YouScreenNavIcon
-// Dependencies: [19, 17, 21, 13684, 575, 8903, 4792, 13685, 1113, 7481, 4959, 5383, 2]
+// Dependencies: [19, 17, 21, 13655, 575, 8903, 4794, 13656, 1112, 7480, 4961, 5385, 2]
 
-// Module 13683 (YouScreenNavIcon)
+// Module 13654 (YouScreenNavIcon)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1113 */;
-import mergeProps from "mergeProps" /* 4959 */;
+import intl2 from "intl" /* 1112 */;
+import mergeProps from "mergeProps" /* 4961 */;
 import ClipView from "ClipView" /* 8903 */;
-import getIconSize from "getIconSize" /* 13684 */;
-import YouScreenNavIconMeasurer from "YouScreenNavIconMeasurer" /* 13685 */;
+import getIconSize from "getIconSize" /* 13655 */;
+import YouScreenNavIconMeasurer from "YouScreenNavIconMeasurer" /* 13656 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 const ClipViewDefault = ClipView;
@@ -80,15 +80,15 @@ const memoResult = react.memo(function YouScreenNavIcon(arg0) {
   let tmp13;
   if (showRedDot) {
     const obj6 = { text: intl.string(intl2.t.y2b7CA) };
-    intl = tmp(1113).intl;
+    intl = tmp(1112).intl;
     tmp13 = obj6;
   }
   const obj7 = { ref: tmpResult.mergeRefs(ref, containerRef), style: tmp4.container, accessibilityRole: "button", accessibilityLabel, accessibilityValue: tmp13, onPress, hitSlop: nativeDefault.space.PX_8, testID, children: items2 };
-  const PressableScale = tmp(7481).PressableScale;
+  const PressableScale = tmp(7480).PressableScale;
   items2 = [tmp7, ];
   const obj8 = { style: tmp4.label, variant: "body-xs/semibold", color: "text-default", maxFontSizeMultiplier: 2, lineClamp: 1, children: label };
   tmpResult = mergeProps;
-  const Text = tmp(5383).Text;
+  const Text = tmp(5385).Text;
   const tmp14 = hasOwnProperty;
   const tmp15 = React3;
   if (label == null) {

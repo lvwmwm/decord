@@ -1,13 +1,13 @@
 // Module ID: 8850
 // Function ID: 8851
 // Name: CollectiblesTargetedOfferPromotionUtils
-// Dependencies: [8808, 6735, 7968, 7967, 2]
+// Dependencies: [8808, 6735, 7967, 7966, 2]
 // Exports: getTargetedOfferPromotionFlavorModalGradient, getTargetedOfferPromotionFlavorStyleOTPCheckout, getTargetedOfferPromotionForCollectiblesProduct, hasFiatExclusiveTargetedOfferPromotion, isCollectiblesTargetedOfferPromotion
 
 // Module 8850 (CollectiblesTargetedOfferPromotionUtils)
 import StorefrontTypes from "StorefrontTypes" /* 6735 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7967 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7968 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7966 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7967 */;
 import StorefrontCollectiblesTypes from "StorefrontCollectiblesTypes" /* 8808 */;
 import size from "module_2" /* 2 */;
 

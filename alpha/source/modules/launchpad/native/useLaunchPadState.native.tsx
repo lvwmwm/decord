@@ -1,17 +1,17 @@
-// Module ID: 19198
-// Function ID: 19199
+// Module ID: 19017
+// Function ID: 19018
 // Name: useLaunchPadState
-// Dependencies: [19, 11871, 19172, 1655, 12811, 11709, 11692, 1708, 2]
+// Dependencies: [19, 11813, 18991, 1653, 12781, 11651, 11634, 1706, 2]
 // Exports: default
 
-// Module 19198 (useLaunchPadState)
-import _mod1708 from "module_1708" /* 1708 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11692 */;
-import useSafeAreaInsetsSharedValue from "useSafeAreaInsetsSharedValue" /* 11709 */;
-import useWindowDimensionsSharedValue from "useWindowDimensionsSharedValue" /* 12811 */;
+// Module 19017 (useLaunchPadState)
+import _mod1706 from "module_1706" /* 1706 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11634 */;
+import useSafeAreaInsetsSharedValue from "useSafeAreaInsetsSharedValue" /* 11651 */;
+import useWindowDimensionsSharedValue from "useWindowDimensionsSharedValue" /* 12781 */;
 import react from "react" /* 19 */;
-import LaunchPadConstants from "LaunchPadConstants" /* 11871 */;
-import LaunchPadPullTabCache_mod from "LaunchPadPullTabCache" /* 19172 */;
+import LaunchPadConstants from "LaunchPadConstants" /* 11813 */;
+import LaunchPadPullTabCache_mod from "LaunchPadPullTabCache" /* 18991 */;
 import size from "module_2" /* 2 */;
 
 let LaunchPadPullTabCache;
@@ -102,7 +102,7 @@ export default function useLaunchPadState() {
       items4[4] = useSafeAreaInsetsSharedValue.getSafeAreaInsetsWorklet;
       items4[5] = hasOwnProperty;
       items4[6] = updateSharedValueIfChangedDefault;
-      items4[7] = _mod1708.scheduleOnRN;
+      items4[7] = _mod1706.scheduleOnRN;
       items4[8] = LaunchPadPullTabCache.persistLaunchPadPullTabPosition;
       let c2;
       let c3;

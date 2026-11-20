@@ -1,33 +1,33 @@
-// Module ID: 11263
-// Function ID: 11264
+// Module ID: 11205
+// Function ID: 11206
 // Name: CustomEmojiContent
-// Dependencies: [19, 17, 7204, 4747, 4825, 1388, 1072, 21, 4792, 575, 2174, 1256, 8979, 5006, 11259, 504, 7401, 4746, 4741, 4716, 8947, 5454, 4617, 11264, 8075, 11260, 10332, 5474, 1113, 9886, 9888, 11265, 2121, 6903, 1187, 5390, 5479, 5383, 11266, 7590, 11267, 11268, 2]
+// Dependencies: [19, 17, 7203, 4749, 4827, 1386, 1071, 21, 4794, 575, 2172, 1255, 8979, 5008, 11201, 504, 7400, 4748, 4743, 4718, 8947, 5456, 4619, 11206, 8074, 11202, 10274, 5476, 1112, 9889, 9891, 11207, 2119, 6902, 1186, 5392, 5481, 5385, 11208, 7589, 11209, 11210, 2]
 // Exports: default
 
-// Module 11263 (CustomEmojiContent)
+// Module 11205 (CustomEmojiContent)
 import nativeDefault from "native" /* 575 */;
-import intl6 from "intl" /* 1113 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import asyncRequire from "asyncRequire" /* 2121 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2174 */;
-import RoleSubscriptionEmojiUtilsAll from "RoleSubscriptionEmojiUtils" /* 4746 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5474 */;
-import ExpressionSourceRecord from "ExpressionSourceRecord" /* 7204 */;
-import openUserSettings from "openUserSettings" /* 8075 */;
+import intl6 from "intl" /* 1112 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import asyncRequire from "asyncRequire" /* 2119 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2172 */;
+import RoleSubscriptionEmojiUtilsAll from "RoleSubscriptionEmojiUtils" /* 4748 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5008 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5476 */;
+import ExpressionSourceRecord from "ExpressionSourceRecord" /* 7203 */;
+import openUserSettings from "openUserSettings" /* 8074 */;
 import openPremiumModalDefault from "openPremiumModal" /* 8979 */;
-import StarOutlineIcon2 from "StarOutlineIcon" /* 9886 */;
-import StarIcon2 from "StarIcon" /* 9888 */;
-import EmojiActionCreators from "EmojiActionCreators" /* 10332 */;
-import guild_GuildUtils from "guild/GuildUtils" /* 11266 */;
+import StarOutlineIcon2 from "StarOutlineIcon" /* 9889 */;
+import StarIcon2 from "StarIcon" /* 9891 */;
+import EmojiActionCreators from "EmojiActionCreators" /* 10274 */;
+import guild_GuildUtils from "guild/GuildUtils" /* 11208 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SubscriptionRoleStore from "SubscriptionRoleStore" /* 4747 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4825 */;
-import UserStore from "UserStore" /* 1388 */;
-import Constants from "Constants" /* 1072 */;
+import SubscriptionRoleStore from "SubscriptionRoleStore" /* 4749 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4827 */;
+import UserStore from "UserStore" /* 1386 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_12;
@@ -267,14 +267,14 @@ export default function CustomEmojiContent(emojiNode) {
       const obj5 = { text: intl2.string(intl6.t.in1rga), icon: StarOutlineIcon2.StarOutlineIcon };
       const open2 = ToastActionCreatorsDefault.open;
       ToastActionCreatorsDefault;
-      intl2 = tmp5(1113).intl;
+      intl2 = tmp5(1112).intl;
       open2("EMOJI_UNFAVORITED", obj5);
     } else {
       obj4.favoriteEmoji(customEmojiFromJoinedGuild);
       obj6 = { text: intl.string(intl6.t.mE2e8A), icon: StarIcon2.StarIcon, iconColor: nativeDefault.colors.ICON_FEEDBACK_WARNING };
       const open = ToastActionCreatorsDefault.open;
       ToastActionCreatorsDefault;
-      intl = tmp5(1113).intl;
+      intl = tmp5(1112).intl;
       open("EMOJI_FAVORITED", obj6);
     }
   }
@@ -324,7 +324,7 @@ export default function CustomEmojiContent(emojiNode) {
         handleOpenEmojiOptionsMenu = function handleOpenEmojiOptionsMenu() {
           const obj = ActionSheetActionCreatorsDefault;
           const obj2 = { emojiSrc: emojiNode.src };
-          obj.openLazy(asyncRequire(11265, dependencyMap.paths), "EmojiOptionsActionSheet", obj2, "stack");
+          obj.openLazy(asyncRequire(11207, dependencyMap.paths), "EmojiOptionsActionSheet", obj2, "stack");
         };
         intl5 = tmp2(tmp3[28]).intl;
         obj23 = { color: expressionSourceGuild(tmp3[9]).colors.INTERACTIVE_TEXT_DEFAULT };

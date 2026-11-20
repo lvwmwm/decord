@@ -1,20 +1,20 @@
-// Module ID: 13487
-// Function ID: 13488
+// Module ID: 13457
+// Function ID: 13458
 // Name: HubProgressHeader
-// Dependencies: [19, 17, 13103, 13074, 21, 4792, 575, 13484, 1196, 1113, 7590, 5006, 13488, 2121, 13616, 2]
+// Dependencies: [19, 17, 13073, 13044, 21, 4794, 575, 13454, 1195, 1112, 7589, 5008, 13458, 2119, 13586, 2]
 // Exports: default
 
-// Module 13487 (HubProgressHeader)
+// Module 13457 (HubProgressHeader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
-import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
-import directory_channels_GuildDirectoryConstants from "directory_channels/GuildDirectoryConstants" /* 13074 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1195 */;
+import asyncRequire from "asyncRequire" /* 2119 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5008 */;
+import directory_channels_GuildDirectoryConstants from "directory_channels/GuildDirectoryConstants" /* 13044 */;
 import react from "react" /* 19 */;
-import HubProgressBarConstants from "HubProgressBarConstants" /* 13103 */;
-import createStyles from "createStyles" /* 4792 */;
+import HubProgressBarConstants from "HubProgressBarConstants" /* 13073 */;
+import createStyles from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;
@@ -76,7 +76,7 @@ export default function HubProgressHeader(guild) {
           if (!tmp) {
             const obj2 = { guild, analyticsSource: "Directory Channel Header" };
             const obj = ActionSheetActionCreatorsDefault;
-            obj.openLazy(asyncRequire(13488, dependencyMap.paths), React3, obj2);
+            obj.openLazy(asyncRequire(13458, dependencyMap.paths), React3, obj2);
           }
         },
       iconSource: flag(nextHubProgressStep[14]),

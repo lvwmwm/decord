@@ -1,18 +1,18 @@
-// Module ID: 17395
-// Function ID: 17396
+// Module ID: 17222
+// Function ID: 17223
 // Name: SettingsSecureFramesVerificationsScreen
-// Dependencies: [19, 17, 1388, 21, 4792, 9587, 6926, 1113, 6911, 7032, 5383, 7295, 1502, 504, 4848, 8442, 17391, 7371, 2]
+// Dependencies: [19, 17, 1386, 21, 4794, 9587, 6925, 1112, 6910, 7031, 5385, 7294, 1500, 504, 4850, 8441, 17218, 7370, 2]
 // Exports: default
 
-// Module 17395 (SettingsSecureFramesVerificationsScreen)
+// Module 17222 (SettingsSecureFramesVerificationsScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import intl3 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5383 */;
+import intl3 from "intl" /* 1112 */;
+import Text_Text from "Text/Text" /* 5385 */;
 import SecureFramesUtils from "SecureFramesUtils" /* 9587 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1388 */;
-import createStyles from "createStyles" /* 4792 */;
+import UserStore from "UserStore" /* 1386 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, navigation;
@@ -34,10 +34,10 @@ function VerificationListItem(userId) {
     const obj = SecureFramesUtils;
     return obj.getSecureFramesUserVerifiedTimestamp(verification.timestamp);
   }, items1);
-  const TableRow = userId(6926).TableRow;
-  const intl = userId(1113).intl;
-  const PressableHighlight = userId(6911).PressableHighlight;
-  return <TableRow label={intl.formatToPlainString(userId(1113).t.N4qBBO, { index })} subLabel={memo} start={start} end={end} trailing={null} />;
+  const TableRow = userId(6925).TableRow;
+  const intl = userId(1112).intl;
+  const PressableHighlight = userId(6910).PressableHighlight;
+  return <TableRow label={intl.formatToPlainString(userId(1112).t.N4qBBO, { index })} subLabel={memo} start={start} end={end} trailing={null} />;
 }
 function SectionListItem(title) {
   title = title.title;
@@ -74,13 +74,13 @@ function ClearVerificationsListFooter(userId) {
     const obj = SecureFramesUtils;
     const result = obj.deleteUserPersistentVerifications(userId);
   }, items);
-  const TableRow = userId(6926).TableRow;
-  ({ variant: "body-md/semibold", color: "text-feedback-critical", children: intl.string(userId(1113).t["2xL5lu"]) });
-  const Text = userId(5383).Text;
-  intl = userId(1113).intl;
-  ({ variant: "body-xs/medium", color: "text-subtle", children: intl2.string(userId(1113).t.kgAfXN) });
-  const Text2 = userId(5383).Text;
-  intl2 = userId(1113).intl;
+  const TableRow = userId(6925).TableRow;
+  ({ variant: "body-md/semibold", color: "text-feedback-critical", children: intl.string(userId(1112).t["2xL5lu"]) });
+  const Text = userId(5385).Text;
+  intl = userId(1112).intl;
+  ({ variant: "body-xs/medium", color: "text-subtle", children: intl2.string(userId(1112).t.kgAfXN) });
+  const Text2 = userId(5385).Text;
+  intl2 = userId(1112).intl;
   return <TableRow label={null} subLabel={null} onPress={callback} start end />;
 }
 const View = react_native.View;
@@ -94,14 +94,14 @@ export default function SettingsSecureFramesVerificationsScreen() {
   let secureFramesUserVerifiedKeys;
   let userId;
   const tmp = closure_7();
-  let obj = userId(7295);
+  let obj = userId(7294);
   userId = obj.useSettingNavigationRoute().params.userId;
-  let obj2 = userId(1502);
+  let obj2 = userId(1500);
   navigation = obj2.useNavigation();
   let items = [UserStore];
   const obj3 = userId(504);
   const stateFromStores = obj3.useStateFromStores(items, () => UserStore.getUser(userId));
-  const obj4 = navigation(4848);
+  const obj4 = navigation(4850);
   dependencyMap = obj4.getFormattedName(stateFromStores, false);
   const layoutEffect = secureFramesUserVerifiedKeys.useLayoutEffect(() => {
     let intl;
@@ -117,7 +117,7 @@ export default function SettingsSecureFramesVerificationsScreen() {
     intl = intl3.intl;
     setOptions(obj);
   });
-  const obj5 = userId(17391);
+  const obj5 = userId(17218);
   secureFramesUserVerifiedKeys = obj5.useSecureFramesUserVerifiedKeys(userId);
   const items1 = [userId, secureFramesUserVerifiedKeys];
   const items2 = [navigation, secureFramesUserVerifiedKeys];
@@ -141,6 +141,6 @@ export default function SettingsSecureFramesVerificationsScreen() {
       navigation.pop();
     }
   }, items2);
-  const FlashList = userId(7371).FlashList;
+  const FlashList = userId(7370).FlashList;
   return <View style={tmp.list}>{null}</View>;
 };

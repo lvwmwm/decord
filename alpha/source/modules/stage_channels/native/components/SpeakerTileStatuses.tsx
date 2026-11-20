@@ -1,21 +1,21 @@
-// Module ID: 11010
-// Function ID: 11011
+// Module ID: 10952
+// Function ID: 10953
 // Name: SpeakerTileStatuses
-// Dependencies: [19, 17, 2133, 5440, 6415, 21, 4792, 575, 504, 9557, 10951, 10706, 10707, 1187, 11011, 11012, 7117, 2]
+// Dependencies: [19, 17, 2131, 5442, 6417, 21, 4794, 575, 504, 9557, 10893, 10648, 10649, 1186, 10953, 10954, 7116, 2]
 // Exports: BlockedStatus, IgnoredStatus
 
-// Module 11010 (SpeakerTileStatuses)
+// Module 10952 (SpeakerTileStatuses)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 1187 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7117 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11012 */;
+import native from "native" /* 1186 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7116 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 10954 */;
 import react from "react" /* 19 */;
-import MediaEngineStore from "MediaEngineStore" /* 2133 */;
-import VoiceStateStore from "VoiceStateStore" /* 5440 */;
-import StageChannelRoleStore from "StageChannelRoleStore" /* 6415 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import MediaEngineStore from "MediaEngineStore" /* 2131 */;
+import VoiceStateStore from "VoiceStateStore" /* 5442 */;
+import StageChannelRoleStore from "StageChannelRoleStore" /* 6417 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let obj2;
@@ -64,23 +64,23 @@ const memoResult = react.memo(function VoiceStatus(userId) {
     flag2 = false;
   }
   if (stateFromStores) {
-    tmp7 = channelId(10951);
+    tmp7 = channelId(10893);
     flag3 = true;
   } else if (flag2) {
-    tmp7 = channelId(10706);
+    tmp7 = channelId(10648);
     flag3 = false;
   } else {
     flag3 = false;
     if (flag) {
-      tmp7 = channelId(10707);
+      tmp7 = channelId(10649);
       flag3 = false;
     }
   }
   let tmp11 = null;
   if (null != tmp7) {
     const items4 = [tmp.voiceStatusWrapper, style];
-    ({ source: tmp7, size: userId(1187).Icon.Sizes.SMALL, color: channelId(575).unsafe_rawColors.BLACK, disableColor: flag3 });
-    const Icon = tmp2(1187).Icon;
+    ({ source: tmp7, size: userId(1186).Icon.Sizes.SMALL, color: channelId(575).unsafe_rawColors.BLACK, disableColor: flag3 });
+    const Icon = tmp2(1186).Icon;
     tmp11 = <View style={items4}>{null}</View>;
   }
   return tmp11;
@@ -95,13 +95,13 @@ const memoResult1 = react.memo(function ModeratorStatus(userId) {
   const tmp = closure_8();
   const obj = userId(504);
   if (obj.useStateFromStores(items, () => StageChannelRoleStore.isModerator(userId, channelId), items1)) {
-    tmp4 = channelId(11011);
+    tmp4 = channelId(10953);
   }
   let tmp6 = null;
   if (null != tmp4) {
     const items2 = [tmp.moderatorStatusWrapper, style];
-    ({ source: tmp4, size: userId(1187).Icon.Sizes.SMALL, color: channelId(575).unsafe_rawColors.BLACK });
-    const Icon = tmp2(1187).Icon;
+    ({ source: tmp4, size: userId(1186).Icon.Sizes.SMALL, color: channelId(575).unsafe_rawColors.BLACK });
+    const Icon = tmp2(1186).Icon;
     tmp6 = <View style={items2}>{null}</View>;
   }
   return tmp6;

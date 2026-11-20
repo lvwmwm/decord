@@ -1,15 +1,15 @@
-// Module ID: 14470
-// Function ID: 14471
+// Module ID: 14438
+// Function ID: 14439
 // Name: conjureServerWidgetConsent
-// Dependencies: [5, 10084, 14461, 14471, 6842, 10094, 10096, 1113, 4089, 1242, 10280, 6794, 5407, 1381, 2]
+// Dependencies: [5, 10087, 14429, 14439, 6842, 10097, 10099, 1112, 4091, 1241, 10220, 6794, 5409, 1379, 2]
 // Exports: getConjureServerWidgetConsentRequest
 
-// Module 14470 (conjureServerWidgetConsent)
-import URLUtilsDefault from "URLUtils" /* 1381 */;
-import WidgetActionCreatorsDefault from "WidgetActionCreators" /* 10096 */;
+// Module 14438 (conjureServerWidgetConsent)
+import URLUtilsDefault from "URLUtils" /* 1379 */;
+import WidgetActionCreatorsDefault from "WidgetActionCreators" /* 10099 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import WidgetStore from "WidgetStore" /* 10084 */;
-import ConjureServerWidgetStore from "ConjureServerWidgetStore" /* 14461 */;
+import WidgetStore from "WidgetStore" /* 10087 */;
+import ConjureServerWidgetStore from "ConjureServerWidgetStore" /* 14429 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -30,7 +30,7 @@ let obj = function _exchangeConsentCode() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -67,7 +67,7 @@ let obj = function _exchangeConsentCode() {
             project_id = value;
             if (project_id.ok) {
               c4 = 3;
-              return { value: "HermesInternal", done: "+60" };
+              return { value: "HermesInternal", done: null };
             } else {
               const _Error = Error;
               const _HermesInternal = HermesInternal;
@@ -100,7 +100,7 @@ obj = function _addWidget() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -145,7 +145,7 @@ obj = function _addWidget() {
             return { value, done: true };
           }
           c1 = 3;
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp10) {
           c1 = 3;
           throw tmp10;
@@ -180,7 +180,7 @@ obj = function _exchangeAndAdd() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c7;
@@ -278,7 +278,7 @@ obj = function _exchangeAndAdd() {
               return obj;
             } else {
               c9 = 3;
-              return { value: "HermesInternal", done: "+60" };
+              return { value: "HermesInternal", done: null };
             }
             const obj6 = closure_133_0(closure_133_2[10]);
             result = obj6.refreshApplicationWidget(closure_1);
@@ -322,7 +322,7 @@ obj = function _finishTurnOn() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c7;
@@ -367,7 +367,7 @@ obj = function _finishTurnOn() {
           closure_133_7.delete(closure_0);
         }
         c9 = 3;
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp28) {
         closure_6 = tmp28;
         if (0 === c7) {

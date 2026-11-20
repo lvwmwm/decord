@@ -1,12 +1,12 @@
-// Module ID: 18598
-// Function ID: 18599
+// Module ID: 18422
+// Function ID: 18423
 // Name: ConjureSubagentMarks
-// Dependencies: [4089, 1113, 2]
+// Dependencies: [4091, 1112, 2]
 // Exports: assignSubagentMarkKeys, isConjureSubagentMarkKey, subagentMarkName
 
-// Module 18598 (ConjureSubagentMarks)
-import intl2 from "intl" /* 1113 */;
-import _modDef4089 from "module_4089" /* 4089 */;
+// Module 18422 (ConjureSubagentMarks)
+import intl2 from "intl" /* 1112 */;
+import _modDef4091 from "module_4091" /* 4091 */;
 import size from "module_2" /* 2 */;
 
 let map;
@@ -14,37 +14,37 @@ let map;
 const items = ["snail", "goat", "frog", "bunny", "cat", "caterpillar", "butterfly", "dog", "spider", "bee", "bot"];
 let closure_4 = {
   snail() {
-    return _modDef4089.ABeVsS;
+    return _modDef4091.ABeVsS;
   },
   goat() {
-    return _modDef4089.dhXay8;
+    return _modDef4091.dhXay8;
   },
   frog() {
-    return _modDef4089.SHeweG;
+    return _modDef4091.SHeweG;
   },
   bunny() {
-    return _modDef4089.FytFE1;
+    return _modDef4091.FytFE1;
   },
   cat() {
-    return _modDef4089["5c+sHs"];
+    return _modDef4091["5c+sHs"];
   },
   caterpillar() {
-    return _modDef4089["/FYcne"];
+    return _modDef4091["/FYcne"];
   },
   butterfly() {
-    return _modDef4089["Ib/AxK"];
+    return _modDef4091["Ib/AxK"];
   },
   dog() {
-    return _modDef4089.zDjBR1;
+    return _modDef4091.zDjBR1;
   },
   spider() {
-    return _modDef4089["6sxyrN"];
+    return _modDef4091["6sxyrN"];
   },
   bee() {
-    return _modDef4089.cVtefg;
+    return _modDef4091.cVtefg;
   },
   bot() {
-    return _modDef4089.MjCw0v;
+    return _modDef4091.MjCw0v;
   }
 };
 let result = size.fileFinishedImporting("modules/conjure/agent_activity/ConjureSubagentMarks.tsx");

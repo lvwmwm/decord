@@ -1,15 +1,15 @@
-// Module ID: 7079
-// Function ID: 7080
+// Module ID: 7078
+// Function ID: 7079
 // Name: PlayStationLinkPreConnect
-// Dependencies: [19, 7076, 21, 4792, 1502, 7080, 6948, 1113, 2]
+// Dependencies: [19, 7075, 21, 4794, 1500, 7079, 6947, 1112, 2]
 // Exports: PlayStationLinkPreConnect
 
-// Module 7079 (PlayStationLinkPreConnect)
+// Module 7078 (PlayStationLinkPreConnect)
 import Fragment from "Fragment" /* 21 */;
-import PlayStationLinkConstants from "PlayStationLinkConstants" /* 7076 */;
-import _modDef7080 from "module_7080" /* 7080 */;
+import PlayStationLinkConstants from "PlayStationLinkConstants" /* 7075 */;
+import _modDef7079 from "module_7079" /* 7079 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -25,7 +25,7 @@ export function PlayStationLinkPreConnect(arg0) {
   navigation = undefined;
   ({ platformType, autoStart } = arg0);
   const tmp = closure_6();
-  let obj = navigation(1502);
+  let obj = navigation(1500);
   navigation = obj.useNavigation();
   const items = [navigation];
   const items1 = [navigation];
@@ -36,11 +36,11 @@ export function PlayStationLinkPreConnect(arg0) {
     navigation.push(constants.ERROR, {});
   }, items1);
   const memo = react.useMemo(() => {
-    const obj = { uri: _modDef7080 };
+    const obj = { uri: _modDef7079 };
     return obj;
   }, []);
-  const TwoWayLinkPreConnect = navigation(6948).TwoWayLinkPreConnect;
-  const intl = navigation(1113).intl;
-  const intl2 = navigation(1113).intl;
-  return <TwoWayLinkPreConnect platformType={platformType} onError={callback1} onNext={callback} img={memo} imgStyle={tmp.image} title={intl.string(navigation(1113).t["6n+UPR"])} body={intl2.string(navigation(1113).t.JaaqIf)} autoStart={autoStart} />;
+  const TwoWayLinkPreConnect = navigation(6947).TwoWayLinkPreConnect;
+  const intl = navigation(1112).intl;
+  const intl2 = navigation(1112).intl;
+  return <TwoWayLinkPreConnect platformType={platformType} onError={callback1} onNext={callback} img={memo} imgStyle={tmp.image} title={intl.string(navigation(1112).t["6n+UPR"])} body={intl2.string(navigation(1112).t.JaaqIf)} autoStart={autoStart} />;
 }

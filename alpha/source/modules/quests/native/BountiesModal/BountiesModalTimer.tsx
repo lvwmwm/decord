@@ -1,24 +1,24 @@
-// Module ID: 16417
-// Function ID: 16418
+// Module ID: 16239
+// Function ID: 16240
 // Name: BountiesModalTimer
-// Dependencies: [19, 17, 21, 5396, 1655, 7746, 4792, 575, 1380, 5002, 5383, 10326, 2]
+// Dependencies: [19, 17, 21, 5398, 1653, 7745, 4794, 575, 1378, 5004, 5385, 10268, 2]
 // Exports: default
 
-// Module 16417 (BountiesModalTimer)
+// Module 16239 (BountiesModalTimer)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import timing_timing from "timing/timing" /* 5002 */;
-import ButtonConstants from "ButtonConstants" /* 5396 */;
-import inlineStyles from "inlineStyles" /* 7746 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import timing_timing from "timing/timing" /* 5004 */;
+import ButtonConstants from "ButtonConstants" /* 5398 */;
+import inlineStyles from "inlineStyles" /* 7745 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
+import createStyles_mod from "createStyles" /* 4794 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-const module_1655 = _mod1655;
+const module_1653 = _mod1653;
 let _require, importDefault, set, set2;
 
 let hasOwnProperty;
@@ -36,13 +36,13 @@ let c7 = "#2ECC71";
 let result = (ButtonConstants.SMALL_BUTTON_HEIGHT - 4) / 2;
 const metroImportAll = result;
 let closure_9 = 2 * Math.PI * result;
-const Easing = _mod1655.Easing;
+const Easing = _mod1653.Easing;
 let closure_10 = Easing.bezier(0.15, 0.21, 0.58, 1);
-const Easing2 = _mod1655.Easing;
+const Easing2 = _mod1653.Easing;
 let closure_11 = Easing2.bezier(0.61, 0, 0.58, 1);
-const Easing3 = _mod1655.Easing;
+const Easing3 = _mod1653.Easing;
 let closure_12 = Easing3.bezier(0.42, 0, 0.58, 1);
-let closure_13 = module_1655.createAnimatedComponent(inlineStyles.Circle);
+let closure_13 = module_1653.createAnimatedComponent(inlineStyles.Circle);
 let createStyles = createStyles_mod;
 let obj = { progress: size, ring: obj2, trackPath: obj3, countdownText: obj4, checkmarkLayer: { position: "absolute", inset: 6, alignItems: "center", justifyContent: "center" }, checkmarkBackground: size1, checkmarkIcon: { width: 20, height: 20 } };
 size = { alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.colors.CONTROL_OVERLAY_SECONDARY_BACKGROUND_DEFAULT, borderRadius: nativeDefault.radii.round, width: ButtonConstants.SMALL_BUTTON_HEIGHT, height: ButtonConstants.SMALL_BUTTON_HEIGHT };
@@ -114,11 +114,11 @@ export default function BountiesModalTimer(arg0) {
     }
   }
   let tmp5 = _require;
-  let obj = require("module_1655");
+  let obj = require("module_1653");
   sharedValue = obj.useSharedValue(num2);
-  let obj2 = require("module_1655");
+  let obj2 = require("module_1653");
   sharedValue1 = obj2.useSharedValue(0);
-  let obj3 = require("module_1655");
+  let obj3 = require("module_1653");
   sharedValue2 = obj3.useSharedValue(0);
   let items = [sharedValue, num2];
   const effect = sharedValue1.useEffect(() => {
@@ -134,8 +134,8 @@ export default function BountiesModalTimer(arg0) {
     ref.current = true;
     if (closure_0) {
       if (current) {
-        const withSequence = _mod1655.withSequence;
-        _mod1655;
+        const withSequence = _mod1653.withSequence;
+        _mod1653;
         const obj2 = { duration: 267, easing };
         const obj = timing_timing;
         const obj4 = { duration: 233, easing: easing2 };
@@ -143,10 +143,10 @@ export default function BountiesModalTimer(arg0) {
         const obj3 = timing_timing;
         const result = set(withSequence(withTimingResult, obj3.withTiming(1, obj4)));
         set2 = sharedValue2.set;
-        const withDelay = _mod1655.withDelay;
-        _mod1655;
-        const withSequence2 = _mod1655.withSequence;
-        _mod1655;
+        const withDelay = _mod1653.withDelay;
+        _mod1653;
+        const withSequence2 = _mod1653.withSequence;
+        _mod1653;
         const obj6 = { duration: 167, easing: easing3 };
         const obj5 = timing_timing;
         const obj8 = { duration: 333, easing: easing3 };
@@ -164,7 +164,7 @@ export default function BountiesModalTimer(arg0) {
     }
     return tmp5;
   }, items1);
-  let obj4 = require("module_1655");
+  let obj4 = require("module_1653");
   const items2 = [closure_15, closure_9, sharedValue];
   let c0;
   importDefault = undefined;

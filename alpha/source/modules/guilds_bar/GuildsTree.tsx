@@ -1,10 +1,10 @@
-// Module ID: 6433
-// Function ID: 6434
+// Module ID: 6435
+// Function ID: 6436
 // Name: GuildsTree
 // Dependencies: [38, 12, 2]
 // Exports: createFolderNode, createGuildNode
 
-// Module 6433 (GuildsTree)
+// Module 6435 (GuildsTree)
 import _mod12 from "module_12" /* 12 */;
 import _modDef38 from "module_38" /* 38 */;
 import size from "module_2" /* 2 */;
@@ -111,23 +111,23 @@ class GuildsTree {
     self.version = self.version + 1;
     return self;
   }
-  addNode(type, c0, flag) {
+  addNode(guildNode, element, flag) {
     const self = this;
-    let root = c0;
-    if (c0 === undefined) {
+    let root = element;
+    if (element === undefined) {
       root = self.root;
     }
     if (flag === undefined) {
       flag = true;
     }
-    _modDef38(type.type !== obj.ROOT, "[GUILDS TREE] Tried adding another root node into the tree");
-    _modDef38(null != type.id, "[GUILDS TREE] Tried adding a node without an id");
+    _modDef38(guildNode.type !== obj.ROOT, "[GUILDS TREE] Tried adding another root node into the tree");
+    _modDef38(null != guildNode.id, "[GUILDS TREE] Tried adding a node without an id");
     const tmp3 = _modDef38;
-    const tmp4 = null == self.nodes[type.id];
-    tmp3(tmp4, "[GUILDS TREE] Tried adding a node that already exists (" + type.id + ")");
-    self.nodes[type.id] = type;
+    const tmp4 = null == self.nodes[guildNode.id];
+    tmp3(tmp4, "[GUILDS TREE] Tried adding a node that already exists (" + guildNode.id + ")");
+    self.nodes[guildNode.id] = guildNode;
     self.version = self.version + 1;
-    return self.moveInto(type, root, flag);
+    return self.moveInto(guildNode, root, flag);
   }
   removeNode(id) {
     _modDef38(id !== this.root, "[GUILDS TREE] Tried removing the root node from the tree");
@@ -190,15 +190,15 @@ class GuildsTree {
   allNodes() {
     return Object.values(this.nodes);
   }
-  getNode(arg0) {
-    return this.nodes[arg0];
+  getNode(targetId) {
+    return this.nodes[targetId];
   }
   getRoots() {
     return this.root.children;
   }
   sortedGuildNodes() {
     let items1;
-    const f125239 = (type) => {
+    const f123208 = (type) => {
       let items1;
       if (type.type === constants.GUILD) {
         const items = [type];
@@ -207,7 +207,7 @@ class GuildsTree {
         items1 = [];
       } else {
         const children = type.children;
-        const mapped = children.map(f125239);
+        const mapped = children.map(f123208);
         items1 = mapped.flat();
       }
       return items1;
@@ -220,7 +220,7 @@ class GuildsTree {
       items1 = [];
     } else {
       let children = root.children;
-      let mapped = children.map(f125239);
+      let mapped = children.map(f123208);
       items1 = mapped.flat();
     }
     return items1;

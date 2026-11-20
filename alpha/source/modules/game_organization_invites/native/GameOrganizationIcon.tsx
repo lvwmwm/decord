@@ -1,20 +1,20 @@
-// Module ID: 12024
-// Function ID: 12025
+// Module ID: 11966
+// Function ID: 11967
 // Name: GameOrganizationIcon
-// Dependencies: [32, 19, 17, 21, 12025, 12029, 4792, 575, 5479, 2157, 2]
+// Dependencies: [32, 19, 17, 21, 11967, 11971, 4794, 575, 5481, 2155, 2]
 // Exports: default
 
-// Module 12024 (GameOrganizationIcon)
+// Module 11966 (GameOrganizationIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import ImageProxyUtils from "ImageProxyUtils" /* 2157 */;
-import FastImageDefault from "FastImage" /* 5479 */;
-import GuildFallbackAbstractUI from "GuildFallbackAbstractUI" /* 12025 */;
-import CharacterFallbackAbstractUI from "CharacterFallbackAbstractUI" /* 12029 */;
+import ImageProxyUtils from "ImageProxyUtils" /* 2155 */;
+import FastImageDefault from "FastImage" /* 5481 */;
+import GuildFallbackAbstractUI from "GuildFallbackAbstractUI" /* 11967 */;
+import CharacterFallbackAbstractUI from "CharacterFallbackAbstractUI" /* 11971 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 const View = react_native.View;

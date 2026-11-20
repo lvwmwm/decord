@@ -1,13 +1,13 @@
-// Module ID: 13924
-// Function ID: 13925
+// Module ID: 13893
+// Function ID: 13894
 // Name: useBadgeColor
-// Dependencies: [5, 32, 19, 575, 1456, 4912, 13925, 2025, 2]
+// Dependencies: [5, 32, 19, 575, 1454, 4914, 13894, 2023, 2]
 // Exports: useBadgeColor
 
-// Module 13924 (useBadgeColor)
+// Module 13893 (useBadgeColor)
 import nativeDefault from "native" /* 575 */;
-import LRUCacheDefault from "LRUCache" /* 1456 */;
-import utils_FunctionUtils from "utils/FunctionUtils" /* 4912 */;
+import LRUCacheDefault from "LRUCache" /* 1454 */;
+import utils_FunctionUtils from "utils/FunctionUtils" /* 4914 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -47,7 +47,7 @@ export function useBadgeColor(rasterUrl) {
             let obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c3;
@@ -81,7 +81,7 @@ export function useBadgeColor(rasterUrl) {
                                 const obj2 = { value, done: true };
                                 return obj2;
                               } else {
-                                return { value: "HermesInternal", done: "+60" };
+                                return { value: "HermesInternal", done: null };
                               }
                             } else {
                               try {
@@ -157,7 +157,7 @@ export function useBadgeColor(rasterUrl) {
                 const tmp16 = closure_1(closure_0);
               }
               c5 = 3;
-              return { value: "HermesInternal", done: "+60" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp20) {
             if (0 === c3) {

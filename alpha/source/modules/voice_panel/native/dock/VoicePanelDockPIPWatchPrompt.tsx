@@ -1,24 +1,24 @@
-// Module ID: 19368
-// Function ID: 19369
+// Module ID: 19188
+// Function ID: 19189
 // Name: VoicePanelDockPIPWatchPrompt
-// Dependencies: [19, 17, 6279, 1388, 1072, 21, 4792, 575, 11687, 7401, 7420, 6335, 1256, 19369, 504, 5822, 4853, 1655, 5002, 1708, 7205, 6942, 1113, 5383, 3275, 5390, 7472, 7032, 2]
+// Dependencies: [19, 17, 6281, 1386, 1071, 21, 4794, 575, 11629, 7400, 7419, 6337, 1255, 19189, 504, 5824, 4855, 1653, 5004, 1706, 7204, 6941, 1112, 5385, 3277, 5392, 7471, 7031, 2]
 // Exports: useVoicePanelDockWatchPromptActions
 
-// Module 19368 (VoicePanelDockPIPWatchPrompt)
+// Module 19188 (VoicePanelDockPIPWatchPrompt)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import _mod1708 from "module_1708" /* 1708 */;
-import native from "native" /* 4853 */;
-import timing_timing from "timing/timing" /* 5002 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7401 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7420 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11687 */;
+import Constants from "Constants" /* 1071 */;
+import _mod1706 from "module_1706" /* 1706 */;
+import native from "native" /* 4855 */;
+import timing_timing from "timing/timing" /* 5004 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7400 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7419 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11629 */;
 import react from "react" /* 19 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6279 */;
-import UserStore from "UserStore" /* 1388 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6281 */;
+import UserStore from "UserStore" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, importDefault, streamForUser;
@@ -60,20 +60,20 @@ function WatchPrompt(ownerId) {
   let tmp = closure_10();
   const tmp2 = cleanUp;
   let tmp3 = dependencyMap;
-  const context = sharedValue.useContext(cleanUp(11687));
+  const context = sharedValue.useContext(cleanUp(11629));
   const tmp5 = ownerId;
   ({ channelId, guildId } = context);
   let obj = ownerId(504);
   let items = [UserStore];
   let items1 = [ownerId];
   const stateFromStores = obj.useStateFromStores(items, () => UserStore.getUser(ownerId), items1);
-  let obj2 = cleanUp(5822);
+  let obj2 = cleanUp(5824);
   const name = obj2.useName(guildId, channelId, stateFromStores);
-  const context1 = sharedValue.useContext(cleanUp(11687));
+  const context1 = sharedValue.useContext(cleanUp(11629));
   const channelId2 = context1.channelId;
   const guildId2 = context1.guildId;
-  const tmp9 = cleanUp(7401);
-  const analyticsLocations = tmp9(cleanUp(7420).STREAM_WATCH_PROMPT_PIP).analyticsLocations;
+  const tmp9 = cleanUp(7400);
+  const analyticsLocations = tmp9(cleanUp(7419).STREAM_WATCH_PROMPT_PIP).analyticsLocations;
   const items2 = [ownerId, guildId2, isConnecting, analyticsLocations];
   const items3 = [guildId2, channelId2, isConnecting, streamKey, analyticsLocations];
   const callback = sharedValue.useCallback(() => {
@@ -101,9 +101,9 @@ function WatchPrompt(ownerId) {
     const obj4 = ownerId(isConnecting[13]);
     const result = obj4.dismissVoicePanelDockWatchPrompt();
   }, items3);
-  const tmp12 = transitionState !== ownerId(4853).TransitionStates.YEETED;
+  const tmp12 = transitionState !== ownerId(4855).TransitionStates.YEETED;
   dependencyMap = tmp12;
-  let obj3 = ownerId(1655);
+  let obj3 = ownerId(1653);
   sharedValue = obj3.useSharedValue(1);
   const items4 = [sharedValue, tmp12, cleanUp];
   const effect = sharedValue.useEffect(() => {
@@ -115,7 +115,7 @@ function WatchPrompt(ownerId) {
     } else {
       const items = [closure_11, , ];
       const withTiming = timing_timing.withTiming;
-      items[1] = _mod1708.scheduleOnRN;
+      items[1] = _mod1706.scheduleOnRN;
       items[2] = cleanUp;
       let c0;
       let c1;
@@ -137,7 +137,7 @@ function WatchPrompt(ownerId) {
       const result1 = set(withTiming(0, tmp5, "respect-motion-settings", VoicePanelDockPIPWatchPromptTsx1));
     }
   }, items4);
-  let obj4 = ownerId(1655);
+  let obj4 = ownerId(1653);
   const items5 = [closure_12, sharedValue];
   let c0;
   [tmp15, tmp16] = items5;
@@ -159,51 +159,51 @@ function WatchPrompt(ownerId) {
   const obj5 = { style: items7, pointerEvents: str, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: items8 };
   items7 = [tmp.container, animatedStyle];
   str = "auto";
-  const View = tmp2(1655).View;
+  const View = tmp2(1653).View;
   if (tmp18) {
     str = "none";
   }
   items8 = [, , ];
   const obj6 = { style: tmp.border, pointerEvents: "none" };
-  items8[0] = closure_7(tmp2(7205), obj6);
+  items8[0] = closure_7(tmp2(7204), obj6);
   const items9 = [tmp.content, ];
   let hidden = null;
-  const tmp2Result = tmp2(7205);
+  const tmp2Result = tmp2(7204);
   if (tmp18) {
     hidden = tmp.hidden;
   }
   const obj7 = { style: items9, children: items10 };
   items9[1] = hidden;
   const obj8 = { type: obj9, variant: "critical" };
-  obj9 = { text: intl.string(tmp5(1113).t.dI3q4h) };
-  const Badge = tmp5(6942).Badge;
-  intl = tmp5(1113).intl;
+  obj9 = { text: intl.string(tmp5(1112).t.dI3q4h) };
+  const Badge = tmp5(6941).Badge;
+  intl = tmp5(1112).intl;
   items10 = [closure_7(Badge, obj8), , ];
   let tmp20Result = null != stateFromStores;
   if (tmp20Result) {
-    const obj10 = { variant: "body-sm/medium", color: "text-default", lineClamp: 1, style: tmp.label, children: intl2.formatToPlainString(tmp2(3275)["g9x8/M"], obj11) };
-    const Text = tmp5(5383).Text;
-    intl2 = tmp5(1113).intl;
+    const obj10 = { variant: "body-sm/medium", color: "text-default", lineClamp: 1, style: tmp.label, children: intl2.formatToPlainString(tmp2(3277)["g9x8/M"], obj11) };
+    const Text = tmp5(5385).Text;
+    intl2 = tmp5(1112).intl;
     obj11 = { username: name };
     tmp20Result = tmp20(Text, obj10);
   }
   items10[1] = tmp20Result;
-  const obj12 = { size: "sm", variant: "primary-overlay", text: intl3.string(tmp5(1113).t.I6JG46), onPress: callback, loading: isConnecting };
-  const Button = tmp5(5390).Button;
-  intl3 = tmp5(1113).intl;
+  const obj12 = { size: "sm", variant: "primary-overlay", text: intl3.string(tmp5(1112).t.I6JG46), onPress: callback, loading: isConnecting };
+  const Button = tmp5(5392).Button;
+  intl3 = tmp5(1112).intl;
   items10[2] = closure_7(Button, obj12);
   items8[1] = closure_8(tmp2Result, obj7);
   const items11 = [tmp.dismissButton, ];
   let hidden1 = null;
-  const tmp2Result2 = tmp2(7205);
+  const tmp2Result2 = tmp2(7204);
   if (tmp18) {
     hidden1 = tmp.hidden;
   }
   items11[1] = hidden1;
   const obj13 = { style: items11, children: closure_7(IconButton, obj14) };
-  obj14 = { size: "sm", variant: "tertiary", icon: closure_7(tmp5(7032).XSmallIcon, { size: "sm" }), onPress: callback1, accessibilityLabel: intl4.string(tmp5(1113).t.WAI6xu) };
-  IconButton = tmp5(7472).IconButton;
-  intl4 = tmp5(1113).intl;
+  obj14 = { size: "sm", variant: "tertiary", icon: closure_7(tmp5(7031).XSmallIcon, { size: "sm" }), onPress: callback1, accessibilityLabel: intl4.string(tmp5(1112).t.WAI6xu) };
+  IconButton = tmp5(7471).IconButton;
+  intl4 = tmp5(1112).intl;
   items8[2] = closure_7(tmp2Result2, obj13);
   return closure_8(View, obj5);
 }

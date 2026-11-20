@@ -1,25 +1,25 @@
-// Module ID: 18071
-// Function ID: 18072
+// Module ID: 17898
+// Function ID: 17899
 // Name: SoundButton
-// Dependencies: [19, 17, 18065, 21, 1655, 4792, 575, 1380, 6911, 5393, 7377, 12393, 18072, 18073, 7401, 7420, 18075, 18076, 5383, 7576, 2]
+// Dependencies: [19, 17, 17892, 21, 1653, 4794, 575, 1378, 6910, 5395, 7376, 12363, 17899, 17900, 7400, 7419, 17902, 17903, 5385, 7575, 2]
 
-// Module 18071 (SoundButton)
+// Module 17898 (SoundButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import spring_spring from "spring/spring" /* 5393 */;
-import Pressables from "Pressables" /* 6911 */;
-import EmojiDefault from "Emoji" /* 7377 */;
-import getSoundboardEmojiUrlDefault from "getSoundboardEmojiUrl" /* 12393 */;
-import SoundboardStyleConstants from "SoundboardStyleConstants" /* 18065 */;
-import openSoundboardSoundPreviewActionSheetDefault from "openSoundboardSoundPreviewActionSheet" /* 18076 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import spring_spring from "spring/spring" /* 5395 */;
+import Pressables from "Pressables" /* 6910 */;
+import EmojiDefault from "Emoji" /* 7376 */;
+import getSoundboardEmojiUrlDefault from "getSoundboardEmojiUrl" /* 12363 */;
+import SoundboardStyleConstants from "SoundboardStyleConstants" /* 17892 */;
+import openSoundboardSoundPreviewActionSheetDefault from "openSoundboardSoundPreviewActionSheet" /* 17903 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
+import createStyles_mod from "createStyles" /* 4794 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
 import size_mod from "module_2" /* 2 */;
 
-const module_1655_mod = _mod1655;
+const module_1653_mod = _mod1653;
 let num2, obj1, playing, playing2, pressed2, pressed3, set, tmp4Result, tmp8, value, value1;
 
 let hasOwnProperty;
@@ -38,12 +38,12 @@ function useAnimation(arg0) {
   let tmp5;
   let tmp6;
   let tmp7;
-  const tmp = _mod1655;
+  const tmp = _mod1653;
   let items = [closure_11, arg0, , , , ];
   const useAnimatedStyle = tmp.useAnimatedStyle;
-  items[2] = _mod1655.withDelay;
+  items[2] = _mod1653.withDelay;
   items[3] = spring_spring.withSpring;
-  items[4] = _mod1655.interpolate;
+  items[4] = _mod1653.interpolate;
   items[5] = closure_8;
   let c0;
   let c1;
@@ -131,8 +131,8 @@ function SoundButtonEmoji(arg0) {
 const View = react_native.View;
 const SOUND_BUTTON_HEIGHT = SoundboardStyleConstants.SOUND_BUTTON_HEIGHT;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
-let module_1655 = module_1655_mod;
-let closure_7 = module_1655.createAnimatedComponent(View);
+let module_1653 = module_1653_mod;
+let closure_7 = module_1653.createAnimatedComponent(View);
 let closure_8 = { damping: 10, stiffness: 300, mass: 1 };
 let createStyles = createStyles_mod;
 let obj = { button: obj2, buttonPressed: obj3, buttonDisabled: { opacity: 0.5 }, buttonPlaying: obj4, playingBackground: rect, emoji: { height: 24, width: 24, fontSize: num, lineHeight: 28 }, emojiWrapper: size, text: { marginHorizontal: 8 }, textPlaying: { marginHorizontal: 6 }, lock: size1 };
@@ -149,8 +149,8 @@ if (PlatformUtils.isIOS()) {
 size = { display: "flex", alignItems: "center", justifyContent: "center", height: 40, width: 40, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED, backgroundSize: 32, borderRadius: nativeDefault.radii.round, marginBottom: 8 };
 size1 = { position: "absolute", top: nativeDefault.space.PX_12, end: nativeDefault.space.PX_12, width: 12, height: 12, tintColor: nativeDefault.colors.WHITE };
 let closure_9 = createStyles(obj);
-module_1655 = module_1655_mod;
-let closure_10 = module_1655.createAnimatedComponent(Pressables.PressableOpacity);
+module_1653 = module_1653_mod;
+let closure_10 = module_1653.createAnimatedComponent(Pressables.PressableOpacity);
 let closure_11 = { code: "(function SoundButtonTsx1(){let[animationConfig,withDelay,withSpring,interpolate,SPRING_CONFIG]=this.__closure;var _animationConfig$play,_animationConfig$pres,_animationConfig;const isNotPressed=animationConfig.sharedValues.pressed.get()===0;const isPlaying=animationConfig.sharedValues.playing.get()>0;const shouldDoPlayingAnimation=isNotPressed&&isPlaying;const playingAnimationScaleValue=withDelay((_animationConfig$play=animationConfig.playingAnimationDelay)!==null&&_animationConfig$play!==void 0?_animationConfig$play:0,withSpring(interpolate(animationConfig.sharedValues.playing.get(),[0,1],[1,animationConfig.scaleFactors.playing]),SPRING_CONFIG));const pressedAnimationScaleValue=withSpring(interpolate(animationConfig.sharedValues.pressed.get(),[0,1],[1,animationConfig.scaleFactors.pressed]),SPRING_CONFIG);const rotationScaleValue=interpolate(animationConfig.sharedValues.pressed.get(),[0,1],[0,(_animationConfig$pres=(_animationConfig=animationConfig)===null||_animationConfig===void 0?void 0:_animationConfig.pressedRotationDegrees)!==null&&_animationConfig$pres!==void 0?_animationConfig$pres:0]);return{transform:[{scale:shouldDoPlayingAnimation?playingAnimationScaleValue:pressedAnimationScaleValue},{rotate:rotationScaleValue+\"deg\"}]};})" };
 const memoResult = react.memo(function SoundButtonComponent(sound) {
   let items6;

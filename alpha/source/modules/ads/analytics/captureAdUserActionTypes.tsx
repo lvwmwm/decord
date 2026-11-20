@@ -1,9 +1,9 @@
-// Module ID: 9842
-// Function ID: 9843
+// Module ID: 9844
+// Function ID: 9845
 // Name: captureAdUserActionTypes
 // Dependencies: [2]
 
-// Module 9842 (captureAdUserActionTypes)
+// Module 9844 (captureAdUserActionTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/ads/analytics/captureAdUserActionTypes.tsx");

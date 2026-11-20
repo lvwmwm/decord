@@ -1,7 +1,7 @@
 // Module ID: 8872
 // Function ID: 8873
 // Name: useDisplayProfileSocialLayerStorefrontApplicationIds
-// Dependencies: [19, 6730, 7953, 8873, 504, 6839, 6842, 12, 2]
+// Dependencies: [19, 6730, 7952, 8873, 504, 6839, 6842, 12, 2]
 // Exports: default
 
 // Module 8872 (useDisplayProfileSocialLayerStorefrontApplicationIds)

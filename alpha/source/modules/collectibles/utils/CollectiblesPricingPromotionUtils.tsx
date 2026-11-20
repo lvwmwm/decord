@@ -1,14 +1,14 @@
 // Module ID: 8842
 // Function ID: 8843
 // Name: CollectiblesPricingPromotionUtils
-// Dependencies: [6734, 8806, 1388, 1072, 7967, 8843, 8845, 8844, 504, 2174, 2]
+// Dependencies: [6734, 8806, 1386, 1071, 7966, 8843, 8845, 8844, 504, 2172, 2]
 // Exports: getPricingPromotionForCollectiblesProduct, useCollectiblesPricingPromotionForProduct
 
 // Module 8842 (CollectiblesPricingPromotionUtils)
-import Constants from "Constants" /* 1072 */;
+import Constants from "Constants" /* 1071 */;
 import SKUPricesStore from "SKUPricesStore" /* 6734 */;
 import StorefrontPromotionStore from "StorefrontPromotionStore" /* 8806 */;
-import UserStore from "UserStore" /* 1388 */;
+import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 
 let closure_6 = Constants.COLLECTIBLES_APPLICATION_ID;

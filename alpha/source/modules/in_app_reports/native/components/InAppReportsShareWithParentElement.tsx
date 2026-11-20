@@ -1,13 +1,13 @@
-// Module ID: 10297
-// Function ID: 10298
+// Module ID: 10239
+// Function ID: 10240
 // Name: InAppReportsShareWithParentElement
-// Dependencies: [32, 19, 21, 8218, 5473, 1113, 6388, 10296, 10014, 2]
+// Dependencies: [32, 19, 21, 8217, 5475, 1112, 6390, 10238, 10017, 2]
 // Exports: default
 
-// Module 10297 (InAppReportsShareWithParentElement)
+// Module 10239 (InAppReportsShareWithParentElement)
 import Fragment from "Fragment" /* 21 */;
-import FamilyCenterActionCreators from "FamilyCenterActionCreators" /* 8218 */;
-import InAppReportsUpsellsTableRowDefault from "InAppReportsUpsellsTableRow" /* 10296 */;
+import FamilyCenterActionCreators from "FamilyCenterActionCreators" /* 8217 */;
+import InAppReportsUpsellsTableRowDefault from "InAppReportsUpsellsTableRow" /* 10238 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -35,11 +35,11 @@ export default function _default(parents) {
   if (0 === parents.length) {
     return null;
   } else {
-    const intl3 = parents(1113).intl;
+    const intl3 = parents(1112).intl;
     const formatToPlainString2 = intl3.formatToPlainString;
     const obj2 = { count: parents.length, parent1: parents[0].username, parent2: username, parent3: username1 };
     username = undefined;
-    const HqyWeO = parents(1113).t.HqyWeO;
+    const HqyWeO = parents(1112).t.HqyWeO;
     if (parents[1] != null) {
       username = tmp18.username;
     }
@@ -48,14 +48,14 @@ export default function _default(parents) {
     if (tmp5 != null) {
       username1 = tmp5.username;
     }
-    let obj = { title: formatToPlainString2(HqyWeO, obj2), disabledTitle: formatToPlainString(BlAMme, obj3), icon: tmp8(parents(10014).ShareIcon, {}), description: intl2.string(parents(1113).t["5l/hlt"]), disabled: first, onPress: tmp3 };
+    let obj = { title: formatToPlainString2(HqyWeO, obj2), disabledTitle: formatToPlainString(BlAMme, obj3), icon: tmp8(parents(10017).ShareIcon, {}), description: intl2.string(parents(1112).t["5l/hlt"]), disabled: first, onPress: tmp3 };
     formatToPlainString2(HqyWeO, obj2);
     const tmp10 = InAppReportsUpsellsTableRowDefault;
-    let intl = tmp16(1113).intl;
+    let intl = tmp16(1112).intl;
     formatToPlainString = intl.formatToPlainString;
     obj3 = { count: parents.length, parent1: parents[0].username, parent2: username2, parent3: username3 };
     username2 = undefined;
-    BlAMme = tmp16(1113).t.BlAMme;
+    BlAMme = tmp16(1112).t.BlAMme;
     if (parents[1] != null) {
       username2 = tmp11.username;
     }
@@ -63,7 +63,7 @@ export default function _default(parents) {
     if (parents[2] != null) {
       username3 = tmp13.username;
     }
-    intl2 = tmp16(1113).intl;
+    intl2 = tmp16(1112).intl;
     return jsx(tmp10, obj);
   }
 };

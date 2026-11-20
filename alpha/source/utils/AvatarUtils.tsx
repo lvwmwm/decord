@@ -1,23 +1,23 @@
-// Module ID: 1414
-// Function ID: 1415
+// Module ID: 1412
+// Function ID: 1413
 // Name: AvatarUtils
-// Dependencies: [1072, 1415, 1417, 1380, 1449, 1490, 2026, 2027, 14, 2106, 2108, 2109, 11, 1383, 2]
+// Dependencies: [1071, 1413, 1415, 1378, 1447, 1488, 2024, 2025, 14, 2104, 2106, 2107, 11, 1381, 2]
 // Exports: getAvatarDecorationURL, getEmojiURL, getGuildMemberAvatarSource, getGuildMemberAvatarURL, getGuildMemberBannerURL, getGuildTemplateIconURL, getNewMemberActionIconURL, getResourceChannelIconURL, getUserAvatarURL, getUserBannerURL, getVideoFilterAssetURL, hasAnimatedGuildIcon, isAnimatedIconHash, isAnimatedImageURL, isDataUri, isVideoAssetHash, isVideoURL, makeSource
 
-// Module 1414 (AvatarUtils)
+// Module 1412 (AvatarUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef14 from "module_14" /* 14 */;
-import urlParse from "urlParse" /* 1383 */;
-import AvatarDecorationConstants from "AvatarDecorationConstants" /* 1415 */;
-import utils_AvatarUtils from "utils/AvatarUtils" /* 1417 */;
-import ImageLoaderUtils from "ImageLoaderUtils" /* 1449 */;
-import _modDef1490 from "module_1490" /* 1490 */;
-import NumberUtils from "NumberUtils" /* 2027 */;
-import AvatarDecorationUtils from "AvatarDecorationUtils" /* 2106 */;
-import CollectiblesAssetUtils from "CollectiblesAssetUtils" /* 2108 */;
-import AssetRegistryDefault from "AssetRegistry" /* 2109 */;
-import Constants from "Constants" /* 1072 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
+import urlParse from "urlParse" /* 1381 */;
+import AvatarDecorationConstants from "AvatarDecorationConstants" /* 1413 */;
+import utils_AvatarUtils from "utils/AvatarUtils" /* 1415 */;
+import ImageLoaderUtils from "ImageLoaderUtils" /* 1447 */;
+import _modDef1488 from "module_1488" /* 1488 */;
+import NumberUtils from "NumberUtils" /* 2025 */;
+import AvatarDecorationUtils from "AvatarDecorationUtils" /* 2104 */;
+import CollectiblesAssetUtils from "CollectiblesAssetUtils" /* 2106 */;
+import AssetRegistryDefault from "AssetRegistry" /* 2107 */;
+import Constants from "Constants" /* 1071 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
 import size_mod from "module_2" /* 2 */;
 
 let set;
@@ -25,7 +25,7 @@ let set;
 let c3;
 let closure_4;
 let tmp2;
-const ForceSdrEmojisStickersExperiment = tmp2(2026);
+const ForceSdrEmojisStickersExperiment = tmp2(2024);
 function getAvatarURL(endpoint) {
   let format;
   let hash;
@@ -122,7 +122,7 @@ function getAvatarURL(endpoint) {
           obj3.animated = true;
         }
         const _HermesInternal2 = HermesInternal;
-        const obj2 = _modDef1490;
+        const obj2 = _modDef1488;
         return combined + "?" + obj2.stringify(obj3);
       }
     }
@@ -266,7 +266,7 @@ function getGuildMemberAvatarURLSimple(size) {
   if (tmp21) {
     obj.animated = true;
   }
-  const obj3 = _modDef1490;
+  const obj3 = _modDef1488;
   return combined + "?" + obj3.stringify(obj);
 }
 function getGuildBannerURL(guild, flag) {
@@ -323,7 +323,7 @@ function getGuildBannerURL(guild, flag) {
       obj.animated = true;
     }
     const _HermesInternal2 = HermesInternal;
-    const obj2 = _modDef1490;
+    const obj2 = _modDef1488;
     return combined + "?" + obj2.stringify(obj);
   }
 }
@@ -607,7 +607,7 @@ function getUserBannerURL(arg0) {
       obj.animated = true;
     }
     const _HermesInternal2 = HermesInternal;
-    const obj3 = _modDef1490;
+    const obj3 = _modDef1488;
     return combined + "?" + obj3.stringify(obj);
   }
 }
@@ -729,7 +729,7 @@ function getGuildMemberBannerURL(arg0) {
         obj.animated = true;
       }
       const _HermesInternal2 = HermesInternal;
-      const obj3 = _modDef1490;
+      const obj3 = _modDef1488;
       return combined + "?" + obj3.stringify(obj);
     }
   }

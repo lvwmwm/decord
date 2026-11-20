@@ -1,21 +1,21 @@
-// Module ID: 6362
-// Function ID: 6363
+// Module ID: 6364
+// Function ID: 6365
 // Name: QualtricsActionCreators
-// Dependencies: [32, 5, 6363, 6365, 6366, 6367, 1072, 1285, 572, 1242, 6368, 2]
+// Dependencies: [32, 5, 6365, 6367, 6368, 6369, 1071, 1284, 572, 1241, 6370, 2]
 // Exports: fetchSurveyDetails, fireSurveyAction, submitSurveyResponse
 
-// Module 6362 (QualtricsActionCreators)
-import Constants from "Constants" /* 1072 */;
-import HTTPUtils from "HTTPUtils" /* 1285 */;
-import QualtricsResponseStore from "QualtricsResponseStore" /* 6365 */;
+// Module 6364 (QualtricsActionCreators)
+import Constants from "Constants" /* 1071 */;
+import HTTPUtils from "HTTPUtils" /* 1284 */;
+import QualtricsResponseStore from "QualtricsResponseStore" /* 6367 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SurveyStore from "SurveyStore" /* 6363 */;
-import QualtricsStore from "QualtricsStore" /* 6366 */;
-import QualtricsConstants from "QualtricsConstants" /* 6367 */;
+import SurveyStore from "SurveyStore" /* 6365 */;
+import QualtricsStore from "QualtricsStore" /* 6368 */;
+import QualtricsConstants from "QualtricsConstants" /* 6369 */;
 import size from "module_2" /* 2 */;
 
-let c8, closure_3, force_survey_id, state;
+let closure_1, closure_2, closure_3, closure_4, closure_5, force_survey_id, state;
 
 let c9;
 let metroImportAll;
@@ -37,7 +37,7 @@ let obj = function _fetchSurveyDetails() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -104,204 +104,224 @@ function submitSurveyResponse() {
   return obj(...arguments);
 }
 obj = function _submitSurveyResponse() {
-  obj = _asyncToGenerator(async (arg0, value) => {
+  obj = _asyncToGenerator(async (arg0, arg1) => {
     let closure_7;
-    let obj6;
-    let survey;
-    let tmp17;
-    let tmp2;
-    function parseSurveyResponses(arg0, arg1, arr) {
-      survey = survey.getSurvey(arg0);
-      if (null == survey) {
-        return null;
-      } else {
-        obj = {};
-        const _Object2 = Object;
-        const entries = Object.entries(arg1);
-        const tmp44 = entries[Symbol.iterator]();
-        const tmp2 = entries;
-        let tmp4 = tmp44;
-        while (tmp44 !== undefined) {
-          let tmp6 = closure_3(tmp3, 2);
-          let first = tmp6[0];
-          let tmp8 = first;
-          let str = tmp6[1];
-          let tmp9 = survey.Questions[first];
-          let tmp10 = tmp9;
-          if (null != tmp9) {
-            let tmp46 = constants2;
-            if (tmp10.QuestionType === constants2.MULTIPLE_CHOICE) {
-              if (tmp10.Selector === constants.MULTIPLE_ANSWER) {
-                obj[tmp8] = str.split(",");
-                if (null != tmp10.ChoiceOrder) {
-                  let _HermesInternal4 = HermesInternal;
-                  obj["" + tmp8 + "_DO"] = tmp10.ChoiceOrder;
-                }
-              }
-            }
-            if (tmp10.QuestionType === tmp46.MULTIPLE_CHOICE) {
-              if (tmp10.Selector === constants.SINGLE_ANSWER) {
-                if (str.includes(":TEXT:")) {
-                  let first1 = str.split(":TEXT:", 2)[0];
-                  let _parseInt2 = parseInt;
-                  let tmp26 = str.split(":TEXT:", 2)[1];
-                  obj[tmp8] = parseInt(first1);
-                  let _HermesInternal2 = HermesInternal;
-                  let str2 = "";
-                  let str3 = "_";
-                  let str4 = "_TEXT";
-                  obj["" + first + "_" + first1 + "_TEXT"] = tmp26;
-                } else {
-                  let _parseInt = parseInt;
-                  obj[tmp8] = parseInt(str);
-                }
-                if (null != tmp10.ChoiceOrder) {
-                  let _HermesInternal3 = HermesInternal;
-                  obj["" + tmp8 + "_DO"] = tmp10.ChoiceOrder;
-                }
-              }
-            }
-            if (tmp10.QuestionType === tmp46.TEXT_ENTRY) {
-              let _HermesInternal = HermesInternal;
-              obj["" + tmp8 + "_TEXT"] = str;
-            } else {
-              obj[tmp8] = str;
-            }
-          }
-          continue;
-        }
-        const _Object = Object;
-        closure_2 = Object.keys(arg1);
-        const item = arr.forEach((item) => {
-          if (!closure_2.includes(item)) {
-            if (null != survey.Questions[item]) {
-              const tmp4 = null != tmp2.ChoiceOrder && tmp2.QuestionType === constants2.MULTIPLE_CHOICE;
-              if (tmp4) {
-                if (survey.Questions[item].Selector === constants.MULTIPLE_ANSWER) {
-                  obj[item] = [];
-                }
-                const _HermesInternal = HermesInternal;
-                obj["" + item + "_DO"] = survey.Questions[item].ChoiceOrder;
-              }
-            }
-          }
-        });
-        return obj;
-      }
-    }
     let closure_0 = arg0;
-    let closure_1 = value;
-    if (c9 === 2) {
-      c9 = 3;
-      let str = "Generator functions may not be called on executing generators";
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else {
-      let tmp20 = value;
-      let tmp21 = arg0;
-      let tmp22 = tmp2;
-      let tmp23 = globalThis;
-      let tmp24 = null;
-      if (tmp3 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          const obj2 = { value, done: true };
-          return obj2;
+    let status = arg1;
+    let c8 = 0;
+    let c9 = 0;
+    let c6 = 0;
+    return (async (arg0, value) => {
+      let constants2;
+      let obj6;
+      let survey;
+      let tmp2;
+      let tmp27;
+      function parseSurveyResponses(arg0, arg1, arr) {
+        survey = survey.getSurvey(arg0);
+        if (null == survey) {
+          return null;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          obj = {};
+          const _Object2 = Object;
+          const entries = Object.entries(arg1);
+          const tmp44 = entries[Symbol.iterator]();
+          const tmp2 = entries;
+          let tmp4 = tmp44;
+          while (tmp44 !== undefined) {
+            let tmp6 = closure_3(tmp3, 2);
+            let first = tmp6[0];
+            let tmp8 = first;
+            let str = tmp6[1];
+            let tmp9 = survey.Questions[first];
+            let tmp10 = tmp9;
+            if (null != tmp9) {
+              let tmp46 = constants2;
+              if (tmp10.QuestionType === constants2.MULTIPLE_CHOICE) {
+                if (tmp10.Selector === constants.MULTIPLE_ANSWER) {
+                  obj[tmp8] = str.split(",");
+                  if (null != tmp10.ChoiceOrder) {
+                    let _HermesInternal4 = HermesInternal;
+                    obj["" + tmp8 + "_DO"] = tmp10.ChoiceOrder;
+                  }
+                }
+              }
+              if (tmp10.QuestionType === tmp46.MULTIPLE_CHOICE) {
+                if (tmp10.Selector === constants.SINGLE_ANSWER) {
+                  if (str.includes(":TEXT:")) {
+                    let first1 = str.split(":TEXT:", 2)[0];
+                    let _parseInt2 = parseInt;
+                    let tmp26 = str.split(":TEXT:", 2)[1];
+                    obj[tmp8] = parseInt(first1);
+                    let _HermesInternal2 = HermesInternal;
+                    let str2 = "";
+                    let str3 = "_";
+                    let str4 = "_TEXT";
+                    obj["" + first + "_" + first1 + "_TEXT"] = tmp26;
+                  } else {
+                    let _parseInt = parseInt;
+                    obj[tmp8] = parseInt(str);
+                  }
+                  if (null != tmp10.ChoiceOrder) {
+                    let _HermesInternal3 = HermesInternal;
+                    obj["" + tmp8 + "_DO"] = tmp10.ChoiceOrder;
+                  }
+                }
+              }
+              if (tmp10.QuestionType === tmp46.TEXT_ENTRY) {
+                let _HermesInternal = HermesInternal;
+                obj["" + tmp8 + "_TEXT"] = str;
+              } else {
+                obj[tmp8] = str;
+              }
+            }
+            continue;
+          }
+          const _Object = Object;
+          closure_2 = Object.keys(arg1);
+          const item = arr.forEach((item) => {
+            if (!closure_2.includes(item)) {
+              if (null != survey.Questions[item]) {
+                const tmp4 = null != tmp2.ChoiceOrder && tmp2.QuestionType === constants2.MULTIPLE_CHOICE;
+                if (tmp4) {
+                  if (survey.Questions[item].Selector === constants.MULTIPLE_ANSWER) {
+                    obj[item] = [];
+                  }
+                  const _HermesInternal = HermesInternal;
+                  obj["" + item + "_DO"] = survey.Questions[item].ChoiceOrder;
+                }
+              }
+            }
+          });
+          return obj;
         }
+      }
+      if (c9 === 2) {
+        c9 = 3;
+        let str = "Generator functions may not be called on executing generators";
+        throw new TypeError("Generator functions may not be called on executing generators");
       } else {
-        let c6;
-        try {
-          let closure_5;
-          c9 = 2;
-          let tmp4 = c8;
-          if (0 === c8) {
-            if (arg0 === 1) {
+        let tmp30 = value;
+        let tmp31 = arg0;
+        let tmp32 = tmp2;
+        let tmp33 = globalThis;
+        let tmp34 = null;
+        let str2 = "status";
+        if (tmp3 === 3) {
+          if (arg0 === 1) {
+            throw value;
+          } else if (arg0 === 2) {
+            return { value, done: true };
+          } else {
+            return { value: "HermesInternal", done: null };
+          }
+        } else {
+          try {
+            c9 = 2;
+            let tmp4 = c8;
+            if (0 === c8) {
+              if (arg0 === 1) {
+                c9 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c9 = 3;
+                return { value, done: true };
+              } else {
+                closure_5 = tmp;
+                closure_4 = tmp4;
+                let tmp36 = closure_0;
+                status = undefined;
+                let tmp37 = status;
+                state = state.getState();
+                const displayedQuestions = state.getDisplayedQuestions(closure_0);
+                closure_2 = displayedQuestions;
+                if (displayedQuestions == null) {
+                  closure_2 = [];
+                }
+                let tmp26 = parseSurveyResponses(tmp36, tmp37, closure_2);
+                if (null == tmp26) {
+                  c9 = 3;
+                  return { value: { responseId: "null", retryable: true }, done: true };
+                } else {
+                  c6 = 1;
+                  value = {};
+                  const HTTP = HTTPUtils.HTTP;
+                  const request = { url: Endpoints.EMBEDDED_SURVEY_RESPONSE(tmp36), body: obj6, rejectWithError: true };
+                  const post = HTTP.post;
+                  const _JSON = JSON;
+                  c8 = 2;
+                  c9 = 1;
+                  obj6 = { values_json: JSON.stringify(tmp26) };
+                  const obj7 = { value: post(request), done: false };
+                  return obj7;
+                }
+              }
+            } else if (1 === tmp4) {
+              let tmp8 = closure_5;
+              let tmp9 = survey;
+              let tmp10 = survey;
+              c6 = 0;
+              status = survey;
+              let tmp11 = closure_133_1;
+              let tmp12 = closure_133_2;
+              let tmp13 = status;
+              const obj3 = closure_133_1(closure_133_2[9]);
+              obj3.captureException(status);
+              let tmp15 = status;
+              status = null;
+              if (null != status) {
+                let tmp17 = closure_4;
+                let tmp18 = status;
+                status = null;
+                if (typeof status === "object") {
+                  let tmp35 = status;
+                  status = null;
+                  if ("status" in status) {
+                    let tmp19 = closure_4;
+                    let tmp20 = status;
+                    status = status.status;
+                  }
+                }
+              }
+              let tmp21 = closure_4;
+              let tmp22 = status;
+              let tmp23 = 400 === status;
+              if (!tmp23) {
+                let tmp24 = status;
+                tmp23 = 429 === status;
+              }
+              c9 = 3;
+              return { value: { responseId: "null", retryable: tmp23 }, done: true };
+            } else if (arg0 === 1) {
               c9 = 3;
               throw value;
             } else if (arg0 === 2) {
+              c6 = 0;
               c9 = 3;
-              const obj4 = { value, done: true };
-              return obj4;
+              return { value, done: true };
             } else {
-              closure_5 = tmp;
-              let closure_4 = tmp4;
-              let tmp27 = state;
-              let tmp26 = closure_1;
-              state = state.getState();
-              const displayedQuestions = state.getDisplayedQuestions(closure_0);
-              let closure_2 = displayedQuestions;
-              if (displayedQuestions == null) {
-                closure_2 = [];
-              }
-              let tmp15 = closure_2;
-              let tmp16 = parseSurveyResponses(tmp25, tmp26, closure_2);
-              if (null == tmp16) {
-                c9 = 3;
-                const obj5 = { value: { responseId: "null" }, done: true };
-                return obj5;
-              } else {
-                c6 = 1;
-                value = {};
-                let tmp29 = require;
-                let tmp30 = dependencyMap;
-                const HTTP = HTTPUtils.HTTP;
-                const request = { url: Endpoints.EMBEDDED_SURVEY_RESPONSE(closure_0), body: obj6, rejectWithError: true };
-                let tmp31 = Endpoints;
-                const post = HTTP.post;
-                obj6 = { values_json: JSON.stringify(tmp16) };
-                const _JSON = JSON;
-                c8 = 2;
-                c9 = 1;
-                const obj7 = { value: post(request), done: false };
-                return obj7;
-              }
+              let tmp5 = value;
+              value.responseId = value.body.responseId;
+              c6 = 0;
+              c9 = 3;
+              let tmp6 = value;
+              obj = { value, done: true };
+              return obj;
             }
-          } else if (1 === tmp4) {
-            let tmp8 = closure_5;
-            let tmp9 = survey;
-            let tmp10 = survey;
-            c6 = 0;
-            closure_0 = survey;
-            let tmp11 = closure_133_1;
-            let tmp12 = closure_133_2;
-            let tmp13 = closure_0;
-            const obj3 = closure_133_1(closure_133_2[9]);
-            obj3.captureException(closure_0);
-            c9 = 3;
-            const obj8 = { value: { responseId: "null" }, done: true };
-            return obj8;
-          } else if (arg0 === 1) {
-            c9 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c6 = 0;
-            c9 = 3;
-            const obj9 = { value, done: true };
-            return obj9;
-          } else {
-            let tmp5 = value;
-            value.responseId = value.body.responseId;
-            c6 = 0;
-            c9 = 3;
-            let tmp6 = value;
-            obj = { value, done: true };
-            return obj;
-          }
-        } catch (tmp17) {
-          let tmp18 = tmp17;
-          survey = tmp17;
-          let tmp19 = c6;
-          if (0 === c6) {
-            c9 = 3;
-            throw tmp17;
-          } else {
-            c8 = 1;
+          } catch (tmp27) {
+            let tmp28 = tmp27;
+            survey = tmp27;
+            let tmp29 = c6;
+            if (0 === c6) {
+              c9 = 3;
+              throw tmp27;
+            } else {
+              c8 = 1;
+            }
           }
         }
       }
-    }
+    })();
   });
   return obj(...arguments);
 };
@@ -334,7 +354,7 @@ obj = function _fireSurveyAction() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -393,7 +413,7 @@ obj = function _fireSurveyAction() {
             c5 = 0;
           }
           c7 = 3;
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp15) {
           if (0 === c5) {
             c7 = 3;

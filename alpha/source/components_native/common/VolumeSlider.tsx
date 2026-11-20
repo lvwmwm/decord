@@ -1,21 +1,21 @@
-// Module ID: 10918
-// Function ID: 10919
+// Module ID: 10860
+// Function ID: 10861
 // Name: VolumeSlider
-// Dependencies: [19, 17, 5537, 21, 1380, 4792, 575, 5356, 10919, 10908, 5696, 1113, 6915, 2]
+// Dependencies: [19, 17, 5539, 21, 1378, 4794, 575, 5358, 10861, 10850, 5698, 1112, 6914, 2]
 // Exports: default
 
-// Module 10918 (VolumeSlider)
+// Module 10860 (VolumeSlider)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import useToken2 from "useToken" /* 5356 */;
-import Constants from "Constants" /* 5537 */;
-import PerceptualVolumeUtils from "PerceptualVolumeUtils" /* 5696 */;
-import VoiceNormalIcon from "VoiceNormalIcon" /* 6915 */;
-import VoiceXIcon from "VoiceXIcon" /* 10919 */;
+import useToken2 from "useToken" /* 5358 */;
+import Constants from "Constants" /* 5539 */;
+import PerceptualVolumeUtils from "PerceptualVolumeUtils" /* 5698 */;
+import VoiceNormalIcon from "VoiceNormalIcon" /* 6914 */;
+import VoiceXIcon from "VoiceXIcon" /* 10861 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
-import createStyles from "createStyles" /* 4792 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -23,7 +23,7 @@ const require = globalThis.__r;
 let hasOwnProperty;
 let metroRequire;
 let tmp8;
-const _modDef10908 = tmp8(10908);
+const _modDef10850 = tmp8(10850);
 const View = react_native.View;
 let closure_4 = Constants.MAX_EMBEDDED_VOLUME_PERCEPTUAL;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
@@ -80,13 +80,13 @@ export default function VolumeSlider(maxTrackTintColor) {
     },
     onResponderGrant
   };
-  const tmp8Result = _modDef10908;
+  const tmp8Result = _modDef10850;
   const tmp10 = View;
   tmp5Result = PerceptualVolumeUtils;
   const tmp9 = closure_6;
   if (accessibilityLabel == null) {
-    const intl = tmp5(1113).intl;
-    accessibilityLabel = intl.string(tmp5(1113).t.xPHVBs);
+    const intl = tmp5(1112).intl;
+    accessibilityLabel = intl.string(tmp5(1112).t.xPHVBs);
   }
   if (onResponderGrant == null) {
     let fn;

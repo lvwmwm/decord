@@ -1,13 +1,13 @@
-// Module ID: 17881
-// Function ID: 17882
+// Module ID: 17708
+// Function ID: 17709
 // Name: useInterestCoverColor
-// Dependencies: [5, 32, 19, 4799, 1456, 671, 1493, 2]
+// Dependencies: [5, 32, 19, 4801, 1454, 671, 1491, 2]
 // Exports: coverArtColor, default
 
-// Module 17881 (useInterestCoverColor)
+// Module 17708 (useInterestCoverColor)
 import _modDef671 from "module_671" /* 671 */;
-import LRUCacheDefault from "LRUCache" /* 1456 */;
-import shared from "shared" /* 4799 */;
+import LRUCacheDefault from "LRUCache" /* 1454 */;
+import shared from "shared" /* 4801 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -81,7 +81,7 @@ function fetchInterestCoverColor(arg0, uri) {
           obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c2;
@@ -206,7 +206,7 @@ export default function useInterestCoverColor(arg0, arg1) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -243,7 +243,7 @@ export default function useInterestCoverColor(arg0, arg1) {
                 c2(obj);
               }
               c3 = 3;
-              return { value: "HermesInternal", done: "+60" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp16) {
             c3 = 3;

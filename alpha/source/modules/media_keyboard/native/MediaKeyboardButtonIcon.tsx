@@ -1,16 +1,16 @@
-// Module ID: 13010
-// Function ID: 13011
+// Module ID: 12980
+// Function ID: 12981
 // Name: MediaKeyboardButtonIcon
-// Dependencies: [19, 21, 4979, 1655, 1628, 5002, 5005, 10138, 2]
+// Dependencies: [19, 21, 4981, 1653, 1626, 5004, 5007, 10141, 2]
 // Exports: MediaKeyboardButtonIcon
 
-// Module 13010 (MediaKeyboardButtonIcon)
+// Module 12980 (MediaKeyboardButtonIcon)
 import Fragment from "Fragment" /* 21 */;
-import KeyboardTypes from "KeyboardTypes" /* 1628 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import useKeyboardTypeDefault from "useKeyboardType" /* 4979 */;
-import timing_timing from "timing/timing" /* 5002 */;
-import timingPresets from "timingPresets" /* 5005 */;
+import KeyboardTypes from "KeyboardTypes" /* 1626 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import useKeyboardTypeDefault from "useKeyboardType" /* 4981 */;
+import timing_timing from "timing/timing" /* 5004 */;
+import timingPresets from "timingPresets" /* 5007 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -33,8 +33,8 @@ export function MediaKeyboardButtonIcon(arg0) {
     const merged = Object.assign(arg0, undefined);
     let items = [closure_4, useKeyboardTypeDefault(), , , ];
     const tmp15 = useKeyboardTypeDefault();
-    const useAnimatedStyle = _mod1655.useAnimatedStyle;
-    _mod1655;
+    const useAnimatedStyle = _mod1653.useAnimatedStyle;
+    _mod1653;
     items[2] = KeyboardTypes.KeyboardTypes;
     items[3] = timing_timing.withTiming;
     items[4] = timingPresets.timingStandard;
@@ -66,9 +66,9 @@ export function MediaKeyboardButtonIcon(arg0) {
     MediaKeyboardButtonIconTsx1.__workletHash = 8539740243314;
     MediaKeyboardButtonIconTsx1.__initData = tmp;
     const animatedStyle = useAnimatedStyle(MediaKeyboardButtonIconTsx1);
-    const View = tmp13(1655).View;
+    const View = tmp13(1653).View;
     const obj2 = {};
-    const PlusLargeIcon = tmp16(10138).PlusLargeIcon;
+    const PlusLargeIcon = tmp16(10141).PlusLargeIcon;
     const merged1 = Object.assign(merged);
     return <View style={animatedStyle}>{null}</View>;
   }

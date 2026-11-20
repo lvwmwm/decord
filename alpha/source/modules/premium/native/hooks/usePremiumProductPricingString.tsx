@@ -1,12 +1,12 @@
 // Module ID: 9373
 // Function ID: 9374
 // Name: usePremiumProductPricingString
-// Dependencies: [1390, 9374, 2174, 2]
+// Dependencies: [1388, 9374, 2172, 2]
 // Exports: default
 
 // Module 9373 (usePremiumProductPricingString)
-import PremiumConstants from "PremiumConstants" /* 1390 */;
-import PremiumUtils from "PremiumUtils" /* 2174 */;
+import PremiumConstants from "PremiumConstants" /* 1388 */;
+import PremiumUtils from "PremiumUtils" /* 2172 */;
 import usePremiumPlanPriceDefault from "usePremiumPlanPrice" /* 9374 */;
 import size from "module_2" /* 2 */;
 

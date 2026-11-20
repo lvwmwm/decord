@@ -1,18 +1,18 @@
-// Module ID: 13441
-// Function ID: 13442
+// Module ID: 13411
+// Function ID: 13412
 // Name: Tabs
-// Dependencies: [19, 17, 2189, 21, 1655, 4792, 575, 5393, 10594, 1708, 13442, 5052, 1380, 2]
+// Dependencies: [19, 17, 2187, 21, 1653, 4794, 575, 5395, 10536, 1706, 13412, 5054, 1378, 2]
 // Exports: Tabs
 
-// Module 13441 (Tabs)
+// Module 13411 (Tabs)
 import nativeDefault from "native" /* 575 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5052 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5054 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import LocaleStore from "LocaleStore" /* 2189 */;
+import LocaleStore from "LocaleStore" /* 2187 */;
 import Fragment from "Fragment" /* 21 */;
-import module_1655 from "module_1655" /* 1655 */;
-import createStyles from "createStyles" /* 4792 */;
+import module_1653 from "module_1653" /* 1653 */;
+import createStyles from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let count;
@@ -26,7 +26,7 @@ function defaultCountFormatter(toLocaleString) {
 }
 ({ View: closure_4, ScrollView } = react_native);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
-let closure_8 = module_1655.createAnimatedComponent(ScrollView);
+let closure_8 = module_1653.createAnimatedComponent(ScrollView);
 let closure_9 = { mass: 0.3, damping: 13, stiffness: 100, overshootClamping: true };
 let closure_10 = createStyles.createStyles((gap, arg1) => {
   let TEXT_BRAND;

@@ -1,25 +1,25 @@
-// Module ID: 13906
-// Function ID: 13907
+// Module ID: 13875
+// Function ID: 13876
 // Name: BadgeRarityPill
-// Dependencies: [19, 17, 21, 575, 1392, 13907, 1113, 13909, 4789, 13911, 13913, 4792, 4799, 5001, 5383, 2]
+// Dependencies: [19, 17, 21, 575, 1390, 13876, 1112, 13878, 4791, 13880, 13882, 4794, 4801, 5003, 5385, 2]
 // Exports: default
 
-// Module 13906 (BadgeRarityPill)
+// Module 13875 (BadgeRarityPill)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl5 from "intl" /* 1113 */;
-import BadgeRarity from "BadgeRarity" /* 1392 */;
-import ColorUtils from "ColorUtils" /* 4789 */;
-import shared from "shared" /* 4799 */;
-import useThemeDefault from "useTheme" /* 5001 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import ExperimentalCommonIcon from "ExperimentalCommonIcon" /* 13907 */;
-import ExperimentalRareIcon from "ExperimentalRareIcon" /* 13909 */;
-import ExperimentalEpicIcon from "ExperimentalEpicIcon" /* 13911 */;
-import ExperimentalMythicIcon from "ExperimentalMythicIcon" /* 13913 */;
+import intl5 from "intl" /* 1112 */;
+import BadgeRarity from "BadgeRarity" /* 1390 */;
+import ColorUtils from "ColorUtils" /* 4791 */;
+import shared from "shared" /* 4801 */;
+import useThemeDefault from "useTheme" /* 5003 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import ExperimentalCommonIcon from "ExperimentalCommonIcon" /* 13876 */;
+import ExperimentalRareIcon from "ExperimentalRareIcon" /* 13878 */;
+import ExperimentalEpicIcon from "ExperimentalEpicIcon" /* 13880 */;
+import ExperimentalMythicIcon from "ExperimentalMythicIcon" /* 13882 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -52,24 +52,24 @@ export default function BadgeRarityPill(rarity) {
   const unsafe_rawColors = nativeDefault.unsafe_rawColors;
   if (BadgeRarity.BadgeRarity.COMMON === rarity) {
     const obj2 = { Icon: ExperimentalCommonIcon.ExperimentalCommonIcon, label: intl3.string(intl5.t.L0K5ci), background: null, border: null, text: isThemeLightResult ? unsafe_rawColors.NEUTRAL_45 : unsafe_rawColors.NEUTRAL_15 };
-    intl3 = tmp2(1113).intl;
+    intl3 = tmp2(1112).intl;
     ({ OPACITY_24: obj6.background, NEUTRAL_35: obj6.border } = unsafe_rawColors);
     tmp5 = obj2;
   } else if (BadgeRarity.BadgeRarity.RARE === rarity) {
     const obj3 = { Icon: ExperimentalRareIcon.ExperimentalRareIcon, label: intl2.string(intl5.t["sTx/5z"]), background: tmp2Result.hexOpacityToRgba(unsafe_rawColors.ILLO_BLUE_40, c6), border: unsafe_rawColors.ILLO_BLUE_40, text: isThemeLightResult ? unsafe_rawColors.ILLO_BLUE_50 : unsafe_rawColors.ILLO_BLUE_30 };
-    intl2 = tmp2(1113).intl;
+    intl2 = tmp2(1112).intl;
     tmp5 = obj3;
     tmp2Result = ColorUtils;
   } else if (BadgeRarity.BadgeRarity.EPIC === rarity) {
     const obj4 = { Icon: ExperimentalEpicIcon.ExperimentalEpicIcon, label: intl.string(intl5.t.RD8RiN), background: tmp2Result3.hexOpacityToRgba(unsafe_rawColors.ILLO_PURPLE_40, c6), border: unsafe_rawColors.ILLO_PURPLE_40, text: isThemeLightResult ? unsafe_rawColors.ILLO_PURPLE_50 : unsafe_rawColors.ILLO_PURPLE_30 };
-    intl = tmp2(1113).intl;
+    intl = tmp2(1112).intl;
     tmp5 = obj4;
     tmp2Result3 = ColorUtils;
   } else {
     tmp5 = null;
     if (BadgeRarity.BadgeRarity.MYTHIC === rarity) {
       const obj5 = { Icon: ExperimentalMythicIcon.ExperimentalMythicIcon, label: intl4.string(intl5.t.vqc1ol), background: tmp2Result4.hexOpacityToRgba(unsafe_rawColors.ILLO_ORANGE_40, c6), border: unsafe_rawColors.ILLO_ORANGE_40, text: isThemeLightResult ? unsafe_rawColors.ILLO_ORANGE_50 : unsafe_rawColors.ILLO_ORANGE_30 };
-      intl4 = tmp2(1113).intl;
+      intl4 = tmp2(1112).intl;
       tmp5 = obj5;
       tmp2Result4 = ColorUtils;
     }

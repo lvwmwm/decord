@@ -1,10 +1,10 @@
-// Module ID: 5467
-// Function ID: 5468
+// Module ID: 5469
+// Function ID: 5470
 // Name: openURL
-// Dependencies: [5, 5468, 7142, 2121, 2]
+// Dependencies: [5, 5470, 7141, 2119, 2]
 // Exports: default
 
-// Module 5467 (openURL)
+// Module 5469 (openURL)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ let obj = function _openURL() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -57,7 +57,7 @@ let obj = function _openURL() {
             obj = { skipExtensionCheck, analyticsLocations: [] };
             value.default(closure_0, obj);
             c4 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp14) {
           c4 = 3;

@@ -1,13 +1,13 @@
-// Module ID: 13680
-// Function ID: 13681
+// Module ID: 13651
+// Function ID: 13652
 // Name: useConjureHomeOwnProjects
-// Dependencies: [6806, 6500, 504, 13681, 6807, 13682, 2]
+// Dependencies: [6806, 6502, 504, 13652, 6807, 13653, 2]
 // Exports: default, useConjureProjectsByActivity
 
-// Module 13680 (useConjureHomeOwnProjects)
-import conjureHomeProjectOrder from "conjureHomeProjectOrder" /* 13681 */;
+// Module 13651 (useConjureHomeOwnProjects)
+import conjureHomeProjectOrder from "conjureHomeProjectOrder" /* 13652 */;
 import ConjureChatStore from "ConjureChatStore" /* 6806 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6500 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6502 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -17,14 +17,14 @@ const result = size.fileFinishedImporting("modules/conjure/home/useConjureHomeOw
 
 export default function useConjureHomeOwnProjects() {
   let ownedProjects;
-  const f106144 = () => ownedProjects.getOwnedProjects();
-  let obj = f106144(504);
+  const f104470 = () => ownedProjects.getOwnedProjects();
+  let obj = f104470(504);
   const items = [ConjureProjectStore, ConjureChatStore];
   return obj.useStateFromStoresArray(items, () => {
     let messages;
     let tmp = conjureHomeProjectOrder;
     const sortConjureProjectsByActivity = tmp.sortConjureProjectsByActivity;
-    const arr = f106144();
+    const arr = f104470();
     return sortConjureProjectsByActivity(arr.map((id) => {
       let conjureTurnStartedAtResult;
       let obj2;
@@ -54,7 +54,7 @@ export function useConjureProjectsByActivity(getListedConjureProjects, items) {
     let messages;
     let tmp = conjureHomeProjectOrder;
     const sortConjureProjectsByActivity = tmp.sortConjureProjectsByActivity;
-    const arr = f106144();
+    const arr = f104470();
     return sortConjureProjectsByActivity(arr.map((id) => {
       let conjureTurnStartedAtResult;
       let obj2;

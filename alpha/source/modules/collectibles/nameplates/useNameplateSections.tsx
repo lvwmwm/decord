@@ -1,16 +1,16 @@
-// Module ID: 15815
-// Function ID: 15816
+// Module ID: 15779
+// Function ID: 15780
 // Name: useNameplateSections
-// Dependencies: [32, 19, 7956, 7971, 563, 7968, 1113, 14165, 2]
+// Dependencies: [32, 19, 7955, 7970, 563, 7967, 1112, 14134, 2]
 // Exports: default
 
-// Module 15815 (useNameplateSections)
+// Module 15779 (useNameplateSections)
 import react from "react" /* 19 */;
-import intl4 from "intl" /* 1113 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7968 */;
+import intl4 from "intl" /* 1112 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7967 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7956 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7971 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7955 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7970 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, premium_purchase;
@@ -88,7 +88,7 @@ export default function useNameplateSections() {
     items1[2] = obj4;
     return items1.filter((items) => items.items.length > 0);
   }, items2);
-  return first(14165)(tmp5, obj.PREVIEW);
+  return first(14134)(tmp5, obj.PREVIEW);
 };
 export { Section };
 export const NONE_ITEM = obj2;

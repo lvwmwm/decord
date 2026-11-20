@@ -1,20 +1,20 @@
-// Module ID: 7366
-// Function ID: 7367
+// Module ID: 7365
+// Function ID: 7366
 // Name: NotificationSettingsModalActionCreators
-// Dependencies: [5, 6431, 1072, 4737, 1082, 572, 7361, 7363, 11, 4799, 1113, 1406, 1285, 2]
+// Dependencies: [5, 6433, 1071, 4739, 1081, 572, 7360, 7362, 11, 4801, 1112, 1404, 1284, 2]
 
-// Module 7366 (NotificationSettingsModalActionCreators)
+// Module 7365 (NotificationSettingsModalActionCreators)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import Constants from "Constants" /* 1072 */;
-import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
-import intl2 from "intl" /* 1113 */;
-import NotificationConstants from "NotificationConstants" /* 4737 */;
-import shared from "shared" /* 4799 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7361 */;
-import UserGuildSettingsManagerDefault from "UserGuildSettingsManager" /* 7363 */;
+import Constants from "Constants" /* 1071 */;
+import UserSettingsConstants from "UserSettingsConstants" /* 1081 */;
+import intl2 from "intl" /* 1112 */;
+import NotificationConstants from "NotificationConstants" /* 4739 */;
+import shared from "shared" /* 4801 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7360 */;
+import UserGuildSettingsManagerDefault from "UserGuildSettingsManager" /* 7362 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6431 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6433 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -96,8 +96,8 @@ let obj = {
       message = accessibilityAnnouncement.message;
     }
     if (message == null) {
-      const intl = tmp(1113).intl;
-      message = intl.string(tmp(1113).t.MlIsJ8);
+      const intl = tmp(1112).intl;
+      message = intl.string(tmp(1112).t.MlIsJ8);
     }
     let assertiveness;
     if (accessibilityAnnouncement != null) {
@@ -184,7 +184,7 @@ let obj = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -239,7 +239,7 @@ let obj = {
             return obj;
           } else {
             c3 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp10) {
           c3 = 3;

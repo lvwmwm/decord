@@ -1,18 +1,18 @@
-// Module ID: 10715
-// Function ID: 10716
+// Module ID: 10657
+// Function ID: 10658
 // Name: getEmbeddedActivityJoinability
-// Dependencies: [4641, 4663, 4724, 1388, 5440, 1072, 10716, 5827, 10601, 504, 6298, 2]
+// Dependencies: [4643, 4665, 4726, 1386, 5442, 1071, 10658, 5829, 10543, 504, 6300, 2]
 // Exports: useEmbeddedActivityJoinability
 
-// Module 10715 (getEmbeddedActivityJoinability)
-import Constants from "Constants" /* 1072 */;
-import ChannelUtils from "ChannelUtils" /* 5827 */;
-import isActivitySupportedOnClientPlatformDefault from "isActivitySupportedOnClientPlatform" /* 10716 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import GuildStore from "GuildStore" /* 4663 */;
-import PermissionStore from "PermissionStore" /* 4724 */;
-import UserStore from "UserStore" /* 1388 */;
-import VoiceStateStore from "VoiceStateStore" /* 5440 */;
+// Module 10657 (getEmbeddedActivityJoinability)
+import Constants from "Constants" /* 1071 */;
+import ChannelUtils from "ChannelUtils" /* 5829 */;
+import isActivitySupportedOnClientPlatformDefault from "isActivitySupportedOnClientPlatform" /* 10658 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import GuildStore from "GuildStore" /* 4665 */;
+import PermissionStore from "PermissionStore" /* 4726 */;
+import UserStore from "UserStore" /* 1386 */;
+import VoiceStateStore from "VoiceStateStore" /* 5442 */;
 import size from "module_2" /* 2 */;
 
 function getEmbeddedActivityJoinability(arg0) {

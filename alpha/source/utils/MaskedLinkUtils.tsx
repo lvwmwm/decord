@@ -1,20 +1,20 @@
-// Module ID: 7136
-// Function ID: 7137
+// Module ID: 7135
+// Function ID: 7136
 // Name: MaskedLinkUtils
-// Dependencies: [7137, 4641, 4663, 7138, 5843, 4734, 4695, 1072, 2070, 5739, 1113, 1256, 7139, 6550, 7140, 7142, 5467, 14617, 14621, 5818, 14622, 14624, 2]
+// Dependencies: [7136, 4643, 4665, 7137, 5845, 4736, 4697, 1071, 2068, 5741, 1112, 1255, 7138, 6552, 7139, 7141, 5469, 14585, 14589, 5820, 14590, 14592, 2]
 // Exports: handleClick, isLinkTrusted
 
-// Module 7136 (MaskedLinkUtils)
-import openURLDefault from "openURL" /* 5467 */;
-import LinkAnalyticsUtilsDefault from "LinkAnalyticsUtils" /* 7140 */;
-import BlockedDomainStore from "BlockedDomainStore" /* 7137 */;
-import ChannelStore_mod from "ChannelStore" /* 4641 */;
-import GuildStore from "GuildStore" /* 4663 */;
-import MaskedLinkStore from "MaskedLinkStore" /* 7138 */;
-import MessageStore from "MessageStore" /* 5843 */;
-import RelationshipStore from "RelationshipStore" /* 4734 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4695 */;
-import Constants from "Constants" /* 1072 */;
+// Module 7135 (MaskedLinkUtils)
+import openURLDefault from "openURL" /* 5469 */;
+import LinkAnalyticsUtilsDefault from "LinkAnalyticsUtils" /* 7139 */;
+import BlockedDomainStore from "BlockedDomainStore" /* 7136 */;
+import ChannelStore_mod from "ChannelStore" /* 4643 */;
+import GuildStore from "GuildStore" /* 4665 */;
+import MaskedLinkStore from "MaskedLinkStore" /* 7137 */;
+import MessageStore from "MessageStore" /* 5845 */;
+import RelationshipStore from "RelationshipStore" /* 4736 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4697 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -73,15 +73,15 @@ export function handleClick(href, preventDefault, arg2, contextKey) {
     };
   }
   let tmp = channelId;
-  let obj = channelId(2070);
+  let obj = channelId(2068);
   const sanitizeUrlResult = obj.sanitizeUrl(href.href);
   if (null == sanitizeUrlResult) {
     if (null != preventDefault) {
       preventDefault.preventDefault();
     }
     let obj2 = { title: intl.string(require("intl").t.x87gan), body: intl2.format(require("intl").t["9rqRwl"], obj3), isDismissable: true, contextKey };
-    const show3 = tmp(5739).show;
-    tmp(5739);
+    const show3 = tmp(5741).show;
+    tmp(5741);
     intl = require("intl").intl;
     intl2 = require("intl").intl;
     obj3 = { url: href.href };
@@ -222,19 +222,19 @@ export function handleClick(href, preventDefault, arg2, contextKey) {
       }
       if (hasItem1) {
         const obj5 = { url_domain: obj4.getHostname(tmp6), guild_id: guild1.id, channel_id: channel.id };
-        const track = tmp(1256).track;
+        const track = tmp(1255).track;
         const URL_CLICKED = constants2.URL_CLICKED;
-        tmp(1256);
+        tmp(1255);
         obj4 = require("MaskedLinkStoreMethodsAdditional");
         track(URL_CLICKED, obj5);
       }
-      if (tmp(6550)(channelId)) {
+      if (tmp(6552)(channelId)) {
         const obj6 = { cta_type: "inline_link", target: tmp6 };
-        const tmpResult9 = tmp(1256);
+        const tmpResult9 = tmp(1255);
         tmpResult9.track(constants2.CHANGE_LOG_CTA_CLICKED, obj6);
       }
     }
-    const tmpResult10 = tmp(7140);
+    const tmpResult10 = tmp(7139);
     tmpResult10.trackLinkClicked(tmp6);
     if (null == onClick) {
       const obj7 = { skipExtensionCheck: "a", analyticsLocations: items, messageId, channelId };
@@ -244,7 +244,7 @@ export function handleClick(href, preventDefault, arg2, contextKey) {
       if (preventDefault != null) {
         preventDefault.preventDefault();
       }
-      const tmpResult11 = tmp(14617);
+      const tmpResult11 = tmp(14585);
       tmpResult11.show(tmp6);
       onCancel();
     } else {
@@ -277,8 +277,8 @@ export function handleClick(href, preventDefault, arg2, contextKey) {
         }
         if (!("http:" === protocol || "https:" === protocol)) {
           const obj8 = { url: tmp6, trustUrl: require("MaskedLinkActionCreators").trustProtocol, onConfirm: handleConfirm, onCancel, isProtocol: true, contextKey };
-          const show2 = tmp(14622).show;
-          tmp(14622);
+          const show2 = tmp(14590).show;
+          tmp(14590);
           show2(obj8);
         } else {
           const tmp52Result = require("MarkupLinkRule");
@@ -288,8 +288,8 @@ export function handleClick(href, preventDefault, arg2, contextKey) {
             displayTarget = punycodeLinkResult.displayTarget;
           }
           const obj10 = { url: displayTarget, trustUrl: require("MaskedLinkActionCreators").trustDomain, onConfirm: handleConfirm, onCancel, isProtocol: false, contextKey };
-          const show = tmp(14622).show;
-          tmp(14622);
+          const show = tmp(14590).show;
+          tmp(14590);
           show(obj10);
         }
       }
@@ -297,7 +297,7 @@ export function handleClick(href, preventDefault, arg2, contextKey) {
         handleConfirm();
       } else if (flag2) {
         const obj11 = { messageId: tmp11, channelId, guildId: tmp12, sourceChannelId: tmp10, sourceGuildId: tmp9 };
-        const tmpResult14 = tmp(7140);
+        const tmpResult14 = tmp(7139);
         let result = tmpResult14.trackAnnouncementMessageLinkClicked(obj11);
       }
     }

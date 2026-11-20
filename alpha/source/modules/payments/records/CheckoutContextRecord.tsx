@@ -1,13 +1,13 @@
 // Module ID: 8994
 // Function ID: 8995
 // Name: CheckoutContextRecord
-// Dependencies: [32, 1408, 6739, 6737, 2]
+// Dependencies: [32, 1406, 6739, 6737, 2]
 
 // Module 8994 (CheckoutContextRecord)
 import PriceUtils from "PriceUtils" /* 6737 */;
 import _modDef6739 from "module_6739" /* 6739 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import Record from "Record" /* 1408 */;
+import Record from "Record" /* 1406 */;
 import size from "module_2" /* 2 */;
 
 let checkout_context, map, set;

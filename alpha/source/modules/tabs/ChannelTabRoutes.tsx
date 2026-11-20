@@ -1,17 +1,17 @@
-// Module ID: 9963
-// Function ID: 9964
+// Module ID: 9966
+// Function ID: 9967
 // Name: ChannelTabRoutes
-// Dependencies: [1072, 4648, 4843, 4830, 1113, 4089, 1100, 2]
+// Dependencies: [1071, 4650, 4845, 4832, 1112, 4091, 1099, 2]
 // Exports: getChannelTabPageName, getFriendsTabLocation, getTabLocationForPath, isSameTabLocation
 
-// Module 9963 (ChannelTabRoutes)
-import _mod1100 from "module_1100" /* 1100 */;
-import intl6 from "intl" /* 1113 */;
-import _modDef4089 from "module_4089" /* 4089 */;
-import matchPathCompat from "matchPathCompat" /* 4830 */;
-import RouteUtils from "RouteUtils" /* 4843 */;
-import Constants from "Constants" /* 1072 */;
-import ChannelConstants from "ChannelConstants" /* 4648 */;
+// Module 9966 (ChannelTabRoutes)
+import _mod1099 from "module_1099" /* 1099 */;
+import intl6 from "intl" /* 1112 */;
+import _modDef4091 from "module_4091" /* 4091 */;
+import matchPathCompat from "matchPathCompat" /* 4832 */;
+import RouteUtils from "RouteUtils" /* 4845 */;
+import Constants from "Constants" /* 1071 */;
+import ChannelConstants from "ChannelConstants" /* 4650 */;
 import size from "module_2" /* 2 */;
 
 let Routes;
@@ -58,8 +58,8 @@ function getRouteTabForLocation(location) {
     const tmp2 = require;
     if (null != obj.matchPath(pathname, obj6)) {
       const _HermesInternal = HermesInternal;
-      const obj7 = { kind: "route", routePath: "" + pathname + search + str, routeLabel: intl.string(_modDef4089.uk6jhJ) };
-      intl = tmp2(1113).intl;
+      const obj7 = { kind: "route", routePath: "" + pathname + search + str, routeLabel: intl.string(_modDef4091.uk6jhJ) };
+      intl = tmp2(1112).intl;
       tmp5 = obj7;
     }
   }
@@ -106,7 +106,7 @@ export function getFriendsTabLocation() {
 export { getRouteTabForLocation };
 export function getTabLocationForPath(path) {
   let tmp9;
-  const obj = _mod1100;
+  const obj = _mod1099;
   const parsePathResult = obj.parsePath(path);
   const pathname = parsePathResult.pathname;
   const obj2 = { pathname, search: parsePathResult.search, hash: parsePathResult.hash };

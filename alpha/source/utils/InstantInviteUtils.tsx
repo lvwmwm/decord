@@ -1,21 +1,21 @@
-// Module ID: 7935
-// Function ID: 7936
+// Module ID: 7934
+// Function ID: 7935
 // Name: InstantInviteUtils
-// Dependencies: [4640, 4641, 4704, 6498, 4734, 1388, 6723, 1072, 6435, 7148, 7936, 1113, 2]
+// Dependencies: [4642, 4643, 4706, 6500, 4736, 1386, 6723, 1071, 6437, 7147, 7935, 1112, 2]
 // Exports: generateRowsForQuery, getMostRecentDMedUser, getUsersAlreadyJoined, groupInviteSuggestions, maxAgeString, urgentShareMessageString
 
-// Module 7935 (InstantInviteUtils)
-import Constants from "Constants" /* 1072 */;
-import intl6 from "intl" /* 1113 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6435 */;
-import InviteTargetTypes from "InviteTargetTypes" /* 7148 */;
-import utils_InstantInviteUtils from "utils/InstantInviteUtils" /* 7936 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4640 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import GuildMemberStore from "GuildMemberStore" /* 4704 */;
-import ReadStateStore from "ReadStateStore" /* 6498 */;
-import RelationshipStore from "RelationshipStore" /* 4734 */;
-import UserStore from "UserStore" /* 1388 */;
+// Module 7934 (InstantInviteUtils)
+import Constants from "Constants" /* 1071 */;
+import intl6 from "intl" /* 1112 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6437 */;
+import InviteTargetTypes from "InviteTargetTypes" /* 7147 */;
+import utils_InstantInviteUtils from "utils/InstantInviteUtils" /* 7935 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4642 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import GuildMemberStore from "GuildMemberStore" /* 4706 */;
+import ReadStateStore from "ReadStateStore" /* 6500 */;
+import RelationshipStore from "RelationshipStore" /* 4736 */;
+import UserStore from "UserStore" /* 1386 */;
 import PrivateChannelSortStore from "PrivateChannelSortStore" /* 6723 */;
 import size from "module_2" /* 2 */;
 
@@ -370,7 +370,7 @@ export function generateRowsForQuery(arg0) {
       _require = undefined;
       importDefault = undefined;
       ({ rows: c0, counts: c1, query: query5, inviteTargetType: inviteTargetType2 } = obj10);
-      if (inviteTargetType2 === tmp39(7148).InviteTargetTypes.EMBEDDED_APPLICATION) {
+      if (inviteTargetType2 === tmp39(7147).InviteTargetTypes.EMBEDDED_APPLICATION) {
         let obj2 = AutocompleteUtilsDefault;
         const obj12 = { query: query5, limit: 3, guildId: "channel_id" };
         const queryChannelsResult = obj2.queryChannels(obj12);
@@ -553,10 +553,10 @@ export function maxAgeString(maxAge, maxUses) {
     let stringResult;
     const intl4 = intl6.intl;
     if (0 === maxUses) {
-      stringResult = intl4.string(tmp12(1113).t["/WbTXD"]);
+      stringResult = intl4.string(tmp12(1112).t["/WbTXD"]);
     } else {
       const obj2 = { numUses: maxUses };
-      stringResult = intl4.formatToPlainString(tmp12(1113).t.eDRWJK, obj2);
+      stringResult = intl4.formatToPlainString(tmp12(1112).t.eDRWJK, obj2);
     }
     return stringResult;
   } else if (hours === type) {
@@ -589,10 +589,10 @@ export function maxAgeString(maxAge, maxUses) {
     let stringResult1;
     const intl = intl6.intl;
     if (0 === maxUses) {
-      stringResult1 = intl.string(tmp3(1113).t.QrHBnC);
+      stringResult1 = intl.string(tmp3(1112).t.QrHBnC);
     } else {
       obj = { numUses: maxUses };
-      stringResult1 = intl.formatToPlainString(tmp3(1113).t.yJnTxI, obj);
+      stringResult1 = intl.formatToPlainString(tmp3(1112).t.yJnTxI, obj);
     }
     return stringResult1;
   } else {

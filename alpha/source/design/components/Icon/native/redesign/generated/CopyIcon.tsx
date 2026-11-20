@@ -1,14 +1,14 @@
-// Module ID: 5492
-// Function ID: 5493
+// Module ID: 5494
+// Function ID: 5495
 // Name: CopyIcon
-// Dependencies: [19, 21, 575, 5478, 5493, 2]
+// Dependencies: [19, 21, 575, 5480, 5495, 2]
 // Exports: CopyIcon
 
-// Module 5492 (CopyIcon)
+// Module 5494 (CopyIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5478 */;
-import AssetRegistry from "AssetRegistry" /* 5493 */;
+import BaseIconImage2 from "BaseIconImage" /* 5480 */;
+import AssetRegistry from "AssetRegistry" /* 5495 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

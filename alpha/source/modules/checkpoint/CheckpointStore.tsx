@@ -1,16 +1,16 @@
-// Module ID: 12400
-// Function ID: 12401
+// Module ID: 12370
+// Function ID: 12371
 // Name: CheckpointStore
-// Dependencies: [1388, 2110, 5893, 5892, 12401, 12402, 6217, 504, 572, 2]
+// Dependencies: [1386, 2108, 5895, 5894, 12371, 12372, 6219, 504, 572, 2]
 
-// Module 12400 (CheckpointStore)
+// Module 12370 (CheckpointStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import PremiumTypeUtils from "PremiumTypeUtils" /* 2110 */;
-import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 5892 */;
-import CheckpointTrait from "CheckpointTrait" /* 5893 */;
-import CheckpointFlows from "CheckpointFlows" /* 12402 */;
-import UserStore from "UserStore" /* 1388 */;
+import PremiumTypeUtils from "PremiumTypeUtils" /* 2108 */;
+import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 5894 */;
+import CheckpointTrait from "CheckpointTrait" /* 5895 */;
+import CheckpointFlows from "CheckpointFlows" /* 12372 */;
+import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -289,7 +289,7 @@ let obj4 = {
         if (progress != null) {
           stage1 = progress.stage;
         }
-        if (stage1 === tmp8(6217).CheckpointCharacterStage.SUMMARY) {
+        if (stage1 === tmp8(6219).CheckpointCharacterStage.SUMMARY) {
           return false;
         } else {
           let tmp3 = c13;

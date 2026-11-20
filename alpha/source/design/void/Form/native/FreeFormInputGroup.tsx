@@ -1,19 +1,19 @@
-// Module ID: 7100
-// Function ID: 7101
+// Module ID: 7099
+// Function ID: 7100
 // Name: FreeFormInputGroup
-// Dependencies: [19, 17, 21, 4792, 1380, 7101, 7102, 1187, 7129, 7130, 7132, 5383, 2]
+// Dependencies: [19, 17, 21, 4794, 1378, 7100, 7101, 1186, 7128, 7129, 7131, 5385, 2]
 // Exports: default
 
-// Module 7100 (FreeFormInputGroup)
+// Module 7099 (FreeFormInputGroup)
 import react_native from "react-native" /* 17 */;
-import native from "native" /* 1187 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
-import RedesignCompat from "RedesignCompat" /* 7101 */;
-import FreeFormLabelDefault from "FreeFormLabel" /* 7129 */;
-import FreeFormTextInputDefault from "FreeFormTextInput" /* 7130 */;
+import native from "native" /* 1186 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
+import RedesignCompat from "RedesignCompat" /* 7100 */;
+import FreeFormLabelDefault from "FreeFormLabel" /* 7128 */;
+import FreeFormTextInputDefault from "FreeFormTextInput" /* 7129 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -67,7 +67,7 @@ export default (textStyle) => {
   if (context) {
     ({ placeholder, onChangeText, clearButtonVisibility } = merged);
     const obj3 = { containerStyle: style, value, label, errorMessage: error, description: hint, placeholder, onChange: onChangeText, clearable: clearButtonVisibility !== native.ClearButtonVisibility.WITH_CONTENT, keyboardType: str, secureTextEntry: isAndroidResult, autoCapitalize: merged.autoCapitalize };
-    const TextInput = tmp8(7102).TextInput;
+    const TextInput = tmp8(7101).TextInput;
     return hasOwnProperty(TextInput, obj3);
   } else {
     let tmp14 = null;
@@ -97,13 +97,13 @@ export default (textStyle) => {
     let tmp17Result = null;
     if (null != error) {
       const obj7 = { style: tmp2.error, children: error };
-      tmp17Result = tmp17(tmp18(7132), obj7);
+      tmp17Result = tmp17(tmp18(7131), obj7);
     }
     items[2] = tmp17Result;
     let tmp17Result2 = null;
     if (null != hint) {
       const obj8 = { style: tmp2.hint, variant: "body-xs/medium", color: "text-muted", children: hint };
-      tmp17Result2 = tmp17(tmp8(5383).Text, obj8);
+      tmp17Result2 = tmp17(tmp8(5385).Text, obj8);
     }
     items[3] = tmp17Result2;
     return tmp12(tmp13, obj4);

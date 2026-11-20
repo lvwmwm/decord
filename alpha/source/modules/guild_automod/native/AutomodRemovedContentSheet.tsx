@@ -1,19 +1,19 @@
-// Module ID: 19495
-// Function ID: 19496
+// Module ID: 19315
+// Function ID: 19316
 // Name: AutomodRemovedContentSheet
-// Dependencies: [19, 17, 1072, 21, 8550, 4792, 575, 1113, 5845, 7434, 7396, 9977, 5383, 2]
+// Dependencies: [19, 17, 1071, 21, 8549, 4794, 575, 1112, 5847, 7433, 7395, 9980, 5385, 2]
 // Exports: default
 
-// Module 19495 (AutomodRemovedContentSheet)
+// Module 19315 (AutomodRemovedContentSheet)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 5845 */;
-import RowGeneratorDefault from "RowGenerator" /* 8550 */;
-import ChatItemDefault from "ChatItem" /* 9977 */;
+import Constants from "Constants" /* 1071 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 5847 */;
+import RowGeneratorDefault from "RowGenerator" /* 8549 */;
+import ChatItemDefault from "ChatItem" /* 9980 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -72,14 +72,14 @@ export default function AutomodRemovedContentSheet(action) {
     return messageRecord;
   }, items);
   const tmp5 = message;
-  const ActionSheet = message(7434).ActionSheet;
-  const BottomSheetTitleHeader = message(7396).BottomSheetTitleHeader;
-  let intl = message(1113).intl;
+  const ActionSheet = message(7433).ActionSheet;
+  const BottomSheetTitleHeader = message(7395).BottomSheetTitleHeader;
+  let intl = message(1112).intl;
   const string = intl.string;
   if (null != thread) {
-    StrErG = tmp5(1113).t["8czF24"];
+    StrErG = tmp5(1112).t["8czF24"];
   } else {
-    StrErG = tmp5(1113).t.StrErG;
+    StrErG = tmp5(1112).t.StrErG;
   }
   let obj = { title: string(StrErG), subtitle: name };
   name = undefined;
@@ -94,7 +94,7 @@ export default function AutomodRemovedContentSheet(action) {
     tmp4Result = tmp4(tmp8, obj4);
   } else {
     const obj6 = { variant: "body-md/normal", color: "text-default", children: notice };
-    tmp4Result = tmp4(tmp5(5383).Text, obj6);
+    tmp4Result = tmp4(tmp5(5385).Text, obj6);
   }
   return jsx(ActionSheet, obj2);
 };

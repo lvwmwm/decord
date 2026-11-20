@@ -1,24 +1,24 @@
-// Module ID: 15888
-// Function ID: 15889
+// Module ID: 15852
+// Function ID: 15853
 // Name: ProfileSelectorActionSheet
-// Dependencies: [32, 19, 17, 4663, 6429, 15887, 21, 4792, 575, 7230, 1113, 9484, 7203, 504, 6435, 5367, 5742, 4801, 5006, 5020, 7396, 7308, 5383, 7371, 2]
+// Dependencies: [32, 19, 17, 4665, 6431, 15851, 21, 4794, 575, 7229, 1112, 9484, 7202, 504, 6437, 5369, 5744, 4803, 5008, 5022, 7395, 7307, 5385, 7370, 2]
 // Exports: default
 
-// Module 15888 (ProfileSelectorActionSheet)
+// Module 15852 (ProfileSelectorActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl5 from "intl" /* 1113 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4801 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
-import GuildIcon from "GuildIcon" /* 7203 */;
-import TableRadioRow2 from "TableRadioRow" /* 7230 */;
-import ProfileSelectorActionSheetConstants from "ProfileSelectorActionSheetConstants" /* 15887 */;
+import intl5 from "intl" /* 1112 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4803 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5008 */;
+import GuildIcon from "GuildIcon" /* 7202 */;
+import TableRadioRow2 from "TableRadioRow" /* 7229 */;
+import ProfileSelectorActionSheetConstants from "ProfileSelectorActionSheetConstants" /* 15851 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4663 */;
-import SortedGuildStore from "SortedGuildStore" /* 6429 */;
+import GuildStore from "GuildStore" /* 4665 */;
+import SortedGuildStore from "SortedGuildStore" /* 6431 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const GuildIconDefault = GuildIcon;
@@ -71,8 +71,8 @@ let closure_13 = react.memo(function ProfileOptionRow(option) {
     }
   };
   if ("main" === option.type) {
-    const intl = tmp2(1113).intl;
-    name = intl.string(tmp2(1113).t["2p07FR"]);
+    const intl = tmp2(1112).intl;
+    name = intl.string(tmp2(1112).t["2p07FR"]);
   } else {
     name = option.guild.name;
   }

@@ -1,15 +1,15 @@
-// Module ID: 18512
-// Function ID: 18513
+// Module ID: 18336
+// Function ID: 18337
 // Name: ConjureIdeasIntroTip
-// Dependencies: [19, 21, 18513, 18514, 11274, 1113, 4089, 5390, 2]
+// Dependencies: [19, 21, 18337, 18338, 11216, 1112, 4091, 5392, 2]
 
-// Module 18512 (ConjureIdeasIntroTip)
-import intl4 from "intl" /* 1113 */;
-import _modDef4089 from "module_4089" /* 4089 */;
-import components_Button_Button from "components/Button/Button" /* 5390 */;
-import LightbulbIcon from "LightbulbIcon" /* 11274 */;
-import conjureIdeasIntroTip from "conjureIdeasIntroTip" /* 18513 */;
-import ConjureTipCallout from "ConjureTipCallout" /* 18514 */;
+// Module 18336 (ConjureIdeasIntroTip)
+import intl4 from "intl" /* 1112 */;
+import _modDef4091 from "module_4091" /* 4091 */;
+import components_Button_Button from "components/Button/Button" /* 5392 */;
+import LightbulbIcon from "LightbulbIcon" /* 11216 */;
+import conjureIdeasIntroTip from "conjureIdeasIntroTip" /* 18337 */;
+import ConjureTipCallout from "ConjureTipCallout" /* 18338 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -31,11 +31,11 @@ let obj = {
     const dismiss = context.dismiss;
     const obj = { icon: LightbulbIcon.LightbulbIcon, onDismiss: dismiss, children: items };
     const tmp = ConjureTipCalloutDefault;
-    const obj2 = { children: intl.string(_modDef4089.OJlbhX) };
+    const obj2 = { children: intl.string(_modDef4091.OJlbhX) };
     const ConjureTipTitle = ConjureTipCallout.ConjureTipTitle;
     intl = intl4.intl;
     items = [_false(ConjureTipTitle, obj2), , ];
-    const obj3 = { children: intl2.string(_modDef4089["3vJBni"]) };
+    const obj3 = { children: intl2.string(_modDef4091["3vJBni"]) };
     const ConjureTipBody = ConjureTipCallout.ConjureTipBody;
     intl2 = intl4.intl;
     items[1] = _false(ConjureTipBody, obj3);
@@ -44,7 +44,7 @@ let obj = {
     obj5 = {
       variant: "primary",
       size: "sm",
-      text: intl3.string(_modDef4089["U/bLzU"]),
+      text: intl3.string(_modDef4091["U/bLzU"]),
       disabled: null == onAskForIdeas,
       onPress() {
         if (dismiss != null) {

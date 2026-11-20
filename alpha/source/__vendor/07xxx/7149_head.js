@@ -1,10 +1,16 @@
 // Module ID: 7149
 // Function ID: 7150
 // Name: head
-// Dependencies: [7150]
+// Dependencies: []
 
 // Module 7149 (head)
-import head from "head" /* 7150 */;
 
-
-export default head;
+export default function head(arg0) {
+  let first;
+  if (arg0) {
+    if (arg0.length) {
+      first = arg0[0];
+    }
+  }
+  return first;
+};

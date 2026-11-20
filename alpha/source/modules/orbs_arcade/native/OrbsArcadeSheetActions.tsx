@@ -1,18 +1,18 @@
-// Module ID: 16498
-// Function ID: 16499
+// Module ID: 16320
+// Function ID: 16321
 // Name: OrbsArcadeSheetActions
-// Dependencies: [19, 16478, 21, 4792, 1113, 5006, 16489, 504, 16485, 6424, 16499, 16502, 5390, 2]
+// Dependencies: [19, 16300, 21, 4794, 1112, 5008, 16311, 504, 16301, 6426, 16321, 16324, 5392, 2]
 // Exports: default
 
-// Module 16498 (OrbsArcadeSheetActions)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
-import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 16485 */;
-import OrbsArcadeClaimRewardButtonDefault from "OrbsArcadeClaimRewardButton" /* 16499 */;
-import OrbsArcadePlayButtonDefault from "OrbsArcadePlayButton" /* 16502 */;
+// Module 16320 (OrbsArcadeSheetActions)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5008 */;
+import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 16301 */;
+import OrbsArcadeClaimRewardButtonDefault from "OrbsArcadeClaimRewardButton" /* 16321 */;
+import OrbsArcadePlayButtonDefault from "OrbsArcadePlayButton" /* 16324 */;
 import react from "react" /* 19 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 16478 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 16300 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -46,13 +46,13 @@ export default function OrbsArcadeSheetActions(game) {
   const tmp2 = closure_6();
   if (obj2.CLOSE === secondaryAction) {
     obj2 = {
-      text: intl2.string(game(1113).t.cpT0Cq),
+      text: intl2.string(game(1112).t.cpT0Cq),
       onPress() {
           const obj = ActionSheetActionCreatorsDefault;
           return obj.hideActionSheet(sheetKey);
         }
     };
-    intl2 = game(1113).intl;
+    intl2 = game(1112).intl;
     tmp7 = obj2;
   } else if (tmp3.HOW_TO_PLAY === secondaryAction) {
     let tmp4 = null;
@@ -60,13 +60,13 @@ export default function OrbsArcadeSheetActions(game) {
       tmp4 = null;
       if ("" !== game.instructions) {
         obj = {
-          text: intl.string(game(1113).t["uz4M/z"]),
+          text: intl.string(game(1112).t["uz4M/z"]),
           onPress() {
                   const obj = game(dependencyMap[6]);
                   return obj.openOrbsArcadeInfoSheet(game.id, surface);
                 }
         };
-        intl = game(1113).intl;
+        intl = game(1112).intl;
         tmp4 = obj;
       }
     }
@@ -95,7 +95,7 @@ export default function OrbsArcadeSheetActions(game) {
       if (null != tmp7) {
         const obj5 = { grow: true, size: "lg", variant: "secondary", text: null, onPress: null };
         ({ text: obj6.text, onPress: obj6.onPress } = tmp7);
-        tmp19 = closure_4(tmp10(5390).Button, obj5);
+        tmp19 = closure_4(tmp10(5392).Button, obj5);
       }
       items3[1] = tmp19;
       obj4.children = items3;

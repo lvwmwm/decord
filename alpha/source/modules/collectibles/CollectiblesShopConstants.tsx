@@ -1,14 +1,14 @@
-// Module ID: 1074
-// Function ID: 1075
+// Module ID: 1073
+// Function ID: 1074
 // Name: CollectiblesShopConstants
-// Dependencies: [1075, 1076, 1077, 1078, 2]
+// Dependencies: [1074, 1075, 1076, 1077, 2]
 // Exports: isExternalProduct, isFractionalPremiumSku, isIndexPageTab, shouldAddTabToUrl
 
-// Module 1074 (CollectiblesShopConstants)
-import FractionalPremiumSKUs from "FractionalPremiumSKUs" /* 1075 */;
-import CollectibleSearchItemType from "CollectibleSearchItemType" /* 1076 */;
-import CollectibleSearchSortType from "CollectibleSearchSortType" /* 1077 */;
-import CollectibleSearchSortDirection from "CollectibleSearchSortDirection" /* 1078 */;
+// Module 1073 (CollectiblesShopConstants)
+import FractionalPremiumSKUs from "FractionalPremiumSKUs" /* 1074 */;
+import CollectibleSearchItemType from "CollectibleSearchItemType" /* 1075 */;
+import CollectibleSearchSortType from "CollectibleSearchSortType" /* 1076 */;
+import CollectibleSearchSortDirection from "CollectibleSearchSortDirection" /* 1077 */;
 import size from "module_2" /* 2 */;
 
 const CollectibleShopTab = { HOME: "home", CATALOG: "catalog", ORBS: "orbs", AVATAR_DECORATIONS: "avatar-decorations", PROFILE_EFFECTS: "profile-effects", NAMEPLATES: "nameplates", PROFILE_FRAMES: "profile-frames", BUNDLES: "bundles", COLLABS: "collabs", OFFER_ELIGIBLE: "offer-eligible", PROMOTION: "promotion", COLLECTION_INDEX: "collection-index", GAME_SHOPS: "game-shops", GAME_SERVERS: "game-servers" };

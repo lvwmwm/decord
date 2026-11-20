@@ -1,14 +1,14 @@
-// Module ID: 9756
-// Function ID: 9757
+// Module ID: 9757
+// Function ID: 9758
 // Name: ExperimentalGameControllerLinkIcon
-// Dependencies: [19, 21, 575, 5478, 9757, 2]
+// Dependencies: [19, 21, 575, 5480, 9758, 2]
 // Exports: ExperimentalGameControllerLinkIcon
 
-// Module 9756 (ExperimentalGameControllerLinkIcon)
+// Module 9757 (ExperimentalGameControllerLinkIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5478 */;
-import AssetRegistry from "AssetRegistry" /* 9757 */;
+import BaseIconImage2 from "BaseIconImage" /* 5480 */;
+import AssetRegistry from "AssetRegistry" /* 9758 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

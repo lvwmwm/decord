@@ -1,14 +1,14 @@
-// Module ID: 7081
-// Function ID: 7082
+// Module ID: 7080
+// Function ID: 7081
 // Name: PlayStationLinkDiscordConsent
-// Dependencies: [19, 7076, 1072, 6954, 21, 1502, 6960, 7082, 6956, 2]
+// Dependencies: [19, 7075, 1071, 6953, 21, 1500, 6959, 7081, 6955, 2]
 // Exports: PlayStationLinkDiscordConsent
 
-// Module 7081 (PlayStationLinkDiscordConsent)
+// Module 7080 (PlayStationLinkDiscordConsent)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1072 */;
-import GameConsoleConstants from "GameConsoleConstants" /* 6954 */;
-import PlayStationLinkConstants from "PlayStationLinkConstants" /* 7076 */;
+import Constants from "Constants" /* 1071 */;
+import GameConsoleConstants from "GameConsoleConstants" /* 6953 */;
+import PlayStationLinkConstants from "PlayStationLinkConstants" /* 7075 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ export function PlayStationLinkDiscordConsent(platformType) {
   platformType = platformType.platformType;
   navigation = undefined;
   ({ callbackCode, callbackState } = platformType);
-  let obj = navigation(1502);
+  let obj = navigation(1500);
   navigation = obj.useNavigation();
   const items = [navigation];
   const items1 = [navigation];
@@ -41,14 +41,14 @@ export function PlayStationLinkDiscordConsent(platformType) {
   }, items1);
   const tmp6 = PlatformTypes;
   if (platformType === PlatformTypes.PLAYSTATION_STAGING) {
-    PLAYSTATION_APPLICATION_ID = tmp(6960).ConsoleOAuthApplications.PLAYSTATION_STAGING_APPLICATION_ID;
+    PLAYSTATION_APPLICATION_ID = tmp(6959).ConsoleOAuthApplications.PLAYSTATION_STAGING_APPLICATION_ID;
   } else {
-    PLAYSTATION_APPLICATION_ID = tmp(6960).ConsoleOAuthApplications.PLAYSTATION_APPLICATION_ID;
+    PLAYSTATION_APPLICATION_ID = tmp(6959).ConsoleOAuthApplications.PLAYSTATION_APPLICATION_ID;
   }
   if (platformType === tmp6.PLAYSTATION_STAGING) {
-    PLAYSTATION = tmp(7082).ConsoleAuthorizationRedirectURIs.PLAYSTATION_STAGING;
+    PLAYSTATION = tmp(7081).ConsoleAuthorizationRedirectURIs.PLAYSTATION_STAGING;
   } else {
-    PLAYSTATION = tmp(7082).ConsoleAuthorizationRedirectURIs.PLAYSTATION;
+    PLAYSTATION = tmp(7081).ConsoleAuthorizationRedirectURIs.PLAYSTATION;
   }
-  return jsx(navigation(6956).TwoWayLinkDiscordConsent, { platformType, callbackCode, callbackState, clientId: PLAYSTATION_APPLICATION_ID, scopes: PLAYSTATION_CLIENT_SCOPES, onNext: callback, onError: callback1, redirectUri: PLAYSTATION });
+  return jsx(navigation(6955).TwoWayLinkDiscordConsent, { platformType, callbackCode, callbackState, clientId: PLAYSTATION_APPLICATION_ID, scopes: PLAYSTATION_CLIENT_SCOPES, onNext: callback, onError: callback1, redirectUri: PLAYSTATION });
 }

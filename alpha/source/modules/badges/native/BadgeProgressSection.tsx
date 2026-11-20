@@ -1,18 +1,18 @@
-// Module ID: 13928
-// Function ID: 13929
+// Module ID: 13897
+// Function ID: 13898
 // Name: BadgeProgressSection
-// Dependencies: [19, 17, 21, 4792, 575, 13905, 5383, 1113, 13921, 2]
+// Dependencies: [19, 17, 21, 4794, 575, 13874, 5385, 1112, 13890, 2]
 // Exports: default
 
-// Module 13928 (BadgeProgressSection)
+// Module 13897 (BadgeProgressSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl3 from "intl" /* 1113 */;
-import BadgeDetailsUtils from "BadgeDetailsUtils" /* 13905 */;
-import BadgeArtImageDefault from "BadgeArtImage" /* 13921 */;
+import intl3 from "intl" /* 1112 */;
+import BadgeDetailsUtils from "BadgeDetailsUtils" /* 13874 */;
+import BadgeArtImageDefault from "BadgeArtImage" /* 13890 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -83,8 +83,8 @@ export default function BadgeProgressSection(arg0) {
   }
   const obj2 = { style: tmp.section, children: items };
   const obj3 = { variant: "body-sm/medium", color: "text-default", children: intl.string(intl3.t["2m/g2c"]) };
-  const Text = tmp2(5383).Text;
-  intl = tmp2(1113).intl;
+  const Text = tmp2(5385).Text;
+  intl = tmp2(1112).intl;
   items = [React3(Text, obj3), ];
   let tmp9Result = null != currentArtUrl;
   const obj4 = { style: tmp.row, children: items1 };
@@ -97,21 +97,21 @@ export default function BadgeProgressSection(arg0) {
   const obj6 = { style: tmp.content, children: items2 };
   if (tmp9Result4) {
     const obj7 = { variant: "body-sm/medium", "aria-hidden": null != threshold, children: helperText };
-    tmp9Result4 = tmp9(tmp2(5383).Text, obj7);
+    tmp9Result4 = tmp9(tmp2(5385).Text, obj7);
   }
   items2 = [tmp9Result4, ];
   let tmp9Result5 = null != threshold;
   if (tmp9Result5) {
     const obj8 = { style: tmp.track, accessible: true, accessibilityRole: "progressbar", accessibilityLabel: helperText, accessibilityValue: obj9, children: React3(View, obj10) };
     if (helperText == null) {
-      const intl2 = tmp2(1113).intl;
-      helperText = intl2.string(tmp2(1113).t.Uwhb1l);
+      const intl2 = tmp2(1112).intl;
+      helperText = intl2.string(tmp2(1112).t.Uwhb1l);
     }
     const _Intl = Intl;
     const self = this;
     const self2 = this;
     obj9 = { text: numberFormat.format(num) };
-    numberFormat = new Intl.NumberFormat(tmp2(1113).intl.currentLocale, { style: "percent" });
+    numberFormat = new Intl.NumberFormat(tmp2(1112).intl.currentLocale, { style: "percent" });
     obj10 = { style: items3 };
     items3 = [tmp.fill, ];
     const obj11 = { width: `${100 * num}%` };

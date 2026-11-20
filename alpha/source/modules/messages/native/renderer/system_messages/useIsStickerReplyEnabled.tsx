@@ -1,15 +1,15 @@
-// Module ID: 8615
-// Function ID: 8616
+// Module ID: 8614
+// Function ID: 8615
 // Name: useIsStickerReplyEnabled
-// Dependencies: [4704, 4724, 1388, 1072, 6774, 2]
+// Dependencies: [4706, 4726, 1386, 1071, 6774, 2]
 // Exports: computeIsStickerReplyEnabled
 
-// Module 8615 (useIsStickerReplyEnabled)
-import Constants from "Constants" /* 1072 */;
+// Module 8614 (useIsStickerReplyEnabled)
+import Constants from "Constants" /* 1071 */;
 import ThreadHooks from "ThreadHooks" /* 6774 */;
-import GuildMemberStore from "GuildMemberStore" /* 4704 */;
-import PermissionStore from "PermissionStore" /* 4724 */;
-import UserStore from "UserStore" /* 1388 */;
+import GuildMemberStore from "GuildMemberStore" /* 4706 */;
+import PermissionStore from "PermissionStore" /* 4726 */;
+import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 
 const Permissions = Constants.Permissions;

@@ -1,31 +1,31 @@
-// Module ID: 6298
-// Function ID: 6299
+// Module ID: 6300
+// Function ID: 6301
 // Name: AgeGateUtils
-// Dependencies: [4659, 4641, 6299, 4663, 4695, 1388, 1097, 1072, 1113, 11, 5454, 6295, 6300, 6290, 504, 6289, 6293, 2188, 6303, 6317, 6318, 2]
+// Dependencies: [4661, 4643, 6301, 4665, 4697, 1386, 1096, 1071, 1112, 11, 5456, 6297, 6302, 6292, 504, 6291, 6295, 2186, 6305, 6319, 6320, 2]
 // Exports: getAgeGateType, guildNeedsAgeGate, isChannelAgeVerificationGated, isCurrentUserMissingDateOfBirth, maybeOpenAgeGateForVoiceChannel, maybeShowAgeGate, shouldAgeVerifyForSettingsToggles, shouldShowAgeGateForChannelId, shouldShowAgeGateForCurrentUser, shouldShowAgeGateForGuildContentLevel, shouldShowAgeGateForVoiceChannel, useAgeGateVerifyContent, useAgeGateVerifyContentForGuild, useShouldAgeVerifyForSettingsToggles, useShouldHideChannelContent, userNeedsAgeGate
 
-// Module 6298 (AgeGateUtils)
+// Module 6300 (AgeGateUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initialized from "get initialized" /* 504 */;
-import intl17 from "intl" /* 1113 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
-import GuildRecord from "GuildRecord" /* 4659 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5454 */;
-import shouldAgeVerifyForAgeGate2 from "shouldAgeVerifyForAgeGate" /* 6289 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6290 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6293 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 6295 */;
-import getAgeNoticeWarningDescriptions from "getAgeNoticeWarningDescriptions" /* 6300 */;
-import AgeGateModalActionCreators from "AgeGateModalActionCreators" /* 6303 */;
-import NSFWContentGate from "NSFWContentGate" /* 6317 */;
-import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6318 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import GuildNSFWAgreeStore from "GuildNSFWAgreeStore" /* 6299 */;
-import GuildStore from "GuildStore" /* 4663 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4695 */;
-import UserStore from "UserStore" /* 1388 */;
-import AgeGateConstants from "AgeGateConstants" /* 1097 */;
-import Constants from "Constants" /* 1072 */;
+import intl17 from "intl" /* 1112 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2186 */;
+import GuildRecord from "GuildRecord" /* 4661 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5456 */;
+import shouldAgeVerifyForAgeGate2 from "shouldAgeVerifyForAgeGate" /* 6291 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6292 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6295 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 6297 */;
+import getAgeNoticeWarningDescriptions from "getAgeNoticeWarningDescriptions" /* 6302 */;
+import AgeGateModalActionCreators from "AgeGateModalActionCreators" /* 6305 */;
+import NSFWContentGate from "NSFWContentGate" /* 6319 */;
+import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6320 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import GuildNSFWAgreeStore from "GuildNSFWAgreeStore" /* 6301 */;
+import GuildStore from "GuildStore" /* 4665 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4697 */;
+import UserStore from "UserStore" /* 1386 */;
+import AgeGateConstants from "AgeGateConstants" /* 1096 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -219,29 +219,29 @@ export function useAgeGateVerifyContentForGuild(stateFromStores) {
     }
     tmp8 = ageNoticeWarningDescriptions;
   }
-  const intl = tmp(1113).intl;
+  const intl = tmp(1112).intl;
   const string = intl.string;
-  const t = tmp(1113).t;
+  const t = tmp(1112).t;
   const stringResult = string(tmp5 ? t.ZtuRts : t.E4Cd5I);
-  const intl2 = tmp(1113).intl;
+  const intl2 = tmp(1112).intl;
   const format = intl2.format;
-  const t2 = tmp(1113).t;
+  const t2 = tmp(1112).t;
   if (tmp5) {
     formatResult = format(t2["8tk6bB"], {});
   } else {
     formatResult = format(t2.XQZvwn, {});
   }
-  const intl3 = tmp(1113).intl;
+  const intl3 = tmp(1112).intl;
   const string2 = intl3.string;
-  const t3 = tmp(1113).t;
+  const t3 = tmp(1112).t;
   if (tmp5) {
     string2Result = string2(t3.V6Gmu9);
   } else {
     string2Result = string2(t3["5rygLk"]);
   }
-  const intl4 = tmp(1113).intl;
+  const intl4 = tmp(1112).intl;
   const string3 = intl4.string;
-  const t4 = tmp(1113).t;
+  const t4 = tmp(1112).t;
   const string3Result = string3(tmp5 ? t4.xi46lg : t4.ZmwvDc);
   if (shouldAgeVerifyForAgeGate) {
     let obj6;
@@ -254,12 +254,12 @@ export function useAgeGateVerifyContentForGuild(stateFromStores) {
       if (teen == null) {
         teen = formatResult;
       }
-      const intl9 = tmp(1113).intl;
+      const intl9 = tmp(1112).intl;
       string5 = intl9.string;
       if (null != tmp8) {
-        Zt4Mf4 = tmp(1113).t.FDSSia;
+        Zt4Mf4 = tmp(1112).t.FDSSia;
       } else {
-        Zt4Mf4 = tmp(1113).t.Zt4Mf4;
+        Zt4Mf4 = tmp(1112).t.Zt4Mf4;
       }
       obj6 = obj5;
     } else {
@@ -271,19 +271,19 @@ export function useAgeGateVerifyContentForGuild(stateFromStores) {
       if (unverified == null) {
         unverified = string2Result;
       }
-      intl8 = tmp(1113).intl;
+      intl8 = tmp(1112).intl;
     }
     tmp16 = obj6;
   } else {
     const obj7 = { title: null, description: null, agreement: null, modalType: null };
     if (stateFromStores) {
-      const intl6 = tmp(1113).intl;
+      const intl6 = tmp(1112).intl;
       const string4 = intl6.string;
-      const t5 = tmp(1113).t;
+      const t5 = tmp(1112).t;
       obj7.title = string4(tmp5 ? t5["H0SG/g"] : t5.NEabBa);
-      const intl7 = tmp(1113).intl;
+      const intl7 = tmp(1112).intl;
       const format2 = intl7.format;
-      const t6 = tmp(1113).t;
+      const t6 = tmp(1112).t;
       const obj9 = { helpURL: obj8.getArticleURL(unpackModuleId.NSFW_AGE_GATING) };
       const tmp17 = tmp5 ? t6["6++3cX"] : t6["2kHZes"];
       obj8 = HelpdeskUtilsDefault;
@@ -300,7 +300,7 @@ export function useAgeGateVerifyContentForGuild(stateFromStores) {
         adult = stringResult;
       }
       obj7.description = adult;
-      const intl5 = tmp(1113).intl;
+      const intl5 = tmp(1112).intl;
       obj7.agreement = intl5.string(intl17.t.wVq7uo);
       obj7.modalType = AgeVerificationAnalyticsUtils.NsfwSpaceWarningModalType.NSFW_CHANNEL_VERIFIED;
       tmp16 = obj7;
@@ -365,12 +365,12 @@ export function useAgeGateVerifyContent(source) {
       let obj5;
       if (isAgeVerified) {
         let Zt4Mf4;
-        const intl10 = tmp(1113).intl;
+        const intl10 = tmp(1112).intl;
         const string4 = intl10.string;
         if (null != ageNoticeWarningDescriptions) {
-          Zt4Mf4 = tmp(1113).t.FDSSia;
+          Zt4Mf4 = tmp(1112).t.FDSSia;
         } else {
-          Zt4Mf4 = tmp(1113).t.Zt4Mf4;
+          Zt4Mf4 = tmp(1112).t.Zt4Mf4;
         }
         const obj3 = { verifyAgreementButtonText: string4(Zt4Mf4), verifyGateDescription: teen, verifyTitle: string5Result, verifyDisagreementButtonText: string6(f3Pet92), verifyEmphasiseDisagree: null != ageNoticeWarningDescriptions };
         teen = undefined;
@@ -379,9 +379,9 @@ export function useAgeGateVerifyContent(source) {
         }
         if (teen == null) {
           let format2Result;
-          const intl11 = tmp(1113).intl;
+          const intl11 = tmp(1112).intl;
           const format2 = intl11.format;
-          const t3 = tmp(1113).t;
+          const t3 = tmp(1112).t;
           if (tmp6) {
             format2Result = format2(t3["8tk6bB"], {});
           } else {
@@ -389,53 +389,53 @@ export function useAgeGateVerifyContent(source) {
           }
           teen = format2Result;
         }
-        const intl12 = tmp(1113).intl;
+        const intl12 = tmp(1112).intl;
         const string5 = intl12.string;
-        const t4 = tmp(1113).t;
+        const t4 = tmp(1112).t;
         if (tmp6) {
           string5Result = string5(t4.xi46lg);
         } else {
           string5Result = string5(t4.ZmwvDc);
         }
-        const intl13 = tmp(1113).intl;
+        const intl13 = tmp(1112).intl;
         string6 = intl13.string;
         if (null != ageNoticeWarningDescriptions) {
-          f3Pet92 = tmp(1113).t["/g10LC"];
+          f3Pet92 = tmp(1112).t["/g10LC"];
         } else {
-          f3Pet92 = tmp(1113).t.f3Pet9;
+          f3Pet92 = tmp(1112).t.f3Pet9;
         }
         obj5 = obj3;
       } else if (source === AgeGateSource.LARGE_GUILD) {
         const obj4 = { verifyTitle: intl7.string(intl17.t["7ymzsL"]), verifyGateDescription: intl8.string(intl17.t.SxY4IW), verifyAgreementButtonText: intl9.string(intl17.t.FDSSia) };
-        intl7 = tmp(1113).intl;
-        intl8 = tmp(1113).intl;
-        intl9 = tmp(1113).intl;
+        intl7 = tmp(1112).intl;
+        intl8 = tmp(1112).intl;
+        intl9 = tmp(1112).intl;
         obj5 = obj4;
       } else {
         if (stateFromStores) {
           if (tmp6) {
             if (!shouldAgeVerifyForAgeGate) {
               obj5 = { verifyTitle: intl.string(intl17.t["H0SG/g"]), verifyGateDescription: format(prop, obj6), verifyAgreementButtonText: null };
-              intl = tmp(1113).intl;
-              const intl2 = tmp(1113).intl;
+              intl = tmp(1112).intl;
+              const intl2 = tmp(1112).intl;
               format = intl2.format;
               obj6 = { helpURL: obj8.getArticleURL(unpackModuleId.AGE_GATE) };
-              prop = tmp(1113).t["6++3cX"];
+              prop = tmp(1112).t["6++3cX"];
               obj8 = HelpdeskUtilsDefault;
             }
           }
         }
         const obj7 = { verifyAgreementButtonText: intl3.string(intl17.t.FDSSia), verifyGateDescription: unverified, verifyTitle: string2Result, verifyDisagreementButtonText: string3(f3Pet9) };
-        intl3 = tmp(1113).intl;
+        intl3 = tmp(1112).intl;
         unverified = undefined;
         if (ageNoticeWarningDescriptions != null) {
           unverified = ageNoticeWarningDescriptions.unverified;
         }
         if (unverified == null) {
           let stringResult;
-          const intl4 = tmp(1113).intl;
+          const intl4 = tmp(1112).intl;
           const string = intl4.string;
-          const t = tmp(1113).t;
+          const t = tmp(1112).t;
           if (tmp6) {
             stringResult = string(t.V6Gmu9);
           } else {
@@ -443,20 +443,20 @@ export function useAgeGateVerifyContent(source) {
           }
           unverified = stringResult;
         }
-        const intl5 = tmp(1113).intl;
+        const intl5 = tmp(1112).intl;
         const string2 = intl5.string;
-        const t2 = tmp(1113).t;
+        const t2 = tmp(1112).t;
         if (tmp6) {
           string2Result = string2(t2.xi46lg);
         } else {
           string2Result = string2(t2.ZmwvDc);
         }
-        const intl6 = tmp(1113).intl;
+        const intl6 = tmp(1112).intl;
         string3 = intl6.string;
         if (null != ageNoticeWarningDescriptions) {
-          f3Pet9 = tmp(1113).t["/g10LC"];
+          f3Pet9 = tmp(1112).t["/g10LC"];
         } else {
-          f3Pet9 = tmp(1113).t.f3Pet9;
+          f3Pet9 = tmp(1112).t.f3Pet9;
         }
         obj5 = obj7;
       }
@@ -464,28 +464,28 @@ export function useAgeGateVerifyContent(source) {
     }
   }
   if (source === AgeGateSource.JOIN_LARGE_GUILD_UNDERAGE) {
-    MjQbfi = tmp(1113).t["u/xsK9"];
+    MjQbfi = tmp(1112).t["u/xsK9"];
   } else {
-    MjQbfi = tmp(1113).t.MjQbfi;
+    MjQbfi = tmp(1112).t.MjQbfi;
   }
-  const intl14 = tmp(1113).intl;
+  const intl14 = tmp(1112).intl;
   const string7 = intl14.string;
-  const t5 = tmp(1113).t;
+  const t5 = tmp(1112).t;
   if (isAgeVerified) {
     string7Result = string7(t5.SAoMVJ);
   } else {
     string7Result = string7(t5.SxY4IW);
   }
-  const intl15 = tmp(1113).intl;
+  const intl15 = tmp(1112).intl;
   const string8 = intl15.string;
-  const t6 = tmp(1113).t;
+  const t6 = tmp(1112).t;
   if (isAgeVerified) {
     string8Result = string8(t6.Zt4Mf4);
   } else {
     string8Result = string8(t6.FDSSia);
   }
   const obj9 = { verifyTitle: intl16.string(MjQbfi), verifyGateDescription: string7Result, verifyAgreementButtonText: string8Result };
-  intl16 = tmp(1113).intl;
+  intl16 = tmp(1112).intl;
   return obj9;
 }
 export function shouldShowAgeGateForCurrentUser() {

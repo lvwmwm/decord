@@ -1,17 +1,17 @@
-// Module ID: 16791
-// Function ID: 16792
+// Module ID: 16615
+// Function ID: 16616
 // Name: OfficialMessageStyleSetting
-// Dependencies: [19, 4793, 8593, 504, 15560, 1113, 11875, 2]
+// Dependencies: [19, 4795, 8592, 504, 15524, 1112, 11817, 2]
 // Exports: onOfficialMessageStyleSettingValueChange, useOfficialMessageStyleSettingOptions, useOfficialMessageStyleSettingValue
 
-// Module 16791 (OfficialMessageStyleSetting)
+// Module 16615 (OfficialMessageStyleSetting)
 import get_initialized from "get initialized" /* 504 */;
-import intl5 from "intl" /* 1113 */;
-import SettingsConstants from "SettingsConstants" /* 8593 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 15560 */;
+import intl5 from "intl" /* 1112 */;
+import SettingsConstants from "SettingsConstants" /* 8592 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 15524 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4793 */;
-import SettingBuilders from "SettingBuilders" /* 11875 */;
+import AccessibilityStore from "AccessibilityStore" /* 4795 */;
+import SettingBuilders from "SettingBuilders" /* 11817 */;
 import size from "module_2" /* 2 */;
 
 function useOfficialMessageStyleSettingValue() {

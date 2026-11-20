@@ -1,21 +1,21 @@
-// Module ID: 15871
-// Function ID: 15872
+// Module ID: 15835
+// Function ID: 15836
 // Name: UserProfilePremiumUpsellCard
-// Dependencies: [19, 1072, 21, 7420, 4792, 15797, 5383, 1502, 7292, 1113, 9006, 7401, 8979, 10443, 1630, 2]
+// Dependencies: [19, 1071, 21, 7419, 4794, 15761, 5385, 1500, 7291, 1112, 9006, 7400, 8979, 10385, 1628, 2]
 // Exports: UserProfilePremiumUpsellCard
 
-// Module 15871 (UserProfilePremiumUpsellCard)
+// Module 15835 (UserProfilePremiumUpsellCard)
 import Fragment from "Fragment" /* 21 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7292 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7401 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7420 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7291 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7400 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7419 */;
 import openPremiumModalDefault from "openPremiumModal" /* 8979 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10443 */;
-import UserProfileUpsellCardDefault from "UserProfileUpsellCard" /* 15797 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10385 */;
+import UserProfileUpsellCardDefault from "UserProfileUpsellCard" /* 15761 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 1072 */;
-import createStyles from "createStyles" /* 4792 */;
+import Constants from "Constants" /* 1071 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -36,7 +36,7 @@ function UpsellCardLayout(arg0) {
 function PreviewNitroCard(style) {
   navigation = undefined;
   style = style.style;
-  let obj = navigation(1502);
+  let obj = navigation(1500);
   navigation = obj.useNavigation();
   items = [navigation];
   const callback = react.useCallback(() => {
@@ -44,9 +44,9 @@ function PreviewNitroCard(style) {
     obj.setSection(metroImportDefault.PROFILE_CUSTOMIZATION_TRY_IT_OUT);
     navigation.push(metroImportDefault.PROFILE_CUSTOMIZATION_TRY_IT_OUT);
   }, items);
-  const intl = navigation(1113).intl;
-  const intl2 = navigation(1113).intl;
-  return <UpsellCardLayout style={style} ctaText={intl.string(navigation(1113).t.PxUx8e)} description={intl2.string(navigation(1113).t.Tii53U)} onPress={callback} />;
+  const intl = navigation(1112).intl;
+  const intl2 = navigation(1112).intl;
+  return <UpsellCardLayout style={style} ctaText={intl.string(navigation(1112).t.PxUx8e)} description={intl2.string(navigation(1112).t.Tii53U)} onPress={callback} />;
 }
 function GetNitroCard(style) {
   let callback;
@@ -58,7 +58,7 @@ function GetNitroCard(style) {
   let nitroTrialCtaOverride = obj.useNitroTrialCtaOverride();
   analyticsLocations = useAnalyticsLocationsDefault(items).analyticsLocations;
   items = [analyticsLocations];
-  let obj2 = { style, ctaText: nitroTrialCtaOverride, description: intl2.string(tmp(1113).t.ZFR9LF), onPress: callback };
+  let obj2 = { style, ctaText: nitroTrialCtaOverride, description: intl2.string(tmp(1112).t.ZFR9LF), onPress: callback };
   callback = react.useCallback(() => {
     let obj2;
     const obj = { analyticsLocation: obj2, analyticsLocations, premiumFeatureCardOrder: PremiumFeaturesCards.PremiumFeatureCardOrder.TIER_2_LEADING };
@@ -69,10 +69,10 @@ function GetNitroCard(style) {
   const tmp5 = jsx;
   const tmp6 = UpsellCardLayout;
   if (nitroTrialCtaOverride == null) {
-    const intl = tmp(1113).intl;
-    nitroTrialCtaOverride = intl.string(tmp(1113).t.pj0XBN);
+    const intl = tmp(1112).intl;
+    nitroTrialCtaOverride = intl.string(tmp(1112).t.pj0XBN);
   }
-  intl2 = tmp(1113).intl;
+  intl2 = tmp(1112).intl;
   return tmp5(tmp6, obj2);
 }
 ({ AnalyticsObjects: closure_4, AnalyticsPages: hasOwnProperty, AnalyticsSections: metroRequire, UserSettingsSections: metroImportDefault } = Constants);

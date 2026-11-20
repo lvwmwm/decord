@@ -1,15 +1,15 @@
-// Module ID: 12699
-// Function ID: 12700
+// Module ID: 12669
+// Function ID: 12670
 // Name: useTraitPicker
-// Dependencies: [19, 5848, 12700, 12701, 12702, 12408, 2]
+// Dependencies: [19, 5850, 12670, 12671, 12672, 12378, 2]
 // Exports: useTraitPicker
 
-// Module 12699 (useTraitPicker)
-import CheckpointConstants from "CheckpointConstants" /* 5848 */;
-import CheckpointActionCreators from "CheckpointActionCreators" /* 12408 */;
-import useTraitPickerSelection from "useTraitPickerSelection" /* 12700 */;
-import useTraitPickerOptions from "useTraitPickerOptions" /* 12701 */;
-import react2 from "react" /* 12702 */;
+// Module 12669 (useTraitPicker)
+import CheckpointConstants from "CheckpointConstants" /* 5850 */;
+import CheckpointActionCreators from "CheckpointActionCreators" /* 12378 */;
+import useTraitPickerSelection from "useTraitPickerSelection" /* 12670 */;
+import useTraitPickerOptions from "useTraitPickerOptions" /* 12671 */;
+import useAutoSelectTraitOption from "useAutoSelectTraitOption" /* 12672 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ export function useTraitPicker(customizationOption) {
   const traitPickerOptions = obj2.useTraitPickerOptions(obj3);
   const availableTraitOptions = traitPickerOptions.availableTraitOptions;
   ({ totalCount, earnedCount } = traitPickerOptions);
-  const obj4 = react2;
+  const obj4 = useAutoSelectTraitOption;
   const obj5 = { availableTraitOptions, selectedOptionId: traitPickerSelection.selectedOptionId, onSelectOption: CheckpointActionCreators.selectCharacterTrait, isPaused: disabled };
   const autoSelectTraitOption = obj4.useAutoSelectTraitOption(obj5);
   const items = [availableTraitOptions, traitPickerSelection.selectedOptionId];

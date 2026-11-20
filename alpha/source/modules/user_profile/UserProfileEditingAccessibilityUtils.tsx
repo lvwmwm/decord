@@ -1,14 +1,14 @@
-// Module ID: 15853
-// Function ID: 15854
+// Module ID: 15817
+// Function ID: 15818
 // Name: UserProfileEditingAccessibilityUtils
-// Dependencies: [1113, 15779, 9340, 3147, 7291, 2]
+// Dependencies: [1112, 15743, 9340, 3149, 7290, 2]
 // Exports: getAvatarAccessibleValue, getBannerAccessibleValue, getDisplayNameStyleAccessibleValue
 
-// Module 15853 (UserProfileEditingAccessibilityUtils)
-import intl5 from "intl" /* 1113 */;
-import ProfilePendingImageTypes from "ProfilePendingImageTypes" /* 7291 */;
+// Module 15817 (UserProfileEditingAccessibilityUtils)
+import intl5 from "intl" /* 1112 */;
+import ProfilePendingImageTypes from "ProfilePendingImageTypes" /* 7290 */;
 import useDisplayNameStylesEffectConfigs from "useDisplayNameStylesEffectConfigs" /* 9340 */;
-import getDisplayNameStylesFontNameDefault from "getDisplayNameStylesFontName" /* 15779 */;
+import getDisplayNameStylesFontNameDefault from "getDisplayNameStylesFontName" /* 15743 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_profile/UserProfileEditingAccessibilityUtils.tsx");
@@ -25,7 +25,7 @@ export function getDisplayNameStyleAccessibleValue(displayNameStyles) {
     let OpWJ3f = useDisplayNameStylesEffectConfigs.DISPLAY_NAME_STYLES_EFFECT_NAMES[displayNameStyles.effectId];
     const tmp7 = importDefault;
     if (OpWJ3f == null) {
-      OpWJ3f = tmp7(3147).OpWJ3f;
+      OpWJ3f = tmp7(3149).OpWJ3f;
     }
     const colors = displayNameStyles.colors;
     const stringResult1 = string(OpWJ3f);
@@ -35,7 +35,7 @@ export function getDisplayNameStyleAccessibleValue(displayNameStyles) {
     });
     let str = ", ";
     const joined = mapped.join(", ");
-    const intl = tmp5(1113).intl;
+    const intl = tmp5(1112).intl;
     const obj = { fontName: stringResult, effectName: stringResult1, colors: joined };
     return intl.formatToPlainString(intl5.t.Igwax6, obj);
   }
@@ -72,8 +72,8 @@ export function getAvatarAccessibleValue(avatarChange, avatar) {
         description = avatarChange.description;
       }
       if (description == null) {
-        const intl = tmp2(1113).intl;
-        description = intl.string(tmp2(1113).t.cqdtrR);
+        const intl = tmp2(1112).intl;
+        description = intl.string(tmp2(1112).t.cqdtrR);
       }
     }
   }

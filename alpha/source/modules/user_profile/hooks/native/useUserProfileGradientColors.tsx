@@ -1,13 +1,13 @@
-// Module ID: 8073
-// Function ID: 8074
+// Module ID: 8072
+// Function ID: 8073
 // Name: useUserProfileGradientColors
-// Dependencies: [19, 4793, 504, 4853, 7422, 8063, 2]
+// Dependencies: [19, 4795, 504, 4855, 7421, 8062, 2]
 // Exports: useUserProfileGradientColors
 
-// Module 8073 (useUserProfileGradientColors)
-import UserProfileGradientUtils from "UserProfileGradientUtils" /* 8063 */;
+// Module 8072 (useUserProfileGradientColors)
+import UserProfileGradientUtils from "UserProfileGradientUtils" /* 8062 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4793 */;
+import AccessibilityStore from "AccessibilityStore" /* 4795 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

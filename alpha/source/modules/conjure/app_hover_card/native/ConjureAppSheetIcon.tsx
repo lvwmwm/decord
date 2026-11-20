@@ -1,17 +1,17 @@
-// Module ID: 12220
-// Function ID: 12221
+// Module ID: 12162
+// Function ID: 12163
 // Name: ConjureAppSheetIcon
-// Dependencies: [19, 17, 21, 4792, 575, 11809, 5479, 1414, 2]
+// Dependencies: [19, 17, 21, 4794, 575, 11751, 5481, 1412, 2]
 // Exports: default
 
-// Module 12220 (ConjureAppSheetIcon)
+// Module 12162 (ConjureAppSheetIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import FastImageDefault from "FastImage" /* 5479 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
+import FastImageDefault from "FastImage" /* 5481 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 const View = react_native.View;

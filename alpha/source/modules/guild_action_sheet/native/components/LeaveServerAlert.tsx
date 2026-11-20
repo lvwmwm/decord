@@ -1,12 +1,12 @@
-// Module ID: 15099
-// Function ID: 15100
+// Module ID: 15063
+// Function ID: 15064
 // Name: LeaveServerAlert
-// Dependencies: [1072, 21, 5745, 1113, 5745, 7875, 2]
+// Dependencies: [1071, 21, 5747, 1112, 5747, 7874, 2]
 // Exports: default
 
-// Module 15099 (LeaveServerAlert)
-import Constants from "Constants" /* 1072 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 7875 */;
+// Module 15063 (LeaveServerAlert)
+import Constants from "Constants" /* 1071 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 7874 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -27,35 +27,35 @@ export default function LeaveServerAlert(guild) {
   let stringResult;
   guild = guild.guild;
   const features = guild.features;
-  const AlertModal = guild(5745).AlertModal;
+  const AlertModal = guild(5747).AlertModal;
   const hasItem = features.has(GuildFeatures.HUB);
-  const intl = guild(1113).intl;
+  const intl = guild(1112).intl;
   const string = intl.string;
-  const t = guild(1113).t;
+  const t = guild(1112).t;
   if (hasItem) {
     stringResult = string(t.Dv8gFT);
   } else {
     stringResult = string(t.J2TBi3);
   }
-  let obj = { title: stringResult, content: intl2.formatToPlainString(guild(1113).t.TB1og8, obj2), actions: closure_5(AlertActions, obj3) };
-  intl2 = tmp2(1113).intl;
+  let obj = { title: stringResult, content: intl2.formatToPlainString(guild(1112).t.TB1og8, obj2), actions: closure_5(AlertActions, obj3) };
+  intl2 = tmp2(1112).intl;
   obj2 = { name: guild.name };
   obj3 = { children: items };
-  AlertActions = tmp2(5745).AlertActions;
+  AlertActions = tmp2(5747).AlertActions;
   const obj4 = {
     variant: "destructive",
     onPress() {
       const obj = GuildSettingsActionCreatorsDefault;
       return obj.leaveGuild(guild.id);
     },
-    text: intl3.string(guild(1113).t.p89ACt)
+    text: intl3.string(guild(1112).t.p89ACt)
   };
-  const AlertActionButton = tmp2(5745).AlertActionButton;
-  intl3 = tmp2(1113).intl;
+  const AlertActionButton = tmp2(5747).AlertActionButton;
+  intl3 = tmp2(1112).intl;
   items = [closure_4(AlertActionButton, obj4, "confirm"), ];
-  const obj5 = { variant: "secondary", text: intl4.string(guild(1113).t.gm1Vej) };
-  const AlertActionButton2 = tmp2(5745).AlertActionButton;
-  intl4 = tmp2(1113).intl;
+  const obj5 = { variant: "secondary", text: intl4.string(guild(1112).t.gm1Vej) };
+  const AlertActionButton2 = tmp2(5747).AlertActionButton;
+  intl4 = tmp2(1112).intl;
   items[1] = closure_4(AlertActionButton2, obj5, "cancel");
   return closure_4(AlertModal, obj);
 };

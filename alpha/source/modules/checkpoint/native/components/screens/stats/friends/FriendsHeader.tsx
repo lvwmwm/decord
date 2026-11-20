@@ -1,21 +1,21 @@
-// Module ID: 12687
-// Function ID: 12688
+// Module ID: 12657
+// Function ID: 12658
 // Name: FriendsHeader
-// Dependencies: [17, 5848, 21, 4792, 575, 1113, 3307, 3339, 5477, 12418, 12665, 2]
+// Dependencies: [17, 5850, 21, 4794, 575, 1112, 3309, 3341, 5479, 12388, 12635, 2]
 // Exports: default, getSidekickTitleAccessibilityLabel, getSquadTitleAccessibilityLabel
 
-// Module 12687 (FriendsHeader)
+// Module 12657 (FriendsHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl3 from "intl" /* 1113 */;
-import _modDef3307 from "module_3307" /* 3307 */;
-import _modDef3339 from "module_3339" /* 3339 */;
-import FriendsIcon from "FriendsIcon" /* 5477 */;
-import CheckpointConstants from "CheckpointConstants" /* 5848 */;
-import CheckpointTextDefault from "CheckpointText" /* 12418 */;
-import CheckpointDisplayTextDefault from "CheckpointDisplayText" /* 12665 */;
+import intl3 from "intl" /* 1112 */;
+import _modDef3309 from "module_3309" /* 3309 */;
+import _modDef3341 from "module_3341" /* 3341 */;
+import FriendsIcon from "FriendsIcon" /* 5479 */;
+import CheckpointConstants from "CheckpointConstants" /* 5850 */;
+import CheckpointTextDefault from "CheckpointText" /* 12388 */;
+import CheckpointDisplayTextDefault from "CheckpointDisplayText" /* 12635 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -54,7 +54,7 @@ export default function FriendsHeader(title) {
   const obj5 = { isStepHeading: true, variant: "heading-sm/semibold", style: tmp.titleText, children: stringResult.toLocaleUpperCase() };
   const tmp2 = CheckpointTextDefault;
   const intl = intl3.intl;
-  stringResult = intl.string(_modDef3307.ZQakPR);
+  stringResult = intl.string(_modDef3309.ZQakPR);
   items[1] = hasOwnProperty(tmp2, obj5);
   items1 = [metroRequire(View, obj3), ];
   const obj6 = { accessibilityLabel: titleAccessibilityLabel, children: title.toLocaleUpperCase() };
@@ -69,13 +69,13 @@ export function getSquadTitleAccessibilityLabel(items7) {
   const found = items7.filter((item) => "" !== item.trim());
   if (0 === found.length) {
     const intl = intl3.intl;
-    stringResult = intl.string(_modDef3307.OzY5Ns);
+    stringResult = intl.string(_modDef3309.OzY5Ns);
   } else {
     const intl2 = intl3.intl;
     const formatToPlainString = intl2.formatToPlainString;
     const _Intl = Intl;
     const obj = { names: listFormat.format(found) };
-    const XB99KC = _modDef3339.XB99KC;
+    const XB99KC = _modDef3341.XB99KC;
     const self = this;
     const self2 = this;
     listFormat = new Intl.ListFormat(intl3.intl.currentLocale, { type: "conjunction" });
@@ -87,11 +87,11 @@ export function getSidekickTitleAccessibilityLabel(name) {
   let stringResult;
   if ("" === name.trim()) {
     const intl2 = intl3.intl;
-    stringResult = intl2.string(_modDef3307["+uwOHt"]);
+    stringResult = intl2.string(_modDef3309["+uwOHt"]);
   } else {
     const intl = intl3.intl;
     const obj = { name };
-    stringResult = intl.formatToPlainString(_modDef3339.xRtlbW, obj);
+    stringResult = intl.formatToPlainString(_modDef3341.xRtlbW, obj);
   }
   return stringResult;
 }

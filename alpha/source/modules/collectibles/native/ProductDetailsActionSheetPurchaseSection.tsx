@@ -1,35 +1,35 @@
-// Module ID: 14144
-// Function ID: 14145
+// Module ID: 14113
+// Function ID: 14114
 // Name: ProductDetailsActionSheetPurchaseSection
-// Dependencies: [32, 19, 17, 7971, 1074, 1072, 9300, 1390, 21, 4792, 575, 7472, 12376, 5006, 13817, 1113, 9445, 9460, 8918, 5397, 1502, 7401, 6308, 14145, 2121, 7955, 14153, 1075, 14154, 9290, 8838, 5383, 5391, 2114, 8800, 504, 14113, 2174, 7968, 7967, 9446, 9127, 8796, 14156, 9444, 9299, 14157, 14158, 1630, 5390, 14159, 1242, 1380, 6245, 5740, 2]
+// Dependencies: [32, 19, 17, 7970, 1073, 1071, 9300, 1388, 21, 4794, 575, 7471, 12346, 5008, 13786, 1112, 9445, 9460, 8918, 5399, 1500, 7400, 6310, 14114, 2119, 7954, 14122, 1074, 14123, 9290, 8838, 5385, 5393, 2112, 8800, 504, 14082, 2172, 7967, 7966, 9446, 9127, 8796, 14125, 9444, 9299, 14126, 14127, 1628, 5392, 14128, 1241, 1378, 6247, 5742, 2]
 // Exports: default
 
-// Module 14144 (ProductDetailsActionSheetPurchaseSection)
+// Module 14113 (ProductDetailsActionSheetPurchaseSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl10 from "intl" /* 1113 */;
-import SentryUtilsDefault from "SentryUtils" /* 1242 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
-import PremiumConstants from "PremiumConstants" /* 1390 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 2114 */;
-import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5740 */;
-import ReleaseChannelUtils from "ReleaseChannelUtils" /* 6245 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6308 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7401 */;
+import intl10 from "intl" /* 1112 */;
+import SentryUtilsDefault from "SentryUtils" /* 1241 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
+import PremiumConstants from "PremiumConstants" /* 1388 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 2112 */;
+import asyncRequire from "asyncRequire" /* 2119 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5008 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5742 */;
+import ReleaseChannelUtils from "ReleaseChannelUtils" /* 6247 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6310 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7400 */;
 import OrbsIcon from "OrbsIcon" /* 8838 */;
 import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 9290 */;
 import MainTabsConstants from "MainTabsConstants" /* 9300 */;
-import openGiftModal from "openGiftModal" /* 13817 */;
+import openGiftModal from "openGiftModal" /* 13786 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7971 */;
-import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
-import Constants from "Constants" /* 1072 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7970 */;
+import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1073 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let importDefault, navigation;
@@ -129,9 +129,9 @@ function VCButton(balance) {
   } else {
     str = "primary";
   }
-  const tmp2Result = tmp2(5397);
+  const tmp2Result = tmp2(5399);
   color = tmp2Result.useButtonTextColorStyles(str);
-  const tmp2Result2 = tmp2(1502);
+  const tmp2Result2 = tmp2(1500);
   navigation = tmp2Result2.useNavigation();
   analyticsLocations = useAnalyticsLocationsDefault().analyticsLocations;
   let items = [navigation, product, balance, analyticsLocations, stageCollectibleChangeForEditProfile];
@@ -197,12 +197,12 @@ function VCButton(balance) {
         }
       }
     };
-    obj2.pushLazy(asyncRequire(14145, dependencyMap.paths), obj3, ORB_CHECKOUT_MODAL);
+    obj2.pushLazy(asyncRequire(14114, dependencyMap.paths), obj3, ORB_CHECKOUT_MODAL);
   }, items);
   if (null == price) {
     return null;
   } else {
-    const intl2 = tmp2(1113).intl;
+    const intl2 = tmp2(1112).intl;
     let obj4 = {
       orbPrice: price.amount,
       orbIconHook() {
@@ -210,7 +210,7 @@ function VCButton(balance) {
           return map1(OrbsIcon.OrbsIcon, obj, "orbs-icon");
         }
     };
-    const formatResult = intl2.format(tmp2(1113).t.JC15qj, obj4);
+    const formatResult = intl2.format(tmp2(1112).t.JC15qj, obj4);
     const _Array = Array;
     let arr3 = formatResult;
     if (!Array.isArray(formatResult)) {
@@ -220,7 +220,7 @@ function VCButton(balance) {
     let tmp7 = color;
     let obj5 = {
       style: tmp.orbsButtonLabel,
-      accessibilityLabel: intl.formatToPlainString(tmp2(1113).t.yi41qQ, obj6),
+      accessibilityLabel: intl.formatToPlainString(tmp2(1112).t.yi41qQ, obj6),
       children: arr3.map((children, index) => {
           let items;
           let tmp7;
@@ -234,9 +234,9 @@ function VCButton(balance) {
           return tmp7;
         })
     };
-    intl = tmp2(1113).intl;
+    intl = tmp2(1112).intl;
     obj6 = { orbPrice: price.amount };
-    const obj7 = { style: tmp.buttonContainer, children: closure_13(tmp2(5391).BaseTextButton, obj8) };
+    const obj7 = { style: tmp.buttonContainer, children: closure_13(tmp2(5393).BaseTextButton, obj8) };
     obj8 = {
       loading: false,
       textElement: closure_13(color, obj5),
@@ -264,9 +264,9 @@ function PurchaseDisclaimer(arg0) {
   formatResult = product.type !== CollectiblesItemType.CollectiblesItemType.EXTERNAL_SKU;
   const tmp2 = map1;
   if (formatResult) {
-    const intl = tmp3(1113).intl;
+    const intl = tmp3(1112).intl;
     const obj2 = { buyButtonLabel, paidServiceTermURL: constants2.PAID_TERMS };
-    formatResult = intl.format(tmp3(1113).t.iIglwJ, obj2);
+    formatResult = intl.format(tmp3(1112).t.iIglwJ, obj2);
   }
   return tmp2(Text, obj);
 }

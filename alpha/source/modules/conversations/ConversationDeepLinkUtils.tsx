@@ -1,15 +1,15 @@
-// Module ID: 8537
-// Function ID: 8538
+// Module ID: 8536
+// Function ID: 8537
 // Name: ConversationDeepLinkUtils
-// Dependencies: [5, 7144, 8224, 5416, 5827, 8512, 5415, 11, 8538, 2]
+// Dependencies: [5, 7143, 8223, 5418, 5829, 8511, 5417, 11, 8537, 2]
 // Exports: consumeConversationFocusParam, getConversationPermalink
 
-// Module 8537 (ConversationDeepLinkUtils)
-import ConversationConstants from "ConversationConstants" /* 5416 */;
-import ChannelUtils from "ChannelUtils" /* 5827 */;
-import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 7144 */;
+// Module 8536 (ConversationDeepLinkUtils)
+import ConversationConstants from "ConversationConstants" /* 5418 */;
+import ChannelUtils from "ChannelUtils" /* 5829 */;
+import PostConnectionCallbackStore from "PostConnectionCallbackStore" /* 7143 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
-import ConversationPreviewStore from "ConversationPreviewStore" /* 8224 */;
+import ConversationPreviewStore from "ConversationPreviewStore" /* 8223 */;
 import size from "module_2" /* 2 */;
 
 let c3, c4;
@@ -34,7 +34,7 @@ let obj = function _resolveConversationFocusLink() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -177,7 +177,7 @@ export function consumeConversationFocusParam(state) {
                   const obj2 = { value, done: true };
                   return obj2;
                 } else {
-                  return { value: "HermesInternal", done: "+60" };
+                  return { value: "HermesInternal", done: null };
                 }
               } else {
                 try {
@@ -225,7 +225,7 @@ export function consumeConversationFocusParam(state) {
                       const conversationFocus = obj.requestConversationFocus();
                     }
                     guildId = 3;
-                    return { value: "HermesInternal", done: "+60" };
+                    return { value: "HermesInternal", done: null };
                   }
                 } catch (tmp16) {
                   guildId = 3;

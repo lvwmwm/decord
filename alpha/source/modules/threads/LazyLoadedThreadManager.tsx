@@ -1,16 +1,16 @@
-// Module ID: 11171
-// Function ID: 11172
+// Module ID: 11113
+// Function ID: 11114
 // Name: LazyLoadedThreadManager
-// Dependencies: [6273, 4645, 4641, 4695, 1072, 4648, 572, 6724, 4830, 4843, 1285, 2]
+// Dependencies: [6275, 4647, 4643, 4697, 1071, 4650, 572, 6724, 4832, 4845, 1284, 2]
 
-// Module 11171 (LazyLoadedThreadManager)
+// Module 11113 (LazyLoadedThreadManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ChannelConstants from "ChannelConstants" /* 4648 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6273 */;
-import ChannelRecord from "ChannelRecord" /* 4645 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4695 */;
-import Constants from "Constants" /* 1072 */;
+import ChannelConstants from "ChannelConstants" /* 4650 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6275 */;
+import ChannelRecord from "ChannelRecord" /* 4647 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4697 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -20,7 +20,7 @@ let c9;
 let closure_4;
 let hasOwnProperty;
 let metroImportAll;
-const f100400 = () => {
+const f98670 = () => {
   closure_11 = {};
   channelId = channelId.getChannelId();
   const tmp2 = null != channelId && null == channel.getChannel(channelId);
@@ -33,7 +33,7 @@ function initialize() {
   if (!tmp) {
     c12 = true;
     const obj = DispatcherDefault;
-    const subscription = obj.subscribe("CONNECTION_OPEN", f100400);
+    const subscription = obj.subscribe("CONNECTION_OPEN", f98670);
   }
 }
 function dispatchLoadedThread(nextResult, arg1) {
@@ -64,7 +64,7 @@ function loadThread(c1) {
       c12 = true;
       let tmp2 = importDefault;
       let obj = DispatcherDefault;
-      const subscription = obj.subscribe("CONNECTION_OPEN", f100400);
+      const subscription = obj.subscribe("CONNECTION_OPEN", f98670);
     }
     if (GatewayConnectionStore.isConnected()) {
       if (null != closure_11[c1]) {
@@ -81,11 +81,11 @@ function loadThread(c1) {
         const matchPath = require("matchPathCompat").matchPath;
         CHANNEL = constants.CHANNEL;
         require("matchPathCompat");
-        const RouteParam = tmp13(4843).RouteParam;
+        const RouteParam = tmp13(4845).RouteParam;
         guildIdResult = RouteParam.guildId();
-        RouteParam2 = tmp13(4843).RouteParam;
+        RouteParam2 = tmp13(4845).RouteParam;
         importDefault = matchPath(pathname, obj2);
-        const HTTP = tmp13(1285).HTTP;
+        const HTTP = tmp13(1284).HTTP;
         const get = HTTP.get;
         const obj3 = { url: closure_8.CHANNEL(c1), rejectWithError: tmp13Result2.rejectWithMigratedError() };
         tmp13Result2 = require("HTTPUtils");
@@ -180,11 +180,11 @@ let obj = {
 
         });
       } else {
-        const HTTP = items1(1285).HTTP;
+        const HTTP = items1(1284).HTTP;
         const request = { url: closure_8.THREADS_BULK, body: obj2, rejectWithError: obj4.rejectWithMigratedError() };
         const post = HTTP.post;
         obj2 = { thread_ids: items1 };
-        obj4 = items1(1285);
+        obj4 = items1(1284);
         const postResult = post(request);
         const nextPromise = postResult.then((body) => {
           body = body.body;

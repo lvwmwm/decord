@@ -1,33 +1,30 @@
-// Module ID: 19860
-// Function ID: 19861
+// Module ID: 19678
+// Function ID: 19679
 // Name: SoundboardSoundEditModalRootScreen
-// Dependencies: [5, 32, 19, 17, 502, 5840, 5842, 1391, 21, 4792, 575, 19861, 504, 8086, 5353, 1149, 8036, 19854, 6709, 6229, 5473, 19862, 7102, 1113, 5383, 6911, 8943, 7377, 1414, 9369, 14414, 5390, 2]
+// Dependencies: [5, 32, 19, 17, 5844, 1389, 21, 4794, 575, 19679, 19680, 8085, 5355, 1148, 8035, 19672, 6711, 6231, 5475, 19681, 7101, 1112, 5385, 6910, 8943, 7376, 1412, 9369, 14382, 5392, 2]
 // Exports: default
 
-// Module 19860 (SoundboardSoundEditModalRootScreen)
+// Module 19678 (SoundboardSoundEditModalRootScreen)
 import nativeDefault from "native" /* 575 */;
-import SoundboardActionCreators from "SoundboardActionCreators" /* 6709 */;
 import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 8943 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import SoundboardStore from "SoundboardStore" /* 5840 */;
-import SoundboardConstants from "SoundboardConstants" /* 5842 */;
-import EmojiConstants from "EmojiConstants" /* 1391 */;
+import SoundboardConstants from "SoundboardConstants" /* 5844 */;
+import EmojiConstants from "EmojiConstants" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
-import size from "module_2" /* 2 */;
+import createStyles_mod from "createStyles" /* 4794 */;
+import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let c7, c8, maxLength;
+let c7, c8;
 
 let c10;
+let c9;
 let closure_12;
-let closure_14;
-let closure_15;
 let map1;
+let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let obj2;
@@ -37,9 +34,9 @@ let obj5;
 let unpackModuleId;
 let react = react_mod;
 ({ ScrollView: metroRequire, View: metroImportDefault } = react_native);
-({ MAX_LENGTH_SOUND_NAME: c10, MAX_SOUND_LENGTH_SECONDS: unpackModuleId } = SoundboardConstants);
-({ EMOJI_URL_BASE_SIZE: closure_12, EmojiIntention: map1 } = EmojiConstants);
-({ jsx: closure_14, jsxs: closure_15 } = Fragment);
+({ MAX_LENGTH_SOUND_NAME: metroImportAll, MAX_SOUND_LENGTH_SECONDS: c9 } = SoundboardConstants);
+({ EMOJI_URL_BASE_SIZE: c10, EmojiIntention: unpackModuleId } = EmojiConstants);
+({ jsx: closure_12, jsxs: map1 } = Fragment);
 let createStyles = createStyles_mod;
 let obj = { container: obj2, label: obj3, buttons: obj4, emojiPreview: obj5 };
 obj2 = { padding: nativeDefault.space.PX_16 };
@@ -47,7 +44,8 @@ createStyles = createStyles.createStyles;
 obj3 = { marginTop: nativeDefault.space.PX_8, marginBottom: nativeDefault.space.PX_8 };
 obj4 = { marginTop: nativeDefault.space.PX_24, gap: nativeDefault.space.PX_16 };
 obj5 = { backgroundColor: nativeDefault.colors.INPUT_BACKGROUND_DEFAULT, paddingHorizontal: nativeDefault.space.PX_16, paddingVertical: nativeDefault.space.PX_12, marginBottom: nativeDefault.space.PX_16, borderRadius: nativeDefault.radii.lg, flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_12 };
-let closure_16 = createStyles(obj);
+let closure_14 = createStyles(obj);
+let size = size_mod;
 const result = size.fileFinishedImporting("modules/soundboard/native/edit_modal/SoundboardSoundEditModalRootScreen.tsx");
 
 export default function SoundboardSoundEditModalRootScreen(localSource) {
@@ -65,14 +63,14 @@ export default function SoundboardSoundEditModalRootScreen(localSource) {
   let intl4;
   let intl5;
   let intl7;
+  let items;
+  let items1;
   let items2;
-  let items3;
-  let items4;
   let sound;
   let str2;
   let tmp14;
-  let tmp36Result;
-  let tmp45;
+  let tmp37Result;
+  let tmp46;
   let tmp5;
   ({ guildId: require, sound } = localSource);
   localSource = localSource.localSource;
@@ -83,16 +81,16 @@ export default function SoundboardSoundEditModalRootScreen(localSource) {
   let first1;
   let first2;
   let closure_9;
-  maxLength = undefined;
+  size = undefined;
   let first3;
   let first4;
-  let soundId;
-  let closure_14;
-  let closure_15;
+  let closure_13;
+  closure_14 = undefined;
   let obj = function _handleSave() {
     let durationMs;
     let name;
     let ref;
+    let soundId;
     let trim;
     let volume;
     obj = _asyncToGenerator(async function(arg0, value) {
@@ -107,7 +105,7 @@ export default function SoundboardSoundEditModalRootScreen(localSource) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c5;
@@ -134,7 +132,7 @@ export default function SoundboardSoundEditModalRootScreen(localSource) {
               if (null != localSource) {
                 const obj5 = { guildId, name, volume, emojiId: null, emojiName: null, localSource: tmp83, durationMs, trim };
                 ({ emojiId: obj7.emojiId, emojiName: obj7.emojiName } = emojiId);
-                const obj6 = emojiId(closure_2[17]);
+                const obj6 = emojiId(closure_2[15]);
                 ref.current = obj6.createSoundboardSound(obj5);
                 c6 = 3;
                 c7 = 1;
@@ -142,7 +140,7 @@ export default function SoundboardSoundEditModalRootScreen(localSource) {
                 return obj8;
               } else {
                 const obj9 = { guildId, soundId: soundId.soundId, name, volume, emojiId, emojiName };
-                const tmp86 = emojiId(closure_2[18]);
+                const tmp86 = emojiId(closure_2[16]);
                 emojiId = emojiId.emojiId;
                 const updateSound = tmp86.updateSound;
                 const tmp91 = emojiId;
@@ -159,7 +157,7 @@ export default function SoundboardSoundEditModalRootScreen(localSource) {
           } else if (1 === c6) {
             c5 = 0;
             const tmp55 = closure_4;
-            if (closure_131_14()) {
+            if (closure_131_13()) {
               closure_131_10(false);
             }
             throw tmp55;
@@ -168,22 +166,22 @@ export default function SoundboardSoundEditModalRootScreen(localSource) {
             closure_2 = closure_4;
             const self = this;
             const self2 = this;
-            const tmp32 = new emojiName(closure_2[19])(closure_2);
+            const tmp32 = new emojiName(closure_2[17])(closure_2);
             emojiId = tmp32;
             firstFieldErrorMessage = emojiId.getFirstFieldErrorMessage("name");
             if (null != firstFieldErrorMessage) {
-              if (closure_131_14()) {
+              if (closure_131_13()) {
                 closure_131_6(firstFieldErrorMessage);
               }
               c5 = 0;
-              if (closure_131_14()) {
+              if (closure_131_13()) {
                 closure_131_10(false);
               }
               c7 = 3;
               const obj11 = { value: undefined, done: true };
               return obj11;
             }
-            const obj3 = emojiId(closure_2[20]);
+            const obj3 = emojiId(closure_2[18]);
             obj3.presentError(emojiId.getAnyErrorMessage());
           } else {
             if (3 === c6) {
@@ -192,7 +190,7 @@ export default function SoundboardSoundEditModalRootScreen(localSource) {
                 throw value;
               } else if (arg0 === 2) {
                 c5 = 0;
-                if (closure_131_14()) {
+                if (closure_131_13()) {
                   closure_131_10(false);
                 }
                 c7 = 3;
@@ -204,7 +202,7 @@ export default function SoundboardSoundEditModalRootScreen(localSource) {
               throw value;
             } else if (arg0 === 2) {
               c5 = 0;
-              if (closure_131_14()) {
+              if (closure_131_13()) {
                 closure_131_10(false);
               }
               c7 = 3;
@@ -212,14 +210,14 @@ export default function SoundboardSoundEditModalRootScreen(localSource) {
               return obj;
             }
             c5 = 0;
-            if (closure_131_14()) {
+            if (closure_131_13()) {
               closure_131_10(false);
             }
-            if (closure_131_14()) {
+            if (closure_131_13()) {
               closure_131_3();
             }
             c7 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp72) {
           closure_4 = tmp72;
@@ -236,7 +234,7 @@ export default function SoundboardSoundEditModalRootScreen(localSource) {
     });
     return obj(...arguments);
   };
-  let tmp = obj();
+  let tmp = closure_14();
   obj = react;
   let str;
   const useState = react.useState;
@@ -285,23 +283,18 @@ export default function SoundboardSoundEditModalRootScreen(localSource) {
   let tmp21 = sound;
   const tmp22 = localSource;
   let tmp20 = tmp2Result8[1];
-  let tmp23 = sound(localSource[11])(first2);
-  soundId = undefined;
+  let tmp23 = sound(localSource[9])(first2);
+  let soundId;
+  let tmp24 = sound(localSource[10]);
   if (sound != null) {
     soundId = sound.soundId;
   }
-  let tmp25 = require;
-  let obj3 = require("get initialized");
-  let items = [closure_9, first2];
-  let items1 = [soundId];
-  const stateFromStores = obj3.useStateFromStores(items, () => {
-    const isPlayingSoundResult = null != soundId && SoundboardStore.isPlayingSound(tmp) && SoundboardStore.isUserPlayingSounds(AuthenticationStore.getId());
-    return isPlayingSoundResult;
-  }, items1);
-  closure_14 = tmp21(tmp22[13])();
-  closure_15 = obj.useRef(null);
-  let obj4 = require("useMountEffect");
-  const unmountEffect = obj4.useUnmountEffect(() => {
+  const tmp24Result = tmp24(soundId, first1);
+  closure_13 = tmp21(tmp22[11])();
+  closure_14 = obj.useRef(null);
+  let tmp27 = require;
+  let obj3 = require("useMountEffect");
+  const unmountEffect = obj3.useUnmountEffect(() => {
     function removeLocalSource(uri) {
       return obj(...arguments);
     }
@@ -318,7 +311,7 @@ export default function SoundboardSoundEditModalRootScreen(localSource) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           while (true) {
@@ -394,11 +387,11 @@ export default function SoundboardSoundEditModalRootScreen(localSource) {
                 c6 = 0;
                 closure_1.return();
                 c8 = 3;
-                return { value: "HermesInternal", done: "+60" };
+                return { value: "HermesInternal", done: null };
               }
               let _decodeURI = decodeURI;
               decodeURI(closure_0.replace(/^file:\/\//, ""));
-              let obj3 = sound(localSource[15]);
+              let obj3 = sound(localSource[13]);
               items1 = obj3.getConstants();
               CacheDirPath = items1.CacheDirPath;
               DocumentsDirPath = items1.DocumentsDirPath;
@@ -416,7 +409,7 @@ export default function SoundboardSoundEditModalRootScreen(localSource) {
                 let _HermesInternal = HermesInternal;
                 if (closure_1.startsWith("" + length + "/")) {
                   c6 = 3;
-                  let obj4 = closure_2_0(localSource[16]);
+                  let obj4 = closure_2_0(localSource[14]);
                   c7 = 5;
                   c8 = 1;
                   let obj8 = { value: obj4.removeFile(closure_7, closure_1.slice(length.length + 1)), done: false };
@@ -427,7 +420,7 @@ export default function SoundboardSoundEditModalRootScreen(localSource) {
                 }
               }
               c8 = 3;
-              return { value: "HermesInternal", done: "+60" };
+              return { value: "HermesInternal", done: null };
             }
           }
         }
@@ -441,33 +434,33 @@ export default function SoundboardSoundEditModalRootScreen(localSource) {
   if (null != first4) {
     first3 = first4.endMs - first4.startMs;
   }
-  let tmp28 = defaultValue.length >= 2;
-  if (tmp28) {
-    let tmp29 = null == localSource;
-    if (!tmp29) {
-      let tmp30 = first3 > 0;
-      if (tmp30) {
-        let tmp31 = first3;
+  let tmp29 = defaultValue.length >= 2;
+  if (tmp29) {
+    let tmp30 = null == localSource;
+    if (!tmp30) {
+      let tmp31 = first3 > 0;
+      if (tmp31) {
+        let tmp32 = closure_9;
         let num2 = 1000;
-        tmp30 = first3 <= 1000 * first3;
+        tmp31 = first3 <= 1000 * closure_9;
       }
-      tmp29 = tmp30;
+      tmp30 = tmp31;
     }
-    tmp28 = tmp29;
+    tmp29 = tmp30;
   }
-  let tmp32 = closure_15;
-  let obj5 = { contentContainerStyle: tmp.container, keyboardShouldPersistTaps: "always", children: items2 };
-  let tmp34 = null;
-  const tmp33 = c6;
+  let obj4 = { contentContainerStyle: tmp.container, keyboardShouldPersistTaps: "always", children: items };
+  let tmp35 = null;
+  const tmp34 = c6;
   if (null != localSource) {
-    let obj6 = { source: localSource, volume: first1, onDurationChange: tmp17, onTrimChange: tmp20 };
-    tmp34 = closure_14(tmp21(tmp22[21]), obj6);
+    let tmp36 = first4;
+    let obj5 = { source: localSource, volume: first1, onDurationChange: tmp17, onTrimChange: tmp20 };
+    tmp35 = first4(tmp21(tmp22[19]), obj5);
   }
-  items2 = [tmp34, , , , , , ];
-  let tmp36 = closure_14;
-  let obj7 = {
-    label: intl.string(tmp25(tmp22[23]).t.NpJGaM),
-    maxLength,
+  items = [tmp35, , , , , , ];
+  let tmp37 = first4;
+  let obj6 = {
+    label: intl.string(tmp27(tmp22[21]).t.NpJGaM),
+    maxLength: first2,
     defaultValue,
     onChange(arg0) {
       closure_5(arg0);
@@ -476,19 +469,19 @@ export default function SoundboardSoundEditModalRootScreen(localSource) {
     errorMessage: tmp5,
     clearable: true
   };
-  const TextInput = tmp25(tmp22[22]).TextInput;
-  intl = tmp25(tmp22[23]).intl;
-  items2[1] = tmp36(TextInput, obj7);
-  let obj8 = { variant: "body-sm/semibold", color: "text-subtle", style: tmp.label, children: intl2.string(tmp25(tmp22[23]).t["3BQmiC"]) };
-  const Text = tmp25(tmp22[24]).Text;
-  intl2 = tmp25(tmp22[23]).intl;
-  items2[2] = tmp36(Text, obj8);
-  let obj9 = {
+  const TextInput = tmp27(tmp22[20]).TextInput;
+  intl = tmp27(tmp22[21]).intl;
+  items[1] = tmp37(TextInput, obj6);
+  let obj7 = { variant: "body-sm/semibold", color: "text-subtle", style: tmp.label, children: intl2.string(tmp27(tmp22[21]).t["3BQmiC"]) };
+  const Text = tmp27(tmp22[22]).Text;
+  intl2 = tmp27(tmp22[21]).intl;
+  items[2] = tmp37(Text, obj7);
+  let obj8 = {
     style: tmp.emojiPreview,
     onPress() {
       obj = openEmojiPickerActionSheet;
       let obj2 = {
-        pickerIntention: map1.SOUNDBOARD,
+        pickerIntention: unpackModuleId.SOUNDBOARD,
         guildId: require,
         onPressEmoji(id) {
           if (null != id.id) {
@@ -502,44 +495,44 @@ export default function SoundboardSoundEditModalRootScreen(localSource) {
       };
       return obj.openEmojiPickerActionSheet(obj2);
     },
-    children: items3
+    children: items1
   };
-  const PressableHighlight = tmp25(tmp22[25]).PressableHighlight;
+  const PressableHighlight = tmp27(tmp22[23]).PressableHighlight;
   if (null != tmp23) {
-    let obj10 = { fastImageStyle: { width: 24, height: 24 }, name: str2, src: emojiURL };
+    let obj9 = { fastImageStyle: { width: 24, height: 24 }, name: str2, src: emojiURL };
     str2 = first2.emojiName;
-    const tmp21Result = tmp21(tmp22[27]);
+    const tmp21Result = tmp21(tmp22[25]);
     if (str2 == null) {
       str2 = "";
     }
     emojiURL = undefined;
     if (null != first2.emojiId) {
-      let obj11 = { id: first2.emojiId, animated: false, size: first4 };
-      let tmp40 = first4;
-      const tmp21Result2 = tmp21(tmp22[28]);
-      emojiURL = tmp21Result2.getEmojiURL(obj11);
+      let obj10 = { id: first2.emojiId, animated: false, size };
+      let tmp41 = size;
+      const tmp21Result2 = tmp21(tmp22[26]);
+      emojiURL = tmp21Result2.getEmojiURL(obj10);
     }
-    tmp36Result = tmp36(tmp21Result, obj10);
+    tmp37Result = tmp37(tmp21Result, obj9);
   } else {
-    tmp36Result = tmp36(tmp25(tmp22[29]).ReactionIcon, { size: "md", color: "text-subtle" });
+    tmp37Result = tmp37(tmp27(tmp22[27]).ReactionIcon, { size: "md", color: "text-subtle" });
   }
-  items3 = [tmp36Result, ];
-  const Text2 = tmp25(tmp22[24]).Text;
+  items1 = [tmp37Result, ];
+  const Text2 = tmp27(tmp22[22]).Text;
   if (null != tmp23) {
-    let tmp42 = globalThis;
+    let tmp43 = globalThis;
     let _HermesInternal = HermesInternal;
     combined = ":" + tmp23 + ":";
   } else {
-    const intl3 = tmp25(tmp22[23]).intl;
-    combined = intl3.string(tmp25(tmp22[23]).t["59QgaD"]);
+    const intl3 = tmp27(tmp22[21]).intl;
+    combined = intl3.string(tmp27(tmp22[21]).t["59QgaD"]);
   }
-  items3[1] = tmp36(Text2, { variant: "body-md/semibold", color: "input-placeholder-text-default", children: combined });
-  items2[3] = tmp32(PressableHighlight, obj9);
-  const obj12 = { variant: "body-sm/semibold", color: "text-subtle", style: tmp.label, children: intl4.string(tmp25(tmp22[23]).t["3CJlb1"]) };
-  const Text3 = tmp25(tmp22[24]).Text;
-  intl4 = tmp25(tmp22[23]).intl;
-  items2[4] = tmp36(Text3, obj12);
-  const obj13 = {
+  items1[1] = tmp37(Text2, { variant: "body-md/semibold", color: "input-placeholder-text-default", children: combined });
+  items[3] = closure_13(PressableHighlight, obj8);
+  let obj11 = { variant: "body-sm/semibold", color: "text-subtle", style: tmp.label, children: intl4.string(tmp27(tmp22[21]).t["3CJlb1"]) };
+  const Text3 = tmp27(tmp22[22]).Text;
+  intl4 = tmp27(tmp22[21]).intl;
+  items[4] = tmp37(Text3, obj11);
+  const obj12 = {
     minValue: 0,
     maxValue: 1,
     value: first1,
@@ -547,47 +540,39 @@ export default function SoundboardSoundEditModalRootScreen(localSource) {
     formatValue(arg0) {
       return "" + Math.round(100 * arg0) + "%";
     },
-    accessibilityLabel: intl5.string(tmp25(tmp22[23]).t["3CJlb1"])
+    accessibilityLabel: intl5.string(tmp27(tmp22[21]).t["3CJlb1"])
   };
-  const Slider = tmp25(tmp22[30]).Slider;
-  intl5 = tmp25(tmp22[23]).intl;
-  items2[5] = tmp36(Slider, obj13);
-  let tmp36Result2 = null;
-  let tmp43 = first1;
-  const obj14 = { style: tmp.buttons, children: items4 };
+  const Slider = tmp27(tmp22[28]).Slider;
+  intl5 = tmp27(tmp22[21]).intl;
+  items[5] = tmp37(Slider, obj12);
+  let tmp37Result2 = null;
+  const obj13 = { style: tmp.buttons, children: items2 };
+  const tmp44 = first1;
   if (null != sound) {
-    const Button = tmp25(tmp22[31]).Button;
-    const intl6 = tmp25(tmp22[23]).intl;
+    const Button = tmp27(tmp22[29]).Button;
+    const intl6 = tmp27(tmp22[21]).intl;
     const string = intl6.string;
-    const t = tmp25(tmp22[23]).t;
-    const obj15 = {
-      variant: "secondary",
-      text: string(stateFromStores ? t.diasud : t.CCRKNz),
-      onPress() {
-          obj = SoundboardActionCreators;
-          const obj2 = { soundId: sound.soundId, volume: first1 };
-          return obj.playSoundLocally(null, obj2);
-        },
-      disabled: stateFromStores
-    };
-    tmp36Result2 = tmp36(Button, obj15);
+    const isPlaying = tmp24Result.isPlaying;
+    const t = tmp27(tmp22[21]).t;
+    const obj14 = { variant: "secondary", text: string(isPlaying ? t.hHBkuG : t.CCRKNz), onPress: tmp24Result.isPlaying ? tmp24Result.stop : tmp24Result.play };
+    tmp37Result2 = tmp37(Button, obj14);
   }
-  items4 = [tmp36Result2, ];
-  const obj16 = {
-    text: intl7.string(tmp25(tmp22[23]).t.bZY171),
+  items2 = [tmp37Result2, ];
+  const obj15 = {
+    text: intl7.string(tmp27(tmp22[21]).t.bZY171),
     onPress: function handleSave() {
       return obj(...arguments);
     },
-    disabled: tmp45,
+    disabled: tmp46,
     loading: tmp14
   };
-  const Button2 = tmp25(tmp22[31]).Button;
-  intl7 = tmp25(tmp22[23]).intl;
-  tmp45 = !tmp28;
-  if (tmp28) {
-    tmp45 = tmp14;
+  const Button2 = tmp27(tmp22[29]).Button;
+  intl7 = tmp27(tmp22[21]).intl;
+  tmp46 = !tmp29;
+  if (tmp29) {
+    tmp46 = tmp14;
   }
-  items4[1] = tmp36(Button2, obj16);
-  items2[6] = tmp32(tmp43, obj14);
-  return tmp32(tmp33, obj5);
+  items2[1] = tmp37(Button2, obj15);
+  items[6] = closure_13(tmp44, obj13);
+  return closure_13(tmp34, obj4);
 };

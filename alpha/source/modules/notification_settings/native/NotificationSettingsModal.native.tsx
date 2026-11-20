@@ -1,53 +1,53 @@
-// Module ID: 20120
-// Function ID: 20121
+// Module ID: 19940
+// Function ID: 19941
 // Name: NotificationSettingsModal
-// Dependencies: [109, 19, 17, 4645, 4641, 7358, 5413, 4663, 19739, 4734, 6431, 1388, 1072, 6432, 1082, 21, 4792, 575, 4853, 5529, 5006, 11094, 2121, 7366, 7361, 11093, 7228, 1113, 7230, 7229, 7437, 5383, 1187, 5471, 2188, 6926, 11096, 6938, 13617, 4727, 7517, 5408, 7590, 5808, 11097, 1502, 504, 7359, 5366, 6976, 20121, 11092, 6973, 2]
+// Dependencies: [109, 19, 17, 4647, 4643, 7357, 5415, 4665, 19557, 4736, 6433, 1386, 1071, 6434, 1081, 21, 4794, 575, 4855, 5531, 5008, 11036, 2119, 7365, 7360, 11035, 7227, 1112, 7229, 7228, 7436, 5385, 1186, 5473, 2186, 6925, 11038, 6937, 13587, 4729, 7516, 5410, 7589, 5810, 11039, 1500, 504, 7358, 5368, 6975, 19941, 11034, 6972, 2]
 // Exports: default
 
-// Module 20120 (NotificationSettingsModal)
+// Module 19940 (NotificationSettingsModal)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
-import intl8 from "intl" /* 1113 */;
-import asyncRequire from "asyncRequire" /* 2121 */;
-import MuteTimers from "MuteTimers" /* 4727 */;
-import native from "native" /* 4853 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
-import useChannelName from "useChannelName" /* 5408 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5529 */;
-import ReadStateConstants from "ReadStateConstants" /* 6432 */;
-import TableRow2 from "TableRow" /* 6926 */;
-import TableRowIcon2 from "TableRowIcon" /* 6938 */;
-import Navigator2 from "Navigator" /* 6973 */;
-import NavigatorHeader from "NavigatorHeader" /* 6976 */;
-import TableRadioGroup2 from "TableRadioGroup" /* 7228 */;
-import TableRowGroup3 from "TableRowGroup" /* 7229 */;
-import TableRadioRow5 from "TableRadioRow" /* 7230 */;
-import getFlattedChannelListDefault from "getFlattedChannelList" /* 7359 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7361 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7366 */;
-import TableSwitchRow6 from "TableSwitchRow" /* 7437 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 7517 */;
-import _mod7590 from "module_7590" /* 7590 */;
-import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 11093 */;
-import MutedUntilTextDefault from "MutedUntilText" /* 11096 */;
-import notifications_NotificationUtils from "notifications/NotificationUtils" /* 11097 */;
-import PlusMediumIcon from "PlusMediumIcon" /* 13617 */;
+import UserSettingsConstants from "UserSettingsConstants" /* 1081 */;
+import intl8 from "intl" /* 1112 */;
+import asyncRequire from "asyncRequire" /* 2119 */;
+import MuteTimers from "MuteTimers" /* 4729 */;
+import native from "native" /* 4855 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5008 */;
+import useChannelName from "useChannelName" /* 5410 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5531 */;
+import ReadStateConstants from "ReadStateConstants" /* 6434 */;
+import TableRow2 from "TableRow" /* 6925 */;
+import TableRowIcon2 from "TableRowIcon" /* 6937 */;
+import Navigator2 from "Navigator" /* 6972 */;
+import NavigatorHeader from "NavigatorHeader" /* 6975 */;
+import TableRadioGroup2 from "TableRadioGroup" /* 7227 */;
+import TableRowGroup3 from "TableRowGroup" /* 7228 */;
+import TableRadioRow5 from "TableRadioRow" /* 7229 */;
+import getFlattedChannelListDefault from "getFlattedChannelList" /* 7358 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7360 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7365 */;
+import TableSwitchRow6 from "TableSwitchRow" /* 7436 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 7516 */;
+import _mod7589 from "module_7589" /* 7589 */;
+import notificationSettingsFlagUtils from "notificationSettingsFlagUtils" /* 11035 */;
+import MutedUntilTextDefault from "MutedUntilText" /* 11038 */;
+import notifications_NotificationUtils from "notifications/NotificationUtils" /* 11039 */;
+import PlusMediumIcon from "PlusMediumIcon" /* 13587 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import ChannelRecord from "ChannelRecord" /* 4645 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import GuildCategoryStore from "GuildCategoryStore" /* 7358 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5413 */;
-import GuildStore from "GuildStore" /* 4663 */;
-import NotificationSettingsModalStore from "NotificationSettingsModalStore" /* 19739 */;
-import RelationshipStore from "RelationshipStore" /* 4734 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6431 */;
-import UserStore from "UserStore" /* 1388 */;
-import Constants from "Constants" /* 1072 */;
+import ChannelRecord from "ChannelRecord" /* 4647 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import GuildCategoryStore from "GuildCategoryStore" /* 7357 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5415 */;
+import GuildStore from "GuildStore" /* 4665 */;
+import NotificationSettingsModalStore from "NotificationSettingsModalStore" /* 19557 */;
+import RelationshipStore from "RelationshipStore" /* 4736 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6433 */;
+import UserStore from "UserStore" /* 1386 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, set;
@@ -75,7 +75,7 @@ function ConnectedNotificationSettings(guildId) {
   guildId = guildId.guildId;
   let memo;
   let shouldUseNewNotificationSystem;
-  let obj = guildId(1502);
+  let obj = guildId(1500);
   navigation = obj.useNavigation();
   let obj2 = guildId(504);
   const items = [UserGuildSettingsStore, GuildStore, GuildCategoryStore, GuildMemberCountStore];
@@ -92,7 +92,7 @@ function ConnectedNotificationSettings(guildId) {
     const tmp = closure_1_8(type) || type === constants.GUILD_CATEGORY;
     return tmp;
   }), items1);
-  const obj3 = guildId(11097);
+  const obj3 = guildId(11039);
   shouldUseNewNotificationSystem = obj3.useShouldUseNewNotificationSystem("NotificationSettingsModalNative");
   const items2 = [UserGuildSettingsStore];
   const items3 = [shouldUseNewNotificationSystem, memo, tmp3.channelOverrides];
@@ -129,7 +129,7 @@ function ConnectedNotificationSettings(guildId) {
     shouldUseNewNotificationSystem
   };
   const merged = Object.assign(tmp3);
-  items4 = [closure_29(NotificationSettings, obj6), closure_29(guildId(5366).NavScrim, {})];
+  items4 = [closure_29(NotificationSettings, obj6), closure_29(guildId(5368).NavScrim, {})];
   return closure_30(closure_31, obj5);
 }
 let closure_3 = ["categories"];
@@ -165,7 +165,7 @@ class NotificationSettings extends PureComponent {
         const _HermesInternal = HermesInternal;
         ActionSheetActionCreatorsDefault;
         const obj = { guildId };
-        const tmp8 = asyncRequire(11094, dependencyMap.paths);
+        const tmp8 = asyncRequire(11036, dependencyMap.paths);
         openLazy(tmp8, "muteSettings" + guildId, obj);
       }
     };
@@ -258,15 +258,15 @@ class NotificationSettings extends PureComponent {
     if (null != guildMemberCount) {
       stringResult = null;
       if (guildMemberCount >= authStore5) {
-        const intl3 = tmp6(1113).intl;
-        stringResult = intl3.string(tmp6(1113).t.Dh5p5j);
+        const intl3 = tmp6(1112).intl;
+        stringResult = intl3.string(tmp6(1112).t.Dh5p5j);
       }
     }
     items = [mostRecentSelectedTextChannelIds(TableRadioRow, obj2), , , ];
     if (shouldUseNewNotificationSystem) {
       const obj3 = { label: intl4.string(intl8.t.JzbSEY), value: hybrid, disabled: muted };
-      const TableRadioRow2 = tmp6(7230).TableRadioRow;
-      intl4 = tmp6(1113).intl;
+      const TableRadioRow2 = tmp6(7229).TableRadioRow;
+      intl4 = tmp6(1112).intl;
       const items1 = [mostRecentSelectedTextChannelIds(TableRadioRow2, obj3, hybrid)];
       items2 = items1;
     } else {
@@ -274,12 +274,12 @@ class NotificationSettings extends PureComponent {
     }
     items[1] = items2;
     const obj4 = { label: intl5.format(intl8.t.L2hmYy, {}), value: constants2.ONLY_MENTIONS, disabled: muted };
-    const TableRadioRow3 = tmp6(7230).TableRadioRow;
-    intl5 = tmp6(1113).intl;
+    const TableRadioRow3 = tmp6(7229).TableRadioRow;
+    intl5 = tmp6(1112).intl;
     items[2] = mostRecentSelectedTextChannelIds(TableRadioRow3, obj4);
     const obj5 = { label: intl6.string(intl8.t.CtVGyQ), value: constants2.NO_MESSAGES, disabled: muted };
-    const TableRadioRow4 = tmp6(7230).TableRadioRow;
-    intl6 = tmp6(1113).intl;
+    const TableRadioRow4 = tmp6(7229).TableRadioRow;
+    intl6 = tmp6(1112).intl;
     items[3] = mostRecentSelectedTextChannelIds(TableRadioRow4, obj5);
     return tmp5(TableRadioGroup, obj);
   }
@@ -332,8 +332,8 @@ class NotificationSettings extends PureComponent {
         handleToggleChange("suppress_roles", arg0, NotificationLabel.suppressRoles(arg0));
       }
     };
-    const TableSwitchRow2 = tmp5(7437).TableSwitchRow;
-    intl2 = tmp5(1113).intl;
+    const TableSwitchRow2 = tmp5(7436).TableSwitchRow;
+    intl2 = tmp5(1112).intl;
     if (suppressRoles == null) {
       suppressRoles = false;
     }
@@ -350,16 +350,16 @@ class NotificationSettings extends PureComponent {
         const result = updateGuildNotificationSettings(require, obj, NotificationLabel.highlights(!arg0));
       }
     };
-    const TableSwitchRow3 = tmp5(7437).TableSwitchRow;
-    intl3 = tmp5(1113).intl;
+    const TableSwitchRow3 = tmp5(7436).TableSwitchRow;
+    intl3 = tmp5(1112).intl;
     const obj4 = { children: items1 };
     const obj5 = { hasIcons: false, children: items };
     tmp8 = muted || notifyHighlights === constants6.DISABLED;
     items[2] = closure_29(TableSwitchRow3, obj3);
     items1 = [tmp2(TableRowGroup, obj5), , ];
     const obj6 = { variant: "body-sm/medium", color: "text-muted", style: { marginTop: 8 }, children: intl4.string(intl8.t["Vw/Xn8"]) };
-    const Text = tmp5(5383).Text;
-    intl4 = tmp5(1113).intl;
+    const Text = tmp5(5385).Text;
+    intl4 = tmp5(1112).intl;
     items1[1] = closure_29(Text, obj6);
     const obj7 = {
       style: tmp.highlightsLearnMore,
@@ -372,11 +372,11 @@ class NotificationSettings extends PureComponent {
       },
       children: intl5.string(intl8.t.PRBn9K)
     };
-    const LegacyText = tmp5(1187).LegacyText;
-    intl5 = tmp5(1113).intl;
+    const LegacyText = tmp5(1186).LegacyText;
+    intl5 = tmp5(1112).intl;
     items1[2] = closure_29(LegacyText, obj7);
     const items2 = [tmp2(tmp4, obj4), ];
-    const TableRowGroup2 = tmp5(7229).TableRowGroup;
+    const TableRowGroup2 = tmp5(7228).TableRowGroup;
     const obj8 = {
       label: intl6.string(intl8.t.ONG3Yz),
       value: muteEvents,
@@ -386,8 +386,8 @@ class NotificationSettings extends PureComponent {
         handleToggleChange("mute_scheduled_events", arg0, NotificationLabel.mutedEvents(arg0));
       }
     };
-    const TableSwitchRow4 = tmp5(7437).TableSwitchRow;
-    intl6 = tmp5(1113).intl;
+    const TableSwitchRow4 = tmp5(7436).TableSwitchRow;
+    intl6 = tmp5(1112).intl;
     if (muteEvents == null) {
       muteEvents = false;
     }
@@ -402,8 +402,8 @@ class NotificationSettings extends PureComponent {
         handleToggleChange("mobile_push", arg0, NotificationLabel.mobilePush(arg0));
       }
     };
-    const TableSwitchRow5 = tmp5(7437).TableSwitchRow;
-    intl7 = tmp5(1113).intl;
+    const TableSwitchRow5 = tmp5(7436).TableSwitchRow;
+    intl7 = tmp5(1112).intl;
     tmp10 = !muted;
     if (tmp10) {
       if (mobilePush == null) {
@@ -449,15 +449,15 @@ class NotificationSettings extends PureComponent {
       formatResult = format(prop, obj);
       tmp7 = tmp;
     }
-    const obj3 = { helperText: intl2.string(tmp7(1113).t["8wbTQ6"]), hasIcons: false, children: mostRecentSelectedTextChannelIds(tmp7(6926).TableRow, obj4) };
-    const TableRowGroup = tmp7(7229).TableRowGroup;
-    intl2 = tmp7(1113).intl;
+    const obj3 = { helperText: intl2.string(tmp7(1112).t["8wbTQ6"]), hasIcons: false, children: mostRecentSelectedTextChannelIds(tmp7(6925).TableRow, obj4) };
+    const TableRowGroup = tmp7(7228).TableRowGroup;
+    intl2 = tmp7(1112).intl;
     obj4 = { label: formatResult, onPress: this.handleMutePress, arrow: !muted };
     const items = [mostRecentSelectedTextChannelIds(TableRowGroup, obj3, "mute"), ];
     let tmp11Result = null;
     const tmp11 = mostRecentSelectedTextChannelIds;
     if (muted) {
-      const obj5 = { muteConfig, type: tmp7(11096).MuteSettingType.SERVER };
+      const obj5 = { muteConfig, type: tmp7(11038).MuteSettingType.SERVER };
       const tmp14 = MutedUntilTextDefault;
       tmp11Result = tmp11(tmp14, obj5, "muted-until");
     }
@@ -507,25 +507,25 @@ class NotificationSettings extends PureComponent {
       }
       const obj = MuteTimers;
       if (obj.computeIsMuted(props.channelOverrides[parent_id.id])) {
-        const intl4 = tmp4(1113).intl;
-        stringResult = intl4.string(tmp4(1113).t.fpKdS1);
+        const intl4 = tmp4(1112).intl;
+        stringResult = intl4.string(tmp4(1112).t.fpKdS1);
       } else {
         let message_notifications = channelNotificationOptions[parent_id.id];
         if (message_notifications == null) {
           message_notifications = tmp.message_notifications;
         }
         if (constants2.ALL_MESSAGES === message_notifications) {
-          const intl3 = tmp4(1113).intl;
-          stringResult = intl3.string(tmp4(1113).t["n/bTaY"]);
+          const intl3 = tmp4(1112).intl;
+          stringResult = intl3.string(tmp4(1112).t["n/bTaY"]);
         } else if (hybrid === message_notifications) {
-          const intl2 = tmp4(1113).intl;
-          stringResult = intl2.string(tmp4(1113).t.JzbSEY);
+          const intl2 = tmp4(1112).intl;
+          stringResult = intl2.string(tmp4(1112).t.JzbSEY);
         } else if (constants2.ONLY_MENTIONS === message_notifications) {
-          const intl = tmp4(1113).intl;
-          stringResult = intl.string(tmp4(1113).t["6fQPhu"]);
+          const intl = tmp4(1112).intl;
+          stringResult = intl.string(tmp4(1112).t["6fQPhu"]);
         } else if (constants2.NO_MESSAGES === message_notifications) {
-          const intl5 = tmp4(1113).intl;
-          stringResult = intl5.string(tmp4(1113).t.CtVGyQ);
+          const intl5 = tmp4(1112).intl;
+          stringResult = intl5.string(tmp4(1112).t.CtVGyQ);
         }
       }
       const obj2 = {
@@ -538,9 +538,9 @@ class NotificationSettings extends PureComponent {
         trailing: tmp8Result,
         arrow: true
       };
-      const TableRow = tmp4(6926).TableRow;
+      const TableRow = tmp4(6925).TableRow;
       obj3 = { IconComponent: tmp4Result.getChannelIconComponent(parent_id) };
-      TableRowIcon = tmp4(6938).TableRowIcon;
+      TableRowIcon = tmp4(6937).TableRowIcon;
       tmp4Result = utils_ChannelUtils;
       channelName = null;
       const tmp10 = RelationshipStore;
@@ -553,7 +553,7 @@ class NotificationSettings extends PureComponent {
       tmp8Result = undefined;
       if (null != stringResult) {
         const obj4 = { text: stringResult };
-        tmp8Result = tmp8(tmp4(6926).TableRow.TrailingText, obj4);
+        tmp8Result = tmp8(tmp4(6925).TableRow.TrailingText, obj4);
       }
       return mostRecentSelectedTextChannelIds(TableRow, obj2, parent_id.id);
     }
@@ -569,16 +569,16 @@ class NotificationSettings extends PureComponent {
       const features = guild.features;
       hasItem = features.has(constants5.HUB);
     }
-    const Form = _mod7590.Form;
+    const Form = _mod7589.Form;
     const obj = { contentContainerStyle: { paddingTop: 16 }, children: null };
     if (hasItem) {
       const obj2 = { spacing: nativeDefault.space.PX_24, style: tmp.formStack, children: self.renderMuteSection() };
-      const Stack2 = tmp5(5808).Stack;
+      const Stack2 = tmp5(5810).Stack;
       obj.children = mostRecentSelectedTextChannelIds(Stack2, obj2);
       tmp4Result = tmp4(Form, obj);
     } else {
       const obj3 = { spacing: nativeDefault.space.PX_24, style: tmp.formStack, children: items };
-      const Stack = tmp5(5808).Stack;
+      const Stack = tmp5(5810).Stack;
       items = [self.renderMuteSection(), self.renderServerSettings(), self.renderNotificationOptions(), self.renderChannels()];
       obj.children = closure_30(Stack, obj3);
       tmp4Result = tmp4(Form, obj);

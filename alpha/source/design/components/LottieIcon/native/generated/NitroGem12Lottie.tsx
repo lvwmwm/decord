@@ -1,13 +1,13 @@
-// Module ID: 15164
-// Function ID: 15165
+// Module ID: 15128
+// Function ID: 15129
 // Name: NitroGem12Lottie
-// Dependencies: [19, 21, 9318, 15165, 2]
+// Dependencies: [19, 21, 9318, 15129, 2]
 // Exports: NitroGem12Lottie
 
-// Module 15164 (NitroGem12Lottie)
+// Module 15128 (NitroGem12Lottie)
 import Fragment from "Fragment" /* 21 */;
 import LottieIcon2 from "LottieIcon" /* 9318 */;
-import AssetRegistry from "AssetRegistry" /* 15165 */;
+import AssetRegistry from "AssetRegistry" /* 15129 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

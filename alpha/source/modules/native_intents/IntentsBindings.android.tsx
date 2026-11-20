@@ -1,9 +1,9 @@
-// Module ID: 20188
-// Function ID: 20189
+// Module ID: 20008
+// Function ID: 20009
 // Name: IntentsBindings
 // Dependencies: [2]
 
-// Module 20188 (IntentsBindings)
+// Module 20008 (IntentsBindings)
 import size from "module_2" /* 2 */;
 
 const obj = {

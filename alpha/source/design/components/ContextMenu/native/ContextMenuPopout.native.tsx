@@ -1,23 +1,23 @@
-// Module ID: 15184
-// Function ID: 15185
+// Module ID: 15148
+// Function ID: 15149
 // Name: ContextMenuPopout
-// Dependencies: [32, 19, 17, 21, 4792, 575, 8540, 4853, 5367, 1496, 1380, 6959, 6958, 5002, 1655, 5393, 1708, 8541, 5052, 5803, 5383, 15182, 5022, 5358, 1113, 2]
+// Dependencies: [32, 19, 17, 21, 4794, 575, 8539, 4855, 5369, 1494, 1378, 6958, 6957, 5004, 1653, 5395, 1706, 8540, 5054, 5805, 5385, 15146, 5024, 5360, 1112, 2]
 // Exports: ContextMenuPopout
 
-// Module 15184 (ContextMenuPopout)
+// Module 15148 (ContextMenuPopout)
 import nativeDefault from "native" /* 575 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
-import _modDef1655 from "module_1655" /* 1655 */;
-import _mod1708 from "module_1708" /* 1708 */;
-import native from "native" /* 4853 */;
-import spring_spring from "spring/spring" /* 5393 */;
-import ContextMenuConstants from "ContextMenuConstants" /* 8540 */;
-import ContextMenuState from "ContextMenuState" /* 8541 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
+import _modDef1653 from "module_1653" /* 1653 */;
+import _mod1706 from "module_1706" /* 1706 */;
+import native from "native" /* 4855 */;
+import spring_spring from "spring/spring" /* 5395 */;
+import ContextMenuConstants from "ContextMenuConstants" /* 8539 */;
+import ContextMenuState from "ContextMenuState" /* 8540 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let obj1;
@@ -74,14 +74,14 @@ function ContextMenuBackdrop(hasEntered) {
   const items2 = [hasEntered];
   const callback = useCallback(ContextMenuPopoutNativeTsx8, items2);
   let obj = { style: StyleSheet.absoluteFill, pointerEvents: "box-none", entering: backdropEnteringAnimation, exiting: callback, children: metroImportDefault(Backdrop, obj2) };
-  const View = _modDef1655.View;
+  const View = _modDef1653.View;
   obj2 = { blur: "none", accessibleDismissStyle: tmp.accessibleDismiss, onDismiss: onPress, accessibilityLabel: stringResult };
-  Backdrop = tmp3(5358).Backdrop;
+  Backdrop = tmp3(5360).Backdrop;
   const tmp3Result = PlatformUtils;
   const isAndroidResult = tmp3Result.isAndroid();
-  const intl = tmp3(1113).intl;
+  const intl = tmp3(1112).intl;
   const string = intl.string;
-  const t = tmp3(1113).t;
+  const t = tmp3(1112).t;
   if (isAndroidResult) {
     stringResult = string(t.hPBScv);
   } else {
@@ -419,14 +419,14 @@ export function ContextMenuPopout(cleanUp) {
     update.__closure = items1;
     update.__workletHash = 13202368878205;
     update.__initData = tmp4;
-    const Gesture = tmp(5052).Gesture;
+    const Gesture = tmp(5054).Gesture;
     const PanResult = Gesture.Pan();
     const enabledResult = PanResult.enabled(!first);
     const onStartResult = enabledResult.onStart(update);
     const items2 = [closure_16, state, , ];
     const onEnd = onStartResult.onUpdate(update).onEnd;
     onStartResult.onUpdate(update);
-    items2[2] = _mod1708.scheduleOnRN;
+    items2[2] = _mod1706.scheduleOnRN;
     items2[3] = requestClose;
     let c0;
     let c1;

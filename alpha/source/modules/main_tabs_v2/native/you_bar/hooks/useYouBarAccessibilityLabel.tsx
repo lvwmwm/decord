@@ -1,23 +1,23 @@
-// Module ID: 17995
-// Function ID: 17996
+// Module ID: 17822
+// Function ID: 17823
 // Name: useYouBarAccessibilityLabel
-// Dependencies: [6279, 4641, 4724, 5530, 4734, 6801, 5440, 1072, 4848, 4617, 8932, 7880, 504, 13419, 13420, 13426, 1113, 5531, 13428, 2]
+// Dependencies: [6281, 4643, 4726, 5532, 4736, 6801, 5442, 1071, 4850, 4619, 8932, 7879, 504, 13389, 13390, 13396, 1112, 5533, 13398, 2]
 // Exports: useYouBarAccessibilityLabel
 
-// Module 17995 (useYouBarAccessibilityLabel)
-import Constants from "Constants" /* 1072 */;
-import UserUtils from "UserUtils" /* 4848 */;
-import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 13419 */;
-import useUserVoiceActivity from "useUserVoiceActivity" /* 13420 */;
-import isGameActivityDefault from "isGameActivity" /* 13426 */;
-import getActivityStatusTextDefault from "getActivityStatusText" /* 13428 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6279 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import PermissionStore from "PermissionStore" /* 4724 */;
-import PresenceStore from "PresenceStore" /* 5530 */;
-import RelationshipStore from "RelationshipStore" /* 4734 */;
+// Module 17822 (useYouBarAccessibilityLabel)
+import Constants from "Constants" /* 1071 */;
+import UserUtils from "UserUtils" /* 4850 */;
+import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 13389 */;
+import useUserVoiceActivity from "useUserVoiceActivity" /* 13390 */;
+import isGameActivityDefault from "isGameActivity" /* 13396 */;
+import getActivityStatusTextDefault from "getActivityStatusText" /* 13398 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6281 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import PermissionStore from "PermissionStore" /* 4726 */;
+import PresenceStore from "PresenceStore" /* 5532 */;
+import RelationshipStore from "RelationshipStore" /* 4736 */;
 import SelfPresenceStore from "SelfPresenceStore" /* 6801 */;
-import VoiceStateStore from "VoiceStateStore" /* 5440 */;
+import VoiceStateStore from "VoiceStateStore" /* 5442 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -31,7 +31,7 @@ export function useYouBarAccessibilityLabel(stateFromStores) {
   let closure_2;
   let id;
   const tmp = dependencyMap;
-  let obj = id(4848);
+  let obj = id(4850);
   _require = obj.useName(stateFromStores);
   id = undefined;
   if (stateFromStores != null) {
@@ -52,8 +52,8 @@ export function useYouBarAccessibilityLabel(stateFromStores) {
   }
   dependencyMap = useGameMentionsAsPlainText(tmp7);
   let primaryGuild;
-  const getUserPrimaryGuild = tmp3(7880).getUserPrimaryGuild;
-  tmp3(7880);
+  const getUserPrimaryGuild = tmp3(7879).getUserPrimaryGuild;
+  tmp3(7879);
   if (stateFromStores != null) {
     primaryGuild = stateFromStores.primaryGuild;
   }
@@ -93,14 +93,14 @@ export function useYouBarAccessibilityLabel(stateFromStores) {
               if (null != name) {
                 let formatToPlainStringResult;
                 if ("" !== name) {
-                  const intl4 = tmp4(1113).intl;
+                  const intl4 = tmp4(1112).intl;
                   const obj5 = { name };
-                  formatToPlainStringResult = intl4.formatToPlainString(tmp4(1113).t["0wJXSh"], obj5);
+                  formatToPlainStringResult = intl4.formatToPlainString(tmp4(1112).t["0wJXSh"], obj5);
                 }
                 text = formatToPlainStringResult;
               }
-              const intl3 = tmp4(1113).intl;
-              formatToPlainStringResult = intl3.string(tmp4(1113).t.eXan7B);
+              const intl3 = tmp4(1112).intl;
+              formatToPlainStringResult = intl3.string(tmp4(1112).t.eXan7B);
             } else {
               let found1;
               if (activities != null) {
@@ -119,9 +119,9 @@ export function useYouBarAccessibilityLabel(stateFromStores) {
                     let stringResult;
                     if (!voiceChannel.isGroupDM()) {
                       const isGuildStageVoiceResult = voiceChannel.isGuildStageVoice();
-                      const intl = tmp4(1113).intl;
+                      const intl = tmp4(1112).intl;
                       const string = intl.string;
-                      const t = tmp4(1113).t;
+                      const t = tmp4(1112).t;
                       if (isGuildStageVoiceResult) {
                         stringResult = string(t.QygGCN);
                       } else {
@@ -130,8 +130,8 @@ export function useYouBarAccessibilityLabel(stateFromStores) {
                     }
                     text = stringResult;
                   }
-                  const intl2 = tmp4(1113).intl;
-                  stringResult = intl2.string(tmp4(1113).t["9FaEzi"]);
+                  const intl2 = tmp4(1112).intl;
+                  stringResult = intl2.string(tmp4(1112).t["9FaEzi"]);
                 }
               }
             }

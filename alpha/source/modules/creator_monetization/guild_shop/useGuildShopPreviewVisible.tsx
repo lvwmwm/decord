@@ -1,12 +1,12 @@
 // Module ID: 6764
 // Function ID: 6765
 // Name: useGuildShopPreviewVisible
-// Dependencies: [4724, 1072, 4824, 4625, 563, 6759, 2]
+// Dependencies: [4726, 1071, 4826, 4627, 563, 6759, 2]
 // Exports: useGuildShopPreviewVisible
 
 // Module 6764 (useGuildShopPreviewVisible)
-import PermissionStore from "PermissionStore" /* 4724 */;
-import Constants from "Constants" /* 1072 */;
+import PermissionStore from "PermissionStore" /* 4726 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

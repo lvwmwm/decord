@@ -1,25 +1,25 @@
 // Module ID: 9688
 // Function ID: 9689
 // Name: GameProfileHeader
-// Dependencies: [19, 17, 9686, 21, 4792, 575, 1655, 9689, 9690, 5479, 5347, 9691, 9693, 5383, 9695, 2]
+// Dependencies: [19, 17, 9686, 21, 4794, 575, 1653, 9689, 9690, 5481, 5349, 9691, 9693, 5385, 9695, 2]
 // Exports: default
 
 // Module 9688 (GameProfileHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import LinearGradientDefault from "LinearGradient" /* 5347 */;
-import FastImageDefault from "FastImage" /* 5479 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import LinearGradientDefault from "LinearGradient" /* 5349 */;
+import FastImageDefault from "FastImage" /* 5481 */;
 import useGameProfileHeroBackgroundURLDefault from "useGameProfileHeroBackgroundURL" /* 9690 */;
 import GameCoverArt from "GameCoverArt" /* 9691 */;
 import AssetRegistryDefault from "AssetRegistry" /* 9695 */;
 import react from "react" /* 19 */;
 import GameProfileConstants from "GameProfileConstants" /* 9686 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
-const _modDef1655 = _mod1655;
+const _modDef1653 = _mod1653;
 const GameCoverArtDefault = GameCoverArt;
 
 let MOBILE_GAME_PROFILE_MAX_WIDTH;
@@ -70,11 +70,11 @@ export default function GameProfileHeader(arg0) {
   let tmp7;
   ({ game, scrollY, onHeightMeasured } = arg0);
   const tmp = closure_8();
-  let obj = _mod1655;
+  let obj = _mod1653;
   const sharedValue = obj.useSharedValue(0);
   const items = [closure_9, ];
-  const useAnimatedStyle = _mod1655.useAnimatedStyle;
-  _mod1655;
+  const useAnimatedStyle = _mod1653.useAnimatedStyle;
+  _mod1653;
   if (scrollY == null) {
     scrollY = sharedValue;
   }
@@ -110,11 +110,11 @@ export default function GameProfileHeader(arg0) {
     }, items2),
     children: items6
   };
-  View = _modDef1655.View;
+  View = _modDef1653.View;
   if (tmp14) {
     const obj4 = { source: obj5, style: tmp.artHeroImage };
     obj5 = { uri: tmp11 };
-    tmp14 = metroRequire(tmp10(5479), obj4);
+    tmp14 = metroRequire(tmp10(5481), obj4);
   }
   items4 = [tmp14, ];
   const obj6 = { colors: items5, style: tmp.artHeroGradient };
@@ -137,7 +137,7 @@ export default function GameProfileHeader(arg0) {
   items9 = [, ];
   const obj12 = { style: tmp.titleRow, children: items10 };
   ({ textShadow: arr11[0], title: arr11[1] } = tmp);
-  items10 = [metroRequire(tmp2(5383).Text, obj13), ];
+  items10 = [metroRequire(tmp2(5385).Text, obj13), ];
   let tmp16Result3 = game.id === hasOwnProperty;
   if (tmp16Result3) {
     const obj14 = { source: AssetRegistryDefault, style: tmp.wavingWumpus, accessible: false, importantForAccessibility: "no" };
@@ -151,7 +151,7 @@ export default function GameProfileHeader(arg0) {
     tmp16Result4 = null;
     if ("" !== joined) {
       const obj15 = { variant: "body-md/normal", color: "text-overlay-light", lineClamp: 2, style: tmp.textShadow, children: joined };
-      tmp16Result4 = tmp16(tmp2(5383).Text, obj15);
+      tmp16Result4 = tmp16(tmp2(5385).Text, obj15);
     }
   }
   items8[2] = tmp16Result4;

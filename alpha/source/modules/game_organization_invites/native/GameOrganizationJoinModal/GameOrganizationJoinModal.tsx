@@ -1,21 +1,21 @@
-// Module ID: 12172
-// Function ID: 12173
+// Module ID: 12114
+// Function ID: 12115
 // Name: GameOrganizationJoinModal
-// Dependencies: [19, 11834, 12173, 21, 6973, 6976, 12174, 12179, 11981, 12205, 1113, 12171, 2]
+// Dependencies: [19, 11776, 12115, 21, 6972, 6975, 12116, 12121, 11923, 12147, 1112, 12113, 2]
 // Exports: default
 
-// Module 12172 (GameOrganizationJoinModal)
+// Module 12114 (GameOrganizationJoinModal)
 import Fragment from "Fragment" /* 21 */;
-import NavigatorHeader from "NavigatorHeader" /* 6976 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11834 */;
-import useResolvedGameOrganizationInviteDefault from "useResolvedGameOrganizationInvite" /* 12171 */;
+import NavigatorHeader from "NavigatorHeader" /* 6975 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11776 */;
+import useResolvedGameOrganizationInviteDefault from "useResolvedGameOrganizationInvite" /* 12113 */;
 import react from "react" /* 19 */;
-import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 12173 */;
+import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 12115 */;
 import size from "module_2" /* 2 */;
 
 function SingleCharacterJoinModal(code) {
   code = code.code;
-  let obj = code(6973);
+  let obj = code(6972);
   items = [code];
   const navigatorScreens = obj.useNavigatorScreens(() => {
     let obj3;
@@ -34,11 +34,11 @@ function SingleCharacterJoinModal(code) {
     obj3 = NavigatorHeader;
     return obj;
   }, items);
-  return jsx(code(11981).Modal, { screens: navigatorScreens, initialRouteName: GameOrganizationJoinScenes.ACCEPT, gradientColor: "purple" });
+  return jsx(code(11923).Modal, { screens: navigatorScreens, initialRouteName: GameOrganizationJoinScenes.ACCEPT, gradientColor: "purple" });
 }
 function MultiCharacterJoinModal(code) {
   code = code.code;
-  let obj = code(6973);
+  let obj = code(6972);
   items = [code];
   const navigatorScreens = obj.useNavigatorScreens(() => {
     let obj3;
@@ -71,9 +71,9 @@ function MultiCharacterJoinModal(code) {
     obj5 = NavigatorHeader;
     return obj;
   }, items);
-  const StepModal = code(12205).StepModal;
-  const intl = code(1113).intl;
-  return <StepModal screens={navigatorScreens} initialRouteName={GameOrganizationJoinScenes.VIEW} steps={items} headerBackTitle={intl.string(code(1113).t["13/7kX"])} gradientColor="purple" />;
+  const StepModal = code(12147).StepModal;
+  const intl = code(1112).intl;
+  return <StepModal screens={navigatorScreens} initialRouteName={GameOrganizationJoinScenes.VIEW} steps={items} headerBackTitle={intl.string(code(1112).t["13/7kX"])} gradientColor="purple" />;
 }
 const constants = GameOrganizationInviteConstants.GameOrganizationCharacterMode;
 const GameOrganizationJoinScenes = GameOrganizationJoinModalConstants.GameOrganizationJoinScenes;

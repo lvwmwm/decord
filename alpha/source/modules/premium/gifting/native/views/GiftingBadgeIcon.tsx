@@ -1,12 +1,12 @@
 // Module ID: 9364
 // Function ID: 9365
 // Name: GiftingBadgeIcon
-// Dependencies: [19, 21, 5479, 2]
+// Dependencies: [19, 21, 5481, 2]
 // Exports: default
 
 // Module 9364 (GiftingBadgeIcon)
 import Fragment from "Fragment" /* 21 */;
-import FastImageDefault from "FastImage" /* 5479 */;
+import FastImageDefault from "FastImage" /* 5481 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 

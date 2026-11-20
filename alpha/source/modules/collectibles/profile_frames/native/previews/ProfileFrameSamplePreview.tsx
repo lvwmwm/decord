@@ -1,24 +1,24 @@
 // Module ID: 8912
 // Function ID: 8913
 // Name: ProfileFrameSamplePreview
-// Dependencies: [19, 17, 8890, 7445, 21, 4792, 575, 8058, 5356, 8054, 8038, 7016, 5479, 8913, 2]
+// Dependencies: [19, 17, 8890, 7444, 21, 4794, 575, 8057, 5358, 8053, 8037, 7015, 5481, 8913, 2]
 // Exports: default
 
 // Module 8912 (ProfileFrameSamplePreview)
 import nativeDefault from "native" /* 575 */;
-import useToken from "useToken" /* 5356 */;
-import FastImageDefault from "FastImage" /* 5479 */;
-import _modDef7016 from "module_7016" /* 7016 */;
-import Constants from "Constants" /* 7445 */;
-import ProfileFrameLayerOrder from "ProfileFrameLayerOrder" /* 8038 */;
-import ProfileFrameDefault from "ProfileFrame" /* 8054 */;
-import scaleProfileFrameDefault from "scaleProfileFrame" /* 8058 */;
+import useToken from "useToken" /* 5358 */;
+import FastImageDefault from "FastImage" /* 5481 */;
+import _modDef7015 from "module_7015" /* 7015 */;
+import Constants from "Constants" /* 7444 */;
+import ProfileFrameLayerOrder from "ProfileFrameLayerOrder" /* 8037 */;
+import ProfileFrameDefault from "ProfileFrame" /* 8053 */;
+import scaleProfileFrameDefault from "scaleProfileFrame" /* 8057 */;
 import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 8890 */;
 import _modDef8913 from "module_8913" /* 8913 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -70,7 +70,7 @@ export default function ProfileFrameSamplePreview(previewWidth) {
   obj4 = { style: absoluteFill.absoluteFill, children: items };
   items = [, , , , , , , ];
   const obj5 = { style: { position: "absolute", top: 0, left: 0, right: 0, height: overflowTop, backgroundColor: "black" } };
-  const tmp13 = _modDef7016;
+  const tmp13 = _modDef7015;
   items[0] = metroRequire(React3, obj5);
   const obj6 = { style: { position: "absolute", bottom: 0, left: 0, right: 0, height: overflowBottom, backgroundColor: "black" } };
   items[1] = metroRequire(React3, obj6);

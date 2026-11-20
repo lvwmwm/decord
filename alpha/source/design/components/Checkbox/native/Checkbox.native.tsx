@@ -1,16 +1,16 @@
-// Module ID: 14634
-// Function ID: 14635
+// Module ID: 14602
+// Function ID: 14603
 // Name: Checkbox
-// Dependencies: [17, 21, 4792, 4854, 1113, 5808, 7217, 5383, 2]
+// Dependencies: [17, 21, 4794, 4856, 1112, 5810, 7216, 5385, 2]
 // Exports: Checkbox
 
-// Module 14634 (Checkbox)
-import intl3 from "intl" /* 1113 */;
-import react_native from "react-native" /* 4854 */;
-import FormCheckbox from "FormCheckbox" /* 7217 */;
+// Module 14602 (Checkbox)
+import intl3 from "intl" /* 1112 */;
+import react_native from "react-native" /* 4856 */;
+import FormCheckbox from "FormCheckbox" /* 7216 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -55,25 +55,25 @@ export function Checkbox(onToggle) {
   accessibilityState = checkboxA11yNative.accessibilityState;
   const tmp6 = React2;
   if (required) {
-    const intl = tmp2(1113).intl;
+    const intl = tmp2(1112).intl;
     const _HermesInternal = HermesInternal;
-    str2 = " (" + intl.string(tmp2(1113).t.EkokLy) + ")";
+    str2 = " (" + intl.string(tmp2(1112).t.EkokLy) + ")";
   }
   sum = label + str2;
   if (null != description) {
     const _HermesInternal2 = HermesInternal;
     str = ", " + description;
   }
-  Stack = tmp2(5808).Stack;
+  Stack = tmp2(5810).Stack;
   const items = [React3(FormCheckbox.FormCheckbox, { checked }), ];
   const obj3 = { style: tmp.textContainer, children: items2 };
   const obj4 = { style: tmp.labelContainer, children: hasOwnProperty(Text, { variant: "body-md/medium", children: items1 }) };
   items1 = [label, ];
-  Text = tmp2(5383).Text;
+  Text = tmp2(5385).Text;
   if (required) {
     const obj5 = { variant: "body-md/semibold", color: "text-feedback-critical", "aria-label": intl2.string(intl3.t.EkokLy), children: [" ", "*"] };
-    const Text2 = tmp2(5383).Text;
-    intl2 = tmp2(1113).intl;
+    const Text2 = tmp2(5385).Text;
+    intl2 = tmp2(1112).intl;
     required = tmp10(Text2, obj5);
   }
   items1[1] = required;
@@ -81,7 +81,7 @@ export function Checkbox(onToggle) {
   let tmp5Result = null != description;
   if (tmp5Result) {
     const obj6 = { variant: "body-sm/normal", color: "text-subtle", children: description };
-    tmp5Result = tmp5(tmp2(5383).Text, obj6);
+    tmp5Result = tmp5(tmp2(5385).Text, obj6);
   }
   obj7 = { direction: "horizontal", children: items };
   items2[1] = tmp5Result;

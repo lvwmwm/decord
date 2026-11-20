@@ -1,14 +1,14 @@
-// Module ID: 8204
-// Function ID: 8205
+// Module ID: 8203
+// Function ID: 8204
 // Name: FavoritesSuggestionStore
-// Dependencies: [4641, 4695, 6431, 504, 572, 2]
+// Dependencies: [4643, 4697, 6433, 504, 572, 2]
 
-// Module 8204 (FavoritesSuggestionStore)
+// Module 8203 (FavoritesSuggestionStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4695 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6431 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4697 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6433 */;
 import size from "module_2" /* 2 */;
 
 let set;

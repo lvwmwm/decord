@@ -1,12 +1,12 @@
-// Module ID: 18059
-// Function ID: 18060
+// Module ID: 17886
+// Function ID: 17887
 // Name: useRingingOpacity
-// Dependencies: [19, 1655, 5002, 2]
+// Dependencies: [19, 1653, 5004, 2]
 // Exports: default
 
-// Module 18059 (useRingingOpacity)
-import _mod1655 from "module_1655" /* 1655 */;
-import timing_timing from "timing/timing" /* 5002 */;
+// Module 17886 (useRingingOpacity)
+import _mod1653 from "module_1653" /* 1653 */;
+import timing_timing from "timing/timing" /* 5004 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -14,8 +14,8 @@ const require = globalThis.__r;
 let _require, set, set2;
 
 let Easing;
-let obj = { duration: 1000, easing: Easing.inOut(_mod1655.Easing.ease) };
-Easing = _mod1655.Easing;
+let obj = { duration: 1000, easing: Easing.inOut(_mod1653.Easing.ease) };
+Easing = _mod1653.Easing;
 let result = size.fileFinishedImporting("modules/calls/native/useRingingOpacity.tsx");
 
 export default function useRingingOpacity(arg0) {
@@ -37,7 +37,7 @@ export default function useRingingOpacity(arg0) {
   if (num3 === undefined) {
     num3 = 1000;
   }
-  let obj2 = require("module_1655");
+  let obj2 = require("module_1653");
   const sharedValue = obj2.useSharedValue(num);
   const items = [sharedValue, arg0, num, num2, num3];
   const effect = num2.useEffect(() => {
@@ -48,15 +48,15 @@ export default function useRingingOpacity(arg0) {
       const withTimingResult = obj2.withTiming(num2, obj);
       const obj3 = timing_timing;
       const withTimingResult1 = obj3.withTiming(num, obj);
-      const withRepeat = _mod1655.withRepeat;
-      _mod1655;
-      const obj4 = _mod1655;
+      const withRepeat = _mod1653.withRepeat;
+      _mod1653;
+      const obj4 = _mod1653;
       set = sharedValue.set;
       const withRepeatResult = withRepeat(obj4.withSequence(withTimingResult, withTimingResult1), -1);
-      const obj5 = _mod1655;
+      const obj5 = _mod1653;
       const result1 = set(obj5.withDelay(num3, withRepeatResult));
     } else {
-      obj = _mod1655;
+      obj = _mod1653;
       obj.cancelAnimation(sharedValue);
       const tmp4 = sharedValue;
       if (0.1 !== 0.1) {

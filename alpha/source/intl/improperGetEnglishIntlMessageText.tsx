@@ -1,12 +1,12 @@
-// Module ID: 19565
-// Function ID: 19566
+// Module ID: 19383
+// Function ID: 19384
 // Name: improperGetEnglishIntlMessageText
-// Dependencies: [1113, 1152, 2]
+// Dependencies: [1112, 1151, 2]
 // Exports: improperGetEnglishIntlMessageText
 
-// Module 19565 (improperGetEnglishIntlMessageText)
-import intl from "intl" /* 1113 */;
-import _mod1152 from "module_1152" /* 1152 */;
+// Module 19383 (improperGetEnglishIntlMessageText)
+import intl from "intl" /* 1112 */;
+import _mod1151 from "module_1151" /* 1151 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("intl/improperGetEnglishIntlMessageText.tsx");
@@ -16,7 +16,7 @@ export function improperGetEnglishIntlMessageText(CALL_FEEDBACK_OPTION_OTHER) {
   let t;
   ({ intl, t } = intl);
   intl;
-  const obj = _mod1152;
+  const obj = _mod1151;
   intl.currentLocale = intl.currentLocale;
   return intl.string(t[obj.runtimeHashMessageKey(obj, CALL_FEEDBACK_OPTION_OTHER)]);
 }

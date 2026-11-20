@@ -1,16 +1,16 @@
-// Module ID: 11704
-// Function ID: 11705
+// Module ID: 11646
+// Function ID: 11647
 // Name: useChannelSafeAreaHeightSharedValue
-// Dependencies: [19, 1630, 5356, 575, 11705, 11709, 11710, 4979, 11711, 1655, 11712, 11708, 5393, 11713, 1628, 2]
+// Dependencies: [19, 1628, 5358, 575, 11647, 11651, 11652, 4981, 11653, 1653, 11654, 11650, 5395, 11655, 1626, 2]
 // Exports: default, useChannelSafeAreaRestingHeight
 
-// Module 11704 (useChannelSafeAreaHeightSharedValue)
+// Module 11646 (useChannelSafeAreaHeightSharedValue)
 import nativeDefault from "native" /* 575 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import useToken from "useToken" /* 5356 */;
-import spring_spring from "spring/spring" /* 5393 */;
-import VoicePanelDockLayout from "VoicePanelDockLayout" /* 11705 */;
-import VoicePanelSheetMorph from "VoicePanelSheetMorph" /* 11713 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
+import useToken from "useToken" /* 5358 */;
+import spring_spring from "spring/spring" /* 5395 */;
+import VoicePanelDockLayout from "VoicePanelDockLayout" /* 11647 */;
+import VoicePanelSheetMorph from "VoicePanelSheetMorph" /* 11655 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,19 +1,19 @@
-// Module ID: 18543
-// Function ID: 18544
+// Module ID: 18367
+// Function ID: 18368
 // Name: useConjureAutomodSettingsLink
-// Dependencies: [19, 4663, 4724, 6500, 6860, 1072, 21, 504, 6501, 1113, 4089, 7875, 2]
+// Dependencies: [19, 4665, 4726, 6502, 6860, 1071, 21, 504, 6503, 1112, 4091, 7874, 2]
 // Exports: ConjureAutomodSettingsLink, default
 
-// Module 18543 (useConjureAutomodSettingsLink)
-import _modDef4089 from "module_4089" /* 4089 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6501 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 7875 */;
+// Module 18367 (useConjureAutomodSettingsLink)
+import _modDef4091 from "module_4091" /* 4091 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6503 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 7874 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4663 */;
-import PermissionStore from "PermissionStore" /* 4724 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6500 */;
+import GuildStore from "GuildStore" /* 4665 */;
+import PermissionStore from "PermissionStore" /* 4726 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6502 */;
 import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 6860 */;
-import Constants from "Constants" /* 1072 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -75,9 +75,9 @@ export function ConjureAutomodSettingsLink(guildId) {
   let items;
   guildId = guildId.guildId;
   const update = guildId.update;
-  const intl = guildId(1113).intl;
+  const intl = guildId(1112).intl;
   const format = intl.format;
-  const tmp3 = _modDef4089;
+  const tmp3 = _modDef4091;
   let obj = { children: items };
   items = [" "];
   const obj2 = {

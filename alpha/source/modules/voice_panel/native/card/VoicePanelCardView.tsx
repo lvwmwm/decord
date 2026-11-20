@@ -1,26 +1,26 @@
-// Module ID: 19322
-// Function ID: 19323
+// Module ID: 19142
+// Function ID: 19143
 // Name: VoicePanelCardView
-// Dependencies: [32, 19, 17, 6499, 5533, 11688, 11686, 19219, 11691, 5442, 21, 19323, 1655, 10594, 1708, 11687, 504, 5356, 575, 11693, 9970, 5393, 11713, 11697, 11696, 6899, 5770, 19283, 12, 4801, 1113, 4853, 2]
+// Dependencies: [32, 19, 17, 6501, 5535, 11630, 11628, 19038, 11633, 5444, 21, 19143, 1653, 10536, 1706, 11629, 504, 5358, 575, 11635, 9973, 5395, 11655, 11639, 11638, 6898, 5772, 19103, 12, 4803, 1112, 4855, 2]
 
-// Module 19322 (VoicePanelCardView)
+// Module 19142 (VoicePanelCardView)
 import _modDef12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
-import intl2 from "intl" /* 1113 */;
-import _modDef1655 from "module_1655" /* 1655 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4801 */;
-import CallConstants from "CallConstants" /* 5442 */;
-import react2 from "react" /* 5770 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11686 */;
-import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11691 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19219 */;
-import VoicePanelCardDefault from "VoicePanelCard" /* 19323 */;
+import intl2 from "intl" /* 1112 */;
+import _modDef1653 from "module_1653" /* 1653 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4803 */;
+import CallConstants from "CallConstants" /* 5444 */;
+import react2 from "react" /* 5772 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11628 */;
+import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11633 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19038 */;
+import VoicePanelCardDefault from "VoicePanelCard" /* 19143 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6499 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5533 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11688 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6501 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5535 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11630 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -331,7 +331,7 @@ function CardContentFreezer(children) {
   animatedStyle = useAnimatedStyle(VoicePanelCardViewTsx3);
   const items8 = [animatedStyle, tmp30, children];
   return obj2.useMemo(() => {
-    const View = _modDef1655.View;
+    const View = _modDef1653.View;
     const Freeze = react2.Freeze;
     return <View style={animatedStyle}>{null}</View>;
   }, items8);

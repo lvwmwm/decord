@@ -1,14 +1,14 @@
-// Module ID: 18088
-// Function ID: 18089
+// Module ID: 17915
+// Function ID: 17916
 // Name: useForLaterCoachmark
-// Dependencies: [32, 19, 4638, 21, 4625, 8960, 1113, 11650, 8967, 2]
+// Dependencies: [32, 19, 4640, 21, 4627, 8960, 1112, 11592, 8967, 2]
 // Exports: default
 
-// Module 18088 (useForLaterCoachmark)
+// Module 17915 (useForLaterCoachmark)
 import Fragment from "Fragment" /* 21 */;
-import intl3 from "intl" /* 1113 */;
-import dismissible_content from "dismissible_content" /* 4625 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4638 */;
+import intl3 from "intl" /* 1112 */;
+import dismissible_content from "dismissible_content" /* 4627 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4640 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

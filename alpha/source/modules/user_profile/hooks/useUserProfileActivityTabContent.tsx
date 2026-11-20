@@ -1,19 +1,19 @@
-// Module ID: 14492
-// Function ID: 14493
+// Module ID: 14460
+// Function ID: 14461
 // Name: useUserProfileActivityTabContent
-// Dependencies: [19, 8874, 5530, 6801, 5440, 6837, 1072, 3, 14493, 14409, 14411, 8876, 504, 2]
+// Dependencies: [19, 8874, 5532, 6801, 5442, 6837, 1071, 3, 14461, 14377, 14379, 8876, 504, 2]
 // Exports: default
 
-// Module 14492 (useUserProfileActivityTabContent)
+// Module 14460 (useUserProfileActivityTabContent)
 import LoggerDefault from "Logger" /* 3 */;
-import Constants from "Constants" /* 1072 */;
+import Constants from "Constants" /* 1071 */;
 import ContentInventoryTypes from "ContentInventoryTypes" /* 8876 */;
-import maybeFetchContentInventoryOutboxDefault from "maybeFetchContentInventoryOutbox" /* 14493 */;
+import maybeFetchContentInventoryOutboxDefault from "maybeFetchContentInventoryOutbox" /* 14461 */;
 import react from "react" /* 19 */;
 import ContentInventoryOutboxStore from "ContentInventoryOutboxStore" /* 8874 */;
-import PresenceStore from "PresenceStore" /* 5530 */;
+import PresenceStore from "PresenceStore" /* 5532 */;
 import SelfPresenceStore from "SelfPresenceStore" /* 6801 */;
-import VoiceStateStore from "VoiceStateStore" /* 5440 */;
+import VoiceStateStore from "VoiceStateStore" /* 5442 */;
 import UserProfileStore from "UserProfileStore" /* 6837 */;
 import size from "module_2" /* 2 */;
 

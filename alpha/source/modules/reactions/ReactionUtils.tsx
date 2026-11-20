@@ -1,18 +1,18 @@
-// Module ID: 4736
-// Function ID: 4737
+// Module ID: 4738
+// Function ID: 4739
 // Name: ReactionUtils
-// Dependencies: [502, 1072, 4737, 4738, 1113, 5374, 4617, 1256, 2]
+// Dependencies: [502, 1071, 4739, 4740, 1112, 5376, 4619, 1255, 2]
 // Exports: emojiEquals, getAccessibleEmojiDisplayName, getBurstAnalyticsSection, getReactionEmojiName, isCustomReactionEmojiId, isMeReaction, shouldApplyReaction, toReactionEmoji, updateReactionNotificationsSetting
 
-// Module 4736 (ReactionUtils)
-import intl2 from "intl" /* 1113 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import UserSettings from "UserSettings" /* 4617 */;
-import NotificationConstants from "NotificationConstants" /* 4737 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4738 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 5374 */;
+// Module 4738 (ReactionUtils)
+import intl2 from "intl" /* 1112 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import UserSettings from "UserSettings" /* 4619 */;
+import NotificationConstants from "NotificationConstants" /* 4739 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4740 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 5376 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import Constants from "Constants" /* 1072 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -59,7 +59,7 @@ export function getAccessibleEmojiDisplayName(me, count, emoji, arg3) {
     PirBBE = t.PirBBE;
     tmp6 = tmp;
   }
-  const intl = tmp6(1113).intl;
+  const intl = tmp6(1112).intl;
   const formatToPlainString = intl.formatToPlainString;
   const obj = { reactions: count, emojiName: str3 };
   if (null == emoji.id) {

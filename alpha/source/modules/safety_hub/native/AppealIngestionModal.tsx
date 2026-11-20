@@ -1,24 +1,24 @@
-// Module ID: 12343
-// Function ID: 12344
+// Module ID: 12313
+// Function ID: 12314
 // Name: AppealIngestionModal
-// Dependencies: [5, 32, 19, 17, 7716, 7690, 1072, 21, 4792, 575, 5383, 504, 12326, 1502, 7691, 12342, 12327, 7689, 6898, 1113, 5390, 6976, 12344, 1264, 12353, 12355, 12357, 12359, 5371, 6973, 2]
+// Dependencies: [5, 32, 19, 17, 7715, 7689, 1071, 21, 4794, 575, 5385, 504, 12296, 1500, 7690, 12312, 12297, 7688, 6897, 1112, 5392, 6975, 12314, 1263, 12323, 12325, 12327, 12329, 5373, 6972, 2]
 // Exports: AppealIngestionModalHeader, AppealIngestionModalScreen, default
 
-// Module 12343 (AppealIngestionModal)
+// Module 12313 (AppealIngestionModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import NavigatorHeader from "NavigatorHeader" /* 6976 */;
-import AppealIngestionModalActionCreatorsDefault from "AppealIngestionModalActionCreators" /* 12342 */;
+import Constants from "Constants" /* 1071 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1263 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import NavigatorHeader from "NavigatorHeader" /* 6975 */;
+import AppealIngestionModalActionCreatorsDefault from "AppealIngestionModalActionCreators" /* 12312 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import SafetyHubStore from "SafetyHubStore" /* 7716 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7690 */;
+import SafetyHubStore from "SafetyHubStore" /* 7715 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7689 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -49,7 +49,7 @@ export default function AppealIngestionModal(classificationId) {
   let c0;
   let classification;
   let intl;
-  const f103528 = () => {
+  const f101848 = () => {
     let obj11;
     let obj3;
     let obj5;
@@ -154,10 +154,10 @@ export default function AppealIngestionModal(classificationId) {
   if (!flag2) {
     flag2 = false;
   }
-  let obj2 = { initialRouteName: constants.SPEED_BUMP, screens: flag(5371)(f103528), headerBackTitle: intl.string(require("intl").t["13/7kX"]), headerTitleAlign: "center" };
-  flag(5371)(f103528);
-  const Navigator = tmp(6973).Navigator;
-  intl = tmp(1113).intl;
+  let obj2 = { initialRouteName: constants.SPEED_BUMP, screens: flag(5373)(f101848), headerBackTitle: intl.string(require("intl").t["13/7kX"]), headerTitleAlign: "center" };
+  flag(5373)(f101848);
+  const Navigator = tmp(6972).Navigator;
+  intl = tmp(1112).intl;
   return closure_12(Navigator, obj2);
 };
 export function AppealIngestionModalHeader(arg0) {
@@ -289,7 +289,7 @@ export function AppealIngestionModalScreen(children) {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -340,7 +340,7 @@ export function AppealIngestionModalScreen(children) {
           navigation = 0;
         }
         c5 = 3;
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp25) {
         if (0 === navigation) {
           c5 = 3;

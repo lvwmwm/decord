@@ -1,16 +1,16 @@
-// Module ID: 10137
-// Function ID: 10138
+// Module ID: 10140
+// Function ID: 10141
 // Name: UserProfileAddGameCoverButton
-// Dependencies: [19, 21, 4792, 10077, 575, 6911, 10082, 1113, 10138, 2]
+// Dependencies: [19, 21, 4794, 10080, 575, 6910, 10085, 1112, 10141, 2]
 // Exports: default
 
-// Module 10137 (UserProfileAddGameCoverButton)
+// Module 10140 (UserProfileAddGameCoverButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import UserProfileGameWidgetConstants from "UserProfileGameWidgetConstants" /* 10077 */;
-import openUserProfileAddGameActionSheetDefault from "openUserProfileAddGameActionSheet" /* 10082 */;
+import UserProfileGameWidgetConstants from "UserProfileGameWidgetConstants" /* 10080 */;
+import openUserProfileAddGameActionSheetDefault from "openUserProfileAddGameActionSheet" /* 10085 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -25,13 +25,13 @@ export default function UserProfileAddGameCoverButton(ref) {
   const widgetType = ref.widgetType;
   const coverWidth = ref.coverWidth;
   const tmp = closure_4();
-  const PressableOpacity = ref(6911).PressableOpacity;
-  const intl = ref(1113).intl;
+  const PressableOpacity = ref(6910).PressableOpacity;
+  const intl = ref(1112).intl;
   const items = [tmp.button, { width: coverWidth }];
   ({ size: "md", color: widgetType(575).colors.ICON_MUTED });
-  const PlusLargeIcon = ref(10138).PlusLargeIcon;
+  const PlusLargeIcon = ref(10141).PlusLargeIcon;
   return <PressableOpacity ref={ref} onPress={function onPress() {
     const obj = { widgetType, returnFocusRef: ref };
     return openUserProfileAddGameActionSheetDefault(obj);
-  }} accessibilityRole="button" accessibilityLabel={intl.string(ref(1113).t.E3l3Zx)} style={items}>{null}</PressableOpacity>;
+  }} accessibilityRole="button" accessibilityLabel={intl.string(ref(1112).t.E3l3Zx)} style={items}>{null}</PressableOpacity>;
 };

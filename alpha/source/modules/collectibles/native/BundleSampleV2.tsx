@@ -1,15 +1,15 @@
 // Module ID: 8889
 // Function ID: 8890
 // Name: BundleSampleV2
-// Dependencies: [19, 17, 8890, 21, 5479, 4792, 575, 38, 2114, 2111, 8891, 8900, 8907, 1187, 2]
+// Dependencies: [19, 17, 8890, 21, 5481, 4794, 575, 38, 2112, 2109, 8891, 8900, 8907, 1186, 2]
 // Exports: default
 
 // Module 8889 (BundleSampleV2)
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 575 */;
-import utils from "utils" /* 2111 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 2114 */;
-import FastImageDefault from "FastImage" /* 5479 */;
+import utils from "utils" /* 2109 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 2112 */;
+import FastImageDefault from "FastImage" /* 5481 */;
 import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 8890 */;
 import ProfileEffectSampleV2Default from "ProfileEffectSampleV2" /* 8891 */;
 import AvatarDecorationSampleV2Default from "AvatarDecorationSampleV2" /* 8900 */;
@@ -17,7 +17,7 @@ import NameplateDummyUserPreview2 from "NameplateDummyUserPreview" /* 8907 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -161,9 +161,9 @@ function BundleSampleV2Composed(arg0) {
     obj8 = { width: BUNDLE_PREVIEW_CONFIG[size].nameplatePreviewWidth, avatarSize: XSMALL_20, nameplate: nameplateData };
     NameplateDummyUserPreview = NameplateDummyUserPreview2.NameplateDummyUserPreview;
     if ("large" === size) {
-      XSMALL_20 = tmp22(1187).AvatarSizes.NORMAL;
+      XSMALL_20 = tmp22(1186).AvatarSizes.NORMAL;
     } else {
-      XSMALL_20 = tmp22(1187).AvatarSizes.XSMALL_20;
+      XSMALL_20 = tmp22(1186).AvatarSizes.XSMALL_20;
     }
     tmp21Result = tmp21(tmp11, obj7);
   }

@@ -1,12 +1,12 @@
 // Module ID: 9455
 // Function ID: 9456
 // Name: ImprovedMobileShopLoadingExperiment
-// Dependencies: [19, 1452, 2]
+// Dependencies: [19, 1450, 2]
 // Exports: useIsImprovedMobileShopLoadingEnabled, useIsInImprovedMobileShopLoading
 
 // Module 9455 (ImprovedMobileShopLoadingExperiment)
 import react from "react" /* 19 */;
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2026-09-improved-mobile-shop-loading", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };

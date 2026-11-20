@@ -1,13 +1,13 @@
-// Module ID: 8323
-// Function ID: 8324
+// Module ID: 8322
+// Function ID: 8323
 // Name: UploadUtils
-// Dependencies: [8324, 8325, 8326, 2]
+// Dependencies: [8323, 8324, 8325, 2]
 // Exports: getAttachmentPayload, getFile, getFileContentLength, getFileData, getMaxTotalAttachmentSize
 
-// Module 8323 (UploadUtils)
-import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 8324 */;
-import clipPayloadUtils from "clipPayloadUtils" /* 8325 */;
-import UploadPlatform from "UploadPlatform" /* 8326 */;
+// Module 8322 (UploadUtils)
+import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 8323 */;
+import clipPayloadUtils from "clipPayloadUtils" /* 8324 */;
+import UploadPlatform from "UploadPlatform" /* 8325 */;
 import size from "module_2" /* 2 */;
 
 let reName;

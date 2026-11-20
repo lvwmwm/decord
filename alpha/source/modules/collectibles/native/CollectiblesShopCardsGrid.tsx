@@ -1,18 +1,18 @@
-// Module ID: 17364
-// Function ID: 17365
+// Module ID: 17191
+// Function ID: 17192
 // Name: CollectiblesShopCardsGrid
-// Dependencies: [19, 17, 7956, 21, 4792, 9425, 8816, 17363, 12, 2]
+// Dependencies: [19, 17, 7955, 21, 4794, 9425, 8816, 17190, 12, 2]
 // Exports: default
 
-// Module 17364 (CollectiblesShopCardsGrid)
+// Module 17191 (CollectiblesShopCardsGrid)
 import _modDef12 from "module_12" /* 12 */;
 import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 8816 */;
 import CollectiblesShopCardV2 from "CollectiblesShopCardV2" /* 9425 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7956 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7955 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const CollectiblesShopCardV2Default = CollectiblesShopCardV2;
@@ -67,7 +67,7 @@ export default function CollectiblesShopCardsGrid(products) {
   ({ disableBundleStaticBackground: react, muteBundleStaticBackground: closure_4 } = products);
   ({ onScroll, paddingTop, paddingBottom, header } = products);
   const rowContainer = closure_9();
-  let obj = products(17363);
+  let obj = products(17190);
   const cardLayout = obj.useCardLayout();
   const columns = cardLayout.columns;
   const cardWidth = cardLayout.cardWidth;

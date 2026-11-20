@@ -1,13 +1,13 @@
-// Module ID: 14645
-// Function ID: 14646
+// Module ID: 14613
+// Function ID: 14614
 // Name: ConjureBuilderPreviewStore
-// Dependencies: [6502, 504, 2146, 572, 2]
+// Dependencies: [6504, 504, 2144, 572, 2]
 
-// Module 14645 (ConjureBuilderPreviewStore)
+// Module 14613 (ConjureBuilderPreviewStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import EmbeddedActivityOrientationLockState from "EmbeddedActivityOrientationLockState" /* 2146 */;
-import FramesStore from "FramesStore" /* 6502 */;
+import EmbeddedActivityOrientationLockState from "EmbeddedActivityOrientationLockState" /* 2144 */;
+import FramesStore from "FramesStore" /* 6504 */;
 import size from "module_2" /* 2 */;
 
 let applicationId = null;

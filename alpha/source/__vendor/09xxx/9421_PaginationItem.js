@@ -1,12 +1,12 @@
 // Module ID: 9421
 // Function ID: 9422
 // Name: PaginationItem
-// Dependencies: [19, 17, 21, 1655]
+// Dependencies: [19, 17, 21, 1653]
 // Exports: PaginationItem
 
 // Module 9421 (PaginationItem)
 import Fragment from "Fragment" /* 21 */;
-import _mod1655 from "module_1655" /* 1655 */;
+import _mod1653 from "module_1653" /* 1653 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 
@@ -62,9 +62,9 @@ export const PaginationItem = (arg0) => {
     size = 10;
   }
   let items = [closure_6, horizontal, size, num, index, animValue, count, , ];
-  const useAnimatedStyle = _mod1655.useAnimatedStyle;
-  items[7] = _mod1655.interpolate;
-  items[8] = _mod1655.Extrapolation;
+  const useAnimatedStyle = _mod1653.useAnimatedStyle;
+  items[7] = _mod1653.interpolate;
+  items[8] = _mod1653.Extrapolation;
   let c0;
   let c1;
   let c2;

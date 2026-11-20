@@ -1,9 +1,9 @@
-// Module ID: 10372
-// Function ID: 10373
+// Module ID: 10314
+// Function ID: 10315
 // Name: TTIMeasurementNativeComponent
 // Dependencies: [106, 65, 2]
 
-// Module 10372 (TTIMeasurementNativeComponent)
+// Module 10314 (TTIMeasurementNativeComponent)
 import DynamicallyInjectedByGestureHandler from "DynamicallyInjectedByGestureHandler" /* 106 */;
 import module_65 from "module_65" /* 65 */;
 import size from "module_2" /* 2 */;

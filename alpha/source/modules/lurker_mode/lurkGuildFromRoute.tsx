@@ -1,15 +1,15 @@
-// Module ID: 8538
-// Function ID: 8539
+// Module ID: 8537
+// Function ID: 8538
 // Name: lurkGuildFromRoute
-// Dependencies: [5, 502, 4663, 6390, 4843, 2]
+// Dependencies: [5, 502, 4665, 6392, 4845, 2]
 // Exports: default
 
-// Module 8538 (lurkGuildFromRoute)
-import RouteUtils from "RouteUtils" /* 4843 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6390 */;
+// Module 8537 (lurkGuildFromRoute)
+import RouteUtils from "RouteUtils" /* 4845 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6392 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildStore from "GuildStore" /* 4663 */;
+import GuildStore from "GuildStore" /* 4665 */;
 import size from "module_2" /* 2 */;
 
 let c6, c7, closure_4;
@@ -28,7 +28,7 @@ let obj = function _lurk() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c5;

@@ -1,20 +1,20 @@
-// Module ID: 13216
-// Function ID: 13217
+// Module ID: 13186
+// Function ID: 13187
 // Name: ChatInputCharCounter
-// Dependencies: [32, 19, 1388, 1072, 1390, 21, 4792, 575, 504, 2174, 9996, 10397, 5474, 1113, 6911, 5383, 8832, 2]
+// Dependencies: [32, 19, 1386, 1071, 1388, 21, 4794, 575, 504, 2172, 9999, 10339, 5476, 1112, 6910, 5385, 8832, 2]
 
-// Module 13216 (ChatInputCharCounter)
+// Module 13186 (ChatInputCharCounter)
 import nativeDefault from "native" /* 575 */;
-import intl3 from "intl" /* 1113 */;
-import PremiumConstants from "PremiumConstants" /* 1390 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5474 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 10397 */;
+import intl3 from "intl" /* 1112 */;
+import PremiumConstants from "PremiumConstants" /* 1388 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5476 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 10339 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1388 */;
-import Constants from "Constants" /* 1072 */;
+import UserStore from "UserStore" /* 1386 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -59,7 +59,7 @@ class ChatCounter {
       const obj = stateFromStores(maxLength[9]);
       return obj.canUseIncreasedMessageLength(currentUser.getCurrentUser());
     });
-    const tmp5 = stateFromStores(9996)();
+    const tmp5 = stateFromStores(9999)();
     dependencyMap = tmp5;
     let result = tmp5 / 10;
     _slicedToArray = result;
@@ -105,10 +105,10 @@ class ChatCounter {
       const tmp19 = closure_10;
       let obj2 = { onPress: callback, style: items2, children: items3 };
       items2 = [tmp.container, style];
-      const PressableOpacity3 = tmp2(6911).PressableOpacity;
+      const PressableOpacity3 = tmp2(6910).PressableOpacity;
       let obj3 = { color: "text-feedback-critical", lineClamp: 1, variant: "footnote/semibold", children: "-" + first };
       const _HermesInternal = HermesInternal;
-      const Text = tmp2(5383).Text;
+      const Text = tmp2(5385).Text;
       items3 = [closure_9(Text, obj3), ];
       let tmp20Result = null;
       const tmp20 = closure_9;
@@ -120,9 +120,9 @@ class ChatCounter {
     } else if (first >= -result) {
       let obj4 = { onPress: callback, style: items4, children: items5 };
       items4 = [tmp.container, style];
-      const PressableOpacity2 = tmp2(6911).PressableOpacity;
+      const PressableOpacity2 = tmp2(6910).PressableOpacity;
       let obj5 = { color: "text-default", lineClamp: 1, variant: "footnote/semibold", children: -first };
-      items5 = [closure_9(tmp2(5383).Text, obj5), ];
+      items5 = [closure_9(tmp2(5385).Text, obj5), ];
       let tmp17Result = null;
       const tmp16 = closure_10;
       const tmp17 = closure_9;
@@ -136,7 +136,7 @@ class ChatCounter {
       if (tmp11) {
         let obj6 = { onPress: callback, style: items6, children: closure_9(tmp2(8832).NitroWheelIcon, { size: "xs", color: "icon-muted" }) };
         items6 = [tmp.container, style];
-        const PressableOpacity = tmp2(6911).PressableOpacity;
+        const PressableOpacity = tmp2(6910).PressableOpacity;
         tmp16Result = closure_9(PressableOpacity, obj6);
       }
     }

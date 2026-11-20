@@ -1,14 +1,14 @@
-// Module ID: 13804
-// Function ID: 13805
+// Module ID: 13773
+// Function ID: 13774
 // Name: useConjureAppChannelSheet
-// Dependencies: [19, 6500, 21, 6747, 504, 13805, 13808, 2]
+// Dependencies: [19, 6502, 21, 6747, 504, 13774, 13777, 2]
 // Exports: default
 
-// Module 13804 (useConjureAppChannelSheet)
+// Module 13773 (useConjureAppChannelSheet)
 import Fragment from "Fragment" /* 21 */;
-import ConjureAppChannelSheetHeaderDefault from "ConjureAppChannelSheetHeader" /* 13808 */;
+import ConjureAppChannelSheetHeaderDefault from "ConjureAppChannelSheetHeader" /* 13777 */;
 import react from "react" /* 19 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6500 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6502 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;

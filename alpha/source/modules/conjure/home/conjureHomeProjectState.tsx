@@ -1,16 +1,16 @@
-// Module ID: 13679
-// Function ID: 13680
+// Module ID: 13650
+// Function ID: 13651
 // Name: conjureHomeProjectState
-// Dependencies: [1231, 6498, 6806, 6500, 6860, 6816, 6817, 504, 6867, 2]
+// Dependencies: [1230, 6500, 6806, 6502, 6860, 6816, 6817, 504, 12190, 2]
 // Exports: conjureHomeProjectShowsDraft, conjureHomeProjectState, conjureProjectLastActivityTime, conjureProjectStatus, hasConjureUnpublishedChanges, useConjureHomeProjectState, useConjureProjectItemState
 
-// Module 13679 (conjureHomeProjectState)
+// Module 13650 (conjureHomeProjectState)
 import conjureUnread from "conjureUnread" /* 6816 */;
-import ConjurePublishTypes from "ConjurePublishTypes" /* 6867 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import ReadStateStore from "ReadStateStore" /* 6498 */;
+import ConjurePublishTypes from "ConjurePublishTypes" /* 12190 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1230 */;
+import ReadStateStore from "ReadStateStore" /* 6500 */;
 import ConjureChatStore from "ConjureChatStore" /* 6806 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6500 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6502 */;
 import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 6860 */;
 import size from "module_2" /* 2 */;
 

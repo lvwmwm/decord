@@ -1,10 +1,10 @@
-// Module ID: 5437
-// Function ID: 5438
+// Module ID: 5439
+// Function ID: 5440
 // Name: isActivityParticipantCurrentUserCurrentSession
 // Dependencies: [502, 2]
 // Exports: isActivityParticipantCurrentUserCurrentSession
 
-// Module 5437 (isActivityParticipantCurrentUserCurrentSession)
+// Module 5439 (isActivityParticipantCurrentUserCurrentSession)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
 

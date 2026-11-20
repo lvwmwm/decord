@@ -1,16 +1,16 @@
-// Module ID: 13083
-// Function ID: 13084
+// Module ID: 13053
+// Function ID: 13054
 // Name: GuildDirectoryCreateOrAddDescription
-// Dependencies: [5, 19, 17, 21, 4792, 13084, 4655, 13085, 13072, 13073, 5383, 1113, 13081, 2]
+// Dependencies: [5, 19, 17, 21, 4794, 13054, 4657, 13055, 13042, 13043, 5385, 1112, 13051, 2]
 // Exports: default
 
-// Module 13083 (GuildDirectoryCreateOrAddDescription)
-import GuildDirectoryEditDescriptionTemplateDefault from "GuildDirectoryEditDescriptionTemplate" /* 13081 */;
+// Module 13053 (GuildDirectoryCreateOrAddDescription)
+import GuildDirectoryEditDescriptionTemplateDefault from "GuildDirectoryEditDescriptionTemplate" /* 13051 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let closure_3, guild;
@@ -48,7 +48,7 @@ export default function GuildDirectoryCreateOrAddDescription(directoryChannelId)
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -68,7 +68,7 @@ export default function GuildDirectoryCreateOrAddDescription(directoryChannelId)
                   const template = tmp35.template;
                   if (null == template) {
                     c5 = 3;
-                    return { value: "HermesInternal", done: "+60" };
+                    return { value: "HermesInternal", done: null };
                   } else {
                     c4 = 1;
                     c5 = 1;
@@ -106,7 +106,7 @@ export default function GuildDirectoryCreateOrAddDescription(directoryChannelId)
               return { value, done: true };
             }
             c5 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           } catch (tmp29) {
             c5 = 3;
             throw tmp29;
@@ -120,25 +120,25 @@ export default function GuildDirectoryCreateOrAddDescription(directoryChannelId)
   obj = { children: closure_7(closure_5, obj2) };
   obj2 = { style: tmp.container, keyboardShouldPersistTaps: "handled", children: items1 };
   const obj3 = { style: tmp.header, children: items };
-  const GuildDirectoryAddModalScreen = directoryChannelId(13073).GuildDirectoryAddModalScreen;
-  const obj4 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.string(directoryChannelId(1113).t["5bQcoa"]) };
-  const Text = directoryChannelId(5383).Text;
-  intl = directoryChannelId(1113).intl;
+  const GuildDirectoryAddModalScreen = directoryChannelId(13043).GuildDirectoryAddModalScreen;
+  const obj4 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.string(directoryChannelId(1112).t["5bQcoa"]) };
+  const Text = directoryChannelId(5385).Text;
+  intl = directoryChannelId(1112).intl;
   items = [closure_6(Text, obj4), ];
-  let obj5 = { style: tmp.description, variant: "body-sm/medium", color: "text-default", children: intl2.string(directoryChannelId(1113).t.Ie60Wc) };
-  const Text2 = directoryChannelId(5383).Text;
-  intl2 = directoryChannelId(1113).intl;
+  let obj5 = { style: tmp.description, variant: "body-sm/medium", color: "text-default", children: intl2.string(directoryChannelId(1112).t.Ie60Wc) };
+  const Text2 = directoryChannelId(5385).Text;
+  intl2 = directoryChannelId(1112).intl;
   items[1] = closure_6(Text2, obj5);
   items1 = [closure_7(obj, obj3), ];
   let obj6 = {
     onSubmit(arg0, arg1) {
       return obj(...arguments);
     },
-    buttonLabel: intl3.string(directoryChannelId(1113).t.H9jxS1),
+    buttonLabel: intl3.string(directoryChannelId(1112).t.H9jxS1),
     directoryChannelId
   };
   const tmp2 = GuildDirectoryEditDescriptionTemplateDefault;
-  intl3 = directoryChannelId(1113).intl;
+  intl3 = directoryChannelId(1112).intl;
   items1[1] = closure_6(tmp2, obj6);
   return closure_6(GuildDirectoryAddModalScreen, obj);
 };

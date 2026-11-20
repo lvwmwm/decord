@@ -1,14 +1,14 @@
-// Module ID: 17720
-// Function ID: 17721
+// Module ID: 17547
+// Function ID: 17548
 // Name: FolderPlusIcon
-// Dependencies: [19, 21, 575, 5478, 17256, 2]
+// Dependencies: [19, 21, 575, 5480, 17083, 2]
 // Exports: FolderPlusIcon
 
-// Module 17720 (FolderPlusIcon)
+// Module 17547 (FolderPlusIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5478 */;
-import AssetRegistry from "AssetRegistry" /* 17256 */;
+import BaseIconImage2 from "BaseIconImage" /* 5480 */;
+import AssetRegistry from "AssetRegistry" /* 17083 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

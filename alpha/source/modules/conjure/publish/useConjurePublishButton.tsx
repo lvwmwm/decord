@@ -1,128 +1,77 @@
-// Module ID: 18298
-// Function ID: 18299
+// Module ID: 18123
+// Function ID: 18124
 // Name: useConjurePublishButton
-// Dependencies: [32, 19, 1113, 4089, 18299, 2]
+// Dependencies: [19, 1112, 4091, 12176, 2]
 // Exports: default
 
-// Module 18298 (useConjurePublishButton)
-import intl3 from "intl" /* 1113 */;
-import _modDef4089 from "module_4089" /* 4089 */;
-import useConjurePublishActionDefault from "useConjurePublishAction" /* 18299 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
+// Module 18123 (useConjurePublishButton)
+import intl3 from "intl" /* 1112 */;
+import useConjurePublishActionDefault from "useConjurePublishAction" /* 12176 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
-function publishButtonText(upToDate, arg1) {
-  let tmp = arg1;
-  if (null == arg1) {
-    let label;
-    if (null == upToDate) {
-      const intl2 = intl3.intl;
-      label = intl2.string(_modDef4089["120EFN"]);
-    } else {
-      const tmp2 = null != upToDate && upToDate.upToDate && "publish" === upToDate.action && !upToDate.awaitingApproval;
-      if (tmp2) {
-        if (!upToDate.publishing) {
-          const intl = intl3.intl;
-          label = intl.string(_modDef4089.kAfbEN);
-        }
-      }
-      label = upToDate.label;
-    }
-    tmp = label;
-  }
-  return tmp;
-}
 const result = size.fileFinishedImporting("modules/conjure/publish/useConjurePublishButton.tsx");
 
 export default function useConjurePublishButton(arg0, arg1, arg2, arg3) {
-  let closure_129_3;
+  let label;
+  let publishing;
   let str2;
+  let tmp10;
   let tmp13;
-  let tmp16;
-  let tmp2;
   let closure_0 = arg1;
   let closure_1 = arg2;
   let closure_2 = arg3;
-  let obj = react;
-  let tmp = _slicedToArray(react.useState(null), 2);
-  [tmp2, closure_129_3] = tmp;
-  let closure_4 = react.useRef(null);
-  const callback = react.useCallback(() => {
-    if (null != ref.current) {
-      const _clearTimeout = clearTimeout;
-      clearTimeout(ref.current);
-    }
-    ref.current = null;
-  }, []);
-  const items = [callback];
-  const effect = react.useEffect(() => callback, items);
-  const items1 = [arg3, callback];
-  const memo = react.useMemo(() => {
-    const obj = {
-      showConfirmation(intl) {
-        callback();
-        closure_1_3(intl);
-        ref.current = setTimeout(() => {
-          closure_1_4.current = null;
-          closure_1_3(null);
-        }, 1500);
-      }
-    };
-    const merged = Object.assign(closure_2);
-    return obj;
-  }, items1);
-  const items2 = [arg1, memo, arg2];
-  const memo1 = react.useMemo(() => ({ guildId, platform: memo, busy }), items2);
-  const tmp7 = useConjurePublishActionDefault(arg0, memo1);
-  let publishing;
-  if (tmp7 != null) {
-    publishing = tmp7.publishing;
+  const items = [arg1, arg3, arg2];
+  const memo = react.useMemo(() => ({ guildId, platform, busy }), items);
+  const tmp4 = useConjurePublishActionDefault(arg0, memo);
+  const obj = { publishOptions: memo, publish: tmp4, publishing: true === publishing, variant: str2, text: label, indicator: tmp10, pendingChanges: tmp13 };
+  publishing = undefined;
+  if (tmp4 != null) {
+    publishing = tmp4.publishing;
   }
-  let closure_7 = tmp9;
-  const items3 = [true === publishing, callback];
-  const effect1 = obj.useEffect(() => {
-    const tmp = closure_7;
-    if (tmp) {
-      callback();
-      closure_1_3(null);
-    }
-  }, items3);
-  let tmp11 = null;
-  if (true !== publishing) {
-    tmp11 = tmp2;
-  }
-  const obj2 = { publishOptions: memo1, publish: tmp7, publishing: true === publishing, confirmation: tmp11, variant: str2, text: publishButtonText(tmp7, tmp11), label: publishButtonText(tmp7, null), indicator: tmp13, pendingChanges: tmp16 };
   str2 = "primary";
-  const tmp12 = null != tmp7 && tmp7.upToDate && "publish" === tmp7.action && !tmp7.awaitingApproval;
-  if (tmp12) {
+  const tmp6 = null != tmp4 && tmp4.upToDate && "publish" === tmp4.action && !tmp4.awaitingApproval;
+  if (tmp6) {
     str2 = "secondary";
   }
-  tmp13 = null;
-  if (null != tmp7) {
-    let str3 = "publishing";
-    if (!tmp7.publishing) {
-      let tmp15 = "unpublished";
-      const tmp14 = null != tmp7 && tmp7.upToDate && "publish" === tmp7.action && !tmp7.awaitingApproval;
-      if (tmp14) {
-        tmp15 = null;
+  if (null == tmp4) {
+    const intl2 = intl3.intl;
+    label = intl2.string(tmp2(4091)["120EFN"]);
+  } else {
+    const tmp7 = null != tmp4 && tmp4.upToDate && "publish" === tmp4.action && !tmp4.awaitingApproval;
+    if (tmp7) {
+      if (!tmp4.publishing) {
+        const intl = intl3.intl;
+        label = intl.string(tmp2(4091).kAfbEN);
       }
-      str3 = tmp15;
     }
-    tmp13 = str3;
+    label = tmp4.label;
   }
-  tmp16 = null != tmp7;
-  if (tmp16) {
-    let isUpdate = tmp7.isUpdate;
+  tmp10 = null;
+  if (null != tmp4) {
+    let str4 = "publishing";
+    if (!tmp4.publishing) {
+      let tmp12 = "unpublished";
+      const tmp11 = null != tmp4 && tmp4.upToDate && "publish" === tmp4.action && !tmp4.awaitingApproval;
+      if (tmp11) {
+        tmp12 = null;
+      }
+      str4 = tmp12;
+    }
+    tmp10 = str4;
+  }
+  tmp13 = null != tmp4;
+  if (tmp13) {
+    let isUpdate = tmp4.isUpdate;
     if (!isUpdate) {
-      const status = tmp7.status;
+      const status = tmp4.status;
       let publishState;
       if (status != null) {
         publishState = status.publishState;
       }
       isUpdate = "not_live" === publishState;
     }
-    tmp16 = isUpdate;
+    tmp13 = isUpdate;
   }
-  return obj2;
+  return obj;
 };

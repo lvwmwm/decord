@@ -1,34 +1,34 @@
-// Module ID: 17988
-// Function ID: 17989
+// Module ID: 17815
+// Function ID: 17816
 // Name: YouBar
-// Dependencies: [5, 19, 17, 4816, 4825, 1388, 16532, 1072, 4638, 21, 4792, 575, 16524, 12737, 11705, 11713, 11892, 16531, 16535, 1655, 5393, 9918, 9923, 9829, 17989, 15926, 504, 8047, 17995, 4969, 5008, 1255, 12, 17996, 2121, 4968, 12047, 6714, 4625, 1113, 8075, 11708, 5052, 1708, 1187, 18010, 18011, 18012, 18017, 18019, 18021, 13217, 4853, 18022, 18023, 2]
+// Dependencies: [5, 19, 17, 4818, 4827, 1386, 16355, 1071, 4640, 21, 4794, 575, 16346, 12707, 11647, 11655, 11834, 16354, 16358, 1653, 5395, 9921, 9926, 9831, 17816, 15890, 504, 8046, 17822, 4971, 5010, 1254, 12, 17823, 2119, 4970, 11989, 6716, 4627, 1112, 8074, 11650, 5054, 1706, 1186, 17837, 17838, 17839, 17844, 17846, 17848, 13187, 4855, 17849, 17850, 2]
 
-// Module 17988 (YouBar)
+// Module 17815 (YouBar)
 import _mod12 from "module_12" /* 12 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import GlobalUtils from "GlobalUtils" /* 1255 */;
-import dismissible_content from "dismissible_content" /* 4625 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4638 */;
-import native from "native" /* 4853 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4968 */;
-import HapticUtils from "HapticUtils" /* 5008 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5052 */;
-import transitionToGuild from "transitionToGuild" /* 6714 */;
-import openUserSettings from "openUserSettings" /* 8075 */;
-import getNavigatorCurrentRouteDefault from "getNavigatorCurrentRoute" /* 12047 */;
-import YouBarFloatingShadeDefault from "YouBarFloatingShade" /* 18022 */;
-import ConnectionBannerDefault from "ConnectionBanner" /* 18023 */;
+import Constants from "Constants" /* 1071 */;
+import GlobalUtils from "GlobalUtils" /* 1254 */;
+import dismissible_content from "dismissible_content" /* 4627 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4640 */;
+import native from "native" /* 4855 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4970 */;
+import HapticUtils from "HapticUtils" /* 5010 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5054 */;
+import transitionToGuild from "transitionToGuild" /* 6716 */;
+import openUserSettings from "openUserSettings" /* 8074 */;
+import getNavigatorCurrentRouteDefault from "getNavigatorCurrentRoute" /* 11989 */;
+import YouBarFloatingShadeDefault from "YouBarFloatingShade" /* 17849 */;
+import ConnectionBannerDefault from "ConnectionBanner" /* 17850 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4816 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4825 */;
-import UserStore from "UserStore" /* 1388 */;
-import YouBarConstants from "YouBarConstants" /* 16532 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4818 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4827 */;
+import UserStore from "UserStore" /* 1386 */;
+import YouBarConstants from "YouBarConstants" /* 16355 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -50,7 +50,7 @@ let rect;
 let rect1;
 let tmp;
 let unpackModuleId;
-const _mod1708 = tmp(1708);
+const _mod1706 = tmp(1706);
 ({ View: hasOwnProperty, Pressable: metroRequire } = react_native);
 ({ YOU_BAR_HEIGHT: c10, YOU_BAR_PADDING: unpackModuleId, YOU_BAR_SPRING_CONFIG: closure_12, YOU_BAR_AVATAR_LARGE_SIZE: map1, YOU_BAR_AVATAR_SIZE: closure_14, YOU_BAR_BUTTON_HIT_SLOP: closure_15 } = YouBarConstants);
 const ME = Constants.ME;
@@ -277,7 +277,7 @@ let closure_26 = react.memo(function YouBar() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -313,7 +313,7 @@ let closure_26 = react.memo(function YouBar() {
           const result1 = tmp.showYouAccountActionSheet();
           const result2 = closure_129_2.set(false);
           c3 = 3;
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp9) {
         c3 = 3;
@@ -333,7 +333,7 @@ let closure_26 = react.memo(function YouBar() {
     const coerceGuildsRouteResult = obj.coerceGuildsRoute(getNavigatorCurrentRouteDefault());
     if (null != coerceGuildsRouteResult) {
       const tmpResult = HapticUtils;
-      const result = tmpResult.triggerHapticFeedback(tmp(5008).HapticFeedbackTypes.SOFT);
+      const result = tmpResult.triggerHapticFeedback(tmp(5010).HapticFeedbackTypes.SOFT);
       const params = coerceGuildsRouteResult.params;
       let guildId;
       if (params != null) {
@@ -394,7 +394,8 @@ let closure_26 = react.memo(function YouBar() {
     let tmp = require;
     const Gesture = LegacyBaseButton.Gesture;
     const PanResult = Gesture.Pan();
-    let result = PanResult.simultaneousWithExternalGesture(gesture);
+    const hitSlopResult = PanResult.hitSlop(closure_15);
+    let result = hitSlopResult.simultaneousWithExternalGesture(gesture);
     const activeOffsetXResult = result.activeOffsetX(50);
     const items = [closure_23, sharedValue1, translateX];
     let c0;
@@ -435,7 +436,7 @@ let closure_26 = react.memo(function YouBar() {
     const items4 = [closure_25, , ];
     const onEnd = onBeginResult.onTouchesMove(YouBarTsx3).onEnd;
     onBeginResult.onTouchesMove(YouBarTsx3);
-    items4[1] = _mod1708.scheduleOnRN;
+    items4[1] = _mod1706.scheduleOnRN;
     items4[2] = callback3;
     c0 = undefined;
     c1 = undefined;

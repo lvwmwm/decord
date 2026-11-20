@@ -1,7 +1,7 @@
 // Module ID: 6803
 // Function ID: 6804
 // Name: SocialSdkApplicationStore
-// Dependencies: [32, 1345, 504, 572, 2]
+// Dependencies: [32, 1343, 504, 572, 2]
 
 // Module 6803 (SocialSdkApplicationStore)
 import get_initializedDefault from "get initialized" /* 504 */;

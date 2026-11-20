@@ -1,13 +1,13 @@
-// Module ID: 13803
-// Function ID: 13804
+// Module ID: 13772
+// Function ID: 13773
 // Name: useFrameRunsInBackground
-// Dependencies: [1194, 6502, 504, 6833, 2]
+// Dependencies: [1193, 6504, 504, 6833, 2]
 // Exports: default
 
-// Module 13803 (useFrameRunsInBackground)
+// Module 13772 (useFrameRunsInBackground)
 import frameRunsInBackgroundDefault from "frameRunsInBackground" /* 6833 */;
-import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1194 */;
-import FramesStore from "FramesStore" /* 6502 */;
+import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1193 */;
+import FramesStore from "FramesStore" /* 6504 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,24 +1,24 @@
-// Module ID: 15775
-// Function ID: 15776
+// Module ID: 15739
+// Function ID: 15740
 // Name: UserProfileDisplayNameStylesEditButton
-// Dependencies: [32, 19, 17, 1072, 4638, 21, 4792, 575, 1502, 8960, 4625, 8012, 6221, 9340, 1399, 15776, 1256, 1113, 15779, 1187, 14173, 9334, 15780, 15782, 3147, 15783, 2]
+// Dependencies: [32, 19, 17, 1071, 4640, 21, 4794, 575, 1500, 8960, 4627, 8011, 6223, 9340, 1397, 15740, 1255, 1112, 15743, 1186, 14142, 9334, 15744, 15746, 3149, 15747, 2]
 // Exports: default
 
-// Module 15775 (UserProfileDisplayNameStylesEditButton)
+// Module 15739 (UserProfileDisplayNameStylesEditButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import intl3 from "intl" /* 1113 */;
-import native from "native" /* 1187 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4638 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14173 */;
-import getDisplayNameStylesFontNameDefault from "getDisplayNameStylesFontName" /* 15779 */;
-import DisplayNameStylesColorSwatchDefault from "DisplayNameStylesColorSwatch" /* 15780 */;
+import intl3 from "intl" /* 1112 */;
+import native from "native" /* 1186 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4640 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14142 */;
+import getDisplayNameStylesFontNameDefault from "getDisplayNameStylesFontName" /* 15743 */;
+import DisplayNameStylesColorSwatchDefault from "DisplayNameStylesColorSwatch" /* 15744 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 1072 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import Constants from "Constants" /* 1071 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;

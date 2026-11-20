@@ -1,27 +1,27 @@
-// Module ID: 10753
-// Function ID: 10754
+// Module ID: 10695
+// Function ID: 10696
 // Name: useStableSafeAreaInsets
-// Dependencies: [32, 19, 1499, 1380, 1642, 1630, 10754, 2]
+// Dependencies: [32, 19, 1497, 1378, 1640, 1628, 10696, 2]
 // Exports: default, getStableSafeAreaInsets
 
-// Module 10753 (useStableSafeAreaInsets)
-import PlatformUtils from "PlatformUtils" /* 1380 */;
-import AppEntryKeyContext from "AppEntryKeyContext" /* 1499 */;
-import react_nativeDefault from "react-native" /* 1642 */;
-import subscribeToSafeAreaInsetsDefault from "subscribeToSafeAreaInsets" /* 10754 */;
+// Module 10695 (useStableSafeAreaInsets)
+import PlatformUtils from "PlatformUtils" /* 1378 */;
+import AppEntryKeyContext from "AppEntryKeyContext" /* 1497 */;
+import react_nativeDefault from "react-native" /* 1640 */;
+import subscribeToSafeAreaInsetsDefault from "subscribeToSafeAreaInsets" /* 10696 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 let tmp3;
-const useSafeAreaInsets = tmp3(1630);
+const useSafeAreaInsets = tmp3(1628);
 const result = size.fileFinishedImporting("modules/safe_area/useStableSafeAreaInsets.native.tsx");
 
 export default function useStableSafeAreaInsets() {
   let appEntryKey;
   let closure_1;
   let first;
-  let obj = appEntryKey(1499);
+  let obj = appEntryKey(1497);
   appEntryKey = obj.useAppEntryKey();
   [first, closure_1] = react.useState(() => {
     let stableSafeAreaInsets;

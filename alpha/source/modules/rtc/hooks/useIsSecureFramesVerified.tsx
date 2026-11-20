@@ -1,13 +1,13 @@
 // Module ID: 9568
 // Function ID: 9569
 // Name: useIsSecureFramesVerified
-// Dependencies: [502, 5533, 9569, 9570, 9571, 9615, 504, 9618, 6280, 2]
+// Dependencies: [502, 5535, 9569, 9570, 9571, 9615, 504, 9618, 6282, 2]
 // Exports: useIsCallSecureFramesVerified, useIsStreamSecureFramesVerified, useIsUserSecureFramesVerified
 
 // Module 9568 (useIsSecureFramesVerified)
-import StreamKeyUtils from "StreamKeyUtils" /* 6280 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6282 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5533 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5535 */;
 import SecureFramesVerifiedStore from "SecureFramesVerifiedStore" /* 9569 */;
 import TransientKeyStore from "TransientKeyStore" /* 9570 */;
 import VerifiedKeyStore from "VerifiedKeyStore" /* 9571 */;

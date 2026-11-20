@@ -1,19 +1,19 @@
-// Module ID: 9773
-// Function ID: 9774
+// Module ID: 9775
+// Function ID: 9776
 // Name: SkeletonCard
-// Dependencies: [19, 21, 4792, 575, 9425, 1655, 5002, 2]
+// Dependencies: [19, 21, 4794, 575, 9425, 1653, 5004, 2]
 // Exports: default
 
-// Module 9773 (SkeletonCard)
+// Module 9775 (SkeletonCard)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import timing_timing from "timing/timing" /* 5002 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import timing_timing from "timing/timing" /* 5004 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
-const _modDef1655 = _mod1655;
+const _modDef1653 = _mod1653;
 let set;
 
 const jsx = Fragment.jsx;
@@ -42,20 +42,20 @@ export default function _default(width) {
     COLLECTIBLES_SHOP_CARD_HEIGHT = sharedValue(9425).COLLECTIBLES_SHOP_CARD_HEIGHT;
   }
   const tmp3Result = tmp3(COLLECTIBLES_SHOP_CARD_WIDTH, COLLECTIBLES_SHOP_CARD_HEIGHT);
-  let obj = sharedValue(1655);
+  let obj = sharedValue(1653);
   sharedValue = obj.useSharedValue(0.3);
   const items = [sharedValue];
   const effect = react.useEffect(() => {
     set = sharedValue.set;
-    const withRepeat = _mod1655.withRepeat;
-    _mod1655;
+    const withRepeat = _mod1653.withRepeat;
+    _mod1653;
     const obj = timing_timing;
     const result = set(withRepeat(obj.withTiming(1, { duration: 650 }), -1, true));
   }, items);
   const items1 = [closure_6, sharedValue];
   let c0;
   [tmp10, tmp11] = items1;
-  const obj2 = sharedValue(1655);
+  const obj2 = sharedValue(1653);
   class SkeletonCardTsx1 {
     constructor() {
       const obj = { opacity: _undefined.get() };
@@ -68,5 +68,5 @@ export default function _default(width) {
   SkeletonCardTsx1.__initData = tmp10;
   const animatedStyle = obj2.useAnimatedStyle(SkeletonCardTsx1);
   const items3 = [tmp3Result.skeletonCard, style, animatedStyle];
-  return jsx(_modDef1655.View, { style: items3 });
+  return jsx(_modDef1653.View, { style: items3 });
 };

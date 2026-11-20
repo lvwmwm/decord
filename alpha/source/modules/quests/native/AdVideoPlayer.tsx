@@ -1,21 +1,21 @@
-// Module ID: 16399
-// Function ID: 16400
+// Module ID: 16221
+// Function ID: 16222
 // Name: AdVideoPlayer
-// Dependencies: [32, 19, 17, 2120, 1072, 21, 575, 9135, 4792, 671, 16384, 1655, 5393, 5394, 5002, 5005, 1108, 504, 1380, 1242, 1630, 1113, 6911, 16400, 16402, 16404, 16406, 16407, 10283, 7089, 11778, 16408, 16409, 2]
+// Dependencies: [32, 19, 17, 2118, 1071, 21, 575, 9135, 4794, 671, 16206, 1653, 5395, 5396, 5004, 5007, 1107, 504, 1378, 1241, 1628, 1112, 6910, 16222, 16224, 16226, 16228, 16229, 10223, 7088, 11720, 16230, 16231, 2]
 
-// Module 16399 (AdVideoPlayer)
+// Module 16221 (AdVideoPlayer)
 import nativeDefault from "native" /* 575 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1107 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
 import media_playback_VideoDefault from "media_playback/Video" /* 9135 */;
-import AdsVideoTypes from "AdsVideoTypes" /* 16384 */;
+import AdsVideoTypes from "AdsVideoTypes" /* 16206 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AppStateStore from "AppStateStore" /* 2120 */;
-import Constants from "Constants" /* 1072 */;
+import AppStateStore from "AppStateStore" /* 2118 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import module_671 from "module_671" /* 671 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -722,7 +722,7 @@ const memoResult = react.memo(function AdVideoPlayer(initialProgress) {
     } else {
       const tmp2 = require;
       if (first2 !== AdsVideoTypes.PlayerState.LOADING) {
-        tmp2(1380);
+        tmp2(1378);
       }
       callback17(true);
     }

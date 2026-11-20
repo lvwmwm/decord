@@ -1,24 +1,24 @@
 // Module ID: 8860
 // Function ID: 8861
 // Name: SKUPreview
-// Dependencies: [19, 17, 7960, 1072, 21, 4792, 8861, 575, 8793, 8889, 2114, 8900, 8891, 8912, 8914, 8915, 5356, 4953, 1255, 2]
+// Dependencies: [19, 17, 7959, 1071, 21, 4794, 8861, 575, 8793, 8889, 2112, 8900, 8891, 8912, 8914, 8915, 5358, 4955, 1254, 2]
 // Exports: default
 
 // Module 8860 (SKUPreview)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import GlobalUtils from "GlobalUtils" /* 1255 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 2114 */;
-import useToken from "useToken" /* 5356 */;
-import CollectiblesItemRecord from "CollectiblesItemRecord" /* 7960 */;
+import Constants from "Constants" /* 1071 */;
+import GlobalUtils from "GlobalUtils" /* 1254 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 2112 */;
+import useToken from "useToken" /* 5358 */;
+import CollectiblesItemRecord from "CollectiblesItemRecord" /* 7959 */;
 import useShopProductItems from "useShopProductItems" /* 8793 */;
 import WishlistItemCardBase from "WishlistItemCardBase" /* 8861 */;
 import ProfileFrameSamplePreviewDefault from "ProfileFrameSamplePreview" /* 8912 */;
 import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 8915 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 class CollectiblesPreview {

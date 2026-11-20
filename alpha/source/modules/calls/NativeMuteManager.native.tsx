@@ -1,15 +1,15 @@
-// Module ID: 5687
-// Function ID: 5688
+// Module ID: 5689
+// Function ID: 5690
 // Name: NativeMuteManager
-// Dependencies: [5553, 2133, 3, 4636, 572, 5688, 2135, 2]
+// Dependencies: [5555, 2131, 3, 4638, 572, 5690, 2133, 2]
 
-// Module 5687 (NativeMuteManager)
+// Module 5689 (NativeMuteManager)
 import LoggerDefault from "Logger" /* 3 */;
-import inject from "inject" /* 2135 */;
-import Timers from "Timers" /* 4636 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 5688 */;
-import AudioRouteStore from "AudioRouteStore" /* 5553 */;
-import MediaEngineStore from "MediaEngineStore" /* 2133 */;
+import inject from "inject" /* 2133 */;
+import Timers from "Timers" /* 4638 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 5690 */;
+import AudioRouteStore from "AudioRouteStore" /* 5555 */;
+import MediaEngineStore from "MediaEngineStore" /* 2131 */;
 import Dispatcher from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 

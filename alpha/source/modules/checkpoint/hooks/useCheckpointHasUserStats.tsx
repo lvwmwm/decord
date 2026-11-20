@@ -1,12 +1,12 @@
-// Module ID: 12630
-// Function ID: 12631
+// Module ID: 12600
+// Function ID: 12601
 // Name: useCheckpointHasUserStats
-// Dependencies: [12400, 504, 2]
+// Dependencies: [12370, 504, 2]
 // Exports: default
 
-// Module 12630 (useCheckpointHasUserStats)
+// Module 12600 (useCheckpointHasUserStats)
 import get_initialized from "get initialized" /* 504 */;
-import CheckpointStore2 from "CheckpointStore" /* 12400 */;
+import CheckpointStore2 from "CheckpointStore" /* 12370 */;
 import size from "module_2" /* 2 */;
 
 const CheckpointStore = CheckpointStore2;

@@ -1,21 +1,21 @@
-// Module ID: 17561
-// Function ID: 17562
+// Module ID: 17388
+// Function ID: 17389
 // Name: MainTabs
-// Dependencies: [19, 17, 21, 4792, 575, 4964, 8453, 17562, 5356, 4853, 9539, 17563, 18897, 2]
+// Dependencies: [19, 17, 21, 4794, 575, 4966, 8452, 17389, 5358, 4855, 9539, 17390, 18721, 2]
 
-// Module 17561 (MainTabs)
+// Module 17388 (MainTabs)
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 4853 */;
-import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 4964 */;
-import useToken from "useToken" /* 5356 */;
-import useActiveTheme from "useActiveTheme" /* 8453 */;
+import native from "native" /* 4855 */;
+import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 4966 */;
+import useToken from "useToken" /* 5358 */;
+import useActiveTheme from "useActiveTheme" /* 8452 */;
 import ThemedGradientDefault from "ThemedGradient" /* 9539 */;
-import useAppFrameDefault from "useAppFrame" /* 17562 */;
-import MainTabsNavigatorPanelDefault from "MainTabsNavigatorPanel" /* 17563 */;
+import useAppFrameDefault from "useAppFrame" /* 17389 */;
+import MainTabsNavigatorPanelDefault from "MainTabsNavigatorPanel" /* 17390 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -85,7 +85,7 @@ const memoResult = react.memo(function MainTabs() {
   items6 = [metroRequire(ThemeContextProvider, obj4), ];
   let tmp12Result2 = null;
   if (null != styles.container) {
-    tmp12Result2 = tmp12(tmp(18897), {});
+    tmp12Result2 = tmp12(tmp(18721), {});
   }
   items6[1] = tmp12Result2;
   return metroRequire(React3, obj3);

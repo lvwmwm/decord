@@ -1,16 +1,16 @@
 // Module ID: 9475
 // Function ID: 9476
 // Name: MobileWebHandoffLinking
-// Dependencies: [5, 502, 1072, 6308, 9476, 9478, 1256, 1254, 9479, 1381, 5471, 2]
+// Dependencies: [5, 502, 1071, 6310, 9476, 9478, 1255, 1253, 9479, 1379, 5473, 2]
 
 // Module 9475 (MobileWebHandoffLinking)
-import FingerprintUtils from "FingerprintUtils" /* 1254 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6308 */;
+import FingerprintUtils from "FingerprintUtils" /* 1253 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6310 */;
 import SimpleLoadingModal from "SimpleLoadingModal" /* 9476 */;
 import MobileWebHandoffUtilsDefault from "MobileWebHandoffUtils" /* 9478 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import Constants from "Constants" /* 1072 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -20,7 +20,7 @@ let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const AnalyticsUtilsDefault = tmp(1256);
+const AnalyticsUtilsDefault = tmp(1255);
 function createHandoffTokenWithLoadingModal(arg0) {
   let authenticated;
   let fingerprint;
@@ -141,7 +141,7 @@ obj = function _redirectDeveloperPortalWithHandoffToken() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -184,7 +184,7 @@ obj = function _redirectDeveloperPortalWithHandoffToken() {
             const obj5 = closure_131_1(closure_131_2[10]);
             obj5.performURLNavigation(uRL.href);
             c5 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp6) {
           c5 = 3;

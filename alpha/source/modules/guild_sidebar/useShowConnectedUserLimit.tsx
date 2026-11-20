@@ -1,11 +1,11 @@
-// Module ID: 13058
-// Function ID: 13059
+// Module ID: 13028
+// Function ID: 13029
 // Name: useShowConnectedUserLimit
-// Dependencies: [1072, 9546, 2]
+// Dependencies: [1071, 9546, 2]
 // Exports: default, useConnectedUserLimit, useConnectedUserLimitFormatted
 
-// Module 13058 (useShowConnectedUserLimit)
-import Constants from "Constants" /* 1072 */;
+// Module 13028 (useShowConnectedUserLimit)
+import Constants from "Constants" /* 1071 */;
 import useChannelVideoLimitDefault from "useChannelVideoLimit" /* 9546 */;
 import size from "module_2" /* 2 */;
 

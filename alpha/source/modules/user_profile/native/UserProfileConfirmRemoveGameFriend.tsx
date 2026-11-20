@@ -1,12 +1,12 @@
-// Module ID: 10127
-// Function ID: 10128
+// Module ID: 10130
+// Function ID: 10131
 // Name: UserProfileConfirmRemoveGameFriend
-// Dependencies: [19, 21, 8017, 10128, 5745, 1113, 5745, 2]
+// Dependencies: [19, 21, 8016, 10131, 5747, 1112, 5747, 2]
 // Exports: default
 
-// Module 10127 (UserProfileConfirmRemoveGameFriend)
-import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8017 */;
-import PeopleUtilsDefault from "PeopleUtils" /* 10128 */;
+// Module 10130 (UserProfileConfirmRemoveGameFriend)
+import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8016 */;
+import PeopleUtilsDefault from "PeopleUtils" /* 10131 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -37,19 +37,19 @@ export default function UserProfileConfirmRemoveGameFriend(applicationId) {
     const obj3 = { userId, applicationId, location: "UserProfileConfirmRemoveGameFriend" };
     obj2.removeFriend(obj3);
   }, items);
-  let obj = { title: intl.formatToPlainString(userId(1113).t.fBKKfq, { name: userDisplayName }), content: intl2.formatToPlainString(userId(1113).t.dsU5bl, { name: userDisplayName, gameName }), actions: closure_5(AlertActions, obj2) };
-  const AlertModal = userId(5745).AlertModal;
-  intl = userId(1113).intl;
-  intl2 = userId(1113).intl;
+  let obj = { title: intl.formatToPlainString(userId(1112).t.fBKKfq, { name: userDisplayName }), content: intl2.formatToPlainString(userId(1112).t.dsU5bl, { name: userDisplayName, gameName }), actions: closure_5(AlertActions, obj2) };
+  const AlertModal = userId(5747).AlertModal;
+  intl = userId(1112).intl;
+  intl2 = userId(1112).intl;
   obj2 = { children: items1 };
-  AlertActions = userId(5745).AlertActions;
-  let obj3 = { variant: "destructive", text: intl3.string(userId(1113).t.RLcE6x), onPress: callback };
-  const AlertActionButton = userId(5745).AlertActionButton;
-  intl3 = userId(1113).intl;
+  AlertActions = userId(5747).AlertActions;
+  let obj3 = { variant: "destructive", text: intl3.string(userId(1112).t.RLcE6x), onPress: callback };
+  const AlertActionButton = userId(5747).AlertActionButton;
+  intl3 = userId(1112).intl;
   items1 = [closure_4(AlertActionButton, obj3, "confirm-remove"), ];
-  const obj4 = { variant: "secondary", text: intl4.string(userId(1113).t["eN6+rI"]) };
-  const AlertActionButton2 = userId(5745).AlertActionButton;
-  intl4 = userId(1113).intl;
+  const obj4 = { variant: "secondary", text: intl4.string(userId(1112).t["eN6+rI"]) };
+  const AlertActionButton2 = userId(5747).AlertActionButton;
+  intl4 = userId(1112).intl;
   items1[1] = closure_4(AlertActionButton2, obj4, "nevermind");
   return closure_4(AlertModal, obj);
 };

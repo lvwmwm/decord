@@ -1,14 +1,14 @@
 // Module ID: 9555
 // Function ID: 9556
 // Name: VoiceStateIcons
-// Dependencies: [19, 17, 21, 4792, 575, 9556, 9558, 9560, 9562, 9564, 1255, 1187, 7746, 9566, 9567, 2]
+// Dependencies: [19, 17, 21, 4794, 575, 9556, 9558, 9560, 9562, 9564, 1254, 1186, 7745, 9566, 9567, 2]
 
 // Module 9555 (VoiceStateIcons)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 1187 */;
-import GlobalUtils from "GlobalUtils" /* 1255 */;
-import inlineStyles from "inlineStyles" /* 7746 */;
+import native from "native" /* 1186 */;
+import GlobalUtils from "GlobalUtils" /* 1254 */;
+import inlineStyles from "inlineStyles" /* 7745 */;
 import VoiceStateIconUtils from "VoiceStateIconUtils" /* 9556 */;
 import HeadphonesSlashIcon from "HeadphonesSlashIcon" /* 9560 */;
 import MicrophoneDenyIcon2 from "MicrophoneDenyIcon" /* 9562 */;
@@ -17,7 +17,7 @@ import AssetRegistryDefault from "AssetRegistry" /* 9566 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 9567 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const inlineStylesDefault = inlineStyles;
@@ -115,7 +115,7 @@ const memoResult1 = react.memo(function VideoIcon(state) {
   const tmp2 = closure_6();
   if (VoiceStateIconUtils.VideoIconState.VIDEO_DISABLED_LOCAL_AUTO === state) {
     const obj = { source: AssetRegistryDefault, style: items };
-    const Icon2 = tmp3(1187).Icon;
+    const Icon2 = tmp3(1186).Icon;
     const merged1 = Object.assign(merged);
     items = [merged.style, tmp2.noTint];
     return React3(Icon2, obj);
@@ -125,7 +125,7 @@ const memoResult1 = react.memo(function VideoIcon(state) {
     return React3(VideoDisabledSvgIcon, obj2);
   } else if (VoiceStateIconUtils.VideoIconState.VIDEO_ACTIVE === state) {
     const obj3 = { source: AssetRegistryDefault2 };
-    const Icon = tmp3(1187).Icon;
+    const Icon = tmp3(1186).Icon;
     const merged3 = Object.assign(merged);
     return React3(Icon, obj3);
   } else {

@@ -1,14 +1,14 @@
-// Module ID: 14958
-// Function ID: 14959
+// Module ID: 14922
+// Function ID: 14923
 // Name: getSoundFromMessage
-// Dependencies: [5843, 5842, 6710, 1095, 2]
+// Dependencies: [5845, 5844, 6712, 1094, 2]
 // Exports: default
 
-// Module 14958 (getSoundFromMessage)
-import MessageReferenceTypes from "MessageReferenceTypes" /* 1095 */;
-import SoundboardConstants from "SoundboardConstants" /* 5842 */;
-import SoundboardTypes from "SoundboardTypes" /* 6710 */;
-import MessageStore from "MessageStore" /* 5843 */;
+// Module 14922 (getSoundFromMessage)
+import MessageReferenceTypes from "MessageReferenceTypes" /* 1094 */;
+import SoundboardConstants from "SoundboardConstants" /* 5844 */;
+import SoundboardTypes from "SoundboardTypes" /* 6712 */;
+import MessageStore from "MessageStore" /* 5845 */;
 import size from "module_2" /* 2 */;
 
 function getSoundFromSounds(arr, arg1) {
@@ -96,7 +96,7 @@ export default function getSoundFromMessage(arg0, arg1, arg2, arr) {
         }
       }
       if (null != found1) {
-        let tmp3Result = tmp3(6710);
+        let tmp3Result = tmp3(6712);
         let guild_id = found1.guild_id;
         const soundboardSoundFromAPI = tmp3Result.soundboardSoundFromAPI;
         if (guild_id == null) {

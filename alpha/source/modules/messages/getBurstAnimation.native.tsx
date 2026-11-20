@@ -1,10 +1,10 @@
-// Module ID: 4751
-// Function ID: 4752
+// Module ID: 4753
+// Function ID: 4754
 // Name: getBurstAnimation
-// Dependencies: [5, 4752, 4753, 4754, 4755, 4756, 4757, 4758, 4759, 4760, 4761, 4762, 4763, 4764, 4765, 4766, 4767, 4768, 4769, 4770, 4771, 4772, 4773, 4774, 4775, 4776, 4777, 4778, 4779, 4780, 4781, 4782, 4783, 4784, 4785, 4786, 4787, 4788, 2]
+// Dependencies: [5, 4754, 4755, 4756, 4757, 4758, 4759, 4760, 4761, 4762, 4763, 4764, 4765, 4766, 4767, 4768, 4769, 4770, 4771, 4772, 4773, 4774, 4775, 4776, 4777, 4778, 4779, 4780, 4781, 4782, 4783, 4784, 4785, 4786, 4787, 4788, 4789, 4790, 2]
 // Exports: getBurstAnimation
 
-// Module 4751 (getBurstAnimation)
+// Module 4753 (getBurstAnimation)
 import _asyncToGeneratorDefault from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -13,21 +13,11 @@ let closure_5;
 
 const obj = {
   load() {
-    return require("module_4752");
+    return require("module_4754");
   }
 };
 const items = [
   obj,
-  {
-    load() {
-      return require("module_4753");
-    }
-  },
-  {
-    load() {
-      return require("module_4754");
-    }
-  },
   {
     load() {
       return require("module_4755");
@@ -102,25 +92,25 @@ const items = [
     load() {
       return require("module_4769");
     }
-  }
-];
-const obj2 = {
-  load() {
-    return require("module_4770");
-  }
-};
-const items1 = [
-  obj2,
+  },
+  {
+    load() {
+      return require("module_4770");
+    }
+  },
   {
     load() {
       return require("module_4771");
     }
-  },
-  {
-    load() {
-      return require("module_4772");
-    }
-  },
+  }
+];
+const obj2 = {
+  load() {
+    return require("module_4772");
+  }
+};
+const items1 = [
+  obj2,
   {
     load() {
       return require("module_4773");
@@ -195,6 +185,16 @@ const items1 = [
     load() {
       return require("module_4787");
     }
+  },
+  {
+    load() {
+      return require("module_4788");
+    }
+  },
+  {
+    load() {
+      return require("module_4789");
+    }
   }
 ];
 let closure_0 = _asyncToGeneratorDefault((arg0, arg1, arg2) => {
@@ -215,7 +215,7 @@ let closure_0 = _asyncToGeneratorDefault((arg0, arg1, arg2) => {
       } else if (arg0 === 2) {
         return { value, done: true };
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

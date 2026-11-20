@@ -1,10 +1,10 @@
-// Module ID: 14952
-// Function ID: 14953
+// Module ID: 14916
+// Function ID: 14917
 // Name: PinotReadyLazy
-// Dependencies: [2, 14953]
+// Dependencies: [2, 14917]
 
-// Module 14952 (PinotReadyLazy)
-import getPinotReadyAction from "getPinotReadyAction" /* 14953 */;
+// Module 14916 (PinotReadyLazy)
+import getPinotReadyAction from "getPinotReadyAction" /* 14917 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/pinot/PinotReadyLazy.tsx");

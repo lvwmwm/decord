@@ -1,21 +1,21 @@
-// Module ID: 17747
-// Function ID: 17748
+// Module ID: 17574
+// Function ID: 17575
 // Name: useGuildHasLiveChannelNotice
-// Dependencies: [19, 6413, 4646, 6279, 4641, 4724, 5536, 17748, 4647, 1083, 17749, 504, 7898, 17750, 6422, 6416, 2]
+// Dependencies: [19, 6415, 4648, 6281, 4643, 4726, 5538, 17575, 4649, 1082, 17576, 504, 7897, 17577, 6424, 6418, 2]
 // Exports: useGuildHasLiveChannelNotice, useGuildLiveChannelNoticeInfo
 
-// Module 17747 (useGuildHasLiveChannelNotice)
-import Constants from "Constants" /* 1083 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4647 */;
-import StageChannelParticipants from "StageChannelParticipants" /* 6416 */;
+// Module 17574 (useGuildHasLiveChannelNotice)
+import Constants from "Constants" /* 1082 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4649 */;
+import StageChannelParticipants from "StageChannelParticipants" /* 6418 */;
 import react from "react" /* 19 */;
-import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6413 */;
-import StageInstanceStore from "StageInstanceStore" /* 4646 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6279 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import PermissionStore from "PermissionStore" /* 4724 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5536 */;
-import LiveChannelNoticesStore from "LiveChannelNoticesStore" /* 17748 */;
+import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6415 */;
+import StageInstanceStore from "StageInstanceStore" /* 4648 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6281 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import PermissionStore from "PermissionStore" /* 4726 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5538 */;
+import LiveChannelNoticesStore from "LiveChannelNoticesStore" /* 17575 */;
 import size from "module_2" /* 2 */;
 
 let closure_11 = GuildScheduledEventsConstants.GuildScheduledEventEntityTypes;

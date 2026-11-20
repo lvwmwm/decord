@@ -1,20 +1,20 @@
-// Module ID: 7279
-// Function ID: 7280
+// Module ID: 7278
+// Function ID: 7279
 // Name: JoinServer
-// Dependencies: [19, 17, 7280, 21, 4792, 575, 5383, 1113, 5367, 1502, 1496, 7100, 5390, 2]
+// Dependencies: [19, 17, 7279, 21, 4794, 575, 5385, 1112, 5369, 1500, 1494, 7099, 5392, 2]
 // Exports: default
 
-// Module 7279 (JoinServer)
+// Module 7278 (JoinServer)
 import nativeDefault from "native" /* 575 */;
-import intl10 from "intl" /* 1113 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5367 */;
-import Text_Text from "Text/Text" /* 5383 */;
+import intl10 from "intl" /* 1112 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5369 */;
+import Text_Text from "Text/Text" /* 5385 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import CreateGuildConstants from "CreateGuildConstants" /* 7280 */;
+import CreateGuildConstants from "CreateGuildConstants" /* 7279 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -32,7 +32,7 @@ let obj4;
 let obj5;
 let obj6;
 let tmp2;
-const FreeFormInputGroupDefault = tmp2(7100);
+const FreeFormInputGroupDefault = tmp2(7099);
 class OrSeparator {
   constructor() {
     let intl;
@@ -92,7 +92,7 @@ export default function JoinServer(arg0) {
   ({ error, inviteString, onInviteChange } = arg0);
   const tmp = closure_11();
   const insets = useSafeAreaInsetsKeyboardAwareDefault().insets;
-  let obj = navigation(1502);
+  let obj = navigation(1500);
   navigation = obj.useNavigation();
   items = [navigation];
   const height = useWindowDimensionsDefault().height;
@@ -107,26 +107,26 @@ export default function JoinServer(arg0) {
   const tmp8 = closure_5;
   if (height > closure_6) {
     const obj4 = { children: items2 };
-    const obj5 = { style: tmp.header, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.string(navigation(1113).t.jlfuFW) };
-    const Text = tmp4(5383).Text;
-    intl = tmp4(1113).intl;
+    const obj5 = { style: tmp.header, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.string(navigation(1112).t.jlfuFW) };
+    const Text = tmp4(5385).Text;
+    intl = tmp4(1112).intl;
     items2 = [closure_8(Text, obj5), ];
-    const obj6 = { style: tmp.description, variant: "body-sm/medium", color: "text-default", children: intl2.string(navigation(1113).t.lVvN3A) };
-    const Text2 = tmp4(5383).Text;
-    intl2 = tmp4(1113).intl;
+    const obj6 = { style: tmp.description, variant: "body-sm/medium", color: "text-default", children: intl2.string(navigation(1112).t.lVvN3A) };
+    const Text2 = tmp4(5385).Text;
+    intl2 = tmp4(1112).intl;
     items2[1] = closure_8(Text2, obj6);
     tmp7Result = tmp7(closure_10, obj4);
   }
   const obj7 = { children: items3 };
   items3 = [tmp7Result, , ];
-  const obj8 = { label: intl3.string(navigation(1113).t.qreV25), error, value: inviteString, onChangeText: onInviteChange, placeholder, accessibilityLabel: intl4.string(navigation(1113).t.qreV25), autoFocus: true, autoCapitalize: "none", autoCorrect: false, returnKeyType: "join", textStyle: tmp.textInput, onSubmitEditing: onDone };
+  const obj8 = { label: intl3.string(navigation(1112).t.qreV25), error, value: inviteString, onChangeText: onInviteChange, placeholder, accessibilityLabel: intl4.string(navigation(1112).t.qreV25), autoFocus: true, autoCapitalize: "none", autoCorrect: false, returnKeyType: "join", textStyle: tmp.textInput, onSubmitEditing: onDone };
   const tmp2Result = FreeFormInputGroupDefault;
-  intl3 = tmp4(1113).intl;
-  intl4 = tmp4(1113).intl;
+  intl3 = tmp4(1112).intl;
+  intl4 = tmp4(1112).intl;
   items3[1] = closure_8(tmp2Result, obj8);
-  const obj9 = { style: tmp.exampleText, variant: "body-sm/medium", color: "text-muted", children: intl5.format(navigation(1113).t.vwWaTe, obj10) };
-  const Text3 = tmp4(5383).Text;
-  intl5 = tmp4(1113).intl;
+  const obj9 = { style: tmp.exampleText, variant: "body-sm/medium", color: "text-muted", children: intl5.format(navigation(1112).t.vwWaTe, obj10) };
+  const Text3 = tmp4(5385).Text;
+  intl5 = tmp4(1112).intl;
   obj10 = {
     example1: items[0],
     example2: items[1],
@@ -142,16 +142,16 @@ export default function JoinServer(arg0) {
   items5 = [, , , ];
   const obj12 = { style: tmp.growSpacing };
   items5[0] = closure_8(closure_4, obj12);
-  const obj13 = { size: "lg", text: intl6.string(navigation(1113).t["+H/coT"]), accessibilityLabel: intl7.string(navigation(1113).t["+H/coT"]), loading: submitting, disabled: submitting, onPress: onDone };
-  const Button = tmp4(5390).Button;
-  intl6 = tmp4(1113).intl;
-  intl7 = tmp4(1113).intl;
+  const obj13 = { size: "lg", text: intl6.string(navigation(1112).t["+H/coT"]), accessibilityLabel: intl7.string(navigation(1112).t["+H/coT"]), loading: submitting, disabled: submitting, onPress: onDone };
+  const Button = tmp4(5392).Button;
+  intl6 = tmp4(1112).intl;
+  intl7 = tmp4(1112).intl;
   items5[1] = closure_8(Button, obj13);
   items5[2] = closure_8(OrSeparator, {});
-  const obj14 = { size: "lg", variant: "secondary", text: intl8.string(navigation(1113).t["MOqX/G"]), accessibilityLabel: intl9.string(navigation(1113).t["MOqX/G"]), onPress: callback };
-  const Button2 = tmp4(5390).Button;
-  intl8 = tmp4(1113).intl;
-  intl9 = tmp4(1113).intl;
+  const obj14 = { size: "lg", variant: "secondary", text: intl8.string(navigation(1112).t["MOqX/G"]), accessibilityLabel: intl9.string(navigation(1112).t["MOqX/G"]), onPress: callback };
+  const Button2 = tmp4(5392).Button;
+  intl8 = tmp4(1112).intl;
+  intl9 = tmp4(1112).intl;
   items5[3] = closure_8(Button2, obj14);
   items4[1] = closure_9(closure_10, obj11);
   return closure_9(tmp8, obj2);

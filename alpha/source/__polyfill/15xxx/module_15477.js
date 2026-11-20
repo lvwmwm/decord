@@ -1,18 +1,16 @@
 // Module ID: 15477
 // Function ID: 15478
-// Dependencies: []
+// Dependencies: [15441, 15415]
 
 // Module 15477
-let all = typeof document === "object";
-if (typeof document === "object") {
-  const _document = document;
-  all = document.all;
+import _mod15415 from "module_15415" /* 15415 */;
+import module_15441 from "module_15441" /* 15441 */;
+
+let _moduleResult = module_15441(_mod15415.WeakMap);
+if (_moduleResult) {
+  const _String = String;
+  const obj = /native code/;
+  _moduleResult = obj.test(String(_mod15415.WeakMap));
 }
-if (undefined === all) {
-  let fn;
-  if (undefined !== all) {
-    fn = (fn) => typeof fn === "function" || fn === all;
-  }
-  module.exports = fn;
-}
-fn = (fn) => typeof fn === "function";
+
+export default _moduleResult;

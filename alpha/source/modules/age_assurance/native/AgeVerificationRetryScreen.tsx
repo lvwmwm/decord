@@ -1,20 +1,20 @@
-// Module ID: 12337
-// Function ID: 12338
+// Module ID: 12307
+// Function ID: 12308
 // Name: AgeVerificationRetryScreen
-// Dependencies: [5, 19, 17, 1072, 21, 4792, 575, 7739, 6293, 1113, 1380, 7695, 5383, 7229, 6926, 7674, 2188, 2]
+// Dependencies: [5, 19, 17, 1071, 21, 4794, 575, 7738, 6295, 1112, 1378, 7694, 5385, 7228, 6925, 7673, 2186, 2]
 // Exports: default
 
-// Module 12337 (AgeVerificationRetryScreen)
+// Module 12307 (AgeVerificationRetryScreen)
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6293 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7674 */;
+import Constants from "Constants" /* 1071 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2186 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6295 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7673 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let c0, c1;
@@ -90,7 +90,7 @@ export default function GetStartedScreen(modalSessionId) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -121,7 +121,7 @@ export default function GetStartedScreen(modalSessionId) {
             return obj;
           } else {
             c0 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp4) {
           c0 = 3;

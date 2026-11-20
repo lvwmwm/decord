@@ -44,7 +44,7 @@ function _parseCookieString(str) {
     return acc;
   }, {});
 }
-function _shouldCaptureResponse(failedRequestStatusCodes, arg1, name) {
+function _shouldCaptureResponse(failedRequestStatusCodes, arg1, url) {
   failedRequestStatusCodes = failedRequestStatusCodes.failedRequestStatusCodes;
   let closure_0 = arg1;
   let someResult = failedRequestStatusCodes.some((item) => {
@@ -58,7 +58,7 @@ function _shouldCaptureResponse(failedRequestStatusCodes, arg1, name) {
   });
   if (someResult) {
     const failedRequestTargets = failedRequestStatusCodes.failedRequestTargets;
-    closure_0 = name;
+    closure_0 = url;
     someResult = failedRequestTargets.some((test) => {
       let hasItem;
       if (typeof test === "string") {
@@ -73,7 +73,7 @@ function _shouldCaptureResponse(failedRequestStatusCodes, arg1, name) {
     const isSentryRequestUrl = registerSpanErrorInstrumentation.isSentryRequestUrl;
     registerSpanErrorInstrumentation;
     const obj = registerSpanErrorInstrumentation;
-    someResult = !isSentryRequestUrl(name, obj.getClient());
+    someResult = !isSentryRequestUrl(url, obj.getClient());
   }
   return someResult;
 }

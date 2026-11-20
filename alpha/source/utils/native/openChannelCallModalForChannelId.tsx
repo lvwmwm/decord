@@ -1,13 +1,13 @@
-// Module ID: 12135
-// Function ID: 12136
+// Module ID: 12077
+// Function ID: 12078
 // Name: openChannelCallModalForChannelId
-// Dependencies: [4641, 7161, 6373, 2]
+// Dependencies: [4643, 7160, 6375, 2]
 // Exports: default
 
-// Module 12135 (openChannelCallModalForChannelId)
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 6373 */;
-import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 7161 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
+// Module 12077 (openChannelCallModalForChannelId)
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 6375 */;
+import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 7160 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("utils/native/openChannelCallModalForChannelId.tsx");

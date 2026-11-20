@@ -1,20 +1,20 @@
-// Module ID: 7689
-// Function ID: 7690
+// Module ID: 7688
+// Function ID: 7689
 // Name: SafetyHubUtils
-// Dependencies: [502, 7690, 1072, 2169, 5832, 1113, 7691, 1089, 11, 504, 2]
+// Dependencies: [502, 7689, 1071, 2167, 5834, 1112, 7690, 1088, 11, 504, 2]
 // Exports: capitalizeText, getAppealSignalDisplayText, getClassificationAccountStatusExpiration, getClassificationRelativeIncidentTime, getRequestReviewErrorFromCode, getSpoilerFlagsForAttachment, isAppealWindowExpired, isCurrentUserSuspended, isFlaggedContentEmpty, isGuildClassification, mapCtaToNativeData, parseMessageForProps, useIsSuspendedUser
 
-// Module 7689 (SafetyHubUtils)
+// Module 7688 (SafetyHubUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initialized from "get initialized" /* 504 */;
-import DurationsDefault from "Durations" /* 1089 */;
-import intl5 from "intl" /* 1113 */;
-import _modDef2169 from "module_2169" /* 2169 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 5832 */;
-import SafetyHubModels from "SafetyHubModels" /* 7691 */;
+import DurationsDefault from "Durations" /* 1088 */;
+import intl5 from "intl" /* 1112 */;
+import _modDef2167 from "module_2167" /* 2167 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 5834 */;
+import SafetyHubModels from "SafetyHubModels" /* 7690 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7690 */;
-import Constants from "Constants" /* 1072 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7689 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -62,8 +62,8 @@ let c10 = result;
 const result1 = size.fileFinishedImporting("modules/safety_hub/SafetyHubUtils.tsx");
 
 export function getClassificationRelativeIncidentTime(timestamp) {
-  const obj = _modDef2169();
-  return obj.to(_modDef2169(timestamp));
+  const obj = _modDef2167();
+  return obj.to(_modDef2167(timestamp));
 }
 export function getSpoilerFlagsForAttachment(filename) {
   let num;

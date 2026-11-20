@@ -1,11 +1,11 @@
-// Module ID: 15673
-// Function ID: 15674
+// Module ID: 15637
+// Function ID: 15638
 // Name: unsupported
-// Dependencies: [1072, 15674, 2]
+// Dependencies: [1071, 15638, 2]
 
-// Module 15673 (unsupported)
-import Constants from "Constants" /* 1072 */;
-import unavailableCommand from "unavailableCommand" /* 15674 */;
+// Module 15637 (unsupported)
+import Constants from "Constants" /* 1071 */;
+import unavailableCommand from "unavailableCommand" /* 15638 */;
 import size from "module_2" /* 2 */;
 
 let ACCEPT_ACTIVITY_INVITE;

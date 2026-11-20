@@ -1,17 +1,17 @@
-// Module ID: 14282
-// Function ID: 14283
+// Module ID: 14250
+// Function ID: 14251
 // Name: ForumChannelSearch
-// Dependencies: [19, 17, 4641, 8344, 21, 4792, 1503, 11817, 8442, 5390, 1113, 8503, 504, 7308, 8342, 2]
+// Dependencies: [19, 17, 4643, 8343, 21, 4794, 1501, 11759, 8441, 5392, 1112, 8502, 504, 7307, 8341, 2]
 
-// Module 14282 (ForumChannelSearch)
+// Module 14250 (ForumChannelSearch)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import Tracking from "Tracking" /* 8342 */;
-import ForumActionCreatorsDefault from "ForumActionCreators" /* 8503 */;
+import Tracking from "Tracking" /* 8341 */;
+import ForumActionCreatorsDefault from "ForumActionCreators" /* 8502 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import ForumSearchStore from "ForumSearchStore" /* 8344 */;
-import createStyles from "createStyles" /* 4792 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import ForumSearchStore from "ForumSearchStore" /* 8343 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -65,7 +65,7 @@ const memoResult1 = react.memo(function SearchInput(channelId) {
   ({ guildId: importDefault, placeholder } = channelId);
   let tmp2 = channelId;
   let tmp = closure_8();
-  let obj = channelId(11817);
+  let obj = channelId(11759);
   const canSearchForumPostsByChannelId = obj.useCanSearchForumPostsByChannelId(channelId);
   let obj2 = channelId(504);
   const items = [ForumSearchStore];
@@ -114,12 +114,12 @@ const memoResult1 = react.memo(function SearchInput(channelId) {
             },
         grow: false
       };
-      SearchBar = tmp2(7308).SearchBar;
+      SearchBar = tmp2(7307).SearchBar;
       const tmp9 = View;
       if (null == placeholder) {
-        const intl = tmp2(1113).intl;
+        const intl = tmp2(1112).intl;
         const string = intl.string;
-        const t = tmp2(1113).t;
+        const t = tmp2(1112).t;
         placeholder = string(tmp6 ? t["5h0QOP"] : t.Iy2gnS);
       }
       tmp8Result = tmp8(tmp9, obj3);

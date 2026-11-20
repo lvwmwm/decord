@@ -1,14 +1,14 @@
-// Module ID: 13523
-// Function ID: 13524
+// Module ID: 13493
+// Function ID: 13494
 // Name: create_guild/CreateGuildConstants
-// Dependencies: [1072, 1113, 4729, 1084, 2]
+// Dependencies: [1071, 1112, 4731, 1083, 2]
 // Exports: getGuildTemplatesMap
 
-// Module 13523 (create_guild/CreateGuildConstants)
-import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
-import intl77 from "intl" /* 1113 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4729 */;
-import Constants from "Constants" /* 1072 */;
+// Module 13493 (create_guild/CreateGuildConstants)
+import BigFlagUtilsAll from "BigFlagUtils" /* 1083 */;
+import intl77 from "intl" /* 1112 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4731 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 let c3;

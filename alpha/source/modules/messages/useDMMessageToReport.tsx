@@ -1,18 +1,18 @@
-// Module ID: 13395
-// Function ID: 13396
+// Module ID: 13365
+// Function ID: 13366
 // Name: useDMMessageToReport
-// Dependencies: [13396, 13397, 10278, 13245, 13398, 2]
+// Dependencies: [13366, 13367, 10218, 13215, 13368, 2]
 // Exports: useDMMessageToReport
 
-// Module 13395 (useDMMessageToReport)
-import useLongestChannelMessageBeforeReply from "useLongestChannelMessageBeforeReply" /* 13245 */;
-import useIsRelationshipTypeSpamReportable from "useIsRelationshipTypeSpamReportable" /* 13396 */;
-import getApplicationFromBotUserIdDefault from "getApplicationFromBotUserId" /* 13397 */;
-import useMessageRequestPreview from "useMessageRequestPreview" /* 13398 */;
+// Module 13365 (useDMMessageToReport)
+import useLongestChannelMessageBeforeReply from "useLongestChannelMessageBeforeReply" /* 13215 */;
+import useIsRelationshipTypeSpamReportable from "useIsRelationshipTypeSpamReportable" /* 13366 */;
+import getApplicationFromBotUserIdDefault from "getApplicationFromBotUserId" /* 13367 */;
+import useMessageRequestPreview from "useMessageRequestPreview" /* 13368 */;
 import size from "module_2" /* 2 */;
 
 let tmp4;
-const useIsOwnedConjureApplicationDefault = tmp4(10278);
+const useIsOwnedConjureApplicationDefault = tmp4(10218);
 const result = size.fileFinishedImporting("modules/messages/useDMMessageToReport.tsx");
 
 export function useDMMessageToReport(channel, id, arg2) {

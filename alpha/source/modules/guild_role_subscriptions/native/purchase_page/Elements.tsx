@@ -1,26 +1,26 @@
-// Module ID: 18235
-// Function ID: 18236
+// Module ID: 18062
+// Function ID: 18063
 // Name: Elements
-// Dependencies: [32, 19, 17, 2178, 1072, 21, 4792, 575, 5383, 1113, 6911, 1187, 18236, 9127, 16683, 563, 9375, 6737, 2]
+// Dependencies: [32, 19, 17, 2176, 1071, 21, 4794, 575, 5385, 1112, 6910, 1186, 18063, 9127, 16507, 563, 9375, 6737, 2]
 // Exports: ArrowButton, TruncatedText, useFormattedSubscriptionPlan
 
-// Module 18235 (Elements)
+// Module 18062 (Elements)
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import intl2 from "intl" /* 1113 */;
-import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import Pressables from "Pressables" /* 6911 */;
+import Constants from "Constants" /* 1071 */;
+import intl2 from "intl" /* 1112 */;
+import native from "native" /* 1186 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import Pressables from "Pressables" /* 6910 */;
 import NativePaymentHooksDefault from "NativePaymentHooks" /* 9127 */;
 import useStoreFrontPriceDefault from "useStoreFrontPrice" /* 9375 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16683 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18236 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16507 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18063 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SubscriptionPlanStore from "SubscriptionPlanStore" /* 2178 */;
+import SubscriptionPlanStore from "SubscriptionPlanStore" /* 2176 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

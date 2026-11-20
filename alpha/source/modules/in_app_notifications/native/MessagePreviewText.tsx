@@ -1,32 +1,32 @@
-// Module ID: 11061
-// Function ID: 11062
+// Module ID: 11003
+// Function ID: 11004
 // Name: MessagePreviewText
-// Dependencies: [19, 17, 4641, 11052, 1083, 21, 4792, 1360, 575, 11062, 11063, 11051, 5383, 5479, 1090, 11083, 6220, 11088, 11089, 1094, 5406, 1113, 5453, 2]
+// Dependencies: [19, 17, 4643, 10994, 1082, 21, 4794, 1358, 575, 11004, 11005, 10993, 5385, 5481, 1089, 11025, 6222, 11030, 11031, 1093, 5408, 1112, 5455, 2]
 // Exports: default
 
-// Module 11061 (MessagePreviewText)
+// Module 11003 (MessagePreviewText)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1083 */;
-import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
-import MessageEmbedTypes from "MessageEmbedTypes" /* 1094 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import isForwardMessageDefault from "isForwardMessage" /* 5406 */;
-import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 5453 */;
-import FastImageDefault from "FastImage" /* 5479 */;
-import useMessageAuthor from "useMessageAuthor" /* 6220 */;
-import InAppNotificationUtils from "InAppNotificationUtils" /* 11051 */;
-import useTruncatedGradientColorsDefault from "useTruncatedGradientColors" /* 11062 */;
-import ChannelRowPreview2 from "ChannelRowPreview" /* 11063 */;
-import usePreviewableMedia from "usePreviewableMedia" /* 11083 */;
-import usePreviewableMediaText from "usePreviewableMediaText" /* 11088 */;
-import useGetInitialMessagePreview from "useGetInitialMessagePreview" /* 11089 */;
+import Constants from "Constants" /* 1082 */;
+import utils_ColorUtils from "utils/ColorUtils" /* 1089 */;
+import MessageEmbedTypes from "MessageEmbedTypes" /* 1093 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import isForwardMessageDefault from "isForwardMessage" /* 5408 */;
+import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 5455 */;
+import FastImageDefault from "FastImage" /* 5481 */;
+import useMessageAuthor from "useMessageAuthor" /* 6222 */;
+import InAppNotificationUtils from "InAppNotificationUtils" /* 10993 */;
+import useTruncatedGradientColorsDefault from "useTruncatedGradientColors" /* 11004 */;
+import ChannelRowPreview2 from "ChannelRowPreview" /* 11005 */;
+import usePreviewableMedia from "usePreviewableMedia" /* 11025 */;
+import usePreviewableMediaText from "usePreviewableMediaText" /* 11030 */;
+import useGetInitialMessagePreview from "useGetInitialMessagePreview" /* 11031 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import InAppNotificationConstants from "InAppNotificationConstants" /* 11052 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import InAppNotificationConstants from "InAppNotificationConstants" /* 10994 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
-import PlatformUtils from "utils/PlatformUtils" /* 1360 */;
+import createStyles_mod from "createStyles" /* 4794 */;
+import PlatformUtils from "utils/PlatformUtils" /* 1358 */;
 import size_mod from "module_2" /* 2 */;
 
 let c9;
@@ -177,7 +177,7 @@ obj4 = { borderRadius: nativeDefault.radii.sm, paddingTop: nativeDefault.space.P
 const createStyles2 = createStyles.createStyles;
 obj5 = { width: 4, marginTop: -nativeDefault.space.PX_8, marginBottom: -nativeDefault.space.PX_8, alignSelf: "stretch" };
 obj6 = { flex: 1, gap: nativeDefault.space.PX_4, paddingVertical: nativeDefault.space.PX_4, paddingHorizontal: nativeDefault.space.PX_8 };
-size = { borderRadius: nativeDefault.radii.xs, overflow: "hidden", height: 60, width: "disabled" };
+size = { borderRadius: nativeDefault.radii.xs, overflow: "hidden", height: 60, width: "sa" };
 let closure_11 = createStyles2(obj3);
 size = size_mod;
 let result = size.fileFinishedImporting("modules/in_app_notifications/native/MessagePreviewText.tsx");
@@ -231,17 +231,17 @@ export default function MessagePreviewText(message) {
   } else if (isForwardMessageDefault(message)) {
     let tmp30 = previewableMedia.length > 0;
     if (tmp30) {
-      tmp30 = previewableMedia[0].type === tmp(11083).PreviewableMediaTypes.GIF;
+      tmp30 = previewableMedia[0].type === tmp(11025).PreviewableMediaTypes.GIF;
     }
     if (previewableMedia.length > 0) {
       let formatResult;
       if (null != nullableMessageAuthor) {
-        const intl4 = tmp(1113).intl;
+        const intl4 = tmp(1112).intl;
         const obj6 = { username: nullableMessageAuthor.nick };
-        formatResult = intl4.format(tmp(1113).t.sLDHDi, obj6);
+        formatResult = intl4.format(tmp(1112).t.sLDHDi, obj6);
       } else {
-        const intl3 = tmp(1113).intl;
-        formatResult = intl3.string(tmp(1113).t["9ddYKt"]);
+        const intl3 = tmp(1112).intl;
+        formatResult = intl3.string(tmp(1112).t["9ddYKt"]);
       }
       const obj7 = { text: formatResult };
       return metroImportAll(SystemMessageText, obj7);
@@ -254,7 +254,7 @@ export default function MessagePreviewText(message) {
       InAppNotificationUtils;
       if (null != channel) {
         const obj9 = { channel, message, color: "text-default", layout: ChannelListLayoutTypes.ChannelListLayoutTypes.COZY, variant: tmp25, muted: false, lineClamp: metroImportDefault };
-        const ChannelRowPreview = tmp(11063).ChannelRowPreview;
+        const ChannelRowPreview = tmp(11005).ChannelRowPreview;
         return metroImportAll(ChannelRowPreview, obj9);
       }
     }
@@ -271,7 +271,7 @@ export default function MessagePreviewText(message) {
         const tmp18 = metroImportAll;
         if (tmp18Result) {
           const obj12 = { variant: "heading-sm/medium", color: "text-link", lineClamp: metroImportDefault, children: secondaryText };
-          tmp18Result = tmp18(tmp(5383).Text, obj12);
+          tmp18Result = tmp18(tmp(5385).Text, obj12);
         }
         const obj13 = { children: items2 };
         items2[1] = tmp18Result;
@@ -282,12 +282,12 @@ export default function MessagePreviewText(message) {
       let formatResult1;
       const text2 = message.poll.question.text;
       if (null != nullableMessageAuthor) {
-        const intl2 = tmp(1113).intl;
+        const intl2 = tmp(1112).intl;
         const obj14 = { username: nullableMessageAuthor.nick };
-        formatResult1 = intl2.format(tmp(1113).t["1wtRlq"], obj14);
+        formatResult1 = intl2.format(tmp(1112).t["1wtRlq"], obj14);
       } else {
-        const intl = tmp(1113).intl;
-        formatResult1 = intl.string(tmp(1113).t.n3shVJ);
+        const intl = tmp(1112).intl;
+        formatResult1 = intl.string(tmp(1112).t.n3shVJ);
       }
       const obj15 = { children: items3 };
       const obj16 = { text: formatResult1 };

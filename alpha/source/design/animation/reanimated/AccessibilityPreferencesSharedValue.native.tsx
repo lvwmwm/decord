@@ -1,13 +1,13 @@
-// Module ID: 5004
-// Function ID: 5005
+// Module ID: 5006
+// Function ID: 5007
 // Name: reanimated/AccessibilityPreferencesSharedValue
-// Dependencies: [1655, 2]
+// Dependencies: [1653, 2]
 
-// Module 5004 (reanimated/AccessibilityPreferencesSharedValue)
-import module_1655 from "module_1655" /* 1655 */;
+// Module 5006 (reanimated/AccessibilityPreferencesSharedValue)
+import module_1653 from "module_1653" /* 1653 */;
 import size from "module_2" /* 2 */;
 
-const mutable = module_1655.makeMutable({ reduceMotion: false, prefersCrossfades: false, screenReaderEnabled: false });
+const mutable = module_1653.makeMutable({ reduceMotion: false, prefersCrossfades: false, screenReaderEnabled: false });
 const result = size.fileFinishedImporting("design/animation/reanimated/AccessibilityPreferencesSharedValue.native.tsx");
 
 export const accessibilityPreferencesSharedValue = mutable;

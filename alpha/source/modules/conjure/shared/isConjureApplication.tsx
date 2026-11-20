@@ -1,12 +1,12 @@
-// Module ID: 6511
-// Function ID: 6512
+// Module ID: 6513
+// Function ID: 6514
 // Name: isConjureApplication
-// Dependencies: [2165, 6500, 2]
+// Dependencies: [2163, 6502, 2]
 // Exports: default
 
-// Module 6511 (isConjureApplication)
-import ApplicationStore from "ApplicationStore" /* 2165 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6500 */;
+// Module 6513 (isConjureApplication)
+import ApplicationStore from "ApplicationStore" /* 2163 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6502 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/conjure/shared/isConjureApplication.tsx");

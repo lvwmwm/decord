@@ -1,16 +1,16 @@
-// Module ID: 10514
-// Function ID: 10515
+// Module ID: 10456
+// Function ID: 10457
 // Name: MediaModalYoutube
-// Dependencies: [32, 19, 2120, 1072, 21, 9907, 6296, 8100, 8104, 10515, 1380, 2]
+// Dependencies: [32, 19, 2118, 1071, 21, 9910, 6298, 8099, 8103, 10457, 1378, 2]
 
-// Module 10514 (MediaModalYoutube)
+// Module 10456 (MediaModalYoutube)
 import Fragment from "Fragment" /* 21 */;
-import MediaViewerAnalyticsManager from "MediaViewerAnalyticsManager" /* 8100 */;
-import MediaModalWebViewBase from "MediaModalWebViewBase" /* 9907 */;
+import MediaViewerAnalyticsManager from "MediaViewerAnalyticsManager" /* 8099 */;
+import MediaModalWebViewBase from "MediaModalWebViewBase" /* 9910 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import AppStateStore from "AppStateStore" /* 2120 */;
-import Constants from "Constants" /* 1072 */;
+import AppStateStore from "AppStateStore" /* 2118 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -44,12 +44,12 @@ const memoResult = react.memo(function MediaModalYoutube(visible) {
   let tmp = visible;
   let tmp2 = dependencyMap;
   ({ style, onError, onLoad, onLoadStart, onToggleOverlay } = visible);
-  [playerState, dependencyMap] = react.useState(visible(9907).PlayerState.UNREADY);
+  [playerState, dependencyMap] = react.useState(visible(9910).PlayerState.UNREADY);
   [first1, _slicedToArray] = react.useState(undefined);
   let tmp7 = playerState;
-  const tmp8 = playerState(6296)(playerState);
+  const tmp8 = playerState(6298)(playerState);
   react = tmp8;
-  const tmp9 = playerState(6296)(visible);
+  const tmp9 = playerState(6298)(visible);
   let closure_5 = tmp9;
   const ref = react.useRef(null);
   const effect = react.useEffect(() => {
@@ -158,27 +158,27 @@ const memoResult = react.memo(function MediaModalYoutube(visible) {
       ref.current = null;
     }
   }, items1);
-  let obj = visible(8104);
+  let obj = visible(8103);
   let youtubeVideoIdFromURI = obj.getYoutubeVideoIdFromURI(source.uri);
   if (youtubeVideoIdFromURI == null) {
-    const tmpResult = tmp(8104);
+    const tmpResult = tmp(8103);
     youtubeVideoIdFromURI = tmpResult.getYoutubeClipVideoIdFromURI(source.uri);
   }
   if (null == youtubeVideoIdFromURI) {
     return null;
   } else {
-    if (playerState === tmp(9907).PlayerState.ERRORED) {
+    if (playerState === tmp(9910).PlayerState.ERRORED) {
       if ("embed_not_allowed" === first1) {
-        return jsx(tmp7(10515), { videoId: youtubeVideoIdFromURI.videoId });
+        return jsx(tmp7(10457), { videoId: youtubeVideoIdFromURI.videoId });
       }
     }
-    const tmpResult2 = tmp(1380);
+    const tmpResult2 = tmp(1378);
     const isAndroidResult = tmpResult2.isAndroid();
     let tmp17 = jsx;
     let str2 = "";
     let str3 = "";
     const obj3 = { ref, style, source: obj4, baseURL, playerState, onDataReceived: callback, onToggleOverlay, javaScriptCanOpenWindowsAutomatically: true, domStorageEnabled: isAndroidResult || undefined, mixedContentMode: str19, nestedScrollEnabled: isAndroidResult || undefined, onError, onLoad, onLoadStart, overScrollMode: str20 };
-    const tmp7Result = tmp7(9907);
+    const tmp7Result = tmp7(9910);
     if (null != youtubeVideoIdFromURI.start) {
       const _HermesInternal = HermesInternal;
       str3 = "'start': " + youtubeVideoIdFromURI.start + ",";

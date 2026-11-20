@@ -1,19 +1,19 @@
-// Module ID: 11620
-// Function ID: 11621
+// Module ID: 11562
+// Function ID: 11563
 // Name: ForLaterModal
-// Dependencies: [19, 17, 21, 4792, 575, 1630, 1113, 11618, 6983, 8442, 1380, 6976, 6308, 11621, 2]
+// Dependencies: [19, 17, 21, 4794, 575, 1628, 1112, 11560, 6982, 8441, 1378, 6975, 6310, 11563, 2]
 // Exports: default
 
-// Module 11620 (ForLaterModal)
+// Module 11562 (ForLaterModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6308 */;
-import HeaderShared from "HeaderShared" /* 8442 */;
-import ForLaterScreenDefault from "ForLaterScreen" /* 11621 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6310 */;
+import HeaderShared from "HeaderShared" /* 8441 */;
+import ForLaterScreenDefault from "ForLaterScreen" /* 11563 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -48,9 +48,9 @@ export default function ForLaterModal(type) {
   const intl = require("intl").intl;
   const string = intl.string;
   if (type === require("SavedMessagesTypes").SavedMessageSortTypes.REMINDER) {
-    aUXxzT = tmp4(1113).t.aUXxzT;
+    aUXxzT = tmp4(1112).t.aUXxzT;
   } else {
-    aUXxzT = tmp4(1113).t["2pAkDA"];
+    aUXxzT = tmp4(1112).t["2pAkDA"];
   }
   const stringResult = string(aUXxzT);
   _require = stringResult;
@@ -67,7 +67,7 @@ export default function ForLaterModal(type) {
     headerLeftContainerStyle: null,
     headerRightContainerStyle: null
   };
-  const Header = tmp4(6983).Header;
+  const Header = tmp4(6982).Header;
   num = 0;
   const tmp4Result = require("PlatformUtils");
   const tmp7 = closure_5;

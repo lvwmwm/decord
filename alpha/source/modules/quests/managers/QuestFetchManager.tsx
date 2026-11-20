@@ -1,17 +1,17 @@
-// Module ID: 20143
-// Function ID: 20144
+// Module ID: 19963
+// Function ID: 19964
 // Name: QuestFetchManager
-// Dependencies: [5, 8285, 1089, 7365, 9828, 1242, 9837, 1380, 6530, 20144, 2]
+// Dependencies: [5, 8284, 1088, 7364, 9830, 1241, 9839, 1378, 6532, 19964, 2]
 
-// Module 20143 (QuestFetchManager)
-import DurationsDefault from "Durations" /* 1089 */;
-import SentryUtilsDefault from "SentryUtils" /* 1242 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
-import QuestsEligibility from "QuestsEligibility" /* 9828 */;
-import QuestActionCreators from "QuestActionCreators" /* 9837 */;
+// Module 19963 (QuestFetchManager)
+import DurationsDefault from "Durations" /* 1088 */;
+import SentryUtilsDefault from "SentryUtils" /* 1241 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
+import QuestsEligibility from "QuestsEligibility" /* 9830 */;
+import QuestActionCreators from "QuestActionCreators" /* 9839 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import QuestStore from "QuestStore" /* 8285 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7365 */;
+import QuestStore from "QuestStore" /* 8284 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7364 */;
 import size from "module_2" /* 2 */;
 
 let c0;
@@ -57,7 +57,7 @@ class QuestFetchManager extends AutomaticLifecycleManager {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -76,7 +76,7 @@ class QuestFetchManager extends AutomaticLifecycleManager {
                 obj._fetch("post_connect_recurring");
               }
               c0 = 3;
-              return { value: "HermesInternal", done: "+60" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp6) {
             c0 = 3;
@@ -159,7 +159,7 @@ class QuestFetchManager extends AutomaticLifecycleManager {
       const tmp6 = importDefault;
       const tmpResult2 = PlatformUtils;
       if (tmpResult2.isMac()) {
-        const tmp6Result = tmp6(6530);
+        const tmp6Result = tmp6(6532);
         const state = tmp6Result.getState();
       }
     }

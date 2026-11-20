@@ -1,19 +1,19 @@
-// Module ID: 15797
-// Function ID: 15798
+// Module ID: 15761
+// Function ID: 15762
 // Name: UserProfileUpsellCard
-// Dependencies: [19, 17, 7445, 8831, 21, 4792, 575, 1187, 8832, 5383, 5347, 1092, 2]
+// Dependencies: [19, 17, 7444, 8831, 21, 4794, 575, 1186, 8832, 5385, 5349, 1091, 2]
 // Exports: default
 
-// Module 15797 (UserProfileUpsellCard)
+// Module 15761 (UserProfileUpsellCard)
 import nativeDefault from "native" /* 575 */;
-import ConstantsIOS from "ConstantsIOS" /* 1092 */;
-import LinearGradientDefault from "LinearGradient" /* 5347 */;
-import Constants from "Constants" /* 7445 */;
+import ConstantsIOS from "ConstantsIOS" /* 1091 */;
+import LinearGradientDefault from "LinearGradient" /* 5349 */;
+import Constants from "Constants" /* 7444 */;
 import ColorConstants from "ColorConstants" /* 8831 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -91,7 +91,7 @@ export default function UserProfileUpsellCard(headerText) {
     renderLinearGradient: fn
   };
   items5 = [tmp.upsellButton, ctaStyle];
-  const ShinyButton = tmp3(1187).ShinyButton;
+  const ShinyButton = tmp3(1186).ShinyButton;
   fn = undefined;
   if (showLinearGradient) {
     fn = () => {

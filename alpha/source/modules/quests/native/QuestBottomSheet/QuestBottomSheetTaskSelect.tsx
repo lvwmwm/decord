@@ -1,11 +1,11 @@
-// Module ID: 16601
-// Function ID: 16602
+// Module ID: 16424
+// Function ID: 16425
 // Name: QuestBottomSheetTaskSelect
-// Dependencies: [19, 6437, 21, 7229, 6926, 9782, 1113, 6921, 2]
+// Dependencies: [19, 6439, 21, 7228, 6925, 9784, 1112, 6920, 2]
 // Exports: default
 
-// Module 16601 (QuestBottomSheetTaskSelect)
-import QuestConstants from "QuestConstants" /* 6437 */;
+// Module 16424 (QuestBottomSheetTaskSelect)
+import QuestConstants from "QuestConstants" /* 6439 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -22,11 +22,11 @@ export default function QuestBottomSheetTaskSelect(onTaskSelect) {
   let items;
   onTaskSelect = onTaskSelect.onTaskSelect;
   const obj = { hasIcons: true, children: items };
-  const TableRowGroup = onTaskSelect(7229).TableRowGroup;
+  const TableRowGroup = onTaskSelect(7228).TableRowGroup;
   const obj2 = {
     arrow: true,
-    icon: closure_3(onTaskSelect(9782).ScreenIcon, {}),
-    label: intl.string(onTaskSelect(1113).t["QXc01+"]),
+    icon: closure_3(onTaskSelect(9784).ScreenIcon, {}),
+    label: intl.string(onTaskSelect(1112).t["QXc01+"]),
     onPress() {
       let tmpResult;
       if (onTaskSelect != null) {
@@ -35,13 +35,13 @@ export default function QuestBottomSheetTaskSelect(onTaskSelect) {
       return tmpResult;
     }
   };
-  const TableRow = onTaskSelect(6926).TableRow;
-  intl = onTaskSelect(1113).intl;
+  const TableRow = onTaskSelect(6925).TableRow;
+  intl = onTaskSelect(1112).intl;
   items = [closure_3(TableRow, obj2), ];
   const obj3 = {
     arrow: true,
-    icon: closure_3(onTaskSelect(6921).GameControllerIcon, {}),
-    label: intl2.string(onTaskSelect(1113).t["8lAfuB"]),
+    icon: closure_3(onTaskSelect(6920).GameControllerIcon, {}),
+    label: intl2.string(onTaskSelect(1112).t["8lAfuB"]),
     onPress() {
       let tmpResult;
       if (onTaskSelect != null) {
@@ -50,8 +50,8 @@ export default function QuestBottomSheetTaskSelect(onTaskSelect) {
       return tmpResult;
     }
   };
-  const TableRow2 = onTaskSelect(6926).TableRow;
-  intl2 = onTaskSelect(1113).intl;
+  const TableRow2 = onTaskSelect(6925).TableRow;
+  intl2 = onTaskSelect(1112).intl;
   items[1] = closure_3(TableRow2, obj3);
   return closure_4(TableRowGroup, obj);
 };

@@ -1,17 +1,17 @@
-// Module ID: 2180
-// Function ID: 2181
+// Module ID: 2178
+// Function ID: 2179
 // Name: SubscriptionRecord
-// Dependencies: [1408, 2181, 2182, 1072, 2184, 1390, 2185, 38, 1380, 2186, 2110, 2]
+// Dependencies: [1406, 2179, 2180, 1071, 2182, 1388, 2183, 38, 1378, 2184, 2108, 2]
 
-// Module 2180 (SubscriptionRecord)
-import PremiumTypeUtils from "PremiumTypeUtils" /* 2110 */;
-import PremiumSubscription from "PremiumSubscription" /* 2185 */;
-import Record from "Record" /* 1408 */;
-import GooglePlayPriceChangeRecord from "GooglePlayPriceChangeRecord" /* 2181 */;
-import InvoiceRecord from "InvoiceRecord" /* 2182 */;
-import Constants from "Constants" /* 1072 */;
-import BillingConstants from "BillingConstants" /* 2184 */;
-import PremiumConstants from "PremiumConstants" /* 1390 */;
+// Module 2178 (SubscriptionRecord)
+import PremiumTypeUtils from "PremiumTypeUtils" /* 2108 */;
+import PremiumSubscription from "PremiumSubscription" /* 2183 */;
+import Record from "Record" /* 1406 */;
+import GooglePlayPriceChangeRecord from "GooglePlayPriceChangeRecord" /* 2179 */;
+import InvoiceRecord from "InvoiceRecord" /* 2180 */;
+import Constants from "Constants" /* 1071 */;
+import BillingConstants from "BillingConstants" /* 2182 */;
+import PremiumConstants from "PremiumConstants" /* 1388 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -51,7 +51,7 @@ class SubscriptionRecord extends Record {
       tmp10 = basePlanIdForSubscriptionItems;
       const tmp12 = require;
       if (null != renewalMutations) {
-        const tmp12Result = tmp12(2185);
+        const tmp12Result = tmp12(2183);
         const basePlanIdForSubscriptionItems1 = tmp12Result.getBasePlanIdForSubscriptionItems(renewalMutations.items, interval, intervalCount);
         planId2 = basePlanIdForSubscriptionItems1;
         tmp9 = basePlanIdForSubscriptionItems1;
@@ -83,6 +83,7 @@ class SubscriptionRecord extends Record {
     let date4;
     let date5;
     let date6;
+    let date7;
     let fromServer;
     let items;
     let items1;
@@ -151,9 +152,14 @@ class SubscriptionRecord extends Record {
     const gift_subscription = id.gift_subscription;
     tmp16 = gift_subscription;
     if (null != gift_subscription) {
-      const obj9 = { id: null, status: null, recipientUserId: null, initialGiftCode: null, initialEntitlementId: null };
-      ({ id: obj5.id, status: obj5.status, recipient_user_id: obj5.recipientUserId, initial_gift_code: obj5.initialGiftCode, initial_entitlement_id: obj5.initialEntitlementId } = gift_subscription);
+      const obj9 = { id: null, status: null, recipientUserId: null, acceptanceExpiresAt: date7, initialGiftCode: null, initialEntitlementId: null };
+      ({ id: obj5.id, status: obj5.status, recipient_user_id: obj5.recipientUserId } = gift_subscription);
+      const _Date5 = Date;
+      const self9 = this;
+      const self10 = this;
+      ({ initial_gift_code: obj5.initialGiftCode, initial_entitlement_id: obj5.initialEntitlementId } = gift_subscription);
       tmp16 = obj9;
+      date7 = new Date(gift_subscription.acceptance_expires_at);
     }
     return new tmp(obj);
   }

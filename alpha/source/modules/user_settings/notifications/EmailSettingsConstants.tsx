@@ -1,10 +1,10 @@
-// Module ID: 16959
-// Function ID: 16960
+// Module ID: 16783
+// Function ID: 16784
 // Name: EmailSettingsConstants
-// Dependencies: [1113, 2]
+// Dependencies: [1112, 2]
 
-// Module 16959 (EmailSettingsConstants)
-import intl2 from "intl" /* 1113 */;
+// Module 16783 (EmailSettingsConstants)
+import intl2 from "intl" /* 1112 */;
 import size from "module_2" /* 2 */;
 
 const obj = { COMMUNICATION: "communication", SOCIAL: "social", TIPS: "tips", RECOMMENDATIONS_AND_EVENTS: "recommendations_and_events", UPDATES_AND_ANNOUNCEMENTS: "updates_and_announcements", FAMILY_CENTER_DIGEST: "family_center_digest" };

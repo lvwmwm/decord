@@ -1,18 +1,18 @@
-// Module ID: 14980
-// Function ID: 14981
+// Module ID: 14944
+// Function ID: 14945
 // Name: ContactSyncUpsellCTA
-// Dependencies: [19, 13494, 1072, 21, 4792, 575, 7590, 1256, 13491, 7431, 1113, 14981, 2]
+// Dependencies: [19, 13464, 1071, 21, 4794, 575, 7589, 1255, 13461, 7430, 1112, 14945, 2]
 
-// Module 14980 (ContactSyncUpsellCTA)
+// Module 14944 (ContactSyncUpsellCTA)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 13491 */;
-import ContactSyncPersistedStore from "ContactSyncPersistedStore" /* 13494 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14981 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 13461 */;
+import ContactSyncPersistedStore from "ContactSyncPersistedStore" /* 13464 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14945 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 1072 */;
-import createStyles from "createStyles" /* 4792 */;
+import Constants from "Constants" /* 1071 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -29,9 +29,9 @@ const memoResult = react.memo(function ContactSyncUpsellCTA(location) {
   const style = location.style;
   let tmp = closure_7();
   let items = [tmp.container, style];
-  const FormCTA = location(7590).FormCTA;
-  let intl = location(1113).intl;
-  const intl2 = location(1113).intl;
+  const FormCTA = location(7589).FormCTA;
+  let intl = location(1112).intl;
+  const intl2 = location(1112).intl;
   return <FormCTA onPress={function handleOpen() {
     let str2;
     let str = location;
@@ -65,7 +65,7 @@ const memoResult = react.memo(function ContactSyncUpsellCTA(location) {
     intl = location(dependencyMap[10]).intl;
     items = [obj2];
     const result = showSimpleActionSheet(obj);
-  }} style={items} iconSource={AssetRegistryDefault} title={intl.string(location(1113).t.T6Rfd9)} subtitle={intl2.string(location(1113).t.c6KIpg)} />;
+  }} style={items} iconSource={AssetRegistryDefault} title={intl.string(location(1112).t.T6Rfd9)} subtitle={intl2.string(location(1112).t.c6KIpg)} />;
 });
 let result = size.fileFinishedImporting("modules/contact_sync/native/components/ContactSyncUpsellCTA.tsx");
 

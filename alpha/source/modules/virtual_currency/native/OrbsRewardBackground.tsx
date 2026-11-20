@@ -1,16 +1,16 @@
 // Module ID: 9132
 // Function ID: 9133
 // Name: OrbsRewardBackground
-// Dependencies: [32, 19, 4793, 2120, 21, 504, 1092, 5479, 9133, 9134, 9164, 2]
+// Dependencies: [32, 19, 4795, 2118, 21, 504, 1091, 5481, 9133, 9134, 9164, 2]
 // Exports: OrbsRewardBackground
 
 // Module 9132 (OrbsRewardBackground)
-import FastImageDefault from "FastImage" /* 5479 */;
+import FastImageDefault from "FastImage" /* 5481 */;
 import _modDef9133 from "module_9133" /* 9133 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4793 */;
-import AppStateStore from "AppStateStore" /* 2120 */;
+import AccessibilityStore from "AccessibilityStore" /* 4795 */;
+import AppStateStore from "AppStateStore" /* 2118 */;
 import Fragment_mod from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -53,7 +53,7 @@ export function OrbsRewardBackground(arg0) {
   const items1 = [AppStateStore];
   const obj2 = onReady(504);
   const stateFromStores1 = obj2.useStateFromStores(items1, () => state.getState());
-  const ACTIVE = onReady(1092).AppStates.ACTIVE;
+  const ACTIVE = onReady(1091).AppStates.ACTIVE;
   [tmp6, c1] = _slicedToArray(react.useState(false), 2);
   const tmp5 = _slicedToArray(react.useState(false), 2);
   [tmp8, c2] = react.useState(false);

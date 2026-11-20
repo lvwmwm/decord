@@ -1,32 +1,32 @@
-// Module ID: 20075
-// Function ID: 20076
+// Module ID: 19895
+// Function ID: 19896
 // Name: GuildRoleSubscriptionTierBenefitsModal
-// Dependencies: [32, 19, 17, 16684, 20061, 16663, 21, 4792, 575, 6926, 12910, 1113, 5479, 1414, 20076, 16688, 38, 20057, 7229, 7437, 20077, 20078, 20072, 16670, 20053, 16683, 20080, 20081, 20089, 16687, 20090, 20064, 2]
+// Dependencies: [32, 19, 17, 16508, 19881, 16487, 21, 4794, 575, 6925, 12880, 1112, 5481, 1412, 19896, 16512, 38, 19877, 7228, 7436, 19897, 19898, 19892, 16494, 19873, 16507, 19900, 19901, 19909, 16511, 19910, 19884, 2]
 // Exports: GuildRoleSubscriptionTierChannelBenefitsModal, GuildRoleSubscriptionTierIntangibleBenefitsModal
 
-// Module 20075 (GuildRoleSubscriptionTierBenefitsModal)
+// Module 19895 (GuildRoleSubscriptionTierBenefitsModal)
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 575 */;
-import intl4 from "intl" /* 1113 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import FastImageDefault from "FastImage" /* 5479 */;
-import TableRow2 from "TableRow" /* 6926 */;
-import TableRowGroup2 from "TableRowGroup" /* 7229 */;
-import CirclePlusIcon2 from "CirclePlusIcon" /* 12910 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16683 */;
-import GuildRoleSubscriptionEditStore from "GuildRoleSubscriptionEditStore" /* 16684 */;
-import useRoleSubscriptionFormatDefault from "useRoleSubscriptionFormat" /* 20053 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 20061 */;
-import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 20064 */;
-import EmojiAliasDefault from "EmojiAlias" /* 20076 */;
-import useRoleSubscriptionEmojisDefault from "useRoleSubscriptionEmojis" /* 20080 */;
-import GuildRoleSubscriptionsModalActionCreatorsAll from "GuildRoleSubscriptionsModalActionCreators" /* 20081 */;
+import intl4 from "intl" /* 1112 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
+import FastImageDefault from "FastImage" /* 5481 */;
+import TableRow2 from "TableRow" /* 6925 */;
+import TableRowGroup2 from "TableRowGroup" /* 7228 */;
+import CirclePlusIcon2 from "CirclePlusIcon" /* 12880 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16507 */;
+import GuildRoleSubscriptionEditStore from "GuildRoleSubscriptionEditStore" /* 16508 */;
+import useRoleSubscriptionFormatDefault from "useRoleSubscriptionFormat" /* 19873 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 19881 */;
+import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 19884 */;
+import EmojiAliasDefault from "EmojiAlias" /* 19896 */;
+import useRoleSubscriptionEmojisDefault from "useRoleSubscriptionEmojis" /* 19900 */;
+import GuildRoleSubscriptionsModalActionCreatorsAll from "GuildRoleSubscriptionsModalActionCreators" /* 19901 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16663 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16487 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -42,7 +42,7 @@ let obj3;
 let obj4;
 let tmp10;
 let unpackModuleId;
-const AllChannelsSwitchDefault = tmp10(20090);
+const AllChannelsSwitchDefault = tmp10(19910);
 function AddBenefitRow(disabled) {
   let CirclePlusIcon;
   let TableRow;
@@ -105,7 +105,7 @@ function ListFooterSection(onChangeTrialInterval) {
   ({ interval, trialActiveUserLimit, onChangeTrialActiveUserLimit } = onChangeTrialInterval);
   let tmp3 = dependencyMap;
   const tmp = closure_14();
-  const tmp4 = options(16688)(interval);
+  const tmp4 = options(16512)(interval);
   options = tmp4.options;
   const selectedOption = tmp4.selectedOption;
   const items = [onChangeTrialInterval, options];
@@ -119,21 +119,21 @@ function ListFooterSection(onChangeTrialInterval) {
     }
     tmp3(value);
   }, items);
-  const obj = onChangeTrialInterval(20057);
+  const obj = onChangeTrialInterval(19877);
   const roleSubscriptionSettingsDisabled = obj.useRoleSubscriptionSettingsDisabled();
   let tmp9 = !tmp6;
   if (null != selectedOption) {
     tmp9 = roleSubscriptionSettingsDisabled;
   }
   const obj2 = { style: tmp.listFooterContainer, children: closure_13(TableRowGroup, obj3) };
-  obj3 = { title: intl.string(onChangeTrialInterval(1113).t["6anton"]), hasIcons: false, helperText: intl2.string(onChangeTrialInterval(1113).t.urVijS), children: items1 };
-  TableRowGroup = tmp7(7229).TableRowGroup;
-  intl = tmp7(1113).intl;
-  intl2 = tmp7(1113).intl;
-  const obj4 = { label: intl3.string(onChangeTrialInterval(1113).t["+hTmdb"]), value: null != selectedOption, onValueChange: callback, disabled: roleSubscriptionSettingsDisabled };
-  const TableSwitchRow = tmp7(7437).TableSwitchRow;
-  intl3 = tmp7(1113).intl;
-  items1 = [closure_12(TableSwitchRow, obj4), closure_12(tmp2(20077), { interval: selectedOption, onChange: onChangeTrialInterval, trialIntervalOptions: options, disabled: tmp9 }), closure_12(tmp2(20078), { activeTrialUserlimit: trialActiveUserLimit, onChange: onChangeTrialActiveUserLimit, disabled: tmp9 })];
+  obj3 = { title: intl.string(onChangeTrialInterval(1112).t["6anton"]), hasIcons: false, helperText: intl2.string(onChangeTrialInterval(1112).t.urVijS), children: items1 };
+  TableRowGroup = tmp7(7228).TableRowGroup;
+  intl = tmp7(1112).intl;
+  intl2 = tmp7(1112).intl;
+  const obj4 = { label: intl3.string(onChangeTrialInterval(1112).t["+hTmdb"]), value: null != selectedOption, onValueChange: callback, disabled: roleSubscriptionSettingsDisabled };
+  const TableSwitchRow = tmp7(7436).TableSwitchRow;
+  intl3 = tmp7(1112).intl;
+  items1 = [closure_12(TableSwitchRow, obj4), closure_12(tmp2(19897), { interval: selectedOption, onChange: onChangeTrialInterval, trialIntervalOptions: options, disabled: tmp9 }), closure_12(tmp2(19898), { activeTrialUserlimit: trialActiveUserLimit, onChange: onChangeTrialActiveUserLimit, disabled: tmp9 })];
   return closure_12(closure_7, obj2);
 }
 function Content(arg0) {
@@ -222,7 +222,7 @@ function Content(arg0) {
   const first4 = tmp24[0];
   closure_13 = tmp27;
   const tmp26 = tmp24[1];
-  const tmp5Result = tmp5(20057);
+  const tmp5Result = tmp5(19877);
   roleSubscriptionSettingsDisabled = tmp5Result.useRoleSubscriptionSettingsDisabled();
   const tmp29 = useRoleSubscriptionEmojisDefault(guildId);
   closure_16 = tmp29;
@@ -314,7 +314,7 @@ function Content(arg0) {
       }
       return tmp3Result;
     },
-    keyExtractor: tmp5(16687).getBenefitKey,
+    keyExtractor: tmp5(16511).getBenefitKey,
     ListHeaderComponent: tmp34Result,
     renderSectionHeader(section) {
       let stringResult;
@@ -323,14 +323,14 @@ function Content(arg0) {
       const TableRowGroupTitle = TableRowGroup2.TableRowGroupTitle;
       const tmp = authStore2;
       if (addBenefit.CHANNEL === type) {
-        const intl2 = tmp2(1113).intl;
-        stringResult = intl2.string(tmp2(1113).t.LtfhAj);
+        const intl2 = tmp2(1112).intl;
+        stringResult = intl2.string(tmp2(1112).t.LtfhAj);
       } else if (addBenefit.INTANGIBLE === type) {
-        const intl = tmp2(1113).intl;
-        stringResult = intl.string(tmp2(1113).t["8oxWpO"]);
+        const intl = tmp2(1112).intl;
+        stringResult = intl.string(tmp2(1112).t["8oxWpO"]);
       } else if (addBenefit.EMOJI === type) {
-        const intl3 = tmp2(1113).intl;
-        stringResult = intl3.string(tmp2(1113).t.XBkDoA);
+        const intl3 = tmp2(1112).intl;
+        stringResult = intl3.string(tmp2(1112).t.XBkDoA);
       }
       return tmp(TableRowGroupTitle, obj);
     },

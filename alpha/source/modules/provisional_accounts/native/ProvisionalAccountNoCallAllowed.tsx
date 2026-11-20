@@ -1,17 +1,17 @@
-// Module ID: 14797
-// Function ID: 14798
+// Module ID: 14756
+// Function ID: 14757
 // Name: ProvisionalAccountNoCallAllowed
-// Dependencies: [19, 1072, 21, 4792, 5745, 7106, 1113, 2188, 5745, 2]
+// Dependencies: [19, 1071, 21, 4794, 5747, 7105, 1112, 2186, 5747, 2]
 // Exports: default
 
-// Module 14797 (ProvisionalAccountNoCallAllowed)
+// Module 14756 (ProvisionalAccountNoCallAllowed)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1072 */;
-import intl4 from "intl" /* 1113 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
-import AlertModal2 from "AlertModal" /* 5745 */;
+import Constants from "Constants" /* 1071 */;
+import intl4 from "intl" /* 1112 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2186 */;
+import AlertModal2 from "AlertModal" /* 5747 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const HelpdeskArticles = Constants.HelpdeskArticles;

@@ -1,18 +1,18 @@
-// Module ID: 18337
-// Function ID: 18338
+// Module ID: 18170
+// Function ID: 18171
 // Name: showConjureProjectServerSheet
-// Dependencies: [5, 19, 17, 21, 4792, 575, 18334, 5006, 5474, 7434, 7396, 1113, 4089, 7228, 7230, 18338, 5383, 5390, 2]
+// Dependencies: [5, 19, 17, 21, 4794, 575, 18165, 5008, 5476, 7433, 7395, 1112, 4091, 7227, 7229, 18171, 5385, 5392, 2]
 // Exports: default
 
-// Module 18337 (showConjureProjectServerSheet)
+// Module 18170 (showConjureProjectServerSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5006 */;
-import TableRadioRow from "TableRadioRow" /* 7230 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5008 */;
+import TableRadioRow from "TableRadioRow" /* 7229 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -49,7 +49,7 @@ function ConjureProjectServerSheet(projectId) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -87,7 +87,7 @@ function ConjureProjectServerSheet(projectId) {
               obj2.open(closure_1_7, obj7);
             }
             c3 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp14) {
           c3 = 3;

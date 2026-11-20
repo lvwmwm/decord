@@ -1,24 +1,24 @@
-// Module ID: 14758
-// Function ID: 14759
+// Module ID: 14717
+// Function ID: 14718
 // Name: StageBlockedUsersActionSheet
-// Dependencies: [32, 19, 17, 4734, 6415, 6379, 21, 4792, 575, 504, 1113, 1187, 10990, 5383, 5006, 10786, 6898, 5390, 5020, 7330, 2]
+// Dependencies: [32, 19, 17, 4736, 6417, 6381, 21, 4794, 575, 504, 1112, 1186, 10932, 5385, 5008, 10728, 6897, 5392, 5022, 7329, 2]
 // Exports: default
 
-// Module 14758 (StageBlockedUsersActionSheet)
+// Module 14717 (StageBlockedUsersActionSheet)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import intl7 from "intl" /* 1113 */;
-import native from "native" /* 1187 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import StageChannelsConstants from "StageChannelsConstants" /* 6379 */;
+import intl7 from "intl" /* 1112 */;
+import native from "native" /* 1186 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5008 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 6381 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4734 */;
-import StageChannelRoleStore from "StageChannelRoleStore" /* 6415 */;
+import RelationshipStore from "RelationshipStore" /* 4736 */;
+import StageChannelRoleStore from "StageChannelRoleStore" /* 6417 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -56,24 +56,24 @@ function RestrictedUser(guildId) {
   const avatarSource = user.getAvatarSource(guildId);
   const intl = intl7.intl;
   if (speaker) {
-    const intl3 = tmp2(1113).intl;
-    stringResult = intl3.string(tmp2(1113).t.LqMmG2);
+    const intl3 = tmp2(1112).intl;
+    stringResult = intl3.string(tmp2(1112).t.LqMmG2);
   } else {
     stringResult = tmp7;
     if (stateFromStores) {
-      const intl2 = tmp2(1113).intl;
-      stringResult = intl2.string(tmp2(1113).t.GMZqSi);
+      const intl2 = tmp2(1112).intl;
+      stringResult = intl2.string(tmp2(1112).t.GMZqSi);
     }
   }
   const obj3 = { style: tmp.userContainer, children: items3 };
   const obj4 = { style: tmp.avatarContainer, children: items2 };
   const obj5 = { source: avatarSource, size: native.AvatarSizes.REFRESH_MEDIUM_32, style: tmp.avatar };
-  const CutoutableAvatarImage = tmp2(1187).CutoutableAvatarImage;
+  const CutoutableAvatarImage = tmp2(1186).CutoutableAvatarImage;
   items2 = [closure_9(CutoutableAvatarImage, obj5), ];
   if (speaker) {
     const obj6 = { style: tmp.iconContainer, children: closure_9(Icon, obj7) };
-    obj7 = { style: tmp.icon, source: user(10990), color: user(575).unsafe_rawColors.WHITE };
-    Icon = tmp2(1187).Icon;
+    obj7 = { style: tmp.icon, source: user(10932), color: user(575).unsafe_rawColors.WHITE };
+    Icon = tmp2(1186).Icon;
     speaker = tmp11(tmp10, obj6);
   }
   items2[1] = speaker;
@@ -81,7 +81,7 @@ function RestrictedUser(guildId) {
   const obj8 = { style: tmp.flex, children: items4 };
   const obj9 = { variant: "body-sm/medium", color: "mobile-text-heading-primary", children: str.toString() };
   str = participant.user;
-  const Text = tmp2(5383).Text;
+  const Text = tmp2(5385).Text;
   items4 = [closure_9(Text, obj9), ];
   const user2 = participant.user;
   let tmp9Result = !user2.hasUniqueUsername();
@@ -89,16 +89,16 @@ function RestrictedUser(guildId) {
   if (tmp9Result) {
     const obj10 = { variant: "body-sm/medium", color: "text-default", children: items5 };
     items5 = ["#", participant.user.discriminator];
-    tmp9Result = tmp9(tmp2(5383).Text, obj10);
+    tmp9Result = tmp9(tmp2(5385).Text, obj10);
   }
   items4[1] = tmp9Result;
   const items6 = [closure_10(View, obj8), ];
   const obj11 = { style: tmp.flex, children: items7 };
   const obj12 = { style: stateFromStores1 ? tmp.blocked : tmp.ignored, children: stringResult1 };
-  const LegacyText = tmp2(1187).LegacyText;
-  const intl4 = tmp2(1113).intl;
+  const LegacyText = tmp2(1186).LegacyText;
+  const intl4 = tmp2(1112).intl;
   const string = intl4.string;
-  const t = tmp2(1113).t;
+  const t = tmp2(1112).t;
   if (stateFromStores1) {
     stringResult1 = string(t["4bDptI"]);
   } else {
@@ -203,9 +203,9 @@ export default function StageBlockedUsersActionSheet(channel) {
   const tmp3 = items1(react.useState(0), 2);
   dependencyMap = tmp3[1];
   const first = tmp3[0];
-  let obj = channel(10786);
+  let obj = channel(10728);
   const stageBlockedUsers = obj.useStageBlockedUsers(channel.id);
-  const obj2 = channel(10786);
+  const obj2 = channel(10728);
   const stageIgnoredUsers = obj2.useStageIgnoredUsers(channel.id);
   const length = stageBlockedUsers.length;
   const length2 = stageIgnoredUsers.length;
@@ -213,38 +213,38 @@ export default function StageBlockedUsersActionSheet(channel) {
     closure_2(nativeEvent.nativeEvent.layout.height);
   }, []);
   const obj3 = { bottom: true, style: tmp2.buttons, onLayout: callback, children: items };
-  const SafeAreaPaddingView = channel(6898).SafeAreaPaddingView;
+  const SafeAreaPaddingView = channel(6897).SafeAreaPaddingView;
   const obj4 = {
-    text: intl.string(channel(1113).t.mbD50D),
+    text: intl.string(channel(1112).t.mbD50D),
     onPress: function handleJoin() {
       onAccept(channel);
       const obj = ActionSheetActionCreatorsDefault;
       obj.hideActionSheet(closure_8);
     }
   };
-  const Button = channel(5390).Button;
-  intl = channel(1113).intl;
+  const Button = channel(5392).Button;
+  intl = channel(1112).intl;
   items = [closure_9(Button, obj4), ];
   const obj5 = {
     variant: "secondary",
-    text: intl2.string(channel(1113).t.CZGqeT),
+    text: intl2.string(channel(1112).t.CZGqeT),
     onPress: function handleDismiss() {
       const obj = onAccept(closure_2[14]);
       obj.hideActionSheet(closure_1_8);
     }
   };
-  const Button2 = channel(5390).Button;
-  intl2 = channel(1113).intl;
+  const Button2 = channel(5392).Button;
+  intl2 = channel(1112).intl;
   items[1] = closure_9(Button2, obj5);
   items1 = [];
   const tmp6 = closure_10(SafeAreaPaddingView, obj3);
   HermesBuiltin.arraySpread(items1, stageIgnoredUsers, HermesBuiltin.arraySpread(items1, stageBlockedUsers, 0));
   const obj6 = { scrollable: true, header: closure_9(StageBlockedUsersActionSheetHeader, { blockedUserCount: length, ignoredUserCount: length2 }), footer: tmp6, children: items3 };
-  const BottomSheet = channel(5020).BottomSheet;
+  const BottomSheet = channel(5022).BottomSheet;
   const obj7 = {
     inActionSheet: true,
     contentContainerStyle: tmp2.container,
-    accessibilityLabel: intl3.string(channel(1113).t["3VoRLH"]),
+    accessibilityLabel: intl3.string(channel(1112).t["3VoRLH"]),
     sections: items2,
     renderItem: function renderUser(arg0, arg1) {
       const obj = { participant: items1[arg1], guildId: channel.getGuildId(), channelId: channel.id };
@@ -254,8 +254,8 @@ export default function StageBlockedUsersActionSheet(channel) {
       return 48;
     }
   };
-  const tmp8 = onAccept(7330);
-  intl3 = channel(1113).intl;
+  const tmp8 = onAccept(7329);
+  intl3 = channel(1112).intl;
   items2 = [items1.length];
   items3 = [closure_9(tmp8, obj7), ];
   const obj8 = { style: { height: first } };

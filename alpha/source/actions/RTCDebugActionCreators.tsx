@@ -1,12 +1,12 @@
-// Module ID: 5557
-// Function ID: 5558
+// Module ID: 5559
+// Function ID: 5560
 // Name: RTCDebugActionCreators
-// Dependencies: [572, 4603, 2]
+// Dependencies: [572, 4605, 2]
 // Exports: chooseReplayPath, close, open, openReplay, setSection, setSimulcastDebugOverride
 
-// Module 5557 (RTCDebugActionCreators)
+// Module 5559 (RTCDebugActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import DiscordNativeDefault from "DiscordNative" /* 4603 */;
+import DiscordNativeDefault from "DiscordNative" /* 4605 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("actions/RTCDebugActionCreators.tsx");

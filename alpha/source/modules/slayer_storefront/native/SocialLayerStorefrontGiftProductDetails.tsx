@@ -1,18 +1,18 @@
-// Module ID: 13813
-// Function ID: 13814
+// Module ID: 13782
+// Function ID: 13783
 // Name: SocialLayerStorefrontGiftProductDetails
-// Dependencies: [19, 17, 1072, 21, 4792, 575, 6745, 9473, 1414, 8915, 5479, 5383, 2]
+// Dependencies: [19, 17, 1071, 21, 4794, 575, 6745, 9473, 1412, 8915, 5481, 5385, 2]
 // Exports: default
 
-// Module 13813 (SocialLayerStorefrontGiftProductDetails)
+// Module 13782 (SocialLayerStorefrontGiftProductDetails)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
+import Constants from "Constants" /* 1071 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
 import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 8915 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -22,7 +22,7 @@ let obj3;
 let obj4;
 let size;
 let tmp9;
-const FastImageDefault = tmp9(5479);
+const FastImageDefault = tmp9(5481);
 const View = react_native.View;
 const constants = Constants.PriceSetAssignmentPurchaseTypes;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -74,17 +74,17 @@ export default function SocialLayerStorefrontGiftProductDetails(sku) {
     }
     items2 = [tmp8Result, ];
     const obj8 = { variant: "body-sm/medium", color: "text-muted", children: getOrFetchApplication.name };
-    items2[1] = closure_6(getOrFetchApplication(5383).Text, obj8);
+    items2[1] = closure_6(getOrFetchApplication(5385).Text, obj8);
     tmp6Result = tmp6(tmp7, obj6);
   }
   items3 = [tmp6Result, ];
   const obj9 = { variant: "body-md/semibold", children: sku.name };
-  items3[1] = closure_6(getOrFetchApplication(5383).Text, obj9);
+  items3[1] = closure_6(getOrFetchApplication(5385).Text, obj9);
   items1[1] = closure_7(View, obj5);
   let tmp8Result2 = null != userPrice;
   if (tmp8Result2) {
     const obj10 = { variant: "body-md/semibold", children: userPrice };
-    tmp8Result2 = tmp8(tmp2(5383).Text, obj10);
+    tmp8Result2 = tmp8(tmp2(5385).Text, obj10);
   }
   items1[2] = tmp8Result2;
   return closure_7(View, obj4);

@@ -1,29 +1,29 @@
-// Module ID: 11861
-// Function ID: 11862
+// Module ID: 11803
+// Function ID: 11804
 // Name: GiftBoxAnimation
-// Dependencies: [19, 4793, 1390, 21, 504, 6261, 11862, 11863, 11864, 9500, 9509, 9506, 9503, 9512, 9515, 9518, 9521, 5377, 2]
+// Dependencies: [19, 4795, 1388, 21, 504, 6263, 11804, 11805, 11806, 9500, 9509, 9506, 9503, 9512, 9515, 9518, 9521, 5379, 2]
 // Exports: default
 
-// Module 11861 (GiftBoxAnimation)
+// Module 11803 (GiftBoxAnimation)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
-import PremiumConstants from "PremiumConstants" /* 1390 */;
-import LottieAnimationViewDefault from "LottieAnimationView" /* 5377 */;
+import PremiumConstants from "PremiumConstants" /* 1388 */;
+import LottieAnimationViewDefault from "LottieAnimationView" /* 5379 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4793 */;
+import AccessibilityStore from "AccessibilityStore" /* 4795 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
 let tmp;
-const merged5 = tmp(6261);
+const merged5 = tmp(6263);
 const PremiumGiftStyles = PremiumConstants.PremiumGiftStyles;
 const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/premium/native/gift_code_modal/GiftBoxAnimation.tsx");
 
 export default function GiftBoxAnimation(giftStyle) {
   let useReducedMotion;
-  const f102253 = () => require("module_9500");
+  const f100523 = () => require("module_9500");
   giftStyle = giftStyle.giftStyle;
   get_initialized;
   [][0] = AccessibilityStore;
@@ -32,9 +32,9 @@ export default function GiftBoxAnimation(giftStyle) {
   } else {
     const str = merged5;
     const match = str.match(giftStyle);
-    const withResult = match.with(PremiumGiftStyles.SNOWGLOBE, () => require("module_11862"));
-    const withResult1 = withResult.with(PremiumGiftStyles.BOX, () => require("module_11863"));
-    const withResult2 = withResult1.with(PremiumGiftStyles.CUP, () => require("module_11864"));
+    const withResult = match.with(PremiumGiftStyles.SNOWGLOBE, () => require("module_11804"));
+    const withResult1 = withResult.with(PremiumGiftStyles.BOX, () => require("module_11805"));
+    const withResult2 = withResult1.with(PremiumGiftStyles.CUP, () => require("module_11806"));
     const withResult3 = withResult2.with(PremiumGiftStyles.STANDARD_BOX, () => require("module_9500"));
     const withResult4 = withResult3.with(PremiumGiftStyles.COFFEE, () => require("module_9509"));
     const withResult5 = withResult4.with(PremiumGiftStyles.CHEST, () => require("module_9506"));
@@ -43,7 +43,7 @@ export default function GiftBoxAnimation(giftStyle) {
     const withResult8 = withResult7.with(PremiumGiftStyles.SEASONAL_CAKE, () => require("module_9515"));
     const withResult9 = withResult8.with(PremiumGiftStyles.SEASONAL_CHEST, () => require("module_9518"));
     const withResult10 = withResult9.with(PremiumGiftStyles.SEASONAL_COFFEE, () => require("module_9521"));
-    withResult10.otherwise(f102253);
-    return jsx(LottieAnimationViewDefault, { source: withResult10.otherwise(f102253), autoPlay: !tmp4, style: { width: 320, height: 212 } });
+    withResult10.otherwise(f100523);
+    return jsx(LottieAnimationViewDefault, { source: withResult10.otherwise(f100523), autoPlay: !tmp4, style: { width: 320, height: 212 } });
   }
 };

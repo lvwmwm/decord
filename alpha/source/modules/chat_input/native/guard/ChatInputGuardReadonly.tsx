@@ -1,24 +1,24 @@
-// Module ID: 13263
-// Function ID: 13264
+// Module ID: 13233
+// Function ID: 13234
 // Name: ChatInputGuardReadonly
-// Dependencies: [19, 4645, 4641, 4722, 4724, 6498, 4734, 1388, 12735, 1072, 21, 13052, 504, 1255, 1113, 5408, 5529, 1099, 11, 13243, 2]
+// Dependencies: [19, 4647, 4643, 4724, 4726, 6500, 4736, 1386, 12705, 1071, 21, 13022, 504, 1254, 1112, 5410, 5531, 1098, 11, 13213, 2]
 
-// Module 13263 (ChatInputGuardReadonly)
+// Module 13233 (ChatInputGuardReadonly)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import Fragment from "Fragment" /* 21 */;
-import router_utils from "router_utils" /* 1099 */;
-import GlobalUtils from "GlobalUtils" /* 1255 */;
-import ChannelRecord from "ChannelRecord" /* 4645 */;
-import GuildChannelStore2 from "GuildChannelStore" /* 4722 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5529 */;
-import ChatInputConstants from "ChatInputConstants" /* 12735 */;
+import router_utils from "router_utils" /* 1098 */;
+import GlobalUtils from "GlobalUtils" /* 1254 */;
+import ChannelRecord from "ChannelRecord" /* 4647 */;
+import GuildChannelStore2 from "GuildChannelStore" /* 4724 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5531 */;
+import ChatInputConstants from "ChatInputConstants" /* 12705 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import PermissionStore from "PermissionStore" /* 4724 */;
-import ReadStateStore from "ReadStateStore" /* 6498 */;
-import RelationshipStore from "RelationshipStore" /* 4734 */;
-import UserStore from "UserStore" /* 1388 */;
-import Constants from "Constants" /* 1072 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import PermissionStore from "PermissionStore" /* 4726 */;
+import ReadStateStore from "ReadStateStore" /* 6500 */;
+import RelationshipStore from "RelationshipStore" /* 4736 */;
+import UserStore from "UserStore" /* 1386 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

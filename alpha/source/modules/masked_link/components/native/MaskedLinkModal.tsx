@@ -1,18 +1,18 @@
-// Module ID: 14623
-// Function ID: 14624
+// Module ID: 14591
+// Function ID: 14592
 // Name: MaskedLinkModal
-// Dependencies: [17, 21, 4792, 575, 14620, 5745, 1113, 5745, 5808, 7590, 5383, 2]
+// Dependencies: [17, 21, 4794, 575, 14588, 5747, 1112, 5747, 5810, 7589, 5385, 2]
 // Exports: default
 
-// Module 14623 (MaskedLinkModal)
+// Module 14591 (MaskedLinkModal)
 import nativeDefault from "native" /* 575 */;
-import intl6 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import AlertModal2 from "AlertModal" /* 5745 */;
-import SharedStateUtils from "SharedStateUtils" /* 14620 */;
+import intl6 from "intl" /* 1112 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import AlertModal2 from "AlertModal" /* 5747 */;
+import SharedStateUtils from "SharedStateUtils" /* 14588 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -71,16 +71,16 @@ export default function MaskedLinkModal(isProtocol) {
   intl = intl6.intl;
   const intl2 = intl6.intl;
   if (isProtocol) {
-    formatResult = intl2.format(tmp2(1113).t.aCYv1z, {});
+    formatResult = intl2.format(tmp2(1112).t.aCYv1z, {});
   } else {
-    formatResult = intl2.string(tmp2(1113).t.soRxRe);
+    formatResult = intl2.string(tmp2(1112).t.soRxRe);
   }
-  AlertActions = tmp2(5745).AlertActions;
+  AlertActions = tmp2(5747).AlertActions;
   const obj3 = { variant: "primary", onPress: handleConfirm, text: stringResult };
-  const AlertActionButton = tmp2(5745).AlertActionButton;
-  const intl3 = tmp2(1113).intl;
+  const AlertActionButton = tmp2(5747).AlertActionButton;
+  const intl3 = tmp2(1112).intl;
   const string = intl3.string;
-  const t = tmp2(1113).t;
+  const t = tmp2(1112).t;
   if (isProtocol) {
     stringResult = string(t.COq6kk);
   } else {
@@ -89,16 +89,16 @@ export default function MaskedLinkModal(isProtocol) {
   obj4 = { children: items };
   items = [React3(AlertActionButton, obj3, "confirm"), ];
   const obj5 = { onPress: handleCancel, variant: "secondary", text: intl4.string(intl6.t["/g10LC"]) };
-  const AlertActionButton2 = tmp2(5745).AlertActionButton;
-  intl4 = tmp2(1113).intl;
+  const AlertActionButton2 = tmp2(5747).AlertActionButton;
+  intl4 = tmp2(1112).intl;
   items[1] = React3(AlertActionButton2, obj5, "cancel");
   const obj6 = { style: tmp.emphasis, children: React3(FormRow, obj10) };
-  Stack = tmp2(5808).Stack;
+  Stack = tmp2(5810).Stack;
   const obj7 = { style: tmp.linkCalloutContainer, children: hasOwnProperty(Text, obj11) };
-  FormRow = tmp2(7590).FormRow;
-  Text = tmp2(5383).Text;
+  FormRow = tmp2(7589).FormRow;
+  Text = tmp2(5385).Text;
   let str = "body-md/normal";
-  const Text2 = tmp2(5383).Text;
+  const Text2 = tmp2(5385).Text;
   const tmp10 = _false;
   const tmp9 = React2;
   if (isProtocol) {
@@ -112,7 +112,7 @@ export default function MaskedLinkModal(isProtocol) {
   items1 = [protocol, authorityPrefix];
   const items2 = [hasOwnProperty(Text2, obj8), , ];
   let str3 = "body-md/semibold";
-  const Text3 = tmp2(5383).Text;
+  const Text3 = tmp2(5385).Text;
   if (isProtocol) {
     str3 = "body-md/normal";
   }
@@ -135,11 +135,11 @@ export default function MaskedLinkModal(isProtocol) {
     },
     label: React3(Text4, { variant: "body-md/medium", children: formatResult1 })
   };
-  const FormCheckboxRow = tmp2(7590).FormCheckboxRow;
-  Text4 = tmp2(5383).Text;
-  const intl5 = tmp2(1113).intl;
+  const FormCheckboxRow = tmp2(7589).FormCheckboxRow;
+  Text4 = tmp2(5385).Text;
+  const intl5 = tmp2(1112).intl;
   const format = intl5.format;
-  const t2 = tmp2(1113).t;
+  const t2 = tmp2(1112).t;
   if (isProtocol) {
     const prop = t2["haA+Xw"];
     const obj13 = { protocol: protocol.replace(":", "") };

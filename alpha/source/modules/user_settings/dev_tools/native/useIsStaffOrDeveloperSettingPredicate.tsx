@@ -1,12 +1,12 @@
-// Module ID: 16057
-// Function ID: 16058
+// Module ID: 16021
+// Function ID: 16022
 // Name: useIsStaffOrDeveloperSettingPredicate
-// Dependencies: [8304, 504, 2]
+// Dependencies: [8303, 504, 2]
 // Exports: useStaffOrDeveloperSettingPredicate
 
-// Module 16057 (useIsStaffOrDeveloperSettingPredicate)
+// Module 16021 (useIsStaffOrDeveloperSettingPredicate)
 import get_initialized from "get initialized" /* 504 */;
-import DeveloperExperimentStore from "DeveloperExperimentStore" /* 8304 */;
+import DeveloperExperimentStore from "DeveloperExperimentStore" /* 8303 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_settings/dev_tools/native/useIsStaffOrDeveloperSettingPredicate.tsx");

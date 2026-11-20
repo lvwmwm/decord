@@ -1,16 +1,16 @@
-// Module ID: 12262
-// Function ID: 12263
+// Module ID: 12234
+// Function ID: 12235
 // Name: ChannelSelectComponentActionSheet
-// Dependencies: [19, 4641, 4663, 21, 12255, 12258, 12253, 12263, 1187, 7890, 2]
+// Dependencies: [19, 4643, 4665, 21, 12227, 12230, 12225, 12235, 1186, 7889, 2]
 // Exports: default
 
-// Module 12262 (ChannelSelectComponentActionSheet)
+// Module 12234 (ChannelSelectComponentActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import SearchableSelectActionComponentUtils from "SearchableSelectActionComponentUtils" /* 12255 */;
-import NativeSearchableSelectActionComponentUtils from "NativeSearchableSelectActionComponentUtils" /* 12263 */;
+import SearchableSelectActionComponentUtils from "SearchableSelectActionComponentUtils" /* 12227 */;
+import NativeSearchableSelectActionComponentUtils from "NativeSearchableSelectActionComponentUtils" /* 12235 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import GuildStore from "GuildStore" /* 4663 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import GuildStore from "GuildStore" /* 4665 */;
 import size from "module_2" /* 2 */;
 
 let channel;
@@ -59,7 +59,7 @@ export default function ChannelSelectComponentActionSheet(guildId) {
         let tmp8 = null != channelIconData;
         const tmp5 = require;
         if (tmp8) {
-          tmp8 = jsx(tmp5(1187).Icon, { source: channelIconData });
+          tmp8 = jsx(tmp5(1186).Icon, { source: channelIconData });
         }
         return tmp8;
       }

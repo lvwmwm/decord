@@ -1,17 +1,17 @@
 // Module ID: 8891
 // Function ID: 8892
 // Name: ProfileEffectSampleV2
-// Dependencies: [17, 8890, 21, 4792, 575, 5479, 8892, 8893, 2]
+// Dependencies: [17, 8890, 21, 4794, 575, 5481, 8892, 8893, 2]
 // Exports: default
 
 // Module 8891 (ProfileEffectSampleV2)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import FastImageDefault from "FastImage" /* 5479 */;
+import FastImageDefault from "FastImage" /* 5481 */;
 import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 8890 */;
 import _modDef8892 from "module_8892" /* 8892 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let c3;

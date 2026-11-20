@@ -1,11 +1,11 @@
-// Module ID: 8057
-// Function ID: 8058
+// Module ID: 8056
+// Function ID: 8057
 // Name: ProfileFrameLayerPreloadMobileExperiment
-// Dependencies: [1452, 2]
+// Dependencies: [1450, 2]
 // Exports: useIsProfileFrameLayerPreloadEnabled
 
-// Module 8057 (ProfileFrameLayerPreloadMobileExperiment)
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+// Module 8056 (ProfileFrameLayerPreloadMobileExperiment)
+import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2026-09-profile-frame-layer-preload-mobile", kind: "user", defaultConfig: { profileFrameLayerPreloadEnabled: false }, variations: { 0: { profileFrameLayerPreloadEnabled: false }, 1: { profileFrameLayerPreloadEnabled: true } } };

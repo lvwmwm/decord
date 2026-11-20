@@ -1,18 +1,18 @@
-// Module ID: 11914
-// Function ID: 11915
+// Module ID: 11856
+// Function ID: 11857
 // Name: loadConjureSharedProject
-// Dependencies: [5, 2165, 6500, 11908, 1072, 6814, 572, 8779, 559, 6538, 6819, 2]
+// Dependencies: [5, 2163, 6502, 11850, 1071, 6814, 572, 8779, 559, 6540, 6819, 2]
 // Exports: default
 
-// Module 11914 (loadConjureSharedProject)
-import Constants from "Constants" /* 1072 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6538 */;
+// Module 11856 (loadConjureSharedProject)
+import Constants from "Constants" /* 1071 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6540 */;
 import ConjureActionCreators from "ConjureActionCreators" /* 6814 */;
 import conjureProjectLink from "conjureProjectLink" /* 8779 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 2165 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6500 */;
-import ConjureSharedProjectStore from "ConjureSharedProjectStore" /* 11908 */;
+import ApplicationStore from "ApplicationStore" /* 2163 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6502 */;
+import ConjureSharedProjectStore from "ConjureSharedProjectStore" /* 11850 */;
 import Dispatcher from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
@@ -49,7 +49,7 @@ let obj = function _load() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c5;
@@ -144,7 +144,7 @@ let obj = function _load() {
               }
             }
             c7 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
           let hasItem;
           if (closure_132_8 != null) {
@@ -194,7 +194,7 @@ obj = function _resolveStatus() {
         obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c7;

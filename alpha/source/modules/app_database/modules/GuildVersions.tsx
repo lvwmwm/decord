@@ -1,15 +1,15 @@
-// Module ID: 8236
-// Function ID: 8237
+// Module ID: 8235
+// Function ID: 8236
 // Name: GuildVersions
-// Dependencies: [32, 5, 4663, 3, 4670, 1255, 2]
+// Dependencies: [32, 5, 4665, 3, 4672, 1254, 2]
 
-// Module 8236 (GuildVersions)
+// Module 8235 (GuildVersions)
 import LoggerDefault from "Logger" /* 3 */;
-import GlobalUtils from "GlobalUtils" /* 1255 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 4670 */;
+import GlobalUtils from "GlobalUtils" /* 1254 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 4672 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildStore from "GuildStore" /* 4663 */;
+import GuildStore from "GuildStore" /* 4665 */;
 import size from "module_2" /* 2 */;
 
 let c5, c6, closure_3;
@@ -78,7 +78,7 @@ class GuildVersions {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c4;

@@ -1,22 +1,22 @@
-// Module ID: 14109
-// Function ID: 14110
+// Module ID: 14078
+// Function ID: 14079
 // Name: UserProfileCustomStatusActionSheet
-// Dependencies: [19, 17, 1388, 7445, 21, 4792, 575, 504, 14110, 5822, 1113, 13410, 8094, 8931, 2]
+// Dependencies: [19, 17, 1386, 7444, 21, 4794, 575, 504, 14079, 5824, 1112, 13380, 8093, 8931, 2]
 // Exports: default
 
-// Module 14109 (UserProfileCustomStatusActionSheet)
+// Module 14078 (UserProfileCustomStatusActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5822 */;
-import HeaderAvatarDefault from "HeaderAvatar" /* 8094 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5824 */;
+import HeaderAvatarDefault from "HeaderAvatar" /* 8093 */;
 import UserProfileCustomStatusBubbleDefault from "UserProfileCustomStatusBubble" /* 8931 */;
-import UserProfileStackedActionSheetDefault from "UserProfileStackedActionSheet" /* 13410 */;
-import useCustomStatusActivityForUserDefault from "useCustomStatusActivityForUser" /* 14110 */;
+import UserProfileStackedActionSheetDefault from "UserProfileStackedActionSheet" /* 13380 */;
+import useCustomStatusActivityForUserDefault from "useCustomStatusActivityForUser" /* 14079 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1388 */;
-import Constants from "Constants" /* 7445 */;
+import UserStore from "UserStore" /* 1386 */;
+import Constants from "Constants" /* 7444 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let AVATAR_CONTAINER_SIZE;
@@ -64,12 +64,12 @@ export default function UserProfileCustomStatusActionSheet(user) {
   const tmp6 = useCustomStatusActivityForUserDefault(user.id);
   const obj2 = NicknameUtilsDefault;
   const name = obj2.useName(guildId, channelId, user);
-  const intl = user(1113).intl;
+  const intl = user(1112).intl;
   if (stateFromStores) {
-    stringResult = intl.string(tmp2(1113).t.AHoLf4);
+    stringResult = intl.string(tmp2(1112).t.AHoLf4);
   } else {
     const obj3 = { username: name };
-    stringResult = intl.formatToPlainString(tmp2(1113).t["pP5Aa+"], obj3);
+    stringResult = intl.formatToPlainString(tmp2(1112).t["pP5Aa+"], obj3);
   }
   const obj4 = { title: stringResult, children: closure_6(View, obj5) };
   obj5 = { style: tmp.statusPreviewContainer, children: items2 };

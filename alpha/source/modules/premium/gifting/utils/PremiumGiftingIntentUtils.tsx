@@ -1,12 +1,12 @@
-// Module ID: 12241
-// Function ID: 12242
+// Module ID: 12213
+// Function ID: 12214
 // Name: PremiumGiftingIntentUtils
-// Dependencies: [1390, 1072, 2]
+// Dependencies: [1388, 1071, 2]
 // Exports: getGiftIntentTypeForLocation, getPremiumGiftingIntentAnalyticsLocation, parseGiftIntentType
 
-// Module 12241 (PremiumGiftingIntentUtils)
-import Constants from "Constants" /* 1072 */;
-import PremiumConstants from "PremiumConstants" /* 1390 */;
+// Module 12213 (PremiumGiftingIntentUtils)
+import Constants from "Constants" /* 1071 */;
+import PremiumConstants from "PremiumConstants" /* 1388 */;
 import size from "module_2" /* 2 */;
 
 const GiftIntentType = PremiumConstants.GiftIntentType;

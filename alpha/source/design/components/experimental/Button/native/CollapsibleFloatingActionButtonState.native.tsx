@@ -1,11 +1,11 @@
-// Module ID: 7489
-// Function ID: 7490
+// Module ID: 7488
+// Function ID: 7489
 // Name: CollapsibleFloatingActionButtonState
-// Dependencies: [19, 1655, 2]
+// Dependencies: [19, 1653, 2]
 // Exports: useCollapsibleFloatingActionButtonScroll, useCollapsibleFloatingActionButtonState
 
-// Module 7489 (CollapsibleFloatingActionButtonState)
-import _mod1655 from "module_1655" /* 1655 */;
+// Module 7488 (CollapsibleFloatingActionButtonState)
+import _mod1653 from "module_1653" /* 1653 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -17,7 +17,7 @@ let result = size.fileFinishedImporting("design/components/experimental/Button/n
 export function useCollapsibleFloatingActionButtonState() {
   let obj2;
   const obj = { collapseText: obj2.useSharedValue(0) };
-  obj2 = _mod1655;
+  obj2 = _mod1653;
   return obj;
 }
 export function useCollapsibleFloatingActionButtonScroll(collapsibleFloatingActionButtonState, UNDETERMINED) {
@@ -32,7 +32,7 @@ export function useCollapsibleFloatingActionButtonScroll(collapsibleFloatingActi
   if (UNDETERMINED === undefined) {
     num = 0;
   }
-  let obj = _mod1655;
+  let obj = _mod1653;
   const sharedValue = obj.useSharedValue(num);
   const items = [closure_3, num, sharedValue, 10, collapseText, 10];
   let c0;

@@ -1,19 +1,19 @@
-// Module ID: 8152
-// Function ID: 8153
+// Module ID: 8151
+// Function ID: 8152
 // Name: SaveableChannelsStore
-// Dependencies: [4641, 5413, 1071, 4695, 8153, 8154, 8155, 8157, 8158, 8159, 8160, 2]
+// Dependencies: [4643, 5415, 1070, 4697, 8152, 8153, 8154, 8156, 8157, 8158, 8159, 2]
 
-// Module 8152 (SaveableChannelsStore)
-import ExtendedMemoryLru from "ExtendedMemoryLru" /* 8154 */;
-import Lru from "Lru" /* 8155 */;
-import isPrivateChannel from "isPrivateChannel" /* 8157 */;
-import isReadableChannel from "isReadableChannel" /* 8158 */;
-import withFallbacks from "withFallbacks" /* 8160 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5413 */;
-import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1071 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4695 */;
-import FileSystemStore from "FileSystemStore" /* 8153 */;
+// Module 8151 (SaveableChannelsStore)
+import ExtendedMemoryLru from "ExtendedMemoryLru" /* 8153 */;
+import Lru from "Lru" /* 8154 */;
+import isPrivateChannel from "isPrivateChannel" /* 8156 */;
+import isReadableChannel from "isReadableChannel" /* 8157 */;
+import withFallbacks from "withFallbacks" /* 8159 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5415 */;
+import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1070 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4697 */;
+import FileSystemStore from "FileSystemStore" /* 8152 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -229,7 +229,7 @@ class SaveableChannelsStore extends MobileCacheSnapshotStore {
         const obj = { guildId: guild_id, channelId: id, channelType: basicChannel.type };
         lastChannel = obj;
         extendedMemoryLru.put(id, obj);
-        const tmp9Result = tmp9(8159);
+        const tmp9Result = tmp9(8158);
         if (tmp9Result.isLimitedChannel(basicChannel)) {
           const putResult1 = lru.put(id, null);
           if (null != putResult1) {

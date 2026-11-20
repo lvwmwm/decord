@@ -1,11 +1,11 @@
-// Module ID: 15771
-// Function ID: 15772
+// Module ID: 15735
+// Function ID: 15736
 // Name: useTryItOutUpsellScrollTracking
-// Dependencies: [19, 1655, 2]
+// Dependencies: [19, 1653, 2]
 // Exports: default
 
-// Module 15771 (useTryItOutUpsellScrollTracking)
-import _mod1655 from "module_1655" /* 1655 */;
+// Module 15735 (useTryItOutUpsellScrollTracking)
+import _mod1653 from "module_1653" /* 1653 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -14,7 +14,7 @@ let result = size.fileFinishedImporting("modules/user_profile/native/useTryItOut
 export default function useTryItOutUpsellScrollTracking(arg0, arg1) {
   let closure_0 = arg0;
   let closure_1 = arg1;
-  let obj = _mod1655;
+  let obj = _mod1653;
   const sharedValue = obj.useSharedValue(true);
   let closure_3 = react.useRef({ contentHeight: 0, viewportHeight: 0, tryItOutSectionHeight: 0 });
   const items = [arg0, sharedValue, arg1];

@@ -1,36 +1,36 @@
-// Module ID: 7369
-// Function ID: 7370
+// Module ID: 7368
+// Function ID: 7369
 // Name: GuildOnboardingPrompts
-// Dependencies: [32, 5, 19, 17, 4793, 7190, 4641, 4663, 4695, 7352, 6701, 7349, 1072, 21, 1099, 4792, 5346, 575, 1493, 4789, 5479, 5347, 1092, 504, 1630, 1502, 1655, 7355, 6567, 1414, 2024, 1256, 5529, 5002, 6976, 6898, 7370, 1255, 5377, 5383, 1113, 2]
+// Dependencies: [32, 5, 19, 17, 4795, 7189, 4643, 4665, 4697, 7351, 6703, 7348, 1071, 21, 1098, 4794, 5348, 575, 1491, 4791, 5481, 5349, 1091, 504, 1628, 1500, 1653, 7354, 6569, 1412, 2022, 1255, 5531, 5004, 6975, 6897, 7369, 1254, 5379, 5385, 1112, 2]
 // Exports: default
 
-// Module 7369 (GuildOnboardingPrompts)
+// Module 7368 (GuildOnboardingPrompts)
 import nativeDefault from "native" /* 575 */;
-import ConstantsIOS from "ConstantsIOS" /* 1092 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import ColorUtils from "ColorUtils" /* 4789 */;
-import NavigatorConstants from "NavigatorConstants" /* 5346 */;
-import LinearGradientDefault from "LinearGradient" /* 5347 */;
-import FastImageDefault from "FastImage" /* 5479 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5529 */;
-import GuildOnboardingUtils from "GuildOnboardingUtils" /* 6567 */;
-import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 6701 */;
-import NavigatorHeader from "NavigatorHeader" /* 6976 */;
-import GuildOnboardingConstants from "GuildOnboardingConstants" /* 7349 */;
-import GuildOnboardingActionCreatorsDefault from "GuildOnboardingActionCreators" /* 7355 */;
+import ConstantsIOS from "ConstantsIOS" /* 1091 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import ColorUtils from "ColorUtils" /* 4791 */;
+import NavigatorConstants from "NavigatorConstants" /* 5348 */;
+import LinearGradientDefault from "LinearGradient" /* 5349 */;
+import FastImageDefault from "FastImage" /* 5481 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5531 */;
+import GuildOnboardingUtils from "GuildOnboardingUtils" /* 6569 */;
+import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 6703 */;
+import NavigatorHeader from "NavigatorHeader" /* 6975 */;
+import GuildOnboardingConstants from "GuildOnboardingConstants" /* 7348 */;
+import GuildOnboardingActionCreatorsDefault from "GuildOnboardingActionCreators" /* 7354 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4793 */;
-import MemberVerificationFormStore from "MemberVerificationFormStore" /* 7190 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import GuildStore from "GuildStore" /* 4663 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4695 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7352 */;
-import Constants from "Constants" /* 1072 */;
+import AccessibilityStore from "AccessibilityStore" /* 4795 */;
+import MemberVerificationFormStore from "MemberVerificationFormStore" /* 7189 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import GuildStore from "GuildStore" /* 4665 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4697 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7351 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -63,7 +63,7 @@ let obj = function _getBackgroundGradientColor() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -693,7 +693,7 @@ export default function GuildOnboardingPrompt(guildId) {
             const tmp8 = guildId;
             if (currentPromptIdx < prompts.length - 1) {
               const obj3 = { step: currentPromptIdx + 1, required: prompts[currentPromptIdx + 1].required };
-              const track2 = tmp3(1256).track;
+              const track2 = tmp3(1255).track;
               const GUILD_ONBOARDING_STEP_VIEWED = tmp6.GUILD_ONBOARDING_STEP_VIEWED;
               AnalyticsUtilsDefault;
               const tmp7Result = AppAnalyticsUtils;

@@ -1,13 +1,13 @@
-// Module ID: 6430
-// Function ID: 6431
+// Module ID: 6432
+// Function ID: 6433
 // Name: GuildAvailabilityStore
-// Dependencies: [4663, 3, 504, 572, 2]
+// Dependencies: [4665, 3, 504, 572, 2]
 
-// Module 6430 (GuildAvailabilityStore)
+// Module 6432 (GuildAvailabilityStore)
 import LoggerDefault from "Logger" /* 3 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import GuildStore from "GuildStore" /* 4663 */;
+import GuildStore from "GuildStore" /* 4665 */;
 import size from "module_2" /* 2 */;
 
 function handleConnectionOpen(unavailableGuilds) {

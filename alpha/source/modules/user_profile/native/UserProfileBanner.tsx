@@ -1,17 +1,17 @@
-// Module ID: 8083
-// Function ID: 8084
+// Module ID: 8082
+// Function ID: 8083
 // Name: UserProfileBanner
-// Dependencies: [32, 19, 17, 1072, 21, 4792, 4617, 8084, 1414, 8091, 6911, 1113, 8092, 2]
+// Dependencies: [32, 19, 17, 1071, 21, 4794, 4619, 8083, 1412, 8090, 6910, 1112, 8091, 2]
 // Exports: default
 
-// Module 8083 (UserProfileBanner)
+// Module 8082 (UserProfileBanner)
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1072 */;
-import BannerDefault from "Banner" /* 8091 */;
+import Constants from "Constants" /* 1071 */;
+import BannerDefault from "Banner" /* 8090 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

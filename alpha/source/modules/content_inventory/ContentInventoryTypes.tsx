@@ -1,11 +1,11 @@
 // Module ID: 8876
 // Function ID: 8877
 // Name: ContentInventoryTypes
-// Dependencies: [7893, 8877, 2]
+// Dependencies: [7892, 8877, 2]
 // Exports: isApplicationEntry, isConsoleEntry, isGamingLikeEntry, isLaunchedActivityEntry, isListenedSessionEntry, isListeningLikeEntry, isPlayedGameEntry, isPlaystationEntry, isRecentActivityEntry, isTopArtistEntry, isTopGameEntry, isWatchedMediaEntry, isXboxEntry
 
 // Module 8876 (ContentInventoryTypes)
-import ContentInventoryEntryType from "ContentInventoryEntryType" /* 7893 */;
+import ContentInventoryEntryType from "ContentInventoryEntryType" /* 7892 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/content_inventory/ContentInventoryTypes.tsx");
@@ -101,7 +101,7 @@ export function isXboxEntry(content_type) {
     if (content_type != null) {
       content_type1 = content_type.content_type;
     }
-    tmp4 = content_type1 === tmp2(7893).ContentInventoryEntryType.TOP_GAME;
+    tmp4 = content_type1 === tmp2(7892).ContentInventoryEntryType.TOP_GAME;
   }
   const tmp6 = tmp4 && content_type.extra.platform === tmp2(8877).PlatformType.XBOX;
   return tmp6;
@@ -117,7 +117,7 @@ export function isPlaystationEntry(content_type) {
     if (content_type != null) {
       content_type1 = content_type.content_type;
     }
-    tmp4 = content_type1 === tmp2(7893).ContentInventoryEntryType.TOP_GAME;
+    tmp4 = content_type1 === tmp2(7892).ContentInventoryEntryType.TOP_GAME;
   }
   const tmp6 = tmp4 && content_type.extra.platform === tmp2(8877).PlatformType.PLAYSTATION;
   return tmp6;
@@ -133,7 +133,7 @@ export function isConsoleEntry(content_type) {
     if (content_type != null) {
       content_type1 = content_type.content_type;
     }
-    tmp4 = content_type1 === tmp2(7893).ContentInventoryEntryType.TOP_GAME;
+    tmp4 = content_type1 === tmp2(7892).ContentInventoryEntryType.TOP_GAME;
   }
   let tmp6 = tmp4 && content_type.extra.platform === tmp2(8877).PlatformType.XBOX;
   if (!tmp6) {
@@ -141,13 +141,13 @@ export function isConsoleEntry(content_type) {
     if (content_type != null) {
       content_type2 = content_type.content_type;
     }
-    let tmp8 = content_type2 === tmp2(7893).ContentInventoryEntryType.PLAYED_GAME;
+    let tmp8 = content_type2 === tmp2(7892).ContentInventoryEntryType.PLAYED_GAME;
     if (!tmp8) {
       let content_type3;
       if (content_type != null) {
         content_type3 = content_type.content_type;
       }
-      tmp8 = content_type3 === tmp2(7893).ContentInventoryEntryType.TOP_GAME;
+      tmp8 = content_type3 === tmp2(7892).ContentInventoryEntryType.TOP_GAME;
     }
     tmp6 = tmp8 && content_type.extra.platform === tmp2(8877).PlatformType.PLAYSTATION;
     const tmp10 = tmp8 && content_type.extra.platform === tmp2(8877).PlatformType.PLAYSTATION;
@@ -172,21 +172,21 @@ export function isRecentActivityEntry(content_type) {
     if (content_type != null) {
       content_type1 = content_type.content_type;
     }
-    tmp4 = content_type1 === tmp2(7893).ContentInventoryEntryType.TOP_GAME;
+    tmp4 = content_type1 === tmp2(7892).ContentInventoryEntryType.TOP_GAME;
   }
   if (!tmp4) {
     let content_type2;
     if (content_type != null) {
       content_type2 = content_type.content_type;
     }
-    tmp4 = content_type2 === tmp2(7893).ContentInventoryEntryType.LISTENED_SESSION;
+    tmp4 = content_type2 === tmp2(7892).ContentInventoryEntryType.LISTENED_SESSION;
   }
   if (!tmp4) {
     let content_type3;
     if (content_type != null) {
       content_type3 = content_type.content_type;
     }
-    tmp4 = content_type3 === tmp2(7893).ContentInventoryEntryType.WATCHED_MEDIA;
+    tmp4 = content_type3 === tmp2(7892).ContentInventoryEntryType.WATCHED_MEDIA;
   }
   if (!tmp4) {
     let extra;

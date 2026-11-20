@@ -1,11 +1,11 @@
 // Module ID: 9405
 // Function ID: 9406
 // Name: parallax
-// Dependencies: [1655]
+// Dependencies: [1653]
 // Exports: parallaxLayout
 
 // Module 9405 (parallax)
-import _mod1655 from "module_1655" /* 1655 */;
+import _mod1653 from "module_1653" /* 1653 */;
 
 let closure_2 = { code: "(function pnpm_parallaxTs1(value){let[interpolate,size,parallaxScrollingOffset,Extrapolation,parallaxAdjacentItemScale,parallaxScrollingScale,vertical]=this.__closure;const translate=interpolate(value,[-1,0,1],[-size+parallaxScrollingOffset,0,size-parallaxScrollingOffset]);const zIndex=Math.round(interpolate(value,[-1,0,1],[0,size,0],Extrapolation.CLAMP));const scale=interpolate(value,[-1,0,1],[parallaxAdjacentItemScale,parallaxScrollingScale,parallaxAdjacentItemScale],Extrapolation.CLAMP);return{transform:[vertical?{translateY:translate}:{translateX:translate},{scale:scale}],zIndex:zIndex};})" };
 
@@ -39,7 +39,7 @@ export function parallaxLayout(arg0) {
     let tmp = num2;
     parallaxAdjacentItemScale = num2 ** 2;
   }
-  let items = [closure_2, _mod1655.interpolate, size, num, _mod1655.Extrapolation, parallaxAdjacentItemScale, num2, vertical];
+  let items = [closure_2, _mod1653.interpolate, size, num, _mod1653.Extrapolation, parallaxAdjacentItemScale, num2, vertical];
   let c0;
   let c1;
   let c2;

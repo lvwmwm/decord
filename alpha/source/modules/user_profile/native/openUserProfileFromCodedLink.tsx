@@ -1,13 +1,13 @@
-// Module ID: 12160
-// Function ID: 12161
+// Module ID: 12102
+// Function ID: 12103
 // Name: openUserProfileFromCodedLink
-// Dependencies: [1388, 12161, 7948, 2]
+// Dependencies: [1386, 12103, 7947, 2]
 // Exports: default
 
-// Module 12160 (openUserProfileFromCodedLink)
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7948 */;
-import UserProfileEmbedRenderingMobileExperiment from "UserProfileEmbedRenderingMobileExperiment" /* 12161 */;
-import UserStore from "UserStore" /* 1388 */;
+// Module 12102 (openUserProfileFromCodedLink)
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7947 */;
+import UserProfileEmbedRenderingMobileExperiment from "UserProfileEmbedRenderingMobileExperiment" /* 12103 */;
+import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_profile/native/openUserProfileFromCodedLink.tsx");

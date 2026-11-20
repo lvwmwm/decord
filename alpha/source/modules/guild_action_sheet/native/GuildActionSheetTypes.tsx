@@ -1,9 +1,9 @@
-// Module ID: 15112
-// Function ID: 15113
+// Module ID: 15076
+// Function ID: 15077
 // Name: GuildActionSheetTypes
 // Dependencies: [2]
 
-// Module 15112 (GuildActionSheetTypes)
+// Module 15076 (GuildActionSheetTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_action_sheet/native/GuildActionSheetTypes.tsx");

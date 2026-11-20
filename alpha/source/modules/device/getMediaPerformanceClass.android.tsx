@@ -1,11 +1,11 @@
-// Module ID: 5662
-// Function ID: 5663
+// Module ID: 5664
+// Function ID: 5665
 // Name: getMediaPerformanceClass
-// Dependencies: [4749, 2]
+// Dependencies: [4751, 2]
 // Exports: default
 
-// Module 5662 (getMediaPerformanceClass)
-import DeviceUtils from "DeviceUtils" /* 4749 */;
+// Module 5664 (getMediaPerformanceClass)
+import DeviceUtils from "DeviceUtils" /* 4751 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/device/getMediaPerformanceClass.android.tsx");

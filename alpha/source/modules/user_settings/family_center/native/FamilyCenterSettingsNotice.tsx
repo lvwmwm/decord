@@ -1,16 +1,16 @@
-// Module ID: 16028
-// Function ID: 16029
+// Module ID: 15992
+// Function ID: 15993
 // Name: FamilyCenterSettingsNotice
-// Dependencies: [19, 6383, 21, 9016, 15896, 2723, 9020, 7997, 5473, 1113, 2]
+// Dependencies: [19, 6385, 21, 9016, 15860, 2725, 9020, 7996, 5475, 1112, 2]
 // Exports: default
 
-// Module 16028 (FamilyCenterSettingsNotice)
+// Module 15992 (FamilyCenterSettingsNotice)
 import Fragment from "Fragment" /* 21 */;
-import _modDef2723 from "module_2723" /* 2723 */;
-import Constants from "Constants" /* 6383 */;
-import LayerActionCreators from "LayerActionCreators" /* 7997 */;
+import _modDef2725 from "module_2725" /* 2725 */;
+import Constants from "Constants" /* 6385 */;
+import LayerActionCreators from "LayerActionCreators" /* 7996 */;
 import openLinkedUsersChannelDefault from "openLinkedUsersChannel" /* 9020 */;
-import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 15896 */;
+import SafetySettingsNoticeDefault from "SafetySettingsNotice" /* 15860 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ export default function FamilyCenterSettingsParentalControlsNotice() {
   let obj = activeLinkUserIds(9016);
   activeLinkUserIds = obj.useActiveLinkUserIds();
   let tmp = SafetySettingsNoticeDefault;
-  return <tmp label={_modDef2723.i284fU} noticeType={SafetySettingsNoticeType.CONTENT_AND_SOCIAL_PARENTAL_CONTROLS_NOTICE} labelHook={function handleMessageParentClick() {
+  return <tmp label={_modDef2725.i284fU} noticeType={SafetySettingsNoticeType.CONTENT_AND_SOCIAL_PARENTAL_CONTROLS_NOTICE} labelHook={function handleMessageParentClick() {
     let length;
     const tmp = openLinkedUsersChannelDefault;
     tmp(activeLinkUserIds, LayerActionCreators.popLayer, () => {
@@ -31,7 +31,7 @@ export default function FamilyCenterSettingsParentalControlsNotice() {
       activeLinkUserIds(dependencyMap[8]);
       const intl = activeLinkUserIds(dependencyMap[9]).intl;
       const obj = { count: length.length };
-      return presentFailedToast(intl.formatToPlainString(_modDef2723.D1BwNC, obj));
+      return presentFailedToast(intl.formatToPlainString(_modDef2725.D1BwNC, obj));
     });
   }} count={activeLinkUserIds.length} />;
 };

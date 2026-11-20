@@ -1,19 +1,19 @@
-// Module ID: 6410
-// Function ID: 6411
+// Module ID: 6412
+// Function ID: 6413
 // Name: GuildVerificationStore
-// Dependencies: [4659, 4704, 4698, 4663, 1388, 1072, 4710, 1406, 572, 11, 504, 2]
+// Dependencies: [4661, 4706, 4700, 4665, 1386, 1071, 4712, 1404, 572, 11, 504, 2]
 
-// Module 6410 (GuildVerificationStore)
+// Module 6412 (GuildVerificationStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import GuildRecord from "GuildRecord" /* 4659 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 4710 */;
-import GuildMemberStore from "GuildMemberStore" /* 4704 */;
-import GuildRoleStore from "GuildRoleStore" /* 4698 */;
-import GuildStore from "GuildStore" /* 4663 */;
-import UserStore from "UserStore" /* 1388 */;
-import Constants from "Constants" /* 1072 */;
+import GuildRecord from "GuildRecord" /* 4661 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4712 */;
+import GuildMemberStore from "GuildMemberStore" /* 4706 */;
+import GuildRoleStore from "GuildRoleStore" /* 4700 */;
+import GuildStore from "GuildStore" /* 4665 */;
+import UserStore from "UserStore" /* 1386 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,12 +1,12 @@
 // Module ID: 9316
 // Function ID: 9317
 // Name: OrbLottieAnimation
-// Dependencies: [19, 21, 5001, 4799, 9317, 9320, 2]
+// Dependencies: [19, 21, 5003, 4801, 9317, 9320, 2]
 
 // Module 9316 (OrbLottieAnimation)
 import Fragment from "Fragment" /* 21 */;
-import shared from "shared" /* 4799 */;
-import useTheme from "useTheme" /* 5001 */;
+import shared from "shared" /* 4801 */;
+import useTheme from "useTheme" /* 5003 */;
 import "react";
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;

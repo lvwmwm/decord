@@ -1,13 +1,13 @@
-// Module ID: 13841
-// Function ID: 13842
+// Module ID: 13810
+// Function ID: 13811
 // Name: BadgeUnreadStateExperiment
-// Dependencies: [32, 19, 1452, 504, 2]
+// Dependencies: [32, 19, 1450, 504, 2]
 // Exports: useIsBadgeUnreadStateEnabled
 
-// Module 13841 (BadgeUnreadStateExperiment)
+// Module 13810 (BadgeUnreadStateExperiment)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2026-10-badges-unread-state", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };

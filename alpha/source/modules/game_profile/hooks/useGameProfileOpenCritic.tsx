@@ -1,11 +1,11 @@
 // Module ID: 9710
 // Function ID: 9711
 // Name: useGameProfileOpenCritic
-// Dependencies: [9711, 1113, 9712, 9713, 9714, 9715, 2]
+// Dependencies: [9711, 1112, 9712, 9713, 9714, 9715, 2]
 // Exports: getOpenCriticCircleRatingColor, getOpenCriticTierImage, getOpenCriticTierText
 
 // Module 9710 (useGameProfileOpenCritic)
-import intl5 from "intl" /* 1113 */;
+import intl5 from "intl" /* 1112 */;
 import OpenCriticTier from "OpenCriticTier" /* 9711 */;
 import _modDef9712 from "module_9712" /* 9712 */;
 import _modDef9713 from "module_9713" /* 9713 */;
@@ -17,16 +17,16 @@ const result = size.fileFinishedImporting("modules/game_profile/hooks/useGamePro
 
 export function getOpenCriticTierText(tier) {
   if (OpenCriticTier.OpenCriticTier.MIGHTY === tier) {
-    const intl4 = tmp(1113).intl;
+    const intl4 = tmp(1112).intl;
     return intl4.string(intl5.t.aZej2g);
   } else if (OpenCriticTier.OpenCriticTier.STRONG === tier) {
-    const intl3 = tmp(1113).intl;
+    const intl3 = tmp(1112).intl;
     return intl3.string(intl5.t.MLxnSg);
   } else if (OpenCriticTier.OpenCriticTier.FAIR === tier) {
-    const intl2 = tmp(1113).intl;
+    const intl2 = tmp(1112).intl;
     return intl2.string(intl5.t["3f19KA"]);
   } else if (OpenCriticTier.OpenCriticTier.WEAK === tier) {
-    const intl = tmp(1113).intl;
+    const intl = tmp(1112).intl;
     return intl.string(intl5.t.jtVgSh);
   }
 }

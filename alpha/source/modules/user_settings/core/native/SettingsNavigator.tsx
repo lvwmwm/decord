@@ -1,25 +1,25 @@
-// Module ID: 19080
-// Function ID: 19081
+// Module ID: 18899
+// Function ID: 18900
 // Name: SettingsNavigator
-// Dependencies: [19, 17, 2189, 15900, 1072, 21, 8519, 4792, 575, 19081, 1187, 5383, 1503, 13960, 19082, 7296, 563, 7401, 7420, 15902, 8149, 15903, 6973, 15196, 5356, 15883, 19083, 15737, 1113, 19084, 38, 2]
+// Dependencies: [19, 17, 2187, 15864, 1071, 21, 8518, 4794, 575, 18900, 1186, 5385, 1501, 13929, 18901, 7295, 563, 7400, 7419, 15866, 8148, 15867, 6972, 15160, 5358, 15847, 18902, 15701, 1112, 18903, 38, 2]
 
-// Module 19080 (SettingsNavigator)
+// Module 18899 (SettingsNavigator)
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1113 */;
-import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7296 */;
-import SettingRendererUtils from "SettingRendererUtils" /* 15902 */;
-import SettingRendererTypes from "SettingRendererTypes" /* 19081 */;
+import intl2 from "intl" /* 1112 */;
+import native from "native" /* 1186 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7295 */;
+import SettingRendererUtils from "SettingRendererUtils" /* 15866 */;
+import SettingRendererTypes from "SettingRendererTypes" /* 18900 */;
 import react_mod from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2189 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 15900 */;
-import Constants from "Constants" /* 1072 */;
+import LocaleStore from "LocaleStore" /* 2187 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 15864 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 8519 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import NativeStackView from "NativeStackView" /* 8518 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let closure_5, component, state;
@@ -34,7 +34,7 @@ let obj4;
 function SettingHeaderBadge(badge) {
   if (badge.badge.badgeType === SettingRendererTypes.SettingsBadgeType.BETA) {
     const obj = { size: native.BetaSizes.SMALL };
-    const BetaTag = tmp(1187).BetaTag;
+    const BetaTag = tmp(1186).BetaTag;
     return React4(BetaTag, obj);
   }
 }

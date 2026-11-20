@@ -1,22 +1,22 @@
-// Module ID: 17681
-// Function ID: 17682
+// Module ID: 17508
+// Function ID: 17509
 // Name: FavoritesGuildCategorySettingsModal
-// Dependencies: [32, 19, 17, 4644, 4654, 21, 4792, 575, 1502, 504, 4666, 11157, 8442, 1113, 5739, 1187, 5808, 7102, 7229, 6926, 5499, 10473, 10475, 2]
+// Dependencies: [32, 19, 17, 4646, 4656, 21, 4794, 575, 1500, 504, 4668, 11099, 8441, 1112, 5741, 1186, 5810, 7101, 7228, 6925, 5501, 10415, 10417, 2]
 // Exports: default
 
-// Module 17681 (FavoritesGuildCategorySettingsModal)
+// Module 17508 (FavoritesGuildCategorySettingsModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl5 from "intl" /* 1113 */;
-import native from "native" /* 1187 */;
-import FavoritesConstants from "FavoritesConstants" /* 4654 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5739 */;
-import FavoritesActionCreators from "FavoritesActionCreators" /* 11157 */;
+import intl5 from "intl" /* 1112 */;
+import native from "native" /* 1186 */;
+import FavoritesConstants from "FavoritesConstants" /* 4656 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5741 */;
+import FavoritesActionCreators from "FavoritesActionCreators" /* 11099 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import FavoriteStore from "FavoriteStore" /* 4644 */;
+import FavoriteStore from "FavoriteStore" /* 4646 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -167,16 +167,16 @@ export default function FavoritesGuildCategorySettingsModal(categoryId) {
   let intl;
   categoryId = categoryId.categoryId;
   let onGoBack;
-  onGoBack = onGoBack(10473)().onGoBack;
+  onGoBack = onGoBack(10415)().onGoBack;
   let obj = {
     screenKey: "favoritesGuildCategorySettings",
-    title: intl.string(categoryId(1113).t["/uELTj"]),
+    title: intl.string(categoryId(1112).t["/uELTj"]),
     render() {
       const obj = { categoryId, onGoBack };
       return metroImportAll(FavoritesGuildCategorySettings, obj);
     }
   };
-  const tmp = onGoBack(10475);
-  intl = categoryId(1113).intl;
+  const tmp = onGoBack(10417);
+  intl = categoryId(1112).intl;
   return closure_8(tmp, obj);
 };

@@ -1,15 +1,15 @@
-// Module ID: 8079
-// Function ID: 8080
+// Module ID: 8078
+// Function ID: 8079
 // Name: useBadges
-// Dependencies: [4849, 1388, 4617, 563, 1113, 2]
+// Dependencies: [4851, 1386, 4619, 563, 1112, 2]
 // Exports: default
 
-// Module 8079 (useBadges)
+// Module 8078 (useBadges)
 import useStateFromStores from "useStateFromStores" /* 563 */;
-import intl2 from "intl" /* 1113 */;
-import UserSettings from "UserSettings" /* 4617 */;
-import StreamerModeStore from "StreamerModeStore" /* 4849 */;
-import UserStore from "UserStore" /* 1388 */;
+import intl2 from "intl" /* 1112 */;
+import UserSettings from "UserSettings" /* 4619 */;
+import StreamerModeStore from "StreamerModeStore" /* 4851 */;
+import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 
 const legacy_username = "legacy_username";

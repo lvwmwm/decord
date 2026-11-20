@@ -1,23 +1,23 @@
-// Module ID: 13371
-// Function ID: 13372
+// Module ID: 13341
+// Function ID: 13342
 // Name: GuildPowerupsPerkCard
-// Dependencies: [19, 17, 21, 4792, 575, 5001, 4799, 13368, 13322, 5347, 5383, 13323, 1187, 1113, 2]
+// Dependencies: [19, 17, 21, 4794, 575, 5003, 4801, 13338, 13292, 5349, 5385, 13293, 1186, 1112, 2]
 // Exports: default
 
-// Module 13371 (GuildPowerupsPerkCard)
+// Module 13341 (GuildPowerupsPerkCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl3 from "intl" /* 1113 */;
-import native from "native" /* 1187 */;
-import shared from "shared" /* 4799 */;
-import useThemeDefault from "useTheme" /* 5001 */;
-import LinearGradientDefault from "LinearGradient" /* 5347 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import GuildPowerupsImageDefault from "GuildPowerupsImage" /* 13322 */;
-import GuildPowerupsCardDefault from "GuildPowerupsCard" /* 13368 */;
+import intl3 from "intl" /* 1112 */;
+import native from "native" /* 1186 */;
+import shared from "shared" /* 4801 */;
+import useThemeDefault from "useTheme" /* 5003 */;
+import LinearGradientDefault from "LinearGradient" /* 5349 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import GuildPowerupsImageDefault from "GuildPowerupsImage" /* 13292 */;
+import GuildPowerupsCardDefault from "GuildPowerupsCard" /* 13338 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -89,23 +89,23 @@ export default function GuildPowerupsPerkCard(arg0) {
   items3 = [React3(Text_Text.Text, { color: "text-strong", variant: "heading-md/semibold", children: title }), React3(Text_Text.Text, { variant: "body-sm/normal", children: description })];
   items4 = [hasOwnProperty(View, obj7), ];
   const obj8 = { status };
-  const GuildPowerupsCardFooter = tmp6(13323).GuildPowerupsCardFooter;
+  const GuildPowerupsCardFooter = tmp6(13293).GuildPowerupsCardFooter;
   const merged1 = Object.assign(merged);
   items4[1] = React3(GuildPowerupsCardFooter, obj8);
   items2[1] = hasOwnProperty(View, obj6);
   let tmp13Result = "new" === badge;
   if (tmp13Result) {
     const obj9 = { text: intl.string(intl3.t.y2b7CA), style: tmp2.badge };
-    const TextBadge = tmp6(1187).TextBadge;
-    intl = tmp6(1113).intl;
+    const TextBadge = tmp6(1186).TextBadge;
+    intl = tmp6(1112).intl;
     tmp13Result = tmp13(TextBadge, obj9);
   }
   items2[2] = tmp13Result;
   let tmp13Result2 = "beta" === badge;
   if (tmp13Result2) {
     const obj10 = { text: intl2.string(intl3.t.oW0eUd), color: native.BadgeColors.BRAND, style: tmp2.badge };
-    const TextBadge2 = tmp6(1187).TextBadge;
-    intl2 = tmp6(1113).intl;
+    const TextBadge2 = tmp6(1186).TextBadge;
+    intl2 = tmp6(1112).intl;
     tmp13Result2 = tmp13(TextBadge2, obj10);
   }
   items2[3] = tmp13Result2;

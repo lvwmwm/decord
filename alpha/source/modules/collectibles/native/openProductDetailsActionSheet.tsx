@@ -1,14 +1,14 @@
 // Module ID: 8798
 // Function ID: 8799
 // Name: openProductDetailsActionSheet
-// Dependencies: [7967, 7955, 5006, 8799, 2121, 2]
+// Dependencies: [7966, 7954, 5008, 8799, 2119, 2]
 // Exports: openProductDetailsActionSheet, openProductDetailsActionSheetForSku
 
 // Module 8798 (openProductDetailsActionSheet)
-import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7955 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7967 */;
+import asyncRequire from "asyncRequire" /* 2119 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5008 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7954 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7966 */;
 import size from "module_2" /* 2 */;
 
 let c3 = "Shop Product Preview";

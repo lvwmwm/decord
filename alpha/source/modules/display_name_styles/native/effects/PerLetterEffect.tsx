@@ -1,14 +1,14 @@
 // Module ID: 9342
 // Function ID: 9343
 // Name: PerLetterEffect
-// Dependencies: [19, 17, 21, 4792, 9343, 9344, 5383, 2]
+// Dependencies: [19, 17, 21, 4794, 9343, 9344, 5385, 2]
 // Exports: default
 
 // Module 9342 (PerLetterEffect)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -66,7 +66,7 @@ export default function PerLetterEffect(name) {
     });
   }, items);
   obj2 = { textBreakStrategy: "simple", accessibilityLabel, style: items2, children: memo };
-  Text = name(5383).Text;
+  Text = name(5385).Text;
   const merged = Object.assign(textProps);
   accessibilityLabel = textProps.accessibilityLabel;
   const tmp4 = closure_4;

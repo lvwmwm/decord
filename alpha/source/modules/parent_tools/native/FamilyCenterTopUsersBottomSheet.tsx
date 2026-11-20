@@ -1,23 +1,23 @@
-// Module ID: 16112
-// Function ID: 16113
+// Module ID: 16076
+// Function ID: 16077
 // Name: FamilyCenterTopUsersBottomSheet
-// Dependencies: [19, 1388, 21, 4792, 9019, 6926, 4848, 1187, 7434, 5383, 1113, 2723, 7229, 2]
+// Dependencies: [19, 1386, 21, 4794, 9019, 6925, 4850, 1186, 7433, 5385, 1112, 2725, 7228, 2]
 // Exports: default
 
-// Module 16112 (FamilyCenterTopUsersBottomSheet)
-import intl2 from "intl" /* 1113 */;
-import native from "native" /* 1187 */;
-import _modDef2723 from "module_2723" /* 2723 */;
-import UserUtilsDefault from "UserUtils" /* 4848 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import TableRow2 from "TableRow" /* 6926 */;
-import TableRowGroup2 from "TableRowGroup" /* 7229 */;
-import ActionSheet2 from "ActionSheet" /* 7434 */;
+// Module 16076 (FamilyCenterTopUsersBottomSheet)
+import intl2 from "intl" /* 1112 */;
+import native from "native" /* 1186 */;
+import _modDef2725 from "module_2725" /* 2725 */;
+import UserUtilsDefault from "UserUtils" /* 4850 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import TableRow2 from "TableRow" /* 6925 */;
+import TableRowGroup2 from "TableRowGroup" /* 7228 */;
+import ActionSheet2 from "ActionSheet" /* 7433 */;
 import FamilyCenterUtils from "FamilyCenterUtils" /* 9019 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1388 */;
+import UserStore from "UserStore" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -52,7 +52,7 @@ export default function FamilyCenterTopUsersBottomSheet(topUserActivities) {
   let obj = { children: items };
   const tmp = closure_6();
   const ActionSheet = ActionSheet2.ActionSheet;
-  const obj2 = { variant: "body-md/semibold", style: tmp.header, children: intl.string(_modDef2723.BxbvS7) };
+  const obj2 = { variant: "body-md/semibold", style: tmp.header, children: intl.string(_modDef2725.BxbvS7) };
   const Text = Text_Text.Text;
   intl = intl2.intl;
   items = [React3(Text, obj2), ];

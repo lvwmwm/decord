@@ -1,20 +1,20 @@
-// Module ID: 10596
-// Function ID: 10597
+// Module ID: 10538
+// Function ID: 10539
 // Name: CallBarAction
-// Dependencies: [19, 17, 10574, 21, 4789, 575, 4792, 10597, 6911, 10598, 5479, 5383, 2]
+// Dependencies: [19, 17, 10516, 21, 4791, 575, 4794, 10539, 6910, 10540, 5481, 5385, 2]
 // Exports: NotifiedActionButton, PrimaryActionButton, ToggledActionButton
 
-// Module 10596 (CallBarAction)
+// Module 10538 (CallBarAction)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import Pressables from "Pressables" /* 6911 */;
-import ChannelCallStore from "ChannelCallStore" /* 10574 */;
-import CircleWithCutoutUtils from "CircleWithCutoutUtils" /* 10598 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import Pressables from "Pressables" /* 6910 */;
+import ChannelCallStore from "ChannelCallStore" /* 10516 */;
+import CircleWithCutoutUtils from "CircleWithCutoutUtils" /* 10540 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import ColorUtils from "ColorUtils" /* 4789 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import ColorUtils from "ColorUtils" /* 4791 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -108,7 +108,7 @@ class ActionButton {
       cloneElementResult = tmp10(IconComponent, obj6);
     } else {
       const obj7 = { source, style: imageStyle };
-      cloneElementResult = tmp10(tmp2(5479), obj7);
+      cloneElementResult = tmp10(tmp2(5481), obj7);
     }
     items1[1] = closure_6(View, obj4);
     let tmp10Result = null;

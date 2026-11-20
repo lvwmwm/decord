@@ -1,12 +1,12 @@
-// Module ID: 14110
-// Function ID: 14111
+// Module ID: 14079
+// Function ID: 14080
 // Name: useCustomStatusActivityForUser
-// Dependencies: [502, 5530, 504, 8929, 5531, 2]
+// Dependencies: [502, 5532, 504, 8929, 5533, 2]
 // Exports: default
 
-// Module 14110 (useCustomStatusActivityForUser)
+// Module 14079 (useCustomStatusActivityForUser)
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import PresenceStore from "PresenceStore" /* 5530 */;
+import PresenceStore from "PresenceStore" /* 5532 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

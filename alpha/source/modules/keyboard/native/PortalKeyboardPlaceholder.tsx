@@ -1,23 +1,23 @@
-// Module ID: 13025
-// Function ID: 13026
+// Module ID: 12995
+// Function ID: 12996
 // Name: PortalKeyboardPlaceholder
-// Dependencies: [19, 17, 21, 4792, 1380, 575, 1628, 1630, 7254, 1496, 5368, 8451, 4979, 2023, 2]
+// Dependencies: [19, 17, 21, 4794, 1378, 575, 1626, 1628, 7253, 1494, 5370, 8450, 4981, 2021, 2]
 
-// Module 13025 (PortalKeyboardPlaceholder)
+// Module 12995 (PortalKeyboardPlaceholder)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
-import KeyboardTypes from "KeyboardTypes" /* 1628 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import useSystemKeyboardHeightDefault from "useSystemKeyboardHeight" /* 2023 */;
-import useKeyboardTypeDefault from "useKeyboardType" /* 4979 */;
-import useCustomKeyboardHeightDefault from "useCustomKeyboardHeight" /* 5368 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 7254 */;
-import ClientThemesOverrides from "ClientThemesOverrides" /* 8451 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
+import KeyboardTypes from "KeyboardTypes" /* 1626 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
+import useSystemKeyboardHeightDefault from "useSystemKeyboardHeight" /* 2021 */;
+import useKeyboardTypeDefault from "useKeyboardType" /* 4981 */;
+import useCustomKeyboardHeightDefault from "useCustomKeyboardHeight" /* 5370 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7253 */;
+import ClientThemesOverrides from "ClientThemesOverrides" /* 8450 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -65,7 +65,7 @@ let closure_6 = createStyles.createStyles((arg0, arg1, arg2, arg3) => {
   if (arg3) {
     hairlineWidth1 = tmp6.hairlineWidth;
   }
-  const APP_LAUNCHER = tmp(1628).KeyboardTypes.APP_LAUNCHER;
+  const APP_LAUNCHER = tmp(1626).KeyboardTypes.APP_LAUNCHER;
   const tmpResult = PlatformUtils;
   if (tmpResult.isIOS()) {
     tmp12 = arg1;

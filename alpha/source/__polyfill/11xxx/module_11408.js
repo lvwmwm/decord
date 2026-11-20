@@ -1,133 +1,217 @@
 // Module ID: 11408
 // Function ID: 11409
-// Dependencies: [11349, 11356, 11358, 11409, 11410, 11382, 11411, 11412, 11413, 11414, 11416, 11417, 11418, 11419, 11420, 11389]
-// Exports: createCasualConfiguration, parse, parseDate
+// Dependencies: [41, 42, 93, 95, 98, 11302]
 
 // Module 11408
-import _mod11382 from "module_11382" /* 11382 */;
-import includeCommonConfiguration2 from "includeCommonConfiguration" /* 11389 */;
-import _mod11409 from "module_11409" /* 11409 */;
-import _mod11410 from "module_11410" /* 11410 */;
-import _mod11411 from "module_11411" /* 11411 */;
-import _mod11412 from "module_11412" /* 11412 */;
-import _mod11413 from "module_11413" /* 11413 */;
-import _mod11414 from "module_11414" /* 11414 */;
-import _mod11416 from "module_11416" /* 11416 */;
-import _mod11417 from "module_11417" /* 11417 */;
-import _mod11418 from "module_11418" /* 11418 */;
-import _mod11419 from "module_11419" /* 11419 */;
-import _mod11420 from "module_11420" /* 11420 */;
-import { Chrono } from "module_11349" /* 11349 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 11302 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import map from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
-const require = globalThis.__r;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
-function createConfiguration(flag, arg1) {
-  let items;
-  let items1;
-  if (flag === undefined) {
-    flag = true;
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
-  let flag2 = arg1;
-  if (arg1 === undefined) {
-    flag2 = true;
-  }
-  const obj = { parsers: items, refiners: items1 };
-  const includeCommonConfiguration = includeCommonConfiguration2.includeCommonConfiguration;
-  items = [new module_11382.default(flag2), , , , , , ];
-  new module_11382.default(flag2);
-  items[1] = new module_11417.default();
-  new module_11417.default();
-  items[2] = new module_11411.default();
-  new module_11411.default();
-  items[3] = new module_11416.default();
-  new module_11416.default();
-  items[4] = new module_11418.default();
-  new module_11418.default();
-  items[5] = new module_11419.default();
-  new module_11419.default();
-  items[6] = new module_11414.default();
-  new module_11414.default();
-  items1 = [new module_11412.default(), ];
-  new module_11412.default();
-  items1[1] = new module_11413.default();
-  new module_11413.default();
-  return includeCommonConfiguration(obj, flag);
 }
-const fn = this && this.__importDefault || ((__esModule) => {
-  let tmp2;
-  const tmp = __esModule;
-  if (!tmp) {
-    tmp2 = { default: __esModule };
-    const obj = { default: __esModule };
-  } else {
-    tmp2 = __esModule;
+class ZHHantCasualDateParser {
+  constructor() {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, ZHHantCasualDateParser);
+    const obj = _getPrototypeOf(ZHHantCasualDateParser);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = map;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      constructResult = obj(...arguments);
+    }
+    return tmp3(self, constructResult);
   }
-  return tmp2;
-});
-function createCasualConfiguration() {
-  let flag = arg0;
-  if (arg0 === undefined) {
-    flag = true;
-  }
-  const tmp = createConfiguration(false, flag);
-  const parsers = tmp.parsers;
-  const unshift = parsers.unshift;
-  const _default = new module_11409.default();
-  unshift(_default);
-  const parsers1 = tmp.parsers;
-  const unshift2 = parsers1.unshift;
-  const _default1 = new module_11410.default();
-  unshift2(_default1);
-  const parsers2 = tmp.parsers;
-  const unshift3 = parsers2.unshift;
-  const _default2 = new module_11420.default();
-  unshift3(_default2);
-  return tmp;
 }
-const module_11409 = fn(_mod11409);
-const module_11410 = fn(_mod11410);
-const module_11382 = fn(_mod11382);
-const module_11411 = fn(_mod11411);
-const module_11412 = fn(_mod11412);
-const module_11413 = fn(_mod11413);
-const module_11414 = fn(_mod11414);
-const module_11416 = fn(_mod11416);
-const module_11417 = fn(_mod11417);
-const module_11418 = fn(_mod11418);
-const module_11419 = fn(_mod11419);
-const module_11420 = fn(_mod11420);
-const configuration = createConfiguration(false, true);
-let parsers = configuration.parsers;
-let unshift = parsers.unshift;
-let _default = new module_11409.default();
-unshift(_default);
-let parsers1 = configuration.parsers;
-let unshift2 = parsers1.unshift;
-let _default1 = new module_11410.default();
-unshift2(_default1);
-let parsers2 = configuration.parsers;
-let unshift3 = parsers2.unshift;
-let _default2 = new module_11420.default();
-unshift3(_default2);
-const chrono = new Chrono(configuration);
-const chrono1 = new require("module_11349").Chrono(createConfiguration(true));
-const Chrono_export = require("module_11349").Chrono;
+_inherits(ZHHantCasualDateParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+const entry = {
+  key: "innerPattern",
+  value: function innerPattern(arg0) {
+    const regExp = new RegExp("(\u800C\u5BB6|\u7ACB(?:\u523B|\u5373)|\u5373\u523B)|(\u4ECA|\u660E|\u524D|\u5927\u524D|\u5F8C|\u5927\u5F8C|\u807D|\u6628|\u5C0B|\u7434)(\u65E9|\u671D|\u665A)|(\u4E0A(?:\u5348|\u665D)|\u671D(?:\u65E9)|\u65E9(?:\u4E0A)|\u4E0B(?:\u5348|\u665D)|\u664F(?:\u665D)|\u665A(?:\u4E0A)|\u591C(?:\u665A)?|\u4E2D(?:\u5348)|\u51CC(?:\u6668))|(\u4ECA|\u660E|\u524D|\u5927\u524D|\u5F8C|\u5927\u5F8C|\u807D|\u6628|\u5C0B|\u7434)(?:\u65E5|\u5929)(?:[\\s|,|\uFF0C]*)(?:(\u4E0A(?:\u5348|\u665D)|\u671D(?:\u65E9)|\u65E9(?:\u4E0A)|\u4E0B(?:\u5348|\u665D)|\u664F(?:\u665D)|\u665A(?:\u4E0A)|\u591C(?:\u665A)?|\u4E2D(?:\u5348)|\u51CC(?:\u6668)))?", "i");
+    return regExp;
+  }
+};
+const items = [
+  entry,
+  {
+    key: "innerExtract",
+    value: function innerExtract(createParsingResult, index) {
+      const parsingResult = createParsingResult.createParsingResult(index.index, index[0]);
+      const refDate = createParsingResult.refDate;
+      const date = new Date(refDate.getTime());
+      if (index[1]) {
+        const start16 = parsingResult.start;
+        start16.imply("hour", refDate.getHours());
+        const start17 = parsingResult.start;
+        start17.imply("minute", refDate.getMinutes());
+        const start18 = parsingResult.start;
+        start18.imply("second", refDate.getSeconds());
+        const start19 = parsingResult.start;
+        start19.imply("millisecond", refDate.getMilliseconds());
+      } else if (index[2]) {
+        if ("\u660E" != index[2]) {
+          if ("\u807D" != index[2]) {
+            if ("\u6628" != index[2]) {
+              if ("\u5C0B" != index[2]) {
+                if ("\u7434" != index[2]) {
+                  if ("\u524D" == index[2]) {
+                    date.setDate(date.getDate() - 2);
+                  } else if ("\u5927\u524D" == index[2]) {
+                    date.setDate(date.getDate() - 3);
+                  } else if ("\u5F8C" == index[2]) {
+                    date.setDate(date.getDate() + 2);
+                  } else if ("\u5927\u5F8C" == index[2]) {
+                    date.setDate(date.getDate() + 3);
+                  }
+                }
+              }
+            }
+            date.setDate(date.getDate() - 1);
+          }
+          if ("\u65E9" != index[3]) {
+            if ("\u671D" != index[3]) {
+              if ("\u665A" == index[3]) {
+                const start25 = parsingResult.start;
+                start25.imply("hour", 22);
+                const start26 = parsingResult.start;
+                start26.imply("meridiem", 1);
+              }
+            }
+          }
+          const start15 = parsingResult.start;
+          start15.imply("hour", 6);
+        }
+        if (refDate.getHours() > 1) {
+          date.setDate(date.getDate() + 1);
+        }
+      } else if (index[4]) {
+        const first = index[4][0];
+        if ("\u65E9" != first) {
+          if ("\u671D" != first) {
+            if ("\u4E0A" != first) {
+              if ("\u4E0B" != first) {
+                if ("\u664F" != first) {
+                  if ("\u4E2D" == first) {
+                    const start10 = parsingResult.start;
+                    start10.imply("hour", 12);
+                    const start11 = parsingResult.start;
+                    start11.imply("meridiem", 1);
+                  } else {
+                    if ("\u591C" != first) {
+                      if ("\u665A" != first) {
+                        if ("\u51CC" == first) {
+                          const start24 = parsingResult.start;
+                          start24.imply("hour", 0);
+                        }
+                      }
+                    }
+                    const start8 = parsingResult.start;
+                    start8.imply("hour", 22);
+                    const start9 = parsingResult.start;
+                    start9.imply("meridiem", 1);
+                  }
+                }
+              }
+              const start12 = parsingResult.start;
+              start12.imply("hour", 15);
+              const start13 = parsingResult.start;
+              start13.imply("meridiem", 1);
+            }
+          }
+        }
+        const start14 = parsingResult.start;
+        start14.imply("hour", 6);
+      } else if (index[5]) {
+        if ("\u660E" != index[5]) {
+          if ("\u807D" != index[5]) {
+            if ("\u6628" != index[5]) {
+              if ("\u5C0B" != index[5]) {
+                if ("\u7434" != index[5]) {
+                  if ("\u524D" == index[5]) {
+                    date.setDate(date.getDate() - 2);
+                  } else if ("\u5927\u524D" == index[5]) {
+                    date.setDate(date.getDate() - 3);
+                  } else if ("\u5F8C" == index[5]) {
+                    date.setDate(date.getDate() + 2);
+                  } else if ("\u5927\u5F8C" == index[5]) {
+                    date.setDate(date.getDate() + 3);
+                  }
+                }
+              }
+            }
+            date.setDate(date.getDate() - 1);
+          }
+          if (index[6]) {
+            const first1 = tmp8[0];
+            if ("\u65E9" != first1) {
+              if ("\u671D" != first1) {
+                if ("\u4E0A" != first1) {
+                  if ("\u4E0B" != first1) {
+                    if ("\u664F" != first1) {
+                      if ("\u4E2D" == first1) {
+                        const start3 = parsingResult.start;
+                        start3.imply("hour", 12);
+                        const start4 = parsingResult.start;
+                        start4.imply("meridiem", 1);
+                      } else {
+                        if ("\u591C" != first1) {
+                          if ("\u665A" != first1) {
+                            if ("\u51CC" == first1) {
+                              const start23 = parsingResult.start;
+                              start23.imply("hour", 0);
+                            }
+                          }
+                        }
+                        const start = parsingResult.start;
+                        start.imply("hour", 22);
+                        const start2 = parsingResult.start;
+                        start2.imply("meridiem", 1);
+                      }
+                    }
+                  }
+                  const start5 = parsingResult.start;
+                  start5.imply("hour", 15);
+                  const start6 = parsingResult.start;
+                  start6.imply("meridiem", 1);
+                }
+              }
+            }
+            const start7 = parsingResult.start;
+            start7.imply("hour", 6);
+          }
+        }
+        if (refDate.getHours() > 1) {
+          date.setDate(date.getDate() + 1);
+        }
+      }
+      const start20 = parsingResult.start;
+      start20.assign("day", date.getDate());
+      const start21 = parsingResult.start;
+      start21.assign("month", date.getMonth() + 1);
+      const start22 = parsingResult.start;
+      start22.assign("year", date.getFullYear());
+      return parsingResult;
+    }
+  }
+];
 
-export function parse(arg0, arg1, arg2) {
-  const casual = exports.casual;
-  return casual.parse(arg0, arg1, arg2);
-}
-export function parseDate(arg0, arg1, arg2) {
-  const casual = exports.casual;
-  return casual.parseDate(arg0, arg1, arg2);
-}
-export { createCasualConfiguration };
-export { createConfiguration };
-export { Chrono_export as Chrono };
-export const ParsingResult = require("ReferenceWithTimezone").ParsingResult;
-export const ParsingComponents = require("ReferenceWithTimezone").ParsingComponents;
-export const ReferenceWithTimezone = require("ReferenceWithTimezone").ReferenceWithTimezone;
-export const Meridiem = require("Meridiem").Meridiem;
-export const Weekday = require("Meridiem").Weekday;
-export const casual = chrono;
-export const strict = chrono1;
+export default _createClass(ZHHantCasualDateParser, items);

@@ -1,15 +1,15 @@
-// Module ID: 5468
-// Function ID: 5469
+// Module ID: 5470
+// Function ID: 5471
 // Name: handleURL
-// Dependencies: [5, 17, 5007, 1072, 3, 5469, 5470, 5471, 5472, 2070, 5473, 1113, 5503, 1380, 5006, 5506, 1383, 5507, 14683, 14974, 2]
+// Dependencies: [5, 17, 5009, 1071, 3, 5471, 5472, 5473, 5474, 2068, 5475, 1112, 5505, 1378, 5008, 5508, 1381, 5509, 14642, 14938, 2]
 // Exports: default
 
-// Module 5468 (handleURL)
+// Module 5470 (handleURL)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ActionSheetStore from "ActionSheetStore" /* 5007 */;
-import Constants from "Constants" /* 1072 */;
+import ActionSheetStore from "ActionSheetStore" /* 5009 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 let constants;
@@ -163,7 +163,7 @@ let obj = function _handleURL() {
             }
             openInBrowser();
             c8 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           } else {
             tryHandleUniversalLink = closure_132_1(closure_132_2[15])(tryHandleUniversalLink);
             let obj6 = /^https?:/i;
@@ -218,7 +218,7 @@ let obj = function _handleURL() {
         let tmp12 = tmp62;
         c6 = 0;
         c8 = 3;
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       } else if (3 === tmp4) {
         if (arg0 === 1) {
           c8 = 3;

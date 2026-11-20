@@ -1,9 +1,9 @@
-// Module ID: 13689
-// Function ID: 13690
+// Module ID: 13658
+// Function ID: 13659
 // Name: conjureWandGeometry
 // Dependencies: [2]
 
-// Module 13689 (conjureWandGeometry)
+// Module 13658 (conjureWandGeometry)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/agent_activity/conjureWandGeometry.tsx");

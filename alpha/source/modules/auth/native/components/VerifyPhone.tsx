@@ -1,18 +1,18 @@
-// Module ID: 17526
-// Function ID: 17527
+// Module ID: 17353
+// Function ID: 17354
 // Name: VerifyPhone
-// Dependencies: [5, 32, 19, 17497, 17498, 1072, 21, 17494, 17515, 5353, 7303, 1113, 7336, 17527, 7337, 2]
+// Dependencies: [5, 32, 19, 17324, 17325, 1071, 21, 17321, 17342, 5355, 7302, 1112, 7335, 17354, 7336, 2]
 // Exports: default
 
-// Module 17526 (VerifyPhone)
+// Module 17353 (VerifyPhone)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1072 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 17497 */;
-import RegistrationBailoutButtonDefault from "RegistrationBailoutButton" /* 17527 */;
+import Constants from "Constants" /* 1071 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 17324 */;
+import RegistrationBailoutButtonDefault from "RegistrationBailoutButton" /* 17354 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import RegistrationConstants from "RegistrationConstants" /* 17498 */;
+import RegistrationConstants from "RegistrationConstants" /* 17325 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, c4, closure_3;
@@ -53,8 +53,8 @@ export default function VerifyPhone(phone) {
   [tmp6, c6] = _slicedToArray(react.useState(false), 2);
   const tmp5 = _slicedToArray(react.useState(false), 2);
   let closure_7 = react.useRef(false);
-  const context = react.useContext(phone(17494).TrackRegistrationContext);
-  const tmp8 = onPhoneTokenReceived(17515);
+  const context = react.useContext(phone(17321).TrackRegistrationContext);
+  const tmp8 = onPhoneTokenReceived(17342);
   tmp8(closure_7(sourceState));
   const items = [context];
   const effect = react.useEffect(() => {
@@ -63,7 +63,7 @@ export default function VerifyPhone(phone) {
       context(obj);
     }
   }, items);
-  const tmp11 = onPhoneTokenReceived(5353)(() => {
+  const tmp11 = onPhoneTokenReceived(5355)(() => {
     let ref;
     return () => {
       let tmpResult;
@@ -88,7 +88,7 @@ export default function VerifyPhone(phone) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -156,7 +156,7 @@ export default function VerifyPhone(phone) {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp41) {
         closure_3 = tmp41;
@@ -186,7 +186,7 @@ export default function VerifyPhone(phone) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -217,7 +217,7 @@ export default function VerifyPhone(phone) {
         } else {
           _undefined(false);
           c3 = 3;
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp11) {
         c3 = 3;
@@ -229,7 +229,7 @@ export default function VerifyPhone(phone) {
   const callback2 = useCallback2(function() {
     return closure_0(...arguments);
   }, items2);
-  onPhoneTokenReceived(7336)(callback2);
+  onPhoneTokenReceived(7335)(callback2);
   const items3 = [onBail];
   const memo = react.useMemo(() => {
     let tmp2 = null;
@@ -238,6 +238,6 @@ export default function VerifyPhone(phone) {
     }
     return tmp2;
   }, items3);
-  onPhoneTokenReceived(7337);
-  return <tmp16 title={title} description={description} error={tmp4} onCodeEntered={onCodeEntered} codeType={phone(7337).CodeType.NUMERIC} footer={memo} disabled={tmp6} loading={first} disableKeyboardAvoidingView />;
+  onPhoneTokenReceived(7336);
+  return <tmp16 title={title} description={description} error={tmp4} onCodeEntered={onCodeEntered} codeType={phone(7336).CodeType.NUMERIC} footer={memo} disabled={tmp6} loading={first} disableKeyboardAvoidingView />;
 };

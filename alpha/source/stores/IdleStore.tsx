@@ -1,21 +1,21 @@
-// Module ID: 6524
-// Function ID: 6525
+// Module ID: 6526
+// Function ID: 6527
 // Name: IdleStore
-// Dependencies: [502, 1072, 5537, 1380, 4617, 1089, 572, 4603, 6408, 551, 504, 2]
+// Dependencies: [502, 1071, 5539, 1378, 4619, 1088, 572, 4605, 6410, 551, 504, 2]
 
-// Module 6524 (IdleStore)
+// Module 6526 (IdleStore)
 import _mod2 from "module_2" /* 2 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import debounceDefault from "debounce" /* 551 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import DurationsDefault from "Durations" /* 1089 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
-import DiscordNativeDefault from "DiscordNative" /* 4603 */;
-import UserSettings from "UserSettings" /* 4617 */;
-import Constants2 from "Constants" /* 5537 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6408 */;
+import DurationsDefault from "Durations" /* 1088 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
+import DiscordNativeDefault from "DiscordNative" /* 4605 */;
+import UserSettings from "UserSettings" /* 4619 */;
+import Constants2 from "Constants" /* 5539 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6410 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import Constants from "Constants" /* 1072 */;
+import Constants from "Constants" /* 1071 */;
 
 let c3;
 
@@ -49,7 +49,7 @@ function checkIdleAFK() {
         if (diff <= Math.min(setting * DurationsDefault.Millis.SECOND, tmp)) {
           let tmp18 = c11 || c12;
           if (!tmp18) {
-            const tmp15Result = tmp15(1380);
+            const tmp15Result = tmp15(1378);
             tmp18 = tmp15Result.isAndroid() && closure_13;
             tmp15Result.isAndroid() && closure_13;
           }
@@ -103,7 +103,7 @@ if (PlatformUtils.isPlatformEmbedded) {
         }
       }
       if (null != getSystemIdleTimeMs) {
-        const powerMonitor2 = tmp(4603).powerMonitor;
+        const powerMonitor2 = tmp(4605).powerMonitor;
         const systemIdleTimeMs = powerMonitor2.getSystemIdleTimeMs();
         if (systemIdleTimeMs instanceof Promise) {
           systemIdleTimeMs.then(function handleIdleTime(result) {
@@ -128,7 +128,7 @@ if (PlatformUtils.isPlatformEmbedded) {
           }
           checkIdleAFK();
           const _setTimeout = setTimeout;
-          let timerId = setTimeout(checkNativeIdle, 10 * tmp(1089).Millis.SECOND);
+          let timerId = setTimeout(checkNativeIdle, 10 * tmp(1088).Millis.SECOND);
         }
       }
     }

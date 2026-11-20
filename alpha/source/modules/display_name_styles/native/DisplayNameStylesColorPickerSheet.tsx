@@ -1,27 +1,27 @@
-// Module ID: 16814
-// Function ID: 16815
+// Module ID: 16638
+// Function ID: 16639
 // Name: DisplayNameStylesColorPickerSheet
-// Dependencies: [32, 19, 17, 16803, 1072, 21, 4792, 575, 8030, 9341, 16804, 1113, 1090, 5008, 5006, 15753, 1256, 5020, 16799, 3147, 5390, 16808, 2]
+// Dependencies: [32, 19, 17, 16627, 1071, 21, 4794, 575, 8029, 9341, 16628, 1112, 1089, 5010, 5008, 15717, 1255, 5022, 16623, 3149, 5392, 16632, 2]
 // Exports: default
 
-// Module 16814 (DisplayNameStylesColorPickerSheet)
+// Module 16638 (DisplayNameStylesColorPickerSheet)
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import _modDef3147 from "module_3147" /* 3147 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
-import HapticUtils from "HapticUtils" /* 5008 */;
+import Constants from "Constants" /* 1071 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import _modDef3149 from "module_3149" /* 3149 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5008 */;
+import HapticUtils from "HapticUtils" /* 5010 */;
 import useDisplayNameStylesEffectDefaultColorsDefault from "useDisplayNameStylesEffectDefaultColors" /* 9341 */;
-import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 15753 */;
-import DisplayNameStylesSheetHeaderDefault from "DisplayNameStylesSheetHeader" /* 16799 */;
-import DisplayNameStylesColorPickerConstants from "DisplayNameStylesColorPickerConstants" /* 16803 */;
-import useColorPresetsWithA11yLabelsDefault from "useColorPresetsWithA11yLabels" /* 16804 */;
-import DisplayNameStylesCustomColorButtonDefault from "DisplayNameStylesCustomColorButton" /* 16808 */;
+import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 15717 */;
+import DisplayNameStylesSheetHeaderDefault from "DisplayNameStylesSheetHeader" /* 16623 */;
+import DisplayNameStylesColorPickerConstants from "DisplayNameStylesColorPickerConstants" /* 16627 */;
+import useColorPresetsWithA11yLabelsDefault from "useColorPresetsWithA11yLabels" /* 16628 */;
+import DisplayNameStylesCustomColorButtonDefault from "DisplayNameStylesCustomColorButton" /* 16632 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap, importDefault;
@@ -79,7 +79,7 @@ export default function DisplayNameStylesColorPickerSheet(arg0) {
   const tmp = closure_10();
   importDefault = tmp;
   let tmp3 = dependencyMap;
-  let obj = onSelectColor(8030);
+  let obj = onSelectColor(8029);
   const bottomSheetRef = obj.useBottomSheetRef().bottomSheetRef;
   const tmp5 = useDisplayNameStylesEffectDefaultColorsDefault()[selectedEffectId];
   dependencyMap = tmp5;
@@ -90,11 +90,11 @@ export default function DisplayNameStylesColorPickerSheet(arg0) {
   const arr = useColorPresetsWithA11yLabelsDefault(selectedEffectId);
   const tmp8 = color !== tmp5[0] && !arr.some((item) => item.colors[0] === first);
   let obj3 = { colors: tmp5, a11yLabel: "" + stringResult + ", " + tmp2Result.int2hex(tmp5[0]) };
-  const intl = tmp2(1113).intl;
-  stringResult = intl.string(onSelectColor(1113).t.bBvAEH);
+  const intl = tmp2(1112).intl;
+  stringResult = intl.string(onSelectColor(1112).t.bBvAEH);
   let items = [obj3, ...arr.filter((item) => item.colors[0] !== closure_2[0])];
   let closure_5 = tmp10;
-  tmp2Result = onSelectColor(1090);
+  tmp2Result = onSelectColor(1089);
   let closure_6 = obj2.useCallback((arg0) => {
     closure_4(arg0);
   }, []);
@@ -136,13 +136,13 @@ export default function DisplayNameStylesColorPickerSheet(arg0) {
     obj4.hideActionSheet();
   }, items3);
   let obj4 = { backgroundStyles: tmp.sheetBackground, ref: bottomSheetRef, header: closure_8(tmp4Result, obj5), children: closure_8(closure_5, obj7) };
-  const BottomSheet = tmp2(5020).BottomSheet;
-  obj5 = { title: intl2.string(_modDef3147["6OxgN7"]), trailing: closure_8(Button, obj6) };
+  const BottomSheet = tmp2(5022).BottomSheet;
+  obj5 = { title: intl2.string(_modDef3149["6OxgN7"]), trailing: closure_8(Button, obj6) };
   tmp4Result = DisplayNameStylesSheetHeaderDefault;
-  intl2 = tmp2(1113).intl;
-  obj6 = { text: intl3.string(onSelectColor(1113).t.XqMe3N), onPress: callback2, variant: "primary", size: "sm" };
-  Button = tmp2(5390).Button;
-  intl3 = tmp2(1113).intl;
+  intl2 = tmp2(1112).intl;
+  obj6 = { text: intl3.string(onSelectColor(1112).t.XqMe3N), onPress: callback2, variant: "primary", size: "sm" };
+  Button = tmp2(5392).Button;
+  intl3 = tmp2(1112).intl;
   obj7 = { style: tmp.container, children: closure_9(closure_5, obj8) };
   let tmp19;
   obj8 = { style: tmp.contentContainer, children: items6 };
@@ -172,9 +172,9 @@ export default function DisplayNameStylesColorPickerSheet(arg0) {
     })
   ];
   items6 = [closure_9(closure_5, obj9), ];
-  const obj10 = { text: intl4.string(onSelectColor(1113).t.yBZMsQ), onPress, variant: "secondary", size: "md", grow: true };
-  const Button2 = tmp2(5390).Button;
-  intl4 = tmp2(1113).intl;
+  const obj10 = { text: intl4.string(onSelectColor(1112).t.yBZMsQ), onPress, variant: "secondary", size: "md", grow: true };
+  const Button2 = tmp2(5392).Button;
+  intl4 = tmp2(1112).intl;
   items6[1] = closure_8(Button2, obj10);
   return closure_8(BottomSheet, obj4);
 };

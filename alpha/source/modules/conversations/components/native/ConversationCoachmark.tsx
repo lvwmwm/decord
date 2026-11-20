@@ -1,20 +1,20 @@
-// Module ID: 14281
-// Function ID: 14282
+// Module ID: 14249
+// Function ID: 14250
 // Name: ConversationCoachmark
-// Dependencies: [32, 19, 17, 4638, 21, 4625, 4792, 575, 5383, 1113, 8960, 8967, 2]
+// Dependencies: [32, 19, 17, 4640, 21, 4627, 4794, 575, 5385, 1112, 8960, 8967, 2]
 // Exports: ConversationCoachmark
 
-// Module 14281 (ConversationCoachmark)
+// Module 14249 (ConversationCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import intl3 from "intl" /* 1113 */;
-import dismissible_content from "dismissible_content" /* 4625 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4638 */;
-import Text_Text from "Text/Text" /* 5383 */;
+import intl3 from "intl" /* 1112 */;
+import dismissible_content from "dismissible_content" /* 4627 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4640 */;
+import Text_Text from "Text/Text" /* 5385 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;

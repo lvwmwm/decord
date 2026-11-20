@@ -1,21 +1,21 @@
-// Module ID: 14764
-// Function ID: 14765
+// Module ID: 14723
+// Function ID: 14724
 // Name: EndStageActionSheet
-// Dependencies: [19, 17, 6379, 1072, 21, 4792, 575, 5006, 9543, 14602, 1187, 1113, 5383, 5390, 6382, 2]
+// Dependencies: [19, 17, 6381, 1071, 21, 4794, 575, 5008, 9543, 14570, 1186, 1112, 5385, 5392, 6384, 2]
 // Exports: default
 
-// Module 14764 (EndStageActionSheet)
+// Module 14723 (EndStageActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
-import StageChannelsConstants from "StageChannelsConstants" /* 6379 */;
-import StageChannelActionCreators from "StageChannelActionCreators" /* 6382 */;
+import Constants from "Constants" /* 1071 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5008 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 6381 */;
+import StageChannelActionCreators from "StageChannelActionCreators" /* 6384 */;
 import CallsUtils from "CallsUtils" /* 9543 */;
-import ScrollHandlingActionSheetDefault from "ScrollHandlingActionSheet" /* 14602 */;
+import ScrollHandlingActionSheetDefault from "ScrollHandlingActionSheet" /* 14570 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -45,19 +45,19 @@ export default function EndStageActionSheet(channel) {
   const tmp = closure_7();
   let obj = { children: closure_6(View, obj2) };
   obj2 = { style: tmp.container, children: items };
-  let obj3 = { style: tmp.title, accessibilityRole: "header", children: intl.string(channel(1113).t.pADdJu) };
+  let obj3 = { style: tmp.title, accessibilityRole: "header", children: intl.string(channel(1112).t.pADdJu) };
   const tmp2 = ScrollHandlingActionSheetDefault;
-  const LegacyText = channel(1187).LegacyText;
-  intl = channel(1113).intl;
+  const LegacyText = channel(1186).LegacyText;
+  intl = channel(1112).intl;
   items = [closure_5(LegacyText, obj3), , , ];
-  const obj4 = { style: tmp.subtitle, variant: "body-md/medium", color: "text-default", children: intl2.string(channel(1113).t.mT7jwN) };
-  const Text = channel(5383).Text;
-  intl2 = channel(1113).intl;
+  const obj4 = { style: tmp.subtitle, variant: "body-md/medium", color: "text-default", children: intl2.string(channel(1112).t.mT7jwN) };
+  const Text = channel(5385).Text;
+  intl2 = channel(1112).intl;
   items[1] = closure_5(Text, obj4);
   const obj5 = { style: tmp.cancelButton, children: closure_5(Button, obj6) };
   obj6 = {
     variant: "secondary",
-    text: intl3.string(channel(1113).t.xTwqz2),
+    text: intl3.string(channel(1112).t.xTwqz2),
     onPress: function handleClose() {
       const obj = ActionSheetActionCreatorsDefault;
       obj.hideActionSheet(closure_4);
@@ -65,13 +65,13 @@ export default function EndStageActionSheet(channel) {
       obj2.handleDisconnect(channel);
     }
   };
-  Button = channel(5390).Button;
-  intl3 = channel(1113).intl;
+  Button = channel(5392).Button;
+  intl3 = channel(1112).intl;
   items[2] = closure_5(View, obj5);
   const obj7 = { style: tmp.confirmButton, children: closure_5(Button2, obj8) };
   obj8 = {
     variant: "destructive",
-    text: intl4.string(channel(1113).t.wnWqGg),
+    text: intl4.string(channel(1112).t.wnWqGg),
     onPress: function handleConfirmClick() {
       const obj = StageChannelActionCreators;
       obj.endStage(channel);
@@ -81,8 +81,8 @@ export default function EndStageActionSheet(channel) {
       obj3.handleDisconnect(channel);
     }
   };
-  Button2 = channel(5390).Button;
-  intl4 = channel(1113).intl;
+  Button2 = channel(5392).Button;
+  intl4 = channel(1112).intl;
   items[3] = closure_5(View, obj7);
   return closure_5(tmp2, obj);
 };

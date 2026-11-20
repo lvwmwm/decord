@@ -1,31 +1,31 @@
-// Module ID: 10083
-// Function ID: 10084
+// Module ID: 10086
+// Function ID: 10087
 // Name: UserProfileAddGameActionSheet
-// Dependencies: [32, 19, 17, 502, 10084, 7950, 21, 4792, 575, 6926, 2152, 2153, 7858, 5479, 10085, 5367, 7307, 10089, 504, 10090, 6839, 10091, 9809, 10097, 10092, 10093, 10094, 4801, 1113, 5802, 8017, 6559, 5006, 10082, 5020, 7396, 7308, 6901, 5383, 7313, 2]
+// Dependencies: [32, 19, 17, 502, 10087, 7949, 21, 4794, 575, 6925, 2150, 2151, 7857, 5481, 10088, 5369, 7306, 10092, 504, 10093, 6839, 10094, 9811, 10100, 10095, 10096, 10097, 4803, 1112, 5804, 8016, 6561, 5008, 10085, 5022, 7395, 7307, 6900, 5385, 7312, 2]
 // Exports: default
 
-// Module 10083 (UserProfileAddGameActionSheet)
+// Module 10086 (UserProfileAddGameActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl4 from "intl" /* 1113 */;
-import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 2152 */;
-import StringUtils from "StringUtils" /* 2153 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4801 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
-import _extends from "_extends" /* 6559 */;
+import intl4 from "intl" /* 1112 */;
+import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 2150 */;
+import StringUtils from "StringUtils" /* 2151 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4803 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5008 */;
+import _extends from "_extends" /* 6561 */;
 import UserProfileGameWidgetTypes from "UserProfileGameWidgetTypes" /* 6839 */;
-import TableRow2 from "TableRow" /* 6926 */;
-import Constants from "Constants" /* 7950 */;
-import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8017 */;
-import openUserProfileAddGameActionSheet from "openUserProfileAddGameActionSheet" /* 10082 */;
-import GamePlatformBadgeRowDefault from "GamePlatformBadgeRow" /* 10085 */;
-import WidgetUtils from "WidgetUtils" /* 10094 */;
+import TableRow2 from "TableRow" /* 6925 */;
+import Constants from "Constants" /* 7949 */;
+import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8016 */;
+import openUserProfileAddGameActionSheet from "openUserProfileAddGameActionSheet" /* 10085 */;
+import GamePlatformBadgeRowDefault from "GamePlatformBadgeRow" /* 10088 */;
+import WidgetUtils from "WidgetUtils" /* 10097 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import WidgetStore from "WidgetStore" /* 10084 */;
+import WidgetStore from "WidgetStore" /* 10087 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let map, set;
@@ -91,13 +91,13 @@ let closure_12 = react.memo(function AddGameRow(option) {
     const tmp12 = require;
     if (obj3.isNullOrEmpty(tmp7Result)) {
       const obj4 = { size: "sm", style: tmp.gameIcon };
-      tmp11Result = tmp11(tmp12(7858).UnknownGameIcon, obj4);
+      tmp11Result = tmp11(tmp12(7857).UnknownGameIcon, obj4);
     } else {
       const obj5 = { style: items, source: obj6 };
       items = [, ];
       ({ gameIcon: arr[0], gameIconBackground: arr[1] } = tmp);
       obj6 = { uri: tmp7Result };
-      tmp11Result = tmp11(tmp5(5479), obj5);
+      tmp11Result = tmp11(tmp5(5481), obj5);
     }
     let platformAvailability;
     tmp5Result = GamePlatformBadgeRowDefault;
@@ -366,9 +366,9 @@ export default function UserProfileAddGameActionSheet(widgetType) {
       if (gameIds.includes(gameId)) {
         onAddGame(gameId);
       }
-      const AccessibilityAnnouncer = tmp5(4801).AccessibilityAnnouncer;
+      const AccessibilityAnnouncer = tmp5(4803).AccessibilityAnnouncer;
       const announce = AccessibilityAnnouncer.announce;
-      const intl = tmp5(1113).intl;
+      const intl = tmp5(1112).intl;
       announce(intl.string(intl4.t.q0U3DE));
       const obj4 = { action: memo.GAME_ADDED, gameId };
       callback(obj4);

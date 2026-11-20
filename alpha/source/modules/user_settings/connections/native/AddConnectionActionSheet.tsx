@@ -1,19 +1,19 @@
-// Module ID: 16169
-// Function ID: 16170
+// Module ID: 16133
+// Function ID: 16134
 // Name: AddConnectionActionSheet
-// Dependencies: [1072, 2149, 21, 4792, 1187, 5001, 1630, 8177, 6745, 5020, 7396, 1113, 5024, 6926, 5006, 6905, 1414, 4799, 7402, 7401, 7420, 2]
+// Dependencies: [1071, 2147, 21, 4794, 1186, 5003, 1628, 8176, 6745, 5022, 7395, 1112, 5026, 6925, 5008, 6904, 1412, 4801, 7401, 7400, 7419, 2]
 // Exports: default
 
-// Module 16169 (AddConnectionActionSheet)
-import Constants from "Constants" /* 1072 */;
-import AvatarUtils from "AvatarUtils" /* 1414 */;
-import UserApplicationIdentityConstants from "UserApplicationIdentityConstants" /* 2149 */;
-import shared from "shared" /* 4799 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
-import TableRow2 from "TableRow" /* 6926 */;
+// Module 16133 (AddConnectionActionSheet)
+import Constants from "Constants" /* 1071 */;
+import AvatarUtils from "AvatarUtils" /* 1412 */;
+import UserApplicationIdentityConstants from "UserApplicationIdentityConstants" /* 2147 */;
+import shared from "shared" /* 4801 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5008 */;
+import TableRow2 from "TableRow" /* 6925 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
-import native_mod from "native" /* 1187 */;
+import createStyles_mod from "createStyles" /* 4794 */;
+import native_mod from "native" /* 1186 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -34,10 +34,10 @@ function AddApplicationIdentityTableRow(application) {
   _require = undefined;
   let analyticsLocations;
   ({ start, end } = application);
-  ({ startAuthorization: c0, canStartAuthorization } = analyticsLocations(7402)(application));
-  const tmp2 = analyticsLocations(7402)(application);
-  const tmp3 = analyticsLocations(7401);
-  analyticsLocations = tmp3(analyticsLocations(7420).ACTION_SHEET).analyticsLocations;
+  ({ startAuthorization: c0, canStartAuthorization } = analyticsLocations(7401)(application));
+  const tmp2 = analyticsLocations(7401)(application);
+  const tmp3 = analyticsLocations(7400);
+  analyticsLocations = tmp3(analyticsLocations(7419).ACTION_SHEET).analyticsLocations;
   const getIconSource = application.getIconSource;
   const tmp4 = closure_7();
   let obj = require("native");
@@ -60,7 +60,7 @@ function AddApplicationIdentityTableRow(application) {
   const TableRow = require("TableRow").TableRow;
   if (null != iconSource) {
     const obj3 = { source: iconSource, style: tmp4.icon, disableColor: true };
-    tmp7Result = tmp7(tmp5(1187).Icon, obj3);
+    tmp7Result = tmp7(tmp5(1186).Icon, obj3);
   }
   return closure_5(TableRow, obj2, application.id);
 }
@@ -135,10 +135,10 @@ export default function AddConnectionActionSheet() {
           found(found1[15])(obj2);
         },
         icon: hasOwnProperty(Icon, obj2),
-        trailing: hasOwnProperty(tmp2(6926).TableRow.Arrow, {})
+        trailing: hasOwnProperty(tmp2(6925).TableRow.Arrow, {})
       };
-      Icon = tmp2(1187).Icon;
-      const makeSource = tmp2(1414).makeSource;
+      Icon = tmp2(1186).Icon;
+      const makeSource = tmp2(1412).makeSource;
       AvatarUtils;
       const tmp2Result2 = shared;
       obj2 = { source: makeSource(tmp2Result2.isThemeDark(closure_0) ? icon.darkPNG : icon.lightPNG), disableColor: true };

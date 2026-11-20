@@ -1,22 +1,22 @@
-// Module ID: 18490
-// Function ID: 18491
+// Module ID: 18314
+// Function ID: 18315
 // Name: ConjureShellGlow
-// Dependencies: [32, 19, 17, 4793, 1192, 21, 1380, 575, 671, 4792, 504, 4800, 1655, 5002, 5347, 18491, 7016, 2]
+// Dependencies: [32, 19, 17, 4795, 1191, 21, 1378, 575, 671, 4794, 504, 4802, 1653, 5004, 5349, 18315, 7015, 2]
 // Exports: default
 
-// Module 18490 (ConjureShellGlow)
+// Module 18314 (ConjureShellGlow)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import timing_timing from "timing/timing" /* 5002 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import timing_timing from "timing/timing" /* 5004 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4793 */;
-import ThemeStore from "ThemeStore" /* 1192 */;
+import AccessibilityStore from "AccessibilityStore" /* 4795 */;
+import ThemeStore from "ThemeStore" /* 1191 */;
 import Fragment from "Fragment" /* 21 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
-import createStyles from "createStyles" /* 4792 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
+import createStyles from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let set, set2, set3;
@@ -234,7 +234,7 @@ export default function ConjureShellGlow(thinking) {
   sharedValue5 = tmp2Result14.useSharedValue(0);
   const items4 = [sharedValue2, sharedValue3, sharedValue, thinking];
   const effect = obj4.useEffect(() => {
-    const Easing = _mod1655.Easing;
+    const Easing = _mod1653.Easing;
     const bezierResult = Easing.bezier(0.4, 0, 0.2, 1);
     let num = 0;
     set = sharedValue.set;
@@ -268,28 +268,28 @@ export default function ConjureShellGlow(thinking) {
     let fn;
     const tmp = stateFromStores;
     if (tmp) {
-      const obj3 = _mod1655;
+      const obj3 = _mod1653;
       obj3.cancelAnimation(sharedValue4);
-      const obj4 = _mod1655;
+      const obj4 = _mod1653;
       obj4.cancelAnimation(sharedValue5);
       const result = sharedValue4.set(0);
       const result1 = sharedValue5.set(0);
     } else if (thinking) {
       set = sharedValue4.set;
-      const withRepeat = _mod1655.withRepeat;
-      _mod1655;
-      let obj = { duration: 24000, easing: Easing.inOut(_mod1655.Easing.ease) };
+      const withRepeat = _mod1653.withRepeat;
+      _mod1653;
+      let obj = { duration: 24000, easing: Easing.inOut(_mod1653.Easing.ease) };
       const withTiming = timing_timing.withTiming;
       timing_timing;
-      Easing = _mod1655.Easing;
+      Easing = _mod1653.Easing;
       const result2 = set(withRepeat(withTiming(1, obj), -1, true));
       set2 = sharedValue5.set;
-      const withRepeat2 = _mod1655.withRepeat;
-      _mod1655;
-      let obj2 = { duration: 12000, easing: Easing2.inOut(_mod1655.Easing.ease) };
+      const withRepeat2 = _mod1653.withRepeat;
+      _mod1653;
+      let obj2 = { duration: 12000, easing: Easing2.inOut(_mod1653.Easing.ease) };
       const withTiming2 = timing_timing.withTiming;
       timing_timing;
-      Easing2 = _mod1655.Easing;
+      Easing2 = _mod1653.Easing;
       set2(withRepeat2(withTiming2(1, obj2), -1, true));
       fn = () => {
         const obj = thinking(stateFromStores1[12]);
@@ -309,9 +309,9 @@ export default function ConjureShellGlow(thinking) {
       if (tmp2) {
         const result = sharedValue1.set(0);
         set = sharedValue1.set;
-        const withRepeat = _mod1655.withRepeat;
-        _mod1655;
-        let obj = { duration: 5500, easing: _mod1655.Easing.ease };
+        const withRepeat = _mod1653.withRepeat;
+        _mod1653;
+        let obj = { duration: 5500, easing: _mod1653.Easing.ease };
         const withTiming = timing_timing.withTiming;
         timing_timing;
         const result1 = set(withRepeat(withTiming(1, obj), -1, false));
@@ -322,7 +322,7 @@ export default function ConjureShellGlow(thinking) {
       }
       return fn;
     }
-    const obj2 = _mod1655;
+    const obj2 = _mod1653;
     obj2.cancelAnimation(sharedValue1);
     set2 = sharedValue1.set;
     const obj3 = timing_timing;

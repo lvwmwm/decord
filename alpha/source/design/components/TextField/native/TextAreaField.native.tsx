@@ -1,23 +1,23 @@
-// Module ID: 7343
-// Function ID: 7344
+// Module ID: 7342
+// Function ID: 7343
 // Name: TextAreaField
-// Dependencies: [19, 17, 21, 4792, 575, 5356, 5522, 7122, 7110, 4957, 7344, 1113, 7125, 7128, 5383, 2]
+// Dependencies: [19, 17, 21, 4794, 575, 5358, 5524, 7121, 7109, 4959, 7343, 1112, 7124, 7127, 5385, 2]
 // Exports: TextAreaField
 
-// Module 7343 (TextAreaField)
+// Module 7342 (TextAreaField)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl4 from "intl" /* 1113 */;
-import native from "native" /* 4957 */;
-import useToken from "useToken" /* 5356 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 5522 */;
-import useTextField from "useTextField" /* 7110 */;
-import InputFieldContainer2 from "InputFieldContainer" /* 7122 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 7128 */;
-import useCharacterLimitAnnouncement2 from "useCharacterLimitAnnouncement" /* 7344 */;
+import intl4 from "intl" /* 1112 */;
+import native from "native" /* 4959 */;
+import useToken from "useToken" /* 5358 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 5524 */;
+import useTextField from "useTextField" /* 7109 */;
+import InputFieldContainer2 from "InputFieldContainer" /* 7121 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 7127 */;
+import useCharacterLimitAnnouncement2 from "useCharacterLimitAnnouncement" /* 7343 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -78,13 +78,13 @@ export function TextAreaField(ref) {
   const obj3 = { currentLength: state.value.length, maxLength, message: intl.string(intl4.t.c2Jqed) };
   const useCharacterLimitAnnouncement = useCharacterLimitAnnouncement2.useCharacterLimitAnnouncement;
   useCharacterLimitAnnouncement2;
-  intl = tmp2(1113).intl;
+  intl = tmp2(1112).intl;
   const characterLimitAnnouncement = useCharacterLimitAnnouncement(obj3);
   const obj4 = { isFocused, children: items1 };
-  const InputFieldContainer = tmp2(7122).InputFieldContainer;
+  const InputFieldContainer = tmp2(7121).InputFieldContainer;
   const merged1 = Object.assign(merged);
   const obj5 = { ref: innerRef, style: items, placeholderTextColor: inputStyles.placeholderText.color, multiline: true };
-  const NativeTextInput = tmp2(7125).NativeTextInput;
+  const NativeTextInput = tmp2(7124).NativeTextInput;
   const propsForNativeTextInput = _objectWithoutProperties.propsForNativeTextInput;
   _objectWithoutProperties;
   const tmp2Result14 = native;
@@ -99,7 +99,7 @@ export function TextAreaField(ref) {
     let str3 = "text-muted";
     let str = "text-muted";
     const obj6 = { style: tmp6.maxLengthIndicator, children: React3(Text, obj7) };
-    Text = tmp2(5383).Text;
+    Text = tmp2(5385).Text;
     const tmp20 = View;
     if (null != maxLength) {
       str = str3;
@@ -116,13 +116,13 @@ export function TextAreaField(ref) {
     }
     obj7 = { variant: "body-xs/semibold", color: str, accessibilityLabel: formatToPlainStringResult, children: diff };
     if (null != nodeText) {
-      const intl3 = tmp2(1113).intl;
+      const intl3 = tmp2(1112).intl;
       const obj8 = { label: nodeText, remainingCharacters: diff };
-      formatToPlainStringResult = intl3.formatToPlainString(tmp2(1113).t["8Q+k1s"], obj8);
+      formatToPlainStringResult = intl3.formatToPlainString(tmp2(1112).t["8Q+k1s"], obj8);
     } else {
-      const intl2 = tmp2(1113).intl;
+      const intl2 = tmp2(1112).intl;
       const obj9 = { remainingCharacters: diff };
-      formatToPlainStringResult = intl2.formatToPlainString(tmp2(1113).t.fR1cof, obj9);
+      formatToPlainStringResult = intl2.formatToPlainString(tmp2(1112).t.fR1cof, obj9);
     }
     tmp15Result = tmp15(tmp20, obj6);
   }

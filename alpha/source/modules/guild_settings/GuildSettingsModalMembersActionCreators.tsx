@@ -1,13 +1,13 @@
-// Module ID: 12275
-// Function ID: 12276
+// Module ID: 12247
+// Function ID: 12248
 // Name: GuildSettingsModalMembersActionCreators
-// Dependencies: [1072, 572, 1285, 1113, 2]
+// Dependencies: [1071, 572, 1284, 1112, 2]
 
-// Module 12275 (GuildSettingsModalMembersActionCreators)
+// Module 12247 (GuildSettingsModalMembersActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import intl4 from "intl" /* 1113 */;
-import HTTPUtils from "HTTPUtils" /* 1285 */;
-import Constants from "Constants" /* 1072 */;
+import intl4 from "intl" /* 1112 */;
+import HTTPUtils from "HTTPUtils" /* 1284 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -73,12 +73,12 @@ let obj = {
       const intl = intl4.intl;
       let stringResult = intl.string(intl4.t["5LO/Ss"]);
       if (null != userId) {
-        const intl2 = tmp(1113).intl;
-        stringResult = intl2.string(tmp(1113).t.rJfW6S);
+        const intl2 = tmp(1112).intl;
+        stringResult = intl2.string(tmp(1112).t.rJfW6S);
       }
       if (403 === status.status) {
-        const intl3 = tmp(1113).intl;
-        stringResult = intl3.formatToMarkdownString(tmp(1113).t.Izf9jO, {});
+        const intl3 = tmp(1112).intl;
+        stringResult = intl3.formatToMarkdownString(tmp(1112).t.Izf9jO, {});
       }
       const obj = DispatcherDefault;
       obj.dispatch({ type: "GUILD_SETTINGS_MODAL_MEMBERS_CHANGE_NICKNAME_FAILURE", error: stringResult });

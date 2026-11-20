@@ -1,21 +1,21 @@
-// Module ID: 16031
-// Function ID: 16032
+// Module ID: 15995
+// Function ID: 15996
 // Name: useParentalControlSettings
-// Dependencies: [5, 19, 8219, 6383, 9018, 16032, 16035, 1196, 8114, 7296, 9016, 504, 8218, 6388, 2]
+// Dependencies: [5, 19, 8218, 6385, 9018, 15996, 15999, 1195, 8113, 7295, 9016, 504, 8217, 6390, 2]
 // Exports: useAllowFriendsFromMutualGuildsOnlyForTeen, useDefaultGuildsRestricted, useIsParentallyControlled, useParentalControlledConsent, useParentalControlledExplicitContentSettings, useParentalControlledGoreContentSettings
 
-// Module 16031 (useParentalControlSettings)
-import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
-import Constants from "Constants" /* 6383 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7296 */;
-import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 8114 */;
+// Module 15995 (useParentalControlSettings)
+import preloaded_user_settings from "preloaded_user_settings" /* 1195 */;
+import Constants from "Constants" /* 6385 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7295 */;
+import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 8113 */;
 import useUserLinks from "useUserLinks" /* 9016 */;
 import useSelectedTeen from "useSelectedTeen" /* 9018 */;
-import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 16032 */;
-import FamilyCenterControlledSettingsUtils from "FamilyCenterControlledSettingsUtils" /* 16035 */;
+import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 15996 */;
+import FamilyCenterControlledSettingsUtils from "FamilyCenterControlledSettingsUtils" /* 15999 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import FamilyCenterControlledSettingsStore from "FamilyCenterControlledSettingsStore" /* 8219 */;
+import FamilyCenterControlledSettingsStore from "FamilyCenterControlledSettingsStore" /* 8218 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -126,7 +126,7 @@ export function useAllowFriendsFromMutualGuildsOnlyForTeen() {
   let controlledSetting;
   let obj = controlledSetting(9018);
   const selectedTeen = obj.useSelectedTeen();
-  const ParentalControlledFriendSourceFlags = controlledSetting(16032).ParentalControlledFriendSourceFlags;
+  const ParentalControlledFriendSourceFlags = controlledSetting(15996).ParentalControlledFriendSourceFlags;
   let id;
   const useControlledSetting = ParentalControlledFriendSourceFlags.useControlledSetting;
   if (selectedTeen != null) {
@@ -168,7 +168,7 @@ export function useParentalControlledConsent(PERSONALIZATION) {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -222,7 +222,7 @@ export function useParentalControlledConsent(PERSONALIZATION) {
           c4 = 0;
         }
         c5 = 3;
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp15) {
         let closure_3 = tmp15;
         if (0 === c4) {

@@ -1,11 +1,11 @@
 // Module ID: 9418
 // Function ID: 9419
 // Name: useOffsetX
-// Dependencies: [1655]
+// Dependencies: [1653]
 // Exports: useOffsetX
 
 // Module 9418 (useOffsetX)
-import _mod1655 from "module_1655" /* 1655 */;
+import _mod1653 from "module_1653" /* 1653 */;
 
 let closure_2 = { code: "(function pnpm_useOffsetXTs1(){let[visibleRanges,index,loop,TOTAL_WIDTH,MIN,HALF_WIDTH,startPos,MAX,interpolate,handlerOffset,Extrapolation,size]=this.__closure;const{negativeRange:negativeRange,positiveRange:positiveRange}=visibleRanges.value;if(index>=negativeRange[0]&&index<=negativeRange[1]||index>=positiveRange[0]&&index<=positiveRange[1]){if(loop){const inputRange=[-TOTAL_WIDTH,MIN-HALF_WIDTH-startPos-Number.MIN_VALUE,MIN-HALF_WIDTH-startPos,0,MAX+HALF_WIDTH-startPos,MAX+HALF_WIDTH-startPos+Number.MIN_VALUE,TOTAL_WIDTH];const outputRange=[startPos,MAX+HALF_WIDTH-Number.MIN_VALUE,MIN-HALF_WIDTH,startPos,MAX+HALF_WIDTH,MIN-HALF_WIDTH+Number.MIN_VALUE,startPos];return interpolate(handlerOffset.value,inputRange,outputRange,Extrapolation.CLAMP);}return handlerOffset.value+size*index;}return Number.MAX_SAFE_INTEGER;})" };
 
@@ -52,10 +52,10 @@ export const useOffsetX = (viewCount, arg1) => {
   const result3 = diff1 * size;
   const result4 = -diff - diff1 * size;
   let items = [closure_2, arg1, index, loop, result, result4, result1, result2, result3, , , , ];
-  const useDerivedValue = _mod1655.useDerivedValue;
-  items[9] = _mod1655.interpolate;
+  const useDerivedValue = _mod1653.useDerivedValue;
+  items[9] = _mod1653.interpolate;
   items[10] = handlerOffset;
-  items[11] = _mod1655.Extrapolation;
+  items[11] = _mod1653.Extrapolation;
   items[12] = size;
   let c0;
   let c1;

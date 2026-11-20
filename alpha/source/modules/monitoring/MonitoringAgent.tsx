@@ -1,15 +1,15 @@
-// Module ID: 6244
-// Function ID: 6245
+// Module ID: 6246
+// Function ID: 6247
 // Name: MonitoringAgent
-// Dependencies: [1072, 1380, 6245, 6246, 17, 6247, 6248, 1285, 2]
+// Dependencies: [1071, 1378, 6247, 6248, 17, 6249, 6250, 1284, 2]
 
-// Module 6244 (MonitoringAgent)
+// Module 6246 (MonitoringAgent)
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1072 */;
-import HTTPUtils from "HTTPUtils" /* 1285 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
-import react_native2 from "react-native" /* 6247 */;
-import MonitoringAgentUtils from "MonitoringAgentUtils" /* 6248 */;
+import Constants from "Constants" /* 1071 */;
+import HTTPUtils from "HTTPUtils" /* 1284 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
+import react_native2 from "react-native" /* 6249 */;
+import MonitoringAgentUtils from "MonitoringAgentUtils" /* 6250 */;
 import size from "module_2" /* 2 */;
 
 let obj;
@@ -57,10 +57,10 @@ class MonitoringAgent {
       const _HermesInternal = HermesInternal;
       tags1.push("platform:" + str);
     }
-    const CurrentReleaseChannel = tmp(6245).CurrentReleaseChannel;
+    const CurrentReleaseChannel = tmp(6247).CurrentReleaseChannel;
     let tmp9 = null;
     if (null != CurrentReleaseChannel) {
-      const ALL = tmp(6246).ReleaseChannelsSets.ALL;
+      const ALL = tmp(6248).ReleaseChannelsSets.ALL;
       tmp9 = null;
       if (ALL.has(CurrentReleaseChannel)) {
         tmp9 = CurrentReleaseChannel;
@@ -113,7 +113,7 @@ class MonitoringAgent {
       HermesBuiltin.arraySpread(items, self._metrics, 0);
       const HTTP = HTTPUtils.HTTP;
       const request = { url: Endpoints.METRICS_V2, body, retries: 1, rejectWithError: true };
-      body = { metrics: items, client_info: { built_at: "1795069243004", build_number: "35620300000000" } };
+      body = { metrics: items, client_info: { built_at: "1795155516215", build_number: "35620400000000" } };
       const postResult = HTTP.post(request);
       postResult.catch(() => {
         if (self._metrics.length + items.length < 100) {

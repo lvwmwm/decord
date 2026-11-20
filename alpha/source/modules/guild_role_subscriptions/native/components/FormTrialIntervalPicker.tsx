@@ -1,14 +1,14 @@
-// Module ID: 20077
-// Function ID: 20078
+// Module ID: 19897
+// Function ID: 19898
 // Name: FormTrialIntervalPicker
-// Dependencies: [19, 21, 6926, 1113, 16687, 5006, 7493, 2121, 2]
+// Dependencies: [19, 21, 6925, 1112, 16511, 5008, 7492, 2119, 2]
 // Exports: default
 
-// Module 20077 (FormTrialIntervalPicker)
+// Module 19897 (FormTrialIntervalPicker)
 import Fragment from "Fragment" /* 21 */;
-import intl4 from "intl" /* 1113 */;
-import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
+import intl4 from "intl" /* 1112 */;
+import asyncRequire from "asyncRequire" /* 2119 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5008 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -29,8 +29,8 @@ export default function FormTrialIntervalPicker(interval) {
   let tmp3 = dependencyMap;
   const disabled = interval.disabled;
   let obj = {
-    label: intl.string(interval(1113).t.m1KuWd),
-    subLabel: intl2.string(interval(1113).t.NB9NLF),
+    label: intl.string(interval(1112).t.m1KuWd),
+    subLabel: intl2.string(interval(1112).t.NB9NLF),
     trailing: tmp(TrailingText, { text: stringResult }),
     arrow: true,
     onPress: function handleSelectTrialInterval() {
@@ -51,7 +51,7 @@ export default function FormTrialIntervalPicker(interval) {
         selectedItem: tmp4,
         hasIcons: false
       };
-      const tmp2 = asyncRequire(7493, dependencyMap.paths);
+      const tmp2 = asyncRequire(7492, dependencyMap.paths);
       intl = intl4.intl;
       tmp4 = interval;
       const tmp3 = GuildRoleSubscriptionTrialIntervalSelect;
@@ -62,15 +62,15 @@ export default function FormTrialIntervalPicker(interval) {
     },
     disabled
   };
-  const TableRow = interval(6926).TableRow;
-  intl = interval(1113).intl;
-  intl2 = interval(1113).intl;
-  TrailingText = interval(6926).TableRow.TrailingText;
+  const TableRow = interval(6925).TableRow;
+  intl = interval(1112).intl;
+  intl2 = interval(1112).intl;
+  TrailingText = interval(6925).TableRow.TrailingText;
   if (null == interval) {
-    const intl3 = tmp2(1113).intl;
-    stringResult = intl3.string(tmp2(1113).t.WZG1BU);
+    const intl3 = tmp2(1112).intl;
+    stringResult = intl3.string(tmp2(1112).t.WZG1BU);
   } else {
-    const tmp2Result = tmp2(16687);
+    const tmp2Result = tmp2(16511);
     stringResult = tmp2Result.formatPlanIntervalDuration(interval);
   }
   return tmp(TableRow, obj);

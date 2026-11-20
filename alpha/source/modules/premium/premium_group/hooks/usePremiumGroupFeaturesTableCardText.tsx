@@ -1,17 +1,17 @@
-// Module ID: 14003
-// Function ID: 14004
+// Module ID: 13972
+// Function ID: 13973
 // Name: usePremiumGroupFeaturesTableCardText
-// Dependencies: [2179, 2187, 1113, 3535, 1401, 8678, 14004, 504, 2]
+// Dependencies: [2177, 2185, 1112, 3537, 1399, 8718, 13973, 504, 2]
 // Exports: default
 
-// Module 14003 (usePremiumGroupFeaturesTableCardText)
+// Module 13972 (usePremiumGroupFeaturesTableCardText)
 import get_initialized from "get initialized" /* 504 */;
-import user from "user" /* 1401 */;
-import _modDef3535 from "module_3535" /* 3535 */;
-import PremiumGroupUtils from "PremiumGroupUtils" /* 8678 */;
-import usePremiumGroupPrimaryNameDefault from "usePremiumGroupPrimaryName" /* 14004 */;
-import SubscriptionStore from "SubscriptionStore" /* 2179 */;
-import PremiumGroupConstants from "PremiumGroupConstants" /* 2187 */;
+import user from "user" /* 1399 */;
+import _modDef3537 from "module_3537" /* 3537 */;
+import PremiumGroupUtils from "PremiumGroupUtils" /* 8718 */;
+import usePremiumGroupPrimaryNameDefault from "usePremiumGroupPrimaryName" /* 13973 */;
+import SubscriptionStore from "SubscriptionStore" /* 2177 */;
+import PremiumGroupConstants from "PremiumGroupConstants" /* 2185 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -37,10 +37,10 @@ export default function usePremiumGroupFeaturesTableCardText(arg0, arg1) {
     } else {
       priceString = null;
       if (null != tmp4) {
-        const intl = tmp(1113).intl;
+        const intl = tmp(1112).intl;
         const format = intl.format;
         const obj3 = { primaryName: tmp4, premiumGroupProductName: React3() };
-        const Nu9LNm = tmp3(3535).Nu9LNm;
+        const Nu9LNm = tmp3(3537).Nu9LNm;
         priceString = format(Nu9LNm, obj3);
       }
     }
@@ -49,15 +49,15 @@ export default function usePremiumGroupFeaturesTableCardText(arg0, arg1) {
       str = priceString;
     }
     if (arg0 === user.PremiumSubscriptionGroupRole.PRIMARY) {
-      const intl3 = tmp(1113).intl;
+      const intl3 = tmp(1112).intl;
       const format3 = intl3.format;
       const obj4 = { helpCenterLink: hasOwnProperty, premiumGroupProductName: React3() };
-      const prop = tmp3(3535)["+R/K74"];
+      const prop = tmp3(3537)["+R/K74"];
       format3Result = format3(prop, obj4);
     } else {
-      const intl2 = tmp(1113).intl;
+      const intl2 = tmp(1112).intl;
       const format2 = intl2.format;
-      const tmp3Result = _modDef3535;
+      const tmp3Result = _modDef3537;
       const obj5 = { helpCenterLink: hasOwnProperty };
       format3Result = format2(arg1 ? tmp3Result["xF+upx"] : tmp3Result.qqfnOm, obj5);
     }

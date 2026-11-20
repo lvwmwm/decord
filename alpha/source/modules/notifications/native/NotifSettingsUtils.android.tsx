@@ -1,12 +1,12 @@
-// Module ID: 15575
-// Function ID: 15576
+// Module ID: 15539
+// Function ID: 15540
 // Name: NotifSettingsUtils
-// Dependencies: [15569, 1113, 15573, 15576, 1242, 2]
+// Dependencies: [15533, 1112, 15537, 15540, 1241, 2]
 
-// Module 15575 (NotifSettingsUtils)
-import intl2 from "intl" /* 1113 */;
-import react_nativeDefault from "react-native" /* 15576 */;
-import NotificationSettingsConstants from "NotificationSettingsConstants" /* 15569 */;
+// Module 15539 (NotifSettingsUtils)
+import intl2 from "intl" /* 1112 */;
+import react_nativeDefault from "react-native" /* 15540 */;
+import NotificationSettingsConstants from "NotificationSettingsConstants" /* 15533 */;
 import size from "module_2" /* 2 */;
 
 let map, map1, set, set2;
@@ -15,7 +15,7 @@ let c3;
 let closure_4;
 let hasOwnProperty;
 let tmp2;
-const SentryUtilsDefault = tmp2(1242);
+const SentryUtilsDefault = tmp2(1241);
 function inferImportanceFromBehavior(visibility) {
   if (!("ringtone" in visibility)) {
     let HIGH;

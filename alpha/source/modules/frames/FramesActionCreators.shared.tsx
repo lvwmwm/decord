@@ -1,20 +1,20 @@
-// Module ID: 10562
-// Function ID: 10563
+// Module ID: 10504
+// Function ID: 10505
 // Name: launchFrame
-// Dependencies: [32, 5, 6502, 6503, 5418, 10563, 572, 6826, 6505, 6827, 10565, 10572, 6834, 2]
+// Dependencies: [32, 5, 6504, 6505, 5420, 10505, 572, 6826, 6507, 6827, 10507, 10514, 6834, 2]
 // Exports: attachFrameHostWindow, attachFrameIframe, detachFrameHostWindow, detachFrameIframe, launchFrame, refreshProxyTicket, resetFrameGuestClaims, resetFrameLayoutModes, setFramePictureInPictureInteractive, setFrameRunsInBackground, setFrameUserMuted, updateFramePanelMode
 
-// Module 10562 (launchFrame)
+// Module 10504 (launchFrame)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5418 */;
-import getChannelIdForEmbeddedSurface from "getChannelIdForEmbeddedSurface" /* 6505 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5420 */;
+import getChannelIdForEmbeddedSurface from "getChannelIdForEmbeddedSurface" /* 6507 */;
 import createProxyTicket2 from "createProxyTicket" /* 6826 */;
 import leaveFrame from "leaveFrame" /* 6834 */;
-import leaveCurrentEmbeddedActivity from "leaveCurrentEmbeddedActivity" /* 10563 */;
+import leaveCurrentEmbeddedActivity from "leaveCurrentEmbeddedActivity" /* 10505 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import FramesStore from "FramesStore" /* 6502 */;
-import FramesConstants from "FramesConstants" /* 6503 */;
+import FramesStore from "FramesStore" /* 6504 */;
+import FramesConstants from "FramesConstants" /* 6505 */;
 import size from "module_2" /* 2 */;
 
 let analyticsContext, closure_1, error, hostWindowKey, intent, launch, launchRequestId, message, proxyTicket, type;
@@ -47,7 +47,7 @@ let obj = function _launchFrame() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -286,7 +286,7 @@ obj = function _refreshProxyTicket() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

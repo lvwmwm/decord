@@ -1,18 +1,18 @@
-// Module ID: 11659
-// Function ID: 11660
+// Module ID: 11601
+// Function ID: 11602
 // Name: StageSpeakInviteNotification
-// Dependencies: [19, 17, 11052, 21, 4792, 575, 5408, 1113, 10788, 10792, 11090, 11098, 10862, 5808, 7472, 7032, 6382, 7380, 11660, 5383, 6376, 2]
+// Dependencies: [19, 17, 10994, 21, 4794, 575, 5410, 1112, 10730, 10734, 11032, 11040, 10804, 5810, 7471, 7031, 6384, 7379, 11602, 5385, 6378, 2]
 
-// Module 11659 (StageSpeakInviteNotification)
+// Module 11601 (StageSpeakInviteNotification)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import StageChannelActionCreatorExtras from "StageChannelActionCreatorExtras" /* 6376 */;
-import StageChannelActionCreators from "StageChannelActionCreators" /* 6382 */;
-import InAppNotificationConstants from "InAppNotificationConstants" /* 11052 */;
-import speakOnStageDefault from "speakOnStage" /* 11660 */;
+import StageChannelActionCreatorExtras from "StageChannelActionCreatorExtras" /* 6378 */;
+import StageChannelActionCreators from "StageChannelActionCreators" /* 6384 */;
+import InAppNotificationConstants from "InAppNotificationConstants" /* 10994 */;
+import speakOnStageDefault from "speakOnStage" /* 11602 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -55,17 +55,17 @@ const memoResult = react.memo(function StageSpeakInviteNotification(notification
   const channel = notification.channel;
   const guild = notification.guild;
   let tmp = closure_8();
-  let stringResult = guild(5408)(channel);
+  let stringResult = guild(5410)(channel);
   if (stringResult == null) {
-    const intl = channel(1113).intl;
-    stringResult = intl.string(channel(1113).t["/YzI63"]);
+    const intl = channel(1112).intl;
+    stringResult = intl.string(channel(1112).t["/YzI63"]);
   }
   dependencyMap = stringResult;
-  const tmp6 = guild(10788)();
+  const tmp6 = guild(10730)();
   react = tmp6;
-  let obj = channel(10792);
+  let obj = channel(10734);
   isVoicePanelOpen = obj.useIsVoicePanelOpen(channel.id);
-  const obj2 = channel(11090);
+  const obj2 = channel(11032);
   handleDismissNotification = obj2.useInAppNotificationContext().handleDismissNotification;
   ref = react.useRef(false);
   const items = [handleDismissNotification];
@@ -112,41 +112,41 @@ const memoResult = react.memo(function StageSpeakInviteNotification(notification
     notification
   };
   obj4 = { style: tmp.iconContainer, children: ref(HandRequestSpeakIcon, obj5) };
-  const NotificationPressable = channel(11098).NotificationPressable;
+  const NotificationPressable = channel(11040).NotificationPressable;
   obj5 = { size: "md", color: guild(575).colors.WHITE };
-  HandRequestSpeakIcon = channel(10862).HandRequestSpeakIcon;
+  HandRequestSpeakIcon = channel(10804).HandRequestSpeakIcon;
   obj6 = { direction: "horizontal", spacing: guild(575).space.PX_8, style: tmp.actions, children: items4 };
-  Stack = channel(5808).Stack;
+  Stack = channel(5810).Stack;
   const obj7 = {
     size: "sm",
     variant: "secondary",
-    icon: ref(channel(7032).XSmallIcon, {}),
-    accessibilityLabel: intl2.string(channel(1113).t["1YDv7a"]),
+    icon: ref(channel(7031).XSmallIcon, {}),
+    accessibilityLabel: intl2.string(channel(1112).t["1YDv7a"]),
     onPress() {
       const obj = StageChannelActionCreators;
       const result = obj.audienceAckRequestToSpeak(channel, true);
       callback("declined");
     }
   };
-  const IconButton = channel(7472).IconButton;
-  intl2 = channel(1113).intl;
+  const IconButton = channel(7471).IconButton;
+  intl2 = channel(1112).intl;
   items4 = [ref(IconButton, obj7), ];
   const obj8 = {
     size: "sm",
     variant: "primary",
-    icon: ref(channel(7380).CheckmarkSmallIcon, { color: "white" }),
-    accessibilityLabel: intl3.string(channel(1113).t.MpO0px),
+    icon: ref(channel(7379).CheckmarkSmallIcon, { color: "white" }),
+    accessibilityLabel: intl3.string(channel(1112).t.MpO0px),
     onPress() {
       speakOnStageDefault(channel);
       callback("accepted");
     }
   };
-  const IconButton2 = channel(7472).IconButton;
-  intl3 = channel(1113).intl;
+  const IconButton2 = channel(7471).IconButton;
+  intl3 = channel(1112).intl;
   items4[1] = ref(IconButton2, obj8);
-  obj9 = { variant: "heading-sm/medium", color: "text-subtle", lineClamp: handleDismissNotification, children: intl4.string(channel(1113).t.Ul1RJQ) };
-  Text = channel(5383).Text;
-  intl4 = channel(1113).intl;
+  obj9 = { variant: "heading-sm/medium", color: "text-subtle", lineClamp: handleDismissNotification, children: intl4.string(channel(1112).t.Ul1RJQ) };
+  Text = channel(5385).Text;
+  intl4 = channel(1112).intl;
   return ref(NotificationPressable, obj3);
 });
 size = size_mod;

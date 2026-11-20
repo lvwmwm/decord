@@ -1,14 +1,14 @@
-// Module ID: 2130
-// Function ID: 2131
+// Module ID: 2128
+// Function ID: 2129
 // Name: ZoomedInAnalyticBuilder
-// Dependencies: [1072, 1374, 2131, 2132, 2]
+// Dependencies: [1071, 1372, 2129, 2130, 2]
 // Exports: buildZoomedInAnalyticsEvent
 
-// Module 2130 (ZoomedInAnalyticBuilder)
-import Constants from "Constants" /* 1072 */;
-import ProcessUtilsDefault from "ProcessUtils" /* 1374 */;
-import GatewaySocketOpcode from "GatewaySocketOpcode" /* 2131 */;
-import RTCControlSocket from "RTCControlSocket" /* 2132 */;
+// Module 2128 (ZoomedInAnalyticBuilder)
+import Constants from "Constants" /* 1071 */;
+import ProcessUtilsDefault from "ProcessUtils" /* 1372 */;
+import GatewaySocketOpcode from "GatewaySocketOpcode" /* 2129 */;
+import RTCControlSocket from "RTCControlSocket" /* 2130 */;
 import size from "module_2" /* 2 */;
 
 let gesture;
@@ -533,7 +533,7 @@ let closure_5 = {
     let obj;
     data = data.data;
     if (null == data) {
-      obj = { message_identity: "unknown", socket_kind: "ao" };
+      obj = { message_identity: "unknown", socket_kind: "channel_id" };
     } else {
       const url = data.url;
       let tmp58 = null;

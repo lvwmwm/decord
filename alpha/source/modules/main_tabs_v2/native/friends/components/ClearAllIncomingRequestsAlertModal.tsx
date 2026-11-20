@@ -1,13 +1,13 @@
-// Module ID: 18933
-// Function ID: 18934
+// Module ID: 18757
+// Function ID: 18758
 // Name: ClearAllIncomingRequestsAlertModal
-// Dependencies: [5, 19, 21, 7621, 5745, 1113, 5745, 2]
+// Dependencies: [5, 19, 21, 7620, 5747, 1112, 5747, 2]
 // Exports: default
 
-// Module 18933 (ClearAllIncomingRequestsAlertModal)
-import intl5 from "intl" /* 1113 */;
-import AlertModal2 from "AlertModal" /* 5745 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7621 */;
+// Module 18757 (ClearAllIncomingRequestsAlertModal)
+import intl5 from "intl" /* 1112 */;
+import AlertModal2 from "AlertModal" /* 5747 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7620 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -33,7 +33,7 @@ let obj = function _handleConfirm() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -62,7 +62,7 @@ let obj = function _handleConfirm() {
           return obj;
         } else {
           c0 = 3;
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp6) {
         c0 = 3;

@@ -1,19 +1,19 @@
-// Module ID: 11801
-// Function ID: 11802
+// Module ID: 11743
+// Function ID: 11744
 // Name: useAttachPinotMemberCoachmark
-// Dependencies: [19, 1072, 4638, 21, 11802, 575, 11794, 11804, 1113, 3407, 5383, 8075, 5471, 2188, 8967, 2]
+// Dependencies: [19, 1071, 4640, 21, 11744, 575, 11736, 11746, 1112, 3409, 5385, 8074, 5473, 2186, 8967, 2]
 // Exports: useAttachPinotMemberCoachmark
 
-// Module 11801 (useAttachPinotMemberCoachmark)
+// Module 11743 (useAttachPinotMemberCoachmark)
 import nativeDefault from "native" /* 575 */;
-import intl5 from "intl" /* 1113 */;
-import _modDef3407 from "module_3407" /* 3407 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4638 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import ExperimentalWebIcon2 from "ExperimentalWebIcon" /* 11802 */;
-import PinotAnalytics from "PinotAnalytics" /* 11804 */;
+import intl5 from "intl" /* 1112 */;
+import _modDef3409 from "module_3409" /* 3409 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4640 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import ExperimentalWebIcon2 from "ExperimentalWebIcon" /* 11744 */;
+import PinotAnalytics from "PinotAnalytics" /* 11746 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 1072 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -64,7 +64,7 @@ export function useAttachPinotMemberCoachmark(ref1, channel, bottom) {
     let items;
     let obj2;
     let obj = {
-      title: intl.string(_modDef3407.MrT2mn),
+      title: intl.string(_modDef3409.MrT2mn),
       description: React4(metroImportAll, obj2),
       renderImgComponent: renderWebIcon,
       visible,
@@ -91,7 +91,7 @@ export function useAttachPinotMemberCoachmark(ref1, channel, bottom) {
     intl = intl5.intl;
     obj2 = { children: items };
     const intl2 = intl5.intl;
-    items = [intl2.string(_modDef3407.x9NGts), "\n", ];
+    items = [intl2.string(_modDef3409.x9NGts), "\n", ];
     let obj3 = {
       variant: "body-sm/medium",
       color: "text-link",
@@ -104,7 +104,7 @@ export function useAttachPinotMemberCoachmark(ref1, channel, bottom) {
         const obj4 = { screen: constants2.DATA_AND_PRIVACY };
         obj3.openUserSettings(obj4);
       },
-      children: intl3.string(_modDef3407.eJZ8MS)
+      children: intl3.string(_modDef3409.eJZ8MS)
     };
     const Text = Text_Text.Text;
     intl3 = intl5.intl;

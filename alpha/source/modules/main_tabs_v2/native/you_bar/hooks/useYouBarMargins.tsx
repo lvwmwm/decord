@@ -1,22 +1,22 @@
-// Module ID: 16531
-// Function ID: 16532
+// Module ID: 16354
+// Function ID: 16355
 // Name: useYouBarMargins
-// Dependencies: [16532, 4971, 1630, 11705, 1360, 5356, 575, 2]
+// Dependencies: [16355, 4973, 1628, 11647, 1358, 5358, 575, 2]
 // Exports: useYouBarBottomMargin, useYouBarHorizontalMargin
 
-// Module 16531 (useYouBarMargins)
+// Module 16354 (useYouBarMargins)
 import nativeDefault from "native" /* 575 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import useChatLayoutDefault from "useChatLayout" /* 4971 */;
-import useToken from "useToken" /* 5356 */;
-import VoicePanelDockLayout from "VoicePanelDockLayout" /* 11705 */;
-import YouBarConstants from "YouBarConstants" /* 16532 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
+import useChatLayoutDefault from "useChatLayout" /* 4973 */;
+import useToken from "useToken" /* 5358 */;
+import VoicePanelDockLayout from "VoicePanelDockLayout" /* 11647 */;
+import YouBarConstants from "YouBarConstants" /* 16355 */;
 import size from "module_2" /* 2 */;
 
 let c3;
 let closure_4;
 let tmp2;
-const utils_PlatformUtils = tmp2(1360);
+const utils_PlatformUtils = tmp2(1358);
 ({ YOU_BAR_MARGIN_IOS: c3, YOU_BAR_MARGIN: closure_4 } = YouBarConstants);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/you_bar/hooks/useYouBarMargins.tsx");
 

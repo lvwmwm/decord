@@ -1,19 +1,19 @@
-// Module ID: 14780
-// Function ID: 14781
+// Module ID: 14739
+// Function ID: 14740
 // Name: JoinVoiceChannelButton
-// Dependencies: [19, 17, 4724, 1072, 21, 4792, 10864, 504, 1113, 2020, 6408, 5390, 2]
+// Dependencies: [19, 17, 4726, 1071, 21, 4794, 10806, 504, 1112, 2018, 6410, 5392, 2]
 // Exports: default
 
-// Module 14780 (JoinVoiceChannelButton)
+// Module 14739 (JoinVoiceChannelButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1072 */;
-import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 2020 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6408 */;
-import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 10864 */;
+import Constants from "Constants" /* 1071 */;
+import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 2018 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6410 */;
+import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 10806 */;
 import react from "react" /* 19 */;
-import PermissionStore from "PermissionStore" /* 4724 */;
-import createStyles from "createStyles" /* 4792 */;
+import PermissionStore from "PermissionStore" /* 4726 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;
@@ -30,14 +30,14 @@ export default function JoinVoiceChannelButton(channel) {
   let obj = channel(504);
   const items = [PermissionStore];
   const stateFromStores = obj.useStateFromStores(items, () => !PermissionStore.can(Permissions.CONNECT, channel));
-  const intl = channel(1113).intl;
-  intl.string(channel(1113).t.eIi3Om);
+  const intl = channel(1112).intl;
+  intl.string(channel(1112).t.eIi3Om);
   if (tmp3) {
-    const intl3 = tmp4(1113).intl;
-    intl3.string(tmp4(1113).t.rZfiNq);
+    const intl3 = tmp4(1112).intl;
+    intl3.string(tmp4(1112).t.rZfiNq);
   } else if (stateFromStores) {
-    const intl2 = tmp4(1113).intl;
-    intl2.string(tmp4(1113).t.TVBCKZ);
+    const intl2 = tmp4(1112).intl;
+    intl2.string(tmp4(1112).t.TVBCKZ);
   }
   const items1 = [channel.id];
   const items2 = [tmp.container, style];

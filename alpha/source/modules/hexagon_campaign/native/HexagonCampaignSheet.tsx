@@ -1,27 +1,27 @@
-// Module ID: 16458
-// Function ID: 16459
+// Module ID: 16280
+// Function ID: 16281
 // Name: HexagonCampaignSheet
-// Dependencies: [5, 32, 19, 17, 1193, 1388, 15549, 4817, 5021, 1240, 1083, 21, 1398, 1399, 9336, 4792, 575, 4822, 9337, 504, 7401, 7420, 13958, 4820, 7478, 1630, 2174, 4818, 15767, 6440, 16459, 5474, 1113, 5006, 16457, 4476, 5353, 9539, 5383, 16467, 5020, 7396, 15791, 5390, 16468, 7229, 7437, 16469, 2]
+// Dependencies: [5, 32, 19, 17, 1192, 1386, 15513, 4819, 5023, 1239, 1082, 21, 1396, 1397, 9336, 4794, 575, 4824, 9337, 504, 7400, 7419, 13927, 4822, 7477, 1628, 2172, 4820, 15731, 6442, 16281, 5476, 1112, 5008, 16279, 4478, 5355, 9539, 5385, 16289, 5022, 7395, 15755, 5392, 16290, 7228, 7436, 16291, 2]
 // Exports: default
 
-// Module 16458 (HexagonCampaignSheet)
+// Module 16280 (HexagonCampaignSheet)
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1083 */;
-import ClientThemesConstants from "ClientThemesConstants" /* 1240 */;
-import DisplayNameFont from "DisplayNameFont" /* 1398 */;
-import DisplayNameEffect from "DisplayNameEffect" /* 1399 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5021 */;
+import Constants from "Constants" /* 1082 */;
+import ClientThemesConstants from "ClientThemesConstants" /* 1239 */;
+import DisplayNameFont from "DisplayNameFont" /* 1396 */;
+import DisplayNameEffect from "DisplayNameEffect" /* 1397 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5023 */;
 import useDisplayNameStylesFont from "useDisplayNameStylesFont" /* 9336 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1193 */;
-import UserStore from "UserStore" /* 1388 */;
-import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 15549 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4817 */;
+import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1192 */;
+import UserStore from "UserStore" /* 1386 */;
+import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 15513 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4819 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -184,7 +184,7 @@ export default function HexagonCampaignSheet() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -266,7 +266,7 @@ export default function HexagonCampaignSheet() {
             }
           }
           c4 = 3;
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp59) {
           if (0 === analyticsLocations) {
             c4 = 3;
@@ -409,7 +409,7 @@ export default function HexagonCampaignSheet() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -465,7 +465,7 @@ export default function HexagonCampaignSheet() {
             open("HEXAGON_CAMPAIGN_APPLY_ERROR", obj);
           }
           c3 = 3;
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp18) {
         c3 = 3;
@@ -476,7 +476,7 @@ export default function HexagonCampaignSheet() {
   if (null == stateFromStores) {
     return null;
   } else {
-    const obj14 = { perk: result2.CLIENT_THEME, label: intl5.string(require("module_4476").TTUKuI), icon: closure_15(first1, obj15) };
+    const obj14 = { perk: result2.CLIENT_THEME, label: intl5.string(require("module_4478").TTUKuI), icon: closure_15(first1, obj15) };
     intl5 = tmp2(tmp3[32]).intl;
     let tmp42 = closure_15;
     obj15 = { style: tmp.rowIcon, children: closure_15(tmp2(tmp3[37]).Gradient, obj16) };
@@ -503,7 +503,7 @@ export default function HexagonCampaignSheet() {
     const obj22 = { header: closure_16(first1, obj23), footer: tmp42(first1, obj26), startExpanded: true, children: tmp36(first1, obj29) };
     obj23 = { children: items7 };
     const BottomSheet = tmp2(tmp3[40]).BottomSheet;
-    const obj24 = { title: intl2.string(require("module_4476").rZmLDm) };
+    const obj24 = { title: intl2.string(require("module_4478").rZmLDm) };
     const BottomSheetTitleHeader = tmp2(tmp3[41]).BottomSheetTitleHeader;
     intl2 = tmp2(tmp3[32]).intl;
     items7 = [tmp42(BottomSheetTitleHeader, obj24), ];
@@ -545,7 +545,7 @@ export default function HexagonCampaignSheet() {
     const obj36 = { style: tmp.previewArea, children: tmp42(tmp39, obj38) };
     obj38 = { overlay: tmp42(require("AppIcon"), obj39), children: tmp42(tmp6Result4, obj40) };
     obj39 = { id: HEXAGON, size, style: tmp.previewAppIcon };
-    obj40 = { user: stateFromStores, displayName: username, selectedFontId: null, selectedEffectId: null, selectedColors: null, hideNameplate: true, hideBadges: true, hidePronouns: true, hideGuildTag: true, tilted: true, chatMessage: intl4.string(require("module_4476")["U/irIt"]) };
+    obj40 = { user: stateFromStores, displayName: username, selectedFontId: null, selectedEffectId: null, selectedColors: null, hideNameplate: true, hideBadges: true, hidePronouns: true, hideGuildTag: true, tilted: true, chatMessage: intl4.string(require("module_4478")["U/irIt"]) };
     username = stateFromStores.globalName;
     tmp39 = ScaledPreview;
     tmp6Result4 = require("DisplayNameStylesEditPreview");

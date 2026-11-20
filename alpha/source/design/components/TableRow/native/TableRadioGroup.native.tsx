@@ -1,12 +1,12 @@
-// Module ID: 7228
-// Function ID: 7229
+// Module ID: 7227
+// Function ID: 7228
 // Name: TableRadioGroup
-// Dependencies: [32, 19, 1072, 21, 7101, 7229, 7230, 2]
+// Dependencies: [32, 19, 1071, 21, 7100, 7228, 7229, 2]
 // Exports: TableRadioGroup
 
-// Module 7228 (TableRadioGroup)
+// Module 7227 (TableRadioGroup)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1072 */;
+import Constants from "Constants" /* 1071 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -79,7 +79,7 @@ export function TableRadioGroup(arg0) {
       return selectedValue;
     }
   }), items);
-  jsx = obj.useContext(onChange(7101).RedesignCompatContext);
+  jsx = obj.useContext(onChange(7100).RedesignCompatContext);
   const items1 = [tmp, onChange];
   onSelect = obj.useCallback((arg0) => {
     const tmp = closure_1;
@@ -108,6 +108,6 @@ export function TableRadioGroup(arg0) {
     })
   });
   Children = obj.Children;
-  const TableRowGroup = onChange(7229).TableRowGroup;
+  const TableRowGroup = onChange(7228).TableRowGroup;
   return <Provider value={react.useMemo(() => ({ selectedValue, onSelect }), items2)}>{null}</Provider>;
 }

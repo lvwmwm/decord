@@ -1,11 +1,11 @@
-// Module ID: 14167
-// Function ID: 14168
+// Module ID: 14136
+// Function ID: 14137
 // Name: EditProfileCollectiblesOrderingExperiment
-// Dependencies: [1452, 2]
+// Dependencies: [1450, 2]
 // Exports: useIsEditProfileCollectiblesOrderingEnabled
 
-// Module 14167 (EditProfileCollectiblesOrderingExperiment)
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+// Module 14136 (EditProfileCollectiblesOrderingExperiment)
+import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2026-09-edit-profile-collectibles-ordering", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };

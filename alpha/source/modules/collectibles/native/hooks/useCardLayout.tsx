@@ -1,10 +1,10 @@
-// Module ID: 17363
-// Function ID: 17364
+// Module ID: 17190
+// Function ID: 17191
 // Name: useCardLayout
-// Dependencies: [32, 19, 9425, 1496, 2]
+// Dependencies: [32, 19, 9425, 1494, 2]
 // Exports: useCardLayout
 
-// Module 17363 (useCardLayout)
+// Module 17190 (useCardLayout)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -18,7 +18,7 @@ export function useCardLayout() {
   let ref;
   let result4;
   let tmp3;
-  const f113243 = () => {
+  const f111400 = () => {
     const obj = ref(dependencyMap[3]);
     return obj.getWindowDimensions().width;
   };
@@ -34,8 +34,8 @@ export function useCardLayout() {
     }
     tmp.current = nativeScrollRef;
   }, []);
-  [tmp3, dependencyMap] = _slicedToArray(react.useState(f113243), 2);
-  const tmp2 = _slicedToArray(react.useState(f113243), 2);
+  [tmp3, dependencyMap] = _slicedToArray(react.useState(f111400), 2);
+  const tmp2 = _slicedToArray(react.useState(f111400), 2);
   const layoutEffect = react.useLayoutEffect(() => {
     const current = ref.current;
     if (current != null) {
@@ -112,8 +112,8 @@ export function useCardLayout() {
     if (result3 + (bound + tmp15(9425).COLLECTIBLES_SHOP_CARD_GAP * diff2) > tmp3) {
       let obj;
       if (1 < tmp17) {
-        obj = { columns: 1, cardWidth: "r", rowWidth: "channel_id", ref: callback, onLayout: callback1 };
-        const obj3 = { columns: 1, cardWidth: "r", rowWidth: "channel_id", ref: callback, onLayout: callback1 };
+        obj = { columns: 1, cardWidth: "r", rowWidth: "ao", ref: callback, onLayout: callback1 };
+        const obj3 = { columns: 1, cardWidth: "r", rowWidth: "ao", ref: callback, onLayout: callback1 };
       }
       return obj;
     }

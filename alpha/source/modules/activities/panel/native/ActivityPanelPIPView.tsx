@@ -1,29 +1,29 @@
-// Module ID: 19237
-// Function ID: 19238
+// Module ID: 19056
+// Function ID: 19057
 // Name: ActivityPanelPIPView
-// Dependencies: [19, 17, 4793, 10778, 4641, 4640, 5418, 19088, 1072, 11689, 10712, 21, 1187, 4792, 575, 1630, 504, 1496, 19233, 11692, 1655, 19238, 4853, 1708, 5002, 5393, 19239, 19240, 1113, 5052, 4713, 19235, 10721, 2]
+// Dependencies: [19, 17, 4795, 10720, 4643, 4642, 5420, 18907, 1071, 11631, 10654, 21, 1186, 4794, 575, 1628, 504, 1494, 19052, 11634, 1653, 19057, 4855, 1706, 5004, 5395, 19058, 19059, 1112, 5054, 4715, 19054, 10663, 2]
 // Exports: useBaseActivityPanelPIPView
 
-// Module 19237 (ActivityPanelPIPView)
+// Module 19056 (ActivityPanelPIPView)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import intl2 from "intl" /* 1113 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import Constants2 from "Constants" /* 10712 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 11689 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11692 */;
-import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 19088 */;
-import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 19235 */;
+import Constants from "Constants" /* 1071 */;
+import intl2 from "intl" /* 1112 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
+import Constants2 from "Constants" /* 10654 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 11631 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11634 */;
+import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 18907 */;
+import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 19054 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4793 */;
-import SafeAreaDisabledStore from "SafeAreaDisabledStore" /* 10778 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4640 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5418 */;
-import native from "native" /* 1187 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import AccessibilityStore from "AccessibilityStore" /* 4795 */;
+import SafeAreaDisabledStore from "SafeAreaDisabledStore" /* 10720 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4642 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5420 */;
+import native from "native" /* 1186 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -34,7 +34,7 @@ let map1;
 let obj2;
 let obj3;
 let unpackModuleId;
-const f118535 = () => {
+const f116671 = () => {
   let num;
   const _Math = Math;
   if (right != null) {
@@ -369,10 +369,10 @@ const memoResult = react.memo(function ActivityPanelPIPView(transitionState) {
   const items2 = [memo];
   const tmpResult2 = tmp(504);
   stateFromStores1 = tmpResult2.useStateFromStores(items2, () => ChannelStore.getChannel(c2));
-  const tmp8 = transitionCleanUp(1630)();
+  const tmp8 = transitionCleanUp(1628)();
   let closure_0 = tmp8;
   const items3 = [tmp8.right];
-  memo = activity.useMemo(f118535, items3);
+  memo = activity.useMemo(f116671, items3);
   const items4 = [activity, stateFromStores1, memo, stateFromStores, transitionCleanUp, transitionState];
   return activity.useMemo(() => <BaseActivityPanelPIPView transitionState={transitionState} transitionCleanUp={transitionCleanUp} pipOrientationLockState={stateFromStores} hasActivity={null != activity} context={ActivityPanelStateContextDefault}>{null}</BaseActivityPanelPIPView>, items4);
 });
@@ -384,7 +384,7 @@ export function useBaseActivityPanelPIPView() {
   let items;
   const tmp = useSafeAreaInsetsDefault();
   let closure_0 = tmp;
-  const obj = { landscapeSafeAreasConfig: react.useMemo(f118535, items) };
+  const obj = { landscapeSafeAreasConfig: react.useMemo(f116671, items) };
   items = [tmp.right];
   return obj;
 }

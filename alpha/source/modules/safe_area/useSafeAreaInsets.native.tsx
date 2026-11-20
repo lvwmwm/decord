@@ -1,12 +1,12 @@
-// Module ID: 1630
-// Function ID: 1631
+// Module ID: 1628
+// Function ID: 1629
 // Name: useSafeAreaInsets
-// Dependencies: [1499, 1631, 2]
+// Dependencies: [1497, 1629, 2]
 // Exports: default, getSafeAreaInsets
 
-// Module 1630 (useSafeAreaInsets)
-import AppEntryKeyContext from "AppEntryKeyContext" /* 1499 */;
-import SafeAreaStoreDefault from "SafeAreaStore" /* 1631 */;
+// Module 1628 (useSafeAreaInsets)
+import AppEntryKeyContext from "AppEntryKeyContext" /* 1497 */;
+import SafeAreaStoreDefault from "SafeAreaStore" /* 1629 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/safe_area/useSafeAreaInsets.native.tsx");

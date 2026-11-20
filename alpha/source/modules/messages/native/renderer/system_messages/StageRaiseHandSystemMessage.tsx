@@ -1,19 +1,19 @@
-// Module ID: 8659
-// Function ID: 8660
+// Module ID: 8658
+// Function ID: 8659
 // Name: StageRaiseHandSystemMessage
-// Dependencies: [6413, 4641, 4724, 1072, 1113, 2188, 8579, 11, 5829, 8581, 8583, 2]
+// Dependencies: [6415, 4643, 4726, 1071, 1112, 2186, 8578, 11, 5831, 8580, 8582, 2]
 // Exports: createStageRaiseHandSystemMessage
 
-// Module 8659 (StageRaiseHandSystemMessage)
+// Module 8658 (StageRaiseHandSystemMessage)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import intl5 from "intl" /* 1113 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8579 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8581 */;
-import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6413 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import PermissionStore from "PermissionStore" /* 4724 */;
-import Constants from "Constants" /* 1072 */;
+import intl5 from "intl" /* 1112 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2186 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8578 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8580 */;
+import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6415 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import PermissionStore from "PermissionStore" /* 4726 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -61,29 +61,29 @@ export function createStageRaiseHandSystemMessage(message) {
     if (participant != null) {
       rtsState = participant.rtsState;
     }
-    canResult = rtsState === tmp(5829).RequestToSpeakStates.REQUESTED_TO_SPEAK;
+    canResult = rtsState === tmp(5831).RequestToSpeakStates.REQUESTED_TO_SPEAK;
   }
   if (canResult) {
     canResult = toISOStringResult === toISOStringResult1;
   }
   const obj3 = { content: formatToParts(M87x7Y, obj4), showInviteToSpeakButton: canResult, buttonLabel: intl2.string(intl5.t.f0T7hI), ephemeralIndication: tmp10 };
-  const intl = tmp(1113).intl;
+  const intl = tmp(1112).intl;
   formatToParts = intl.formatToParts;
   obj4 = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: formatUsernameOnClickDefault({ message, author: messageAuthorWithProcessedColor, roleStyle }) };
-  M87x7Y = tmp(1113).t.M87x7Y;
-  intl2 = tmp(1113).intl;
+  M87x7Y = tmp(1112).t.M87x7Y;
+  intl2 = tmp(1112).intl;
   tmp10 = undefined;
   if (message.hasFlag(metroImportDefault.EPHEMERAL)) {
     if (message.type === metroImportAll.STAGE_RAISE_HAND) {
       const obj5 = { content: intl3.formatToParts(intl5.t["qDAX++"], obj6), helpArticleLink: tmp6Result.getArticleURL(metroRequire.EPHEMERAL_MESSAGES), helpButtonAccessibilityLabel: intl4.string(intl5.t.htHOrp) };
-      intl3 = tmp(1113).intl;
+      intl3 = tmp(1112).intl;
       obj6 = { handleDelete: obj7 };
       obj7 = { action: "bindDismissMessage", message };
       tmp6Result = HelpdeskUtilsDefault;
-      intl4 = tmp(1113).intl;
+      intl4 = tmp(1112).intl;
       tmp10 = obj5;
     }
   }
-  const merged = Object.assign(tmp6(8583)(message));
+  const merged = Object.assign(tmp6(8582)(message));
   return obj3;
 }

@@ -1,29 +1,29 @@
-// Module ID: 14791
-// Function ID: 14792
+// Module ID: 14750
+// Function ID: 14751
 // Name: VoiceChannelHeader
-// Dependencies: [19, 17, 4640, 4663, 4724, 1072, 21, 4792, 575, 14792, 14793, 5383, 14794, 504, 10864, 5408, 7932, 1113, 11997, 1187, 6702, 14796, 10022, 10993, 6911, 2]
+// Dependencies: [19, 17, 4642, 4665, 4726, 1071, 21, 4794, 575, 14751, 14752, 5385, 14753, 504, 10806, 5410, 7931, 1112, 11939, 1186, 6704, 14755, 10025, 10935, 6910, 2]
 
-// Module 14791 (VoiceChannelHeader)
+// Module 14750 (VoiceChannelHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1113 */;
-import native from "native" /* 1187 */;
-import useChannelNameDefault from "useChannelName" /* 5408 */;
-import isRoleRequiredDefault from "isRoleRequired" /* 6702 */;
-import Pressables from "Pressables" /* 6911 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 7932 */;
-import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 10864 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10993 */;
-import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11997 */;
-import CallStateHooks from "CallStateHooks" /* 14792 */;
-import OngoingCallStatusLabelDefault from "OngoingCallStatusLabel" /* 14793 */;
+import intl2 from "intl" /* 1112 */;
+import native from "native" /* 1186 */;
+import useChannelNameDefault from "useChannelName" /* 5410 */;
+import isRoleRequiredDefault from "isRoleRequired" /* 6704 */;
+import Pressables from "Pressables" /* 6910 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 7931 */;
+import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 10806 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10935 */;
+import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11939 */;
+import CallStateHooks from "CallStateHooks" /* 14751 */;
+import OngoingCallStatusLabelDefault from "OngoingCallStatusLabel" /* 14752 */;
 import react from "react" /* 19 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4640 */;
-import GuildStore from "GuildStore" /* 4663 */;
-import PermissionStore from "PermissionStore" /* 4724 */;
-import Constants from "Constants" /* 1072 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4642 */;
+import GuildStore from "GuildStore" /* 4665 */;
+import PermissionStore from "PermissionStore" /* 4726 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const CallStateHooksDefault = CallStateHooks;
@@ -37,7 +37,7 @@ let obj2;
 let obj3;
 let tmp2;
 let unpackModuleId;
-const OngoingCallTimerDefault = tmp2(14794);
+const OngoingCallTimerDefault = tmp2(14753);
 function PrivateChannelSubtitle(channel) {
   let items;
   channel = channel.channel;
@@ -52,10 +52,10 @@ function PrivateChannelSubtitle(channel) {
   const tmp5 = View;
   if (tmp6Result) {
     const obj3 = { style: tmp.subtitle, variant: "body-xs/medium", color: "text-overlay-light", children: " - " };
-    tmp6Result = tmp6(tmp7(5383).Text, obj3);
+    tmp6Result = tmp6(tmp7(5385).Text, obj3);
   }
   items[1] = tmp6Result;
-  let tmp6Result2 = state === tmp7(14792).CallStates.CONNECTED;
+  let tmp6Result2 = state === tmp7(14751).CallStates.CONNECTED;
   if (tmp6Result2) {
     const obj4 = { channelId: channel.id, style: tmp.subtitle };
     tmp6Result2 = tmp6(OngoingCallTimerDefault, obj4);
@@ -104,9 +104,9 @@ class VoiceChannelHeader {
     }
     let formatToPlainStringResult = tmp7;
     if (channel.isPrivate()) {
-      const intl = tmp2(1113).intl;
+      const intl = tmp2(1112).intl;
       const obj3 = { count: channel.recipients.length + 1 };
-      formatToPlainStringResult = intl.formatToPlainString(tmp2(1113).t["8bn8Br"], obj3);
+      formatToPlainStringResult = intl.formatToPlainString(tmp2(1112).t["8bn8Br"], obj3);
       const obj4 = { channel };
       name = closure_10(PrivateChannelSubtitle, obj4);
       class E {
@@ -116,25 +116,25 @@ class VoiceChannelHeader {
       }
     }
     const obj5 = { style: tmp.container, children: items3 };
-    const obj6 = { size: tmp2(1187).Icon.Sizes.MEDIUM, source: tmp5Result, disableColor: true, style: tmp.icons };
-    const Icon = tmp2(1187).Icon;
+    const obj6 = { size: tmp2(1186).Icon.Sizes.MEDIUM, source: tmp5Result, disableColor: true, style: tmp.icons };
+    const Icon = tmp2(1186).Icon;
     if (isRoleRequiredDefault(channel)) {
-      tmp5Result = tmp5(14796);
+      tmp5Result = tmp5(14755);
     } else {
-      tmp5Result = tmp5(10022);
+      tmp5Result = tmp5(10025);
     }
     items3 = [closure_10(Icon, obj6), , ];
     let tmp14Result = formatToPlainStringResult;
     const obj7 = { style: tmp.middle, children: items4 };
     if (typeof formatToPlainStringResult === "string") {
       const obj8 = { lineClamp: 1, lineBreakMode: "tail", variant: "body-md/semibold", color: "text-overlay-light", children: formatToPlainStringResult };
-      tmp14Result = tmp14(tmp2(5383).Text, obj8);
+      tmp14Result = tmp14(tmp2(5385).Text, obj8);
     }
     items4 = [tmp14Result, ];
     let tmp14Result3 = name;
     if (typeof name === "string") {
       const obj9 = { lineClamp: 1, lineBreakMode: "tail", variant: "body-xs/medium", color: "text-overlay-light", children: name };
-      tmp14Result3 = tmp14(tmp2(5383).Text, obj9);
+      tmp14Result3 = tmp14(tmp2(5385).Text, obj9);
     }
     items4[1] = tmp14Result3;
     items3[1] = closure_11(View, obj7);

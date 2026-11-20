@@ -1,21 +1,21 @@
-// Module ID: 13516
-// Function ID: 13517
+// Module ID: 13486
+// Function ID: 13487
 // Name: ContactSyncInviteFriends
-// Dependencies: [19, 17, 1388, 1072, 21, 4792, 575, 504, 5479, 13517, 5383, 1113, 5390, 1256, 4848, 9598, 2]
+// Dependencies: [19, 17, 1386, 1071, 21, 4794, 575, 504, 5481, 13487, 5385, 1112, 5392, 1255, 4850, 9598, 2]
 // Exports: default
 
-// Module 13516 (ContactSyncInviteFriends)
+// Module 13486 (ContactSyncInviteFriends)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl4 from "intl" /* 1113 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import FastImageDefault from "FastImage" /* 5479 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13517 */;
+import intl4 from "intl" /* 1112 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import FastImageDefault from "FastImage" /* 5481 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13487 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1388 */;
-import Constants from "Constants" /* 1072 */;
+import UserStore from "UserStore" /* 1386 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -29,7 +29,7 @@ let metroRequire;
 let obj2;
 let tmp;
 let tmp5;
-const UserUtilsDefault = tmp(4848);
+const UserUtilsDefault = tmp(4850);
 const showShareActionSheet = tmp5(9598);
 const View = react_native.View;
 ({ AnalyticEvents: hasOwnProperty, AnalyticsSections: metroRequire } = Constants);

@@ -1,17 +1,17 @@
-// Module ID: 15861
-// Function ID: 15862
+// Module ID: 15825
+// Function ID: 15826
 // Name: UserProfileTryItOutGetPremiumUpsell
-// Dependencies: [19, 1072, 21, 9006, 7401, 8979, 10443, 15857, 1113, 2]
+// Dependencies: [19, 1071, 21, 9006, 7400, 8979, 10385, 15821, 1112, 2]
 // Exports: default
 
-// Module 15861 (UserProfileTryItOutGetPremiumUpsell)
+// Module 15825 (UserProfileTryItOutGetPremiumUpsell)
 import Fragment from "Fragment" /* 21 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7401 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7400 */;
 import openPremiumModalDefault from "openPremiumModal" /* 8979 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10443 */;
-import UserProfileFloatingUpsellDefault from "UserProfileFloatingUpsell" /* 15857 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10385 */;
+import UserProfileFloatingUpsellDefault from "UserProfileFloatingUpsell" /* 15821 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 1072 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -37,13 +37,13 @@ export default function UserProfileTryItOutGetPremiumUpsell(onLayout) {
     const tmp = openPremiumModalDefault;
     tmp(obj);
   }, items);
-  let obj2 = { text: intl.format(analyticsLocations(1113).t.TmfgI2, { onClick: callback }), buttonText: nitroTrialCtaOverride, buttonVariant: "experimental_premium-primary", onButtonPress: callback, onLayout };
+  let obj2 = { text: intl.format(analyticsLocations(1112).t.TmfgI2, { onClick: callback }), buttonText: nitroTrialCtaOverride, buttonVariant: "experimental_premium-primary", onButtonPress: callback, onLayout };
   const tmp6 = UserProfileFloatingUpsellDefault;
-  intl = analyticsLocations(1113).intl;
+  intl = analyticsLocations(1112).intl;
   const tmp5 = jsx;
   if (nitroTrialCtaOverride == null) {
-    const intl2 = tmp(1113).intl;
-    nitroTrialCtaOverride = intl2.string(tmp(1113).t.pj0XBN);
+    const intl2 = tmp(1112).intl;
+    nitroTrialCtaOverride = intl2.string(tmp(1112).t.pj0XBN);
   }
   return tmp5(tmp6, obj2);
 };

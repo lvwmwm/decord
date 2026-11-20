@@ -1,13 +1,13 @@
-// Module ID: 13932
-// Function ID: 13933
+// Module ID: 13901
+// Function ID: 13902
 // Name: useCanUseTenureBadge
-// Dependencies: [1388, 504, 13869, 2]
+// Dependencies: [1386, 504, 13838, 2]
 // Exports: useCanUseTenureBadge
 
-// Module 13932 (useCanUseTenureBadge)
+// Module 13901 (useCanUseTenureBadge)
 import get_initialized from "get initialized" /* 504 */;
-import PremiumPerkGates from "PremiumPerkGates" /* 13869 */;
-import UserStore from "UserStore" /* 1388 */;
+import PremiumPerkGates from "PremiumPerkGates" /* 13838 */;
+import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/tiered_tenure_badging/hooks/useCanUseTenureBadge.tsx");

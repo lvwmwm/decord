@@ -1,45 +1,45 @@
-// Module ID: 15743
-// Function ID: 15744
+// Module ID: 15707
+// Function ID: 15708
 // Name: UserProfileEditForm
-// Dependencies: [19, 17, 8018, 9305, 7445, 1072, 4817, 1082, 15744, 21, 1655, 4792, 575, 7291, 15745, 2174, 7401, 7420, 15746, 8012, 15762, 1113, 8072, 14458, 8078, 15764, 8015, 7126, 5367, 11592, 15765, 9355, 12318, 7953, 8929, 12741, 8792, 8079, 13866, 504, 8023, 14503, 4822, 15770, 8061, 7478, 8064, 15771, 15772, 15773, 5383, 15774, 8789, 15775, 15788, 15793, 15799, 8790, 15803, 15804, 15808, 15812, 15817, 15818, 15821, 15822, 15854, 4853, 8071, 15858, 8931, 14111, 15866, 10116, 15867, 15870, 15871, 2]
+// Dependencies: [19, 17, 8017, 9305, 7444, 1071, 4819, 1081, 15708, 21, 1653, 4794, 575, 7290, 15709, 2172, 7400, 7419, 15710, 8011, 15726, 1112, 8071, 14426, 8077, 15728, 8014, 7125, 5369, 11534, 15729, 9355, 12288, 7952, 8929, 12711, 8792, 8078, 13835, 504, 8022, 14471, 4824, 15734, 8060, 7477, 8063, 15735, 15736, 15737, 5385, 15738, 8789, 15739, 15752, 15757, 15763, 8790, 15767, 15768, 15772, 15776, 15781, 15782, 15785, 15786, 15818, 4855, 8070, 15822, 8931, 14080, 15830, 10119, 15831, 15834, 15835, 2]
 // Exports: default
 
-// Module 15743 (UserProfileEditForm)
+// Module 15707 (UserProfileEditForm)
 import nativeDefault from "native" /* 575 */;
-import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
-import intl4 from "intl" /* 1113 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2174 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import ProfilePendingImageTypes from "ProfilePendingImageTypes" /* 7291 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7401 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7420 */;
-import Constants2 from "Constants" /* 7445 */;
-import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8012 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8023 */;
-import useUserProfileColors from "useUserProfileColors" /* 8072 */;
-import UserProfilePrimaryInfoDefault from "UserProfilePrimaryInfo" /* 14111 */;
-import MobileWidgetEditingExperiment from "MobileWidgetEditingExperiment" /* 14458 */;
-import PendingBadgeSettings from "PendingBadgeSettings" /* 14503 */;
-import UserProfileEditConstants from "UserProfileEditConstants" /* 15744 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15745 */;
-import useOpenChangeBannerActionSheetDefault from "useOpenChangeBannerActionSheet" /* 15746 */;
-import UserProfileEditFormTextFieldDefault from "UserProfileEditFormTextField" /* 15774 */;
-import UserProfileEditThemeDefault from "UserProfileEditTheme" /* 15799 */;
-import UserProfileAvatarDecorationEditButtonDefault from "UserProfileAvatarDecorationEditButton" /* 15803 */;
-import UserProfileEffectEditButtonDefault from "UserProfileEffectEditButton" /* 15804 */;
-import UserProfileFrameEditButtonDefault from "UserProfileFrameEditButton" /* 15808 */;
-import UserProfileNameplateEditButtonDefault from "UserProfileNameplateEditButton" /* 15812 */;
-import UserProfilePrimaryGuildEditButtonDefault from "UserProfilePrimaryGuildEditButton" /* 15818 */;
-import UserProfileEditFormTabsDefault from "UserProfileEditFormTabs" /* 15867 */;
+import UserSettingsConstants from "UserSettingsConstants" /* 1081 */;
+import intl4 from "intl" /* 1112 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2172 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import ProfilePendingImageTypes from "ProfilePendingImageTypes" /* 7290 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7400 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7419 */;
+import Constants2 from "Constants" /* 7444 */;
+import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8011 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8022 */;
+import useUserProfileColors from "useUserProfileColors" /* 8071 */;
+import UserProfilePrimaryInfoDefault from "UserProfilePrimaryInfo" /* 14080 */;
+import MobileWidgetEditingExperiment from "MobileWidgetEditingExperiment" /* 14426 */;
+import PendingBadgeSettings from "PendingBadgeSettings" /* 14471 */;
+import UserProfileEditConstants from "UserProfileEditConstants" /* 15708 */;
+import AssetRegistryDefault from "AssetRegistry" /* 15709 */;
+import useOpenChangeBannerActionSheetDefault from "useOpenChangeBannerActionSheet" /* 15710 */;
+import UserProfileEditFormTextFieldDefault from "UserProfileEditFormTextField" /* 15738 */;
+import UserProfileEditThemeDefault from "UserProfileEditTheme" /* 15763 */;
+import UserProfileAvatarDecorationEditButtonDefault from "UserProfileAvatarDecorationEditButton" /* 15767 */;
+import UserProfileEffectEditButtonDefault from "UserProfileEffectEditButton" /* 15768 */;
+import UserProfileFrameEditButtonDefault from "UserProfileFrameEditButton" /* 15772 */;
+import UserProfileNameplateEditButtonDefault from "UserProfileNameplateEditButton" /* 15776 */;
+import UserProfilePrimaryGuildEditButtonDefault from "UserProfilePrimaryGuildEditButton" /* 15782 */;
+import UserProfileEditFormTabsDefault from "UserProfileEditFormTabs" /* 15831 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8018 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8017 */;
 import ProfileCustomizationNavigationStore_mod from "ProfileCustomizationNavigationStore" /* 9305 */;
-import Constants from "Constants" /* 1072 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4817 */;
+import Constants from "Constants" /* 1071 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4819 */;
 import Fragment from "Fragment" /* 21 */;
-import module_1655 from "module_1655" /* 1655 */;
-import createStyles from "createStyles" /* 4792 */;
+import module_1653 from "module_1653" /* 1653 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let ScrollView;
@@ -53,7 +53,7 @@ let metroImportAll;
 let obj2;
 let tmp2;
 let unpackModuleId;
-const UserProfileEditBannerButtonDefault = tmp2(15762);
+const UserProfileEditBannerButtonDefault = tmp2(15726);
 function EditUserProfileBanner(arg0) {
   let banner;
   let disabled;
@@ -90,14 +90,14 @@ function EditUserProfileBanner(arg0) {
   }
   obj3 = { value: analyticsLocations, children: gesture(tmp2Result, obj4) };
   const tmp6Result = tmp6(obj2);
-  const AnalyticsLocationProvider = tmp7(7401).AnalyticsLocationProvider;
+  const AnalyticsLocationProvider = tmp7(7400).AnalyticsLocationProvider;
   let banner1;
   obj4 = { user, displayProfile, pendingBanner, pendingAvatarSrc, pendingThemeColors, pendingAccentColor, bannerSafeArea: 12, showProfilePreviewButton: canUseCollectiblesResult, onPressEdit: tmp6Result, editButtonAccessibilityLabel: intl.string(intl4.t.VqsHy0), editDisabled: disabled };
   tmp2Result = UserProfileEditBannerButtonDefault;
   if (displayProfile != null) {
     banner1 = displayProfile.banner;
   }
-  intl = tmp7(1113).intl;
+  intl = tmp7(1112).intl;
   return gesture(AnalyticsLocationProvider, obj3);
 }
 function ProfileThemeContainerColors(arg0) {
@@ -242,25 +242,25 @@ function UserProfileEditFormContent(currentUser) {
   let closure_63;
   let tmp = autoFocusElement;
   const tmp2 = dependencyMap;
-  let tmp3 = autoFocusElement(8078)();
-  let tmp4 = autoFocusElement(15764)();
+  let tmp3 = autoFocusElement(8077)();
+  let tmp4 = autoFocusElement(15728)();
   const formContainer = tmp4;
-  let obj = currentUser(8015);
+  let obj = currentUser(8014);
   ProfileCustomizationNavigationStore = obj.useBioMaxLength({ location: "user_profile_edit_form" });
-  let tmp6 = autoFocusElement(7126)();
+  let tmp6 = autoFocusElement(7125)();
   const tmp7 = c19();
   const tabsAnchor = tmp7;
-  let obj2 = currentUser(1655);
+  let obj2 = currentUser(1653);
   const animatedRef = obj2.useAnimatedRef();
-  obj3 = currentUser(1655);
+  obj3 = currentUser(1653);
   const sharedValue = obj3.useSharedValue(0);
-  let obj4 = currentUser(1655);
+  let obj4 = currentUser(1653);
   const sharedValue1 = obj4.useSharedValue(false);
   let obj5 = isTryItOut;
   const ref1 = isTryItOut.useRef(null);
   const ref2 = isTryItOut.useRef(null);
   const ref3 = isTryItOut.useRef(null);
-  const insets = autoFocusElement(5367)({ includeKeyboardHeight: true }).insets;
+  const insets = autoFocusElement(5369)({ includeKeyboardHeight: true }).insets;
   const PX_16 = autoFocusElement(575).space.PX_16;
   const ref4 = isTryItOut.useRef(null);
   let obj6 = { insets, inputs: items, scrollViewRef: animatedRef };
@@ -270,7 +270,7 @@ function UserProfileEditFormContent(currentUser) {
   items[1] = obj8;
   let obj9 = { ref: ref3, offset: obj10 };
   obj10 = { type: "toValue", value: autoFocusElement(575).space.PX_64 };
-  let tmp15 = autoFocusElement(11592);
+  let tmp15 = autoFocusElement(11534);
   items[2] = obj9;
   let obj11 = { ref: ref4, offset: obj12 };
   obj12 = { type: "toValue", value: autoFocusElement(575).space.PX_80 };
@@ -278,7 +278,7 @@ function UserProfileEditFormContent(currentUser) {
   const onFocus = tmp15(obj6).onFocus;
   let items1 = [onFocus];
   let value = isTryItOut.useMemo(() => ({ focusedInputRef: ref4, onInputFocus: onFocus }), items1);
-  let tmp16 = autoFocusElement(15765)();
+  let tmp16 = autoFocusElement(15729)();
   ({ errors, isSubmitting } = tmp16);
   ({ pendingAvatarDecoration: c18, pendingProfileEffect: c19, pendingProfileFrame: c20, pendingNameplate: c21, pendingThemeColors } = tmp16);
   ({ tryItOutAvatarDecoration: c23, tryItOutProfileEffect: c24, tryItOutThemeColors } = tmp16);
@@ -287,10 +287,10 @@ function UserProfileEditFormContent(currentUser) {
   const pendingBadgeHiddenBadges = tmp16.pendingBadgeHiddenBadges;
   ({ pendingPrimaryGuildId: c33, pendingDisplayNameStyles: c34, pendingAvatar, pendingBanner, pendingAccentColor, tryItOutBanner } = tmp16);
   autoFocusElement(9355)();
-  let obj13 = currentUser(12318);
+  let obj13 = currentUser(12288);
   const guildAutomodProfileQuarantineErrors = obj13.useGuildAutomodProfileQuarantineErrors();
   let str = currentUser.id;
-  let tmp19 = autoFocusElement(7953);
+  let tmp19 = autoFocusElement(7952);
   if (str == null) {
     str = "";
   }
@@ -298,14 +298,14 @@ function UserProfileEditFormContent(currentUser) {
   displayProfile = tmp19Result;
   const tmp5Result = currentUser(8929);
   const customStatusActivity = tmp5Result.useCustomStatusActivity();
-  const tmp5Result10 = currentUser(12741);
+  const tmp5Result10 = currentUser(12711);
   closure_36 = "profile" === tmp5Result10.useCustomTypingIndicatorConfig("UserProfileEditForm").entryPoint;
   let obj14 = { userId: currentUser.id, image: pendingAvatar };
   const tmp5Result11 = currentUser(8792);
   pendingAvatarSrc = tmp5Result11.getPendingAvatarSrc(obj14);
-  const tmp22 = tmp(8079)(tmp19Result, pendingLegacyUsernameDisabled);
+  const tmp22 = tmp(8078)(tmp19Result, pendingLegacyUsernameDisabled);
   closure_38 = tmp22;
-  const tmp5Result12 = currentUser(13866);
+  const tmp5Result12 = currentUser(13835);
   isBadgeManagementEnabled = tmp5Result12.useIsBadgeManagementEnabled({ location: "UserProfileEditForm" });
   let items2 = [formContainer];
   const tmp5Result13 = currentUser(504);
@@ -346,13 +346,13 @@ function UserProfileEditFormContent(currentUser) {
     someResult = stateFromStoresArray.some((owned) => owned.owned);
   }
   c44 = someResult;
-  let tmpResult = tmp(2174);
+  let tmpResult = tmp(2172);
   let result = tmpResult.canUsePremiumProfileCustomization(currentUser);
   c45 = result;
-  const tmp5Result15 = currentUser(4822);
+  const tmp5Result15 = currentUser(4824);
   closure_46 = tmp5Result15.useHexagonCampaignPerkAvailability(sharedValue1.DISPLAY_NAME_STYLE, "UserProfileEditForm");
   let tmp28 = !result && !tmp6;
-  const tmp5Result16 = currentUser(15770);
+  const tmp5Result16 = currentUser(15734);
   const enabled = tmp5Result16.useTryItOutMobileRefreshConfig("UserProfileEditForm").enabled;
   let tmp29 = enabled && !result && !isTryItOut;
   closure_47 = tmp29;
@@ -380,7 +380,7 @@ function UserProfileEditFormContent(currentUser) {
   }
   let obj15 = { user: currentUser, displayProfile: tmp19Result, pendingThemeColors: tmp32, isPreview: isTryItOut };
   tmp32 = pendingThemeColors;
-  const tmpResult4 = tmp(8061);
+  const tmpResult4 = tmp(8060);
   if (isTryItOut) {
     tmp32 = tryItOutThemeColors;
   }
@@ -389,8 +389,8 @@ function UserProfileEditFormContent(currentUser) {
   hasCustomProfileTheme = tmp34;
   let obj16 = { backgroundColor: tmp5Result17.useUserProfileColors(tmpResult1Result).avatarBackground };
   ({ theme, secondaryColor } = tmpResult1Result);
-  tmp5Result17 = currentUser(8072);
-  const tmp35 = tmp(7478)();
+  tmp5Result17 = currentUser(8071);
+  const tmp35 = tmp(7477)();
   const height = tmp35.height;
   let num = 0;
   ({ ref, onLayout, width } = tmp35);
@@ -399,7 +399,7 @@ function UserProfileEditFormContent(currentUser) {
   }
   let num2 = 0;
   const bottom = insets.bottom;
-  const tmp36 = tmp(8064)(width);
+  const tmp36 = tmp(8063)(width);
   if (tmp28) {
     num2 = 0;
     if (!tmp29) {
@@ -408,14 +408,14 @@ function UserProfileEditFormContent(currentUser) {
   }
   const sum = bottom + num2;
   const sum1 = sum + tmp(575).space.PX_16;
-  const tmp39 = tmp(15771)(sharedValue, sum1);
+  const tmp39 = tmp(15735)(sharedValue, sum1);
   closure_53 = tmp39;
   const isScrolledAboveTryItOutSection = tmp39.isScrolledAboveTryItOutSection;
   const items7 = [c24, isScrolledAboveTryItOutSection, sharedValue1];
   let c0;
   let c1;
   [tmp40, tmp41, tmp42] = items7;
-  const tmp5Result18 = currentUser(1655);
+  const tmp5Result18 = currentUser(1653);
   class UserProfileEditFormTsx1 {
     constructor() {
       value = _undefined.get() && !_undefined2.get();
@@ -432,7 +432,7 @@ function UserProfileEditFormContent(currentUser) {
     tmp44 = flag;
   }
   flag = tmp44;
-  const tmpResult5 = tmp(15772);
+  const tmpResult5 = tmp(15736);
   if (tmp29) {
     onScroll = tmp39.onScroll;
   }
@@ -490,22 +490,22 @@ function UserProfileEditFormContent(currentUser) {
   if (Object.keys(errors).length > 0) {
     stringResult = null;
     if (null == first4) {
-      let intl = tmp5(1113).intl;
-      stringResult = intl.string(tmp5(1113).t["84MExs"]);
+      let intl = tmp5(1112).intl;
+      stringResult = intl.string(tmp5(1112).t["84MExs"]);
     }
   }
   c62 = stringResult;
   const field = ProfileCustomizationNavigationStore.useField("scrollPosition");
   let tmp57;
-  const tmpResult6 = tmp(15773);
+  const tmpResult6 = tmp(15737);
   if (flag) {
     tmp57 = tabsBarHeight;
   }
   closure_63 = tmpResult6(animatedRef, field, tmp57);
   let obj17 = { theme, primaryColor, secondaryColor, children: value(tmp60, obj18) };
   obj18 = { ref, style: tmp4.container, onLayout, children: items10 };
-  const ThemeContextProvider = tmp5(4853).ThemeContextProvider;
-  items10 = [ref4(tmp(8071), { gradientHeight: num, bannerHeight: tmp36 }), , ];
+  const ThemeContextProvider = tmp5(4855).ThemeContextProvider;
+  items10 = [ref4(tmp(8070), { gradientHeight: num, bannerHeight: tmp36 }), , ];
   let obj19 = { ref: animatedRef, onScroll: scrollHandler, onContentSizeChange: tmp62, onLayout: onScrollViewLayout, scrollEventThrottle: 16, stickyHeaderIndices: tmp64, stickyHeaderHiddenOnScroll: null != header && !flag, keyboardShouldPersistTaps: str5, children: items11 };
   const tmp61 = c18;
   if (tmp44) {
@@ -531,13 +531,13 @@ function UserProfileEditFormContent(currentUser) {
     if (flag) {
       let obj21 = { style: items12, onLayout: handleHeaderLayout, children: header };
       items12 = [tmp7.stickyHeader, headerStyle];
-      tmp58Result = tmp58(tmp(1655).View, obj21);
+      tmp58Result = tmp58(tmp(1653).View, obj21);
     }
   }
   items11[1] = tmp58Result;
   items11[2] = ref4(c21, { user: currentUser, displayProfile: tmp19Result, pendingAvatarSrc, pendingBanner, pendingAccentColor, pendingThemeColors, tryItOutBanner, isTryItOut, disabled: isSubmitting });
   let obj22 = { children: items14 };
-  let obj23 = { style: items13, children: ref4(tmp(15858), obj24) };
+  let obj23 = { style: items13, children: ref4(tmp(15822), obj24) };
   items13 = [, , , ];
   ({ avatarBackground: arr14[0], avatarPosition: arr14[1] } = tmp3);
   items13[2] = tmp4.avatarContainer;
@@ -622,7 +622,7 @@ function UserProfileEditFormContent(currentUser) {
           tmp12Result = null;
           if (closure_46 !== unpackModuleId.HIDDEN) {
             const obj7 = { user: currentUser, availability: tmp21, disabled: isSubmitting };
-            tmp12Result = tmp12(tmp6(15788), obj7);
+            tmp12Result = tmp12(tmp6(15752), obj7);
           }
           tmp24 = tmp20;
           tmp25 = tmp20;
@@ -645,7 +645,7 @@ function UserProfileEditFormContent(currentUser) {
           disabled: isSubmitting
         };
         const tmp6Result5 = UserProfileEditFormTextFieldDefault;
-        intl2 = tmp14(1113).intl;
+        intl2 = tmp14(1112).intl;
         let tmp29 = c28;
         tmp30 = c28;
         if (c28 == null) {
@@ -655,7 +655,7 @@ function UserProfileEditFormContent(currentUser) {
         let tmp12Result6 = !tmp25;
         if (tmp12Result6) {
           const obj9 = { badges, catalogBadges, ownsAnyBadge, autoOpen: autoFocusElement === ref3.BADGES };
-          tmp12Result6 = tmp12(tmp6(15793), obj9);
+          tmp12Result6 = tmp12(tmp6(15757), obj9);
         }
         items1[4] = tmp12Result6;
         const obj10 = {
@@ -675,7 +675,7 @@ function UserProfileEditFormContent(currentUser) {
           disabled: isSubmitting
         };
         const tmp6Result6 = UserProfileEditFormTextFieldDefault;
-        intl3 = tmp14(1113).intl;
+        intl3 = tmp14(1112).intl;
         tmp41 = c29;
         if (c29 == null) {
           tmp41 = str4;
@@ -710,7 +710,7 @@ function UserProfileEditFormContent(currentUser) {
         }
         if (tmp12Result7) {
           const obj16 = { isTryItOut: tmp25 };
-          tmp12Result7 = tmp12(tmp6(15817), obj16);
+          tmp12Result7 = tmp12(tmp6(15781), obj16);
         }
         items1[11] = tmp12Result7;
         const obj17 = {
@@ -729,7 +729,7 @@ function UserProfileEditFormContent(currentUser) {
         }
         if (tmp12Result8) {
           const obj20 = { legacyUsername: tmp52, pendingLegacyUsernameDisabled };
-          tmp12Result8 = tmp12(tmp6(15821), obj20);
+          tmp12Result8 = tmp12(tmp6(15785), obj20);
         }
         items1[13] = tmp12Result8;
         obj2.children = items1;
@@ -744,7 +744,7 @@ function UserProfileEditFormContent(currentUser) {
                   return obj.openPremiumTryItOutModal();
                 }
           };
-          tmp12Result9 = tmp12(tmp6(15822), obj21);
+          tmp12Result9 = tmp12(tmp6(15786), obj21);
         }
         const obj22 = { children: items2 };
         items2[1] = tmp12Result9;
@@ -758,10 +758,10 @@ function UserProfileEditFormContent(currentUser) {
         let tmp12Result10 = tmpResult;
         if (flag) {
           const obj24 = { value: tmpResult, children: gesture(Provider2, obj25) };
-          const Provider = tmp6(15866).Provider;
+          const Provider = tmp6(15830).Provider;
           obj25 = { value, children: gesture(React3, obj26) };
           obj26 = { ref, style: tabsAnchor.tabsAnchor, onLayout: measureTabsY, children: gesture(UserProfileEditFormTabsDefault, obj27) };
-          Provider2 = tmp6(10116).Provider;
+          Provider2 = tmp6(10119).Provider;
           obj27 = { userId: currentUser.id, initialTab: dependencyMap, containerBackground, hasCustomProfileTheme, scrollPosition: sharedValue, scrollViewRef: animatedRef, isBoardTabOnScreen: sharedValue1, stickyTranslateY, onStickyTabsLayout };
           tmp12Result10 = tmp12(Provider, obj24);
         }
@@ -770,7 +770,7 @@ function UserProfileEditFormContent(currentUser) {
         return authStore3(closure_15, obj28);
       }
       const obj29 = { user: currentUser, isTryItOut };
-      tmp12Result = tmp12(tmp6(15775), obj29);
+      tmp12Result = tmp12(tmp6(15739), obj29);
       tmp24 = isTryItOut;
       tmp25 = isTryItOut;
     }
@@ -789,10 +789,10 @@ function UserProfileEditFormContent(currentUser) {
               return obj.openPremiumTryItOutModal();
             }
       };
-      tmp58Result2 = tmp58(tmp(15870), obj28);
+      tmp58Result2 = tmp58(tmp(15834), obj28);
     } else {
       let obj29 = { isTryItOut };
-      tmp58Result2 = tmp58(tmp5(15871).UserProfilePremiumUpsellCard, obj29);
+      tmp58Result2 = tmp58(tmp5(15835).UserProfilePremiumUpsellCard, obj29);
     }
     tmp28 = tmp58Result2;
   }
@@ -808,7 +808,7 @@ let closure_12 = UserSettingsConstants.ProfileCustomizationScrollPositions;
 let closure_13 = UserProfileEditConstants.UserProfileEditAutoFocusElement;
 ({ jsx: closure_14, Fragment: closure_15, jsxs: closure_16 } = Fragment);
 let closure_17 = [1];
-let closure_18 = module_1655.createAnimatedComponent(ScrollView);
+let closure_18 = module_1653.createAnimatedComponent(ScrollView);
 let obj = { stickyHeader: { zIndex: 2 }, tabsAnchor: obj2 };
 obj2 = { marginTop: nativeDefault.space.PX_12 };
 let closure_19 = createStyles.createStyles(obj);

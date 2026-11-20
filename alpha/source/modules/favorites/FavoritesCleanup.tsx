@@ -1,23 +1,23 @@
-// Module ID: 11170
-// Function ID: 11171
+// Module ID: 11112
+// Function ID: 11113
 // Name: FavoritesCleanup
-// Dependencies: [5, 4645, 4641, 4663, 4724, 6498, 4644, 4654, 1083, 1196, 11171, 1089, 6551, 2]
+// Dependencies: [5, 4647, 4643, 4665, 4726, 6500, 4646, 4656, 1082, 1195, 11113, 1088, 6553, 2]
 // Exports: getAutoAddedThreadsCategoryIds, getFavoritesCleanupCandidates, loadFavoriteThreadsForCleanup
 
-// Module 11170 (FavoritesCleanup)
-import Constants from "Constants" /* 1083 */;
-import DurationsDefault from "Durations" /* 1089 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
-import ChannelRecord from "ChannelRecord" /* 4645 */;
-import getThreadAutoArchiveTimeOnce from "getThreadAutoArchiveTimeOnce" /* 6551 */;
-import LazyLoadedThreadManagerDefault from "LazyLoadedThreadManager" /* 11171 */;
+// Module 11112 (FavoritesCleanup)
+import Constants from "Constants" /* 1082 */;
+import DurationsDefault from "Durations" /* 1088 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1195 */;
+import ChannelRecord from "ChannelRecord" /* 4647 */;
+import getThreadAutoArchiveTimeOnce from "getThreadAutoArchiveTimeOnce" /* 6553 */;
+import LazyLoadedThreadManagerDefault from "LazyLoadedThreadManager" /* 11113 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import GuildStore from "GuildStore" /* 4663 */;
-import PermissionStore from "PermissionStore" /* 4724 */;
-import ReadStateStore from "ReadStateStore" /* 6498 */;
-import FavoriteStore from "FavoriteStore" /* 4644 */;
-import FavoritesConstants from "FavoritesConstants" /* 4654 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import GuildStore from "GuildStore" /* 4665 */;
+import PermissionStore from "PermissionStore" /* 4726 */;
+import ReadStateStore from "ReadStateStore" /* 6500 */;
+import FavoriteStore from "FavoriteStore" /* 4646 */;
+import FavoritesConstants from "FavoritesConstants" /* 4656 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2, set;
@@ -61,7 +61,7 @@ let obj = function _loadFavoriteThreadsForCleanup() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -90,7 +90,7 @@ let obj = function _loadFavoriteThreadsForCleanup() {
           return obj;
         } else {
           c1 = 3;
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp8) {
         c1 = 3;

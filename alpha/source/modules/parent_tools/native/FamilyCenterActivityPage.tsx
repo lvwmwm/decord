@@ -1,21 +1,21 @@
-// Module ID: 16087
-// Function ID: 16088
+// Module ID: 16051
+// Function ID: 16052
 // Name: FamilyCenterActivityPage
-// Dependencies: [19, 17, 21, 4792, 575, 9016, 6898, 16088, 16090, 16100, 12370, 16104, 2]
+// Dependencies: [19, 17, 21, 4794, 575, 9016, 6897, 16052, 16054, 16064, 12340, 16068, 2]
 // Exports: default
 
-// Module 16087 (FamilyCenterActivityPage)
+// Module 16051 (FamilyCenterActivityPage)
 import nativeDefault from "native" /* 575 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6898 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6897 */;
 import useUserLinks from "useUserLinks" /* 9016 */;
-import FamilyCenterDataConfirmationDefault from "FamilyCenterDataConfirmation" /* 12370 */;
-import FamilyCenterParentalConsentNoticeDefault from "FamilyCenterParentalConsentNotice" /* 16088 */;
-import FamilyCenterActivityBannerDefault from "FamilyCenterActivityBanner" /* 16090 */;
-import FamilyCenterFeatureRowDefault from "FamilyCenterFeatureRow" /* 16100 */;
+import FamilyCenterDataConfirmationDefault from "FamilyCenterDataConfirmation" /* 12340 */;
+import FamilyCenterParentalConsentNoticeDefault from "FamilyCenterParentalConsentNotice" /* 16052 */;
+import FamilyCenterActivityBannerDefault from "FamilyCenterActivityBanner" /* 16054 */;
+import FamilyCenterFeatureRowDefault from "FamilyCenterFeatureRow" /* 16064 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -56,7 +56,7 @@ export default function FamilyCenterActivityPage() {
     items1[2] = hasOwnProperty(_false, obj5);
     tmp3Result = tmp5(metroRequire, obj4);
   } else {
-    tmp3Result = tmp3(tmp7(16104), {});
+    tmp3Result = tmp3(tmp7(16068), {});
   }
   items[1] = tmp3Result;
   obj6 = { bottom: true, children: metroImportDefault(_false, obj3) };

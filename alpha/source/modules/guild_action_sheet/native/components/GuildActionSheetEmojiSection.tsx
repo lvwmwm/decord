@@ -1,26 +1,26 @@
-// Module ID: 15118
-// Function ID: 15119
+// Module ID: 15082
+// Function ID: 15083
 // Name: GuildActionSheetEmojiSection
-// Dependencies: [32, 19, 17, 6452, 1192, 1388, 1072, 21, 4792, 575, 504, 1496, 5356, 2174, 7401, 7420, 5006, 10397, 4799, 15119, 1113, 6911, 1187, 15120, 5008, 5009, 5473, 5479, 7378, 7379, 1414, 2]
+// Dependencies: [32, 19, 17, 6454, 1191, 1386, 1071, 21, 4794, 575, 504, 1494, 5358, 2172, 7400, 7419, 5008, 10339, 4801, 15083, 1112, 6910, 1186, 15084, 5010, 5011, 5475, 5481, 7377, 7378, 1412, 2]
 // Exports: default
 
-// Module 15118 (GuildActionSheetEmojiSection)
+// Module 15082 (GuildActionSheetEmojiSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2174 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
-import HapticUtils from "HapticUtils" /* 5008 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5009 */;
-import ToastUtils from "ToastUtils" /* 5473 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 10397 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2172 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5008 */;
+import HapticUtils from "HapticUtils" /* 5010 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5011 */;
+import ToastUtils from "ToastUtils" /* 5475 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 10339 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 6452 */;
-import ThemeStore_mod from "ThemeStore" /* 1192 */;
-import UserStore from "UserStore" /* 1388 */;
-import Constants from "Constants" /* 1072 */;
+import EmojiStore from "EmojiStore" /* 6454 */;
+import ThemeStore_mod from "ThemeStore" /* 1191 */;
+import UserStore from "UserStore" /* 1386 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

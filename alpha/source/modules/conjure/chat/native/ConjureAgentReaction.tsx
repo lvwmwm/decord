@@ -1,17 +1,17 @@
-// Module ID: 18531
-// Function ID: 18532
+// Module ID: 18355
+// Function ID: 18356
 // Name: ConjureAgentReaction
-// Dependencies: [19, 17, 21, 4792, 575, 4617, 1414, 6810, 7377, 2]
+// Dependencies: [19, 17, 21, 4794, 575, 4619, 1412, 6810, 7376, 2]
 // Exports: default
 
-// Module 18531 (ConjureAgentReaction)
+// Module 18355 (ConjureAgentReaction)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import UserSettings from "UserSettings" /* 4617 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
+import UserSettings from "UserSettings" /* 4619 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

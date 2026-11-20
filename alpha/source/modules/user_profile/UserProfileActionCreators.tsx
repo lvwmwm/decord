@@ -1,24 +1,24 @@
 // Module ID: 8790
 // Function ID: 8791
 // Name: UserProfileActionCreators
-// Dependencies: [5, 1388, 1072, 1390, 1108, 4799, 1113, 1256, 8791, 8263, 572, 7288, 1285, 7284, 6228, 2]
+// Dependencies: [5, 1386, 1071, 1388, 1107, 4801, 1112, 1255, 8791, 8262, 572, 7287, 1284, 7283, 6230, 2]
 // Exports: notifyUnsavedUserProfileChangesInModal, pinUserProfileBadgesOnClient, resetAllPendingChanges, resetAllTryItOutChanges, resetPendingProfileChanges, saveProfileChanges, setTryItOutAvatar, setTryItOutAvatarDecoration, setTryItOutBanner, setTryItOutCustomTypingIndicatorStyle, setTryItOutDisplayNameStyles, setTryItOutPreset, setTryItOutProfileEffect, setTryItOutThemeColors
 
 // Module 8790 (UserProfileActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
-import intl3 from "intl" /* 1113 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import HTTPUtils from "HTTPUtils" /* 1285 */;
-import shared from "shared" /* 4799 */;
-import InlineUploaderDefault from "InlineUploader" /* 7284 */;
-import safetyScannedUploadSurfaces from "safetyScannedUploadSurfaces" /* 7288 */;
-import MessageParserDefault from "MessageParser" /* 8263 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1107 */;
+import intl3 from "intl" /* 1112 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import HTTPUtils from "HTTPUtils" /* 1284 */;
+import shared from "shared" /* 4801 */;
+import InlineUploaderDefault from "InlineUploader" /* 7283 */;
+import safetyScannedUploadSurfaces from "safetyScannedUploadSurfaces" /* 7287 */;
+import MessageParserDefault from "MessageParser" /* 8262 */;
 import useShouldConvertBioEmoji from "useShouldConvertBioEmoji" /* 8791 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserStore from "UserStore" /* 1388 */;
-import Constants from "Constants" /* 1072 */;
-import PremiumConstants from "PremiumConstants" /* 1390 */;
+import UserStore from "UserStore" /* 1386 */;
+import Constants from "Constants" /* 1071 */;
+import PremiumConstants from "PremiumConstants" /* 1388 */;
 import size from "module_2" /* 2 */;
 
 let closure_3, closure_6, errors, guildId, value2;
@@ -49,7 +49,7 @@ let obj = function _saveProfileChanges() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -108,7 +108,7 @@ let obj = function _saveProfileChanges() {
                 return obj12;
               } else {
                 c9 = 3;
-                return { value: "HermesInternal", done: "+60" };
+                return { value: "HermesInternal", done: null };
               }
             }
           } else if (1 === c8) {

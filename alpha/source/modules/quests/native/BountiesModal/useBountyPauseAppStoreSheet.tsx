@@ -1,18 +1,18 @@
-// Module ID: 16389
-// Function ID: 16390
+// Module ID: 16211
+// Function ID: 16212
 // Name: useBountyPauseAppStoreSheet
-// Dependencies: [19, 6437, 1072, 9845, 9873, 16387, 1108, 6442, 8311, 9875, 8302, 6444, 10548, 16384, 2]
+// Dependencies: [19, 6439, 1071, 9847, 9876, 16209, 1107, 6444, 8310, 9878, 8301, 6446, 10490, 16206, 2]
 // Exports: useBountyPauseAppStoreSheet
 
-// Module 16389 (useBountyPauseAppStoreSheet)
-import Constants from "Constants" /* 1072 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
-import QuestConstants from "QuestConstants" /* 6437 */;
-import AdCreativeType from "AdCreativeType" /* 6444 */;
-import AnalyticsActions from "AnalyticsActions" /* 8302 */;
-import trackAppStoreOverlaySurfaceClicked from "trackAppStoreOverlaySurfaceClicked" /* 10548 */;
-import AdsVideoTypes from "AdsVideoTypes" /* 16384 */;
-import QuestCustomAppStoreOverlayUtils from "QuestCustomAppStoreOverlayUtils" /* 16387 */;
+// Module 16211 (useBountyPauseAppStoreSheet)
+import Constants from "Constants" /* 1071 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1107 */;
+import QuestConstants from "QuestConstants" /* 6439 */;
+import AdCreativeType from "AdCreativeType" /* 6446 */;
+import AnalyticsActions from "AnalyticsActions" /* 8301 */;
+import trackAppStoreOverlaySurfaceClicked from "trackAppStoreOverlaySurfaceClicked" /* 10490 */;
+import AdsVideoTypes from "AdsVideoTypes" /* 16206 */;
+import QuestCustomAppStoreOverlayUtils from "QuestCustomAppStoreOverlayUtils" /* 16209 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -137,7 +137,7 @@ export function useBountyPauseAppStoreSheet(bounty) {
         const tmp3 = require;
         if (arg0 === AdsVideoTypes.PlaybackTriggerSource.USER_INTERACTION) {
           if (null != c5) {
-            if (tmp5 === tmp3(9845).BountiesMobileQuestBarCtrVariant.FIRST_TAP_APP_STORE_OVERLAY) {
+            if (tmp5 === tmp3(9847).BountiesMobileQuestBarCtrVariant.FIRST_TAP_APP_STORE_OVERLAY) {
               if (!ref.current) {
                 tmp9.current = true;
                 const promise = callback1();

@@ -1,14 +1,14 @@
-// Module ID: 9779
-// Function ID: 9780
+// Module ID: 9781
+// Function ID: 9782
 // Name: useSimilarGames
-// Dependencies: [2141, 1388, 9770, 9780, 9692, 9769, 8933, 504, 2]
+// Dependencies: [2139, 1386, 9772, 9782, 9692, 9771, 8933, 504, 2]
 // Exports: default, isShowableSimilarGame
 
-// Module 9779 (useSimilarGames)
-import SimilarGamesConstants from "SimilarGamesConstants" /* 9770 */;
-import GameProfileVisibilityUtils from "GameProfileVisibilityUtils" /* 9780 */;
-import GameStore from "GameStore" /* 2141 */;
-import UserStore from "UserStore" /* 1388 */;
+// Module 9781 (useSimilarGames)
+import SimilarGamesConstants from "SimilarGamesConstants" /* 9772 */;
+import GameProfileVisibilityUtils from "GameProfileVisibilityUtils" /* 9782 */;
+import GameStore from "GameStore" /* 2139 */;
+import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
@@ -30,7 +30,7 @@ export default function useSimilarGames(arg0) {
     let tmp2 = set;
     tmp = !set.has(arg0);
   }
-  let obj = data(9769);
+  let obj = data(9771);
   const similarGameIds = obj.useSimilarGameIds(arg0, tmp);
   ({ data, isLoading, error } = similarGameIds);
   if (!tmp) {

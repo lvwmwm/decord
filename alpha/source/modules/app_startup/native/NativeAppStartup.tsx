@@ -1,36 +1,36 @@
-// Module ID: 19449
-// Function ID: 19450
+// Module ID: 19269
+// Function ID: 19270
 // Name: NativeAppStartup
-// Dependencies: [32, 5, 19450, 19452, 17, 19476, 2190, 4695, 2120, 8135, 19477, 1072, 9, 3, 20226, 1380, 8166, 20227, 10, 20229, 20230, 12158, 504, 1263, 1244, 20231, 2124, 20232, 15691, 572, 20233, 8149, 1242, 20234, 20235, 10799, 510, 1256, 15347, 4687, 8462, 10377, 2191, 1152, 20236, 2121, 9311, 20238, 15544, 8253, 20255, 20256, 20257, 8460, 8162, 8150, 4970, 1192, 4793, 15561, 19166, 19167, 1098, 15344, 8134, 15568, 15582, 6543, 20258, 5052, 8136, 8150, 2]
+// Dependencies: [32, 5, 19270, 19272, 17, 19296, 2188, 4697, 2118, 8134, 19297, 1071, 9, 3, 20046, 1378, 8165, 20047, 10, 20049, 20050, 12100, 504, 1262, 1243, 20051, 2122, 20052, 15655, 572, 20053, 8148, 1241, 20054, 20055, 10741, 510, 1255, 15311, 4689, 8461, 10319, 2189, 1151, 20056, 2119, 9311, 20058, 15508, 8252, 20075, 20076, 20077, 8459, 8161, 8149, 4972, 1191, 4795, 15525, 18985, 18986, 1097, 15308, 8133, 15532, 15546, 6545, 20078, 5054, 8135, 8149, 2]
 // Exports: init, initHeadlessTask
 
-// Module 19449 (NativeAppStartup)
+// Module 19269 (NativeAppStartup)
 import LoggerDefault from "Logger" /* 3 */;
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
 import Storage4 from "Storage" /* 510 */;
-import TokenManagerAll from "TokenManager" /* 1098 */;
-import SentryUtilsDefault from "SentryUtils" /* 1242 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
-import IntlLoaderStore from "IntlLoaderStore" /* 2190 */;
-import DatabaseManagerDefault from "DatabaseManager" /* 4687 */;
-import timeRequireDefault from "timeRequire" /* 8166 */;
-import Future from "Future" /* 10377 */;
-import react_nativeDefault from "react-native" /* 15347 */;
-import DeepLinkEventMapping from "DeepLinkEventMapping" /* 20229 */;
-import DeepLinkProcessorDefault from "DeepLinkProcessor" /* 20230 */;
+import TokenManagerAll from "TokenManager" /* 1097 */;
+import SentryUtilsDefault from "SentryUtils" /* 1241 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
+import IntlLoaderStore from "IntlLoaderStore" /* 2188 */;
+import DatabaseManagerDefault from "DatabaseManager" /* 4689 */;
+import timeRequireDefault from "timeRequire" /* 8165 */;
+import Future from "Future" /* 10319 */;
+import react_nativeDefault from "react-native" /* 15311 */;
+import DeepLinkEventMapping from "DeepLinkEventMapping" /* 20049 */;
+import DeepLinkProcessorDefault from "DeepLinkProcessor" /* 20050 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import module_19450 from "module_19450" /* 19450 */;
-import superagentPatch from "superagentPatch" /* 19452 */;
+import module_19270 from "module_19270" /* 19270 */;
+import superagentPatch from "superagentPatch" /* 19272 */;
 import react_native from "react-native" /* 17 */;
-import logThirdPartyImportsDone from "logThirdPartyImportsDone" /* 19476 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4695 */;
-import AppStateStore from "AppStateStore" /* 2120 */;
-import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 8135 */;
-import ManagerRegistry from "ManagerRegistry" /* 19477 */;
-import Constants from "Constants" /* 1072 */;
+import logThirdPartyImportsDone from "logThirdPartyImportsDone" /* 19296 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4697 */;
+import AppStateStore from "AppStateStore" /* 2118 */;
+import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 8134 */;
+import ManagerRegistry from "ManagerRegistry" /* 19297 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -156,11 +156,11 @@ let obj = function _getInitialURLs() {
 function sharedInit() {
   let _true;
   let closure_1;
-  const f135523 = () => _true(handleNotification[33]);
+  const f133471 = () => _true(handleNotification[33]);
   function handleNotification(arg0) {
     const tmp = c0;
     if (tmp) {
-      timeRequireDefault("receiveNotification", f135523).default(arg0, false);
+      timeRequireDefault("receiveNotification", f133471).default(arg0, false);
       TTITrackerDefault.extraProperties.tapped_notification = true;
     } else {
       closure_1.push(arg0);
@@ -294,7 +294,7 @@ function sharedInit() {
     if (state !== constants.ACTIVE) {
       const tmp4 = c0;
       if (tmp4) {
-        timeRequireDefault("receiveNotification", f135523).default(arg0, false);
+        timeRequireDefault("receiveNotification", f133471).default(arg0, false);
         TTITrackerDefault.extraProperties.tapped_notification = true;
       } else {
         closure_1.push(arg0);
@@ -326,7 +326,7 @@ obj = function _trackFirstLaunched() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -382,7 +382,7 @@ obj = function _trackFirstLaunched() {
           const result = Storage.set(closure_130_15.APP_FIRST_LAUNCHED, false);
         }
         c6 = 3;
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp25) {
         c6 = 3;
         throw tmp25;
@@ -406,7 +406,7 @@ obj = function _loadStorage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -458,7 +458,7 @@ obj = function _loadStorage() {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp20) {
         closure_2 = tmp20;
@@ -514,7 +514,7 @@ obj = function _initializeIntl() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -593,7 +593,7 @@ obj = function _initializeIntl() {
             tmp();
             closure_130_11(() => closure_1_1());
             c4 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp28) {
           c4 = 3;
@@ -622,7 +622,7 @@ obj = function _init() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -667,7 +667,7 @@ obj = function _init() {
           closure_128_25.finishInitialUrls();
         }
         c4 = 3;
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp19) {
         closure_2 = tmp19;
         if (0 === c3) {
@@ -696,7 +696,7 @@ obj = function _initializeApp() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -843,7 +843,7 @@ obj = function _initializeApp() {
             obj = closure_129_0(closure_129_3[70]);
             const sessionHeartbeatScheduler = obj.initSessionHeartbeatScheduler();
             c3 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
           const tmp20 = closure_0;
           if (tmp20) {
@@ -976,7 +976,7 @@ obj = function _initHeadlessTask() {
         obj = { value, done: true };
         return obj;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -1049,7 +1049,7 @@ obj = function _initHeadlessTask() {
           closure_129_1(closure_129_3[51])();
         }
         c3 = 3;
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp19) {
         c3 = 3;
         throw tmp19;

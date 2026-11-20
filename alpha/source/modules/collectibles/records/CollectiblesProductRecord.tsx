@@ -1,16 +1,16 @@
-// Module ID: 7958
-// Function ID: 7959
+// Module ID: 7957
+// Function ID: 7958
 // Name: CollectiblesProductRecord
-// Dependencies: [32, 7959, 7960, 7965, 1074, 1072, 2170, 2114, 2]
+// Dependencies: [32, 7958, 7959, 7964, 1073, 1071, 2168, 2112, 2]
 
-// Module 7958 (CollectiblesProductRecord)
-import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
-import getPricesFromServerDefault from "getPricesFromServer" /* 2170 */;
+// Module 7957 (CollectiblesProductRecord)
+import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1073 */;
+import getPricesFromServerDefault from "getPricesFromServer" /* 2168 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import CollectiblesBundledProductRecord from "CollectiblesBundledProductRecord" /* 7959 */;
-import CollectiblesItemRecord from "CollectiblesItemRecord" /* 7960 */;
-import CollectiblesStoreListingRecord from "CollectiblesStoreListingRecord" /* 7965 */;
-import Constants from "Constants" /* 1072 */;
+import CollectiblesBundledProductRecord from "CollectiblesBundledProductRecord" /* 7958 */;
+import CollectiblesItemRecord from "CollectiblesItemRecord" /* 7959 */;
+import CollectiblesStoreListingRecord from "CollectiblesStoreListingRecord" /* 7964 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -200,7 +200,7 @@ class CollectiblesProductRecord extends CollectiblesStoreListingRecord {
                 }
                 ({ items, item } = obj);
                 first = _slicedToArray(tenantMetadata.selectedOptions, 1)[0];
-                const obj3 = { baseVariantName: skus.name, baseVariantSkuId: first.id, variantLabel: str, variantValue: str2, storeListingId: null, skuId: null, name: null, summary: null, styles: "to", type: "Array", premiumType: premiumType1, items, categorySkuId: str3, categoryWillUnpublishAt: skus.primaryCollectionWillUnpublishAt, isCategoryReward: closure_7.some((rewardSkuId) => rewardSkuId.rewardSkuId === id.id), prices: "perfMonitorV2Enabled", previewAssets: previewAssetPaths, googleSkuIds, eligibleOffers: tenantMetadata.eligibleOffers, variants: "SoundboardSoundGridSectionType", bundledProducts: "e", isFirstParty: collectibles.isFirstParty };
+                const obj3 = { baseVariantName: skus.name, baseVariantSkuId: first.id, variantLabel: str, variantValue: str2, storeListingId: null, skuId: null, name: null, summary: null, styles: "to", type: "Array", premiumType: premiumType1, items, categorySkuId: str3, categoryWillUnpublishAt: skus.primaryCollectionWillUnpublishAt, isCategoryReward: closure_7.some((rewardSkuId) => rewardSkuId.rewardSkuId === id.id), prices: "<string:1116885599>", previewAssets: previewAssetPaths, googleSkuIds, eligibleOffers: tenantMetadata.eligibleOffers, variants: "<string:1382006702>", bundledProducts: "<string:1606373266>", isFirstParty: collectibles.isFirstParty };
                 str = undefined;
                 const tmp5 = CollectiblesVariantProductRecord;
                 if (first != null) {

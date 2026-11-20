@@ -1,20 +1,20 @@
-// Module ID: 19304
-// Function ID: 19305
+// Module ID: 19124
+// Function ID: 19125
 // Name: VoicePanelHeaderUserState
-// Dependencies: [19, 6499, 21, 1655, 7481, 4792, 575, 19305, 19303, 9555, 7205, 11687, 504, 5002, 2]
+// Dependencies: [19, 6501, 21, 1653, 7480, 4794, 575, 19125, 19123, 9555, 7204, 11629, 504, 5004, 2]
 
-// Module 19304 (VoicePanelHeaderUserState)
+// Module 19124 (VoicePanelHeaderUserState)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import NativeViewDefault from "NativeView" /* 7205 */;
-import native from "native" /* 7481 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11687 */;
-import useStableParticipant from "useStableParticipant" /* 19303 */;
-import useVoicePanelCardUserStateIcons from "useVoicePanelCardUserStateIcons" /* 19305 */;
+import NativeViewDefault from "NativeView" /* 7204 */;
+import native from "native" /* 7480 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11629 */;
+import useStableParticipant from "useStableParticipant" /* 19123 */;
+import useVoicePanelCardUserStateIcons from "useVoicePanelCardUserStateIcons" /* 19125 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6499 */;
-import module_1655 from "module_1655" /* 1655 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6501 */;
+import module_1653 from "module_1653" /* 1653 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 const useStableParticipantDefault = useStableParticipant;
@@ -45,17 +45,17 @@ function useVoicePanelHeaderUserStateIcons(participant, guildId, userIcons) {
     let tmp11 = require;
     if (nextResult.type === useVoicePanelCardUserStateIcons.VoicePanelCardUserStateIconType.USER_VIDEO_ICON) {
       let push = items.push;
-      let BackgroundBlurView = tmp11(7481).BackgroundBlurView;
+      let BackgroundBlurView = tmp11(7480).BackgroundBlurView;
       let obj3 = { style: tmp.floatingIcon, state: tmp9.videoIconState };
       let arr = push(<BackgroundBlurView key="video" blurTheme="dark" style={tmp.floatingIconWrapper}>{null}</BackgroundBlurView>);
     }
-    if (tmp9.type === tmp11(19305).VoicePanelCardUserStateIconType.MUTE_DEAFEN_ICON) {
+    if (tmp9.type === tmp11(19125).VoicePanelCardUserStateIconType.MUTE_DEAFEN_ICON) {
       let tmp35 = jsx;
       let push2 = items.push;
       let tmp36 = jsx;
       let items1 = [tmp.floatingIconWrapper, ];
       let leftMargin;
-      let BackgroundBlurView2 = tmp11(7481).BackgroundBlurView;
+      let BackgroundBlurView2 = tmp11(7480).BackgroundBlurView;
       if (tmp9.withLeftMargin) {
         leftMargin = tmp.leftMargin;
       }
@@ -72,7 +72,7 @@ function useVoicePanelHeaderUserStateIcons(participant, guildId, userIcons) {
   }
 }
 const jsx = Fragment.jsx;
-let closure_6 = module_1655.createAnimatedComponent(native.BackgroundBlurView);
+let closure_6 = module_1653.createAnimatedComponent(native.BackgroundBlurView);
 let closure_7 = { duration: 100 };
 let createStyles = createStyles_mod;
 let obj = { container: rect, iconContainer: { flexDirection: "row" }, floatingIconWrapper: size, floatingIcon: size1, leftMargin: { marginLeft: 4 } };
@@ -103,8 +103,8 @@ const memoResult = react.memo(function VoicePanelHeaderUserState(isHeaderHidden)
     return id;
   });
   const tmp4 = useVoicePanelHeaderUserStateIcons(useStableParticipantDefault(stateFromStores, channelId, guildId), guildId);
-  channelId(1655);
-  const items1 = [closure_10, channelId(5002).withTiming, isHeaderHidden, closure_7];
+  channelId(1653);
+  const items1 = [closure_10, channelId(5004).withTiming, isHeaderHidden, closure_7];
   let c0;
   let c1;
   let c2;

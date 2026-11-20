@@ -1,14 +1,14 @@
 // Module ID: 8893
 // Function ID: 8894
 // Name: ProfileEffect
-// Dependencies: [32, 19, 17, 4793, 2120, 21, 4792, 1496, 8894, 8895, 8896, 8898, 504, 1092, 8899, 8897, 5479, 8060, 2]
+// Dependencies: [32, 19, 17, 4795, 2118, 21, 4794, 1494, 8894, 8895, 8896, 8898, 504, 1091, 8899, 8897, 5481, 8059, 2]
 // Exports: default, usePreloadProfileEffect
 
 // Module 8893 (ProfileEffect)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
-import ConstantsIOS from "ConstantsIOS" /* 1092 */;
-import useProfileEffectDefault from "useProfileEffect" /* 8060 */;
+import ConstantsIOS from "ConstantsIOS" /* 1091 */;
+import useProfileEffectDefault from "useProfileEffect" /* 8059 */;
 import utils from "utils" /* 8894 */;
 import profile_effects_constants from "profile_effects/constants" /* 8895 */;
 import ProfileEffectUtils from "ProfileEffectUtils" /* 8896 */;
@@ -16,9 +16,9 @@ import ProfileEffectLayerDefault from "ProfileEffectLayer" /* 8899 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4793 */;
-import AppStateStore from "AppStateStore" /* 2120 */;
-import createStyles from "createStyles" /* 4792 */;
+import AccessibilityStore from "AccessibilityStore" /* 4795 */;
+import AppStateStore from "AppStateStore" /* 2118 */;
+import createStyles from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap, set;
@@ -51,7 +51,7 @@ function StaticEffect(useThumbnail) {
   ({ thumbnailPreviewSrc, accessibilityLabel } = profileEffect);
   [tmp3, c0] = thumbnailUrlOverride.useState(0);
   _slicedToArray(thumbnailUrlOverride.useState(0), 2);
-  const height = reducedMotionSrc(1496)().height;
+  const height = reducedMotionSrc(1494)().height;
   const callback = thumbnailUrlOverride.useCallback((nativeEvent) => {
     closure_0(nativeEvent.nativeEvent.layout.width);
   }, []);
@@ -78,7 +78,7 @@ function StaticEffect(useThumbnail) {
     const obj2 = { style: tmp.profileEffects, pointerEvents: "none", onLayout: callback };
   } else {
     obj3 = { style: tmp.profileEffects, pointerEvents: "none", onLayout: callback, children: null };
-    tmp4(5479);
+    tmp4(5481);
     if (useThumbnail) {
       reducedMotionSrc = thumbnailUrlOverride;
     }

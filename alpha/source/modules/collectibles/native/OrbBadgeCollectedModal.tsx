@@ -1,20 +1,20 @@
-// Module ID: 14153
-// Function ID: 14154
+// Module ID: 14122
+// Function ID: 14123
 // Name: OrbBadgeCollectedModal
-// Dependencies: [19, 17, 4793, 21, 4792, 575, 6976, 6308, 9446, 9313, 504, 5479, 9133, 9134, 9164, 6898, 9431, 5383, 1113, 5390, 8790, 9442, 6973, 2]
+// Dependencies: [19, 17, 4795, 21, 4794, 575, 6975, 6310, 9446, 9313, 504, 5481, 9133, 9134, 9164, 6897, 9431, 5385, 1112, 5392, 8790, 9442, 6972, 2]
 // Exports: default
 
-// Module 14153 (OrbBadgeCollectedModal)
+// Module 14122 (OrbBadgeCollectedModal)
 import nativeDefault from "native" /* 575 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6308 */;
-import NavigatorHeader from "NavigatorHeader" /* 6976 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6310 */;
+import NavigatorHeader from "NavigatorHeader" /* 6975 */;
 import BalanceWidgetPill from "BalanceWidgetPill" /* 9313 */;
 import _mod9446 from "module_9446" /* 9446 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4793 */;
+import AccessibilityStore from "AccessibilityStore" /* 4795 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -63,7 +63,7 @@ function OrbBadgeCollectedRootScreen(modalKey) {
   if (stateFromStores) {
     const obj3 = { source: obj4, style: tmp.background };
     obj4 = { uri: onPressViewBadge(9133) };
-    const tmp15 = onPressViewBadge(5479);
+    const tmp15 = onPressViewBadge(5481);
     tmp9Result = tmp9(tmp15, obj3);
     tmp12 = onPressViewBadge;
     tmp13 = tmp9;
@@ -78,30 +78,30 @@ function OrbBadgeCollectedRootScreen(modalKey) {
   items3 = [tmp9Result, ];
   const rect = { style: tmp.main, top: true, bottom: true, left: true, right: true, children: closure_7(closure_4, obj7) };
   obj7 = { style: tmp.body, children: items4 };
-  const SafeAreaPaddingView = tmp2(6898).SafeAreaPaddingView;
+  const SafeAreaPaddingView = tmp2(6897).SafeAreaPaddingView;
   const obj8 = { source: obj9, style: tmp.orbBadge };
   obj9 = { uri: tmp12(9431) };
-  const tmp12Result = tmp12(5479);
+  const tmp12Result = tmp12(5481);
   items4 = [tmp13(tmp12Result, obj8), ];
   const obj10 = { style: tmp.bottomContainer, children: items6 };
   const obj11 = { style: tmp.textContainer, children: items5 };
-  const obj12 = { variant: "heading-xl/semibold", color: "text-overlay-light", style: tmp.text, children: intl.string(modalKey(1113).t.Bal8Cv) };
-  const Text = tmp2(5383).Text;
-  intl = tmp2(1113).intl;
+  const obj12 = { variant: "heading-xl/semibold", color: "text-overlay-light", style: tmp.text, children: intl.string(modalKey(1112).t.Bal8Cv) };
+  const Text = tmp2(5385).Text;
+  intl = tmp2(1112).intl;
   items5 = [tmp13(Text, obj12), ];
-  const obj13 = { variant: "body-sm/medium", color: "text-overlay-light", style: tmp.text, children: intl2.string(modalKey(1113).t.B25MUf) };
-  const Text2 = tmp2(5383).Text;
-  intl2 = tmp2(1113).intl;
+  const obj13 = { variant: "body-sm/medium", color: "text-overlay-light", style: tmp.text, children: intl2.string(modalKey(1112).t.B25MUf) };
+  const Text2 = tmp2(5385).Text;
+  intl2 = tmp2(1112).intl;
   items5[1] = tmp13(Text2, obj13);
   items6 = [closure_7(closure_4, obj11), ];
   const obj14 = { style: tmp.buttonsContainer, children: items7 };
-  const obj15 = { onPress: callback, variant: "primary", size: "lg", text: intl3.string(modalKey(1113).t.uYLGci) };
-  const Button = tmp2(5390).Button;
-  intl3 = tmp2(1113).intl;
+  const obj15 = { onPress: callback, variant: "primary", size: "lg", text: intl3.string(modalKey(1112).t.uYLGci) };
+  const Button = tmp2(5392).Button;
+  intl3 = tmp2(1112).intl;
   items7 = [tmp13(Button, obj15), ];
-  const obj16 = { onPress: callback1, variant: "secondary", size: "lg", text: intl4.string(modalKey(1113).t["6gF4aS"]) };
-  const Button2 = tmp2(5390).Button;
-  intl4 = tmp2(1113).intl;
+  const obj16 = { onPress: callback1, variant: "secondary", size: "lg", text: intl4.string(modalKey(1112).t["6gF4aS"]) };
+  const Button2 = tmp2(5392).Button;
+  intl4 = tmp2(1112).intl;
   items7[1] = tmp13(Button2, obj16);
   items6[1] = closure_7(closure_4, obj14);
   items4[1] = closure_7(closure_4, obj10);

@@ -1,21 +1,21 @@
-// Module ID: 12688
-// Function ID: 12689
+// Module ID: 12658
+// Function ID: 12659
 // Name: SidekickStats
-// Dependencies: [17, 5848, 21, 4792, 575, 12659, 1113, 3339, 7553, 12631, 10949, 2]
+// Dependencies: [17, 5850, 21, 4794, 575, 12629, 1112, 3341, 7552, 12601, 10891, 2]
 // Exports: default
 
-// Module 12688 (SidekickStats)
+// Module 12658 (SidekickStats)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl3 from "intl" /* 1113 */;
-import _modDef3339 from "module_3339" /* 3339 */;
-import CheckpointConstants from "CheckpointConstants" /* 5848 */;
-import ChatIcon from "ChatIcon" /* 7553 */;
-import MicrophoneIcon from "MicrophoneIcon" /* 10949 */;
-import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 12631 */;
-import CheckpointNumberUtils from "CheckpointNumberUtils" /* 12659 */;
+import intl3 from "intl" /* 1112 */;
+import _modDef3341 from "module_3341" /* 3341 */;
+import CheckpointConstants from "CheckpointConstants" /* 5850 */;
+import ChatIcon from "ChatIcon" /* 7552 */;
+import MicrophoneIcon from "MicrophoneIcon" /* 10891 */;
+import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 12601 */;
+import CheckpointNumberUtils from "CheckpointNumberUtils" /* 12629 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -49,8 +49,8 @@ export default function SidekickStats(sidekick) {
   const result1 = obj2.formatCheckpointStatNumber(rounded1);
   const intl = intl3.intl;
   const formatToPlainString = intl.formatToPlainString;
-  const obj3 = { duration: intl2.formatToPlainString(_modDef3339.x7PkHm, { minutes: rounded1 }) };
-  const lw35aH = _modDef3339.lw35aH;
+  const obj3 = { duration: intl2.formatToPlainString(_modDef3341.x7PkHm, { minutes: rounded1 }) };
+  const lw35aH = _modDef3341.lw35aH;
   intl2 = intl3.intl;
   const obj4 = { style: tmp.stats, children: items1 };
   const obj5 = { accessible: true, accessibilityLabel: obj6.formatCheckpointStatAccessibilityLabel("messages", rounded), style: tmp.stat, children: items };

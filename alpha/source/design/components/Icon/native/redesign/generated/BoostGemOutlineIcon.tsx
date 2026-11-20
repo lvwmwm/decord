@@ -1,14 +1,14 @@
-// Module ID: 19841
-// Function ID: 19842
+// Module ID: 19659
+// Function ID: 19660
 // Name: BoostGemOutlineIcon
-// Dependencies: [19, 21, 575, 5478, 19842, 2]
+// Dependencies: [19, 21, 575, 5480, 19660, 2]
 // Exports: BoostGemOutlineIcon
 
-// Module 19841 (BoostGemOutlineIcon)
+// Module 19659 (BoostGemOutlineIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5478 */;
-import AssetRegistry from "AssetRegistry" /* 19842 */;
+import BaseIconImage2 from "BaseIconImage" /* 5480 */;
+import AssetRegistry from "AssetRegistry" /* 19660 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

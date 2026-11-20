@@ -1,20 +1,20 @@
-// Module ID: 13410
-// Function ID: 13411
+// Module ID: 13380
+// Function ID: 13381
 // Name: UserProfileStackedActionSheet
-// Dependencies: [19, 17, 21, 4792, 575, 1630, 7371, 7590, 1380, 5024, 5020, 6911, 1113, 6980, 5383, 2]
+// Dependencies: [19, 17, 21, 4794, 575, 1628, 7370, 7589, 1378, 5026, 5022, 6910, 1112, 6979, 5385, 2]
 // Exports: UserProfileStackedActionSheetList, UserProfileStackedActionSheetSectionList, default
 
-// Module 13410 (UserProfileStackedActionSheet)
+// Module 13380 (UserProfileStackedActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1113 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5020 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 6980 */;
-import _mod7590 from "module_7590" /* 7590 */;
+import intl2 from "intl" /* 1112 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5022 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 6979 */;
+import _mod7589 from "module_7589" /* 7589 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -62,8 +62,8 @@ export default function UserProfileStackedActionSheet(onBack) {
   let tmp4Result = tmp4Result2;
   if (tmp4Result) {
     const obj3 = { accessibilityRole: "button", accessibilityLabel: intl.string(intl2.t["13/7kX"]), onPress: onBack, children: React3(ArrowLargeLeftIcon.ArrowLargeLeftIcon, { size: "md" }) };
-    const PressableOpacity = tmp5(6911).PressableOpacity;
-    intl = tmp5(1113).intl;
+    const PressableOpacity = tmp5(6910).PressableOpacity;
+    intl = tmp5(1112).intl;
     tmp4Result = tmp4(PressableOpacity, obj3);
   }
   items1 = [tmp4Result, React3(Text_Text.Text, { variant: "heading-md/semibold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: title }), ];
@@ -83,13 +83,13 @@ export function UserProfileStackedActionSheetList(data) {
   const merged = Object.assign(data, Object.assign({ data: 0, contentContainerStyle: 0, renderItem: 0 }));
   const tmp2 = closure_6();
   dependencyMap = tmp2;
-  const bottom = renderItem(1630)().bottom;
+  const bottom = renderItem(1628)().bottom;
   let obj = {
     data,
     style: tmp2.list,
     ItemSeparatorComponent() {
       const obj = { style: divider.divider };
-      return React3(_mod7590.FormDivider, obj);
+      return React3(_mod7589.FormDivider, obj);
     },
     contentContainerStyle: items,
     renderItem(index) {
@@ -98,11 +98,11 @@ export function UserProfileStackedActionSheetList(data) {
       return renderItem(obj);
     }
   };
-  const BottomSheetFlashList = data(7371).BottomSheetFlashList;
+  const BottomSheetFlashList = data(7370).BottomSheetFlashList;
   const merged1 = Object.assign(merged);
   items = [tmp2.contentContainer, , ];
   let num = 0;
-  const obj2 = data(1380);
+  const obj2 = data(1378);
   const tmp3 = renderItem;
   const tmp5 = closure_4;
   if (obj2.isAndroid()) {
@@ -126,10 +126,10 @@ export function UserProfileStackedActionSheetSectionList(renderItem) {
     },
     ItemSeparatorComponent() {
       const obj = { style: divider.divider };
-      return React3(_mod7590.FormDivider, obj);
+      return React3(_mod7589.FormDivider, obj);
     }
   };
-  const BottomSheetSectionList = renderItem(5024).BottomSheetSectionList;
+  const BottomSheetSectionList = renderItem(5026).BottomSheetSectionList;
   const merged1 = Object.assign(merged);
   return closure_4(BottomSheetSectionList, obj);
 }

@@ -1,31 +1,31 @@
-// Module ID: 20118
-// Function ID: 20119
+// Module ID: 19938
+// Function ID: 19939
 // Name: GuildSettingsModalOfficialMessages
-// Dependencies: [32, 19, 17, 6937, 4793, 4663, 7876, 4797, 1083, 21, 4792, 575, 1113, 16727, 11656, 16729, 1502, 504, 7875, 6976, 6910, 5006, 17916, 2121, 7478, 7467, 1655, 1708, 6926, 15755, 1090, 5383, 11216, 4614, 6772, 671, 1187, 16742, 2]
+// Dependencies: [32, 19, 17, 6936, 4795, 4665, 7875, 4799, 1082, 21, 4794, 575, 1112, 16551, 11598, 16553, 1500, 504, 7874, 6975, 6909, 5008, 17743, 2119, 7477, 7466, 1653, 1706, 6925, 15719, 1089, 5385, 11158, 4616, 6772, 671, 1186, 16566, 2]
 // Exports: default
 
-// Module 20118 (GuildSettingsModalOfficialMessages)
+// Module 19938 (GuildSettingsModalOfficialMessages)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
-import Constants from "Constants" /* 1083 */;
-import intl4 from "intl" /* 1113 */;
-import native from "native" /* 1187 */;
-import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
-import Text_Text from "Text/Text" /* 5383 */;
+import Constants from "Constants" /* 1082 */;
+import intl4 from "intl" /* 1112 */;
+import native from "native" /* 1186 */;
+import asyncRequire from "asyncRequire" /* 2119 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5008 */;
+import Text_Text from "Text/Text" /* 5385 */;
 import GuildOfficialMessageUtils from "GuildOfficialMessageUtils" /* 6772 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 6910 */;
-import TableRowConstants from "TableRowConstants" /* 6937 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16742 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 6909 */;
+import TableRowConstants from "TableRowConstants" /* 6936 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16566 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4793 */;
-import GuildStore from "GuildStore" /* 4663 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 7876 */;
-import MessageConstants from "MessageConstants" /* 4797 */;
+import AccessibilityStore from "AccessibilityStore" /* 4795 */;
+import GuildStore from "GuildStore" /* 4665 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 7875 */;
+import MessageConstants from "MessageConstants" /* 4799 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -80,7 +80,7 @@ function MessagePreview(theme) {
   obj4 = { style: items1, children: items2 };
   items1 = [tmp.chatContainerInner, { backgroundColor: alphaResult.hex() }];
   alphaResult.hex();
-  const View = tmp3(1655).View;
+  const View = tmp3(1653).View;
   const obj5 = { source: AssetRegistryDefault };
   const Avatar = native.Avatar;
   items2 = [authStore2(Avatar, obj5), ];
@@ -234,7 +234,7 @@ export default function GuildSettingsModalOfficialMessages(guildId) {
       }
     };
     ActionSheetActionCreatorsDefault;
-    const tmp2 = asyncRequire(17916, dependencyMap.paths);
+    const tmp2 = asyncRequire(17743, dependencyMap.paths);
     intl = intl4.intl;
     openLazy(tmp2, "RoleColorPicker", obj);
   }, items5);

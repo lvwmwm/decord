@@ -1,14 +1,14 @@
-// Module ID: 18365
-// Function ID: 18366
+// Module ID: 18199
+// Function ID: 18200
 // Name: useConjureLinkedApps
-// Dependencies: [5, 32, 19, 6500, 504, 18366, 1113, 4089, 2]
+// Dependencies: [5, 32, 19, 6502, 504, 18200, 1112, 4091, 2]
 // Exports: default
 
-// Module 18365 (useConjureLinkedApps)
+// Module 18199 (useConjureLinkedApps)
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ConjureProjectStore_mod from "ConjureProjectStore" /* 6500 */;
+import ConjureProjectStore_mod from "ConjureProjectStore" /* 6502 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -73,10 +73,10 @@ export default function useConjureLinkedApps(projectId, arg1) {
   let items1 = [ConjureProjectStore];
   const items2 = [projectId];
   const stateFromStoresArray = obj2.useStateFromStoresArray(items1, () => {
-    const f134085 = (id) => id.id;
+    const f132046 = (id) => id.id;
     const items = [...ConjureProjectStore.getOwnedProjects(), ...ConjureProjectStore.getSharedWithMeProjects(), ...ConjureProjectStore.getRailProjects()];
-    const items1 = [...new Set(items.map(f134085))];
-    new Set(items.map(f134085));
+    const items1 = [...new Set(items.map(f132046))];
+    new Set(items.map(f132046));
     const found = items1.filter((item) => item !== current);
     return found.sort();
   }, items2);
@@ -100,7 +100,7 @@ export default function useConjureLinkedApps(projectId, arg1) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c2;
@@ -147,11 +147,11 @@ export default function useConjureLinkedApps(projectId, arg1) {
                 } else {
                   c2 = 0;
                   c4 = 3;
-                  return { value: "HermesInternal", done: "+60" };
+                  return { value: "HermesInternal", done: null };
                 }
               }
               c4 = 3;
-              return { value: "HermesInternal", done: "+60" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp15) {
             if (0 === c2) {
@@ -192,7 +192,7 @@ export default function useConjureLinkedApps(projectId, arg1) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c2;
@@ -237,7 +237,7 @@ export default function useConjureLinkedApps(projectId, arg1) {
                 c2 = 0;
               }
               c4 = 3;
-              return { value: "HermesInternal", done: "+60" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp15) {
             if (0 === c2) {
@@ -317,7 +317,7 @@ export default function useConjureLinkedApps(projectId, arg1) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -371,7 +371,7 @@ export default function useConjureLinkedApps(projectId, arg1) {
               }));
             }
             c6 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp20) {
           if (0 === c4) {
@@ -403,7 +403,7 @@ export default function useConjureLinkedApps(projectId, arg1) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -452,7 +452,7 @@ export default function useConjureLinkedApps(projectId, arg1) {
             c3((arr) => arr.filter((project_id) => project_id.project_id !== closure_1_0));
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp28) {
         if (0 === c3) {
@@ -475,7 +475,7 @@ export default function useConjureLinkedApps(projectId, arg1) {
   if (name == null) {
     let intl = tmp29(tmp30[6]).intl;
     let obj5 = { projectId };
-    name = intl.formatToPlainString(require("module_4089").HHCa93, obj5);
+    name = intl.formatToPlainString(require("module_4091").HHCa93, obj5);
   }
   const obj8 = { name, project: stateFromStores, live: null, hasPreview: null, callers, targets: first1, projects: stateFromStoresObject, names: memo, failed: first2, saved: first3, setBuild: callback, remove: callback2 };
   if (stateFromStores == null) {

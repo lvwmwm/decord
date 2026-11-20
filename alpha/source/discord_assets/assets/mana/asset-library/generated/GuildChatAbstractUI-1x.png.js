@@ -1,8 +1,8 @@
-// Module ID: 12197
-// Function ID: 12198
+// Module ID: 12139
+// Function ID: 12140
 // Dependencies: [2]
 
-// Module 12197
+// Module 12139
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/GuildChatAbstractUI-1x.png.js");

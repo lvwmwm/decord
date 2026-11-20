@@ -1,12 +1,12 @@
-// Module ID: 8324
-// Function ID: 8325
+// Module ID: 8323
+// Function ID: 8324
 // Name: NitroFileUploadExperiments
-// Dependencies: [1390, 1452, 2]
+// Dependencies: [1388, 1450, 2]
 // Exports: getNitroFileUploadLimitBytes, getNitroFileUploadRolloutConfig, getNitroFileUploadRolloutCopy, useNitroFileUploadRolloutEnabled, useNonNitroFileUploadMarketingEnabled
 
-// Module 8324 (NitroFileUploadExperiments)
-import PremiumConstants from "PremiumConstants" /* 1390 */;
-import ApexExperiment_mod from "ApexExperiment" /* 1452 */;
+// Module 8323 (NitroFileUploadExperiments)
+import PremiumConstants from "PremiumConstants" /* 1388 */;
+import ApexExperiment_mod from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 
 let _window;

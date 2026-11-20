@@ -1,24 +1,24 @@
-// Module ID: 6428
-// Function ID: 6429
+// Module ID: 6430
+// Function ID: 6431
 // Name: SubscribeModalGuildSelect
-// Dependencies: [32, 19, 17, 4663, 6429, 6427, 1072, 21, 4792, 575, 6434, 1502, 504, 6435, 6898, 13106, 1113, 6425, 6911, 7203, 1187, 2]
+// Dependencies: [32, 19, 17, 4665, 6431, 6429, 1071, 21, 4794, 575, 6436, 1500, 504, 6437, 6897, 13076, 1112, 6427, 6910, 7202, 1186, 2]
 // Exports: default
 
-// Module 6428 (SubscribeModalGuildSelect)
+// Module 6430 (SubscribeModalGuildSelect)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import BoostingActionCreatorsAll from "BoostingActionCreators" /* 6425 */;
-import PremiumGuildSubscribeConstants from "PremiumGuildSubscribeConstants" /* 6427 */;
-import LegacyTokens from "LegacyTokens" /* 6434 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6435 */;
-import SearchBarNavDefault from "SearchBarNav" /* 13106 */;
+import Constants from "Constants" /* 1071 */;
+import BoostingActionCreatorsAll from "BoostingActionCreators" /* 6427 */;
+import PremiumGuildSubscribeConstants from "PremiumGuildSubscribeConstants" /* 6429 */;
+import LegacyTokens from "LegacyTokens" /* 6436 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6437 */;
+import SearchBarNavDefault from "SearchBarNav" /* 13076 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4663 */;
-import SortedGuildStore from "SortedGuildStore" /* 6429 */;
+import GuildStore from "GuildStore" /* 4665 */;
+import SortedGuildStore from "SortedGuildStore" /* 6431 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -57,7 +57,7 @@ export default function SubscribeModalGuildSelect(guildBoostSlots) {
   first = undefined;
   let tmp = closure_13();
   dependencyMap = tmp;
-  let obj = guildBoostSlots(1502);
+  let obj = guildBoostSlots(1500);
   _slicedToArray = obj.useNavigation();
   [first, tmp4] = first.useState("");
   let items = [guildBoostSlots];
@@ -140,10 +140,10 @@ export default function SubscribeModalGuildSelect(guildBoostSlots) {
     return reduce2Result;
   }, items2);
   let obj3 = { top: true, style: tmp.safeArea, children: items3 };
-  const SafeAreaPaddingView = guildBoostSlots(6898).SafeAreaPaddingView;
-  const obj4 = { placeholder: intl.string(guildBoostSlots(1113).t.vf3ZTa), onChange: tmp4, onClose: BoostingActionCreatorsAll.closeApplyBoostModal };
+  const SafeAreaPaddingView = guildBoostSlots(6897).SafeAreaPaddingView;
+  const obj4 = { placeholder: intl.string(guildBoostSlots(1112).t.vf3ZTa), onChange: tmp4, onClose: BoostingActionCreatorsAll.closeApplyBoostModal };
   const tmp6 = SearchBarNavDefault;
-  intl = guildBoostSlots(1113).intl;
+  intl = guildBoostSlots(1112).intl;
   items3 = [closure_11(tmp6, obj4), ];
   const obj5 = { style: tmp.guildList, keyboardShouldPersistTaps: "always", children: closure_11(SafeAreaPaddingView2, obj6) };
   obj6 = {
@@ -168,7 +168,7 @@ export default function SubscribeModalGuildSelect(guildBoostSlots) {
       return closure_1_12(PressableOpacity, obj, guild.id);
     })
   };
-  SafeAreaPaddingView2 = guildBoostSlots(6898).SafeAreaPaddingView;
+  SafeAreaPaddingView2 = guildBoostSlots(6897).SafeAreaPaddingView;
   items3[1] = closure_11(memo, obj5);
   return closure_12(SafeAreaPaddingView, obj3);
 };

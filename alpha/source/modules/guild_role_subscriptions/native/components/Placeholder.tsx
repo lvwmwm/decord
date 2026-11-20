@@ -1,14 +1,14 @@
-// Module ID: 19987
-// Function ID: 19988
+// Module ID: 19807
+// Function ID: 19808
 // Name: Placeholder
-// Dependencies: [19, 17, 21, 4792, 2]
+// Dependencies: [19, 17, 21, 4794, 2]
 // Exports: default
 
-// Module 19987 (Placeholder)
+// Module 19807 (Placeholder)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const ActivityIndicator = react_native.ActivityIndicator;

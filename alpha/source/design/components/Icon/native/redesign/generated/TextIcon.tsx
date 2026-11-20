@@ -1,14 +1,14 @@
-// Module ID: 7562
-// Function ID: 7563
+// Module ID: 7561
+// Function ID: 7562
 // Name: TextIcon
-// Dependencies: [19, 21, 575, 5478, 7521, 2]
+// Dependencies: [19, 21, 575, 5480, 7520, 2]
 // Exports: TextIcon
 
-// Module 7562 (TextIcon)
+// Module 7561 (TextIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5478 */;
-import AssetRegistry from "AssetRegistry" /* 7521 */;
+import BaseIconImage2 from "BaseIconImage" /* 5480 */;
+import AssetRegistry from "AssetRegistry" /* 7520 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,12 +1,12 @@
-// Module ID: 20270
-// Function ID: 20271
+// Module ID: 20090
+// Function ID: 20091
 // Name: DirectReply
-// Dependencies: [5, 17, 4797, 3, 20264, 8131, 2]
+// Dependencies: [5, 17, 4799, 3, 20084, 8130, 2]
 
-// Module 20270 (DirectReply)
+// Module 20090 (DirectReply)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
-import MessageConstants from "MessageConstants" /* 4797 */;
+import MessageConstants from "MessageConstants" /* 4799 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -45,7 +45,7 @@ export default (arg0) => {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "HermesInternal", done: "+60" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
@@ -91,7 +91,7 @@ export default (arg0) => {
                 }
                 closure_0(true);
                 c4 = 3;
-                return { value: "HermesInternal", done: "+60" };
+                return { value: "HermesInternal", done: null };
               }
             } catch (tmp19) {
               c4 = 3;

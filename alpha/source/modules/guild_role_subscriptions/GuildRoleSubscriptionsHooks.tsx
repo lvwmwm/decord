@@ -1,19 +1,19 @@
-// Module ID: 16670
-// Function ID: 16671
+// Module ID: 16494
+// Function ID: 16495
 // Name: GuildRoleSubscriptionsHooks
-// Dependencies: [5, 32, 19, 6273, 4717, 504, 6756, 6899, 16671, 16672, 12985, 1255, 2]
+// Dependencies: [5, 32, 19, 6275, 4719, 504, 6756, 6898, 16495, 16496, 12955, 1254, 2]
 // Exports: useArchiveSubscriptionListing, useCreateSubscriptionGroupListing, useDeleteSubscriptionGroupListing, useDeleteSubscriptionListing, useFetchListingsForSubscriptions, useFetchSubscriptionsSettings, useGroupListingsForGuild, usePublishSubscriptionListing, useSubscriptionGroupListing, useSubscriptionListing, useSubscriptionListingsForGroup, useSubscriptionListingsForGuild, useSubscriptionTrial, useSubscriptionTrialsForGroup, useSubscriptionTrialsForGuild, useSubscriptionsSettings, useUpdateSubscriptionGroupListing, useUpdateSubscriptionsSettings, useUpdateSubscriptionsTrial
 
-// Module 16670 (GuildRoleSubscriptionsHooks)
-import GlobalUtils from "GlobalUtils" /* 1255 */;
-import GuildRoleSubscriptionsStore2 from "GuildRoleSubscriptionsStore" /* 4717 */;
+// Module 16494 (GuildRoleSubscriptionsHooks)
+import GlobalUtils from "GlobalUtils" /* 1254 */;
+import GuildRoleSubscriptionsStore2 from "GuildRoleSubscriptionsStore" /* 4719 */;
 import GuildRoleSubscriptionsActionCreatorsAll from "GuildRoleSubscriptionsActionCreators" /* 6756 */;
-import useRequestDefault from "useRequest" /* 12985 */;
-import subscriptionUtils from "subscriptionUtils" /* 16672 */;
+import useRequestDefault from "useRequest" /* 12955 */;
+import subscriptionUtils from "subscriptionUtils" /* 16496 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6273 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6275 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -98,7 +98,7 @@ export function useCreateSubscriptionGroupListing() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c5;
@@ -131,7 +131,7 @@ export function useCreateSubscriptionGroupListing() {
             c5 = 0;
             closure_130_0(false);
             c6 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           } else if (arg0 === 1) {
             c6 = 3;
             throw value;
@@ -198,7 +198,7 @@ export function useUpdateSubscriptionGroupListing() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c6;
@@ -232,7 +232,7 @@ export function useUpdateSubscriptionGroupListing() {
           c6 = 0;
           closure_0(false);
           c7 = 3;
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         } else if (arg0 === 1) {
           c7 = 3;
           throw value;
@@ -463,7 +463,7 @@ export function useDeleteSubscriptionListing() {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c6;
@@ -497,7 +497,7 @@ export function useDeleteSubscriptionListing() {
             c6 = 0;
             closure_131_0(false);
             c7 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           } else if (arg0 === 1) {
             c7 = 3;
             throw value;
@@ -568,7 +568,7 @@ export function usePublishSubscriptionListing() {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -618,7 +618,7 @@ export function usePublishSubscriptionListing() {
               c4 = 0;
               closure_130_0(false);
               c6 = 3;
-              return { value: "HermesInternal", done: "+60" };
+              return { value: "HermesInternal", done: null };
             } else if (arg0 === 1) {
               c6 = 3;
               throw value;
@@ -700,7 +700,7 @@ export function useUpdateSubscriptionsSettings() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c5;
@@ -748,7 +748,7 @@ export function useUpdateSubscriptionsSettings() {
           c5 = 0;
           closure_0(false);
           c6 = 3;
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp29) {
         closure_4 = tmp29;
@@ -790,7 +790,7 @@ export function useDeleteSubscriptionGroupListing() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c5;
@@ -823,7 +823,7 @@ export function useDeleteSubscriptionGroupListing() {
             c5 = 0;
             closure_130_0(false);
             c6 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           } else if (arg0 === 1) {
             c6 = 3;
             throw value;
@@ -888,7 +888,7 @@ export function useFetchSubscriptionsSettings() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -935,7 +935,7 @@ export function useFetchSubscriptionsSettings() {
           c4 = 0;
           closure_0(false);
           c5 = 3;
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp28) {
         closure_3 = tmp28;
@@ -982,7 +982,7 @@ export function useUpdateSubscriptionsTrial() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c6;
@@ -1030,7 +1030,7 @@ export function useUpdateSubscriptionsTrial() {
           c6 = 0;
           closure_0(false);
           c7 = 3;
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp30) {
         closure_5 = tmp30;

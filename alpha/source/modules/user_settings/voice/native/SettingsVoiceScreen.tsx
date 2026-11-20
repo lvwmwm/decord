@@ -1,26 +1,26 @@
-// Module ID: 16705
-// Function ID: 16706
+// Module ID: 16529
+// Function ID: 16530
 // Name: SettingsVoiceScreen
-// Dependencies: [19, 17, 2133, 8593, 1072, 21, 2188, 4792, 5001, 4799, 10938, 10939, 5479, 1113, 5052, 10937, 5383, 10934, 11875, 15898, 2]
+// Dependencies: [19, 17, 2131, 8592, 1071, 21, 2186, 4794, 5003, 4801, 10880, 10881, 5481, 1112, 5054, 10879, 5385, 10876, 11817, 15862, 2]
 // Exports: default
 
-// Module 16705 (SettingsVoiceScreen)
+// Module 16529 (SettingsVoiceScreen)
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1072 */;
-import intl10 from "intl" /* 1113 */;
-import shared from "shared" /* 4799 */;
-import useThemeDefault from "useTheme" /* 5001 */;
-import FastImageDefault from "FastImage" /* 5479 */;
-import SettingsConstants from "SettingsConstants" /* 8593 */;
-import NoiseCancellationUtils from "NoiseCancellationUtils" /* 10934 */;
-import KrispLogo2 from "KrispLogo" /* 10937 */;
-import SettingBuilders from "SettingBuilders" /* 11875 */;
-import SettingLayoutDefault from "SettingLayout" /* 15898 */;
+import Constants from "Constants" /* 1071 */;
+import intl10 from "intl" /* 1112 */;
+import shared from "shared" /* 4801 */;
+import useThemeDefault from "useTheme" /* 5003 */;
+import FastImageDefault from "FastImage" /* 5481 */;
+import SettingsConstants from "SettingsConstants" /* 8592 */;
+import NoiseCancellationUtils from "NoiseCancellationUtils" /* 10876 */;
+import KrispLogo2 from "KrispLogo" /* 10879 */;
+import SettingBuilders from "SettingBuilders" /* 11817 */;
+import SettingLayoutDefault from "SettingLayout" /* 15862 */;
 import react from "react" /* 19 */;
-import MediaEngineStore from "MediaEngineStore" /* 2133 */;
+import MediaEngineStore from "MediaEngineStore" /* 2131 */;
 import Fragment from "Fragment" /* 21 */;
-import HelpdeskUtils from "HelpdeskUtils" /* 2188 */;
-import createStyles from "createStyles" /* 4792 */;
+import HelpdeskUtils from "HelpdeskUtils" /* 2186 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let mediaEngine;
@@ -40,21 +40,21 @@ function KrispLogo() {
   const tmp4 = useThemeDefault();
   const obj = shared;
   if (obj.isThemeLight(tmp4)) {
-    tmp2Result = tmp2(10938);
+    tmp2Result = tmp2(10880);
   } else {
-    tmp2Result = tmp2(10939);
+    tmp2Result = tmp2(10881);
   }
   const obj2 = { style: tmp.krisp, children: items };
   const obj3 = { style: tmp.logo, source: tmp2Result, accessibilityLabel: intl.string(intl10.t.vFiCSx) };
   const tmp2Result2 = FastImageDefault;
-  intl = tmp5(1113).intl;
+  intl = tmp5(1112).intl;
   items = [metroImportAll(tmp2Result2, obj3), ];
   const obj4 = { accessibilityRole: "link", accessibilityLabel: intl2.string(intl10.t.hvVgAZ), onPress: KrispLogo2.handleKrispLinkPressed, children: metroImportAll(Text, obj5) };
-  const LegacyPressable = tmp5(5052).LegacyPressable;
-  intl2 = tmp5(1113).intl;
+  const LegacyPressable = tmp5(5054).LegacyPressable;
+  intl2 = tmp5(1112).intl;
   obj5 = { variant: "body-sm/medium", color: "text-link", children: intl3.string(intl10.t.hvVgAZ) };
-  Text = tmp5(5383).Text;
-  intl3 = tmp5(1113).intl;
+  Text = tmp5(5385).Text;
+  intl3 = tmp5(1112).intl;
   items[1] = metroImportAll(LegacyPressable, obj4);
   return React4(View, obj2);
 }
@@ -65,8 +65,8 @@ function SystemProcessingSubLabel() {
   const obj = NoiseCancellationUtils;
   if (obj.useNoiseCancellationDeferredToSystem()) {
     const obj2 = { variant: "body-sm/medium", children: intl.format(intl10.t.EUNgko, obj3) };
-    const Text = tmp(5383).Text;
-    intl = tmp(1113).intl;
+    const Text = tmp(5385).Text;
+    intl = tmp(1112).intl;
     obj3 = {
       onSettingsClick() {
           mediaEngine = mediaEngine.getMediaEngine();

@@ -1,12 +1,12 @@
 // Module ID: 8930
 // Function ID: 8931
 // Name: UserProfileGradientContainer
-// Dependencies: [19, 21, 8073, 5347, 2]
+// Dependencies: [19, 21, 8072, 5349, 2]
 
 // Module 8930 (UserProfileGradientContainer)
 import Fragment from "Fragment" /* 21 */;
-import LinearGradientDefault from "LinearGradient" /* 5347 */;
-import useUserProfileGradientColors from "useUserProfileGradientColors" /* 8073 */;
+import LinearGradientDefault from "LinearGradient" /* 5349 */;
+import useUserProfileGradientColors from "useUserProfileGradientColors" /* 8072 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

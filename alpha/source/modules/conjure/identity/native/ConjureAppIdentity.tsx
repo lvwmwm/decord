@@ -1,24 +1,24 @@
-// Module ID: 18327
-// Function ID: 18328
+// Module ID: 18148
+// Function ID: 18149
 // Name: ConjureAppIdentity
-// Dependencies: [32, 5, 19, 17, 21, 575, 4792, 8323, 8356, 18328, 1113, 4089, 1493, 18316, 9367, 13686, 8539, 15860, 6928, 18329, 5479, 5808, 7102, 6501, 5383, 7342, 2]
+// Dependencies: [32, 5, 19, 17, 21, 575, 4794, 8322, 8355, 18149, 1112, 4091, 1491, 18131, 9367, 12200, 8538, 15824, 6927, 18150, 5481, 5810, 7101, 6503, 5385, 7341, 2]
 // Exports: ConjureAppIdentitySection
 
-// Module 18327 (ConjureAppIdentity)
+// Module 18148 (ConjureAppIdentity)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl4 from "intl" /* 1113 */;
-import _modDef4089 from "module_4089" /* 4089 */;
-import FastImageDefault from "FastImage" /* 5479 */;
-import Card_Card from "Card/Card" /* 6928 */;
-import ImagePickerDefault from "ImagePicker" /* 8356 */;
+import intl4 from "intl" /* 1112 */;
+import _modDef4091 from "module_4091" /* 4091 */;
+import FastImageDefault from "FastImage" /* 5481 */;
+import Card_Card from "Card/Card" /* 6927 */;
+import ImagePickerDefault from "ImagePicker" /* 8355 */;
 import UploadIcon from "UploadIcon" /* 9367 */;
-import MagicWandIcon from "MagicWandIcon" /* 13686 */;
+import MagicWandIcon from "MagicWandIcon" /* 12200 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let c3, c4, importDefault;
@@ -72,7 +72,7 @@ let value = function _pickConjureAppIcon() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -204,7 +204,7 @@ class ConjureAppIconTile {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c2;
@@ -230,7 +230,7 @@ class ConjureAppIconTile {
           } else if (1 === c3) {
             c2 = 0;
             c4 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           } else if (arg0 === 1) {
             c4 = 3;
             throw value;
@@ -251,7 +251,7 @@ class ConjureAppIconTile {
               }
             }
             c4 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp18) {
           if (0 === c2) {
@@ -272,7 +272,7 @@ class ConjureAppIconTile {
         const obj = { label: intl.string(intl4.t["MsUY/S"]), IconComponent: UploadIcon.UploadIcon, action };
         intl = intl4.intl;
         const items = [obj, ];
-        const obj2 = { label: intl2.string(_modDef4089["oAG/BY"]), IconComponent: MagicWandIcon.MagicWandIcon, action: tmp };
+        const obj2 = { label: intl2.string(_modDef4091["oAG/BY"]), IconComponent: MagicWandIcon.MagicWandIcon, action: tmp };
         intl2 = intl4.intl;
         items[1] = obj2;
         tmp2 = items;
@@ -333,12 +333,12 @@ function IconTileCard(arg0) {
   }
   const obj = { variant: "secondary", border: str, radius, style: items, accessibilityLabel: string(null == iconURL ? t["MsUY/S"] : t.VATxfe), disabled, onPress, children: tmp3Result };
   items = [tmp.tile, { width: size, height: size }, null == iconURL && tmp.tileEmpty];
-  const intl = tmp4(1113).intl;
+  const intl = tmp4(1112).intl;
   string = intl.string;
-  t = tmp4(1113).t;
+  t = tmp4(1112).t;
   if (null == iconURL) {
     const obj2 = { size: "md", color: nativeDefault.colors.ICON_MUTED };
-    const ImagePlusIcon = tmp4(18329).ImagePlusIcon;
+    const ImagePlusIcon = tmp4(18150).ImagePlusIcon;
     tmp3Result = tmp3(ImagePlusIcon, obj2);
   } else {
     const obj3 = { source: obj4, style: tmp.tileImage, resizeMode: "cover" };
@@ -398,29 +398,29 @@ export function ConjureAppIdentitySection(nameError) {
     }
   }, items);
   const obj = { spacing: nativeDefault.space.PX_8, children: items2 };
-  const Stack = nameError(5808).Stack;
+  const Stack = nameError(5810).Stack;
   const obj2 = { style: tmp.nameRow, children: items1 };
   items1 = [closure_7(ConjureAppIconTile, { iconURL, size: first1, disabled: flag, onChange: onIconChange, onError: tmp4 }), ];
   const obj3 = { style: tmp.nameField, onLayout: callback, children: closure_7(TextInput, obj4) };
-  obj4 = { label: intl.string(_modDef4089.GWBCF9), value: name, onChange: onNameChange, maxLength: nameError(6501).MAX_PROJECT_NAME_LENGTH, disabled: flag, errorMessage: nameError };
-  TextInput = nameError(7102).TextInput;
-  intl = nameError(1113).intl;
+  obj4 = { label: intl.string(_modDef4091.GWBCF9), value: name, onChange: onNameChange, maxLength: nameError(6503).MAX_PROJECT_NAME_LENGTH, disabled: flag, errorMessage: nameError };
+  TextInput = nameError(7101).TextInput;
+  intl = nameError(1112).intl;
   items1[1] = closure_7(View, obj3);
   items2 = [closure_8(View, obj2), ];
   let tmp14Result = null;
   const tmp9 = closure_9;
   if (null != first) {
-    const obj5 = { accessibilityLiveRegion: "polite", children: closure_7(nameError(5383).Text, obj6) };
+    const obj5 = { accessibilityLiveRegion: "polite", children: closure_7(nameError(5385).Text, obj6) };
     obj6 = { variant: "body-xs/normal", color: "text-feedback-critical", children: first };
     tmp14Result = tmp14(tmp13, obj5);
   }
   const obj7 = { children: items3 };
   items2[1] = tmp14Result;
   items3 = [closure_8(Stack, obj), ];
-  const obj8 = { label: intl2.string(_modDef4089.ynaGa1), placeholder: intl3.string(_modDef4089["I+3UTL"]), value: description, onChange: onDescriptionChange, maxLength: nameError(6501).MAX_APP_DESCRIPTION_LENGTH, disabled: flag };
-  const TextArea = tmp10(7342).TextArea;
-  intl2 = tmp10(1113).intl;
-  intl3 = tmp10(1113).intl;
+  const obj8 = { label: intl2.string(_modDef4091.ynaGa1), placeholder: intl3.string(_modDef4091["I+3UTL"]), value: description, onChange: onDescriptionChange, maxLength: nameError(6503).MAX_APP_DESCRIPTION_LENGTH, disabled: flag };
+  const TextArea = tmp10(7341).TextArea;
+  intl2 = tmp10(1112).intl;
+  intl3 = tmp10(1112).intl;
   items3[1] = closure_7(TextArea, obj8);
   return closure_8(tmp9, obj7);
 }

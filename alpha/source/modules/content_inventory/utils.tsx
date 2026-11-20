@@ -1,16 +1,16 @@
-// Module ID: 7891
-// Function ID: 7892
+// Module ID: 7890
+// Function ID: 7891
 // Name: utils
-// Dependencies: [1089, 11, 1113, 2169, 7892, 7893, 2]
+// Dependencies: [1088, 11, 1112, 2167, 7891, 7892, 2]
 // Exports: calculateActiveTimestampDurations, formatActiveA11yTimestamp, formatEntryTimestamp, getAggregateRange, getEntryDuration, getEpisodeBadgeA11yText, getEpisodeBadgeText, getFullResurrectedBadgeText, getMarathonDescription, getResurrectedEntryLastPlayTime, getRichGameStateBadgeText, getStreakCount, getTrait, getTrendingType, isEntryActive, isEntryExpired, isEntryLive, isEntryMarathon, isEntryNew, isEntryRecent, isEntryTopGame, isValidStreak
 
-// Module 7891 (utils)
+// Module 7890 (utils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import DurationsDefault from "Durations" /* 1089 */;
-import intl4 from "intl" /* 1113 */;
-import _modDef2169 from "module_2169" /* 2169 */;
-import ContentInventoryTraitType from "ContentInventoryTraitType" /* 7892 */;
-import ContentInventoryEntryType from "ContentInventoryEntryType" /* 7893 */;
+import DurationsDefault from "Durations" /* 1088 */;
+import intl4 from "intl" /* 1112 */;
+import _modDef2167 from "module_2167" /* 2167 */;
+import ContentInventoryTraitType from "ContentInventoryTraitType" /* 7891 */;
+import ContentInventoryEntryType from "ContentInventoryEntryType" /* 7892 */;
 import size_mod from "module_2" /* 2 */;
 
 function calculateTimestampDurations(end, now) {
@@ -106,8 +106,8 @@ function formatEndedTimestamp(entry, arg1, timestamp, arg3) {
   if (formatSet === undefined) {
     formatSet = closure_6;
   }
-  const obj2 = _modDef2169(timestamp);
-  const tmp3 = _modDef2169;
+  const obj2 = _modDef2167(timestamp);
+  const tmp3 = _modDef2167;
   const obj3 = SnowflakeUtilsDefault;
   const diffResult = obj2.diff(tmp3(obj3.extractTimestamp(entry.id)), "s");
   const absolute = Math.abs(diffResult);
@@ -424,7 +424,7 @@ export function getResurrectedEntryLastPlayTime(entry) {
 }
 export function getFullResurrectedBadgeText(arg0) {
   let num;
-  const obj = _modDef2169();
+  const obj = _modDef2167();
   const diffResult = obj.diff(arg0, "months");
   const intl = intl4.intl;
   const formatToPlainString = intl.formatToPlainString;
@@ -568,11 +568,11 @@ export function getMarathonDescription(entry) {
       obj = { text: null, tooltipText: null, a11yText: null };
     } else {
       obj = { text: intl.formatToPlainString(intl4.t.vZaMem, obj2), tooltipText: intl2.formatToPlainString(intl4.t.S5F485, obj3), a11yText: intl3.formatToPlainString(intl4.t["RZY+tX"], obj4) };
-      intl = tmp(1113).intl;
+      intl = tmp(1112).intl;
       obj2 = { hours: rounded };
-      intl2 = tmp(1113).intl;
+      intl2 = tmp(1112).intl;
       obj3 = { hours: rounded };
-      intl3 = tmp(1113).intl;
+      intl3 = tmp(1112).intl;
       obj4 = { hours: rounded };
     }
     return obj;

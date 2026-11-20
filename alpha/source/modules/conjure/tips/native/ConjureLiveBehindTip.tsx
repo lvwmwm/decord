@@ -1,16 +1,16 @@
-// Module ID: 18511
-// Function ID: 18512
+// Module ID: 18335
+// Function ID: 18336
 // Name: ConjureLiveBehindTip
-// Dependencies: [19, 21, 18308, 18506, 9367, 1113, 4089, 18495, 2]
+// Dependencies: [19, 21, 18124, 18330, 9367, 1112, 4091, 18319, 2]
 
-// Module 18511 (ConjureLiveBehindTip)
+// Module 18335 (ConjureLiveBehindTip)
 import Fragment from "Fragment" /* 21 */;
-import intl2 from "intl" /* 1113 */;
-import _modDef4089 from "module_4089" /* 4089 */;
+import intl2 from "intl" /* 1112 */;
+import _modDef4091 from "module_4091" /* 4091 */;
 import UploadIcon from "UploadIcon" /* 9367 */;
-import useConjureStartPublishDefault from "useConjureStartPublish" /* 18308 */;
-import conjureLiveBehindTip from "conjureLiveBehindTip" /* 18495 */;
-import ConjureTipHintDefault from "ConjureTipHint" /* 18506 */;
+import useConjureStartPublishDefault from "useConjureStartPublish" /* 18124 */;
+import conjureLiveBehindTip from "conjureLiveBehindTip" /* 18319 */;
+import ConjureTipHintDefault from "ConjureTipHint" /* 18330 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ function LiveBehindHint(arg0) {
       return closure_0("outdated_notice");
     }
   };
-  return <tmp icon={UploadIcon.UploadIcon} onDismiss={onDismiss}>{intl.format(_modDef4089.fWfeZ8, obj2)}</tmp>;
+  return <tmp icon={UploadIcon.UploadIcon} onDismiss={onDismiss}>{intl.format(_modDef4091.fWfeZ8, obj2)}</tmp>;
 }
 const jsx = Fragment.jsx;
 const obj = {

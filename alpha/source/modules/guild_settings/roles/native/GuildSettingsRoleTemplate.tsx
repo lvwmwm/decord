@@ -1,28 +1,28 @@
-// Module ID: 19893
-// Function ID: 19894
+// Module ID: 19713
+// Function ID: 19714
 // Name: GuildSettingsRoleTemplate
-// Dependencies: [32, 19, 17, 4793, 4663, 19889, 1072, 21, 4792, 575, 7254, 1496, 5022, 1655, 1256, 5529, 10908, 6911, 5383, 9390, 1187, 11944, 5390, 1113, 2]
+// Dependencies: [32, 19, 17, 4795, 4665, 19709, 1071, 21, 4794, 575, 7253, 1494, 5024, 1653, 1255, 5531, 10850, 6910, 5385, 9390, 1186, 11886, 5392, 1112, 2]
 // Exports: default
 
-// Module 19893 (GuildSettingsRoleTemplate)
+// Module 19713 (GuildSettingsRoleTemplate)
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 1187 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5022 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5529 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 7254 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11944 */;
+import native from "native" /* 1186 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5024 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5531 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7253 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11886 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4793 */;
-import GuildStore from "GuildStore" /* 4663 */;
-import GuildSettingsRoleConstants from "GuildSettingsRoleConstants" /* 19889 */;
-import Constants from "Constants" /* 1072 */;
+import AccessibilityStore from "AccessibilityStore" /* 4795 */;
+import GuildStore from "GuildStore" /* 4665 */;
+import GuildSettingsRoleConstants from "GuildSettingsRoleConstants" /* 19709 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let title;
@@ -41,9 +41,9 @@ let obj3;
 let tmp11;
 let tmp2;
 let unpackModuleId;
-const _mod1655 = tmp11(1655);
+const _mod1653 = tmp11(1653);
 const PaginationDefault = tmp2(9390);
-const _modDef10908 = tmp2(10908);
+const _modDef10850 = tmp2(10850);
 let _slicedToArray = _slicedToArray_mod;
 ({ View: hasOwnProperty, Dimensions, ScrollView: metroRequire } = react_native);
 ({ PermissionTemplateTypes: c9, PermissionTemplates: c10, DEFAULT_TEMPLATE_TYPE: unpackModuleId } = GuildSettingsRoleConstants);
@@ -128,10 +128,10 @@ export default function GuildSettingsRoleTemplate(arg0) {
   }, items);
   let items1 = [closure_18, , , , , ];
   const useCallback = obj.useCallback;
-  items1[1] = _mod1655.interpolate;
+  items1[1] = _mod1653.interpolate;
   items1[2] = tmp10;
   items1[3] = bound;
-  items1[4] = _mod1655.Extrapolation;
+  items1[4] = _mod1653.Extrapolation;
   items1[5] = num;
   let c0;
   let c1;
@@ -172,7 +172,7 @@ export default function GuildSettingsRoleTemplate(arg0) {
   const values = Object.values(closure_10);
   let obj3 = { ref, style: tmp.container, children: items5 };
   let obj4 = { style: tmp.sliderContainer, children: items4 };
-  let obj5 = { accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_14(_modDef10908, obj6) };
+  let obj5 = { accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_14(_modDef10850, obj6) };
   obj6 = { maximumValue: values.length - 1, minimumTrackTintColor: values[value].color, minimumValue: constants.COSMETIC, onSlidingComplete: updateLevel, style: tmp.slider, thumbTintColor: values[value].color, value, accessible: false, accessibilityElementsHidden: true, importantForAccessibility: "no" };
   items4 = [closure_14(ref1, obj5), ];
   let obj7 = {

@@ -1,17 +1,17 @@
-// Module ID: 18049
-// Function ID: 18050
+// Module ID: 17876
+// Function ID: 17877
 // Name: SecureFramesCallVerificationBottomSheet
-// Dependencies: [19, 5533, 1072, 21, 504, 9590, 9598, 9612, 1113, 9587, 2]
+// Dependencies: [19, 5535, 1071, 21, 504, 9590, 9598, 9612, 1112, 9587, 2]
 // Exports: default
 
-// Module 18049 (SecureFramesCallVerificationBottomSheet)
+// Module 17876 (SecureFramesCallVerificationBottomSheet)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1072 */;
+import Constants from "Constants" /* 1071 */;
 import SecureFramesTracking from "SecureFramesTracking" /* 9590 */;
 import showShareActionSheet from "showShareActionSheet" /* 9598 */;
 import SecureFramesVerificationBottomSheetDefault from "SecureFramesVerificationBottomSheet" /* 9612 */;
 import react from "react" /* 19 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5533 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5535 */;
 import size from "module_2" /* 2 */;
 
 let secureFramesState;
@@ -43,12 +43,12 @@ export default function SecureFramesCallVerificationBottomSheet(channelId) {
     obj3.showShareActionSheet(obj4, AnalyticsSections.SECURE_FRAMES_STREAM_BOTTOM_SHEET);
   }, items1);
   SecureFramesVerificationBottomSheetDefault;
-  const intl = channelId(1113).intl;
-  const intl2 = channelId(1113).intl;
-  const intl3 = channelId(1113).intl;
+  const intl = channelId(1112).intl;
+  const intl2 = channelId(1112).intl;
+  const intl3 = channelId(1112).intl;
   const format = intl3.format;
   let obj3 = { helpArticle: obj4.getSecureFramesHelpdeskArticle() };
-  const wKxADe = channelId(1113).t.wKxADe;
+  const wKxADe = channelId(1112).t.wKxADe;
   obj4 = channelId(9587);
-  return <tmp3 title={intl.string(channelId(1113).t.cTQI5t)} subtitle={intl2.string(channelId(1113).t["MPp7+C"])} footer={format(wKxADe, obj3)} epochAuthenticator={stateFromStores} onShareClick={callback} />;
+  return <tmp3 title={intl.string(channelId(1112).t.cTQI5t)} subtitle={intl2.string(channelId(1112).t["MPp7+C"])} footer={format(wKxADe, obj3)} epochAuthenticator={stateFromStores} onShareClick={callback} />;
 };

@@ -1,28 +1,28 @@
-// Module ID: 5688
-// Function ID: 5689
+// Module ID: 5690
+// Function ID: 5691
 // Name: AudioActionCreators
-// Dependencies: [5, 5689, 5692, 4641, 2133, 5533, 4695, 1388, 1072, 5693, 5537, 3, 1256, 551, 572, 5694, 5651, 5698, 5715, 2]
+// Dependencies: [5, 5691, 5694, 4643, 2131, 5535, 4697, 1386, 1071, 5695, 5539, 3, 1255, 551, 572, 5696, 5653, 5700, 5717, 2]
 
-// Module 5688 (AudioActionCreators)
+// Module 5690 (AudioActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import debounceDefault from "debounce" /* 551 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import Constants2 from "Constants" /* 5537 */;
-import trackVoiceAndVideoSettingsUpdateDefault from "trackVoiceAndVideoSettingsUpdate" /* 5651 */;
-import Constants3 from "Constants" /* 5693 */;
-import AudioSettingsUtils from "AudioSettingsUtils" /* 5694 */;
-import applyBackgroundOption from "applyBackgroundOption" /* 5698 */;
-import StreamQualityUtils from "StreamQualityUtils" /* 5715 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import Constants2 from "Constants" /* 5539 */;
+import trackVoiceAndVideoSettingsUpdateDefault from "trackVoiceAndVideoSettingsUpdate" /* 5653 */;
+import Constants3 from "Constants" /* 5695 */;
+import AudioSettingsUtils from "AudioSettingsUtils" /* 5696 */;
+import applyBackgroundOption from "applyBackgroundOption" /* 5700 */;
+import StreamQualityUtils from "StreamQualityUtils" /* 5717 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SpatialAudioStore from "SpatialAudioStore" /* 5689 */;
-import CertifiedDeviceStore from "CertifiedDeviceStore" /* 5692 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import MediaEngineStore from "MediaEngineStore" /* 2133 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5533 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4695 */;
-import UserStore from "UserStore" /* 1388 */;
-import Constants from "Constants" /* 1072 */;
+import SpatialAudioStore from "SpatialAudioStore" /* 5691 */;
+import CertifiedDeviceStore from "CertifiedDeviceStore" /* 5694 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import MediaEngineStore from "MediaEngineStore" /* 2131 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5535 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4697 */;
+import UserStore from "UserStore" /* 1386 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 let c1;
@@ -392,7 +392,7 @@ let obj2 = {
       }
       const obj4 = { volume, location_stack: tmp, voice_channel_type: type };
       type = undefined;
-      const track = tmp3(1256).track;
+      const track = tmp3(1255).track;
       const MEDIA_INPUT_VOLUME_CHANGED = constants2.MEDIA_INPUT_VOLUME_CHANGED;
       AnalyticsUtilsDefault;
       if (channel != null) {
@@ -416,7 +416,7 @@ let obj2 = {
       }
       const obj4 = { volume, location_stack: tmp, voice_channel_type: type };
       type = undefined;
-      const track = tmp3(1256).track;
+      const track = tmp3(1255).track;
       const MEDIA_OUTPUT_VOLUME_CHANGED = constants2.MEDIA_OUTPUT_VOLUME_CHANGED;
       AnalyticsUtilsDefault;
       if (channel != null) {
@@ -653,7 +653,7 @@ let obj2 = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -687,7 +687,7 @@ let obj2 = {
             obj = c1(c2[14]);
             obj.dispatch(obj6);
             c2 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp17) {
           c2 = 3;
@@ -743,7 +743,7 @@ let obj2 = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -777,7 +777,7 @@ let obj2 = {
             obj = c1(c2[14]);
             obj.dispatch(obj6);
             c2 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp17) {
           c2 = 3;

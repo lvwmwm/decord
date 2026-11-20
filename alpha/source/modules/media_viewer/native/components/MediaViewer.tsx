@@ -1,17 +1,17 @@
-// Module ID: 10527
-// Function ID: 10528
+// Module ID: 10469
+// Function ID: 10470
 // Name: MediaViewer
-// Dependencies: [32, 19, 17, 21, 1380, 1655, 10528, 10529, 10536, 5052, 7330, 7401, 7420, 9900, 10537, 10538, 10047, 5803, 5002, 1708, 8101, 9311, 10539, 10541, 10544, 2]
+// Dependencies: [32, 19, 17, 21, 1378, 1653, 10470, 10471, 10478, 5054, 7329, 7400, 7419, 9903, 10479, 10480, 10050, 5805, 5004, 1706, 8100, 9311, 10481, 10483, 10486, 2]
 
-// Module 10527 (MediaViewer)
-import useVideoControls from "useVideoControls" /* 8101 */;
-import MediaViewerDimensionsContext from "MediaViewerDimensionsContext" /* 9900 */;
-import MediaViewerItem2 from "MediaViewerItem" /* 10529 */;
+// Module 10469 (MediaViewer)
+import useVideoControls from "useVideoControls" /* 8100 */;
+import MediaViewerDimensionsContext from "MediaViewerDimensionsContext" /* 9903 */;
+import MediaViewerItem2 from "MediaViewerItem" /* 10471 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
 import size_mod from "module_2" /* 2 */;
 
 let _undefined, _undefined2;

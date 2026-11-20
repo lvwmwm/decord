@@ -1,44 +1,43 @@
-// Module ID: 19865
-// Function ID: 19866
+// Module ID: 19685
+// Function ID: 19686
 // Name: GuildSettingsModalSoundboardSoundInfoActionSheet
-// Dependencies: [5, 32, 19, 17, 5840, 502, 21, 504, 5740, 1113, 1187, 6709, 5473, 5020, 7396, 575, 7229, 6926, 6915, 11180, 19858, 5499, 2]
+// Dependencies: [5, 32, 19, 17, 5842, 21, 504, 19680, 5742, 1112, 1186, 6711, 5475, 5022, 7395, 575, 7228, 6925, 6914, 11122, 19676, 5501, 2]
 
-// Module 19865 (GuildSettingsModalSoundboardSoundInfoActionSheet)
-import SoundboardActionCreators from "SoundboardActionCreators" /* 6709 */;
-import showSoundboardSoundEditModalDefault from "showSoundboardSoundEditModal" /* 19858 */;
+// Module 19685 (GuildSettingsModalSoundboardSoundInfoActionSheet)
+import showSoundboardSoundEditModalDefault from "showSoundboardSoundEditModal" /* 19676 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SoundboardStore from "SoundboardStore" /* 5840 */;
-import AuthenticationStore from "AuthenticationStore" /* 502 */;
+import SoundboardStore from "SoundboardStore" /* 5842 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
 let c1, closure_2;
 
 let c10;
+let c9;
 let metroImportDefault;
 let metroRequire;
-let unpackModuleId;
 let _slicedToArray = _slicedToArray_mod;
 ({ ActivityIndicator: metroRequire, View: metroImportDefault } = react_native);
-({ jsx: c10, jsxs: unpackModuleId } = Fragment);
+({ jsx: c9, jsxs: c10 } = Fragment);
 const memoResult = react.memo(function GuildSettingsModalSoundboardSoundInfoActionSheet(guildId) {
   let TableRowGroup;
   let c4;
   let intl2;
   let intl3;
-  let obj10;
+  let isPlaying;
+  let obj3;
   let obj4;
   let obj5;
-  let obj6;
+  let obj9;
   let string;
   let t;
-  let tmp10;
+  let tmp11Result;
   let tmp12;
-  let tmp6;
-  let tmp9Result;
+  let tmp13;
+  let tmp8;
   guildId = guildId.guildId;
   const soundId = guildId.soundId;
   const hideActionSheet = guildId.hideActionSheet;
@@ -63,7 +62,7 @@ const memoResult = react.memo(function GuildSettingsModalSoundboardSoundInfoActi
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -137,7 +136,7 @@ const memoResult = react.memo(function GuildSettingsModalSoundboardSoundInfoActi
             closure_128_2();
           }
           c4 = 3;
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp56) {
           closure_2 = tmp56;
           if (0 === c3) {
@@ -154,7 +153,7 @@ const memoResult = react.memo(function GuildSettingsModalSoundboardSoundInfoActi
     return obj(...arguments);
   };
   const tmp = guildId;
-  obj = guildId(hideActionSheet[7]);
+  obj = guildId(hideActionSheet[6]);
   const items = [SoundboardStore];
   const items1 = [guildId, soundId];
   const stateFromStores = obj.useStateFromStores(items, () => {
@@ -165,50 +164,40 @@ const memoResult = react.memo(function GuildSettingsModalSoundboardSoundInfoActi
     }
     return found;
   }, items1);
-  let obj2 = guildId(hideActionSheet[7]);
-  const items2 = [SoundboardStore, AuthenticationStore];
-  const items3 = [soundId];
-  const stateFromStores1 = obj2.useStateFromStores(items2, () => {
-    let isPlayingSoundResult = SoundboardStore.isPlayingSound(soundId);
-    obj = SoundboardStore;
-    if (isPlayingSoundResult) {
-      isPlayingSoundResult = obj.isUserPlayingSounds(AuthenticationStore.getId());
-    }
-    return isPlayingSoundResult;
-  }, items3);
-  [tmp6, c4] = _slicedToArray(obj.useState(false), 2);
-  const items4 = [hideActionSheet, stateFromStores];
-  const tmp5 = _slicedToArray(obj.useState(false), 2);
+  let num;
+  const tmp5 = soundId(hideActionSheet[7]);
+  if (stateFromStores != null) {
+    num = stateFromStores.volume;
+  }
+  if (num == null) {
+    num = 1;
+  }
+  const tmp5Result = tmp5(soundId, num);
+  [tmp8, c4] = _slicedToArray(obj.useState(false), 2);
+  const items2 = [hideActionSheet, stateFromStores];
+  const tmp7 = _slicedToArray(obj.useState(false), 2);
   const effect = obj.useEffect(() => {
     if (null == stateFromStores) {
       hideActionSheet();
     }
-  }, items4);
-  let tmp9Result2 = null;
+  }, items2);
+  let tmp11Result2 = null;
   if (null != stateFromStores) {
-    let obj3 = { header: closure_10(tmp(tmp2[14]).BottomSheetTitleHeader, obj4), children: tmp9(tmp10, obj5) };
+    let obj2 = { header: closure_9(tmp(tmp2[14]).BottomSheetTitleHeader, obj3), children: tmp11(tmp12, obj4) };
     const BottomSheet = tmp(tmp2[13]).BottomSheet;
-    obj4 = { title: stateFromStores.name };
-    obj5 = { style: obj6, children: tmp12(TableRowGroup, obj10) };
-    obj6 = { paddingHorizontal: soundId(tmp2[15]).space.PX_12, paddingBottom: soundId(tmp2[15]).space.PX_16 };
+    obj3 = { title: stateFromStores.name };
+    obj4 = { style: obj5, children: tmp13(TableRowGroup, obj9) };
+    obj5 = { paddingHorizontal: tmp4(tmp2[15]).space.PX_12, paddingBottom: tmp4(tmp2[15]).space.PX_16 };
     TableRowGroup = tmp(tmp2[16]).TableRowGroup;
-    let obj7 = {
-      icon: closure_10(tmp(tmp2[18]).VoiceNormalIcon, {}),
-      label: string(stateFromStores1 ? t.diasud : t.Kd4uxG),
-      disabled: stateFromStores1,
-      onPress() {
-          obj = SoundboardActionCreators;
-          const obj2 = { soundId: stateFromStores.soundId, volume: stateFromStores.volume };
-          obj.playSoundLocally(null, obj2);
-        }
-    };
+    let obj6 = { icon: closure_9(tmp(tmp2[18]).VoiceNormalIcon, {}), label: string(isPlaying ? t.hHBkuG : t.Kd4uxG), onPress: tmp5Result.isPlaying ? tmp5Result.stop : tmp5Result.play };
     const TableRow = tmp(tmp2[17]).TableRow;
     let intl = tmp(tmp2[9]).intl;
     string = intl.string;
+    isPlaying = tmp5Result.isPlaying;
     t = tmp(tmp2[9]).t;
-    const items5 = [tmp9(TableRow, obj7), , ];
-    let obj8 = {
-      icon: tmp9(tmp(tmp2[19]).PencilIcon, {}),
+    const items3 = [tmp11(TableRow, obj6), , ];
+    let obj7 = {
+      icon: tmp11(tmp(tmp2[19]).PencilIcon, {}),
       label: intl2.string(tmp(tmp2[9]).t.uKlG0Z),
       onPress() {
           obj = { guildId, sound: stateFromStores, analyticsSource: "guild_settings" };
@@ -217,30 +206,30 @@ const memoResult = react.memo(function GuildSettingsModalSoundboardSoundInfoActi
     };
     const TableRow2 = tmp(tmp2[17]).TableRow;
     intl2 = tmp(tmp2[9]).intl;
-    items5[1] = closure_10(TableRow2, obj8);
-    let obj9 = {
-      icon: tmp9(tmp(tmp2[21]).TrashIcon, { color: "text-feedback-critical" }),
-      trailing: tmp9Result,
+    items3[1] = closure_9(TableRow2, obj7);
+    let obj8 = {
+      icon: tmp11(tmp(tmp2[21]).TrashIcon, { color: "text-feedback-critical" }),
+      trailing: tmp11Result,
       label: intl3.string(tmp(tmp2[9]).t.gq0iCT),
       variant: "danger",
-      disabled: tmp6,
+      disabled: tmp8,
       onPress: function onDeleteSound() {
           return obj(...arguments);
         }
     };
     const TableRow3 = tmp(tmp2[17]).TableRow;
-    tmp9Result = null;
-    tmp10 = closure_7;
-    tmp12 = closure_11;
-    if (tmp6) {
-      tmp9Result = tmp9(closure_6, {});
+    tmp11Result = null;
+    tmp12 = closure_7;
+    tmp13 = closure_10;
+    if (tmp8) {
+      tmp11Result = tmp11(closure_6, {});
     }
-    obj10 = { hasIcons: true, children: items5 };
+    obj9 = { hasIcons: true, children: items3 };
     intl3 = tmp(tmp2[9]).intl;
-    items5[2] = closure_10(TableRow3, obj9);
-    tmp9Result2 = tmp9(BottomSheet, obj3);
+    items3[2] = closure_9(TableRow3, obj8);
+    tmp11Result2 = tmp11(BottomSheet, obj2);
   }
-  return tmp9Result2;
+  return tmp11Result2;
 });
 const result = size.fileFinishedImporting("modules/guild_settings/server_monetization/soundboard/native/GuildSettingsModalSoundboardSoundInfoActionSheet.tsx");
 

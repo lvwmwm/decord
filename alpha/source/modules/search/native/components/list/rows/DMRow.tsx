@@ -1,27 +1,27 @@
-// Module ID: 18792
-// Function ID: 18793
+// Module ID: 18616
+// Function ID: 18617
 // Name: DMRow
-// Dependencies: [5, 32, 19, 17, 4793, 5530, 4734, 1072, 21, 4792, 575, 5383, 4848, 13417, 504, 10325, 1187, 7659, 14019, 18777, 2]
+// Dependencies: [5, 32, 19, 17, 4795, 5532, 4736, 1071, 21, 4794, 575, 5385, 4850, 13387, 504, 10267, 1186, 7658, 13988, 18601, 2]
 
-// Module 18792 (DMRow)
+// Module 18616 (DMRow)
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 1187 */;
-import UserUtils from "UserUtils" /* 4848 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7659 */;
-import BotTagDefault from "BotTag" /* 10325 */;
-import ActivityStatusDefault from "ActivityStatus" /* 13417 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14019 */;
+import native from "native" /* 1186 */;
+import UserUtils from "UserUtils" /* 4850 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7658 */;
+import BotTagDefault from "BotTag" /* 10267 */;
+import ActivityStatusDefault from "ActivityStatus" /* 13387 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13988 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4793 */;
-import PresenceStore from "PresenceStore" /* 5530 */;
-import RelationshipStore from "RelationshipStore" /* 4734 */;
-import Constants from "Constants" /* 1072 */;
+import AccessibilityStore from "AccessibilityStore" /* 4795 */;
+import PresenceStore from "PresenceStore" /* 5532 */;
+import RelationshipStore from "RelationshipStore" /* 4736 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const UserUtilsDefault = UserUtils;
@@ -117,7 +117,7 @@ const memoResult = react.memo(function DMRow(user) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -157,7 +157,7 @@ const memoResult = react.memo(function DMRow(user) {
           c3 = 0;
           closure_128_8(false);
           c4 = 3;
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp20) {
         closure_2 = tmp20;
@@ -207,7 +207,7 @@ const memoResult = react.memo(function DMRow(user) {
     if (tmp4Result) {
       const obj5 = { style: title.tag, children: map1(Icon, obj6) };
       obj6 = { size: native.Icon.Sizes.REFRESH_SMALL_16, source: AssetRegistryDefault, disableColor: true };
-      Icon = tmp5(1187).Icon;
+      Icon = tmp5(1186).Icon;
       tmp4Result = tmp4(tmp2, obj5);
     }
     items[2] = tmp4Result;
@@ -215,7 +215,7 @@ const memoResult = react.memo(function DMRow(user) {
     if (tmp4Result2) {
       const obj7 = { style: title.tag, children: map1(Icon2, obj8) };
       obj8 = { size: native.Icon.Sizes.REFRESH_SMALL_16, source: AssetRegistryDefault2, disableColor: true };
-      Icon2 = tmp5(1187).Icon;
+      Icon2 = tmp5(1186).Icon;
       tmp4Result2 = tmp4(tmp2, obj7);
     }
     items[3] = tmp4Result2;

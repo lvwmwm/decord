@@ -1,37 +1,37 @@
-// Module ID: 8029
-// Function ID: 8030
+// Module ID: 8028
+// Function ID: 8029
 // Name: UserProfileActionSheet
-// Dependencies: [32, 19, 17, 4641, 4704, 1388, 8013, 7445, 1072, 5021, 21, 4792, 5024, 1655, 1630, 504, 7953, 7401, 7420, 8030, 4617, 8016, 8031, 8032, 8044, 8045, 8046, 8054, 8038, 8060, 8061, 8064, 1496, 5346, 8058, 5001, 5356, 575, 8027, 8065, 6835, 4693, 7954, 1256, 4969, 4971, 8066, 5006, 1502, 7948, 5020, 1187, 8067, 1113, 4853, 8071, 1380, 8074, 8075, 8077, 14326, 14432, 8893, 5355, 14551, 1196, 2]
+// Dependencies: [32, 19, 17, 4643, 4706, 1386, 8012, 7444, 1071, 5023, 21, 4794, 5026, 1653, 1628, 504, 7952, 7400, 7419, 8029, 4619, 8015, 8030, 8031, 8043, 8044, 8045, 8053, 8037, 8059, 8060, 8063, 1494, 5348, 8057, 5003, 5358, 575, 8026, 8064, 6835, 4695, 7953, 1255, 4971, 4973, 8065, 5008, 1500, 7947, 5022, 1186, 8066, 1112, 4855, 8070, 1378, 8073, 8074, 8076, 14294, 14400, 8893, 5357, 14519, 1195, 2]
 
-// Module 8029 (UserProfileActionSheet)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import isChangelogUserDefault from "isChangelogUser" /* 4693 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5021 */;
-import BottomSheetModal from "BottomSheetModal" /* 5024 */;
+// Module 8028 (UserProfileActionSheet)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import isChangelogUserDefault from "isChangelogUser" /* 4695 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5023 */;
+import BottomSheetModal from "BottomSheetModal" /* 5026 */;
 import UserActionCreators from "UserActionCreators" /* 6835 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7420 */;
-import Constants2 from "Constants" /* 7445 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7948 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7954 */;
-import ProfileFrameLayerOrder from "ProfileFrameLayerOrder" /* 8038 */;
-import ProfileFrameDefault from "ProfileFrame" /* 8054 */;
-import scaleProfileFrameDefault from "scaleProfileFrame" /* 8058 */;
-import ApplicationPresenceUtils from "ApplicationPresenceUtils" /* 8065 */;
-import openUserSettings from "openUserSettings" /* 8075 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7419 */;
+import Constants2 from "Constants" /* 7444 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7947 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7953 */;
+import ProfileFrameLayerOrder from "ProfileFrameLayerOrder" /* 8037 */;
+import ProfileFrameDefault from "ProfileFrame" /* 8053 */;
+import scaleProfileFrameDefault from "scaleProfileFrame" /* 8057 */;
+import ApplicationPresenceUtils from "ApplicationPresenceUtils" /* 8064 */;
+import openUserSettings from "openUserSettings" /* 8074 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import GuildMemberStore from "GuildMemberStore" /* 4704 */;
-import UserStore from "UserStore" /* 1388 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8013 */;
-import Constants from "Constants" /* 1072 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import GuildMemberStore from "GuildMemberStore" /* 4706 */;
+import UserStore from "UserStore" /* 1386 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8012 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
-const _modDef1655 = _mod1655;
+const _modDef1653 = _mod1653;
 let constants, navigation, num, obj1, set;
 
 let closure_12;
@@ -52,7 +52,7 @@ function UseAnimatedPosition(animatedPosition) {
   const items = [closure_19, animatedPosition2];
   let c0;
   [tmp, tmp2] = items;
-  const obj2 = _mod1655;
+  const obj2 = _mod1653;
   class UserProfileActionSheetTsx1 {
     constructor() {
       return closure_0.get();
@@ -91,11 +91,11 @@ function ActionSheetAlignedView(arg0) {
   let tmp8;
   ({ animatedPosition, animatedIndex, safeAreaTop, children } = arg0);
   let items = [closure_22, animatedPosition, safeAreaTop, , , ];
-  const useAnimatedStyle = _mod1655.useAnimatedStyle;
-  _mod1655;
-  items[3] = _mod1655.interpolate;
+  const useAnimatedStyle = _mod1653.useAnimatedStyle;
+  _mod1653;
+  items[3] = _mod1653.interpolate;
   items[4] = animatedIndex;
-  items[5] = _mod1655.Extrapolation;
+  items[5] = _mod1653.Extrapolation;
   let c0;
   let c1;
   let c2;
@@ -120,7 +120,7 @@ function ActionSheetAlignedView(arg0) {
   const animatedStyle = useAnimatedStyle(UserProfileActionSheetTsx3);
   let obj = { style: items2, pointerEvents: "box-none", children };
   items2 = [hasOwnProperty.absoluteFill, animatedStyle];
-  return authStore3(_modDef1655.View, obj);
+  return authStore3(_modDef1653.View, obj);
 }
 ({ StyleSheet: hasOwnProperty, View: metroRequire } = react_native);
 const UserProfileThemeTypes = Constants2.UserProfileThemeTypes;
@@ -574,7 +574,7 @@ const memoResult = react.memo(function UserProfileActionSheet(userId) {
         if (atResult === AnalyticsLocationDefault.COLLECTIBLES_SHOP_PROFILE_PREVIEW) {
           const obj = { type: "Collectibles Shop Details Modal Expanded", location_stack: tmp, sku_id: skuId };
           skuId = undefined;
-          const track = tmp3(1256).track;
+          const track = tmp3(1255).track;
           const OPEN_MODAL = guild_id.OPEN_MODAL;
           AnalyticsUtilsDefault;
           if (avatarDecoration != null) {

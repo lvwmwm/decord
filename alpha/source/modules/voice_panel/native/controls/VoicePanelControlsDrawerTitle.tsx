@@ -1,18 +1,18 @@
-// Module ID: 13045
-// Function ID: 13046
+// Module ID: 13015
+// Function ID: 13016
 // Name: VoicePanelControlsDrawerTitle
-// Dependencies: [19, 17, 11686, 21, 4792, 575, 1655, 7205, 13046, 5383, 2]
+// Dependencies: [19, 17, 11628, 21, 4794, 575, 1653, 7204, 13016, 5385, 2]
 
-// Module 13045 (VoicePanelControlsDrawerTitle)
+// Module 13015 (VoicePanelControlsDrawerTitle)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import NativeViewDefault from "NativeView" /* 7205 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11686 */;
-import VoicePanelHeaderGlassBlurDefault from "VoicePanelHeaderGlassBlur" /* 13046 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import NativeViewDefault from "NativeView" /* 7204 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11628 */;
+import VoicePanelHeaderGlassBlurDefault from "VoicePanelHeaderGlassBlur" /* 13016 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let tmp3, value;
@@ -23,8 +23,8 @@ let obj2;
 let obj3;
 let tmp12;
 let tmp2;
-const _modDef1655 = tmp12(1655);
-const Text_Text = tmp2(5383);
+const _modDef1653 = tmp12(1653);
+const Text_Text = tmp2(5385);
 const StyleSheet = react_native.StyleSheet;
 const CONTROLS_DRAWER_HEADER_SIZE = VoicePanelControlsConstants.CONTROLS_DRAWER_HEADER_SIZE;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
@@ -55,7 +55,7 @@ const memoResult = react.memo(function VoicePanelControlsDrawerTitle(title) {
   }
   ({ style, blurStyle } = title);
   const tmp = closure_6();
-  let obj = _mod1655;
+  let obj = _mod1653;
   const sharedValue = obj.useSharedValue(true);
   let backgroundColor = tmp.titlePillBG.backgroundColor;
   const items = [closure_7, shown, sharedValue, disablePill, backgroundColor];
@@ -64,7 +64,7 @@ const memoResult = react.memo(function VoicePanelControlsDrawerTitle(title) {
   let c2;
   let c3;
   [tmp5, tmp6, tmp7, tmp8, tmp9] = items;
-  const obj2 = _mod1655;
+  const obj2 = _mod1653;
   class VoicePanelControlsDrawerTitleTsx1 {
     constructor() {
       obj = closure_0;
@@ -103,7 +103,7 @@ const memoResult = react.memo(function VoicePanelControlsDrawerTitle(title) {
   items3[0] = React3(tmp15, obj4);
   const obj5 = { style: items4, children: React3(Text_Text.Text, { variant: "heading-md/semibold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: title }) };
   items4 = [tmp.titlePill, animatedStyle];
-  const View = _modDef1655.View;
+  const View = _modDef1653.View;
   items3[1] = React3(View, obj5);
   return tmp11(tmp13, obj3);
 });

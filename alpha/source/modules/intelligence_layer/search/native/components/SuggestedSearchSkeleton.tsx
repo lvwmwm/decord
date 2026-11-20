@@ -1,22 +1,22 @@
-// Module ID: 18844
-// Function ID: 18845
+// Module ID: 18668
+// Function ID: 18669
 // Name: SuggestedSearchSkeleton
-// Dependencies: [19, 17, 13109, 8457, 21, 4792, 575, 1655, 5002, 2]
+// Dependencies: [19, 17, 13079, 8456, 21, 4794, 575, 1653, 5004, 2]
 // Exports: default
 
-// Module 18844 (SuggestedSearchSkeleton)
+// Module 18668 (SuggestedSearchSkeleton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import timing_timing from "timing/timing" /* 5002 */;
-import SearchConstants from "SearchConstants" /* 8457 */;
-import SmartSearchConstants from "SmartSearchConstants" /* 13109 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import timing_timing from "timing/timing" /* 5004 */;
+import SearchConstants from "SearchConstants" /* 8456 */;
+import SmartSearchConstants from "SmartSearchConstants" /* 13079 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
-const _modDef1655 = _mod1655;
+const _modDef1653 = _mod1653;
 let set;
 
 let hasOwnProperty;
@@ -47,20 +47,20 @@ export default function SuggestedSearchSkeleton() {
   let tmp5;
   let tmp6;
   const tmp = closure_7();
-  let obj = sharedValue(1655);
+  let obj = sharedValue(1653);
   sharedValue = obj.useSharedValue(0.4);
   const items = [sharedValue];
   const effect = react.useEffect(() => {
     set = sharedValue.set;
-    const withRepeat = _mod1655.withRepeat;
-    _mod1655;
+    const withRepeat = _mod1653.withRepeat;
+    _mod1653;
     const obj = timing_timing;
     const result = set(withRepeat(obj.withTiming(1, { duration: 700 }), -1, true));
   }, items);
   const items1 = [closure_8, sharedValue];
   let c0;
   [tmp5, tmp6] = items1;
-  const obj2 = sharedValue(1655);
+  const obj2 = sharedValue(1653);
   class SuggestedSearchSkeletonTsx1 {
     constructor() {
       const obj = { opacity: _undefined.get() };
@@ -75,7 +75,7 @@ export default function SuggestedSearchSkeleton() {
   const obj3 = { style: items3, "aria-hidden": true, children: items4 };
   items3 = [tmp.row, animatedStyle];
   const obj4 = { style: tmp.icon };
-  View = _modDef1655.View;
+  View = _modDef1653.View;
   items4 = [closure_5(View, obj4), ];
   const obj5 = { style: tmp.labels, children: closure_5(View, obj6) };
   obj6 = { style: tmp.line };

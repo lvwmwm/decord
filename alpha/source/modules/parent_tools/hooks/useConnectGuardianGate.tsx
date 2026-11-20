@@ -1,15 +1,15 @@
-// Module ID: 19677
-// Function ID: 19678
+// Module ID: 19495
+// Function ID: 19496
 // Name: useConnectGuardianGate
-// Dependencies: [32, 19, 8216, 504, 8218, 5353, 2]
+// Dependencies: [32, 19, 8215, 504, 8217, 5355, 2]
 // Exports: useConnectGuardianGate
 
-// Module 19677 (useConnectGuardianGate)
+// Module 19495 (useConnectGuardianGate)
 import get_initialized from "get initialized" /* 504 */;
-import useMountEffectDefault from "useMountEffect" /* 5353 */;
+import useMountEffectDefault from "useMountEffect" /* 5355 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 8216 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 8215 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;

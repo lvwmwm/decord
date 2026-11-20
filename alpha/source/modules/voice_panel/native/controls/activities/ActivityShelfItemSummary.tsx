@@ -1,23 +1,23 @@
-// Module ID: 19343
-// Function ID: 19344
+// Module ID: 19163
+// Function ID: 19164
 // Name: ActivityShelfItemSummary
-// Dependencies: [32, 19, 17, 21, 4792, 575, 4789, 19344, 11014, 1187, 5401, 5383, 1655, 5403, 2]
+// Dependencies: [32, 19, 17, 21, 4794, 575, 4791, 19164, 10956, 1186, 5403, 5385, 1653, 5405, 2]
 // Exports: default
 
-// Module 19343 (ActivityShelfItemSummary)
+// Module 19163 (ActivityShelfItemSummary)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 1187 */;
-import _modDef1655 from "module_1655" /* 1655 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import ButtonPill from "ButtonPill" /* 5401 */;
-import UserSummaryItemDefault from "UserSummaryItem" /* 11014 */;
-import useActivityUsersDefault from "useActivityUsers" /* 19344 */;
+import native from "native" /* 1186 */;
+import _modDef1653 from "module_1653" /* 1653 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import ButtonPill from "ButtonPill" /* 5403 */;
+import UserSummaryItemDefault from "UserSummaryItem" /* 10956 */;
+import useActivityUsersDefault from "useActivityUsers" /* 19164 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
-import ColorUtils_mod from "ColorUtils" /* 4789 */;
+import createStyles_mod from "createStyles" /* 4794 */;
+import ColorUtils_mod from "ColorUtils" /* 4791 */;
 import size from "module_2" /* 2 */;
 
 let ColorUtils;
@@ -26,7 +26,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp2;
-const ButtonEllipsis = tmp2(5403);
+const ButtonEllipsis = tmp2(5405);
 function ParticipantsSummary(arg0) {
   let applicationId;
   let channelId;
@@ -69,7 +69,7 @@ export default function ActivityShelfItemSummary(submitting) {
   items[0] = hasOwnProperty(Text_Text.Text, obj4);
   const obj5 = { style: items1, children: tmp8Result };
   items1 = [tmp.ellipsis, tmp5];
-  View = _modDef1655.View;
+  View = _modDef1653.View;
   if (tmp8Result) {
     tmp8Result = tmp8(ButtonEllipsis.Ellipsis, { variant: "active", size: "md" });
   }

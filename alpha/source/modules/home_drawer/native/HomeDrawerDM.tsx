@@ -1,25 +1,25 @@
-// Module ID: 17963
-// Function ID: 17964
+// Module ID: 17790
+// Function ID: 17791
 // Name: HomeDrawerDM
-// Dependencies: [19, 17, 4645, 4734, 6431, 1388, 1083, 21, 4792, 504, 5408, 17964, 16776, 11639, 10302, 5383, 11063, 5453, 17931, 4974, 4971, 2]
+// Dependencies: [19, 17, 4647, 4736, 6433, 1386, 1082, 21, 4794, 504, 5410, 17791, 16600, 11581, 10244, 5385, 11005, 5455, 17758, 4976, 4973, 2]
 // Exports: default
 
-// Module 17963 (HomeDrawerDM)
+// Module 17790 (HomeDrawerDM)
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1083 */;
-import ChannelRecord from "ChannelRecord" /* 4645 */;
-import HomeDrawerExperiment from "HomeDrawerExperiment" /* 4974 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import useChannelName from "useChannelName" /* 5408 */;
-import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 5453 */;
-import ChannelRowPreview2 from "ChannelRowPreview" /* 11063 */;
-import useMessagePreviewsDefault from "useMessagePreviews" /* 16776 */;
+import Constants from "Constants" /* 1082 */;
+import ChannelRecord from "ChannelRecord" /* 4647 */;
+import HomeDrawerExperiment from "HomeDrawerExperiment" /* 4976 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import useChannelName from "useChannelName" /* 5410 */;
+import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 5455 */;
+import ChannelRowPreview2 from "ChannelRowPreview" /* 11005 */;
+import useMessagePreviewsDefault from "useMessagePreviews" /* 16600 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4734 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6431 */;
-import UserStore from "UserStore" /* 1388 */;
+import RelationshipStore from "RelationshipStore" /* 4736 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6433 */;
+import UserStore from "UserStore" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, importDefault;
@@ -52,7 +52,7 @@ function HomeDrawerDMExpandedChildren(channel) {
     }
     return tmp2;
   });
-  const obj3 = channel(17964);
+  const obj3 = channel(17791);
   let tmp3 = useMessagePreviewsDefault(channel, { unread: obj3.useBaseChannelUnreadBadgeState(channel, false).unread });
   let closure_4 = tmp3;
   const items2 = [UserGuildSettingsStore];
@@ -97,9 +97,9 @@ function HomeDrawerDMExpandedChildren(channel) {
         isTemporary = tmp.isTemporary;
       }
       if (isTemporary) {
-        BellSlashIcon = tmp5(11639).BellZIcon;
+        BellSlashIcon = tmp5(11581).BellZIcon;
       } else {
-        BellSlashIcon = tmp5(10302).BellSlashIcon;
+        BellSlashIcon = tmp5(10244).BellSlashIcon;
       }
       tmp3 = BellSlashIcon;
     } else {
@@ -121,7 +121,7 @@ function HomeDrawerDMExpandedChildren(channel) {
     }
     return tmp2;
   }, items5);
-  return closure_10(channel(17931).HomeDrawerSharedItem, { title, subtitle });
+  return closure_10(channel(17758).HomeDrawerSharedItem, { title, subtitle });
 }
 const View = react_native.View;
 const isMultiUserDM = ChannelRecord.isMultiUserDM;

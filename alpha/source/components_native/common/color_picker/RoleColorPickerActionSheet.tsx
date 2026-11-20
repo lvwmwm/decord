@@ -1,20 +1,20 @@
-// Module ID: 17916
-// Function ID: 17917
+// Module ID: 17743
+// Function ID: 17744
 // Name: RoleColorPickerActionSheet
-// Dependencies: [32, 19, 17, 1072, 21, 4792, 575, 15755, 8507, 5006, 15753, 5020, 7396, 1113, 5390, 16810, 2]
+// Dependencies: [32, 19, 17, 1071, 21, 4794, 575, 15719, 8506, 5008, 15717, 5022, 7395, 1112, 5392, 16634, 2]
 // Exports: default
 
-// Module 17916 (RoleColorPickerActionSheet)
+// Module 17743 (RoleColorPickerActionSheet)
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
-import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 15753 */;
-import ColorBlockDefault from "ColorBlock" /* 15755 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5008 */;
+import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 15717 */;
+import ColorBlockDefault from "ColorBlock" /* 15719 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1072 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let ROLE_COLORS;

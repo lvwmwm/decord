@@ -1,16 +1,16 @@
-// Module ID: 10063
-// Function ID: 10064
+// Module ID: 10066
+// Function ID: 10067
 // Name: Arrow
-// Dependencies: [19, 21, 4792, 575, 1187, 10064, 2]
+// Dependencies: [19, 21, 4794, 575, 1186, 10067, 2]
 // Exports: default
 
-// Module 10063 (Arrow)
+// Module 10066 (Arrow)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 1187 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10064 */;
+import native from "native" /* 1186 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10067 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;

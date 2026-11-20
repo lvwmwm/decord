@@ -1,9 +1,9 @@
-// Module ID: 18304
-// Function ID: 18305
+// Module ID: 12195
+// Function ID: 12196
 // Name: ConjurePublishEvalTypes
 // Dependencies: [2]
 
-// Module 18304 (ConjurePublishEvalTypes)
+// Module 12195 (ConjurePublishEvalTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/publish_eval/ConjurePublishEvalTypes.tsx");

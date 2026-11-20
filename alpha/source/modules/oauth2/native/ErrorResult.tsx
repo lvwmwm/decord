@@ -1,20 +1,20 @@
-// Module ID: 6897
-// Function ID: 6898
-// Dependencies: [19, 17, 21, 4792, 575, 6898, 5479, 6900, 5383, 1113, 5390, 6308, 2]
+// Module ID: 6896
+// Function ID: 6897
+// Dependencies: [19, 17, 21, 4794, 575, 6897, 5481, 6899, 5385, 1112, 5392, 6310, 2]
 // Exports: default
 
-// Module 6897
+// Module 6896
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl3 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import FastImageDefault from "FastImage" /* 5479 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6308 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6898 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6900 */;
+import intl3 from "intl" /* 1112 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import FastImageDefault from "FastImage" /* 5481 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6310 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6897 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6899 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -48,8 +48,8 @@ export default function ErrorResult(error) {
   const Text = Text_Text.Text;
   const tmp5 = View;
   if (error == null) {
-    const intl = tmp3(1113).intl;
-    error = intl.string(tmp3(1113).t.mqn873);
+    const intl = tmp3(1112).intl;
+    error = intl.string(tmp3(1112).t.mqn873);
   }
   items[1] = React3(Text, obj4);
   items1 = [hasOwnProperty(tmp5, obj2), ];
@@ -63,8 +63,8 @@ export default function ErrorResult(error) {
           return arr.pop();
         }
     };
-    const Button = tmp3(5390).Button;
-    intl2 = tmp3(1113).intl;
+    const Button = tmp3(5392).Button;
+    intl2 = tmp3(1112).intl;
     tmp6Result = tmp6(Button, obj5);
   }
   items1[1] = tmp6Result;

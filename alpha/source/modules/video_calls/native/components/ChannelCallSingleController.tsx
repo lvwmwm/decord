@@ -1,17 +1,17 @@
-// Module ID: 10983
-// Function ID: 10984
+// Module ID: 10925
+// Function ID: 10926
 // Name: ChannelCallSingleController
-// Dependencies: [19, 6279, 502, 1072, 5442, 21, 1256, 5529, 504, 10984, 10986, 10987, 2]
+// Dependencies: [19, 6281, 502, 1071, 5444, 21, 1255, 5531, 504, 10926, 10928, 10929, 2]
 // Exports: ChannelCallSingleController
 
-// Module 10983 (ChannelCallSingleController)
+// Module 10925 (ChannelCallSingleController)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import CallConstants from "CallConstants" /* 5442 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5529 */;
+import Constants from "Constants" /* 1071 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import CallConstants from "CallConstants" /* 5444 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5531 */;
 import react from "react" /* 19 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6279 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6281 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
 
@@ -40,11 +40,11 @@ export function ChannelCallSingleController(selectedParticipant) {
     const id = selectedParticipant.user.id;
     let tmp15Result = null;
     if (null != tmp4) {
-      tmp15Result = jsx(channel(id === tmp13 ? 10984 : 10986), { participant: selectedParticipant, channel });
+      tmp15Result = jsx(channel(id === tmp13 ? 10926 : 10928), { participant: selectedParticipant, channel });
     }
     return tmp15Result;
   } else if (ParticipantTypes.USER === type) {
-    return jsx(channel(10987), { participant: selectedParticipant, channel });
+    return jsx(channel(10929), { participant: selectedParticipant, channel });
   } else if (ParticipantTypes.HIDDEN_STREAM === type) {
     return null;
   } else if (ParticipantTypes.ACTIVITY === type) {

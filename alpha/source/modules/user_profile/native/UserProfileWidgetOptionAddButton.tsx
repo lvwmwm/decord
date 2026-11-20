@@ -1,18 +1,18 @@
-// Module ID: 14473
-// Function ID: 14474
+// Module ID: 14441
+// Function ID: 14442
 // Name: UserProfileWidgetOptionAddButton
-// Dependencies: [19, 17, 21, 575, 4792, 10110, 5479, 14474, 14476, 12910, 5383, 2]
+// Dependencies: [19, 17, 21, 575, 4794, 10113, 5481, 14442, 14444, 12880, 5385, 2]
 // Exports: default
 
-// Module 14473 (UserProfileWidgetOptionAddButton)
+// Module 14441 (UserProfileWidgetOptionAddButton)
 import nativeDefault from "native" /* 575 */;
-import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 10110 */;
-import AddWidgetButtonConfig from "AddWidgetButtonConfig" /* 14474 */;
-import UserProfileApplicationWidgetPreviewDefault from "UserProfileApplicationWidgetPreview" /* 14476 */;
+import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 10113 */;
+import AddWidgetButtonConfig from "AddWidgetButtonConfig" /* 14442 */;
+import UserProfileApplicationWidgetPreviewDefault from "UserProfileApplicationWidgetPreview" /* 14444 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -26,7 +26,7 @@ let obj5;
 let obj6;
 let obj7;
 let tmp2;
-const FastImageDefault = tmp2(5479);
+const FastImageDefault = tmp2(5481);
 function PlaceholderCover(arg0) {
   let gameId;
   let items;
@@ -182,10 +182,10 @@ export default function UserProfileWidgetOptionAddButton(onPress) {
   items = [tmp9, ];
   const obj7 = { style: tmp3.overlay, children: items1 };
   const obj8 = { size: "md", color: nativeDefault.colors.TEXT_DEFAULT };
-  const CirclePlusIcon = tmp4(12910).CirclePlusIcon;
+  const CirclePlusIcon = tmp4(12880).CirclePlusIcon;
   items1 = [hasOwnProperty(CirclePlusIcon, obj8), ];
   const obj9 = { variant: "body-md/medium", color: "text-strong", children: tmp4Result.getAddWidgetTitle(widget) };
-  const Text = tmp4(5383).Text;
+  const Text = tmp4(5385).Text;
   tmp4Result = AddWidgetButtonConfig;
   items1[1] = hasOwnProperty(Text, obj9);
   items[1] = metroRequire(React3, obj7);

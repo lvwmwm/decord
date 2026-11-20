@@ -1,14 +1,14 @@
-// Module ID: 19317
-// Function ID: 19318
+// Module ID: 19137
+// Function ID: 19138
 // Name: VoiceChannelAppHeaderButtons
-// Dependencies: [19, 21, 19318, 19254, 17278, 7522, 1113, 4187, 13788, 10307, 2]
+// Dependencies: [19, 21, 19138, 19073, 17105, 7521, 1112, 4189, 13757, 10249, 2]
 // Exports: default
 
-// Module 19317 (VoiceChannelAppHeaderButtons)
-import _modDef4187 from "module_4187" /* 4187 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10307 */;
-import VoiceChannelAppActionCreators from "VoiceChannelAppActionCreators" /* 13788 */;
-import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 19254 */;
+// Module 19137 (VoiceChannelAppHeaderButtons)
+import _modDef4189 from "module_4189" /* 4189 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10249 */;
+import VoiceChannelAppActionCreators from "VoiceChannelAppActionCreators" /* 13757 */;
+import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 19073 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -27,17 +27,17 @@ export default function VoiceChannelAppHeaderButtons(arg0) {
   let string;
   ({ channel, inCall } = arg0);
   let id;
-  let obj = id(19318);
+  let obj = id(19138);
   const voiceChannelAppAvailable = obj.useVoiceChannelAppAvailable(channel, inCall);
-  const obj2 = id(19318);
+  const obj2 = id(19138);
   const voiceChannelAppOpen = obj2.useVoiceChannelAppOpen(channel, inCall);
-  const obj3 = id(19318);
+  const obj3 = id(19138);
   const voiceChannelAppVisible = obj3.useVoiceChannelAppVisible(channel);
   id = channel.id;
   let tmp7Result = null;
   if (voiceChannelAppAvailable) {
     const obj4 = {
-      icon: importDefault(voiceChannelAppVisible ? 17278 : 7522),
+      icon: importDefault(voiceChannelAppVisible ? 17105 : 7521),
       accessibilityLabel: string(ZtYyOx),
       onPress() {
           const obj = VoiceChannelAppActionCreators;
@@ -45,28 +45,28 @@ export default function VoiceChannelAppHeaderButtons(arg0) {
         }
     };
     const tmp11 = VoicePanelIconButtonDefault;
-    const intl = tmp(1113).intl;
+    const intl = tmp(1112).intl;
     string = intl.string;
     const tmp7 = closure_5;
     const tmp8 = closure_4;
     if (voiceChannelAppVisible) {
-      ZtYyOx = tmp(1113).t["3jrUBj"];
+      ZtYyOx = tmp(1112).t["3jrUBj"];
     } else {
-      ZtYyOx = tmp10(4187).ZtYyOx;
+      ZtYyOx = tmp10(4189).ZtYyOx;
     }
     const items = [closure_3(tmp11, obj4), ];
     let tmp9Result = null;
     if (voiceChannelAppOpen) {
       const obj5 = {
         icon: AssetRegistryDefault,
-        accessibilityLabel: intl2.string(_modDef4187["D+wwh8"]),
+        accessibilityLabel: intl2.string(_modDef4189["D+wwh8"]),
         onPress() {
               const obj = VoiceChannelAppActionCreators;
               return obj.closeVoiceChannelApp(id);
             }
       };
       const tmp10Result = VoicePanelIconButtonDefault;
-      intl2 = tmp(1113).intl;
+      intl2 = tmp(1112).intl;
       tmp9Result = tmp9(tmp10Result, obj5);
     }
     const obj6 = { children: items };

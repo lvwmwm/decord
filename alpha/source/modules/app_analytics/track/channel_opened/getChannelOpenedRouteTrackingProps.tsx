@@ -1,16 +1,16 @@
-// Module ID: 18902
-// Function ID: 18903
+// Module ID: 18726
+// Function ID: 18727
 // Name: getChannelOpenedRouteTrackingProps
-// Dependencies: [4641, 8388, 1099, 2]
+// Dependencies: [4643, 8387, 1098, 2]
 // Exports: getChannelOpenedRouteTrackingProps
 
-// Module 18902 (getChannelOpenedRouteTrackingProps)
-import ThreadAnalyticsUtils from "ThreadAnalyticsUtils" /* 8388 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
+// Module 18726 (getChannelOpenedRouteTrackingProps)
+import ThreadAnalyticsUtils from "ThreadAnalyticsUtils" /* 8387 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const router_utils = tmp(1099);
+const router_utils = tmp(1098);
 let result = size.fileFinishedImporting("modules/app_analytics/track/channel_opened/getChannelOpenedRouteTrackingProps.tsx");
 
 export function getChannelOpenedRouteTrackingProps(selectedChannelId) {

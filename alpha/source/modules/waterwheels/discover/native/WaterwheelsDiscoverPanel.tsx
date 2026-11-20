@@ -1,24 +1,24 @@
-// Module ID: 17848
-// Function ID: 17849
+// Module ID: 17675
+// Function ID: 17676
 // Name: WaterwheelsDiscoverPanel
-// Dependencies: [5, 32, 19, 17, 1246, 502, 1388, 21, 4792, 575, 16534, 17849, 17852, 17858, 5006, 17861, 17866, 9928, 17868, 7371, 1113, 2561, 9918, 504, 17869, 17619, 17871, 2]
+// Dependencies: [5, 32, 19, 17, 1245, 502, 1386, 21, 4794, 575, 16357, 17676, 17679, 17685, 5008, 17688, 17693, 9931, 17695, 7370, 1112, 2563, 9921, 504, 17696, 17446, 17698, 2]
 // Exports: default
 
-// Module 17848 (WaterwheelsDiscoverPanel)
+// Module 17675 (WaterwheelsDiscoverPanel)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
-import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 9928 */;
-import WaterwheelsDiscoverCardDefault from "WaterwheelsDiscoverCard" /* 17866 */;
-import WaterwheelsDiscoverNavigation from "WaterwheelsDiscoverNavigation" /* 17869 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5008 */;
+import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 9931 */;
+import WaterwheelsDiscoverCardDefault from "WaterwheelsDiscoverCard" /* 17693 */;
+import WaterwheelsDiscoverNavigation from "WaterwheelsDiscoverNavigation" /* 17696 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
+import ApexExperimentStore from "ApexExperimentStore" /* 1245 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import UserStore from "UserStore" /* 1388 */;
+import UserStore from "UserStore" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let closure_2, closure_5, currentUser, dependencyMap, disposeResult, first, set, sum;
@@ -59,7 +59,7 @@ function WaterwheelsDiscoverFeed(enabled) {
   let tmp = closure_14();
   const tmp2 = youBarTotalHeight;
   const tmp3 = dependencyMap;
-  let obj = youBarTotalHeight(16534);
+  let obj = youBarTotalHeight(16357);
   youBarTotalHeight = obj.useYouBarTotalHeight();
   let tmp5 = trackAction(callback1.useState(() => {
     set = new Set();
@@ -81,15 +81,15 @@ function WaterwheelsDiscoverFeed(enabled) {
       return set;
     });
   }, []);
-  let obj2 = youBarTotalHeight(17849);
+  let obj2 = youBarTotalHeight(17676);
   const waterwheelsActions = obj2.useWaterwheelsActions(callback);
   let tmp9 = extraData;
-  ({ snapshot, entries, status, retry } = extraData(17852)(enabled));
-  const tmp10 = extraData(17852)(enabled);
-  const tmp11 = extraData(17858)(snapshot.loadId, entries);
+  ({ snapshot, entries, status, retry } = extraData(17679)(enabled));
+  const tmp10 = extraData(17679)(enabled);
+  const tmp11 = extraData(17685)(snapshot.loadId, entries);
   trackAction = tmp11.trackAction;
   ({ visible, viewabilityConfigCallbackPairs } = tmp11);
-  let obj3 = youBarTotalHeight(17852);
+  let obj3 = youBarTotalHeight(17679);
   const waterwheelsDiscoverInitialRequest = obj3.useWaterwheelsDiscoverInitialRequest(enabled, visible, snapshot);
   const useCallback = callback1.useCallback;
   let closure_0 = waterwheelsActions((arg0, arg1, arg2) => {
@@ -110,7 +110,7 @@ function WaterwheelsDiscoverFeed(enabled) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -161,7 +161,7 @@ function WaterwheelsDiscoverFeed(enabled) {
               disposeResult.dispose();
             }
             c8 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
           c6 = 3;
           disposeResult = closure_0;
@@ -239,21 +239,21 @@ function WaterwheelsDiscoverFeed(enabled) {
   }, items3);
   const tmp18 = callback2;
   if ("cards" !== status) {
-    let obj4 = { style: items4, children: tmp17(tmp9(17868), obj5) };
+    let obj4 = { style: items4, children: tmp17(tmp9(17695), obj5) };
     items4 = [tmp.feed, memo.contentContainer];
     obj5 = { status, onRetry: retry, retryAfterAt: snapshot.retryAfterAt };
     obj6 = obj4;
   } else {
     obj6 = { style: tmp.feed, children: tmp17(FlashList, obj7, loadId) };
-    obj7 = { data: entries, extraData, renderItem: callback3, keyExtractor, getItemType, ItemSeparatorComponent: RowSeparator, ListHeaderComponent: tmp17Result, contentContainerStyle: null, scrollIndicatorInsets: null, viewabilityConfigCallbackPairs, accessibilityLabel: intl.string(tmp9(2561)["EZRv/H"]) };
+    obj7 = { data: entries, extraData, renderItem: callback3, keyExtractor, getItemType, ItemSeparatorComponent: RowSeparator, ListHeaderComponent: tmp17Result, contentContainerStyle: null, scrollIndicatorInsets: null, viewabilityConfigCallbackPairs, accessibilityLabel: intl.string(tmp9(2563)["EZRv/H"]) };
     tmp17Result = undefined;
-    FlashList = tmp2(7371).FlashList;
+    FlashList = tmp2(7370).FlashList;
     if ("error" === snapshot.status) {
       const obj13 = { onRetry: retry, retryAfterAt: snapshot.retryAfterAt };
-      tmp17Result = tmp17(tmp2(17868).WaterwheelsDiscoverRefreshError, obj13);
+      tmp17Result = tmp17(tmp2(17695).WaterwheelsDiscoverRefreshError, obj13);
     }
     ({ contentContainer: obj8.contentContainerStyle, scrollIndicator: obj8.scrollIndicatorInsets } = memo);
-    intl = tmp2(1113).intl;
+    intl = tmp2(1112).intl;
     loadId = snapshot.loadId;
     if (loadId == null) {
       loadId = WaterwheelsDiscoverPanel_str;
@@ -277,7 +277,7 @@ export default function WaterwheelsDiscoverPanel(style) {
   let waterwheelsDiscoverEnabled;
   style = style.style;
   let tmp = closure_14();
-  let obj = waterwheelsDiscoverEnabled(9918);
+  let obj = waterwheelsDiscoverEnabled(9921);
   waterwheelsDiscoverEnabled = obj.useWaterwheelsDiscoverEnabled(WaterwheelsDiscoverPanel_str);
   const items = [AuthenticationStore, UserStore, ApexExperimentStore];
   const obj2 = waterwheelsDiscoverEnabled(504);
@@ -301,10 +301,10 @@ export default function WaterwheelsDiscoverPanel(style) {
   const obj3 = { style, children: tmp9 };
   tmp9 = null;
   const tmp7 = gateReady;
-  const tmp8 = gateReady(17619);
+  const tmp8 = gateReady(17446);
   if (waterwheelsDiscoverEnabled) {
     const obj4 = { style: tmp.content, children: items2 };
-    items2 = [closure_10(tmp7(17871), {}), ];
+    items2 = [closure_10(tmp7(17698), {}), ];
     const obj5 = { enabled: waterwheelsDiscoverEnabled };
     items2[1] = closure_10(WaterwheelsDiscoverFeed, obj5, userId);
     tmp9 = closure_11(View, obj4);

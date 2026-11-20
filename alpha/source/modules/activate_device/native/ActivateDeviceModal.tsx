@@ -1,10 +1,10 @@
-// Module ID: 15002
-// Function ID: 15003
+// Module ID: 14966
+// Function ID: 14967
 // Name: ActivateDeviceModal
-// Dependencies: [19, 21, 15001, 6910, 6913, 1113, 15003, 6973, 2]
+// Dependencies: [19, 21, 14965, 6909, 6912, 1112, 14967, 6972, 2]
 // Exports: default
 
-// Module 15002 (ActivateDeviceModal)
+// Module 14966 (ActivateDeviceModal)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -43,7 +43,7 @@ export default function ActivateDeviceModal(userCode) {
     };
     return { [closure_2_5.ACTIVATE_DEVICE]: obj };
   }, items);
-  const Navigator = userCode(6973).Navigator;
-  let intl = userCode(1113).intl;
-  return <Navigator screens={memo} initialRouteName={constants.ACTIVATE_DEVICE} headerBackTitle={intl.string(userCode(1113).t["13/7kX"])} />;
+  const Navigator = userCode(6972).Navigator;
+  let intl = userCode(1112).intl;
+  return <Navigator screens={memo} initialRouteName={constants.ACTIVATE_DEVICE} headerBackTitle={intl.string(userCode(1112).t["13/7kX"])} />;
 };

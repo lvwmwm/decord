@@ -1,19 +1,19 @@
-// Module ID: 12175
-// Function ID: 12176
+// Module ID: 12117
+// Function ID: 12118
 // Name: GameOrganizationInviteSummary
-// Dependencies: [19, 21, 4792, 5808, 575, 12024, 5383, 1113, 2557, 6919, 2]
+// Dependencies: [19, 21, 4794, 5810, 575, 11966, 5385, 1112, 2559, 6918, 2]
 // Exports: default
 
-// Module 12175 (GameOrganizationInviteSummary)
+// Module 12117 (GameOrganizationInviteSummary)
 import nativeDefault from "native" /* 575 */;
-import intl4 from "intl" /* 1113 */;
-import _modDef2557 from "module_2557" /* 2557 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import Stack_Stack from "Stack/Stack" /* 5808 */;
-import GameOrganizationIconDefault from "GameOrganizationIcon" /* 12024 */;
+import intl4 from "intl" /* 1112 */;
+import _modDef2559 from "module_2559" /* 2559 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import Stack_Stack from "Stack/Stack" /* 5810 */;
+import GameOrganizationIconDefault from "GameOrganizationIcon" /* 11966 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -51,7 +51,7 @@ export default function GameOrganizationInviteSummary(invite) {
   const intl = intl4.intl;
   const formatToPlainString = intl.formatToPlainString;
   let str = displayNoun;
-  const prop = _modDef2557["jKi+kc"];
+  const prop = _modDef2559["jKi+kc"];
   if (displayNoun == null) {
     str = "other";
   }
@@ -59,10 +59,10 @@ export default function GameOrganizationInviteSummary(invite) {
   const obj4 = { variant: "body-md/medium", color: "text-subtle", children: formatToPlainString(prop, { displayNoun: str }) };
   items1[0] = _false(Text, obj4);
   const obj5 = { variant: "heading-xl/semibold", color: "text-subtle", style: tmp.text, children: format(gptW7Y, obj6) };
-  const Heading = tmp3(5383).Heading;
-  const intl2 = tmp3(1113).intl;
+  const Heading = tmp3(5385).Heading;
+  const intl2 = tmp3(1112).intl;
   format = intl2.format;
-  gptW7Y = tmp5(2557).gptW7Y;
+  gptW7Y = tmp5(2559).gptW7Y;
   if (displayNoun == null) {
     displayNoun = "other";
   }
@@ -79,13 +79,13 @@ export default function GameOrganizationInviteSummary(invite) {
   let tmp2Result = null != memberCount && null != maxMembers;
   if (tmp2Result) {
     const obj7 = { spacing: nativeDefault.space.PX_4, direction: "horizontal", align: "center", justify: "center", children: items2 };
-    const Stack3 = tmp3(5808).Stack;
+    const Stack3 = tmp3(5810).Stack;
     const obj8 = { size: "xs", color: nativeDefault.colors.ICON_MUTED };
-    const GroupIcon = tmp3(6919).GroupIcon;
+    const GroupIcon = tmp3(6918).GroupIcon;
     items2 = [_false(GroupIcon, obj8), ];
-    const obj9 = { variant: "heading-sm/medium", color: "text-subtle", children: intl3.formatToPlainString(_modDef2557.VuENGl, obj10) };
-    const Text2 = tmp3(5383).Text;
-    intl3 = tmp3(1113).intl;
+    const obj9 = { variant: "heading-sm/medium", color: "text-subtle", children: intl3.formatToPlainString(_modDef2559.VuENGl, obj10) };
+    const Text2 = tmp3(5385).Text;
+    intl3 = tmp3(1112).intl;
     obj10 = { count: memberCount, max: maxMembers };
     items2[1] = _false(Text2, obj9);
     tmp2Result = tmp2(Stack3, obj7);

@@ -1,20 +1,20 @@
 // Module ID: 9314
 // Function ID: 9315
 // Name: virtual_currency/BalanceWidgetPill
-// Dependencies: [19, 17, 21, 4792, 5396, 575, 1380, 9315, 1113, 9316, 9322, 9323, 2]
+// Dependencies: [19, 17, 21, 4794, 5398, 575, 1378, 9315, 1112, 9316, 9322, 9323, 2]
 
 // Module 9314 (virtual_currency/BalanceWidgetPill)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1113 */;
-import ButtonConstants from "ButtonConstants" /* 5396 */;
+import intl2 from "intl" /* 1112 */;
+import ButtonConstants from "ButtonConstants" /* 5398 */;
 import useVirtualCurrencyBalanceAnimationData from "useVirtualCurrencyBalanceAnimationData" /* 9315 */;
 import OrbLottieAnimation from "OrbLottieAnimation" /* 9316 */;
 import AnimationUtils from "AnimationUtils" /* 9323 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
+import createStyles_mod from "createStyles" /* 4794 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -64,10 +64,10 @@ class BalanceWidgetPill {
     const intl = intl2.intl;
     const tmp7 = React3;
     if (tmp2) {
-      stringResult = intl.string(tmp3(1113).t.y0WGqP);
+      stringResult = intl.string(tmp3(1112).t.y0WGqP);
     } else {
       const obj3 = { balance };
-      stringResult = intl.formatToPlainString(tmp3(1113).t.zPaLL9, obj3);
+      stringResult = intl.formatToPlainString(tmp3(1112).t.zPaLL9, obj3);
     }
     items1 = [, ];
     const obj4 = { style: tmp6.orbsLottieContainer, children: _false(OrbLottieAnimation.OrbLottieAnimation, { ref: lottieRef, animationType: currentAnimationType }) };

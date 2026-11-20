@@ -1,21 +1,21 @@
-// Module ID: 7740
-// Function ID: 7741
+// Module ID: 7739
+// Function ID: 7740
 // Name: AgeVerificationOtherWindowScreen
-// Dependencies: [19, 21, 4792, 1113, 3343, 7692, 7694, 5808, 7269, 575, 5383, 2]
+// Dependencies: [19, 21, 4794, 1112, 3345, 7691, 7693, 5810, 7268, 575, 5385, 2]
 // Exports: default
 
-// Module 7740 (AgeVerificationOtherWindowScreen)
+// Module 7739 (AgeVerificationOtherWindowScreen)
 import nativeDefault from "native" /* 575 */;
-import intl3 from "intl" /* 1113 */;
-import _modDef3343 from "module_3343" /* 3343 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import Stack_Stack from "Stack/Stack" /* 5808 */;
-import MobilePhoneIcon2 from "MobilePhoneIcon" /* 7269 */;
-import ModalScreen2 from "ModalScreen" /* 7692 */;
-import ModalContent2 from "ModalContent" /* 7694 */;
+import intl3 from "intl" /* 1112 */;
+import _modDef3345 from "module_3345" /* 3345 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import Stack_Stack from "Stack/Stack" /* 5810 */;
+import MobilePhoneIcon2 from "MobilePhoneIcon" /* 7268 */;
+import ModalScreen2 from "ModalScreen" /* 7691 */;
+import ModalContent2 from "ModalContent" /* 7693 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -39,7 +39,7 @@ export default function AgeVerificationOtherWindowScreen(copy) {
   }
   if (title == null) {
     const intl = intl3.intl;
-    title = intl.string(_modDef3343.MLPgsX);
+    title = intl.string(_modDef3345.MLPgsX);
   }
   let description;
   if (copy != null) {
@@ -47,7 +47,7 @@ export default function AgeVerificationOtherWindowScreen(copy) {
   }
   if (description == null) {
     const intl2 = intl3.intl;
-    description = intl2.string(_modDef3343.VcZF1q);
+    description = intl2.string(_modDef3345.VcZF1q);
   }
   const obj = { children: _false(ModalContent, obj2) };
   const ModalScreen = ModalScreen2.ModalScreen;

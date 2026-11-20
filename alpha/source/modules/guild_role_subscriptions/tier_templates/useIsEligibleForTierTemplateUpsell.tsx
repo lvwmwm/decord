@@ -1,12 +1,12 @@
-// Module ID: 17820
-// Function ID: 17821
+// Module ID: 17647
+// Function ID: 17648
 // Name: useIsEligibleForTierTemplateUpsell
-// Dependencies: [4663, 1072, 504, 15021, 6761, 2]
+// Dependencies: [4665, 1071, 504, 14985, 6761, 2]
 // Exports: default
 
-// Module 17820 (useIsEligibleForTierTemplateUpsell)
-import Constants from "Constants" /* 1072 */;
-import GuildStore from "GuildStore" /* 4663 */;
+// Module 17647 (useIsEligibleForTierTemplateUpsell)
+import Constants from "Constants" /* 1071 */;
+import GuildStore from "GuildStore" /* 4665 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

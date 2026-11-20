@@ -1,12 +1,12 @@
-// Module ID: 14166
-// Function ID: 14167
+// Module ID: 14135
+// Function ID: 14136
 // Name: CollectiblesRecommendationStore
-// Dependencies: [1089, 504, 572, 2]
+// Dependencies: [1088, 504, 572, 2]
 
-// Module 14166 (CollectiblesRecommendationStore)
+// Module 14135 (CollectiblesRecommendationStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import DurationsDefault from "Durations" /* 1089 */;
+import DurationsDefault from "Durations" /* 1088 */;
 import size from "module_2" /* 2 */;
 
 const DAY = DurationsDefault.Millis.DAY;

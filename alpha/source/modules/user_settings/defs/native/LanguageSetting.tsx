@@ -1,14 +1,14 @@
-// Module ID: 16882
-// Function ID: 16883
+// Module ID: 16706
+// Function ID: 16707
 // Name: LanguageSetting
-// Dependencies: [2189, 1072, 504, 1113, 11875, 9819, 16883, 2]
+// Dependencies: [2187, 1071, 504, 1112, 11817, 9821, 16707, 2]
 
-// Module 16882 (LanguageSetting)
-import Constants from "Constants" /* 1072 */;
-import intl2 from "intl" /* 1113 */;
-import LanguageIcon from "LanguageIcon" /* 9819 */;
-import LocaleStore from "LocaleStore" /* 2189 */;
-import SettingBuilders from "SettingBuilders" /* 11875 */;
+// Module 16706 (LanguageSetting)
+import Constants from "Constants" /* 1071 */;
+import intl2 from "intl" /* 1112 */;
+import LanguageIcon from "LanguageIcon" /* 9821 */;
+import LocaleStore from "LocaleStore" /* 2187 */;
+import SettingBuilders from "SettingBuilders" /* 11817 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -34,7 +34,7 @@ let obj = {
     const found = availableLocales.find((value) => value.value === closure_0);
     let stringResult = null;
     if (null != found) {
-      const intl = tmp(1113).intl;
+      const intl = tmp(1112).intl;
       stringResult = intl.string(found.localizedName);
     }
     return stringResult;

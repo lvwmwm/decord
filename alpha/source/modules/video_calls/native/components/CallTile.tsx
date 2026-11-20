@@ -1,33 +1,33 @@
-// Module ID: 11017
-// Function ID: 11018
+// Module ID: 10959
+// Function ID: 10960
 // Name: CallTile
-// Dependencies: [19, 17, 6279, 1388, 10574, 5442, 21, 4792, 4789, 575, 7401, 1630, 504, 5528, 7948, 10657, 10985, 10678, 10711, 11018, 11023, 11024, 6963, 11025, 11026, 1187, 10582, 1655, 5002, 11027, 2]
+// Dependencies: [19, 17, 6281, 1386, 10516, 5444, 21, 4794, 4791, 575, 7400, 1628, 504, 5530, 7947, 10599, 10927, 10620, 10653, 10960, 10965, 10966, 6962, 10967, 10968, 1186, 10524, 1653, 5004, 10969, 2]
 
-// Module 11017 (CallTile)
+// Module 10959 (CallTile)
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 1187 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import timing_timing from "timing/timing" /* 5002 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5528 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6963 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7948 */;
-import RevealProvider from "RevealProvider" /* 10582 */;
-import TouchableStreamPreviewDefault from "TouchableStreamPreview" /* 11018 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11023 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 11024 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 11025 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 11026 */;
-import ParticipantTitleDefault from "ParticipantTitle" /* 11027 */;
+import native from "native" /* 1186 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import timing_timing from "timing/timing" /* 5004 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5530 */;
+import AssetRegistryDefault from "AssetRegistry" /* 6962 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7947 */;
+import RevealProvider from "RevealProvider" /* 10524 */;
+import TouchableStreamPreviewDefault from "TouchableStreamPreview" /* 10960 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 10965 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 10966 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 10967 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 10968 */;
+import ParticipantTitleDefault from "ParticipantTitle" /* 10969 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6279 */;
-import UserStore from "UserStore" /* 1388 */;
-import ChannelCallStore from "ChannelCallStore" /* 10574 */;
-import CallConstants from "CallConstants" /* 5442 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6281 */;
+import UserStore from "UserStore" /* 1386 */;
+import ChannelCallStore from "ChannelCallStore" /* 10516 */;
+import CallConstants from "CallConstants" /* 5444 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
-import ColorUtils_mod from "ColorUtils" /* 4789 */;
+import createStyles_mod from "createStyles" /* 4794 */;
+import ColorUtils_mod from "ColorUtils" /* 4791 */;
 import size from "module_2" /* 2 */;
 
 let obj1;
@@ -59,7 +59,7 @@ class StreamPreviewTile {
     obj2 = {
       guildId: participant.stream.guildId,
       userId: participant.user.id,
-      style: { aspectRatio: "ip", borderRadius: "pen_fountain" },
+      style: { aspectRatio: "disabled", borderRadius: false },
       disableTransition: true,
       onPress() {
         return closure_1_8();
@@ -125,8 +125,8 @@ class TileOverlay {
     useSafeAreaInsetsDefault();
     const reveal = react.useContext(RevealProvider.RevealContext).reveal;
     const items = [closure_19, , , ];
-    const useAnimatedStyle = _mod1655.useAnimatedStyle;
-    _mod1655;
+    const useAnimatedStyle = _mod1653.useAnimatedStyle;
+    _mod1653;
     items[1] = timing_timing.withTiming;
     items[2] = reveal;
     items[3] = native.STANDARD_EASING;
@@ -171,7 +171,7 @@ class TileOverlay {
     }
     let obj = { pointerEvents: "none", style: items2, children: items3 };
     items2 = [absoluteFill.absoluteFill, rect, animatedStyle];
-    const View = tmp2(1655).View;
+    const View = tmp2(1653).View;
     if (isActiveStream) {
       const obj2 = { style: tmp.liveContainer, children: map1(native.LiveTag, {}) };
       isActiveStream = map1(hasOwnProperty, obj2);

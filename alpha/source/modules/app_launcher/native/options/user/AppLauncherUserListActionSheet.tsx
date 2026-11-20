@@ -1,16 +1,16 @@
-// Module ID: 12967
-// Function ID: 12968
+// Module ID: 12937
+// Function ID: 12938
 // Name: AppLauncherUserListActionSheet
-// Dependencies: [19, 1501, 21, 4792, 5006, 8195, 1187, 12948, 1113, 12946, 12968, 11983, 12947, 6926, 2]
+// Dependencies: [19, 1499, 21, 4794, 5008, 8194, 1186, 12918, 1112, 12916, 12938, 11925, 12917, 6925, 2]
 // Exports: default
 
-// Module 12967 (AppLauncherUserListActionSheet)
+// Module 12937 (AppLauncherUserListActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1501 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
-import TableRow from "TableRow" /* 6926 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1499 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5008 */;
+import TableRow from "TableRow" /* 6925 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 function EmptyStateWithSnowflakeQuery(onPressRow) {
@@ -18,7 +18,7 @@ function EmptyStateWithSnowflakeQuery(onPressRow) {
   const query = onPressRow.query;
   const items = [query];
   closure_6();
-  return jsx(onPressRow(12947).AppLauncherList, {
+  return jsx(onPressRow(12917).AppLauncherList, {
     contentContainerStyle: closure_6().emptyState,
     data: items,
     renderItem(label) {

@@ -1,14 +1,14 @@
-// Module ID: 5516
-// Function ID: 5517
+// Module ID: 5518
+// Function ID: 5519
 // Name: MarkupUtils
-// Dependencies: [5517, 5524, 5814, 12, 5815, 8607, 2]
+// Dependencies: [5519, 5526, 5816, 12, 5817, 8606, 2]
 
-// Module 5516 (MarkupUtils)
-import reactParserFor2 from "reactParserFor" /* 5517 */;
-import MarkupReactRules from "MarkupReactRules" /* 5524 */;
-import combineMarkupRulesDefault from "combineMarkupRules" /* 5814 */;
-import MarkupRulesDefault from "MarkupRules" /* 5815 */;
-import markup_MarkupParserAll from "markup/MarkupParser" /* 8607 */;
+// Module 5518 (MarkupUtils)
+import reactParserFor2 from "reactParserFor" /* 5519 */;
+import MarkupReactRules from "MarkupReactRules" /* 5526 */;
+import combineMarkupRulesDefault from "combineMarkupRules" /* 5816 */;
+import MarkupRulesDefault from "MarkupRules" /* 5817 */;
+import markup_MarkupParserAll from "markup/MarkupParser" /* 8606 */;
 import module_12_mod from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -170,6 +170,14 @@ let closure_18 = module_12.once(() => {
 });
 module_12 = module_12_mod;
 let closure_19 = module_12.once(() => {
+  const items = [, ];
+  const tmp = combineMarkupRulesDefault;
+  items[0] = MarkupRulesDefault.POLL_RULES;
+  items[1] = MarkupReactRulesDefault(obj);
+  return tmp(items);
+});
+module_12 = module_12_mod;
+let closure_20 = module_12.once(() => {
   const AUTO_MODERATION_SYSTEM_MESSAGE_RULES = MarkupRulesDefault.AUTO_MODERATION_SYSTEM_MESSAGE_RULES;
   const items = [MarkupReactRulesDefault(obj)];
   const items1 = [AUTO_MODERATION_SYSTEM_MESSAGE_RULES, ];
@@ -178,7 +186,7 @@ let closure_19 = module_12.once(() => {
   return tmp2(items1);
 });
 module_12 = module_12_mod;
-let closure_20 = module_12.once(() => {
+let closure_21 = module_12.once(() => {
   const omit = module_12.omit;
   module_12;
   const RULES = MarkupRulesDefault.RULES;
@@ -191,7 +199,7 @@ let closure_20 = module_12.once(() => {
 });
 let obj2 = { text: MarkupRulesDefault.RULES.text };
 module_12 = module_12_mod;
-let closure_21 = module_12.once(() => {
+let closure_22 = module_12.once(() => {
   let obj2;
   const tmp = closure_7();
   if (typeof reactParserFor === "function") {
@@ -215,7 +223,7 @@ let closure_21 = module_12.once(() => {
   }
 });
 module_12 = module_12_mod;
-let closure_22 = module_12.once(() => {
+let closure_23 = module_12.once(() => {
   let obj2;
   const tmp = closure_8();
   if (typeof reactParserFor === "function") {
@@ -239,7 +247,7 @@ let closure_22 = module_12.once(() => {
   }
 });
 module_12 = module_12_mod;
-let closure_23 = module_12.once(() => {
+let closure_24 = module_12.once(() => {
   let obj2;
   const tmp = closure_10();
   if (typeof reactParserFor === "function") {
@@ -263,7 +271,7 @@ let closure_23 = module_12.once(() => {
   }
 });
 module_12 = module_12_mod;
-let closure_24 = module_12.once(() => {
+let closure_25 = module_12.once(() => {
   let obj2;
   const tmp = closure_11();
   if (typeof reactParserFor === "function") {
@@ -287,7 +295,7 @@ let closure_24 = module_12.once(() => {
   }
 });
 module_12 = module_12_mod;
-let closure_25 = module_12.once(() => {
+let closure_26 = module_12.once(() => {
   let obj2;
   const tmp = closure_12();
   if (typeof reactParserFor === "function") {
@@ -311,7 +319,7 @@ let closure_25 = module_12.once(() => {
   }
 });
 module_12 = module_12_mod;
-let closure_26 = module_12.once(() => {
+let closure_27 = module_12.once(() => {
   let obj2;
   const tmp = closure_13();
   if (typeof reactParserFor === "function") {
@@ -335,7 +343,7 @@ let closure_26 = module_12.once(() => {
   }
 });
 module_12 = module_12_mod;
-let closure_27 = module_12.once(() => {
+let closure_28 = module_12.once(() => {
   let obj2;
   const tmp = closure_14();
   if (typeof reactParserFor === "function") {
@@ -359,7 +367,7 @@ let closure_27 = module_12.once(() => {
   }
 });
 module_12 = module_12_mod;
-let closure_28 = module_12.once(() => {
+let closure_29 = module_12.once(() => {
   let obj2;
   const tmp = closure_15();
   if (typeof reactParserFor === "function") {
@@ -383,7 +391,7 @@ let closure_28 = module_12.once(() => {
   }
 });
 module_12 = module_12_mod;
-let closure_29 = module_12.once(() => {
+let closure_30 = module_12.once(() => {
   let obj2;
   const tmp = closure_16();
   if (typeof reactParserFor === "function") {
@@ -407,7 +415,7 @@ let closure_29 = module_12.once(() => {
   }
 });
 module_12 = module_12_mod;
-let closure_30 = module_12.once(() => {
+let closure_31 = module_12.once(() => {
   let obj2;
   const tmp = closure_17();
   if (typeof reactParserFor === "function") {
@@ -431,9 +439,9 @@ let closure_30 = module_12.once(() => {
   }
 });
 module_12 = module_12_mod;
-let closure_31 = module_12.once(() => {
+let closure_32 = module_12.once(() => {
   let obj2;
-  const tmp = closure_19();
+  const tmp = closure_20();
   if (typeof reactParserFor === "function") {
     const link = tmp.link;
     let react;
@@ -455,7 +463,7 @@ let closure_31 = module_12.once(() => {
   }
 });
 module_12 = module_12_mod;
-let closure_32 = module_12.once(() => {
+let closure_33 = module_12.once(() => {
   let obj2;
   const tmp = closure_9();
   if (typeof reactParserFor === "function") {
@@ -479,32 +487,61 @@ let closure_32 = module_12.once(() => {
   }
 });
 module_12 = module_12_mod;
-let closure_33 = module_12.once(() => {
-  const obj = markup_MarkupParserAll;
-  return obj.astParserFor(closure_7());
-});
-module_12 = module_12_mod;
 let closure_34 = module_12.once(() => {
-  const obj = markup_MarkupParserAll;
-  return obj.astParserFor(closure_10());
+  let obj2;
+  const tmp = closure_19();
+  if (typeof reactParserFor === "function") {
+    const link = tmp.link;
+    let react;
+    const _default = reactParserFor2.default;
+    if (link != null) {
+      react = link.react;
+    }
+    let tmp7 = tmp;
+    if (null == react) {
+      const obj = { link: obj2 };
+      const merged = Object.assign(tmp);
+      obj2 = { react: react2 };
+      const merged1 = Object.assign(tmp.link);
+      tmp7 = obj;
+    }
+    return _default(tmp7);
+  } else {
+    throw new TypeError("Trying to call a non-function");
+  }
 });
 module_12 = module_12_mod;
 let closure_35 = module_12.once(() => {
   const obj = markup_MarkupParserAll;
-  return obj.astParserFor(closure_13());
+  return obj.astParserFor(closure_7());
 });
 module_12 = module_12_mod;
 let closure_36 = module_12.once(() => {
   const obj = markup_MarkupParserAll;
-  return obj.astParserFor(closure_14());
+  return obj.astParserFor(closure_10());
 });
 module_12 = module_12_mod;
 let closure_37 = module_12.once(() => {
   const obj = markup_MarkupParserAll;
-  return obj.astParserFor(closure_15());
+  return obj.astParserFor(closure_13());
 });
 module_12 = module_12_mod;
 let closure_38 = module_12.once(() => {
+  const obj = markup_MarkupParserAll;
+  return obj.astParserFor(closure_14());
+});
+module_12 = module_12_mod;
+let closure_39 = module_12.once(() => {
+  const obj = markup_MarkupParserAll;
+  return obj.astParserFor(closure_15());
+});
+module_12 = module_12_mod;
+let closure_40 = module_12.once(() => {
+  const obj = markup_MarkupParserAll;
+  return obj.astParserFor(closure_20());
+});
+module_12 = module_12_mod;
+let closure_41 = module_12.once(() => {
   const obj = markup_MarkupParserAll;
   return obj.astParserFor(closure_19());
 });
@@ -522,95 +559,103 @@ let obj3 = {
   reactParserFor,
   parse() {
     const items = [...arguments];
-    const tmp = closure_21();
+    const tmp = closure_22();
     return tmp(...items);
   },
   parseRichEmbedText(arg0, arg1, arg2, arg3) {
     const obj = { allowGameMentions: true };
-    const tmp = closure_22();
+    const tmp = closure_23();
     const merged = Object.assign(arg2);
     return tmp(arg0, arg1, obj, arg3);
   },
   parseTopic(topic, arg1, arg2, arg3) {
     const obj = { allowLinks: true, allowGameMentions: true };
-    const tmp = closure_23();
+    const tmp = closure_24();
     const merged = Object.assign(arg2);
     return tmp(topic, arg1, obj, arg3);
   },
   parseTruncatedTopic(arg0, arg1, arg2, arg3) {
     const obj = { allowLinks: true, allowGameMentions: true };
-    const tmp = closure_24();
+    const tmp = closure_25();
     const merged = Object.assign(arg2);
     return tmp(arg0, arg1, obj, arg3);
   },
   parseVoiceChannelStatus() {
     const items = [...arguments];
-    const tmp = closure_25();
+    const tmp = closure_26();
     return tmp(...items);
   },
   parseEmbedTitle() {
     const items = [...arguments];
-    const tmp = closure_26();
+    const tmp = closure_27();
     return tmp(...items);
   },
   parseEmbedTitleWithoutLinks() {
     const items = [...arguments];
-    const tmp = closure_27();
+    const tmp = closure_28();
     return tmp(...items);
   },
   parseInlineReply() {
     const items = [...arguments];
-    const tmp = closure_28();
+    const tmp = closure_29();
     return tmp(...items);
   },
   parseGuildVerificationFormRule() {
     const items = [...arguments];
-    const tmp = closure_29();
+    const tmp = closure_30();
     return tmp(...items);
   },
   parseGuildEventDescription() {
     const items = [...arguments];
-    const tmp = closure_30();
+    const tmp = closure_31();
     return tmp(...items);
   },
   parseAutoModerationSystemMessage() {
     const items = [...arguments];
-    const tmp = closure_31();
+    const tmp = closure_32();
     return tmp(...items);
   },
   parseForumPostGuidelines() {
     const items = [...arguments];
-    const tmp = closure_32();
-    return tmp(...items);
-  },
-  parseToAST() {
-    const items = [...arguments];
     const tmp = closure_33();
     return tmp(...items);
   },
-  parseTopicToAST() {
-    const items = [...arguments];
-    const tmp = closure_34();
-    return tmp(...items);
+  parsePoll(c3, arg1, arg2) {
+    return closure_34()(c3, arg1, arg2);
   },
-  parseEmbedTitleToAST() {
+  parseToAST() {
     const items = [...arguments];
     const tmp = closure_35();
     return tmp(...items);
   },
-  parseEmbedTitleWithoutLinksToAST() {
+  parseTopicToAST() {
     const items = [...arguments];
     const tmp = closure_36();
     return tmp(...items);
   },
-  parseInlineReplyToAST() {
+  parseEmbedTitleToAST() {
     const items = [...arguments];
     const tmp = closure_37();
     return tmp(...items);
   },
-  parseAutoModerationSystemMessageToAST() {
+  parseEmbedTitleWithoutLinksToAST() {
     const items = [...arguments];
     const tmp = closure_38();
+    return tmp(...items);
+  },
+  parseInlineReplyToAST() {
+    const items = [...arguments];
+    const tmp = closure_39();
+    return tmp(...items);
+  },
+  parseAutoModerationSystemMessageToAST() {
+    const items = [...arguments];
+    const tmp = closure_40();
+    return tmp(...items);
+  },
+  parsePollToAST() {
+    const items = [...arguments];
+    const tmp = closure_41();
     return tmp(...items);
   }
 };
@@ -618,7 +663,7 @@ Object.defineProperty(obj3, "defaultRules", { get: () => closure_7(), set: undef
 Object.defineProperty(obj3, "topicRules", { get: () => closure_10(), set: undefined });
 Object.defineProperty(obj3, "guildEventRules", { get: () => closure_17(), set: undefined });
 Object.defineProperty(obj3, "guildEventLocationRules", { get: () => closure_18(), set: undefined });
-Object.defineProperty(obj3, "notifCenterV2MessagePreviewRules", { get: () => closure_20(), set: undefined });
+Object.defineProperty(obj3, "notifCenterV2MessagePreviewRules", { get: () => closure_21(), set: undefined });
 const result = size.fileFinishedImporting("modules/markup/MarkupUtils.tsx");
 
 export default obj3;

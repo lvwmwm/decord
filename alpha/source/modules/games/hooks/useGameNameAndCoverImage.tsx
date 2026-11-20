@@ -1,10 +1,10 @@
-// Module ID: 10110
-// Function ID: 10111
+// Module ID: 10113
+// Function ID: 10114
 // Name: useGameNameAndCoverImage
-// Dependencies: [8933, 1113, 2]
+// Dependencies: [8933, 1112, 2]
 // Exports: default
 
-// Module 10110 (useGameNameAndCoverImage)
+// Module 10113 (useGameNameAndCoverImage)
 import useGame from "useGame" /* 8933 */;
 import size from "module_2" /* 2 */;
 
@@ -45,8 +45,8 @@ export default function useGameNameAndCoverImage(arg0, arg1, imageSize) {
     name = arg1;
   }
   if (name == null) {
-    const intl = tmp(1113).intl;
-    name = intl.string(tmp(1113).t.GIWFlF);
+    const intl = tmp(1112).intl;
+    name = intl.string(tmp(1112).t.GIWFlF);
   }
   return obj2;
 };

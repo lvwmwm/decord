@@ -1,23 +1,23 @@
-// Module ID: 15850
-// Function ID: 15851
+// Module ID: 15814
+// Function ID: 15815
 // Name: ChangeAvatarActionSheet
-// Dependencies: [19, 17, 1388, 1072, 21, 4792, 575, 504, 2174, 15748, 7434, 7396, 1113, 8832, 7229, 6926, 7590, 15750, 7401, 15752, 15751, 2]
+// Dependencies: [19, 17, 1386, 1071, 21, 4794, 575, 504, 2172, 15712, 7433, 7395, 1112, 8832, 7228, 6925, 7589, 15714, 7400, 15716, 15715, 2]
 // Exports: default
 
-// Module 15850 (ChangeAvatarActionSheet)
+// Module 15814 (ChangeAvatarActionSheet)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2174 */;
-import ProfileEditSheetNitroUpdatesExperiment from "ProfileEditSheetNitroUpdatesExperiment" /* 15748 */;
-import UserProfileUpsellButtonDefault from "UserProfileUpsellButton" /* 15750 */;
-import ProfileEditNitroSubLabelDefault from "ProfileEditNitroSubLabel" /* 15751 */;
-import ProfileEditNitroUpsellRowDefault from "ProfileEditNitroUpsellRow" /* 15752 */;
+import Constants from "Constants" /* 1071 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2172 */;
+import ProfileEditSheetNitroUpdatesExperiment from "ProfileEditSheetNitroUpdatesExperiment" /* 15712 */;
+import UserProfileUpsellButtonDefault from "UserProfileUpsellButton" /* 15714 */;
+import ProfileEditNitroSubLabelDefault from "ProfileEditNitroSubLabel" /* 15715 */;
+import ProfileEditNitroUpsellRowDefault from "ProfileEditNitroUpsellRow" /* 15716 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1388 */;
+import UserStore from "UserStore" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -29,13 +29,13 @@ let obj4;
 let obj5;
 let obj6;
 let tmp2;
-const intl18 = tmp2(1113);
-const TableRow10 = tmp2(6926);
-const TableRowGroup3 = tmp2(7229);
-const BottomSheetTitleHeader3 = tmp2(7396);
-const useAnalyticsLocations = tmp2(7401);
-const ActionSheet3 = tmp2(7434);
-const _mod7590 = tmp2(7590);
+const intl18 = tmp2(1112);
+const TableRow10 = tmp2(6925);
+const TableRowGroup3 = tmp2(7228);
+const BottomSheetTitleHeader3 = tmp2(7395);
+const useAnalyticsLocations = tmp2(7400);
+const ActionSheet3 = tmp2(7433);
+const _mod7589 = tmp2(7589);
 const NitroWheelIcon = tmp2(8832);
 const View = react_native.View;
 const AnalyticsObjects = Constants.AnalyticsObjects;
@@ -200,14 +200,14 @@ export default function ChangeAvatarActionSheet(showRemoveAvatar) {
       obj19 = { style: tmp.upsellTitleContainer, children: items5 };
       const TableRow3 = TableRow10.TableRow;
       const obj20 = { text: intl5.string(intl18.t.xZ0Wot) };
-      const FormLabel = _mod7590.FormLabel;
+      const FormLabel = _mod7589.FormLabel;
       intl5 = intl18.intl;
       items5 = [metroRequire(FormLabel, obj20), ];
       const obj21 = { style: tmp.nitroWheel, size: "sm" };
       items5[1] = metroRequire(NitroWheelIcon.NitroWheelIcon, obj21);
       obj22 = { children: items6 };
       const obj23 = { style: tmp.sublabel, numberOfLines: 3, text: intl6.string(intl18.t.L3UPqR) };
-      const FormSubLabel = _mod7590.FormSubLabel;
+      const FormSubLabel = _mod7589.FormSubLabel;
       intl6 = intl18.intl;
       items6 = [metroRequire(FormSubLabel, obj23), ];
       const obj24 = { style: tmp.upsellButton, children: metroRequire(tmp5Result4, obj25) };
@@ -224,7 +224,7 @@ export default function ChangeAvatarActionSheet(showRemoveAvatar) {
       obj27 = { style: tmp.upsellTitleContainer, children: metroRequire(FormLabel2, obj28) };
       const TableRow4 = TableRow10.TableRow;
       obj28 = { text: intl8.string(intl18.t.BVcYCx) };
-      FormLabel2 = _mod7590.FormLabel;
+      FormLabel2 = _mod7589.FormLabel;
       intl8 = intl18.intl;
       tmp10Result5 = tmp10(TableRow4, obj26);
     }
@@ -236,7 +236,7 @@ export default function ChangeAvatarActionSheet(showRemoveAvatar) {
       obj30 = { style: items7, text: intl9.string(intl18.t.twB3fz) };
       items7 = [, ];
       ({ label: arr6[0], remove: arr6[1] } = tmp);
-      FormLabel3 = _mod7590.FormLabel;
+      FormLabel3 = _mod7589.FormLabel;
       intl9 = intl18.intl;
       tmp10Result6 = tmp10(TableRow5, obj29);
     }

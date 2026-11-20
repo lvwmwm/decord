@@ -1,24 +1,24 @@
 // Module ID: 9092
 // Function ID: 9093
 // Name: PremiumActivatedAlert
-// Dependencies: [19, 17, 1072, 21, 4792, 6434, 2174, 9093, 9094, 9095, 9096, 9097, 9007, 9008, 9098, 9099, 9100, 9101, 9102, 8708, 9103, 4799, 9104, 9105, 9106, 9107, 9108, 9109, 9110, 9111, 9112, 1113, 5001, 5811, 5479, 9113, 9114, 1187, 2]
+// Dependencies: [19, 17, 1071, 21, 4794, 6436, 2172, 9093, 9094, 9095, 9096, 9097, 9007, 9008, 9098, 9099, 9100, 9101, 9102, 8748, 9103, 4801, 9104, 9105, 9106, 9107, 9108, 9109, 9110, 9111, 9112, 1112, 5003, 5813, 5481, 9113, 9114, 1186, 2]
 // Exports: default
 
 // Module 9092 (PremiumActivatedAlert)
-import Constants from "Constants" /* 1072 */;
-import intl5 from "intl" /* 1113 */;
-import PremiumUtils from "PremiumUtils" /* 2174 */;
-import shared from "shared" /* 4799 */;
-import useThemeDefault from "useTheme" /* 5001 */;
-import FastImageDefault from "FastImage" /* 5479 */;
-import AlertDefault from "Alert" /* 5811 */;
-import LegacyTokens from "LegacyTokens" /* 6434 */;
+import Constants from "Constants" /* 1071 */;
+import intl5 from "intl" /* 1112 */;
+import PremiumUtils from "PremiumUtils" /* 2172 */;
+import shared from "shared" /* 4801 */;
+import useThemeDefault from "useTheme" /* 5003 */;
+import FastImageDefault from "FastImage" /* 5481 */;
+import AlertDefault from "Alert" /* 5813 */;
+import LegacyTokens from "LegacyTokens" /* 6436 */;
 import AssetRegistryDefault from "AssetRegistry" /* 9113 */;
 import ShineAnimationDefault from "ShineAnimation" /* 9114 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -123,7 +123,7 @@ export default function PremiumActivatedAlert(subscription) {
   const obj6 = { onClose, confirmText: intl.string(intl5.t.TkTvBz), style: tmp.alert, children: null };
   const tmp11 = closure_9(premiumBranding);
   const tmp4Result = AlertDefault;
-  intl = tmp7(1113).intl;
+  intl = tmp7(1112).intl;
   const obj7 = { style: tmp.header, children: items };
   const tmp4Result14 = FastImageDefault;
   if (PremiumUtils.Branding.TIER_0 === premiumBranding) {
@@ -153,7 +153,7 @@ export default function PremiumActivatedAlert(subscription) {
         }
       }
     }
-    tmp4Result17 = tmp4(8708);
+    tmp4Result17 = tmp4(8748);
   }
   const obj9 = { source: tmp4Result17, style: tmp9.logo };
   items[1] = hasOwnProperty(tmp4Result16, obj9);
@@ -225,18 +225,18 @@ export default function PremiumActivatedAlert(subscription) {
   const obj13 = { source: tmp4Result26, style: tmp11.animation };
   items3[0] = hasOwnProperty(tmp4Result21, obj13);
   const obj14 = { style: tmp.description, children: null };
-  const LegacyText = tmp7(1187).LegacyText;
+  const LegacyText = tmp7(1186).LegacyText;
   if (PremiumUtils.Branding.TIER_0 !== premiumBranding) {
     let stringResult;
     if (PremiumUtils.Branding.TIER_1 !== premiumBranding) {
       if (PremiumUtils.Branding.TIER_2 === premiumBranding) {
-        const intl3 = tmp7(1113).intl;
-        stringResult = intl3.string(tmp7(1113).t.aTUr3Z);
+        const intl3 = tmp7(1112).intl;
+        stringResult = intl3.string(tmp7(1112).t.aTUr3Z);
       } else if (PremiumUtils.Branding.BUNDLE === premiumBranding) {
-        const intl2 = tmp7(1113).intl;
+        const intl2 = tmp7(1112).intl;
         const format = intl2.format;
         const obj15 = { planName: tmp7Result8.getExternalPlanDisplayName(obj16) };
-        const YJUUH3 = tmp7(1113).t.YJUUH3;
+        const YJUUH3 = tmp7(1112).t.YJUUH3;
         obj16 = { planId: null, additionalPlans: null };
         ({ planId: obj21.planId, additionalPlans: obj21.additionalPlans } = renewalMutations);
         tmp7Result8 = PremiumUtils;
@@ -250,6 +250,6 @@ export default function PremiumActivatedAlert(subscription) {
     obj6.children = items2;
     return metroRequire(tmp4Result, obj6);
   }
-  const intl4 = tmp7(1113).intl;
-  stringResult = intl4.string(tmp7(1113).t.knvOVz);
+  const intl4 = tmp7(1112).intl;
+  stringResult = intl4.string(tmp7(1112).t.knvOVz);
 };

@@ -1,12 +1,12 @@
 // Module ID: 9201
 // Function ID: 9202
 // Name: UserTrialActionCreators
-// Dependencies: [5, 8684, 1072, 1285, 572, 2]
+// Dependencies: [5, 8724, 1071, 1284, 572, 2]
 
 // Module 9201 (UserTrialActionCreators)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserTrialOfferRecord from "UserTrialOfferRecord" /* 8684 */;
-import Constants from "Constants" /* 1072 */;
+import UserTrialOfferRecord from "UserTrialOfferRecord" /* 8724 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5;
@@ -32,7 +32,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -90,7 +90,7 @@ let obj = {
             c3 = 0;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp24) {
           status = tmp24;
           if (0 === c3) {

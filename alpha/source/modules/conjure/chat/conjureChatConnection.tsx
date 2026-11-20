@@ -1,13 +1,13 @@
 // Module ID: 6865
 // Function ID: 6866
 // Name: conjureChatConnection
-// Dependencies: [572, 6810, 1113, 4089, 6866, 6820, 6814, 2]
+// Dependencies: [572, 6810, 1112, 4091, 6866, 6820, 6814, 2]
 // Exports: appendTurnStep, sendFailedStep, sendQueuedMessageAction
 
 // Module 6865 (conjureChatConnection)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import intl2 from "intl" /* 1113 */;
-import _modDef4089 from "module_4089" /* 4089 */;
+import intl2 from "intl" /* 1112 */;
+import _modDef4091 from "module_4091" /* 4091 */;
 import conjureAgentReaction from "conjureAgentReaction" /* 6810 */;
 import ConjureActionCreators from "ConjureActionCreators" /* 6814 */;
 import conjureProjectSockets from "conjureProjectSockets" /* 6820 */;
@@ -120,7 +120,7 @@ let obj2 = {
       obj5.dispatch(obj);
     } else {
       const intl = intl2.intl;
-      const stringResult = intl.string(_modDef4089["913RMa"]);
+      const stringResult = intl.string(_modDef4091["913RMa"]);
       let tmp = obj4;
       const tmp13 = importDefault;
       if (obj4 === undefined) {
@@ -221,7 +221,7 @@ let obj2 = {
       obj5.dispatch(obj);
     } else {
       const intl = intl2.intl;
-      const stringResult = intl.string(_modDef4089["0+RUWx"]);
+      const stringResult = intl.string(_modDef4091["0+RUWx"]);
       let tmp = obj4;
       const tmp13 = importDefault;
       if (obj4 === undefined) {

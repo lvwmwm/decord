@@ -1,16 +1,16 @@
 // Module ID: 9611
 // Function ID: 9612
 // Name: SecureFramesStreamVerificationBottomSheet
-// Dependencies: [19, 6275, 1072, 21, 504, 9590, 9598, 9612, 1113, 9587, 2]
+// Dependencies: [19, 6277, 1071, 21, 504, 9590, 9598, 9612, 1112, 9587, 2]
 // Exports: default
 
 // Module 9611 (SecureFramesStreamVerificationBottomSheet)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1072 */;
+import Constants from "Constants" /* 1071 */;
 import SecureFramesTracking from "SecureFramesTracking" /* 9590 */;
 import showShareActionSheet from "showShareActionSheet" /* 9598 */;
 import react from "react" /* 19 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 6275 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 6277 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticsSections = Constants.AnalyticsSections;
@@ -41,12 +41,12 @@ export default function SecureFramesStreamVerificationBottomSheet(channelId) {
     obj3.showShareActionSheet(obj4, AnalyticsSections.SECURE_FRAMES_STREAM_BOTTOM_SHEET);
   }, items1);
   streamKey(9612);
-  const intl = channelId(1113).intl;
-  const intl2 = channelId(1113).intl;
-  const intl3 = channelId(1113).intl;
+  const intl = channelId(1112).intl;
+  const intl2 = channelId(1112).intl;
+  const intl3 = channelId(1112).intl;
   const format = intl3.format;
   let obj3 = { helpArticle: obj4.getSecureFramesHelpdeskArticle() };
-  const prop = channelId(1113).t["H3+ktv"];
+  const prop = channelId(1112).t["H3+ktv"];
   obj4 = channelId(9587);
-  return <tmp3 title={intl.string(channelId(1113).t.QogHld)} subtitle={intl2.string(channelId(1113).t.qODBkW)} footer={format(prop, obj3)} epochAuthenticator={stateFromStores} onShareClick={callback} />;
+  return <tmp3 title={intl.string(channelId(1112).t.QogHld)} subtitle={intl2.string(channelId(1112).t.qODBkW)} footer={format(prop, obj3)} epochAuthenticator={stateFromStores} onShareClick={callback} />;
 };

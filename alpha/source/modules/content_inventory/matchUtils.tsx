@@ -1,12 +1,12 @@
 // Module ID: 8875
 // Function ID: 8876
 // Name: matchUtils
-// Dependencies: [7093, 6778, 8876, 8878, 8879, 7891, 5531, 2]
+// Dependencies: [7092, 6778, 8876, 8878, 8879, 7890, 5533, 2]
 // Exports: findMatchingEntry, isCrunchyrollEntry, isMatchingApplicationActivity, isMatchingWatchActivity, isSpotifyEntry
 
 // Module 8875 (matchUtils)
 import SpotifyConstants from "SpotifyConstants" /* 6778 */;
-import CrunchyrollConnectionConstants from "CrunchyrollConnectionConstants" /* 7093 */;
+import CrunchyrollConnectionConstants from "CrunchyrollConnectionConstants" /* 7092 */;
 import ContentInventoryTypes from "ContentInventoryTypes" /* 8876 */;
 import isCrunchyrollActivityDefault from "isCrunchyrollActivity" /* 8879 */;
 import size from "module_2" /* 2 */;
@@ -126,10 +126,10 @@ export function findMatchingEntry(entries, activity) {
       }
       return tmp2;
     });
-  } else if (activity.type === tmp(5531).ActivityTypes.LISTENING) {
+  } else if (activity.type === tmp(5533).ActivityTypes.LISTENING) {
     const found3 = found.filter(tmp(8876).isListenedSessionEntry);
     found2 = found3.find((item) => isMatchingListeningActivity(item, activity));
-  } else if (activity.type === tmp(5531).ActivityTypes.WATCHING) {
+  } else if (activity.type === tmp(5533).ActivityTypes.WATCHING) {
     const found4 = entries.filter(tmp(8876).isWatchedMediaEntry);
     found2 = found4.find((extra) => {
       const tmp3 = isCrunchyrollActivityDefault(activity);

@@ -1,10 +1,10 @@
-// Module ID: 8255
-// Function ID: 8256
+// Module ID: 8254
+// Function ID: 8255
 // Name: DidBackgroundAppNativeExperiment
-// Dependencies: [1452, 2]
+// Dependencies: [1450, 2]
 
-// Module 8255 (DidBackgroundAppNativeExperiment)
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+// Module 8254 (DidBackgroundAppNativeExperiment)
+import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 
 const obj = { kind: "user", name: "2026-11-mobile-did-background-app-native", defaultConfig: { useNative: false }, variations: { 0: { useNative: false }, 1: { useNative: true } } };

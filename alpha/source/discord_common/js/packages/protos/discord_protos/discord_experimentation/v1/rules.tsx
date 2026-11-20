@@ -1,11 +1,11 @@
-// Module ID: 8124
-// Function ID: 8125
+// Module ID: 8123
+// Function ID: 8124
 // Name: rules
-// Dependencies: [32, 1197, 1227, 2]
+// Dependencies: [32, 1196, 1226, 2]
 
-// Module 8124 (rules)
-import _mod1197 from "module_1197" /* 1197 */;
-import wrappers from "wrappers" /* 1227 */;
+// Module 8123 (rules)
+import _mod1196 from "module_1196" /* 1196 */;
+import wrappers from "wrappers" /* 1226 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -142,7 +142,7 @@ const Rule_Type = { UNSPECIFIED: 0, [0]: "UNSPECIFIED", EXCLUDE: 1, [1]: "EXCLUD
 let obj2 = { REGULAR: 0, [0]: "REGULAR", HOLDOUT: 1, [1]: "HOLDOUT", ROLLOUT: 2, [2]: "ROLLOUT" };
 let obj3 = { UNSPECIFIED: 0, [0]: "UNSPECIFIED", USER: 1, [1]: "USER", CLIENT: 2, [2]: "CLIENT", GUILD: 3, [3]: "GUILD", UTILITY: 4, [4]: "UTILITY" };
 const obj4 = { UNSPECIFIED: 0, [0]: "UNSPECIFIED", STICKY: 1, [1]: "STICKY", LAZY: 2, [2]: "LAZY" };
-const MessageType = _mod1197.MessageType;
+const MessageType = _mod1196.MessageType;
 class Rule$Type extends MessageType {
   constructor() {
     obj = {
@@ -172,9 +172,9 @@ class Rule$Type extends MessageType {
     obj = { type: 0, filters: [], subtype: 0, hash: "" };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1197;
+      const tmpResult = _mod1196;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -223,7 +223,7 @@ class Rule$Type extends MessageType {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1197.UnknownFieldHandler.onRead;
+                onRead = _mod1196.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -236,7 +236,7 @@ class Rule$Type extends MessageType {
   internalBinaryWrite(type, tag, writeUnknownFields) {
     let length;
     if (0 !== type.type) {
-      const tagResult = tag.tag(1, _mod1197.WireType.Varint);
+      const tagResult = tag.tag(1, _mod1196.WireType.Varint);
       tagResult.int32(type.type);
     }
     let num2 = 0;
@@ -244,7 +244,7 @@ class Rule$Type extends MessageType {
       do {
         internalBinaryWrite = filterType.internalBinaryWrite;
         let tmp5 = type.filters[num2];
-        let tagResult1 = tag.tag(2, _mod1197.WireType.LengthDelimited);
+        let tagResult1 = tag.tag(2, _mod1196.WireType.LengthDelimited);
         let internalBinaryWriteResult = internalBinaryWrite(tmp5, tagResult1.fork(), writeUnknownFields);
         let joined = internalBinaryWriteResult.join();
         num2 = num2 + 1;
@@ -254,30 +254,30 @@ class Rule$Type extends MessageType {
     if (type.override) {
       internalBinaryWrite2 = ruleType.internalBinaryWrite;
       const override = type.override;
-      const tagResult2 = tag.tag(3, _mod1197.WireType.LengthDelimited);
+      const tagResult2 = tag.tag(3, _mod1196.WireType.LengthDelimited);
       const internalBinaryWrite2Result = internalBinaryWrite2(override, tagResult2.fork(), writeUnknownFields);
       const joined1 = internalBinaryWrite2Result.join();
     }
     if (0 !== type.subtype) {
-      const tagResult3 = tag.tag(5, _mod1197.WireType.Varint);
+      const tagResult3 = tag.tag(5, _mod1196.WireType.Varint);
       tagResult3.int32(type.subtype);
     }
     if ("" !== type.hash) {
-      const tagResult4 = tag.tag(6, _mod1197.WireType.LengthDelimited);
+      const tagResult4 = tag.tag(6, _mod1196.WireType.LengthDelimited);
       tagResult4.string(type.hash);
     }
     if (type.title) {
       const StringValue = wrappers.StringValue;
       internalBinaryWrite3 = StringValue.internalBinaryWrite;
       const title = type.title;
-      const tagResult5 = tag.tag(7, _mod1197.WireType.LengthDelimited);
+      const tagResult5 = tag.tag(7, _mod1196.WireType.LengthDelimited);
       const internalBinaryWrite3Result = internalBinaryWrite3(title, tagResult5.fork(), writeUnknownFields);
       const joined2 = internalBinaryWrite3Result.join();
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+        onWrite = _mod1196.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, type, tag);
@@ -311,7 +311,7 @@ items[3] = {
 items[4] = { no: 6, name: "hash", kind: "scalar", T: 9 };
 items[5] = { no: 7, name: "title", kind: "message", T: T4 };
 const defineProperty1 = new defineProperty("discord_protos.discord_experimentation.v1.Rule", items, tmp6, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite");
-const MessageType2 = _mod1197.MessageType;
+const MessageType2 = _mod1196.MessageType;
 class Override$Type extends MessageType2 {
   constructor() {
     const items = [{ no: 1, name: "variation_id", kind: "scalar", T: 5 }];
@@ -322,9 +322,9 @@ class Override$Type extends MessageType2 {
     obj = { variationId: 0 };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1197;
+      const tmpResult = _mod1196;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -361,7 +361,7 @@ class Override$Type extends MessageType2 {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1197.UnknownFieldHandler.onRead;
+                onRead = _mod1196.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -373,13 +373,13 @@ class Override$Type extends MessageType2 {
   }
   internalBinaryWrite(variationId, tag, writeUnknownFields) {
     if (0 !== variationId.variationId) {
-      const tagResult = tag.tag(1, _mod1197.WireType.Varint);
+      const tagResult = tag.tag(1, _mod1196.WireType.Varint);
       tagResult.int32(variationId.variationId);
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+        onWrite = _mod1196.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, variationId, tag);
@@ -390,7 +390,7 @@ class Override$Type extends MessageType2 {
 const prototype2 = Override$Type.prototype;
 const items1 = [{ no: 1, name: "variation_id", kind: "scalar", T: 5 }];
 const ruleType = new Rule$Type("discord_protos.discord_experimentation.v1.Override", items1, tmp6, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2);
-const MessageType3 = _mod1197.MessageType;
+const MessageType3 = _mod1196.MessageType;
 class Filter$Type extends MessageType3 {
   constructor() {
     const items = [, , , , , , , , , , , , , , , , , , , , , , , , , , , , , ];
@@ -662,9 +662,9 @@ class Filter$Type extends MessageType3 {
     obj = { filter: { oneofKind: "r" }, negate: false };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1197;
+      const tmpResult = _mod1196;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -685,214 +685,214 @@ class Filter$Type extends MessageType3 {
     if ("clientVersion" === negate.filter.oneofKind) {
       internalBinaryWrite = sDKVersionSpecifierType.internalBinaryWrite;
       const clientVersion = negate.filter.clientVersion;
-      const tagResult = tag.tag(2, _mod1197.WireType.LengthDelimited);
+      const tagResult = tag.tag(2, _mod1196.WireType.LengthDelimited);
       const internalBinaryWriteResult = internalBinaryWrite(clientVersion, tagResult.fork(), writeUnknownFields);
       const joined = internalBinaryWriteResult.join();
     }
     if ("clientOs" === negate.filter.oneofKind) {
       internalBinaryWrite2 = clientLocation_LocationType4.internalBinaryWrite;
       const clientOs = negate.filter.clientOs;
-      const tagResult1 = tag.tag(3, _mod1197.WireType.LengthDelimited);
+      const tagResult1 = tag.tag(3, _mod1196.WireType.LengthDelimited);
       const internalBinaryWrite2Result = internalBinaryWrite2(clientOs, tagResult1.fork(), writeUnknownFields);
       const joined1 = internalBinaryWrite2Result.join();
     }
     if ("staff" === negate.filter.oneofKind) {
       internalBinaryWrite3 = overrideType.internalBinaryWrite;
       const staff = negate.filter.staff;
-      const tagResult2 = tag.tag(4, _mod1197.WireType.LengthDelimited);
+      const tagResult2 = tag.tag(4, _mod1196.WireType.LengthDelimited);
       const internalBinaryWrite3Result = internalBinaryWrite3(staff, tagResult2.fork(), writeUnknownFields);
       const joined2 = internalBinaryWrite3Result.join();
     }
     if ("userInGuild" === negate.filter.oneofKind) {
       internalBinaryWrite4 = overrideType1.internalBinaryWrite;
       const userInGuild = negate.filter.userInGuild;
-      const tagResult3 = tag.tag(5, _mod1197.WireType.LengthDelimited);
+      const tagResult3 = tag.tag(5, _mod1196.WireType.LengthDelimited);
       const internalBinaryWrite4Result = internalBinaryWrite4(userInGuild, tagResult3.fork(), writeUnknownFields);
       const joined3 = internalBinaryWrite4Result.join();
     }
     if ("userIds" === negate.filter.oneofKind) {
       internalBinaryWrite5 = overrideType2.internalBinaryWrite;
       const userIds = negate.filter.userIds;
-      const tagResult4 = tag.tag(6, _mod1197.WireType.LengthDelimited);
+      const tagResult4 = tag.tag(6, _mod1196.WireType.LengthDelimited);
       const internalBinaryWrite5Result = internalBinaryWrite5(userIds, tagResult4.fork(), writeUnknownFields);
       const joined4 = internalBinaryWrite5Result.join();
     }
     if ("clientLocale" === negate.filter.oneofKind) {
       internalBinaryWrite6 = overrideType4.internalBinaryWrite;
       const clientLocale = negate.filter.clientLocale;
-      const tagResult5 = tag.tag(7, _mod1197.WireType.LengthDelimited);
+      const tagResult5 = tag.tag(7, _mod1196.WireType.LengthDelimited);
       const internalBinaryWrite6Result = internalBinaryWrite6(clientLocale, tagResult5.fork(), writeUnknownFields);
       const joined5 = internalBinaryWrite6Result.join();
     }
     if ("clientLocation" === negate.filter.oneofKind) {
       internalBinaryWrite7 = overrideType6.internalBinaryWrite;
       const clientLocation = negate.filter.clientLocation;
-      const tagResult6 = tag.tag(8, _mod1197.WireType.LengthDelimited);
+      const tagResult6 = tag.tag(8, _mod1196.WireType.LengthDelimited);
       const internalBinaryWrite7Result = internalBinaryWrite7(clientLocation, tagResult6.fork(), writeUnknownFields);
       const joined6 = internalBinaryWrite7Result.join();
     }
     if ("clientIp" === negate.filter.oneofKind) {
       internalBinaryWrite8 = clientLocation_LocationType2.internalBinaryWrite;
       const clientIp = negate.filter.clientIp;
-      const tagResult7 = tag.tag(9, _mod1197.WireType.LengthDelimited);
+      const tagResult7 = tag.tag(9, _mod1196.WireType.LengthDelimited);
       const internalBinaryWrite8Result = internalBinaryWrite8(clientIp, tagResult7.fork(), writeUnknownFields);
       const joined7 = internalBinaryWrite8Result.join();
     }
     if ("userLocale" === negate.filter.oneofKind) {
       internalBinaryWrite9 = overrideType3.internalBinaryWrite;
       const userLocale = negate.filter.userLocale;
-      const tagResult8 = tag.tag(10, _mod1197.WireType.LengthDelimited);
+      const tagResult8 = tag.tag(10, _mod1196.WireType.LengthDelimited);
       const internalBinaryWrite9Result = internalBinaryWrite9(userLocale, tagResult8.fork(), writeUnknownFields);
       const joined8 = internalBinaryWrite9Result.join();
     }
     if ("bot" === negate.filter.oneofKind) {
       const internalBinaryWrite10 = clientRequiredChangesType.internalBinaryWrite;
       const bot = negate.filter.bot;
-      const tagResult9 = tag.tag(11, _mod1197.WireType.LengthDelimited);
+      const tagResult9 = tag.tag(11, _mod1196.WireType.LengthDelimited);
       const result = internalBinaryWrite10(bot, tagResult9.fork(), writeUnknownFields);
       const joined9 = result.join();
     }
     if ("userAgeRange" === negate.filter.oneofKind) {
       const internalBinaryWrite11 = clientRequiredChangesType1.internalBinaryWrite;
       const userAgeRange = negate.filter.userAgeRange;
-      const tagResult10 = tag.tag(12, _mod1197.WireType.LengthDelimited);
+      const tagResult10 = tag.tag(12, _mod1196.WireType.LengthDelimited);
       const result1 = internalBinaryWrite11(userAgeRange, tagResult10.fork(), writeUnknownFields);
       const joined10 = result1.join();
     }
     if ("userIdRange" === negate.filter.oneofKind) {
       const internalBinaryWrite12 = fixed64ValueType.internalBinaryWrite;
       const userIdRange = negate.filter.userIdRange;
-      const tagResult11 = tag.tag(13, _mod1197.WireType.LengthDelimited);
+      const tagResult11 = tag.tag(13, _mod1196.WireType.LengthDelimited);
       const result2 = internalBinaryWrite12(userIdRange, tagResult11.fork(), writeUnknownFields);
       const joined11 = result2.join();
     }
     if ("userHasFlag" === negate.filter.oneofKind) {
       const internalBinaryWrite13 = fixed64ValueType1.internalBinaryWrite;
       const userHasFlag = negate.filter.userHasFlag;
-      const tagResult12 = tag.tag(14, _mod1197.WireType.LengthDelimited);
+      const tagResult12 = tag.tag(14, _mod1196.WireType.LengthDelimited);
       const result3 = internalBinaryWrite13(userHasFlag, tagResult12.fork(), writeUnknownFields);
       const joined12 = result3.join();
     }
     if ("unitIdInRangeByHash" === negate.filter.oneofKind) {
       const internalBinaryWrite14 = fixed64ValueType2.internalBinaryWrite;
       const unitIdInRangeByHash = negate.filter.unitIdInRangeByHash;
-      const tagResult13 = tag.tag(15, _mod1197.WireType.LengthDelimited);
+      const tagResult13 = tag.tag(15, _mod1196.WireType.LengthDelimited);
       const result4 = internalBinaryWrite14(unitIdInRangeByHash, tagResult13.fork(), writeUnknownFields);
       const joined13 = result4.join();
     }
     if ("clientReleaseChannel" === negate.filter.oneofKind) {
       const internalBinaryWrite15 = fixed64ValueType3.internalBinaryWrite;
       const clientReleaseChannel = negate.filter.clientReleaseChannel;
-      const tagResult14 = tag.tag(16, _mod1197.WireType.LengthDelimited);
+      const tagResult14 = tag.tag(16, _mod1196.WireType.LengthDelimited);
       const result5 = internalBinaryWrite15(clientReleaseChannel, tagResult14.fork(), writeUnknownFields);
       const joined14 = result5.join();
     }
     if ("always" === negate.filter.oneofKind) {
       const internalBinaryWrite16 = fixed64ValueType5.internalBinaryWrite;
       const always = negate.filter.always;
-      const tagResult15 = tag.tag(17, _mod1197.WireType.LengthDelimited);
+      const tagResult15 = tag.tag(17, _mod1196.WireType.LengthDelimited);
       const result6 = internalBinaryWrite16(always, tagResult15.fork(), writeUnknownFields);
       const joined15 = result6.join();
     }
     if ("clientSystemLocale" === negate.filter.oneofKind) {
       const internalBinaryWrite17 = overrideType5.internalBinaryWrite;
       const clientSystemLocale = negate.filter.clientSystemLocale;
-      const tagResult16 = tag.tag(18, _mod1197.WireType.LengthDelimited);
+      const tagResult16 = tag.tag(18, _mod1196.WireType.LengthDelimited);
       const result7 = internalBinaryWrite17(clientSystemLocale, tagResult16.fork(), writeUnknownFields);
       const joined16 = result7.join();
     }
     if ("unitIdInExperiment" === negate.filter.oneofKind) {
       const internalBinaryWrite18 = fixed64ValueType6.internalBinaryWrite;
       const unitIdInExperiment = negate.filter.unitIdInExperiment;
-      const tagResult17 = tag.tag(19, _mod1197.WireType.LengthDelimited);
+      const tagResult17 = tag.tag(19, _mod1196.WireType.LengthDelimited);
       const result8 = internalBinaryWrite18(unitIdInExperiment, tagResult17.fork(), writeUnknownFields);
       const joined17 = result8.join();
     }
     if ("userPremiumType" === negate.filter.oneofKind) {
       const internalBinaryWrite19 = fixed64ValueType7.internalBinaryWrite;
       const userPremiumType = negate.filter.userPremiumType;
-      const tagResult18 = tag.tag(20, _mod1197.WireType.LengthDelimited);
+      const tagResult18 = tag.tag(20, _mod1196.WireType.LengthDelimited);
       const result9 = internalBinaryWrite19(userPremiumType, tagResult18.fork(), writeUnknownFields);
       const joined18 = result9.join();
     }
     if ("unitIdMatchesFilterSnapshot" === negate.filter.oneofKind) {
       const internalBinaryWrite20 = fixed64ValueType8.internalBinaryWrite;
       const unitIdMatchesFilterSnapshot = negate.filter.unitIdMatchesFilterSnapshot;
-      const tagResult19 = tag.tag(21, _mod1197.WireType.LengthDelimited);
+      const tagResult19 = tag.tag(21, _mod1196.WireType.LengthDelimited);
       const result10 = internalBinaryWrite20(unitIdMatchesFilterSnapshot, tagResult19.fork(), writeUnknownFields);
       const joined19 = result10.join();
     }
     if ("guildIds" === negate.filter.oneofKind) {
       const internalBinaryWrite21 = fixed64ValueType9.internalBinaryWrite;
       const guildIds = negate.filter.guildIds;
-      const tagResult20 = tag.tag(22, _mod1197.WireType.LengthDelimited);
+      const tagResult20 = tag.tag(22, _mod1196.WireType.LengthDelimited);
       const result11 = internalBinaryWrite21(guildIds, tagResult20.fork(), writeUnknownFields);
       const joined20 = result11.join();
     }
     if ("guildIdRange" === negate.filter.oneofKind) {
       const internalBinaryWrite22 = guildMemberCountRangeType.internalBinaryWrite;
       const guildIdRange = negate.filter.guildIdRange;
-      const tagResult21 = tag.tag(23, _mod1197.WireType.LengthDelimited);
+      const tagResult21 = tag.tag(23, _mod1196.WireType.LengthDelimited);
       const result12 = internalBinaryWrite22(guildIdRange, tagResult21.fork(), writeUnknownFields);
       const joined21 = result12.join();
     }
     if ("guildMemberCountRange" === negate.filter.oneofKind) {
       const internalBinaryWrite23 = guildIdsType.internalBinaryWrite;
       const guildMemberCountRange = negate.filter.guildMemberCountRange;
-      const tagResult22 = tag.tag(25, _mod1197.WireType.LengthDelimited);
+      const tagResult22 = tag.tag(25, _mod1196.WireType.LengthDelimited);
       const result13 = internalBinaryWrite23(guildMemberCountRange, tagResult22.fork(), writeUnknownFields);
       const joined22 = result13.join();
     }
     if ("guildHasFeature" === negate.filter.oneofKind) {
       const internalBinaryWrite24 = guildIdRangeType.internalBinaryWrite;
       const guildHasFeature = negate.filter.guildHasFeature;
-      const tagResult23 = tag.tag(26, _mod1197.WireType.LengthDelimited);
+      const tagResult23 = tag.tag(26, _mod1196.WireType.LengthDelimited);
       const result14 = internalBinaryWrite24(guildHasFeature, tagResult23.fork(), writeUnknownFields);
       const joined23 = result14.join();
     }
     if ("userLocation" === negate.filter.oneofKind) {
       const internalBinaryWrite25 = clientLocation_LocationType.internalBinaryWrite;
       const userLocation = negate.filter.userLocation;
-      const tagResult24 = tag.tag(27, _mod1197.WireType.LengthDelimited);
+      const tagResult24 = tag.tag(27, _mod1196.WireType.LengthDelimited);
       const result15 = internalBinaryWrite25(userLocation, tagResult24.fork(), writeUnknownFields);
       const joined24 = result15.join();
     }
     if ("userIp" === negate.filter.oneofKind) {
       const internalBinaryWrite26 = clientLocation_LocationType3.internalBinaryWrite;
       const userIp = negate.filter.userIp;
-      const tagResult25 = tag.tag(28, _mod1197.WireType.LengthDelimited);
+      const tagResult25 = tag.tag(28, _mod1196.WireType.LengthDelimited);
       const result16 = internalBinaryWrite26(userIp, tagResult25.fork(), writeUnknownFields);
       const joined25 = result16.join();
     }
     if ("installationIds" === negate.filter.oneofKind) {
       const internalBinaryWrite27 = internalBinaryWrite.internalBinaryWrite;
       const installationIds = negate.filter.installationIds;
-      const tagResult26 = tag.tag(29, _mod1197.WireType.LengthDelimited);
+      const tagResult26 = tag.tag(29, _mod1196.WireType.LengthDelimited);
       const result17 = internalBinaryWrite27(installationIds, tagResult26.fork(), writeUnknownFields);
       const joined26 = result17.join();
     }
     if ("userStoreCountry" === negate.filter.oneofKind) {
       const internalBinaryWrite28 = clientLocation_LocationType1.internalBinaryWrite;
       const userStoreCountry = negate.filter.userStoreCountry;
-      const tagResult27 = tag.tag(31, _mod1197.WireType.LengthDelimited);
+      const tagResult27 = tag.tag(31, _mod1196.WireType.LengthDelimited);
       const result18 = internalBinaryWrite28(userStoreCountry, tagResult27.fork(), writeUnknownFields);
       const joined27 = result18.join();
     }
     if ("clientDesignId" === negate.filter.oneofKind) {
       const internalBinaryWrite29 = fixed64ValueType4.internalBinaryWrite;
       const clientDesignId = negate.filter.clientDesignId;
-      const tagResult28 = tag.tag(32, _mod1197.WireType.LengthDelimited);
+      const tagResult28 = tag.tag(32, _mod1196.WireType.LengthDelimited);
       const result19 = internalBinaryWrite29(clientDesignId, tagResult28.fork(), writeUnknownFields);
       const joined28 = result19.join();
     }
     if (false !== negate.negate) {
-      const tagResult29 = tag.tag(30, _mod1197.WireType.Varint);
+      const tagResult29 = tag.tag(30, _mod1196.WireType.Varint);
       tagResult29.bool(negate.negate);
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+        onWrite = _mod1196.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, negate, tag);
@@ -902,7 +902,7 @@ class Filter$Type extends MessageType3 {
 }
 const prototype3 = Filter$Type.prototype;
 const filterType = new Filter$Type();
-const MessageType4 = _mod1197.MessageType;
+const MessageType4 = _mod1196.MessageType;
 class StaffUsers$Type extends MessageType4 {
   constructor() {
     const items = [{ no: 1, name: "work_accounts", kind: "scalar", T: 8 }, { no: 2, name: "personal_accounts", kind: "scalar", T: 8 }];
@@ -913,9 +913,9 @@ class StaffUsers$Type extends MessageType4 {
     obj = { workAccounts: false, personalAccounts: false };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1197;
+      const tmpResult = _mod1196;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -954,7 +954,7 @@ class StaffUsers$Type extends MessageType4 {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1197.UnknownFieldHandler.onRead;
+                onRead = _mod1196.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -966,17 +966,17 @@ class StaffUsers$Type extends MessageType4 {
   }
   internalBinaryWrite(workAccounts, tag, writeUnknownFields) {
     if (false !== workAccounts.workAccounts) {
-      const tagResult = tag.tag(1, _mod1197.WireType.Varint);
+      const tagResult = tag.tag(1, _mod1196.WireType.Varint);
       tagResult.bool(workAccounts.workAccounts);
     }
     if (false !== workAccounts.personalAccounts) {
-      const tagResult1 = tag.tag(2, _mod1197.WireType.Varint);
+      const tagResult1 = tag.tag(2, _mod1196.WireType.Varint);
       tagResult1.bool(workAccounts.personalAccounts);
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+        onWrite = _mod1196.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, workAccounts, tag);
@@ -987,7 +987,7 @@ class StaffUsers$Type extends MessageType4 {
 const prototype4 = StaffUsers$Type.prototype;
 const items2 = [{ no: 1, name: "work_accounts", kind: "scalar", T: 8 }, { no: 2, name: "personal_accounts", kind: "scalar", T: 8 }];
 const overrideType = new Override$Type("discord_protos.discord_experimentation.v1.StaffUsers", items2, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_USER" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
-const MessageType5 = _mod1197.MessageType;
+const MessageType5 = _mod1196.MessageType;
 class UserInGuild$Type extends MessageType5 {
   constructor() {
     const items = [{ no: 1, name: "guild_ids", kind: "scalar", repeat: 1, T: 6 }];
@@ -998,9 +998,9 @@ class UserInGuild$Type extends MessageType5 {
     obj = { guildIds: [] };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1197;
+      const tmpResult = _mod1196;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -1019,7 +1019,7 @@ class UserInGuild$Type extends MessageType5 {
         let tmp4 = _slicedToArray(pos.tag(), 2);
         [tmp5, tmp6] = tmp4;
         if (1 === tmp5) {
-          if (tmp6 === _mod1197.WireType.LengthDelimited) {
+          if (tmp6 === _mod1196.WireType.LengthDelimited) {
             let sum1 = pos.int32() + pos.pos;
             if (pos.pos < sum1) {
               do {
@@ -1053,7 +1053,7 @@ class UserInGuild$Type extends MessageType5 {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1197.UnknownFieldHandler.onRead;
+                onRead = _mod1196.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -1066,7 +1066,7 @@ class UserInGuild$Type extends MessageType5 {
   internalBinaryWrite(guildIds, tag, writeUnknownFields) {
     let length;
     if (guildIds.guildIds.length) {
-      const tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
+      const tagResult = tag.tag(1, _mod1196.WireType.LengthDelimited);
       tagResult.fork();
       let num2 = 0;
       if (0 < guildIds.guildIds.length) {
@@ -1081,7 +1081,7 @@ class UserInGuild$Type extends MessageType5 {
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+        onWrite = _mod1196.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, guildIds, tag);
@@ -1092,7 +1092,7 @@ class UserInGuild$Type extends MessageType5 {
 const prototype5 = UserInGuild$Type.prototype;
 const items3 = [{ no: 1, name: "guild_ids", kind: "scalar", repeat: 1, T: 6 }];
 const overrideType1 = new Override$Type("discord_protos.discord_experimentation.v1.UserInGuild", items3, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_USER" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
-const MessageType6 = _mod1197.MessageType;
+const MessageType6 = _mod1196.MessageType;
 class UserIds$Type extends MessageType6 {
   constructor() {
     const items = [{ no: 1, name: "user_ids", kind: "scalar", repeat: 1, T: 6 }];
@@ -1103,9 +1103,9 @@ class UserIds$Type extends MessageType6 {
     obj = { userIds: [] };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1197;
+      const tmpResult = _mod1196;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -1124,7 +1124,7 @@ class UserIds$Type extends MessageType6 {
         let tmp4 = _slicedToArray(pos.tag(), 2);
         [tmp5, tmp6] = tmp4;
         if (1 === tmp5) {
-          if (tmp6 === _mod1197.WireType.LengthDelimited) {
+          if (tmp6 === _mod1196.WireType.LengthDelimited) {
             let sum1 = pos.int32() + pos.pos;
             if (pos.pos < sum1) {
               do {
@@ -1158,7 +1158,7 @@ class UserIds$Type extends MessageType6 {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1197.UnknownFieldHandler.onRead;
+                onRead = _mod1196.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -1171,7 +1171,7 @@ class UserIds$Type extends MessageType6 {
   internalBinaryWrite(userIds, tag, writeUnknownFields) {
     let length;
     if (userIds.userIds.length) {
-      const tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
+      const tagResult = tag.tag(1, _mod1196.WireType.LengthDelimited);
       tagResult.fork();
       let num2 = 0;
       if (0 < userIds.userIds.length) {
@@ -1186,7 +1186,7 @@ class UserIds$Type extends MessageType6 {
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+        onWrite = _mod1196.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, userIds, tag);
@@ -1197,7 +1197,7 @@ class UserIds$Type extends MessageType6 {
 const prototype6 = UserIds$Type.prototype;
 const items4 = [{ no: 1, name: "user_ids", kind: "scalar", repeat: 1, T: 6 }];
 const overrideType2 = new Override$Type("discord_protos.discord_experimentation.v1.UserIds", items4, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_USER" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
-const MessageType7 = _mod1197.MessageType;
+const MessageType7 = _mod1196.MessageType;
 class UserLocale$Type extends MessageType7 {
   constructor() {
     const items = [{ no: 1, name: "locales", kind: "scalar", repeat: 2, T: 9 }];
@@ -1208,9 +1208,9 @@ class UserLocale$Type extends MessageType7 {
     obj = { locales: [] };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1197;
+      const tmpResult = _mod1196;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -1248,7 +1248,7 @@ class UserLocale$Type extends MessageType7 {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1197.UnknownFieldHandler.onRead;
+                onRead = _mod1196.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -1263,7 +1263,7 @@ class UserLocale$Type extends MessageType7 {
     let num = 0;
     if (0 < locales.locales.length) {
       do {
-        let tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
+        let tagResult = tag.tag(1, _mod1196.WireType.LengthDelimited);
         let stringResult = tagResult.string(locales.locales[num]);
         num = num + 1;
         length = locales.locales.length;
@@ -1272,7 +1272,7 @@ class UserLocale$Type extends MessageType7 {
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+        onWrite = _mod1196.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, locales, tag);
@@ -1283,7 +1283,7 @@ class UserLocale$Type extends MessageType7 {
 const prototype7 = UserLocale$Type.prototype;
 const items5 = [{ no: 1, name: "locales", kind: "scalar", repeat: 2, T: 9 }];
 const overrideType3 = new Override$Type("discord_protos.discord_experimentation.v1.UserLocale", items5, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_USER" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
-const MessageType8 = _mod1197.MessageType;
+const MessageType8 = _mod1196.MessageType;
 class ClientLocale$Type extends MessageType8 {
   constructor() {
     const items = [{ no: 1, name: "locales", kind: "scalar", repeat: 2, T: 9 }];
@@ -1294,9 +1294,9 @@ class ClientLocale$Type extends MessageType8 {
     obj = { locales: [] };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1197;
+      const tmpResult = _mod1196;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -1334,7 +1334,7 @@ class ClientLocale$Type extends MessageType8 {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1197.UnknownFieldHandler.onRead;
+                onRead = _mod1196.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -1349,7 +1349,7 @@ class ClientLocale$Type extends MessageType8 {
     let num = 0;
     if (0 < locales.locales.length) {
       do {
-        let tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
+        let tagResult = tag.tag(1, _mod1196.WireType.LengthDelimited);
         let stringResult = tagResult.string(locales.locales[num]);
         num = num + 1;
         length = locales.locales.length;
@@ -1358,7 +1358,7 @@ class ClientLocale$Type extends MessageType8 {
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+        onWrite = _mod1196.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, locales, tag);
@@ -1369,7 +1369,7 @@ class ClientLocale$Type extends MessageType8 {
 const prototype8 = ClientLocale$Type.prototype;
 const items6 = [{ no: 1, name: "locales", kind: "scalar", repeat: 2, T: 9 }];
 const overrideType4 = new Override$Type("discord_protos.discord_experimentation.v1.ClientLocale", items6, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_CLIENT" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
-const MessageType9 = _mod1197.MessageType;
+const MessageType9 = _mod1196.MessageType;
 class ClientSystemLocale$Type extends MessageType9 {
   constructor() {
     const items = [{ no: 1, name: "locales", kind: "scalar", repeat: 2, T: 9 }];
@@ -1380,9 +1380,9 @@ class ClientSystemLocale$Type extends MessageType9 {
     obj = { locales: [] };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1197;
+      const tmpResult = _mod1196;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -1420,7 +1420,7 @@ class ClientSystemLocale$Type extends MessageType9 {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1197.UnknownFieldHandler.onRead;
+                onRead = _mod1196.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -1435,7 +1435,7 @@ class ClientSystemLocale$Type extends MessageType9 {
     let num = 0;
     if (0 < locales.locales.length) {
       do {
-        let tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
+        let tagResult = tag.tag(1, _mod1196.WireType.LengthDelimited);
         let stringResult = tagResult.string(locales.locales[num]);
         num = num + 1;
         length = locales.locales.length;
@@ -1444,7 +1444,7 @@ class ClientSystemLocale$Type extends MessageType9 {
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+        onWrite = _mod1196.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, locales, tag);
@@ -1455,7 +1455,7 @@ class ClientSystemLocale$Type extends MessageType9 {
 const prototype9 = ClientSystemLocale$Type.prototype;
 const items7 = [{ no: 1, name: "locales", kind: "scalar", repeat: 2, T: 9 }];
 const overrideType5 = new Override$Type("discord_protos.discord_experimentation.v1.ClientSystemLocale", items7, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_CLIENT" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
-const MessageType10 = _mod1197.MessageType;
+const MessageType10 = _mod1196.MessageType;
 class ClientLocation$Type extends MessageType10 {
   constructor() {
     const items = [];
@@ -1468,9 +1468,9 @@ class ClientLocation$Type extends MessageType10 {
     obj = { locations: [] };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1197;
+      const tmpResult = _mod1196;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -1508,7 +1508,7 @@ class ClientLocation$Type extends MessageType10 {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1197.UnknownFieldHandler.onRead;
+                onRead = _mod1196.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -1525,7 +1525,7 @@ class ClientLocation$Type extends MessageType10 {
       do {
         internalBinaryWrite = items83.internalBinaryWrite;
         let tmp2 = locations.locations[num];
-        let tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
+        let tagResult = tag.tag(1, _mod1196.WireType.LengthDelimited);
         let internalBinaryWriteResult = internalBinaryWrite(tmp2, tagResult.fork(), writeUnknownFields);
         let joined = internalBinaryWriteResult.join();
         num = num + 1;
@@ -1535,7 +1535,7 @@ class ClientLocation$Type extends MessageType10 {
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+        onWrite = _mod1196.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, locations, tag);
@@ -1548,7 +1548,7 @@ let obj6 = { no: 1, name: "locations", kind: "message", repeat: 1, T };
 const items8 = [obj6];
 const obj7 = { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_CLIENT" };
 const overrideType6 = new Override$Type("discord_protos.discord_experimentation.v1.ClientLocation", items8, obj7, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
-const MessageType11 = _mod1197.MessageType;
+const MessageType11 = _mod1196.MessageType;
 class ClientLocation_Place$Type extends MessageType11 {
   constructor() {
     const items = [{ no: 1, name: "city", kind: "scalar", T: 9 }, { no: 2, name: "subdivision", kind: "scalar", T: 9 }, { no: 3, name: "country", kind: "scalar", T: 9 }];
@@ -1559,9 +1559,9 @@ class ClientLocation_Place$Type extends MessageType11 {
     obj = { city: "", subdivision: "", country: "" };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1197;
+      const tmpResult = _mod1196;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -1602,7 +1602,7 @@ class ClientLocation_Place$Type extends MessageType11 {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1197.UnknownFieldHandler.onRead;
+                onRead = _mod1196.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -1614,21 +1614,21 @@ class ClientLocation_Place$Type extends MessageType11 {
   }
   internalBinaryWrite(city, tag, writeUnknownFields) {
     if ("" !== city.city) {
-      const tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
+      const tagResult = tag.tag(1, _mod1196.WireType.LengthDelimited);
       tagResult.string(city.city);
     }
     if ("" !== city.subdivision) {
-      const tagResult1 = tag.tag(2, _mod1197.WireType.LengthDelimited);
+      const tagResult1 = tag.tag(2, _mod1196.WireType.LengthDelimited);
       tagResult1.string(city.subdivision);
     }
     if ("" !== city.country) {
-      const tagResult2 = tag.tag(3, _mod1197.WireType.LengthDelimited);
+      const tagResult2 = tag.tag(3, _mod1196.WireType.LengthDelimited);
       tagResult2.string(city.country);
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+        onWrite = _mod1196.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, city, tag);
@@ -1639,7 +1639,7 @@ class ClientLocation_Place$Type extends MessageType11 {
 const prototype11 = ClientLocation_Place$Type.prototype;
 const items9 = [{ no: 1, name: "city", kind: "scalar", T: 9 }, { no: 2, name: "subdivision", kind: "scalar", T: 9 }, { no: 3, name: "country", kind: "scalar", T: 9 }];
 const items81 = new items8("discord_protos.discord_experimentation.v1.ClientLocation.Place", items9, obj7, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2);
-const MessageType12 = _mod1197.MessageType;
+const MessageType12 = _mod1196.MessageType;
 class ClientLocation_ISORegion$Type extends MessageType12 {
   constructor() {
     const items = [{ no: 1, name: "iso_country", kind: "scalar", T: 9 }, { no: 2, name: "iso_subdivision", kind: "scalar", T: 9 }];
@@ -1650,9 +1650,9 @@ class ClientLocation_ISORegion$Type extends MessageType12 {
     obj = { isoCountry: "", isoSubdivision: "" };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1197;
+      const tmpResult = _mod1196;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -1691,7 +1691,7 @@ class ClientLocation_ISORegion$Type extends MessageType12 {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1197.UnknownFieldHandler.onRead;
+                onRead = _mod1196.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -1703,17 +1703,17 @@ class ClientLocation_ISORegion$Type extends MessageType12 {
   }
   internalBinaryWrite(isoCountry, tag, writeUnknownFields) {
     if ("" !== isoCountry.isoCountry) {
-      const tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
+      const tagResult = tag.tag(1, _mod1196.WireType.LengthDelimited);
       tagResult.string(isoCountry.isoCountry);
     }
     if ("" !== isoCountry.isoSubdivision) {
-      const tagResult1 = tag.tag(2, _mod1197.WireType.LengthDelimited);
+      const tagResult1 = tag.tag(2, _mod1196.WireType.LengthDelimited);
       tagResult1.string(isoCountry.isoSubdivision);
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+        onWrite = _mod1196.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, isoCountry, tag);
@@ -1724,7 +1724,7 @@ class ClientLocation_ISORegion$Type extends MessageType12 {
 const prototype12 = ClientLocation_ISORegion$Type.prototype;
 const items10 = [{ no: 1, name: "iso_country", kind: "scalar", T: 9 }, { no: 2, name: "iso_subdivision", kind: "scalar", T: 9 }];
 const items82 = new items8("discord_protos.discord_experimentation.v1.ClientLocation.ISORegion", items10, obj7, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2);
-const MessageType13 = _mod1197.MessageType;
+const MessageType13 = _mod1196.MessageType;
 class ClientLocation_Location$Type extends MessageType13 {
   constructor() {
     const items = [, , ];
@@ -1739,9 +1739,9 @@ class ClientLocation_Location$Type extends MessageType13 {
     obj = { location: { oneofKind: "r" } };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1197;
+      const tmpResult = _mod1196;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -1785,7 +1785,7 @@ class ClientLocation_Location$Type extends MessageType13 {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1197.UnknownFieldHandler.onRead;
+                onRead = _mod1196.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj2, tmp5, tmp6, skipResult);
             }
@@ -1799,25 +1799,25 @@ class ClientLocation_Location$Type extends MessageType13 {
     if ("isoRegion" === location.location.oneofKind) {
       internalBinaryWrite = items82.internalBinaryWrite;
       const isoRegion = location.location.isoRegion;
-      const tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
+      const tagResult = tag.tag(1, _mod1196.WireType.LengthDelimited);
       const internalBinaryWriteResult = internalBinaryWrite(isoRegion, tagResult.fork(), writeUnknownFields);
       const joined = internalBinaryWriteResult.join();
     }
     if ("isEu" === location.location.oneofKind) {
-      const tagResult1 = tag.tag(2, _mod1197.WireType.Varint);
+      const tagResult1 = tag.tag(2, _mod1196.WireType.Varint);
       tagResult1.bool(location.location.isEu);
     }
     if ("place" === location.location.oneofKind) {
       internalBinaryWrite2 = items81.internalBinaryWrite;
       const place = location.location.place;
-      const tagResult2 = tag.tag(3, _mod1197.WireType.LengthDelimited);
+      const tagResult2 = tag.tag(3, _mod1196.WireType.LengthDelimited);
       const internalBinaryWrite2Result = internalBinaryWrite2(place, tagResult2.fork(), writeUnknownFields);
       const joined1 = internalBinaryWrite2Result.join();
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+        onWrite = _mod1196.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, location, tag);
@@ -1832,7 +1832,7 @@ items11[0] = obj8;
 items11[1] = { no: 2, name: "is_eu", kind: "scalar", oneof: "location", T: 8 };
 items11[2] = { no: 3, name: "place", kind: "message", oneof: "location", T: T6 };
 const items83 = new items8("discord_protos.discord_experimentation.v1.ClientLocation.Location", items11, obj7, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2);
-const MessageType14 = _mod1197.MessageType;
+const MessageType14 = _mod1196.MessageType;
 class UserLocation$Type extends MessageType14 {
   constructor() {
     const items = [, ];
@@ -1846,9 +1846,9 @@ class UserLocation$Type extends MessageType14 {
     obj = { locations: [], preferClientIp: false };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1197;
+      const tmpResult = _mod1196;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -1888,7 +1888,7 @@ class UserLocation$Type extends MessageType14 {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1197.UnknownFieldHandler.onRead;
+                onRead = _mod1196.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -1905,7 +1905,7 @@ class UserLocation$Type extends MessageType14 {
       do {
         internalBinaryWrite = items83.internalBinaryWrite;
         let tmp2 = locations.locations[num];
-        let tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
+        let tagResult = tag.tag(1, _mod1196.WireType.LengthDelimited);
         let internalBinaryWriteResult = internalBinaryWrite(tmp2, tagResult.fork(), writeUnknownFields);
         let joined = internalBinaryWriteResult.join();
         num = num + 1;
@@ -1913,13 +1913,13 @@ class UserLocation$Type extends MessageType14 {
       } while (num < length);
     }
     if (false !== locations.preferClientIp) {
-      const tagResult1 = tag.tag(2, _mod1197.WireType.Varint);
+      const tagResult1 = tag.tag(2, _mod1196.WireType.Varint);
       tagResult1.bool(locations.preferClientIp);
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+        onWrite = _mod1196.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, locations, tag);
@@ -1933,7 +1933,7 @@ const obj9 = { no: 1, name: "locations", kind: "message", repeat: 1, T: T7 };
 items12[0] = obj9;
 items12[1] = { no: 2, name: "prefer_client_ip", kind: "scalar", T: 8 };
 const clientLocation_LocationType = new ClientLocation_Location$Type("discord_protos.discord_experimentation.v1.UserLocation", items12, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_USER" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
-const MessageType15 = _mod1197.MessageType;
+const MessageType15 = _mod1196.MessageType;
 class UserStoreCountry$Type extends MessageType15 {
   constructor() {
     const items = [{ no: 1, name: "iso_countries", kind: "scalar", repeat: 2, T: 9 }];
@@ -1944,9 +1944,9 @@ class UserStoreCountry$Type extends MessageType15 {
     obj = { isoCountries: [] };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1197;
+      const tmpResult = _mod1196;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -1984,7 +1984,7 @@ class UserStoreCountry$Type extends MessageType15 {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1197.UnknownFieldHandler.onRead;
+                onRead = _mod1196.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -1999,7 +1999,7 @@ class UserStoreCountry$Type extends MessageType15 {
     let num = 0;
     if (0 < isoCountries.isoCountries.length) {
       do {
-        let tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
+        let tagResult = tag.tag(1, _mod1196.WireType.LengthDelimited);
         let stringResult = tagResult.string(isoCountries.isoCountries[num]);
         num = num + 1;
         length = isoCountries.isoCountries.length;
@@ -2008,7 +2008,7 @@ class UserStoreCountry$Type extends MessageType15 {
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+        onWrite = _mod1196.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, isoCountries, tag);
@@ -2019,7 +2019,7 @@ class UserStoreCountry$Type extends MessageType15 {
 const prototype15 = UserStoreCountry$Type.prototype;
 const items13 = [{ no: 1, name: "iso_countries", kind: "scalar", repeat: 2, T: 9 }];
 const clientLocation_LocationType1 = new ClientLocation_Location$Type("discord_protos.discord_experimentation.v1.UserStoreCountry", items13, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_USER" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
-const MessageType16 = _mod1197.MessageType;
+const MessageType16 = _mod1196.MessageType;
 class ClientIP$Type extends MessageType16 {
   constructor() {
     const items = [{ no: 1, name: "blocks", kind: "scalar", repeat: 2, T: 9 }];
@@ -2030,9 +2030,9 @@ class ClientIP$Type extends MessageType16 {
     obj = { blocks: [] };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1197;
+      const tmpResult = _mod1196;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -2070,7 +2070,7 @@ class ClientIP$Type extends MessageType16 {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1197.UnknownFieldHandler.onRead;
+                onRead = _mod1196.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -2085,7 +2085,7 @@ class ClientIP$Type extends MessageType16 {
     let num = 0;
     if (0 < blocks.blocks.length) {
       do {
-        let tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
+        let tagResult = tag.tag(1, _mod1196.WireType.LengthDelimited);
         let stringResult = tagResult.string(blocks.blocks[num]);
         num = num + 1;
         length = blocks.blocks.length;
@@ -2094,7 +2094,7 @@ class ClientIP$Type extends MessageType16 {
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+        onWrite = _mod1196.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, blocks, tag);
@@ -2105,7 +2105,7 @@ class ClientIP$Type extends MessageType16 {
 const prototype16 = ClientIP$Type.prototype;
 const items14 = [{ no: 1, name: "blocks", kind: "scalar", repeat: 2, T: 9 }];
 const clientLocation_LocationType2 = new ClientLocation_Location$Type("discord_protos.discord_experimentation.v1.ClientIP", items14, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_CLIENT" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
-const MessageType17 = _mod1197.MessageType;
+const MessageType17 = _mod1196.MessageType;
 class UserIP$Type extends MessageType17 {
   constructor() {
     const items = [{ no: 1, name: "blocks", kind: "scalar", repeat: 2, T: 9 }, { no: 2, name: "prefer_client_ip", kind: "scalar", T: 8 }];
@@ -2116,9 +2116,9 @@ class UserIP$Type extends MessageType17 {
     obj = { blocks: [], preferClientIp: false };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1197;
+      const tmpResult = _mod1196;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -2158,7 +2158,7 @@ class UserIP$Type extends MessageType17 {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1197.UnknownFieldHandler.onRead;
+                onRead = _mod1196.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -2173,20 +2173,20 @@ class UserIP$Type extends MessageType17 {
     let num = 0;
     if (0 < blocks.blocks.length) {
       do {
-        let tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
+        let tagResult = tag.tag(1, _mod1196.WireType.LengthDelimited);
         let stringResult = tagResult.string(blocks.blocks[num]);
         num = num + 1;
         length = blocks.blocks.length;
       } while (num < length);
     }
     if (false !== blocks.preferClientIp) {
-      const tagResult1 = tag.tag(2, _mod1197.WireType.Varint);
+      const tagResult1 = tag.tag(2, _mod1196.WireType.Varint);
       tagResult1.bool(blocks.preferClientIp);
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+        onWrite = _mod1196.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, blocks, tag);
@@ -2197,7 +2197,7 @@ class UserIP$Type extends MessageType17 {
 const prototype17 = UserIP$Type.prototype;
 const items15 = [{ no: 1, name: "blocks", kind: "scalar", repeat: 2, T: 9 }, { no: 2, name: "prefer_client_ip", kind: "scalar", T: 8 }];
 const clientLocation_LocationType3 = new ClientLocation_Location$Type("discord_protos.discord_experimentation.v1.UserIP", items15, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_USER" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
-const MessageType18 = _mod1197.MessageType;
+const MessageType18 = _mod1196.MessageType;
 class ClientOperatingSystem$Type extends MessageType18 {
   constructor() {
     const items = [, , , , , , ];
@@ -2216,9 +2216,9 @@ class ClientOperatingSystem$Type extends MessageType18 {
     obj = {};
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1197;
+      const tmpResult = _mod1196;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -2267,7 +2267,7 @@ class ClientOperatingSystem$Type extends MessageType18 {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1197.UnknownFieldHandler.onRead;
+                onRead = _mod1196.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -2281,56 +2281,56 @@ class ClientOperatingSystem$Type extends MessageType18 {
     if (iosVersion.iosVersion) {
       internalBinaryWrite = items161.internalBinaryWrite;
       iosVersion = iosVersion.iosVersion;
-      const tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
+      const tagResult = tag.tag(1, _mod1196.WireType.LengthDelimited);
       const internalBinaryWriteResult = internalBinaryWrite(iosVersion, tagResult.fork(), writeUnknownFields);
       const joined = internalBinaryWriteResult.join();
     }
     if (iosVersion.androidVersion) {
       internalBinaryWrite2 = items161.internalBinaryWrite;
       const androidVersion = iosVersion.androidVersion;
-      const tagResult1 = tag.tag(2, _mod1197.WireType.LengthDelimited);
+      const tagResult1 = tag.tag(2, _mod1196.WireType.LengthDelimited);
       const internalBinaryWrite2Result = internalBinaryWrite2(androidVersion, tagResult1.fork(), writeUnknownFields);
       const joined1 = internalBinaryWrite2Result.join();
     }
     if (iosVersion.macosVersion) {
       internalBinaryWrite3 = items161.internalBinaryWrite;
       const macosVersion = iosVersion.macosVersion;
-      const tagResult2 = tag.tag(3, _mod1197.WireType.LengthDelimited);
+      const tagResult2 = tag.tag(3, _mod1196.WireType.LengthDelimited);
       const internalBinaryWrite3Result = internalBinaryWrite3(macosVersion, tagResult2.fork(), writeUnknownFields);
       const joined2 = internalBinaryWrite3Result.join();
     }
     if (iosVersion.windowsVersion) {
       internalBinaryWrite4 = items161.internalBinaryWrite;
       const windowsVersion = iosVersion.windowsVersion;
-      const tagResult3 = tag.tag(4, _mod1197.WireType.LengthDelimited);
+      const tagResult3 = tag.tag(4, _mod1196.WireType.LengthDelimited);
       const internalBinaryWrite4Result = internalBinaryWrite4(windowsVersion, tagResult3.fork(), writeUnknownFields);
       const joined3 = internalBinaryWrite4Result.join();
     }
     if (iosVersion.playstationVersion) {
       internalBinaryWrite5 = items161.internalBinaryWrite;
       const playstationVersion = iosVersion.playstationVersion;
-      const tagResult4 = tag.tag(5, _mod1197.WireType.LengthDelimited);
+      const tagResult4 = tag.tag(5, _mod1196.WireType.LengthDelimited);
       const internalBinaryWrite5Result = internalBinaryWrite5(playstationVersion, tagResult4.fork(), writeUnknownFields);
       const joined4 = internalBinaryWrite5Result.join();
     }
     if (iosVersion.xboxVersion) {
       internalBinaryWrite6 = items161.internalBinaryWrite;
       const xboxVersion = iosVersion.xboxVersion;
-      const tagResult5 = tag.tag(6, _mod1197.WireType.LengthDelimited);
+      const tagResult5 = tag.tag(6, _mod1196.WireType.LengthDelimited);
       const internalBinaryWrite6Result = internalBinaryWrite6(xboxVersion, tagResult5.fork(), writeUnknownFields);
       const joined5 = internalBinaryWrite6Result.join();
     }
     if (iosVersion.linuxVersion) {
       internalBinaryWrite7 = items161.internalBinaryWrite;
       const linuxVersion = iosVersion.linuxVersion;
-      const tagResult6 = tag.tag(7, _mod1197.WireType.LengthDelimited);
+      const tagResult6 = tag.tag(7, _mod1196.WireType.LengthDelimited);
       const internalBinaryWrite7Result = internalBinaryWrite7(linuxVersion, tagResult6.fork(), writeUnknownFields);
       const joined6 = internalBinaryWrite7Result.join();
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+        onWrite = _mod1196.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, iosVersion, tag);
@@ -2350,7 +2350,7 @@ items16[5] = { no: 6, name: "xbox_version", kind: "message", T: T13 };
 items16[6] = { no: 7, name: "linux_version", kind: "message", T: T14 };
 const obj11 = { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_CLIENT" };
 const clientLocation_LocationType4 = new ClientLocation_Location$Type("discord_protos.discord_experimentation.v1.ClientOperatingSystem", items16, obj11, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
-const MessageType19 = _mod1197.MessageType;
+const MessageType19 = _mod1196.MessageType;
 class SDKVersion$Type extends MessageType19 {
   constructor() {
     const items = [, , , ];
@@ -2366,9 +2366,9 @@ class SDKVersion$Type extends MessageType19 {
     obj = { ranges: [], workAroundPyotoBug: false, allowSdkFallback: false };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1197;
+      const tmpResult = _mod1196;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -2412,7 +2412,7 @@ class SDKVersion$Type extends MessageType19 {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1197.UnknownFieldHandler.onRead;
+                onRead = _mod1196.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -2429,7 +2429,7 @@ class SDKVersion$Type extends MessageType19 {
       do {
         internalBinaryWrite = items165.internalBinaryWrite;
         let tmp2 = ranges.ranges[num];
-        let tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
+        let tagResult = tag.tag(1, _mod1196.WireType.LengthDelimited);
         let internalBinaryWriteResult = internalBinaryWrite(tmp2, tagResult.fork(), writeUnknownFields);
         let joined = internalBinaryWriteResult.join();
         num = num + 1;
@@ -2437,24 +2437,24 @@ class SDKVersion$Type extends MessageType19 {
       } while (num < length);
     }
     if (false !== ranges.workAroundPyotoBug) {
-      const tagResult1 = tag.tag(2, _mod1197.WireType.Varint);
+      const tagResult1 = tag.tag(2, _mod1196.WireType.Varint);
       tagResult1.bool(ranges.workAroundPyotoBug);
     }
     if (ranges.osVersion) {
       internalBinaryWrite2 = items162.internalBinaryWrite;
       const osVersion = ranges.osVersion;
-      const tagResult2 = tag.tag(3, _mod1197.WireType.LengthDelimited);
+      const tagResult2 = tag.tag(3, _mod1196.WireType.LengthDelimited);
       const internalBinaryWrite2Result = internalBinaryWrite2(osVersion, tagResult2.fork(), writeUnknownFields);
       const joined1 = internalBinaryWrite2Result.join();
     }
     if (false !== ranges.allowSdkFallback) {
-      const tagResult3 = tag.tag(4, _mod1197.WireType.Varint);
+      const tagResult3 = tag.tag(4, _mod1196.WireType.Varint);
       tagResult3.bool(ranges.allowSdkFallback);
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+        onWrite = _mod1196.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, ranges, tag);
@@ -2470,7 +2470,7 @@ items17[1] = { no: 2, name: "work_around_pyoto_bug", kind: "scalar", T: 8 };
 items17[2] = { no: 3, name: "os_version", kind: "message", T: T16 };
 items17[3] = { no: 4, name: "allow_sdk_fallback", kind: "scalar", T: 8 };
 const items161 = new items16("discord_protos.discord_experimentation.v1.SDKVersion", items17, obj11, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2);
-const MessageType20 = _mod1197.MessageType;
+const MessageType20 = _mod1196.MessageType;
 class OSVersion$Type extends MessageType20 {
   constructor() {
     const items = [];
@@ -2483,9 +2483,9 @@ class OSVersion$Type extends MessageType20 {
     obj = { ranges: [] };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1197;
+      const tmpResult = _mod1196;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -2523,7 +2523,7 @@ class OSVersion$Type extends MessageType20 {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1197.UnknownFieldHandler.onRead;
+                onRead = _mod1196.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -2540,7 +2540,7 @@ class OSVersion$Type extends MessageType20 {
       do {
         internalBinaryWrite = items163.internalBinaryWrite;
         let tmp2 = ranges.ranges[num];
-        let tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
+        let tagResult = tag.tag(1, _mod1196.WireType.LengthDelimited);
         let internalBinaryWriteResult = internalBinaryWrite(tmp2, tagResult.fork(), writeUnknownFields);
         let joined = internalBinaryWriteResult.join();
         num = num + 1;
@@ -2550,7 +2550,7 @@ class OSVersion$Type extends MessageType20 {
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+        onWrite = _mod1196.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, ranges, tag);
@@ -2563,7 +2563,7 @@ const items18 = [];
 const obj13 = { no: 1, name: "ranges", kind: "message", repeat: 1, T: T17 };
 items18[0] = obj13;
 const items162 = new items16("discord_protos.discord_experimentation.v1.OSVersion", items18, obj11, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2);
-const MessageType21 = _mod1197.MessageType;
+const MessageType21 = _mod1196.MessageType;
 class OSVersionRange$Type extends MessageType21 {
   constructor() {
     const items = [, ];
@@ -2577,9 +2577,9 @@ class OSVersionRange$Type extends MessageType21 {
     obj = {};
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1197;
+      const tmpResult = _mod1196;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -2618,7 +2618,7 @@ class OSVersionRange$Type extends MessageType21 {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1197.UnknownFieldHandler.onRead;
+                onRead = _mod1196.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -2632,21 +2632,21 @@ class OSVersionRange$Type extends MessageType21 {
     if (lowerBound.lowerBound) {
       internalBinaryWrite = items164.internalBinaryWrite;
       lowerBound = lowerBound.lowerBound;
-      const tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
+      const tagResult = tag.tag(1, _mod1196.WireType.LengthDelimited);
       const internalBinaryWriteResult = internalBinaryWrite(lowerBound, tagResult.fork(), writeUnknownFields);
       const joined = internalBinaryWriteResult.join();
     }
     if (lowerBound.upperBound) {
       internalBinaryWrite2 = items164.internalBinaryWrite;
       const upperBound = lowerBound.upperBound;
-      const tagResult1 = tag.tag(2, _mod1197.WireType.LengthDelimited);
+      const tagResult1 = tag.tag(2, _mod1196.WireType.LengthDelimited);
       const internalBinaryWrite2Result = internalBinaryWrite2(upperBound, tagResult1.fork(), writeUnknownFields);
       const joined1 = internalBinaryWrite2Result.join();
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+        onWrite = _mod1196.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, lowerBound, tag);
@@ -2660,7 +2660,7 @@ const obj14 = { no: 1, name: "lower_bound", kind: "message", T: T18 };
 items19[0] = obj14;
 items19[1] = { no: 2, name: "upper_bound", kind: "message", T: T19 };
 const items163 = new items16("discord_protos.discord_experimentation.v1.OSVersionRange", items19, obj11, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2);
-const MessageType22 = _mod1197.MessageType;
+const MessageType22 = _mod1196.MessageType;
 class OSVersionRangeBound$Type extends MessageType22 {
   constructor() {
     const items = [{ no: 1, name: "version", kind: "scalar", T: 9 }, { no: 2, name: "inclusive", kind: "scalar", T: 8 }];
@@ -2671,9 +2671,9 @@ class OSVersionRangeBound$Type extends MessageType22 {
     obj = { version: "", inclusive: false };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1197;
+      const tmpResult = _mod1196;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -2712,7 +2712,7 @@ class OSVersionRangeBound$Type extends MessageType22 {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1197.UnknownFieldHandler.onRead;
+                onRead = _mod1196.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -2724,17 +2724,17 @@ class OSVersionRangeBound$Type extends MessageType22 {
   }
   internalBinaryWrite(version, tag, writeUnknownFields) {
     if ("" !== version.version) {
-      const tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
+      const tagResult = tag.tag(1, _mod1196.WireType.LengthDelimited);
       tagResult.string(version.version);
     }
     if (false !== version.inclusive) {
-      const tagResult1 = tag.tag(2, _mod1197.WireType.Varint);
+      const tagResult1 = tag.tag(2, _mod1196.WireType.Varint);
       tagResult1.bool(version.inclusive);
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+        onWrite = _mod1196.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, version, tag);
@@ -2745,7 +2745,7 @@ class OSVersionRangeBound$Type extends MessageType22 {
 const prototype22 = OSVersionRangeBound$Type.prototype;
 const items20 = [{ no: 1, name: "version", kind: "scalar", T: 9 }, { no: 2, name: "inclusive", kind: "scalar", T: 8 }];
 const items164 = new items16("discord_protos.discord_experimentation.v1.OSVersionRangeBound", items20, obj11, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2);
-const MessageType23 = _mod1197.MessageType;
+const MessageType23 = _mod1196.MessageType;
 class SDKVersionRange$Type extends MessageType23 {
   constructor() {
     const items = [, ];
@@ -2759,9 +2759,9 @@ class SDKVersionRange$Type extends MessageType23 {
     obj = {};
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1197;
+      const tmpResult = _mod1196;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -2800,7 +2800,7 @@ class SDKVersionRange$Type extends MessageType23 {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1197.UnknownFieldHandler.onRead;
+                onRead = _mod1196.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -2814,21 +2814,21 @@ class SDKVersionRange$Type extends MessageType23 {
     if (lowerBound.lowerBound) {
       internalBinaryWrite = items166.internalBinaryWrite;
       lowerBound = lowerBound.lowerBound;
-      const tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
+      const tagResult = tag.tag(1, _mod1196.WireType.LengthDelimited);
       const internalBinaryWriteResult = internalBinaryWrite(lowerBound, tagResult.fork(), writeUnknownFields);
       const joined = internalBinaryWriteResult.join();
     }
     if (lowerBound.upperBound) {
       internalBinaryWrite2 = items166.internalBinaryWrite;
       const upperBound = lowerBound.upperBound;
-      const tagResult1 = tag.tag(2, _mod1197.WireType.LengthDelimited);
+      const tagResult1 = tag.tag(2, _mod1196.WireType.LengthDelimited);
       const internalBinaryWrite2Result = internalBinaryWrite2(upperBound, tagResult1.fork(), writeUnknownFields);
       const joined1 = internalBinaryWrite2Result.join();
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+        onWrite = _mod1196.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, lowerBound, tag);
@@ -2842,7 +2842,7 @@ const obj15 = { no: 1, name: "lower_bound", kind: "message", T: T20 };
 items21[0] = obj15;
 items21[1] = { no: 2, name: "upper_bound", kind: "message", T: T21 };
 const items165 = new items16("discord_protos.discord_experimentation.v1.SDKVersionRange", items21, obj11, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2);
-const MessageType24 = _mod1197.MessageType;
+const MessageType24 = _mod1196.MessageType;
 class SDKVersionRangeBound$Type extends MessageType24 {
   constructor() {
     const items = [, ];
@@ -2856,9 +2856,9 @@ class SDKVersionRangeBound$Type extends MessageType24 {
     obj = { inclusive: false };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1197;
+      const tmpResult = _mod1196;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -2897,7 +2897,7 @@ class SDKVersionRangeBound$Type extends MessageType24 {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1197.UnknownFieldHandler.onRead;
+                onRead = _mod1196.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -2911,18 +2911,18 @@ class SDKVersionRangeBound$Type extends MessageType24 {
     if (version.version) {
       internalBinaryWrite = items167.internalBinaryWrite;
       version = version.version;
-      const tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
+      const tagResult = tag.tag(1, _mod1196.WireType.LengthDelimited);
       const internalBinaryWriteResult = internalBinaryWrite(version, tagResult.fork(), writeUnknownFields);
       const joined = internalBinaryWriteResult.join();
     }
     if (false !== version.inclusive) {
-      const tagResult1 = tag.tag(2, _mod1197.WireType.Varint);
+      const tagResult1 = tag.tag(2, _mod1196.WireType.Varint);
       tagResult1.bool(version.inclusive);
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+        onWrite = _mod1196.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, version, tag);
@@ -2936,7 +2936,7 @@ const obj16 = { no: 1, name: "version", kind: "message", T: T22 };
 items22[0] = obj16;
 items22[1] = { no: 2, name: "inclusive", kind: "scalar", T: 8 };
 const items166 = new items16("discord_protos.discord_experimentation.v1.SDKVersionRangeBound", items22, obj11, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2);
-const MessageType25 = _mod1197.MessageType;
+const MessageType25 = _mod1196.MessageType;
 class SDKVersionSpecifier$Type extends MessageType25 {
   constructor() {
     const items = [{ no: 1, name: "version", kind: "scalar", T: 5 }];
@@ -2947,9 +2947,9 @@ class SDKVersionSpecifier$Type extends MessageType25 {
     obj = { version: 0 };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1197;
+      const tmpResult = _mod1196;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -2986,7 +2986,7 @@ class SDKVersionSpecifier$Type extends MessageType25 {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1197.UnknownFieldHandler.onRead;
+                onRead = _mod1196.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -2998,13 +2998,13 @@ class SDKVersionSpecifier$Type extends MessageType25 {
   }
   internalBinaryWrite(version, tag, writeUnknownFields) {
     if (0 !== version.version) {
-      const tagResult = tag.tag(1, _mod1197.WireType.Varint);
+      const tagResult = tag.tag(1, _mod1196.WireType.Varint);
       tagResult.int32(version.version);
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+        onWrite = _mod1196.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, version, tag);
@@ -3015,7 +3015,7 @@ class SDKVersionSpecifier$Type extends MessageType25 {
 const prototype25 = SDKVersionSpecifier$Type.prototype;
 const items23 = [{ no: 1, name: "version", kind: "scalar", T: 5 }];
 const items167 = new items16("discord_protos.discord_experimentation.v1.SDKVersionSpecifier", items23, obj11, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2);
-const MessageType26 = _mod1197.MessageType;
+const MessageType26 = _mod1196.MessageType;
 class ClientPlatform$Type extends MessageType26 {
   constructor() {
     const items = [, , , , , ];
@@ -3033,9 +3033,9 @@ class ClientPlatform$Type extends MessageType26 {
     obj = { allowNonNativeWeb: false };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1197;
+      const tmpResult = _mod1196;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -3082,7 +3082,7 @@ class ClientPlatform$Type extends MessageType26 {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1197.UnknownFieldHandler.onRead;
+                onRead = _mod1196.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -3096,46 +3096,46 @@ class ClientPlatform$Type extends MessageType26 {
     if (iosVersion.iosVersion) {
       internalBinaryWrite = items241.internalBinaryWrite;
       iosVersion = iosVersion.iosVersion;
-      const tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
+      const tagResult = tag.tag(1, _mod1196.WireType.LengthDelimited);
       const internalBinaryWriteResult = internalBinaryWrite(iosVersion, tagResult.fork(), writeUnknownFields);
       const joined = internalBinaryWriteResult.join();
     }
     if (iosVersion.androidVersion) {
       internalBinaryWrite2 = items241.internalBinaryWrite;
       const androidVersion = iosVersion.androidVersion;
-      const tagResult1 = tag.tag(2, _mod1197.WireType.LengthDelimited);
+      const tagResult1 = tag.tag(2, _mod1196.WireType.LengthDelimited);
       const internalBinaryWrite2Result = internalBinaryWrite2(androidVersion, tagResult1.fork(), writeUnknownFields);
       const joined1 = internalBinaryWrite2Result.join();
     }
     if (iosVersion.webVersion) {
       internalBinaryWrite3 = items241.internalBinaryWrite;
       const webVersion = iosVersion.webVersion;
-      const tagResult2 = tag.tag(3, _mod1197.WireType.LengthDelimited);
+      const tagResult2 = tag.tag(3, _mod1196.WireType.LengthDelimited);
       const internalBinaryWrite3Result = internalBinaryWrite3(webVersion, tagResult2.fork(), writeUnknownFields);
       const joined2 = internalBinaryWrite3Result.join();
     }
     if (iosVersion.nativeVersion) {
       internalBinaryWrite4 = items241.internalBinaryWrite;
       const nativeVersion = iosVersion.nativeVersion;
-      const tagResult3 = tag.tag(4, _mod1197.WireType.LengthDelimited);
+      const tagResult3 = tag.tag(4, _mod1196.WireType.LengthDelimited);
       const internalBinaryWrite4Result = internalBinaryWrite4(nativeVersion, tagResult3.fork(), writeUnknownFields);
       const joined3 = internalBinaryWrite4Result.join();
     }
     if (false !== iosVersion.allowNonNativeWeb) {
-      const tagResult4 = tag.tag(6, _mod1197.WireType.Varint);
+      const tagResult4 = tag.tag(6, _mod1196.WireType.Varint);
       tagResult4.bool(iosVersion.allowNonNativeWeb);
     }
     if (iosVersion.clientRequiredChanges) {
       internalBinaryWrite5 = items245.internalBinaryWrite;
       const clientRequiredChanges = iosVersion.clientRequiredChanges;
-      const tagResult5 = tag.tag(5, _mod1197.WireType.LengthDelimited);
+      const tagResult5 = tag.tag(5, _mod1196.WireType.LengthDelimited);
       const internalBinaryWrite5Result = internalBinaryWrite5(clientRequiredChanges, tagResult5.fork(), writeUnknownFields);
       const joined4 = internalBinaryWrite5Result.join();
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+        onWrite = _mod1196.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, iosVersion, tag);
@@ -3154,7 +3154,7 @@ items24[4] = { no: 6, name: "allow_non_native_web", kind: "scalar", T: 8 };
 items24[5] = { no: 5, name: "client_required_changes", kind: "message", T: T27 };
 const obj18 = { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_CLIENT" };
 const sDKVersionSpecifierType = new SDKVersionSpecifier$Type("discord_protos.discord_experimentation.v1.ClientPlatform", items24, obj18, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
-const MessageType27 = _mod1197.MessageType;
+const MessageType27 = _mod1196.MessageType;
 class PlatformVersion$Type extends MessageType27 {
   constructor() {
     const items = [, ];
@@ -3168,9 +3168,9 @@ class PlatformVersion$Type extends MessageType27 {
     obj = { ranges: [], workAroundPyotoBug: false };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1197;
+      const tmpResult = _mod1196;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -3210,7 +3210,7 @@ class PlatformVersion$Type extends MessageType27 {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1197.UnknownFieldHandler.onRead;
+                onRead = _mod1196.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -3227,7 +3227,7 @@ class PlatformVersion$Type extends MessageType27 {
       do {
         internalBinaryWrite = items242.internalBinaryWrite;
         let tmp2 = ranges.ranges[num];
-        let tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
+        let tagResult = tag.tag(1, _mod1196.WireType.LengthDelimited);
         let internalBinaryWriteResult = internalBinaryWrite(tmp2, tagResult.fork(), writeUnknownFields);
         let joined = internalBinaryWriteResult.join();
         num = num + 1;
@@ -3235,13 +3235,13 @@ class PlatformVersion$Type extends MessageType27 {
       } while (num < length);
     }
     if (false !== ranges.workAroundPyotoBug) {
-      const tagResult1 = tag.tag(2, _mod1197.WireType.Varint);
+      const tagResult1 = tag.tag(2, _mod1196.WireType.Varint);
       tagResult1.bool(ranges.workAroundPyotoBug);
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+        onWrite = _mod1196.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, ranges, tag);
@@ -3255,7 +3255,7 @@ const obj19 = { no: 1, name: "ranges", kind: "message", repeat: 1, T: T28 };
 items25[0] = obj19;
 items25[1] = { no: 2, name: "work_around_pyoto_bug", kind: "scalar", T: 8 };
 const items241 = new items24("discord_protos.discord_experimentation.v1.PlatformVersion", items25, obj18, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2);
-const MessageType28 = _mod1197.MessageType;
+const MessageType28 = _mod1196.MessageType;
 class PlatformVersionRange$Type extends MessageType28 {
   constructor() {
     const items = [, ];
@@ -3269,9 +3269,9 @@ class PlatformVersionRange$Type extends MessageType28 {
     obj = {};
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1197;
+      const tmpResult = _mod1196;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -3310,7 +3310,7 @@ class PlatformVersionRange$Type extends MessageType28 {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1197.UnknownFieldHandler.onRead;
+                onRead = _mod1196.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -3324,21 +3324,21 @@ class PlatformVersionRange$Type extends MessageType28 {
     if (lowerBound.lowerBound) {
       internalBinaryWrite = items243.internalBinaryWrite;
       lowerBound = lowerBound.lowerBound;
-      const tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
+      const tagResult = tag.tag(1, _mod1196.WireType.LengthDelimited);
       const internalBinaryWriteResult = internalBinaryWrite(lowerBound, tagResult.fork(), writeUnknownFields);
       const joined = internalBinaryWriteResult.join();
     }
     if (lowerBound.upperBound) {
       internalBinaryWrite2 = items243.internalBinaryWrite;
       const upperBound = lowerBound.upperBound;
-      const tagResult1 = tag.tag(2, _mod1197.WireType.LengthDelimited);
+      const tagResult1 = tag.tag(2, _mod1196.WireType.LengthDelimited);
       const internalBinaryWrite2Result = internalBinaryWrite2(upperBound, tagResult1.fork(), writeUnknownFields);
       const joined1 = internalBinaryWrite2Result.join();
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+        onWrite = _mod1196.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, lowerBound, tag);
@@ -3352,7 +3352,7 @@ const obj20 = { no: 1, name: "lower_bound", kind: "message", T: T29 };
 items26[0] = obj20;
 items26[1] = { no: 2, name: "upper_bound", kind: "message", T: T30 };
 const items242 = new items24("discord_protos.discord_experimentation.v1.PlatformVersionRange", items26, obj18, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2);
-const MessageType29 = _mod1197.MessageType;
+const MessageType29 = _mod1196.MessageType;
 class PlatformVersionRangeBound$Type extends MessageType29 {
   constructor() {
     const items = [, ];
@@ -3366,9 +3366,9 @@ class PlatformVersionRangeBound$Type extends MessageType29 {
     obj = { inclusive: false };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1197;
+      const tmpResult = _mod1196;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -3407,7 +3407,7 @@ class PlatformVersionRangeBound$Type extends MessageType29 {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1197.UnknownFieldHandler.onRead;
+                onRead = _mod1196.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -3421,18 +3421,18 @@ class PlatformVersionRangeBound$Type extends MessageType29 {
     if (version.version) {
       internalBinaryWrite = items244.internalBinaryWrite;
       version = version.version;
-      const tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
+      const tagResult = tag.tag(1, _mod1196.WireType.LengthDelimited);
       const internalBinaryWriteResult = internalBinaryWrite(version, tagResult.fork(), writeUnknownFields);
       const joined = internalBinaryWriteResult.join();
     }
     if (false !== version.inclusive) {
-      const tagResult1 = tag.tag(2, _mod1197.WireType.Varint);
+      const tagResult1 = tag.tag(2, _mod1196.WireType.Varint);
       tagResult1.bool(version.inclusive);
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+        onWrite = _mod1196.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, version, tag);
@@ -3446,7 +3446,7 @@ const obj21 = { no: 1, name: "version", kind: "message", T: T31 };
 items27[0] = obj21;
 items27[1] = { no: 2, name: "inclusive", kind: "scalar", T: 8 };
 const items243 = new items24("discord_protos.discord_experimentation.v1.PlatformVersionRangeBound", items27, obj18, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2);
-const MessageType30 = _mod1197.MessageType;
+const MessageType30 = _mod1196.MessageType;
 class PlatformVersionSpecifier$Type extends MessageType30 {
   constructor() {
     const items = [{ no: 1, name: "major", kind: "scalar", T: 13 }, , ];
@@ -3465,9 +3465,9 @@ class PlatformVersionSpecifier$Type extends MessageType30 {
     obj = { major: 0 };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1197;
+      const tmpResult = _mod1196;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -3510,7 +3510,7 @@ class PlatformVersionSpecifier$Type extends MessageType30 {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1197.UnknownFieldHandler.onRead;
+                onRead = _mod1196.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -3522,14 +3522,14 @@ class PlatformVersionSpecifier$Type extends MessageType30 {
   }
   internalBinaryWrite(major, tag, writeUnknownFields) {
     if (0 !== major.major) {
-      const tagResult = tag.tag(1, _mod1197.WireType.Varint);
+      const tagResult = tag.tag(1, _mod1196.WireType.Varint);
       tagResult.uint32(major.major);
     }
     if (major.minor) {
       const UInt32Value = wrappers.UInt32Value;
       internalBinaryWrite = UInt32Value.internalBinaryWrite;
       const minor = major.minor;
-      const tagResult1 = tag.tag(2, _mod1197.WireType.LengthDelimited);
+      const tagResult1 = tag.tag(2, _mod1196.WireType.LengthDelimited);
       const internalBinaryWriteResult = internalBinaryWrite(minor, tagResult1.fork(), writeUnknownFields);
       const joined = internalBinaryWriteResult.join();
     }
@@ -3537,14 +3537,14 @@ class PlatformVersionSpecifier$Type extends MessageType30 {
       const UInt64Value = wrappers.UInt64Value;
       internalBinaryWrite2 = UInt64Value.internalBinaryWrite;
       const build = major.build;
-      const tagResult2 = tag.tag(3, _mod1197.WireType.LengthDelimited);
+      const tagResult2 = tag.tag(3, _mod1196.WireType.LengthDelimited);
       const internalBinaryWrite2Result = internalBinaryWrite2(build, tagResult2.fork(), writeUnknownFields);
       const joined1 = internalBinaryWrite2Result.join();
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+        onWrite = _mod1196.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, major, tag);
@@ -3566,7 +3566,7 @@ const items28 = [
   { no: 3, name: "build", kind: "message", T: T32 }
 ];
 const items244 = new items24("discord_protos.discord_experimentation.v1.PlatformVersionSpecifier", items28, obj18, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2);
-const MessageType31 = _mod1197.MessageType;
+const MessageType31 = _mod1196.MessageType;
 class ClientRequiredChanges$Type extends MessageType31 {
   constructor() {
     const items = [{ no: 1, name: "commit_hashes", kind: "scalar", repeat: 2, T: 9 }, { no: 2, name: "pr_numbers", kind: "scalar", repeat: 1, T: 5 }];
@@ -3577,9 +3577,9 @@ class ClientRequiredChanges$Type extends MessageType31 {
     obj = { commitHashes: [], prNumbers: [] };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1197;
+      const tmpResult = _mod1196;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -3601,7 +3601,7 @@ class ClientRequiredChanges$Type extends MessageType31 {
           let commitHashes = obj.commitHashes;
           let arr = commitHashes.push(pos.string());
         } else if (2 === tmp5) {
-          if (tmp6 === _mod1197.WireType.LengthDelimited) {
+          if (tmp6 === _mod1196.WireType.LengthDelimited) {
             let sum1 = pos.int32() + pos.pos;
             if (pos.pos < sum1) {
               do {
@@ -3631,7 +3631,7 @@ class ClientRequiredChanges$Type extends MessageType31 {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1197.UnknownFieldHandler.onRead;
+                onRead = _mod1196.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -3647,14 +3647,14 @@ class ClientRequiredChanges$Type extends MessageType31 {
     let num = 0;
     if (0 < commitHashes.commitHashes.length) {
       do {
-        let tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
+        let tagResult = tag.tag(1, _mod1196.WireType.LengthDelimited);
         let stringResult = tagResult.string(commitHashes.commitHashes[num]);
         num = num + 1;
         length = commitHashes.commitHashes.length;
       } while (num < length);
     }
     if (commitHashes.prNumbers.length) {
-      const tagResult1 = tag.tag(2, _mod1197.WireType.LengthDelimited);
+      const tagResult1 = tag.tag(2, _mod1196.WireType.LengthDelimited);
       tagResult1.fork();
       let num3 = 0;
       if (0 < commitHashes.prNumbers.length) {
@@ -3669,7 +3669,7 @@ class ClientRequiredChanges$Type extends MessageType31 {
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+        onWrite = _mod1196.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, commitHashes, tag);
@@ -3680,7 +3680,7 @@ class ClientRequiredChanges$Type extends MessageType31 {
 const prototype31 = ClientRequiredChanges$Type.prototype;
 const items29 = [{ no: 1, name: "commit_hashes", kind: "scalar", repeat: 2, T: 9 }, { no: 2, name: "pr_numbers", kind: "scalar", repeat: 1, T: 5 }];
 const items245 = new items24("discord_protos.discord_experimentation.v1.ClientRequiredChanges", items29, obj18, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2);
-const MessageType32 = _mod1197.MessageType;
+const MessageType32 = _mod1196.MessageType;
 class UserIsBot$Type extends MessageType32 {
   constructor() {
     const items = [{ no: 1, name: "is_bot", kind: "scalar", T: 8 }];
@@ -3691,9 +3691,9 @@ class UserIsBot$Type extends MessageType32 {
     obj = { isBot: false };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1197;
+      const tmpResult = _mod1196;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -3730,7 +3730,7 @@ class UserIsBot$Type extends MessageType32 {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1197.UnknownFieldHandler.onRead;
+                onRead = _mod1196.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -3742,13 +3742,13 @@ class UserIsBot$Type extends MessageType32 {
   }
   internalBinaryWrite(isBot, tag, writeUnknownFields) {
     if (false !== isBot.isBot) {
-      const tagResult = tag.tag(1, _mod1197.WireType.Varint);
+      const tagResult = tag.tag(1, _mod1196.WireType.Varint);
       tagResult.bool(isBot.isBot);
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+        onWrite = _mod1196.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, isBot, tag);
@@ -3759,7 +3759,7 @@ class UserIsBot$Type extends MessageType32 {
 const prototype32 = UserIsBot$Type.prototype;
 const items30 = [{ no: 1, name: "is_bot", kind: "scalar", T: 8 }];
 const clientRequiredChangesType = new ClientRequiredChanges$Type("discord_protos.discord_experimentation.v1.UserIsBot", items30, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_USER" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
-const MessageType33 = _mod1197.MessageType;
+const MessageType33 = _mod1196.MessageType;
 class UserAgeRange$Type extends MessageType33 {
   constructor() {
     const items = [, ];
@@ -3773,9 +3773,9 @@ class UserAgeRange$Type extends MessageType33 {
     obj = {};
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1197;
+      const tmpResult = _mod1196;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -3816,7 +3816,7 @@ class UserAgeRange$Type extends MessageType33 {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1197.UnknownFieldHandler.onRead;
+                onRead = _mod1196.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -3831,7 +3831,7 @@ class UserAgeRange$Type extends MessageType33 {
       const UInt32Value = wrappers.UInt32Value;
       internalBinaryWrite = UInt32Value.internalBinaryWrite;
       minAgeYears = minAgeYears.minAgeYears;
-      const tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
+      const tagResult = tag.tag(1, _mod1196.WireType.LengthDelimited);
       const internalBinaryWriteResult = internalBinaryWrite(minAgeYears, tagResult.fork(), writeUnknownFields);
       const joined = internalBinaryWriteResult.join();
     }
@@ -3839,14 +3839,14 @@ class UserAgeRange$Type extends MessageType33 {
       const UInt32Value2 = wrappers.UInt32Value;
       internalBinaryWrite2 = UInt32Value2.internalBinaryWrite;
       const maxAgeYears = minAgeYears.maxAgeYears;
-      const tagResult1 = tag.tag(2, _mod1197.WireType.LengthDelimited);
+      const tagResult1 = tag.tag(2, _mod1196.WireType.LengthDelimited);
       const internalBinaryWrite2Result = internalBinaryWrite2(maxAgeYears, tagResult1.fork(), writeUnknownFields);
       const joined1 = internalBinaryWrite2Result.join();
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+        onWrite = _mod1196.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, minAgeYears, tag);
@@ -3861,7 +3861,7 @@ items31[0] = obj22;
 items31[1] = { no: 2, name: "max_age_years", kind: "message", T: T34 };
 const obj23 = { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_USER" };
 const clientRequiredChangesType1 = new ClientRequiredChanges$Type("discord_protos.discord_experimentation.v1.UserAgeRange", items31, obj23, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
-const MessageType34 = _mod1197.MessageType;
+const MessageType34 = _mod1196.MessageType;
 class Fixed64Value$Type extends MessageType34 {
   constructor() {
     const items = [{ no: 1, name: "value", kind: "scalar", T: 6 }];
@@ -3872,9 +3872,9 @@ class Fixed64Value$Type extends MessageType34 {
     obj = { value: "0" };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1197;
+      const tmpResult = _mod1196;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -3912,7 +3912,7 @@ class Fixed64Value$Type extends MessageType34 {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1197.UnknownFieldHandler.onRead;
+                onRead = _mod1196.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -3924,13 +3924,13 @@ class Fixed64Value$Type extends MessageType34 {
   }
   internalBinaryWrite(value, tag, writeUnknownFields) {
     if ("0" !== value.value) {
-      const tagResult = tag.tag(1, _mod1197.WireType.Bit64);
+      const tagResult = tag.tag(1, _mod1196.WireType.Bit64);
       tagResult.fixed64(value.value);
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+        onWrite = _mod1196.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, value, tag);
@@ -3941,7 +3941,7 @@ class Fixed64Value$Type extends MessageType34 {
 const prototype34 = Fixed64Value$Type.prototype;
 const items32 = [{ no: 1, name: "value", kind: "scalar", T: 6 }];
 const items311 = new items31("discord_protos.discord_experimentation.v1.Fixed64Value", items32, obj23, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2);
-const MessageType35 = _mod1197.MessageType;
+const MessageType35 = _mod1196.MessageType;
 class UserIDRange$Type extends MessageType35 {
   constructor() {
     const items = [, ];
@@ -3955,9 +3955,9 @@ class UserIDRange$Type extends MessageType35 {
     obj = {};
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1197;
+      const tmpResult = _mod1196;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -3996,7 +3996,7 @@ class UserIDRange$Type extends MessageType35 {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1197.UnknownFieldHandler.onRead;
+                onRead = _mod1196.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -4010,21 +4010,21 @@ class UserIDRange$Type extends MessageType35 {
     if (minId.minId) {
       internalBinaryWrite = items311.internalBinaryWrite;
       minId = minId.minId;
-      const tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
+      const tagResult = tag.tag(1, _mod1196.WireType.LengthDelimited);
       const internalBinaryWriteResult = internalBinaryWrite(minId, tagResult.fork(), writeUnknownFields);
       const joined = internalBinaryWriteResult.join();
     }
     if (minId.maxId) {
       internalBinaryWrite2 = items311.internalBinaryWrite;
       const maxId = minId.maxId;
-      const tagResult1 = tag.tag(2, _mod1197.WireType.LengthDelimited);
+      const tagResult1 = tag.tag(2, _mod1196.WireType.LengthDelimited);
       const internalBinaryWrite2Result = internalBinaryWrite2(maxId, tagResult1.fork(), writeUnknownFields);
       const joined1 = internalBinaryWrite2Result.join();
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+        onWrite = _mod1196.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, minId, tag);
@@ -4038,7 +4038,7 @@ const obj24 = { no: 1, name: "min_id", kind: "message", T: T35 };
 items33[0] = obj24;
 items33[1] = { no: 2, name: "max_id", kind: "message", T: T36 };
 const fixed64ValueType = new Fixed64Value$Type("discord_protos.discord_experimentation.v1.UserIDRange", items33, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_USER" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
-const MessageType36 = _mod1197.MessageType;
+const MessageType36 = _mod1196.MessageType;
 class UserHasFlag$Type extends MessageType36 {
   constructor() {
     const items = [{ no: 1, name: "mask", kind: "scalar", T: 6 }];
@@ -4049,9 +4049,9 @@ class UserHasFlag$Type extends MessageType36 {
     obj = { mask: "0" };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1197;
+      const tmpResult = _mod1196;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -4089,7 +4089,7 @@ class UserHasFlag$Type extends MessageType36 {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1197.UnknownFieldHandler.onRead;
+                onRead = _mod1196.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -4101,13 +4101,13 @@ class UserHasFlag$Type extends MessageType36 {
   }
   internalBinaryWrite(mask, tag, writeUnknownFields) {
     if ("0" !== mask.mask) {
-      const tagResult = tag.tag(1, _mod1197.WireType.Bit64);
+      const tagResult = tag.tag(1, _mod1196.WireType.Bit64);
       tagResult.fixed64(mask.mask);
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+        onWrite = _mod1196.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, mask, tag);
@@ -4118,7 +4118,7 @@ class UserHasFlag$Type extends MessageType36 {
 const prototype36 = UserHasFlag$Type.prototype;
 const items34 = [{ no: 1, name: "mask", kind: "scalar", T: 6 }];
 const fixed64ValueType1 = new Fixed64Value$Type("discord_protos.discord_experimentation.v1.UserHasFlag", items34, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_USER" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
-const MessageType37 = _mod1197.MessageType;
+const MessageType37 = _mod1196.MessageType;
 class UnitIdInRangeByHash$Type extends MessageType37 {
   constructor() {
     const items = [{ no: 1, name: "hash_key", kind: "scalar", T: 9 }, { no: 2, name: "stop_ring_position", kind: "scalar", T: 13 }, { no: 3, name: "start_ring_position", kind: "scalar", T: 13 }];
@@ -4129,9 +4129,9 @@ class UnitIdInRangeByHash$Type extends MessageType37 {
     obj = { hashKey: "", stopRingPosition: 0, startRingPosition: 0 };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1197;
+      const tmpResult = _mod1196;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -4172,7 +4172,7 @@ class UnitIdInRangeByHash$Type extends MessageType37 {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1197.UnknownFieldHandler.onRead;
+                onRead = _mod1196.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -4184,21 +4184,21 @@ class UnitIdInRangeByHash$Type extends MessageType37 {
   }
   internalBinaryWrite(hashKey, tag, writeUnknownFields) {
     if ("" !== hashKey.hashKey) {
-      const tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
+      const tagResult = tag.tag(1, _mod1196.WireType.LengthDelimited);
       tagResult.string(hashKey.hashKey);
     }
     if (0 !== hashKey.stopRingPosition) {
-      const tagResult1 = tag.tag(2, _mod1197.WireType.Varint);
+      const tagResult1 = tag.tag(2, _mod1196.WireType.Varint);
       tagResult1.uint32(hashKey.stopRingPosition);
     }
     if (0 !== hashKey.startRingPosition) {
-      const tagResult2 = tag.tag(3, _mod1197.WireType.Varint);
+      const tagResult2 = tag.tag(3, _mod1196.WireType.Varint);
       tagResult2.uint32(hashKey.startRingPosition);
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+        onWrite = _mod1196.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, hashKey, tag);
@@ -4209,7 +4209,7 @@ class UnitIdInRangeByHash$Type extends MessageType37 {
 const prototype37 = UnitIdInRangeByHash$Type.prototype;
 const items35 = [{ no: 1, name: "hash_key", kind: "scalar", T: 9 }, { no: 2, name: "stop_ring_position", kind: "scalar", T: 13 }, { no: 3, name: "start_ring_position", kind: "scalar", T: 13 }];
 const fixed64ValueType2 = new Fixed64Value$Type("discord_protos.discord_experimentation.v1.UnitIdInRangeByHash", items35, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_UTILITY" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
-const MessageType38 = _mod1197.MessageType;
+const MessageType38 = _mod1196.MessageType;
 class ClientReleaseChannel$Type extends MessageType38 {
   constructor() {
     const items = [{ no: 1, name: "release_channels", kind: "scalar", repeat: 2, T: 9 }];
@@ -4220,9 +4220,9 @@ class ClientReleaseChannel$Type extends MessageType38 {
     obj = { releaseChannels: [] };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1197;
+      const tmpResult = _mod1196;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -4260,7 +4260,7 @@ class ClientReleaseChannel$Type extends MessageType38 {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1197.UnknownFieldHandler.onRead;
+                onRead = _mod1196.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -4275,7 +4275,7 @@ class ClientReleaseChannel$Type extends MessageType38 {
     let num = 0;
     if (0 < releaseChannels.releaseChannels.length) {
       do {
-        let tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
+        let tagResult = tag.tag(1, _mod1196.WireType.LengthDelimited);
         let stringResult = tagResult.string(releaseChannels.releaseChannels[num]);
         num = num + 1;
         length = releaseChannels.releaseChannels.length;
@@ -4284,7 +4284,7 @@ class ClientReleaseChannel$Type extends MessageType38 {
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+        onWrite = _mod1196.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, releaseChannels, tag);
@@ -4295,7 +4295,7 @@ class ClientReleaseChannel$Type extends MessageType38 {
 const prototype38 = ClientReleaseChannel$Type.prototype;
 const items36 = [{ no: 1, name: "release_channels", kind: "scalar", repeat: 2, T: 9 }];
 const fixed64ValueType3 = new Fixed64Value$Type("discord_protos.discord_experimentation.v1.ClientReleaseChannel", items36, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_CLIENT" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
-const MessageType39 = _mod1197.MessageType;
+const MessageType39 = _mod1196.MessageType;
 class ClientDesignId$Type extends MessageType39 {
   constructor() {
     const items = [{ no: 1, name: "design_ids", kind: "scalar", repeat: 1, T: 5 }];
@@ -4306,9 +4306,9 @@ class ClientDesignId$Type extends MessageType39 {
     obj = { designIds: [] };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1197;
+      const tmpResult = _mod1196;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -4327,7 +4327,7 @@ class ClientDesignId$Type extends MessageType39 {
         let tmp4 = _slicedToArray(pos.tag(), 2);
         [tmp5, tmp6] = tmp4;
         if (1 === tmp5) {
-          if (tmp6 === _mod1197.WireType.LengthDelimited) {
+          if (tmp6 === _mod1196.WireType.LengthDelimited) {
             let sum1 = pos.int32() + pos.pos;
             if (pos.pos < sum1) {
               do {
@@ -4357,7 +4357,7 @@ class ClientDesignId$Type extends MessageType39 {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1197.UnknownFieldHandler.onRead;
+                onRead = _mod1196.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -4370,7 +4370,7 @@ class ClientDesignId$Type extends MessageType39 {
   internalBinaryWrite(designIds, tag, writeUnknownFields) {
     let length;
     if (designIds.designIds.length) {
-      const tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
+      const tagResult = tag.tag(1, _mod1196.WireType.LengthDelimited);
       tagResult.fork();
       let num2 = 0;
       if (0 < designIds.designIds.length) {
@@ -4385,7 +4385,7 @@ class ClientDesignId$Type extends MessageType39 {
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+        onWrite = _mod1196.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, designIds, tag);
@@ -4396,7 +4396,7 @@ class ClientDesignId$Type extends MessageType39 {
 const prototype39 = ClientDesignId$Type.prototype;
 const items37 = [{ no: 1, name: "design_ids", kind: "scalar", repeat: 1, T: 5 }];
 const fixed64ValueType4 = new Fixed64Value$Type("discord_protos.discord_experimentation.v1.ClientDesignId", items37, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_CLIENT" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
-const MessageType40 = _mod1197.MessageType;
+const MessageType40 = _mod1196.MessageType;
 class Always$Type extends MessageType40 {
   constructor() {
     const items = [{ no: 1, name: "value", kind: "scalar", T: 8 }];
@@ -4407,9 +4407,9 @@ class Always$Type extends MessageType40 {
     obj = { value: false };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1197;
+      const tmpResult = _mod1196;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -4446,7 +4446,7 @@ class Always$Type extends MessageType40 {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1197.UnknownFieldHandler.onRead;
+                onRead = _mod1196.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -4458,13 +4458,13 @@ class Always$Type extends MessageType40 {
   }
   internalBinaryWrite(value, tag, writeUnknownFields) {
     if (false !== value.value) {
-      const tagResult = tag.tag(1, _mod1197.WireType.Varint);
+      const tagResult = tag.tag(1, _mod1196.WireType.Varint);
       tagResult.bool(value.value);
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+        onWrite = _mod1196.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, value, tag);
@@ -4475,7 +4475,7 @@ class Always$Type extends MessageType40 {
 const prototype40 = Always$Type.prototype;
 const items38 = [{ no: 1, name: "value", kind: "scalar", T: 8 }];
 const fixed64ValueType5 = new Fixed64Value$Type("discord_protos.discord_experimentation.v1.Always", items38, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_UTILITY" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
-const MessageType41 = _mod1197.MessageType;
+const MessageType41 = _mod1196.MessageType;
 class UnitIdInExperiment$Type extends MessageType41 {
   constructor() {
     const items = [{ no: 1, name: "experiment_id", kind: "scalar", T: 6 }, { no: 2, name: "variation_ids", kind: "scalar", repeat: 1, T: 5 }];
@@ -4486,9 +4486,9 @@ class UnitIdInExperiment$Type extends MessageType41 {
     obj = { experimentId: "0", variationIds: [] };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1197;
+      const tmpResult = _mod1196;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -4510,7 +4510,7 @@ class UnitIdInExperiment$Type extends MessageType41 {
           let str4 = pos.fixed64();
           obj.experimentId = str4.toString();
         } else if (2 === tmp5) {
-          if (tmp6 === _mod1197.WireType.LengthDelimited) {
+          if (tmp6 === _mod1196.WireType.LengthDelimited) {
             let sum1 = pos.int32() + pos.pos;
             if (pos.pos < sum1) {
               do {
@@ -4540,7 +4540,7 @@ class UnitIdInExperiment$Type extends MessageType41 {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1197.UnknownFieldHandler.onRead;
+                onRead = _mod1196.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -4553,11 +4553,11 @@ class UnitIdInExperiment$Type extends MessageType41 {
   internalBinaryWrite(experimentId, tag, writeUnknownFields) {
     let length;
     if ("0" !== experimentId.experimentId) {
-      const tagResult = tag.tag(1, _mod1197.WireType.Bit64);
+      const tagResult = tag.tag(1, _mod1196.WireType.Bit64);
       tagResult.fixed64(experimentId.experimentId);
     }
     if (experimentId.variationIds.length) {
-      const tagResult1 = tag.tag(2, _mod1197.WireType.LengthDelimited);
+      const tagResult1 = tag.tag(2, _mod1196.WireType.LengthDelimited);
       tagResult1.fork();
       let num3 = 0;
       if (0 < experimentId.variationIds.length) {
@@ -4572,7 +4572,7 @@ class UnitIdInExperiment$Type extends MessageType41 {
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+        onWrite = _mod1196.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, experimentId, tag);
@@ -4583,7 +4583,7 @@ class UnitIdInExperiment$Type extends MessageType41 {
 const prototype41 = UnitIdInExperiment$Type.prototype;
 const items39 = [{ no: 1, name: "experiment_id", kind: "scalar", T: 6 }, { no: 2, name: "variation_ids", kind: "scalar", repeat: 1, T: 5 }];
 const fixed64ValueType6 = new Fixed64Value$Type("discord_protos.discord_experimentation.v1.UnitIdInExperiment", items39, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_UTILITY", "discord_protos.discord_experimentation.v1.filter_evaluation_mode": "FILTER_EVALUATION_MODE_LAZY" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
-const MessageType42 = _mod1197.MessageType;
+const MessageType42 = _mod1196.MessageType;
 class UserPremiumType$Type extends MessageType42 {
   constructor() {
     const items = [{ no: 1, name: "premium_types", kind: "scalar", repeat: 1, T: 5 }];
@@ -4594,9 +4594,9 @@ class UserPremiumType$Type extends MessageType42 {
     obj = { premiumTypes: [] };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1197;
+      const tmpResult = _mod1196;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -4615,7 +4615,7 @@ class UserPremiumType$Type extends MessageType42 {
         let tmp4 = _slicedToArray(pos.tag(), 2);
         [tmp5, tmp6] = tmp4;
         if (1 === tmp5) {
-          if (tmp6 === _mod1197.WireType.LengthDelimited) {
+          if (tmp6 === _mod1196.WireType.LengthDelimited) {
             let sum1 = pos.int32() + pos.pos;
             if (pos.pos < sum1) {
               do {
@@ -4645,7 +4645,7 @@ class UserPremiumType$Type extends MessageType42 {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1197.UnknownFieldHandler.onRead;
+                onRead = _mod1196.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -4658,7 +4658,7 @@ class UserPremiumType$Type extends MessageType42 {
   internalBinaryWrite(premiumTypes, tag, writeUnknownFields) {
     let length;
     if (premiumTypes.premiumTypes.length) {
-      const tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
+      const tagResult = tag.tag(1, _mod1196.WireType.LengthDelimited);
       tagResult.fork();
       let num2 = 0;
       if (0 < premiumTypes.premiumTypes.length) {
@@ -4673,7 +4673,7 @@ class UserPremiumType$Type extends MessageType42 {
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+        onWrite = _mod1196.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, premiumTypes, tag);
@@ -4684,7 +4684,7 @@ class UserPremiumType$Type extends MessageType42 {
 const prototype42 = UserPremiumType$Type.prototype;
 const items40 = [{ no: 1, name: "premium_types", kind: "scalar", repeat: 1, T: 5 }];
 const fixed64ValueType7 = new Fixed64Value$Type("discord_protos.discord_experimentation.v1.UserPremiumType", items40, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_USER" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
-const MessageType43 = _mod1197.MessageType;
+const MessageType43 = _mod1196.MessageType;
 class UnitIdMatchesFilterSnapshot$Type extends MessageType43 {
   constructor() {
     const items = [{ no: 1, name: "filter_snapshot_name", kind: "scalar", T: 9 }, { no: 2, name: "target_filter_values", kind: "scalar", repeat: 1, T: 6 }];
@@ -4695,9 +4695,9 @@ class UnitIdMatchesFilterSnapshot$Type extends MessageType43 {
     obj = { filterSnapshotName: "", targetFilterValues: [] };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1197;
+      const tmpResult = _mod1196;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -4718,7 +4718,7 @@ class UnitIdMatchesFilterSnapshot$Type extends MessageType43 {
         if (1 === tmp5) {
           obj.filterSnapshotName = pos.string();
         } else if (2 === tmp5) {
-          if (tmp6 === _mod1197.WireType.LengthDelimited) {
+          if (tmp6 === _mod1196.WireType.LengthDelimited) {
             let sum1 = pos.int32() + pos.pos;
             if (pos.pos < sum1) {
               do {
@@ -4752,7 +4752,7 @@ class UnitIdMatchesFilterSnapshot$Type extends MessageType43 {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1197.UnknownFieldHandler.onRead;
+                onRead = _mod1196.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -4765,11 +4765,11 @@ class UnitIdMatchesFilterSnapshot$Type extends MessageType43 {
   internalBinaryWrite(filterSnapshotName, tag, writeUnknownFields) {
     let length;
     if ("" !== filterSnapshotName.filterSnapshotName) {
-      const tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
+      const tagResult = tag.tag(1, _mod1196.WireType.LengthDelimited);
       tagResult.string(filterSnapshotName.filterSnapshotName);
     }
     if (filterSnapshotName.targetFilterValues.length) {
-      const tagResult1 = tag.tag(2, _mod1197.WireType.LengthDelimited);
+      const tagResult1 = tag.tag(2, _mod1196.WireType.LengthDelimited);
       tagResult1.fork();
       let num3 = 0;
       if (0 < filterSnapshotName.targetFilterValues.length) {
@@ -4784,7 +4784,7 @@ class UnitIdMatchesFilterSnapshot$Type extends MessageType43 {
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+        onWrite = _mod1196.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, filterSnapshotName, tag);
@@ -4795,7 +4795,7 @@ class UnitIdMatchesFilterSnapshot$Type extends MessageType43 {
 const prototype43 = UnitIdMatchesFilterSnapshot$Type.prototype;
 const items41 = [{ no: 1, name: "filter_snapshot_name", kind: "scalar", T: 9 }, { no: 2, name: "target_filter_values", kind: "scalar", repeat: 1, T: 6 }];
 const fixed64ValueType8 = new Fixed64Value$Type("discord_protos.discord_experimentation.v1.UnitIdMatchesFilterSnapshot", items41, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_UTILITY" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", tmp2, undefined);
-const MessageType44 = _mod1197.MessageType;
+const MessageType44 = _mod1196.MessageType;
 class GuildIds$Type extends MessageType44 {
   constructor() {
     const items = [{ no: 1, name: "guild_ids", kind: "scalar", repeat: 1, T: 6 }];
@@ -4806,9 +4806,9 @@ class GuildIds$Type extends MessageType44 {
     obj = { guildIds: [] };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1197;
+      const tmpResult = _mod1196;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -4827,7 +4827,7 @@ class GuildIds$Type extends MessageType44 {
         let tmp4 = _slicedToArray(pos.tag(), 2);
         [tmp5, tmp6] = tmp4;
         if (1 === tmp5) {
-          if (tmp6 === _mod1197.WireType.LengthDelimited) {
+          if (tmp6 === _mod1196.WireType.LengthDelimited) {
             let sum1 = pos.int32() + pos.pos;
             if (pos.pos < sum1) {
               do {
@@ -4861,7 +4861,7 @@ class GuildIds$Type extends MessageType44 {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1197.UnknownFieldHandler.onRead;
+                onRead = _mod1196.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -4874,7 +4874,7 @@ class GuildIds$Type extends MessageType44 {
   internalBinaryWrite(guildIds, tag, writeUnknownFields) {
     let length;
     if (guildIds.guildIds.length) {
-      const tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
+      const tagResult = tag.tag(1, _mod1196.WireType.LengthDelimited);
       tagResult.fork();
       let num2 = 0;
       if (0 < guildIds.guildIds.length) {
@@ -4889,7 +4889,7 @@ class GuildIds$Type extends MessageType44 {
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+        onWrite = _mod1196.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, guildIds, tag);
@@ -4900,7 +4900,7 @@ class GuildIds$Type extends MessageType44 {
 const prototype44 = GuildIds$Type.prototype;
 const items42 = [{ no: 1, name: "guild_ids", kind: "scalar", repeat: 1, T: 6 }];
 const fixed64ValueType9 = new Fixed64Value$Type("discord_protos.discord_experimentation.v1.GuildIds", items42, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_GUILD", "discord_protos.discord_experimentation.v1.filter_evaluation_mode": "FILTER_EVALUATION_MODE_LAZY" }, tmp5, tmp4, tmp3, "create", "internalBinaryRead", "internalBinaryWrite", GuildIds$Type, undefined, tmp, require, dependencyMap, Rule_Type, obj2, obj3, obj4, this, defineProperty1, ruleType, filterType, overrideType, overrideType1, overrideType2, overrideType3, overrideType4, overrideType5, overrideType6, items81, items82, items83, clientLocation_LocationType, clientLocation_LocationType1, clientLocation_LocationType2, clientLocation_LocationType3, clientLocation_LocationType4, items161, items162, items163, items164, items165, items166, items167, sDKVersionSpecifierType, items241, items242, items243, items244, items245, clientRequiredChangesType, clientRequiredChangesType1, items311, fixed64ValueType, fixed64ValueType1, fixed64ValueType2, fixed64ValueType3, fixed64ValueType4, fixed64ValueType5, fixed64ValueType6, fixed64ValueType7, fixed64ValueType8, Fixed64Value$Type);
-const MessageType45 = _mod1197.MessageType;
+const MessageType45 = _mod1196.MessageType;
 class GuildMemberCountRange$Type extends MessageType45 {
   constructor() {
     const items = [, ];
@@ -4914,9 +4914,9 @@ class GuildMemberCountRange$Type extends MessageType45 {
     obj = {};
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1197;
+      const tmpResult = _mod1196;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -4957,7 +4957,7 @@ class GuildMemberCountRange$Type extends MessageType45 {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1197.UnknownFieldHandler.onRead;
+                onRead = _mod1196.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -4972,7 +4972,7 @@ class GuildMemberCountRange$Type extends MessageType45 {
       const UInt32Value = wrappers.UInt32Value;
       internalBinaryWrite = UInt32Value.internalBinaryWrite;
       minCount = minCount.minCount;
-      const tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
+      const tagResult = tag.tag(1, _mod1196.WireType.LengthDelimited);
       const internalBinaryWriteResult = internalBinaryWrite(minCount, tagResult.fork(), writeUnknownFields);
       const joined = internalBinaryWriteResult.join();
     }
@@ -4980,14 +4980,14 @@ class GuildMemberCountRange$Type extends MessageType45 {
       const UInt32Value2 = wrappers.UInt32Value;
       internalBinaryWrite2 = UInt32Value2.internalBinaryWrite;
       const maxCount = minCount.maxCount;
-      const tagResult1 = tag.tag(2, _mod1197.WireType.LengthDelimited);
+      const tagResult1 = tag.tag(2, _mod1196.WireType.LengthDelimited);
       const internalBinaryWrite2Result = internalBinaryWrite2(maxCount, tagResult1.fork(), writeUnknownFields);
       const joined1 = internalBinaryWrite2Result.join();
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+        onWrite = _mod1196.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, minCount, tag);
@@ -5001,7 +5001,7 @@ const obj25 = { no: 1, name: "min_count", kind: "message", T: T37 };
 items43[0] = obj25;
 items43[1] = { no: 2, name: "max_count", kind: "message", T: T38 };
 const guildIdsType = new GuildIds$Type("discord_protos.discord_experimentation.v1.GuildMemberCountRange", items43, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_GUILD", "discord_protos.discord_experimentation.v1.filter_evaluation_mode": "FILTER_EVALUATION_MODE_STICKY" }, tmp5, tmp4, GuildMemberCountRange$Type, "create", "internalBinaryRead", "internalBinaryWrite", GuildIds$Type, undefined, tmp, require, dependencyMap, Rule_Type, obj2, obj3, obj4, this, defineProperty1, ruleType, filterType, overrideType, overrideType1, overrideType2, overrideType3, overrideType4, overrideType5, overrideType6, items81, items82, items83, clientLocation_LocationType, clientLocation_LocationType1, clientLocation_LocationType2, clientLocation_LocationType3, clientLocation_LocationType4, items161, items162, items163, items164, items165, items166, items167, sDKVersionSpecifierType, items241, items242, items243, items244, items245, clientRequiredChangesType, clientRequiredChangesType1, items311, fixed64ValueType, fixed64ValueType1, fixed64ValueType2, fixed64ValueType3, fixed64ValueType4, fixed64ValueType5, fixed64ValueType6, fixed64ValueType7, fixed64ValueType8, fixed64ValueType9, items43, items32, this, exports);
-const MessageType46 = _mod1197.MessageType;
+const MessageType46 = _mod1196.MessageType;
 class GuildIdRange$Type extends MessageType46 {
   constructor() {
     const items = [, ];
@@ -5015,9 +5015,9 @@ class GuildIdRange$Type extends MessageType46 {
     obj = {};
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1197;
+      const tmpResult = _mod1196;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -5056,7 +5056,7 @@ class GuildIdRange$Type extends MessageType46 {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1197.UnknownFieldHandler.onRead;
+                onRead = _mod1196.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -5070,21 +5070,21 @@ class GuildIdRange$Type extends MessageType46 {
     if (minId.minId) {
       internalBinaryWrite = items311.internalBinaryWrite;
       minId = minId.minId;
-      const tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
+      const tagResult = tag.tag(1, _mod1196.WireType.LengthDelimited);
       const internalBinaryWriteResult = internalBinaryWrite(minId, tagResult.fork(), writeUnknownFields);
       const joined = internalBinaryWriteResult.join();
     }
     if (minId.maxId) {
       internalBinaryWrite2 = items311.internalBinaryWrite;
       const maxId = minId.maxId;
-      const tagResult1 = tag.tag(2, _mod1197.WireType.LengthDelimited);
+      const tagResult1 = tag.tag(2, _mod1196.WireType.LengthDelimited);
       const internalBinaryWrite2Result = internalBinaryWrite2(maxId, tagResult1.fork(), writeUnknownFields);
       const joined1 = internalBinaryWrite2Result.join();
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+        onWrite = _mod1196.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, minId, tag);
@@ -5099,7 +5099,7 @@ items44[0] = obj26;
 const obj27 = { no: 2, name: "max_id", kind: "message", T: T40 };
 items44[1] = obj27;
 const guildMemberCountRangeType = new GuildMemberCountRange$Type("discord_protos.discord_experimentation.v1.GuildIdRange", items44, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_GUILD", "discord_protos.discord_experimentation.v1.filter_evaluation_mode": "FILTER_EVALUATION_MODE_LAZY" }, tmp5, GuildIdRange$Type, GuildMemberCountRange$Type, "create", "internalBinaryRead", "internalBinaryWrite", items44, undefined, tmp, require, dependencyMap, Rule_Type, obj2, obj3, obj4, this, defineProperty1, ruleType, filterType, overrideType, overrideType1, overrideType2, overrideType3, overrideType4, overrideType5, overrideType6, items81, items82, items83, clientLocation_LocationType, clientLocation_LocationType1, clientLocation_LocationType2, clientLocation_LocationType3, clientLocation_LocationType4, items161, items162, items163, items164, items165, items166, items167, sDKVersionSpecifierType, items241, items242, items243, items244, items245, clientRequiredChangesType, clientRequiredChangesType1, items311, fixed64ValueType, fixed64ValueType1, fixed64ValueType2, fixed64ValueType3, fixed64ValueType4, fixed64ValueType5, fixed64ValueType6, fixed64ValueType7, fixed64ValueType8, fixed64ValueType9, guildIdsType, items32, this, exports, obj27);
-const MessageType47 = _mod1197.MessageType;
+const MessageType47 = _mod1196.MessageType;
 class GuildHasFeature$Type extends MessageType47 {
   constructor() {
     const items = [{ no: 1, name: "features", kind: "scalar", repeat: 2, T: 9 }];
@@ -5110,9 +5110,9 @@ class GuildHasFeature$Type extends MessageType47 {
     obj = { features: [] };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1197;
+      const tmpResult = _mod1196;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -5150,7 +5150,7 @@ class GuildHasFeature$Type extends MessageType47 {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1197.UnknownFieldHandler.onRead;
+                onRead = _mod1196.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -5165,7 +5165,7 @@ class GuildHasFeature$Type extends MessageType47 {
     let num = 0;
     if (0 < features.features.length) {
       do {
-        let tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
+        let tagResult = tag.tag(1, _mod1196.WireType.LengthDelimited);
         let stringResult = tagResult.string(features.features[num]);
         num = num + 1;
         length = features.features.length;
@@ -5174,7 +5174,7 @@ class GuildHasFeature$Type extends MessageType47 {
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+        onWrite = _mod1196.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, features, tag);
@@ -5187,7 +5187,7 @@ const items45 = [];
 const obj28 = { no: 1, name: "features", kind: "scalar", repeat: 2, T: 9 };
 items45[0] = obj28;
 const guildIdRangeType = new GuildIdRange$Type("discord_protos.discord_experimentation.v1.GuildHasFeature", items45, { "discord_protos.discord_experimentation.v1.filter_category": "FILTER_CATEGORY_GUILD", "discord_protos.discord_experimentation.v1.filter_evaluation_mode": "FILTER_EVALUATION_MODE_STICKY" }, GuildHasFeature$Type, GuildIdRange$Type, items45, "create", "internalBinaryRead", "internalBinaryWrite", items44, undefined, tmp, require, dependencyMap, Rule_Type, obj2, obj3, obj4, this, defineProperty1, ruleType, filterType, overrideType, overrideType1, overrideType2, overrideType3, overrideType4, overrideType5, overrideType6, items81, items82, items83, clientLocation_LocationType, clientLocation_LocationType1, clientLocation_LocationType2, clientLocation_LocationType3, clientLocation_LocationType4, items161, items162, items163, items164, items165, items166, items167, sDKVersionSpecifierType, items241, items242, items243, items244, items245, clientRequiredChangesType, clientRequiredChangesType1, items311, fixed64ValueType, fixed64ValueType1, fixed64ValueType2, fixed64ValueType3, fixed64ValueType4, fixed64ValueType5, fixed64ValueType6, fixed64ValueType7, fixed64ValueType8, fixed64ValueType9, guildIdsType, guildMemberCountRangeType, this, exports, obj28, undefined);
-const MessageType48 = _mod1197.MessageType;
+const MessageType48 = _mod1196.MessageType;
 class InstallationIds$Type extends MessageType48 {
   constructor() {
     const items = [{ no: 1, name: "installation_ids", kind: "scalar", repeat: 1, T: 6 }];
@@ -5198,9 +5198,9 @@ class InstallationIds$Type extends MessageType48 {
     obj = { installationIds: [] };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1197;
+      const tmpResult = _mod1196;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -5219,7 +5219,7 @@ class InstallationIds$Type extends MessageType48 {
         let tmp4 = _slicedToArray(pos.tag(), 2);
         [tmp5, tmp6] = tmp4;
         if (1 === tmp5) {
-          if (tmp6 === _mod1197.WireType.LengthDelimited) {
+          if (tmp6 === _mod1196.WireType.LengthDelimited) {
             let sum1 = pos.int32() + pos.pos;
             if (pos.pos < sum1) {
               do {
@@ -5253,7 +5253,7 @@ class InstallationIds$Type extends MessageType48 {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1197.UnknownFieldHandler.onRead;
+                onRead = _mod1196.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -5266,7 +5266,7 @@ class InstallationIds$Type extends MessageType48 {
   internalBinaryWrite(installationIds, tag, writeUnknownFields) {
     let length;
     if (installationIds.installationIds.length) {
-      const tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
+      const tagResult = tag.tag(1, _mod1196.WireType.LengthDelimited);
       tagResult.fork();
       let num2 = 0;
       if (0 < installationIds.installationIds.length) {
@@ -5281,7 +5281,7 @@ class InstallationIds$Type extends MessageType48 {
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+        onWrite = _mod1196.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, installationIds, tag);

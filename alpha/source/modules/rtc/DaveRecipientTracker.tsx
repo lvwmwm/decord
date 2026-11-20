@@ -1,10 +1,10 @@
-// Module ID: 5637
-// Function ID: 5638
+// Module ID: 5639
+// Function ID: 5640
 // Name: DaveRecipientTracker
-// Dependencies: [5541, 2]
+// Dependencies: [5543, 2]
 
-// Module 5637 (DaveRecipientTracker)
-import TimeUtils from "TimeUtils" /* 5541 */;
+// Module 5639 (DaveRecipientTracker)
+import TimeUtils from "TimeUtils" /* 5543 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, set;
@@ -17,7 +17,7 @@ class DaveRecipientTracker {
       TimeStampProducer = TimeUtils.TimeStampProducer;
     }
     const merged = Object.assign({ mode: "none", modeSince: 0, summary: null, hasGroup: false, recipients: null, newestRoster: null, resetSinceInstall: false, voiceStateUsers: null, connectedUsers: null, everPresent: null, openLingers: null, prepared: null, prepareSeq: 0, submitted: null, earlyExecutes: null });
-    merged[2] = { encryptedDuration: 0, mirrorUncertainCount: 0, lingerCount: 0, lingerTotalDuration: 0, lingerMaxDuration: 0, lingerMaxCause: "diversity" };
+    merged[2] = { encryptedDuration: 0, mirrorUncertainCount: 0, lingerCount: 0, lingerTotalDuration: 0, lingerMaxDuration: 0, lingerMaxCause: "v" };
     merged[4] = new Set();
     new Set();
     merged[5] = new Set();

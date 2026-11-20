@@ -1,19 +1,19 @@
-// Module ID: 7220
-// Function ID: 7221
+// Module ID: 7219
+// Function ID: 7220
 // Name: IdentityVerificationField
-// Dependencies: [19, 17, 21, 4792, 575, 5383, 1113, 7221, 5390, 4828, 7223, 6308, 7300, 2121, 7303, 7338, 7269, 2]
+// Dependencies: [19, 17, 21, 4794, 575, 5385, 1112, 7220, 5392, 4830, 7222, 6310, 7299, 2119, 7302, 7337, 7268, 2]
 // Exports: default
 
-// Module 7220 (IdentityVerificationField)
+// Module 7219 (IdentityVerificationField)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl4 from "intl" /* 1113 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4828 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 7221 */;
+import intl4 from "intl" /* 1112 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4830 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 7220 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -22,8 +22,8 @@ let closure_4;
 let hasOwnProperty;
 let obj2;
 let tmp;
-const MobilePhoneIcon = tmp(7269);
-const EnvelopeIcon = tmp(7338);
+const MobilePhoneIcon = tmp(7268);
+const EnvelopeIcon = tmp(7337);
 function BaseIdentityVerificationField(icon) {
   let Button;
   let intl;
@@ -49,13 +49,13 @@ function BaseIdentityVerificationField(icon) {
   items[1] = React3(Text_Text.Text, obj3);
   if (passesVerification) {
     const obj4 = { style: tmp.verifiedContainer, accessible: true, accessibilityLabel: intl2.string(intl4.t.g62IJl), children: React3(CheckmarkLargeIcon.CheckmarkLargeIcon, { color: "status-positive" }) };
-    intl2 = tmp7(1113).intl;
+    intl2 = tmp7(1112).intl;
     obj5 = obj4;
   } else {
     obj5 = { style: tmp.ctaButton, children: React3(Button, obj6) };
     obj6 = { variant: "primary", size: "sm", grow: true, text: intl.string(intl4.t["13ofGu"]), onPress };
-    Button = tmp7(5390).Button;
-    intl = tmp7(1113).intl;
+    Button = tmp7(5392).Button;
+    intl = tmp7(1112).intl;
   }
   items[2] = React3(View, obj5);
   return tmp2(View, obj);

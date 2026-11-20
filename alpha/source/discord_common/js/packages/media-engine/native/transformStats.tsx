@@ -1,11 +1,11 @@
-// Module ID: 5621
-// Function ID: 5622
+// Module ID: 5623
+// Function ID: 5624
 // Name: transformStats
-// Dependencies: [5622, 2]
+// Dependencies: [5624, 2]
 // Exports: default
 
-// Module 5621 (transformStats)
-import transformStatsUtils from "transformStatsUtils" /* 5622 */;
+// Module 5623 (transformStats)
+import transformStatsUtils from "transformStatsUtils" /* 5624 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

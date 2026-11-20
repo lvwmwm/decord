@@ -1,20 +1,20 @@
-// Module ID: 18865
-// Function ID: 18866
+// Module ID: 18689
+// Function ID: 18690
 // Name: ThreadsScreen
-// Dependencies: [19, 17, 4641, 1072, 1112, 21, 4792, 575, 6774, 5367, 11584, 5525, 18866, 563, 1503, 2]
+// Dependencies: [19, 17, 4643, 1071, 1111, 21, 4794, 575, 6774, 5369, 11526, 5527, 18690, 563, 1501, 2]
 
-// Module 18865 (ThreadsScreen)
+// Module 18689 (ThreadsScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import ThreadConstants from "ThreadConstants" /* 1112 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5367 */;
-import navigateToThreadCreation from "navigateToThreadCreation" /* 11584 */;
-import ThreadListDefault from "ThreadList" /* 18866 */;
+import Constants from "Constants" /* 1071 */;
+import ThreadConstants from "ThreadConstants" /* 1111 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5369 */;
+import navigateToThreadCreation from "navigateToThreadCreation" /* 11526 */;
+import ThreadListDefault from "ThreadList" /* 18690 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import createStyles from "createStyles" /* 4792 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -75,7 +75,7 @@ const memoResult = react.memo(function SearchTabsThreadScreen(searchContext) {
 });
 const memoResult1 = react.memo(function ConnectedThreadsScreen() {
   let channelId;
-  const obj = channelId(1503);
+  const obj = channelId(1501);
   channelId = obj.useRoute().params.channelId;
   const items = [ChannelStore];
   const obj2 = channelId(563);

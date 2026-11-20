@@ -1,16 +1,16 @@
-// Module ID: 11028
-// Function ID: 11029
+// Module ID: 10970
+// Function ID: 10971
 // Name: AudienceGridRow
-// Dependencies: [19, 17, 6379, 21, 4792, 11029, 11030, 2]
+// Dependencies: [19, 17, 6381, 21, 4794, 10971, 10972, 2]
 
-// Module 11028 (AudienceGridRow)
+// Module 10970 (AudienceGridRow)
 import react_native from "react-native" /* 17 */;
-import StageChannelsConstants from "StageChannelsConstants" /* 6379 */;
-import BlankAudienceTileDefault from "BlankAudienceTile" /* 11029 */;
-import AudienceTileDefault from "AudienceTile" /* 11030 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 6381 */;
+import BlankAudienceTileDefault from "BlankAudienceTile" /* 10971 */;
+import AudienceTileDefault from "AudienceTile" /* 10972 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

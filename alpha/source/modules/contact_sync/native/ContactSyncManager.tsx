@@ -1,19 +1,19 @@
-// Module ID: 13496
-// Function ID: 13497
+// Module ID: 13466
+// Function ID: 13467
 // Name: ContactSyncManager
-// Dependencies: [5, 6568, 1388, 13494, 13493, 1072, 510, 13495, 7365, 7070, 2]
+// Dependencies: [5, 6570, 1386, 13464, 13463, 1071, 510, 13465, 7364, 7069, 2]
 // Exports: removeLastUserContactsUpload
 
-// Module 13496 (ContactSyncManager)
+// Module 13466 (ContactSyncManager)
 import Storage3 from "Storage" /* 510 */;
-import Constants from "Constants" /* 1072 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 13493 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 13495 */;
+import Constants from "Constants" /* 1071 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 13463 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 13465 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6568 */;
-import UserStore from "UserStore" /* 1388 */;
-import ContactSyncPersistedStore from "ContactSyncPersistedStore" /* 13494 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7365 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6570 */;
+import UserStore from "UserStore" /* 1386 */;
+import ContactSyncPersistedStore from "ContactSyncPersistedStore" /* 13464 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7364 */;
 import size from "module_2" /* 2 */;
 
 let c5, c6, localAccount, set;
@@ -34,7 +34,7 @@ let obj = function _requestAndSyncContacts() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -75,7 +75,7 @@ let obj = function _requestAndSyncContacts() {
               if (null == phone) {
                 c4 = 0;
                 c6 = 3;
-                return { value: "HermesInternal", done: "+60" };
+                return { value: "HermesInternal", done: null };
               } else {
                 set = ContactSyncUtils;
                 c5 = 2;
@@ -128,7 +128,7 @@ let obj = function _requestAndSyncContacts() {
           const result = set(closure_130_10, timestamp);
         }
         c6 = 3;
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp29) {
         let closure_3 = tmp29;
         if (0 === c4) {

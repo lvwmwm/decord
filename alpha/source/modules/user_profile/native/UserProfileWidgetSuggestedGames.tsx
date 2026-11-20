@@ -1,22 +1,22 @@
-// Module ID: 10149
-// Function ID: 10150
+// Module ID: 10152
+// Function ID: 10153
 // Name: UserProfileWidgetSuggestedGames
-// Dependencies: [19, 17, 502, 7950, 21, 575, 4792, 10110, 1113, 10112, 10097, 5802, 10077, 10094, 4801, 8017, 5383, 7472, 10150, 2]
+// Dependencies: [19, 17, 502, 7949, 21, 575, 4794, 10113, 1112, 10115, 10100, 5804, 10080, 10097, 4803, 8016, 5385, 7471, 10153, 2]
 // Exports: default
 
-// Module 10149 (UserProfileWidgetSuggestedGames)
+// Module 10152 (UserProfileWidgetSuggestedGames)
 import nativeDefault from "native" /* 575 */;
-import intl3 from "intl" /* 1113 */;
-import react_native from "react-native" /* 5802 */;
-import Constants from "Constants" /* 7950 */;
-import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8017 */;
-import WidgetUtils from "WidgetUtils" /* 10094 */;
-import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 10110 */;
+import intl3 from "intl" /* 1112 */;
+import react_native from "react-native" /* 5804 */;
+import Constants from "Constants" /* 7949 */;
+import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8016 */;
+import WidgetUtils from "WidgetUtils" /* 10097 */;
+import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 10113 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let map, set;
@@ -27,7 +27,7 @@ let hasOwnProperty;
 let metroImportAll;
 let obj2;
 let tmp;
-const GameCoverImageDefault = tmp(10112);
+const GameCoverImageDefault = tmp(10115);
 ({ Pressable: closure_4, View: hasOwnProperty } = react_native2);
 let closure_7 = Constants.TrackUserProfileEditActions;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
@@ -175,9 +175,9 @@ export default function UserProfileWidgetSuggestedGames(widgetType) {
       } else {
         ref2.current = memo.indexOf(gameId);
       }
-      const AccessibilityAnnouncer = tmp(4801).AccessibilityAnnouncer;
+      const AccessibilityAnnouncer = tmp(4803).AccessibilityAnnouncer;
       const announce = AccessibilityAnnouncer.announce;
-      const intl = tmp(1113).intl;
+      const intl = tmp(1112).intl;
       announce(intl.string(intl3.t.q0U3DE), "polite");
       const obj3 = { userId: AuthenticationStore.getId(), action: memo.GAME_ADDED, widgetEdited: widgetType, gameId };
       const trackUserProfileEditAction = UserProfileAnalyticsUtils.trackUserProfileEditAction;

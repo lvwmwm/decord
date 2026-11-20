@@ -1,21 +1,21 @@
-// Module ID: 11316
-// Function ID: 11317
+// Module ID: 11258
+// Function ID: 11259
 // Name: StickerPackHeader
-// Dependencies: [19, 17, 11209, 21, 4792, 575, 5383, 6265, 1187, 11317, 11318, 1113, 11319, 6911, 2]
+// Dependencies: [19, 17, 11151, 21, 4794, 575, 5385, 6267, 1186, 11259, 11260, 1112, 11261, 6910, 2]
 
-// Module 11316 (StickerPackHeader)
+// Module 11258 (StickerPackHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1113 */;
-import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import StickersUtils from "StickersUtils" /* 6265 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11317 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11318 */;
+import intl2 from "intl" /* 1112 */;
+import native from "native" /* 1186 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import StickersUtils from "StickersUtils" /* 6267 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11259 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11260 */;
 import react from "react" /* 19 */;
-import StickerPickerConstants from "StickerPickerConstants" /* 11209 */;
+import StickerPickerConstants from "StickerPickerConstants" /* 11151 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let PADDING_HORIZONTAL;
@@ -27,7 +27,7 @@ let obj2;
 let obj3;
 let size;
 let tmp10;
-const StickerPackBannerDefault = tmp10(11319);
+const StickerPackBannerDefault = tmp10(11261);
 const View = react_native.View;
 ({ PADDING_VERTICAL, PADDING_HORIZONTAL } = StickerPickerConstants);
 ({ jsx: closure_4, jsxs: hasOwnProperty, Fragment: metroRequire } = Fragment);
@@ -74,13 +74,13 @@ const memoResult = react.memo(function StickerPackHeader(withDescription) {
   if (result) {
     const obj5 = { style: tmp.iconContainer, children: React3(Icon, obj6) };
     obj6 = { source: AssetRegistryDefault, style: tmp.animatedIcon, size: native.Icon.Sizes.EXTRA_SMALL, color: tmp.icon.color };
-    Icon = tmp6(1187).Icon;
+    Icon = tmp6(1186).Icon;
     result = tmp4(tmp5, obj5);
   }
   items[1] = result;
   const obj7 = { style: tmp.iconContainer, children: React3(Icon2, obj8) };
   obj8 = { source: AssetRegistryDefault2, style: tmp.premiumIcon, size: native.Icon.Sizes.EXTRA_SMALL, color: tmp.icon.color };
-  Icon2 = tmp6(1187).Icon;
+  Icon2 = tmp6(1186).Icon;
   items[2] = React3(View, obj7);
   const items1 = [React3(View, obj), , ];
   if (flag) {
@@ -88,13 +88,13 @@ const memoResult = react.memo(function StickerPackHeader(withDescription) {
   }
   if (flag) {
     const obj9 = { variant: "body-sm/medium", children: stickerPack.description };
-    flag = tmp4(tmp6(5383).Text, obj9);
+    flag = tmp4(tmp6(5385).Text, obj9);
   }
   const obj10 = { children: items1 };
   items1[1] = flag;
   const obj11 = { lineClamp: 1, variant: "body-xs/medium", color: "text-default", children: intl.format(intl2.t["0S3JpO"], obj12) };
-  const Text = tmp6(5383).Text;
-  intl = tmp6(1113).intl;
+  const Text = tmp6(5385).Text;
+  intl = tmp6(1112).intl;
   obj12 = { numStickers: stickerPack.stickers.length };
   items1[2] = React3(Text, obj11);
   const tmp2Result = hasOwnProperty(metroRequire, obj10);
@@ -107,7 +107,7 @@ const memoResult = react.memo(function StickerPackHeader(withDescription) {
   if (null != onPress) {
     const obj15 = { style: items3, onPress, accessibilityRole: "header", children: tmp2Result };
     items3 = [tmp.section, style];
-    tmp4Result = tmp4(tmp6(6911).PressableOpacity, obj15);
+    tmp4Result = tmp4(tmp6(6910).PressableOpacity, obj15);
   } else {
     const obj28 = { style: items4, children: tmp2Result };
     items4 = [tmp.section, style];

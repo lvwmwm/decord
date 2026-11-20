@@ -1,25 +1,25 @@
-// Module ID: 17294
-// Function ID: 17295
+// Module ID: 17121
+// Function ID: 17122
 // Name: UserSettingsDesignSystemModal
-// Dependencies: [32, 19, 17, 21, 4792, 575, 6973, 6976, 6308, 6910, 1113, 7102, 5471, 11981, 12205, 7692, 7694, 5383, 12178, 15199, 9998, 9997, 7229, 7437, 5390, 2]
+// Dependencies: [32, 19, 17, 21, 4794, 575, 6972, 6975, 6310, 6909, 1112, 7101, 5473, 11923, 12147, 7691, 7693, 5385, 12120, 15163, 10001, 10000, 7228, 7436, 5392, 2]
 // Exports: default
 
-// Module 17294 (UserSettingsDesignSystemModal)
+// Module 17121 (UserSettingsDesignSystemModal)
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import components_Button_Button from "components/Button/Button" /* 5390 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6308 */;
-import Navigator from "Navigator" /* 6973 */;
-import NavigatorHeader from "NavigatorHeader" /* 6976 */;
-import ModalScreen2 from "ModalScreen" /* 7692 */;
-import ModalContent2 from "ModalContent" /* 7694 */;
-import Modal from "Modal" /* 11981 */;
-import StepModal from "StepModal" /* 12205 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import components_Button_Button from "components/Button/Button" /* 5392 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6310 */;
+import Navigator from "Navigator" /* 6972 */;
+import NavigatorHeader from "NavigatorHeader" /* 6975 */;
+import ModalScreen2 from "ModalScreen" /* 7691 */;
+import ModalContent2 from "ModalContent" /* 7693 */;
+import Modal from "Modal" /* 11923 */;
+import StepModal from "StepModal" /* 12147 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -28,7 +28,7 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let size;
-const f113092 = () => {
+const f111249 = () => {
   let obj11;
   let obj12;
   let obj14;
@@ -173,13 +173,13 @@ const f113092 = () => {
 };
 function DemoModal() {
   const obj = Navigator;
-  const navigatorScreens = obj.useNavigatorScreens(f113092, []);
+  const navigatorScreens = obj.useNavigatorScreens(f111249, []);
   const obj2 = { screens: navigatorScreens, initialRouteName: constants.START };
   return metroImportDefault(Modal.Modal, obj2);
 }
 function DemoStepModal() {
   const obj = Navigator;
-  const navigatorScreens = obj.useNavigatorScreens(f113092, []);
+  const navigatorScreens = obj.useNavigatorScreens(f111249, []);
   const memo = react.useMemo(() => {
     const items = [, , , , ];
     ({ START: arr[0], WHO_DAT: arr[1], EVERYBODY: arr[2], JOCKIN: arr[3], LIMIT: arr[4] } = constants);
@@ -190,7 +190,7 @@ function DemoStepModal() {
 }
 function DemoGradientStepModal() {
   const obj = Navigator;
-  const navigatorScreens = obj.useNavigatorScreens(f113092, []);
+  const navigatorScreens = obj.useNavigatorScreens(f111249, []);
   const memo = react.useMemo(() => {
     const items = [, , , , ];
     ({ START: arr[0], WHO_DAT: arr[1], EVERYBODY: arr[2], JOCKIN: arr[3], LIMIT: arr[4] } = constants);
@@ -201,7 +201,7 @@ function DemoGradientStepModal() {
 }
 function DemoGradientModal() {
   let obj = Navigator;
-  const navigatorScreens = obj.useNavigatorScreens(f113092, []);
+  const navigatorScreens = obj.useNavigatorScreens(f111249, []);
   let obj2 = { screens: navigatorScreens, initialRouteName: constants.START, gradientColor: "blue" };
   return metroImportDefault(Modal.Modal, obj2);
 }
@@ -236,22 +236,22 @@ function DemoScreen(arg0) {
   const children1 = [metroImportAll(ModalContent, obj3), ];
   if (footer == null) {
     let tmp8Result = null != disclaimer;
-    const ModalFooter = tmp3(12178).ModalFooter;
+    const ModalFooter = tmp3(12120).ModalFooter;
     if (tmp8Result) {
       const obj5 = { children: disclaimer };
-      tmp8Result = tmp8(tmp3(15199).ModalDisclaimer, obj5);
+      tmp8Result = tmp8(tmp3(15163).ModalDisclaimer, obj5);
     }
     const items2 = [tmp8Result, , ];
     let tmp8Result3 = null != action;
     if (tmp8Result3) {
       const obj6 = { variant: "primary", text: action, onPress: onAction };
-      tmp8Result3 = tmp8(tmp3(9998).ModalActionButton, obj6);
+      tmp8Result3 = tmp8(tmp3(10001).ModalActionButton, obj6);
     }
     items2[1] = tmp8Result3;
     let tmp8Result4 = null != secondaryAction;
     if (tmp8Result4) {
       const obj7 = { variant: "secondary", text: secondaryAction, onPress: onSecondaryAction };
-      tmp8Result4 = tmp8(tmp3(9998).ModalActionButton, obj7);
+      tmp8Result4 = tmp8(tmp3(10001).ModalActionButton, obj7);
     }
     const obj8 = { children: items2 };
     items2[2] = tmp8Result4;
@@ -268,16 +268,16 @@ function SwitchesScreen(onAction) {
   let items;
   let obj2;
   let obj4;
-  const f113095 = () => false;
+  const f111252 = () => false;
   c1 = undefined;
   onAction = onAction.onAction;
   let tmp = closure_9();
   let parts = "I said ooh ah fhqwhgads, I said ooh ah fhqhgads!".split(" ");
-  [arr2, c1] = react.useState(parts.map(f113095));
+  [arr2, c1] = react.useState(parts.map(f111252));
   let obj = { title: "Everybody come on fhqwhgads.", emoji: "\u{1F44F}", footer: closure_7(ModalFloatingAction, obj2), children: items };
   obj2 = { isVisible: arr2.some((item) => item), floatingBackgroundColor: tmp.screen.backgroundColor, text: "Come on fhqwhgads", onPress: onAction };
-  _slicedToArray(react.useState(parts.map(f113095)), 2);
-  ModalFloatingAction = parts(9997).ModalFloatingAction;
+  _slicedToArray(react.useState(parts.map(f111252)), 2);
+  ModalFloatingAction = parts(10000).ModalFloatingAction;
   const obj3 = { style: tmp.tableRows, children: closure_7(TableRowGroup, obj4) };
   obj4 = {
     hasIcons: false,
@@ -300,8 +300,8 @@ function SwitchesScreen(onAction) {
       return closure_1_7(parts(dependencyMap[23]).TableSwitchRow, obj, index);
     })
   };
-  TableRowGroup = parts(7229).TableRowGroup;
-  items = [closure_7(closure_5, obj3), closure_7(parts(9997).ModalFloatingActionSpacer, {})];
+  TableRowGroup = parts(7228).TableRowGroup;
+  items = [closure_7(closure_5, obj3), closure_7(parts(10000).ModalFloatingActionSpacer, {})];
   return closure_8(DemoScreen, obj);
 }
 function openDemoModal() {

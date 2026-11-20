@@ -1,30 +1,30 @@
-// Module ID: 13576
-// Function ID: 13577
+// Module ID: 13546
+// Function ID: 13547
 // Name: AcceptInvite
-// Dependencies: [19, 17, 1072, 21, 4792, 575, 1655, 6928, 1255, 5356, 13577, 13578, 13581, 1414, 1449, 13586, 1496, 5479, 2]
+// Dependencies: [19, 17, 1071, 21, 4794, 575, 1653, 6927, 1254, 5358, 13547, 13548, 13551, 1412, 1447, 13556, 1494, 5481, 2]
 // Exports: default
 
-// Module 13576 (AcceptInvite)
+// Module 13546 (AcceptInvite)
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import GlobalUtils from "GlobalUtils" /* 1255 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import ImageLoaderUtils from "ImageLoaderUtils" /* 1449 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import useToken from "useToken" /* 5356 */;
-import FastImageDefault from "FastImage" /* 5479 */;
-import Card_Card from "Card/Card" /* 6928 */;
-import useEaseInEaseOutLayoutAnimationsDefault from "useEaseInEaseOutLayoutAnimations" /* 13577 */;
-import InviteDetailsDefault from "InviteDetails" /* 13578 */;
-import InviteErrorDefault from "InviteError" /* 13581 */;
+import Constants from "Constants" /* 1071 */;
+import GlobalUtils from "GlobalUtils" /* 1254 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
+import ImageLoaderUtils from "ImageLoaderUtils" /* 1447 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import useToken from "useToken" /* 5358 */;
+import FastImageDefault from "FastImage" /* 5481 */;
+import Card_Card from "Card/Card" /* 6927 */;
+import useEaseInEaseOutLayoutAnimationsDefault from "useEaseInEaseOutLayoutAnimations" /* 13547 */;
+import InviteDetailsDefault from "InviteDetails" /* 13548 */;
+import InviteErrorDefault from "InviteError" /* 13551 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
-const module_1655 = _mod1655;
+const module_1653 = _mod1653;
 
 let StyleSheet;
 let c3;
@@ -101,7 +101,7 @@ function AcceptInviteCardComponent(invite) {
           tmp14Result = tmp14(tmp2Result, obj2);
         }
         const obj3 = { style: tmp.cardState, entering, exiting, children: tmp14Result };
-        return metroRequire(module_1655.View, obj3, LOADING);
+        return metroRequire(module_1653.View, obj3, LOADING);
       }
       const tmp18 = null != invite && LOADING === constants.ERROR;
       if (tmp18) {
@@ -125,7 +125,7 @@ obj3 = { marginVertical: 0, resizeMode: "cover" };
 let merged = Object.assign(StyleSheet.absoluteFillObject);
 obj4 = { position: "absolute", flex: 1, width: "90%", alignItems: "center", justifyContent: "center", padding: 0, backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
 let closure_8 = createStyles(obj);
-let closure_9 = module_1655.createAnimatedComponent(Card_Card.Card);
+let closure_9 = module_1653.createAnimatedComponent(Card_Card.Card);
 const constants = { LOADING: 0, [0]: "LOADING", DETAILS: 1, [1]: "DETAILS", ERROR: 2, [2]: "ERROR" };
 const result = size.fileFinishedImporting("modules/accept_invite/native/AcceptInvite.tsx");
 
@@ -156,7 +156,7 @@ export default function AcceptInvite(invite) {
     splash = guild.splash;
   }
   if (null == splash) {
-    guildSplashSource = tmp3(13586);
+    guildSplashSource = tmp3(13556);
   } else {
     ({ id: obj2.id, splash: obj2.splash } = guild);
     const obj4 = { id: null, splash: null, size: width * obj3.getDevicePixelRatio() };
@@ -168,7 +168,7 @@ export default function AcceptInvite(invite) {
   const obj5 = { style: items, children: items2 };
   items = [tmp2.parentContainer, { height, width }];
   const obj6 = { style: { height, width }, children: metroRequire(FastImageDefault, obj7) };
-  const layout = tmp3(13577)().layout;
+  const layout = tmp3(13547)().layout;
   obj7 = { source: guildSplashSource, style: items1 };
   items1 = [tmp2.imageStyle, { height, width }];
   items2 = [metroRequire(React3, obj6), ];
@@ -176,7 +176,7 @@ export default function AcceptInvite(invite) {
   obj9 = { style: tmp2.cardContainer, layout, children: metroRequire(React3, obj10) };
   obj10 = { style: tmp2.cardContent, children: metroRequire(AcceptInviteCardComponent, obj18) };
   obj18 = { invite };
-  const LayoutAnimationConfig = _mod1655.LayoutAnimationConfig;
+  const LayoutAnimationConfig = _mod1653.LayoutAnimationConfig;
   const merged1 = Object.assign(merged);
   items2[1] = metroRequire(LayoutAnimationConfig, obj8);
   return metroImportDefault(React3, obj5);

@@ -188,21 +188,21 @@ export function dirname(arr) {
   }
   return str2;
 }
-export function isAbsolute(path) {
-  return "/" === path.charAt(0);
+export function isAbsolute(str) {
+  return "/" === str.charAt(0);
 }
 export function join() {
   const items = [...arguments];
   return normalizePath(items.join("/"));
 }
 export { normalizePath };
-export function relative(arg0, arg1) {
+export function relative(root, replaced) {
   let items;
   let items1;
   let length;
-  const arr = resolve(arg0);
+  const arr = resolve(root);
   const str = arr.slice(1);
-  const arr2 = resolve(arg1);
+  const arr2 = resolve(replaced);
   const str2 = arr2.slice(1);
   const parts = str.split("/");
   let num = 0;

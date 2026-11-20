@@ -1,17 +1,17 @@
-// Module ID: 19590
-// Function ID: 19591
+// Module ID: 19408
+// Function ID: 19409
 // Name: InteractionModalManager
-// Dependencies: [5, 2165, 8130, 1072, 5852, 19591, 2121, 1256, 4667, 1242, 19602, 15695, 5436, 19605, 7365, 2]
+// Dependencies: [5, 2163, 8129, 1071, 5854, 19409, 2119, 1255, 4669, 1241, 19420, 15659, 5438, 19423, 7364, 2]
 
-// Module 19590 (InteractionModalManager)
-import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import isPostMessageDisconnectDefault from "isPostMessageDisconnect" /* 15695 */;
-import openInteractionIframeModalDefault from "openInteractionIframeModal" /* 19602 */;
+// Module 19408 (InteractionModalManager)
+import Constants from "Constants" /* 1071 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import isPostMessageDisconnectDefault from "isPostMessageDisconnect" /* 15659 */;
+import openInteractionIframeModalDefault from "openInteractionIframeModal" /* 19420 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 2165 */;
-import InteractionStore from "InteractionStore" /* 8130 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7365 */;
+import ApplicationStore from "ApplicationStore" /* 2163 */;
+import InteractionStore from "InteractionStore" /* 8129 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7364 */;
 import size from "module_2" /* 2 */;
 
 let closure_2, data, iFrameModal, interactionDebugContext;
@@ -78,7 +78,7 @@ let obj = function _handleInteractionModalCreate() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -121,7 +121,7 @@ let obj = function _handleInteractionModalCreate() {
               obj.addBreadcrumb(obj8);
             }
             c4 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp18) {
           c4 = 3;

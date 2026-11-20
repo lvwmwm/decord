@@ -68,7 +68,7 @@ export function createEnvelope(eventEnvelopeHeaders, items1) {
   items1 = [eventEnvelopeHeaders, items];
   return items1;
 }
-export function createEventEnvelopeHeaders(event_id, sdkMetadataForEnvelopeHeader, tunnel, dsn) {
+export function createEventEnvelopeHeaders(event_id, sdkMetadataForEnvelopeHeader, tunnel, _dsn) {
   let date;
   let obj5;
   const sdkProcessingMetadata = event_id.sdkProcessingMetadata;
@@ -84,9 +84,9 @@ export function createEventEnvelopeHeaders(event_id, sdkMetadataForEnvelopeHeade
     const obj2 = { sdk: sdkMetadataForEnvelopeHeader };
   }
   const merged = Object.assign(tmp2);
-  let tmp4 = tunnel && dsn;
+  let tmp4 = tunnel && _dsn;
   if (tmp4) {
-    const obj3 = { dsn: obj5.dsnToString(dsn) };
+    const obj3 = { dsn: obj5.dsnToString(_dsn) };
     tmp4 = obj3;
     obj5 = _mod701;
   }

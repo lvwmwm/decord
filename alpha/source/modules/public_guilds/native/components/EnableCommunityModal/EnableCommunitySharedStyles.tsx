@@ -1,11 +1,11 @@
-// Module ID: 19950
-// Function ID: 19951
+// Module ID: 19770
+// Function ID: 19771
 // Name: EnableCommunitySharedStyles
-// Dependencies: [17, 4792, 2]
+// Dependencies: [17, 4794, 2]
 
-// Module 19950 (EnableCommunitySharedStyles)
+// Module 19770 (EnableCommunitySharedStyles)
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const Platform = react_native.Platform;

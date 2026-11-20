@@ -1,24 +1,24 @@
-// Module ID: 18992
-// Function ID: 18993
+// Module ID: 18816
+// Function ID: 18817
 // Name: ChannelSettingsInstantInvites
-// Dependencies: [32, 19, 17, 11190, 4641, 1072, 21, 4792, 575, 1630, 504, 11189, 13757, 1187, 13772, 13773, 1113, 7071, 18993, 7313, 2]
+// Dependencies: [32, 19, 17, 11132, 4643, 1071, 21, 4794, 575, 1628, 504, 11131, 13726, 1186, 13741, 13742, 1112, 7070, 18817, 7312, 2]
 // Exports: default
 
-// Module 18992 (ChannelSettingsInstantInvites)
+// Module 18816 (ChannelSettingsInstantInvites)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import FastestListDefault from "FastestList" /* 7313 */;
-import InstantInvite from "InstantInvite" /* 13757 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13772 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13773 */;
+import Constants from "Constants" /* 1071 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
+import FastestListDefault from "FastestList" /* 7312 */;
+import InstantInvite from "InstantInvite" /* 13726 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13741 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13742 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelSettingsStore from "ChannelSettingsStore" /* 11190 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
+import ChannelSettingsStore from "ChannelSettingsStore" /* 11132 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -129,9 +129,9 @@ export default function ConnectedChannelSettingsInstantInvites() {
   if (!loading) {
     if (0 === memo1.length) {
       const obj4 = { lightSource: AssetRegistryDefault, darkSource: AssetRegistryDefault2, title: intl.string(require("intl").t["+nLJkZ"]), body: intl2.string(require("intl").t.F53CAc) };
-      const EmptyState = tmp7(1187).EmptyState;
-      intl = tmp7(1113).intl;
-      intl2 = tmp7(1113).intl;
+      const EmptyState = tmp7(1186).EmptyState;
+      intl = tmp7(1112).intl;
+      intl2 = tmp7(1112).intl;
       tmp21 = closure_9(EmptyState, obj4);
     }
     return tmp21;
@@ -146,14 +146,14 @@ export default function ConnectedChannelSettingsInstantInvites() {
     tmp21 = tmp17Result;
   }
   const obj7 = { style: tmp.content, children: items8 };
-  items8 = [closure_9(tmp7(7071).SceneLoadingIndicator, {}), ];
+  items8 = [closure_9(tmp7(7070).SceneLoadingIndicator, {}), ];
   let tmp19Result = null;
   const tmp17 = closure_10;
   const tmp18 = stateFromStoresArray;
   const tmp19 = closure_9;
   if (memo1.length > 0) {
     const obj8 = { item: memo1[0], onMeasured: callback };
-    tmp19Result = tmp19(tmp2(18993), obj8);
+    tmp19Result = tmp19(tmp2(18817), obj8);
   }
   items8[1] = tmp19Result;
   tmp17Result = tmp17(tmp18, obj7);

@@ -1,17 +1,17 @@
-// Module ID: 13017
-// Function ID: 13018
+// Module ID: 12987
+// Function ID: 12988
 // Name: useChatInputFloatingBounce
-// Dependencies: [32, 19, 12735, 1655, 5002, 1708, 5393, 2]
+// Dependencies: [32, 19, 12705, 1653, 5004, 1706, 5395, 2]
 // Exports: default
 
-// Module 13017 (useChatInputFloatingBounce)
-import _mod1655 from "module_1655" /* 1655 */;
-import _mod1708 from "module_1708" /* 1708 */;
-import timing_timing from "timing/timing" /* 5002 */;
-import spring_spring from "spring/spring" /* 5393 */;
+// Module 12987 (useChatInputFloatingBounce)
+import _mod1653 from "module_1653" /* 1653 */;
+import _mod1706 from "module_1706" /* 1706 */;
+import timing_timing from "timing/timing" /* 5004 */;
+import spring_spring from "spring/spring" /* 5395 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChatInputConstants from "ChatInputConstants" /* 12735 */;
+import ChatInputConstants from "ChatInputConstants" /* 12705 */;
 import size from "module_2" /* 2 */;
 
 let set, set2, set3, set4;
@@ -98,7 +98,7 @@ export default function useChatInputFloatingBounce(visible) {
     if (tmp) {
       const items = [closure_8, , ];
       const withTiming2 = timing_timing.withTiming;
-      items[1] = _mod1708.scheduleOnRN;
+      items[1] = _mod1706.scheduleOnRN;
       items[2] = hasOwnProperty;
       let c0;
       let c1;
@@ -116,7 +116,7 @@ export default function useChatInputFloatingBounce(visible) {
       let withDelayResult = withTiming2Result;
       set3 = sharedValue.set;
       if (num > 0) {
-        const obj2 = _mod1655;
+        const obj2 = _mod1653;
         withDelayResult = obj2.withDelay(tmp40, withTiming2Result);
       }
       set3(withDelayResult);
@@ -125,7 +125,7 @@ export default function useChatInputFloatingBounce(visible) {
       let withDelayResult1 = withSpringResult;
       set4 = sharedValue2.set;
       if (num > 0) {
-        const obj4 = _mod1655;
+        const obj4 = _mod1653;
         withDelayResult1 = obj4.withDelay(tmp40, withSpringResult);
       }
       set4(withDelayResult1);
@@ -133,7 +133,7 @@ export default function useChatInputFloatingBounce(visible) {
       set = sharedValue.set;
       const items2 = [closure_9, , ];
       const withTiming = timing_timing.withTiming;
-      items2[1] = _mod1708.scheduleOnRN;
+      items2[1] = _mod1706.scheduleOnRN;
       items2[2] = function handleExitFinished() {
         const current = ref.current;
         let currentResult;

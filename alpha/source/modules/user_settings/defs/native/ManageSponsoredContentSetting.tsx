@@ -1,14 +1,14 @@
-// Module ID: 17404
-// Function ID: 17405
+// Module ID: 17231
+// Function ID: 17232
 // Name: ManageSponsoredContentSetting
-// Dependencies: [8593, 1072, 11875, 1113, 2226, 17405, 2]
+// Dependencies: [8592, 1071, 11817, 1112, 2226, 17232, 2]
 
-// Module 17404 (ManageSponsoredContentSetting)
-import Constants from "Constants" /* 1072 */;
-import intl2 from "intl" /* 1113 */;
+// Module 17231 (ManageSponsoredContentSetting)
+import Constants from "Constants" /* 1071 */;
+import intl2 from "intl" /* 1112 */;
 import _modDef2226 from "module_2226" /* 2226 */;
-import SettingsConstants from "SettingsConstants" /* 8593 */;
-import SettingBuilders from "SettingBuilders" /* 11875 */;
+import SettingsConstants from "SettingsConstants" /* 8592 */;
+import SettingBuilders from "SettingBuilders" /* 11817 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

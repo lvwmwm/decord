@@ -1,11 +1,11 @@
-// Module ID: 8052
-// Function ID: 8053
+// Module ID: 8051
+// Function ID: 8052
 // Name: StorefrontCacheUtils
-// Dependencies: [1089, 2]
+// Dependencies: [1088, 2]
 // Exports: shouldRefetchEntry
 
-// Module 8052 (StorefrontCacheUtils)
-import DurationsDefault from "Durations" /* 1089 */;
+// Module 8051 (StorefrontCacheUtils)
+import DurationsDefault from "Durations" /* 1088 */;
 import size from "module_2" /* 2 */;
 
 const result = 12 * DurationsDefault.Millis.HOUR;

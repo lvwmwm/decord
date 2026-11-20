@@ -1,14 +1,14 @@
-// Module ID: 9918
-// Function ID: 9919
+// Module ID: 9921
+// Function ID: 9922
 // Name: WaterwheelsDiscoverExperiment
-// Dependencies: [1246, 502, 1388, 1452, 504, 2]
+// Dependencies: [1245, 502, 1386, 1450, 504, 2]
 // Exports: getWaterwheelsDiscoverEnabled, useWaterwheelsDiscoverEnabled
 
-// Module 9918 (WaterwheelsDiscoverExperiment)
-import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
+// Module 9921 (WaterwheelsDiscoverExperiment)
+import ApexExperimentStore from "ApexExperimentStore" /* 1245 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import UserStore from "UserStore" /* 1388 */;
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+import UserStore from "UserStore" /* 1386 */;
+import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

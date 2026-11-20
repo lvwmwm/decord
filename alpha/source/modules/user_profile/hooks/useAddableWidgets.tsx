@@ -1,23 +1,23 @@
-// Module ID: 14465
-// Function ID: 14466
+// Module ID: 14433
+// Function ID: 14434
 // Name: useAddableWidgets
-// Dependencies: [19, 10272, 1388, 6840, 10257, 4617, 563, 10090, 14466, 14467, 7420, 10276, 6842, 14468, 6838, 1255, 6843, 6839, 2]
+// Dependencies: [19, 10212, 1386, 6840, 10197, 4619, 563, 10093, 14434, 14435, 7419, 10216, 6842, 14436, 6838, 1254, 6843, 6839, 2]
 // Exports: default
 
-// Module 14465 (useAddableWidgets)
+// Module 14433 (useAddableWidgets)
 import UserProfileWidgetConstants from "UserProfileWidgetConstants" /* 6840 */;
-import ApplicationWidgetConfigSurface from "ApplicationWidgetConfigSurface" /* 10257 */;
-import ApplicationWidgetConfigActions from "ApplicationWidgetConfigActions" /* 10276 */;
+import ApplicationWidgetConfigSurface from "ApplicationWidgetConfigSurface" /* 10197 */;
+import ApplicationWidgetConfigActions from "ApplicationWidgetConfigActions" /* 10216 */;
 import react from "react" /* 19 */;
-import ApplicationWidgetConfigStore from "ApplicationWidgetConfigStore" /* 10272 */;
-import UserStore from "UserStore" /* 1388 */;
+import ApplicationWidgetConfigStore from "ApplicationWidgetConfigStore" /* 10212 */;
+import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let importDefault, set;
 
 function hasAddableApplicationWidgetSurfaces(arg0) {
-  const tmp3 = null != arg0.surfaces[ApplicationWidgetConfigSurface.ApplicationWidgetConfigSurface.WIDGET_TOP] && null != arg0.surfaces[tmp(undefined, 10257).ApplicationWidgetConfigSurface.WIDGET_BOTTOM] && null != arg0.surfaces[tmp(undefined, 10257).ApplicationWidgetConfigSurface.ADD_WIDGET_PREVIEW];
+  const tmp3 = null != arg0.surfaces[ApplicationWidgetConfigSurface.ApplicationWidgetConfigSurface.WIDGET_TOP] && null != arg0.surfaces[tmp(undefined, 10197).ApplicationWidgetConfigSurface.WIDGET_BOTTOM] && null != arg0.surfaces[tmp(undefined, 10197).ApplicationWidgetConfigSurface.ADD_WIDGET_PREVIEW];
   return tmp3;
 }
 const WIDGET_SORT_ORDER = UserProfileWidgetConstants.WIDGET_SORT_ORDER;

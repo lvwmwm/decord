@@ -1,15 +1,15 @@
-// Module ID: 14604
-// Function ID: 14605
+// Module ID: 14572
+// Function ID: 14573
 // Name: maybeOpenSpoilerGateForVoiceChannel
-// Dependencies: [4641, 21, 6318, 5741, 14605, 2]
+// Dependencies: [4643, 21, 6320, 5743, 14573, 2]
 // Exports: maybeOpenSpoilerGateForVoiceChannel
 
-// Module 14604 (maybeOpenSpoilerGateForVoiceChannel)
+// Module 14572 (maybeOpenSpoilerGateForVoiceChannel)
 import Fragment from "Fragment" /* 21 */;
-import useAlertStore from "useAlertStore" /* 5741 */;
-import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6318 */;
-import VoicePanelSpoilerAlert from "VoicePanelSpoilerAlert" /* 14605 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
+import useAlertStore from "useAlertStore" /* 5743 */;
+import SpoilerChannelUtils from "SpoilerChannelUtils" /* 6320 */;
+import VoicePanelSpoilerAlert from "VoicePanelSpoilerAlert" /* 14573 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
 import size from "module_2" /* 2 */;
 
 const VoicePanelSpoilerAlertDefault = VoicePanelSpoilerAlert;

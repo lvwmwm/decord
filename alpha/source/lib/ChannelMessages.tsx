@@ -1,18 +1,18 @@
-// Module ID: 6268
-// Function ID: 6269
+// Module ID: 6270
+// Function ID: 6271
 // Name: ChannelMessages
-// Dependencies: [1072, 3, 6269, 11, 5845, 12, 6270, 6271, 6272, 2]
+// Dependencies: [1071, 3, 6271, 11, 5847, 12, 6272, 6273, 6274, 2]
 // Exports: flatMapChannelMessages
 
-// Module 6268 (ChannelMessages)
+// Module 6270 (ChannelMessages)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 5845 */;
-import EnsureReceivedMessagesAddedInOrderExperimentDefault from "EnsureReceivedMessagesAddedInOrderExperiment" /* 6269 */;
-import flow_Client from "flow/Client" /* 6270 */;
-import SortedArrayUtilsAll from "SortedArrayUtils" /* 6272 */;
-import Constants from "Constants" /* 1072 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 5847 */;
+import EnsureReceivedMessagesAddedInOrderExperimentDefault from "EnsureReceivedMessagesAddedInOrderExperiment" /* 6271 */;
+import flow_Client from "flow/Client" /* 6272 */;
+import SortedArrayUtilsAll from "SortedArrayUtils" /* 6274 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -1506,7 +1506,7 @@ class ChannelMessages {
           jumpType = jump.jumpType;
         }
         if (jumpType == null) {
-          jumpType = id(6270).JumpType.ANIMATED;
+          jumpType = id(6272).JumpType.ANIMATED;
         }
         let obj2 = { ready: true, loadingMore: false, jumpType, jumpFlash: flag8, jumped: null != jump, jumpedToPresent: flag9, jumpTargetId: messageId, jumpTargetOffset: num, jumpSequenceId: null, jumpReturnTargetId: null, onJumpComplete: null, hasMoreBefore: null, hasMoreAfter: null, cached: null, hasFetched: null, error: false, initialScrollSequenceId: null, suppressRowAnimationSequenceId: null };
         flag8 = undefined;
@@ -1675,7 +1675,7 @@ class ChannelMessages {
     let reversed;
     let sum;
     const self = this;
-    let obj = reversed(6271);
+    let obj = reversed(6273);
     const result = obj.requireSortedDescending(messages);
     const mapped = messages.map((item) => mergeMessage(self, item));
     reversed = mapped.reverse();

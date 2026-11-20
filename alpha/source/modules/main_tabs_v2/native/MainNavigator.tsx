@@ -1,31 +1,31 @@
-// Module ID: 17491
-// Function ID: 17492
+// Module ID: 17318
+// Function ID: 17319
 // Name: MainNavigator
-// Dependencies: [32, 19, 17, 502, 17492, 1072, 21, 4792, 1380, 4749, 15197, 17493, 17494, 17561, 18898, 18905, 18938, 18970, 8518, 19040, 19041, 19044, 19048, 19050, 19079, 19085, 19086, 4977, 1500, 1628, 19087, 5529, 8442, 19091, 19165, 563, 10544, 4971, 6973, 11916, 18951, 19168, 19199, 10795, 19201, 10476, 2]
+// Dependencies: [32, 19, 17, 502, 17319, 1071, 21, 4794, 1378, 4751, 15161, 17320, 17321, 17388, 18722, 18729, 18762, 18794, 8517, 18859, 18860, 18863, 18867, 18869, 18898, 18904, 18905, 4979, 1498, 1626, 18906, 5531, 8441, 18910, 18984, 563, 10486, 4973, 6972, 11858, 18775, 18987, 19018, 10737, 19020, 10418, 2]
 // Exports: getChannelScreen
 
-// Module 17491 (MainNavigator)
+// Module 17318 (MainNavigator)
 import react_native from "react-native" /* 17 */;
-import KeyboardUIStore from "KeyboardUIStore" /* 1500 */;
-import KeyboardTypes from "KeyboardTypes" /* 1628 */;
-import DeviceUtils from "DeviceUtils" /* 4749 */;
-import ChatInputUtils from "ChatInputUtils" /* 4977 */;
-import GlobalStatusIndicatorDefault from "GlobalStatusIndicator" /* 10795 */;
-import StartupProfiler from "StartupProfiler" /* 11916 */;
-import createAccessibleNativeStackNavigatorDefault from "createAccessibleNativeStackNavigator" /* 15197 */;
-import NavigationConstants from "NavigationConstants" /* 17492 */;
-import createChatPanelNativeStackNavigatorDefault from "createChatPanelNativeStackNavigator" /* 17493 */;
-import AutoAnalytics from "AutoAnalytics" /* 18898 */;
-import VisualEffectViewTargetDefault from "VisualEffectViewTarget" /* 18951 */;
-import LaunchPadContainerDefault from "LaunchPadContainer" /* 19168 */;
-import ParentalConsentWarningBannerDefault from "ParentalConsentWarningBanner" /* 19199 */;
+import KeyboardUIStore from "KeyboardUIStore" /* 1498 */;
+import KeyboardTypes from "KeyboardTypes" /* 1626 */;
+import DeviceUtils from "DeviceUtils" /* 4751 */;
+import ChatInputUtils from "ChatInputUtils" /* 4979 */;
+import GlobalStatusIndicatorDefault from "GlobalStatusIndicator" /* 10737 */;
+import StartupProfiler from "StartupProfiler" /* 11858 */;
+import createAccessibleNativeStackNavigatorDefault from "createAccessibleNativeStackNavigator" /* 15161 */;
+import NavigationConstants from "NavigationConstants" /* 17319 */;
+import createChatPanelNativeStackNavigatorDefault from "createChatPanelNativeStackNavigator" /* 17320 */;
+import AutoAnalytics from "AutoAnalytics" /* 18722 */;
+import VisualEffectViewTargetDefault from "VisualEffectViewTarget" /* 18775 */;
+import LaunchPadContainerDefault from "LaunchPadContainer" /* 18987 */;
+import ParentalConsentWarningBannerDefault from "ParentalConsentWarningBanner" /* 19018 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import Constants from "Constants" /* 1072 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1380 */;
+import createStyles from "createStyles" /* 4794 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1378 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -38,7 +38,7 @@ let closure_12;
 let metroImportAll;
 let tmp2;
 let unpackModuleId;
-const getNavigationModalPresentationDefault = tmp2(10476);
+const getNavigationModalPresentationDefault = tmp2(10418);
 function getId(params) {
   return params.params.screenKey;
 }
@@ -224,7 +224,7 @@ const memoResult = react.memo(function StackNavigator() {
       tmpResult = tmp(WrappedAutoAnalytics, {});
     }
     let items = [tmpResult, ];
-    let obj3 = { profile: tmp5(11916).Profiles.StackNavigator, children: tmp6(Navigator, obj4) };
+    let obj3 = { profile: tmp5(11858).Profiles.StackNavigator, children: tmp6(Navigator, obj4) };
     obj4 = {
       id: "root",
       screenOptions() {
@@ -471,7 +471,7 @@ const memoResult = react.memo(function StackNavigator() {
     };
     items1[14] = tmp(closure_16.Screen, obj25);
     items[1] = tmp(tmp2Result, obj3);
-    items2 = [tmp(tmp8, obj16), tmp5(19201).APP_EXTRA_COMPONENTS, tmp5(19201).APP_EXTRA_COMPONENTS_NEVER_FREEZE, tmp5(19201).APP_EXTRA_COMPONENTS_EXTERNAL_PIP];
+    items2 = [tmp(tmp8, obj16), tmp5(19020).APP_EXTRA_COMPONENTS, tmp5(19020).APP_EXTRA_COMPONENTS_NEVER_FREEZE, tmp5(19020).APP_EXTRA_COMPONENTS_EXTERNAL_PIP];
     return tmp(tmp4, obj);
   }, items1);
 });

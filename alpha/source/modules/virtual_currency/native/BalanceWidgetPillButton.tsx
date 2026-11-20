@@ -1,16 +1,16 @@
 // Module ID: 9324
 // Function ID: 9325
 // Name: BalanceWidgetPillButton
-// Dependencies: [19, 17, 21, 4792, 5390, 8839, 1113, 8887, 2]
+// Dependencies: [19, 17, 21, 4794, 5392, 8839, 1112, 8887, 2]
 
 // Module 9324 (BalanceWidgetPillButton)
 import react_native from "react-native" /* 17 */;
-import components_Button_Button from "components/Button/Button" /* 5390 */;
+import components_Button_Button from "components/Button/Button" /* 5392 */;
 import AssetRegistryDefault from "AssetRegistry" /* 8839 */;
 import IndicatorDot from "IndicatorDot" /* 8887 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -50,13 +50,13 @@ class BalanceWidgetPillButton {
     if (flag) {
       str2 = "auto";
     }
-    const intl = tmp5(1113).intl;
+    const intl = tmp5(1112).intl;
     if (null === balance) {
-      stringResult = intl.string(tmp5(1113).t.y0WGqP);
+      stringResult = intl.string(tmp5(1112).t.y0WGqP);
     } else {
       const formatToPlainString = intl.formatToPlainString;
       const obj2 = { balance: balance.toString() };
-      const zPaLL9 = tmp5(1113).t.zPaLL9;
+      const zPaLL9 = tmp5(1112).t.zPaLL9;
       stringResult = formatToPlainString(zPaLL9, obj2);
     }
     const children = [React3(Button, obj), ];

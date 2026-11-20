@@ -1,21 +1,21 @@
-// Module ID: 17593
-// Function ID: 17594
+// Module ID: 17420
+// Function ID: 17421
 // Name: useHomeDrawerPeekHint
-// Dependencies: [32, 19, 4793, 17585, 1072, 4638, 1655, 4625, 1503, 17594, 504, 17587, 4824, 8960, 5002, 5393, 17591, 1708, 2]
+// Dependencies: [32, 19, 4795, 17412, 1071, 4640, 1653, 4627, 1501, 17421, 504, 17414, 4826, 8960, 5004, 5395, 17418, 1706, 2]
 // Exports: useHomeDrawerPeekHint
 
-// Module 17593 (useHomeDrawerPeekHint)
-import Constants from "Constants" /* 1072 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import dismissible_content from "dismissible_content" /* 4625 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4638 */;
-import timing_timing from "timing/timing" /* 5002 */;
-import spring_spring from "spring/spring" /* 5393 */;
-import useHomeDrawerGesture from "useHomeDrawerGesture" /* 17591 */;
+// Module 17420 (useHomeDrawerPeekHint)
+import Constants from "Constants" /* 1071 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import dismissible_content from "dismissible_content" /* 4627 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4640 */;
+import timing_timing from "timing/timing" /* 5004 */;
+import spring_spring from "spring/spring" /* 5395 */;
+import useHomeDrawerGesture from "useHomeDrawerGesture" /* 17418 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4793 */;
-import HomeDrawerStore_mod from "HomeDrawerStore" /* 17585 */;
+import AccessibilityStore from "AccessibilityStore" /* 4795 */;
+import HomeDrawerStore_mod from "HomeDrawerStore" /* 17412 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -25,8 +25,8 @@ let HomeDrawerStore = HomeDrawerStore_mod;
 const ME = Constants.ME;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 let c8 = 2000;
-const Easing = _mod1655.Easing;
-let closure_9 = Easing.inOut(_mod1655.Easing.cubic);
+const Easing = _mod1653.Easing;
+let closure_9 = Easing.inOut(_mod1653.Easing.cubic);
 let closure_10 = [];
 let items = [dismissible_content.DismissibleContent.HOME_DRAWER_SWIPE_PEEK_NUX];
 let closure_12 = { code: "(function useHomeDrawerPeekHintTsx1(){let[gestureState,panelX,PEEK_HINT_DRAWER_DRAG_THRESHOLD]=this.__closure;return gestureState.get().active&&panelX.get()>PEEK_HINT_DRAWER_DRAG_THRESHOLD;})" };
@@ -242,8 +242,8 @@ export function useHomeDrawerPeekHint(enablePeekHint, sharedValue8) {
     useHomeDrawerPeekHintTsx1.__initData = tmp36;
     const items10 = [ref5, tmp26, , ];
     const useAnimatedReaction = tmp3(tmp4[6]).useAnimatedReaction;
-    require("module_1655");
-    items10[2] = require("module_1708").scheduleOnRN;
+    require("module_1653");
+    items10[2] = require("module_1706").scheduleOnRN;
     items10[3] = callback2;
     let c0;
     let c1;

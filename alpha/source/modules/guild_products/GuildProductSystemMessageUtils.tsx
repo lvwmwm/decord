@@ -1,12 +1,12 @@
-// Module ID: 8612
-// Function ID: 8613
+// Module ID: 8611
+// Function ID: 8612
 // Name: GuildProductSystemMessageUtils
-// Dependencies: [1072, 1113, 2]
+// Dependencies: [1071, 1112, 2]
 // Exports: getGuildProductPurchaseSystemMessageContentMobile
 
-// Module 8612 (GuildProductSystemMessageUtils)
-import Constants from "Constants" /* 1072 */;
-import intl2 from "intl" /* 1113 */;
+// Module 8611 (GuildProductSystemMessageUtils)
+import Constants from "Constants" /* 1071 */;
+import intl2 from "intl" /* 1112 */;
 import size from "module_2" /* 2 */;
 
 const NOOP = Constants.NOOP;

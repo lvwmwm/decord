@@ -1,16 +1,16 @@
-// Module ID: 13342
-// Function ID: 13343
+// Module ID: 13312
+// Function ID: 13313
 // Name: useDeactivateWarningText
-// Dependencies: [19, 5413, 4698, 4663, 504, 7374, 7882, 1113, 2755, 2]
+// Dependencies: [19, 5415, 4700, 4665, 504, 7373, 7881, 1112, 2757, 2]
 // Exports: default
 
-// Module 13342 (useDeactivateWarningText)
-import _modDef2755 from "module_2755" /* 2755 */;
-import Powerups from "Powerups" /* 7882 */;
+// Module 13312 (useDeactivateWarningText)
+import _modDef2757 from "module_2757" /* 2757 */;
+import Powerups from "Powerups" /* 7881 */;
 import react_mod from "react" /* 19 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5413 */;
-import GuildRoleStore from "GuildRoleStore" /* 4698 */;
-import GuildStore from "GuildStore" /* 4663 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5415 */;
+import GuildRoleStore from "GuildRoleStore" /* 4700 */;
+import GuildStore from "GuildStore" /* 4665 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -82,24 +82,24 @@ export default function useDeactivateWarningText(arg0, skuId) {
       let formatToPlainStringResult;
       let tmp16;
       if (stateFromStores2 > 0) {
-        const intl5 = tmp2(1113).intl;
+        const intl5 = tmp2(1112).intl;
         const obj2 = { perk: skuId.title, memberCount: tmp15 };
-        formatToPlainStringResult = intl5.formatToPlainString(_modDef2755["4jSvr1"], obj2);
+        formatToPlainStringResult = intl5.formatToPlainString(_modDef2757["4jSvr1"], obj2);
         tmp16 = importDefault;
       } else {
-        const intl4 = tmp2(1113).intl;
+        const intl4 = tmp2(1112).intl;
         tmp16 = importDefault;
         const obj3 = { perk: skuId.title };
-        formatToPlainStringResult = intl4.formatToPlainString(_modDef2755.cavtEo, obj3);
+        formatToPlainStringResult = intl4.formatToPlainString(_modDef2757.cavtEo, obj3);
       }
       tmp8 = tmp16;
       formatToPlainStringResult1 = formatToPlainStringResult;
     } else if (Powerups.VANITY_URL_POWERUP_SKU_ID === skuId) {
       let stringResult;
       let tmp14;
-      const intl3 = tmp2(1113).intl;
+      const intl3 = tmp2(1112).intl;
       const string = intl3.string;
-      const tmp12 = _modDef2755;
+      const tmp12 = _modDef2757;
       if (stateFromStores1) {
         stringResult = string(tmp12.hN75yb);
         tmp14 = tmp11;
@@ -114,11 +114,11 @@ export default function useDeactivateWarningText(arg0, skuId) {
         if (Powerups.GUILD_TAGS_BADGE_PACK_FLEX_POWERUP_SKU_ID !== skuId) {
           if (Powerups.GUILD_TAGS_BADGE_PACK_PLANT_POWERUP_SKU_ID !== skuId) {
             if (Powerups.GUILD_TAGS_BADGE_PACK_CREEPY_CRAWLIES_POWERUP_SKU_ID !== skuId) {
-              const intl = tmp2(1113).intl;
+              const intl = tmp2(1112).intl;
               const formatToPlainString = intl.formatToPlainString;
               const obj = { perk: skuId.title, memberCount: num };
               num = stateFromStores;
-              const v4jSvr1 = _modDef2755["4jSvr1"];
+              const v4jSvr1 = _modDef2757["4jSvr1"];
               const tmp4 = importDefault;
               if (stateFromStores == null) {
                 num = 0;
@@ -129,20 +129,20 @@ export default function useDeactivateWarningText(arg0, skuId) {
           }
         }
       }
-      const intl2 = tmp2(1113).intl;
-      formatToPlainStringResult1 = intl2.string(_modDef2755.Vf2ZcR);
+      const intl2 = tmp2(1112).intl;
+      formatToPlainStringResult1 = intl2.string(_modDef2757.Vf2ZcR);
       tmp8 = importDefault;
     }
     const items = [{ text: formatToPlainStringResult1, critical: skuId.skuId === Powerups.VANITY_URL_POWERUP_SKU_ID }];
     let tmp19 = stateFromStores1;
     ({ text: formatToPlainStringResult1, critical: skuId.skuId === Powerups.VANITY_URL_POWERUP_SKU_ID });
     if (tmp19) {
-      tmp19 = tmp.skuId === tmp2(7882).GUILD_POWERUP_LEVEL_3_SKU_ID;
+      tmp19 = tmp.skuId === tmp2(7881).GUILD_POWERUP_LEVEL_3_SKU_ID;
     }
     if (tmp19) {
       const push = items.push;
-      const obj5 = { text: intl6.string(tmp8(2755).M4XL5n), critical: true };
-      intl6 = tmp2(1113).intl;
+      const obj5 = { text: intl6.string(tmp8(2757).M4XL5n), critical: true };
+      intl6 = tmp2(1112).intl;
       push(obj5);
     }
     return items;

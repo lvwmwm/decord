@@ -1,18 +1,18 @@
 // Module ID: 6787
 // Function ID: 6788
 // Name: RPCServer
-// Dependencies: [5, 6233, 1072, 12, 6788, 6790, 6792, 1256, 38, 6793, 6796, 4636, 1089, 2]
+// Dependencies: [5, 6235, 1071, 12, 6788, 6790, 6792, 1255, 38, 6793, 6796, 4638, 1088, 2]
 
 // Module 6787 (RPCServer)
 import _modDef12 from "module_12" /* 12 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import Constants2 from "Constants" /* 6233 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import Constants2 from "Constants" /* 6235 */;
 import transformUserDefault from "transformUser" /* 6788 */;
 import RPCErrorDefault from "RPCError" /* 6790 */;
 import validateScopeDefault from "validateScope" /* 6792 */;
 import RpcCommandInterception from "RpcCommandInterception" /* 6796 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants from "Constants" /* 1072 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 let _self, c2, command, dependencyMap, importDefault;
@@ -87,7 +87,7 @@ class RPCServer {
     this.onDisconnect(abortController, arg1);
   }
   handleRequest(socket, arg1) {
-    const f125467 = function() {
+    const f123436 = function() {
       return closure_0(...arguments);
     };
     let closure_2 = arg1;
@@ -148,7 +148,7 @@ class RPCServer {
           } else if (arg0 === 2) {
             return { value, done: true };
           } else {
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -221,8 +221,8 @@ class RPCServer {
         }
       })();
     });
-    const then2 = then(f125467).then;
-    then(f125467);
+    const then2 = then(f123436).then;
+    then(f123436);
     let closure_0 = self((command) => {
       let closure_1;
       let c3 = 0;

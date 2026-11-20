@@ -1,15 +1,15 @@
-// Module ID: 16687
-// Function ID: 16688
+// Module ID: 16511
+// Function ID: 16512
 // Name: GuildRoleSubscriptionTypeUtils
-// Dependencies: [16663, 1390, 1083, 1113, 6737, 2]
+// Dependencies: [16487, 1388, 1082, 1112, 6737, 2]
 // Exports: formatMonthlyPriceLabel, formatPlanInterval, formatPlanIntervalDuration, getBenefitKey, isChannelBenefit, isIntangibleBenefit
 
-// Module 16687 (GuildRoleSubscriptionTypeUtils)
-import Constants from "Constants" /* 1083 */;
-import intl5 from "intl" /* 1113 */;
-import PremiumConstants from "PremiumConstants" /* 1390 */;
+// Module 16511 (GuildRoleSubscriptionTypeUtils)
+import Constants from "Constants" /* 1082 */;
+import intl5 from "intl" /* 1112 */;
+import PremiumConstants from "PremiumConstants" /* 1388 */;
 import PriceUtils from "PriceUtils" /* 6737 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16663 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16487 */;
 import size from "module_2" /* 2 */;
 
 const constants = GuildRoleSubscriptionsConstants.GuildRoleSubscriptionBenefitTypes;
@@ -35,11 +35,11 @@ export function formatPlanInterval(first3) {
   const intl = intl5.intl;
   const format = intl.format;
   if (SubscriptionIntervalTypes.DAY === interval) {
-    cuSp8Q = tmp(1113).t["3rUmPQ"];
+    cuSp8Q = tmp(1112).t["3rUmPQ"];
   } else if (SubscriptionIntervalTypes.MONTH === interval) {
-    cuSp8Q = tmp(1113).t.zuN545;
+    cuSp8Q = tmp(1112).t.zuN545;
   } else if (SubscriptionIntervalTypes.YEAR === interval) {
-    cuSp8Q = tmp(1113).t.cuSp8Q;
+    cuSp8Q = tmp(1112).t.cuSp8Q;
   }
   return format(cuSp8Q, { count });
 }
@@ -56,11 +56,11 @@ export function formatMonthlyPriceLabel(first1) {
   const intl2 = intl5.intl;
   format = intl2.format;
   if (SubscriptionIntervalTypes.DAY === MONTH) {
-    cuSp8Q = tmp(1113).t["3rUmPQ"];
+    cuSp8Q = tmp(1112).t["3rUmPQ"];
   } else if (SubscriptionIntervalTypes.MONTH === MONTH) {
-    cuSp8Q = tmp(1113).t.zuN545;
+    cuSp8Q = tmp(1112).t.zuN545;
   } else if (SubscriptionIntervalTypes.YEAR === MONTH) {
-    cuSp8Q = tmp(1113).t.cuSp8Q;
+    cuSp8Q = tmp(1112).t.cuSp8Q;
   }
   return formatToPlainString(CgmBaG, obj);
 }

@@ -1,19 +1,19 @@
-// Module ID: 17772
-// Function ID: 17773
+// Module ID: 17599
+// Function ID: 17600
 // Name: DirectoryChannel
-// Dependencies: [19, 4641, 4722, 5521, 6432, 21, 4792, 575, 563, 1099, 13754, 17685, 7890, 2]
+// Dependencies: [19, 4643, 4724, 5523, 6434, 21, 4794, 575, 563, 1098, 13723, 17512, 7889, 2]
 
-// Module 17772 (DirectoryChannel)
+// Module 17599 (DirectoryChannel)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import router_utils from "router_utils" /* 1099 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 5521 */;
-import ReadStateConstants from "ReadStateConstants" /* 6432 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 13754 */;
+import router_utils from "router_utils" /* 1098 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 5523 */;
+import ReadStateConstants from "ReadStateConstants" /* 6434 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 13723 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import GuildChannelStore from "GuildChannelStore" /* 4722 */;
-import createStyles from "createStyles" /* 4792 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import GuildChannelStore from "GuildChannelStore" /* 4724 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -54,9 +54,9 @@ const memoResult = react.memo(function DirectoryChannel(guildId) {
   let tmp7 = null;
   if (null != stateFromStores) {
     const obj3 = { channel: stateFromStores };
-    id(17685);
+    id(17512);
     const obj4 = { selected };
-    tmp7 = <tmp10 onPress={callback} onLongPress={tmp6} style={tmp.container} accessible accessibilityRole="button" accessibilityLabel={id(7890)(obj3)} accessibilityState={obj4} channel={stateFromStores} selected={selected} resolvedUnreadSetting={UnreadSetting.ONLY_MENTIONS} />;
+    tmp7 = <tmp10 onPress={callback} onLongPress={tmp6} style={tmp.container} accessible accessibilityRole="button" accessibilityLabel={id(7889)(obj3)} accessibilityState={obj4} channel={stateFromStores} selected={selected} resolvedUnreadSetting={UnreadSetting.ONLY_MENTIONS} />;
   }
   return tmp7;
 });

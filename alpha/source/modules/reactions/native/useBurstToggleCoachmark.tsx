@@ -1,21 +1,21 @@
 // Module ID: 8957
 // Function ID: 8958
 // Name: useBurstToggleCoachmark
-// Dependencies: [32, 19, 17, 1388, 4638, 21, 4625, 4792, 575, 8958, 504, 2174, 8960, 1113, 8967, 2]
+// Dependencies: [32, 19, 17, 1386, 4640, 21, 4627, 4794, 575, 8958, 504, 2172, 8960, 1112, 8967, 2]
 // Exports: default
 
 // Module 8957 (useBurstToggleCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import intl3 from "intl" /* 1113 */;
-import dismissible_content from "dismissible_content" /* 4625 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4638 */;
+import intl3 from "intl" /* 1112 */;
+import dismissible_content from "dismissible_content" /* 4627 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4640 */;
 import SuperReactionIcon2 from "SuperReactionIcon" /* 8958 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1388 */;
-import createStyles from "createStyles" /* 4792 */;
+import UserStore from "UserStore" /* 1386 */;
+import createStyles from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let size;
@@ -41,7 +41,7 @@ export default function useBurstToggleCoachmark(targetRef) {
   let obj = first(504);
   const items = [UserStore];
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  const obj2 = first(2174);
+  const obj2 = first(2172);
   if (obj2.isPremium(stateFromStores)) {
     const items1 = [closure_9];
     items2 = items1;

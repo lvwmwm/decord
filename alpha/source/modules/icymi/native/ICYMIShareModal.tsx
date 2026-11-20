@@ -1,27 +1,27 @@
-// Module ID: 18188
-// Function ID: 18189
+// Module ID: 18015
+// Function ID: 18016
 // Name: ICYMIShareModal
-// Dependencies: [32, 5, 19, 17, 4641, 1072, 9526, 4797, 21, 4792, 575, 7471, 1113, 18189, 5474, 5367, 9973, 9995, 5390, 6308, 9938, 1255, 8263, 8131, 1630, 1496, 1380, 9957, 9958, 2]
+// Dependencies: [32, 5, 19, 17, 4643, 1071, 9526, 4799, 21, 4794, 575, 7470, 1112, 18016, 5476, 5369, 9976, 9998, 5392, 6310, 9941, 1254, 8262, 8130, 1628, 1494, 1378, 9960, 9961, 2]
 // Exports: GameShareModal, GuildEventShareModal
 
-// Module 18188 (ICYMIShareModal)
+// Module 18015 (ICYMIShareModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import intl3 from "intl" /* 1113 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
-import MessageConstants from "MessageConstants" /* 4797 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5367 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5474 */;
-import ShareEventUtils from "ShareEventUtils" /* 7471 */;
+import Constants from "Constants" /* 1071 */;
+import intl3 from "intl" /* 1112 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
+import MessageConstants from "MessageConstants" /* 4799 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5369 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5476 */;
+import ShareEventUtils from "ShareEventUtils" /* 7470 */;
 import UserRowConstants from "UserRowConstants" /* 9526 */;
-import useShareChatInputActions from "useShareChatInputActions" /* 9973 */;
+import useShareChatInputActions from "useShareChatInputActions" /* 9976 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -31,7 +31,7 @@ let closure_12;
 let obj2;
 let tmp5;
 let unpackModuleId;
-const ShareChatInputDefault = tmp5(9995);
+const ShareChatInputDefault = tmp5(9998);
 function GravityShareFooter(arg0) {
   let count;
   let handleMessageBlur;
@@ -58,12 +58,12 @@ function GravityShareFooter(arg0) {
     onSend(first);
   }, items);
   if (count <= 1) {
-    const intl2 = tmp7(1113).intl;
-    stringResult = intl2.string(tmp7(1113).t.TXNS7S);
+    const intl2 = tmp7(1112).intl;
+    stringResult = intl2.string(tmp7(1112).t.TXNS7S);
   } else {
-    const intl = tmp7(1113).intl;
+    const intl = tmp7(1112).intl;
     const obj2 = { count };
-    stringResult = intl.formatToPlainString(tmp7(1113).t.jWtYUm, obj2);
+    stringResult = intl.formatToPlainString(tmp7(1112).t.jWtYUm, obj2);
   }
   const items1 = [tmp.footer, insets.bottom];
   let tmp14Result = null;
@@ -73,7 +73,7 @@ function GravityShareFooter(arg0) {
     items2 = [unpackModuleId(ShareChatInputDefault, obj4), ];
     const obj5 = { variant: "primary", size: "md", text: stringResult, disabled: 0 === count, onPress: tmp17, loading: isSending };
     tmp17 = undefined;
-    const Button = tmp7(5390).Button;
+    const Button = tmp7(5392).Button;
     const tmp14 = authStore2;
     const tmp15 = View;
     const tmp16 = unpackModuleId;
@@ -119,7 +119,7 @@ class ICYMIShareModal {
               let obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "HermesInternal", done: "+60" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
@@ -167,7 +167,7 @@ class ICYMIShareModal {
                         const obj3 = { value, done: true };
                         return obj3;
                       } else {
-                        return { value: "HermesInternal", done: "+60" };
+                        return { value: "HermesInternal", done: null };
                       }
                     } else {
                       try {
@@ -213,7 +213,7 @@ class ICYMIShareModal {
                           return obj;
                         }
                         c1 = 3;
-                        return { value: "HermesInternal", done: "+60" };
+                        return { value: "HermesInternal", done: null };
                       } catch (tmp16) {
                         c1 = 3;
                         throw tmp16;
@@ -228,7 +228,7 @@ class ICYMIShareModal {
                 const arr3 = tmp2(closure_2[19]);
                 arr3.pop();
                 c4 = 3;
-                return { value: "HermesInternal", done: "+60" };
+                return { value: "HermesInternal", done: null };
               }
             } catch (tmp6) {
               c4 = 3;
@@ -315,13 +315,13 @@ export function GameShareModal(content) {
   let intl;
   content = content.content;
   let obj = {
-    title: intl.string(content(1113).t["59CWHK"]),
+    title: intl.string(content(1112).t["59CWHK"]),
     linkText: "",
     forwardToChannel: function() {
       return closure_0(...arguments);
     }
   };
-  intl = content(1113).intl;
+  intl = content(1112).intl;
   let closure_0 = _asyncToGenerator(async (arg0, value) => {
     let obj3;
     if (c6 === 2) {
@@ -334,7 +334,7 @@ export function GameShareModal(content) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -392,7 +392,7 @@ export function GameShareModal(content) {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp32) {
         closure_3 = tmp32;

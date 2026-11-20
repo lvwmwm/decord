@@ -1,28 +1,28 @@
-// Module ID: 13206
-// Function ID: 13207
+// Module ID: 13176
+// Function ID: 13177
 // Name: EmojiSuggestionBarUtils
-// Dependencies: [32, 19, 4793, 1072, 21, 1187, 1655, 5393, 4853, 5002, 1708, 504, 7401, 7420, 13171, 13207, 13209, 11229, 10397, 2]
+// Dependencies: [32, 19, 4795, 1071, 21, 1186, 1653, 5395, 4855, 5004, 1706, 504, 7400, 7419, 13141, 13177, 13179, 11171, 10339, 2]
 // Exports: EmojiEntranceAnimation, getEmojiEntranceKey, getEmojiIdentity, sortEmojisForDisplay, useEmojiSuggestionBarState, useSuggestionBarHeight
 
-// Module 13206 (EmojiSuggestionBarUtils)
+// Module 13176 (EmojiSuggestionBarUtils)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1072 */;
-import native from "native" /* 1187 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import native2 from "native" /* 4853 */;
-import spring_spring from "spring/spring" /* 5393 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 10397 */;
+import Constants from "Constants" /* 1071 */;
+import native from "native" /* 1186 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import native2 from "native" /* 4855 */;
+import spring_spring from "spring/spring" /* 5395 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 10339 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4793 */;
+import AccessibilityStore from "AccessibilityStore" /* 4795 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, dependencyMap, set, set2, tmp2;
 
 let tmp;
-const _mod1708 = tmp(1708);
-const timing_timing = tmp(5002);
+const _mod1706 = tmp(1706);
+const timing_timing = tmp(5004);
 const UpsellTypes = Constants.UpsellTypes;
 const jsx = Fragment.jsx;
 let closure_8 = { focused: false, text: "", selectionStart: 0, selectionEnd: 0 };
@@ -102,8 +102,8 @@ export function EmojiEntranceAnimation(index) {
       num = 20 * index;
     }
     set = sharedValue.set;
-    const withDelay = _mod1655.withDelay;
-    _mod1655;
+    const withDelay = _mod1653.withDelay;
+    _mod1653;
     const obj = spring_spring;
     const result = set(withDelay(num, obj.withSpring(1, obj2)));
   }, items);
@@ -133,7 +133,7 @@ export function useSuggestionBarHeight(transitionState, cleanUp, arg2, onOccupie
   let closure_1 = cleanUp;
   dependencyMap = arg2;
   let closure_3 = onOccupiedHeightChange;
-  const obj = require("module_1655");
+  const obj = require("module_1653");
   const sharedValue = obj.useSharedValue(0);
   let items = [transitionState, sharedValue, cleanUp, arg2, onOccupiedHeightChange];
   const effect = sharedValue.useEffect(() => {
@@ -149,7 +149,7 @@ export function useSuggestionBarHeight(transitionState, cleanUp, arg2, onOccupie
       const items = [closure_12, , ];
       const withTiming = timing_timing.withTiming;
       const tmpResult = timing_timing;
-      items[1] = _mod1708.scheduleOnRN;
+      items[1] = _mod1706.scheduleOnRN;
       items[2] = cleanUp;
       let c0;
       let c1;
@@ -208,15 +208,15 @@ export function useEmojiSuggestionBarState(merged, MAX_SUGGESTIONS_LARGE, minUnl
   obj2 = chatInputRef(504);
   const items = [setDataImmediate];
   const stateFromStores = obj2.useStateFromStores(items, () => setDataImmediate.useReducedMotion);
-  let tmp5 = chatInputStateRef(7401);
-  analyticsLocations = tmp5(chatInputStateRef(7420).EMOJI_SUGGESTIONS).analyticsLocations;
-  const tmp6 = chatInputStateRef(13171)(tmp3, 16);
+  let tmp5 = chatInputStateRef(7400);
+  analyticsLocations = tmp5(chatInputStateRef(7419).EMOJI_SUGGESTIONS).analyticsLocations;
+  const tmp6 = chatInputStateRef(13141)(tmp3, 16);
   setData = tmp6.setData;
   setDataImmediate = tmp6.setDataImmediate;
   const items1 = [setData];
   const imperativeHandle = setData.useImperativeHandle(ref, () => ({ setData }), items1);
   let obj3 = { channel, text, selectionStart, selectionEnd, enabled: focused, maxCount: MAX_SUGGESTIONS_LARGE, minUnlockedEmojis };
-  const tmp8 = chatInputStateRef(13207);
+  const tmp8 = chatInputStateRef(13177);
   if (focused) {
     focused = !suppressed;
   }

@@ -1,15 +1,15 @@
-// Module ID: 7313
-// Function ID: 7314
+// Module ID: 7312
+// Function ID: 7313
 // Name: FastestList
-// Dependencies: [19, 21, 1655, 7314, 5024, 7315, 7316, 7318, 7319, 7321, 7324, 7325, 7329, 2]
+// Dependencies: [19, 21, 1653, 7313, 5026, 7314, 7315, 7317, 7318, 7320, 7323, 7324, 7328, 2]
 // Exports: default
 
-// Module 7313 (FastestList)
-import FastestListNativeComponentDefault from "FastestListNativeComponent" /* 7314 */;
+// Module 7312 (FastestList)
+import FastestListNativeComponentDefault from "FastestListNativeComponent" /* 7313 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import module_1655_mod from "module_1655" /* 1655 */;
-import BottomSheetModal from "BottomSheetModal" /* 5024 */;
+import module_1653_mod from "module_1653" /* 1653 */;
+import BottomSheetModal from "BottomSheetModal" /* 5026 */;
 import size from "module_2" /* 2 */;
 
 let keyExtractor;
@@ -18,10 +18,10 @@ let closure_4;
 let hasOwnProperty;
 let metroRequire;
 ({ jsx: closure_4, Fragment: hasOwnProperty, jsxs: metroRequire } = Fragment);
-let module_1655 = module_1655_mod;
-module_1655.createAnimatedComponent(FastestListNativeComponentDefault);
-module_1655 = module_1655_mod;
-const FastestListNativeComponent = module_1655.createAnimatedComponent(FastestListNativeComponentDefault);
+let module_1653 = module_1653_mod;
+module_1653.createAnimatedComponent(FastestListNativeComponentDefault);
+module_1653 = module_1653_mod;
+const FastestListNativeComponent = module_1653.createAnimatedComponent(FastestListNativeComponentDefault);
 let closure_8 = BottomSheetModal.createBottomSheetScrollableComponent(BottomSheetModal.SCROLLABLE_TYPE.SCROLLVIEW, FastestListNativeComponent);
 let closure_9 = 0;
 const result = size.fileFinishedImporting("modules/fastest_list/FastestList.android.tsx");

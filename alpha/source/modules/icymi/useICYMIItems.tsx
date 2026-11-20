@@ -1,17 +1,17 @@
-// Module ID: 18172
-// Function ID: 18173
+// Module ID: 17999
+// Function ID: 18000
 // Name: useICYMIItems
-// Dependencies: [19, 9910, 9914, 9918, 504, 9920, 2]
+// Dependencies: [19, 9913, 9917, 9921, 504, 9923, 2]
 // Exports: default
 
-// Module 18172 (useICYMIItems)
-import ICYMITypes from "ICYMITypes" /* 9914 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 9920 */;
+// Module 17999 (useICYMIItems)
+import ICYMITypes from "ICYMITypes" /* 9917 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 9923 */;
 import react from "react" /* 19 */;
-import ICYMIStore from "ICYMIStore" /* 9910 */;
+import ICYMIStore from "ICYMIStore" /* 9913 */;
 import size from "module_2" /* 2 */;
 
-function createItem(id, type, unread, arg3, fn) {
+function createItem(id, type, unread, waterwheelsDiscoverEnabled, isWaterwheelsCardEligible) {
   let obj10;
   let obj4;
   let obj6;
@@ -48,10 +48,10 @@ function createItem(id, type, unread, arg3, fn) {
           return obj9;
         } else if (ICYMITypes.ICYMIItemTypes.DISCOVER_ITEM === type) {
           let tmp6 = null;
-          if (arg3) {
+          if (waterwheelsDiscoverEnabled) {
             let tmp8;
-            if (fn != null) {
-              tmp8 = fn(type.card);
+            if (isWaterwheelsCardEligible != null) {
+              tmp8 = isWaterwheelsCardEligible(type.card);
             }
             tmp6 = null;
             if (false !== tmp8) {
@@ -84,7 +84,7 @@ export default function useICYMIItems() {
   }
   const isWaterwheelsCardEligible = obj.isWaterwheelsCardEligible;
   let stateFromStores1;
-  const obj2 = stateFromStores1(9918);
+  const obj2 = stateFromStores1(9921);
   const waterwheelsDiscoverEnabled = obj2.useWaterwheelsDiscoverEnabled("icymi_items");
   const items = [ICYMIStore];
   const obj3 = stateFromStores1(504);
@@ -124,7 +124,7 @@ export default function useICYMIItems() {
           let tmp10 = stateFromStoresObject[tmp7.id];
           let tmp11 = null == tmp10;
           if (tmp11) {
-            tmp11 = tmp7.type === stateFromStores1(9914).ICYMIItemTypes.MESSAGE;
+            tmp11 = tmp7.type === stateFromStores1(9917).ICYMIItemTypes.MESSAGE;
           }
           if (tmp11) {
             let message_context = tmp7.data.message_context;
@@ -171,7 +171,7 @@ export default function useICYMIItems() {
           let tmp27 = stateFromStoresObject[tmp24.id];
           let tmp28 = null == tmp27;
           if (tmp28) {
-            tmp28 = tmp24.type === stateFromStores1(9914).ICYMIItemTypes.MESSAGE;
+            tmp28 = tmp24.type === stateFromStores1(9917).ICYMIItemTypes.MESSAGE;
           }
           if (tmp28) {
             let message_context2 = tmp24.data.message_context;

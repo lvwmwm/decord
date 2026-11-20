@@ -1,19 +1,19 @@
-// Module ID: 7596
-// Function ID: 7597
+// Module ID: 7595
+// Function ID: 7596
 // Name: FormInput
-// Dependencies: [19, 1072, 21, 4792, 575, 1380, 4853, 4799, 7101, 7342, 7102, 1187, 2]
+// Dependencies: [19, 1071, 21, 4794, 575, 1378, 4855, 4801, 7100, 7341, 7101, 1186, 2]
 // Exports: default
 
-// Module 7596 (FormInput)
+// Module 7595 (FormInput)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
-import shared from "shared" /* 4799 */;
-import native from "native" /* 4853 */;
-import RedesignCompat from "RedesignCompat" /* 7101 */;
+import Constants from "Constants" /* 1071 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
+import shared from "shared" /* 4801 */;
+import native from "native" /* 4855 */;
+import RedesignCompat from "RedesignCompat" /* 7100 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -191,18 +191,18 @@ export default function FormInput(helpText) {
     if (flag3) {
       const obj2 = { ref: ref1, returnKeyType: "default", onChange, keyboardAppearance, keyboardType: str2, placeholderTextColor: tmp4.placeholderText.color, placeholder, secureTextEntry: tmp12, disabled: flag2, autoFocus: flag4, autoCapitalize, autoCorrect, maxLength: null, onEndEditing: null, value, errorMessage: error };
       ({ maxLength: obj8.maxLength, onEndEditing: obj8.onEndEditing } = merged);
-      const TextArea = tmp5(7342).TextArea;
+      const TextArea = tmp5(7341).TextArea;
       tmp16Result = tmp16(TextArea, obj2);
     } else {
       const obj4 = { ref: ref1, returnKeyType: "done", onChange, keyboardAppearance, keyboardType: str2, placeholderTextColor: tmp4.placeholderText.color, placeholder, secureTextEntry: tmp12, disabled: flag2, autoFocus: flag4, autoCapitalize, autoCorrect, onEndEditing: merged.onEndEditing, value: tmp21, errorMessage: error };
-      const TextInput = tmp5(7102).TextInput;
+      const TextInput = tmp5(7101).TextInput;
       tmp16Result = tmp16(TextInput, obj4);
       tmp21 = value;
     }
     tmp16Result2 = tmp16Result;
   } else {
     const obj5 = { ref: ref2, inputTextColor: tmp4.inputText.color, multiline: flag3, returnKeyType: str3, onChangeText: onChange, keyboardAppearance, keyboardType: str2, placeholderTextColor: tmp4.placeholderText.color, title, helpText: str, error: str4, placeholder, secureTextEntry: tmp12, disabled: flag2, autoFocus: flag4, numberOfLines: num, autoCapitalize, autoCorrect, showBorder, showCharactersRemaining: flag5, style: items, inputTextStyle, value: str5, clearButtonVisibility };
-    const InputView = tmp5(1187).InputView;
+    const InputView = tmp5(1186).InputView;
     if (null != merged.returnKeyType) {
       str3 = merged.returnKeyType;
     } else {
@@ -221,7 +221,7 @@ export default function FormInput(helpText) {
       str5 = "";
     }
     if (flag3) {
-      clearButtonVisibility = tmp5(1187).ClearButtonVisibility.NEVER;
+      clearButtonVisibility = tmp5(1186).ClearButtonVisibility.NEVER;
     }
     const merged1 = Object.assign(merged);
     tmp16Result2 = tmp16(InputView, obj5);

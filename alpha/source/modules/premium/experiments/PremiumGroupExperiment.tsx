@@ -1,11 +1,11 @@
 // Module ID: 9462
 // Function ID: 9463
 // Name: PremiumGroupExperiment
-// Dependencies: [1452, 2]
+// Dependencies: [1450, 2]
 // Exports: default
 
 // Module 9462 (PremiumGroupExperiment)
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2025-12-katsudon", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };

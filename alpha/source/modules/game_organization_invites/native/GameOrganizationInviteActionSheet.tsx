@@ -1,19 +1,19 @@
-// Module ID: 15093
-// Function ID: 15094
+// Module ID: 15057
+// Function ID: 15058
 // Name: GameOrganizationInviteActionSheet
-// Dependencies: [19, 17, 15038, 21, 4792, 575, 7946, 15094, 15095, 15091, 504, 1113, 2557, 7434, 5808, 5383, 7308, 15096, 15097, 2]
+// Dependencies: [19, 17, 15002, 21, 4794, 575, 7945, 15058, 15059, 15055, 504, 1112, 2559, 7433, 5810, 5385, 7307, 15060, 15061, 2]
 // Exports: default
 
-// Module 15093 (GameOrganizationInviteActionSheet)
+// Module 15057 (GameOrganizationInviteActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import UserPlaceholderRowDefault from "UserPlaceholderRow" /* 7946 */;
-import useGameOrganizationInviteSuggestionsDefault from "useGameOrganizationInviteSuggestions" /* 15094 */;
-import useLinkedGameOrganizationInviteSenderDefault from "useLinkedGameOrganizationInviteSender" /* 15095 */;
+import UserPlaceholderRowDefault from "UserPlaceholderRow" /* 7945 */;
+import useGameOrganizationInviteSuggestionsDefault from "useGameOrganizationInviteSuggestions" /* 15058 */;
+import useLinkedGameOrganizationInviteSenderDefault from "useLinkedGameOrganizationInviteSender" /* 15059 */;
 import react from "react" /* 19 */;
-import GameOrganizationStore from "GameOrganizationStore" /* 15038 */;
+import GameOrganizationStore from "GameOrganizationStore" /* 15002 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -65,59 +65,59 @@ export default function GameOrganizationInviteActionSheet(guildId) {
   useGameOrganizationInviteSuggestionsDefault();
   ({ getSendState, handleInvite } = useLinkedGameOrganizationInviteSenderDefault(guildId));
   useLinkedGameOrganizationInviteSenderDefault(guildId);
-  const obj = guildId(15091);
+  const obj = guildId(15055);
   const data = obj.useLinkedGameOrganization(guildId).data;
   const items = [GameOrganizationStore];
   const items1 = [guildId];
   const obj2 = guildId(504);
   const stateFromStores = obj2.useStateFromStores(items, () => GameOrganizationStore.getDisplayNounByGuildId(guildId), items1);
   if (null != data) {
-    const intl2 = tmp6(1113).intl;
+    const intl2 = tmp6(1112).intl;
     const formatToPlainString2 = intl2.formatToPlainString;
     const obj3 = { orgName: data.name, displayNoun: str2 };
     str2 = stateFromStores;
-    const VGOQ4v = tmp2(2557).VGOQ4v;
+    const VGOQ4v = tmp2(2559).VGOQ4v;
     if (stateFromStores == null) {
       str2 = "other";
     }
     formatToPlainString2Result = formatToPlainString2(VGOQ4v, obj3);
   } else {
-    const intl = tmp6(1113).intl;
+    const intl = tmp6(1112).intl;
     const formatToPlainString = intl.formatToPlainString;
     let str = stateFromStores;
-    const BBk7Qw = tmp2(2557).BBk7Qw;
+    const BBk7Qw = tmp2(2559).BBk7Qw;
     if (stateFromStores == null) {
       str = "other";
     }
     const obj4 = { displayNoun: str };
     formatToPlainString2Result = formatToPlainString(BBk7Qw, obj4);
   }
-  const obj5 = { scrollable: true, startExpanded: true, dismissAccessibilityLabel: intl3.string(guildId(1113).t.cpT0Cq), header: closure_6(Stack, obj6), children: tmp9Result };
-  const ActionSheet = tmp6(7434).ActionSheet;
-  intl3 = tmp6(1113).intl;
+  const obj5 = { scrollable: true, startExpanded: true, dismissAccessibilityLabel: intl3.string(guildId(1112).t.cpT0Cq), header: closure_6(Stack, obj6), children: tmp9Result };
+  const ActionSheet = tmp6(7433).ActionSheet;
+  intl3 = tmp6(1112).intl;
   obj6 = { spacing: nativeDefault.space.PX_16, style: tmp.header, children: items3 };
-  Stack = tmp6(5808).Stack;
+  Stack = tmp6(5810).Stack;
   const obj7 = { spacing: nativeDefault.space.PX_4, children: items2 };
-  const Stack2 = tmp6(5808).Stack;
+  const Stack2 = tmp6(5810).Stack;
   const obj8 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: tmp.centeredText, children: formatToPlainString3(EnTIIr, { displayNoun: str3 }) };
-  const Heading = tmp6(5383).Heading;
-  const intl4 = tmp6(1113).intl;
+  const Heading = tmp6(5385).Heading;
+  const intl4 = tmp6(1112).intl;
   formatToPlainString3 = intl4.formatToPlainString;
   str3 = stateFromStores;
-  EnTIIr = tmp2(2557).EnTIIr;
+  EnTIIr = tmp2(2559).EnTIIr;
   if (stateFromStores == null) {
     str3 = "other";
   }
   items2 = [closure_5(Heading, obj8), ];
   const obj9 = { variant: "body-sm/medium", color: "text-muted", style: tmp.centeredText, children: formatToPlainString2Result };
-  items2[1] = closure_5(guildId(5383).Text, obj9);
+  items2[1] = closure_5(guildId(5385).Text, obj9);
   items3 = [closure_6(Stack2, obj7), ];
   const obj10 = { size: "md", round: true, onChange: search, placeholder: formatToPlainString4(cRK6SQ, { displayNoun: str4 }) };
-  const SearchBar = tmp6(7308).SearchBar;
-  const intl5 = tmp6(1113).intl;
+  const SearchBar = tmp6(7307).SearchBar;
+  const intl5 = tmp6(1112).intl;
   formatToPlainString4 = intl5.formatToPlainString;
   str4 = stateFromStores;
-  cRK6SQ = tmp2(2557).cRK6SQ;
+  cRK6SQ = tmp2(2559).cRK6SQ;
   if (stateFromStores == null) {
     str4 = "other";
   }
@@ -126,10 +126,10 @@ export default function GameOrganizationInviteActionSheet(guildId) {
     tmp9Result = tmp9(Loading, {});
   } else if (hasNoFriends) {
     const obj11 = { displayNoun: stateFromStores };
-    tmp9Result = tmp9(tmp2(15096), obj11);
+    tmp9Result = tmp9(tmp2(15060), obj11);
   } else {
     const obj12 = { users, getSendState, onInvite: handleInvite };
-    tmp9Result = tmp9(tmp2(15097), obj12);
+    tmp9Result = tmp9(tmp2(15061), obj12);
   }
   return closure_5(ActionSheet, obj5);
 };

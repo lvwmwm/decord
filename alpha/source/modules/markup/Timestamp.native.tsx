@@ -1,16 +1,16 @@
-// Module ID: 11080
-// Function ID: 11081
+// Module ID: 11022
+// Function ID: 11023
 // Name: Timestamp
-// Dependencies: [19, 21, 4792, 575, 11081, 1187, 5474, 2]
+// Dependencies: [19, 21, 4794, 575, 11023, 5476, 5385, 1186, 2]
 // Exports: default
 
-// Module 11080 (Timestamp)
+// Module 11022 (Timestamp)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5474 */;
-import useFormattedTimestampDefault from "useFormattedTimestamp" /* 11081 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5476 */;
+import useFormattedTimestampDefault from "useFormattedTimestamp" /* 11023 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -21,24 +21,44 @@ let closure_4 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/markup/Timestamp.native.tsx");
 
 export default function Timestamp(node) {
+  let fn;
+  let interactive;
+  let style;
+  let timestamp2;
+  let tmp4Result;
+  let variant;
   node = node.node;
-  const style = node.style;
-  let timestamp = closure_4().timestamp;
-  const tmp = closure_4();
-  const tmp2 = useFormattedTimestampDefault(node);
-  const LegacyText = node(1187).LegacyText;
-  const tmp3 = jsx;
-  if (timestamp == null) {
-    timestamp = style;
+  ({ style, variant, interactive } = node);
+  if (interactive === undefined) {
+    interactive = true;
   }
-  let obj = {
-    style: timestamp,
-    onPress() {
+  const tmp = closure_4();
+  const tmp3 = useFormattedTimestampDefault(node);
+  if (interactive) {
+    fn = () => {
       const obj = ToastActionCreatorsDefault;
       const obj2 = { text: node.full };
-      obj.open("TIMESTAMP", obj2);
-    },
-    children: tmp2
-  };
-  return tmp3(LegacyText, obj);
+      return obj.open("TIMESTAMP", obj2);
+    };
+  }
+  if (null != variant) {
+    let obj2 = { variant, color: "none", style: timestamp2, onPress: fn, children: tmp3 };
+    timestamp2 = tmp.timestamp;
+    const Text = node(5385).Text;
+    const tmp7 = jsx;
+    if (timestamp2 == null) {
+      timestamp2 = style;
+    }
+    tmp4Result = tmp7(Text, obj2);
+  } else {
+    let timestamp = tmp.timestamp;
+    const LegacyText = node(1186).LegacyText;
+    const tmp4 = jsx;
+    if (timestamp == null) {
+      timestamp = style;
+    }
+    let obj = { style: timestamp, onPress: fn, children: tmp3 };
+    tmp4Result = tmp4(LegacyText, obj);
+  }
+  return tmp4Result;
 };

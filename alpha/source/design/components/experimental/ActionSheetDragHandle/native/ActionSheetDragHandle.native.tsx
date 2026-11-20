@@ -1,17 +1,17 @@
-// Module ID: 7492
-// Function ID: 7493
+// Module ID: 7491
+// Function ID: 7492
 // Name: ActionSheetDragHandle
-// Dependencies: [19, 17, 7482, 21, 4792, 575, 1113, 1655, 2]
+// Dependencies: [19, 17, 7481, 21, 4794, 575, 1112, 1653, 2]
 
-// Module 7492 (ActionSheetDragHandle)
+// Module 7491 (ActionSheetDragHandle)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1113 */;
-import _modDef1655 from "module_1655" /* 1655 */;
+import intl2 from "intl" /* 1112 */;
+import _modDef1653 from "module_1653" /* 1653 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ActionSheetDragHandleConstants from "ActionSheetDragHandleConstants" /* 7482 */;
-import createStyles from "createStyles" /* 4792 */;
+import ActionSheetDragHandleConstants from "ActionSheetDragHandleConstants" /* 7481 */;
+import createStyles from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let DRAG_HANDLE_BAR_HEIGHT;
@@ -48,7 +48,7 @@ const memoResult = react.memo(function DragHandle(accessibilityLabel) {
   if (null != animatedBarStyles) {
     const obj3 = { style: items1 };
     items1 = [tmp4.bar, animatedBarStyles];
-    let tmp5Result = tmp5(_modDef1655.View, obj3);
+    let tmp5Result = tmp5(_modDef1653.View, obj3);
   } else {
     const obj4 = { style: tmp4.bar };
     tmp5Result = tmp5(tmp8, obj4);

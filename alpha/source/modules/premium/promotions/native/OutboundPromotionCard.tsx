@@ -1,25 +1,25 @@
-// Module ID: 14077
-// Function ID: 14078
+// Module ID: 14046
+// Function ID: 14047
 // Name: OutboundPromotionCard
-// Dependencies: [32, 19, 17, 1072, 21, 4792, 575, 6434, 5020, 7396, 1113, 5383, 5516, 5001, 9281, 14078, 5740, 14079, 2121, 9280, 5479, 5390, 5006, 2]
+// Dependencies: [32, 19, 17, 1071, 21, 4794, 575, 6436, 5022, 7395, 1112, 5385, 5518, 5003, 9281, 14047, 5742, 14048, 2119, 9280, 5481, 5392, 5008, 2]
 // Exports: default
 
-// Module 14077 (OutboundPromotionCard)
+// Module 14046 (OutboundPromotionCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import intl4 from "intl" /* 1113 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5020 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 5516 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5740 */;
-import LegacyTokens from "LegacyTokens" /* 6434 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7396 */;
+import Constants from "Constants" /* 1071 */;
+import intl4 from "intl" /* 1112 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5008 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5022 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 5518 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5742 */;
+import LegacyTokens from "LegacyTokens" /* 6436 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7395 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let metroImportDefault;

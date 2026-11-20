@@ -1,14 +1,14 @@
-// Module ID: 15937
-// Function ID: 15938
+// Module ID: 15901
+// Function ID: 15902
 // Name: handleOpenUnconfirmedAgeGroupSupportArticle
-// Dependencies: [10566, 6301, 7674, 2188, 2]
+// Dependencies: [10508, 6303, 7673, 2186, 2]
 // Exports: handleOpenUnconfirmedAgeGroupSupportArticle
 
-// Module 15937 (handleOpenUnconfirmedAgeGroupSupportArticle)
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7674 */;
-import LocationMetadataStore from "LocationMetadataStore" /* 10566 */;
-import AgeNoticeConstants from "AgeNoticeConstants" /* 6301 */;
+// Module 15901 (handleOpenUnconfirmedAgeGroupSupportArticle)
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2186 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7673 */;
+import LocationMetadataStore from "LocationMetadataStore" /* 10508 */;
+import AgeNoticeConstants from "AgeNoticeConstants" /* 6303 */;
 import size from "module_2" /* 2 */;
 
 let c3;

@@ -1,9 +1,9 @@
 // Module ID: 2192
 // Function ID: 2193
-// Dependencies: [1117, 2193, 2194, 2195, 2196, 2197, 2198, 2199, 2200, 2201, 2202, 2203, 2204, 2205, 2206, 2207, 2208, 2209, 2210, 2211, 2212, 2213, 2214, 2215, 2216, 2217, 2218, 2219, 2220, 2221, 2222, 2223, 1152, 2]
+// Dependencies: [1116, 2193, 2194, 2195, 2196, 2197, 2198, 2199, 2200, 2201, 2202, 2203, 2204, 2205, 2206, 2207, 2208, 2209, 2210, 2211, 2212, 2213, 2214, 2215, 2216, 2217, 2218, 2219, 2220, 2221, 2222, 2223, 1151, 2]
 
 // Module 2192
-import AssetJsonUtils from "AssetJsonUtils" /* 1117 */;
+import AssetJsonUtils from "AssetJsonUtils" /* 1116 */;
 import AssetRegistry from "AssetRegistry" /* 2193 */;
 import AssetRegistry2 from "AssetRegistry" /* 2194 */;
 import AssetRegistry3 from "AssetRegistry" /* 2195 */;
@@ -35,7 +35,7 @@ import AssetRegistry28 from "AssetRegistry" /* 2220 */;
 import AssetRegistry29 from "AssetRegistry" /* 2221 */;
 import AssetRegistry30 from "AssetRegistry" /* 2222 */;
 import AssetRegistry31 from "AssetRegistry" /* 2223 */;
-import module_1152_mod from "module_1152" /* 1152 */;
+import module_1151_mod from "module_1151" /* 1151 */;
 import size from "module_2" /* 2 */;
 
 let obj = {
@@ -195,10 +195,10 @@ let obj = {
     return jsonAsset.then((result) => ({ default: result }));
   }
 };
-let module_1152 = module_1152_mod;
-const loader = module_1152.createLoader(obj, "en-US");
-module_1152 = module_1152_mod;
-const messagesProxy = module_1152.makeMessagesProxy(loader);
+let module_1151 = module_1151_mod;
+const loader = module_1151.createLoader(obj, "en-US");
+module_1151 = module_1151_mod;
+const messagesProxy = module_1151.makeMessagesProxy(loader);
 const result = size.fileFinishedImporting("design/intl/Mana.messages.js");
 
 export default messagesProxy;

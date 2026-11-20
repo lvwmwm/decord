@@ -1,26 +1,26 @@
-// Module ID: 16719
-// Function ID: 16720
+// Module ID: 16543
+// Function ID: 16544
 // Name: AppearanceSetting
-// Dependencies: [4816, 1195, 1072, 5001, 504, 1239, 8453, 1113, 2955, 11875, 16720, 16722, 2]
+// Dependencies: [4818, 1194, 1071, 5003, 504, 1238, 8452, 1112, 2957, 11817, 16544, 16546, 2]
 // Exports: useAppearanceSettingTrailing
 
-// Module 16719 (AppearanceSetting)
+// Module 16543 (AppearanceSetting)
 import get_initialized from "get initialized" /* 504 */;
-import Constants from "Constants" /* 1072 */;
-import intl3 from "intl" /* 1113 */;
-import ThemeConstants from "ThemeConstants" /* 1195 */;
-import ClientThemesUtils from "ClientThemesUtils" /* 1239 */;
-import useThemeDefault from "useTheme" /* 5001 */;
-import useActiveTheme from "useActiveTheme" /* 8453 */;
-import PaintPaletteIcon from "PaintPaletteIcon" /* 16720 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4816 */;
-import SettingBuilders from "SettingBuilders" /* 11875 */;
+import Constants from "Constants" /* 1071 */;
+import intl3 from "intl" /* 1112 */;
+import ThemeConstants from "ThemeConstants" /* 1194 */;
+import ClientThemesUtils from "ClientThemesUtils" /* 1238 */;
+import useThemeDefault from "useTheme" /* 5003 */;
+import useActiveTheme from "useActiveTheme" /* 8452 */;
+import PaintPaletteIcon from "PaintPaletteIcon" /* 16544 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4818 */;
+import SettingBuilders from "SettingBuilders" /* 11817 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 
 let tmp;
-const _modDef2955 = tmp(2955);
+const _modDef2957 = tmp(2957);
 function useAppearanceSettingTrailing() {
   let gradientPreset;
   const items = [ClientThemesBackgroundStore];
@@ -32,8 +32,8 @@ function useAppearanceSettingTrailing() {
   const obj3 = useActiveTheme;
   const activeThemeType = obj3.useActiveThemeType();
   if (ActiveThemeType.CUSTOM === activeThemeType) {
-    const intl2 = tmp4(1113).intl;
-    return intl2.string(_modDef2955.KSBBpC);
+    const intl2 = tmp4(1112).intl;
+    return intl2.string(_modDef2957.KSBBpC);
   } else if (ActiveThemeType.CLIENT === activeThemeType) {
     let name;
     if (stateFromStores != null) {
@@ -47,7 +47,7 @@ function useAppearanceSettingTrailing() {
     }
     return name;
   } else if (ActiveThemeType.SYSTEM === activeThemeType) {
-    const intl = tmp4(1113).intl;
+    const intl = tmp4(1112).intl;
     return intl.string(intl3.t.wFpwSk);
   } else {
     return ActiveThemeType.DEFAULT === activeThemeType ? themeName : undefined;

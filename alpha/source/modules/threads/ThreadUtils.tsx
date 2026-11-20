@@ -1,23 +1,23 @@
-// Module ID: 8399
-// Function ID: 8400
+// Module ID: 8398
+// Function ID: 8399
 // Name: ThreadUtils
-// Dependencies: [109, 6498, 6431, 4726, 1112, 1072, 1113, 8173, 5529, 1256, 8388, 7361, 1406, 504, 11, 2169, 2]
+// Dependencies: [109, 6500, 6433, 4728, 1111, 1071, 1112, 8172, 5531, 1255, 8387, 7360, 1404, 504, 11, 2167, 2]
 // Exports: getTimestampAccessibilityLabel, trackActiveThreadsPopoutOpened, trackThreadBrowserOpened, trackThreadBrowserTab, trackThreadNotificationSettingsUpdated, useLastMessageTimestamp
 
-// Module 8399 (ThreadUtils)
+// Module 8398 (ThreadUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import ThreadConstants from "ThreadConstants" /* 1112 */;
-import intl2 from "intl" /* 1113 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import _modDef2169 from "module_2169" /* 2169 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5529 */;
-import getTimestampStringDefault from "getTimestampString" /* 8173 */;
-import ThreadAnalyticsUtils from "ThreadAnalyticsUtils" /* 8388 */;
+import ThreadConstants from "ThreadConstants" /* 1111 */;
+import intl2 from "intl" /* 1112 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import _modDef2167 from "module_2167" /* 2167 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5531 */;
+import getTimestampStringDefault from "getTimestampString" /* 8172 */;
+import ThreadAnalyticsUtils from "ThreadAnalyticsUtils" /* 8387 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import ReadStateStore from "ReadStateStore" /* 6498 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6431 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4726 */;
-import Constants from "Constants" /* 1072 */;
+import ReadStateStore from "ReadStateStore" /* 6500 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6433 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4728 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -26,7 +26,7 @@ let _require;
 let c10;
 let c9;
 let tmp;
-const NotificationSettingsUtils = tmp(7361);
+const NotificationSettingsUtils = tmp(7360);
 function getAccessibilityLabelFormatter() {
   let intl;
   const time = { minutes: intl2.t["1Rcf/h"], hours: intl2.t.vgnx51, days: intl2.t.fNvE50, month: intl.string(intl2.t.P7Gygz) };
@@ -137,7 +137,7 @@ export function useLastMessageTimestamp(thread) {
   }
   let valueOfResult = null;
   if (null != createTimestamp) {
-    const obj3 = _modDef2169(createTimestamp);
+    const obj3 = _modDef2167(createTimestamp);
     valueOfResult = obj3.valueOf();
   }
   if (extractTimestampResult == null) {

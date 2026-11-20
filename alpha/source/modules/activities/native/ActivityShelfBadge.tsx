@@ -1,19 +1,19 @@
-// Module ID: 12863
-// Function ID: 12864
+// Module ID: 12833
+// Function ID: 12834
 // Name: ActivityShelfBadge
-// Dependencies: [19, 17, 1072, 21, 4792, 575, 1187, 2119, 5383, 1113, 2]
+// Dependencies: [19, 17, 1071, 21, 4794, 575, 1186, 2117, 5385, 1112, 2]
 // Exports: default
 
-// Module 12863 (ActivityShelfBadge)
+// Module 12833 (ActivityShelfBadge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import intl3 from "intl" /* 1113 */;
-import Server from "Server" /* 2119 */;
+import Constants from "Constants" /* 1071 */;
+import intl3 from "intl" /* 1112 */;
+import Server from "Server" /* 2117 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4792 */;
-import native_mod from "native" /* 1187 */;
+import createStyles_mod from "createStyles" /* 4794 */;
+import native_mod from "native" /* 1186 */;
 import size from "module_2" /* 2 */;
 
 let native;
@@ -48,8 +48,8 @@ export default function ActivityShelfBadge(arg0) {
     const items = [replacementStyles, , ];
     ({ newBadge: arr[1], elevationShadow: arr[2] } = tmp);
     ({ variant: "body-xs/semibold", style: tmp.badgeText, color: "text-overlay-light", children: intl.string(intl3.t.y2b7CA) });
-    const Text = tmp2(5383).Text;
-    intl = tmp2(1113).intl;
+    const Text = tmp2(5385).Text;
+    intl = tmp2(1112).intl;
     tmp6 = <View style={items}>{null}</View>;
   } else {
     tmp6 = null;
@@ -57,8 +57,8 @@ export default function ActivityShelfBadge(arg0) {
       const items1 = [replacementStyles, , ];
       ({ updatedBadge: arr2[1], elevationShadow: arr2[2] } = tmp);
       ({ variant: "body-xs/semibold", style: tmp.badgeText, color: "text-overlay-light", children: intl2.string(intl3.t["/qdhkk"]) });
-      const Text2 = tmp2(5383).Text;
-      intl2 = tmp2(1113).intl;
+      const Text2 = tmp2(5385).Text;
+      intl2 = tmp2(1112).intl;
       tmp6 = <View style={items1}>{null}</View>;
     }
   }

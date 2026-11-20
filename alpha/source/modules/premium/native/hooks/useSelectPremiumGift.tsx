@@ -1,7 +1,7 @@
 // Module ID: 9359
 // Function ID: 9360
 // Name: useSelectPremiumGift
-// Dependencies: [5, 19, 1502, 9348, 9353, 2174, 8051, 5740, 1113, 9346, 2]
+// Dependencies: [5, 19, 1500, 9348, 9353, 2172, 8050, 5742, 1112, 9346, 2]
 // Exports: useSelectPremiumGift
 
 // Module 9359 (useSelectPremiumGift)

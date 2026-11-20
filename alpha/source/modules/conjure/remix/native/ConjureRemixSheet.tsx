@@ -1,35 +1,37 @@
-// Module ID: 12227
-// Function ID: 12228
+// Module ID: 12169
+// Function ID: 12170
 // Name: ConjureRemixSheet
-// Dependencies: [5, 32, 19, 17, 4663, 6429, 21, 4792, 575, 12228, 7478, 504, 6746, 1113, 4089, 5006, 7434, 7396, 6898, 5383, 5390, 5024, 7342, 7102, 6501, 7228, 7230, 2]
+// Dependencies: [5, 32, 19, 17, 4665, 6431, 21, 4794, 575, 7477, 12170, 504, 6746, 1112, 4091, 5008, 12172, 12173, 7433, 7395, 6897, 5385, 5392, 7101, 6503, 7228, 6925, 7202, 7227, 7229, 6937, 5494, 12200, 2]
 // Exports: default
 
-// Module 12227 (ConjureRemixSheet)
+// Module 12169 (ConjureRemixSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import TableRadioRow from "TableRadioRow" /* 7230 */;
-import ConjureRemix from "ConjureRemix" /* 12228 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5008 */;
+import ConjureRemix from "ConjureRemix" /* 12170 */;
+import ConjureServerPickerSheetDefault from "ConjureServerPickerSheet" /* 12172 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
-import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4663 */;
-import SortedGuildStore from "SortedGuildStore" /* 6429 */;
+import react_mod from "react" /* 19 */;
+import GuildStore from "GuildStore" /* 4665 */;
+import SortedGuildStore from "SortedGuildStore" /* 6431 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
-let c3;
+let c3, c4, flattenedGuildIds, guild;
 
 let c10;
 let c9;
 let _slicedToArray = _slicedToArray_mod;
+let react = react_mod;
 const View = react_native.View;
 ({ jsx: c9, jsxs: c10 } = Fragment);
 const ConjureRemixSheet_str = "ConjureRemixSheet";
-let closure_12 = createStyles.createStyles((paddingBottom) => {
-  const obj = { scroll: { flex: 1, minHeight: 0 }, list: { gap: nativeDefault.space.PX_24, paddingBottom }, fields: { gap: nativeDefault.space.PX_16 }, footer: { backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND, paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_16 }, footerBody: { gap: nativeDefault.space.PX_16 } };
-  ({ gap: nativeDefault.space.PX_24, paddingBottom });
-  ({ gap: nativeDefault.space.PX_16 });
+const ConjureRemixServerSheet = "ConjureRemixServerSheet";
+let closure_13 = createStyles.createStyles((arg0) => {
+  const obj = { list: { gap: nativeDefault.space.PX_24, paddingBottom: arg0 + nativeDefault.space.PX_24 }, footer: { backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND, paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_16 }, footerBody: { gap: nativeDefault.space.PX_16 } };
+  ({ gap: nativeDefault.space.PX_24, paddingBottom: arg0 + nativeDefault.space.PX_24 });
   ({ backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND, paddingHorizontal: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_16 });
   ({ gap: nativeDefault.space.PX_16 });
   return obj;
@@ -37,23 +39,40 @@ let closure_12 = createStyles.createStyles((paddingBottom) => {
 let result = size.fileFinishedImporting("modules/conjure/remix/native/ConjureRemixSheet.tsx");
 
 export default function ConjureRemixSheet(project) {
-  let BottomSheetScrollView;
+  let BottomSheetTitleHeader;
+  let O25g5n;
   let SafeAreaPaddingView;
+  let TableRow;
+  let TableRowIcon;
+  let TableRowIcon2;
+  let Text;
   let _undefined;
+  let _undefined2;
+  let c5;
+  let c7;
+  let c8;
   let c9;
   let closure_4;
   let first;
-  let first1;
-  let first2;
-  let flattenedGuildIds;
   let formatToPlainString;
+  let intl10;
+  let intl11;
   let intl4;
   let intl5;
-  let intl6;
-  let items4;
+  let intl7;
+  let intl8;
+  let intl9;
   let items5;
   let items6;
+  let items7;
   let obj11;
+  let obj12;
+  let obj14;
+  let obj17;
+  let obj18;
+  let obj21;
+  let obj23;
+  let obj4;
   let obj5;
   let obj6;
   let obj7;
@@ -61,48 +80,52 @@ export default function ConjureRemixSheet(project) {
   let onLayout;
   let ref;
   let str2;
-  let tmp11;
-  let tmp12Result2;
+  let title;
+  let tmp10;
+  let tmp12;
+  let tmp13Result;
   let tmp4;
-  let tmp7;
-  let value;
+  let tmp6;
+  let tmp8;
   project = project.project;
   let str = project.mode;
   if (str === undefined) {
-    str = "remix";
+    str = "copy";
   }
-  const onRemixed = project.onRemixed;
+  let onRemixed = project.onRemixed;
   let shareTicket = project.shareTicket;
   _slicedToArray = undefined;
-  value = undefined;
-  first1 = undefined;
-  first2 = undefined;
-  flattenedGuildIds = undefined;
+  react = undefined;
+  str2 = undefined;
+  c7 = undefined;
+  c8 = undefined;
   c9 = undefined;
   let memo;
-  str2 = undefined;
-  closure_12 = undefined;
-  let c13;
+  let stateFromStoresArray;
+  let c12;
+  first = undefined;
   let closure_14;
-  let obj = value;
-  [str2, _slicedToArray] = value.useState(project.currentGuildId);
-  [value, tmp4] = value.useState("");
-  [first1, tmp7] = value.useState(() => {
-    const obj = ConjureRemix;
-    return obj.copyProjectName(project.name);
-  });
-  [first2, flattenedGuildIds] = value.useState(false);
-  let tmp10 = _slicedToArray(value.useState(null), 2);
-  [tmp11, c9] = tmp10;
-  const tmp14 = onRemixed(shareTicket[10])();
-  const height = tmp14.height;
+  let c15;
+  let obj = react;
+  [first, _slicedToArray] = react.useState(project.currentGuildId);
+  const tmp3 = _slicedToArray(react.useState(str), 2);
+  [tmp4, c5] = tmp3;
+  [str2, tmp6] = react.useState(project.name);
+  [tmp8, c7] = _slicedToArray(react.useState(false), 2);
+  const tmp7 = _slicedToArray(react.useState(false), 2);
+  let tmp9 = _slicedToArray(react.useState(null), 2);
+  [tmp10, c8] = tmp9;
+  let tmp11 = _slicedToArray(react.useState(null), 2);
+  [tmp12, c9] = tmp11;
+  const tmp15 = onRemixed(shareTicket[9])();
+  const height = tmp15.height;
   let num = 0;
-  ({ ref, onLayout } = tmp14);
-  const tmp15 = closure_12;
+  ({ ref, onLayout } = tmp15);
+  const tmp16 = first;
   if (undefined !== height) {
     num = height;
   }
-  const tmp15Result = tmp15(num);
+  const tmp16Result = tmp16(num);
   let items = [project, shareTicket];
   memo = obj.useMemo(() => {
     const obj = ConjureRemix;
@@ -110,14 +133,14 @@ export default function ConjureRemixSheet(project) {
   }, items);
   const items1 = [memo];
   const effect = obj.useEffect(() => () => memo.dismiss(), items1);
-  let obj2 = project(tmp13[11]);
-  const items2 = [flattenedGuildIds, first2];
-  const stateFromStoresArray = obj2.useStateFromStoresArray(items2, () => {
+  let obj2 = project(tmp14[11]);
+  const items2 = [c8, c7];
+  stateFromStoresArray = obj2.useStateFromStoresArray(items2, () => {
     const items = [];
     flattenedGuildIds = flattenedGuildIds.getFlattenedGuildIds();
     const tmp2 = flattenedGuildIds[Symbol.iterator]();
     while (tmp2 !== undefined) {
-      let guild = first2.getGuild(tmp3);
+      guild = guild.getGuild(tmp3);
       let tmp6 = guild;
       let result = null != guild;
       if (result) {
@@ -131,41 +154,59 @@ export default function ConjureRemixSheet(project) {
     }
     return items;
   });
-  const intl = project(tmp13[13]).intl;
-  const stringResult = intl.string(onRemixed(shareTicket[14]).cIWtCk);
-  if (null == str2) {
-    const first3 = stateFromStoresArray[0];
+  const intl = project(tmp14[13]).intl;
+  const stringResult = intl.string(onRemixed(shareTicket[14])["maL0+X"]);
+  c12 = stringResult;
+  const intl2 = project(tmp14[13]).intl;
+  const stringResult1 = intl2.string(onRemixed(shareTicket[14])["pgbZu+"]);
+  if (null == first) {
+    const first1 = stateFromStoresArray[0];
     let id;
-    if (first3 != null) {
-      id = first3.id;
+    if (first1 != null) {
+      id = first1.id;
     }
     if (id == null) {
       id = null;
     }
-    str2 = id;
+    first = id;
   }
-  closure_12 = tmp23;
-  let tmp24 = null != str2;
-  if (tmp24) {
-    let isValidCopyNameResult = tmp23;
-    if (!isValidCopyNameResult) {
-      const tmp19Result = project(shareTicket[9]);
-      isValidCopyNameResult = tmp19Result.isValidCopyName(first1);
-    }
-    tmp24 = isValidCopyNameResult;
+  let found = stateFromStoresArray.find((id) => id.id === first);
+  if (found == null) {
+    found = null;
   }
-  c13 = tmp24;
-  const intl2 = tmp19(tmp13[13]).intl;
-  const string = intl2.string;
-  const tmp12Result = onRemixed(shareTicket[14]);
-  const stringResult1 = string("copy" === str ? tmp12Result["UsUa/c"] : tmp12Result["276ll6"]);
-  const items3 = [tmp24, str2, tmp23, first1, onRemixed, project.name, value, memo];
-  closure_14 = obj.useCallback(str2(function*(arg0, value) {
-    let c2;
-    let closure_0;
+  closure_14 = tmp26;
+  let isValidCopyNameResult = null != first;
+  if (isValidCopyNameResult) {
+    const tmp20Result = project(shareTicket[10]);
+    isValidCopyNameResult = tmp20Result.isValidCopyName(str2);
+  }
+  c15 = isValidCopyNameResult;
+  const intl3 = tmp20(tmp14[13]).intl;
+  const items3 = [first, stringResult, stateFromStoresArray];
+  const stringResult2 = intl3.string(onRemixed(shareTicket[14]).XWgAfc);
+  const callback = obj.useCallback(() => {
+    let obj2;
+    const obj = { key: ConjureRemixServerSheet, stackingBehavior: "stack", content: React4(ConjureServerPickerSheetDefault, obj2) };
+    const showActionSheet = ActionSheetActionCreators.showActionSheet;
+    obj2 = {
+      sheetKey: ConjureRemixServerSheet,
+      title,
+      guilds: stateFromStoresArray,
+      selectedGuildId: first,
+      onPick(id) {
+        return closure_1_4(id.id);
+      }
+    };
+    ActionSheetActionCreators;
+    showActionSheet(obj);
+  }, items3);
+  const items4 = [isValidCopyNameResult, first, tmp26, str2, onRemixed, memo];
+  const callback1 = obj.useCallback(first(function*(arg0, value) {
     let closure_1;
-    if (c3 === 2) {
-      c3 = 3;
+    let closure_2;
+    let obj5;
+    if (c4 === 2) {
+      c4 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
     } else if (tmp3 === 3) {
       if (arg0 === 1) {
@@ -174,140 +215,199 @@ export default function ConjureRemixSheet(project) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
-        let tmp4;
-        c3 = 2;
-        if (0 === shareTicket) {
+        let _var;
+        let projectId;
+        let guildId;
+        let appChannelId;
+        c4 = 2;
+        if (0 === c3) {
           if (arg0 === 1) {
-            c3 = 3;
+            c4 = 3;
             throw value;
           } else if (arg0 === 2) {
-            c3 = 3;
+            c4 = 3;
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            tmp4 = undefined;
-            const tmp40 = c13;
-            if (tmp40) {
-              if (null != str2) {
-                let obj5;
-                flattenedGuildIds(true);
-                _undefined(null);
+            shareTicket = tmp;
+            onRemixed = tmp4;
+            _var = undefined;
+            projectId = undefined;
+            guildId = undefined;
+            appChannelId = undefined;
+            const tmp75 = c15;
+            if (tmp75) {
+              if (null != first) {
+                let obj7;
+                guild(true);
+                _undefined2(null);
                 const _confirm = memo.confirm;
-                if (closure_12) {
-                  const obj4 = { name: project.name, prompt: "", copy: true };
-                  obj5 = obj4;
+                if (closure_14) {
+                  const obj6 = { name: str2, copy: true };
+                  obj7 = obj6;
                 } else {
-                  obj5 = { name: first1, prompt };
+                  obj7 = { name: str2 };
                 }
-                shareTicket = 1;
                 c3 = 1;
-                const obj6 = { value: _confirm(tmp18, obj5), done: false };
-                return obj6;
+                c4 = 1;
+                const obj8 = { value: _confirm(tmp40, obj7), done: false };
+                return obj8;
               }
             }
           }
-        } else if (arg0 === 1) {
-          c3 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c3 = 3;
-          const obj7 = { value, done: true };
-          return obj7;
         } else {
-          tmp4 = value;
-          if (null != tmp4) {
-            if (tmp4.ok) {
-              const obj = tmp(shareTicket[15]);
-              obj.hideActionSheet(closure_1_11);
-              closure_129_1(tmp4.projectId, tmp4.guildId);
-              c3 = 3;
-              const obj8 = { value: undefined, done: true };
-              return obj8;
+          if (1 === c3) {
+            if (arg0 === 1) {
+              c4 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c4 = 3;
+              const obj9 = { value, done: true };
+              return obj9;
             } else {
-              closure_129_9(tmp4.message);
-              closure_129_8(false);
+              _var = value;
+              if (null != _var) {
+                if (_var.ok) {
+                  projectId = _var.projectId;
+                  guildId = _var.guildId;
+                  const tmp12 = closure_130_14;
+                  if (tmp12) {
+                    if (null != guildId) {
+                      guild = guild.getGuild(guildId);
+                      let name;
+                      const tmp27 = closure_130_8;
+                      if (guild != null) {
+                        name = guild.name;
+                      }
+                      _var = name;
+                      if (name == null) {
+                        _var = "";
+                      }
+                      tmp27(_var);
+                      c3 = 2;
+                      c4 = 1;
+                      const obj10 = { value: obj5.publishConjureCopy(projectId, guildId), done: false };
+                      obj5 = _var(shareTicket[17]);
+                      return obj10;
+                    }
+                  }
+                } else {
+                  closure_130_9(_var.message);
+                  closure_130_7(false);
+                  c4 = 3;
+                  const obj11 = { value: undefined, done: true };
+                  return obj11;
+                }
+              }
+            }
+          } else if (arg0 === 1) {
+            c4 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            const obj12 = { value, done: true };
+            return obj12;
+          } else {
+            appChannelId = value;
+            if (null != appChannelId) {
+              const obj13 = onRemixed(shareTicket[15]);
+              obj13.hideActionSheet(stateFromStoresArray);
+              const obj14 = _var(shareTicket[17]);
+              obj14.openConjureCopy(guildId, appChannelId.appChannelId);
+              c4 = 3;
+              const obj = { value: undefined, done: true };
+              return obj;
             }
           }
+          const obj4 = onRemixed(shareTicket[15]);
+          obj4.hideActionSheet(stateFromStoresArray);
+          closure_130_1(projectId, guildId);
         }
-        c3 = 3;
-        return { value: "HermesInternal", done: "+60" };
-      } catch (tmp29) {
-        c3 = 3;
-        throw tmp29;
+        c4 = 3;
+        return { value: "HermesInternal", done: null };
+      } catch (tmp50) {
+        c4 = 3;
+        throw tmp50;
       }
     }
-  }), items3);
-  const ActionSheet = tmp19(tmp13[16]).ActionSheet;
-  let obj3 = { title: stringResult1, subtitle: formatToPlainString(tmp23 ? tmp12Result2.GzGb2w : tmp12Result2["QN8T+C"], obj5) };
-  const BottomSheetTitleHeader = tmp19(tmp13[17]).BottomSheetTitleHeader;
-  const intl3 = tmp19(tmp13[13]).intl;
-  formatToPlainString = intl3.formatToPlainString;
-  tmp12Result2 = onRemixed(shareTicket[14]);
-  let obj4 = { scrollable: true, startExpanded: true, header: tmp28(BottomSheetTitleHeader, obj3), footer: tmp28(tmp30, obj6), children: tmp31(BottomSheetScrollView, obj11) };
+  }), items4);
+  let obj3 = { startExpanded: true, keyboardShouldPersistTaps: "handled", header: c9(BottomSheetTitleHeader, obj4), footer: c9(tmp32, obj6), children: tmp33(tmp32, obj14) };
+  const ActionSheet = tmp20(tmp14[18]).ActionSheet;
+  obj4 = { title: intl4.formatToPlainString(tmp13(tmp14[14]).vU1gB6, obj5), subtitle: intl5.string(tmp13(tmp14[14]).PrV2rD) };
+  BottomSheetTitleHeader = tmp20(tmp14[19]).BottomSheetTitleHeader;
+  intl4 = tmp20(tmp14[13]).intl;
   obj5 = { projectName: project.name };
-  obj6 = { style: tmp15Result.footer, ref, onLayout, children: tmp31(SafeAreaPaddingView, obj7) };
-  obj7 = { bottom: true, style: tmp15Result.footerBody, children: items4 };
-  let tmp28Result = null;
-  SafeAreaPaddingView = tmp19(tmp13[18]).SafeAreaPaddingView;
-  if (null != tmp11) {
-    let obj8 = { accessibilityRole: "alert", children: tmp28(tmp19(shareTicket[19]).Text, obj9) };
-    obj9 = { variant: "body-xs/normal", color: "text-feedback-critical", children: tmp11 };
-    tmp28Result = tmp28(tmp30, obj8);
-  }
-  items4 = [tmp28Result, ];
-  const obj10 = {
-    variant: "primary",
-    size: "md",
-    text: stringResult1,
-    loading: first2,
-    disabled: !tmp24,
-    onPress() {
-      const promise = closure_14();
-      promise.catch(() => {
-
-      });
-    }
-  };
-  items4[1] = c9(project(shareTicket[20]).Button, obj10);
+  intl5 = tmp20(tmp14[13]).intl;
+  obj6 = { style: tmp16Result.footer, ref, onLayout, children: tmp33(SafeAreaPaddingView, obj7) };
+  obj7 = { bottom: true, style: tmp16Result.footerBody, children: items5 };
   let tmp31Result = null;
-  obj11 = { style: tmp15Result.scroll, contentContainerStyle: tmp15Result.list, keyboardShouldPersistTaps: "handled", children: items6 };
-  BottomSheetScrollView = tmp19(tmp13[21]).BottomSheetScrollView;
-  if ("copy" !== str) {
-    const obj12 = { style: tmp15Result.fields, children: items5 };
-    const obj13 = { label: intl4.string(onRemixed(shareTicket[14]).cvvDlE), placeholder: intl5.string(onRemixed(shareTicket[14]).u3W0k0), value, onChange: tmp4, disabled: first2 };
-    const TextArea = tmp19(tmp13[22]).TextArea;
-    intl4 = tmp19(tmp13[13]).intl;
-    intl5 = tmp19(tmp13[13]).intl;
-    items5 = [tmp28(TextArea, obj13), ];
-    const obj14 = { label: intl6.string(onRemixed(shareTicket[14]).PuVQeX), value: first1, onChange: tmp7, maxLength: project(shareTicket[24]).MAX_PROJECT_NAME_LENGTH, disabled: first2 };
-    const TextInput = tmp19(tmp13[23]).TextInput;
-    intl6 = tmp19(tmp13[13]).intl;
-    items5[1] = c9(TextInput, obj14);
-    tmp31Result = tmp31(tmp30, obj12);
+  SafeAreaPaddingView = tmp20(tmp14[20]).SafeAreaPaddingView;
+  if (null != tmp12) {
+    let obj8 = { accessibilityRole: "alert", children: c9(project(tmp14[21]).Text, obj9) };
+    obj9 = { variant: "body-xs/normal", color: "text-feedback-critical", children: tmp12 };
+    tmp31Result = tmp31(tmp32, obj8);
   }
-  items6 = [tmp31Result, ];
-  const obj15 = {
-    title: stringResult,
-    hasIcons: false,
-    value: str2,
+  items5 = [tmp31Result, , ];
+  let tmp31Result3 = null;
+  if (null != tmp10) {
+    let obj10 = { accessibilityLiveRegion: "polite", children: c9(Text, obj11) };
+    obj11 = { variant: "body-xs/normal", color: "text-muted", children: formatToPlainString(O25g5n, obj12) };
+    Text = tmp20(tmp14[21]).Text;
+    const intl6 = tmp20(tmp14[13]).intl;
+    formatToPlainString = intl6.formatToPlainString;
+    obj12 = { projectName: str2.trim(), server: tmp10 };
+    O25g5n = tmp13(tmp14[14]).O25g5n;
+    tmp31Result3 = tmp31(tmp32, obj10);
+  }
+  items5[1] = tmp31Result3;
+  let obj13 = { variant: "primary", size: "md", text: stringResult2, loading: tmp8, disabled: !isValidCopyNameResult, onPress: callback1 };
+  items5[2] = c9(project(shareTicket[22]).Button, obj13);
+  obj14 = { style: tmp16Result.list, children: items6 };
+  const obj15 = { label: intl7.string(onRemixed(shareTicket[14])["7gI+sw"]), value: str2, onChange: tmp6, maxLength: project(shareTicket[24]).MAX_PROJECT_NAME_LENGTH, disabled: tmp8 };
+  const TextInput = tmp20(tmp14[23]).TextInput;
+  intl7 = tmp20(tmp14[13]).intl;
+  items6 = [c9(TextInput, obj15), , ];
+  let tmp31Result4 = null;
+  if (null != found) {
+    const obj16 = { title: stringResult, hasIcons: true, children: c9(TableRow, obj17) };
+    const TableRowGroup = tmp20(tmp14[25]).TableRowGroup;
+    obj17 = { icon: c9(tmp13Result, obj18), label: found.name, labelLineClamp: 1, arrow: true, disabled: tmp8, onPress: callback };
+    TableRow = tmp20(tmp14[26]).TableRow;
+    obj18 = { guild: found, size: project(shareTicket[27]).GuildIconSizes.SMALL_32 };
+    tmp13Result = onRemixed(shareTicket[27]);
+    tmp31Result4 = tmp31(TableRowGroup, obj16);
+  }
+  items6[1] = tmp31Result4;
+  const obj19 = {
+    title: stringResult1,
+    hasIcons: true,
+    value: tmp4,
     onChange(arg0) {
-      return closure_4(arg0);
+      return _undefined(arg0);
     },
-    accessibilityLabel: stringResult,
-    children: stateFromStoresArray.map((label) => {
-      const obj = { label: label.name, value: label.id, disabled: first2 };
-      return React4(TableRadioRow.TableRadioRow, obj, label.id);
-    })
+    accessibilityLabel: stringResult1,
+    children: items7
   };
-  const TableRadioGroup = tmp19(tmp13[25]).TableRadioGroup;
-  if (str2 == null) {
-    str2 = "";
-  }
-  items6[1] = c9(TableRadioGroup, obj15);
-  return c9(ActionSheet, obj4);
+  const TableRadioGroup = tmp20(tmp14[28]).TableRadioGroup;
+  const obj20 = { value: "copy", icon: c9(TableRowIcon, obj21), label: intl8.string(onRemixed(shareTicket[14]).sx5jYE), subLabel: intl9.string(onRemixed(shareTicket[14])["S+Fcvd"]), disabled: tmp8 };
+  const TableRadioRow = tmp20(tmp14[29]).TableRadioRow;
+  obj21 = { IconComponent: project(shareTicket[31]).CopyIcon };
+  TableRowIcon = tmp20(tmp14[30]).TableRowIcon;
+  intl8 = tmp20(tmp14[13]).intl;
+  intl9 = tmp20(tmp14[13]).intl;
+  items7 = [c9(TableRadioRow, obj20), ];
+  const obj22 = { value: "remix", icon: c9(TableRowIcon2, obj23), label: intl10.string(onRemixed(shareTicket[14]).ZdvGpk), subLabel: intl11.string(onRemixed(shareTicket[14]).EIh4da), disabled: tmp8 };
+  const TableRadioRow2 = tmp20(tmp14[29]).TableRadioRow;
+  obj23 = { IconComponent: project(shareTicket[32]).MagicWandIcon };
+  TableRowIcon2 = tmp20(tmp14[30]).TableRowIcon;
+  intl10 = tmp20(tmp14[13]).intl;
+  intl11 = tmp20(tmp14[13]).intl;
+  items7[1] = c9(TableRadioRow2, obj22);
+  items6[2] = memo(TableRadioGroup, obj19);
+  return c9(ActionSheet, obj3);
 };
 export const CONJURE_REMIX_SHEET_KEY = "ConjureRemixSheet";

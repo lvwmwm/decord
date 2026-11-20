@@ -1,17 +1,17 @@
-// Module ID: 11879
-// Function ID: 11880
+// Module ID: 11821
+// Function ID: 11822
 // Name: ActivitiesActionCreators
-// Dependencies: [5, 4641, 1072, 4797, 572, 1285, 8263, 8131, 5529, 5531, 7618, 2]
+// Dependencies: [5, 4643, 1071, 4799, 572, 1284, 8262, 8130, 5531, 5533, 7617, 2]
 
-// Module 11879 (ActivitiesActionCreators)
+// Module 11821 (ActivitiesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import MessageConstants from "MessageConstants" /* 4797 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5529 */;
-import ActivityTypes from "ActivityTypes" /* 5531 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7618 */;
+import MessageConstants from "MessageConstants" /* 4799 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5531 */;
+import ActivityTypes from "ActivityTypes" /* 5533 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7617 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import Constants from "Constants" /* 1072 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

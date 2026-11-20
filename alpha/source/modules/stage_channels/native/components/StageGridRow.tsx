@@ -1,17 +1,17 @@
-// Module ID: 11015
-// Function ID: 11016
+// Module ID: 10957
+// Function ID: 10958
 // Name: StageGridRow
-// Dependencies: [19, 17, 21, 4792, 11007, 6416, 8031, 11016, 11006, 2]
+// Dependencies: [19, 17, 21, 4794, 10949, 6418, 8030, 10958, 10948, 2]
 
-// Module 11015 (StageGridRow)
+// Module 10957 (StageGridRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import StageChannelParticipants from "StageChannelParticipants" /* 6416 */;
-import useIsScreenLandscape from "useIsScreenLandscape" /* 8031 */;
-import SpeakerTileDefault from "SpeakerTile" /* 11006 */;
-import MediaTileDefault from "MediaTile" /* 11016 */;
+import StageChannelParticipants from "StageChannelParticipants" /* 6418 */;
+import useIsScreenLandscape from "useIsScreenLandscape" /* 8030 */;
+import SpeakerTileDefault from "SpeakerTile" /* 10948 */;
+import MediaTileDefault from "MediaTile" /* 10958 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let type;
@@ -33,11 +33,11 @@ const memoResult = react.memo(function StageGridRow(row) {
     num = participants.length;
   }
   if (1 === num) {
-    THIRD = tmp2(11007).StageTileSize.FULL;
+    THIRD = tmp2(10949).StageTileSize.FULL;
   } else if (2 === num) {
-    THIRD = tmp2(11007).StageTileSize.HALF;
+    THIRD = tmp2(10949).StageTileSize.HALF;
   } else {
-    THIRD = tmp2(11007).StageTileSize.THIRD;
+    THIRD = tmp2(10949).StageTileSize.THIRD;
   }
   const items = [tmp.container, ];
   const tmp5 = View;

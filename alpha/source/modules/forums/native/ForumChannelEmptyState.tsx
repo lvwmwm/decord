@@ -1,16 +1,16 @@
-// Module ID: 13631
-// Function ID: 13632
+// Module ID: 13601
+// Function ID: 13602
 // Name: ForumChannelEmptyState
-// Dependencies: [19, 17, 21, 4792, 4799, 1630, 5479, 13632, 13633, 5383, 1113, 2]
+// Dependencies: [19, 17, 21, 4794, 4801, 1628, 5481, 13602, 13603, 5385, 1112, 2]
 
-// Module 13631 (ForumChannelEmptyState)
+// Module 13601 (ForumChannelEmptyState)
 import react_native from "react-native" /* 17 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import shared from "shared" /* 4799 */;
-import FastImageDefault from "FastImage" /* 5479 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
+import shared from "shared" /* 4801 */;
+import FastImageDefault from "FastImage" /* 5481 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -41,28 +41,28 @@ const memoResult = react.memo(function ForumChannelEmptyState(topViewHeight) {
   const tmp6 = hasOwnProperty;
   const tmp7 = View;
   if (obj3.isThemeLight(theme)) {
-    tmp4Result = tmp4(13632);
+    tmp4Result = tmp4(13602);
   } else {
-    tmp4Result = tmp4(13633);
+    tmp4Result = tmp4(13603);
   }
   items1 = [, , ];
   const obj4 = { source: tmp4Result, style: tmp.image };
   items1[0] = React3(tmp9, obj4);
   const obj5 = { style: tmp.title, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: formatToPlainStringResult };
-  const Text = tmp2(5383).Text;
-  const intl = tmp2(1113).intl;
+  const Text = tmp2(5385).Text;
+  const intl = tmp2(1112).intl;
   if (tagFilter.size > 0) {
     const obj6 = { numTags: tagFilter.size };
-    formatToPlainStringResult = intl.formatToPlainString(tmp2(1113).t.lvPci0, obj6);
+    formatToPlainStringResult = intl.formatToPlainString(tmp2(1112).t.lvPci0, obj6);
   } else {
-    formatToPlainStringResult = intl.string(tmp2(1113).t.PwTMG0);
+    formatToPlainStringResult = intl.string(tmp2(1112).t.PwTMG0);
   }
   items1[1] = React3(Text, obj5);
   const obj7 = { style: tmp.subtext, variant: "body-sm/medium", color: "text-default", children: formatToPlainStringResult1 };
-  const Text2 = tmp2(5383).Text;
-  const intl2 = tmp2(1113).intl;
+  const Text2 = tmp2(5385).Text;
+  const intl2 = tmp2(1112).intl;
   const formatToPlainString = intl2.formatToPlainString;
-  const t = tmp2(1113).t;
+  const t = tmp2(1112).t;
   if (tagFilter.size > 0) {
     const obj8 = { numTags: tagFilter.size };
     formatToPlainStringResult1 = formatToPlainString(t.AAeye1, obj8);

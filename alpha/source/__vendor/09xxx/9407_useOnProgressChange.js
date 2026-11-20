@@ -1,11 +1,11 @@
 // Module ID: 9407
 // Function ID: 9408
 // Name: useOnProgressChange
-// Dependencies: [1655, 9393]
+// Dependencies: [1653, 9393]
 // Exports: useOnProgressChange
 
 // Module 9407 (useOnProgressChange)
-import _mod1655 from "module_1655" /* 1655 */;
+import _mod1653 from "module_1653" /* 1653 */;
 
 let tmp;
 const convertToSharedIndex = tmp(9393);
@@ -32,7 +32,7 @@ export function useOnProgressChange(offsetX) {
   const tmp = require;
   const tmp2 = dependencyMap;
   offsetX = offsetX.offsetX;
-  let tmp3 = _mod1655;
+  let tmp3 = _mod1653;
   const items = [closure_2, offsetX];
   [tmp4, tmp5] = items;
   function pnpm_useOnProgressChangeTs1() {
@@ -52,7 +52,7 @@ export function useOnProgressChange(offsetX) {
   items2[5] = loop;
   items2[6] = onProgressChange;
   items2[7] = tmp6;
-  items2[8] = _mod1655.runOnJS;
+  items2[8] = _mod1653.runOnJS;
   let c0;
   let c1;
   let c2;

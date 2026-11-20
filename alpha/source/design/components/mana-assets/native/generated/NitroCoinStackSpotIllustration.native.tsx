@@ -1,12 +1,12 @@
 // Module ID: 9437
 // Function ID: 9438
 // Name: NitroCoinStackSpotIllustration
-// Dependencies: [19, 21, 9438, 9439, 9440, 7238, 5479, 2]
+// Dependencies: [19, 21, 9438, 9439, 9440, 7237, 5481, 2]
 // Exports: NitroCoinStackSpotIllustration
 
 // Module 9437 (NitroCoinStackSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 7238 */;
+import react_native from "react-native" /* 7237 */;
 import _modDef9438 from "module_9438" /* 9438 */;
 import _modDef9439 from "module_9439" /* 9439 */;
 import _modDef9440 from "module_9440" /* 9440 */;

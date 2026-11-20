@@ -1,14 +1,14 @@
-// Module ID: 10309
-// Function ID: 10310
+// Module ID: 10251
+// Function ID: 10252
 // Name: SettingsIcon
-// Dependencies: [19, 21, 575, 5478, 10310, 2]
+// Dependencies: [19, 21, 575, 5480, 10252, 2]
 // Exports: SettingsIcon
 
-// Module 10309 (SettingsIcon)
+// Module 10251 (SettingsIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5478 */;
-import AssetRegistry from "AssetRegistry" /* 10310 */;
+import BaseIconImage2 from "BaseIconImage" /* 5480 */;
+import AssetRegistry from "AssetRegistry" /* 10252 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

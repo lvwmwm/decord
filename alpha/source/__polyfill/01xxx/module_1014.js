@@ -1,0 +1,72 @@
+// Module ID: 1014
+// Function ID: 1015
+// Dependencies: [867, 681, 862, 1015]
+// Exports: appRegistryIntegration, getAppRegistryIntegration
+
+// Module 1014
+import _mod681 from "module_681" /* 681 */;
+import ReactNativeLibraries from "ReactNativeLibraries" /* 862 */;
+import _mod867 from "module_867" /* 867 */;
+
+let tmp;
+const fillTyped = tmp(1015);
+const f79583 = (arg0) => {
+  closure_0 = arg0;
+  return () => {
+    const items = [...arguments];
+    const item = closure_0.forEach((fn) => fn());
+    return closure_0(...items);
+  };
+};
+let AppRegistry = "AppRegistry";
+function patchAppRegistryRunApplication(arg0) {
+  let closure_0 = arg0;
+  AppRegistry = ReactNativeLibraries.ReactNativeLibraries.AppRegistry;
+  if (AppRegistry) {
+    const tmpResult = fillTyped;
+    tmpResult.fillTyped(AppRegistry, "runApplication", f79583);
+  }
+}
+
+export const INTEGRATION_NAME = "AppRegistry";
+export const appRegistryIntegration = () => {
+  let closure_0 = [];
+  let obj = {
+    name: AppRegistry,
+    setupOnce() {
+      const obj = _mod867;
+      if (!obj.isWeb()) {
+        if (typeof patchAppRegistryRunApplication === "function") {
+          AppRegistry = tmp(862).ReactNativeLibraries.AppRegistry;
+          if (AppRegistry) {
+            const tmpResult = fillTyped;
+            tmpResult.fillTyped(AppRegistry, "runApplication", f79583);
+          }
+        } else {
+          throw new TypeError("Trying to call a non-function");
+        }
+      }
+    },
+    onRunApplication(onRunApplicationHook) {
+      const arr = closure_0;
+      if (closure_0.includes(onRunApplicationHook)) {
+        const debug = _mod681.debug;
+        debug.log("[AppRegistryIntegration] Callback already registered.");
+      } else {
+        arr.push(onRunApplicationHook);
+      }
+    }
+  };
+  return obj;
+};
+export { patchAppRegistryRunApplication };
+export const getAppRegistryIntegration = () => {
+  let client = arg0;
+  if (arg0 === undefined) {
+    const obj2 = _mod681;
+    client = obj2.getClient();
+  }
+  if (client) {
+    return client.getIntegrationByName(AppRegistry);
+  }
+};

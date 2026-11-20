@@ -1,8 +1,8 @@
-// Module ID: 15834
-// Function ID: 15835
+// Module ID: 15798
+// Function ID: 15799
 // Dependencies: [2]
 
-// Module 15834
+// Module 15798
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/user_profile/try_it_out/preset-shadow-realm.png.js");

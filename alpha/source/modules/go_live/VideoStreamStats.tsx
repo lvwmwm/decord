@@ -1,12 +1,12 @@
-// Module ID: 6323
-// Function ID: 6324
+// Module ID: 6325
+// Function ID: 6326
 // Name: VideoStreamStats
-// Dependencies: [5716, 1072, 4636, 5541, 2]
+// Dependencies: [5718, 1071, 4638, 5543, 2]
 
-// Module 6323 (VideoStreamStats)
-import Constants from "Constants" /* 1072 */;
-import TimeUtils from "TimeUtils" /* 5541 */;
-import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 5716 */;
+// Module 6325 (VideoStreamStats)
+import Constants from "Constants" /* 1071 */;
+import TimeUtils from "TimeUtils" /* 5543 */;
+import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 5718 */;
 import size from "module_2" /* 2 */;
 
 const StreamLayouts = Constants.StreamLayouts;
@@ -32,7 +32,7 @@ class VideoStreamStats {
       obj._streamSettingsChanged = state.resolution !== obj._targetResolution || tmp2 !== obj._targetFPS;
     };
     obj._isSender = _isSender;
-    const interval = new obj(4636).Interval();
+    const interval = new obj(4638).Interval();
     obj._statInterval = interval;
     obj._lastLayout = _lastLayout;
     obj._layoutBuckets = {};

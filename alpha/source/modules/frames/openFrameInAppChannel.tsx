@@ -1,10 +1,10 @@
-// Module ID: 10625
-// Function ID: 10626
+// Module ID: 10567
+// Function ID: 10568
 // Name: openFrameInAppChannel
-// Dependencies: [5, 10626, 10627, 2]
+// Dependencies: [5, 10568, 10569, 2]
 // Exports: default
 
-// Module 10625 (openFrameInAppChannel)
+// Module 10567 (openFrameInAppChannel)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

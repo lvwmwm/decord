@@ -1,26 +1,26 @@
-// Module ID: 18229
-// Function ID: 18230
+// Module ID: 18056
+// Function ID: 18057
 // Name: GuildRoleSubscriptionPurchasePage
-// Dependencies: [19, 17, 1192, 4641, 4663, 1072, 21, 4792, 575, 5383, 1113, 1187, 10866, 16668, 16670, 16671, 563, 18230, 5408, 18232, 18233, 18234, 7517, 5479, 7203, 18235, 5808, 18237, 18238, 5471, 18239, 2]
+// Dependencies: [19, 17, 1191, 4643, 4665, 1071, 21, 4794, 575, 5385, 1112, 1186, 10808, 16492, 16494, 16495, 563, 18057, 5410, 18059, 18060, 18061, 7516, 5481, 7202, 18062, 5810, 18064, 18065, 5473, 18066, 2]
 // Exports: default
 
-// Module 18229 (GuildRoleSubscriptionPurchasePage)
+// Module 18056 (GuildRoleSubscriptionPurchasePage)
 import nativeDefault from "native" /* 575 */;
-import intl6 from "intl" /* 1113 */;
-import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import LinkingDefault from "Linking" /* 5471 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 7517 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10866 */;
-import GuildRoleSubscriptionPurchasePreviewCardDefault from "GuildRoleSubscriptionPurchasePreviewCard" /* 18239 */;
+import intl6 from "intl" /* 1112 */;
+import native from "native" /* 1186 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import LinkingDefault from "Linking" /* 5473 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 7516 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10808 */;
+import GuildRoleSubscriptionPurchasePreviewCardDefault from "GuildRoleSubscriptionPurchasePreviewCard" /* 18066 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ThemeStore from "ThemeStore" /* 1192 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import GuildStore from "GuildStore" /* 4663 */;
-import Constants from "Constants" /* 1072 */;
+import ThemeStore from "ThemeStore" /* 1191 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import GuildStore from "GuildStore" /* 4665 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

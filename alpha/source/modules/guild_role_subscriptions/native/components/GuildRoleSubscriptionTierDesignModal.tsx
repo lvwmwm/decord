@@ -1,24 +1,24 @@
-// Module ID: 20097
-// Function ID: 20098
+// Module ID: 19917
+// Function ID: 19918
 // Name: GuildRoleSubscriptionTierDesignModal
-// Dependencies: [32, 19, 17, 16663, 1072, 21, 4792, 575, 5356, 16695, 20062, 20072, 16683, 7425, 20057, 7229, 1113, 20063, 20098, 20064, 2]
+// Dependencies: [32, 19, 17, 16487, 1071, 21, 4794, 575, 5358, 16519, 19882, 19892, 16507, 7424, 19877, 7228, 1112, 19883, 19918, 19884, 2]
 // Exports: GuildRoleSubscriptionTierDesignTab, default
 
-// Module 20097 (GuildRoleSubscriptionTierDesignModal)
+// Module 19917 (GuildRoleSubscriptionTierDesignModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import intl4 from "intl" /* 1113 */;
-import useToken5 from "useToken" /* 5356 */;
-import RoleIconUtils from "RoleIconUtils" /* 7425 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16663 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16683 */;
-import GuildRoleSubscriptionMemberPreview from "GuildRoleSubscriptionMemberPreview" /* 16695 */;
-import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 20064 */;
+import Constants from "Constants" /* 1071 */;
+import intl4 from "intl" /* 1112 */;
+import useToken5 from "useToken" /* 5358 */;
+import RoleIconUtils from "RoleIconUtils" /* 7424 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16487 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16507 */;
+import GuildRoleSubscriptionMemberPreview from "GuildRoleSubscriptionMemberPreview" /* 16519 */;
+import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 19884 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -72,7 +72,7 @@ function Content() {
   let role;
   let tmp7;
   let tmp8;
-  const tmp3 = role(20062)();
+  const tmp3 = role(19882)();
   let obj = require("EditStateContextProvider");
   const editStateContext = obj.useEditStateContext();
   ({ editStateId, guildId } = editStateContext);
@@ -105,8 +105,8 @@ function Content() {
   items2 = [closure_9(MemberPreviews, { role }), , ];
   const obj7 = { children: items3 };
   const obj8 = { title: intl.string(require("intl").t.sEr1zr) };
-  const TableRowGroupTitle = tmp4(7229).TableRowGroupTitle;
-  intl = tmp4(1113).intl;
+  const TableRowGroupTitle = tmp4(7228).TableRowGroupTitle;
+  intl = tmp4(1112).intl;
   items3 = [closure_9(TableRowGroupTitle, obj8), ];
   const obj9 = {
     description: intl2.string(require("intl").t.Glqj9m),
@@ -115,18 +115,18 @@ function Content() {
     previewShape: require("FormImagePicker").PreviewShape.SQUIRCLE,
     previewResizeMode: "cover",
     setImage(icon) {
-      const obj = { icon: icon.uri, unicodeEmoji: "r" };
+      const obj = { icon: icon.uri, unicodeEmoji: "Array" };
       return closure_0(obj);
     },
     disabled: roleSubscriptionSettingsDisabled
   };
-  const tmpResult = role(20063);
-  intl2 = tmp4(1113).intl;
+  const tmpResult = role(19883);
+  intl2 = tmp4(1112).intl;
   items3[1] = closure_9(tmpResult, obj9);
   items2[1] = closure_10(View, obj7);
-  const obj10 = { title: intl3.string(require("intl").t["W7hH+z"]), hasIcons: true, children: closure_9(role(20098), { color: tmp7, onChange: tmp8, disabled: roleSubscriptionSettingsDisabled }) };
-  const TableRowGroup = tmp4(7229).TableRowGroup;
-  intl3 = tmp4(1113).intl;
+  const obj10 = { title: intl3.string(require("intl").t["W7hH+z"]), hasIcons: true, children: closure_9(role(19918), { color: tmp7, onChange: tmp8, disabled: roleSubscriptionSettingsDisabled }) };
+  const TableRowGroup = tmp4(7228).TableRowGroup;
+  intl3 = tmp4(1112).intl;
   items2[2] = closure_9(TableRowGroup, obj10);
   return closure_10(View, obj6);
 }

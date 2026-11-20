@@ -1,13 +1,13 @@
-// Module ID: 19786
-// Function ID: 19787
+// Module ID: 19604
+// Function ID: 19605
 // Name: BaseRuleInfo
-// Dependencies: [12309, 19774, 19773, 1113, 2]
+// Dependencies: [12279, 19592, 19591, 1112, 2]
 // Exports: getBaseRuleInfo
 
-// Module 19786 (BaseRuleInfo)
-import Constants from "Constants" /* 12309 */;
-import AutomodRuleUtils from "AutomodRuleUtils" /* 19773 */;
-import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 19774 */;
+// Module 19604 (BaseRuleInfo)
+import Constants from "Constants" /* 12279 */;
+import AutomodRuleUtils from "AutomodRuleUtils" /* 19591 */;
+import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 19592 */;
 import size from "module_2" /* 2 */;
 
 const AutomodTriggerType = Constants.AutomodTriggerType;
@@ -50,13 +50,13 @@ export function getBaseRuleInfo(triggerType, name) {
                   if (tmp6Result.isRuleKeywordFilter(name)) {
                     let formatToPlainStringResult;
                     if (name.triggerMetadata.regexPatterns.length > 0) {
-                      const intl2 = tmp6(1113).intl;
+                      const intl2 = tmp6(1112).intl;
                       const obj4 = { keywordCount: name.triggerMetadata.keywordFilter.length, regexPatternCount: name.triggerMetadata.regexPatterns.length };
-                      formatToPlainStringResult = intl2.formatToPlainString(tmp6(1113).t.xZUvxR, obj4);
+                      formatToPlainStringResult = intl2.formatToPlainString(tmp6(1112).t.xZUvxR, obj4);
                     } else {
-                      const intl = tmp6(1113).intl;
+                      const intl = tmp6(1112).intl;
                       const obj5 = { keywordCount: name.triggerMetadata.keywordFilter.length };
-                      formatToPlainStringResult = intl.formatToPlainString(tmp6(1113).t.dJN7Lk, obj5);
+                      formatToPlainStringResult = intl.formatToPlainString(tmp6(1112).t.dJN7Lk, obj5);
                     }
                     tmp8 = formatToPlainStringResult;
                   }
@@ -66,25 +66,25 @@ export function getBaseRuleInfo(triggerType, name) {
                   str2 = "";
                 }
                 if (AutomodTriggerType.KEYWORD === triggerType) {
-                  const intl7 = tmp6(1113).intl;
-                  str3 = intl7.string(tmp6(1113).t.TzvaeK);
+                  const intl7 = tmp6(1112).intl;
+                  str3 = intl7.string(tmp6(1112).t.TzvaeK);
                 } else if (AutomodTriggerType.ML_SPAM === triggerType) {
-                  const intl6 = tmp6(1113).intl;
-                  str3 = intl6.string(tmp6(1113).t.jBZSQl);
+                  const intl6 = tmp6(1112).intl;
+                  str3 = intl6.string(tmp6(1112).t.jBZSQl);
                 } else if (AutomodTriggerType.DEFAULT_KEYWORD_LIST === triggerType) {
-                  const intl5 = tmp6(1113).intl;
-                  str3 = intl5.string(tmp6(1113).t.Drc8ft);
+                  const intl5 = tmp6(1112).intl;
+                  str3 = intl5.string(tmp6(1112).t.Drc8ft);
                 } else if (AutomodTriggerType.MENTION_SPAM === triggerType) {
-                  const intl4 = tmp6(1113).intl;
-                  str3 = intl4.string(tmp6(1113).t.flhXO4);
+                  const intl4 = tmp6(1112).intl;
+                  str3 = intl4.string(tmp6(1112).t.flhXO4);
                 } else if (AutomodTriggerType.USER_PROFILE === triggerType) {
-                  const intl3 = tmp6(1113).intl;
-                  str3 = intl3.string(tmp6(1113).t.A35LyL);
+                  const intl3 = tmp6(1112).intl;
+                  str3 = intl3.string(tmp6(1112).t.A35LyL);
                 } else {
                   str3 = null;
                   if (AutomodTriggerType.APPLICATION === triggerType) {
-                    const intl9 = tmp6(1113).intl;
-                    str3 = intl9.string(tmp6(1113).t.kHNeDa);
+                    const intl9 = tmp6(1112).intl;
+                    str3 = intl9.string(tmp6(1112).t.kHNeDa);
                   }
                 }
                 if (str3 == null) {
@@ -92,8 +92,8 @@ export function getBaseRuleInfo(triggerType, name) {
                 }
                 str4 = undefined;
                 if (triggerType === AutomodTriggerType.KEYWORD) {
-                  const intl8 = tmp6(1113).intl;
-                  str4 = intl8.formatToPlainString(tmp6(1113).t.yNec2m, {});
+                  const intl8 = tmp6(1112).intl;
+                  str4 = intl8.formatToPlainString(tmp6(1112).t.yNec2m, {});
                 }
                 if (str4 == null) {
                   str4 = "";

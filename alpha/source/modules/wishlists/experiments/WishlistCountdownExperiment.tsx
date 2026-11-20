@@ -1,13 +1,13 @@
-// Module ID: 14523
-// Function ID: 14524
+// Module ID: 14491
+// Function ID: 14492
 // Name: WishlistCountdownExperiment
-// Dependencies: [1246, 502, 1452, 504, 2]
+// Dependencies: [1245, 502, 1450, 504, 2]
 // Exports: WishlistCountdownExposure, useWishlistCountdownConfigPeek
 
-// Module 14523 (WishlistCountdownExperiment)
-import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
+// Module 14491 (WishlistCountdownExperiment)
+import ApexExperimentStore from "ApexExperimentStore" /* 1245 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

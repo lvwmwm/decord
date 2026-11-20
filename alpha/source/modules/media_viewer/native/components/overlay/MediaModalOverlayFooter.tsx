@@ -1,21 +1,21 @@
-// Module ID: 10044
-// Function ID: 10045
+// Module ID: 10047
+// Function ID: 10048
 // Name: MediaModalOverlayFooter
-// Dependencies: [32, 19, 17, 21, 4792, 575, 1655, 10042, 5002, 1187, 10045, 5052, 1708, 6898, 5355, 10046, 10026, 2]
+// Dependencies: [32, 19, 17, 21, 4794, 575, 1653, 10045, 5004, 1186, 10048, 5054, 1706, 6897, 5357, 10049, 10029, 2]
 // Exports: MediaModalOverlayFooter
 
-// Module 10044 (MediaModalOverlayFooter)
+// Module 10047 (MediaModalOverlayFooter)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 1187 */;
-import _mod1708 from "module_1708" /* 1708 */;
-import timing_timing from "timing/timing" /* 5002 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5052 */;
-import useMessagePreviewHeight from "useMessagePreviewHeight" /* 10042 */;
+import native from "native" /* 1186 */;
+import _mod1706 from "module_1706" /* 1706 */;
+import timing_timing from "timing/timing" /* 5004 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5054 */;
+import useMessagePreviewHeight from "useMessagePreviewHeight" /* 10045 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let closure_0, closure_1, closure_2, flag, flag2, flag3, num3, obj1, result2, result3, set, str, str2, tmp23, tmp39, translationY;
@@ -25,7 +25,7 @@ let metroRequire;
 let obj2;
 let tmp;
 let tmp3;
-const _mod1655 = tmp(1655);
+const _mod1653 = tmp(1653);
 let View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let obj = { drawerContainer: { overflow: "hidden", backgroundColor: "analyticsLocations" }, drawerHeaderTab: obj2, drawerHeader: { backgroundColor: "r" }, messagePreviewContainer: { marginLeft: 6 }, thumbnailsContainer: { paddingTop: 8 } };
@@ -407,7 +407,7 @@ export function MediaModalOverlayFooter(channelId) {
     const items = [closure_17, , ];
     const onStart = FlingResult.direction(LegacyBaseButton.Directions.UP).onStart;
     FlingResult.direction(LegacyBaseButton.Directions.UP);
-    items[1] = _mod1708.scheduleOnRN;
+    items[1] = _mod1706.scheduleOnRN;
     items[2] = callback2;
     let c0;
     let c1;
@@ -453,7 +453,7 @@ export function MediaModalOverlayFooter(channelId) {
     items[5] = native.STANDARD_EASING;
     items[6] = closure_18;
     items[7] = 0;
-    items[8] = _mod1708.scheduleOnRN;
+    items[8] = _mod1706.scheduleOnRN;
     items[9] = callback2;
     let c0;
     let c1;
@@ -560,7 +560,7 @@ export function MediaModalOverlayFooter(channelId) {
     const onUpdate = maxPointersResult.activeOffsetY(10).onUpdate;
     const tmp4 = sharedValue1;
     maxPointersResult.activeOffsetY(10);
-    items[11] = _mod1708.scheduleOnRN;
+    items[11] = _mod1706.scheduleOnRN;
     items[12] = closure_6;
     items[13] = 3;
     items[14] = 40;
@@ -625,12 +625,12 @@ export function MediaModalOverlayFooter(channelId) {
     let items2 = [closure_23, tmp5, 0.75, , , , , , , , , , , , ];
     const onEnd = onUpdate(MediaModalOverlayFooterTsx11).onEnd;
     onUpdate(MediaModalOverlayFooterTsx11);
-    items2[3] = _mod1708.scheduleOnRN;
+    items2[3] = _mod1706.scheduleOnRN;
     items2[4] = closure_6;
     items2[5] = sharedValue;
     items2[6] = 0;
     items2[7] = tmp4;
-    items2[8] = _mod1655.withDelay;
+    items2[8] = _mod1653.withDelay;
     items2[9] = timing_timing.withTiming;
     items2[10] = c9;
     items2[11] = native.STANDARD_EASING;

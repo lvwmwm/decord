@@ -1,12 +1,12 @@
-// Module ID: 10521
-// Function ID: 10522
+// Module ID: 10463
+// Function ID: 10464
 // Name: MediaModalVideo
-// Dependencies: [19, 21, 10522, 10523, 10524, 9134, 10525, 2]
+// Dependencies: [19, 21, 10464, 10465, 10466, 9134, 10467, 2]
 
-// Module 10521 (MediaModalVideo)
-import MediaViewerVideoPerfExperiment from "MediaViewerVideoPerfExperiment" /* 10522 */;
-import useMediaLoadingDefault from "useMediaLoading" /* 10523 */;
-import MediaModalSpoilerOverlayDefault from "MediaModalSpoilerOverlay" /* 10525 */;
+// Module 10463 (MediaModalVideo)
+import MediaViewerVideoPerfExperiment from "MediaViewerVideoPerfExperiment" /* 10464 */;
+import useMediaLoadingDefault from "useMediaLoading" /* 10465 */;
+import MediaModalSpoilerOverlayDefault from "MediaModalSpoilerOverlay" /* 10467 */;
 import react from "react" /* 19 */;
 import Fragment_mod from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -47,7 +47,7 @@ const memoResult = react.memo(function MediaModalVideo(source) {
   const tmp6 = react;
   if (hasError) {
     const obj2 = { style, status: "error" };
-    tmp8Result = React3(tmp4(10524), obj2);
+    tmp8Result = React3(tmp4(10466), obj2);
   } else {
     const Fragment = tmp6.Fragment;
     const obj3 = { controls, muted, onError: handleError, onLoad: handleLoad, onLoadStart: handleLoadStart, paused, source: tmp7, style, useTextureView: !isMediaViewerVideoPerfEnabled };
@@ -56,7 +56,7 @@ const memoResult = react.memo(function MediaModalVideo(source) {
     const tmp8 = hasOwnProperty;
     if (isLoadingVisible) {
       const obj4 = { style, status: "loading" };
-      tmp9Result = tmp9(tmp4(10524), obj4);
+      tmp9Result = tmp9(tmp4(10466), obj4);
     }
     const obj5 = { children: items1 };
     items1[1] = tmp9Result;

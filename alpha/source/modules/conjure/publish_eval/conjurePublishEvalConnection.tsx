@@ -1,12 +1,12 @@
-// Module ID: 14661
-// Function ID: 14662
+// Module ID: 12196
+// Function ID: 12197
 // Name: conjurePublishEvalConnection
-// Dependencies: [572, 1269, 6820, 2]
+// Dependencies: [572, 1268, 6820, 2]
 // Exports: releasePublishEvalOnTicketRefused, sendConjurePublishEval
 
-// Module 14661 (conjurePublishEvalConnection)
+// Module 12196 (conjurePublishEvalConnection)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import v1 from "v1" /* 1269 */;
+import v1 from "v1" /* 1268 */;
 import size from "module_2" /* 2 */;
 
 function rejectPendingPublishEval(projectId) {

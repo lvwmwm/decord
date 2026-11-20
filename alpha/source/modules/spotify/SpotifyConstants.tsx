@@ -1,13 +1,13 @@
 // Module ID: 6778
 // Function ID: 6779
 // Name: SpotifyConstants
-// Dependencies: [1072, 6570, 1380, 2]
+// Dependencies: [1071, 6572, 1378, 2]
 // Exports: getSpotifyResourceType, isSpotifyParty
 
 // Module 6778 (SpotifyConstants)
-import Constants from "Constants" /* 1072 */;
-import Platforms from "Platforms" /* 6570 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
+import Constants from "Constants" /* 1071 */;
+import Platforms from "Platforms" /* 6572 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
 import size from "module_2" /* 2 */;
 
 let str;

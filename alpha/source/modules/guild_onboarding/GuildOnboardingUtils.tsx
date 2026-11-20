@@ -1,25 +1,25 @@
-// Module ID: 6567
-// Function ID: 6568
+// Module ID: 6569
+// Function ID: 6570
 // Name: GuildOnboardingUtils
-// Dependencies: [4641, 6568, 4722, 4663, 4724, 6701, 1072, 4710, 504, 1406, 6702, 6703, 4729, 1255, 558, 2153, 6704, 2]
+// Dependencies: [4643, 6570, 4724, 4665, 4726, 6703, 1071, 4712, 504, 1404, 6704, 6705, 4731, 1254, 558, 2151, 6706, 2]
 // Exports: getApplicationConnectionState, getChannelCoverageForOnboarding, getChattableDefaultChannels, getMinimumSetOfDefaultChannelIds, getProviderConnectionState, getSelectedChannelIds, getSelectedRoleIds, isBlockedByOnboarding, isChattableChannelId, isGuildOnboardingSettingsAvailable, showRulesInOnboarding, useChannelCoverageForOnboarding, useChattableDefaultChannels, useGuildOnboardingSettingsAvailable, useIsChattableChannel
 
-// Module 6567 (GuildOnboardingUtils)
+// Module 6569 (GuildOnboardingUtils)
 import shallowEqualDefault from "shallowEqual" /* 558 */;
-import GlobalUtils from "GlobalUtils" /* 1255 */;
-import FlagUtilsAll from "FlagUtils" /* 1406 */;
-import StringUtils from "StringUtils" /* 2153 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 4710 */;
-import GuildChannelStore2 from "GuildChannelStore" /* 4722 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4729 */;
-import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 6701 */;
-import isRoleRequiredDefault from "isRoleRequired" /* 6702 */;
-import DefaultChannelUtils from "DefaultChannelUtils" /* 6703 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6568 */;
-import GuildStore from "GuildStore" /* 4663 */;
-import PermissionStore from "PermissionStore" /* 4724 */;
-import Constants from "Constants" /* 1072 */;
+import GlobalUtils from "GlobalUtils" /* 1254 */;
+import FlagUtilsAll from "FlagUtils" /* 1404 */;
+import StringUtils from "StringUtils" /* 2151 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4712 */;
+import GuildChannelStore2 from "GuildChannelStore" /* 4724 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4731 */;
+import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 6703 */;
+import isRoleRequiredDefault from "isRoleRequired" /* 6704 */;
+import DefaultChannelUtils from "DefaultChannelUtils" /* 6705 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6570 */;
+import GuildStore from "GuildStore" /* 4665 */;
+import PermissionStore from "PermissionStore" /* 4726 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -28,7 +28,7 @@ let _require, application_id, authStore, navigation, provider_id, set;
 
 let closure_12;
 let unpackModuleId;
-const f90820 = (isCategory) => {
+const f89195 = (isCategory) => {
   const isCategoryResult = isCategory.isCategory();
   const tmp2 = !isCategoryResult && !isCategory.isThread() && !isRoleRequiredDefault(isCategory);
   return tmp2;
@@ -168,7 +168,7 @@ export function isBlockedByOnboarding(guild, selfMember) {
             const tmp2 = importAll;
             const tmp4 = GuildMemberFlags;
             if (hasFlagResult) {
-              const tmp2Result = tmp2(1406);
+              const tmp2Result = tmp2(1404);
               hasFlagResult = !tmp2Result.hasFlag(num, tmp4.COMPLETED_ONBOARDING);
             }
             return hasFlagResult;
@@ -210,7 +210,7 @@ export function getChannelCoverageForOnboarding(guildId, arr, defaultChannelIds)
     });
   });
   const item1 = defaultChannelIds.forEach((item) => set.add(item));
-  const found = mapped.filter(f90820);
+  const found = mapped.filter(f89195);
   const items = [
     found.filter((id) => {
       let hasItem = set.has(id.id);
@@ -253,7 +253,7 @@ export function useChannelCoverageForOnboarding(arg0, arr, arr2) {
     });
   });
   const item1 = arr2.forEach((item) => set.add(item));
-  const found = mapped.filter(f90820);
+  const found = mapped.filter(f89195);
   const items1 = [
     found.filter((id) => {
       let hasItem = set.has(id.id);

@@ -1,14 +1,14 @@
-// Module ID: 18775
-// Function ID: 18776
+// Module ID: 18599
+// Function ID: 18600
 // Name: useSuggestedSearches
-// Dependencies: [19, 13108, 13109, 13147, 504, 13131, 13129, 2]
+// Dependencies: [19, 13078, 13079, 13117, 504, 13101, 13099, 2]
 // Exports: useSuggestedSearches
 
-// Module 18775 (useSuggestedSearches)
-import SuggestedSearchStore2 from "SuggestedSearchStore" /* 13108 */;
-import SmartSearchConstants from "SmartSearchConstants" /* 13109 */;
-import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 13129 */;
-import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 13131 */;
+// Module 18599 (useSuggestedSearches)
+import SuggestedSearchStore2 from "SuggestedSearchStore" /* 13078 */;
+import SmartSearchConstants from "SmartSearchConstants" /* 13079 */;
+import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 13099 */;
+import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 13101 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

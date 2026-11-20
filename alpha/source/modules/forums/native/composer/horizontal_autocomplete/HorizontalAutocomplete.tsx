@@ -1,31 +1,31 @@
-// Module ID: 11548
-// Function ID: 11549
+// Module ID: 11490
+// Function ID: 11491
 // Name: HorizontalAutocomplete
-// Dependencies: [19, 17, 4793, 4698, 4663, 4734, 1388, 1072, 21, 4792, 6286, 575, 1655, 5353, 5002, 504, 1187, 5383, 4848, 7425, 7442, 11549, 7517, 5408, 5479, 2]
+// Dependencies: [19, 17, 4795, 4700, 4665, 4736, 1386, 1071, 21, 4794, 6288, 575, 1653, 5355, 5004, 504, 1186, 5385, 4850, 7424, 7441, 11491, 7516, 5410, 5481, 2]
 
-// Module 11548 (HorizontalAutocomplete)
+// Module 11490 (HorizontalAutocomplete)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 1187 */;
-import UserUtilsDefault from "UserUtils" /* 4848 */;
-import timing_timing from "timing/timing" /* 5002 */;
-import useMountEffectDefault from "useMountEffect" /* 5353 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import FastImageDefault from "FastImage" /* 5479 */;
-import RoleIconUtils from "RoleIconUtils" /* 7425 */;
-import RoleIconDefault from "RoleIcon" /* 7442 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11549 */;
+import native from "native" /* 1186 */;
+import UserUtilsDefault from "UserUtils" /* 4850 */;
+import timing_timing from "timing/timing" /* 5004 */;
+import useMountEffectDefault from "useMountEffect" /* 5355 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import FastImageDefault from "FastImage" /* 5481 */;
+import RoleIconUtils from "RoleIconUtils" /* 7424 */;
+import RoleIconDefault from "RoleIcon" /* 7441 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11491 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4793 */;
-import GuildRoleStore from "GuildRoleStore" /* 4698 */;
-import GuildStore from "GuildStore" /* 4663 */;
-import RelationshipStore from "RelationshipStore" /* 4734 */;
-import UserStore from "UserStore" /* 1388 */;
-import Constants from "Constants" /* 1072 */;
+import AccessibilityStore from "AccessibilityStore" /* 4795 */;
+import GuildRoleStore from "GuildRoleStore" /* 4700 */;
+import GuildStore from "GuildStore" /* 4665 */;
+import RelationshipStore from "RelationshipStore" /* 4736 */;
+import UserStore from "UserStore" /* 1386 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
-import TextStyles from "TextStyles" /* 6286 */;
+import createStyles_mod from "createStyles" /* 4794 */;
+import TextStyles from "TextStyles" /* 6288 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -41,7 +41,7 @@ let obj3;
 let obj4;
 let tmp4;
 let unpackModuleId;
-const _modDef1655 = tmp4(1655);
+const _modDef1653 = tmp4(1653);
 function HorizontalAutocompleteOption(arg0) {
   let children;
   let items2;
@@ -52,7 +52,7 @@ function HorizontalAutocompleteOption(arg0) {
   let sharedValue;
   ({ children, onPress } = arg0);
   const tmp = closure_13();
-  let obj = sharedValue(1655);
+  let obj = sharedValue(1653);
   sharedValue = obj.useSharedValue(0);
   useMountEffectDefault(() => {
     set = sharedValue.set;
@@ -62,7 +62,7 @@ function HorizontalAutocompleteOption(arg0) {
   const items = [closure_14, sharedValue];
   let c0;
   [tmp6, tmp7] = items;
-  const obj2 = sharedValue(1655);
+  const obj2 = sharedValue(1653);
   class HorizontalAutocompleteTsx1 {
     constructor() {
       const obj = { opacity: _undefined.get() };
@@ -73,7 +73,7 @@ function HorizontalAutocompleteOption(arg0) {
   HorizontalAutocompleteTsx1.__closure = items1;
   HorizontalAutocompleteTsx1.__workletHash = 16766132942652;
   HorizontalAutocompleteTsx1.__initData = tmp6;
-  const obj3 = { onPress, children: closure_11(_modDef1655.View, obj4) };
+  const obj3 = { onPress, children: closure_11(_modDef1653.View, obj4) };
   const animatedStyle = obj2.useAnimatedStyle(HorizontalAutocompleteTsx1);
   obj4 = { style: items2, children };
   items2 = [tmp.horizontalAutocompleteOption, animatedStyle];
@@ -162,7 +162,7 @@ let obj5 = {
     items1 = [tmp8, ];
     const items2 = [tmp.nickname, ];
     let tmp13;
-    const LegacyText = tmp2(1187).LegacyText;
+    const LegacyText = tmp2(1186).LegacyText;
     const tmp12 = closure_11;
     if (null != colorString) {
       tmp13 = { color: colorString };
@@ -184,16 +184,16 @@ let obj5 = {
     if (channel.type === constants.GUILD_CATEGORY) {
       channelIconWithGuild = AssetRegistryDefault;
     } else {
-      const tmp2Result = channel(7517);
+      const tmp2Result = channel(7516);
       channelIconWithGuild = tmp2Result.getChannelIconWithGuild(channel, tmp5);
     }
     const obj = { onPress, children: items };
-    items = [closure_11(channel(1187).Icon, { source: channelIconWithGuild }), ];
-    const tmp8 = closure_11(channel(1187).Icon, { source: channelIconWithGuild });
-    const tmp2Result2 = channel(5408);
+    items = [closure_11(channel(1186).Icon, { source: channelIconWithGuild }), ];
+    const tmp8 = closure_11(channel(1186).Icon, { source: channelIconWithGuild });
+    const tmp2Result2 = channel(5410);
     const channelName = tmp2Result2.computeChannelName(channel, UserStore, RelationshipStore);
     const obj2 = { style: tmp.channelName, variant: "body-sm/semibold", children: channelName };
-    items[1] = closure_11(channel(5383).Text, obj2);
+    items[1] = closure_11(channel(5385).Text, obj2);
     return closure_12(HorizontalAutocompleteOption, obj);
   },
   Emoji(url) {

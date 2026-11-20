@@ -1,14 +1,14 @@
 // Module ID: 9427
 // Function ID: 9428
 // Name: useTrackShopCardImpression
-// Dependencies: [19, 8816, 7401, 1496, 8800, 7968, 5809, 1264, 7967, 8837, 2]
+// Dependencies: [19, 8816, 7400, 1494, 8800, 7967, 5811, 1263, 7966, 8837, 2]
 // Exports: useTrackShopCardImpression
 
 // Module 9427 (useTrackShopCardImpression)
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
-import useTrackImpression from "useTrackImpression" /* 5809 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7967 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7968 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1263 */;
+import useTrackImpression from "useTrackImpression" /* 5811 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7966 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7967 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

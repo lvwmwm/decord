@@ -1,27 +1,27 @@
-// Module ID: 14675
-// Function ID: 14676
+// Module ID: 14634
+// Function ID: 14635
 // Name: StageChannelSelfRichPresenceStore
-// Dependencies: [4641, 4663, 5533, 4734, 4695, 1388, 6413, 4646, 6379, 1072, 4729, 13432, 6416, 5408, 6412, 5531, 1345, 504, 572, 2]
+// Dependencies: [4643, 4665, 5535, 4736, 4697, 1386, 6415, 4648, 6381, 1071, 4731, 13402, 6418, 5410, 6414, 5533, 1343, 504, 572, 2]
 
-// Module 14675 (StageChannelSelfRichPresenceStore)
+// Module 14634 (StageChannelSelfRichPresenceStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import _modDef1345 from "module_1345" /* 1345 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4729 */;
-import useChannelName from "useChannelName" /* 5408 */;
-import StageChannelsConstants from "StageChannelsConstants" /* 6379 */;
-import StageMediaHooks from "StageMediaHooks" /* 6412 */;
-import StageChannelParticipants from "StageChannelParticipants" /* 6416 */;
-import StageChannelRichPresenceUtils from "StageChannelRichPresenceUtils" /* 13432 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import GuildStore from "GuildStore" /* 4663 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5533 */;
-import RelationshipStore from "RelationshipStore" /* 4734 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4695 */;
-import UserStore from "UserStore" /* 1388 */;
-import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6413 */;
-import StageInstanceStore from "StageInstanceStore" /* 4646 */;
-import Constants from "Constants" /* 1072 */;
+import _modDef1343 from "module_1343" /* 1343 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4731 */;
+import useChannelName from "useChannelName" /* 5410 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 6381 */;
+import StageMediaHooks from "StageMediaHooks" /* 6414 */;
+import StageChannelParticipants from "StageChannelParticipants" /* 6418 */;
+import StageChannelRichPresenceUtils from "StageChannelRichPresenceUtils" /* 13402 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import GuildStore from "GuildStore" /* 4665 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5535 */;
+import RelationshipStore from "RelationshipStore" /* 4736 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4697 */;
+import UserStore from "UserStore" /* 1386 */;
+import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6415 */;
+import StageInstanceStore from "StageInstanceStore" /* 4648 */;
+import Constants from "Constants" /* 1071 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_14;
@@ -66,7 +66,7 @@ function handleUpdateActivity() {
               if (id === result) {
                 tmp15 = obj;
               }
-              const mutableParticipants = StageChannelParticipantStore.getMutableParticipants(channel.id, tmp12(6416).StageChannelParticipantNamedIndex.SPEAKER);
+              const mutableParticipants = StageChannelParticipantStore.getMutableParticipants(channel.id, tmp12(6418).StageChannelParticipantNamedIndex.SPEAKER);
               const length = mutableParticipants.filter((type) => type.type === StageChannelParticipants.StageChannelParticipantTypes.STREAM).length;
               const diff = mutableParticipants.length - length;
               size = undefined;
@@ -92,7 +92,7 @@ function handleUpdateActivity() {
               }
               const tmp12Result2 = StageMediaHooks;
               stageHasMedia = tmp12Result2.getStageHasMedia(channel.id);
-              ActivityTypes = tmp12(5531).ActivityTypes;
+              ActivityTypes = tmp12(5533).ActivityTypes;
               let start;
               if (tmp15 != null) {
                 const timestamps = tmp15.timestamps;
@@ -121,8 +121,8 @@ function handleUpdateActivity() {
       }
     }
   }
-  let flag = !_modDef1345(tmp2, obj);
-  _modDef1345(tmp2, obj);
+  let flag = !_modDef1343(tmp2, obj);
+  _modDef1343(tmp2, obj);
   if (flag) {
     obj = tmp2;
     flag = true;

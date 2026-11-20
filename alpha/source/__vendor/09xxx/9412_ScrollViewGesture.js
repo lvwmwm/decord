@@ -1,7 +1,7 @@
 // Module ID: 9412
 // Function ID: 9413
 // Name: ScrollViewGesture
-// Dependencies: [19, 21, 9400, 1655, 9394, 9410, 9413, 5052]
+// Dependencies: [19, 21, 9400, 1653, 9394, 9410, 9413, 5054]
 // Exports: ScrollViewGesture
 
 // Module 9412 (ScrollViewGesture)
@@ -13,8 +13,8 @@ const react = react2;
 let _undefined;
 
 let tmp;
-const _mod1655 = tmp(1655);
-const LegacyBaseButton = tmp(5052);
+const _mod1653 = tmp(1653);
+const LegacyBaseButton = tmp(5054);
 const DATA_LENGTH = tmp(9394);
 const dealWithAnimation = tmp(9410);
 const usePanGestureProxy = tmp(9413);
@@ -183,23 +183,23 @@ export function ScrollViewGesture(children) {
   pnpm_ScrollViewGestureTsx1.__workletHash = 7359755646338;
   pnpm_ScrollViewGestureTsx1.__initData = tmp4;
   const items2 = [vertical];
-  const tmpResult = _mod1655;
+  const tmpResult = _mod1653;
   const derivedValue = tmpResult.useDerivedValue(pnpm_ScrollViewGestureTsx1, items2);
-  const tmpResult10 = _mod1655;
+  const tmpResult10 = _mod1653;
   const sharedValue = tmpResult10.useSharedValue(0);
-  const tmpResult11 = _mod1655;
+  const tmpResult11 = _mod1653;
   const sharedValue1 = tmpResult11.useSharedValue(undefined);
-  const tmpResult12 = _mod1655;
+  const tmpResult12 = _mod1653;
   const sharedValue2 = tmpResult12.useSharedValue(false);
-  const tmpResult13 = _mod1655;
+  const tmpResult13 = _mod1653;
   const sharedValue3 = tmpResult13.useSharedValue(false);
-  const tmpResult14 = _mod1655;
+  const tmpResult14 = _mod1653;
   const sharedValue4 = tmpResult14.useSharedValue(0);
-  const tmpResult15 = _mod1655;
+  const tmpResult15 = _mod1653;
   const sharedValue5 = tmpResult15.useSharedValue(0);
-  const tmpResult16 = _mod1655;
+  const tmpResult16 = _mod1653;
   const animatedRef = tmpResult16.useAnimatedRef();
-  const items3 = [closure_7, loop, overscrollEnabled, _mod1655.measure, animatedRef, dataLength, size];
+  const items3 = [closure_7, loop, overscrollEnabled, _mod1653.measure, animatedRef, dataLength, size];
   [tmp14, tmp15, tmp16, tmp17, tmp18, tmp19, tmp20] = items3;
   function pnpm_ScrollViewGestureTsx2() {
     const tmp = c0;
@@ -235,7 +235,7 @@ export function ScrollViewGesture(children) {
   items6[3] = dealWithAnimation.dealWithAnimation;
   items6[4] = withAnimation;
   items6[5] = closure_8;
-  items6[6] = _mod1655.runOnJS;
+  items6[6] = _mod1653.runOnJS;
   [tmp22, tmp23, tmp24, tmp25, tmp26, tmp27, tmp28] = items6;
   function pnpm_ScrollViewGestureTsx4(arg0, arg1) {
     let obj2;
@@ -273,7 +273,7 @@ export function ScrollViewGesture(children) {
   const callback2 = useCallback2(pnpm_ScrollViewGestureTsx4, items8);
   const items9 = [closure_10, translation, , , , , , , , , , , ];
   const useCallback3 = react.useCallback;
-  items9[2] = _mod1655.withDecay;
+  items9[2] = _mod1653.withDecay;
   items9[3] = typeof maxScrollDistancePerSwipe === "number";
   items9[4] = maxScrollDistancePerSwipe;
   items9[5] = size;
@@ -403,7 +403,7 @@ export function ScrollViewGesture(children) {
   const callback3 = useCallback3(pnpm_ScrollViewGestureTsx5, items11);
   const items12 = [closure_11, sharedValue2, onScrollEnd, ];
   const useCallback4 = react.useCallback;
-  items12[3] = _mod1655.runOnJS;
+  items12[3] = _mod1653.runOnJS;
   [tmp45, tmp46, tmp47, tmp48] = items12;
   function pnpm_ScrollViewGestureTsx6(arg0) {
     const tmp = arg0;
@@ -422,7 +422,7 @@ export function ScrollViewGesture(children) {
   const callback4 = useCallback4(pnpm_ScrollViewGestureTsx6, items14);
   const items15 = [closure_13, sharedValue2, translation, , , , ];
   const useCallback5 = react.useCallback;
-  items15[3] = _mod1655.withDecay;
+  items15[3] = _mod1653.withDecay;
   items15[4] = sharedValue5;
   items15[5] = closure_12;
   items15[6] = callback4;
@@ -506,7 +506,7 @@ export function ScrollViewGesture(children) {
   pnpm_ScrollViewGestureTsx11.__workletHash = 7134235687258;
   pnpm_ScrollViewGestureTsx11.__initData = tmp70;
   const items25 = [pagingEnabled, callback1];
-  const tmpResult17 = _mod1655;
+  const tmpResult17 = _mod1653;
   const animatedReaction = tmpResult17.useAnimatedReaction(pnpm_ScrollViewGestureTsx10, pnpm_ScrollViewGestureTsx11, items25);
   const items26 = [closure_17, loop, overscrollEnabled, callback];
   [tmp74, tmp75, tmp76, tmp77] = items26;
@@ -530,7 +530,7 @@ export function ScrollViewGesture(children) {
   withProcessTranslation.__closure = items27;
   withProcessTranslation.__workletHash = 13733068836819;
   withProcessTranslation.__initData = tmp74;
-  const items28 = [closure_18, sharedValue2, sharedValue3, onScrollStart, _mod1655.runOnJS, sharedValue, dataLength, size, loop, overscrollEnabled, callback, sharedValue1, translation];
+  const items28 = [closure_18, sharedValue2, sharedValue3, onScrollStart, _mod1653.runOnJS, sharedValue, dataLength, size, loop, overscrollEnabled, callback, sharedValue1, translation];
   [tmp79, tmp80, tmp81, tmp82, tmp83, tmp84, tmp85, tmp86, tmp87, tmp88, tmp89, tmp90, tmp91] = items28;
   function pnpm_ScrollViewGestureTsx13(arg0) {
     c0.value = true;
@@ -556,7 +556,7 @@ export function ScrollViewGesture(children) {
   const items30 = [sharedValue, size, dataLength, loop, sharedValue2, sharedValue1, sharedValue3, translation, overscrollEnabled, callback, onScrollStart];
   const items31 = [closure_19, sharedValue1, sharedValue3, , , , , , , ];
   const tmp78Result = react.useCallback(pnpm_ScrollViewGestureTsx13, items30);
-  items31[3] = _mod1655.cancelAnimation;
+  items31[3] = _mod1653.cancelAnimation;
   items31[4] = translation;
   items31[5] = sharedValue2;
   items31[6] = derivedValue;

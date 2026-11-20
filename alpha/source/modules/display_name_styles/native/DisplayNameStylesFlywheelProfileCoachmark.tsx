@@ -1,17 +1,17 @@
-// Module ID: 18954
-// Function ID: 18955
+// Module ID: 18778
+// Function ID: 18779
 // Name: DisplayNameStylesFlywheelProfileCoachmark
-// Dependencies: [19, 17, 1388, 4638, 21, 4792, 504, 2174, 1113, 3147, 8967, 18955, 2]
+// Dependencies: [19, 17, 1386, 4640, 21, 4794, 504, 2172, 1112, 3149, 8967, 18779, 2]
 // Exports: default
 
-// Module 18954 (DisplayNameStylesFlywheelProfileCoachmark)
+// Module 18778 (DisplayNameStylesFlywheelProfileCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4638 */;
-import DisplayNameLockeAbstractUI from "DisplayNameLockeAbstractUI" /* 18955 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4640 */;
+import DisplayNameLockeAbstractUI from "DisplayNameLockeAbstractUI" /* 18779 */;
 import react_mod from "react" /* 19 */;
-import UserStore from "UserStore" /* 1388 */;
-import createStyles from "createStyles" /* 4792 */;
+import UserStore from "UserStore" /* 1386 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -41,11 +41,11 @@ export default function DisplayNameStylesFlywheelProfileCoachmark(visible) {
   const items = [UserStore];
   const obj = visible(504);
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  const obj2 = markAsDismissed(2174);
+  const obj2 = markAsDismissed(2172);
   const result = obj2.canUsePremiumProfileCustomization(stateFromStores);
-  const intl = visible(1113).intl;
+  const intl = visible(1112).intl;
   const string = intl.string;
-  const tmp6 = markAsDismissed(3147);
+  const tmp6 = markAsDismissed(3149);
   const tmp4 = markAsDismissed;
   if (result) {
     stringResult = string(tmp6.h6sykk);
@@ -53,9 +53,9 @@ export default function DisplayNameStylesFlywheelProfileCoachmark(visible) {
     stringResult = string(tmp6.M5amXH);
   }
   dependencyMap = stringResult;
-  const intl2 = tmp(1113).intl;
+  const intl2 = tmp(1112).intl;
   const string2 = intl2.string;
-  const tmp4Result = tmp4(3147);
+  const tmp4Result = tmp4(3149);
   if (result) {
     string2Result = string2(tmp4Result.TyUdka);
   } else {

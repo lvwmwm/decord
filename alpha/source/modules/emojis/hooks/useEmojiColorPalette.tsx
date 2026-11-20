@@ -1,15 +1,15 @@
-// Module ID: 10328
-// Function ID: 10329
+// Module ID: 10270
+// Function ID: 10271
 // Name: useEmojiColorPalette
-// Dependencies: [4793, 1192, 504, 4799, 8576, 2]
+// Dependencies: [4795, 1191, 504, 4801, 8575, 2]
 // Exports: useEmojiColorPalette
 
-// Module 10328 (useEmojiColorPalette)
+// Module 10270 (useEmojiColorPalette)
 import get_initialized from "get initialized" /* 504 */;
-import shared from "shared" /* 4799 */;
-import EmojiColorUtils from "EmojiColorUtils" /* 8576 */;
-import AccessibilityStore from "AccessibilityStore" /* 4793 */;
-import ThemeStore from "ThemeStore" /* 1192 */;
+import shared from "shared" /* 4801 */;
+import EmojiColorUtils from "EmojiColorUtils" /* 8575 */;
+import AccessibilityStore from "AccessibilityStore" /* 4795 */;
+import ThemeStore from "ThemeStore" /* 1191 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/emojis/hooks/useEmojiColorPalette.tsx");

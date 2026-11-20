@@ -1,24 +1,24 @@
-// Module ID: 17509
-// Function ID: 17510
+// Module ID: 17336
+// Function ID: 17337
 // Name: register
-// Dependencies: [5, 17510, 502, 1072, 1097, 2169, 1256, 6311, 1264, 6229, 6242, 572, 17511, 17512, 17513, 2]
+// Dependencies: [5, 17337, 502, 1071, 1096, 2167, 1255, 6313, 1263, 6231, 6244, 572, 17338, 17339, 17340, 2]
 // Exports: default, registerPhone, scorePassword
 
-// Module 17509 (register)
+// Module 17336 (register)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
-import _modDef2169 from "module_2169" /* 2169 */;
-import APIErrorDefault from "APIError" /* 6229 */;
-import SharedCaptchaUtils from "SharedCaptchaUtils" /* 6242 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6311 */;
-import trackAgeGateSubmittedDefault from "trackAgeGateSubmitted" /* 17511 */;
-import AgeGateActionCreatorsAll from "AgeGateActionCreators" /* 17513 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1263 */;
+import _modDef2167 from "module_2167" /* 2167 */;
+import APIErrorDefault from "APIError" /* 6231 */;
+import SharedCaptchaUtils from "SharedCaptchaUtils" /* 6244 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6313 */;
+import trackAgeGateSubmittedDefault from "trackAgeGateSubmitted" /* 17338 */;
+import AgeGateActionCreatorsAll from "AgeGateActionCreators" /* 17340 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ParentalConsentStore from "ParentalConsentStore" /* 17510 */;
+import ParentalConsentStore from "ParentalConsentStore" /* 17337 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import Constants from "Constants" /* 1072 */;
-import AgeGateConstants from "AgeGateConstants" /* 1097 */;
+import Constants from "Constants" /* 1071 */;
+import AgeGateConstants from "AgeGateConstants" /* 1096 */;
 import size from "module_2" /* 2 */;
 
 let closure_1, closure_2, closure_3;
@@ -45,7 +45,7 @@ let obj = function _scorePassword() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -123,7 +123,7 @@ obj = function _registerPhone() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -245,7 +245,7 @@ function registerFull(giftCodeSKUId) {
     let obj2 = { source: constants5.REGISTER, action: constants4.AGE_GATE_SUBMITTED };
     const tmp4Result = AnalyticsUtilsDefault;
     tmp4Result.track(metroRequire.AGE_GATE_ACTION, obj2);
-    const obj10 = _modDef2169();
+    const obj10 = _modDef2167();
     const diffResult = obj10.diff(birthday, "years");
     const tmp15 = metroRequire;
     if (diffResult >= 13) {
@@ -273,7 +273,7 @@ function registerFull(giftCodeSKUId) {
   const post = tmp4Result4.post;
   tmp9 = undefined;
   if (null != birthday) {
-    tmp9 = tmp4(17512)(birthday);
+    tmp9 = tmp4(17339)(birthday);
   }
   checked = undefined;
   if (promoEmailConsent != null) {

@@ -1,11 +1,11 @@
 // Module ID: 9476
 // Function ID: 9477
 // Name: SimpleLoadingModal
-// Dependencies: [6308, 9477, 2121, 2]
+// Dependencies: [6310, 9477, 2119, 2]
 // Exports: showSimpleLoadingModal
 
 // Module 9476 (SimpleLoadingModal)
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6308 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6310 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

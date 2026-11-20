@@ -1,22 +1,22 @@
-// Module ID: 12695
-// Function ID: 12696
+// Module ID: 12665
+// Function ID: 12666
 // Name: TraitOptionItem
-// Dependencies: [17, 5848, 21, 575, 6215, 4792, 5849, 8832, 7746, 5894, 5479, 4854, 2]
+// Dependencies: [17, 5850, 21, 575, 6217, 4794, 5851, 8832, 7745, 5896, 5481, 4856, 2]
 // Exports: default
 
-// Module 12695 (TraitOptionItem)
+// Module 12665 (TraitOptionItem)
 import nativeDefault from "native" /* 575 */;
-import react_native from "react-native" /* 4854 */;
-import FastImageDefault from "FastImage" /* 5479 */;
-import CheckpointTraitRarity from "CheckpointTraitRarity" /* 5849 */;
-import CheckpointCharacterAssets from "CheckpointCharacterAssets" /* 5894 */;
-import inlineStyles from "inlineStyles" /* 7746 */;
+import react_native from "react-native" /* 4856 */;
+import FastImageDefault from "FastImage" /* 5481 */;
+import CheckpointTraitRarity from "CheckpointTraitRarity" /* 5851 */;
+import CheckpointCharacterAssets from "CheckpointCharacterAssets" /* 5896 */;
+import inlineStyles from "inlineStyles" /* 7745 */;
 import react_native2 from "react-native" /* 17 */;
-import CheckpointConstants from "CheckpointConstants" /* 5848 */;
+import CheckpointConstants from "CheckpointConstants" /* 5850 */;
 import Fragment from "Fragment" /* 21 */;
 import "CheckpointCustomizationUtils";
-import CheckpointCustomizationUtils_mod from "CheckpointCustomizationUtils" /* 6215 */;
-import createStyles from "createStyles" /* 4792 */;
+import CheckpointCustomizationUtils_mod from "CheckpointCustomizationUtils" /* 6217 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const inlineStylesDefault = inlineStyles;
@@ -120,14 +120,14 @@ function AssetShape(arg0) {
   num = 1;
   const Polygon = inlineStyles.Polygon;
   if (isSelected) {
-    num = tmp14(6215).TRAIT_OPTION_STROKE_WIDTH;
+    num = tmp14(6217).TRAIT_OPTION_STROKE_WIDTH;
   }
   items1[1] = metroImportAll(Polygon, obj5);
   let tmp13Result = !isNoneOption;
   if (tmp13Result) {
     const _HermesInternal = HermesInternal;
     const obj6 = { points: obj2[size], fill: "url(#" + checkpointTraitGradient + ")" };
-    const Polygon2 = tmp14(7746).Polygon;
+    const Polygon2 = tmp14(7745).Polygon;
     tmp13Result = tmp13(Polygon2, obj6);
   }
   items1[2] = tmp13Result;

@@ -1,24 +1,24 @@
-// Module ID: 10123
-// Function ID: 10124
+// Module ID: 10126
+// Function ID: 10127
 // Name: UserProfileWidgetGameCoverGridReorderActionSheet
-// Dependencies: [19, 17, 502, 21, 4792, 10077, 575, 10110, 1113, 10112, 6930, 504, 10090, 6839, 10094, 10099, 10122, 2]
+// Dependencies: [19, 17, 502, 21, 4794, 10080, 575, 10113, 1112, 10115, 6929, 504, 10093, 6839, 10097, 10102, 10125, 2]
 // Exports: default
 
-// Module 10123 (UserProfileWidgetGameCoverGridReorderActionSheet)
+// Module 10126 (UserProfileWidgetGameCoverGridReorderActionSheet)
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1113 */;
-import DragHandle from "DragHandle" /* 6930 */;
-import UserProfileGameWidgetConstants from "UserProfileGameWidgetConstants" /* 10077 */;
-import useUserProfileWidgetsDefault from "useUserProfileWidgets" /* 10090 */;
-import WidgetUtils from "WidgetUtils" /* 10094 */;
-import useGameCoverLayoutDefault from "useGameCoverLayout" /* 10099 */;
-import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 10110 */;
-import UserProfileReorderActionSheetDefault from "UserProfileReorderActionSheet" /* 10122 */;
+import intl2 from "intl" /* 1112 */;
+import DragHandle from "DragHandle" /* 6929 */;
+import UserProfileGameWidgetConstants from "UserProfileGameWidgetConstants" /* 10080 */;
+import useUserProfileWidgetsDefault from "useUserProfileWidgets" /* 10093 */;
+import WidgetUtils from "WidgetUtils" /* 10097 */;
+import useGameCoverLayoutDefault from "useGameCoverLayout" /* 10102 */;
+import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 10113 */;
+import UserProfileReorderActionSheetDefault from "UserProfileReorderActionSheet" /* 10125 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, importDefault;
@@ -30,7 +30,7 @@ let metroImportDefault;
 let obj2;
 let obj3;
 let tmp2;
-const GameCoverImageDefault = tmp2(10112);
+const GameCoverImageDefault = tmp2(10115);
 ({ Pressable: closure_4, View: hasOwnProperty } = react_native);
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let createStyles = createStyles_mod;
@@ -103,9 +103,9 @@ export default function UserProfileWidgetGameCoverGridReorderActionSheet(widgetT
   const tmp4 = useGameCoverLayoutDefault();
   ({ isMeasured, coverWidth: c2 } = tmp4);
   ({ ref, onLayout } = tmp4);
-  const obj2 = { dismissAccessibilityLabel: intl.string(widgetType(1113).t.rnh54p), returnFocusRef, children: closure_7(tmp7, obj3) };
+  const obj2 = { dismissAccessibilityLabel: intl.string(widgetType(1112).t.rnh54p), returnFocusRef, children: closure_7(tmp7, obj3) };
   const tmp6 = UserProfileReorderActionSheetDefault;
-  intl = widgetType(1113).intl;
+  intl = widgetType(1112).intl;
   obj3 = { ref, onLayout, accessibilityRole: "list", style: tmp.grid, children: isMeasured };
   tmp7 = closure_5;
   if (isMeasured) {

@@ -1,25 +1,25 @@
-// Module ID: 16377
-// Function ID: 16378
+// Module ID: 16199
+// Function ID: 16200
 // Name: BountiesScrollPromptFooter
-// Dependencies: [19, 17, 4793, 6437, 21, 4792, 575, 5002, 5005, 504, 1630, 1655, 4919, 16378, 16379, 8827, 2]
+// Dependencies: [19, 17, 4795, 6439, 21, 4794, 575, 5004, 5007, 504, 1628, 1653, 4921, 16200, 16201, 8827, 2]
 // Exports: default
 
-// Module 16377 (BountiesScrollPromptFooter)
+// Module 16199 (BountiesScrollPromptFooter)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import _modDef1655 from "module_1655" /* 1655 */;
-import timing_timing from "timing/timing" /* 5002 */;
-import timingPresets from "timingPresets" /* 5005 */;
-import QuestConstants from "QuestConstants" /* 6437 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
+import _modDef1653 from "module_1653" /* 1653 */;
+import timing_timing from "timing/timing" /* 5004 */;
+import timingPresets from "timingPresets" /* 5007 */;
+import QuestConstants from "QuestConstants" /* 6439 */;
 import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 8827 */;
-import BountiesModalTransitionsRefactorExperiment from "BountiesModalTransitionsRefactorExperiment" /* 16378 */;
-import useVisibilityTransition from "useVisibilityTransition" /* 16379 */;
+import BountiesModalTransitionsRefactorExperiment from "BountiesModalTransitionsRefactorExperiment" /* 16200 */;
+import useVisibilityTransition from "useVisibilityTransition" /* 16201 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4793 */;
+import AccessibilityStore from "AccessibilityStore" /* 4795 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
@@ -70,12 +70,12 @@ function BountiesScrollPromptFooterContent(zIndex) {
   }, items2);
   const obj2 = { style: items3, pointerEvents: "none", children: items5 };
   items3 = [tmp.root, visibilityOpacityStyle, memo];
-  const View = _modDef1655.View;
+  const View = _modDef1653.View;
   const obj3 = { style: items4, children: closure_7(BountiesScrollGradientRive, { stateMachine: "State Machine 1", fit: "fill", alignment: "bottom-center", withReducedMotion: str }) };
   items4 = [tmp.gradient, opacityStyle];
-  const View2 = _modDef1655.View;
+  const View2 = _modDef1653.View;
   str = "play";
-  BountiesScrollGradientRive = zIndex(4919).BountiesScrollGradientRive;
+  BountiesScrollGradientRive = zIndex(4921).BountiesScrollGradientRive;
   const tmp8 = closure_8;
   if (stateFromStores) {
     str = "halt";
@@ -83,7 +83,7 @@ function BountiesScrollPromptFooterContent(zIndex) {
   items5 = [closure_7(View2, obj3), ];
   const obj4 = { style: items6, onLayout: onContentLayout, children };
   items6 = [tmp.content, memo1, opacityStyle];
-  items5[1] = closure_7(_modDef1655.View, obj4);
+  items5[1] = closure_7(_modDef1653.View, obj4);
   return tmp8(View, obj2);
 }
 const StyleSheet = react_native.StyleSheet;

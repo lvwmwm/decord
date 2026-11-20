@@ -1,11 +1,11 @@
 // Module ID: 9303
 // Function ID: 9304
 // Name: getCurrentUserProfile
-// Dependencies: [1388, 6837, 2]
+// Dependencies: [1386, 6837, 2]
 // Exports: default
 
 // Module 9303 (getCurrentUserProfile)
-import UserStore from "UserStore" /* 1388 */;
+import UserStore from "UserStore" /* 1386 */;
 import UserProfileStore from "UserProfileStore" /* 6837 */;
 import size from "module_2" /* 2 */;
 

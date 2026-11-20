@@ -1,17 +1,17 @@
-// Module ID: 19536
-// Function ID: 19537
+// Module ID: 19354
+// Function ID: 19355
 // Name: EmbeddedAppShimManager
-// Dependencies: [32, 6502, 1072, 19537, 19540, 10731, 19541, 7365, 1108, 2]
+// Dependencies: [32, 6504, 1071, 19355, 19358, 10673, 19359, 7364, 1107, 2]
 
-// Module 19536 (EmbeddedAppShimManager)
-import Constants from "Constants" /* 1072 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
-import EmbeddedAppShimActionCreators from "EmbeddedAppShimActionCreators" /* 10731 */;
-import protocol from "protocol" /* 19537 */;
-import embeddedAppShimKeybindsDefault from "embeddedAppShimKeybinds" /* 19540 */;
+// Module 19354 (EmbeddedAppShimManager)
+import Constants from "Constants" /* 1071 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1107 */;
+import EmbeddedAppShimActionCreators from "EmbeddedAppShimActionCreators" /* 10673 */;
+import protocol from "protocol" /* 19355 */;
+import embeddedAppShimKeybindsDefault from "embeddedAppShimKeybinds" /* 19358 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import FramesStore from "FramesStore" /* 6502 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7365 */;
+import FramesStore from "FramesStore" /* 6504 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7364 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -45,7 +45,7 @@ function handleShimPipeOpen(iframeId) {
   let value = map.get(iframeId);
   if (null == value) {
     let obj3;
-    let obj4 = iframeId(19541);
+    let obj4 = iframeId(19359);
     let obj2 = {
       onConnect(dispatch) {
           let obj;

@@ -1,17 +1,17 @@
 // Module ID: 6748
 // Function ID: 6749
 // Name: safeTransitionTo
-// Dependencies: [5, 4663, 1072, 5415, 6749, 1099, 6750, 5740, 1113, 11186, 2857, 13575, 14683, 2]
+// Dependencies: [5, 4665, 1071, 5417, 6749, 1098, 6750, 5742, 1112, 11128, 2859, 13545, 14642, 2]
 // Exports: default
 
 // Module 6748 (safeTransitionTo)
-import Constants from "Constants" /* 1072 */;
-import router_utils from "router_utils" /* 1099 */;
-import LinkUtils from "LinkUtils" /* 5415 */;
+import Constants from "Constants" /* 1071 */;
+import router_utils from "router_utils" /* 1098 */;
+import LinkUtils from "LinkUtils" /* 5417 */;
 import DiceRollActionCreators from "DiceRollActionCreators" /* 6749 */;
 import isAccessibleChannelOrThreadPathDefault from "isAccessibleChannelOrThreadPath" /* 6750 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildStore from "GuildStore" /* 4663 */;
+import GuildStore from "GuildStore" /* 4665 */;
 import size from "module_2" /* 2 */;
 
 let c5, c6;
@@ -40,7 +40,7 @@ let obj = function _safeTransitionTo() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -139,7 +139,7 @@ let obj = function _safeTransitionTo() {
             obj2.transitionTo(closure_0, closure_1);
           }
           c6 = 3;
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
         if (null != c2) {
           if (null != c2.guildId) {

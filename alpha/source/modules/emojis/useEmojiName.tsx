@@ -1,13 +1,13 @@
-// Module ID: 19861
-// Function ID: 19862
+// Module ID: 19679
+// Function ID: 19680
 // Name: useEmojiName
-// Dependencies: [6452, 504, 38, 4738, 2]
+// Dependencies: [6454, 504, 38, 4740, 2]
 // Exports: default
 
-// Module 19861 (useEmojiName)
+// Module 19679 (useEmojiName)
 import _modDef38 from "module_38" /* 38 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4738 */;
-import EmojiStore from "EmojiStore" /* 6452 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4740 */;
+import EmojiStore from "EmojiStore" /* 6454 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/emojis/useEmojiName.tsx");

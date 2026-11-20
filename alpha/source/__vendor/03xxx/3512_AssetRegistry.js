@@ -1,10 +1,10 @@
 // Module ID: 3512
 // Function ID: 3513
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 3512 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9hcHBsaWNhdGlvbl93aWRnZXQ=", scales: [1], hash: "3da1619e28fe1deba72e17c35a434b01", name: "fi.messages.3da1619e28fe1deba72e17c35a434b01.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9hcHBsaWNhdGlvbl93aWRnZXQ=", scales: [1], hash: "ba5d73bf644c6d2c2e86fc116fc19f31", name: "es-419.messages.ba5d73bf644c6d2c2e86fc116fc19f31.compiled.messages", type: "jsona" });

@@ -1,13 +1,13 @@
-// Module ID: 19732
-// Function ID: 19733
+// Module ID: 19550
+// Function ID: 19551
 // Name: navigateToSystemDM
-// Dependencies: [4641, 19731, 6408, 2]
+// Dependencies: [4643, 19549, 6410, 2]
 // Exports: default
 
-// Module 19732 (navigateToSystemDM)
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6408 */;
-import Constants from "Constants" /* 19731 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
+// Module 19550 (navigateToSystemDM)
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6410 */;
+import Constants from "Constants" /* 19549 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
 import size from "module_2" /* 2 */;
 
 const SYSTEM_USER = Constants.SYSTEM_USER;

@@ -1,20 +1,20 @@
-// Module ID: 12698
-// Function ID: 12699
+// Module ID: 12668
+// Function ID: 12669
 // Name: RarityBadge
-// Dependencies: [32, 19, 17, 5848, 21, 4792, 575, 5849, 7746, 6215, 5383, 1113, 8832, 2]
+// Dependencies: [32, 19, 17, 5850, 21, 4794, 575, 5851, 7745, 6217, 5385, 1112, 8832, 2]
 // Exports: default
 
-// Module 12698 (RarityBadge)
+// Module 12668 (RarityBadge)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import CheckpointTraitRarity from "CheckpointTraitRarity" /* 5849 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6215 */;
-import inlineStylesDefault from "inlineStyles" /* 7746 */;
+import CheckpointTraitRarity from "CheckpointTraitRarity" /* 5851 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6217 */;
+import inlineStylesDefault from "inlineStyles" /* 7745 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import CheckpointConstants from "CheckpointConstants" /* 5848 */;
+import CheckpointConstants from "CheckpointConstants" /* 5850 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let c9;
@@ -90,7 +90,7 @@ export default function RarityBadge(rarity) {
     ({ width: obj2.width, height: obj2.height } = size);
     obj3 = { points: tmp3Result.getChamferedRectPoints(size.width, size.height, 6), fill: metroRequire[rarity] };
     const tmp10 = inlineStylesDefault;
-    Polygon = tmp3(7746).Polygon;
+    Polygon = tmp3(7745).Polygon;
     tmp3Result = CheckpointCustomizationUtils;
     tmp7 = metroImportAll(tmp10, size1);
   }
@@ -98,8 +98,8 @@ export default function RarityBadge(rarity) {
   items1 = [tmp7, ];
   const obj4 = { style: tmp.badgeContent, children: items2 };
   const obj5 = { variant: "mono-md/bold", style: tmp.badgeLabel, children: intl.string(metroImportDefault[rarity]) };
-  const Text = tmp3(5383).Text;
-  intl = tmp3(1113).intl;
+  const Text = tmp3(5385).Text;
+  intl = tmp3(1112).intl;
   items2 = [metroImportAll(Text, obj5), ];
   const tmp13 = metroImportAll;
   if (tmp13Result) {

@@ -1,15 +1,15 @@
 // Module ID: 8989
 // Function ID: 8990
 // Name: PremiumPlanPurchasedStore
-// Dependencies: [5007, 1390, 560, 1263, 8990, 7420, 2]
+// Dependencies: [5009, 1388, 560, 1262, 8990, 7419, 2]
 // Exports: handleMobileWebCheckoutStatus, reset, setInitiatedPurchaseFromNewFlow, setMobileWebRedirectCheckoutStatus, setPaymentSuccess, showOldPaymentFlowSuccess
 
 // Module 8989 (PremiumPlanPurchasedStore)
-import react_native from "react-native" /* 1263 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7420 */;
+import react_native from "react-native" /* 1262 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7419 */;
 import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 8990 */;
-import ActionSheetStore from "ActionSheetStore" /* 5007 */;
-import PremiumConstants from "PremiumConstants" /* 1390 */;
+import ActionSheetStore from "ActionSheetStore" /* 5009 */;
+import PremiumConstants from "PremiumConstants" /* 1388 */;
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ export function setInitiatedPurchaseFromNewFlow(productId) {
   let onPaymentSuccess;
   productId = productId.productId;
   ({ onPaymentStart, onPaymentSuccess: importDefault, onPaymentDismiss: dependencyMap } = productId);
-  let obj = productId(1263);
+  let obj = productId(1262);
   obj.batchUpdates(() => {
     const obj = { productId, initiatedPurchaseFromNewFlow: true, onPaymentSuccess: importDefault, onPaymentDismiss: dependencyMap };
     obj.setState(obj);

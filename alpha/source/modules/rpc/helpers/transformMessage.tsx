@@ -1,27 +1,27 @@
-// Module ID: 10743
-// Function ID: 10744
+// Module ID: 10685
+// Function ID: 10686
 // Name: transformMessage
-// Dependencies: [1407, 4641, 4734, 1388, 1072, 10744, 2119, 1255, 5516, 6220, 6788, 2]
+// Dependencies: [1405, 4643, 4736, 1386, 1071, 10686, 2117, 1254, 5518, 6222, 6788, 2]
 // Exports: transformMessageRecord, transformServerMessage
 
-// Module 10743 (transformMessage)
-import Constants from "Constants" /* 1072 */;
-import Server from "Server" /* 2119 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 5516 */;
-import useMessageAuthor from "useMessageAuthor" /* 6220 */;
+// Module 10685 (transformMessage)
+import Constants from "Constants" /* 1071 */;
+import Server from "Server" /* 2117 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 5518 */;
+import useMessageAuthor from "useMessageAuthor" /* 6222 */;
 import transformUserDefault from "transformUser" /* 6788 */;
-import getRemoteIconURLDefault from "getRemoteIconURL" /* 10744 */;
-import UserRecord from "UserRecord" /* 1407 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import RelationshipStore from "RelationshipStore" /* 4734 */;
-import UserStore from "UserStore" /* 1388 */;
+import getRemoteIconURLDefault from "getRemoteIconURL" /* 10686 */;
+import UserRecord from "UserRecord" /* 1405 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import RelationshipStore from "RelationshipStore" /* 4736 */;
+import UserStore from "UserStore" /* 1386 */;
 import size_mod from "module_2" /* 2 */;
 
 let images, results;
 
 let tmp;
-const GlobalUtils = tmp(1255);
-const f99664 = (emoji) => {
+const GlobalUtils = tmp(1254);
+const f97934 = (emoji) => {
   let id;
   let obj2;
   const obj = { emoji: obj2 };
@@ -369,7 +369,7 @@ export function transformMessageRecord(id) {
       return items;
     }),
     components: found1,
-    reactions: mapped2.map(f99664),
+    reactions: mapped2.map(f97934),
     nonce: null,
     pinned: null,
     webhook_id: null,
@@ -408,7 +408,7 @@ export function transformMessageRecord(id) {
   found1 = undefined;
   if (components != null) {
     const mapped1 = components.map(transformComponent);
-    found1 = mapped1.filter(tmp6(1255).isNotNullish);
+    found1 = mapped1.filter(tmp6(1254).isNotNullish);
   }
   const reactions1 = id.reactions;
   const found2 = reactions1.filter((count_details) => {
@@ -612,7 +612,7 @@ export function transformServerMessage(message) {
   mapped1 = undefined;
   if (null != message.reactions) {
     const reactions = message.reactions;
-    mapped1 = reactions.map(f99664);
+    mapped1 = reactions.map(f97934);
   }
   ({ nonce: obj.nonce, pinned: obj.pinned, webhook_id: obj.webhook_id, type: obj.type, activity: obj.activity, application: obj.application, application_id: obj.application_id, message_reference: obj.message_reference, flags: obj.flags, sticker_items: obj.sticker_items, poll: obj.poll } = message);
   tmp12 = undefined;

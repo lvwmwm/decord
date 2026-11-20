@@ -1,17 +1,17 @@
-// Module ID: 16950
-// Function ID: 16951
+// Module ID: 16774
+// Function ID: 16775
 // Name: SystemNotificationsSetting
-// Dependencies: [5, 8593, 1072, 6375, 13190, 7683, 13198, 1256, 10799, 11875, 1113, 2]
+// Dependencies: [5, 8592, 1071, 6377, 13160, 7682, 13168, 1255, 10741, 11817, 1112, 2]
 
-// Module 16950 (SystemNotificationsSetting)
-import Constants from "Constants" /* 1072 */;
-import intl2 from "intl" /* 1113 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 6375 */;
-import react_nativeDefault from "react-native" /* 7683 */;
-import SettingsConstants from "SettingsConstants" /* 8593 */;
+// Module 16774 (SystemNotificationsSetting)
+import Constants from "Constants" /* 1071 */;
+import intl2 from "intl" /* 1112 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 6377 */;
+import react_nativeDefault from "react-native" /* 7682 */;
+import SettingsConstants from "SettingsConstants" /* 8592 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13190 */;
-import SettingBuilders from "SettingBuilders" /* 11875 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13160 */;
+import SettingBuilders from "SettingBuilders" /* 11817 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3;
@@ -32,7 +32,7 @@ let obj = function _handleEnableSystemNotification() {
         const obj4 = { value, done: true };
         return obj4;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -91,7 +91,7 @@ let obj = function _handleEnableSystemNotification() {
             let result = obj2.openNotificationSettings();
           }
           c3 = 3;
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp26) {
         c3 = 3;

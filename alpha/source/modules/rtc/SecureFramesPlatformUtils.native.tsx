@@ -1,20 +1,20 @@
 // Module ID: 9591
 // Function ID: 9592
 // Name: SecureFramesPlatformUtils
-// Dependencies: [4641, 5533, 9588, 1072, 6308, 9592, 2121, 5006, 9611, 1113, 5740, 1187, 6748, 9614, 2]
+// Dependencies: [4643, 5535, 9588, 1071, 6310, 9592, 2119, 5008, 9611, 1112, 5742, 1186, 6748, 9614, 2]
 
 // Module 9591 (SecureFramesPlatformUtils)
-import intl3 from "intl" /* 1113 */;
-import native from "native" /* 1187 */;
-import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5740 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6308 */;
+import intl3 from "intl" /* 1112 */;
+import native from "native" /* 1186 */;
+import asyncRequire from "asyncRequire" /* 2119 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5008 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5742 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6310 */;
 import safeTransitionToDefault from "safeTransitionTo" /* 6748 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5533 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5535 */;
 import SecureFramesConstants from "SecureFramesConstants" /* 9588 */;
-import Constants from "Constants" /* 1072 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 let c9;

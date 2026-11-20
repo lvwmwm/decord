@@ -1,24 +1,24 @@
-// Module ID: 17975
-// Function ID: 17976
+// Module ID: 17802
+// Function ID: 17803
 // Name: GuildsBarItemEmptyNUX
-// Dependencies: [19, 17, 4825, 17907, 1072, 9300, 21, 4792, 575, 6714, 5356, 504, 1655, 5393, 17591, 17920, 1113, 5479, 9695, 17919, 7205, 17931, 5383, 2]
+// Dependencies: [19, 17, 4827, 17734, 1071, 9300, 21, 4794, 575, 6716, 5358, 504, 1653, 5395, 17418, 17747, 1112, 5481, 9695, 17746, 7204, 17758, 5385, 2]
 
-// Module 17975 (GuildsBarItemEmptyNUX)
+// Module 17802 (GuildsBarItemEmptyNUX)
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import _modDef1655 from "module_1655" /* 1655 */;
-import FastImageDefault from "FastImage" /* 5479 */;
-import transitionToGuild from "transitionToGuild" /* 6714 */;
-import NativeViewDefault from "NativeView" /* 7205 */;
+import Constants from "Constants" /* 1071 */;
+import _modDef1653 from "module_1653" /* 1653 */;
+import FastImageDefault from "FastImage" /* 5481 */;
+import transitionToGuild from "transitionToGuild" /* 6716 */;
+import NativeViewDefault from "NativeView" /* 7204 */;
 import MainTabsConstants from "MainTabsConstants" /* 9300 */;
 import AssetRegistryDefault from "AssetRegistry" /* 9695 */;
-import usePressabilityDefault from "usePressability" /* 17920 */;
+import usePressabilityDefault from "usePressability" /* 17747 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4825 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 17907 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4827 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 17734 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_12;
@@ -67,13 +67,13 @@ const memoResult = react.memo(function GuildsBarEmptyNUX() {
   let tmp16;
   let tmp17;
   let tmp18;
-  let obj = sharedValue(5356);
+  let obj = sharedValue(5358);
   const token = obj.useToken(nativeDefault.modules.mobile.GUILD_BAR_ITEM_SIZE);
   const tmp5 = closure_13(token, closure_8());
   const items = [SelectedGuildStore];
   const obj2 = sharedValue(504);
   const stateFromStores = obj2.useStateFromStores(items, () => guildId.getGuildId() === EMPTY_NUX_SERVER);
-  const obj3 = sharedValue(1655);
+  const obj3 = sharedValue(1653);
   sharedValue = obj3.useSharedValue(false);
   const items1 = [sharedValue];
   const items2 = [sharedValue];
@@ -83,14 +83,14 @@ const memoResult = react.memo(function GuildsBarEmptyNUX() {
   const callback1 = react.useCallback(() => {
     const result = sharedValue.set(false);
   }, items2);
-  const obj5 = sharedValue(5356);
+  const obj5 = sharedValue(5358);
   const token1 = obj5.useToken(nativeDefault.colors.BACKGROUND_SURFACE_HIGH);
-  const obj6 = sharedValue(5356);
+  const obj6 = sharedValue(5358);
   const token2 = obj6.useToken(nativeDefault.colors.BACKGROUND_BRAND);
   const items3 = [closure_15, , , , , ];
-  const useAnimatedStyle = sharedValue(1655).useAnimatedStyle;
-  sharedValue(1655);
-  items3[1] = sharedValue(5393).withSpring;
+  const useAnimatedStyle = sharedValue(1653).useAnimatedStyle;
+  sharedValue(1653);
+  items3[1] = sharedValue(5395).withSpring;
   items3[2] = stateFromStores;
   items3[3] = token2;
   items3[4] = token1;
@@ -113,18 +113,18 @@ const memoResult = react.memo(function GuildsBarEmptyNUX() {
   GuildsBarItemEmptyNUXTsx1.__workletHash = 11514219811718;
   GuildsBarItemEmptyNUXTsx1.__initData = tmp13;
   const animatedStyle = useAnimatedStyle(GuildsBarItemEmptyNUXTsx1);
-  const enableHome = obj4.useContext(tmp(17591).HomeDrawerStateContext).enableHome;
+  const enableHome = obj4.useContext(tmp(17418).HomeDrawerStateContext).enableHome;
   const obj7 = { onPress: handlePress };
   const tmp20 = usePressabilityDefault(obj7);
-  const obj8 = { style: tmp5.container, onPressIn: callback, onPressOut: callback1, onPress: handlePress, accessible: true, accessibilityRole: "button", accessibilityLabel: intl.string(sharedValue(1113).t["3S2xmm"]), accessibilityState: { selected: stateFromStores }, hitSlop, children: items6 };
-  intl = tmp(1113).intl;
+  const obj8 = { style: tmp5.container, onPressIn: callback, onPressOut: callback1, onPress: handlePress, accessible: true, accessibilityRole: "button", accessibilityLabel: intl.string(sharedValue(1112).t["3S2xmm"]), accessibilityState: { selected: stateFromStores }, hitSlop, children: items6 };
+  intl = tmp(1112).intl;
   const obj9 = { style: items5 };
   items5 = [tmp5.backdrop, animatedStyle];
-  items6 = [closure_11(_modDef1655.View, obj9), , ];
+  items6 = [closure_11(_modDef1653.View, obj9), , ];
   const obj10 = { style: tmp5.icon, source: AssetRegistryDefault, resizeMode: "contain" };
   const tmp3Result = FastImageDefault;
   items6[1] = closure_11(tmp3Result, obj10);
-  const obj11 = { style: tmp5.guildIndicator, children: closure_11(sharedValue(17919).UnreadIndicator, obj12) };
+  const obj11 = { style: tmp5.guildIndicator, children: closure_11(sharedValue(17746).UnreadIndicator, obj12) };
   obj12 = { selected: true === stateFromStores };
   items6[2] = closure_11(closure_5, obj11);
   const obj13 = { style: tmp5.root, children: items7 };
@@ -138,10 +138,10 @@ const memoResult = react.memo(function GuildsBarEmptyNUX() {
     const tmp3Result4 = NativeViewDefault;
     const merged = Object.assign(tmp20);
     obj15 = { title: closure_11(Text, obj16) };
-    HomeDrawerSharedItem = tmp(17931).HomeDrawerSharedItem;
-    obj16 = { variant: "body-md/medium", color: "text-default", lineClamp: 1, children: intl2.string(sharedValue(1113).t["3S2xmm"]) };
-    Text = tmp(5383).Text;
-    intl2 = tmp(1113).intl;
+    HomeDrawerSharedItem = tmp(17758).HomeDrawerSharedItem;
+    obj16 = { variant: "body-md/medium", color: "text-default", lineClamp: 1, children: intl2.string(sharedValue(1112).t["3S2xmm"]) };
+    Text = tmp(5385).Text;
+    intl2 = tmp(1112).intl;
     tmp22Result = tmp22(tmp3Result4, obj14);
   }
   items7[1] = tmp22Result;

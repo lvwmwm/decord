@@ -123,14 +123,13 @@ export function getElements(arg0, arg1, arg2, arg3) {
   }
   return found;
 }
-export function getElementById(fn, arg1, arg2) {
-  let flag = arg2;
-  if (undefined === arg2) {
+export function getElementById(fn, children, flag) {
+  if (undefined === flag) {
     flag = true;
   }
-  let tmp = arg1;
-  if (!Array.isArray(arg1)) {
-    const items = [arg1];
+  let tmp = children;
+  if (!Array.isArray(children)) {
+    const items = [children];
     tmp = items;
   }
   const id = "id";

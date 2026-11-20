@@ -1,23 +1,23 @@
-// Module ID: 17042
-// Function ID: 17043
+// Module ID: 16866
+// Function ID: 16867
 // Name: CacheActionsDiskUsageSection
-// Dependencies: [5, 32, 19, 21, 4792, 575, 17043, 4670, 4801, 1113, 5808, 5383, 6234, 1380, 6928, 17045, 2]
+// Dependencies: [5, 32, 19, 21, 4794, 575, 16867, 4672, 4803, 1112, 5810, 5385, 6236, 1378, 6927, 16869, 2]
 // Exports: default, useDiskUsageMeasurement
 
-// Module 17042 (CacheActionsDiskUsageSection)
+// Module 16866 (CacheActionsDiskUsageSection)
 import nativeDefault from "native" /* 575 */;
-import intl24 from "intl" /* 1113 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import Stack_Stack from "Stack/Stack" /* 5808 */;
-import FileSizeUtils from "FileSizeUtils" /* 6234 */;
-import Card_Card from "Card/Card" /* 6928 */;
-import CacheActionsStorageDiagnosticsDefault from "CacheActionsStorageDiagnostics" /* 17045 */;
+import intl24 from "intl" /* 1112 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import Stack_Stack from "Stack/Stack" /* 5810 */;
+import FileSizeUtils from "FileSizeUtils" /* 6236 */;
+import Card_Card from "Card/Card" /* 6927 */;
+import CacheActionsStorageDiagnosticsDefault from "CacheActionsStorageDiagnostics" /* 16869 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -44,14 +44,14 @@ function SizeRow(label) {
   const obj2 = { variant: "body-sm/normal", color: "text-subtle", style: indented ? iter.nestedLabel : iter.label, children: label };
   items[0] = metroRequire(Text_Text.Text, obj2);
   const obj3 = { variant: "body-sm/semibold", tabularNumbers: true, style: iter.value, children: formatKbSizeResult };
-  const Text = tmp2(5383).Text;
+  const Text = tmp2(5385).Text;
   const tmp = metroImportDefault;
   if (null != bytes) {
     const tmp2Result = FileSizeUtils;
     formatKbSizeResult = tmp2Result.formatKbSize(bytes);
   } else {
-    const intl = tmp2(1113).intl;
-    formatKbSizeResult = intl.string(tmp2(1113).t.Yrz9rv);
+    const intl = tmp2(1112).intl;
+    formatKbSizeResult = intl.string(tmp2(1112).t.Yrz9rv);
   }
   items[1] = metroRequire(Text, obj3);
   return tmp(Stack, obj);
@@ -157,7 +157,7 @@ function DiskUsageResults(metricKitSize) {
       }
       const items1 = [metroRequire(SizeRow, obj), ];
       const obj2 = { label: intl2.string(intl24.t.UD3OKX), bytes: free, indented: true };
-      intl2 = tmp7(1113).intl;
+      intl2 = tmp7(1112).intl;
       free = undefined;
       if (require != null) {
         free = tmp9.free;
@@ -211,16 +211,16 @@ export default function CacheActionsDiskUsageSection(state) {
   const Card = Card_Card.Card;
   if (tmp4Result) {
     const obj2 = { variant: "body-sm/normal", children: intl2.string(intl24.t.Ynmbie) };
-    const Text = tmp2(5383).Text;
-    intl2 = tmp2(1113).intl;
+    const Text = tmp2(5385).Text;
+    intl2 = tmp2(1112).intl;
     tmp4Result = tmp4(Text, obj2);
   }
   const items1 = [tmp4Result, , ];
   let tmp4Result3 = "error" === state.status;
   if (tmp4Result3) {
     const obj3 = { variant: "body-sm/normal", color: "text-feedback-critical", children: intl3.string(intl24.t["hj/3qI"]) };
-    const Text2 = tmp2(5383).Text;
-    intl3 = tmp2(1113).intl;
+    const Text2 = tmp2(5385).Text;
+    intl3 = tmp2(1112).intl;
     tmp4Result3 = tmp4(Text2, obj3);
   }
   items1[1] = tmp4Result3;
@@ -260,7 +260,7 @@ export function useDiskUsageMeasurement() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let tmp43;
@@ -373,7 +373,7 @@ export function useDiskUsageMeasurement() {
             closure_129_1.current = false;
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp43) {
           if (0 === c3) {
             c5 = 3;

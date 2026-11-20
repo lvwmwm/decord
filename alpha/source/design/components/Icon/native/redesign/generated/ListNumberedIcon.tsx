@@ -1,14 +1,14 @@
-// Module ID: 18733
-// Function ID: 18734
+// Module ID: 18557
+// Function ID: 18558
 // Name: ListNumberedIcon
-// Dependencies: [19, 21, 575, 5478, 18734, 2]
+// Dependencies: [19, 21, 575, 5480, 18558, 2]
 // Exports: ListNumberedIcon
 
-// Module 18733 (ListNumberedIcon)
+// Module 18557 (ListNumberedIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5478 */;
-import AssetRegistry from "AssetRegistry" /* 18734 */;
+import BaseIconImage2 from "BaseIconImage" /* 5480 */;
+import AssetRegistry from "AssetRegistry" /* 18558 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,18 +1,18 @@
-// Module ID: 7245
-// Function ID: 7246
+// Module ID: 7244
+// Function ID: 7245
 // Name: ConfirmEmailChangeStart
-// Dependencies: [5, 32, 19, 17, 1388, 21, 4792, 1502, 504, 7246, 1092, 6229, 5474, 1113, 5479, 7247, 5383, 5390, 2]
+// Dependencies: [5, 32, 19, 17, 1386, 21, 4794, 1500, 504, 7245, 1091, 6231, 5476, 1112, 5481, 7246, 5385, 5392, 2]
 // Exports: default
 
-// Module 7245 (ConfirmEmailChangeStart)
-import Text_Text from "Text/Text" /* 5383 */;
+// Module 7244 (ConfirmEmailChangeStart)
+import Text_Text from "Text/Text" /* 5385 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1388 */;
+import UserStore from "UserStore" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -50,17 +50,17 @@ export default function ConfirmEmailChangeStart() {
   if (null == stateFromStores) {
     return null;
   } else {
-    const intl = tmp2(1113).intl;
+    const intl = tmp2(1112).intl;
     let obj3 = { oldEmail: stateFromStores.email };
     let obj4 = { keyboardShouldPersistTaps: "handled", alwaysBounceVertical: false, children: closure_10(closure_6, obj5) };
     obj5 = { style: tmp.container, children: items1 };
-    let obj6 = { style: tmp.image, source: navigation(7247) };
+    let obj6 = { style: tmp.image, source: navigation(7246) };
     const formatResult = intl.format(require("intl").t.oMFSgi, obj3);
-    const tmp14 = navigation(5479);
+    const tmp14 = navigation(5481);
     items1 = [closure_9(tmp14, obj6), , , ];
-    let obj7 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl2.string(tmp2(1113).t.dQ71Wa) };
-    const Text = tmp2(5383).Text;
-    intl2 = tmp2(1113).intl;
+    let obj7 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl2.string(tmp2(1112).t.dQ71Wa) };
+    const Text = tmp2(5385).Text;
+    intl2 = tmp2(1112).intl;
     items1[1] = closure_9(Text, obj7);
     items1[2] = formatResult.map((children, index) => {
       const obj = { style: body.body, variant: "body-sm/medium", color: "text-default", children };
@@ -68,8 +68,8 @@ export default function ConfirmEmailChangeStart() {
     });
     let obj8 = { style: tmp.button, children: closure_9(Button, obj9) };
     obj9 = { text: intl3.string(require("intl").t.rXV81H), onPress: tmp8, loading: first, grow: true };
-    Button = tmp2(5390).Button;
-    intl3 = tmp2(1113).intl;
+    Button = tmp2(5392).Button;
+    intl3 = tmp2(1112).intl;
     items1[3] = closure_9(closure_6, obj8);
     return closure_9(closure_7, obj4);
   }

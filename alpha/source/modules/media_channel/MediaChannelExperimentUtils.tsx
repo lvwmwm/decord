@@ -1,11 +1,11 @@
-// Module ID: 7607
-// Function ID: 7608
+// Module ID: 7606
+// Function ID: 7607
 // Name: MediaChannelExperimentUtils
-// Dependencies: [1072, 2]
+// Dependencies: [1071, 2]
 // Exports: useGuildEligibleForMediaChannels
 
-// Module 7607 (MediaChannelExperimentUtils)
-import Constants from "Constants" /* 1072 */;
+// Module 7606 (MediaChannelExperimentUtils)
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 const GuildFeatures = Constants.GuildFeatures;

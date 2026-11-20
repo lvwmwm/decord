@@ -1,26 +1,26 @@
 // Module ID: 6805
 // Function ID: 6806
 // Name: ConjureRichPresenceStore
-// Dependencies: [32, 5, 109, 502, 6524, 4695, 4825, 6806, 6812, 6500, 4648, 6813, 6719, 6807, 5531, 6814, 2121, 6536, 6848, 504, 572, 2]
+// Dependencies: [32, 5, 109, 502, 6526, 4697, 4827, 6806, 6812, 6502, 4650, 6813, 6719, 6807, 5533, 6814, 2119, 6538, 6848, 504, 572, 2]
 
 // Module 6805 (ConjureRichPresenceStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ChannelConstants from "ChannelConstants" /* 4648 */;
-import ActivityTypes from "ActivityTypes" /* 5531 */;
-import ConjureGuildExperiment from "ConjureGuildExperiment" /* 6536 */;
+import ChannelConstants from "ChannelConstants" /* 4650 */;
+import ActivityTypes from "ActivityTypes" /* 5533 */;
+import ConjureGuildExperiment from "ConjureGuildExperiment" /* 6538 */;
 import conjureServerProject from "conjureServerProject" /* 6719 */;
 import conjurePresenceActivity from "conjurePresenceActivity" /* 6813 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import IdleStore from "IdleStore" /* 6524 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4695 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4825 */;
+import IdleStore from "IdleStore" /* 6526 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4697 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4827 */;
 import ConjureChatStore from "ConjureChatStore" /* 6806 */;
 import ConjurePagesStore from "ConjurePagesStore" /* 6812 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6500 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6502 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -33,7 +33,7 @@ function updateActivity(withGracePeriod) {
   let obj8;
   let timeout;
   let timeout2;
-  const f91222 = () => {
+  const f89597 = () => {
     let found;
     let timeout = null;
     if (null != _null) {
@@ -51,7 +51,7 @@ function updateActivity(withGracePeriod) {
         timeout = null;
       }
       const _setTimeout = setTimeout;
-      timeout = setTimeout(f91222, closure_1_14);
+      timeout = setTimeout(f89597, closure_1_14);
       conjureRichPresenceStore.emitChange();
     }
   };
@@ -113,7 +113,7 @@ function updateActivity(withGracePeriod) {
         let selectedProjectId = null;
         if (null != guildId) {
           selectedProjectId = null;
-          if (SelectedChannelStore.getChannelId() === StaticChannelRoute.CONJURE) {
+          if (SelectedChannelStore.getChannelId() === StaticChannelRoute.CONJURE_PROJECT) {
             selectedProjectId = obj11.getSelectedProjectId(guildId);
           }
         }
@@ -276,7 +276,7 @@ function updateActivity(withGracePeriod) {
         timeout2 = null;
       }
       let _setTimeout = setTimeout;
-      timeout2 = setTimeout(f91222, c14);
+      timeout2 = setTimeout(f89597, c14);
       flag = true;
     }
   }
@@ -327,7 +327,7 @@ let obj = function _fetchOwnedProjects() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -422,7 +422,7 @@ obj = function _resumeRunningProjects() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c2;
@@ -480,7 +480,7 @@ obj = function _resumeRunningProjects() {
           c2 = 0;
         }
         c4 = 3;
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp17) {
         if (0 === c2) {
           c4 = 3;

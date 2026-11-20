@@ -1,15 +1,15 @@
-// Module ID: 18420
-// Function ID: 18421
+// Module ID: 18174
+// Function ID: 18175
 // Name: openConjureUnpublishUserAppAlert
-// Dependencies: [5, 32, 19, 2165, 21, 504, 12293, 1113, 4089, 5474, 5745, 5383, 5741, 2]
+// Dependencies: [5, 32, 19, 2163, 21, 504, 12188, 1112, 4091, 5476, 5747, 5385, 5743, 2]
 // Exports: default
 
-// Module 18420 (openConjureUnpublishUserAppAlert)
-import useAlertStore from "useAlertStore" /* 5741 */;
+// Module 18174 (openConjureUnpublishUserAppAlert)
+import useAlertStore from "useAlertStore" /* 5743 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 2165 */;
+import ApplicationStore from "ApplicationStore" /* 2163 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -23,18 +23,18 @@ function ConjureUnpublishUserAppAlert(project) {
   let _undefined;
   let c1;
   let intl;
-  let intl2;
   let intl3;
   let intl4;
   let items2;
   let obj4;
+  let string;
   let tmp2;
   let tmp6Result;
+  let wve4kB;
   project = project.project;
   importDefault = undefined;
   let stateFromStores;
   let obj = function _submit() {
-    let id;
     obj = _asyncToGenerator(async function(arg0, value) {
       let closure_0;
       let closure_1;
@@ -50,7 +50,7 @@ function ConjureUnpublishUserAppAlert(project) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -70,7 +70,7 @@ function ConjureUnpublishUserAppAlert(project) {
               const obj4 = tmp(c2[6]);
               c2 = 1;
               c3 = 1;
-              const obj5 = { value: obj4.unpublishUserApp(id.id), done: false };
+              const obj5 = { value: obj4.unpublishLiveApp(project), done: false };
               return obj5;
             }
           } else if (arg0 === 1) {
@@ -88,7 +88,7 @@ function ConjureUnpublishUserAppAlert(project) {
             obj7 = { app: closure_129_2 };
             open("CONJURE_USER_APP_UNPUBLISHED", obj);
             c3 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           } else {
             const intl = tmp(c2[7]).intl;
             tmp = intl.string(tmp4(c2[8])["rE/0SD"]);
@@ -127,12 +127,17 @@ function ConjureUnpublishUserAppAlert(project) {
     }
     return name;
   }, items1);
-  let obj2 = { title: intl.formatToPlainString(require("module_4089").m8KWic, { app: stateFromStores }), content: intl2.string(require("module_4089").wve4kB), extraContent: tmp6Result, actions: closure_9(closure_8, obj4) };
+  let obj2 = { title: intl.formatToPlainString(require("module_4091").m8KWic, { app: stateFromStores }), content: string(wve4kB), extraContent: tmp6Result, actions: closure_9(closure_8, obj4) };
   const AlertModal = project(stateFromStores[10]).AlertModal;
   intl = project(stateFromStores[7]).intl;
-  intl2 = project(stateFromStores[7]).intl;
+  let intl2 = project(stateFromStores[7]).intl;
+  string = intl2.string;
+  if ("guild" === project.install_scope) {
+    wve4kB = tmp7(tmp4[8])["6upWvS"];
+  } else {
+    wve4kB = tmp7(tmp4[8]).wve4kB;
+  }
   tmp6Result = undefined;
-  const tmp7 = importDefault;
   if (null != tmp2) {
     let obj3 = { variant: "body-sm/medium", color: "text-feedback-critical", children: tmp2 };
     tmp6Result = tmp6(tmp3(tmp4[11]).Text, obj3);

@@ -1,10 +1,10 @@
 // Module ID: 9156
 // Function ID: 9157
 // Name: merged2
-// Dependencies: [4833]
+// Dependencies: [4835]
 
 // Module 9156 (merged2)
-import module_4833_mod from "module_4833" /* 4833 */;
+import module_4835_mod from "module_4835" /* 4835 */;
 
 let arrayOf;
 let items;
@@ -44,47 +44,47 @@ const obj = {
   translateX: validate,
   translateY: validate
 };
-let module_4833 = module_4833_mod;
-arrayOf = module_4833.arrayOf;
-module_4833 = module_4833_mod;
-oneOfType = module_4833.oneOfType;
-module_4833 = module_4833_mod;
+let module_4835 = module_4835_mod;
+arrayOf = module_4835.arrayOf;
+module_4835 = module_4835_mod;
+oneOfType = module_4835.oneOfType;
+module_4835 = module_4835_mod;
 items = [, , , , , , , , , , , ];
-const obj2 = { perspective: module_4833.number };
-items[0] = module_4833.shape(obj2);
-module_4833 = module_4833_mod;
-const obj3 = { rotate: module_4833.string };
-items[1] = module_4833.shape(obj3);
-module_4833 = module_4833_mod;
-const obj4 = { rotateX: module_4833.string };
-items[2] = module_4833.shape(obj4);
-module_4833 = module_4833_mod;
-const obj5 = { rotateY: module_4833.string };
-items[3] = module_4833.shape(obj5);
-module_4833 = module_4833_mod;
-const obj6 = { rotateZ: module_4833.string };
-items[4] = module_4833.shape(obj6);
-module_4833 = module_4833_mod;
-const obj7 = { scale: module_4833.number };
-items[5] = module_4833.shape(obj7);
-module_4833 = module_4833_mod;
-const obj8 = { scaleX: module_4833.number };
-items[6] = module_4833.shape(obj8);
-module_4833 = module_4833_mod;
-const obj9 = { scaleY: module_4833.number };
-items[7] = module_4833.shape(obj9);
-module_4833 = module_4833_mod;
-const obj10 = { translateX: module_4833.number };
-items[8] = module_4833.shape(obj10);
-module_4833 = module_4833_mod;
-const obj11 = { translateY: module_4833.number };
-items[9] = module_4833.shape(obj11);
-module_4833 = module_4833_mod;
-const obj12 = { skewX: module_4833.string };
-items[10] = module_4833.shape(obj12);
-module_4833 = module_4833_mod;
-const obj13 = { skewY: module_4833.string };
-items[11] = module_4833.shape(obj13);
-const number = module_4833.number;
+const obj2 = { perspective: module_4835.number };
+items[0] = module_4835.shape(obj2);
+module_4835 = module_4835_mod;
+const obj3 = { rotate: module_4835.string };
+items[1] = module_4835.shape(obj3);
+module_4835 = module_4835_mod;
+const obj4 = { rotateX: module_4835.string };
+items[2] = module_4835.shape(obj4);
+module_4835 = module_4835_mod;
+const obj5 = { rotateY: module_4835.string };
+items[3] = module_4835.shape(obj5);
+module_4835 = module_4835_mod;
+const obj6 = { rotateZ: module_4835.string };
+items[4] = module_4835.shape(obj6);
+module_4835 = module_4835_mod;
+const obj7 = { scale: module_4835.number };
+items[5] = module_4835.shape(obj7);
+module_4835 = module_4835_mod;
+const obj8 = { scaleX: module_4835.number };
+items[6] = module_4835.shape(obj8);
+module_4835 = module_4835_mod;
+const obj9 = { scaleY: module_4835.number };
+items[7] = module_4835.shape(obj9);
+module_4835 = module_4835_mod;
+const obj10 = { translateX: module_4835.number };
+items[8] = module_4835.shape(obj10);
+module_4835 = module_4835_mod;
+const obj11 = { translateY: module_4835.number };
+items[9] = module_4835.shape(obj11);
+module_4835 = module_4835_mod;
+const obj12 = { skewX: module_4835.string };
+items[10] = module_4835.shape(obj12);
+module_4835 = module_4835_mod;
+const obj13 = { skewY: module_4835.string };
+items[11] = module_4835.shape(obj13);
+const number = module_4835.number;
 
 export default obj;

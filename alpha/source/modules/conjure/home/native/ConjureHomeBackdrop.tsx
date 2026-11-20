@@ -1,15 +1,15 @@
-// Module ID: 18691
-// Function ID: 18692
+// Module ID: 18515
+// Function ID: 18516
 // Name: ConjureHomeBackdrop
-// Dependencies: [19, 17, 21, 5001, 5356, 575, 4800, 5347, 7746, 2]
+// Dependencies: [19, 17, 21, 5003, 5358, 575, 4802, 5349, 7745, 2]
 
-// Module 18691 (ConjureHomeBackdrop)
+// Module 18515 (ConjureHomeBackdrop)
 import nativeDefault from "native" /* 575 */;
-import design_shared from "design/shared" /* 4800 */;
-import useTheme from "useTheme" /* 5001 */;
-import LinearGradientDefault from "LinearGradient" /* 5347 */;
-import useToken from "useToken" /* 5356 */;
-import inlineStyles from "inlineStyles" /* 7746 */;
+import design_shared from "design/shared" /* 4802 */;
+import useTheme from "useTheme" /* 5003 */;
+import LinearGradientDefault from "LinearGradient" /* 5349 */;
+import useToken from "useToken" /* 5358 */;
+import inlineStyles from "inlineStyles" /* 7745 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -45,9 +45,9 @@ const memoResult = react.memo(function ConjureHomeBackdrop() {
     size = { style: _false.absoluteFill, width: "100%", height: "100%", children: items2 };
     const obj6 = { children: metroRequire(RadialGradient, obj7) };
     const tmp4Result = inlineStylesDefault;
-    const Defs = tmp(7746).Defs;
+    const Defs = tmp(7745).Defs;
     obj7 = { id: "conjureHomeBackdropFalloff", cx: "0.5", cy: "1", rx: "1", ry: "1.04", fx: "0.5", fy: "1", children: items1 };
-    RadialGradient = tmp(7746).RadialGradient;
+    RadialGradient = tmp(7745).RadialGradient;
     const obj8 = { offset: "0.39", stopColor: token, stopOpacity: 1 };
     items1 = [hasOwnProperty(inlineStyles.Stop, obj8), ];
     const obj9 = { offset: "1", stopColor: token, stopOpacity: 0 };

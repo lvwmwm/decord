@@ -1,11 +1,11 @@
 // Module ID: 6763
 // Function ID: 6764
 // Name: useGuildShopVisibleInGuild
-// Dependencies: [1072, 6759, 6751, 6764, 6754, 2]
+// Dependencies: [1071, 6759, 6751, 6764, 6754, 2]
 // Exports: isGuildShopVisibleInGuild, useGuildShopVisibleInGuild
 
 // Module 6763 (useGuildShopVisibleInGuild)
-import Constants from "Constants" /* 1072 */;
+import Constants from "Constants" /* 1071 */;
 import useRoleSubscriptionsVisibleInGuild2 from "useRoleSubscriptionsVisibleInGuild" /* 6751 */;
 import CreatorMonetizationRestrictionsHooks from "CreatorMonetizationRestrictionsHooks" /* 6754 */;
 import GuildProductsEligibility from "GuildProductsEligibility" /* 6759 */;

@@ -1,27 +1,27 @@
-// Module ID: 20101
-// Function ID: 20102
+// Module ID: 19921
+// Function ID: 19922
 // Name: StepsIndicator
-// Dependencies: [19, 17, 4793, 21, 4792, 575, 1655, 5002, 5383, 504, 2]
+// Dependencies: [19, 17, 4795, 21, 4794, 575, 1653, 5004, 5385, 504, 2]
 // Exports: default
 
-// Module 20101 (StepsIndicator)
+// Module 19921 (StepsIndicator)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import _mod1655 from "module_1655" /* 1655 */;
+import _mod1653 from "module_1653" /* 1653 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4793 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import AccessibilityStore from "AccessibilityStore" /* 4795 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
-const _modDef1655 = _mod1655;
+const _modDef1653 = _mod1653;
 let set;
 
 let obj2;
 let obj3;
 let tmp2;
-const timing_timing = tmp2(5002);
-const Text_Text = tmp2(5383);
+const timing_timing = tmp2(5004);
+const Text_Text = tmp2(5385);
 function StepNode(isCurrent) {
   let isDone;
   let label;
@@ -39,8 +39,8 @@ function StepNode(isCurrent) {
   let tmp2 = require;
   let tmp3 = dependencyMap;
   let num = 0;
-  const useSharedValue = _mod1655.useSharedValue;
-  _mod1655;
+  const useSharedValue = _mod1653.useSharedValue;
+  _mod1653;
   if (isCurrent) {
     num = 1;
   }
@@ -50,13 +50,13 @@ function StepNode(isCurrent) {
     num2 = 0;
   }
   let items = [closure_8, , , , , ];
-  const useAnimatedStyle = _mod1655.useAnimatedStyle;
-  _mod1655;
-  items[1] = _mod1655.interpolate;
+  const useAnimatedStyle = _mod1653.useAnimatedStyle;
+  _mod1653;
+  items[1] = _mod1653.interpolate;
   items[2] = sharedValue;
   items[3] = timing_timing.withTiming;
   items[4] = num2;
-  items[5] = _mod1655.Easing;
+  items[5] = _mod1653.Easing;
   let c0;
   let c1;
   let c2;
@@ -98,7 +98,7 @@ function StepNode(isCurrent) {
       filledNode = tmp.emptyNode;
     }
     const items3 = [tmp.node, animatedStyle, filledNode];
-    View = _modDef1655.View;
+    View = _modDef1653.View;
     if (isCurrent) {
       let obj2 = { variant: "body-xs/semibold", color: "interactive-text-active", children: label };
       isCurrent = tmp15(Text_Text.Text, obj2);

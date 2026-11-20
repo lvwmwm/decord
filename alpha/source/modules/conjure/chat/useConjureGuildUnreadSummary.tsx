@@ -1,15 +1,15 @@
-// Module ID: 17780
-// Function ID: 17781
+// Module ID: 17607
+// Function ID: 17608
 // Name: useConjureGuildUnreadSummary
-// Dependencies: [19, 6498, 6500, 6432, 504, 6816, 6814, 2]
+// Dependencies: [19, 6500, 6502, 6434, 504, 6816, 6814, 2]
 // Exports: default
 
-// Module 17780 (useConjureGuildUnreadSummary)
-import ReadStateConstants from "ReadStateConstants" /* 6432 */;
+// Module 17607 (useConjureGuildUnreadSummary)
+import ReadStateConstants from "ReadStateConstants" /* 6434 */;
 import ConjureActionCreators from "ConjureActionCreators" /* 6814 */;
 import react from "react" /* 19 */;
-import ReadStateStore from "ReadStateStore" /* 6498 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6500 */;
+import ReadStateStore from "ReadStateStore" /* 6500 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6502 */;
 import size from "module_2" /* 2 */;
 
 let resourceIds;

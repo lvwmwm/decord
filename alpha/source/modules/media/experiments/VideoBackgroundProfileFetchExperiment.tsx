@@ -1,11 +1,11 @@
-// Module ID: 8089
-// Function ID: 8090
+// Module ID: 8088
+// Function ID: 8089
 // Name: VideoBackgroundProfileFetchExperiment
-// Dependencies: [1452, 2]
+// Dependencies: [1450, 2]
 // Exports: useIsVideoBackgroundProfileFetchEnabled
 
-// Module 8089 (VideoBackgroundProfileFetchExperiment)
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+// Module 8088 (VideoBackgroundProfileFetchExperiment)
+import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2026-09-video-background-profile-fetch", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };

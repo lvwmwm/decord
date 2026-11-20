@@ -1,13 +1,13 @@
-// Module ID: 13033
-// Function ID: 13034
+// Module ID: 13003
+// Function ID: 13004
 // Name: useChatInputFloatingWidth
-// Dependencies: [19, 12735, 1655, 5002, 2]
+// Dependencies: [19, 12705, 1653, 5004, 2]
 // Exports: default
 
-// Module 13033 (useChatInputFloatingWidth)
-import _mod1655 from "module_1655" /* 1655 */;
-import timing_timing from "timing/timing" /* 5002 */;
-import ChatInputConstants from "ChatInputConstants" /* 12735 */;
+// Module 13003 (useChatInputFloatingWidth)
+import _mod1653 from "module_1653" /* 1653 */;
+import timing_timing from "timing/timing" /* 5004 */;
+import ChatInputConstants from "ChatInputConstants" /* 12705 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -45,8 +45,8 @@ export default function useChatInputFloatingWidth(expanded) {
     if (expanded) {
       if (0 > 0) {
         set2 = sharedValue.set;
-        const withDelay = _mod1655.withDelay;
-        _mod1655;
+        const withDelay = _mod1653.withDelay;
+        _mod1653;
         const obj = timing_timing;
         set2(withDelay(tmp2, obj.withTiming(1, closure_3, "respect-motion-settings")));
       }

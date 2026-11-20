@@ -1,16 +1,16 @@
-// Module ID: 8739
-// Function ID: 8740
+// Module ID: 8677
+// Function ID: 8678
 // Name: useCurrentChangelog
-// Dependencies: [19, 2189, 7619, 4694, 563, 8740, 2]
+// Dependencies: [19, 2187, 7618, 4696, 563, 8678, 2]
 // Exports: useCurrentChangelog
 
-// Module 8739 (useCurrentChangelog)
+// Module 8677 (useCurrentChangelog)
 import useStateFromStores from "useStateFromStores" /* 563 */;
-import ChangelogConstants from "ChangelogConstants" /* 4694 */;
-import ChangeLogActionCreatorsDefault from "ChangeLogActionCreators" /* 8740 */;
+import ChangelogConstants from "ChangelogConstants" /* 4696 */;
+import ChangeLogActionCreatorsDefault from "ChangeLogActionCreators" /* 8678 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2189 */;
-import ChangelogStore from "ChangelogStore" /* 7619 */;
+import LocaleStore from "LocaleStore" /* 2187 */;
+import ChangelogStore from "ChangelogStore" /* 7618 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

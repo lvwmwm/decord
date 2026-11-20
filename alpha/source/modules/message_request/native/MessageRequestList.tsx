@@ -1,19 +1,19 @@
-// Module ID: 19052
-// Function ID: 19053
+// Module ID: 18871
+// Function ID: 18872
 // Name: MessageRequestList
-// Dependencies: [19, 17, 1072, 21, 4792, 575, 1113, 5474, 5525, 6308, 13237, 1256, 6911, 19053, 1187, 14211, 16141, 7590, 1630, 19058, 19060, 13236, 19063, 7371, 1380, 5383, 2]
+// Dependencies: [19, 17, 1071, 21, 4794, 575, 1112, 5476, 5527, 6310, 13207, 1255, 6910, 18872, 1186, 14181, 16105, 7589, 1628, 18877, 18879, 13206, 18882, 7370, 1378, 5385, 2]
 // Exports: default
 
-// Module 19052 (MessageRequestList)
+// Module 18871 (MessageRequestList)
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import transitionToChannel from "transitionToChannel" /* 5525 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6308 */;
+import Constants from "Constants" /* 1071 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import transitionToChannel from "transitionToChannel" /* 5527 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6310 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -216,22 +216,22 @@ export default function MessageRequestList(goToMessageRequestPreview) {
   let tmp = closure_9();
   const tmp3 = dependencyMap;
   let tmp2 = data;
-  const bottom = data(1630)().bottom;
-  data = data(19058)();
-  let obj = goToMessageRequestPreview(19060);
+  const bottom = data(1628)().bottom;
+  data = data(18877)();
+  let obj = goToMessageRequestPreview(18879);
   dependencyMap = obj.useListHasSingleMessageRequest();
-  const obj2 = goToMessageRequestPreview(13236);
+  const obj2 = goToMessageRequestPreview(13206);
   const isRestricted = obj2.useIsMessageRequestRestrictedViewer();
   if (0 === data.length) {
-    const obj3 = { bodyText: intl2.string(goToMessageRequestPreview(1113).t.SXrqTf) };
-    const tmp2Result = tmp2(19063);
-    intl2 = tmp4(1113).intl;
+    const obj3 = { bodyText: intl2.string(goToMessageRequestPreview(1112).t.SXrqTf) };
+    const tmp2Result = tmp2(18882);
+    intl2 = tmp4(1112).intl;
     tmp9Result = closure_7(tmp2Result, obj3);
   } else {
     const items = [tmp.list, ];
-    const FlashList = tmp4(7371).FlashList;
+    const FlashList = tmp4(7370).FlashList;
     let num = 0;
-    const tmp4Result = goToMessageRequestPreview(1380);
+    const tmp4Result = goToMessageRequestPreview(1378);
     if (tmp4Result.isAndroid()) {
       num = bottom;
     }
@@ -271,9 +271,9 @@ export default function MessageRequestList(goToMessageRequestPreview) {
     };
     obj6 = { paddingHorizontal: 16, paddingBottom: bottom, paddingTop: 12 };
     obj7 = { style: tmp.sectionContainer, children: closure_7(Text, obj8) };
-    obj8 = { variant: "body-sm/medium", color: "text-default", children: intl.format(goToMessageRequestPreview(1113).t.evH4Yb, obj9) };
-    Text = tmp4(5383).Text;
-    intl = tmp4(1113).intl;
+    obj8 = { variant: "body-sm/medium", color: "text-default", children: intl.format(goToMessageRequestPreview(1112).t.evH4Yb, obj9) };
+    Text = tmp4(5385).Text;
+    intl = tmp4(1112).intl;
     obj9 = { pendingRequestNumber: data.length };
     tmp9Result = tmp9(FlashList, obj4);
   }

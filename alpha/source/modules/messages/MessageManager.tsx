@@ -1,37 +1,37 @@
-// Module ID: 8460
-// Function ID: 8461
+// Module ID: 8459
+// Function ID: 8460
 // Name: MessageManager
-// Dependencies: [32, 6499, 6273, 4645, 6519, 4641, 4663, 6498, 4695, 4825, 1072, 4648, 1089, 3, 8461, 6268, 8491, 6270, 6550, 8131, 8492, 510, 4830, 1099, 6521, 5739, 1113, 572, 7365, 2]
+// Dependencies: [32, 6501, 6275, 4647, 6521, 4643, 4665, 6500, 4697, 4827, 1071, 4650, 1088, 3, 8460, 6270, 8490, 6272, 6552, 8130, 8491, 510, 4832, 1098, 6523, 5741, 1112, 572, 7364, 2]
 
-// Module 8460 (MessageManager)
+// Module 8459 (MessageManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Storage3 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import DurationsDefault from "Durations" /* 1089 */;
-import router_utils from "router_utils" /* 1099 */;
-import intl3 from "intl" /* 1113 */;
-import ChannelRecord from "ChannelRecord" /* 4645 */;
-import ChannelConstants from "ChannelConstants" /* 4648 */;
-import matchPathCompat from "matchPathCompat" /* 4830 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5739 */;
-import ChannelMessagesDefault from "ChannelMessages" /* 6268 */;
-import flow_Client from "flow/Client" /* 6270 */;
-import SidebarActionTypes from "SidebarActionTypes" /* 6521 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 8131 */;
-import getNitroMessagePrefetchKey from "getNitroMessagePrefetchKey" /* 8461 */;
-import AttachmentUrlUtilsAll from "AttachmentUrlUtils" /* 8491 */;
-import getAdaptiveMessageLimit from "getAdaptiveMessageLimit" /* 8492 */;
+import DurationsDefault from "Durations" /* 1088 */;
+import router_utils from "router_utils" /* 1098 */;
+import intl3 from "intl" /* 1112 */;
+import ChannelRecord from "ChannelRecord" /* 4647 */;
+import ChannelConstants from "ChannelConstants" /* 4650 */;
+import matchPathCompat from "matchPathCompat" /* 4832 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5741 */;
+import ChannelMessagesDefault from "ChannelMessages" /* 6270 */;
+import flow_Client from "flow/Client" /* 6272 */;
+import SidebarActionTypes from "SidebarActionTypes" /* 6523 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 8130 */;
+import getNitroMessagePrefetchKey from "getNitroMessagePrefetchKey" /* 8460 */;
+import AttachmentUrlUtilsAll from "AttachmentUrlUtils" /* 8490 */;
+import getAdaptiveMessageLimit from "getAdaptiveMessageLimit" /* 8491 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6499 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6273 */;
-import ChannelSectionStore from "ChannelSectionStore" /* 6519 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import GuildStore from "GuildStore" /* 4663 */;
-import ReadStateStore from "ReadStateStore" /* 6498 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4695 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4825 */;
-import Constants from "Constants" /* 1072 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7365 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6501 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6275 */;
+import ChannelSectionStore from "ChannelSectionStore" /* 6521 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import GuildStore from "GuildStore" /* 4665 */;
+import ReadStateStore from "ReadStateStore" /* 6500 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4697 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4827 */;
+import Constants from "Constants" /* 1071 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7364 */;
 import size from "module_2" /* 2 */;
 
 let map, obj4;
@@ -109,7 +109,7 @@ function fetchMessages(arg0) {
             if (!GatewayConnectionStore.isConnected()) {
               flag = true;
             }
-            const hasUnreadResult = tmp11(6550)(channelId) && ReadStateStore.hasUnread(channelId);
+            const hasUnreadResult = tmp11(6552)(channelId) && ReadStateStore.hasUnread(channelId);
             if (hasUnreadResult) {
               flag = true;
             }

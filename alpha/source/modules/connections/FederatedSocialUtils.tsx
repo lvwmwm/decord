@@ -1,11 +1,11 @@
-// Module ID: 7135
-// Function ID: 7136
+// Module ID: 7134
+// Function ID: 7135
 // Name: FederatedSocialUtils
-// Dependencies: [1072, 2]
+// Dependencies: [1071, 2]
 // Exports: getExampleHandle, validateHandle
 
-// Module 7135 (FederatedSocialUtils)
-import Constants from "Constants" /* 1072 */;
+// Module 7134 (FederatedSocialUtils)
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 const PlatformTypes = Constants.PlatformTypes;

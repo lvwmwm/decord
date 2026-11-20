@@ -1,21 +1,21 @@
-// Module ID: 4970
-// Function ID: 4971
+// Module ID: 4972
+// Function ID: 4973
 // Name: getInitialNavigationState
-// Dependencies: [32, 502, 4829, 4695, 1072, 3, 4971, 1099, 4830, 4843, 4974, 2]
+// Dependencies: [32, 502, 4831, 4697, 1071, 3, 4973, 1098, 4832, 4845, 4976, 2]
 // Exports: computeInitialNavigationState, default, getInitialAuthState, wrapRouteForRootNavigator
 
-// Module 4970 (getInitialNavigationState)
+// Module 4972 (getInitialNavigationState)
 import LoggerDefault from "Logger" /* 3 */;
-import router_utils from "router_utils" /* 1099 */;
-import matchPathCompat from "matchPathCompat" /* 4830 */;
-import RouteUtils from "RouteUtils" /* 4843 */;
-import useChatLayout from "useChatLayout" /* 4971 */;
-import HomeDrawerExperiment from "HomeDrawerExperiment" /* 4974 */;
+import router_utils from "router_utils" /* 1098 */;
+import matchPathCompat from "matchPathCompat" /* 4832 */;
+import RouteUtils from "RouteUtils" /* 4845 */;
+import useChatLayout from "useChatLayout" /* 4973 */;
+import HomeDrawerExperiment from "HomeDrawerExperiment" /* 4976 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import DefaultRouteStore from "DefaultRouteStore" /* 4829 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4695 */;
-import Constants from "Constants" /* 1072 */;
+import DefaultRouteStore from "DefaultRouteStore" /* 4831 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4697 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 let routes;
@@ -116,9 +116,9 @@ function computeInitialNavigationStateWithoutLogging() {
       const lastNonVoiceRoute = DefaultRouteStore.lastNonVoiceRoute;
       CHANNEL2 = tmp4.CHANNEL;
       matchPathCompat;
-      const RouteParam3 = tmp(4843).RouteParam;
+      const RouteParam3 = tmp(4845).RouteParam;
       guildIdResult1 = RouteParam3.guildId();
-      RouteParam4 = tmp(4843).RouteParam;
+      RouteParam4 = tmp(4845).RouteParam;
       matchPath2Result = matchPath2(lastNonVoiceRoute, obj4);
       flag = false;
     } else {

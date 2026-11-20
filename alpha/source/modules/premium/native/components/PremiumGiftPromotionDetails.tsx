@@ -1,21 +1,21 @@
 // Module ID: 9387
 // Function ID: 9388
 // Name: PremiumGiftPromotionDetails
-// Dependencies: [19, 17, 4793, 21, 575, 4792, 5383, 504, 5479, 2114, 8860, 2]
+// Dependencies: [19, 17, 4795, 21, 575, 4794, 5385, 504, 5481, 2112, 8860, 2]
 // Exports: PremiumGiftPromotionCollectibleRewardDetails, default
 
 // Module 9387 (PremiumGiftPromotionDetails)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 2114 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import FastImageDefault from "FastImage" /* 5479 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 2112 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import FastImageDefault from "FastImage" /* 5481 */;
 import SKUPreview from "SKUPreview" /* 8860 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4793 */;
+import AccessibilityStore from "AccessibilityStore" /* 4795 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -154,7 +154,7 @@ export function PremiumGiftPromotionCollectibleRewardDetails(product) {
       rounded = Math.floor(1.2 * tmp10);
     } else {
       rounded = tmp10;
-      if (memo.item.type === tmp8(2114).CollectiblesItemType.AVATAR_DECORATION) {
+      if (memo.item.type === tmp8(2112).CollectiblesItemType.AVATAR_DECORATION) {
         const _Math = Math;
         rounded = Math.floor(1.5 * tmp10);
       }

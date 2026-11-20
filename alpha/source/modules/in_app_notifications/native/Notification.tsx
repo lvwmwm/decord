@@ -1,21 +1,21 @@
-// Module ID: 11098
-// Function ID: 11099
+// Module ID: 11040
+// Function ID: 11041
 // Name: Notification
-// Dependencies: [19, 11052, 1072, 21, 4792, 575, 11051, 11090, 1655, 5393, 5002, 1708, 5529, 6911, 11099, 11101, 2]
+// Dependencies: [19, 10994, 1071, 21, 4794, 575, 10993, 11032, 1653, 5395, 5004, 1706, 5531, 6910, 11041, 11043, 2]
 // Exports: NotificationPressable
 
-// Module 11098 (Notification)
+// Module 11040 (Notification)
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import _mod1708 from "module_1708" /* 1708 */;
-import timing_timing from "timing/timing" /* 5002 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5529 */;
-import InAppNotificationUtils from "InAppNotificationUtils" /* 11051 */;
+import Constants from "Constants" /* 1071 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import _mod1706 from "module_1706" /* 1706 */;
+import timing_timing from "timing/timing" /* 5004 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5531 */;
+import InAppNotificationUtils from "InAppNotificationUtils" /* 10993 */;
 import react from "react" /* 19 */;
-import InAppNotificationConstants from "InAppNotificationConstants" /* 11052 */;
+import InAppNotificationConstants from "InAppNotificationConstants" /* 10994 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -138,9 +138,9 @@ export function NotificationPressable(notification) {
           const value = sharedValue1.get();
           set = sharedValue1.set;
           const tmp9 = timing_timing;
-          let obj = { duration: value / 100 * tmp, easing: _mod1655.Easing.linear };
+          let obj = { duration: value / 100 * tmp, easing: _mod1653.Easing.linear };
           const withTiming = tmp9.withTiming;
-          const items = [closure_12, _mod1708.scheduleOnRN, handleDismissNotification];
+          const items = [closure_12, _mod1706.scheduleOnRN, handleDismissNotification];
           let c0;
           let c1;
           [tmp13, tmp14, tmp15] = items;

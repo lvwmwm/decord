@@ -1,14 +1,14 @@
-// Module ID: 19881
-// Function ID: 19882
+// Module ID: 19701
+// Function ID: 19702
 // Name: GuildSettingsModalLobbiesLinked
-// Dependencies: [19, 4734, 1388, 1072, 21, 1502, 6745, 7229, 6926, 5408, 7517, 5356, 575, 19757, 12, 7590, 5808, 5366, 2]
+// Dependencies: [19, 4736, 1386, 1071, 21, 1500, 6745, 7228, 6925, 5410, 7516, 5358, 575, 19575, 12, 7589, 5810, 5368, 2]
 // Exports: default
 
-// Module 19881 (GuildSettingsModalLobbiesLinked)
-import Constants from "Constants" /* 1072 */;
+// Module 19701 (GuildSettingsModalLobbiesLinked)
+import Constants from "Constants" /* 1071 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4734 */;
-import UserStore from "UserStore" /* 1388 */;
+import RelationshipStore from "RelationshipStore" /* 4736 */;
+import UserStore from "UserStore" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -23,7 +23,7 @@ function SyncingToGamesItem(channels) {
   channels = channels.channels;
   const isOnlySection = channels.isOnlySection;
   const applicationId = channels.applicationId;
-  let obj = channels(1502);
+  let obj = channels(1500);
   dependencyMap = obj.useNavigation();
   let obj2 = channels(6745);
   const getOrFetchApplication = obj2.useGetOrFetchApplication(applicationId);
@@ -31,7 +31,7 @@ function SyncingToGamesItem(channels) {
   const tmp = channels;
   if (0 !== channels.length) {
     let name;
-    const TableRowGroup = tmp(7229).TableRowGroup;
+    const TableRowGroup = tmp(7228).TableRowGroup;
     const tmp5 = closure_6;
     if (getOrFetchApplication != null) {
       name = getOrFetchApplication.name;
@@ -109,7 +109,7 @@ export default function GuildSettingsModalLobbiesLinked(arg0) {
   const obj4 = { children: items1 };
   const obj5 = { contentContainerStyle: items, children: closure_6(Stack, obj7) };
   const obj6 = { paddingTop: keys(575).space.PX_16 };
-  const Form = require("module_7590").Form;
+  const Form = require("module_7589").Form;
   items = [obj6, contentContainerStyle];
   obj7 = {
     style: { paddingHorizontal: token },

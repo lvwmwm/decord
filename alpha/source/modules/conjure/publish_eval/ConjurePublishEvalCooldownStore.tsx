@@ -1,9 +1,9 @@
-// Module ID: 18302
-// Function ID: 18303
+// Module ID: 12193
+// Function ID: 12194
 // Name: ConjurePublishEvalCooldownStore
 // Dependencies: [504, 572, 2]
 
-// Module 18302 (ConjurePublishEvalCooldownStore)
+// Module 12193 (ConjurePublishEvalCooldownStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;

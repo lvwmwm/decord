@@ -1,13 +1,13 @@
-// Module ID: 15928
-// Function ID: 15929
+// Module ID: 15892
+// Function ID: 15893
 // Name: useShowAgeNoticePromoSheet
-// Dependencies: [19, 15927, 4625, 15929, 2]
+// Dependencies: [19, 15891, 4627, 15893, 2]
 // Exports: useIsAgeNoticeEligible, useShowAgeNoticePromoSheet
 
-// Module 15928 (useShowAgeNoticePromoSheet)
-import dismissible_content from "dismissible_content" /* 4625 */;
-import AgeNoticeVisibility from "AgeNoticeVisibility" /* 15927 */;
-import openAgeNoticePromoSheetDefault from "openAgeNoticePromoSheet" /* 15929 */;
+// Module 15892 (useShowAgeNoticePromoSheet)
+import dismissible_content from "dismissible_content" /* 4627 */;
+import AgeNoticeVisibility from "AgeNoticeVisibility" /* 15891 */;
+import openAgeNoticePromoSheetDefault from "openAgeNoticePromoSheet" /* 15893 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

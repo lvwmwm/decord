@@ -1,12 +1,12 @@
-// Module ID: 15058
-// Function ID: 15059
+// Module ID: 15022
+// Function ID: 15023
 // Name: GuildBadgeFlower
-// Dependencies: [19, 21, 15046, 7746, 2]
+// Dependencies: [19, 21, 15010, 7745, 2]
 // Exports: GuildBadgeFlower
 
-// Module 15058 (GuildBadgeFlower)
-import inlineStyles from "inlineStyles" /* 7746 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 15046 */;
+// Module 15022 (GuildBadgeFlower)
+import inlineStyles from "inlineStyles" /* 7745 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 15010 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

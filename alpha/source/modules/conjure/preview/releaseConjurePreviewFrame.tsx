@@ -1,14 +1,14 @@
 // Module ID: 6832
 // Function ID: 6833
 // Name: releaseConjurePreviewFrame
-// Dependencies: [1194, 6824, 6833, 6834, 2]
+// Dependencies: [1193, 6824, 6833, 6834, 2]
 // Exports: default
 
 // Module 6832 (releaseConjurePreviewFrame)
 import conjurePreviewSurface from "conjurePreviewSurface" /* 6824 */;
 import frameRunsInBackgroundDefault from "frameRunsInBackground" /* 6833 */;
 import leaveFrame from "leaveFrame" /* 6834 */;
-import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1194 */;
+import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1193 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/preview/releaseConjurePreviewFrame.tsx");

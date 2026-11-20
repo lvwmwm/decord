@@ -1,22 +1,22 @@
 // Module ID: 9527
 // Function ID: 9528
 // Name: SearchableUserList
-// Dependencies: [32, 19, 17, 1388, 9526, 21, 4792, 575, 9528, 1255, 9533, 4799, 1113, 9534, 9536, 9971, 9539, 7661, 2]
+// Dependencies: [32, 19, 17, 1386, 9526, 21, 4794, 575, 9528, 1254, 9533, 4801, 1112, 9534, 9536, 9974, 9539, 7660, 2]
 // Exports: default
 
 // Module 9527 (SearchableUserList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1113 */;
-import GlobalUtils from "GlobalUtils" /* 1255 */;
-import shared from "shared" /* 4799 */;
+import intl2 from "intl" /* 1112 */;
+import GlobalUtils from "GlobalUtils" /* 1254 */;
+import shared from "shared" /* 4801 */;
 import UserRowConstants from "UserRowConstants" /* 9526 */;
 import makeUserListPillDataDefault from "makeUserListPillData" /* 9533 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1388 */;
+import UserStore from "UserStore" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -29,7 +29,7 @@ const View = react_native.View;
 const UserRowModes = UserRowConstants.UserRowModes;
 ({ jsx: metroImportAll, Fragment: c9, jsxs: c10 } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { searchBarContainer: obj2, searchBar: { height: "ip", minHeight: false }, searchBarRowContainer: obj3, noResults: obj4 };
+let obj = { searchBarContainer: obj2, searchBar: { height: "disabled", minHeight: false }, searchBarRowContainer: obj3, noResults: obj4 };
 obj2 = { paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_8, backgroundColor: nativeDefault.colors.MOBILE_ACTIONSHEET_BACKGROUND };
 createStyles = createStyles.createStyles;
 obj3 = { paddingTop: nativeDefault.space.PX_8 };

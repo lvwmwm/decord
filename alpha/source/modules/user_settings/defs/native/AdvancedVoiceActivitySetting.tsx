@@ -1,15 +1,15 @@
-// Module ID: 16718
-// Function ID: 16719
+// Module ID: 16542
+// Function ID: 16543
 // Name: AdvancedVoiceActivitySetting
-// Dependencies: [2133, 8593, 504, 5688, 1113, 11875, 2]
+// Dependencies: [2131, 8592, 504, 5690, 1112, 11817, 2]
 
-// Module 16718 (AdvancedVoiceActivitySetting)
+// Module 16542 (AdvancedVoiceActivitySetting)
 import get_initialized from "get initialized" /* 504 */;
-import intl2 from "intl" /* 1113 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 5688 */;
-import SettingsConstants from "SettingsConstants" /* 8593 */;
-import MediaEngineStore from "MediaEngineStore" /* 2133 */;
-import SettingBuilders from "SettingBuilders" /* 11875 */;
+import intl2 from "intl" /* 1112 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 5690 */;
+import SettingsConstants from "SettingsConstants" /* 8592 */;
+import MediaEngineStore from "MediaEngineStore" /* 2131 */;
+import SettingBuilders from "SettingBuilders" /* 11817 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

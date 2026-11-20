@@ -1,36 +1,36 @@
 // Module ID: 9543
 // Function ID: 9544
 // Name: CallsUtils
-// Dependencies: [32, 5, 19, 17, 6279, 4641, 2133, 4695, 5440, 5553, 9544, 6375, 9546, 5740, 1113, 7676, 5688, 5722, 2020, 6373, 6408, 12, 9547, 9548, 9549, 1380, 504, 9550, 9545, 10898, 5554, 2]
+// Dependencies: [32, 5, 19, 17, 6281, 4643, 2131, 4697, 5442, 5555, 9544, 6377, 9546, 5742, 1112, 7675, 5690, 5724, 2018, 6375, 6410, 12, 9547, 9548, 9549, 1378, 504, 9550, 9545, 10840, 5556, 2]
 // Exports: getAudioDeviceToDisplayText, handleDisconnect, handleToggleSelfDeaf, handleToggleSelfMute, handleToggleVideo, showCameraDisabledAlert, showMinOSScreenshareRequirementAlert, showScreenshareDisabledAlert, showServerDeafenAlert, showServerMuteAlert, showSuppressedAlert, showTabletRequirementAlert, useImmediateMaskedSpeakerStates
 
 // Module 9543 (CallsUtils)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
-import intl7 from "intl" /* 1113 */;
-import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 2020 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 5688 */;
-import AVError from "AVError" /* 5722 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5740 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 6373 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 6375 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6408 */;
+import intl7 from "intl" /* 1112 */;
+import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 2018 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 5690 */;
+import AVError from "AVError" /* 5724 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5742 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 6375 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 6377 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6410 */;
 import AssetRegistryDefault from "AssetRegistry" /* 9547 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 9548 */;
 import AssetRegistryDefault3 from "AssetRegistry" /* 9549 */;
-import useIsVideoModeDefault from "useIsVideoMode" /* 10898 */;
+import useIsVideoModeDefault from "useIsVideoMode" /* 10840 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6279 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import MediaEngineStore from "MediaEngineStore" /* 2133 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4695 */;
-import VoiceStateStore from "VoiceStateStore" /* 5440 */;
-import AudioRouteStore from "AudioRouteStore" /* 5553 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6281 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import MediaEngineStore from "MediaEngineStore" /* 2131 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4697 */;
+import VoiceStateStore from "VoiceStateStore" /* 5442 */;
+import AudioRouteStore from "AudioRouteStore" /* 5555 */;
 import AudioManagerStore from "AudioManagerStore" /* 9544 */;
 import module_12_mod from "module_12" /* 12 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -269,8 +269,8 @@ export function showMinOSScreenshareRequirementAlert() {
   const obj2 = { title: intl2.string(intl7.t.oblMYa), body: "" + intl3.string(intl7.t.Wnhd3q) + "\n\n" + formatToPlainStringResult, hideActionSheet: false };
   const show = actions_AlertActionCreatorsDefault.show;
   actions_AlertActionCreatorsDefault;
-  intl2 = tmp(1113).intl;
-  intl3 = tmp(1113).intl;
+  intl2 = tmp(1112).intl;
+  intl3 = tmp(1112).intl;
   show(obj2);
 }
 export function showTabletRequirementAlert() {
@@ -307,8 +307,8 @@ export function getAudioDeviceToDisplayText(deviceType) {
   intl4 = intl7.intl;
   intl5 = intl7.intl;
   if (deviceType.deviceType === constants.TYPE_BLE_HEADSET) {
-    const intl6 = tmp(1113).intl;
-    stringResult = intl6.string(tmp(1113).t.BtXSp9);
+    const intl6 = tmp(1112).intl;
+    stringResult = intl6.string(tmp(1112).t.BtXSp9);
   } else {
     stringResult = obj[deviceType.simpleDeviceType];
   }

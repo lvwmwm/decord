@@ -1,10 +1,10 @@
-// Module ID: 19088
-// Function ID: 19089
+// Module ID: 18907
+// Function ID: 18908
 // Name: ActivityPanelNativeConstants
-// Dependencies: [5418, 2]
+// Dependencies: [5420, 2]
 
-// Module 19088 (ActivityPanelNativeConstants)
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5418 */;
+// Module 18907 (ActivityPanelNativeConstants)
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5420 */;
 import size from "module_2" /* 2 */;
 
 const obj = { top: { disable: false, override: ActivityPanelConstants.ACTIVITY_PANEL_PORTRAIT_HEADER_HEIGHT } };

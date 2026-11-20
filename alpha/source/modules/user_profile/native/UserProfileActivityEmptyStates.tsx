@@ -1,23 +1,23 @@
-// Module ID: 14495
-// Function ID: 14496
+// Module ID: 14463
+// Function ID: 14464
 // Name: UserProfileActivityEmptyStates
-// Dependencies: [32, 19, 17, 1072, 21, 1113, 4792, 575, 5383, 5822, 12, 7618, 5006, 5390, 8075, 2]
+// Dependencies: [32, 19, 17, 1071, 21, 1112, 4794, 575, 5385, 5824, 12, 7617, 5008, 5392, 8074, 2]
 
-// Module 14495 (UserProfileActivityEmptyStates)
+// Module 14463 (UserProfileActivityEmptyStates)
 import _mod12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import intl4 from "intl" /* 1113 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import components_Button_Button from "components/Button/Button" /* 5390 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7618 */;
-import openUserSettings from "openUserSettings" /* 8075 */;
+import Constants from "Constants" /* 1071 */;
+import intl4 from "intl" /* 1112 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5008 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import components_Button_Button from "components/Button/Button" /* 5392 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7617 */;
+import openUserSettings from "openUserSettings" /* 8074 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -130,11 +130,11 @@ const memoResult = react.memo(function UserProfileActivityEmptyOtherUser(user) {
   let name;
   ({ guildId, channelId } = user);
   let tmp = closure_10();
-  let obj = name(5822);
+  let obj = name(5824);
   name = obj.getName(guildId, channelId, user);
-  const intl = user(1113).intl;
+  const intl = user(1112).intl;
   items = [user.id];
-  const formatToPlainStringResult = intl.formatToPlainString(user(1113).t.sjSitP, { name });
+  const formatToPlainStringResult = intl.formatToPlainString(user(1112).t.sjSitP, { name });
   let obj2 = {
     heading: formatToPlainStringResult,
     bodyText: _slicedToArray(react.useState(() => {
@@ -156,9 +156,9 @@ const memoResult = react.memo(function UserProfileActivityEmptyOtherUser(user) {
     const obj3 = ActionSheetActionCreatorsDefault;
     obj3.hideAllActionSheets();
   }, items);
-  obj4 = { size: "sm", variant: "secondary", text: intl2.string(user(1113).t["g33r/P"]), onPress: callback };
-  Button = user(5390).Button;
-  intl2 = user(1113).intl;
+  obj4 = { size: "sm", variant: "secondary", text: intl2.string(user(1112).t["g33r/P"]), onPress: callback };
+  Button = user(5392).Button;
+  intl2 = user(1112).intl;
   return closure_7(EmptyState, obj2);
 });
 const memoResult1 = react.memo(function UserProfileActivityEmptyCurrentUser() {

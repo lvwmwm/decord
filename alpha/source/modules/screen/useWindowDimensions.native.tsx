@@ -1,13 +1,13 @@
-// Module ID: 1496
-// Function ID: 1497
+// Module ID: 1494
+// Function ID: 1495
 // Name: useWindowDimensions
-// Dependencies: [19, 1497, 1499, 2]
+// Dependencies: [19, 1495, 1497, 2]
 // Exports: default, getWindowDimensions
 
-// Module 1496 (useWindowDimensions)
-import AppEntryKeyContext from "AppEntryKeyContext" /* 1499 */;
+// Module 1494 (useWindowDimensions)
+import AppEntryKeyContext from "AppEntryKeyContext" /* 1497 */;
 import react from "react" /* 19 */;
-import DimensionsStore from "DimensionsStore" /* 1497 */;
+import DimensionsStore from "DimensionsStore" /* 1495 */;
 import size from "module_2" /* 2 */;
 
 let closure_4 = { ignoreKeyboard: false };

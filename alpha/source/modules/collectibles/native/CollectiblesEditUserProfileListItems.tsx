@@ -1,30 +1,30 @@
-// Module ID: 14172
-// Function ID: 14173
+// Module ID: 14141
+// Function ID: 14142
 // Name: CollectiblesEditUserProfileListItems
-// Dependencies: [19, 17, 1388, 1074, 21, 4792, 575, 6911, 5008, 5009, 1187, 14173, 5383, 1113, 7401, 7955, 5006, 14174, 8829, 504, 2174, 8795, 7968, 2]
+// Dependencies: [19, 17, 1386, 1073, 21, 4794, 575, 6910, 5010, 5011, 1186, 14142, 5385, 1112, 7400, 7954, 5008, 14143, 8829, 504, 2172, 8795, 7967, 2]
 // Exports: EditCollectiblesListItemNone, EditCollectiblesListItemProduct, EditCollectiblesListItemShop
 
-// Module 14172 (CollectiblesEditUserProfileListItems)
+// Module 14141 (CollectiblesEditUserProfileListItems)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
-import intl2 from "intl" /* 1113 */;
-import native from "native" /* 1187 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2174 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
-import HapticUtils from "HapticUtils" /* 5008 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5009 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import Pressables from "Pressables" /* 6911 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7955 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7968 */;
+import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1073 */;
+import intl2 from "intl" /* 1112 */;
+import native from "native" /* 1186 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2172 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5008 */;
+import HapticUtils from "HapticUtils" /* 5010 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5011 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import Pressables from "Pressables" /* 6910 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7954 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 7967 */;
 import useCollectiblesDataDefault from "useCollectiblesData" /* 8795 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14173 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14142 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1388 */;
+import UserStore from "UserStore" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -123,7 +123,7 @@ export function EditCollectiblesListItemShop(analyticsSource) {
   const merged = Object.assign(analyticsSource, Object.assign({ analyticsSource: 0 }));
   let analyticsLocations;
   const tmp2 = closure_9();
-  analyticsLocations = analyticsLocations(7401)(analyticsSource).analyticsLocations;
+  analyticsLocations = analyticsLocations(7400)(analyticsSource).analyticsLocations;
   const items = [analyticsLocations, analyticsSource];
   let obj = {
     style: tmp2.optionCell,
@@ -138,12 +138,12 @@ export function EditCollectiblesListItemShop(analyticsSource) {
     children: items1
   };
   const merged1 = Object.assign(merged);
-  let obj2 = { source: analyticsLocations(14174), size: analyticsSource(1187).IconSizes.LARGE };
-  const Icon = analyticsSource(1187).Icon;
+  let obj2 = { source: analyticsLocations(14143), size: analyticsSource(1186).IconSizes.LARGE };
+  const Icon = analyticsSource(1186).Icon;
   items1 = [closure_7(Icon, obj2), , ];
-  let obj3 = { variant: "body-sm/medium", color: "mobile-text-heading-primary", style: tmp2.optionCellText, children: intl.string(analyticsSource(1113).t.pWG4ze) };
-  const Text = analyticsSource(5383).Text;
-  intl = analyticsSource(1113).intl;
+  let obj3 = { variant: "body-sm/medium", color: "mobile-text-heading-primary", style: tmp2.optionCellText, children: intl.string(analyticsSource(1112).t.pWG4ze) };
+  const Text = analyticsSource(5385).Text;
+  intl = analyticsSource(1112).intl;
   items1[1] = closure_7(Text, obj3);
   const obj4 = { style: tmp2.newIcon };
   items1[2] = closure_7(analyticsSource(8829).NewBadge, obj4);

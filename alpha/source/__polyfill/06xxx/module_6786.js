@@ -10997,12 +10997,12 @@ let fn = () => {
           const tmp21 = str + found.join("/") || ".";
           return tmp21;
         };
-        closure_0.normalize = (path) => {
+        closure_0.normalize = (str) => {
           let found;
           let tmp15;
-          const isAbsoluteResult = closure_0.isAbsolute(path);
-          const tmp2 = closure_2(path, -1);
-          const parts = path.split("/");
+          const isAbsoluteResult = closure_0.isAbsolute(str);
+          const tmp2 = closure_2(str, -1);
+          const parts = str.split("/");
           if (parts.filter) {
             found = parts.filter((item) => item);
           } else {
@@ -11054,7 +11054,7 @@ let fn = () => {
               } while (tmp15);
             }
           }
-          let str = found.join("/");
+          str = found.join("/");
           const tmp16 = str || isAbsoluteResult;
           if (!tmp16) {
             str = ".";
@@ -20262,7 +20262,7 @@ let fn = () => {
               isIntegerResult = arg0 >= 0;
             }
             assertResult = assert(isIntegerResult, "limit must be a positive integer");
-            return this._test("min", arg0, function() { /* body not rendered: F143229 */ });
+            return this._test("min", arg0, function() { /* body not rendered: F141075 */ });
           }
           max(arg0) {
             closure_0 = arg0;
@@ -20274,7 +20274,7 @@ let fn = () => {
               isIntegerResult = arg0 >= 0;
             }
             assertResult = assert(isIntegerResult, "limit must be a positive integer");
-            return this._test("max", arg0, function() { /* body not rendered: F143230 */ });
+            return this._test("max", arg0, function() { /* body not rendered: F141076 */ });
           }
           length(arg0) {
             closure_0 = arg0;
@@ -20286,7 +20286,7 @@ let fn = () => {
               isIntegerResult = arg0 >= 0;
             }
             assertResult = assert(isIntegerResult, "limit must be a positive integer");
-            return this._test("length", arg0, function() { /* body not rendered: F143231 */ });
+            return this._test("length", arg0, function() { /* body not rendered: F141077 */ });
           }
         }
         if (typeof tmp !== "function") {

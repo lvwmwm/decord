@@ -1,34 +1,34 @@
-// Module ID: 10678
-// Function ID: 10679
+// Module ID: 10620
+// Function ID: 10621
 // Name: UserTile
-// Dependencies: [32, 19, 17, 5840, 10679, 502, 4641, 2133, 1072, 5442, 5537, 21, 4792, 575, 4789, 504, 8085, 1187, 10704, 5383, 1113, 10665, 10667, 10705, 10706, 10707, 10708, 9557, 6509, 10677, 10709, 10652, 10655, 5052, 10710, 2]
+// Dependencies: [32, 19, 17, 5842, 10621, 502, 4643, 2131, 1071, 5444, 5539, 21, 4794, 575, 4791, 504, 8084, 1186, 10646, 5385, 1112, 10607, 10609, 10647, 10648, 10649, 10650, 9557, 6511, 10619, 10651, 10594, 10597, 5054, 10652, 2]
 // Exports: default
 
-// Module 10678 (UserTile)
+// Module 10620 (UserTile)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import intl2 from "intl" /* 1113 */;
-import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import CallConstants from "CallConstants" /* 5442 */;
-import Constants2 from "Constants" /* 5537 */;
-import VoiceChannelEffectsStore2 from "VoiceChannelEffectsStore" /* 10679 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10704 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 10705 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 10706 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 10707 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 10708 */;
-import mediaEngineContextFromParticipantTypeDefault from "mediaEngineContextFromParticipantType" /* 10709 */;
+import Constants from "Constants" /* 1071 */;
+import intl2 from "intl" /* 1112 */;
+import native from "native" /* 1186 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import CallConstants from "CallConstants" /* 5444 */;
+import Constants2 from "Constants" /* 5539 */;
+import VoiceChannelEffectsStore2 from "VoiceChannelEffectsStore" /* 10621 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10646 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 10647 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 10648 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 10649 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 10650 */;
+import mediaEngineContextFromParticipantTypeDefault from "mediaEngineContextFromParticipantType" /* 10651 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import SoundboardStore from "SoundboardStore" /* 5840 */;
+import SoundboardStore from "SoundboardStore" /* 5842 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import MediaEngineStore from "MediaEngineStore" /* 2133 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import MediaEngineStore from "MediaEngineStore" /* 2131 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
-import ColorUtils_mod from "ColorUtils" /* 4789 */;
+import createStyles_mod from "createStyles" /* 4794 */;
+import ColorUtils_mod from "ColorUtils" /* 4791 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -198,8 +198,8 @@ let closure_20 = react.memo(function VoiceStatus(userId) {
     if (tmp5) {
       const obj2 = { style: items2, children: closure_15(Icon, obj3) };
       items2 = [tmp.statusWrapper, style];
-      obj3 = { source: AssetRegistryDefault5, size: userId(1187).Icon.Sizes.SMALL, disableColor: true };
-      Icon = tmp2(1187).Icon;
+      obj3 = { source: AssetRegistryDefault5, size: userId(1186).Icon.Sizes.SMALL, disableColor: true };
+      Icon = tmp2(1186).Icon;
       tmp15 = closure_15(View, obj2);
     }
     const items3 = [tmp15, ];
@@ -213,8 +213,8 @@ let closure_20 = react.memo(function VoiceStatus(userId) {
       }
       items4[2] = obj4;
       const obj5 = { style: items4, children: closure_15(Icon2, obj6) };
-      obj6 = { source: tmp7, size: userId(1187).Icon.Sizes.SMALL, color: nativeDefault.unsafe_rawColors.WHITE, disableColor: tmp7 === AssetRegistryDefault2 };
-      Icon2 = tmp2(1187).Icon;
+      obj6 = { source: tmp7, size: userId(1186).Icon.Sizes.SMALL, color: nativeDefault.unsafe_rawColors.WHITE, disableColor: tmp7 === AssetRegistryDefault2 };
+      Icon2 = tmp2(1186).Icon;
       tmp20Result = tmp20(tmp21, obj5);
     }
     const obj7 = { children: items3 };

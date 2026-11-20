@@ -1,13 +1,13 @@
-// Module ID: 16179
-// Function ID: 16180
+// Module ID: 16143
+// Function ID: 16144
 // Name: AuthSessionsActionCreators
-// Dependencies: [5, 1072, 1285, 572, 2]
+// Dependencies: [5, 1071, 1284, 572, 2]
 // Exports: clearAuthSessions, fetchAuthSessions, logOutSessions
 
-// Module 16179 (AuthSessionsActionCreators)
+// Module 16143 (AuthSessionsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import Constants from "Constants" /* 1072 */;
-import HTTPUtils from "HTTPUtils" /* 1285 */;
+import Constants from "Constants" /* 1071 */;
+import HTTPUtils from "HTTPUtils" /* 1284 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -49,7 +49,7 @@ obj = function _logOutSessions() {
       items = arr2;
       if (0 === length.length) {
         let c4 = 3;
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       items = [length];

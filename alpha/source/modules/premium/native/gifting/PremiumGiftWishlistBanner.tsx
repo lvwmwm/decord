@@ -1,24 +1,24 @@
 // Module ID: 9424
 // Function ID: 9425
 // Name: PremiumGiftWishlistBanner
-// Dependencies: [5, 19, 17, 6729, 1390, 1072, 1074, 7950, 21, 575, 4792, 9425, 8862, 9464, 9468, 7401, 7420, 1256, 7948, 9359, 9469, 4969, 5474, 1113, 7955, 13817, 4848, 5383, 13843, 13848, 2]
+// Dependencies: [5, 19, 17, 6729, 1388, 1071, 1073, 7949, 21, 575, 4794, 9425, 8862, 9464, 9468, 7400, 7419, 1255, 7947, 9359, 9469, 4971, 5476, 1112, 7954, 13786, 4850, 5385, 13812, 13817, 2]
 // Exports: PremiumGiftWishlistBanner
 
 // Module 9424 (PremiumGiftWishlistBanner)
 import nativeDefault from "native" /* 575 */;
-import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1073 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import WishlistRecommendationRecord from "WishlistRecommendationRecord" /* 6729 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7948 */;
-import Constants2 from "Constants" /* 7950 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7947 */;
+import Constants2 from "Constants" /* 7949 */;
 import WishlistBannerUtils from "WishlistBannerUtils" /* 9468 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import PremiumConstants from "PremiumConstants" /* 1390 */;
-import Constants from "Constants" /* 1072 */;
+import PremiumConstants from "PremiumConstants" /* 1388 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let set, sku;
@@ -155,7 +155,7 @@ export function PremiumGiftWishlistBanner(giftRecipient) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -230,7 +230,7 @@ export function PremiumGiftWishlistBanner(giftRecipient) {
             return { value, done: true };
           }
           c2 = 3;
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp23) {
           c2 = 3;
           throw tmp23;

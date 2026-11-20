@@ -1,15 +1,15 @@
-// Module ID: 14548
-// Function ID: 14549
+// Module ID: 14516
+// Function ID: 14517
 // Name: usePrivateChannelCall
-// Dependencies: [5, 19, 4641, 504, 1113, 9542, 7618, 2]
+// Dependencies: [5, 19, 4643, 504, 1112, 9542, 7617, 2]
 // Exports: default
 
-// Module 14548 (usePrivateChannelCall)
-import intl3 from "intl" /* 1113 */;
+// Module 14516 (usePrivateChannelCall)
+import intl3 from "intl" /* 1112 */;
 import getPrivateChannelCallDefault from "getPrivateChannelCall" /* 9542 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -51,9 +51,9 @@ export default function usePrivateChannelCall(arg0, arg1, arg2) {
       tmp10 = tmp6;
     }
     const obj3 = { text: stringResult, accessibilityHint: string2Result, inCall: false };
-    const intl2 = tmp10(1113).intl;
+    const intl2 = tmp10(1112).intl;
     const string2 = intl2.string;
-    const t2 = tmp10(1113).t;
+    const t2 = tmp10(1112).t;
     if (closure_1) {
       string2Result = string2(t2.oCqlGG);
     } else {
@@ -76,7 +76,7 @@ export default function usePrivateChannelCall(arg0, arg1, arg2) {
           const obj5 = { value, done: true };
           return obj5;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -128,7 +128,7 @@ export default function usePrivateChannelCall(arg0, arg1, arg2) {
             closure_129_2();
           }
           c3 = 3;
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp24) {
           c3 = 3;
           throw tmp24;

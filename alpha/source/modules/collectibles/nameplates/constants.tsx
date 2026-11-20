@@ -1,10 +1,10 @@
-// Module ID: 2115
-// Function ID: 2116
+// Module ID: 2113
+// Function ID: 2114
 // Name: nameplates/constants
-// Dependencies: [2116, 2]
+// Dependencies: [2114, 2]
 
-// Module 2115 (nameplates/constants)
-import types from "types" /* 2116 */;
+// Module 2113 (nameplates/constants)
+import types from "types" /* 2114 */;
 import size from "module_2" /* 2 */;
 
 const obj = {};

@@ -1,21 +1,21 @@
-// Module ID: 16502
-// Function ID: 16503
+// Module ID: 16324
+// Function ID: 16325
 // Name: OrbsArcadePlayButton
-// Dependencies: [19, 17, 9834, 16478, 21, 4792, 1113, 8838, 575, 5383, 5396, 7401, 16503, 504, 16504, 16488, 5006, 16505, 16485, 5390, 16506, 5391, 2]
+// Dependencies: [19, 17, 9836, 16300, 21, 4794, 1112, 8838, 575, 5385, 5398, 7400, 16325, 504, 16326, 16310, 5008, 16327, 16301, 5392, 16328, 5393, 2]
 // Exports: default
 
-// Module 16502 (OrbsArcadePlayButton)
+// Module 16324 (OrbsArcadePlayButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import ButtonConstants from "ButtonConstants" /* 5396 */;
-import QuestHomeNavigationStore2 from "QuestHomeNavigationStore" /* 9834 */;
-import OrbsArcadeAnalytics from "OrbsArcadeAnalytics" /* 16488 */;
-import launchOrbsArcadeGameDefault from "launchOrbsArcadeGame" /* 16505 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5008 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import ButtonConstants from "ButtonConstants" /* 5398 */;
+import QuestHomeNavigationStore2 from "QuestHomeNavigationStore" /* 9836 */;
+import OrbsArcadeAnalytics from "OrbsArcadeAnalytics" /* 16310 */;
+import launchOrbsArcadeGameDefault from "launchOrbsArcadeGame" /* 16327 */;
 import react from "react" /* 19 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 16478 */;
-import createStyles from "createStyles" /* 4792 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 16300 */;
+import createStyles from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 const QuestHomeNavigationStore = QuestHomeNavigationStore2;
@@ -25,7 +25,7 @@ function OrbsArcadePaidPlayLabel(size) {
   const orbCost = size.orbCost;
   const tmp = closure_9();
   let closure_1 = tmp;
-  const intl = size(1113).intl;
+  const intl = size(1112).intl;
   const obj = {
     count: orbCost,
     orbIconHook() {
@@ -33,7 +33,7 @@ function OrbsArcadePaidPlayLabel(size) {
       return <OrbsIcon key="orbs-icon" size="xs" color={closure_1(dependencyMap[8]).colors.CONTROL_PRIMARY_TEXT_DEFAULT} />;
     }
   };
-  const formatResult = intl.format(size(1113).t.oSWYca, obj);
+  const formatResult = intl.format(size(1112).t.oSWYca, obj);
   let arr = formatResult;
   if (!Array.isArray(formatResult)) {
     const items = [formatResult];

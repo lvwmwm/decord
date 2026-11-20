@@ -1,25 +1,25 @@
-// Module ID: 17281
-// Function ID: 17282
+// Module ID: 17108
+// Function ID: 17109
 // Name: UserSettingsDesignSystemToast
-// Dependencies: [19, 17, 21, 4792, 575, 6928, 5808, 5383, 5390, 5475, 5474, 5496, 5492, 4742, 15186, 2]
+// Dependencies: [19, 17, 21, 4794, 575, 6927, 5810, 5385, 5392, 5477, 5476, 5498, 5494, 4744, 15150, 2]
 // Exports: default
 
-// Module 17281 (UserSettingsDesignSystemToast)
+// Module 17108 (UserSettingsDesignSystemToast)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import EmojiUtils from "EmojiUtils" /* 4742 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import components_Button_Button from "components/Button/Button" /* 5390 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5474 */;
-import toastUtils from "toastUtils" /* 5475 */;
-import CopyIcon from "CopyIcon" /* 5492 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5496 */;
-import Stack_Stack from "Stack/Stack" /* 5808 */;
-import Card_Card from "Card/Card" /* 6928 */;
-import Toast4 from "Toast" /* 15186 */;
+import EmojiUtils from "EmojiUtils" /* 4744 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import components_Button_Button from "components/Button/Button" /* 5392 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5476 */;
+import toastUtils from "toastUtils" /* 5477 */;
+import CopyIcon from "CopyIcon" /* 5494 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5498 */;
+import Stack_Stack from "Stack/Stack" /* 5810 */;
+import Card_Card from "Card/Card" /* 6927 */;
+import Toast4 from "Toast" /* 15150 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let currentToastMap, queuedToastsMap;

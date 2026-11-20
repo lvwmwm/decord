@@ -1,11 +1,11 @@
-// Module ID: 11156
-// Function ID: 11157
+// Module ID: 11098
+// Function ID: 11099
 // Name: buildFavoritesSectionButtons
-// Dependencies: [5, 11157, 2121, 1113, 3701, 9888, 9886, 2]
+// Dependencies: [5, 11099, 2119, 1112, 3703, 9891, 9889, 2]
 // Exports: default
 
-// Module 11156 (buildFavoritesSectionButtons)
-import _modDef3701 from "module_3701" /* 3701 */;
+// Module 11098 (buildFavoritesSectionButtons)
+import _modDef3703 from "module_3703" /* 3703 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ let obj = function _addChannelToFavorites() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -59,7 +59,7 @@ let obj = function _addChannelToFavorites() {
           items = [closure_0];
           value.addFavoriteChannels(obj);
           c3 = 3;
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp11) {
         c3 = 3;
@@ -83,7 +83,7 @@ obj = function _removeChannelFromFavorites() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -113,7 +113,7 @@ obj = function _removeChannelFromFavorites() {
         } else {
           const result = value.removeFavoriteChannel(closure_0);
           c3 = 3;
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp11) {
         c3 = 3;
@@ -134,8 +134,8 @@ export default function buildFavoritesSectionButtons(channelId) {
     let tmp3;
     if (channelId.isChannelInFavorites) {
       const obj2 = {
-        label: intl2.string(_modDef3701.TN4nAX),
-        IconComponent: channelId(9888).StarIcon,
+        label: intl2.string(_modDef3703.TN4nAX),
+        IconComponent: channelId(9891).StarIcon,
         isDestructive: true,
         onPress() {
               function removeChannelFromFavorites() {
@@ -144,14 +144,14 @@ export default function buildFavoritesSectionButtons(channelId) {
               return removeChannelFromFavorites(channelId);
             }
       };
-      intl2 = channelId(1113).intl;
+      intl2 = channelId(1112).intl;
       tmp3 = obj2;
     } else {
       tmp3 = null;
       if (!tmp) {
         obj = {
-          label: intl.string(_modDef3701.G9fGlP),
-          IconComponent: channelId(9886).StarOutlineIcon,
+          label: intl.string(_modDef3703.G9fGlP),
+          IconComponent: channelId(9889).StarOutlineIcon,
           onPress() {
                   function addChannelToFavorites() {
                     return closure_1_4(...arguments);
@@ -159,7 +159,7 @@ export default function buildFavoritesSectionButtons(channelId) {
                   return addChannelToFavorites(channelId);
                 }
         };
-        intl = channelId(1113).intl;
+        intl = channelId(1112).intl;
         tmp3 = obj;
       }
     }

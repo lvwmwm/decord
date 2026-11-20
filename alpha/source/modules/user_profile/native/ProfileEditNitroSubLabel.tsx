@@ -1,17 +1,17 @@
-// Module ID: 15751
-// Function ID: 15752
+// Module ID: 15715
+// Function ID: 15716
 // Name: ProfileEditNitroSubLabel
-// Dependencies: [19, 17, 21, 4792, 575, 8832, 5383, 2]
+// Dependencies: [19, 17, 21, 4794, 575, 8832, 5385, 2]
 // Exports: default
 
-// Module 15751 (ProfileEditNitroSubLabel)
+// Module 15715 (ProfileEditNitroSubLabel)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5383 */;
+import Text_Text from "Text/Text" /* 5385 */;
 import NitroWheelIcon2 from "NitroWheelIcon" /* 8832 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

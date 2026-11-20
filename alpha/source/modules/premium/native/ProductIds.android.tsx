@@ -1,12 +1,12 @@
-// Module ID: 8051
-// Function ID: 8052
+// Module ID: 8050
+// Function ID: 8051
 // Name: ProductIds
-// Dependencies: [1390, 1627, 2]
+// Dependencies: [1388, 1625, 2]
 // Exports: getPlanIdForGift, getProductIdForGift
 
-// Module 8051 (ProductIds)
-import PremiumConstants from "PremiumConstants" /* 1390 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1627 */;
+// Module 8050 (ProductIds)
+import PremiumConstants from "PremiumConstants" /* 1388 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1625 */;
 import size from "module_2" /* 2 */;
 
 let PREMIUM_TIER_0_LIKELIHOOD_TRIAL_ID;

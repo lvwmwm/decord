@@ -1,13 +1,13 @@
-// Module ID: 17001
-// Function ID: 17002
+// Module ID: 16825
+// Function ID: 16826
 // Name: DeveloperModeSetting
-// Dependencies: [8593, 11875, 1113, 4617, 2]
+// Dependencies: [8592, 11817, 1112, 4619, 2]
 
-// Module 17001 (DeveloperModeSetting)
-import intl2 from "intl" /* 1113 */;
-import UserSettings from "UserSettings" /* 4617 */;
-import SettingsConstants from "SettingsConstants" /* 8593 */;
-import SettingBuilders from "SettingBuilders" /* 11875 */;
+// Module 16825 (DeveloperModeSetting)
+import intl2 from "intl" /* 1112 */;
+import UserSettings from "UserSettings" /* 4619 */;
+import SettingsConstants from "SettingsConstants" /* 8592 */;
+import SettingBuilders from "SettingBuilders" /* 11817 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

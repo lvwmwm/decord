@@ -1,21 +1,21 @@
-// Module ID: 1449
-// Function ID: 1450
+// Module ID: 1447
+// Function ID: 1448
 // Name: ImageLoaderUtils
-// Dependencies: [32, 5, 1072, 1450, 1456, 559, 1480, 1490, 1381, 1493, 1451, 2024, 12, 2]
+// Dependencies: [32, 5, 1071, 1448, 1454, 559, 1478, 1488, 1379, 1491, 1449, 2022, 12, 2]
 // Exports: getBestMediaProxySize, getImageSrc, isImageLoaded, loadImage
 
-// Module 1449 (ImageLoaderUtils)
+// Module 1447 (ImageLoaderUtils)
 import _modDef12 from "module_12" /* 12 */;
-import URLUtilsDefault from "URLUtils" /* 1381 */;
-import AttachmentImageLadderExperiment from "AttachmentImageLadderExperiment" /* 1450 */;
-import AttachmentImageLadder from "AttachmentImageLadder" /* 1451 */;
-import LRUCacheDefault from "LRUCache" /* 1456 */;
-import _modDef1490 from "module_1490" /* 1490 */;
-import ImageUtils from "ImageUtils" /* 1493 */;
-import react_nativeDefault from "react-native" /* 2024 */;
+import URLUtilsDefault from "URLUtils" /* 1379 */;
+import AttachmentImageLadderExperiment from "AttachmentImageLadderExperiment" /* 1448 */;
+import AttachmentImageLadder from "AttachmentImageLadder" /* 1449 */;
+import LRUCacheDefault from "LRUCache" /* 1454 */;
+import _modDef1488 from "module_1488" /* 1488 */;
+import ImageUtils from "ImageUtils" /* 1491 */;
+import react_nativeDefault from "react-native" /* 2022 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants from "Constants" /* 1072 */;
+import Constants from "Constants" /* 1071 */;
 import size_mod from "module_2" /* 2 */;
 
 let c3, set;
@@ -80,7 +80,7 @@ function getSrcWithWidthAndHeight(quality) {
     if (!obj.isDiscordCdnUrl(src)) {
       let tmp5 = _slicedToArray(src.split("?"), 2);
       [tmp6, tmp7] = tmp5;
-      const tmp2Result = _modDef1490;
+      const tmp2Result = _modDef1488;
       const parsed = tmp2Result.parse(tmp7);
       delete tmp8[""];
       const items = [tmp6, parsed];
@@ -128,7 +128,7 @@ function getSrcWithWidthAndHeight(quality) {
       let text = tmp10;
       const tmp2Result3 = _modDef12;
       if (!tmp2Result3.isEmpty(tmp11)) {
-        _modDef1490;
+        _modDef1488;
         text = `${tmp10}?${obj8.stringify(tmp11)}`;
       }
       return text;
@@ -152,7 +152,7 @@ export function isImageLoaded(arg0) {
 }
 export function loadImage(url, bind) {
   let image;
-  const f122869 = async (arg0, value) => {
+  const f120829 = async (arg0, value) => {
     let c2;
     let closure_1;
     let tmp;
@@ -176,7 +176,7 @@ export function loadImage(url, bind) {
           let obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -225,7 +225,7 @@ export function loadImage(url, bind) {
                 let tmp12 = backoff;
                 let tmp13 = tmp;
                 let tmp14 = closure_129_2;
-                let failResult = closure_129_2.fail(f141707);
+                let failResult = closure_129_2.fail(f139559);
               } else {
                 let tmp7 = tmp;
                 let tmp8 = closure_1_11;
@@ -236,7 +236,7 @@ export function loadImage(url, bind) {
               }
               let num4 = 3;
               c3 = 3;
-              return { value: "HermesInternal", done: "+60" };
+              return { value: "HermesInternal", done: null };
             }
           }
         } catch (tmp18) {
@@ -255,7 +255,7 @@ export function loadImage(url, bind) {
     let fn;
     if (value.loaded) {
       if (null != bind) {
-        const obj2 = image(1480);
+        const obj2 = image(1478);
         const awaitOnlineResult = obj2.awaitOnline();
         awaitOnlineResult.then(() => {
           let url;
@@ -293,7 +293,7 @@ export function loadImage(url, bind) {
       obj3.backoff = tmp4;
     }
     backoff = obj3.backoff;
-    image.onerror = _asyncToGenerator(f122869);
+    image.onerror = _asyncToGenerator(f120829);
     image.onload = () => {
       let callbacks;
       let url;

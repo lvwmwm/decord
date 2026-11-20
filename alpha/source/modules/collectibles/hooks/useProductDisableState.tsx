@@ -1,13 +1,13 @@
 // Module ID: 9460
 // Function ID: 9461
 // Name: useProductDisableState
-// Dependencies: [2179, 504, 1075, 1113, 2]
+// Dependencies: [2177, 504, 1074, 1112, 2]
 // Exports: useProductDisableState
 
 // Module 9460 (useProductDisableState)
 import get_initialized from "get initialized" /* 504 */;
-import FractionalPremiumSKUs from "FractionalPremiumSKUs" /* 1075 */;
-import SubscriptionStore from "SubscriptionStore" /* 2179 */;
+import FractionalPremiumSKUs from "FractionalPremiumSKUs" /* 1074 */;
+import SubscriptionStore from "SubscriptionStore" /* 2177 */;
 import size from "module_2" /* 2 */;
 
 let premiumSubscription;
@@ -32,8 +32,8 @@ export function useProductDisableState(skuId) {
     const obj2 = { isDisabled: stateFromStores, disabledReason: stringResult };
     stringResult = null;
     if (stateFromStores) {
-      const intl = tmp(1113).intl;
-      stringResult = intl.string(tmp(1113).t.NbveHD);
+      const intl = tmp(1112).intl;
+      stringResult = intl.string(tmp(1112).t.NbveHD);
     }
     obj3 = obj2;
   } else {

@@ -1,17 +1,17 @@
-// Module ID: 7214
-// Function ID: 7215
+// Module ID: 7213
+// Function ID: 7214
 // Name: TermsField
-// Dependencies: [19, 17, 21, 4792, 7215, 7216, 1113, 2]
+// Dependencies: [19, 17, 21, 4794, 7214, 7215, 1112, 2]
 // Exports: default
 
-// Module 7214 (TermsField)
+// Module 7213 (TermsField)
 import react_native from "react-native" /* 17 */;
-import intl2 from "intl" /* 1113 */;
-import TermsFieldListDefault from "TermsFieldList" /* 7215 */;
-import TableCheckboxRow2 from "TableCheckboxRow" /* 7216 */;
+import intl2 from "intl" /* 1112 */;
+import TermsFieldListDefault from "TermsFieldList" /* 7214 */;
+import TableCheckboxRow2 from "TableCheckboxRow" /* 7215 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -39,7 +39,7 @@ export default function TermsField(field) {
     flag = false;
   }
   const obj2 = { start: true, end: true, checked: flag, label: intl.string(intl2.t["2EXfGJ"]), onPress: onChange };
-  intl = tmp5(1113).intl;
+  intl = tmp5(1112).intl;
   items[1] = tmp3(TableCheckboxRow, obj2);
   return tmp(tmp2, obj);
 };

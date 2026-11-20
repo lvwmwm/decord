@@ -1,22 +1,22 @@
-// Module ID: 15136
-// Function ID: 15137
+// Module ID: 15100
+// Function ID: 15101
 // Name: AIGlyphText
-// Dependencies: [19, 17, 21, 1655, 4792, 15137, 5356, 2]
+// Dependencies: [19, 17, 21, 1653, 4794, 15101, 5358, 2]
 // Exports: AIGlyphText
 
-// Module 15136 (AIGlyphText)
+// Module 15100 (AIGlyphText)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import useToken2 from "useToken" /* 5356 */;
-import AIGlyphFont from "AIGlyphFont" /* 15137 */;
+import useToken2 from "useToken" /* 5358 */;
+import AIGlyphFont from "AIGlyphFont" /* 15101 */;
 import react from "react" /* 19 */;
-import module_1655 from "module_1655" /* 1655 */;
-import createStyles from "createStyles" /* 4792 */;
+import module_1653 from "module_1653" /* 1653 */;
+import createStyles from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 const Text = react_native.Text;
 const jsx = Fragment.jsx;
-let closure_4 = module_1655.createAnimatedComponent(Text);
+let closure_4 = module_1653.createAnimatedComponent(Text);
 let closure_5 = createStyles.createStyles((fontSize, color) => {
   const obj = { glyph: { color, fontFamily: AIGlyphFont.AI_GLYPH_FONT_FAMILY_NATIVE, fontSize, lineHeight: fontSize, textAlign: "center", includeFontPadding: false } };
   ({ color, fontFamily: AIGlyphFont.AI_GLYPH_FONT_FAMILY_NATIVE, fontSize, lineHeight: fontSize, textAlign: "center", includeFontPadding: false });

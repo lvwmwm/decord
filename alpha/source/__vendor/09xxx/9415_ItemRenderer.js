@@ -1,11 +1,11 @@
 // Module ID: 9415
 // Function ID: 9416
 // Name: ItemRenderer
-// Dependencies: [32, 19, 21, 9416, 1655, 9393, 9417]
+// Dependencies: [32, 19, 21, 9416, 1653, 9393, 9417]
 // Exports: ItemRenderer
 
 // Module 9415 (ItemRenderer)
-import _mod1655 from "module_1655" /* 1655 */;
+import _mod1653 from "module_1653" /* 1653 */;
 import convertToSharedIndex from "convertToSharedIndex" /* 9393 */;
 import useVisibleRanges from "useVisibleRanges" /* 9416 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -54,9 +54,9 @@ export const ItemRenderer = (arg0) => {
   pnpm_ItemRendererTsx1.__workletHash = 4233123637993;
   pnpm_ItemRendererTsx1.__initData = tmp8;
   const items2 = [visibleRanges, , ];
-  const useAnimatedReaction = _mod1655.useAnimatedReaction;
-  _mod1655;
-  items2[1] = _mod1655.runOnJS;
+  const useAnimatedReaction = _mod1653.useAnimatedReaction;
+  _mod1653;
+  items2[1] = _mod1653.runOnJS;
   items2[2] = tmp6;
   let c0;
   let c1;

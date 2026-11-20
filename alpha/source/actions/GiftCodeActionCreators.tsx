@@ -1,21 +1,21 @@
-// Module ID: 11844
-// Function ID: 11845
+// Module ID: 11786
+// Function ID: 11787
 // Name: GiftCodeActionCreators
-// Dependencies: [5, 2165, 7956, 7964, 1072, 1390, 572, 6226, 6538, 7955, 6228, 4613, 1242, 1285, 11845, 11846, 2]
+// Dependencies: [5, 2163, 7955, 7963, 1071, 1388, 572, 6228, 6540, 7954, 6230, 4615, 1241, 1284, 11787, 11788, 2]
 // Exports: deliverGiftCodes, reportUnexpectedGiftCodeError, resolveGiftCode
 
-// Module 11844 (GiftCodeActionCreators)
-import SentryUtilsDefault from "SentryUtils" /* 1242 */;
-import HTTPUtils from "HTTPUtils" /* 1285 */;
-import PremiumConstants from "PremiumConstants" /* 1390 */;
-import errors_V6OrEarlierAPIErrorDefault from "errors/V6OrEarlierAPIError" /* 4613 */;
-import UnknownCollectiblesItemRecord from "UnknownCollectiblesItemRecord" /* 7964 */;
-import CodedLinkActionCreatorsDefault from "CodedLinkActionCreators" /* 11845 */;
-import actions_GiftCodeActionCreators from "actions/GiftCodeActionCreators" /* 11846 */;
+// Module 11786 (GiftCodeActionCreators)
+import SentryUtilsDefault from "SentryUtils" /* 1241 */;
+import HTTPUtils from "HTTPUtils" /* 1284 */;
+import PremiumConstants from "PremiumConstants" /* 1388 */;
+import errors_V6OrEarlierAPIErrorDefault from "errors/V6OrEarlierAPIError" /* 4615 */;
+import UnknownCollectiblesItemRecord from "UnknownCollectiblesItemRecord" /* 7963 */;
+import CodedLinkActionCreatorsDefault from "CodedLinkActionCreators" /* 11787 */;
+import actions_GiftCodeActionCreators from "actions/GiftCodeActionCreators" /* 11788 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 2165 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7956 */;
-import Constants from "Constants" /* 1072 */;
+import ApplicationStore from "ApplicationStore" /* 2163 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7955 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 let closure_2, giftCode;
@@ -46,7 +46,7 @@ let obj = function _resolveGiftCode() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -256,7 +256,7 @@ obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -307,7 +307,7 @@ obj = {
               c3 = 0;
             }
             c5 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp20) {
           closure_2 = tmp20;
@@ -372,7 +372,7 @@ obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -421,7 +421,7 @@ obj = {
               c3 = 0;
             }
             c4 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp16) {
           closure_2 = tmp16;

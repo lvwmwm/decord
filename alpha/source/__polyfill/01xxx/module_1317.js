@@ -4,4 +4,4 @@
 
 // Module 1317
 
-export default SyntaxError;
+export default URIError;

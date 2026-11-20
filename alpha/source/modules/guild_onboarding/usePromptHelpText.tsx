@@ -1,16 +1,16 @@
-// Module ID: 7372
-// Function ID: 7373
+// Module ID: 7371
+// Function ID: 7372
 // Name: usePromptHelpText
-// Dependencies: [4641, 4698, 4724, 4734, 1388, 1072, 1113, 504, 5408, 2]
+// Dependencies: [4643, 4700, 4726, 4736, 1386, 1071, 1112, 504, 5410, 2]
 // Exports: default, useCustomizeCommunityPromptHelpText
 
-// Module 7372 (usePromptHelpText)
-import Constants from "Constants" /* 1072 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import GuildRoleStore from "GuildRoleStore" /* 4698 */;
-import PermissionStore from "PermissionStore" /* 4724 */;
-import RelationshipStore from "RelationshipStore" /* 4734 */;
-import UserStore from "UserStore" /* 1388 */;
+// Module 7371 (usePromptHelpText)
+import Constants from "Constants" /* 1071 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import GuildRoleStore from "GuildRoleStore" /* 4700 */;
+import PermissionStore from "PermissionStore" /* 4726 */;
+import RelationshipStore from "RelationshipStore" /* 4736 */;
+import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 
 const Permissions = Constants.Permissions;
@@ -62,18 +62,18 @@ export default function usePromptHelpText(arg0) {
   }
   let str = "";
   if (!singleSelect) {
-    const intl = tmp2(1113).intl;
-    str = intl.string(tmp2(1113).t.JshhEl);
+    const intl = tmp2(1112).intl;
+    str = intl.string(tmp2(1112).t.JshhEl);
   }
   if (0 === stateFromStoresArray1.length) {
     if (mapped.length > 0) {
       let str6 = "";
       if (0 !== mapped.length) {
-        const intl4 = tmp2(1113).intl;
+        const intl4 = tmp2(1112).intl;
         const format3 = intl4.format;
         const _Math3 = Math;
         const obj3 = { count: mapped.length, extraCount: Math.max(mapped.length - 2, 0), role1: null, role2: null, itemHook };
-        const Kj5GIT = tmp2(1113).t.Kj5GIT;
+        const Kj5GIT = tmp2(1112).t.Kj5GIT;
         [obj6.role1, obj6.role2] = mapped;
         str6 = format3(Kj5GIT, obj3);
       }
@@ -86,11 +86,11 @@ export default function usePromptHelpText(arg0) {
   if (stateFromStoresArray1.length > 0) {
     let str3 = "";
     if (0 !== stateFromStoresArray1.length) {
-      const intl2 = tmp2(1113).intl;
+      const intl2 = tmp2(1112).intl;
       const format = intl2.format;
       const _Math = Math;
       const obj11 = { count: stateFromStoresArray1.length, extraCount: Math.max(stateFromStoresArray1.length - 2, 0), channel1: null, channel2: null, itemHook };
-      const Rj841R = tmp2(1113).t.Rj841R;
+      const Rj841R = tmp2(1112).t.Rj841R;
       [obj4.channel1, obj4.channel2] = stateFromStoresArray1;
       str3 = format(Rj841R, obj11);
     }
@@ -98,11 +98,11 @@ export default function usePromptHelpText(arg0) {
     if (mapped.length > 0) {
       let str5 = "";
       if (0 !== mapped.length) {
-        const intl3 = tmp2(1113).intl;
+        const intl3 = tmp2(1112).intl;
         const format2 = intl3.format;
         const _Math2 = Math;
         const obj12 = { count: mapped.length, extraCount: Math.max(mapped.length - 2, 0), role1: null, role2: null, itemHook };
-        const cJZxWf = tmp2(1113).t.cJZxWf;
+        const cJZxWf = tmp2(1112).t.cJZxWf;
         [obj5.role1, obj5.role2] = mapped;
         str5 = format2(cJZxWf, obj12);
       }
@@ -157,16 +157,16 @@ export function useCustomizeCommunityPromptHelpText(arg0) {
   }
   let str = "";
   if (!singleSelect) {
-    const intl = tmp2(1113).intl;
-    str = intl.string(tmp2(1113).t.JshhEl);
+    const intl = tmp2(1112).intl;
+    str = intl.string(tmp2(1112).t.JshhEl);
   }
   if (0 === stateFromStoresArray1.length) {
     if (mapped.length > 0) {
-      const intl4 = tmp2(1113).intl;
+      const intl4 = tmp2(1112).intl;
       const format3 = intl4.format;
       const _Math4 = Math;
       const obj6 = { count: mapped.length, extraCount: Math.max(mapped.length - 2, 0), role1: null, role2: null, itemHook };
-      const vdtNYa = tmp2(1113).t.vdtNYa;
+      const vdtNYa = tmp2(1112).t.vdtNYa;
       [obj5.role1, obj5.role2] = mapped;
       str = format3(vdtNYa, obj6);
     }
@@ -174,22 +174,22 @@ export function useCustomizeCommunityPromptHelpText(arg0) {
   }
   if (stateFromStoresArray1.length > 0) {
     if (0 === mapped.length) {
-      const intl3 = tmp2(1113).intl;
+      const intl3 = tmp2(1112).intl;
       const format2 = intl3.format;
       const _Math3 = Math;
       const obj11 = { count: stateFromStoresArray1.length, extraCount: Math.max(stateFromStoresArray1.length - 2, 0), channel1: null, channel2: null, itemHook };
-      const ZKywGU = tmp2(1113).t.ZKywGU;
+      const ZKywGU = tmp2(1112).t.ZKywGU;
       [obj4.channel1, obj4.channel2] = stateFromStoresArray1;
       str = format2(ZKywGU, obj11);
     }
   }
   const tmp5 = stateFromStoresArray1.length > 0 && mapped.length > 0;
   if (tmp5) {
-    const intl2 = tmp2(1113).intl;
+    const intl2 = tmp2(1112).intl;
     const format = intl2.format;
     const _Math = Math;
     const obj12 = { channelCount: stateFromStoresArray1.length, extraChannelCount: Math.max(stateFromStoresArray1.length - 2, 0), channel1: null, channel2: null, itemHook, roleCount: mapped.length, extraRoleCount: Math.max(mapped.length - 2, 0), role1: null, role2: null };
-    const WewRHM = tmp2(1113).t.WewRHM;
+    const WewRHM = tmp2(1112).t.WewRHM;
     [obj3.channel1, obj3.channel2] = stateFromStoresArray1;
     const _Math2 = Math;
     [obj3.role1, obj3.role2] = mapped;

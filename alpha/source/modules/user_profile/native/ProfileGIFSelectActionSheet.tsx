@@ -1,21 +1,21 @@
-// Module ID: 15761
-// Function ID: 15762
+// Module ID: 15725
+// Function ID: 15726
 // Name: ProfileGIFSelectActionSheet
-// Dependencies: [32, 5, 19, 17, 21, 4792, 575, 15748, 7285, 15749, 8792, 8790, 8789, 8012, 7291, 5006, 5020, 7396, 1113, 8832, 11290, 2]
+// Dependencies: [32, 5, 19, 17, 21, 4794, 575, 15712, 7284, 15713, 8792, 8790, 8789, 8011, 7290, 5008, 5022, 7395, 1112, 8832, 11232, 2]
 // Exports: default
 
-// Module 15761 (ProfileGIFSelectActionSheet)
+// Module 15725 (ProfileGIFSelectActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5020 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7396 */;
-import GIFPickerDefault from "GIFPicker" /* 11290 */;
-import ProfileEditSheetNitroUpdatesExperiment from "ProfileEditSheetNitroUpdatesExperiment" /* 15748 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5022 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7395 */;
+import GIFPickerDefault from "GIFPicker" /* 11232 */;
+import ProfileEditSheetNitroUpdatesExperiment from "ProfileEditSheetNitroUpdatesExperiment" /* 15712 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5;
@@ -24,7 +24,7 @@ let metroImportAll;
 let metroImportDefault;
 let obj2;
 let tmp2;
-const intl3 = tmp2(1113);
+const intl3 = tmp2(1112);
 const NitroWheelIcon = tmp2(8832);
 const View = react_native.View;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
@@ -56,7 +56,7 @@ export default function ProfileGIFSelectActionSheet(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -198,7 +198,7 @@ export default function ProfileGIFSelectActionSheet(arg0) {
             const obj10 = src(closure_2[15]);
             obj10.hideActionSheet();
             c5 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp53) {
           c5 = 3;

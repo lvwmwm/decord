@@ -1,11 +1,11 @@
-// Module ID: 15748
-// Function ID: 15749
+// Module ID: 15712
+// Function ID: 15713
 // Name: ProfileEditSheetNitroUpdatesExperiment
-// Dependencies: [1452, 2]
+// Dependencies: [1450, 2]
 // Exports: useProfileEditSheetNitroUpdatesConfig
 
-// Module 15748 (ProfileEditSheetNitroUpdatesExperiment)
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+// Module 15712 (ProfileEditSheetNitroUpdatesExperiment)
+import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2026-11-profile-edit-sheet-nitro-updates", kind: "user", defaultConfig: { enabled: false, skipRoadblock: false }, variations: { 0: { enabled: false, skipRoadblock: false }, 1: { enabled: true, skipRoadblock: false }, 2: { enabled: true, skipRoadblock: true } } };

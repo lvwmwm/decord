@@ -1,22 +1,22 @@
-// Module ID: 18187
-// Function ID: 18188
+// Module ID: 18014
+// Function ID: 18015
 // Name: GamingLikeEntryRow
-// Dependencies: [19, 17, 1388, 21, 14374, 7891, 14379, 18138, 575, 504, 6221, 9336, 6745, 11896, 9645, 9654, 7893, 18188, 2121, 9920, 9935, 18190, 1113, 18192, 5383, 4848, 6517, 11, 671, 6911, 5479, 18193, 2]
+// Dependencies: [19, 17, 1386, 21, 14342, 7890, 14347, 17965, 575, 504, 6223, 9336, 6745, 11838, 9645, 9654, 7892, 18015, 2119, 9923, 9938, 18017, 1112, 18019, 5385, 4850, 6519, 11, 671, 6910, 5481, 18020, 2]
 // Exports: default
 
-// Module 18187 (GamingLikeEntryRow)
+// Module 18014 (GamingLikeEntryRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import asyncRequire from "asyncRequire" /* 2121 */;
-import utils from "utils" /* 7891 */;
-import ContentInventoryEntryType from "ContentInventoryEntryType" /* 7893 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 9920 */;
-import BadgesAll from "Badges" /* 14374 */;
-import TrendingType from "TrendingType" /* 14379 */;
+import asyncRequire from "asyncRequire" /* 2119 */;
+import utils from "utils" /* 7890 */;
+import ContentInventoryEntryType from "ContentInventoryEntryType" /* 7892 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 9923 */;
+import BadgesAll from "Badges" /* 14342 */;
+import TrendingType from "TrendingType" /* 14347 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1388 */;
+import UserStore from "UserStore" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 18138 */;
+import createICYMIStyles from "createICYMIStyles" /* 17965 */;
 import size_mod from "module_2" /* 2 */;
 
 let Badge, GameShareModal;
@@ -165,7 +165,7 @@ export default function GamingLikeEntryRow(content) {
   }, items2);
   const items3 = [content];
   const callback1 = react.useCallback(() => {
-    const promise = asyncRequire(18188, dependencyMap.paths);
+    const promise = asyncRequire(18015, dependencyMap.paths);
     promise.then((GameShareModal) => {
       GameShareModal = GameShareModal.GameShareModal;
       if (null != GameShareModal) {

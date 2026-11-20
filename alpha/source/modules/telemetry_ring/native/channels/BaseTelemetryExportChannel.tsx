@@ -1,13 +1,13 @@
-// Module ID: 2126
-// Function ID: 2127
+// Module ID: 2124
+// Function ID: 2125
 // Name: BaseTelemetryExportChannel
-// Dependencies: [5, 2127, 3, 510, 2]
+// Dependencies: [5, 2125, 3, 510, 2]
 
-// Module 2126 (BaseTelemetryExportChannel)
+// Module 2124 (BaseTelemetryExportChannel)
 import LoggerDefault from "Logger" /* 3 */;
 import Storage2 from "Storage" /* 510 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import BaseTelemetryChannel from "BaseTelemetryChannel" /* 2127 */;
+import BaseTelemetryChannel from "BaseTelemetryChannel" /* 2125 */;
 import size from "module_2" /* 2 */;
 
 let _self, c2, c3;
@@ -80,7 +80,7 @@ class BaseTelemetryExportChannel extends BaseTelemetryChannel {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -111,7 +111,7 @@ class BaseTelemetryExportChannel extends BaseTelemetryChannel {
             return obj;
           }
           c0 = 3;
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp4) {
           c0 = 3;
           throw tmp4;
@@ -174,7 +174,7 @@ class BaseTelemetryExportChannel extends BaseTelemetryChannel {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -246,7 +246,7 @@ class BaseTelemetryExportChannel extends BaseTelemetryChannel {
               }
             }
             c3 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp33) {
           c3 = 3;
@@ -270,7 +270,7 @@ class BaseTelemetryExportChannel extends BaseTelemetryChannel {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -343,7 +343,7 @@ class BaseTelemetryExportChannel extends BaseTelemetryChannel {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

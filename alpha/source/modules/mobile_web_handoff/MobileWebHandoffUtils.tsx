@@ -1,12 +1,12 @@
 // Module ID: 9478
 // Function ID: 9479
 // Name: MobileWebHandoffUtils
-// Dependencies: [5, 1072, 1269, 1285, 2]
+// Dependencies: [5, 1071, 1268, 1284, 2]
 
 // Module 9478 (MobileWebHandoffUtils)
-import Constants from "Constants" /* 1072 */;
-import v1 from "v1" /* 1269 */;
-import HTTPUtils from "HTTPUtils" /* 1285 */;
+import Constants from "Constants" /* 1071 */;
+import v1 from "v1" /* 1268 */;
+import HTTPUtils from "HTTPUtils" /* 1284 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -27,7 +27,7 @@ let obj = function _createHandoffToken() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

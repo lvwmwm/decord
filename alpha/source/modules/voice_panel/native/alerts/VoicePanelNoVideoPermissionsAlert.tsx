@@ -1,13 +1,13 @@
-// Module ID: 18037
-// Function ID: 18038
+// Module ID: 17864
+// Function ID: 17865
 // Name: VoicePanelNoVideoPermissionsAlert
-// Dependencies: [19, 21, 5745, 5745, 1113, 2]
+// Dependencies: [19, 21, 5747, 5747, 1112, 2]
 // Exports: default
 
-// Module 18037 (VoicePanelNoVideoPermissionsAlert)
+// Module 17864 (VoicePanelNoVideoPermissionsAlert)
 import Fragment from "Fragment" /* 21 */;
-import intl4 from "intl" /* 1113 */;
-import AlertModal2 from "AlertModal" /* 5745 */;
+import intl4 from "intl" /* 1112 */;
+import AlertModal2 from "AlertModal" /* 5747 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

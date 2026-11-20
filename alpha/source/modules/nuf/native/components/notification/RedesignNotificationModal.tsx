@@ -1,22 +1,22 @@
-// Module ID: 17553
-// Function ID: 17554
+// Module ID: 17380
+// Function ID: 17381
 // Name: RedesignNotificationModal
-// Dependencies: [19, 17, 13189, 13190, 1072, 21, 4792, 575, 13191, 1256, 13192, 13503, 17554, 1113, 2]
+// Dependencies: [19, 17, 13159, 13160, 1071, 21, 4794, 575, 13161, 1255, 13162, 13473, 17381, 1112, 2]
 // Exports: RedesignNotificationScreen
 
-// Module 17553 (RedesignNotificationModal)
+// Module 17380 (RedesignNotificationModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13189 */;
-import NotificationPermissionUtil from "NotificationPermissionUtil" /* 13191 */;
-import PushNotificationActionCreators from "PushNotificationActionCreators" /* 13192 */;
-import NewUserPermissionsOnboardingDefault from "NewUserPermissionsOnboarding" /* 13503 */;
+import Constants from "Constants" /* 1071 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13159 */;
+import NotificationPermissionUtil from "NotificationPermissionUtil" /* 13161 */;
+import PushNotificationActionCreators from "PushNotificationActionCreators" /* 13162 */;
+import NewUserPermissionsOnboardingDefault from "NewUserPermissionsOnboarding" /* 13473 */;
 import react from "react" /* 19 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13190 */;
-import createStyles from "createStyles" /* 4792 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13160 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -50,10 +50,10 @@ class RedesignNotificationModal {
         tmp4(true);
       }
     }, items1);
-    let obj2 = { onAllow: callback, onDontAllow: callback1, header: null, headerInsideCard: true, title: intl.string(onComplete(1113).t["3nx0b5"]), subtitle: intl2.string(onComplete(1113).t.Gf7U1T) };
+    let obj2 = { onAllow: callback, onDontAllow: callback1, header: null, headerInsideCard: true, title: intl.string(onComplete(1112).t["3nx0b5"]), subtitle: intl2.string(onComplete(1112).t.Gf7U1T) };
     const tmp4 = NewUserPermissionsOnboardingDefault;
-    intl = onComplete(1113).intl;
-    intl2 = onComplete(1113).intl;
+    intl = onComplete(1112).intl;
+    intl2 = onComplete(1112).intl;
     return <View style={tmp.container}>{null}</View>;
   }
 }

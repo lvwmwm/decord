@@ -1,13 +1,13 @@
-// Module ID: 15874
-// Function ID: 15875
+// Module ID: 15838
+// Function ID: 15839
 // Name: useTabSelectedGuildId
-// Dependencies: [4825, 6429, 563, 2]
+// Dependencies: [4827, 6431, 563, 2]
 // Exports: default
 
-// Module 15874 (useTabSelectedGuildId)
+// Module 15838 (useTabSelectedGuildId)
 import useStateFromStores from "useStateFromStores" /* 563 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4825 */;
-import SortedGuildStore from "SortedGuildStore" /* 6429 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4827 */;
+import SortedGuildStore from "SortedGuildStore" /* 6431 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/utils/useTabSelectedGuildId.tsx");

@@ -1,28 +1,28 @@
-// Module ID: 14739
-// Function ID: 14740
+// Module ID: 14698
+// Function ID: 14699
 // Name: SubscribeModalSuccessAlert
-// Dependencies: [32, 19, 17, 4663, 8831, 21, 4792, 575, 14740, 14741, 504, 5001, 5811, 1113, 5740, 6425, 5347, 1092, 5479, 4799, 14742, 14743, 5383, 2]
+// Dependencies: [32, 19, 17, 4665, 8831, 21, 4794, 575, 14699, 14700, 504, 5003, 5813, 1112, 5742, 6427, 5349, 1091, 5481, 4801, 14701, 14702, 5385, 2]
 // Exports: default
 
-// Module 14739 (SubscribeModalSuccessAlert)
+// Module 14698 (SubscribeModalSuccessAlert)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import ConstantsIOS from "ConstantsIOS" /* 1092 */;
-import intl4 from "intl" /* 1113 */;
-import shared from "shared" /* 4799 */;
-import useThemeDefault from "useTheme" /* 5001 */;
-import LinearGradientDefault from "LinearGradient" /* 5347 */;
-import FastImageDefault from "FastImage" /* 5479 */;
-import AlertDefault from "Alert" /* 5811 */;
+import ConstantsIOS from "ConstantsIOS" /* 1091 */;
+import intl4 from "intl" /* 1112 */;
+import shared from "shared" /* 4801 */;
+import useThemeDefault from "useTheme" /* 5003 */;
+import LinearGradientDefault from "LinearGradient" /* 5349 */;
+import FastImageDefault from "FastImage" /* 5481 */;
+import AlertDefault from "Alert" /* 5813 */;
 import ColorConstants from "ColorConstants" /* 8831 */;
-import SequencedLottieAnimationViewDefault from "SequencedLottieAnimationView" /* 14740 */;
-import _mod14741 from "module_14741" /* 14741 */;
+import SequencedLottieAnimationViewDefault from "SequencedLottieAnimationView" /* 14699 */;
+import _mod14700 from "module_14700" /* 14700 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4663 */;
+import GuildStore from "GuildStore" /* 4665 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -38,7 +38,7 @@ class PremiumPaymentGuildAnimation {
     let nextScene;
     let onSceneComplete;
     ({ nextScene, onSceneComplete, loop } = arg0);
-    const obj = { nextScene, onSceneComplete, loop, sceneSegments, style: closure_10().animation, source: _mod14741 };
+    const obj = { nextScene, onSceneComplete, loop, sceneSegments, style: closure_10().animation, source: _mod14700 };
     const tmp2 = SequencedLottieAnimationViewDefault;
     return metroImportAll(tmp2, obj);
   }
@@ -95,7 +95,7 @@ export default function SubscribeModalSuccessAlert(arg0) {
   [first1, dependencyMap] = react.useState(false);
   let obj2 = {
     style: tmp.wrapper,
-    confirmText: intl.string(tmp2(1113).t.YKxJCI),
+    confirmText: intl.string(tmp2(1112).t.YKxJCI),
     onConfirm() {
       const obj = closure_1(closure_2[14]);
       obj.close();
@@ -106,7 +106,7 @@ export default function SubscribeModalSuccessAlert(arg0) {
   };
   const tmp11 = useThemeDefault();
   const tmp13 = AlertDefault;
-  intl = tmp2(1113).intl;
+  intl = tmp2(1112).intl;
   items1 = [, ];
   const obj3 = {
     nextScene: first,
@@ -127,17 +127,17 @@ export default function SubscribeModalSuccessAlert(arg0) {
   tmp17 = FastImageDefault;
   const tmp2Result = shared;
   if (tmp2Result.isThemeLight(tmp11)) {
-    tmp10Result = tmp10(14742);
+    tmp10Result = tmp10(14701);
   } else {
-    tmp10Result = tmp10(14743);
+    tmp10Result = tmp10(14702);
   }
   const items2 = [closure_8(tmp16, obj4), ];
   const obj7 = { style: tmp.successInfo, children: items3 };
   const obj8 = { style: tmp.text, variant: "body-sm/medium", children: stringResult };
-  const Text = tmp2(5383).Text;
-  const intl2 = tmp2(1113).intl;
+  const Text = tmp2(5385).Text;
+  const intl2 = tmp2(1112).intl;
   const string = intl2.string;
-  const t = tmp2(1113).t;
+  const t = tmp2(1112).t;
   if (someResult) {
     stringResult = string(t.RMmWY3);
   } else {
@@ -146,8 +146,8 @@ export default function SubscribeModalSuccessAlert(arg0) {
   const obj9 = { children: items2 };
   items3 = [closure_8(Text, obj8), ];
   const obj10 = { style: tmp.text, variant: "body-sm/medium", children: intl3.format(intl4.t.r0IGsP, obj11) };
-  const Text2 = tmp2(5383).Text;
-  intl3 = tmp2(1113).intl;
+  const Text2 = tmp2(5385).Text;
+  intl3 = tmp2(1112).intl;
   obj11 = { guildName: stateFromStores.name, guildSubscriptionQuantity: num };
   items3[1] = closure_8(Text2, obj10);
   items2[1] = closure_9(View, obj7);

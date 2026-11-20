@@ -1,20 +1,20 @@
-// Module ID: 8549
-// Function ID: 8550
+// Module ID: 8548
+// Function ID: 8549
 // Name: ConversationPreviewMessage
-// Dependencies: [19, 17, 4793, 4704, 21, 8550, 9976, 4792, 575, 504, 5822, 8580, 4617, 4614, 1187, 5383, 9977, 2]
+// Dependencies: [19, 17, 4795, 4706, 21, 8549, 9979, 4794, 575, 504, 5824, 8579, 4619, 4616, 1186, 5385, 9980, 2]
 // Exports: default
 
-// Module 8549 (ConversationPreviewMessage)
+// Module 8548 (ConversationPreviewMessage)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import DateUtils from "DateUtils" /* 4614 */;
-import RowGeneratorDefault from "RowGenerator" /* 8550 */;
-import RowGeneratorTypes from "RowGeneratorTypes" /* 9976 */;
+import DateUtils from "DateUtils" /* 4616 */;
+import RowGeneratorDefault from "RowGenerator" /* 8549 */;
+import RowGeneratorTypes from "RowGeneratorTypes" /* 9979 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4793 */;
-import GuildMemberStore from "GuildMemberStore" /* 4704 */;
+import AccessibilityStore from "AccessibilityStore" /* 4795 */;
+import GuildMemberStore from "GuildMemberStore" /* 4706 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;

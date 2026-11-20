@@ -1,29 +1,29 @@
-// Module ID: 12676
-// Function ID: 12677
+// Module ID: 12646
+// Function ID: 12647
 // Name: CheckpointGamesStatsScreen
-// Dependencies: [17, 12400, 5848, 21, 4792, 575, 12637, 6218, 1113, 3339, 6921, 12418, 12659, 12658, 12660, 12677, 12667, 12420, 12633, 12634, 12665, 504, 12417, 2]
+// Dependencies: [17, 12370, 5850, 21, 4794, 575, 12607, 6220, 1112, 3341, 6920, 12388, 12629, 12628, 12630, 12647, 12637, 12390, 12603, 12604, 12635, 504, 12387, 2]
 // Exports: default
 
-// Module 12676 (CheckpointGamesStatsScreen)
+// Module 12646 (CheckpointGamesStatsScreen)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import intl5 from "intl" /* 1113 */;
-import _modDef3339 from "module_3339" /* 3339 */;
-import CheckpointScreen from "CheckpointScreen" /* 12417 */;
-import CheckpointTextDefault from "CheckpointText" /* 12418 */;
-import CheckpointApngPlayerDefault from "CheckpointApngPlayer" /* 12420 */;
-import _modDef12633 from "module_12633" /* 12633 */;
-import _modDef12634 from "module_12634" /* 12634 */;
-import useIsCheckpointWide from "useIsCheckpointWide" /* 12637 */;
-import CheckpointCountUpStatNumberDefault from "CheckpointCountUpStatNumber" /* 12658 */;
-import CheckpointNumberUtils from "CheckpointNumberUtils" /* 12659 */;
-import CheckpointDisplayTextDefault from "CheckpointDisplayText" /* 12665 */;
-import CheckpointGameCard2 from "CheckpointGameCard" /* 12677 */;
+import intl5 from "intl" /* 1112 */;
+import _modDef3341 from "module_3341" /* 3341 */;
+import CheckpointScreen from "CheckpointScreen" /* 12387 */;
+import CheckpointTextDefault from "CheckpointText" /* 12388 */;
+import CheckpointApngPlayerDefault from "CheckpointApngPlayer" /* 12390 */;
+import _modDef12603 from "module_12603" /* 12603 */;
+import _modDef12604 from "module_12604" /* 12604 */;
+import useIsCheckpointWide from "useIsCheckpointWide" /* 12607 */;
+import CheckpointCountUpStatNumberDefault from "CheckpointCountUpStatNumber" /* 12628 */;
+import CheckpointNumberUtils from "CheckpointNumberUtils" /* 12629 */;
+import CheckpointDisplayTextDefault from "CheckpointDisplayText" /* 12635 */;
+import CheckpointGameCard2 from "CheckpointGameCard" /* 12647 */;
 import react_native from "react-native" /* 17 */;
-import CheckpointStore from "CheckpointStore" /* 12400 */;
-import CheckpointConstants from "CheckpointConstants" /* 5848 */;
+import CheckpointStore from "CheckpointStore" /* 12370 */;
+import CheckpointConstants from "CheckpointConstants" /* 5850 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -48,7 +48,7 @@ let obj7;
 let obj8;
 let obj9;
 let tmp7;
-const CheckpointRankTagDefault = tmp7(12667);
+const CheckpointRankTagDefault = tmp7(12637);
 function UserGames(gameStats) {
   let closure_1;
   let formatResult;
@@ -86,13 +86,13 @@ function UserGames(gameStats) {
   if (games == null) {
     games = [];
   }
-  let intl = tmp5(1113).intl;
+  let intl = tmp5(1112).intl;
   let formatToPlainStringResult;
-  const stringResult = intl.string(_modDef3339.HM2fjf);
+  const stringResult = intl.string(_modDef3341.HM2fjf);
   if (null != checkpointTopPercent) {
-    const intl2 = tmp5(1113).intl;
+    const intl2 = tmp5(1112).intl;
     let obj = { percent: checkpointTopPercent };
-    formatToPlainStringResult = intl2.formatToPlainString(tmp2(3339).VjXwW9, obj);
+    formatToPlainStringResult = intl2.formatToPlainString(tmp2(3341).VjXwW9, obj);
   }
   let obj2 = {
     containerStyle: tmp.container,
@@ -108,7 +108,7 @@ function UserGames(gameStats) {
       game = game.game;
       const sum = index + 1;
       const rounded = Math.round(game.numSessions);
-      const obj = { accessible: true, accessibilityLabel: intl.formatToPlainString(_modDef3339.mqdLhl, obj2), style: items, children: items2 };
+      const obj = { accessible: true, accessibilityLabel: intl.formatToPlainString(_modDef3341.mqdLhl, obj2), style: items, children: items2 };
       intl = intl5.intl;
       items = [game.game, ];
       let wideCover = closure_1;
@@ -116,7 +116,7 @@ function UserGames(gameStats) {
       items[1] = closure_1 && game.wideGame;
       const obj3 = { game, style: items1, children: metroImportAll(CheckpointRankTagDefault, obj4) };
       items1 = [game.cover, ];
-      const CheckpointGameCard = tmp5(12677).CheckpointGameCard;
+      const CheckpointGameCard = tmp5(12647).CheckpointGameCard;
       const tmp3 = React4;
       const tmp4 = React3;
       if (wideCover) {
@@ -126,7 +126,7 @@ function UserGames(gameStats) {
       obj4 = { rank: sum, style: game.rank };
       items2 = [metroImportAll(CheckpointGameCard, obj3), ];
       const obj5 = { name: game.name, label: tmp5Result.formatCheckpointStatNumber(rounded), textAlignment: "left" };
-      const CheckpointGameCardDescription = tmp5(12677).CheckpointGameCardDescription;
+      const CheckpointGameCardDescription = tmp5(12647).CheckpointGameCardDescription;
       tmp5Result = CheckpointNumberUtils;
       items2[1] = metroImportAll(CheckpointGameCardDescription, obj5);
       return tmp3(tmp4, obj, game.id);
@@ -134,13 +134,13 @@ function UserGames(gameStats) {
   };
   let obj3 = { style: tmp.title, children: items };
   let obj4 = { size: "refresh_sm", color };
-  items = [closure_8(tmp5(6921).GameControllerIcon, obj4), ];
+  items = [closure_8(tmp5(6920).GameControllerIcon, obj4), ];
   let obj5 = { isStepHeading: true, variant: "heading-sm/semibold", style: tmp.titleText, children: stringResult.toLocaleUpperCase() };
   const tmp2Result = CheckpointTextDefault;
   items[1] = closure_8(tmp2Result, obj5);
   let items1 = [closure_9(closure_4, obj3), , ];
   const obj6 = { accessible: true, accessibilityLabel: tmp5Result.formatCheckpointStatAccessibilityLabel("games", roundResult), style: tmp.number, children: closure_8(CheckpointCountUpStatNumberDefault, { end: roundResult }) };
-  tmp5Result = tmp5(12659);
+  tmp5Result = tmp5(12629);
   items1[1] = closure_8(closure_4, obj6);
   const obj7 = { variant: "heading-lg/medium", accessibilityLabel: formatToPlainStringResult, children: formatResult };
   const tmp11 = GamesLayout;
@@ -148,7 +148,7 @@ function UserGames(gameStats) {
   tmp13 = closure_4;
   const tmp2Result2 = CheckpointTextDefault;
   if (null != checkpointTopPercent) {
-    const intl4 = tmp5(1113).intl;
+    const intl4 = tmp5(1112).intl;
     const obj8 = {
       percent: checkpointTopPercent,
       percentHook(children, arg1) {
@@ -156,11 +156,11 @@ function UserGames(gameStats) {
           return closure_1_8(closure_1(dependencyMap[14]), obj, arg1);
         }
     };
-    formatResult = intl4.format(tmp2(3339)["hc0/yJ"], obj8);
+    formatResult = intl4.format(tmp2(3341)["hc0/yJ"], obj8);
   } else {
-    const intl3 = tmp5(1113).intl;
+    const intl3 = tmp5(1112).intl;
     const obj9 = { numGames: roundResult };
-    formatResult = intl3.format(tmp2(3339).aJMJ6b, obj9);
+    formatResult = intl3.format(tmp2(3341).aJMJ6b, obj9);
   }
   obj10 = { children: items1 };
   items1[2] = closure_8(tmp2Result2, obj7);
@@ -209,7 +209,7 @@ function GlobalGames(gameStats) {
         const obj3 = { game: first, style: items1 };
         items1 = [globalGame.globalCover, ];
         let wideGlobalCover = tmp12;
-        const CheckpointGameCard = tmp9(12677).CheckpointGameCard;
+        const CheckpointGameCard = tmp9(12647).CheckpointGameCard;
         const tmp4 = React4;
         if (closure_2) {
           wideGlobalCover = tmp7.wideGlobalCover;
@@ -230,18 +230,18 @@ function GlobalGames(gameStats) {
   ({ container: arr[0], globalContainer: arr[1] } = tmp);
   obj2 = { style: tmp.header, children: items2 };
   let obj3 = { style: tmp.globalHeading, children: items1 };
-  let obj4 = { animatedUri: _modDef12633, staticUri: _modDef12634, style: tmp.globe };
+  let obj4 = { animatedUri: _modDef12603, staticUri: _modDef12604, style: tmp.globe };
   const tmp2 = CheckpointApngPlayerDefault;
   items1 = [closure_8(tmp2, obj4), ];
   const obj5 = { isStepHeading: true, children: stringResult.toLocaleUpperCase() };
   const tmp3 = CheckpointDisplayTextDefault;
-  let intl = gameStats(1113).intl;
-  stringResult = intl.string(_modDef3339.qbCgI7);
+  let intl = gameStats(1112).intl;
+  stringResult = intl.string(_modDef3341.qbCgI7);
   items1[1] = closure_8(tmp3, obj5);
   items2 = [closure_9(closure_4, obj3), ];
-  const obj6 = { variant: "heading-lg/medium", children: intl2.string(_modDef3339["0oDeiM"]) };
+  const obj6 = { variant: "heading-lg/medium", children: intl2.string(_modDef3341["0oDeiM"]) };
   let tmp4 = CheckpointTextDefault;
-  intl2 = gameStats(1113).intl;
+  intl2 = gameStats(1112).intl;
   items2[1] = closure_8(tmp4, obj6);
   return closure_8(GamesLayout, obj);
 }

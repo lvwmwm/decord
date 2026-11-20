@@ -1,15 +1,15 @@
-// Module ID: 12033
-// Function ID: 12034
+// Module ID: 11975
+// Function ID: 11976
 // Name: InviteButton
-// Dependencies: [19, 17, 8319, 21, 4792, 1113, 5390, 2]
+// Dependencies: [19, 17, 8318, 21, 4794, 1112, 5392, 2]
 
-// Module 12033 (InviteButton)
+// Module 11975 (InviteButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import intl6 from "intl" /* 1113 */;
-import Constants from "Constants" /* 8319 */;
+import intl6 from "intl" /* 1112 */;
+import Constants from "Constants" /* 8318 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;
@@ -29,26 +29,26 @@ const memoResult = react.memo(function InviteButton(onPressSend) {
   const intl = intl6.intl;
   intl.string(intl6.t.jYnGPG);
   if (InviteSendStates.SENDING === sendState) {
-    const intl5 = tmp2(1113).intl;
-    let stringResult1 = intl5.string(tmp2(1113).t.jYnGPG);
+    const intl5 = tmp2(1112).intl;
+    let stringResult1 = intl5.string(tmp2(1112).t.jYnGPG);
     disabled = false;
     flag = true;
   } else if (InviteSendStates.SENT === sendState) {
-    const intl4 = tmp2(1113).intl;
-    stringResult1 = intl4.string(tmp2(1113).t.dVT149);
+    const intl4 = tmp2(1112).intl;
+    stringResult1 = intl4.string(tmp2(1112).t.dVT149);
     disabled = true;
     flag = false;
   } else if (InviteSendStates.ERROR === sendState) {
-    const intl3 = tmp2(1113).intl;
-    stringResult1 = intl3.string(tmp2(1113).t.wNcfpX);
+    const intl3 = tmp2(1112).intl;
+    stringResult1 = intl3.string(tmp2(1112).t.wNcfpX);
     disabled = false;
     flag = false;
   } else {
-    const intl2 = tmp2(1113).intl;
-    stringResult1 = intl2.string(tmp2(1113).t.jYnGPG);
+    const intl2 = tmp2(1112).intl;
+    stringResult1 = intl2.string(tmp2(1112).t.jYnGPG);
     flag = false;
   }
-  const Button = tmp2(5390).Button;
+  const Button = tmp2(5392).Button;
   if (!disabled) {
     disabled = flag;
   }

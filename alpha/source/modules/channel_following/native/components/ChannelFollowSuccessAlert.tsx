@@ -1,24 +1,24 @@
-// Module ID: 11672
-// Function ID: 11673
+// Module ID: 11614
+// Function ID: 11615
 // Name: ChannelFollowSuccessAlert
-// Dependencies: [19, 21, 11673, 11674, 11675, 11676, 11677, 11678, 1113, 4792, 5001, 4799, 9083, 12, 5811, 5479, 5383, 2]
+// Dependencies: [19, 21, 11615, 11616, 11617, 11618, 11619, 11620, 1112, 4794, 5003, 4801, 9083, 12, 5813, 5481, 5385, 2]
 // Exports: default
 
-// Module 11672 (ChannelFollowSuccessAlert)
+// Module 11614 (ChannelFollowSuccessAlert)
 import _modDef12 from "module_12" /* 12 */;
-import intl3 from "intl" /* 1113 */;
-import useThemeDefault from "useTheme" /* 5001 */;
-import FastImageDefault from "FastImage" /* 5479 */;
-import AlertDefault from "Alert" /* 5811 */;
-import AssetRegistry from "AssetRegistry" /* 11673 */;
-import AssetRegistry2 from "AssetRegistry" /* 11674 */;
-import AssetRegistry3 from "AssetRegistry" /* 11675 */;
-import AssetRegistry4 from "AssetRegistry" /* 11676 */;
-import AssetRegistry5 from "AssetRegistry" /* 11677 */;
-import AssetRegistry6 from "AssetRegistry" /* 11678 */;
+import intl3 from "intl" /* 1112 */;
+import useThemeDefault from "useTheme" /* 5003 */;
+import FastImageDefault from "FastImage" /* 5481 */;
+import AlertDefault from "Alert" /* 5813 */;
+import AssetRegistry from "AssetRegistry" /* 11615 */;
+import AssetRegistry2 from "AssetRegistry" /* 11616 */;
+import AssetRegistry3 from "AssetRegistry" /* 11617 */;
+import AssetRegistry4 from "AssetRegistry" /* 11618 */;
+import AssetRegistry5 from "AssetRegistry" /* 11619 */;
+import AssetRegistry6 from "AssetRegistry" /* 11620 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -97,16 +97,16 @@ export default function ChannelFollowSuccessAlert(arg0) {
   const obj2 = { confirmText: intl.string(require("intl").t["+IrDzN"]), children: items1 };
   const tmp2Result = AlertDefault;
   const merged = Object.assign(arg0);
-  intl = tmp5(1113).intl;
+  intl = tmp5(1112).intl;
   items1 = [, , ];
   const obj3 = { source: stableMemo, style: tmp.image };
   items1[0] = closure_3(FastImageDefault, obj3);
   const obj4 = { style: tmp.header, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: stableMemo1() };
-  const Text = tmp5(5383).Text;
+  const Text = tmp5(5385).Text;
   items1[1] = closure_3(Text, obj4);
   const obj5 = { style: tmp.text, variant: "body-md/medium", color: "text-muted", children: intl2.string(require("intl").t["2QbSea"]) };
-  const Text2 = tmp5(5383).Text;
-  intl2 = tmp5(1113).intl;
+  const Text2 = tmp5(5385).Text;
+  intl2 = tmp5(1112).intl;
   items1[2] = closure_3(Text2, obj5);
   return closure_4(tmp2Result, obj2);
 };

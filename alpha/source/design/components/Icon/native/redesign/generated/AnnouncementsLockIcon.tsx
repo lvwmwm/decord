@@ -1,14 +1,14 @@
-// Module ID: 7574
-// Function ID: 7575
+// Module ID: 7573
+// Function ID: 7574
 // Name: AnnouncementsLockIcon
-// Dependencies: [19, 21, 575, 5478, 7549, 2]
+// Dependencies: [19, 21, 575, 5480, 7548, 2]
 // Exports: AnnouncementsLockIcon
 
-// Module 7574 (AnnouncementsLockIcon)
+// Module 7573 (AnnouncementsLockIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5478 */;
-import AssetRegistry from "AssetRegistry" /* 7549 */;
+import BaseIconImage2 from "BaseIconImage" /* 5480 */;
+import AssetRegistry from "AssetRegistry" /* 7548 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

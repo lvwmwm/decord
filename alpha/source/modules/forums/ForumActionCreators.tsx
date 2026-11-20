@@ -1,17 +1,17 @@
-// Module ID: 8503
-// Function ID: 8504
+// Module ID: 8502
+// Function ID: 8503
 // Name: ForumActionCreators
-// Dependencies: [5, 1072, 5739, 1113, 572, 1285, 8340, 8504, 8505, 8506, 8342, 2]
+// Dependencies: [5, 1071, 5741, 1112, 572, 1284, 8339, 8503, 8504, 8505, 8341, 2]
 
-// Module 8503 (ForumActionCreators)
+// Module 8502 (ForumActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import intl3 from "intl" /* 1113 */;
-import HTTPUtils from "HTTPUtils" /* 1285 */;
-import AnalyticsFeedItemSeenActionCreators from "AnalyticsFeedItemSeenActionCreators" /* 8504 */;
-import ForumChannelSeenManager from "ForumChannelSeenManager" /* 8505 */;
-import AnalyticsFeedItemSeenManager from "AnalyticsFeedItemSeenManager" /* 8506 */;
+import intl3 from "intl" /* 1112 */;
+import HTTPUtils from "HTTPUtils" /* 1284 */;
+import AnalyticsFeedItemSeenActionCreators from "AnalyticsFeedItemSeenActionCreators" /* 8503 */;
+import ForumChannelSeenManager from "ForumChannelSeenManager" /* 8504 */;
+import AnalyticsFeedItemSeenManager from "AnalyticsFeedItemSeenManager" /* 8505 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
-import Constants from "Constants" /* 1072 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 let c3, c4, errors, title;
@@ -112,9 +112,9 @@ body = {
     }
     tmpResult = HTTPUtils;
     let closure_0 = put(request);
-    const intl = tmp(1113).intl;
+    const intl = tmp(1112).intl;
     const stringResult = intl.string(intl3.t.T8sBLJ);
-    const intl2 = tmp(1113).intl;
+    const intl2 = tmp(1112).intl;
     withErrorHandling(() => closure_0, stringResult, intl2.string(intl3.t.imcb5u));
   },
   deleteForumTag(channelId, id) {
@@ -190,7 +190,7 @@ body = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -243,7 +243,7 @@ body = {
               c2 = 0;
             }
             c4 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp10) {
           if (0 === c2) {

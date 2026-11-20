@@ -1,20 +1,20 @@
-// Module ID: 17341
-// Function ID: 17342
+// Module ID: 17168
+// Function ID: 17169
 // Name: HeroBlockHeader
-// Dependencies: [19, 17, 1072, 21, 9425, 4792, 575, 9833, 6442, 1502, 8816, 5001, 5356, 4789, 9828, 4799, 17342, 17343, 5347, 5479, 5383, 5390, 1113, 6911, 1256, 7446, 2]
+// Dependencies: [19, 17, 1071, 21, 9425, 4794, 575, 9835, 6444, 1500, 8816, 5003, 5358, 4791, 9830, 4801, 17169, 17170, 5349, 5481, 5385, 5392, 1112, 6910, 1255, 7445, 2]
 // Exports: default
 
-// Module 17341 (HeroBlockHeader)
+// Module 17168 (HeroBlockHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import QuestContent from "QuestContent" /* 6442 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import QuestContent from "QuestContent" /* 6444 */;
 import CollectiblesShopCardV2 from "CollectiblesShopCardV2" /* 9425 */;
-import QuestUtils from "QuestUtils" /* 9833 */;
+import QuestUtils from "QuestUtils" /* 9835 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 1072 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -70,22 +70,22 @@ export default function HeroBlockHeader(heroBlock) {
   dependencyMap = undefined;
   const tmp = heroBlock;
   const tmp2 = dependencyMap;
-  let obj = heroBlock(1502);
+  let obj = heroBlock(1500);
   dependencyMap = obj.useNavigation();
   let obj2 = heroBlock(8816);
   const analyticsContext = obj2.useCollectiblesAnalyticsContext();
-  const tmp4 = category(5001)();
+  const tmp4 = category(5003)();
   const tmp5 = closure_10();
-  const obj3 = heroBlock(5356);
+  const obj3 = heroBlock(5358);
   const token = obj3.useToken(category(575).colors.BACKGROUND_BASE_LOW);
-  const hexToRgbaString = heroBlock(4789).hexToRgbaString;
-  heroBlock(4789);
-  const obj4 = heroBlock(4789);
+  const hexToRgbaString = heroBlock(4791).hexToRgbaString;
+  heroBlock(4791);
+  const obj4 = heroBlock(4791);
   const isOrbsExclusive = category.isOrbsExclusive;
   const hexToRgbaStringResult = hexToRgbaString(obj4.hexWithOpacity(token, 0));
-  const obj5 = heroBlock(5356);
+  const obj5 = heroBlock(5358);
   const token1 = obj5.useToken(category(575).colors.BACKGROUND_BASE_LOWEST);
-  const obj6 = heroBlock(9828);
+  const obj6 = heroBlock(9830);
   let isEligibleForQuests = obj6.getIsEligibleForQuests();
   let heroBannerUrl = heroBlock.mobileHeroUrl;
   if (heroBannerUrl == null) {
@@ -96,11 +96,11 @@ export default function HeroBlockHeader(heroBlock) {
   const tmp12 = null != heroBlock.mobileSummary ? heroBlock.mobileSummary : heroBlock.summary;
   if (isOrbsExclusive) {
     let tmp3Result;
-    const tmpResult = tmp(4799);
+    const tmpResult = tmp(4801);
     if (tmpResult.isThemeDark(tmp4)) {
-      tmp3Result = tmp3(17342);
+      tmp3Result = tmp3(17169);
     } else {
-      tmp3Result = tmp3(17343);
+      tmp3Result = tmp3(17170);
     }
     heroBannerUrl = tmp3Result;
   }
@@ -111,17 +111,17 @@ export default function HeroBlockHeader(heroBlock) {
     if (tmp16Result) {
       const obj8 = { colors: ["rgba(39, 30, 173, 0.3)", "transparent"], start: null, end: null, style: tmp5.orbsBackgroundGradient };
       ({ START: obj9.start, END: obj9.end } = closure_6);
-      tmp16Result = tmp16(tmp3(5347), obj8);
+      tmp16Result = tmp16(tmp3(5349), obj8);
     }
     const obj10 = { children: items };
     items = [tmp16Result, , ];
     const obj11 = { style: tmp5.heroBannerImage, source: obj12 };
     obj12 = { uri: heroBannerUrl };
-    items[1] = closure_7(category(5479), obj11);
+    items[1] = closure_7(category(5481), obj11);
     const obj14 = { colors: items1, start: null, end: null, style: tmp5.fadeOutGradient };
     items1 = [hexToRgbaStringResult, token1];
     ({ START: obj13.start, END: obj13.end } = closure_6);
-    items[2] = closure_7(category(5347), obj14);
+    items[2] = closure_7(category(5349), obj14);
     tmp14Result = tmp14(tmp15, obj10);
   }
   const items2 = [closure_7(analyticsContext, obj7), ];
@@ -131,21 +131,21 @@ export default function HeroBlockHeader(heroBlock) {
     const obj16 = { style: tmp5.orbsInnerContainer, children: items4 };
     if (tmp16Result4) {
       const obj17 = { variant: "display-md", color: "mobile-text-heading-primary", style: tmp5.orbsTitle, children: tmp11 };
-      tmp16Result4 = tmp16(tmp(5383).Text, obj17);
+      tmp16Result4 = tmp16(tmp(5385).Text, obj17);
     }
     const items3 = [tmp16Result4, ];
     let tmp16Result5 = null != tmp12 && "" !== tmp12;
     if (tmp16Result5) {
       const obj18 = { variant: "body-md/medium", children: tmp12 };
-      tmp16Result5 = tmp16(tmp(5383).Text, obj18);
+      tmp16Result5 = tmp16(tmp(5385).Text, obj18);
     }
     const obj19 = { children: items3 };
     items3[1] = tmp16Result5;
     items4 = [closure_9(analyticsContext, obj19), ];
     if (isEligibleForQuests) {
-      const obj20 = { variant: "tertiary", shrink: true, grow: false, size: "sm", text: intl3.string(tmp(1113).t.ynollq), onPress: onTapEarnOrbs };
-      const Button = tmp(5390).Button;
-      intl3 = tmp(1113).intl;
+      const obj20 = { variant: "tertiary", shrink: true, grow: false, size: "sm", text: intl3.string(tmp(1112).t.ynollq), onPress: onTapEarnOrbs };
+      const Button = tmp(5392).Button;
+      intl3 = tmp(1112).intl;
       isEligibleForQuests = tmp16(Button, obj20);
     }
     items4[1] = isEligibleForQuests;
@@ -153,8 +153,8 @@ export default function HeroBlockHeader(heroBlock) {
   } else {
     const obj21 = {
       accessibilityRole: "button",
-      accessibilityLabel: intl.formatToPlainString(tmp(1113).t.FNtLb3, obj22),
-      accessibilityHint: intl2.string(tmp(1113).t.F8ma9x),
+      accessibilityLabel: intl.formatToPlainString(tmp(1112).t.FNtLb3, obj22),
+      accessibilityHint: intl2.string(tmp(1112).t.F8ma9x),
       activeOpacity: 0.6,
       androidRippleConfig: obj23,
       hitSlop: 8,
@@ -190,21 +190,21 @@ export default function HeroBlockHeader(heroBlock) {
         },
       children: closure_9(analyticsContext, obj24)
     };
-    const PressableOpacity = tmp(6911).PressableOpacity;
-    intl = tmp(1113).intl;
+    const PressableOpacity = tmp(6910).PressableOpacity;
+    intl = tmp(1112).intl;
     obj22 = { category: category.name };
-    intl2 = tmp(1113).intl;
+    intl2 = tmp(1112).intl;
     let tmp16Result6 = null != heroLogoUrl;
     obj23 = { radius: category(575).radii.lg };
     obj24 = { style: tmp5.innerContainer, children: items5 };
     if (tmp16Result6) {
-      const obj25 = { style: tmp5.heroLogoContainer, children: closure_7(category(5479), obj26) };
+      const obj25 = { style: tmp5.heroLogoContainer, children: closure_7(category(5481), obj26) };
       obj26 = { style: tmp5.heroLogo, source: obj27 };
       obj27 = { uri: heroLogoUrl };
       tmp16Result6 = tmp16(tmp17, obj25);
     }
     items5 = [tmp16Result6, ];
-    const obj28 = { style: tmp5.heroViewAllIcon, children: closure_7(tmp(7446).ChevronSmallRightIcon, { size: "sm", color: "white" }) };
+    const obj28 = { style: tmp5.heroViewAllIcon, children: closure_7(tmp(7445).ChevronSmallRightIcon, { size: "sm", color: "white" }) };
     items5[1] = closure_7(analyticsContext, obj28);
     tmp14Result2 = tmp16(PressableOpacity, obj21, category.storeListingId);
   }

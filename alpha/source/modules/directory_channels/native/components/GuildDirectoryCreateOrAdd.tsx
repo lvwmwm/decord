@@ -1,26 +1,26 @@
-// Module ID: 13075
-// Function ID: 13076
+// Module ID: 13045
+// Function ID: 13046
 // Name: GuildDirectoryCreateOrAdd
-// Dependencies: [32, 19, 17, 13076, 13074, 21, 4792, 575, 504, 6926, 7203, 13077, 7467, 1113, 5383, 11216, 1630, 5390, 1502, 6899, 13082, 13073, 7371, 2]
+// Dependencies: [32, 19, 17, 13046, 13044, 21, 4794, 575, 504, 6925, 7202, 13047, 7466, 1112, 5385, 11158, 1628, 5392, 1500, 6898, 13052, 13043, 7370, 2]
 // Exports: default
 
-// Module 13075 (GuildDirectoryCreateOrAdd)
+// Module 13045 (GuildDirectoryCreateOrAdd)
 import nativeDefault from "native" /* 575 */;
-import intl5 from "intl" /* 1113 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import components_Button_Button from "components/Button/Button" /* 5390 */;
-import TableRow2 from "TableRow" /* 6926 */;
-import GuildIconDefault from "GuildIcon" /* 7203 */;
-import SegmentedControlState from "SegmentedControlState" /* 7467 */;
-import SegmentedControl from "SegmentedControl" /* 11216 */;
-import directory_channels_GuildDirectoryConstants from "directory_channels/GuildDirectoryConstants" /* 13074 */;
+import intl5 from "intl" /* 1112 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import components_Button_Button from "components/Button/Button" /* 5392 */;
+import TableRow2 from "TableRow" /* 6925 */;
+import GuildIconDefault from "GuildIcon" /* 7202 */;
+import SegmentedControlState from "SegmentedControlState" /* 7466 */;
+import SegmentedControl from "SegmentedControl" /* 11158 */;
+import directory_channels_GuildDirectoryConstants from "directory_channels/GuildDirectoryConstants" /* 13044 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildDirectoryStore from "GuildDirectoryStore" /* 13076 */;
+import GuildDirectoryStore from "GuildDirectoryStore" /* 13046 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -107,8 +107,8 @@ let closure_12 = react.memo(function GuildDirectoryEntryEditRow(guild) {
   const tmp = closure_11();
   const obj = guild(504);
   const stateFromStores = obj.useStateFromStores(items, () => GuildDirectoryStore.getDirectoryEntry(directoryChannelId, guild.id));
-  const obj2 = { label: guild.name, icon: closure_9(directoryChannelId(7203), obj3), trailing: closure_9(directoryChannelId(13077), { entry: stateFromStores }), start, end };
-  const TableRow = guild(6926).TableRow;
+  const obj2 = { label: guild.name, icon: closure_9(directoryChannelId(7202), obj3), trailing: closure_9(directoryChannelId(13047), { entry: stateFromStores }), start, end };
+  const TableRow = guild(6925).TableRow;
   obj3 = { style: tmp.guildIcon, guild };
   return closure_9(TableRow, obj2);
 });

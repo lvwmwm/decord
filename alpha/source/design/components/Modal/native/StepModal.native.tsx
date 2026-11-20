@@ -1,19 +1,19 @@
-// Module ID: 12205
-// Function ID: 12206
+// Module ID: 12147
+// Function ID: 12148
 // Name: StepModal
-// Dependencies: [32, 19, 17, 21, 4792, 1630, 6976, 11981, 12206, 2]
+// Dependencies: [32, 19, 17, 21, 4794, 1628, 6975, 11923, 12148, 2]
 // Exports: StepModal
 
-// Module 12205 (StepModal)
+// Module 12147 (StepModal)
 import react_native from "react-native" /* 17 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import NavigatorHeader from "NavigatorHeader" /* 6976 */;
-import Modal2 from "Modal" /* 11981 */;
-import ModalStepIndicator2 from "ModalStepIndicator" /* 12206 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
+import NavigatorHeader from "NavigatorHeader" /* 6975 */;
+import Modal2 from "Modal" /* 11923 */;
+import ModalStepIndicator2 from "ModalStepIndicator" /* 12148 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;

@@ -1,11 +1,11 @@
 // Module ID: 9444
 // Function ID: 9445
 // Name: useTargetedOfferPromotion
-// Dependencies: [1072, 8841, 6735, 8850, 8842, 2]
+// Dependencies: [1071, 8841, 6735, 8850, 8842, 2]
 // Exports: useEligibleCollectiblesTargetedOfferPromotion, useIsFiatExclusiveTargetedOfferPromotion, useTargetedOfferPromotionForCollectiblesProduct
 
 // Module 9444 (useTargetedOfferPromotion)
-import Constants from "Constants" /* 1072 */;
+import Constants from "Constants" /* 1071 */;
 import StorefrontTypes from "StorefrontTypes" /* 6735 */;
 import usePromotionForApplicationDefault from "usePromotionForApplication" /* 8841 */;
 import CollectiblesPricingPromotionUtils from "CollectiblesPricingPromotionUtils" /* 8842 */;

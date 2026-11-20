@@ -1,19 +1,19 @@
-// Module ID: 11255
-// Function ID: 11256
+// Module ID: 11197
+// Function ID: 11198
 // Name: PremiumExpressionPickerFeatureUpsell
-// Dependencies: [19, 17, 21, 4792, 575, 1630, 7126, 1092, 1655, 10886, 2]
+// Dependencies: [19, 17, 21, 4794, 575, 1628, 7125, 1091, 1653, 10828, 2]
 // Exports: default
 
-// Module 11255 (PremiumExpressionPickerFeatureUpsell)
+// Module 11197 (PremiumExpressionPickerFeatureUpsell)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import ConstantsIOS from "ConstantsIOS" /* 1092 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import useKeyboardIsOpenDefault from "useKeyboardIsOpen" /* 7126 */;
+import ConstantsIOS from "ConstantsIOS" /* 1091 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import useKeyboardIsOpenDefault from "useKeyboardIsOpen" /* 7125 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let num, num2, tmp, tmp2, value;
@@ -43,7 +43,7 @@ export default function PremiumExpressionPickerFeatureUpsell(arg0) {
   const bottom = useSafeAreaInsetsDefault().bottom;
   const tmp3 = useKeyboardIsOpenDefault();
   const tmp4 = closure_5(ConstantsIOS.EXPRESSION_FOOTER_HEIGHT + bottom);
-  let tmp5 = _mod1655;
+  let tmp5 = _mod1653;
   const items = [closure_6, shouldShow, inPortalKeyboard, bottomSheetIndex];
   let c0;
   let c1;

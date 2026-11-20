@@ -1,21 +1,21 @@
-// Module ID: 10673
-// Function ID: 10674
+// Module ID: 10615
+// Function ID: 10616
 // Name: StreamQualityLiveIndicator
-// Dependencies: [19, 17, 1072, 1390, 5537, 21, 4792, 575, 10582, 10674, 7401, 1655, 5002, 1187, 5715, 10675, 1256, 8979, 10443, 2174, 6911, 5479, 10441, 2]
+// Dependencies: [19, 17, 1071, 1388, 5539, 21, 4794, 575, 10524, 10616, 7400, 1653, 5004, 1186, 5717, 10617, 1255, 8979, 10385, 2172, 6910, 5481, 10383, 2]
 // Exports: default
 
-// Module 10673 (StreamQualityLiveIndicator)
+// Module 10615 (StreamQualityLiveIndicator)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import Constants2 from "Constants" /* 5537 */;
+import Constants from "Constants" /* 1071 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import Constants2 from "Constants" /* 5539 */;
 import openPremiumModalDefault from "openPremiumModal" /* 8979 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10443 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10385 */;
 import react from "react" /* 19 */;
-import PremiumConstants from "PremiumConstants" /* 1390 */;
+import PremiumConstants from "PremiumConstants" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -101,8 +101,8 @@ export default function StreamQualityLiveIndicator(arg0) {
   analyticsLocations = require("useAnalyticsLocations")().analyticsLocations;
   const ref = analyticsLocations.useRef(false);
   let items = [closure_12, , , ];
-  const useAnimatedStyle = require("module_1655").useAnimatedStyle;
-  const tmp5 = require("module_1655");
+  const useAnimatedStyle = require("module_1653").useAnimatedStyle;
+  const tmp5 = require("module_1653");
   items[1] = require("timing/timing").withTiming;
   items[2] = reveal;
   items[3] = require("native").STANDARD_EASING;

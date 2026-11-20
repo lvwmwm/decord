@@ -1,17 +1,17 @@
-// Module ID: 12113
-// Function ID: 12114
+// Module ID: 12055
+// Function ID: 12056
 // Name: SpotifyUtils
-// Dependencies: [5, 2140, 6780, 6777, 6778, 1072, 1089, 6570, 6779, 12114, 2]
+// Dependencies: [5, 2138, 6780, 6777, 6778, 1071, 1088, 6572, 6779, 12056, 2]
 // Exports: ensureSpotifyPlayable, ensureSpotifyPremium, getSpotifyMetadataFromActivity, isSpotifyPlayable, isSpotifyPremium
 
-// Module 12113 (SpotifyUtils)
-import Constants from "Constants" /* 1072 */;
-import DurationsDefault from "Durations" /* 1089 */;
-import PlatformsDefault from "Platforms" /* 6570 */;
+// Module 12055 (SpotifyUtils)
+import Constants from "Constants" /* 1071 */;
+import DurationsDefault from "Durations" /* 1088 */;
+import PlatformsDefault from "Platforms" /* 6572 */;
 import SpotifyActionCreators from "SpotifyActionCreators" /* 6779 */;
-import UserActivityActionCreators from "UserActivityActionCreators" /* 12114 */;
+import UserActivityActionCreators from "UserActivityActionCreators" /* 12056 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import RunningGameStore from "RunningGameStore" /* 2140 */;
+import RunningGameStore from "RunningGameStore" /* 2138 */;
 import SpotifyProtocolStore from "SpotifyProtocolStore" /* 6780 */;
 import SpotifyStore from "SpotifyStore" /* 6777 */;
 import SpotifyConstants from "SpotifyConstants" /* 6778 */;
@@ -52,7 +52,7 @@ let value = function _getSpotifyMetadataFromActivity() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

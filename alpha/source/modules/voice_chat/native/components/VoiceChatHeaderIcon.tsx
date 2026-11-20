@@ -1,22 +1,22 @@
-// Module ID: 10944
-// Function ID: 10945
+// Module ID: 10886
+// Function ID: 10887
 // Name: VoiceChatHeaderIcon
-// Dependencies: [19, 17, 6498, 1072, 21, 4792, 575, 5346, 504, 10849, 12, 4853, 6911, 1187, 2]
+// Dependencies: [19, 17, 6500, 1071, 21, 4794, 575, 5348, 504, 10791, 12, 4855, 6910, 1186, 2]
 // Exports: VoiceChatCallScreenHeaderIcon, default, useVoiceChatMentions
 
-// Module 10944 (VoiceChatHeaderIcon)
+// Module 10886 (VoiceChatHeaderIcon)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import native from "native" /* 1187 */;
-import native2 from "native" /* 4853 */;
-import NavigatorConstants from "NavigatorConstants" /* 5346 */;
-import Pressables from "Pressables" /* 6911 */;
-import ChannelCallNavigatorIconDefault from "ChannelCallNavigatorIcon" /* 10849 */;
+import Constants from "Constants" /* 1071 */;
+import native from "native" /* 1186 */;
+import native2 from "native" /* 4855 */;
+import NavigatorConstants from "NavigatorConstants" /* 5348 */;
+import Pressables from "Pressables" /* 6910 */;
+import ChannelCallNavigatorIconDefault from "ChannelCallNavigatorIcon" /* 10791 */;
 import react from "react" /* 19 */;
-import ReadStateStore from "ReadStateStore" /* 6498 */;
+import ReadStateStore from "ReadStateStore" /* 6500 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -78,7 +78,7 @@ export default function VoiceChatHeaderIcon(disabled) {
   }
   items[1] = disabledOpacity;
   const obj2 = { source, color: tmp.badge.backgroundColor, size: native.Icon.Sizes.SMALL_20 };
-  const Icon = tmp3(1187).Icon;
+  const Icon = tmp3(1186).Icon;
   items1 = [metroRequire(Icon, obj2), children];
   return tmp2(PressableOpacity, obj);
 };

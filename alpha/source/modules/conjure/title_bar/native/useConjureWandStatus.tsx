@@ -1,15 +1,15 @@
-// Module ID: 13677
-// Function ID: 13678
+// Module ID: 13648
+// Function ID: 13649
 // Name: useConjureWandStatus
-// Dependencies: [6500, 13678, 5353, 6814, 1113, 4089, 2]
+// Dependencies: [6502, 13649, 5355, 6814, 1112, 4091, 2]
 // Exports: default
 
-// Module 13677 (useConjureWandStatus)
-import intl5 from "intl" /* 1113 */;
-import useMountEffectDefault from "useMountEffect" /* 5353 */;
+// Module 13648 (useConjureWandStatus)
+import intl5 from "intl" /* 1112 */;
+import useMountEffectDefault from "useMountEffect" /* 5355 */;
 import ConjureActionCreators from "ConjureActionCreators" /* 6814 */;
-import useConjureTitleBarStatusDefault from "useConjureTitleBarStatus" /* 13678 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6500 */;
+import useConjureTitleBarStatusDefault from "useConjureTitleBarStatus" /* 13649 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6502 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/title_bar/native/useConjureWandStatus.tsx");
@@ -32,11 +32,11 @@ export default function useConjureWandStatus() {
   });
   let obj = { working: tmp5, hasBadge: !tmp5 && hasUnread, accessibilityLabel: found.join(", ") };
   const intl = intl5.intl;
-  const items = [intl.string(tmp(4089).uk6jhJ), , , ];
+  const items = [intl.string(tmp(4091).uk6jhJ), , , ];
   let stringResult = null;
   if ("working" === kind) {
-    const intl2 = tmp7(1113).intl;
-    stringResult = intl2.string(tmp(4089)["Y8pS+n"]);
+    const intl2 = tmp7(1112).intl;
+    stringResult = intl2.string(tmp(4091)["Y8pS+n"]);
   }
   items[1] = stringResult;
   let kind1;
@@ -45,8 +45,8 @@ export default function useConjureWandStatus() {
   }
   let stringResult1 = null;
   if ("needs_input" === kind1) {
-    const intl3 = tmp7(1113).intl;
-    stringResult1 = intl3.string(tmp(4089).hfIuc7);
+    const intl3 = tmp7(1112).intl;
+    stringResult1 = intl3.string(tmp(4091).hfIuc7);
   }
   items[2] = stringResult1;
   let kind2;
@@ -55,8 +55,8 @@ export default function useConjureWandStatus() {
   }
   let stringResult2 = null;
   if ("unread" === kind2) {
-    const intl4 = tmp7(1113).intl;
-    stringResult2 = intl4.string(tmp(4089)["6XGnHJ"]);
+    const intl4 = tmp7(1112).intl;
+    stringResult2 = intl4.string(tmp(4091)["6XGnHJ"]);
   }
   items[3] = stringResult2;
   found = items.filter((item) => null != item);

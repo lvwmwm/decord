@@ -1,16 +1,16 @@
-// Module ID: 10108
-// Function ID: 10109
+// Module ID: 10111
+// Function ID: 10112
 // Name: UserProfileWidgetDraggableCard
-// Dependencies: [19, 17, 21, 4792, 575, 6928, 7447, 2]
+// Dependencies: [19, 17, 21, 4794, 575, 6927, 7446, 2]
 
-// Module 10108 (UserProfileWidgetDraggableCard)
+// Module 10111 (UserProfileWidgetDraggableCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Card_Card from "Card/Card" /* 6928 */;
-import UserProfileCardTitleDefault from "UserProfileCardTitle" /* 7447 */;
+import Card_Card from "Card/Card" /* 6927 */;
+import UserProfileCardTitleDefault from "UserProfileCardTitle" /* 7446 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

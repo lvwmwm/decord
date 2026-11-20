@@ -1,12 +1,12 @@
-// Module ID: 18320
-// Function ID: 18321
+// Module ID: 18137
+// Function ID: 18138
 // Name: conjureSharingMode
-// Dependencies: [6501, 18321, 2]
+// Dependencies: [6503, 18138, 2]
 // Exports: conjureSharingChange, conjureSharingMode
 
-// Module 18320 (conjureSharingMode)
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6501 */;
-import conjureSharingFlags from "conjureSharingFlags" /* 18321 */;
+// Module 18137 (conjureSharingMode)
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6503 */;
+import conjureSharingFlags from "conjureSharingFlags" /* 18138 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/share/conjureSharingMode.tsx");

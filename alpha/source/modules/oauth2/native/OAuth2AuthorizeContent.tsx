@@ -1,20 +1,20 @@
-// Module ID: 14639
-// Function ID: 14640
+// Module ID: 14607
+// Function ID: 14608
 // Name: OAuth2AuthorizeContent
-// Dependencies: [32, 19, 17, 21, 4792, 575, 1496, 1630, 6957, 9683, 2]
+// Dependencies: [32, 19, 17, 21, 4794, 575, 1494, 1628, 6956, 9683, 2]
 // Exports: default
 
-// Module 14639 (OAuth2AuthorizeContent)
+// Module 14607 (OAuth2AuthorizeContent)
 import nativeDefault from "native" /* 575 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import KeyboardAwareViewDefault from "KeyboardAwareView" /* 6957 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
+import KeyboardAwareViewDefault from "KeyboardAwareView" /* 6956 */;
 import ObscuredSurfaceDefault from "ObscuredSurface" /* 9683 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;

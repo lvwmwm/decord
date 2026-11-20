@@ -1,17 +1,17 @@
-// Module ID: 17705
-// Function ID: 17706
+// Module ID: 17532
+// Function ID: 17533
 // Name: useFavoritesGuildHideAction
-// Dependencies: [19, 4825, 1072, 11157, 4666, 1099, 1113, 3701, 2]
+// Dependencies: [19, 4827, 1071, 11099, 4668, 1098, 1112, 3703, 2]
 // Exports: default
 
-// Module 17705 (useFavoritesGuildHideAction)
-import Constants from "Constants" /* 1072 */;
-import intl3 from "intl" /* 1113 */;
-import _modDef3701 from "module_3701" /* 3701 */;
-import FavoritesUtils from "FavoritesUtils" /* 4666 */;
-import FavoritesActionCreators from "FavoritesActionCreators" /* 11157 */;
+// Module 17532 (useFavoritesGuildHideAction)
+import Constants from "Constants" /* 1071 */;
+import intl3 from "intl" /* 1112 */;
+import _modDef3703 from "module_3703" /* 3703 */;
+import FavoritesUtils from "FavoritesUtils" /* 4668 */;
+import FavoritesActionCreators from "FavoritesActionCreators" /* 11099 */;
 import react from "react" /* 19 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4825 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4827 */;
 import size from "module_2" /* 2 */;
 
 const Routes = Constants.Routes;
@@ -22,7 +22,7 @@ export default function useFavoritesGuildHideAction() {
   let guildId;
   let intl;
   let intl2;
-  let obj = { label: intl.string(_modDef3701["8FO0y9"]), subLabel: intl2.string(_modDef3701.FaHxWl), perform: callback };
+  let obj = { label: intl.string(_modDef3703["8FO0y9"]), subLabel: intl2.string(_modDef3703.FaHxWl), perform: callback };
   callback = react.useCallback(() => {
     const obj = FavoritesActionCreators;
     const result = obj.setFavoritesGuildVisibility(false, "server_context_menu");

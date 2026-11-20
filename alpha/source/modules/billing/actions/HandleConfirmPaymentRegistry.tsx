@@ -1,15 +1,15 @@
-// Module ID: 6259
-// Function ID: 6260
+// Module ID: 6261
+// Function ID: 6262
 // Name: HandleConfirmPaymentRegistry
-// Dependencies: [5, 1072, 1083, 6240, 6254, 1285, 2]
+// Dependencies: [5, 1071, 1082, 6242, 6256, 1284, 2]
 // Exports: getIsStripeDirectConfirmationPaymentSource, getIsStripeRedirectedPaymentSource
 
-// Module 6259 (HandleConfirmPaymentRegistry)
-import Constants2 from "Constants" /* 1083 */;
-import BillingSharedActionCreators from "BillingSharedActionCreators" /* 6240 */;
-import StripeUtilsAll from "StripeUtils" /* 6254 */;
+// Module 6261 (HandleConfirmPaymentRegistry)
+import Constants2 from "Constants" /* 1082 */;
+import BillingSharedActionCreators from "BillingSharedActionCreators" /* 6242 */;
+import StripeUtilsAll from "StripeUtils" /* 6256 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants from "Constants" /* 1072 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 let _self, c2, map;
@@ -253,7 +253,7 @@ class StripePaymentConfirmationHandler extends PaymentConfirmationHandler {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -304,7 +304,7 @@ class StripePaymentConfirmationHandler extends PaymentConfirmationHandler {
             closure_1 = value;
             closure_129_3.performRedirect(closure_1);
             c3 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp20) {
           c3 = 3;
@@ -355,7 +355,7 @@ class StripePaymentConfirmationHandler extends PaymentConfirmationHandler {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

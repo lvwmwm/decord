@@ -1,26 +1,26 @@
 // Module ID: 15487
 // Function ID: 15488
-// Dependencies: [15476, 15451]
+// Dependencies: [15488, 15492, 15495]
 
 // Module 15487
-import _mod15451 from "module_15451" /* 15451 */;
-import module_15476 from "module_15476" /* 15476 */;
+import _mod15488 from "module_15488" /* 15488 */;
+import _mod15492 from "module_15492" /* 15492 */;
+import _mod15495 from "module_15495" /* 15495 */;
 
-let _moduleResult = module_15476(_mod15451.document);
-if (_moduleResult) {
-  const _module1 = module_15476;
-  _moduleResult = _module1(_mod15451.document.createElement);
-}
-let c2 = _moduleResult;
+const obj = {};
+const _URL = _mod15488.URL;
+_URL.install(obj);
+const _URLSearchParams = _mod15488.URLSearchParams;
+_URLSearchParams.install(obj);
+({ URL: exports.URL, URLSearchParams: exports.URLSearchParams } = obj);
 
-export default (arg0) => {
-  let element;
-  const tmp = c2;
-  if (tmp) {
-    const _document = _mod15451.document;
-    element = _document.createElement(arg0);
-  } else {
-    element = {};
-  }
-  return element;
-};
+export const parseURL = _mod15492.parseURL;
+export const basicURLParse = _mod15492.basicURLParse;
+export const serializeURL = _mod15492.serializeURL;
+export const serializeHost = _mod15492.serializeHost;
+export const serializeInteger = _mod15492.serializeInteger;
+export const serializeURLOrigin = _mod15492.serializeURLOrigin;
+export const setTheUsername = _mod15492.setTheUsername;
+export const setThePassword = _mod15492.setThePassword;
+export const cannotHaveAUsernamePasswordPort = _mod15492.cannotHaveAUsernamePasswordPort;
+export const percentDecode = _mod15495.percentDecode;

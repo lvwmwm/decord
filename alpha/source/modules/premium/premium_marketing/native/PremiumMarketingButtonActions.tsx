@@ -1,22 +1,22 @@
 // Module ID: 9286
 // Function ID: 9287
 // Name: PremiumMarketingButtonActions
-// Dependencies: [9023, 1390, 1072, 9032, 9287, 8990, 8051, 9289, 9345, 7420, 7955, 8075, 2]
+// Dependencies: [9023, 1388, 1071, 9032, 9287, 8990, 8050, 9289, 9345, 7419, 7954, 8074, 2]
 // Exports: getButtonActionHandler
 
 // Module 9286 (PremiumMarketingButtonActions)
-import PremiumConstants from "PremiumConstants" /* 1390 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7420 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7955 */;
-import ProductIds from "ProductIds" /* 8051 */;
-import openUserSettings from "openUserSettings" /* 8075 */;
+import PremiumConstants from "PremiumConstants" /* 1388 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7419 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7954 */;
+import ProductIds from "ProductIds" /* 8050 */;
+import openUserSettings from "openUserSettings" /* 8074 */;
 import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 8990 */;
 import cta_button from "cta_button" /* 9032 */;
 import navigateToSocialLayerStorefrontDefault from "navigateToSocialLayerStorefront" /* 9287 */;
 import showMarketingMomentRewardScreen from "showMarketingMomentRewardScreen" /* 9289 */;
 import utils_openGiftModal from "utils/openGiftModal" /* 9345 */;
 import PromotionsStore from "PromotionsStore" /* 9023 */;
-import Constants from "Constants" /* 1072 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 let TIER_2, constants;

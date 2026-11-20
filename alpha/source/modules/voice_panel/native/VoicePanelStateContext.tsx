@@ -1,18 +1,18 @@
-// Module ID: 11687
-// Function ID: 11688
+// Module ID: 11629
+// Function ID: 11630
 // Name: VoicePanelStateContext
-// Dependencies: [19, 11688, 11686, 11689, 7331, 11690, 1632, 11695, 2]
+// Dependencies: [19, 11630, 11628, 11631, 7330, 11632, 1630, 11637, 2]
 
-// Module 11687 (VoicePanelStateContext)
-import SafeAreaConstants from "SafeAreaConstants" /* 1632 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11688 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 11689 */;
-import VoicePanelCardLayoutManagerDefault from "VoicePanelCardLayoutManager" /* 11690 */;
-import VoicePanelPIPHandoffDefault from "VoicePanelPIPHandoff" /* 11695 */;
+// Module 11629 (VoicePanelStateContext)
+import SafeAreaConstants from "SafeAreaConstants" /* 1630 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11630 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 11631 */;
+import VoicePanelCardLayoutManagerDefault from "VoicePanelCardLayoutManager" /* 11632 */;
+import VoicePanelPIPHandoffDefault from "VoicePanelPIPHandoff" /* 11637 */;
 import react from "react" /* 19 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11686 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11628 */;
 import "ReanimatedHelperTypes";
-import ReanimatedHelperTypes_mod from "ReanimatedHelperTypes" /* 7331 */;
+import ReanimatedHelperTypes_mod from "ReanimatedHelperTypes" /* 7330 */;
 import size from "module_2" /* 2 */;
 
 let CONTROLS_HEIGHT;
@@ -25,7 +25,7 @@ const VoicePanelModes = VoicePanelConstants.VoicePanelModes;
 ({ CONTROLS_HEIGHT, VoicePanelControlsModes } = VoicePanelControlsConstants);
 const obj = {
   channelId: "context-not-initialized",
-  channelType: "fileFinishedImporting",
+  channelType: "fill",
   connected: ReanimatedHelperTypes.createFakeSharedValue(false),
   contentDimensions: ReanimatedHelperTypes.createFakeSharedValue({ width: 0, height: 0 }),
   controlsSpecs: ReanimatedHelperTypes.createFakeSharedValue(obj2),

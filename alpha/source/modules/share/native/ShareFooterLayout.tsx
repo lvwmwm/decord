@@ -1,19 +1,19 @@
-// Module ID: 9974
-// Function ID: 9975
+// Module ID: 9977
+// Function ID: 9978
 // Name: ShareFooterLayout
-// Dependencies: [19, 17, 21, 4792, 575, 5367, 1655, 5393, 5394, 5383, 2]
+// Dependencies: [19, 17, 21, 4794, 575, 5369, 1653, 5395, 5396, 5385, 2]
 // Exports: default
 
-// Module 9974 (ShareFooterLayout)
+// Module 9977 (ShareFooterLayout)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5367 */;
-import spring_spring from "spring/spring" /* 5393 */;
-import springPresets from "springPresets" /* 5394 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5369 */;
+import spring_spring from "spring/spring" /* 5395 */;
+import springPresets from "springPresets" /* 5396 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -24,8 +24,8 @@ let obj3;
 let obj4;
 let tmp2;
 let tmp5;
-const _modDef1655 = tmp2(1655);
-const Text_Text = tmp5(5383);
+const _modDef1653 = tmp2(1653);
+const Text_Text = tmp5(5385);
 let View = react_native.View;
 ({ jsx: closure_4, Fragment: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;
@@ -58,8 +58,8 @@ export default function ShareFooterLayout(arg0) {
   const tmp = closure_7();
   const sum = tmp.footer.paddingVertical + useSafeAreaInsetsKeyboardAwareDefault({ includeKeyboardHeight: avoidKeyboard, includeCustomKeyboardHeight: false }).insets.bottom;
   const items = [closure_8, , , ];
-  const useAnimatedStyle = _mod1655.useAnimatedStyle;
-  _mod1655;
+  const useAnimatedStyle = _mod1653.useAnimatedStyle;
+  _mod1653;
   items[1] = spring_spring.withSpring;
   items[2] = sum;
   items[3] = springPresets.ON_PRESS_SPRING;
@@ -81,7 +81,7 @@ export default function ShareFooterLayout(arg0) {
   let obj = { style: items2, children: items4 };
   items2 = [tmp.footer, animatedStyle];
   let tmp12Result = null;
-  View = _modDef1655.View;
+  View = _modDef1653.View;
   if (null != preview) {
     const obj2 = { children: items3 };
     items3 = [preview, ];

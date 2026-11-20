@@ -1,11 +1,11 @@
-// Module ID: 12204
-// Function ID: 12205
+// Module ID: 12146
+// Function ID: 12147
 // Name: GameOrganizationBenefits
-// Dependencies: [1113, 2557, 2]
+// Dependencies: [1112, 2559, 2]
 
-// Module 12204 (GameOrganizationBenefits)
-import intl2 from "intl" /* 1113 */;
-import _modDef2557 from "module_2557" /* 2557 */;
+// Module 12146 (GameOrganizationBenefits)
+import intl2 from "intl" /* 1112 */;
+import _modDef2559 from "module_2559" /* 2559 */;
 import size from "module_2" /* 2 */;
 
 const items = [, , ];
@@ -13,7 +13,7 @@ const obj = {
   key: "auto-sync",
   getText() {
     const intl = intl2.intl;
-    return intl.string(_modDef2557.WUVzdk);
+    return intl.string(_modDef2559.WUVzdk);
   }
 };
 items[0] = obj;
@@ -21,7 +21,7 @@ items[1] = {
   key: "linked-channel",
   getText() {
     const intl = intl2.intl;
-    return intl.string(_modDef2557.MEQJ1m);
+    return intl.string(_modDef2559.MEQJ1m);
   }
 };
 items[2] = {
@@ -30,7 +30,7 @@ items[2] = {
     let displayNoun = arg0;
     const intl = intl2.intl;
     const formatToPlainString = intl.formatToPlainString;
-    const prop = _modDef2557["hn+Lsg"];
+    const prop = _modDef2559["hn+Lsg"];
     if (arg0 == null) {
       displayNoun = "other";
     }

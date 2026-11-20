@@ -1,17 +1,17 @@
-// Module ID: 19230
-// Function ID: 19231
+// Module ID: 19049
+// Function ID: 19050
 // Name: ActivityPanelUtils
-// Dependencies: [4641, 4695, 4640, 5418, 4713, 5439, 1093, 504, 2]
+// Dependencies: [4643, 4697, 4642, 5420, 4715, 5441, 1092, 504, 2]
 // Exports: isActivityPanelFullscreen, isConnectedToActivityInText, useIsActivityPanelFullscreen, useIsConnectedToActivityInText
 
-// Module 19230 (ActivityPanelUtils)
+// Module 19049 (ActivityPanelUtils)
 import get_initialized from "get initialized" /* 504 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4713 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5418 */;
-import isVoiceEmbeddedActivityDefault from "isVoiceEmbeddedActivity" /* 5439 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4695 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4640 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4715 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5420 */;
+import isVoiceEmbeddedActivityDefault from "isVoiceEmbeddedActivity" /* 5441 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4697 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4642 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -41,7 +41,7 @@ export function isConnectedToActivityInText() {
       if (channel != null) {
         type = channel.type;
       }
-      let tmp4 = type === tmp8(1093).ChannelTypes.GUILD_TEXT;
+      let tmp4 = type === tmp8(1092).ChannelTypes.GUILD_TEXT;
       if (!tmp4) {
         let isPrivateResult;
         if (channel != null) {

@@ -1,14 +1,14 @@
-// Module ID: 13412
-// Function ID: 13413
+// Module ID: 13382
+// Function ID: 13383
 // Name: NoMutualServers
-// Dependencies: [19, 21, 7667, 13413, 13414, 13415, 4799, 5479, 2]
+// Dependencies: [19, 21, 7666, 13383, 13384, 13385, 4801, 5481, 2]
 // Exports: NoMutualServers, getNoMutualServersSource, useNoMutualServersSource
 
-// Module 13412 (NoMutualServers)
+// Module 13382 (NoMutualServers)
 import Fragment from "Fragment" /* 21 */;
-import shared from "shared" /* 4799 */;
-import FastImageDefault from "FastImage" /* 5479 */;
-import _mod7667 from "module_7667" /* 7667 */;
+import shared from "shared" /* 4801 */;
+import FastImageDefault from "FastImage" /* 5481 */;
+import _mod7666 from "module_7666" /* 7666 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -27,21 +27,21 @@ const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("design/components/Illustration/native/redesign/generated/NoMutualServers.tsx");
 
 export function getNoMutualServersSource(theme) {
-  const obj = _mod7667;
+  const obj = _mod7666;
   const obj2 = { dark, darker, light };
   return obj.getIllustrationSource(theme, obj2);
 }
 export function useNoMutualServersSource() {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod7667;
+  const obj2 = _mod7666;
   const obj3 = { dark, darker, light };
   return obj2.getIllustrationSource(theme, obj3);
 }
 export function NoMutualServers(arg0) {
   const obj = shared;
   const theme = obj.useThemeContext().theme;
-  const obj2 = _mod7667;
+  const obj2 = _mod7666;
   const obj3 = { dark, darker, light };
   const illustrationSource = obj2.getIllustrationSource(theme, obj3);
   FastImageDefault;

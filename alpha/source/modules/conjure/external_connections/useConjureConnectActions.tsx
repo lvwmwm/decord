@@ -1,11 +1,11 @@
-// Module ID: 18409
-// Function ID: 18410
+// Module ID: 18253
+// Function ID: 18254
 // Name: useConjureConnectActions
-// Dependencies: [5, 32, 19, 18386, 18385, 7136, 1113, 4089, 2]
+// Dependencies: [5, 32, 19, 18230, 18229, 7135, 1112, 4091, 2]
 // Exports: useConjureConnectActions
 
-// Module 18409 (useConjureConnectActions)
-import conjureExternalConnections from "conjureExternalConnections" /* 18386 */;
+// Module 18253 (useConjureConnectActions)
+import conjureExternalConnections from "conjureExternalConnections" /* 18230 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -50,7 +50,7 @@ export function useConjureConnectActions(projectId, presentError) {
               const obj2 = { value, done: true };
               return obj2;
             } else {
-              return { value: "HermesInternal", done: "+60" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
@@ -102,7 +102,7 @@ export function useConjureConnectActions(projectId, presentError) {
                   obj.handleClick(obj8);
                 }
                 c3 = 3;
-                return { value: "HermesInternal", done: "+60" };
+                return { value: "HermesInternal", done: null };
               }
             } catch (tmp33) {
               c3 = 3;

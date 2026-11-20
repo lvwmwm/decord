@@ -4,4 +4,4 @@
 
 // Module 1313
 
-export default Error;
+export default EvalError;

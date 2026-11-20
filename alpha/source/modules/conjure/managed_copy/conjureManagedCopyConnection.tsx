@@ -1,10 +1,10 @@
-// Module ID: 6874
-// Function ID: 6875
+// Module ID: 6873
+// Function ID: 6874
 // Name: conjureManagedCopyConnection
 // Dependencies: [572, 6820, 2]
 // Exports: setConjureDownstreamUpdates
 
-// Module 6874 (conjureManagedCopyConnection)
+// Module 6873 (conjureManagedCopyConnection)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import conjureProjectSockets from "conjureProjectSockets" /* 6820 */;
 import size from "module_2" /* 2 */;

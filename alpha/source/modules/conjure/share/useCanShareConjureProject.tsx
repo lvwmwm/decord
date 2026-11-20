@@ -1,12 +1,12 @@
-// Module ID: 18309
-// Function ID: 18310
+// Module ID: 18154
+// Function ID: 18155
 // Name: useCanShareConjureProject
-// Dependencies: [6500, 6860, 504, 6867, 2]
+// Dependencies: [6502, 6860, 504, 12190, 2]
 // Exports: default
 
-// Module 18309 (useCanShareConjureProject)
-import ConjureProjectStore2 from "ConjureProjectStore" /* 6500 */;
-import ConjurePublishTypes from "ConjurePublishTypes" /* 6867 */;
+// Module 18154 (useCanShareConjureProject)
+import ConjureProjectStore2 from "ConjureProjectStore" /* 6502 */;
+import ConjurePublishTypes from "ConjurePublishTypes" /* 12190 */;
 import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 6860 */;
 import size from "module_2" /* 2 */;
 
@@ -30,9 +30,9 @@ export default function useCanShareConjureProject(arg0) {
     if (publishStatus != null) {
       publishState = publishStatus.publishState;
     }
+    let canShare = null != project && null != publishState;
     const tmp4 = null != project && isProjectOwner(project);
-    let tmp6 = null != project && null != publishState;
-    if (tmp6) {
+    if (canShare) {
       let isConjureLiveResult;
       if (tmp4) {
         isConjureLiveResult = "nothing_built" !== publishState;
@@ -40,15 +40,8 @@ export default function useCanShareConjureProject(arg0) {
         const obj = ConjurePublishTypes;
         isConjureLiveResult = obj.isConjureLive(publishState);
       }
-      tmp6 = isConjureLiveResult;
+      canShare = isConjureLiveResult;
     }
-    const obj2 = { canShare: tmp6, firstShare: tmp6 };
-    if (tmp6) {
-      tmp6 = tmp4;
-    }
-    if (tmp6) {
-      tmp6 = "user" === project.install_scope;
-    }
-    return obj2;
+    return { canShare };
   }, items1);
 };

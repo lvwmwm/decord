@@ -1,24 +1,25 @@
-// Module ID: 18637
-// Function ID: 18638
+// Module ID: 18465
+// Function ID: 18466
 // Name: ConjureClarificationEntityPicker
-// Dependencies: [19, 4722, 4663, 21, 18335, 7229, 6926, 18470, 7203, 5006, 18638, 18483, 18639, 18345, 18640, 504, 6746, 11669, 1113, 4089, 18364, 2]
+// Dependencies: [19, 4724, 4665, 21, 18166, 7228, 6925, 18295, 7202, 5008, 12172, 18308, 18466, 18179, 18467, 504, 6746, 11611, 1112, 4091, 18198, 2]
 // Exports: default
 
-// Module 18637 (ConjureClarificationEntityPicker)
+// Module 18465 (ConjureClarificationEntityPicker)
 import Fragment from "Fragment" /* 21 */;
-import intl2 from "intl" /* 1113 */;
-import _modDef4089 from "module_4089" /* 4089 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5006 */;
+import intl2 from "intl" /* 1112 */;
+import _modDef4091 from "module_4091" /* 4091 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5008 */;
 import ConjureUtils from "ConjureUtils" /* 6746 */;
-import TableRow2 from "TableRow" /* 6926 */;
-import TableRowGroup2 from "TableRowGroup" /* 7229 */;
-import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 11669 */;
-import ConjureGuildPickerSheetDefault from "ConjureGuildPickerSheet" /* 18364 */;
-import ConjureClarification from "ConjureClarification" /* 18470 */;
-import useConjureProjectPickerOptionsDefault from "useConjureProjectPickerOptions" /* 18483 */;
+import TableRow2 from "TableRow" /* 6925 */;
+import TableRowGroup2 from "TableRowGroup" /* 7228 */;
+import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 11611 */;
+import ConjureServerPickerSheetDefault from "ConjureServerPickerSheet" /* 12172 */;
+import ConjureGuildPickerSheetDefault from "ConjureGuildPickerSheet" /* 18198 */;
+import ConjureClarification from "ConjureClarification" /* 18295 */;
+import useConjureProjectPickerOptionsDefault from "useConjureProjectPickerOptions" /* 18308 */;
 import react from "react" /* 19 */;
-import GuildChannelStore from "GuildChannelStore" /* 4722 */;
-import GuildStore from "GuildStore" /* 4663 */;
+import GuildChannelStore from "GuildChannelStore" /* 4724 */;
+import GuildStore from "GuildStore" /* 4665 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -31,14 +32,16 @@ function ServerPicker(onChange) {
   ({ question: require, value } = onChange);
   importDefault = value;
   onChange = onChange.onChange;
+  let found;
   const tmp = require;
+  let tmp2 = onChange;
   ({ disabled, fallback } = onChange);
   let obj = require("useConjureProjects");
   const conjureEligibleGuilds = obj.useConjureEligibleGuilds("ConjureClarificationEntityPicker");
   if (0 === conjureEligibleGuilds.length) {
     return fallback;
   } else {
-    const found = conjureEligibleGuilds.find((id) => {
+    found = conjureEligibleGuilds.find((id) => {
       const first = importDefault[0];
       let id1;
       id = id.id;
@@ -55,12 +58,12 @@ function ServerPicker(onChange) {
       name = first.name;
     }
     if (name == null) {
-      const tmpResult = tmp(onChange[7]);
+      const tmpResult = tmp(tmp2[7]);
       name = tmpResult.clarificationPickerPlaceholder("server", false);
     }
     let tmp8Result;
     if (null != found) {
-      const obj4 = { guild: found, size: tmp(onChange[8]).GuildIconSizes.SMALL_32 };
+      const obj4 = { guild: found, size: tmp(tmp2[8]).GuildIconSizes.SMALL_32 };
       const tmp6 = require("GuildIcon");
       tmp8Result = tmp8(tmp6, obj4);
     }
@@ -87,7 +90,7 @@ function ProjectPicker(arg0) {
       name = first.name;
     }
     if (name == null) {
-      const tmp4Result = tmp4(18470);
+      const tmp4Result = tmp4(18295);
       name = tmp4Result.clarificationPickerPlaceholder("project", false);
     }
     let obj = { hasIcons: false, children: null };
@@ -180,7 +183,7 @@ function GuildEntityPicker(value) {
                                       guild: GuildStore.getGuild(tmp),
                                       channels: result,
                                       selectedChannel: found,
-                                      noChannelOptionLabel: intl.string(_modDef4089["jtBVV+"]),
+                                      noChannelOptionLabel: intl.string(_modDef4091["jtBVV+"]),
                                       onSelect(stateFromStores1) {
                                                       let items;
                                                       const tmp = closure_1_2;

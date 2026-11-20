@@ -1,14 +1,14 @@
-// Module ID: 19854
-// Function ID: 19855
+// Module ID: 19672
+// Function ID: 19673
 // Name: SoundboardCreationUtils
-// Dependencies: [32, 5, 1113, 5740, 11119, 1380, 11120, 19855, 6709, 7432, 5006, 19856, 2121, 19858, 2]
+// Dependencies: [32, 5, 1112, 5742, 11061, 1378, 11062, 19673, 6711, 7431, 5008, 19674, 2119, 19676, 2]
 // Exports: createSoundboardSound, showAddSoundboardSoundOptions
 
-// Module 19854 (SoundboardCreationUtils)
-import intl5 from "intl" /* 1113 */;
-import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5740 */;
+// Module 19672 (SoundboardCreationUtils)
+import intl5 from "intl" /* 1112 */;
+import asyncRequire from "asyncRequire" /* 2119 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5008 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5742 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -52,7 +52,7 @@ let obj = function _pickSoundboardSoundFile() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c5;
@@ -422,7 +422,7 @@ export function showAddSoundboardSoundOptions(guildId) {
     onPress() {
       obj = ActionSheetActionCreatorsDefault;
       const obj2 = { guildId, analyticsSource: "guild_settings_record" };
-      return obj.openLazy(asyncRequire(19856, dependencyMap.paths), "SoundboardRecordSoundActionSheet", obj2);
+      return obj.openLazy(asyncRequire(19674, dependencyMap.paths), "SoundboardRecordSoundActionSheet", obj2);
     }
   };
   intl2 = require("intl").intl;
@@ -445,7 +445,7 @@ export function showAddSoundboardSoundOptions(guildId) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -480,7 +480,7 @@ export function showAddSoundboardSoundOptions(guildId) {
             tmp4(c2[13])(obj);
           }
           c3 = 3;
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp16) {
         c3 = 3;

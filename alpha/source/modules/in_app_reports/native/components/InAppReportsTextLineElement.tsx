@@ -1,19 +1,19 @@
-// Module ID: 10071
-// Function ID: 10072
+// Module ID: 10074
+// Function ID: 10075
 // Name: InAppReportsTextLineElement
-// Dependencies: [5, 32, 19, 17, 21, 4792, 575, 5371, 5812, 1380, 4749, 5471, 5383, 5390, 1113, 7426, 5473, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4794, 575, 5373, 5814, 1378, 4751, 5473, 5385, 5392, 1112, 7425, 5475, 2]
 // Exports: default
 
-// Module 10071 (InAppReportsTextLineElement)
+// Module 10074 (InAppReportsTextLineElement)
 import nativeDefault from "native" /* 575 */;
-import ToastUtils from "ToastUtils" /* 5473 */;
-import ClipboardUtils from "ClipboardUtils" /* 7426 */;
+import ToastUtils from "ToastUtils" /* 5475 */;
+import ClipboardUtils from "ClipboardUtils" /* 7425 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -91,7 +91,7 @@ export default function TextLineElement(element) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -126,7 +126,7 @@ export default function TextLineElement(element) {
               obj.openURL(closure_0);
             }
             c3 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp16) {
           c3 = 3;

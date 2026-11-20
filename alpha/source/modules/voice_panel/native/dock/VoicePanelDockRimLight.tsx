@@ -1,19 +1,19 @@
-// Module ID: 13218
-// Function ID: 13219
+// Module ID: 13188
+// Function ID: 13189
 // Name: VoicePanelDockRimLight
-// Dependencies: [19, 21, 1655, 13219, 13221, 2]
+// Dependencies: [19, 21, 1653, 13189, 13191, 2]
 // Exports: VoicePanelDockRimLevel
 
-// Module 13218 (VoicePanelDockRimLight)
+// Module 13188 (VoicePanelDockRimLight)
 import Fragment from "Fragment" /* 21 */;
-import useVoicePanelDockLevelProps from "useVoicePanelDockLevelProps" /* 13219 */;
-import LiveVoiceLevelViewDefault from "LiveVoiceLevelView" /* 13221 */;
+import useVoicePanelDockLevelProps from "useVoicePanelDockLevelProps" /* 13189 */;
+import LiveVoiceLevelViewDefault from "LiveVoiceLevelView" /* 13191 */;
 import react from "react" /* 19 */;
-import module_1655 from "module_1655" /* 1655 */;
+import module_1653 from "module_1653" /* 1653 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
-const mutable = module_1655.makeMutable(0);
+const mutable = module_1653.makeMutable(0);
 const result = size.fileFinishedImporting("modules/voice_panel/native/dock/VoicePanelDockRimLight.tsx");
 
 export const voicePanelDockRimOpacity = mutable;

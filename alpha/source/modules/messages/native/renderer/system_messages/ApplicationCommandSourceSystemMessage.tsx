@@ -1,15 +1,15 @@
-// Module ID: 8638
-// Function ID: 8639
+// Module ID: 8637
+// Function ID: 8638
 // Name: ApplicationCommandSourceSystemMessage
-// Dependencies: [1072, 5817, 8639, 8579, 1113, 8581, 8583, 2]
+// Dependencies: [1071, 5819, 8638, 8578, 1112, 8580, 8582, 2]
 // Exports: createApplicationCommandSourceSystemMessage
 
-// Module 8638 (ApplicationCommandSourceSystemMessage)
-import Constants from "Constants" /* 1072 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5817 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8579 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8581 */;
-import _slicedToArray from "_slicedToArray" /* 8639 */;
+// Module 8637 (ApplicationCommandSourceSystemMessage)
+import Constants from "Constants" /* 1071 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5819 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8578 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8580 */;
+import _slicedToArray from "_slicedToArray" /* 8638 */;
 import size from "module_2" /* 2 */;
 
 const MessageTypes = Constants.MessageTypes;
@@ -32,10 +32,10 @@ export function createApplicationCommandSourceSystemMessage(message) {
     if (null != name) {
       const tmpResult = useAuthorWithProcessedColor;
       const messageAuthorWithProcessedColor = tmpResult.getMessageAuthorWithProcessedColor(message);
-      const intl = tmp(1113).intl;
+      const intl = tmp(1112).intl;
       const formatToParts = intl.formatToParts;
       const obj2 = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: formatUsernameOnClickDefault(obj3), commandName: name2, applicationName: name };
-      const prop = tmp(1113).t["1Zm+zw"];
+      const prop = tmp(1112).t["1Zm+zw"];
       obj3 = { message, author: messageAuthorWithProcessedColor, roleStyle };
       const tmp10 = importDefault;
       if (message.type === MessageTypes.CHAT_INPUT_COMMAND) {
@@ -45,7 +45,7 @@ export function createApplicationCommandSourceSystemMessage(message) {
         name2 = applicationCommand.name;
       }
       const obj4 = { content: formatToParts(prop, obj2) };
-      const merged = Object.assign(tmp10(8583)(message));
+      const merged = Object.assign(tmp10(8582)(message));
       return obj4;
     }
   }

@@ -1,20 +1,20 @@
-// Module ID: 17933
-// Function ID: 17934
+// Module ID: 17760
+// Function ID: 17761
 // Name: GuildsBarMessages
-// Dependencies: [19, 9910, 4825, 1072, 21, 17870, 17919, 504, 17922, 575, 1113, 17934, 7553, 2]
+// Dependencies: [19, 9913, 4827, 1071, 21, 17697, 17746, 504, 17749, 575, 1112, 17761, 7552, 2]
 
-// Module 17933 (GuildsBarMessages)
+// Module 17760 (GuildsBarMessages)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import intl2 from "intl" /* 1113 */;
-import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 17870 */;
-import GuildsBarAnimatedItemWrapper from "GuildsBarAnimatedItemWrapper" /* 17919 */;
-import useGuildsBarBottomRightBadgeDefault from "useGuildsBarBottomRightBadge" /* 17922 */;
+import Constants from "Constants" /* 1071 */;
+import intl2 from "intl" /* 1112 */;
+import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 17697 */;
+import GuildsBarAnimatedItemWrapper from "GuildsBarAnimatedItemWrapper" /* 17746 */;
+import useGuildsBarBottomRightBadgeDefault from "useGuildsBarBottomRightBadge" /* 17749 */;
 import react from "react" /* 19 */;
-import ICYMIStore from "ICYMIStore" /* 9910 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4825 */;
+import ICYMIStore from "ICYMIStore" /* 9913 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4827 */;
 import size from "module_2" /* 2 */;
 
 const GuildsBarAnimatedItemWrapperDefault = GuildsBarAnimatedItemWrapper;
@@ -45,8 +45,8 @@ const memoResult = react.memo(function GuildsBarMessages() {
   useGuildsBarBottomRightBadgeDefault({ mentionCount: 0 });
   const colors = nativeDefault.colors;
   GuildsBarAnimatedItemWrapperDefault;
-  const intl = tmp(1113).intl;
-  return <tmp5Result selected={stateFromStores} circle={false} unread={false} styles={guildsBarAnimatedWrapperStyles} cutouts={cutouts} config={config} overState="y" label={intl.string(intl2.t.YUU0RF)} externalChildren={badge} expandedChildren={0.716}>{"`"}</tmp5Result>;
+  const intl = tmp(1112).intl;
+  return <tmp5Result selected={stateFromStores} circle={false} unread={false} styles={guildsBarAnimatedWrapperStyles} cutouts={cutouts} config={config} overState="y" label={intl.string(intl2.t.YUU0RF)} externalChildren={badge} expandedChildren={560}>{24}</tmp5Result>;
 });
 const result = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBarMessages.tsx");
 

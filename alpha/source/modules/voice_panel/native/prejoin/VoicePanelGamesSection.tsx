@@ -1,16 +1,16 @@
-// Module ID: 19357
-// Function ID: 19358
+// Module ID: 19177
+// Function ID: 19178
 // Name: VoicePanelGamesSection
-// Dependencies: [19, 21, 8933, 9645, 9654, 1113, 9622, 6926, 19358, 9554, 2]
+// Dependencies: [19, 21, 8933, 9645, 9654, 1112, 9622, 6925, 19178, 9554, 2]
 
-// Module 19357 (VoicePanelGamesSection)
+// Module 19177 (VoicePanelGamesSection)
 import Fragment from "Fragment" /* 21 */;
-import intl3 from "intl" /* 1113 */;
+import intl3 from "intl" /* 1112 */;
 import useGame from "useGame" /* 8933 */;
 import FormComponents from "FormComponents" /* 9554 */;
 import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 9645 */;
 import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9654 */;
-import useVoiceChannelGamesDefault from "useVoiceChannelGames" /* 19358 */;
+import useVoiceChannelGamesDefault from "useVoiceChannelGames" /* 19178 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -34,11 +34,11 @@ function GameRow(gameId) {
     if ("" !== data.name) {
       name = data.name;
     } else {
-      const intl = tmp(1113).intl;
-      name = intl.string(tmp(1113).t.GIWFlF);
+      const intl = tmp(1112).intl;
+      name = intl.string(tmp(1112).t.GIWFlF);
     }
     const tmp7 = jsx(GameActivityIconDefault, { game: data, size: 32, fallback: "placeholder" });
-    const TableRow = tmp(6926).TableRow;
+    const TableRow = tmp(6925).TableRow;
     const tmp6 = jsx;
     if (null == tmp4Result) {
       obj5 = { icon: tmp7, label: name, disabled: true };
@@ -54,7 +54,7 @@ function GameRow(gameId) {
         accessibilityRole: "button",
         accessibilityLabel: intl2.formatToPlainString(intl3.t["9sZWVp"], obj6)
       };
-      intl2 = tmp(1113).intl;
+      intl2 = tmp(1112).intl;
       obj6 = { gameName: name };
     }
     return tmp6(TableRow, obj5);

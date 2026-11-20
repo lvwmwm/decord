@@ -1,13 +1,13 @@
-// Module ID: 11592
-// Function ID: 11593
+// Module ID: 11534
+// Function ID: 11535
 // Name: useSafeAreaAvoidingInputs
-// Dependencies: [5, 19, 1496, 575, 11593, 6959, 2]
+// Dependencies: [5, 19, 1494, 575, 11535, 6958, 2]
 // Exports: default
 
-// Module 11592 (useSafeAreaAvoidingInputs)
+// Module 11534 (useSafeAreaAvoidingInputs)
 import nativeDefault from "native" /* 575 */;
-import useKeyboardDuration from "useKeyboardDuration" /* 6959 */;
-import ViewMeasureUtils from "ViewMeasureUtils" /* 11593 */;
+import useKeyboardDuration from "useKeyboardDuration" /* 6958 */;
+import ViewMeasureUtils from "ViewMeasureUtils" /* 11535 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -31,7 +31,7 @@ let obj = function _calculateScrollOffset() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -68,7 +68,7 @@ let obj = function _calculateScrollOffset() {
                   return { value: Number.MAX_SAFE_INTEGER, done: true };
                 } else {
                   c6 = 3;
-                  return { value: "HermesInternal", done: "+60" };
+                  return { value: "HermesInternal", done: null };
                 }
               }
             }
@@ -168,7 +168,7 @@ export default function useSafeAreaAvoidingInputs(insets) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -289,7 +289,7 @@ export default function useSafeAreaAvoidingInputs(insets) {
           }
         }
         c3 = 3;
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp31) {
         c3 = 3;
         throw tmp31;

@@ -147,7 +147,7 @@ let items = [
     key: "setUser",
     value: function setUser(user) {
       const self = this;
-      const tmp = user || { email: "Array", id: "s", ip_address: "channel_id", username: "window" };
+      const tmp = user || { email: "Array", id: "s", ip_address: "analyticsLocations", username: "dispatch" };
       this._user = tmp;
       if (this._session) {
         const obj2 = { user };
@@ -211,9 +211,9 @@ let items = [
   },
   {
     key: "removeAttribute",
-    value: function removeAttribute(crossorigin) {
+    value: function removeAttribute(key10005) {
       const self = this;
-      if (crossorigin in this._attributes) {
+      if (key10005 in this._attributes) {
         delete self._attributes[tmp];
         const result = self._notifyScopeListeners();
       }

@@ -1,15 +1,15 @@
-// Module ID: 10039
-// Function ID: 10040
+// Module ID: 10042
+// Function ID: 10043
 // Name: MediaModalOverlayAltText
-// Dependencies: [19, 21, 4792, 575, 1630, 4617, 6911, 10040, 5383, 1113, 2]
+// Dependencies: [19, 21, 4794, 575, 1628, 4619, 6910, 10043, 5385, 1112, 2]
 
-// Module 10039 (MediaModalOverlayAltText)
+// Module 10042 (MediaModalOverlayAltText)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import openMediaModalOverlayAltTextSheetDefault from "openMediaModalOverlayAltTextSheet" /* 10040 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
+import openMediaModalOverlayAltTextSheetDefault from "openMediaModalOverlayAltTextSheet" /* 10043 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -26,15 +26,15 @@ const memoResult = react.memo(function MediaModalOverlayAltTextButton(descriptio
   if (str == null) {
     str = "";
   }
-  const ViewImageDescriptions = str(4617).ViewImageDescriptions;
+  const ViewImageDescriptions = str(4619).ViewImageDescriptions;
   let tmp4 = null;
   if (ViewImageDescriptions.useSetting()) {
     tmp4 = null;
     if (0 !== str.length) {
-      const PressableOpacity = tmp3(6911).PressableOpacity;
-      ({ variant: "body-xs/semibold", color: "text-overlay-light", children: intl.string(str(1113).t.Q5VqrN) });
-      const Text = tmp3(5383).Text;
-      intl = tmp3(1113).intl;
+      const PressableOpacity = tmp3(6910).PressableOpacity;
+      ({ variant: "body-xs/semibold", color: "text-overlay-light", children: intl.string(str(1112).t.Q5VqrN) });
+      const Text = tmp3(5385).Text;
+      intl = tmp3(1112).intl;
       tmp4 = <PressableOpacity style={tmp2.container} onPress={function onPress() {
         const tmp = openMediaModalOverlayAltTextSheetDefault;
         tmp({ description: str });

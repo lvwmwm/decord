@@ -1,16 +1,16 @@
 // Module ID: 9247
 // Function ID: 9248
 // Name: PremiumManagementUtils
-// Dependencies: [1072, 1083, 21, 3, 5740, 1113, 1380, 1627, 9120, 9248, 2]
+// Dependencies: [1071, 1082, 21, 3, 5742, 1112, 1378, 1625, 9120, 9248, 2]
 // Exports: getExternalManagementMessage, getPremiumManagementMethod
 
 // Module 9247 (PremiumManagementUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1072 */;
-import Constants2 from "Constants" /* 1083 */;
-import intl5 from "intl" /* 1113 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5740 */;
+import Constants from "Constants" /* 1071 */;
+import Constants2 from "Constants" /* 1082 */;
+import intl5 from "intl" /* 1112 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5742 */;
 import BillingStandaloneNativeUtils from "BillingStandaloneNativeUtils" /* 9120 */;
 import size from "module_2" /* 2 */;
 
@@ -101,7 +101,7 @@ export function getExternalManagementMessage(subscription, arg1) {
       if (tmp2 === obj.IN_EXTERNAL_MOBILE_PAYMENT_GATEWAY) {
         if (null != subscription) {
           if (null != subscription.paymentGateway) {
-            const intl4 = tmp13(1113).intl;
+            const intl4 = tmp13(1112).intl;
             obj = { mobilePlatform: str2, externalPaymentGateway: closure_4[subscription.paymentGateway] };
             return intl4.formatToPlainString(require("intl").t.cFZnqX, obj);
           }
@@ -137,9 +137,9 @@ export function getExternalManagementMessage(subscription, arg1) {
                 variant: "body-sm/semibold"
               };
               const LinkButton = tmp13(9248).LinkButton;
-              const intl3 = tmp13(1113).intl;
+              const intl3 = tmp13(1112).intl;
               string = intl3.string;
-              t = tmp13(1113).t;
+              t = tmp13(1112).t;
               formatResult = jsx(LinkButton, obj2);
             } else {
               function manageExternalNitroSubscription() {
@@ -151,14 +151,14 @@ export function getExternalManagementMessage(subscription, arg1) {
                   return obj.goToStandaloneNitroManagementFromMobileApp("premium_external_management", obj2, tmp4, tmp5);
                 }
               }
-              const intl2 = tmp13(1113).intl;
+              const intl2 = tmp13(1112).intl;
               const obj3 = { manageExternalNitroSubscription };
-              formatResult = intl2.format(tmp13(1113).t.IERwUb, obj3);
+              formatResult = intl2.format(tmp13(1112).t.IERwUb, obj3);
             }
             return formatResult;
           }
         }
-        const intl = tmp13(1113).intl;
+        const intl = tmp13(1112).intl;
         const obj4 = { mobilePlatform: str2 };
         return intl.formatToPlainString(require("intl").t.CnoyAN, obj4);
       } else {

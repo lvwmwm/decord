@@ -1,7 +1,7 @@
 // Module ID: 8917
 // Function ID: 8918
 // Name: useWishlistButtonState
-// Dependencies: [5, 32, 19, 6837, 7401, 2153, 504, 8862, 8870, 4799, 1113, 2]
+// Dependencies: [5, 32, 19, 6837, 7400, 2151, 504, 8862, 8870, 4801, 1112, 2]
 // Exports: useWishlistButtonState
 
 // Module 8917 (useWishlistButtonState)
@@ -84,7 +84,7 @@ export function useWishlistButtonState(onRemoveSuccess) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -200,7 +200,7 @@ export function useWishlistButtonState(onRemoveSuccess) {
             closure_129_10(false);
           }
           c5 = 3;
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp81) {
           onAddSuccess = tmp81;
           if (0 === c3) {

@@ -1,12 +1,12 @@
 // Module ID: 9662
 // Function ID: 9663
 // Name: useXboxGamePassStoreUrl
-// Dependencies: [1072, 2153, 9653, 2]
+// Dependencies: [1071, 2151, 9653, 2]
 // Exports: default
 
 // Module 9662 (useXboxGamePassStoreUrl)
-import Constants from "Constants" /* 1072 */;
-import StringUtils from "StringUtils" /* 2153 */;
+import Constants from "Constants" /* 1071 */;
+import StringUtils from "StringUtils" /* 2151 */;
 import distributorStoreUrls from "distributorStoreUrls" /* 9653 */;
 import size from "module_2" /* 2 */;
 

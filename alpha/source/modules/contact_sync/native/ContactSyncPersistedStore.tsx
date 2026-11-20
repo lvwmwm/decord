@@ -1,13 +1,13 @@
-// Module ID: 13494
-// Function ID: 13495
+// Module ID: 13464
+// Function ID: 13465
 // Name: ContactSyncPersistedStore
-// Dependencies: [510, 1263, 572, 560, 2]
+// Dependencies: [510, 1262, 572, 560, 2]
 // Exports: clearDismissState, deleteStoredContacts, dismissDMListCTA, dismissUpsellCTA, setDMListCTAFirstSeenDate, setStoredContacts
 
-// Module 13494 (ContactSyncPersistedStore)
+// Module 13464 (ContactSyncPersistedStore)
 import Storage4 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import react_native from "react-native" /* 1263 */;
+import react_native from "react-native" /* 1262 */;
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
@@ -53,7 +53,7 @@ Storage2.asyncGet("ContactSyncDMListCTADismissed", async (arg0) => {
   if (Date.now() - timestamp > 5184000000) {
     _require = true;
   }
-  const tmpResult = tmp(1263);
+  const tmpResult = tmp(1262);
   tmpResult.batchUpdates(() => {
     const obj = { dmListCTADismissed };
     return obj.setState(obj);

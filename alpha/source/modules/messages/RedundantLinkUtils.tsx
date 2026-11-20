@@ -1,13 +1,13 @@
-// Module ID: 8119
-// Function ID: 8120
+// Module ID: 8118
+// Function ID: 8119
 // Name: RedundantLinkUtils
-// Dependencies: [6264, 6263, 5510, 2]
+// Dependencies: [6266, 6265, 5512, 2]
 // Exports: hasOnlySimpleEmbed, isRedundantLink, isSingleLinkContent, readContentLinks
 
-// Module 8119 (RedundantLinkUtils)
-import findCodedLinks from "findCodedLinks" /* 5510 */;
-import EmbedUtils from "EmbedUtils" /* 6263 */;
-import EmbedConstants from "EmbedConstants" /* 6264 */;
+// Module 8118 (RedundantLinkUtils)
+import findCodedLinks from "findCodedLinks" /* 5512 */;
+import EmbedUtils from "EmbedUtils" /* 6265 */;
+import EmbedConstants from "EmbedConstants" /* 6266 */;
 import size from "module_2" /* 2 */;
 
 const SIMPLE_EMBED_TYPES = EmbedConstants.SIMPLE_EMBED_TYPES;

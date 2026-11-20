@@ -1,14 +1,14 @@
-// Module ID: 18746
-// Function ID: 18747
+// Module ID: 18570
+// Function ID: 18571
 // Name: useFrameLifecycle
-// Dependencies: [32, 5, 19, 6503, 10560, 18747, 18748, 6538, 2151, 5433, 2]
+// Dependencies: [32, 5, 19, 6505, 10502, 18571, 18572, 6540, 2149, 5435, 2]
 // Exports: default
 
-// Module 18746 (useFrameLifecycle)
+// Module 18570 (useFrameLifecycle)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import FramesConstants from "FramesConstants" /* 6503 */;
+import FramesConstants from "FramesConstants" /* 6505 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -67,8 +67,8 @@ export default function useFrameLifecycle(applicationId) {
       obj10 = { state: obj.Loading, frame: tmp3 };
       const obj7 = { state: obj.Loading, frame: tmp3 };
     } else if (isLoading) {
-      obj10 = { state: obj.Loading, frame: "r" };
-      const obj8 = { state: obj.Loading, frame: "r" };
+      obj10 = { state: obj.Loading, frame: "Array" };
+      const obj8 = { state: obj.Loading, frame: "Array" };
     } else {
       if (null != data) {
         if (tmp7) {
@@ -108,7 +108,7 @@ export default function useFrameLifecycle(applicationId) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c2;
@@ -148,7 +148,7 @@ export default function useFrameLifecycle(applicationId) {
                 c2 = 0;
               }
               c3 = 3;
-              return { value: "HermesInternal", done: "+60" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp12) {
             if (0 === c2) {

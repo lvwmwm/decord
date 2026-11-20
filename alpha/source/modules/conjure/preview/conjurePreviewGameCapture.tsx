@@ -1,15 +1,15 @@
-// Module ID: 14644
-// Function ID: 14645
+// Module ID: 14612
+// Function ID: 14613
 // Name: conjurePreviewGameCapture
-// Dependencies: [5, 6500, 14645, 14646, 14647, 1493, 2]
+// Dependencies: [5, 6502, 14613, 14614, 14615, 1491, 2]
 // Exports: hasConjurePreviewGameCapture, readConjurePreviewGameCapture
 
-// Module 14644 (conjurePreviewGameCapture)
-import conjureMediaTickets from "conjureMediaTickets" /* 14647 */;
+// Module 14612 (conjurePreviewGameCapture)
+import conjureMediaTickets from "conjureMediaTickets" /* 14615 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6500 */;
-import ConjureBuilderPreviewStore from "ConjureBuilderPreviewStore" /* 14645 */;
-import ConjureGameCapturesStore from "ConjureGameCapturesStore" /* 14646 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6502 */;
+import ConjureBuilderPreviewStore from "ConjureBuilderPreviewStore" /* 14613 */;
+import ConjureGameCapturesStore from "ConjureGameCapturesStore" /* 14614 */;
 import size_mod from "module_2" /* 2 */;
 
 let c2, c4, c6;
@@ -32,7 +32,7 @@ let obj = function _getGameCaptureUrl() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -135,7 +135,7 @@ obj = function _loadGameCapture() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c5;
@@ -244,7 +244,7 @@ obj = function _readConjurePreviewGameCapture() {
         obj = { value, done: true };
         return obj;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;

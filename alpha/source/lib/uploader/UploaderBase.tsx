@@ -1,16 +1,16 @@
-// Module ID: 8414
-// Function ID: 8415
+// Module ID: 8413
+// Function ID: 8414
 // Name: UploaderBase
-// Dependencies: [5, 1072, 4797, 3, 568, 12, 8376, 8353, 8354, 2]
+// Dependencies: [5, 1071, 4799, 3, 568, 12, 8375, 8352, 8353, 2]
 
-// Module 8414 (UploaderBase)
+// Module 8413 (UploaderBase)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
 import _mod568 from "module_568" /* 568 */;
-import Constants from "Constants" /* 1072 */;
-import MessageConstants from "MessageConstants" /* 4797 */;
-import uploader_UploadUtils from "uploader/UploadUtils" /* 8353 */;
-import UploadTargets from "UploadTargets" /* 8376 */;
+import Constants from "Constants" /* 1071 */;
+import MessageConstants from "MessageConstants" /* 4799 */;
+import uploader_UploadUtils from "uploader/UploadUtils" /* 8352 */;
+import UploadTargets from "UploadTargets" /* 8375 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -90,7 +90,7 @@ class UploaderBase extends EventEmitter {
     };
     let obj = _modDef12;
     tmp3.id = obj.uniqueId("Uploader");
-    tmp3._file = { id: tmp3.id, currentSize: 0, totalPreCompressionSize: 0, compressionProgress: 0, progress: 0, rate: 0, hasImage: false, hasVideo: false, attachmentsCount: 0, items: "analyticsLocations" };
+    tmp3._file = { id: tmp3.id, currentSize: 0, totalPreCompressionSize: 0, compressionProgress: 0, progress: 0, rate: 0, hasImage: false, hasVideo: false, attachmentsCount: 0, items: "channel_id" };
     return tmp3;
   }
   _fileSize() {
@@ -127,7 +127,7 @@ class UploaderBase extends EventEmitter {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c7;
@@ -409,7 +409,7 @@ class UploaderBase extends EventEmitter {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -465,7 +465,7 @@ class UploaderBase extends EventEmitter {
             }
           }
           c3 = 3;
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp28) {
           c3 = 3;
           throw tmp28;

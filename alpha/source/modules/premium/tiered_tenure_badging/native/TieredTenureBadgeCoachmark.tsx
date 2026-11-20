@@ -1,20 +1,20 @@
-// Module ID: 14116
-// Function ID: 14117
+// Module ID: 14085
+// Function ID: 14086
 // Name: TieredTenureBadgeCoachmark
-// Dependencies: [32, 19, 17, 1072, 4638, 21, 4792, 13873, 5479, 6844, 4625, 8960, 1113, 8075, 8967, 2]
+// Dependencies: [32, 19, 17, 1071, 4640, 21, 4794, 13842, 5481, 6844, 4627, 8960, 1112, 8074, 8967, 2]
 // Exports: default
 
-// Module 14116 (TieredTenureBadgeCoachmark)
+// Module 14085 (TieredTenureBadgeCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1072 */;
-import intl4 from "intl" /* 1113 */;
-import dismissible_content from "dismissible_content" /* 4625 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4638 */;
-import useMobileTenureBadgeImages2 from "useMobileTenureBadgeImages" /* 13873 */;
+import Constants from "Constants" /* 1071 */;
+import intl4 from "intl" /* 1112 */;
+import dismissible_content from "dismissible_content" /* 4627 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4640 */;
+import useMobileTenureBadgeImages2 from "useMobileTenureBadgeImages" /* 13842 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -65,7 +65,7 @@ export default function TieredTenureBadgeCoachmark(arg0) {
     tieredTenureBadgeData = tmpResult.getTieredTenureBadgeData(tieredTenureBadge);
   }
   if (null != tieredTenureBadgeData) {
-    const items = [tmp(4625).DismissibleContent.TIERED_TENURE_BADGE_COACHMARK];
+    const items = [tmp(4627).DismissibleContent.TIERED_TENURE_BADGE_COACHMARK];
     items1 = items;
   } else {
     items1 = [];

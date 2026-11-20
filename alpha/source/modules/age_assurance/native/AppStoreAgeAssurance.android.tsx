@@ -1,10 +1,10 @@
-// Module ID: 7866
-// Function ID: 7867
+// Module ID: 7865
+// Function ID: 7866
 // Name: AppStoreAgeAssurance
-// Dependencies: [5, 7867, 2]
+// Dependencies: [5, 7866, 2]
 
-// Module 7866 (AppStoreAgeAssurance)
-import PlayAgeSignals from "PlayAgeSignals" /* 7867 */;
+// Module 7865 (AppStoreAgeAssurance)
+import PlayAgeSignals from "PlayAgeSignals" /* 7866 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -20,6 +20,7 @@ let obj = {
       let tmp2;
       if (c2 === 2) {
         c2 = 3;
+        const str = "Generator functions may not be called on executing generators";
         throw new TypeError("Generator functions may not be called on executing generators");
       } else if (tmp2 === 3) {
         if (arg0 === 1) {
@@ -28,7 +29,7 @@ let obj = {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -48,8 +49,9 @@ let obj = {
                 let tmp;
                 let tmp2;
                 let tmp3;
+                let tmp4;
                 const ageSignalsStatus = ageLower.ageSignalsStatus;
-                const obj = { platform: "android", ageLower: ageLower.ageLower, ageUpper: ageLower.ageUpper, googleAgeSignalsStatus: tmp, googleAgeRangeSource: tmp2, googleSignificantChangeStatus: tmp3 };
+                const obj = { platform: "android", ageLower: ageLower.ageLower, ageUpper: ageLower.ageUpper, googleAgeSignalsStatus: tmp, googleAgeRangeSource: tmp2, googleSignificantChangeStatus: tmp3, googleInstallId: tmp4 };
                 tmp = undefined;
                 if (null != ageSignalsStatus) {
                   tmp = closure_1_3[ageSignalsStatus];
@@ -63,6 +65,13 @@ let obj = {
                 tmp3 = undefined;
                 if (null != significantChangeStatus) {
                   tmp3 = closure_1_5[significantChangeStatus];
+                }
+                const installId = ageLower.installId;
+                tmp4 = undefined;
+                if (null != installId) {
+                  if ("" !== installId) {
+                    tmp4 = installId;
+                  }
                 }
                 return obj;
               };
@@ -80,6 +89,7 @@ let obj = {
             const obj6 = { value, done: true };
             return obj6;
           } else {
+            let tmp4 = toAppStoreAgeCheck;
             c2 = 3;
             let obj = { value: toAppStoreAgeCheck(value), done: true };
             return obj;

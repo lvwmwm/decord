@@ -1,17 +1,17 @@
-// Module ID: 17688
-// Function ID: 17689
+// Module ID: 17515
+// Function ID: 17516
 // Name: ConnectedUserLimit
-// Dependencies: [19, 21, 9546, 17689, 2]
+// Dependencies: [19, 21, 9546, 17516, 2]
 // Exports: ConnectedUserLimit
 
-// Module 17688 (ConnectedUserLimit)
+// Module 17515 (ConnectedUserLimit)
 import Fragment from "Fragment" /* 21 */;
 import useChannelVideoLimitDefault from "useChannelVideoLimit" /* 9546 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const VoiceChannelUserLimitDefault = tmp(17689);
+const VoiceChannelUserLimitDefault = tmp(17516);
 const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/guild_sidebar/native/ConnectedUserLimit.tsx");
 

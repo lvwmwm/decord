@@ -1,12 +1,12 @@
 // Module ID: 6736
 // Function ID: 6737
 // Name: SlayerStorefrontPriceUtils
-// Dependencies: [1072, 1083, 2]
+// Dependencies: [1071, 1082, 2]
 // Exports: getCountryPrices, hasPrice, isGiftPriceDifferent
 
 // Module 6736 (SlayerStorefrontPriceUtils)
-import Constants from "Constants" /* 1072 */;
-import Constants2 from "Constants" /* 1083 */;
+import Constants from "Constants" /* 1071 */;
+import Constants2 from "Constants" /* 1082 */;
 import size from "module_2" /* 2 */;
 
 function getPrice(price, arg1) {

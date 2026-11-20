@@ -1,12 +1,12 @@
 // Module ID: 9416
 // Function ID: 9417
 // Name: useVisibleRanges
-// Dependencies: [19, 1655]
+// Dependencies: [19, 1653]
 // Exports: useVisibleRanges
 
 // Module 9416 (useVisibleRanges)
 import react from "react" /* 19 */;
-import _mod1655 from "module_1655" /* 1655 */;
+import _mod1653 from "module_1653" /* 1653 */;
 
 let tmp2;
 const useRef = react.useRef;
@@ -44,7 +44,7 @@ export function useVisibleRanges(total) {
     windowSize = num;
   }
   const tmp = useRef(null);
-  let obj = _mod1655;
+  let obj = _mod1653;
   let items = [closure_3, windowSize, translation, viewSize, num, loop, isArraysEqual, tmp];
   let c0;
   let c1;

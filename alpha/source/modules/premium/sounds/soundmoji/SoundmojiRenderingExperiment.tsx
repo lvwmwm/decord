@@ -1,11 +1,11 @@
-// Module ID: 12391
-// Function ID: 12392
+// Module ID: 12361
+// Function ID: 12362
 // Name: SoundmojiRenderingExperiment
-// Dependencies: [1452, 2]
+// Dependencies: [1450, 2]
 // Exports: getSoundmojiRenderingExperiment, useSoundmojiRenderingExperiment
 
-// Module 12391 (SoundmojiRenderingExperiment)
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+// Module 12361 (SoundmojiRenderingExperiment)
+import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

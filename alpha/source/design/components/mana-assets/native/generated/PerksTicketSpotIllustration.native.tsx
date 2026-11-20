@@ -1,26 +1,26 @@
-// Module ID: 20000
-// Function ID: 20001
+// Module ID: 19820
+// Function ID: 19821
 // Name: PerksTicketSpotIllustration
-// Dependencies: [19, 21, 20001, 20002, 20003, 7238, 5479, 2]
+// Dependencies: [19, 21, 19821, 19822, 19823, 7237, 5481, 2]
 // Exports: PerksTicketSpotIllustration
 
-// Module 20000 (PerksTicketSpotIllustration)
+// Module 19820 (PerksTicketSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 7238 */;
-import _modDef20001 from "module_20001" /* 20001 */;
-import _modDef20002 from "module_20002" /* 20002 */;
-import _modDef20003 from "module_20003" /* 20003 */;
+import react_native from "react-native" /* 7237 */;
+import _modDef19821 from "module_19821" /* 19821 */;
+import _modDef19822 from "module_19822" /* 19822 */;
+import _modDef19823 from "module_19823" /* 19823 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef20001 };
+let obj2 = { uri: _modDef19821 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef20002 };
+let obj3 = { uri: _modDef19822 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef20003 };
-({ uri: _modDef20003 });
+obj[3] = { uri: _modDef19823 };
+({ uri: _modDef19823 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/PerksTicketSpotIllustration.native.tsx");
 

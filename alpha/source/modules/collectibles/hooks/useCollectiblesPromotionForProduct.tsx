@@ -1,11 +1,11 @@
 // Module ID: 8840
 // Function ID: 8841
 // Name: useCollectiblesPromotionForProduct
-// Dependencies: [1072, 8841, 8842, 8847, 2]
+// Dependencies: [1071, 8841, 8842, 8847, 2]
 // Exports: useCollectiblesPromotionForProduct
 
 // Module 8840 (useCollectiblesPromotionForProduct)
-import Constants from "Constants" /* 1072 */;
+import Constants from "Constants" /* 1071 */;
 import usePromotionForApplicationDefault from "usePromotionForApplication" /* 8841 */;
 import CollectiblesPricingPromotionUtils from "CollectiblesPricingPromotionUtils" /* 8842 */;
 import size from "module_2" /* 2 */;

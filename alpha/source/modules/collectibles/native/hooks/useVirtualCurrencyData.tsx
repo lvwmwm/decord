@@ -1,11 +1,11 @@
 // Module ID: 9445
 // Function ID: 9446
 // Name: useVirtualCurrencyData
-// Dependencies: [19, 7967, 9446, 2]
+// Dependencies: [19, 7966, 9446, 2]
 // Exports: useVirtualCurrencyData
 
 // Module 9445 (useVirtualCurrencyData)
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7967 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7966 */;
 import _mod9446 from "module_9446" /* 9446 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

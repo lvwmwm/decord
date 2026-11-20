@@ -1,23 +1,23 @@
-// Module ID: 15104
-// Function ID: 15105
+// Module ID: 15068
+// Function ID: 15069
 // Name: GuildActionSheetHeader
-// Dependencies: [19, 17, 15105, 4663, 6776, 1072, 21, 4792, 575, 1360, 9633, 1113, 11802, 6911, 5474, 9636, 1187, 9640, 5383, 7254, 504, 4655, 15106, 15107, 1496, 7203, 1414, 5479, 1449, 8451, 5356, 9635, 11808, 2]
+// Dependencies: [19, 17, 15069, 4665, 6776, 1071, 21, 4794, 575, 1358, 9633, 1112, 11744, 6910, 5476, 9636, 1186, 9640, 5385, 7253, 504, 4657, 15070, 15071, 1494, 7202, 1412, 5481, 1447, 8450, 5358, 9635, 11750, 2]
 // Exports: default
 
-// Module 15104 (GuildActionSheetHeader)
+// Module 15068 (GuildActionSheetHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 4655 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5474 */;
-import GuildPopoutActionCreators from "GuildPopoutActionCreators" /* 15106 */;
+import Constants from "Constants" /* 1071 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 4657 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5476 */;
+import GuildPopoutActionCreators from "GuildPopoutActionCreators" /* 15070 */;
 import react from "react" /* 19 */;
-import GuildPopoutStore from "GuildPopoutStore" /* 15105 */;
-import GuildStore from "GuildStore" /* 4663 */;
+import GuildPopoutStore from "GuildPopoutStore" /* 15069 */;
+import GuildStore from "GuildStore" /* 4665 */;
 import GuildSubscriptionsStore from "GuildSubscriptionsStore" /* 6776 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
-import PlatformUtils from "utils/PlatformUtils" /* 1360 */;
+import createStyles_mod from "createStyles" /* 4794 */;
+import PlatformUtils from "utils/PlatformUtils" /* 1358 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -46,7 +46,7 @@ function CommunityPill(guildVisibility) {
   _require = string(tmp4 ? t.op2cJ6 : t.TME4LJ);
   let ExperimentalWebIcon;
   if (tmp4) {
-    ExperimentalWebIcon = tmp2(11802).ExperimentalWebIcon;
+    ExperimentalWebIcon = tmp2(11744).ExperimentalWebIcon;
   }
   let obj = {
     style: tmp.communityPill,
@@ -58,7 +58,7 @@ function CommunityPill(guildVisibility) {
     },
     children: items
   };
-  const PressableOpacity = tmp2(6911).PressableOpacity;
+  const PressableOpacity = tmp2(6910).PressableOpacity;
   const tmp6 = closure_10;
   if (tmp4) {
     let obj2 = { size: "xs", color: ExperimentalWebIcon(575).colors.BADGE_INVERTED_BACKGROUND, secondaryColor: ExperimentalWebIcon(575).colors.BADGE_INVERTED_TEXT, style: tmp.communityPillIcon };
@@ -67,16 +67,16 @@ function CommunityPill(guildVisibility) {
     tmp10 = tmp7;
   } else {
     const obj3 = { style: tmp.communityPillIcon, source: ExperimentalWebIcon(9640), disableColor: true };
-    const Icon = tmp2(1187).Icon;
+    const Icon = tmp2(1186).Icon;
     tmp7Result = tmp7(Icon, obj3);
     tmp10 = tmp7;
   }
   items = [tmp7Result, ];
   const obj4 = { variant: "body-xs/medium", color: "text-default", style: tmp.communityPillText, children: string2(tmp4 ? t2.SiZQ0N : t2.K7iRig) };
-  const Text = tmp2(5383).Text;
-  const intl2 = tmp2(1113).intl;
+  const Text = tmp2(5385).Text;
+  const intl2 = tmp2(1112).intl;
   string2 = intl2.string;
-  t2 = tmp2(1113).t;
+  t2 = tmp2(1112).t;
   items[1] = tmp10(Text, obj4);
   return tmp6(PressableOpacity, obj);
 }

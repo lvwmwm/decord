@@ -1,14 +1,14 @@
-// Module ID: 18325
-// Function ID: 18326
+// Module ID: 18146
+// Function ID: 18147
 // Name: ConjureManagedCopyStatus
-// Dependencies: [19, 21, 18324, 5808, 575, 5383, 1113, 4089, 18326, 2]
+// Dependencies: [19, 21, 18132, 5810, 575, 5385, 1112, 4091, 18147, 2]
 // Exports: default
 
-// Module 18325 (ConjureManagedCopyStatus)
+// Module 18146 (ConjureManagedCopyStatus)
 import nativeDefault from "native" /* 575 */;
-import _modDef4089 from "module_4089" /* 4089 */;
-import useConjureManagedCopy from "useConjureManagedCopy" /* 18324 */;
-import conjureManagedCopyStatusText from "conjureManagedCopyStatusText" /* 18326 */;
+import _modDef4091 from "module_4091" /* 4091 */;
+import useConjureManagedCopy from "useConjureManagedCopy" /* 18132 */;
+import conjureManagedCopyStatusText from "conjureManagedCopyStatusText" /* 18147 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -35,16 +35,16 @@ export default function ConjureManagedCopyStatus(projectId) {
     let str;
     const updatesPaused = tmp3.updatesPaused;
     const obj2 = { spacing: nativeDefault.space.PX_4, children: items };
-    const Stack = tmp4(5808).Stack;
-    const obj3 = { variant: "body-md/medium", color: "text-default", children: intl.string(_modDef4089["+QBNDE"]) };
-    const Text = tmp4(5383).Text;
-    intl = tmp4(1113).intl;
+    const Stack = tmp4(5810).Stack;
+    const obj3 = { variant: "body-md/medium", color: "text-default", children: intl.string(_modDef4091["+QBNDE"]) };
+    const Text = tmp4(5385).Text;
+    intl = tmp4(1112).intl;
     items = [_false(Text, obj3), , ];
     const obj4 = { variant: "body-sm/normal", color: "text-subtle", children: tmp4Result.conjureCopySourceLine(tmp3, updatesPaused) };
-    const Text2 = tmp4(5383).Text;
+    const Text2 = tmp4(5385).Text;
     tmp4Result = conjureManagedCopyStatusText;
     items[1] = _false(Text2, obj4);
-    const Text3 = tmp4(5383).Text;
+    const Text3 = tmp4(5385).Text;
     const tmp7 = React3;
     const tmp8 = _false;
     if (updatesPaused) {

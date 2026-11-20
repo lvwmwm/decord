@@ -1,14 +1,14 @@
-// Module ID: 11220
-// Function ID: 11221
+// Module ID: 11162
+// Function ID: 11163
 // Name: useExpressionPickerListWidth
-// Dependencies: [1228, 5021, 1496, 1630, 2]
+// Dependencies: [1227, 5023, 1494, 1628, 2]
 // Exports: default
 
-// Module 11220 (useExpressionPickerListWidth)
-import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1228 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5021 */;
+// Module 11162 (useExpressionPickerListWidth)
+import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1227 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5023 */;
 import size from "module_2" /* 2 */;
 
 const PADDING_HORIZONTAL = ExpressionPickerConstants.PADDING_HORIZONTAL;

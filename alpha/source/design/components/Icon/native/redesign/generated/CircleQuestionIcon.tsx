@@ -1,13 +1,13 @@
 // Module ID: 9329
 // Function ID: 9330
 // Name: CircleQuestionIcon
-// Dependencies: [19, 17, 21, 575, 5478, 9330, 9331, 2]
+// Dependencies: [19, 17, 21, 575, 5480, 9330, 9331, 2]
 // Exports: CircleQuestionIcon
 
 // Module 9329 (CircleQuestionIcon)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage3 from "BaseIconImage" /* 5478 */;
+import BaseIconImage3 from "BaseIconImage" /* 5480 */;
 import AssetRegistry from "AssetRegistry" /* 9330 */;
 import AssetRegistry2 from "AssetRegistry" /* 9331 */;
 import react from "react" /* 19 */;

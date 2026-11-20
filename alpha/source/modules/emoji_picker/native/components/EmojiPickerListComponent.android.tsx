@@ -1,24 +1,24 @@
-// Module ID: 11251
-// Function ID: 11252
+// Module ID: 11193
+// Function ID: 11194
 // Name: EmojiPickerListComponent
-// Dependencies: [19, 6452, 6455, 8946, 1228, 21, 4792, 1655, 11252, 5024, 1627, 1708, 4738, 7328, 11241, 2]
+// Dependencies: [19, 6454, 6457, 8946, 1227, 21, 4794, 1653, 11194, 5026, 1625, 1706, 4740, 7327, 11183, 2]
 // Exports: default
 
-// Module 11251 (EmojiPickerListComponent)
-import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1228 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4738 */;
-import EmojiPickerConstants from "EmojiPickerConstants" /* 6455 */;
-import PortalToNativeViewDefault from "PortalToNativeView" /* 7328 */;
+// Module 11193 (EmojiPickerListComponent)
+import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1227 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4740 */;
+import EmojiPickerConstants from "EmojiPickerConstants" /* 6457 */;
+import PortalToNativeViewDefault from "PortalToNativeView" /* 7327 */;
 import EmojiPickerListConstants from "EmojiPickerListConstants" /* 8946 */;
-import EmojiPickerPremiumSearchUpsell from "EmojiPickerPremiumSearchUpsell" /* 11241 */;
-import EmojiPickerNativeComponent2 from "EmojiPickerNativeComponent" /* 11252 */;
+import EmojiPickerPremiumSearchUpsell from "EmojiPickerPremiumSearchUpsell" /* 11183 */;
+import EmojiPickerNativeComponent2 from "EmojiPickerNativeComponent" /* 11194 */;
 import react from "react" /* 19 */;
-import EmojiStore from "EmojiStore" /* 6452 */;
+import EmojiStore from "EmojiStore" /* 6454 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
-import module_1655 from "module_1655" /* 1655 */;
-import BottomSheetModal from "BottomSheetModal" /* 5024 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1627 */;
+import createStyles from "createStyles" /* 4794 */;
+import module_1653 from "module_1653" /* 1653 */;
+import BottomSheetModal from "BottomSheetModal" /* 5026 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1625 */;
 import size from "module_2" /* 2 */;
 
 const EmojiPickerNativeComponentDefault = EmojiPickerNativeComponent2;
@@ -32,7 +32,7 @@ const IMAGE_SIZE = EmojiPickerListConstants.IMAGE_SIZE;
 const PADDING_VERTICAL = ExpressionPickerConstants.PADDING_VERTICAL;
 ({ jsx: metroImportAll, Fragment: c9, jsxs: c10 } = Fragment);
 let closure_11 = createStyles.createStyles({ container: { flex: 1 } });
-const EmojiPickerNativeComponent = module_1655.createAnimatedComponent(EmojiPickerNativeComponentDefault);
+const EmojiPickerNativeComponent = module_1653.createAnimatedComponent(EmojiPickerNativeComponentDefault);
 let closure_12 = BottomSheetModal.createBottomSheetScrollableComponent(BottomSheetModal.SCROLLABLE_TYPE.SCROLLVIEW, EmojiPickerNativeComponent);
 let closure_13 = MetaQuestUtils.isMetaQuest();
 let closure_14 = { code: "(function EmojiPickerListComponentAndroidTsx1(){let[bottomSheetIndex]=this.__closure;return bottomSheetIndex.get();})" };

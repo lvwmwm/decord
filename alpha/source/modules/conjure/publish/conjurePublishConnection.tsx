@@ -1,19 +1,19 @@
-// Module ID: 14655
-// Function ID: 14656
+// Module ID: 12178
+// Function ID: 12179
 // Name: conjurePublishConnection
-// Dependencies: [5, 2165, 6500, 6860, 572, 14648, 6820, 14656, 14657, 2121, 14271, 14660, 12293, 6867, 2]
+// Dependencies: [5, 2163, 6502, 6860, 572, 12179, 6820, 12183, 12184, 2119, 12181, 12187, 12188, 12190, 2]
 // Exports: draftPatchNotes, failPendingSafetyRecheck, forgetClearedSafetyRecheck, parseSafetyRecheck, preparePublish, publishProject, publishStateFromFrame, recordPatchNotesSent, rejectPendingPublish, requestConjureSafetyRecheck, requestPublishOptions
 
-// Module 14655 (conjurePublishConnection)
+// Module 12178 (conjurePublishConnection)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import conjureProjectSockets from "conjureProjectSockets" /* 6820 */;
-import ConjurePublishTypes from "ConjurePublishTypes" /* 6867 */;
-import ConjurePublishActionCreators from "ConjurePublishActionCreators" /* 12293 */;
-import conjureDevicePermissions from "conjureDevicePermissions" /* 14271 */;
-import conjureVoiceChannelPin from "conjureVoiceChannelPin" /* 14660 */;
+import conjureDevicePermissions from "conjureDevicePermissions" /* 12181 */;
+import conjureVoiceChannelPin from "conjureVoiceChannelPin" /* 12187 */;
+import ConjurePublishActionCreators from "ConjurePublishActionCreators" /* 12188 */;
+import ConjurePublishTypes from "ConjurePublishTypes" /* 12190 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 2165 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6500 */;
+import ApplicationStore from "ApplicationStore" /* 2163 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6502 */;
 import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 6860 */;
 import size from "module_2" /* 2 */;
 
@@ -21,8 +21,8 @@ const require = globalThis.__r;
 let _require, paths;
 
 let tmp;
-const requestConjureDevicePermissionsDefault = tmp(14648);
-const f107894 = () => {
+const requestConjureDevicePermissionsDefault = tmp(12179);
+const f101465 = () => {
   const safetyRecheck = ConjurePublishStatusStore.getSafetyRecheck(projectId);
   let status;
   if (safetyRecheck != null) {
@@ -37,7 +37,7 @@ const f107894 = () => {
     const obj4 = map;
     if ("pending" === obj2.status) {
       const _setTimeout = setTimeout;
-      const result = obj4.set(tmp, setTimeout(f107894, 180000));
+      const result = obj4.set(tmp, setTimeout(f101465, 180000));
     }
     const obj3 = { type: "CONJURE_PROJECT_SAFETY_RECHECK", projectId, recheck: obj2 };
     const obj = DispatcherDefault;
@@ -128,7 +128,7 @@ let obj2 = {
         }
         if ("pending" === status1) {
           const _setTimeout = setTimeout;
-          const result = obj6.set(projectId, setTimeout(f107894, 180000));
+          const result = obj6.set(projectId, setTimeout(f101465, 180000));
         }
         const obj10 = { type: "CONJURE_PROJECT_SAFETY_RECHECK", projectId, recheck: obj2 };
         const obj3 = DispatcherDefault;
@@ -208,7 +208,7 @@ let obj2 = {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -228,7 +228,7 @@ let obj2 = {
                 const tmp9 = projectId;
                 if (publishApprovalUrl.getPublishApprovalUrl(projectId) === tmp.approval_url) {
                   paths = 3;
-                  return { value: "HermesInternal", done: "+60" };
+                  return { value: "HermesInternal", done: null };
                 } else {
                   const obj5 = { type: "CONJURE_PROJECT_PUBLISH_APPROVAL", projectId: tmp9, approvalUrl: tmp.approval_url };
                   const obj2 = projectId(paths[4]);
@@ -251,7 +251,7 @@ let obj2 = {
             const result = value.promptPublishApproval(closure_128_0.approval_url);
           }
           paths = 3;
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp14) {
           paths = 3;
           throw tmp14;
@@ -310,10 +310,11 @@ let obj2 = {
     let str;
     projectId = projectId.projectId;
     DispatcherDefault;
-    let obj = { type: "CONJURE_PROJECT_PUBLISH_STATUS_UPDATE", projectId, publishState: null, surface: null, previewAppChannels: null, previewDevicePermissions: null, publishedRevision: null, publishedAt: null, publishing: null, patchNotesSent: null, newUiUnpublished: null, safetyHold: null, voiceChannelPin: null };
+    let obj = { type: "CONJURE_PROJECT_PUBLISH_STATUS_UPDATE", projectId, publishState: null, surface: null, previewAppChannels: null, newAppChannels: null, previewDevicePermissions: null, publishedRevision: null, publishedAt: null, publishing: null, patchNotesSent: null, newUiUnpublished: null, safetyHold: null, voiceChannelPin: null };
     if (typeof publish_state.publish_state === "string") {
       let found;
       let found1;
+      let found2;
       if ("" !== publish_state.publish_state) {
         str = publish_state.publish_state;
       }
@@ -336,13 +337,21 @@ let obj2 = {
       }
       obj.previewAppChannels = found;
       const _Array2 = Array;
-      if (Array.isArray(publish_state.preview_device_permissions)) {
-        const prop = publish_state.preview_device_permissions;
-        found1 = prop.filter(conjureDevicePermissions.isConjureDevicePermissionName);
+      if (Array.isArray(publish_state.new_app_channels)) {
+        const new_app_channels = publish_state.new_app_channels;
+        found1 = new_app_channels.filter((item) => typeof item === "string");
       } else {
         found1 = [];
       }
-      obj.previewDevicePermissions = found1;
+      obj.newAppChannels = found1;
+      const _Array3 = Array;
+      if (Array.isArray(publish_state.preview_device_permissions)) {
+        const prop = publish_state.preview_device_permissions;
+        found2 = prop.filter(conjureDevicePermissions.isConjureDevicePermissionName);
+      } else {
+        found2 = [];
+      }
+      obj.previewDevicePermissions = found2;
       let published_revision = null;
       if (typeof publish_state.published_revision === "number") {
         published_revision = publish_state.published_revision;
@@ -354,7 +363,7 @@ let obj2 = {
       }
       obj.publishedAt = published_at;
       obj.publishing = true === publish_state.publishing;
-      const _Array3 = Array;
+      const _Array4 = Array;
       let flatMapResult;
       if (Array.isArray(publish_state.patch_notes_sent)) {
         const patch_notes_sent = publish_state.patch_notes_sent;
@@ -519,7 +528,7 @@ export function failPendingSafetyRecheck(projectId) {
     const obj4 = map;
     if ("pending" === obj2.status) {
       const _setTimeout = setTimeout;
-      const result = obj4.set(projectId, setTimeout(f107894, 180000));
+      const result = obj4.set(projectId, setTimeout(f101465, 180000));
     }
     const obj3 = { type: "CONJURE_PROJECT_SAFETY_RECHECK", projectId, recheck: obj2 };
     const obj = DispatcherDefault;
@@ -558,7 +567,7 @@ export function requestConjureSafetyRecheck(projectId) {
     map.delete(projectId);
     if ("pending" === tmp3.status) {
       let _setTimeout = setTimeout;
-      let result = obj.set(projectId, setTimeout(f107894, 180000));
+      let result = obj.set(projectId, setTimeout(f101465, 180000));
     }
     let obj2 = DispatcherDefault;
     let obj3 = { type: "CONJURE_PROJECT_SAFETY_RECHECK", projectId, recheck: tmp3 };

@@ -1,14 +1,14 @@
-// Module ID: 7168
-// Function ID: 7169
+// Module ID: 7167
+// Function ID: 7168
 // Name: guild_member_verification/MemberVerificationModalActionCreators
-// Dependencies: [6767, 1072, 1256, 7169, 6308, 7189, 2121, 2]
+// Dependencies: [6767, 1071, 1255, 7168, 6310, 7188, 2119, 2]
 
-// Module 7168 (guild_member_verification/MemberVerificationModalActionCreators)
-import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import asyncRequire from "asyncRequire" /* 2121 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6308 */;
-import MemberVerificationActionCreatorsDefault from "MemberVerificationActionCreators" /* 7169 */;
+// Module 7167 (guild_member_verification/MemberVerificationModalActionCreators)
+import Constants from "Constants" /* 1071 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import asyncRequire from "asyncRequire" /* 2119 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6310 */;
+import MemberVerificationActionCreatorsDefault from "MemberVerificationActionCreators" /* 7168 */;
 import MemberVerificationConstants from "MemberVerificationConstants" /* 6767 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let obj = {
     obj2.track(AnalyticEvents.OPEN_MODAL, obj3);
     const obj4 = ModalActionCreatorsDefault;
     const obj5 = { guildId, onClose: connect };
-    obj4.pushLazy(asyncRequire(7189, dependencyMap.paths), obj5, React3);
+    obj4.pushLazy(asyncRequire(7188, dependencyMap.paths), obj5, React3);
   },
   closeMemberVerificationModal() {
     let flag = arg0;

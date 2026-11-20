@@ -1,11 +1,11 @@
 // Module ID: 9376
 // Function ID: 9377
 // Name: useShouldShowGiftingPromotionDeco
-// Dependencies: [1390, 9348, 2]
+// Dependencies: [1388, 9348, 2]
 // Exports: default
 
 // Module 9376 (useShouldShowGiftingPromotionDeco)
-import PremiumConstants from "PremiumConstants" /* 1390 */;
+import PremiumConstants from "PremiumConstants" /* 1388 */;
 import NativeGiftContext from "NativeGiftContext" /* 9348 */;
 import size from "module_2" /* 2 */;
 

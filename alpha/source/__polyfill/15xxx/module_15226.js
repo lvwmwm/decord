@@ -1,26 +1,9 @@
 // Module ID: 15226
 // Function ID: 15227
-// Dependencies: []
+// Dependencies: [15224]
 
 // Module 15226
-if (typeof process === "object") {
-  const _process3 = process;
-  if (process.env) {
-    const _process = process;
-    if (process.env.NODE_DEBUG) {
-      let fn;
-      const _process2 = process;
-      const obj = /\bsemver\b/i;
-      if (obj.test(process.env.NODE_DEBUG)) {
-        fn = () => {
-          const items = ["SEMVER", ...HermesBuiltin.copyRestArgs()];
-          return console.error.apply(items);
-        };
-      }
-      module.exports = fn;
-    }
-  }
-}
-fn = () => {
+import _mod15224 from "module_15224" /* 15224 */;
 
-};
+
+export default (arg0, arg1, arg2) => _mod15224(arg0, arg1, "<", arg2);

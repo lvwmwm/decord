@@ -1,24 +1,23 @@
 // Module ID: 1752
 // Function ID: 1753
-// Dependencies: [1719, 1720]
-// Exports: callMicrotasks
+// Dependencies: []
+// Exports: isShareable
 
 // Module 1752
-import registerCustomSerializable from "registerCustomSerializable" /* 1719 */;
-import serializableMappingFlag from "serializableMappingFlag" /* 1720 */;
-
 let tmp2;
-const items = [{ code: "(function callMicrotasks_Pnpm_deprecatedTs1(){})" }];
+const items = [{ code: "(function isShareable_Pnpm_isShareableTs1(value){return typeof value==='object'&&value!==null&&!!value.__shareableRef;})" }];
 [tmp2] = items;
-function callMicrotasks() {
-
+function isShareable(__shareableRef) {
+  __shareableRef = typeof __shareableRef === "object";
+  if (typeof __shareableRef === "object") {
+    __shareableRef = null !== __shareableRef;
+  }
+  if (__shareableRef) {
+    __shareableRef = __shareableRef.__shareableRef;
+  }
+  return __shareableRef;
 }
-callMicrotasks.__workletHash = 2444743836321;
-callMicrotasks.__initData = tmp2;
+isShareable.__workletHash = 12626032708700;
+isShareable.__initData = tmp2;
 
-export const makeShareable = registerCustomSerializable.makeShareable;
-export const makeShareableCloneOnUIRecursive = registerCustomSerializable.makeShareableCloneOnUIRecursive;
-export const makeShareableCloneRecursive = registerCustomSerializable.createSerializable;
-export const isShareableRef = registerCustomSerializable.isSerializableRef;
-export const shareableMappingCache = serializableMappingFlag.serializableMappingCache;
-export { callMicrotasks };
+export { isShareable };

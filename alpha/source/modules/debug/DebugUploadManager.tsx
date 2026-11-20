@@ -1,15 +1,15 @@
-// Module ID: 11111
-// Function ID: 11112
+// Module ID: 11053
+// Function ID: 11054
 // Name: DebugUploadManager
-// Dependencies: [5, 4641, 3, 17, 6228, 5722, 11112, 7, 11113, 11114, 1366, 4975, 11115, 11116, 11117, 11118, 2]
+// Dependencies: [5, 4643, 3, 17, 6230, 5724, 11054, 7, 11055, 11056, 1364, 4977, 11057, 11058, 11059, 11060, 2]
 // Exports: uploadDebugLogFiles
 
-// Module 11111 (DebugUploadManager)
+// Module 11053 (DebugUploadManager)
 import LoggerDefault from "Logger" /* 3 */;
 import LogAggregatorAll from "LogAggregator" /* 7 */;
 import react_native from "react-native" /* 17 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
 import size from "module_2" /* 2 */;
 
 let appFirstVisibleTimestamp, body, message;
@@ -45,7 +45,7 @@ let obj = function _uploadDebugLogFiles() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -104,7 +104,7 @@ let obj = function _uploadDebugLogFiles() {
           } else {
             c5 = 0;
             c7 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp33) {
           closure_4 = tmp33;
@@ -149,7 +149,7 @@ obj = function _uploadAppLogFiles() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let tmp80;
@@ -308,7 +308,7 @@ obj = function _uploadAppLogFiles() {
               return obj13;
             }
             c7 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
           c5 = 3;
           appFirstVisibleTimestamp = closure_131_8;

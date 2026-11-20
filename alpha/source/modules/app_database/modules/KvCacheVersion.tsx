@@ -1,11 +1,11 @@
-// Module ID: 8237
-// Function ID: 8238
+// Module ID: 8236
+// Function ID: 8237
 // Name: KvCacheVersion
-// Dependencies: [5, 499, 3, 4670, 2]
+// Dependencies: [5, 499, 3, 4672, 2]
 
-// Module 8237 (KvCacheVersion)
+// Module 8236 (KvCacheVersion)
 import LoggerDefault from "Logger" /* 3 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 4670 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 4672 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import KvCacheVersionConstants from "KvCacheVersionConstants" /* 499 */;
 import size from "module_2" /* 2 */;
@@ -52,7 +52,7 @@ class KvCacheVersion {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

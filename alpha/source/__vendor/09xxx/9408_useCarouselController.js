@@ -1,7 +1,7 @@
 // Module ID: 9408
 // Function ID: 9409
 // Name: useCarouselController
-// Dependencies: [19, 9400, 1655, 9409, 9393, 9394, 9410, 9396]
+// Dependencies: [19, 9400, 1653, 9409, 9393, 9394, 9410, 9396]
 // Exports: useCarouselController
 
 // Module 9408 (useCarouselController)
@@ -78,7 +78,7 @@ export function useCarouselController(size) {
   const overscrollEnabled = globalState.props.overscrollEnabled;
   const containerSize = globalState.layout.containerSize;
   const memo = loop.useMemo(() => ({ length: dataLength, disable: !dataLength, originalLength: dataLength }), items);
-  let obj3 = require("module_1655");
+  let obj3 = require("module_1653");
   const sharedValue = obj3.useSharedValue(num);
   let tmp5 = dataLength(num);
   ref = tmp5;
@@ -108,8 +108,8 @@ export function useCarouselController(size) {
     }
   }, items1);
   const items2 = [handlerOffset, handlerOffset, , , , , , ];
-  const useAnimatedReaction = require("module_1655").useAnimatedReaction;
-  const tmp8 = require("module_1655");
+  const useAnimatedReaction = require("module_1653").useAnimatedReaction;
+  const tmp8 = require("module_1653");
   items2[2] = require("log").round;
   items2[3] = size;
   items2[4] = memo;

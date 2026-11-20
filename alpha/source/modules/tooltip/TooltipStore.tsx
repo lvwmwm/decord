@@ -1,13 +1,13 @@
-// Module ID: 10807
-// Function ID: 10808
+// Module ID: 10749
+// Function ID: 10750
 // Name: TooltipStore
-// Dependencies: [1072, 510, 504, 572, 2]
+// Dependencies: [1071, 510, 504, 572, 2]
 
-// Module 10807 (TooltipStore)
+// Module 10749 (TooltipStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import Constants from "Constants" /* 1072 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 const StorageKeys = Constants.StorageKeys;

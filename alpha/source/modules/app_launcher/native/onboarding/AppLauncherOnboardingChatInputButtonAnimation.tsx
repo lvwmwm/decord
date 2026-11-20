@@ -1,26 +1,26 @@
-// Module ID: 13012
-// Function ID: 13013
+// Module ID: 12982
+// Function ID: 12983
 // Name: AppLauncherOnboardingChatInputButtonAnimation
-// Dependencies: [19, 17, 4793, 21, 4792, 5396, 575, 5002, 5005, 504, 8451, 12815, 1655, 5377, 13013, 12840, 2]
+// Dependencies: [19, 17, 4795, 21, 4794, 5398, 575, 5004, 5007, 504, 8450, 12785, 1653, 5379, 12983, 12810, 2]
 // Exports: AppLauncherOnboardingChatInputButtonAnimation
 
-// Module 13012 (AppLauncherOnboardingChatInputButtonAnimation)
+// Module 12982 (AppLauncherOnboardingChatInputButtonAnimation)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef1655 from "module_1655" /* 1655 */;
-import timing_timing from "timing/timing" /* 5002 */;
-import timingPresets from "timingPresets" /* 5005 */;
-import LottieAnimationViewDefault from "LottieAnimationView" /* 5377 */;
-import ButtonConstants from "ButtonConstants" /* 5396 */;
-import ClientThemesOverrides from "ClientThemesOverrides" /* 8451 */;
-import useAppLauncherOnboardingContentDefault from "useAppLauncherOnboardingContent" /* 12815 */;
-import _mod12840 from "module_12840" /* 12840 */;
-import _mod13013 from "module_13013" /* 13013 */;
+import _modDef1653 from "module_1653" /* 1653 */;
+import timing_timing from "timing/timing" /* 5004 */;
+import timingPresets from "timingPresets" /* 5007 */;
+import LottieAnimationViewDefault from "LottieAnimationView" /* 5379 */;
+import ButtonConstants from "ButtonConstants" /* 5398 */;
+import ClientThemesOverrides from "ClientThemesOverrides" /* 8450 */;
+import useAppLauncherOnboardingContentDefault from "useAppLauncherOnboardingContent" /* 12785 */;
+import _mod12810 from "module_12810" /* 12810 */;
+import _mod12983 from "module_12983" /* 12983 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4793 */;
+import AccessibilityStore from "AccessibilityStore" /* 4795 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let c3;
@@ -95,8 +95,8 @@ export function AppLauncherOnboardingChatInputButtonAnimation(channelId) {
   const obj4 = { entering: EnteringAnimation, exiting: ExitingAnimation, style: items1, collapsable: false, children: items2 };
   items1 = [absoluteFill.absoluteFill, tmp.glowAnimation];
   const obj3 = { children: items4 };
-  const View = _modDef1655.View;
-  const obj5 = { collapsable: false, style: tmp.glowLottie, source: _mod13013, autoPlay: !stateFromStores };
+  const View = _modDef1653.View;
+  const obj5 = { collapsable: false, style: tmp.glowLottie, source: _mod12983, autoPlay: !stateFromStores };
   const tmp5 = LottieAnimationViewDefault;
   items2 = [metroRequire(tmp5, obj5), , ];
   const obj6 = { collapsable: false, style: items3 };
@@ -105,7 +105,7 @@ export function AppLauncherOnboardingChatInputButtonAnimation(channelId) {
   const obj7 = { collapsable: false, style: tmp.fakeButton };
   items2[2] = metroRequire(_false, obj7);
   items4 = [metroImportDefault(View, obj4), ];
-  const obj8 = { collapsable: false, style: tmp.trinketsLottie, source: _mod12840, autoPlay: !stateFromStores };
+  const obj8 = { collapsable: false, style: tmp.trinketsLottie, source: _mod12810, autoPlay: !stateFromStores };
   const tmp6 = LottieAnimationViewDefault;
   items4[1] = metroRequire(tmp6, obj8);
   return metroImportDefault(metroImportAll, obj3);

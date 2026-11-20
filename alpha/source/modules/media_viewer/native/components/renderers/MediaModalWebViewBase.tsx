@@ -1,15 +1,15 @@
-// Module ID: 9907
-// Function ID: 9908
+// Module ID: 9910
+// Function ID: 9911
 // Name: MediaModalWebViewBase
-// Dependencies: [19, 17, 21, 1380, 4792, 1655, 5002, 5471, 7700, 2]
+// Dependencies: [19, 17, 21, 1378, 4794, 1653, 5004, 5473, 7699, 2]
 
-// Module 9907 (MediaModalWebViewBase)
-import LinkingDefault from "Linking" /* 5471 */;
+// Module 9910 (MediaModalWebViewBase)
+import LinkingDefault from "Linking" /* 5473 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
-import createStyles from "createStyles" /* 4792 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let url;

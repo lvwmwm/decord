@@ -1,19 +1,19 @@
-// Module ID: 13388
-// Function ID: 13389
+// Module ID: 13358
+// Function ID: 13359
 // Name: GuildBoostingSubscribeButton
-// Dependencies: [5, 19, 17, 8625, 6427, 1072, 1390, 21, 13338, 6308, 6425, 13389, 1502, 7401, 563, 1401, 13337, 5390, 1113, 7576, 2]
+// Dependencies: [5, 19, 17, 8624, 6429, 1071, 1388, 21, 13308, 6310, 6427, 13359, 1500, 7400, 563, 1399, 13307, 5392, 1112, 7575, 2]
 // Exports: default
 
-// Module 13388 (GuildBoostingSubscribeButton)
+// Module 13358 (GuildBoostingSubscribeButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import PremiumConstants from "PremiumConstants" /* 1390 */;
-import PremiumGuildSubscribeConstants from "PremiumGuildSubscribeConstants" /* 6427 */;
-import GuildBoostPurchasingUtils from "GuildBoostPurchasingUtils" /* 13338 */;
+import PremiumConstants from "PremiumConstants" /* 1388 */;
+import PremiumGuildSubscribeConstants from "PremiumGuildSubscribeConstants" /* 6429 */;
+import GuildBoostPurchasingUtils from "GuildBoostPurchasingUtils" /* 13308 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildBoostSlotStore from "GuildBoostSlotStore" /* 8625 */;
-import Constants from "Constants" /* 1072 */;
+import GuildBoostSlotStore from "GuildBoostSlotStore" /* 8624 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 let closure_3, navigation;
@@ -38,7 +38,7 @@ let location = function _handleBoostPress() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -78,7 +78,7 @@ let location = function _handleBoostPress() {
             const obj = closure_131_0(closure_131_2[10]);
             obj.closeApplyBoostModal();
             c5 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp9) {
           c5 = 3;

@@ -1,27 +1,27 @@
-// Module ID: 10965
-// Function ID: 10966
+// Module ID: 10907
+// Function ID: 10908
 // Name: GameConsoleDeviceListActionSheet
-// Dependencies: [5, 32, 19, 17, 5534, 1072, 21, 4792, 575, 6898, 5390, 1113, 10966, 5479, 5383, 10967, 504, 10956, 38, 10958, 5006, 1108, 1187, 10968, 5020, 7396, 5024, 2]
+// Dependencies: [5, 32, 19, 17, 5536, 1071, 21, 4794, 575, 6897, 5392, 1112, 10908, 5481, 5385, 10909, 504, 10898, 38, 10900, 5008, 1107, 1186, 10910, 5022, 7395, 5026, 2]
 // Exports: default
 
-// Module 10965 (GameConsoleDeviceListActionSheet)
+// Module 10907 (GameConsoleDeviceListActionSheet)
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import intl4 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import components_Button_Button from "components/Button/Button" /* 5390 */;
-import FastImageDefault from "FastImage" /* 5479 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6898 */;
-import GameConsoleActionCreators from "GameConsoleActionCreators" /* 10956 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10966 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 10967 */;
+import Constants from "Constants" /* 1071 */;
+import intl4 from "intl" /* 1112 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import components_Button_Button from "components/Button/Button" /* 5392 */;
+import FastImageDefault from "FastImage" /* 5481 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 6897 */;
+import GameConsoleActionCreators from "GameConsoleActionCreators" /* 10898 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10908 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 10909 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GameConsoleStore from "GameConsoleStore" /* 5534 */;
+import GameConsoleStore from "GameConsoleStore" /* 5536 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -50,7 +50,7 @@ function TransferFooter(arg0) {
   if (!transferring) {
     transferring = null == onPress;
   }
-  intl = tmp3(1113).intl;
+  intl = tmp3(1112).intl;
   return unpackModuleId(SafeAreaPaddingView, obj);
 }
 function DeviceOption(name) {
@@ -137,7 +137,7 @@ export default function GameConsoleListActionSheet(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -173,7 +173,7 @@ export default function GameConsoleListActionSheet(arg0) {
             const ComponentDispatch = tmp3(c2[21]).ComponentDispatch;
             ComponentDispatch.dispatch(constants.TOGGLE_CALL_CONTROL_DRAWER);
             c2 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp12) {
           c2 = 3;

@@ -1,10 +1,10 @@
 // Module ID: 13877
 // Function ID: 13878
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 13877 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/tiered_tenure_badging/native/images", width: 58.333333333333336, height: 58.333333333333336, scales: [3], hash: "ce74b8ba7b9a456f1223414bd4a9964d", name: "asset_silver_badge_small", type: "webp" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "eb549ee942b74daf232ce014560f92c6", name: "ExperimentalCommonIcon", type: "png" });

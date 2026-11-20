@@ -1,28 +1,28 @@
-// Module ID: 8531
-// Function ID: 8532
+// Module ID: 8530
+// Function ID: 8531
 // Name: ConversationNavigatorHeader
-// Dependencies: [19, 17, 4641, 21, 4792, 575, 504, 5408, 8442, 5356, 1360, 1113, 8532, 2]
+// Dependencies: [19, 17, 4643, 21, 4794, 575, 504, 5410, 8441, 5358, 1358, 1112, 8531, 2]
 // Exports: conversationNavigatorFocusHeaderOptions, conversationNavigatorListHeaderOptions
 
-// Module 8531 (ConversationNavigatorHeader)
+// Module 8530 (ConversationNavigatorHeader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1113 */;
-import useToken from "useToken" /* 5356 */;
-import useChannelNameDefault from "useChannelName" /* 5408 */;
-import HeaderShared from "HeaderShared" /* 8442 */;
-import ConversationNavigatorMoreMenuDefault from "ConversationNavigatorMoreMenu" /* 8532 */;
+import intl2 from "intl" /* 1112 */;
+import useToken from "useToken" /* 5358 */;
+import useChannelNameDefault from "useChannelName" /* 5410 */;
+import HeaderShared from "HeaderShared" /* 8441 */;
+import ConversationNavigatorMoreMenuDefault from "ConversationNavigatorMoreMenu" /* 8531 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import createStyles from "createStyles" /* 4792 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
 let tmp;
-const utils_PlatformUtils = tmp(1360);
+const utils_PlatformUtils = tmp(1358);
 function ConversationNavigatorHeader(channelId) {
   channelId = channelId.channelId;
   let flag = channelId.hasRightAction;
@@ -36,7 +36,7 @@ function ConversationNavigatorHeader(channelId) {
   const obj = channelId(504);
   const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(channelId), items1);
   const tmp3 = useChannelNameDefault(stateFromStores, true);
-  const GenericHeaderTitle = channelId(8442).GenericHeaderTitle;
+  const GenericHeaderTitle = channelId(8441).GenericHeaderTitle;
   return <tmp5 style={tmp.container}>{null}</tmp5>;
 }
 function HeaderWithBorder(shouldHandleSafeArea) {

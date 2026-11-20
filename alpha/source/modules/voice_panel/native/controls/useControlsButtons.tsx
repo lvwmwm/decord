@@ -1,29 +1,29 @@
-// Module ID: 19397
-// Function ID: 19398
+// Module ID: 19217
+// Function ID: 19218
 // Name: useControlsButtons
-// Dependencies: [19, 4641, 2133, 11686, 1072, 21, 19398, 19401, 19407, 19409, 19411, 19412, 19413, 19416, 19417, 19418, 19420, 19301, 1627, 11687, 19421, 504, 10793, 10605, 6412, 1655, 13044, 10536, 2]
+// Dependencies: [19, 4643, 2131, 11628, 1071, 21, 19218, 19221, 19227, 19229, 19231, 19232, 19233, 19236, 19237, 19238, 19240, 19121, 1625, 11629, 19241, 504, 10735, 10547, 6414, 1653, 13014, 10478, 2]
 // Exports: default
 
-// Module 19397 (useControlsButtons)
+// Module 19217 (useControlsButtons)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1072 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1627 */;
-import MobileGoLiveEntrypointExperiment from "MobileGoLiveEntrypointExperiment" /* 19301 */;
-import VoicePanelMicButton from "VoicePanelMicButton" /* 19398 */;
-import VoicePanelConnectButtonDefault from "VoicePanelConnectButton" /* 19401 */;
-import VoicePanelChatButtonDefault from "VoicePanelChatButton" /* 19407 */;
-import VoicePanelDisconnectCancelButtonDefault from "VoicePanelDisconnectCancelButton" /* 19409 */;
-import VoicePanelVideoButtonDefault from "VoicePanelVideoButton" /* 19411 */;
-import VoicePanelSoundboardButtonDefault from "VoicePanelSoundboardButton" /* 19412 */;
-import VoicePanelScreenshareButtonDefault from "VoicePanelScreenshareButton" /* 19413 */;
-import VoicePanelDrawerToggleButtonDefault from "VoicePanelDrawerToggleButton" /* 19416 */;
-import VoicePanelRaiseHandButtonDefault from "VoicePanelRaiseHandButton" /* 19417 */;
-import VoicePanelStageAudienceButtonDefault from "VoicePanelStageAudienceButton" /* 19418 */;
-import VoicePanelLeaveStageButtonDefault from "VoicePanelLeaveStageButton" /* 19420 */;
+import Constants from "Constants" /* 1071 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1625 */;
+import MobileGoLiveEntrypointExperiment from "MobileGoLiveEntrypointExperiment" /* 19121 */;
+import VoicePanelMicButton from "VoicePanelMicButton" /* 19218 */;
+import VoicePanelConnectButtonDefault from "VoicePanelConnectButton" /* 19221 */;
+import VoicePanelChatButtonDefault from "VoicePanelChatButton" /* 19227 */;
+import VoicePanelDisconnectCancelButtonDefault from "VoicePanelDisconnectCancelButton" /* 19229 */;
+import VoicePanelVideoButtonDefault from "VoicePanelVideoButton" /* 19231 */;
+import VoicePanelSoundboardButtonDefault from "VoicePanelSoundboardButton" /* 19232 */;
+import VoicePanelScreenshareButtonDefault from "VoicePanelScreenshareButton" /* 19233 */;
+import VoicePanelDrawerToggleButtonDefault from "VoicePanelDrawerToggleButton" /* 19236 */;
+import VoicePanelRaiseHandButtonDefault from "VoicePanelRaiseHandButton" /* 19237 */;
+import VoicePanelStageAudienceButtonDefault from "VoicePanelStageAudienceButton" /* 19238 */;
+import VoicePanelLeaveStageButtonDefault from "VoicePanelLeaveStageButton" /* 19240 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import MediaEngineStore from "MediaEngineStore" /* 2133 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11686 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import MediaEngineStore from "MediaEngineStore" /* 2131 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11628 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -100,7 +100,7 @@ function getButtons(arg0, stateFromStores, treatment, memo) {
       const obj15 = { type: "icon-large", key: "connected-ptt", render: redux.ptt };
       items1.push(obj15);
     }
-    if (treatment === tmp11(19301).MobileGoLiveEntrypointTreatment.SCREENSHARE_REPLACES_SOUNDBOARD) {
+    if (treatment === tmp11(19121).MobileGoLiveEntrypointTreatment.SCREENSHARE_REPLACES_SOUNDBOARD) {
       const obj16 = { type: "icon-normal", key: "connected-screenshare", render: redux.screenshare };
       items1.push(obj16);
     } else {

@@ -1,31 +1,31 @@
-// Module ID: 7972
-// Function ID: 7973
+// Module ID: 7971
+// Function ID: 7972
 // Name: CollectiblesCategoriesRecord
-// Dependencies: [7973, 7957, 2]
+// Dependencies: [7972, 7956, 2]
 
-// Module 7972 (CollectiblesCategoriesRecord)
-import StorefrontCollectionRecord from "StorefrontCollectionRecord" /* 7973 */;
-import CollectiblesCategoryRecord from "CollectiblesCategoryRecord" /* 7957 */;
+// Module 7971 (CollectiblesCategoriesRecord)
+import StorefrontCollectionRecord from "StorefrontCollectionRecord" /* 7972 */;
+import CollectiblesCategoryRecord from "CollectiblesCategoryRecord" /* 7956 */;
 import size from "module_2" /* 2 */;
 
-const f93489 = (item) => CollectiblesCategoryRecord.fromServer(item);
-const f93490 = (item) => StorefrontCollectionRecord.fromServer(item);
+const f91862 = (item) => CollectiblesCategoryRecord.fromServer(item);
+const f91863 = (item) => StorefrontCollectionRecord.fromServer(item);
 class CollectiblesCategoriesRecord {
   constructor(categories) {
     const obj = Object.create(new.target.prototype);
     categories = categories.categories;
-    obj.categories = categories.map(f93489);
+    obj.categories = categories.map(f91862);
     const collections = categories.collections;
-    obj.collections = collections.map(f93490);
+    obj.collections = collections.map(f91863);
     return obj;
   }
   static fromServer(categories) {
     if (typeof CollectiblesCategoriesRecord === "function") {
       const obj = Object.create(tmp.prototype);
       categories = categories.categories;
-      obj.categories = categories.map(f93489);
+      obj.categories = categories.map(f91862);
       const collections = categories.collections;
-      obj.collections = collections.map(f93490);
+      obj.collections = collections.map(f91863);
       return obj;
     } else {
       throw new TypeError("Trying to call a non-function");

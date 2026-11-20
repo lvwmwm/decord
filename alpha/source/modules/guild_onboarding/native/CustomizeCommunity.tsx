@@ -1,35 +1,35 @@
-// Module ID: 11930
-// Function ID: 11931
+// Module ID: 11872
+// Function ID: 11873
 // Name: CustomizeCommunity
-// Dependencies: [19, 17, 6452, 4663, 6498, 4825, 7352, 6701, 1072, 1391, 6432, 21, 4792, 575, 6286, 4814, 5001, 504, 5479, 11931, 11932, 1187, 1113, 5383, 6567, 7372, 7399, 7420, 1630, 11933, 7351, 7357, 7355, 7377, 1414, 1255, 5356, 1655, 5002, 11934, 5006, 7382, 2121, 6911, 7397, 7373, 2]
+// Dependencies: [19, 17, 6454, 4665, 6500, 4827, 7351, 6703, 1071, 1389, 6434, 21, 4794, 575, 6288, 4816, 5003, 504, 5481, 11873, 11874, 1186, 1112, 5385, 6569, 7371, 7398, 7419, 1628, 11875, 7350, 7356, 7354, 7376, 1412, 1254, 5358, 1653, 5004, 11876, 5008, 7381, 2119, 6910, 7396, 7372, 2]
 // Exports: default
 
-// Module 11930 (CustomizeCommunity)
+// Module 11872 (CustomizeCommunity)
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import EmojiConstants from "EmojiConstants" /* 1391 */;
-import asyncRequire from "asyncRequire" /* 2121 */;
-import useThemeDefault from "useTheme" /* 5001 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import FastImageDefault from "FastImage" /* 5479 */;
-import ReadStateConstants from "ReadStateConstants" /* 6432 */;
-import GuildOnboardingUtils from "GuildOnboardingUtils" /* 6567 */;
-import GuildOnboardingPromptsActionCreators from "GuildOnboardingPromptsActionCreators" /* 7351 */;
-import EmojiDefault from "Emoji" /* 7377 */;
-import ConnectionCardDefault from "ConnectionCard" /* 7399 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7420 */;
+import Constants from "Constants" /* 1071 */;
+import EmojiConstants from "EmojiConstants" /* 1389 */;
+import asyncRequire from "asyncRequire" /* 2119 */;
+import useThemeDefault from "useTheme" /* 5003 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5008 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import FastImageDefault from "FastImage" /* 5481 */;
+import ReadStateConstants from "ReadStateConstants" /* 6434 */;
+import GuildOnboardingUtils from "GuildOnboardingUtils" /* 6569 */;
+import GuildOnboardingPromptsActionCreators from "GuildOnboardingPromptsActionCreators" /* 7350 */;
+import EmojiDefault from "Emoji" /* 7376 */;
+import ConnectionCardDefault from "ConnectionCard" /* 7398 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7419 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import EmojiStore from "EmojiStore" /* 6452 */;
-import GuildStore from "GuildStore" /* 4663 */;
-import ReadStateStore from "ReadStateStore" /* 6498 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4825 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7352 */;
-import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 6701 */;
+import EmojiStore from "EmojiStore" /* 6454 */;
+import GuildStore from "GuildStore" /* 4665 */;
+import ReadStateStore from "ReadStateStore" /* 6500 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4827 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7351 */;
+import GuildOnboardingPromptsConstants from "GuildOnboardingPromptsConstants" /* 6703 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
-import TextStyles from "TextStyles" /* 6286 */;
+import createStyles_mod from "createStyles" /* 4794 */;
+import TextStyles from "TextStyles" /* 6288 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -67,23 +67,23 @@ function EmptyCustomizeCommunity(setTab) {
   setTab = setTab.setTab;
   importDefault = undefined;
   const tmp = closure_18();
-  const obj = setTab(4814);
+  const obj = setTab(4816);
   const items = [SelectedGuildStore];
   const isThemeDarkResult = obj.isThemeDark(useThemeDefault());
   const obj2 = setTab(504);
   const tmp4 = importDefault;
   importDefault = obj2.useStateFromStores(items, () => guildId.getGuildId());
   const obj3 = { style: tmp.emptyContainer, children: items1 };
-  const obj4 = { style: tmp.emptyContainerImage, source: tmp4(isThemeDarkResult ? 11931 : 11932) };
+  const obj4 = { style: tmp.emptyContainerImage, source: tmp4(isThemeDarkResult ? 11873 : 11874) };
   const tmp9 = FastImageDefault;
   items1 = [closure_15(tmp9, obj4), , ];
-  const obj5 = { style: tmp.emptyContainerHeader, children: intl.string(setTab(1113).t.leKHQz) };
-  const LegacyText = tmp2(1187).LegacyText;
-  intl = tmp2(1113).intl;
+  const obj5 = { style: tmp.emptyContainerHeader, children: intl.string(setTab(1112).t.leKHQz) };
+  const LegacyText = tmp2(1186).LegacyText;
+  intl = tmp2(1112).intl;
   items1[1] = closure_15(LegacyText, obj5);
-  const obj6 = { variant: "body-sm/medium", color: "text-subtle", children: intl2.format(setTab(1113).t["jH+ktB"], obj7) };
-  const Text = tmp2(5383).Text;
-  intl2 = tmp2(1113).intl;
+  const obj6 = { variant: "body-sm/medium", color: "text-subtle", children: intl2.format(setTab(1112).t["jH+ktB"], obj7) };
+  const Text = tmp2(5385).Text;
+  intl2 = tmp2(1112).intl;
   obj7 = {
     onBrowseChannels() {
       if (null != closure_1) {
@@ -192,13 +192,13 @@ function ConnectionsPrompt(guildId) {
   let tmp4 = null;
   if (0 !== stateFromStores.length) {
     const obj2 = { style: tmp.connectionsPromptContainer, children: items1 };
-    const obj3 = { style: tmp.connectionsTitle, variant: "body-md/semibold", color: "mobile-text-heading-primary", children: intl.string(guildId(1113).t.eDVMrA) };
-    const Text = tmp2(5383).Text;
-    intl = tmp2(1113).intl;
+    const obj3 = { style: tmp.connectionsTitle, variant: "body-md/semibold", color: "mobile-text-heading-primary", children: intl.string(guildId(1112).t.eDVMrA) };
+    const Text = tmp2(5385).Text;
+    intl = tmp2(1112).intl;
     items1 = [closure_15(Text, obj3), , ];
-    const obj4 = { variant: "body-xs/medium", color: "text-muted", children: intl2.string(guildId(1113).t.BozOXu) };
-    const Text2 = tmp2(5383).Text;
-    intl2 = tmp2(1113).intl;
+    const obj4 = { variant: "body-xs/medium", color: "text-muted", children: intl2.string(guildId(1112).t.BozOXu) };
+    const Text2 = tmp2(5385).Text;
+    intl2 = tmp2(1112).intl;
     items1[1] = closure_15(Text2, obj4);
     const obj5 = {
       style: tmp.connectionsContainer,
@@ -269,7 +269,7 @@ function DropdownOption(option) {
     if (null != stateFromStores) {
       const obj7 = { id: null, animated: null, size: EMOJI_URL_BASE_SIZE };
       ({ id: obj6.id, animated: obj6.animated } = stateFromStores);
-      const tmp11Result = tmp11(1414);
+      const tmp11Result = tmp11(1412);
       emojiURL = tmp11Result.getEmojiURL(obj7);
     }
     const emoji3 = option.emoji;
@@ -284,7 +284,7 @@ function DropdownOption(option) {
   }
   items1 = [tmp10Result, ];
   const obj12 = { variant: "body-md/semibold", children: option.title };
-  items1[1] = closure_15(tmp2(5383).Text, obj12);
+  items1[1] = closure_15(tmp2(5385).Text, obj12);
   return tmp8(closure_4, obj2);
 }
 function DropdownPrompt(guildId) {
@@ -386,7 +386,7 @@ function DropdownPrompt(guildId) {
       canBeNew: !_prompt.isNew,
       returnToCustomize: true
     };
-    obj.openLazy(asyncRequire(7382, dependencyMap.paths), "DropdownOptions", obj2);
+    obj.openLazy(asyncRequire(7381, dependencyMap.paths), "DropdownOptions", obj2);
   }, items3);
   let obj3 = { style: items4, children: items5 };
   items4 = [tmp.promptContainer, animatedStyle];
@@ -592,7 +592,7 @@ export default function CustomizeCommunity(guildId) {
   const setTab = guildId.setTab;
   const tmp = closure_18();
   let tmp2 = stateFromStores;
-  const bottom = stateFromStores(1630)().bottom;
+  const bottom = stateFromStores(1628)().bottom;
   const tmp4 = guildId;
   let obj = guildId(504);
   const items = [ReadStateStore];
@@ -607,7 +607,7 @@ export default function CustomizeCommunity(guildId) {
     }
     return prop;
   });
-  const tmp7 = stateFromStores(11933)(guildId);
+  const tmp7 = stateFromStores(11875)(guildId);
   ({ newOnboardingPrompts, onboardingPromptsWithNewAnswers, onboardingPrompts } = tmp7);
   const items2 = [guildId, stateFromStores, stateFromStores1];
   ({ onboardingPromptsRaw, newAnswersCount } = tmp7);
@@ -652,9 +652,9 @@ export default function CustomizeCommunity(guildId) {
     const tmp25 = closure_5;
     if (tmp24Result) {
       const obj8 = { children: items5 };
-      const obj9 = { style: tmp.sheetTitle, variant: "body-md/medium", color: "mobile-text-heading-primary", children: intl.format(tmp4(1113).t.iB5Gqe, obj10) };
-      const Text = tmp4(5383).Text;
-      intl = tmp4(1113).intl;
+      const obj9 = { style: tmp.sheetTitle, variant: "body-md/medium", color: "mobile-text-heading-primary", children: intl.format(tmp4(1112).t.iB5Gqe, obj10) };
+      const Text = tmp4(5385).Text;
+      intl = tmp4(1112).intl;
       obj10 = { count: newOnboardingPrompts.length + newAnswersCount };
       items5 = [closure_15(Text, obj9), newOnboardingPrompts.map(callback), onboardingPromptsWithNewAnswers.map(callback), ];
       const obj11 = { style: tmp.sectionSeparator };
@@ -665,13 +665,13 @@ export default function CustomizeCommunity(guildId) {
     let tmp24Result3 = onboardingPrompts.length > 0;
     if (tmp24Result3) {
       const obj12 = { children: items7 };
-      const obj13 = { style: tmp.sheetTitle, variant: "body-md/medium", color: "mobile-text-heading-primary", children: intl2.string(tmp4(1113).t.BGkaer) };
-      const Text2 = tmp4(5383).Text;
-      intl2 = tmp4(1113).intl;
+      const obj13 = { style: tmp.sheetTitle, variant: "body-md/medium", color: "mobile-text-heading-primary", children: intl2.string(tmp4(1112).t.BGkaer) };
+      const Text2 = tmp4(5385).Text;
+      intl2 = tmp4(1112).intl;
       items7 = [closure_15(Text2, obj13), , ];
-      const obj14 = { variant: "body-xs/medium", color: "text-muted", children: intl3.string(tmp4(1113).t.r6Vm8T) };
-      const Text3 = tmp4(5383).Text;
-      intl3 = tmp4(1113).intl;
+      const obj14 = { variant: "body-xs/medium", color: "text-muted", children: intl3.string(tmp4(1112).t.r6Vm8T) };
+      const Text3 = tmp4(5385).Text;
+      intl3 = tmp4(1112).intl;
       items7[1] = closure_15(Text3, obj14);
       items7[2] = onboardingPrompts.map(callback);
       tmp24Result3 = tmp24(closure_17, obj12);

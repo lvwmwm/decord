@@ -1,19 +1,19 @@
 // Module ID: 8900
 // Function ID: 8901
 // Name: AvatarDecorationSampleV2
-// Dependencies: [19, 17, 21, 4792, 575, 38, 2114, 5479, 8901, 8902, 2]
+// Dependencies: [19, 17, 21, 4794, 575, 38, 2112, 5481, 8901, 8902, 2]
 // Exports: default
 
 // Module 8900 (AvatarDecorationSampleV2)
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 575 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 2114 */;
-import FastImageDefault from "FastImage" /* 5479 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 2112 */;
+import FastImageDefault from "FastImage" /* 5481 */;
 import CutoutableAvatarDecorationDefault from "CutoutableAvatarDecoration" /* 8902 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;

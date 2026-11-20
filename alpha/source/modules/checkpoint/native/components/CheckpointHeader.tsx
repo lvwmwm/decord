@@ -1,27 +1,27 @@
-// Module ID: 12419
-// Function ID: 12420
+// Module ID: 12389
+// Function ID: 12390
 // Name: CheckpointHeader
-// Dependencies: [17, 12400, 5848, 21, 4792, 575, 5008, 6308, 5877, 5878, 1630, 504, 10919, 6915, 12420, 12421, 12408, 1113, 7032, 2]
+// Dependencies: [17, 12370, 5850, 21, 4794, 575, 5010, 6310, 5879, 5880, 1628, 504, 10861, 6914, 12390, 12391, 12378, 1112, 7031, 2]
 // Exports: default
 
-// Module 12419 (CheckpointHeader)
+// Module 12389 (CheckpointHeader)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import intl3 from "intl" /* 1113 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import HapticUtils from "HapticUtils" /* 5008 */;
-import _modDef5877 from "module_5877" /* 5877 */;
-import _modDef5878 from "module_5878" /* 5878 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6308 */;
-import XSmallIcon from "XSmallIcon" /* 7032 */;
-import CheckpointActionCreators from "CheckpointActionCreators" /* 12408 */;
-import CheckpointApngPlayerDefault from "CheckpointApngPlayer" /* 12420 */;
-import CheckpointHeaderButtonDefault from "CheckpointHeaderButton" /* 12421 */;
-import CheckpointStore from "CheckpointStore" /* 12400 */;
-import CheckpointConstants from "CheckpointConstants" /* 5848 */;
+import intl3 from "intl" /* 1112 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
+import HapticUtils from "HapticUtils" /* 5010 */;
+import _modDef5879 from "module_5879" /* 5879 */;
+import _modDef5880 from "module_5880" /* 5880 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6310 */;
+import XSmallIcon from "XSmallIcon" /* 7031 */;
+import CheckpointActionCreators from "CheckpointActionCreators" /* 12378 */;
+import CheckpointApngPlayerDefault from "CheckpointApngPlayer" /* 12390 */;
+import CheckpointHeaderButtonDefault from "CheckpointHeaderButton" /* 12391 */;
+import CheckpointStore from "CheckpointStore" /* 12370 */;
+import CheckpointConstants from "CheckpointConstants" /* 5850 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let CHECKPOINT_LOGO_SIZE;
@@ -62,11 +62,11 @@ export default function CheckpointHeader(logoAnimatedUri) {
   let t;
   logoAnimatedUri = logoAnimatedUri.logoAnimatedUri;
   if (logoAnimatedUri === undefined) {
-    logoAnimatedUri = _modDef5877;
+    logoAnimatedUri = _modDef5879;
   }
   let logoStaticUri = logoAnimatedUri.logoStaticUri;
   if (logoStaticUri === undefined) {
-    logoStaticUri = _modDef5878;
+    logoStaticUri = _modDef5880;
   }
   let color = logoAnimatedUri.color;
   if (color === undefined) {
@@ -78,9 +78,9 @@ export default function CheckpointHeader(logoAnimatedUri) {
   const obj = get_initialized;
   const stateFromStores = obj.useStateFromStores(items, () => isMuted.isMuted);
   if (stateFromStores) {
-    VoiceNormalIcon = tmp8(10919).VoiceXIcon;
+    VoiceNormalIcon = tmp8(10861).VoiceXIcon;
   } else {
-    VoiceNormalIcon = tmp8(6915).VoiceNormalIcon;
+    VoiceNormalIcon = tmp8(6914).VoiceNormalIcon;
   }
   const obj2 = { style: items1, children: items2 };
   items1 = [tmp5.nav, { marginTop: rect.top, marginLeft: rect.left, marginRight: rect.right }];
@@ -90,13 +90,13 @@ export default function CheckpointHeader(logoAnimatedUri) {
   const obj4 = { style: tmp5.headerActions, children: items3 };
   const obj5 = { onPress: CheckpointActionCreators.toggleMute, accessibilityLabel: string(stateFromStores ? t.YqAjXy : t.w4m945), color, children: metroRequire(VoiceNormalIcon, { color, size: "xs" }) };
   const tmp6Result = CheckpointHeaderButtonDefault;
-  const intl = tmp8(1113).intl;
+  const intl = tmp8(1112).intl;
   string = intl.string;
-  t = tmp8(1113).t;
+  t = tmp8(1112).t;
   items3 = [metroRequire(tmp6Result, obj5), ];
   const obj6 = { onPress: handleClose, accessibilityLabel: intl2.string(intl3.t.cpT0Cq), color, children: metroRequire(XSmallIcon.XSmallIcon, { color, size: "xs" }) };
   const tmp6Result2 = CheckpointHeaderButtonDefault;
-  intl2 = tmp8(1113).intl;
+  intl2 = tmp8(1112).intl;
   items3[1] = metroRequire(tmp6Result2, obj6);
   items2[1] = metroImportDefault(View, obj4);
   return metroImportDefault(View, obj2);

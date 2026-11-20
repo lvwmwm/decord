@@ -1,10 +1,10 @@
 // Module ID: 9035
 // Function ID: 9036
 // Name: tab_gradient_colors
-// Dependencies: [32, 1197, 2]
+// Dependencies: [32, 1196, 2]
 
 // Module 9035 (tab_gradient_colors)
-import _mod1197 from "module_1197" /* 1197 */;
+import _mod1196 from "module_1196" /* 1196 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ const T5 = function T() {
 const T6 = function T() {
   return closure_1_4;
 };
-const MessageType = _mod1197.MessageType;
+const MessageType = _mod1196.MessageType;
 class PaletteColor$Type extends MessageType {
   constructor() {
     const items = [{ no: 1, name: "palette_color", kind: "scalar", T: 9 }, { no: 2, name: "opacity", kind: "scalar", T: 2 }];
@@ -39,9 +39,9 @@ class PaletteColor$Type extends MessageType {
     const obj = { paletteColor: "", opacity: 0 };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1197;
+      const tmpResult = _mod1196;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -80,7 +80,7 @@ class PaletteColor$Type extends MessageType {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1197.UnknownFieldHandler.onRead;
+                onRead = _mod1196.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -92,17 +92,17 @@ class PaletteColor$Type extends MessageType {
   }
   internalBinaryWrite(paletteColor, tag, writeUnknownFields) {
     if ("" !== paletteColor.paletteColor) {
-      const tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
+      const tagResult = tag.tag(1, _mod1196.WireType.LengthDelimited);
       tagResult.string(paletteColor.paletteColor);
     }
     if (0 !== paletteColor.opacity) {
-      const tagResult1 = tag.tag(2, _mod1197.WireType.Bit32);
+      const tagResult1 = tag.tag(2, _mod1196.WireType.Bit32);
       tagResult1.float(paletteColor.opacity);
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+        onWrite = _mod1196.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, paletteColor, tag);
@@ -113,7 +113,7 @@ class PaletteColor$Type extends MessageType {
 const prototype = PaletteColor$Type.prototype;
 let items = [{ no: 1, name: "palette_color", kind: "scalar", T: 9 }, { no: 2, name: "opacity", kind: "scalar", T: 2 }];
 const object = new Object("discord_protos.premium_marketing.v1.PaletteColor", items, tmp3, tmp2, "create", "internalBinaryRead", tmp, "internalBinaryWrite");
-const MessageType2 = _mod1197.MessageType;
+const MessageType2 = _mod1196.MessageType;
 class ThemedPaletteColor$Type extends MessageType2 {
   constructor() {
     const items = [, , , ];
@@ -135,9 +135,9 @@ class ThemedPaletteColor$Type extends MessageType2 {
     const obj = {};
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1197;
+      const tmpResult = _mod1196;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -180,7 +180,7 @@ class ThemedPaletteColor$Type extends MessageType2 {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1197.UnknownFieldHandler.onRead;
+                onRead = _mod1196.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -194,35 +194,35 @@ class ThemedPaletteColor$Type extends MessageType2 {
     if (light.light) {
       internalBinaryWrite = object.internalBinaryWrite;
       light = light.light;
-      const tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
+      const tagResult = tag.tag(1, _mod1196.WireType.LengthDelimited);
       const internalBinaryWriteResult = internalBinaryWrite(light, tagResult.fork(), writeUnknownFields);
       const joined = internalBinaryWriteResult.join();
     }
     if (light.ash) {
       internalBinaryWrite2 = object.internalBinaryWrite;
       const ash = light.ash;
-      const tagResult1 = tag.tag(2, _mod1197.WireType.LengthDelimited);
+      const tagResult1 = tag.tag(2, _mod1196.WireType.LengthDelimited);
       const internalBinaryWrite2Result = internalBinaryWrite2(ash, tagResult1.fork(), writeUnknownFields);
       const joined1 = internalBinaryWrite2Result.join();
     }
     if (light.dark) {
       internalBinaryWrite3 = object.internalBinaryWrite;
       const dark = light.dark;
-      const tagResult2 = tag.tag(3, _mod1197.WireType.LengthDelimited);
+      const tagResult2 = tag.tag(3, _mod1196.WireType.LengthDelimited);
       const internalBinaryWrite3Result = internalBinaryWrite3(dark, tagResult2.fork(), writeUnknownFields);
       const joined2 = internalBinaryWrite3Result.join();
     }
     if (light.onyx) {
       internalBinaryWrite4 = object.internalBinaryWrite;
       const onyx = light.onyx;
-      const tagResult3 = tag.tag(4, _mod1197.WireType.LengthDelimited);
+      const tagResult3 = tag.tag(4, _mod1196.WireType.LengthDelimited);
       const internalBinaryWrite4Result = internalBinaryWrite4(onyx, tagResult3.fork(), writeUnknownFields);
       const joined3 = internalBinaryWrite4Result.join();
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+        onWrite = _mod1196.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, light, tag);
@@ -247,7 +247,7 @@ const items1 = [
 ];
 let tmp4 = new tmp("discord_protos.premium_marketing.v1.ThemedPaletteColor", items1, tmp3, ThemedPaletteColor$Type, "create", "internalBinaryRead", tmp, "internalBinaryWrite", items1, undefined, require, dependencyMap, object);
 const React3 = tmp4;
-const MessageType3 = _mod1197.MessageType;
+const MessageType3 = _mod1196.MessageType;
 class TabGradientColors$Type extends MessageType3 {
   constructor() {
     const items = [, , ];
@@ -268,9 +268,9 @@ class TabGradientColors$Type extends MessageType3 {
     const obj = {};
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1197;
+      const tmpResult = _mod1196;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -311,7 +311,7 @@ class TabGradientColors$Type extends MessageType3 {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1197.UnknownFieldHandler.onRead;
+                onRead = _mod1196.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -325,28 +325,28 @@ class TabGradientColors$Type extends MessageType3 {
     if (center.center) {
       internalBinaryWrite = closure_4.internalBinaryWrite;
       center = center.center;
-      const tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
+      const tagResult = tag.tag(1, _mod1196.WireType.LengthDelimited);
       const internalBinaryWriteResult = internalBinaryWrite(center, tagResult.fork(), writeUnknownFields);
       const joined = internalBinaryWriteResult.join();
     }
     if (center.innerRing) {
       internalBinaryWrite2 = closure_4.internalBinaryWrite;
       const innerRing = center.innerRing;
-      const tagResult1 = tag.tag(2, _mod1197.WireType.LengthDelimited);
+      const tagResult1 = tag.tag(2, _mod1196.WireType.LengthDelimited);
       const internalBinaryWrite2Result = internalBinaryWrite2(innerRing, tagResult1.fork(), writeUnknownFields);
       const joined1 = internalBinaryWrite2Result.join();
     }
     if (center.outerRing) {
       internalBinaryWrite3 = closure_4.internalBinaryWrite;
       const outerRing = center.outerRing;
-      const tagResult2 = tag.tag(3, _mod1197.WireType.LengthDelimited);
+      const tagResult2 = tag.tag(3, _mod1196.WireType.LengthDelimited);
       const internalBinaryWrite3Result = internalBinaryWrite3(outerRing, tagResult2.fork(), writeUnknownFields);
       const joined2 = internalBinaryWrite3Result.join();
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+        onWrite = _mod1196.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, center, tag);

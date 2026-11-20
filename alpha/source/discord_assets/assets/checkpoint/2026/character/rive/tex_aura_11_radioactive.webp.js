@@ -1,8 +1,8 @@
-// Module ID: 12465
-// Function ID: 12466
+// Module ID: 12435
+// Function ID: 12436
 // Dependencies: [2]
 
-// Module 12465
+// Module 12435
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_aura_11_radioactive.webp.js");

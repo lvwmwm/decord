@@ -1,13 +1,13 @@
-// Module ID: 7723
-// Function ID: 7724
+// Module ID: 7722
+// Function ID: 7723
 // Name: AppStoreAgeSignalSupport
-// Dependencies: [1627, 4749, 1380, 2]
+// Dependencies: [1625, 4751, 1378, 2]
 // Exports: isAppStoreAgeSignalSupported
 
-// Module 7723 (AppStoreAgeSignalSupport)
-import PlatformUtils from "PlatformUtils" /* 1380 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1627 */;
-import DeviceUtils from "DeviceUtils" /* 4749 */;
+// Module 7722 (AppStoreAgeSignalSupport)
+import PlatformUtils from "PlatformUtils" /* 1378 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1625 */;
+import DeviceUtils from "DeviceUtils" /* 4751 */;
 import size from "module_2" /* 2 */;
 
 let c2 = 26;

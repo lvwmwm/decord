@@ -1,11 +1,11 @@
 // Module ID: 9395
 // Function ID: 9396
 // Name: useCommonVariables
-// Dependencies: [1655, 9396, 9397, 9398]
+// Dependencies: [1653, 9396, 9397, 9398]
 // Exports: useCommonVariables
 
 // Module 9395 (useCommonVariables)
-import _mod1655 from "module_1655" /* 1655 */;
+import _mod1653 from "module_1653" /* 1653 */;
 
 let tmp2;
 const handlerOffsetDirection = tmp2(9396);
@@ -43,13 +43,13 @@ export function useCommonVariables(initProps) {
   }
   const tmp2 = require;
   let tmp = -Math.abs(defaultIndex * width);
-  let obj = _mod1655;
+  let obj = _mod1653;
   if (defaultScrollOffsetValue == null) {
     defaultScrollOffsetValue = obj.useSharedValue(tmp);
   }
-  const tmp2Result = _mod1655;
+  const tmp2Result = _mod1653;
   const sharedValue = tmp2Result.useSharedValue(dataLength);
-  const tmp2Result4 = _mod1655;
+  const tmp2Result4 = _mod1653;
   const sharedValue1 = tmp2Result4.useSharedValue(width);
   const items = [closure_2, sharedValue, dataLength, loop];
   [tmp7, tmp8, tmp9, tmp10] = items;
@@ -71,8 +71,8 @@ export function useCommonVariables(initProps) {
   pnpm_useCommonVariablesTs1.__workletHash = 8550051637635;
   pnpm_useCommonVariablesTs1.__initData = tmp7;
   const items2 = [closure_3, , , , ];
-  const useAnimatedReaction = _mod1655.useAnimatedReaction;
-  _mod1655;
+  const useAnimatedReaction = _mod1653.useAnimatedReaction;
+  _mod1653;
   items2[1] = handlerOffsetDirection.handlerOffsetDirection;
   items2[2] = defaultScrollOffsetValue;
   items2[3] = omitZero.computeOffsetIfDataChanged;
@@ -108,8 +108,8 @@ export function useCommonVariables(initProps) {
   pnpm_useCommonVariablesTs3.__workletHash = 3117565906094;
   pnpm_useCommonVariablesTs3.__initData = tmp18;
   const items7 = [closure_5, defaultScrollOffsetValue, ];
-  const useAnimatedReaction2 = _mod1655.useAnimatedReaction;
-  _mod1655;
+  const useAnimatedReaction2 = _mod1653.useAnimatedReaction;
+  _mod1653;
   items7[2] = computeOffsetIfSizeChanged.computeOffsetIfSizeChanged;
   let c0;
   let c1;

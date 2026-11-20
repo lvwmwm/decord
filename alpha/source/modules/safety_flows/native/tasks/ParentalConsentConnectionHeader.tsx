@@ -1,23 +1,23 @@
-// Module ID: 20206
-// Function ID: 20207
+// Module ID: 20026
+// Function ID: 20027
 // Name: ParentalConsentConnectionHeader
-// Dependencies: [19, 17, 1388, 21, 4792, 5346, 575, 1630, 504, 5383, 6304, 1113, 3019, 2]
+// Dependencies: [19, 17, 1386, 21, 4794, 5348, 575, 1628, 504, 5385, 6306, 1112, 3021, 2]
 // Exports: ParentalConsentConnectionNavbar
 
-// Module 20206 (ParentalConsentConnectionHeader)
+// Module 20026 (ParentalConsentConnectionHeader)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1113 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import _modDef3019 from "module_3019" /* 3019 */;
-import NavigatorConstants from "NavigatorConstants" /* 5346 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6304 */;
+import intl2 from "intl" /* 1112 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
+import _modDef3021 from "module_3021" /* 3021 */;
+import NavigatorConstants from "NavigatorConstants" /* 5348 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6306 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1388 */;
+import UserStore from "UserStore" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let currentUser;
@@ -64,7 +64,7 @@ export function ParentalConsentConnectionNavbar() {
       const obj = AuthenticationActionCreatorsDefault;
       return obj.logout("safety_flows_parental_consent_connection");
     },
-    children: intl.string(_modDef3019["3HuGuY"])
+    children: intl.string(_modDef3021["3HuGuY"])
   };
   const Text = Text_Text.Text;
   intl = intl2.intl;

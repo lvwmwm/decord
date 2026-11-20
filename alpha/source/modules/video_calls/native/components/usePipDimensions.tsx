@@ -1,10 +1,10 @@
-// Module ID: 10591
-// Function ID: 10592
+// Module ID: 10533
+// Function ID: 10534
 // Name: usePipDimensions
-// Dependencies: [19, 10592, 1496, 9311, 2]
+// Dependencies: [19, 10534, 1494, 9311, 2]
 // Exports: default
 
-// Module 10591 (usePipDimensions)
+// Module 10533 (usePipDimensions)
 import DeviceOrientation from "DeviceOrientation" /* 9311 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;

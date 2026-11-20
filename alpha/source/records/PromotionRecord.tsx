@@ -1,11 +1,11 @@
 // Module ID: 9024
 // Function ID: 9025
 // Name: PromotionRecord
-// Dependencies: [1408, 9025, 9072, 1406, 2]
+// Dependencies: [1406, 9025, 9072, 1404, 2]
 
 // Module 9024 (PromotionRecord)
-import FlagUtils from "FlagUtils" /* 1406 */;
-import Record from "Record" /* 1408 */;
+import FlagUtils from "FlagUtils" /* 1404 */;
+import Record from "Record" /* 1406 */;
 import MarketingComponentRecord from "MarketingComponentRecord" /* 9025 */;
 import size from "module_2" /* 2 */;
 

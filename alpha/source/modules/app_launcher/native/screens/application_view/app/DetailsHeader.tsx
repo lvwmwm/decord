@@ -1,19 +1,19 @@
-// Module ID: 12925
-// Function ID: 12926
+// Module ID: 12895
+// Function ID: 12896
 // Name: DetailsHeader
-// Dependencies: [32, 19, 17, 21, 4792, 575, 1655, 10612, 12926, 8031, 6296, 6899, 5383, 1113, 5002, 5005, 1708, 7016, 5347, 1092, 2]
+// Dependencies: [32, 19, 17, 21, 4794, 575, 1653, 10554, 12896, 8030, 6298, 6898, 5385, 1112, 5004, 5007, 1706, 7015, 5349, 1091, 2]
 
-// Module 12925 (DetailsHeader)
+// Module 12895 (DetailsHeader)
 import nativeDefault from "native" /* 575 */;
-import _mod1708 from "module_1708" /* 1708 */;
-import timing_timing from "timing/timing" /* 5002 */;
-import timingPresets from "timingPresets" /* 5005 */;
-import BioMarkupUtils from "BioMarkupUtils" /* 12926 */;
+import _mod1706 from "module_1706" /* 1706 */;
+import timing_timing from "timing/timing" /* 5004 */;
+import timingPresets from "timingPresets" /* 5007 */;
+import BioMarkupUtils from "BioMarkupUtils" /* 12896 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, set, set2;
@@ -91,7 +91,7 @@ const memoResult = react.memo(function DetailsHeader(viewContainerStyle) {
   let closure_18;
   viewContainerStyle = viewContainerStyle.viewContainerStyle;
   let tmp = ref2();
-  let obj = ref(10612);
+  let obj = ref(10554);
   const isPartnerApplicationResult = obj.isPartnerApplication(application);
   ref = react.useRef(null);
   let tmp7 = first1(react.useState(false), 2);
@@ -101,12 +101,12 @@ const memoResult = react.memo(function DetailsHeader(viewContainerStyle) {
   first1 = tmp9[0];
   react = tmp9[1];
   let closure_5 = react.useRef(true);
-  const obj3 = ref(1655);
+  const obj3 = ref(1653);
   const sharedValue = obj3.useSharedValue(null);
   let items = [ref3, sharedValue];
   let c0;
   [tmp12, tmp13] = items;
-  const obj4 = ref(1655);
+  const obj4 = ref(1653);
   class DetailsHeaderTsx1 {
     constructor() {
       const obj = { height: _undefined.get() };
@@ -118,9 +118,9 @@ const memoResult = react.memo(function DetailsHeader(viewContainerStyle) {
   DetailsHeaderTsx1.__workletHash = 9372666213791;
   DetailsHeaderTsx1.__initData = tmp12;
   const animatedStyle = obj4.useAnimatedStyle(DetailsHeaderTsx1);
-  const tmp2Result = ref(10612);
+  const tmp2Result = ref(10554);
   const sectionName = tmp2Result.getSectionName(application);
-  const tmp2Result3 = ref(10612);
+  const tmp2Result3 = ref(10554);
   str = tmp2Result3.getSectionDescription(application);
   let tmp30Result5 = null != str;
   if (tmp30Result5) {
@@ -148,10 +148,10 @@ const memoResult = react.memo(function DetailsHeader(viewContainerStyle) {
     }
     return result;
   }, items2);
-  const tmp2Result4 = ref(8031);
+  const tmp2Result4 = ref(8030);
   isScreenLandscape = tmp2Result4.useIsScreenLandscape();
   const tmp25 = first;
-  const tmp26 = first(6296)(isScreenLandscape);
+  const tmp26 = first(6298)(isScreenLandscape);
   closure_18 = tmp26;
   const items3 = [isScreenLandscape, tmp26];
   const effect = obj2.useEffect(() => {
@@ -162,7 +162,7 @@ const memoResult = react.memo(function DetailsHeader(viewContainerStyle) {
     }
   }, items3);
   let tmp29 = first;
-  first(6899)(ref);
+  first(6898)(ref);
   if (first) {
     tmp29 = !first1;
   }
@@ -186,19 +186,19 @@ const memoResult = react.memo(function DetailsHeader(viewContainerStyle) {
   items5 = [tmp.container, mainContainerStyle];
   let tmp32Result = !hideName;
   const obj7 = { style: tmp.nameContainer, children: items6 };
-  const View = tmp25(1655).View;
+  const View = tmp25(1653).View;
   const tmp31 = num3;
   if (!hideName) {
     const obj8 = { style: tmp.nameText, variant: "heading-lg/semibold", color: "text-default", lineClamp: 1, children: sectionName };
-    tmp32Result = tmp32(tmp2(5383).Heading, obj8);
+    tmp32Result = tmp32(tmp2(5385).Heading, obj8);
   }
   items6 = [tmp32Result, ];
   let tmp32Result5 = null;
   if (isPartnerApplicationResult) {
     const obj9 = { style: tmp.partnerLabelWrapper, children: num2(Text, obj10) };
-    obj10 = { variant: "body-xs/medium", color: "text-default", children: intl.string(ref(1113).t.LO4f0P) };
-    Text = tmp2(5383).Text;
-    intl = tmp2(1113).intl;
+    obj10 = { variant: "body-xs/medium", color: "text-default", children: intl.string(ref(1112).t.LO4f0P) };
+    Text = tmp2(5385).Text;
+    intl = tmp2(1112).intl;
     tmp32Result5 = tmp32(tmp33, obj9);
   }
   items6[1] = tmp32Result5;
@@ -227,7 +227,7 @@ const memoResult = react.memo(function DetailsHeader(viewContainerStyle) {
               const current = ref2.current;
               const withTiming = timing_timing.withTiming;
               const timingStandard = timingPresets.timingStandard;
-              const items = [closure_14, _mod1708.scheduleOnRN, _undefined];
+              const items = [closure_14, _mod1706.scheduleOnRN, _undefined];
               let c0;
               let c1;
               [tmp25, tmp26, tmp27] = items;
@@ -254,7 +254,7 @@ const memoResult = react.memo(function DetailsHeader(viewContainerStyle) {
       accessibilityRole: "button",
       children: items12
     };
-    const tmp25Result = tmp25(7016);
+    const tmp25Result = tmp25(7015);
     if (tmp29) {
       const obj13 = { style: absoluteFill, children: items8 };
       obj12.style = tmp.maskFill;
@@ -268,8 +268,8 @@ const memoResult = react.memo(function DetailsHeader(viewContainerStyle) {
       items9[1] = obj15;
       const obj16 = { style: tmp.maskFill };
       items10 = [num2(tmp33, obj16), , ];
-      const obj17 = { start: ref(1092).HorizontalGradient.START, end: ref(1092).HorizontalGradient.END, colors, style: tmp.maskFade };
-      const tmp25Result2 = tmp25(5347);
+      const obj17 = { start: ref(1091).HorizontalGradient.START, end: ref(1091).HorizontalGradient.END, colors, style: tmp.maskFade };
+      const tmp25Result2 = tmp25(5349);
       items10[1] = num2(tmp25Result2, obj17);
       if (num2 == null) {
         num2 = 0;
@@ -285,7 +285,7 @@ const memoResult = react.memo(function DetailsHeader(viewContainerStyle) {
       tmp32Result6 = tmp32(tmp33, obj12);
     }
     const obj20 = { maskElement: tmp32Result6, children: num2(Text2, obj21) };
-    Text2 = tmp2(5383).Text;
+    Text2 = tmp2(5385).Text;
     obj21 = { variant: "body-sm/medium", color: "text-default", lineClamp: num4, children: memo };
     items12 = [num2(tmp25Result, obj20), , ];
     let tmp32Result7 = null;
@@ -301,9 +301,9 @@ const memoResult = react.memo(function DetailsHeader(viewContainerStyle) {
         color: "text-brand",
         children: items13
       };
-      Text3 = tmp2(5383).Text;
-      const intl2 = tmp2(1113).intl;
-      items13 = ["\u2026 ", intl2.string(tmp2(1113).t["OBCR+p"])];
+      Text3 = tmp2(5385).Text;
+      const intl2 = tmp2(1112).intl;
+      items13 = ["\u2026 ", intl2.string(tmp2(1112).t["OBCR+p"])];
       tmp32Result7 = tmp32(tmp33, obj22);
     }
     items12[1] = tmp32Result7;
@@ -311,9 +311,9 @@ const memoResult = react.memo(function DetailsHeader(viewContainerStyle) {
     if (first) {
       tmp32Result8 = null;
       if (first1) {
-        const obj24 = { variant: "body-sm/medium", color: "text-brand", style: tmp.collapseDescriptionCTA, children: intl3.string(ref(1113).t.D5xGUK) };
-        const Text4 = tmp2(5383).Text;
-        intl3 = tmp2(1113).intl;
+        const obj24 = { variant: "body-sm/medium", color: "text-brand", style: tmp.collapseDescriptionCTA, children: intl3.string(ref(1112).t.D5xGUK) };
+        const Text4 = tmp2(5385).Text;
+        intl3 = tmp2(1112).intl;
         tmp32Result8 = tmp32(Text4, obj24);
       }
     }
@@ -339,7 +339,7 @@ const memoResult = react.memo(function DetailsHeader(viewContainerStyle) {
     let tmp32Result9 = !hideName;
     if (tmp32Result9) {
       const obj26 = { variant: "heading-lg/semibold", color: "text-default", children: sectionName };
-      tmp32Result9 = tmp32(tmp2(5383).Heading, obj26);
+      tmp32Result9 = tmp32(tmp2(5385).Heading, obj26);
     }
     items16 = [tmp32Result9, ];
     if (tmp30Result5) {
@@ -364,10 +364,10 @@ const memoResult = react.memo(function DetailsHeader(viewContainerStyle) {
         children: memo
       };
       tmp47 = !hideName && tmp.descriptionContainer;
-      items17 = [num2(tmp2(5383).Text, obj28), ];
-      const obj29 = { variant: "body-sm/medium", color: "text-brand", style: tmp.collapseDescriptionCTA, children: intl4.string(ref(1113).t.D5xGUK) };
-      const Text5 = tmp2(5383).Text;
-      intl4 = tmp2(1113).intl;
+      items17 = [num2(tmp2(5385).Text, obj28), ];
+      const obj29 = { variant: "body-sm/medium", color: "text-brand", style: tmp.collapseDescriptionCTA, children: intl4.string(ref(1112).t.D5xGUK) };
+      const Text5 = tmp2(5385).Text;
+      intl4 = tmp2(1112).intl;
       items17[1] = num2(Text5, obj29);
       tmp30Result5 = tmp30(tmp33, obj27);
     }

@@ -1,11 +1,11 @@
 // Module ID: 9032
 // Function ID: 9033
 // Name: cta_button
-// Dependencies: [32, 1197, 9030, 1227, 2]
+// Dependencies: [32, 1196, 9030, 1226, 2]
 
 // Module 9032 (cta_button)
-import _mod1197 from "module_1197" /* 1197 */;
-import wrappers from "wrappers" /* 1227 */;
+import _mod1196 from "module_1196" /* 1196 */;
+import wrappers from "wrappers" /* 1226 */;
 import localized_string from "localized_string" /* 9030 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
@@ -30,7 +30,7 @@ const T5 = function T() {
 };
 const ButtonAction = { UNSPECIFIED: 0, [0]: "UNSPECIFIED", OPEN_MARKETING_PAGE: 1, [1]: "OPEN_MARKETING_PAGE", OPEN_TIER_2_PAYMENT_MODAL: 2, [2]: "OPEN_TIER_2_PAYMENT_MODAL", OPEN_TIER_1_PAYMENT_MODAL: 3, [3]: "OPEN_TIER_1_PAYMENT_MODAL", OPEN_TIER_2_PAYMENT_MODAL_CUSTOM_CONFIRMATION_FOOTER: 4, [4]: "OPEN_TIER_2_PAYMENT_MODAL_CUSTOM_CONFIRMATION_FOOTER", OPEN_PLAN_SELECTION_MODAL: 5, [5]: "OPEN_PLAN_SELECTION_MODAL", OPEN_PREMIUM_GROUP_PAYMENT_MODAL: 6, [6]: "OPEN_PREMIUM_GROUP_PAYMENT_MODAL", OPEN_SOCIAL_LAYER_STOREFRONT: 7, [7]: "OPEN_SOCIAL_LAYER_STOREFRONT", OPEN_GUILD_BOOST_CHECKOUT: 8, [8]: "OPEN_GUILD_BOOST_CHECKOUT", OPEN_SHOP: 9, [9]: "OPEN_SHOP", OPEN_GIFT_MODAL: 10, [10]: "OPEN_GIFT_MODAL" };
 let obj2 = { UNSPECIFIED: 0, [0]: "UNSPECIFIED", PLAN_SELECTION: 1, [1]: "PLAN_SELECTION", TIER_2: 2, [2]: "TIER_2" };
-const MessageType = _mod1197.MessageType;
+const MessageType = _mod1196.MessageType;
 class CTAButton$Type extends MessageType {
   constructor() {
     let items = [{ no: 1, name: "copy", kind: "scalar", T: 9 }, { no: 2, name: "button_action", kind: "enum", T: T2 }, { no: 3, name: "deeplink_section", kind: "scalar", T: 9 }, { no: 4, name: "copy_localized", kind: "message", T: T3 }, { no: 5, name: "navigable_storefront_application_id", kind: "message", T: T4 }, , ];
@@ -49,9 +49,9 @@ class CTAButton$Type extends MessageType {
     const obj = { copy: "", buttonAction: 0, deeplinkSection: "", giftModalDestination: 0 };
     const _Object = Object;
     obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1197;
+      const tmpResult = _mod1196;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -103,7 +103,7 @@ class CTAButton$Type extends MessageType {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1197.UnknownFieldHandler.onRead;
+                onRead = _mod1196.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -115,22 +115,22 @@ class CTAButton$Type extends MessageType {
   }
   internalBinaryWrite(copy, tag, writeUnknownFields) {
     if ("" !== copy.copy) {
-      const tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
+      const tagResult = tag.tag(1, _mod1196.WireType.LengthDelimited);
       tagResult.string(copy.copy);
     }
     if (0 !== copy.buttonAction) {
-      const tagResult1 = tag.tag(2, _mod1197.WireType.Varint);
+      const tagResult1 = tag.tag(2, _mod1196.WireType.Varint);
       tagResult1.int32(copy.buttonAction);
     }
     if ("" !== copy.deeplinkSection) {
-      const tagResult2 = tag.tag(3, _mod1197.WireType.LengthDelimited);
+      const tagResult2 = tag.tag(3, _mod1196.WireType.LengthDelimited);
       tagResult2.string(copy.deeplinkSection);
     }
     if (copy.copyLocalized) {
       const LocalizedString = localized_string.LocalizedString;
       internalBinaryWrite = LocalizedString.internalBinaryWrite;
       const copyLocalized = copy.copyLocalized;
-      const tagResult3 = tag.tag(4, _mod1197.WireType.LengthDelimited);
+      const tagResult3 = tag.tag(4, _mod1196.WireType.LengthDelimited);
       const internalBinaryWriteResult = internalBinaryWrite(copyLocalized, tagResult3.fork(), writeUnknownFields);
       const joined = internalBinaryWriteResult.join();
     }
@@ -138,7 +138,7 @@ class CTAButton$Type extends MessageType {
       const UInt64Value = wrappers.UInt64Value;
       internalBinaryWrite2 = UInt64Value.internalBinaryWrite;
       const navigableStorefrontApplicationId = copy.navigableStorefrontApplicationId;
-      const tagResult4 = tag.tag(5, _mod1197.WireType.LengthDelimited);
+      const tagResult4 = tag.tag(5, _mod1196.WireType.LengthDelimited);
       const internalBinaryWrite2Result = internalBinaryWrite2(navigableStorefrontApplicationId, tagResult4.fork(), writeUnknownFields);
       const joined1 = internalBinaryWrite2Result.join();
     }
@@ -146,18 +146,18 @@ class CTAButton$Type extends MessageType {
       const UInt64Value2 = wrappers.UInt64Value;
       internalBinaryWrite3 = UInt64Value2.internalBinaryWrite;
       const shopCollectionId = copy.shopCollectionId;
-      const tagResult5 = tag.tag(6, _mod1197.WireType.LengthDelimited);
+      const tagResult5 = tag.tag(6, _mod1196.WireType.LengthDelimited);
       const internalBinaryWrite3Result = internalBinaryWrite3(shopCollectionId, tagResult5.fork(), writeUnknownFields);
       const joined2 = internalBinaryWrite3Result.join();
     }
     if (0 !== copy.giftModalDestination) {
-      const tagResult6 = tag.tag(7, _mod1197.WireType.Varint);
+      const tagResult6 = tag.tag(7, _mod1196.WireType.Varint);
       tagResult6.int32(copy.giftModalDestination);
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+        onWrite = _mod1196.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, copy, tag);

@@ -1,27 +1,27 @@
-// Module ID: 14689
-// Function ID: 14690
+// Module ID: 14648
+// Function ID: 14649
 // Name: GuildBoostingMarketingPersistentCta
-// Dependencies: [19, 17, 4793, 1072, 21, 4792, 575, 563, 1655, 5393, 5347, 7203, 5383, 13388, 2]
+// Dependencies: [19, 17, 4795, 1071, 21, 4794, 575, 563, 1653, 5395, 5349, 7202, 5385, 13358, 2]
 // Exports: default
 
-// Module 14689 (GuildBoostingMarketingPersistentCta)
+// Module 14648 (GuildBoostingMarketingPersistentCta)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import LinearGradientDefault from "LinearGradient" /* 5347 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import spring_spring from "spring/spring" /* 5393 */;
-import GuildIcon from "GuildIcon" /* 7203 */;
-import GuildBoostingSubscribeButtonDefault from "GuildBoostingSubscribeButton" /* 13388 */;
+import Constants from "Constants" /* 1071 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import LinearGradientDefault from "LinearGradient" /* 5349 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import spring_spring from "spring/spring" /* 5395 */;
+import GuildIcon from "GuildIcon" /* 7202 */;
+import GuildBoostingSubscribeButtonDefault from "GuildBoostingSubscribeButton" /* 13358 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4793 */;
+import AccessibilityStore from "AccessibilityStore" /* 4795 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
-const _modDef1655 = _mod1655;
+const _modDef1653 = _mod1653;
 const GuildIconDefault = GuildIcon;
 
 let metroImportDefault;
@@ -71,7 +71,7 @@ export default function GuildBoostingMarketingPersistentCta(guild) {
   let obj = useStateFromStores;
   let items = [AccessibilityStore];
   const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  let tmp5 = _mod1655;
+  let tmp5 = _mod1653;
   const items1 = [closure_10, stateFromStores, 120, , , ];
   const useAnimatedStyle = tmp5.useAnimatedStyle;
   items1[3] = spring_spring.withSpring;
@@ -112,7 +112,7 @@ export default function GuildBoostingMarketingPersistentCta(guild) {
   const animatedStyle = useAnimatedStyle(GuildBoostingMarketingPersistentCtaTsx1);
   const obj2 = { style: items3, children: metroRequire(tmp13, obj3) };
   items3 = [tmp.wrapper, animatedStyle];
-  View = _modDef1655.View;
+  View = _modDef1653.View;
   obj3 = { angle: 45, angleCenter: { x: 0.5, y: 0.5 }, colors: items4, locations: [0, 1], style: tmp.border, useAngle: true, children: metroImportDefault(View, obj4) };
   items4 = [, ];
   tmp13 = LinearGradientDefault;

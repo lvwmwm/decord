@@ -1,19 +1,19 @@
-// Module ID: 17864
-// Function ID: 17865
+// Module ID: 17691
+// Function ID: 17692
 // Name: InterestGuildJoinButton
-// Dependencies: [5, 32, 19, 17, 4643, 21, 4792, 575, 504, 13252, 4828, 8086, 17865, 1113, 2561, 5390, 2]
+// Dependencies: [5, 32, 19, 17, 4645, 21, 4794, 575, 504, 13222, 4830, 8085, 17692, 1112, 2563, 5392, 2]
 // Exports: default
 
-// Module 17864 (InterestGuildJoinButton)
+// Module 17691 (InterestGuildJoinButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import reactDefault from "react" /* 8086 */;
+import reactDefault from "react" /* 8085 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildMembershipStore from "GuildMembershipStore" /* 4643 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import GuildMembershipStore from "GuildMembershipStore" /* 4645 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let c1, c4, closure_2;
@@ -64,7 +64,7 @@ export default function InterestGuildJoinButton(guildId) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -121,7 +121,7 @@ export default function InterestGuildJoinButton(guildId) {
             }
           }
           c4 = 3;
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp31) {
           closure_2 = tmp31;
           if (0 === c3) {
@@ -141,34 +141,34 @@ export default function InterestGuildJoinButton(guildId) {
   const items = [closure_7];
   const items1 = [guildId];
   let stateFromStores = obj.useStateFromStores(items, () => GuildMembershipStore.isMember(guildId), items1);
-  let obj2 = guildId(13252);
+  let obj2 = guildId(13222);
   const currentUserGuildJoinRequest = obj2.useCurrentUserGuildJoinRequest(guildId);
   let applicationStatus;
   if (currentUserGuildJoinRequest != null) {
     applicationStatus = currentUserGuildJoinRequest.applicationStatus;
   }
-  const tmp7 = applicationStatus === guildId(4828).GuildJoinRequestApplicationStatuses.SUBMITTED;
+  const tmp7 = applicationStatus === guildId(4830).GuildJoinRequestApplicationStatuses.SUBMITTED;
   _slicedToArray = tmp7;
   [loading, closure_6] = loading.useState(false);
   closure_7 = reactDefault();
-  const intl = tmp2(1113).intl;
+  const intl = tmp2(1112).intl;
   const string = intl.string;
-  const t = tmp2(1113).t;
+  const t = tmp2(1112).t;
   if (stateFromStores) {
     stringResult = string(t.cEnaWx);
-    const intl4 = tmp2(1113).intl;
+    const intl4 = tmp2(1112).intl;
     let obj3 = { guild: guildName };
-    formatToPlainStringResult = intl4.formatToPlainString(tmp10(2561).t1du0D, obj3);
+    formatToPlainStringResult = intl4.formatToPlainString(tmp10(2563).t1du0D, obj3);
   } else if (tmp7) {
     stringResult = string(t.tQqnak);
-    const intl3 = tmp2(1113).intl;
+    const intl3 = tmp2(1112).intl;
     let obj4 = { guild: guildName };
-    formatToPlainStringResult = intl3.formatToPlainString(tmp10(2561).nQnkb3, obj4);
+    formatToPlainStringResult = intl3.formatToPlainString(tmp10(2563).nQnkb3, obj4);
   } else {
     stringResult = string(t.VJlc0S);
-    const intl2 = tmp2(1113).intl;
+    const intl2 = tmp2(1112).intl;
     let obj5 = { guild: guildName };
-    formatToPlainStringResult = intl2.formatToPlainString(tmp10(2561).NOfX8z, obj5);
+    formatToPlainStringResult = intl2.formatToPlainString(tmp10(2563).NOfX8z, obj5);
   }
   let button;
   const tmp14 = closure_6;
@@ -177,7 +177,7 @@ export default function InterestGuildJoinButton(guildId) {
   }
   let str = "sm";
   const obj6 = { style: button, children: obj(Button, obj7) };
-  Button = tmp2(5390).Button;
+  Button = tmp2(5392).Button;
   if (fullWidth) {
     str = "lg";
   }

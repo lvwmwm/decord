@@ -1,19 +1,19 @@
-// Module ID: 7311
-// Function ID: 7312
+// Module ID: 7310
+// Function ID: 7311
 // Name: ViewEmptyState
-// Dependencies: [19, 17, 1072, 21, 4792, 6286, 575, 5479, 1187, 2]
+// Dependencies: [19, 17, 1071, 21, 4794, 6288, 575, 5481, 1186, 2]
 // Exports: default
 
-// Module 7311 (ViewEmptyState)
+// Module 7310 (ViewEmptyState)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import native from "native" /* 1187 */;
-import FastImageDefault from "FastImage" /* 5479 */;
+import Constants from "Constants" /* 1071 */;
+import native from "native" /* 1186 */;
+import FastImageDefault from "FastImage" /* 5481 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
-import TextStyles from "TextStyles" /* 6286 */;
+import createStyles_mod from "createStyles" /* 4794 */;
+import TextStyles from "TextStyles" /* 6288 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

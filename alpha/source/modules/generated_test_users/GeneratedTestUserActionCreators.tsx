@@ -1,20 +1,20 @@
-// Module ID: 17085
-// Function ID: 17086
+// Module ID: 16909
+// Function ID: 16910
 // Name: GeneratedTestUserActionCreators
-// Dependencies: [5, 1407, 17062, 1072, 6383, 6304, 6388, 6311, 1264, 572, 17086, 2]
+// Dependencies: [5, 1405, 16886, 1071, 6385, 6306, 6390, 6313, 1263, 572, 16910, 2]
 // Exports: getGeneratedPoolById, loginAsGeneratedUser, removeGeneratedPoolFromList
 
-// Module 17085 (GeneratedTestUserActionCreators)
+// Module 16909 (GeneratedTestUserActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import Constants from "Constants" /* 1072 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6304 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6311 */;
-import Constants2 from "Constants" /* 6383 */;
-import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 6388 */;
+import Constants from "Constants" /* 1071 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1263 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6306 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6313 */;
+import Constants2 from "Constants" /* 6385 */;
+import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 6390 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserRecord from "UserRecord" /* 1407 */;
-import GeneratedTestUsersStore from "GeneratedTestUsersStore" /* 17062 */;
+import UserRecord from "UserRecord" /* 1405 */;
+import GeneratedTestUsersStore from "GeneratedTestUsersStore" /* 16886 */;
 import size from "module_2" /* 2 */;
 
 let body, c2, c3;
@@ -35,7 +35,7 @@ let obj = function _getGeneratedPoolById() {
         let obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

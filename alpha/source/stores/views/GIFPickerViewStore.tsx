@@ -1,14 +1,14 @@
-// Module ID: 10033
-// Function ID: 10034
+// Module ID: 10036
+// Function ID: 10037
 // Name: GIFPickerViewStore
-// Dependencies: [1072, 1232, 1113, 504, 572, 2]
+// Dependencies: [1071, 1231, 1112, 504, 572, 2]
 
-// Module 10033 (GIFPickerViewStore)
+// Module 10036 (GIFPickerViewStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import Constants from "Constants" /* 1072 */;
-import intl2 from "intl" /* 1113 */;
-import frecency_user_settings from "frecency_user_settings" /* 1232 */;
+import Constants from "Constants" /* 1071 */;
+import intl2 from "intl" /* 1112 */;
+import frecency_user_settings from "frecency_user_settings" /* 1231 */;
 import size_mod from "module_2" /* 2 */;
 
 function getFormatFromUrl(src) {

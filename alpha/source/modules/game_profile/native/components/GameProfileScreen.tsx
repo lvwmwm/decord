@@ -1,14 +1,14 @@
 // Module ID: 9650
 // Function ID: 9651
 // Name: GameProfileScreen
-// Dependencies: [32, 19, 17, 9651, 21, 4792, 575, 5390, 1113, 8030, 9652, 5471, 9654, 8933, 8769, 1655, 9649, 9657, 5002, 1708, 9658, 9663, 9680, 5006, 9682, 5020, 5024, 9683, 9681, 9685, 9811, 9821, 9822, 5355, 2]
+// Dependencies: [32, 19, 17, 9651, 21, 4794, 575, 5392, 1112, 8029, 9652, 5473, 9654, 8933, 8707, 1653, 9649, 9657, 5004, 1706, 9658, 9663, 9680, 5008, 9682, 5022, 5026, 9683, 9681, 9685, 9813, 9823, 9824, 5357, 2]
 // Exports: default
 
 // Module 9650 (GameProfileScreen)
 import nativeDefault from "native" /* 575 */;
-import intl3 from "intl" /* 1113 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5006 */;
-import components_Button_Button from "components/Button/Button" /* 5390 */;
+import intl3 from "intl" /* 1112 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5008 */;
+import components_Button_Button from "components/Button/Button" /* 5392 */;
 import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 9649 */;
 import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9654 */;
 import getGameProfileStoreWebsiteDataDefault from "getGameProfileStoreWebsiteData" /* 9663 */;
@@ -18,7 +18,7 @@ import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GameProfileStore from "GameProfileStore" /* 9651 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const GameProfileStoreLinksActionSheetDefault = GameProfileStoreLinksActionSheet;

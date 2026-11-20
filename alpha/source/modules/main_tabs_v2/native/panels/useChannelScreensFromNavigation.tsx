@@ -1,20 +1,20 @@
-// Module ID: 17564
-// Function ID: 17565
+// Module ID: 17391
+// Function ID: 17392
 // Name: useChannelScreensFromNavigation
-// Dependencies: [32, 19, 4641, 4695, 4825, 1072, 4648, 4969, 4968, 4971, 2]
-// Exports: default, isActiveTabsGuilds
+// Dependencies: [32, 19, 4643, 4697, 4827, 1071, 4650, 4971, 4970, 4973, 2]
+// Exports: default, isActiveTabsGuilds, resolveAllChannelScreens
 
-// Module 17564 (useChannelScreensFromNavigation)
-import Constants from "Constants" /* 1072 */;
-import ChannelConstants from "ChannelConstants" /* 4648 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4968 */;
-import RootNavigationRef from "RootNavigationRef" /* 4969 */;
-import useChatLayoutDefault from "useChatLayout" /* 4971 */;
+// Module 17391 (useChannelScreensFromNavigation)
+import Constants from "Constants" /* 1071 */;
+import ChannelConstants from "ChannelConstants" /* 4650 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4970 */;
+import RootNavigationRef from "RootNavigationRef" /* 4971 */;
+import useChatLayoutDefault from "useChatLayout" /* 4973 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4695 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4825 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4697 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4827 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
@@ -150,7 +150,7 @@ function resolveChannelScreens(state, isChatLockedOpen) {
     let obj = NavigationRouteUtils;
     let coerceChannelRouteResult = obj.coerceChannelRoute(tmp2);
     if (null != coerceChannelRouteResult) {
-      let obj2 = { index: items.length, type: obj.DEFAULT, guildId: coerceChannelRouteResult.params.guildId, channelId: coerceChannelRouteResult.params.channelId, showCreateThread: coerceChannelRouteResult.params.showCreateThread };
+      let obj2 = { index: items.length, type: obj.DEFAULT, guildId: coerceChannelRouteResult.params.guildId, channelId: coerceChannelRouteResult.params.channelId, subRouteId: coerceChannelRouteResult.params.subRouteId, showCreateThread: coerceChannelRouteResult.params.showCreateThread };
       let arr = items.push(obj2);
     }
   }
@@ -290,4 +290,18 @@ export function isActiveTabsGuilds(state) {
     }
     return tmp7;
   }
+}
+export function resolveAllChannelScreens(index) {
+  let num;
+  const items = [];
+  for (let num = 0; num <= index.index; num = num + 1) {
+    let tmp = index.routes[num];
+    let obj = NavigationRouteUtils;
+    let coerceChannelRouteResult = obj.coerceChannelRoute(tmp);
+    if (null != coerceChannelRouteResult) {
+      let obj2 = { index: items.length, type: obj.DEFAULT, guildId: coerceChannelRouteResult.params.guildId, channelId: coerceChannelRouteResult.params.channelId, subRouteId: coerceChannelRouteResult.params.subRouteId, showCreateThread: coerceChannelRouteResult.params.showCreateThread };
+      let arr = items.push(obj2);
+    }
+  }
+  return items;
 }

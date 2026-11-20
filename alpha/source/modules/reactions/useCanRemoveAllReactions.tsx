@@ -1,12 +1,12 @@
-// Module ID: 10329
-// Function ID: 10330
+// Module ID: 10271
+// Function ID: 10272
 // Name: useCanRemoveAllReactions
-// Dependencies: [4724, 1072, 6774, 504, 2]
+// Dependencies: [4726, 1071, 6774, 504, 2]
 // Exports: default
 
-// Module 10329 (useCanRemoveAllReactions)
-import Constants from "Constants" /* 1072 */;
-import PermissionStore from "PermissionStore" /* 4724 */;
+// Module 10271 (useCanRemoveAllReactions)
+import Constants from "Constants" /* 1071 */;
+import PermissionStore from "PermissionStore" /* 4726 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

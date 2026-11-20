@@ -1,22 +1,22 @@
-// Module ID: 8168
-// Function ID: 8169
+// Module ID: 8167
+// Function ID: 8168
 // Name: MemberSafetyStore
-// Dependencies: [32, 502, 4704, 4663, 1388, 8169, 1072, 1255, 11, 8175, 8176, 8171, 504, 572, 2]
+// Dependencies: [32, 502, 4706, 4665, 1386, 8168, 1071, 1254, 11, 8174, 8175, 8170, 504, 572, 2]
 
-// Module 8168 (MemberSafetyStore)
+// Module 8167 (MemberSafetyStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import Constants from "Constants" /* 1072 */;
-import GuildMemberSafetyPageStore from "GuildMemberSafetyPageStore" /* 8169 */;
-import MemberSafetyElasticSearchQueryTypes from "MemberSafetyElasticSearchQueryTypes" /* 8171 */;
-import MemberSafetyStoreSupplemental from "MemberSafetyStoreSupplemental" /* 8175 */;
-import MemberSafetySupplementalUtils from "MemberSafetySupplementalUtils" /* 8176 */;
+import Constants from "Constants" /* 1071 */;
+import GuildMemberSafetyPageStore from "GuildMemberSafetyPageStore" /* 8168 */;
+import MemberSafetyElasticSearchQueryTypes from "MemberSafetyElasticSearchQueryTypes" /* 8170 */;
+import MemberSafetyStoreSupplemental from "MemberSafetyStoreSupplemental" /* 8174 */;
+import MemberSafetySupplementalUtils from "MemberSafetySupplementalUtils" /* 8175 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 4704 */;
-import GuildStore from "GuildStore" /* 4663 */;
-import UserStore from "UserStore" /* 1388 */;
+import GuildMemberStore from "GuildMemberStore" /* 4706 */;
+import GuildStore from "GuildStore" /* 4665 */;
+import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 
 let participants;

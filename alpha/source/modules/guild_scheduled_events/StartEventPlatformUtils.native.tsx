@@ -1,19 +1,19 @@
-// Module ID: 7914
-// Function ID: 7915
+// Module ID: 7913
+// Function ID: 7914
 // Name: StartEventPlatformUtils
-// Dependencies: [5, 4641, 5533, 4825, 4647, 1072, 38, 7161, 6382, 6408, 1099, 2]
+// Dependencies: [5, 4643, 5535, 4827, 4649, 1071, 38, 7160, 6384, 6410, 1098, 2]
 // Exports: navigateToEvent, postStartActions
 
-// Module 7914 (StartEventPlatformUtils)
+// Module 7913 (StartEventPlatformUtils)
 import _modDef38 from "module_38" /* 38 */;
-import Constants from "Constants" /* 1072 */;
-import router_utils from "router_utils" /* 1099 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4647 */;
-import StageChannelModalActionCreatorsAll from "StageChannelModalActionCreators" /* 7161 */;
+import Constants from "Constants" /* 1071 */;
+import router_utils from "router_utils" /* 1098 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4649 */;
+import StageChannelModalActionCreatorsAll from "StageChannelModalActionCreators" /* 7160 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5533 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4825 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5535 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4827 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5;
@@ -38,7 +38,7 @@ let obj = function _navigateToEvent() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -92,7 +92,7 @@ let obj = function _navigateToEvent() {
                 }
               }
               c5 = 3;
-              return { value: "HermesInternal", done: "+60" };
+              return { value: "HermesInternal", done: null };
             }
           }
         } else if (1 === c4) {

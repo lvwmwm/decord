@@ -1,17 +1,17 @@
-// Module ID: 17667
-// Function ID: 17668
+// Module ID: 17494
+// Function ID: 17495
 // Name: MessagesItemSuggestedFriendsHeader
-// Dependencies: [19, 17, 21, 5383, 575, 4792, 1655, 10536, 9539, 1113, 2]
+// Dependencies: [19, 17, 21, 5385, 575, 4794, 1653, 10478, 9539, 1112, 2]
 
-// Module 17667 (MessagesItemSuggestedFriendsHeader)
+// Module 17494 (MessagesItemSuggestedFriendsHeader)
 import nativeDefault from "native" /* 575 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 10536 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 10478 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let tmp3;
@@ -25,7 +25,7 @@ let obj2;
 let obj3;
 let tmp2;
 let tmp8;
-const intl2 = tmp2(1113);
+const intl2 = tmp2(1112);
 const ThemedGradientDefault = tmp8(9539);
 ({ View: closure_4, StyleSheet } = react_native);
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -56,7 +56,7 @@ const memoResult = react.memo(function MessagesItemSuggestedFriendsHeader(sticky
   let c0;
   let c1;
   [tmp4, tmp5, tmp6] = items;
-  const obj = _mod1655;
+  const obj = _mod1653;
   class MessagesItemSuggestedFriendsHeaderTsx1 {
     constructor() {
       tmp2 = null != closure_0;

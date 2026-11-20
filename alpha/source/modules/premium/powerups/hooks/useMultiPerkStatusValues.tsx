@@ -1,17 +1,17 @@
-// Module ID: 13373
-// Function ID: 13374
+// Module ID: 13343
+// Function ID: 13344
 // Name: useMultiPerkStatusValues
-// Dependencies: [8213, 13301, 1113, 2755, 2]
+// Dependencies: [8212, 13271, 1112, 2757, 2]
 // Exports: default
 
-// Module 13373 (useMultiPerkStatusValues)
-import _modDef2755 from "module_2755" /* 2755 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 8213 */;
-import usePowerupActiveStatus from "usePowerupActiveStatus" /* 13301 */;
+// Module 13343 (useMultiPerkStatusValues)
+import _modDef2757 from "module_2757" /* 2757 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 8212 */;
+import usePowerupActiveStatus from "usePowerupActiveStatus" /* 13271 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const intl2 = tmp(1113);
+const intl2 = tmp(1112);
 const PowerupActiveStatusType = GuildPowerupsConstants.PowerupActiveStatusType;
 const result = size.fileFinishedImporting("modules/premium/powerups/hooks/useMultiPerkStatusValues.tsx");
 
@@ -51,7 +51,7 @@ export default function useMultiPerkStatusValues(powerups) {
       tmp4 = { type: "expiring", expiringAt: reduced };
       const obj2 = { type: "expiring", expiringAt: reduced };
     } else if (someResult) {
-      const obj3 = { type: "active", statusText: intl.string(_modDef2755.FFLkmx) };
+      const obj3 = { type: "active", statusText: intl.string(_modDef2757.FFLkmx) };
       intl = intl2.intl;
       tmp4 = obj3;
     }

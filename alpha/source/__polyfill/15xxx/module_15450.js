@@ -1,76 +1,20 @@
 // Module ID: 15450
 // Function ID: 15451
-// Dependencies: [15451, 15452, 15453, 15490, 15491, 15507, 15508]
+// Dependencies: [15418, 15419, 15451]
 
 // Module 15450
+import _mod15419 from "module_15419" /* 15419 */;
 import _mod15451 from "module_15451" /* 15451 */;
-import _mod15453 from "module_15453" /* 15453 */;
-import isForced from "isForced" /* 15490 */;
+import getOwnPropertyDescriptor from "module_15418" /* 15418 */;
 
-
-export default (dontCallGetSet, obj) => {
-  let _global;
-  let stat;
-  let target;
-  let tmp5;
-  ({ target, global: _global, stat } = dontCallGetSet);
-  const tmp3 = _mod15451;
-  if (_global) {
-    tmp5 = tmp3;
-  } else {
-    let tmp4 = tmp3[target];
-    if (stat) {
-      if (!tmp4) {
-        tmp4 = tmp(15452)(target, {});
-      }
-      tmp5 = tmp4;
-    } else {
-      tmp5 = tmp4 && tmp(15451)[target].prototype;
+const f65553 = () => {
+  const obj = {
+    get() {
+      return 7;
     }
-  }
-  if (tmp5) {
-    for (const key10024 in obj) {
-      let tmp8;
-      let tmp22 = obj[key10024];
-      let tmp21 = key10024;
-      if (dontCallGetSet.dontCallGetSet) {
-        obj = _mod15453;
-        let iter = obj.f(tmp5, key10024);
-        let value = iter && iter.value;
-        tmp8 = value;
-      } else {
-        tmp8 = tmp5[key10024];
-      }
-      let tmp11 = require;
-      let sum = key10024;
-      let tmp13 = isForced;
-      if (!_global) {
-        let str4 = "#";
-        if (stat) {
-          str4 = ".";
-        }
-        sum = target + str4 + key10024;
-      }
-      if (!tmp13(sum, dontCallGetSet.forced)) {
-        if (undefined !== tmp8) {
-          if (typeof tmp22 === typeof tmp8) {
-            continue;
-          } else {
-            let tmp23 = tmp11(15491)(tmp22, tmp8);
-          }
-        }
-        continue;
-      }
-      let sham = dontCallGetSet.sham;
-      if (!sham) {
-        let sham2 = tmp8 && tmp8.sham;
-        sham = sham2;
-      }
-      if (sham) {
-        let tmp15 = tmp11(15507)(tmp22, "sham", true);
-      }
-      let tmp20 = tmp11(15508)(tmp5, tmp21, tmp22, dontCallGetSet);
-      continue;
-    }
-  }
+  };
+  return 7 !== Object.defineProperty(_mod15451("div"), "a", obj).a;
 };
+!getOwnPropertyDescriptor && !_mod15419(f65553);
+
+export default !getOwnPropertyDescriptor && !_mod15419(f65553);

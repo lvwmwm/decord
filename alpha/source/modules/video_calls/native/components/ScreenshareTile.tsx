@@ -1,23 +1,23 @@
-// Module ID: 10654
-// Function ID: 10655
+// Module ID: 10596
+// Function ID: 10597
 // Name: ScreenshareTile
-// Dependencies: [19, 17, 1072, 21, 4792, 575, 10655, 5052, 1187, 5479, 10656, 5383, 1113, 2]
+// Dependencies: [19, 17, 1071, 21, 4794, 575, 10597, 5054, 1186, 5481, 10598, 5385, 1112, 2]
 // Exports: default
 
-// Module 10654 (ScreenshareTile)
+// Module 10596 (ScreenshareTile)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import intl2 from "intl" /* 1113 */;
-import native from "native" /* 1187 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5052 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import FastImageDefault from "FastImage" /* 5479 */;
-import useParticipantTileTapGestureDefault from "useParticipantTileTapGesture" /* 10655 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10656 */;
+import Constants from "Constants" /* 1071 */;
+import intl2 from "intl" /* 1112 */;
+import native from "native" /* 1186 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5054 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import FastImageDefault from "FastImage" /* 5481 */;
+import useParticipantTileTapGestureDefault from "useParticipantTileTapGesture" /* 10597 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10598 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;

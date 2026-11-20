@@ -1,17 +1,17 @@
-// Module ID: 18275
-// Function ID: 18276
+// Module ID: 18102
+// Function ID: 18103
 // Name: JoinRequestOtherApplications
-// Dependencies: [19, 17, 21, 4792, 575, 4828, 7413, 7112, 18276, 5383, 1113, 18272, 4614, 2]
+// Dependencies: [19, 17, 21, 4794, 575, 4830, 7412, 7111, 18103, 5385, 1112, 18099, 4616, 2]
 
-// Module 18275 (JoinRequestOtherApplications)
+// Module 18102 (JoinRequestOtherApplications)
 import nativeDefault from "native" /* 575 */;
-import DateUtils from "DateUtils" /* 4614 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4828 */;
-import Text_Text from "Text/Text" /* 5383 */;
+import DateUtils from "DateUtils" /* 4616 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4830 */;
+import Text_Text from "Text/Text" /* 5385 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -28,11 +28,11 @@ function ApplicationStatusIcon(status) {
   status = status.status;
   if (MemberVerificationTypes.GuildJoinRequestApplicationStatuses.APPROVED === status) {
     const obj2 = { size: "sm", color: nativeDefault.colors.STATUS_POSITIVE_BACKGROUND, secondaryColor: nativeDefault.colors.STATUS_POSITIVE_TEXT };
-    const CircleCheckIcon = tmp(7413).CircleCheckIcon;
+    const CircleCheckIcon = tmp(7412).CircleCheckIcon;
     return metroRequire(CircleCheckIcon, obj2);
   } else if (MemberVerificationTypes.GuildJoinRequestApplicationStatuses.REJECTED === status) {
     const obj = { size: "sm", color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL, secondaryColor: nativeDefault.colors.WHITE };
-    const CircleXIcon = tmp(7112).CircleXIcon;
+    const CircleXIcon = tmp(7111).CircleXIcon;
     return metroRequire(CircleXIcon, obj);
   } else {
     return null;
@@ -62,9 +62,9 @@ const memoResult = react.memo(function JoinRequestOtherApplications(arg0) {
   let tmp4 = null;
   if (0 !== otherGuildJoinRequestsForUser.length) {
     let obj2 = { children: items };
-    let obj3 = { variant: "body-sm/semibold", color: "text-subtle", style: tmp.label, children: intl.string(tmp2(1113).t["hxa+G3"]) };
-    let Text = tmp2(5383).Text;
-    intl = tmp2(1113).intl;
+    let obj3 = { variant: "body-sm/semibold", color: "text-subtle", style: tmp.label, children: intl.string(tmp2(1112).t["hxa+G3"]) };
+    let Text = tmp2(5385).Text;
+    intl = tmp2(1112).intl;
     items = [closure_6(Text, obj3), ];
     let obj4 = {
       style: tmp.container,

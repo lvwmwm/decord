@@ -1,14 +1,14 @@
-// Module ID: 13901
-// Function ID: 13902
+// Module ID: 13870
+// Function ID: 13871
 // Name: BadgeUtils
-// Dependencies: [7950, 7951, 1113, 8019, 2153, 2]
+// Dependencies: [7949, 7950, 1112, 8018, 2151, 2]
 // Exports: findTier, getAlwaysVisibleCopy, getBadgeUnlockLabel, getDirectoryBadges, getDisplayTier, getLegacyDescriptionByBadgeId, getLegacyIconUrlByBadgeId, getProfileBadgeLabel, getTierRowSubtitle, getUnhideableBadgeIds, groupCustomizableBadges, isBetaBadgeId, isPersonalizationGatedBadge
 
-// Module 13901 (BadgeUtils)
-import intl2 from "intl" /* 1113 */;
-import Constants from "Constants" /* 7950 */;
-import BadgeId from "BadgeId" /* 7951 */;
-import BadgeIdResolution from "BadgeIdResolution" /* 8019 */;
+// Module 13870 (BadgeUtils)
+import intl2 from "intl" /* 1112 */;
+import Constants from "Constants" /* 7949 */;
+import BadgeId from "BadgeId" /* 7950 */;
+import BadgeIdResolution from "BadgeIdResolution" /* 8018 */;
 import size from "module_2" /* 2 */;
 
 let map;
@@ -59,9 +59,9 @@ export function getDisplayTier(badge) {
 export function getAlwaysVisibleCopy(badge_id) {
   let nPQVxb;
   if (badge_id === BadgeId.BadgeId.STAFF) {
-    nPQVxb = tmp(1113).t.t3udZb;
+    nPQVxb = tmp(1112).t.t3udZb;
   } else {
-    nPQVxb = tmp(1113).t.nPQVxb;
+    nPQVxb = tmp(1112).t.nPQVxb;
   }
   return nPQVxb;
 }
@@ -129,7 +129,7 @@ export function getProfileBadgeLabel(description, info_label) {
     const obj = BadgeIdResolution;
     const tmp = require;
     if (!obj.isLegacyBadgeId(info_label.badge_id)) {
-      tmp(2153);
+      tmp(2151);
     }
     return info_label;
   }
@@ -206,9 +206,9 @@ export function getBadgeUnlockLabel(badge, previousTierKey) {
     found = tiers.find((key) => key.key === closure_0);
   }
   if (null != found) {
-    K3TdAp = tmp(1113).t.K3TdAp;
+    K3TdAp = tmp(1112).t.K3TdAp;
   } else {
-    K3TdAp = tmp(1113).t["4oIsxf"];
+    K3TdAp = tmp(1112).t["4oIsxf"];
   }
   return string(K3TdAp);
 }

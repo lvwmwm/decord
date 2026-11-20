@@ -1,19 +1,19 @@
-// Module ID: 9777
-// Function ID: 9778
+// Module ID: 9779
+// Function ID: 9780
 // Name: StorefrontCollectionActionCreators
-// Dependencies: [5, 2189, 8849, 7973, 1072, 8053, 8052, 572, 6238, 6229, 2]
+// Dependencies: [5, 2187, 8849, 7972, 1071, 8052, 8051, 572, 6240, 6231, 2]
 // Exports: maybeFetchCollectionsAfter, maybeFetchCollectionsForApplication, maybeFetchCollectionsForApplicationPage, maybeFetchCollectionsWithProducts
 
-// Module 9777 (StorefrontCollectionActionCreators)
+// Module 9779 (StorefrontCollectionActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import Constants from "Constants" /* 1072 */;
-import StoreUtils from "StoreUtils" /* 6238 */;
-import StorefrontCacheUtils from "StorefrontCacheUtils" /* 8052 */;
-import getStorefrontNativeStoreQuery from "getStorefrontNativeStoreQuery" /* 8053 */;
+import Constants from "Constants" /* 1071 */;
+import StoreUtils from "StoreUtils" /* 6240 */;
+import StorefrontCacheUtils from "StorefrontCacheUtils" /* 8051 */;
+import getStorefrontNativeStoreQuery from "getStorefrontNativeStoreQuery" /* 8052 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LocaleStore from "LocaleStore" /* 2189 */;
+import LocaleStore from "LocaleStore" /* 2187 */;
 import StorefrontCollectionStore from "StorefrontCollectionStore" /* 8849 */;
-import StorefrontCollectionRecord from "StorefrontCollectionRecord" /* 7973 */;
+import StorefrontCollectionRecord from "StorefrontCollectionRecord" /* 7972 */;
 import size from "module_2" /* 2 */;
 
 let collectionsAfterFetchState, fetchState, requestKey;
@@ -252,7 +252,7 @@ obj = function _maybeFetchCollectionsForApplicationPage() {
                   const _Date = Date;
                   if (Date.now() - collectionPageFetchedAt <= TWELVE_HOURS_MS) {
                     c7 = 3;
-                    return { value: "HermesInternal", done: "+60" };
+                    return { value: "HermesInternal", done: null };
                   }
                 }
               }
@@ -348,7 +348,7 @@ obj = function _maybeFetchCollectionsAfter() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -394,7 +394,7 @@ obj = function _maybeFetchCollectionsAfter() {
                         const _Date = Date;
                         if (Date.now() - collectionsAfterFetchedAt <= TWELVE_HOURS_MS) {
                           c6 = 3;
-                          return { value: "HermesInternal", done: "+60" };
+                          return { value: "HermesInternal", done: null };
                         }
                       }
                     }
@@ -440,7 +440,7 @@ obj = function _maybeFetchCollectionsAfter() {
             c4 = 0;
           }
           c6 = 3;
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp46) {
           closure_3 = tmp46;
           if (0 === c4) {
@@ -502,7 +502,7 @@ obj = function _maybeFetchCollectionsForApplication() {
                   }
                 }
                 c6 = 3;
-                return { value: "HermesInternal", done: "+60" };
+                return { value: "HermesInternal", done: null };
               }
             }
             skuTypes = 1;

@@ -1,10 +1,10 @@
-// Module ID: 8025
-// Function ID: 8026
+// Module ID: 8024
+// Function ID: 8025
 // Name: UserAffinitiesConstants
-// Dependencies: [1089, 2]
+// Dependencies: [1088, 2]
 
-// Module 8025 (UserAffinitiesConstants)
-import DurationsDefault from "Durations" /* 1089 */;
+// Module 8024 (UserAffinitiesConstants)
+import DurationsDefault from "Durations" /* 1088 */;
 import size from "module_2" /* 2 */;
 
 const result = 8 * DurationsDefault.Millis.HOUR;

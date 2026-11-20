@@ -1,8 +1,8 @@
-// Module ID: 12502
-// Function ID: 12503
+// Module ID: 12472
+// Function ID: 12473
 // Dependencies: [2]
 
-// Module 12502
+// Module 12472
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_face_spooked_shadow.webp.js");

@@ -1,19 +1,19 @@
-// Module ID: 18079
-// Function ID: 18080
+// Module ID: 17906
+// Function ID: 17907
 // Name: PremiumSoundboardFeatureUpsell
-// Dependencies: [19, 17, 21, 4792, 575, 1630, 1092, 10886, 8428, 2]
+// Dependencies: [19, 17, 21, 4794, 575, 1628, 1091, 10828, 8427, 2]
 // Exports: default
 
-// Module 18079 (PremiumSoundboardFeatureUpsell)
+// Module 17906 (PremiumSoundboardFeatureUpsell)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import ConstantsIOS from "ConstantsIOS" /* 1092 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 8428 */;
-import PremiumFeatureUpsellDefault from "PremiumFeatureUpsell" /* 10886 */;
+import ConstantsIOS from "ConstantsIOS" /* 1091 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 8427 */;
+import PremiumFeatureUpsellDefault from "PremiumFeatureUpsell" /* 10828 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;

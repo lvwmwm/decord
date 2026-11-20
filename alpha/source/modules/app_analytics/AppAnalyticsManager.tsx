@@ -1,23 +1,23 @@
-// Module ID: 19491
-// Function ID: 19492
+// Module ID: 19311
+// Function ID: 19312
 // Name: AppAnalyticsManager
-// Dependencies: [2140, 2133, 5533, 6801, 6414, 5536, 1072, 1089, 7365, 4636, 5529, 5531, 18904, 6326, 2]
+// Dependencies: [2138, 2131, 5535, 6801, 6416, 5538, 1071, 1088, 7364, 4638, 5531, 5533, 18728, 6328, 2]
 
-// Module 19491 (AppAnalyticsManager)
-import Constants from "Constants" /* 1072 */;
-import DurationsDefault from "Durations" /* 1089 */;
-import Timers from "Timers" /* 4636 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5529 */;
-import ActivityTypes from "ActivityTypes" /* 5531 */;
-import RobloxSubgameUtils from "RobloxSubgameUtils" /* 6326 */;
-import getGamePlatformDefault from "getGamePlatform" /* 18904 */;
-import RunningGameStore from "RunningGameStore" /* 2140 */;
-import MediaEngineStore from "MediaEngineStore" /* 2133 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5533 */;
+// Module 19311 (AppAnalyticsManager)
+import Constants from "Constants" /* 1071 */;
+import DurationsDefault from "Durations" /* 1088 */;
+import Timers from "Timers" /* 4638 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5531 */;
+import ActivityTypes from "ActivityTypes" /* 5533 */;
+import RobloxSubgameUtils from "RobloxSubgameUtils" /* 6328 */;
+import getGamePlatformDefault from "getGamePlatform" /* 18728 */;
+import RunningGameStore from "RunningGameStore" /* 2138 */;
+import MediaEngineStore from "MediaEngineStore" /* 2131 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5535 */;
 import SelfPresenceStore from "SelfPresenceStore" /* 6801 */;
-import SpeakingStore from "SpeakingStore" /* 6414 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5536 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7365 */;
+import SpeakingStore from "SpeakingStore" /* 6416 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5538 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7364 */;
 import size from "module_2" /* 2 */;
 
 let map;

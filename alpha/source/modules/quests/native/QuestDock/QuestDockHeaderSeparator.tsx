@@ -1,14 +1,14 @@
-// Module ID: 16637
-// Function ID: 16638
+// Module ID: 16460
+// Function ID: 16461
 // Name: QuestDockHeaderSeparator
-// Dependencies: [19, 17, 21, 4792, 575, 2]
+// Dependencies: [19, 17, 21, 4794, 575, 2]
 
-// Module 16637 (QuestDockHeaderSeparator)
+// Module 16460 (QuestDockHeaderSeparator)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let size;

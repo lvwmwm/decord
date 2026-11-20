@@ -1,11 +1,12 @@
-// Module ID: 18696
-// Function ID: 18697
+// Module ID: 18520
+// Function ID: 18521
 // Name: useConjureServerProjects
-// Dependencies: [6500, 13680, 6719, 504, 2]
+// Dependencies: [6502, 13651, 6719, 504, 2]
 // Exports: default
 
-// Module 18696 (useConjureServerProjects)
-import ConjureProjectStore from "ConjureProjectStore" /* 6500 */;
+// Module 18520 (useConjureServerProjects)
+import conjureServerProject from "conjureServerProject" /* 6719 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6502 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -24,19 +25,17 @@ export default function useConjureServerProjects(arg0) {
   let obj4;
   _require = arg0;
   let obj = {
-    mine: obj2.useConjureProjectsByActivity(() => {
-      const ownedProjects = ConjureProjectStore.getOwnedProjects();
-      return ownedProjects.filter((item) => {
-        const obj = closure_0(dependencyMap[2]);
-        return obj.conjureServerProjectGuildId(item) === closure_1_0;
-      });
+    participating: obj2.useConjureProjectsByActivity(() => {
+      let railProject;
+      const obj = conjureServerProject;
+      const conjureServerProjects = obj.getConjureServerProjects(closure_0);
+      return conjureServerProjects.filter((item) => railProject.isRailProject(item));
     }, items),
     shared: obj3.useConjureProjectsByActivity(() => {
-      const sharedProjects = ConjureProjectStore.getSharedProjects(closure_0);
-      return sharedProjects.filter((item) => {
-        const obj = closure_0(dependencyMap[2]);
-        return obj.conjureServerProjectGuildId(item) === closure_1_0;
-      });
+      let railProject;
+      const obj = conjureServerProject;
+      const conjureServerProjects = obj.getConjureServerProjects(closure_0);
+      return conjureServerProjects.filter((item) => !railProject.isRailProject(item));
     }, items1),
     fetchState: obj4.useStateFromStores(items2, () => ConjureProjectStore.getGuildProjectsFetchState(closure_0), items3)
   };

@@ -1,14 +1,14 @@
-// Module ID: 7395
-// Function ID: 7396
+// Module ID: 7394
+// Function ID: 7395
 // Name: FormIcon
-// Dependencies: [19, 21, 4792, 1187, 2]
+// Dependencies: [19, 21, 4794, 1186, 2]
 // Exports: default
 
-// Module 7395 (FormIcon)
+// Module 7394 (FormIcon)
 import Fragment from "Fragment" /* 21 */;
-import native from "native" /* 1187 */;
+import native from "native" /* 1186 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;

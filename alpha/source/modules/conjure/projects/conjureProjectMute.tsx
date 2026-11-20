@@ -1,12 +1,12 @@
 // Module ID: 6817
 // Function ID: 6818
 // Name: conjureProjectMute
-// Dependencies: [1231, 504, 4622, 1196, 2]
+// Dependencies: [1230, 504, 4624, 1195, 2]
 // Exports: isConjureProjectMuted, setConjureProjectMuted, useIsConjureProjectMuted
 
 // Module 6817 (conjureProjectMute)
-import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1195 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1230 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

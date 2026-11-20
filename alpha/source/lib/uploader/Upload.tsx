@@ -1,57 +1,58 @@
-// Module ID: 8350
-// Function ID: 8351
+// Module ID: 8349
+// Function ID: 8350
 // Name: Upload
-// Dependencies: [568, 8326, 8323, 12, 8351, 1269, 2]
+// Dependencies: [568, 8325, 8322, 12, 8350, 1268, 2]
 // Exports: isResolvedUpload
 
-// Module 8350 (Upload)
+// Module 8349 (Upload)
 import _modDef12 from "module_12" /* 12 */;
 import _mod568 from "module_568" /* 568 */;
-import v1 from "v1" /* 1269 */;
-import UploadUtils from "UploadUtils" /* 8323 */;
-import UploadPlatform from "UploadPlatform" /* 8326 */;
-import FileUtilsAll from "FileUtils" /* 8351 */;
+import v1 from "v1" /* 1268 */;
+import UploadUtils from "UploadUtils" /* 8322 */;
+import UploadPlatform from "UploadPlatform" /* 8325 */;
+import FileUtilsAll from "FileUtils" /* 8350 */;
 import size from "module_2" /* 2 */;
 
 const EventEmitter = _mod568.EventEmitter;
 class Upload extends EventEmitter {
   constructor(item) {
-    const tmp4 = new Upload(tmp3, tmp2, tmp);
-    tmp4.allowOptimization = true;
-    tmp4.item = item;
+    const tmp5 = new Upload(tmp4, tmp3, tmp2, tmp);
+    tmp5.isPreparing = false;
+    tmp5.allowOptimization = true;
+    tmp5.item = item;
     if (item.platform === UploadPlatform.UploadPlatform.REACT_NATIVE) {
       let uri = item.id;
       if (uri == null) {
         uri = item.uri;
       }
-      tmp4.id = uri;
+      tmp5.id = uri;
       const obj3 = { uri: null, overrideFilename: null, overrideType: null };
       ({ uri: obj4.uri, filename: obj4.overrideFilename, mimeType: obj4.overrideType } = item);
-      const tmp5Result = UploadUtils;
-      const file = tmp5Result.getFile(obj3);
-      ({ filename: tmp4.filename, isImage: tmp4.isImage, isVideo: tmp4.isVideo, type: tmp4.mimeType } = file);
-      ({ origin: tmp4.origin, durationSecs: tmp4.durationSecs, waveform: tmp4.waveform } = item);
+      const tmp6Result = UploadUtils;
+      const file = tmp6Result.getFile(obj3);
+      ({ filename: tmp5.filename, isImage: tmp5.isImage, isVideo: tmp5.isVideo, type: tmp5.mimeType } = file);
+      ({ origin: tmp5.origin, durationSecs: tmp5.durationSecs, waveform: tmp5.waveform } = item);
     } else {
       let id = item.id;
       if (id == null) {
         const obj = _modDef12;
         id = obj.uniqueId("upload");
       }
-      tmp4.id = id;
+      tmp5.id = id;
       const obj2 = FileUtilsAll;
-      tmp4.classification = obj2.classifyFile(item.file);
-      tmp4.isImage = "image" === tmp4.classification;
-      tmp4.isVideo = "video" === tmp4.classification;
-      tmp4.filename = item.file.name;
-      tmp4.mimeType = item.file.type;
-      tmp4.origin = item.origin;
+      tmp5.classification = obj2.classifyFile(item.file);
+      tmp5.isImage = "image" === tmp5.classification;
+      tmp5.isVideo = "video" === tmp5.classification;
+      tmp5.filename = item.file.name;
+      tmp5.mimeType = item.file.type;
+      tmp5.origin = item.origin;
     }
-    ({ isThumbnail: tmp4.isThumbnail, clip: tmp4.clip } = item);
-    const tmp5Result2 = v1;
-    tmp4.uniqueId = tmp5Result2.v4();
-    tmp4.spoiler = false;
-    tmp4.description = null;
-    return tmp4;
+    ({ isThumbnail: tmp5.isThumbnail, clip: tmp5.clip } = item);
+    const tmp6Result2 = v1;
+    tmp5.uniqueId = tmp6Result2.v4();
+    tmp5.spoiler = false;
+    tmp5.description = null;
+    return tmp5;
   }
   cancel() {
 

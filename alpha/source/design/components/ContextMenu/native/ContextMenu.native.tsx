@@ -1,21 +1,21 @@
-// Module ID: 8539
-// Function ID: 8540
+// Module ID: 8538
+// Function ID: 8539
 // Name: ContextMenu
-// Dependencies: [19, 21, 1380, 1655, 5522, 8540, 5383, 1496, 8541, 5398, 5802, 8542, 4799, 1113, 8543, 1708, 5052, 5008, 5022, 2]
+// Dependencies: [19, 21, 1378, 1653, 5524, 8539, 5385, 1494, 8540, 5400, 5804, 8541, 4801, 1112, 8542, 1706, 5054, 5010, 5024, 2]
 // Exports: ContextMenu
 
-// Module 8539 (ContextMenu)
-import intl2 from "intl" /* 1113 */;
-import _mod1708 from "module_1708" /* 1708 */;
-import HapticUtils from "HapticUtils" /* 5008 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5022 */;
-import react_native from "react-native" /* 5802 */;
-import ContextMenuConstants from "ContextMenuConstants" /* 8540 */;
-import ContextMenuState from "ContextMenuState" /* 8541 */;
-import UID from "UID" /* 8542 */;
+// Module 8538 (ContextMenu)
+import intl2 from "intl" /* 1112 */;
+import _mod1706 from "module_1706" /* 1706 */;
+import HapticUtils from "HapticUtils" /* 5010 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5024 */;
+import react_native from "react-native" /* 5804 */;
+import ContextMenuConstants from "ContextMenuConstants" /* 8539 */;
+import ContextMenuState from "ContextMenuState" /* 8540 */;
+import UID from "UID" /* 8541 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
 import size_mod from "module_2" /* 2 */;
 
 let _Math, _Math2, _Math3, bound1, diff1, iter, label, nextResult, num4, num5, num6, str3, str4, sum3, sum4, tmp11, tmp12, tmp12Result, tmp13, tmp14, tmp20, tmp41Result, tmp41Result1, tmp49, tmp50, tmp53, tmp54, tmp55, tmp56, tmp57, tmp58, tmp59, tmp60, tmp63, tmp64, tmp65, tmp66, tmp67, tmp68, tmp69, tmp70, tmp71, tmp72;
@@ -161,17 +161,17 @@ export function ContextMenu(triggerOnLongPress) {
         const result = 2 * ContextMenuConstants.CONTEXT_MENU_ITEM_PADDING;
         const sum = result + ContextMenuConstants.CONTEXT_MENU_ITEM_GAP;
         if (null != tmp) {
-          num = tmp11(8540).CONTEXT_MENU_ITEM_ICON_SIZE;
+          num = tmp11(8539).CONTEXT_MENU_ITEM_ICON_SIZE;
         } else {
           num = 0;
         }
         let num2 = 0;
         const sum1 = sum + num;
         if (null != tmp3) {
-          num2 = tmp11(8540).CONTEXT_MENU_ITEM_GAP + tmp11(8540).CONTEXT_MENU_ITEM_ICON_SIZE;
+          num2 = tmp11(8539).CONTEXT_MENU_ITEM_GAP + tmp11(8539).CONTEXT_MENU_ITEM_ICON_SIZE;
         }
         const sum2 = sum1 + num2;
-        const match = str.match(tmp11(8540).CONTEXT_MENU_ITEM_SUB_LABEL_FULL_WIDTH_CHARACTERS);
+        const match = str.match(tmp11(8539).CONTEXT_MENU_ITEM_SUB_LABEL_FULL_WIDTH_CHARACTERS);
         let num3;
         if (match != null) {
           num3 = match.length;
@@ -249,9 +249,9 @@ export function ContextMenu(triggerOnLongPress) {
     obj3.showContextMenu(size);
     const obj4 = PlatformUtils;
     if (obj4.isAndroid()) {
-      const AccessibilityAnnouncer = tmp3(4799).AccessibilityAnnouncer;
+      const AccessibilityAnnouncer = tmp3(4801).AccessibilityAnnouncer;
       const announce = AccessibilityAnnouncer.announce;
-      const intl = tmp3(1113).intl;
+      const intl = tmp3(1112).intl;
       announce(intl.string(intl2.t.ZqK0uI));
     }
   }, items8);
@@ -590,7 +590,7 @@ export function ContextMenu(triggerOnLongPress) {
     let tmp7;
     items = [closure_11, , , ];
     items[1] = contextMenuState;
-    items[2] = _mod1708.scheduleOnRN;
+    items[2] = _mod1706.scheduleOnRN;
     items[3] = callback;
     let c0;
     let c1;
@@ -606,7 +606,7 @@ export function ContextMenu(triggerOnLongPress) {
     onPanGestureEnd.__initData = tmp4;
     const tmp8 = flag;
     if (tmp8) {
-      const Gesture2 = tmp2(5052).Gesture;
+      const Gesture2 = tmp2(5054).Gesture;
       const PanResult = Gesture2.Pan();
       const items2 = [closure_12, , ];
       const onUpdate2 = PanResult.enabled(flag5).onUpdate;
@@ -628,14 +628,14 @@ export function ContextMenu(triggerOnLongPress) {
       ContextMenuNativeTsx6.__initData = tmp36;
       const onUpdate2Result = onUpdate2(ContextMenuNativeTsx6);
       const onEndResult = onUpdate2Result.onEnd(onPanGestureEnd);
-      const Gesture3 = tmp2(5052).Gesture;
+      const Gesture3 = tmp2(5054).Gesture;
       const LongPressResult = Gesture3.LongPress();
       const enabledResult1 = LongPressResult.enabled(tmp32);
       const minDurationResult = enabledResult1.minDuration(ContextMenuConstants.CONTEXT_MENU_LONG_PRESS_DURATION_MS);
       const result = minDurationResult.shouldCancelWhenOutside(false);
       const items4 = [closure_13, , , , ];
       const onStart = result.onStart;
-      items4[1] = _mod1708.scheduleOnRN;
+      items4[1] = _mod1706.scheduleOnRN;
       items4[2] = HapticUtils.triggerHapticFeedback;
       items4[3] = ContextMenuConstants.CONTEXT_MENU_OPEN_HAPTIC;
       items4[4] = callback3;
@@ -655,11 +655,11 @@ export function ContextMenu(triggerOnLongPress) {
       ContextMenuNativeTsx7.__workletHash = 8112947832354;
       ContextMenuNativeTsx7.__initData = tmp44;
       const onStartResult = onStart(ContextMenuNativeTsx7);
-      const Gesture4 = tmp2(5052).Gesture;
+      const Gesture4 = tmp2(5054).Gesture;
       return Gesture4.Simultaneous(onStartResult, onEndResult);
     } else {
       let onStartResult1;
-      const Gesture = tmp2(5052).Gesture;
+      const Gesture = tmp2(5054).Gesture;
       if (flag2) {
         const items6 = [length, callback3];
         c0 = undefined;
@@ -685,7 +685,7 @@ export function ContextMenu(triggerOnLongPress) {
         const items8 = [closure_15, , , , ];
         const onBegin = PanResult1.enabled(flag5).onBegin;
         PanResult1.enabled(flag5);
-        items8[1] = _mod1708.scheduleOnRN;
+        items8[1] = _mod1706.scheduleOnRN;
         items8[2] = HapticUtils.triggerHapticFeedback;
         items8[3] = ContextMenuConstants.CONTEXT_MENU_OPEN_HAPTIC;
         class ContextMenuNativeTsx8 {
@@ -774,7 +774,7 @@ export function ContextMenu(triggerOnLongPress) {
       isAndroidResult = tmpResult.getIsScreenReaderEnabled();
     }
     if (isAndroidResult) {
-      const tmpResult2 = _mod1708;
+      const tmpResult2 = _mod1706;
       tmpResult2.scheduleOnUI(callback3);
     }
   }, items15);

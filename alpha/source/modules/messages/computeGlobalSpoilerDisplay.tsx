@@ -1,12 +1,12 @@
-// Module ID: 11889
-// Function ID: 11890
+// Module ID: 11831
+// Function ID: 11832
 // Name: computeGlobalSpoilerDisplay
-// Dependencies: [4724, 1072, 563, 4617, 2]
+// Dependencies: [4726, 1071, 563, 4619, 2]
 // Exports: default, useShouldDisplaySpoilerObscurity
 
-// Module 11889 (computeGlobalSpoilerDisplay)
-import PermissionStore from "PermissionStore" /* 4724 */;
-import Constants from "Constants" /* 1072 */;
+// Module 11831 (computeGlobalSpoilerDisplay)
+import PermissionStore from "PermissionStore" /* 4726 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

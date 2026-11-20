@@ -1,27 +1,48 @@
 // Module ID: 15479
 // Function ID: 15480
-// Dependencies: [15477, 15451]
+// Dependencies: [15422, 15419, 15418, 15480, 15439, 15468, 15453, 15421, 15448]
 
 // Module 15479
-import _mod15451 from "module_15451" /* 15451 */;
-import _mod15477 from "module_15477" /* 15477 */;
+import _mod15418 from "module_15418" /* 15418 */;
+import _mod15419 from "module_15419" /* 15419 */;
+import _mod15421 from "module_15421" /* 15421 */;
+import _mod15422 from "module_15422" /* 15422 */;
+import _mod15439 from "module_15439" /* 15439 */;
+import _mod15468 from "module_15468" /* 15468 */;
 
+let closure_4 = _mod15422([].concat);
+if (!assign) {
+  assign = function assign(arg0, arg1) {
+    let num;
+    const tmp = _mod15439(arg0);
+    const length = arguments.length;
+    const f = _mod15468.f;
+    for (let num = 1; length > num; num = num + 1) {
+      let arr;
+      let num2;
+      let tmp3 = require;
+      let tmp5 = _mod15421(arguments[num]);
+      if (f) {
+        let tmp8 = tmp3(15480)(tmp5);
+        arr = closure_4(tmp8, f(tmp5));
+      } else {
+        arr = tmp3(15480)(tmp5);
+      }
+      let length2 = arr.length;
+      for (let num2 = 0; length2 > num2; num2 = num2 + 1) {
+        let tmp9 = arr[num2];
+        let tmp10 = require;
+        let tmp12 = _mod15418;
+        if (tmp12) {
+          tmp12 = !tmp10(15448)(tmp2, tmp5, tmp9);
+        }
+        if (!tmp12) {
+          tmp[tmp9] = tmp5[tmp9];
+        }
+      }
+    }
+    return tmp;
+  };
+}
 
-export default function(arg0, arg1) {
-  let tmp3;
-  if (arguments.length < 2) {
-    const tmp7 = _mod15451[arg0];
-    let tmp8;
-    if (_mod15477(tmp7)) {
-      tmp8 = tmp7;
-    }
-    tmp3 = tmp8;
-  } else {
-    tmp3 = _mod15451[arg0];
-    const tmp = require;
-    if (tmp3) {
-      tmp3 = tmp(15451)[arg0][arg1];
-    }
-  }
-  return tmp3;
-};
+export default assign;

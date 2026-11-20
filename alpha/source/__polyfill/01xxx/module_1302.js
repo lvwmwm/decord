@@ -1,15 +1,10 @@
 // Module ID: 1302
 // Function ID: 1303
-// Dependencies: []
+// Dependencies: [1303]
 
 // Module 1302
-let getPrototypeOf = typeof Reflect !== "undefined";
-if (typeof Reflect !== "undefined") {
-  const _Reflect = Reflect;
-  getPrototypeOf = Reflect.getPrototypeOf;
-}
-if (!getPrototypeOf) {
-  getPrototypeOf = null;
-}
+import _mod1303 from "module_1303" /* 1303 */;
 
-export default getPrototypeOf;
+_mod1303.getPrototypeOf || null;
+
+export default _mod1303.getPrototypeOf || null;

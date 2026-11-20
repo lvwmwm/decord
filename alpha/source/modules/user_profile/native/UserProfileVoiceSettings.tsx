@@ -1,29 +1,29 @@
-// Module ID: 14412
-// Function ID: 14413
+// Module ID: 14380
+// Function ID: 14381
 // Name: UserProfileVoiceSettings
-// Dependencies: [19, 17, 5840, 6279, 2133, 4724, 5533, 1072, 1083, 5537, 21, 4792, 8016, 504, 5829, 9615, 10978, 5558, 10903, 5688, 10918, 7229, 14413, 1113, 5696, 14415, 14417, 7444, 9564, 10949, 14418, 13327, 1256, 14420, 11064, 7106, 5383, 10124, 13728, 7590, 5006, 9591, 9587, 2]
+// Dependencies: [19, 17, 5842, 6281, 2131, 4726, 5535, 1071, 1082, 5539, 21, 4794, 8015, 504, 5831, 9615, 10920, 5560, 10845, 5690, 10860, 7228, 14381, 1112, 5698, 14383, 14385, 7443, 9564, 10891, 14386, 13297, 1255, 14388, 11006, 7105, 5385, 10127, 13697, 7589, 5008, 9591, 9587, 2]
 // Exports: default
 
-// Module 14412 (UserProfileVoiceSettings)
+// Module 14380 (UserProfileVoiceSettings)
 import react_native from "react-native" /* 17 */;
-import Constants2 from "Constants" /* 1083 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
-import Constants3 from "Constants" /* 5537 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 5688 */;
-import PerceptualVolumeUtils from "PerceptualVolumeUtils" /* 5696 */;
+import Constants2 from "Constants" /* 1082 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5008 */;
+import Constants3 from "Constants" /* 5539 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 5690 */;
+import PerceptualVolumeUtils from "PerceptualVolumeUtils" /* 5698 */;
 import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 9591 */;
-import UserProfileAlertUtils from "UserProfileAlertUtils" /* 10124 */;
-import completeStreamVolumeMovedTutorialDefault from "completeStreamVolumeMovedTutorial" /* 14417 */;
+import UserProfileAlertUtils from "UserProfileAlertUtils" /* 10127 */;
+import completeStreamVolumeMovedTutorialDefault from "completeStreamVolumeMovedTutorial" /* 14385 */;
 import react from "react" /* 19 */;
-import SoundboardStore from "SoundboardStore" /* 5840 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6279 */;
-import MediaEngineStore from "MediaEngineStore" /* 2133 */;
-import PermissionStore from "PermissionStore" /* 4724 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5533 */;
-import Constants from "Constants" /* 1072 */;
+import SoundboardStore from "SoundboardStore" /* 5842 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6281 */;
+import MediaEngineStore from "MediaEngineStore" /* 2131 */;
+import PermissionStore from "PermissionStore" /* 4726 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5535 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -337,7 +337,7 @@ function CurrentUserVoiceSettings(channel) {
   channel = channel.channel;
   ({ user, style } = channel);
   let tmp = closure_15();
-  let obj = channel(8016);
+  let obj = channel(8015);
   const trackUserProfileAction = obj.useUserProfileAnalyticsContext().trackUserProfileAction;
   const items = [MediaEngineStore];
   const obj2 = channel(504);
@@ -357,15 +357,15 @@ function CurrentUserVoiceSettings(channel) {
   if (stateFromStores1) {
     if (!channel.isGuildStageVoice()) {
       let stringResult;
-      const obj4 = { style: items2, title: intl.string(channel(1113).t.NiTd0e), titleStyle: tmp.cardTitle, children: closure_13(UserProfileCardRows, obj6) };
+      const obj4 = { style: items2, title: intl.string(channel(1112).t.NiTd0e), titleStyle: tmp.cardTitle, children: closure_13(UserProfileCardRows, obj6) };
       items2 = [tmp.card, style];
-      const tmp6Result = tmp6(7444);
-      intl = tmp2(1113).intl;
-      UserProfileCardRows = tmp2(7444).UserProfileCardRows;
-      const UserProfileFormRow = tmp2(7444).UserProfileFormRow;
-      const intl2 = tmp2(1113).intl;
+      const tmp6Result = tmp6(7443);
+      intl = tmp2(1112).intl;
+      UserProfileCardRows = tmp2(7443).UserProfileCardRows;
+      const UserProfileFormRow = tmp2(7443).UserProfileFormRow;
+      const intl2 = tmp2(1112).intl;
       const string = intl2.string;
-      const t = tmp2(1113).t;
+      const t = tmp2(1112).t;
       if (stateFromStores) {
         stringResult = string(t.NHJxcg);
       } else {
@@ -383,7 +383,7 @@ function CurrentUserVoiceSettings(channel) {
       if (stateFromStores) {
         MicrophoneIcon = tmp2(9564).MicrophoneSlashIcon;
       } else {
-        MicrophoneIcon = tmp2(10949).MicrophoneIcon;
+        MicrophoneIcon = tmp2(10891).MicrophoneIcon;
       }
       obj6 = { children: closure_13(UserProfileFormRow, obj5, "mute") };
       tmp9Result = tmp9(tmp6Result, obj4);

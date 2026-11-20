@@ -1,16 +1,16 @@
-// Module ID: 16973
-// Function ID: 16974
+// Module ID: 16797
+// Function ID: 16798
 // Name: ScreenDowntimeScheduleSetting
-// Dependencies: [8593, 16127, 9016, 11875, 1113, 4617, 16949, 2]
+// Dependencies: [8592, 16091, 9016, 11817, 1112, 4619, 16773, 2]
 
-// Module 16973 (ScreenDowntimeScheduleSetting)
-import intl2 from "intl" /* 1113 */;
-import UserSettings from "UserSettings" /* 4617 */;
-import SettingsConstants from "SettingsConstants" /* 8593 */;
+// Module 16797 (ScreenDowntimeScheduleSetting)
+import intl2 from "intl" /* 1112 */;
+import UserSettings from "UserSettings" /* 4619 */;
+import SettingsConstants from "SettingsConstants" /* 8592 */;
 import useUserLinks from "useUserLinks" /* 9016 */;
-import useUserIsTeenAgeGroupDefault from "useUserIsTeenAgeGroup" /* 16127 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 16949 */;
-import SettingBuilders_mod from "SettingBuilders" /* 11875 */;
+import useUserIsTeenAgeGroupDefault from "useUserIsTeenAgeGroup" /* 16091 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 16773 */;
+import SettingBuilders_mod from "SettingBuilders" /* 11817 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

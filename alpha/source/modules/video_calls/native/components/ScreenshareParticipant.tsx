@@ -1,17 +1,17 @@
-// Module ID: 10985
-// Function ID: 10986
+// Module ID: 10927
+// Function ID: 10928
 // Name: ScreenshareParticipant
-// Dependencies: [19, 17, 6279, 1072, 21, 4792, 575, 10655, 504, 5052, 5383, 1113, 5390, 10874, 2]
+// Dependencies: [19, 17, 6281, 1071, 21, 4794, 575, 10597, 504, 5054, 5385, 1112, 5392, 10816, 2]
 // Exports: default
 
-// Module 10985 (ScreenshareParticipant)
+// Module 10927 (ScreenshareParticipant)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
+import Constants from "Constants" /* 1071 */;
 import react from "react" /* 19 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6279 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6281 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let currentUserActiveStream;

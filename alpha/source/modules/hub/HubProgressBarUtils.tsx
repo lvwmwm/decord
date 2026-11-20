@@ -1,18 +1,18 @@
-// Module ID: 13484
-// Function ID: 13485
+// Module ID: 13454
+// Function ID: 13455
 // Name: HubProgressBarUtils
-// Dependencies: [19, 1231, 6568, 13103, 1072, 504, 1196, 1113, 1255, 1406, 2]
+// Dependencies: [19, 1230, 6570, 13073, 1071, 504, 1195, 1112, 1254, 1404, 2]
 // Exports: getHubProgressTitleForStep, getNextHubProgressStep, useHubProgressBarCompletedSteps
 
-// Module 13484 (HubProgressBarUtils)
-import Constants from "Constants" /* 1072 */;
-import intl4 from "intl" /* 1113 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
-import GlobalUtils from "GlobalUtils" /* 1255 */;
-import HubProgressBarConstants from "HubProgressBarConstants" /* 13103 */;
+// Module 13454 (HubProgressBarUtils)
+import Constants from "Constants" /* 1071 */;
+import intl4 from "intl" /* 1112 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1195 */;
+import GlobalUtils from "GlobalUtils" /* 1254 */;
+import HubProgressBarConstants from "HubProgressBarConstants" /* 13073 */;
 import react from "react" /* 19 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6568 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1230 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6570 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -23,13 +23,13 @@ const result = size.fileFinishedImporting("modules/hub/HubProgressBarUtils.tsx")
 
 export function getHubProgressTitleForStep(nextHubProgressStep) {
   if (preloaded_user_settings.HubProgressStep.JOIN_GUILD === nextHubProgressStep) {
-    const intl3 = tmp(1113).intl;
+    const intl3 = tmp(1112).intl;
     return intl3.string(intl4.t.iNR25n);
   } else if (preloaded_user_settings.HubProgressStep.INVITE_USER === nextHubProgressStep) {
-    const intl2 = tmp(1113).intl;
+    const intl2 = tmp(1112).intl;
     return intl2.string(intl4.t["3NlTYU"]);
   } else if (preloaded_user_settings.HubProgressStep.CONTACT_SYNC === nextHubProgressStep) {
-    const intl = tmp(1113).intl;
+    const intl = tmp(1112).intl;
     return intl.string(intl4.t.HFvFte);
   } else if (preloaded_user_settings.HubProgressStep.NO_PROGRESS === nextHubProgressStep) {
     return null;

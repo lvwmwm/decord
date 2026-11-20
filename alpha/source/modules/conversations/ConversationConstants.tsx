@@ -1,9 +1,9 @@
-// Module ID: 5416
-// Function ID: 5417
+// Module ID: 5418
+// Function ID: 5419
 // Name: ConversationConstants
 // Dependencies: [2]
 
-// Module 5416 (ConversationConstants)
+// Module 5418 (ConversationConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conversations/ConversationConstants.tsx");

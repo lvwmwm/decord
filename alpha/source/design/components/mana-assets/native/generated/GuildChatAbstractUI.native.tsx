@@ -1,26 +1,26 @@
-// Module ID: 12196
-// Function ID: 12197
+// Module ID: 12138
+// Function ID: 12139
 // Name: GuildChatAbstractUI
-// Dependencies: [19, 21, 12197, 12198, 12199, 7238, 5479, 2]
+// Dependencies: [19, 21, 12139, 12140, 12141, 7237, 5481, 2]
 // Exports: GuildChatAbstractUI
 
-// Module 12196 (GuildChatAbstractUI)
+// Module 12138 (GuildChatAbstractUI)
 import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 7238 */;
-import _modDef12197 from "module_12197" /* 12197 */;
-import _modDef12198 from "module_12198" /* 12198 */;
-import _modDef12199 from "module_12199" /* 12199 */;
+import react_native from "react-native" /* 7237 */;
+import _modDef12139 from "module_12139" /* 12139 */;
+import _modDef12140 from "module_12140" /* 12140 */;
+import _modDef12141 from "module_12141" /* 12141 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef12197 };
+let obj2 = { uri: _modDef12139 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef12198 };
+let obj3 = { uri: _modDef12140 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef12199 };
-({ uri: _modDef12199 });
+obj[3] = { uri: _modDef12141 };
+({ uri: _modDef12141 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/GuildChatAbstractUI.native.tsx");
 

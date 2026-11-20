@@ -1,23 +1,23 @@
-// Module ID: 7302
-// Function ID: 7303
+// Module ID: 7301
+// Function ID: 7302
 // Name: AddPhone
-// Dependencies: [5, 32, 19, 17, 7251, 4635, 1388, 1072, 1083, 21, 4792, 575, 504, 7240, 7303, 6228, 5383, 1113, 7304, 7272, 6308, 7305, 2121, 5390, 5740, 7334, 2]
+// Dependencies: [5, 32, 19, 17, 7250, 4637, 1386, 1071, 1082, 21, 4794, 575, 504, 7239, 7302, 6230, 5385, 1112, 7303, 7271, 6310, 7304, 2119, 5392, 5742, 7333, 2]
 // Exports: default
 
-// Module 7302 (AddPhone)
+// Module 7301 (AddPhone)
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import Constants2 from "Constants" /* 1083 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5740 */;
+import Constants from "Constants" /* 1071 */;
+import Constants2 from "Constants" /* 1082 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5742 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import PhoneStore from "PhoneStore" /* 7251 */;
-import UserRequiredActionStore from "UserRequiredActionStore" /* 4635 */;
-import UserStore from "UserStore" /* 1388 */;
+import PhoneStore from "PhoneStore" /* 7250 */;
+import UserRequiredActionStore from "UserRequiredActionStore" /* 4637 */;
+import UserStore from "UserStore" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -80,7 +80,7 @@ export default function AddPhone(reason) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -156,7 +156,7 @@ export default function AddPhone(reason) {
             c3 = 0;
             closure_129_12(false);
             c5 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp38) {
           closure_2 = tmp38;

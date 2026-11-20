@@ -1,24 +1,24 @@
-// Module ID: 16996
-// Function ID: 16997
+// Module ID: 16820
+// Function ID: 16821
 // Name: AppIconRows
-// Dependencies: [32, 19, 17, 1388, 21, 4792, 4818, 7229, 1113, 16997, 13958, 504, 2110, 4820, 16998, 2]
+// Dependencies: [32, 19, 17, 1386, 21, 4794, 4820, 7228, 1112, 16821, 13927, 504, 2108, 4822, 16822, 2]
 // Exports: default
 
-// Module 16996 (AppIconRows)
+// Module 16820 (AppIconRows)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 19 */;
 import get_initialized from "get initialized" /* 504 */;
-import intl4 from "intl" /* 1113 */;
-import PremiumTypeUtils from "PremiumTypeUtils" /* 2110 */;
-import AppIconTypes from "AppIconTypes" /* 4818 */;
-import HexagonCampaignUtils from "HexagonCampaignUtils" /* 4820 */;
-import AppIconUtils from "AppIconUtils" /* 13958 */;
-import AppIconRowDefault from "AppIconRow" /* 16997 */;
-import HexagonCampaignAppIconSectionDefault from "HexagonCampaignAppIconSection" /* 16998 */;
+import intl4 from "intl" /* 1112 */;
+import PremiumTypeUtils from "PremiumTypeUtils" /* 2108 */;
+import AppIconTypes from "AppIconTypes" /* 4820 */;
+import HexagonCampaignUtils from "HexagonCampaignUtils" /* 4822 */;
+import AppIconUtils from "AppIconUtils" /* 13927 */;
+import AppIconRowDefault from "AppIconRow" /* 16821 */;
+import HexagonCampaignAppIconSectionDefault from "HexagonCampaignAppIconSection" /* 16822 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import UserStore from "UserStore" /* 1388 */;
+import UserStore from "UserStore" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const react = react2;
@@ -56,7 +56,7 @@ function BackwardsCompatibleAppIconRows(arg0) {
     obj2 = {
       title: merged.title,
       accessibilityRole: "radiogroup",
-      accessibilityLabel: intl.string(merged(1113).t.N4YDao),
+      accessibilityLabel: intl.string(merged(1112).t.N4YDao),
       hasIcons: true,
       children: icons.map((id) => {
           AppIconRowDefault;
@@ -65,8 +65,8 @@ function BackwardsCompatibleAppIconRows(arg0) {
         })
     };
     onLongPress(react.useState(false), 2);
-    TableRowGroup = merged(7229).TableRowGroup;
-    intl = merged(1113).intl;
+    TableRowGroup = merged(7228).TableRowGroup;
+    intl = merged(1112).intl;
     return closure_8(View, obj);
   }
 }
@@ -104,11 +104,11 @@ export default function AppIconRows(onSelect) {
     return !result && !id.isHidden;
   });
   if (someResult) {
-    const intl2 = tmp2(1113).intl;
-    stringResult = intl2.string(tmp2(1113).t.w9v0yp);
+    const intl2 = tmp2(1112).intl;
+    stringResult = intl2.string(tmp2(1112).t.w9v0yp);
   } else if (found.length > 0) {
-    const intl = tmp2(1113).intl;
-    stringResult = intl.string(tmp2(1113).t.Ipxkog);
+    const intl = tmp2(1112).intl;
+    stringResult = intl.string(tmp2(1112).t.Ipxkog);
   }
   let tmp12 = null;
   const tmp10 = authStore;
@@ -122,7 +122,7 @@ export default function AppIconRows(onSelect) {
   let tmp16 = null;
   if (found.length > 0) {
     const obj5 = { hasNitro: isPremiumResult, icons: found, currentAppIcon, title: intl3.string(intl4.t.anqaFd), onSelect };
-    intl3 = tmp2(1113).intl;
+    intl3 = tmp2(1112).intl;
     tmp16 = metroImportAll(BackwardsCompatibleAppIconRows, obj5);
   }
   items1[1] = tmp16;

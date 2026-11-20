@@ -1,22 +1,22 @@
-// Module ID: 20260
-// Function ID: 20261
+// Module ID: 20080
+// Function ID: 20081
 // Name: executeHeadlessTask
-// Dependencies: [5, 17, 502, 19449, 1072, 3, 1242, 8334, 15, 9, 14842, 1256, 1264, 19548, 4636, 2]
+// Dependencies: [5, 17, 502, 19269, 1071, 3, 1241, 8333, 15, 9, 14806, 1255, 1263, 19366, 4638, 2]
 // Exports: default
 
-// Module 20260 (executeHeadlessTask)
+// Module 20080 (executeHeadlessTask)
 import LoggerDefault from "Logger" /* 3 */;
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import fast_connect from "fast_connect" /* 15 */;
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1072 */;
-import SentryUtilsDefault from "SentryUtils" /* 1242 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import RequestGatewaySocketAll from "RequestGatewaySocket" /* 8334 */;
-import PauseGatewaySocketAll from "PauseGatewaySocket" /* 14842 */;
+import Constants from "Constants" /* 1071 */;
+import SentryUtilsDefault from "SentryUtils" /* 1241 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import RequestGatewaySocketAll from "RequestGatewaySocket" /* 8333 */;
+import PauseGatewaySocketAll from "PauseGatewaySocket" /* 14806 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import NativeAppStartup from "NativeAppStartup" /* 19449 */;
+import NativeAppStartup from "NativeAppStartup" /* 19269 */;
 import size from "module_2" /* 2 */;
 
 let closure_10, closure_7, closure_8, duration_ms, value2;
@@ -47,7 +47,7 @@ let obj = function _executeHeadlessTask() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -359,7 +359,7 @@ let obj = function _executeHeadlessTask() {
               closure_8 = closure_10;
               value.warn("Failed to submit analytics", closure_8);
               c12 = 3;
-              return { value: "HermesInternal", done: "+60" };
+              return { value: "HermesInternal", done: null };
             }
             case 13:
             {

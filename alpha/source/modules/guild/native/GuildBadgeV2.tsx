@@ -1,19 +1,19 @@
 // Module ID: 9635
 // Function ID: 9636
 // Name: GuildBadgeV2
-// Dependencies: [19, 21, 4792, 1187, 4799, 9634, 9633, 9636, 575, 9639, 2]
+// Dependencies: [19, 21, 4794, 1186, 4801, 9634, 9633, 9636, 575, 9639, 2]
 // Exports: default, hasGuildBadge
 
 // Module 9635 (GuildBadgeV2)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 1187 */;
-import shared from "shared" /* 4799 */;
+import native from "native" /* 1186 */;
+import shared from "shared" /* 4801 */;
 import GuildTraits from "GuildTraits" /* 9633 */;
 import BadgeCategory from "BadgeCategory" /* 9634 */;
 import GuildBadgeImageSource from "GuildBadgeImageSource" /* 9639 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -57,7 +57,7 @@ export default function GuildBadgeV2(arg0) {
       const guildBadgeImageSource = tmp5Result6.getGuildBadgeImageSource(guild, tmp8);
       let tmp10 = null;
       if (null != guildBadgeImageSource) {
-        const Icon = tmp5(1187).Icon;
+        const Icon = tmp5(1186).Icon;
         const merged1 = Object.assign(merged);
         tmp10 = <Icon size={size} source={guildBadgeImageSource} style={tmp4.icon} disableColor />;
       }

@@ -1,34 +1,34 @@
-// Module ID: 13755
-// Function ID: 13756
+// Module ID: 13724
+// Function ID: 13725
 // Name: ChannelLongPressActionSheet
-// Dependencies: [5, 19, 11722, 6319, 4646, 6518, 4645, 7364, 4641, 8201, 4663, 4724, 6498, 4734, 4695, 6431, 1388, 1072, 10469, 21, 7161, 2121, 6373, 1113, 12960, 7948, 5486, 7618, 5408, 10387, 11180, 10470, 5488, 6308, 13756, 3701, 12372, 1099, 10138, 7556, 13774, 11156, 4089, 13775, 5006, 12227, 12226, 13686, 10994, 7932, 11609, 7360, 4969, 7032, 13777, 7644, 11775, 13778, 11763, 11172, 11173, 11175, 7118, 7357, 10302, 11177, 7366, 7361, 11605, 11189, 7555, 13780, 13781, 7501, 7553, 13782, 13783, 5528, 6376, 10146, 10053, 13784, 13785, 10306, 13786, 7116, 6390, 10309, 5492, 7627, 10316, 7426, 5473, 7401, 7420, 11158, 504, 4649, 6542, 8497, 4617, 7203, 1187, 13789, 11612, 13790, 13796, 6746, 13801, 13802, 1452, 10755, 13804, 9831, 7434, 1627, 11613, 7436, 2]
+// Dependencies: [5, 19, 11664, 6321, 4648, 6520, 4647, 7363, 4643, 8200, 4665, 4726, 6500, 4736, 4697, 6433, 1386, 1071, 10411, 21, 7160, 2119, 6375, 1112, 12930, 7947, 5488, 7617, 5410, 10329, 11122, 10412, 5490, 6310, 13725, 3703, 12342, 1098, 10141, 7555, 13743, 11098, 4091, 13744, 5008, 12169, 12168, 12200, 10936, 7931, 11551, 7359, 4971, 7031, 13746, 7643, 11717, 13747, 11705, 11114, 11115, 11117, 7117, 7356, 10244, 11119, 7365, 7360, 11547, 11131, 7554, 13749, 13750, 7500, 7552, 13751, 13752, 5530, 6378, 10149, 10056, 13753, 13754, 10248, 13755, 7115, 6392, 10251, 5494, 7626, 10258, 7425, 5475, 7400, 7419, 11100, 504, 4651, 6544, 8496, 4619, 7202, 1186, 13758, 11554, 13759, 13765, 6746, 13770, 13771, 1450, 10697, 13773, 9833, 7433, 1625, 11555, 7435, 2]
 // Exports: default
 
-// Module 13755 (ChannelLongPressActionSheet)
+// Module 13724 (ChannelLongPressActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import asyncRequire from "asyncRequire" /* 2121 */;
-import StageChannelPermissions from "StageChannelPermissions" /* 4649 */;
-import ActionSheetRow2 from "ActionSheetRow" /* 7436 */;
-import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10469 */;
-import EmbeddedAppShimExperiment from "EmbeddedAppShimExperiment" /* 10755 */;
-import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 11722 */;
+import asyncRequire from "asyncRequire" /* 2119 */;
+import StageChannelPermissions from "StageChannelPermissions" /* 4651 */;
+import ActionSheetRow2 from "ActionSheetRow" /* 7435 */;
+import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10411 */;
+import EmbeddedAppShimExperiment from "EmbeddedAppShimExperiment" /* 10697 */;
+import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 11664 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ChannelSpoilerAgreeStore from "ChannelSpoilerAgreeStore" /* 6319 */;
-import StageInstanceStore from "StageInstanceStore" /* 4646 */;
-import ActiveThreadsStore from "ActiveThreadsStore" /* 6518 */;
-import ChannelRecord from "ChannelRecord" /* 4645 */;
-import CategoryCollapseStore from "CategoryCollapseStore" /* 7364 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import CollapsedVoiceChannelStore from "CollapsedVoiceChannelStore" /* 8201 */;
-import GuildStore from "GuildStore" /* 4663 */;
-import PermissionStore from "PermissionStore" /* 4724 */;
-import ReadStateStore from "ReadStateStore" /* 6498 */;
-import RelationshipStore from "RelationshipStore" /* 4734 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4695 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6431 */;
-import UserStore from "UserStore" /* 1388 */;
-import Constants from "Constants" /* 1072 */;
+import ChannelSpoilerAgreeStore from "ChannelSpoilerAgreeStore" /* 6321 */;
+import StageInstanceStore from "StageInstanceStore" /* 4648 */;
+import ActiveThreadsStore from "ActiveThreadsStore" /* 6520 */;
+import ChannelRecord from "ChannelRecord" /* 4647 */;
+import CategoryCollapseStore from "CategoryCollapseStore" /* 7363 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import CollapsedVoiceChannelStore from "CollapsedVoiceChannelStore" /* 8200 */;
+import GuildStore from "GuildStore" /* 4665 */;
+import PermissionStore from "PermissionStore" /* 4726 */;
+import ReadStateStore from "ReadStateStore" /* 6500 */;
+import RelationshipStore from "RelationshipStore" /* 4736 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4697 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6433 */;
+import UserStore from "UserStore" /* 1386 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -65,7 +65,7 @@ let obj = function _handleVoiceOrStageChannelConnectPress() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -114,7 +114,7 @@ let obj = function _handleVoiceOrStageChannelConnectPress() {
               value.connectAndOpen(guildStageVoice);
             }
             c3 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp11) {
           c3 = 3;
@@ -528,7 +528,7 @@ function ChannelLongPressActionSheetConnected(channel) {
     const buttons5 = obj20.buttons;
     const push9 = buttons5.push;
     const obj21 = {
-      label: intl7.string(tmp(tmp2[42])["276ll6"]),
+      label: intl7.string(tmp(tmp2[42]).XWgAfc),
       IconComponent: tmp5(tmp2[43]).PaperPlusIcon,
       onPress() {
           const tmp = channel(guildId[44]);
@@ -949,7 +949,7 @@ function ChannelLongPressActionSheetConnected(channel) {
                     const obj2 = { value, done: true };
                     return obj2;
                   } else {
-                    return { value: "HermesInternal", done: "+60" };
+                    return { value: "HermesInternal", done: null };
                   }
                 } else {
                   try {
@@ -978,7 +978,7 @@ function ChannelLongPressActionSheetConnected(channel) {
                     } else {
                       value.openEndStageModal(closure_128_0);
                       paths = 3;
-                      return { value: "HermesInternal", done: "+60" };
+                      return { value: "HermesInternal", done: null };
                     }
                   } catch (tmp9) {
                     paths = 3;

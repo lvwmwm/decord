@@ -1,12 +1,12 @@
-// Module ID: 17967
-// Function ID: 17968
+// Module ID: 17794
+// Function ID: 17795
 // Name: useIsCheckpointOpen
-// Dependencies: [12406, 4968, 2]
+// Dependencies: [12376, 4970, 2]
 // Exports: useIsCheckpointOpen
 
-// Module 17967 (useIsCheckpointOpen)
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4968 */;
-import CheckpointModalConstants from "CheckpointModalConstants" /* 12406 */;
+// Module 17794 (useIsCheckpointOpen)
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4970 */;
+import CheckpointModalConstants from "CheckpointModalConstants" /* 12376 */;
 import size from "module_2" /* 2 */;
 
 let c2;

@@ -1,19 +1,19 @@
-// Module ID: 6885
-// Function ID: 6886
+// Module ID: 6884
+// Function ID: 6885
 // Name: Authorize
-// Dependencies: [4641, 4825, 1072, 6886, 6794, 6449, 4729, 1084, 5513, 2]
+// Dependencies: [4643, 4827, 1071, 6885, 6794, 6451, 4731, 1083, 5515, 2]
 // Exports: filterScopes, parseOAuth2AuthorizeProps
 
-// Module 6885 (Authorize)
-import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4729 */;
-import QueryStringUtils from "QueryStringUtils" /* 5513 */;
-import _mod6449 from "module_6449" /* 6449 */;
+// Module 6884 (Authorize)
+import BigFlagUtilsAll from "BigFlagUtils" /* 1083 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4731 */;
+import QueryStringUtils from "QueryStringUtils" /* 5515 */;
+import _mod6451 from "module_6451" /* 6451 */;
 import OAuth2Scopes from "OAuth2Scopes" /* 6794 */;
-import scopes from "scopes" /* 6886 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4825 */;
-import Constants from "Constants" /* 1072 */;
+import scopes from "scopes" /* 6885 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4827 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -43,12 +43,12 @@ export function parseOAuth2AuthorizeProps(query) {
       return guild_id;
     }
   }
-  const obj = _mod6449;
+  const obj = _mod6451;
   const parsed = obj.parse(query, { arrayFormat: "bracket" });
   let NONE = PermissionUtilsAll.NONE;
   try {
     let str2 = "0";
-    const deserialize = tmp4(1084).deserialize;
+    const deserialize = tmp4(1083).deserialize;
     BigFlagUtilsAll;
     if (null != parsed.permissions) {
       str2 = "0";
@@ -73,7 +73,7 @@ export function parseOAuth2AuthorizeProps(query) {
   }
   const scope = parsed.scope;
   const tmp11 = sanitizeOAuthGuild(guild_id);
-  const getFirstQueryStringValue = tmp(5513).getFirstQueryStringValue;
+  const getFirstQueryStringValue = tmp(5515).getFirstQueryStringValue;
   QueryStringUtils;
   let str4 = getFirstQueryStringValue(scope);
   if (str4 == null) {

@@ -1,11 +1,11 @@
-// Module ID: 13245
-// Function ID: 13246
+// Module ID: 13215
+// Function ID: 13216
 // Name: useLongestChannelMessageBeforeReply
-// Dependencies: [5843, 504, 2]
+// Dependencies: [5845, 504, 2]
 // Exports: useLongestChannelMessageBeforeReply
 
-// Module 13245 (useLongestChannelMessageBeforeReply)
-import MessageStore from "MessageStore" /* 5843 */;
+// Module 13215 (useLongestChannelMessageBeforeReply)
+import MessageStore from "MessageStore" /* 5845 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

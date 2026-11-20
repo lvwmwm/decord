@@ -1,20 +1,20 @@
-// Module ID: 15625
-// Function ID: 15626
+// Module ID: 15589
+// Function ID: 15590
 // Name: providers
-// Dependencies: [5, 6568, 6233, 1072, 2145, 1083, 6949, 6790, 10739, 10742, 6570, 572, 1108, 6905, 2]
+// Dependencies: [5, 6570, 6235, 1071, 2143, 1082, 6948, 6790, 10681, 10684, 6572, 572, 1107, 6904, 2]
 
-// Module 15625 (providers)
+// Module 15589 (providers)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1107 */;
 import RPCErrorDefault from "RPCError" /* 6790 */;
-import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 6949 */;
-import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 10739 */;
+import ConnectedAccountsActionCreatorsDefault from "ConnectedAccountsActionCreators" /* 6948 */;
+import createRpcJoiSchemaObjectDefault from "createRpcJoiSchemaObject" /* 10681 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6568 */;
-import Constants_mod from "Constants" /* 6233 */;
-import Constants_mod2 from "Constants" /* 1072 */;
-import Constants_mod3 from "Constants" /* 2145 */;
-import Constants_mod4 from "Constants" /* 1083 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6570 */;
+import Constants_mod from "Constants" /* 6235 */;
+import Constants_mod2 from "Constants" /* 1071 */;
+import Constants_mod3 from "Constants" /* 2143 */;
+import Constants_mod4 from "Constants" /* 1082 */;
 import size from "module_2" /* 2 */;
 
 let _require, closure_3;
@@ -47,7 +47,7 @@ let value = function _refreshProviderAccessToken() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -266,7 +266,7 @@ let closure_11 = _asyncToGenerator(async function(arg0, value) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: "+60" };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {

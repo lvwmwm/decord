@@ -1,16 +1,16 @@
-// Module ID: 4605
-// Function ID: 4606
+// Module ID: 4607
+// Function ID: 4608
 // Name: BillingUtils
-// Dependencies: [5, 4606, 1083, 4607, 1242, 1285, 4613, 2]
+// Dependencies: [5, 4608, 1082, 4609, 1241, 1284, 4615, 2]
 // Exports: calculateStandardizedUnits, captureBillingException, captureBillingMessage, createGatewayCheckoutContext, getLocalizedDisplayMonth, isExpectedHttpClientError, isOfTypeStripeError
 
-// Module 4605 (BillingUtils)
-import Constants from "Constants" /* 1083 */;
-import SentryUtilsDefault from "SentryUtils" /* 1242 */;
-import HTTPUtils from "HTTPUtils" /* 1285 */;
-import Constants2 from "Constants" /* 4606 */;
-import BraintreeUtils from "BraintreeUtils" /* 4607 */;
-import errors_V6OrEarlierAPIErrorDefault from "errors/V6OrEarlierAPIError" /* 4613 */;
+// Module 4607 (BillingUtils)
+import Constants from "Constants" /* 1082 */;
+import SentryUtilsDefault from "SentryUtils" /* 1241 */;
+import HTTPUtils from "HTTPUtils" /* 1284 */;
+import Constants2 from "Constants" /* 4608 */;
+import BraintreeUtils from "BraintreeUtils" /* 4609 */;
+import errors_V6OrEarlierAPIErrorDefault from "errors/V6OrEarlierAPIError" /* 4615 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -32,7 +32,7 @@ let obj = function _createGatewayCheckoutContext() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

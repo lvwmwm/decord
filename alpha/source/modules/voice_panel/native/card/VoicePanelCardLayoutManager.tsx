@@ -1,20 +1,20 @@
-// Module ID: 11690
-// Function ID: 11691
+// Module ID: 11632
+// Function ID: 11633
 // Name: VoicePanelCardLayoutManager
-// Dependencies: [32, 19, 17, 6499, 11688, 11691, 5442, 1655, 11692, 558, 10677, 11693, 11694, 1263, 2]
+// Dependencies: [32, 19, 17, 6501, 11630, 11633, 5444, 1653, 11634, 558, 10619, 11635, 11636, 1262, 2]
 // Exports: useCardLayoutCoordsSubscription, useManagerSubscription, useTargetDimensionsSubscription
 
-// Module 11690 (VoicePanelCardLayoutManager)
+// Module 11632 (VoicePanelCardLayoutManager)
 import react_native from "react-native" /* 17 */;
 import shallowEqualDefault from "shallowEqual" /* 558 */;
-import react_native2 from "react-native" /* 1263 */;
-import CallConstants from "CallConstants" /* 5442 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11692 */;
+import react_native2 from "react-native" /* 1262 */;
+import CallConstants from "CallConstants" /* 5444 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11634 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6499 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11688 */;
-import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11691 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6501 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11630 */;
+import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11633 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -861,8 +861,8 @@ export default VoicePanelCardLayoutManager;
 export function useCardLayoutCoordsSubscription(id, layoutManager) {
   let sharedValue;
   _require = id;
-  const useSharedValue = require("module_1655").useSharedValue;
-  require("module_1655");
+  const useSharedValue = require("module_1653").useSharedValue;
+  require("module_1653");
   let cardCoords = layoutManager.getCardCoords(id);
   if (cardCoords == null) {
     cardCoords = closure_15;
@@ -889,9 +889,9 @@ export function useCardLayoutCoordsSubscription(id, layoutManager) {
 export function useTargetDimensionsSubscription(participantId, layoutManager) {
   let sharedValue;
   _require = participantId;
-  const useSharedValue = require("module_1655").useSharedValue;
+  const useSharedValue = require("module_1653").useSharedValue;
   const obj = {};
-  require("module_1655");
+  require("module_1653");
   const merged = Object.assign(layoutManager.getTargetDimensions(participantId));
   sharedValue = useSharedValue(obj);
   const items = [participantId, layoutManager, sharedValue];

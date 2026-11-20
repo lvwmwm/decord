@@ -1,30 +1,30 @@
-// Module ID: 18917
-// Function ID: 18918
+// Module ID: 18741
+// Function ID: 18742
 // Name: AddFriendsScreen
-// Dependencies: [32, 5, 19, 17, 8241, 4734, 1388, 13515, 1072, 13493, 21, 4792, 575, 13491, 7143, 5473, 1113, 7947, 13495, 1380, 7401, 7420, 7307, 18918, 5353, 1256, 7948, 563, 12, 4848, 17614, 6745, 9539, 14560, 6901, 9536, 6926, 5477, 7571, 18919, 18920, 18922, 18923, 2]
+// Dependencies: [32, 5, 19, 17, 8240, 4736, 1386, 13485, 1071, 13463, 21, 4794, 575, 13461, 7142, 5475, 1112, 7946, 13465, 1378, 7400, 7419, 7306, 18742, 5355, 1255, 7947, 563, 12, 4850, 17441, 6745, 9539, 14528, 6900, 9536, 6925, 5479, 7570, 18743, 18744, 18746, 18747, 2]
 // Exports: default
 
-// Module 18917 (AddFriendsScreen)
+// Module 18741 (AddFriendsScreen)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 575 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 7143 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7948 */;
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 13491 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 13493 */;
-import FriendsScreenConstants from "FriendsScreenConstants" /* 13515 */;
-import IncomingRequestRow from "IncomingRequestRow" /* 18920 */;
-import ContactSuggestionRow2 from "ContactSuggestionRow" /* 18922 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 7142 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7947 */;
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 13461 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 13463 */;
+import FriendsScreenConstants from "FriendsScreenConstants" /* 13485 */;
+import IncomingRequestRow from "IncomingRequestRow" /* 18744 */;
+import ContactSuggestionRow2 from "ContactSuggestionRow" /* 18746 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 8241 */;
-import RelationshipStore from "RelationshipStore" /* 4734 */;
-import UserStore from "UserStore" /* 1388 */;
-import Constants from "Constants" /* 1072 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 8240 */;
+import RelationshipStore from "RelationshipStore" /* 4736 */;
+import UserStore from "UserStore" /* 1386 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let c5, constants;
@@ -65,7 +65,7 @@ let props = function _handleShare() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -118,7 +118,7 @@ let props = function _handleShare() {
           PJf9P9 = closure_130_0(closure_130_2[16]).t.PJf9P9;
           closure_0(obj7);
           c6 = 3;
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp19) {
         let closure_3 = tmp19;
@@ -134,12 +134,12 @@ let props = function _handleShare() {
   return obj(...arguments);
 };
 function areHydratedGameFriendRequestRowStatesEqual(arr, arg1) {
-  const f117557 = (user, index) => user.user === closure_0[index].user && user.applicationId === closure_0[index].applicationId;
+  const f115709 = (user, index) => user.user === closure_0[index].user && user.applicationId === closure_0[index].applicationId;
   let closure_0 = arg1;
   let tmp = arr === arg1;
   if (!tmp) {
-    tmp = arr.length === arg1.length && arr.every(f117557);
-    const tmp2 = arr.length === arg1.length && arr.every(f117557);
+    tmp = arr.length === arg1.length && arr.every(f115709);
+    const tmp2 = arr.length === arg1.length && arr.every(f115709);
   }
   return tmp;
 }

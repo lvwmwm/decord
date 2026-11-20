@@ -1,18 +1,18 @@
-// Module ID: 19055
-// Function ID: 19056
+// Module ID: 18874
+// Function ID: 18875
 // Name: MessageRequestPreview
-// Dependencies: [19, 17, 4734, 1072, 21, 4792, 6286, 575, 13398, 504, 1256, 1113, 8117, 6265, 1187, 2]
+// Dependencies: [19, 17, 4736, 1071, 21, 4794, 6288, 575, 13368, 504, 1255, 1112, 8116, 6267, 1186, 2]
 
-// Module 19055 (MessageRequestPreview)
+// Module 18874 (MessageRequestPreview)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4734 */;
-import Constants from "Constants" /* 1072 */;
-import createStyles_mod from "createStyles" /* 4792 */;
-import TextStyles_mod from "TextStyles" /* 6286 */;
+import RelationshipStore from "RelationshipStore" /* 4736 */;
+import Constants from "Constants" /* 1071 */;
+import createStyles_mod from "createStyles" /* 4794 */;
+import TextStyles_mod from "TextStyles" /* 6288 */;
 import size from "module_2" /* 2 */;
 
 let Fonts;
@@ -41,7 +41,7 @@ const memoResult = react.memo(function MessageRequestPreview(channel) {
   channel = channel.channel;
   const style = channel.style;
   const tmp = closure_9();
-  let obj = channel(13398);
+  let obj = channel(13368);
   const messageRequestPreview = obj.useMessageRequestPreview(channel);
   const message = messageRequestPreview.message;
   ({ loaded, error } = messageRequestPreview);
@@ -65,23 +65,23 @@ const memoResult = react.memo(function MessageRequestPreview(channel) {
     }
   }, items2);
   if (error) {
-    const intl9 = tmp2(1113).intl;
-    intl9.string(channel(1113).t.BZHld2);
+    const intl9 = tmp2(1112).intl;
+    intl9.string(channel(1112).t.BZHld2);
     let flag = false;
   } else {
     flag = false;
     if (loaded) {
       if (null != message) {
         if (isBlocked) {
-          const intl8 = tmp2(1113).intl;
-          intl8.string(channel(1113).t["WPe+xL"]);
+          const intl8 = tmp2(1112).intl;
+          intl8.string(channel(1112).t["WPe+xL"]);
           flag = false;
         }
       }
       if (null != message) {
         if (isIgnored) {
-          const intl7 = tmp2(1113).intl;
-          intl7.string(channel(1113).t.uxrh1O);
+          const intl7 = tmp2(1112).intl;
+          intl7.string(channel(1112).t.uxrh1O);
           flag = false;
         }
       }
@@ -91,34 +91,34 @@ const memoResult = react.memo(function MessageRequestPreview(channel) {
       }
       if (null != content) {
         if ("" !== message.content) {
-          const content1 = message(8117)(message, { noStyleAndInteraction: true, allowGameMentions: true }).content;
+          const content1 = message(8116)(message, { noStyleAndInteraction: true, allowGameMentions: true }).content;
           const _Array = Array;
           if (!Array.isArray(content1)) {
             flag = true;
           }
-          const intl6 = tmp2(1113).intl;
-          intl6.string(channel(1113).t["262oPB"]);
+          const intl6 = tmp2(1112).intl;
+          intl6.string(channel(1112).t["262oPB"]);
           flag = false;
         }
       }
       if (null != message) {
-        const tmp2Result = channel(6265);
+        const tmp2Result = channel(6267);
         if (tmp2Result.getMessageStickers(message).length > 0) {
-          const intl5 = tmp2(1113).intl;
-          let stringResult1 = intl5.string(tmp2(1113).t["zuI+by"]);
+          const intl5 = tmp2(1112).intl;
+          let stringResult1 = intl5.string(tmp2(1112).t["zuI+by"]);
         } else if (null != message.interaction) {
-          const intl4 = tmp2(1113).intl;
-          stringResult1 = intl4.string(tmp2(1113).t["2v7kfl"]);
+          const intl4 = tmp2(1112).intl;
+          stringResult1 = intl4.string(tmp2(1112).t["2v7kfl"]);
         } else {
           const tmp15 = constants2;
           if (message.hasFlag(constants2.IS_VOICE_MESSAGE)) {
-            const intl3 = tmp2(1113).intl;
-            stringResult1 = intl3.string(tmp2(1113).t["6bhHrc"]);
+            const intl3 = tmp2(1112).intl;
+            stringResult1 = intl3.string(tmp2(1112).t["6bhHrc"]);
           } else {
             const hasFlagResult = message.hasFlag(tmp15.IS_COMPONENTS_V2);
-            const intl2 = tmp2(1113).intl;
+            const intl2 = tmp2(1112).intl;
             const string = intl2.string;
-            const t = tmp2(1113).t;
+            const t = tmp2(1112).t;
             if (hasFlagResult) {
               stringResult1 = string(t.Xxm5i3);
             } else {
@@ -128,8 +128,8 @@ const memoResult = react.memo(function MessageRequestPreview(channel) {
         }
         flag = false;
       } else {
-        const intl = tmp2(1113).intl;
-        intl.string(channel(1113).t["0KfDxM"]);
+        const intl = tmp2(1112).intl;
+        intl.string(channel(1112).t["0KfDxM"]);
         flag = false;
       }
     }

@@ -1,21 +1,21 @@
-// Module ID: 14849
-// Function ID: 14850
+// Module ID: 14811
+// Function ID: 14812
 // Name: LocalVoiceStateManager
-// Dependencies: [6274, 502, 4641, 2133, 5632, 1072, 6276, 14847, 4617, 1406, 14798, 6280, 2]
+// Dependencies: [6276, 502, 4643, 2131, 5634, 1071, 6278, 14809, 4619, 1404, 14757, 6282, 2]
 
-// Module 14849 (LocalVoiceStateManager)
-import FlagUtils from "FlagUtils" /* 1406 */;
-import UserSettings from "UserSettings" /* 4617 */;
-import Constants2 from "Constants" /* 6276 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6280 */;
-import isClipsEnabled from "isClipsEnabled" /* 14798 */;
-import PassTheControllerStore from "PassTheControllerStore" /* 6274 */;
+// Module 14811 (LocalVoiceStateManager)
+import FlagUtils from "FlagUtils" /* 1404 */;
+import UserSettings from "UserSettings" /* 4619 */;
+import Constants2 from "Constants" /* 6278 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6282 */;
+import isClipsEnabled from "isClipsEnabled" /* 14757 */;
+import PassTheControllerStore from "PassTheControllerStore" /* 6276 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import MediaEngineStore from "MediaEngineStore" /* 2133 */;
-import RTCRegionStore from "RTCRegionStore" /* 5632 */;
-import Constants from "Constants" /* 1072 */;
-import StateManager from "StateManager" /* 14847 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import MediaEngineStore from "MediaEngineStore" /* 2131 */;
+import RTCRegionStore from "RTCRegionStore" /* 5634 */;
+import Constants from "Constants" /* 1071 */;
+import StateManager from "StateManager" /* 14809 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -45,7 +45,7 @@ class LocalVoiceStateManager extends StateManager {
     if (result) {
       let CALL;
       const isSelfPassingController = PassTheControllerStore.isSelfPassingController;
-      const encodeStreamKey = tmp(6280).encodeStreamKey;
+      const encodeStreamKey = tmp(6282).encodeStreamKey;
       StreamKeyUtils;
       if (null != guildId) {
         CALL = StreamTypes.GUILD;

@@ -1,18 +1,18 @@
-// Module ID: 18845
-// Function ID: 18846
+// Module ID: 18669
+// Function ID: 18670
 // Name: PeopleScreen
-// Dependencies: [5, 32, 19, 13136, 13121, 8457, 8456, 21, 13114, 504, 18787, 18783, 7618, 13128, 18846, 18778, 18791, 2]
+// Dependencies: [5, 32, 19, 13106, 13091, 8456, 8455, 21, 13084, 504, 18611, 18607, 7617, 13098, 18670, 18602, 18615, 2]
 
-// Module 18845 (PeopleScreen)
+// Module 18669 (PeopleScreen)
 import Fragment from "Fragment" /* 21 */;
-import TrackingConstants from "TrackingConstants" /* 8456 */;
-import TrackingDefault from "Tracking" /* 13128 */;
+import TrackingConstants from "TrackingConstants" /* 8455 */;
+import TrackingDefault from "Tracking" /* 13098 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import SearchPeopleTabStore from "SearchPeopleTabStore" /* 13136 */;
-import SearchQueryStore from "SearchQueryStore" /* 13121 */;
-import SearchConstants from "SearchConstants" /* 8457 */;
+import SearchPeopleTabStore from "SearchPeopleTabStore" /* 13106 */;
+import SearchQueryStore from "SearchQueryStore" /* 13091 */;
+import SearchConstants from "SearchConstants" /* 8456 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -81,7 +81,7 @@ const memoResult = react.memo(function PeopleScreen(searchContext) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -115,7 +115,7 @@ const memoResult = react.memo(function PeopleScreen(searchContext) {
             const result = obj6.trackSearchResultClicked(obj7);
             closure_1_6(userId, channelId);
             c5 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp9) {
           c5 = 3;

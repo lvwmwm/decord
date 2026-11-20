@@ -1,13 +1,13 @@
-// Module ID: 10140
-// Function ID: 10141
+// Module ID: 10143
+// Function ID: 10144
 // Name: UserProfileGameWidgetEmptyStatePrompt
-// Dependencies: [19, 21, 10094, 5383, 1113, 2]
+// Dependencies: [19, 21, 10097, 5385, 1112, 2]
 // Exports: default
 
-// Module 10140 (UserProfileGameWidgetEmptyStatePrompt)
+// Module 10143 (UserProfileGameWidgetEmptyStatePrompt)
 import Fragment from "Fragment" /* 21 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import WidgetUtils from "WidgetUtils" /* 10094 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import WidgetUtils from "WidgetUtils" /* 10097 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -25,12 +25,12 @@ export default function UserProfileGameWidgetEmptyStatePrompt(arg0) {
   const Text = Text_Text.Text;
   const tmp4 = jsx;
   if (1 === widgetMaxGamesResult) {
-    const intl2 = tmp(1113).intl;
-    stringResult = intl2.string(tmp(1113).t["3FdPBT"]);
+    const intl2 = tmp(1112).intl;
+    stringResult = intl2.string(tmp(1112).t["3FdPBT"]);
   } else {
-    const intl = tmp(1113).intl;
+    const intl = tmp(1112).intl;
     const obj3 = { maxGames: widgetMaxGamesResult };
-    stringResult = intl.formatToPlainString(tmp(1113).t.W8K2GH, obj3);
+    stringResult = intl.formatToPlainString(tmp(1112).t.W8K2GH, obj3);
   }
   return tmp4(Text, obj2);
 };

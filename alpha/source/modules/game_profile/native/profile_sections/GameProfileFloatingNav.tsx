@@ -1,22 +1,22 @@
-// Module ID: 9822
-// Function ID: 9823
+// Module ID: 9824
+// Function ID: 9825
 // Name: GameProfileFloatingNav
-// Dependencies: [32, 19, 17, 21, 575, 1655, 4792, 9823, 13685, 7481, 5383, 1630, 13711, 5356, 671, 5002, 9681, 6921, 1113, 6919, 5347, 2]
+// Dependencies: [32, 19, 17, 21, 575, 1653, 4794, 9825, 13656, 7480, 5385, 1628, 13680, 5358, 671, 5004, 9681, 6920, 1112, 6918, 5349, 2]
 // Exports: default
 
-// Module 9822 (GameProfileFloatingNav)
+// Module 9824 (GameProfileFloatingNav)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import native from "native" /* 7481 */;
-import YouBannerDecorations from "YouBannerDecorations" /* 9823 */;
-import YouScreenNavIconMeasurer2 from "YouScreenNavIconMeasurer" /* 13685 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import native from "native" /* 7480 */;
+import YouBannerDecorations from "YouBannerDecorations" /* 9825 */;
+import YouScreenNavIconMeasurer2 from "YouScreenNavIconMeasurer" /* 13656 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -81,11 +81,11 @@ function FloatingNav(navigation) {
   let tmp = selectTab;
   const tmp2 = dependencyMap;
   const onLayout = navigation.onLayout;
-  const tmp3 = closure_14(selectTab(1630)().bottom);
+  const tmp3 = closure_14(selectTab(1628)().bottom);
   dependencyMap = tmp3;
-  let obj = selectedTab(13711);
+  let obj = selectedTab(13680);
   const isGameProfileCommunitiesMobileEnabled = obj.useIsGameProfileCommunitiesMobileEnabled({ location: "GameProfileFloatingNav" });
-  let obj2 = selectedTab(5356);
+  let obj2 = selectedTab(5358);
   const token = obj2.useToken(selectTab(575).colors.BACKGROUND_BASE_LOWEST);
   let items = [token];
   const memo = react.useMemo(() => {
@@ -124,8 +124,8 @@ function FloatingNav(navigation) {
     });
   }, []);
   const tmp10 = tmp9[selectedTab];
-  selectedTab(1655);
-  const items1 = [closure_16, tmp10, selectedTab(5002).withTiming, 320, closure_13];
+  selectedTab(1653);
+  const items1 = [closure_16, tmp10, selectedTab(5004).withTiming, 320, closure_13];
   let c0;
   let c1;
   let c2;
@@ -154,22 +154,22 @@ function FloatingNav(navigation) {
   GameProfileFloatingNavTsx1.__workletHash = 15050593289877;
   GameProfileFloatingNavTsx1.__initData = tmp12;
   if (isGameProfileCommunitiesMobileEnabled) {
-    let obj3 = { tab: tmp4(9681).GameProfileNavTab.OVERVIEW, IconComponent: tmp4(6921).GameControllerIcon, label: intl.string(tmp4(1113).t.qHmbyh) };
-    intl = tmp4(1113).intl;
+    let obj3 = { tab: tmp4(9681).GameProfileNavTab.OVERVIEW, IconComponent: tmp4(6920).GameControllerIcon, label: intl.string(tmp4(1112).t.qHmbyh) };
+    intl = tmp4(1112).intl;
     const items3 = [obj3, ];
-    let obj4 = { tab: tmp4(9681).GameProfileNavTab.COMMUNITIES, IconComponent: tmp4(6919).GroupIcon, label: intl2.string(tmp4(1113).t["3xFZEo"]) };
-    intl2 = tmp4(1113).intl;
+    let obj4 = { tab: tmp4(9681).GameProfileNavTab.COMMUNITIES, IconComponent: tmp4(6918).GroupIcon, label: intl2.string(tmp4(1112).t["3xFZEo"]) };
+    intl2 = tmp4(1112).intl;
     items3[1] = obj4;
     const obj5 = { style: tmp3.wrap, pointerEvents: "box-none", onLayout, children: items4 };
     const obj6 = { colors: memo, style: tmp3.scrim, pointerEvents: "none" };
-    items4 = [closure_7(tmp(5347), obj6), ];
+    items4 = [closure_7(tmp(5349), obj6), ];
     const obj7 = { style: tmp3.pill, accessibilityRole: "tablist", children: items5 };
-    const obj8 = { style: tmp3.pillBlur, pointerEvents: "none", children: closure_7(selectedTab(7481).BackgroundBlurFill, {}) };
+    const obj8 = { style: tmp3.pillBlur, pointerEvents: "none", children: closure_7(selectedTab(7480).BackgroundBlurFill, {}) };
     items5 = [closure_7(closure_5, obj8), ];
     const obj10 = { style: items6, pointerEvents: "none" };
     items6 = [tmp3.selection, tmp17];
     const obj9 = { style: tmp3.pillRow, children: items7 };
-    items7 = [closure_7(tmp(1655).View, obj10), ];
+    items7 = [closure_7(tmp(1653).View, obj10), ];
     const obj11 = {
       children: items3.map((IconComponent) => {
           const tab = IconComponent.tab;
@@ -189,7 +189,7 @@ function FloatingNav(navigation) {
           return closure_1_7(NavItem, obj, tab);
         })
     };
-    const YouScreenNavIconMeasurer = tmp4(13685).YouScreenNavIconMeasurer;
+    const YouScreenNavIconMeasurer = tmp4(13656).YouScreenNavIconMeasurer;
     items7[1] = closure_7(YouScreenNavIconMeasurer, obj11);
     items5[1] = closure_8(closure_5, obj9);
     items4[1] = closure_8(closure_5, obj7);
@@ -205,8 +205,8 @@ const PX_4 = nativeDefault.space.PX_4;
 const PX_8 = nativeDefault.space.PX_8;
 const PX_48 = nativeDefault.space.PX_48;
 const PX_6 = nativeDefault.space.PX_6;
-const Easing = _mod1655.Easing;
-let closure_13 = Easing.inOut(_mod1655.Easing.cubic);
+const Easing = _mod1653.Easing;
+let closure_13 = Easing.inOut(_mod1653.Easing.cubic);
 let closure_14 = createStyles.createStyles((bottom) => {
   let obj2;
   let obj3;

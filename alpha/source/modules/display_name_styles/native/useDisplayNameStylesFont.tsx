@@ -1,12 +1,12 @@
 // Module ID: 9336
 // Function ID: 9337
 // Name: useDisplayNameStylesFont
-// Dependencies: [1398, 6222, 9337, 2]
+// Dependencies: [1396, 6224, 9337, 2]
 // Exports: useDisplayNameStylesFont
 
 // Module 9336 (useDisplayNameStylesFont)
-import DisplayNameFont from "DisplayNameFont" /* 1398 */;
-import useDisplayNameStylesEnabled from "useDisplayNameStylesEnabled" /* 6222 */;
+import DisplayNameFont from "DisplayNameFont" /* 1396 */;
+import useDisplayNameStylesEnabled from "useDisplayNameStylesEnabled" /* 6224 */;
 import useDisplayNameFontsAvailable from "useDisplayNameFontsAvailable" /* 9337 */;
 import size from "module_2" /* 2 */;
 

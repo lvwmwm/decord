@@ -1,10 +1,10 @@
-// Module ID: 1406
-// Function ID: 1407
+// Module ID: 1404
+// Function ID: 1405
 // Name: FlagUtils
 // Dependencies: [2]
 // Exports: addFlag, hasAnyFlag, hasFlag, removeFlag, removeFlags, setFlag, toggleFlag
 
-// Module 1406 (FlagUtils)
+// Module 1404 (FlagUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/utils/FlagUtils.tsx");

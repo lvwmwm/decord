@@ -1,15 +1,15 @@
-// Module ID: 16656
-// Function ID: 16657
+// Module ID: 16480
+// Function ID: 16481
 // Name: QuestDockPlayableBody
-// Dependencies: [5, 19, 6437, 21, 16618, 16562, 16526, 16533, 9873, 7401, 9839, 9842, 6444, 8311, 6440, 16657, 12128, 9875, 16641, 9862, 16653, 1113, 7472, 10314, 2]
+// Dependencies: [5, 19, 6439, 21, 16441, 16385, 16349, 16356, 9876, 7400, 9841, 9844, 6446, 8310, 6442, 16481, 12070, 9878, 16464, 9864, 16477, 1112, 7471, 10256, 2]
 
-// Module 16656 (QuestDockPlayableBody)
+// Module 16480 (QuestDockPlayableBody)
 import Fragment from "Fragment" /* 21 */;
-import QuestConstants from "QuestConstants" /* 6437 */;
-import QuestTypes from "QuestTypes" /* 6440 */;
-import AdCreativeType from "AdCreativeType" /* 6444 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 8311 */;
-import QuestPlatformUtils from "QuestPlatformUtils" /* 9875 */;
+import QuestConstants from "QuestConstants" /* 6439 */;
+import QuestTypes from "QuestTypes" /* 6442 */;
+import AdCreativeType from "AdCreativeType" /* 6446 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 8310 */;
+import QuestPlatformUtils from "QuestPlatformUtils" /* 9878 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -58,7 +58,7 @@ const memoResult = react.memo(function QuestDockPlayableBody() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -75,21 +75,22 @@ const memoResult = react.memo(function QuestDockPlayableBody() {
           } else {
             let closure_3 = tmp;
             let closure_4 = tmp16;
-            const obj5 = { type: recordPlayableLaunchResult(getQuestImpressionId[11]).AdUserActionType.CLICK_INTERNAL, adCreativeType: recordPlayableLaunchResult(getQuestImpressionId[12]).AdCreativeType.PLAYABLE, adCreativeId: questDockPlayable.id, questContentCTA: recordPlayableLaunchResult(getQuestImpressionId[13]).QuestContentCTA.LAUNCH_MOBILE_ACTIVITY, surfaceId: recordPlayableLaunchResult(getQuestImpressionId[14]).QuestContent.QUEST_BAR_MOBILE, sourceQuestContent: recordPlayableLaunchResult(getQuestImpressionId[14]).QuestContent.QUEST_BAR_MOBILE, impressionId: getQuestImpressionId() };
+            const tmp21 = getQuestImpressionId();
+            const obj5 = { type: recordPlayableLaunchResult(getQuestImpressionId[11]).AdUserActionType.CLICK_INTERNAL, adCreativeType: recordPlayableLaunchResult(getQuestImpressionId[12]).AdCreativeType.PLAYABLE, adCreativeId: questDockPlayable.id, questContentCTA: recordPlayableLaunchResult(getQuestImpressionId[13]).QuestContentCTA.LAUNCH_MOBILE_ACTIVITY, surfaceId: recordPlayableLaunchResult(getQuestImpressionId[14]).QuestContent.QUEST_BAR_MOBILE, sourceQuestContent: recordPlayableLaunchResult(getQuestImpressionId[14]).QuestContent.QUEST_BAR_MOBILE, impressionId: tmp21 };
             const captureAdUserAction = recordPlayableLaunchResult(getQuestImpressionId[10]).captureAdUserAction;
-            const tmp22 = recordPlayableLaunchResult(getQuestImpressionId[10]);
+            const tmp24 = recordPlayableLaunchResult(getQuestImpressionId[10]);
             captureAdUserAction(obj5);
             const obj7 = recordPlayableLaunchResult(getQuestImpressionId[15]);
-            recordPlayableLaunchResult = obj7.recordPlayableLaunch(questDockPlayable);
+            recordPlayableLaunchResult = obj7.recordPlayableLaunch(questDockPlayable, tmp21);
             c0 = recordPlayableLaunchResult;
             constants = 1;
             const obj6 = { applicationId: questDockPlayable.applicationId, analyticsLocations };
             const obj8 = completePlayableLaunch(getQuestImpressionId[16]);
             const launchResult = obj8.launch(obj6);
             setRestingQuestDockMode(constants.COLLAPSED);
-            const tmp48 = recordPlayableLaunchResult(getQuestImpressionId[15]);
-            getQuestImpressionId = tmp48;
-            completePlayableLaunch = tmp48.completePlayableLaunch;
+            const tmp49 = recordPlayableLaunchResult(getQuestImpressionId[15]);
+            getQuestImpressionId = tmp49;
+            completePlayableLaunch = tmp49.completePlayableLaunch;
             c6 = 2;
             c7 = 1;
             const obj9 = { value: launchResult, done: false };
@@ -113,7 +114,7 @@ const memoResult = react.memo(function QuestDockPlayableBody() {
             constants = 0;
           }
           c7 = 3;
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp15) {
         tmp16 = constants;

@@ -1,16 +1,16 @@
-// Module ID: 17403
-// Function ID: 17404
+// Module ID: 17230
+// Function ID: 17231
 // Name: SponsoredContentPreferencesScreen
-// Dependencies: [19, 8593, 1072, 21, 1113, 2188, 11875, 15898, 2]
+// Dependencies: [19, 8592, 1071, 21, 1112, 2186, 11817, 15862, 2]
 // Exports: default
 
-// Module 17403 (SponsoredContentPreferencesScreen)
+// Module 17230 (SponsoredContentPreferencesScreen)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1072 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
-import SettingsConstants from "SettingsConstants" /* 8593 */;
-import SettingBuilders from "SettingBuilders" /* 11875 */;
-import SettingLayoutDefault from "SettingLayout" /* 15898 */;
+import Constants from "Constants" /* 1071 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2186 */;
+import SettingsConstants from "SettingsConstants" /* 8592 */;
+import SettingBuilders from "SettingBuilders" /* 11817 */;
+import SettingLayoutDefault from "SettingLayout" /* 15862 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -34,18 +34,18 @@ export default function SponsoredContentPreferencesScreen() {
   let prop;
   let obj = { settings: items, subLabel: format(cf9mvV, obj2) };
   items = [MobileUserSettings.USE_DATA_FOR_QUESTS_SPONSORED_CONTENT];
-  const intl = items1(1113).intl;
+  const intl = items1(1112).intl;
   format = intl.format;
   obj2 = { helpdeskArticle: obj3.getArticleURL(HelpdeskArticles.QUESTS_PRIVACY_CONTROLS) };
-  cf9mvV = items1(1113).t.cf9mvV;
+  cf9mvV = items1(1112).t.cf9mvV;
   items1 = [obj, , ];
   obj3 = HelpdeskUtilsDefault;
   const obj4 = { settings: items2, subLabel: format2(prop, obj5) };
   items2 = [MobileUserSettings.USE_DATA_FOR_QUESTS_3P_SPONSORED_CONTENT];
-  const intl2 = items1(1113).intl;
+  const intl2 = items1(1112).intl;
   format2 = intl2.format;
   obj5 = { helpdeskArticle: obj6.getArticleURL(HelpdeskArticles.QUESTS_PRIVACY_CONTROLS) };
-  prop = items1(1113).t["2QFDU/"];
+  prop = items1(1112).t["2QFDU/"];
   items1[1] = obj4;
   const obj7 = { settings: items3 };
   items3 = [MobileUserSettings.MANAGE_SPONSORED_CONTENT];

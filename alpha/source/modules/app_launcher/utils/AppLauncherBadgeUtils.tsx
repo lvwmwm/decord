@@ -1,10 +1,10 @@
-// Module ID: 5447
-// Function ID: 5448
+// Module ID: 5449
+// Function ID: 5450
 // Name: AppLauncherBadgeUtils
 // Dependencies: [2]
 // Exports: getNewestBadgeableVersion
 
-// Module 5447 (AppLauncherBadgeUtils)
+// Module 5449 (AppLauncherBadgeUtils)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/app_launcher/utils/AppLauncherBadgeUtils.tsx");

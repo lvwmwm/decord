@@ -1,14 +1,14 @@
-// Module ID: 14908
-// Function ID: 14909
+// Module ID: 14872
+// Function ID: 14873
 // Name: LocalAppDetectionUtils
-// Dependencies: [5, 6306, 1072, 14907, 1360, 6329, 1256, 572, 2]
+// Dependencies: [5, 6308, 1071, 14871, 1358, 6331, 1255, 572, 2]
 // Exports: detectLocalApps
 
-// Module 14908 (LocalAppDetectionUtils)
-import LocalAppDetectionTypes from "LocalAppDetectionTypes" /* 14907 */;
+// Module 14872 (LocalAppDetectionUtils)
+import LocalAppDetectionTypes from "LocalAppDetectionTypes" /* 14871 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConsentStore from "ConsentStore" /* 6306 */;
-import Constants from "Constants" /* 1072 */;
+import ConsentStore from "ConsentStore" /* 6308 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 let closure_1, closure_2, result2, scheme;
@@ -67,7 +67,7 @@ let obj = function _detectLocalApps() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         while (true) {
@@ -114,7 +114,7 @@ let obj = function _detectLocalApps() {
               let obj7 = { type: "LOCAL_APP_DETECTION_COMPLETE", result };
               let dispatchResult = obj6.dispatch(obj7);
               c8 = 3;
-              return { value: "HermesInternal", done: "+60" };
+              return { value: "HermesInternal", done: null };
             }
           } else if (1 === tmp5) {
             c6 = 0;

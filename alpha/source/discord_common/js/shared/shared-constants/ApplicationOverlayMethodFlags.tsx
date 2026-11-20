@@ -1,9 +1,9 @@
-// Module ID: 2150
-// Function ID: 2151
+// Module ID: 2148
+// Function ID: 2149
 // Name: ApplicationOverlayMethodFlags
 // Dependencies: [2]
 
-// Module 2150 (ApplicationOverlayMethodFlags)
+// Module 2148 (ApplicationOverlayMethodFlags)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/ApplicationOverlayMethodFlags.tsx");

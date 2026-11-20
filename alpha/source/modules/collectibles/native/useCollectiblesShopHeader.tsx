@@ -1,27 +1,27 @@
-// Module ID: 17374
-// Function ID: 17375
+// Module ID: 17201
+// Function ID: 17202
 // Name: useCollectiblesShopHeader
-// Dependencies: [19, 17, 1388, 1074, 1072, 6437, 7950, 21, 4792, 575, 12917, 5383, 1113, 504, 9308, 9828, 16211, 7955, 7420, 7380, 1256, 5006, 9833, 6440, 6308, 7948, 9313, 7472, 8856, 8539, 17375, 1502, 2]
+// Dependencies: [19, 17, 1386, 1073, 1071, 6439, 7949, 21, 4794, 575, 12887, 5385, 1112, 504, 9308, 9830, 16175, 7954, 7419, 7379, 1255, 5008, 9835, 6442, 6310, 7947, 9313, 7471, 8856, 8538, 17202, 1500, 2]
 // Exports: default
 
-// Module 17374 (useCollectiblesShopHeader)
+// Module 17201 (useCollectiblesShopHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
-import intl4 from "intl" /* 1113 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6308 */;
-import QuestConstants from "QuestConstants" /* 6437 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7420 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7948 */;
-import Constants2 from "Constants" /* 7950 */;
-import ShopIcon from "ShopIcon" /* 12917 */;
+import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1073 */;
+import intl4 from "intl" /* 1112 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6310 */;
+import QuestConstants from "QuestConstants" /* 6439 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7419 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7947 */;
+import Constants2 from "Constants" /* 7949 */;
+import ShopIcon from "ShopIcon" /* 12887 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1388 */;
-import Constants from "Constants" /* 1072 */;
+import UserStore from "UserStore" /* 1386 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -33,7 +33,7 @@ let obj2;
 let obj3;
 let tmp;
 let unpackModuleId;
-const CheckmarkSmallIcon3 = tmp(7380);
+const CheckmarkSmallIcon3 = tmp(7379);
 function CollectiblesShopHeaderTitle(currentScreen) {
   let items;
   let stringResult;
@@ -47,11 +47,11 @@ function CollectiblesShopHeaderTitle(currentScreen) {
   const tmp3 = View;
   const tmp4 = unpackModuleId;
   if (currentScreen === constants.ORBS) {
-    const intl2 = tmp5(1113).intl;
-    stringResult = intl2.string(tmp5(1113).t.ElYQFS);
+    const intl2 = tmp5(1112).intl;
+    stringResult = intl2.string(tmp5(1112).t.ElYQFS);
   } else {
-    const intl = tmp5(1113).intl;
-    stringResult = intl.string(tmp5(1113).t.pWG4ze);
+    const intl = tmp5(1112).intl;
+    stringResult = intl.string(tmp5(1112).t.pWG4ze);
   }
   items[1] = tmp4(Heading, obj2);
   return tmp2(tmp3, obj);
@@ -254,7 +254,7 @@ export default function useCollectiblesShopHeader() {
     obj = {};
   }
   const currentScreen = obj.currentScreen;
-  const obj2 = currentScreen(1502);
+  const obj2 = currentScreen(1500);
   navigation = obj2.useNavigation();
   const items = [navigation, currentScreen];
   const layoutEffect = react.useLayoutEffect(() => {

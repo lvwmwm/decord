@@ -1,14 +1,14 @@
-// Module ID: 18548
-// Function ID: 18549
+// Module ID: 18372
+// Function ID: 18373
 // Name: StopIcon
-// Dependencies: [19, 21, 575, 5478, 18549, 2]
+// Dependencies: [19, 21, 575, 5480, 18373, 2]
 // Exports: StopIcon
 
-// Module 18548 (StopIcon)
+// Module 18372 (StopIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5478 */;
-import AssetRegistry from "AssetRegistry" /* 18549 */;
+import BaseIconImage2 from "BaseIconImage" /* 5480 */;
+import AssetRegistry from "AssetRegistry" /* 18373 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

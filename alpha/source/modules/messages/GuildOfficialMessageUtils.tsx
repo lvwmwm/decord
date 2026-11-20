@@ -1,21 +1,21 @@
 // Module ID: 6772
 // Function ID: 6773
 // Name: GuildOfficialMessageUtils
-// Dependencies: [4663, 4724, 4797, 1072, 1090, 671, 4789, 4799, 6773, 504, 6774, 6545, 2]
+// Dependencies: [4665, 4726, 4799, 1071, 1089, 671, 4791, 4801, 6773, 504, 6774, 6547, 2]
 // Exports: canManageGuildOfficialMessages, canSendGuildOfficialMessages, getAccessibleGuildOfficialTextColor, isGuildOfficialMessagesEnabled, showGuildOfficialMessageGradient, showGuildOfficialMessageTextColor, useCanToggleGuildOfficialMessages, useIsGuildOfficialMessagesEnabled
 
 // Module 6772 (GuildOfficialMessageUtils)
 import _modDef671 from "module_671" /* 671 */;
-import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
-import ColorUtils from "ColorUtils" /* 4789 */;
-import MessageConstants from "MessageConstants" /* 4797 */;
-import shared from "shared" /* 4799 */;
-import isSystemMessageDefault from "isSystemMessage" /* 6545 */;
+import utils_ColorUtils from "utils/ColorUtils" /* 1089 */;
+import ColorUtils from "ColorUtils" /* 4791 */;
+import MessageConstants from "MessageConstants" /* 4799 */;
+import shared from "shared" /* 4801 */;
+import isSystemMessageDefault from "isSystemMessage" /* 6547 */;
 import GuildOfficialMessagesExperimentDefault from "GuildOfficialMessagesExperiment" /* 6773 */;
 import ThreadHooks from "ThreadHooks" /* 6774 */;
-import GuildStore from "GuildStore" /* 4663 */;
-import PermissionStore from "PermissionStore" /* 4724 */;
-import Constants from "Constants" /* 1072 */;
+import GuildStore from "GuildStore" /* 4665 */;
+import PermissionStore from "PermissionStore" /* 4726 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -64,13 +64,13 @@ let closure_5 = MessageConstants.GUILD_OFFICIAL_HIGHLIGHT_ALPHA;
 ({ ChannelTypes: metroRequire, GuildFeatures: metroImportDefault, MessageFlags: metroImportAll, Permissions: c9 } = Constants);
 const result = size.fileFinishedImporting("modules/messages/GuildOfficialMessageUtils.tsx");
 
-export function getAccessibleGuildOfficialTextColor(officialMessageColor, semanticColor, saturation, arg3) {
+export function getAccessibleGuildOfficialTextColor(officialMessageColor, semanticColor, saturation, c4) {
   let num = saturation;
   if (saturation === undefined) {
     num = 1;
   }
-  let tmp = arg3;
-  if (arg3 === undefined) {
+  let tmp = c4;
+  if (c4 === undefined) {
     tmp = closure_5;
   }
   const obj = utils_ColorUtils;

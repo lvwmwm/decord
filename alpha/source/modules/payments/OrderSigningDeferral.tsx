@@ -1,11 +1,11 @@
 // Module ID: 9450
 // Function ID: 9451
 // Name: OrderSigningDeferral
-// Dependencies: [5, 5509, 9451, 9452, 2]
+// Dependencies: [5, 5511, 9451, 9452, 2]
 // Exports: getPaymentRedirectContext, getSigningDeferralDeadline, getSigningDeferralMerchantAccountId, getStripeNextActionContext, isAwaitingStripeNextAction, isSigningDeferralExpired, performSigningDeferralAction
 
 // Module 9450 (OrderSigningDeferral)
-import PaymentConstants from "PaymentConstants" /* 5509 */;
+import PaymentConstants from "PaymentConstants" /* 5511 */;
 import Stripe3DSChallenge from "Stripe3DSChallenge" /* 9451 */;
 import StripeNextAction from "StripeNextAction" /* 9452 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -44,7 +44,7 @@ let obj = function _performSigningDeferralAction() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -109,7 +109,7 @@ let obj = function _performSigningDeferralAction() {
           return obj;
         }
         c1 = 3;
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp16) {
         c1 = 3;
         throw tmp16;

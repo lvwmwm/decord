@@ -1,21 +1,21 @@
-// Module ID: 8765
-// Function ID: 8766
+// Module ID: 8703
+// Function ID: 8704
 // Name: PlatformMarkupRules
-// Dependencies: [17, 7517, 8766, 2152, 1113, 4738, 2070, 8760, 5824, 1414, 5825, 5837, 2]
+// Dependencies: [17, 7516, 8704, 2150, 1112, 4740, 2068, 8698, 5826, 1412, 5827, 5839, 2]
 // Exports: decorateWithIcon, hydrateGameMention
 
-// Module 8765 (PlatformMarkupRules)
+// Module 8703 (PlatformMarkupRules)
 import react_native from "react-native" /* 17 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import _modDef2070 from "module_2070" /* 2070 */;
-import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 2152 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4738 */;
-import MarkupTextRuleDefault from "MarkupTextRule" /* 5824 */;
-import MarkupChannelMentionRuleDefault from "MarkupChannelMentionRule" /* 5825 */;
-import MarkupAttachmentLinkRuleDefault from "MarkupAttachmentLinkRule" /* 5837 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 7517 */;
-import MarkupInvisibleUnicode from "MarkupInvisibleUnicode" /* 8760 */;
-import useGameMentionData from "useGameMentionData" /* 8766 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
+import _modDef2068 from "module_2068" /* 2068 */;
+import getGameMediaRefURLDefault from "getGameMediaRefURL" /* 2150 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4740 */;
+import MarkupTextRuleDefault from "MarkupTextRule" /* 5826 */;
+import MarkupChannelMentionRuleDefault from "MarkupChannelMentionRule" /* 5827 */;
+import MarkupAttachmentLinkRuleDefault from "MarkupAttachmentLinkRule" /* 5839 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 7516 */;
+import MarkupInvisibleUnicode from "MarkupInvisibleUnicode" /* 8698 */;
+import useGameMentionData from "useGameMentionData" /* 8704 */;
 import size from "module_2" /* 2 */;
 
 let resolveAssetSource;
@@ -23,7 +23,7 @@ let resolveAssetSource;
 let obj2;
 let obj3;
 let obj4;
-const f95301 = (type) => {
+const f93586 = (type) => {
   let uri;
   let tmp = type;
   if ("channel" === type.type) {
@@ -114,7 +114,7 @@ let obj = {
             const items = [content];
             arr2 = items;
           }
-          mapped = arr2.map(f95301);
+          mapped = arr2.map(f93586);
         }
       }
       const inContent = parsed.inContent;
@@ -128,7 +128,7 @@ let obj = {
             const items1 = [inContent];
             arr4 = items1;
           }
-          mapped1 = arr4.map(f95301);
+          mapped1 = arr4.map(f93586);
         }
       }
       return obj;
@@ -150,8 +150,8 @@ let obj = {
         gameName = gameMentionData.gameName;
       }
       if (gameName == null) {
-        const intl = tmp2(1113).intl;
-        gameName = intl.string(tmp2(1113).t["11pdXZ"]);
+        const intl = tmp2(1112).intl;
+        gameName = intl.string(tmp2(1112).t["11pdXZ"]);
       }
       return obj2;
     }
@@ -175,7 +175,7 @@ let obj = {
             const items = [content];
             arr2 = items;
           }
-          mapped = arr2.map(f95301);
+          mapped = arr2.map(f93586);
         }
       }
       const inContent = parsed.inContent;
@@ -189,7 +189,7 @@ let obj = {
             const items1 = [inContent];
             arr4 = items1;
           }
-          mapped1 = arr4.map(f95301);
+          mapped1 = arr4.map(f93586);
         }
       }
       return obj;
@@ -214,7 +214,7 @@ let obj = {
             const items = [content];
             arr2 = items;
           }
-          mapped = arr2.map(f95301);
+          mapped = arr2.map(f93586);
         }
       }
       const inContent = parsed.inContent;
@@ -228,7 +228,7 @@ let obj = {
             const items1 = [inContent];
             arr4 = items1;
           }
-          mapped1 = arr4.map(f95301);
+          mapped1 = arr4.map(f93586);
         }
       }
       return obj;
@@ -252,7 +252,7 @@ obj2 = {
     return { type: "text", content: "" };
   }
 };
-let merged = Object.assign(_modDef2070.defaultRules.escape);
+let merged = Object.assign(_modDef2068.defaultRules.escape);
 obj3 = {
   order: MarkupTextRuleDefault.order,
   requiredFirstCharacters: ["<"],
@@ -306,7 +306,7 @@ export function decorateWithIcon(content) {
         const items = [content];
         arr2 = items;
       }
-      mapped = arr2.map(f95301);
+      mapped = arr2.map(f93586);
     }
   }
   return mapped;
@@ -326,8 +326,8 @@ export function hydrateGameMention(gameId, channelId) {
     gameName = gameMentionData.gameName;
   }
   if (gameName == null) {
-    const intl = tmp(1113).intl;
-    gameName = intl.string(tmp(1113).t["11pdXZ"]);
+    const intl = tmp(1112).intl;
+    gameName = intl.string(tmp(1112).t["11pdXZ"]);
   }
   return obj2;
 }

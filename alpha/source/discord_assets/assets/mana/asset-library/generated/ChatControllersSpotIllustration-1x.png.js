@@ -1,8 +1,8 @@
-// Module ID: 17838
-// Function ID: 17839
+// Module ID: 17665
+// Function ID: 17666
 // Dependencies: [2]
 
-// Module 17838
+// Module 17665
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ChatControllersSpotIllustration-1x.png.js");

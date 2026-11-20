@@ -1,36 +1,36 @@
-// Module ID: 11102
-// Function ID: 11103
+// Module ID: 11044
+// Function ID: 11045
 // Name: MediaPreviewRightAccessory
-// Dependencies: [19, 17, 4793, 11052, 21, 4792, 575, 7089, 5383, 5356, 1380, 5360, 7563, 7118, 563, 8329, 10007, 11083, 9932, 8104, 1495, 5479, 8105, 8111, 9134, 11103, 1187, 8903, 2]
+// Dependencies: [19, 17, 4795, 10994, 21, 4794, 575, 7088, 5385, 5358, 1378, 5362, 7562, 7117, 563, 8328, 10010, 11025, 9935, 8103, 1493, 5481, 8104, 8110, 9134, 11045, 1186, 8903, 2]
 // Exports: MediaPreviewRightAccessory
 
-// Module 11102 (MediaPreviewRightAccessory)
+// Module 11044 (MediaPreviewRightAccessory)
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 1187 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
-import utils_ImageUtils from "utils/ImageUtils" /* 1495 */;
-import useToken from "useToken" /* 5356 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import FastImageDefault from "FastImage" /* 5479 */;
-import PlayIcon from "PlayIcon" /* 7089 */;
-import EyeIcon from "EyeIcon" /* 7118 */;
-import MediaSourceUtil from "MediaSourceUtil" /* 8104 */;
-import ObscuredMediaUtils from "ObscuredMediaUtils" /* 8105 */;
-import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 8111 */;
-import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8329 */;
+import native from "native" /* 1186 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
+import utils_ImageUtils from "utils/ImageUtils" /* 1493 */;
+import useToken from "useToken" /* 5358 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import FastImageDefault from "FastImage" /* 5481 */;
+import PlayIcon from "PlayIcon" /* 7088 */;
+import EyeIcon from "EyeIcon" /* 7117 */;
+import MediaSourceUtil from "MediaSourceUtil" /* 8103 */;
+import ObscuredMediaUtils from "ObscuredMediaUtils" /* 8104 */;
+import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 8110 */;
+import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8328 */;
 import ClipView from "ClipView" /* 8903 */;
 import common_VideoDefault from "common/Video" /* 9134 */;
-import ExplicitMediaUtils from "ExplicitMediaUtils" /* 9932 */;
-import useContentHarmTypes from "useContentHarmTypes" /* 10007 */;
-import InAppNotificationConstants from "InAppNotificationConstants" /* 11052 */;
-import usePreviewableMedia from "usePreviewableMedia" /* 11083 */;
-import StickerDefault from "Sticker" /* 11103 */;
+import ExplicitMediaUtils from "ExplicitMediaUtils" /* 9935 */;
+import useContentHarmTypes from "useContentHarmTypes" /* 10010 */;
+import InAppNotificationConstants from "InAppNotificationConstants" /* 10994 */;
+import usePreviewableMedia from "usePreviewableMedia" /* 11025 */;
+import StickerDefault from "Sticker" /* 11045 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4793 */;
+import AccessibilityStore from "AccessibilityStore" /* 4795 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 const ClipViewDefault = ClipView;
@@ -48,7 +48,7 @@ let obj8;
 let size;
 let size1;
 let tmp4;
-const VisualEffectViewDefault = tmp4(5360);
+const VisualEffectViewDefault = tmp4(5362);
 function VideoBadge() {
   let obj2;
   const tmp = closure_11();
@@ -97,7 +97,7 @@ function ObscuredMediaOverlay(isSpoiler) {
   items[2] = tmp11;
   const obj4 = { style: tmp.spoilerIconContainer, children: tmp14Result };
   if (isObscured) {
-    tmp14Result = tmp14(tmp2(7563).ImageWarningIcon, { size: "sm", color: "white" });
+    tmp14Result = tmp14(tmp2(7562).ImageWarningIcon, { size: "sm", color: "white" });
   } else {
     const obj5 = { style: tmp.spoilerPill, children: metroImportAll(EyeIcon.EyeIcon, { size: "sm", color: "white" }) };
     tmp14Result = tmp14(tmp15, obj5);

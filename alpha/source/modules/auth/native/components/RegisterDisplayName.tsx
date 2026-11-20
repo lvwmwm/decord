@@ -1,20 +1,20 @@
-// Module ID: 17519
-// Function ID: 17520
+// Module ID: 17346
+// Function ID: 17347
 // Name: RegisterDisplayName
-// Dependencies: [5, 32, 19, 17, 15919, 17497, 17498, 21, 4792, 575, 1113, 7253, 1502, 17494, 17515, 17496, 1092, 17514, 15198, 15920, 6910, 7266, 7275, 7102, 5390, 6957, 2]
+// Dependencies: [5, 32, 19, 17, 15883, 17324, 17325, 21, 4794, 575, 1112, 7252, 1500, 17321, 17342, 17323, 1091, 17341, 15162, 15884, 6909, 7265, 7274, 7101, 5392, 6956, 2]
 // Exports: default
 
-// Module 17519 (RegisterDisplayName)
+// Module 17346 (RegisterDisplayName)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UniqueUsernamesStore from "UniqueUsernamesStore" /* 15919 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 17497 */;
-import RegistrationConstants from "RegistrationConstants" /* 17498 */;
+import UniqueUsernamesStore from "UniqueUsernamesStore" /* 15883 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 17324 */;
+import RegistrationConstants from "RegistrationConstants" /* 17325 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -123,7 +123,7 @@ export default function RegisterDisplayName() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -155,7 +155,7 @@ export default function RegisterDisplayName() {
               const obj4 = globalName(str[15]);
               const result = obj4.handleNextOrSubmitRegistration(globalName(str[16]).AuthStates.REGISTER_DISPLAY_NAME, globalName, closure_1_4);
               c3 = 3;
-              return { value: "HermesInternal", done: "+60" };
+              return { value: "HermesInternal", done: null };
             }
           } else if (arg0 === 1) {
             c3 = 3;

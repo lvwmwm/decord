@@ -1,13 +1,13 @@
-// Module ID: 8047
-// Function ID: 8048
+// Module ID: 8046
+// Function ID: 8047
 // Name: useNameplate
-// Dependencies: [19, 4704, 504, 2111, 2]
+// Dependencies: [19, 4706, 504, 2109, 2]
 // Exports: useNameplate
 
-// Module 8047 (useNameplate)
-import utils from "utils" /* 2111 */;
+// Module 8046 (useNameplate)
+import utils from "utils" /* 2109 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 4704 */;
+import GuildMemberStore from "GuildMemberStore" /* 4706 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/collectibles/nameplates/hooks/useNameplate.tsx");

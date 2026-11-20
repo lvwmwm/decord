@@ -1,10 +1,10 @@
-// Module ID: 1353
-// Function ID: 1354
+// Module ID: 1351
+// Function ID: 1352
 // Name: getOSVersionProperties
 // Dependencies: [2]
 // Exports: getDesktopOSVersionProperties, getNativeOSVersionProperties
 
-// Module 1353 (getOSVersionProperties)
+// Module 1351 (getOSVersionProperties)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/analytics-utils/getOSVersionProperties.tsx");

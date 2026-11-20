@@ -1,24 +1,24 @@
-// Module ID: 17422
-// Function ID: 17423
+// Module ID: 17249
+// Function ID: 17250
 // Name: SafetyGuildSettingMessageRequests
-// Dependencies: [4663, 17412, 8593, 11876, 17423, 16031, 4617, 5739, 1113, 5811, 17424, 7674, 6293, 7296, 17415, 11875, 2]
+// Dependencies: [4665, 17239, 8592, 11818, 17250, 15995, 4619, 5741, 1112, 5813, 17251, 7673, 6295, 7295, 17242, 11817, 2]
 
-// Module 17422 (SafetyGuildSettingMessageRequests)
-import intl5 from "intl" /* 1113 */;
-import UserSettings from "UserSettings" /* 4617 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5739 */;
-import AlertDefault from "Alert" /* 5811 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7296 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7674 */;
-import SettingsConstants from "SettingsConstants" /* 8593 */;
-import SettingRendererConstants from "SettingRendererConstants" /* 11876 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 16031 */;
-import DefultGuildsRestrictedSetting from "DefultGuildsRestrictedSetting" /* 17415 */;
-import useShouldDisableMessageRequestSettings from "useShouldDisableMessageRequestSettings" /* 17423 */;
-import DefaultDMSettingsExperiment from "DefaultDMSettingsExperiment" /* 17424 */;
-import GuildStore from "GuildStore" /* 4663 */;
-import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 17412 */;
-import SettingBuilders from "SettingBuilders" /* 11875 */;
+// Module 17249 (SafetyGuildSettingMessageRequests)
+import intl5 from "intl" /* 1112 */;
+import UserSettings from "UserSettings" /* 4619 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5741 */;
+import AlertDefault from "Alert" /* 5813 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7295 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7673 */;
+import SettingsConstants from "SettingsConstants" /* 8592 */;
+import SettingRendererConstants from "SettingRendererConstants" /* 11818 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 15995 */;
+import DefultGuildsRestrictedSetting from "DefultGuildsRestrictedSetting" /* 17242 */;
+import useShouldDisableMessageRequestSettings from "useShouldDisableMessageRequestSettings" /* 17250 */;
+import DefaultDMSettingsExperiment from "DefaultDMSettingsExperiment" /* 17251 */;
+import GuildStore from "GuildStore" /* 4665 */;
+import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 17239 */;
+import SettingBuilders from "SettingBuilders" /* 11817 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -110,9 +110,9 @@ let obj = {
     const shouldDisableMessageRequestSettings = tmpResult.useShouldDisableMessageRequestSettings();
     const tmpResult2 = useParentalControlSettings;
     const isParentallyControlled1 = tmpResult2.useIsParentallyControlled();
-    const MessageRequestRestrictedDefault = tmp(4617).MessageRequestRestrictedDefault;
+    const MessageRequestRestrictedDefault = tmp(4619).MessageRequestRestrictedDefault;
     const tmp12 = !MessageRequestRestrictedDefault.useSetting();
-    const MessageRequestRestrictedGuildIds = tmp(4617).MessageRequestRestrictedGuildIds;
+    const MessageRequestRestrictedGuildIds = tmp(4619).MessageRequestRestrictedGuildIds;
     const setting1 = MessageRequestRestrictedGuildIds.useSetting();
     let tmp13 = !setting1.includes(selectedGuildId);
     let tmp14 = shouldDisableMessageRequestSettings;
@@ -168,7 +168,7 @@ let obj = {
       const obj = DefaultDMSettingsExperiment;
       const tmp2 = require;
       if (obj.shouldAgeVerifyForDMDefaultOff()) {
-        const obj2 = { entryPoint: tmp2(6293).AgeVerificationModalEntryPoint.MESSAGE_REQUESTS_SETTINGS };
+        const obj2 = { entryPoint: tmp2(6295).AgeVerificationModalEntryPoint.MESSAGE_REQUESTS_SETTINGS };
         const showAgeVerificationGetStartedModal = AgeVerificationActionCreatorsDefault.showAgeVerificationGetStartedModal;
         AgeVerificationActionCreatorsDefault;
         const result = showAgeVerificationGetStartedModal(obj2);
@@ -186,7 +186,7 @@ let obj = {
       } else {
         sanitizedMessageRequestRestrictedGuilds.add(tmp7);
       }
-      const MessageRequestRestrictedGuildIds = tmp8(4617).MessageRequestRestrictedGuildIds;
+      const MessageRequestRestrictedGuildIds = tmp8(4619).MessageRequestRestrictedGuildIds;
       const _Array = Array;
       MessageRequestRestrictedGuildIds.updateSetting(Array.from(sanitizedMessageRequestRestrictedGuilds));
     }

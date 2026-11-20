@@ -1,17 +1,17 @@
-// Module ID: 14323
-// Function ID: 14324
+// Module ID: 14291
+// Function ID: 14292
 // Name: MediaSlider
-// Dependencies: [32, 19, 17, 21, 4792, 1380, 10522, 5371, 12, 671, 8373, 1113, 14324, 6911, 7089, 11778, 5383, 10908, 14325, 575, 2]
+// Dependencies: [32, 19, 17, 21, 4794, 1378, 10464, 5373, 12, 671, 8372, 1112, 14292, 6910, 7088, 11720, 5385, 10850, 14293, 575, 2]
 // Exports: default
 
-// Module 14323 (MediaSlider)
+// Module 14291 (MediaSlider)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1380 */;
+import createStyles_mod from "createStyles" /* 4794 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1378 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;

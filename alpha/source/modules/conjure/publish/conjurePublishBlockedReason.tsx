@@ -1,12 +1,12 @@
-// Module ID: 14659
-// Function ID: 14660
+// Module ID: 12186
+// Function ID: 12187
 // Name: conjurePublishBlockedReason
-// Dependencies: [1113, 4089, 2]
+// Dependencies: [1112, 4091, 2]
 // Exports: getConjurePublishBlockedCopy
 
-// Module 14659 (conjurePublishBlockedReason)
-import intl13 from "intl" /* 1113 */;
-import _modDef4089 from "module_4089" /* 4089 */;
+// Module 12186 (conjurePublishBlockedReason)
+import intl13 from "intl" /* 1112 */;
+import _modDef4091 from "module_4091" /* 4091 */;
 import size from "module_2" /* 2 */;
 
 const ConjurePublishBlockedReason = { PUBLISH_APPROVAL_REQUIRED: "publish-approval-required", NO_PREVIEW: "no-preview", MISSING_MANAGE_SERVER: "missing-manage-server", MISSING_MANAGE_CHANNELS: "missing-manage-channels" };
@@ -30,14 +30,14 @@ export function getConjurePublishBlockedCopy(reason, message) {
   let str;
   let tmp4;
   if (obj.PUBLISH_APPROVAL_REQUIRED === reason) {
-    const obj2 = { title: intl9.string(_modDef4089["5qiUbF"]), body: intl10.string(_modDef4089["8kdvyn"]), action: intl11.string(_modDef4089.z25acw), cancel: intl12.string(intl13.t["ETE/oC"]) };
+    const obj2 = { title: intl9.string(_modDef4091["5qiUbF"]), body: intl10.string(_modDef4091["8kdvyn"]), action: intl11.string(_modDef4091.z25acw), cancel: intl12.string(intl13.t["ETE/oC"]) };
     intl9 = intl13.intl;
     intl10 = intl13.intl;
     intl11 = intl13.intl;
     intl12 = intl13.intl;
     return obj2;
   } else if (obj.NO_PREVIEW === reason) {
-    const obj3 = { title: intl6.string(_modDef4089.ZNGLFE), body: intl7.string(_modDef4089.ffxKGK), action: intl8.string(_modDef4089["/omTNx"]) };
+    const obj3 = { title: intl6.string(_modDef4091.ZNGLFE), body: intl7.string(_modDef4091.ffxKGK), action: intl8.string(_modDef4091["/omTNx"]) };
     intl6 = intl13.intl;
     intl7 = intl13.intl;
     intl8 = intl13.intl;
@@ -45,23 +45,23 @@ export function getConjurePublishBlockedCopy(reason, message) {
   } else {
     let str2 = message;
     if (obj.MISSING_MANAGE_SERVER === reason) {
-      const obj4 = { title: intl4.string(_modDef4089.qpffbI), body: str2, action: intl5.string(intl13.t.BddRzS) };
+      const obj4 = { title: intl4.string(_modDef4091.qpffbI), body: str2, action: intl5.string(intl13.t.BddRzS) };
       intl4 = intl13.intl;
       if (str2 == null) {
         str2 = "";
       }
-      intl5 = tmp6(1113).intl;
+      intl5 = tmp6(1112).intl;
       return obj4;
     } else if (obj.MISSING_MANAGE_CHANNELS === reason) {
-      obj = { title: intl.string(_modDef4089.qpffbI), body: str, action: intl2.string(tmp4(4089).dVtQRH), cancel: intl3.string(intl13.t["ETE/oC"]) };
+      obj = { title: intl.string(_modDef4091.qpffbI), body: str, action: intl2.string(tmp4(4091).dVtQRH), cancel: intl3.string(intl13.t["ETE/oC"]) };
       intl = intl13.intl;
       str = str2;
       tmp4 = importDefault;
       if (str2 == null) {
         str = "";
       }
-      intl2 = tmp2(1113).intl;
-      intl3 = tmp2(1113).intl;
+      intl2 = tmp2(1112).intl;
+      intl3 = tmp2(1112).intl;
       return obj;
     }
   }

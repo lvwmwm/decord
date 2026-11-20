@@ -1,18 +1,18 @@
-// Module ID: 16572
-// Function ID: 16573
+// Module ID: 16395
+// Function ID: 16396
 // Name: QuestProgressIndicator
-// Dependencies: [19, 17, 4793, 21, 1655, 7746, 4792, 575, 504, 5002, 6911, 1113, 5377, 16495, 13659, 2]
+// Dependencies: [19, 17, 4795, 21, 1653, 7745, 4794, 575, 504, 5004, 6910, 1112, 5379, 16317, 13630, 2]
 
-// Module 16572 (QuestProgressIndicator)
+// Module 16395 (QuestProgressIndicator)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import timing_timing from "timing/timing" /* 5002 */;
-import inlineStyles from "inlineStyles" /* 7746 */;
+import timing_timing from "timing/timing" /* 5004 */;
+import inlineStyles from "inlineStyles" /* 7745 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4793 */;
+import AccessibilityStore from "AccessibilityStore" /* 4795 */;
 import Fragment from "Fragment" /* 21 */;
-import module_1655 from "module_1655" /* 1655 */;
-import createStyles from "createStyles" /* 4792 */;
+import module_1653 from "module_1653" /* 1653 */;
+import createStyles from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let set;
@@ -28,7 +28,7 @@ react = react_mod;
 let View = react_native.View;
 ({ jsx: c9, jsxs: c10 } = Fragment);
 let closure_11 = ["#666777", "#535564"];
-let closure_12 = module_1655.createAnimatedComponent(inlineStyles.Circle);
+let closure_12 = module_1653.createAnimatedComponent(inlineStyles.Circle);
 const QUEST_PROGRESS_DIAMETER_BY_SIZE = { "x-sm": 40, sm: 64, md: 70, "md-lg": 100, lg: 128 };
 let closure_14 = createStyles.createStyles((arg0) => {
   let items;

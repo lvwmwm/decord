@@ -1,21 +1,21 @@
-// Module ID: 18221
-// Function ID: 18222
+// Module ID: 18048
+// Function ID: 18049
 // Name: StandaloneChannelScreen
-// Dependencies: [19, 17, 4641, 8443, 1072, 4648, 21, 4792, 575, 1630, 8451, 504, 4666, 12372, 1113, 4968, 8539, 8444, 5370, 11788, 14288, 8454, 18222, 1503, 11873, 5826, 6562, 5001, 4971, 11816, 6535, 8459, 1187, 9539, 18227, 13622, 18244, 18261, 18279, 18740, 18744, 11679, 18756, 18757, 12728, 2]
+// Dependencies: [19, 17, 4643, 8442, 1071, 4650, 21, 4794, 575, 1628, 8450, 504, 4668, 12342, 1112, 4970, 8538, 8443, 5372, 11730, 14256, 8453, 18049, 1501, 11815, 5828, 6564, 5003, 4973, 11758, 6537, 8458, 1186, 9539, 18054, 13592, 18071, 18088, 18106, 18564, 18568, 11621, 18580, 18581, 12698, 2]
 
-// Module 18221 (StandaloneChannelScreen)
+// Module 18048 (StandaloneChannelScreen)
 import nativeDefault from "native" /* 575 */;
-import ChannelConstants from "ChannelConstants" /* 4648 */;
-import FavoritesUtils from "FavoritesUtils" /* 4666 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4968 */;
-import PressableNavigatorBackIcon2 from "PressableNavigatorBackIcon" /* 8444 */;
+import ChannelConstants from "ChannelConstants" /* 4650 */;
+import FavoritesUtils from "FavoritesUtils" /* 4668 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4970 */;
+import PressableNavigatorBackIcon2 from "PressableNavigatorBackIcon" /* 8443 */;
 import react_mod from "react" /* 19 */;
 import react_native_mod from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import react_native_mod2 from "react-native" /* 8443 */;
-import Constants from "Constants" /* 1072 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import react_native_mod2 from "react-native" /* 8442 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let constants, navigation;
@@ -220,10 +220,11 @@ const memoResult = react.memo(function StandaloneChannelScreen(frame) {
   let obj29;
   let screenIndex;
   let showCreateThread;
+  let subRouteId;
   let tmp40;
-  let tmp54;
+  let tmp55;
   ({ guildId, channelId } = frame);
-  ({ isNavigationTTIVisible, isNavigationScreen } = frame);
+  ({ subRouteId, isNavigationTTIVisible, isNavigationScreen } = frame);
   frame = frame.frame;
   ({ showCreateThread, screenIndex } = frame);
   let closure_5;
@@ -315,13 +316,13 @@ const memoResult = react.memo(function StandaloneChannelScreen(frame) {
             const obj4 = { style: memo, children: items4 };
             const obj5 = { channelId, frame, guildId, isNavigationScreen, screenIndex, showCreateThread, isBackEnabled: tmp15, onBackPress: callback, measureNavigationTTI: false };
             items4 = [closure_12(Header, obj5), ];
-            let tmp46Result = null;
+            let tmp47Result = null;
             const obj6 = { style: contentContainer, children: items5 };
             if (canSeeOnboardingHome) {
               const obj7 = { guildId };
-              tmp46Result = tmp46(tmp6(tmp3[36]), obj7);
+              tmp47Result = tmp47(tmp6(tmp3[36]), obj7);
             }
-            items5 = [tmp46Result, closure_12(isNavigationScreen(tmp3[35]), {})];
+            items5 = [tmp47Result, closure_12(isNavigationScreen(tmp3[35]), {})];
             items4[1] = closure_13(navigation, obj6);
             return closure_13(navigation, obj4);
           } else if (channelId === StaticChannelRoute.MEMBER_SAFETY) {
@@ -331,15 +332,19 @@ const memoResult = react.memo(function StandaloneChannelScreen(frame) {
             items6[1] = closure_12(isNavigationScreen(frame[37]), obj9);
             items6[2] = closure_12(isNavigationScreen(frame[35]), {});
             return closure_13(navigation, obj8);
-          } else if (channelId === StaticChannelRoute.CONJURE) {
-            const obj10 = { guildId, inline: true, onBack: tmp40 };
+          } else if (channelId === StaticChannelRoute.CONJURE_PROJECT) {
+            const obj10 = { guildId, projectId: subRouteId, inline: true, onBack: tmp40 };
             tmp40 = undefined;
             const tmp38 = closure_12;
             const tmp6Result = isNavigationScreen(frame[38]);
             if (tmp15) {
               tmp40 = callback;
             }
-            return tmp38(tmp6Result, obj10, guildId);
+            if (subRouteId == null) {
+              subRouteId = "";
+            }
+            const _HermesInternal = HermesInternal;
+            return tmp38(tmp6Result, obj10, "" + guildId + ":" + subRouteId);
           } else if (showCreateThread) {
             const obj11 = { style: contentContainer, children: items7 };
             const obj12 = { channelId, frame, guildId, isNavigationScreen, screenIndex, showCreateThread, isBackEnabled: tmp15, onBackPress: callback, measureNavigationTTI: false };
@@ -401,11 +406,11 @@ const memoResult = react.memo(function StandaloneChannelScreen(frame) {
       items10 = [closure_12(Header, obj25), ];
       const obj26 = { style: contentContainer, children: items11 };
       items11 = [closure_12(isNavigationScreen(tmp3[33]), { absolute: true }), , ];
-      const obj27 = { guildId, gatedChannelId: tmp54 };
-      tmp54 = undefined;
+      const obj27 = { guildId, gatedChannelId: tmp55 };
+      tmp55 = undefined;
       const tmp6Result2 = isNavigationScreen(frame[34]);
       if (needSubscriptionToAccess) {
-        tmp54 = channelId;
+        tmp55 = channelId;
       }
       items11[1] = closure_12(tmp6Result2, obj27);
       items11[2] = closure_12(isNavigationScreen(frame[35]), {});

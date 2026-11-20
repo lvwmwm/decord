@@ -1,22 +1,22 @@
-// Module ID: 18914
-// Function ID: 18915
+// Module ID: 18738
+// Function ID: 18739
 // Name: GroupDMRecipientLimitTitle
-// Dependencies: [19, 17, 1072, 21, 4792, 575, 1380, 11998, 5356, 1113, 5383, 8832, 12970, 2]
+// Dependencies: [19, 17, 1071, 21, 4794, 575, 1378, 11940, 5358, 1112, 5385, 8832, 12940, 2]
 // Exports: default
 
-// Module 18914 (GroupDMRecipientLimitTitle)
+// Module 18738 (GroupDMRecipientLimitTitle)
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import intl2 from "intl" /* 1113 */;
-import useToken from "useToken" /* 5356 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 11998 */;
-import openGroupDMNitroCapInfoActionSheetDefault from "openGroupDMNitroCapInfoActionSheet" /* 12970 */;
+import Constants from "Constants" /* 1071 */;
+import intl2 from "intl" /* 1112 */;
+import useToken from "useToken" /* 5358 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 11940 */;
+import openGroupDMNitroCapInfoActionSheetDefault from "openGroupDMNitroCapInfoActionSheet" /* 12940 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
+import createStyles_mod from "createStyles" /* 4794 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -71,7 +71,7 @@ export default function GroupDMRecipientLimitTitle(arg0) {
       str2 = "text-feedback-critical";
     }
   }
-  const intl = tmp2(1113).intl;
+  const intl = tmp2(1112).intl;
   const formatToPlainStringResult = intl.formatToPlainString(intl2.t["9EQix0"], { numMembers: memberCount, maxMemberLimit: recipientLimit });
   const items = [, ];
   const obj5 = { lineClamp: 1, variant: token, color: "mobile-text-heading-primary", style: tmp.title, maxFontSizeMultiplier: 2, children: title };

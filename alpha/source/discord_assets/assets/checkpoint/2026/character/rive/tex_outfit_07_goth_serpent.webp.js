@@ -1,8 +1,8 @@
-// Module ID: 12550
-// Function ID: 12551
+// Module ID: 12520
+// Function ID: 12521
 // Dependencies: [2]
 
-// Module 12550
+// Module 12520
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_outfit_07_goth_serpent.webp.js");

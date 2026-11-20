@@ -1,13 +1,13 @@
-// Module ID: 10068
-// Function ID: 10069
+// Module ID: 10071
+// Function ID: 10072
 // Name: IarSettingsUpsellsConfigScFiltersGraphicMedia
-// Dependencies: [8114, 1196, 1113, 10054, 2]
+// Dependencies: [8113, 1195, 1112, 10057, 2]
 
-// Module 10068 (IarSettingsUpsellsConfigScFiltersGraphicMedia)
-import intl2 from "intl" /* 1113 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
-import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 8114 */;
-import MenuTypes from "MenuTypes" /* 10054 */;
+// Module 10071 (IarSettingsUpsellsConfigScFiltersGraphicMedia)
+import intl2 from "intl" /* 1112 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1195 */;
+import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 8113 */;
+import MenuTypes from "MenuTypes" /* 10057 */;
 import size from "module_2" /* 2 */;
 
 let items;

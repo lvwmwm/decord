@@ -1,24 +1,24 @@
-// Module ID: 17805
-// Function ID: 17806
+// Module ID: 17632
+// Function ID: 17633
 // Name: useStageChannelSpeakerVoiceStates
-// Dependencies: [32, 4644, 4641, 5536, 6413, 504, 4666, 11, 1255, 6416, 6423, 2]
+// Dependencies: [32, 4646, 4643, 5538, 6415, 504, 4668, 11, 1254, 6418, 6425, 2]
 // Exports: default
 
-// Module 17805 (useStageChannelSpeakerVoiceStates)
+// Module 17632 (useStageChannelSpeakerVoiceStates)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import FavoritesUtils from "FavoritesUtils" /* 4666 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5536 */;
+import FavoritesUtils from "FavoritesUtils" /* 4668 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5538 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import FavoriteStore from "FavoriteStore" /* 4644 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6413 */;
+import FavoriteStore from "FavoriteStore" /* 4646 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6415 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
 let tmp;
-const GlobalUtils = tmp(1255);
+const GlobalUtils = tmp(1254);
 function transformParticipantToSortedVoiceState(user) {
   let userNick;
   let voiceState;

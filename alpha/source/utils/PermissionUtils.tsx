@@ -1,30 +1,30 @@
-// Module ID: 4729
-// Function ID: 4730
+// Module ID: 4731
+// Function ID: 4732
 // Name: PermissionUtils
-// Dependencies: [4697, 4725, 4726, 4645, 4659, 4699, 502, 4641, 4704, 4698, 4663, 1388, 1072, 4710, 1084, 12, 4730, 4711, 11, 2119, 4731, 4702, 2]
+// Dependencies: [4699, 4727, 4728, 4647, 4661, 4701, 502, 4643, 4706, 4700, 4665, 1386, 1071, 4712, 1083, 12, 4732, 4713, 11, 2117, 4733, 4704, 2]
 // Exports: areChannelsLocked, can, canEveryone, canEveryoneRole, canManageACategory, getGuildVisualOwnerId, getHighestHoistedRole, getHighestRole, isRoleHigher, makeEveryoneOverwrite
 
-// Module 4729 (PermissionUtils)
+// Module 4731 (PermissionUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import Server from "Server" /* 2119 */;
-import GuildRoleRecord from "GuildRoleRecord" /* 4699 */;
-import GuildRoleUtils from "GuildRoleUtils" /* 4702 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 4710 */;
-import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4730 */;
-import AppChannelPermissions from "AppChannelPermissions" /* 4731 */;
-import ImpersonateStore from "ImpersonateStore" /* 4697 */;
-import LurkingStore from "LurkingStore" /* 4725 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4726 */;
-import ChannelRecord from "ChannelRecord" /* 4645 */;
-import GuildRecord from "GuildRecord" /* 4659 */;
+import Server from "Server" /* 2117 */;
+import GuildRoleRecord from "GuildRoleRecord" /* 4701 */;
+import GuildRoleUtils from "GuildRoleUtils" /* 4704 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4712 */;
+import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4732 */;
+import AppChannelPermissions from "AppChannelPermissions" /* 4733 */;
+import ImpersonateStore from "ImpersonateStore" /* 4699 */;
+import LurkingStore from "LurkingStore" /* 4727 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4728 */;
+import ChannelRecord from "ChannelRecord" /* 4647 */;
+import GuildRecord from "GuildRecord" /* 4661 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import GuildMemberStore from "GuildMemberStore" /* 4704 */;
-import GuildRoleStore from "GuildRoleStore" /* 4698 */;
-import GuildStore from "GuildStore" /* 4663 */;
-import UserStore from "UserStore" /* 1388 */;
-import Constants from "Constants" /* 1072 */;
-import BigFlagUtils_mod from "BigFlagUtils" /* 1084 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import GuildMemberStore from "GuildMemberStore" /* 4706 */;
+import GuildRoleStore from "GuildRoleStore" /* 4700 */;
+import GuildStore from "GuildStore" /* 4665 */;
+import UserStore from "UserStore" /* 1386 */;
+import Constants from "Constants" /* 1071 */;
+import BigFlagUtils_mod from "BigFlagUtils" /* 1083 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -92,7 +92,7 @@ function applyOverwrites(id, member, deserializeResult, overwrites) {
       found = tmp19Result7.filter(addResult4, closure_29);
     }
     found1 = found;
-    const tmp28Result = tmp28(4711);
+    const tmp28Result = tmp28(4713);
     const tmp34 = tmp28Result.isMemberCommunicationDisabled(member) && !hasItem;
     if (tmp34) {
       const tmp19Result8 = BigFlagUtils;
@@ -386,7 +386,7 @@ function getSyncedPermissionOverwrites(guild_id, appChannelBotUserId) {
       allow = deserializeResult;
     }
     deny = undefined;
-    remove = tmp12(1084).remove;
+    remove = tmp12(1083).remove;
     BigFlagUtils;
     if (obj[appChannelBotUserId] != null) {
       deny = tmp9.deny;
@@ -523,7 +523,7 @@ export function areChannelsLocked(c18, c19, appChannelBotUserId) {
           const tmp12 = getSyncedPermissionOverwrites(c19, appChannelBotUserId);
           let closure_1 = tmp12;
           if (null == obj2[guild_id]) {
-            let obj = { id: guild_id, type: obj2(2119).PermissionOverwriteType.ROLE, allow: deserializeResult, deny: deserializeResult };
+            let obj = { id: guild_id, type: obj2(2117).PermissionOverwriteType.ROLE, allow: deserializeResult, deny: deserializeResult };
             let tmp3 = obj2;
             obj2[guild_id] = obj;
           }

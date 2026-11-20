@@ -1,7 +1,7 @@
 // Module ID: 8835
 // Function ID: 8836
 // Name: LimitedTimeBadge
-// Dependencies: [19, 17, 2189, 1192, 21, 4792, 575, 1113, 504, 4799, 8836, 5383, 2]
+// Dependencies: [19, 17, 2187, 1191, 21, 4794, 575, 1112, 504, 4801, 8836, 5385, 2]
 // Exports: default
 
 // Module 8835 (LimitedTimeBadge)
@@ -9,13 +9,13 @@ import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import intl8 from "intl" /* 1113 */;
-import shared from "shared" /* 4799 */;
+import intl8 from "intl" /* 1112 */;
+import shared from "shared" /* 4801 */;
 import useCountdownDefault from "useCountdown" /* 8836 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2189 */;
-import ThemeStore from "ThemeStore" /* 1192 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import LocaleStore from "LocaleStore" /* 2187 */;
+import ThemeStore from "ThemeStore" /* 1191 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -57,31 +57,31 @@ export default function LimitedTimeBadge(unpublishedAt) {
   if (hasItem) {
     let formatToPlainStringResult;
     if (days > 1) {
-      const intl6 = tmp2(1113).intl;
+      const intl6 = tmp2(1112).intl;
       const obj3 = { days };
-      formatToPlainStringResult = intl6.formatToPlainString(tmp2(1113).t.DkxLY0, obj3);
+      formatToPlainStringResult = intl6.formatToPlainString(tmp2(1112).t.DkxLY0, obj3);
     } else {
       if (days <= 1) {
         if (hours > 0) {
-          const intl5 = tmp2(1113).intl;
+          const intl5 = tmp2(1112).intl;
           const obj4 = { hours };
-          formatToPlainStringResult = intl5.formatToPlainString(tmp2(1113).t.WJieZ2, obj4);
+          formatToPlainStringResult = intl5.formatToPlainString(tmp2(1112).t.WJieZ2, obj4);
         }
       }
-      const intl4 = tmp2(1113).intl;
-      formatToPlainStringResult = intl4.formatToPlainString(tmp2(1113).t.WJieZ2, { hours: 0 });
+      const intl4 = tmp2(1112).intl;
+      formatToPlainStringResult = intl4.formatToPlainString(tmp2(1112).t.WJieZ2, { hours: 0 });
     }
     sum = formatToPlainStringResult;
   } else {
-    const intl = tmp2(1113).intl;
-    sum = days + intl.string(tmp2(1113).t.QJyuxY);
-    const intl2 = tmp2(1113).intl;
-    let sum1 = hours + intl2.string(tmp2(1113).t["1LyF1h"]);
+    const intl = tmp2(1112).intl;
+    sum = days + intl.string(tmp2(1112).t.QJyuxY);
+    const intl2 = tmp2(1112).intl;
+    let sum1 = hours + intl2.string(tmp2(1112).t["1LyF1h"]);
     if (days <= 1) {
       if (days > 1) {
-        const intl3 = tmp2(1113).intl;
+        const intl3 = tmp2(1112).intl;
         const string = intl3.string;
-        sum1 = `0${string(tmp2(1113).t["1LyF1h"])}`;
+        sum1 = `0${string(tmp2(1112).t["1LyF1h"])}`;
       }
       sum = sum1;
     }
@@ -90,11 +90,11 @@ export default function LimitedTimeBadge(unpublishedAt) {
   items3[1] = stateFromStores ? tmp.backgroundDarkMode : tmp.backgroundLightMode;
   items3[2] = style;
   let str2 = "text-overlay-light";
-  const Text = tmp2(5383).Text;
+  const Text = tmp2(5385).Text;
   if (stateFromStores) {
     str2 = "text-overlay-dark";
   }
   ({ color: str2, variant: "body-xs/semibold", accessibilityLabel: intl7.formatToPlainString(intl8.t.TlZULM, { daysLeft: days }), allowFontScaling: false, children: sum });
-  intl7 = tmp2(1113).intl;
+  intl7 = tmp2(1112).intl;
   return <tmp11 style={items3}>{null}</tmp11>;
 };

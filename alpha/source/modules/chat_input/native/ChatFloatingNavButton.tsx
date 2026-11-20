@@ -1,19 +1,19 @@
-// Module ID: 13041
-// Function ID: 13042
+// Module ID: 13011
+// Function ID: 13012
 // Name: ChatFloatingNavButton
-// Dependencies: [19, 17, 21, 4792, 575, 1655, 5356, 5393, 5394, 5479, 2]
+// Dependencies: [19, 17, 21, 4794, 575, 1653, 5358, 5395, 5396, 5481, 2]
 // Exports: default
 
-// Module 13041 (ChatFloatingNavButton)
+// Module 13011 (ChatFloatingNavButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import useToken from "useToken" /* 5356 */;
-import spring_spring from "spring/spring" /* 5393 */;
-import springPresets from "springPresets" /* 5394 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import useToken from "useToken" /* 5358 */;
+import spring_spring from "spring/spring" /* 5395 */;
+import springPresets from "springPresets" /* 5396 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let size;
@@ -43,7 +43,7 @@ export default function ChatFloatingNavButton(arg0) {
   let tmp9;
   ({ accessibilityLabel, icon, onPress } = arg0);
   const tmp = closure_6();
-  let obj = _mod1655;
+  let obj = _mod1653;
   const sharedValue = obj.useSharedValue(0);
   const obj2 = useToken;
   const token = obj2.useToken(nativeDefault.colors.MOBILE_FLOATINGBAR_BACKGROUND);
@@ -52,10 +52,10 @@ export default function ChatFloatingNavButton(arg0) {
   const obj4 = useToken;
   const token2 = obj4.useToken(nativeDefault.colors.CHAT_INPUT_ICON_DEFAULT_TINT);
   let items = [closure_7, , , , , , ];
-  const useAnimatedStyle = _mod1655.useAnimatedStyle;
-  _mod1655;
+  const useAnimatedStyle = _mod1653.useAnimatedStyle;
+  _mod1653;
   items[1] = spring_spring.withSpring;
-  items[2] = _mod1655.interpolateColor;
+  items[2] = _mod1653.interpolateColor;
   items[3] = sharedValue;
   items[4] = token;
   items[5] = token1;
@@ -86,7 +86,7 @@ export default function ChatFloatingNavButton(arg0) {
     const result = sharedValue.set(1);
   }, items2);
   const items4 = [tmp.pill, animatedStyle];
-  const View = tmp4(1655).View;
+  const View = tmp4(1653).View;
   const items5 = [tmp.icon, { tintColor: token2 }];
   return <Pressable accessibilityRole="button" accessibilityLabel={accessibilityLabel} onPress={onPress} onPressIn={callback} onPressOut={react.useCallback(() => {
     const result = sharedValue.set(0);

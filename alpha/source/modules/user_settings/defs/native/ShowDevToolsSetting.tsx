@@ -1,14 +1,14 @@
-// Module ID: 17053
-// Function ID: 17054
+// Module ID: 16877
+// Function ID: 16878
 // Name: ShowDevToolsSetting
-// Dependencies: [17054, 11875, 17051, 15736, 16057, 2]
+// Dependencies: [16878, 11817, 16875, 15700, 16021, 2]
 
-// Module 17053 (ShowDevToolsSetting)
-import DevToolsNavigator from "DevToolsNavigator" /* 15736 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 16057 */;
-import StaffBadgeIcon from "StaffBadgeIcon" /* 17051 */;
-import DevToolsScreens from "DevToolsScreens" /* 17054 */;
-import SettingBuilders from "SettingBuilders" /* 11875 */;
+// Module 16877 (ShowDevToolsSetting)
+import DevToolsNavigator from "DevToolsNavigator" /* 15700 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 16021 */;
+import StaffBadgeIcon from "StaffBadgeIcon" /* 16875 */;
+import DevToolsScreens from "DevToolsScreens" /* 16878 */;
+import SettingBuilders from "SettingBuilders" /* 11817 */;
 import size from "module_2" /* 2 */;
 
 const obj = {

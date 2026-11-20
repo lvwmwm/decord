@@ -1,44 +1,44 @@
 // Module ID: 9541
 // Function ID: 9542
 // Name: UserRow
-// Dependencies: [19, 17, 4793, 2165, 8243, 4641, 5530, 4734, 9526, 1072, 21, 1360, 4792, 575, 7618, 38, 9542, 10128, 5473, 10129, 7621, 8244, 504, 1187, 5383, 4848, 13417, 7401, 6510, 1113, 13732, 10150, 7221, 5390, 2154, 8493, 7553, 7948, 2121, 8047, 13733, 9250, 5821, 8580, 6221, 9336, 9334, 10325, 13735, 9623, 13736, 7216, 13750, 6926, 2]
+// Dependencies: [19, 17, 4795, 2163, 8242, 4643, 5532, 4736, 9526, 1071, 21, 1358, 4794, 575, 7617, 38, 9542, 10131, 5475, 10132, 7620, 8243, 504, 1186, 5385, 4850, 13387, 7400, 6512, 1112, 13701, 10153, 7220, 5392, 2152, 8492, 7552, 7947, 2119, 8046, 13702, 9250, 5823, 8579, 6223, 9336, 9334, 10267, 13704, 9623, 13705, 7215, 13719, 6925, 2]
 
 // Module 9541 (UserRow)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import intl14 from "intl" /* 1113 */;
-import asyncRequire from "asyncRequire" /* 2121 */;
-import utils_StringUtils from "utils/StringUtils" /* 2154 */;
-import UserUtils from "UserUtils" /* 4848 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import components_Button_Button from "components/Button/Button" /* 5390 */;
-import ToastUtils from "ToastUtils" /* 5473 */;
-import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 7221 */;
-import ChatIcon from "ChatIcon" /* 7553 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7618 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7621 */;
-import FriendSuggestionActionCreatorsDefault from "FriendSuggestionActionCreators" /* 8244 */;
-import PhoneCallIcon from "PhoneCallIcon" /* 8493 */;
+import intl14 from "intl" /* 1112 */;
+import asyncRequire from "asyncRequire" /* 2119 */;
+import utils_StringUtils from "utils/StringUtils" /* 2152 */;
+import UserUtils from "UserUtils" /* 4850 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import components_Button_Button from "components/Button/Button" /* 5392 */;
+import ToastUtils from "ToastUtils" /* 5475 */;
+import CheckmarkLargeIcon from "CheckmarkLargeIcon" /* 7220 */;
+import ChatIcon from "ChatIcon" /* 7552 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7617 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7620 */;
+import FriendSuggestionActionCreatorsDefault from "FriendSuggestionActionCreators" /* 8243 */;
+import PhoneCallIcon from "PhoneCallIcon" /* 8492 */;
 import BoostGemIcon2 from "BoostGemIcon" /* 9250 */;
 import UserRowConstants from "UserRowConstants" /* 9526 */;
-import PeopleUtilsDefault from "PeopleUtils" /* 10128 */;
-import GameRelationshipActionCreatorsDefault from "GameRelationshipActionCreators" /* 10129 */;
-import XLargeIcon from "XLargeIcon" /* 10150 */;
-import ActivityStatusDefault from "ActivityStatus" /* 13417 */;
-import ActionButtonDefault from "ActionButton" /* 13732 */;
-import CrownIcon2 from "CrownIcon" /* 13733 */;
+import PeopleUtilsDefault from "PeopleUtils" /* 10131 */;
+import GameRelationshipActionCreatorsDefault from "GameRelationshipActionCreators" /* 10132 */;
+import XLargeIcon from "XLargeIcon" /* 10153 */;
+import ActivityStatusDefault from "ActivityStatus" /* 13387 */;
+import ActionButtonDefault from "ActionButton" /* 13701 */;
+import CrownIcon2 from "CrownIcon" /* 13702 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4793 */;
-import ApplicationStore from "ApplicationStore" /* 2165 */;
-import FriendSuggestionStore from "FriendSuggestionStore" /* 8243 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import PresenceStore from "PresenceStore" /* 5530 */;
-import RelationshipStore from "RelationshipStore" /* 4734 */;
-import Constants from "Constants" /* 1072 */;
+import AccessibilityStore from "AccessibilityStore" /* 4795 */;
+import ApplicationStore from "ApplicationStore" /* 2163 */;
+import FriendSuggestionStore from "FriendSuggestionStore" /* 8242 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import PresenceStore from "PresenceStore" /* 5532 */;
+import RelationshipStore from "RelationshipStore" /* 4736 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import PlatformUtils from "utils/PlatformUtils" /* 1360 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import PlatformUtils from "utils/PlatformUtils" /* 1358 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const UserUtilsDefault = UserUtils;
@@ -52,7 +52,7 @@ let map1;
 let obj3;
 let obj4;
 let tmp2;
-const native = tmp2(1187);
+const native = tmp2(1186);
 function UserRowSubLabel(arg0) {
   let animate;
   let guildId;
@@ -87,7 +87,7 @@ function UserRowSubLabel(arg0) {
     } else {
       const obj4 = { style: tmp.gameContainer, children: items1 };
       const obj5 = { style: tmp.gameIcon, resizeMode: "contain", source: obj6, disableColor: true };
-      const Icon = tmp2(1187).Icon;
+      const Icon = tmp2(1186).Icon;
       let str = stateFromStores.getIconURL(16);
       const tmp14 = closure_15;
       const tmp15 = View;
@@ -103,7 +103,7 @@ function UserRowSubLabel(arg0) {
     tmp9 = tmp14Result;
   } else {
     const obj8 = { lineClamp: 1, variant: "body-xs/medium", color: "text-muted", children: tmp2Result.getUserTag(user) };
-    const Text = tmp2(5383).Text;
+    const Text = tmp2(5385).Text;
     tmp2Result = UserUtils;
     tmp9 = closure_14(Text, obj8);
   }
@@ -293,7 +293,7 @@ const memoResult = react.memo(function UserRow(type) {
     let zFfSFQ2;
     const items = [];
     if (NONE !== UserRowModes.ACTIONS) {
-      let obj2 = { accessibilityActions: items, actions: "r" };
+      let obj2 = { accessibilityActions: items, actions: "Array" };
       return obj2;
     } else {
       let tmp9;
@@ -608,7 +608,7 @@ const memoResult = react.memo(function UserRow(type) {
     let localUser;
     let sourceAnalyticsLocations;
     if (null == onLongPress) {
-      const promise = asyncRequire(7948, dependencyMap.paths);
+      const promise = asyncRequire(7947, dependencyMap.paths);
       promise.then((result) => {
         obj = { userId: localUser.id, localUser, sourceAnalyticsLocations };
         return result.default(obj);

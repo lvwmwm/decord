@@ -1,16 +1,16 @@
-// Module ID: 17882
-// Function ID: 17883
+// Module ID: 17709
+// Function ID: 17710
 // Name: InterestCoverTitle
-// Dependencies: [32, 19, 17, 21, 4792, 5383, 2]
+// Dependencies: [32, 19, 17, 21, 4794, 5385, 2]
 // Exports: default
 
-// Module 17882 (InterestCoverTitle)
+// Module 17709 (InterestCoverTitle)
 import react_native from "react-native" /* 17 */;
-import Text_Text from "Text/Text" /* 5383 */;
+import Text_Text from "Text/Text" /* 5385 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;

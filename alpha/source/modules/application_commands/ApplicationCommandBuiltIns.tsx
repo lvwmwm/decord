@@ -1,27 +1,27 @@
-// Module ID: 10384
-// Function ID: 10385
+// Module ID: 10326
+// Function ID: 10327
 // Name: ApplicationCommandBuiltIns
-// Dependencies: [5, 4641, 4724, 1388, 5816, 1072, 10385, 4706, 4797, 5444, 1113, 10386, 2119, 4617, 10388, 9996, 6774, 10389, 1093, 10390, 8131, 8263, 6390, 4848, 1089, 10453, 2169, 7618, 38, 6749, 10454, 2]
+// Dependencies: [5, 4643, 4726, 1386, 5818, 1071, 10327, 4708, 4799, 5446, 1112, 10328, 2117, 4619, 10330, 9999, 6774, 10331, 1092, 10332, 8130, 8262, 6392, 4850, 1088, 10395, 2167, 7617, 38, 6749, 10396, 2]
 // Exports: getBuiltInCommands
 
-// Module 10384 (ApplicationCommandBuiltIns)
-import Server from "Server" /* 2119 */;
-import UserSettings from "UserSettings" /* 4617 */;
-import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 4706 */;
-import MessageConstants from "MessageConstants" /* 4797 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5444 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5816 */;
+// Module 10326 (ApplicationCommandBuiltIns)
+import Server from "Server" /* 2117 */;
+import UserSettings from "UserSettings" /* 4619 */;
+import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 4708 */;
+import MessageConstants from "MessageConstants" /* 4799 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5446 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5818 */;
 import DiceRollActionCreators from "DiceRollActionCreators" /* 6749 */;
 import ThreadHooks from "ThreadHooks" /* 6774 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 8131 */;
-import application_commands_ApplicationCommandBuiltIns from "application_commands/ApplicationCommandBuiltIns" /* 10386 */;
-import ChangeNicknameActionCreatorsDefault from "ChangeNicknameActionCreators" /* 10388 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 8130 */;
+import application_commands_ApplicationCommandBuiltIns from "application_commands/ApplicationCommandBuiltIns" /* 10328 */;
+import ChangeNicknameActionCreatorsDefault from "ChangeNicknameActionCreators" /* 10330 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import PermissionStore from "PermissionStore" /* 4724 */;
-import UserStore from "UserStore" /* 1388 */;
-import Constants from "Constants" /* 1072 */;
-import DiceRollConstants from "DiceRollConstants" /* 10385 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import PermissionStore from "PermissionStore" /* 4726 */;
+import UserStore from "UserStore" /* 1386 */;
+import Constants from "Constants" /* 1071 */;
+import DiceRollConstants from "DiceRollConstants" /* 10327 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -592,7 +592,7 @@ let closure_14 = _asyncToGenerator(async (arg0, arg1) => {
       } else if (arg0 === 2) {
         return { value, done: true };
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -661,7 +661,7 @@ let closure_14 = _asyncToGenerator(async (arg0, arg1) => {
           const obj7 = closure_133_1(closure_133_2[21]);
           sendMessage(id, obj7.parse(id, closure_3), true, obj8);
           c7 = 3;
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp27) {
         c7 = 3;
@@ -707,7 +707,7 @@ const obj21 = {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -772,7 +772,7 @@ const obj21 = {
               sendBotMessage(id2, formatToPlainString(v9wzHDV, obj5));
             }
             c4 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           } catch (tmp20) {
             c4 = 3;
             throw tmp20;
@@ -894,7 +894,7 @@ const obj24 = {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -971,7 +971,7 @@ const obj24 = {
               sendBotMessage(id, formatToPlainString(YflWdM, obj7));
             }
             c5 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           } catch (tmp29) {
             c5 = 3;
             throw tmp29;
@@ -1159,7 +1159,7 @@ const obj28 = {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -1237,7 +1237,7 @@ const obj28 = {
               sendBotMessage(id, formatToPlainString(BbRV6o, obj7));
             }
             c5 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           } catch (tmp19) {
             c5 = 3;
             throw tmp19;
@@ -1383,7 +1383,7 @@ const obj32 = {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -1426,7 +1426,7 @@ const obj32 = {
               const obj7 = tmp(c2[21]);
               sendMessage(id, obj7.parse(tmp, closure_129_2), true, obj8);
               c3 = 3;
-              return { value: "HermesInternal", done: "+60" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp8) {
             c3 = 3;

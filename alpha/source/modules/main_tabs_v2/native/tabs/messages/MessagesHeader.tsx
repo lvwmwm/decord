@@ -1,24 +1,24 @@
-// Module ID: 17596
-// Function ID: 17597
+// Module ID: 17423
+// Function ID: 17424
 // Name: MessagesHeader
-// Dependencies: [19, 17, 1072, 21, 575, 12969, 5522, 5396, 4792, 1655, 5393, 5394, 17591, 4969, 13107, 6977, 7472, 10138, 1113, 5383, 7310, 17597, 5390, 5483, 2]
+// Dependencies: [19, 17, 1071, 21, 575, 12939, 5524, 5398, 4794, 1653, 5395, 5396, 17418, 4971, 13077, 6976, 7471, 10141, 1112, 5385, 7309, 17424, 5392, 5485, 2]
 // Exports: getMessagesHeaderHeight
 
-// Module 17596 (MessagesHeader)
+// Module 17423 (MessagesHeader)
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import _modDef1655 from "module_1655" /* 1655 */;
-import ButtonConstants from "ButtonConstants" /* 5396 */;
-import AssetRegistryDefault from "AssetRegistry" /* 5483 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 5522 */;
-import HeaderDebugOverlayDefault from "HeaderDebugOverlay" /* 6977 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 7310 */;
-import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 12969 */;
-import MessageRequestsButtonDefault from "MessageRequestsButton" /* 17597 */;
+import Constants from "Constants" /* 1071 */;
+import _modDef1653 from "module_1653" /* 1653 */;
+import ButtonConstants from "ButtonConstants" /* 5398 */;
+import AssetRegistryDefault from "AssetRegistry" /* 5485 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 5524 */;
+import HeaderDebugOverlayDefault from "HeaderDebugOverlay" /* 6976 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 7309 */;
+import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 12939 */;
+import MessageRequestsButtonDefault from "MessageRequestsButton" /* 17424 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
@@ -75,11 +75,11 @@ const memoResult = react.memo(function MessagesHeader(height) {
     return items;
   }, items);
   const items1 = [closure_11, , , ];
-  const useAnimatedStyle = height(1655).useAnimatedStyle;
-  height(1655);
-  items1[1] = height(5393).withSpring;
+  const useAnimatedStyle = height(1653).useAnimatedStyle;
+  height(1653);
+  items1[1] = height(5395).withSpring;
   items1[2] = scrollPosition;
-  items1[3] = height(5394).Reanimated3DefaultSpringConfig;
+  items1[3] = height(5396).Reanimated3DefaultSpringConfig;
   let c0;
   let c1;
   let c2;
@@ -100,7 +100,7 @@ const memoResult = react.memo(function MessagesHeader(height) {
   MessagesHeaderTsx1.__workletHash = 7032090280260;
   MessagesHeaderTsx1.__initData = tmp6;
   const animatedStyle = useAnimatedStyle(MessagesHeaderTsx1);
-  const tmp3Result = height(17591);
+  const tmp3Result = height(17418);
   const isHomeDrawerEnabled = tmp3Result.useIsHomeDrawerEnabled();
   const callback = obj.useCallback(() => {
     const obj = height(dependencyMap[13]);
@@ -138,19 +138,19 @@ const memoResult = react.memo(function MessagesHeader(height) {
       }
     }
   }, []);
-  let obj2 = { variant: "primary", icon: closure_6(PlusLargeIcon, obj3), size: "sm", accessibilityLabel: intl.string(tmp3(1113).t.jD1qzM), onPress: callback3 };
+  let obj2 = { variant: "primary", icon: closure_6(PlusLargeIcon, obj3), size: "sm", accessibilityLabel: intl.string(tmp3(1112).t.jD1qzM), onPress: callback3 };
   const tmp17 = HeaderDebugOverlayDefault("bespoke");
-  const IconButton = tmp3(7472).IconButton;
+  const IconButton = tmp3(7471).IconButton;
   obj3 = { size: "sm", color: nativeDefault.colors.WHITE };
-  PlusLargeIcon = tmp3(10138).PlusLargeIcon;
-  intl = tmp3(1113).intl;
+  PlusLargeIcon = tmp3(10141).PlusLargeIcon;
+  intl = tmp3(1112).intl;
   const obj4 = { style: memo, children: items3 };
   const obj5 = { style: tmp.headerPanelTitle, children: closure_6(Text, { color: "mobile-text-heading-primary", variant: "heading-lg/semibold", maxFontSizeMultiplier: 1.75, accessibilityRole: "header", children: stringResult }) };
   const tmp19 = closure_6(IconButton, obj2);
-  Text = tmp3(5383).Text;
-  const intl2 = tmp3(1113).intl;
+  Text = tmp3(5385).Text;
+  const intl2 = tmp3(1112).intl;
   const string = intl2.string;
-  const t = tmp3(1113).t;
+  const t = tmp3(1112).t;
   if (isHomeDrawerEnabled) {
     stringResult = string(t.YUU0RF);
   } else {
@@ -158,19 +158,19 @@ const memoResult = react.memo(function MessagesHeader(height) {
   }
   items3 = [closure_6(closure_4, obj5), , , ];
   const obj6 = { style: tmp.headerPanelButtons, children: items4 };
-  const obj7 = { onPress: callback2, variant: "secondary", size: "sm", icon: AssetRegistryDefault2, accessibilityLabel: intl3.string(height(1113).t["5h0QOP"]) };
-  const IconButton2 = tmp3(7472).IconButton;
-  intl3 = tmp3(1113).intl;
+  const obj7 = { onPress: callback2, variant: "secondary", size: "sm", icon: AssetRegistryDefault2, accessibilityLabel: intl3.string(height(1112).t["5h0QOP"]) };
+  const IconButton2 = tmp3(7471).IconButton;
+  intl3 = tmp3(1112).intl;
   items4 = [closure_6(IconButton2, obj7), closure_6(MessageRequestsButtonDefault, { noMargin: true, onPress: callback, alternateVariant: true }), , ];
-  const obj8 = { variant: "secondary", grow: true, shrink: true, size: "sm", icon: AssetRegistryDefault, onPress: callback1, maxFontSizeMultiplier: 1, text: intl4.string(height(1113).t.zIJnA6) };
-  const Button = tmp3(5390).Button;
-  intl4 = tmp3(1113).intl;
+  const obj8 = { variant: "secondary", grow: true, shrink: true, size: "sm", icon: AssetRegistryDefault, onPress: callback1, maxFontSizeMultiplier: 1, text: intl4.string(height(1112).t.zIJnA6) };
+  const Button = tmp3(5392).Button;
+  intl4 = tmp3(1112).intl;
   items4[2] = closure_6(Button, obj8);
   items4[3] = tmp19;
   items3[1] = closure_7(closure_4, obj6);
   const obj9 = { style: items5 };
   items5 = [tmp.headerBorder, animatedStyle];
-  items3[2] = closure_6(_modDef1655.View, obj9);
+  items3[2] = closure_6(_modDef1653.View, obj9);
   items3[3] = tmp17;
   return closure_7(closure_4, obj4);
 });

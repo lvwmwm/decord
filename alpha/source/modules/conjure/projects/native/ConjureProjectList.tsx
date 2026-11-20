@@ -1,30 +1,30 @@
-// Module ID: 18695
-// Function ID: 18696
+// Module ID: 18519
+// Function ID: 18520
 // Name: ConjureProjectList
-// Dependencies: [32, 19, 17, 1231, 6500, 21, 4792, 575, 1630, 1502, 18696, 18697, 18289, 18698, 18335, 5006, 18699, 12227, 18417, 6817, 12295, 18310, 7432, 6976, 6983, 13617, 1113, 5383, 4089, 5390, 6814, 18709, 7229, 6926, 13690, 6816, 504, 6517, 13698, 17781, 18425, 6903, 2]
+// Dependencies: [32, 19, 17, 1230, 6502, 21, 4794, 575, 1628, 1500, 18520, 18521, 18114, 18522, 18166, 5008, 18523, 12169, 18261, 6817, 12265, 18155, 7431, 6975, 6982, 13587, 1112, 5385, 4091, 5392, 6814, 18533, 7228, 6925, 13659, 6816, 504, 6519, 13667, 17608, 18266, 6902, 2]
 // Exports: default
 
-// Module 18695 (ConjureProjectList)
+// Module 18519 (ConjureProjectList)
 import nativeDefault from "native" /* 575 */;
-import intl6 from "intl" /* 1113 */;
-import _modDef4089 from "module_4089" /* 4089 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5006 */;
-import Text_Text from "Text/Text" /* 5383 */;
+import intl6 from "intl" /* 1112 */;
+import _modDef4091 from "module_4091" /* 4091 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5008 */;
+import Text_Text from "Text/Text" /* 5385 */;
 import ConjureActionCreators from "ConjureActionCreators" /* 6814 */;
-import TableRowGroup2 from "TableRowGroup" /* 7229 */;
-import ConjureRemixSheet from "ConjureRemixSheet" /* 12227 */;
-import ConjureProjectIconDefault from "ConjureProjectIcon" /* 13698 */;
-import conjureStandaloneScenes from "conjureStandaloneScenes" /* 18289 */;
-import ConjureSettingsSheet from "ConjureSettingsSheet" /* 18310 */;
-import ConjureHeaderIconButtonDefault from "ConjureHeaderIconButton" /* 18425 */;
-import ConjureCreateSheet from "ConjureCreateSheet" /* 18699 */;
+import TableRowGroup2 from "TableRowGroup" /* 7228 */;
+import ConjureRemixSheet from "ConjureRemixSheet" /* 12169 */;
+import ConjureProjectIconDefault from "ConjureProjectIcon" /* 13667 */;
+import conjureStandaloneScenes from "conjureStandaloneScenes" /* 18114 */;
+import ConjureSettingsSheet from "ConjureSettingsSheet" /* 18155 */;
+import ConjureHeaderIconButtonDefault from "ConjureHeaderIconButton" /* 18266 */;
+import ConjureCreateSheet from "ConjureCreateSheet" /* 18523 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6500 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1230 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6502 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -57,28 +57,28 @@ function ProjectRow(project) {
   const stateFromStores = obj2.useStateFromStores(items, () => ConjureProjectStore.isProjectDeleting(project.id), items1);
   let formatToPlainStringResult;
   if (null != project.updated_at) {
-    const intl = tmp2(1113).intl;
+    const intl = tmp2(1112).intl;
     const formatToPlainString = intl.formatToPlainString;
     const obj3 = { time: getRelativeTimestamp(date.getTime()) };
-    const AXydi3 = _modDef4089.AXydi3;
+    const AXydi3 = _modDef4091.AXydi3;
     const _Date = Date;
     const self = this;
     const self2 = this;
-    getRelativeTimestamp = project(6517).getRelativeTimestamp;
-    project(6517);
+    getRelativeTimestamp = project(6519).getRelativeTimestamp;
+    project(6519);
     date = new Date(project.updated_at);
     formatToPlainStringResult = formatToPlainString(AXydi3, obj3);
   }
   const obj4 = { label: project.name, subLabel: formatToPlainStringResult, accessibilityHint: stringResult, disabled: stateFromStores, icon: closure_10(ConjureProjectIconDefault, { project, size: "list" }), trailing: tmp12Result, onPress, onLongPress: onMore };
-  const TableRow = tmp2(6926).TableRow;
+  const TableRow = tmp2(6925).TableRow;
   if (stateFromStores) {
-    const intl2 = tmp2(1113).intl;
-    formatToPlainStringResult = intl2.string(_modDef4089.Yh5pAc);
+    const intl2 = tmp2(1112).intl;
+    formatToPlainStringResult = intl2.string(_modDef4091.Yh5pAc);
   }
   stringResult = undefined;
   if (null != conjureProjectBadge && conjureProjectBadge > 0 && !stateFromStores) {
-    const intl3 = tmp2(1113).intl;
-    stringResult = intl3.string(_modDef4089.hfIuc7);
+    const intl3 = tmp2(1112).intl;
+    stringResult = intl3.string(_modDef4091.hfIuc7);
   }
   if (stateFromStores) {
     tmp12Result = tmp14(closure_5, {});
@@ -87,12 +87,12 @@ function ProjectRow(project) {
     const obj5 = { style: tmp.projectRowTrailing, children: items2 };
     if (null != conjureProjectBadge && conjureProjectBadge > 0 && !stateFromStores) {
       const obj6 = { value: conjureProjectBadge };
-      tmp14Result3 = tmp14(tmp18(17781), obj6);
+      tmp14Result3 = tmp14(tmp18(17608), obj6);
     }
     items2 = [tmp14Result3, ];
-    const obj7 = { IconComponent: project(6903).MoreHorizontalIcon, onPress: onMore, accessibilityLabel: intl4.string(project(1113).t["UKOtz+"]) };
+    const obj7 = { IconComponent: project(6902).MoreHorizontalIcon, onPress: onMore, accessibilityLabel: intl4.string(project(1112).t["UKOtz+"]) };
     const tmp18Result = ConjureHeaderIconButtonDefault;
-    intl4 = tmp2(1113).intl;
+    intl4 = tmp2(1112).intl;
     items2[1] = closure_10(tmp18Result, obj7);
     tmp12Result = tmp12(tmp13, obj5);
   }
@@ -136,10 +136,10 @@ export default function ConjureProjectList(guildId) {
   let items7;
   let items8;
   let items9;
-  let mine;
   let obj11;
+  let obj15;
   let obj16;
-  let obj17;
+  let participating;
   let section;
   let settings;
   let shared;
@@ -157,17 +157,17 @@ export default function ConjureProjectList(guildId) {
   importDefault = tmp3;
   let obj = guildId(navigation[9]);
   navigation = obj.useNavigation();
-  ({ mine, shared, fetchState } = require("useConjureServerProjects")(guildId));
+  ({ participating, shared, fetchState } = require("useConjureServerProjects")(guildId));
   const tmp6 = require("useConjureServerProjects")(guildId);
   const arr = require("useConjureOtherOwnProjects")(guildId);
-  let items = [navigation];
-  const callback = memo.useCallback((projectId) => {
-    let str = arg1;
-    if (arg1 === undefined) {
+  let items = [guildId];
+  const callback = memo.useCallback((arg0, project_list) => {
+    let str = project_list;
+    if (project_list === undefined) {
       str = "project_list";
     }
-    const obj = { projectId, entryPoint: str };
-    navigation.push(conjureStandaloneScenes.ConjureScreenScenes.CHAT, obj);
+    const obj = conjureStandaloneScenes;
+    const result = obj.pushServerProjectScreen(guildId, arg0, str);
   }, items);
   const items1 = [guildId, callback];
   memo = memo.useMemo(() => {
@@ -281,7 +281,7 @@ export default function ConjureProjectList(guildId) {
     setOptions({ headerRight: fn });
   }, items6);
   let tmp19Result4 = null;
-  const tmp17 = mine.length > 0 || shared.length > 0;
+  const tmp17 = participating.length > 0 || shared.length > 0;
   if (!tmp17) {
     let obj3 = { style: tmp3.centered, children: tmp31Result };
     let str = "error";
@@ -338,9 +338,7 @@ export default function ConjureProjectList(guildId) {
   items10 = [, , , ];
   ({ paddingBottom: tmp(tmp2[7]).space.PX_8 + bottom });
   items10[0] = callback2(tmp(tmp2[31]), {});
-  const items11 = [{ key: "mine", title: tmp(tmp2[28])["8LfMqp"], projects: mine }, ];
-  ({ key: "mine", title: tmp(tmp2[28])["8LfMqp"], projects: mine });
-  items11[1] = { key: "shared", title: tmp(tmp2[28]).YHDMK6, projects: shared };
+  const items11 = [{ key: "participating", title: null, projects: participating }, { key: "shared", title: tmp(tmp2[28]).YHDMK6, projects: shared }];
   ({ key: "shared", title: tmp(tmp2[28]).YHDMK6, projects: shared });
   items10[1] = items11.map((projects) => {
     let intl;
@@ -348,10 +346,16 @@ export default function ConjureProjectList(guildId) {
     let tmp = null;
     if (projects.projects.length > 0) {
       let obj = { style: section.section, children: items };
-      const obj2 = { variant: "heading-sm/semibold", color: "text-default", accessibilityRole: "header", children: intl.string(projects.title) };
-      const Text = Text_Text.Text;
-      intl = intl6.intl;
-      items = [authStore(Text, obj2), ];
+      let tmp5 = null;
+      const tmp2 = unpackModuleId;
+      const tmp3 = metroImportDefault;
+      if (null != projects.title) {
+        const obj2 = { variant: "heading-sm/semibold", color: "text-default", accessibilityRole: "header", children: intl.string(projects.title) };
+        const Text = Text_Text.Text;
+        intl = intl6.intl;
+        tmp5 = authStore(Text, obj2);
+      }
+      items = [tmp5, ];
       const obj3 = {
         hasIcons: true,
         children: projects.map((project) => {
@@ -370,7 +374,7 @@ export default function ConjureProjectList(guildId) {
       projects = projects.projects;
       const TableRowGroup = TableRowGroup2.TableRowGroup;
       items[1] = authStore(TableRowGroup, obj3);
-      tmp = unpackModuleId(metroImportDefault, obj, projects.key);
+      tmp = tmp2(tmp3, obj, projects.key);
     }
     return tmp;
   });
@@ -380,13 +384,13 @@ export default function ConjureProjectList(guildId) {
   tmp28 = closure_11;
   tmp29 = disabled;
   if (arr.length > 0) {
-    const obj15 = { hasIcons: false, children: callback2(TableRow, obj16) };
+    const obj14 = { hasIcons: false, children: callback2(TableRow, obj15) };
     let TableRowGroup = tmp4(tmp2[32]).TableRowGroup;
-    obj16 = { label: intl4.formatToPlainString(tmp(tmp2[28]).vnoMFE, obj17), arrow: true, onPress: guildId(tmp2[34]).showConjureProjectsSheet };
+    obj15 = { label: intl4.formatToPlainString(tmp(tmp2[28]).vnoMFE, obj16), arrow: true, onPress: guildId(tmp2[34]).showConjureProjectsSheet };
     TableRow = tmp4(tmp2[33]).TableRow;
     intl4 = tmp4(tmp2[26]).intl;
-    obj17 = { count: arr.length };
-    tmp26Result = tmp26(TableRowGroup, obj15);
+    obj16 = { count: arr.length };
+    tmp26Result = tmp26(TableRowGroup, obj14);
   }
   items10[3] = tmp26Result;
   return callback2(tmp27, obj10);

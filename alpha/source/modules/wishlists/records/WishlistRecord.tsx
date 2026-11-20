@@ -1,13 +1,13 @@
 // Module ID: 8864
 // Function ID: 8865
 // Name: WishlistRecord
-// Dependencies: [1408, 2143, 8865, 8866, 8867, 8868, 1072, 2]
+// Dependencies: [1406, 2141, 8865, 8866, 8867, 8868, 1071, 2]
 // Exports: getWishlistProductLines, getWishlistSkuIds, wishlistHasSkuId
 
 // Module 8864 (WishlistRecord)
-import Constants from "Constants" /* 1072 */;
-import Record from "Record" /* 1408 */;
-import ApplicationRecord from "ApplicationRecord" /* 2143 */;
+import Constants from "Constants" /* 1071 */;
+import Record from "Record" /* 1406 */;
+import ApplicationRecord from "ApplicationRecord" /* 2141 */;
 import BaseWishlistItemRecord from "BaseWishlistItemRecord" /* 8865 */;
 import CollectiblesWishlistItemRecord from "CollectiblesWishlistItemRecord" /* 8866 */;
 import PremiumWishlistItemRecord from "PremiumWishlistItemRecord" /* 8867 */;

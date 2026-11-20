@@ -1,28 +1,28 @@
-// Module ID: 6382
-// Function ID: 6383
+// Module ID: 6384
+// Function ID: 6385
 // Name: StageChannelActionCreators
-// Dependencies: [5, 4695, 5440, 1072, 6383, 38, 5529, 6384, 1285, 6388, 5829, 6381, 6390, 2119, 4729, 1084, 7618, 7161, 7913, 2]
+// Dependencies: [5, 4697, 5442, 1071, 6385, 38, 5531, 6386, 1284, 6390, 5831, 6383, 6392, 2117, 4731, 1083, 7617, 7160, 7912, 2]
 // Exports: editStage, endStage, inviteUserToStage, moveSelfToAudience, moveUserToAudience, removeUserFromChannel, setEveryoneRolePermissionAllowed, setUserSuppress, startStage, toggleRequestToSpeak
 
-// Module 6382 (StageChannelActionCreators)
+// Module 6384 (StageChannelActionCreators)
 import _modDef38 from "module_38" /* 38 */;
-import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
-import HTTPUtils from "HTTPUtils" /* 1285 */;
-import Server from "Server" /* 2119 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4729 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5529 */;
-import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 5829 */;
-import useStageSpeakingForCurrentUser from "useStageSpeakingForCurrentUser" /* 6381 */;
-import Constants2 from "Constants" /* 6383 */;
-import StageChannelUtils from "StageChannelUtils" /* 6384 */;
-import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 6388 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6390 */;
-import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 7161 */;
-import StageInstanceActionCreators from "StageInstanceActionCreators" /* 7913 */;
+import BigFlagUtilsAll from "BigFlagUtils" /* 1083 */;
+import HTTPUtils from "HTTPUtils" /* 1284 */;
+import Server from "Server" /* 2117 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4731 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5531 */;
+import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 5831 */;
+import useStageSpeakingForCurrentUser from "useStageSpeakingForCurrentUser" /* 6383 */;
+import Constants2 from "Constants" /* 6385 */;
+import StageChannelUtils from "StageChannelUtils" /* 6386 */;
+import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 6390 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6392 */;
+import StageChannelModalActionCreators from "StageChannelModalActionCreators" /* 7160 */;
+import StageInstanceActionCreators from "StageInstanceActionCreators" /* 7912 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4695 */;
-import VoiceStateStore from "VoiceStateStore" /* 5440 */;
-import Constants from "Constants" /* 1072 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4697 */;
+import VoiceStateStore from "VoiceStateStore" /* 5442 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 let c3, c4, closure_4, closure_5;
@@ -31,8 +31,8 @@ let c9;
 let metroImportAll;
 let metroImportDefault;
 let tmp2;
-const ChannelActionCreatorsDefault = tmp2(7618);
-const f90323 = (error) => {
+const ChannelActionCreatorsDefault = tmp2(7617);
+const f88698 = (error) => {
   if (error.code === constants.STAGE_CHANNEL_USER_NOT_ALLOWED_TO_SPEAK) {
     obj = SafetyToastsActionCreatorsDefault;
     obj.showFailedToast(constants2.GENERIC_ERROR);
@@ -73,7 +73,7 @@ function audienceAckRequestToSpeak(channel, suppress) {
     const merged = Object.assign(tmp5Result5.getStageChannelMetadata(channel));
     trackWithMetadata(PROMOTED_TO_SPEAKER, obj2);
   }
-  const HTTP = tmp5(1285).HTTP;
+  const HTTP = tmp5(1284).HTTP;
   const request = { url: React4.UPDATE_VOICE_STATE(guildId), body: obj3, rejectWithError: tmp5Result6.rejectWithMigratedError() };
   const patch = HTTP.patch;
   obj3 = { suppress, request_to_speak_timestamp: null, channel_id: channel.id };
@@ -105,7 +105,7 @@ let obj = function _startStage() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -133,7 +133,7 @@ let obj = function _startStage() {
                 return obj6;
               } else {
                 c7 = 3;
-                return { value: "HermesInternal", done: "+60" };
+                return { value: "HermesInternal", done: null };
               }
             }
           } else if (arg0 === 1) {
@@ -172,7 +172,7 @@ obj = function _editStage() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -193,7 +193,7 @@ obj = function _editStage() {
             return obj5;
           } else {
             c3 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } else if (arg0 === 1) {
           c3 = 3;
@@ -231,7 +231,7 @@ obj = function _endStage() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -258,7 +258,7 @@ obj = function _endStage() {
             return { value, done: true };
           } else {
             c1 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp7) {
           c1 = 3;
@@ -346,7 +346,7 @@ export function setUserSuppress(channel, id, suppress) {
   obj = { suppress, channel_id: channel.id };
   obj3 = HTTPUtils;
   const patchResult = patch(request);
-  return patchResult.catch(f90323);
+  return patchResult.catch(f88698);
 }
 export function moveUserToAudience(user, voiceChannel) {
   let constants2;
@@ -366,7 +366,7 @@ export function moveUserToAudience(user, voiceChannel) {
       obj = { suppress: true, channel_id: voiceChannel.id };
       obj3 = HTTPUtils;
       const patchResult = patch(request);
-      patchResult.catch(f90323);
+      patchResult.catch(f88698);
       const HTTP2 = HTTPUtils.HTTP;
       const request1 = { url: React4.UPDATE_VOICE_STATE(guildId, user.id), body: obj2, rejectWithError: obj6.rejectWithMigratedError() };
       const patch2 = HTTP2.patch;

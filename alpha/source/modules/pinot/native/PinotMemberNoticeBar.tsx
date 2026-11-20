@@ -1,20 +1,20 @@
-// Module ID: 11814
-// Function ID: 11815
+// Module ID: 11756
+// Function ID: 11757
 // Name: PinotMemberNoticeBar
-// Dependencies: [19, 17, 1072, 21, 4792, 575, 11804, 5471, 2188, 5383, 1113, 3407, 6911, 7032, 2]
+// Dependencies: [19, 17, 1071, 21, 4794, 575, 11746, 5473, 2186, 5385, 1112, 3409, 6910, 7031, 2]
 // Exports: PinotMemberNoticeBar
 
-// Module 11814 (PinotMemberNoticeBar)
+// Module 11756 (PinotMemberNoticeBar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import LinkingDefault from "Linking" /* 5471 */;
-import PinotAnalytics from "PinotAnalytics" /* 11804 */;
+import Constants from "Constants" /* 1071 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2186 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import LinkingDefault from "Linking" /* 5473 */;
+import PinotAnalytics from "PinotAnalytics" /* 11746 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -63,9 +63,9 @@ export function PinotMemberNoticeBar(channel) {
   }, items);
   let obj = { style: tmp.underlay, children: closure_7(View, obj2) };
   obj2 = { style: tmp.bar, children: items1 };
-  let obj3 = { variant: "body-sm/normal", color: "text-default", style: tmp.text, children: intl.format(onDismiss(3407).Jry6Gr, obj4) };
-  const Text = channel(5383).Text;
-  intl = channel(1113).intl;
+  let obj3 = { variant: "body-sm/normal", color: "text-default", style: tmp.text, children: intl.format(onDismiss(3409).Jry6Gr, obj4) };
+  const Text = channel(5385).Text;
+  intl = channel(1112).intl;
   obj4 = {
     learnMoreHook(children, arg1) {
       const obj = { variant: "body-sm/normal", color: "text-default", style: link.link, accessibilityRole: "link", onPress: handleLearnMore, children };
@@ -75,7 +75,7 @@ export function PinotMemberNoticeBar(channel) {
   items1 = [closure_6(Text, obj3), ];
   const obj5 = {
     accessibilityRole: "button",
-    accessibilityLabel: intl2.string(channel(1113).t.WAI6xu),
+    accessibilityLabel: intl2.string(channel(1112).t.WAI6xu),
     hitSlop,
     onPress: function handleDismiss() {
       const obj = PinotAnalytics;
@@ -83,10 +83,10 @@ export function PinotMemberNoticeBar(channel) {
       const result = obj.trackPinotNoticeAction(obj2, "dismiss");
       onDismiss();
     },
-    children: closure_6(channel(7032).XSmallIcon, { size: "sm", color: "icon-muted" })
+    children: closure_6(channel(7031).XSmallIcon, { size: "sm", color: "icon-muted" })
   };
-  const PressableOpacity = channel(6911).PressableOpacity;
-  intl2 = channel(1113).intl;
+  const PressableOpacity = channel(6910).PressableOpacity;
+  intl2 = channel(1112).intl;
   items1[1] = closure_6(PressableOpacity, obj5);
   return closure_6(View, obj);
 }

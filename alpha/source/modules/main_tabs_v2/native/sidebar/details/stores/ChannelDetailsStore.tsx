@@ -1,11 +1,11 @@
-// Module ID: 8455
-// Function ID: 8456
+// Module ID: 8454
+// Function ID: 8455
 // Name: ChannelDetailsStore
-// Dependencies: [560, 1263, 2]
+// Dependencies: [560, 1262, 2]
 // Exports: deleteChannelDetailsSearchState, deleteChannelStates, getIsChannelDetailsSearchActive, setIsChannelDetailsSearchActive, useChannelDetailsSearchActiveSource, useIsChannelDetailsSearchActive
 
-// Module 8455 (ChannelDetailsStore)
-import react_native from "react-native" /* 1263 */;
+// Module 8454 (ChannelDetailsStore)
+import react_native from "react-native" /* 1262 */;
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ export function deleteChannelStates() {
 }
 export function useIsChannelDetailsSearchActive(arg0) {
   let closure_0 = arg0;
-  const f94684 = (isSearchActive) => isSearchActive.isSearchActive;
+  const f93058 = (isSearchActive) => isSearchActive.isSearchActive;
   return obj((states) => {
     states = states.states;
     let value = states.get(closure_0);
@@ -40,13 +40,13 @@ export function useIsChannelDetailsSearchActive(arg0) {
       const merged = Object.assign(closure_2);
       value = obj;
     }
-    return f94685(value);
+    return f93059(value);
   });
 }
 export function useChannelDetailsSearchActiveSource(arg0) {
   let obj;
   let closure_0 = arg0;
-  const f94685 = (searchActiveSource) => searchActiveSource.searchActiveSource;
+  const f93059 = (searchActiveSource) => searchActiveSource.searchActiveSource;
   return obj((states) => {
     states = states.states;
     let value = states.get(closure_0);
@@ -55,7 +55,7 @@ export function useChannelDetailsSearchActiveSource(arg0) {
       const merged = Object.assign(closure_2);
       value = obj;
     }
-    return f94685(value);
+    return f93059(value);
   });
 }
 export function setIsChannelDetailsSearchActive(arg0, isSearchActive, searchActiveSource) {
@@ -72,7 +72,7 @@ export function setIsChannelDetailsSearchActive(arg0, isSearchActive, searchActi
   const merged2 = Object.assign(obj);
   map = new Map(states);
   const result = map.set(arg0, obj3);
-  const obj5 = map(1263);
+  const obj5 = map(1262);
   obj5.batchUpdates(() => {
     const obj = { states: map };
     return obj.setState(obj);
@@ -94,7 +94,7 @@ export function deleteChannelDetailsSearchState(arg0) {
   const states = obj.getState().states;
   states.delete(arg0);
   map = new Map(states);
-  obj = map(1263);
+  obj = map(1262);
   obj.batchUpdates(() => {
     const obj = { states: map };
     return obj.setState(obj);

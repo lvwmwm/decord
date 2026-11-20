@@ -1,11 +1,11 @@
-// Module ID: 5800
-// Function ID: 5801
+// Module ID: 5802
+// Function ID: 5803
 // Name: useAccessibilityViewIsModalToggle
-// Dependencies: [19, 5801, 2]
+// Dependencies: [19, 5803, 2]
 // Exports: default
 
-// Module 5800 (useAccessibilityViewIsModalToggle)
-import AccessibilityFocusLockManagerDefault from "AccessibilityFocusLockManager" /* 5801 */;
+// Module 5802 (useAccessibilityViewIsModalToggle)
+import AccessibilityFocusLockManagerDefault from "AccessibilityFocusLockManager" /* 5803 */;
 import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,24 +1,24 @@
-// Module ID: 7486
-// Function ID: 7487
+// Module ID: 7485
+// Function ID: 7486
 // Name: PressableScale
-// Dependencies: [109, 19, 17, 21, 1655, 5397, 2]
+// Dependencies: [109, 19, 17, 21, 1653, 5399, 2]
 // Exports: PressableScale
 
-// Module 7486 (PressableScale)
+// Module 7485 (PressableScale)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import ButtonHooks from "ButtonHooks" /* 5397 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import ButtonHooks from "ButtonHooks" /* 5399 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
-const module_1655 = _mod1655;
+const module_1653 = _mod1653;
 
 let closure_2 = ["style"];
 const Pressable = react_native.Pressable;
 const jsx = Fragment.jsx;
-let closure_5 = module_1655.createAnimatedComponent(Pressable);
+let closure_5 = module_1653.createAnimatedComponent(Pressable);
 const result = size.fileFinishedImporting("design/components/experimental/Button/native/PressableScale.native.tsx");
 
 export function PressableScale(scaleAmountInPx) {
@@ -33,7 +33,7 @@ export function PressableScale(scaleAmountInPx) {
   const onLayout = scaleAmountInPx.onLayout;
   ({ onPressIn, onPressOut, ref } = scaleAmountInPx);
   const merged = Object.assign(scaleAmountInPx, Object.assign({ style: 0, scaleAmountInPx: 0, onLayout: 0, onPressIn: 0, onPressOut: 0, ref: 0 }));
-  const obj = _mod1655;
+  const obj = _mod1653;
   const sharedValue = obj.useSharedValue(0);
   const obj2 = ButtonHooks;
   const buttonPressAnimationProps = obj2.useButtonPressAnimationProps(sharedValue, num, onLayout, onPressIn, onPressOut);

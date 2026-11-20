@@ -1,15 +1,15 @@
-// Module ID: 13389
-// Function ID: 13390
+// Module ID: 13359
+// Function ID: 13360
 // Name: useFetchGuildBoostSlots
-// Dependencies: [5, 32, 19, 8625, 2120, 504, 1092, 8987, 8627, 2]
+// Dependencies: [5, 32, 19, 8624, 2118, 504, 1091, 8987, 8626, 2]
 // Exports: default
 
-// Module 13389 (useFetchGuildBoostSlots)
+// Module 13359 (useFetchGuildBoostSlots)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildBoostSlotStore from "GuildBoostSlotStore" /* 8625 */;
-import AppStateStore from "AppStateStore" /* 2120 */;
+import GuildBoostSlotStore from "GuildBoostSlotStore" /* 8624 */;
+import AppStateStore from "AppStateStore" /* 2118 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2;
@@ -53,7 +53,7 @@ export default function useFetchGuildBoostSlots() {
               const obj4 = { value, done: true };
               return obj4;
             } else {
-              return { value: "HermesInternal", done: "+60" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
@@ -97,7 +97,7 @@ export default function useFetchGuildBoostSlots() {
               } else {
                 c1(false);
                 c2 = 3;
-                return { value: "HermesInternal", done: "+60" };
+                return { value: "HermesInternal", done: null };
               }
             } catch (tmp11) {
               c2 = 3;

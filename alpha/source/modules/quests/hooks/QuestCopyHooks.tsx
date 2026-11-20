@@ -1,31 +1,31 @@
-// Module ID: 13663
-// Function ID: 13664
+// Module ID: 13634
+// Function ID: 13635
 // Name: QuestCopyHooks
-// Dependencies: [5, 32, 19, 2189, 1388, 6437, 1072, 1390, 1113, 9855, 8308, 8306, 2188, 13664, 2110, 504, 9836, 13665, 9645, 9654, 6440, 9860, 2027, 10716, 10554, 9875, 8311, 8310, 2]
+// Dependencies: [5, 32, 19, 2187, 1386, 6439, 1071, 1388, 1112, 9857, 8307, 8305, 2186, 13635, 2108, 504, 9838, 13636, 9645, 9654, 6442, 9862, 2025, 10658, 10496, 9878, 8310, 8309, 2]
 // Exports: getQuestsInstructionsToWinReward, getRewardCodeRedemptionInstructions, useModalCtaConfig, usePrimaryCtaCopy, useQuestBarSubtitle, useQuestBarTitle, useQuestDescription
 
-// Module 13663 (QuestCopyHooks)
+// Module 13634 (QuestCopyHooks)
 import get_initialized from "get initialized" /* 504 */;
-import Constants from "Constants" /* 1072 */;
-import PremiumConstants from "PremiumConstants" /* 1390 */;
-import NumberUtils from "NumberUtils" /* 2027 */;
-import PremiumTypeUtils from "PremiumTypeUtils" /* 2110 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
-import QuestTypes from "QuestTypes" /* 6440 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 8308 */;
-import QuestType from "QuestType" /* 8310 */;
+import Constants from "Constants" /* 1071 */;
+import PremiumConstants from "PremiumConstants" /* 1388 */;
+import NumberUtils from "NumberUtils" /* 2025 */;
+import PremiumTypeUtils from "PremiumTypeUtils" /* 2108 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2186 */;
+import QuestTypes from "QuestTypes" /* 6442 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 8307 */;
+import QuestType from "QuestType" /* 8309 */;
 import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 9645 */;
-import hooks_QuestHooks from "hooks/QuestHooks" /* 9836 */;
-import QuestRewardUtils from "QuestRewardUtils" /* 9855 */;
-import QuestCopyUtils from "QuestCopyUtils" /* 9860 */;
-import isActivitySupportedOnClientPlatformDefault from "isActivitySupportedOnClientPlatform" /* 10716 */;
-import useInGameQuestConnectState from "useInGameQuestConnectState" /* 13665 */;
+import hooks_QuestHooks from "hooks/QuestHooks" /* 9838 */;
+import QuestRewardUtils from "QuestRewardUtils" /* 9857 */;
+import QuestCopyUtils from "QuestCopyUtils" /* 9862 */;
+import isActivitySupportedOnClientPlatformDefault from "isActivitySupportedOnClientPlatform" /* 10658 */;
+import useInGameQuestConnectState from "useInGameQuestConnectState" /* 13636 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2189 */;
-import UserStore from "UserStore" /* 1388 */;
-import QuestConstants from "QuestConstants" /* 6437 */;
+import LocaleStore from "LocaleStore" /* 2187 */;
+import UserStore from "UserStore" /* 1386 */;
+import QuestConstants from "QuestConstants" /* 6439 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2;
@@ -35,10 +35,10 @@ let c9;
 let metroImportAll;
 let tmp;
 let tmp2;
-const intl13 = tmp(1113);
-const utils_QuestUtils = tmp(8306);
+const intl13 = tmp(1112);
+const utils_QuestUtils = tmp(8305);
 const GameProfileAnalyticUtils = tmp2(9654);
-const SponsoredQuestUtils = tmp(13664);
+const SponsoredQuestUtils = tmp(13635);
 function _getQuestsInstructionsToWinReward(arg0) {
   let applications;
   let currentUser;
@@ -590,9 +590,9 @@ export function useQuestDescription(quest, sourceQuestContent, QUEST_HOME_MOBILE
     const claimedAt = userStatus2.claimedAt;
   }
   if (tmp5) {
-    const intl = tmp(1113).intl;
+    const intl = tmp(1112).intl;
     const obj3 = { claimDate: tmp7 };
-    formatToPlainStringResult = intl.formatToPlainString(tmp(1113).t.lOVr0O, obj3);
+    formatToPlainStringResult = intl.formatToPlainString(tmp(1112).t.lOVr0O, obj3);
   }
   return formatToPlainStringResult;
 }
@@ -636,14 +636,14 @@ export function useQuestBarSubtitle(arg0) {
   const tmpResult = hooks_QuestHooks;
   const isQuestProgressing = tmpResult.useIsQuestProgressing(quest);
   if (tmp8) {
-    const intl9 = tmp(1113).intl;
+    const intl9 = tmp(1112).intl;
     const obj6 = { expirationDate: questFormattedDate };
     return intl9.formatToPlainString(intl13.t.APddvF, obj6);
   } else {
     const tmpResult7 = QuestTaskUtils;
     if (tmpResult7.hasAchievementInGameTask(quest)) {
       if (false === hasAlreadyLinked) {
-        const intl8 = tmp(1113).intl;
+        const intl8 = tmp(1112).intl;
         return intl8.string(intl13.t.mAdqf7);
       }
     }
@@ -654,13 +654,13 @@ export function useQuestBarSubtitle(arg0) {
           let formatResult;
           const gameTitle = quest.config.messages.gameTitle;
           if (null != onClickGameTitle) {
-            const intl7 = tmp(1113).intl;
+            const intl7 = tmp(1112).intl;
             const obj7 = { gameTitle, onClickGameTitle };
-            formatResult = intl7.format(tmp(1113).t.X8hBDz, obj7);
+            formatResult = intl7.format(tmp(1112).t.X8hBDz, obj7);
           } else {
-            const intl6 = tmp(1113).intl;
+            const intl6 = tmp(1112).intl;
             const obj8 = { gameTitle };
-            formatResult = intl6.format(tmp(1113).t.u3mdpP, obj8);
+            formatResult = intl6.format(tmp(1112).t.u3mdpP, obj8);
           }
           return formatResult;
         }
@@ -672,7 +672,7 @@ export function useQuestBarSubtitle(arg0) {
             if (!tmp11) {
               const tmpResult10 = QuestRewardUtils;
               const defaultRewardNameWithArticle = tmpResult10.getDefaultRewardNameWithArticle(quest.config, stateFromStores);
-              const intl5 = tmp(1113).intl;
+              const intl5 = tmp(1112).intl;
               const obj9 = { rewardNameWithArticle: defaultRewardNameWithArticle, targetMinutes: questTaskDetails.targetMinutes };
               return intl5.format(intl13.t["1votF6"], obj9);
             }
@@ -683,15 +683,15 @@ export function useQuestBarSubtitle(arg0) {
     } else {
       let stringResult;
       if (tmpResult8.hasWatchVideoTasks(quest)) {
-        const intl4 = tmp(1113).intl;
-        stringResult = intl4.string(tmp(1113).t["o+e9yh"]);
+        const intl4 = tmp(1112).intl;
+        stringResult = intl4.string(tmp(1112).t["o+e9yh"]);
       } else if (tmp14 > 0) {
         let stringResult1;
         const tmpResult11 = QuestTaskUtils;
         if (tmpResult11.hasAchievementInGameTask(quest)) {
           if (true === hasAlreadyLinked) {
-            const intl3 = tmp(1113).intl;
-            stringResult1 = intl3.string(tmp(1113).t.JkyCIO);
+            const intl3 = tmp(1112).intl;
+            stringResult1 = intl3.string(tmp(1112).t.JkyCIO);
           }
           stringResult = stringResult1;
         }
@@ -701,12 +701,12 @@ export function useQuestBarSubtitle(arg0) {
           QuestCopyUtils;
           stringResult1 = getContextualEntrypointHeading(obj10);
         } else {
-          const intl2 = tmp(1113).intl;
-          stringResult1 = intl2.string(tmp(1113).t.mOrpXG);
+          const intl2 = tmp(1112).intl;
+          stringResult1 = intl2.string(tmp(1112).t.mOrpXG);
         }
       } else {
-        const intl = tmp(1113).intl;
-        stringResult = intl.string(tmp(1113).t.S6UUc5);
+        const intl = tmp(1112).intl;
+        stringResult = intl.string(tmp(1112).t.S6UUc5);
       }
       return stringResult;
     }
@@ -730,14 +730,14 @@ export function useQuestBarTitle(questDockQuest, arg1) {
   }
   const tmp8 = null != thirdPartyTaskDetails ? thirdPartyTaskDetails.percentComplete : questTaskDetails.percentComplete;
   if (null != completedAt) {
-    const intl6 = tmp(1113).intl;
+    const intl6 = tmp(1112).intl;
     return intl6.string(intl13.t["ij5E/5"]);
   } else {
     let stringResult;
     const tmpResult = QuestTaskUtils;
     if (tmpResult.hasAchievementInGameTask(questDockQuest)) {
       if (false === arg1) {
-        const intl5 = tmp(1113).intl;
+        const intl5 = tmp(1112).intl;
         return intl5.string(intl13.t.s9r2a1);
       }
     }
@@ -745,7 +745,7 @@ export function useQuestBarTitle(questDockQuest, arg1) {
     if (tmpResult4.hasAchievementInGameTask(questDockQuest)) {
       if (true === arg1) {
         if (0 === tmp8) {
-          const intl4 = tmp(1113).intl;
+          const intl4 = tmp(1112).intl;
           return intl4.string(intl13.t["2+opCy"]);
         }
       }
@@ -759,20 +759,20 @@ export function useQuestBarTitle(questDockQuest, arg1) {
       if (tmp8 > 0) {
         const tmpResult5 = NumberUtils;
         const formatPercentResult = tmpResult5.formatPercent(stateFromStores, tmp8, { roundingMode: "floor" });
-        const intl3 = tmp(1113).intl;
+        const intl3 = tmp(1112).intl;
         const obj5 = { percent: formatPercentResult };
         return intl3.formatToPlainString(intl13.t.lVZaXD, obj5);
       }
     }
     if (first === QuestTypes.TaskPlatformScreen.SELECT) {
-      const intl2 = tmp(1113).intl;
-      stringResult = intl2.string(tmp(1113).t.EMrUHQ);
+      const intl2 = tmp(1112).intl;
+      stringResult = intl2.string(tmp(1112).t.EMrUHQ);
     } else {
       const tmpResult6 = QuestTaskUtils;
       const isConsoleQuestResult = tmpResult6.isConsoleQuest(questDockQuest);
-      const intl = tmp(1113).intl;
+      const intl = tmp(1112).intl;
       const string = intl.string;
-      const t = tmp(1113).t;
+      const t = tmp(1112).t;
       if (isConsoleQuestResult) {
         stringResult = string(t.mOrpXG);
       } else {
@@ -815,7 +815,7 @@ export function usePrimaryCtaCopy(arg0) {
     }
     PLAY = constants.PLAY;
   }, items);
-  const tmp4 = quest(9836);
+  const tmp4 = quest(9838);
   if (constants3.PLAY === memo) {
     const features2 = quest.config.features;
     let hasItem = features2.includes(constants2.MOBILE_ACTIVITY_QUEST);
@@ -838,28 +838,28 @@ export function usePrimaryCtaCopy(arg0) {
     if (hasItem) {
       const features3 = quest.config.features;
       if (features3.includes(tmp15.CLOUD_GAMING_ACTIVITY)) {
-        const intl6 = tmp2(1113).intl;
-        return intl6.string(quest(1113).t["+qoymD"]);
+        const intl6 = tmp2(1112).intl;
+        return intl6.string(quest(1112).t["+qoymD"]);
       } else {
-        let tmp2Result = tmp2(8306);
+        let tmp2Result = tmp2(8305);
         if (tmp2Result.canLaunchActivity(quest)) {
-          const intl5 = tmp2(1113).intl;
+          const intl5 = tmp2(1112).intl;
           const string2 = intl5.string;
-          const t2 = tmp2(1113).t;
+          const t2 = tmp2(1112).t;
           return string2(shortText ? t2.E4kW5O : t2["Ie9++s"]);
         }
       }
     }
-    const intl4 = tmp2(1113).intl;
-    return intl4.string(quest(1113).t.l7E81v);
+    const intl4 = tmp2(1112).intl;
+    return intl4.string(quest(1112).t.l7E81v);
   } else if (constants3.STREAM === memo) {
-    const intl3 = tmp2(1113).intl;
-    return intl3.string(quest(1113).t.l7E81v);
+    const intl3 = tmp2(1112).intl;
+    return intl3.string(quest(1112).t.l7E81v);
   } else if (constants3.WATCH_VIDEO === memo) {
-    const tmp2Result3 = quest(10554);
+    const tmp2Result3 = quest(10496);
     return tmp2Result3.getVideoQuestWatchCtaText(tmp5);
   } else if (constants3.IN_GAME === memo) {
-    let tmp2Result4 = tmp2(8306);
+    let tmp2Result4 = tmp2(8305);
     if (tmp2Result4.canLaunchActivity(quest)) {
       let stringResult;
       const features = quest.config.features;
@@ -880,15 +880,15 @@ export function usePrimaryCtaCopy(arg0) {
         hasItem1 = tmp12Result;
       }
       if (hasItem1) {
-        const intl2 = tmp2(1113).intl;
+        const intl2 = tmp2(1112).intl;
         const string = intl2.string;
-        const t = tmp2(1113).t;
+        const t = tmp2(1112).t;
         stringResult = string(shortText ? t.CkUzLd : t["hRIVy+"]);
       }
       return stringResult;
     }
-    const intl = tmp2(1113).intl;
-    stringResult = intl.string(tmp2(1113).t.l7E81v);
+    const intl = tmp2(1112).intl;
+    stringResult = intl.string(tmp2(1112).t.l7E81v);
   }
 }
 export function getRewardCodeRedemptionInstructions(arg0) {
@@ -903,7 +903,7 @@ export function getRewardCodeRedemptionInstructions(arg0) {
     platform = rewardCode.platform;
   }
   if (platform == null) {
-    platform = tmp(6440).QuestRewardCodePlatforms.CROSS_PLATFORM;
+    platform = tmp(6442).QuestRewardCodePlatforms.CROSS_PLATFORM;
   }
   let rewardCodeQuestReward = null;
   if (result) {
@@ -961,7 +961,7 @@ export function useModalCtaConfig(quest) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -1002,7 +1002,7 @@ export function useModalCtaConfig(quest) {
             }
             openGameLinkDirectly(tmp18, obj5);
             c2 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp10) {
           c2 = 3;
@@ -1042,18 +1042,18 @@ export function useModalCtaConfig(quest) {
           if (!features.includes(constants.NON_GAMING_PLAY_QUEST)) {
             const tmp5Result2 = utils_QuestUtils;
             if (!tmp5Result2.isSponsoredPlayQuest(quest)) {
-              const intl = tmp5(1113).intl;
-              taskTitle = intl.string(tmp5(1113).t["wirwN+"]);
+              const intl = tmp5(1112).intl;
+              taskTitle = intl.string(tmp5(1112).t["wirwN+"]);
             }
           }
         }
-        const intl2 = tmp5(1113).intl;
-        taskTitle = intl2.string(tmp5(1113).t.y8Xf3k);
+        const intl2 = tmp5(1112).intl;
+        taskTitle = intl2.string(tmp5(1112).t.y8Xf3k);
       }
       subtitle = taskTitle;
     }
     return subtitle;
   }, items);
-  obj2 = quest(9860);
+  obj2 = quest(9862);
   return obj;
 }

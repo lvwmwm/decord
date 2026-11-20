@@ -1,51 +1,51 @@
-// Module ID: 7589
-// Function ID: 7590
+// Module ID: 7588
+// Function ID: 7589
 // Name: CreateChannelModal
-// Dependencies: [32, 19, 17, 4645, 4659, 4641, 4663, 4724, 4734, 1388, 1072, 6385, 21, 4792, 575, 7562, 7570, 6915, 7501, 7575, 7569, 7585, 7560, 7568, 7578, 7577, 7574, 7567, 7584, 1113, 5383, 2188, 4854, 6926, 7231, 7590, 1187, 5367, 504, 38, 5408, 6411, 7607, 7608, 1502, 7609, 7615, 5529, 6976, 7627, 6910, 7628, 12, 7630, 5808, 7102, 7229, 7632, 7639, 7437, 7576, 7643, 7646, 5827, 7655, 1264, 7670, 5371, 6973, 2]
+// Dependencies: [32, 19, 17, 4647, 4661, 4643, 4665, 4726, 4736, 1386, 1071, 6387, 21, 4794, 575, 7561, 7569, 6914, 7500, 7574, 7568, 7584, 7559, 7567, 7577, 7576, 7573, 7566, 7583, 1112, 5385, 2186, 4856, 6925, 7230, 7589, 1186, 5369, 504, 38, 5410, 6413, 7606, 7607, 1500, 7608, 7614, 5531, 6975, 7626, 6909, 7627, 12, 7629, 5810, 7101, 7228, 7631, 7638, 7436, 7575, 7642, 7645, 5829, 7654, 1263, 7669, 5373, 6972, 2]
 // Exports: default
 
-// Module 7589 (CreateChannelModal)
+// Module 7588 (CreateChannelModal)
 import nativeDefault from "native" /* 575 */;
-import intl16 from "intl" /* 1113 */;
-import native from "native" /* 1187 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
-import ChannelRecord from "ChannelRecord" /* 4645 */;
-import GuildRecord from "GuildRecord" /* 4659 */;
-import react_native from "react-native" /* 4854 */;
-import reactDefault from "react" /* 5371 */;
-import ChannelUtils from "ChannelUtils" /* 5827 */;
-import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 6385 */;
-import HeaderActionButton from "HeaderActionButton" /* 6910 */;
-import VoiceNormalIcon from "VoiceNormalIcon" /* 6915 */;
-import NavigatorHeader from "NavigatorHeader" /* 6976 */;
-import FormRadio from "FormRadio" /* 7231 */;
-import StageIcon from "StageIcon" /* 7501 */;
-import TextLockIcon from "TextLockIcon" /* 7560 */;
-import TextIcon from "TextIcon" /* 7562 */;
-import ImageLockIcon from "ImageLockIcon" /* 7567 */;
-import ForumLockIcon from "ForumLockIcon" /* 7568 */;
-import ImageIcon from "ImageIcon" /* 7569 */;
-import ForumIcon from "ForumIcon" /* 7570 */;
-import AnnouncementsLockIcon from "AnnouncementsLockIcon" /* 7574 */;
-import AnnouncementsIcon from "AnnouncementsIcon" /* 7575 */;
-import StageLockIcon from "StageLockIcon" /* 7577 */;
-import VoiceLockIcon from "VoiceLockIcon" /* 7578 */;
-import AppsLockIcon from "AppsLockIcon" /* 7584 */;
-import AppsIcon from "AppsIcon" /* 7585 */;
-import CreateChannelModalActionCreatorsDefault from "CreateChannelModalActionCreators" /* 7627 */;
-import sanitizeChannelNameDefault from "sanitizeChannelName" /* 7630 */;
+import intl16 from "intl" /* 1112 */;
+import native from "native" /* 1186 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1263 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2186 */;
+import ChannelRecord from "ChannelRecord" /* 4647 */;
+import GuildRecord from "GuildRecord" /* 4661 */;
+import react_native from "react-native" /* 4856 */;
+import reactDefault from "react" /* 5373 */;
+import ChannelUtils from "ChannelUtils" /* 5829 */;
+import ChannelPermissionsConstants from "ChannelPermissionsConstants" /* 6387 */;
+import HeaderActionButton from "HeaderActionButton" /* 6909 */;
+import VoiceNormalIcon from "VoiceNormalIcon" /* 6914 */;
+import NavigatorHeader from "NavigatorHeader" /* 6975 */;
+import FormRadio from "FormRadio" /* 7230 */;
+import StageIcon from "StageIcon" /* 7500 */;
+import TextLockIcon from "TextLockIcon" /* 7559 */;
+import TextIcon from "TextIcon" /* 7561 */;
+import ImageLockIcon from "ImageLockIcon" /* 7566 */;
+import ForumLockIcon from "ForumLockIcon" /* 7567 */;
+import ImageIcon from "ImageIcon" /* 7568 */;
+import ForumIcon from "ForumIcon" /* 7569 */;
+import AnnouncementsLockIcon from "AnnouncementsLockIcon" /* 7573 */;
+import AnnouncementsIcon from "AnnouncementsIcon" /* 7574 */;
+import StageLockIcon from "StageLockIcon" /* 7576 */;
+import VoiceLockIcon from "VoiceLockIcon" /* 7577 */;
+import AppsLockIcon from "AppsLockIcon" /* 7583 */;
+import AppsIcon from "AppsIcon" /* 7584 */;
+import CreateChannelModalActionCreatorsDefault from "CreateChannelModalActionCreators" /* 7626 */;
+import sanitizeChannelNameDefault from "sanitizeChannelName" /* 7629 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import GuildStore from "GuildStore" /* 4663 */;
-import PermissionStore_mod from "PermissionStore" /* 4724 */;
-import RelationshipStore from "RelationshipStore" /* 4734 */;
-import UserStore from "UserStore" /* 1388 */;
-import Constants from "Constants" /* 1072 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import GuildStore from "GuildStore" /* 4665 */;
+import PermissionStore_mod from "PermissionStore" /* 4726 */;
+import RelationshipStore from "RelationshipStore" /* 4736 */;
+import UserStore from "UserStore" /* 1386 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -101,48 +101,48 @@ function ChannelTypeRow(selected) {
   const IconComponent = (isPrivate ? obj11 : obj3)[channelType].IconComponent;
   if (ChannelTypes.GUILD_TEXT === channelType) {
     const obj2 = { label: intl11.string(intl16.t.pnuRXC), description: intl12.string(intl16.t.oG6WsM) };
-    intl11 = tmp2(1113).intl;
-    intl12 = tmp2(1113).intl;
+    intl11 = tmp2(1112).intl;
+    intl12 = tmp2(1112).intl;
     tmp6 = obj2;
   } else if (ChannelTypes.GUILD_VOICE === channelType) {
     obj3 = { label: intl9.string(intl16.t.Sx55Oh), description: intl10.string(intl16.t.pqfkoF) };
-    intl9 = tmp2(1113).intl;
-    intl10 = tmp2(1113).intl;
+    intl9 = tmp2(1112).intl;
+    intl10 = tmp2(1112).intl;
     tmp6 = obj3;
   } else if (ChannelTypes.GUILD_FORUM === channelType) {
     const obj4 = { label: intl7.string(intl16.t.eAVID5), description: intl8.string(intl16.t.iZ5pgg) };
-    intl7 = tmp2(1113).intl;
-    intl8 = tmp2(1113).intl;
+    intl7 = tmp2(1112).intl;
+    intl8 = tmp2(1112).intl;
     tmp6 = obj4;
   } else if (ChannelTypes.GUILD_ANNOUNCEMENT === channelType) {
     const obj5 = { label: intl5.string(intl16.t.qr9dEP), description: intl6.string(intl16.t.gBkfzu) };
-    intl5 = tmp2(1113).intl;
-    intl6 = tmp2(1113).intl;
+    intl5 = tmp2(1112).intl;
+    intl6 = tmp2(1112).intl;
     tmp6 = obj5;
   } else if (ChannelTypes.GUILD_STAGE_VOICE === channelType) {
     const obj6 = { label: intl3.string(intl16.t.pNWst0), description: intl4.string(intl16.t.VPAwgo) };
-    intl3 = tmp2(1113).intl;
-    intl4 = tmp2(1113).intl;
+    intl3 = tmp2(1112).intl;
+    intl4 = tmp2(1112).intl;
     tmp6 = obj6;
   } else if (ChannelTypes.GUILD_APP === channelType) {
     const obj7 = { label: intl.string(intl16.t["A+8d6M"]), description: intl2.string(intl16.t.LVQQ3Z) };
-    intl = tmp2(1113).intl;
-    intl2 = tmp2(1113).intl;
+    intl = tmp2(1112).intl;
+    intl2 = tmp2(1112).intl;
     tmp6 = obj7;
   } else if (ChannelTypes.GUILD_MEDIA === channelType) {
     const obj8 = { label: intl13.string(intl16.t["6x6fVg"]), description: authStore5(closure_21, obj9) };
-    intl13 = tmp2(1113).intl;
+    intl13 = tmp2(1112).intl;
     obj9 = { children: items };
     const obj10 = { variant: "body-xs/normal", color: "text-muted", children: intl14.string(intl16.t.JyCrwS) };
-    const Text = tmp2(5383).Text;
-    intl14 = tmp2(1113).intl;
+    const Text = tmp2(5385).Text;
+    intl14 = tmp2(1112).intl;
     items = [closure_20(Text, obj10), ];
     obj11 = { variant: "body-xs/normal", children: format(v2Sapx1, obj12) };
-    const Text2 = tmp2(5383).Text;
-    const intl15 = tmp2(1113).intl;
+    const Text2 = tmp2(5385).Text;
+    const intl15 = tmp2(1112).intl;
     format = intl15.format;
     obj12 = { hcArticleUrl: obj15.getCreatorSupportArticleURL(constants3.MEDIA_CHANNEL) };
-    v2Sapx1 = tmp2(1113).t["2Sapx1"];
+    v2Sapx1 = tmp2(1112).t["2Sapx1"];
     obj15 = HelpdeskUtilsDefault;
     items[1] = closure_20(Text2, obj11);
     tmp6 = obj8;
@@ -164,15 +164,15 @@ function ChannelTypeRow(selected) {
     subLabel: description
   };
   obj14 = { style: tmp.flexRow, children: closure_20(IconComponent, {}) };
-  const TableRow = tmp2(6926).TableRow;
+  const TableRow = tmp2(6925).TableRow;
   tmp9 = label;
   const tmp8 = metroRequire;
   if (true === isBeta) {
     const obj16 = { style: tmp.horizontalContainer, children: items1 };
     const obj17 = { text: label };
-    items1 = [closure_20(tmp2(7590).FormLabel, obj17), ];
+    items1 = [closure_20(tmp2(7589).FormLabel, obj17), ];
     const obj18 = { size: native.BetaSizes.SMALL };
-    const BetaTag = tmp2(1187).BetaTag;
+    const BetaTag = tmp2(1186).BetaTag;
     items1[1] = closure_20(BetaTag, obj18);
     tmp9 = authStore5(tmp8, obj16);
   }

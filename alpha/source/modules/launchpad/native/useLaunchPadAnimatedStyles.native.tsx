@@ -1,18 +1,18 @@
-// Module ID: 19171
-// Function ID: 19172
+// Module ID: 18990
+// Function ID: 18991
 // Name: useLaunchPadAnimatedStyles
-// Dependencies: [11871, 1380, 4792, 18282, 12811, 1630, 1655, 5393, 2]
+// Dependencies: [11813, 1378, 4794, 18109, 12781, 1628, 1653, 5395, 2]
 // Exports: default
 
-// Module 19171 (useLaunchPadAnimatedStyles)
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import spring_spring from "spring/spring" /* 5393 */;
-import LaunchPadConstants from "LaunchPadConstants" /* 11871 */;
-import useWindowDimensionsSharedValueDefault from "useWindowDimensionsSharedValue" /* 12811 */;
-import useAnimatedKeyboardHeightDefault from "useAnimatedKeyboardHeight" /* 18282 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
-import createStyles from "createStyles" /* 4792 */;
+// Module 18990 (useLaunchPadAnimatedStyles)
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import spring_spring from "spring/spring" /* 5395 */;
+import LaunchPadConstants from "LaunchPadConstants" /* 11813 */;
+import useWindowDimensionsSharedValueDefault from "useWindowDimensionsSharedValue" /* 12781 */;
+import useAnimatedKeyboardHeightDefault from "useAnimatedKeyboardHeight" /* 18109 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let _undefined, _undefined2;
@@ -53,11 +53,11 @@ export default function useLaunchpadAnimatedStyles(launchPadSharedState) {
   const tmp4 = useWindowDimensionsSharedValueDefault();
   const tmp5 = require;
   const top = useSafeAreaInsetsDefault().top;
-  const tmp6 = _mod1655;
+  const tmp6 = _mod1653;
   let items = [closure_7, , , , , , , , , , ];
   const useAnimatedStyle = tmp6.useAnimatedStyle;
   items[1] = spring_spring.withSpring;
-  items[2] = _mod1655.interpolate;
+  items[2] = _mod1653.interpolate;
   items[3] = launchPadSharedState;
   items[4] = tmp4;
   items[5] = LAUNCH_PAD_SPRING_CONFIG;
@@ -119,10 +119,10 @@ export default function useLaunchpadAnimatedStyles(launchPadSharedState) {
   const tmp7 = LAUNCH_PAD_SPRING_CONFIG;
   const animatedStyle = useAnimatedStyle(useLaunchPadAnimatedStylesNativeTsx2);
   let items2 = [closure_8, , , , ];
-  const useAnimatedStyle2 = _mod1655.useAnimatedStyle;
-  _mod1655;
+  const useAnimatedStyle2 = _mod1653.useAnimatedStyle;
+  _mod1653;
   items2[1] = spring_spring.withSpring;
-  items2[2] = _mod1655.interpolate;
+  items2[2] = _mod1653.interpolate;
   items2[3] = launchPadSharedState;
   items2[4] = tmp7;
   let c0;

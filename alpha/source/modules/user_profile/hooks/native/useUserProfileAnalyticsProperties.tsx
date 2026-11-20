@@ -1,11 +1,11 @@
-// Module ID: 8027
-// Function ID: 8028
+// Module ID: 8026
+// Function ID: 8027
 // Name: useUserProfileAnalyticsProperties
-// Dependencies: [19, 7950, 2]
+// Dependencies: [19, 7949, 2]
 // Exports: default
 
-// Module 8027 (useUserProfileAnalyticsProperties)
-import Constants from "Constants" /* 7950 */;
+// Module 8026 (useUserProfileAnalyticsProperties)
+import Constants from "Constants" /* 7949 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

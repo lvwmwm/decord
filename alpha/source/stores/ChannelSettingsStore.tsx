@@ -1,25 +1,25 @@
-// Module ID: 11190
-// Function ID: 11191
+// Module ID: 11132
+// Function ID: 11133
 // Name: ChannelSettingsStore
-// Dependencies: [4645, 7147, 1407, 4641, 1072, 1112, 4736, 4738, 4650, 4651, 1285, 572, 12, 4655, 2169, 504, 2]
+// Dependencies: [4647, 7146, 1405, 4643, 1071, 1111, 4738, 4740, 4652, 4653, 1284, 572, 12, 4657, 2167, 504, 2]
 
-// Module 11190 (ChannelSettingsStore)
+// Module 11132 (ChannelSettingsStore)
 import _mod12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ThreadConstants from "ThreadConstants" /* 1112 */;
-import HTTPUtils from "HTTPUtils" /* 1285 */;
-import _modDef2169 from "module_2169" /* 2169 */;
-import ChannelRecord from "ChannelRecord" /* 4645 */;
-import ThreadSortOrder from "ThreadSortOrder" /* 4650 */;
-import ForumLayout from "ForumLayout" /* 4651 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 4655 */;
-import ReactionUtils from "ReactionUtils" /* 4736 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4738 */;
-import InviteRecord from "InviteRecord" /* 7147 */;
-import UserRecord from "UserRecord" /* 1407 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import Constants from "Constants" /* 1072 */;
+import ThreadConstants from "ThreadConstants" /* 1111 */;
+import HTTPUtils from "HTTPUtils" /* 1284 */;
+import _modDef2167 from "module_2167" /* 2167 */;
+import ChannelRecord from "ChannelRecord" /* 4647 */;
+import ThreadSortOrder from "ThreadSortOrder" /* 4652 */;
+import ForumLayout from "ForumLayout" /* 4653 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 4657 */;
+import ReactionUtils from "ReactionUtils" /* 4738 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4740 */;
+import InviteRecord from "InviteRecord" /* 7146 */;
+import UserRecord from "UserRecord" /* 1405 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 const module_12 = _mod12;
@@ -29,13 +29,13 @@ let FormStates;
 let closure_14;
 let closure_15;
 let map1;
-const f100463 = (body) => {
+const f98733 = (body) => {
   c21 = false;
   const obj = DispatcherDefault;
   const obj2 = { type: "CHANNEL_SETTINGS_LOADED_INVITES", invites: body.body };
   obj.dispatch(obj2);
 };
-const f100464 = () => {
+const f98734 = () => {
   c21 = false;
   return false;
 };
@@ -111,7 +111,7 @@ function normalizeChannelPropertyForCompare(item, toJSResult, type) {
 function _createInvite(code) {
   let fromInviteGuildResult;
   let tmp2;
-  const obj = { code: code.code, temporary: code.temporary, revoked: code.revoked, inviter: tmp2, channel: closure_9(code.channel), guild: fromInviteGuildResult, uses: null, maxUses: null, maxAge: null, createdAt: _modDef2169(code.created_at), type: null, roles: null };
+  const obj = { code: code.code, temporary: code.temporary, revoked: code.revoked, inviter: tmp2, channel: closure_9(code.channel), guild: fromInviteGuildResult, uses: null, maxUses: null, maxAge: null, createdAt: _modDef2167(code.created_at), type: null, roles: null };
   tmp2 = null;
   const tmp = InviteRecord;
   if (null != code.inviter) {
@@ -303,7 +303,7 @@ invites = {
         let obj2 = { url: closure_15.INSTANT_INVITES(channel.id), oldFormErrors: true, rejectWithError: true };
         const get = HTTP.get;
         const value = get(obj2);
-        value.then(f100463, f100464);
+        value.then(f98733, f98734);
       }
       return true;
     }
@@ -470,7 +470,7 @@ invites = {
       const get = HTTP.get;
       const obj = { url: closure_15.INSTANT_INVITES(channel.id), oldFormErrors: true, rejectWithError: true };
       const value = get(obj);
-      value.then(f100463, f100464);
+      value.then(f98733, f98734);
     }
   },
   CHANNEL_SETTINGS_LOADED_INVITES: function handleLoadedInvites(invites) {

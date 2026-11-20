@@ -1,17 +1,17 @@
-// Module ID: 10304
-// Function ID: 10305
+// Module ID: 10246
+// Function ID: 10247
 // Name: InAppReportsDeleteMessageElement
-// Dependencies: [32, 19, 5843, 1072, 21, 504, 5529, 8131, 10296, 1113, 5499, 2]
+// Dependencies: [32, 19, 5845, 1071, 21, 504, 5531, 8130, 10238, 1112, 5501, 2]
 // Exports: default
 
-// Module 10304 (InAppReportsDeleteMessageElement)
+// Module 10246 (InAppReportsDeleteMessageElement)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1072 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5529 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 8131 */;
+import Constants from "Constants" /* 1071 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5531 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 8130 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import MessageStore from "MessageStore" /* 5843 */;
+import MessageStore from "MessageStore" /* 5845 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -45,9 +45,9 @@ export default function DeleteMessageElement(message) {
     const obj3 = MessageActionCreatorsDefault;
     obj3.deleteMessage(message.getChannelId(), message.id);
   }, items3);
-  reportId(10296);
-  const intl = message(1113).intl;
-  const intl2 = message(1113).intl;
-  const intl3 = message(1113).intl;
-  return <tmp6 title={intl.string(message(1113).t.c9BHL9)} disabledTitle={intl2.string(message(1113).t.AT2KSd)} description={intl3.string(message(1113).t.dK8S0w)} disabled={first} variant="danger" onPress={callback} icon={null} />;
+  reportId(10238);
+  const intl = message(1112).intl;
+  const intl2 = message(1112).intl;
+  const intl3 = message(1112).intl;
+  return <tmp6 title={intl.string(message(1112).t.c9BHL9)} disabledTitle={intl2.string(message(1112).t.AT2KSd)} description={intl3.string(message(1112).t.dK8S0w)} disabled={first} variant="danger" onPress={callback} icon={null} />;
 };

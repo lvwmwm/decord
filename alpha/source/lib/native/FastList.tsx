@@ -1,17 +1,17 @@
-// Module ID: 7330
-// Function ID: 7331
+// Module ID: 7329
+// Function ID: 7330
 // Name: FastList
-// Dependencies: [109, 32, 19, 17, 21, 12, 558, 7205, 5383, 1380, 1655, 7331, 5024, 7332, 2]
+// Dependencies: [109, 32, 19, 17, 21, 12, 558, 7204, 5385, 1378, 1653, 7330, 5026, 7331, 2]
 // Exports: getItemSizeOverrideKey
 
-// Module 7330 (FastList)
+// Module 7329 (FastList)
 import _modDef12 from "module_12" /* 12 */;
 import shallowEqual from "shallowEqual" /* 558 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import BottomSheetModal from "BottomSheetModal" /* 5024 */;
-import NativeViewDefault from "NativeView" /* 7205 */;
-import refObjectUnionAsPropDefault from "refObjectUnionAsProp" /* 7332 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import BottomSheetModal from "BottomSheetModal" /* 5026 */;
+import NativeViewDefault from "NativeView" /* 7204 */;
+import refObjectUnionAsPropDefault from "refObjectUnionAsProp" /* 7331 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -21,7 +21,7 @@ import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const shallowEqualDefault = shallowEqual;
-const module_1655 = _mod1655;
+const module_1653 = _mod1653;
 let _require, obj1, set, transform;
 
 let StyleSheet;
@@ -49,7 +49,7 @@ function FastListScrollWorklet(scrollViewRef) {
   scrollViewRef = scrollViewRef.scrollViewRef;
   let event;
   ({ scrollPosValue, horizontal, onScrollWorklet } = scrollViewRef);
-  obj = scrollViewRef(1655);
+  obj = scrollViewRef(1653);
   const mutable = obj.makeMutable(false);
   const items = [closure_29, horizontal, mutable, scrollPosValue, onScrollWorklet];
   let c0;
@@ -57,7 +57,7 @@ function FastListScrollWorklet(scrollViewRef) {
   let c2;
   let c3;
   [tmp2, tmp3, tmp4, tmp5, tmp6] = items;
-  const obj2 = scrollViewRef(1655);
+  const obj2 = scrollViewRef(1653);
   class FastListTsx2 {
     constructor(contentOffset) {
       contentOffset = contentOffset.contentOffset;
@@ -1102,9 +1102,9 @@ let closure_20 = react.memo(function FastListStickySectionRendererComponent(chil
     items1.push(1);
   }
   const items2 = [closure_19, scrollPosValue, , , , ];
-  const useAnimatedStyle = _mod1655.useAnimatedStyle;
-  _mod1655;
-  items2[2] = _mod1655.interpolate;
+  const useAnimatedStyle = _mod1653.useAnimatedStyle;
+  _mod1653;
+  items2[2] = _mod1653.interpolate;
   items2[3] = items;
   items2[4] = items1;
   items2[5] = horizontal;
@@ -1151,7 +1151,7 @@ let closure_20 = react.memo(function FastListStickySectionRendererComponent(chil
   const animatedStyle = useAnimatedStyle(FastListTsx1);
   const onlyResult = Children.only(children(section, fastListInstance, scrollPosValue, layoutStart));
   let style;
-  const View = module_1655.View;
+  const View = module_1653.View;
   const tmp20 = authStore;
   if (null != onlyResult) {
     if ("props" in onlyResult) {
@@ -2002,7 +2002,7 @@ class FastList extends PureComponent {
         const result2 = scrollPosValue.set(tmp8);
         self.scrollPosValue = scrollPosValue;
       } else {
-        const obj3 = _mod1655;
+        const obj3 = _mod1653;
         self.scrollPosValue = obj3.makeMutable(tmp8);
       }
       if (endImportTime > 0) {
@@ -2504,7 +2504,7 @@ class FastList extends PureComponent {
 const prototype4 = FastList.prototype;
 FastList.defaultProps = { batchesToRender: 12, contentInset: { top: 0, right: 0, left: 0, bottom: 0 }, disableLegacyGestureHandling: false, disableRecyclingOnFullCompute: false, stickyHeaderFooter: false };
 let closure_29 = { code: "(function FastListTsx2(event){let[horizontal,workletMounted,scrollPosValue,onScrollWorklet]=this.__closure;const scrollPosition=!horizontal?event.contentOffset.y:event.contentOffset.x;const contentSize=!horizontal?event.contentSize.height:event.contentSize.width;if(contentSize===0&&!workletMounted.get())return;workletMounted.set(true);scrollPosValue.set(Math.min(scrollPosition,contentSize));if(onScrollWorklet!=null){const layoutSize=!horizontal?event.layoutMeasurement.height:event.layoutMeasurement.width;onScrollWorklet(scrollPosition,contentSize,layoutSize);}})" };
-const animatedComponent = module_1655.createAnimatedComponent(FastList);
+const animatedComponent = module_1653.createAnimatedComponent(FastList);
 let size = size_mod;
 let result = size.fileFinishedImporting("lib/native/FastList.tsx");
 

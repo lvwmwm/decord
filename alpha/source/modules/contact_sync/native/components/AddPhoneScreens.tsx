@@ -1,24 +1,24 @@
-// Module ID: 13519
-// Function ID: 13520
+// Module ID: 13489
+// Function ID: 13490
 // Name: AddPhoneScreens
-// Dependencies: [5, 32, 19, 17, 1388, 13492, 21, 4792, 5346, 575, 1502, 5383, 1113, 7302, 7303, 13491, 563, 7070, 38, 7335, 7294, 2]
+// Dependencies: [5, 32, 19, 17, 1386, 13462, 21, 4794, 5348, 575, 1500, 5385, 1112, 7301, 7302, 13461, 563, 7069, 38, 7334, 7293, 2]
 // Exports: AddPhoneScreen, VerifyPasswordScreen, VerifyPhoneScreen
 
-// Module 13519 (AddPhoneScreens)
+// Module 13489 (AddPhoneScreens)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import NavigatorConstants from "NavigatorConstants" /* 5346 */;
-import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 7070 */;
-import AddPhoneDefault from "AddPhone" /* 7302 */;
-import PhoneActionCreators from "PhoneActionCreators" /* 7303 */;
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 13491 */;
-import ContactSyncModalStore from "ContactSyncModalStore" /* 13492 */;
+import NavigatorConstants from "NavigatorConstants" /* 5348 */;
+import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 7069 */;
+import AddPhoneDefault from "AddPhone" /* 7301 */;
+import PhoneActionCreators from "PhoneActionCreators" /* 7302 */;
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 13461 */;
+import ContactSyncModalStore from "ContactSyncModalStore" /* 13462 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1388 */;
+import UserStore from "UserStore" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const PhoneActionCreatorsDefault = PhoneActionCreators;
@@ -87,7 +87,7 @@ export function VerifyPhoneScreen() {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {

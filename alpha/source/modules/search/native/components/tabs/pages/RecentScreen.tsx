@@ -1,30 +1,30 @@
-// Module ID: 18781
-// Function ID: 18782
+// Module ID: 18605
+// Function ID: 18606
 // Name: RecentScreen
-// Dependencies: [32, 5, 19, 6520, 13134, 18782, 13121, 8457, 13123, 1072, 21, 6911, 13132, 1113, 5383, 9528, 18783, 7618, 13128, 13114, 504, 13110, 18775, 1503, 18786, 13107, 16041, 7674, 6293, 18787, 18788, 18791, 2]
+// Dependencies: [32, 5, 19, 6522, 13104, 18606, 13091, 8456, 13093, 1071, 21, 6910, 13102, 1112, 5385, 9528, 18607, 7617, 13098, 13084, 504, 13080, 18599, 1501, 18610, 13077, 16005, 7673, 6295, 18611, 18612, 18615, 2]
 
-// Module 18781 (RecentScreen)
+// Module 18605 (RecentScreen)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1072 */;
-import intl3 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import Pressables from "Pressables" /* 6911 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7674 */;
-import SearchPlatformUtils from "SearchPlatformUtils" /* 13107 */;
-import SmartSearchUtils from "SmartSearchUtils" /* 13110 */;
-import SearchUtils from "SearchUtils" /* 13114 */;
-import SearchPlatformConstants from "SearchPlatformConstants" /* 13123 */;
-import TrackingDefault from "Tracking" /* 13128 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13132 */;
-import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 16041 */;
+import Constants from "Constants" /* 1071 */;
+import intl3 from "intl" /* 1112 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import Pressables from "Pressables" /* 6910 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7673 */;
+import SearchPlatformUtils from "SearchPlatformUtils" /* 13077 */;
+import SmartSearchUtils from "SmartSearchUtils" /* 13080 */;
+import SearchUtils from "SearchUtils" /* 13084 */;
+import SearchPlatformConstants from "SearchPlatformConstants" /* 13093 */;
+import TrackingDefault from "Tracking" /* 13098 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13102 */;
+import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 16005 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import SearchMessageStore from "SearchMessageStore" /* 6520 */;
-import SearchGuildChannelTabStore from "SearchGuildChannelTabStore" /* 13134 */;
-import SearchHistoryStore from "SearchHistoryStore" /* 18782 */;
-import SearchQueryStore from "SearchQueryStore" /* 13121 */;
-import SearchConstants from "SearchConstants" /* 8457 */;
+import SearchMessageStore from "SearchMessageStore" /* 6522 */;
+import SearchGuildChannelTabStore from "SearchGuildChannelTabStore" /* 13104 */;
+import SearchHistoryStore from "SearchHistoryStore" /* 18606 */;
+import SearchQueryStore from "SearchQueryStore" /* 13091 */;
+import SearchConstants from "SearchConstants" /* 8456 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -35,19 +35,19 @@ let closure_12;
 let map1;
 let tmp2;
 let unpackModuleId;
-const AgeVerificationAnalyticsUtils = tmp2(6293);
+const AgeVerificationAnalyticsUtils = tmp2(6295);
 function ClearAllHistory(searchContext) {
   let intl2;
   searchContext = searchContext.searchContext;
-  const PressableHighlight = searchContext(6911).PressableHighlight;
-  const intl = searchContext(1113).intl;
-  ({ variant: "body-sm/semibold", color: "text-brand", children: intl2.string(searchContext(1113).t.LFTAUp) });
-  const Text = searchContext(5383).Text;
-  intl2 = searchContext(1113).intl;
+  const PressableHighlight = searchContext(6910).PressableHighlight;
+  const intl = searchContext(1112).intl;
+  ({ variant: "body-sm/semibold", color: "text-brand", children: intl2.string(searchContext(1112).t.LFTAUp) });
+  const Text = searchContext(5385).Text;
+  intl2 = searchContext(1112).intl;
   return <PressableHighlight onPress={function onPress() {
     const obj = SearchPlatformActionCreatorsDefault;
     return obj.clearSearchHistory(searchContext);
-  }} accessibilityRole="button" unstable_pressDelay={130} accessibilityLabel={intl.string(searchContext(1113).t.LFTAUp)}>{null}</PressableHighlight>;
+  }} accessibilityRole="button" unstable_pressDelay={130} accessibilityLabel={intl.string(searchContext(1112).t.LFTAUp)}>{null}</PressableHighlight>;
 }
 function ViewAll(onJumpToMedia) {
   let intl2;
@@ -66,7 +66,7 @@ let closure_19 = react.memo(function RecentScreen(searchContext) {
   let _undefined;
   let c1;
   let tmp4;
-  const f134592 = () => memo.getSearchHistory(searchContextId);
+  const f132541 = () => memo.getSearchHistory(searchContextId);
   searchContext = searchContext.searchContext;
   const onJumpToMedia = searchContext.onJumpToMedia;
   const suggestedData = searchContext.suggestedData;
@@ -89,8 +89,8 @@ let closure_19 = react.memo(function RecentScreen(searchContext) {
   let obj2 = searchContext(suggestedData[19]);
   const searchContextId = obj2.getSearchContextId(searchContext);
   c1 = undefined;
-  [tmp4, c1] = messages(isInitialSearchQuery.useState(f134592), 2);
-  const tmp3 = messages(isInitialSearchQuery.useState(f134592), 2);
+  [tmp4, c1] = messages(isInitialSearchQuery.useState(f132541), 2);
+  const tmp3 = messages(isInitialSearchQuery.useState(f132541), 2);
   const obj3 = searchContext(suggestedData[23]);
   let items1 = [searchContextId];
   const focusEffect = obj3.useFocusEffect(isInitialSearchQuery.useCallback(() => {
@@ -243,7 +243,7 @@ let closure_20 = react.memo(function RecentUserScreen(searchContext) {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -276,7 +276,7 @@ let closure_20 = react.memo(function RecentUserScreen(searchContext) {
             const result = obj.trackSuggestedSearchClicked(obj7);
             tmp4(searchContext, channelId);
             c4 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp19) {
           c4 = 3;

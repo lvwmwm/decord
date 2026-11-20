@@ -1,11 +1,11 @@
 // Module ID: 9246
 // Function ID: 9247
 // Name: BillingInformation
-// Dependencies: [5, 1072, 9238, 2174, 1360, 1113, 9167, 2]
+// Dependencies: [5, 1071, 9238, 2172, 1358, 1112, 9167, 2]
 // Exports: useBillingInformationNative
 
 // Module 9246 (BillingInformation)
-import Constants from "Constants" /* 1072 */;
+import Constants from "Constants" /* 1071 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -36,10 +36,10 @@ export function useBillingInformationNative(subscription, subscriptionPeriodStar
   if (null == subscriptionPeriodStart) {
     return null;
   } else {
-    const tmp2Result = tmp2(2174);
+    const tmp2Result = tmp2(2172);
     const billingInformationString = tmp2Result.getBillingInformationString(subscription, subscriptionPeriodStart, tmp, flag, fractionalPremiumInfo);
     let formatResult = billingInformationString;
-    const tmp2Result2 = tmp2(1360);
+    const tmp2Result2 = tmp2(1358);
     if (tmp2Result2.isIOS()) {
       formatResult = billingInformationString;
       if (subscription.isPurchasedViaApple) {
@@ -47,7 +47,7 @@ export function useBillingInformationNative(subscription, subscriptionPeriodStar
         if (subscription.status === SubscriptionStatusTypes.ACTIVE) {
           formatResult = billingInformationString;
           if (!appleSubscriptionOwnership.isMismatch()) {
-            const intl = tmp2(1113).intl;
+            const intl = tmp2(1112).intl;
             const format = intl.format;
             let obj3 = {
               renewalDate: subscriptionPeriodStart.subscriptionPeriodStart,
@@ -56,7 +56,7 @@ export function useBillingInformationNative(subscription, subscriptionPeriodStar
                         }
             };
             const tmp6 = _asyncToGenerator;
-            const gknRR3 = tmp2(1113).t.gknRR3;
+            const gknRR3 = tmp2(1112).t.gknRR3;
             _require = _asyncToGenerator(async (arg0, value) => {
               let v3;
               if (c0 === 2) {
@@ -69,7 +69,7 @@ export function useBillingInformationNative(subscription, subscriptionPeriodStar
                   const obj3 = { value, done: true };
                   return obj3;
                 } else {
-                  return { value: "HermesInternal", done: "+60" };
+                  return { value: "HermesInternal", done: null };
                 }
               } else {
                 try {
@@ -98,7 +98,7 @@ export function useBillingInformationNative(subscription, subscriptionPeriodStar
                     return obj;
                   } else {
                     c0 = 3;
-                    return { value: "HermesInternal", done: "+60" };
+                    return { value: "HermesInternal", done: null };
                   }
                 } catch (tmp6) {
                   c0 = 3;

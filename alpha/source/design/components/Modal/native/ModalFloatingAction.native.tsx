@@ -1,15 +1,15 @@
-// Module ID: 9997
-// Function ID: 9998
+// Module ID: 10000
+// Function ID: 10001
 // Name: ModalFloatingAction
-// Dependencies: [19, 17, 21, 4792, 1655, 4806, 1630, 5393, 5394, 5347, 671, 9998, 2]
+// Dependencies: [19, 17, 21, 4794, 1653, 4808, 1628, 5395, 5396, 5349, 671, 10001, 2]
 // Exports: ModalFloatingAction, ModalFloatingActionSpacer
 
-// Module 9997 (ModalFloatingAction)
-import spring_spring from "spring/spring" /* 5393 */;
+// Module 10000 (ModalFloatingAction)
+import spring_spring from "spring/spring" /* 5395 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -19,7 +19,7 @@ let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let tmp2;
-const springPresets = tmp2(5394);
+const springPresets = tmp2(5396);
 ({ StyleSheet: closure_4, View: hasOwnProperty } = react_native);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let closure_8 = createStyles.createStyles({ floating: { position: "absolute", bottom: 0, width: "100%", paddingHorizontal: 16 }, spacer: { height: 96 } });
@@ -42,15 +42,15 @@ export function ModalFloatingAction(isVisible) {
   let sharedValue;
   let tmp2 = closure_8();
   let num = 0;
-  const useSharedValue = isVisible(1655).useSharedValue;
-  isVisible(1655);
+  const useSharedValue = isVisible(1653).useSharedValue;
+  isVisible(1653);
   if (isVisible) {
     num = 1;
   }
   sharedValue = useSharedValue(num);
-  const enabled = react.useContext(tmp3(4806).AccessibilityPreferencesContext).reducedMotion.enabled;
+  const enabled = react.useContext(tmp3(4808).AccessibilityPreferencesContext).reducedMotion.enabled;
   let items = [isVisible, sharedValue];
-  const tmp8 = sharedValue(1630)();
+  const tmp8 = sharedValue(1628)();
   const effect = react.useEffect(() => {
     let num = 0;
     set = sharedValue.set;
@@ -62,9 +62,9 @@ export function ModalFloatingAction(isVisible) {
     const result = set(withSpring(num, springPresets.SUBTLE_SPRING, "animate-always"));
   }, items);
   let items1 = [closure_9, , , , ];
-  const useAnimatedStyle = tmp3(1655).useAnimatedStyle;
-  isVisible(1655);
-  items1[1] = isVisible(1655).interpolate;
+  const useAnimatedStyle = tmp3(1653).useAnimatedStyle;
+  isVisible(1653);
+  items1[1] = isVisible(1653).interpolate;
   items1[2] = sharedValue;
   items1[3] = floatingBackgroundColor;
   items1[4] = enabled;
@@ -98,13 +98,13 @@ export function ModalFloatingAction(isVisible) {
   let obj = { style: items3, pointerEvents: str, children: items5 };
   items3 = [animatedStyle, tmp2.floating, { paddingBottom: tmp8.bottom }];
   str = "none";
-  const View = tmp7(1655).View;
+  const View = tmp7(1653).View;
   const tmp17 = closure_7;
   if (isVisible) {
     str = "auto";
   }
   let obj2 = { colors: items4, locations: [0, 0.5], style: absoluteFill.absoluteFill };
-  const tmp7Result = sharedValue(5347);
+  const tmp7Result = sharedValue(5349);
   items4 = [, ];
   const obj3 = sharedValue(671)(floatingBackgroundColor);
   const alphaResult = obj3.alpha(0);
@@ -112,7 +112,7 @@ export function ModalFloatingAction(isVisible) {
   items4[1] = floatingBackgroundColor;
   items5 = [closure_6(tmp7Result, obj2), ];
   const obj4 = { variant: "primary" };
-  const ModalActionButton = tmp3(9998).ModalActionButton;
+  const ModalActionButton = tmp3(10001).ModalActionButton;
   const merged1 = Object.assign(merged);
   items5[1] = closure_6(ModalActionButton, obj4);
   return tmp17(View, obj);

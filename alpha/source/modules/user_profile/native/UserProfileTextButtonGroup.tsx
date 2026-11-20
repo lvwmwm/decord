@@ -1,16 +1,16 @@
-// Module ID: 14356
-// Function ID: 14357
+// Module ID: 14324
+// Function ID: 14325
 // Name: UserProfileTextButtonGroup
-// Dependencies: [19, 17, 7445, 21, 4792, 1496, 2]
+// Dependencies: [19, 17, 7444, 21, 4794, 1494, 2]
 // Exports: default
 
-// Module 14356 (UserProfileTextButtonGroup)
+// Module 14324 (UserProfileTextButtonGroup)
 import react_native from "react-native" /* 17 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
-import Constants from "Constants" /* 7445 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
+import Constants from "Constants" /* 7444 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

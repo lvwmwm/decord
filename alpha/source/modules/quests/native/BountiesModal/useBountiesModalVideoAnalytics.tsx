@@ -1,22 +1,22 @@
-// Module ID: 16393
-// Function ID: 16394
+// Module ID: 16215
+// Function ID: 16216
 // Name: useBountiesModalVideoAnalytics
-// Dependencies: [5, 32, 19, 5673, 1072, 9873, 1269, 8312, 8311, 6442, 16394, 8302, 6444, 8258, 1380, 8293, 10553, 16384, 16395, 6244, 6249, 2]
+// Dependencies: [5, 32, 19, 5675, 1071, 9876, 1268, 8311, 8310, 6444, 16216, 8301, 6446, 8257, 1378, 8292, 10495, 16206, 16217, 6246, 6251, 2]
 // Exports: useBountiesModalVideoAnalytics
 
-// Module 16393 (useBountiesModalVideoAnalytics)
-import Constants from "Constants" /* 1072 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 6244 */;
-import MetricEvents from "MetricEvents" /* 6249 */;
-import AdCreativeType from "AdCreativeType" /* 6444 */;
-import AnalyticsActions from "AnalyticsActions" /* 8302 */;
-import VideoQuestUtils from "VideoQuestUtils" /* 10553 */;
-import AdsVideoTypes from "AdsVideoTypes" /* 16384 */;
-import AdsVideoUtils from "AdsVideoUtils" /* 16395 */;
+// Module 16215 (useBountiesModalVideoAnalytics)
+import Constants from "Constants" /* 1071 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 6246 */;
+import MetricEvents from "MetricEvents" /* 6251 */;
+import AdCreativeType from "AdCreativeType" /* 6446 */;
+import AnalyticsActions from "AnalyticsActions" /* 8301 */;
+import VideoQuestUtils from "VideoQuestUtils" /* 10495 */;
+import AdsVideoTypes from "AdsVideoTypes" /* 16206 */;
+import AdsVideoUtils from "AdsVideoUtils" /* 16217 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import NetworkStore from "NetworkStore" /* 5673 */;
+import NetworkStore from "NetworkStore" /* 5675 */;
 import size_mod from "module_2" /* 2 */;
 
 let c5, c6, closure_3, set;
@@ -136,7 +136,7 @@ export function useBountiesModalVideoAnalytics(bountyId) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c4;
@@ -214,7 +214,7 @@ export function useBountiesModalVideoAnalytics(bountyId) {
               trackAdContentEvent(obj8);
               c4 = 0;
               c6 = 3;
-              return { value: "HermesInternal", done: "+60" };
+              return { value: "HermesInternal", done: null };
             }
           }
         } catch (tmp30) {

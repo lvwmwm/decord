@@ -1,19 +1,19 @@
-// Module ID: 12179
-// Function ID: 12180
+// Module ID: 12121
+// Function ID: 12122
 // Name: AcceptStep
-// Dependencies: [5, 32, 19, 17, 11834, 12173, 21, 4792, 575, 12171, 1502, 6976, 11994, 12180, 12188, 5474, 1113, 7692, 7694, 5808, 12175, 5383, 2557, 12190, 12191, 12178, 6424, 5390, 2]
+// Dependencies: [5, 32, 19, 17, 11776, 12115, 21, 4794, 575, 12113, 1500, 6975, 11936, 12122, 12130, 5476, 1112, 7691, 7693, 5810, 12117, 5385, 2559, 12132, 12133, 12120, 6426, 5392, 2]
 // Exports: AcceptStep
 
-// Module 12179 (AcceptStep)
+// Module 12121 (AcceptStep)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 12173 */;
+import GameOrganizationJoinModalConstants from "GameOrganizationJoinModalConstants" /* 12115 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11834 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11776 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let c5, c6, id, navigation;
@@ -71,7 +71,7 @@ export function AcceptStep(code) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c4;
@@ -165,7 +165,7 @@ export function AcceptStep(code) {
             c4 = 0;
             closure_130_5(false);
             c6 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp57) {
           closure_3 = tmp57;

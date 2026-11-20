@@ -1,34 +1,34 @@
-// Module ID: 14987
-// Function ID: 14988
+// Module ID: 14951
+// Function ID: 14952
 // Name: RemoteAuthModal
-// Dependencies: [32, 19, 17, 1072, 21, 4792, 575, 1630, 13577, 7195, 5479, 14986, 1655, 1285, 12, 14988, 5383, 1113, 1187, 6424, 5390, 6308, 14992, 6901, 2]
+// Dependencies: [32, 19, 17, 1071, 21, 4794, 575, 1628, 13547, 7194, 5481, 14950, 1653, 1284, 12, 14952, 5385, 1112, 1186, 6426, 5392, 6310, 14956, 6900, 2]
 // Exports: default
 
-// Module 14987 (RemoteAuthModal)
+// Module 14951 (RemoteAuthModal)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import intl5 from "intl" /* 1113 */;
-import native from "native" /* 1187 */;
-import HTTPUtils from "HTTPUtils" /* 1285 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import components_Button_Button from "components/Button/Button" /* 5390 */;
-import FastImageDefault from "FastImage" /* 5479 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6308 */;
-import ButtonGroup2 from "ButtonGroup" /* 6424 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6901 */;
-import AuthBackgroundArtDefault from "AuthBackgroundArt" /* 7195 */;
-import useEaseInEaseOutLayoutAnimationsDefault from "useEaseInEaseOutLayoutAnimations" /* 13577 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14986 */;
-import QrLoginSpotIllustration from "QrLoginSpotIllustration" /* 14988 */;
-import QrSuccessSpotIllustration from "QrSuccessSpotIllustration" /* 14992 */;
+import Constants from "Constants" /* 1071 */;
+import intl5 from "intl" /* 1112 */;
+import native from "native" /* 1186 */;
+import HTTPUtils from "HTTPUtils" /* 1284 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import components_Button_Button from "components/Button/Button" /* 5392 */;
+import FastImageDefault from "FastImage" /* 5481 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6310 */;
+import ButtonGroup2 from "ButtonGroup" /* 6426 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6900 */;
+import AuthBackgroundArtDefault from "AuthBackgroundArt" /* 7194 */;
+import useEaseInEaseOutLayoutAnimationsDefault from "useEaseInEaseOutLayoutAnimations" /* 13547 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14950 */;
+import QrLoginSpotIllustration from "QrLoginSpotIllustration" /* 14952 */;
+import QrSuccessSpotIllustration from "QrSuccessSpotIllustration" /* 14956 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, importDefault;
@@ -39,7 +39,7 @@ let metroImportDefault;
 let obj2;
 let obj3;
 let tmp8;
-const _modDef1655 = tmp8(1655);
+const _modDef1653 = tmp8(1653);
 function RemoteAuthBody(remoteAuthFingerprint) {
   let closure_1;
   let entering;
@@ -98,7 +98,7 @@ function RemoteAuthBody(remoteAuthFingerprint) {
     tmp14 = closure_7(RemoteAuthNotFound, {});
   }
   const obj2 = { style: tmp.step, entering, exiting, children: tmp14 };
-  return tmp12(_modDef1655.View, obj2, tmp4);
+  return tmp12(_modDef1653.View, obj2, tmp4);
 }
 function RemoteAuthLogin(arg0) {
   let _undefined;
@@ -272,10 +272,10 @@ export default function RemoteAuth(arg0) {
   items[1] = metroImportDefault(tmp2, obj2);
   const obj3 = { style: tmp.container, children: metroImportDefault(LayoutAnimationConfig, obj4) };
   obj4 = { skipEntering: true, children: metroImportDefault(View, obj5) };
-  LayoutAnimationConfig = _mod1655.LayoutAnimationConfig;
+  LayoutAnimationConfig = _mod1653.LayoutAnimationConfig;
   obj5 = { style: tmp.mainCard, layout, children: metroImportDefault(RemoteAuthBody, obj6) };
   obj6 = {};
-  View = _modDef1655.View;
+  View = _modDef1653.View;
   const merged = Object.assign(arg0);
   items[2] = metroImportDefault(View, obj3);
   return metroImportAll(View, obj);

@@ -1,23 +1,23 @@
-// Module ID: 17657
-// Function ID: 17658
+// Module ID: 17484
+// Function ID: 17485
 // Name: HappeningNowCardVoice
-// Dependencies: [19, 17, 8024, 1388, 5440, 16754, 1072, 21, 4792, 1256, 12135, 2121, 17640, 16755, 6915, 14408, 17650, 8713, 504, 12, 1255, 5822, 1113, 2]
+// Dependencies: [19, 17, 8023, 1386, 5442, 16578, 1071, 21, 4794, 1255, 12077, 2119, 17467, 16579, 6914, 14376, 17477, 8753, 504, 12, 1254, 5824, 1112, 2]
 // Exports: useVoiceChannelUsers
 
-// Module 17657 (HappeningNowCardVoice)
+// Module 17484 (HappeningNowCardVoice)
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1072 */;
-import intl3 from "intl" /* 1113 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import asyncRequire from "asyncRequire" /* 2121 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5822 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 16754 */;
+import Constants from "Constants" /* 1071 */;
+import intl3 from "intl" /* 1112 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import asyncRequire from "asyncRequire" /* 2119 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5824 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 16578 */;
 import react from "react" /* 19 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 8024 */;
-import UserStore from "UserStore" /* 1388 */;
-import VoiceStateStore from "VoiceStateStore" /* 5440 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 8023 */;
+import UserStore from "UserStore" /* 1386 */;
+import VoiceStateStore from "VoiceStateStore" /* 5442 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

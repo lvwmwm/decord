@@ -1,16 +1,16 @@
-// Module ID: 14071
-// Function ID: 14072
+// Module ID: 14040
+// Function ID: 14041
 // Name: usePremiumTier2DeltaPriceString
-// Dependencies: [19, 8992, 8691, 1390, 9011, 8051, 1380, 6737, 4605, 504, 2]
+// Dependencies: [19, 8992, 8731, 1388, 9011, 8050, 1378, 6737, 4607, 504, 2]
 // Exports: usePremiumTier2DeltaPriceString
 
-// Module 14071 (usePremiumTier2DeltaPriceString)
-import PremiumConstants from "PremiumConstants" /* 1390 */;
-import ProductIds from "ProductIds" /* 8051 */;
+// Module 14040 (usePremiumTier2DeltaPriceString)
+import PremiumConstants from "PremiumConstants" /* 1388 */;
+import ProductIds from "ProductIds" /* 8050 */;
 import NativeCheckoutStore from "NativeCheckoutStore" /* 8992 */;
 import PremiumBundledPlansUtils from "PremiumBundledPlansUtils" /* 9011 */;
 import react from "react" /* 19 */;
-import IAPStore from "IAPStore" /* 8691 */;
+import IAPStore from "IAPStore" /* 8731 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -88,7 +88,7 @@ export function usePremiumTier2DeltaPriceString(plan, subscription, currencyCode
         const tmp2Result = tmp2(subscription);
         let tmp11 = null;
         if (null != tmp2Result) {
-          tmp11 = tmp4(8051).AppStorePremiumProductIdsToPremiumBundledItems[tmp2Result];
+          tmp11 = tmp4(8050).AppStorePremiumProductIdsToPremiumBundledItems[tmp2Result];
         }
         flag = null != tmp11 && tmp11.basePlanId === plan.basePlanId && tmp11.numPremiumGuild < plan.numPremiumGuild;
       }
@@ -112,7 +112,7 @@ export function usePremiumTier2DeltaPriceString(plan, subscription, currencyCode
             if (addOnPrice.majorUnits > 0) {
               let tmp17 = null;
               if (null != tmp3) {
-                tmp17 = tmp4(8051).AppStorePremiumProductIdsToPremiumBundledItems[tmp3];
+                tmp17 = tmp4(8050).AppStorePremiumProductIdsToPremiumBundledItems[tmp3];
               }
               if (null != tmp3) {
                 if (null != tmp17) {

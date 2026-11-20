@@ -1,14 +1,14 @@
-// Module ID: 13775
-// Function ID: 13776
+// Module ID: 13744
+// Function ID: 13745
 // Name: PaperPlusIcon
-// Dependencies: [19, 21, 575, 5478, 13776, 2]
+// Dependencies: [19, 21, 575, 5480, 13745, 2]
 // Exports: PaperPlusIcon
 
-// Module 13775 (PaperPlusIcon)
+// Module 13744 (PaperPlusIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5478 */;
-import AssetRegistry from "AssetRegistry" /* 13776 */;
+import BaseIconImage2 from "BaseIconImage" /* 5480 */;
+import AssetRegistry from "AssetRegistry" /* 13745 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

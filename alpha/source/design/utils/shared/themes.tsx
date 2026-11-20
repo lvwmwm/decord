@@ -1,11 +1,11 @@
-// Module ID: 4814
-// Function ID: 4815
+// Module ID: 4816
+// Function ID: 4817
 // Name: themes
-// Dependencies: [1083, 2]
+// Dependencies: [1082, 2]
 // Exports: isThemeDark, isThemeLight
 
-// Module 4814 (themes)
-import Constants from "Constants" /* 1083 */;
+// Module 4816 (themes)
+import Constants from "Constants" /* 1082 */;
 import size from "module_2" /* 2 */;
 
 const ThemeTypes = Constants.ThemeTypes;

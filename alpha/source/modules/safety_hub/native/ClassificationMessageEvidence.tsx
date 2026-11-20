@@ -1,22 +1,22 @@
-// Module ID: 12348
-// Function ID: 12349
+// Module ID: 12318
+// Function ID: 12319
 // Name: ClassificationMessageEvidence
-// Dependencies: [32, 19, 17, 1192, 1388, 7716, 7690, 1072, 21, 8550, 4792, 504, 4799, 12349, 12350, 7689, 5832, 8098, 9135, 10362, 9977, 5845, 11, 2]
+// Dependencies: [32, 19, 17, 1191, 1386, 7715, 7689, 1071, 21, 8549, 4794, 504, 4801, 12319, 12320, 7688, 5834, 8097, 9135, 10304, 9980, 5847, 11, 2]
 // Exports: default
 
-// Module 12348 (ClassificationMessageEvidence)
-import Constants from "Constants" /* 1072 */;
-import openMediaModal from "openMediaModal" /* 8098 */;
-import RowGeneratorDefault from "RowGenerator" /* 8550 */;
+// Module 12318 (ClassificationMessageEvidence)
+import Constants from "Constants" /* 1071 */;
+import openMediaModal from "openMediaModal" /* 8097 */;
+import RowGeneratorDefault from "RowGenerator" /* 8549 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ThemeStore from "ThemeStore" /* 1192 */;
-import UserStore from "UserStore" /* 1388 */;
-import SafetyHubStore from "SafetyHubStore" /* 7716 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 7690 */;
+import ThemeStore from "ThemeStore" /* 1191 */;
+import UserStore from "UserStore" /* 1386 */;
+import SafetyHubStore from "SafetyHubStore" /* 7715 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7689 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap, filename, width;
@@ -85,10 +85,10 @@ export default function ClassificationEvidence(flaggedContent) {
     const obj = ref(closure_2[12]);
     return obj.isThemeLight(id.theme);
   })) {
-    assetSource = resolveAssetSource(tmp12(12349));
+    assetSource = resolveAssetSource(tmp12(12319));
     tmp14 = tmp12;
   } else {
-    assetSource = resolveAssetSource(tmp12(12350));
+    assetSource = resolveAssetSource(tmp12(12320));
     tmp14 = tmp12;
   }
   const first2 = flaggedContent[0];
@@ -273,13 +273,13 @@ export default function ClassificationEvidence(flaggedContent) {
       obj10 = obj4;
     } else {
       const obj6 = { ref, onTapImage: callback, inverted: false };
-      const items9 = [closure_18(tmp14(10362), obj6), ];
+      const items9 = [closure_18(tmp14(10304), obj6), ];
       const obj7 = { rowGenerator, message: createMessageRecord(obj8), modifyRow: callback1, pointerEvents: "none" };
-      const tmp14Result = tmp14(9977);
+      const tmp14Result = tmp14(9980);
       const _Date = Date;
       obj8 = { id: first2.id, timestamp: date.toUTCString(), channel_id: "1", type: MessageTypes.DEFAULT, author: tmp27, content: first2.content, attachments: memo };
-      createMessageRecord = tmp2(5845).createMessageRecord;
-      tmp2(5845);
+      createMessageRecord = tmp2(5847).createMessageRecord;
+      tmp2(5847);
       const self = this;
       const self2 = this;
       const tmp14Result2 = tmp14(11);

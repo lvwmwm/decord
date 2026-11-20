@@ -158,42 +158,42 @@ class EntityDecoder {
   startEntity(arg0) {
 
   }
-  write(str, sum) {
+  write(str, arg1) {
     const self = this;
     const state = this.state;
     if (obj5.EntityStart === state) {
       let stateNumericStartResult;
-      if (str.charCodeAt(sum) === obj3.NUM) {
+      if (str.charCodeAt(arg1) === obj3.NUM) {
         self.state = obj5.NumericStart;
         self.consumed = self.consumed + 1;
-        stateNumericStartResult = self.stateNumericStart(str, sum + 1);
+        stateNumericStartResult = self.stateNumericStart(str, arg1 + 1);
       } else {
         self.state = obj5.NamedEntity;
-        stateNumericStartResult = self.stateNamedEntity(str, sum);
+        stateNumericStartResult = self.stateNamedEntity(str, arg1);
       }
       return stateNumericStartResult;
     } else if (obj5.NumericStart === state) {
-      return self.stateNumericStart(str, sum);
+      return self.stateNumericStart(str, arg1);
     } else if (obj5.NumericDecimal === state) {
-      return self.stateNumericDecimal(str, sum);
+      return self.stateNumericDecimal(str, arg1);
     } else if (obj5.NumericHex === state) {
-      return self.stateNumericHex(str, sum);
+      return self.stateNumericHex(str, arg1);
     } else if (obj5.NamedEntity === state) {
-      return self.stateNamedEntity(str, sum);
+      return self.stateNamedEntity(str, arg1);
     }
   }
-  stateNumericStart(str, sum) {
+  stateNumericStart(str, arg1) {
     let num = -1;
-    if (sum < str.length) {
+    if (arg1 < str.length) {
       let stateNumericHexResult;
       const self = this;
-      if ((32 | str.charCodeAt(sum)) === obj3.LOWER_X) {
+      if ((32 | str.charCodeAt(arg1)) === obj3.LOWER_X) {
         self.state = obj5.NumericHex;
         self.consumed = self.consumed + 1;
-        stateNumericHexResult = self.stateNumericHex(str, sum + 1);
+        stateNumericHexResult = self.stateNumericHex(str, arg1 + 1);
       } else {
         self.state = obj5.NumericDecimal;
-        stateNumericHexResult = self.stateNumericDecimal(str, sum);
+        stateNumericHexResult = self.stateNumericDecimal(str, arg1);
       }
       num = stateNumericHexResult;
     }
@@ -210,12 +210,13 @@ class EntityDecoder {
       this.consumed = this.consumed + diff;
     }
   }
-  stateNumericHex(str, sum) {
+  stateNumericHex(str, arg1) {
     let charCodeAtResult;
     let tmp6;
     const self = this;
-    let tmp2 = sum;
-    if (sum < str.length) {
+    let sum = arg1;
+    let tmp2 = arg1;
+    if (arg1 < str.length) {
       while (true) {
         charCodeAtResult = str.charCodeAt(sum);
         let tmp4 = obj3;
@@ -236,18 +237,19 @@ class EntityDecoder {
         sum = sum + 1;
         tmp2 = sum;
       }
-      self.addToNumericResult(str, sum, tmp6, 16);
+      self.addToNumericResult(str, arg1, tmp6, 16);
       return self.emitNumericEntity(charCodeAtResult, 3);
     }
-    self.addToNumericResult(str, sum, tmp2, 16);
+    self.addToNumericResult(str, arg1, tmp2, 16);
     return -1;
   }
-  stateNumericDecimal(str, sum) {
+  stateNumericDecimal(str, arg1) {
     let charCodeAtResult;
     let tmp5;
     const self = this;
-    let tmp2 = sum;
-    if (sum < str.length) {
+    let sum = arg1;
+    let tmp2 = arg1;
+    if (arg1 < str.length) {
       while (true) {
         charCodeAtResult = str.charCodeAt(sum);
         let tmp4 = charCodeAtResult >= obj3.ZERO;
@@ -262,10 +264,10 @@ class EntityDecoder {
           tmp2 = sum;
         }
       }
-      self.addToNumericResult(str, sum, tmp5, 10);
+      self.addToNumericResult(str, arg1, tmp5, 10);
       return self.emitNumericEntity(charCodeAtResult, 2);
     }
-    self.addToNumericResult(str, sum, tmp2, 10);
+    self.addToNumericResult(str, arg1, tmp2, 10);
     return -1;
   }
   emitNumericEntity(arg0, arg1) {
@@ -296,19 +298,19 @@ class EntityDecoder {
       return self.consumed;
     }
   }
-  stateNamedEntity(str, sum) {
+  stateNamedEntity(str, arg1) {
     let charCodeAtResult;
     const self = this;
-    let sum2 = sum;
+    let sum2 = arg1;
     const decodeTree = this.decodeTree;
     let tmp2 = decodeTree[this.treeIndex];
     let tmp3 = (tmp2 & BinTrieFlags.VALUE_LENGTH) >> 14;
-    if (sum < str.length) {
+    if (arg1 < str.length) {
       while (true) {
         let num;
         charCodeAtResult = str.charCodeAt(sum2);
         let _Math = Math;
-        sum = self.treeIndex + Math.max(1, tmp3);
+        let sum = self.treeIndex + Math.max(1, tmp3);
         let tmp7 = (tmp2 & BinTrieFlags.BRANCH_LENGTH) >> 7;
         let tmp8 = tmp2 & BinTrieFlags.JUMP_TABLE;
         if (0 === tmp7) {

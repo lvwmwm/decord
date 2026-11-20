@@ -1,15 +1,15 @@
-// Module ID: 11877
-// Function ID: 11878
+// Module ID: 11819
+// Function ID: 11820
 // Name: useSubscribeMissingActivities
-// Dependencies: [32, 19, 11878, 5530, 504, 11880, 2]
+// Dependencies: [32, 19, 11820, 5532, 504, 11822, 2]
 // Exports: default
 
-// Module 11877 (useSubscribeMissingActivities)
-import PresenceSubscriptionsActionCreators from "PresenceSubscriptionsActionCreators" /* 11880 */;
+// Module 11819 (useSubscribeMissingActivities)
+import PresenceSubscriptionsActionCreators from "PresenceSubscriptionsActionCreators" /* 11822 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import PresenceSubscriptionsStore from "PresenceSubscriptionsStore" /* 11878 */;
-import PresenceStore from "PresenceStore" /* 5530 */;
+import PresenceSubscriptionsStore from "PresenceSubscriptionsStore" /* 11820 */;
+import PresenceStore from "PresenceStore" /* 5532 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

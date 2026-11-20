@@ -1,23 +1,23 @@
 // Module ID: 6775
 // Function ID: 6776
 // Name: ThreadMemberListStore
-// Dependencies: [32, 4641, 4704, 6776, 5530, 6801, 1388, 1072, 12, 11, 4729, 4848, 1255, 504, 572, 2]
+// Dependencies: [32, 4643, 4706, 6776, 5532, 6801, 1386, 1071, 12, 11, 4731, 4850, 1254, 504, 572, 2]
 
 // Module 6775 (ThreadMemberListStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import GlobalUtils from "GlobalUtils" /* 1255 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4729 */;
-import UserUtilsDefault from "UserUtils" /* 4848 */;
+import GlobalUtils from "GlobalUtils" /* 1254 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4731 */;
+import UserUtilsDefault from "UserUtils" /* 4850 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import GuildMemberStore from "GuildMemberStore" /* 4704 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import GuildMemberStore from "GuildMemberStore" /* 4706 */;
 import GuildSubscriptionsStore from "GuildSubscriptionsStore" /* 6776 */;
-import PresenceStore from "PresenceStore" /* 5530 */;
+import PresenceStore from "PresenceStore" /* 5532 */;
 import SelfPresenceStore from "SelfPresenceStore" /* 6801 */;
-import UserStore from "UserStore" /* 1388 */;
-import Constants from "Constants" /* 1072 */;
+import UserStore from "UserStore" /* 1386 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 let closure_13, set, subscribedThreadIds;

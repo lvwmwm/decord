@@ -1,37 +1,37 @@
-// Module ID: 18299
-// Function ID: 18300
+// Module ID: 12176
+// Function ID: 12177
 // Name: useConjurePublishAction
-// Dependencies: [5, 19, 2165, 6837, 4641, 4722, 4663, 4724, 6500, 6860, 1072, 6501, 6746, 6836, 18290, 6538, 6879, 6814, 14655, 1113, 4089, 18300, 18301, 12293, 572, 6835, 6867, 14657, 2121, 18305, 6866, 14659, 18286, 504, 18306, 2]
+// Dependencies: [5, 19, 2163, 6837, 4643, 4724, 4665, 4726, 6502, 6860, 1071, 6503, 6746, 6836, 12177, 6540, 6878, 6814, 12178, 1112, 4091, 12191, 12192, 12188, 572, 6835, 12190, 12184, 2119, 12197, 6866, 12186, 12174, 504, 12198, 2]
 // Exports: default, isConjureLiveNameOutdated, publishGuildId
 
-// Module 18299 (useConjurePublishAction)
+// Module 12176 (useConjurePublishAction)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import Constants from "Constants" /* 1072 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6501 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 6538 */;
+import Constants from "Constants" /* 1071 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6503 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 6540 */;
 import ConjureUtils from "ConjureUtils" /* 6746 */;
 import UserActionCreators from "UserActionCreators" /* 6835 */;
 import conjureAppInServer from "conjureAppInServer" /* 6836 */;
-import ConjurePublishTypes from "ConjurePublishTypes" /* 6867 */;
-import conjurePublishAction2 from "conjurePublishAction" /* 18305 */;
+import ConjurePublishTypes from "ConjurePublishTypes" /* 12190 */;
+import conjurePublishAction2 from "conjurePublishAction" /* 12197 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 2165 */;
+import ApplicationStore from "ApplicationStore" /* 2163 */;
 import UserProfileStore from "UserProfileStore" /* 6837 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import GuildChannelStore from "GuildChannelStore" /* 4722 */;
-import GuildStore from "GuildStore" /* 4663 */;
-import PermissionStore from "PermissionStore" /* 4724 */;
-import ConjureProjectStore_mod from "ConjureProjectStore" /* 6500 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import GuildChannelStore from "GuildChannelStore" /* 4724 */;
+import GuildStore from "GuildStore" /* 4665 */;
+import PermissionStore from "PermissionStore" /* 4726 */;
+import ConjureProjectStore_mod from "ConjureProjectStore" /* 6502 */;
 import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 6860 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, c11, c12, c4, closure_4, intent;
+let _require, c11, c12, c4, intent;
 
 let closure_12;
 let unpackModuleId;
-const f115735 = () => {
+const f101455 = () => {
 
 };
 function approvalPending(projectId) {
@@ -166,7 +166,7 @@ let obj = function _requestConjureInstallConsent() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -285,7 +285,7 @@ let obj = function _requestConjureInstallConsent() {
           return obj;
         }
         c5 = 3;
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp26) {
         c5 = 3;
         throw tmp26;
@@ -322,7 +322,7 @@ obj = function _startPublish() {
           let obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -361,7 +361,7 @@ obj = function _startPublish() {
             }
           } else if (1 === tmp4) {
             c7 = 0;
-            closure_133_25.delete(id);
+            closure_133_26.delete(id);
             throw closure_6;
           } else if (2 === tmp4) {
             c7 = 1;
@@ -376,7 +376,7 @@ obj = function _startPublish() {
             }
             showError2(message);
             c7 = 0;
-            closure_133_25.delete(id);
+            closure_133_26.delete(id);
             c9 = 3;
             return { value: undefined, done: true };
           } else {
@@ -386,7 +386,7 @@ obj = function _startPublish() {
                 throw value;
               } else if (arg0 === 2) {
                 c7 = 0;
-                closure_133_25.delete(id);
+                closure_133_26.delete(id);
                 c9 = 3;
                 return { value, done: true };
               } else {
@@ -409,14 +409,14 @@ obj = function _startPublish() {
               selected_destination_id = value;
               if (arg0 === 2) {
                 c7 = 0;
-                closure_133_25.delete(id);
+                closure_133_26.delete(id);
                 c9 = 3;
                 obj = { value, done: true };
                 return obj;
               }
             }
             c7 = 0;
-            closure_133_25.delete(id);
+            closure_133_26.delete(id);
             if (null != selected_destination_id) {
               if (!closure_133_14.isProjectPublishing(id)) {
                 const publishStatus = closure_133_14.getPublishStatus(id);
@@ -480,7 +480,7 @@ obj = function _startPublish() {
                       tmp(closure_1_2[25]);
                       const tmpResult3 = tmp(closure_1_2[13]);
                       const profile = fetchProfile(tmpResult3.conjureProductionBotUserId(closure_4), { withMutualGuilds: true });
-                      profile.catch(f115735);
+                      profile.catch(f101455);
                     }
                     const tmpResult4 = tmp(closure_1_2[23]);
                     result = tmpResult4.refreshPublishedProject(tmp4, { isPreview: false });
@@ -488,13 +488,10 @@ obj = function _startPublish() {
 
                     });
                     const nextPromise = catchPromise1.then(() => {
-                      function waitForAppChannel() {
-                        return closure_1_24(...arguments);
-                      }
                       let tmp;
                       if (closure_2_9) {
                         if (true !== channel_skipped.channel_skipped) {
-                          tmp = waitForAppChannel(projectId, closure_2_6);
+                          tmp = closure_3_24(projectId, closure_2_6);
                         }
                       }
                       return tmp;
@@ -529,7 +526,7 @@ obj = function _startPublish() {
               showError(intl.string(closure_133_1(closure_133_2[20])["TD/ze/"]));
             }
             c9 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp83) {
           closure_6 = tmp83;
@@ -552,12 +549,15 @@ function setAppChannelPending(projectId, arg1) {
   const obj2 = { type: "CONJURE_PROJECT_APP_CHANNEL_PENDING", projectId, pending: true };
   obj.dispatch(obj2);
 }
+function waitForAppChannel() {
+  return obj(...arguments);
+}
 obj = function _waitForAppChannel() {
   obj = _asyncToGenerator(async function(arg0, value) {
     let closure_0 = arg0;
     let closure_1 = value;
-    if (c5 === 2) {
-      c5 = 3;
+    if (c7 === 2) {
+      c7 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
     } else if (tmp4 === 3) {
       if (arg0 === 1) {
@@ -566,65 +566,77 @@ obj = function _waitForAppChannel() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
-        c5 = 2;
-        if (0 === c4) {
+        c7 = 2;
+        if (0 === c6) {
           if (arg0 === 1) {
-            c5 = 3;
+            c7 = 3;
             throw value;
           } else if (arg0 === 2) {
-            c5 = 3;
+            c7 = 3;
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            let closure_3 = tmp;
-            let closure_2 = tmp2;
+            let closure_5 = tmp2;
+            let closure_4 = tmp;
             let appChannelId;
+            value = undefined;
             const _Date3 = Date;
             const sum = Date.now() + 5000;
             let c2 = sum;
-            const tmp30 = readPublishSubject(closure_0, closure_1);
-            if (tmp30 != null) {
-              appChannelId = tmp30.appChannelId;
+            const tmp36 = readPublishSubject(closure_0, closure_1);
+            if (tmp36 != null) {
+              appChannelId = tmp36.appChannelId;
             }
-            if (null == appChannelId) {
+            c2 = appChannelId;
+            if (appChannelId == null) {
+              c2 = null;
+            }
+            value = c2;
+            if (null == value) {
               const _Date = Date;
               if (Date.now() < sum) {
                 const self = this;
                 const self2 = this;
                 const promise = new Promise((arg0) => setTimeout(arg0, 250));
-                c4 = 1;
-                c5 = 1;
+                c6 = 1;
+                c7 = 1;
                 const obj4 = { value: promise, done: false };
                 return obj4;
               }
             }
           }
         } else if (arg0 === 1) {
-          c5 = 3;
+          c7 = 3;
           throw value;
         } else if (arg0 === 2) {
-          c5 = 3;
+          c7 = 3;
           obj = { value, done: true };
           return obj;
         } else {
-          const tmp11 = closure_131_18(closure_0, closure_1);
+          const tmp11 = closure_133_18(closure_0, closure_1);
           let appChannelId1;
           if (tmp11 != null) {
             appChannelId1 = tmp11.appChannelId;
           }
-          if (null == appChannelId1) {
+          let c3 = appChannelId1;
+          if (appChannelId1 == null) {
+            c3 = null;
+          }
+          value = c3;
+          if (null == value) {
             const _Date2 = Date;
           }
         }
-        c5 = 3;
-        return { value: "HermesInternal", done: "+60" };
-      } catch (tmp18) {
-        c5 = 3;
-        throw tmp18;
+        c7 = 3;
+        const obj5 = { value, done: true };
+        return obj5;
+      } catch (tmp24) {
+        c7 = 3;
+        throw tmp24;
       }
     }
   });
@@ -660,7 +672,7 @@ obj = function _runConjurePublishAction() {
           const guildId = closure_2.guildId;
           platform = closure_2.platform;
           if (true !== closure_2.busy) {
-            if (!closure_134_25.has(closure_0)) {
+            if (!closure_134_26.has(closure_0)) {
               const tmp = closure_134_18(closure_0, guildId);
               let publishState;
               if (tmp != null) {
@@ -674,7 +686,7 @@ obj = function _runConjurePublishAction() {
                 ownerInstallMissing = tmp.ownerInstallMissing;
               }
               if (true === ownerInstallMissing) {
-                closure_134_25.add(closure_0);
+                closure_134_26.add(closure_0);
                 c8 = 2;
                 c9 = 4;
                 c10 = 1;
@@ -731,11 +743,11 @@ obj = function _runConjurePublishAction() {
                             if (null == closure_9.confirmReason) {
                               c9 = 6;
                               c10 = 1;
-                              const obj10 = { value: closure_134_28(closure_0, closure_9, closure_2, flag), done: false };
+                              const obj10 = { value: closure_134_29(closure_0, closure_9, closure_2, flag), done: false };
                               return obj10;
                             } else {
                               platform.showPublishBlocked(closure_134_0(closure_134_2[31]).ConjurePublishBlockedReason.MISSING_MANAGE_CHANNELS, closure_9.confirmReason, () => {
-                                const promise = closure_2_28(closure_1_0, closure_1_9, closure_1_2, closure_1_3);
+                                const promise = closure_2_29(closure_1_0, closure_1_9, closure_1_2, closure_1_3);
                                 promise.catch(() => {
 
                                 });
@@ -757,14 +769,14 @@ obj = function _runConjurePublishAction() {
         }
       } else if (2 === c9) {
         c8 = 0;
-        closure_134_25.delete(closure_0);
+        closure_134_26.delete(closure_0);
         throw closure_7;
       } else if (3 === c9) {
         const showError = platform.showError;
         const intl2 = closure_134_0(closure_134_2[19]).intl;
         showError(intl2.string(closure_134_1(closure_134_2[20]).gMWZeG));
         c8 = 0;
-        closure_134_25.delete(closure_0);
+        closure_134_26.delete(closure_0);
         c10 = 3;
         return { value: undefined, done: true };
       } else if (4 === c9) {
@@ -773,12 +785,12 @@ obj = function _runConjurePublishAction() {
           throw value;
         } else if (arg0 === 2) {
           c8 = 0;
-          closure_134_25.delete(closure_0);
+          closure_134_26.delete(closure_0);
           c10 = 3;
           return { value, done: true };
         } else {
           c8 = 0;
-          closure_134_25.delete(closure_0);
+          closure_134_26.delete(closure_0);
           const showConfirmation = platform.showConfirmation;
           const intl = closure_134_0(closure_134_2[19]).intl;
           showConfirmation(intl.string(closure_134_1(closure_134_2[20]).S6Px3n));
@@ -837,7 +849,7 @@ obj = function _continuePublish() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c10;
@@ -873,13 +885,13 @@ obj = function _continuePublish() {
                   set.add(closure_0);
                   c10 = 1;
                   const requestConsent = platform.requestConsent;
-                  let f140654 = requestConsent;
+                  let f137331 = requestConsent;
                   if (requestConsent == null) {
-                    f140654 = (arg0) => closure_2_19(arg0, closure_1_4);
+                    f137331 = (arg0) => closure_2_19(arg0, closure_1_4);
                   }
                   c11 = 3;
                   c12 = 1;
-                  const obj5 = { value: f140654(closure_0), done: false };
+                  const obj5 = { value: f137331(closure_0), done: false };
                   return obj5;
                 }
               }
@@ -896,7 +908,7 @@ obj = function _continuePublish() {
           }
         } else if (2 === c11) {
           c10 = 0;
-          closure_136_25.delete(closure_0);
+          closure_136_26.delete(closure_0);
           throw closure_9;
         } else if (3 === c11) {
           if (arg0 === 1) {
@@ -904,16 +916,16 @@ obj = function _continuePublish() {
             throw value;
           } else if (arg0 === 2) {
             c10 = 0;
-            closure_136_25.delete(closure_0);
+            closure_136_26.delete(closure_0);
             c12 = 3;
             const obj7 = { value, done: true };
             return obj7;
           } else {
             c10 = 0;
-            closure_136_25.delete(closure_0);
+            closure_136_26.delete(closure_0);
             if (closure_136_14.isProjectPublishing(closure_0)) {
               c12 = 3;
-              return { value: "HermesInternal", done: "+60" };
+              return { value: "HermesInternal", done: null };
             } else {
               _null = closure_136_18(closure_0, guildId);
               let integrationStatus;
@@ -953,7 +965,7 @@ obj = function _continuePublish() {
                 }
               }
               c12 = 3;
-              return { value: "HermesInternal", done: "+60" };
+              return { value: "HermesInternal", done: null };
             }
           }
         } else if (arg0 === 1) {
@@ -965,7 +977,7 @@ obj = function _continuePublish() {
           return obj;
         }
         c12 = 3;
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       } catch (tmp47) {
         closure_9 = tmp47;
         if (0 === c10) {
@@ -1288,7 +1300,7 @@ export default function useConjurePublishAction(arg0, arg1) {
       UserActionCreators;
       const obj2 = conjureAppInServer;
       const profile = fetchProfile(obj2.conjureProductionBotUserId(tmp), { withMutualGuilds: true });
-      profile.catch(f115735);
+      profile.catch(f101455);
     }
   }, items3);
   let application_id;
@@ -1402,5 +1414,7 @@ export function isConjureLiveNameOutdated(application_id) {
     return false;
   }
 }
+export { approvalPending };
 export { requestConjureInstallConsent };
+export { waitForAppChannel };
 export { runConjurePublishAction };

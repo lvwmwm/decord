@@ -1,14 +1,14 @@
 // Module ID: 8823
 // Function ID: 8824
 // Name: AnimatedTooltip
-// Dependencies: [32, 19, 17, 21, 1655, 8824, 4806, 8826, 8827, 2]
+// Dependencies: [32, 19, 17, 21, 1653, 8824, 4808, 8826, 8827, 2]
 // Exports: AnimatedTooltip
 
 // Module 8823 (AnimatedTooltip)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import _modDef1655 from "module_1655" /* 1655 */;
-import react2 from "react" /* 4806 */;
+import _modDef1653 from "module_1653" /* 1653 */;
+import react2 from "react" /* 4808 */;
 import Tooltip2 from "Tooltip" /* 8824 */;
 import TooltipConstants from "TooltipConstants" /* 8826 */;
 import AnimatedEnterExitItemDefault from "AnimatedEnterExitItem" /* 8827 */;
@@ -21,7 +21,7 @@ const jsx = Fragment.jsx;
 function renderTooltipItem(arg0, arg1) {
   const items = [arg1, StyleSheet.absoluteFill];
   let tmpResult = null;
-  const View = _modDef1655.View;
+  const View = _modDef1653.View;
   if (null != arg0) {
     const obj2 = {};
     const Tooltip = Tooltip2.Tooltip;

@@ -1,20 +1,20 @@
-// Module ID: 6931
-// Function ID: 6932
+// Module ID: 6930
+// Function ID: 6931
 // Name: BaseIconButton
-// Dependencies: [19, 21, 4792, 5396, 1655, 5392, 5397, 5399, 5401, 2]
+// Dependencies: [19, 21, 4794, 5398, 1653, 5394, 5399, 5401, 5403, 2]
 // Exports: BaseIconButton
 
-// Module 6931 (BaseIconButton)
+// Module 6930 (BaseIconButton)
 import Fragment from "Fragment" /* 21 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import IconDefault from "Icon" /* 5392 */;
-import ButtonConstants from "ButtonConstants" /* 5396 */;
-import ButtonHooks from "ButtonHooks" /* 5397 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import IconDefault from "Icon" /* 5394 */;
+import ButtonConstants from "ButtonConstants" /* 5398 */;
+import ButtonHooks from "ButtonHooks" /* 5399 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
-const module_1655 = _mod1655;
+const module_1653 = _mod1653;
 
 const jsx = Fragment.jsx;
 let closure_4 = createStyles.createStyles((arg0, arg1) => {
@@ -38,7 +38,7 @@ let closure_4 = createStyles.createStyles((arg0, arg1) => {
   const merged = Object.assign(obj);
   return obj5;
 });
-const Icon = module_1655.createAnimatedComponent(IconDefault);
+const Icon = module_1653.createAnimatedComponent(IconDefault);
 const result = size.fileFinishedImporting("design/components/Button/native/BaseIconButton.native.tsx");
 
 export function BaseIconButton(ref) {
@@ -68,7 +68,7 @@ export function BaseIconButton(ref) {
     num = scaleAmountInPx;
   }
   const tmp4 = closure_4(str, DEFAULT_BUTTON_SIZE);
-  const obj = _mod1655;
+  const obj = _mod1653;
   const sharedValue = obj.useSharedValue(0);
   const obj2 = ButtonHooks;
   const iconTintStyles = obj2.useIconTintStyles(str, sharedValue);
@@ -76,17 +76,17 @@ export function BaseIconButton(ref) {
   const iconSizeStyles = obj3.useIconSizeStyles(DEFAULT_BUTTON_SIZE, true, maxFontSizeMultiplier);
   let MEDIUM_BUTTON_HEIGHT = ButtonConstants.LARGE_BUTTON_HEIGHT;
   if ("sm" === DEFAULT_BUTTON_SIZE) {
-    MEDIUM_BUTTON_HEIGHT = tmp5(5396).SMALL_BUTTON_HEIGHT;
+    MEDIUM_BUTTON_HEIGHT = tmp5(5398).SMALL_BUTTON_HEIGHT;
   } else if ("md" === DEFAULT_BUTTON_SIZE) {
-    MEDIUM_BUTTON_HEIGHT = tmp5(5396).MEDIUM_BUTTON_HEIGHT;
+    MEDIUM_BUTTON_HEIGHT = tmp5(5398).MEDIUM_BUTTON_HEIGHT;
   }
-  const bound = Math.max((tmp5(5396).MINIMUM_HIT_AREA - MEDIUM_BUTTON_HEIGHT) / 2, 0);
-  const BaseButton = tmp5(5399).BaseButton;
+  const bound = Math.max((tmp5(5398).MINIMUM_HIT_AREA - MEDIUM_BUTTON_HEIGHT) / 2, 0);
+  const BaseButton = tmp5(5401).BaseButton;
   const merged1 = Object.assign(merged);
   const items = [tmp4.button, style];
   const items1 = [tmp4.pill, pillStyle];
   let str3 = "xs";
-  const ButtonPill = tmp5(5401).ButtonPill;
+  const ButtonPill = tmp5(5403).ButtonPill;
   if ("lg" === DEFAULT_BUTTON_SIZE) {
     str3 = "sm";
   }

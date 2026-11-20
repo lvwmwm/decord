@@ -1,35 +1,61 @@
 // Module ID: 1934
 // Function ID: 1935
-// Dependencies: []
-// Exports: cloneWorklet
+// Dependencies: [1935, 1937, 1938, 1939, 1940, 1941, 1942, 1943, 1944, 1936, 1945]
 
 // Module 1934
-const f83590 = () => {
+import Bounce from "Bounce" /* 1935 */;
+import resolveTransformSlot from "resolveTransformSlot" /* 1936 */;
+import Fade from "Fade" /* 1937 */;
+import Flip from "Flip" /* 1938 */;
+import Lightspeed from "Lightspeed" /* 1939 */;
+import Pinwheel from "Pinwheel" /* 1940 */;
+import Roll from "Roll" /* 1941 */;
+import Rotate from "Rotate" /* 1942 */;
+import Slide from "Slide" /* 1943 */;
+import Stretch from "Stretch" /* 1944 */;
+import Zoom from "Zoom" /* 1945 */;
 
-};
-function worklet(arg0) {
-  let fn = arg0;
-  if (arg0 == null) {
-    fn = f83590;
-  }
-  fn.__workletHash = Math.random();
-  return fn;
+for (const key10013 in Bounce) {
+  exports[key10013] = Bounce[key10013];
+  continue;
 }
-
-export { worklet };
-export const cloneWorklet = (__workletHash) => {
-  if (typeof worklet === "function") {
-    const fn = f83590;
-    const _Math = Math;
-    fn.__workletHash = Math.random();
-    fn.__workletHash = __workletHash.__workletHash;
-    if (undefined !== __workletHash.__closure) {
-      const items = [];
-      HermesBuiltin.arraySpread(items, __workletHash.__closure, 0);
-      fn.__closure = items;
-    }
-    return fn;
-  } else {
-    throw new TypeError("Trying to call a non-function");
-  }
-};
+for (const key10017 in Fade) {
+  exports[key10017] = Fade[key10017];
+  continue;
+}
+for (const key10021 in Flip) {
+  exports[key10021] = Flip[key10021];
+  continue;
+}
+for (const key10025 in Lightspeed) {
+  exports[key10025] = Lightspeed[key10025];
+  continue;
+}
+for (const key10029 in Pinwheel) {
+  exports[key10029] = Pinwheel[key10029];
+  continue;
+}
+for (const key10033 in Roll) {
+  exports[key10033] = Roll[key10033];
+  continue;
+}
+for (const key10037 in Rotate) {
+  exports[key10037] = Rotate[key10037];
+  continue;
+}
+for (const key10041 in Slide) {
+  exports[key10041] = Slide[key10041];
+  continue;
+}
+for (const key10045 in Stretch) {
+  exports[key10045] = Stretch[key10045];
+  continue;
+}
+for (const key10049 in resolveTransformSlot) {
+  exports[key10049] = resolveTransformSlot[key10049];
+  continue;
+}
+for (const key10053 in Zoom) {
+  exports[key10053] = Zoom[key10053];
+  continue;
+}

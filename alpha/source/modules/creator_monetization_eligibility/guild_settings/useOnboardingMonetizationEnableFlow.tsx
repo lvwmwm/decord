@@ -1,14 +1,14 @@
-// Module ID: 20040
-// Function ID: 20041
+// Module ID: 19860
+// Function ID: 19861
 // Name: useOnboardingMonetizationEnableFlow
-// Dependencies: [19, 4659, 1388, 1072, 6762, 563, 20041, 20042, 20043, 6754, 1113, 2188, 20044, 2]
+// Dependencies: [19, 4661, 1386, 1071, 6762, 563, 19861, 19862, 19863, 6754, 1112, 2186, 19864, 2]
 // Exports: default
 
-// Module 20040 (useOnboardingMonetizationEnableFlow)
-import GuildRecord from "GuildRecord" /* 4659 */;
+// Module 19860 (useOnboardingMonetizationEnableFlow)
+import GuildRecord from "GuildRecord" /* 4661 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1388 */;
-import Constants from "Constants" /* 1072 */;
+import UserStore from "UserStore" /* 1386 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -57,23 +57,23 @@ export default function useOnboardingMonetizationEnableFlow(features) {
     return tmp3;
   });
   let id;
-  const tmp10 = refresh(20041);
+  const tmp10 = refresh(19861);
   if (features != null) {
     id = features.id;
   }
   ({ submittedRequest, error, loading, createEnableRequest } = tmp10(id));
   let id1;
   tmp10(id);
-  const tmp9Result = refresh(20042);
+  const tmp9Result = refresh(19862);
   if (features != null) {
     id1 = features.id;
   }
   const tmp9ResultResult = tmp9Result(id1);
   refresh = tmp9ResultResult.refresh;
   ({ eligibility, loading: loading2, error: error2 } = tmp9ResultResult);
-  ({ isApplicationRejected, requestCooldownDuration } = refresh(20043)(eligibility));
+  ({ isApplicationRejected, requestCooldownDuration } = refresh(19863)(eligibility));
   let hasItem2;
-  refresh(20043)(eligibility);
+  refresh(19863)(eligibility);
   if (features != null) {
     const features3 = features.features;
     hasItem2 = features3.has(constants.CREATOR_MONETIZABLE_RESTRICTED);
@@ -105,22 +105,22 @@ export default function useOnboardingMonetizationEnableFlow(features) {
   if (eligibility != null) {
     canApply = eligibility.canApply;
   }
-  const intl = tmp(1113).intl;
-  const aJUdOi = tmp(1113).t.aJUdOi;
-  const tmp9Result3 = refresh(2188);
+  const intl = tmp(1112).intl;
+  const aJUdOi = tmp(1112).t.aJUdOi;
+  const tmp9Result3 = refresh(2186);
   ({ faqUrl: null }.faqUrl) = tmp9Result3.getArticleURL(constants2.CREATOR_FAQ);
   const tmp26 = constants2;
   if (isApplicationRejected) {
     if (isMonetizationReapplicationDisabled) {
       let formatResult;
       if (true === hasItem) {
-        const intl4 = tmp(1113).intl;
+        const intl4 = tmp(1112).intl;
         const obj2 = { communityGuidelineUrl: constants3.GUIDELINES };
-        formatResult = intl4.format(tmp(1113).t["0o1Q+t"], obj2);
+        formatResult = intl4.format(tmp(1112).t["0o1Q+t"], obj2);
       } else {
-        const intl3 = tmp(1113).intl;
+        const intl3 = tmp(1112).intl;
         const obj3 = { communityGuidelineUrl: constants3.GUIDELINES };
-        formatResult = intl3.format(tmp(1113).t.b6h59n, obj3);
+        formatResult = intl3.format(tmp(1112).t.b6h59n, obj3);
       }
       formatResult2 = formatResult;
     }
@@ -129,13 +129,13 @@ export default function useOnboardingMonetizationEnableFlow(features) {
       isExpeditedOnboardingGuild = false === hasItem;
     }
     let formatResult1;
-    const tmpResult4 = tmp(20044);
+    const tmpResult4 = tmp(19864);
     const creatorMonetizationAcceptTermsCheckboxText = tmpResult4.getCreatorMonetizationAcceptTermsCheckboxText();
     if (isApplicationRejected) {
       if (true === canApply) {
         if (stateFromStores) {
-          const intl5 = tmp(1113).intl;
-          formatResult1 = intl5.format(tmp(1113).t.wbVIUB, {});
+          const intl5 = tmp(1112).intl;
+          formatResult1 = intl5.format(tmp(1112).t.wbVIUB, {});
         }
       }
     }
@@ -157,11 +157,11 @@ export default function useOnboardingMonetizationEnableFlow(features) {
   }
   const tmp28 = isApplicationRejected && null != requestCooldownDuration;
   if (tmp28) {
-    const intl2 = tmp(1113).intl;
+    const intl2 = tmp(1112).intl;
     const format = intl2.format;
     const obj5 = { requestCooldownDuration, creatorRevenuePolicyUrl: tmp9Result4.getArticleURL(tmp26.CREATOR_POLICY) };
-    const TvX207 = tmp(1113).t.TvX207;
-    tmp9Result4 = refresh(2188);
+    const TvX207 = tmp(1112).t.TvX207;
+    tmp9Result4 = refresh(2186);
     formatResult2 = format(TvX207, obj5);
   }
 };

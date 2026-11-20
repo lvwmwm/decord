@@ -1,13 +1,13 @@
 // Module ID: 9022
 // Function ID: 9023
 // Name: useIsEligibleForBogoOffer
-// Dependencies: [19, 2179, 9023, 1390, 504, 8699, 9021, 8985, 9083, 2]
+// Dependencies: [19, 2177, 9023, 1388, 504, 8739, 9021, 8985, 9083, 2]
 // Exports: useIsEligibleForBogoOffer
 
 // Module 9022 (useIsEligibleForBogoOffer)
-import PremiumConstants from "PremiumConstants" /* 1390 */;
+import PremiumConstants from "PremiumConstants" /* 1388 */;
 import react from "react" /* 19 */;
-import SubscriptionStore from "SubscriptionStore" /* 2179 */;
+import SubscriptionStore from "SubscriptionStore" /* 2177 */;
 import PromotionsStore from "PromotionsStore" /* 9023 */;
 import size from "module_2" /* 2 */;
 
@@ -26,7 +26,7 @@ export function useIsEligibleForBogoOffer() {
   const items1 = [SubscriptionStore];
   const obj2 = forceUpdate(504);
   const stateFromStores1 = obj2.useStateFromStores(items1, () => premiumTypeSubscription.getPremiumTypeSubscription());
-  const obj4 = forceUpdate(8699);
+  const obj4 = forceUpdate(8739);
   const premiumTrialOffer = obj4.usePremiumTrialOffer();
   const obj5 = forceUpdate(9021);
   const premiumDiscountOffer = obj5.usePremiumDiscountOffer();

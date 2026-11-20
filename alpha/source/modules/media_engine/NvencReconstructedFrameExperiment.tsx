@@ -1,11 +1,11 @@
-// Module ID: 15283
-// Function ID: 15284
+// Module ID: 15247
+// Function ID: 15248
 // Name: NvencReconstructedFrameExperiment
-// Dependencies: [1453, 2]
+// Dependencies: [1451, 2]
 // Exports: getNvencReconstructedFrameExperimentConfig
 
-// Module 15283 (NvencReconstructedFrameExperiment)
-import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1453 */;
+// Module 15247 (NvencReconstructedFrameExperiment)
+import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1451 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

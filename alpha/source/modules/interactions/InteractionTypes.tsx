@@ -1,9 +1,9 @@
-// Module ID: 5853
-// Function ID: 5854
+// Module ID: 5855
+// Function ID: 5856
 // Name: interactions/InteractionTypes
 // Dependencies: [2]
 
-// Module 5853 (interactions/InteractionTypes)
+// Module 5855 (interactions/InteractionTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/interactions/InteractionTypes.tsx");

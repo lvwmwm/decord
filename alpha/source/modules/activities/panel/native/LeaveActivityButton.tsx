@@ -1,15 +1,15 @@
-// Module ID: 19090
-// Function ID: 19091
+// Module ID: 18909
+// Function ID: 18910
 // Name: LeaveActivityButton
-// Dependencies: [19, 5418, 21, 5390, 10307, 1113, 10564, 2]
+// Dependencies: [19, 5420, 21, 5392, 10249, 1112, 10506, 2]
 
-// Module 19090 (LeaveActivityButton)
+// Module 18909 (LeaveActivityButton)
 import Fragment from "Fragment" /* 21 */;
-import intl3 from "intl" /* 1113 */;
-import components_Button_Button from "components/Button/Button" /* 5390 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5418 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10307 */;
-import leaveEmbeddedActivity2 from "leaveEmbeddedActivity" /* 10564 */;
+import intl3 from "intl" /* 1112 */;
+import components_Button_Button from "components/Button/Button" /* 5392 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5420 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10249 */;
+import leaveEmbeddedActivity2 from "leaveEmbeddedActivity" /* 10506 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

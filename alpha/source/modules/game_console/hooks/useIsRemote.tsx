@@ -1,12 +1,12 @@
-// Module ID: 10604
-// Function ID: 10605
+// Module ID: 10546
+// Function ID: 10547
 // Name: useIsRemote
-// Dependencies: [5534, 504, 2]
+// Dependencies: [5536, 504, 2]
 // Exports: default
 
-// Module 10604 (useIsRemote)
+// Module 10546 (useIsRemote)
 import get_initialized from "get initialized" /* 504 */;
-import GameConsoleStore from "GameConsoleStore" /* 5534 */;
+import GameConsoleStore from "GameConsoleStore" /* 5536 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/game_console/hooks/useIsRemote.tsx");

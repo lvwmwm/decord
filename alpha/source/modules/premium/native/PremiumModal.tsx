@@ -1,16 +1,16 @@
 // Module ID: 8980
 // Function ID: 8981
 // Name: PremiumModal
-// Dependencies: [19, 1072, 21, 1113, 6976, 8981, 14014, 14017, 14059, 14075, 7401, 6973, 2]
+// Dependencies: [19, 1071, 21, 1112, 6975, 8981, 13983, 13986, 14028, 14044, 7400, 6972, 2]
 // Exports: default
 
 // Module 8980 (PremiumModal)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1072 */;
-import NavigatorHeader from "NavigatorHeader" /* 6976 */;
+import Constants from "Constants" /* 1071 */;
+import NavigatorHeader from "NavigatorHeader" /* 6975 */;
 import UserSettingsPremiumDefault from "UserSettingsPremium" /* 8981 */;
-import PremiumPlanSelectDefault from "PremiumPlanSelect" /* 14059 */;
-import UserSettingsPremiumGiftingDefault from "UserSettingsPremiumGifting" /* 14075 */;
+import PremiumPlanSelectDefault from "PremiumPlanSelect" /* 14028 */;
+import UserSettingsPremiumGiftingDefault from "UserSettingsPremiumGifting" /* 14044 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

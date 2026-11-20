@@ -1,18 +1,18 @@
-// Module ID: 7377
-// Function ID: 7378
+// Module ID: 7376
+// Function ID: 7377
 // Name: Emoji
-// Dependencies: [19, 17, 1192, 21, 1380, 4742, 1187, 5479, 4799, 7378, 7379, 2]
+// Dependencies: [19, 17, 1191, 21, 1378, 4744, 1186, 5481, 4801, 7377, 7378, 2]
 // Exports: default
 
-// Module 7377 (Emoji)
+// Module 7376 (Emoji)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
-import EmojiUtilsDefault from "EmojiUtils" /* 4742 */;
-import shared from "shared" /* 4799 */;
-import FastImageDefault from "FastImage" /* 5479 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
+import EmojiUtilsDefault from "EmojiUtils" /* 4744 */;
+import shared from "shared" /* 4801 */;
+import FastImageDefault from "FastImage" /* 5481 */;
 import react from "react" /* 19 */;
-import ThemeStore from "ThemeStore" /* 1192 */;
+import ThemeStore from "ThemeStore" /* 1191 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;
@@ -50,9 +50,9 @@ export default function Emoji(arg0) {
         const tmp10 = FastImageDefault;
         const tmpResult = shared;
         if (tmpResult.isThemeDark(ThemeStore.theme)) {
-          tmp9Result = tmp9(7378);
+          tmp9Result = tmp9(7377);
         } else {
-          tmp9Result = tmp9(7379);
+          tmp9Result = tmp9(7378);
         }
         obj5 = { uri: uRL };
         tmp6Result = tmp6(tmp10, obj4);
@@ -61,5 +61,5 @@ export default function Emoji(arg0) {
       return <tmp7 {...obj3} />;
     }
   }
-  tmp6Result = tmp6(tmp(1187).LegacyText, { style: textEmojiStyle, allowFontScaling: false, adjustsFontSizeToFit, children: name });
+  tmp6Result = tmp6(tmp(1186).LegacyText, { style: textEmojiStyle, allowFontScaling: false, adjustsFontSizeToFit, children: name });
 };

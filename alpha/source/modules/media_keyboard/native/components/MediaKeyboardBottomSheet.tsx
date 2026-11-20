@@ -1,24 +1,24 @@
-// Module ID: 18461
-// Function ID: 18462
+// Module ID: 18286
+// Function ID: 18287
 // Name: MediaKeyboardBottomSheet
-// Dependencies: [32, 19, 17, 1626, 1072, 21, 1627, 1380, 4792, 575, 1113, 12857, 4853, 4964, 5024, 1655, 5008, 5009, 1256, 5022, 5802, 1708, 5353, 1630, 5799, 4977, 2]
+// Dependencies: [32, 19, 17, 1624, 1071, 21, 1625, 1378, 4794, 575, 1112, 12827, 4855, 4966, 5026, 1653, 5010, 5011, 1255, 5024, 5804, 1706, 5355, 1628, 5801, 4979, 2]
 
-// Module 18461 (MediaKeyboardBottomSheet)
+// Module 18286 (MediaKeyboardBottomSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import intl2 from "intl" /* 1113 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import ChatInputUtils from "ChatInputUtils" /* 4977 */;
-import HapticUtils from "HapticUtils" /* 5008 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5009 */;
+import Constants from "Constants" /* 1071 */;
+import intl2 from "intl" /* 1112 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import ChatInputUtils from "ChatInputUtils" /* 4979 */;
+import HapticUtils from "HapticUtils" /* 5010 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5011 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1626 */;
+import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1624 */;
 import Fragment from "Fragment" /* 21 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1627 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
-import createStyles from "createStyles" /* 4792 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1625 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, handleHeight;
@@ -92,11 +92,11 @@ const memoResult = react.memo(function MediaKeyboardBottomSheet(onClose) {
   let tmp2 = onClose;
   const tmp3 = dependencyMap;
   let tmp = closure_13();
-  let tmp4 = onClose(12857)({ forceMaxHeight: false });
-  let tmp6 = transitionState === bottomSheetRef(4853).TransitionStates.YEETED;
+  let tmp4 = onClose(12827)({ forceMaxHeight: false });
+  let tmp6 = transitionState === bottomSheetRef(4855).TransitionStates.YEETED;
   _slicedToArray = tmp6;
   let obj = isScreenReaderEnabled;
-  const tmp7 = onClose(4964)();
+  const tmp7 = onClose(4966)();
   const callback = isScreenReaderEnabled.useCallback((arg0) => {
     const obj = {};
     const merged = Object.assign(arg0);
@@ -127,7 +127,7 @@ const memoResult = react.memo(function MediaKeyboardBottomSheet(onClose) {
       obj2.track(AnalyticEvents.MEDIA_PICKER_ACTION_SHEET_ENGAGED, obj3);
     }
   }, items);
-  let obj2 = bottomSheetRef(5022);
+  let obj2 = bottomSheetRef(5024);
   isScreenReaderEnabled = obj2.useIsScreenReaderEnabled();
   [tmp14, tmp15] = obj.useState(false);
   _slicedToArray(obj.useState(false), 2);
@@ -161,7 +161,7 @@ const memoResult = react.memo(function MediaKeyboardBottomSheet(onClose) {
   const items2 = [closure_15, animatedIndex];
   let c0;
   [tmp19, tmp20] = items2;
-  const tmp5Result = bottomSheetRef(1655);
+  const tmp5Result = bottomSheetRef(1653);
   class MediaKeyboardBottomSheetTsx1 {
     constructor() {
       return _undefined.get() >= 0;
@@ -173,7 +173,7 @@ const memoResult = react.memo(function MediaKeyboardBottomSheet(onClose) {
   MediaKeyboardBottomSheetTsx1.__initData = tmp19;
   const items4 = [closure_16, closure_12, , ];
   const useAnimatedReaction = tmp5Result.useAnimatedReaction;
-  items4[2] = bottomSheetRef(1708).scheduleOnRN;
+  items4[2] = bottomSheetRef(1706).scheduleOnRN;
   items4[3] = callback3;
   c0 = undefined;
   let c1;
@@ -198,7 +198,7 @@ const memoResult = react.memo(function MediaKeyboardBottomSheet(onClose) {
   const items6 = [closure_17, animatedIndex];
   c0 = undefined;
   [tmp27, tmp28] = items6;
-  const tmp5Result2 = bottomSheetRef(1655);
+  const tmp5Result2 = bottomSheetRef(1653);
   class MediaKeyboardBottomSheetTsx3 {
     constructor() {
       return Math.max(_undefined.get(), 0) > 0;
@@ -210,7 +210,7 @@ const memoResult = react.memo(function MediaKeyboardBottomSheet(onClose) {
   MediaKeyboardBottomSheetTsx3.__initData = tmp27;
   const items8 = [closure_18, , ];
   const useAnimatedReaction2 = tmp5Result2.useAnimatedReaction;
-  items8[1] = bottomSheetRef(1708).scheduleOnRN;
+  items8[1] = bottomSheetRef(1706).scheduleOnRN;
   items8[2] = tmp15;
   c0 = undefined;
   c1 = undefined;
@@ -227,7 +227,7 @@ const memoResult = react.memo(function MediaKeyboardBottomSheet(onClose) {
   MediaKeyboardBottomSheetTsx4.__workletHash = 10381616509048;
   MediaKeyboardBottomSheetTsx4.__initData = tmp29;
   const animatedReaction2 = useAnimatedReaction2(MediaKeyboardBottomSheetTsx3, MediaKeyboardBottomSheetTsx4);
-  tmp2(5353)(() => () => {
+  tmp2(5355)(() => () => {
     if (null != ref.current) {
       const _clearTimeout = clearTimeout;
       clearTimeout(tmp.current);
@@ -258,13 +258,13 @@ const memoResult = react.memo(function MediaKeyboardBottomSheet(onClose) {
       }
     }
   }, items10);
-  ({ left, right } = tmp2(1630)());
+  ({ left, right } = tmp2(1628)());
   let obj3 = { gradient: tmp7, children: items11 };
-  tmp2(1630)();
-  const ThemeContextProvider = tmp5(4853).ThemeContextProvider;
-  const obj4 = { style: { marginLeft: left, marginRight: right }, BodyComponent: tmp2(1655).View, ref: bottomSheetRef, animationConfigs, animatedIndex, animatedPosition, enableContentPanningGesture: tmp39, enableHandlePanningGesture: !(isScreenReaderEnabled || tmp6), handleComponent, backgroundComponent: callback, backgroundStyle: tmp.background, backdropComponent: callback1, onAnimate: callback2, handleHeight, onClose, children: closure_9(bottomSheetRef(5799).AccessibilityViewAnimated, obj5) };
+  tmp2(1628)();
+  const ThemeContextProvider = tmp5(4855).ThemeContextProvider;
+  const obj4 = { style: { marginLeft: left, marginRight: right }, BodyComponent: tmp2(1653).View, ref: bottomSheetRef, animationConfigs, animatedIndex, animatedPosition, enableContentPanningGesture: tmp39, enableHandlePanningGesture: !(isScreenReaderEnabled || tmp6), handleComponent, backgroundComponent: callback, backgroundStyle: tmp.background, backdropComponent: callback1, onAnimate: callback2, handleHeight, onClose, children: closure_9(bottomSheetRef(5801).AccessibilityViewAnimated, obj5) };
   tmp39 = !tmp12;
-  const tmp2Result = tmp2(5024);
+  const tmp2Result = tmp2(5026);
   const tmp36 = closure_10;
   if (tmp39) {
     tmp39 = !closure_11;

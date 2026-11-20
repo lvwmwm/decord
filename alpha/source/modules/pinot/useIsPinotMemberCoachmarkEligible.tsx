@@ -1,14 +1,14 @@
-// Module ID: 11795
-// Function ID: 11796
+// Module ID: 11737
+// Function ID: 11738
 // Name: useIsPinotMemberCoachmarkEligible
-// Dependencies: [11790, 7653, 11796, 11793, 2]
+// Dependencies: [11732, 7652, 11738, 11735, 2]
 // Exports: useIsPinotMemberCoachmarkEligible
 
-// Module 11795 (useIsPinotMemberCoachmarkEligible)
-import PinotExperiment from "PinotExperiment" /* 7653 */;
-import useIsChannelPinotPromotable from "useIsChannelPinotPromotable" /* 11790 */;
-import useCanMessageInPinotChannel from "useCanMessageInPinotChannel" /* 11793 */;
-import PinotMemberSettingState from "PinotMemberSettingState" /* 11796 */;
+// Module 11737 (useIsPinotMemberCoachmarkEligible)
+import PinotExperiment from "PinotExperiment" /* 7652 */;
+import useIsChannelPinotPromotable from "useIsChannelPinotPromotable" /* 11732 */;
+import useCanMessageInPinotChannel from "useCanMessageInPinotChannel" /* 11735 */;
+import PinotMemberSettingState from "PinotMemberSettingState" /* 11738 */;
 import size from "module_2" /* 2 */;
 
 let c2 = true;

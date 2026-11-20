@@ -1,11 +1,11 @@
-// Module ID: 18099
-// Function ID: 18100
+// Module ID: 17926
+// Function ID: 17927
 // Name: useGetOrFetchNotificationCenterItemApplications
-// Dependencies: [19, 6516, 6745, 2]
+// Dependencies: [19, 6518, 6745, 2]
 // Exports: useGetOrFetchNotificationCenterItemsApplications
 
-// Module 18099 (useGetOrFetchNotificationCenterItemApplications)
-import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 6516 */;
+// Module 17926 (useGetOrFetchNotificationCenterItemApplications)
+import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 6518 */;
 import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 6745 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

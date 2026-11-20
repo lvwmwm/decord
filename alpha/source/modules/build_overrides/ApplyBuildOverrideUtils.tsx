@@ -1,12 +1,12 @@
-// Module ID: 12157
-// Function ID: 12158
+// Module ID: 12099
+// Function ID: 12100
 // Name: ApplyBuildOverrideUtils
-// Dependencies: [5, 502, 12158, 1285, 1377, 2]
+// Dependencies: [5, 502, 12100, 1284, 1375, 2]
 // Exports: applyPublicBuildOverride, applyStaffBuildOverride, clearBuildOverride, getPublicBuildOverrideLink
 
-// Module 12157 (ApplyBuildOverrideUtils)
-import HTTPUtils from "HTTPUtils" /* 1285 */;
-import BuildOverrideUtils from "BuildOverrideUtils" /* 1377 */;
+// Module 12099 (ApplyBuildOverrideUtils)
+import HTTPUtils from "HTTPUtils" /* 1284 */;
+import BuildOverrideUtils from "BuildOverrideUtils" /* 1375 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
@@ -29,7 +29,7 @@ let obj = function _applyStaffBuildOverride() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -126,7 +126,7 @@ obj = function _applyPublicBuildOverride() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;
@@ -231,7 +231,7 @@ let closure_0 = _asyncToGenerator(async (arg0, value) => {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: "+60" };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {
@@ -260,7 +260,7 @@ let closure_0 = _asyncToGenerator(async (arg0, value) => {
         return obj;
       } else {
         c1 = 3;
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } catch (tmp7) {
       c1 = 3;

@@ -1,13 +1,13 @@
-// Module ID: 10741
-// Function ID: 10742
+// Module ID: 10683
+// Function ID: 10684
 // Name: NativeRPCHelpers
-// Dependencies: [5, 6233, 1072, 10742, 6790, 2]
+// Dependencies: [5, 6235, 1071, 10684, 6790, 2]
 // Exports: getDeprecatedVoiceSettings, getVoiceSettings, validateSocketClient
 
-// Module 10741 (NativeRPCHelpers)
-import Constants from "Constants" /* 1072 */;
-import Constants2 from "Constants" /* 6233 */;
-import RPCHelpers from "RPCHelpers" /* 10742 */;
+// Module 10683 (NativeRPCHelpers)
+import Constants from "Constants" /* 1071 */;
+import Constants2 from "Constants" /* 6235 */;
+import RPCHelpers from "RPCHelpers" /* 10684 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -31,7 +31,7 @@ let closure_0 = _asyncToGenerator(async function(arg0, value, arg2) {
       const obj2 = { value, done: true };
       return obj2;
     } else {
-      return { value: "HermesInternal", done: "+60" };
+      return { value: "HermesInternal", done: null };
     }
   } else {
     try {

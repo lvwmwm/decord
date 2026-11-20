@@ -1,25 +1,25 @@
-// Module ID: 14545
-// Function ID: 14546
+// Module ID: 14513
+// Function ID: 14514
 // Name: UserProfileContactButtons
-// Dependencies: [19, 17, 4734, 1072, 21, 4792, 575, 5390, 7401, 8016, 14436, 504, 4848, 14546, 5482, 1113, 10124, 7621, 12046, 5006, 6308, 7618, 14548, 7472, 7553, 8493, 14286, 2]
+// Dependencies: [19, 17, 4736, 1071, 21, 4794, 575, 5392, 7400, 8015, 14404, 504, 4850, 14514, 5484, 1112, 10127, 7620, 11988, 5008, 6310, 7617, 14516, 7471, 7552, 8492, 14254, 2]
 // Exports: default
 
-// Module 14545 (UserProfileContactButtons)
+// Module 14513 (UserProfileContactButtons)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
-import components_Button_Button from "components/Button/Button" /* 5390 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6308 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7618 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7621 */;
-import UserProfileAlertUtils from "UserProfileAlertUtils" /* 10124 */;
-import navigateToLastChannelDefault from "navigateToLastChannel" /* 12046 */;
-import ConfirmStartCall from "ConfirmStartCall" /* 14286 */;
+import Constants from "Constants" /* 1071 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5008 */;
+import components_Button_Button from "components/Button/Button" /* 5392 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6310 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7617 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7620 */;
+import UserProfileAlertUtils from "UserProfileAlertUtils" /* 10127 */;
+import navigateToLastChannelDefault from "navigateToLastChannel" /* 11988 */;
+import ConfirmStartCall from "ConfirmStartCall" /* 14254 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4734 */;
+import RelationshipStore from "RelationshipStore" /* 4736 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -65,19 +65,19 @@ function FriendRequestButton(user) {
   let userDisplayName;
   ({ hasCustomProfileTheme, ButtonComponent } = user);
   const tmp = trackUserProfileAction;
-  const newestAnalyticsLocation = trackUserProfileAction(7401)().newestAnalyticsLocation;
-  let obj = user(8016);
+  const newestAnalyticsLocation = trackUserProfileAction(7400)().newestAnalyticsLocation;
+  let obj = user(8015);
   trackUserProfileAction = obj.useUserProfileAnalyticsContext().trackUserProfileAction;
   if (_location == null) {
     _location = newestAnalyticsLocation;
   }
   dependencyMap = { location: _location };
-  const tmp3Result = user(14436);
+  const tmp3Result = user(14404);
   const gameFriendsForUser = tmp3Result.useGameFriendsForUser(user.id);
   const items = [userDisplayName];
   const tmp3Result2 = user(504);
   stateFromStores = tmp3Result2.useStateFromStores(items, () => RelationshipStore.getRelationshipType(user.id));
-  const tmpResult = tmp(4848);
+  const tmpResult = tmp(4850);
   userDisplayName = tmpResult.useName(user);
   if (stateFromStores !== RelationshipTypes.FRIEND) {
     if (stateFromStores !== RelationshipTypes.BLOCKED) {
@@ -90,21 +90,21 @@ function FriendRequestButton(user) {
         let stringResult;
         let string2Result;
         if (stateFromStores === RelationshipTypes.PENDING_OUTGOING) {
-          UserPlusIcon = tmp3(14546).UserClockIcon;
+          UserPlusIcon = tmp3(14514).UserClockIcon;
         } else {
-          UserPlusIcon = tmp3(5482).UserPlusIcon;
+          UserPlusIcon = tmp3(5484).UserPlusIcon;
         }
-        const intl = tmp3(1113).intl;
+        const intl = tmp3(1112).intl;
         const string = intl.string;
-        const t = tmp3(1113).t;
+        const t = tmp3(1112).t;
         if (stateFromStores === RelationshipTypes.PENDING_OUTGOING) {
           stringResult = string(t["fMm5q/"]);
         } else {
           stringResult = string(t["7815ae"]);
         }
-        const intl2 = tmp3(1113).intl;
+        const intl2 = tmp3(1112).intl;
         const string2 = intl2.string;
-        const t2 = tmp3(1113).t;
+        const t2 = tmp3(1112).t;
         if (stateFromStores === RelationshipTypes.PENDING_OUTGOING) {
           string2Result = string2(t2.H0Ql7N);
         } else {

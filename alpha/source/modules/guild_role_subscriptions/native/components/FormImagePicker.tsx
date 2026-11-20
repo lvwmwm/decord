@@ -1,19 +1,19 @@
-// Module ID: 20063
-// Function ID: 20064
+// Module ID: 19883
+// Function ID: 19884
 // Name: FormImagePicker
-// Dependencies: [5, 19, 17, 21, 4792, 575, 8355, 1449, 7923, 1113, 5479, 18329, 11180, 5383, 5390, 2]
+// Dependencies: [5, 19, 17, 21, 4794, 575, 8354, 1447, 7922, 1112, 5481, 18150, 11122, 5385, 5392, 2]
 // Exports: default
 
-// Module 20063 (FormImagePicker)
+// Module 19883 (FormImagePicker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ImageLoaderUtils from "ImageLoaderUtils" /* 1449 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 7923 */;
-import utils_UploadUtilsDefault from "utils/UploadUtils" /* 8355 */;
+import ImageLoaderUtils from "ImageLoaderUtils" /* 1447 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 7922 */;
+import utils_UploadUtilsDefault from "utils/UploadUtils" /* 8354 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_2;
@@ -26,7 +26,7 @@ let obj4;
 let obj5;
 let size;
 let tmp6;
-const FastImageDefault = tmp6(5479);
+const FastImageDefault = tmp6(5481);
 function pickImage() {
   return obj(...arguments);
 }
@@ -46,7 +46,7 @@ let obj = function _pickImage() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -83,7 +83,7 @@ let obj = function _pickImage() {
               size(obj);
             }
             c4 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp16) {
           c4 = 3;
@@ -143,7 +143,7 @@ class ImagePickerIcon {
     }, items);
     obj = {
       accessibilityRole: "button",
-      accessibilityLabel: intl.string(image(1113).t.HNo5cG),
+      accessibilityLabel: intl.string(image(1112).t.HNo5cG),
       accessibilityState: { disabled: flag },
       onPress: function handleSelectImage() {
         return pickImage(importDefault, dependencyMap);
@@ -153,7 +153,7 @@ class ImagePickerIcon {
       children: items3
     };
     const tmp8 = TouchableHitBoxDefault;
-    intl = image(1113).intl;
+    intl = image(1112).intl;
     items1 = [tmp.image, tmp3, tmp.imageContainerEmpty, flag && tmp.disabled, style];
     const tmp5 = closure_7;
     if (null != image) {
@@ -168,7 +168,7 @@ class ImagePickerIcon {
       tmp10 = tmp12;
     } else {
       tmp10 = closure_6;
-      tmp12Result = closure_6(tmp9(18329).ImagePlusIcon, {});
+      tmp12Result = closure_6(tmp9(18150).ImagePlusIcon, {});
     }
     items3 = [tmp12Result, ];
     let tmp10Result = null != image && !flag;
@@ -179,7 +179,7 @@ class ImagePickerIcon {
         standalone = tmp.standaloneIcon;
       }
       items4[1] = standalone;
-      const obj4 = { style: items4, children: tmp10(image(11180).PencilIcon, { color: "#292b30", size: "sm" }) };
+      const obj4 = { style: items4, children: tmp10(image(11122).PencilIcon, { color: "#292b30", size: "sm" }) };
       tmp10Result = tmp10(tmp15, obj4);
     }
     items3[1] = tmp10Result;
@@ -215,19 +215,19 @@ export default function FormImagePicker(imageUploadSize) {
   const merged = Object.assign(imageUploadSize, Object.assign({ description: 0, imageUploadSize: 0, image: 0, setImage: 0, disabled: 0 }));
   const tmp2 = closure_8();
   if (null == image) {
-    const intl2 = imageUploadSize(1113).intl;
-    stringResult = intl2.string(imageUploadSize(1113).t.bGPfSp);
+    const intl2 = imageUploadSize(1112).intl;
+    stringResult = intl2.string(imageUploadSize(1112).t.bGPfSp);
     tmp6 = imageUploadSize;
   } else {
-    const intl = imageUploadSize(1113).intl;
-    stringResult = intl.string(imageUploadSize(1113).t["0KOido"]);
+    const intl = imageUploadSize(1112).intl;
+    stringResult = intl.string(imageUploadSize(1112).t["0KOido"]);
     tmp6 = imageUploadSize;
   }
   const obj2 = { style: tmp2.buttonColumn, children: items };
   items = [, ];
   obj = { style: tmp2.imageSelectionRow, children: items1 };
   const obj3 = { style: tmp2.imageDescription, variant: "body-sm/medium", color: "text-default", children: description };
-  items[0] = closure_6(tmp6(5383).Text, obj3);
+  items[0] = closure_6(tmp6(5385).Text, obj3);
   const obj4 = {
     text: stringResult,
     variant: "secondary",
@@ -237,7 +237,7 @@ export default function FormImagePicker(imageUploadSize) {
     size: "md",
     disabled
   };
-  items[1] = closure_6(tmp6(5390).Button, obj4);
+  items[1] = closure_6(tmp6(5392).Button, obj4);
   items1 = [closure_7(View, obj2), ];
   const obj5 = { disabled, imageUploadSize, image, setImage };
   const merged1 = Object.assign(merged);

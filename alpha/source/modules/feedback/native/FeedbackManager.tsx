@@ -1,16 +1,16 @@
-// Module ID: 19549
-// Function ID: 19550
+// Module ID: 19367
+// Function ID: 19368
 // Name: FeedbackManager
-// Dependencies: [2165, 4641, 5533, 6275, 10491, 19550, 6280, 19554, 2121, 7070, 5006, 4713, 19558, 19561, 19563, 2]
+// Dependencies: [2163, 4643, 5535, 6277, 10433, 19368, 6282, 19372, 2119, 7069, 5008, 4715, 19376, 19379, 19381, 2]
 
-// Module 19549 (FeedbackManager)
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4713 */;
-import Constants from "Constants" /* 10491 */;
-import ApplicationStore from "ApplicationStore" /* 2165 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5533 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 6275 */;
-import FeedbackManager2 from "feedback/FeedbackManager" /* 19550 */;
+// Module 19367 (FeedbackManager)
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4715 */;
+import Constants from "Constants" /* 10433 */;
+import ApplicationStore from "ApplicationStore" /* 2163 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5535 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 6277 */;
+import FeedbackManager2 from "feedback/FeedbackManager" /* 19368 */;
 import size from "module_2" /* 2 */;
 
 let videoStats;

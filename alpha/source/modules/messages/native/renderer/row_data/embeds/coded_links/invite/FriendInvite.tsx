@@ -1,17 +1,17 @@
-// Module ID: 14207
-// Function ID: 14208
+// Module ID: 14177
+// Function ID: 14178
 // Name: FriendInvite
-// Dependencies: [17, 4734, 8319, 8561, 1113, 4848, 1414, 2]
+// Dependencies: [17, 4736, 8318, 8560, 1112, 4850, 1412, 2]
 // Exports: createFriendInvite
 
-// Module 14207 (FriendInvite)
+// Module 14177 (FriendInvite)
 import react_native from "react-native" /* 17 */;
-import intl4 from "intl" /* 1113 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import UserUtilsDefault from "UserUtils" /* 4848 */;
-import Constants from "Constants" /* 8319 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8561 */;
-import RelationshipStore from "RelationshipStore" /* 4734 */;
+import intl4 from "intl" /* 1112 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
+import UserUtilsDefault from "UserUtils" /* 4850 */;
+import Constants from "Constants" /* 8318 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8560 */;
+import RelationshipStore from "RelationshipStore" /* 4736 */;
 import size from "module_2" /* 2 */;
 
 const Image = react_native.Image;
@@ -79,14 +79,14 @@ export function createFriendInvite(inviter, arg1, arg2, arg3) {
   }
   if (id1 === arg2) {
     ({ acceptLabelDisabledColor, acceptLabelDisabledBackgroundColor } = colors);
-    const intl3 = tmp6(1113).intl;
-    stringResult = intl3.string(tmp6(1113).t.ib7Ng1);
+    const intl3 = tmp6(1112).intl;
+    stringResult = intl3.string(tmp6(1112).t.ib7Ng1);
     flag = false;
   } else {
     ({ acceptLabelGreenColor, acceptLabelGreenBackgroundColor } = colors);
-    const intl2 = tmp6(1113).intl;
+    const intl2 = tmp6(1112).intl;
     const string2 = intl2.string;
-    const t2 = tmp6(1113).t;
+    const t2 = tmp6(1112).t;
     if (isFriendResult) {
       stringResult = string2(t2.xhxnPn);
       flag = true;

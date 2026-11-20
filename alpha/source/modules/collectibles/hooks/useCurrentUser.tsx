@@ -1,13 +1,13 @@
 // Module ID: 8800
 // Function ID: 8801
 // Name: useCurrentUser
-// Dependencies: [1388, 504, 38, 2]
+// Dependencies: [1386, 504, 38, 2]
 // Exports: useCurrentUser, useCurrentUserIfAvailable
 
 // Module 8800 (useCurrentUser)
 import _modDef38 from "module_38" /* 38 */;
 import get_initialized from "get initialized" /* 504 */;
-import UserStore from "UserStore" /* 1388 */;
+import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/collectibles/hooks/useCurrentUser.tsx");

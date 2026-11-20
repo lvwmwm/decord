@@ -1,19 +1,19 @@
-// Module ID: 18199
-// Function ID: 18200
+// Module ID: 18026
+// Function ID: 18027
 // Name: CaughtUpRow
-// Dependencies: [5, 32, 19, 17, 21, 1655, 5383, 18138, 575, 9920, 18155, 18151, 4969, 5002, 5356, 14377, 1113, 5390, 18177, 5347, 1092, 671, 2]
+// Dependencies: [5, 32, 19, 17, 21, 1653, 5385, 17965, 575, 9923, 17982, 17978, 4971, 5004, 5358, 14345, 1112, 5392, 18004, 5349, 1091, 671, 2]
 // Exports: default
 
-// Module 18199 (CaughtUpRow)
+// Module 18026 (CaughtUpRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5383 */;
+import Text_Text from "Text/Text" /* 5385 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import module_1655 from "module_1655" /* 1655 */;
-import createICYMIStyles from "createICYMIStyles" /* 18138 */;
+import module_1653 from "module_1653" /* 1653 */;
+import createICYMIStyles from "createICYMIStyles" /* 17965 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -22,7 +22,7 @@ let metroImportAll;
 let metroImportDefault;
 let View = react_native.View;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
-let closure_9 = module_1655.createAnimatedComponent(Text_Text.Text);
+let closure_9 = module_1653.createAnimatedComponent(Text_Text.Text);
 let closure_10 = createICYMIStyles.createICYMIStyles((margin) => {
   const obj = { container: { flex: 1, display: "flex", alignItems: "center", justifyContent: "center", marginVertical: nativeDefault.space.PX_32 }, textContainer: { marginHorizontal: margin.margin, marginBottom: nativeDefault.space.PX_24 }, recommendedGuildsContainer: { flex: 1, marginBottom: nativeDefault.space.PX_24 }, iconWrapper: { display: "flex", alignItems: "center", justifyContent: "center", marginBottom: nativeDefault.space.PX_24 }, icon: { height: 40, width: 40 }, headerText: { alignSelf: "center", marginBottom: nativeDefault.space.PX_8, textAlign: "center" }, subtitleText: { alignSelf: "center", textAlign: "center" }, buttonContainer: { flex: 1, width: "100%", gap: nativeDefault.space.PX_12, paddingHorizontal: margin.margin }, gradient: { position: "absolute", top: 0, left: 0, right: 0, height: 150 } };
   ({ flex: 1, display: "flex", alignItems: "center", justifyContent: "center", marginVertical: nativeDefault.space.PX_32 });
@@ -75,7 +75,7 @@ export default function ExploreServersRow(visible) {
   const tmp = closure_10();
   let tmp2 = visible;
   const tmp3 = dependencyMap;
-  let obj = visible(1655);
+  let obj = visible(1653);
   let sharedValue = obj.useSharedValue(false);
   let items = [visible, sharedValue];
   const effect = react.useEffect(() => {
@@ -101,7 +101,7 @@ export default function ExploreServersRow(visible) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -144,7 +144,7 @@ export default function ExploreServersRow(visible) {
             }, 500);
           }, 100);
           c2 = 3;
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp7) {
         c2 = 3;
@@ -164,10 +164,10 @@ export default function ExploreServersRow(visible) {
     }
   }, []);
   const items1 = [closure_11, sharedValue, , ];
-  const useAnimatedStyle = visible(1655).useAnimatedStyle;
-  const tmp10 = visible(1655);
-  items1[2] = visible(5002).withTiming;
-  items1[3] = visible(1655).Easing;
+  const useAnimatedStyle = visible(1653).useAnimatedStyle;
+  const tmp10 = visible(1653);
+  items1[2] = visible(5004).withTiming;
+  items1[3] = visible(1653).Easing;
   let c0;
   let c1;
   let c2;
@@ -198,12 +198,12 @@ export default function ExploreServersRow(visible) {
   CaughtUpRowTsx1.__initData = tmp11;
   const animatedStyle = useAnimatedStyle(CaughtUpRowTsx1);
   const items3 = [closure_12, sharedValue, , , , ];
-  const useAnimatedStyle2 = tmp2(1655).useAnimatedStyle;
-  tmp2(1655);
-  items3[2] = tmp2(1655).withDelay;
-  items3[3] = tmp2(1655).withSequence;
-  items3[4] = tmp2(5002).withTiming;
-  items3[5] = tmp2(1655).Easing;
+  const useAnimatedStyle2 = tmp2(1653).useAnimatedStyle;
+  tmp2(1653);
+  items3[2] = tmp2(1653).withDelay;
+  items3[3] = tmp2(1653).withSequence;
+  items3[4] = tmp2(5004).withTiming;
+  items3[5] = tmp2(1653).Easing;
   c0 = undefined;
   c1 = undefined;
   c2 = undefined;
@@ -231,12 +231,12 @@ export default function ExploreServersRow(visible) {
   CaughtUpRowTsx2.__initData = tmp17;
   const animatedStyle2 = useAnimatedStyle2(CaughtUpRowTsx2);
   const items5 = [closure_13, sharedValue, , , , ];
-  const useAnimatedStyle3 = tmp2(1655).useAnimatedStyle;
-  tmp2(1655);
-  items5[2] = tmp2(1655).withDelay;
-  items5[3] = tmp2(1655).withSequence;
-  items5[4] = tmp2(5002).withTiming;
-  items5[5] = tmp2(1655).Easing;
+  const useAnimatedStyle3 = tmp2(1653).useAnimatedStyle;
+  tmp2(1653);
+  items5[2] = tmp2(1653).withDelay;
+  items5[3] = tmp2(1653).withSequence;
+  items5[4] = tmp2(5004).withTiming;
+  items5[5] = tmp2(1653).Easing;
   c0 = undefined;
   c1 = undefined;
   c2 = undefined;
@@ -263,38 +263,38 @@ export default function ExploreServersRow(visible) {
   CaughtUpRowTsx3.__workletHash = 13859124718008;
   CaughtUpRowTsx3.__initData = tmp25;
   const animatedStyle3 = useAnimatedStyle3(CaughtUpRowTsx3);
-  const tmp2Result4 = tmp2(5356);
+  const tmp2Result4 = tmp2(5358);
   const token = tmp2Result4.useToken(sharedValue(575).colors.BACKGROUND_BRAND);
   let obj2 = { children: items13 };
   let obj3 = { style: tmp.container, children: items11 };
   let obj4 = { style: tmp.textContainer, children: items8 };
-  let obj5 = { style: items7, children: closure_7(tmp2(14377).FlashIcon, obj6) };
+  let obj5 = { style: items7, children: closure_7(tmp2(14345).FlashIcon, obj6) };
   items7 = [tmp.iconWrapper, animatedStyle];
-  View = sharedValue(1655).View;
+  View = sharedValue(1653).View;
   obj6 = { size: "custom", style: tmp.icon, color: "background-brand" };
   items8 = [closure_7(View, obj5), , ];
-  let obj7 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: items9, children: intl.string(tmp2(1113).t.xjxffq) };
+  let obj7 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: items9, children: intl.string(tmp2(1112).t.xjxffq) };
   items9 = [tmp.headerText, animatedStyle2];
-  intl = tmp2(1113).intl;
+  intl = tmp2(1112).intl;
   items8[1] = closure_7(closure_9, obj7);
-  let obj8 = { variant: "body-md/normal", color: "text-default", style: items10, children: intl2.string(tmp2(1113).t.sAApb0) };
+  let obj8 = { variant: "body-md/normal", color: "text-default", style: items10, children: intl2.string(tmp2(1112).t.sAApb0) };
   items10 = [tmp.subtitleText, animatedStyle3];
-  intl2 = tmp2(1113).intl;
+  intl2 = tmp2(1112).intl;
   items8[2] = closure_7(closure_9, obj8);
   items11 = [closure_8(View, obj4), ];
   const obj9 = { style: tmp.buttonContainer, children: items12 };
-  const obj10 = { size: "md", text: intl3.string(tmp2(1113).t.lNJYV8), grow: true, variant: "primary", onPress: callback, loading: first };
-  const Button = tmp2(5390).Button;
-  intl3 = tmp2(1113).intl;
+  const obj10 = { size: "md", text: intl3.string(tmp2(1112).t.lNJYV8), grow: true, variant: "primary", onPress: callback, loading: first };
+  const Button = tmp2(5392).Button;
+  intl3 = tmp2(1112).intl;
   items12 = [closure_7(Button, obj10), ];
-  const obj11 = { size: "md", text: intl4.string(tmp2(1113).t.AGrUbj), grow: true, variant: "secondary", onPress: callback1 };
-  const Button2 = tmp2(5390).Button;
-  intl4 = tmp2(1113).intl;
+  const obj11 = { size: "md", text: intl4.string(tmp2(1112).t.AGrUbj), grow: true, variant: "secondary", onPress: callback1 };
+  const Button2 = tmp2(5392).Button;
+  intl4 = tmp2(1112).intl;
   items12[1] = closure_7(Button2, obj11);
   items11[1] = closure_8(View, obj9);
-  items13 = [closure_8(View, obj3), closure_7(tmp2(18177).Separator, {}), ];
-  const obj12 = { style: tmp.gradient, start: tmp2(1092).VerticalGradient.START, end: tmp2(1092).VerticalGradient.END, colors: items14, pointerEvents: "none" };
-  const tmp33 = sharedValue(5347);
+  items13 = [closure_8(View, obj3), closure_7(tmp2(18004).Separator, {}), ];
+  const obj12 = { style: tmp.gradient, start: tmp2(1091).VerticalGradient.START, end: tmp2(1091).VerticalGradient.END, colors: items14, pointerEvents: "none" };
+  const tmp33 = sharedValue(5349);
   items14 = [, ];
   const obj14 = sharedValue(671)(token);
   const alphaResult = obj14.alpha(0.2);

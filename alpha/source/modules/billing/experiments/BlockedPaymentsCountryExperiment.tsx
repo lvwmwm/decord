@@ -1,11 +1,11 @@
 // Module ID: 8985
 // Function ID: 8986
 // Name: BlockedPaymentsCountryExperiment
-// Dependencies: [1452, 8986, 2]
+// Dependencies: [1450, 8986, 2]
 // Exports: getIsPaymentsBlocked, useBlockedPaymentsConfig, useIsPaymentsBlocked
 
 // Module 8985 (BlockedPaymentsCountryExperiment)
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

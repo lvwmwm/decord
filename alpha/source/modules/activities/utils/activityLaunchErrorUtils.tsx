@@ -1,22 +1,22 @@
-// Module ID: 10565
-// Function ID: 10566
+// Module ID: 10507
+// Function ID: 10508
 // Name: activityLaunchErrorUtils
-// Dependencies: [5, 19, 10566, 5435, 1072, 21, 1113, 6831, 4617, 10567, 5851, 10568, 6304, 2188, 10570, 2]
+// Dependencies: [5, 19, 10508, 5437, 1071, 21, 1112, 6831, 4619, 10509, 5853, 10510, 6306, 2186, 10512, 2]
 // Exports: getActivityLaunchErrorInfo
 
-// Module 10565 (activityLaunchErrorUtils)
+// Module 10507 (activityLaunchErrorUtils)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1072 */;
-import intl12 from "intl" /* 1113 */;
-import UserSettings from "UserSettings" /* 4617 */;
-import DeveloperActivityShelfStore2 from "DeveloperActivityShelfStore" /* 5435 */;
-import InteractionCallbackErrorDefault from "InteractionCallbackError" /* 5851 */;
+import Constants from "Constants" /* 1071 */;
+import intl12 from "intl" /* 1112 */;
+import UserSettings from "UserSettings" /* 4619 */;
+import DeveloperActivityShelfStore2 from "DeveloperActivityShelfStore" /* 5437 */;
+import InteractionCallbackErrorDefault from "InteractionCallbackError" /* 5853 */;
 import EmbeddedActivityClientErrorDefault from "EmbeddedActivityClientError" /* 6831 */;
-import fetchDeveloperApplications from "fetchDeveloperApplications" /* 10567 */;
-import InteractionUtils from "InteractionUtils" /* 10568 */;
+import fetchDeveloperApplications from "fetchDeveloperApplications" /* 10509 */;
+import InteractionUtils from "InteractionUtils" /* 10510 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import LocationMetadataStore from "LocationMetadataStore" /* 10566 */;
+import LocationMetadataStore from "LocationMetadataStore" /* 10508 */;
 import size from "module_2" /* 2 */;
 
 let c5, c6, fetchState;
@@ -43,7 +43,7 @@ let obj = function _getActivityLaunchErrorInfo() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {

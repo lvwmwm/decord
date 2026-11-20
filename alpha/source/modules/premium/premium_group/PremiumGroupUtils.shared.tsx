@@ -1,12 +1,12 @@
-// Module ID: 8679
-// Function ID: 8680
-// Dependencies: [2178, 2174, 6737, 2]
+// Module ID: 8719
+// Function ID: 8720
+// Dependencies: [2176, 2172, 6737, 2]
 // Exports: getPriceString
 
-// Module 8679
-import PremiumUtils from "PremiumUtils" /* 2174 */;
+// Module 8719
+import PremiumUtils from "PremiumUtils" /* 2172 */;
 import PriceUtils from "PriceUtils" /* 6737 */;
-import SubscriptionPlanStore from "SubscriptionPlanStore" /* 2178 */;
+import SubscriptionPlanStore from "SubscriptionPlanStore" /* 2176 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/premium_group/PremiumGroupUtils.shared.tsx");

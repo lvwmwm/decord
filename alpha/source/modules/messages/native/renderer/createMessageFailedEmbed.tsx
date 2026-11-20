@@ -1,14 +1,14 @@
 // Module ID: 8782
 // Function ID: 8783
 // Name: createMessageFailedEmbed
-// Dependencies: [8551, 1072, 8126, 8783, 1113, 8784, 8351, 2]
+// Dependencies: [8550, 1071, 8125, 8783, 1112, 8784, 8350, 2]
 // Exports: createAutomodBlockedMessageEmbed, default
 
 // Module 8782 (createMessageFailedEmbed)
-import Constants from "Constants" /* 1072 */;
-import intl4 from "intl" /* 1113 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8126 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 8551 */;
+import Constants from "Constants" /* 1071 */;
+import intl4 from "intl" /* 1112 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8125 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 8550 */;
 import AssetRegistryDefault from "AssetRegistry" /* 8783 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 8784 */;
 import size from "module_2" /* 2 */;
@@ -43,7 +43,7 @@ export default function createMessageFailedEmbed(useAttachmentUploadPreview) {
       const tmp6 = require;
       if (0 !== uploaderFile.currentSize) {
         const _HermesInternal = HermesInternal;
-        const tmp6Result = tmp6(8351);
+        const tmp6Result = tmp6(8350);
         str = " (" + tmp6Result.sizeString(uploaderFile.currentSize) + ")";
       }
     }

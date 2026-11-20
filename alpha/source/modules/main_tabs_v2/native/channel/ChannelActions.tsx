@@ -1,38 +1,38 @@
-// Module ID: 8454
-// Function ID: 8455
+// Module ID: 8453
+// Function ID: 8454
 // Name: ChannelActions
-// Dependencies: [19, 17, 6518, 4645, 4641, 5440, 8455, 1072, 8456, 21, 4792, 8458, 7553, 8459, 1113, 8493, 575, 8495, 6915, 8497, 8498, 8507, 504, 6774, 8508, 8509, 12800, 14262, 14265, 6373, 14280, 7309, 13064, 8503, 1380, 4977, 13063, 13128, 11873, 1108, 4969, 12059, 7555, 13780, 14281, 14266, 6298, 14282, 14283, 2]
+// Dependencies: [19, 17, 6520, 4647, 4643, 5442, 8454, 1071, 8455, 21, 4794, 8457, 7552, 8458, 1112, 8492, 575, 8494, 6914, 8496, 8497, 8506, 504, 6774, 8507, 8508, 12770, 14232, 14235, 6375, 14248, 7308, 13034, 8502, 1378, 4979, 13033, 13098, 11815, 1107, 4971, 12001, 7554, 13749, 14249, 14236, 6300, 14250, 14251, 2]
 // Exports: default
 
-// Module 8454 (ChannelActions)
+// Module 8453 (ChannelActions)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 19 */;
 import nativeDefault from "native" /* 575 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
-import RootNavigationRef from "RootNavigationRef" /* 4969 */;
-import ChatInputUtils from "ChatInputUtils" /* 4977 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 6373 */;
-import VoiceNormalIcon2 from "VoiceNormalIcon" /* 6915 */;
-import ChannelDetailsStore from "ChannelDetailsStore" /* 8455 */;
-import TrackingConstants from "TrackingConstants" /* 8456 */;
-import PhoneCallIcon2 from "PhoneCallIcon" /* 8493 */;
-import PhoneHangUpIcon2 from "PhoneHangUpIcon" /* 8495 */;
-import ForumActionCreatorsDefault from "ForumActionCreators" /* 8503 */;
-import SwipeToMemberListUtils from "SwipeToMemberListUtils" /* 11873 */;
-import useSearchContext from "useSearchContext" /* 13063 */;
-import GuildDirectorySearchModalActionCreatorsDefault from "GuildDirectorySearchModalActionCreators" /* 13064 */;
-import TrackingDefault from "Tracking" /* 13128 */;
-import showThreadBrowserModalDefault from "showThreadBrowserModal" /* 13780 */;
-import IconActionButtonDefault from "IconActionButton" /* 14266 */;
-import ConversationCoachmark from "ConversationCoachmark" /* 14281 */;
-import PrivateChannelButtonsDefault from "PrivateChannelButtons" /* 14283 */;
-import ActiveThreadsStore from "ActiveThreadsStore" /* 6518 */;
-import ChannelRecord from "ChannelRecord" /* 4645 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import VoiceStateStore from "VoiceStateStore" /* 5440 */;
-import Constants from "Constants" /* 1072 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
+import RootNavigationRef from "RootNavigationRef" /* 4971 */;
+import ChatInputUtils from "ChatInputUtils" /* 4979 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 6375 */;
+import VoiceNormalIcon2 from "VoiceNormalIcon" /* 6914 */;
+import ChannelDetailsStore from "ChannelDetailsStore" /* 8454 */;
+import TrackingConstants from "TrackingConstants" /* 8455 */;
+import PhoneCallIcon2 from "PhoneCallIcon" /* 8492 */;
+import PhoneHangUpIcon2 from "PhoneHangUpIcon" /* 8494 */;
+import ForumActionCreatorsDefault from "ForumActionCreators" /* 8502 */;
+import SwipeToMemberListUtils from "SwipeToMemberListUtils" /* 11815 */;
+import useSearchContext from "useSearchContext" /* 13033 */;
+import GuildDirectorySearchModalActionCreatorsDefault from "GuildDirectorySearchModalActionCreators" /* 13034 */;
+import TrackingDefault from "Tracking" /* 13098 */;
+import showThreadBrowserModalDefault from "showThreadBrowserModal" /* 13749 */;
+import IconActionButtonDefault from "IconActionButton" /* 14236 */;
+import ConversationCoachmark from "ConversationCoachmark" /* 14249 */;
+import PrivateChannelButtonsDefault from "PrivateChannelButtons" /* 14251 */;
+import ActiveThreadsStore from "ActiveThreadsStore" /* 6520 */;
+import ChannelRecord from "ChannelRecord" /* 4647 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import VoiceStateStore from "VoiceStateStore" /* 5442 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -241,7 +241,7 @@ function ChannelActionButtons(channel) {
                       obj6.trackSearchOpened(obj3);
                       const tmp2Result5 = SwipeToMemberListUtils;
                       if (tmp2Result5.isSwipeToMemberListEnabledForChannel(channel.id)) {
-                        const ComponentDispatch = tmp2(1108).ComponentDispatch;
+                        const ComponentDispatch = tmp2(1107).ComponentDispatch;
                         const obj4 = { source: "channel-header-search", channelId: channel.id, screenIndex };
                         ComponentDispatch.dispatch(constants.SHOW_CHANNEL_DETAILS, obj4);
                       } else {
@@ -370,7 +370,7 @@ function WrappedChannelNavButtons(channelId) {
   const items = [ChannelStore];
   const obj = channelId(504);
   const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(channelId));
-  channelId(6298);
+  channelId(6300);
   let tmp4 = null;
   if (null != stateFromStores) {
     tmp4 = null;
@@ -430,12 +430,12 @@ export default function ChannelActions(channelId) {
     return obj2;
   });
   ({ isMultiUserDM, isDM } = stateFromStoresObject);
-  let obj2 = channelId(8498);
+  let obj2 = channelId(8497);
   const obj3 = { style: containerStyle, children: tmp4Result };
   const tmp5 = View;
   if (obj2.useHasForumSearchQuery(channelId)) {
     const obj4 = { channelId };
-    tmp4Result = tmp4(tmp(14282).ForumChannelCloseSearchButton, obj4);
+    tmp4Result = tmp4(tmp(14250).ForumChannelCloseSearchButton, obj4);
   } else {
     if (!isDM) {
       if (!isMultiUserDM) {

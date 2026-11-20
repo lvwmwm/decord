@@ -1,10 +1,10 @@
-// Module ID: 9962
-// Function ID: 9963
+// Module ID: 9965
+// Function ID: 9966
 // Name: TabsExperiment
-// Dependencies: [1452, 2]
+// Dependencies: [1450, 2]
 
-// Module 9962 (TabsExperiment)
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+// Module 9965 (TabsExperiment)
+import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

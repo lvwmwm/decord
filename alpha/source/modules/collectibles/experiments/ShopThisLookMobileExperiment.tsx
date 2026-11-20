@@ -1,11 +1,11 @@
-// Module ID: 8045
-// Function ID: 8046
+// Module ID: 8044
+// Function ID: 8045
 // Name: ShopThisLookMobileExperiment
-// Dependencies: [1452, 2]
+// Dependencies: [1450, 2]
 // Exports: useIsShopThisLookMobileEnabled
 
-// Module 8045 (ShopThisLookMobileExperiment)
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+// Module 8044 (ShopThisLookMobileExperiment)
+import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2026-07-shop-this-look-mobile", kind: "user", defaultConfig: { shopThisLookMobileEnabled: false }, variations: { 0: { shopThisLookMobileEnabled: false }, 1: { shopThisLookMobileEnabled: true } } };

@@ -1,15 +1,15 @@
-// Module ID: 18425
-// Function ID: 18426
+// Module ID: 18266
+// Function ID: 18267
 // Name: ConjureHeaderIconButton
-// Dependencies: [19, 17, 21, 8903, 4792, 6911, 2]
+// Dependencies: [19, 17, 21, 8903, 4794, 6910, 2]
 // Exports: default
 
-// Module 18425 (ConjureHeaderIconButton)
+// Module 18266 (ConjureHeaderIconButton)
 import react_native from "react-native" /* 17 */;
 import ClipView from "ClipView" /* 8903 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 const ClipViewDefault = ClipView;
@@ -57,7 +57,7 @@ export default function ConjureHeaderIconButton(ref) {
     return items;
   }, items);
   const obj = { ref, accessibilityRole: "button", accessibilityLabel, accessibilityActions, onAccessibilityAction, accessibilityState, disabled, onPress, activeOpacity: 0.6, androidRippleConfig, style: tmp.button, children: tmp3Result };
-  const PressableOpacity = badgeSize(6911).PressableOpacity;
+  const PressableOpacity = badgeSize(6910).PressableOpacity;
   if (null != badge) {
     const obj2 = { style: tmp.icon, children: items2 };
     const obj3 = { cutouts: memo, style: items1, children: closure_5(IconComponent, {}) };

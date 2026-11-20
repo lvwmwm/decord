@@ -1,24 +1,24 @@
-// Module ID: 8000
-// Function ID: 8001
+// Module ID: 7999
+// Function ID: 8000
 // Name: useFractionalPremiumInfo
-// Dependencies: [32, 19, 1388, 2179, 8001, 1072, 1390, 2169, 38, 4605, 8003, 2174, 504, 5353, 8004, 2173, 12, 2]
+// Dependencies: [32, 19, 1386, 2177, 8000, 1071, 1388, 2167, 38, 4607, 8002, 2172, 504, 5355, 8003, 2171, 12, 2]
 // Exports: default
 
-// Module 8000 (useFractionalPremiumInfo)
+// Module 7999 (useFractionalPremiumInfo)
 import _modDef38 from "module_38" /* 38 */;
-import Constants from "Constants" /* 1072 */;
-import _modDef2169 from "module_2169" /* 2169 */;
-import EntitlementTypes from "EntitlementTypes" /* 2173 */;
-import PremiumUtils from "PremiumUtils" /* 2174 */;
-import BillingUtils from "BillingUtils" /* 4605 */;
-import EntitlementSourceTypes from "EntitlementSourceTypes" /* 8003 */;
-import EntitlementActionCreators from "EntitlementActionCreators" /* 8004 */;
+import Constants from "Constants" /* 1071 */;
+import _modDef2167 from "module_2167" /* 2167 */;
+import EntitlementTypes from "EntitlementTypes" /* 2171 */;
+import PremiumUtils from "PremiumUtils" /* 2172 */;
+import BillingUtils from "BillingUtils" /* 4607 */;
+import EntitlementSourceTypes from "EntitlementSourceTypes" /* 8002 */;
+import EntitlementActionCreators from "EntitlementActionCreators" /* 8003 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1388 */;
-import SubscriptionStore from "SubscriptionStore" /* 2179 */;
-import EntitlementStore from "EntitlementStore" /* 8001 */;
-import PremiumConstants from "PremiumConstants" /* 1390 */;
+import UserStore from "UserStore" /* 1386 */;
+import SubscriptionStore from "SubscriptionStore" /* 2177 */;
+import EntitlementStore from "EntitlementStore" /* 8000 */;
+import PremiumConstants from "PremiumConstants" /* 1388 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -41,7 +41,7 @@ function calculateFractionalPremiumInfo(isFetching) {
     flag = false;
   }
   ({ entitlements, unactivatedFractionalPremiumUnits, premiumSubscription, fetchedAllEntitlements, excludeReverseTrialFromCountdown } = isFetching);
-  const obj = { isFractionalPremiumActive: false, fractionalState: constants.NONE, startsAt: _modDef2169(0), endsAt: _modDef2169(0), currentEntitlementId: "", currentEntitlementEndsAt: _modDef2169(0), unactivatedUnits: [], fetched: fetchedAllEntitlements };
+  const obj = { isFractionalPremiumActive: false, fractionalState: constants.NONE, startsAt: _modDef2167(0), endsAt: _modDef2167(0), currentEntitlementId: "", currentEntitlementEndsAt: _modDef2167(0), unactivatedUnits: [], fetched: fetchedAllEntitlements };
   let tmp = constants;
   let tmp2 = importDefault;
   const currentUser = isFetching.currentUser;
@@ -108,25 +108,25 @@ function calculateFractionalPremiumInfo(isFetching) {
       }
       const obj7 = { isFractionalPremiumActive: null != first, fractionalState: NONE, startsAt: tmp10, endsAt: tmp2ResultResult, currentEntitlementId: str, currentEntitlementEndsAt: tmp17, unactivatedUnits: unactivatedFractionalPremiumUnits, fetched: fetchedAllEntitlements };
       if (null != first) {
-        tmp10 = _modDef2169(first.startsAt);
+        tmp10 = _modDef2167(first.startsAt);
       } else {
-        tmp10 = _modDef2169(0);
+        tmp10 = _modDef2167(0);
       }
       if (null != first) {
-        const tmp2Result = _modDef2169;
+        const tmp2Result = _modDef2167;
         const obj4 = PremiumUtils;
         tmp2ResultResult = tmp2Result(obj4.extendDateWithUnconsumedFractionalPremium(first.endsAt, unactivatedFractionalPremiumUnits, undefined, excludeReverseTrialFromCountdown));
       } else {
-        tmp2ResultResult = _modDef2169(0);
+        tmp2ResultResult = _modDef2167(0);
       }
       str = "";
       if (null != first) {
         str = first.id;
       }
       if (null != first) {
-        tmp17 = _modDef2169(first.endsAt);
+        tmp17 = _modDef2167(first.endsAt);
       } else {
-        tmp17 = _modDef2169(0);
+        tmp17 = _modDef2167(0);
       }
       return obj7;
     }

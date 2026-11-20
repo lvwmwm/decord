@@ -1,23 +1,23 @@
-// Module ID: 11019
-// Function ID: 11020
+// Module ID: 10961
+// Function ID: 10962
 // Name: StreamPreview
-// Dependencies: [19, 17, 1192, 21, 4792, 575, 4853, 5479, 4799, 11020, 11021, 1113, 6911, 11022, 504, 2]
+// Dependencies: [19, 17, 1191, 21, 4794, 575, 4855, 5481, 4801, 10962, 10963, 1112, 6910, 10964, 504, 2]
 // Exports: default
 
-// Module 11019 (StreamPreview)
+// Module 10961 (StreamPreview)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1113 */;
-import shared from "shared" /* 4799 */;
-import native from "native" /* 4853 */;
-import FastImageDefault from "FastImage" /* 5479 */;
-import Pressables from "Pressables" /* 6911 */;
-import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 11022 */;
+import intl2 from "intl" /* 1112 */;
+import shared from "shared" /* 4801 */;
+import native from "native" /* 4855 */;
+import FastImageDefault from "FastImage" /* 5481 */;
+import Pressables from "Pressables" /* 6910 */;
+import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 10964 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ThemeStore from "ThemeStore" /* 1192 */;
+import ThemeStore from "ThemeStore" /* 1191 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -50,9 +50,9 @@ class DefaultFallback extends PureComponent {
     const obj3 = shared;
     const tmp3 = _false;
     if (obj3.isThemeDark(theme)) {
-      tmp4Result = tmp4(11020);
+      tmp4Result = tmp4(10962);
     } else {
-      tmp4Result = tmp4(11021);
+      tmp4Result = tmp4(10963);
     }
     return hasOwnProperty(tmp3, obj);
   }
@@ -61,7 +61,7 @@ const prototype = DefaultFallback.prototype;
 DefaultFallback.contextType = native.ThemeContext;
 createStyles = createStyles_mod;
 let obj4 = { touchable: size, imageContainer: { flex: 1, backgroundColor: nativeDefault.unsafe_rawColors.BLACK }, image: { flex: 1 } };
-size = { flex: 1, width: "100%", height: "__closure", aspectRatio: true, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
+size = { flex: 1, width: "100%", height: "__d", aspectRatio: true, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
 const createLegacyClassComponentStyles2 = createStyles.createLegacyClassComponentStyles;
 ({ flex: 1, backgroundColor: nativeDefault.unsafe_rawColors.BLACK });
 const React4 = createLegacyClassComponentStyles2(obj4);

@@ -1,37 +1,37 @@
 // Module ID: 8936
 // Function ID: 8937
 // Name: EditCustomStatusWithPreview
-// Dependencies: [32, 19, 17, 1388, 8937, 1072, 1391, 21, 4792, 575, 6911, 1113, 1187, 7131, 8938, 1256, 8929, 504, 8939, 8940, 4799, 8942, 5802, 8943, 5367, 11592, 14106, 14108, 6910, 6976, 5383, 13435, 7596, 7229, 6926, 4977, 5006, 14119, 2121, 14121, 5499, 1360, 1644, 8442, 6308, 6973, 2]
+// Dependencies: [32, 19, 17, 1386, 8937, 1071, 1389, 21, 4794, 575, 6910, 1112, 1186, 7130, 8938, 1255, 8929, 504, 8939, 8940, 4801, 8942, 5804, 8943, 5369, 11534, 14075, 14077, 6909, 6975, 5385, 13405, 7595, 7228, 6925, 4979, 5008, 14088, 2119, 14090, 5501, 1358, 1642, 8441, 6310, 6972, 2]
 // Exports: default
 
 // Module 8936 (EditCustomStatusWithPreview)
 import nativeDefault from "native" /* 575 */;
-import intl7 from "intl" /* 1113 */;
-import native from "native" /* 1187 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import EmojiConstants from "EmojiConstants" /* 1391 */;
-import asyncRequire from "asyncRequire" /* 2121 */;
-import shared from "shared" /* 4799 */;
-import ChatInputUtils from "ChatInputUtils" /* 4977 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
-import react_native from "react-native" /* 5802 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6308 */;
-import Pressables from "Pressables" /* 6911 */;
-import NavigatorHeader from "NavigatorHeader" /* 6976 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7131 */;
+import intl7 from "intl" /* 1112 */;
+import native from "native" /* 1186 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import EmojiConstants from "EmojiConstants" /* 1389 */;
+import asyncRequire from "asyncRequire" /* 2119 */;
+import shared from "shared" /* 4801 */;
+import ChatInputUtils from "ChatInputUtils" /* 4979 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5008 */;
+import react_native from "react-native" /* 5804 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6310 */;
+import Pressables from "Pressables" /* 6910 */;
+import NavigatorHeader from "NavigatorHeader" /* 6975 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7130 */;
 import Constants2 from "Constants" /* 8937 */;
 import setCustomStatusDefault from "setCustomStatus" /* 8940 */;
 import removeCustomStatusDefault from "removeCustomStatus" /* 8942 */;
 import openEmojiPickerActionSheet from "openEmojiPickerActionSheet" /* 8943 */;
-import maybeShowUnsavedChangesAlertDefault from "maybeShowUnsavedChangesAlert" /* 14106 */;
-import CustomStatusPreviewDefault from "CustomStatusPreview" /* 14108 */;
+import maybeShowUnsavedChangesAlertDefault from "maybeShowUnsavedChangesAlert" /* 14075 */;
+import CustomStatusPreviewDefault from "CustomStatusPreview" /* 14077 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1388 */;
-import Constants from "Constants" /* 1072 */;
+import UserStore from "UserStore" /* 1386 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let maxLength;
@@ -329,7 +329,7 @@ function EditCustomStatusWithPreview(navigation) {
           obj.dismissKeyboard();
           const obj2 = ActionSheetActionCreatorsDefault;
           const obj3 = { initialValue: first2, onChange };
-          obj2.openLazy(asyncRequire(14119, dependencyMap.paths), "ClearAfterOptionsActionSheet", obj3);
+          obj2.openLazy(asyncRequire(14088, dependencyMap.paths), "ClearAfterOptionsActionSheet", obj3);
         },
       trailing: callback1(Text, obj19)
     };
@@ -412,11 +412,11 @@ export default function EditCustomStatusWithPreviewModal(analyticsLocations) {
     return obj;
   }, items);
   let obj = { initialRouteName: "root", screens: memo, headerStatusBarHeight: 12, headerStyle: obj3 };
-  const Navigator = analyticsLocations(6973).Navigator;
-  let obj2 = analyticsLocations(1360);
+  const Navigator = analyticsLocations(6972).Navigator;
+  let obj2 = analyticsLocations(1358);
   obj3 = undefined;
   const tmp2 = closure_13;
-  const tmp3Result = analyticsLocations(1360);
+  const tmp3Result = analyticsLocations(1358);
   if (!tmp3Result.isAndroid()) {
     obj3 = { height: 56 };
   }

@@ -1,18 +1,18 @@
-// Module ID: 11073
-// Function ID: 11074
+// Module ID: 11015
+// Function ID: 11016
 // Name: MessagePreviewMarkup
-// Dependencies: [5813, 5814, 5815, 11074, 2070, 5516, 5453, 1456, 2]
+// Dependencies: [5815, 5816, 5817, 11016, 2068, 5518, 5455, 1454, 2]
 // Exports: getMessagePreviewASTParser, renderASTToReact, renderMeasuredMessagePreviewMarkup, renderMessagePreviewMarkup
 
-// Module 11073 (MessagePreviewMarkup)
-import LRUCacheDefault from "LRUCache" /* 1456 */;
-import _modDef2070 from "module_2070" /* 2070 */;
-import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 5453 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 5516 */;
-import MarkupTypes from "MarkupTypes" /* 5813 */;
-import combineMarkupRulesDefault from "combineMarkupRules" /* 5814 */;
-import MarkupRulesDefault from "MarkupRules" /* 5815 */;
-import MarkupMessagePreviewReactRulesDefault from "MarkupMessagePreviewReactRules" /* 11074 */;
+// Module 11015 (MessagePreviewMarkup)
+import LRUCacheDefault from "LRUCache" /* 1454 */;
+import _modDef2068 from "module_2068" /* 2068 */;
+import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 5455 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 5518 */;
+import MarkupTypes from "MarkupTypes" /* 5815 */;
+import combineMarkupRulesDefault from "combineMarkupRules" /* 5816 */;
+import MarkupRulesDefault from "MarkupRules" /* 5817 */;
+import MarkupMessagePreviewReactRulesDefault from "MarkupMessagePreviewReactRules" /* 11016 */;
 import size from "module_2" /* 2 */;
 
 function parseMessagePreviewMarkup(fontScale) {
@@ -100,9 +100,9 @@ export function renderASTToReact(layout) {
   items[0] = MarkupRulesDefault.RULES;
   items[1] = MarkupMessagePreviewReactRulesDefault(layout, color, fontScale, maxFontSizeMultiplier);
   const tmpResult = tmp(items);
-  const reactFor = _modDef2070.reactFor;
-  _modDef2070;
-  const obj = _modDef2070;
+  const reactFor = _modDef2068.reactFor;
+  _modDef2068;
+  const obj = _modDef2068;
   return reactFor(obj.ruleOutput(tmpResult, "react"))(tree, initialParserState);
 }
 export function getMessagePreviewASTParser(layout) {
@@ -139,9 +139,9 @@ export function renderMessagePreviewMarkup(content) {
     items[0] = MarkupRulesDefault.RULES;
     items[1] = MarkupMessagePreviewReactRulesDefault(layout, color, fontScale, maxFontSizeMultiplier);
     const tmp8Result = tmp8(items);
-    const reactFor = _modDef2070.reactFor;
-    _modDef2070;
-    const obj2 = _modDef2070;
+    const reactFor = _modDef2068.reactFor;
+    _modDef2068;
+    const obj2 = _modDef2068;
     return reactFor(obj2.ruleOutput(tmp8Result, "react"))(tree, initialParserState);
   }
 }
@@ -193,11 +193,11 @@ export function renderMeasuredMessagePreviewMarkup(content) {
         items[0] = MarkupRulesDefault.RULES;
         items[1] = MarkupMessagePreviewReactRulesDefault(layout, color, fontScale, maxFontSizeMultiplier);
         tmp9Result = tmp9(items);
-        reactFor = _modDef2070.reactFor;
-        _modDef2070;
+        reactFor = _modDef2068.reactFor;
+        _modDef2068;
         const items1 = [obj];
         items2 = items1;
-        obj3 = _modDef2070;
+        obj3 = _modDef2068;
       } else {
         items2 = [];
       }

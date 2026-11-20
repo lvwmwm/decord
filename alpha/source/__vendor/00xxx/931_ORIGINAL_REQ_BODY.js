@@ -18,28 +18,28 @@ const forResult = Symbol.for("sentry__originalRequestBody");
 let c3 = forResult;
 
 export const ORIGINAL_REQ_BODY = forResult;
-export function getBodyString(fetchRequestArgBody, arg1) {
+export function getBodyString(body) {
   let debug = arg1;
   if (arg1 === undefined) {
     debug = _mod681.debug;
   }
   try {
-    if (typeof fetchRequestArgBody === "string") {
-      const items = [fetchRequestArgBody];
+    if (typeof body === "string") {
+      const items = [body];
       return items;
     } else {
       const _URLSearchParams = URLSearchParams;
-      if (fetchRequestArgBody instanceof URLSearchParams) {
-        const items1 = [fetchRequestArgBody.toString()];
+      if (body instanceof URLSearchParams) {
+        const items1 = [body.toString()];
         return items1;
       } else {
         const _FormData = FormData;
-        if (fetchRequestArgBody instanceof FormData) {
-          const items2 = [serializeFormData(fetchRequestArgBody)];
+        if (body instanceof FormData) {
+          const items2 = [serializeFormData(body)];
           return items2;
-        } else if (fetchRequestArgBody) {
+        } else if (body) {
           if (_mod897.DEBUG_BUILD) {
-            debug.log("Skipping network body because of body type", fetchRequestArgBody);
+            debug.log("Skipping network body because of body type", body);
           }
           const items3 = [undefined, "UNPARSEABLE_BODY_TYPE"];
           return items3;
@@ -51,7 +51,7 @@ export function getBodyString(fetchRequestArgBody, arg1) {
     }
   } catch (tmp7) {
     if (_mod897.DEBUG_BUILD) {
-      debug.error(tmp7, "Failed to serialize body", fetchRequestArgBody);
+      debug.error(tmp7, "Failed to serialize body", body);
     }
     const items5 = [undefined, "BODY_PARSE_ERROR"];
     return items5;

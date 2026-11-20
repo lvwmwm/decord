@@ -1,21 +1,21 @@
-// Module ID: 19320
-// Function ID: 19321
+// Module ID: 19140
+// Function ID: 19141
 // Name: VoicePanelHeaderChatButton
-// Dependencies: [19, 1072, 21, 4792, 575, 1108, 19321, 7205, 19254, 7553, 1113, 2]
+// Dependencies: [19, 1071, 21, 4794, 575, 1107, 19141, 7204, 19073, 7552, 1112, 2]
 // Exports: default
 
-// Module 19320 (VoicePanelHeaderChatButton)
+// Module 19140 (VoicePanelHeaderChatButton)
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
-import intl2 from "intl" /* 1113 */;
-import NativeViewDefault from "NativeView" /* 7205 */;
-import ChatIcon2 from "ChatIcon" /* 7553 */;
-import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 19254 */;
-import useChatBadgeDefault from "useChatBadge" /* 19321 */;
+import Constants from "Constants" /* 1071 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1107 */;
+import intl2 from "intl" /* 1112 */;
+import NativeViewDefault from "NativeView" /* 7204 */;
+import ChatIcon2 from "ChatIcon" /* 7552 */;
+import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 19073 */;
+import useChatBadgeDefault from "useChatBadge" /* 19141 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;

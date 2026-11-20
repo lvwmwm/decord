@@ -1,13 +1,17 @@
 // Module ID: 1904
 // Function ID: 1905
 // Dependencies: [1905]
-// Exports: useComposedEventHandler
+// Exports: useDerivedValue
 
 // Module 1904
-import useComposedEventHandlerCommon from "useComposedEventHandlerCommon" /* 1905 */;
+import useDerivedValueCommon from "useDerivedValueCommon" /* 1905 */;
 
 
-export function useComposedEventHandler(tmp8Result4) {
-  const obj = useComposedEventHandlerCommon;
-  return obj.useComposedEventHandlerBase(tmp8Result4, undefined);
+export function useDerivedValue(pnpm_indexTsx1, items2) {
+  let __closure = pnpm_indexTsx1.__closure;
+  if (__closure == null) {
+    __closure = [];
+  }
+  const obj = useDerivedValueCommon;
+  return obj.useDerivedValueBase(pnpm_indexTsx1, undefined, __closure);
 }

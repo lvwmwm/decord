@@ -12,7 +12,7 @@ import _mod738 from "module_738" /* 738 */;
 
 let data, integrations;
 
-const f80200 = (stacktrace) => {
+const f78942 = (stacktrace) => {
   stacktrace = stacktrace.stacktrace;
   if (stacktrace != null) {
     const frames = stacktrace.frames;
@@ -81,7 +81,7 @@ export function applyDebugIds(exception, stackParser) {
   if (exception != null) {
     const values = exception.values;
     if (values != null) {
-      const item = values.forEach(f80200);
+      const item = values.forEach(f78942);
     }
   }
 }
@@ -145,7 +145,7 @@ export function parseEventHintOrCaptureContext(captureContext) {
     return tmp5;
   }
 }
-export function prepareEvent(options, c3, event_id2, c1, c0, isolationScope) {
+export function prepareEvent(options, event_id, event_id2, clone, self, setLastEventId) {
   let timestamp;
   let uuid4Result;
   const normalizeDepth = options.normalizeDepth;
@@ -159,13 +159,13 @@ export function prepareEvent(options, c3, event_id2, c1, c0, isolationScope) {
     num2 = normalizeMaxBreadth;
   }
   let obj = { event_id: uuid4Result, timestamp };
-  let merged = Object.assign(c3);
-  uuid4Result = c3.event_id || event_id2.event_id;
+  let merged = Object.assign(event_id);
+  uuid4Result = event_id.event_id || event_id2.event_id;
   if (!uuid4Result) {
     let obj2 = num(num2[0]);
     uuid4Result = obj2.uuid4();
   }
-  timestamp = c3.timestamp;
+  timestamp = event_id.timestamp;
   if (!timestamp) {
     const tmp6 = num;
     let tmp7 = num2;
@@ -189,11 +189,11 @@ export function prepareEvent(options, c3, event_id2, c1, c0, isolationScope) {
     HermesBuiltin.arraySpread(items, integrations, HermesBuiltin.arraySpread(items, integrations2, 0));
     sdk.integrations = items;
   }
-  const tmp14 = c0;
+  const tmp14 = self;
   if (tmp14) {
-    c0.emit("applyFrameMetadata", c3);
+    self.emit("applyFrameMetadata", event_id);
   }
-  if (undefined === c3.type) {
+  if (undefined === event_id.type) {
     const stackParser = options.stackParser;
     let obj4 = num(num2[6]);
     const filenameToDebugIdMap = obj4.getFilenameToDebugIdMap(stackParser);
@@ -201,18 +201,18 @@ export function prepareEvent(options, c3, event_id2, c1, c0, isolationScope) {
     if (exception != null) {
       let values = exception.values;
       if (values != null) {
-        let item = values.forEach(f80200);
+        let item = values.forEach(f78942);
       }
     }
   }
   const captureContext = event_id2.captureContext;
-  let tmp20 = c1;
+  let tmp20 = clone;
   if (captureContext) {
     let cloneResult;
-    if (c1) {
-      cloneResult = c1.clone();
+    if (clone) {
+      cloneResult = clone.clone();
     } else {
-      const self = this;
+      self = this;
       const self2 = this;
       cloneResult = new num(num2[8]).Scope();
     }
@@ -223,13 +223,13 @@ export function prepareEvent(options, c3, event_id2, c1, c0, isolationScope) {
     let obj6 = num(num2[0]);
     const result = obj6.addExceptionMechanism(obj, event_id2.mechanism);
   }
-  if (c0) {
-    let eventProcessors = c0.getEventProcessors();
+  if (self) {
+    let eventProcessors = self.getEventProcessors();
   } else {
     eventProcessors = [];
   }
   const obj7 = num(num2[2]);
-  const combinedScopeData = obj7.getCombinedScopeData(isolationScope, tmp20);
+  const combinedScopeData = obj7.getCombinedScopeData(setLastEventId, tmp20);
   const items1 = [...combinedScopeData.attachments];
   if (items1.length) {
     event_id2.attachments = items1;

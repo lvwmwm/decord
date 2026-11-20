@@ -1,26 +1,26 @@
-// Module ID: 18756
-// Function ID: 18757
+// Module ID: 18580
+// Function ID: 18581
 // Name: SwipeForMemberListWrapper
-// Dependencies: [32, 19, 17, 8455, 8443, 1072, 21, 3, 4792, 575, 5529, 11708, 4971, 1655, 5353, 5001, 7070, 4977, 11890, 1108, 17567, 10536, 17578, 13653, 4969, 4968, 5803, 1503, 18219, 13215, 17571, 17576, 17573, 5052, 18757, 12728, 18212, 9539, 5370, 18758, 13622, 2]
+// Dependencies: [32, 19, 17, 8454, 8442, 1071, 21, 3, 4794, 575, 5531, 11650, 4973, 1653, 5355, 5003, 7069, 4979, 11832, 1107, 17394, 10478, 17405, 13623, 4971, 4970, 5805, 1501, 18046, 13185, 17398, 17403, 17400, 5054, 18581, 12698, 18039, 9539, 5372, 18582, 13592, 2]
 // Exports: default
 
-// Module 18756 (SwipeForMemberListWrapper)
+// Module 18580 (SwipeForMemberListWrapper)
 import LoggerDefault from "Logger" /* 3 */;
 import nativeDefault from "native" /* 575 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4968 */;
-import RootNavigationRef from "RootNavigationRef" /* 4969 */;
-import useChatLayout from "useChatLayout" /* 4971 */;
-import ChatInputUtils from "ChatInputUtils" /* 4977 */;
-import react_native from "react-native" /* 8443 */;
-import getJankSurfaceName from "getJankSurfaceName" /* 17578 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1107 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 4970 */;
+import RootNavigationRef from "RootNavigationRef" /* 4971 */;
+import useChatLayout from "useChatLayout" /* 4973 */;
+import ChatInputUtils from "ChatInputUtils" /* 4979 */;
+import react_native from "react-native" /* 8442 */;
+import getJankSurfaceName from "getJankSurfaceName" /* 17405 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
-import ChannelDetailsStore from "ChannelDetailsStore" /* 8455 */;
-import Constants from "Constants" /* 1072 */;
+import ChannelDetailsStore from "ChannelDetailsStore" /* 8454 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let navigation;

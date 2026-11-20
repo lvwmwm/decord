@@ -1,19 +1,19 @@
-// Module ID: 19863
-// Function ID: 19864
+// Module ID: 19683
+// Function ID: 19684
 // Name: SoundboardWaveformTrimHandles
-// Dependencies: [32, 19, 17, 21, 19855, 4792, 575, 1655, 5052, 1113, 2]
+// Dependencies: [32, 19, 17, 21, 19673, 4794, 575, 1653, 5054, 1112, 2]
 // Exports: default
 
-// Module 19863 (SoundboardWaveformTrimHandles)
+// Module 19683 (SoundboardWaveformTrimHandles)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5052 */;
-import SoundboardAudioNative from "SoundboardAudioNative" /* 19855 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5054 */;
+import SoundboardAudioNative from "SoundboardAudioNative" /* 19673 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let max, maxResult, min, minResult, result1, set, tmp5;
@@ -26,7 +26,7 @@ let View = react_native.View;
 let c8 = 0.05;
 let closure_9 = 1 / SoundboardAudioNative.WAVEFORM_BAR_COUNT;
 let items = [{ name: "increment" }, { name: "decrement" }];
-let obj = { container: { position: "absolute", top: 0, left: 0 }, touchTarget: { position: "absolute", top: 0, bottom: 0, width: 44, alignItems: "center", justifyContent: "center" }, handle: size };
+let obj = { container: { position: "absolute", top: 0, left: 0 }, touchTarget: { position: "absolute", top: 0, bottom: 0, width: 44, alignItems: "center", justifyContent: "center" }, handle: size, disabled: { opacity: 0.5 } };
 size = { width: 6, height: "100%", borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE };
 let closure_11 = createStyles.createStyles(obj);
 let closure_12 = { code: "(function SoundboardWaveformTrimHandlesTsx1(){let[startGestureBeginRatio,startRatio,lastNotifiedStartRatio]=this.__closure;startGestureBeginRatio.set(startRatio.get());lastNotifiedStartRatio.set(startRatio.get());})" };
@@ -43,10 +43,10 @@ let result = size.fileFinishedImporting("modules/soundboard/native/creation/Soun
 export default function SoundboardWaveformTrimHandles(width) {
   let View2;
   let _undefined;
+  let c9;
   let intl;
   let intl2;
   let items10;
-  let items7;
   let items8;
   let items9;
   let obj10;
@@ -55,6 +55,7 @@ export default function SoundboardWaveformTrimHandles(width) {
   let obj9;
   let range;
   let range1;
+  let str;
   let tmp13;
   let tmp14;
   let tmp15;
@@ -68,10 +69,13 @@ export default function SoundboardWaveformTrimHandles(width) {
   const startRatio = width.startRatio;
   const endRatio = width.endRatio;
   const onChange = width.onChange;
-  c8 = undefined;
+  let flag = width.disabled;
   const height = width.height;
-  const tmp = closure_11();
-  let tmp2 = width;
+  if (flag === undefined) {
+    flag = false;
+  }
+  c9 = undefined;
+  let tmp = closure_11();
   const tmp3 = endRatio;
   let obj = width(endRatio[7]);
   const sharedValue = obj.useSharedValue(0);
@@ -82,18 +86,18 @@ export default function SoundboardWaveformTrimHandles(width) {
   const obj4 = width(endRatio[7]);
   const sharedValue3 = obj4.useSharedValue(1);
   const obj5 = { start: startRatio.get(), end: endRatio.get() };
-  const tmp8 = onChange(sharedValue.useState(obj5), 2);
-  [tmp9, c8] = tmp8;
+  const tmp8 = onChange(flag.useState(obj5), 2);
+  [tmp9, c9] = tmp8;
   items = [onChange, startRatio, endRatio];
-  const callback = sharedValue.useCallback(() => {
+  const accessibilityActions = flag.useCallback(() => {
     const obj = { start: startRatio.get(), end: endRatio.get() };
     _undefined(obj);
     const value = startRatio.get();
     onChange(value, endRatio.get());
   }, items);
-  let items1 = [width, startRatio, endRatio, callback, sharedValue, sharedValue2];
-  let items2 = [width, startRatio, endRatio, callback, sharedValue1, sharedValue3];
-  const memo = sharedValue.useMemo(() => {
+  let items1 = [width, flag, startRatio, endRatio, accessibilityActions, sharedValue, sharedValue2];
+  let items2 = [width, flag, startRatio, endRatio, accessibilityActions, sharedValue1, sharedValue3];
+  const memo = flag.useMemo(() => {
     let tmp12;
     let tmp13;
     let tmp14;
@@ -118,6 +122,7 @@ export default function SoundboardWaveformTrimHandles(width) {
     let c2;
     [tmp6, tmp7, tmp8, tmp9] = items;
     const PanResult = Gesture.Pan();
+    const enabledResult = PanResult.enabled(!flag);
     class SoundboardWaveformTrimHandlesTsx1 {
       constructor() {
         result = closure_0.set(closure_1.get());
@@ -130,9 +135,9 @@ export default function SoundboardWaveformTrimHandles(width) {
     SoundboardWaveformTrimHandlesTsx1.__workletHash = 11006989108153;
     SoundboardWaveformTrimHandlesTsx1.__initData = tmp6;
     const items2 = [closure_13, sharedValue, width, endRatio, c8, startRatio, sharedValue2, closure_9, , ];
-    const onUpdate = PanResult.onBegin(SoundboardWaveformTrimHandlesTsx1).onUpdate;
-    PanResult.onBegin(SoundboardWaveformTrimHandlesTsx1);
-    items2[8] = _mod1655.runOnJS;
+    const onUpdate = enabledResult.onBegin(SoundboardWaveformTrimHandlesTsx1).onUpdate;
+    enabledResult.onBegin(SoundboardWaveformTrimHandlesTsx1);
+    items2[8] = _mod1653.runOnJS;
     items2[9] = callback;
     c0 = undefined;
     c1 = undefined;
@@ -167,7 +172,7 @@ export default function SoundboardWaveformTrimHandles(width) {
     const items4 = [closure_14, , ];
     const onFinalize = onUpdate(SoundboardWaveformTrimHandlesTsx2).onFinalize;
     onUpdate(SoundboardWaveformTrimHandlesTsx2);
-    items4[1] = _mod1655.runOnJS;
+    items4[1] = _mod1653.runOnJS;
     items4[2] = callback;
     c0 = undefined;
     c1 = undefined;
@@ -184,7 +189,7 @@ export default function SoundboardWaveformTrimHandles(width) {
     SoundboardWaveformTrimHandlesTsx3.__initData = tmp23;
     return onFinalize(SoundboardWaveformTrimHandlesTsx3);
   }, items1);
-  const memo1 = sharedValue.useMemo(() => {
+  const memo1 = flag.useMemo(() => {
     let tmp12;
     let tmp13;
     let tmp14;
@@ -209,6 +214,7 @@ export default function SoundboardWaveformTrimHandles(width) {
     let c2;
     [tmp6, tmp7, tmp8, tmp9] = items;
     const PanResult = Gesture.Pan();
+    const enabledResult = PanResult.enabled(!flag);
     class SoundboardWaveformTrimHandlesTsx4 {
       constructor() {
         result = closure_0.set(closure_1.get());
@@ -221,9 +227,9 @@ export default function SoundboardWaveformTrimHandles(width) {
     SoundboardWaveformTrimHandlesTsx4.__workletHash = 6600976471827;
     SoundboardWaveformTrimHandlesTsx4.__initData = tmp6;
     const items2 = [closure_16, sharedValue1, width, startRatio, c8, endRatio, sharedValue3, closure_9, , ];
-    const onUpdate = PanResult.onBegin(SoundboardWaveformTrimHandlesTsx4).onUpdate;
-    PanResult.onBegin(SoundboardWaveformTrimHandlesTsx4);
-    items2[8] = _mod1655.runOnJS;
+    const onUpdate = enabledResult.onBegin(SoundboardWaveformTrimHandlesTsx4).onUpdate;
+    enabledResult.onBegin(SoundboardWaveformTrimHandlesTsx4);
+    items2[8] = _mod1653.runOnJS;
     items2[9] = callback;
     c0 = undefined;
     c1 = undefined;
@@ -258,7 +264,7 @@ export default function SoundboardWaveformTrimHandles(width) {
     const items4 = [closure_17, , ];
     const onFinalize = onUpdate(SoundboardWaveformTrimHandlesTsx5).onFinalize;
     onUpdate(SoundboardWaveformTrimHandlesTsx5);
-    items4[1] = _mod1655.runOnJS;
+    items4[1] = _mod1653.runOnJS;
     items4[2] = callback;
     c0 = undefined;
     c1 = undefined;
@@ -297,7 +303,7 @@ export default function SoundboardWaveformTrimHandles(width) {
   c1 = undefined;
   c2 = undefined;
   [tmp18, tmp19, tmp20, tmp21] = items5;
-  const tmp2Result = tmp2(tmp3[7]);
+  const tmp2Result = width(tmp3[7]);
   class SoundboardWaveformTrimHandlesTsx8 {
     constructor() {
       const obj = { left: _undefined.get() * c1 - c2 / 2 };
@@ -308,66 +314,89 @@ export default function SoundboardWaveformTrimHandles(width) {
   SoundboardWaveformTrimHandlesTsx8.__closure = items6;
   SoundboardWaveformTrimHandlesTsx8.__workletHash = 15443910628516;
   SoundboardWaveformTrimHandlesTsx8.__initData = tmp18;
-  const obj7 = { style: items7, pointerEvents: "box-none", children: items9 };
-  items7 = [tmp.container, { width, height }];
+  const tmp24 = sharedValue;
+  const items7 = [tmp.container, { width, height }, ];
+  let disabled = null;
   const animatedStyle1 = tmp2Result.useAnimatedStyle(SoundboardWaveformTrimHandlesTsx8);
-  const obj8 = { gesture: memo, children: sharedValue2(View, obj9) };
+  const tmp23 = sharedValue2;
+  if (flag) {
+    disabled = tmp.disabled;
+  }
+  const obj7 = { style: items7, pointerEvents: str, children: items9 };
+  items7[2] = disabled;
+  str = "box-none";
+  if (flag) {
+    str = "none";
+  }
+  const obj8 = { gesture: memo, children: sharedValue1(View, obj9) };
   const GestureDetector = tmp2(tmp3[8]).GestureDetector;
   obj9 = {
     style: items8,
     accessible: true,
     accessibilityRole: "adjustable",
-    accessibilityLabel: intl.string(tmp2(tmp3[9]).t["+BTvw8"]),
+    accessibilityLabel: intl.string(width(tmp3[9]).t["+BTvw8"]),
+    accessibilityState: { disabled: flag },
     accessibilityValue: range,
-    accessibilityActions: items,
+    accessibilityActions,
     onAccessibilityAction: function handleStartAccessibilityAction(nativeEvent) {
-      let tmp2;
-      if ("increment" === nativeEvent.nativeEvent.actionName) {
-        tmp2 = closure_9;
-      } else {
-        tmp2 = -closure_9;
+      const tmp = flag;
+      if (!tmp) {
+        let tmp4;
+        if ("increment" === nativeEvent.nativeEvent.actionName) {
+          tmp4 = closure_9;
+        } else {
+          tmp4 = -closure_9;
+        }
+        const _Math = Math;
+        const _Math2 = Math;
+        set = startRatio.set;
+        const bound = Math.max(startRatio.get() + tmp4, 0);
+        const result = set(min(bound, endRatio.get() - c8));
+        callback();
       }
-      set = startRatio.set;
-      const bound = Math.max(startRatio.get() + tmp2, 0);
-      const result = set(min(bound, endRatio.get() - c8));
-      callback();
     },
-    children: sharedValue2(sharedValue1, obj10)
+    children: sharedValue1(tmp24, obj10)
   };
   items8 = [tmp.touchTarget, animatedStyle];
   View = startRatio(tmp3[7]).View;
   intl = tmp2(tmp3[9]).intl;
   range = { min: 0, max: 100, now: Math.round(100 * tmp9.start) };
   obj10 = { style: tmp.handle };
-  items9 = [sharedValue2(GestureDetector, obj8), ];
-  const obj11 = { gesture: memo1, children: sharedValue2(View2, obj12) };
+  items9 = [sharedValue1(GestureDetector, obj8), ];
+  const obj11 = { gesture: memo1, children: sharedValue1(View2, obj12) };
   const GestureDetector2 = tmp2(tmp3[8]).GestureDetector;
   obj12 = {
     style: items10,
     accessible: true,
     accessibilityRole: "adjustable",
-    accessibilityLabel: intl2.string(tmp2(tmp3[9]).t.bBgBYo),
+    accessibilityLabel: intl2.string(width(tmp3[9]).t.bBgBYo),
+    accessibilityState: { disabled: flag },
     accessibilityValue: range1,
-    accessibilityActions: items,
+    accessibilityActions,
     onAccessibilityAction: function handleEndAccessibilityAction(nativeEvent) {
-      let tmp2;
-      if ("increment" === nativeEvent.nativeEvent.actionName) {
-        tmp2 = closure_9;
-      } else {
-        tmp2 = -closure_9;
+      const tmp = flag;
+      if (!tmp) {
+        let tmp4;
+        if ("increment" === nativeEvent.nativeEvent.actionName) {
+          tmp4 = closure_9;
+        } else {
+          tmp4 = -closure_9;
+        }
+        const _Math = Math;
+        const _Math2 = Math;
+        set = endRatio.set;
+        const bound = Math.min(endRatio.get() + tmp4, 1);
+        const result = set(max(bound, startRatio.get() + c8));
+        callback();
       }
-      set = endRatio.set;
-      const bound = Math.min(endRatio.get() + tmp2, 1);
-      const result = set(max(bound, startRatio.get() + c8));
-      callback();
     },
-    children: sharedValue2(sharedValue1, obj13)
+    children: sharedValue1(tmp24, obj13)
   };
   items10 = [tmp.touchTarget, animatedStyle1];
   View2 = startRatio(tmp3[7]).View;
   intl2 = tmp2(tmp3[9]).intl;
   range1 = { min: 0, max: 100, now: Math.round(100 * tmp9.end) };
   obj13 = { style: tmp.handle };
-  items9[1] = sharedValue2(GestureDetector2, obj11);
-  return sharedValue3(sharedValue1, obj7);
+  items9[1] = sharedValue1(GestureDetector2, obj11);
+  return tmp23(tmp24, obj7);
 };

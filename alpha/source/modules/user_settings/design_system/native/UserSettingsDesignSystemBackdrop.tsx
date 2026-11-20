@@ -1,23 +1,23 @@
-// Module ID: 17292
-// Function ID: 17293
+// Module ID: 17119
+// Function ID: 17120
 // Name: UserSettingsDesignSystemBackdrop
-// Dependencies: [32, 19, 17, 21, 4792, 6928, 5808, 5383, 5390, 1655, 5393, 5394, 5798, 5358, 2]
+// Dependencies: [32, 19, 17, 21, 4794, 6927, 5810, 5385, 5392, 1653, 5395, 5396, 5800, 5360, 2]
 // Exports: default
 
-// Module 17292 (UserSettingsDesignSystemBackdrop)
-import _mod1655 from "module_1655" /* 1655 */;
-import Backdrop from "Backdrop" /* 5358 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import components_Button_Button from "components/Button/Button" /* 5390 */;
-import spring_spring from "spring/spring" /* 5393 */;
-import springPresets from "springPresets" /* 5394 */;
-import Stack_Stack from "Stack/Stack" /* 5808 */;
-import Card_Card from "Card/Card" /* 6928 */;
+// Module 17119 (UserSettingsDesignSystemBackdrop)
+import _mod1653 from "module_1653" /* 1653 */;
+import Backdrop from "Backdrop" /* 5360 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import components_Button_Button from "components/Button/Button" /* 5392 */;
+import spring_spring from "spring/spring" /* 5395 */;
+import springPresets from "springPresets" /* 5396 */;
+import Stack_Stack from "Stack/Stack" /* 5810 */;
+import Card_Card from "Card/Card" /* 6927 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -88,8 +88,8 @@ export default function UserSettingsDesignSystemBackdrop() {
   [tmp6, tmp7] = react.useState("none");
   _slicedToArray(react.useState("none"), 2);
   const items = [closure_10, , , ];
-  const useAnimatedStyle = _mod1655.useAnimatedStyle;
-  _mod1655;
+  const useAnimatedStyle = _mod1653.useAnimatedStyle;
+  _mod1653;
   items[1] = spring_spring.withSpring;
   items[2] = tmp16Result;
   items[3] = springPresets.SUBTLE_SPRING;
@@ -115,7 +115,7 @@ export default function UserSettingsDesignSystemBackdrop() {
   let obj = { contentContainerStyle: tmp.container, children: items3 };
   const animatedStyle = useAnimatedStyle(UserSettingsDesignSystemBackdropTsx1);
   const obj2 = { spacing: 24, children: items2 };
-  const Stack = tmp8(5808).Stack;
+  const Stack = tmp8(5810).Stack;
   items2 = [metroRequire(BackdropCard, { title: "Backdrop", description: "A backdrop is an overlay that appears behind a component to provide separation between the component and the rest of the interface. By default it is a semi-transparent overlay.", buttonLabel: "Show Backdrop", blur: "none", setShowBackdrop: tmp4, setBlurAmount: tmp7 }), metroRequire(BackdropCard, { title: "Subtle Blur", description: "Backdrop also supports blur. You can use a subtle blur for a lite-touch obfuscation, like for Context Menus that help create seperation but don't completly lift you out of the context", buttonLabel: "Show Subtle Blur Backdrop", blur: "subtle", setShowBackdrop: tmp4, setBlurAmount: tmp7 }), metroRequire(BackdropCard, { title: "Strong Blur", description: "You can use a strong blur for places where you want to completly lift the user out of the context, like for modals", buttonLabel: "Show Strong Blur Backdrop", blur: "strong", setShowBackdrop: tmp4, setBlurAmount: tmp7 })];
   items3 = [metroImportDefault(Stack, obj2), ];
   const tmp17 = React3;
@@ -124,12 +124,12 @@ export default function UserSettingsDesignSystemBackdrop() {
       tmp4(false);
     }
     const obj3 = { onDismiss: handleClose, children: items4 };
-    const Dialog = tmp8(5798).Dialog;
+    const Dialog = tmp8(5800).Dialog;
     const obj4 = { style: animatedStyle, blur: tmp6, onDismiss: handleClose };
     items4 = [metroRequire(Backdrop.Backdrop, obj4), ];
     const obj5 = { style: tmp.backdropContent, pointerEvents: "box-none", children: metroRequire(Card, obj6) };
     obj6 = { children: metroImportDefault(Text_Text.Text, obj7) };
-    Card = tmp8(6928).Card;
+    Card = tmp8(6927).Card;
     obj7 = { variant: "body-md/normal", children: items5 };
     items5 = ["blur style: ", tmp6];
     items4[1] = metroRequire(hasOwnProperty, obj5);

@@ -1,18 +1,18 @@
-// Module ID: 13249
-// Function ID: 13250
+// Module ID: 13219
+// Function ID: 13220
 // Name: ChatInputGuardReturnToGameProfile
-// Dependencies: [19, 21, 4792, 575, 13243, 5479, 1414, 1113, 12644, 2]
+// Dependencies: [19, 21, 4794, 575, 13213, 5481, 1412, 1112, 12614, 2]
 
-// Module 13249 (ChatInputGuardReturnToGameProfile)
+// Module 13219 (ChatInputGuardReturnToGameProfile)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import intl3 from "intl" /* 1113 */;
-import AvatarUtils from "AvatarUtils" /* 1414 */;
-import FastImageDefault from "FastImage" /* 5479 */;
-import ArrowSmallLeftIcon2 from "ArrowSmallLeftIcon" /* 12644 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 13243 */;
+import intl3 from "intl" /* 1112 */;
+import AvatarUtils from "AvatarUtils" /* 1412 */;
+import FastImageDefault from "FastImage" /* 5481 */;
+import ArrowSmallLeftIcon2 from "ArrowSmallLeftIcon" /* 12614 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 13213 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let size;

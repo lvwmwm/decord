@@ -1,23 +1,23 @@
-// Module ID: 17785
-// Function ID: 17786
+// Module ID: 17612
+// Function ID: 17613
 // Name: GuildPowerupsProgressBar
-// Dependencies: [19, 17, 17786, 4663, 21, 575, 1655, 5347, 4792, 563, 17787, 17788, 5002, 13278, 7420, 1113, 2755, 7481, 5383, 7446, 2]
+// Dependencies: [19, 17, 17613, 4665, 21, 575, 1653, 5349, 4794, 563, 17614, 17615, 5004, 13248, 7419, 1112, 2757, 7480, 5385, 7445, 2]
 // Exports: default
 
-// Module 17785 (GuildPowerupsProgressBar)
+// Module 17612 (GuildPowerupsProgressBar)
 import nativeDefault from "native" /* 575 */;
-import timing_timing from "timing/timing" /* 5002 */;
-import LinearGradientDefault from "LinearGradient" /* 5347 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7420 */;
-import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 13278 */;
-import GuildBoostingProgressBarActionCreators from "GuildBoostingProgressBarActionCreators" /* 17788 */;
+import timing_timing from "timing/timing" /* 5004 */;
+import LinearGradientDefault from "LinearGradient" /* 5349 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7419 */;
+import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 13248 */;
+import GuildBoostingProgressBarActionCreators from "GuildBoostingProgressBarActionCreators" /* 17615 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildBoostingProgressBarPersistedStore from "GuildBoostingProgressBarPersistedStore" /* 17786 */;
-import GuildStore from "GuildStore" /* 4663 */;
+import GuildBoostingProgressBarPersistedStore from "GuildBoostingProgressBarPersistedStore" /* 17613 */;
+import GuildStore from "GuildStore" /* 4665 */;
 import Fragment from "Fragment" /* 21 */;
-import module_1655 from "module_1655" /* 1655 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import module_1653 from "module_1653" /* 1653 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let set, set2;
@@ -35,7 +35,7 @@ let obj6;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 const colors = ["rgba(255, 115, 250, 0.4)", "rgba(255, 115, 250, 0.1)"];
 let result = 2 * nativeDefault.space.PX_4;
-const LinearGradient = module_1655.createAnimatedComponent(LinearGradientDefault);
+const LinearGradient = module_1653.createAnimatedComponent(LinearGradientDefault);
 let createStyles = createStyles_mod;
 let obj = { container: obj2, track: obj3, fillContainer: obj4, fill: obj5, fillShadow: { shadowColor: "rgba(0, 0, 0, 0.14)", shadowOffset: { width: 0, height: 1 }, shadowOpacity: 1, shadowRadius: 4, elevation: 2 }, textContainer: obj6, headerText: { flexShrink: 1 }, rightContent: { flexDirection: "row", alignItems: "center", flexShrink: 1 }, descriptionText: { flexShrink: 1, opacity: 0.7 } };
 obj2 = { paddingVertical: nativeDefault.space.PX_4, paddingHorizontal: nativeDefault.space.PX_16 };

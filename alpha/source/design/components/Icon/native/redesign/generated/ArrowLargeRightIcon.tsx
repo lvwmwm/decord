@@ -1,14 +1,14 @@
-// Module ID: 12434
-// Function ID: 12435
+// Module ID: 12404
+// Function ID: 12405
 // Name: ArrowLargeRightIcon
-// Dependencies: [19, 21, 575, 5478, 12435, 2]
+// Dependencies: [19, 21, 575, 5480, 12405, 2]
 // Exports: ArrowLargeRightIcon
 
-// Module 12434 (ArrowLargeRightIcon)
+// Module 12404 (ArrowLargeRightIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5478 */;
-import AssetRegistry from "AssetRegistry" /* 12435 */;
+import BaseIconImage2 from "BaseIconImage" /* 5480 */;
+import AssetRegistry from "AssetRegistry" /* 12405 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

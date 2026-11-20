@@ -1,16 +1,16 @@
-// Module ID: 11016
-// Function ID: 11017
+// Module ID: 10958
+// Function ID: 10959
 // Name: MediaTile
-// Dependencies: [19, 17, 6499, 5442, 21, 4792, 575, 11006, 1496, 8031, 504, 11017, 1187, 2]
+// Dependencies: [19, 17, 6501, 5444, 21, 4794, 575, 10948, 1494, 8030, 504, 10959, 1186, 2]
 
-// Module 11016 (MediaTile)
+// Module 10958 (MediaTile)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import CallConstants from "CallConstants" /* 5442 */;
+import CallConstants from "CallConstants" /* 5444 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6499 */;
-import createStyles from "createStyles" /* 4792 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6501 */;
+import createStyles from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let obj2;
@@ -25,10 +25,10 @@ const memoResult = react.memo(function MediaTile(channel) {
   const participant = channel.participant;
   size = channel.size;
   const tmp = closure_7();
-  const obj = channel(11006);
+  const obj = channel(10948);
   const speakerTileStyles = obj.useSpeakerTileStyles();
-  const width = participant(1496)().width;
-  const obj2 = channel(8031);
+  const width = participant(1494)().width;
+  const obj2 = channel(8030);
   const isScreenLandscape = obj2.useIsScreenLandscape();
   const items = [ChannelRTCStore];
   const items1 = [channel.id, participant.id];
@@ -40,12 +40,12 @@ const memoResult = react.memo(function MediaTile(channel) {
     tmp8 = null;
     if (stateFromStores.type !== ParticipantTypes.ACTIVITY) {
       const items2 = [tmp.container, , ];
-      const tmp2Result = channel(11006);
+      const tmp2Result = channel(10948);
       items2[1] = tmp2Result.getSizeStyle(size, speakerTileStyles);
-      const tmp2Result2 = channel(11006);
+      const tmp2Result2 = channel(10948);
       items2[2] = tmp2Result2.getTileWidthStyle(size, width, isScreenLandscape);
-      ({ hasBottomSafeArea: false, hasLeftSafeArea: false, hasRightSafeArea: false, hasTopSafeArea: false, participant: stateFromStores, avatarSize: channel(1187).AvatarSizes.XLARGE, channel, shrinkStreamEmptyState: false, contentStyle: tmp.media });
-      tmp5(11017);
+      ({ hasBottomSafeArea: false, hasLeftSafeArea: false, hasRightSafeArea: false, hasTopSafeArea: false, participant: stateFromStores, avatarSize: channel(1186).AvatarSizes.XLARGE, channel, shrinkStreamEmptyState: false, contentStyle: tmp.media });
+      tmp5(10959);
       tmp8 = <View style={items2}>{null}</View>;
     }
   }

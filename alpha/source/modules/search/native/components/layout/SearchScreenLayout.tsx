@@ -1,17 +1,17 @@
-// Module ID: 18770
-// Function ID: 18771
+// Module ID: 18594
+// Function ID: 18595
 // Name: SearchScreenLayout
-// Dependencies: [19, 17, 13121, 21, 4792, 18207, 504, 18771, 18882, 2]
+// Dependencies: [19, 17, 13091, 21, 4794, 18034, 504, 18595, 18706, 2]
 
-// Module 18770 (SearchScreenLayout)
+// Module 18594 (SearchScreenLayout)
 import react_native from "react-native" /* 17 */;
-import AppFreezerDefault from "AppFreezer" /* 18207 */;
-import SearchTabsLayoutDefault from "SearchTabsLayout" /* 18771 */;
-import AutocompleteScreenDefault from "AutocompleteScreen" /* 18882 */;
+import AppFreezerDefault from "AppFreezer" /* 18034 */;
+import SearchTabsLayoutDefault from "SearchTabsLayout" /* 18595 */;
+import AutocompleteScreenDefault from "AutocompleteScreen" /* 18706 */;
 import react from "react" /* 19 */;
-import SearchQueryStore from "SearchQueryStore" /* 13121 */;
+import SearchQueryStore from "SearchQueryStore" /* 13091 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;

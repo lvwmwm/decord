@@ -1,17 +1,17 @@
-// Module ID: 10058
-// Function ID: 10059
+// Module ID: 10061
+// Function ID: 10062
 // Name: InAppReportModal
-// Dependencies: [5, 32, 19, 10059, 21, 6910, 6913, 1113, 10060, 5353, 9019, 10057, 10055, 6973, 2]
+// Dependencies: [5, 32, 19, 10062, 21, 6909, 6912, 1112, 10063, 5355, 9019, 10060, 10058, 6972, 2]
 // Exports: default
 
-// Module 10058 (InAppReportModal)
+// Module 10061 (InAppReportModal)
 import Fragment from "Fragment" /* 21 */;
-import intl2 from "intl" /* 1113 */;
-import Navigator2 from "Navigator" /* 6973 */;
+import intl2 from "intl" /* 1112 */;
+import Navigator2 from "Navigator" /* 6972 */;
 import FamilyCenterUtils from "FamilyCenterUtils" /* 9019 */;
-import showReportModal from "showReportModal" /* 10055 */;
-import in_app_reports_ReportUtils from "in_app_reports/ReportUtils" /* 10057 */;
-import InAppReportsConstants from "InAppReportsConstants" /* 10059 */;
+import showReportModal from "showReportModal" /* 10058 */;
+import in_app_reports_ReportUtils from "in_app_reports/ReportUtils" /* 10060 */;
+import InAppReportsConstants from "InAppReportsConstants" /* 10062 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -45,7 +45,7 @@ export default function InAppReportModal(arg0) {
   let menu;
   let name;
   let screens;
-  const f127988 = (fn) => fn();
+  const f125965 = (fn) => fn();
   ({ reportType: require, menu } = arg0);
   ({ afterSubmit: dependencyMap, isEligibleForFeedback: _asyncToGenerator } = arg0);
   _slicedToArray = undefined;
@@ -73,7 +73,7 @@ export default function InAppReportModal(arg0) {
     const result = obj.trackCloseReportModalAnalytics(require, c12, first);
     const obj2 = showReportModal;
     obj2.hideReportModal();
-    const item = _undefined2.forEach(f127988);
+    const item = _undefined2.forEach(f125965);
     const tmp3 = require;
     const tmp4 = first;
     const tmp8 = _asyncToGenerator;
@@ -90,7 +90,7 @@ export default function InAppReportModal(arg0) {
   [c12, c13] = tmp4;
   let tmp5 = _slicedToArray(react.useState([]), 2);
   [c14, c15] = tmp5;
-  let tmp7 = menu(5353)(() => {
+  let tmp7 = menu(5355)(() => {
     const obj = FamilyCenterUtils;
     const orFetchLinkedUsers = obj.getOrFetchLinkedUsers();
   });
@@ -116,7 +116,7 @@ export default function InAppReportModal(arg0) {
             } else if (arg0 === 2) {
               return { value, done: true };
             } else {
-              return { value: "HermesInternal", done: "+60" };
+              return { value: "HermesInternal", done: null };
             }
           } else {
             try {
@@ -164,7 +164,7 @@ export default function InAppReportModal(arg0) {
                   closure_1_16(closure_2);
                 }
                 c4 = 3;
-                return { value: "HermesInternal", done: "+60" };
+                return { value: "HermesInternal", done: null };
               }
             } catch (tmp31) {
               c4 = 3;
@@ -182,7 +182,7 @@ export default function InAppReportModal(arg0) {
       const result = obj.trackCloseReportModalAnalytics(obj, c12, first);
       let obj2 = showReportModal;
       obj2.hideReportModal();
-      const item = _undefined2.forEach(f127988);
+      const item = _undefined2.forEach(f125965);
       const tmp12 = closure_3;
       const tmp5 = obj;
       const tmp7 = first;

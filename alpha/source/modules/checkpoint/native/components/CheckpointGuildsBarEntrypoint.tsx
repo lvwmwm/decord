@@ -1,24 +1,24 @@
-// Module ID: 17965
-// Function ID: 17966
+// Module ID: 17792
+// Function ID: 17793
 // Name: CheckpointGuildsBarEntrypoint
-// Dependencies: [5, 19, 17, 17910, 5848, 4638, 17907, 21, 1655, 1708, 4792, 575, 17931, 5383, 1113, 3339, 5356, 17919, 12405, 17966, 4968, 17968, 8967, 5347, 9993, 2]
+// Dependencies: [5, 19, 17, 17737, 5850, 4640, 17734, 21, 1653, 1706, 4794, 575, 17758, 5385, 1112, 3341, 5358, 17746, 12375, 17793, 4970, 17795, 8967, 5349, 9996, 2]
 
-// Module 17965 (CheckpointGuildsBarEntrypoint)
+// Module 17792 (CheckpointGuildsBarEntrypoint)
 import nativeDefault from "native" /* 575 */;
-import intl4 from "intl" /* 1113 */;
-import _modDef3339 from "module_3339" /* 3339 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4638 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import CheckpointConstants from "CheckpointConstants" /* 5848 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 17907 */;
-import HomeDrawerShared from "HomeDrawerShared" /* 17931 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17968 */;
+import intl4 from "intl" /* 1112 */;
+import _modDef3341 from "module_3341" /* 3341 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4640 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import CheckpointConstants from "CheckpointConstants" /* 5850 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 17734 */;
+import HomeDrawerShared from "HomeDrawerShared" /* 17758 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17795 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 17910 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 17737 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -34,7 +34,7 @@ function ExpandedChildren() {
   let obj2;
   const obj = { title: unpackModuleId(Text, obj2), subtitle: null };
   const HomeDrawerSharedItem = HomeDrawerShared.HomeDrawerSharedItem;
-  obj2 = { variant: "body-md/medium", color: "text-default", children: intl.string(_modDef3339["8hclXY"]) };
+  obj2 = { variant: "body-md/medium", color: "text-default", children: intl.string(_modDef3341["8hclXY"]) };
   Text = Text_Text.Text;
   intl = intl4.intl;
   return unpackModuleId(HomeDrawerSharedItem, obj);
@@ -107,7 +107,7 @@ const memoResult = react.memo(function CheckpointGuildsBarEntrypoint(markAsDismi
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -139,7 +139,7 @@ const memoResult = react.memo(function CheckpointGuildsBarEntrypoint(markAsDismi
             closure_128_0(constants.TAKE_ACTION);
           }
           guildsBarAnimatedWrapperStyles = 3;
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp10) {
         guildsBarAnimatedWrapperStyles = 3;
@@ -210,8 +210,8 @@ const memoResult = react.memo(function CheckpointGuildsBarEntrypoint(markAsDismi
     let intl2;
     let intl3;
     const obj = {
-      title: intl.string(_modDef3339.tgYaeZ),
-      description: intl2.string(_modDef3339.BFc4lY),
+      title: intl.string(_modDef3341.tgYaeZ),
+      description: intl2.string(_modDef3341.BFc4lY),
       visible: !isModalOpen,
       position: "bottom",
       offsetY: 24,
@@ -219,7 +219,7 @@ const memoResult = react.memo(function CheckpointGuildsBarEntrypoint(markAsDismi
       onDismiss() {
         return markAsDismissed(constants.USER_DISMISS);
       },
-      buttonLabel: intl3.string(_modDef3339.UjtEWE),
+      buttonLabel: intl3.string(_modDef3341.UjtEWE),
       buttonVariant: "primary",
       onButtonPress
     };

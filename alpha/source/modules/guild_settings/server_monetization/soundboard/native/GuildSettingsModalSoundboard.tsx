@@ -1,26 +1,26 @@
-// Module ID: 19853
-// Function ID: 19854
+// Module ID: 19671
+// Function ID: 19672
 // Name: GuildSettingsModalSoundboard
-// Dependencies: [5, 19, 17, 5840, 4663, 1388, 1072, 21, 1113, 8624, 19841, 9250, 14042, 4792, 575, 504, 6926, 7377, 12393, 7569, 5383, 1187, 5822, 6939, 5390, 19854, 1630, 6709, 6835, 7514, 19855, 7071, 19850, 19864, 2]
+// Dependencies: [5, 19, 17, 5842, 4665, 1386, 1071, 21, 1112, 8623, 19659, 9250, 14011, 4794, 575, 504, 6925, 7376, 12363, 7568, 5385, 1186, 5824, 6938, 5392, 19672, 1628, 6711, 6835, 7513, 19673, 7070, 19668, 19684, 2]
 
-// Module 19853 (GuildSettingsModalSoundboard)
+// Module 19671 (GuildSettingsModalSoundboard)
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import intl7 from "intl" /* 1113 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5822 */;
-import EmojiDefault from "Emoji" /* 7377 */;
-import GuildBoostingUtils from "GuildBoostingUtils" /* 8624 */;
-import getSoundboardEmojiUrlDefault from "getSoundboardEmojiUrl" /* 12393 */;
-import SoundboardCreationUtils from "SoundboardCreationUtils" /* 19854 */;
-import showGuildSettingsModalSoundboardSoundInfoActionSheet from "showGuildSettingsModalSoundboardSoundInfoActionSheet" /* 19864 */;
+import Constants from "Constants" /* 1071 */;
+import intl7 from "intl" /* 1112 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5824 */;
+import EmojiDefault from "Emoji" /* 7376 */;
+import GuildBoostingUtils from "GuildBoostingUtils" /* 8623 */;
+import getSoundboardEmojiUrlDefault from "getSoundboardEmojiUrl" /* 12363 */;
+import SoundboardCreationUtils from "SoundboardCreationUtils" /* 19672 */;
+import showGuildSettingsModalSoundboardSoundInfoActionSheet from "showGuildSettingsModalSoundboardSoundInfoActionSheet" /* 19684 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SoundboardStore from "SoundboardStore" /* 5840 */;
-import GuildStore from "GuildStore" /* 4663 */;
-import UserStore from "UserStore" /* 1388 */;
+import SoundboardStore from "SoundboardStore" /* 5842 */;
+import GuildStore from "GuildStore" /* 4665 */;
+import UserStore from "UserStore" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let c1, c2, set;
@@ -55,20 +55,20 @@ function SoundboardSoundRow(arg0) {
   if (null == sound.emojiId) {
     let tmp5Result;
     if (null == sound.emojiName) {
-      tmp5Result = tmp5(tmp2(7569).ImageIcon, { size: "md", color: "icon-subtle" });
+      tmp5Result = tmp5(tmp2(7568).ImageIcon, { size: "lg", color: "icon-subtle" });
     }
     obj2.children = tmp5Result;
     const obj3 = { icon: closure_11(closure_6, obj2), label: closure_12(closure_6, obj8), trailing: tmp5Result2, onPress };
     const obj4 = { variant: "heading-xs/semibold", color: "text-strong", style: tmp.name, children: sound.name };
-    const items2 = [closure_11(sound(5383).Text, obj4), ];
+    const items2 = [closure_11(sound(5385).Text, obj4), ];
     let tmp12Result = null;
     if (null != stateFromStores) {
       const obj5 = { style: tmp.userRow, children: items3 };
-      const obj6 = { user: stateFromStores, size: sound(1187).AvatarSizes.XSMALL_20, guildId };
-      const Avatar = tmp2(1187).Avatar;
+      const obj6 = { user: stateFromStores, size: sound(1186).AvatarSizes.XSMALL_20, guildId };
+      const Avatar = tmp2(1186).Avatar;
       items3 = [closure_11(Avatar, obj6), ];
       const obj7 = { variant: "body-sm/medium", color: "text-subtle", children: obj9.getName(guildId, undefined, stateFromStores) };
-      const Text = tmp2(5383).Text;
+      const Text = tmp2(5385).Text;
       obj9 = NicknameUtilsDefault;
       items3[1] = closure_11(Text, obj7);
       tmp12Result = tmp12(tmp7, obj5);
@@ -77,11 +77,11 @@ function SoundboardSoundRow(arg0) {
     items2[1] = tmp12Result;
     tmp5Result2 = undefined;
     if (canManage) {
-      tmp5Result2 = tmp5(tmp2(6939).TableRowArrow, {});
+      tmp5Result2 = tmp5(tmp2(6938).TableRowArrow, {});
     }
     return closure_11(tmp6, obj3);
   }
-  const obj10 = { fastImageStyle: { width: 28, height: 28 }, name: str, src: tmp9Result(sound, nativeDefault.space.PX_48) };
+  const obj10 = { fastImageStyle: tmp.soundEmojiImage, textEmojiStyle: tmp.soundEmojiText, name: str, src: tmp9Result(sound, nativeDefault.space.PX_48) };
   str = sound.emojiName;
   const tmp10 = EmojiDefault;
   if (str == null) {
@@ -98,14 +98,14 @@ function AddSoundButton(guildId) {
   let obj = { style: closure_14().addSoundButton, children: closure_11(Button, obj2) };
   obj2 = {
     variant: "primary",
-    text: intl.string(guildId(1113).t["8Fu/S7"]),
+    text: intl.string(guildId(1112).t["8Fu/S7"]),
     onPress() {
       const obj = SoundboardCreationUtils;
       return obj.showAddSoundboardSoundOptions(guildId);
     }
   };
-  Button = guildId(5390).Button;
-  intl = guildId(1113).intl;
+  Button = guildId(5392).Button;
+  intl = guildId(1112).intl;
   return closure_11(closure_6, obj);
 }
 let react = react_mod;
@@ -124,8 +124,8 @@ let obj = { addSoundButton: obj2 };
 obj2 = { marginTop: nativeDefault.space.PX_8, marginBottom: nativeDefault.space.PX_16 };
 let closure_14 = createStyles.createStyles(obj);
 createStyles = createStyles_mod;
-let obj3 = { soundEmoji: size, name: obj4, userRow: obj5 };
-size = { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, borderRadius: nativeDefault.radii.round, width: nativeDefault.space.PX_48, height: nativeDefault.space.PX_48, overflow: "hidden", alignItems: "center", justifyContent: "center" };
+let obj3 = { soundEmoji: size, soundEmojiImage: { width: 32, height: 32 }, soundEmojiText: { fontSize: 28 }, name: obj4, userRow: obj5 };
+size = { width: nativeDefault.space.PX_48, height: nativeDefault.space.PX_48, alignItems: "center", justifyContent: "center" };
 createStyles = createStyles.createStyles;
 obj4 = { marginBottom: nativeDefault.space.PX_8 };
 obj5 = { gap: nativeDefault.space.PX_8, flexDirection: "row", alignItems: "center" };
@@ -201,7 +201,7 @@ const memoResult = react.memo(function GuildSettingsModalSoundboard(guildId) {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           let c3;
@@ -238,7 +238,7 @@ const memoResult = react.memo(function GuildSettingsModalSoundboard(guildId) {
                 c3 = 0;
               }
               c1 = 3;
-              return { value: "HermesInternal", done: "+60" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp7) {
             if (0 === c3) {

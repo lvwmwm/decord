@@ -1,17 +1,17 @@
-// Module ID: 6914
-// Function ID: 6915
+// Module ID: 6913
+// Function ID: 6914
 // Name: XboxLinkLanding
-// Dependencies: [19, 6909, 1072, 21, 4792, 1113, 6915, 6917, 6919, 6921, 1502, 2188, 6923, 6924, 2]
+// Dependencies: [19, 6908, 1071, 21, 4794, 1112, 6914, 6916, 6918, 6920, 1500, 2186, 6922, 6923, 2]
 // Exports: default
 
-// Module 6914 (XboxLinkLanding)
+// Module 6913 (XboxLinkLanding)
 import Fragment from "Fragment" /* 21 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
-import XboxLinkConstants from "XboxLinkConstants" /* 6909 */;
-import _modDef6923 from "module_6923" /* 6923 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2186 */;
+import XboxLinkConstants from "XboxLinkConstants" /* 6908 */;
+import _modDef6922 from "module_6922" /* 6922 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 1072 */;
-import createStyles from "createStyles" /* 4792 */;
+import Constants from "Constants" /* 1071 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -26,13 +26,13 @@ const result = size.fileFinishedImporting("modules/user_settings/connections/nat
 
 export default function XboxLinkLanding() {
   const tmp = closure_8();
-  let obj = navigation(1502);
+  let obj = navigation(1500);
   navigation = obj.useNavigation();
   let obj2 = HelpdeskUtilsDefault;
   const articleURL = obj2.getArticleURL(constants.XBOX_CONNECTION);
-  let intl = navigation(1113).intl;
+  let intl = navigation(1112).intl;
   let items = [navigation];
-  const formatResult = intl.format(navigation(1113).t.CIc3IN, { helpdeskArticleUrl: articleURL });
+  const formatResult = intl.format(navigation(1112).t.CIc3IN, { helpdeskArticleUrl: articleURL });
   const memo = react.useMemo(() => {
     let intl;
     let intl2;
@@ -56,11 +56,11 @@ export default function XboxLinkLanding() {
     navigation.push(XboxLinkModalScenes.PRE_CONNECT);
   }, items);
   const memo1 = react.useMemo(() => {
-    const obj = { uri: _modDef6923 };
+    const obj = { uri: _modDef6922 };
     return obj;
   }, []);
-  const TwoWayLinkLanding = navigation(6924).TwoWayLinkLanding;
-  let intl2 = navigation(1113).intl;
-  let intl3 = navigation(1113).intl;
-  return <TwoWayLinkLanding platformType={constants2.XBOX} img={memo1} imgStyle={tmp.image} headerConnect={intl2.string(navigation(1113).t.m8aahn)} headerReconnect={intl3.string(navigation(1113).t.z3rAhq)} body={formatResult} onNext={callback} valueProps={memo} />;
+  const TwoWayLinkLanding = navigation(6923).TwoWayLinkLanding;
+  let intl2 = navigation(1112).intl;
+  let intl3 = navigation(1112).intl;
+  return <TwoWayLinkLanding platformType={constants2.XBOX} img={memo1} imgStyle={tmp.image} headerConnect={intl2.string(navigation(1112).t.m8aahn)} headerReconnect={intl3.string(navigation(1112).t.z3rAhq)} body={formatResult} onNext={callback} valueProps={memo} />;
 };

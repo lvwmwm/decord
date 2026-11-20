@@ -1,15 +1,15 @@
 // Module ID: 8933
 // Function ID: 8934
 // Name: useGame
-// Dependencies: [5, 19, 2141, 1072, 504, 1089, 8934, 2]
+// Dependencies: [5, 19, 2139, 1071, 504, 1088, 8934, 2]
 // Exports: useGames
 
 // Module 8933 (useGame)
-import Constants from "Constants" /* 1072 */;
-import DurationsDefault from "Durations" /* 1089 */;
+import Constants from "Constants" /* 1071 */;
+import DurationsDefault from "Durations" /* 1088 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GameStore from "GameStore" /* 2141 */;
+import GameStore from "GameStore" /* 2139 */;
 import get_initialized from "get initialized" /* 504 */;
 import size from "module_2" /* 2 */;
 

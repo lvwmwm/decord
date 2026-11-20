@@ -1,19 +1,19 @@
-// Module ID: 11601
-// Function ID: 11602
+// Module ID: 11543
+// Function ID: 11544
 // Name: ForumPostTagsActionSheet
-// Dependencies: [32, 19, 17, 8387, 21, 4792, 1113, 11185, 7434, 7396, 11602, 5390, 8503, 5006, 2]
+// Dependencies: [32, 19, 17, 8386, 21, 4794, 1112, 11127, 7433, 7395, 11544, 5392, 8502, 5008, 2]
 // Exports: default
 
-// Module 11601 (ForumPostTagsActionSheet)
+// Module 11543 (ForumPostTagsActionSheet)
 import react_native from "react-native" /* 17 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5006 */;
-import ForumConstants from "ForumConstants" /* 8387 */;
-import ForumActionCreatorsDefault from "ForumActionCreators" /* 8503 */;
-import AvailableForumTagDefault from "AvailableForumTag" /* 11602 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5008 */;
+import ForumConstants from "ForumConstants" /* 8386 */;
+import ForumActionCreatorsDefault from "ForumActionCreators" /* 8502 */;
+import AvailableForumTagDefault from "AvailableForumTag" /* 11544 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -48,8 +48,8 @@ export default function ForumPostTagsActionSheet(thread) {
   if (title === undefined) {
     let tmp = thread;
     let tmp2 = dependencyMap;
-    const intl = thread(1113).intl;
-    title = intl.string(thread(1113).t["436ZFw"]);
+    const intl = thread(1112).intl;
+    title = intl.string(thread(1112).t["436ZFw"]);
   }
   ({ tags, onClose: _slicedToArray } = thread);
   first = undefined;
@@ -75,7 +75,7 @@ export default function ForumPostTagsActionSheet(thread) {
   let tmp3 = closure_9();
   let tmp4 = thread;
   const tmp5 = dependencyMap;
-  let obj = thread(11185);
+  let obj = thread(11127);
   let appliedTags = obj.useAppliedTags(thread);
   const useState = first.useState;
   let _Set = Set;
@@ -85,7 +85,7 @@ export default function ForumPostTagsActionSheet(thread) {
   const _Set1 = new _Set(appliedTags);
   [first, closure_5] = useState(_Set1);
   closure_6 = first.size >= closure_6;
-  const tmp4Result = tmp4(11185);
+  const tmp4Result = tmp4(11127);
   const visibleForumTags = tmp4Result.useVisibleForumTags(parentChannel);
   let obj2 = {
     onDismiss() {
@@ -98,10 +98,10 @@ export default function ForumPostTagsActionSheet(thread) {
     header: toggleTag(BottomSheetTitleHeader, obj3),
     children: items
   };
-  const ActionSheet = tmp4(7434).ActionSheet;
-  obj3 = { title, subtitle: intl2.string(tmp4(1113).t["+HS9+m"]), subtitleStyle: tmp3.subtitle };
-  BottomSheetTitleHeader = tmp4(7396).BottomSheetTitleHeader;
-  intl2 = tmp4(1113).intl;
+  const ActionSheet = tmp4(7433).ActionSheet;
+  obj3 = { title, subtitle: intl2.string(tmp4(1112).t["+HS9+m"]), subtitleStyle: tmp3.subtitle };
+  BottomSheetTitleHeader = tmp4(7395).BottomSheetTitleHeader;
+  intl2 = tmp4(1112).intl;
   items = [, ];
   const obj4 = {
     style: tmp3.tagsContainer,
@@ -121,7 +121,7 @@ export default function ForumPostTagsActionSheet(thread) {
   items[0] = toggleTag(closure_5, obj4);
   const obj5 = { style: tmp3.saveButton, children: toggleTag(Button, obj6) };
   obj6 = {
-    text: intl3.string(tmp4(1113).t["R3BPH+"]),
+    text: intl3.string(tmp4(1112).t["R3BPH+"]),
     onPress: function handleSave() {
       Array.from(first);
       if (null != dependencyMap) {
@@ -136,8 +136,8 @@ export default function ForumPostTagsActionSheet(thread) {
       obj2.hideActionSheet();
     }
   };
-  Button = tmp4(5390).Button;
-  intl3 = tmp4(1113).intl;
+  Button = tmp4(5392).Button;
+  intl3 = tmp4(1112).intl;
   items[1] = toggleTag(closure_5, obj5);
   return closure_8(ActionSheet, obj2);
 };

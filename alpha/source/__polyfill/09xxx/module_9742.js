@@ -58,15 +58,14 @@ function find(fn, arg1, arg2, arg3) {
   }
   return items;
 }
-function findOne(fn, arg1, arg2) {
+function findOne(fn, children, flag) {
   let tmp;
-  let flag = arg2;
-  if (undefined === arg2) {
+  if (undefined === flag) {
     flag = true;
   }
-  let arr = arg1;
-  if (!Array.isArray(arg1)) {
-    const items = [arg1];
+  let arr = children;
+  if (!Array.isArray(children)) {
+    const items = [children];
     arr = items;
   }
   let num = 0;
@@ -119,7 +118,7 @@ export function findOneChild(arg0, arr) {
 }
 export { findOne };
 export function existsOne(arg0, arg1) {
-  const f97264 = (children) => {
+  const f95652 = (children) => {
     let isTagResult = DomHandler.isTag(children);
     if (isTagResult) {
       isTagResult = closure_0(children);
@@ -134,7 +133,7 @@ export function existsOne(arg0, arg1) {
           const items = [children];
           obj = items;
         }
-        hasChildrenResult = obj.some(f97264);
+        hasChildrenResult = obj.some(f95652);
       }
       isTagResult = hasChildrenResult;
     }
@@ -146,7 +145,7 @@ export function existsOne(arg0, arg1) {
     let items = [arg1];
     obj = items;
   }
-  return obj.some(f97264);
+  return obj.some(f95652);
 }
 export function findAll(fn, arg1) {
   const items = [];

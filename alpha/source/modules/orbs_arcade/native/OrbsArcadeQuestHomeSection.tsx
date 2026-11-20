@@ -1,22 +1,22 @@
-// Module ID: 16477
-// Function ID: 16478
+// Module ID: 16299
+// Function ID: 16300
 // Name: OrbsArcadeQuestHomeSection
-// Dependencies: [19, 16478, 16481, 21, 4792, 575, 16482, 504, 5808, 6921, 5383, 1113, 16486, 16488, 9773, 2]
+// Dependencies: [19, 16300, 16304, 21, 4794, 575, 16305, 504, 5810, 6920, 5385, 1112, 16308, 16310, 9775, 2]
 // Exports: default
 
-// Module 16477 (OrbsArcadeQuestHomeSection)
+// Module 16299 (OrbsArcadeQuestHomeSection)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import intl3 from "intl" /* 1113 */;
-import GameControllerIcon from "GameControllerIcon" /* 6921 */;
-import useFetchOrbsArcadeGamesDefault from "useFetchOrbsArcadeGames" /* 16482 */;
-import OrbsArcadeGameTileDefault from "OrbsArcadeGameTile" /* 16486 */;
-import OrbsArcadeAnalytics from "OrbsArcadeAnalytics" /* 16488 */;
+import intl3 from "intl" /* 1112 */;
+import GameControllerIcon from "GameControllerIcon" /* 6920 */;
+import useFetchOrbsArcadeGamesDefault from "useFetchOrbsArcadeGames" /* 16305 */;
+import OrbsArcadeGameTileDefault from "OrbsArcadeGameTile" /* 16308 */;
+import OrbsArcadeAnalytics from "OrbsArcadeAnalytics" /* 16310 */;
 import react from "react" /* 19 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 16478 */;
-import OrbsArcadeNativeConstants from "OrbsArcadeNativeConstants" /* 16481 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 16300 */;
+import OrbsArcadeNativeConstants from "OrbsArcadeNativeConstants" /* 16304 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let ORBS_ARCADE_GAME_TILE_MAX_WIDTH;
@@ -59,21 +59,21 @@ export default function OrbsArcadeQuestHomeSection(arg0) {
   if (!stateFromStores1) {
     let mapped;
     const obj3 = { spacing: nativeDefault.space.PX_8, style: tmp.section, onLayout, children: items4 };
-    const Stack = tmp5(5808).Stack;
+    const Stack = tmp5(5810).Stack;
     const obj4 = { style: tmp.sectionHeader, children: items3 };
-    const Stack2 = tmp5(5808).Stack;
+    const Stack2 = tmp5(5810).Stack;
     const obj5 = { direction: "horizontal", spacing: nativeDefault.space.PX_8, children: items2 };
-    const Stack3 = tmp5(5808).Stack;
+    const Stack3 = tmp5(5810).Stack;
     const obj6 = { size: "custom", style: tmp.sectionIcon };
     items2 = [React3(GameControllerIcon.GameControllerIcon, obj6), ];
     const obj7 = { variant: "body-lg/semibold", color: "text-strong", children: intl.string(intl3.t["2L068F"]) };
-    const Heading = tmp5(5383).Heading;
-    intl = tmp5(1113).intl;
+    const Heading = tmp5(5385).Heading;
+    intl = tmp5(1112).intl;
     items2[1] = React3(Heading, obj7);
     items3 = [hasOwnProperty(Stack3, obj5), ];
     const obj8 = { variant: "heading-xs/medium", color: "text-subtle", children: intl2.string(intl3.t.kMY21I) };
-    const Text = tmp5(5383).Text;
-    intl2 = tmp5(1113).intl;
+    const Text = tmp5(5385).Text;
+    intl2 = tmp5(1112).intl;
     items3[1] = React3(Text, obj8);
     items4 = [hasOwnProperty(Stack2, obj4), ];
     const tmp8 = hasOwnProperty;
@@ -86,7 +86,7 @@ export default function OrbsArcadeQuestHomeSection(arg0) {
       });
     } else {
       const obj9 = { style: tmp.skeletonTile };
-      mapped = tmp9(tmp2(9773), obj9);
+      mapped = tmp9(tmp2(9775), obj9);
     }
     items4[1] = mapped;
     tmp8Result = tmp8(Stack, obj3);

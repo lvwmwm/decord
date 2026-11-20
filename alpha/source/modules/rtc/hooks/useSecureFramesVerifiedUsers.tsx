@@ -1,10 +1,10 @@
-// Module ID: 17389
-// Function ID: 17390
+// Module ID: 17216
+// Function ID: 17217
 // Name: useSecureFramesVerifiedUsers
 // Dependencies: [9571, 504, 2]
 // Exports: useSecureFramesVerifiedUserIds
 
-// Module 17389 (useSecureFramesVerifiedUsers)
+// Module 17216 (useSecureFramesVerifiedUsers)
 import get_initialized from "get initialized" /* 504 */;
 import VerifiedKeyStore from "VerifiedKeyStore" /* 9571 */;
 import size from "module_2" /* 2 */;

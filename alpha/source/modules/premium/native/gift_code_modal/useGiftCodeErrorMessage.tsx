@@ -1,13 +1,13 @@
-// Module ID: 11851
-// Function ID: 11852
+// Module ID: 11793
+// Function ID: 11794
 // Name: useGiftCodeErrorMessage
-// Dependencies: [32, 7971, 11843, 504, 11850, 1113, 11849, 6226, 2]
+// Dependencies: [32, 7970, 11785, 504, 11791, 1112, 6228, 2]
 // Exports: default
 
-// Module 11851 (useGiftCodeErrorMessage)
+// Module 11793 (useGiftCodeErrorMessage)
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7971 */;
-import GiftCodeStore from "GiftCodeStore" /* 11843 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7970 */;
+import GiftCodeStore from "GiftCodeStore" /* 11785 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -39,7 +39,7 @@ export default function useGiftCodeErrorMessage(arg0, id) {
     return getPurchase(skuId);
   });
   if (result) {
-    const tmpResult = require("useGiftSubscriptionAgreement");
+    const tmpResult = require("GiftSubscriptionCodeUtils");
     result = tmpResult.needsGiftSubscriptionAgreement(first);
   }
   let userId;

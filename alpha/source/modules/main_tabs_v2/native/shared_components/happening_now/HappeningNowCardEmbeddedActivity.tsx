@@ -1,22 +1,22 @@
-// Module ID: 17656
-// Function ID: 17657
+// Module ID: 17483
+// Function ID: 17484
 // Name: HappeningNowCardEmbeddedActivity
-// Dependencies: [32, 19, 17, 1388, 16754, 1072, 21, 4792, 575, 563, 17657, 6745, 1256, 7420, 12135, 2121, 17629, 1655, 1708, 5809, 1264, 17640, 16755, 7585, 5479, 17653, 2]
+// Dependencies: [32, 19, 17, 1386, 16578, 1071, 21, 4794, 575, 563, 17484, 6745, 1255, 7419, 12077, 2119, 17456, 1653, 1706, 5811, 1263, 17467, 16579, 7584, 5481, 17480, 2]
 // Exports: default
 
-// Module 17656 (HappeningNowCardEmbeddedActivity)
+// Module 17483 (HappeningNowCardEmbeddedActivity)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import asyncRequire from "asyncRequire" /* 2121 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7420 */;
+import Constants from "Constants" /* 1071 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import asyncRequire from "asyncRequire" /* 2119 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7419 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1388 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 16754 */;
+import UserStore from "UserStore" /* 1386 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 16578 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let user;
@@ -137,7 +137,7 @@ export default function HappeningNowCardEmbeddedActivity(guildId) {
     }
     items1 = [userId];
     track(ACTIVITY_CARD_CLICKED, obj);
-    const promise = asyncRequire(12135, tmp.paths);
+    const promise = asyncRequire(12077, tmp.paths);
     promise.then((result) => {
       if (null != channelId) {
         tmp(tmp2, true);

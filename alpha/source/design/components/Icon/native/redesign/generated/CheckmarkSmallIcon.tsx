@@ -1,14 +1,14 @@
-// Module ID: 7380
-// Function ID: 7381
+// Module ID: 7379
+// Function ID: 7380
 // Name: CheckmarkSmallIcon
-// Dependencies: [19, 21, 575, 5478, 7381, 2]
+// Dependencies: [19, 21, 575, 5480, 7380, 2]
 // Exports: CheckmarkSmallIcon
 
-// Module 7380 (CheckmarkSmallIcon)
+// Module 7379 (CheckmarkSmallIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5478 */;
-import AssetRegistry from "AssetRegistry" /* 7381 */;
+import BaseIconImage2 from "BaseIconImage" /* 5480 */;
+import AssetRegistry from "AssetRegistry" /* 7380 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

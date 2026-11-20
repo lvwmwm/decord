@@ -1,18 +1,18 @@
-// Module ID: 12219
-// Function ID: 12220
+// Module ID: 12161
+// Function ID: 12162
 // Name: ConjureSharedProjectCover
-// Dependencies: [19, 17, 21, 4792, 575, 5479, 12220, 5390, 7089, 1113, 4089, 2]
+// Dependencies: [19, 17, 21, 4794, 575, 5481, 12162, 5392, 7088, 1112, 4091, 2]
 // Exports: default
 
-// Module 12219 (ConjureSharedProjectCover)
+// Module 12161 (ConjureSharedProjectCover)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import components_Button_Button from "components/Button/Button" /* 5390 */;
-import FastImageDefault from "FastImage" /* 5479 */;
-import ConjureAppSheetIconDefault from "ConjureAppSheetIcon" /* 12220 */;
+import components_Button_Button from "components/Button/Button" /* 5392 */;
+import FastImageDefault from "FastImage" /* 5481 */;
+import ConjureAppSheetIconDefault from "ConjureAppSheetIcon" /* 12162 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -66,15 +66,15 @@ export default function ConjureSharedProjectCover(onPress) {
       let tmp6Result;
       const Button = components_Button_Button.Button;
       if ("launch" === action) {
-        tmp6Result = tmp6(tmp16(7089).PlayIcon, {});
+        tmp6Result = tmp6(tmp16(7088).PlayIcon, {});
       }
       const obj5 = { variant: "primary-overlay", size: "md", icon: tmp6Result, text: stringResult, loading: launching, onPress };
-      const intl = tmp16(1113).intl;
+      const intl = tmp16(1112).intl;
       const string = intl.string;
       if ("launch" === action) {
-        stringResult = string(tmp10(4089)["1cF7L4"]);
+        stringResult = string(tmp10(4091)["1cF7L4"]);
       } else {
-        stringResult = string(tmp16(1113).t["3xjX0U"]);
+        stringResult = string(tmp16(1112).t["3xjX0U"]);
       }
       tmp6Result2 = tmp6(Button, obj5);
     }

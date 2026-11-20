@@ -1,26 +1,26 @@
-// Module ID: 19242
-// Function ID: 19243
+// Module ID: 19061
+// Function ID: 19062
 // Name: ActivityPanelFocusedView
-// Dependencies: [19, 17, 4793, 4641, 4640, 5418, 19088, 1072, 11688, 10712, 21, 4792, 575, 1630, 504, 1496, 19233, 18282, 1655, 4853, 1708, 5002, 5393, 5799, 4713, 19235, 19243, 10609, 10721, 2]
+// Dependencies: [19, 17, 4795, 4643, 4642, 5420, 18907, 1071, 11630, 10654, 21, 4794, 575, 1628, 504, 1494, 19052, 18109, 1653, 4855, 1706, 5004, 5395, 5801, 4715, 19054, 19062, 10551, 10663, 2]
 // Exports: useBaseActivityPanelFocusedView
 
-// Module 19242 (ActivityPanelFocusedView)
+// Module 19061 (ActivityPanelFocusedView)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import Constants2 from "Constants" /* 10712 */;
-import EmbeddedActivityViewDefault from "EmbeddedActivityView" /* 10721 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11688 */;
-import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 19235 */;
+import Constants from "Constants" /* 1071 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
+import Constants2 from "Constants" /* 10654 */;
+import EmbeddedActivityViewDefault from "EmbeddedActivityView" /* 10663 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11630 */;
+import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 19054 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4793 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4640 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5418 */;
-import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 19088 */;
+import AccessibilityStore from "AccessibilityStore" /* 4795 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4642 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5420 */;
+import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 18907 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

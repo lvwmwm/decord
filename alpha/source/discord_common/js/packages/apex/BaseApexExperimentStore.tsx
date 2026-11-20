@@ -1,16 +1,16 @@
-// Module ID: 1247
-// Function ID: 1248
+// Module ID: 1246
+// Function ID: 1247
 // Name: BaseApexExperimentStore
-// Dependencies: [109, 32, 1083, 4, 1248, 1249, 1251, 504, 510, 2]
+// Dependencies: [109, 32, 1082, 4, 1247, 1248, 1250, 504, 510, 2]
 
-// Module 1247 (BaseApexExperimentStore)
+// Module 1246 (BaseApexExperimentStore)
 import logger_Logger from "logger/Logger" /* 4 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
-import Constants from "Constants" /* 1083 */;
-import _mod1248 from "module_1248" /* 1248 */;
-import ApexTypes from "ApexTypes" /* 1249 */;
-import _modDef1251 from "module_1251" /* 1251 */;
+import Constants from "Constants" /* 1082 */;
+import _mod1247 from "module_1247" /* 1247 */;
+import ApexTypes from "ApexTypes" /* 1248 */;
+import _modDef1250 from "module_1250" /* 1250 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
@@ -48,7 +48,7 @@ function _toPropertyKey(obj) {
 function getHash(arg0) {
   let tmp2 = closure_20[arg0];
   if (null == tmp2) {
-    obj = _modDef1251;
+    obj = _modDef1250;
     const v3Result = obj.v3(arg0);
     tmp[arg0] = v3Result;
     tmp2 = v3Result;
@@ -69,7 +69,7 @@ if (!tmp3) {
   tmp3 = tmp4;
 }
 if (!tmp3) {
-  const _module = _mod1248;
+  const _module = _mod1247;
 }
 let items = [ApexTypes.UnitType.User, ApexTypes.UnitType.Installation];
 let obj = { user: {}, guild: {}, installation: {} };
@@ -163,7 +163,7 @@ class BaseApexExperimentStore extends PersistedStore {
       for (const key10020 in buildOverrideExperiments) {
         let tmp9 = closure_20[key10020];
         if (null == tmp9) {
-          let obj2 = _modDef1251;
+          let obj2 = _modDef1250;
           let v3Result = obj2.v3(key10020);
           tmp12[key10020] = v3Result;
           tmp9 = v3Result;
@@ -323,7 +323,7 @@ class BaseApexExperimentStore extends PersistedStore {
     const merged = Object.assign(closure_11);
     let tmp3 = closure_20[experimentName];
     if (null == tmp3) {
-      const obj2 = _modDef1251;
+      const obj2 = _modDef1250;
       const v3Result = obj2.v3(experimentName);
       tmp2[experimentName] = v3Result;
       tmp3 = v3Result;
@@ -341,7 +341,7 @@ class BaseApexExperimentStore extends PersistedStore {
     const merged = Object.assign(closure_12);
     let tmp3 = closure_20[experimentName];
     if (null == tmp3) {
-      const obj2 = _modDef1251;
+      const obj2 = _modDef1250;
       const v3Result = obj2.v3(experimentName);
       tmp2[experimentName] = v3Result;
       tmp3 = v3Result;
@@ -424,7 +424,7 @@ class BaseApexExperimentStore extends PersistedStore {
   getServerAssignment(kind, id, name) {
     let tmp2 = closure_20[name];
     if (null == tmp2) {
-      obj = _modDef1251;
+      obj = _modDef1250;
       const v3Result = obj.v3(name);
       tmp[name] = v3Result;
       tmp2 = v3Result;
@@ -453,7 +453,7 @@ class BaseApexExperimentStore extends PersistedStore {
         let tmp3 = closure_20[arg2];
         const assignments = tmp10.assignments;
         if (null == tmp3) {
-          obj = _modDef1251;
+          obj = _modDef1250;
           const v3Result = obj.v3(arg2);
           tmp2[arg2] = v3Result;
           tmp3 = v3Result;
@@ -538,7 +538,7 @@ class BaseApexExperimentStore extends PersistedStore {
     const combined = "" + experimentName + "|" + revision + "|" + trackedVariantId + "|" + location + "|" + arg6 + "|1";
     let tmp3 = closure_20[combined];
     if (null == tmp3) {
-      obj = _modDef1251;
+      obj = _modDef1250;
       const v3Result = obj.v3(combined);
       tmp2[combined] = v3Result;
       tmp3 = v3Result;
@@ -730,7 +730,7 @@ class BaseApexExperimentStore extends PersistedStore {
   getHash(arg0) {
     let tmp2 = closure_20[arg0];
     if (null == tmp2) {
-      obj = _modDef1251;
+      obj = _modDef1250;
       const v3Result = obj.v3(arg0);
       tmp[arg0] = v3Result;
       tmp2 = v3Result;

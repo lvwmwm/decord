@@ -1,11 +1,11 @@
-// Module ID: 19850
-// Function ID: 19851
+// Module ID: 19668
+// Function ID: 19669
 // Name: GuildSettingsModalTieredExpressionSlots
-// Dependencies: [19, 1072, 21, 5808, 575, 12, 7229, 6926, 1113, 7576, 2]
+// Dependencies: [19, 1071, 21, 5810, 575, 12, 7228, 6925, 1112, 7575, 2]
 // Exports: default
 
-// Module 19850 (GuildSettingsModalTieredExpressionSlots)
-import Constants from "Constants" /* 1072 */;
+// Module 19668 (GuildSettingsModalTieredExpressionSlots)
+import Constants from "Constants" /* 1071 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

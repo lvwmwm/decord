@@ -1,17 +1,17 @@
-// Module ID: 15134
-// Function ID: 15135
+// Module ID: 15098
+// Function ID: 15099
 // Name: AILoader
-// Dependencies: [19, 17, 15135, 21, 4792, 1655, 5002, 15136, 4853, 2]
+// Dependencies: [19, 17, 15099, 21, 4794, 1653, 5004, 15100, 4855, 2]
 
-// Module 15134 (AILoader)
+// Module 15098 (AILoader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import timing_timing from "timing/timing" /* 5002 */;
-import AIGlyphText from "AIGlyphText" /* 15136 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import timing_timing from "timing/timing" /* 5004 */;
+import AIGlyphText from "AIGlyphText" /* 15100 */;
 import react from "react" /* 19 */;
-import AILoaderConstants from "AILoaderConstants" /* 15135 */;
-import createStyles from "createStyles" /* 4792 */;
+import AILoaderConstants from "AILoaderConstants" /* 15099 */;
+import createStyles from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap, set;
@@ -42,26 +42,26 @@ function Slot(index) {
   const stagger = index.stagger;
   const tmp = closure_13(size);
   const glyph = tmp;
-  let obj = index(1655);
+  let obj = index(1653);
   const sharedValue = obj.useSharedValue(0);
   let items = [cycle, index, sharedValue, stagger];
   const effect = cycle.useEffect(() => {
     const result = sharedValue.set(0);
     set = sharedValue.set;
-    const withDelay = _mod1655.withDelay;
+    const withDelay = _mod1653.withDelay;
     const result1 = index * stagger;
-    _mod1655;
-    const withRepeat = _mod1655.withRepeat;
-    _mod1655;
+    _mod1653;
+    const withRepeat = _mod1653.withRepeat;
+    _mod1653;
     let obj = timing_timing;
-    const obj2 = { duration: cycle, easing: _mod1655.Easing.linear };
+    const obj2 = { duration: cycle, easing: _mod1653.Easing.linear };
     const result2 = set(withDelay(result1, withRepeat(obj.withTiming(1, obj2, "animate-always"), -1)));
     return () => {
       const obj = index(dependencyMap[5]);
       return obj.cancelAnimation(sharedValue);
     };
   }, items);
-  let obj2 = index(1655);
+  let obj2 = index(1653);
   const items1 = [closure_14, trackStepAt, sharedValue, size];
   let c0;
   let c1;
@@ -82,7 +82,7 @@ function Slot(index) {
   AILoaderNativeTsx2.__initData = tmp5;
   const animatedStyle = obj2.useAnimatedStyle(AILoaderNativeTsx2);
   ({ style: animatedStyle, children: closure_7.map((children) => jsx(AIGlyphText.AIGlyphText, { size, color: dependencyMap, allowFontScaling: false, style: glyph.glyph, children }, children)) });
-  View = size(1655).View;
+  View = size(1653).View;
   return <stagger style={tmp.slot}>{null}</stagger>;
 }
 let View = react_native.View;
@@ -129,7 +129,7 @@ const memoResult = react.memo(function AILoader(size) {
   let num2;
   const style = size.style;
   const tmp = closure_13(num);
-  const reducedMotion = num2.useContext(num(4853).AccessibilityPreferencesContext).reducedMotion;
+  const reducedMotion = num2.useContext(num(4855).AccessibilityPreferencesContext).reducedMotion;
   dependencyMap = reducedMotion.enabled ? closure_8 : closure_5;
   num2 = 0;
   if (!reducedMotion.enabled) {

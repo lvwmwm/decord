@@ -1,29 +1,29 @@
-// Module ID: 18095
-// Function ID: 18096
+// Module ID: 17922
+// Function ID: 17923
 // Name: NotificationCenterForYou
-// Dependencies: [32, 19, 17, 6543, 6498, 1388, 6515, 18096, 1072, 9300, 6432, 21, 6516, 1503, 4968, 4617, 1496, 5453, 18097, 504, 18099, 17614, 6289, 11, 6517, 5507, 1092, 6298, 12, 1256, 18098, 18100, 5809, 1264, 18101, 18102, 2]
+// Dependencies: [32, 19, 17, 6545, 6500, 1386, 6517, 17923, 1071, 9300, 6434, 21, 6518, 1501, 4970, 4619, 1494, 5455, 17924, 504, 17926, 17441, 6291, 11, 6519, 5509, 1091, 6300, 12, 1255, 17925, 17927, 5811, 1263, 17928, 17929, 2]
 // Exports: NotificationCenterForYou
 
-// Module 18095 (NotificationCenterForYou)
+// Module 17922 (NotificationCenterForYou)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1072 */;
-import ConstantsIOS from "ConstantsIOS" /* 1092 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import parseURLDefault from "parseURL" /* 5507 */;
-import ReadStateConstants from "ReadStateConstants" /* 6432 */;
-import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 6516 */;
-import NotificationCenterUtils from "NotificationCenterUtils" /* 6517 */;
-import NotificationCenterItemsActions from "NotificationCenterItemsActions" /* 18098 */;
-import NotificationCenterStoreActions from "NotificationCenterStoreActions" /* 18100 */;
+import Constants from "Constants" /* 1071 */;
+import ConstantsIOS from "ConstantsIOS" /* 1091 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import parseURLDefault from "parseURL" /* 5509 */;
+import ReadStateConstants from "ReadStateConstants" /* 6434 */;
+import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 6518 */;
+import NotificationCenterUtils from "NotificationCenterUtils" /* 6519 */;
+import NotificationCenterItemsActions from "NotificationCenterItemsActions" /* 17925 */;
+import NotificationCenterStoreActions from "NotificationCenterStoreActions" /* 17927 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 6543 */;
-import ReadStateStore from "ReadStateStore" /* 6498 */;
-import UserStore from "UserStore" /* 1388 */;
-import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 6515 */;
-import NotificationCenterStore from "NotificationCenterStore" /* 18096 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6545 */;
+import ReadStateStore from "ReadStateStore" /* 6500 */;
+import UserStore from "UserStore" /* 1386 */;
+import NotificationCenterItemsStore from "NotificationCenterItemsStore" /* 6517 */;
+import NotificationCenterStore from "NotificationCenterStore" /* 17923 */;
 import MainTabsConstants from "MainTabsConstants" /* 9300 */;
 import size from "module_2" /* 2 */;
 
@@ -189,7 +189,7 @@ export const NotificationCenterForYou = (panelVariant) => {
     let arr7;
     let arr8;
     let ref2;
-    const f140604 = (id, id2) => {
+    const f138486 = (id, id2) => {
       const obj = arr8(items2[23]);
       return -1 * obj.compare(id.id, id2.id);
     };
@@ -287,9 +287,9 @@ export const NotificationCenterForYou = (panelVariant) => {
           current3.add(kind.id);
         }
       });
-      const sorted = items1.sort(f140604);
-      const sorted1 = items2.sort(f140604);
-      const sorted2 = items3.sort(f140604);
+      const sorted = items1.sort(f138486);
+      const sorted1 = items2.sort(f138486);
+      const sorted2 = items3.sort(f138486);
       let obj = currentNavigationRouteName(setting[28]);
       const tmp20 = memo(obj.partition(items1, (type) => {
         const tmp = type.type === id(items2[12]).NotificationCenterLocalItems.INCOMING_FRIEND_REQUESTS && type.acked;

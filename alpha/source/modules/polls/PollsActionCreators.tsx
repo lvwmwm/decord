@@ -1,25 +1,25 @@
-// Module ID: 12079
-// Function ID: 12080
+// Module ID: 12021
+// Function ID: 12022
 // Name: PollsActionCreators
-// Dependencies: [5, 4725, 8220, 502, 4641, 8196, 6410, 5843, 8348, 11841, 1072, 38, 5739, 1113, 6390, 6395, 12080, 12082, 5529, 12, 504, 572, 5374, 12091, 4799, 12085, 8131, 10393, 6228, 2]
+// Dependencies: [5, 4727, 8219, 502, 4643, 8195, 6412, 5845, 8347, 11783, 1071, 38, 5741, 1112, 6392, 6397, 12022, 12024, 5531, 12, 504, 572, 5376, 12033, 4801, 12027, 8130, 10335, 6230, 2]
 
-// Module 12079 (PollsActionCreators)
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5529 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5739 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6390 */;
-import JoinGuildRefusedError from "JoinGuildRefusedError" /* 6395 */;
-import DraftStore from "DraftStore" /* 8196 */;
-import PollInteractionUtilsAll from "PollInteractionUtils" /* 12080 */;
+// Module 12021 (PollsActionCreators)
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5531 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5741 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6392 */;
+import JoinGuildRefusedError from "JoinGuildRefusedError" /* 6397 */;
+import DraftStore from "DraftStore" /* 8195 */;
+import PollInteractionUtilsAll from "PollInteractionUtils" /* 12022 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LurkingStore from "LurkingStore" /* 4725 */;
-import ReferencedMessageStore from "ReferencedMessageStore" /* 8220 */;
+import LurkingStore from "LurkingStore" /* 4727 */;
+import ReferencedMessageStore from "ReferencedMessageStore" /* 8219 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 6410 */;
-import MessageStore from "MessageStore" /* 5843 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 8348 */;
-import PollsInteractionStore from "PollsInteractionStore" /* 11841 */;
-import Constants from "Constants" /* 1072 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 6412 */;
+import MessageStore from "MessageStore" /* 5845 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8347 */;
+import PollsInteractionStore from "PollsInteractionStore" /* 11783 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 let answerIds, attachmentsToUpload, closure_3, duration, importAll, importDefault, layout_type, scheduledTimestamp, selectedAnswerIds, set;
@@ -74,8 +74,8 @@ function showLurkingAlert(guildId) {
   obj = {
     title,
     body,
-    confirmText: intl.string(guildId(1113).t["9VLmlZ"]),
-    cancelText: intl2.string(guildId(1113).t["2m+Sqk"]),
+    confirmText: intl.string(guildId(1112).t["9VLmlZ"]),
+    cancelText: intl2.string(guildId(1112).t["2m+Sqk"]),
     onConfirm() {
       obj = GuildActionCreatorsDefault;
       const obj2 = { source: constants.POLL_ALERT };
@@ -85,8 +85,8 @@ function showLurkingAlert(guildId) {
   };
   const show = AlertActionCreatorsDefault.show;
   AlertActionCreatorsDefault;
-  intl = guildId(1113).intl;
-  intl2 = guildId(1113).intl;
+  intl = guildId(1112).intl;
+  intl2 = guildId(1112).intl;
   show(obj);
 }
 function handleShowVotesForAnswer(messageId) {
@@ -100,15 +100,15 @@ function handleShowVotesForAnswer(messageId) {
   if (null != channel) {
     if (LurkingStore.isLurking(channel.guild_id)) {
       const guild_id = channel.guild_id;
-      const intl = guild_id(1113).intl;
-      const stringResult = intl.string(guild_id(1113).t["7LpysO"]);
-      const intl2 = guild_id(1113).intl;
-      const stringResult1 = intl2.string(guild_id(1113).t["5sHHoy"]);
+      const intl = guild_id(1112).intl;
+      const stringResult = intl.string(guild_id(1112).t["7LpysO"]);
+      const intl2 = guild_id(1112).intl;
+      const stringResult1 = intl2.string(guild_id(1112).t["5sHHoy"]);
       let obj2 = {
         title: stringResult,
         body: stringResult1,
-        confirmText: intl3.string(guild_id(1113).t["9VLmlZ"]),
-        cancelText: intl4.string(guild_id(1113).t["2m+Sqk"]),
+        confirmText: intl3.string(guild_id(1112).t["9VLmlZ"]),
+        cancelText: intl4.string(guild_id(1112).t["2m+Sqk"]),
         onConfirm() {
               obj = GuildActionCreatorsDefault;
               const obj2 = { source: constants.POLL_ALERT };
@@ -118,8 +118,8 @@ function handleShowVotesForAnswer(messageId) {
       };
       const show = AlertActionCreatorsDefault.show;
       AlertActionCreatorsDefault;
-      intl3 = guild_id(1113).intl;
-      intl4 = guild_id(1113).intl;
+      intl3 = guild_id(1112).intl;
+      intl4 = guild_id(1112).intl;
       show(obj2);
     } else {
       const message = MessageStore.getMessage(channelId, messageId);
@@ -426,7 +426,7 @@ obj = function _handleClearPollVote() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -485,7 +485,7 @@ obj = function _handleClearPollVote() {
                 }
               }
               c4 = 3;
-              return { value: "HermesInternal", done: "+60" };
+              return { value: "HermesInternal", done: null };
             }
           } else if (arg0 === 1) {
             c4 = 3;
@@ -653,7 +653,7 @@ obj = function _createPoll() {
             let obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -786,7 +786,7 @@ obj = function _createPoll() {
                 duration = 0;
               }
               c6 = 3;
-              return { value: "HermesInternal", done: "+60" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp33) {
             closure_3 = tmp33;

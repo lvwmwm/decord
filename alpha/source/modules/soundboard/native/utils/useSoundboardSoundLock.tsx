@@ -1,19 +1,19 @@
-// Module ID: 18075
-// Function ID: 18076
+// Module ID: 17902
+// Function ID: 17903
 // Name: useSoundboardSoundLock
-// Dependencies: [19, 1388, 5842, 504, 10922, 2174, 8426, 8428, 5474, 1113, 9250, 2]
+// Dependencies: [19, 1386, 5844, 504, 10864, 2172, 8425, 8427, 5476, 1112, 9250, 2]
 // Exports: useSoundboardSoundLock
 
-// Module 18075 (useSoundboardSoundLock)
-import intl3 from "intl" /* 1113 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2174 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5474 */;
-import SoundboardConstants from "SoundboardConstants" /* 5842 */;
-import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 8426 */;
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 8428 */;
+// Module 17902 (useSoundboardSoundLock)
+import intl3 from "intl" /* 1112 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2172 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5476 */;
+import SoundboardConstants from "SoundboardConstants" /* 5844 */;
+import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 8425 */;
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 8427 */;
 import BoostGemIcon from "BoostGemIcon" /* 9250 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1388 */;
+import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -59,11 +59,11 @@ export function useSoundboardSoundLock(sound, channel) {
   if (!result) {
     let stringResult;
     if (tmp7) {
-      const intl2 = tmp(1113).intl;
-      stringResult = intl2.string(tmp(1113).t.BARTXV);
+      const intl2 = tmp(1112).intl;
+      stringResult = intl2.string(tmp(1112).t.BARTXV);
     } else if (!sound.available) {
-      let intl = tmp(1113).intl;
-      stringResult = intl.string(tmp(1113).t.MDOXJR);
+      let intl = tmp(1112).intl;
+      stringResult = intl.string(tmp(1112).t.MDOXJR);
     }
     lockedAccessibilityHint = stringResult;
   }

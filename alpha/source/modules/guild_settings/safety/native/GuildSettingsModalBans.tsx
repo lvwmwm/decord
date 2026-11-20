@@ -1,25 +1,25 @@
-// Module ID: 19935
-// Function ID: 19936
+// Module ID: 19755
+// Function ID: 19756
 // Name: GuildSettingsModalBans
-// Dependencies: [32, 19, 17, 4663, 4724, 1388, 7876, 1072, 21, 4792, 575, 504, 4617, 5356, 5522, 6556, 6390, 7875, 6926, 1187, 6939, 1113, 7426, 5473, 7431, 7071, 19936, 7308, 8067, 7313, 5366, 2]
+// Dependencies: [32, 19, 17, 4665, 4726, 1386, 7875, 1071, 21, 4794, 575, 504, 4619, 5358, 5524, 6558, 6392, 7874, 6925, 1186, 6938, 1112, 7425, 5475, 7430, 7070, 19756, 7307, 8066, 7312, 5368, 2]
 // Exports: default
 
-// Module 19935 (GuildSettingsModalBans)
+// Module 19755 (GuildSettingsModalBans)
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import intl4 from "intl" /* 1113 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6390 */;
-import fuzzysearchDefault from "fuzzysearch" /* 6556 */;
-import showSimpleActionSheet2 from "showSimpleActionSheet" /* 7431 */;
+import Constants from "Constants" /* 1071 */;
+import intl4 from "intl" /* 1112 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6392 */;
+import fuzzysearchDefault from "fuzzysearch" /* 6558 */;
+import showSimpleActionSheet2 from "showSimpleActionSheet" /* 7430 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore from "GuildStore" /* 4663 */;
-import PermissionStore from "PermissionStore" /* 4724 */;
-import UserStore from "UserStore" /* 1388 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 7876 */;
+import GuildStore from "GuildStore" /* 4665 */;
+import PermissionStore from "PermissionStore" /* 4726 */;
+import UserStore from "UserStore" /* 1386 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 7875 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let bans, bansVersion, props;

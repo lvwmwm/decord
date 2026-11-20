@@ -1,26 +1,26 @@
-// Module ID: 8433
-// Function ID: 8434
+// Module ID: 8432
+// Function ID: 8433
 // Name: StickersSpotIllustration
-// Dependencies: [19, 21, 8434, 8435, 8436, 7238, 5479, 2]
+// Dependencies: [19, 21, 8433, 8434, 8435, 7237, 5481, 2]
 // Exports: StickersSpotIllustration
 
-// Module 8433 (StickersSpotIllustration)
+// Module 8432 (StickersSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 7238 */;
+import react_native from "react-native" /* 7237 */;
+import _modDef8433 from "module_8433" /* 8433 */;
 import _modDef8434 from "module_8434" /* 8434 */;
 import _modDef8435 from "module_8435" /* 8435 */;
-import _modDef8436 from "module_8436" /* 8436 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef8434 };
+let obj2 = { uri: _modDef8433 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef8435 };
+let obj3 = { uri: _modDef8434 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef8436 };
-({ uri: _modDef8436 });
+obj[3] = { uri: _modDef8435 };
+({ uri: _modDef8435 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/StickersSpotIllustration.native.tsx");
 

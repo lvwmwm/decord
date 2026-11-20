@@ -1,13 +1,13 @@
-// Module ID: 8181
-// Function ID: 8182
+// Module ID: 8180
+// Function ID: 8181
 // Name: isSpam
-// Dependencies: [1388, 1072, 8182, 2]
+// Dependencies: [1386, 1071, 8181, 2]
 // Exports: isSpam, isSpamSupported, isSpammer
 
-// Module 8181 (isSpam)
-import AutomodMessageUtils from "AutomodMessageUtils" /* 8182 */;
-import UserStore from "UserStore" /* 1388 */;
-import Constants from "Constants" /* 1072 */;
+// Module 8180 (isSpam)
+import AutomodMessageUtils from "AutomodMessageUtils" /* 8181 */;
+import UserStore from "UserStore" /* 1386 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 let c3;

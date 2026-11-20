@@ -32,7 +32,7 @@ const _mod739 = tmp2(739);
 const DEFAULT_TRANSPORT_BUFFER_SIZE = tmp2(742);
 const _INTERNAL_captureLog = tmp2(744);
 const _INTERNAL_captureMetric = tmp2(749);
-const f80218 = (item) => {
+const f78960 = (item) => {
   if (Array.isArray(item)) {
     let num4;
     const first = item[0];
@@ -91,7 +91,7 @@ function estimateMetricSizeInBytes(name) {
     c0 = 0;
     const _Object = Object;
     const values = Object.values(attributes);
-    const item = values.forEach(f80218);
+    const item = values.forEach(f78960);
     num3 = c0;
   }
   return num + 8 + num3;
@@ -109,7 +109,7 @@ function estimateLogSizeInBytes(message) {
     closure_0 = 0;
     const _Object = Object;
     const values = Object.values(attributes);
-    const item = values.forEach(f80218);
+    const item = values.forEach(f78960);
     num3 = closure_0;
   }
   return num + num3;
@@ -126,12 +126,12 @@ class Client {
   constructor(_options) {
     let envelopeEndpointWithUrlEncodedAuth;
     let recordDroppedEvent;
-    const f80215 = () => {
+    const f78957 = () => {
       sum = 0;
       clearTimeout(closure_3);
       c5 = false;
     };
-    const f80216 = (arg0) => {
+    const f78958 = (arg0) => {
       sum = sum + closure_1(arg0);
       if (sum >= 800000) {
         closure_2(self);
@@ -146,7 +146,7 @@ class Client {
         }
       }
     };
-    const f80217 = () => {
+    const f78959 = () => {
       closure_2(self);
     };
     const self = this;
@@ -208,9 +208,9 @@ class Client {
       let c3;
       c4 = 0;
       c5 = false;
-      self.on("flushLogs", f80215);
-      self.on("afterCaptureLog", f80216);
-      self.on("flush", f80217);
+      self.on("flushLogs", f78957);
+      self.on("afterCaptureLog", f78958);
+      self.on("flush", f78959);
     }
     let flag2 = self._options.enableMetrics;
     if (flag2 == null) {
@@ -230,9 +230,9 @@ class Client {
       closure_3 = undefined;
       let sum = 0;
       c5 = false;
-      self.on("flushMetrics", f80215);
-      self.on("afterCaptureMetric", f80216);
-      self.on("flush", f80217);
+      self.on("flushMetrics", f78957);
+      self.on("afterCaptureMetric", f78958);
+      self.on("flush", f78959);
     }
   }
 }
@@ -646,7 +646,7 @@ _asyncToGenerator(async function(arg0) {
       } else if (arg0 === 2) {
         return { value, done: true };
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -807,7 +807,7 @@ React = _asyncToGenerator(async function(arg0) {
       } else if (arg0 === 2) {
         return { value, done: true };
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       try {
@@ -866,10 +866,10 @@ items[24] = {
 };
 items[25] = {
   key: "_prepareEvent",
-  value: function _prepareEvent(type, integrations, c1, setLastEventId) {
+  value: function _prepareEvent(type, integrations, clone, setLastEventId) {
     const self = this;
     dependencyMap = integrations;
-    _require = c1;
+    _require = clone;
     const options = this.getOptions();
     const keys = Object.keys(this._integrations);
     let tmp2 = !integrations.integrations;
@@ -893,7 +893,7 @@ items[25] = {
       setLastEventId(event_id);
     }
     let obj = require("applyClientOptions");
-    const prepareEventResult = obj.prepareEvent(options, type, integrations, c1, self, setLastEventId);
+    const prepareEventResult = obj.prepareEvent(options, type, integrations, clone, self, setLastEventId);
     return prepareEventResult.then((contexts) => {
       let obj2;
       let obj3;
@@ -901,11 +901,11 @@ items[25] = {
         return contexts;
       } else {
         self.emit("postprocessEvent", contexts, integrations);
-        const obj = { trace: obj2.getTraceContextFromScope(closure_0) };
+        const obj = { trace: obj2.getTraceContextFromScope(clone) };
         obj2 = _mod712;
         const merged = Object.assign(contexts.contexts);
         contexts.contexts = obj;
-        const obj4 = { dynamicSamplingContext: obj3.getDynamicSamplingContextFromScope(self, closure_0) };
+        const obj4 = { dynamicSamplingContext: obj3.getDynamicSamplingContextFromScope(self, clone) };
         obj3 = freezeDscOnSpan;
         const merged1 = Object.assign(contexts.sdkProcessingMetadata);
         contexts.sdkProcessingMetadata = obj4;

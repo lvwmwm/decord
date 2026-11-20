@@ -1,14 +1,14 @@
-// Module ID: 4852
-// Function ID: 4853
+// Module ID: 4854
+// Function ID: 4855
 // Name: ThemeActionCreators
-// Dependencies: [1194, 1195, 572, 1230, 2]
+// Dependencies: [1193, 1194, 572, 1229, 2]
 // Exports: clearSyncedClientThemes, clearThemeOverride, refreshTheme, setSameAsDeviceThemeEnabled, setSystemTheme, setSystemThemeIfNeeded, setThemeOverride, setUseSystemTheme, updateSyncedClientTheme, updateThemePreferences
 
-// Module 4852 (ThemeActionCreators)
+// Module 4854 (ThemeActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ThemeConstants from "ThemeConstants" /* 1195 */;
-import getSystemThemeDefault from "getSystemTheme" /* 1230 */;
-import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1194 */;
+import ThemeConstants from "ThemeConstants" /* 1194 */;
+import getSystemThemeDefault from "getSystemTheme" /* 1229 */;
+import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1193 */;
 import size from "module_2" /* 2 */;
 
 const SystemThemeState = ThemeConstants.SystemThemeState;

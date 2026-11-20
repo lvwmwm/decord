@@ -1,14 +1,14 @@
-// Module ID: 17137
-// Function ID: 17138
+// Module ID: 16961
+// Function ID: 16962
 // Name: LettersIcon
-// Dependencies: [19, 21, 575, 5478, 17138, 2]
+// Dependencies: [19, 21, 575, 5480, 16962, 2]
 // Exports: LettersIcon
 
-// Module 17137 (LettersIcon)
+// Module 16961 (LettersIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5478 */;
-import AssetRegistry from "AssetRegistry" /* 17138 */;
+import BaseIconImage2 from "BaseIconImage" /* 5480 */;
+import AssetRegistry from "AssetRegistry" /* 16962 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

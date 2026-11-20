@@ -1,24 +1,24 @@
 // Module ID: 6733
 // Function ID: 6734
 // Name: StorefrontUtils
-// Dependencies: [19, 2189, 1388, 6734, 1072, 1390, 12, 6735, 1360, 1406, 504, 6736, 6737, 2174, 6740, 2]
+// Dependencies: [19, 2187, 1386, 6734, 1071, 1388, 12, 6735, 1358, 1404, 504, 6736, 6737, 2172, 6740, 2]
 // Exports: getPromoCodeFromClaimResponse, isSlayerSkuAvailableOnThisPlatform, transformPriceSetAssignmentToStorefrontPurchaseType, transformStorefrontPricesServer, useFormatSKUPrice, useFormattedSKUPrice, useSKUOrbPrice
 
 // Module 6733 (StorefrontUtils)
 import _modDef12 from "module_12" /* 12 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1360 */;
-import PremiumConstants from "PremiumConstants" /* 1390 */;
-import FlagUtils from "FlagUtils" /* 1406 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2174 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1358 */;
+import PremiumConstants from "PremiumConstants" /* 1388 */;
+import FlagUtils from "FlagUtils" /* 1404 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2172 */;
 import StorefrontTypes from "StorefrontTypes" /* 6735 */;
 import SlayerStorefrontPriceUtils from "SlayerStorefrontPriceUtils" /* 6736 */;
 import PriceUtils from "PriceUtils" /* 6737 */;
 import OrbCheckoutUtils from "OrbCheckoutUtils" /* 6740 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2189 */;
-import UserStore from "UserStore" /* 1388 */;
+import LocaleStore from "LocaleStore" /* 2187 */;
+import UserStore from "UserStore" /* 1386 */;
 import SKUPricesStore from "SKUPricesStore" /* 6734 */;
-import Constants from "Constants" /* 1072 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -29,7 +29,7 @@ let c9;
 let metroImportAll;
 let metroImportDefault;
 let unpackModuleId;
-const f90914 = () => locale.locale;
+const f89289 = () => locale.locale;
 function useSKUPrice(sku) {
   sku = sku.sku;
   let DEFAULT = sku.priceSetAssignmentPurchaseType;
@@ -96,7 +96,7 @@ function useSKUPrice(sku) {
         return { userPrice: found, pricesForPurchaseType: tmp12, purchaseType: SELF_PURCHASE, storeHasPrice: true };
       }
     }
-    return { userPrice: "r", pricesForPurchaseType: "ip", purchaseType: SELF_PURCHASE, storeHasPrice: null != stateFromStores };
+    return { userPrice: "r", pricesForPurchaseType: "HermesInternal", purchaseType: SELF_PURCHASE, storeHasPrice: null != stateFromStores };
   }, items1);
   userPrice = memo.userPrice;
   pricesForPurchaseType = memo.pricesForPurchaseType;
@@ -279,12 +279,12 @@ export function transformStorefrontPricesServer(storefront_pricing) {
       let obj = _modDef12;
       return obj.mapValues(arg0, (user_price) => {
         let obj2;
-        const f90906 = (currency) => ({ currency: currency.currency, amount: currency.amount });
+        const f89281 = (currency) => ({ currency: currency.currency, amount: currency.amount });
         let obj = {
-          userPrice: user_price.map(f90906),
+          userPrice: user_price.map(f89281),
           prices: obj2.mapValues(user_price.prices, (arg0) => {
             const obj = closure_1_1(closure_1_2[6]);
-            return obj.mapValues(arg0, (arr) => arr.map(f90906));
+            return obj.mapValues(arg0, (arr) => arr.map(f89281));
           })
         };
         user_price = user_price.user_price;
@@ -359,7 +359,7 @@ export function useFormattedSKUPrice(priceSetAssignmentPurchaseType) {
   _require = tmp2;
   const items = [LocaleStore];
   const obj = require("get initialized");
-  const stateFromStores = obj.useStateFromStores(items, f90914);
+  const stateFromStores = obj.useStateFromStores(items, f89289);
   const items1 = [tmp2, stateFromStores];
   return react.useMemo(() => formatSKUPrice(closure_0, stateFromStores), items1);
 }
@@ -368,7 +368,7 @@ export function useFormatSKUPrice(arg0) {
   _require = arg0;
   const items = [LocaleStore];
   const obj = require("get initialized");
-  const stateFromStores = obj.useStateFromStores(items, f90914);
+  const stateFromStores = obj.useStateFromStores(items, f89289);
   const items1 = [arg0, stateFromStores];
   return react.useMemo(() => formatSKUPrice(closure_0, stateFromStores), items1);
 }
@@ -439,7 +439,7 @@ export function useSKUOrbPrice(sku) {
         return { userPrice: found, pricesForPurchaseType: tmp12, purchaseType: SELF_PURCHASE, storeHasPrice: true };
       }
     }
-    return { userPrice: "r", pricesForPurchaseType: "ip", purchaseType: SELF_PURCHASE, storeHasPrice: null != stateFromStores };
+    return { userPrice: "r", pricesForPurchaseType: "HermesInternal", purchaseType: SELF_PURCHASE, storeHasPrice: null != stateFromStores };
   }, items1);
   let userPrice = memo.userPrice;
   storeHasPrice = memo.storeHasPrice;

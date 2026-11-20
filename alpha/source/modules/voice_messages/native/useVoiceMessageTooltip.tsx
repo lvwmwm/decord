@@ -1,13 +1,13 @@
-// Module ID: 13031
-// Function ID: 13032
+// Module ID: 13001
+// Function ID: 13002
 // Name: useVoiceMessageTooltip
-// Dependencies: [19, 12733, 13032, 6296, 1113, 8822, 2]
+// Dependencies: [19, 12703, 13002, 6298, 1112, 8822, 2]
 // Exports: default
 
-// Module 13031 (useVoiceMessageTooltip)
-import intl2 from "intl" /* 1113 */;
+// Module 13001 (useVoiceMessageTooltip)
+import intl2 from "intl" /* 1112 */;
 import react from "react" /* 19 */;
-import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 12733 */;
+import VoiceMessagesUIStore from "VoiceMessagesUIStore" /* 12703 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -23,8 +23,8 @@ export default function useVoiceMessageTooltip() {
   let visible;
   let obj = react;
   const ref = react.useRef(null);
-  targetBottomInset = targetBottomInset(13032)().targetBottomInset;
-  let tmp3 = targetBottomInset(6296)(targetBottomInset);
+  targetBottomInset = targetBottomInset(13002)().targetBottomInset;
+  let tmp3 = targetBottomInset(6298)(targetBottomInset);
   if (tmp3 == null) {
     tmp3 = targetBottomInset;
   }

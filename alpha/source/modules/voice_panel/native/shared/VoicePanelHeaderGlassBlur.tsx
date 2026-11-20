@@ -1,24 +1,24 @@
-// Module ID: 13046
-// Function ID: 13047
+// Module ID: 13016
+// Function ID: 13017
 // Name: VoicePanelHeaderGlassBlur
-// Dependencies: [19, 17, 21, 4792, 1380, 1655, 5393, 5394, 5001, 5359, 4799, 7205, 2]
+// Dependencies: [19, 17, 21, 4794, 1378, 1653, 5395, 5396, 5003, 5361, 4801, 7204, 2]
 
-// Module 13046 (VoicePanelHeaderGlassBlur)
+// Module 13016 (VoicePanelHeaderGlassBlur)
 import react_native from "react-native" /* 17 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import shared from "shared" /* 4799 */;
-import useThemeDefault from "useTheme" /* 5001 */;
-import VisualEffectViewAnimatedDefault from "VisualEffectViewAnimated" /* 5359 */;
-import spring_spring from "spring/spring" /* 5393 */;
-import springPresets from "springPresets" /* 5394 */;
-import NativeViewDefault from "NativeView" /* 7205 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import shared from "shared" /* 4801 */;
+import useThemeDefault from "useTheme" /* 5003 */;
+import VisualEffectViewAnimatedDefault from "VisualEffectViewAnimated" /* 5361 */;
+import spring_spring from "spring/spring" /* 5395 */;
+import springPresets from "springPresets" /* 5396 */;
+import NativeViewDefault from "NativeView" /* 7204 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
+import createStyles from "createStyles" /* 4794 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
 import size from "module_2" /* 2 */;
 
-const _modDef1655 = _mod1655;
+const _modDef1653 = _mod1653;
 let num, num2, opacity;
 
 let closure_4;
@@ -47,7 +47,7 @@ const memoResult = react.memo(function HeaderGlassBlur(shown) {
   shown = shown.shown;
   ({ blurStyle, style } = shown);
   let tmp = closure_6();
-  let obj = _mod1655;
+  let obj = _mod1653;
   const items = [closure_8, shown, closure_7];
   let c0;
   let c1;
@@ -72,8 +72,8 @@ const memoResult = react.memo(function HeaderGlassBlur(shown) {
   VoicePanelHeaderGlassBlurTsx1.__initData = tmp4;
   const animatedStyle = obj.useAnimatedStyle(VoicePanelHeaderGlassBlurTsx1);
   const items2 = [closure_9, , , ];
-  const useAnimatedProps = _mod1655.useAnimatedProps;
-  _mod1655;
+  const useAnimatedProps = _mod1653.useAnimatedProps;
+  _mod1653;
   items2[1] = spring_spring.withSpring;
   items2[2] = shown;
   items2[3] = springPresets.Reanimated3DefaultSpringConfig;
@@ -100,7 +100,7 @@ const memoResult = react.memo(function HeaderGlassBlur(shown) {
   const tmp15 = useThemeDefault();
   const obj2 = { style: items4, children: items6 };
   items4 = [tmp.blur, style, animatedStyle];
-  const View = _modDef1655.View;
+  const View = _modDef1653.View;
   let str = "light";
   const tmp18 = VisualEffectViewAnimatedDefault;
   const tmp2Result3 = shared;

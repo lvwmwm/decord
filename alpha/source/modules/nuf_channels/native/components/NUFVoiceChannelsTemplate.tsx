@@ -1,16 +1,16 @@
-// Module ID: 14774
-// Function ID: 14775
+// Module ID: 14733
+// Function ID: 14734
 // Name: NUFVoiceChannelsTemplate
-// Dependencies: [19, 21, 14775, 1113, 14776, 14767, 2020, 6408, 2]
+// Dependencies: [19, 21, 14734, 1112, 14735, 14726, 2018, 6410, 2]
 // Exports: default
 
-// Module 14774 (NUFVoiceChannelsTemplate)
+// Module 14733 (NUFVoiceChannelsTemplate)
 import Fragment from "Fragment" /* 21 */;
-import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 2020 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6408 */;
-import NUFChannelsManagerDefault from "NUFChannelsManager" /* 14767 */;
-import NUFTemplateDefault from "NUFTemplate" /* 14775 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14776 */;
+import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 2018 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6410 */;
+import NUFChannelsManagerDefault from "NUFChannelsManager" /* 14726 */;
+import NUFTemplateDefault from "NUFTemplate" /* 14734 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14735 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -20,10 +20,10 @@ let result = size.fileFinishedImporting("modules/nuf_channels/native/components/
 export default function NUFVoiceChannelsTemplate(channel) {
   channel = channel.channel;
   NUFTemplateDefault;
-  const intl = channel(1113).intl;
-  const intl2 = channel(1113).intl;
-  const intl3 = channel(1113).intl;
-  return <tmp title={intl.string(channel(1113).t.w5HAll)} description={intl2.string(channel(1113).t.Ww4hhq)} imageSrc={AssetRegistryDefault} CTALabel={intl3.string(channel(1113).t.eIi3Om)} onCTAPress={function onCTAPress() {
+  const intl = channel(1112).intl;
+  const intl2 = channel(1112).intl;
+  const intl3 = channel(1112).intl;
+  return <tmp title={intl.string(channel(1112).t.w5HAll)} description={intl2.string(channel(1112).t.Ww4hhq)} imageSrc={AssetRegistryDefault} CTALabel={intl3.string(channel(1112).t.eIi3Om)} onCTAPress={function onCTAPress() {
     const obj = NUFChannelsManagerDefault;
     const result = obj.handleVoiceChannelsOnboard();
     const obj2 = KeyboardManagerUtilsAll;

@@ -1,29 +1,29 @@
-// Module ID: 15577
-// Function ID: 15578
+// Module ID: 15541
+// Function ID: 15542
 // Name: VoiceNotificationManager
-// Dependencies: [32, 17, 4640, 2165, 6279, 4641, 2133, 5533, 4734, 1388, 1072, 575, 8335, 8333, 11000, 13430, 5408, 1113, 15578, 2123, 2]
+// Dependencies: [32, 17, 4642, 2163, 6281, 4643, 2131, 5535, 4736, 1386, 1071, 575, 8334, 8332, 10942, 13400, 5410, 1112, 15542, 2121, 2]
 
-// Module 15577 (VoiceNotificationManager)
+// Module 15541 (VoiceNotificationManager)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import intl5 from "intl" /* 1113 */;
-import useChannelName from "useChannelName" /* 5408 */;
-import ForegroundServiceManagerDefault from "ForegroundServiceManager" /* 8333 */;
-import ForegroundServiceManagerTypes from "ForegroundServiceManagerTypes" /* 8335 */;
-import RTCConnectionUtilsDefault from "RTCConnectionUtils" /* 11000 */;
-import getChannelCopyForEmbeddedActivityDefault from "getChannelCopyForEmbeddedActivity" /* 13430 */;
-import AndroidCallWifiLockExperiment from "AndroidCallWifiLockExperiment" /* 15578 */;
+import Constants from "Constants" /* 1071 */;
+import intl5 from "intl" /* 1112 */;
+import useChannelName from "useChannelName" /* 5410 */;
+import ForegroundServiceManagerDefault from "ForegroundServiceManager" /* 8332 */;
+import ForegroundServiceManagerTypes from "ForegroundServiceManagerTypes" /* 8334 */;
+import RTCConnectionUtilsDefault from "RTCConnectionUtils" /* 10942 */;
+import getChannelCopyForEmbeddedActivityDefault from "getChannelCopyForEmbeddedActivity" /* 13400 */;
+import AndroidCallWifiLockExperiment from "AndroidCallWifiLockExperiment" /* 15542 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4640 */;
-import ApplicationStore from "ApplicationStore" /* 2165 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6279 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import MediaEngineStore from "MediaEngineStore" /* 2133 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5533 */;
-import RelationshipStore from "RelationshipStore" /* 4734 */;
-import UserStore from "UserStore" /* 1388 */;
-import LifecycleManager from "LifecycleManager" /* 2123 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4642 */;
+import ApplicationStore from "ApplicationStore" /* 2163 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6281 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import MediaEngineStore from "MediaEngineStore" /* 2131 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5535 */;
+import RelationshipStore from "RelationshipStore" /* 4736 */;
+import UserStore from "UserStore" /* 1386 */;
+import LifecycleManager from "LifecycleManager" /* 2121 */;
 import size from "module_2" /* 2 */;
 
 function handleVoiceStateChange() {
@@ -69,7 +69,7 @@ class VoiceNotificationManager {
     let createAction;
     obj = Object.create(new.target.prototype);
     obj.voiceServiceHandlerId = 9000;
-    obj.state = { channelId: "s", connectionState: "content", selfMute: false, deafened: true, isPushToTalk: "/assets/images/platforms", embeddedActivity: 256, isStreaming: 256 };
+    obj.state = { channelId: "s", connectionState: "context", selfMute: false, deafened: "shouldActivateOnStart", isPushToTalk: null, embeddedActivity: "\u{1F1F2}\u{1F1F3}", isStreaming: 6 };
     obj.handleVoiceStateChange = handleVoiceStateChange;
     obj.handleMediaEngineStateChange = function handleMediaEngineStateChange() {
       const tmp = MediaEngineStore.isSelfMute() || MediaEngineStore.isSelfMutedTemporarily();
@@ -204,16 +204,16 @@ class VoiceNotificationManager {
           }
           items[1] = createAction2(channel, "ToggleSelfMute", stringResult);
           const createAction3 = obj.createAction;
-          const intl4 = tmp24(1113).intl;
+          const intl4 = tmp24(1112).intl;
           const string2 = intl4.string;
-          const t2 = tmp24(1113).t;
+          const t2 = tmp24(1112).t;
           if (deafened) {
             string2Result = string2(t2["2US872"]);
           } else {
             string2Result = string2(t2.wjcRFX);
           }
           items[2] = createAction3(channel, "ToggleDeafen", string2Result);
-          ServiceNotificationType = tmp24(8335).ServiceNotificationType;
+          ServiceNotificationType = tmp24(8334).ServiceNotificationType;
           tmp24Result = AndroidCallWifiLockExperiment;
           const tmp16Result2 = ForegroundServiceManagerDefault;
           tmp16Result2.updateServiceHandler(obj.voiceServiceHandlerId, obj5);
@@ -244,7 +244,7 @@ class VoiceNotificationManager {
 const prototype = VoiceNotificationManager.prototype;
 let obj = Object.create(VoiceNotificationManager.prototype);
 obj.voiceServiceHandlerId = 9000;
-obj.state = { channelId: "s", connectionState: "content", selfMute: false, deafened: true, isPushToTalk: "/assets/images/platforms", embeddedActivity: 256, isStreaming: 256 };
+obj.state = { channelId: "s", connectionState: "context", selfMute: false, deafened: "shouldActivateOnStart", isPushToTalk: null, embeddedActivity: "\u{1F1F2}\u{1F1F3}", isStreaming: 6 };
 obj.handleVoiceStateChange = handleVoiceStateChange;
 obj.handleMediaEngineStateChange = function handleMediaEngineStateChange() {
   const tmp = MediaEngineStore.isSelfMute() || MediaEngineStore.isSelfMutedTemporarily();
@@ -379,16 +379,16 @@ obj.handleUpdate = function handleUpdate(connectionState) {
       }
       items[1] = createAction2(channel, "ToggleSelfMute", stringResult);
       const createAction3 = obj.createAction;
-      const intl4 = tmp24(1113).intl;
+      const intl4 = tmp24(1112).intl;
       const string2 = intl4.string;
-      const t2 = tmp24(1113).t;
+      const t2 = tmp24(1112).t;
       if (deafened) {
         string2Result = string2(t2["2US872"]);
       } else {
         string2Result = string2(t2.wjcRFX);
       }
       items[2] = createAction3(channel, "ToggleDeafen", string2Result);
-      ServiceNotificationType = tmp24(8335).ServiceNotificationType;
+      ServiceNotificationType = tmp24(8334).ServiceNotificationType;
       tmp24Result = AndroidCallWifiLockExperiment;
       const tmp16Result2 = ForegroundServiceManagerDefault;
       tmp16Result2.updateServiceHandler(obj.voiceServiceHandlerId, obj5);

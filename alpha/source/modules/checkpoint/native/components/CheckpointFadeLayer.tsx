@@ -1,23 +1,23 @@
-// Module ID: 12451
-// Function ID: 12452
+// Module ID: 12421
+// Function ID: 12422
 // Name: CheckpointFadeLayer
-// Dependencies: [32, 19, 4793, 21, 1655, 504, 6296, 7273, 12414, 5002, 2]
+// Dependencies: [32, 19, 4795, 21, 1653, 504, 6298, 7272, 12384, 5004, 2]
 // Exports: default
 
-// Module 12451 (CheckpointFadeLayer)
+// Module 12421 (CheckpointFadeLayer)
 import Fragment from "Fragment" /* 21 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import timing_timing from "timing/timing" /* 5002 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import timing_timing from "timing/timing" /* 5004 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4793 */;
+import AccessibilityStore from "AccessibilityStore" /* 4795 */;
 import size from "module_2" /* 2 */;
 
 let set, set2, tmp5, tmp6;
 
 const jsx = Fragment.jsx;
-const Easing = _mod1655.Easing;
-let closure_7 = Easing.inOut(_mod1655.Easing.quad);
+const Easing = _mod1653.Easing;
+let closure_7 = Easing.inOut(_mod1653.Easing.quad);
 let closure_8 = { code: "(function CheckpointFadeLayerTsx1(finished){let[visible,runOnJS,handleEnterComplete,handleExitComplete]=this.__closure;if(finished!==true)return;if(visible)runOnJS(handleEnterComplete)();else runOnJS(handleExitComplete)();})" };
 let closure_9 = { code: "(function CheckpointFadeLayerTsx2(){let[opacity,hiddenScale,scale]=this.__closure;return{opacity:opacity.get(),transform:hiddenScale===1?undefined:[{scale:scale.get()}]};})" };
 let result = size.fileFinishedImporting("modules/checkpoint/native/components/CheckpointFadeLayer.tsx");
@@ -71,7 +71,7 @@ export default function CheckpointFadeLayer(visible) {
   let obj = visible(504);
   let items = [AccessibilityStore];
   const stateFromStores = obj.useStateFromStores(items, () => AccessibilityStore.useReducedMotion);
-  const tmp4 = visible(1655);
+  const tmp4 = visible(1653);
   let num2 = 0;
   const useSharedValue = tmp4.useSharedValue;
   if (visible) {
@@ -79,8 +79,8 @@ export default function CheckpointFadeLayer(visible) {
   }
   sharedValue = useSharedValue(num2);
   let num3 = 1;
-  const useSharedValue2 = tmp(1655).useSharedValue;
-  const tmpResult = tmp(1655);
+  const useSharedValue2 = tmp(1653).useSharedValue;
+  const tmpResult = tmp(1653);
   if (!visible) {
     num3 = num;
   }
@@ -92,17 +92,17 @@ export default function CheckpointFadeLayer(visible) {
   const tmp10 = keepMounted(num.useState(visible), 2);
   first1 = tmp10[0];
   closure_12 = tmp10[1];
-  const tmpResult3 = tmp(6296);
+  const tmpResult3 = tmp(6298);
   let currentWhen = tmpResult3.useCurrentWhen({ value: children, shouldUpdate: visible });
   let tmp13 = enter;
-  closure_13 = enter(7273)(() => {
+  closure_13 = enter(7272)(() => {
     closure_10(false);
     if (AccessibilityStore != null) {
       AccessibilityStore();
     }
   });
   closure_14 = num.useCallback(() => closure_12(true), []);
-  context = num.useContext(enter(12414));
+  context = num.useContext(enter(12384));
   const tmp15 = keepMounted(num.useState(null), 2);
   first2 = tmp15[0];
   closure_17 = tmp15[1];
@@ -185,14 +185,14 @@ export default function CheckpointFadeLayer(visible) {
         }
         const obj = { duration: tmp11.duration, easing };
         set = sharedValue.set;
-        const withDelay = _mod1655.withDelay;
-        _mod1655;
+        const withDelay = _mod1653.withDelay;
+        _mod1653;
         let num2 = 0;
         const withTiming = timing_timing.withTiming;
         if (visible) {
           num2 = 1;
         }
-        const items = [closure_8, tmp2, _mod1655.runOnJS, closure_14, closure_13];
+        const items = [closure_8, tmp2, _mod1653.runOnJS, closure_14, closure_13];
         let c0;
         let c1;
         let c2;
@@ -222,8 +222,8 @@ export default function CheckpointFadeLayer(visible) {
         let num4 = 1;
         if (1 !== num) {
           set2 = sharedValue2.set;
-          const withDelay2 = _mod1655.withDelay;
-          _mod1655;
+          const withDelay2 = _mod1653.withDelay;
+          _mod1653;
           const withTiming2 = timing_timing.withTiming;
           timing_timing;
           if (!visible) {
@@ -245,7 +245,7 @@ export default function CheckpointFadeLayer(visible) {
       }
     }
   }, items3);
-  tmp(1655);
+  tmp(1653);
   const items4 = [first, sharedValue, num, sharedValue2];
   let c0;
   let c1;
@@ -273,7 +273,7 @@ export default function CheckpointFadeLayer(visible) {
     const obj3 = { style: items6, pointerEvents: str, accessibilityElementsHidden: !visible, importantForAccessibility: str2, children: tmp29(Provider, obj4) };
     items6 = [style, tmp27];
     str = "none";
-    const View = tmp13(1655).View;
+    const View = tmp13(1653).View;
     if (visible) {
       str = "auto";
     }
@@ -282,7 +282,7 @@ export default function CheckpointFadeLayer(visible) {
       str2 = "auto";
     }
     obj4 = { value: callback, children: currentWhen };
-    Provider = tmp13(12414).Provider;
+    Provider = tmp13(12384).Provider;
     if (visible) {
       currentWhen = children;
     }

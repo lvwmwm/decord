@@ -1,27 +1,27 @@
-// Module ID: 16623
-// Function ID: 16624
+// Module ID: 16446
+// Function ID: 16447
 // Name: QuestDockContentExpanded
-// Dependencies: [19, 17, 6437, 16529, 21, 4792, 16530, 11709, 1655, 16528, 5393, 2]
+// Dependencies: [19, 17, 6439, 16352, 21, 4794, 16353, 11651, 1653, 16351, 5395, 2]
 
-// Module 16623 (QuestDockContentExpanded)
+// Module 16446 (QuestDockContentExpanded)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import spring_spring from "spring/spring" /* 5393 */;
-import QuestConstants from "QuestConstants" /* 6437 */;
-import useSafeAreaInsetsSharedValueDefault from "useSafeAreaInsetsSharedValue" /* 11709 */;
-import QuestDockUtils from "QuestDockUtils" /* 16528 */;
-import QuestDockConstants from "QuestDockConstants" /* 16529 */;
-import QuestDockGestureContext from "QuestDockGestureContext" /* 16530 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import spring_spring from "spring/spring" /* 5395 */;
+import QuestConstants from "QuestConstants" /* 6439 */;
+import useSafeAreaInsetsSharedValueDefault from "useSafeAreaInsetsSharedValue" /* 11651 */;
+import QuestDockUtils from "QuestDockUtils" /* 16351 */;
+import QuestDockConstants from "QuestDockConstants" /* 16352 */;
+import QuestDockGestureContext from "QuestDockGestureContext" /* 16353 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let maxHeight, num, obj1, obj3, tmp2, tmp3, width, width2, width3;
 
 let obj2;
 let tmp4;
-const _modDef1655 = tmp4(1655);
+const _modDef1653 = tmp4(1653);
 const StyleSheet = react_native.StyleSheet;
 const QuestDockMode = QuestConstants.QuestDockMode;
 let closure_5 = QuestDockConstants.QUEST_DOCK_MODE_CHANGE_PHYSICS;
@@ -57,7 +57,7 @@ const memoResult = react.memo(function QuestDockContentExpanded(arg0) {
   const context = react.useContext(QuestDockGestureContext.QuestDockGestureContext);
   ({ activeQuestDockMode, questDockWrapperSpecs, windowDimensions } = context);
   const tmp5 = useSafeAreaInsetsSharedValueDefault();
-  let tmp6 = _mod1655;
+  let tmp6 = _mod1653;
   let items = [constants, expandedHeightMode, , , , , , , , , , ];
   const useAnimatedStyle = tmp6.useAnimatedStyle;
   items[2] = QuestDockUtils.getQuestDockExpandedHeightLimits;
@@ -120,7 +120,7 @@ const memoResult = react.memo(function QuestDockContentExpanded(arg0) {
   QuestDockContentExpandedTsx1.__initData = tmp7;
   const animatedStyle = useAnimatedStyle(QuestDockContentExpandedTsx1);
   const items2 = [tmp.wrapper, animatedStyle];
-  return jsx(_modDef1655.View, { pointerEvents: "box-none", style: items2, children });
+  return jsx(_modDef1653.View, { pointerEvents: "box-none", style: items2, children });
 });
 let size = size_mod;
 const result = size.fileFinishedImporting("modules/quests/native/QuestDock/QuestDockContentExpanded.tsx");

@@ -1,15 +1,15 @@
-// Module ID: 16485
-// Function ID: 16486
+// Module ID: 16301
+// Function ID: 16302
 // Name: OrbsArcadeRewardUtils
-// Dependencies: [16479, 1113, 2]
+// Dependencies: [16302, 1112, 2]
 // Exports: getOrbsArcadeClaimableRewards, getOrbsArcadeFocusedReward, getOrbsArcadeRewardScoreLabel, hasOrbsArcadeUnclaimedRewards, hasOrbsArcadeUnlockedRewards, isOrbsArcadeEnrollmentOver, mustClaimOrbsArcadeRewardsToPlay
 
-// Module 16485 (OrbsArcadeRewardUtils)
-import intl3 from "intl" /* 1113 */;
-import OrbsArcadeTypes from "OrbsArcadeTypes" /* 16479 */;
+// Module 16301 (OrbsArcadeRewardUtils)
+import intl3 from "intl" /* 1112 */;
+import OrbsArcadeTypes from "OrbsArcadeTypes" /* 16302 */;
 import size from "module_2" /* 2 */;
 
-const f111300 = (pendingAt) => null != pendingAt.pendingAt && null == pendingAt.claimedAt;
+const f109432 = (pendingAt) => null != pendingAt.pendingAt && null == pendingAt.claimedAt;
 function getOrbsArcadeRewardStatus(reward, gameState, ownedRewardSkuIds) {
   let tmp;
   if (gameState != null) {
@@ -93,7 +93,7 @@ export function hasOrbsArcadeUnclaimedRewards(gameState) {
     rewardGrants = {};
   }
   const values2 = values(rewardGrants);
-  return values2.some(f111300);
+  return values2.some(f109432);
 }
 export function isOrbsArcadeEnrollmentOver(gameStateForGame) {
   let tmp = null != gameStateForGame.expiresAt;
@@ -113,7 +113,7 @@ export function isOrbsArcadeEnrollmentOver(gameStateForGame) {
       rewardGrants = {};
     }
     const values2 = values(rewardGrants);
-    tmp = !values2.some(f111300);
+    tmp = !values2.some(f109432);
   }
   return tmp;
 }
@@ -135,7 +135,7 @@ export function mustClaimOrbsArcadeRewardsToPlay(gameStateForGame) {
       rewardGrants = {};
     }
     const values2 = values(rewardGrants);
-    someResult = values2.some(f111300);
+    someResult = values2.some(f109432);
   }
   return someResult;
 }
@@ -171,9 +171,9 @@ export function getOrbsArcadeRewardScoreLabel(reward, orbsArcadeRewardStatus, ga
       const intl = intl3.intl;
       const formatToPlainString = intl.formatToPlainString;
       if (orbsArcadeRewardStatus === OrbsArcadeTypes.OrbsArcadeRewardStatus.LOCKED) {
-        Q8Vv0m = tmp13(1113).t.XKyikw;
+        Q8Vv0m = tmp13(1112).t.XKyikw;
       } else {
-        Q8Vv0m = tmp13(1113).t.Q8Vv0m;
+        Q8Vv0m = tmp13(1112).t.Q8Vv0m;
       }
       const obj = { score: reward.scoreTarget };
       formatToPlainStringResult = formatToPlainString(Q8Vv0m, obj);

@@ -1,12 +1,12 @@
 // Module ID: 9302
 // Function ID: 9303
 // Name: ProfileUpdateRequestUtils
-// Dependencies: [7291, 9303, 2114, 2]
+// Dependencies: [7290, 9303, 2112, 2]
 // Exports: getAccountUpdateForUpdateRequest, getGuildMemberChangesForUpdateRequest, getPrimaryGuildChangesForUpdateRequest, getProfileChangesForUpdateRequest
 
 // Module 9302 (ProfileUpdateRequestUtils)
-import CollectiblesItemType from "CollectiblesItemType" /* 2114 */;
-import ProfilePendingImageTypes from "ProfilePendingImageTypes" /* 7291 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 2112 */;
+import ProfilePendingImageTypes from "ProfilePendingImageTypes" /* 7290 */;
 import getCurrentUserProfileDefault from "getCurrentUserProfile" /* 9303 */;
 import size from "module_2" /* 2 */;
 

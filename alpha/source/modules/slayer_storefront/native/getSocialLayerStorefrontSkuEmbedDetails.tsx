@@ -1,12 +1,12 @@
-// Module ID: 14222
-// Function ID: 14223
+// Module ID: 14192
+// Function ID: 14193
 // Name: getSocialLayerStorefrontSkuEmbedDetails
-// Dependencies: [17, 1113, 6728, 9485, 2]
+// Dependencies: [17, 1112, 6728, 9485, 2]
 // Exports: getSocialLayerStorefrontSkuEmbedDetails
 
-// Module 14222 (getSocialLayerStorefrontSkuEmbedDetails)
+// Module 14192 (getSocialLayerStorefrontSkuEmbedDetails)
 import react_native from "react-native" /* 17 */;
-import intl3 from "intl" /* 1113 */;
+import intl3 from "intl" /* 1112 */;
 import SlayerStorefrontUtils from "SlayerStorefrontUtils" /* 6728 */;
 import AssetRegistryDefault from "AssetRegistry" /* 9485 */;
 import size from "module_2" /* 2 */;
@@ -46,7 +46,7 @@ export function getSocialLayerStorefrontSkuEmbedDetails(value, application) {
   }
   formatted = undefined;
   if (value.exclusive) {
-    const intl2 = tmp(1113).intl;
+    const intl2 = tmp(1112).intl;
     const str4 = intl2.string(intl3.t.RiDMFz);
     formatted = str4.toUpperCase();
   }

@@ -1,19 +1,19 @@
-// Module ID: 8704
-// Function ID: 8705
+// Module ID: 8744
+// Function ID: 8745
 // Name: UserOfferActionCreators
-// Dependencies: [5, 8689, 8684, 8687, 1390, 1072, 1380, 572, 1256, 1285, 8705, 1242, 4824, 4625, 4622, 2]
+// Dependencies: [5, 8729, 8724, 8727, 1388, 1071, 1378, 572, 1255, 1284, 8745, 1241, 4826, 4627, 4624, 2]
 // Exports: acknowledgeUserOffer, fetchChurnDiscountOffer, fetchExistingChurnDiscountOffer, fetchUserOffer, triggerUserOffer
 
-// Module 8704 (UserOfferActionCreators)
+// Module 8744 (UserOfferActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import HTTPUtils from "HTTPUtils" /* 1285 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
-import PremiumConstants from "PremiumConstants" /* 1390 */;
+import HTTPUtils from "HTTPUtils" /* 1284 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
+import PremiumConstants from "PremiumConstants" /* 1388 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserDiscountOfferRecord from "UserDiscountOfferRecord" /* 8689 */;
-import UserTrialOfferRecord from "UserTrialOfferRecord" /* 8684 */;
-import UserOfferStore from "UserOfferStore" /* 8687 */;
-import Constants from "Constants" /* 1072 */;
+import UserDiscountOfferRecord from "UserDiscountOfferRecord" /* 8729 */;
+import UserTrialOfferRecord from "UserTrialOfferRecord" /* 8724 */;
+import UserOfferStore from "UserOfferStore" /* 8727 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -58,7 +58,7 @@ let obj = function _fetchUserOffer() {
         } else if (arg0 === 2) {
           return { value, done: true };
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c11;
@@ -90,7 +90,7 @@ let obj = function _fetchUserOffer() {
               }
               obj6 = closure_2;
               if (closure_2 === undefined) {
-                obj6 = { offerId: "Array", paymentGatewayOverride: "Path" };
+                obj6 = { offerId: "Array", paymentGatewayOverride: "analyticsLocations" };
               }
               offerId = undefined;
               paymentGatewayOverride = undefined;
@@ -422,7 +422,7 @@ export function triggerUserOffer(triggerType, trigger_location_stack, fn) {
     }
     const _JSON = JSON;
     const obj5 = { payment_gateway: GOOGLE, trigger_type: triggerType, trigger_location_stack, trigger_metadata: JSON.stringify(tmp6), trigger_uptime_app: obj.getUptimeForTrigger() };
-    const HTTP = tmp7(1285).HTTP;
+    const HTTP = tmp7(1284).HTTP;
     const request = { url: constants.USER_OFFER_TRIGGER, body: obj5, rejectWithError: true };
     const postResult = HTTP.post(request);
     postResult.then((body) => {

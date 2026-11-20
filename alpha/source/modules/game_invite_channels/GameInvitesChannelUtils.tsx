@@ -1,22 +1,22 @@
-// Module ID: 12800
-// Function ID: 12801
+// Module ID: 12770
+// Function ID: 12771
 // Name: GameInvitesChannelUtils
-// Dependencies: [109, 19, 4641, 1072, 4648, 8387, 7631, 504, 11185, 11611, 38, 8933, 6538, 12286, 5531, 7942, 6551, 2]
+// Dependencies: [109, 19, 4643, 1071, 4650, 8386, 7630, 504, 11127, 11553, 38, 8933, 6540, 12258, 5533, 7941, 6553, 2]
 // Exports: canInviteToActivity, deriveThreadName, maxedAppliedForumPostTags, useFirstMessage, useGameInviteVoiceChatState, useGameInvitesActiveAndArchivedThreads, useGameInvitesChannelOfficialApplication, useIsGameInvitePostVoiceEnabled, useIsGameInvitesPost, useSubscribeToGameInvitePostAuthors
 
-// Module 12800 (GameInvitesChannelUtils)
+// Module 12770 (GameInvitesChannelUtils)
 import react from "react" /* 19 */;
 import _modDef38 from "module_38" /* 38 */;
-import ChannelConstants from "ChannelConstants" /* 4648 */;
-import ActivityTypes from "ActivityTypes" /* 5531 */;
-import getThreadAutoArchiveTimeOnceDefault from "getThreadAutoArchiveTimeOnce" /* 6551 */;
-import sanitizeThreadNameDefault from "sanitizeThreadName" /* 7631 */;
-import hasFlagDefault from "hasFlag" /* 7942 */;
-import ForumConstants from "ForumConstants" /* 8387 */;
-import ForumPostDataLoader from "ForumPostDataLoader" /* 11611 */;
+import ChannelConstants from "ChannelConstants" /* 4650 */;
+import ActivityTypes from "ActivityTypes" /* 5533 */;
+import getThreadAutoArchiveTimeOnceDefault from "getThreadAutoArchiveTimeOnce" /* 6553 */;
+import sanitizeThreadNameDefault from "sanitizeThreadName" /* 7630 */;
+import hasFlagDefault from "hasFlag" /* 7941 */;
+import ForumConstants from "ForumConstants" /* 8386 */;
+import ForumPostDataLoader from "ForumPostDataLoader" /* 11553 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
-import Constants from "Constants" /* 1072 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

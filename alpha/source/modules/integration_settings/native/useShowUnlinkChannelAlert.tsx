@@ -1,13 +1,13 @@
-// Module ID: 13759
-// Function ID: 13760
+// Module ID: 13728
+// Function ID: 13729
 // Name: useShowUnlinkChannelAlert
-// Dependencies: [5, 19, 11189, 5740, 1113, 5811, 2]
+// Dependencies: [5, 19, 11131, 5742, 1112, 5813, 2]
 // Exports: default
 
-// Module 13759 (useShowUnlinkChannelAlert)
-import intl5 from "intl" /* 1113 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5740 */;
-import AlertDefault from "Alert" /* 5811 */;
+// Module 13728 (useShowUnlinkChannelAlert)
+import intl5 from "intl" /* 1112 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5742 */;
+import AlertDefault from "Alert" /* 5813 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -35,7 +35,7 @@ export default function useShowUnlinkChannelAlert(arg0, applicationName, arg2) {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c3;
@@ -81,7 +81,7 @@ export default function useShowUnlinkChannelAlert(arg0, applicationName, arg2) {
             c3 = 0;
           }
           c4 = 3;
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp21) {
         closure_2 = tmp21;

@@ -1,13 +1,13 @@
-// Module ID: 7271
-// Function ID: 7272
+// Module ID: 7270
+// Function ID: 7271
 // Name: PhoneOrEmailInput
-// Dependencies: [32, 19, 21, 7272, 7273, 1113, 7102, 2]
+// Dependencies: [32, 19, 21, 7271, 7272, 1112, 7101, 2]
 // Exports: default
 
-// Module 7271 (PhoneOrEmailInput)
+// Module 7270 (PhoneOrEmailInput)
 import Fragment from "Fragment" /* 21 */;
-import intl2 from "intl" /* 1113 */;
-import PhoneOrEmailUtils from "PhoneOrEmailUtils" /* 7272 */;
+import intl2 from "intl" /* 1112 */;
+import PhoneOrEmailUtils from "PhoneOrEmailUtils" /* 7271 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;

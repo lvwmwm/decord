@@ -1,7 +1,7 @@
 // Module ID: 9198
 // Function ID: 9199
 // Name: acomRetry
-// Dependencies: [5, 502, 9194, 559, 1480, 4636, 2]
+// Dependencies: [5, 502, 9194, 559, 1478, 4638, 2]
 // Exports: retryACOMRequest
 
 // Module 9198 (acomRetry)
@@ -56,7 +56,7 @@ let obj = function _retryACOMRequest() {
         const obj2 = { value, done: true };
         return obj2;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c4;

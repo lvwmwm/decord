@@ -53,7 +53,7 @@ let obj = function _load() {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c2;
@@ -112,7 +112,7 @@ let obj = function _load() {
             }
           }
           c4 = 3;
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp17) {
           if (0 === c2) {
             c4 = 3;

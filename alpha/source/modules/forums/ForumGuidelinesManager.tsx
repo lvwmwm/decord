@@ -1,11 +1,11 @@
-// Module ID: 11205
-// Function ID: 11206
+// Module ID: 11147
+// Function ID: 11148
 // Name: ForumGuidelinesManager
-// Dependencies: [7365, 510, 2]
+// Dependencies: [7364, 510, 2]
 
-// Module 11205 (ForumGuidelinesManager)
+// Module 11147 (ForumGuidelinesManager)
 import Storage2 from "Storage" /* 510 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7365 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7364 */;
 import size from "module_2" /* 2 */;
 
 let set;

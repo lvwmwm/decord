@@ -1,20 +1,20 @@
-// Module ID: 19417
-// Function ID: 19418
+// Module ID: 19237
+// Function ID: 19238
 // Name: VoicePanelRaiseHandButton
-// Dependencies: [19, 4641, 21, 19399, 10854, 10860, 10862, 19400, 1113, 11687, 504, 2]
+// Dependencies: [19, 4643, 21, 19219, 10796, 10802, 10804, 19220, 1112, 11629, 504, 2]
 // Exports: default
 
-// Module 19417 (VoicePanelRaiseHandButton)
+// Module 19237 (VoicePanelRaiseHandButton)
 import Fragment from "Fragment" /* 21 */;
-import useRaiseHandControlDefault from "useRaiseHandControl" /* 10854 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11687 */;
-import VoicePanelStyles from "VoicePanelStyles" /* 19399 */;
+import useRaiseHandControlDefault from "useRaiseHandControl" /* 10796 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11629 */;
+import VoicePanelStyles from "VoicePanelStyles" /* 19219 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4641 */;
+import ChannelStore from "ChannelStore" /* 4643 */;
 import size from "module_2" /* 2 */;
 
 let tmp4;
-const VoicePanelAnimatedButtonWrapperDefault = tmp4(19400);
+const VoicePanelAnimatedButtonWrapperDefault = tmp4(19220);
 function RaiseHandButtonInner(arg0) {
   let channel;
   let disabled;
@@ -29,9 +29,9 @@ function RaiseHandButtonInner(arg0) {
   const tmp5 = useRaiseHandControlDefault(channel);
   ({ hasRequestedToSpeak, disabled, handlePress } = tmp5);
   if (tmp5.shouldAgeVerifyToSpeak) {
-    let HandRequestSpeakIcon = tmp(10860).HandRequestDenyIcon;
+    let HandRequestSpeakIcon = tmp(10802).HandRequestDenyIcon;
   } else {
-    HandRequestSpeakIcon = tmp(10862).HandRequestSpeakIcon;
+    HandRequestSpeakIcon = tmp(10804).HandRequestSpeakIcon;
   }
   let color = voicePanelButtonStyles.iconFill.color;
   if (disabled) {
@@ -40,9 +40,9 @@ function RaiseHandButtonInner(arg0) {
     color = voicePanelButtonStyles.iconFillSelected.color;
   }
   VoicePanelAnimatedButtonWrapperDefault;
-  const intl = tmp(1113).intl;
+  const intl = tmp(1112).intl;
   const string = intl.string;
-  const t = tmp(1113).t;
+  const t = tmp(1112).t;
   if (hasRequestedToSpeak) {
     stringResult = string(t.GCimTk);
   } else {

@@ -1,25 +1,25 @@
-// Module ID: 12307
-// Function ID: 12308
+// Module ID: 12277
+// Function ID: 12278
 // Name: GuildRaidResolveActionSheet
-// Dependencies: [5, 32, 19, 17, 1072, 6383, 21, 4792, 575, 1113, 8192, 5006, 5529, 12267, 6388, 7434, 6957, 5383, 7590, 1187, 5390, 2]
+// Dependencies: [5, 32, 19, 17, 1071, 6385, 21, 4794, 575, 1112, 8191, 5008, 5531, 12239, 6390, 7433, 6956, 5385, 7589, 1186, 5392, 2]
 // Exports: default
 
-// Module 12307 (GuildRaidResolveActionSheet)
+// Module 12277 (GuildRaidResolveActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import intl9 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import components_Button_Button from "components/Button/Button" /* 5390 */;
-import Constants2 from "Constants" /* 6383 */;
-import KeyboardAwareViewDefault from "KeyboardAwareView" /* 6957 */;
-import ActionSheet2 from "ActionSheet" /* 7434 */;
-import AutomodFeedback from "AutomodFeedback" /* 8192 */;
+import Constants from "Constants" /* 1071 */;
+import intl9 from "intl" /* 1112 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import components_Button_Button from "components/Button/Button" /* 5392 */;
+import Constants2 from "Constants" /* 6385 */;
+import KeyboardAwareViewDefault from "KeyboardAwareView" /* 6956 */;
+import ActionSheet2 from "ActionSheet" /* 7433 */;
+import AutomodFeedback from "AutomodFeedback" /* 8191 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let closure_2, dependencyMap, raid_alert_id;
@@ -93,7 +93,7 @@ export default function GuildRaidResolveActionSheet(arg0) {
           const obj2 = { value, done: true };
           return obj2;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         let c3;
@@ -152,7 +152,7 @@ export default function GuildRaidResolveActionSheet(arg0) {
             closure_128_8(false);
           }
           c4 = 3;
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         } catch (tmp41) {
           closure_2 = tmp41;
           if (0 === c3) {
@@ -223,7 +223,7 @@ export default function GuildRaidResolveActionSheet(arg0) {
       leading: handleTextInputChange(Checkbox, obj3),
       label: text
     };
-    const FormRow = require("module_7590").FormRow;
+    const FormRow = require("module_7589").FormRow;
     obj3 = { selected: _undefined.includes(value) };
     Checkbox = require("native").Checkbox;
     items = [handleTextInputChange(FormRow, obj2), ];

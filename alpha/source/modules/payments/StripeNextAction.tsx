@@ -1,7 +1,7 @@
 // Module ID: 9452
 // Function ID: 9453
 // Name: StripeNextAction
-// Dependencies: [5, 9451, 4605, 2]
+// Dependencies: [5, 9451, 4607, 2]
 // Exports: reopenStripeNextAction
 
 // Module 9452 (StripeNextAction)
@@ -107,7 +107,7 @@ obj = function _reopenStripeNextAction() {
         const obj3 = { value, done: true };
         return obj3;
       } else {
-        return { value: "HermesInternal", done: "+60" };
+        return { value: "HermesInternal", done: null };
       }
     } else {
       let c5;
@@ -153,7 +153,7 @@ obj = function _reopenStripeNextAction() {
             c5 = 0;
           }
           c7 = 3;
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } catch (tmp25) {
         closure_4 = tmp25;

@@ -1,15 +1,15 @@
-// Module ID: 20170
-// Function ID: 20171
+// Module ID: 19990
+// Function ID: 19991
 // Name: AVErrorStreamSoundshareFailed
-// Dependencies: [6279, 6321, 1072, 5722, 20162, 6280, 2]
+// Dependencies: [6281, 6323, 1071, 5724, 19982, 6282, 2]
 
-// Module 20170 (AVErrorStreamSoundshareFailed)
-import Constants from "Constants" /* 1072 */;
-import AVError from "AVError" /* 5722 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6280 */;
-import AVErrorContext from "AVErrorContext" /* 20162 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6279 */;
-import HookErrorStore from "HookErrorStore" /* 6321 */;
+// Module 19990 (AVErrorStreamSoundshareFailed)
+import Constants from "Constants" /* 1071 */;
+import AVError from "AVError" /* 5724 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6282 */;
+import AVErrorContext from "AVErrorContext" /* 19982 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6281 */;
+import HookErrorStore from "HookErrorStore" /* 6323 */;
 import size from "module_2" /* 2 */;
 
 const MediaEngineHookTypes = Constants.MediaEngineHookTypes;

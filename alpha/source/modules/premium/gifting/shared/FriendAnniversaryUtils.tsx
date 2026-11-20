@@ -1,11 +1,11 @@
-// Module ID: 8719
-// Function ID: 8720
+// Module ID: 8759
+// Function ID: 8760
 // Name: FriendAnniversaryUtils
-// Dependencies: [2169, 2]
+// Dependencies: [2167, 2]
 // Exports: categorizeFriendAnniversariesByAffinity, isFriendAnniversary, pruneTimestampMap, yearsSince
 
-// Module 8719 (FriendAnniversaryUtils)
-import _modDef2169 from "module_2169" /* 2169 */;
+// Module 8759 (FriendAnniversaryUtils)
+import _modDef2167 from "module_2167" /* 2167 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/gifting/shared/FriendAnniversaryUtils.tsx");
@@ -24,10 +24,10 @@ export function isFriendAnniversary(date) {
     let tmp5 = date1;
     let setFullYearResult = date1.setFullYear(fullYear + tmp2);
     let tmp7 = importDefault;
-    let obj4 = _modDef2169(date1);
+    let obj4 = _modDef2167(date1);
     if (!obj4.isSame(date, "day")) {
       let _Math = Math;
-      let obj5 = tmp7(2169)(date);
+      let obj5 = tmp7(2167)(date);
       if (abs(obj5.diff(tmp5, "days")) <= 7) {
         obj2.return();
         let flag = true;
@@ -39,7 +39,7 @@ export function isFriendAnniversary(date) {
   return false;
 }
 export function yearsSince(friendsSince) {
-  const obj = _modDef2169();
+  const obj = _modDef2167();
   return round(obj.diff(friendsSince, "months") / 12);
 }
 export function categorizeFriendAnniversariesByAffinity(arr, fn, flag) {

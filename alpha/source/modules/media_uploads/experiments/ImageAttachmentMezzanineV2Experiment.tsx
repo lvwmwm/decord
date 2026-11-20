@@ -1,11 +1,11 @@
-// Module ID: 8381
-// Function ID: 8382
+// Module ID: 8380
+// Function ID: 8381
 // Name: ImageAttachmentMezzanineV2Experiment
-// Dependencies: [1452, 2]
+// Dependencies: [1450, 2]
 // Exports: getImageAttachmentMezzanineV2Config
 
-// Module 8381 (ImageAttachmentMezzanineV2Experiment)
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+// Module 8380 (ImageAttachmentMezzanineV2Experiment)
+import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2025-09-image-attachment-mezzanine-v2", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true, maxFileSizeBytes: 524288 }, 2: { enabled: true, maxFileSizeBytes: 262144 } } };

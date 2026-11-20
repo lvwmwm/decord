@@ -1,16 +1,16 @@
-// Module ID: 12818
-// Function ID: 12819
+// Module ID: 12788
+// Function ID: 12789
 // Name: useActivityShelfData
-// Dependencies: [19, 1388, 5434, 4640, 504, 6745, 1255, 5436, 5443, 1380, 10456, 2]
+// Dependencies: [19, 1386, 5436, 4642, 504, 6745, 1254, 5438, 5445, 1378, 10398, 2]
 // Exports: useActivityShelfData
 
-// Module 12818 (useActivityShelfData)
-import GlobalUtils from "GlobalUtils" /* 1255 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5436 */;
+// Module 12788 (useActivityShelfData)
+import GlobalUtils from "GlobalUtils" /* 1254 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5438 */;
 import react from "react" /* 19 */;
-import UserStore_mod from "UserStore" /* 1388 */;
-import TestModeStore from "TestModeStore" /* 5434 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4640 */;
+import UserStore_mod from "UserStore" /* 1386 */;
+import TestModeStore from "TestModeStore" /* 5436 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4642 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

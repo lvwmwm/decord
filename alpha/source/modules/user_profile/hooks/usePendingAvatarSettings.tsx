@@ -1,14 +1,14 @@
 // Module ID: 8787
 // Function ID: 8788
 // Name: usePendingAvatarSettings
-// Dependencies: [19, 8013, 8788, 563, 8789, 8012, 8790, 2]
+// Dependencies: [19, 8012, 8788, 563, 8789, 8011, 8790, 2]
 // Exports: default
 
 // Module 8787 (usePendingAvatarSettings)
 import react from "react" /* 19 */;
-import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8012 */;
+import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8011 */;
 import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8789 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8013 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8012 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;

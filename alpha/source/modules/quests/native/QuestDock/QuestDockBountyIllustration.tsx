@@ -1,23 +1,23 @@
-// Module ID: 16629
-// Function ID: 16630
+// Module ID: 16452
+// Function ID: 16453
 // Name: QuestDockBountyIllustration
-// Dependencies: [19, 17, 4793, 6437, 16529, 21, 4792, 16630, 16526, 504, 5479, 16631, 4853, 9845, 2]
+// Dependencies: [19, 17, 4795, 6439, 16352, 21, 4794, 16453, 16349, 504, 5481, 16454, 4855, 9847, 2]
 
-// Module 16629 (QuestDockBountyIllustration)
+// Module 16452 (QuestDockBountyIllustration)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
-import native from "native" /* 4853 */;
-import FastImageDefault from "FastImage" /* 5479 */;
-import QuestConstants from "QuestConstants" /* 6437 */;
-import BountiesMobileQuestBarExperiment2 from "BountiesMobileQuestBarExperiment" /* 9845 */;
-import QuestDockHooks from "QuestDockHooks" /* 16526 */;
-import useIsQuestDockContentVisibleDefault from "useIsQuestDockContentVisible" /* 16630 */;
-import _modDef16631 from "module_16631" /* 16631 */;
+import native from "native" /* 4855 */;
+import FastImageDefault from "FastImage" /* 5481 */;
+import QuestConstants from "QuestConstants" /* 6439 */;
+import BountiesMobileQuestBarExperiment2 from "BountiesMobileQuestBarExperiment" /* 9847 */;
+import QuestDockHooks from "QuestDockHooks" /* 16349 */;
+import useIsQuestDockContentVisibleDefault from "useIsQuestDockContentVisible" /* 16453 */;
+import _modDef16454 from "module_16454" /* 16454 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4793 */;
-import QuestDockConstants from "QuestDockConstants" /* 16529 */;
-import createStyles from "createStyles" /* 4792 */;
+import AccessibilityStore from "AccessibilityStore" /* 4795 */;
+import QuestDockConstants from "QuestDockConstants" /* 16352 */;
+import createStyles from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let current;
@@ -97,7 +97,7 @@ function QuestDock3DOrbsIllustration() {
   const obj2 = QuestDockHooks;
   let tmp6 = tmp5 && !obj2.useIsQuestDockExpanded();
   const obj3 = { source: obj4, style: tmp.fill, resizeMode: "contain", enableAnimation: !stateFromStores, paused: !tmp6, accessible: false };
-  obj4 = { uri: _modDef16631 };
+  obj4 = { uri: _modDef16454 };
   const tmp4Result = FastImageDefault;
   const tmp7 = jsx;
   if (tmp6) {

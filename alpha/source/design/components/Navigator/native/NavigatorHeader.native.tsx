@@ -1,26 +1,26 @@
-// Module ID: 6976
-// Function ID: 6977
+// Module ID: 6975
+// Function ID: 6976
 // Name: NavigatorHeader
-// Dependencies: [5, 19, 17, 1072, 21, 4792, 575, 5383, 5398, 6977, 6980, 1503, 6982, 1113, 6983, 7032, 1380, 1630, 5346, 2]
+// Dependencies: [5, 19, 17, 1071, 21, 4794, 575, 5385, 5400, 6976, 6979, 1501, 6981, 1112, 6982, 7031, 1378, 1628, 5348, 2]
 // Exports: FauxHeader, HeaderSubmittingIndicator, NavigatorHeader, getHeaderBackButton, getHeaderCloseButton, getHeaderConditionalBackButton, getHeaderNoTitle, getHeaderTextButton, renderBackImage, useNavigatorHeaderSize
 
-// Module 6976 (NavigatorHeader)
+// Module 6975 (NavigatorHeader)
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import NavigatorConstants from "NavigatorConstants" /* 5346 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import useFontScale from "useFontScale" /* 5398 */;
-import HeaderDebugOverlayDefault from "HeaderDebugOverlay" /* 6977 */;
-import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 6980 */;
-import _mod6983 from "module_6983" /* 6983 */;
-import XSmallIcon from "XSmallIcon" /* 7032 */;
+import Constants from "Constants" /* 1071 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
+import NavigatorConstants from "NavigatorConstants" /* 5348 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import useFontScale from "useFontScale" /* 5400 */;
+import HeaderDebugOverlayDefault from "HeaderDebugOverlay" /* 6976 */;
+import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 6979 */;
+import _mod6982 from "module_6982" /* 6982 */;
+import XSmallIcon from "XSmallIcon" /* 7031 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -80,7 +80,7 @@ function CloseButton(onPress) {
 function CustomHeaderBackButton(onPress) {
   onPress = onPress.onPress;
   const merged = Object.assign(onPress, Object.assign({ onPress: 0 }));
-  const obj = onPress(6982);
+  const obj = onPress(6981);
   obj.useNavigatorBackPressHandler(() => {
     if (null != onPress) {
       tmp();
@@ -94,7 +94,7 @@ function CustomHeaderBackButton(onPress) {
       return closure_1_6(HeaderBackImage, {});
     }
   };
-  const HeaderBackButton = onPress(6983).HeaderBackButton;
+  const HeaderBackButton = onPress(6982).HeaderBackButton;
   const merged1 = Object.assign(merged);
   return closure_6(HeaderBackButton, obj2);
 }
@@ -115,7 +115,7 @@ function HeaderTextButton(text) {
     },
     accessibilityLabel: tmp5
   };
-  const HeaderBackButton = _mod6983.HeaderBackButton;
+  const HeaderBackButton = _mod6982.HeaderBackButton;
   const merged2 = Object.assign(merged);
   tmp5 = undefined;
   const obj3 = PlatformUtils;
@@ -190,7 +190,7 @@ export function NavigatorHeader(subtitle) {
   }
   if (tmp9Result) {
     const obj4 = { lineClamp: 1, allowFontScaling: false, style: tmp.navigatorHeaderSubtitle, variant: subtitleVariant, color: "text-subtle", children: subtitle };
-    tmp9Result = tmp9(tmp4(5383).Text, obj4);
+    tmp9Result = tmp9(tmp4(5385).Text, obj4);
   }
   items1[1] = tmp9Result;
   items1[2] = tmp3;
@@ -225,7 +225,7 @@ export function getHeaderConditionalBackButton(callback1) {
             const obj2 = { value, done: true };
             return obj2;
           } else {
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } else {
           try {
@@ -258,7 +258,7 @@ export function getHeaderConditionalBackButton(callback1) {
                 }
               }
               c2 = 3;
-              return { value: "HermesInternal", done: "+60" };
+              return { value: "HermesInternal", done: null };
             }
           } catch (tmp9) {
             c2 = 3;

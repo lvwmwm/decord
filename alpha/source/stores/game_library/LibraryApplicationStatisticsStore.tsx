@@ -1,12 +1,12 @@
-// Module ID: 14478
-// Function ID: 14479
+// Module ID: 14446
+// Function ID: 14447
 // Name: LibraryApplicationStatisticsStore
-// Dependencies: [1072, 504, 572, 2]
+// Dependencies: [1071, 504, 572, 2]
 
-// Module 14478 (LibraryApplicationStatisticsStore)
+// Module 14446 (LibraryApplicationStatisticsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import Constants from "Constants" /* 1072 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 let closure_1;

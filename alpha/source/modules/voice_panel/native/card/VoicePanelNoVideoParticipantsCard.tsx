@@ -1,17 +1,17 @@
-// Module ID: 19333
-// Function ID: 19334
+// Module ID: 19153
+// Function ID: 19154
 // Name: VoicePanelNoVideoParticipantsCard
-// Dependencies: [19, 17, 21, 4792, 575, 11687, 5528, 7205, 5383, 1113, 2]
+// Dependencies: [19, 17, 21, 4794, 575, 11629, 5530, 7204, 5385, 1112, 2]
 
-// Module 19333 (VoicePanelNoVideoParticipantsCard)
+// Module 19153 (VoicePanelNoVideoParticipantsCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5528 */;
-import NativeViewDefault from "NativeView" /* 7205 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11687 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5530 */;
+import NativeViewDefault from "NativeView" /* 7204 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11629 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -43,16 +43,16 @@ const memoResult = react.memo(function VoicePanelNoVideoParticipantsCard() {
     const result = obj.toggleVoiceParticipantsHidden(channelId, false);
   }, items);
   let obj = { style: tmp.container, children: items1 };
-  const obj2 = { style: tmp.label, variant: "body-md/semibold", color: "text-overlay-light", children: intl.string(channelId(1113).t["8eBJ73"]) };
+  const obj2 = { style: tmp.label, variant: "body-md/semibold", color: "text-overlay-light", children: intl.string(channelId(1112).t["8eBJ73"]) };
   const tmp3 = NativeViewDefault;
-  const Text = channelId(5383).Text;
-  intl = channelId(1113).intl;
+  const Text = channelId(5385).Text;
+  intl = channelId(1112).intl;
   items1 = [closure_5(Text, obj2), ];
-  const obj3 = { style: tmp.button, onPress: callback, accessibilityRole: "button", accessibilityLabel: intl2.string(channelId(1113).t.kLQySL), children: closure_5(Text2, obj4) };
-  intl2 = channelId(1113).intl;
-  obj4 = { variant: "body-sm/semibold", style: tmp.buttonText, children: intl3.string(channelId(1113).t.kLQySL) };
-  Text2 = channelId(5383).Text;
-  intl3 = channelId(1113).intl;
+  const obj3 = { style: tmp.button, onPress: callback, accessibilityRole: "button", accessibilityLabel: intl2.string(channelId(1112).t.kLQySL), children: closure_5(Text2, obj4) };
+  intl2 = channelId(1112).intl;
+  obj4 = { variant: "body-sm/semibold", style: tmp.buttonText, children: intl3.string(channelId(1112).t.kLQySL) };
+  Text2 = channelId(5385).Text;
+  intl3 = channelId(1112).intl;
   items1[1] = closure_5(Pressable, obj3);
   return closure_6(tmp3, obj);
 });

@@ -1,26 +1,26 @@
-// Module ID: 10587
-// Function ID: 10588
+// Module ID: 10529
+// Function ID: 10530
 // Name: PictureInPicture
-// Dependencies: [32, 19, 17, 10574, 1072, 21, 4792, 1187, 10588, 1496, 5367, 10591, 1655, 5393, 10592, 10593, 5052, 1380, 2]
+// Dependencies: [32, 19, 17, 10516, 1071, 21, 4794, 1186, 10530, 1494, 5369, 10533, 1653, 5395, 10534, 10535, 5054, 1378, 2]
 
-// Module 10587 (PictureInPicture)
+// Module 10529 (PictureInPicture)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1072 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5367 */;
-import spring_spring from "spring/spring" /* 5393 */;
-import ChannelCallStore from "ChannelCallStore" /* 10574 */;
-import useShouldForcePipOrientation from "useShouldForcePipOrientation" /* 10588 */;
-import usePipDimensionsDefault from "usePipDimensions" /* 10591 */;
-import useIsViewingActivity from "useIsViewingActivity" /* 10592 */;
-import useDraggablePip2 from "useDraggablePip" /* 10593 */;
+import Constants from "Constants" /* 1071 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5369 */;
+import spring_spring from "spring/spring" /* 5395 */;
+import ChannelCallStore from "ChannelCallStore" /* 10516 */;
+import useShouldForcePipOrientation from "useShouldForcePipOrientation" /* 10530 */;
+import usePipDimensionsDefault from "usePipDimensions" /* 10533 */;
+import useIsViewingActivity from "useIsViewingActivity" /* 10534 */;
+import useDraggablePip2 from "useDraggablePip" /* 10535 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles_mod from "createStyles" /* 4792 */;
-import native_mod from "native" /* 1187 */;
+import createStyles_mod from "createStyles" /* 4794 */;
+import native_mod from "native" /* 1186 */;
 import size_mod from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -81,8 +81,8 @@ const memoResult = react.memo(function PictureInPicture(preferredPosition) {
   [size2, c0] = react.useState({ x: 0, y: 0, width, height, pageX: 0, pageY: 0 });
   _slicedToArray(react.useState({ x: 0, y: 0, width, height, pageX: 0, pageY: 0 }), 2);
   const items = [closure_11, insets, , ];
-  const useAnimatedStyle = _mod1655.useAnimatedStyle;
-  _mod1655;
+  const useAnimatedStyle = _mod1653.useAnimatedStyle;
+  _mod1653;
   items[2] = spring_spring.withSpring;
   items[3] = getSpringAnimationConfig;
   c0 = undefined;
@@ -115,10 +115,10 @@ const memoResult = react.memo(function PictureInPicture(preferredPosition) {
   ({ gesture, draggableGridItemStyles } = draggablePip);
   ref = obj3.useRef(null);
   const items2 = [tmp2.pipOuterContainer, animatedStyle, style];
-  const View = tmp6(1655).View;
-  const GestureDetector = tmp3(5052).GestureDetector;
+  const View = tmp6(1653).View;
+  const GestureDetector = tmp3(5054).GestureDetector;
   const items3 = [draggableGridItemStyles, ];
-  const View2 = tmp6(1655).View;
+  const View2 = tmp6(1653).View;
   let elevationShadow;
   const tmp3Result4 = PlatformUtils;
   if (tmp3Result4.isIOS()) {

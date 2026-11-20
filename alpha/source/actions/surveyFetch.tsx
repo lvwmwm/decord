@@ -1,16 +1,16 @@
-// Module ID: 6364
-// Function ID: 6365
+// Module ID: 6366
+// Function ID: 6367
 // Name: surveyFetch
-// Dependencies: [1072, 6311, 1264, 4653, 1285, 572, 2]
+// Dependencies: [1071, 6313, 1263, 4655, 1284, 572, 2]
 // Exports: surveyFetch
 
-// Module 6364 (surveyFetch)
+// Module 6366 (surveyFetch)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import Constants from "Constants" /* 1072 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
-import HTTPUtils from "HTTPUtils" /* 1285 */;
-import TypeUtils from "TypeUtils" /* 4653 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6311 */;
+import Constants from "Constants" /* 1071 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1263 */;
+import HTTPUtils from "HTTPUtils" /* 1284 */;
+import TypeUtils from "TypeUtils" /* 4655 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6313 */;
 import size from "module_2" /* 2 */;
 
 const Endpoints = Constants.Endpoints;

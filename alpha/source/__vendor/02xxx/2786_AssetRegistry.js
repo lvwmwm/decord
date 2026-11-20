@@ -1,10 +1,10 @@
 // Module ID: 2786
 // Function ID: 2787
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 2786 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/powerups", scales: [1], hash: "f127493b1bddfb34c8d1ec13605a4f53", name: "GuildPowerups.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9wcmVtaXVtL3Bvd2VydXBz", scales: [1], hash: "01d901face6d3adfcfc265b8dc74d828", name: "zh-CN.messages.01d901face6d3adfcfc265b8dc74d828.compiled.messages", type: "jsona" });

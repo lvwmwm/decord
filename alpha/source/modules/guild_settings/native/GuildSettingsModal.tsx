@@ -1,21 +1,21 @@
-// Module ID: 19749
-// Function ID: 19750
+// Module ID: 19567
+// Function ID: 19568
 // Name: GuildSettingsModal
-// Dependencies: [32, 19, 4663, 7876, 1072, 21, 17712, 7875, 1264, 1113, 6976, 19750, 19761, 19768, 19769, 19788, 19807, 19812, 19827, 19828, 19840, 19853, 19866, 19868, 19017, 19026, 19876, 19880, 19881, 19028, 17713, 19882, 19883, 19903, 19924, 19928, 19931, 19934, 12272, 12287, 12296, 19935, 19940, 19941, 19963, 19985, 20051, 20052, 20066, 20103, 20106, 20107, 20110, 20118, 20119, 1630, 5371, 504, 6973, 2]
+// Dependencies: [32, 19, 4665, 7875, 1071, 21, 17539, 7874, 1263, 1112, 6975, 19568, 19579, 19586, 19587, 19606, 19625, 19630, 19645, 19646, 19658, 19671, 19686, 19688, 18836, 18845, 19696, 19700, 19701, 18847, 17540, 19702, 19703, 19723, 19744, 19748, 19751, 19754, 12244, 12259, 12266, 19755, 19760, 19761, 19783, 19805, 19871, 19872, 19886, 19923, 19926, 19927, 19930, 19938, 19939, 1628, 5373, 504, 6972, 2]
 // Exports: default
 
-// Module 19749 (GuildSettingsModal)
+// Module 19567 (GuildSettingsModal)
 import Fragment from "Fragment" /* 21 */;
-import intl43 from "intl" /* 1113 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
-import NavigatorHeader from "NavigatorHeader" /* 6976 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 7875 */;
-import GuildSettingsModalChannelsActionCreatorsDefault from "GuildSettingsModalChannelsActionCreators" /* 17712 */;
+import intl43 from "intl" /* 1112 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1263 */;
+import NavigatorHeader from "NavigatorHeader" /* 6975 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 7874 */;
+import GuildSettingsModalChannelsActionCreatorsDefault from "GuildSettingsModalChannelsActionCreators" /* 17539 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4663 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 7876 */;
-import Constants from "Constants" /* 1072 */;
+import GuildStore from "GuildStore" /* 4665 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 7875 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

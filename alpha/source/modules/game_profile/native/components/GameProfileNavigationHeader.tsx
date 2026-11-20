@@ -1,17 +1,17 @@
-// Module ID: 9821
-// Function ID: 9822
+// Module ID: 9823
+// Function ID: 9824
 // Name: GameProfileNavigationHeader
-// Dependencies: [19, 17, 21, 4792, 575, 5356, 1655, 5002, 1414, 7481, 5479, 5383, 9693, 2]
+// Dependencies: [19, 17, 21, 4794, 575, 5358, 1653, 5004, 1412, 7480, 5481, 5385, 9693, 2]
 // Exports: default
 
-// Module 9821 (GameProfileNavigationHeader)
+// Module 9823 (GameProfileNavigationHeader)
 import nativeDefault from "native" /* 575 */;
-import AvatarUtils from "AvatarUtils" /* 1414 */;
-import timing_timing from "timing/timing" /* 5002 */;
+import AvatarUtils from "AvatarUtils" /* 1412 */;
+import timing_timing from "timing/timing" /* 5004 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap, set;
@@ -62,12 +62,12 @@ export default function GameProfileNavigationHeader(game) {
   let sharedValue;
   let tmp = closure_8();
   const tmp2 = game;
-  let obj = game(5356);
+  let obj = game(5358);
   dependencyMap = tmp6;
   const token = obj.useToken(application(575).colors.LEGACY_BLUR_FALLBACK_ULTRA_THIN);
   let num = 0;
-  const useSharedValue = game(1655).useSharedValue;
-  const tmp7 = game(1655);
+  const useSharedValue = game(1653).useSharedValue;
+  const tmp7 = game(1653);
   if (null != headerRight) {
     num = 1;
   }
@@ -87,7 +87,7 @@ export default function GameProfileNavigationHeader(game) {
   let c0;
   [tmp10, tmp11] = items1;
   const obj2 = sharedValue;
-  const tmp2Result = tmp2(1655);
+  const tmp2Result = tmp2(1653);
   class GameProfileNavigationHeaderTsx1 {
     constructor() {
       const obj = { opacity: _undefined.get() };
@@ -102,7 +102,7 @@ export default function GameProfileNavigationHeader(game) {
   const items3 = [closure_10, sharedValue];
   c0 = undefined;
   [tmp13, tmp14] = items3;
-  const tmp2Result2 = tmp2(1655);
+  const tmp2Result2 = tmp2(1653);
   class GameProfileNavigationHeaderTsx2 {
     constructor() {
       const obj = { opacity: 1 - _undefined.get() };
@@ -159,18 +159,18 @@ export default function GameProfileNavigationHeader(game) {
   if (null != name) {
     const obj3 = { style: tmp.headerContainer, children: items6 };
     const obj4 = { android_fallbackColor: token };
-    items6 = [closure_6(tmp2(7481).BackgroundBlurFill, obj4), ];
+    items6 = [closure_6(tmp2(7480).BackgroundBlurFill, obj4), ];
     let tmp22Result = null != memo;
     const obj5 = { style: tmp.headerRow, children: items7 };
     if (tmp22Result) {
       const obj6 = { source: obj7, style: tmp.icon };
       obj7 = { uri: memo };
-      tmp22Result = tmp22(tmp4(5479), obj6);
+      tmp22Result = tmp22(tmp4(5481), obj6);
     }
     items7 = [tmp22Result, , ];
     const obj8 = { style: tmp.titleContainer, children: items8 };
     const obj9 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: name };
-    items8 = [closure_6(tmp2(5383).Heading, obj9), ];
+    items8 = [closure_6(tmp2(5385).Heading, obj9), ];
     let l30Rank;
     if (game != null) {
       l30Rank = game.l30Rank;
@@ -189,7 +189,7 @@ export default function GameProfileNavigationHeader(game) {
       const obj13 = { style: items10, accessibilityElementsHidden: null != headerRight, importantForAccessibility: str3, children: closure_6(application(9693), obj14) };
       items10 = [StyleSheet.absoluteFill, animatedStyle1];
       str3 = "auto";
-      const View = tmp4(1655).View;
+      const View = tmp4(1653).View;
       if (null != headerRight) {
         str3 = "no-hide-descendants";
       }
@@ -203,7 +203,7 @@ export default function GameProfileNavigationHeader(game) {
     if (tmp22Result2) {
       const obj15 = { style: items11, children: headerRight() };
       items11 = [tmp.headerRight, animatedStyle];
-      const View2 = tmp4(1655).View;
+      const View2 = tmp4(1653).View;
       tmp22Result2 = tmp22(View2, obj15);
     }
     items7[2] = tmp22Result2;

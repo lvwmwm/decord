@@ -1,7 +1,7 @@
 // Module ID: 9013
 // Function ID: 9014
 // Name: GPlayAnalyticsStore
-// Dependencies: [560, 1263, 2]
+// Dependencies: [560, 1262, 2]
 // Exports: deleteGPlayAnalytics, setGPlayAnalytics
 
 // Module 9013 (GPlayAnalyticsStore)

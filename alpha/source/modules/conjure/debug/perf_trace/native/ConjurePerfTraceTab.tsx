@@ -1,28 +1,28 @@
-// Module ID: 18712
-// Function ID: 18713
+// Module ID: 18536
+// Function ID: 18537
 // Name: ConjurePerfTraceTab
-// Dependencies: [32, 5, 19, 17, 6849, 21, 4792, 575, 6308, 18713, 2121, 6928, 18719, 6870, 5383, 18715, 1269, 8036, 18720, 11120, 1630, 504, 18717, 7371, 7308, 18425, 5494, 18714, 2]
+// Dependencies: [32, 5, 19, 17, 6849, 21, 4794, 575, 6310, 18537, 2119, 6927, 18543, 6869, 5385, 18539, 1268, 8035, 18544, 11062, 1628, 504, 18541, 7370, 7307, 18266, 5496, 18538, 2]
 // Exports: default, openPerfTrace
 
-// Module 18712 (ConjurePerfTraceTab)
+// Module 18536 (ConjurePerfTraceTab)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import v1 from "v1" /* 1269 */;
-import asyncRequire from "asyncRequire" /* 2121 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6308 */;
-import ConjurePerfTraceLayout from "ConjurePerfTraceLayout" /* 6870 */;
-import Card_Card from "Card/Card" /* 6928 */;
-import FileManagerUtils from "FileManagerUtils" /* 8036 */;
-import ConjurePerfTraceFormat from "ConjurePerfTraceFormat" /* 18715 */;
-import ConjurePerfTraceStats from "ConjurePerfTraceStats" /* 18717 */;
-import ConjurePerfTraceList from "ConjurePerfTraceList" /* 18720 */;
+import v1 from "v1" /* 1268 */;
+import asyncRequire from "asyncRequire" /* 2119 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6310 */;
+import ConjurePerfTraceLayout from "ConjurePerfTraceLayout" /* 6869 */;
+import Card_Card from "Card/Card" /* 6927 */;
+import FileManagerUtils from "FileManagerUtils" /* 8035 */;
+import ConjurePerfTraceFormat from "ConjurePerfTraceFormat" /* 18539 */;
+import ConjurePerfTraceStats from "ConjurePerfTraceStats" /* 18541 */;
+import ConjurePerfTraceList from "ConjurePerfTraceList" /* 18544 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ConjureDebugStore from "ConjureDebugStore" /* 6849 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2;
@@ -63,7 +63,7 @@ function PerfTraceRow(arg0) {
       const id = trace.id;
       const obj = ModalActionCreatorsDefault;
       const obj2 = { projectId: require, traceId: id };
-      obj.pushLazy(asyncRequire(18713, dependencyMap.paths), obj2, "CONJURE_PERF_TRACE_MODAL");
+      obj.pushLazy(asyncRequire(18537, dependencyMap.paths), obj2, "CONJURE_PERF_TRACE_MODAL");
     },
     accessibilityLabel: trace.name,
     children: tmp8(View, obj3)
@@ -72,7 +72,7 @@ function PerfTraceRow(arg0) {
   const obj4 = { style: tmp.rowTop, children: items };
   Card = Card_Card.Card;
   const obj5 = { status: obj6.perfTraceStatus(trace) };
-  const tmp9 = trace(18719);
+  const tmp9 = trace(18543);
   obj6 = ConjurePerfTraceLayout;
   items = [closure_8(tmp9, obj5), , ];
   const obj7 = { variant: "body-sm/semibold", color: "text-default", style: tmp.rowName, lineClamp: 1, children: trace.name };
@@ -192,7 +192,7 @@ export default function ConjurePerfTraceTab(projectId) {
           const obj3 = { value, done: true };
           return obj3;
         } else {
-          return { value: "HermesInternal", done: "+60" };
+          return { value: "HermesInternal", done: null };
         }
       } else {
         try {
@@ -237,7 +237,7 @@ export default function ConjurePerfTraceTab(projectId) {
             return obj;
           } else {
             c2 = 3;
-            return { value: "HermesInternal", done: "+60" };
+            return { value: "HermesInternal", done: null };
           }
         } catch (tmp11) {
           c2 = 3;
@@ -299,5 +299,5 @@ export default function ConjurePerfTraceTab(projectId) {
 export function openPerfTrace(projectId, traceId) {
   const obj = ModalActionCreatorsDefault;
   const obj2 = { projectId, traceId };
-  obj.pushLazy(asyncRequire(18713, dependencyMap.paths), obj2, "CONJURE_PERF_TRACE_MODAL");
+  obj.pushLazy(asyncRequire(18537, dependencyMap.paths), obj2, "CONJURE_PERF_TRACE_MODAL");
 }

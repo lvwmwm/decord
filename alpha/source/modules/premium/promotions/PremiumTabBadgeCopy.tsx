@@ -1,11 +1,11 @@
-// Module ID: 16197
-// Function ID: 16198
+// Module ID: 16161
+// Function ID: 16162
 // Name: PremiumTabBadgeCopy
-// Dependencies: [1113, 9079, 2]
+// Dependencies: [1112, 9079, 2]
 // Exports: getPremiumTabBadgeCopy, hasVisiblePremiumTabBadgeCopy
 
-// Module 16197 (PremiumTabBadgeCopy)
-import intl from "intl" /* 1113 */;
+// Module 16161 (PremiumTabBadgeCopy)
+import intl from "intl" /* 1112 */;
 import MarketingStringFormat from "MarketingStringFormat" /* 9079 */;
 import size from "module_2" /* 2 */;
 

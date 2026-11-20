@@ -1,17 +1,17 @@
-// Module ID: 11683
-// Function ID: 11684
+// Module ID: 11625
+// Function ID: 11626
 // Name: GuildNSFW
-// Dependencies: [109, 19, 4663, 21, 504, 6298, 6390, 7674, 6293, 1113, 11684, 2]
+// Dependencies: [109, 19, 4665, 21, 504, 6300, 6392, 7673, 6295, 1112, 11626, 2]
 // Exports: default
 
-// Module 11683 (GuildNSFW)
+// Module 11625 (GuildNSFW)
 import Fragment from "Fragment" /* 21 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6390 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7674 */;
-import GatedContentDefault from "GatedContent" /* 11684 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6392 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7673 */;
+import GatedContentDefault from "GatedContent" /* 11626 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4663 */;
+import GuildStore from "GuildStore" /* 4665 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -55,7 +55,7 @@ export default function GuildNSFW(channelId) {
       channelId.onReturnToSafety();
     }
   }
-  intl = tmp(1113).intl;
+  intl = tmp(1112).intl;
   if (require("AgeVerificationAnalyticsUtils").NsfwSpaceWarningModalType.NSFW_CHANNEL_AGE_VERIFY !== modalType) {
     if (require("AgeVerificationAnalyticsUtils").NsfwSpaceWarningModalType.GUILD_LARGE_SERVER !== modalType) {
       if (require("AgeVerificationAnalyticsUtils").NsfwSpaceWarningModalType.NSFW_CHANNEL_UNDERAGE === modalType) {

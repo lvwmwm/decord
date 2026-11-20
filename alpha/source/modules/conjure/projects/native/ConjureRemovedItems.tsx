@@ -1,27 +1,27 @@
-// Module ID: 12290
-// Function ID: 12291
+// Module ID: 12262
+// Function ID: 12263
 // Name: ConjureRemovedItems
-// Dependencies: [19, 17, 21, 4792, 575, 1113, 10325, 7585, 12108, 7556, 5808, 5383, 4854, 7217, 4089, 7229, 7216, 2]
+// Dependencies: [19, 17, 21, 4794, 575, 1112, 10267, 7584, 12050, 7555, 5810, 5385, 4856, 7216, 4091, 7228, 7215, 2]
 // Exports: ConjureRemoveEverythingField, default, formatWithAppTag
 
-// Module 12290 (ConjureRemovedItems)
+// Module 12262 (ConjureRemovedItems)
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1113 */;
-import _modDef4089 from "module_4089" /* 4089 */;
-import react_native from "react-native" /* 4854 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import Stack_Stack from "Stack/Stack" /* 5808 */;
-import TableCheckboxRow2 from "TableCheckboxRow" /* 7216 */;
-import FormCheckbox from "FormCheckbox" /* 7217 */;
-import TableRowGroup2 from "TableRowGroup" /* 7229 */;
-import FolderIcon from "FolderIcon" /* 7556 */;
-import AppsIcon from "AppsIcon" /* 7585 */;
-import BotTagDefault from "BotTag" /* 10325 */;
-import RobotIcon from "RobotIcon" /* 12108 */;
+import intl2 from "intl" /* 1112 */;
+import _modDef4091 from "module_4091" /* 4091 */;
+import react_native from "react-native" /* 4856 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import Stack_Stack from "Stack/Stack" /* 5810 */;
+import TableCheckboxRow2 from "TableCheckboxRow" /* 7215 */;
+import FormCheckbox from "FormCheckbox" /* 7216 */;
+import TableRowGroup2 from "TableRowGroup" /* 7228 */;
+import FolderIcon from "FolderIcon" /* 7555 */;
+import AppsIcon from "AppsIcon" /* 7584 */;
+import BotTagDefault from "BotTag" /* 10267 */;
+import RobotIcon from "RobotIcon" /* 12050 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4792 */;
+import createStyles from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -109,7 +109,7 @@ function OptionalItemRow(arg0) {
   }
   obj3 = { direction: "horizontal", spacing: 8, align: "center", children: items };
   const obj4 = { kind: item.kind };
-  Stack = tmp2(5808).Stack;
+  Stack = tmp2(5810).Stack;
   items = [metroRequire(ItemIcon, obj4), , ];
   const obj5 = { variant: "body-sm/medium", color: "text-subtle", style: tmp.optionalLabel, children: item.label };
   items[1] = metroRequire(Text_Text.Text, obj5);
@@ -134,7 +134,7 @@ export default function ConjureRemovedItems(optionalItems) {
   }
   let obj = { spacing: 8, children: items1 };
   const Stack = Stack_Stack.Stack;
-  const obj2 = { variant: "body-md/semibold", color: "text-strong", children: intl.string(_modDef4089["+E2PqP"]) };
+  const obj2 = { variant: "body-md/semibold", color: "text-strong", children: intl.string(_modDef4091["+E2PqP"]) };
   const Text = Text_Text.Text;
   intl = intl2.intl;
   items1 = [metroRequire(Text, obj2), ];
@@ -149,7 +149,7 @@ export default function ConjureRemovedItems(optionalItems) {
   items1[1] = metroRequire(ItemsBox, obj3);
   return metroImportDefault(Stack, obj);
 };
-export function formatWithAppTag(x6FvsZ, targetAppName) {
+export function formatWithAppTag(HmNT_r, targetAppName) {
   let Fragment;
   let items;
   let obj2;
@@ -160,7 +160,7 @@ export function formatWithAppTag(x6FvsZ, targetAppName) {
   const format = intl.format;
   Fragment = react.Fragment;
   items[2] = metroRequire(BotTagDefault, {});
-  return format(x6FvsZ, obj);
+  return format(HmNT_r, obj);
 }
 export function ConjureRemoveEverythingField(checked) {
   let TableCheckboxRow;
@@ -175,7 +175,7 @@ export function ConjureRemoveEverythingField(checked) {
   const Stack = Stack_Stack.Stack;
   const obj2 = { hasIcons: false, children: metroRequire(TableCheckboxRow, obj3) };
   const TableRowGroup = TableRowGroup2.TableRowGroup;
-  obj3 = { label: intl.string(_modDef4089.gKA9tU), checked, onPress: onChange };
+  obj3 = { label: intl.string(_modDef4091.gKA9tU), checked, onPress: onChange };
   TableCheckboxRow = TableCheckboxRow2.TableCheckboxRow;
   intl = intl2.intl;
   items1 = [metroRequire(TableRowGroup, obj2), ];

@@ -1,11 +1,11 @@
-// Module ID: 9780
-// Function ID: 9781
+// Module ID: 9782
+// Function ID: 9783
 // Name: GameProfileVisibilityUtils
-// Dependencies: [9646, 8769, 2]
+// Dependencies: [9646, 8707, 2]
 // Exports: isGameDisplayable
 
-// Module 9780 (GameProfileVisibilityUtils)
-import useGameProfileObscured from "useGameProfileObscured" /* 8769 */;
+// Module 9782 (GameProfileVisibilityUtils)
+import useGameProfileObscured from "useGameProfileObscured" /* 8707 */;
 import useShouldOpenGameProfileModal from "useShouldOpenGameProfileModal" /* 9646 */;
 import size from "module_2" /* 2 */;
 

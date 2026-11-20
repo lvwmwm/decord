@@ -1,234 +1,229 @@
 // Module ID: 1792
 // Function ID: 1793
-// Dependencies: [41, 42, 1665, 1663, 1758]
+// Dependencies: [32, 41, 42, 1759, 1756, 1762, 1663]
 
 // Module 1792
 import _createClassDefault from "_createClass" /* 42 */;
-import cssKeyframesRegistry2 from "cssKeyframesRegistry" /* 1663 */;
-import _mod1665 from "module_1665" /* 1665 */;
-import _mod1758 from "module_1758" /* 1758 */;
+import _mod1663 from "module_1663" /* 1663 */;
+import _mod1759 from "module_1759" /* 1759 */;
+import _mod1762 from "module_1762" /* 1762 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 
-let set;
-
-class CSSAnimationsManager {
-  constructor(shadowNodeWrapper, viewTag, compoundComponentName) {
-    _classCallCheck(this, CSSAnimationsManager);
-    this.attachedAnimations = [];
-    this.appliedEventMask = 0;
+let tmp2;
+const _mod1756 = tmp2(1756);
+function nullifyUndefinedValues(buildResult) {
+  for (const key10005 in buildResult) {
+    if (undefined !== buildResult[key10005]) {
+      continue;
+    } else {
+      buildResult[key10005] = null;
+      continue;
+    }
+    continue;
+  }
+}
+function getPropertyTransitionSettings(nextResult, specificProperties) {
+  let tmp = null;
+  if (specificProperties) {
+    let tmp3;
+    if (!specificProperties.specificProperties) {
+      let all = specificProperties.settings[nextResult];
+      if (all == null) {
+        all = specificProperties.settings.all;
+      }
+      if (all == null) {
+        all = null;
+      }
+      tmp3 = all;
+    } else {
+      specificProperties = specificProperties.specificProperties;
+      tmp3 = null;
+    }
+    tmp = tmp3;
+  }
+  return tmp;
+}
+class CSSPseudoStylesManager {
+  constructor(shadowNodeWrapper, viewTag, propsBuilder, componentName) {
+    _classCallCheck(this, CSSPseudoStylesManager);
+    this.prevPseudoStylesBySelector = null;
+    this.prevTransitionProperties = null;
+    this.isRegistered = false;
     this.shadowNodeWrapper = shadowNodeWrapper;
     this.viewTag = viewTag;
-    this.compoundComponentName = compoundComponentName;
+    this.propsBuilder = propsBuilder;
+    this.componentName = componentName;
   }
 }
 const entry = {
-  key: "hasAttachedAnimations",
-  value: function hasAttachedAnimations() {
-    return this.attachedAnimations.length > 0;
+  key: "update",
+  value: function update(prevPseudoStylesBySelector, prevTransitionProperties) {
+    function hasRemovedNativeSelector(prevPseudoStylesBySelector, prevPseudoStylesBySelector2) {
+      const tmp = prevPseudoStylesBySelector;
+      if (tmp) {
+        const _Set = Set;
+        if (prevPseudoStylesBySelector) {
+          const _Object = Object;
+          const self3 = this;
+          const self4 = this;
+          let _Set1 = new _Set(Object.keys(prevPseudoStylesBySelector));
+        } else {
+          const self = this;
+          const self2 = this;
+          _Set1 = new _Set();
+        }
+        const _Object2 = Object;
+        const keys = Object.keys(prevPseudoStylesBySelector);
+        return keys.some((item) => {
+          const NATIVE_PSEUDO_SELECTORS = _mod1762.NATIVE_PSEUDO_SELECTORS;
+          const hasItem = NATIVE_PSEUDO_SELECTORS.has(item) && !_Set1.has(item);
+          return hasItem;
+        });
+      } else {
+        return false;
+      }
+    }
+    let self = this;
+    let tmp = require;
+    const obj = _mod1759;
+    if (!obj.deepEqual(prevPseudoStylesBySelector, this.prevPseudoStylesBySelector)) {
+      self.prevPseudoStylesBySelector = prevPseudoStylesBySelector;
+      self.prevTransitionProperties = prevTransitionProperties;
+      let isRegistered = self.isRegistered;
+      if (prevPseudoStylesBySelector) {
+        if (isRegistered) {
+          isRegistered = hasRemovedNativeSelector(self.prevPseudoStylesBySelector, prevPseudoStylesBySelector);
+        }
+        if (isRegistered) {
+          self.detach();
+        }
+        let result = null;
+        if (prevTransitionProperties) {
+          const tmp2Result = _mod1756;
+          result = tmp2Result.normalizeCSSTransitionProperties(prevTransitionProperties);
+        }
+        const obj2 = {};
+        let _Object = Object;
+        const entries = Object.entries(prevPseudoStylesBySelector);
+        const tmp15 = entries[Symbol.iterator]();
+        while (tmp15 !== undefined) {
+          let tmp20 = _slicedToArray(tmp17, 2);
+          let defaultStyle = tmp20[1].defaultStyle;
+          let first = tmp20[0];
+          let NATIVE_PSEUDO_SELECTORS = _mod1762.NATIVE_PSEUDO_SELECTORS;
+          if (NATIVE_PSEUDO_SELECTORS.has(first)) {
+            let _Object2 = Object;
+            let merged = Object.assign(obj2, defaultStyle);
+          }
+          continue;
+        }
+        const propsBuilder = self.propsBuilder;
+        const buildResult = propsBuilder.build(obj2, { includeUnprocessed: true });
+        nullifyUndefinedValues(buildResult);
+        const items = [];
+        const _Object3 = Object;
+        const entries1 = Object.entries(prevPseudoStylesBySelector);
+        for (const item10081 of entries1) {
+          let tmp35 = _slicedToArray(item10081, 2);
+          let first1 = tmp35[0];
+          let selectorStyle = tmp35[1].selectorStyle;
+          let tmp37 = first1;
+          let NATIVE_PSEUDO_SELECTORS2 = _mod1762.NATIVE_PSEUDO_SELECTORS;
+          if (NATIVE_PSEUDO_SELECTORS2.has(first1)) {
+            let arr = items.push(self.buildPseudoStyleEntry(tmp37, selectorStyle, buildResult, result));
+          }
+          continue;
+        }
+        if (items.length > 0) {
+          const obj3 = { defaultStyle: buildResult, selectors: items };
+          const obj5 = _mod1663;
+          obj5.registerPseudoStyles(self.shadowNodeWrapper, obj3);
+          self.isRegistered = true;
+        }
+      } else if (isRegistered) {
+        self.detach();
+      }
+    } else {
+      _mod1759;
+    }
   }
 };
 let items = [
   entry,
   {
-    key: "update",
-    value: function update(arg0) {
-      let num = arg1;
-      if (arg1 === undefined) {
-        num = 0;
-      }
-      const self = this;
-      const tmp = arg0;
-      if (tmp) {
-        const processAnimationsResult = self.processAnimations(arg0);
-        const result = self.registerKeyframesUsage(processAnimationsResult);
-        const animationUpdates = self.getAnimationUpdates(processAnimationsResult);
-        if (animationUpdates) {
-          if (animationUpdates.animationNames) {
-            if (0 === animationUpdates.animationNames.length) {
-              self.detach();
-            }
-          }
-          self.attachedAnimations = processAnimationsResult;
-          self.apply(animationUpdates, num);
-        } else if (num !== self.appliedEventMask) {
-          self.apply({}, num);
-        }
-      } else {
-        self.detach();
-      }
-    }
-  },
-  {
     key: "unmountCleanup",
     value: function unmountCleanup() {
-      const result = this.unregisterKeyframesUsage();
-    }
-  },
-  {
-    key: "apply",
-    value: function apply(arg0, appliedEventMask) {
-      let compoundComponentName;
-      let shadowNodeWrapper;
-      this.appliedEventMask = appliedEventMask;
-      const obj = { eventMask: appliedEventMask };
-      const applyCSSAnimations = _mod1665.applyCSSAnimations;
-      ({ shadowNodeWrapper, compoundComponentName } = this);
-      _mod1665;
-      const merged = Object.assign(arg0);
-      applyCSSAnimations(shadowNodeWrapper, compoundComponentName, obj);
+      const self = this;
+      if (this.isRegistered) {
+        self.detach();
+      }
+      self.prevPseudoStylesBySelector = null;
+      self.prevTransitionProperties = null;
     }
   },
   {
     key: "detach",
     value: function detach() {
-      const self = this;
-      if (this.hasAttachedAnimations()) {
-        const obj = _mod1665;
-        const result = obj.unregisterCSSAnimations(self.viewTag);
-        const result1 = self.unregisterKeyframesUsage();
-        self.attachedAnimations = [];
-        self.appliedEventMask = 0;
-      }
+      const obj = _mod1663;
+      const result = obj.unregisterPseudoStyles(this.viewTag);
+      this.isRegistered = false;
     }
   },
   {
-    key: "registerKeyframesUsage",
-    value: function registerKeyframesUsage(processAnimationsResult) {
-      const self = this;
-      set = new Set();
-      const item = processAnimationsResult.forEach((keyframesRule) => {
-        keyframesRule = keyframesRule.keyframesRule;
-        const cssKeyframesRegistry = cssKeyframesRegistry2.cssKeyframesRegistry;
-        cssKeyframesRegistry.add(keyframesRule, self.viewTag, self.compoundComponentName);
-        set.add(keyframesRule.name);
-      });
-      const attachedAnimations = this.attachedAnimations;
-      const item1 = attachedAnimations.forEach((keyframesRule) => {
-        const name = keyframesRule.keyframesRule.name;
-        if (!set.has(name)) {
-          const cssKeyframesRegistry = cssKeyframesRegistry2.cssKeyframesRegistry;
-          cssKeyframesRegistry.remove(name, self.viewTag, self.compoundComponentName);
+    key: "buildPseudoStyleEntry",
+    value: function buildPseudoStyleEntry(selector, selectorStyle, buildResult, result) {
+      let flag;
+      let items;
+      let num;
+      let num2;
+      let str;
+      const propsBuilder = this.propsBuilder;
+      buildResult = propsBuilder.build(selectorStyle, { includeUnprocessed: true });
+      nullifyUndefinedValues(buildResult);
+      const obj = {};
+      const keys = Object.keys(buildResult);
+      const iter = keys[Symbol.iterator]();
+      const nextResult = iter.next();
+      while (iter !== undefined) {
+        let tmp6 = getPropertyTransitionSettings(nextResult, result);
+        let tmp7 = tmp6;
+        let obj2 = { value: items, duration: num, delay: num2, timingFunction: str, allowDiscrete: flag };
+        items = [buildResult[nextResult], buildResult[nextResult]];
+        num = undefined;
+        if (tmp6 != null) {
+          num = tmp6.duration;
         }
-      });
-    }
-  },
-  {
-    key: "unregisterKeyframesUsage",
-    value: function unregisterKeyframesUsage() {
-      const self = this;
-      const attachedAnimations = this.attachedAnimations;
-      const item = attachedAnimations.forEach((keyframesRule) => {
-        const name = keyframesRule.keyframesRule.name;
-        const cssKeyframesRegistry = cssKeyframesRegistry2.cssKeyframesRegistry;
-        cssKeyframesRegistry.remove(name, self.viewTag, self.compoundComponentName);
-      });
-    }
-  },
-  {
-    key: "processAnimations",
-    value: function processAnimations(arg0) {
-      let obj = _mod1758;
-      const singleCSSAnimationProperties = obj.createSingleCSSAnimationProperties(arg0);
-      return singleCSSAnimationProperties.map(function(animationName) {
-        let tmpResult;
-        animationName = animationName.animationName;
-        let tmp3 = animationName;
-        if (!(animationName instanceof cssKeyframesRegistry2.CSSKeyframesRuleImpl)) {
-          const _JSON = JSON;
-          const json = JSON.stringify(animationName);
-          const cssKeyframesRegistry = tmp(tmp2[3]).cssKeyframesRegistry;
-          let cSSKeyframesRuleImpl = cssKeyframesRegistry.get(json);
-          if (cSSKeyframesRuleImpl == null) {
-            const self = this;
-            const self2 = this;
-            cSSKeyframesRuleImpl = new tmp(tmp2[3]).CSSKeyframesRuleImpl(animationName, json);
-          }
-          tmp3 = cSSKeyframesRuleImpl;
+        if (num == null) {
+          num = 0;
         }
-        const obj = { normalizedSettings: tmpResult.normalizeSingleCSSAnimationSettings(animationName), keyframesRule: tmp3 };
-        tmpResult = _mod1758;
-        return obj;
-      });
-    }
-  },
-  {
-    key: "buildAnimationsMap",
-    value: function buildAnimationsMap(attachedAnimations) {
-      return attachedAnimations.reduceRight((acc, keyframesRule) => {
-        const name = keyframesRule.keyframesRule.name;
-        if (acc[name]) {
-          const arr2 = acc[name];
-          arr2.push(keyframesRule);
-        } else {
-          const items = [keyframesRule];
-          acc[name] = items;
+        num2 = undefined;
+        if (tmp7 != null) {
+          num2 = tmp7.delay;
         }
-        return acc;
-      }, {});
-    }
-  },
-  {
-    key: "getAnimationUpdates",
-    value: function getAnimationUpdates(processAnimationsResult) {
-      const self = this;
-      const newAnimationSettings = {};
-      const obj2 = {};
-      let c3 = this.attachedAnimations.length !== processAnimationsResult.length;
-      let c4 = false;
-      let c5 = false;
-      let closure_0 = this.buildAnimationsMap(this.attachedAnimations);
-      const item = processAnimationsResult.forEach((item, index) => {
-        let keyframesRule;
-        let normalizedSettings;
-        let obj;
-        ({ keyframesRule, normalizedSettings } = item);
-        let arr2;
-        if (closure_0[keyframesRule.name] != null) {
-          arr2 = arr.pop();
+        if (num2 == null) {
+          num2 = 0;
         }
-        if (arr2) {
-          const tmp3 = c3;
-          if (!tmp3) {
-            c3 = self.attachedAnimations[index].keyframesRule.name !== keyframesRule.name;
-          }
-          obj = _mod1758;
-          const animationSettingsUpdates = obj.getAnimationSettingsUpdates(arr2.normalizedSettings, normalizedSettings);
-          const _Object = Object;
-          if (Object.keys(animationSettingsUpdates).length > 0) {
-            c5 = true;
-            obj2[index] = animationSettingsUpdates;
-          }
-        } else {
-          c4 = true;
-          c3 = true;
-          obj[index] = normalizedSettings;
+        str = undefined;
+        if (tmp7 != null) {
+          str = tmp7.timingFunction;
         }
-      });
-      const obj3 = {};
-      const tmp2 = c3;
-      if (tmp2) {
-        obj3.animationNames = processAnimationsResult.map((keyframesRule) => keyframesRule.keyframesRule.name);
+        if (str == null) {
+          str = "ease";
+        }
+        flag = undefined;
+        if (tmp7 != null) {
+          flag = tmp7.allowDiscrete;
+        }
+        if (flag == null) {
+          flag = false;
+        }
+        obj[nextResult] = obj2;
+        continue;
       }
-      let tmp3 = c4;
-      if (tmp3) {
-        obj3.newAnimationSettings = newAnimationSettings;
-      }
-      const tmp4 = c5;
-      if (tmp4) {
-        obj3.settingsUpdates = obj2;
-      }
-      const tmp5 = c4;
-      if (!tmp5) {
-        let tmp8;
-        const tmp6 = c5;
-        if (!tmp6) {
-          tmp8 = null;
-        }
-        return tmp8;
-      }
-      tmp8 = obj3;
+      return { selector, selectorStyle: buildResult, transition: obj };
     }
   }
 ];
 
-export default _createClassDefault(CSSAnimationsManager, items);
+export default _createClassDefault(CSSPseudoStylesManager, items);

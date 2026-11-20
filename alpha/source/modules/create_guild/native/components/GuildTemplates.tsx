@@ -1,26 +1,26 @@
-// Module ID: 13526
-// Function ID: 13527
+// Module ID: 13496
+// Function ID: 13497
 // Name: GuildTemplates
-// Dependencies: [32, 19, 17, 13523, 7280, 1072, 21, 4792, 5346, 575, 5383, 1113, 1502, 1630, 5390, 13498, 1256, 13088, 13527, 6898, 7229, 2]
+// Dependencies: [32, 19, 17, 13493, 7279, 1071, 21, 4794, 5348, 575, 5385, 1112, 1500, 1628, 5392, 13468, 1255, 13058, 13497, 6897, 7228, 2]
 // Exports: default
 
-// Module 13526 (GuildTemplates)
+// Module 13496 (GuildTemplates)
 import nativeDefault from "native" /* 575 */;
-import intl4 from "intl" /* 1113 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import NavigatorConstants from "NavigatorConstants" /* 5346 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import ListSelectionItemDefault from "ListSelectionItem" /* 13088 */;
-import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 13498 */;
-import CreateGuildIcons from "CreateGuildIcons" /* 13527 */;
+import intl4 from "intl" /* 1112 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import NavigatorConstants from "NavigatorConstants" /* 5348 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import ListSelectionItemDefault from "ListSelectionItem" /* 13058 */;
+import NewUserAnalyticsUtils from "NewUserAnalyticsUtils" /* 13468 */;
+import CreateGuildIcons from "CreateGuildIcons" /* 13497 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import CreateGuildConstants_mod from "create_guild/CreateGuildConstants" /* 13523 */;
-import CreateGuildConstants_mod2 from "CreateGuildConstants" /* 7280 */;
-import Constants from "Constants" /* 1072 */;
+import CreateGuildConstants_mod from "create_guild/CreateGuildConstants" /* 13493 */;
+import CreateGuildConstants_mod2 from "CreateGuildConstants" /* 7279 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4792 */;
+import createStyles_mod from "createStyles" /* 4794 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -67,15 +67,15 @@ function GuildTemplatesJoinFooter(trigger) {
   const onHeightChange = trigger.onHeightChange;
   const tmp = closure_16();
   const tmp2 = trigger;
-  let obj = trigger(1502);
+  let obj = trigger(1500);
   dependencyMap = obj.useNavigation();
-  const bottom = onHeightChange(1630)().bottom;
+  const bottom = onHeightChange(1628)().bottom;
   if (trigger === constants3.NUF) {
-    const intl2 = tmp2(1113).intl;
-    stringResult = intl2.string(tmp2(1113).t.INo2NK);
+    const intl2 = tmp2(1112).intl;
+    stringResult = intl2.string(tmp2(1112).t.INo2NK);
   } else {
-    const intl = tmp2(1113).intl;
-    stringResult = intl.string(tmp2(1113).t.riOUtB);
+    const intl = tmp2(1112).intl;
+    stringResult = intl.string(tmp2(1112).t.riOUtB);
   }
   const items = [onHeightChange];
   let obj2 = {
@@ -87,9 +87,9 @@ function GuildTemplatesJoinFooter(trigger) {
   };
   items1 = [tmp.footerSafeAreaContainer, { paddingBottom: bottom }];
   obj3 = { style: tmp.footerContainer, children: items2 };
-  let obj4 = { style: tmp.footerTitle, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl3.string(tmp2(1113).t["N+Mi/U"]) };
-  const Text = tmp2(5383).Text;
-  intl3 = tmp2(1113).intl;
+  let obj4 = { style: tmp.footerTitle, accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl3.string(tmp2(1112).t["N+Mi/U"]) };
+  const Text = tmp2(5385).Text;
+  intl3 = tmp2(1112).intl;
   items2 = [closure_14(Text, obj4), ];
   const obj5 = {
     variant: "primary",
@@ -109,7 +109,7 @@ function GuildTemplatesJoinFooter(trigger) {
       closure_2.push(constants.JOIN_SERVER, {});
     }
   };
-  items2[1] = closure_14(tmp2(5390).Button, obj5);
+  items2[1] = closure_14(tmp2(5392).Button, obj5);
   return closure_14(closure_5, obj2);
 }
 function GuildTemplatesItem(guildTemplate) {

@@ -1,18 +1,18 @@
-// Module ID: 8742
-// Function ID: 8743
+// Module ID: 8680
+// Function ID: 8681
 // Name: utils/ChangeLogUtils
-// Dependencies: [19, 17, 21, 4792, 575, 6434, 5812, 5383, 8743, 8744, 8745, 2]
+// Dependencies: [19, 17, 21, 4794, 575, 6436, 5814, 5385, 8681, 8682, 8683, 2]
 
-// Module 8742 (utils/ChangeLogUtils)
+// Module 8680 (utils/ChangeLogUtils)
 import react_native from "react-native" /* 17 */;
 import Fragment2 from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5383 */;
-import LegacyTokens from "LegacyTokens" /* 6434 */;
-import ChangelogInlineImageDefault from "ChangelogInlineImage" /* 8745 */;
+import Text_Text from "Text/Text" /* 5385 */;
+import LegacyTokens from "LegacyTokens" /* 6436 */;
+import ChangelogInlineImageDefault from "ChangelogInlineImage" /* 8683 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4792 */;
-import CustomMarkup from "CustomMarkup" /* 5812 */;
+import createStyles_mod from "createStyles" /* 4794 */;
+import CustomMarkup from "CustomMarkup" /* 5814 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -21,7 +21,7 @@ let closure_4, dependencyMap, item, length;
 let obj2;
 let obj3;
 let tmp2;
-const MarkupRulesUtils = tmp2(8744);
+const MarkupRulesUtils = tmp2(8682);
 function ChangeLogLink(arg0) {
   let node;
   let output;
@@ -100,15 +100,15 @@ function ChangeLogParagraph(state) {
     Paragraph = components.Paragraph;
   }
   if (Paragraph == null) {
-    Paragraph = output(5383).Text;
+    Paragraph = output(5385).Text;
   }
   let tmp6 = dependencyMap;
-  const obj = output(8743);
+  const obj = output(8681);
   const result = obj.splitParagraphAtImages(node.content);
   const tmp5 = output;
   if (true !== state.changelogImagesDisabled) {
     let tmp7;
-    const tmp5Result = tmp5(8743);
+    const tmp5Result = tmp5(8681);
     if (tmp5Result.hasImageSegment(result)) {
       tmp7 = <View key={state.key}>{result.map((type, index) => {
         let tmp6;

@@ -1,15 +1,15 @@
 // Module ID: 9621
 // Function ID: 9622
 // Name: useGetGameForAppId
-// Dependencies: [19, 2165, 2141, 6745, 8933, 504, 1255, 2]
+// Dependencies: [19, 2163, 2139, 6745, 8933, 504, 1254, 2]
 // Exports: default, useGetGameResultsForAppIds, useGetGamesForAppIds
 
 // Module 9621 (useGetGameForAppId)
-import GlobalUtils from "GlobalUtils" /* 1255 */;
+import GlobalUtils from "GlobalUtils" /* 1254 */;
 import useGetOrFetchApplications from "useGetOrFetchApplications" /* 6745 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 2165 */;
-import GameStore from "GameStore" /* 2141 */;
+import ApplicationStore from "ApplicationStore" /* 2163 */;
+import GameStore from "GameStore" /* 2139 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
