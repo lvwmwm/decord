@@ -1,14 +1,14 @@
-// Module ID: 19240
-// Function ID: 19241
+// Module ID: 19367
+// Function ID: 19368
 // Name: VoicePanelLeaveStageButton
-// Dependencies: [19, 4643, 21, 11629, 504, 19219, 19220, 6384, 1112, 10779, 2]
+// Dependencies: [19, 4762, 21, 11749, 504, 19346, 19347, 6503, 1112, 10899, 2]
 // Exports: default
 
-// Module 19240 (VoicePanelLeaveStageButton)
+// Module 19367 (VoicePanelLeaveStageButton)
 import Fragment from "Fragment" /* 21 */;
-import StageChannelActionCreators from "StageChannelActionCreators" /* 6384 */;
+import StageChannelActionCreators from "StageChannelActionCreators" /* 6503 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4643 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -19,17 +19,17 @@ export default function LeaveStageButton(arg0) {
   let wrapperSpecs;
   let stateFromStores;
   ({ props, wrapperSpecs } = arg0);
-  const channelId = react.useContext(stateFromStores(11629)).channelId;
+  const channelId = react.useContext(stateFromStores(11749)).channelId;
   let obj = channelId(504);
   const items = [ChannelStore];
   const items1 = [channelId];
   const tmp = stateFromStores;
   stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(channelId), items1);
-  const obj2 = channelId(19219);
+  const obj2 = channelId(19346);
   const voicePanelButtonStyles = obj2.useVoicePanelButtonStyles(wrapperSpecs);
   let tmp6 = null;
   if (null != stateFromStores) {
-    tmp(19220);
+    tmp(19347);
     const intl = tmp3(1112).intl;
     tmp6 = <tmpResult onPress={function onPress() {
       const obj = StageChannelActionCreators;

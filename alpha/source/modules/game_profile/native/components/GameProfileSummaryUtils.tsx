@@ -1,10 +1,10 @@
-// Module ID: 9748
-// Function ID: 9749
+// Module ID: 9868
+// Function ID: 9869
 // Name: GameProfileSummaryUtils
 // Dependencies: [2]
 // Exports: getSummaryLineEnd, previousSummaryWordEnd, truncateSummaryRuns
 
-// Module 9748 (GameProfileSummaryUtils)
+// Module 9868 (GameProfileSummaryUtils)
 import size from "module_2" /* 2 */;
 
 const re0 = /[\n\r]+$/;

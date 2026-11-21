@@ -1,16 +1,16 @@
-// Module ID: 18204
-// Function ID: 18205
+// Module ID: 18331
+// Function ID: 18332
 // Name: ConjureLinkedAppsTab
-// Dependencies: [19, 6502, 21, 6925, 5008, 18205, 5747, 1112, 4091, 5810, 575, 5385, 18206, 18207, 7228, 2]
+// Dependencies: [19, 6621, 21, 7045, 5127, 18332, 5866, 1112, 4190, 5929, 575, 5504, 18333, 18334, 7348, 2]
 // Exports: default
 
-// Module 18204 (ConjureLinkedAppsTab)
+// Module 18331 (ConjureLinkedAppsTab)
 import intl4 from "intl" /* 1112 */;
-import _modDef4091 from "module_4091" /* 4091 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5008 */;
-import AlertModal from "AlertModal" /* 5747 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6502 */;
-import ConjureLinkedAppBuildSheetDefault from "ConjureLinkedAppBuildSheet" /* 18205 */;
+import _modDef4190 from "module_4190" /* 4190 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5127 */;
+import AlertModal from "AlertModal" /* 5866 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6621 */;
+import ConjureLinkedAppBuildSheetDefault from "ConjureLinkedAppBuildSheet" /* 18332 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -104,13 +104,13 @@ export default function ConjureLinkedAppsTab(linkedApps) {
   const saved = linkedApps.saved;
   let obj = { spacing: onOpenSettings(575).space.PX_24, children: items1 };
   const tmp4 = onOpenSettings;
-  let Stack = linkedApps(5810).Stack;
+  let Stack = linkedApps(5929).Stack;
   let tmpResult = null;
   if (callers.length > 0) {
     let obj2 = { spacing: tmp4(575).space.PX_16, children: items };
-    const Stack2 = tmp2(5810).Stack;
-    let obj3 = { variant: "body-xs/semibold", color: "text-muted", accessibilityRole: "header", children: intl.formatToPlainString(tmp4(4091).uLPdNT, obj4) };
-    const Text = tmp2(5385).Text;
+    const Stack2 = tmp2(5929).Stack;
+    let obj3 = { variant: "body-xs/semibold", color: "text-muted", accessibilityRole: "header", children: intl.formatToPlainString(tmp4(4190).uLPdNT, obj4) };
+    const Text = tmp2(5504).Text;
     intl = tmp2(1112).intl;
     obj4 = { name: linkedApps.name };
     items = [
@@ -179,9 +179,9 @@ export default function ConjureLinkedAppsTab(linkedApps) {
               const showConfirmModal = tmp.showConfirmModal;
               const obj = {
                 key: "ConjureRemoveLinkedApp-" + project_id,
-                title: intl.formatToPlainString(_modDef4091.zSfIvv, obj2),
-                content: intl2.formatToPlainString(_modDef4091["7TX+mR"], obj3),
-                confirmText: intl3.string(_modDef4091.vDZEGQ),
+                title: intl.formatToPlainString(_modDef4190.zSfIvv, obj2),
+                content: intl2.formatToPlainString(_modDef4190["7TX+mR"], obj3),
+                confirmText: intl3.string(_modDef4190.vDZEGQ),
                 variant: "destructive",
                 onConfirm() {
                   return closure_2_5(closure_0);
@@ -218,10 +218,10 @@ export default function ConjureLinkedAppsTab(linkedApps) {
   let tmpResult2 = null;
   if (targets.length > 0) {
     let obj5 = { spacing: tmp4(575).space.PX_16, children: items2 };
-    const Stack3 = tmp2(5810).Stack;
+    const Stack3 = tmp2(5929).Stack;
     let tmp8 = c4;
-    let obj6 = { variant: "body-xs/semibold", color: "text-muted", accessibilityRole: "header", children: intl2.formatToPlainString(tmp4(4091).L3Bf1s, obj7) };
-    const Text2 = tmp2(5385).Text;
+    let obj6 = { variant: "body-xs/semibold", color: "text-muted", accessibilityRole: "header", children: intl2.formatToPlainString(tmp4(4190).L3Bf1s, obj7) };
+    const Text2 = tmp2(5504).Text;
     intl2 = tmp2(1112).intl;
     obj7 = { name: linkedApps.name };
     items2 = [
@@ -292,7 +292,7 @@ export default function ConjureLinkedAppsTab(linkedApps) {
   if (failed) {
     let tmp10 = c4;
     let str = "text-muted";
-    const Text3 = tmp2(5385).Text;
+    const Text3 = tmp2(5504).Text;
     if (failed) {
       str = "text-feedback-critical";
     }
@@ -307,7 +307,7 @@ export default function ConjureLinkedAppsTab(linkedApps) {
     }
     let intl3 = tmp2(1112).intl;
     string = intl3.string;
-    tmp4Result = tmp4(4091);
+    tmp4Result = tmp4(4190);
     tmp10Result = tmp10(Text3, obj8);
   } else {
     tmp10Result = null;

@@ -1,13 +1,13 @@
-// Module ID: 10741
-// Function ID: 10742
+// Module ID: 10861
+// Function ID: 10862
 // Name: PushNotification
-// Dependencies: [17, 1378, 10742, 10743, 10744, 10745, 2]
+// Dependencies: [17, 1378, 10862, 10863, 10864, 10865, 2]
 
-// Module 10741 (PushNotification)
+// Module 10861 (PushNotification)
 import PlatformUtils from "PlatformUtils" /* 1378 */;
-import _modDef10742 from "module_10742" /* 10742 */;
-import react_nativeDefault from "react-native" /* 10744 */;
-import react_nativeDefault2 from "react-native" /* 10745 */;
+import _modDef10862 from "module_10862" /* 10862 */;
+import react_nativeDefault from "react-native" /* 10864 */;
+import react_nativeDefault2 from "react-native" /* 10865 */;
 import react_native2 from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 
@@ -15,7 +15,7 @@ const require = globalThis.__r;
 let _require, lightsEnabled, soundsEnabled, vibrationsEnabled;
 
 let tmp;
-const react_native = tmp(10743);
+const react_native = tmp(10863);
 function getData() {
   let parsed;
   const obj = { message: parsed };
@@ -89,7 +89,7 @@ let obj = {
       });
     } else {
       let tmp2 = importDefault;
-      const obj2 = _modDef10742;
+      const obj2 = _modDef10862;
       initialNotification = obj2.getInitialNotification();
     }
     return initialNotification;
@@ -131,7 +131,7 @@ let obj = {
   setApplicationIconBadgeNumber(arg0) {
     const obj = PlatformUtils;
     if (!obj.isAndroid()) {
-      const obj2 = _modDef10742;
+      const obj2 = _modDef10862;
       const result = obj2.setApplicationIconBadgeNumber(arg0);
     }
   },
@@ -140,7 +140,7 @@ let obj = {
     if (obj.isAndroid()) {
       const result = PushNotificationAndroid.clearAllNotifications();
     } else {
-      const obj2 = _modDef10742;
+      const obj2 = _modDef10862;
       const result1 = obj2.setApplicationIconBadgeNumber(0);
     }
   },
@@ -149,7 +149,7 @@ let obj = {
     if (obj.isAndroid()) {
       const result = PushNotificationAndroid.presentLocalNotification(arg0);
     } else {
-      const obj2 = _modDef10742;
+      const obj2 = _modDef10862;
       const result1 = obj2.presentLocalNotification(arg0);
     }
   },
@@ -162,7 +162,7 @@ let obj = {
       const self = this;
       const self2 = this;
       resolveResult = new _Promise((arg0) => {
-        const obj = _modDef10742;
+        const obj = _modDef10862;
         const deliveredNotifications = obj.getDeliveredNotifications(arg0);
       });
     }
@@ -171,14 +171,14 @@ let obj = {
   removeDeliveredNotifications(arg0) {
     const obj = PlatformUtils;
     if (!obj.isAndroid()) {
-      const obj2 = _modDef10742;
+      const obj2 = _modDef10862;
       const result = obj2.removeDeliveredNotifications(arg0);
     }
   },
   scheduleLocalNotification(arg0) {
     const obj = PlatformUtils;
     if (!obj.isAndroid()) {
-      const obj2 = _modDef10742;
+      const obj2 = _modDef10862;
       const result = obj2.scheduleLocalNotification(arg0);
     }
   },
@@ -199,7 +199,7 @@ let obj = {
   cancelAllLocalNotifications() {
     const obj = PlatformUtils;
     if (!obj.isAndroid()) {
-      const obj2 = _modDef10742;
+      const obj2 = _modDef10862;
       const result = obj2.cancelAllLocalNotifications();
     }
   },
@@ -208,7 +208,7 @@ let obj = {
     if (obj.isAndroid()) {
       fn({});
     } else {
-      const obj2 = _modDef10742;
+      const obj2 = _modDef10862;
       obj2.checkPermissions(fn);
     }
   },
@@ -220,7 +220,7 @@ let obj = {
       const self2 = this;
       permissions = new Promise((fn) => fn({}));
     } else {
-      const obj2 = _modDef10742;
+      const obj2 = _modDef10862;
       permissions = obj2.requestPermissions(arg0);
     }
     return permissions;
@@ -261,7 +261,7 @@ let obj = {
       }
       const result = PushNotificationAndroid.registerEventListener(localNotification);
     } else {
-      const obj2 = _modDef10742;
+      const obj2 = _modDef10862;
       const listener = obj2.addEventListener(localNotification, handleLocalNotification);
     }
   },
@@ -274,7 +274,7 @@ let obj = {
       });
       const result = PushNotificationAndroid.registerEventListener("register");
     } else {
-      const obj2 = _modDef10742;
+      const obj2 = _modDef10862;
       const listener = obj2.addEventListener("register", handleToken);
     }
   },

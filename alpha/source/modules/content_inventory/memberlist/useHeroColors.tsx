@@ -1,16 +1,16 @@
-// Module ID: 11838
-// Function ID: 11839
+// Module ID: 11958
+// Function ID: 11959
 // Name: useHeroColors
-// Dependencies: [32, 19, 4795, 1191, 8008, 7965, 11839, 1089, 671, 504, 2]
+// Dependencies: [32, 19, 4914, 1191, 8128, 8085, 11959, 1089, 671, 504, 2]
 // Exports: default, getHeroColors
 
-// Module 11838 (useHeroColors)
+// Module 11958 (useHeroColors)
 import _modDef671 from "module_671" /* 671 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1089 */;
-import _modDef7965 from "module_7965" /* 7965 */;
+import _modDef8085 from "module_8085" /* 8085 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4795 */;
+import AccessibilityStore from "AccessibilityStore" /* 4914 */;
 import ThemeStore from "ThemeStore" /* 1191 */;
 import size from "module_2" /* 2 */;
 
@@ -28,9 +28,9 @@ export default function useHeroColors(pendingAvatarSrc) {
   let obj2 = first(504);
   const items1 = [ThemeStore];
   const stateFromStores1 = obj2.useStateFromStores(items1, () => theme.theme);
-  let obj3 = first(11839);
+  let obj3 = first(11959);
   const fallbackHeroColor = obj3.getFallbackHeroColor(stateFromStores1, stateFromStores);
-  let obj4 = first(8008);
+  let obj4 = first(8128);
   [first, tmp6] = obj4.useAvatarColors(pendingAvatarSrc, fallbackHeroColor);
   let closure_1 = tmp6;
   const items2 = [first, tmp6];
@@ -98,13 +98,13 @@ export function getHeroColors(iconURL) {
   const tmp = AccessibilityStore;
   const saturation = AccessibilityStore.saturation;
   const theme = ThemeStore.theme;
-  let obj = num(11839);
+  let obj = num(11959);
   const fallbackHeroColor = obj.getFallbackHeroColor(theme, saturation);
   num = 1;
   if (AccessibilityStore.desaturateUserColors) {
     num = tmp.saturation;
   }
-  const useColorStore = tmp2(8008).useColorStore;
+  const useColorStore = tmp2(8128).useColorStore;
   const arr = useColorStore.getState().palette[iconURL];
   let mapped;
   if (arr != null) {
@@ -116,11 +116,11 @@ export function getHeroColors(iconURL) {
       let tmp2;
       let tmp3;
       [tmp, tmp2, tmp3] = item;
-      const obj = _modDef7965({ r: tmp, g: tmp2, b: tmp3 });
+      const obj = _modDef8085({ r: tmp, g: tmp2, b: tmp3 });
       ({ h, s, l } = obj.toHsl());
       const obj2 = { h, s: s * num, l };
       obj.toHsl();
-      const obj3 = _modDef7965(obj2);
+      const obj3 = _modDef8085(obj2);
       return obj3.toHexString();
     });
   }

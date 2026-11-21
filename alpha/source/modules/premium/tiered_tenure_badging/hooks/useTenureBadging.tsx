@@ -1,18 +1,18 @@
-// Module ID: 13836
-// Function ID: 13837
+// Module ID: 13958
+// Function ID: 13959
 // Name: useTenureBadging
-// Dependencies: [19, 6837, 1386, 2177, 1388, 504, 13837, 2108, 13838, 6844, 2]
+// Dependencies: [19, 6956, 1386, 2178, 1388, 504, 13959, 2108, 13960, 6963, 2]
 // Exports: usePremiumSinceForUser, useTieredTenureBadge, useTieredTenureBadgeData, useTieredTenureBadgeDataForUser, useTieredTenureBadgesFromSubscriptionData, useTieredTenureEarnedOnDate
 
-// Module 13836 (useTenureBadging)
+// Module 13958 (useTenureBadging)
 import react from "react" /* 19 */;
 import get_initialized from "get initialized" /* 504 */;
-import TieredTenureBadgeUtils from "TieredTenureBadgeUtils" /* 6844 */;
-import useTieredTenureBadgeForUser2 from "useTieredTenureBadgeForUser" /* 13837 */;
-import PremiumPerkGates from "PremiumPerkGates" /* 13838 */;
-import UserProfileStore from "UserProfileStore" /* 6837 */;
+import TieredTenureBadgeUtils from "TieredTenureBadgeUtils" /* 6963 */;
+import useTieredTenureBadgeForUser2 from "useTieredTenureBadgeForUser" /* 13959 */;
+import PremiumPerkGates from "PremiumPerkGates" /* 13960 */;
+import UserProfileStore from "UserProfileStore" /* 6956 */;
 import UserStore from "UserStore" /* 1386 */;
-import SubscriptionStore from "SubscriptionStore" /* 2177 */;
+import SubscriptionStore from "SubscriptionStore" /* 2178 */;
 import PremiumConstants from "PremiumConstants" /* 1388 */;
 import size from "module_2" /* 2 */;
 
@@ -20,8 +20,8 @@ let _require, userProfile;
 
 let metroImportDefault;
 let metroRequire;
-const f104926 = () => authStore.getCurrentUser();
-const f104932 = () => premiumTypeSubscription.getPremiumTypeSubscription();
+const f105314 = () => authStore.getCurrentUser();
+const f105320 = () => premiumTypeSubscription.getPremiumTypeSubscription();
 function usePremiumSince() {
   let currentUser;
   let require;
@@ -121,7 +121,7 @@ export { TieredTenureBadgeStatus };
 export function useTieredTenureBadge() {
   const items = [UserStore];
   const obj = get_initialized;
-  const stateFromStores = obj.useStateFromStores(items, f104926);
+  const stateFromStores = obj.useStateFromStores(items, f105314);
   let id;
   const useTieredTenureBadgeForUser = useTieredTenureBadgeForUser2.useTieredTenureBadgeForUser;
   useTieredTenureBadgeForUser2;
@@ -187,7 +187,7 @@ export function useTieredTenureBadgesFromSubscriptionData() {
   const obj3 = PremiumPerkGates;
   if (obj3.canUseTenureBadge(stateFromStores)) {
     let premiumSince;
-    const getEarnedTenureBadge = tmp(6844).getEarnedTenureBadge;
+    const getEarnedTenureBadge = tmp(6963).getEarnedTenureBadge;
     TieredTenureBadgeUtils;
     if (stateFromStores1 != null) {
       premiumSince = stateFromStores1.premiumSince;
@@ -199,7 +199,7 @@ export function useTieredTenureBadgesFromSubscriptionData() {
 export function useTieredTenureEarnedOnDate() {
   const items = [UserStore];
   const obj = get_initialized;
-  const stateFromStores = obj.useStateFromStores(items, f104926);
+  const stateFromStores = obj.useStateFromStores(items, f105314);
   let id;
   const useTieredTenureBadgeForUser = useTieredTenureBadgeForUser2.useTieredTenureBadgeForUser;
   useTieredTenureBadgeForUser2;
@@ -212,7 +212,7 @@ export function useTieredTenureEarnedOnDate() {
   }
   const items1 = [SubscriptionStore];
   const tmpResult = get_initialized;
-  const stateFromStores1 = tmpResult.useStateFromStores(items1, f104932);
+  const stateFromStores1 = tmpResult.useStateFromStores(items1, f105320);
   let earnedOnDate = null;
   if (null != tieredTenureBadgeForUser) {
     earnedOnDate = null;
@@ -245,7 +245,7 @@ export function useTieredTenureBadgeData() {
   }
   const items1 = [tmp3];
   const tmpResult8 = get_initialized;
-  const stateFromStores1 = tmpResult8.useStateFromStores(items1, f104926);
+  const stateFromStores1 = tmpResult8.useStateFromStores(items1, f105314);
   let id1;
   const useTieredTenureBadgeForUser = useTieredTenureBadgeForUser2.useTieredTenureBadgeForUser;
   useTieredTenureBadgeForUser2;
@@ -258,7 +258,7 @@ export function useTieredTenureBadgeData() {
   }
   const items2 = [SubscriptionStore];
   const tmpResult10 = get_initialized;
-  const stateFromStores2 = tmpResult10.useStateFromStores(items2, f104932);
+  const stateFromStores2 = tmpResult10.useStateFromStores(items2, f105320);
   let earnedOnDate = null;
   if (null != tieredTenureBadgeForUser1) {
     earnedOnDate = null;

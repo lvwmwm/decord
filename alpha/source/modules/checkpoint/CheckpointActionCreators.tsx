@@ -1,23 +1,23 @@
-// Module ID: 12378
-// Function ID: 12379
+// Module ID: 12500
+// Function ID: 12501
 // Name: CheckpointActionCreators
-// Dependencies: [5, 4643, 12370, 1071, 572, 12368, 6220, 12371, 1284, 7617, 8262, 8130, 9941, 1254, 2]
-// Exports: completeCheckpoint, fetchCheckpointData, resetCheckpoint, saveCheckpointProgress, selectCharacterTrait, sendCheckpointCard, sendSidekickMessage, setVolume, toggleMute
+// Dependencies: [5, 4762, 12492, 1071, 572, 12490, 6339, 12493, 1284, 7737, 8382, 8250, 10061, 1254, 2]
+// Exports: completeCheckpoint, fetchCheckpointData, resetCheckpointCharacter, resetCheckpointProgress, saveCheckpointProgress, selectCharacterTrait, sendCheckpointCard, sendSidekickMessage, setVolume, toggleMute
 
-// Module 12378 (CheckpointActionCreators)
+// Module 12500 (CheckpointActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
 import HTTPUtils from "HTTPUtils" /* 1284 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7617 */;
-import formatResults from "formatResults" /* 9941 */;
-import Tracking from "Tracking" /* 12368 */;
-import CheckpointStore2 from "CheckpointStore" /* 12370 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7737 */;
+import formatResults from "formatResults" /* 10061 */;
+import Tracking from "Tracking" /* 12490 */;
+import CheckpointStore2 from "CheckpointStore" /* 12492 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 4643 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
 import size from "module_2" /* 2 */;
 
 const CheckpointStore = CheckpointStore2;
-let c1, c10, c5, c7, c9;
+let c0, c1, c10, c5, c7, c9;
 
 let obj = function _fetchCheckpointData() {
   let constants2;
@@ -243,12 +243,12 @@ obj = function _completeCheckpoint() {
   });
   return obj(...arguments);
 };
-obj = function _resetCheckpoint() {
+obj = function _resetCheckpointCharacter() {
   obj = _asyncToGenerator(async (arg0, value) => {
-    if (c3 === 2) {
-      c3 = 3;
+    if (c0 === 2) {
+      c0 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
+    } else if (tmp2 === 3) {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
@@ -260,52 +260,45 @@ obj = function _resetCheckpoint() {
     } else {
       let c2;
       try {
-        c3 = 2;
+        c0 = 2;
         if (0 === c1) {
           if (arg0 === 1) {
-            c3 = 3;
+            c0 = 3;
             throw value;
           } else if (arg0 === 2) {
-            c3 = 3;
-            const obj4 = { value, done: true };
-            return obj4;
+            c0 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
           } else {
-            let closure_0 = tmp;
-            const obj7 = DispatcherDefault;
-            obj7.dispatch({ type: "CHECKPOINT_RESET_START" });
             c2 = 1;
             const HTTP = HTTPUtils.HTTP;
-            const obj5 = { url: constants.CHECKPOINT_RESET, rejectWithError: true };
+            const obj4 = { url: constants.CHECKPOINT_RESET, rejectWithError: true };
             c1 = 2;
-            c3 = 1;
-            const obj6 = { value: HTTP.del(obj5), done: false };
-            return obj6;
+            c0 = 1;
+            const obj5 = { value: HTTP.del(obj4), done: false };
+            return obj5;
           }
-        } else if (1 === tmp4) {
+        } else if (1 === tmp3) {
           c2 = 0;
-          const obj3 = closure_128_1(closure_128_2[4]);
-          obj3.dispatch({ type: "CHECKPOINT_RESET_FAILED" });
-          c3 = 3;
+          c0 = 3;
           return { value: false, done: true };
         } else if (arg0 === 1) {
-          c3 = 3;
+          c0 = 3;
           throw value;
         } else if (arg0 === 2) {
           c2 = 0;
-          c3 = 3;
-          const obj8 = { value, done: true };
-          return obj8;
+          c0 = 3;
+          obj = { value, done: true };
+          return obj;
         } else {
-          obj = closure_128_1(closure_128_2[4]);
-          obj.dispatch({ type: "CHECKPOINT_RESET_SUCCESS" });
           c2 = 0;
-          c3 = 3;
+          c0 = 3;
           return { value: true, done: true };
         }
-      } catch (tmp13) {
+      } catch (tmp7) {
         if (0 === c2) {
-          c3 = 3;
-          throw tmp13;
+          c0 = 3;
+          throw tmp7;
         } else {
           c1 = 1;
         }
@@ -547,7 +540,11 @@ export function fetchCheckpointData() {
 export function completeCheckpoint() {
   return obj(...arguments);
 }
-export function resetCheckpoint() {
+export function resetCheckpointProgress() {
+  obj = DispatcherDefault;
+  return obj.dispatch({ type: "CHECKPOINT_RESET_PROGRESS" });
+}
+export function resetCheckpointCharacter() {
   return obj(...arguments);
 }
 export function sendSidekickMessage() {

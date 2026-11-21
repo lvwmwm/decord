@@ -1,29 +1,29 @@
-// Module ID: 17171
-// Function ID: 17172
+// Module ID: 17295
+// Function ID: 17296
 // Name: HeroBlockOrbsArcadeHeader
-// Dependencies: [32, 19, 17, 4795, 9836, 1071, 21, 575, 9852, 17172, 4794, 9835, 6444, 7745, 5358, 671, 4791, 504, 16273, 1501, 5400, 9134, 5481, 17173, 5349, 5385, 1112, 5392, 5003, 4801, 4855, 2]
+// Dependencies: [32, 19, 17, 4914, 9956, 1071, 21, 575, 9972, 17296, 4913, 9955, 6563, 7865, 5477, 671, 4910, 504, 16396, 1501, 5519, 9254, 5600, 17297, 5468, 5504, 1112, 5511, 5122, 4920, 4974, 2]
 // Exports: default
 
-// Module 17171 (HeroBlockOrbsArcadeHeader)
+// Module 17295 (HeroBlockOrbsArcadeHeader)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
-import shared from "shared" /* 4801 */;
-import native from "native" /* 4855 */;
-import useThemeDefault from "useTheme" /* 5003 */;
-import useToken from "useToken" /* 5358 */;
-import QuestContent from "QuestContent" /* 6444 */;
-import inlineStyles from "inlineStyles" /* 7745 */;
-import QuestUtils from "QuestUtils" /* 9835 */;
-import QuestHomeNavigationStore from "QuestHomeNavigationStore" /* 9836 */;
-import _modDef17172 from "module_17172" /* 17172 */;
+import shared from "shared" /* 4920 */;
+import native from "native" /* 4974 */;
+import useThemeDefault from "useTheme" /* 5122 */;
+import useToken from "useToken" /* 5477 */;
+import QuestContent from "QuestContent" /* 6563 */;
+import inlineStyles from "inlineStyles" /* 7865 */;
+import QuestUtils from "QuestUtils" /* 9955 */;
+import QuestHomeNavigationStore from "QuestHomeNavigationStore" /* 9956 */;
+import _modDef17296 from "module_17296" /* 17296 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4795 */;
+import AccessibilityStore from "AccessibilityStore" /* 4914 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import AssetUtils from "AssetUtils" /* 9852 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import AssetUtils from "AssetUtils" /* 9972 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -42,7 +42,7 @@ let obj5;
 let obj6;
 let tmp4;
 let unpackModuleId;
-const Text_Text = tmp4(5385);
+const Text_Text = tmp4(5504);
 function handleVisitArcade() {
   const obj = QuestUtils;
   const obj2 = { mergeExistingRoutes: true, fromContent: QuestContent.QuestContent.ORBS_SHOP_HERO_CTA, scrollToSection: QuestHomeSection.ORBS_ARCADE };
@@ -104,7 +104,7 @@ function RadialGradientLayer(color) {
       items1 = [authStore(Defs, obj4), ];
       const size2 = { width: "100%", height: "100%", fill: "url(#" + id + ")" };
       const _HermesInternal3 = HermesInternal;
-      const Rect = tmp11(7745).Rect;
+      const Rect = tmp11(7865).Rect;
       items1[1] = authStore(Rect, size2);
       tmp6Result = tmp6(tmp9, size1);
     }
@@ -218,7 +218,7 @@ function HeroBlockOrbsArcadeHeaderContent(bleedsOntoPage) {
         preventsDisplaySleepDuringVideoPlayback: false,
         importantForAccessibility: "no-hide-descendants"
       };
-      obj9 = { uri: require("module_17172") };
+      obj9 = { uri: require("module_17296") };
       const VideoComponent = tmp2(tmp3[21]).VideoComponent;
       tmp28 = !isInView;
       if (isInView) {
@@ -278,7 +278,7 @@ function HeroBlockOrbsArcadeHeaderContent(bleedsOntoPage) {
     return closure_11(fontScale, obj5);
   }
   const obj21 = { source: obj22, style: tmp.image, accessible: false };
-  obj22 = { uri: require("module_17173") };
+  obj22 = { uri: require("module_17297") };
   const tmp4Result = require("FastImage");
   tmp26Result = tmp26(tmp4Result, obj21);
 }
@@ -290,7 +290,7 @@ const QuestHomeSection = QuestHomeNavigationStore.QuestHomeSection;
 ({ jsx: c10, jsxs: unpackModuleId, Fragment: closure_12 } = Fragment);
 let c13 = 289;
 const PX_16 = nativeDefault.space.PX_16;
-const metadata = AssetUtils.convertVideoToFirstFrameImageWithMediaProxy(_modDef17172);
+const metadata = AssetUtils.convertVideoToFirstFrameImageWithMediaProxy(_modDef17296);
 const PX_48 = nativeDefault.space.PX_48;
 const ellipse = { cx: 85.5, cy: 267.5, rx: 329, ry: 217, rotation: 63 };
 const ellipse2 = { cx: 67, cy: 231, rx: 185, ry: 155 };

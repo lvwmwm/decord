@@ -1,14 +1,14 @@
-// Module ID: 18688
-// Function ID: 18689
+// Module ID: 18815
+// Function ID: 18816
 // Name: LinksScreen
-// Dependencies: [19, 8456, 21, 18672, 18679, 18687, 18607, 18680, 18681, 13077, 18685, 18614, 2]
+// Dependencies: [19, 8576, 21, 18799, 18806, 18814, 18734, 18807, 18808, 13199, 18812, 18741, 2]
 
-// Module 18688 (LinksScreen)
+// Module 18815 (LinksScreen)
 import Fragment from "Fragment" /* 21 */;
-import SearchPlatformUtils from "SearchPlatformUtils" /* 13077 */;
-import BaseMessagesScreen from "BaseMessagesScreen" /* 18681 */;
+import SearchPlatformUtils from "SearchPlatformUtils" /* 13199 */;
+import BaseMessagesScreen from "BaseMessagesScreen" /* 18808 */;
 import react from "react" /* 19 */;
-import SearchConstants from "SearchConstants" /* 8456 */;
+import SearchConstants from "SearchConstants" /* 8576 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

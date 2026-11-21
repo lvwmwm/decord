@@ -1,10 +1,10 @@
-// Module ID: 12103
-// Function ID: 12104
+// Module ID: 12225
+// Function ID: 12226
 // Name: UserProfileEmbedRenderingMobileExperiment
 // Dependencies: [1450, 2]
 // Exports: getIsUserProfileEmbedRenderingMobileEnabled
 
-// Module 12103 (UserProfileEmbedRenderingMobileExperiment)
+// Module 12225 (UserProfileEmbedRenderingMobileExperiment)
 import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 

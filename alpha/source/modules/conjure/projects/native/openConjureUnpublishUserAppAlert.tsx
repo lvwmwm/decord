@@ -1,15 +1,15 @@
-// Module ID: 18174
-// Function ID: 18175
+// Module ID: 18301
+// Function ID: 18302
 // Name: openConjureUnpublishUserAppAlert
-// Dependencies: [5, 32, 19, 2163, 21, 504, 12188, 1112, 4091, 5476, 5747, 5385, 5743, 2]
+// Dependencies: [5, 32, 19, 2164, 21, 504, 12310, 1112, 4190, 5595, 5866, 5504, 5862, 2]
 // Exports: default
 
-// Module 18174 (openConjureUnpublishUserAppAlert)
-import useAlertStore from "useAlertStore" /* 5743 */;
+// Module 18301 (openConjureUnpublishUserAppAlert)
+import useAlertStore from "useAlertStore" /* 5862 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 2163 */;
+import ApplicationStore from "ApplicationStore" /* 2164 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -127,7 +127,7 @@ function ConjureUnpublishUserAppAlert(project) {
     }
     return name;
   }, items1);
-  let obj2 = { title: intl.formatToPlainString(require("module_4091").m8KWic, { app: stateFromStores }), content: string(wve4kB), extraContent: tmp6Result, actions: closure_9(closure_8, obj4) };
+  let obj2 = { title: intl.formatToPlainString(require("module_4190").m8KWic, { app: stateFromStores }), content: string(wve4kB), extraContent: tmp6Result, actions: closure_9(closure_8, obj4) };
   const AlertModal = project(stateFromStores[10]).AlertModal;
   intl = project(stateFromStores[7]).intl;
   let intl2 = project(stateFromStores[7]).intl;

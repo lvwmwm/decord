@@ -1,20 +1,20 @@
-// Module ID: 13186
-// Function ID: 13187
+// Module ID: 13308
+// Function ID: 13309
 // Name: ChatInputCharCounter
-// Dependencies: [32, 19, 1386, 1071, 1388, 21, 4794, 575, 504, 2172, 9999, 10339, 5476, 1112, 6910, 5385, 8832, 2]
+// Dependencies: [32, 19, 1386, 1071, 1388, 21, 4913, 575, 504, 2173, 10119, 10459, 5595, 1112, 7030, 5504, 8952, 2]
 
-// Module 13186 (ChatInputCharCounter)
+// Module 13308 (ChatInputCharCounter)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
 import PremiumConstants from "PremiumConstants" /* 1388 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5476 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 10339 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5595 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 10459 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1386 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4794 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -59,7 +59,7 @@ class ChatCounter {
       const obj = stateFromStores(maxLength[9]);
       return obj.canUseIncreasedMessageLength(currentUser.getCurrentUser());
     });
-    const tmp5 = stateFromStores(9999)();
+    const tmp5 = stateFromStores(10119)();
     dependencyMap = tmp5;
     let result = tmp5 / 10;
     _slicedToArray = result;
@@ -105,38 +105,38 @@ class ChatCounter {
       const tmp19 = closure_10;
       let obj2 = { onPress: callback, style: items2, children: items3 };
       items2 = [tmp.container, style];
-      const PressableOpacity3 = tmp2(6910).PressableOpacity;
+      const PressableOpacity3 = tmp2(7030).PressableOpacity;
       let obj3 = { color: "text-feedback-critical", lineClamp: 1, variant: "footnote/semibold", children: "-" + first };
       const _HermesInternal = HermesInternal;
-      const Text = tmp2(5385).Text;
+      const Text = tmp2(5504).Text;
       items3 = [closure_9(Text, obj3), ];
       let tmp20Result = null;
       const tmp20 = closure_9;
       if (!stateFromStores) {
-        tmp20Result = tmp20(tmp2(8832).NitroWheelIcon, { size: "xs", color: "icon-muted" });
+        tmp20Result = tmp20(tmp2(8952).NitroWheelIcon, { size: "xs", color: "icon-muted" });
       }
       items3[1] = tmp20Result;
       tmp16Result = tmp19(PressableOpacity3, obj2);
     } else if (first >= -result) {
       let obj4 = { onPress: callback, style: items4, children: items5 };
       items4 = [tmp.container, style];
-      const PressableOpacity2 = tmp2(6910).PressableOpacity;
+      const PressableOpacity2 = tmp2(7030).PressableOpacity;
       let obj5 = { color: "text-default", lineClamp: 1, variant: "footnote/semibold", children: -first };
-      items5 = [closure_9(tmp2(5385).Text, obj5), ];
+      items5 = [closure_9(tmp2(5504).Text, obj5), ];
       let tmp17Result = null;
       const tmp16 = closure_10;
       const tmp17 = closure_9;
       if (tmp11) {
-        tmp17Result = tmp17(tmp2(8832).NitroWheelIcon, { size: "xs", color: "icon-muted" });
+        tmp17Result = tmp17(tmp2(8952).NitroWheelIcon, { size: "xs", color: "icon-muted" });
       }
       items5[1] = tmp17Result;
       tmp16Result = tmp16(PressableOpacity2, obj4);
     } else {
       tmp16Result = null;
       if (tmp11) {
-        let obj6 = { onPress: callback, style: items6, children: closure_9(tmp2(8832).NitroWheelIcon, { size: "xs", color: "icon-muted" }) };
+        let obj6 = { onPress: callback, style: items6, children: closure_9(tmp2(8952).NitroWheelIcon, { size: "xs", color: "icon-muted" }) };
         items6 = [tmp.container, style];
-        const PressableOpacity = tmp2(6910).PressableOpacity;
+        const PressableOpacity = tmp2(7030).PressableOpacity;
         tmp16Result = closure_9(PressableOpacity, obj6);
       }
     }

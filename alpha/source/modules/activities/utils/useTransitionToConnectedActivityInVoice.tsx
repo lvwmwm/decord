@@ -1,16 +1,16 @@
-// Module ID: 19091
-// Function ID: 19092
+// Module ID: 19218
+// Function ID: 19219
 // Name: useTransitionToConnectedActivityInVoice
-// Dependencies: [5, 19, 4643, 4697, 1071, 4715, 5441, 10591, 10515, 1107, 2]
+// Dependencies: [5, 19, 4762, 4816, 1071, 4834, 5560, 10711, 10635, 1107, 2]
 // Exports: default
 
-// Module 19091 (useTransitionToConnectedActivityInVoice)
+// Module 19218 (useTransitionToConnectedActivityInVoice)
 import Constants from "Constants" /* 1071 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1107 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4643 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4697 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4816 */;
 import size from "module_2" /* 2 */;
 
 let channelId, guild_id;

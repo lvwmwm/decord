@@ -1,27 +1,27 @@
-// Module ID: 12913
-// Function ID: 12914
+// Module ID: 13035
+// Function ID: 13036
 // Name: AppLauncherCommandOption
-// Dependencies: [19, 17, 1499, 21, 4794, 575, 2117, 12914, 12920, 12922, 12925, 12927, 12928, 12932, 6557, 12935, 12936, 12942, 6910, 7111, 2]
+// Dependencies: [19, 17, 1499, 21, 4913, 575, 2117, 13036, 13042, 13044, 13047, 13049, 13050, 13054, 6676, 13057, 13058, 13064, 7030, 7231, 2]
 // Exports: default
 
-// Module 12913 (AppLauncherCommandOption)
+// Module 13035 (AppLauncherCommandOption)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1499 */;
-import utils_AutocompleteUtilsDefault from "utils/AutocompleteUtils" /* 6557 */;
-import AppLauncherChoicesOptionDefault from "AppLauncherChoicesOption" /* 12914 */;
-import AppLauncherAutocompleteOptionDefault from "AppLauncherAutocompleteOption" /* 12920 */;
-import AppLauncherTextInputOptionDefault from "AppLauncherTextInputOption" /* 12922 */;
-import AppLauncherAttachmentOptionDefault from "AppLauncherAttachmentOption" /* 12925 */;
-import AppLauncherBooleanOptionDefault from "AppLauncherBooleanOption" /* 12927 */;
-import AppLauncherMentionableOptionDefault from "AppLauncherMentionableOption" /* 12928 */;
-import AppLauncherMentionableListActionSheet from "AppLauncherMentionableListActionSheet" /* 12932 */;
-import AppLauncherRoleOptionDefault from "AppLauncherRoleOption" /* 12935 */;
-import AppLauncherUserOptionDefault from "AppLauncherUserOption" /* 12936 */;
-import AppLauncherChannelOptionDefault from "AppLauncherChannelOption" /* 12942 */;
+import utils_AutocompleteUtilsDefault from "utils/AutocompleteUtils" /* 6676 */;
+import AppLauncherChoicesOptionDefault from "AppLauncherChoicesOption" /* 13036 */;
+import AppLauncherAutocompleteOptionDefault from "AppLauncherAutocompleteOption" /* 13042 */;
+import AppLauncherTextInputOptionDefault from "AppLauncherTextInputOption" /* 13044 */;
+import AppLauncherAttachmentOptionDefault from "AppLauncherAttachmentOption" /* 13047 */;
+import AppLauncherBooleanOptionDefault from "AppLauncherBooleanOption" /* 13049 */;
+import AppLauncherMentionableOptionDefault from "AppLauncherMentionableOption" /* 13050 */;
+import AppLauncherMentionableListActionSheet from "AppLauncherMentionableListActionSheet" /* 13054 */;
+import AppLauncherRoleOptionDefault from "AppLauncherRoleOption" /* 13057 */;
+import AppLauncherUserOptionDefault from "AppLauncherUserOption" /* 13058 */;
+import AppLauncherChannelOptionDefault from "AppLauncherChannelOption" /* 13064 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4794 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -277,9 +277,9 @@ export default function AppLauncherCommandOption(option) {
           onPress() {
                   return onDismiss(option);
                 },
-          children: tmp13(tmp2(7111).CircleXIcon, { size: "md" })
+          children: tmp13(tmp2(7231).CircleXIcon, { size: "md" })
         };
-        const PressableOpacity = tmp2(6910).PressableOpacity;
+        const PressableOpacity = tmp2(7030).PressableOpacity;
         items[1] = tmp13(PressableOpacity, obj9);
         tmp61 = closure_6(View, obj7);
       }

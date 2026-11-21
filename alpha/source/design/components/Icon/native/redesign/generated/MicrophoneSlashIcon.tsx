@@ -1,14 +1,14 @@
-// Module ID: 9564
-// Function ID: 9565
+// Module ID: 9684
+// Function ID: 9685
 // Name: MicrophoneSlashIcon
-// Dependencies: [19, 21, 575, 5480, 9565, 2]
+// Dependencies: [19, 21, 575, 5599, 9685, 2]
 // Exports: MicrophoneSlashIcon
 
-// Module 9564 (MicrophoneSlashIcon)
+// Module 9684 (MicrophoneSlashIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5480 */;
-import AssetRegistry from "AssetRegistry" /* 9565 */;
+import BaseIconImage2 from "BaseIconImage" /* 5599 */;
+import AssetRegistry from "AssetRegistry" /* 9685 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

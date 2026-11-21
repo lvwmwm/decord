@@ -1,17 +1,17 @@
-// Module ID: 10304
-// Function ID: 10305
+// Module ID: 10424
+// Function ID: 10425
 // Name: Chat
-// Dependencies: [19, 4795, 21, 4794, 10305, 5054, 10311, 10312, 504, 10285, 2]
+// Dependencies: [19, 4914, 21, 4913, 10425, 5173, 10431, 10432, 504, 10405, 2]
 // Exports: default
 
-// Module 10304 (Chat)
+// Module 10424 (Chat)
 import get_initialized from "get initialized" /* 504 */;
-import ChatNativeComponentDefault from "ChatNativeComponent" /* 10285 */;
-import ChatListNativeComponentDefault from "ChatListNativeComponent" /* 10311 */;
+import ChatNativeComponentDefault from "ChatNativeComponent" /* 10405 */;
+import ChatListNativeComponentDefault from "ChatListNativeComponent" /* 10431 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4795 */;
+import AccessibilityStore from "AccessibilityStore" /* 4914 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4794 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -21,7 +21,7 @@ function DCDChatList() {
   let obj3;
   let tmp5;
   const tmp = closure_7();
-  const obj = navigationTTIContentPainted(10305);
+  const obj = navigationTTIContentPainted(10425);
   navigationTTIContentPainted = obj.useNavigationTTIContentPainted();
   const items = [navigationTTIContentPainted];
   const memo = react.useMemo(() => {
@@ -32,8 +32,8 @@ function DCDChatList() {
   }, []);
   const callback = react.useCallback((nativeEvent) => navigationTTIContentPainted(nativeEvent.nativeEvent), items);
   const obj2 = { gesture: memo, children: closure_5(tmp5, obj3) };
-  const GestureDetector = navigationTTIContentPainted(5054).GestureDetector;
-  obj3 = { style: tmp.chatList, floatingChatInputEnabled: true, onContentPaintStateChange: callback, children: closure_5(navigationTTIContentPainted(10312).TTIFirstContentfulPaint, { label: "chat_list_android" }) };
+  const GestureDetector = navigationTTIContentPainted(5173).GestureDetector;
+  obj3 = { style: tmp.chatList, floatingChatInputEnabled: true, onContentPaintStateChange: callback, children: closure_5(navigationTTIContentPainted(10432).TTIFirstContentfulPaint, { label: "chat_list_android" }) };
   tmp5 = ChatListNativeComponentDefault;
   return closure_5(GestureDetector, obj2);
 }

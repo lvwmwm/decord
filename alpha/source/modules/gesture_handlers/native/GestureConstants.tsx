@@ -1,9 +1,9 @@
-// Module ID: 11649
-// Function ID: 11650
+// Module ID: 11769
+// Function ID: 11770
 // Name: GestureConstants
 // Dependencies: [1653, 2]
 
-// Module 11649 (GestureConstants)
+// Module 11769 (GestureConstants)
 import _mod1653 from "module_1653" /* 1653 */;
 import size from "module_2" /* 2 */;
 

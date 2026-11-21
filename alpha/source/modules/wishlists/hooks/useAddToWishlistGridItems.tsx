@@ -1,12 +1,12 @@
-// Module ID: 14500
-// Function ID: 14501
+// Module ID: 14622
+// Function ID: 14623
 // Name: useAddToWishlistGridItems
-// Dependencies: [19, 1388, 9464, 14401, 2]
+// Dependencies: [19, 1388, 9584, 14523, 2]
 // Exports: useAddToWishlistGridItems
 
-// Module 14500 (useAddToWishlistGridItems)
+// Module 14622 (useAddToWishlistGridItems)
 import PremiumConstants from "PremiumConstants" /* 1388 */;
-import WishlistUtils from "WishlistUtils" /* 14401 */;
+import WishlistUtils from "WishlistUtils" /* 14523 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

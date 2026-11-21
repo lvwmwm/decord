@@ -1,14 +1,14 @@
-// Module ID: 19741
-// Function ID: 19742
+// Module ID: 19868
+// Function ID: 19869
 // Name: GuildConfigGates
-// Dependencies: [5, 19742, 1071, 504, 1284, 572, 2]
+// Dependencies: [5, 19869, 1071, 504, 1284, 572, 2]
 // Exports: useApplicationIdentityLinkedRolesEnabled, useGuildVerificationRoleEnabled
 
-// Module 19741 (GuildConfigGates)
+// Module 19868 (GuildConfigGates)
 import Constants from "Constants" /* 1071 */;
 import HTTPUtils from "HTTPUtils" /* 1284 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GuildConfigGatesStore from "GuildConfigGatesStore" /* 19742 */;
+import GuildConfigGatesStore from "GuildConfigGatesStore" /* 19869 */;
 import get_initialized from "get initialized" /* 504 */;
 import size from "module_2" /* 2 */;
 

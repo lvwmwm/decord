@@ -1,9 +1,9 @@
-// Module ID: 6303
-// Function ID: 6304
+// Module ID: 6422
+// Function ID: 6423
 // Name: AgeNoticeConstants
 // Dependencies: [2]
 
-// Module 6303 (AgeNoticeConstants)
+// Module 6422 (AgeNoticeConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/age_assurance/age_notice/AgeNoticeConstants.tsx");

@@ -1,15 +1,15 @@
-// Module ID: 13263
-// Function ID: 13264
+// Module ID: 13385
+// Function ID: 13386
 // Name: GuildDismissibleContentUtils
-// Dependencies: [1230, 1071, 4640, 1081, 4626, 504, 4624, 1255, 4627, 2]
+// Dependencies: [1230, 1071, 4759, 1081, 4745, 504, 4743, 1255, 4746, 2]
 // Exports: isContentDismissed, markContentAsDismissed, unmarkContentAsDismissed, useIsContentDismissed
 
-// Module 13263 (GuildDismissibleContentUtils)
+// Module 13385 (GuildDismissibleContentUtils)
 import Constants from "Constants" /* 1071 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1081 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import Uint8ArrayUtils from "Uint8ArrayUtils" /* 4626 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4640 */;
+import Uint8ArrayUtils from "Uint8ArrayUtils" /* 4745 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4759 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1230 */;
 import size from "module_2" /* 2 */;
 
@@ -70,7 +70,7 @@ export function markContentAsDismissed(GAME_SERVER_HOSTING_GUILD_ELIGIBLE_COACHM
   const tmp4 = arg2;
   if (tmp4) {
     let UNKNOWN = AUTO_DISMISS;
-    const obj2 = { type: tmp(4627).DismissibleGuildContent[GAME_SERVER_HOSTING_GUILD_ELIGIBLE_COACHMARK], guild_id: guildId, action: UNKNOWN };
+    const obj2 = { type: tmp(4746).DismissibleGuildContent[GAME_SERVER_HOSTING_GUILD_ELIGIBLE_COACHMARK], guild_id: guildId, action: UNKNOWN };
     const track = AnalyticsUtilsDefault.track;
     const DISMISSIBLE_CONTENT_DISMISSED = AnalyticEvents.DISMISSIBLE_CONTENT_DISMISSED;
     AnalyticsUtilsDefault;

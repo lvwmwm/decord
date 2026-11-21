@@ -1,13 +1,13 @@
-// Module ID: 13391
-// Function ID: 13392
+// Module ID: 13513
+// Function ID: 13514
 // Name: ApplicationStreamActivityStatus
-// Dependencies: [19, 21, 1112, 13392, 13393, 13395, 2]
+// Dependencies: [19, 21, 1112, 13514, 13515, 13517, 2]
 // Exports: default
 
-// Module 13391 (ApplicationStreamActivityStatus)
+// Module 13513 (ApplicationStreamActivityStatus)
 import intl3 from "intl" /* 1112 */;
-import ActivityStatusIconDefault from "ActivityStatusIcon" /* 13392 */;
-import ActivityStatusTextDefault from "ActivityStatusText" /* 13395 */;
+import ActivityStatusIconDefault from "ActivityStatusIcon" /* 13514 */;
+import ActivityStatusTextDefault from "ActivityStatusText" /* 13517 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -66,7 +66,7 @@ export default function ApplicationStreamActivityStatus(hideText) {
   const tmp10 = hasOwnProperty;
   const tmp11 = React3;
   if (!hideIcon) {
-    const obj2 = { icon: tmp7(13393).TvIcon, style: iconStyle };
+    const obj2 = { icon: tmp7(13515).TvIcon, style: iconStyle };
     const tmp15 = ActivityStatusIconDefault;
     tmp12 = _false(tmp15, obj2);
   }

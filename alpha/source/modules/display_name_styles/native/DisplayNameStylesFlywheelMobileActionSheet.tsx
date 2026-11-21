@@ -1,22 +1,22 @@
-// Module ID: 18938
-// Function ID: 18939
+// Module ID: 19065
+// Function ID: 19066
 // Name: DisplayNameStylesFlywheelMobileActionSheet
-// Dependencies: [19, 17, 1386, 1071, 4640, 21, 4808, 4801, 5003, 504, 2172, 15734, 1112, 3149, 4826, 4627, 15818, 8074, 7069, 5022, 6897, 5357, 18939, 5481, 18943, 5385, 5392, 4794, 575, 2]
+// Dependencies: [19, 17, 1386, 1071, 4759, 21, 4927, 4920, 5122, 504, 2173, 15857, 1112, 3248, 4945, 4746, 15941, 8194, 7189, 5141, 7017, 5476, 19066, 5600, 19070, 5504, 5511, 4913, 575, 2]
 // Exports: default
 
-// Module 18938 (DisplayNameStylesFlywheelMobileActionSheet)
+// Module 19065 (DisplayNameStylesFlywheelMobileActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import dismissible_content from "dismissible_content" /* 4627 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4640 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4826 */;
-import openUserSettings from "openUserSettings" /* 8074 */;
-import openPremiumTryItOutModal from "openPremiumTryItOutModal" /* 15818 */;
+import dismissible_content from "dismissible_content" /* 4746 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4759 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4945 */;
+import openUserSettings from "openUserSettings" /* 8194 */;
+import openPremiumTryItOutModal from "openPremiumTryItOutModal" /* 15941 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1386 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4794 */;
+import createStyles from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -60,21 +60,21 @@ export default function DisplayNameStylesFlywheelMobileActionSheet(markAsDismiss
   let obj = enabled2;
   const ref = enabled2.useRef(null);
   let tmp2 = markAsDismissed;
-  const enabled = enabled2.useContext(markAsDismissed(4808).AccessibilityPreferencesContext).reducedMotion.enabled;
-  let obj2 = markAsDismissed(4801);
-  const isThemeDarkResult = obj2.isThemeDark(ref(5003)());
+  const enabled = enabled2.useContext(markAsDismissed(4927).AccessibilityPreferencesContext).reducedMotion.enabled;
+  let obj2 = markAsDismissed(4920);
+  const isThemeDarkResult = obj2.isThemeDark(ref(5122)());
   const tmp6 = closure_11();
   let obj3 = markAsDismissed(504);
   const items = [UserStore];
   const stateFromStores = obj3.useStateFromStores(items, () => currentUser.getCurrentUser());
-  let obj4 = ref(2172);
+  let obj4 = ref(2173);
   let result = obj4.canUsePremiumProfileCustomization(stateFromStores);
   dependencyMap = result;
-  const obj5 = markAsDismissed(15734);
+  const obj5 = markAsDismissed(15857);
   enabled2 = obj5.useTryItOutMobileRefreshConfig("DisplayNameStylesFlywheelMobileActionSheet").enabled;
   const intl = markAsDismissed(1112).intl;
   const string = intl.string;
-  const tmp9 = ref(3149);
+  const tmp9 = ref(3248);
   if (result) {
     stringResult = string(tmp9.TyUdka);
   } else {
@@ -118,10 +118,10 @@ export default function DisplayNameStylesFlywheelMobileActionSheet(markAsDismiss
     markAsDismissed(ContentDismissActionType.USER_DISMISS);
   }, items3);
   const obj6 = { ref, onDismiss: callback2, startExpanded: true, handleDisabled: true, children: closure_9(SafeAreaPaddingView, obj14) };
-  const BottomSheet = tmp2(5022).BottomSheet;
+  const BottomSheet = tmp2(5141).BottomSheet;
   let tmp15 = closure_10;
   const obj7 = { style: tmp6.content, children: items4 };
-  SafeAreaPaddingView = tmp2(6897).SafeAreaPaddingView;
+  SafeAreaPaddingView = tmp2(7017).SafeAreaPaddingView;
   items4 = [, , , , ];
   const obj8 = {
     onPress() {
@@ -132,30 +132,30 @@ export default function DisplayNameStylesFlywheelMobileActionSheet(markAsDismiss
       markAsDismissed(ContentDismissActionType.USER_DISMISS);
     }
   };
-  items4[0] = closure_9(tmp2(5357).ActionSheetHeaderBar, obj8);
+  items4[0] = closure_9(tmp2(5476).ActionSheetHeaderBar, obj8);
   const obj9 = { style: tmp6.imageContainer, children: items5 };
-  items5 = [enabled && tmp14(tmp2(18939).DisplayNameStylesV2AbstractUI, { resizeMode: "contain" }), ];
+  items5 = [enabled && tmp14(tmp2(19066).DisplayNameStylesV2AbstractUI, { resizeMode: "contain" }), ];
   let tmp14Result = !enabled;
-  enabled && closure_9(tmp2(18939).DisplayNameStylesV2AbstractUI, { resizeMode: "contain" });
+  enabled && closure_9(tmp2(19066).DisplayNameStylesV2AbstractUI, { resizeMode: "contain" });
   if (tmp14Result) {
     const obj10 = { source: obj11, style: tmp6.image, resizeMode: "contain" };
-    obj11 = { uri: ref(18943) };
-    const tmp4Result = ref(5481);
+    obj11 = { uri: ref(19070) };
+    const tmp4Result = ref(5600);
     tmp14Result = tmp14(tmp4Result, obj10);
   }
   items5[1] = tmp14Result;
   items4[1] = tmp15(View, obj9);
   let str = "text-overlay-dark";
-  const obj12 = { variant: "display-md", style: tmp6.title, color: str2, children: intl2.string(ref(3149).Uzms61) };
+  const obj12 = { variant: "display-md", style: tmp6.title, color: str2, children: intl2.string(ref(3248).Uzms61) };
   str2 = "text-overlay-dark";
-  const Text = tmp2(5385).Text;
+  const Text = tmp2(5504).Text;
   if (isThemeDarkResult) {
     str2 = "text-overlay-light";
   }
   intl2 = tmp2(1112).intl;
   items4[2] = closure_9(Text, obj12);
   const obj13 = { variant: "body-lg/medium", style: tmp6.subtitle, color: str, children: stringResult };
-  const Text2 = tmp2(5385).Text;
+  const Text2 = tmp2(5504).Text;
   if (isThemeDarkResult) {
     str = "text-overlay-light";
   }
@@ -163,11 +163,11 @@ export default function DisplayNameStylesFlywheelMobileActionSheet(markAsDismiss
   items4[3] = closure_9(Text2, obj13);
   const obj15 = { style: tmp6.actions, children: items6 };
   const obj16 = { text: intl3.string(tmp2(1112).t["4P5I8V"]), variant: "primary", size: "lg", onPress: callback };
-  const Button = tmp2(5392).Button;
+  const Button = tmp2(5511).Button;
   intl3 = tmp2(1112).intl;
   items6 = [tmp14(Button, obj16), ];
   const obj17 = { text: intl4.string(tmp2(1112).t.TulDPl), variant: "secondary", size: "lg", onPress: callback1 };
-  const Button2 = tmp2(5392).Button;
+  const Button2 = tmp2(5511).Button;
   intl4 = tmp2(1112).intl;
   items6[1] = closure_9(Button2, obj17);
   items4[4] = tmp15(View, obj15);

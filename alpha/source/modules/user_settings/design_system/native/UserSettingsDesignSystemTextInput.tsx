@@ -1,33 +1,33 @@
-// Module ID: 17110
-// Function ID: 17111
+// Module ID: 17234
+// Function ID: 17235
 // Name: UserSettingsDesignSystemTextInput
-// Dependencies: [32, 19, 17, 21, 4794, 575, 6927, 5810, 7101, 7570, 15156, 5022, 7395, 7271, 7341, 5385, 7561, 7102, 7307, 7471, 10251, 7108, 5392, 5008, 15157, 2]
+// Dependencies: [32, 19, 17, 21, 4913, 575, 7047, 5929, 7221, 7690, 15279, 5141, 7515, 7391, 7461, 5504, 7681, 7222, 7427, 7591, 10371, 7228, 5511, 5127, 15280, 2]
 // Exports: default
 
-// Module 17110 (UserSettingsDesignSystemTextInput)
+// Module 17234 (UserSettingsDesignSystemTextInput)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5008 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5022 */;
-import Text_Text from "Text/Text" /* 5385 */;
-import components_Button_Button from "components/Button/Button" /* 5392 */;
-import Stack_Stack from "Stack/Stack" /* 5810 */;
-import Card_Card from "Card/Card" /* 6927 */;
-import TextInput_TextInput from "TextInput/TextInput" /* 7101 */;
-import Input2 from "Input" /* 7102 */;
-import TextField from "TextField" /* 7108 */;
-import SearchBar from "SearchBar" /* 7307 */;
-import TextArea from "TextArea" /* 7341 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7395 */;
-import IconButton2 from "IconButton" /* 7471 */;
-import TextIcon from "TextIcon" /* 7561 */;
-import SettingsIcon from "SettingsIcon" /* 10251 */;
-import GhostInput2 from "GhostInput" /* 15156 */;
-import SplitTextInput from "SplitTextInput" /* 15157 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5141 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import components_Button_Button from "components/Button/Button" /* 5511 */;
+import Stack_Stack from "Stack/Stack" /* 5929 */;
+import Card_Card from "Card/Card" /* 7047 */;
+import TextInput_TextInput from "TextInput/TextInput" /* 7221 */;
+import Input2 from "Input" /* 7222 */;
+import TextField from "TextField" /* 7228 */;
+import SearchBar from "SearchBar" /* 7427 */;
+import TextArea from "TextArea" /* 7461 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7515 */;
+import IconButton2 from "IconButton" /* 7591 */;
+import TextIcon from "TextIcon" /* 7681 */;
+import SettingsIcon from "SettingsIcon" /* 10371 */;
+import GhostInput2 from "GhostInput" /* 15279 */;
+import SplitTextInput from "SplitTextInput" /* 15280 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4794 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -37,8 +37,8 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp6;
-const AtIcon = tmp6(7570);
-const f111232 = () => {
+const AtIcon = tmp6(7690);
+const f111623 = () => {
   let tmp = closure_0((arg0) => {
     let tmp = closure_1_8[(closure_1_8.indexOf(closure_1_8, arg0) + 1) % closure_1_8.length];
     if (tmp == null) {
@@ -204,7 +204,7 @@ function CountryCodeExample(label) {
   label = label.label;
   const tmp = _slicedToArray(react.useState("US +1"), 2);
   _require = tmp[1];
-  const items = [tmp[0], react.useCallback(f111232, [])];
+  const items = [tmp[0], react.useCallback(f111623, [])];
   const tmp2 = _slicedToArray(items, 2);
   const first = tmp2[0];
   const obj = { label, description: "Tap the country code to cycle through a few examples.", placeholder: "Phone number", keyboardType: "phone-pad", leadingText: first, leadingPressableProps: obj2 };
@@ -222,7 +222,7 @@ function PhoneOrEmailExample() {
   let tmp7;
   let tmp = _slicedToArray(react.useState("US +1"), 2);
   _require = tmp[1];
-  const items = [tmp[0], react.useCallback(f111232, [])];
+  const items = [tmp[0], react.useCallback(f111623, [])];
   [first, tmp4] = items;
   [tmp6, tmp7] = react.useState("");
   _slicedToArray(react.useState(""), 2);

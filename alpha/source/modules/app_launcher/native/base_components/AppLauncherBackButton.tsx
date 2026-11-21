@@ -1,13 +1,13 @@
-// Module ID: 12876
-// Function ID: 12877
+// Module ID: 12998
+// Function ID: 12999
 // Name: AppLauncherBackButton
-// Dependencies: [19, 21, 1501, 7471, 6980, 7032, 1112, 2]
+// Dependencies: [19, 21, 1501, 7591, 7100, 7152, 1112, 2]
 // Exports: default
 
-// Module 12876 (AppLauncherBackButton)
+// Module 12998 (AppLauncherBackButton)
 import Fragment from "Fragment" /* 21 */;
 import Link from "Link" /* 1501 */;
-import IconButton2 from "IconButton" /* 7471 */;
+import IconButton2 from "IconButton" /* 7591 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -25,6 +25,6 @@ export default function AppLauncherBackButton(onPress) {
   const intl = tmp(1112).intl;
   const string = intl.string;
   const t = tmp(1112).t;
-  return <IconButton size="sm" variant="secondary-overlay" icon={importDefault(canGoBackResult ? 6980 : 7032)} onPress={onPress} accessibilityLabel={string(canGoBackResult ? t["13/7kX"] : t.cpT0Cq)} maxFontSizeMultiplier={1.5} />;
+  return <IconButton size="sm" variant="secondary-overlay" icon={importDefault(canGoBackResult ? 7100 : 7152)} onPress={onPress} accessibilityLabel={string(canGoBackResult ? t["13/7kX"] : t.cpT0Cq)} maxFontSizeMultiplier={1.5} />;
 };
 export const BACK_BUTTON_SIZE = 32;

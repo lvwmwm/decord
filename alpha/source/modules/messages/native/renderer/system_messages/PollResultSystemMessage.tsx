@@ -1,18 +1,18 @@
-// Module ID: 8669
-// Function ID: 8670
+// Module ID: 8789
+// Function ID: 8790
 // Name: PollResultSystemMessage
-// Dependencies: [1389, 8578, 8580, 8670, 1112, 1412, 4740, 8671, 8711, 8582, 2]
+// Dependencies: [1389, 8698, 8700, 8790, 1112, 1412, 4859, 8791, 8831, 8702, 2]
 // Exports: createPollResultSystemMessage
 
-// Module 8669 (PollResultSystemMessage)
+// Module 8789 (PollResultSystemMessage)
 import EmojiConstants from "EmojiConstants" /* 1389 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4740 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8578 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8580 */;
-import PollTextUtils from "PollTextUtils" /* 8670 */;
-import MarkupParsers from "MarkupParsers" /* 8671 */;
-import parsePollResultSystemMessageEmbedDefault from "parsePollResultSystemMessageEmbed" /* 8711 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4859 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8698 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8700 */;
+import PollTextUtils from "PollTextUtils" /* 8790 */;
+import MarkupParsers from "MarkupParsers" /* 8791 */;
+import parsePollResultSystemMessageEmbedDefault from "parsePollResultSystemMessageEmbed" /* 8831 */;
 import size from "module_2" /* 2 */;
 
 const EMOJI_URL_BASE_SIZE = EmojiConstants.EMOJI_URL_BASE_SIZE;
@@ -35,7 +35,7 @@ export function createPollResultSystemMessage(message) {
     tmp5 = null;
     if (null != message.message.messageReference) {
       const obj = { content: formatToParts3Result };
-      const merged = Object.assign(tmp2(8582)(message));
+      const merged = Object.assign(tmp2(8702)(message));
       message = message.message;
       const roleStyle = message.roleStyle;
       const obj2 = useAuthorWithProcessedColor;

@@ -1,14 +1,14 @@
-// Module ID: 12272
-// Function ID: 12273
+// Module ID: 12394
+// Function ID: 12395
 // Name: HammerIcon
-// Dependencies: [19, 21, 575, 5480, 12273, 2]
+// Dependencies: [19, 21, 575, 5599, 12395, 2]
 // Exports: HammerIcon
 
-// Module 12272 (HammerIcon)
+// Module 12394 (HammerIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5480 */;
-import AssetRegistry from "AssetRegistry" /* 12273 */;
+import BaseIconImage2 from "BaseIconImage" /* 5599 */;
+import AssetRegistry from "AssetRegistry" /* 12395 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

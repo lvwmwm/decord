@@ -1,31 +1,31 @@
-// Module ID: 12744
-// Function ID: 12745
+// Module ID: 12866
+// Function ID: 12867
 // Name: ChatInputSendUtils
-// Dependencies: [5, 8195, 8268, 8347, 1386, 1071, 4799, 1388, 10333, 8394, 1241, 12743, 12738, 8262, 8130, 12011, 10335, 9999, 2172, 10339, 5741, 1112, 1255, 11135, 8501, 5008, 12745, 2119, 8350, 7419, 10574, 10557, 12776, 5446, 2]
+// Dependencies: [5, 8315, 8388, 8467, 1386, 1071, 4918, 1388, 10453, 8514, 1241, 12865, 12860, 8382, 8250, 12133, 10455, 10119, 2173, 10459, 5860, 1112, 1255, 11255, 8621, 5127, 12867, 2119, 8470, 7539, 10694, 10677, 12898, 5565, 2]
 // Exports: chatInputCreateThread, chatInputHandleSendText, chatInputSendApplicationCommand
 
-// Module 12744 (ChatInputSendUtils)
+// Module 12866 (ChatInputSendUtils)
 import intl4 from "intl" /* 1112 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import PremiumConstants from "PremiumConstants" /* 1388 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2172 */;
-import MessageConstants from "MessageConstants" /* 4799 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5741 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7419 */;
-import DraftStore2 from "DraftStore" /* 8195 */;
-import MessageParserDefault from "MessageParser" /* 8262 */;
-import FileUtils from "FileUtils" /* 8350 */;
-import DraftActionCreatorsDefault from "DraftActionCreators" /* 8394 */;
-import ForumPostMediaUtils from "ForumPostMediaUtils" /* 8501 */;
-import useMessageMaxLength from "useMessageMaxLength" /* 9999 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 10333 */;
-import handleUploadAttachmentErrors from "handleUploadAttachmentErrors" /* 10335 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 10339 */;
-import ChatRestrictions from "ChatRestrictions" /* 11135 */;
-import ChatInputCommandOptionParser from "ChatInputCommandOptionParser" /* 12738 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2173 */;
+import MessageConstants from "MessageConstants" /* 4918 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5860 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7539 */;
+import DraftStore2 from "DraftStore" /* 8315 */;
+import MessageParserDefault from "MessageParser" /* 8382 */;
+import FileUtils from "FileUtils" /* 8470 */;
+import DraftActionCreatorsDefault from "DraftActionCreators" /* 8514 */;
+import ForumPostMediaUtils from "ForumPostMediaUtils" /* 8621 */;
+import useMessageMaxLength from "useMessageMaxLength" /* 10119 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 10453 */;
+import handleUploadAttachmentErrors from "handleUploadAttachmentErrors" /* 10455 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 10459 */;
+import ChatRestrictions from "ChatRestrictions" /* 11255 */;
+import ChatInputCommandOptionParser from "ChatInputCommandOptionParser" /* 12860 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SlowmodeStore from "SlowmodeStore" /* 8268 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 8347 */;
+import SlowmodeStore from "SlowmodeStore" /* 8388 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8467 */;
 import UserStore from "UserStore" /* 1386 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
@@ -89,7 +89,7 @@ function chatInputSendMessage(params) {
     const addBreadcrumb = tmp4.addBreadcrumb;
     addBreadcrumb(obj);
   }
-  let obj2 = chatInputRef(8394);
+  let obj2 = chatInputRef(8514);
   obj2.saveDraft(channel.id, "", scheduledTimestamp.ChannelMessage);
   const current = chatInputRef.current;
   if (current != null) {
@@ -99,7 +99,7 @@ function chatInputSendMessage(params) {
   if (current2 != null) {
     current2.showSideActions();
   }
-  let obj3 = channel(12743);
+  let obj3 = channel(12865);
   const handleLegacyCommandsResult = obj3.handleLegacyCommands(text, { channel, isEdit: false });
   let tmp15 = tts;
   parsed = parsedMessage;
@@ -131,17 +131,17 @@ function chatInputSendMessage(params) {
   if (null != mentionTimestamps) {
     result = tmp17;
     if (mentionTimestamps.size > 0) {
-      const tmp13Result = channel(12738);
+      const tmp13Result = channel(12860);
       result = tmp13Result.serializeComposerTimestampMentions(tmp17, mentionTimestamps);
     }
   }
   if (parsed == null) {
-    const tmp7Result = chatInputRef(8262);
+    const tmp7Result = chatInputRef(8382);
     parsed = tmp7Result.parse(channel, result, undefined, mentionGames);
   }
   parsed.tts = tmp15;
   const obj4 = { location: MessageSendLocation.CHAT_INPUT };
-  const tmp7Result5 = chatInputRef(8130);
+  const tmp7Result5 = chatInputRef(8250);
   const merged = Object.assign(tmp7Result5.getSendMessageOptionsForReply(pendingReply));
   const id = channel.id;
   if (hasAttachmentsToUpload) {
@@ -149,7 +149,7 @@ function chatInputSendMessage(params) {
     if (null == uploads) {
       uploads = [];
     } else {
-      const tmp7Result6 = chatInputRef(10333);
+      const tmp7Result6 = chatInputRef(10453);
       tmp7Result6.clearAll(id, scheduledTimestamp.ChannelMessage);
     }
     items = uploads;
@@ -170,7 +170,7 @@ function chatInputSendMessage(params) {
   if (scheduledMessage != null) {
     scheduledTimestamp = scheduledMessage.scheduledTimestamp;
   }
-  const tmp13Result2 = channel(12011);
+  const tmp13Result2 = channel(12133);
   tmp13Result2.deletePendingReply(channel.id);
   if (applicationCommandManager != null) {
     const result1 = applicationCommandManager.clearTimestampMentions();
@@ -189,8 +189,8 @@ function chatInputSendMessage(params) {
       }
     }
   };
-  const sendMessage = chatInputRef(8130).sendMessage;
-  chatInputRef(8130);
+  const sendMessage = chatInputRef(8250).sendMessage;
+  chatInputRef(8250);
   const merged1 = Object.assign(obj4);
   const sendMessageResult = sendMessage(id2, parsed, undefined, obj7);
   sendMessageResult.catch((error) => {
@@ -441,13 +441,13 @@ export function chatInputHandleSendText(text) {
         while (iter !== undefined) {
           let checkResult = iter.next().check(text, channel, null != channel.getGuildId());
           if (false !== checkResult) {
-            let tmp11 = params(5741);
+            let tmp11 = params(5860);
             let obj2 = {
               title: intl.string(intl4.t.mY3Y38),
               body: checkResult.body,
               confirmText: intl2.string(intl4.t.KJnHq3),
               onConfirm() {
-                          obj = { text: require, parsedMessage, tts: "analyticsLocations", source: 1359020034, params };
+                          obj = { text: require, parsedMessage, tts: "analyticsLocations", source: false, params };
                           chatInputSendMessage(obj);
                         },
               cancelText: intl3.string(intl4.t.fsBWmS)
@@ -470,15 +470,15 @@ export function chatInputHandleSendText(text) {
               threadId: channel.id,
               attachments: uploads,
               sendMessage() {
-                          obj = { text: require, parsedMessage, tts: "analyticsLocations", source: "r", params };
+                          obj = { text: require, parsedMessage, tts: "analyticsLocations", source: "isDeaf", params };
                           chatInputSendMessage(obj);
                         }
             };
-            const obj5 = params(5008);
-            obj5.openLazy(tmp20(2119)(12745, tmp21.paths), "add-media-to-original-forum-post", obj4);
+            const obj5 = params(5127);
+            obj5.openLazy(tmp20(2119)(12867, tmp21.paths), "add-media-to-original-forum-post", obj4);
           }
         }
-        const obj6 = { text, parsedMessage: tmp2, tts: "analyticsLocations", source: "Array", params };
+        const obj6 = { text, parsedMessage: tmp2, tts: "analyticsLocations", source: "slice", params };
         chatInputSendMessage(obj6);
       }
     }
@@ -496,7 +496,7 @@ export function chatInputCreateThread(text) {
     if (!obj2.canUseIncreasedMessageLength(UserStore.getCurrentUser())) {
       const obj3 = { initialUpsellKey: unpackModuleId.LONGER_MESSAGE, analyticsProperties: obj4 };
       obj4 = { type: PremiumUpsellTypes.MESSAGE_LENGTH_UPSELL };
-      const tmp2Result = tmp2(10339);
+      const tmp2Result = tmp2(10459);
       const result = tmp2Result.handleShowUpsellAlert(obj3);
     }
   }

@@ -1,24 +1,24 @@
-// Module ID: 10126
-// Function ID: 10127
+// Module ID: 10246
+// Function ID: 10247
 // Name: UserProfileWidgetGameCoverGridReorderActionSheet
-// Dependencies: [19, 17, 502, 21, 4794, 10080, 575, 10113, 1112, 10115, 6929, 504, 10093, 6839, 10097, 10102, 10125, 2]
+// Dependencies: [19, 17, 502, 21, 4913, 10200, 575, 10233, 1112, 10235, 7049, 504, 10213, 6958, 10217, 10222, 10245, 2]
 // Exports: default
 
-// Module 10126 (UserProfileWidgetGameCoverGridReorderActionSheet)
+// Module 10246 (UserProfileWidgetGameCoverGridReorderActionSheet)
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
-import DragHandle from "DragHandle" /* 6929 */;
-import UserProfileGameWidgetConstants from "UserProfileGameWidgetConstants" /* 10080 */;
-import useUserProfileWidgetsDefault from "useUserProfileWidgets" /* 10093 */;
-import WidgetUtils from "WidgetUtils" /* 10097 */;
-import useGameCoverLayoutDefault from "useGameCoverLayout" /* 10102 */;
-import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 10113 */;
-import UserProfileReorderActionSheetDefault from "UserProfileReorderActionSheet" /* 10125 */;
+import DragHandle from "DragHandle" /* 7049 */;
+import UserProfileGameWidgetConstants from "UserProfileGameWidgetConstants" /* 10200 */;
+import useUserProfileWidgetsDefault from "useUserProfileWidgets" /* 10213 */;
+import WidgetUtils from "WidgetUtils" /* 10217 */;
+import useGameCoverLayoutDefault from "useGameCoverLayout" /* 10222 */;
+import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 10233 */;
+import UserProfileReorderActionSheetDefault from "UserProfileReorderActionSheet" /* 10245 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, importDefault;
@@ -30,7 +30,7 @@ let metroImportDefault;
 let obj2;
 let obj3;
 let tmp2;
-const GameCoverImageDefault = tmp2(10115);
+const GameCoverImageDefault = tmp2(10235);
 ({ Pressable: closure_4, View: hasOwnProperty } = react_native);
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let createStyles = createStyles_mod;

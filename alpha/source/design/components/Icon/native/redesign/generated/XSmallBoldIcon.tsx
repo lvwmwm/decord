@@ -1,14 +1,14 @@
-// Module ID: 11772
-// Function ID: 11773
+// Module ID: 11892
+// Function ID: 11893
 // Name: XSmallBoldIcon
-// Dependencies: [19, 21, 575, 5480, 7438, 2]
+// Dependencies: [19, 21, 575, 5599, 7558, 2]
 // Exports: XSmallBoldIcon
 
-// Module 11772 (XSmallBoldIcon)
+// Module 11892 (XSmallBoldIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5480 */;
-import AssetRegistry from "AssetRegistry" /* 7438 */;
+import BaseIconImage2 from "BaseIconImage" /* 5599 */;
+import AssetRegistry from "AssetRegistry" /* 7558 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

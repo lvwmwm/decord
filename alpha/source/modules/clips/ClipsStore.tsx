@@ -1,24 +1,24 @@
-// Module ID: 2137
-// Function ID: 2138
+// Module ID: 2138
+// Function ID: 2139
 // Name: ClipsStore
-// Dependencies: [32, 5, 2138, 502, 8321, 1071, 5635, 15167, 4605, 15168, 1404, 15169, 15171, 15172, 504, 572, 2]
+// Dependencies: [32, 5, 2139, 502, 8441, 1071, 5754, 15290, 4724, 15291, 1404, 15292, 15294, 15295, 504, 572, 2]
 
-// Module 2137 (ClipsStore)
+// Module 2138 (ClipsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import FlagUtils from "FlagUtils" /* 1404 */;
-import DiscordNativeDefault from "DiscordNative" /* 4605 */;
-import ClipsDefaultSettingsUtils from "ClipsDefaultSettingsUtils" /* 15167 */;
-import clipPOVOverlap from "clipPOVOverlap" /* 15169 */;
-import DistributedClipsExperimentDefault from "DistributedClipsExperiment" /* 15171 */;
-import AutoclippingDefaultOverrideExperiment2 from "AutoclippingDefaultOverrideExperiment" /* 15172 */;
+import DiscordNativeDefault from "DiscordNative" /* 4724 */;
+import ClipsDefaultSettingsUtils from "ClipsDefaultSettingsUtils" /* 15290 */;
+import clipPOVOverlap from "clipPOVOverlap" /* 15292 */;
+import DistributedClipsExperimentDefault from "DistributedClipsExperiment" /* 15294 */;
+import AutoclippingDefaultOverrideExperiment2 from "AutoclippingDefaultOverrideExperiment" /* 15295 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import RunningGameStore from "RunningGameStore" /* 2138 */;
+import RunningGameStore from "RunningGameStore" /* 2139 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ClipsConstants from "ClipsConstants" /* 8321 */;
+import ClipsConstants from "ClipsConstants" /* 8441 */;
 import Constants from "Constants" /* 1071 */;
-import StreamSettingsConstants from "StreamSettingsConstants" /* 5635 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 5754 */;
 import size from "module_2" /* 2 */;
 
 let _null, c4, c5, closure_2, revision;

@@ -1,10 +1,10 @@
-// Module ID: 16189
-// Function ID: 16190
+// Module ID: 16312
+// Function ID: 16313
 // Name: OrbchievementsExperiment
 // Dependencies: [1450, 2]
 // Exports: useIsOrbchievementsEnabled, useIsOrbchievementsMobileEnabled
 
-// Module 16189 (OrbchievementsExperiment)
+// Module 16312 (OrbchievementsExperiment)
 import ApexExperiment_mod from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 

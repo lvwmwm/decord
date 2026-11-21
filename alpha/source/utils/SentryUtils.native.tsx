@@ -1,7 +1,7 @@
 // Module ID: 1241
 // Function ID: 1242
 // Name: SentryUtils
-// Dependencies: [17, 3, 1242, 674, 15254, 673, 1377, 2]
+// Dependencies: [17, 3, 1242, 674, 15377, 673, 1377, 2]
 
 // Module 1241 (SentryUtils)
 import LoggerDefault from "Logger" /* 3 */;

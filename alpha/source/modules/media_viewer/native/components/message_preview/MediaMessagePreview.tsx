@@ -1,32 +1,32 @@
-// Module ID: 10049
-// Function ID: 10050
+// Module ID: 10169
+// Function ID: 10170
 // Name: MediaMessagePreview
-// Dependencies: [32, 19, 17, 8342, 6522, 4643, 5845, 9934, 1071, 21, 8549, 9979, 4794, 9903, 9980, 1653, 1706, 575, 10050, 504, 10051, 1112, 11, 10053, 10260, 10261, 8338, 10296, 5054, 10304, 10315, 5527, 2]
+// Dependencies: [32, 19, 17, 8462, 6641, 4762, 5964, 10054, 1071, 21, 8669, 10099, 4913, 10023, 10100, 1653, 1706, 575, 10170, 504, 10171, 1112, 11, 10173, 10380, 10381, 8458, 10416, 5173, 10424, 10435, 5646, 2]
 // Exports: default
 
-// Module 10049 (MediaMessagePreview)
+// Module 10169 (MediaMessagePreview)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
 import _mod1653 from "module_1653" /* 1653 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5054 */;
-import RowGeneratorDefault from "RowGenerator" /* 8549 */;
-import RowGeneratorTypes from "RowGeneratorTypes" /* 9979 */;
-import showMediaMessagePreviewActionSheetDefault from "showMediaMessagePreviewActionSheet" /* 10053 */;
-import MessageDataSnowflakeUtils from "MessageDataSnowflakeUtils" /* 10260 */;
-import messages_MessagesUtils from "messages/MessagesUtils" /* 10261 */;
-import handleMessagesTapLink from "handleMessagesTapLink" /* 10315 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5173 */;
+import RowGeneratorDefault from "RowGenerator" /* 8669 */;
+import RowGeneratorTypes from "RowGeneratorTypes" /* 10099 */;
+import showMediaMessagePreviewActionSheetDefault from "showMediaMessagePreviewActionSheet" /* 10173 */;
+import MessageDataSnowflakeUtils from "MessageDataSnowflakeUtils" /* 10380 */;
+import messages_MessagesUtils from "messages/MessagesUtils" /* 10381 */;
+import handleMessagesTapLink from "handleMessagesTapLink" /* 10435 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ForumPostMessagesStore from "ForumPostMessagesStore" /* 8342 */;
-import SearchMessageStore from "SearchMessageStore" /* 6522 */;
-import ChannelStore from "ChannelStore" /* 4643 */;
-import MessageStore from "MessageStore" /* 5845 */;
-import MessagePreviewStore from "MessagePreviewStore" /* 9934 */;
+import ForumPostMessagesStore from "ForumPostMessagesStore" /* 8462 */;
+import SearchMessageStore from "SearchMessageStore" /* 6641 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import MessageStore from "MessageStore" /* 5964 */;
+import MessagePreviewStore from "MessagePreviewStore" /* 10054 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let flag, rowGenerator;
@@ -314,7 +314,7 @@ export default function MediaMessagePreview(channelId) {
           const merged = Object.assign(reaction);
           tmp7 = obj;
         }
-        const result = handleAddOrRemoveReaction(tmp6, channel, tmp7, isBurst, tmp3(8338).ReactionLocations.MOBILE_MEDIA_VIEWER);
+        const result = handleAddOrRemoveReaction(tmp6, channel, tmp7, isBurst, tmp3(8458).ReactionLocations.MOBILE_MEDIA_VIEWER);
       }
     }
   }, items7);

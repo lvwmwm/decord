@@ -1,23 +1,23 @@
-// Module ID: 17468
-// Function ID: 17469
+// Module ID: 17592
+// Function ID: 17593
 // Name: HappeningNowCardLiveStage
-// Dependencies: [19, 17, 16578, 1071, 21, 4794, 575, 1255, 12077, 2119, 17469, 17470, 17471, 16579, 7500, 1186, 17480, 5410, 1112, 5824, 2]
+// Dependencies: [19, 17, 16701, 1071, 21, 4913, 575, 1255, 12199, 2119, 17593, 17594, 17595, 16702, 7620, 1186, 17604, 5529, 1112, 5943, 2]
 
-// Module 17468 (HappeningNowCardLiveStage)
+// Module 17592 (HappeningNowCardLiveStage)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl13 from "intl" /* 1112 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import asyncRequire from "asyncRequire" /* 2119 */;
-import useChannelNameDefault from "useChannelName" /* 5410 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5824 */;
-import HappeningNowCard from "HappeningNowCard" /* 16579 */;
-import useLiveStageData from "useLiveStageData" /* 17469 */;
+import useChannelNameDefault from "useChannelName" /* 5529 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5943 */;
+import HappeningNowCard from "HappeningNowCard" /* 16702 */;
+import useLiveStageData from "useLiveStageData" /* 17593 */;
 import react from "react" /* 19 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 16578 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 16701 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let HAPPENING_NOW_CONTENT_HEIGHT;
@@ -250,7 +250,7 @@ const memoResult = react.memo(function HappeningNowCardLiveStage(arg0) {
     const obj = AnalyticsUtilsDefault;
     const obj2 = { order: index, guild_id, type: hasOwnProperty.GUILD_LIVE_STAGE_CARD, destination_channel_id: channel_id };
     obj.track(AnalyticEvents.ACTIVITY_CARD_CLICKED, obj2);
-    const promise = asyncRequire(12077, dependencyMap.paths);
+    const promise = asyncRequire(12199, dependencyMap.paths);
     promise.then((result) => {
       result.default(channel_id, true);
     });

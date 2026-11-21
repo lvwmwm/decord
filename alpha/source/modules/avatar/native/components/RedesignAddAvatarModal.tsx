@@ -1,20 +1,20 @@
-// Module ID: 19480
-// Function ID: 19481
+// Module ID: 19607
+// Function ID: 19608
 // Name: RedesignAddAvatarModal
-// Dependencies: [5, 32, 19, 17, 8012, 1071, 21, 4794, 575, 1628, 504, 15713, 19461, 8792, 8084, 8354, 8789, 8011, 5385, 1112, 19470, 5392, 19458, 2]
+// Dependencies: [5, 32, 19, 17, 8132, 1071, 21, 4913, 575, 1628, 504, 15836, 19588, 8912, 8204, 8474, 8909, 8131, 5504, 1112, 19597, 5511, 19585, 2]
 // Exports: default
 
-// Module 19480 (RedesignAddAvatarModal)
+// Module 19607 (RedesignAddAvatarModal)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
-import AddAvatarModalActionCreators from "AddAvatarModalActionCreators" /* 19458 */;
+import AddAvatarModalActionCreators from "AddAvatarModalActionCreators" /* 19585 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8012 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8132 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,25 +1,25 @@
-// Module ID: 16288
-// Function ID: 16289
+// Module ID: 16411
+// Function ID: 16412
 // Name: restoreHexagonCampaignPerks
-// Dependencies: [5, 1192, 1191, 1386, 15513, 4819, 4853, 16282, 16284, 16283, 13927, 16287, 4822, 2172, 15730, 2]
+// Dependencies: [5, 1192, 1191, 1386, 15636, 4938, 4972, 16405, 16407, 16406, 14049, 16410, 4941, 2173, 15853, 2]
 // Exports: restoreExpiredHexagonCampaignClientTheme, restoreExpiredHexagonCampaignDisplayNameStyle, restoreExpiredHexagonCampaignPerks
 
-// Module 16288 (restoreHexagonCampaignPerks)
-import PremiumUtilsDefault from "PremiumUtils" /* 2172 */;
-import HexagonCampaignUtils from "HexagonCampaignUtils" /* 4822 */;
-import isPerModeThemingActive from "isPerModeThemingActive" /* 4853 */;
-import AppIconUtils from "AppIconUtils" /* 13927 */;
-import HexagonActionCreators from "HexagonActionCreators" /* 15730 */;
-import getAppliedHexagonCampaignPerks from "getAppliedHexagonCampaignPerks" /* 16282 */;
-import HexagonCampaignPreviousPerkValues from "HexagonCampaignPreviousPerkValues" /* 16283 */;
-import UserSettingsAppearanceThemeUtils from "UserSettingsAppearanceThemeUtils" /* 16284 */;
-import saveHexagonCampaignDisplayNameStyles2 from "saveHexagonCampaignDisplayNameStyles" /* 16287 */;
+// Module 16411 (restoreHexagonCampaignPerks)
+import PremiumUtilsDefault from "PremiumUtils" /* 2173 */;
+import HexagonCampaignUtils from "HexagonCampaignUtils" /* 4941 */;
+import isPerModeThemingActive from "isPerModeThemingActive" /* 4972 */;
+import AppIconUtils from "AppIconUtils" /* 14049 */;
+import HexagonActionCreators from "HexagonActionCreators" /* 15853 */;
+import getAppliedHexagonCampaignPerks from "getAppliedHexagonCampaignPerks" /* 16405 */;
+import HexagonCampaignPreviousPerkValues from "HexagonCampaignPreviousPerkValues" /* 16406 */;
+import UserSettingsAppearanceThemeUtils from "UserSettingsAppearanceThemeUtils" /* 16407 */;
+import saveHexagonCampaignDisplayNameStyles2 from "saveHexagonCampaignDisplayNameStyles" /* 16410 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1192 */;
 import ThemeStore from "ThemeStore" /* 1191 */;
 import UserStore from "UserStore" /* 1386 */;
-import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 15513 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4819 */;
+import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 15636 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4938 */;
 import size from "module_2" /* 2 */;
 
 let c9;

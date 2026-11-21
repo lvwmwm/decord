@@ -1,28 +1,28 @@
-// Module ID: 17020
-// Function ID: 17021
+// Module ID: 17143
+// Function ID: 17144
 // Name: UserSettingsSurveyChangelogOverride
-// Dependencies: [32, 19, 17, 7618, 6365, 21, 4794, 575, 7433, 7395, 7435, 5494, 7425, 7101, 5392, 17021, 5008, 504, 6298, 7228, 6925, 5385, 8678, 5810, 2]
+// Dependencies: [32, 19, 17, 7738, 6484, 21, 4913, 575, 7553, 7515, 7555, 5613, 7545, 7221, 5511, 17144, 5127, 504, 6417, 7348, 7045, 5504, 8798, 5929, 2]
 
-// Module 17020 (UserSettingsSurveyChangelogOverride)
+// Module 17143 (UserSettingsSurveyChangelogOverride)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5008 */;
-import Text_Text from "Text/Text" /* 5385 */;
-import Stack_Stack from "Stack/Stack" /* 5810 */;
-import usePreviousDefault from "usePrevious" /* 6298 */;
-import TableRow2 from "TableRow" /* 6925 */;
-import TableRowGroup2 from "TableRowGroup" /* 7228 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7395 */;
-import ActionSheet2 from "ActionSheet" /* 7433 */;
-import ActionSheetRow2 from "ActionSheetRow" /* 7435 */;
-import ChangeLogActionCreatorsDefault from "ChangeLogActionCreators" /* 8678 */;
-import SurveyActionCreatorsAll from "SurveyActionCreators" /* 17021 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import Stack_Stack from "Stack/Stack" /* 5929 */;
+import usePreviousDefault from "usePrevious" /* 6417 */;
+import TableRow2 from "TableRow" /* 7045 */;
+import TableRowGroup2 from "TableRowGroup" /* 7348 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7515 */;
+import ActionSheet2 from "ActionSheet" /* 7553 */;
+import ActionSheetRow2 from "ActionSheetRow" /* 7555 */;
+import ChangeLogActionCreatorsDefault from "ChangeLogActionCreators" /* 8798 */;
+import SurveyActionCreatorsAll from "SurveyActionCreators" /* 17144 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChangelogStore from "ChangelogStore" /* 7618 */;
-import SurveyStore from "SurveyStore" /* 6365 */;
+import ChangelogStore from "ChangelogStore" /* 7738 */;
+import SurveyStore from "SurveyStore" /* 6484 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4794 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -89,11 +89,11 @@ function SurveyOverrideActionSheet() {
     }
     return surveyOverride;
   });
-  let obj = { header: closure_9(first(7395).BottomSheetTitleHeader, { title: "Survey Override" }), children: items };
-  const ActionSheet = first(7433).ActionSheet;
-  items = [closure_9(first(7101).TextInput, { label: "Survey Override", size: "md", placeholder: "Enter the ID of the Survey you want to test", onChange: tmp3, clearable: true }), ];
+  let obj = { header: closure_9(first(7515).BottomSheetTitleHeader, { title: "Survey Override" }), children: items };
+  const ActionSheet = first(7553).ActionSheet;
+  items = [closure_9(first(7221).TextInput, { label: "Survey Override", size: "md", placeholder: "Enter the ID of the Survey you want to test", onChange: tmp3, clearable: true }), ];
   let str = "Fetch Survey";
-  const Button = first(5392).Button;
+  const Button = first(5511).Button;
   const tmp4 = closure_10;
   const tmp5 = closure_9;
   if ("" === first) {
@@ -182,11 +182,11 @@ function ChangelogOverrideActionSheet() {
   let str2;
   let tmp3;
   [first, tmp3] = react.useState(() => ChangelogStore.overrideId());
-  let obj = { header: closure_9(first(7395).BottomSheetTitleHeader, { title: "Changelog Override" }), children: items };
-  const ActionSheet = first(7433).ActionSheet;
-  items = [closure_9(first(7101).TextInput, { label: "Changelog Override", size: "md", placeholder: "Enter the ID of the changelog you want to test", onChange: tmp3, clearable: true }), ];
+  let obj = { header: closure_9(first(7515).BottomSheetTitleHeader, { title: "Changelog Override" }), children: items };
+  const ActionSheet = first(7553).ActionSheet;
+  items = [closure_9(first(7221).TextInput, { label: "Changelog Override", size: "md", placeholder: "Enter the ID of the changelog you want to test", onChange: tmp3, clearable: true }), ];
   let str = "Fetch Changelog";
-  const Button = first(5392).Button;
+  const Button = first(5511).Button;
   const tmp4 = closure_10;
   const tmp5 = closure_9;
   if ("" === first) {

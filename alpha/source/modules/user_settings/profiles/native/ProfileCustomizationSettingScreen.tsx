@@ -1,33 +1,33 @@
-// Module ID: 15705
-// Function ID: 15706
+// Module ID: 15828
+// Function ID: 15829
 // Name: ProfileCustomizationSettingScreen
-// Dependencies: [5, 109, 32, 19, 17, 9305, 8012, 10087, 6431, 1081, 1071, 9300, 7949, 21, 4794, 575, 1112, 15706, 15836, 7282, 10099, 4971, 1501, 15845, 14426, 5358, 4855, 7477, 1500, 7294, 7466, 14075, 15729, 15837, 504, 5531, 9307, 15847, 6975, 6909, 10976, 15850, 13411, 13414, 2]
+// Dependencies: [5, 109, 32, 19, 17, 9425, 8132, 10207, 6550, 1081, 1071, 9420, 8069, 21, 4913, 575, 1112, 15829, 15959, 7402, 10219, 5090, 1501, 15968, 14548, 5477, 4974, 7597, 1500, 7414, 7586, 14197, 15852, 15960, 504, 5650, 9427, 15970, 7095, 7029, 11096, 15973, 13533, 13536, 2]
 
-// Module 15705 (ProfileCustomizationSettingScreen)
+// Module 15828 (ProfileCustomizationSettingScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1081 */;
 import intl2 from "intl" /* 1112 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5531 */;
-import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 7282 */;
-import Constants2 from "Constants" /* 7949 */;
-import MainTabsConstants from "MainTabsConstants" /* 9300 */;
-import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 9307 */;
-import WidgetActionCreatorsDefault from "WidgetActionCreators" /* 10099 */;
-import maybeShowUnsavedChangesAlertDefault from "maybeShowUnsavedChangesAlert" /* 14075 */;
-import UserSettingsEditUserProfileDefault from "UserSettingsEditUserProfile" /* 15706 */;
-import UserSettingsEditGuildProfileDefault from "UserSettingsEditGuildProfile" /* 15836 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5650 */;
+import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 7402 */;
+import Constants2 from "Constants" /* 8069 */;
+import MainTabsConstants from "MainTabsConstants" /* 9420 */;
+import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 9427 */;
+import WidgetActionCreatorsDefault from "WidgetActionCreators" /* 10219 */;
+import maybeShowUnsavedChangesAlertDefault from "maybeShowUnsavedChangesAlert" /* 14197 */;
+import UserSettingsEditUserProfileDefault from "UserSettingsEditUserProfile" /* 15829 */;
+import UserSettingsEditGuildProfileDefault from "UserSettingsEditGuildProfile" /* 15959 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 9305 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8012 */;
-import WidgetStore from "WidgetStore" /* 10087 */;
-import SortedGuildStore from "SortedGuildStore" /* 6431 */;
+import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 9425 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8132 */;
+import WidgetStore from "WidgetStore" /* 10207 */;
+import SortedGuildStore from "SortedGuildStore" /* 6550 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4794 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let c1, closure_12, state;

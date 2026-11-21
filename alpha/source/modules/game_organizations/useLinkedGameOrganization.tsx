@@ -1,14 +1,14 @@
-// Module ID: 15055
-// Function ID: 15056
+// Module ID: 15178
+// Function ID: 15179
 // Name: useLinkedGameOrganization
-// Dependencies: [4665, 15002, 1071, 1088, 504, 15056, 2]
+// Dependencies: [4784, 15125, 1071, 1088, 504, 15179, 2]
 
-// Module 15055 (useLinkedGameOrganization)
+// Module 15178 (useLinkedGameOrganization)
 import Constants from "Constants" /* 1071 */;
 import DurationsDefault from "Durations" /* 1088 */;
-import GameOrganizationActionCreators from "GameOrganizationActionCreators" /* 15056 */;
-import GuildStore from "GuildStore" /* 4665 */;
-import GameOrganizationStore from "GameOrganizationStore" /* 15002 */;
+import GameOrganizationActionCreators from "GameOrganizationActionCreators" /* 15179 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import GameOrganizationStore from "GameOrganizationStore" /* 15125 */;
 import get_initialized from "get initialized" /* 504 */;
 import size from "module_2" /* 2 */;
 

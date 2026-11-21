@@ -1,24 +1,24 @@
-// Module ID: 7487
-// Function ID: 7488
+// Module ID: 7607
+// Function ID: 7608
 // Name: FloatingActionButton
-// Dependencies: [19, 21, 4794, 575, 5398, 1653, 5395, 6930, 2]
+// Dependencies: [19, 21, 4913, 575, 5517, 1653, 5514, 7050, 2]
 // Exports: FloatingActionButton
 
-// Module 7487 (FloatingActionButton)
+// Module 7607 (FloatingActionButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1653 from "module_1653" /* 1653 */;
-import spring_spring from "spring/spring" /* 5395 */;
-import ButtonConstants from "ButtonConstants" /* 5398 */;
+import spring_spring from "spring/spring" /* 5514 */;
+import ButtonConstants from "ButtonConstants" /* 5517 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4794 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const _modDef1653 = _mod1653;
 let rect, tmp;
 
 let tmp3;
-const BaseIconButton2 = tmp3(6930);
+const BaseIconButton2 = tmp3(7050);
 const jsx = Fragment.jsx;
 const styles = createStyles.createStyles(() => {
   let obj2;

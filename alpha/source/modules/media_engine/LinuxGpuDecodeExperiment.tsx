@@ -1,10 +1,10 @@
-// Module ID: 5663
-// Function ID: 5664
+// Module ID: 5782
+// Function ID: 5783
 // Name: LinuxGpuDecodeExperiment
 // Dependencies: [1450, 2]
 // Exports: getLinuxGpuDecodeExperimentConfig
 
-// Module 5663 (LinuxGpuDecodeExperiment)
+// Module 5782 (LinuxGpuDecodeExperiment)
 import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 

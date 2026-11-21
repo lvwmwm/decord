@@ -1,25 +1,25 @@
-// Module ID: 16555
-// Function ID: 16556
+// Module ID: 16678
+// Function ID: 16679
 // Name: SettingsAppearanceThemeCarousel
-// Dependencies: [32, 19, 17, 16556, 1071, 4819, 21, 1653, 1186, 4794, 575, 5024, 5000, 15731, 6442, 1625, 4824, 5004, 5007, 12, 16557, 10383, 5385, 9390, 5010, 1112, 16291, 4855, 15755, 16560, 2]
+// Dependencies: [32, 19, 17, 16679, 1071, 4938, 21, 1653, 1186, 4913, 575, 5143, 5119, 15854, 6561, 1625, 4943, 5123, 5126, 12, 16680, 10503, 5504, 9510, 5129, 1112, 16414, 4974, 15878, 16683, 2]
 // Exports: default
 
-// Module 16555 (SettingsAppearanceThemeCarousel)
+// Module 16678 (SettingsAppearanceThemeCarousel)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import native from "native" /* 1186 */;
-import MobileThemesUtils from "MobileThemesUtils" /* 5000 */;
-import timing_timing from "timing/timing" /* 5004 */;
-import HapticUtils from "HapticUtils" /* 5010 */;
+import MobileThemesUtils from "MobileThemesUtils" /* 5119 */;
+import timing_timing from "timing/timing" /* 5123 */;
+import HapticUtils from "HapticUtils" /* 5129 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 16556 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4819 */;
+import SettingsAppearanceConstants from "SettingsAppearanceConstants" /* 16679 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4938 */;
 import Fragment from "Fragment" /* 21 */;
 import module_1653 from "module_1653" /* 1653 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let constants, set, set2;
@@ -42,7 +42,7 @@ let obj9;
 let size;
 let tmp2;
 let unpackModuleId;
-const timingPresets = tmp2(5007);
+const timingPresets = tmp2(5126);
 ({ View: hasOwnProperty, ScrollView: metroRequire } = react_native);
 let ThemeTypes = Constants.ThemeTypes;
 ({ HexagonCampaignPerk: c9, HexagonCampaignPerkAvailability: c10 } = HexagonCampaignConstants);

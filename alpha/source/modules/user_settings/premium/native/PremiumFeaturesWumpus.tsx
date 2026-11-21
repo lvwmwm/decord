@@ -1,16 +1,16 @@
-// Module ID: 9377
-// Function ID: 9378
+// Module ID: 9497
+// Function ID: 9498
 // Name: PremiumFeaturesWumpus
-// Dependencies: [19, 1388, 21, 4794, 7253, 9007, 9378, 9379, 9380, 9381, 9009, 5481, 2]
+// Dependencies: [19, 1388, 21, 4913, 7373, 9127, 9498, 9499, 9500, 9501, 9129, 5600, 2]
 // Exports: default
 
-// Module 9377 (PremiumFeaturesWumpus)
+// Module 9497 (PremiumFeaturesWumpus)
 import PremiumConstants from "PremiumConstants" /* 1388 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9007 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 9009 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9127 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9129 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4794 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -34,21 +34,21 @@ export default function PremiumFeaturesWumpus(premiumType) {
   let wumpusImageSource;
   premiumType = premiumType.premiumType;
   const tmp = closure_7();
-  const tmp2 = premiumType(7253)();
+  const tmp2 = premiumType(7373)();
   dependencyMap = tmp2;
   const items = [premiumType, tmp2];
   const memo = react.useMemo(() => {
     let obj;
     let tmpResult;
     if (premiumType === PremiumTypes.TIER_0) {
-      obj = { wumpusImageSource: AssetRegistryDefault, cloudsImageSource: importDefault(closure_1 ? 9378 : 9379) };
-      const obj2 = { wumpusImageSource: AssetRegistryDefault, cloudsImageSource: importDefault(closure_1 ? 9378 : 9379) };
+      obj = { wumpusImageSource: AssetRegistryDefault, cloudsImageSource: importDefault(closure_1 ? 9498 : 9499) };
+      const obj2 = { wumpusImageSource: AssetRegistryDefault, cloudsImageSource: importDefault(closure_1 ? 9498 : 9499) };
     } else {
       let tmp4;
       if (closure_1) {
-        tmp4 = 9380;
+        tmp4 = 9500;
       } else {
-        tmp4 = 9381;
+        tmp4 = 9501;
       }
       obj = { wumpusImageSource: AssetRegistryDefault2, cloudsImageSource: tmpResult };
       tmpResult = importDefault(tmp4);
@@ -58,10 +58,10 @@ export default function PremiumFeaturesWumpus(premiumType) {
   ({ wumpusImageSource, cloudsImageSource } = memo);
   let tmp4 = closure_6;
   let obj = { style: tmp.clouds, resizeMode: "contain", source: cloudsImageSource };
-  const items1 = [closure_4(premiumType(5481), obj), ];
+  const items1 = [closure_4(premiumType(5600), obj), ];
   const items2 = [tmp.wumpus, ];
   let wumpusLeft = premiumType === PremiumTypes.TIER_0;
-  const tmp7 = premiumType(5481);
+  const tmp7 = premiumType(5600);
   const tmp5 = closure_5;
   const tmp6 = closure_4;
   if (wumpusLeft) {

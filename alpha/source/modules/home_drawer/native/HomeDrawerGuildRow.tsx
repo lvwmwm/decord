@@ -1,33 +1,33 @@
-// Module ID: 17766
-// Function ID: 17767
+// Module ID: 17892
+// Function ID: 17893
 // Name: HomeDrawerGuildRow
-// Dependencies: [19, 17, 4728, 4647, 4643, 4724, 6545, 4665, 6500, 4736, 6433, 1386, 1071, 6434, 21, 4794, 504, 4976, 4973, 11581, 10244, 5385, 17767, 17768, 5410, 11, 17769, 17770, 12712, 17771, 17772, 17773, 17775, 17776, 17758, 2]
+// Dependencies: [19, 17, 4847, 4766, 4762, 4843, 6664, 4784, 6619, 4855, 6552, 1386, 1071, 6553, 21, 4913, 504, 5095, 5092, 11701, 10364, 5504, 17893, 17894, 5529, 11, 17895, 17896, 12834, 17897, 17898, 17899, 17901, 17902, 17884, 2]
 // Exports: default
 
-// Module 17766 (HomeDrawerGuildRow)
+// Module 17892 (HomeDrawerGuildRow)
 import react_native from "react-native" /* 17 */;
-import ChannelRecord from "ChannelRecord" /* 4647 */;
-import Text_Text from "Text/Text" /* 5385 */;
-import useChannelName from "useChannelName" /* 5410 */;
-import ReadStateConstants from "ReadStateConstants" /* 6434 */;
-import StreamingSubtitleDefault from "StreamingSubtitle" /* 17771 */;
-import VoiceSubtitleDefault from "VoiceSubtitle" /* 17772 */;
-import MentionSubtitleDefault from "MentionSubtitle" /* 17773 */;
-import TypingSubtitleDefault from "TypingSubtitle" /* 17775 */;
-import UnreadSubtitleDefault from "UnreadSubtitle" /* 17776 */;
+import ChannelRecord from "ChannelRecord" /* 4766 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import useChannelName from "useChannelName" /* 5529 */;
+import ReadStateConstants from "ReadStateConstants" /* 6553 */;
+import StreamingSubtitleDefault from "StreamingSubtitle" /* 17897 */;
+import VoiceSubtitleDefault from "VoiceSubtitle" /* 17898 */;
+import MentionSubtitleDefault from "MentionSubtitle" /* 17899 */;
+import TypingSubtitleDefault from "TypingSubtitle" /* 17901 */;
+import UnreadSubtitleDefault from "UnreadSubtitle" /* 17902 */;
 import react_mod from "react" /* 19 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4728 */;
-import ChannelStore from "ChannelStore" /* 4643 */;
-import GuildChannelStore from "GuildChannelStore" /* 4724 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 6545 */;
-import GuildStore from "GuildStore" /* 4665 */;
-import ReadStateStore from "ReadStateStore" /* 6500 */;
-import RelationshipStore from "RelationshipStore" /* 4736 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6433 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4847 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import GuildChannelStore from "GuildChannelStore" /* 4843 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6664 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import ReadStateStore from "ReadStateStore" /* 6619 */;
+import RelationshipStore from "RelationshipStore" /* 4855 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6552 */;
 import UserStore from "UserStore" /* 1386 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4794 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let closure_15;
@@ -90,9 +90,9 @@ function GuildRowWrapper(guild) {
     if (memo.isMuted) {
       let BellSlashIcon;
       if (memo.isTemporary) {
-        BellSlashIcon = tmp3(11581).BellZIcon;
+        BellSlashIcon = tmp3(11701).BellZIcon;
       } else {
-        BellSlashIcon = tmp3(10244).BellSlashIcon;
+        BellSlashIcon = tmp3(10364).BellSlashIcon;
       }
       tmp2 = BellSlashIcon;
     } else {
@@ -348,7 +348,7 @@ export default function HomeDrawerGuildRow(guildId) {
   const items = [GuildStore];
   const obj = guildId(504);
   const stateFromStores = obj.useStateFromStores(items, () => GuildStore.getGuild(guildId));
-  const MobileHomeDrawerExperiment = guildId(4976).MobileHomeDrawerExperiment;
+  const MobileHomeDrawerExperiment = guildId(5095).MobileHomeDrawerExperiment;
   const enableHome = MobileHomeDrawerExperiment.useConfig({ location: "guild-row" }).enableHome;
   let tmp3 = null;
   if (null != stateFromStores) {

@@ -1,11 +1,11 @@
-// Module ID: 15246
-// Function ID: 15247
+// Module ID: 15369
+// Function ID: 15370
 // Name: InputWatcher
-// Dependencies: [32, 5, 6278, 4, 4638, 5560, 1358, 15185, 4605, 7181, 572, 2]
+// Dependencies: [32, 5, 6397, 4, 4757, 5679, 1358, 15308, 4724, 7301, 572, 2]
 
-// Module 15246 (InputWatcher)
+// Module 15369 (InputWatcher)
 import logger_Logger from "logger/Logger" /* 4 */;
-import Constants from "Constants" /* 6278 */;
+import Constants from "Constants" /* 6397 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -18,7 +18,7 @@ const result = size.fileFinishedImporting("modules/media_engine/InputWatcher.tsx
 class InputWatcher {
   constructor(mediaEngine, mediaEngineStore) {
     let obj = Object.create(new.target.prototype);
-    const timeout = new obj(4638).Timeout();
+    const timeout = new obj(4757).Timeout();
     obj.stateChangeTimeout = timeout;
     obj.inputDetected = undefined;
     obj.lastUpdateTime = performance.now();
@@ -219,7 +219,7 @@ class InputWatcher {
     obj.mediaEngine = mediaEngine;
     obj.mediaEngineStore = mediaEngineStore;
     mediaEngine = obj.mediaEngine;
-    mediaEngine.on(obj(5560).MediaEngineEvent.Silence, obj.handleSilence);
+    mediaEngine.on(obj(5679).MediaEngineEvent.Silence, obj.handleSilence);
     return obj;
   }
   reset() {

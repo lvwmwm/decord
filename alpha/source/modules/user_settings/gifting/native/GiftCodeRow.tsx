@@ -1,20 +1,20 @@
-// Module ID: 14064
-// Function ID: 14065
+// Module ID: 14186
+// Function ID: 14187
 // Name: GiftCodeRow
-// Dependencies: [19, 17, 1071, 21, 4794, 575, 4855, 11786, 6228, 9598, 7121, 5385, 5392, 1112, 2167, 1186, 2]
+// Dependencies: [19, 17, 1071, 21, 4913, 575, 4974, 11906, 6347, 9718, 7241, 5504, 5511, 1112, 2168, 1186, 2]
 
-// Module 14064 (GiftCodeRow)
+// Module 14186 (GiftCodeRow)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import native from "native" /* 1186 */;
-import native2 from "native" /* 4855 */;
-import GiftCodeUtils from "GiftCodeUtils" /* 6228 */;
-import showShareActionSheet2 from "showShareActionSheet" /* 9598 */;
-import GiftCodeActionCreatorsDefault from "GiftCodeActionCreators" /* 11786 */;
+import native2 from "native" /* 4974 */;
+import GiftCodeUtils from "GiftCodeUtils" /* 6347 */;
+import showShareActionSheet2 from "showShareActionSheet" /* 9718 */;
+import GiftCodeActionCreatorsDefault from "GiftCodeActionCreators" /* 11906 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4794 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
@@ -120,7 +120,7 @@ class GiftCodeRow extends PureComponent {
       const intl2 = tmp6(tmp7[13]).intl;
       format = intl2.format;
       obj11 = {
-        hours: expiresAt.diff(require("module_2167")(), "h"),
+        hours: expiresAt.diff(require("module_2168")(), "h"),
         revokeHook(children, arg1) {
             let code;
             let items;

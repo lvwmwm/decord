@@ -1,19 +1,19 @@
-// Module ID: 13207
-// Function ID: 13208
+// Module ID: 13329
+// Function ID: 13330
 // Name: useMessageRequestActions
-// Dependencies: [5, 32, 19, 6837, 13208, 1071, 13209, 11705, 6230, 11211, 7953, 1255, 13211, 4619, 10056, 2]
+// Dependencies: [5, 32, 19, 6956, 13330, 1071, 13331, 11825, 6349, 11331, 8073, 1255, 13333, 4738, 10176, 2]
 // Exports: useMessageRequestActions
 
-// Module 13207 (useMessageRequestActions)
+// Module 13329 (useMessageRequestActions)
 import Constants from "Constants" /* 1071 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import UserSettings from "UserSettings" /* 4619 */;
-import ReportModals from "ReportModals" /* 10056 */;
+import UserSettings from "UserSettings" /* 4738 */;
+import ReportModals from "ReportModals" /* 10176 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import UserProfileStore from "UserProfileStore" /* 6837 */;
-import MessageRequestConstants from "MessageRequestConstants" /* 13208 */;
+import UserProfileStore from "UserProfileStore" /* 6956 */;
+import MessageRequestConstants from "MessageRequestConstants" /* 13330 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2, c8;

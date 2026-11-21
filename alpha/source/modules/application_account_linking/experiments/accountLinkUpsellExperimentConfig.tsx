@@ -1,9 +1,9 @@
-// Module ID: 18970
-// Function ID: 18971
+// Module ID: 19097
+// Function ID: 19098
 // Name: accountLinkUpsellExperimentConfig
 // Dependencies: [2]
 
-// Module 18970 (accountLinkUpsellExperimentConfig)
+// Module 19097 (accountLinkUpsellExperimentConfig)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/application_account_linking/experiments/accountLinkUpsellExperimentConfig.tsx");

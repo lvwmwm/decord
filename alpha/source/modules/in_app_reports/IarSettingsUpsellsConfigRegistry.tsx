@@ -1,15 +1,15 @@
-// Module ID: 10068
-// Function ID: 10069
+// Module ID: 10188
+// Function ID: 10189
 // Name: IarSettingsUpsellsConfigRegistry
-// Dependencies: [19, 10057, 10069, 10070, 10071, 1254, 2]
+// Dependencies: [19, 10177, 10189, 10190, 10191, 1254, 2]
 // Exports: useIarReportSettingsUpsells, useSettingsUpsellsConfigs
 
-// Module 10068 (IarSettingsUpsellsConfigRegistry)
+// Module 10188 (IarSettingsUpsellsConfigRegistry)
 import GlobalUtils from "GlobalUtils" /* 1254 */;
-import MenuTypes from "MenuTypes" /* 10057 */;
-import IarSettingsUpsellsConfigDmSpamFilterDefault from "IarSettingsUpsellsConfigDmSpamFilter" /* 10069 */;
-import IarSettingsUpsellsConfigScFiltersSexualMediaDefault from "IarSettingsUpsellsConfigScFiltersSexualMedia" /* 10070 */;
-import IarSettingsUpsellsConfigScFiltersGraphicMediaDefault from "IarSettingsUpsellsConfigScFiltersGraphicMedia" /* 10071 */;
+import MenuTypes from "MenuTypes" /* 10177 */;
+import IarSettingsUpsellsConfigDmSpamFilterDefault from "IarSettingsUpsellsConfigDmSpamFilter" /* 10189 */;
+import IarSettingsUpsellsConfigScFiltersSexualMediaDefault from "IarSettingsUpsellsConfigScFiltersSexualMedia" /* 10190 */;
+import IarSettingsUpsellsConfigScFiltersGraphicMediaDefault from "IarSettingsUpsellsConfigScFiltersGraphicMedia" /* 10191 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

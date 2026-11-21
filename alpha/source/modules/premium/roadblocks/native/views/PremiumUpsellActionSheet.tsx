@@ -1,31 +1,31 @@
-// Module ID: 8426
-// Function ID: 8427
+// Module ID: 8546
+// Function ID: 8547
 // Name: PremiumUpsellActionSheet
-// Dependencies: [19, 17, 4795, 1191, 5535, 4827, 1386, 1388, 1071, 5635, 8421, 21, 4794, 575, 5358, 2172, 8427, 8365, 8350, 1112, 8428, 8432, 8436, 8437, 5008, 8425, 8438, 14279, 9234, 1091, 14283, 10829, 5481, 5349, 504, 7400, 10339, 8739, 8742, 14287, 1255, 10830, 4979, 7433, 14289, 5385, 5392, 8720, 2]
+// Dependencies: [19, 17, 4914, 1191, 5654, 4946, 1386, 1388, 1071, 5754, 8541, 21, 4913, 575, 5477, 2173, 8547, 8485, 8470, 1112, 8548, 8552, 8556, 8557, 5127, 8545, 8558, 14401, 9354, 1091, 14405, 10949, 5600, 5468, 504, 7520, 10459, 8859, 8862, 14409, 1255, 10950, 5098, 7553, 14411, 5504, 5511, 8840, 2]
 // Exports: default
 
-// Module 8426 (PremiumUpsellActionSheet)
+// Module 8546 (PremiumUpsellActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import PremiumUtils from "PremiumUtils" /* 2172 */;
-import ChatInputUtils from "ChatInputUtils" /* 4979 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5008 */;
-import LinearGradientDefault from "LinearGradient" /* 5349 */;
-import FastImageDefault from "FastImage" /* 5481 */;
-import StreamSettingsConstants from "StreamSettingsConstants" /* 5635 */;
-import ScheduledMessagesConstants from "ScheduledMessagesConstants" /* 8421 */;
-import openPremiumUpsellActionSheet from "openPremiumUpsellActionSheet" /* 8425 */;
+import PremiumUtils from "PremiumUtils" /* 2173 */;
+import ChatInputUtils from "ChatInputUtils" /* 5098 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
+import LinearGradientDefault from "LinearGradient" /* 5468 */;
+import FastImageDefault from "FastImage" /* 5600 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 5754 */;
+import ScheduledMessagesConstants from "ScheduledMessagesConstants" /* 8541 */;
+import openPremiumUpsellActionSheet from "openPremiumUpsellActionSheet" /* 8545 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4795 */;
+import AccessibilityStore from "AccessibilityStore" /* 4914 */;
 import ThemeStore from "ThemeStore" /* 1191 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5535 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4827 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5654 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4946 */;
 import UserStore from "UserStore" /* 1386 */;
 import PremiumConstants from "PremiumConstants" /* 1388 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let guildId;

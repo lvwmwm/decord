@@ -1,93 +1,93 @@
 // Module ID: 5106
 // Function ID: 5107
-// Dependencies: [5078, 5087, 5083, 5085, 5057]
-// Exports: updateHandlers
+// Dependencies: [19, 5107, 1509]
 
 // Module 5106
-import handlerIDToTag from "handlerIDToTag" /* 5057 */;
-import ALLOWED_PROPS from "ALLOWED_PROPS" /* 5078 */;
-import react_nativeDefault from "react-native" /* 5083 */;
-import selectProperties from "selectProperties" /* 5085 */;
+import nanoid from "nanoid" /* 1509 */;
+import react from "react" /* 19 */;
 
-const require = globalThis.__r;
-let _require;
+let name;
 
-
-export function updateHandlers(attachedGestures, prepare, arg2) {
-  let num;
-  _require = attachedGestures;
-  let closure_1 = arg2;
-  prepare.prepare();
-  for (let num = 0; num < arg2.length; num = num + 1) {
-    let tmp2 = attachedGestures.attachedGestures[num];
-    let tmp3 = _require;
-    let tmp4 = attachedGestures;
-    let obj = require("ALLOWED_PROPS");
-    let result = obj.checkGestureCallbacksForWorklets(tmp2);
-    let tmp6 = num;
-    if (arg2[num].handlerTag !== tmp2.handlerTag) {
-      ({ handlerTag: arg2[num].handlerTag, handlerTag: arg2[num].handlers.handlerTag } = tmp2);
+let c2;
+let c3;
+let closure_4;
+let hasOwnProperty;
+({ useCallback: c2, useEffect: c3, useMemo: closure_4, useRef: hasOwnProperty } = react);
+const memoResult = react.memo((name) => {
+  name = name.name;
+  const handleOnMount = name.handleOnMount;
+  const handleOnUnmount = name.handleOnUnmount;
+  const handleOnUpdate = name.handleOnUpdate;
+  const children = name.children;
+  const hostName = name.hostName;
+  let obj = name(handleOnMount[1]);
+  const portal = obj.usePortal(hostName);
+  const addPortal = portal.addPortal;
+  const removePortal = portal.removePortal;
+  const items = [name];
+  let closure_7 = children(() => {
+    let nanoidResult = name;
+    if (!nanoidResult) {
+      const obj = nanoid;
+      nanoidResult = obj.nanoid();
     }
-  }
-  attachedGestures = attachedGestures.attachedGestures;
-  attachedGestures.hasExternalRelations = true;
-  let obj2 = require("ghQueueMicrotask");
-  obj2.ghQueueMicrotask(() => {
-    let arr2;
-    if (attachedGestures.isMounted) {
-      let arr = attachedGestures;
-      if (attachedGestures === tmp.attachedGestures) {
-        let tmp25 = closure_1;
-        let tmp23 = arr.length !== closure_1.length;
-        let num = 0;
-        let tmp24 = tmp23;
-        if (0 < closure_1.length) {
-          do {
-            let tmp3 = attachedGestures[num];
-            arr2 = closure_1;
-            let tmp4 = tmp3.handlers.gestureId !== closure_1[num].handlers.gestureId;
-            let flag = tmp23;
-            let tmp2 = attachedGestures;
-            if (tmp4) {
-              let tmp6 = arr2[num].shouldUseReanimated || tmp3.shouldUseReanimated;
-              tmp4 = tmp6;
-            }
-            if (tmp4) {
-              flag = true;
-            }
-            tmp3.config = arr2[num].config;
-            tmp3.handlers = arr2[num].handlers;
-            let tmp9 = react_nativeDefault;
-            let setGestureHandlerConfig = tmp9.setGestureHandlerConfig;
-            let handlerTag = tmp3.handlerTag;
-            let obj = selectProperties;
-            let result = setGestureHandlerConfig(handlerTag, obj.filterConfig(tmp3.config, ALLOWED_PROPS.ALLOWED_PROPS));
-            let tmp16 = react_nativeDefault;
-            let configureRelations = tmp16.configureRelations;
-            let handlerTag2 = tmp3.handlerTag;
-            let obj2 = ALLOWED_PROPS;
-            let configureRelationsResult = configureRelations(handlerTag2, obj2.extractGestureRelations(tmp3));
-            let obj3 = handlerIDToTag;
-            let registerHandlerResult = obj3.registerHandler(tmp3.handlerTag, tmp3, tmp3.config.testId);
-            num = num + 1;
-            tmp23 = flag;
-            tmp24 = flag;
-            tmp25 = arr2;
-            arr = tmp2;
-          } while (num < arr2.length);
-        }
-        const obj4 = ALLOWED_PROPS;
-        attachedGestures.hasExternalRelations = obj4.hasExternalRelations(tmp25);
-        const tmp26 = attachedGestures;
-        if (attachedGestures.animatedHandlers) {
-          if (tmp24) {
-            const found = arr.filter((shouldUseReanimated) => shouldUseReanimated.shouldUseReanimated);
-            tmp26.animatedHandlers.value = found.map((handlers) => handlers.handlers);
-          }
-        }
-        const obj5 = selectProperties;
-        const result1 = obj5.scheduleFlushOperations();
+    return nanoidResult;
+  }, items);
+  const tmp2 = addPortal();
+  const ref = tmp2;
+  const tmp3 = addPortal();
+  let closure_9 = tmp3;
+  const tmp4 = addPortal();
+  const ref2 = tmp4;
+  const items1 = [handleOnMount, addPortal];
+  tmp2.current = handleOnUnmount(() => {
+    if (handleOnMount) {
+      tmp(() => addPortal(closure_1_7, children));
+    } else {
+      addPortal(closure_7, children);
+    }
+  }, items1);
+  const items2 = [handleOnUnmount, removePortal];
+  tmp3.current = handleOnUnmount(() => {
+    if (handleOnUnmount) {
+      tmp(() => removePortal(closure_1_7));
+    } else {
+      removePortal(closure_7);
+    }
+  }, items2);
+  const items3 = [handleOnUpdate, addPortal, children];
+  tmp4.current = handleOnUnmount(() => {
+    if (handleOnUpdate) {
+      tmp(() => addPortal(closure_1_7, children));
+    } else {
+      addPortal(closure_7, children);
+    }
+  }, items3);
+  handleOnUpdate(() => {
+    let current = ref.current;
+    if (current != null) {
+      current();
+    }
+    return () => {
+      const current = ref.current;
+      const tmp = ref;
+      if (current != null) {
+        current();
       }
+      closure_1_8.current = undefined;
+      tmp.current = undefined;
+      ref2.current = undefined;
+    };
+  }, []);
+  const items4 = [children];
+  handleOnUpdate(() => {
+    const current = ref2.current;
+    if (current != null) {
+      current();
     }
-  });
-}
+  }, items4);
+  return null;
+});
+memoResult.displayName = "Portal";
+
+export const Portal = memoResult;

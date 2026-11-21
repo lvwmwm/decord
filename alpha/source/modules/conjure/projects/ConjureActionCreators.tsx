@@ -1,27 +1,27 @@
-// Module ID: 6814
-// Function ID: 6815
+// Module ID: 6933
+// Function ID: 6934
 // Name: ConjureActionCreators
-// Dependencies: [109, 5, 6500, 1386, 6815, 6502, 1071, 6434, 4, 572, 1284, 6816, 5543, 6818, 559, 6819, 6820, 6821, 6823, 6826, 6824, 5438, 6503, 6540, 6832, 6835, 6836, 2]
+// Dependencies: [109, 5, 6619, 1386, 6934, 6621, 1071, 6553, 4, 572, 1284, 6935, 5662, 6937, 559, 6938, 6939, 6940, 6942, 6945, 6943, 5557, 6622, 6659, 6951, 6954, 6955, 2]
 // Exports: applyPublishedPreview, applyRemixPreview, clearGlobalChatProject, createProject, createRemix, deleteProjectInBackground, fetchApplicationChannels, fetchMissingConjureProjectNow, fetchProjectLimit, installConjureProjectForOwner, isConjureProjectUnavailable, loadMissingConjureProjects, makeConjureProjectPersonal, prefetchProject, refetchProjectsAfterReconnect, refreshPreviewApplication, selectGlobalChatProject, setConjureProjectServer, setSelectedProjectForGuild, takePrefetchedRead
 
-// Module 6814 (ConjureActionCreators)
+// Module 6933 (ConjureActionCreators)
 import logger_Logger from "logger/Logger" /* 4 */;
 import BackoffDefault from "Backoff" /* 559 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5438 */;
-import ReadStateConstants from "ReadStateConstants" /* 6434 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 6820 */;
-import ConjureWorkerTickets from "ConjureWorkerTickets" /* 6821 */;
-import prefetchConjurePreviewFrame from "prefetchConjurePreviewFrame" /* 6823 */;
-import conjurePreviewSurface from "conjurePreviewSurface" /* 6824 */;
-import createProxyTicket from "createProxyTicket" /* 6826 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5557 */;
+import ReadStateConstants from "ReadStateConstants" /* 6553 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 6939 */;
+import ConjureWorkerTickets from "ConjureWorkerTickets" /* 6940 */;
+import prefetchConjurePreviewFrame from "prefetchConjurePreviewFrame" /* 6942 */;
+import conjurePreviewSurface from "conjurePreviewSurface" /* 6943 */;
+import createProxyTicket from "createProxyTicket" /* 6945 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ReadStateStore from "ReadStateStore" /* 6500 */;
+import ReadStateStore from "ReadStateStore" /* 6619 */;
 import UserStore from "UserStore" /* 1386 */;
-import ConjureLastIntegrationStatusStore from "ConjureLastIntegrationStatusStore" /* 6815 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6502 */;
+import ConjureLastIntegrationStatusStore from "ConjureLastIntegrationStatusStore" /* 6934 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6621 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

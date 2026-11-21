@@ -1,14 +1,14 @@
-// Module ID: 8821
-// Function ID: 8822
+// Module ID: 8941
+// Function ID: 8942
 // Name: DynamicBadgeTooltip
-// Dependencies: [32, 19, 21, 1112, 8822, 6910, 2]
+// Dependencies: [32, 19, 21, 1112, 8942, 7030, 2]
 // Exports: DynamicBadgeTooltip
 
-// Module 8821 (DynamicBadgeTooltip)
+// Module 8941 (DynamicBadgeTooltip)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1112 */;
-import Pressables from "Pressables" /* 6910 */;
-import useTooltip from "useTooltip" /* 8822 */;
+import Pressables from "Pressables" /* 7030 */;
+import useTooltip from "useTooltip" /* 8942 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

@@ -1,28 +1,28 @@
-// Module ID: 12178
-// Function ID: 12179
+// Module ID: 12300
+// Function ID: 12301
 // Name: conjurePublishConnection
-// Dependencies: [5, 2163, 6502, 6860, 572, 12179, 6820, 12183, 12184, 2119, 12181, 12187, 12188, 12190, 2]
+// Dependencies: [5, 2164, 6621, 6980, 572, 12301, 6939, 12305, 12306, 2119, 12303, 12309, 12310, 12312, 2]
 // Exports: draftPatchNotes, failPendingSafetyRecheck, forgetClearedSafetyRecheck, parseSafetyRecheck, preparePublish, publishProject, publishStateFromFrame, recordPatchNotesSent, rejectPendingPublish, requestConjureSafetyRecheck, requestPublishOptions
 
-// Module 12178 (conjurePublishConnection)
+// Module 12300 (conjurePublishConnection)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 6820 */;
-import conjureDevicePermissions from "conjureDevicePermissions" /* 12181 */;
-import conjureVoiceChannelPin from "conjureVoiceChannelPin" /* 12187 */;
-import ConjurePublishActionCreators from "ConjurePublishActionCreators" /* 12188 */;
-import ConjurePublishTypes from "ConjurePublishTypes" /* 12190 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 6939 */;
+import conjureDevicePermissions from "conjureDevicePermissions" /* 12303 */;
+import conjureVoiceChannelPin from "conjureVoiceChannelPin" /* 12309 */;
+import ConjurePublishActionCreators from "ConjurePublishActionCreators" /* 12310 */;
+import ConjurePublishTypes from "ConjurePublishTypes" /* 12312 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 2163 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6502 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 6860 */;
+import ApplicationStore from "ApplicationStore" /* 2164 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6621 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 6980 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, paths;
 
 let tmp;
-const requestConjureDevicePermissionsDefault = tmp(12179);
-const f101465 = () => {
+const requestConjureDevicePermissionsDefault = tmp(12301);
+const f101852 = () => {
   const safetyRecheck = ConjurePublishStatusStore.getSafetyRecheck(projectId);
   let status;
   if (safetyRecheck != null) {
@@ -37,7 +37,7 @@ const f101465 = () => {
     const obj4 = map;
     if ("pending" === obj2.status) {
       const _setTimeout = setTimeout;
-      const result = obj4.set(tmp, setTimeout(f101465, 180000));
+      const result = obj4.set(tmp, setTimeout(f101852, 180000));
     }
     const obj3 = { type: "CONJURE_PROJECT_SAFETY_RECHECK", projectId, recheck: obj2 };
     const obj = DispatcherDefault;
@@ -128,7 +128,7 @@ let obj2 = {
         }
         if ("pending" === status1) {
           const _setTimeout = setTimeout;
-          const result = obj6.set(projectId, setTimeout(f101465, 180000));
+          const result = obj6.set(projectId, setTimeout(f101852, 180000));
         }
         const obj10 = { type: "CONJURE_PROJECT_SAFETY_RECHECK", projectId, recheck: obj2 };
         const obj3 = DispatcherDefault;
@@ -528,7 +528,7 @@ export function failPendingSafetyRecheck(projectId) {
     const obj4 = map;
     if ("pending" === obj2.status) {
       const _setTimeout = setTimeout;
-      const result = obj4.set(projectId, setTimeout(f101465, 180000));
+      const result = obj4.set(projectId, setTimeout(f101852, 180000));
     }
     const obj3 = { type: "CONJURE_PROJECT_SAFETY_RECHECK", projectId, recheck: obj2 };
     const obj = DispatcherDefault;
@@ -567,7 +567,7 @@ export function requestConjureSafetyRecheck(projectId) {
     map.delete(projectId);
     if ("pending" === tmp3.status) {
       let _setTimeout = setTimeout;
-      let result = obj.set(projectId, setTimeout(f101465, 180000));
+      let result = obj.set(projectId, setTimeout(f101852, 180000));
     }
     let obj2 = DispatcherDefault;
     let obj3 = { type: "CONJURE_PROJECT_SAFETY_RECHECK", projectId, recheck: tmp3 };

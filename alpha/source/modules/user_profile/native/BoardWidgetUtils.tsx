@@ -1,16 +1,16 @@
-// Module ID: 10230
-// Function ID: 10231
+// Module ID: 10350
+// Function ID: 10351
 // Name: BoardWidgetUtils
-// Dependencies: [6842, 6839, 10097, 2]
+// Dependencies: [6961, 6958, 10217, 2]
 // Exports: reorderBoardWidgets
 
-// Module 10230 (BoardWidgetUtils)
-import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 6842 */;
-import WidgetUtils from "WidgetUtils" /* 10097 */;
+// Module 10350 (BoardWidgetUtils)
+import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 6961 */;
+import WidgetUtils from "WidgetUtils" /* 10217 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const UserProfileGameWidgetTypes = tmp(6839);
+const UserProfileGameWidgetTypes = tmp(6958);
 function isBoardWidget(widget) {
   let isGameWidgetResult = widget instanceof UserProfileApplicationWidgetTypes.ApplicationWidget;
   if (!isGameWidgetResult) {

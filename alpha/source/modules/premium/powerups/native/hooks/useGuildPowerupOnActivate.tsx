@@ -1,15 +1,15 @@
-// Module ID: 13304
-// Function ID: 13305
+// Module ID: 13426
+// Function ID: 13427
 // Name: useGuildPowerupOnActivate
-// Dependencies: [19, 4665, 8624, 8212, 13305, 504, 13306, 7400, 13307, 8623, 5008, 13286, 6427, 13308, 6310, 8980, 2]
+// Dependencies: [19, 4784, 8744, 8332, 13427, 504, 13428, 7520, 13429, 8743, 5127, 13408, 6546, 13430, 6429, 9100, 2]
 // Exports: default
 
-// Module 13304 (useGuildPowerupOnActivate)
-import GuildBoostingUtils from "GuildBoostingUtils" /* 8623 */;
+// Module 13426 (useGuildPowerupOnActivate)
+import GuildBoostingUtils from "GuildBoostingUtils" /* 8743 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4665 */;
-import GuildBoostSlotStore from "GuildBoostSlotStore" /* 8624 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 8212 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import GuildBoostSlotStore from "GuildBoostSlotStore" /* 8744 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 8332 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -18,7 +18,7 @@ let _require, closure_4, importDefault;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const BoostingActionCreators = tmp(6427);
+const BoostingActionCreators = tmp(6546);
 ({ BoostPurchaseIntent: metroRequire, GuildPowerupType: metroImportDefault } = GuildPowerupsConstants);
 let result = size.fileFinishedImporting("modules/premium/powerups/native/hooks/useGuildPowerupOnActivate.tsx");
 

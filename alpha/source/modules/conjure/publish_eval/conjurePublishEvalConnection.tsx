@@ -1,10 +1,10 @@
-// Module ID: 12196
-// Function ID: 12197
+// Module ID: 12318
+// Function ID: 12319
 // Name: conjurePublishEvalConnection
-// Dependencies: [572, 1268, 6820, 2]
+// Dependencies: [572, 1268, 6939, 2]
 // Exports: releasePublishEvalOnTicketRefused, sendConjurePublishEval
 
-// Module 12196 (conjurePublishEvalConnection)
+// Module 12318 (conjurePublishEvalConnection)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import v1 from "v1" /* 1268 */;
 import size from "module_2" /* 2 */;
@@ -98,7 +98,7 @@ export function sendConjurePublishEval(projectId, arg1) {
       const result = obj.set(tmp, obj3);
       const tmp3 = require;
       try {
-        const tmp3Result = tmp3(6820);
+        const tmp3Result = tmp3(6939);
         const conjureSocket = tmp3Result.getConjureSocket(tmp);
         const tmp9 = conjureSocket;
         if (null == conjureSocket) {

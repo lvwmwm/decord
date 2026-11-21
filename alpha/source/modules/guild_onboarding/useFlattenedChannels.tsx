@@ -1,13 +1,13 @@
-// Module ID: 7355
-// Function ID: 7356
+// Module ID: 7475
+// Function ID: 7476
 // Name: useFlattenedChannels
-// Dependencies: [4643, 12, 1254, 504, 2]
+// Dependencies: [4762, 12, 1254, 504, 2]
 // Exports: useFlattenedChannels
 
-// Module 7355 (useFlattenedChannels)
+// Module 7475 (useFlattenedChannels)
 import _modDef12 from "module_12" /* 12 */;
 import GlobalUtils from "GlobalUtils" /* 1254 */;
-import ChannelStore_mod from "ChannelStore" /* 4643 */;
+import ChannelStore_mod from "ChannelStore" /* 4762 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

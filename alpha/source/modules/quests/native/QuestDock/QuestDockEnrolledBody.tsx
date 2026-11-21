@@ -1,24 +1,24 @@
-// Module ID: 16461
-// Function ID: 16462
+// Module ID: 16584
+// Function ID: 16585
 // Name: QuestDockEnrolledBody
-// Dependencies: [5, 19, 17, 8284, 16350, 6439, 16352, 21, 4794, 575, 16356, 16353, 10478, 16346, 16388, 6442, 16384, 16383, 16386, 16385, 1628, 8307, 2]
+// Dependencies: [5, 19, 17, 8404, 16473, 6558, 16475, 21, 4913, 575, 16479, 16476, 10598, 16469, 16511, 6561, 16507, 16506, 16509, 16508, 1628, 8427, 2]
 
-// Module 16461 (QuestDockEnrolledBody)
+// Module 16584 (QuestDockEnrolledBody)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
-import QuestTypes from "QuestTypes" /* 6442 */;
-import QuestBottomSheet from "QuestBottomSheet" /* 16383 */;
-import QuestBottomSheetHeaderDefault from "QuestBottomSheetHeader" /* 16384 */;
-import QuestBottomSheetFooterDefault from "QuestBottomSheetFooter" /* 16386 */;
+import QuestTypes from "QuestTypes" /* 6561 */;
+import QuestBottomSheet from "QuestBottomSheet" /* 16506 */;
+import QuestBottomSheetHeaderDefault from "QuestBottomSheetHeader" /* 16507 */;
+import QuestBottomSheetFooterDefault from "QuestBottomSheetFooter" /* 16509 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import QuestStore from "QuestStore" /* 8284 */;
-import QuestDockStore from "QuestDockStore" /* 16350 */;
-import QuestConstants from "QuestConstants" /* 6439 */;
-import QuestDockConstants from "QuestDockConstants" /* 16352 */;
+import QuestStore from "QuestStore" /* 8404 */;
+import QuestDockStore from "QuestDockStore" /* 16473 */;
+import QuestConstants from "QuestConstants" /* 6558 */;
+import QuestDockConstants from "QuestDockConstants" /* 16475 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2;
@@ -209,10 +209,10 @@ const memoResult = react.memo(function QuestDockEnrolledBody() {
   let items2;
   let minExpandedContentHeight;
   let tmp5Result;
-  let obj = minExpandedContentHeight(16385);
+  let obj = minExpandedContentHeight(16508);
   const questDockQuest = obj.useQuestDockQuest();
   const tmp2 = closure_15();
-  minExpandedContentHeight = react.useContext(minExpandedContentHeight(16353).QuestDockGestureContext).minExpandedContentHeight;
+  minExpandedContentHeight = react.useContext(minExpandedContentHeight(16476).QuestDockGestureContext).minExpandedContentHeight;
   const items = [minExpandedContentHeight];
   const bottom = useSafeAreaInsetsDefault().bottom;
   const items1 = [minExpandedContentHeight];
@@ -232,7 +232,7 @@ const memoResult = react.memo(function QuestDockEnrolledBody() {
   const obj2 = { style: items2, onLayout: callback, children: tmp5Result };
   items2 = [tmp2.wrapper, { paddingBottom: Math.max(bottom, QUEST_DOCK_EXPANDED_PADDING_BOTTOM) }];
   ({ paddingBottom: Math.max(bottom, QUEST_DOCK_EXPANDED_PADDING_BOTTOM) });
-  const obj4 = minExpandedContentHeight(8307);
+  const obj4 = minExpandedContentHeight(8427);
   const tmp6 = View;
   if (obj4.hasWatchVideoTasks(questDockQuest)) {
     const obj5 = { quest: questDockQuest };

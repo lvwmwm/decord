@@ -1,12 +1,12 @@
-// Module ID: 8332
-// Function ID: 8333
+// Module ID: 8452
+// Function ID: 8453
 // Name: ForegroundServiceManager
-// Dependencies: [17, 8333, 1343, 2121, 2]
+// Dependencies: [17, 8453, 1343, 2121, 2]
 
-// Module 8332 (ForegroundServiceManager)
+// Module 8452 (ForegroundServiceManager)
 import react_native from "react-native" /* 17 */;
 import _modDef1343 from "module_1343" /* 1343 */;
-import RequestGatewaySocketAll from "RequestGatewaySocket" /* 8333 */;
+import RequestGatewaySocketAll from "RequestGatewaySocket" /* 8453 */;
 import LifecycleManager from "LifecycleManager" /* 2121 */;
 import size from "module_2" /* 2 */;
 

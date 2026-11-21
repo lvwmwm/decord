@@ -1,22 +1,22 @@
-// Module ID: 13644
-// Function ID: 13645
+// Module ID: 13766
+// Function ID: 13767
 // Name: openQuestCollectibleRewardModal
-// Dependencies: [1386, 6439, 21, 4794, 575, 504, 9857, 9838, 5385, 1112, 8292, 9290, 2]
+// Dependencies: [1386, 6558, 21, 4913, 575, 504, 9977, 9958, 5504, 1112, 8412, 9410, 2]
 // Exports: openQuestCollectibleRewardModal
 
-// Module 13644 (openQuestCollectibleRewardModal)
+// Module 13766 (openQuestCollectibleRewardModal)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
-import Text_Text from "Text/Text" /* 5385 */;
-import QuestConstants from "QuestConstants" /* 6439 */;
-import getQuestLogger from "getQuestLogger" /* 8292 */;
-import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 9290 */;
-import hooks_QuestHooks from "hooks/QuestHooks" /* 9838 */;
-import QuestRewardUtils from "QuestRewardUtils" /* 9857 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import QuestConstants from "QuestConstants" /* 6558 */;
+import getQuestLogger from "getQuestLogger" /* 8412 */;
+import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 9410 */;
+import hooks_QuestHooks from "hooks/QuestHooks" /* 9958 */;
+import QuestRewardUtils from "QuestRewardUtils" /* 9977 */;
 import UserStore from "UserStore" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4794 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;

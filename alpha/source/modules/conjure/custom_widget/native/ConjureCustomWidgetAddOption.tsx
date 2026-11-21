@@ -1,21 +1,21 @@
-// Module ID: 14458
-// Function ID: 14459
+// Module ID: 14580
+// Function ID: 14581
 // Name: ConjureCustomWidgetAddOption
-// Dependencies: [19, 17, 21, 4794, 575, 14451, 9833, 5008, 14453, 7591, 12200, 1112, 4091, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 14573, 9953, 5127, 14575, 7711, 12322, 1112, 4190, 2]
 // Exports: default
 
-// Module 14458 (ConjureCustomWidgetAddOption)
+// Module 14580 (ConjureCustomWidgetAddOption)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef4091 from "module_4091" /* 4091 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5008 */;
-import ConjureMobileExperiment from "ConjureMobileExperiment" /* 9833 */;
-import MagicWandIcon from "MagicWandIcon" /* 12200 */;
-import ConjureCustomWidget from "ConjureCustomWidget" /* 14451 */;
-import ConjureCustomWidgetSheet from "ConjureCustomWidgetSheet" /* 14453 */;
+import _modDef4190 from "module_4190" /* 4190 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5127 */;
+import ConjureMobileExperiment from "ConjureMobileExperiment" /* 9953 */;
+import MagicWandIcon from "MagicWandIcon" /* 12322 */;
+import ConjureCustomWidget from "ConjureCustomWidget" /* 14573 */;
+import ConjureCustomWidgetSheet from "ConjureCustomWidgetSheet" /* 14575 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4794 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -37,10 +37,10 @@ export default function ConjureCustomWidgetAddOption() {
   const isConjureMobileEnabled = obj2.useIsConjureMobileEnabled(canConjureCustomWidget, ConjureCustomWidgetAddOption_str);
   let tmp7 = null;
   if (isConjureMobileEnabled) {
-    ({ icon: null, label: intl.string(_modDef4091["5WHmVU"]), subLabel: intl2.string(_modDef4091.yI85oV), onPress: tmp6 });
-    const RowButton = tmp2(7591).RowButton;
+    ({ icon: null, label: intl.string(_modDef4190["5WHmVU"]), subLabel: intl2.string(_modDef4190.yI85oV), onPress: tmp6 });
+    const RowButton = tmp2(7711).RowButton;
     ({ IconComponent: MagicWandIcon.MagicWandIcon, variant: "secondary" });
-    const Icon = tmp2(7591).RowButton.Icon;
+    const Icon = tmp2(7711).RowButton.Icon;
     intl = tmp2(1112).intl;
     intl2 = tmp2(1112).intl;
     tmp7 = <View style={tmp.container}>{null}</View>;

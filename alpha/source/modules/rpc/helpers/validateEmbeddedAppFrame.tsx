@@ -1,19 +1,19 @@
-// Module ID: 15550
-// Function ID: 15551
+// Module ID: 15673
+// Function ID: 15674
 // Name: validateEmbeddedAppFrame
-// Dependencies: [14613, 1071, 6783, 5438, 6824, 10684, 2149, 6790, 6784, 2]
+// Dependencies: [14735, 1071, 6902, 5557, 6943, 10804, 2150, 6909, 6903, 2]
 // Exports: tryValidateEmbeddedAppFrame, validateEmbeddedAppFrameOnAnySurface
 
-// Module 15550 (validateEmbeddedAppFrame)
+// Module 15673 (validateEmbeddedAppFrame)
 import Constants from "Constants" /* 1071 */;
-import EmbeddedSurfaceUtils from "EmbeddedSurfaceUtils" /* 2149 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5438 */;
-import getSocketFrameDefault from "getSocketFrame" /* 6783 */;
-import isPostMessageSocketDefault from "isPostMessageSocket" /* 6784 */;
-import RPCErrorDefault from "RPCError" /* 6790 */;
-import conjurePreviewSurface from "conjurePreviewSurface" /* 6824 */;
-import RPCHelpers from "RPCHelpers" /* 10684 */;
-import ConjureBuilderPreviewStore from "ConjureBuilderPreviewStore" /* 14613 */;
+import EmbeddedSurfaceUtils from "EmbeddedSurfaceUtils" /* 2150 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5557 */;
+import getSocketFrameDefault from "getSocketFrame" /* 6902 */;
+import isPostMessageSocketDefault from "isPostMessageSocket" /* 6903 */;
+import RPCErrorDefault from "RPCError" /* 6909 */;
+import conjurePreviewSurface from "conjurePreviewSurface" /* 6943 */;
+import RPCHelpers from "RPCHelpers" /* 10804 */;
+import ConjureBuilderPreviewStore from "ConjureBuilderPreviewStore" /* 14735 */;
 import size from "module_2" /* 2 */;
 
 function validateEmbeddedAppFrame(socket) {

@@ -1,27 +1,27 @@
-// Module ID: 5512
-// Function ID: 5513
+// Module ID: 5631
+// Function ID: 5632
 // Name: findCodedLinks
-// Dependencies: [5513, 1071, 1073, 5419, 1381, 5516, 5517, 1375, 8119, 5514, 8317, 6884, 6794, 8272, 6451, 11845, 8779, 5821, 2]
+// Dependencies: [5632, 1071, 1073, 5538, 1381, 5635, 5636, 1375, 8239, 5633, 8437, 7004, 6913, 8392, 6570, 11965, 8899, 5940, 2]
 // Exports: containsCodedLink, default, findCodedLink, isSuspiciousCodedLink, parseGameServerShareCode, parseQuestsEmbedCode, parseUserProfileEmbedCode, parseUserWishlistCodedLink, remainingPathFromDiscordHostMatch, tryParseSocialLayerStorefrontPath
 
-// Module 5512 (findCodedLinks)
+// Module 5631 (findCodedLinks)
 import Constants from "Constants" /* 1071 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1073 */;
 import BuildOverrideUtils from "BuildOverrideUtils" /* 1375 */;
 import urlParse from "urlParse" /* 1381 */;
-import InviteCodeUtils from "InviteCodeUtils" /* 5514 */;
-import CodedLink from "CodedLink" /* 5516 */;
-import findCodedLinkUrlsDefault from "findCodedLinkUrls" /* 5517 */;
-import UnicodeSanitizationUtils from "UnicodeSanitizationUtils" /* 5821 */;
-import _mod6451 from "module_6451" /* 6451 */;
-import Authorize from "Authorize" /* 6884 */;
-import ExperimentEmbedUtils from "ExperimentEmbedUtils" /* 8119 */;
-import _slicedToArray from "_slicedToArray" /* 8272 */;
-import InviteTypeUtils from "InviteTypeUtils" /* 8317 */;
-import conjureProjectLink from "conjureProjectLink" /* 8779 */;
-import storefrontCodedLink2 from "storefrontCodedLink" /* 11845 */;
-import InviteStore from "InviteStore" /* 5513 */;
-import RegexUtils_mod from "RegexUtils" /* 5419 */;
+import InviteCodeUtils from "InviteCodeUtils" /* 5633 */;
+import CodedLink from "CodedLink" /* 5635 */;
+import findCodedLinkUrlsDefault from "findCodedLinkUrls" /* 5636 */;
+import UnicodeSanitizationUtils from "UnicodeSanitizationUtils" /* 5940 */;
+import _mod6570 from "module_6570" /* 6570 */;
+import Authorize from "Authorize" /* 7004 */;
+import ExperimentEmbedUtils from "ExperimentEmbedUtils" /* 8239 */;
+import _slicedToArray from "_slicedToArray" /* 8392 */;
+import InviteTypeUtils from "InviteTypeUtils" /* 8437 */;
+import conjureProjectLink from "conjureProjectLink" /* 8899 */;
+import storefrontCodedLink2 from "storefrontCodedLink" /* 11965 */;
+import InviteStore from "InviteStore" /* 5632 */;
+import RegexUtils_mod from "RegexUtils" /* 5538 */;
 import size from "module_2" /* 2 */;
 
 let WEBAPP_ENDPOINT, invite, set;
@@ -31,7 +31,7 @@ let obj17;
 let obj20;
 let obj4;
 let obj7;
-const f87502 = (arg0, arg1, arg2, arg3) => {
+const f87886 = (arg0, arg1, arg2, arg3) => {
   let combined = arg0;
   if (null == arg2) {
     const _HermesInternal = HermesInternal;
@@ -55,7 +55,7 @@ const coerceLinksToCodedLinks2 = function coerceLinksToCodedLinks(arg0) {
         let templateHostRemainingPath;
         let tmp101;
         let url;
-        const f87504 = (item) => {
+        const f87888 = (item) => {
           let parts;
           if (typeof item === "string") {
             parts = item.split(",");
@@ -370,7 +370,7 @@ const coerceLinksToCodedLinks2 = function coerceLinksToCodedLinks(arg0) {
               const skuId = tmp99.skuId;
               let parsed = null;
               if (null != query) {
-                const tmp4Result24 = _mod6451;
+                const tmp4Result24 = _mod6570;
                 parsed = tmp4Result24.parse(query);
               }
               if (typeof skuId === "string") {
@@ -389,7 +389,7 @@ const coerceLinksToCodedLinks2 = function coerceLinksToCodedLinks(arg0) {
                   const _Array = Array;
                   if (Array.isArray(skuIds)) {
                     const tmp4Result27 = storefrontCodedLink2;
-                    result1 = tmp4Result27.normalizeStorefrontSkuIds(skuIds.flatMap(f87504));
+                    result1 = tmp4Result27.normalizeStorefrontSkuIds(skuIds.flatMap(f87888));
                   } else {
                     result1 = [];
                   }
@@ -519,7 +519,7 @@ const coerceLinksToCodedLinks2 = function coerceLinksToCodedLinks(arg0) {
               let applicationId2;
               let parsed1 = null;
               if (null != query) {
-                const tmp4Result30 = _mod6451;
+                const tmp4Result30 = _mod6570;
                 parsed1 = tmp4Result30.parse(query);
               }
               let str16;
@@ -553,7 +553,7 @@ const coerceLinksToCodedLinks2 = function coerceLinksToCodedLinks(arg0) {
                       const _Array2 = Array;
                       if (Array.isArray(skuIds1)) {
                         const tmp4Result33 = storefrontCodedLink2;
-                        result3 = tmp4Result33.normalizeStorefrontSkuIds(skuIds1.flatMap(f87504));
+                        result3 = tmp4Result33.normalizeStorefrontSkuIds(skuIds1.flatMap(f87888));
                       } else {
                         result3 = [];
                       }
@@ -1009,7 +1009,7 @@ function findCodedLinks(str) {
   if (null == str) {
     return [];
   } else {
-    str = str.replace(regExp2, f87502);
+    str = str.replace(regExp2, f87886);
     const tmp4 = findCodedLinkUrlsDefault(str);
     let match = str.match(re25);
     const concat = tmp4.concat;
@@ -1264,7 +1264,7 @@ export function findCodedLink(sanitizeUrlResult) {
   if (null == sanitizeUrlResult) {
     items = [];
   } else {
-    const str = sanitizeUrlResult.replace(regExp2, f87502);
+    const str = sanitizeUrlResult.replace(regExp2, f87886);
     const tmp4 = findCodedLinkUrlsDefault(str);
     let match = str.match(re25);
     const concat = tmp4.concat;
@@ -1287,7 +1287,7 @@ export function containsCodedLink(displayTarget) {
       items = [];
     } else {
       let tmp4 = regExp2;
-      const str2 = str.replace(regExp2, f87502);
+      const str2 = str.replace(regExp2, f87886);
       let tmp5 = importDefault;
       const tmp6 = findCodedLinkUrlsDefault(str2);
       let match = str2.match(re25);

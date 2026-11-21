@@ -1,14 +1,14 @@
-// Module ID: 8164
-// Function ID: 8165
+// Module ID: 8284
+// Function ID: 8285
 // Name: UserGuildSettings
-// Dependencies: [5, 6433, 3, 4672, 12, 2]
+// Dependencies: [5, 6552, 3, 4791, 12, 2]
 
-// Module 8164 (UserGuildSettings)
+// Module 8284 (UserGuildSettings)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 4672 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 4791 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6433 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6552 */;
 import size from "module_2" /* 2 */;
 
 let c2;

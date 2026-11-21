@@ -1,14 +1,14 @@
-// Module ID: 7571
-// Function ID: 7572
+// Module ID: 7691
+// Function ID: 7692
 // Name: AnnouncementsWarningIcon
-// Dependencies: [19, 21, 575, 5480, 7531, 2]
+// Dependencies: [19, 21, 575, 5599, 7651, 2]
 // Exports: AnnouncementsWarningIcon
 
-// Module 7571 (AnnouncementsWarningIcon)
+// Module 7691 (AnnouncementsWarningIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5480 */;
-import AssetRegistry from "AssetRegistry" /* 7531 */;
+import BaseIconImage2 from "BaseIconImage" /* 5599 */;
+import AssetRegistry from "AssetRegistry" /* 7651 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,11 +1,11 @@
-// Module ID: 5520
-// Function ID: 5521
+// Module ID: 5639
+// Function ID: 5640
 // Name: MarkupParser
-// Dependencies: [5521, 2068, 2]
+// Dependencies: [5640, 2068, 2]
 
-// Module 5520 (MarkupParser)
+// Module 5639 (MarkupParser)
 import _modDef2068 from "module_2068" /* 2068 */;
-import MarkupASTUtils from "MarkupASTUtils" /* 5521 */;
+import MarkupASTUtils from "MarkupASTUtils" /* 5640 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;

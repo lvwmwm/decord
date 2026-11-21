@@ -1,35 +1,35 @@
-// Module ID: 12023
-// Function ID: 12024
+// Module ID: 12145
+// Function ID: 12146
 // Name: PollVotesActionSheet
-// Dependencies: [32, 5, 19, 17, 4795, 6454, 4643, 5845, 1386, 21, 4794, 575, 504, 1412, 7376, 8670, 5518, 1112, 6910, 5385, 8336, 5054, 12024, 7400, 12030, 10265, 5376, 5824, 4850, 6925, 1186, 10266, 7947, 1653, 5004, 7370, 5003, 5481, 4801, 12031, 12032, 7419, 5008, 5022, 2]
+// Dependencies: [32, 5, 19, 17, 4914, 6573, 4762, 5964, 1386, 21, 4913, 575, 504, 1412, 7496, 8790, 5637, 1112, 7030, 5504, 8456, 5173, 12146, 7520, 12152, 10385, 5495, 5943, 4969, 7045, 1186, 10386, 8067, 1653, 5123, 7490, 5122, 5600, 4920, 12153, 12154, 7539, 5127, 5141, 2]
 // Exports: default
 
-// Module 12023 (PollVotesActionSheet)
+// Module 12145 (PollVotesActionSheet)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
-import shared from "shared" /* 4801 */;
-import useThemeDefault from "useTheme" /* 5003 */;
-import timing_timing from "timing/timing" /* 5004 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5008 */;
-import FastImageDefault from "FastImage" /* 5481 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 5518 */;
-import EmojiDefault from "Emoji" /* 7376 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7947 */;
-import PollsUtils from "PollsUtils" /* 8336 */;
-import PollTextUtils from "PollTextUtils" /* 8670 */;
-import formatPollMessageChatData from "formatPollMessageChatData" /* 12024 */;
+import shared from "shared" /* 4920 */;
+import useThemeDefault from "useTheme" /* 5122 */;
+import timing_timing from "timing/timing" /* 5123 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
+import FastImageDefault from "FastImage" /* 5600 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 5637 */;
+import EmojiDefault from "Emoji" /* 7496 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8067 */;
+import PollsUtils from "PollsUtils" /* 8456 */;
+import PollTextUtils from "PollTextUtils" /* 8790 */;
+import formatPollMessageChatData from "formatPollMessageChatData" /* 12146 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4795 */;
-import EmojiStore from "EmojiStore" /* 6454 */;
-import ChannelStore from "ChannelStore" /* 4643 */;
-import MessageStore from "MessageStore" /* 5845 */;
+import AccessibilityStore from "AccessibilityStore" /* 4914 */;
+import EmojiStore from "EmojiStore" /* 6573 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import MessageStore from "MessageStore" /* 5964 */;
 import UserStore from "UserStore" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let c2, item, set, user;
@@ -497,17 +497,17 @@ function NoResults() {
   const tmp5 = gesture;
   const tmp6 = metroRequire;
   if (obj3.isThemeDark(tmp4)) {
-    tmp2Result = tmp2(12031);
+    tmp2Result = tmp2(12153);
   } else {
-    tmp2Result = tmp2(12032);
+    tmp2Result = tmp2(12154);
   }
   items = [map1(tmp8, obj2), , ];
   const obj4 = { style: tmp.noResultsTitle, variant: "heading-sm/semibold", color: "mobile-text-heading-primary", children: intl.string(intl3.t.vhQK3o) };
-  const Text = tmp9(5385).Text;
+  const Text = tmp9(5504).Text;
   intl = tmp9(1112).intl;
   items[1] = map1(Text, obj4);
   const obj5 = { style: tmp.noResultsSubtitle, variant: "body-sm/semibold", color: "text-default", children: intl2.string(intl3.t.bwytdh) };
-  const Text2 = tmp9(5385).Text;
+  const Text2 = tmp9(5504).Text;
   intl2 = tmp9(1112).intl;
   items[2] = map1(Text2, obj5);
   return tmp5(tmp6, obj);

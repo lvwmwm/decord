@@ -1,11 +1,11 @@
-// Module ID: 17793
-// Function ID: 17794
+// Module ID: 17919
+// Function ID: 17920
 // Name: useCheckpointGuildsBarEntrypoint
-// Dependencies: [32, 19, 4640, 6221, 8960, 4627, 17794, 2]
+// Dependencies: [32, 19, 4759, 6340, 9080, 4746, 17920, 2]
 // Exports: useCheckpointGuildsBarEntrypoint
 
-// Module 17793 (useCheckpointGuildsBarEntrypoint)
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4640 */;
+// Module 17919 (useCheckpointGuildsBarEntrypoint)
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4759 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

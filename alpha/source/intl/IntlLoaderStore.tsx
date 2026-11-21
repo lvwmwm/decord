@@ -1,13 +1,13 @@
-// Module ID: 2188
-// Function ID: 2189
+// Module ID: 2189
+// Function ID: 2190
 // Name: IntlLoaderStore
-// Dependencies: [5, 2026, 1257, 1112, 2189, 1151, 4544, 4575, 2167, 1241, 2]
+// Dependencies: [5, 2026, 1257, 1112, 2190, 1151, 4663, 4694, 2168, 1241, 2]
 // Exports: setAppLocale, subscribeToIntlLoadingSuccess, useLocaleData
 
-// Module 2188 (IntlLoaderStore)
+// Module 2189 (IntlLoaderStore)
 import intl2 from "intl" /* 1112 */;
-import formatjs from "formatjs" /* 4544 */;
-import moment from "moment" /* 4575 */;
+import formatjs from "formatjs" /* 4663 */;
+import moment from "moment" /* 4694 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import module_2026 from "module_2026" /* 2026 */;
 import module_1257 from "module_1257" /* 1257 */;
@@ -336,8 +336,8 @@ const withEqualityFn = module_1257.createWithEqualityFn((arg0, arg1) => {
   obj = {
     isLoading: false,
     inProgressLocale: "y",
-    error: "analyticsLocations",
-    localeData: "props",
+    error: "id",
+    localeData: "style",
     setLoadingStarted(inProgressLocale) {
       obj = { isLoading: true, inProgressLocale };
       return closure_0(obj);

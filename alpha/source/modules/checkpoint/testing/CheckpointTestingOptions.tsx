@@ -1,15 +1,17 @@
-// Module ID: 14487
-// Function ID: 14488
+// Module ID: 14609
+// Function ID: 14610
 // Name: CheckpointTestingOptions
-// Dependencies: [5, 14485, 12375, 3343, 12378, 14488, 1112, 14486, 2]
+// Dependencies: [5, 14607, 12497, 3442, 12500, 14610, 1112, 14608, 2]
 // Exports: getCheckpointTestingOptions
 
-// Module 14487 (CheckpointTestingOptions)
-import _modDef3343 from "module_3343" /* 3343 */;
-import openCheckpoint2 from "openCheckpoint" /* 12375 */;
-import CheckpointActionCreators from "CheckpointActionCreators" /* 12378 */;
-import CheckpointMitigationOverrideStore from "CheckpointMitigationOverrideStore" /* 14485 */;
-import CheckpointMockData from "CheckpointMockData" /* 14486 */;
+// Module 14609 (CheckpointTestingOptions)
+import intl2 from "intl" /* 1112 */;
+import _modDef3442 from "module_3442" /* 3442 */;
+import openCheckpoint2 from "openCheckpoint" /* 12497 */;
+import CheckpointActionCreators from "CheckpointActionCreators" /* 12500 */;
+import CheckpointMitigationOverrideStore from "CheckpointMitigationOverrideStore" /* 14607 */;
+import CheckpointMockData from "CheckpointMockData" /* 14608 */;
+import CheckpointToastUtils from "CheckpointToastUtils" /* 14610 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -26,11 +28,24 @@ function action() {
 }
 let closure_2 = CheckpointMitigationOverrideStore.getCheckpointMitigationMock;
 let c0;
-let obj = { id: "open", label: _modDef3343.yLZjcu, action };
-const items = [obj, , , , ];
+let obj = { id: "open", label: _modDef3442.yLZjcu, action };
+const items = [obj, , , , , ];
 let obj2 = {
-  id: "reset",
-  label: _modDef3343["2DL3aX"],
+  id: "reset-progress",
+  label: _modDef3442.HYMZmZ,
+  action() {
+    const obj = CheckpointActionCreators;
+    const result = obj.resetCheckpointProgress();
+    const showCheckpointTestingToast = CheckpointToastUtils.showCheckpointTestingToast;
+    CheckpointToastUtils;
+    const intl = intl2.intl;
+    const result1 = showCheckpointTestingToast(intl.string(intl2.t.i4jeWR), "success");
+  }
+};
+items[1] = obj2;
+let obj3 = {
+  id: "reset-character",
+  label: _modDef3442.Q9JHSs,
   action() {
     return closure_3(...arguments);
   }
@@ -64,7 +79,7 @@ let closure_3 = _asyncToGenerator(async (arg0, value) => {
           let closure_0 = tmp3;
           c1 = 1;
           c2 = 1;
-          const obj5 = { value: obj2.resetCheckpoint(), done: false };
+          const obj5 = { value: obj2.resetCheckpointCharacter(), done: false };
           obj2 = CheckpointActionCreators;
           return obj5;
         }
@@ -95,23 +110,23 @@ let closure_3 = _asyncToGenerator(async (arg0, value) => {
     }
   }
 });
-items[1] = obj2;
-const kPBZ5M = _modDef3343.kPBZ5M;
+items[2] = obj3;
+const kPBZ5M = _modDef3442.kPBZ5M;
 const FAKE_DATA = CheckpointMockData.CheckpointMocks.FAKE_DATA;
-items[2] = { id: "open-fake-data", label: kPBZ5M, action };
-const UwiUbM = _modDef3343.UwiUbM;
+items[3] = { id: "open-fake-data", label: kPBZ5M, action };
+const UwiUbM = _modDef3442.UwiUbM;
 const GLOBAL_STATS = CheckpointMockData.CheckpointMocks.GLOBAL_STATS;
-items[3] = { id: "open-global-stats", label: UwiUbM, action };
-const BYW9oX = _modDef3343.BYW9oX;
+items[4] = { id: "open-global-stats", label: UwiUbM, action };
+const BYW9oX = _modDef3442.BYW9oX;
 const ZERO_STATS = CheckpointMockData.CheckpointMocks.ZERO_STATS;
-items[4] = { id: "open-zero-stats", label: BYW9oX, action };
+items[5] = { id: "open-zero-stats", label: BYW9oX, action };
 const items1 = [...items];
-const v58TARv = _modDef3343["58TARv"];
+const v58TARv = _modDef3442["58TARv"];
 const UNAVAILABLE = CheckpointMockData.CheckpointMocks.UNAVAILABLE;
-let obj3 = { id: "open-unavailable", label: v58TARv, action };
-const items2 = [obj3];
+let obj4 = { id: "open-unavailable", label: v58TARv, action };
+const items2 = [obj4];
 HermesBuiltin.arraySpread(items1, items2, tmp4);
-let closure_5 = ["reset"];
+let closure_5 = ["reset-progress", "reset-character"];
 let result = size.fileFinishedImporting("modules/checkpoint/testing/CheckpointTestingOptions.tsx");
 
 export const CHECKPOINT_TESTING_OPTIONS = items1;

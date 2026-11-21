@@ -1,14 +1,14 @@
-// Module ID: 7353
-// Function ID: 7354
+// Module ID: 7473
+// Function ID: 7474
 // Name: doGuildOnboardingHelpers
-// Dependencies: [4706, 4712, 1404, 7354, 2]
+// Dependencies: [4825, 4831, 1404, 7474, 2]
 // Exports: waitForOnboardingCompletion
 
-// Module 7353 (doGuildOnboardingHelpers)
+// Module 7473 (doGuildOnboardingHelpers)
 import FlagUtils from "FlagUtils" /* 1404 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 4712 */;
-import GuildOnboardingActionCreatorsDefault from "GuildOnboardingActionCreators" /* 7354 */;
-import GuildMemberStore from "GuildMemberStore" /* 4706 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4831 */;
+import GuildOnboardingActionCreatorsDefault from "GuildOnboardingActionCreators" /* 7474 */;
+import GuildMemberStore from "GuildMemberStore" /* 4825 */;
 import size from "module_2" /* 2 */;
 
 const GuildMemberFlags = GuildMemberConstants.GuildMemberFlags;

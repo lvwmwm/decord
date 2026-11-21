@@ -1,11 +1,11 @@
-// Module ID: 14373
-// Function ID: 14374
+// Module ID: 14495
+// Function ID: 14496
 // Name: getStreamURL
-// Dependencies: [2143, 2]
+// Dependencies: [2144, 2]
 // Exports: default
 
-// Module 14373 (getStreamURL)
-import Constants from "Constants" /* 2143 */;
+// Module 14495 (getStreamURL)
+import Constants from "Constants" /* 2144 */;
 import size from "module_2" /* 2 */;
 
 const validStreamURL = Constants.validStreamURL;

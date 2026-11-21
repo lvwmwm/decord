@@ -1,20 +1,20 @@
-// Module ID: 12656
-// Function ID: 12657
+// Module ID: 12778
+// Function ID: 12779
 // Name: FriendsAnimation
-// Dependencies: [17, 1386, 5850, 21, 1358, 4794, 1412, 504, 1494, 4850, 4931, 2]
+// Dependencies: [17, 1386, 5969, 21, 1358, 4913, 1412, 504, 1494, 4969, 5050, 2]
 // Exports: default
 
-// Module 12656 (FriendsAnimation)
+// Module 12778 (FriendsAnimation)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
-import UserUtils from "UserUtils" /* 4850 */;
-import CheckpointConstants from "CheckpointConstants" /* 5850 */;
+import UserUtils from "UserUtils" /* 4969 */;
+import CheckpointConstants from "CheckpointConstants" /* 5969 */;
 import UserStore from "UserStore" /* 1386 */;
 import PlatformUtils from "utils/PlatformUtils" /* 1358 */;
-import createStyles from "createStyles" /* 4794 */;
+import createStyles from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let obj2;
@@ -91,7 +91,7 @@ export default function FriendsAnimation(animationState) {
     }
   }
   let str6;
-  const CheckpointFriendsRive = tmp2(4931).CheckpointFriendsRive;
+  const CheckpointFriendsRive = tmp2(5050).CheckpointFriendsRive;
   if (null != artboardFrame) {
     str6 = "layout";
   }

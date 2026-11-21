@@ -1,24 +1,24 @@
-// Module ID: 19457
-// Function ID: 19458
+// Module ID: 19584
+// Function ID: 19585
 // Name: NewUserManager
-// Dependencies: [5, 7250, 6570, 1386, 7144, 13491, 1071, 13549, 19458, 13461, 13490, 1091, 7931, 572, 7364, 13468, 13580, 2]
+// Dependencies: [5, 7370, 6689, 1386, 7264, 13613, 1071, 13671, 19585, 13583, 13612, 1091, 8051, 572, 7484, 13590, 13702, 2]
 
-// Module 19457 (NewUserManager)
+// Module 19584 (NewUserManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
 import ConstantsIOS from "ConstantsIOS" /* 1091 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 7931 */;
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 13461 */;
-import NUFActionCreators from "NUFActionCreators" /* 13490 */;
-import NUFConstants from "NUFConstants" /* 13491 */;
-import HubConstants from "HubConstants" /* 13549 */;
-import AddAvatarModalActionCreators from "AddAvatarModalActionCreators" /* 19458 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8051 */;
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 13583 */;
+import NUFActionCreators from "NUFActionCreators" /* 13612 */;
+import NUFConstants from "NUFConstants" /* 13613 */;
+import HubConstants from "HubConstants" /* 13671 */;
+import AddAvatarModalActionCreators from "AddAvatarModalActionCreators" /* 19585 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import PhoneStore from "PhoneStore" /* 7250 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6570 */;
+import PhoneStore from "PhoneStore" /* 7370 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6689 */;
 import UserStore from "UserStore" /* 1386 */;
-import NewUserStore from "NewUserStore" /* 7144 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7364 */;
+import NewUserStore from "NewUserStore" /* 7264 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7484 */;
 import size from "module_2" /* 2 */;
 
 const NewUserTypes = NUFConstants.NewUserTypes;

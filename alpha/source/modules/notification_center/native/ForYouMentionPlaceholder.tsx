@@ -1,17 +1,17 @@
-// Module ID: 17928
-// Function ID: 17929
+// Module ID: 18054
+// Function ID: 18055
 // Name: ForYouMentionPlaceholder
-// Dependencies: [19, 17, 4795, 21, 4794, 575, 504, 1653, 5004, 2]
+// Dependencies: [19, 17, 4914, 21, 4913, 575, 504, 1653, 5123, 2]
 // Exports: ForYouMentionPlaceholder
 
-// Module 17928 (ForYouMentionPlaceholder)
+// Module 18054 (ForYouMentionPlaceholder)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef1653 from "module_1653" /* 1653 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4795 */;
+import AccessibilityStore from "AccessibilityStore" /* 4914 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,16 +1,16 @@
-// Module ID: 15164
-// Function ID: 15165
+// Module ID: 15287
+// Function ID: 15288
 // Name: AvatarDuoPile
-// Dependencies: [19, 21, 10006, 12164, 8903, 12, 14367, 2]
+// Dependencies: [19, 21, 10126, 12286, 9023, 12, 14489, 2]
 // Exports: AvatarDuoPile
 
-// Module 15164 (AvatarDuoPile)
+// Module 15287 (AvatarDuoPile)
 import _mod12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
-import ClipView from "ClipView" /* 8903 */;
-import Pile2 from "Pile" /* 10006 */;
-import ListUtils from "ListUtils" /* 12164 */;
-import CutoutableAvatarImage from "CutoutableAvatarImage" /* 14367 */;
+import ClipView from "ClipView" /* 9023 */;
+import Pile2 from "Pile" /* 10126 */;
+import ListUtils from "ListUtils" /* 12286 */;
+import CutoutableAvatarImage from "CutoutableAvatarImage" /* 14489 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -37,7 +37,7 @@ export function AvatarDuoPile(size) {
   if (tmp3Result2.isArray(size)) {
     mapped = size.map((item) => CutoutableAvatarImage.AVATAR_SIZE_MAP[item]);
   } else {
-    mapped = tmp3(14367).AVATAR_SIZE_MAP[size];
+    mapped = tmp3(14489).AVATAR_SIZE_MAP[size];
   }
   return tmp2(Pile, obj);
 }

@@ -1,29 +1,29 @@
-// Module ID: 11897
-// Function ID: 11898
+// Module ID: 12017
+// Function ID: 12018
 // Name: LegacyUserProfileConnections
-// Dependencies: [19, 17, 2187, 1405, 4851, 6837, 1071, 1190, 6905, 21, 4794, 575, 6949, 11898, 6572, 1412, 4801, 1186, 11901, 11902, 5358, 11903, 11904, 5010, 7425, 5475, 1112, 7135, 5531, 5473, 6910, 5385, 4855, 504, 8176, 11905, 2]
+// Dependencies: [19, 17, 2188, 1405, 4970, 6956, 1071, 1190, 7025, 21, 4913, 575, 7069, 12018, 6691, 1412, 4920, 1186, 12021, 12022, 5477, 12023, 12024, 5129, 7545, 5594, 1112, 7255, 5650, 5592, 7030, 5504, 4974, 504, 8296, 12025, 2]
 // Exports: default, useAppplicationRoleConnectionItems, useConnectedAccountItems
 
-// Module 11897 (LegacyUserProfileConnections)
+// Module 12017 (LegacyUserProfileConnections)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
 import FormConstants from "FormConstants" /* 1190 */;
-import HapticUtils from "HapticUtils" /* 5010 */;
-import Text_Text from "Text/Text" /* 5385 */;
-import ToastUtils from "ToastUtils" /* 5475 */;
-import Constants2 from "Constants" /* 6905 */;
-import MaskedLinkUtils from "MaskedLinkUtils" /* 7135 */;
-import ClipboardUtils from "ClipboardUtils" /* 7425 */;
+import HapticUtils from "HapticUtils" /* 5129 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import ToastUtils from "ToastUtils" /* 5594 */;
+import Constants2 from "Constants" /* 7025 */;
+import MaskedLinkUtils from "MaskedLinkUtils" /* 7255 */;
+import ClipboardUtils from "ClipboardUtils" /* 7545 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import LocaleStore from "LocaleStore" /* 2187 */;
+import LocaleStore from "LocaleStore" /* 2188 */;
 import UserRecord from "UserRecord" /* 1405 */;
-import StreamerModeStore from "StreamerModeStore" /* 4851 */;
-import UserProfileStore from "UserProfileStore" /* 6837 */;
+import StreamerModeStore from "StreamerModeStore" /* 4970 */;
+import UserProfileStore from "UserProfileStore" /* 6956 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -45,8 +45,8 @@ let obj6;
 let size;
 let size1;
 let unpackModuleId;
-const f100914 = () => LocaleStore.locale;
-const f100916 = () => LocaleStore.locale;
+const f101296 = () => LocaleStore.locale;
+const f101298 = () => LocaleStore.locale;
 class ConnectedUserAccount {
   constructor(account) {
     let _undefined;
@@ -86,54 +86,54 @@ class ConnectedUserAccount {
     }
     let createdAtDate = null;
     if (showMetadata) {
-      let obj2 = account(6949);
+      let obj2 = account(7069);
       createdAtDate = obj2.getCreatedAtDate(metadata[MetadataFields.CREATED_AT], locale);
     }
     if (showMetadata) {
       const type = account.type;
       if (constants.REDDIT === type) {
-        const obj8 = account(11898);
+        const obj8 = account(12018);
         redditMetadataItems = obj8.generateRedditMetadataItems(metadata, tmp.metadataItem);
       } else if (constants.STEAM === type) {
-        const obj7 = account(11898);
+        const obj7 = account(12018);
         redditMetadataItems = obj7.generateSteamMetadataItems(metadata, tmp.metadataItem);
       } else if (constants.LETTERBOXD === type) {
-        const obj6 = account(11898);
+        const obj6 = account(12018);
         redditMetadataItems = obj6.generateLetterboxdMetadataItems(metadata, tmp.metadataItem);
       } else {
         if (constants.BLUESKY !== type) {
           if (constants.MASTODON !== type) {
             if (constants.TWITTER !== type) {
               if (constants.PAYPAL === type) {
-                const obj4 = account(11898);
+                const obj4 = account(12018);
                 redditMetadataItems = obj4.generatePaypalMetadataItems(metadata, tmp.metadataItem);
               } else if (constants.EBAY === type) {
-                let obj3 = account(11898);
+                let obj3 = account(12018);
                 redditMetadataItems = obj3.generateEbayMetadataItems(metadata, tmp.metadataItem);
               } else if (constants.TIKTOK === type) {
-                const obj28 = account(11898);
+                const obj28 = account(12018);
                 redditMetadataItems = obj28.generateTikTokMetadataItems(metadata, tmp.metadataItem);
               }
             }
           }
         }
-        const obj5 = account(11898);
+        const obj5 = account(12018);
         const twitterMetadataItems = obj5.generateTwitterMetadataItems(metadata, tmp.metadataItem);
         let str = "1";
         redditMetadataItems = twitterMetadataItems;
         if ("1" === metadata[MetadataFields.TWITTER_VERIFIED]) {
-          const obj29 = userId(6572);
+          const obj29 = userId(6691);
           color = obj29.get(tmp6.TWITTER).color;
           redditMetadataItems = twitterMetadataItems;
         }
       }
     }
-    const obj9 = userId(6572);
+    const obj9 = userId(6691);
     const value = obj9.get(account.type);
     dependencyMap = value;
     const makeSource = account(1412).makeSource;
     account(1412);
-    const obj10 = account(4801);
+    const obj10 = account(4920);
     if (obj10.isThemeDark(theme)) {
       let darkPNG;
       if (value != null) {
@@ -154,14 +154,14 @@ class ConnectedUserAccount {
     if (null != showInvisibleIcon) {
       let PressableOpacity;
       if (showInvisibleIcon) {
-        let obj = { style: tmp.connectedAccountOpenHide, source: userId(11901) };
+        let obj = { style: tmp.connectedAccountOpenHide, source: userId(12021) };
         const Icon2 = tmp24(1186).Icon;
         tmp30 = closure_14(Icon2, obj);
       }
-      const tmp24Result = account(5358);
+      const tmp24Result = account(5477);
       const token = tmp24Result.useToken(tmp21(575).colors.BACKGROUND_MOD_MUTED, theme);
-      const useToken = account(5358).useToken;
-      account(5358);
+      const useToken = account(5477).useToken;
+      account(5477);
       const INTERACTIVE_TEXT_ACTIVE = tmp21(575).colors.INTERACTIVE_TEXT_ACTIVE;
       if (null != color) {
         theme = constants2.DARK;
@@ -175,10 +175,10 @@ class ConnectedUserAccount {
       let tmp37 = null;
       if (account.verified) {
         const obj11 = { style: tmp.verifiedCheckContainer, children: items };
-        const obj12 = { style: tmp.verifiedCheck, size: account(1186).Icon.Sizes.REFRESH_SMALL_16, source: userId(11903), color: tmp36 };
+        const obj12 = { style: tmp.verifiedCheck, size: account(1186).Icon.Sizes.REFRESH_SMALL_16, source: userId(12023), color: tmp36 };
         const Icon3 = tmp24(1186).Icon;
         items = [closure_14(Icon3, obj12), ];
-        const obj13 = { style: tmp.verifiedCheck, size: account(1186).Icon.Sizes.REFRESH_SMALL_16, source: userId(11904), color: WHITE };
+        const obj13 = { style: tmp.verifiedCheck, size: account(1186).Icon.Sizes.REFRESH_SMALL_16, source: userId(12024), color: WHITE };
         const Icon4 = tmp24(1186).Icon;
         items[1] = closure_14(Icon4, obj13);
         tmp37 = closure_15(closure_5, obj11);
@@ -241,7 +241,7 @@ class ConnectedUserAccount {
         }
       }, items3);
       if (null != platformUserUrl) {
-        PressableOpacity = tmp24(6910).PressableOpacity;
+        PressableOpacity = tmp24(7030).PressableOpacity;
       } else {
         PressableOpacity = closure_4;
       }
@@ -259,12 +259,12 @@ class ConnectedUserAccount {
       const obj19 = { style: tmp.connectedAccountNameContainer, children: items7 };
       const obj20 = { style: tmp.connectedAccountName, children: items6 };
       const obj21 = { variant: "body-md/semibold", style: tmp.connectedAccountNameText, children: account.name };
-      items6 = [closure_14(account(5385).Text, obj21), tmp37];
+      items6 = [closure_14(account(5504).Text, obj21), tmp37];
       items7 = [closure_15(closure_5, obj20), , ];
       let tmp45Result = null;
       if (null != createdAtDate) {
         const obj22 = { variant: "body-xs/medium", style: tmp.connectedAccountNameCreatedAtText, children: intl.format(account(1112).t["9rfonh"], obj23) };
-        const Text = tmp24(5385).Text;
+        const Text = tmp24(5504).Text;
         intl = tmp24(1112).intl;
         obj23 = { date: createdAtDate };
         tmp45Result = tmp45(Text, obj22);
@@ -285,7 +285,7 @@ class ConnectedUserAccount {
     }
     tmp30 = null;
     if (null != platformUserUrl) {
-      const obj25 = { style: tmp.connectedAccountOpenLink, source: userId(11902) };
+      const obj25 = { style: tmp.connectedAccountOpenLink, source: userId(12022) };
       const Icon = tmp24(1186).Icon;
       tmp30 = closure_14(Icon, obj25);
     }
@@ -307,7 +307,7 @@ class ConnectedApplicationUserRoleAccount {
     let closure_1 = tmp;
     let tmp2 = applicationRoleConnection;
     const tmp3 = dependencyMap;
-    let obj = applicationRoleConnection(11898);
+    let obj = applicationRoleConnection(12018);
     const roleConnectionMetadataItems = obj.generateRoleConnectionMetadataItems(applicationRoleConnection);
     let tmp5 = closure_5;
     let obj2 = { style: items, children: items1 };
@@ -315,14 +315,14 @@ class ConnectedApplicationUserRoleAccount {
     let tmp6 = null;
     if (null != applicationRoleConnection.platform_name) {
       let obj3 = { variant: "body-sm/medium", color: "interactive-text-default", children: applicationRoleConnection.platform_name };
-      tmp6 = closure_14(tmp2(5385).Text, obj3);
+      tmp6 = closure_14(tmp2(5504).Text, obj3);
     }
     items1 = [tmp6, , , ];
     const obj4 = { style: tmp.appConnectionNameContainer, children: tmp8Result };
     tmp8Result = null;
     if (null != applicationRoleConnection.platform_username) {
       const obj5 = { variant: "body-md/semibold", color: "interactive-text-active", children: applicationRoleConnection.platform_username };
-      tmp8Result = tmp8(tmp2(5385).Text, obj5);
+      tmp8Result = tmp8(tmp2(5504).Text, obj5);
     }
     items1[1] = closure_14(tmp5, obj4);
     let tmp8Result2 = null;
@@ -337,7 +337,7 @@ class ConnectedApplicationUserRoleAccount {
     const obj7 = { style: { flexDirection: "row" }, children: items2 };
     const obj8 = { style: tmp.connectedAccountPoweredByContainer, children: closure_14(Text, obj9) };
     obj9 = { variant: "body-xs/normal", color: "text-muted", children: intl.format(tmp2(1112).t.zIT9YA, obj10) };
-    Text = tmp2(5385).Text;
+    Text = tmp2(5504).Text;
     intl = tmp2(1112).intl;
     obj10 = {
       applicationHook() {
@@ -350,7 +350,7 @@ class ConnectedApplicationUserRoleAccount {
         if (null != applicationRoleConnection.application.bot) {
           const self = this;
           const self2 = this;
-          const obj2 = { style: tmp3.connectedAccountPoweredByAvatar, user: tmp10, size: native.AvatarSizes.SIZE_16, guildId: "a" };
+          const obj2 = { style: tmp3.connectedAccountPoweredByAvatar, user: tmp10, size: native.AvatarSizes.SIZE_16, guildId: "Array" };
           const Avatar = native.Avatar;
           tmp10 = new UserRecord(applicationRoleConnection.application.bot);
           tmp5 = gesture(Avatar, obj2);
@@ -437,11 +437,11 @@ export default function LegacyUserProfileConnections(user) {
     return connectedAccounts;
   }, items3);
   let c0;
-  const tmpResult = user(4855);
+  const tmpResult = user(4974);
   tmpResult.useThemeContext().theme;
   const items4 = [LocaleStore];
   const tmpResult5 = user(504);
-  let closure_2 = tmpResult5.useStateFromStores(items4, f100914);
+  let closure_2 = tmpResult5.useStateFromStores(items4, f101296);
   const mapped = memo.map((applicationRoleConnection, index) => {
     let obj2;
     const Fragment = React.Fragment;
@@ -451,12 +451,12 @@ export default function LegacyUserProfileConnections(user) {
   });
   const id = user.id;
   let c1;
-  const tmpResult6 = user(4855);
+  const tmpResult6 = user(4974);
   const theme = tmpResult6.useThemeContext().theme;
   const items5 = [LocaleStore];
   const tmpResult7 = user(504);
-  React = tmpResult7.useStateFromStores(items5, f100916);
-  const tmpResult8 = user(8176);
+  React = tmpResult7.useStateFromStores(items5, f101298);
+  const tmpResult8 = user(8296);
   let closure_4 = tmpResult8.usePlatformAllowed({ forUserProfile: true });
   const found = memo2.filter((type) => {
     const obj = stateFromStores(dependencyMap[14]);
@@ -476,14 +476,14 @@ export default function LegacyUserProfileConnections(user) {
       }
       if (tmp11) {
         const obj3 = { title: intl.string(user(1112).t.PHjkRE), showContainer: true, children: mapped };
-        const tmp14 = stateFromStores(11905);
+        const tmp14 = stateFromStores(12025);
         intl = tmp(1112).intl;
         tmp11 = closure_14(tmp14, obj3);
       }
       const obj4 = { children: items6 };
       items6 = [tmp11, ];
       const obj5 = { title: intl2.string(user(1112).t["3fe7U5"]), showContainer: true, children: tmp9 };
-      const tmp17 = stateFromStores(11905);
+      const tmp17 = stateFromStores(12025);
       intl2 = tmp(1112).intl;
       items6[1] = closure_14(tmp17, obj5);
       tmp18Result = tmp18(tmp19, obj4);
@@ -501,7 +501,7 @@ export function useAppplicationRoleConnectionItems(arr, arg1) {
   const theme = obj.useThemeContext().theme;
   const items = [LocaleStore];
   const obj2 = require("get initialized");
-  dependencyMap = obj2.useStateFromStores(items, f100914);
+  dependencyMap = obj2.useStateFromStores(items, f101296);
   return arr.map((applicationRoleConnection, index) => {
     let obj2;
     const Fragment = React.Fragment;
@@ -517,7 +517,7 @@ export function useConnectedAccountItems(arr, userId, style) {
   theme = obj.useThemeContext().theme;
   let obj2 = require("get initialized");
   const items = [LocaleStore];
-  const locale = obj2.useStateFromStores(items, f100916);
+  const locale = obj2.useStateFromStores(items, f101298);
   const obj3 = require("ConnectionsHooks");
   let closure_4 = obj3.usePlatformAllowed({ forUserProfile: true });
   const found = arr.filter((type) => {

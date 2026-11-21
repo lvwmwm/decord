@@ -1,12 +1,12 @@
-// Module ID: 13159
-// Function ID: 13160
+// Module ID: 13281
+// Function ID: 13282
 // Name: PushNotificationPermissionStore
-// Dependencies: [504, 10741, 572, 2]
+// Dependencies: [504, 10861, 572, 2]
 
-// Module 13159 (PushNotificationPermissionStore)
+// Module 13281 (PushNotificationPermissionStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import PushNotificationDefault from "PushNotification" /* 10741 */;
+import PushNotificationDefault from "PushNotification" /* 10861 */;
 import size from "module_2" /* 2 */;
 
 let set;

@@ -1,24 +1,24 @@
-// Module ID: 16467
-// Function ID: 16468
+// Module ID: 16590
+// Function ID: 16591
 // Name: QuestDockVideoBackground
-// Dependencies: [32, 19, 17, 4795, 6439, 16352, 1071, 21, 4794, 16353, 1653, 5395, 16356, 16441, 10478, 1494, 1628, 504, 16351, 671, 16468, 1378, 9835, 16469, 2023, 9134, 5481, 5349, 2]
+// Dependencies: [32, 19, 17, 4914, 6558, 16475, 1071, 21, 4913, 16476, 1653, 5514, 16479, 16564, 10598, 1494, 1628, 504, 16474, 671, 16591, 1378, 9955, 16592, 2023, 9254, 5600, 5468, 2]
 
-// Module 16467 (QuestDockVideoBackground)
+// Module 16590 (QuestDockVideoBackground)
 import _modDef671 from "module_671" /* 671 */;
 import Constants from "Constants" /* 1071 */;
 import _mod1653 from "module_1653" /* 1653 */;
 import react_nativeDefault from "react-native" /* 2023 */;
-import spring_spring from "spring/spring" /* 5395 */;
-import QuestDockUtils from "QuestDockUtils" /* 16351 */;
-import QuestDockGestureContext from "QuestDockGestureContext" /* 16353 */;
+import spring_spring from "spring/spring" /* 5514 */;
+import QuestDockUtils from "QuestDockUtils" /* 16474 */;
+import QuestDockGestureContext from "QuestDockGestureContext" /* 16476 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4795 */;
-import QuestConstants from "QuestConstants" /* 6439 */;
-import QuestDockConstants from "QuestDockConstants" /* 16352 */;
+import AccessibilityStore from "AccessibilityStore" /* 4914 */;
+import QuestConstants from "QuestConstants" /* 6558 */;
+import QuestDockConstants from "QuestDockConstants" /* 16475 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const _modDef1653 = _mod1653;

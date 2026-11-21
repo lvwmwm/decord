@@ -1,22 +1,22 @@
-// Module ID: 19018
-// Function ID: 19019
+// Module ID: 19145
+// Function ID: 19146
 // Name: ParentalConsentWarningBanner
-// Dependencies: [19, 17, 8216, 1071, 21, 575, 4794, 1628, 16045, 16044, 19019, 10731, 5358, 7965, 1255, 8217, 8074, 5385, 5349, 1112, 2725, 2]
+// Dependencies: [19, 17, 8336, 1071, 21, 575, 4913, 1628, 16168, 16167, 19146, 10851, 5477, 8085, 1255, 8337, 8194, 5504, 5468, 1112, 2824, 2]
 // Exports: default
 
-// Module 19018 (ParentalConsentWarningBanner)
+// Module 19145 (ParentalConsentWarningBanner)
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import Text_Text from "Text/Text" /* 5385 */;
-import _modDef7965 from "module_7965" /* 7965 */;
-import openUserSettings from "openUserSettings" /* 8074 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 8216 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 8217 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import _modDef8085 from "module_8085" /* 8085 */;
+import openUserSettings from "openUserSettings" /* 8194 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 8336 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 8337 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -79,7 +79,7 @@ export default function ParentalConsentWarningBanner(children) {
   daysRemaining = undefined;
   const memo = react.useMemo(() => {
     const items = [token, ];
-    const obj = _modDef7965(token);
+    const obj = _modDef8085(token);
     const setAlphaResult = obj.setAlpha(0);
     items[1] = setAlphaResult.toRgbString();
     return items;

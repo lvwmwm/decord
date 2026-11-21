@@ -1,20 +1,20 @@
-// Module ID: 17430
-// Function ID: 17431
+// Module ID: 17554
+// Function ID: 17555
 // Name: MessagesItemChannelAvatar
-// Dependencies: [19, 4795, 502, 5532, 12709, 1386, 5523, 21, 4794, 575, 1186, 504, 10004, 2]
+// Dependencies: [19, 4914, 502, 5651, 12831, 1386, 5642, 21, 4913, 575, 1186, 504, 10124, 2]
 
-// Module 17430 (MessagesItemChannelAvatar)
+// Module 17554 (MessagesItemChannelAvatar)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 5523 */;
-import GroupDMAvatarDefault from "GroupDMAvatar" /* 10004 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 5642 */;
+import GroupDMAvatarDefault from "GroupDMAvatar" /* 10124 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4795 */;
+import AccessibilityStore from "AccessibilityStore" /* 4914 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import PresenceStore from "PresenceStore" /* 5532 */;
-import TypingStore from "TypingStore" /* 12709 */;
+import PresenceStore from "PresenceStore" /* 5651 */;
+import TypingStore from "TypingStore" /* 12831 */;
 import UserStore from "UserStore" /* 1386 */;
-import createStyles from "createStyles" /* 4794 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;

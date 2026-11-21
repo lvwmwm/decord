@@ -1,12 +1,12 @@
-// Module ID: 15014
-// Function ID: 15015
+// Module ID: 15137
+// Function ID: 15138
 // Name: GuildBadgeToadstool
-// Dependencies: [19, 21, 15010, 7745, 2]
+// Dependencies: [19, 21, 15133, 7865, 2]
 // Exports: GuildBadgeToadstool
 
-// Module 15014 (GuildBadgeToadstool)
-import inlineStyles from "inlineStyles" /* 7745 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 15010 */;
+// Module 15137 (GuildBadgeToadstool)
+import inlineStyles from "inlineStyles" /* 7865 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 15133 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

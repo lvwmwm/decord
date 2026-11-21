@@ -1,12 +1,12 @@
-// Module ID: 4648
-// Function ID: 4649
+// Module ID: 4767
+// Function ID: 4768
 // Name: StageInstanceStore
-// Dependencies: [4649, 504, 572, 2]
+// Dependencies: [4768, 504, 572, 2]
 
-// Module 4648 (StageInstanceStore)
+// Module 4767 (StageInstanceStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4649 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4768 */;
 import size from "module_2" /* 2 */;
 
 let closure_1, closure_2;

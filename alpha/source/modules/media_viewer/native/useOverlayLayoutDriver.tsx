@@ -1,13 +1,13 @@
-// Module ID: 10028
-// Function ID: 10029
+// Module ID: 10148
+// Function ID: 10149
 // Name: useOverlayLayoutDriver
-// Dependencies: [19, 1653, 9903, 5004, 1186, 2]
+// Dependencies: [19, 1653, 10023, 5123, 1186, 2]
 // Exports: useFooterLayoutAnimation, useHeaderLayoutAnimation, useOverlayLayoutDriver
 
-// Module 10028 (useOverlayLayoutDriver)
+// Module 10148 (useOverlayLayoutDriver)
 import native from "native" /* 1186 */;
 import _mod1653 from "module_1653" /* 1653 */;
-import timing_timing from "timing/timing" /* 5004 */;
+import timing_timing from "timing/timing" /* 5123 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ export function useOverlayLayoutDriver() {
   let sharedValue;
   let obj = sharedValue(1653);
   sharedValue = obj.useSharedValue(0);
-  let obj2 = sharedValue(9903);
+  let obj2 = sharedValue(10023);
   const mediaViewerDimensions = obj2.useMediaViewerDimensions();
   const items = [sharedValue, , ];
   ({ height: arr[1], width: arr[2] } = mediaViewerDimensions);

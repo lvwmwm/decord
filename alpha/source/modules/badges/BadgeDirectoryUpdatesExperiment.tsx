@@ -1,10 +1,10 @@
-// Module ID: 13833
-// Function ID: 13834
+// Module ID: 13955
+// Function ID: 13956
 // Name: BadgeDirectoryUpdatesExperiment
 // Dependencies: [1450, 2]
 // Exports: useIsBadgeDirectoryUpdatesEnabled
 
-// Module 13833 (BadgeDirectoryUpdatesExperiment)
+// Module 13955 (BadgeDirectoryUpdatesExperiment)
 import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 

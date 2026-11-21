@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9vdmVybGF5L3dlYi92Mw==", scales: [1], hash: "d37f9bd711c9fc201a1443b4396e3065", name: "tr.messages.d37f9bd711c9fc201a1443b4396e3065.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/powerups", scales: [1], hash: "f127493b1bddfb34c8d1ec13605a4f53", name: "GuildPowerups.compiled.messages", type: "jsona" });

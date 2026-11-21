@@ -1,14 +1,14 @@
-// Module ID: 14727
-// Function ID: 14728
+// Module ID: 14850
+// Function ID: 14851
 // Name: NUFChannelsActionSheet
-// Dependencies: [19, 4640, 21, 5008, 5022, 14728, 14729, 1112, 2]
+// Dependencies: [19, 4759, 21, 5127, 5141, 14851, 14852, 1112, 2]
 // Exports: default
 
-// Module 14727 (NUFChannelsActionSheet)
+// Module 14850 (NUFChannelsActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4640 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5008 */;
-import NUFTemplateV2Default from "NUFTemplateV2" /* 14728 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4759 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
+import NUFTemplateV2Default from "NUFTemplateV2" /* 14851 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ export default function NUFChannelsActionSheet(markAsDismissed) {
       tmp2(ContentDismissActionType.UNKNOWN);
     }
   }, items);
-  const BottomSheet = markAsDismissed(5022).BottomSheet;
+  const BottomSheet = markAsDismissed(5141).BottomSheet;
   ({ illustration: null, title: intl.string(markAsDismissed(1112).t.Ay9424), description: intl2.string(markAsDismissed(1112).t.mufH2P), CTALabel: intl3.string(markAsDismissed(1112).t.BddRzS), onCTAPress: callback });
   const tmp2 = NUFTemplateV2Default;
   intl = markAsDismissed(1112).intl;

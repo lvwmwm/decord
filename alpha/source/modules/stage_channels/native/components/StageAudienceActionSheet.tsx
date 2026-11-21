@@ -1,29 +1,29 @@
-// Module ID: 10784
-// Function ID: 10785
+// Module ID: 10904
+// Function ID: 10905
 // Name: StageAudienceActionSheet
-// Dependencies: [32, 19, 17, 4643, 4706, 21, 4794, 575, 10785, 7436, 1112, 7400, 504, 5831, 6384, 6925, 1186, 7947, 5810, 8547, 7115, 9250, 7471, 10781, 7031, 5385, 4221, 6413, 6424, 10786, 10788, 7433, 7395, 7370, 7228, 7419, 2]
+// Dependencies: [32, 19, 17, 4762, 4825, 21, 4913, 575, 10905, 7556, 1112, 7520, 504, 5950, 6503, 7045, 1186, 8067, 5929, 8667, 7235, 9370, 7591, 10901, 7151, 5504, 4320, 6532, 6543, 10906, 10908, 7553, 7515, 7490, 7348, 7539, 2]
 // Exports: default
 
-// Module 10784 (StageAudienceActionSheet)
+// Module 10904 (StageAudienceActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1112 */;
-import _modDef4221 from "module_4221" /* 4221 */;
-import Text_Text from "Text/Text" /* 5385 */;
-import StageChannelActionCreators from "StageChannelActionCreators" /* 6384 */;
-import TableRowGroup2 from "TableRowGroup" /* 7228 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7400 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7419 */;
-import TableSwitchRow2 from "TableSwitchRow" /* 7436 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7947 */;
-import useRequestToSpeakPermission from "useRequestToSpeakPermission" /* 10785 */;
-import useStageSummaryDefault from "useStageSummary" /* 10788 */;
+import _modDef4320 from "module_4320" /* 4320 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import StageChannelActionCreators from "StageChannelActionCreators" /* 6503 */;
+import TableRowGroup2 from "TableRowGroup" /* 7348 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7520 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7539 */;
+import TableSwitchRow2 from "TableSwitchRow" /* 7556 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8067 */;
+import useRequestToSpeakPermission from "useRequestToSpeakPermission" /* 10905 */;
+import useStageSummaryDefault from "useStageSummary" /* 10908 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4643 */;
-import GuildMemberStore from "GuildMemberStore" /* 4706 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import GuildMemberStore from "GuildMemberStore" /* 4825 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, importDefault;
@@ -69,7 +69,7 @@ function StageAudienceEmptyState() {
   const Text = Text_Text.Text;
   intl = intl5.intl;
   items = [metroImportAll(Text, obj2), ];
-  const obj3 = { style: tmp.centered, variant: "body-sm/normal", color: "text-default", children: intl2.string(_modDef4221.eo2IxJ) };
+  const obj3 = { style: tmp.centered, variant: "body-sm/normal", color: "text-default", children: intl2.string(_modDef4320.eo2IxJ) };
   const Text2 = Text_Text.Text;
   intl2 = intl5.intl;
   items[1] = metroImportAll(Text2, obj3);
@@ -89,14 +89,14 @@ function StageAudienceActionSheetContent(channel) {
   channel = channel.channel;
   let tmp = closure_11();
   importDefault = tmp;
-  let obj = channel(6413);
+  let obj = channel(6532);
   dependencyMap = obj.useCanModerateRequestToSpeak(channel.id);
   const tmp2 = useStageSummaryDefault(channel.id);
-  let obj2 = channel(6413);
+  let obj2 = channel(6532);
   const canToggleRequestToSpeak = obj2.useCanToggleRequestToSpeak(channel);
-  let obj3 = channel(6424);
+  let obj3 = channel(6543);
   const sortedRequestToSpeakParticipants = obj3.useSortedRequestToSpeakParticipants(channel.id);
-  let obj4 = channel(10786);
+  let obj4 = channel(10906);
   const throttledStageAudience = obj4.useThrottledStageAudience(channel.id);
   let items = [canToggleRequestToSpeak, sortedRequestToSpeakParticipants, throttledStageAudience];
   const memo = react.useMemo(() => {
@@ -135,11 +135,11 @@ function StageAudienceActionSheetContent(channel) {
     });
     return items;
   }, items);
-  const obj5 = { scrollable: true, startExpanded: true, dismissAccessibilityLabel: intl.string(_modDef4221["ZSmz+r"]), header: closure_8(BottomSheetTitleHeader, obj6), children: closure_8(channel(7370).BottomSheetFlashList, obj7) };
-  const ActionSheet = channel(7433).ActionSheet;
+  const obj5 = { scrollable: true, startExpanded: true, dismissAccessibilityLabel: intl.string(_modDef4320["ZSmz+r"]), header: closure_8(BottomSheetTitleHeader, obj6), children: closure_8(channel(7490).BottomSheetFlashList, obj7) };
+  const ActionSheet = channel(7553).ActionSheet;
   intl = channel(1112).intl;
   obj6 = { title: intl2.string(channel(1112).t.suRApw), subtitle: tmp2 };
-  BottomSheetTitleHeader = channel(7395).BottomSheetTitleHeader;
+  BottomSheetTitleHeader = channel(7515).BottomSheetTitleHeader;
   intl2 = channel(1112).intl;
   obj7 = {
     contentContainerStyle: tmp.list,
@@ -336,7 +336,7 @@ export default function StageAudienceActionSheet(channelId) {
   if (null != stateFromStores) {
     const obj2 = { value: analyticsLocations, children: closure_8(StageAudienceActionSheetContent, obj3) };
     obj3 = { channel: stateFromStores };
-    const AnalyticsLocationProvider = tmp3(7400).AnalyticsLocationProvider;
+    const AnalyticsLocationProvider = tmp3(7520).AnalyticsLocationProvider;
     tmp5 = closure_8(AnalyticsLocationProvider, obj2);
   }
   return tmp5;

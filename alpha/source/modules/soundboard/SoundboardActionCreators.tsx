@@ -1,18 +1,18 @@
-// Module ID: 6711
-// Function ID: 6712
+// Module ID: 6830
+// Function ID: 6831
 // Name: SoundboardActionCreators
-// Dependencies: [5, 5842, 5844, 1071, 1081, 1284, 6712, 572, 6713, 6231, 6714, 1255, 4624, 12, 5741, 1112, 6715, 2]
+// Dependencies: [5, 5961, 5963, 1071, 1081, 1284, 6831, 572, 6832, 6350, 6833, 1255, 4743, 12, 5860, 1112, 6834, 2]
 // Exports: addFavoriteSound, deleteSound, fetchSoundGuildData, maybeFetchSoundboardSounds, playSoundLocally, removeFavoriteSound, reportSoundFinishedPlaying, reportSoundStartedPlaying, stopSoundLocally, updateSound, updateUserSoundboardVolume, uploadSound
 
-// Module 6711 (SoundboardActionCreators)
+// Module 6830 (SoundboardActionCreators)
 import _modDef12 from "module_12" /* 12 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl3 from "intl" /* 1112 */;
-import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4624 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5741 */;
-import SoundboardConstants from "SoundboardConstants" /* 5844 */;
+import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4743 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5860 */;
+import SoundboardConstants from "SoundboardConstants" /* 5963 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SoundboardStore from "SoundboardStore" /* 5842 */;
+import SoundboardStore from "SoundboardStore" /* 5961 */;
 import Constants from "Constants" /* 1071 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1081 */;
 import size from "module_2" /* 2 */;
@@ -24,7 +24,7 @@ let c9;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-const f89236 = (arg0) => {
+const f89622 = (arg0) => {
   closure_0 = arg0;
   function onSoundboardActionCompleted() {
     const item = closure_0.forEach((item) => {
@@ -137,7 +137,7 @@ function _maybeFetchDefaultSounds() {
     let closure_0 = ["SOUNDBOARD_FETCH_DEFAULT_SOUNDS_SUCCESS", "SOUNDBOARD_FETCH_DEFAULT_SOUNDS_FAILURE"];
     const self = this;
     const self2 = this;
-    const promise = new Promise(f89236);
+    const promise = new Promise(f89622);
     _fetchDefaultSoundsFromApi();
     return promise;
   } else {
@@ -153,7 +153,7 @@ function _maybeFetchGuildSoundboardSounds() {
     _require = ["SOUNDBOARD_SOUNDS_RECEIVED"];
     const self = this;
     const self2 = this;
-    const promise = new Promise(f89236);
+    const promise = new Promise(f89622);
     const obj2 = DispatcherDefault;
     obj2.dispatch({ type: "GUILD_SOUNDBOARD_FETCH" });
     const obj4 = { type: "REQUEST_SOUNDBOARD_SOUNDS", guildIds: guildIdsToFetchSoundsFor };
@@ -556,7 +556,7 @@ export function addFavoriteSound(soundId) {
     obj = _modDef12;
     if (obj.size(soundIds.soundIds) >= metroImportAll) {
       const obj2 = { title: intl.string(intl3.t["+XYXtZ"]), body: intl2.formatToPlainString(intl3.t.JaIyFi, obj3) };
-      const show = tmp(5741).show;
+      const show = tmp(5860).show;
       AlertActionCreatorsDefault;
       intl = intl3.intl;
       intl2 = intl3.intl;

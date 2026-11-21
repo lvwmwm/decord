@@ -1,10 +1,10 @@
-// Module ID: 12994
-// Function ID: 12995
+// Module ID: 13116
+// Function ID: 13117
 // Name: MobileMarkdownFormatMenuExperiment
 // Dependencies: [1450, 2]
 // Exports: useIsMobileMarkdownFormatMenuEnabled
 
-// Module 12994 (MobileMarkdownFormatMenuExperiment)
+// Module 13116 (MobileMarkdownFormatMenuExperiment)
 import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 

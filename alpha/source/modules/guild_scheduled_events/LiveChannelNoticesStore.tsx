@@ -1,12 +1,12 @@
-// Module ID: 17575
-// Function ID: 17576
+// Module ID: 17699
+// Function ID: 17700
 // Name: LiveChannelNoticesStore
-// Dependencies: [4649, 504, 572, 2]
+// Dependencies: [4768, 504, 572, 2]
 
-// Module 17575 (LiveChannelNoticesStore)
+// Module 17699 (LiveChannelNoticesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4649 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4768 */;
 import size from "module_2" /* 2 */;
 
 let closure_1;

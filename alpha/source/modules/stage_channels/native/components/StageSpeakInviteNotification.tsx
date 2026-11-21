@@ -1,18 +1,18 @@
-// Module ID: 11601
-// Function ID: 11602
+// Module ID: 11721
+// Function ID: 11722
 // Name: StageSpeakInviteNotification
-// Dependencies: [19, 17, 10994, 21, 4794, 575, 5410, 1112, 10730, 10734, 11032, 11040, 10804, 5810, 7471, 7031, 6384, 7379, 11602, 5385, 6378, 2]
+// Dependencies: [19, 17, 11114, 21, 4913, 575, 5529, 1112, 10850, 10854, 11152, 11160, 10924, 5929, 7591, 7151, 6503, 7499, 11722, 5504, 6497, 2]
 
-// Module 11601 (StageSpeakInviteNotification)
+// Module 11721 (StageSpeakInviteNotification)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import StageChannelActionCreatorExtras from "StageChannelActionCreatorExtras" /* 6378 */;
-import StageChannelActionCreators from "StageChannelActionCreators" /* 6384 */;
-import InAppNotificationConstants from "InAppNotificationConstants" /* 10994 */;
-import speakOnStageDefault from "speakOnStage" /* 11602 */;
+import StageChannelActionCreatorExtras from "StageChannelActionCreatorExtras" /* 6497 */;
+import StageChannelActionCreators from "StageChannelActionCreators" /* 6503 */;
+import InAppNotificationConstants from "InAppNotificationConstants" /* 11114 */;
+import speakOnStageDefault from "speakOnStage" /* 11722 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -55,17 +55,17 @@ const memoResult = react.memo(function StageSpeakInviteNotification(notification
   const channel = notification.channel;
   const guild = notification.guild;
   let tmp = closure_8();
-  let stringResult = guild(5410)(channel);
+  let stringResult = guild(5529)(channel);
   if (stringResult == null) {
     const intl = channel(1112).intl;
     stringResult = intl.string(channel(1112).t["/YzI63"]);
   }
   dependencyMap = stringResult;
-  const tmp6 = guild(10730)();
+  const tmp6 = guild(10850)();
   react = tmp6;
-  let obj = channel(10734);
+  let obj = channel(10854);
   isVoicePanelOpen = obj.useIsVoicePanelOpen(channel.id);
-  const obj2 = channel(11032);
+  const obj2 = channel(11152);
   handleDismissNotification = obj2.useInAppNotificationContext().handleDismissNotification;
   ref = react.useRef(false);
   const items = [handleDismissNotification];
@@ -112,15 +112,15 @@ const memoResult = react.memo(function StageSpeakInviteNotification(notification
     notification
   };
   obj4 = { style: tmp.iconContainer, children: ref(HandRequestSpeakIcon, obj5) };
-  const NotificationPressable = channel(11040).NotificationPressable;
+  const NotificationPressable = channel(11160).NotificationPressable;
   obj5 = { size: "md", color: guild(575).colors.WHITE };
-  HandRequestSpeakIcon = channel(10804).HandRequestSpeakIcon;
+  HandRequestSpeakIcon = channel(10924).HandRequestSpeakIcon;
   obj6 = { direction: "horizontal", spacing: guild(575).space.PX_8, style: tmp.actions, children: items4 };
-  Stack = channel(5810).Stack;
+  Stack = channel(5929).Stack;
   const obj7 = {
     size: "sm",
     variant: "secondary",
-    icon: ref(channel(7031).XSmallIcon, {}),
+    icon: ref(channel(7151).XSmallIcon, {}),
     accessibilityLabel: intl2.string(channel(1112).t["1YDv7a"]),
     onPress() {
       const obj = StageChannelActionCreators;
@@ -128,24 +128,24 @@ const memoResult = react.memo(function StageSpeakInviteNotification(notification
       callback("declined");
     }
   };
-  const IconButton = channel(7471).IconButton;
+  const IconButton = channel(7591).IconButton;
   intl2 = channel(1112).intl;
   items4 = [ref(IconButton, obj7), ];
   const obj8 = {
     size: "sm",
     variant: "primary",
-    icon: ref(channel(7379).CheckmarkSmallIcon, { color: "white" }),
+    icon: ref(channel(7499).CheckmarkSmallIcon, { color: "white" }),
     accessibilityLabel: intl3.string(channel(1112).t.MpO0px),
     onPress() {
       speakOnStageDefault(channel);
       callback("accepted");
     }
   };
-  const IconButton2 = channel(7471).IconButton;
+  const IconButton2 = channel(7591).IconButton;
   intl3 = channel(1112).intl;
   items4[1] = ref(IconButton2, obj8);
   obj9 = { variant: "heading-sm/medium", color: "text-subtle", lineClamp: handleDismissNotification, children: intl4.string(channel(1112).t.Ul1RJQ) };
-  Text = channel(5385).Text;
+  Text = channel(5504).Text;
   intl4 = channel(1112).intl;
   return ref(NotificationPressable, obj3);
 });

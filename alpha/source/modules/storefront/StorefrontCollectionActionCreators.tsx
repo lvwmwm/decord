@@ -1,19 +1,19 @@
-// Module ID: 9779
-// Function ID: 9780
+// Module ID: 9899
+// Function ID: 9900
 // Name: StorefrontCollectionActionCreators
-// Dependencies: [5, 2187, 8849, 7972, 1071, 8052, 8051, 572, 6240, 6231, 2]
+// Dependencies: [5, 2188, 8969, 8092, 1071, 8172, 8171, 572, 6359, 6350, 2]
 // Exports: maybeFetchCollectionsAfter, maybeFetchCollectionsForApplication, maybeFetchCollectionsForApplicationPage, maybeFetchCollectionsWithProducts
 
-// Module 9779 (StorefrontCollectionActionCreators)
+// Module 9899 (StorefrontCollectionActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
-import StoreUtils from "StoreUtils" /* 6240 */;
-import StorefrontCacheUtils from "StorefrontCacheUtils" /* 8051 */;
-import getStorefrontNativeStoreQuery from "getStorefrontNativeStoreQuery" /* 8052 */;
+import StoreUtils from "StoreUtils" /* 6359 */;
+import StorefrontCacheUtils from "StorefrontCacheUtils" /* 8171 */;
+import getStorefrontNativeStoreQuery from "getStorefrontNativeStoreQuery" /* 8172 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LocaleStore from "LocaleStore" /* 2187 */;
-import StorefrontCollectionStore from "StorefrontCollectionStore" /* 8849 */;
-import StorefrontCollectionRecord from "StorefrontCollectionRecord" /* 7972 */;
+import LocaleStore from "LocaleStore" /* 2188 */;
+import StorefrontCollectionStore from "StorefrontCollectionStore" /* 8969 */;
+import StorefrontCollectionRecord from "StorefrontCollectionRecord" /* 8092 */;
 import size from "module_2" /* 2 */;
 
 let collectionsAfterFetchState, fetchState, requestKey;

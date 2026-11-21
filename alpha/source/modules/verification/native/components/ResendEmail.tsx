@@ -1,22 +1,22 @@
-// Module ID: 7238
-// Function ID: 7239
+// Module ID: 7358
+// Function ID: 7359
 // Name: ResendEmail
-// Dependencies: [32, 19, 17, 4637, 1386, 1071, 21, 4794, 1500, 504, 38, 7239, 7222, 7240, 5385, 1112, 5392, 6306, 5476, 2]
+// Dependencies: [32, 19, 17, 4756, 1386, 1071, 21, 4913, 1500, 504, 38, 7359, 7342, 7360, 5504, 1112, 5511, 6425, 5595, 2]
 // Exports: default
 
-// Module 7238 (ResendEmail)
+// Module 7358 (ResendEmail)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1071 */;
 import intl5 from "intl" /* 1112 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5476 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6306 */;
-import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 7222 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5595 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6425 */;
+import EmailVerificationModalActionCreatorsDefault from "EmailVerificationModalActionCreators" /* 7342 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserRequiredActionStore from "UserRequiredActionStore" /* 4637 */;
+import UserRequiredActionStore from "UserRequiredActionStore" /* 4756 */;
 import UserStore from "UserStore" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4794 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let currentUser, navigation;
@@ -58,7 +58,7 @@ export default function ResendEmail() {
   const items1 = [UserRequiredActionStore];
   const obj3 = navigation(504);
   const stateFromStores1 = obj3.useStateFromStores(items1, () => action.getAction());
-  const obj4 = verified(7239);
+  const obj4 = verified(7359);
   const result = obj4.isEmailReverification(stateFromStores1);
   let tmp16Result = !result;
   [tmp10, dependencyMap] = react.useState(false);
@@ -80,13 +80,13 @@ export default function ResendEmail() {
   const callback = react.useCallback(() => {
     navigation.push(VerificationModalScenes.ENTER_EMAIL);
   }, items3);
-  items4 = [closure_9(navigation(7240).EnvelopeOpenSpotIllustration, { scale: 0.75 }), , , , ];
+  items4 = [closure_9(navigation(7360).EnvelopeOpenSpotIllustration, { scale: 0.75 }), , , , ];
   const obj6 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.string(navigation(1112).t.fUtddV) };
-  const Text = navigation(5385).Text;
+  const Text = navigation(5504).Text;
   intl = navigation(1112).intl;
   items4[1] = closure_9(Text, obj6);
   const obj7 = { style: tmp.body, variant: "body-sm/medium", color: "text-default", children: formatResult };
-  const Text2 = navigation(5385).Text;
+  const Text2 = navigation(5504).Text;
   const intl2 = navigation(1112).intl;
   const tmp14 = closure_10;
   if (tmp10) {
@@ -113,13 +113,13 @@ export default function ResendEmail() {
     },
     grow: true
   };
-  Button = tmp2(5392).Button;
+  Button = tmp2(5511).Button;
   intl3 = tmp2(1112).intl;
   items4[3] = closure_9(View, obj9);
   if (!result) {
     const obj11 = { style: tmp.change, children: closure_9(Button2, obj12) };
     obj12 = { text: intl4.string(navigation(1112).t.Vm8akB), variant: "secondary", onPress: callback, grow: true };
-    Button2 = tmp2(5392).Button;
+    Button2 = tmp2(5511).Button;
     intl4 = tmp2(1112).intl;
     tmp16Result = tmp16(tmp15, obj11);
   }

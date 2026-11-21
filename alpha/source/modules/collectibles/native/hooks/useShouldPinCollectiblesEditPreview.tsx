@@ -1,13 +1,13 @@
-// Module ID: 14138
-// Function ID: 14139
+// Module ID: 14260
+// Function ID: 14261
 // Name: useShouldPinCollectiblesEditPreview
-// Dependencies: [1494, 1628, 5348, 2]
+// Dependencies: [1494, 1628, 5467, 2]
 // Exports: useShouldPinCollectiblesEditPreview
 
-// Module 14138 (useShouldPinCollectiblesEditPreview)
+// Module 14260 (useShouldPinCollectiblesEditPreview)
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
-import NavigatorConstants from "NavigatorConstants" /* 5348 */;
+import NavigatorConstants from "NavigatorConstants" /* 5467 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/collectibles/native/hooks/useShouldPinCollectiblesEditPreview.tsx");

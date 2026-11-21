@@ -1,16 +1,16 @@
-// Module ID: 7890
-// Function ID: 7891
+// Module ID: 8010
+// Function ID: 8011
 // Name: utils
-// Dependencies: [1088, 11, 1112, 2167, 7891, 7892, 2]
+// Dependencies: [1088, 11, 1112, 2168, 8011, 8012, 2]
 // Exports: calculateActiveTimestampDurations, formatActiveA11yTimestamp, formatEntryTimestamp, getAggregateRange, getEntryDuration, getEpisodeBadgeA11yText, getEpisodeBadgeText, getFullResurrectedBadgeText, getMarathonDescription, getResurrectedEntryLastPlayTime, getRichGameStateBadgeText, getStreakCount, getTrait, getTrendingType, isEntryActive, isEntryExpired, isEntryLive, isEntryMarathon, isEntryNew, isEntryRecent, isEntryTopGame, isValidStreak
 
-// Module 7890 (utils)
+// Module 8010 (utils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DurationsDefault from "Durations" /* 1088 */;
 import intl4 from "intl" /* 1112 */;
-import _modDef2167 from "module_2167" /* 2167 */;
-import ContentInventoryTraitType from "ContentInventoryTraitType" /* 7891 */;
-import ContentInventoryEntryType from "ContentInventoryEntryType" /* 7892 */;
+import _modDef2168 from "module_2168" /* 2168 */;
+import ContentInventoryTraitType from "ContentInventoryTraitType" /* 8011 */;
+import ContentInventoryEntryType from "ContentInventoryEntryType" /* 8012 */;
 import size_mod from "module_2" /* 2 */;
 
 function calculateTimestampDurations(end, now) {
@@ -106,8 +106,8 @@ function formatEndedTimestamp(entry, arg1, timestamp, arg3) {
   if (formatSet === undefined) {
     formatSet = closure_6;
   }
-  const obj2 = _modDef2167(timestamp);
-  const tmp3 = _modDef2167;
+  const obj2 = _modDef2168(timestamp);
+  const tmp3 = _modDef2168;
   const obj3 = SnowflakeUtilsDefault;
   const diffResult = obj2.diff(tmp3(obj3.extractTimestamp(entry.id)), "s");
   const absolute = Math.abs(diffResult);
@@ -424,7 +424,7 @@ export function getResurrectedEntryLastPlayTime(entry) {
 }
 export function getFullResurrectedBadgeText(arg0) {
   let num;
-  const obj = _modDef2167();
+  const obj = _modDef2168();
   const diffResult = obj.diff(arg0, "months");
   const intl = intl4.intl;
   const formatToPlainString = intl.formatToPlainString;

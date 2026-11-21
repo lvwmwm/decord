@@ -1,24 +1,24 @@
-// Module ID: 6728
-// Function ID: 6729
+// Module ID: 6847
+// Function ID: 6848
 // Name: SlayerStorefrontUtils
-// Dependencies: [2163, 6729, 2141, 4665, 4827, 6730, 6731, 1071, 1073, 6240, 6732, 12, 6733, 1379, 6451, 504, 6745, 2]
+// Dependencies: [2164, 6848, 2142, 4784, 4946, 6849, 6850, 1071, 1073, 6359, 6851, 12, 6852, 1379, 6570, 504, 6864, 2]
 // Exports: canSeeGameShop, getCardBackgroundImageURL, getCardImageURL, getForwardedSKUShareURL, getForwardedStorefrontEmbedShareURL, getGameItemThumbnailUrl, getHasWishlistOrPopularRecommendations, getMarketingGuildId, getOrderedStorefrontSkuIds, getPrimaryCarouselItemInfo, getRequiredSubscriptionPlanIds, getRewardRequirementPlanTargetingParams, getSocialLayerStorefrontApplicationId, getSocialLayerStorefrontBackgroundImageURL, getSocialLayerStorefrontGuildId, getStorefrontEmbedShareURL, isGameItemSKU, isOnCollectiblesShopGameShopPage, isOnSocialLayerStorefrontPage, isOnSocialLayerStorefrontSkuPage, isOwnsMinSkusRewardRequirement, transformSlayerApplicationStorefrontServer, transformSlayerApplicationStorefrontSummaryServer, transformStorefrontMetadataServer, useGetSocialLayerStorefrontApplicationId, useGetSocialLayerStorefrontGuildIdAndApplication
 
-// Module 6728 (SlayerStorefrontUtils)
+// Module 6847 (SlayerStorefrontUtils)
 import _modDef12 from "module_12" /* 12 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1073 */;
 import URLUtilsDefault from "URLUtils" /* 1379 */;
-import StoreUtils from "StoreUtils" /* 6240 */;
-import _mod6451 from "module_6451" /* 6451 */;
-import WishlistRecommendationRecord from "WishlistRecommendationRecord" /* 6729 */;
-import SocialLayerStorefrontTypes from "SocialLayerStorefrontTypes" /* 6732 */;
-import StorefrontUtils from "StorefrontUtils" /* 6733 */;
-import ApplicationStore from "ApplicationStore" /* 2163 */;
-import ApplicationRecord from "ApplicationRecord" /* 2141 */;
-import GuildStore from "GuildStore" /* 4665 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4827 */;
-import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 6730 */;
-import SocialLayerStorefrontConstants from "SocialLayerStorefrontConstants" /* 6731 */;
+import StoreUtils from "StoreUtils" /* 6359 */;
+import _mod6570 from "module_6570" /* 6570 */;
+import WishlistRecommendationRecord from "WishlistRecommendationRecord" /* 6848 */;
+import SocialLayerStorefrontTypes from "SocialLayerStorefrontTypes" /* 6851 */;
+import StorefrontUtils from "StorefrontUtils" /* 6852 */;
+import ApplicationStore from "ApplicationStore" /* 2164 */;
+import ApplicationRecord from "ApplicationRecord" /* 2142 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4946 */;
+import SocialLayerStorefrontStore from "SocialLayerStorefrontStore" /* 6849 */;
+import SocialLayerStorefrontConstants from "SocialLayerStorefrontConstants" /* 6850 */;
 import Constants from "Constants" /* 1071 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -161,7 +161,7 @@ function getSKUShareURL(guildId, applicationId) {
     const _location2 = location;
     const _location3 = location;
     applicationId = applicationId.applicationId;
-    const obj = _mod6451;
+    const obj = _mod6570;
     const parsed = obj.parse(search);
     const skuId = parsed.skuId;
     ({ tab, applicationId: applicationId2 } = parsed);
@@ -203,7 +203,7 @@ function isOnCollectiblesShopGameShopPage(arr, arg1, arg2, arg3) {
   let applicationId;
   let skuId;
   let tab;
-  const obj = _mod6451;
+  const obj = _mod6570;
   const parsed = obj.parse(arg1);
   ({ tab, applicationId, skuId } = parsed);
   let tmp2 = arr.indexOf(gesture.COLLECTIBLES_SHOP) >= 0;
@@ -660,7 +660,7 @@ export function getHasWishlistOrPopularRecommendations(arr, arg1, arg2) {
 export function isOnSocialLayerStorefrontPage(arr, arg1, arg2, arg3) {
   let applicationId;
   let tab;
-  const obj = _mod6451;
+  const obj = _mod6570;
   const parsed = obj.parse(arg1);
   ({ tab, applicationId } = parsed);
   let tmp2 = arr.indexOf(gesture.COLLECTIBLES_SHOP) >= 0;
@@ -689,7 +689,7 @@ export function isOnSocialLayerStorefrontSkuPage(applicationId) {
   }
   ({ guildId, skuId } = applicationId);
   applicationId = applicationId.applicationId;
-  const obj = _mod6451;
+  const obj = _mod6570;
   const parsed = obj.parse(search);
   ({ tab, applicationId: applicationId2, skuId: skuId2 } = parsed);
   let tmp2 = pathname.indexOf(gesture.COLLECTIBLES_SHOP) >= 0;

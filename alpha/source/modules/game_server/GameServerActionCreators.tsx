@@ -1,22 +1,22 @@
-// Module ID: 13251
-// Function ID: 13252
+// Module ID: 13373
+// Function ID: 13374
 // Name: GameServerActionCreators
-// Dependencies: [2187, 1386, 13252, 8213, 1071, 572, 13253, 6240, 1284, 13255, 8632, 1255, 13256, 13254, 2]
+// Dependencies: [2188, 1386, 13374, 8333, 1071, 572, 13375, 6359, 1284, 13377, 8752, 1255, 13378, 13376, 2]
 // Exports: acceptGameServerToS, disableGameServerForGuild, enableGameServerForGuild, fetchGameServerCatalog, fetchGameServerGlobalCatalog, fetchGameServerInstances, fetchGameServerInstructions, fetchGameServerRegions, fetchMyGameServerRegions, fetchMyGameServers, optimisticallyMarkGameServerResizing, resetGameServerRegionState, updateGameServerForGuild, updateGameServerRegionPingState, updateMyGameServerName, wakeGameServer, wakeMyGameServer
 
-// Module 13251 (GameServerActionCreators)
+// Module 13373 (GameServerActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import HTTPUtils from "HTTPUtils" /* 1284 */;
-import StoreUtils from "StoreUtils" /* 6240 */;
-import GameServerConstants from "GameServerConstants" /* 8213 */;
-import gameServerResponseToInstanceDefault from "gameServerResponseToInstance" /* 8632 */;
-import GameServerMocks from "GameServerMocks" /* 13253 */;
-import GameServerStatus from "GameServerStatus" /* 13254 */;
-import regionResponseToRegionDefault from "regionResponseToRegion" /* 13256 */;
-import LocaleStore from "LocaleStore" /* 2187 */;
+import StoreUtils from "StoreUtils" /* 6359 */;
+import GameServerConstants from "GameServerConstants" /* 8333 */;
+import gameServerResponseToInstanceDefault from "gameServerResponseToInstance" /* 8752 */;
+import GameServerMocks from "GameServerMocks" /* 13375 */;
+import GameServerStatus from "GameServerStatus" /* 13376 */;
+import regionResponseToRegionDefault from "regionResponseToRegion" /* 13378 */;
+import LocaleStore from "LocaleStore" /* 2188 */;
 import UserStore from "UserStore" /* 1386 */;
-import OwnedGameServersStore from "OwnedGameServersStore" /* 13252 */;
+import OwnedGameServersStore from "OwnedGameServersStore" /* 13374 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let _require;
 
 let metroImportAll;
 let metroImportDefault;
-const f103661 = (body) => {
+const f104049 = (body) => {
   body = body.body;
   let game_servers = body.game_servers;
   const dispatch = closure_1_1(closure_1_2[5]).dispatch;
@@ -288,7 +288,7 @@ export function fetchMyGameServers() {
   const HTTP = HTTPUtils.HTTP;
   const obj = { url: metroImportAll.GAME_SERVERS_ME, rejectWithError: true, oldFormErrors: true, retries: 3 };
   const value = HTTP.get(obj);
-  return value.then(f103661);
+  return value.then(f104049);
 }
 export function optimisticallyMarkGameServerResizing(arg0) {
   let obj2;
@@ -330,7 +330,7 @@ export function updateMyGameServerName(arg0, name) {
       const HTTP = closure_0(dependencyMap[8]).HTTP;
       const obj = { url: constants.GAME_SERVERS_ME, rejectWithError: true, oldFormErrors: true, retries: 3 };
       const value = HTTP.get(obj);
-      const nextPromise = value.then(f103661);
+      const nextPromise = value.then(f104049);
       nextPromise.catch(() => {
 
       });
@@ -339,7 +339,7 @@ export function updateMyGameServerName(arg0, name) {
       const HTTP = closure_0(dependencyMap[8]).HTTP;
       const obj = { url: constants.GAME_SERVERS_ME, rejectWithError: true, oldFormErrors: true, retries: 3 };
       const value = HTTP.get(obj);
-      const nextPromise = value.then(f103661);
+      const nextPromise = value.then(f104049);
       nextPromise.catch(() => {
 
       });
@@ -385,7 +385,7 @@ export function wakeMyGameServer(arg0) {
     const HTTP = closure_0(dependencyMap[8]).HTTP;
     let obj = { url: constants.GAME_SERVERS_ME, rejectWithError: true, oldFormErrors: true, retries: 3 };
     const value = HTTP.get(obj);
-    const nextPromise = value.then(f103661);
+    const nextPromise = value.then(f104049);
     nextPromise.catch(() => {
 
     });

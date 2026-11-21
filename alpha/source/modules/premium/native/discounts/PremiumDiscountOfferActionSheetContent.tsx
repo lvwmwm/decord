@@ -1,26 +1,26 @@
-// Module ID: 18937
-// Function ID: 18938
+// Module ID: 19064
+// Function ID: 19065
 // Name: PremiumDiscountOfferActionSheetContent
-// Dependencies: [19, 17, 1388, 21, 4794, 575, 12232, 1112, 14595, 7555, 8323, 2172, 16994, 5385, 16998, 5392, 8832, 2]
+// Dependencies: [19, 17, 1388, 21, 4913, 575, 12354, 1112, 14717, 7675, 8443, 2173, 17117, 5504, 17121, 5511, 8952, 2]
 
-// Module 18937 (PremiumDiscountOfferActionSheetContent)
+// Module 19064 (PremiumDiscountOfferActionSheetContent)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1112 */;
 import PremiumConstants from "PremiumConstants" /* 1388 */;
-import PremiumUtils from "PremiumUtils" /* 2172 */;
-import Text_Text from "Text/Text" /* 5385 */;
-import components_Button_Button from "components/Button/Button" /* 5392 */;
-import FolderIcon from "FolderIcon" /* 7555 */;
-import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 8323 */;
-import NitroWheelIcon2 from "NitroWheelIcon" /* 8832 */;
-import UserIcon from "UserIcon" /* 12232 */;
-import ChatSmileIcon from "ChatSmileIcon" /* 14595 */;
-import NitroWumpusFlightRight3dIllustration from "NitroWumpusFlightRight3dIllustration" /* 16994 */;
-import PremiumPerksListDefault from "PremiumPerksList" /* 16998 */;
+import PremiumUtils from "PremiumUtils" /* 2173 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import components_Button_Button from "components/Button/Button" /* 5511 */;
+import FolderIcon from "FolderIcon" /* 7675 */;
+import NitroFileUploadExperiments from "NitroFileUploadExperiments" /* 8443 */;
+import NitroWheelIcon2 from "NitroWheelIcon" /* 8952 */;
+import UserIcon from "UserIcon" /* 12354 */;
+import ChatSmileIcon from "ChatSmileIcon" /* 14717 */;
+import NitroWumpusFlightRight3dIllustration from "NitroWumpusFlightRight3dIllustration" /* 17117 */;
+import PremiumPerksListDefault from "PremiumPerksList" /* 17121 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4794 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;

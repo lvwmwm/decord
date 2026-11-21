@@ -1,28 +1,28 @@
-// Module ID: 4628
-// Function ID: 4629
+// Module ID: 4747
+// Function ID: 4748
 // Name: DismissibleContentUtils
-// Dependencies: [32, 5, 1230, 4629, 4630, 4635, 4640, 1071, 4634, 4641, 11, 4624, 4848, 504, 4627, 572, 5453, 1255, 4631, 5454, 2]
+// Dependencies: [32, 5, 1230, 4748, 4749, 4754, 4759, 1071, 4753, 4760, 11, 4743, 4967, 504, 4746, 572, 5572, 1255, 4750, 5573, 2]
 // Exports: UNSAFE_addGuildDismissedContent, UNSAFE_addSnowflakeBoundGuildDismissedContent, UNSAFE_addTimeRecurringGuildDismissedContent, UNSAFE_isSingleUseGuildDismissibleContentDismissed, UNSAFE_isSnowflakeBoundGuildDismissibleContentDismissed, UNSAFE_isTimeRecurringGuildDismissibleContentDismissed, UNSAFE_removeGuildDismissedContent, UNSAFE_removeSnowflakeBoundGuildDismissedContent, UNSAFE_removeTimeRecurringGuildDismissedContent, getDismissedRecurringDismissibleContentState, getGuildNextNumTimesDismissed, isDismissibleContentBlockedByOverlay, isTimeRecurringDismissibleContentDismissed, isTimeRecurringSnowflakeBoundDismissibleContentDismissed, isVersionedDismissibleContentDismissed, markLatestVersionDismissibleContentAsDismissed, markSnowflakeBoundDismissibleContentAsDismissed, markTimeRecurringDismissibleContentAsDismissed, requestMarkDismissibleContentAsShown, useIsSingleUseGuildDismissibleContentDismissed
 
-// Module 4628 (DismissibleContentUtils)
+// Module 4747 (DismissibleContentUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4624 */;
-import dismissible_content from "dismissible_content" /* 4627 */;
-import DCFEventStore from "DCFEventStore" /* 4629 */;
-import DismissibleContentTypes from "DismissibleContentTypes" /* 4634 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4640 */;
-import VersionedDismissibleContentUtils from "VersionedDismissibleContentUtils" /* 4641 */;
-import NewUserDismissibleContentRegistry from "NewUserDismissibleContentRegistry" /* 4848 */;
-import DismissibleContentFrameworkActionCreators from "DismissibleContentFrameworkActionCreators" /* 5453 */;
-import trackDismissibleContentActioned from "trackDismissibleContentActioned" /* 5454 */;
+import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4743 */;
+import dismissible_content from "dismissible_content" /* 4746 */;
+import DCFEventStore from "DCFEventStore" /* 4748 */;
+import DismissibleContentTypes from "DismissibleContentTypes" /* 4753 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4759 */;
+import VersionedDismissibleContentUtils from "VersionedDismissibleContentUtils" /* 4760 */;
+import NewUserDismissibleContentRegistry from "NewUserDismissibleContentRegistry" /* 4967 */;
+import DismissibleContentFrameworkActionCreators from "DismissibleContentFrameworkActionCreators" /* 5572 */;
+import trackDismissibleContentActioned from "trackDismissibleContentActioned" /* 5573 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1230 */;
-import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 4630 */;
-import DismissibleContentShownStateStore from "DismissibleContentShownStateStore" /* 4635 */;
+import DismissibleContentFrameworkStore from "DismissibleContentFrameworkStore" /* 4749 */;
+import DismissibleContentShownStateStore from "DismissibleContentShownStateStore" /* 4754 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -33,7 +33,7 @@ let c9;
 let metroImportAll;
 let tmp7;
 let unpackModuleId;
-const DismissibleContentFatigueConfig = tmp7(4631);
+const DismissibleContentFatigueConfig = tmp7(4750);
 function addVersionedDismissedContent(GUILD_POWERUP_NOTIFICATION, versionedDismissibleContentCurrentVersion, nextNumTimesDismissed) {
   let str;
   obj = { lastDismissedVersion: versionedDismissibleContentCurrentVersion, lastDismissedAtMs: str.toString(), lastDismissedObjectId: "0", numTimesDismissed: nextNumTimesDismissed };

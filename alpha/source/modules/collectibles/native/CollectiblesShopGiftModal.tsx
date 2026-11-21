@@ -1,31 +1,31 @@
-// Module ID: 13787
-// Function ID: 13788
+// Module ID: 13909
+// Function ID: 13910
 // Name: CollectiblesShopGiftModal
-// Dependencies: [19, 17, 7955, 1071, 1082, 21, 8801, 1378, 2184, 13788, 13786, 9488, 9126, 9492, 13789, 13792, 6972, 1112, 6975, 1186, 8066, 8022, 7950, 504, 9777, 7400, 7419, 2151, 7954, 9491, 2]
+// Dependencies: [19, 17, 8075, 1071, 1082, 21, 8921, 1378, 2185, 13910, 13908, 9608, 9246, 9612, 13911, 13914, 7092, 1112, 7095, 1186, 8186, 8142, 8070, 504, 9897, 7520, 7539, 2152, 8074, 9611, 2]
 // Exports: default
 
-// Module 13787 (CollectiblesShopGiftModal)
+// Module 13909 (CollectiblesShopGiftModal)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1071 */;
 import Constants2 from "Constants" /* 1082 */;
 import intl2 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
-import StringUtils from "StringUtils" /* 2151 */;
-import Navigator2 from "Navigator" /* 6972 */;
-import NavigatorHeader from "NavigatorHeader" /* 6975 */;
-import NoResults from "NoResults" /* 8066 */;
-import openGiftModal from "openGiftModal" /* 13786 */;
-import CollectiblesShopCheckoutDetailsDefault from "CollectiblesShopCheckoutDetails" /* 13789 */;
-import CollectiblesShopGiftPurchaseSectionDefault from "CollectiblesShopGiftPurchaseSection" /* 13792 */;
+import StringUtils from "StringUtils" /* 2152 */;
+import Navigator2 from "Navigator" /* 7092 */;
+import NavigatorHeader from "NavigatorHeader" /* 7095 */;
+import NoResults from "NoResults" /* 8186 */;
+import openGiftModal from "openGiftModal" /* 13908 */;
+import CollectiblesShopCheckoutDetailsDefault from "CollectiblesShopCheckoutDetails" /* 13911 */;
+import CollectiblesShopGiftPurchaseSectionDefault from "CollectiblesShopGiftPurchaseSection" /* 13914 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 7955 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 8075 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
 let hasOwnProperty;
 let tmp;
-const CollectiblesActionCreators = tmp(7954);
+const CollectiblesActionCreators = tmp(8074);
 function CollectiblesShopGiftModalContent(product) {
   let GOOGLE;
   let analyticsLocations;
@@ -136,13 +136,13 @@ export default function CollectiblesShopGiftModal(skuId) {
   const items = [CollectiblesCategoryStore];
   const items1 = [skuId];
   const stateFromStores = obj.useStateFromStores(items, () => CollectiblesCategoryStore.getProduct(skuId), items1);
-  const obj2 = skuId(9777);
+  const obj2 = skuId(9897);
   const obj3 = { needsCategory: false, seedCategoryStore: true, shouldFetchProduct: null == stateFromStores };
   const state = obj2.useCollectiblesShopProduct(skuId, obj3).state;
   const items2 = [];
-  const tmp7 = skuId1(7400);
+  const tmp7 = skuId1(7520);
   const arraySpreadResult = HermesBuiltin.arraySpread(items2, analyticsLocations, 0);
-  items2[arraySpreadResult] = skuId1(7419).COLLECTIBLES_MOBILE_GIFT_MODAL;
+  items2[arraySpreadResult] = skuId1(7539).COLLECTIBLES_MOBILE_GIFT_MODAL;
   const tmp6 = skuId1;
   skuId1 = undefined;
   const analyticsLocations2 = tmp7(items2).analyticsLocations;
@@ -153,13 +153,13 @@ export default function CollectiblesShopGiftModal(skuId) {
   if (null == stateFromStores) {
     tmp16Result = <CollectiblesShopGiftModalPlaceholder isError={"error" === state} onGiftModalDismiss={onGiftModalDismiss} />;
   } else {
-    const tmp3Result = tmp3(2184);
+    const tmp3Result = tmp3(2185);
     if (tmp3Result.isCollectibleGiftingSupported()) {
       const obj5 = { product: stateFromStores, analyticsLocations: analyticsLocations2, lockedRecipientUser, onGiftModalDismiss, giftingOrigin, validateRecipient: tmp10 };
       tmp16Result = tmp16(CollectiblesShopGiftModalContent, obj5);
     } else {
       const obj6 = { onDismiss: onGiftModalDismiss, title: intl.string(tmp3(1112).t["JCFN/y"]) };
-      const tmp6Result = tmp6(9491);
+      const tmp6Result = tmp6(9611);
       intl = tmp3(1112).intl;
       tmp16Result = tmp16(tmp6Result, obj6);
     }

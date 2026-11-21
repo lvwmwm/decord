@@ -1,10 +1,10 @@
-// Module ID: 10228
-// Function ID: 10229
+// Module ID: 10348
+// Function ID: 10349
 // Name: useDisplayableBoardWidgets
-// Dependencies: [19, 10229, 6839, 2]
+// Dependencies: [19, 10349, 6958, 2]
 // Exports: useDisplayableBoardWidgets
 
-// Module 10228 (useDisplayableBoardWidgets)
+// Module 10348 (useDisplayableBoardWidgets)
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

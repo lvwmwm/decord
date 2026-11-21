@@ -1,14 +1,14 @@
-// Module ID: 14445
-// Function ID: 14446
+// Module ID: 14567
+// Function ID: 14568
 // Name: useApplicationWidgetAffinityData
-// Dependencies: [19, 10212, 14446, 504, 6842, 6745, 7404, 14447, 2]
+// Dependencies: [19, 10332, 14568, 504, 6961, 6864, 7524, 14569, 2]
 // Exports: default
 
-// Module 14445 (useApplicationWidgetAffinityData)
-import LibraryApplicationStatisticsActionCreators from "LibraryApplicationStatisticsActionCreators" /* 14447 */;
+// Module 14567 (useApplicationWidgetAffinityData)
+import LibraryApplicationStatisticsActionCreators from "LibraryApplicationStatisticsActionCreators" /* 14569 */;
 import react_mod from "react" /* 19 */;
-import ApplicationWidgetConfigStore from "ApplicationWidgetConfigStore" /* 10212 */;
-import LibraryApplicationStatisticsStore from "LibraryApplicationStatisticsStore" /* 14446 */;
+import ApplicationWidgetConfigStore from "ApplicationWidgetConfigStore" /* 10332 */;
+import LibraryApplicationStatisticsStore from "LibraryApplicationStatisticsStore" /* 14568 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

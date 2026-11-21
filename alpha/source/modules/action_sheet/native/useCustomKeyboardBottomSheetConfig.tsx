@@ -1,16 +1,16 @@
-// Module ID: 12827
-// Function ID: 12828
+// Module ID: 12949
+// Function ID: 12950
 // Name: useCustomKeyboardBottomSheetConfig
-// Dependencies: [19, 4795, 1378, 2021, 4981, 1626, 1494, 11653, 5373, 11652, 2]
+// Dependencies: [19, 4914, 1378, 2021, 5100, 1626, 1494, 11773, 5492, 11772, 2]
 // Exports: default
 
-// Module 12827 (useCustomKeyboardBottomSheetConfig)
+// Module 12949 (useCustomKeyboardBottomSheetConfig)
 import PlatformUtils from "PlatformUtils" /* 1378 */;
 import KeyboardTypes from "KeyboardTypes" /* 1626 */;
 import useSystemKeyboardHeight from "useSystemKeyboardHeight" /* 2021 */;
-import useKeyboardType from "useKeyboardType" /* 4981 */;
+import useKeyboardType from "useKeyboardType" /* 5100 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4795 */;
+import AccessibilityStore from "AccessibilityStore" /* 4914 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -25,7 +25,7 @@ export default function useCustomKeyboardBottomSheetConfig(forceMaxHeight) {
   let obj2;
   let str;
   let styles;
-  const f102490 = () => {
+  const f102878 = () => {
     const obj = { initialPosition: styles.height - minimum, animateOnMount: false };
     let tmp3 = obj;
     const obj2 = PlatformUtils;
@@ -64,8 +64,8 @@ export default function useCustomKeyboardBottomSheetConfig(forceMaxHeight) {
   minimum = tmp3.minimum;
   const maximum = tmp3.maximum;
   let items = [flag, maximum, minimum];
-  ({ initialPosition, animateOnMount } = require("react")(f102490));
-  const tmp4 = require("react")(f102490);
+  ({ initialPosition, animateOnMount } = require("react")(f102878));
+  const tmp4 = require("react")(f102878);
   let obj = { animateOnMount, enablePanDownToClose: flag2, accessible: obj2.isAndroid() && undefined, contentHeight: maximum, containerHeight: tmp2.height, enableDynamicSizing: false, initialPosition, keyboardBehavior: "extend", android_keyboardInputMode: str, snapPoints: memo };
   memo = maximum.useMemo(() => {
     let items1;

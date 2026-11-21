@@ -1,15 +1,12 @@
 // Module ID: 5195
 // Function ID: 5196
-// Dependencies: [5196, 5198, 5199, 5200]
+// Dependencies: []
+// Exports: getNextHandlerTag
 
 // Module 5195
-import _modDef5196 from "module_5196" /* 5196 */;
-import _modDef5198 from "module_5198" /* 5198 */;
-import _modDef5199 from "module_5199" /* 5199 */;
-import _modDef5200 from "module_5200" /* 5200 */;
+let closure_0 = 1;
 
-
-export const TouchableHighlight = _modDef5196;
-export const TouchableNativeFeedback = _modDef5198;
-export const TouchableOpacity = _modDef5199;
-export const TouchableWithoutFeedback = _modDef5200;
+export function getNextHandlerTag() {
+  closure_0 = tmp + 1;
+  return +closure_0;
+}

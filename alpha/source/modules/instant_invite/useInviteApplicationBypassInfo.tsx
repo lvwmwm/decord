@@ -1,11 +1,11 @@
-// Module ID: 19945
-// Function ID: 19946
+// Module ID: 20072
+// Function ID: 20073
 // Name: useInviteApplicationBypassInfo
-// Dependencies: [4726, 1071, 504, 2]
+// Dependencies: [4845, 1071, 504, 2]
 // Exports: useInviteApplicationBypassInfo
 
-// Module 19945 (useInviteApplicationBypassInfo)
-import PermissionStore from "PermissionStore" /* 4726 */;
+// Module 20072 (useInviteApplicationBypassInfo)
+import PermissionStore from "PermissionStore" /* 4845 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 

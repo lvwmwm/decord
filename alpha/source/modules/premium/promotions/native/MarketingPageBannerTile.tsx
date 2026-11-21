@@ -1,19 +1,19 @@
-// Module ID: 9285
-// Function ID: 9286
+// Module ID: 9405
+// Function ID: 9406
 // Name: MarketingPageBannerTile
-// Dependencies: [19, 17, 21, 4794, 575, 7400, 9286, 5811, 1263, 13831, 5481, 5385, 5473, 10832, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 7520, 9406, 5930, 1263, 13953, 5600, 5504, 5592, 10952, 2]
 // Exports: default
 
-// Module 9285 (MarketingPageBannerTile)
+// Module 9405 (MarketingPageBannerTile)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import LinkingDefault from "Linking" /* 5473 */;
-import useTrackImpressionDefault from "useTrackImpression" /* 5811 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7400 */;
-import NitroUpsellButtonDefault from "NitroUpsellButton" /* 10832 */;
+import LinkingDefault from "Linking" /* 5592 */;
+import useTrackImpressionDefault from "useTrackImpression" /* 5930 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7520 */;
+import NitroUpsellButtonDefault from "NitroUpsellButton" /* 10952 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;
@@ -61,7 +61,7 @@ export default function MarketingPageBannerTile(bannerFields) {
   const analyticsLocations = useAnalyticsLocationsDefault().analyticsLocations;
   const button = bannerFields.button;
   let buttonAction;
-  const getButtonActionHandler = helpArticleLinkProps(9286).getButtonActionHandler;
+  const getButtonActionHandler = helpArticleLinkProps(9406).getButtonActionHandler;
   if (button != null) {
     buttonAction = button.buttonAction;
   }
@@ -89,9 +89,9 @@ export default function MarketingPageBannerTile(bannerFields) {
   const buttonActionHandler = getButtonActionHandler(obj);
   const tmp2Result = useTrackImpressionDefault;
   tmp2Result(obj2);
-  const tmp4Result = helpArticleLinkProps(13831);
+  const tmp4Result = helpArticleLinkProps(13953);
   const formatStringWithCommonPremiumParams = tmp4Result.useFormatStringWithCommonPremiumParams(bannerFields.body);
-  const tmp4Result2 = helpArticleLinkProps(13831);
+  const tmp4Result2 = helpArticleLinkProps(13953);
   helpArticleLinkProps = tmp4Result2.getHelpArticleLinkProps(bannerFields.helpArticle, bannerFields.helpArticleId);
   const obj3 = { style: items, children: closure_5(View, obj4) };
   items = [tmp.container, style];
@@ -101,15 +101,15 @@ export default function MarketingPageBannerTile(bannerFields) {
   if (tmp15Result) {
     const obj5 = { source: obj6, style: tmp.image, resizeMode: "contain" };
     obj6 = { uri: bannerFields.assetUrl };
-    tmp15Result = tmp15(tmp2(5481), obj5);
+    tmp15Result = tmp15(tmp2(5600), obj5);
   }
   items2 = [tmp15Result, , , ];
   const obj7 = { color: "mobile-text-heading-primary", variant: "body-lg/semibold", children: bannerFields.header };
-  items2[1] = closure_4(helpArticleLinkProps(5385).Text, obj7);
+  items2[1] = closure_4(helpArticleLinkProps(5504).Text, obj7);
   const obj8 = { color: "mobile-text-heading-primary", variant: "body-sm/medium", style: tmp.bodyText, children: items3 };
   items3 = [formatStringWithCommonPremiumParams, " ", ];
   let tmp15Result3 = null != helpArticleLinkProps;
-  const Text = tmp4(5385).Text;
+  const Text = tmp4(5504).Text;
   if (tmp15Result3) {
     const obj9 = {
       color: "text-link",
@@ -121,7 +121,7 @@ export default function MarketingPageBannerTile(bannerFields) {
         },
       children: helpArticleLinkProps.linkText
     };
-    tmp15Result3 = tmp15(tmp4(5385).Text, obj9);
+    tmp15Result3 = tmp15(tmp4(5504).Text, obj9);
   }
   items3[2] = tmp15Result3;
   items2[2] = closure_5(Text, obj8);

@@ -1,13 +1,13 @@
-// Module ID: 7174
-// Function ID: 7175
+// Module ID: 7294
+// Function ID: 7295
 // Name: ContextMenuActionCreators
-// Dependencies: [1071, 572, 7175, 7186, 1378, 2]
+// Dependencies: [1071, 572, 7295, 7306, 1378, 2]
 // Exports: closeContextMenu, openContextMenuLazy
 
-// Module 7174 (ContextMenuActionCreators)
+// Module 7294 (ContextMenuActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
-import SpellcheckUtils from "SpellcheckUtils" /* 7175 */;
+import SpellcheckUtils from "SpellcheckUtils" /* 7295 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

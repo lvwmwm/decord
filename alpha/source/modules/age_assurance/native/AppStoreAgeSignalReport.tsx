@@ -1,12 +1,12 @@
-// Module ID: 7869
-// Function ID: 7870
+// Module ID: 7989
+// Function ID: 7990
 // Name: AppStoreAgeSignalReport
-// Dependencies: [32, 5, 1386, 2118, 1071, 7865, 7722, 1241, 1378, 7861, 7862, 1255, 5456, 5543, 2]
+// Dependencies: [32, 5, 1386, 2118, 1071, 7985, 7842, 1241, 1378, 7981, 7982, 1255, 5575, 5662, 2]
 // Exports: beginAppStoreAgeSignalReport, isAppStoreAgeSignalColdLaunch, isAppStoreAgeSignalLaunchPending, queueAppStoreAgeSignalSubmit, resumeAppStoreAgeSignalReport, settleAppStoreAgeSignalReport, startPendingAppStoreAgeSignalReport
 
-// Module 7869 (AppStoreAgeSignalReport)
+// Module 7989 (AppStoreAgeSignalReport)
 import PlatformUtils from "PlatformUtils" /* 1378 */;
-import AppStoreAgeSignalSupport from "AppStoreAgeSignalSupport" /* 7722 */;
+import AppStoreAgeSignalSupport from "AppStoreAgeSignalSupport" /* 7842 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1386 */;
@@ -260,7 +260,7 @@ function startAgeSignalReport(isColdLaunch, connection) {
     let result = obj.isAppStoreAgeSignalSupported();
     const tmp2 = _require;
     if (result) {
-      const tmp2Result = tmp2(5456);
+      const tmp2Result = tmp2(5575);
       result = tmp2Result.shouldCollectAppStoreSignal();
     }
     tmp = result;
@@ -637,7 +637,7 @@ export function resumeAppStoreAgeSignalReport() {
       obj = AppStoreAgeSignalSupport;
       let result = obj.isAppStoreAgeSignalSupported();
       if (result) {
-        const tmp3Result = tmp3(5456);
+        const tmp3Result = tmp3(5575);
         result = tmp3Result.shouldCollectAppStoreSignal();
       }
       tmp6 = result;

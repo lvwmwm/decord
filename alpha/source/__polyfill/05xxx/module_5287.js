@@ -1,43 +1,13 @@
 // Module ID: 5287
 // Function ID: 5288
-// Dependencies: [5267, 19, 5288, 5308]
-// Exports: useRecyclerViewManager
+// Dependencies: [5288, 5290, 5291]
 
 // Module 5287
-import RecyclerViewManager from "RecyclerViewManager" /* 5288 */;
-import _slicedToArray from "_slicedToArray" /* 5267 */;
-import react from "react" /* 19 */;
+import _mod5288 from "module_5288" /* 5288 */;
+import _mod5290 from "module_5290" /* 5290 */;
+import _mod5291 from "module_5291" /* 5291 */;
 
-let c3;
-let closure_4;
-let hasOwnProperty;
-({ useEffect: c3, useMemo: closure_4, useState: hasOwnProperty } = react);
 
-export const useRecyclerViewManager = (data) => {
-  let velocityTracker;
-  let recyclerViewManager = velocityTracker(closure_5(() => {
-    recyclerViewManager = new RecyclerViewManager.RecyclerViewManager(data);
-    return recyclerViewManager;
-  }), 1)[0];
-  velocityTracker = velocityTracker(closure_5(() => {
-    velocityTracker = new data(recyclerViewManager[3]).VelocityTracker();
-    return velocityTracker;
-  }), 1)[0];
-  const items = [data];
-  data = data.data;
-  closure_4(() => {
-    recyclerViewManager.updateProps(data);
-  }, items);
-  const items1 = [data];
-  closure_4(() => {
-    recyclerViewManager.processDataUpdate();
-  }, items1);
-  closure_3(() => {
-    recyclerViewManager.restoreIfNeeded();
-    return () => {
-      recyclerViewManager.dispose();
-      velocityTracker.cleanUp();
-    };
-  }, []);
-  return { recyclerViewManager, velocityTracker };
-};
+export const useCompetingGestures = _mod5288.useCompetingGestures;
+export const useExclusiveGestures = _mod5290.useExclusiveGestures;
+export const useSimultaneousGestures = _mod5291.useSimultaneousGestures;

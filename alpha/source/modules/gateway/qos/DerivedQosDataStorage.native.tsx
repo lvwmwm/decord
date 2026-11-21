@@ -1,12 +1,12 @@
-// Module ID: 15312
-// Function ID: 15313
+// Module ID: 15435
+// Function ID: 15436
 // Name: DerivedQosDataStorage
-// Dependencies: [3, 15311, 2]
+// Dependencies: [3, 15434, 2]
 // Exports: setDerivedQosData
 
-// Module 15312 (DerivedQosDataStorage)
+// Module 15435 (DerivedQosDataStorage)
 import LoggerDefault from "Logger" /* 3 */;
-import react_nativeDefault from "react-native" /* 15311 */;
+import react_nativeDefault from "react-native" /* 15434 */;
 import size from "module_2" /* 2 */;
 
 const logger = new LoggerDefault("DerivedQosDataStorage");

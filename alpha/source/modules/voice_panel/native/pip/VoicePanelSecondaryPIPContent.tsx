@@ -1,21 +1,21 @@
-// Module ID: 19202
-// Function ID: 19203
+// Module ID: 19329
+// Function ID: 19330
 // Name: VoicePanelSecondaryPIPContent
-// Dependencies: [19, 4642, 6504, 4643, 5420, 6505, 10654, 21, 4794, 11629, 11639, 504, 4715, 1653, 9973, 5441, 19058, 18275, 15633, 10663, 2]
+// Dependencies: [19, 4761, 6623, 4762, 5539, 6624, 10774, 21, 4913, 11749, 11759, 504, 4834, 1653, 10093, 5560, 19185, 18402, 15756, 10783, 2]
 // Exports: default
 
-// Module 19202 (VoicePanelSecondaryPIPContent)
+// Module 19329 (VoicePanelSecondaryPIPContent)
 import Fragment from "Fragment" /* 21 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5420 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 9973 */;
-import Constants from "Constants" /* 10654 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11629 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5539 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 10093 */;
+import Constants from "Constants" /* 10774 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11749 */;
 import react from "react" /* 19 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4642 */;
-import FramesStore from "FramesStore" /* 6504 */;
-import ChannelStore from "ChannelStore" /* 4643 */;
-import FramesConstants from "FramesConstants" /* 6505 */;
-import createStyles from "createStyles" /* 4794 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4761 */;
+import FramesStore from "FramesStore" /* 6623 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import FramesConstants from "FramesConstants" /* 6624 */;
+import createStyles from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let c10;
@@ -23,10 +23,10 @@ let c9;
 let metroImportAll;
 let tmp;
 const _modDef1653 = tmp(1653);
-const isVoiceEmbeddedActivityDefault = tmp(5441);
-const EmbeddedActivityViewDefault = tmp(10663);
-const FrameRenderTargetDefault = tmp(18275);
-const getActivityContainerPIPStylesSpecDefault = tmp(19058);
+const isVoiceEmbeddedActivityDefault = tmp(5560);
+const EmbeddedActivityViewDefault = tmp(10783);
+const FrameRenderTargetDefault = tmp(18402);
+const getActivityContainerPIPStylesSpecDefault = tmp(19185);
 const ActivityPanelModes = ActivityPanelConstants.ActivityPanelModes;
 ({ asLaunched: metroImportAll, FrameLayoutModes: c9, getPipOrientationLockStateForFrame: c10 } = FramesConstants);
 const ActivityLayoutMode = Constants.ActivityLayoutMode;
@@ -60,7 +60,7 @@ export default function VoicePanelSecondaryPIPContent() {
   let tmp26Result2;
   let tmp = importDefault;
   const windowDimensions = react.useContext(VoicePanelStateContextDefault).windowDimensions;
-  let obj = connectedEmbeddedActivityChannelId(11639);
+  let obj = connectedEmbeddedActivityChannelId(11759);
   const pIPState = obj.usePIPState();
   const tmp5 = closure_13();
   let obj2 = connectedEmbeddedActivityChannelId(504);
@@ -181,7 +181,7 @@ export default function VoicePanelSecondaryPIPContent() {
     if (null != mainFrameId && framePanelMode === ActivityPanelModes.PIP) {
       let tmp26Result;
       if (null != mainFrameId) {
-        const obj7 = { frameId: mainFrameId, level: connectedEmbeddedActivityChannelId(15633).FrameStackLevel.AboveAppContent, presentation: obj8 };
+        const obj7 = { frameId: mainFrameId, level: connectedEmbeddedActivityChannelId(15756).FrameStackLevel.AboveAppContent, presentation: obj8 };
         obj8 = { layoutMode: constants.PIP };
         const tmpResult = FrameRenderTargetDefault;
         tmp26Result = tmp26(tmpResult, obj7);

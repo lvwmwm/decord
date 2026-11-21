@@ -1,13 +1,13 @@
-// Module ID: 6849
-// Function ID: 6850
+// Module ID: 6968
+// Function ID: 6969
 // Name: ConjureDebugStore
-// Dependencies: [504, 6850, 6851, 572, 2]
+// Dependencies: [504, 6969, 6970, 572, 2]
 
-// Module 6849 (ConjureDebugStore)
+// Module 6968 (ConjureDebugStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ConjurePerfTraceBatches from "ConjurePerfTraceBatches" /* 6850 */;
-import ConjureUsageTypes from "ConjureUsageTypes" /* 6851 */;
+import ConjurePerfTraceBatches from "ConjurePerfTraceBatches" /* 6969 */;
+import ConjureUsageTypes from "ConjureUsageTypes" /* 6970 */;
 import size from "module_2" /* 2 */;
 
 let set, set2, set3, set4;

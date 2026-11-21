@@ -1,12 +1,12 @@
-// Module ID: 8316
-// Function ID: 8317
+// Module ID: 8436
+// Function ID: 8437
 // Name: QuestHomeSearchSession
-// Dependencies: [1268, 8145, 2]
+// Dependencies: [1268, 8265, 2]
 // Exports: clearQuestHomeSearchSession, getCurrentQuestHomeSearchSession, getOrCreateQuestHomeSearchSession
 
-// Module 8316 (QuestHomeSearchSession)
+// Module 8436 (QuestHomeSearchSession)
 import v1 from "v1" /* 1268 */;
-import SessionUtils from "SessionUtils" /* 8145 */;
+import SessionUtils from "SessionUtils" /* 8265 */;
 import size from "module_2" /* 2 */;
 
 let searchSession;

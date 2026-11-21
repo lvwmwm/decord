@@ -1,10 +1,10 @@
-// Module ID: 6845
-// Function ID: 6846
+// Module ID: 6964
+// Function ID: 6965
 // Name: parseUserProfileCollectibles
 // Dependencies: [2112, 2]
 // Exports: default
 
-// Module 6845 (parseUserProfileCollectibles)
+// Module 6964 (parseUserProfileCollectibles)
 import CollectiblesItemType from "CollectiblesItemType" /* 2112 */;
 import size from "module_2" /* 2 */;
 

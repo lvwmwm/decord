@@ -1,21 +1,21 @@
-// Module ID: 17352
-// Function ID: 17353
+// Module ID: 17476
+// Function ID: 17477
 // Name: RegisterPasswordInput
-// Dependencies: [109, 32, 19, 7250, 17324, 21, 4794, 575, 1653, 17349, 1112, 5385, 15162, 7265, 504, 5460, 7101, 4961, 2]
+// Dependencies: [109, 32, 19, 7370, 17448, 21, 4913, 575, 1653, 17473, 1112, 5504, 15285, 7385, 504, 5579, 7221, 5080, 2]
 // Exports: RegisterPasswordInput
 
-// Module 17352 (RegisterPasswordInput)
+// Module 17476 (RegisterPasswordInput)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1112 */;
 import _mod1653 from "module_1653" /* 1653 */;
-import usePasswordScore from "usePasswordScore" /* 17349 */;
+import usePasswordScore from "usePasswordScore" /* 17473 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import PhoneStore from "PhoneStore" /* 7250 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 17324 */;
+import PhoneStore from "PhoneStore" /* 7370 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 17448 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -63,7 +63,7 @@ function PasswordStrength(passwordScore) {
             }
           }
           const obj = { variant: "body-xs/medium", style: items, animated: true, children: items1 };
-          const Text = tmp9(5385).Text;
+          const Text = tmp9(5504).Text;
           const merged = Object.assign(obj5);
           const merged1 = Object.assign(obj6);
           items = [tmp.passwordStrength, strong];
@@ -123,7 +123,7 @@ export function RegisterPasswordInput(ref) {
   const ref1 = react.useRef(null);
   const obj2 = { inputRef: ref1, enabled: autoFocus };
   const tmp4 = isPasswordFocused;
-  const tmp6 = isPasswordFocused(15162);
+  const tmp6 = isPasswordFocused(15285);
   if (autoFocus == null) {
     autoFocus = false;
   }
@@ -133,7 +133,7 @@ export function RegisterPasswordInput(ref) {
   dependencyMap = tmp10;
   const tmp11 = closure_9((errors) => errors.errors);
   user = tmp11;
-  const tmp12 = tmp4(7265)("password", tmp11);
+  const tmp12 = tmp4(7385)("password", tmp11);
   const items = [onPasswordChange, tmp11];
   const callback = obj.useCallback((arg0) => {
     if (null != user.password) {
@@ -169,8 +169,8 @@ export function RegisterPasswordInput(ref) {
     closure_2(false);
   }, items4);
   const obj4 = { ref: obj5.mergeRefs(ref, ref1), textContentType: "newPassword", autoComplete: "new-password", onChange: callback, value: password, label: intl.string(onPasswordChange(1112).t["CIGa+7"]), accessibilityHint: intl2.string(onPasswordChange(1112).t.cUVsEG), secureTextEntry: true, revealable: true, returnKeyType, autoCapitalize: "none", onSubmitEditing, onFocus: callback1, onBlur: callback2, errorMessage: tmp12, status: str };
-  const TextInput = onPasswordChange(7101).TextInput;
-  obj5 = onPasswordChange(4961);
+  const TextInput = onPasswordChange(7221).TextInput;
+  obj5 = onPasswordChange(5080);
   intl = onPasswordChange(1112).intl;
   intl2 = onPasswordChange(1112).intl;
   const tmp14 = onPasswordChange;
@@ -189,7 +189,7 @@ export function RegisterPasswordInput(ref) {
     tmp21Result = null;
     if (null == tmp12) {
       obj6 = { style: tmp2.inputHint, variant: "body-xs/medium", color: "text-muted", animated: true, children: memo };
-      const Text = tmp14(5385).Text;
+      const Text = tmp14(5504).Text;
       const merged1 = Object.assign(obj5);
       const merged2 = Object.assign(obj6);
       tmp21Result = tmp21(Text, obj6);

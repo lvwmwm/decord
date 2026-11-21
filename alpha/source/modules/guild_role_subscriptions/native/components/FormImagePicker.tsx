@@ -1,19 +1,19 @@
-// Module ID: 19883
-// Function ID: 19884
+// Module ID: 20010
+// Function ID: 20011
 // Name: FormImagePicker
-// Dependencies: [5, 19, 17, 21, 4794, 575, 8354, 1447, 7922, 1112, 5481, 18150, 11122, 5385, 5392, 2]
+// Dependencies: [5, 19, 17, 21, 4913, 575, 8474, 1447, 8042, 1112, 5600, 18277, 11242, 5504, 5511, 2]
 // Exports: default
 
-// Module 19883 (FormImagePicker)
+// Module 20010 (FormImagePicker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ImageLoaderUtils from "ImageLoaderUtils" /* 1447 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 7922 */;
-import utils_UploadUtilsDefault from "utils/UploadUtils" /* 8354 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 8042 */;
+import utils_UploadUtilsDefault from "utils/UploadUtils" /* 8474 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_2;
@@ -26,7 +26,7 @@ let obj4;
 let obj5;
 let size;
 let tmp6;
-const FastImageDefault = tmp6(5481);
+const FastImageDefault = tmp6(5600);
 function pickImage() {
   return obj(...arguments);
 }
@@ -168,7 +168,7 @@ class ImagePickerIcon {
       tmp10 = tmp12;
     } else {
       tmp10 = closure_6;
-      tmp12Result = closure_6(tmp9(18150).ImagePlusIcon, {});
+      tmp12Result = closure_6(tmp9(18277).ImagePlusIcon, {});
     }
     items3 = [tmp12Result, ];
     let tmp10Result = null != image && !flag;
@@ -179,7 +179,7 @@ class ImagePickerIcon {
         standalone = tmp.standaloneIcon;
       }
       items4[1] = standalone;
-      const obj4 = { style: items4, children: tmp10(image(11122).PencilIcon, { color: "#292b30", size: "sm" }) };
+      const obj4 = { style: items4, children: tmp10(image(11242).PencilIcon, { color: "#292b30", size: "sm" }) };
       tmp10Result = tmp10(tmp15, obj4);
     }
     items3[1] = tmp10Result;
@@ -227,7 +227,7 @@ export default function FormImagePicker(imageUploadSize) {
   items = [, ];
   obj = { style: tmp2.imageSelectionRow, children: items1 };
   const obj3 = { style: tmp2.imageDescription, variant: "body-sm/medium", color: "text-default", children: description };
-  items[0] = closure_6(tmp6(5385).Text, obj3);
+  items[0] = closure_6(tmp6(5504).Text, obj3);
   const obj4 = {
     text: stringResult,
     variant: "secondary",
@@ -237,7 +237,7 @@ export default function FormImagePicker(imageUploadSize) {
     size: "md",
     disabled
   };
-  items[1] = closure_6(tmp6(5392).Button, obj4);
+  items[1] = closure_6(tmp6(5511).Button, obj4);
   items1 = [closure_7(View, obj2), ];
   const obj5 = { disabled, imageUploadSize, image, setImage };
   const merged1 = Object.assign(merged);

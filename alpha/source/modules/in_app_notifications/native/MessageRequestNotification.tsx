@@ -1,10 +1,10 @@
-// Module ID: 11600
-// Function ID: 11601
+// Module ID: 11720
+// Function ID: 11721
 // Name: MessageRequestNotification
-// Dependencies: [19, 21, 1112, 10995, 4971, 11040, 1186, 11003, 2]
+// Dependencies: [19, 21, 1112, 11115, 5090, 11160, 1186, 11123, 2]
 // Exports: default
 
-// Module 11600 (MessageRequestNotification)
+// Module 11720 (MessageRequestNotification)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1112 */;
 import react from "react" /* 19 */;
@@ -34,11 +34,11 @@ export default function MessageRequestInAppNotification(notification) {
       rootNavigationRef.navigate("message-requests");
     }
   }, []);
-  const NotificationPressable = author(11040).NotificationPressable;
-  let obj2 = { user: author, size: author(1186).AvatarSizes.NORMAL, guildId: "Array" };
+  const NotificationPressable = author(11160).NotificationPressable;
+  let obj2 = { user: author, size: author(1186).AvatarSizes.NORMAL, guildId: "r" };
   const Avatar = author(1186).Avatar;
   ({ text: intl.string(author(1112).t["Bx4/Lf"]) });
-  const SystemMessageText = author(11003).SystemMessageText;
+  const SystemMessageText = author(11123).SystemMessageText;
   intl = author(1112).intl;
   return <NotificationPressable icon={null} header={memo} onPress={callback} notification={notification}>{null}</NotificationPressable>;
 };

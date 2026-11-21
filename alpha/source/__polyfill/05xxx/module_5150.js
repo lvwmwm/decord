@@ -1,52 +1,47 @@
 // Module ID: 5150
 // Function ID: 5151
-// Dependencies: [5125, 5142, 5116]
-// Exports: usePinchGesture
+// Dependencies: [5151, 5153, 5155, 5160, 5161, 5170, 5171, 5325, 5326, 5329, 5330, 5331, 5332, 5333, 5334, 5335, 5336]
 
 // Module 5150
-import ComposedGestureName from "ComposedGestureName" /* 5116 */;
-import _mod5125 from "module_5125" /* 5125 */;
-import _mod5142 from "module_5142" /* 5142 */;
+import react from "react" /* 5151 */;
+import react2 from "react" /* 5153 */;
+import react3 from "react" /* 5155 */;
+import react4 from "react" /* 5160 */;
+import _mod5161 from "module_5161" /* 5161 */;
+import _mod5170 from "module_5170" /* 5170 */;
+import useScrollHandler from "useScrollHandler" /* 5171 */;
+import useGestureHandler from "useGestureHandler" /* 5325 */;
+import useGestureEventsHandlersDefault from "useGestureEventsHandlersDefault" /* 5326 */;
+import react5 from "react" /* 5329 */;
+import useKeyboard from "useKeyboard" /* 5330 */;
+import react6 from "react" /* 5331 */;
+import _mod5332 from "module_5332" /* 5332 */;
+import useAnimatedSnapPoints from "useAnimatedSnapPoints" /* 5333 */;
+import react7 from "react" /* 5334 */;
+import react8 from "react" /* 5335 */;
+import useBottomSheetContentContainerStyle from "useBottomSheetContentContainerStyle" /* 5336 */;
 
-let tmp2;
-let tmp3;
-function transformPinchProps(arg0) {
-  const obj = _mod5125;
-  arg0.changeEventCalculator = obj.getChangeEventCalculator(diffCalculator);
-  arg0.fillInDefaultValues = fillInDefaultValues;
-  return arg0;
-}
-const items = [{ code: "(function diffCalculator_Pnpm_usePinchGestureTs1(current,previous){return{scaleChange:previous?current.scale/previous.scale:current.scale};})" }];
-[tmp2] = items;
-function diffCalculator(scale, scale2) {
-  let scaleChange;
-  scale = scale.scale;
-  if (scale2) {
-    scaleChange = scale / scale2.scale;
-  } else {
-    scaleChange = scale;
-  }
-  return { scaleChange };
-}
-diffCalculator.__workletHash = 797719799396;
-diffCalculator.__initData = tmp2;
-const items1 = [{ code: "(function fillInDefaultValues_Pnpm_usePinchGestureTs2(event){event.scaleChange=1;})" }];
-[tmp3] = items1;
-function fillInDefaultValues(arg0) {
-  arg0.scaleChange = 1;
-}
-fillInDefaultValues.__workletHash = 16688050895505;
-fillInDefaultValues.__initData = tmp3;
-const map = new Map();
-let closure_6 = {};
+const useScrollHandler_export = useScrollHandler.useScrollHandler;
+const useGestureHandler_export = useGestureHandler.useGestureHandler;
+const useGestureEventsHandlersDefault_export = useGestureEventsHandlersDefault.useGestureEventsHandlersDefault;
+const useKeyboard_export = useKeyboard.useKeyboard;
+const useAnimatedSnapPoints_export = useAnimatedSnapPoints.useAnimatedSnapPoints;
+const useBottomSheetContentContainerStyle_export = useBottomSheetContentContainerStyle.useBottomSheetContentContainerStyle;
 
-export function usePinchGesture(gestureHandlerProps) {
-  let tmp = gestureHandlerProps;
-  if (gestureHandlerProps === undefined) {
-    tmp = closure_6;
-  }
-  const obj = _mod5125;
-  const clonedAndRemappedConfig = obj.useClonedAndRemappedConfig(tmp, map, transformPinchProps);
-  const obj2 = _mod5142;
-  return obj2.useGesture(ComposedGestureName.SingleGestureName.Pinch, clonedAndRemappedConfig);
-}
+export const useBottomSheet = react.useBottomSheet;
+export const useBottomSheetInternal = react2.useBottomSheetInternal;
+export const useBottomSheetModal = react3.useBottomSheetModal;
+export const useBottomSheetModalInternal = react4.useBottomSheetModalInternal;
+export const useScrollable = _mod5161.useScrollable;
+export const useScrollableSetter = _mod5170.useScrollableSetter;
+export { useScrollHandler_export as useScrollHandler };
+export { useGestureHandler_export as useGestureHandler };
+export { useGestureEventsHandlersDefault_export as useGestureEventsHandlersDefault };
+export const useBottomSheetGestureHandlers = react5.useBottomSheetGestureHandlers;
+export { useKeyboard_export as useKeyboard };
+export const useStableCallback = react6.useStableCallback;
+export const usePropsValidator = _mod5332.usePropsValidator;
+export { useAnimatedSnapPoints_export as useAnimatedSnapPoints };
+export const useReactiveSharedValue = react7.useReactiveSharedValue;
+export const useBoundingClientRect = react8.useBoundingClientRect;
+export { useBottomSheetContentContainerStyle_export as useBottomSheetContentContainerStyle };

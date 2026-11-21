@@ -1,18 +1,18 @@
-// Module ID: 14096
-// Function ID: 14097
+// Module ID: 14218
+// Function ID: 14219
 // Name: AvatarDecorationProductPreview
-// Dependencies: [19, 17, 21, 4794, 8800, 8793, 1112, 1186, 2]
+// Dependencies: [19, 17, 21, 4913, 8920, 8913, 1112, 1186, 2]
 // Exports: default
 
-// Module 14096 (AvatarDecorationProductPreview)
+// Module 14218 (AvatarDecorationProductPreview)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
-import useShopProductItems from "useShopProductItems" /* 8793 */;
-import useCurrentUser from "useCurrentUser" /* 8800 */;
+import useShopProductItems from "useShopProductItems" /* 8913 */;
+import useCurrentUser from "useCurrentUser" /* 8920 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4794 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;

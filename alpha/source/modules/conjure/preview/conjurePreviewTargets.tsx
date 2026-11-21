@@ -1,15 +1,15 @@
-// Module ID: 18116
-// Function ID: 18117
+// Module ID: 18243
+// Function ID: 18244
 // Name: conjurePreviewTargets
-// Dependencies: [5438, 12175, 1112, 4091, 18117, 2]
+// Dependencies: [5557, 12297, 1112, 4190, 18244, 2]
 // Exports: activePreviewTarget, getPreviewTabLabel, previewTargetKey, previewTargets, selectPreviewTarget
 
-// Module 18116 (conjurePreviewTargets)
+// Module 18243 (conjurePreviewTargets)
 import intl5 from "intl" /* 1112 */;
-import _modDef4091 from "module_4091" /* 4091 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5438 */;
-import ConjurePreviewMode from "ConjurePreviewMode" /* 12175 */;
-import slugConjureChannelNameDefault from "slugConjureChannelName" /* 18117 */;
+import _modDef4190 from "module_4190" /* 4190 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5557 */;
+import ConjurePreviewMode from "ConjurePreviewMode" /* 12297 */;
+import slugConjureChannelNameDefault from "slugConjureChannelName" /* 18244 */;
 import size from "module_2" /* 2 */;
 
 function getPreviewTargetLabel(mode) {
@@ -24,20 +24,20 @@ function getPreviewTargetLabel(mode) {
       const intl4 = intl5.intl;
       const formatToPlainString = intl4.formatToPlainString;
       const obj = { surface: obj2.getPreviewFrameSurfaceLabel(mode.surface), channel: mode.appChannel };
-      const prop = _modDef4091["6xVl+N"];
+      const prop = _modDef4190["6xVl+N"];
       obj2 = ConjurePreviewMode;
       previewFrameSurfaceLabel = formatToPlainString(prop, obj);
     }
     return previewFrameSurfaceLabel;
   } else if ("widget" === mode) {
     const intl3 = intl5.intl;
-    return intl3.string(_modDef4091.y5GiL1);
+    return intl3.string(_modDef4190.y5GiL1);
   } else if ("overlay" === mode) {
     const intl2 = intl5.intl;
-    return intl2.string(_modDef4091["2940LX"]);
+    return intl2.string(_modDef4190["2940LX"]);
   } else if ("bot" === mode) {
     const intl = intl5.intl;
-    return intl.string(_modDef4091.tjpaGN);
+    return intl.string(_modDef4190.tjpaGN);
   }
 }
 const result = size.fileFinishedImporting("modules/conjure/preview/conjurePreviewTargets.tsx");
@@ -110,7 +110,7 @@ export { getPreviewTargetLabel };
 export function getPreviewTabLabel(mode, arg1) {
   if ("bot" === mode.mode) {
     const intl = intl5.intl;
-    return intl.string(_modDef4091.gThNz6);
+    return intl.string(_modDef4190.gThNz6);
   } else {
     if ("frame" === mode.mode) {
       if (mode.surface === EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL) {

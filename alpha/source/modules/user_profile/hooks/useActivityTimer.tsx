@@ -1,12 +1,12 @@
-// Module ID: 14292
-// Function ID: 14293
+// Module ID: 14414
+// Function ID: 14415
 // Name: useActivityTimer
-// Dependencies: [32, 19, 1088, 7890, 4638, 2]
+// Dependencies: [32, 19, 1088, 8010, 4757, 2]
 // Exports: default, formatTime, formatTimeForA11yLabel
 
-// Module 14292 (useActivityTimer)
+// Module 14414 (useActivityTimer)
 import DurationsDefault from "Durations" /* 1088 */;
-import utils from "utils" /* 7890 */;
+import utils from "utils" /* 8010 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -25,7 +25,7 @@ export default function useActivityTimer(start) {
   let first;
   importDefault = undefined;
   const end = start.end;
-  const interval = new first(4638).Interval();
+  const interval = new first(4757).Interval();
   first = _slicedToArray(closure_5(interval), 1)[0];
   [first1, importDefault] = closure_5(() => Date.now());
   const items = [first];

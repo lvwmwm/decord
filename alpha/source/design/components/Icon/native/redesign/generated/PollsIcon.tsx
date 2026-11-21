@@ -1,14 +1,14 @@
-// Module ID: 11503
-// Function ID: 11504
+// Module ID: 11623
+// Function ID: 11624
 // Name: PollsIcon
-// Dependencies: [19, 21, 575, 5480, 11504, 2]
+// Dependencies: [19, 21, 575, 5599, 11624, 2]
 // Exports: PollsIcon
 
-// Module 11503 (PollsIcon)
+// Module 11623 (PollsIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5480 */;
-import AssetRegistry from "AssetRegistry" /* 11504 */;
+import BaseIconImage2 from "BaseIconImage" /* 5599 */;
+import AssetRegistry from "AssetRegistry" /* 11624 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

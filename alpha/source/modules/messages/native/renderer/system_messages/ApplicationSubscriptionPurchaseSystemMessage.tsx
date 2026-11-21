@@ -1,14 +1,14 @@
-// Module ID: 8659
-// Function ID: 8660
+// Module ID: 8779
+// Function ID: 8780
 // Name: ApplicationSubscriptionPurchaseSystemMessage
-// Dependencies: [8578, 8612, 8580, 8582, 2]
+// Dependencies: [8698, 8732, 8700, 8702, 2]
 // Exports: createApplicationSubscriptionPurchaseSystemMessage
 
-// Module 8659 (ApplicationSubscriptionPurchaseSystemMessage)
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8578 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8580 */;
-import createCommonMessageDefault from "createCommonMessage" /* 8582 */;
-import ApplicationSubscriptionSystemMessageUtils from "ApplicationSubscriptionSystemMessageUtils" /* 8612 */;
+// Module 8779 (ApplicationSubscriptionPurchaseSystemMessage)
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8698 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8700 */;
+import createCommonMessageDefault from "createCommonMessage" /* 8702 */;
+import ApplicationSubscriptionSystemMessageUtils from "ApplicationSubscriptionSystemMessageUtils" /* 8732 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/ApplicationSubscriptionPurchaseSystemMessage.tsx");

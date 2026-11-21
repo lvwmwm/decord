@@ -1,20 +1,20 @@
-// Module ID: 6896
-// Function ID: 6897
-// Dependencies: [19, 17, 21, 4794, 575, 6897, 5481, 6899, 5385, 1112, 5392, 6310, 2]
+// Module ID: 7016
+// Function ID: 7017
+// Dependencies: [19, 17, 21, 4913, 575, 7017, 5600, 7019, 5504, 1112, 5511, 6429, 2]
 // Exports: default
 
-// Module 6896
+// Module 7016
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
-import Text_Text from "Text/Text" /* 5385 */;
-import FastImageDefault from "FastImage" /* 5481 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6310 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6897 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6899 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import FastImageDefault from "FastImage" /* 5600 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6429 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7017 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7019 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -63,7 +63,7 @@ export default function ErrorResult(error) {
           return arr.pop();
         }
     };
-    const Button = tmp3(5392).Button;
+    const Button = tmp3(5511).Button;
     intl2 = tmp3(1112).intl;
     tmp6Result = tmp6(Button, obj5);
   }

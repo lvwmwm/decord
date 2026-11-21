@@ -1,28 +1,28 @@
-// Module ID: 19062
-// Function ID: 19063
+// Module ID: 19189
+// Function ID: 19190
 // Name: ActivityPanelHeader
-// Dependencies: [32, 19, 17, 4642, 5420, 1082, 21, 4794, 575, 1628, 1706, 19059, 4855, 5054, 19063, 504, 6745, 19064, 19068, 19069, 18909, 19054, 2]
+// Dependencies: [32, 19, 17, 4761, 5539, 1082, 21, 4913, 575, 1628, 1706, 19186, 4974, 5173, 19190, 504, 6864, 19191, 19195, 19196, 19036, 19181, 2]
 // Exports: useBaseActivityPanelHeader
 
-// Module 19062 (ActivityPanelHeader)
+// Module 19189 (ActivityPanelHeader)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1082 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
-import native from "native" /* 4855 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5054 */;
-import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 6745 */;
-import LeaveActivityButtonDefault from "LeaveActivityButton" /* 18909 */;
-import BlurVisualEffectViewDefault from "BlurVisualEffectView" /* 19063 */;
-import InviteActivityButtonDefault from "InviteActivityButton" /* 19064 */;
-import MinimizeActivityButtonDefault from "MinimizeActivityButton" /* 19068 */;
+import native from "native" /* 4974 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5173 */;
+import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 6864 */;
+import LeaveActivityButtonDefault from "LeaveActivityButton" /* 19036 */;
+import BlurVisualEffectViewDefault from "BlurVisualEffectView" /* 19190 */;
+import InviteActivityButtonDefault from "InviteActivityButton" /* 19191 */;
+import MinimizeActivityButtonDefault from "MinimizeActivityButton" /* 19195 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4642 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5420 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4761 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5539 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap, importDefault;
@@ -38,7 +38,7 @@ let obj2;
 let obj4;
 let size;
 let tmp2;
-const useMorphablePanelGestureDefault = tmp2(19059);
+const useMorphablePanelGestureDefault = tmp2(19186);
 function useBaseActivityPanelHeaderContent(landscape) {
   let closure_1;
   let closure_2;
@@ -120,7 +120,7 @@ function useBaseActivityPanelHeaderContent(landscape) {
   const items4 = [setMode];
   let obj = { gesture: tmp2Result(obj2), headerWrapperStyles: memo, headerStyles: memo1, styles: tmp };
   const callback = useCallback(ActivityPanelHeaderTsx1, items4);
-  obj2 = { mode: tmp8(19059).MorphablePanelModes.PANEL, panGestureEnabled: true, pipState, swipeRequiresPop: true, wrapperOffset, onPanMinimizeGestureEnd: callback, disableHorizontalSafeAreas: true };
+  obj2 = { mode: tmp8(19186).MorphablePanelModes.PANEL, panGestureEnabled: true, pipState, swipeRequiresPop: true, wrapperOffset, onPanMinimizeGestureEnd: callback, disableHorizontalSafeAreas: true };
   tmp2Result = useMorphablePanelGestureDefault;
   return obj;
 }
@@ -225,7 +225,7 @@ let closure_19 = react.memo(function ActivityPanelHeaderContentInner(wrapperOffs
   let tmp8Result2 = null != applicationId;
   if (tmp8Result2) {
     const obj5 = { applicationId };
-    tmp8Result2 = tmp8(tmp5(19069), obj5);
+    tmp8Result2 = tmp8(tmp5(19196), obj5);
   }
   items3[1] = tmp8Result2;
   let tmp20 = null;
@@ -249,7 +249,7 @@ const memoResult = react.memo(function ActivityPanelHeader() {
   let setMode;
   let wrapperOffset;
   let wrapperDimensions;
-  let tmp = wrapperDimensions(19054);
+  let tmp = wrapperDimensions(19181);
   const tmp2 = closure_14();
   const headerContainer = tmp2;
   const context = react.useContext(tmp);

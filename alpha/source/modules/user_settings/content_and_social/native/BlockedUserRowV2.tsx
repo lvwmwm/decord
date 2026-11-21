@@ -1,13 +1,13 @@
-// Module ID: 15981
-// Function ID: 15982
+// Module ID: 16104
+// Function ID: 16105
 // Name: BlockedUserRowV2
-// Dependencies: [19, 1386, 21, 7620, 7400, 1112, 7947, 6925, 1186, 15982, 5392, 504, 2]
+// Dependencies: [19, 1386, 21, 7740, 7520, 1112, 8067, 7045, 1186, 16105, 5511, 504, 2]
 // Exports: default
 
-// Module 15981 (BlockedUserRowV2)
+// Module 16104 (BlockedUserRowV2)
 import Fragment from "Fragment" /* 21 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7620 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7947 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7740 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8067 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
@@ -16,7 +16,7 @@ function BlockedUserRow(userRecord) {
   let intl2;
   userRecord = userRecord.userRecord;
   let analyticsLocations;
-  analyticsLocations = analyticsLocations(7400)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7520)().analyticsLocations;
   const intl = userRecord(1112).intl;
   const formatToPlainString = intl.formatToPlainString;
   let username = userRecord.globalName;
@@ -29,7 +29,7 @@ function BlockedUserRow(userRecord) {
     showUserProfileActionSheetDefault(obj);
   }
   const formatToPlainStringResult = formatToPlainString(izBDZN, { name: username });
-  const TableRow = tmp2(6925).TableRow;
+  const TableRow = tmp2(7045).TableRow;
   let obj2 = { user: userRecord, guildId: "Array", size: tmp2(1186).AvatarSizes.REFRESH_MEDIUM_32 };
   const Avatar = tmp2(1186).Avatar;
   const items = [{ name: "activate" }, { name: "unblock", label: formatToPlainStringResult }];
@@ -44,7 +44,7 @@ function BlockedUserRow(userRecord) {
       obj.unblockUser(id, { location: "blocked-users-list-mobile-v2" });
     }
   });
-  const Button = tmp2(5392).Button;
+  const Button = tmp2(5511).Button;
   intl2 = tmp2(1112).intl;
   return <TableRow accessible={false} icon={null} label={null} onPress={handleOpenProfile} trailing={null} />;
 }

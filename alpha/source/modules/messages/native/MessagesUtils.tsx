@@ -1,60 +1,60 @@
-// Module ID: 10261
-// Function ID: 10262
+// Module ID: 10381
+// Function ID: 10382
 // Name: messages/MessagesUtils
-// Dependencies: [32, 5, 10262, 8219, 4643, 4706, 6412, 5845, 5675, 4726, 6500, 1386, 8550, 1071, 5834, 5849, 2117, 8110, 8338, 7165, 4713, 5476, 1112, 5498, 10263, 2108, 5376, 4738, 5010, 5011, 7166, 8339, 8341, 5531, 7425, 5829, 11, 5475, 10283, 9, 12, 1378, 1626, 10287, 1255, 10284, 8130, 6442, 6272, 9839, 10288, 8194, 5854, 4714, 8568, 2]
+// Dependencies: [32, 5, 10382, 8339, 4762, 4825, 6531, 5964, 5794, 4845, 6619, 1386, 8670, 1071, 5953, 5968, 2117, 8230, 8458, 7285, 4832, 5595, 1112, 5617, 10383, 2108, 5495, 4857, 5129, 5130, 7286, 8459, 8461, 5650, 7545, 5948, 11, 5594, 10403, 9, 12, 1378, 1626, 10407, 1255, 10404, 8250, 6561, 6391, 9959, 10408, 8314, 5973, 4833, 8688, 2]
 // Exports: canAddNewReactions, clearRows, findMessageIndex, findMessageIndexInRows, getChatRef, getLongPressSelectedMedia, getMessageAuthorMemberUserIds, getVoiceChannelIdChangedAuthorIds, getVoiceStateChannelSummaryFromVoiceStates, handleAddOrRemoveReaction, handleCopyLinkForumPost, handleFirstLayout, handleLongPressSticker, handleMediaPlayFinishedAnalytics, handleMessageVisibilityChanged, handleTapNavBar, handleTapTableView, handleToggleFollowForumPost, handleVisibleMessagesChange, isLoadingAtTop, jumpToPresent, loadMoreAfter, loadMoreBefore, maybeRescrollToMessageId, recordTimings, scrollToBottom, scrollToMessageIdWithRescroll, scrollToNewMessages, scrollToRelativeOffset, scrollToTop, scrollToTopMessage, shouldJumpToOriginalPost, startOrCancelChannelLatestMessagesLoad, syncMessageDisplay, toObscuredMedia
 
-// Module 10261 (messages/MessagesUtils)
+// Module 10381 (messages/MessagesUtils)
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import _modDef12 from "module_12" /* 12 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 2108 */;
 import Server from "Server" /* 2117 */;
-import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 4713 */;
-import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4714 */;
-import ReactionUtils from "ReactionUtils" /* 4738 */;
-import HapticUtils from "HapticUtils" /* 5010 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5011 */;
-import ToastUtils from "ToastUtils" /* 5475 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5476 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5498 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5531 */;
-import ChannelUtils from "ChannelUtils" /* 5829 */;
-import MediaFormatTesters from "MediaFormatTesters" /* 5834 */;
-import InteractionComponentUtils from "InteractionComponentUtils" /* 5849 */;
-import InteractionTypes from "InteractionTypes" /* 5854 */;
-import flow_Client from "flow/Client" /* 6272 */;
-import QuestTypes from "QuestTypes" /* 6442 */;
-import useShowMemberVerificationGate from "useShowMemberVerificationGate" /* 7165 */;
-import MemberVerificationModalActionCreators from "MemberVerificationModalActionCreators" /* 7166 */;
-import ClipboardUtils from "ClipboardUtils" /* 7425 */;
-import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 8110 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 8130 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 8194 */;
-import ReactionActionCreators from "ReactionActionCreators" /* 8338 */;
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8339 */;
-import Tracking from "Tracking" /* 8341 */;
-import PopularMusicSystemMessageTypes from "PopularMusicSystemMessageTypes" /* 8568 */;
-import QuestActionCreators from "QuestActionCreators" /* 9839 */;
-import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 10262 */;
-import reactions_ReactionUtils from "reactions/ReactionUtils" /* 10263 */;
-import computeScrollData from "computeScrollData" /* 10283 */;
-import NativeChatUtilsDefault from "NativeChatUtils" /* 10284 */;
-import MediaPlaybackFacts from "MediaPlaybackFacts" /* 10287 */;
-import MessageImpressionAnalyticsHelpers from "MessageImpressionAnalyticsHelpers" /* 10288 */;
+import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 4832 */;
+import GuildLeaderboardTypes from "GuildLeaderboardTypes" /* 4833 */;
+import ReactionUtils from "ReactionUtils" /* 4857 */;
+import HapticUtils from "HapticUtils" /* 5129 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5130 */;
+import ToastUtils from "ToastUtils" /* 5594 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5595 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5617 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5650 */;
+import ChannelUtils from "ChannelUtils" /* 5948 */;
+import MediaFormatTesters from "MediaFormatTesters" /* 5953 */;
+import InteractionComponentUtils from "InteractionComponentUtils" /* 5968 */;
+import InteractionTypes from "InteractionTypes" /* 5973 */;
+import flow_Client from "flow/Client" /* 6391 */;
+import QuestTypes from "QuestTypes" /* 6561 */;
+import useShowMemberVerificationGate from "useShowMemberVerificationGate" /* 7285 */;
+import MemberVerificationModalActionCreators from "MemberVerificationModalActionCreators" /* 7286 */;
+import ClipboardUtils from "ClipboardUtils" /* 7545 */;
+import ExplicitMediaRedactionModels from "ExplicitMediaRedactionModels" /* 8230 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 8250 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 8314 */;
+import ReactionActionCreators from "ReactionActionCreators" /* 8458 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8459 */;
+import Tracking from "Tracking" /* 8461 */;
+import PopularMusicSystemMessageTypes from "PopularMusicSystemMessageTypes" /* 8688 */;
+import QuestActionCreators from "QuestActionCreators" /* 9959 */;
+import useChatBottomManagerUIStore from "useChatBottomManagerUIStore" /* 10382 */;
+import reactions_ReactionUtils from "reactions/ReactionUtils" /* 10383 */;
+import computeScrollData from "computeScrollData" /* 10403 */;
+import NativeChatUtilsDefault from "NativeChatUtils" /* 10404 */;
+import MediaPlaybackFacts from "MediaPlaybackFacts" /* 10407 */;
+import MessageImpressionAnalyticsHelpers from "MessageImpressionAnalyticsHelpers" /* 10408 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
-import ReferencedMessageStore from "ReferencedMessageStore" /* 8219 */;
-import ChannelStore from "ChannelStore" /* 4643 */;
-import GuildMemberStore from "GuildMemberStore" /* 4706 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 6412 */;
-import MessageStore from "MessageStore" /* 5845 */;
-import NetworkStore from "NetworkStore" /* 5675 */;
-import PermissionStore from "PermissionStore" /* 4726 */;
-import ReadStateStore from "ReadStateStore" /* 6500 */;
+import ReferencedMessageStore from "ReferencedMessageStore" /* 8339 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import GuildMemberStore from "GuildMemberStore" /* 4825 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 6531 */;
+import MessageStore from "MessageStore" /* 5964 */;
+import NetworkStore from "NetworkStore" /* 5794 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
+import ReadStateStore from "ReadStateStore" /* 6619 */;
 import UserStore from "UserStore" /* 1386 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 8550 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 8670 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -72,7 +72,7 @@ let tmp;
 let tmp9;
 const SnowflakeUtilsDefault = tmp9(11);
 const KeyboardTypes = tmp(1626);
-const f97199 = (id) => id.id;
+const f97585 = (id) => id.id;
 function getVisibleMessages(arg0) {
   let chatManager;
   let firstVisibleMessagePercentVisible;
@@ -452,7 +452,7 @@ export function handleAddOrRemoveReaction(messageId, channel, reaction, isBurst,
         }
       }
     }
-    const ReactionTypes = tmp12(5376).ReactionTypes;
+    const ReactionTypes = tmp12(5495).ReactionTypes;
     const tmp23 = flag ? ReactionTypes.BURST : ReactionTypes.NORMAL;
     const tmp12Result10 = ReactionUtils;
     if (tmp12Result10.isMeReaction(reaction.me, reaction.me_burst, tmp23)) {
@@ -581,7 +581,7 @@ export function startOrCancelChannelLatestMessagesLoad(hasJumpedToOriginalPost) 
 export function recordTimings(channelId, hasFetched) {
   const recordMessageRender = TTITrackerDefault.recordMessageRender;
   TTITrackerDefault;
-  const mapped = hasFetched.map(f97199);
+  const mapped = hasFetched.map(f97585);
   hasFetched = hasFetched.hasFetched;
   if (!hasFetched) {
     hasFetched = hasFetched.ready && !hasFetched.cached;
@@ -830,7 +830,7 @@ export function syncMessageDisplay(messages) {
   }
   const recordMessageRender = oldestUnreadMessageId(scrollToMessageId[39]).recordMessageRender;
   oldestUnreadMessageId(scrollToMessageId[39]);
-  const mapped = messages.map(f97199);
+  const mapped = messages.map(f97585);
   let hasFetched = messages.hasFetched;
   if (!hasFetched) {
     hasFetched = messages.ready && !messages.cached;

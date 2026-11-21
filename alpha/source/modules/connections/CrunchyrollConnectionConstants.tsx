@@ -1,10 +1,10 @@
-// Module ID: 7092
-// Function ID: 7093
+// Module ID: 7212
+// Function ID: 7213
 // Name: CrunchyrollConnectionConstants
-// Dependencies: [6794, 2]
+// Dependencies: [6913, 2]
 
-// Module 7092 (CrunchyrollConnectionConstants)
-import OAuth2Scopes from "OAuth2Scopes" /* 6794 */;
+// Module 7212 (CrunchyrollConnectionConstants)
+import OAuth2Scopes from "OAuth2Scopes" /* 6913 */;
 import size from "module_2" /* 2 */;
 
 const items = [OAuth2Scopes.OAuth2Scopes.ACTIVITIES_WRITE, OAuth2Scopes.OAuth2Scopes.EMAIL, OAuth2Scopes.OAuth2Scopes.IDENTIFY];

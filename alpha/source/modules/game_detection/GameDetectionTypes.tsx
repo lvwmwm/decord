@@ -1,10 +1,10 @@
-// Module ID: 2160
-// Function ID: 2161
+// Module ID: 2161
+// Function ID: 2162
 // Name: GameDetectionTypes
-// Dependencies: [1406, 2141, 2]
+// Dependencies: [1406, 2142, 2]
 
-// Module 2160 (GameDetectionTypes)
-import ApplicationRecord from "ApplicationRecord" /* 2141 */;
+// Module 2161 (GameDetectionTypes)
+import ApplicationRecord from "ApplicationRecord" /* 2142 */;
 import Record from "Record" /* 1406 */;
 import size from "module_2" /* 2 */;
 

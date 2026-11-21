@@ -1,15 +1,15 @@
-// Module ID: 9869
-// Function ID: 9870
+// Module ID: 9989
+// Function ID: 9990
 // Name: QuestHomeHeroTypes
-// Dependencies: [9852, 8293, 1241, 9870, 9871, 2]
+// Dependencies: [9972, 8413, 1241, 9990, 9991, 2]
 // Exports: questHomeHeroFromServer
 
-// Module 9869 (QuestHomeHeroTypes)
+// Module 9989 (QuestHomeHeroTypes)
 import SentryUtilsDefault from "SentryUtils" /* 1241 */;
-import QuestServerUtils from "QuestServerUtils" /* 8293 */;
-import AssetUtils from "AssetUtils" /* 9852 */;
-import QuestSeriesExperiment2 from "QuestSeriesExperiment" /* 9870 */;
-import QuestHomeHeroCta from "QuestHomeHeroCta" /* 9871 */;
+import QuestServerUtils from "QuestServerUtils" /* 8413 */;
+import AssetUtils from "AssetUtils" /* 9972 */;
+import QuestSeriesExperiment2 from "QuestSeriesExperiment" /* 9990 */;
+import QuestHomeHeroCta from "QuestHomeHeroCta" /* 9991 */;
 import size from "module_2" /* 2 */;
 
 function questSeriesFromServer(quest_series) {
@@ -21,7 +21,7 @@ function questSeriesFromServer(quest_series) {
     const tmp3 = require;
     if (obj2.isQuestWithKnownConfigVersion(obj)) {
       const obj3 = { rewardQuest: tmp3Result.questWithUserStatusFromServer(obj) };
-      tmp3Result = tmp3(8293);
+      tmp3Result = tmp3(8413);
       return obj3;
     }
   } catch (tmp7) {

@@ -1,26 +1,26 @@
-// Module ID: 19142
-// Function ID: 19143
+// Module ID: 19269
+// Function ID: 19270
 // Name: VoicePanelCardView
-// Dependencies: [32, 19, 17, 6501, 5535, 11630, 11628, 19038, 11633, 5444, 21, 19143, 1653, 10536, 1706, 11629, 504, 5358, 575, 11635, 9973, 5395, 11655, 11639, 11638, 6898, 5772, 19103, 12, 4803, 1112, 4855, 2]
+// Dependencies: [32, 19, 17, 6620, 5654, 11750, 11748, 19165, 11753, 5563, 21, 19270, 1653, 10656, 1706, 11749, 504, 5477, 575, 11755, 10093, 5514, 11775, 11759, 11758, 7018, 5891, 19230, 12, 4922, 1112, 4974, 2]
 
-// Module 19142 (VoicePanelCardView)
+// Module 19269 (VoicePanelCardView)
 import _modDef12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1112 */;
 import _modDef1653 from "module_1653" /* 1653 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4803 */;
-import CallConstants from "CallConstants" /* 5444 */;
-import react2 from "react" /* 5772 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11628 */;
-import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11633 */;
-import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19038 */;
-import VoicePanelCardDefault from "VoicePanelCard" /* 19143 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4922 */;
+import CallConstants from "CallConstants" /* 5563 */;
+import react2 from "react" /* 5891 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11748 */;
+import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11753 */;
+import VoicePanelPIPConstants from "VoicePanelPIPConstants" /* 19165 */;
+import VoicePanelCardDefault from "VoicePanelCard" /* 19270 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6501 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5535 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11630 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6620 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5654 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11750 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

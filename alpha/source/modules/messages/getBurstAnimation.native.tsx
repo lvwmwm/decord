@@ -1,10 +1,10 @@
-// Module ID: 4753
-// Function ID: 4754
+// Module ID: 4872
+// Function ID: 4873
 // Name: getBurstAnimation
-// Dependencies: [5, 4754, 4755, 4756, 4757, 4758, 4759, 4760, 4761, 4762, 4763, 4764, 4765, 4766, 4767, 4768, 4769, 4770, 4771, 4772, 4773, 4774, 4775, 4776, 4777, 4778, 4779, 4780, 4781, 4782, 4783, 4784, 4785, 4786, 4787, 4788, 4789, 4790, 2]
+// Dependencies: [5, 4873, 4874, 4875, 4876, 4877, 4878, 4879, 4880, 4881, 4882, 4883, 4884, 4885, 4886, 4887, 4888, 4889, 4890, 4891, 4892, 4893, 4894, 4895, 4896, 4897, 4898, 4899, 4900, 4901, 4902, 4903, 4904, 4905, 4906, 4907, 4908, 4909, 2]
 // Exports: getBurstAnimation
 
-// Module 4753 (getBurstAnimation)
+// Module 4872 (getBurstAnimation)
 import _asyncToGeneratorDefault from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -13,187 +13,187 @@ let closure_5;
 
 const obj = {
   load() {
-    return require("module_4754");
+    return require("module_4873");
   }
 };
 const items = [
   obj,
   {
     load() {
-      return require("module_4755");
+      return require("module_4874");
     }
   },
   {
     load() {
-      return require("module_4756");
+      return require("module_4875");
     }
   },
   {
     load() {
-      return require("module_4757");
+      return require("module_4876");
     }
   },
   {
     load() {
-      return require("module_4758");
+      return require("module_4877");
     }
   },
   {
     load() {
-      return require("module_4759");
+      return require("module_4878");
     }
   },
   {
     load() {
-      return require("module_4760");
+      return require("module_4879");
     }
   },
   {
     load() {
-      return require("module_4761");
+      return require("module_4880");
     }
   },
   {
     load() {
-      return require("module_4762");
+      return require("module_4881");
     }
   },
   {
     load() {
-      return require("module_4763");
+      return require("module_4882");
     }
   },
   {
     load() {
-      return require("module_4764");
+      return require("module_4883");
     }
   },
   {
     load() {
-      return require("module_4765");
+      return require("module_4884");
     }
   },
   {
     load() {
-      return require("module_4766");
+      return require("module_4885");
     }
   },
   {
     load() {
-      return require("module_4767");
+      return require("module_4886");
     }
   },
   {
     load() {
-      return require("module_4768");
+      return require("module_4887");
     }
   },
   {
     load() {
-      return require("module_4769");
+      return require("module_4888");
     }
   },
   {
     load() {
-      return require("module_4770");
+      return require("module_4889");
     }
   },
   {
     load() {
-      return require("module_4771");
+      return require("module_4890");
     }
   }
 ];
 const obj2 = {
   load() {
-    return require("module_4772");
+    return require("module_4891");
   }
 };
 const items1 = [
   obj2,
   {
     load() {
-      return require("module_4773");
+      return require("module_4892");
     }
   },
   {
     load() {
-      return require("module_4774");
+      return require("module_4893");
     }
   },
   {
     load() {
-      return require("module_4775");
+      return require("module_4894");
     }
   },
   {
     load() {
-      return require("module_4776");
+      return require("module_4895");
     }
   },
   {
     load() {
-      return require("module_4777");
+      return require("module_4896");
     }
   },
   {
     load() {
-      return require("module_4778");
+      return require("module_4897");
     }
   },
   {
     load() {
-      return require("module_4779");
+      return require("module_4898");
     }
   },
   {
     load() {
-      return require("module_4780");
+      return require("module_4899");
     }
   },
   {
     load() {
-      return require("module_4781");
+      return require("module_4900");
     }
   },
   {
     load() {
-      return require("module_4782");
+      return require("module_4901");
     }
   },
   {
     load() {
-      return require("module_4783");
+      return require("module_4902");
     }
   },
   {
     load() {
-      return require("module_4784");
+      return require("module_4903");
     }
   },
   {
     load() {
-      return require("module_4785");
+      return require("module_4904");
     }
   },
   {
     load() {
-      return require("module_4786");
+      return require("module_4905");
     }
   },
   {
     load() {
-      return require("module_4787");
+      return require("module_4906");
     }
   },
   {
     load() {
-      return require("module_4788");
+      return require("module_4907");
     }
   },
   {
     load() {
-      return require("module_4789");
+      return require("module_4908");
     }
   }
 ];

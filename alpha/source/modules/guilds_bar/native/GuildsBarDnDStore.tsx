@@ -1,14 +1,14 @@
-// Module ID: 17737
-// Function ID: 17738
+// Module ID: 17863
+// Function ID: 17864
 // Name: GuildsBarDnDStore
-// Dependencies: [6431, 1257, 1653, 1262, 1241, 4709, 2]
+// Dependencies: [6550, 1257, 1653, 1262, 1241, 4828, 2]
 // Exports: useFolderBGHeightOffset, useItemDragState
 
-// Module 17737 (GuildsBarDnDStore)
+// Module 17863 (GuildsBarDnDStore)
 import SentryUtilsDefault from "SentryUtils" /* 1241 */;
 import react_native from "react-native" /* 1262 */;
-import _slicedToArray from "_slicedToArray" /* 4709 */;
-import SortedGuildStore from "SortedGuildStore" /* 6431 */;
+import _slicedToArray from "_slicedToArray" /* 4828 */;
+import SortedGuildStore from "SortedGuildStore" /* 6550 */;
 import module_1257 from "module_1257" /* 1257 */;
 import size from "module_2" /* 2 */;
 
@@ -77,7 +77,7 @@ const withEqualityFn = module_1257.createWithEqualityFn((arg0, arg1) => {
       } else {
         const obj4 = dropSpecs(tmp2[3]);
         obj4.batchUpdates(() => {
-          const obj = { dropSpecs, dragSpecs: "Array", overSpecs: "replace" };
+          const obj = { dropSpecs, dragSpecs: "Array", overSpecs: "fill" };
           return dropSpecs(obj);
         });
         const _clearTimeout = clearTimeout;

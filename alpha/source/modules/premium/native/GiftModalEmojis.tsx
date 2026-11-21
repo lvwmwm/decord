@@ -1,16 +1,16 @@
-// Module ID: 11801
-// Function ID: 11802
+// Module ID: 11921
+// Function ID: 11922
 // Name: GiftModalEmojis
-// Dependencies: [32, 19, 17, 21, 4794, 4744, 7376, 2]
+// Dependencies: [32, 19, 17, 21, 4913, 4863, 7496, 2]
 // Exports: default
 
-// Module 11801 (GiftModalEmojis)
+// Module 11921 (GiftModalEmojis)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import EmojiDefault from "Emoji" /* 7376 */;
+import EmojiDefault from "Emoji" /* 7496 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4794 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;

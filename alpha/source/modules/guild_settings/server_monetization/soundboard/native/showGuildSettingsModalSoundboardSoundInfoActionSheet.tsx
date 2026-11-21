@@ -1,12 +1,12 @@
-// Module ID: 19684
-// Function ID: 19685
+// Module ID: 19811
+// Function ID: 19812
 // Name: showGuildSettingsModalSoundboardSoundInfoActionSheet
-// Dependencies: [5008, 19685, 2119, 2]
+// Dependencies: [5127, 19812, 2119, 2]
 // Exports: showGuildSettingsModalSoundboardSoundInfoActionSheet
 
-// Module 19684 (showGuildSettingsModalSoundboardSoundInfoActionSheet)
+// Module 19811 (showGuildSettingsModalSoundboardSoundInfoActionSheet)
 import asyncRequire from "asyncRequire" /* 2119 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5008 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
 import size from "module_2" /* 2 */;
 
 const GuildSettingsModalSoundboardSoundInfoActionSheet = "GuildSettingsModalSoundboardSoundInfoActionSheet";
@@ -25,5 +25,5 @@ export function showGuildSettingsModalSoundboardSoundInfoActionSheet(arg0) {
       obj.hideActionSheet(GuildSettingsModalSoundboardSoundInfoActionSheet);
     }
   };
-  obj.openLazy(asyncRequire(19685, dependencyMap.paths), GuildSettingsModalSoundboardSoundInfoActionSheet, obj2);
+  obj.openLazy(asyncRequire(19812, dependencyMap.paths), GuildSettingsModalSoundboardSoundInfoActionSheet, obj2);
 }

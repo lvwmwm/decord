@@ -1,21 +1,21 @@
-// Module ID: 18048
-// Function ID: 18049
+// Module ID: 18174
+// Function ID: 18175
 // Name: StandaloneChannelScreen
-// Dependencies: [19, 17, 4643, 8442, 1071, 4650, 21, 4794, 575, 1628, 8450, 504, 4668, 12342, 1112, 4970, 8538, 8443, 5372, 11730, 14256, 8453, 18049, 1501, 11815, 5828, 6564, 5003, 4973, 11758, 6537, 8458, 1186, 9539, 18054, 13592, 18071, 18088, 18106, 18564, 18568, 11621, 18580, 18581, 12698, 2]
+// Dependencies: [19, 17, 4762, 8562, 1071, 4769, 21, 4913, 575, 1628, 8570, 504, 4787, 12464, 1112, 5089, 8658, 8563, 5491, 11850, 14378, 8573, 18175, 1501, 11935, 5947, 6683, 5122, 5092, 11878, 6656, 8578, 1186, 9659, 18180, 13714, 18197, 18214, 18232, 18691, 18695, 11741, 18707, 18708, 12820, 2]
 
-// Module 18048 (StandaloneChannelScreen)
+// Module 18174 (StandaloneChannelScreen)
 import nativeDefault from "native" /* 575 */;
-import ChannelConstants from "ChannelConstants" /* 4650 */;
-import FavoritesUtils from "FavoritesUtils" /* 4668 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4970 */;
-import PressableNavigatorBackIcon2 from "PressableNavigatorBackIcon" /* 8443 */;
+import ChannelConstants from "ChannelConstants" /* 4769 */;
+import FavoritesUtils from "FavoritesUtils" /* 4787 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5089 */;
+import PressableNavigatorBackIcon2 from "PressableNavigatorBackIcon" /* 8563 */;
 import react_mod from "react" /* 19 */;
 import react_native_mod from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 4643 */;
-import react_native_mod2 from "react-native" /* 8442 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import react_native_mod2 from "react-native" /* 8562 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let constants, navigation;

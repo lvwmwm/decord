@@ -1,10 +1,10 @@
-// Module ID: 9356
-// Function ID: 9357
+// Module ID: 9476
+// Function ID: 9477
 // Name: GiftingPromotionPlanEligibility
 // Dependencies: [1388, 2]
 // Exports: isPlanEligibleForGiftingPromotion
 
-// Module 9356 (GiftingPromotionPlanEligibility)
+// Module 9476 (GiftingPromotionPlanEligibility)
 import PremiumConstants from "PremiumConstants" /* 1388 */;
 import size from "module_2" /* 2 */;
 

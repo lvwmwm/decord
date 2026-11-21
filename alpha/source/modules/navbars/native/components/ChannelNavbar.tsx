@@ -1,38 +1,38 @@
-// Module ID: 13608
-// Function ID: 13609
+// Module ID: 13730
+// Function ID: 13731
 // Name: ChannelNavbar
-// Dependencies: [19, 17, 6275, 4647, 4643, 4665, 5532, 4736, 1386, 1071, 4650, 4640, 21, 4794, 6288, 575, 504, 1112, 7516, 5410, 13387, 13609, 13610, 1186, 13611, 13612, 5481, 13613, 11165, 6910, 5385, 4850, 8095, 7922, 4826, 4627, 11492, 13614, 2]
+// Dependencies: [19, 17, 6394, 4766, 4762, 4784, 5651, 4855, 1386, 1071, 4769, 4759, 21, 4913, 6407, 575, 504, 1112, 7636, 5529, 13509, 13731, 13732, 1186, 13733, 13734, 5600, 13735, 11285, 7030, 5504, 4969, 8215, 8042, 4945, 4746, 11612, 13736, 2]
 // Exports: ChannelButtons, ChannelTitleWithoutRoute
 
-// Module 13608 (ChannelNavbar)
+// Module 13730 (ChannelNavbar)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
-import dismissible_content from "dismissible_content" /* 4627 */;
-import ChannelRecord from "ChannelRecord" /* 4647 */;
-import ChannelConstants from "ChannelConstants" /* 4650 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4826 */;
-import UserUtilsDefault from "UserUtils" /* 4850 */;
-import Text_Text from "Text/Text" /* 5385 */;
-import useChannelName from "useChannelName" /* 5410 */;
-import Pressables from "Pressables" /* 6910 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 7516 */;
-import isStreamingDefault from "isStreaming" /* 8095 */;
-import ActivityStatusDefault from "ActivityStatus" /* 13387 */;
+import dismissible_content from "dismissible_content" /* 4746 */;
+import ChannelRecord from "ChannelRecord" /* 4766 */;
+import ChannelConstants from "ChannelConstants" /* 4769 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4945 */;
+import UserUtilsDefault from "UserUtils" /* 4969 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import useChannelName from "useChannelName" /* 5529 */;
+import Pressables from "Pressables" /* 7030 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 7636 */;
+import isStreamingDefault from "isStreaming" /* 8215 */;
+import ActivityStatusDefault from "ActivityStatus" /* 13509 */;
 import react from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6275 */;
-import ChannelStore from "ChannelStore" /* 4643 */;
-import GuildStore from "GuildStore" /* 4665 */;
-import PresenceStore from "PresenceStore" /* 5532 */;
-import RelationshipStore from "RelationshipStore" /* 4736 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6394 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import PresenceStore from "PresenceStore" /* 5651 */;
+import RelationshipStore from "RelationshipStore" /* 4855 */;
 import UserStore from "UserStore" /* 1386 */;
 import Constants from "Constants" /* 1071 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4640 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4759 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4794 */;
-import TextStyles from "TextStyles" /* 6288 */;
+import createStyles_mod from "createStyles" /* 4913 */;
+import TextStyles from "TextStyles" /* 6407 */;
 import size_mod from "module_2" /* 2 */;
 
 let onPress;

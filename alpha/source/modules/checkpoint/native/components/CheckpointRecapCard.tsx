@@ -1,21 +1,21 @@
-// Module ID: 12660
-// Function ID: 12661
+// Module ID: 12782
+// Function ID: 12783
 // Name: CheckpointRecapCard
-// Dependencies: [19, 17, 21, 575, 12384, 5874, 6216, 12396, 12400, 2]
+// Dependencies: [19, 17, 21, 575, 12506, 5993, 6335, 12518, 12522, 2]
 // Exports: default
 
-// Module 12660 (CheckpointRecapCard)
+// Module 12782 (CheckpointRecapCard)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import CheckpointCharacterAccessibilityUtils from "CheckpointCharacterAccessibilityUtils" /* 6216 */;
-import CheckpointStepHeaderRefContextDefault from "CheckpointStepHeaderRefContext" /* 12384 */;
+import CheckpointCharacterAccessibilityUtils from "CheckpointCharacterAccessibilityUtils" /* 6335 */;
+import CheckpointStepHeaderRefContextDefault from "CheckpointStepHeaderRefContext" /* 12506 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const CheckpointCardFrameDefault = tmp(12396);
-const CheckpointShareCardYearDefault = tmp(12400);
+const CheckpointCardFrameDefault = tmp(12518);
+const CheckpointShareCardYearDefault = tmp(12522);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 const rect = { size: 240, top: nativeDefault.space.PX_16, left: -20 };
@@ -43,10 +43,10 @@ export default function CheckpointRecapCard(character) {
     const _Math2 = Math;
     bound = Math.min(Math.max(maxHeight / 268, 0.75), maxScale);
   }
-  const obj2 = character(5874);
+  const obj2 = character(5993);
   const characterCardColorPalette = obj2.getCharacterCardColorPalette(character);
   const items = [character];
-  const obj3 = character(5874);
+  const obj3 = character(5993);
   const primaryBackgroundColor = obj3.getCardColors(characterCardColorPalette).primaryBackgroundColor;
   const memo = obj.useMemo(() => {
     let checkpointCharacterAccessibilityLabel = null;
@@ -56,7 +56,7 @@ export default function CheckpointRecapCard(character) {
     }
     return checkpointCharacterAccessibilityLabel;
   }, items);
-  ({ path: character(12400).YEAR_PATH, x: 200 - character(12400).YEAR_WIDTH, color: primaryBackgroundColor });
+  ({ path: character(12522).YEAR_PATH, x: 200 - character(12522).YEAR_WIDTH, color: primaryBackgroundColor });
   CheckpointCardFrameDefault;
   CheckpointShareCardYearDefault;
   const tmp11 = <tmpResult character={character} cardColorPalette={characterCardColorPalette} canvasWidth={200} canvasHeight={268} scale={bound} clydeSize={28} characterLayout={rect}>{null}</tmpResult>;

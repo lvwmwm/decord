@@ -1,21 +1,21 @@
-// Module ID: 6411
-// Function ID: 6412
+// Module ID: 6530
+// Function ID: 6531
 // Name: SelectedChannelActionCreatorsAdditional
-// Dependencies: [4643, 4665, 6412, 4726, 4697, 4827, 1386, 5442, 6381, 5829, 6413, 5475, 6290, 6414, 5008, 6423, 2119, 5700, 14708, 1268, 572, 2]
+// Dependencies: [4762, 4784, 6531, 4845, 4816, 4946, 1386, 5561, 6500, 5948, 6532, 5594, 6409, 6533, 5127, 6542, 2119, 5819, 14831, 1268, 572, 2]
 // Exports: getChannelSelectionOrigin, selectVoiceChannelAdditional
 
-// Module 6411 (SelectedChannelActionCreatorsAdditional)
+// Module 6530 (SelectedChannelActionCreatorsAdditional)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import v1 from "v1" /* 1268 */;
-import StageChannelsConstants from "StageChannelsConstants" /* 6381 */;
-import ChannelStore from "ChannelStore" /* 4643 */;
-import GuildStore from "GuildStore" /* 4665 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 6412 */;
-import PermissionStore from "PermissionStore" /* 4726 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4697 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4827 */;
+import StageChannelsConstants from "StageChannelsConstants" /* 6500 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 6531 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4816 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4946 */;
 import UserStore from "UserStore" /* 1386 */;
-import VoiceStateStore from "VoiceStateStore" /* 5442 */;
+import VoiceStateStore from "VoiceStateStore" /* 5561 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

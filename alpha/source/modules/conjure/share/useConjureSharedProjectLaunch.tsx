@@ -1,15 +1,15 @@
-// Module ID: 12159
-// Function ID: 12160
+// Module ID: 12281
+// Function ID: 12282
 // Name: useConjureSharedProjectLaunch
-// Dependencies: [5, 32, 19, 4665, 504, 11854, 12154, 2]
+// Dependencies: [5, 32, 19, 4784, 504, 11974, 12276, 2]
 // Exports: default
 
-// Module 12159 (useConjureSharedProjectLaunch)
-import conjureSharedProjectHome from "conjureSharedProjectHome" /* 11854 */;
+// Module 12281 (useConjureSharedProjectLaunch)
+import conjureSharedProjectHome from "conjureSharedProjectHome" /* 11974 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4665 */;
+import GuildStore from "GuildStore" /* 4784 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

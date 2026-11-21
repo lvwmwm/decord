@@ -1,15 +1,15 @@
-// Module ID: 9828
-// Function ID: 9829
+// Module ID: 9948
+// Function ID: 9949
 // Name: useHasNewAdContent
-// Dependencies: [32, 9829, 8284, 1088, 504, 8291, 6446, 8960, 4627, 2]
+// Dependencies: [32, 9949, 8404, 1088, 504, 8411, 6565, 9080, 4746, 2]
 // Exports: default
 
-// Module 9828 (useHasNewAdContent)
+// Module 9948 (useHasNewAdContent)
 import DurationsDefault from "Durations" /* 1088 */;
-import AdCreativeType from "AdCreativeType" /* 6446 */;
+import AdCreativeType from "AdCreativeType" /* 6565 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import AdContentSeenStore from "AdContentSeenStore" /* 9829 */;
-import QuestStore from "QuestStore" /* 8284 */;
+import AdContentSeenStore from "AdContentSeenStore" /* 9949 */;
+import QuestStore from "QuestStore" /* 8404 */;
 import size from "module_2" /* 2 */;
 
 let quests;
@@ -48,10 +48,10 @@ export default function useHasNewAdContent() {
     return false;
   }, items2);
   let prop = null;
-  const useSelectedTimeRecurringDismissibleContent = stateFromStoresArray(8960).useSelectedTimeRecurringDismissibleContent;
-  stateFromStoresArray(8960);
+  const useSelectedTimeRecurringDismissibleContent = stateFromStoresArray(9080).useSelectedTimeRecurringDismissibleContent;
+  stateFromStoresArray(9080);
   if (stateFromStores) {
-    prop = tmp(4627).DismissibleContent.QUEST_HOME_NEW_QUEST_BADGE;
+    prop = tmp(4746).DismissibleContent.QUEST_HOME_NEW_QUEST_BADGE;
   }
   const obj3 = { cooldownDurationMs: DAY };
   const tmp7 = _slicedToArray(useSelectedTimeRecurringDismissibleContent(prop, obj3, undefined, true), 2);

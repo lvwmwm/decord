@@ -1,25 +1,25 @@
-// Module ID: 15976
-// Function ID: 15977
+// Module ID: 16099
+// Function ID: 16100
 // Name: BlockedUsersListV2
-// Dependencies: [19, 17, 4736, 21, 4794, 575, 7400, 7419, 1186, 15977, 1112, 6897, 5385, 7228, 15981, 504, 2]
+// Dependencies: [19, 17, 4855, 21, 4913, 575, 7520, 7539, 1186, 16100, 1112, 7017, 5504, 7348, 16104, 504, 2]
 // Exports: default
 
-// Module 15976 (BlockedUsersListV2)
+// Module 16099 (BlockedUsersListV2)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
-import Text_Text from "Text/Text" /* 5385 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 6897 */;
-import TableRowGroup2 from "TableRowGroup" /* 7228 */;
-import useAnalyticsLocations from "useAnalyticsLocations" /* 7400 */;
-import Blocked from "Blocked" /* 15977 */;
-import BlockedUserRowV2Default from "BlockedUserRowV2" /* 15981 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7017 */;
+import TableRowGroup2 from "TableRowGroup" /* 7348 */;
+import useAnalyticsLocations from "useAnalyticsLocations" /* 7520 */;
+import Blocked from "Blocked" /* 16100 */;
+import BlockedUserRowV2Default from "BlockedUserRowV2" /* 16104 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4736 */;
+import RelationshipStore from "RelationshipStore" /* 4855 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const useAnalyticsLocationsDefault = useAnalyticsLocations;

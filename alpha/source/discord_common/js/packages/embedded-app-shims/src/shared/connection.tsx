@@ -1,12 +1,12 @@
-// Module ID: 19360
-// Function ID: 19361
+// Module ID: 19487
+// Function ID: 19488
 // Name: connection
-// Dependencies: [19355, 19356, 2]
+// Dependencies: [19482, 19483, 2]
 // Exports: createChildConnector, offerOverWindow
 
-// Module 19360 (connection)
-import protocol from "protocol" /* 19355 */;
-import Safe4 from "Safe" /* 19356 */;
+// Module 19487 (connection)
+import protocol from "protocol" /* 19482 */;
+import Safe4 from "Safe" /* 19483 */;
 import size from "module_2" /* 2 */;
 
 let closure_3;
@@ -64,8 +64,8 @@ export function createChildConnector(onMessage, arg1) {
 }
 export function offerOverWindow(arg0, arg1, nonce, fn) {
   let port1;
-  const messageChannel = new port1(19356).Safe.Constructor.MessageChannel();
-  let Safe = port1(19356).Safe;
+  const messageChannel = new port1(19483).Safe.Constructor.MessageChannel();
+  let Safe = port1(19483).Safe;
   const MessageChannelResult = Safe.MessageChannel(messageChannel);
   port1 = MessageChannelResult.port1;
   const port2 = MessageChannelResult.port2;
@@ -90,11 +90,11 @@ export function offerOverWindow(arg0, arg1, nonce, fn) {
     }
   };
   fn(obj);
-  const Safe2 = port1(19356).Safe;
+  const Safe2 = port1(19483).Safe;
   const postMessage = Safe2.Window(arg0).postMessage;
   const WindowResult = Safe2.Window(arg0);
   const obj2 = { [closure_0(closure_1[0]).SHIM_MESSAGE_KEY]: "connection_open", nonce };
-  const Safe3 = port1(19356).Safe;
+  const Safe3 = port1(19483).Safe;
   const items = [port2];
   postMessage(obj2, arg1, Safe3.asIterable(items));
 }

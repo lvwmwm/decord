@@ -1,17 +1,17 @@
-// Module ID: 8215
-// Function ID: 8216
+// Module ID: 8335
+// Function ID: 8336
 // Name: FamilyCenterStore
-// Dependencies: [32, 5458, 1070, 1386, 8216, 4657, 11, 8217, 2]
+// Dependencies: [32, 5577, 1070, 1386, 8336, 4776, 11, 8337, 2]
 
-// Module 8215 (FamilyCenterStore)
+// Module 8335 (FamilyCenterStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 4657 */;
-import CountryCodeUtils from "CountryCodeUtils" /* 5458 */;
-import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 8217 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 4776 */;
+import CountryCodeUtils from "CountryCodeUtils" /* 5577 */;
+import FamilyCenterActionCreatorsDefault from "FamilyCenterActionCreators" /* 8337 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1070 */;
 import UserStore from "UserStore" /* 1386 */;
-import FamilyCenterConstants from "FamilyCenterConstants" /* 8216 */;
+import FamilyCenterConstants from "FamilyCenterConstants" /* 8336 */;
 import size from "module_2" /* 2 */;
 
 let closure_16, map, map1, set, set2, set3, set4;
@@ -21,7 +21,7 @@ let REQUESTS;
 let metroRequire;
 let tmp;
 let tmp2;
-const f92513 = (acc, id) => {
+const f92899 = (acc, id) => {
   let num;
   const obj = {};
   const merged = Object.assign(acc);
@@ -36,7 +36,7 @@ const f92513 = (acc, id) => {
   obj[id] = obj2;
   return obj;
 };
-const f92514 = (acc, invoice_items) => {
+const f92900 = (acc, invoice_items) => {
   let sku_id;
   let subscription_plan_id;
   if (null != invoice_items.invoice_items) {
@@ -52,7 +52,7 @@ const f92514 = (acc, invoice_items) => {
   }
   return acc;
 };
-const f92515 = (acc, entitlement_id) => {
+const f92901 = (acc, entitlement_id) => {
   acc[entitlement_id.entitlement_id] = entitlement_id;
   return acc;
 };
@@ -184,13 +184,13 @@ function handleInitialLoad(linkedUsers) {
   if (undefined !== totals) {
     closure_16 = totals;
   }
-  closure_34 = guilds.reduce(f92513, closure_34);
+  closure_34 = guilds.reduce(f92899, closure_34);
   processLinkedUsers(linkedUsers);
   if (null != invoices) {
-    closure_31 = invoices.reduce(f92514, {});
+    closure_31 = invoices.reduce(f92900, {});
   }
   if (null != gifts) {
-    closure_32 = gifts.reduce(f92515, {});
+    closure_32 = gifts.reduce(f92901, {});
   }
   if (spendingLimit == null) {
     spendingLimit = null;
@@ -239,12 +239,12 @@ function handleTeenActivityFetch(familyCenterTeenActivity) {
       closure_16 = totals;
     }
     let tmp = closure_34;
-    closure_34 = guilds.reduce(f92513, closure_34);
+    closure_34 = guilds.reduce(f92899, closure_34);
     if (null != invoices) {
-      closure_31 = invoices.reduce(f92514, {});
+      closure_31 = invoices.reduce(f92900, {});
     }
     if (null != gifts) {
-      closure_32 = gifts.reduce(f92515, {});
+      closure_32 = gifts.reduce(f92901, {});
     }
     c21 = false;
     let obj = SnowflakeUtilsDefault;
@@ -270,7 +270,7 @@ function handleTeenActivityMoreFetch(familyCenterTeenActivity) {
       const result = value.set(display_type.event_id, display_type);
     }
   });
-  closure_34 = guilds.reduce(f92513, closure_34);
+  closure_34 = guilds.reduce(f92899, closure_34);
 }
 function handleUserLinkStatusUpdate(linkedUsers) {
   processLinkedUsers(linkedUsers.linkedUsers);
@@ -469,7 +469,7 @@ class FamilyCenterStore extends MobileCacheSnapshotStore {
       let tmp3 = processLinkedUsers(snapshot.linkedUsers);
       const guilds = snapshot.guilds;
       let tmp4 = closure_34;
-      closure_34 = guilds.reduce(f92513, closure_34);
+      closure_34 = guilds.reduce(f92899, closure_34);
       const teenActivity = snapshot.teenActivity;
       const tmp6 = freshTeenActivityWithMap();
       let closure_0 = tmp6;

@@ -1,26 +1,26 @@
-// Module ID: 19671
-// Function ID: 19672
+// Module ID: 19798
+// Function ID: 19799
 // Name: GuildSettingsModalSoundboard
-// Dependencies: [5, 19, 17, 5842, 4665, 1386, 1071, 21, 1112, 8623, 19659, 9250, 14011, 4794, 575, 504, 6925, 7376, 12363, 7568, 5385, 1186, 5824, 6938, 5392, 19672, 1628, 6711, 6835, 7513, 19673, 7070, 19668, 19684, 2]
+// Dependencies: [5, 19, 17, 5961, 4784, 1386, 1071, 21, 1112, 8743, 19786, 9370, 14133, 4913, 575, 504, 7045, 7496, 12485, 7688, 5504, 1186, 5943, 7058, 5511, 19799, 1628, 6830, 6954, 7633, 19800, 7190, 19795, 19811, 2]
 
-// Module 19671 (GuildSettingsModalSoundboard)
+// Module 19798 (GuildSettingsModalSoundboard)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl7 from "intl" /* 1112 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5824 */;
-import EmojiDefault from "Emoji" /* 7376 */;
-import GuildBoostingUtils from "GuildBoostingUtils" /* 8623 */;
-import getSoundboardEmojiUrlDefault from "getSoundboardEmojiUrl" /* 12363 */;
-import SoundboardCreationUtils from "SoundboardCreationUtils" /* 19672 */;
-import showGuildSettingsModalSoundboardSoundInfoActionSheet from "showGuildSettingsModalSoundboardSoundInfoActionSheet" /* 19684 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5943 */;
+import EmojiDefault from "Emoji" /* 7496 */;
+import GuildBoostingUtils from "GuildBoostingUtils" /* 8743 */;
+import getSoundboardEmojiUrlDefault from "getSoundboardEmojiUrl" /* 12485 */;
+import SoundboardCreationUtils from "SoundboardCreationUtils" /* 19799 */;
+import showGuildSettingsModalSoundboardSoundInfoActionSheet from "showGuildSettingsModalSoundboardSoundInfoActionSheet" /* 19811 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SoundboardStore from "SoundboardStore" /* 5842 */;
-import GuildStore from "GuildStore" /* 4665 */;
+import SoundboardStore from "SoundboardStore" /* 5961 */;
+import GuildStore from "GuildStore" /* 4784 */;
 import UserStore from "UserStore" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let c1, c2, set;
@@ -55,12 +55,12 @@ function SoundboardSoundRow(arg0) {
   if (null == sound.emojiId) {
     let tmp5Result;
     if (null == sound.emojiName) {
-      tmp5Result = tmp5(tmp2(7568).ImageIcon, { size: "lg", color: "icon-subtle" });
+      tmp5Result = tmp5(tmp2(7688).ImageIcon, { size: "lg", color: "icon-subtle" });
     }
     obj2.children = tmp5Result;
     const obj3 = { icon: closure_11(closure_6, obj2), label: closure_12(closure_6, obj8), trailing: tmp5Result2, onPress };
     const obj4 = { variant: "heading-xs/semibold", color: "text-strong", style: tmp.name, children: sound.name };
-    const items2 = [closure_11(sound(5385).Text, obj4), ];
+    const items2 = [closure_11(sound(5504).Text, obj4), ];
     let tmp12Result = null;
     if (null != stateFromStores) {
       const obj5 = { style: tmp.userRow, children: items3 };
@@ -68,7 +68,7 @@ function SoundboardSoundRow(arg0) {
       const Avatar = tmp2(1186).Avatar;
       items3 = [closure_11(Avatar, obj6), ];
       const obj7 = { variant: "body-sm/medium", color: "text-subtle", children: obj9.getName(guildId, undefined, stateFromStores) };
-      const Text = tmp2(5385).Text;
+      const Text = tmp2(5504).Text;
       obj9 = NicknameUtilsDefault;
       items3[1] = closure_11(Text, obj7);
       tmp12Result = tmp12(tmp7, obj5);
@@ -77,7 +77,7 @@ function SoundboardSoundRow(arg0) {
     items2[1] = tmp12Result;
     tmp5Result2 = undefined;
     if (canManage) {
-      tmp5Result2 = tmp5(tmp2(6938).TableRowArrow, {});
+      tmp5Result2 = tmp5(tmp2(7058).TableRowArrow, {});
     }
     return closure_11(tmp6, obj3);
   }
@@ -104,7 +104,7 @@ function AddSoundButton(guildId) {
       return obj.showAddSoundboardSoundOptions(guildId);
     }
   };
-  Button = guildId(5392).Button;
+  Button = guildId(5511).Button;
   intl = guildId(1112).intl;
   return closure_11(closure_6, obj);
 }

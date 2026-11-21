@@ -1,16 +1,16 @@
-// Module ID: 19986
-// Function ID: 19987
+// Module ID: 20113
+// Function ID: 20114
 // Name: AVErrorStreamViewHighPacketLoss
-// Dependencies: [6281, 502, 6277, 19985, 6282, 5724, 19982, 2]
+// Dependencies: [6400, 502, 6396, 20112, 6401, 5843, 20109, 2]
 
-// Module 19986 (AVErrorStreamViewHighPacketLoss)
-import AVError from "AVError" /* 5724 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6282 */;
-import AVErrorContext from "AVErrorContext" /* 19982 */;
-import AVErrorUtils from "AVErrorUtils" /* 19985 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6281 */;
+// Module 20113 (AVErrorStreamViewHighPacketLoss)
+import AVError from "AVError" /* 5843 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6401 */;
+import AVErrorContext from "AVErrorContext" /* 20109 */;
+import AVErrorUtils from "AVErrorUtils" /* 20112 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6400 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 6277 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 6396 */;
 import size from "module_2" /* 2 */;
 
 let getRTCConnection;

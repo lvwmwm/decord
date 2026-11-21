@@ -1,13 +1,13 @@
-// Module ID: 8883
-// Function ID: 8884
+// Module ID: 9003
+// Function ID: 9004
 // Name: WishlistShopUnpublishUtils
-// Dependencies: [1071, 7967, 1112, 2]
+// Dependencies: [1071, 8087, 1112, 2]
 // Exports: canRenderWishlistShopUnpublishCountdown, formatWishlistShopUnpublishLabel, getNextFutureShopUnpublishedAt, getShopUnpublishCountdown
 
-// Module 8883 (WishlistShopUnpublishUtils)
+// Module 9003 (WishlistShopUnpublishUtils)
 import Constants from "Constants" /* 1071 */;
 import intl5 from "intl" /* 1112 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7967 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 8087 */;
 import size from "module_2" /* 2 */;
 
 const SKUProductLines = Constants.SKUProductLines;

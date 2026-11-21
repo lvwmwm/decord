@@ -1,16 +1,16 @@
-// Module ID: 12628
-// Function ID: 12629
+// Module ID: 12750
+// Function ID: 12751
 // Name: CheckpointCountUpStatNumber
-// Dependencies: [32, 19, 17, 4795, 21, 504, 12629, 12601, 2]
+// Dependencies: [32, 19, 17, 4914, 21, 504, 12751, 12723, 2]
 // Exports: default
 
-// Module 12628 (CheckpointCountUpStatNumber)
+// Module 12750 (CheckpointCountUpStatNumber)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import CheckpointStatNumber from "CheckpointStatNumber" /* 12601 */;
+import CheckpointStatNumber from "CheckpointStatNumber" /* 12723 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4795 */;
+import AccessibilityStore from "AccessibilityStore" /* 4914 */;
 import size_mod from "module_2" /* 2 */;
 
 const CheckpointStatNumberDefault = CheckpointStatNumber;
@@ -81,13 +81,13 @@ export default function CheckpointCountUpStatNumber(start) {
   if (stateFromStores) {
     tmp5 = end;
   }
-  const tmpResult = tmp(12629);
+  const tmpResult = tmp(12751);
   const result = tmpResult.formatCheckpointStatNumber(end);
   importDefault = result;
   const items2 = [result, size];
   ({ value: tmpResult2.formatCheckpointStatNumber(tmp5), size });
   CheckpointStatNumberDefault;
-  tmpResult2 = tmp(12629);
+  tmpResult2 = tmp(12751);
   return <View style={closure_5(() => {
     let obj2;
     const obj = { width: obj2.getCheckpointStatNumberWidth(c1, size) };

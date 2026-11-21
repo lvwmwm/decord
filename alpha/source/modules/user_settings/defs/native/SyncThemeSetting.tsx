@@ -1,20 +1,20 @@
-// Module ID: 16592
-// Function ID: 16593
+// Module ID: 16715
+// Function ID: 16716
 // Name: SyncThemeSetting
-// Dependencies: [4818, 1192, 1191, 1230, 8592, 1071, 504, 1112, 16593, 5707, 11817, 2]
+// Dependencies: [4937, 1192, 1191, 1230, 8712, 1071, 504, 1112, 16716, 5826, 11937, 2]
 
-// Module 16592 (SyncThemeSetting)
+// Module 16715 (SyncThemeSetting)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
-import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5707 */;
-import SettingsConstants from "SettingsConstants" /* 8592 */;
-import actions_AnalyticsTrackingActionCreators from "actions/AnalyticsTrackingActionCreators" /* 16593 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4818 */;
+import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5826 */;
+import SettingsConstants from "SettingsConstants" /* 8712 */;
+import actions_AnalyticsTrackingActionCreators from "actions/AnalyticsTrackingActionCreators" /* 16716 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4937 */;
 import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1192 */;
 import ThemeStore from "ThemeStore" /* 1191 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1230 */;
-import SettingBuilders from "SettingBuilders" /* 11817 */;
+import SettingBuilders from "SettingBuilders" /* 11937 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

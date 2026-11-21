@@ -1,30 +1,30 @@
-// Module ID: 12921
-// Function ID: 12922
+// Module ID: 13043
+// Function ID: 13044
 // Name: AppLauncherAutocompleteActionSheet
-// Dependencies: [32, 19, 17, 8396, 4665, 1071, 5818, 21, 12, 10557, 4794, 575, 563, 5008, 12916, 12917, 1112, 38, 6925, 6263, 5385, 1186, 12918, 2]
+// Dependencies: [32, 19, 17, 8516, 4784, 1071, 5937, 21, 12, 10677, 4913, 575, 563, 5127, 13038, 13039, 1112, 38, 7045, 6382, 5504, 1186, 13040, 2]
 // Exports: default
 
-// Module 12921 (AppLauncherAutocompleteActionSheet)
+// Module 13043 (AppLauncherAutocompleteActionSheet)
 import react_native from "react-native" /* 17 */;
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5008 */;
-import Text_Text from "Text/Text" /* 5385 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5818 */;
-import merged5 from "merged5" /* 6263 */;
-import TableRow from "TableRow" /* 6925 */;
-import executeCommandDefault from "executeCommand" /* 10557 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12918 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5937 */;
+import merged5 from "merged5" /* 6382 */;
+import TableRow from "TableRow" /* 7045 */;
+import executeCommandDefault from "executeCommand" /* 10677 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13040 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ApplicationCommandAutocompleteStore from "ApplicationCommandAutocompleteStore" /* 8396 */;
-import GuildStore from "GuildStore" /* 4665 */;
+import ApplicationCommandAutocompleteStore from "ApplicationCommandAutocompleteStore" /* 8516 */;
+import GuildStore from "GuildStore" /* 4784 */;
 import Fragment from "Fragment" /* 21 */;
 import module_12 from "module_12" /* 12 */;
-import createStyles from "createStyles" /* 4794 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let c10;

@@ -1,15 +1,15 @@
-// Module ID: 16465
-// Function ID: 16466
+// Module ID: 16588
+// Function ID: 16589
 // Name: QuestDockUnenrolledBackground
-// Dependencies: [19, 6439, 16352, 21, 16385, 16346, 5358, 575, 16466, 16463, 8310, 16467, 2]
+// Dependencies: [19, 6558, 16475, 21, 16508, 16469, 5477, 575, 16589, 16586, 8430, 16590, 2]
 
-// Module 16465 (QuestDockUnenrolledBackground)
+// Module 16588 (QuestDockUnenrolledBackground)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import QuestConstants from "QuestConstants" /* 6439 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 8310 */;
-import QuestDockConstants from "QuestDockConstants" /* 16352 */;
-import QuestDockVideoBackgroundDefault from "QuestDockVideoBackground" /* 16467 */;
+import QuestConstants from "QuestConstants" /* 6558 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 8430 */;
+import QuestDockConstants from "QuestDockConstants" /* 16475 */;
+import QuestDockVideoBackgroundDefault from "QuestDockVideoBackground" /* 16590 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -23,17 +23,17 @@ const memoResult = react.memo(function QuestDockUnenrolledBackground() {
   let tmp10;
   let url;
   let videoAsset;
-  const obj = handleAcceptQuest(16385);
+  const obj = handleAcceptQuest(16508);
   const questDockQuest = obj.useQuestDockQuest();
-  const obj2 = handleAcceptQuest(16346);
+  const obj2 = handleAcceptQuest(16469);
   const questDockHeroAsset = obj2.useQuestDockHeroAsset(questDockQuest);
   ({ videoAsset, staticUrl } = questDockHeroAsset);
-  const obj3 = handleAcceptQuest(5358);
+  const obj3 = handleAcceptQuest(5477);
   const token = obj3.useToken(nativeDefault.colors.CARD_BACKGROUND_DEFAULT);
-  const QuestBarStartQuestOnClickExperiment = handleAcceptQuest(16466).QuestBarStartQuestOnClickExperiment;
+  const QuestBarStartQuestOnClickExperiment = handleAcceptQuest(16589).QuestBarStartQuestOnClickExperiment;
   const obj4 = { location: QuestsExperimentLocations.QUESTS_BAR_MOBILE };
   let enabled = QuestBarStartQuestOnClickExperiment.useConfig(obj4).enabled;
-  const obj5 = handleAcceptQuest(16463);
+  const obj5 = handleAcceptQuest(16586);
   const questDockAcceptQuest = obj5.useQuestDockAcceptQuest();
   handleAcceptQuest = questDockAcceptQuest.handleAcceptQuest;
   const items = [handleAcceptQuest];

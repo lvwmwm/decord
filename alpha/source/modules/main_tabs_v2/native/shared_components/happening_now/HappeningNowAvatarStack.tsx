@@ -1,21 +1,21 @@
-// Module ID: 17480
-// Function ID: 17481
+// Module ID: 17604
+// Function ID: 17605
 // Name: HappeningNowAvatarStack
-// Dependencies: [32, 19, 17, 2187, 14368, 21, 4794, 575, 1186, 1653, 563, 5395, 1706, 8903, 5385, 2025, 17481, 2]
+// Dependencies: [32, 19, 17, 2188, 14490, 21, 4913, 575, 1186, 1653, 563, 5514, 1706, 9023, 5504, 2025, 17605, 2]
 // Exports: HappeningNowAvatarStack
 
-// Module 17480 (HappeningNowAvatarStack)
+// Module 17604 (HappeningNowAvatarStack)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1186 */;
-import spring_spring from "spring/spring" /* 5395 */;
-import ClipView from "ClipView" /* 8903 */;
-import ChannelAnimationConstants from "ChannelAnimationConstants" /* 14368 */;
+import spring_spring from "spring/spring" /* 5514 */;
+import ClipView from "ClipView" /* 9023 */;
+import ChannelAnimationConstants from "ChannelAnimationConstants" /* 14490 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import LocaleStore_mod from "LocaleStore" /* 2187 */;
+import LocaleStore_mod from "LocaleStore" /* 2188 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4794 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

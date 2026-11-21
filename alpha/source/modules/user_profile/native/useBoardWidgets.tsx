@@ -1,12 +1,12 @@
-// Module ID: 10229
-// Function ID: 10230
+// Module ID: 10349
+// Function ID: 10350
 // Name: useBoardWidgets
-// Dependencies: [19, 10093, 10230, 2]
+// Dependencies: [19, 10213, 10350, 2]
 // Exports: useBoardWidgets
 
-// Module 10229 (useBoardWidgets)
-import useUserProfileWidgetsDefault from "useUserProfileWidgets" /* 10093 */;
-import BoardWidgetUtils from "BoardWidgetUtils" /* 10230 */;
+// Module 10349 (useBoardWidgets)
+import useUserProfileWidgetsDefault from "useUserProfileWidgets" /* 10213 */;
+import BoardWidgetUtils from "BoardWidgetUtils" /* 10350 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

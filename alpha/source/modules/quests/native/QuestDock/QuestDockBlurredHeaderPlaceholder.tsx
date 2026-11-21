@@ -1,18 +1,18 @@
-// Module ID: 16458
-// Function ID: 16459
+// Module ID: 16581
+// Function ID: 16582
 // Name: QuestDockBlurredHeaderPlaceholder
-// Dependencies: [19, 17, 6439, 16352, 21, 4794, 16353, 16459, 1653, 5481, 2]
+// Dependencies: [19, 17, 6558, 16475, 21, 4913, 16476, 16582, 1653, 5600, 2]
 
-// Module 16458 (QuestDockBlurredHeaderPlaceholder)
+// Module 16581 (QuestDockBlurredHeaderPlaceholder)
 import react_native from "react-native" /* 17 */;
 import _modDef1653 from "module_1653" /* 1653 */;
-import FastImageDefault from "FastImage" /* 5481 */;
-import QuestConstants from "QuestConstants" /* 6439 */;
-import _slicedToArray from "_slicedToArray" /* 16459 */;
+import FastImageDefault from "FastImage" /* 5600 */;
+import QuestConstants from "QuestConstants" /* 6558 */;
+import _slicedToArray from "_slicedToArray" /* 16582 */;
 import react from "react" /* 19 */;
-import QuestDockConstants from "QuestDockConstants" /* 16352 */;
+import QuestDockConstants from "QuestDockConstants" /* 16475 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let QUEST_DOCK_LANDSCAPE_MEDIA_EXPANDED_HEIGHT;
@@ -53,7 +53,7 @@ const memoResult = react.memo(function QuestDockBlurredHeaderPlaceholder(arg0) {
   let tmp9;
   ({ opacityAnimatedStyle, placeholder } = arg0);
   ({ layoutAnimation, layoutAnimatedStyle } = arg0);
-  const context = react.useContext(placeholder(16353).QuestDockGestureContext);
+  const context = react.useContext(placeholder(16476).QuestDockGestureContext);
   const items = [placeholder];
   ({ questDockWrapperSpecs, activeQuestDockMode } = context);
   const memo = react.useMemo(() => {

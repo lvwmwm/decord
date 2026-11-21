@@ -1,24 +1,24 @@
-// Module ID: 17792
-// Function ID: 17793
+// Module ID: 17918
+// Function ID: 17919
 // Name: CheckpointGuildsBarEntrypoint
-// Dependencies: [5, 19, 17, 17737, 5850, 4640, 17734, 21, 1653, 1706, 4794, 575, 17758, 5385, 1112, 3341, 5358, 17746, 12375, 17793, 4970, 17795, 8967, 5349, 9996, 2]
+// Dependencies: [5, 19, 17, 17863, 5969, 4759, 17860, 21, 1653, 1706, 4913, 575, 17884, 5504, 1112, 3440, 5477, 17872, 12497, 17919, 5089, 17921, 9087, 5468, 10116, 2]
 
-// Module 17792 (CheckpointGuildsBarEntrypoint)
+// Module 17918 (CheckpointGuildsBarEntrypoint)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
-import _modDef3341 from "module_3341" /* 3341 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4640 */;
-import Text_Text from "Text/Text" /* 5385 */;
-import CheckpointConstants from "CheckpointConstants" /* 5850 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 17734 */;
-import HomeDrawerShared from "HomeDrawerShared" /* 17758 */;
-import AssetRegistryDefault from "AssetRegistry" /* 17795 */;
+import _modDef3440 from "module_3440" /* 3440 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4759 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import CheckpointConstants from "CheckpointConstants" /* 5969 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 17860 */;
+import HomeDrawerShared from "HomeDrawerShared" /* 17884 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17921 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 17737 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 17863 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4794 */;
+import createStyles from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -34,7 +34,7 @@ function ExpandedChildren() {
   let obj2;
   const obj = { title: unpackModuleId(Text, obj2), subtitle: null };
   const HomeDrawerSharedItem = HomeDrawerShared.HomeDrawerSharedItem;
-  obj2 = { variant: "body-md/medium", color: "text-default", children: intl.string(_modDef3341["8hclXY"]) };
+  obj2 = { variant: "body-md/medium", color: "text-default", children: intl.string(_modDef3440["8hclXY"]) };
   Text = Text_Text.Text;
   intl = intl4.intl;
   return unpackModuleId(HomeDrawerSharedItem, obj);
@@ -210,8 +210,8 @@ const memoResult = react.memo(function CheckpointGuildsBarEntrypoint(markAsDismi
     let intl2;
     let intl3;
     const obj = {
-      title: intl.string(_modDef3341.tgYaeZ),
-      description: intl2.string(_modDef3341.BFc4lY),
+      title: intl.string(_modDef3440.tgYaeZ),
+      description: intl2.string(_modDef3440.BFc4lY),
       visible: !isModalOpen,
       position: "bottom",
       offsetY: 24,
@@ -219,7 +219,7 @@ const memoResult = react.memo(function CheckpointGuildsBarEntrypoint(markAsDismi
       onDismiss() {
         return markAsDismissed(constants.USER_DISMISS);
       },
-      buttonLabel: intl3.string(_modDef3341.UjtEWE),
+      buttonLabel: intl3.string(_modDef3440.UjtEWE),
       buttonVariant: "primary",
       onButtonPress
     };

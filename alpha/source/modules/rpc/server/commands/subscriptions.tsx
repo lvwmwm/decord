@@ -1,11 +1,11 @@
-// Module ID: 15600
-// Function ID: 15601
+// Module ID: 15723
+// Function ID: 15724
 // Name: subscriptions
-// Dependencies: [5, 1071, 12, 6790, 6792, 1255, 15601, 2]
+// Dependencies: [5, 1071, 12, 6909, 6911, 1255, 15724, 2]
 
-// Module 15600 (subscriptions)
+// Module 15723 (subscriptions)
 import _modDef12 from "module_12" /* 12 */;
-import RPCErrorDefault from "RPCError" /* 6790 */;
+import RPCErrorDefault from "RPCError" /* 6909 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;

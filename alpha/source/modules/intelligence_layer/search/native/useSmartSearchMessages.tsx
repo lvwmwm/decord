@@ -1,15 +1,15 @@
-// Module ID: 18696
-// Function ID: 18697
+// Module ID: 18823
+// Function ID: 18824
 // Name: useSmartSearchMessages
-// Dependencies: [19, 13078, 8456, 13080, 18596, 13117, 504, 13082, 2]
+// Dependencies: [19, 13200, 8576, 13202, 18723, 13239, 504, 13204, 2]
 // Exports: useSmartSearchMessages
 
-// Module 18696 (useSmartSearchMessages)
-import SearchConstants from "SearchConstants" /* 8456 */;
-import SmartSearchUtils from "SmartSearchUtils" /* 13080 */;
-import SmartSearchTypes from "SmartSearchTypes" /* 13082 */;
+// Module 18823 (useSmartSearchMessages)
+import SearchConstants from "SearchConstants" /* 8576 */;
+import SmartSearchUtils from "SmartSearchUtils" /* 13202 */;
+import SmartSearchTypes from "SmartSearchTypes" /* 13204 */;
 import react from "react" /* 19 */;
-import SuggestedSearchStore from "SuggestedSearchStore" /* 13078 */;
+import SuggestedSearchStore from "SuggestedSearchStore" /* 13200 */;
 import size from "module_2" /* 2 */;
 
 const SearchListItemTypes = SearchConstants.SearchListItemTypes;
@@ -60,7 +60,7 @@ export function useSmartSearchMessages(searchContext) {
             const tmp5 = smartSearchStatus;
             const tmp6 = require;
             if (smartSearchStatus !== SmartSearchTypes.SmartSearchStatus.NOT_QUALIFIED) {
-              const tmp6Result = tmp6(13080);
+              const tmp6Result = tmp6(13202);
               if (!tmp6Result.isSmartSearchEmptyOrErrored(tmp5)) {
                 const element = { type: SearchListItemTypes.SMART_SEARCH, props: obj };
                 tmp2 = element;

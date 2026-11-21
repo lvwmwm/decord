@@ -1,9 +1,9 @@
-// Module ID: 10614
-// Function ID: 10615
+// Module ID: 10734
+// Function ID: 10735
 // Name: VideoRendererNativeComponent
 // Dependencies: [106, 65, 2]
 
-// Module 10614 (VideoRendererNativeComponent)
+// Module 10734 (VideoRendererNativeComponent)
 import DynamicallyInjectedByGestureHandler from "DynamicallyInjectedByGestureHandler" /* 106 */;
 import module_65 from "module_65" /* 65 */;
 import size from "module_2" /* 2 */;

@@ -1,11 +1,11 @@
-// Module ID: 10722
-// Function ID: 10723
+// Module ID: 10842
+// Function ID: 10843
 // Name: ModeratorOverlayState
-// Dependencies: [1257, 1262, 4709, 2]
+// Dependencies: [1257, 1262, 4828, 2]
 // Exports: useModeratorOverlayChannelState
 
-// Module 10722 (ModeratorOverlayState)
-import _slicedToArray from "_slicedToArray" /* 4709 */;
+// Module 10842 (ModeratorOverlayState)
+import _slicedToArray from "_slicedToArray" /* 4828 */;
 import module_1257 from "module_1257" /* 1257 */;
 import size from "module_2" /* 2 */;
 

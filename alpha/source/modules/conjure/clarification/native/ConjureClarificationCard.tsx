@@ -1,18 +1,18 @@
-// Module ID: 18458
-// Function ID: 18459
+// Module ID: 18585
+// Function ID: 18586
 // Name: ConjureClarificationCard
-// Dependencies: [32, 19, 17, 21, 4794, 575, 1112, 4091, 18459, 18460, 18461, 18295, 7101, 18176, 5385, 7471, 7031, 18462, 7228, 7215, 6927, 18465, 18468, 5392, 2]
+// Dependencies: [32, 19, 17, 21, 4913, 575, 1112, 4190, 18586, 18587, 18588, 18422, 7221, 18303, 5504, 7591, 7151, 18589, 7348, 7335, 7047, 18592, 18595, 5511, 2]
 // Exports: default
 
-// Module 18458 (ConjureClarificationCard)
+// Module 18585 (ConjureClarificationCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ConjureClarification from "ConjureClarification" /* 18295 */;
-import ConjureImageOptions from "ConjureImageOptions" /* 18460 */;
+import ConjureClarification from "ConjureClarification" /* 18422 */;
+import ConjureImageOptions from "ConjureImageOptions" /* 18587 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -78,7 +78,7 @@ export default function ConjureClarificationCard(projectId) {
   let tmp69;
   let tmp70;
   let tmp8;
-  const f114825 = () => {
+  const f115228 = () => {
     const questions = clarification.questions;
     return Object.fromEntries(questions.flatMap((default_entities) => {
       let items2;
@@ -121,8 +121,8 @@ export default function ConjureClarificationCard(projectId) {
   [tmp6, c7] = tmp5;
   let tmp7 = _slicedToArray(react.useState({}), 2);
   [tmp8, c8] = tmp7;
-  [tmp10, c9] = _slicedToArray(react.useState(f114825), 2);
-  const tmp9 = _slicedToArray(react.useState(f114825), 2);
+  [tmp10, c9] = _slicedToArray(react.useState(f115228), 2);
+  const tmp9 = _slicedToArray(react.useState(f115228), 2);
   [first1, closure_10] = react.useState({});
   const tmp15 = clarification(onSubmit[8])(projectId, clarification, tmp10);
   const builds = tmp15.builds;
@@ -165,7 +165,7 @@ export default function ConjureClarificationCard(projectId) {
       const result = obj.followingClarificationStep(clarification, arg0, bound);
       const tmp3 = require;
       if (null == result) {
-        const tmp3Result = tmp3(18295);
+        const tmp3Result = tmp3(18422);
         result1 = tmp3Result.submitClarificationAnswers(projectId, tmp5, arg0, builds, tmp);
       } else {
         closure_12(result);

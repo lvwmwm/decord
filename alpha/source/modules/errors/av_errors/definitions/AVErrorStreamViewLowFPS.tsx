@@ -1,19 +1,19 @@
-// Module ID: 19984
-// Function ID: 19985
+// Module ID: 20111
+// Function ID: 20112
 // Name: AVErrorStreamViewLowFPS
-// Dependencies: [6501, 6281, 502, 6277, 1071, 19985, 6282, 5717, 5724, 19982, 2]
+// Dependencies: [6620, 6400, 502, 6396, 1071, 20112, 6401, 5836, 5843, 20109, 2]
 
-// Module 19984 (AVErrorStreamViewLowFPS)
+// Module 20111 (AVErrorStreamViewLowFPS)
 import Constants from "Constants" /* 1071 */;
-import StreamQualityUtils from "StreamQualityUtils" /* 5717 */;
-import AVError from "AVError" /* 5724 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6282 */;
-import AVErrorContext from "AVErrorContext" /* 19982 */;
-import AVErrorUtils from "AVErrorUtils" /* 19985 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6501 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6281 */;
+import StreamQualityUtils from "StreamQualityUtils" /* 5836 */;
+import AVError from "AVError" /* 5843 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6401 */;
+import AVErrorContext from "AVErrorContext" /* 20109 */;
+import AVErrorUtils from "AVErrorUtils" /* 20112 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6620 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6400 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 6277 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 6396 */;
 import size from "module_2" /* 2 */;
 
 let getParticipant, getRTCConnection;

@@ -1,16 +1,16 @@
-// Module ID: 12970
-// Function ID: 12971
+// Module ID: 13092
+// Function ID: 13093
 // Name: PollCreationInputError
-// Dependencies: [19, 17, 21, 4794, 575, 4803, 1186, 5385, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 4922, 1186, 5504, 2]
 // Exports: default
 
-// Module 12970 (PollCreationInputError)
+// Module 13092 (PollCreationInputError)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4803 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4922 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4794 */;
+import createStyles from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;
@@ -37,6 +37,6 @@ export default function PollCreationInputError(message) {
   }, items);
   size = { width: 16, height: 16, style: tmp.icon };
   const obj = { style: tmp.container, children: items1 };
-  items1 = [closure_4(message(1186).WarningCircle, size), closure_4(message(5385).Text, { variant: "body-xs/medium", color: "text-feedback-critical", children: message })];
+  items1 = [closure_4(message(1186).WarningCircle, size), closure_4(message(5504).Text, { variant: "body-xs/medium", color: "text-feedback-critical", children: message })];
   return closure_5(View, obj);
 };

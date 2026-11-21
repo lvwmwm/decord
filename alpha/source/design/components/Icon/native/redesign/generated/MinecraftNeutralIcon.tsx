@@ -1,16 +1,16 @@
-// Module ID: 9674
-// Function ID: 9675
+// Module ID: 9794
+// Function ID: 9795
 // Name: MinecraftNeutralIcon
-// Dependencies: [19, 17, 21, 575, 5480, 9675, 9676, 9677, 2]
+// Dependencies: [19, 17, 21, 575, 5599, 9795, 9796, 9797, 2]
 // Exports: MinecraftNeutralIcon
 
-// Module 9674 (MinecraftNeutralIcon)
+// Module 9794 (MinecraftNeutralIcon)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage4 from "BaseIconImage" /* 5480 */;
-import AssetRegistry from "AssetRegistry" /* 9675 */;
-import AssetRegistry2 from "AssetRegistry" /* 9676 */;
-import AssetRegistry3 from "AssetRegistry" /* 9677 */;
+import BaseIconImage4 from "BaseIconImage" /* 5599 */;
+import AssetRegistry from "AssetRegistry" /* 9795 */;
+import AssetRegistry2 from "AssetRegistry" /* 9796 */;
+import AssetRegistry3 from "AssetRegistry" /* 9797 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

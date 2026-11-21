@@ -1,14 +1,14 @@
-// Module ID: 11995
-// Function ID: 11996
+// Module ID: 12115
+// Function ID: 12116
 // Name: TopicsIcon
-// Dependencies: [19, 21, 575, 5480, 11996, 2]
+// Dependencies: [19, 21, 575, 5599, 12116, 2]
 // Exports: TopicsIcon
 
-// Module 11995 (TopicsIcon)
+// Module 12115 (TopicsIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5480 */;
-import AssetRegistry from "AssetRegistry" /* 11996 */;
+import BaseIconImage2 from "BaseIconImage" /* 5599 */;
+import AssetRegistry from "AssetRegistry" /* 12116 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

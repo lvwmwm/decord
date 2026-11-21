@@ -1,14 +1,14 @@
-// Module ID: 8080
-// Function ID: 8081
+// Module ID: 8200
+// Function ID: 8201
 // Name: UserProfileOverscrollBanner
-// Dependencies: [19, 17, 21, 1653, 8081, 8082, 1378, 2]
+// Dependencies: [19, 17, 21, 1653, 8201, 8202, 1378, 2]
 // Exports: default
 
-// Module 8080 (UserProfileOverscrollBanner)
+// Module 8200 (UserProfileOverscrollBanner)
 import react_native from "react-native" /* 17 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
-import VisualEffectViewThemedDefault from "VisualEffectViewThemed" /* 8081 */;
-import UserProfileBannerDefault from "UserProfileBanner" /* 8082 */;
+import VisualEffectViewThemedDefault from "VisualEffectViewThemed" /* 8201 */;
+import UserProfileBannerDefault from "UserProfileBanner" /* 8202 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import module_1653 from "module_1653" /* 1653 */;

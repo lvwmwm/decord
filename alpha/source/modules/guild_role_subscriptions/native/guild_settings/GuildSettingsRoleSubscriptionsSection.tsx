@@ -1,20 +1,20 @@
-// Module ID: 19576
-// Function ID: 19577
+// Module ID: 19703
+// Function ID: 19704
 // Name: GuildSettingsRoleSubscriptionsSection
-// Dependencies: [19, 4661, 1386, 1071, 21, 504, 7228, 1112, 6925, 5498, 11545, 19577, 16665, 6761, 2]
+// Dependencies: [19, 4780, 1386, 1071, 21, 504, 7348, 1112, 7045, 5617, 11665, 19704, 16788, 6880, 2]
 // Exports: default
 
-// Module 19576 (GuildSettingsRoleSubscriptionsSection)
+// Module 19703 (GuildSettingsRoleSubscriptionsSection)
 import get_initialized from "get initialized" /* 504 */;
 import intl6 from "intl" /* 1112 */;
-import GuildRecord from "GuildRecord" /* 4661 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 5498 */;
-import GuildRoleSubscriptionSettingUtils from "GuildRoleSubscriptionSettingUtils" /* 6761 */;
-import TableRow5 from "TableRow" /* 6925 */;
-import TableRowGroup2 from "TableRowGroup" /* 7228 */;
-import TagsIcon from "TagsIcon" /* 11545 */;
-import EmojiMoneyMouthFaceIcon from "EmojiMoneyMouthFaceIcon" /* 16665 */;
-import WalletIcon from "WalletIcon" /* 19577 */;
+import GuildRecord from "GuildRecord" /* 4780 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5617 */;
+import GuildRoleSubscriptionSettingUtils from "GuildRoleSubscriptionSettingUtils" /* 6880 */;
+import TableRow5 from "TableRow" /* 7045 */;
+import TableRowGroup2 from "TableRowGroup" /* 7348 */;
+import TagsIcon from "TagsIcon" /* 11665 */;
+import EmojiMoneyMouthFaceIcon from "EmojiMoneyMouthFaceIcon" /* 16788 */;
+import WalletIcon from "WalletIcon" /* 19704 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1386 */;
 import Constants from "Constants" /* 1071 */;
@@ -85,10 +85,10 @@ function HasCreatedListingsSection(arg0) {
           return dependencyMap(hasOwnProperty.ROLE_SUBSCRIPTIONS_PAYMENTS, obj);
         }
     };
-    const TableRow3 = tmp(6925).TableRow;
+    const TableRow3 = tmp(7045).TableRow;
     intl4 = tmp(1112).intl;
     obj8 = { IconComponent: WalletIcon.WalletIcon };
-    Icon3 = tmp(6925).TableRow.Icon;
+    Icon3 = tmp(7045).TableRow.Icon;
     stateFromStores = tmp5(TableRow3, obj7, "guild-role-subscriptions-payments");
   }
   items1[2] = stateFromStores;
@@ -100,10 +100,10 @@ function HasCreatedListingsSection(arg0) {
       return dependencyMap(hasOwnProperty.ROLE_SUBSCRIPTIONS_EMOJIS);
     }
   };
-  const TableRow4 = tmp(6925).TableRow;
+  const TableRow4 = tmp(7045).TableRow;
   intl5 = tmp(1112).intl;
   obj10 = { IconComponent: EmojiMoneyMouthFaceIcon.EmojiMoneyMouthFaceIcon };
-  Icon4 = tmp(6925).TableRow.Icon;
+  Icon4 = tmp(7045).TableRow.Icon;
   items1[3] = closure_6(TableRow4, obj9, "guild-role-subscriptions-emojis");
   return tmp4(TableRowGroup, obj2);
 }

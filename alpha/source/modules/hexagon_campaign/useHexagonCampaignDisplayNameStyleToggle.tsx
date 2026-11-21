@@ -1,17 +1,17 @@
-// Module ID: 15754
-// Function ID: 15755
+// Module ID: 15877
+// Function ID: 15878
 // Name: useHexagonCampaignDisplayNameStyleToggle
-// Dependencies: [5, 32, 19, 1386, 4819, 8011, 6223, 4822, 5355, 8789, 15730, 2]
+// Dependencies: [5, 32, 19, 1386, 4938, 8131, 6342, 4941, 5474, 8909, 15853, 2]
 // Exports: useHexagonCampaignDisplayNameStyleToggle
 
-// Module 15754 (useHexagonCampaignDisplayNameStyleToggle)
-import useDisplayNameStylesDefault from "useDisplayNameStyles" /* 6223 */;
-import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8789 */;
+// Module 15877 (useHexagonCampaignDisplayNameStyleToggle)
+import useDisplayNameStylesDefault from "useDisplayNameStyles" /* 6342 */;
+import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8909 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1386 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4819 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4938 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -35,14 +35,14 @@ export function useHexagonCampaignDisplayNameStyleToggle(user, showEnrollmentErr
   const tmp3 = useDisplayNameStylesDefault(obj2);
   let result = null != tmp3;
   if (result) {
-    const tmpResult = tmp(4822);
+    const tmpResult = tmp(4941);
     result = tmpResult.isHexagonCampaignDisplayNameStyle(tmp3);
   }
   let tmp5 = _slicedToArray(react.useState(false), 2);
   [tmp6, importDefault] = tmp5;
   dependencyMap = react.useRef(false);
   _asyncToGenerator = react.useRef(true);
-  const tmpResult2 = tmp(5355);
+  const tmpResult2 = tmp(5474);
   const unmountEffect = tmpResult2.useUnmountEffect(() => {
     closure_3.current = false;
   });
@@ -162,7 +162,7 @@ export function useHexagonCampaignDisplayNameStyleToggle(user, showEnrollmentErr
       const tmp5 = require;
       if (null != displayNameStyles) {
         tmp8 = null;
-        const tmp5Result = tmp5(4822);
+        const tmp5Result = tmp5(4941);
         if (!tmp5Result.isHexagonCampaignDisplayNameStyle(displayNameStyles)) {
           tmp8 = displayNameStyles;
         }

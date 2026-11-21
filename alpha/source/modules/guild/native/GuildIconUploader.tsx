@@ -1,22 +1,22 @@
-// Module ID: 12089
-// Function ID: 12090
+// Module ID: 12211
+// Function ID: 12212
 // Name: GuildIconUploader
-// Dependencies: [19, 17, 1191, 21, 4794, 575, 4855, 5481, 4801, 12090, 12091, 5385, 1112, 12092, 12093, 6910, 2]
+// Dependencies: [19, 17, 1191, 21, 4913, 575, 4974, 5600, 4920, 12212, 12213, 5504, 1112, 12214, 12215, 7030, 2]
 
-// Module 12089 (GuildIconUploader)
+// Module 12211 (GuildIconUploader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
-import shared from "shared" /* 4801 */;
-import native from "native" /* 4855 */;
-import FastImageDefault from "FastImage" /* 5481 */;
-import Pressables from "Pressables" /* 6910 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12092 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 12093 */;
+import shared from "shared" /* 4920 */;
+import native from "native" /* 4974 */;
+import FastImageDefault from "FastImage" /* 5600 */;
+import Pressables from "Pressables" /* 7030 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12214 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 12215 */;
 import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1191 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4794 */;
+import createStyles from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -61,14 +61,14 @@ class GuildIconUploader extends PureComponent {
       const tmp7 = metroRequire;
       const tmp8 = View;
       if (obj6.isThemeDark(ThemeStore.theme)) {
-        tmp10Result = tmp10(12090);
+        tmp10Result = tmp10(12212);
       } else {
-        tmp10Result = tmp10(12091);
+        tmp10Result = tmp10(12213);
       }
       const obj = { source: tmp10Result };
       items2 = [hasOwnProperty(tmp12, obj), ];
       const obj5 = { style: tmp.emptyGuildIconText, variant: "body-xs/semibold", color: "text-default", children: str.toUpperCase() };
-      const Text = tmp13(5385).Text;
+      const Text = tmp13(5504).Text;
       const intl = tmp13(1112).intl;
       str = intl.string(intl3.t["3UB9ad"]);
       items2[1] = hasOwnProperty(Text, obj5);

@@ -1,26 +1,26 @@
-// Module ID: 8128
-// Function ID: 8129
+// Module ID: 8248
+// Function ID: 8249
 // Name: ComponentStateContext
-// Dependencies: [32, 19, 8129, 4727, 4643, 4706, 6412, 1386, 11779, 21, 2117, 5857, 5855, 5854, 504, 8594, 6774, 14290, 10510, 572, 5355, 5849, 2]
+// Dependencies: [32, 19, 8249, 4846, 4762, 4825, 6531, 1386, 11899, 21, 2117, 5976, 5974, 5973, 504, 8714, 6893, 14412, 10630, 572, 5474, 5968, 2]
 // Exports: ComponentStateContextProvider, useComponentContainerId, useComponentError, useComponentState, useComponentStateContext
 
-// Module 8128 (ComponentStateContext)
+// Module 8248 (ComponentStateContext)
 import Fragment from "Fragment" /* 21 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Server from "Server" /* 2117 */;
-import useMountEffectDefault from "useMountEffect" /* 5355 */;
-import InteractionTypes from "InteractionTypes" /* 5854 */;
-import InteractionComponentTypes from "InteractionComponentTypes" /* 5857 */;
-import InteractionUtils from "InteractionUtils" /* 10510 */;
+import useMountEffectDefault from "useMountEffect" /* 5474 */;
+import InteractionTypes from "InteractionTypes" /* 5973 */;
+import InteractionComponentTypes from "InteractionComponentTypes" /* 5976 */;
+import InteractionUtils from "InteractionUtils" /* 10630 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import InteractionStore from "InteractionStore" /* 8129 */;
-import LurkingStore from "LurkingStore" /* 4727 */;
-import ChannelStore from "ChannelStore" /* 4643 */;
-import GuildMemberStore from "GuildMemberStore" /* 4706 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 6412 */;
+import InteractionStore from "InteractionStore" /* 8249 */;
+import LurkingStore from "LurkingStore" /* 4846 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import GuildMemberStore from "GuildMemberStore" /* 4825 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 6531 */;
 import UserStore from "UserStore" /* 1386 */;
-import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 11779 */;
+import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 11899 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -55,23 +55,23 @@ function getActionComponentState(interaction, id, shouldDisableInteractiveCompon
   }
   let DISABLED = InteractionComponentTypes.ActionComponentState.NORMAL;
   let DISABLED2 = DISABLED;
-  const tmp3 = null != interaction && interaction.state !== tmp(5855).InteractionState.FAILED;
+  const tmp3 = null != interaction && interaction.state !== tmp(5974).InteractionState.FAILED;
   if (tmp3) {
     if (interaction.data.interactionType === InteractionTypes.InteractionTypes.MESSAGE_COMPONENT) {
       if (interaction.data.componentId === id.id) {
-        DISABLED = tmp(5857).ActionComponentState.LOADING;
+        DISABLED = tmp(5976).ActionComponentState.LOADING;
       }
       DISABLED2 = DISABLED;
     }
     if (isInteractionComponent(id)) {
-      DISABLED = tmp(5857).ActionComponentState.DISABLED;
+      DISABLED = tmp(5976).ActionComponentState.DISABLED;
     }
   }
   if (flag) {
     flag = isInteractionComponent(id);
   }
   if (flag) {
-    DISABLED2 = tmp(5857).ActionComponentState.DISABLED;
+    DISABLED2 = tmp(5976).ActionComponentState.DISABLED;
   }
   return DISABLED2;
 }
@@ -132,16 +132,16 @@ function useShouldDisableInteractiveComponents(channel_id) {
     return flag;
   });
   let guild_id;
-  const useCurrentUserCommunicationDisabled = channel(8594).useCurrentUserCommunicationDisabled;
-  channel(8594);
+  const useCurrentUserCommunicationDisabled = channel(8714).useCurrentUserCommunicationDisabled;
+  channel(8714);
   if (channel != null) {
     guild_id = channel.guild_id;
   }
   const tmp8 = _slicedToArray(useCurrentUserCommunicationDisabled(guild_id), 2)[1];
-  const tmpResult = tmp(6774);
+  const tmpResult = tmp(6893);
   const isThreadModerator = tmpResult.useIsThreadModerator(channel);
   let tmp11 = !stateFromStores;
-  const tmpResult2 = tmp(6774);
+  const tmpResult2 = tmp(6893);
   const canUnarchiveThread = tmpResult2.useCanUnarchiveThread(channel);
   if (stateFromStores) {
     tmp11 = stateFromStores1;
@@ -365,7 +365,7 @@ function useComponentStateForModal(customId, id, arg2) {
   if (stateFromStores == null) {
     stateFromStores = null;
   }
-  const obj3 = { state: stateFromStores, executeStateUpdate: callback1, isDisabled: false, visualState: tmp(5857).ActionComponentState.NORMAL, error: tmp8 };
+  const obj3 = { state: stateFromStores, executeStateUpdate: callback1, isDisabled: false, visualState: tmp(5976).ActionComponentState.NORMAL, error: tmp8 };
   return obj3;
 }
 const jsx = Fragment.jsx;

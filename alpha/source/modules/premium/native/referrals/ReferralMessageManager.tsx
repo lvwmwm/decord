@@ -1,20 +1,20 @@
-// Module ID: 19978
-// Function ID: 19979
+// Module ID: 20105
+// Function ID: 20106
 // Name: ReferralMessageManager
-// Dependencies: [2177, 8727, 1087, 11, 8744, 7364, 19448, 2]
+// Dependencies: [2178, 8847, 1087, 11, 8864, 7484, 19575, 2]
 
-// Module 19978 (ReferralMessageManager)
+// Module 20105 (ReferralMessageManager)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import MessageTypes from "MessageTypes" /* 1087 */;
-import setupLoadFromMessageManagerHandlersDefault from "setupLoadFromMessageManagerHandlers" /* 19448 */;
-import SubscriptionStore from "SubscriptionStore" /* 2177 */;
-import UserOfferStore from "UserOfferStore" /* 8727 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7364 */;
+import setupLoadFromMessageManagerHandlersDefault from "setupLoadFromMessageManagerHandlers" /* 19575 */;
+import SubscriptionStore from "SubscriptionStore" /* 2178 */;
+import UserOfferStore from "UserOfferStore" /* 8847 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7484 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
 let tmp3;
-const UserOfferActionCreators = tmp(8744);
+const UserOfferActionCreators = tmp(8864);
 function handleReferralMessages(type) {
   if (type.type === MessageTypes.MessageTypes.PREMIUM_REFERRAL) {
     if (null != type.content) {

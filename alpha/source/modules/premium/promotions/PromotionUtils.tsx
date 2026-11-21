@@ -1,22 +1,22 @@
-// Module ID: 9281
-// Function ID: 9282
+// Module ID: 9401
+// Function ID: 9402
 // Name: PromotionUtils
-// Dependencies: [5, 1230, 9024, 9023, 1388, 1071, 4801, 1284, 1378, 1255, 1404, 4627, 11, 4628, 9072, 2]
+// Dependencies: [5, 1230, 9144, 9143, 1388, 1071, 4920, 1284, 1378, 1255, 1404, 4746, 11, 4747, 9192, 2]
 // Exports: claimOutboundPromotion, getClaimedEndedOutboundPromotions, getClaimedOutboundPromotionCodeMap, getNextUnseenOutboundPromotionId, getOutboundPromotionRedemptionUrl, getPromotionImageURL, isDedicatedSurfacePromotion, isRecurringPromotion, shouldShowOutboundPromotionNotice, shouldShowOutboundPromotionOnPlatform
 
-// Module 9281 (PromotionUtils)
+// Module 9401 (PromotionUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
 import PremiumConstants from "PremiumConstants" /* 1388 */;
 import FlagUtils from "FlagUtils" /* 1404 */;
-import dismissible_content from "dismissible_content" /* 4627 */;
-import DismissibleContentUtils from "DismissibleContentUtils" /* 4628 */;
-import shared from "shared" /* 4801 */;
-import promotions_constants from "promotions/constants" /* 9072 */;
+import dismissible_content from "dismissible_content" /* 4746 */;
+import DismissibleContentUtils from "DismissibleContentUtils" /* 4747 */;
+import shared from "shared" /* 4920 */;
+import promotions_constants from "promotions/constants" /* 9192 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1230 */;
-import PromotionRecord from "PromotionRecord" /* 9024 */;
-import PromotionsStore from "PromotionsStore" /* 9023 */;
+import PromotionRecord from "PromotionRecord" /* 9144 */;
+import PromotionsStore from "PromotionsStore" /* 9143 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ let closure_4, location_stack, name, partner, promotion_id, set;
 let c10;
 let c9;
 let metroImportAll;
-const f94695 = (startDate, startDate2) => {
+const f95081 = (startDate, startDate2) => {
   let num = 1;
   const date = new Date(startDate.startDate);
   const date1 = new Date(startDate2.startDate);
@@ -221,7 +221,7 @@ export function getNextUnseenOutboundPromotionId() {
   }
   let id = null;
   if (0 !== found1.length) {
-    id = found1.sort(f94695)[0].id;
+    id = found1.sort(f95081)[0].id;
   }
   return id;
 }
@@ -262,7 +262,7 @@ export function shouldShowOutboundPromotionNotice() {
   }
   let id = null;
   if (0 !== found1.length) {
-    id = found1.sort(f94695)[0].id;
+    id = found1.sort(f95081)[0].id;
   }
   let tmp6 = null != id;
   if (tmp6) {

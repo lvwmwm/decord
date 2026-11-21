@@ -1,31 +1,31 @@
-// Module ID: 17887
-// Function ID: 17888
+// Module ID: 18013
+// Function ID: 18014
 // Name: VoicePanelDockControls
-// Dependencies: [19, 17, 4643, 2131, 6376, 11648, 1071, 21, 4794, 575, 504, 10889, 10865, 5358, 5010, 7471, 1112, 9562, 10890, 6410, 8495, 13298, 11629, 17884, 17888, 17908, 17911, 2]
+// Dependencies: [19, 17, 4762, 2131, 6495, 11768, 1071, 21, 4913, 575, 504, 11009, 10985, 5477, 5129, 7591, 1112, 9682, 11010, 6529, 8615, 13420, 11749, 18010, 18014, 18034, 18037, 2]
 
-// Module 17887 (VoicePanelDockControls)
+// Module 18013 (VoicePanelDockControls)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import native from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
-import HapticUtils from "HapticUtils" /* 5010 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6410 */;
-import IconButton2 from "IconButton" /* 7471 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8495 */;
-import VoiceActionUtils from "VoiceActionUtils" /* 10889 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11629 */;
-import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11648 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13298 */;
-import useDockBoxShadowDefault from "useDockBoxShadow" /* 17884 */;
-import useSoundboardConfig from "useSoundboardConfig" /* 17888 */;
-import VoicePanelDockButtonRimDefault from "VoicePanelDockButtonRim" /* 17911 */;
+import HapticUtils from "HapticUtils" /* 5129 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6529 */;
+import IconButton2 from "IconButton" /* 7591 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8615 */;
+import VoiceActionUtils from "VoiceActionUtils" /* 11009 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11749 */;
+import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11768 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13420 */;
+import useDockBoxShadowDefault from "useDockBoxShadow" /* 18010 */;
+import useSoundboardConfig from "useSoundboardConfig" /* 18014 */;
+import VoicePanelDockButtonRimDefault from "VoicePanelDockButtonRim" /* 18037 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4643 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
 import MediaEngineStore from "MediaEngineStore" /* 2131 */;
-import VoicePanelStore from "VoicePanelStore" /* 6376 */;
+import VoicePanelStore from "VoicePanelStore" /* 6495 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4794 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const nativeDefault = native;
@@ -60,7 +60,7 @@ function DockMuteButton(channelId) {
     if (!tmp4) {
       const triggerHapticFeedback = HapticUtils.triggerHapticFeedback;
       HapticUtils;
-      const HapticFeedbackTypes = tmp2(5010).HapticFeedbackTypes;
+      const HapticFeedbackTypes = tmp2(5129).HapticFeedbackTypes;
       const result = triggerHapticFeedback(mute ? HapticFeedbackTypes.TOGGLE_ON : HapticFeedbackTypes.TOGGLE_OFF);
     }
     onPress();
@@ -95,7 +95,7 @@ function DockHangUpButton(channelId) {
     state.closeChannel(channelId);
   }, items);
   let obj = { accessibilityLabel: intl.string(channelId(1112).t["6vrfgt"]), variant: "critical-primary", size: "sm", icon: AssetRegistryDefault, onPress: callback };
-  const IconButton = channelId(7471).IconButton;
+  const IconButton = channelId(7591).IconButton;
   intl = channelId(1112).intl;
   return closure_9(IconButton, obj);
 }
@@ -140,7 +140,7 @@ const memoResult = react.memo(function VoicePanelDockControls(measureGlowOffset)
   const tmp8 = authStore;
   if (obj.useStateFromStores(items, () => mode.getMode() === constants.PUSH_TO_TALK)) {
     const obj3 = { measureGlowOffset };
-    tmp10Result = tmp10(tmp2(17908), obj3);
+    tmp10Result = tmp10(tmp2(18034), obj3);
     tmp14 = tmp10;
   } else {
     const obj4 = { measureGlowOffset, hideWhilePressed: true, style: items1, children: React4(DockMuteButton, obj6) };

@@ -1,14 +1,14 @@
-// Module ID: 12347
-// Function ID: 12348
+// Module ID: 12469
+// Function ID: 12470
 // Name: PiggyBankIcon
-// Dependencies: [19, 21, 575, 5480, 12348, 2]
+// Dependencies: [19, 21, 575, 5599, 12470, 2]
 // Exports: PiggyBankIcon
 
-// Module 12347 (PiggyBankIcon)
+// Module 12469 (PiggyBankIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5480 */;
-import AssetRegistry from "AssetRegistry" /* 12348 */;
+import BaseIconImage2 from "BaseIconImage" /* 5599 */;
+import AssetRegistry from "AssetRegistry" /* 12470 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

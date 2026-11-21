@@ -1,12 +1,12 @@
-// Module ID: 12191
-// Function ID: 12192
+// Module ID: 12313
+// Function ID: 12314
 // Name: conjurePublishFailureMessage
-// Dependencies: [1112, 4091, 2]
+// Dependencies: [1112, 4190, 2]
 // Exports: default
 
-// Module 12191 (conjurePublishFailureMessage)
+// Module 12313 (conjurePublishFailureMessage)
 import intl3 from "intl" /* 1112 */;
-import _modDef4091 from "module_4091" /* 4091 */;
+import _modDef4190 from "module_4190" /* 4190 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/publish/conjurePublishFailureMessage.tsx");
@@ -20,10 +20,10 @@ export default function conjurePublishFailureMessage(detail) {
     let stringResult;
     if (20088 === detail.code) {
       const intl2 = intl3.intl;
-      stringResult = intl2.string(_modDef4091.UXEDPw);
+      stringResult = intl2.string(_modDef4190.UXEDPw);
     } else {
       const intl = intl3.intl;
-      stringResult = intl.string(_modDef4091.gMWZeG);
+      stringResult = intl.string(_modDef4190.gMWZeG);
     }
     trimmed = stringResult;
   }

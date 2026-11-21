@@ -1,15 +1,15 @@
-// Module ID: 9362
-// Function ID: 9363
+// Module ID: 9482
+// Function ID: 9483
 // Name: GiftingBadgesUtils
-// Dependencies: [19, 8017, 1386, 1112, 2821, 9363, 504, 4826, 4627, 7950, 8022, 2]
+// Dependencies: [19, 8137, 1386, 1112, 2920, 9483, 504, 4945, 4746, 8070, 8142, 2]
 // Exports: getGiftingBadgeAccessibilityLabel, getGiftingBadgeProgressPercent, getGiftingBadgeTierIconUrl, useGiftingBadgeCoachmarkVariant
 
-// Module 9362 (GiftingBadgesUtils)
+// Module 9482 (GiftingBadgesUtils)
 import intl2 from "intl" /* 1112 */;
-import _modDef2821 from "module_2821" /* 2821 */;
-import BadgeId from "BadgeId" /* 7950 */;
-import BadgeDirectoryStore2 from "BadgeDirectoryStore" /* 8017 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8022 */;
+import _modDef2920 from "module_2920" /* 2920 */;
+import BadgeId from "BadgeId" /* 8070 */;
+import BadgeDirectoryStore2 from "BadgeDirectoryStore" /* 8137 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8142 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
@@ -31,7 +31,7 @@ export function getGiftingBadgeAccessibilityLabel(name) {
     str = "";
   }
   const intl = intl2.intl;
-  return "" + str + ", " + intl.formatToPlainString(_modDef2821.qvx9E4, { count });
+  return "" + str + ", " + intl.formatToPlainString(_modDef2920.qvx9E4, { count });
 }
 export function getGiftingBadgeProgressPercent(badgeProgress, currentTier, nextTier) {
   let num3;

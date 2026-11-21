@@ -1,22 +1,22 @@
-// Module ID: 10562
-// Function ID: 10563
+// Module ID: 10682
+// Function ID: 10683
 // Name: ApplicationCommandQueryApi
-// Dependencies: [32, 19, 4665, 10316, 5818, 1071, 8194, 10324, 504, 10326, 1254, 2117, 10321, 10397, 5446, 2]
+// Dependencies: [32, 19, 4784, 10436, 5937, 1071, 8314, 10444, 504, 10446, 1254, 2117, 10441, 10517, 5565, 2]
 // Exports: executeQuery, getCachedApplicationSection, getCachedCommand, getCachedResults, getChangeKeys, useAccessibleCommandsForApplication, useCachedResults, useCommand, useCommandsForApplication, useDiscovery, useQuery
 
-// Module 10562 (ApplicationCommandQueryApi)
+// Module 10682 (ApplicationCommandQueryApi)
 import Constants from "Constants" /* 1071 */;
 import Server from "Server" /* 2117 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5446 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5818 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 8194 */;
-import ApplicationCommandQueryTypes from "ApplicationCommandQueryTypes" /* 10324 */;
-import ApplicationCommandBuiltIns from "ApplicationCommandBuiltIns" /* 10326 */;
-import CommandPermissionUtils from "CommandPermissionUtils" /* 10397 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5565 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5937 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 8314 */;
+import ApplicationCommandQueryTypes from "ApplicationCommandQueryTypes" /* 10444 */;
+import ApplicationCommandBuiltIns from "ApplicationCommandBuiltIns" /* 10446 */;
+import CommandPermissionUtils from "CommandPermissionUtils" /* 10517 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4665 */;
-import ApplicationCommandIndexStore_mod from "ApplicationCommandIndexStore" /* 10316 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import ApplicationCommandIndexStore_mod from "ApplicationCommandIndexStore" /* 10436 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

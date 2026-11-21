@@ -1,16 +1,16 @@
-// Module ID: 10890
-// Function ID: 10891
+// Module ID: 11010
+// Function ID: 11011
 // Name: VoicePanelRiveMicButton
-// Dependencies: [19, 17, 21, 4794, 7120, 4943, 9564, 10891, 2]
+// Dependencies: [19, 17, 21, 4913, 7240, 5062, 9684, 11011, 2]
 // Exports: VoicePanelRiveMicButton
 
-// Module 10890 (VoicePanelRiveMicButton)
+// Module 11010 (VoicePanelRiveMicButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import MicrophoneRive2 from "MicrophoneRive" /* 4943 */;
-import IconSize from "IconSize" /* 7120 */;
+import MicrophoneRive2 from "MicrophoneRive" /* 5062 */;
+import IconSize from "IconSize" /* 7240 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4794 */;
+import createStyles from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 const View = react_native.View;
@@ -36,9 +36,9 @@ export function VoicePanelRiveMicButton(arg0) {
     str = "Off";
   }
   if (muted) {
-    let MicrophoneIcon = tmp3(9564).MicrophoneSlashIcon;
+    let MicrophoneIcon = tmp3(9684).MicrophoneSlashIcon;
   } else {
-    MicrophoneIcon = tmp3(10891).MicrophoneIcon;
+    MicrophoneIcon = tmp3(11011).MicrophoneIcon;
   }
   return <tmp2 style={closure_4(size).container}>{null}</tmp2>;
 }

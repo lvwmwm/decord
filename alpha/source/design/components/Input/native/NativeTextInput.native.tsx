@@ -1,12 +1,12 @@
-// Module ID: 7124
-// Function ID: 7125
+// Module ID: 7244
+// Function ID: 7245
 // Name: NativeTextInput
-// Dependencies: [19, 17, 1496, 1071, 21, 7125, 5355, 5024, 7126, 4855, 4959, 2]
+// Dependencies: [19, 17, 1496, 1071, 21, 7245, 5474, 5143, 7246, 4974, 5078, 2]
 // Exports: NativeTextInput, useKeyboardBlurring
 
-// Module 7124 (NativeTextInput)
+// Module 7244 (NativeTextInput)
 import Constants from "Constants" /* 1071 */;
-import useBottomSheetKeyboardHandlingDefault from "useBottomSheetKeyboardHandling" /* 7126 */;
+import useBottomSheetKeyboardHandlingDefault from "useBottomSheetKeyboardHandling" /* 7246 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import subscribeToKeyboardUIStore from "subscribeToKeyboardUIStore" /* 1496 */;
@@ -81,7 +81,7 @@ export const NativeTextInput = function TextInput(ref) {
       setNativeProps(obj);
     }
   }, items1);
-  let obj = ref1(5355);
+  let obj = ref1(5474);
   const mountLayoutEffect = obj.useMountLayoutEffect(() => {
     const current = ref1.current;
     if (current != null) {
@@ -89,7 +89,7 @@ export const NativeTextInput = function TextInput(ref) {
       current.setNativeProps(obj);
     }
   });
-  const obj2 = ref1(5024);
+  const obj2 = ref1(5143);
   const isScreenReaderEnabled = obj2.useIsScreenReaderEnabled();
   const items2 = [ref1];
   const items3 = [isScreenReaderEnabled];
@@ -111,15 +111,15 @@ export const NativeTextInput = function TextInput(ref) {
     }
     return obj;
   }, items3);
-  ref1(4855);
+  ref1(4974);
   if (null == iter.keyboardAppearance) {
-    const tmp6Result = ref1(4959);
+    const tmp6Result = ref1(5078);
     iter.keyboardAppearance = tmp6Result.isThemeDark(tmp12) ? KeyboardThemes.DARK : KeyboardThemes.LIGHT;
   }
   const obj3 = { ref: tmp6Result4.mergeRefs(ref1, ref) };
-  const tmp6Result3 = ref1(4959);
+  const tmp6Result3 = ref1(5078);
   let merged = Object.assign(tmp6Result3.mergeProps(iter, tmp4, { value: "Array", defaultValue: "analyticsLocations" }));
-  tmp6Result4 = ref1(4959);
+  tmp6Result4 = ref1(5078);
   const tmp16 = closure_10(closure_5, obj3);
   let tmp18Result = tmp16;
   const tmp14 = closure_10;

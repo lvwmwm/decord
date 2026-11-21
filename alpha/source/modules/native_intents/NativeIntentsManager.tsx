@@ -1,24 +1,24 @@
-// Module ID: 20006
-// Function ID: 20007
+// Module ID: 20133
+// Function ID: 20134
 // Name: NativeIntentsManager
-// Dependencies: [32, 4643, 4665, 4726, 4736, 4697, 1386, 1071, 20007, 20008, 5410, 14176, 1412, 1254, 4850, 7364, 2]
+// Dependencies: [32, 4762, 4784, 4845, 4855, 4816, 1386, 1071, 20134, 20135, 5529, 14298, 1412, 1254, 4969, 7484, 2]
 
-// Module 20006 (NativeIntentsManager)
+// Module 20133 (NativeIntentsManager)
 import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
-import UserUtilsDefault from "UserUtils" /* 4850 */;
-import useChannelName from "useChannelName" /* 5410 */;
-import getChannelIcon from "getChannelIcon" /* 14176 */;
-import NativeIntentsExperimentDefault from "NativeIntentsExperiment" /* 20007 */;
-import IntentsBindingsDefault from "IntentsBindings" /* 20008 */;
+import UserUtilsDefault from "UserUtils" /* 4969 */;
+import useChannelName from "useChannelName" /* 5529 */;
+import getChannelIcon from "getChannelIcon" /* 14298 */;
+import NativeIntentsExperimentDefault from "NativeIntentsExperiment" /* 20134 */;
+import IntentsBindingsDefault from "IntentsBindings" /* 20135 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ChannelStore from "ChannelStore" /* 4643 */;
-import GuildStore from "GuildStore" /* 4665 */;
-import PermissionStore from "PermissionStore" /* 4726 */;
-import RelationshipStore from "RelationshipStore" /* 4736 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4697 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
+import RelationshipStore from "RelationshipStore" /* 4855 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4816 */;
 import UserStore from "UserStore" /* 1386 */;
 import Constants from "Constants" /* 1071 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7364 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7484 */;
 import size from "module_2" /* 2 */;
 
 let id;

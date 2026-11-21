@@ -1,26 +1,26 @@
-// Module ID: 18062
-// Function ID: 18063
+// Module ID: 18188
+// Function ID: 18189
 // Name: Elements
-// Dependencies: [32, 19, 17, 2176, 1071, 21, 4794, 575, 5385, 1112, 6910, 1186, 18063, 9127, 16507, 563, 9375, 6737, 2]
+// Dependencies: [32, 19, 17, 2177, 1071, 21, 4913, 575, 5504, 1112, 7030, 1186, 18189, 9247, 16630, 563, 9495, 6856, 2]
 // Exports: ArrowButton, TruncatedText, useFormattedSubscriptionPlan
 
-// Module 18062 (Elements)
+// Module 18188 (Elements)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
-import Text_Text from "Text/Text" /* 5385 */;
-import Pressables from "Pressables" /* 6910 */;
-import NativePaymentHooksDefault from "NativePaymentHooks" /* 9127 */;
-import useStoreFrontPriceDefault from "useStoreFrontPrice" /* 9375 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16507 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18063 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import Pressables from "Pressables" /* 7030 */;
+import NativePaymentHooksDefault from "NativePaymentHooks" /* 9247 */;
+import useStoreFrontPriceDefault from "useStoreFrontPrice" /* 9495 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16630 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18189 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SubscriptionPlanStore from "SubscriptionPlanStore" /* 2176 */;
+import SubscriptionPlanStore from "SubscriptionPlanStore" /* 2177 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -151,7 +151,7 @@ export function useFormattedSubscriptionPlan(listingId) {
   const tmp3 = _require;
   if (null != price) {
     const _HermesInternal = HermesInternal;
-    const tmp3Result = tmp3(6737);
+    const tmp3Result = tmp3(6856);
     str = "" + tmp3Result.formatPrice(price.amount, price.currency) + "/mo.";
   }
   return str;

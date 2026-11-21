@@ -1,14 +1,14 @@
-// Module ID: 7327
-// Function ID: 7328
+// Module ID: 7447
+// Function ID: 7448
 // Name: PortalToNativeView
-// Dependencies: [19, 17, 21, 4794, 2]
+// Dependencies: [19, 17, 21, 4913, 2]
 // Exports: default
 
-// Module 7327 (PortalToNativeView)
+// Module 7447 (PortalToNativeView)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4794 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const requireNativeComponent = react_native.requireNativeComponent;

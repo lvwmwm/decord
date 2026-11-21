@@ -1,22 +1,22 @@
-// Module ID: 14434
-// Function ID: 14435
+// Module ID: 14556
+// Function ID: 14557
 // Name: ClipsExperiment
-// Dependencies: [5388, 8303, 2131, 1386, 1388, 5539, 504, 2172, 1378, 2]
+// Dependencies: [5507, 8423, 2131, 1386, 1388, 5658, 504, 2173, 1378, 2]
 // Exports: areClipsAvailable, isClientClipsCapable, isClipsPlatformRequirementIgnored, isScreenshotKeybindEnabled, isUserPremiumTypeForClipsEarlyAccess, useIsClipsAvailable, useIsClipsPlatformSupported, useIsUserPremiumTypeForClipsEarlyAccess, useScreenshotKeybindEnabled
 
-// Module 14434 (ClipsExperiment)
+// Module 14556 (ClipsExperiment)
 import get_initialized from "get initialized" /* 504 */;
 import PlatformUtilsAll from "PlatformUtils" /* 1378 */;
 import PremiumConstants from "PremiumConstants" /* 1388 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2172 */;
-import Constants from "Constants" /* 5539 */;
-import DevSettingsStore from "DevSettingsStore" /* 5388 */;
-import DeveloperExperimentStore from "DeveloperExperimentStore" /* 8303 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2173 */;
+import Constants from "Constants" /* 5658 */;
+import DevSettingsStore from "DevSettingsStore" /* 5507 */;
+import DeveloperExperimentStore from "DeveloperExperimentStore" /* 8423 */;
 import MediaEngineStore from "MediaEngineStore" /* 2131 */;
 import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 
-const f105892 = () => {
+const f106280 = () => {
   isDeveloper = isDeveloper.isDeveloper && DevSettingsStore.get("clips_ignore_platform_requirement");
   return isDeveloper;
 };
@@ -53,7 +53,7 @@ export function useIsClipsPlatformSupported() {
   const items = [DevSettingsStore, DeveloperExperimentStore];
   const obj3 = get_initialized;
   if (!isDesktopResult) {
-    isDesktopResult = obj3.useStateFromStores(items, f105892);
+    isDesktopResult = obj3.useStateFromStores(items, f106280);
   }
   return isDesktopResult;
 }
@@ -65,7 +65,7 @@ export function useIsClipsAvailable() {
   const items = [DevSettingsStore, DeveloperExperimentStore];
   const obj3 = get_initialized;
   if (!isDesktopResult) {
-    isDesktopResult = obj3.useStateFromStores(items, f105892);
+    isDesktopResult = obj3.useStateFromStores(items, f106280);
   }
   const items1 = [UserStore];
   const tmp4Result = get_initialized;

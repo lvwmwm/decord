@@ -1,10 +1,10 @@
-// Module ID: 14486
-// Function ID: 14487
+// Module ID: 14608
+// Function ID: 14609
 // Name: CheckpointMockData
-// Dependencies: [12371, 2]
+// Dependencies: [12493, 2]
 
-// Module 14486 (CheckpointMockData)
-import CheckpointAvailability from "CheckpointAvailability" /* 12371 */;
+// Module 14608 (CheckpointMockData)
+import CheckpointAvailability from "CheckpointAvailability" /* 12493 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

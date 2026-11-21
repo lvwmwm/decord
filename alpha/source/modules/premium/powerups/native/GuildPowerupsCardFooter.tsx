@@ -1,22 +1,22 @@
-// Module ID: 13293
-// Function ID: 13294
+// Module ID: 13415
+// Function ID: 13416
 // Name: GuildPowerupsCardFooter
-// Dependencies: [17, 21, 4794, 7412, 575, 5385, 7105, 1112, 2757, 13294, 13269, 9250, 2]
+// Dependencies: [17, 21, 4913, 7532, 575, 5504, 7225, 1112, 2856, 13416, 13391, 9370, 2]
 // Exports: GuildPowerupsCardFooter
 
-// Module 13293 (GuildPowerupsCardFooter)
+// Module 13415 (GuildPowerupsCardFooter)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
-import _modDef2757 from "module_2757" /* 2757 */;
-import Text_Text from "Text/Text" /* 5385 */;
-import CircleErrorIcon2 from "CircleErrorIcon" /* 7105 */;
-import CircleCheckIcon2 from "CircleCheckIcon" /* 7412 */;
-import BoostGemIcon2 from "BoostGemIcon" /* 9250 */;
-import getGuildPowerupFormattedDateStringDefault from "getGuildPowerupFormattedDateString" /* 13269 */;
-import entitlementExpirationDateToStringDefault from "entitlementExpirationDateToString" /* 13294 */;
+import _modDef2856 from "module_2856" /* 2856 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import CircleErrorIcon2 from "CircleErrorIcon" /* 7225 */;
+import CircleCheckIcon2 from "CircleCheckIcon" /* 7532 */;
+import BoostGemIcon2 from "BoostGemIcon" /* 9370 */;
+import getGuildPowerupFormattedDateStringDefault from "getGuildPowerupFormattedDateString" /* 13391 */;
+import entitlementExpirationDateToStringDefault from "entitlementExpirationDateToString" /* 13416 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4794 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -48,7 +48,7 @@ class GuildPowerupCardFooterExpiring {
     const intl = intl2.intl;
     formatToMarkdownString = intl.formatToMarkdownString;
     obj4 = { dateString: entitlementExpirationDateToStringDefault(dateString) };
-    prop = _modDef2757["ol/ao/"];
+    prop = _modDef2856["ol/ao/"];
     items[1] = React3(Text, obj3);
     return hasOwnProperty(View, obj);
   }
@@ -69,7 +69,7 @@ class GuildPowerupCardFooterRemoving {
     const intl = intl2.intl;
     formatToPlainString = intl.formatToPlainString;
     obj4 = { dateString: getGuildPowerupFormattedDateStringDefault(removingAt) };
-    v6e2ry1 = _modDef2757["6e2ry1"];
+    v6e2ry1 = _modDef2856["6e2ry1"];
     items[1] = React3(Text, obj3);
     return hasOwnProperty(View, obj);
   }

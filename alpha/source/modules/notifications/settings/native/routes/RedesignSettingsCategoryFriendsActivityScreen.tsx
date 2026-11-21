@@ -1,17 +1,17 @@
-// Module ID: 17304
-// Function ID: 17305
+// Module ID: 17428
+// Function ID: 17429
 // Name: RedesignSettingsCategoryFriendsActivityScreen
-// Dependencies: [19, 8592, 21, 17294, 1112, 11817, 5355, 16771, 17295, 2]
+// Dependencies: [19, 8712, 21, 17418, 1112, 11937, 5474, 16894, 17419, 2]
 
-// Module 17304 (RedesignSettingsCategoryFriendsActivityScreen)
+// Module 17428 (RedesignSettingsCategoryFriendsActivityScreen)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1112 */;
-import useMountEffectDefault from "useMountEffect" /* 5355 */;
-import SettingsConstants from "SettingsConstants" /* 8592 */;
-import SettingBuilders from "SettingBuilders" /* 11817 */;
-import FamilyCenterAgeGroupPrefetch from "FamilyCenterAgeGroupPrefetch" /* 16771 */;
-import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 17294 */;
-import SystemNotifPermissionLayoutDefault from "SystemNotifPermissionLayout" /* 17295 */;
+import useMountEffectDefault from "useMountEffect" /* 5474 */;
+import SettingsConstants from "SettingsConstants" /* 8712 */;
+import SettingBuilders from "SettingBuilders" /* 11937 */;
+import FamilyCenterAgeGroupPrefetch from "FamilyCenterAgeGroupPrefetch" /* 16894 */;
+import MobileNotifSettingsRouteBuilders from "MobileNotifSettingsRouteBuilders" /* 17418 */;
+import SystemNotifPermissionLayoutDefault from "SystemNotifPermissionLayout" /* 17419 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

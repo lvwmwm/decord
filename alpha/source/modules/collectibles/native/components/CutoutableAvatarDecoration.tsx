@@ -1,14 +1,14 @@
-// Module ID: 8902
-// Function ID: 8903
+// Module ID: 9022
+// Function ID: 9023
 // Name: CutoutableAvatarDecoration
-// Dependencies: [19, 4795, 21, 563, 1412, 8903, 5481, 2]
+// Dependencies: [19, 4914, 21, 563, 1412, 9023, 5600, 2]
 // Exports: default
 
-// Module 8902 (CutoutableAvatarDecoration)
+// Module 9022 (CutoutableAvatarDecoration)
 import Fragment from "Fragment" /* 21 */;
 import AvatarUtils from "AvatarUtils" /* 1412 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4795 */;
+import AccessibilityStore from "AccessibilityStore" /* 4914 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;

@@ -1,13 +1,13 @@
-// Module ID: 9450
-// Function ID: 9451
+// Module ID: 9570
+// Function ID: 9571
 // Name: OrderSigningDeferral
-// Dependencies: [5, 5511, 9451, 9452, 2]
+// Dependencies: [5, 5630, 9571, 9572, 2]
 // Exports: getPaymentRedirectContext, getSigningDeferralDeadline, getSigningDeferralMerchantAccountId, getStripeNextActionContext, isAwaitingStripeNextAction, isSigningDeferralExpired, performSigningDeferralAction
 
-// Module 9450 (OrderSigningDeferral)
-import PaymentConstants from "PaymentConstants" /* 5511 */;
-import Stripe3DSChallenge from "Stripe3DSChallenge" /* 9451 */;
-import StripeNextAction from "StripeNextAction" /* 9452 */;
+// Module 9570 (OrderSigningDeferral)
+import PaymentConstants from "PaymentConstants" /* 5630 */;
+import Stripe3DSChallenge from "Stripe3DSChallenge" /* 9571 */;
+import StripeNextAction from "StripeNextAction" /* 9572 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

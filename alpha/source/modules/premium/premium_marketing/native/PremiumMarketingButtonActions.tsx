@@ -1,21 +1,21 @@
-// Module ID: 9286
-// Function ID: 9287
+// Module ID: 9406
+// Function ID: 9407
 // Name: PremiumMarketingButtonActions
-// Dependencies: [9023, 1388, 1071, 9032, 9287, 8990, 8050, 9289, 9345, 7419, 7954, 8074, 2]
+// Dependencies: [9143, 1388, 1071, 9152, 9407, 9110, 8170, 9409, 9465, 7539, 8074, 8194, 2]
 // Exports: getButtonActionHandler
 
-// Module 9286 (PremiumMarketingButtonActions)
+// Module 9406 (PremiumMarketingButtonActions)
 import PremiumConstants from "PremiumConstants" /* 1388 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7419 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 7954 */;
-import ProductIds from "ProductIds" /* 8050 */;
-import openUserSettings from "openUserSettings" /* 8074 */;
-import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 8990 */;
-import cta_button from "cta_button" /* 9032 */;
-import navigateToSocialLayerStorefrontDefault from "navigateToSocialLayerStorefront" /* 9287 */;
-import showMarketingMomentRewardScreen from "showMarketingMomentRewardScreen" /* 9289 */;
-import utils_openGiftModal from "utils/openGiftModal" /* 9345 */;
-import PromotionsStore from "PromotionsStore" /* 9023 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7539 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 8074 */;
+import ProductIds from "ProductIds" /* 8170 */;
+import openUserSettings from "openUserSettings" /* 8194 */;
+import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 9110 */;
+import cta_button from "cta_button" /* 9152 */;
+import navigateToSocialLayerStorefrontDefault from "navigateToSocialLayerStorefront" /* 9407 */;
+import showMarketingMomentRewardScreen from "showMarketingMomentRewardScreen" /* 9409 */;
+import utils_openGiftModal from "utils/openGiftModal" /* 9465 */;
+import PromotionsStore from "PromotionsStore" /* 9143 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 

@@ -1,142 +1,109 @@
 // Module ID: 5196
 // Function ID: 5197
-// Dependencies: [109, 41, 42, 93, 95, 98, 19, 17, 21, 5197]
+// Dependencies: [19, 21, 5197, 5220, 5226, 5222, 5227, 5228, 5209, 5221, 5224, 5223, 5229, 5230]
+// Exports: GestureDetector
 
 // Module 5196
-import react_native from "react-native" /* 17 */;
-import react2 from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import TOUCHABLE_STATEDefault from "TOUCHABLE_STATE" /* 5197 */;
-import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-import metroRequire from "_possibleConstructorReturn" /* 93 */;
-import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
-import _inherits from "_inherits" /* 98 */;
+import react_nativeDefault from "react-native" /* 5209 */;
+import assignRef from "assignRef" /* 5221 */;
+import attachHandlers from "attachHandlers" /* 5224 */;
+import react_mod from "react" /* 19 */;
 
-const react = react2;
-
-function _isNativeReflectConstruct() {
-  try {
-    const _Boolean = Boolean;
-    const _Reflect = Reflect;
-    const _Boolean2 = Boolean;
-    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
-
-    }));
-    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
-      return closure_0;
-    };
-    return _isNativeReflectConstruct();
-  } catch (err) {
-  }
-}
-let closure_3 = ["style"];
-const Component = react2.Component;
-const View = react_native.View;
+let c3;
+let closure_4;
+let hasOwnProperty;
+let react = react_mod;
+({ useEffect: c3, useMemo: closure_4, useRef: hasOwnProperty } = react);
+react = react_mod;
 const jsx = Fragment.jsx;
-class TouchableHighlight {
-  constructor(arg0) {
-    let constructResult;
-    const self = this;
-    _classCallCheck(this, TouchableHighlight);
-    const items = [arg0];
-    const obj = _getPrototypeOf(TouchableHighlight);
-    let tmp3 = metroRequire;
-    const tmp2 = _getPrototypeOf;
-    if (_isNativeReflectConstruct()) {
-      const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
-    } else {
-      constructResult = obj.apply(self, items);
+
+export const GestureDetector = function(gesture) {
+  let current2;
+  let detectorUpdater;
+  let webEventHandlers;
+  function propagateDetectorConfig(gesture, gesture2) {
+    const items = ["userSelect", "enableContextMenu", "touchAction"];
+    for (const item10008 of items) {
+      let tmp2 = gesture[item10008];
+      if (undefined !== tmp2) {
+        let toGestureArrayResult = gesture.toGestureArray();
+        for (const item10018 of toGestureArrayResult) {
+          item10018.config[tmp] = tmp3;
+          continue;
+        }
+      }
+      continue;
     }
-    const tmp3Result = tmp3(self, constructResult);
-    let closure_0 = tmp3Result;
-    tmp3Result.showUnderlay = () => {
-      let obj3;
-      let obj4;
-      if (closure_0.hasPressHandler()) {
-        const obj2 = { extraChildStyle: obj3, extraUnderlayStyle: obj4 };
-        obj3 = { opacity: closure_0.props.activeOpacity };
-        obj4 = { backgroundColor: closure_0.props.underlayColor };
-        closure_0.setState(obj2);
-        const props = obj.props;
-        const onShowUnderlay = props.onShowUnderlay;
-        if (onShowUnderlay != null) {
-          onShowUnderlay();
-        }
-      }
-    };
-    tmp3Result.hasPressHandler = () => closure_0.props.onPress || closure_0.props.onPressIn || closure_0.props.onPressOut || closure_0.props.onLongPress;
-    tmp3Result.hideUnderlay = () => {
-      closure_0.setState({ extraChildStyle: null, extraUnderlayStyle: null });
-      const props = closure_0.props;
-      const onHideUnderlay = props.onHideUnderlay;
-      if (onHideUnderlay != null) {
-        onHideUnderlay();
-      }
-    };
-    tmp3Result.onStateChange = (arg0, arg1) => {
-      if (arg1 === TouchableHighlight(closure_2_2[9]).TOUCHABLE_STATE.BEGAN) {
-        closure_0.showUnderlay();
-      } else {
-        const tmp3 = arg1 !== TouchableHighlight(closure_2_2[9]).TOUCHABLE_STATE.UNDETERMINED && arg1 !== TouchableHighlight(closure_2_2[9]).TOUCHABLE_STATE.MOVED_OUTSIDE;
-        if (!tmp3) {
-          closure_0.hideUnderlay();
-        }
-      }
-    };
-    tmp3Result.state = { extraChildStyle: null, extraUnderlayStyle: null };
-    return tmp3Result;
   }
-}
-_inherits(TouchableHighlight, Component);
-const entry = {
-  key: "renderChildren",
-  value: function renderChildren() {
-    const self = this;
-    if (this.props.children) {
-      let tmp5;
-      const Children = react.Children;
-      const onlyResult = Children.only(self.props.children);
-      const style = onlyResult.props.style;
-      const cloneElement = react.cloneElement;
-      if (self.state.extraChildStyle) {
-        const items = [style, self.state.extraChildStyle];
-        tmp5 = items;
-      } else {
-        tmp5 = style;
-      }
-      const obj = { style: tmp5 };
-      return cloneElement(onlyResult, obj);
-    } else {
-      return <View />;
+  if (gesture.gesture) {
+    let tmp26Result;
+    gesture = gesture.gesture;
+    propagateDetectorConfig(gesture, gesture);
+    let tmp5 = current2;
+    let items = [gesture];
+    let gesturesToAttach = current2(() => gesture.toGestureArray(), items);
+    const someResult = gesturesToAttach.some((shouldUseReanimated) => shouldUseReanimated.shouldUseReanimated);
+    let tmp7 = gesture;
+    let tmp8 = webEventHandlers;
+    let obj2 = gesture(webEventHandlers[2]);
+    webEventHandlers = obj2.useWebEventHandlers();
+    const current = detectorUpdater({ firstRender: true, viewRef: null, previousViewTag: -1, forceRebuildReanimatedEvent: false }).current;
+    let obj3 = { attachedGestures: [], animatedEventHandler: null, animatedHandlers: null, shouldUseReanimated: someResult, isMounted: false, hasExternalRelations: true };
+    current2 = react.useRef(obj3).current;
+    const obj4 = gesture(webEventHandlers[3]);
+    detectorUpdater = obj4.useDetectorUpdater(current, current2, gesturesToAttach, gesture, webEventHandlers);
+    const obj5 = gesture(webEventHandlers[4]);
+    const viewRefHandler = obj5.useViewRefHandler(current, detectorUpdater);
+    let needsToReattachResult = current.firstRender || current.forceRebuildReanimatedEvent;
+    if (!needsToReattachResult) {
+      const tmp7Result = tmp7(tmp8[5]);
+      needsToReattachResult = tmp7Result.needsToReattach(current2, gesturesToAttach);
     }
+    current.forceRebuildReanimatedEvent = false;
+    const tmp7Result5 = tmp7(tmp8[6]);
+    const animatedGesture = tmp7Result5.useAnimatedGesture(current2, needsToReattachResult);
+    const tmp7Result6 = tmp7(tmp8[7]);
+    const isomorphicLayoutEffect = tmp7Result6.useIsomorphicLayoutEffect(() => {
+      const tmp = react_nativeDefault;
+      gesturesToAttach = assignRef;
+      current2.isMounted = true;
+      const tmpResult = tmp(gesturesToAttach.resolveHostInstance(current.viewRef));
+      const obj2 = attachHandlers;
+      const obj3 = { preparedGesture: current2, gestureConfig: gesture, gesturesToAttach, webEventHandlersRef: webEventHandlers, viewTag: tmpResult };
+      obj2.attachHandlers(obj3);
+      return () => {
+        current2.isMounted = false;
+        const obj = gesture(webEventHandlers[11]);
+        obj.dropHandlers(current2);
+      };
+    }, []);
+    const items1 = [gesture];
+    current(() => {
+      if (current.firstRender) {
+        tmp.firstRender = false;
+      } else {
+        detectorUpdater();
+      }
+    }, items1);
+    const tmp7Result7 = tmp7(tmp8[12]);
+    const mountReactions = tmp7Result7.useMountReactions(detectorUpdater, current2);
+    const tmp7Result8 = tmp7(tmp8[13]);
+    if (someResult) {
+      const obj6 = { ref: viewRefHandler, onGestureHandlerEvent: current2.animatedEventHandler, children: gesture.children };
+      tmp26Result = tmp26(tmp7Result8.AnimatedWrap, obj6);
+    } else {
+      const obj7 = { ref: viewRefHandler, children: gesture.children };
+      tmp26Result = tmp26(tmp7Result8.Wrap, obj7);
+    }
+    return tmp26Result;
+  } else {
+    let tmp = globalThis;
+    const _Error = Error;
+    const self = this;
+    const self2 = this;
+    const error = new Error("GestureDetector must have a gesture prop provided.");
+    const tmp3 = error;
+    throw error;
   }
 };
-let items = [
-  entry,
-  {
-    key: "render",
-    value: function render() {
-      const self = this;
-      const props = this.props;
-      let style = props.style;
-      if (undefined === style) {
-        style = {};
-      }
-      const extraUnderlayStyle = self.state.extraUnderlayStyle;
-      const tmp = _objectWithoutProperties(props, closure_3);
-      TOUCHABLE_STATEDefault;
-      const merged = Object.assign(tmp);
-      const items = [style, extraUnderlayStyle];
-      return <tmp2 style={items} onStateChange={self.onStateChange}>{self.renderChildren()}</tmp2>;
-    }
-  }
-];
-const importDefaultResultResult = _createClass(TouchableHighlight, items);
-let obj = { activeOpacity: 0.85, delayPressOut: 100, underlayColor: "black" };
-let merged = Object.assign(TOUCHABLE_STATEDefault.defaultProps);
-importDefaultResultResult.defaultProps = obj;
-
-export default importDefaultResultResult;

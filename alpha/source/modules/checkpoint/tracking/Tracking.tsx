@@ -1,23 +1,23 @@
-// Module ID: 12368
-// Function ID: 12369
+// Module ID: 12490
+// Function ID: 12491
 // Name: Tracking
-// Dependencies: [1071, 1255, 5531, 12369, 2]
+// Dependencies: [1071, 1255, 5650, 12491, 2]
 // Exports: trackCheckpoint2026CardClicked, trackCheckpoint2026CardShared, trackCheckpoint2026CharacterChoiceSelected, trackCheckpoint2026Closed, trackCheckpoint2026Completed, trackCheckpoint2026GiftCtaClicked, trackCheckpoint2026MuteToggled, trackCheckpoint2026SidekickMessageSent, trackCheckpoint2026Started, trackCheckpoint2026StepViewed
 
-// Module 12368 (Tracking)
+// Module 12490 (Tracking)
 import Constants from "Constants" /* 1071 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5531 */;
-import CheckpointSessionAnalyticsManagerDefault from "CheckpointSessionAnalyticsManager" /* 12369 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5650 */;
+import CheckpointSessionAnalyticsManagerDefault from "CheckpointSessionAnalyticsManager" /* 12491 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
 const result = size.fileFinishedImporting("modules/checkpoint/tracking/Tracking.tsx");
 
-export function trackCheckpoint2026CardClicked(authorId, channel) {
+export function trackCheckpoint2026CardClicked(c1, channel) {
   const track = AnalyticsUtilsDefault.track;
   const CHECKPOINT_2026_CARD_CLICKED = AnalyticEvents.CHECKPOINT_2026_CARD_CLICKED;
-  const obj = { other_user_id: authorId };
+  const obj = { other_user_id: c1 };
   AnalyticsUtilsDefault;
   const obj2 = AppAnalyticsUtils;
   const merged = Object.assign(obj2.collectChannelAnalyticsMetadata(channel));

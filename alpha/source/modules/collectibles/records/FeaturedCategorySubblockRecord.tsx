@@ -1,10 +1,10 @@
-// Module ID: 7987
-// Function ID: 7988
+// Module ID: 8107
+// Function ID: 8108
 // Name: FeaturedCategorySubblockRecord
-// Dependencies: [7988, 2]
+// Dependencies: [8108, 2]
 
-// Module 7987 (FeaturedCategorySubblockRecord)
-import FeaturedSubblockType from "FeaturedSubblockType" /* 7988 */;
+// Module 8107 (FeaturedCategorySubblockRecord)
+import FeaturedSubblockType from "FeaturedSubblockType" /* 8108 */;
 import size from "module_2" /* 2 */;
 
 class FeaturedCategorySubblockRecord {

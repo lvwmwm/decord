@@ -1,10 +1,10 @@
-// Module ID: 16187
-// Function ID: 16188
+// Module ID: 16310
+// Function ID: 16311
 // Name: LocalSvg
-// Dependencies: [5, 32, 19, 17, 21, 1148, 7745, 2]
+// Dependencies: [5, 32, 19, 17, 21, 1148, 7865, 2]
 // Exports: default
 
-// Module 16187 (LocalSvg)
+// Module 16310 (LocalSvg)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
@@ -95,7 +95,7 @@ export default function LocalSvg(asset) {
       c0 = true;
     };
   }, items);
-  const SvgXml = asset(7745).SvgXml;
+  const SvgXml = asset(7865).SvgXml;
   const merged1 = Object.assign(merged);
   return <SvgXml xml={first} />;
 };

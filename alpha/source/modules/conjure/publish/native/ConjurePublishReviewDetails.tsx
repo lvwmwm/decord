@@ -1,31 +1,31 @@
-// Module ID: 18141
-// Function ID: 18142
+// Module ID: 18268
+// Function ID: 18269
 // Name: ConjurePublishReviewDetails
-// Dependencies: [19, 17, 21, 9784, 6914, 7584, 6503, 12050, 17870, 18142, 10013, 18144, 4794, 575, 5476, 7583, 18146, 18148, 7101, 1112, 4091, 7341, 5481, 5385, 14602, 18125, 18152, 4856, 6910, 7216, 6941, 2]
+// Dependencies: [19, 17, 21, 9904, 7034, 7704, 6622, 12172, 17996, 18269, 10133, 18271, 4913, 575, 5595, 7703, 18273, 18275, 7221, 1112, 4190, 7461, 5600, 5504, 14724, 18252, 18279, 4975, 7030, 7336, 7061, 2]
 // Exports: default
 
-// Module 18141 (ConjurePublishReviewDetails)
+// Module 18268 (ConjurePublishReviewDetails)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1112 */;
-import _modDef4091 from "module_4091" /* 4091 */;
-import react_native2 from "react-native" /* 4856 */;
-import Text_Text from "Text/Text" /* 5385 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6503 */;
-import Pressables from "Pressables" /* 6910 */;
-import VoiceNormalIcon from "VoiceNormalIcon" /* 6914 */;
-import FormCheckbox from "FormCheckbox" /* 7216 */;
-import AppsLockIcon2 from "AppsLockIcon" /* 7583 */;
-import AppsIcon from "AppsIcon" /* 7584 */;
-import ScreenIcon from "ScreenIcon" /* 9784 */;
-import ShieldIcon from "ShieldIcon" /* 10013 */;
-import RobotIcon from "RobotIcon" /* 12050 */;
-import ActivitiesIcon from "ActivitiesIcon" /* 17870 */;
-import BadgeIcon from "BadgeIcon" /* 18142 */;
-import WindowTopIcon from "WindowTopIcon" /* 18144 */;
+import _modDef4190 from "module_4190" /* 4190 */;
+import react_native2 from "react-native" /* 4975 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6622 */;
+import Pressables from "Pressables" /* 7030 */;
+import VoiceNormalIcon from "VoiceNormalIcon" /* 7034 */;
+import FormCheckbox from "FormCheckbox" /* 7336 */;
+import AppsLockIcon2 from "AppsLockIcon" /* 7703 */;
+import AppsIcon from "AppsIcon" /* 7704 */;
+import ScreenIcon from "ScreenIcon" /* 9904 */;
+import ShieldIcon from "ShieldIcon" /* 10133 */;
+import RobotIcon from "RobotIcon" /* 12172 */;
+import ActivitiesIcon from "ActivitiesIcon" /* 17996 */;
+import BadgeIcon from "BadgeIcon" /* 18269 */;
+import WindowTopIcon from "WindowTopIcon" /* 18271 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;
@@ -37,7 +37,7 @@ let obj6;
 let obj7;
 let size;
 let tmp7;
-const Badge_Badge = tmp7(6941);
+const Badge_Badge = tmp7(7061);
 function RowSection(rows) {
   let items;
   rows = rows.rows;
@@ -74,7 +74,7 @@ function PrivateCheckbox(appChannelsPrivate) {
   };
   const PressableOpacity = Pressables.PressableOpacity;
   items = [React3(FormCheckbox.FormCheckbox, { checked: isPrivate }), ];
-  const obj3 = { variant: "body-sm/medium", color: "text-muted", children: intl.string(_modDef4091.RSyIc9) };
+  const obj3 = { variant: "body-sm/medium", color: "text-muted", children: intl.string(_modDef4190.RSyIc9) };
   const Text = Text_Text.Text;
   intl = intl7.intl;
   items[1] = React3(Text, obj3);
@@ -197,7 +197,7 @@ export default function ConjurePublishReviewDetails(review) {
   if (review.managedCopy) {
     const tmp9 = dependencyMap;
     obj = { projectId: review.projectId };
-    tmp6 = closure_4(appChannelsPrivate(18146), obj);
+    tmp6 = closure_4(appChannelsPrivate(18273), obj);
   }
   const items = [tmp6, , , , , ];
   obj2 = { children: null };
@@ -217,15 +217,15 @@ export default function ConjurePublishReviewDetails(review) {
         },
       onConjure: onConjureIcon
     };
-    const items1 = [closure_4(appChannelsPrivate(18148).ConjureAppIconTile, obj3), , ];
-    const obj4 = { label: intl.string(appChannelsPrivate(4091).knevPu), value: null, onChange: null, maxLength: appChannelsPrivate(6503).MAX_PROJECT_NAME_LENGTH, disabled: null, errorMessage: nameError };
-    const TextInput = appChannelsPrivate(7101).TextInput;
+    const items1 = [closure_4(appChannelsPrivate(18275).ConjureAppIconTile, obj3), , ];
+    const obj4 = { label: intl.string(appChannelsPrivate(4190).knevPu), value: null, onChange: null, maxLength: appChannelsPrivate(6622).MAX_PROJECT_NAME_LENGTH, disabled: null, errorMessage: nameError };
+    const TextInput = appChannelsPrivate(7221).TextInput;
     intl = appChannelsPrivate(1112).intl;
     ({ name: obj9.value, setName: obj9.onChange } = review);
     ({ saving: obj9.disabled, nameError } = review);
     items1[1] = closure_4(TextInput, obj4);
-    const obj5 = { label: intl2.string(appChannelsPrivate(4091).ynaGa1), placeholder: intl3.string(appChannelsPrivate(4091)["I+3UTL"]), value: null, onChange: null, maxLength: appChannelsPrivate(6503).MAX_APP_DESCRIPTION_LENGTH, disabled: review.saving };
-    const TextArea = tmp21(7341).TextArea;
+    const obj5 = { label: intl2.string(appChannelsPrivate(4190).ynaGa1), placeholder: intl3.string(appChannelsPrivate(4190)["I+3UTL"]), value: null, onChange: null, maxLength: appChannelsPrivate(6622).MAX_APP_DESCRIPTION_LENGTH, disabled: review.saving };
+    const TextArea = tmp21(7461).TextArea;
     intl2 = tmp21(1112).intl;
     intl3 = tmp21(1112).intl;
     ({ description: obj10.value, setDescription: obj10.onChange } = identity);
@@ -239,19 +239,19 @@ export default function ConjurePublishReviewDetails(review) {
     if (null != identity.iconURL) {
       const obj6 = { source: obj7, style: tmp.readOnlyIcon, resizeMode: "cover" };
       obj7 = { uri: identity.iconURL };
-      tmp10 = closure_4(appChannelsPrivate(5481), obj6);
+      tmp10 = closure_4(appChannelsPrivate(5600), obj6);
     }
     const items2 = [tmp10, ];
     tmp15 = closure_4;
     tmp16 = appChannelsPrivate;
     const obj11 = { variant: "body-md/semibold", color: "text-strong", lineClamp: 1, children: review.name };
     const obj8 = { style: tmp.readOnlyText, children: items3 };
-    items3 = [closure_4(appChannelsPrivate(5385).Text, obj11), ];
+    items3 = [closure_4(appChannelsPrivate(5504).Text, obj11), ];
     let tmp15Result = null;
     const tmp14 = View;
     if ("" !== identity.description) {
       const obj13 = { variant: "body-sm/normal", color: "text-subtle", lineClamp: 3, children: identity.description };
-      tmp15Result = tmp15(tmp16(5385).Text, obj13);
+      tmp15Result = tmp15(tmp16(5504).Text, obj13);
     }
     items3[1] = tmp15Result;
     items2[1] = closure_6(tmp14, obj8);
@@ -259,7 +259,7 @@ export default function ConjurePublishReviewDetails(review) {
     tmp4Result = tmp4(tmp5, obj2);
   }
   items[1] = tmp4Result;
-  const obj14 = { title: intl4.string(appChannelsPrivate(4091).BqNMms), rows: mapped };
+  const obj14 = { title: intl4.string(appChannelsPrivate(4190).BqNMms), rows: mapped };
   intl4 = tmp16(1112).intl;
   items[2] = tmp15(RowSection, obj14);
   let shared;
@@ -269,8 +269,8 @@ export default function ConjurePublishReviewDetails(review) {
   }
   let tmp15Result2 = null;
   if (true === shared) {
-    const obj15 = { label: intl5.string(appChannelsPrivate(4091).Td1mlg), checked: null, onToggle: null };
-    const Checkbox = tmp16(14602).Checkbox;
+    const obj15 = { label: intl5.string(appChannelsPrivate(4190).Td1mlg), checked: null, onToggle: null };
+    const Checkbox = tmp16(14724).Checkbox;
     intl5 = tmp16(1112).intl;
     ({ isPrivate: obj12.checked, setPrivate: obj12.onToggle } = appChannelsPrivate);
     tmp15Result2 = tmp15(Checkbox, obj15);
@@ -278,7 +278,7 @@ export default function ConjurePublishReviewDetails(review) {
   const obj29 = { children: items };
   items[3] = tmp15Result2;
   const obj30 = {
-    title: intl6.string(appChannelsPrivate(4091).LnqeFd),
+    title: intl6.string(appChannelsPrivate(4190).LnqeFd),
     rows: devicePermissions.map((item) => {
       let intl;
       obj = { icon: closure_1_7[item], label: intl.string(appChannelsPrivate(dependencyMap[25]).CONJURE_REVIEW_PERMISSION_LABELS[item]) };
@@ -290,6 +290,6 @@ export default function ConjurePublishReviewDetails(review) {
   devicePermissions = review.devicePermissions;
   items[4] = tmp15(tmp24, obj30);
   const obj31 = { remix: review.remix, disabled: review.saving };
-  items[5] = tmp15(appChannelsPrivate(18152), obj31);
+  items[5] = tmp15(appChannelsPrivate(18279), obj31);
   return closure_6(closure_5, obj29);
 };

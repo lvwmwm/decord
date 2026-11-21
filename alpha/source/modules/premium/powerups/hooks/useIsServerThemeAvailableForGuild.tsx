@@ -1,12 +1,12 @@
-// Module ID: 15003
-// Function ID: 15004
+// Module ID: 15126
+// Function ID: 15127
 // Name: useIsServerThemeAvailableForGuild
-// Dependencies: [13266, 4997, 2]
+// Dependencies: [13388, 5116, 2]
 // Exports: default
 
-// Module 15003 (useIsServerThemeAvailableForGuild)
-import GuildThemeResolver from "GuildThemeResolver" /* 4997 */;
-import ServerThemeExperiment from "ServerThemeExperiment" /* 13266 */;
+// Module 15126 (useIsServerThemeAvailableForGuild)
+import GuildThemeResolver from "GuildThemeResolver" /* 5116 */;
+import ServerThemeExperiment from "ServerThemeExperiment" /* 13388 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/powerups/hooks/useIsServerThemeAvailableForGuild.tsx");

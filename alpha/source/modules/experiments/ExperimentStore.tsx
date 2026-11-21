@@ -1,10 +1,10 @@
-// Module ID: 5411
-// Function ID: 5412
+// Module ID: 5530
+// Function ID: 5531
 // Name: ExperimentStore
-// Dependencies: [32, 502, 1070, 5412, 1071, 3, 1375, 1250, 1255, 5413, 510, 12, 572, 2]
+// Dependencies: [32, 502, 1070, 5531, 1071, 3, 1375, 1250, 1255, 5532, 510, 12, 572, 2]
 // Exports: registerExperiment
 
-// Module 5411 (ExperimentStore)
+// Module 5530 (ExperimentStore)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
 import Storage5 from "Storage" /* 510 */;
@@ -12,11 +12,11 @@ import Dispatcher from "Dispatcher" /* 572 */;
 import _modDef1250 from "module_1250" /* 1250 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import BuildOverrideUtils from "BuildOverrideUtils" /* 1375 */;
-import GuildFilters from "GuildFilters" /* 5413 */;
+import GuildFilters from "GuildFilters" /* 5532 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1070 */;
-import ExperimentConstants from "ExperimentConstants" /* 5412 */;
+import ExperimentConstants from "ExperimentConstants" /* 5531 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 

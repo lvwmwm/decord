@@ -1,10 +1,10 @@
-// Module ID: 19502
-// Function ID: 19503
+// Module ID: 19629
+// Function ID: 19630
 // Name: AppStoreConsentReinstateEndpointExperiment
 // Dependencies: [1450, 2]
 // Exports: getIsAppStoreConsentReinstateEndpointEnabled
 
-// Module 19502 (AppStoreConsentReinstateEndpointExperiment)
+// Module 19629 (AppStoreConsentReinstateEndpointExperiment)
 import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 

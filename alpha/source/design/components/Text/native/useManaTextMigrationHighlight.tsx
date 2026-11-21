@@ -1,16 +1,16 @@
-// Module ID: 5387
-// Function ID: 5388
+// Module ID: 5506
+// Function ID: 5507
 // Name: useManaTextMigrationHighlight
-// Dependencies: [17, 5388, 1191, 4794, 575, 504, 4801, 2]
+// Dependencies: [17, 5507, 1191, 4913, 575, 504, 4920, 2]
 // Exports: useManaTextMigrationHighlight, withManaTextMigrationHighlight
 
-// Module 5387 (useManaTextMigrationHighlight)
+// Module 5506 (useManaTextMigrationHighlight)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import DevSettingsStore from "DevSettingsStore" /* 5388 */;
+import DevSettingsStore from "DevSettingsStore" /* 5507 */;
 import ThemeStore from "ThemeStore" /* 1191 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

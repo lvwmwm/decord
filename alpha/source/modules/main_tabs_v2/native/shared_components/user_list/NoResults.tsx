@@ -1,15 +1,15 @@
-// Module ID: 9974
-// Function ID: 9975
+// Module ID: 10094
+// Function ID: 10095
 // Name: NoResults
-// Dependencies: [19, 17, 21, 4794, 5385, 2]
+// Dependencies: [19, 17, 21, 4913, 5504, 2]
 // Exports: default
 
-// Module 9974 (NoResults)
-import Text_Text from "Text/Text" /* 5385 */;
+// Module 10094 (NoResults)
+import Text_Text from "Text/Text" /* 5504 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4794 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let c2;

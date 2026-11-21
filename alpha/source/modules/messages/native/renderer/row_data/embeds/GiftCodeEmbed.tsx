@@ -1,38 +1,38 @@
-// Module ID: 14160
-// Function ID: 14161
+// Module ID: 14282
+// Function ID: 14283
 // Name: GiftCodeEmbed
-// Dependencies: [17, 502, 11785, 1386, 6555, 1071, 1388, 14161, 14162, 14163, 14053, 14056, 14054, 14055, 14057, 14058, 14059, 14060, 13801, 4850, 8560, 4801, 4964, 1112, 12204, 12205, 575, 2167, 11791, 2789, 8553, 8125, 14061, 14164, 14165, 14062, 14063, 6728, 2172, 2]
+// Dependencies: [17, 502, 11905, 1386, 6674, 1071, 1388, 14283, 14284, 14285, 14175, 14178, 14176, 14177, 14179, 14180, 14181, 14182, 13923, 4969, 8680, 4920, 5083, 1112, 12326, 12327, 575, 2168, 11911, 2888, 8673, 8245, 14183, 14286, 14287, 14184, 14185, 6847, 2173, 2]
 // Exports: createGiftCodeEmbed
 
-// Module 14160 (GiftCodeEmbed)
+// Module 14282 (GiftCodeEmbed)
 import nativeDefault from "native" /* 575 */;
 import intl18 from "intl" /* 1112 */;
-import _modDef2167 from "module_2167" /* 2167 */;
-import shared from "shared" /* 4801 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8125 */;
-import react_native from "react-native" /* 8553 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8560 */;
-import GiftSubscriptionCodeUtils from "GiftSubscriptionCodeUtils" /* 11791 */;
-import _modDef13801 from "module_13801" /* 13801 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14053 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14054 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 14055 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 14056 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 14057 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 14058 */;
-import AssetRegistryDefault7 from "AssetRegistry" /* 14059 */;
-import AssetRegistryDefault8 from "AssetRegistry" /* 14060 */;
-import AssetRegistryDefault9 from "AssetRegistry" /* 14061 */;
-import AssetRegistryDefault10 from "AssetRegistry" /* 14062 */;
-import AssetRegistryDefault11 from "AssetRegistry" /* 14063 */;
-import AssetRegistryDefault12 from "AssetRegistry" /* 14161 */;
-import AssetRegistryDefault13 from "AssetRegistry" /* 14162 */;
-import AssetRegistryDefault14 from "AssetRegistry" /* 14163 */;
+import _modDef2168 from "module_2168" /* 2168 */;
+import shared from "shared" /* 4920 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8245 */;
+import react_native from "react-native" /* 8673 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8680 */;
+import GiftSubscriptionCodeUtils from "GiftSubscriptionCodeUtils" /* 11911 */;
+import _modDef13923 from "module_13923" /* 13923 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14175 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14176 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 14177 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 14178 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 14179 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 14180 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 14181 */;
+import AssetRegistryDefault8 from "AssetRegistry" /* 14182 */;
+import AssetRegistryDefault9 from "AssetRegistry" /* 14183 */;
+import AssetRegistryDefault10 from "AssetRegistry" /* 14184 */;
+import AssetRegistryDefault11 from "AssetRegistry" /* 14185 */;
+import AssetRegistryDefault12 from "AssetRegistry" /* 14283 */;
+import AssetRegistryDefault13 from "AssetRegistry" /* 14284 */;
+import AssetRegistryDefault14 from "AssetRegistry" /* 14285 */;
 import react_native2 from "react-native" /* 17 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GiftCodeStore from "GiftCodeStore" /* 11785 */;
+import GiftCodeStore from "GiftCodeStore" /* 11905 */;
 import UserStore from "UserStore" /* 1386 */;
-import SKUStore from "SKUStore" /* 6555 */;
+import SKUStore from "SKUStore" /* 6674 */;
 import Constants from "Constants" /* 1071 */;
 import PremiumConstants from "PremiumConstants" /* 1388 */;
 import size from "module_2" /* 2 */;
@@ -70,7 +70,7 @@ function getGiftStyleUrl(giftStyle) {
   } else if (unpackModuleId.SEASONAL_COFFEE === giftStyle) {
     return AssetRegistryDefault8;
   } else if (unpackModuleId.NITROWEEN_STANDARD === giftStyle) {
-    const obj = { uri: _modDef13801 };
+    const obj = { uri: _modDef13923 };
     return obj;
   } else {
     return AssetRegistryDefault;
@@ -106,7 +106,7 @@ export function createGiftCodeEmbed(message, forcedTheme) {
       tmp4 = backgroundColor;
       const tmp3 = _require;
       if (obj2.isThemeDark(forcedTheme)) {
-        const tmp3Result = tmp3(4964);
+        const tmp3Result = tmp3(5083);
         const embedBackground = tmp3Result.getEmbedBackground();
         let tmp5Result = subtitleColor(embedBackground);
         if (tmp5Result == null) {
@@ -143,10 +143,10 @@ export function createGiftCodeEmbed(message, forcedTheme) {
               titleColor = titleColor.resolveAssetSource;
               const obj21 = shared;
               if (obj21.isThemeDark(forcedTheme)) {
-                tmp118Result = tmp118(12204);
+                tmp118Result = tmp118(12326);
                 tmp120 = tmp118;
               } else {
-                tmp118Result = tmp118(12205);
+                tmp118Result = tmp118(12327);
                 tmp120 = tmp118;
               }
               const obj2 = { thumbnailUrl: titleColor(tmp118Result).uri, headerText: str8.toUpperCase(), titleText: intl15.string(intl18.t.SdKbX2), titleColor: tmp122, headerColor: dependencyMap, thumbnailBackgroundColor, subtitle: stringResult, subtitleColor };
@@ -204,7 +204,7 @@ export function createGiftCodeEmbed(message, forcedTheme) {
               if (tmp15) {
                 if (null != value.expiresAt) {
                   const expiresAt = value.expiresAt;
-                  const diffResult = expiresAt.diff(_modDef2167(), "h");
+                  const diffResult = expiresAt.diff(_modDef2168(), "h");
                   const tmp19 = importDefault;
                   if (tmp13) {
                     const obj3 = GiftSubscriptionCodeUtils;
@@ -212,7 +212,7 @@ export function createGiftCodeEmbed(message, forcedTheme) {
                     if (obj3.isPendingGiftSubscriptionCode(value)) {
                       const intl3 = tmp22(1112).intl;
                       const obj4 = { hours: diffResult };
-                      formatToPlainStringResult = intl3.formatToPlainString(tmp19(2789).P9ZU7b, obj4);
+                      formatToPlainStringResult = intl3.formatToPlainString(tmp19(2888).P9ZU7b, obj4);
                     }
                   }
                   const intl2 = intl18.intl;
@@ -293,10 +293,10 @@ export function createGiftCodeEmbed(message, forcedTheme) {
                 renderer_EmbedUtils;
                 const tmp81Result2 = shared;
                 if (tmp81Result2.isThemeDark(forcedTheme)) {
-                  tmp90Result = tmp90(14164);
+                  tmp90Result = tmp90(14286);
                   tmp92 = tmp90;
                 } else {
-                  tmp90Result = tmp90(14165);
+                  tmp90Result = tmp90(14287);
                   tmp92 = tmp90;
                 }
                 assetUriForEmbed6 = getAssetUriForEmbed6(tmp90Result);
@@ -319,10 +319,10 @@ export function createGiftCodeEmbed(message, forcedTheme) {
                 renderer_EmbedUtils;
                 const tmp69Result2 = shared;
                 if (tmp69Result2.isThemeDark(forcedTheme)) {
-                  tmp78Result = tmp78(14164);
+                  tmp78Result = tmp78(14286);
                   tmp80 = tmp78;
                 } else {
-                  tmp78Result = tmp78(14165);
+                  tmp78Result = tmp78(14287);
                   tmp80 = tmp78;
                 }
                 assetUriForEmbed6 = getAssetUriForEmbed4(tmp78Result);
@@ -340,10 +340,10 @@ export function createGiftCodeEmbed(message, forcedTheme) {
                     renderer_EmbedUtils;
                     const obj24 = shared;
                     if (obj24.isThemeDark(forcedTheme)) {
-                      tmp137Result = tmp137(14164);
+                      tmp137Result = tmp137(14286);
                       tmp50 = tmp137;
                     } else {
-                      tmp137Result = tmp137(14165);
+                      tmp137Result = tmp137(14287);
                       tmp50 = tmp137;
                     }
                     const assetUriForEmbed7 = getAssetUriForEmbed7(tmp137Result);
@@ -365,10 +365,10 @@ export function createGiftCodeEmbed(message, forcedTheme) {
                 renderer_EmbedUtils;
                 const tmp56Result2 = shared;
                 if (tmp56Result2.isThemeDark(forcedTheme)) {
-                  tmp65Result = tmp65(14164);
+                  tmp65Result = tmp65(14286);
                   tmp67 = tmp65;
                 } else {
-                  tmp65Result = tmp65(14165);
+                  tmp65Result = tmp65(14287);
                   tmp67 = tmp65;
                 }
                 assetUriForEmbed6 = getAssetUriForEmbed2(tmp65Result);
@@ -377,9 +377,9 @@ export function createGiftCodeEmbed(message, forcedTheme) {
                 assetUriForEmbed = assetUriForEmbed1;
               }
               let tmp94 = assetUriForEmbed;
-              const tmp53Result = tmp53(6728);
+              const tmp53Result = tmp53(6847);
               if (tmp53Result.isGameItemSKU(value2)) {
-                const tmp53Result2 = tmp53(6728);
+                const tmp53Result2 = tmp53(6847);
                 const str3 = tmp53Result2.getGameItemThumbnailUrl(value2);
                 let str1;
                 if (str3 != null) {
@@ -398,7 +398,7 @@ export function createGiftCodeEmbed(message, forcedTheme) {
                   const intl11 = tmp53(1112).intl;
                   const formatToPlainString = intl11.formatToPlainString;
                   const t1SOId = tmp53(1112).t.t1SOId;
-                  const tmp50Result = tmp50(4850);
+                  const tmp50Result = tmp50(4969);
                   let str4 = tmp50Result.getName(currentUser);
                   if (str4 == null) {
                     str4 = "";
@@ -421,7 +421,7 @@ export function createGiftCodeEmbed(message, forcedTheme) {
                     const intl13 = tmp53(1112).intl;
                     const formatToPlainString2 = intl13.formatToPlainString;
                     const DDO4Wz = tmp53(1112).t.DDO4Wz;
-                    const tmp50Result4 = tmp50(4850);
+                    const tmp50Result4 = tmp50(4969);
                     let str7 = tmp50Result4.getName(user);
                     if (str7 == null) {
                       str7 = "";
@@ -456,10 +456,10 @@ export function createGiftCodeEmbed(message, forcedTheme) {
                   }
                 }
                 obj8.splashUrl = tmp110;
-                const tmp50Result5 = tmp50(2172);
+                const tmp50Result5 = tmp50(2173);
                 obj8.splashHasRadialGradient = !tmp50Result5.isPremiumSku(value.skuId);
                 let num5 = 0.97;
-                const tmp50Result6 = tmp50(2172);
+                const tmp50Result6 = tmp50(2173);
                 if (tmp50Result6.isPremiumSku(value.skuId)) {
                   num5 = 0.8;
                 }

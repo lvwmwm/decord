@@ -1,23 +1,23 @@
-// Module ID: 14911
-// Function ID: 14912
+// Module ID: 15034
+// Function ID: 15035
 // Name: PrivateChannelRecipientsInviteStore
-// Dependencies: [5411, 8023, 4647, 4643, 6308, 6554, 4706, 4665, 4736, 1386, 1071, 2151, 4850, 9529, 504, 572, 2]
+// Dependencies: [5530, 8143, 4766, 4762, 6427, 6673, 4825, 4784, 4855, 1386, 1071, 2152, 4969, 9649, 504, 572, 2]
 
-// Module 14911 (PrivateChannelRecipientsInviteStore)
+// Module 15034 (PrivateChannelRecipientsInviteStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import StringUtils from "StringUtils" /* 2151 */;
-import ChannelRecord from "ChannelRecord" /* 4647 */;
-import UserUtilsDefault from "UserUtils" /* 4850 */;
-import UserSearchManagerDefault from "UserSearchManager" /* 9529 */;
-import ExperimentStore from "ExperimentStore" /* 5411 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 8023 */;
-import ChannelStore from "ChannelStore" /* 4643 */;
-import ConsentStore from "ConsentStore" /* 6308 */;
-import FrecencyStore from "FrecencyStore" /* 6554 */;
-import GuildMemberStore from "GuildMemberStore" /* 4706 */;
-import GuildStore from "GuildStore" /* 4665 */;
-import RelationshipStore from "RelationshipStore" /* 4736 */;
+import StringUtils from "StringUtils" /* 2152 */;
+import ChannelRecord from "ChannelRecord" /* 4766 */;
+import UserUtilsDefault from "UserUtils" /* 4969 */;
+import UserSearchManagerDefault from "UserSearchManager" /* 9649 */;
+import ExperimentStore from "ExperimentStore" /* 5530 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 8143 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import ConsentStore from "ConsentStore" /* 6427 */;
+import FrecencyStore from "FrecencyStore" /* 6673 */;
+import GuildMemberStore from "GuildMemberStore" /* 4825 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import RelationshipStore from "RelationshipStore" /* 4855 */;
 import UserStore from "UserStore" /* 1386 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;

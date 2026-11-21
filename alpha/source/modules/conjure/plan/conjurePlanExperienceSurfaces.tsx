@@ -1,14 +1,14 @@
-// Module ID: 18430
-// Function ID: 18431
+// Module ID: 18557
+// Function ID: 18558
 // Name: conjurePlanExperienceSurfaces
-// Dependencies: [1112, 4091, 6503, 18117, 18431, 2]
+// Dependencies: [1112, 4190, 6622, 18244, 18558, 2]
 // Exports: conjurePlanDesignExperienceId, conjurePlanExperiencePlacement
 
-// Module 18430 (conjurePlanExperienceSurfaces)
+// Module 18557 (conjurePlanExperienceSurfaces)
 import intl2 from "intl" /* 1112 */;
-import _modDef4091 from "module_4091" /* 4091 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 6503 */;
-import conjurePlanDesign from "conjurePlanDesign" /* 18431 */;
+import _modDef4190 from "module_4190" /* 4190 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6622 */;
+import conjurePlanDesign from "conjurePlanDesign" /* 18558 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/conjure/plan/conjurePlanExperienceSurfaces.tsx");
@@ -20,7 +20,7 @@ export function conjurePlanExperiencePlacement(proposal, experience) {
     return null;
   } else {
     const intl = intl2.intl;
-    let closure_0 = intl.string(_modDef4091["6/3tGY"]);
+    let closure_0 = intl.string(_modDef4190["6/3tGY"]);
     let items = [];
     const surfaces3 = experience.surfaces;
     const tmp6 = importDefault;
@@ -53,7 +53,7 @@ export function conjurePlanExperiencePlacement(proposal, experience) {
       if (app_channel_names.length > 0) {
         app_channels = app_channel_names.map((name) => ({ name }));
       } else {
-        let obj = { name: tmp6(18117)(experience.name) };
+        let obj = { name: tmp6(18244)(experience.name) };
         app_channels = [obj];
       }
     }

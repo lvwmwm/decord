@@ -1,10 +1,10 @@
-// Module ID: 10415
-// Function ID: 10416
+// Module ID: 10535
+// Function ID: 10536
 // Name: useNavigatorBackHandler
 // Dependencies: [19, 1500, 1378, 2]
 // Exports: default
 
-// Module 10415 (useNavigatorBackHandler)
+// Module 10535 (useNavigatorBackHandler)
 import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

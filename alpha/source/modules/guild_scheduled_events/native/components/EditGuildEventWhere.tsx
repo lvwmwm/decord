@@ -1,24 +1,24 @@
-// Module ID: 7514
-// Function ID: 7515
+// Module ID: 7634
+// Function ID: 7635
 // Name: EditGuildEventWhere
-// Dependencies: [32, 19, 4643, 4726, 6514, 4649, 1071, 21, 4794, 1112, 7458, 504, 1500, 7515, 7479, 5385, 5392, 2018, 7454, 4803, 7476, 7671, 2167, 7672, 7874, 2]
+// Dependencies: [32, 19, 4762, 4845, 6633, 4768, 1071, 21, 4913, 1112, 7578, 504, 1500, 7635, 7599, 5504, 5511, 2018, 7574, 4922, 7596, 7791, 2168, 7792, 7994, 2]
 // Exports: default
 
-// Module 7514 (EditGuildEventWhere)
+// Module 7634 (EditGuildEventWhere)
 import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 2018 */;
-import _modDef2167 from "module_2167" /* 2167 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4803 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6514 */;
-import EditGuildEventUtils from "EditGuildEventUtils" /* 7454 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 7874 */;
+import _modDef2168 from "module_2168" /* 2168 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4922 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6633 */;
+import EditGuildEventUtils from "EditGuildEventUtils" /* 7574 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 7994 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4643 */;
-import PermissionStore from "PermissionStore" /* 4726 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4649 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4768 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4794 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -202,10 +202,10 @@ export default function EditGuildEventWhere(guild) {
       _undefined(null);
       const obj = { entityType, scheduledEndTime: "Array" };
       if (entityType === constants.EXTERNAL) {
-        let obj2 = _modDef2167(guildEvent.scheduledStartTime);
+        let obj2 = _modDef2168(guildEvent.scheduledStartTime);
         const tmp2 = importDefault;
         if (obj2 == null) {
-          obj2 = tmp2(2167)();
+          obj2 = tmp2(2168)();
         }
         const addResult = obj2.add(1, "hour");
         obj.scheduledEndTime = addResult.toISOString();

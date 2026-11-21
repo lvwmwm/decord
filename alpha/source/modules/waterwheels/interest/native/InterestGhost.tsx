@@ -1,15 +1,15 @@
-// Module ID: 17716
-// Function ID: 17717
+// Module ID: 17841
+// Function ID: 17842
 // Name: InterestGhost
-// Dependencies: [19, 17, 21, 4794, 575, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 2]
 // Exports: default
 
-// Module 17716 (InterestGhost)
+// Module 17841 (InterestGhost)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4794 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;

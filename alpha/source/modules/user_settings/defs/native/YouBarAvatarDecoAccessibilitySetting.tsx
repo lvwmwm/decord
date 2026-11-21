@@ -1,15 +1,15 @@
-// Module ID: 16694
-// Function ID: 16695
+// Module ID: 16817
+// Function ID: 16818
 // Name: YouBarAvatarDecoAccessibilitySetting
-// Dependencies: [4795, 8592, 11817, 1112, 504, 15524, 2]
+// Dependencies: [4914, 8712, 11937, 1112, 504, 15647, 2]
 
-// Module 16694 (YouBarAvatarDecoAccessibilitySetting)
+// Module 16817 (YouBarAvatarDecoAccessibilitySetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1112 */;
-import SettingsConstants from "SettingsConstants" /* 8592 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 15524 */;
-import AccessibilityStore from "AccessibilityStore" /* 4795 */;
-import SettingBuilders from "SettingBuilders" /* 11817 */;
+import SettingsConstants from "SettingsConstants" /* 8712 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 15647 */;
+import AccessibilityStore from "AccessibilityStore" /* 4914 */;
+import SettingBuilders from "SettingBuilders" /* 11937 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

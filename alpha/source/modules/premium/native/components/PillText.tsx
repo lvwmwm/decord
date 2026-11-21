@@ -1,16 +1,16 @@
-// Module ID: 9277
-// Function ID: 9278
+// Module ID: 9397
+// Function ID: 9398
 // Name: PillText
-// Dependencies: [1071, 21, 4794, 575, 9278, 5349, 5385, 2]
+// Dependencies: [1071, 21, 4913, 575, 9398, 5468, 5504, 2]
 // Exports: default
 
-// Module 9277 (PillText)
+// Module 9397 (PillText)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
-import LinearGradientDefault from "LinearGradient" /* 5349 */;
-import usePremiumPrimaryGradientColorsDefault from "usePremiumPrimaryGradientColors" /* 9278 */;
-import createStyles from "createStyles" /* 4794 */;
+import LinearGradientDefault from "LinearGradient" /* 5468 */;
+import usePremiumPrimaryGradientColorsDefault from "usePremiumPrimaryGradientColors" /* 9398 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

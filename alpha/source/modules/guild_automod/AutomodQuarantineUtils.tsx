@@ -1,23 +1,23 @@
-// Module ID: 12288
-// Function ID: 12289
+// Module ID: 12410
+// Function ID: 12411
 // Name: AutomodQuarantineUtils
-// Dependencies: [19, 9305, 502, 4706, 4665, 4726, 4827, 1071, 4712, 1081, 563, 4732, 1112, 9306, 9307, 8074, 2]
+// Dependencies: [19, 9425, 502, 4825, 4784, 4845, 4946, 1071, 4831, 1081, 563, 4851, 1112, 9426, 9427, 8194, 2]
 // Exports: useCurrentUserHasAutomodQuarantinedProfile, useGuildAutomodProfileQuarantineErrors, useOpenFixQuarantinedProfileModal
 
-// Module 12288 (AutomodQuarantineUtils)
+// Module 12410 (AutomodQuarantineUtils)
 import UserSettingsConstants from "UserSettingsConstants" /* 1081 */;
 import intl4 from "intl" /* 1112 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 4712 */;
-import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4732 */;
-import openUserSettings2 from "openUserSettings" /* 8074 */;
-import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 9307 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4831 */;
+import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4851 */;
+import openUserSettings2 from "openUserSettings" /* 8194 */;
+import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 9427 */;
 import react from "react" /* 19 */;
-import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 9305 */;
+import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 9425 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 4706 */;
-import GuildStore from "GuildStore" /* 4665 */;
-import PermissionStore from "PermissionStore" /* 4726 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4827 */;
+import GuildMemberStore from "GuildMemberStore" /* 4825 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4946 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 

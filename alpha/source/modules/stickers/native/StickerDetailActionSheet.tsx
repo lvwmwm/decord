@@ -1,34 +1,34 @@
-// Module ID: 11266
-// Function ID: 11267
+// Module ID: 11386
+// Function ID: 11387
 // Name: StickerDetailActionSheet
-// Dependencies: [5, 32, 19, 17, 4665, 1386, 6495, 11151, 1071, 5023, 21, 4794, 1378, 575, 11248, 9891, 9889, 5008, 11249, 5476, 1112, 504, 1494, 1255, 5385, 11263, 5392, 11265, 11250, 11256, 2172, 5456, 4619, 6267, 11267, 2119, 5531, 6392, 6397, 11268, 8074, 11045, 6902, 10832, 11269, 7589, 11209, 5022, 2]
+// Dependencies: [5, 32, 19, 17, 4784, 1386, 6614, 11271, 1071, 5142, 21, 4913, 1378, 575, 11368, 10011, 10009, 5127, 11369, 5595, 1112, 504, 1494, 1255, 5504, 11383, 5511, 11385, 11370, 11376, 2173, 4738, 6386, 11387, 2119, 5650, 6511, 6516, 11388, 8194, 11165, 7022, 10952, 11389, 7709, 11329, 5141, 2]
 
-// Module 11266 (StickerDetailActionSheet)
+// Module 11386 (StickerDetailActionSheet)
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import asyncRequire from "asyncRequire" /* 2119 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5008 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5023 */;
-import StickersUtils from "StickersUtils" /* 6267 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6392 */;
-import JoinGuildRefusedError from "JoinGuildRefusedError" /* 6397 */;
-import openUserSettings from "openUserSettings" /* 8074 */;
-import StickersHooks from "StickersHooks" /* 11248 */;
-import stickers_StickersUtils from "stickers/StickersUtils" /* 11250 */;
-import openStickerPackDetailActionSheet from "openStickerPackDetailActionSheet" /* 11256 */;
-import showStickerDetailActionSheet from "showStickerDetailActionSheet" /* 11265 */;
-import openStickersPremiumUpsellAlertDefault from "openStickersPremiumUpsellAlert" /* 11269 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5142 */;
+import StickersUtils from "StickersUtils" /* 6386 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6511 */;
+import JoinGuildRefusedError from "JoinGuildRefusedError" /* 6516 */;
+import openUserSettings from "openUserSettings" /* 8194 */;
+import StickersHooks from "StickersHooks" /* 11368 */;
+import stickers_StickersUtils from "stickers/StickersUtils" /* 11370 */;
+import openStickerPackDetailActionSheet from "openStickerPackDetailActionSheet" /* 11376 */;
+import showStickerDetailActionSheet from "showStickerDetailActionSheet" /* 11385 */;
+import openStickersPremiumUpsellAlertDefault from "openStickersPremiumUpsellAlert" /* 11389 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore from "GuildStore" /* 4665 */;
+import GuildStore from "GuildStore" /* 4784 */;
 import UserStore from "UserStore" /* 1386 */;
-import StickersStore from "StickersStore" /* 6495 */;
-import StickerPickerConstants from "StickerPickerConstants" /* 11151 */;
+import StickersStore from "StickersStore" /* 6614 */;
+import StickerPickerConstants from "StickerPickerConstants" /* 11271 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
 import size from "module_2" /* 2 */;
 
@@ -168,7 +168,7 @@ function UnavailableStickerDetail(arg0) {
   let intl2;
   let items2;
   let items3;
-  let obj10;
+  let obj9;
   let renderableSticker;
   let stringResult;
   ({ renderableSticker, channel } = arg0);
@@ -177,9 +177,9 @@ function UnavailableStickerDetail(arg0) {
   const tmp = closure_24();
   const currentUser = UserStore.getCurrentUser();
   let obj = require("PremiumUtils");
-  let obj2 = react;
   const items = [channel.guild_id];
   const result = obj.canUseCustomStickersEverywhere(currentUser);
+  const tmp3 = importDefault;
   importDefault = react.useMemo(() => {
     let DM_CHANNEL;
     if (null != channel.guild_id) {
@@ -189,35 +189,30 @@ function UnavailableStickerDetail(arg0) {
     }
     return { page: DM_CHANNEL, section: constants2.STICKER_POPOUT };
   }, items);
-  let obj3 = channel(stickerAssetUrl[31]);
-  let isTidaMediaTakedownRegion = obj3.useIsTidaMediaTakedownRegion();
-  const DeveloperMode = channel(stickerAssetUrl[32]).DeveloperMode;
-  if (isTidaMediaTakedownRegion) {
-    isTidaMediaTakedownRegion = DeveloperMode.useSetting();
-  }
-  const tmp6Result = channel(stickerAssetUrl[33]);
-  stickerAssetUrl = tmp6Result.getStickerAssetUrl(renderableSticker);
+  const DeveloperMode = channel(stickerAssetUrl[31]).DeveloperMode;
+  let setting = DeveloperMode.useSetting();
+  let obj2 = channel(stickerAssetUrl[32]);
+  stickerAssetUrl = obj2.getStickerAssetUrl(renderableSticker);
   const items1 = [stickerAssetUrl];
-  let obj4 = { style: tmp.guildEmojiTopContainer, children: items2 };
-  const callback = obj2.useCallback(() => {
+  let obj3 = { style: tmp.guildEmojiTopContainer, children: items2 };
+  const callback = react.useCallback(() => {
     if (null != stickerAssetUrl) {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { stickerUrl: tmp };
-      obj.openLazy(asyncRequire(11267, dependencyMap.paths), "StickerOptionsActionSheet", obj2, "stack");
+      obj.openLazy(asyncRequire(11387, dependencyMap.paths), "StickerOptionsActionSheet", obj2, "stack");
     }
   }, items1);
-  items2 = [closure_21(tmp3(tmp4[41]), { sticker: renderableSticker, size: 48 }), , ];
-  let obj5 = { style: tmp.guildEmojiDescription, children: items3 };
-  items3 = [, ];
-  const obj6 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", children: renderableSticker.name };
-  items3[0] = closure_21(channel(stickerAssetUrl[24]).Text, obj6);
-  const obj7 = { style: tmp.description, variant: "body-sm/medium", children: stringResult };
-  const Text = tmp6(tmp4[24]).Text;
-  const intl = tmp6(tmp4[20]).intl;
+  items2 = [closure_21(require("Sticker"), { sticker: renderableSticker, size: 48 }), , ];
+  let obj4 = { style: tmp.guildEmojiDescription, children: items3 };
+  let obj5 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", children: renderableSticker.name };
+  items3 = [closure_21(channel(stickerAssetUrl[24]).Text, obj5), ];
+  const obj6 = { style: tmp.description, variant: "body-sm/medium", children: stringResult };
+  const Text = channel(stickerAssetUrl[24]).Text;
+  const intl = channel(stickerAssetUrl[20]).intl;
   if (result) {
     stringResult = intl.string(tmp6(tmp4[20]).t.vZaScH);
   } else {
-    const obj8 = {
+    const obj7 = {
       openPremiumSettings() {
           const obj = ActionSheetActionCreatorsDefault;
           obj.hideActionSheet();
@@ -229,22 +224,22 @@ function UnavailableStickerDetail(arg0) {
           obj4.openUserSettings(obj5);
         }
     };
-    stringResult = intl.format(tmp6(tmp4[20]).t.hGWuxU, obj8);
+    stringResult = intl.format(tmp6(tmp4[20]).t.hGWuxU, obj7);
   }
-  items3[1] = closure_21(Text, obj7);
-  items2[1] = closure_23(closure_6, obj5);
-  if (isTidaMediaTakedownRegion) {
-    isTidaMediaTakedownRegion = null != stickerAssetUrl;
+  items3[1] = closure_21(Text, obj6);
+  items2[1] = closure_23(closure_6, obj4);
+  if (setting) {
+    setting = null != stickerAssetUrl;
   }
-  if (isTidaMediaTakedownRegion) {
-    const obj9 = { accessibilityLabel: intl2.string(channel(stickerAssetUrl[20]).t.PdRCRg), style: tmp.moreMenuIcon, onPress: callback, children: closure_21(MoreHorizontalIcon, obj10) };
+  if (setting) {
+    const obj8 = { accessibilityLabel: intl2.string(channel(stickerAssetUrl[20]).t.PdRCRg), style: tmp.moreMenuIcon, onPress: callback, children: closure_21(MoreHorizontalIcon, obj9) };
     intl2 = tmp6(tmp4[20]).intl;
-    obj10 = { color: require("native").colors.INTERACTIVE_TEXT_DEFAULT };
-    MoreHorizontalIcon = tmp6(tmp4[42]).MoreHorizontalIcon;
-    isTidaMediaTakedownRegion = tmp12(closure_8, obj9);
+    obj9 = { color: tmp3(stickerAssetUrl[13]).colors.INTERACTIVE_TEXT_DEFAULT };
+    MoreHorizontalIcon = tmp6(tmp4[41]).MoreHorizontalIcon;
+    setting = tmp12(closure_8, obj8);
   }
-  items2[2] = isTidaMediaTakedownRegion;
-  return closure_23(closure_6, obj4);
+  items2[2] = setting;
+  return closure_23(closure_6, obj3);
 }
 let react = react_mod;
 ({ View: metroRequire, ActivityIndicator: metroImportDefault, Pressable: metroImportAll } = react_native);
@@ -304,7 +299,7 @@ function GuildStickerDetail(sticker) {
   let obj2 = sticker(guild[21]);
   const items = [ref];
   const stateFromStores = obj2.useStateFromStores(items, () => GuildStore.getGuild(sticker.guild_id));
-  const tmp9 = null != stateFromStores;
+  let tmp35Result5 = null != stateFromStores;
   let hasItem = null == stateFromStores;
   if (!hasItem) {
     const features = stateFromStores.features;
@@ -317,15 +312,13 @@ function GuildStickerDetail(sticker) {
   const currentUser = UserStore.getCurrentUser();
   let obj3 = channel(tmp7[30]);
   let result = obj3.canUseCustomStickersEverywhere(currentUser);
-  const tmp6Result = sticker(guild[31]);
-  const isTidaMediaTakedownRegion = tmp6Result.useIsTidaMediaTakedownRegion();
-  const DeveloperMode = tmp6(tmp7[32]).DeveloperMode;
+  const DeveloperMode = tmp6(tmp7[31]).DeveloperMode;
+  let setting = DeveloperMode.useSetting();
   let id = sticker.id;
-  const setting = DeveloperMode.useSetting();
   const tmpResult = tmp();
   let closure_1 = tmpResult;
-  const tmp6Result4 = sticker(guild[14]);
-  const favoriteStickerIds = tmp6Result4.useFavoriteStickerIds();
+  const tmp6Result = sticker(guild[14]);
+  const favoriteStickerIds = tmp6Result.useFavoriteStickerIds();
   const hasItem1 = favoriteStickerIds.includes(id);
   const items1 = [tmpResult];
   const callback = obj.useCallback((arg0) => {
@@ -349,7 +342,6 @@ function GuildStickerDetail(sticker) {
     return tmp8(StarOutlineIcon, { style });
   }, items1);
   const items2 = [hasItem1, id];
-  let tmp37Result5 = isTidaMediaTakedownRegion;
   const callback1 = obj.useCallback(() => {
     let intl;
     let intl2;
@@ -372,18 +364,15 @@ function GuildStickerDetail(sticker) {
       open("STICKER_FAVORITED", obj4);
     }
   }, items2);
-  if (isTidaMediaTakedownRegion) {
-    tmp37Result5 = setting;
-  }
-  const tmp6Result5 = sticker(guild[33]);
-  stickerAssetUrl = tmp6Result5.getStickerAssetUrl(sticker);
+  const tmp6Result3 = sticker(guild[32]);
+  stickerAssetUrl = tmp6Result3.getStickerAssetUrl(sticker);
   const items3 = [stickerAssetUrl];
   const items4 = [channel.guild_id];
   const callback2 = obj.useCallback(() => {
     if (null != stickerAssetUrl) {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { stickerUrl: tmp };
-      obj.openLazy(asyncRequire(11267, dependencyMap.paths), "StickerOptionsActionSheet", obj2, "stack");
+      obj.openLazy(asyncRequire(11387, dependencyMap.paths), "StickerOptionsActionSheet", obj2, "stack");
     }
   }, items3);
   analyticsLocation = obj.useMemo(() => {
@@ -397,8 +386,8 @@ function GuildStickerDetail(sticker) {
   }, items4);
   let obj4 = { guild_id: channel.getGuildId() };
   const useRef = obj.useRef;
-  const tmp6Result6 = sticker(guild[36]);
-  let merged = Object.assign(tmp6Result6.collectChannelAnalyticsMetadata(channel));
+  const tmp6Result4 = sticker(guild[35]);
+  let merged = Object.assign(tmp6Result4.collectChannelAnalyticsMetadata(channel));
   const items5 = [sticker.id, first1];
   const current = useRef(obj4).current;
   const effect = obj.useEffect(() => {
@@ -437,7 +426,7 @@ function GuildStickerDetail(sticker) {
                 id = undefined;
                 c2 = 1;
                 c3 = 1;
-                const obj4 = { value: channel(guild[39])(id.id), done: false };
+                const obj4 = { value: channel(guild[38])(id.id), done: false };
                 return obj4;
               }
             } else if (arg0 === 1) {
@@ -467,15 +456,15 @@ function GuildStickerDetail(sticker) {
       fetchDiscoverableGuild();
     }
   }, items5);
-  const tmp28 = sticker.guild_id === channel.getGuildId();
+  const tmp26 = sticker.guild_id === channel.getGuildId();
   let intl = tmp6(tmp7[20]).intl;
   if (result) {
     let string2Result1;
     const string2 = intl.string;
     const t2 = tmp6(tmp7[20]).t;
-    if (tmp9) {
+    if (tmp35Result5) {
       let string2Result;
-      if (tmp28) {
+      if (tmp26) {
         string2Result = string2(t2.fZ0DiG);
       } else {
         string2Result = string2(t2["1f6D9m"]);
@@ -490,10 +479,10 @@ function GuildStickerDetail(sticker) {
     str = "Custom Sticker Popout";
     stringResult = string2Result1;
     flag2 = false;
-  } else if (tmp9) {
+  } else if (tmp35Result5) {
     const string = intl.string;
     const t = tmp6(tmp7[20]).t;
-    if (tmp28) {
+    if (tmp26) {
       stringResult = string(t.jNphpt);
       flag = true;
       str = "Custom Sticker Popout (Upsell)";
@@ -545,26 +534,28 @@ function GuildStickerDetail(sticker) {
       track(OPEN_POPOUT, obj);
     }
   }, items6);
-  let tmp37Result6 = null;
+  let tmp35Result6 = null;
   if (first1) {
     const obj7 = { style: tmp2.guildEmojiTopContainer, children: items7 };
     const obj8 = { sticker, size: 48 };
-    items7 = [closure_21(tmp15(tmp7[41]), obj8), , ];
+    items7 = [closure_21(tmp15(tmp7[40]), obj8), , ];
     const obj10 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", children: sticker.name };
     const obj9 = { style: tmp2.guildEmojiDescription, children: items8 };
     items8 = [closure_21(tmp6(tmp7[24]).Text, obj10), ];
     const obj11 = { style: tmp2.description, variant: "body-sm/medium", children: stringResult };
     items8[1] = closure_21(sticker(guild[24]).Text, obj11);
     items7[1] = closure_23(stickerAssetUrl, obj9);
-    let tmp40Result = tmp37Result5 && null != stickerAssetUrl;
-    if (tmp40Result) {
+    if (setting) {
+      setting = null != stickerAssetUrl;
+    }
+    if (setting) {
       const obj12 = { accessibilityLabel: intl2.string(sticker(guild[20]).t.PdRCRg), style: tmp2.moreMenuIcon, onPress: callback2, children: closure_21(MoreHorizontalIcon, obj13) };
       intl2 = tmp6(tmp7[20]).intl;
       obj13 = { color: tmp15(guild[13]).colors.INTERACTIVE_TEXT_DEFAULT };
-      MoreHorizontalIcon = tmp6(tmp7[42]).MoreHorizontalIcon;
-      tmp40Result = tmp40(obj6, obj12);
+      MoreHorizontalIcon = tmp6(tmp7[41]).MoreHorizontalIcon;
+      setting = tmp38(obj6, obj12);
     }
-    items7[2] = tmp40Result;
+    items7[2] = setting;
     const items9 = [closure_23(stickerAssetUrl, obj7), , , , ];
     if (flag) {
       const obj14 = { style: tmp2.buttonContainer, children: items10 };
@@ -574,17 +565,17 @@ function GuildStickerDetail(sticker) {
               return openStickersPremiumUpsellAlertDefault(analyticsLocation);
             }
       };
-      const tmp15Result = tmp15(guild[43]);
+      const tmp15Result = tmp15(guild[42]);
       intl3 = tmp6(tmp7[20]).intl;
       items10 = [closure_21(tmp15Result, obj15), ];
       const obj16 = { style: obj17 };
       obj17 = { height: tmp15(guild[13]).space.PX_16 };
       items10[1] = closure_21(stickerAssetUrl, obj16);
-      flag = tmp37(tmp39, obj14);
+      flag = tmp35(tmp37, obj14);
     }
     items9[1] = flag;
-    let tmp37Result = tmp33;
-    if (tmp37Result) {
+    let tmp35Result = tmp31;
+    if (tmp35Result) {
       const obj18 = { style: tmp2.buttonContainer, children: items11 };
       const obj19 = {
         text: intl4.string(sticker(guild[20]).t.riu2R5),
@@ -594,7 +585,7 @@ function GuildStickerDetail(sticker) {
                 let obj = GuildActionCreatorsDefault;
                 const joinGuildResult = obj.joinGuild(id);
                 const nextPromise = joinGuildResult.then(() => {
-                  const obj = channel(guild[37]);
+                  const obj = channel(guild[36]);
                   const result = obj.transitionToGuildSync(id);
                 });
                 nextPromise.catch(JoinGuildRefusedError.ignoreJoinGuildRefused);
@@ -607,38 +598,35 @@ function GuildStickerDetail(sticker) {
       const obj20 = { style: obj21 };
       obj21 = { height: tmp15(guild[13]).space.PX_16 };
       items11[1] = closure_21(stickerAssetUrl, obj20);
-      tmp37Result = tmp37(tmp39, obj18);
+      tmp35Result = tmp35(tmp37, obj18);
     }
-    items9[2] = tmp37Result;
-    let tmp37Result4 = null != stateFromStores || null != guild;
-    if (tmp37Result4) {
+    items9[2] = tmp35Result;
+    let tmp35Result4 = null != stateFromStores || null != guild;
+    if (tmp35Result4) {
       const obj22 = { style: tmp2.divider };
-      const items12 = [closure_21(tmp6(tmp7[45]).FormDivider, obj22), ];
-      const tmp15Result2 = tmp15(guild[46]);
+      const items12 = [closure_21(tmp6(tmp7[44]).FormDivider, obj22), ];
+      const tmp15Result2 = tmp15(guild[45]);
       if (guild == null) {
         guild = stateFromStores;
       }
-      const obj23 = { guild, showingJoinGuildCta: !flag2 && !tmp9 && null != guild, hasJoinedGuild: tmp9, title: string3Result };
+      const obj23 = { guild, showingJoinGuildCta: !flag2 && !tmp35Result5 && null != guild, hasJoinedGuild: tmp35Result5, title: string3Result };
       const intl5 = tmp6(tmp7[20]).intl;
       const string3 = intl5.string;
       const t3 = tmp6(tmp7[20]).t;
-      if (tmp9) {
+      if (tmp35Result5) {
         string3Result = string3(t3.kx6pEG);
       } else {
         string3Result = string3(t3.pDE7Gb);
       }
       const obj24 = { children: items12 };
       items12[1] = closure_21(tmp15Result2, obj23);
-      tmp37Result4 = tmp37(tmp38, obj24);
+      tmp35Result4 = tmp35(tmp36, obj24);
     }
-    items9[3] = tmp37Result4;
-    if (tmp37Result5) {
-      tmp37Result5 = tmp9;
-    }
-    if (tmp37Result5) {
+    items9[3] = tmp35Result4;
+    if (tmp35Result5) {
       let string4Result;
       const obj25 = { style: tmp2.divider };
-      const items13 = [closure_21(tmp6(tmp7[45]).FormDivider, obj25), ];
+      const items13 = [closure_21(tmp6(tmp7[44]).FormDivider, obj25), ];
       const obj26 = { style: tmp2.favoriteContainer, children: closure_21(Button2, obj27) };
       Button2 = tmp6(tmp7[26]).Button;
       const intl6 = tmp6(tmp7[20]).intl;
@@ -656,13 +644,13 @@ function GuildStickerDetail(sticker) {
       }
       const obj28 = { children: items13 };
       items13[1] = closure_21(stickerAssetUrl, obj26);
-      tmp37Result5 = tmp37(tmp38, obj28);
+      tmp35Result5 = tmp35(tmp36, obj28);
     }
     const obj29 = { children: items9 };
-    items9[4] = tmp37Result5;
-    tmp37Result6 = tmp37(tmp38, obj29);
+    items9[4] = tmp35Result5;
+    tmp35Result6 = tmp35(tmp36, obj29);
   }
-  return tmp37Result6;
+  return tmp35Result6;
 }
 const memoResult = react.memo(function StickerDetailActionSheet(chatInputRef) {
   let channel;
@@ -684,7 +672,7 @@ const memoResult = react.memo(function StickerDetailActionSheet(chatInputRef) {
     }
     const obj3 = { startExpanded: true, children: closure_21(metroRequire, obj4) };
     obj4 = { style: tmp.content, children: tmp7Result };
-    const BottomSheet = tmp2(5022).BottomSheet;
+    const BottomSheet = tmp2(5141).BottomSheet;
     return closure_21(BottomSheet, obj3);
   }
   tmp7Result = tmp7Result2;

@@ -1,10 +1,10 @@
-// Module ID: 8172
-// Function ID: 8173
+// Module ID: 8292
+// Function ID: 8293
 // Name: getTimestampString
-// Dependencies: [1112, 2167, 2]
+// Dependencies: [1112, 2168, 2]
 // Exports: default
 
-// Module 8172 (getTimestampString)
+// Module 8292 (getTimestampString)
 import intl2 from "intl" /* 1112 */;
 import size from "module_2" /* 2 */;
 
@@ -25,8 +25,8 @@ export default function getTimestampString(arg0, fn) {
   let time;
   const tmp2 = time;
   const tmp = importDefault;
-  let obj = require("module_2167")();
-  const diffResult = obj.diff(require("module_2167")(arg0), "s");
+  let obj = require("module_2168")();
+  const diffResult = obj.diff(require("module_2168")(arg0), "s");
   let tmp4;
   if (null != fn) {
     tmp4 = fn();

@@ -1,17 +1,17 @@
-// Module ID: 13379
-// Function ID: 13380
+// Module ID: 13501
+// Function ID: 13502
 // Name: useUserProfileMutuals
-// Dependencies: [32, 19, 8023, 6431, 6837, 504, 12, 7906, 2]
+// Dependencies: [32, 19, 8143, 6550, 6956, 504, 12, 8026, 2]
 // Exports: default
 
-// Module 13379 (useUserProfileMutuals)
+// Module 13501 (useUserProfileMutuals)
 import _mod12 from "module_12" /* 12 */;
 import react from "react" /* 19 */;
-import reactDefault from "react" /* 7906 */;
+import reactDefault from "react" /* 8026 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 8023 */;
-import SortedGuildStore from "SortedGuildStore" /* 6431 */;
-import UserProfileStore from "UserProfileStore" /* 6837 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 8143 */;
+import SortedGuildStore from "SortedGuildStore" /* 6550 */;
+import UserProfileStore from "UserProfileStore" /* 6956 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

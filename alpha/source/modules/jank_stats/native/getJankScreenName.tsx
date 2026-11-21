@@ -1,13 +1,13 @@
-// Module ID: 17400
-// Function ID: 17401
+// Module ID: 17524
+// Function ID: 17525
 // Name: getJankScreenName
-// Dependencies: [17401, 4971, 17402, 2]
+// Dependencies: [17525, 5090, 17526, 2]
 // Exports: default, getBaseScreenName, getChatPanelScreenName, getComponentDisplayName, getPanelListScreenName, getWideViewScreenName, isModalScreenName
 
-// Module 17400 (getJankScreenName)
-import RootNavigationRef from "RootNavigationRef" /* 4971 */;
-import getScreenAnalyticsName from "getScreenAnalyticsName" /* 17402 */;
-import JankScreenConstants from "JankScreenConstants" /* 17401 */;
+// Module 17524 (getJankScreenName)
+import RootNavigationRef from "RootNavigationRef" /* 5090 */;
+import getScreenAnalyticsName from "getScreenAnalyticsName" /* 17526 */;
+import JankScreenConstants from "JankScreenConstants" /* 17525 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -15,7 +15,7 @@ let c3;
 let closure_4;
 let hasOwnProperty;
 let metroRequire;
-const f111792 = (name) => name.name === tabs;
+const f112183 = (name) => name.name === tabs;
 function resolveScreenName(items) {
   const params = tmp.params;
   if (items[items.length - 1].name === channel) {
@@ -181,7 +181,7 @@ export default function getJankScreenName() {
               let tmp14 = tmp11;
               if (name === channel) {
                 let routes1 = tmp9.routes;
-                let found = routes1.find(f111792);
+                let found = routes1.find(f112183);
                 if (found == null) {
                   found = tmp11;
                 }
@@ -240,7 +240,7 @@ export default function getJankScreenName() {
         }
         ({ focused, rendered } = obj5);
         if (0 === focused.length) {
-          let obj9 = { screen: metroRequire, expectedScreenIds: "", focusedRoute: "Array", chatScreens: "SIDE_GROUP_SEAT_2" };
+          let obj9 = { screen: metroRequire, expectedScreenIds: "", focusedRoute: "Array", chatScreens: "(function VideoQuestModalContentCompletedTsx1(){let[withDelay,ANIMATION_DELAY,withSpring,isComponentMounted,ANIMATED_CONTENT_SPRING_CONFIG,interpolate,ANIMATED_CONTENT_OFFSET_Y]=this.__closure;return{opacity:withDelay(ANIMATION_DELAY,withSpring(isComponentMounted.get(),ANIMATED_CONTENT_SPRING_CONFIG)),transform:[{translateY:withDelay(ANIMATION_DELAY,withSpring(interpolate(isComponentMounted.get(),[0,1],[ANIMATED_CONTENT_OFFSET_Y,0]),ANIMATED_CONTENT_SPRING_CONFIG))}]};})" };
           obj10 = obj9;
         } else {
           obj10 = { screen: resolveScreenName(focused), expectedScreenIds: mapped1.join(","), focusedRoute: focused[focused.length - 1], chatScreens: tmp17 };
@@ -327,7 +327,7 @@ export function getPanelListScreenName() {
         let tmp6 = tmp3;
         if (name === channel) {
           let routes1 = rootState.routes;
-          let found = routes1.find(f111792);
+          let found = routes1.find(f112183);
           if (found == null) {
             found = tmp3;
           }

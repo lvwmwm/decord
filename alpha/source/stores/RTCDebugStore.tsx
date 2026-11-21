@@ -1,25 +1,25 @@
-// Module ID: 5558
-// Function ID: 5559
+// Module ID: 5677
+// Function ID: 5678
 // Name: RTCDebugStore
-// Dependencies: [32, 2131, 1386, 1071, 5539, 5559, 5560, 572, 504, 2]
+// Dependencies: [32, 2131, 1386, 1071, 5658, 5678, 5679, 572, 504, 2]
 // Exports: getLastGraphValue, keySection, parseSection
 
-// Module 5558 (RTCDebugStore)
+// Module 5677 (RTCDebugStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants2 from "Constants" /* 1071 */;
-import RTCDebugActionCreatorsAll from "RTCDebugActionCreators" /* 5559 */;
+import RTCDebugActionCreatorsAll from "RTCDebugActionCreators" /* 5678 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import MediaEngineStore from "MediaEngineStore" /* 2131 */;
 import UserStore from "UserStore" /* 1386 */;
-import Constants from "Constants" /* 5539 */;
+import Constants from "Constants" /* 5658 */;
 import size from "module_2" /* 2 */;
 
 let _null, closure_11, obj, stats;
 
 let c9;
 let metroImportAll;
-const f87751 = (item) => {
+const f88135 = (item) => {
   closure_1_12[item] = {};
 };
 function updateStats(arr, arg1, timestamp) {
@@ -163,7 +163,7 @@ let c16 = false;
 let c17 = null;
 const map1 = new Map();
 let values = Object.values(MediaEngineContextTypes);
-let item = values.forEach(f87751);
+let item = values.forEach(f88135);
 const Store = get_initializedDefault.Store;
 class RTCDebugStore extends Store {
   initialize() {
@@ -330,7 +330,7 @@ let obj2 = {
       if (0 !== path.length) {
         replayConnection = mediaEngine.createReplayConnection(MediaEngineContextTypes.DEFAULT, path);
         if (null != replayConnection) {
-          replayConnection.on(replayConnection(5560).BaseConnectionEvent.Video, (userId, arg1, arg2, arg3) => {
+          replayConnection.on(replayConnection(5679).BaseConnectionEvent.Video, (userId, arg1, arg2, arg3) => {
             let str;
             let num = arg3;
             obj = { type: "RTC_DEBUG_MODAL_UPDATE_VIDEO_OUTPUT", mediaEngineConnectionId: replayConnection.mediaEngineConnectionId, userId, videoSsrc: num, streamId: str };
@@ -364,7 +364,7 @@ let obj2 = {
     if (null != channelId.channelId) {
       const _Object = Object;
       const values = Object.values(MediaEngineContextTypes);
-      const item = values.forEach(f87751);
+      const item = values.forEach(f88135);
       map.clear();
       map1.clear();
     }

@@ -1,14 +1,14 @@
-// Module ID: 10483
-// Function ID: 10484
+// Module ID: 10603
+// Function ID: 10604
 // Name: MediaViewerPager
-// Dependencies: [32, 19, 21, 8103, 8102, 10032, 10472, 1653, 10470, 4979, 5054, 8098, 1378, 10474, 10484, 10485, 2]
+// Dependencies: [32, 19, 21, 8223, 8222, 10152, 10592, 1653, 10590, 5098, 5173, 8218, 1378, 10594, 10604, 10605, 2]
 
-// Module 10483 (MediaViewerPager)
+// Module 10603 (MediaViewerPager)
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5054 */;
-import useMediaViewerSources from "useMediaViewerSources" /* 8098 */;
-import MediaViewerItemPresenterDefault from "MediaViewerItemPresenter" /* 10474 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5173 */;
+import useMediaViewerSources from "useMediaViewerSources" /* 8218 */;
+import MediaViewerItemPresenterDefault from "MediaViewerItemPresenter" /* 10594 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -201,14 +201,14 @@ const memoResult = react.memo(function MediaViewerPager(entranceAnimationDriver)
     if (obj.isAndroid()) {
       num = 20;
     }
-    const Gesture = tmp(5054).Gesture;
+    const Gesture = tmp(5173).Gesture;
     const TapResult = Gesture.Tap();
     const runOnJSResult = TapResult.runOnJS(true);
     const enabledResult = runOnJSResult.enabled(!mediaItemHasSpoiler);
     const numberOfTapsResult = enabledResult.numberOfTaps(2);
     const maxDistanceResult = numberOfTapsResult.maxDistance(num);
     const onStartResult = maxDistanceResult.onStart(callback2);
-    const Gesture2 = tmp(5054).Gesture;
+    const Gesture2 = tmp(5173).Gesture;
     const TapResult1 = Gesture2.Tap();
     let tmp6 = !mediaItemHasSpoiler;
     const enabled = TapResult1.runOnJS(true).enabled;
@@ -223,16 +223,16 @@ const memoResult = react.memo(function MediaViewerPager(entranceAnimationDriver)
     const enabledResult1 = enabled(tmp6);
     const maxDistanceResult1 = enabledResult1.maxDistance(num);
     const onStartResult1 = maxDistanceResult1.onStart(callback1);
-    const Gesture3 = tmp(5054).Gesture;
+    const Gesture3 = tmp(5173).Gesture;
     const LongPressResult = Gesture3.LongPress();
     const runOnJSResult2 = LongPressResult.runOnJS(true);
     const enabledResult2 = runOnJSResult2.enabled(!mediaItemHasSpoiler);
     const onStartResult2 = enabledResult2.onStart(callback3);
-    const Gesture4 = tmp(5054).Gesture;
+    const Gesture4 = tmp(5173).Gesture;
     const Simultaneous = Gesture4.Simultaneous;
-    const Gesture5 = tmp(5054).Gesture;
+    const Gesture5 = tmp(5173).Gesture;
     const RaceResult = Gesture5.Race(onFinalizeResult, c19);
-    const Gesture6 = tmp(5054).Gesture;
+    const Gesture6 = tmp(5173).Gesture;
     return Simultaneous(RaceResult, Gesture6.Exclusive(onStartResult, onStartResult1), onStartResult2);
   }, items7);
   const items8 = [windowWidth, sharedValue1];

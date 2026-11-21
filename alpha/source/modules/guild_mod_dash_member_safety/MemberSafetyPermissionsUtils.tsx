@@ -1,17 +1,17 @@
-// Module ID: 6768
-// Function ID: 6769
+// Module ID: 6887
+// Function ID: 6888
 // Name: MemberSafetyPermissionsUtils
-// Dependencies: [32, 4661, 4665, 4726, 1386, 4730, 1071, 1083, 4731, 504, 6769, 2]
+// Dependencies: [32, 4780, 4784, 4845, 1386, 4849, 1071, 1083, 4850, 504, 6888, 2]
 // Exports: canAccessMemberSafetyPage, canBulkBanUser, canPruneGuildMembers, getContextForPermission, hasBulkBanningPermissions, useCanAccessBulkActions, useCanAccessBulkBanningFeature, useCanAccessInviteCodeFeature, useCanAccessMemberSafetyPage, useCanBulkBanUser
 
-// Module 6768 (MemberSafetyPermissionsUtils)
+// Module 6887 (MemberSafetyPermissionsUtils)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1083 */;
-import GuildRecord from "GuildRecord" /* 4661 */;
-import MemberSafetyConstants from "MemberSafetyConstants" /* 4730 */;
-import BulkRoleActionsExperimentDefault from "BulkRoleActionsExperiment" /* 6769 */;
+import GuildRecord from "GuildRecord" /* 4780 */;
+import MemberSafetyConstants from "MemberSafetyConstants" /* 4849 */;
+import BulkRoleActionsExperimentDefault from "BulkRoleActionsExperiment" /* 6888 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import GuildStore from "GuildStore" /* 4665 */;
-import PermissionStore from "PermissionStore" /* 4726 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
 import UserStore from "UserStore" /* 1386 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
@@ -21,7 +21,7 @@ let _require;
 
 let c10;
 let unpackModuleId;
-const f89421 = () => {
+const f89807 = () => {
   let obj;
   let obj2;
   const items = [GuildStore, UserStore];
@@ -31,7 +31,7 @@ const f89421 = () => {
   const currentUser = obj2.getCurrentUser();
   return false;
 };
-const f89422 = () => {
+const f89808 = () => {
   let obj;
   let obj2;
   const items = [GuildStore, UserStore];
@@ -117,7 +117,7 @@ export function useCanAccessMemberSafetyPage(id) {
   const items = [GuildStore, UserStore];
   const items1 = [id];
   const obj = require("get initialized");
-  return obj.useStateFromStores(items, f89421, items1);
+  return obj.useStateFromStores(items, f89807, items1);
 }
 export function useCanAccessBulkBanningFeature(arg0) {
   let closure_0;
@@ -125,12 +125,12 @@ export function useCanAccessBulkBanningFeature(arg0) {
   const items = [GuildStore, UserStore];
   const items1 = [arg0];
   const obj = require("get initialized");
-  let stateFromStores = obj.useStateFromStores(items, f89421, items1);
+  let stateFromStores = obj.useStateFromStores(items, f89807, items1);
   const items2 = [GuildStore, UserStore];
   const items3 = [arg0];
   const obj2 = require("get initialized");
   if (stateFromStores) {
-    stateFromStores = obj2.useStateFromStores(items2, f89422, items3);
+    stateFromStores = obj2.useStateFromStores(items2, f89808, items3);
   }
   return stateFromStores;
 }
@@ -170,11 +170,11 @@ export function useCanAccessBulkActions(guildId) {
   const obj = require("get initialized");
   let items = [GuildStore, UserStore];
   const items1 = [guildId];
-  const stateFromStores = obj.useStateFromStores(items, f89421, items1);
+  const stateFromStores = obj.useStateFromStores(items, f89807, items1);
   const obj2 = require("get initialized");
   const items2 = [GuildStore, UserStore];
   const items3 = [guildId];
-  const canAccessBulkBan = stateFromStores && obj2.useStateFromStores(items2, f89422, items3);
+  const canAccessBulkBan = stateFromStores && obj2.useStateFromStores(items2, f89808, items3);
   let obj3 = BulkRoleActionsExperimentDefault;
   const obj4 = { guildId, location: "Members page bulk actions" };
   let canAccessBulkTimeout = obj3.useConfig(obj4).enabled;
@@ -182,7 +182,7 @@ export function useCanAccessBulkActions(guildId) {
   const items4 = [GuildStore, UserStore];
   const items5 = [guildId];
   const tmpResult = tmp(504);
-  const stateFromStores1 = tmpResult.useStateFromStores(items4, f89421, items5);
+  const stateFromStores1 = tmpResult.useStateFromStores(items4, f89807, items5);
   const items6 = [GuildStore, PermissionStore, UserStore];
   const items7 = [guildId];
   const tmpResult2 = tmp(504);

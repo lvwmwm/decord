@@ -1,17 +1,17 @@
-// Module ID: 10207
-// Function ID: 10208
+// Module ID: 10327
+// Function ID: 10328
 // Name: UserProfileApplicationWidgetBottomStatsLayout
-// Dependencies: [19, 17, 21, 4794, 575, 10201, 10158, 5385, 10202, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 10321, 10278, 5504, 10322, 2]
 // Exports: default
 
-// Module 10207 (UserProfileApplicationWidgetBottomStatsLayout)
+// Module 10327 (UserProfileApplicationWidgetBottomStatsLayout)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _mod10158 from "module_10158" /* 10158 */;
-import UserProfileApplicationWidgetFieldUtils from "UserProfileApplicationWidgetFieldUtils" /* 10201 */;
+import _mod10278 from "module_10278" /* 10278 */;
+import UserProfileApplicationWidgetFieldUtils from "UserProfileApplicationWidgetFieldUtils" /* 10321 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -37,8 +37,8 @@ export default function UserProfileApplicationWidgetBottomStatsLayout(arg0) {
   const style = obj.useEmojiOverflowStyle("body-xs/normal");
   let items = [1, 2, 3, 4, 5, 6];
   const mapped = items.map((item) => {
-    const resolveStatComponentValues = _mod10158.resolveStatComponentValues;
-    _mod10158;
+    const resolveStatComponentValues = _mod10278.resolveStatComponentValues;
+    _mod10278;
     return resolveStatComponentValues(require.components["stat_" + item], dependencyMap, View, UserProfileApplicationWidgetFieldUtils.formatDurationNarrow, true);
   });
   let obj2 = {
@@ -55,11 +55,11 @@ export default function UserProfileApplicationWidgetBottomStatsLayout(arg0) {
         const tmp3 = View;
         if ("value" === value.label.status) {
           const obj3 = { variant: "body-xs/normal", color: "text-muted", style, children: value.label.text };
-          tmp5Result = tmp5(tmp6(5385).Text, obj3);
+          tmp5Result = tmp5(tmp6(5504).Text, obj3);
         } else {
           tmp5Result = null;
           if ("skeleton" === value.label.status) {
-            tmp5Result = tmp5(tmp6(10202).TextSkeleton, { variant: "body-xs/normal", widthChars: 6 });
+            tmp5Result = tmp5(tmp6(10322).TextSkeleton, { variant: "body-xs/normal", widthChars: 6 });
           }
         }
         items[1] = tmp5Result;

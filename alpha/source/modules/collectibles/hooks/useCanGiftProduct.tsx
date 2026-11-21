@@ -1,15 +1,15 @@
-// Module ID: 14127
-// Function ID: 14128
+// Module ID: 14249
+// Function ID: 14250
 // Name: useCanGiftProduct
-// Dependencies: [8800, 7967, 7966, 2172, 2112, 2184, 2]
+// Dependencies: [8920, 8087, 8086, 2173, 2112, 2185, 2]
 // Exports: useCanGiftProduct
 
-// Module 14127 (useCanGiftProduct)
-import PremiumUtilsDefault from "PremiumUtils" /* 2172 */;
-import BillingPlatformUtils from "BillingPlatformUtils" /* 2184 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7966 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7967 */;
-import useCurrentUser from "useCurrentUser" /* 8800 */;
+// Module 14249 (useCanGiftProduct)
+import PremiumUtilsDefault from "PremiumUtils" /* 2173 */;
+import BillingPlatformUtils from "BillingPlatformUtils" /* 2185 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 8086 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 8087 */;
+import useCurrentUser from "useCurrentUser" /* 8920 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/collectibles/hooks/useCanGiftProduct.tsx");

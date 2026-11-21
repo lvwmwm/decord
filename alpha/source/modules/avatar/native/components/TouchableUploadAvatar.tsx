@@ -1,21 +1,21 @@
-// Module ID: 19470
-// Function ID: 19471
+// Module ID: 19597
+// Function ID: 19598
 // Name: TouchableUploadAvatar
-// Dependencies: [19, 17, 21, 4794, 575, 14950, 6910, 1112, 5481, 1186, 13607, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 15073, 7030, 1112, 5600, 1186, 13729, 2]
 // Exports: default
 
-// Module 19470 (TouchableUploadAvatar)
+// Module 19597 (TouchableUploadAvatar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
-import FastImageDefault from "FastImage" /* 5481 */;
-import Pressables from "Pressables" /* 6910 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13607 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14950 */;
+import FastImageDefault from "FastImage" /* 5600 */;
+import Pressables from "Pressables" /* 7030 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13729 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 15073 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;

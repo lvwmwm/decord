@@ -1,21 +1,21 @@
-// Module ID: 15102
-// Function ID: 15103
+// Module ID: 15225
+// Function ID: 15226
 // Name: AIShimmer
-// Dependencies: [32, 19, 17, 21, 4794, 15103, 4855, 5385, 15104, 1653, 15105, 15106, 1706, 15100, 2]
+// Dependencies: [32, 19, 17, 21, 4913, 15226, 4974, 5504, 15227, 1653, 15228, 15229, 1706, 15223, 2]
 
-// Module 15102 (AIShimmer)
+// Module 15225 (AIShimmer)
 import _mod1653 from "module_1653" /* 1653 */;
 import _mod1706 from "module_1706" /* 1706 */;
-import Text_Text from "Text/Text" /* 5385 */;
-import AIGlyphText from "AIGlyphText" /* 15100 */;
-import AIShimmerTypes from "AIShimmerTypes" /* 15103 */;
-import waveTransition2 from "waveTransition" /* 15104 */;
-import createWaveTransition2 from "createWaveTransition" /* 15106 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import AIGlyphText from "AIGlyphText" /* 15223 */;
+import AIShimmerTypes from "AIShimmerTypes" /* 15226 */;
+import waveTransition2 from "waveTransition" /* 15227 */;
+import createWaveTransition2 from "createWaveTransition" /* 15229 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4794 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const _modDef1653 = _mod1653;
@@ -222,11 +222,11 @@ function ShimmerLayers(pass) {
   let items = [closure_24, animationProgress2, , , , , ];
   const useDerivedValue = pass(1653).useDerivedValue;
   pass(1653);
-  items[2] = pass(15104).bandEdgesAt;
+  items[2] = pass(15227).bandEdgesAt;
   items[3] = animationWidth2;
   items[4] = overshoot2;
-  items[5] = pass(15104).glyphLayerOpacityAt;
-  items[6] = pass(15104).easeTail;
+  items[5] = pass(15227).glyphLayerOpacityAt;
+  items[6] = pass(15227).easeTail;
   let c0;
   let c1;
   let c2;

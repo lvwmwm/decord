@@ -1,10 +1,10 @@
-// Module ID: 4962
-// Function ID: 4963
+// Module ID: 5081
+// Function ID: 5082
 // Name: useFocus
 // Dependencies: [32, 19, 2]
 // Exports: useFocus
 
-// Module 4962 (useFocus)
+// Module 5081 (useFocus)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

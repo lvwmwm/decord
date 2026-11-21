@@ -1,19 +1,19 @@
-// Module ID: 16019
-// Function ID: 16020
+// Module ID: 16142
+// Function ID: 16143
 // Name: AndroidViewNsfwDmCommandsSetting
-// Dependencies: [8592, 10322, 6300, 10323, 6292, 1378, 7673, 6295, 4619, 11817, 1112, 2]
+// Dependencies: [8712, 10442, 6419, 10443, 6411, 1378, 7793, 6414, 4738, 11937, 1112, 2]
 
-// Module 16019 (AndroidViewNsfwDmCommandsSetting)
+// Module 16142 (AndroidViewNsfwDmCommandsSetting)
 import intl2 from "intl" /* 1112 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6292 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6295 */;
-import AgeGateUtils from "AgeGateUtils" /* 6300 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7673 */;
-import SettingsConstants from "SettingsConstants" /* 8592 */;
-import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 10322 */;
-import useNSFWAllowed from "useNSFWAllowed" /* 10323 */;
-import SettingBuilders from "SettingBuilders" /* 11817 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6411 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6414 */;
+import AgeGateUtils from "AgeGateUtils" /* 6419 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7793 */;
+import SettingsConstants from "SettingsConstants" /* 8712 */;
+import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 10442 */;
+import useNSFWAllowed from "useNSFWAllowed" /* 10443 */;
+import SettingBuilders from "SettingBuilders" /* 11937 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
@@ -41,7 +41,7 @@ let obj = {
         const result = showAgeVerificationGetStartedModal(obj2);
       }
     }
-    const ViewNsfwCommands = tmp(4619).ViewNsfwCommands;
+    const ViewNsfwCommands = tmp(4738).ViewNsfwCommands;
     ViewNsfwCommands.updateSetting(arg0);
   },
   usePredicate() {

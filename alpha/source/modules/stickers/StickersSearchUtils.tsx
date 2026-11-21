@@ -1,12 +1,12 @@
-// Module ID: 11255
-// Function ID: 11256
+// Module ID: 11375
+// Function ID: 11376
 // Name: StickersSearchUtils
-// Dependencies: [6437, 6710, 2]
+// Dependencies: [6556, 6829, 2]
 // Exports: searchAllStickers, searchSendableStickers, searchUnsendableStickers
 
-// Module 11255 (StickersSearchUtils)
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6437 */;
-import StickerSendability from "StickerSendability" /* 6710 */;
+// Module 11375 (StickersSearchUtils)
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6556 */;
+import StickerSendability from "StickerSendability" /* 6829 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/stickers/StickersSearchUtils.tsx");

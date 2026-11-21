@@ -1,15 +1,15 @@
-// Module ID: 2143
-// Function ID: 2144
+// Module ID: 2144
+// Function ID: 2145
 // Name: Constants
-// Dependencies: [1071, 2117, 2144, 2145, 2, 2146]
+// Dependencies: [1071, 2117, 2145, 2146, 2, 2147]
 // Exports: getAppIntentScheme
 
-// Module 2143 (Constants)
+// Module 2144 (Constants)
 import Constants from "Constants" /* 1071 */;
 import Server from "Server" /* 2117 */;
-import EmbeddedActivityOrientationLockState from "EmbeddedActivityOrientationLockState" /* 2144 */;
-import EmbeddedActivitySupportedPlatforms from "EmbeddedActivitySupportedPlatforms" /* 2145 */;
-import ActivityApplications from "ActivityApplications" /* 2146 */;
+import EmbeddedActivityOrientationLockState from "EmbeddedActivityOrientationLockState" /* 2145 */;
+import EmbeddedActivitySupportedPlatforms from "EmbeddedActivitySupportedPlatforms" /* 2146 */;
+import ActivityApplications from "ActivityApplications" /* 2147 */;
 import size from "module_2" /* 2 */;
 
 let items3;

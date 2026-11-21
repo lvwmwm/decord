@@ -1,13 +1,13 @@
-// Module ID: 7318
-// Function ID: 7319
+// Module ID: 7438
+// Function ID: 7439
 // Name: useFastestListPropsPlaceholder
-// Dependencies: [19, 17, 7319, 4791, 2]
+// Dependencies: [19, 17, 7439, 4910, 2]
 // Exports: default
 
-// Module 7318 (useFastestListPropsPlaceholder)
+// Module 7438 (useFastestListPropsPlaceholder)
 import react_native from "react-native" /* 17 */;
-import ColorUtils from "ColorUtils" /* 4791 */;
-import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 7319 */;
+import ColorUtils from "ColorUtils" /* 4910 */;
+import FastestListPropsPlaceholder from "FastestListPropsPlaceholder" /* 7439 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ function createNativePlaceholderConfig(listFooter) {
   if (type == null) {
     NONE = FastestListPropsPlaceholder.FastestListPropsPlaceholderType.NONE;
   }
-  size = { borderRadius: "Array", borderTopLeftRadius: "create", borderTopRightRadius: "diversity", borderBottomLeftRadius: "Text", borderBottomRightRadius: "Button", divider: "isArray", dividerColor: "isArray", dividerPaddingLeft: "x", dividerPaddingRight: "Button", placeholderShape: "isArray", placeholderShapeColor: "isArray", placeholderShapeCount: "View", placeholderShapeGap: "Button", placeholderShapePaddingHorizontal: "isArray", placeholderShapePaddingVertical: "isArray", placeholderFeedBackgroundColor: "WireType", placeholderFeedColor: "Button", placeholderFeedLabelPadding: "isArray", placeholderFeedLabelPaddingInnerRatio: "isArray", placeholderFeedLabelSize: "__closure", placeholderFeedLabelSecondarySize: "Button", placeholderFeedPadding: "isArray", placeholderFeedShape: "isArray", placeholderFeedShapeSize: "channel_id", placeholderType: NONE, width: "Button", height: "GUILD_BANNER", verticalAlignment: "Button", horizontalAlignment: "storeListing" };
+  size = { borderRadius: "Array", borderTopLeftRadius: "create", borderTopRightRadius: "HermesInternal", borderBottomLeftRadius: "channel_id", borderBottomRightRadius: "it", divider: "diversity", dividerColor: "y", dividerPaddingLeft: "Button", dividerPaddingRight: "isArray", placeholderShape: "isArray", placeholderShapeColor: "Boolean", placeholderShapeCount: "Button", placeholderShapeGap: "isArray", placeholderShapePaddingHorizontal: "isArray", placeholderShapePaddingVertical: "o", placeholderFeedBackgroundColor: "Button", placeholderFeedColor: "isArray", placeholderFeedLabelPadding: "isArray", placeholderFeedLabelPaddingInnerRatio: "l", placeholderFeedLabelSize: "Button", placeholderFeedLabelSecondarySize: "isArray", placeholderFeedPadding: "isArray", placeholderFeedShape: "Button", placeholderFeedShapeSize: "Button", placeholderType: NONE, width: 2057, height: 2058, verticalAlignment: 2059, horizontalAlignment: 2060 };
   if (null == listFooter) {
     return size;
   } else {

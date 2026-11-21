@@ -1,15 +1,15 @@
-// Module ID: 16281
-// Function ID: 16282
+// Module ID: 16404
+// Function ID: 16405
 // Name: applyHexagonCampaignPerks
-// Dependencies: [5, 1386, 15513, 4819, 1239, 13927, 16282, 4822, 16283, 15730, 16284, 4820, 16287, 16288, 2]
+// Dependencies: [5, 1386, 15636, 4938, 1239, 14049, 16405, 4941, 16406, 15853, 16407, 4939, 16410, 16411, 2]
 // Exports: applyHexagonCampaignPerks
 
-// Module 16281 (applyHexagonCampaignPerks)
+// Module 16404 (applyHexagonCampaignPerks)
 import ClientThemesConstants from "ClientThemesConstants" /* 1239 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4819 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4938 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1386 */;
-import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 15513 */;
+import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 15636 */;
 import size from "module_2" /* 2 */;
 
 let c5, constants;

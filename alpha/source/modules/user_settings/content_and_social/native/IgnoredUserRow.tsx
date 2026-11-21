@@ -1,13 +1,13 @@
-// Module ID: 15985
-// Function ID: 15986
+// Module ID: 16108
+// Function ID: 16109
 // Name: IgnoredUserRow
-// Dependencies: [5, 19, 1386, 21, 7620, 7400, 1112, 7947, 6925, 1186, 15982, 5392, 504, 6835, 2]
+// Dependencies: [5, 19, 1386, 21, 7740, 7520, 1112, 8067, 7045, 1186, 16105, 5511, 504, 6954, 2]
 // Exports: default
 
-// Module 15985 (IgnoredUserRow)
+// Module 16108 (IgnoredUserRow)
 import Fragment from "Fragment" /* 21 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7620 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7947 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7740 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8067 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1386 */;
@@ -19,7 +19,7 @@ function IgnoredUserRow(userRecord) {
   let intl2;
   userRecord = userRecord.userRecord;
   let analyticsLocations;
-  analyticsLocations = analyticsLocations(7400)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7520)().analyticsLocations;
   const intl = userRecord(1112).intl;
   const formatToPlainString = intl.formatToPlainString;
   let username = userRecord.globalName;
@@ -32,7 +32,7 @@ function IgnoredUserRow(userRecord) {
     showUserProfileActionSheetDefault(obj);
   }
   const formatToPlainStringResult = formatToPlainString(e3qAIz, { name: username });
-  const TableRow = tmp2(6925).TableRow;
+  const TableRow = tmp2(7045).TableRow;
   let obj2 = { source: userRecord.getAvatarSource(undefined), size: tmp2(1186).AvatarSizes.REFRESH_MEDIUM_32 };
   const Avatar = tmp2(1186).Avatar;
   const items = [{ name: "activate" }, { name: "unignore", label: formatToPlainStringResult }];
@@ -47,7 +47,7 @@ function IgnoredUserRow(userRecord) {
       obj.unignoreUser(id, "ignored-users-list-mobile");
     }
   });
-  const Button = tmp2(5392).Button;
+  const Button = tmp2(5511).Button;
   intl2 = tmp2(1112).intl;
   return <TableRow accessible={false} icon={null} label={null} onPress={handleOpenProfile} trailing={null} />;
 }

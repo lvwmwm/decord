@@ -1,25 +1,25 @@
-// Module ID: 18588
-// Function ID: 18589
+// Module ID: 18715
+// Function ID: 18716
 // Name: SearchFilterSuggestions
-// Dependencies: [32, 19, 17, 8455, 21, 4794, 575, 18589, 6925, 5385, 1653, 5395, 5396, 4855, 1706, 18583, 18592, 13077, 2]
+// Dependencies: [32, 19, 17, 8575, 21, 4913, 575, 18716, 7045, 5504, 1653, 5514, 5515, 4974, 1706, 18710, 18719, 13199, 2]
 
-// Module 18588 (SearchFilterSuggestions)
+// Module 18715 (SearchFilterSuggestions)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 4855 */;
-import TrackingConstants from "TrackingConstants" /* 8455 */;
-import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 13077 */;
-import SearchFilterUtils from "SearchFilterUtils" /* 18589 */;
+import native from "native" /* 4974 */;
+import TrackingConstants from "TrackingConstants" /* 8575 */;
+import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 13199 */;
+import SearchFilterUtils from "SearchFilterUtils" /* 18716 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, set, token;
 
 let obj2;
-const f115258 = (text) => text.text;
+const f115661 = (text) => text.text;
 function SearchFilterPrefixRow(text) {
   text = text.text;
   const require = text;
@@ -50,7 +50,7 @@ function SearchFilterPrefixRow(text) {
   return <TableRow icon={memo} onPress={callback} label={null} subLabel={memo1} />;
 }
 function getSuggestionsKey(arr) {
-  const mapped = arr.map(f115258);
+  const mapped = arr.map(f115661);
   return mapped.join(" ");
 }
 function AnimatedEnterExitContainer(state) {
@@ -73,12 +73,12 @@ function AnimatedEnterExitContainer(state) {
   const tmp3 = state(1653);
   let items = [closure_12, , , , , , , , ];
   const useAnimatedStyle = tmp3.useAnimatedStyle;
-  items[1] = state(5395).withSpring;
+  items[1] = state(5514).withSpring;
   items[2] = sharedValue;
-  items[3] = state(5396).springStandard;
+  items[3] = state(5515).springStandard;
   items[4] = closure_11;
   items[5] = state;
-  items[6] = state(4855).TransitionStates;
+  items[6] = state(4974).TransitionStates;
   items[7] = state(1706).scheduleOnRN;
   items[8] = cleanUp;
   let c0;
@@ -183,12 +183,12 @@ const memoResult = react.memo(function SearchFilterSuggestions(searchContext) {
   let tmp = memo();
   dependencyMap = tmp;
   let tmp2 = searchContext;
-  let obj = searchContext(18583);
+  let obj = searchContext(18710);
   const searchSuggestionsContext = obj.useSearchSuggestionsContext();
   const suggestionsRef = searchSuggestionsContext.suggestionsRef;
   const suggestionsMounted = searchSuggestionsContext.suggestionsMounted;
   const dismissed = searchSuggestionsContext.dismissed;
-  let obj2 = searchContext(18592);
+  let obj2 = searchContext(18719);
   const validFilterTokens = obj2.useValidFilterTokens(searchContext);
   const tmp6 = suggestionsRef(suggestionsMounted.useState([]), 2);
   const first = tmp6[0];
@@ -222,10 +222,10 @@ const memoResult = react.memo(function SearchFilterSuggestions(searchContext) {
               }
             });
             closure_7((arr) => {
-              const mapped = arr.map(f115258);
+              const mapped = arr.map(f115661);
               let tmp2 = closure_1;
               const joined = mapped.join(" ");
-              const mapped1 = closure_1.map(f115258);
+              const mapped1 = closure_1.map(f115661);
               if (joined === mapped1.join(" ")) {
                 tmp2 = arr;
               }
@@ -308,7 +308,7 @@ const memoResult = react.memo(function SearchFilterSuggestions(searchContext) {
     });
     return <AnimatedEnterExitContainer key={arg0} state={arg2} cleanUp={arg3}>{null}</AnimatedEnterExitContainer>;
   }, items8);
-  return jsx(tmp2(4855).TransitionGroup, { items: memo1, renderItem: callback, getItemKey: getSuggestionsKey });
+  return jsx(tmp2(4974).TransitionGroup, { items: memo1, renderItem: callback, getItemKey: getSuggestionsKey });
 });
 let result = size.fileFinishedImporting("modules/search/native/components/layout/autocomplete/SearchFilterSuggestions.tsx");
 

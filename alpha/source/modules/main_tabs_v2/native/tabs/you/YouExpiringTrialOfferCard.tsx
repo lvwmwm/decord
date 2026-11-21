@@ -1,25 +1,25 @@
-// Module ID: 18791
-// Function ID: 18792
+// Module ID: 18918
+// Function ID: 18919
 // Name: YouExpiringTrialOfferCard
-// Dependencies: [19, 17, 14878, 1071, 8831, 1388, 21, 1088, 4794, 575, 18792, 1255, 1112, 2167, 563, 8739, 8836, 18790, 2186, 5385, 2172, 6910, 1186, 8832, 5349, 7443, 2]
+// Dependencies: [19, 17, 15001, 1071, 8951, 1388, 21, 1088, 4913, 575, 18919, 1255, 1112, 2168, 563, 8859, 8956, 18917, 2187, 5504, 2173, 7030, 1186, 8952, 5468, 7563, 2]
 // Exports: default
 
-// Module 18791 (YouExpiringTrialOfferCard)
+// Module 18918 (YouExpiringTrialOfferCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import DurationsDefault from "Durations" /* 1088 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import PremiumConstants from "PremiumConstants" /* 1388 */;
-import _modDef2167 from "module_2167" /* 2167 */;
-import LinearGradientDefault from "LinearGradient" /* 5349 */;
-import ColorConstants from "ColorConstants" /* 8831 */;
-import useCountdownDefault from "useCountdown" /* 8836 */;
-import NoticeActionCreatorsDefault from "NoticeActionCreators" /* 18792 */;
+import _modDef2168 from "module_2168" /* 2168 */;
+import LinearGradientDefault from "LinearGradient" /* 5468 */;
+import ColorConstants from "ColorConstants" /* 8951 */;
+import useCountdownDefault from "useCountdown" /* 8956 */;
+import NoticeActionCreatorsDefault from "NoticeActionCreators" /* 18919 */;
 import react from "react" /* 19 */;
-import NoticeStore from "NoticeStore" /* 14878 */;
+import NoticeStore from "NoticeStore" /* 15001 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap, importDefault;
@@ -34,8 +34,8 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp;
-const HelpdeskUtilsDefault = tmp(2186);
-const UserProfileCardDefault = tmp(7443);
+const HelpdeskUtilsDefault = tmp(2187);
+const UserProfileCardDefault = tmp(7563);
 const View = react_native.View;
 ({ AnalyticEvents: metroRequire, HelpdeskArticles: metroImportDefault, HorizontalGradient: metroImportAll, NoticeTypes: c9 } = Constants);
 const Gradients = ColorConstants.Gradients;
@@ -67,7 +67,7 @@ export default function YouExpiringTrialOfferCard(navigateToPremium) {
   let tmp = importDefault;
   let tmp2 = dependencyMap;
   const style = navigateToPremium.style;
-  let obj = _modDef2167();
+  let obj = _modDef2168();
   importDefault = obj.add(5, "days");
   const tmp3 = closure_16();
   dependencyMap = tmp3;
@@ -75,7 +75,7 @@ export default function YouExpiringTrialOfferCard(navigateToPremium) {
   let obj2 = navigateToPremium(563);
   const items = [shouldShowExpiringTrialOfferCard];
   const stateFromStores = obj2.useStateFromStores(items, () => shouldShowExpiringTrialOfferCard.getNoticeType());
-  let obj3 = navigateToPremium(8739);
+  let obj3 = navigateToPremium(8859);
   const premiumTrialOffer = obj3.usePremiumTrialOffer();
   let num = 0;
   const tmp7 = useCountdownDefault;
@@ -87,7 +87,7 @@ export default function YouExpiringTrialOfferCard(navigateToPremium) {
     }
   }
   const time = tmp7(num, closure_15);
-  const tmp4Result = tmp4(18790);
+  const tmp4Result = tmp4(18917);
   shouldShowExpiringTrialOfferCard = tmp4Result.useShouldShowExpiringTrialOfferCard();
   const items1 = [stateFromStores, shouldShowExpiringTrialOfferCard, premiumTrialOffer];
   const effect = stateFromStores.useEffect(() => {
@@ -113,11 +113,11 @@ export default function YouExpiringTrialOfferCard(navigateToPremium) {
         }
         const articleURL = getArticleURL(PREMIUM_TRIAL);
         let obj4 = { style: tmp3.header, children: closure_12(Text, obj10) };
-        Text = tmp4(5385).Text;
+        Text = tmp4(5504).Text;
         const subscriptionTrial = premiumTrialOffer.subscriptionTrial;
         let interval;
-        const formatIntervalDuration = tmp4(2172).formatIntervalDuration;
-        tmp4(2172);
+        const formatIntervalDuration = tmp4(2173).formatIntervalDuration;
+        tmp4(2173);
         const tmp16 = premiumTrialOffer;
         if (subscriptionTrial != null) {
           interval = subscriptionTrial.interval;
@@ -165,7 +165,7 @@ export default function YouExpiringTrialOfferCard(navigateToPremium) {
                 },
           children: closure_12(tmp4(1186).CloseIcon, size)
         };
-        const PressableOpacity = tmp4(6910).PressableOpacity;
+        const PressableOpacity = tmp4(7030).PressableOpacity;
         intl4 = tmp4(1112).intl;
         size = { width: 16, height: 16, color: tmp3.closeIcon.color };
         items2[1] = closure_12(PressableOpacity, obj11);

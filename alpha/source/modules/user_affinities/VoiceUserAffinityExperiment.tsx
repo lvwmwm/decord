@@ -1,10 +1,10 @@
-// Module ID: 8753
-// Function ID: 8754
+// Module ID: 8873
+// Function ID: 8874
 // Name: VoiceUserAffinityExperiment
 // Dependencies: [1450, 2]
 // Exports: getVoiceUserAffinitySortType, useVoiceUserAffinitySortType
 
-// Module 8753 (VoiceUserAffinityExperiment)
+// Module 8873 (VoiceUserAffinityExperiment)
 import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 19357
-// Function ID: 19358
+// Module ID: 19484
+// Function ID: 19485
 // Name: passThrough
 // Dependencies: [2]
 // Exports: asIterable, captureMessageData, protectConstructors, protectPrototype, protectStatics, protectWindow
 
-// Module 19357 (passThrough)
+// Module 19484 (passThrough)
 import size from "module_2" /* 2 */;
 
 function passThrough(arg0) {

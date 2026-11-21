@@ -1,12 +1,12 @@
-// Module ID: 17443
-// Function ID: 17444
+// Module ID: 17567
+// Function ID: 17568
 // Name: useMessagesScrollToTop
-// Dependencies: [19, 4795, 4970, 11989, 1501, 2]
+// Dependencies: [19, 4914, 5089, 12109, 1501, 2]
 // Exports: default
 
-// Module 17443 (useMessagesScrollToTop)
+// Module 17567 (useMessagesScrollToTop)
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4795 */;
+import AccessibilityStore from "AccessibilityStore" /* 4914 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/messages/useMessagesScrollToTop.tsx");

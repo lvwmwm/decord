@@ -1,9 +1,9 @@
-// Module ID: 14854
-// Function ID: 14855
+// Module ID: 14977
+// Function ID: 14978
 // Name: RequestReviewStore
-// Dependencies: [5411, 1245, 4697, 1071, 1625, 14855, 5543, 14856, 4971, 4970, 7125, 14858, 1091, 510, 1255, 504, 572, 2]
+// Dependencies: [5530, 1245, 4816, 1071, 1625, 14978, 5662, 14979, 5090, 5089, 7245, 14981, 1091, 510, 1255, 504, 572, 2]
 
-// Module 14854 (RequestReviewStore)
+// Module 14977 (RequestReviewStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
@@ -11,15 +11,15 @@ import Constants from "Constants" /* 1071 */;
 import ConstantsIOS from "ConstantsIOS" /* 1091 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1625 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4970 */;
-import RootNavigationRef from "RootNavigationRef" /* 4971 */;
-import TimeUtils from "TimeUtils" /* 5543 */;
-import useKeyboardIsOpen from "useKeyboardIsOpen" /* 7125 */;
-import requestReviewModalDefault from "requestReviewModal" /* 14856 */;
-import InstallTime from "InstallTime" /* 14858 */;
-import ExperimentStore from "ExperimentStore" /* 5411 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5089 */;
+import RootNavigationRef from "RootNavigationRef" /* 5090 */;
+import TimeUtils from "TimeUtils" /* 5662 */;
+import useKeyboardIsOpen from "useKeyboardIsOpen" /* 7245 */;
+import requestReviewModalDefault from "requestReviewModal" /* 14979 */;
+import InstallTime from "InstallTime" /* 14981 */;
+import ExperimentStore from "ExperimentStore" /* 5530 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1245 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4697 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4816 */;
 import size from "module_2" /* 2 */;
 
 function delayShowReviewRequestModal() {
@@ -31,7 +31,7 @@ function delayShowReviewRequestModal() {
   }
   obj = MetaQuestUtils;
   if (!obj.isMetaQuest()) {
-    const RequestReviewNoTTIExperiment = tmp4(14855).RequestReviewNoTTIExperiment;
+    const RequestReviewNoTTIExperiment = tmp4(14978).RequestReviewNoTTIExperiment;
     let skipTTICheck = RequestReviewNoTTIExperiment.getConfig({ location: "RequestReviewStore" }).skipTTICheck;
     let tmp6 = closure_10;
     if (tmp6) {
@@ -43,7 +43,7 @@ function delayShowReviewRequestModal() {
     }
     if (tmp6) {
       const _setTimeout = setTimeout;
-      timeout = setTimeout(showReviewRequestModal, tmp4(5543).MS_PER_MINUTE);
+      timeout = setTimeout(showReviewRequestModal, tmp4(5662).MS_PER_MINUTE);
     }
   }
 }

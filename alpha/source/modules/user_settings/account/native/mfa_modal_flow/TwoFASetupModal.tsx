@@ -1,22 +1,22 @@
-// Module ID: 15931
-// Function ID: 15932
+// Module ID: 16054
+// Function ID: 16055
 // Name: TwoFASetupModal
-// Dependencies: [19, 17, 15932, 21, 4794, 575, 1500, 1501, 15930, 6897, 5392, 1112, 15933, 6975, 15934, 15937, 15938, 15941, 5373, 7259, 6972, 2]
+// Dependencies: [19, 17, 16055, 21, 4913, 575, 1500, 1501, 16053, 7017, 5511, 1112, 16056, 7095, 16057, 16060, 16061, 16064, 5492, 7379, 7092, 2]
 // Exports: TwoFASetupModalScreen, default
 
-// Module 15931 (TwoFASetupModal)
+// Module 16054 (TwoFASetupModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
-import reactDefault from "react" /* 5373 */;
-import Navigator2 from "Navigator" /* 6972 */;
-import TwoFASetupModalActionCreatorsDefault from "TwoFASetupModalActionCreators" /* 15930 */;
-import TwoFAConstants from "TwoFAConstants" /* 15932 */;
-import TwoFASetupScanDefault from "TwoFASetupScan" /* 15937 */;
-import TwoFASetupEnterCodeDefault from "TwoFASetupEnterCode" /* 15938 */;
+import reactDefault from "react" /* 5492 */;
+import Navigator2 from "Navigator" /* 7092 */;
+import TwoFASetupModalActionCreatorsDefault from "TwoFASetupModalActionCreators" /* 16053 */;
+import TwoFAConstants from "TwoFAConstants" /* 16055 */;
+import TwoFASetupScanDefault from "TwoFASetupScan" /* 16060 */;
+import TwoFASetupEnterCodeDefault from "TwoFASetupEnterCode" /* 16061 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4794 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -35,7 +35,7 @@ const result = size.fileFinishedImporting("modules/user_settings/account/native/
 
 export default function TwoFASetupModal(initialRouteName) {
   let intl;
-  const f108663 = () => {
+  const f109052 = () => {
     let obj4;
     let obj6;
     let totpSecret;
@@ -96,8 +96,8 @@ export default function TwoFASetupModal(initialRouteName) {
   if (LANDING === undefined) {
     LANDING = TwoFAModalSetupSections.LANDING;
   }
-  let obj = { initialRouteName: LANDING, screens: reactDefault(f108663), headerBackTitle: intl.string(intl3.t["13/7kX"]), headerTitleAlign: "center" };
-  reactDefault(f108663);
+  let obj = { initialRouteName: LANDING, screens: reactDefault(f109052), headerBackTitle: intl.string(intl3.t["13/7kX"]), headerTitleAlign: "center" };
+  reactDefault(f109052);
   const Navigator = Navigator2.Navigator;
   intl = intl3.intl;
   return metroRequire(Navigator, obj);
@@ -123,9 +123,9 @@ export function TwoFASetupModalScreen(children) {
   const tmp9 = View;
   if (tmp10Result) {
     const obj4 = { bottom: true, style: tmp.floatingButton, children: closure_6(Button, obj5) };
-    const SafeAreaPaddingView = tmp2(6897).SafeAreaPaddingView;
+    const SafeAreaPaddingView = tmp2(7017).SafeAreaPaddingView;
     obj5 = { onPress: tmp7, text: stringResult };
-    Button = tmp2(5392).Button;
+    Button = tmp2(5511).Button;
     if (name === tmp5.SUCCESS) {
       const intl2 = tmp2(1112).intl;
       stringResult = intl2.string(tmp2(1112).t.i4jeWR);

@@ -1,17 +1,17 @@
-// Module ID: 11039
-// Function ID: 11040
+// Module ID: 11159
+// Function ID: 11160
 // Name: notifications/NotificationUtils
-// Dependencies: [6433, 1071, 1081, 1112, 11, 1404, 4729, 504, 2]
+// Dependencies: [6552, 1071, 1081, 1112, 11, 1404, 4848, 504, 2]
 // Exports: filterOverrides, getMuteTimeOptions, useShouldUseNewNotificationSystem
 
-// Module 11039 (notifications/NotificationUtils)
+// Module 11159 (notifications/NotificationUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1071 */;
 import intl7 from "intl" /* 1112 */;
 import FlagUtilsAll from "FlagUtils" /* 1404 */;
-import MuteTimers from "MuteTimers" /* 4729 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6433 */;
+import MuteTimers from "MuteTimers" /* 4848 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6552 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1081 */;
 import size from "module_2" /* 2 */;
 

@@ -1,15 +1,15 @@
-// Module ID: 8884
-// Function ID: 8885
+// Module ID: 9004
+// Function ID: 9005
 // Name: WishlistShopUnpublishLabel
-// Dependencies: [17, 21, 4794, 575, 8883, 6941, 2]
+// Dependencies: [17, 21, 4913, 575, 9003, 7061, 2]
 // Exports: default
 
-// Module 8884 (WishlistShopUnpublishLabel)
+// Module 9004 (WishlistShopUnpublishLabel)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import WishlistShopUnpublishUtils from "WishlistShopUnpublishUtils" /* 8883 */;
-import createStyles from "createStyles" /* 4794 */;
+import WishlistShopUnpublishUtils from "WishlistShopUnpublishUtils" /* 9003 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let rect;

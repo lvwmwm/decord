@@ -1,10 +1,10 @@
-// Module ID: 7114
-// Function ID: 7115
+// Module ID: 7234
+// Function ID: 7235
 // Name: useInputRevealButton
-// Dependencies: [19, 21, 7115, 7117, 1112, 2]
+// Dependencies: [19, 21, 7235, 7237, 1112, 2]
 // Exports: useInputRevealButtonConfig
 
-// Module 7114 (useInputRevealButton)
+// Module 7234 (useInputRevealButton)
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -26,10 +26,10 @@ export function useInputRevealButtonConfig(merged, state) {
     if (tmp2) {
       let tmp8;
       if (isRevealed) {
-        let EyeIcon = tmp5(7115).EyeSlashIcon;
+        let EyeIcon = tmp5(7235).EyeSlashIcon;
         tmp8 = tmp5;
       } else {
-        EyeIcon = tmp5(7117).EyeIcon;
+        EyeIcon = tmp5(7237).EyeIcon;
         tmp8 = tmp5;
       }
       const obj = { content: <EyeIcon size="xs" color="input-icon-default" accessible={false} />, pressableProps: obj2 };

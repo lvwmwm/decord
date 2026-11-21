@@ -1,20 +1,20 @@
-// Module ID: 14139
-// Function ID: 14140
+// Module ID: 14261
+// Function ID: 14262
 // Name: EditAvatarDecorationSection
-// Dependencies: [19, 17, 7960, 1413, 21, 4794, 14140, 14133, 14141, 7419, 8902, 2]
+// Dependencies: [19, 17, 8080, 1413, 21, 4913, 14262, 14255, 14263, 7539, 9022, 2]
 
-// Module 14139 (EditAvatarDecorationSection)
+// Module 14261 (EditAvatarDecorationSection)
 import react_native from "react-native" /* 17 */;
 import AvatarDecorationConstants from "AvatarDecorationConstants" /* 1413 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7419 */;
-import AvatarDecorationRecord from "AvatarDecorationRecord" /* 7960 */;
-import CutoutableAvatarDecorationDefault from "CutoutableAvatarDecoration" /* 8902 */;
-import useAvatarDecorationSections from "useAvatarDecorationSections" /* 14133 */;
-import useCollectibleListLayout from "useCollectibleListLayout" /* 14140 */;
-import CollectiblesEditUserProfileListItems from "CollectiblesEditUserProfileListItems" /* 14141 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7539 */;
+import AvatarDecorationRecord from "AvatarDecorationRecord" /* 8080 */;
+import CutoutableAvatarDecorationDefault from "CutoutableAvatarDecoration" /* 9022 */;
+import useAvatarDecorationSections from "useAvatarDecorationSections" /* 14255 */;
+import useCollectibleListLayout from "useCollectibleListLayout" /* 14262 */;
+import CollectiblesEditUserProfileListItems from "CollectiblesEditUserProfileListItems" /* 14263 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let avatarDecoration;
@@ -60,7 +60,7 @@ const memoResult = react.memo((size) => {
         return metroImportDefault(CollectiblesEditUserProfileListItems.EditCollectiblesListItemNone, obj2, "none");
       } else if (avatarDecoration === useAvatarDecorationSections.SHOP_ITEM) {
         const obj3 = { size, analyticsSource: AnalyticsLocationDefault.EDIT_AVATAR_DECORATION_SHEET };
-        const EditCollectiblesListItemShop = tmp(14141).EditCollectiblesListItemShop;
+        const EditCollectiblesListItemShop = tmp(14263).EditCollectiblesListItemShop;
         return metroImportDefault(EditCollectiblesListItemShop, obj3, "shop");
       } else if (isAvatarDecorationRecord(avatarDecoration)) {
         const obj4 = { avatarDecoration, isSelected: require === avatarDecoration.skuId, setSelectedAvatarDecoration, isTryItOut, size };

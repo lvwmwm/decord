@@ -1,21 +1,21 @@
-// Module ID: 17574
-// Function ID: 17575
+// Module ID: 17698
+// Function ID: 17699
 // Name: useGuildHasLiveChannelNotice
-// Dependencies: [19, 6415, 4648, 6281, 4643, 4726, 5538, 17575, 4649, 1082, 17576, 504, 7897, 17577, 6424, 6418, 2]
+// Dependencies: [19, 6534, 4767, 6400, 4762, 4845, 5657, 17699, 4768, 1082, 17700, 504, 8017, 17701, 6543, 6537, 2]
 // Exports: useGuildHasLiveChannelNotice, useGuildLiveChannelNoticeInfo
 
-// Module 17574 (useGuildHasLiveChannelNotice)
+// Module 17698 (useGuildHasLiveChannelNotice)
 import Constants from "Constants" /* 1082 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4649 */;
-import StageChannelParticipants from "StageChannelParticipants" /* 6418 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4768 */;
+import StageChannelParticipants from "StageChannelParticipants" /* 6537 */;
 import react from "react" /* 19 */;
-import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6415 */;
-import StageInstanceStore from "StageInstanceStore" /* 4648 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6281 */;
-import ChannelStore from "ChannelStore" /* 4643 */;
-import PermissionStore from "PermissionStore" /* 4726 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5538 */;
-import LiveChannelNoticesStore from "LiveChannelNoticesStore" /* 17575 */;
+import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6534 */;
+import StageInstanceStore from "StageInstanceStore" /* 4767 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6400 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5657 */;
+import LiveChannelNoticesStore from "LiveChannelNoticesStore" /* 17699 */;
 import size from "module_2" /* 2 */;
 
 let closure_11 = GuildScheduledEventsConstants.GuildScheduledEventEntityTypes;

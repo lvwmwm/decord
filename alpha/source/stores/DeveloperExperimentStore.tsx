@@ -1,15 +1,15 @@
-// Module ID: 8303
-// Function ID: 8304
+// Module ID: 8423
+// Function ID: 8424
 // Name: DeveloperExperimentStore
-// Dependencies: [4665, 1386, 5412, 1403, 1402, 504, 572, 2]
+// Dependencies: [4784, 1386, 5531, 1403, 1402, 504, 572, 2]
 
-// Module 8303 (DeveloperExperimentStore)
+// Module 8423 (DeveloperExperimentStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import UserStoreUtils from "UserStoreUtils" /* 1402 */;
 import UserStoreConstants from "UserStoreConstants" /* 1403 */;
-import ExperimentConstants from "ExperimentConstants" /* 5412 */;
-import GuildStore from "GuildStore" /* 4665 */;
+import ExperimentConstants from "ExperimentConstants" /* 5531 */;
+import GuildStore from "GuildStore" /* 4784 */;
 import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 

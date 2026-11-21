@@ -1,37 +1,39 @@
-// Module ID: 17693
-// Function ID: 17694
+// Module ID: 17818
+// Function ID: 17819
 // Name: WaterwheelsDiscoverCard
-// Dependencies: [32, 19, 17, 4665, 1071, 21, 575, 4794, 4657, 504, 17694, 5400, 9931, 5481, 5385, 9635, 7445, 1112, 2563, 5392, 5349, 9693, 17415, 6920, 17683, 17682, 2]
+// Dependencies: [32, 19, 17, 2140, 4784, 1071, 21, 575, 4913, 4776, 504, 17819, 5519, 10051, 5600, 5504, 9755, 7565, 1112, 2643, 5511, 17808, 12464, 5468, 9813, 17820, 7061, 13805, 17539, 7040, 17807, 17806, 2]
 // Exports: default
 
-// Module 17693 (WaterwheelsDiscoverCard)
+// Module 17818 (WaterwheelsDiscoverCard)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
-import intl4 from "intl" /* 1112 */;
-import _modDef2563 from "module_2563" /* 2563 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 4657 */;
-import Text_Text from "Text/Text" /* 5385 */;
-import GameControllerIcon2 from "GameControllerIcon" /* 6920 */;
-import ChevronSmallRightIcon2 from "ChevronSmallRightIcon" /* 7445 */;
-import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 9931 */;
-import useChannelListWidthDefault from "useChannelListWidth" /* 17415 */;
-import entry_data_ErrorBoundary from "entry_data/ErrorBoundary" /* 17682 */;
-import WaterwheelsPostCardDefault from "WaterwheelsPostCard" /* 17683 */;
-import selectDiscoverServerAction from "selectDiscoverServerAction" /* 17694 */;
+import intl7 from "intl" /* 1112 */;
+import _modDef2643 from "module_2643" /* 2643 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 4776 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import FastImageDefault from "FastImage" /* 5600 */;
+import GameControllerIcon2 from "GameControllerIcon" /* 7040 */;
+import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 10051 */;
+import useChannelListWidthDefault from "useChannelListWidth" /* 17539 */;
+import entry_data_ErrorBoundary from "entry_data/ErrorBoundary" /* 17806 */;
+import WaterwheelsPostCardDefault from "WaterwheelsPostCard" /* 17807 */;
+import WaterwheelsSectionLabelDefault from "WaterwheelsSectionLabel" /* 17808 */;
+import selectDiscoverServerAction from "selectDiscoverServerAction" /* 17819 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore from "GuildStore" /* 4665 */;
+import GameStore from "GameStore" /* 2140 */;
+import GuildStore from "GuildStore" /* 4784 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap, set;
 
 let StyleSheet;
-let c10;
 let closure_12;
 let hasOwnProperty;
+let map1;
 let metroImportDefault;
 let metroRequire;
 let obj10;
@@ -57,12 +59,14 @@ let obj6;
 let obj7;
 let obj8;
 let obj9;
+let rect;
 let size;
 let size1;
 let size2;
 let size3;
 let size4;
 let size5;
+let size6;
 let unpackModuleId;
 function ServerIdentity(server) {
   let intl;
@@ -86,9 +90,9 @@ function ServerIdentity(server) {
     flag = false;
   }
   const onAction = server.onAction;
-  let obj = server(5400);
+  let obj = server(5519);
   const fontScale = obj.useFontScale();
-  const tmp4 = closure_16();
+  const tmp4 = closure_17();
   const guildId = server.guildId;
   let obj2 = server(504);
   const items = [GuildStore];
@@ -97,7 +101,7 @@ function ServerIdentity(server) {
     const obj = selectDiscoverServerAction;
     return obj.selectDiscoverServerAction(GuildStore.getGuild(guildId));
   }, items1);
-  const OPEN_GUILD = server(9931).WaterwheelsActionType.OPEN_GUILD;
+  const OPEN_GUILD = server(10051).WaterwheelsActionType.OPEN_GUILD;
   set = new Set();
   if (server.verified) {
     set.add(GuildFeatures.VERIFIED);
@@ -109,15 +113,15 @@ function ServerIdentity(server) {
   if (0 !== set.size) {
     const obj3 = { id: null, name: null, icon: null, features: set };
     ({ guildId: obj5.id, name: obj5.name } = server);
-    const tmpResult = server(4657);
+    const tmpResult = server(4776);
     result = tmpResult.constructFromPartialGuildRecord(obj3);
   }
-  const tmp11 = closure_17(fontScale, flag);
-  const tmp13 = closure_12;
+  const tmp11 = closure_18(fontScale, flag);
+  const tmp13 = closure_13;
   if (null != server.iconUrl) {
     const items2 = [tmp4.icon, ];
     let iconCompact2 = flag;
-    const tmp19 = onAction(5481);
+    const tmp19 = onAction(5600);
     if (flag) {
       iconCompact2 = tmp4.iconCompact;
     }
@@ -127,7 +131,7 @@ function ServerIdentity(server) {
     tmp14Result4 = tmp17(tmp19, obj4);
     tmp14 = tmp17;
   } else {
-    tmp14 = closure_10;
+    tmp14 = closure_11;
     const items3 = [tmp4.icon, ];
     let iconCompact = flag;
     const tmp15 = closure_7;
@@ -141,7 +145,7 @@ function ServerIdentity(server) {
   const items4 = [tmp14Result4, ];
   const obj8 = { style: tmp4.identityCopy, children: items6 };
   const obj9 = { style: tmp4.nameRow, children: items5 };
-  const tmpResult2 = server(5385);
+  const tmpResult2 = server(5504);
   if (flag) {
     const obj10 = { variant: "body-sm/semibold", color: "text-strong", lineClamp: 1, style: tmp4.name, children: server.name };
     tmp14Result = tmp14(tmpResult2.Text, obj10);
@@ -153,28 +157,28 @@ function ServerIdentity(server) {
   let tmp14Result5 = null;
   if (null != result) {
     const obj12 = { guild: result, style: tmp4.badge };
-    tmp14Result5 = tmp14(onAction(9635), obj12);
+    tmp14Result5 = tmp14(onAction(9755), obj12);
   }
   items5[1] = tmp14Result5;
   let tmp14Result6 = null;
   if (stateFromStores === OPEN_GUILD) {
     const obj13 = { size: "xxs", color: onAction(575).colors.ICON_MUTED };
-    const ChevronSmallRightIcon = tmp(7445).ChevronSmallRightIcon;
+    const ChevronSmallRightIcon = tmp(7565).ChevronSmallRightIcon;
     tmp14Result6 = tmp14(ChevronSmallRightIcon, obj13);
   }
   items5[2] = tmp14Result6;
-  items6 = [closure_11(closure_7, obj9), ];
+  items6 = [closure_12(closure_7, obj9), ];
   const obj15 = { style: tmp4.metaItem, children: items7 };
   items7 = [, ];
   const obj14 = { style: tmp4.meta, children: items8 };
   const obj16 = { style: tmp4.dot };
   items7[0] = tmp14(closure_7, obj16);
   const obj17 = { variant: "body-xs/medium", color: "text-subtle", style: tmp4.metaText, children: intl.format(server(1112).t["LC+S+m"], obj18) };
-  const Text = tmp(5385).Text;
+  const Text = tmp(5504).Text;
   intl = tmp(1112).intl;
   obj18 = { membersOnline: server.online };
   items7[1] = tmp14(Text, obj17);
-  items8 = [closure_11(closure_7, obj15), ];
+  items8 = [closure_12(closure_7, obj15), ];
   let tmp12Result = null;
   if (!flag) {
     const obj20 = { style: items9 };
@@ -183,7 +187,7 @@ function ServerIdentity(server) {
     ({ dot: arr10[0], mutedDot: arr10[1] } = tmp4);
     items10 = [tmp14(closure_7, obj20), ];
     const obj21 = { variant: "body-xs/medium", color: "text-subtle", style: tmp4.metaText, children: intl2.format(server(1112).t.zRl6XR, obj22) };
-    const Text2 = tmp(5385).Text;
+    const Text2 = tmp(5504).Text;
     intl2 = tmp(1112).intl;
     obj22 = { count: server.members };
     items10[1] = tmp14(Text2, obj21);
@@ -191,9 +195,9 @@ function ServerIdentity(server) {
   }
   const obj23 = { children: items4 };
   items8[1] = tmp12Result;
-  items6[1] = closure_11(closure_7, obj14);
-  items4[1] = closure_11(closure_7, obj8);
-  const tmp12Result2 = closure_11(tmp13, obj23);
+  items6[1] = closure_12(closure_7, obj14);
+  items4[1] = closure_12(closure_7, obj8);
+  const tmp12Result2 = closure_12(tmp13, obj23);
   const items11 = [tmp4.identity, tmp11.scaled, ];
   if (flag) {
     flag = tmp4.identityCompact;
@@ -229,14 +233,18 @@ class ServerActionButton {
     if (flag === undefined) {
       flag = false;
     }
+    let flag2 = server.grow;
+    if (flag2 === undefined) {
+      flag2 = false;
+    }
     ({ joiningGuildIds, onAction: closure_129_1 } = server);
     let stateFromStores;
-    let flag2;
+    let flag3;
     if (joiningGuildIds != null) {
-      flag2 = joiningGuildIds.has(server.guildId);
+      flag3 = joiningGuildIds.has(server.guildId);
     }
-    if (flag2 == null) {
-      flag2 = false;
+    if (flag3 == null) {
+      flag3 = false;
     }
     const guildId = server.guildId;
     let tmp = guildId;
@@ -247,32 +255,33 @@ class ServerActionButton {
       const obj = selectDiscoverServerAction;
       return obj.selectDiscoverServerAction(GuildStore.getGuild(guildId));
     }, items1);
-    const tmp4 = stateFromStores === guildId(9931).WaterwheelsActionType.OPEN_GUILD;
+    const tmp4 = stateFromStores === guildId(10051).WaterwheelsActionType.OPEN_GUILD;
     const intl = guildId(1112).intl;
     const string = intl.string;
     const t = guildId(1112).t;
     const stringResult = string(tmp4 ? t["HO/oXl"] : t.VJlc0S);
     const intl2 = tmp(1112).intl;
     const formatToPlainString = intl2.formatToPlainString;
-    const tmp6 = _modDef2563;
+    const tmp6 = _modDef2643;
     let obj2 = { guild: server.name };
     let str = "sm";
     const formatToPlainStringResult = formatToPlainString(tmp4 ? tmp6.qGeMEE : tmp6.NOfX8z, obj2);
-    const Button = tmp(5392).Button;
-    const tmp8 = closure_10;
+    const Button = tmp(5511).Button;
+    const tmp8 = closure_11;
     if (flag) {
       str = "lg";
     }
     const obj3 = {
       size: str,
       variant,
+      grow: flag2,
       text: stringResult,
       accessibilityLabel: formatToPlainStringResult,
-      loading: flag2,
-      disabled: flag2,
+      loading: flag3,
+      disabled: flag3,
       onPress: function handlePress() {
         let obj2;
-        const tmp = flag2;
+        const tmp = flag3;
         if (!tmp) {
           const obj = { type: stateFromStores, value: obj2 };
           obj2 = { guild_id: server.guildId };
@@ -284,27 +293,37 @@ class ServerActionButton {
   }
 }
 function ServerRowCard(server) {
-  let intl;
-  let intl2;
-  let items;
+  let ServerIcon;
+  let intl3;
+  let intl4;
+  let intl5;
+  let intl6;
   let items1;
+  let items10;
+  let items11;
+  let items12;
+  let items13;
+  let items14;
+  let items15;
   let items2;
   let items3;
-  let items4;
-  let items5;
-  let items6;
   let items7;
+  let items8;
+  let items9;
   let joiningGuildIds;
-  let obj17;
-  let obj20;
+  let obj12;
+  let obj15;
+  let obj26;
+  let obj30;
   let obj8;
   let onAction;
-  let tmp15;
-  let tmp16;
+  let showSectionLabel;
+  let tmp23;
+  let tmp23Result2;
   server = server.server;
   const onProfileOpen = server.onProfileOpen;
-  ({ joiningGuildIds, onAction } = server);
-  const tmp = closure_16();
+  ({ showSectionLabel, joiningGuildIds, onAction } = server);
+  const tmp = closure_17();
   set = new Set();
   if (server.verified) {
     set.add(GuildFeatures.VERIFIED);
@@ -319,66 +338,126 @@ function ServerRowCard(server) {
     const obj2 = GuildRecordUtils;
     result = obj2.constructFromPartialGuildRecord(obj);
   }
-  function openProfile() {
-    onProfileOpen(server);
+  const items = [server.name, , , ];
+  const intl = intl7.intl;
+  const obj4 = { membersOnline: server.online };
+  items[1] = intl.formatToPlainString(intl7.t["LC+S+m"], obj4);
+  const intl2 = intl7.intl;
+  const obj5 = { count: server.members };
+  items[2] = intl2.formatToPlainString(intl7.t.zRl6XR, obj5);
+  items[3] = server.description;
+  const found = items.filter((item) => null != item && "" !== item);
+  const obj6 = { style: items1, children: items2 };
+  items1 = [, ];
+  ({ serverRow: arr2[0], serverProfile: arr2[1] } = tmp);
+  let tmp14 = null;
+  const joined = found.join(", ");
+  if (showSectionLabel) {
+    const obj7 = { icon: unpackModuleId(ServerIcon, obj8), text: intl3.string(_modDef2643["2iP+h2"]) };
+    obj8 = { size: "sm", color: nativeDefault.colors.ICON_MUTED, accessible: false };
+    const tmp17 = WaterwheelsSectionLabelDefault;
+    ServerIcon = tmp9(12464).ServerIcon;
+    intl3 = tmp9(1112).intl;
+    tmp14 = unpackModuleId(tmp17, obj7);
   }
-  const obj4 = { style: items, children: items7 };
-  items = [, ];
-  ({ serverRow: arr[0], serverProfile: arr[1] } = tmp);
-  const obj5 = { style: tmp.serverHeader, children: items6 };
-  const obj6 = { style: tmp.serverIdentity, accessibilityRole: "button", accessibilityLabel: server.name, accessibilityHint: intl.string(_modDef2563.nkweXX), onPress: openProfile, children: items1 };
-  intl = intl4.intl;
+  items2 = [tmp14, ];
+  const obj9 = { style: tmp.serverCard, children: items15 };
+  const obj10 = {
+    accessibilityRole: "button",
+    accessibilityLabel: joined,
+    accessibilityHint: intl4.string(_modDef2643.nkweXX),
+    onPress: function openProfile() {
+      onProfileOpen(server);
+    },
+    children: items3
+  };
+  intl4 = tmp9(1112).intl;
+  let tmp20 = null;
+  const tmp18 = hasOwnProperty;
+  if (null != server.bannerUrl) {
+    const obj11 = { accessible: false, style: tmp.serverBanner, source: obj12, resizeMode: "cover" };
+    obj12 = { uri: server.bannerUrl };
+    tmp20 = unpackModuleId(tmp19(5600), obj11);
+  }
+  items3 = [tmp20, ];
+  const items4 = [tmp.serverContent, ];
+  const obj13 = { style: items4, children: items7 };
+  const tmp22 = null == server.bannerUrl && tmp.serverContentWithoutBanner;
+  items4[1] = tmp22;
   if (null != server.iconUrl) {
-    const obj7 = { accessible: false, style: tmp.icon, source: obj8 };
-    obj8 = { uri: server.iconUrl };
-    tmp16 = authStore(tmp14(5481), obj7);
-    tmp15 = authStore;
+    const items5 = [tmp.serverIcon, ];
+    let serverIconOverlap = null != server.bannerUrl;
+    const tmp19Result = FastImageDefault;
+    if (serverIconOverlap) {
+      serverIconOverlap = tmp.serverIconOverlap;
+    }
+    const obj14 = { accessible: false, style: items5, source: obj15 };
+    items5[1] = serverIconOverlap;
+    obj15 = { uri: server.iconUrl };
+    tmp23Result2 = tmp26(tmp19Result, obj14);
+    tmp23 = tmp26;
   } else {
-    tmp15 = authStore;
-    const obj9 = { style: tmp.icon };
-    tmp16 = authStore(tmp10, obj9);
+    tmp23 = unpackModuleId;
+    const items6 = [tmp.serverIcon, ];
+    const obj16 = { style: items6 };
+    const tmp24 = null != server.bannerUrl && tmp.serverIconOverlap;
+    items6[1] = tmp24;
+    tmp23Result2 = tmp23(tmp13, obj16);
   }
-  items1 = [tmp16, ];
-  const obj11 = { style: tmp.nameRow, children: items2 };
-  items2 = [, , ];
-  const obj10 = { style: tmp.identityCopy, children: items3 };
-  const obj12 = { variant: "body-md/semibold", color: "text-strong", lineClamp: 1, style: tmp.name, children: server.name };
-  items2[0] = tmp15(Text_Text.Text, obj12);
-  let tmp15Result = null;
+  items7 = [tmp23Result2, ];
+  const obj19 = { style: tmp.nameRow, children: items8 };
+  items8 = [, ];
+  const obj17 = { style: tmp.serverCopy, children: items14 };
+  const obj18 = { style: tmp.serverTitle, children: items9 };
+  const obj20 = { variant: "body-md/medium", color: "text-strong", lineClamp: 1, style: tmp.name, children: server.name };
+  items8[0] = tmp23(Text_Text.Text, obj20);
+  let tmp23Result = null;
   if (null != result) {
-    const obj13 = { guild: result, style: tmp.badge };
-    tmp15Result = tmp15(tmp14(9635), obj13);
+    const obj21 = { guild: result, style: tmp.badge };
+    tmp23Result = tmp23(tmp19(9755), obj21);
   }
-  items2[1] = tmp15Result;
-  items2[2] = tmp15(ChevronSmallRightIcon2.ChevronSmallRightIcon, { size: "xxs", accessible: false });
-  items3 = [unpackModuleId(metroImportDefault, obj11), ];
-  const obj15 = { style: items4 };
-  items4 = [, ];
-  const obj14 = { style: tmp.serverOnline, children: items5 };
-  ({ dot: arr5[0], serverDot: arr5[1] } = tmp);
-  items5 = [tmp15(metroImportDefault, obj15), ];
-  const obj16 = { variant: "body-xs/medium", color: "text-muted", children: intl2.format(intl4.t["LC+S+m"], obj17) };
-  const Text = tmp12(5385).Text;
-  intl2 = tmp12(1112).intl;
-  obj17 = { membersOnline: server.online };
-  items5[1] = tmp15(Text, obj16);
-  items3[1] = unpackModuleId(metroImportDefault, obj14);
-  items1[1] = unpackModuleId(metroImportDefault, obj10);
-  items6 = [unpackModuleId(hasOwnProperty, obj6), ];
-  const obj18 = { style: tmp.serverJoinTarget, children: tmp15(ServerActionButton, { server, variant: "primary", joiningGuildIds, onAction }) };
-  items6[1] = tmp15(metroImportDefault, obj18);
-  items7 = [unpackModuleId(metroImportDefault, obj5), ];
-  let tmp15Result2 = null;
+  items8[1] = tmp23Result;
+  items9 = [authStore2(metroImportDefault, obj19), ];
+  const obj23 = { style: tmp.metaItem, children: items10 };
+  items10 = [, ];
+  const obj22 = { style: tmp.meta, children: items11 };
+  const obj24 = { style: tmp.dot };
+  items10[0] = tmp23(metroImportDefault, obj24);
+  const obj25 = { variant: "body-xs/medium", color: "text-subtle", style: tmp.metaText, children: intl5.format(intl7.t["LC+S+m"], obj26) };
+  const Text = tmp9(5504).Text;
+  intl5 = tmp9(1112).intl;
+  obj26 = { membersOnline: server.online };
+  items10[1] = tmp23(Text, obj25);
+  items11 = [authStore2(metroImportDefault, obj23), ];
+  const obj28 = { style: items12 };
+  items12 = [, ];
+  const obj27 = { style: tmp.metaItem, children: items13 };
+  ({ dot: arr13[0], mutedDot: arr13[1] } = tmp);
+  items13 = [tmp23(metroImportDefault, obj28), ];
+  const obj29 = { variant: "body-xs/medium", color: "text-subtle", style: tmp.metaText, children: intl6.format(intl7.t.zRl6XR, obj30) };
+  const Text2 = tmp9(5504).Text;
+  intl6 = tmp9(1112).intl;
+  obj30 = { count: server.members };
+  items13[1] = tmp23(Text2, obj29);
+  items11[1] = authStore2(metroImportDefault, obj27);
+  items9[1] = authStore2(metroImportDefault, obj22);
+  items14 = [authStore2(metroImportDefault, obj18), ];
+  let tmp23Result3 = null;
   if (null != server.description) {
-    tmp15Result2 = null;
+    tmp23Result3 = null;
     if ("" !== server.description) {
-      const obj19 = { accessible: false, onPress: openProfile, children: tmp15(Text_Text.Text, obj20) };
-      obj20 = { variant: "body-sm/normal", color: "text-subtle", lineClamp: 2, children: server.description };
-      tmp15Result2 = tmp15(tmp11, obj19);
+      const obj31 = { variant: "body-sm/normal", color: "text-subtle", lineClamp: 2, children: server.description };
+      tmp23Result3 = tmp23(tmp9(5504).Text, obj31);
     }
   }
-  items7[1] = tmp15Result2;
-  return unpackModuleId(metroImportDefault, obj4);
+  items14[1] = tmp23Result3;
+  items7[1] = authStore2(metroImportDefault, obj17);
+  items3[1] = authStore2(metroImportDefault, obj13);
+  items15 = [authStore2(tmp18, obj10), ];
+  const obj32 = { style: tmp.serverContent, children: tmp23(ServerActionButton, { server, variant: "secondary", grow: true, joiningGuildIds, onAction }) };
+  items15[1] = tmp23(metroImportDefault, obj32);
+  items2[1] = authStore2(metroImportDefault, obj9);
+  return authStore2(metroImportDefault, obj6);
 }
 function GameHero(game) {
   let intl2;
@@ -397,7 +476,7 @@ function GameHero(game) {
   const width = game.width;
   const onAction = game.onAction;
   const joiningGuildIds = game.joiningGuildIds;
-  const tmp = closure_16();
+  const tmp = closure_17();
   const hero = tmp;
   let items = [tmp.hero, width];
   let coverUrl = game.heroUrl;
@@ -412,9 +491,9 @@ function GameHero(game) {
   }
   let formatToPlainStringResult = null;
   if (null != game.l30Rank) {
-    const intl = game(onAction[17]).intl;
+    const intl = game(onAction[18]).intl;
     let obj = { rank: game.l30Rank };
-    formatToPlainStringResult = intl.formatToPlainString(width(onAction[18]).mnK52O, obj);
+    formatToPlainStringResult = intl.formatToPlainString(width(onAction[19]).mnK52O, obj);
   }
   const items1 = [game.name, formatToPlainStringResult, game.description];
   const found = items1.filter((item) => null != item);
@@ -423,7 +502,7 @@ function GameHero(game) {
     style: tmp.heroBody,
     accessibilityRole: "button",
     accessibilityLabel: found.join(", "),
-    accessibilityHint: intl2.string(width(onAction[18]).xH6QTw),
+    accessibilityHint: intl2.string(width(onAction[19]).xH6QTw),
     onPress() {
       let obj2;
       const obj = { type: WaterwheelsCardTypes.WaterwheelsActionType.OPEN_GAME, value: obj2 };
@@ -432,70 +511,125 @@ function GameHero(game) {
     },
     children: items5
   };
-  intl2 = game(onAction[17]).intl;
+  intl2 = game(onAction[18]).intl;
   let tmp13 = null;
   const obj4 = { style: tmp.heroArt, children: items2 };
   const tmp9 = closure_5;
   if (null != coverUrl) {
     const obj5 = { accessible: false, style: tmp.heroImage, source: obj6, resizeMode: "cover" };
     obj6 = { uri: coverUrl };
-    tmp13 = closure_10(tmp12(tmp11[13]), obj5);
+    tmp13 = closure_11(tmp12(tmp11[14]), obj5);
   }
   items2 = [tmp13, , ];
   const obj7 = { pointerEvents: "none", colors, style: tmp.heroImage };
-  items2[1] = closure_10(width(onAction[20]), obj7);
+  items2[1] = closure_11(width(onAction[23]), obj7);
   let tmp15Result = null;
   const obj8 = { style: tmp.heroTop, children: items3 };
   if (null != game.coverUrl) {
     const obj9 = { accessible: false, style: tmp.cover, source: obj10 };
     obj10 = { uri: game.coverUrl };
-    tmp15Result = tmp15(tmp12(tmp11[13]), obj9);
+    tmp15Result = tmp15(tmp12(tmp11[14]), obj9);
   }
   items3 = [tmp15Result, ];
   let tmp15Result3 = null;
   const obj11 = { style: tmp.heroTitle, children: items4 };
   if (null != game.l30Rank) {
-    const obj12 = { style: tmp.heroRank, children: closure_10(width(onAction[21]), obj13) };
+    const obj12 = { style: tmp.heroRank, children: closure_11(width(onAction[24]), obj13) };
     obj13 = { rank: game.l30Rank, compact: true };
     tmp15Result3 = tmp15(tmp8, obj12);
   }
   items4 = [tmp15Result3, ];
   const obj14 = { variant: "heading-md/semibold", color: "text-overlay-light", lineClamp: 2, children: game.name };
-  items4[1] = closure_10(game(onAction[14]).Heading, obj14);
-  items3[1] = closure_11(closure_7, obj11);
-  items2[2] = closure_11(closure_7, obj8);
-  items5 = [closure_11(closure_7, obj4), , ];
+  items4[1] = closure_11(game(onAction[15]).Heading, obj14);
+  items3[1] = closure_12(closure_7, obj11);
+  items2[2] = closure_12(closure_7, obj8);
+  items5 = [closure_12(closure_7, obj4), , ];
   let tmp15Result4 = null;
   if (null != game.description) {
     const obj15 = { variant: "body-sm/normal", color: "text-subtle", lineClamp: 2, children: game.description };
-    tmp15Result4 = tmp15(tmp10(tmp11[14]).Text, obj15);
+    tmp15Result4 = tmp15(tmp10(tmp11[15]).Text, obj15);
   }
   items5[1] = tmp15Result4;
   let tmp7Result = null;
   if (null == game.server) {
     const obj16 = { style: tmp.heroCta, children: items6 };
-    const obj17 = { variant: "body-sm/semibold", color: "text-strong", children: intl3.string(width(onAction[18]).xH6QTw) };
-    const Text = tmp10(tmp11[14]).Text;
-    intl3 = tmp10(tmp11[17]).intl;
-    items6 = [closure_10(Text, obj17), ];
-    const obj18 = { size: "xxs", color: width(onAction[6]).colors.ICON_MUTED };
-    const ChevronSmallRightIcon = tmp10(tmp11[16]).ChevronSmallRightIcon;
-    items6[1] = closure_10(ChevronSmallRightIcon, obj18);
+    const obj17 = { variant: "body-sm/semibold", color: "text-strong", children: intl3.string(width(onAction[19]).xH6QTw) };
+    const Text = tmp10(tmp11[15]).Text;
+    intl3 = tmp10(tmp11[18]).intl;
+    items6 = [closure_11(Text, obj17), ];
+    const obj18 = { size: "xxs", color: width(onAction[7]).colors.ICON_MUTED };
+    const ChevronSmallRightIcon = tmp10(tmp11[17]).ChevronSmallRightIcon;
+    items6[1] = closure_11(ChevronSmallRightIcon, obj18);
     tmp7Result = tmp7(tmp8, obj16);
   }
   items5[2] = tmp7Result;
-  items7 = [closure_11(tmp9, obj3), ];
+  items7 = [closure_12(tmp9, obj3), ];
   let tmp7Result2 = null;
   if (null != game.server) {
     const obj19 = { style: tmp.heroServer, children: items8 };
     const obj20 = { server: game.server, compact: true, onAction };
-    items8 = [closure_10(ServerIdentity, obj20), ];
+    items8 = [closure_11(ServerIdentity, obj20), ];
     const obj21 = { server: game.server, variant: "secondary", joiningGuildIds, onAction };
-    items8[1] = closure_10(ServerActionButton, obj21);
+    items8[1] = closure_11(ServerActionButton, obj21);
     tmp7Result2 = tmp7(tmp8, obj19);
   }
   items7[1] = tmp7Result2;
-  return closure_11(closure_7, obj2);
+  return closure_12(closure_7, obj2);
+}
+function GamePoster(game) {
+  let Badge;
+  let intl2;
+  let intl3;
+  let items3;
+  let obj6;
+  let obj7;
+  let obj8;
+  game = game.game;
+  const onAction = game.onAction;
+  const tmp = closure_17();
+  let obj = game(504);
+  const items = [GameStore];
+  const items1 = [game.gameId];
+  let formatToPlainStringResult = null;
+  const stateFromStores = obj.useStateFromStores(items, () => GameStore.getGame(game.gameId), items1);
+  if (null != game.l30Rank) {
+    const intl = tmp2(1112).intl;
+    let obj2 = { rank: game.l30Rank };
+    formatToPlainStringResult = intl.formatToPlainString(onAction(2643).mnK52O, obj2);
+  }
+  const items2 = [game.name, formatToPlainStringResult, game.description];
+  const found = items2.filter((item) => null != item);
+  const obj3 = {
+    style: tmp.poster,
+    accessibilityRole: "button",
+    accessibilityLabel: found.join(", "),
+    accessibilityHint: intl2.string(onAction(2643).xH6QTw),
+    onPress() {
+      let obj2;
+      const obj = { type: WaterwheelsCardTypes.WaterwheelsActionType.OPEN_GAME, value: obj2 };
+      obj2 = { game_id: game.gameId };
+      return onAction(obj, "identity");
+    },
+    children: items3
+  };
+  intl2 = tmp2(1112).intl;
+  items3 = [, ];
+  const obj4 = { gameId: game.gameId, name: game.name, coverUrl: game.coverUrl, iconGame: stateFromStores, width: 114, aspectRatio: 0.6909090909090909 };
+  items3[0] = closure_11(game(17820).GameCoverFromURLs, obj4);
+  let tmp9Result = null;
+  const tmp7 = closure_12;
+  const tmp8 = closure_5;
+  if (null != game.l30Rank) {
+    const obj5 = { style: tmp.posterRank, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_11(Badge, obj6) };
+    obj6 = { type: obj7, variant: "inverted", icon: game(13805).FireIcon };
+    obj7 = { text: intl3.formatToPlainString(game(1112).t.UA6RoE, obj8) };
+    Badge = tmp2(7061).Badge;
+    intl3 = tmp2(1112).intl;
+    obj8 = { rank: game.l30Rank };
+    tmp9Result = tmp9(closure_7, obj5);
+  }
+  items3[1] = tmp9Result;
+  return tmp7(tmp8, obj3);
 }
 function CarouselCard(arg0) {
   let GameControllerIcon;
@@ -505,20 +639,17 @@ function CarouselCard(arg0) {
   let diff;
   let items;
   let items1;
-  let items2;
-  let items3;
-  let items4;
   let joiningGuildIds;
-  let obj4;
+  let obj3;
   let onAction;
   let tmp6;
   ({ carousel, joiningGuildIds: require, onAction: importDefault } = arg0);
   dependencyMap = undefined;
   _slicedToArray = undefined;
-  const tmp = closure_16();
-  const tmp4 = useChannelListWidthDefault();
-  [tmp6, c2] = react.useState(null);
-  _slicedToArray(react.useState(null), 2);
+  const tmp = closure_17();
+  let tmp4 = useChannelListWidthDefault();
+  [tmp6, c2] = _slicedToArray(react.useState(null), 2);
+  const tmp5 = _slicedToArray(react.useState(null), 2);
   if (diff == null) {
     diff = tmp4 - 2 * PX_16;
   }
@@ -527,23 +658,13 @@ function CarouselCard(arg0) {
     num = PX_64;
   }
   _slicedToArray = Math.max(0, diff - num);
-  let obj = { style: tmp.carouselSection, children: items3 };
-  const obj2 = { style: tmp.carouselHeader, children: items1 };
-  const obj3 = { style: items, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_10(GameControllerIcon, obj4) };
-  items = [, ];
-  ({ icon: arr[0], carouselIconTile: arr[1] } = tmp);
-  obj4 = { size: "md", color: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT, accessible: false };
+  let obj = { style: tmp.carouselSection, children: items };
+  let obj2 = { icon: closure_11(GameControllerIcon, obj3), text: carousel.header.title };
+  obj3 = { size: "sm", color: nativeDefault.colors.ICON_MUTED, accessible: false };
+  const tmp2Result = WaterwheelsSectionLabelDefault;
   GameControllerIcon = GameControllerIcon2.GameControllerIcon;
-  items1 = [closure_10(closure_7, obj3), ];
-  const obj5 = { style: tmp.identityCopy, children: items2 };
-  items2 = [, ];
-  const obj6 = { variant: "heading-sm/semibold", color: "text-strong", children: carousel.header.title };
-  items2[0] = closure_10(Text_Text.Heading, obj6);
-  const obj7 = { variant: "body-sm/medium", color: "text-subtle", children: carousel.header.subtitle };
-  items2[1] = closure_10(Text_Text.Text, obj7);
-  items1[1] = closure_11(closure_7, obj5);
-  items3 = [closure_11(closure_7, obj2), ];
-  const obj8 = {
+  items = [closure_11(tmp2Result, obj2), ];
+  const obj4 = {
     horizontal: true,
     showsHorizontalScrollIndicator: false,
     onLayout: function handleLayout(nativeEvent) {
@@ -553,14 +674,21 @@ function CarouselCard(arg0) {
       }
     },
     contentContainerStyle: tmp.carouselContent,
-    children: items4.map((game) => {
-      const obj = { game, width, joiningGuildIds: require, onAction: importDefault };
-      return authStore(GameHero, obj, game.gameId);
+    children: items1.map((server) => {
+      let tmp4;
+      if (null != server.server) {
+        const obj2 = { game: server, width, joiningGuildIds: require, onAction: importDefault };
+        tmp4 = unpackModuleId(GameHero, obj2, server.gameId);
+      } else {
+        const obj = { game: server, onAction: importDefault };
+        tmp4 = unpackModuleId(GamePoster, obj, server.gameId);
+      }
+      return tmp4;
     })
   };
-  items4 = carousel.items;
-  items3[1] = closure_10(closure_6, obj8);
-  return closure_11(closure_7, obj);
+  items1 = carousel.items;
+  items[1] = closure_11(closure_6, obj4);
+  return closure_12(closure_7, obj);
 }
 function WaterwheelsDiscoverCardContent(entry) {
   let joiningGuildIds;
@@ -569,63 +697,67 @@ function WaterwheelsDiscoverCardContent(entry) {
   entry = entry.entry;
   ({ joiningGuildIds, onAction } = entry);
   const onProfileOpen = entry.onProfileOpen;
+  const showServerSectionLabel = entry.showServerSectionLabel;
   const card = entry.card;
   const layout = card.layout;
   const items = [entry, onAction];
-  const tmp = closure_16();
+  const tmp = closure_17();
   const callback = react.useCallback((arg0, arg1) => onAction(entry, arg0, arg1), items);
   const items1 = [entry, onProfileOpen];
   const type = layout.type;
   if ("server_row" === type) {
-    const obj2 = { server: layout, joiningGuildIds, onAction: callback, onProfileOpen: tmp3 };
-    return authStore(ServerRowCard, obj2);
+    const obj2 = { server: layout, showSectionLabel: showServerSectionLabel, joiningGuildIds, onAction: callback, onProfileOpen: tmp3 };
+    return unpackModuleId(ServerRowCard, obj2);
   } else if ("carousel" === type) {
     const obj3 = { carousel: layout, joiningGuildIds, onAction: callback };
-    return authStore(CarouselCard, obj3);
+    return unpackModuleId(CarouselCard, obj3);
   } else if ("post" === type) {
-    const obj = { style: tmp.row, children: authStore(WaterwheelsPostCardDefault, obj4) };
+    const obj = { style: tmp.row, children: unpackModuleId(WaterwheelsPostCardDefault, obj4) };
     obj4 = {
       post: layout,
+      discoverSectionLabel: true,
       action: card.actions[0],
       onAction(arg0) {
           return callback(arg0, "button");
         }
     };
-    return authStore(metroImportDefault, obj);
+    return unpackModuleId(metroImportDefault, obj);
   }
 }
 let _slicedToArray = _slicedToArray_mod;
 ({ Pressable: hasOwnProperty, ScrollView: metroRequire, View: metroImportDefault, StyleSheet } = react_native);
 const GuildFeatures = Constants.GuildFeatures;
-({ jsx: c10, jsxs: unpackModuleId, Fragment: closure_12 } = Fragment);
+({ jsx: unpackModuleId, jsxs: closure_12, Fragment: map1 } = Fragment);
 const PX_40 = nativeDefault.space.PX_40;
 const PX_12 = nativeDefault.space.PX_12;
 const PX_64 = nativeDefault.space.PX_64;
-const PX_122 = nativeDefault.space.PX_12;
+const PX_10 = nativeDefault.space.PX_10;
 const PX_16 = nativeDefault.space.PX_16;
 const colors = ["rgba(0,0,0,0.65)", "rgba(0,0,0,0.85)"];
 let createStyles = createStyles_mod;
-let obj = { row: obj2, carouselSection: obj3, carouselHeader: { flexDirection: "row", alignItems: "center", gap: PX_12 }, carouselIconTile: obj4, carouselContent: obj5, serverRow: obj6, serverProfile: obj7, serverJoinTarget: { flexShrink: 0 }, serverHeader: obj8, serverIdentity: obj9, badge: size, identity: { flex: 1, flexDirection: "row", alignItems: "center", gap: PX_12, minWidth: 0 }, identityCompact: obj10, identityCopy: obj11, nameRow: obj12, name: { flexShrink: 1 }, icon: size1, iconCompact: size2, meta: obj13, serverOnline: obj14, metaItem: obj15, metaText: { flexShrink: 1 }, dot: size3, serverDot: size4, mutedDot: obj16, hero: obj17, heroBody: obj18, heroArt: obj19, heroImage: StyleSheet.absoluteFillObject, heroTop: obj20, heroTitle: obj21, heroRank: obj22, cover: size5, heroCta: obj23, heroServer: obj24 };
+let obj = { row: obj2, carouselSection: obj3, carouselContent: { gap: PX_10 }, poster: size, posterRank: rect, serverRow: obj4, serverProfile: obj5, serverCard: obj6, serverBanner: { height: 111, width: "100%" }, serverContent: obj7, serverContentWithoutBanner: obj8, serverIcon: size1, serverIconOverlap: { marginTop: -30 }, serverCopy: obj9, serverTitle: obj10, badge: size2, identity: { flex: 1, flexDirection: "row", alignItems: "center", gap: PX_12, minWidth: 0 }, identityCompact: obj11, identityCopy: obj12, nameRow: obj13, name: { flexShrink: 1 }, icon: size3, iconCompact: size4, meta: obj14, metaItem: obj15, metaText: { flexShrink: 1 }, dot: size5, mutedDot: obj16, hero: obj17, heroBody: obj18, heroArt: obj19, heroImage: StyleSheet.absoluteFillObject, heroTop: obj20, heroTitle: obj21, heroRank: obj22, cover: size6, heroCta: obj23, heroServer: obj24 };
 obj2 = { paddingTop: nativeDefault.space.PX_16, paddingHorizontal: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_8 };
 createStyles = createStyles.createStyles;
-obj3 = { paddingTop: nativeDefault.space.PX_16, paddingHorizontal: PX_16, paddingBottom: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_8 };
-obj4 = { alignItems: "center", justifyContent: "center", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_STRONG };
-obj5 = { paddingTop: nativeDefault.space.PX_4, gap: PX_122 };
-obj6 = { paddingHorizontal: nativeDefault.space.PX_16 };
-obj7 = { paddingVertical: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_8 };
-obj8 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_16 };
-obj9 = { flex: 1, minWidth: 0, flexDirection: "row", alignItems: "center", gap: PX_12, minHeight: nativeDefault.space.PX_48 };
-size = { width: nativeDefault.space.PX_16, height: nativeDefault.space.PX_16, marginRight: 0 };
-obj10 = { gap: nativeDefault.space.PX_8 };
-obj11 = { flex: 1, gap: nativeDefault.space.PX_4, minWidth: 0 };
-obj12 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4, minWidth: 0 };
-size1 = { width: PX_40, height: PX_40, borderRadius: nativeDefault.radii.md, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE };
-size2 = { width: nativeDefault.space.PX_32, height: nativeDefault.space.PX_32, borderRadius: nativeDefault.radii.sm };
-obj13 = { flexDirection: "row", flexWrap: "wrap", alignItems: "center", gap: nativeDefault.space.PX_8 };
-obj14 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 };
+obj3 = { paddingTop: nativeDefault.space.PX_16, paddingHorizontal: PX_16, paddingBottom: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_12 };
+size = { width: 114, height: 165, borderRadius: nativeDefault.radii.lg, overflow: "hidden", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE, alignItems: "center", justifyContent: "center" };
+rect = { position: "absolute", top: nativeDefault.space.PX_8, left: nativeDefault.space.PX_8 };
+obj4 = { paddingHorizontal: nativeDefault.space.PX_16 };
+obj5 = { paddingVertical: nativeDefault.space.PX_16, gap: nativeDefault.space.PX_12 };
+obj6 = { borderRadius: nativeDefault.radii.xl, borderWidth: 1, borderColor: nativeDefault.colors.BORDER_SUBTLE, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, overflow: "hidden" };
+obj7 = { paddingHorizontal: nativeDefault.space.PX_12, paddingBottom: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_12 };
+obj8 = { paddingTop: nativeDefault.space.PX_12 };
+size1 = { width: nativeDefault.space.PX_48, height: nativeDefault.space.PX_48, borderRadius: nativeDefault.radii.md, borderWidth: 4, borderColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE };
+obj9 = { gap: nativeDefault.space.PX_12 };
+obj10 = { gap: nativeDefault.space.PX_4 };
+size2 = { width: nativeDefault.space.PX_16, height: nativeDefault.space.PX_16, marginRight: 0 };
+obj11 = { gap: nativeDefault.space.PX_8 };
+obj12 = { flex: 1, gap: nativeDefault.space.PX_4, minWidth: 0 };
+obj13 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4, minWidth: 0 };
+size3 = { width: PX_40, height: PX_40, borderRadius: nativeDefault.radii.md, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE };
+size4 = { width: nativeDefault.space.PX_32, height: nativeDefault.space.PX_32, borderRadius: nativeDefault.radii.sm };
+obj14 = { flexDirection: "row", flexWrap: "wrap", alignItems: "center", gap: nativeDefault.space.PX_8 };
 obj15 = { flexDirection: "row", maxWidth: "100%", flexShrink: 1, alignItems: "center", gap: nativeDefault.space.PX_4 };
-size3 = { flexShrink: 0, width: nativeDefault.space.PX_8, height: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.ICON_STATUS_ONLINE };
-size4 = { width: nativeDefault.space.PX_6, height: nativeDefault.space.PX_6, backgroundColor: nativeDefault.colors.TEXT_STATUS_ONLINE };
+size5 = { flexShrink: 0, width: nativeDefault.space.PX_8, height: nativeDefault.space.PX_8, borderRadius: nativeDefault.radii.round, backgroundColor: nativeDefault.colors.ICON_STATUS_ONLINE };
 obj16 = { backgroundColor: nativeDefault.colors.ICON_STATUS_OFFLINE };
 obj17 = { borderRadius: nativeDefault.radii.xl, overflow: "hidden", backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE };
 obj18 = { padding: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_12 };
@@ -633,12 +765,12 @@ obj19 = { minHeight: 184, borderRadius: nativeDefault.radii.lg, overflow: "hidde
 obj20 = { flexDirection: "row", alignItems: "flex-end", gap: nativeDefault.space.PX_12 };
 obj21 = { flex: 1, gap: nativeDefault.space.PX_4, minWidth: 0 };
 obj22 = { flexDirection: "row", minHeight: 20, marginBottom: nativeDefault.space.PX_4 };
-size5 = { width: 72, height: 96, borderRadius: nativeDefault.radii.md, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE };
+size6 = { width: 72, height: 96, borderRadius: nativeDefault.radii.md, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE };
 obj23 = { flexDirection: "row", alignItems: "center", justifyContent: "space-between", borderTopWidth: 1, borderTopColor: nativeDefault.colors.BORDER_SUBTLE, paddingTop: nativeDefault.space.PX_12 };
 obj24 = { flexDirection: "row", flexWrap: "wrap", alignItems: "center", gap: nativeDefault.space.PX_8, paddingHorizontal: nativeDefault.space.PX_16, paddingVertical: nativeDefault.space.PX_12, borderTopWidth: 1, borderTopColor: nativeDefault.colors.BORDER_SUBTLE };
-let closure_16 = createStyles(obj);
+let closure_17 = createStyles(obj);
 createStyles = createStyles_mod;
-let closure_17 = createStyles.createStyles((arg0, arg1) => {
+let closure_18 = createStyles.createStyles((arg0, arg1) => {
   let num = 180;
   const tmp = arg1;
   if (tmp) {
@@ -651,10 +783,10 @@ let result = size.fileFinishedImporting("modules/waterwheels/discover/native/Wat
 
 export default function WaterwheelsDiscoverCard(entry) {
   let obj2;
-  const obj = { fallback: null, children: authStore(WaterwheelsDiscoverCardContent, obj2) };
+  const obj = { fallback: null, children: unpackModuleId(WaterwheelsDiscoverCardContent, obj2) };
   obj2 = {};
   const ErrorBoundary = entry_data_ErrorBoundary.ErrorBoundary;
   const merged = Object.assign(entry);
-  return authStore(ErrorBoundary, obj, entry.entry.key);
+  return unpackModuleId(ErrorBoundary, obj, entry.entry.key);
 };
 export { ServerActionButton };

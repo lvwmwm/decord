@@ -1,12 +1,12 @@
-// Module ID: 18123
-// Function ID: 18124
+// Module ID: 18250
+// Function ID: 18251
 // Name: useConjurePublishButton
-// Dependencies: [19, 1112, 4091, 12176, 2]
+// Dependencies: [19, 1112, 4190, 12298, 2]
 // Exports: default
 
-// Module 18123 (useConjurePublishButton)
+// Module 18250 (useConjurePublishButton)
 import intl3 from "intl" /* 1112 */;
-import useConjurePublishActionDefault from "useConjurePublishAction" /* 12176 */;
+import useConjurePublishActionDefault from "useConjurePublishAction" /* 12298 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -36,13 +36,13 @@ export default function useConjurePublishButton(arg0, arg1, arg2, arg3) {
   }
   if (null == tmp4) {
     const intl2 = intl3.intl;
-    label = intl2.string(tmp2(4091)["120EFN"]);
+    label = intl2.string(tmp2(4190)["120EFN"]);
   } else {
     const tmp7 = null != tmp4 && tmp4.upToDate && "publish" === tmp4.action && !tmp4.awaitingApproval;
     if (tmp7) {
       if (!tmp4.publishing) {
         const intl = intl3.intl;
-        label = intl.string(tmp2(4091).kAfbEN);
+        label = intl.string(tmp2(4190).kAfbEN);
       }
     }
     label = tmp4.label;

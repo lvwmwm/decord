@@ -1,18 +1,18 @@
-// Module ID: 19537
-// Function ID: 19538
+// Module ID: 19664
+// Function ID: 19665
 // Name: StageChannelRequestToSpeakMessageManager
-// Dependencies: [502, 4643, 5845, 4726, 4697, 1386, 1071, 7364, 4651, 19538, 1087, 8130, 2]
+// Dependencies: [502, 4762, 5964, 4845, 4816, 1386, 1071, 7484, 4770, 19665, 1087, 8250, 2]
 
-// Module 19537 (StageChannelRequestToSpeakMessageManager)
+// Module 19664 (StageChannelRequestToSpeakMessageManager)
 import Constants from "Constants" /* 1071 */;
 import MessageTypes from "MessageTypes" /* 1087 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4643 */;
-import MessageStore from "MessageStore" /* 5845 */;
-import PermissionStore from "PermissionStore" /* 4726 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4697 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import MessageStore from "MessageStore" /* 5964 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4816 */;
 import UserStore from "UserStore" /* 1386 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7364 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7484 */;
 import size from "module_2" /* 2 */;
 
 let can, messages, requestToSpeakTimestamp, user;

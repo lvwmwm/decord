@@ -1,16 +1,16 @@
-// Module ID: 16283
-// Function ID: 16284
+// Module ID: 16406
+// Function ID: 16407
 // Name: HexagonCampaignPreviousPerkValues
-// Dependencies: [4818, 1237, 1191, 1193, 4819, 1239, 1194, 5000, 1240, 4822, 15730, 2]
+// Dependencies: [4937, 1237, 1191, 1193, 4938, 1239, 1194, 5119, 1240, 4941, 15853, 2]
 // Exports: getHexagonCampaignClientThemeItem, saveHexagonCampaignPreviousClientTheme
 
-// Module 16283 (HexagonCampaignPreviousPerkValues)
+// Module 16406 (HexagonCampaignPreviousPerkValues)
 import ThemeConstants from "ThemeConstants" /* 1194 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4819 */;
-import HexagonCampaignUtils from "HexagonCampaignUtils" /* 4822 */;
-import MobileThemesUtils from "MobileThemesUtils" /* 5000 */;
-import HexagonActionCreators from "HexagonActionCreators" /* 15730 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4818 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4938 */;
+import HexagonCampaignUtils from "HexagonCampaignUtils" /* 4941 */;
+import MobileThemesUtils from "MobileThemesUtils" /* 5119 */;
+import HexagonActionCreators from "HexagonActionCreators" /* 15853 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4937 */;
 import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1237 */;
 import ThemeStore from "ThemeStore" /* 1191 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1193 */;

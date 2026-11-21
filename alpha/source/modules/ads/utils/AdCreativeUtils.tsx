@@ -1,11 +1,11 @@
-// Module ID: 16359
-// Function ID: 16360
+// Module ID: 16482
+// Function ID: 16483
 // Name: AdCreativeUtils
-// Dependencies: [6446, 2]
+// Dependencies: [6565, 2]
 // Exports: getCreativeAnalyticsParams, getQuestDockAdCreativeId, getQuestDockQuest
 
-// Module 16359 (AdCreativeUtils)
-import AdCreativeType from "AdCreativeType" /* 6446 */;
+// Module 16482 (AdCreativeUtils)
+import AdCreativeType from "AdCreativeType" /* 6565 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/ads/utils/AdCreativeUtils.tsx");

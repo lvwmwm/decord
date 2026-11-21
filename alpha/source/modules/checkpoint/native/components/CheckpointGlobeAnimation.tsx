@@ -1,14 +1,14 @@
-// Module ID: 12602
-// Function ID: 12603
+// Module ID: 12724
+// Function ID: 12725
 // Name: CheckpointGlobeAnimation
-// Dependencies: [21, 12390, 12603, 12604, 2]
+// Dependencies: [21, 12512, 12725, 12726, 2]
 // Exports: default
 
-// Module 12602 (CheckpointGlobeAnimation)
+// Module 12724 (CheckpointGlobeAnimation)
 import Fragment from "Fragment" /* 21 */;
-import CheckpointApngPlayerDefault from "CheckpointApngPlayer" /* 12390 */;
-import _modDef12603 from "module_12603" /* 12603 */;
-import _modDef12604 from "module_12604" /* 12604 */;
+import CheckpointApngPlayerDefault from "CheckpointApngPlayer" /* 12512 */;
+import _modDef12725 from "module_12725" /* 12725 */;
+import _modDef12726 from "module_12726" /* 12726 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -17,5 +17,5 @@ const result = size.fileFinishedImporting("modules/checkpoint/native/components/
 export default function CheckpointGlobeAnimation(style) {
   style = style.style;
   CheckpointApngPlayerDefault;
-  return <tmp animatedUri={_modDef12603} staticUri={_modDef12604} style={style} />;
+  return <tmp animatedUri={_modDef12725} staticUri={_modDef12726} style={style} />;
 };

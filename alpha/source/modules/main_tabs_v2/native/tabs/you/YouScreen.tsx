@@ -1,10 +1,10 @@
-// Module ID: 18763
-// Function ID: 18764
+// Module ID: 18890
+// Function ID: 18891
 // Name: YouScreen
-// Dependencies: [32, 19, 17, 6837, 2187, 15864, 6545, 1386, 17824, 1071, 1073, 4640, 7444, 21, 1653, 8081, 4794, 1358, 575, 671, 4971, 563, 1112, 6910, 15848, 7477, 8063, 5811, 1263, 7952, 1628, 8060, 5003, 8079, 4973, 1494, 4619, 1501, 18764, 1412, 8083, 7253, 9825, 8015, 8030, 8031, 8043, 7419, 8057, 4751, 4627, 8960, 5481, 18765, 12711, 5372, 18773, 18774, 4855, 18775, 8053, 8037, 8070, 1089, 11516, 8893, 18777, 10312, 7953, 8862, 8074, 7954, 8935, 8148, 2]
+// Dependencies: [32, 19, 17, 6956, 2188, 15987, 6664, 1386, 17950, 1071, 1073, 4759, 7564, 21, 1653, 8201, 4913, 1358, 575, 671, 5090, 563, 1112, 7030, 15971, 7597, 8183, 5930, 1263, 8072, 1628, 8180, 5122, 8199, 5092, 1494, 4738, 1501, 18891, 1412, 8203, 7373, 9945, 8135, 8150, 8151, 8163, 7539, 8177, 4870, 4746, 9080, 5600, 18892, 12833, 5491, 18900, 18901, 4974, 18902, 8173, 8157, 8190, 1089, 11636, 9013, 18904, 10432, 8073, 8982, 8194, 8074, 9055, 8268, 2]
 // Exports: default
 
-// Module 18763 (YouScreen)
+// Module 18890 (YouScreen)
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
@@ -12,25 +12,25 @@ import Constants2 from "Constants" /* 1071 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1073 */;
 import intl4 from "intl" /* 1112 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1358 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4640 */;
-import RootNavigationRef from "RootNavigationRef" /* 4971 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7953 */;
-import VisualEffectViewThemedDefault from "VisualEffectViewThemed" /* 8081 */;
-import YouBannerDecorations from "YouBannerDecorations" /* 9825 */;
-import BackIconWithBadge from "BackIconWithBadge" /* 15848 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4759 */;
+import RootNavigationRef from "RootNavigationRef" /* 5090 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8073 */;
+import VisualEffectViewThemedDefault from "VisualEffectViewThemed" /* 8201 */;
+import YouBannerDecorations from "YouBannerDecorations" /* 9945 */;
+import BackIconWithBadge from "BackIconWithBadge" /* 15971 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserProfileStore from "UserProfileStore" /* 6837 */;
-import LocaleStore from "LocaleStore" /* 2187 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 15864 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 6545 */;
+import UserProfileStore from "UserProfileStore" /* 6956 */;
+import LocaleStore from "LocaleStore" /* 2188 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 15987 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6664 */;
 import UserStore from "UserStore" /* 1386 */;
-import YouConstants from "YouConstants" /* 17824 */;
-import Constants from "Constants" /* 7444 */;
+import YouConstants from "YouConstants" /* 17950 */;
+import Constants from "Constants" /* 7564 */;
 import Fragment from "Fragment" /* 21 */;
 import module_1653_mod from "module_1653" /* 1653 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let navigation;
@@ -76,7 +76,7 @@ function BackButton(paddingTop) {
   }
   const obj3 = { style: items1, accessibilityRole: "button", accessibilityLabel: formatToPlainStringResult, onPress: handleBackButtonPress, children: closure_21(BackIconWithBadge.CloseIconWithBadgeOnSide, { count: stateFromStores }) };
   items1 = [tmp.backButton, { top: paddingTop }];
-  const PressableOpacity = tmp2(6910).PressableOpacity;
+  const PressableOpacity = tmp2(7030).PressableOpacity;
   return closure_21(PressableOpacity, obj3);
 }
 function UnconnectedYouScreen(arg0) {

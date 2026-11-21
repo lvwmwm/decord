@@ -1,14 +1,14 @@
-// Module ID: 19170
-// Function ID: 19171
+// Module ID: 19297
+// Function ID: 19298
 // Name: StageModeratorIcon
-// Dependencies: [19, 21, 575, 5480, 19171, 2]
+// Dependencies: [19, 21, 575, 5599, 19298, 2]
 // Exports: StageModeratorIcon
 
-// Module 19170 (StageModeratorIcon)
+// Module 19297 (StageModeratorIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5480 */;
-import AssetRegistry from "AssetRegistry" /* 19171 */;
+import BaseIconImage2 from "BaseIconImage" /* 5599 */;
+import AssetRegistry from "AssetRegistry" /* 19298 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

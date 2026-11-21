@@ -1,13 +1,13 @@
-// Module ID: 9620
-// Function ID: 9621
+// Module ID: 9740
+// Function ID: 9741
 // Name: isPlayingGameActivity
-// Dependencies: [2143, 5533, 7940, 2]
+// Dependencies: [2144, 5652, 8060, 2]
 // Exports: default
 
-// Module 9620 (isPlayingGameActivity)
-import Constants from "Constants" /* 2143 */;
-import ActivityTypes from "ActivityTypes" /* 5533 */;
-import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 7940 */;
+// Module 9740 (isPlayingGameActivity)
+import Constants from "Constants" /* 2144 */;
+import ActivityTypes from "ActivityTypes" /* 5652 */;
+import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 8060 */;
 import size from "module_2" /* 2 */;
 
 let closure_3 = Constants.XBOX_ACTIVITY_APPLICATION_ID;

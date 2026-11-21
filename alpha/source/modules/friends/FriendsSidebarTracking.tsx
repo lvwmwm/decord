@@ -1,10 +1,10 @@
-// Module ID: 6525
-// Function ID: 6526
+// Module ID: 6644
+// Function ID: 6645
 // Name: FriendsSidebarTracking
 // Dependencies: [1071, 1255, 2]
 // Exports: trackFriendsSidebarGroupingModeChanged, trackFriendsSidebarHeaderButtonClicked, trackFriendsSidebarToggled, trackFriendsSidebarVoiceGroupingToggled
 
-// Module 6525 (FriendsSidebarTracking)
+// Module 6644 (FriendsSidebarTracking)
 import Constants from "Constants" /* 1071 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import size from "module_2" /* 2 */;

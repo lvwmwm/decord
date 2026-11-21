@@ -1,10 +1,10 @@
-// Module ID: 10528
-// Function ID: 10529
+// Module ID: 10648
+// Function ID: 10649
 // Name: usePipPosition
-// Dependencies: [32, 19, 510, 10529, 2]
+// Dependencies: [32, 19, 510, 10649, 2]
 // Exports: default
 
-// Module 10528 (usePipPosition)
+// Module 10648 (usePipPosition)
 import Storage2 from "Storage" /* 510 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

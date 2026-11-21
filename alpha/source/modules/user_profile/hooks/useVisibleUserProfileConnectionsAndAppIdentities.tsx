@@ -1,10 +1,10 @@
-// Module ID: 14479
-// Function ID: 14480
+// Module ID: 14601
+// Function ID: 14602
 // Name: useVisibleUserProfileConnectionsAndAppIdentities
-// Dependencies: [19, 14480, 14481, 6745, 1254, 6572, 2]
+// Dependencies: [19, 14602, 14603, 6864, 1254, 6691, 2]
 // Exports: default
 
-// Module 14479 (useVisibleUserProfileConnectionsAndAppIdentities)
+// Module 14601 (useVisibleUserProfileConnectionsAndAppIdentities)
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

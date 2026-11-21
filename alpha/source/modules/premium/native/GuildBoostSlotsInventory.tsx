@@ -1,10 +1,10 @@
-// Module ID: 13987
-// Function ID: 13988
+// Module ID: 14109
+// Function ID: 14110
 // Name: GuildBoostSlotsInventory
-// Dependencies: [19, 17, 1191, 4665, 8624, 2177, 1071, 21, 4794, 575, 6288, 8836, 5385, 1112, 11, 6910, 6427, 7202, 5481, 13988, 504, 1412, 13989, 13993, 6241, 8626, 12, 2]
+// Dependencies: [19, 17, 1191, 4784, 8744, 2178, 1071, 21, 4913, 575, 6407, 8956, 5504, 1112, 11, 7030, 6546, 7322, 5600, 14110, 504, 1412, 14111, 14115, 6360, 8746, 12, 2]
 // Exports: default
 
-// Module 13987 (GuildBoostSlotsInventory)
+// Module 14109 (GuildBoostSlotsInventory)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
@@ -12,22 +12,22 @@ import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl3 from "intl" /* 1112 */;
-import Text_Text from "Text/Text" /* 5385 */;
-import FastImageDefault from "FastImage" /* 5481 */;
-import actions_BillingActionCreatorsAll from "actions/BillingActionCreators" /* 6241 */;
-import BoostingActionCreators from "BoostingActionCreators" /* 6427 */;
-import GuildIcon from "GuildIcon" /* 7202 */;
-import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 8626 */;
-import useCountdownDefault from "useCountdown" /* 8836 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13988 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import FastImageDefault from "FastImage" /* 5600 */;
+import actions_BillingActionCreatorsAll from "actions/BillingActionCreators" /* 6360 */;
+import BoostingActionCreators from "BoostingActionCreators" /* 6546 */;
+import GuildIcon from "GuildIcon" /* 7322 */;
+import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 8746 */;
+import useCountdownDefault from "useCountdown" /* 8956 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14110 */;
 import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1191 */;
-import GuildStore from "GuildStore" /* 4665 */;
-import GuildBoostSlotStore from "GuildBoostSlotStore" /* 8624 */;
-import SubscriptionStore from "SubscriptionStore" /* 2177 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import GuildBoostSlotStore from "GuildBoostSlotStore" /* 8744 */;
+import SubscriptionStore from "SubscriptionStore" /* 2178 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4794 */;
-import TextStyles from "TextStyles" /* 6288 */;
+import createStyles_mod from "createStyles" /* 4913 */;
+import TextStyles from "TextStyles" /* 6407 */;
 import size_mod from "module_2" /* 2 */;
 
 const GuildIconDefault = GuildIcon;
@@ -44,7 +44,7 @@ let size;
 let size1;
 let tmp2;
 let unpackModuleId;
-const SubscriptionPlaceholderPattern = tmp2(13989);
+const SubscriptionPlaceholderPattern = tmp2(14111);
 function GuildBoostSlotCooldown(cooldownEndsAt) {
   let days;
   let hours;
@@ -152,9 +152,9 @@ function GuildBoostSlot(guildBoostSlot) {
             },
         children: closure_10(Text, obj6)
       };
-      const PressableOpacity = guildBoostSlot(6910).PressableOpacity;
+      const PressableOpacity = guildBoostSlot(7030).PressableOpacity;
       obj6 = { variant: "body-md/medium", color: "control-brand-foreground", children: intl2.string(guildBoostSlot(1112).t.jqqLb6) };
-      Text = guildBoostSlot(5385).Text;
+      Text = guildBoostSlot(5504).Text;
       intl2 = guildBoostSlot(1112).intl;
       tmp6Result2 = tmp6(PressableOpacity, obj5);
     }
@@ -216,9 +216,9 @@ function UnusedGuildBoostSlots(unusedSlots) {
         },
       children: closure_10(Text, obj5)
     };
-    PressableOpacity = found(6910).PressableOpacity;
+    PressableOpacity = found(7030).PressableOpacity;
     obj5 = { variant: "body-md/medium", color: "text-link", children: intl2.string(found(1112).t["7KyPor"]) };
-    Text = found(5385).Text;
+    Text = found(5504).Text;
     intl2 = found(1112).intl;
     tmp4 = closure_10(GuildBoostSlotsInventoryRow, obj2);
   }
@@ -311,7 +311,7 @@ function BoostedGuild(arg0) {
   const obj5 = { style: tmp.subscriptionBody, children: items4 };
   const obj6 = { style: tmp.subscriptionImageView, children: items3 };
   const tmp12 = guildBoostSlots;
-  const tmp13 = guildBoostSlots(5481);
+  const tmp13 = guildBoostSlots(5600);
   if (null == guildBannerSource) {
     prop = tmp.subscriptionImageFallback;
   }
@@ -323,7 +323,7 @@ function BoostedGuild(arg0) {
     tmp11Result = tmp11(tmp10, obj8);
   }
   items3[1] = tmp11Result;
-  items3[2] = closure_10(tmp12(13993), { guild: stateFromStores, theme: stateFromStores1 });
+  items3[2] = closure_10(tmp12(14115), { guild: stateFromStores, theme: stateFromStores1 });
   items4 = [closure_11(View, obj6), ];
   const obj9 = { guild: stateFromStores, numGuildBoostSlots: guildBoostSlots.length };
   items4[1] = closure_10(BoostedGuildInfo, obj9);
@@ -407,7 +407,7 @@ export default function GuildBoostSlotsInventory() {
       if (found.length > 0) {
         const obj6 = { children: items3 };
         const obj7 = { style: tmp.header, variant: "body-sm/medium", color: "text-default", children: intl.string(intl3.t.gB9oQ7) };
-        const Text = tmp3(5385).Text;
+        const Text = tmp3(5504).Text;
         intl = tmp3(1112).intl;
         items3 = [
           closure_10(Text, obj7),

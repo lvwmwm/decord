@@ -1,13 +1,13 @@
-// Module ID: 8158
-// Function ID: 8159
+// Module ID: 8278
+// Function ID: 8279
 // Name: isLimitedChannel
-// Dependencies: [4643, 5415, 1071, 2]
+// Dependencies: [4762, 5534, 1071, 2]
 // Exports: isLimitedChannel, isLimitedChannelId
 
-// Module 8158 (isLimitedChannel)
+// Module 8278 (isLimitedChannel)
 import Constants from "Constants" /* 1071 */;
-import ChannelStore from "ChannelStore" /* 4643 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5415 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5534 */;
 import size from "module_2" /* 2 */;
 
 const ChannelTypes = Constants.ChannelTypes;

@@ -1,8 +1,8 @@
-// Module ID: 7241
-// Function ID: 7242
+// Module ID: 7361
+// Function ID: 7362
 // Dependencies: [2]
 
-// Module 7241
+// Module 7361
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/EnvelopeOpenSpotIllustration-1x.png.js");

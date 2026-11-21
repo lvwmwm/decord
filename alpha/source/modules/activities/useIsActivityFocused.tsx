@@ -1,13 +1,13 @@
-// Module ID: 10525
-// Function ID: 10526
+// Module ID: 10645
+// Function ID: 10646
 // Name: useIsActivityFocused
-// Dependencies: [6501, 4642, 6510, 504, 2]
+// Dependencies: [6620, 4761, 6629, 504, 2]
 // Exports: default, isActivityFocused
 
-// Module 10525 (useIsActivityFocused)
-import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6510 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6501 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4642 */;
+// Module 10645 (useIsActivityFocused)
+import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6629 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6620 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4761 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

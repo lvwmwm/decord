@@ -1,19 +1,19 @@
-// Module ID: 7441
-// Function ID: 7442
+// Module ID: 7561
+// Function ID: 7562
 // Name: RoleIcon
-// Dependencies: [19, 17, 21, 1378, 5481, 5385, 2]
+// Dependencies: [19, 17, 21, 1378, 5600, 5504, 2]
 // Exports: default
 
-// Module 7441 (RoleIcon)
+// Module 7561 (RoleIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import FastImageDefault from "FastImage" /* 5481 */;
+import FastImageDefault from "FastImage" /* 5600 */;
 import react from "react" /* 19 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
 import size_mod from "module_2" /* 2 */;
 
 let tmp;
-const Text_Text = tmp(5385);
+const Text_Text = tmp(5504);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let num = 0.9375;
@@ -50,7 +50,7 @@ export default function RoleIcon(layout) {
   if (isIOSResult) {
     str3 = "system-ui";
   }
-  const obj2 = { fontFamily: str3, fontSize: result, lineHeight: "Array", textAlign: "center", width: result1, marginBottom: num2 };
+  const obj2 = { fontFamily: str3, fontSize: result, lineHeight: "r", textAlign: "center", width: result1, marginBottom: num2 };
   if (isIOSResult) {
     result = size / c6;
   } else {

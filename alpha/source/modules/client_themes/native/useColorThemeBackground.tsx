@@ -1,16 +1,16 @@
-// Module ID: 4966
-// Function ID: 4967
+// Module ID: 5085
+// Function ID: 5086
 // Name: useColorThemeBackground
-// Dependencies: [19, 1191, 4818, 1112, 1240, 4967, 4969, 563, 5000, 2]
+// Dependencies: [19, 1191, 4937, 1112, 1240, 5086, 5088, 563, 5119, 2]
 // Exports: default
 
-// Module 4966 (useColorThemeBackground)
+// Module 5085 (useColorThemeBackground)
 import intl2 from "intl" /* 1112 */;
 import ClientThemesTypes from "ClientThemesTypes" /* 1240 */;
-import GuildThemePresets from "GuildThemePresets" /* 4967 */;
+import GuildThemePresets from "GuildThemePresets" /* 5086 */;
 import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1191 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4818 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4937 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -27,7 +27,7 @@ export default function useColorThemeBackground() {
   let stateFromStores;
   let theme;
   let type;
-  const tmp = stateFromStores(4969)();
+  const tmp = stateFromStores(5088)();
   _require = tmp;
   let obj = require("useStateFromStores");
   let items = [ThemeStore];

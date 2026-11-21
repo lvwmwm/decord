@@ -1,23 +1,23 @@
-// Module ID: 18636
-// Function ID: 18637
+// Module ID: 18763
+// Function ID: 18764
 // Name: SearchListCard
-// Dependencies: [19, 17, 21, 4794, 575, 1186, 5385, 4850, 5410, 10004, 7569, 1112, 7516, 6927, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 1186, 5504, 4969, 5529, 10124, 7689, 1112, 7636, 7047, 2]
 // Exports: SearchListCardContainer, SearchListCardContent, SearchListCardFooter, SearchListCardThumbnail
 
-// Module 18636 (SearchListCard)
+// Module 18763 (SearchListCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
-import UserUtilsDefault from "UserUtils" /* 4850 */;
-import Text_Text from "Text/Text" /* 5385 */;
-import useChannelNameDefault from "useChannelName" /* 5410 */;
-import Card_Card from "Card/Card" /* 6927 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 7516 */;
-import ForumIcon from "ForumIcon" /* 7569 */;
+import UserUtilsDefault from "UserUtils" /* 4969 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import useChannelNameDefault from "useChannelName" /* 5529 */;
+import Card_Card from "Card/Card" /* 7047 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 7636 */;
+import ForumIcon from "ForumIcon" /* 7689 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -26,7 +26,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp2;
-const GroupDMAvatarDefault = tmp2(10004);
+const GroupDMAvatarDefault = tmp2(10124);
 class SearchListContentAuthor {
   constructor(author) {
     let items;

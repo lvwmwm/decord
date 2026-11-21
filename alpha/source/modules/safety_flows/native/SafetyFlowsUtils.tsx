@@ -1,17 +1,17 @@
-// Module ID: 20018
-// Function ID: 20019
+// Module ID: 20145
+// Function ID: 20146
 // Name: SafetyFlowsUtils
-// Dependencies: [5, 19, 1386, 20012, 20014, 6310, 20013, 5476, 1112, 3021, 1500, 20017, 2]
+// Dependencies: [5, 19, 1386, 20139, 20141, 6429, 20140, 5595, 1112, 3120, 1500, 20144, 2]
 // Exports: getScreensForTaskType, useOnTaskComplete
 
-// Module 20018 (SafetyFlowsUtils)
+// Module 20145 (SafetyFlowsUtils)
 import intl2 from "intl" /* 1112 */;
-import _modDef3021 from "module_3021" /* 3021 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5476 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6310 */;
-import types from "types" /* 20012 */;
-import constants from "constants" /* 20013 */;
-import SafetyFlowsActionCreators from "SafetyFlowsActionCreators" /* 20014 */;
+import _modDef3120 from "module_3120" /* 3120 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5595 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6429 */;
+import types from "types" /* 20139 */;
+import constants from "constants" /* 20140 */;
+import SafetyFlowsActionCreators from "SafetyFlowsActionCreators" /* 20141 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1386 */;
@@ -85,7 +85,7 @@ function navigateToScreenForTask(arr, task_type) {
   if (null == task_type) {
     obj = ModalActionCreatorsDefault;
     obj.popWithKey(constants.SAFETY_FLOWS_MODAL_KEY);
-    const obj2 = { text: intl.string(_modDef3021["/fHz9S"]), variant: "success" };
+    const obj2 = { text: intl.string(_modDef3120["/fHz9S"]), variant: "success" };
     const open = ToastActionCreatorsDefault.open;
     ToastActionCreatorsDefault;
     intl = intl2.intl;

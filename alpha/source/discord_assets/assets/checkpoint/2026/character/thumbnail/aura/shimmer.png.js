@@ -1,8 +1,8 @@
-// Module ID: 6213
-// Function ID: 6214
+// Module ID: 6332
+// Function ID: 6333
 // Dependencies: [2]
 
-// Module 6213
+// Module 6332
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/thumbnail/aura/shimmer.png.js");

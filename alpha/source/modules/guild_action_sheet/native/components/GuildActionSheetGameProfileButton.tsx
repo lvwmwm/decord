@@ -1,29 +1,29 @@
-// Module ID: 15077
-// Function ID: 15078
+// Module ID: 15200
+// Function ID: 15201
 // Name: GuildActionSheetGameProfileButton
-// Dependencies: [19, 21, 9645, 9654, 15075, 15076, 7471, 1112, 6921, 5008, 15078, 15054, 2]
+// Dependencies: [19, 21, 9765, 9774, 15198, 15199, 7591, 1112, 7041, 5127, 15201, 15177, 2]
 // Exports: default
 
-// Module 15077 (GuildActionSheetGameProfileButton)
+// Module 15200 (GuildActionSheetGameProfileButton)
 import Fragment from "Fragment" /* 21 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5008 */;
-import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 9645 */;
-import GuildActionSheetUtils from "GuildActionSheetUtils" /* 15054 */;
-import GuildActionSheetAnalyticsUtils from "GuildActionSheetAnalyticsUtils" /* 15075 */;
-import GuildActionSheetTypes from "GuildActionSheetTypes" /* 15076 */;
-import GameProfilesServerPreviewExperiment from "GameProfilesServerPreviewExperiment" /* 15078 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
+import useOpenGameProfileModalDefault from "useOpenGameProfileModal" /* 9765 */;
+import GuildActionSheetUtils from "GuildActionSheetUtils" /* 15177 */;
+import GuildActionSheetAnalyticsUtils from "GuildActionSheetAnalyticsUtils" /* 15198 */;
+import GuildActionSheetTypes from "GuildActionSheetTypes" /* 15199 */;
+import GameProfilesServerPreviewExperiment from "GameProfilesServerPreviewExperiment" /* 15201 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
 
 let tmp;
-const AssetRegistryDefault = tmp(6921);
+const AssetRegistryDefault = tmp(7041);
 function GameProfileButton(applicationId) {
   let closure_1;
   const guildId = applicationId.guildId;
   importDefault = undefined;
-  let obj = { applicationId: applicationId.applicationId, source: guildId(9654).GameProfileSources.GuildActionSheet, trackEntryPointImpression: true };
+  let obj = { applicationId: applicationId.applicationId, source: guildId(9774).GameProfileSources.GuildActionSheet, trackEntryPointImpression: true };
   let obj2 = {
     onOpened(gameId) {
       const obj = GuildActionSheetAnalyticsUtils;
@@ -36,7 +36,7 @@ function GameProfileButton(applicationId) {
   importDefault = tmp3Result;
   let tmp6 = null;
   if (null != tmp3Result) {
-    const IconButton = tmp4(7471).IconButton;
+    const IconButton = tmp4(7591).IconButton;
     const intl = tmp4(1112).intl;
     tmp6 = <IconButton variant="secondary" label={intl.string(guildId(1112).t.f7aVGn)} icon={AssetRegistryDefault} grow onPress={function onPress() {
       const obj = ActionSheetActionCreatorsDefault;

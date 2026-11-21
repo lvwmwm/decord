@@ -1,8 +1,8 @@
-// Module ID: 6150
-// Function ID: 6151
+// Module ID: 6269
+// Function ID: 6270
 // Dependencies: [2]
 
-// Module 6150
+// Module 6269
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/layer/hat/halo.png.js");

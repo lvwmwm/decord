@@ -1,25 +1,25 @@
-// Module ID: 10729
-// Function ID: 10730
+// Module ID: 10849
+// Function ID: 10850
 // Name: FocusedControls
-// Dependencies: [19, 17, 1071, 21, 4794, 1186, 1653, 10730, 5004, 6897, 1494, 7745, 10731, 10737, 10524, 5024, 7400, 7419, 10656, 10747, 1255, 2]
+// Dependencies: [19, 17, 1071, 21, 4913, 1186, 1653, 10850, 5123, 7017, 1494, 7865, 10851, 10857, 10644, 5143, 7520, 7539, 10776, 10867, 1255, 2]
 
-// Module 10729 (FocusedControls)
+// Module 10849 (FocusedControls)
 import Constants from "Constants" /* 1071 */;
 import native from "native" /* 1186 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
 import _mod1653 from "module_1653" /* 1653 */;
-import timing_timing from "timing/timing" /* 5004 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5024 */;
-import inlineStyles from "inlineStyles" /* 7745 */;
-import RevealProvider from "RevealProvider" /* 10524 */;
-import useIsInvitedToSpeakDefault from "useIsInvitedToSpeak" /* 10730 */;
-import useGlobalStatusIndicatorState from "useGlobalStatusIndicatorState" /* 10731 */;
-import GlobalStatusIndicator from "GlobalStatusIndicator" /* 10737 */;
+import timing_timing from "timing/timing" /* 5123 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5143 */;
+import inlineStyles from "inlineStyles" /* 7865 */;
+import RevealProvider from "RevealProvider" /* 10644 */;
+import useIsInvitedToSpeakDefault from "useIsInvitedToSpeak" /* 10850 */;
+import useGlobalStatusIndicatorState from "useGlobalStatusIndicatorState" /* 10851 */;
+import GlobalStatusIndicator from "GlobalStatusIndicator" /* 10857 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4794 */;
+import createStyles from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap, obj1;
@@ -96,7 +96,7 @@ function FocusedControlsHeader(arg0) {
   const View = _modDef1653.View;
   rect = { top: !tmp9, left: isTouchingLeftScreenEdge, right: true, children: metroImportDefault(hasOwnProperty, obj3) };
   obj3 = { style: tmp.headerContainer, children: header };
-  SafeAreaPaddingView = tmp2(6897).SafeAreaPaddingView;
+  SafeAreaPaddingView = tmp2(7017).SafeAreaPaddingView;
   return metroImportDefault(View, obj2);
 }
 function FocusedControlsHeaderGradient() {
@@ -174,7 +174,7 @@ const memoResult = react.memo(function FocusedControlsRevamped(disableGradient) 
   const globalStatusIndicatorState = obj.useGlobalStatusIndicatorState();
   const obj2 = GlobalStatusIndicator;
   const globalStatusIndicatorHeightSharedValue = obj2.useGlobalStatusIndicatorHeightSharedValue(globalStatusIndicatorState);
-  const tmp6 = analyticsLocations(10730)();
+  const tmp6 = analyticsLocations(10850)();
   let reveal = react.useContext(RevealProvider.RevealContext).reveal;
   const obj3 = useIsScreenReaderEnabled;
   const isScreenReaderEnabled = obj3.useIsScreenReaderEnabled();
@@ -244,9 +244,9 @@ const memoResult = react.memo(function FocusedControlsRevamped(disableGradient) 
   FocusedControlsTsx5.__workletHash = 13660104452358;
   FocusedControlsTsx5.__initData = tmp16;
   const animatedStyle = useAnimatedStyle(FocusedControlsTsx5);
-  const tmp5Result = analyticsLocations(7400);
-  analyticsLocations = tmp5Result(tmp5(7419).FOCUSED_VOICE_CONTROLS).analyticsLocations;
-  dependencyMap = tmp5(10656)();
+  const tmp5Result = analyticsLocations(7520);
+  analyticsLocations = tmp5Result(tmp5(7539).FOCUSED_VOICE_CONTROLS).analyticsLocations;
+  dependencyMap = tmp5(10776)();
   const View = tmp5(1653).View;
   const tmp23 = closure_8;
   if (containerStyle == null) {
@@ -294,7 +294,7 @@ const memoResult = react.memo(function FocusedControlsRevamped(disableGradient) 
         reveal,
         children
       };
-      tmp28Result = tmp28(tmp5(10747), obj5);
+      tmp28Result = tmp28(tmp5(10867), obj5);
     }
   }
   items7[2] = tmp28Result;

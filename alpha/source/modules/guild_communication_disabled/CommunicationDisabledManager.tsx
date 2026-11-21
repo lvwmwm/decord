@@ -1,14 +1,14 @@
-// Module ID: 13229
-// Function ID: 13230
+// Module ID: 13351
+// Function ID: 13352
 // Name: CommunicationDisabledManager
-// Dependencies: [4706, 1386, 4713, 572, 7364, 2]
+// Dependencies: [4825, 1386, 4832, 572, 7484, 2]
 
-// Module 13229 (CommunicationDisabledManager)
+// Module 13351 (CommunicationDisabledManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 4713 */;
-import GuildMemberStore_mod from "GuildMemberStore" /* 4706 */;
+import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 4832 */;
+import GuildMemberStore_mod from "GuildMemberStore" /* 4825 */;
 import UserStore from "UserStore" /* 1386 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7364 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7484 */;
 import size from "module_2" /* 2 */;
 
 let communicationDisabledUserMap;
@@ -22,26 +22,21 @@ function clearGuildMemberTimeout(guildId, arg1) {
   let obj3;
   let phone;
   let premiumSince;
-  let tmp5;
-  let username;
+  let tmp6;
   const member = GuildMemberStore.getMember(guildId, arg1);
   const user = UserStore.getUser(arg1);
   if (null != member) {
     if (null != user) {
       const obj5 = CommunicationDisabledUtils;
       if (!obj5.isMemberCommunicationDisabled(member)) {
-        const obj = { guildId, nick: username, avatar, avatarDecoration: tmp5, premiumSince, isPending: flag, user: obj3, communicationDisabledUntil: null };
+        const obj = { guildId, avatar, avatarDecoration: tmp6, premiumSince, isPending: flag, user: obj3, communicationDisabledUntil: null };
         const merged = Object.assign(member);
-        username = member.nick;
-        if (username == null) {
-          username = user.username;
-        }
         avatar = member.avatar;
-        tmp5 = undefined;
+        tmp6 = undefined;
         if (null != member.avatarDecoration) {
           const obj2 = {};
           const merged1 = Object.assign(member.avatarDecoration);
-          tmp5 = obj2;
+          tmp6 = obj2;
         }
         premiumSince = member.premiumSince;
         flag = member.isPending;

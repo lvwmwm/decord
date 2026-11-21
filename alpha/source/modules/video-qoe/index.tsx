@@ -1,15 +1,15 @@
-// Module ID: 16399
-// Function ID: 16400
+// Module ID: 16522
+// Function ID: 16523
 // Name: SimpleMuxWrapper
-// Dependencies: [2, 16400, 16404, 16402, 16405, 16401, 16406]
+// Dependencies: [2, 16523, 16527, 16525, 16528, 16524, 16529]
 
-// Module 16399 (SimpleMuxWrapper)
-import modules_SimpleMuxWrapper from "modules/SimpleMuxWrapper" /* 16400 */;
-import SessionManager from "SessionManager" /* 16401 */;
-import MuxIntegration from "MuxIntegration" /* 16402 */;
-import MobileMuxWrapper from "MobileMuxWrapper" /* 16404 */;
-import MobileCustomMuxIntegration from "MobileCustomMuxIntegration" /* 16405 */;
-import VideoQoEMetricsExperiment from "VideoQoEMetricsExperiment" /* 16406 */;
+// Module 16522 (SimpleMuxWrapper)
+import modules_SimpleMuxWrapper from "modules/SimpleMuxWrapper" /* 16523 */;
+import SessionManager from "SessionManager" /* 16524 */;
+import MuxIntegration from "MuxIntegration" /* 16525 */;
+import MobileMuxWrapper from "MobileMuxWrapper" /* 16527 */;
+import MobileCustomMuxIntegration from "MobileCustomMuxIntegration" /* 16528 */;
+import VideoQoEMetricsExperiment from "VideoQoEMetricsExperiment" /* 16529 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/video-qoe/index.tsx");

@@ -1,34 +1,34 @@
-// Module ID: 8028
-// Function ID: 8029
+// Module ID: 8148
+// Function ID: 8149
 // Name: UserProfileActionSheet
-// Dependencies: [32, 19, 17, 4643, 4706, 1386, 8012, 7444, 1071, 5023, 21, 4794, 5026, 1653, 1628, 504, 7952, 7400, 7419, 8029, 4619, 8015, 8030, 8031, 8043, 8044, 8045, 8053, 8037, 8059, 8060, 8063, 1494, 5348, 8057, 5003, 5358, 575, 8026, 8064, 6835, 4695, 7953, 1255, 4971, 4973, 8065, 5008, 1500, 7947, 5022, 1186, 8066, 1112, 4855, 8070, 1378, 8073, 8074, 8076, 14294, 14400, 8893, 5357, 14519, 1195, 2]
+// Dependencies: [32, 19, 17, 4762, 4825, 1386, 8132, 7564, 1071, 5142, 21, 4913, 5145, 1653, 1628, 504, 8072, 7520, 7539, 8149, 4738, 8135, 8150, 8151, 8163, 8164, 8165, 8173, 8157, 8179, 8180, 8183, 1494, 5467, 8177, 5122, 5477, 575, 8146, 8184, 6954, 4814, 8073, 1255, 5090, 5092, 8185, 5127, 1500, 8067, 5141, 1186, 8186, 1112, 4974, 8190, 1378, 8193, 8194, 8196, 14416, 14522, 9013, 5476, 14641, 1195, 2]
 
-// Module 8028 (UserProfileActionSheet)
+// Module 8148 (UserProfileActionSheet)
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import _mod1653 from "module_1653" /* 1653 */;
-import isChangelogUserDefault from "isChangelogUser" /* 4695 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5023 */;
-import BottomSheetModal from "BottomSheetModal" /* 5026 */;
-import UserActionCreators from "UserActionCreators" /* 6835 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7419 */;
-import Constants2 from "Constants" /* 7444 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7947 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 7953 */;
-import ProfileFrameLayerOrder from "ProfileFrameLayerOrder" /* 8037 */;
-import ProfileFrameDefault from "ProfileFrame" /* 8053 */;
-import scaleProfileFrameDefault from "scaleProfileFrame" /* 8057 */;
-import ApplicationPresenceUtils from "ApplicationPresenceUtils" /* 8064 */;
-import openUserSettings from "openUserSettings" /* 8074 */;
+import isChangelogUserDefault from "isChangelogUser" /* 4814 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5142 */;
+import BottomSheetModal from "BottomSheetModal" /* 5145 */;
+import UserActionCreators from "UserActionCreators" /* 6954 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7539 */;
+import Constants2 from "Constants" /* 7564 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8067 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8073 */;
+import ProfileFrameLayerOrder from "ProfileFrameLayerOrder" /* 8157 */;
+import ProfileFrameDefault from "ProfileFrame" /* 8173 */;
+import scaleProfileFrameDefault from "scaleProfileFrame" /* 8177 */;
+import ApplicationPresenceUtils from "ApplicationPresenceUtils" /* 8184 */;
+import openUserSettings from "openUserSettings" /* 8194 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 4643 */;
-import GuildMemberStore from "GuildMemberStore" /* 4706 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import GuildMemberStore from "GuildMemberStore" /* 4825 */;
 import UserStore from "UserStore" /* 1386 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8012 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8132 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4794 */;
+import createStyles from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 const _modDef1653 = _mod1653;

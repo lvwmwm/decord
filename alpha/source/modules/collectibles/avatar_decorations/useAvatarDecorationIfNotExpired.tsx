@@ -1,10 +1,10 @@
-// Module ID: 8094
-// Function ID: 8095
+// Module ID: 8214
+// Function ID: 8215
 // Name: useAvatarDecorationIfNotExpired
-// Dependencies: [32, 19, 1071, 2104, 4638, 2]
+// Dependencies: [32, 19, 1071, 2104, 4757, 2]
 // Exports: default
 
-// Module 8094 (useAvatarDecorationIfNotExpired)
+// Module 8214 (useAvatarDecorationIfNotExpired)
 import Constants from "Constants" /* 1071 */;
 import AvatarDecorationUtils from "AvatarDecorationUtils" /* 2104 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -39,7 +39,7 @@ export default function useAvatarDecorationIfNotExpired(arg0) {
               if (0 < diff) {
                 const self = this;
                 const self2 = this;
-                const timeout = new tmp3(4638).Timeout();
+                const timeout = new tmp3(4757).Timeout();
                 const _Math = Math;
                 timeout.start(Math.min(MAX_TIMEOUT_MS, diff), () => {
                   maybeScheduleExpirationCheck();

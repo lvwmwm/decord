@@ -1,18 +1,18 @@
-// Module ID: 15150
-// Function ID: 15151
+// Module ID: 15273
+// Function ID: 15274
 // Name: Toast
-// Dependencies: [19, 17, 21, 575, 7412, 7105, 4794, 5358, 15151, 15152, 15153, 5385, 2]
+// Dependencies: [19, 17, 21, 575, 7532, 7225, 4913, 5477, 15274, 15275, 15276, 5504, 2]
 // Exports: Toast
 
-// Module 15150 (Toast)
+// Module 15273 (Toast)
 import nativeDefault from "native" /* 575 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 7105 */;
-import CircleCheckIcon from "CircleCheckIcon" /* 7412 */;
-import _mod15151 from "module_15151" /* 15151 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 7225 */;
+import CircleCheckIcon from "CircleCheckIcon" /* 7532 */;
+import _mod15274 from "module_15274" /* 15274 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4794 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -70,12 +70,12 @@ export function Toast(variant) {
   const memo = secondaryIconColor.useMemo(() => {
     let obj;
     if (null == obj[str]) {
-      obj = _mod15151;
+      obj = _mod15274;
       const tmp2 = require;
       const tmp4 = icon;
       if (obj.isToastEntity(icon)) {
         const obj3 = { entity: tmp4 };
-        return metroRequire(tmp2(15152).ToastEntity, obj3);
+        return metroRequire(tmp2(15275).ToastEntity, obj3);
       }
     }
     icon = undefined;
@@ -84,7 +84,7 @@ export function Toast(variant) {
     }
     if (icon == null) {
       let tmp9;
-      const obj2 = _mod15151;
+      const obj2 = _mod15274;
       const tmp8 = icon;
       if (!obj2.isToastEntity(icon)) {
         tmp9 = tmp8;

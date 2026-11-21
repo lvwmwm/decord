@@ -1,20 +1,20 @@
-// Module ID: 18982
-// Function ID: 18983
+// Module ID: 19109
+// Function ID: 19110
 // Name: useHexagonCampaignExpirySheetEligibility
-// Dependencies: [32, 19, 4818, 6275, 1191, 1386, 15513, 4819, 1194, 4822, 4825, 504, 13927, 4853, 16288, 4826, 4627, 16282, 2]
+// Dependencies: [32, 19, 4937, 6394, 1191, 1386, 15636, 4938, 1194, 4941, 4944, 504, 14049, 4972, 16411, 4945, 4746, 16405, 2]
 // Exports: useHexagonCampaignExpirySheetEligibility
 
-// Module 18982 (useHexagonCampaignExpirySheetEligibility)
+// Module 19109 (useHexagonCampaignExpirySheetEligibility)
 import ThemeConstants from "ThemeConstants" /* 1194 */;
-import restoreHexagonCampaignPerks from "restoreHexagonCampaignPerks" /* 16288 */;
+import restoreHexagonCampaignPerks from "restoreHexagonCampaignPerks" /* 16411 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4818 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6275 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4937 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6394 */;
 import ThemeStore from "ThemeStore" /* 1191 */;
 import UserStore from "UserStore" /* 1386 */;
-import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 15513 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4819 */;
+import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 15636 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4938 */;
 import size from "module_2" /* 2 */;
 
 let gradientPreset, syncedClientTheme;

@@ -1,12 +1,12 @@
-// Module ID: 8778
-// Function ID: 8779
+// Module ID: 8898
+// Function ID: 8899
 // Name: isConjureProjectLinkEmbed
-// Dependencies: [1071, 8779, 2]
+// Dependencies: [1071, 8899, 2]
 // Exports: default
 
-// Module 8778 (isConjureProjectLinkEmbed)
+// Module 8898 (isConjureProjectLinkEmbed)
 import Constants from "Constants" /* 1071 */;
-import conjureProjectLink from "conjureProjectLink" /* 8779 */;
+import conjureProjectLink from "conjureProjectLink" /* 8899 */;
 import size from "module_2" /* 2 */;
 
 const MessageEmbedTypes = Constants.MessageEmbedTypes;

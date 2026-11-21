@@ -1,20 +1,20 @@
-// Module ID: 18442
-// Function ID: 18443
+// Module ID: 18569
+// Function ID: 18570
 // Name: useConjurePlanBotPreviewItems
-// Dependencies: [19, 2163, 4647, 1405, 1386, 6502, 1071, 504, 6835, 5847, 8326, 5854, 18443, 1112, 4091, 4850, 2]
+// Dependencies: [19, 2164, 4766, 1405, 1386, 6621, 1071, 504, 6954, 5966, 8446, 5973, 18570, 1112, 4190, 4969, 2]
 // Exports: useConjurePlanBotExchanges, useConjurePlanBotPreviewItems, useConjurePlanCommandExchanges
 
-// Module 18442 (useConjurePlanBotPreviewItems)
+// Module 18569 (useConjurePlanBotPreviewItems)
 import intl4 from "intl" /* 1112 */;
-import _modDef4091 from "module_4091" /* 4091 */;
-import ChannelRecord from "ChannelRecord" /* 4647 */;
-import UserActionCreators from "UserActionCreators" /* 6835 */;
-import conjurePlanBot from "conjurePlanBot" /* 18443 */;
+import _modDef4190 from "module_4190" /* 4190 */;
+import ChannelRecord from "ChannelRecord" /* 4766 */;
+import UserActionCreators from "UserActionCreators" /* 6954 */;
+import conjurePlanBot from "conjurePlanBot" /* 18570 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 2163 */;
+import ApplicationStore from "ApplicationStore" /* 2164 */;
 import UserRecord from "UserRecord" /* 1405 */;
 import UserStore from "UserStore" /* 1386 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6502 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6621 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -96,7 +96,7 @@ export function useConjurePlanBotExchanges(proposal) {
       if (null == conjurePlanBotInteraction) {
         items = [];
       } else {
-        const obj = { message: intl.string(_modDef4091.J7qggf), reply: intl2.string(_modDef4091.nqYtiy), event: intl3.string(_modDef4091["05lU9W"]) };
+        const obj = { message: intl.string(_modDef4190.J7qggf), reply: intl2.string(_modDef4190.nqYtiy), event: intl3.string(_modDef4190["05lU9W"]) };
         const getConjurePlanBotExchanges = conjurePlanBot.getConjurePlanBotExchanges;
         conjurePlanBot;
         intl = intl4.intl;
@@ -122,7 +122,7 @@ export function useConjurePlanCommandExchanges(proposal) {
       const getConjurePlanBotExchanges = conjurePlanBot.getConjurePlanBotExchanges;
       conjurePlanBot;
       const merged = Object.assign(tmp);
-      const obj2 = { message: intl.string(_modDef4091.J7qggf), reply: intl2.string(_modDef4091.nqYtiy), event: intl3.string(_modDef4091["05lU9W"]) };
+      const obj2 = { message: intl.string(_modDef4190.J7qggf), reply: intl2.string(_modDef4190.nqYtiy), event: intl3.string(_modDef4190["05lU9W"]) };
       intl = tmp2(1112).intl;
       intl2 = tmp2(1112).intl;
       intl3 = tmp2(1112).intl;
@@ -180,7 +180,7 @@ export function useConjurePlanBotPreviewItems(projectId, exchanges) {
   }
   if (name == null) {
     let intl = tmp(tmp2[13]).intl;
-    name = intl.string(require("module_4091").JEYq8M);
+    name = intl.string(require("module_4190").JEYq8M);
   }
   const items4 = [tmp3];
   const items5 = [prop];
@@ -204,7 +204,7 @@ export function useConjurePlanBotPreviewItems(projectId, exchanges) {
     obj6 = stateFromStores3;
   }
   let intl2 = tmp(tmp2[13]).intl;
-  const tmp14Result = tmp14("31338", intl2.string(require("module_4091")["9iAOsw"]), { discriminator: "0003" });
+  const tmp14Result = tmp14("31338", intl2.string(require("module_4190")["9iAOsw"]), { discriminator: "0003" });
   let closure_5 = tmp14Result;
   const tmpResult4 = tmp(tmp2[15]);
   let str = tmpResult4.getName(stateFromStores);
@@ -330,7 +330,7 @@ export function useConjurePlanBotPreviewItems(projectId, exchanges) {
             if (null != closure_5) {
               let tmp6 = exchanges;
               let obj = { bot: tmp4, currentUser: tmp, viewer: tmp3, member: tmp5 };
-              let obj2 = { targetMessage: intl.string(_modDef4091["y+QYes"]), memberMessage: intl2.string(_modDef4091.BUTRDc) };
+              let obj2 = { targetMessage: intl.string(_modDef4190["y+QYes"]), memberMessage: intl2.string(_modDef4190.BUTRDc) };
               let tmp7 = require;
               let tmp8 = dependencyMap;
               intl = intl4.intl;

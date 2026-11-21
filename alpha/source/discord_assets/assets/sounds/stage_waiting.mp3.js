@@ -1,8 +1,8 @@
-// Module ID: 10768
-// Function ID: 10769
+// Module ID: 10888
+// Function ID: 10889
 // Dependencies: [2]
 
-// Module 10768
+// Module 10888
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/sounds/stage_waiting.mp3.js");

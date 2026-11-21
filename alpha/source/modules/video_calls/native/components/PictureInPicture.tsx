@@ -1,25 +1,25 @@
-// Module ID: 10529
-// Function ID: 10530
+// Module ID: 10649
+// Function ID: 10650
 // Name: PictureInPicture
-// Dependencies: [32, 19, 17, 10516, 1071, 21, 4794, 1186, 10530, 1494, 5369, 10533, 1653, 5395, 10534, 10535, 5054, 1378, 2]
+// Dependencies: [32, 19, 17, 10636, 1071, 21, 4913, 1186, 10650, 1494, 5488, 10653, 1653, 5514, 10654, 10655, 5173, 1378, 2]
 
-// Module 10529 (PictureInPicture)
+// Module 10649 (PictureInPicture)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1071 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
 import _mod1653 from "module_1653" /* 1653 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5369 */;
-import spring_spring from "spring/spring" /* 5395 */;
-import ChannelCallStore from "ChannelCallStore" /* 10516 */;
-import useShouldForcePipOrientation from "useShouldForcePipOrientation" /* 10530 */;
-import usePipDimensionsDefault from "usePipDimensions" /* 10533 */;
-import useIsViewingActivity from "useIsViewingActivity" /* 10534 */;
-import useDraggablePip2 from "useDraggablePip" /* 10535 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5488 */;
+import spring_spring from "spring/spring" /* 5514 */;
+import ChannelCallStore from "ChannelCallStore" /* 10636 */;
+import useShouldForcePipOrientation from "useShouldForcePipOrientation" /* 10650 */;
+import usePipDimensionsDefault from "usePipDimensions" /* 10653 */;
+import useIsViewingActivity from "useIsViewingActivity" /* 10654 */;
+import useDraggablePip2 from "useDraggablePip" /* 10655 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import native_mod from "native" /* 1186 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -116,7 +116,7 @@ const memoResult = react.memo(function PictureInPicture(preferredPosition) {
   ref = obj3.useRef(null);
   const items2 = [tmp2.pipOuterContainer, animatedStyle, style];
   const View = tmp6(1653).View;
-  const GestureDetector = tmp3(5054).GestureDetector;
+  const GestureDetector = tmp3(5173).GestureDetector;
   const items3 = [draggableGridItemStyles, ];
   const View2 = tmp6(1653).View;
   let elevationShadow;

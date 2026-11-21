@@ -1,10 +1,10 @@
-// Module ID: 8088
-// Function ID: 8089
+// Module ID: 8208
+// Function ID: 8209
 // Name: VideoBackgroundProfileFetchExperiment
 // Dependencies: [1450, 2]
 // Exports: useIsVideoBackgroundProfileFetchEnabled
 
-// Module 8088 (VideoBackgroundProfileFetchExperiment)
+// Module 8208 (VideoBackgroundProfileFetchExperiment)
 import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 

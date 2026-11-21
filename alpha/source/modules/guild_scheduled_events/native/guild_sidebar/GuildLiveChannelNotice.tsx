@@ -1,37 +1,37 @@
-// Module ID: 17578
-// Function ID: 17579
+// Module ID: 17702
+// Function ID: 17703
 // Name: GuildLiveChannelNotice
-// Dependencies: [19, 17, 6415, 4648, 6281, 4726, 5538, 4649, 1082, 21, 575, 1186, 5518, 11021, 8682, 5524, 1378, 5398, 4794, 5385, 13299, 11010, 6300, 2018, 6375, 7160, 5003, 8451, 5392, 4801, 5410, 504, 1112, 7516, 7928, 7458, 7497, 7448, 6424, 6418, 6414, 7897, 7500, 17577, 13723, 6927, 2]
+// Dependencies: [19, 17, 6534, 4767, 6400, 4845, 5657, 4768, 1082, 21, 575, 1186, 5637, 11141, 8802, 5643, 1378, 5517, 4913, 5504, 13421, 11130, 6419, 2018, 6494, 7280, 5122, 8571, 5511, 4920, 5529, 504, 1112, 7636, 8048, 7578, 7617, 7568, 6543, 6537, 6533, 8017, 7620, 17701, 13845, 7047, 2]
 // Exports: getScaledLiveChannelNoticeHeight
 
-// Module 17578 (GuildLiveChannelNotice)
+// Module 17702 (GuildLiveChannelNotice)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1082 */;
 import intl3 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
 import KeyboardManagerUtilsAll from "KeyboardManagerUtils" /* 2018 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4649 */;
-import Text_Text from "Text/Text" /* 5385 */;
-import useChannelNameDefault from "useChannelName" /* 5410 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 5524 */;
-import StageChannelParticipants from "StageChannelParticipants" /* 6418 */;
-import GuildScheduledEventModalActionCreators from "GuildScheduledEventModalActionCreators" /* 7448 */;
-import EntityUtils from "EntityUtils" /* 7458 */;
-import LocationIcon from "LocationIcon" /* 7497 */;
-import CalendarIcon from "CalendarIcon" /* 7928 */;
-import MarkupRulesUtils from "MarkupRulesUtils" /* 8682 */;
-import MarkupInlineChannelMentionRules from "MarkupInlineChannelMentionRules" /* 11021 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 13723 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4768 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import useChannelNameDefault from "useChannelName" /* 5529 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 5643 */;
+import StageChannelParticipants from "StageChannelParticipants" /* 6537 */;
+import GuildScheduledEventModalActionCreators from "GuildScheduledEventModalActionCreators" /* 7568 */;
+import EntityUtils from "EntityUtils" /* 7578 */;
+import LocationIcon from "LocationIcon" /* 7617 */;
+import CalendarIcon from "CalendarIcon" /* 8048 */;
+import MarkupRulesUtils from "MarkupRulesUtils" /* 8802 */;
+import MarkupInlineChannelMentionRules from "MarkupInlineChannelMentionRules" /* 11141 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 13845 */;
 import react from "react" /* 19 */;
-import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6415 */;
-import StageInstanceStore from "StageInstanceStore" /* 4648 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6281 */;
-import PermissionStore from "PermissionStore" /* 4726 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5538 */;
+import StageChannelParticipantStore from "StageChannelParticipantStore" /* 6534 */;
+import StageInstanceStore from "StageInstanceStore" /* 4767 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6400 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5657 */;
 import Fragment from "Fragment" /* 21 */;
-import MarkupUtils_mod from "MarkupUtils" /* 5518 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import MarkupUtils_mod from "MarkupUtils" /* 5637 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -123,11 +123,11 @@ function UserSummaryRow(arg0) {
       items2 = [, ];
       ({ badge: arr3[0], audienceBadge: arr3[1] } = tmp);
       let obj4 = { size: "custom", style: obj5.makeSizeStyle(14) };
-      const HeadphonesIcon = max(13299).HeadphonesIcon;
-      obj5 = max(11010);
+      const HeadphonesIcon = max(13421).HeadphonesIcon;
+      obj5 = max(11130);
       items3 = [tmp8(HeadphonesIcon, obj4), ];
       let obj6 = { variant: "body-xs/semibold", style: { marginLeft: 4 }, maxFontSizeMultiplier: 1, children: audienceCount };
-      items3[1] = closure_13(max(5385).Text, obj6);
+      items3[1] = closure_13(max(5504).Text, obj6);
       tmp8Result = tmp8(tmp5, obj2);
     }
     items[1] = tmp8Result;
@@ -160,10 +160,10 @@ function JoinChannelButton(label) {
     disabled = false;
   }
   const tmp = closure_29();
-  const tmp2 = isChannelContentGated(5003)();
+  const tmp2 = isChannelContentGated(5122)();
   isChannelContentGated = undefined;
-  const tmp3 = isChannelContentGated(8451)();
-  const obj = channel(6300);
+  const tmp3 = isChannelContentGated(8571)();
+  const obj = channel(6419);
   isChannelContentGated = obj.useIsChannelContentGated(channel);
   const items = [channel, isChannelContentGated];
   const obj2 = { style: tmp.button, children: closure_13(Button, obj3) };
@@ -183,9 +183,9 @@ function JoinChannelButton(label) {
     }
   }, items);
   obj3 = { onPress: callback, variant: str, size: "sm", disabled, text: label };
-  Button = channel(5392).Button;
+  Button = channel(5511).Button;
   str = "tertiary";
-  const obj4 = channel(4801);
+  const obj4 = channel(4920);
   const tmp7 = View;
   if (obj4.isThemeLight(tmp2)) {
     str = "tertiary";
@@ -214,12 +214,12 @@ function GuildVoiceEventNotice(channel) {
   const obj2 = channel(504);
   const stateFromStores = obj2.useStateFromStores(items1, () => PermissionStore.can(Permissions.CONNECT, channel));
   const items2 = [ApplicationStreamingStore];
-  const obj4 = { heading: intl.string(channel(1112).t["X2K3/4"]), topic: guildEvent.name, location: tmp2, LocationIcon: obj5.getChannelIconComponent(channel), LiveIcon: channel(7928).CalendarIcon, voiceUsers: closure_13(UserSummaryRow, obj6), joinButton: tmp7Result };
+  const obj4 = { heading: intl.string(channel(1112).t["X2K3/4"]), topic: guildEvent.name, location: tmp2, LocationIcon: obj5.getChannelIconComponent(channel), LiveIcon: channel(8048).CalendarIcon, voiceUsers: closure_13(UserSummaryRow, obj6), joinButton: tmp7Result };
   const obj3 = channel(504);
   const stateFromStores1 = obj3.useStateFromStores(items2, () => ApplicationStreamingStore.getAllApplicationStreamsForChannel(channel.id).length > 0);
   intl = channel(1112).intl;
   tmp7Result = undefined;
-  obj5 = channel(7516);
+  obj5 = channel(7636);
   obj6 = { guildId: channel.guild_id, users: stateFromStoresArray, isLiveStreaming: stateFromStores1 };
   const tmp8 = closure_31;
   if (stateFromStores) {
@@ -258,7 +258,7 @@ function SeeDetailButton(guildEvent) {
     const result = obj.openGuildEventDetails(obj2);
   }, items);
   obj2 = { onPress: callback, variant: "active", size: "sm", text: intl.string(guildEvent(1112).t.z4FcDs) };
-  Button = guildEvent(5392).Button;
+  Button = guildEvent(5511).Button;
   intl = guildEvent(1112).intl;
   return closure_13(View, obj);
 }
@@ -272,8 +272,8 @@ function GuildLiveStageNotice(channel) {
   channel = channel.channel;
   const stageInstance = channel.stageInstance;
   const tmp2 = useChannelNameDefault(channel);
-  const obj = channel(6424);
-  const stageParticipants = obj.useStageParticipants(channel.id, channel(6418).StageChannelParticipantNamedIndex.SPEAKER);
+  const obj = channel(6543);
+  const stageParticipants = obj.useStageParticipants(channel.id, channel(6537).StageChannelParticipantNamedIndex.SPEAKER);
   const found = stageParticipants.filter((type) => type.type === channel(dependencyMap[39]).StageChannelParticipantTypes.VOICE);
   const mapped = found.map((user) => user.user);
   const items = [StageChannelParticipantStore];
@@ -283,22 +283,22 @@ function GuildLiveStageNotice(channel) {
   const items2 = [PermissionStore];
   const obj3 = channel(504);
   const stateFromStores1 = obj3.useStateFromStores(items2, () => PermissionStore.can(Permissions.CONNECT, channel));
-  const obj4 = channel(6414);
+  const obj4 = channel(6533);
   const stageHasStream = obj4.useStageHasStream(channel.id);
-  const obj5 = channel(7897);
+  const obj5 = channel(8017);
   const guildActiveEvent = obj5.useGuildActiveEvent(channel.guild_id);
   const obj6 = { heading: intl.string(channel(1112).t["X2K3/4"]), location: tmp2, LocationIcon: channelIconComponent, LiveIcon: StageIcon, topic: stageInstance.topic, voiceUsers: closure_13(UserSummaryRow, obj7), joinButton: tmp9Result };
   intl = channel(1112).intl;
   channelIconComponent = undefined;
   const tmp10 = closure_31;
   if (null != guildActiveEvent) {
-    const tmp3Result = channel(7516);
+    const tmp3Result = channel(7636);
     channelIconComponent = tmp3Result.getChannelIconComponent(channel);
   }
   if (null != guildActiveEvent) {
-    StageIcon = tmp3(7928).CalendarIcon;
+    StageIcon = tmp3(8048).CalendarIcon;
   } else {
-    StageIcon = tmp3(7500).StageIcon;
+    StageIcon = tmp3(7620).StageIcon;
   }
   tmp9Result = undefined;
   obj7 = { guildId: channel.guild_id, users: mapped, isLiveStreaming: stageHasStream, audienceCount: stateFromStores };
@@ -424,7 +424,7 @@ let closure_31 = react.memo(function GuildNoticeBody(arg0) {
     }
     const items4 = [tmp4Result, ];
     const obj8 = { lineClamp: 1, variant: variant2, color: "redesign-channel-name-muted-text", style: obj10, children: _location };
-    const Text2 = tmp7(5385).Text;
+    const Text2 = tmp7(5504).Text;
     let num = 0;
     const tmp7Result = PlatformUtils;
     if (tmp7Result.isAndroid()) {
@@ -448,9 +448,9 @@ const memoResult = react.memo(function GuildLiveChannelNotice(guild) {
   const style = guild.style;
   const tmp2 = activeEventOrStageInstanceChannel;
   const tmp = closure_29();
-  let obj = activeEventOrStageInstanceChannel(17577);
+  let obj = activeEventOrStageInstanceChannel(17701);
   activeEventOrStageInstanceChannel = obj.useActiveEventOrStageInstanceChannel(guild.id);
-  let obj2 = activeEventOrStageInstanceChannel(7897);
+  let obj2 = activeEventOrStageInstanceChannel(8017);
   const guildActiveEvent = obj2.useGuildActiveEvent(guild.id);
   let obj3 = activeEventOrStageInstanceChannel(504);
   const items = [StageInstanceStore];
@@ -463,7 +463,7 @@ const memoResult = react.memo(function GuildLiveChannelNotice(guild) {
     }
     return getStageInstanceByChannel(id);
   }, items1);
-  let obj4 = activeEventOrStageInstanceChannel(6300);
+  let obj4 = activeEventOrStageInstanceChannel(6419);
   const isChannelContentGated = obj4.useIsChannelContentGated(activeEventOrStageInstanceChannel);
   const items2 = [activeEventOrStageInstanceChannel, isChannelContentGated];
   let id;
@@ -528,7 +528,7 @@ const memoResult = react.memo(function GuildLiveChannelNotice(guild) {
   if (null != tmp14) {
     const obj8 = { variant: "secondary", style: items4, onPress: callback, onLongPress: callback1, children: tmp14 };
     items4 = [tmp.card, style];
-    tmp21 = closure_13(tmp2(6927).Card, obj8);
+    tmp21 = closure_13(tmp2(7047).Card, obj8);
   }
   return tmp21;
 });
@@ -564,7 +564,7 @@ export function getScaledLiveChannelNoticeHeight(fontScale, guildLiveChannelNoti
     const tmpResult4 = useScaledTextLineHeight;
     const sum2 = sum1 + tmpResult4.scaleTextLineHeight(c23, fontScale);
     if (hasButton) {
-      num3 = tmp5 + tmp(5398).SMALL_BUTTON_HEIGHT;
+      num3 = tmp5 + tmp(5517).SMALL_BUTTON_HEIGHT;
     }
     return PX_8 + PX_122 + tmp4 + num + sum + sum2 + num3 + PX_122 + PX_12;
   }

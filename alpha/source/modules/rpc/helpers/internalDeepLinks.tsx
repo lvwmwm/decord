@@ -1,12 +1,12 @@
-// Module ID: 15580
-// Function ID: 15581
+// Module ID: 15703
+// Function ID: 15704
 // Name: internalDeepLinks
-// Dependencies: [32, 1379, 5469, 7141, 2]
+// Dependencies: [32, 1379, 5588, 7261, 2]
 // Exports: openInternalDeepLink, resolveInternalDeepLink
 
-// Module 15580 (internalDeepLinks)
+// Module 15703 (internalDeepLinks)
 import URLUtilsDefault from "URLUtils" /* 1379 */;
-import openURL from "openURL" /* 5469 */;
+import openURL from "openURL" /* 5588 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

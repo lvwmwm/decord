@@ -1,15 +1,15 @@
-// Module ID: 16978
-// Function ID: 16979
+// Module ID: 17101
+// Function ID: 17102
 // Name: BackupScreen
-// Dependencies: [5, 32, 19, 21, 16976, 5385, 1112, 7252, 16971, 16977, 16974, 2]
+// Dependencies: [5, 32, 19, 21, 17099, 5504, 1112, 7372, 17094, 17100, 17097, 2]
 // Exports: default
 
-// Module 16978 (BackupScreen)
+// Module 17101 (BackupScreen)
 import intl10 from "intl" /* 1112 */;
-import Text_Text from "Text/Text" /* 5385 */;
-import useWideAuthViewDefault from "useWideAuthView" /* 7252 */;
-import MfaOptionScreenDefault from "MfaOptionScreen" /* 16971 */;
-import MFA from "MFA" /* 16976 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import useWideAuthViewDefault from "useWideAuthView" /* 7372 */;
+import MfaOptionScreenDefault from "MfaOptionScreen" /* 17094 */;
+import MFA from "MFA" /* 17099 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -22,8 +22,8 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const buttonDefault = tmp(16974);
-const ClipboardCopyInputDefault = tmp(16977);
+const buttonDefault = tmp(17097);
+const ClipboardCopyInputDefault = tmp(17100);
 function isValidClipboardCode(arg0) {
   let tmp3 = arg0.length >= MFA.BACKUP_CODE_MIN_LENGTH;
   if (tmp3) {
@@ -202,7 +202,7 @@ export default function BackupScreen(finish) {
     label: intl5.string(tmp16(1112).t["C/ZAw/"]),
     placeholder: intl6.string(tmp16(1112).t.fZSi1D),
     isValidClipboardCode,
-    maxLength: tmp16(16976).BACKUP_CODE_MAX_LENGTH,
+    maxLength: tmp16(17099).BACKUP_CODE_MAX_LENGTH,
     onChangeCode(arg0) {
       closure_3(arg0);
       _undefined(undefined);
@@ -232,7 +232,7 @@ export default function BackupScreen(finish) {
     tmp5 = tmp10;
   }
   if (!tmp5) {
-    tmp5 = first.length < tmp16(16976).BACKUP_CODE_MIN_LENGTH;
+    tmp5 = first.length < tmp16(17099).BACKUP_CODE_MIN_LENGTH;
   }
   if (!tmp5) {
     tmp5 = first1 > 0;

@@ -1,28 +1,28 @@
-// Module ID: 16853
-// Function ID: 16854
+// Module ID: 16976
+// Function ID: 16977
 // Name: CopyClientInfoSetting
-// Dependencies: [11774, 21, 1377, 5008, 12098, 7425, 5475, 1112, 8255, 7435, 7433, 7395, 1378, 5494, 4751, 11817, 6404, 4619, 2]
+// Dependencies: [11894, 21, 1377, 5127, 12220, 7545, 5594, 1112, 8375, 7555, 7553, 7515, 1378, 5613, 4870, 11937, 6523, 4738, 2]
 // Exports: getClientInfoString
 
-// Module 16853 (CopyClientInfoSetting)
+// Module 16976 (CopyClientInfoSetting)
 import intl8 from "intl" /* 1112 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
-import UserSettings from "UserSettings" /* 4619 */;
-import DeviceUtils from "DeviceUtils" /* 4751 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5008 */;
-import ToastUtils from "ToastUtils" /* 5475 */;
-import CopyIcon from "CopyIcon" /* 5494 */;
-import ClipboardListIcon from "ClipboardListIcon" /* 6404 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7395 */;
-import ClipboardUtils from "ClipboardUtils" /* 7425 */;
-import ActionSheet2 from "ActionSheet" /* 7433 */;
-import ActionSheetRow7 from "ActionSheetRow" /* 7435 */;
-import IOSAnchoredChatScrollerExperiment from "IOSAnchoredChatScrollerExperiment" /* 8255 */;
-import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 12098 */;
-import BuildOverrideStore from "BuildOverrideStore" /* 11774 */;
+import UserSettings from "UserSettings" /* 4738 */;
+import DeviceUtils from "DeviceUtils" /* 4870 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
+import ToastUtils from "ToastUtils" /* 5594 */;
+import CopyIcon from "CopyIcon" /* 5613 */;
+import ClipboardListIcon from "ClipboardListIcon" /* 6523 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7515 */;
+import ClipboardUtils from "ClipboardUtils" /* 7545 */;
+import ActionSheet2 from "ActionSheet" /* 7553 */;
+import ActionSheetRow7 from "ActionSheetRow" /* 7555 */;
+import IOSAnchoredChatScrollerExperiment from "IOSAnchoredChatScrollerExperiment" /* 8375 */;
+import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 12220 */;
+import BuildOverrideStore from "BuildOverrideStore" /* 11894 */;
 import Fragment from "Fragment" /* 21 */;
 import react_native from "react-native" /* 1377 */;
-import SettingBuilders from "SettingBuilders" /* 11817 */;
+import SettingBuilders from "SettingBuilders" /* 11937 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -96,7 +96,7 @@ function IOSAnchoredChatScrollerRow() {
       const result = obj2.presentCopiedToClipboard();
     }
   };
-  const ActionSheetRow = tmp(7435).ActionSheetRow;
+  const ActionSheetRow = tmp(7555).ActionSheetRow;
   intl2 = tmp(1112).intl;
   return closure_4(ActionSheetRow, obj2);
 }
@@ -198,7 +198,7 @@ function ClientClientInfoActionSheet() {
   items[5] = tmp4Result;
   items1 = [tmp(Group, { hasIcons: false, children: items }), ];
   const obj9 = { hasIcons: true, children: React3(ActionSheetRow6, obj10) };
-  const Group2 = tmp2(7435).ActionSheetRow.Group;
+  const Group2 = tmp2(7555).ActionSheetRow.Group;
   obj10 = {
     icon: React3(CopyIcon.CopyIcon, {}),
     label: intl7.string(intl8.t["7dqZ6H"]),
@@ -221,7 +221,7 @@ function ClientClientInfoActionSheet() {
       const result = obj4.presentCopiedToClipboard();
     }
   };
-  ActionSheetRow6 = tmp2(7435).ActionSheetRow;
+  ActionSheetRow6 = tmp2(7555).ActionSheetRow;
   intl7 = tmp2(1112).intl;
   items1[1] = React3(Group2, obj9);
   return tmp(ActionSheet, obj);

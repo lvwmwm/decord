@@ -1,10 +1,10 @@
-// Module ID: 15542
-// Function ID: 15543
+// Module ID: 15665
+// Function ID: 15666
 // Name: AndroidCallWifiLockExperiment
 // Dependencies: [1450, 2]
 // Exports: shouldAcquireCallWifiLock
 
-// Module 15542 (AndroidCallWifiLockExperiment)
+// Module 15665 (AndroidCallWifiLockExperiment)
 import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 

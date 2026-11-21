@@ -1,24 +1,24 @@
-// Module ID: 8845
-// Function ID: 8846
+// Module ID: 8965
+// Function ID: 8966
 // Name: CollectiblesSequencedOfferPromotionUtils
-// Dependencies: [8807, 6735, 8846, 7967, 8843, 2]
+// Dependencies: [8927, 6854, 8966, 8087, 8963, 2]
 // Exports: getSequencedOfferPromotionForCollectiblesProduct, isOrbsBackPromotion
 
-// Module 8845 (CollectiblesSequencedOfferPromotionUtils)
-import StorefrontTypes from "StorefrontTypes" /* 6735 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7967 */;
-import CollectiblesPromotionDiscountUtils from "CollectiblesPromotionDiscountUtils" /* 8846 */;
-import StorefrontPromotionRecord from "StorefrontPromotionRecord" /* 8807 */;
+// Module 8965 (CollectiblesSequencedOfferPromotionUtils)
+import StorefrontTypes from "StorefrontTypes" /* 6854 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 8087 */;
+import CollectiblesPromotionDiscountUtils from "CollectiblesPromotionDiscountUtils" /* 8966 */;
+import StorefrontPromotionRecord from "StorefrontPromotionRecord" /* 8927 */;
 import size from "module_2" /* 2 */;
 
 let c2;
 let c3;
 let tmp3;
-const CollectiblesPromoPriceUtils = tmp3(8843);
+const CollectiblesPromoPriceUtils = tmp3(8963);
 function isSequencedOfferRewardAvailable(rewardStatus) {
   let tmp = null != rewardStatus && null != _false(rewardStatus);
   if (tmp) {
-    let tmp5 = rewardStatus.rewardStatus !== StorefrontTypes.StorefrontPromotionRewardEligibilityStatus.CONSUMED && rewardStatus.rewardStatus !== tmp3(6735).StorefrontPromotionRewardEligibilityStatus.NOT_ELIGIBLE;
+    let tmp5 = rewardStatus.rewardStatus !== StorefrontTypes.StorefrontPromotionRewardEligibilityStatus.CONSUMED && rewardStatus.rewardStatus !== tmp3(6854).StorefrontPromotionRewardEligibilityStatus.NOT_ELIGIBLE;
     if (tmp5) {
       let actionType;
       if (rewardStatus != null) {
@@ -30,7 +30,7 @@ function isSequencedOfferRewardAvailable(rewardStatus) {
           }
         }
       }
-      let tmp7 = actionType === tmp3(6735).StorefrontPromotionActionType.NON_COMMERCE_ORBS_BACK;
+      let tmp7 = actionType === tmp3(6854).StorefrontPromotionActionType.NON_COMMERCE_ORBS_BACK;
       if (!tmp7) {
         const tmp3Result = CollectiblesPromotionDiscountUtils;
         tmp7 = null != tmp3Result.getPromotionFiatPercentOff(rewardStatus);

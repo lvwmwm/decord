@@ -1,14 +1,14 @@
-// Module ID: 18815
-// Function ID: 18816
+// Module ID: 18942
+// Function ID: 18943
 // Name: MessagePreview
-// Dependencies: [19, 9934, 1071, 21, 504, 1112, 18609, 14231, 2]
+// Dependencies: [19, 10054, 1071, 21, 504, 1112, 18736, 14353, 2]
 // Exports: default
 
-// Module 18815 (MessagePreview)
+// Module 18942 (MessagePreview)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1112 */;
 import react from "react" /* 19 */;
-import MessagePreviewStore from "MessagePreviewStore" /* 9934 */;
+import MessagePreviewStore from "MessagePreviewStore" /* 10054 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -38,5 +38,5 @@ export default function MessagePreview(onBeforeJumpToMessage) {
     const obj = jumpTargetId(closure_1_2[6]);
     obj.clearMessages();
   }, []);
-  return jsx(onBeforeJumpToMessage(14231).ChatPreview, { channelId, messages, jumpToChatProps: memo, analyticsLocation });
+  return jsx(onBeforeJumpToMessage(14353).ChatPreview, { channelId, messages, jumpToChatProps: memo, analyticsLocation });
 };

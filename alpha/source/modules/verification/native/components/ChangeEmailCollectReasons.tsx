@@ -1,21 +1,21 @@
-// Module ID: 7225
-// Function ID: 7226
+// Module ID: 7345
+// Function ID: 7346
 // Name: ChangeEmailCollectReasons
-// Dependencies: [19, 17, 1386, 7226, 1071, 21, 4794, 575, 504, 1500, 1255, 1091, 7227, 7229, 7231, 5385, 1112, 5392, 2]
+// Dependencies: [19, 17, 1386, 7346, 1071, 21, 4913, 575, 504, 1500, 1255, 1091, 7347, 7349, 7351, 5504, 1112, 5511, 2]
 // Exports: default
 
-// Module 7225 (ChangeEmailCollectReasons)
+// Module 7345 (ChangeEmailCollectReasons)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import ConstantsIOS from "ConstantsIOS" /* 1091 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import TableRadioGroup2 from "TableRadioGroup" /* 7227 */;
+import TableRadioGroup2 from "TableRadioGroup" /* 7347 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1386 */;
-import VerificationConstants from "VerificationConstants" /* 7226 */;
+import VerificationConstants from "VerificationConstants" /* 7346 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let navigation;

@@ -1,15 +1,15 @@
-// Module ID: 10979
-// Function ID: 10980
+// Module ID: 11099
+// Function ID: 11100
 // Name: Notifications
-// Dependencies: [19, 10980, 21, 504, 11001, 2]
+// Dependencies: [19, 11100, 21, 504, 11121, 2]
 // Exports: default
 
-// Module 10979 (Notifications)
+// Module 11099 (Notifications)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
-import InAppNotificationContainerDefault from "InAppNotificationContainer" /* 11001 */;
+import InAppNotificationContainerDefault from "InAppNotificationContainer" /* 11121 */;
 import react from "react" /* 19 */;
-import InAppNotificationStore from "InAppNotificationStore" /* 10980 */;
+import InAppNotificationStore from "InAppNotificationStore" /* 11100 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;

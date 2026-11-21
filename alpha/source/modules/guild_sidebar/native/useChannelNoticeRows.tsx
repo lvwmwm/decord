@@ -1,19 +1,19 @@
-// Module ID: 17658
-// Function ID: 17659
+// Module ID: 17782
+// Function ID: 17783
 // Name: useChannelNoticeRows
-// Dependencies: [32, 19, 13241, 4724, 4665, 1386, 8207, 1071, 4640, 563, 6540, 7401, 17659, 8960, 4627, 4826, 17574, 17660, 2]
+// Dependencies: [32, 19, 13363, 4843, 4784, 1386, 8327, 1071, 4759, 563, 6659, 7521, 17783, 9080, 4746, 4945, 17698, 17784, 2]
 // Exports: default
 
-// Module 17658 (useChannelNoticeRows)
+// Module 17782 (useChannelNoticeRows)
 import Constants from "Constants" /* 1071 */;
-import GuildSidebarConstants from "GuildSidebarConstants" /* 8207 */;
+import GuildSidebarConstants from "GuildSidebarConstants" /* 8327 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildProgressStore from "GuildProgressStore" /* 13241 */;
-import GuildChannelStore from "GuildChannelStore" /* 4724 */;
-import GuildStore from "GuildStore" /* 4665 */;
+import GuildProgressStore from "GuildProgressStore" /* 13363 */;
+import GuildChannelStore from "GuildChannelStore" /* 4843 */;
+import GuildStore from "GuildStore" /* 4784 */;
 import UserStore from "UserStore" /* 1386 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4640 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4759 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

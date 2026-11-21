@@ -1,15 +1,15 @@
-// Module ID: 7927
-// Function ID: 7928
+// Module ID: 8047
+// Function ID: 8048
 // Name: DeleteEventAlert
-// Dependencies: [5, 19, 6514, 21, 4794, 504, 7453, 5008, 5747, 1112, 5385, 2]
+// Dependencies: [5, 19, 6633, 21, 4913, 504, 7573, 5127, 5866, 1112, 5504, 2]
 // Exports: default
 
-// Module 7927 (DeleteEventAlert)
+// Module 8047 (DeleteEventAlert)
 import Fragment from "Fragment" /* 21 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6514 */;
-import createStyles from "createStyles" /* 4794 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6633 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

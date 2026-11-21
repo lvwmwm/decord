@@ -1,12 +1,12 @@
-// Module ID: 8817
-// Function ID: 8818
+// Module ID: 8937
+// Function ID: 8938
 // Name: useShallowObjectMemo
-// Dependencies: [8818, 558, 2]
+// Dependencies: [8938, 558, 2]
 // Exports: default
 
-// Module 8817 (useShallowObjectMemo)
+// Module 8937 (useShallowObjectMemo)
 import shallowEqualDefault from "shallowEqual" /* 558 */;
-import useMemoWithEqualityFunctionDefault from "useMemoWithEqualityFunction" /* 8818 */;
+import useMemoWithEqualityFunctionDefault from "useMemoWithEqualityFunction" /* 8938 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/hooks/useShallowObjectMemo.tsx");

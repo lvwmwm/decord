@@ -1,32 +1,32 @@
-// Module ID: 13944
-// Function ID: 13945
+// Module ID: 14066
+// Function ID: 14067
 // Name: PremiumMarketingPage
-// Dependencies: [32, 19, 17, 1386, 1071, 4640, 21, 4794, 575, 6436, 13945, 13929, 13930, 1500, 7400, 13939, 1628, 13946, 1653, 9279, 9027, 4826, 4627, 4628, 13947, 1112, 13020, 2172, 504, 8739, 8742, 13948, 13949, 9285, 13952, 10385, 13957, 13962, 13979, 7297, 1255, 13982, 2]
+// Dependencies: [32, 19, 17, 1386, 1071, 4759, 21, 4913, 575, 6555, 14067, 14051, 14052, 1500, 7520, 14061, 1628, 14068, 1653, 9399, 9147, 4945, 4746, 4747, 14069, 1112, 13142, 2173, 504, 8859, 8862, 14070, 14071, 9405, 14074, 10505, 14079, 14084, 14101, 7417, 1255, 14104, 2]
 // Exports: default
 
-// Module 13944 (PremiumMarketingPage)
+// Module 14066 (PremiumMarketingPage)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2172 */;
-import dismissible_content from "dismissible_content" /* 4627 */;
-import DismissibleContentUtils from "DismissibleContentUtils" /* 4628 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4640 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4826 */;
-import LegacyTokens from "LegacyTokens" /* 6436 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7400 */;
-import MarketingPageBannerTileDefault from "MarketingPageBannerTile" /* 9285 */;
-import NitroMobileRefreshExperiment from "NitroMobileRefreshExperiment" /* 13945 */;
-import PremiumMarketingFloatingSubscribeExperimentDefault from "PremiumMarketingFloatingSubscribeExperiment" /* 13946 */;
-import PlanSelectHeaderDefault from "PlanSelectHeader" /* 13948 */;
-import HeaderDefault from "Header" /* 13949 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2173 */;
+import dismissible_content from "dismissible_content" /* 4746 */;
+import DismissibleContentUtils from "DismissibleContentUtils" /* 4747 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4759 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4945 */;
+import LegacyTokens from "LegacyTokens" /* 6555 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7520 */;
+import MarketingPageBannerTileDefault from "MarketingPageBannerTile" /* 9405 */;
+import NitroMobileRefreshExperiment from "NitroMobileRefreshExperiment" /* 14067 */;
+import PremiumMarketingFloatingSubscribeExperimentDefault from "PremiumMarketingFloatingSubscribeExperiment" /* 14068 */;
+import PlanSelectHeaderDefault from "PlanSelectHeader" /* 14070 */;
+import HeaderDefault from "Header" /* 14071 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserStore from "UserStore" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let navigation, set;
@@ -104,8 +104,8 @@ export default function PremiumMarketingPage(userHasSubscription) {
   let surface;
   let tmp = userHasSubscription;
   let tmp2 = dependencyMap;
-  let obj = userHasSubscription(13929);
-  const commonTriggerPoint = obj.useCommonTriggerPoint(userHasSubscription(13930).OpenNitroTriggerPoint);
+  let obj = userHasSubscription(14051);
+  const commonTriggerPoint = obj.useCommonTriggerPoint(userHasSubscription(14052).OpenNitroTriggerPoint);
   const tmp4 = bottom();
   let closure_8 = tmp4;
   let obj2 = userHasSubscription(1500);
@@ -114,7 +114,7 @@ export default function PremiumMarketingPage(userHasSubscription) {
   let obj3 = react;
   [c11, c12] = _slicedToArray(react.useState(false), 2);
   const tmp7 = _slicedToArray(react.useState(false), 2);
-  let obj4 = userHasSubscription(13939);
+  let obj4 = userHasSubscription(14061);
   let top = obj4.useYouBarSettingsCustomHeaderPaddingTop();
   const rect = useSafeAreaInsetsDefault();
   bottom = rect.bottom;
@@ -146,8 +146,8 @@ export default function PremiumMarketingPage(userHasSubscription) {
     const obj = { headerShown: userHasSubscription };
     navigation.setOptions(obj);
   }, items);
-  const tmpResult6 = tmp(9279);
-  promotionMarketingSurface = tmpResult6.usePromotionMarketingSurface(tmp(9027).MarketingSurfaceType.PREMIUM_TAB);
+  const tmpResult6 = tmp(9399);
+  promotionMarketingSurface = tmpResult6.usePromotionMarketingSurface(tmp(9147).MarketingSurfaceType.PREMIUM_TAB);
   let items1 = [promotionMarketingSurface];
   const effect = obj3.useEffect(() => {
     let isDismissed = null == promotionMarketingSurface;
@@ -169,8 +169,8 @@ export default function PremiumMarketingPage(userHasSubscription) {
     const obj5 = {
       style: items2,
       accessibilityLabel: intl.string(tmp(1112).t["13/7kX"]),
-      source: tmp6(13020),
-      size: tmp(13947).CircularIconButton.Sizes.MEDIUM_32,
+      source: tmp6(13142),
+      size: tmp(14069).CircularIconButton.Sizes.MEDIUM_32,
       iconStyle: tmp4.arrowIcon,
       onPress() {
           return onClose();
@@ -178,7 +178,7 @@ export default function PremiumMarketingPage(userHasSubscription) {
     };
     items2 = [, ];
     ({ backButton: arr3[0], backButtonBackground: arr3[1] } = tmp4);
-    const CircularIconButton = tmp(13947).CircularIconButton;
+    const CircularIconButton = tmp(14069).CircularIconButton;
     intl = tmp(1112).intl;
     tmp14 = c11(CircularIconButton, obj5);
   }
@@ -199,14 +199,14 @@ export default function PremiumMarketingPage(userHasSubscription) {
   if (flag == null) {
     flag = false;
   }
-  const tmpResult8 = tmp(9279);
-  surface = tmpResult8.usePromotionMarketingSurface(tmp(9027).MarketingSurfaceType.MARKETING_PAGE_BANNER);
-  const tmpResult9 = tmp(8739);
+  const tmpResult8 = tmp(9399);
+  surface = tmpResult8.usePromotionMarketingSurface(tmp(9147).MarketingSurfaceType.MARKETING_PAGE_BANNER);
+  const tmpResult9 = tmp(8859);
   const premiumTrialOffer = tmpResult9.usePremiumTrialOffer();
   let items4 = [, , ];
   ({ container: arr5[0], themedBackground: arr5[1] } = tmp4);
   let num = 0;
-  const tmpResult10 = tmp(8742);
+  const tmpResult10 = tmp(8862);
   const premiumDiscountOffer = tmpResult10.usePremiumDiscountOffer();
   const tmp19 = c12;
   const tmp20 = order;
@@ -274,7 +274,7 @@ export default function PremiumMarketingPage(userHasSubscription) {
       const obj7 = { style: items4, order, applicationId: react, onPaymentSuccess, onPaymentDismiss: UserStore, onLayout, onFirstCardLayout };
       items4 = [, ];
       ({ planSelectCardsSection: arr6[0], sectionWidth: arr6[1] } = closure_8);
-      tmp29Result = tmp29(tmp30(13952), obj7);
+      tmp29Result = tmp29(tmp30(14074), obj7);
       tmp40 = tmp29;
       tmp42 = tmp30;
       tmp32 = closure_8;
@@ -283,7 +283,7 @@ export default function PremiumMarketingPage(userHasSubscription) {
       const obj8 = { style: items5, order, applicationId: react, onPaymentSuccess, onPaymentDismiss: UserStore, onLayout, onFirstCardLayout };
       items5 = [, ];
       ({ sectionWithPadding: arr5[0], sectionWidth: arr5[1] } = closure_8);
-      tmp29Result = tmp29(tmp30(10385), obj8);
+      tmp29Result = tmp29(tmp30(10505), obj8);
       tmp40 = tmp29;
       tmp42 = tmp30;
     }
@@ -291,15 +291,15 @@ export default function PremiumMarketingPage(userHasSubscription) {
     const obj9 = { style: items6 };
     items6 = [, ];
     ({ sectionWithTopMargin: arr7[0], sectionWidth: arr7[1] } = tmp32);
-    items[7] = tmp40(tmp42(13957), obj9);
+    items[7] = tmp40(tmp42(14079), obj9);
     const obj10 = { style: items7, isFractionalOnly: flag };
     items7 = [, , ];
     ({ sectionWithTopMargin: arr8[0], sectionWithPadding: arr8[1], sectionWidth: arr8[2] } = tmp32);
-    items[8] = tmp40(tmp42(13962), obj10);
+    items[8] = tmp40(tmp42(14084), obj10);
     const items8 = [, , , ];
     ({ sectionWithTopMargin: arr9[0], sectionWithPadding: arr9[1], sectionWidth: arr9[2] } = tmp32);
     let tmp51 = null;
-    const tmp42Result = tmp42(13979);
+    const tmp42Result = tmp42(14101);
     if (closure_16) {
       const _Math = Math;
       tmp51 = { marginBottom: Math.max(bottom, tmp42(575).space.PX_16) + 48 };
@@ -315,7 +315,7 @@ export default function PremiumMarketingPage(userHasSubscription) {
   let obj6 = { style: items4, children: null };
   items4[2] = { paddingTop: num };
   let tmp21 = c11;
-  let items5 = [c11(tmp6(7297), {}), , ];
+  let items5 = [c11(tmp6(7417), {}), , ];
   let obj7 = {
     contentContainerStyle: tmp4.scrollContainer,
     onScroll: function handleScroll(nativeEvent) {
@@ -361,7 +361,7 @@ export default function PremiumMarketingPage(userHasSubscription) {
       let tmp21Result2 = null;
       if (tmp9) {
         let obj9 = { style: tmp4.sectionWidth, isVisible: sharedValue, backgroundColor: tmp4.themedBackground.backgroundColor };
-        tmp21Result2 = tmp21(tmp6(13982), obj9);
+        tmp21Result2 = tmp21(tmp6(14104), obj9);
       }
       items5[2] = tmp21Result2;
       obj6.children = items5;

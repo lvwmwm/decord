@@ -1,14 +1,14 @@
-// Module ID: 9432
-// Function ID: 9433
+// Module ID: 9552
+// Function ID: 9553
 // Name: FractionalNitroCoinIllustration
-// Dependencies: [19, 1073, 21, 9433, 9437, 2]
+// Dependencies: [19, 1073, 21, 9553, 9557, 2]
 // Exports: FractionalNitroCoinIllustration
 
-// Module 9432 (FractionalNitroCoinIllustration)
+// Module 9552 (FractionalNitroCoinIllustration)
 import Fragment from "Fragment" /* 21 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1073 */;
-import NitroCoinSpotIllustration from "NitroCoinSpotIllustration" /* 9433 */;
-import NitroCoinStackSpotIllustration2 from "NitroCoinStackSpotIllustration" /* 9437 */;
+import NitroCoinSpotIllustration from "NitroCoinSpotIllustration" /* 9553 */;
+import NitroCoinStackSpotIllustration2 from "NitroCoinStackSpotIllustration" /* 9557 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

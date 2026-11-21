@@ -1,53 +1,55 @@
-// Module ID: 6848
-// Function ID: 6849
+// Module ID: 6967
+// Function ID: 6968
 // Name: ConjureConnectionStore
-// Dependencies: [32, 5, 1386, 6806, 6849, 6502, 6852, 6853, 6854, 6856, 6857, 6858, 6859, 6860, 6861, 6862, 6863, 6864, 572, 6865, 6867, 6868, 6870, 6872, 6873, 6874, 6875, 12178, 12196, 14621, 12171, 14623, 14625, 14626, 14627, 14628, 6866, 14629, 14618, 6821, 14630, 559, 14631, 6820, 14632, 6878, 14633, 8327, 14615, 504, 2]
+// Dependencies: [32, 5, 1386, 6925, 6968, 6621, 6971, 6972, 6973, 6975, 6976, 6977, 6978, 6979, 6980, 6981, 6982, 6983, 6984, 572, 6985, 6987, 6988, 6990, 6992, 6993, 6994, 6995, 14743, 12300, 12318, 14744, 12293, 14746, 14748, 14749, 14750, 14751, 6986, 14752, 14740, 6940, 14753, 559, 14754, 6939, 14755, 6998, 14756, 8447, 14737, 504, 2]
 // Exports: closeConnection, ensureConnection, interruptTurn, loadOlderHistory, optimisticMessageId, prepareTemplate, resetHistoryPaging, sendUserMessage, showUserMessage, stageModelSettings, subscribeDebugBacklog, withdrawUserMessage
 
-// Module 6848 (ConjureConnectionStore)
+// Module 6967 (ConjureConnectionStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ConjureChatStore2 from "ConjureChatStore" /* 6806 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 6820 */;
-import conjureChatConnection from "conjureChatConnection" /* 6865 */;
-import conjureBrowserSessionsConnection from "conjureBrowserSessionsConnection" /* 6867 */;
-import conjureDebugConnection from "conjureDebugConnection" /* 6868 */;
-import ConjureHostApproval from "ConjureHostApproval" /* 6870 */;
-import conjureLiveReloadConnection from "conjureLiveReloadConnection" /* 6872 */;
-import conjureManagedCopyConnection from "conjureManagedCopyConnection" /* 6873 */;
-import conjureModelSettingsConnection from "conjureModelSettingsConnection" /* 6874 */;
-import conjurePreviewConnection from "conjurePreviewConnection" /* 6875 */;
-import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 6878 */;
-import createNonce from "createNonce" /* 8327 */;
-import conjureRemixConnection from "conjureRemixConnection" /* 12171 */;
-import conjurePublishConnection from "conjurePublishConnection" /* 12178 */;
-import conjurePublishEvalConnection from "conjurePublishEvalConnection" /* 12196 */;
-import conjureMediaTickets from "conjureMediaTickets" /* 14615 */;
-import conjurePreviewClaims from "conjurePreviewClaims" /* 14618 */;
-import conjurePublishScheduleRequests from "conjurePublishScheduleRequests" /* 14621 */;
-import conjureSettingsConnection from "conjureSettingsConnection" /* 14623 */;
-import conjureSmartContextConnection from "conjureSmartContextConnection" /* 14625 */;
-import conjureAppBuildRequestConnection from "conjureAppBuildRequestConnection" /* 14626 */;
-import conjureProjectConnection from "conjureProjectConnection" /* 14627 */;
-import conjureUsageConnection from "conjureUsageConnection" /* 14628 */;
-import conjureLinkEmbeds from "conjureLinkEmbeds" /* 14633 */;
+import ConjureChatStore2 from "ConjureChatStore" /* 6925 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 6939 */;
+import conjureChatConnection from "conjureChatConnection" /* 6985 */;
+import conjureBrowserSessionsConnection from "conjureBrowserSessionsConnection" /* 6987 */;
+import conjureDebugConnection from "conjureDebugConnection" /* 6988 */;
+import ConjureHostApproval from "ConjureHostApproval" /* 6990 */;
+import conjureLiveReloadConnection from "conjureLiveReloadConnection" /* 6992 */;
+import conjureManagedCopyConnection from "conjureManagedCopyConnection" /* 6993 */;
+import conjureModelSettingsConnection from "conjureModelSettingsConnection" /* 6994 */;
+import conjurePreviewConnection from "conjurePreviewConnection" /* 6995 */;
+import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 6998 */;
+import createNonce from "createNonce" /* 8447 */;
+import conjureRemixConnection from "conjureRemixConnection" /* 12293 */;
+import conjurePublishConnection from "conjurePublishConnection" /* 12300 */;
+import conjurePublishEvalConnection from "conjurePublishEvalConnection" /* 12318 */;
+import conjureMediaTickets from "conjureMediaTickets" /* 14737 */;
+import conjurePreviewClaims from "conjurePreviewClaims" /* 14740 */;
+import conjurePreviewAddBotPromptConnection from "conjurePreviewAddBotPromptConnection" /* 14743 */;
+import conjurePublishScheduleRequests from "conjurePublishScheduleRequests" /* 14744 */;
+import conjureSettingsConnection from "conjureSettingsConnection" /* 14746 */;
+import conjureSmartContextConnection from "conjureSmartContextConnection" /* 14748 */;
+import conjureAppBuildRequestConnection from "conjureAppBuildRequestConnection" /* 14749 */;
+import conjureProjectConnection from "conjureProjectConnection" /* 14750 */;
+import conjureUsageConnection from "conjureUsageConnection" /* 14751 */;
+import conjureLinkEmbeds from "conjureLinkEmbeds" /* 14756 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserStore from "UserStore" /* 1386 */;
-import ConjureDebugStore from "ConjureDebugStore" /* 6849 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6502 */;
-import ConjureBrowserSessionsStore from "ConjureBrowserSessionsStore" /* 6852 */;
-import ConjureSmartContextStore from "ConjureSmartContextStore" /* 6853 */;
-import ConjureDebugLogStore from "ConjureDebugLogStore" /* 6854 */;
-import ConjureLiveReloadStore from "ConjureLiveReloadStore" /* 6856 */;
-import ConjureManagedCopyStore from "ConjureManagedCopyStore" /* 6857 */;
-import ConjureModelSettingsStore from "ConjureModelSettingsStore" /* 6858 */;
-import ConjureOverlayBackgroundStore from "ConjureOverlayBackgroundStore" /* 6859 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 6860 */;
-import ConjureRemixStore from "ConjureRemixStore" /* 6861 */;
-import ConjureSettingsStore from "ConjureSettingsStore" /* 6862 */;
-import ConjureSpendLimitStore from "ConjureSpendLimitStore" /* 6863 */;
-import ConjureVoiceChannelPinStore from "ConjureVoiceChannelPinStore" /* 6864 */;
+import ConjureDebugStore from "ConjureDebugStore" /* 6968 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6621 */;
+import ConjureBrowserSessionsStore from "ConjureBrowserSessionsStore" /* 6971 */;
+import ConjureSmartContextStore from "ConjureSmartContextStore" /* 6972 */;
+import ConjureDebugLogStore from "ConjureDebugLogStore" /* 6973 */;
+import ConjureLiveReloadStore from "ConjureLiveReloadStore" /* 6975 */;
+import ConjureManagedCopyStore from "ConjureManagedCopyStore" /* 6976 */;
+import ConjureModelSettingsStore from "ConjureModelSettingsStore" /* 6977 */;
+import ConjureOverlayBackgroundStore from "ConjureOverlayBackgroundStore" /* 6978 */;
+import ConjurePreviewAddBotPromptStore from "ConjurePreviewAddBotPromptStore" /* 6979 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 6980 */;
+import ConjureRemixStore from "ConjureRemixStore" /* 6981 */;
+import ConjureSettingsStore from "ConjureSettingsStore" /* 6982 */;
+import ConjureSpendLimitStore from "ConjureSpendLimitStore" /* 6983 */;
+import ConjureVoiceChannelPinStore from "ConjureVoiceChannelPinStore" /* 6984 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -211,7 +213,7 @@ function handleEvent(projectId, pendingEvents, type) {
       }
       if (deleteResult) {
         const obj9 = { type: "CONJURE_CHAT_INTERRUPTED", projectId };
-        const tmp16Result = tmp16(dependencyMap[18]);
+        const tmp16Result = tmp16(dependencyMap[19]);
         tmp16Result.dispatch(obj9);
       }
     } else if (null != closure_1_19[kind.kind]) {
@@ -221,7 +223,7 @@ function handleEvent(projectId, pendingEvents, type) {
       const tmp7 = _require;
       const tmp8 = dependencyMap;
       if (obj2.isKnownStepKind(kind.kind)) {
-        const tmp7Result = tmp7(tmp8[19]);
+        const tmp7Result = tmp7(tmp8[20]);
         tmp7Result.appendTurnStep(projectId, kind);
       }
     }
@@ -473,22 +475,22 @@ let obj = function _openWithFreshTicket() {
               tmp21(tmp22, open, str);
               closure_1.pendingModelSettings = null;
               closure_1.pendingTemplatePrep = null;
-              const obj3 = closure_132_0(closure_132_2[27]);
+              const obj3 = closure_132_0(closure_132_2[29]);
               obj3.rejectPendingPublish(closure_0, "Connection failed before the publish result arrived");
-              const obj4 = closure_132_0(closure_132_2[29]);
+              const obj4 = closure_132_0(closure_132_2[31]);
               const result = obj4.rejectPendingPublishSchedule(closure_0);
-              const obj5 = closure_132_0(closure_132_2[28]);
+              const obj5 = closure_132_0(closure_132_2[30]);
               const result1 = obj5.rejectPendingPublishEval(closure_0);
-              const obj6 = closure_132_0(closure_132_2[28]);
+              const obj6 = closure_132_0(closure_132_2[30]);
               const result2 = obj6.releasePublishEvalOnTicketRefused(closure_0, tmp70);
-              const obj7 = closure_132_0(closure_132_2[27]);
+              const obj7 = closure_132_0(closure_132_2[29]);
               const result3 = obj7.rejectPendingPatchNotesDraft(closure_0, "Connection failed before the draft arrived");
-              const obj8 = closure_132_0(closure_132_2[27]);
+              const obj8 = closure_132_0(closure_132_2[29]);
               const result4 = obj8.failPendingSafetyRecheck(closure_0);
               open = closure_0;
-              const obj12 = { location: "connection", code: closure_132_0(closure_132_2[36]).ConjureErrorCodes.WS_OPEN_FAILED, message: str2 };
-              const trackConjureErrored = closure_132_0(closure_132_2[36]).trackConjureErrored;
-              const tmp58 = closure_132_0(closure_132_2[36]);
+              const obj12 = { location: "connection", code: closure_132_0(closure_132_2[38]).ConjureErrorCodes.WS_OPEN_FAILED, message: str2 };
+              const trackConjureErrored = closure_132_0(closure_132_2[38]).trackConjureErrored;
+              const tmp58 = closure_132_0(closure_132_2[38]);
               const _Error2 = Error;
               str2 = "ws open failed";
               if (tmp70 instanceof Error) {
@@ -717,21 +719,22 @@ const merged4 = Object.assign(conjureLiveReloadConnection.liveReloadFrameHandler
 const merged5 = Object.assign(conjureManagedCopyConnection.managedCopyFrameHandlers);
 const merged6 = Object.assign(conjureModelSettingsConnection.modelSettingsFrameHandlers);
 const merged7 = Object.assign(conjurePreviewConnection.previewFrameHandlers);
-const merged8 = Object.assign(conjurePublishConnection.publishFrameHandlers);
-const merged9 = Object.assign(conjurePublishEvalConnection.publishEvalFrameHandlers);
-const merged10 = Object.assign(conjurePublishScheduleRequests.publishScheduleFrameHandlers);
-const merged11 = Object.assign(conjureRemixConnection.remixFrameHandlers);
-const merged12 = Object.assign(conjureSettingsConnection.settingsFrameHandlers);
-const merged13 = Object.assign(conjureSmartContextConnection.smartContextFrameHandlers);
+const merged8 = Object.assign(conjurePreviewAddBotPromptConnection.previewAddBotPromptFrameHandlers);
+const merged9 = Object.assign(conjurePublishConnection.publishFrameHandlers);
+const merged10 = Object.assign(conjurePublishEvalConnection.publishEvalFrameHandlers);
+const merged11 = Object.assign(conjurePublishScheduleRequests.publishScheduleFrameHandlers);
+const merged12 = Object.assign(conjureRemixConnection.remixFrameHandlers);
+const merged13 = Object.assign(conjureSettingsConnection.settingsFrameHandlers);
+const merged14 = Object.assign(conjureSmartContextConnection.smartContextFrameHandlers);
 let obj2 = {};
-const merged14 = Object.assign(conjureAppBuildRequestConnection.appBuildRequestStepHandlers);
-const merged15 = Object.assign(conjureChatConnection.chatStepHandlers);
-const merged16 = Object.assign(conjureDebugConnection.debugStepHandlers);
-const merged17 = Object.assign(conjurePreviewConnection.previewStepHandlers);
-const merged18 = Object.assign(conjureProjectConnection.projectStepHandlers);
-const merged19 = Object.assign(conjurePublishConnection.publishStepHandlers);
-const merged20 = Object.assign(conjureUsageConnection.usageStepHandlers);
-const set1 = new Set(["hello", "history", "capture_preview", "control_preview", "control_claim", "control_abort", "capture_claim", "preview_operation", "request_upstream_ticket", "host_approvals"]);
+const merged15 = Object.assign(conjureAppBuildRequestConnection.appBuildRequestStepHandlers);
+const merged16 = Object.assign(conjureChatConnection.chatStepHandlers);
+const merged17 = Object.assign(conjureDebugConnection.debugStepHandlers);
+const merged18 = Object.assign(conjurePreviewConnection.previewStepHandlers);
+const merged19 = Object.assign(conjureProjectConnection.projectStepHandlers);
+const merged20 = Object.assign(conjurePublishConnection.publishStepHandlers);
+const merged21 = Object.assign(conjureUsageConnection.usageStepHandlers);
+const set1 = new Set(["hello", "history", "capture_preview", "control_preview", "control_claim", "control_abort", "capture_claim", "preview_operation", "request_upstream_ticket", "host_approvals", "preview_add_bot_prompt"]);
 const map3 = new Map();
 const map4 = new Map();
 const Store = get_initializedDefault.Store;

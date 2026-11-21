@@ -1,12 +1,12 @@
-// Module ID: 15040
-// Function ID: 15041
+// Module ID: 15163
+// Function ID: 15164
 // Name: GuildBadgeMoneyBag
-// Dependencies: [19, 21, 15010, 7745, 2]
+// Dependencies: [19, 21, 15133, 7865, 2]
 // Exports: GuildBadgeMoneyBag
 
-// Module 15040 (GuildBadgeMoneyBag)
-import inlineStyles from "inlineStyles" /* 7745 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 15010 */;
+// Module 15163 (GuildBadgeMoneyBag)
+import inlineStyles from "inlineStyles" /* 7865 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 15133 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

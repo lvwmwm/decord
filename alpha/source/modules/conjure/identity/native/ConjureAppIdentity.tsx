@@ -1,24 +1,24 @@
-// Module ID: 18148
-// Function ID: 18149
+// Module ID: 18275
+// Function ID: 18276
 // Name: ConjureAppIdentity
-// Dependencies: [32, 5, 19, 17, 21, 575, 4794, 8322, 8355, 18149, 1112, 4091, 1491, 18131, 9367, 12200, 8538, 15824, 6927, 18150, 5481, 5810, 7101, 6503, 5385, 7341, 2]
+// Dependencies: [32, 5, 19, 17, 21, 575, 4913, 8442, 8475, 18276, 1112, 4190, 1491, 18258, 9487, 12322, 8658, 15947, 7047, 18277, 5600, 5929, 7221, 6622, 5504, 7461, 2]
 // Exports: ConjureAppIdentitySection
 
-// Module 18148 (ConjureAppIdentity)
+// Module 18275 (ConjureAppIdentity)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
-import _modDef4091 from "module_4091" /* 4091 */;
-import FastImageDefault from "FastImage" /* 5481 */;
-import Card_Card from "Card/Card" /* 6927 */;
-import ImagePickerDefault from "ImagePicker" /* 8355 */;
-import UploadIcon from "UploadIcon" /* 9367 */;
-import MagicWandIcon from "MagicWandIcon" /* 12200 */;
+import _modDef4190 from "module_4190" /* 4190 */;
+import FastImageDefault from "FastImage" /* 5600 */;
+import Card_Card from "Card/Card" /* 7047 */;
+import ImagePickerDefault from "ImagePicker" /* 8475 */;
+import UploadIcon from "UploadIcon" /* 9487 */;
+import MagicWandIcon from "MagicWandIcon" /* 12322 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let c3, c4, importDefault;
@@ -272,7 +272,7 @@ class ConjureAppIconTile {
         const obj = { label: intl.string(intl4.t["MsUY/S"]), IconComponent: UploadIcon.UploadIcon, action };
         intl = intl4.intl;
         const items = [obj, ];
-        const obj2 = { label: intl2.string(_modDef4091["oAG/BY"]), IconComponent: MagicWandIcon.MagicWandIcon, action: tmp };
+        const obj2 = { label: intl2.string(_modDef4190["oAG/BY"]), IconComponent: MagicWandIcon.MagicWandIcon, action: tmp };
         intl2 = intl4.intl;
         items[1] = obj2;
         tmp2 = items;
@@ -338,7 +338,7 @@ function IconTileCard(arg0) {
   t = tmp4(1112).t;
   if (null == iconURL) {
     const obj2 = { size: "md", color: nativeDefault.colors.ICON_MUTED };
-    const ImagePlusIcon = tmp4(18150).ImagePlusIcon;
+    const ImagePlusIcon = tmp4(18277).ImagePlusIcon;
     tmp3Result = tmp3(ImagePlusIcon, obj2);
   } else {
     const obj3 = { source: obj4, style: tmp.tileImage, resizeMode: "cover" };
@@ -398,27 +398,27 @@ export function ConjureAppIdentitySection(nameError) {
     }
   }, items);
   const obj = { spacing: nativeDefault.space.PX_8, children: items2 };
-  const Stack = nameError(5810).Stack;
+  const Stack = nameError(5929).Stack;
   const obj2 = { style: tmp.nameRow, children: items1 };
   items1 = [closure_7(ConjureAppIconTile, { iconURL, size: first1, disabled: flag, onChange: onIconChange, onError: tmp4 }), ];
   const obj3 = { style: tmp.nameField, onLayout: callback, children: closure_7(TextInput, obj4) };
-  obj4 = { label: intl.string(_modDef4091.GWBCF9), value: name, onChange: onNameChange, maxLength: nameError(6503).MAX_PROJECT_NAME_LENGTH, disabled: flag, errorMessage: nameError };
-  TextInput = nameError(7101).TextInput;
+  obj4 = { label: intl.string(_modDef4190.GWBCF9), value: name, onChange: onNameChange, maxLength: nameError(6622).MAX_PROJECT_NAME_LENGTH, disabled: flag, errorMessage: nameError };
+  TextInput = nameError(7221).TextInput;
   intl = nameError(1112).intl;
   items1[1] = closure_7(View, obj3);
   items2 = [closure_8(View, obj2), ];
   let tmp14Result = null;
   const tmp9 = closure_9;
   if (null != first) {
-    const obj5 = { accessibilityLiveRegion: "polite", children: closure_7(nameError(5385).Text, obj6) };
+    const obj5 = { accessibilityLiveRegion: "polite", children: closure_7(nameError(5504).Text, obj6) };
     obj6 = { variant: "body-xs/normal", color: "text-feedback-critical", children: first };
     tmp14Result = tmp14(tmp13, obj5);
   }
   const obj7 = { children: items3 };
   items2[1] = tmp14Result;
   items3 = [closure_8(Stack, obj), ];
-  const obj8 = { label: intl2.string(_modDef4091.ynaGa1), placeholder: intl3.string(_modDef4091["I+3UTL"]), value: description, onChange: onDescriptionChange, maxLength: nameError(6503).MAX_APP_DESCRIPTION_LENGTH, disabled: flag };
-  const TextArea = tmp10(7341).TextArea;
+  const obj8 = { label: intl2.string(_modDef4190.ynaGa1), placeholder: intl3.string(_modDef4190["I+3UTL"]), value: description, onChange: onDescriptionChange, maxLength: nameError(6622).MAX_APP_DESCRIPTION_LENGTH, disabled: flag };
+  const TextArea = tmp10(7461).TextArea;
   intl2 = tmp10(1112).intl;
   intl3 = tmp10(1112).intl;
   items3[1] = closure_7(TextArea, obj8);

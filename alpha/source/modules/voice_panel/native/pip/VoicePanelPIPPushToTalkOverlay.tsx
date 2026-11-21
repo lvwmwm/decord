@@ -1,25 +1,25 @@
-// Module ID: 19203
-// Function ID: 19204
+// Module ID: 19330
+// Function ID: 19331
 // Name: VoicePanelPIPPushToTalkOverlay
-// Dependencies: [32, 19, 17, 2131, 11630, 21, 1653, 7204, 1186, 4794, 575, 10752, 11639, 11629, 5395, 19037, 5054, 1706, 19204, 2]
+// Dependencies: [32, 19, 17, 2131, 11750, 21, 1653, 7324, 1186, 4913, 575, 10872, 11759, 11749, 5514, 19164, 5173, 1706, 19331, 2]
 // Exports: default
 
-// Module 19203 (VoicePanelPIPPushToTalkOverlay)
+// Module 19330 (VoicePanelPIPPushToTalkOverlay)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1186 */;
 import _mod1653 from "module_1653" /* 1653 */;
 import _mod1706 from "module_1706" /* 1706 */;
-import spring_spring from "spring/spring" /* 5395 */;
-import NativeViewDefault from "NativeView" /* 7204 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11629 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11630 */;
-import VoicePanelPIPStateContext from "VoicePanelPIPStateContext" /* 11639 */;
+import spring_spring from "spring/spring" /* 5514 */;
+import NativeViewDefault from "NativeView" /* 7324 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11749 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11750 */;
+import VoicePanelPIPStateContext from "VoicePanelPIPStateContext" /* 11759 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import MediaEngineStore from "MediaEngineStore" /* 2131 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 const module_1653_mod = _mod1653;
@@ -32,9 +32,9 @@ let obj2;
 let size;
 let tmp;
 let tmp4;
-const LegacyBaseButton = tmp(5054);
-const VoicePanelPIPUtils = tmp(19037);
-const AssetRegistryDefault = tmp4(19204);
+const LegacyBaseButton = tmp(5173);
+const VoicePanelPIPUtils = tmp(19164);
+const AssetRegistryDefault = tmp4(19331);
 const StyleSheet = react_native.StyleSheet;
 const PUSH_TO_TALK_PIP_PHYSICS = VoicePanelConstants.PUSH_TO_TALK_PIP_PHYSICS;
 ({ jsx: metroImportDefault, Fragment: metroImportAll, jsxs: c9 } = Fragment);

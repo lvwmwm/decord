@@ -1,10 +1,10 @@
-// Module ID: 7492
-// Function ID: 7493
+// Module ID: 7612
+// Function ID: 7613
 // Name: ItemSelectorActionSheet
-// Dependencies: [19, 21, 5358, 575, 1628, 5022, 7395, 7434, 5026, 7227, 7229, 2]
+// Dependencies: [19, 21, 5477, 575, 1628, 5141, 7515, 7554, 5145, 7347, 7349, 2]
 // Exports: default
 
-// Module 7492 (ItemSelectorActionSheet)
+// Module 7612 (ItemSelectorActionSheet)
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
 import react from "react" /* 19 */;
@@ -31,25 +31,25 @@ export default function ItemSelectorActionSheet(arg0) {
   ({ title, items } = arg0);
   ({ selectedItem: importDefault, onItemSelect: dependencyMap, onClose } = arg0);
   ({ body, hasIcons } = arg0);
-  let obj = items(5358);
+  let obj = items(5477);
   const token = obj.useToken(nativeDefault.modules.mobile.TABLE_ROW_PADDING);
   const bottom = useSafeAreaInsetsDefault().bottom;
   const findIndexResult = items.findIndex((value) => value.value === importDefault);
-  const BottomSheet = items(5022).BottomSheet;
+  const BottomSheet = items(5141).BottomSheet;
   const obj2 = { title, trailing: tmp6Result };
   tmp6Result = null;
-  const BottomSheetTitleHeader = items(7395).BottomSheetTitleHeader;
+  const BottomSheetTitleHeader = items(7515).BottomSheetTitleHeader;
   if (null != onClose) {
     const obj3 = { onPress: onClose };
-    tmp6Result = tmp6(tmp(7434).ActionSheetCloseButton, obj3);
+    tmp6Result = tmp6(tmp(7554).ActionSheetCloseButton, obj3);
   }
   const obj4 = { scrollable: true, header: closure_3(BottomSheetTitleHeader, obj2), children: tmp8(BottomSheetScrollView, obj5) };
   obj5 = { contentContainerStyle: obj6, children: items1 };
   obj6 = { paddingHorizontal: token, paddingBottom: bottom + nativeDefault.space.PX_16 };
-  BottomSheetScrollView = tmp(5026).BottomSheetScrollView;
+  BottomSheetScrollView = tmp(5145).BottomSheetScrollView;
   items1 = [body, ];
   let num = -1;
-  const TableRadioGroup = tmp(7227).TableRadioGroup;
+  const TableRadioGroup = tmp(7347).TableRadioGroup;
   tmp8 = closure_4;
   if (findIndexResult >= 0) {
     num = findIndexResult;

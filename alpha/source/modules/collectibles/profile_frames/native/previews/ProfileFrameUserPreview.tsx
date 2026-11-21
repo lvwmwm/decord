@@ -1,13 +1,13 @@
-// Module ID: 9332
-// Function ID: 9333
+// Module ID: 9452
+// Function ID: 9453
 // Name: ProfileFrameUserPreview
-// Dependencies: [19, 21, 8928, 1112, 2]
+// Dependencies: [19, 21, 9048, 1112, 2]
 // Exports: default
 
-// Module 9332 (ProfileFrameUserPreview)
+// Module 9452 (ProfileFrameUserPreview)
 import Fragment from "Fragment" /* 21 */;
 import intl3 from "intl" /* 1112 */;
-import UserProfilePreviewDefault from "UserProfilePreview" /* 8928 */;
+import UserProfilePreviewDefault from "UserProfilePreview" /* 9048 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

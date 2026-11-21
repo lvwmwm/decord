@@ -1,26 +1,26 @@
-// Module ID: 11592
-// Function ID: 11593
+// Module ID: 11712
+// Function ID: 11713
 // Name: BookmarksSpotIllustration
-// Dependencies: [19, 21, 11593, 11594, 11595, 7237, 5481, 2]
+// Dependencies: [19, 21, 11713, 11714, 11715, 7357, 5600, 2]
 // Exports: BookmarksSpotIllustration
 
-// Module 11592 (BookmarksSpotIllustration)
+// Module 11712 (BookmarksSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 7237 */;
-import _modDef11593 from "module_11593" /* 11593 */;
-import _modDef11594 from "module_11594" /* 11594 */;
-import _modDef11595 from "module_11595" /* 11595 */;
+import react_native from "react-native" /* 7357 */;
+import _modDef11713 from "module_11713" /* 11713 */;
+import _modDef11714 from "module_11714" /* 11714 */;
+import _modDef11715 from "module_11715" /* 11715 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef11593 };
+let obj2 = { uri: _modDef11713 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef11594 };
+let obj3 = { uri: _modDef11714 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef11595 };
-({ uri: _modDef11595 });
+obj[3] = { uri: _modDef11715 };
+({ uri: _modDef11715 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/BookmarksSpotIllustration.native.tsx");
 

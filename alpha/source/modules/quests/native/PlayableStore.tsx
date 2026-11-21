@@ -1,20 +1,20 @@
-// Module ID: 16347
-// Function ID: 16348
+// Module ID: 16470
+// Function ID: 16471
 // Name: PlayableStore
-// Dependencies: [6504, 2118, 1071, 5420, 6505, 6532, 1091, 16348, 6446, 504, 572, 2]
+// Dependencies: [6623, 2118, 1071, 5539, 6624, 6651, 1091, 16471, 6565, 504, 572, 2]
 
-// Module 16347 (PlayableStore)
+// Module 16470 (PlayableStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
 import ConstantsIOS from "ConstantsIOS" /* 1091 */;
-import ActivityPanelConstants from "ActivityPanelConstants" /* 5420 */;
-import AdCreativeType from "AdCreativeType" /* 6446 */;
-import DiscordAppStateDefault from "DiscordAppState" /* 6532 */;
-import PlayableAnalytics from "PlayableAnalytics" /* 16348 */;
-import FramesStore from "FramesStore" /* 6504 */;
+import ActivityPanelConstants from "ActivityPanelConstants" /* 5539 */;
+import AdCreativeType from "AdCreativeType" /* 6565 */;
+import DiscordAppStateDefault from "DiscordAppState" /* 6651 */;
+import PlayableAnalytics from "PlayableAnalytics" /* 16471 */;
+import FramesStore from "FramesStore" /* 6623 */;
 import AppStateStore from "AppStateStore" /* 2118 */;
-import FramesConstants from "FramesConstants" /* 6505 */;
+import FramesConstants from "FramesConstants" /* 6624 */;
 import size from "module_2" /* 2 */;
 
 let _null;

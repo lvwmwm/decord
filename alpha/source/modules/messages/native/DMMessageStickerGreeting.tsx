@@ -1,22 +1,22 @@
-// Module ID: 13007
-// Function ID: 13008
+// Module ID: 13129
+// Function ID: 13130
 // Name: DMMessageStickerGreeting
-// Dependencies: [5, 32, 19, 17, 6495, 5845, 1386, 21, 4794, 575, 4964, 5358, 4791, 5476, 13008, 8130, 1112, 504, 1087, 4850, 13009, 11249, 1653, 5004, 1186, 11248, 5349, 6910, 11045, 5385, 5392, 2]
+// Dependencies: [5, 32, 19, 17, 6614, 5964, 1386, 21, 4913, 575, 5083, 5477, 4910, 5595, 13130, 8250, 1112, 504, 1087, 4969, 13131, 11369, 1653, 5123, 1186, 11368, 5468, 7030, 11165, 5504, 5511, 2]
 // Exports: default
 
-// Module 13007 (DMMessageStickerGreeting)
+// Module 13129 (DMMessageStickerGreeting)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 4964 */;
-import StickersActionCreators from "StickersActionCreators" /* 11249 */;
+import client_themes_ClientThemesUtils from "client_themes/ClientThemesUtils" /* 5083 */;
+import StickersActionCreators from "StickersActionCreators" /* 11369 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import StickersStore from "StickersStore" /* 6495 */;
-import MessageStore from "MessageStore" /* 5845 */;
+import StickersStore from "StickersStore" /* 6614 */;
+import MessageStore from "MessageStore" /* 5964 */;
 import UserStore from "UserStore" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4794 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -65,7 +65,7 @@ export default function DMMessageStickerGreeting(channel) {
   let showConvoStarterInDM;
   let tmp = channel;
   const hasInputText = channel.hasInputText;
-  let obj = channel(4964);
+  let obj = channel(5083);
   const tmp3 = END;
   const tmp4 = closure_13(obj.useGradientValue(END));
   let obj2 = channel(504);
@@ -77,7 +77,7 @@ export default function DMMessageStickerGreeting(channel) {
   let obj3 = channel(504);
   const items1 = [UserStore];
   const stateFromStores1 = obj3.useStateFromStores(items1, () => UserStore.getUser(channel.getRecipientId()));
-  let obj4 = showConvoStarterInDM(4850);
+  let obj4 = showConvoStarterInDM(4969);
   let name = obj4.useName(stateFromStores1);
   if (name == null) {
     let intl = tmp(1112).intl;
@@ -85,7 +85,7 @@ export default function DMMessageStickerGreeting(channel) {
   }
   const intl2 = tmp(1112).intl;
   const formatToPlainStringResult = intl2.formatToPlainString(tmp(1112).t.m0zYbV, { username: name });
-  const tmpResult = tmp(13009);
+  const tmpResult = tmp(13131);
   showConvoStarterInDM = tmpResult.useShowConvoStarterInDM(channel);
   const items2 = [StickersStore];
   const items3 = [showConvoStarterInDM];
@@ -222,7 +222,7 @@ export default function DMMessageStickerGreeting(channel) {
   const useAnimatedStyle = tmp(1653).useAnimatedStyle;
   tmp(1653);
   items8[7] = tmp(1653).withDelay;
-  items8[8] = tmp(5004).withTiming;
+  items8[8] = tmp(5123).withTiming;
   items8[9] = tmp(1186).STANDARD_EASING;
   let c0;
   let c1;
@@ -254,52 +254,52 @@ export default function DMMessageStickerGreeting(channel) {
   DMMessageStickerGreetingTsx1.__workletHash = 8414821769915;
   DMMessageStickerGreetingTsx1.__initData = tmp24;
   const animatedStyle = useAnimatedStyle(DMMessageStickerGreetingTsx1);
-  const tmpResult9 = tmp(4964);
+  const tmpResult9 = tmp(5083);
   let BACKGROUND_BASE_LOWER = tmpResult9.useGradientValue(tmp3);
-  const useToken = tmp(5358).useToken;
-  tmp(5358);
+  const useToken = tmp(5477).useToken;
+  tmp(5477);
   if (BACKGROUND_BASE_LOWER == null) {
     BACKGROUND_BASE_LOWER = tmp7(575).colors.BACKGROUND_BASE_LOWER;
   }
   const token = useToken(BACKGROUND_BASE_LOWER);
   const items10 = [, ];
-  const tmpResult11 = tmp(4791);
+  const tmpResult11 = tmp(4910);
   items10[0] = tmpResult11.hexWithOpacity(token, 0);
   items10[1] = token;
-  const tmpResult12 = tmp(11248);
+  const tmpResult12 = tmp(11368);
   const shouldAnimateSticker = tmpResult12.useShouldAnimateSticker(false);
   let tmp39Result2 = null;
   if (showConvoStarterInDM) {
     let obj5 = { style: animatedStyle, onLayout: callback1, children: items11 };
     View = tmp7(1653).View;
     let obj6 = { style: tmp4.gradient, colors: items10 };
-    items11 = [closure_10(tmp7(5349), obj6), ];
+    items11 = [closure_10(tmp7(5468), obj6), ];
     let obj7 = { style: tmp4.container, children: tmp39Result };
     if (stateFromStores) {
       const obj8 = { style: tmp4.toastContainer, accessibilityRole: "button", accessibilityLabel: intl3.string(tmp(1112).t.pJObYI), onPress: callback, children: items12 };
-      const PressableOpacity = tmp(6910).PressableOpacity;
+      const PressableOpacity = tmp(7030).PressableOpacity;
       intl3 = tmp(1112).intl;
       let tmp40Result = null;
       if (null != stateFromStores2) {
         const obj9 = { sticker: stateFromStores2, size: 24, animated: shouldAnimateSticker };
-        tmp40Result = tmp40(tmp7(11045), obj9);
+        tmp40Result = tmp40(tmp7(11165), obj9);
       }
       items12 = [tmp40Result, ];
       const obj10 = { style: tmp4.toastContent, variant: "body-md/semibold", children: formatToPlainStringResult };
-      items12[1] = closure_10(tmp(5385).Text, obj10);
+      items12[1] = closure_10(tmp(5504).Text, obj10);
       tmp39Result = tmp39(PressableOpacity, obj8);
     } else {
       let tmp40Result2 = null;
       const tmp42 = closure_12;
       if (null != stateFromStores2) {
-        const obj11 = { style: tmp4.stickerContainer, children: closure_10(showConvoStarterInDM(11045), obj12) };
+        const obj11 = { style: tmp4.stickerContainer, children: closure_10(showConvoStarterInDM(11165), obj12) };
         obj12 = { sticker: stateFromStores2, size: 100, animated: shouldAnimateSticker };
         tmp40Result2 = tmp40(tmp41, obj11);
       }
       const obj13 = { children: items13 };
       items13 = [tmp40Result2, ];
       const obj14 = { text: formatToPlainStringResult, onPress: callback, shrink: true };
-      items13[1] = closure_10(tmp(5392).Button, obj14);
+      items13[1] = closure_10(tmp(5511).Button, obj14);
       tmp39Result = tmp39(tmp42, obj13);
     }
     items11[1] = closure_10(View, obj7);

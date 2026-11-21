@@ -1,9 +1,9 @@
-// Module ID: 15527
-// Function ID: 15528
+// Module ID: 15650
+// Function ID: 15651
 // Name: SystemTelecomManager
-// Dependencies: [5, 32, 17, 6275, 4647, 502, 4643, 2131, 5535, 4736, 4697, 1386, 5442, 5538, 1071, 5539, 3, 15528, 572, 15529, 1255, 5531, 7419, 6410, 11, 7619, 5690, 8333, 1268, 15530, 5410, 7617, 1378, 2121, 2]
+// Dependencies: [5, 32, 17, 6394, 4766, 502, 4762, 2131, 5654, 4855, 4816, 1386, 5561, 5657, 1071, 5658, 3, 15651, 572, 15652, 1255, 5650, 7539, 6529, 11, 7739, 5809, 8453, 1268, 15653, 5529, 7737, 1378, 2121, 2]
 
-// Module 15527 (SystemTelecomManager)
+// Module 15650 (SystemTelecomManager)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
@@ -11,32 +11,32 @@ import DispatcherDefault from "Dispatcher" /* 572 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import v1 from "v1" /* 1268 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
-import ChannelRecord from "ChannelRecord" /* 4647 */;
-import useChannelName from "useChannelName" /* 5410 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5531 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 5690 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6410 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7419 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7617 */;
-import CallActionCreatorsDefault from "CallActionCreators" /* 7619 */;
-import RequestGatewaySocketAll from "RequestGatewaySocket" /* 8333 */;
-import SystemTelecomPlatform from "SystemTelecomPlatform" /* 15529 */;
-import SystemTelecomUtils from "SystemTelecomUtils" /* 15530 */;
+import ChannelRecord from "ChannelRecord" /* 4766 */;
+import useChannelName from "useChannelName" /* 5529 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5650 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 5809 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6529 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7539 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7737 */;
+import CallActionCreatorsDefault from "CallActionCreators" /* 7739 */;
+import RequestGatewaySocketAll from "RequestGatewaySocket" /* 8453 */;
+import SystemTelecomPlatform from "SystemTelecomPlatform" /* 15652 */;
+import SystemTelecomUtils from "SystemTelecomUtils" /* 15653 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6275 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6394 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4643 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
 import MediaEngineStore from "MediaEngineStore" /* 2131 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5535 */;
-import RelationshipStore from "RelationshipStore" /* 4736 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4697 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5654 */;
+import RelationshipStore from "RelationshipStore" /* 4855 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4816 */;
 import UserStore from "UserStore" /* 1386 */;
-import VoiceStateStore from "VoiceStateStore" /* 5442 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5538 */;
+import VoiceStateStore from "VoiceStateStore" /* 5561 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5657 */;
 import Constants_mod from "Constants" /* 1071 */;
-import Constants_mod2 from "Constants" /* 5539 */;
-import react_native2 from "react-native" /* 15528 */;
+import Constants_mod2 from "Constants" /* 5658 */;
+import react_native2 from "react-native" /* 15651 */;
 import LifecycleManager from "LifecycleManager" /* 2121 */;
 import size from "module_2" /* 2 */;
 

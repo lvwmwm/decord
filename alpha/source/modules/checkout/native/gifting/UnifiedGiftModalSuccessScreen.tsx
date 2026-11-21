@@ -1,18 +1,18 @@
-// Module ID: 13794
-// Function ID: 13795
+// Module ID: 13916
+// Function ID: 13917
 // Name: UnifiedGiftModalSuccessScreen
-// Dependencies: [19, 1071, 21, 4794, 575, 13795, 6310, 13806, 2119, 8074, 5813, 5481, 5385, 1112, 5393, 2]
+// Dependencies: [19, 1071, 21, 4913, 575, 13917, 6429, 13928, 2119, 8194, 5932, 5600, 5504, 1112, 5512, 2]
 // Exports: default
 
-// Module 13794 (UnifiedGiftModalSuccessScreen)
+// Module 13916 (UnifiedGiftModalSuccessScreen)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import asyncRequire from "asyncRequire" /* 2119 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6310 */;
-import openUserSettings from "openUserSettings" /* 8074 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6429 */;
+import openUserSettings from "openUserSettings" /* 8194 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -43,13 +43,13 @@ export default function UnifiedGiftModalSuccessScreen(giftBadgeProgress) {
   const tmp = closure_7();
   const tmp2 = giftBadgeProgress;
   const items = [giftBadgeProgress, onClose];
-  const tmp4 = giftBadgeProgress(13795).GIFT_STYLE_IMG[giftStyle];
+  const tmp4 = giftBadgeProgress(13917).GIFT_STYLE_IMG[giftStyle];
   const callback = react.useCallback(() => {
     onClose();
     if (null != giftBadgeProgress) {
       const obj2 = { giftBadgeProgress: tmp2 };
       const obj = ModalActionCreatorsDefault;
-      obj.pushLazy(asyncRequire(13806, dependencyMap.paths), obj2, "collectibles_shop_gift_badge_modal");
+      obj.pushLazy(asyncRequire(13928, dependencyMap.paths), obj2, "collectibles_shop_gift_badge_modal");
     }
   }, items);
   const items1 = [onClose];
@@ -60,20 +60,20 @@ export default function UnifiedGiftModalSuccessScreen(giftBadgeProgress) {
     obj.openUserSettings(obj2);
   }, items1);
   let obj = { onClose: callback, noDefaultButtons: true, style: tmp.alertContainer, children: items2 };
-  const tmp8 = onClose(5813);
+  const tmp8 = onClose(5932);
   let obj2 = { source: tmp4, style: tmp.image };
-  const tmp10 = onClose(5481);
+  const tmp10 = onClose(5600);
   items2 = [closure_5(tmp10, obj2), , , ];
   const obj3 = { variant: "heading-lg/semibold", style: tmp.title, children: intl.string(tmp2(1112).t.MqZXbv) };
-  const Text = tmp2(5385).Text;
+  const Text = tmp2(5504).Text;
   intl = tmp2(1112).intl;
   items2[1] = closure_5(Text, obj3);
   const obj4 = { variant: "body-md/medium", style: tmp.description, children: intl2.format(tmp2(1112).t.YS2J4S, { onClick: callback1 }) };
-  const Text2 = tmp2(5385).Text;
+  const Text2 = tmp2(5504).Text;
   intl2 = tmp2(1112).intl;
   items2[2] = closure_5(Text2, obj4);
   const obj5 = { onPress: callback, text: string(cpT0Cq), textVariant: "body-md/semibold", grow: true };
-  const BaseTextButton = tmp2(5393).BaseTextButton;
+  const BaseTextButton = tmp2(5512).BaseTextButton;
   const intl3 = tmp2(1112).intl;
   string = intl3.string;
   const tmp7 = closure_6;

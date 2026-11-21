@@ -1,10 +1,10 @@
-// Module ID: 9925
-// Function ID: 9926
+// Module ID: 10045
+// Function ID: 10046
 // Name: _asyncToGenerator
 // Dependencies: [5, 2]
 // Exports: withDiscoverRequestDeadline
 
-// Module 9925 (_asyncToGenerator)
+// Module 10045 (_asyncToGenerator)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -19,7 +19,7 @@ let obj = function _withDiscoverRequestDeadline() {
     let c6 = 0;
     let c5 = 0;
     return (async function(arg0, value) {
-      const f136852 = function(arg0, arg1) {
+      const f137260 = function(arg0, arg1) {
         function observeRequest() {
           return obj(...arguments);
         }
@@ -85,8 +85,8 @@ let obj = function _withDiscoverRequestDeadline() {
               let self2 = this;
               c3 = 2;
               c6 = 1;
-              let obj4 = { value: new Promise(f136852), done: false };
-              const promise = new Promise(f136852);
+              let obj4 = { value: new Promise(f137260), done: false };
+              const promise = new Promise(f137260);
               return obj4;
             }
           } else if (1 === tmp3) {

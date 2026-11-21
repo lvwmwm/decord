@@ -1,65 +1,65 @@
-// Module ID: 15511
-// Function ID: 15512
+// Module ID: 15634
+// Function ID: 15635
 // Name: App
-// Dependencies: [19, 15512, 502, 9544, 14842, 14854, 15513, 14873, 9023, 15173, 15514, 15515, 15516, 8226, 2177, 4795, 15517, 7250, 15518, 15520, 21, 15521, 5803, 15527, 15531, 15532, 8332, 15541, 8335, 15543, 15546, 9089, 15646, 15654, 15657, 8101, 15660, 15662, 15666, 15668, 15669, 15670, 15672, 6335, 15673, 1378, 8363, 13616, 504, 6306, 15675, 13161, 9, 11858, 15677, 17318, 2]
+// Dependencies: [19, 15635, 502, 9664, 14965, 14977, 15636, 14996, 9143, 15296, 15637, 15638, 15639, 8346, 2178, 4914, 15640, 7370, 15641, 15643, 21, 15644, 5922, 15650, 15654, 15655, 8452, 15664, 8455, 15666, 15669, 9209, 15769, 15777, 15780, 8221, 15783, 15785, 15789, 15791, 15792, 15793, 15795, 6454, 15796, 1378, 8483, 13738, 504, 6425, 15798, 13283, 9, 11978, 15800, 17442, 2]
 // Exports: default
 
-// Module 15511 (App)
+// Module 15634 (App)
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
-import AccessibilityFocusLockManagerDefault from "AccessibilityFocusLockManager" /* 5803 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6306 */;
-import VoiceEngineStreamingManagerDefault from "VoiceEngineStreamingManager" /* 6335 */;
-import MediaPlayerMuteManagerDefault from "MediaPlayerMuteManager" /* 8101 */;
-import ForegroundServiceManagerDefault from "ForegroundServiceManager" /* 8332 */;
-import SentMessageIntentsHandlerDefault from "SentMessageIntentsHandler" /* 8335 */;
-import GPlayManagerDefault from "GPlayManager" /* 9089 */;
-import StartupProfilerDefault from "StartupProfiler" /* 11858 */;
-import AccessibilityManagerDefault from "AccessibilityManager" /* 15521 */;
-import SystemTelecomManagerDefault from "SystemTelecomManager" /* 15527 */;
-import AccessibilityCallManagerDefault from "AccessibilityCallManager" /* 15531 */;
-import NotificationTokenManagerDefault from "NotificationTokenManager" /* 15532 */;
-import VoiceNotificationManagerDefault from "VoiceNotificationManager" /* 15541 */;
-import UserSettingsProtoManagerDefault from "UserSettingsProtoManager" /* 15543 */;
-import NativeRPCServerManagerDefault from "NativeRPCServerManager" /* 15546 */;
-import MobileVoiceOverlayLifecycleManagerDefault from "MobileVoiceOverlayLifecycleManager" /* 15646 */;
-import EmbeddedActivitiesNativeManagerDefault from "EmbeddedActivitiesNativeManager" /* 15654 */;
-import FramesNativeManagerDefault from "FramesNativeManager" /* 15657 */;
-import MediaPlayerManagerDefault from "MediaPlayerManager" /* 15660 */;
-import SoundboardManagerDefault from "SoundboardManager" /* 15662 */;
-import VoiceMessagesPlaybackManagerDefault from "VoiceMessagesPlaybackManager" /* 15666 */;
-import ICYMIManagerDefault from "ICYMIManager" /* 15668 */;
-import GameRelationshipManagerDefault from "GameRelationshipManager" /* 15669 */;
-import CollectiblesMarketingManagerDefault from "CollectiblesMarketingManager" /* 15670 */;
-import SessionAdManagerDefault from "SessionAdManager" /* 15672 */;
-import TouchEventAnalyticsManagerDefault from "TouchEventAnalyticsManager" /* 15673 */;
-import LocalMessageCacheManagerDefault from "LocalMessageCacheManager" /* 15675 */;
-import AppContainerDefault from "AppContainer" /* 15677 */;
+import AccessibilityFocusLockManagerDefault from "AccessibilityFocusLockManager" /* 5922 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6425 */;
+import VoiceEngineStreamingManagerDefault from "VoiceEngineStreamingManager" /* 6454 */;
+import MediaPlayerMuteManagerDefault from "MediaPlayerMuteManager" /* 8221 */;
+import ForegroundServiceManagerDefault from "ForegroundServiceManager" /* 8452 */;
+import SentMessageIntentsHandlerDefault from "SentMessageIntentsHandler" /* 8455 */;
+import GPlayManagerDefault from "GPlayManager" /* 9209 */;
+import StartupProfilerDefault from "StartupProfiler" /* 11978 */;
+import AccessibilityManagerDefault from "AccessibilityManager" /* 15644 */;
+import SystemTelecomManagerDefault from "SystemTelecomManager" /* 15650 */;
+import AccessibilityCallManagerDefault from "AccessibilityCallManager" /* 15654 */;
+import NotificationTokenManagerDefault from "NotificationTokenManager" /* 15655 */;
+import VoiceNotificationManagerDefault from "VoiceNotificationManager" /* 15664 */;
+import UserSettingsProtoManagerDefault from "UserSettingsProtoManager" /* 15666 */;
+import NativeRPCServerManagerDefault from "NativeRPCServerManager" /* 15669 */;
+import MobileVoiceOverlayLifecycleManagerDefault from "MobileVoiceOverlayLifecycleManager" /* 15769 */;
+import EmbeddedActivitiesNativeManagerDefault from "EmbeddedActivitiesNativeManager" /* 15777 */;
+import FramesNativeManagerDefault from "FramesNativeManager" /* 15780 */;
+import MediaPlayerManagerDefault from "MediaPlayerManager" /* 15783 */;
+import SoundboardManagerDefault from "SoundboardManager" /* 15785 */;
+import VoiceMessagesPlaybackManagerDefault from "VoiceMessagesPlaybackManager" /* 15789 */;
+import ICYMIManagerDefault from "ICYMIManager" /* 15791 */;
+import GameRelationshipManagerDefault from "GameRelationshipManager" /* 15792 */;
+import CollectiblesMarketingManagerDefault from "CollectiblesMarketingManager" /* 15793 */;
+import SessionAdManagerDefault from "SessionAdManager" /* 15795 */;
+import TouchEventAnalyticsManagerDefault from "TouchEventAnalyticsManager" /* 15796 */;
+import LocalMessageCacheManagerDefault from "LocalMessageCacheManager" /* 15798 */;
+import AppContainerDefault from "AppContainer" /* 15800 */;
 import react from "react" /* 19 */;
-import MobileNativeUpdateStore from "MobileNativeUpdateStore" /* 15512 */;
+import MobileNativeUpdateStore from "MobileNativeUpdateStore" /* 15635 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import AudioManagerStore from "AudioManagerStore" /* 9544 */;
-import ConnectivityIndicatorStateStore from "ConnectivityIndicatorStateStore" /* 14842 */;
-import RequestReviewStore from "RequestReviewStore" /* 14854 */;
-import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 15513 */;
-import LocalPushNotificationStore from "LocalPushNotificationStore" /* 14873 */;
-import PromotionsStore from "PromotionsStore" /* 9023 */;
-import BitRateStore from "BitRateStore" /* 15173 */;
-import ShareStore from "ShareStore" /* 15514 */;
-import PermissionVADStore from "PermissionVADStore" /* 15515 */;
-import InteractionModalStore from "InteractionModalStore" /* 15516 */;
-import MobileAppDatabaseManager from "MobileAppDatabaseManager" /* 8226 */;
-import SubscriptionStore from "SubscriptionStore" /* 2177 */;
-import AccessibilityStore from "AccessibilityStore" /* 4795 */;
-import AnalyticsLogStore from "AnalyticsLogStore" /* 15517 */;
-import PhoneStore from "PhoneStore" /* 7250 */;
-import ICYMISessionStore from "ICYMISessionStore" /* 15518 */;
-import MemoryExperiment from "MemoryExperiment" /* 15520 */;
+import AudioManagerStore from "AudioManagerStore" /* 9664 */;
+import ConnectivityIndicatorStateStore from "ConnectivityIndicatorStateStore" /* 14965 */;
+import RequestReviewStore from "RequestReviewStore" /* 14977 */;
+import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 15636 */;
+import LocalPushNotificationStore from "LocalPushNotificationStore" /* 14996 */;
+import PromotionsStore from "PromotionsStore" /* 9143 */;
+import BitRateStore from "BitRateStore" /* 15296 */;
+import ShareStore from "ShareStore" /* 15637 */;
+import PermissionVADStore from "PermissionVADStore" /* 15638 */;
+import InteractionModalStore from "InteractionModalStore" /* 15639 */;
+import MobileAppDatabaseManager from "MobileAppDatabaseManager" /* 8346 */;
+import SubscriptionStore from "SubscriptionStore" /* 2178 */;
+import AccessibilityStore from "AccessibilityStore" /* 4914 */;
+import AnalyticsLogStore from "AnalyticsLogStore" /* 15640 */;
+import PhoneStore from "PhoneStore" /* 7370 */;
+import ICYMISessionStore from "ICYMISessionStore" /* 15641 */;
+import MemoryExperiment from "MemoryExperiment" /* 15643 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const IosImageTypesManagerDefault = tmp(8363);
+const IosImageTypesManagerDefault = tmp(8483);
 const jsx = Fragment.jsx;
 let result = size.fileFinishedImporting("components_native/App.tsx");
 
@@ -180,7 +180,7 @@ export default function App() {
         const obj3 = PlatformUtils;
         const tmp9 = require;
         if (obj3.isAndroid()) {
-          const tmp9Result = tmp9(13161);
+          const tmp9Result = tmp9(13283);
           const androidNotificationPermission = tmp9Result.requestAndroidNotificationPermission();
         }
         return () => {
@@ -201,5 +201,5 @@ export default function App() {
   StartupProfilerDefault;
   let obj3 = { appEntryKey: "main", children: null };
   AppContainerDefault;
-  return <tmp7 profile={stateFromStores(11858).Profiles.App}>{null}</tmp7>;
+  return <tmp7 profile={stateFromStores(11978).Profiles.App}>{null}</tmp7>;
 };

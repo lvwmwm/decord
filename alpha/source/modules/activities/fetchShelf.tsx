@@ -1,15 +1,15 @@
-// Module ID: 10545
-// Function ID: 10546
+// Module ID: 10665
+// Function ID: 10666
 // Name: fetchShelf
-// Dependencies: [5, 2163, 2141, 4642, 1071, 1254, 572, 6313, 1263, 2]
+// Dependencies: [5, 2164, 2142, 4761, 1071, 1254, 572, 6432, 1263, 2]
 // Exports: fetchShelf
 
-// Module 10545 (fetchShelf)
+// Module 10665 (fetchShelf)
 import Constants from "Constants" /* 1071 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 2163 */;
-import ApplicationRecord from "ApplicationRecord" /* 2141 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4642 */;
+import ApplicationStore from "ApplicationStore" /* 2164 */;
+import ApplicationRecord from "ApplicationRecord" /* 2142 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4761 */;
 import size from "module_2" /* 2 */;
 
 let c8, c9, closure_4;

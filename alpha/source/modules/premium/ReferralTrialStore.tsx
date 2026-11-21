@@ -1,14 +1,14 @@
-// Module ID: 8722
-// Function ID: 8723
+// Module ID: 8842
+// Function ID: 8843
 // Name: ReferralTrialStore
-// Dependencies: [1386, 1071, 8723, 1087, 504, 572, 2]
+// Dependencies: [1386, 1071, 8843, 1087, 504, 572, 2]
 
-// Module 8722 (ReferralTrialStore)
+// Module 8842 (ReferralTrialStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
 import MessageTypes from "MessageTypes" /* 1087 */;
-import ReferralTrialActionCreators from "ReferralTrialActionCreators" /* 8723 */;
+import ReferralTrialActionCreators from "ReferralTrialActionCreators" /* 8843 */;
 import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 

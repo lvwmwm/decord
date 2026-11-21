@@ -1,19 +1,19 @@
-// Module ID: 10074
-// Function ID: 10075
+// Module ID: 10194
+// Function ID: 10195
 // Name: InAppReportsTextLineElement
-// Dependencies: [5, 32, 19, 17, 21, 4794, 575, 5373, 5814, 1378, 4751, 5473, 5385, 5392, 1112, 7425, 5475, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4913, 575, 5492, 5933, 1378, 4870, 5592, 5504, 5511, 1112, 7545, 5594, 2]
 // Exports: default
 
-// Module 10074 (InAppReportsTextLineElement)
+// Module 10194 (InAppReportsTextLineElement)
 import nativeDefault from "native" /* 575 */;
-import ToastUtils from "ToastUtils" /* 5475 */;
-import ClipboardUtils from "ClipboardUtils" /* 7425 */;
+import ToastUtils from "ToastUtils" /* 5594 */;
+import ClipboardUtils from "ClipboardUtils" /* 7545 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let c3;

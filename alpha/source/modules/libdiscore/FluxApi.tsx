@@ -1,10 +1,10 @@
-// Module ID: 4671
-// Function ID: 4672
+// Module ID: 4790
+// Function ID: 4791
 // Name: FluxApi
 // Dependencies: [1364, 2]
 // Exports: hasFluxApi
 
-// Module 4671 (FluxApi)
+// Module 4790 (FluxApi)
 import shim_mod from "shim" /* 1364 */;
 import size from "module_2" /* 2 */;
 

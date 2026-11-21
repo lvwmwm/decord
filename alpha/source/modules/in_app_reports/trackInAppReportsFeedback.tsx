@@ -1,10 +1,10 @@
-// Module ID: 19384
-// Function ID: 19385
+// Module ID: 19511
+// Function ID: 19512
 // Name: trackInAppReportsFeedback
 // Dependencies: [1071, 1255, 2]
 // Exports: default
 
-// Module 19384 (trackInAppReportsFeedback)
+// Module 19511 (trackInAppReportsFeedback)
 import Constants from "Constants" /* 1071 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import size from "module_2" /* 2 */;

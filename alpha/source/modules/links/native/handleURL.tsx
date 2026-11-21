@@ -1,14 +1,14 @@
-// Module ID: 5470
-// Function ID: 5471
+// Module ID: 5589
+// Function ID: 5590
 // Name: handleURL
-// Dependencies: [5, 17, 5009, 1071, 3, 5471, 5472, 5473, 5474, 2068, 5475, 1112, 5505, 1378, 5008, 5508, 1381, 5509, 14642, 14938, 2]
+// Dependencies: [5, 17, 5128, 1071, 3, 5590, 5591, 5592, 5593, 2068, 5594, 1112, 5624, 1378, 5127, 5627, 1381, 5628, 14765, 15061, 2]
 // Exports: default
 
-// Module 5470 (handleURL)
+// Module 5589 (handleURL)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ActionSheetStore from "ActionSheetStore" /* 5009 */;
+import ActionSheetStore from "ActionSheetStore" /* 5128 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 

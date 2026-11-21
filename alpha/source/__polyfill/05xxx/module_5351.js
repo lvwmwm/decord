@@ -1,16 +1,13 @@
 // Module ID: 5351
 // Function ID: 5352
-// Dependencies: [5352]
+// Dependencies: [5352, 5354]
 
 // Module 5351
-import _mod5352 from "module_5352" /* 5352 */;
+import BottomSheetFooter from "BottomSheetFooter" /* 5352 */;
+import BottomSheetFooterContainer from "BottomSheetFooterContainer" /* 5354 */;
 
-const _modDef5352 = _mod5352;
+const BottomSheetFooter_export = BottomSheetFooter.BottomSheetFooter;
+const BottomSheetFooterContainer_export = BottomSheetFooterContainer.BottomSheetFooterContainer;
 
-for (const key10016 in _mod5352) {
-  exports[key10016] = _mod5352[key10016];
-  continue;
-}
-
-export default _modDef5352;
-export const LinearGradient = _modDef5352;
+export { BottomSheetFooter_export as BottomSheetFooter };
+export { BottomSheetFooterContainer_export as BottomSheetFooterContainer };

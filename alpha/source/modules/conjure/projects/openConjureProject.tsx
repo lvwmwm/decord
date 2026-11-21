@@ -1,13 +1,13 @@
-// Module ID: 13669
-// Function ID: 13670
+// Module ID: 13791
+// Function ID: 13792
 // Name: openConjureProject
-// Dependencies: [1071, 4650, 1098, 2]
+// Dependencies: [1071, 4769, 1098, 2]
 // Exports: openConjureProject
 
-// Module 13669 (openConjureProject)
+// Module 13791 (openConjureProject)
 import Constants from "Constants" /* 1071 */;
 import router_utils from "router_utils" /* 1098 */;
-import ChannelConstants from "ChannelConstants" /* 4650 */;
+import ChannelConstants from "ChannelConstants" /* 4769 */;
 import size from "module_2" /* 2 */;
 
 const Routes = Constants.Routes;

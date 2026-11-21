@@ -1,27 +1,62 @@
-// Module ID: 12367
-// Function ID: 12368
+// Module ID: 12489
+// Function ID: 12490
 // Name: onTapCheckpointCard
-// Dependencies: [4643, 6221, 12368, 12375, 2]
+// Dependencies: [5, 4762, 6340, 12490, 12497, 2]
 // Exports: onTapCheckpointCard
 
-// Module 12367 (onTapCheckpointCard)
-import CheckpointExperiments from "CheckpointExperiments" /* 6221 */;
-import Tracking from "Tracking" /* 12368 */;
-import openCheckpoint from "openCheckpoint" /* 12375 */;
-import ChannelStore from "ChannelStore" /* 4643 */;
+// Module 12489 (onTapCheckpointCard)
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
 import size from "module_2" /* 2 */;
 
+let obj = function _onTapCheckpointCard() {
+  obj = _asyncToGenerator(async (arg0) => {
+    let closure_1;
+    let closure_2;
+    const channel_id = arg0;
+    let c3 = 0;
+    let c4 = 0;
+    const iter = (async (arg0, value) => {
+      let c0;
+      let c1;
+      let obj3;
+      if (1 === c3) {
+        if (arg0 === 1) {
+          c4 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c4 = 3;
+          return { value, done: true };
+        } else {
+          const obj8 = closure_130_0(closure_130_1[2]);
+          if (obj8.getIsCheckpointEnabled("onTapCheckpointCard")) {
+            const obj2 = closure_130_0(closure_130_1[3]);
+            const result = obj2.trackCheckpoint2026CardClicked(c1, closure_130_3.getChannel(channel_id.channel_id));
+            c3 = 2;
+            c4 = 1;
+            const obj7 = { value: obj3.openCheckpoint("message_component"), done: false };
+            obj3 = closure_130_0(closure_130_1[4]);
+            return obj7;
+          }
+        }
+      } else if (arg0 === 1) {
+        c4 = 3;
+        throw value;
+      } else if (arg0 === 2) {
+        c4 = 3;
+        return { value, done: true };
+      }
+      await "HermesInternal";
+      ({ message: c0, authorId: c1 } = closure_0);
+      return "Path";
+    })();
+    iter.next();
+    return iter;
+  });
+  return obj(...arguments);
+};
 let result = size.fileFinishedImporting("modules/checkpoint/onTapCheckpointCard.tsx");
 
-export function onTapCheckpointCard(arg0) {
-  let authorId;
-  let message;
-  ({ message, authorId } = arg0);
-  const obj = CheckpointExperiments;
-  if (obj.getIsCheckpointEnabled("onTapCheckpointCard")) {
-    const tmpResult = Tracking;
-    const result = tmpResult.trackCheckpoint2026CardClicked(authorId, ChannelStore.getChannel(message.channel_id));
-    const tmpResult2 = openCheckpoint;
-    tmpResult2.openCheckpoint("message_component");
-  }
+export function onTapCheckpointCard() {
+  return obj(...arguments);
 }

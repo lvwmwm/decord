@@ -1,14 +1,14 @@
-// Module ID: 7307
-// Function ID: 7308
+// Module ID: 7427
+// Function ID: 7428
 // Name: SearchBar
-// Dependencies: [19, 21, 7108, 1112, 7308, 2]
+// Dependencies: [19, 21, 7228, 1112, 7428, 2]
 // Exports: SearchBar
 
-// Module 7307 (SearchBar)
+// Module 7427 (SearchBar)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1112 */;
-import TextField2 from "TextField" /* 7108 */;
-import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 7308 */;
+import TextField2 from "TextField" /* 7228 */;
+import MagnifyingGlassIcon from "MagnifyingGlassIcon" /* 7428 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

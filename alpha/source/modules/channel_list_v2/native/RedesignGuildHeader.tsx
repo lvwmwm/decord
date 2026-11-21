@@ -1,35 +1,35 @@
-// Module ID: 17527
-// Function ID: 17528
+// Module ID: 17651
+// Function ID: 17652
 // Name: RedesignGuildHeader
-// Dependencies: [19, 17, 4795, 5009, 5523, 1071, 21, 8451, 5003, 4801, 5400, 17528, 4668, 17500, 5524, 5358, 575, 5398, 9973, 4794, 1653, 9539, 17529, 1494, 504, 1501, 5395, 5396, 14998, 1412, 1112, 5481, 17567, 2]
+// Dependencies: [19, 17, 4914, 5128, 5642, 1071, 21, 8571, 5122, 4920, 5519, 17652, 4787, 17624, 5643, 5477, 575, 5517, 10093, 4913, 1653, 9659, 17653, 1494, 504, 1501, 5514, 5515, 15121, 1412, 1112, 5600, 17691, 2]
 // Exports: useRedesignGuildHeaderHeight
 
-// Module 17527 (RedesignGuildHeader)
+// Module 17651 (RedesignGuildHeader)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
 import _mod1653 from "module_1653" /* 1653 */;
-import FavoritesUtils from "FavoritesUtils" /* 4668 */;
-import shared from "shared" /* 4801 */;
-import useToken from "useToken" /* 5358 */;
-import spring_spring from "spring/spring" /* 5395 */;
-import springPresets from "springPresets" /* 5396 */;
-import useFontScale from "useFontScale" /* 5400 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 5524 */;
-import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 8451 */;
-import ThemedGradientDefault from "ThemedGradient" /* 9539 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 9973 */;
-import openGuildActionSheetDefault from "openGuildActionSheet" /* 14998 */;
-import useIsGameCommunityServerPreviewDefault from "useIsGameCommunityServerPreview" /* 17500 */;
-import useStickyServerHeaderSubtitleDefault from "useStickyServerHeaderSubtitle" /* 17528 */;
-import ChannelListStickyHeaderDefault from "ChannelListStickyHeader" /* 17529 */;
+import FavoritesUtils from "FavoritesUtils" /* 4787 */;
+import shared from "shared" /* 4920 */;
+import useToken from "useToken" /* 5477 */;
+import spring_spring from "spring/spring" /* 5514 */;
+import springPresets from "springPresets" /* 5515 */;
+import useFontScale from "useFontScale" /* 5519 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 5643 */;
+import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 8571 */;
+import ThemedGradientDefault from "ThemedGradient" /* 9659 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 10093 */;
+import openGuildActionSheetDefault from "openGuildActionSheet" /* 15121 */;
+import useIsGameCommunityServerPreviewDefault from "useIsGameCommunityServerPreview" /* 17624 */;
+import useStickyServerHeaderSubtitleDefault from "useStickyServerHeaderSubtitle" /* 17652 */;
+import ChannelListStickyHeaderDefault from "ChannelListStickyHeader" /* 17653 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4795 */;
-import ActionSheetStore from "ActionSheetStore" /* 5009 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 5523 */;
+import AccessibilityStore from "AccessibilityStore" /* 4914 */;
+import ActionSheetStore from "ActionSheetStore" /* 5128 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 5642 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 const _modDef1653 = _mod1653;
@@ -343,11 +343,11 @@ export function useRedesignGuildHeaderHeight(id) {
   const tmp7Result = useToken;
   const token = tmp7Result.useToken(tmp(575).modules.mobile.CHANNEL_LIST_SUBTITLE_TEXT_STYLE);
   if (!isFavoritesGuildIdResult) {
-    num2 = tmp7(5398).SMALL_BUTTON_HEIGHT + unpackModuleId;
+    num2 = tmp7(5517).SMALL_BUTTON_HEIGHT + unpackModuleId;
   }
   let num3 = 0;
   if (tmp11) {
-    num3 = 8 + tmp7(5398).MEDIUM_BUTTON_HEIGHT + 8;
+    num3 = 8 + tmp7(5517).MEDIUM_BUTTON_HEIGHT + 8;
   }
   let num5 = 16;
   if (isFavoritesGuildIdResult) {
@@ -361,7 +361,7 @@ export function useRedesignGuildHeaderHeight(id) {
   let bound = scaleTextLineHeightResult;
   if (isFavoritesGuildIdResult) {
     const _Math = Math;
-    bound = Math.max(scaleTextLineHeightResult, tmp7(5398).SMALL_BUTTON_HEIGHT);
+    bound = Math.max(scaleTextLineHeightResult, tmp7(5517).SMALL_BUTTON_HEIGHT);
   }
   return roundToNearestPixelDefault(16 + bound + num6 + num2 + num3 + num5 + num);
 }

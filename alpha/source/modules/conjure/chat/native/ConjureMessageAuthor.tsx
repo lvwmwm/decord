@@ -1,23 +1,23 @@
-// Module ID: 18344
-// Function ID: 18345
+// Module ID: 18471
+// Function ID: 18472
 // Name: ConjureMessageAuthor
-// Dependencies: [19, 17, 21, 4794, 575, 18332, 18345, 5385, 6910, 1112, 11857, 4850, 18346, 4091, 1186, 5481, 18349, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 18459, 18472, 5504, 7030, 1112, 11977, 4969, 18473, 4190, 1186, 5600, 18476, 2]
 // Exports: ConjureAvatar, ConjureHeader, ConjureUserAvatar, ConjureUserHeader
 
-// Module 18344 (ConjureMessageAuthor)
+// Module 18471 (ConjureMessageAuthor)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
-import _modDef4091 from "module_4091" /* 4091 */;
-import Text_Text from "Text/Text" /* 5385 */;
-import FastImageDefault from "FastImage" /* 5481 */;
-import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 18332 */;
-import ConjureMessageTime from "ConjureMessageTime" /* 18345 */;
-import ConjureMessageActionSheet from "ConjureMessageActionSheet" /* 18346 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18349 */;
+import _modDef4190 from "module_4190" /* 4190 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import FastImageDefault from "FastImage" /* 5600 */;
+import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 18459 */;
+import ConjureMessageTime from "ConjureMessageTime" /* 18472 */;
+import ConjureMessageActionSheet from "ConjureMessageActionSheet" /* 18473 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18476 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -46,7 +46,7 @@ class ConjureMessageHeader {
     const tmp8 = View;
     if (null != onPressName) {
       const obj4 = { style: tmp.name, onPress: onPressName, onLongPress: onPressName, accessibilityRole: "button", accessibilityLabel: intl.formatToPlainString(intl2.t.uCenkh, obj5), children: tmp6 };
-      const PressableOpacity = tmp2(6910).PressableOpacity;
+      const PressableOpacity = tmp2(7030).PressableOpacity;
       intl = tmp2(1112).intl;
       obj5 = { username: name };
       tmp5Result = tmp5(PressableOpacity, obj4);
@@ -55,7 +55,7 @@ class ConjureMessageHeader {
     let tmp5Result2 = null;
     if (null != describeMessageTimeResult) {
       const obj6 = { variant: "body-xs/medium", color: "text-muted", style: tmp.time, children: describeMessageTimeResult };
-      tmp5Result2 = tmp5(tmp2(5385).Text, obj6);
+      tmp5Result2 = tmp5(tmp2(5504).Text, obj6);
     }
     items[1] = tmp5Result2;
     return tmp7(tmp8, obj3);
@@ -78,9 +78,9 @@ export function ConjureUserHeader(arg0) {
   let userId;
   let messageAuthorUser;
   ({ userId, at } = arg0);
-  let obj = messageAuthorUser(11857);
+  let obj = messageAuthorUser(11977);
   messageAuthorUser = obj.useMessageAuthorUser(userId);
-  const obj2 = messageAuthorUser(4850);
+  const obj2 = messageAuthorUser(4969);
   const name = obj2.useName(messageAuthorUser);
   [][0] = messageAuthorUser;
   let tmp4 = null;
@@ -96,7 +96,7 @@ export function ConjureUserHeader(arg0) {
 export function ConjureHeader(arg0) {
   let at;
   let intl;
-  const obj = { name: intl.string(_modDef4091.uk6jhJ), color: "text-brand", at };
+  const obj = { name: intl.string(_modDef4190.uk6jhJ), color: "text-brand", at };
   at = arg0.at;
   intl = intl2.intl;
   return hasOwnProperty(ConjureMessageHeader, obj);
@@ -112,7 +112,7 @@ export function ConjureUserAvatar(size) {
     NORMAL = messageAuthorUser(1186).AvatarSizes.NORMAL;
   }
   messageAuthorUser = undefined;
-  let obj = messageAuthorUser(11857);
+  let obj = messageAuthorUser(11977);
   messageAuthorUser = obj.useMessageAuthorUser(userId);
   const items = [messageAuthorUser];
   const callback = react.useCallback(() => {
@@ -124,9 +124,9 @@ export function ConjureUserAvatar(size) {
   let tmp7 = null;
   if (null != messageAuthorUser) {
     const obj2 = { onPress: callback, onLongPress: callback, accessibilityRole: "button", accessibilityLabel: intl.string(messageAuthorUser(1112).t.iXAna6), children: closure_5(messageAuthorUser(1186).Avatar, obj3) };
-    const PressableOpacity = tmp3(6910).PressableOpacity;
+    const PressableOpacity = tmp3(7030).PressableOpacity;
     intl = tmp3(1112).intl;
-    obj3 = { size: NORMAL, user: messageAuthorUser, guildId: "Array" };
+    obj3 = { size: NORMAL, user: messageAuthorUser, guildId: "r" };
     tmp7 = closure_5(PressableOpacity, obj2);
   }
   return tmp7;

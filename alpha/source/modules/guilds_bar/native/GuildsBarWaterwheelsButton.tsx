@@ -1,28 +1,28 @@
-// Module ID: 17803
-// Function ID: 17804
+// Module ID: 17929
+// Function ID: 17930
 // Name: GuildsBarWaterwheelsButton
-// Dependencies: [19, 17, 9924, 4827, 1071, 21, 4794, 17758, 5385, 1112, 2563, 17696, 17700, 5358, 575, 17746, 504, 17796, 16891, 2]
+// Dependencies: [19, 17, 10044, 4946, 1071, 21, 4913, 17884, 5504, 1112, 2643, 17826, 17829, 5477, 575, 17872, 504, 17922, 17014, 2]
 
-// Module 17803 (GuildsBarWaterwheelsButton)
+// Module 17929 (GuildsBarWaterwheelsButton)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
-import _modDef2563 from "module_2563" /* 2563 */;
-import useToken from "useToken" /* 5358 */;
-import Text_Text from "Text/Text" /* 5385 */;
-import CompassIcon2 from "CompassIcon" /* 16891 */;
-import WaterwheelsDiscoverNavigation from "WaterwheelsDiscoverNavigation" /* 17696 */;
-import openWaterwheelsInterestPickerDefault from "openWaterwheelsInterestPicker" /* 17700 */;
-import GuildsBarAnimatedItemWrapper from "GuildsBarAnimatedItemWrapper" /* 17746 */;
-import HomeDrawerShared from "HomeDrawerShared" /* 17758 */;
-import GuildsBarSeparatorDefault from "GuildsBarSeparator" /* 17796 */;
+import _modDef2643 from "module_2643" /* 2643 */;
+import useToken from "useToken" /* 5477 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import CompassIcon2 from "CompassIcon" /* 17014 */;
+import WaterwheelsDiscoverNavigation from "WaterwheelsDiscoverNavigation" /* 17826 */;
+import openWaterwheelsInterestPickerDefault from "openWaterwheelsInterestPicker" /* 17829 */;
+import GuildsBarAnimatedItemWrapper from "GuildsBarAnimatedItemWrapper" /* 17872 */;
+import HomeDrawerShared from "HomeDrawerShared" /* 17884 */;
+import GuildsBarSeparatorDefault from "GuildsBarSeparator" /* 17922 */;
 import react from "react" /* 19 */;
-import InterestPickerSessionStore from "InterestPickerSessionStore" /* 9924 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4827 */;
+import InterestPickerSessionStore from "InterestPickerSessionStore" /* 10044 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4946 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4794 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const GuildsBarAnimatedItemWrapperDefault = GuildsBarAnimatedItemWrapper;
@@ -35,7 +35,7 @@ function GuildsBarWaterwheelsExpandedChildren() {
   let obj2;
   const obj = { title: metroImportAll(Text, obj2), subtitle: null };
   const HomeDrawerSharedItem = HomeDrawerShared.HomeDrawerSharedItem;
-  obj2 = { variant: "body-md/medium", color: "text-default", children: intl.string(_modDef2563.zFl2A4) };
+  obj2 = { variant: "body-md/medium", color: "text-default", children: intl.string(_modDef2643.zFl2A4) };
   Text = Text_Text.Text;
   intl = intl2.intl;
   return metroImportAll(HomeDrawerSharedItem, obj);
@@ -72,7 +72,7 @@ const memoResult = react.memo(function GuildsBarWaterwheelsButton() {
   const obj4 = { style: tmp.stretch, children: items1 };
   const memo = react.useMemo(() => ({ onPress }), []);
   items1 = [metroImportAll(GuildsBarSeparatorDefault, {}), ];
-  const obj5 = { selected: stateFromStores, circle: false, unread: false, styles: guildsBarAnimatedWrapperStyles, overState: "y", config: memo, label: intl.string(_modDef2563.zFl2A4), expandedChildren: metroImportAll(GuildsBarWaterwheelsExpandedChildren, {}), children: metroImportAll(CompassIcon, obj6) };
+  const obj5 = { selected: stateFromStores, circle: false, unread: false, styles: guildsBarAnimatedWrapperStyles, overState: "y", config: memo, label: intl.string(_modDef2643.zFl2A4), expandedChildren: metroImportAll(GuildsBarWaterwheelsExpandedChildren, {}), children: metroImportAll(CompassIcon, obj6) };
   const tmp8 = GuildsBarAnimatedItemWrapperDefault;
   intl = intl2.intl;
   CompassIcon = CompassIcon2.CompassIcon;

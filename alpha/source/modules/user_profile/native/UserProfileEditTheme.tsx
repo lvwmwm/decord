@@ -1,18 +1,18 @@
-// Module ID: 15763
-// Function ID: 15764
+// Module ID: 15886
+// Function ID: 15887
 // Name: UserProfileEditTheme
-// Dependencies: [19, 17, 21, 4794, 575, 7952, 8060, 8008, 5625, 15764, 5385, 1112, 6910, 5008, 15765, 2119, 6902, 15766, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 8072, 8180, 8128, 5744, 15887, 5504, 1112, 7030, 5127, 15888, 2119, 7022, 15889, 2]
 // Exports: default
 
-// Module 15763 (UserProfileEditTheme)
+// Module 15886 (UserProfileEditTheme)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import asyncRequire from "asyncRequire" /* 2119 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5008 */;
-import isEqualDefault from "isEqual" /* 5625 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
+import isEqualDefault from "isEqual" /* 5744 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -109,7 +109,7 @@ export default function UserProfileEditTheme(pendingThemeColors) {
                       return onChangeColors([null, null]);
                     }
                   };
-                  obj.openLazy(asyncRequire(15765, dependencyMap.paths), "Profile Theme", obj2);
+                  obj.openLazy(asyncRequire(15888, dependencyMap.paths), "Profile Theme", obj2);
                 },
           children: closure_5(onProfileThemeColorsChanged(tmp3[16]).MoreHorizontalIcon, obj6)
         };

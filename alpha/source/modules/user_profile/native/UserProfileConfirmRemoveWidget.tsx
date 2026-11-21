@@ -1,12 +1,12 @@
-// Module ID: 10139
-// Function ID: 10140
+// Module ID: 10259
+// Function ID: 10260
 // Name: UserProfileConfirmRemoveWidget
-// Dependencies: [19, 21, 5747, 1112, 5747, 2]
+// Dependencies: [19, 21, 5866, 1112, 5866, 2]
 // Exports: default
 
-// Module 10139 (UserProfileConfirmRemoveWidget)
+// Module 10259 (UserProfileConfirmRemoveWidget)
 import intl5 from "intl" /* 1112 */;
-import AlertModal2 from "AlertModal" /* 5747 */;
+import AlertModal2 from "AlertModal" /* 5866 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

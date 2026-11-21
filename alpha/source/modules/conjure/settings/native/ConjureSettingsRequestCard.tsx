@@ -1,16 +1,16 @@
-// Module ID: 18362
-// Function ID: 18363
+// Module ID: 18489
+// Function ID: 18490
 // Name: ConjureSettingsRequestCard
-// Dependencies: [19, 21, 4794, 575, 18363, 5008, 18155, 18176, 5385, 1112, 4091, 18183, 5392, 2]
+// Dependencies: [19, 21, 4913, 575, 18490, 5127, 18282, 18303, 5504, 1112, 4190, 18310, 5511, 2]
 // Exports: default
 
-// Module 18362 (ConjureSettingsRequestCard)
+// Module 18489 (ConjureSettingsRequestCard)
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5008 */;
-import ConjureSettingsSheet from "ConjureSettingsSheet" /* 18155 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5127 */;
+import ConjureSettingsSheet from "ConjureSettingsSheet" /* 18282 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4794 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const ConjureSettingsSheetDefault = ConjureSettingsSheet;

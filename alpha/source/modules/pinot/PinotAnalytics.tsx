@@ -1,13 +1,13 @@
-// Module ID: 11746
-// Function ID: 11747
+// Module ID: 11866
+// Function ID: 11867
 // Name: PinotAnalytics
-// Dependencies: [1071, 1255, 11747, 2]
+// Dependencies: [1071, 1255, 11867, 2]
 // Exports: trackPinotNoticeAction, trackPinotNoticeViewed, trackPinotSettingsViewed
 
-// Module 11746 (PinotAnalytics)
+// Module 11866 (PinotAnalytics)
 import Constants from "Constants" /* 1071 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import PinotDraft from "PinotDraft" /* 11747 */;
+import PinotDraft from "PinotDraft" /* 11867 */;
 import size from "module_2" /* 2 */;
 
 let includedChannelIds;

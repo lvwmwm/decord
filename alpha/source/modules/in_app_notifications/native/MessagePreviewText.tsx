@@ -1,31 +1,31 @@
-// Module ID: 11003
-// Function ID: 11004
+// Module ID: 11123
+// Function ID: 11124
 // Name: MessagePreviewText
-// Dependencies: [19, 17, 4643, 10994, 1082, 21, 4794, 1358, 575, 11004, 11005, 10993, 5385, 5481, 1089, 11025, 6222, 11030, 11031, 1093, 5408, 1112, 5455, 2]
+// Dependencies: [19, 17, 4762, 11114, 1082, 21, 4913, 1358, 575, 11124, 11125, 11113, 5504, 5600, 1089, 11145, 6341, 11150, 11151, 1093, 5527, 1112, 5574, 2]
 // Exports: default
 
-// Module 11003 (MessagePreviewText)
+// Module 11123 (MessagePreviewText)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1082 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1089 */;
 import MessageEmbedTypes from "MessageEmbedTypes" /* 1093 */;
-import Text_Text from "Text/Text" /* 5385 */;
-import isForwardMessageDefault from "isForwardMessage" /* 5408 */;
-import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 5455 */;
-import FastImageDefault from "FastImage" /* 5481 */;
-import useMessageAuthor from "useMessageAuthor" /* 6222 */;
-import InAppNotificationUtils from "InAppNotificationUtils" /* 10993 */;
-import useTruncatedGradientColorsDefault from "useTruncatedGradientColors" /* 11004 */;
-import ChannelRowPreview2 from "ChannelRowPreview" /* 11005 */;
-import usePreviewableMedia from "usePreviewableMedia" /* 11025 */;
-import usePreviewableMediaText from "usePreviewableMediaText" /* 11030 */;
-import useGetInitialMessagePreview from "useGetInitialMessagePreview" /* 11031 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import isForwardMessageDefault from "isForwardMessage" /* 5527 */;
+import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 5574 */;
+import FastImageDefault from "FastImage" /* 5600 */;
+import useMessageAuthor from "useMessageAuthor" /* 6341 */;
+import InAppNotificationUtils from "InAppNotificationUtils" /* 11113 */;
+import useTruncatedGradientColorsDefault from "useTruncatedGradientColors" /* 11124 */;
+import ChannelRowPreview2 from "ChannelRowPreview" /* 11125 */;
+import usePreviewableMedia from "usePreviewableMedia" /* 11145 */;
+import usePreviewableMediaText from "usePreviewableMediaText" /* 11150 */;
+import useGetInitialMessagePreview from "useGetInitialMessagePreview" /* 11151 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4643 */;
-import InAppNotificationConstants from "InAppNotificationConstants" /* 10994 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import InAppNotificationConstants from "InAppNotificationConstants" /* 11114 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import PlatformUtils from "utils/PlatformUtils" /* 1358 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -231,7 +231,7 @@ export default function MessagePreviewText(message) {
   } else if (isForwardMessageDefault(message)) {
     let tmp30 = previewableMedia.length > 0;
     if (tmp30) {
-      tmp30 = previewableMedia[0].type === tmp(11025).PreviewableMediaTypes.GIF;
+      tmp30 = previewableMedia[0].type === tmp(11145).PreviewableMediaTypes.GIF;
     }
     if (previewableMedia.length > 0) {
       let formatResult;
@@ -254,7 +254,7 @@ export default function MessagePreviewText(message) {
       InAppNotificationUtils;
       if (null != channel) {
         const obj9 = { channel, message, color: "text-default", layout: ChannelListLayoutTypes.ChannelListLayoutTypes.COZY, variant: tmp25, muted: false, lineClamp: metroImportDefault };
-        const ChannelRowPreview = tmp(11005).ChannelRowPreview;
+        const ChannelRowPreview = tmp(11125).ChannelRowPreview;
         return metroImportAll(ChannelRowPreview, obj9);
       }
     }
@@ -271,7 +271,7 @@ export default function MessagePreviewText(message) {
         const tmp18 = metroImportAll;
         if (tmp18Result) {
           const obj12 = { variant: "heading-sm/medium", color: "text-link", lineClamp: metroImportDefault, children: secondaryText };
-          tmp18Result = tmp18(tmp(5385).Text, obj12);
+          tmp18Result = tmp18(tmp(5504).Text, obj12);
         }
         const obj13 = { children: items2 };
         items2[1] = tmp18Result;

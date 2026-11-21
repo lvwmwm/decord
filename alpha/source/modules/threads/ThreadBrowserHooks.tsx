@@ -1,24 +1,24 @@
-// Module ID: 13596
-// Function ID: 13597
+// Module ID: 13718
+// Function ID: 13719
 // Name: ThreadBrowserHooks
-// Dependencies: [32, 19, 13597, 4643, 4726, 6500, 6520, 8340, 4728, 1082, 8398, 504, 12, 1254, 11, 8339, 8502, 2]
+// Dependencies: [32, 19, 13719, 4762, 4845, 6619, 6639, 8460, 4847, 1082, 8518, 504, 12, 1254, 11, 8459, 8622, 2]
 // Exports: useActiveGuildThreads, useActiveThreadIds, useActiveThreads, useArchivedThreads, useTrackThreadBrowserTab
 
-// Module 13596 (ThreadBrowserHooks)
+// Module 13718 (ThreadBrowserHooks)
 import _modDef12 from "module_12" /* 12 */;
 import Constants from "Constants" /* 1082 */;
 import GlobalUtils from "GlobalUtils" /* 1254 */;
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8339 */;
-import ForumActionCreatorsDefault from "ForumActionCreators" /* 8502 */;
-import ReportToModChannelStore from "ReportToModChannelStore" /* 13597 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8459 */;
+import ForumActionCreatorsDefault from "ForumActionCreators" /* 8622 */;
+import ReportToModChannelStore from "ReportToModChannelStore" /* 13719 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4643 */;
-import PermissionStore from "PermissionStore" /* 4726 */;
-import ReadStateStore from "ReadStateStore" /* 6500 */;
-import ActiveThreadsStore from "ActiveThreadsStore" /* 6520 */;
-import ArchivedThreadsStore from "ArchivedThreadsStore" /* 8340 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 4728 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
+import ReadStateStore from "ReadStateStore" /* 6619 */;
+import ActiveThreadsStore from "ActiveThreadsStore" /* 6639 */;
+import ArchivedThreadsStore from "ArchivedThreadsStore" /* 8460 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4847 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

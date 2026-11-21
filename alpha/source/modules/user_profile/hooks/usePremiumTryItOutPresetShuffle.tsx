@@ -1,20 +1,20 @@
-// Module ID: 15787
-// Function ID: 15788
+// Module ID: 15910
+// Function ID: 15911
 // Name: usePremiumTryItOutPresetShuffle
-// Dependencies: [19, 8012, 1071, 5003, 4801, 15788, 8790, 15713, 7290, 1255, 1112, 2]
+// Dependencies: [19, 8132, 1071, 5122, 4920, 15911, 8910, 15836, 7410, 1255, 1112, 2]
 // Exports: default
 
-// Module 15787 (usePremiumTryItOutPresetShuffle)
+// Module 15910 (usePremiumTryItOutPresetShuffle)
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import shared from "shared" /* 4801 */;
-import ProfilePendingImageTypes from "ProfilePendingImageTypes" /* 7290 */;
-import UserProfileActionCreators from "UserProfileActionCreators" /* 8790 */;
-import ProfilePendingImageUtils from "ProfilePendingImageUtils" /* 15713 */;
-import TryItOutPresets from "TryItOutPresets" /* 15788 */;
+import shared from "shared" /* 4920 */;
+import ProfilePendingImageTypes from "ProfilePendingImageTypes" /* 7410 */;
+import UserProfileActionCreators from "UserProfileActionCreators" /* 8910 */;
+import ProfilePendingImageUtils from "ProfilePendingImageUtils" /* 15836 */;
+import TryItOutPresets from "TryItOutPresets" /* 15911 */;
 import react from "react" /* 19 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8012 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8132 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -22,7 +22,7 @@ const result = size.fileFinishedImporting("modules/user_profile/hooks/usePremium
 
 export default function usePremiumTryItOutPresetShuffle() {
   let callback;
-  const tmp = callback(5003)();
+  const tmp = callback(5122)();
   let obj = shared;
   const isThemeLightResult = obj.isThemeLight(tmp);
   require = isThemeLightResult;

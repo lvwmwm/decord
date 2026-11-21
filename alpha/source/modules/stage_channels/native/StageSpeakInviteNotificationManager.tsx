@@ -1,26 +1,26 @@
-// Module ID: 19539
-// Function ID: 19540
+// Module ID: 19666
+// Function ID: 19667
 // Name: StageSpeakInviteNotificationManager
-// Dependencies: [6376, 502, 4643, 4665, 4736, 4697, 1386, 4648, 1071, 10741, 1112, 5410, 10986, 10995, 10993, 7364, 5831, 10735, 2]
+// Dependencies: [6495, 502, 4762, 4784, 4855, 4816, 1386, 4767, 1071, 10861, 1112, 5529, 11106, 11115, 11113, 7484, 5950, 10855, 2]
 
-// Module 19539 (StageSpeakInviteNotificationManager)
+// Module 19666 (StageSpeakInviteNotificationManager)
 import Constants from "Constants" /* 1071 */;
-import useChannelName from "useChannelName" /* 5410 */;
-import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 5831 */;
-import StageChannelUnifiedCallExperiment from "StageChannelUnifiedCallExperiment" /* 10735 */;
-import PushNotificationDefault from "PushNotification" /* 10741 */;
-import NotificationTextUtils from "NotificationTextUtils" /* 10986 */;
-import InAppNotificationUtils from "InAppNotificationUtils" /* 10993 */;
-import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 10995 */;
-import VoicePanelStore from "VoicePanelStore" /* 6376 */;
+import useChannelName from "useChannelName" /* 5529 */;
+import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 5950 */;
+import StageChannelUnifiedCallExperiment from "StageChannelUnifiedCallExperiment" /* 10855 */;
+import PushNotificationDefault from "PushNotification" /* 10861 */;
+import NotificationTextUtils from "NotificationTextUtils" /* 11106 */;
+import InAppNotificationUtils from "InAppNotificationUtils" /* 11113 */;
+import InAppNotificationActionCreatorsDefault from "InAppNotificationActionCreators" /* 11115 */;
+import VoicePanelStore from "VoicePanelStore" /* 6495 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4643 */;
-import GuildStore from "GuildStore" /* 4665 */;
-import RelationshipStore from "RelationshipStore" /* 4736 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4697 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import RelationshipStore from "RelationshipStore" /* 4855 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4816 */;
 import UserStore from "UserStore" /* 1386 */;
-import StageInstanceStore from "StageInstanceStore" /* 4648 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7364 */;
+import StageInstanceStore from "StageInstanceStore" /* 4767 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7484 */;
 import size from "module_2" /* 2 */;
 
 const InAppNotificationTypes = Constants.InAppNotificationTypes;
@@ -88,7 +88,7 @@ class StageSpeakInviteNotificationManager extends AutomaticLifecycleManager {
                         guild: GuildStore.getGuild(channel.guild_id),
                         inAppNotificationId: tmp2Result8.generateInAppNotificationId()
                       };
-                      const enqueueNotification = tmp7(10995).enqueueNotification;
+                      const enqueueNotification = tmp7(11115).enqueueNotification;
                       InAppNotificationActionCreatorsDefault;
                       tmp2Result7 = InAppNotificationUtils;
                       tmp2Result8 = InAppNotificationUtils;

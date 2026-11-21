@@ -1,10 +1,10 @@
-// Module ID: 11846
-// Function ID: 11847
+// Module ID: 11966
+// Function ID: 11967
 // Name: SocialLayerStorefrontMobileEmbedExperiment
 // Dependencies: [1450, 2]
 // Exports: getIsEligibleForSocialLayerStorefrontMobileEmbed
 
-// Module 11846 (SocialLayerStorefrontMobileEmbedExperiment)
+// Module 11966 (SocialLayerStorefrontMobileEmbedExperiment)
 import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 

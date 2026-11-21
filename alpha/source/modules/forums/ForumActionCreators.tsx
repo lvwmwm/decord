@@ -1,15 +1,15 @@
-// Module ID: 8502
-// Function ID: 8503
+// Module ID: 8622
+// Function ID: 8623
 // Name: ForumActionCreators
-// Dependencies: [5, 1071, 5741, 1112, 572, 1284, 8339, 8503, 8504, 8505, 8341, 2]
+// Dependencies: [5, 1071, 5860, 1112, 572, 1284, 8459, 8623, 8624, 8625, 8461, 2]
 
-// Module 8502 (ForumActionCreators)
+// Module 8622 (ForumActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl3 from "intl" /* 1112 */;
 import HTTPUtils from "HTTPUtils" /* 1284 */;
-import AnalyticsFeedItemSeenActionCreators from "AnalyticsFeedItemSeenActionCreators" /* 8503 */;
-import ForumChannelSeenManager from "ForumChannelSeenManager" /* 8504 */;
-import AnalyticsFeedItemSeenManager from "AnalyticsFeedItemSeenManager" /* 8505 */;
+import AnalyticsFeedItemSeenActionCreators from "AnalyticsFeedItemSeenActionCreators" /* 8623 */;
+import ForumChannelSeenManager from "ForumChannelSeenManager" /* 8624 */;
+import AnalyticsFeedItemSeenManager from "AnalyticsFeedItemSeenManager" /* 8625 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;

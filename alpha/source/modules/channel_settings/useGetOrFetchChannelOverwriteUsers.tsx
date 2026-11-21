@@ -1,16 +1,16 @@
-// Module ID: 18823
-// Function ID: 18824
+// Module ID: 18950
+// Function ID: 18951
 // Name: useGetOrFetchChannelOverwriteUsers
-// Dependencies: [32, 19, 4706, 1386, 2117, 504, 18824, 6392, 1254, 2]
+// Dependencies: [32, 19, 4825, 1386, 2117, 504, 18951, 6511, 1254, 2]
 // Exports: default
 
-// Module 18823 (useGetOrFetchChannelOverwriteUsers)
+// Module 18950 (useGetOrFetchChannelOverwriteUsers)
 import GlobalUtils from "GlobalUtils" /* 1254 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6392 */;
-import createAggregatorDefault from "createAggregator" /* 18824 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6511 */;
+import createAggregatorDefault from "createAggregator" /* 18951 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 4706 */;
+import GuildMemberStore from "GuildMemberStore" /* 4825 */;
 import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 

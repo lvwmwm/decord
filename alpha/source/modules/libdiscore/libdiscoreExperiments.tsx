@@ -1,14 +1,14 @@
-// Module ID: 4669
-// Function ID: 4670
+// Module ID: 4788
+// Function ID: 4789
 // Name: libdiscoreExperiments
-// Dependencies: [4670, 3, 1364, 38, 2]
+// Dependencies: [4789, 3, 1364, 38, 2]
 // Exports: clearLibdiscoreExperimentCache, isExperimentSyncDisabled
 
-// Module 4669 (libdiscoreExperiments)
+// Module 4788 (libdiscoreExperiments)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef38 from "module_38" /* 38 */;
 import shim from "shim" /* 1364 */;
-import BridgedStore from "BridgedStore" /* 4670 */;
+import BridgedStore from "BridgedStore" /* 4789 */;
 import size from "module_2" /* 2 */;
 
 let tmp;

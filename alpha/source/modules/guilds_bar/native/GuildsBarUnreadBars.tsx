@@ -1,22 +1,22 @@
-// Module ID: 17806
-// Function ID: 17807
+// Module ID: 17932
+// Function ID: 17933
 // Name: GuildsBarUnreadBars
-// Dependencies: [32, 19, 17, 6545, 4827, 6431, 17734, 16355, 21, 4794, 7329, 1628, 16346, 16357, 551, 558, 504, 1653, 1706, 17807, 2]
+// Dependencies: [32, 19, 17, 6664, 4946, 6550, 17860, 16478, 21, 4913, 7449, 1628, 16469, 16480, 551, 558, 504, 1653, 1706, 17933, 2]
 
-// Module 17806 (GuildsBarUnreadBars)
+// Module 17932 (GuildsBarUnreadBars)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import debounceDefault from "debounce" /* 551 */;
-import SortedGuildStore2 from "SortedGuildStore" /* 6431 */;
-import FastList from "FastList" /* 7329 */;
+import SortedGuildStore2 from "SortedGuildStore" /* 6550 */;
+import FastList from "FastList" /* 7449 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 6545 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4827 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 17734 */;
-import YouBarConstants from "YouBarConstants" /* 16355 */;
-import createStyles from "createStyles" /* 4794 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6664 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4946 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 17860 */;
+import YouBarConstants from "YouBarConstants" /* 16478 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const SortedGuildStore = SortedGuildStore2;
@@ -143,7 +143,7 @@ function findFirstOrLastMentionedItem(scrollPosValue, arg1, selectedGuildId, arg
               ({ section, item: item2 } = tmp4);
             }
             let type = tmp4.type;
-            if (tmp41(7329).FastListItemTypes.SECTION === type) {
+            if (tmp41(7449).FastListItemTypes.SECTION === type) {
               let node = guildsTree.getNode(tmp4.recyclerKey);
               let element = node;
               if (null != node) {
@@ -167,7 +167,7 @@ function findFirstOrLastMentionedItem(scrollPosValue, arg1, selectedGuildId, arg
               }
               continue;
             } else {
-              if (tmp41(7329).FastListItemTypes.ITEM === type) {
+              if (tmp41(7449).FastListItemTypes.ITEM === type) {
                 let node1 = guildsTree.getNode(tmp4.recyclerKey);
                 let tmp12 = node1;
                 if (null != node1) {
@@ -354,11 +354,11 @@ const memoResult = react.memo(function GuildsBarUnreadBars(fastList) {
   const tmp16 = closure_15();
   _require = tmp16;
   const top2 = tmp(1628)().top;
-  const tmp8Result = fastList(16346);
+  const tmp8Result = fastList(16469);
   const mobileQuestDockHeight = tmp8Result.useMobileQuestDockHeight();
   let num = 8;
-  const useYouBarTotalHeight = fastList(16357).useYouBarTotalHeight;
-  fastList(16357);
+  const useYouBarTotalHeight = fastList(16480).useYouBarTotalHeight;
+  fastList(16480);
   if (mobileQuestDockHeight > 0) {
     num = 0;
   }

@@ -1,28 +1,28 @@
-// Module ID: 17995
-// Function ID: 17996
+// Module ID: 18121
+// Function ID: 18122
 // Name: ICYMIJoinGuildsScreen
-// Dependencies: [5, 32, 19, 17, 4795, 4665, 17994, 1071, 21, 17965, 575, 7202, 12342, 1653, 5004, 7312, 504, 1412, 8903, 5481, 6910, 5385, 5392, 7412, 1112, 1628, 15519, 9923, 5476, 6310, 17980, 7370, 2]
+// Dependencies: [5, 32, 19, 17, 4914, 4784, 18120, 1071, 21, 18091, 575, 7322, 12464, 1653, 5123, 7432, 504, 1412, 9023, 5600, 7030, 5504, 5511, 7532, 1112, 1628, 15642, 10043, 5595, 6429, 18106, 7490, 2]
 // Exports: default
 
-// Module 17995 (ICYMIJoinGuildsScreen)
+// Module 18121 (ICYMIJoinGuildsScreen)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
-import GuildIcon from "GuildIcon" /* 7202 */;
-import ClipViewDefault from "ClipView" /* 8903 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 9923 */;
-import ServerIcon2 from "ServerIcon" /* 12342 */;
-import ICYMIAnalytics2 from "ICYMIAnalytics" /* 15519 */;
-import ICYMIInfoModalTypes from "ICYMIInfoModalTypes" /* 17980 */;
+import GuildIcon from "GuildIcon" /* 7322 */;
+import ClipViewDefault from "ClipView" /* 9023 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 10043 */;
+import ServerIcon2 from "ServerIcon" /* 12464 */;
+import ICYMIAnalytics2 from "ICYMIAnalytics" /* 15642 */;
+import ICYMIInfoModalTypes from "ICYMIInfoModalTypes" /* 18106 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4795 */;
-import GuildStore from "GuildStore" /* 4665 */;
-import ICYMIPopularGuildsStore from "ICYMIPopularGuildsStore" /* 17994 */;
+import AccessibilityStore from "AccessibilityStore" /* 4914 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import ICYMIPopularGuildsStore from "ICYMIPopularGuildsStore" /* 18120 */;
 import Fragment from "Fragment" /* 21 */;
-import createICYMIStyles from "createICYMIStyles" /* 17965 */;
+import createICYMIStyles from "createICYMIStyles" /* 18091 */;
 import size_mod from "module_2" /* 2 */;
 
 const GuildIconDefault = GuildIcon;
@@ -107,7 +107,7 @@ function SelectedServersRow(selectedGuilds) {
   const items2 = [closure_17, , , , ];
   const useAnimatedStyle = selectedGuilds(1653).useAnimatedStyle;
   const tmp8 = selectedGuilds(1653);
-  items2[1] = selectedGuilds(5004).withTiming;
+  items2[1] = selectedGuilds(5123).withTiming;
   items2[2] = selectedGuilds;
   items2[3] = 50;
   items2[4] = first(575);
@@ -146,7 +146,7 @@ function SelectedServersRow(selectedGuilds) {
   const View = tmp9(1653).View;
   let num = 3;
   obj2 = { ref, sections: items5, insetStart: first(575).space.PX_24, insetEnd: first(575).space.PX_12, renderItem: callback, estimatedListSize: "windowSize", itemSize: 50 + first(575).space.PX_12, horizontal: true, listId: "selected-servers-list", showsHorizontalScrollIndicator: false };
-  tmp9Result = first(7312);
+  tmp9Result = first(7432);
   if (selectedGuilds.length >= 3) {
     let num2 = 1;
     num = selectedGuilds.length + 1;
@@ -182,13 +182,13 @@ function CutoutGuildBanner(guild) {
   }
   const obj3 = { style: tmp.bannerImage, children: items3 };
   const obj4 = { cutouts: items1, children: tmp11Result };
-  size = { shape: guild(8903).CutoutShape.RoundedRect, x: 8, y: 46, width: 56, height: 56, cornerRadius: 20 };
+  size = { shape: guild(9023).CutoutShape.RoundedRect, x: 8, y: 46, width: 56, height: 56, cornerRadius: 20 };
   items1 = [size];
   const tmp13 = ClipViewDefault;
   const tmp9 = closure_13;
   if (null != guild.banner) {
     const obj5 = { style: tmp.bannerImage, source: animatableSourceWithFallback, resizeMode: "cover" };
-    tmp11Result = tmp11(tmp12(5481), obj5);
+    tmp11Result = tmp11(tmp12(5600), obj5);
   } else {
     const obj6 = { style: items2 };
     items2 = [, ];
@@ -196,7 +196,7 @@ function CutoutGuildBanner(guild) {
     tmp11Result = tmp11(tmp10, obj6);
   }
   items3 = [closure_12(tmp13, obj4), ];
-  const obj7 = { style: items4, guild, size: guild(7202).GuildIconSizes.LARGE, animate: !stateFromStores };
+  const obj7 = { style: items4, guild, size: guild(7322).GuildIconSizes.LARGE, animate: !stateFromStores };
   items4 = [, ];
   ({ guildIcon: arr5[0], guildIconBorder: arr5[1] } = tmp);
   const tmp12Result = GuildIconDefault;
@@ -220,21 +220,21 @@ function FeaturedServer(guild) {
     handlePress(guild);
   }, items1);
   const obj2 = { underlayColor: tmp.pressableUnderlayColor.backgroundColor, unstable_pressDelay: 50, style: tmp.featuredServerContainer, onPress: callback, children: null };
-  const PressableHighlight = guild(6910).PressableHighlight;
+  const PressableHighlight = guild(7030).PressableHighlight;
   const items2 = [closure_12(CutoutGuildBanner, { guild }), ];
   const obj3 = { style: tmp.featuredServerInnerContainer, children: null };
   const items3 = [, , ];
   const obj4 = { maxFontSizeMultiplier: 1, style: tmp.featuredServerTitle, variant: "body-md/semibold", color: "mobile-text-heading-primary", children: guild.name };
-  items3[0] = closure_12(guild(5385).Text, obj4);
+  items3[0] = closure_12(guild(5504).Text, obj4);
   const obj5 = { maxFontSizeMultiplier: 1, lineClamp: 2, variant: "body-xs/normal", color: "text-default", children: guild.description };
-  items3[1] = closure_12(guild(5385).Text, obj5);
+  items3[1] = closure_12(guild(5504).Text, obj5);
   const obj6 = { style: tmp.buttonContainer, children: null };
   const obj7 = { accessibilityHint: "checkbox", accessibilityState: { checked: selected }, disabled: stateFromStores, icon: tmp7Result, text: null, size: "sm", onPress: null, variant: null, grow: true };
   tmp7Result = undefined;
-  const Button = guild(5392).Button;
+  const Button = guild(5511).Button;
   if (selected) {
     const obj8 = { size: "sm", color: handlePress(575).colors.CONTROL_CONNECTED_TEXT_DEFAULT };
-    const CircleCheckIcon = tmp2(7412).CircleCheckIcon;
+    const CircleCheckIcon = tmp2(7532).CircleCheckIcon;
     tmp7Result = tmp7(CircleCheckIcon, obj8);
   }
   if (stateFromStores) {

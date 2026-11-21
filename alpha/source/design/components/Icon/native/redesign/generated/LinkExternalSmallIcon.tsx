@@ -1,14 +1,14 @@
-// Module ID: 12305
-// Function ID: 12306
+// Module ID: 12427
+// Function ID: 12428
 // Name: LinkExternalSmallIcon
-// Dependencies: [19, 21, 575, 5480, 12306, 2]
+// Dependencies: [19, 21, 575, 5599, 12428, 2]
 // Exports: LinkExternalSmallIcon
 
-// Module 12305 (LinkExternalSmallIcon)
+// Module 12427 (LinkExternalSmallIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5480 */;
-import AssetRegistry from "AssetRegistry" /* 12306 */;
+import BaseIconImage2 from "BaseIconImage" /* 5599 */;
+import AssetRegistry from "AssetRegistry" /* 12428 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

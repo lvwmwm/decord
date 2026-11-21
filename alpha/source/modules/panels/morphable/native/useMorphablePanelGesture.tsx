@@ -1,14 +1,14 @@
-// Module ID: 19059
-// Function ID: 19060
+// Module ID: 19186
+// Function ID: 19187
 // Name: useMorphablePanelGesture
-// Dependencies: [19, 11631, 1494, 1628, 1653, 5054, 11634, 19057, 1706, 19060, 5010, 2]
+// Dependencies: [19, 11751, 1494, 1628, 1653, 5173, 11754, 19184, 1706, 19187, 5129, 2]
 // Exports: default
 
-// Module 19059 (useMorphablePanelGesture)
-import LegacyBaseButton from "LegacyBaseButton" /* 5054 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11634 */;
+// Module 19186 (useMorphablePanelGesture)
+import LegacyBaseButton from "LegacyBaseButton" /* 5173 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11754 */;
 import react from "react" /* 19 */;
-import MorphablePanelConstants from "MorphablePanelConstants" /* 11631 */;
+import MorphablePanelConstants from "MorphablePanelConstants" /* 11751 */;
 import size from "module_2" /* 2 */;
 
 let set, set2;
@@ -22,9 +22,9 @@ let metroImportDefault;
 let tmp;
 let tmp7;
 const _mod1706 = tmp(1706);
-const HapticUtils = tmp(5010);
-const MorphablePanelUtils = tmp(19057);
-const triggerIOSHapticDefault = tmp7(19060);
+const HapticUtils = tmp(5129);
+const MorphablePanelUtils = tmp(19184);
+const triggerIOSHapticDefault = tmp7(19187);
 ({ IS_IOS: closure_4, MIN_PAN_GESTURE_MOVE: hasOwnProperty, MorphablePanelModes } = MorphablePanelConstants);
 ({ PANEL_TAP_GESTURE_MAX_DISTANCE: metroImportDefault, PIP_POP_HEIGHT: metroImportAll, POP_RESISTANCE: c9 } = MorphablePanelConstants);
 let closure_10 = { code: "(function useMorphablePanelGestureTsx1(){let[onTapGestureStart]=this.__closure;var _onTapGestureStart;(_onTapGestureStart=onTapGestureStart)===null||_onTapGestureStart===void 0||_onTapGestureStart();})" };

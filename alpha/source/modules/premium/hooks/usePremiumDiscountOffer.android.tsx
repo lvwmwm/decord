@@ -1,14 +1,14 @@
-// Module ID: 8742
-// Function ID: 8743
+// Module ID: 8862
+// Function ID: 8863
 // Name: usePremiumDiscountOffer
-// Dependencies: [8731, 1388, 8743, 8050, 563, 2]
+// Dependencies: [8851, 1388, 8863, 8170, 563, 2]
 // Exports: usePremiumDiscountOffer
 
-// Module 8742 (usePremiumDiscountOffer)
+// Module 8862 (usePremiumDiscountOffer)
 import useStateFromStores from "useStateFromStores" /* 563 */;
-import ProductIds from "ProductIds" /* 8050 */;
-import useDiscountOfferDefault from "useDiscountOffer" /* 8743 */;
-import IAPStore from "IAPStore" /* 8731 */;
+import ProductIds from "ProductIds" /* 8170 */;
+import useDiscountOfferDefault from "useDiscountOffer" /* 8863 */;
+import IAPStore from "IAPStore" /* 8851 */;
 import PremiumConstants from "PremiumConstants" /* 1388 */;
 import size from "module_2" /* 2 */;
 
@@ -18,7 +18,7 @@ let hasOwnProperty;
 const result = size.fileFinishedImporting("modules/premium/hooks/usePremiumDiscountOffer.android.tsx");
 
 export function usePremiumDiscountOffer() {
-  const f93648 = (item) => offerIds.has(item);
+  const f94034 = (item) => offerIds.has(item);
   let obj = useStateFromStores;
   const items = [IAPStore];
   const offerIds = obj.useStateFromStoresObject(items, () => {
@@ -30,7 +30,7 @@ export function usePremiumDiscountOffer() {
   let tmp5 = null;
   if (0 !== values.length) {
     let tmp6 = null;
-    if (values.every(f93648)) {
+    if (values.every(f94034)) {
       tmp6 = tmp4;
     }
     tmp5 = tmp6;
@@ -40,7 +40,7 @@ export function usePremiumDiscountOffer() {
   let tmp8 = null;
   if (0 !== values2.length) {
     let tmp9 = null;
-    if (values2.every(f93648)) {
+    if (values2.every(f94034)) {
       tmp9 = tmp7;
     }
     tmp8 = tmp9;

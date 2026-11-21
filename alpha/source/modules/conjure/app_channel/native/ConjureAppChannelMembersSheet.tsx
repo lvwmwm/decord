@@ -1,15 +1,15 @@
-// Module ID: 14268
-// Function ID: 14269
+// Module ID: 14390
+// Function ID: 14391
 // Name: ConjureAppChannelMembersSheet
-// Dependencies: [19, 4643, 9537, 21, 4794, 504, 14267, 5022, 11925, 2]
+// Dependencies: [19, 4762, 9657, 21, 4913, 504, 14389, 5141, 12045, 2]
 
-// Module 14268 (ConjureAppChannelMembersSheet)
+// Module 14390 (ConjureAppChannelMembersSheet)
 import Fragment from "Fragment" /* 21 */;
-import openConjureAppChannelSheet from "openConjureAppChannelSheet" /* 14267 */;
+import openConjureAppChannelSheet from "openConjureAppChannelSheet" /* 14389 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4643 */;
-import UsersFastListConstants from "UsersFastListConstants" /* 9537 */;
-import createStyles from "createStyles" /* 4794 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import UsersFastListConstants from "UsersFastListConstants" /* 9657 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let USERS_LIST_PADDING_BETWEEN_SECTIONS;
@@ -40,7 +40,7 @@ const memoResult = react.memo(function ConjureAppChannelMembersSheet(channelId) 
   }, items2);
   let tmp7 = null;
   if (null != guild_id) {
-    const BottomSheet = tmp2(5022).BottomSheet;
+    const BottomSheet = tmp2(5141).BottomSheet;
     tmp7 = <BottomSheet startExpanded scrollable bodyStyles={tmp.body}>{null}</BottomSheet>;
   }
   return tmp7;

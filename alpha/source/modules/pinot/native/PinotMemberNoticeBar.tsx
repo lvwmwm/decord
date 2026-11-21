@@ -1,20 +1,20 @@
-// Module ID: 11756
-// Function ID: 11757
+// Module ID: 11876
+// Function ID: 11877
 // Name: PinotMemberNoticeBar
-// Dependencies: [19, 17, 1071, 21, 4794, 575, 11746, 5473, 2186, 5385, 1112, 3409, 6910, 7031, 2]
+// Dependencies: [19, 17, 1071, 21, 4913, 575, 11866, 5592, 2187, 5504, 1112, 3508, 7030, 7151, 2]
 // Exports: PinotMemberNoticeBar
 
-// Module 11756 (PinotMemberNoticeBar)
+// Module 11876 (PinotMemberNoticeBar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2186 */;
-import Text_Text from "Text/Text" /* 5385 */;
-import LinkingDefault from "Linking" /* 5473 */;
-import PinotAnalytics from "PinotAnalytics" /* 11746 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2187 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import LinkingDefault from "Linking" /* 5592 */;
+import PinotAnalytics from "PinotAnalytics" /* 11866 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -63,8 +63,8 @@ export function PinotMemberNoticeBar(channel) {
   }, items);
   let obj = { style: tmp.underlay, children: closure_7(View, obj2) };
   obj2 = { style: tmp.bar, children: items1 };
-  let obj3 = { variant: "body-sm/normal", color: "text-default", style: tmp.text, children: intl.format(onDismiss(3409).Jry6Gr, obj4) };
-  const Text = channel(5385).Text;
+  let obj3 = { variant: "body-sm/normal", color: "text-default", style: tmp.text, children: intl.format(onDismiss(3508).Jry6Gr, obj4) };
+  const Text = channel(5504).Text;
   intl = channel(1112).intl;
   obj4 = {
     learnMoreHook(children, arg1) {
@@ -83,9 +83,9 @@ export function PinotMemberNoticeBar(channel) {
       const result = obj.trackPinotNoticeAction(obj2, "dismiss");
       onDismiss();
     },
-    children: closure_6(channel(7031).XSmallIcon, { size: "sm", color: "icon-muted" })
+    children: closure_6(channel(7151).XSmallIcon, { size: "sm", color: "icon-muted" })
   };
-  const PressableOpacity = channel(6910).PressableOpacity;
+  const PressableOpacity = channel(7030).PressableOpacity;
   intl2 = channel(1112).intl;
   items1[1] = closure_6(PressableOpacity, obj5);
   return closure_6(View, obj);

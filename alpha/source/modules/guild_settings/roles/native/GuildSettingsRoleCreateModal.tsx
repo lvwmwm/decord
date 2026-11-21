@@ -1,38 +1,38 @@
-// Module ID: 19708
-// Function ID: 19709
+// Module ID: 19835
+// Function ID: 19836
 // Name: GuildSettingsRoleCreateModal
-// Dependencies: [5, 32, 19, 17, 4661, 4700, 1386, 7875, 19709, 1071, 21, 4794, 5348, 575, 1255, 5531, 5385, 1112, 19707, 504, 38, 4731, 1500, 7125, 6975, 6392, 5475, 19706, 5008, 17743, 2119, 5810, 7101, 7228, 6925, 15719, 1089, 5392, 19713, 19714, 7874, 19715, 5369, 5024, 5804, 7070, 5355, 6972, 2]
+// Dependencies: [5, 32, 19, 17, 4780, 4819, 1386, 7995, 19836, 1071, 21, 4913, 5467, 575, 1255, 5650, 5504, 1112, 19834, 504, 38, 4850, 1500, 7245, 7095, 6511, 5594, 19833, 5127, 17869, 2119, 5929, 7221, 7348, 7045, 15842, 1089, 5511, 19840, 19841, 7994, 19842, 5488, 5143, 5923, 7190, 5474, 7092, 2]
 // Exports: default
 
-// Module 19708 (GuildSettingsRoleCreateModal)
+// Module 19835 (GuildSettingsRoleCreateModal)
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 575 */;
 import intl9 from "intl" /* 1112 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import asyncRequire from "asyncRequire" /* 2119 */;
-import GuildRecord from "GuildRecord" /* 4661 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4731 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5008 */;
-import NavigatorConstants from "NavigatorConstants" /* 5348 */;
-import useMountEffectDefault from "useMountEffect" /* 5355 */;
-import Text_Text from "Text/Text" /* 5385 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5531 */;
-import react_native from "react-native" /* 5804 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6392 */;
-import NavigatorHeader from "NavigatorHeader" /* 6975 */;
-import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 7874 */;
-import GuildSettingsRoleCreateModalActionCreatorsDefault from "GuildSettingsRoleCreateModalActionCreators" /* 19707 */;
+import GuildRecord from "GuildRecord" /* 4780 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4850 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
+import NavigatorConstants from "NavigatorConstants" /* 5467 */;
+import useMountEffectDefault from "useMountEffect" /* 5474 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5650 */;
+import react_native from "react-native" /* 5923 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6511 */;
+import NavigatorHeader from "NavigatorHeader" /* 7095 */;
+import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 7994 */;
+import GuildSettingsRoleCreateModalActionCreatorsDefault from "GuildSettingsRoleCreateModalActionCreators" /* 19834 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
-import GuildRoleStore from "GuildRoleStore" /* 4700 */;
+import GuildRoleStore from "GuildRoleStore" /* 4819 */;
 import UserStore from "UserStore" /* 1386 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 7875 */;
-import GuildSettingsRoleConstants from "GuildSettingsRoleConstants" /* 19709 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 7995 */;
+import GuildSettingsRoleConstants from "GuildSettingsRoleConstants" /* 19836 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let c4, currentUser, navigation, role, roles;
@@ -53,8 +53,8 @@ let obj2;
 let obj3;
 let obj4;
 let obj5;
-const f118472 = () => props.getProps().guild;
-const f118473 = () => props.getProps();
+const f118875 = () => props.getProps().guild;
+const f118876 = () => props.getProps();
 function RoleCreateScene() {
   let Button;
   let TableRow;
@@ -86,7 +86,7 @@ function RoleCreateScene() {
   navigation = obj.useNavigation();
   let obj2 = navigation(color[19]);
   const items = [GuildSettingsStore];
-  const stateFromStores = obj2.useStateFromStores(items, f118472);
+  const stateFromStores = obj2.useStateFromStores(items, f118875);
   stateFromStores(color[20])(null != stateFromStores, "useGuildSettingsStoreGuild: Guild cannot be null");
   const useState = onSelect.useState;
   const intl = navigation(color[17]).intl;
@@ -257,7 +257,7 @@ function RoleCreateScene() {
     metroImportAll.dismiss();
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { color, onSelect };
-    obj.openLazy(asyncRequire(17743, dependencyMap.paths), "RoleColorPicker", obj2);
+    obj.openLazy(asyncRequire(17869, dependencyMap.paths), "RoleColorPicker", obj2);
   }, items3);
   let tmp17 = closure_22;
   intl2 = navigation(color[17]).intl;
@@ -317,7 +317,7 @@ function RolePermissionTemplate() {
   navigation = obj.useNavigation();
   let obj2 = navigation(onSelect[19]);
   const items = [GuildSettingsStore];
-  const stateFromStoresObject = obj2.useStateFromStoresObject(items, f118473);
+  const stateFromStoresObject = obj2.useStateFromStoresObject(items, f118876);
   const guild = stateFromStoresObject.guild;
   const selectedRoleId = stateFromStoresObject.selectedRoleId;
   let tmp4 = stateFromStores(onSelect[20])(null != guild, "useGuildSettingsStoreGuildWithRole: Guild cannot be null");
@@ -409,7 +409,7 @@ function RoleMembers() {
   navigation = obj.useNavigation();
   let obj2 = navigation(pendingAdditions[19]);
   const items = [GuildSettingsStore];
-  const stateFromStoresObject = obj2.useStateFromStoresObject(items, f118473);
+  const stateFromStoresObject = obj2.useStateFromStoresObject(items, f118876);
   const guild = stateFromStoresObject.guild;
   const selectedRoleId = stateFromStoresObject.selectedRoleId;
   stateFromStores(pendingAdditions[20])(null != guild, "useGuildSettingsStoreGuildWithRole: Guild cannot be null");
@@ -533,7 +533,7 @@ function ModalScene(hasSkipButton) {
   navigation = obj.useNavigation();
   let obj2 = navigation(ref[19]);
   const items = [GuildSettingsStore];
-  stateFromStores = obj2.useStateFromStores(items, f118472);
+  stateFromStores = obj2.useStateFromStores(items, f118875);
   stateFromStores(ref[20])(null != stateFromStores, "useGuildSettingsStoreGuild: Guild cannot be null");
   let obj3 = navigation(ref[43]);
   const isScreenReaderEnabled = obj3.useIsScreenReaderEnabled();
@@ -632,7 +632,7 @@ export default function GuildSettingsRoleCreateModal() {
   let stateFromStores;
   let obj = stateFromStores(504);
   const items = [GuildSettingsStore];
-  stateFromStores = obj.useStateFromStores(items, f118472);
+  stateFromStores = obj.useStateFromStores(items, f118875);
   const tmp2 = _modDef38(null != stateFromStores, "useGuildSettingsStoreGuild: Guild cannot be null");
   useMountEffectDefault(() => {
     const FLOW_INITIALIZED = constants.FLOW_INITIALIZED;
@@ -647,5 +647,5 @@ export default function GuildSettingsRoleCreateModal() {
     track(USER_FLOW_TRANSITION, obj);
   });
   let obj2 = { screens, initialRouteName: obj6.STEP_DISPLAY };
-  return closure_21(stateFromStores(6972).Navigator, obj2);
+  return closure_21(stateFromStores(7092).Navigator, obj2);
 };

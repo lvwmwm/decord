@@ -1,12 +1,12 @@
-// Module ID: 12637
-// Function ID: 12638
+// Module ID: 12759
+// Function ID: 12760
 // Name: CheckpointRankTag
-// Dependencies: [19, 21, 12638, 2]
+// Dependencies: [19, 21, 12760, 2]
 // Exports: default
 
-// Module 12637 (CheckpointRankTag)
+// Module 12759 (CheckpointRankTag)
 import Fragment from "Fragment" /* 21 */;
-import CheckpointTagDefault from "CheckpointTag" /* 12638 */;
+import CheckpointTagDefault from "CheckpointTag" /* 12760 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

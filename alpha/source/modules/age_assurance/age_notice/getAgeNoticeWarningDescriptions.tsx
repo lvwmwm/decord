@@ -1,14 +1,14 @@
-// Module ID: 6302
-// Function ID: 6303
+// Module ID: 6421
+// Function ID: 6422
 // Name: getAgeNoticeWarningDescriptions
-// Dependencies: [6303, 1112, 6304, 3377, 2]
+// Dependencies: [6422, 1112, 6423, 3476, 2]
 // Exports: getAgeNoticeServerDescriptions, getAgeNoticeWarningDescriptions
 
-// Module 6302 (getAgeNoticeWarningDescriptions)
+// Module 6421 (getAgeNoticeWarningDescriptions)
 import intl6 from "intl" /* 1112 */;
-import _modDef3377 from "module_3377" /* 3377 */;
-import AgeNoticeExperiment from "AgeNoticeExperiment" /* 6304 */;
-import AgeNoticeConstants from "AgeNoticeConstants" /* 6303 */;
+import _modDef3476 from "module_3476" /* 3476 */;
+import AgeNoticeExperiment from "AgeNoticeExperiment" /* 6423 */;
+import AgeNoticeConstants from "AgeNoticeConstants" /* 6422 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -43,13 +43,13 @@ export function getAgeNoticeWarningDescriptions(tmp4Result, guildName) {
       tmp7 = obj2;
     } else {
       const obj3 = { guildName };
-      obj2.adult = intl.formatToPlainString(_modDef3377.iK0n30, obj3);
+      obj2.adult = intl.formatToPlainString(_modDef3476.iK0n30, obj3);
       const intl2 = tmp2(1112).intl;
       const obj4 = { guildName };
-      obj2.teen = intl2.formatToPlainString(_modDef3377.ezJA0R, obj4);
+      obj2.teen = intl2.formatToPlainString(_modDef3476.ezJA0R, obj4);
       const intl3 = tmp2(1112).intl;
       const obj5 = { guildName };
-      obj2.unverified = intl3.formatToPlainString(_modDef3377.h4HbnI, obj5);
+      obj2.unverified = intl3.formatToPlainString(_modDef3476.h4HbnI, obj5);
       tmp7 = obj2;
     }
     tmp4 = tmp7;

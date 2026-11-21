@@ -1,24 +1,24 @@
-// Module ID: 12242
-// Function ID: 12243
+// Module ID: 12364
+// Function ID: 12365
 // Name: ModerateUserActionSheet
-// Dependencies: [19, 4706, 4665, 4726, 1386, 1071, 21, 4794, 504, 12243, 10395, 5824, 5008, 7435, 1112, 10251, 6310, 12244, 2119, 12241, 4713, 12268, 12248, 5488, 12270, 12272, 12274, 5022, 7395, 12276, 7228, 2]
+// Dependencies: [19, 4825, 4784, 4845, 1386, 1071, 21, 4913, 504, 12365, 10515, 5943, 5127, 7555, 1112, 10371, 6429, 12366, 2119, 12363, 4832, 12390, 12370, 5607, 12392, 12394, 12396, 5141, 7515, 12398, 7348, 2]
 
-// Module 12242 (ModerateUserActionSheet)
+// Module 12364 (ModerateUserActionSheet)
 import Constants from "Constants" /* 1071 */;
 import asyncRequire from "asyncRequire" /* 2119 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6310 */;
-import useCanToggleCommunicationDisableOnUser from "useCanToggleCommunicationDisableOnUser" /* 10395 */;
-import GuildMemberUtils from "GuildMemberUtils" /* 12243 */;
-import GuildDisableCommunicationActionCreators from "GuildDisableCommunicationActionCreators" /* 12248 */;
-import showKickConfirmModalDefault from "showKickConfirmModal" /* 12270 */;
-import showBanConfirmModalDefault from "showBanConfirmModal" /* 12274 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6429 */;
+import useCanToggleCommunicationDisableOnUser from "useCanToggleCommunicationDisableOnUser" /* 10515 */;
+import GuildMemberUtils from "GuildMemberUtils" /* 12365 */;
+import GuildDisableCommunicationActionCreators from "GuildDisableCommunicationActionCreators" /* 12370 */;
+import showKickConfirmModalDefault from "showKickConfirmModal" /* 12392 */;
+import showBanConfirmModalDefault from "showBanConfirmModal" /* 12396 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 4706 */;
-import GuildStore from "GuildStore" /* 4665 */;
-import PermissionStore from "PermissionStore" /* 4726 */;
+import GuildMemberStore from "GuildMemberStore" /* 4825 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
 import UserStore from "UserStore" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4794 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -129,7 +129,7 @@ const memoResult = react.memo(function ModerateUserActionSheet(user) {
                       arr.pop();
                     }
                   };
-                  obj.pushLazy(asyncRequire(12244, dependencyMap.paths), obj2);
+                  obj.pushLazy(asyncRequire(12366, dependencyMap.paths), obj2);
                 }
         };
         const ActionSheetRow = tmp2(tmp3[13]).ActionSheetRow;

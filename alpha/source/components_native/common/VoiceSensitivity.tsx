@@ -1,26 +1,26 @@
-// Module ID: 10849
-// Function ID: 10850
+// Module ID: 10969
+// Function ID: 10970
 // Name: VoiceSensitivity
-// Dependencies: [5, 32, 19, 17, 2131, 6416, 2118, 1071, 6377, 21, 4794, 575, 4791, 1494, 504, 7675, 5560, 4803, 1112, 1186, 7589, 10850, 1378, 2]
+// Dependencies: [5, 32, 19, 17, 2131, 6535, 2118, 1071, 6496, 21, 4913, 575, 4910, 1494, 504, 7795, 5679, 4922, 1112, 1186, 7709, 10970, 1378, 2]
 // Exports: default
 
-// Module 10849 (VoiceSensitivity)
+// Module 10969 (VoiceSensitivity)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl5 from "intl" /* 1112 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4803 */;
-import BaseConnectionEvent from "BaseConnectionEvent" /* 5560 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 6377 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4922 */;
+import BaseConnectionEvent from "BaseConnectionEvent" /* 5679 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 6496 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import MediaEngineStore from "MediaEngineStore" /* 2131 */;
-import SpeakingStore from "SpeakingStore" /* 6416 */;
+import SpeakingStore from "SpeakingStore" /* 6535 */;
 import AppStateStore from "AppStateStore" /* 2118 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4794 */;
-import ColorUtils_mod from "ColorUtils" /* 4791 */;
+import createStyles_mod from "createStyles" /* 4913 */;
+import ColorUtils_mod from "ColorUtils" /* 4910 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2;

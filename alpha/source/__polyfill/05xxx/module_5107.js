@@ -1,28 +1,55 @@
 // Module ID: 5107
 // Function ID: 5108
-// Dependencies: [19, 5090, 5102]
-// Exports: useViewRefHandler
+// Dependencies: [19, 5108, 5109]
+// Exports: usePortal
 
 // Module 5107
+import ACTIONS from "ACTIONS" /* 5109 */;
 import react from "react" /* 19 */;
-import react_nativeDefault from "react-native" /* 5090 */;
-import assignRef from "assignRef" /* 5102 */;
 
-const useCallback = react.useCallback;
+let dependencyMap;
 
-export function useViewRefHandler(current, detectorUpdater) {
-  const items = [current, detectorUpdater];
-  return useCallback((viewRef) => {
-    if (null !== viewRef) {
-      current.viewRef = viewRef;
-      if (-1 === current.previousViewTag) {
-        const tmp4 = react_nativeDefault;
-        const obj = assignRef;
-        current.previousViewTag = tmp4(obj.resolveHostInstance(current.viewRef));
-      }
-      if (!current.firstRender) {
-        detectorUpdater(true);
-      }
-    }
-  }, items);
-}
+let c2;
+let c3;
+({ useCallback: c2, useContext: c3 } = react);
+
+export const usePortal = function() {
+  let closure_1;
+  let str = arg0;
+  if (arg0 === undefined) {
+    str = "root";
+  }
+  const tmp = closure_3(str(5108).PortalDispatchContext);
+  dependencyMap = tmp;
+  if (null === tmp) {
+    const _Error = Error;
+    const self = this;
+    const self2 = this;
+    const error = new Error("'PortalDispatchContext' cannot be null, please add 'PortalProvider' to the root component.");
+    throw error;
+  } else {
+    const tmp3 = closure_2(() => {
+      const obj = { type: ACTIONS.ACTIONS.REGISTER_HOST, hostName: str };
+      closure_1(obj);
+    }, []);
+    const tmp4 = closure_2(() => {
+      const obj = { type: ACTIONS.ACTIONS.DEREGISTER_HOST, hostName: str };
+      closure_1(obj);
+    }, []);
+    const tmp5 = closure_2((portalName, node) => {
+      const obj = { type: ACTIONS.ACTIONS.ADD_UPDATE_PORTAL, hostName: str, portalName, node };
+      closure_1(obj);
+    }, []);
+    let obj = {
+      registerHost: tmp3,
+      deregisterHost: tmp4,
+      addPortal: tmp5,
+      updatePortal: tmp5,
+      removePortal: closure_2((portalName) => {
+          const obj = { type: ACTIONS.ACTIONS.REMOVE_PORTAL, hostName: str, portalName };
+          closure_1(obj);
+        }, [])
+    };
+    return obj;
+  }
+};

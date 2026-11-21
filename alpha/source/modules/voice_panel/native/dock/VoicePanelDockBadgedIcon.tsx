@@ -1,18 +1,18 @@
-// Module ID: 17885
-// Function ID: 17886
+// Module ID: 18011
+// Function ID: 18012
 // Name: VoicePanelDockBadgedIcon
-// Dependencies: [19, 17, 11648, 21, 1186, 17780, 4794, 4855, 5004, 1706, 1653, 8903, 2]
+// Dependencies: [19, 17, 11768, 21, 1186, 17906, 4913, 4974, 5123, 1706, 1653, 9023, 2]
 // Exports: default
 
-// Module 17885 (VoicePanelDockBadgedIcon)
+// Module 18011 (VoicePanelDockBadgedIcon)
 import react_native from "react-native" /* 17 */;
 import native from "native" /* 1186 */;
-import native2 from "native" /* 4855 */;
+import native2 from "native" /* 4974 */;
 import react from "react" /* 19 */;
-import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11648 */;
+import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11768 */;
 import Fragment from "Fragment" /* 21 */;
-import GuildsBarActivityIndicator from "GuildsBarActivityIndicator" /* 17780 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import GuildsBarActivityIndicator from "GuildsBarActivityIndicator" /* 17906 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let set, set2, tmp2;
@@ -26,7 +26,7 @@ let obj2;
 let size;
 let tmp;
 const _mod1706 = tmp(1706);
-const timing_timing = tmp(5004);
+const timing_timing = tmp(5123);
 function StreamBadge(progress) {
   let items1;
   let tmp3Result;
@@ -180,7 +180,7 @@ export default function VoicePanelDockBadgedIcon(streaming) {
   items2[4] = sharedValue(1653).Extrapolation;
   items2[5] = 0.8;
   items2[6] = sum2;
-  items2[7] = sharedValue(8903).CutoutShape;
+  items2[7] = sharedValue(9023).CutoutShape;
   items2[8] = closure_10;
   items2[9] = closure_11;
   items2[10] = closure_9;
@@ -225,8 +225,8 @@ export default function VoicePanelDockBadgedIcon(streaming) {
     return hasOwnProperty(StreamBadge, obj, arg0);
   }, items4);
   let obj = { style: tmp.clip, animatedProps, children };
-  const items5 = [closure_5(tmp2(8903).ClipViewAnimated, obj), ];
-  const TransitionItem = tmp2(4855).TransitionItem;
+  const items5 = [closure_5(tmp2(9023).ClipViewAnimated, obj), ];
+  const TransitionItem = tmp2(4974).TransitionItem;
   let obj2 = { children: items5 };
   items5[1] = closure_5(TransitionItem, { item: streaming, renderItem: callback });
   return closure_7(RoundedRect, obj2);

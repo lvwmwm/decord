@@ -1,18 +1,18 @@
-// Module ID: 14132
-// Function ID: 14133
+// Module ID: 14254
+// Function ID: 14255
 // Name: ProductDetailsActionSheetSkeleton
-// Dependencies: [19, 17, 21, 4794, 575, 5398, 1653, 5004, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 5517, 1653, 5123, 2]
 // Exports: default
 
-// Module 14132 (ProductDetailsActionSheetSkeleton)
+// Module 14254 (ProductDetailsActionSheetSkeleton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1653 from "module_1653" /* 1653 */;
-import timing_timing from "timing/timing" /* 5004 */;
-import ButtonConstants from "ButtonConstants" /* 5398 */;
+import timing_timing from "timing/timing" /* 5123 */;
+import ButtonConstants from "ButtonConstants" /* 5517 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 const _modDef1653 = _mod1653;

@@ -1,29 +1,53 @@
 // Module ID: 5334
 // Function ID: 5335
 // Name: react
-// Dependencies: [19, 5286]
-// Exports: useMappingHelper
+// Dependencies: [19, 1653]
+// Exports: useReactiveSharedValue
 
 // Module 5334 (react)
 import react from "react" /* 19 */;
-import react2 from "react" /* 5286 */;
 
-const useCallback = react.useCallback;
+const require = globalThis.__r;
+let _require;
 
-export const useMappingHelper = () => {
-  let items;
-  const obj = react2;
-  const recyclerViewContext = obj.useRecyclerViewContext();
-  const obj2 = {
-    getMappingKey: useCallback((arg0, arg1) => {
-      let tmp = arg0;
-      const tmp2 = recyclerViewContext;
-      if (tmp2) {
-        tmp = arg1;
+let c2;
+let c3;
+({ useEffect: c2, useRef: c3 } = react);
+
+export const useReactiveSharedValue = (current) => {
+  let closure_0;
+  const tmp = closure_3(null);
+  const tmp2 = closure_3(null);
+  _require = tmp2;
+  const tmp3 = current && typeof current === "object" && "value" in current;
+  if (!tmp3) {
+    if (null === tmp2.current) {
+      let mutable;
+      tmp.current = current;
+      if (typeof current === "object") {
+        let obj = {};
+        const makeMutable = require("module_1653").makeMutable;
+        require("module_1653");
+        const merged = Object.assign(current);
+        mutable = makeMutable(obj);
+      } else {
+        const obj2 = require("module_1653");
+        mutable = obj2.makeMutable(current);
       }
-      return tmp;
-    }, items)
-  };
-  items = [recyclerViewContext];
-  return obj2;
+      tmp2.current = mutable;
+    } else if (tmp.current !== current) {
+      tmp2.current.value = current;
+    }
+  }
+  closure_2(() => {
+    let ref;
+    return () => {
+      if (ref.current) {
+        const obj = ref(dependencyMap[1]);
+        obj.cancelAnimation(tmp.current);
+      }
+    };
+  }, []);
+  current = tmp2.current;
+  return current;
 };

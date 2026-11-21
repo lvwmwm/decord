@@ -1,19 +1,19 @@
-// Module ID: 12422
-// Function ID: 12423
+// Module ID: 12544
+// Function ID: 12545
 // Name: CheckpointCharacterStage
-// Dependencies: [32, 19, 17, 12370, 21, 4794, 12384, 1494, 504, 5373, 12423, 12589, 12591, 12592, 12594, 12595, 12596, 6219, 12597, 6216, 4861, 2]
+// Dependencies: [32, 19, 17, 12492, 21, 4913, 12506, 1494, 504, 5492, 12545, 12711, 12713, 12714, 12716, 12717, 12718, 6338, 12719, 6335, 4980, 2]
 // Exports: default
 
-// Module 12422 (CheckpointCharacterStage)
+// Module 12544 (CheckpointCharacterStage)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
-import CheckpointCharacterTextureUtils from "CheckpointCharacterTextureUtils" /* 12423 */;
-import CheckpointCharacterDataBinding from "CheckpointCharacterDataBinding" /* 12589 */;
+import CheckpointCharacterTextureUtils from "CheckpointCharacterTextureUtils" /* 12545 */;
+import CheckpointCharacterDataBinding from "CheckpointCharacterDataBinding" /* 12711 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import CheckpointStore from "CheckpointStore" /* 12370 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import CheckpointStore from "CheckpointStore" /* 12492 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;

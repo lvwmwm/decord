@@ -1,10 +1,10 @@
-// Module ID: 4625
-// Function ID: 4626
+// Module ID: 4744
+// Function ID: 4745
 // Name: UserSettingsProtoUtils
 // Dependencies: [1233, 2]
 // Exports: createModifiedProto, getProtoFieldClass
 
-// Module 4625 (UserSettingsProtoUtils)
+// Module 4744 (UserSettingsProtoUtils)
 import ProtoUtils from "ProtoUtils" /* 1233 */;
 import size from "module_2" /* 2 */;
 

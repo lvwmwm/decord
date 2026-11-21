@@ -1,27 +1,27 @@
-// Module ID: 14199
-// Function ID: 14200
+// Module ID: 14321
+// Function ID: 14322
 // Name: GameOrganizationInviteEmbed
-// Dependencies: [11775, 4665, 10293, 11776, 8318, 8560, 1112, 2559, 8553, 575, 8125, 7338, 14200, 12104, 11938, 11969, 6919, 4791, 2]
+// Dependencies: [11895, 4784, 10413, 11896, 8438, 8680, 1112, 2639, 8673, 575, 8245, 7458, 14322, 12226, 12058, 12089, 7039, 4910, 2]
 // Exports: createGameOrganizationInviteEmbed
 
-// Module 14199 (GameOrganizationInviteEmbed)
+// Module 14321 (GameOrganizationInviteEmbed)
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1112 */;
-import _modDef2559 from "module_2559" /* 2559 */;
-import ColorUtils from "ColorUtils" /* 4791 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6919 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 7338 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8125 */;
-import Constants from "Constants" /* 8318 */;
-import react_native from "react-native" /* 8553 */;
-import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8560 */;
-import CodedLinksConstants from "CodedLinksConstants" /* 10293 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11776 */;
-import isGameOrganizationFullDefault from "isGameOrganizationFull" /* 11938 */;
-import canGoToGameOrganizationGuildDefault from "canGoToGameOrganizationGuild" /* 12104 */;
-import getGameOrganizationInviteCtaStateDefault from "getGameOrganizationInviteCtaState" /* 14200 */;
-import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 11775 */;
-import GuildStore from "GuildStore" /* 4665 */;
+import _modDef2639 from "module_2639" /* 2639 */;
+import ColorUtils from "ColorUtils" /* 4910 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7039 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 7458 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8245 */;
+import Constants from "Constants" /* 8438 */;
+import react_native from "react-native" /* 8673 */;
+import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8680 */;
+import CodedLinksConstants from "CodedLinksConstants" /* 10413 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11896 */;
+import isGameOrganizationFullDefault from "isGameOrganizationFull" /* 12058 */;
+import canGoToGameOrganizationGuildDefault from "canGoToGameOrganizationGuild" /* 12226 */;
+import getGameOrganizationInviteCtaStateDefault from "getGameOrganizationInviteCtaState" /* 14322 */;
+import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 11895 */;
+import GuildStore from "GuildStore" /* 4784 */;
 import size from "module_2" /* 2 */;
 
 const CodedLinkExtendedType = CodedLinksConstants.CodedLinkExtendedType;
@@ -74,7 +74,7 @@ export function createGameOrganizationInviteEmbed(code, theme, id1) {
       str = intl5.string(intl7.t["N/g9Z4"]);
       return obj3;
     } else if (invite.state === tmp22.ERROR) {
-      const obj4 = { headerText: intl2.formatToPlainString(_modDef2559["jKi+kc"], { displayNoun: "other" }), titleText: intl3.string(_modDef2559["2/aTr2"]), subtitle: intl4.formatToPlainString(_modDef2559["L/fHgw"], { displayNoun: "other" }), titleColor: processColorOrThrow(internal3.resolveSemanticColor(theme, nativeDefault.colors.TEXT_FEEDBACK_CRITICAL)), showInvalidIcon: true, invalidIconUrl: obj6.getAssetUriForEmbed(AssetRegistryDefault2), embedCanBeTapped: false, canBeAccepted: false };
+      const obj4 = { headerText: intl2.formatToPlainString(_modDef2639["jKi+kc"], { displayNoun: "other" }), titleText: intl3.string(_modDef2639["2/aTr2"]), subtitle: intl4.formatToPlainString(_modDef2639["L/fHgw"], { displayNoun: "other" }), titleColor: processColorOrThrow(internal3.resolveSemanticColor(theme, nativeDefault.colors.TEXT_FEEDBACK_CRITICAL)), showInvalidIcon: true, invalidIconUrl: obj6.getAssetUriForEmbed(AssetRegistryDefault2), embedCanBeTapped: false, canBeAccepted: false };
       const merged2 = Object.assign(obj2);
       intl2 = intl7.intl;
       intl3 = intl7.intl;
@@ -96,14 +96,14 @@ export function createGameOrganizationInviteEmbed(code, theme, id1) {
       const merged3 = Object.assign(obj2);
       const intl6 = intl7.intl;
       formatToPlainString = intl6.formatToPlainString;
-      prop = tmp(2559)["jKi+kc"];
+      prop = tmp(2639)["jKi+kc"];
       if (displayNoun == null) {
         displayNoun = "other";
       }
       obj17 = { displayNoun };
       ({ name: obj10.titleText, iconUrl } = organization);
       if (iconUrl == null) {
-        iconUrl = tmp(11969);
+        iconUrl = tmp(12089);
       }
       ({ name: obj10.gameName, iconUrl: iconUrl2 } = application);
       formatToPlainStringResult = undefined;
@@ -111,7 +111,7 @@ export function createGameOrganizationInviteEmbed(code, theme, id1) {
         if (null != maxMembers) {
           const intl = tmp31(1112).intl;
           const obj18 = { count: memberCount, max: maxMembers };
-          formatToPlainStringResult = intl.formatToPlainString(tmp(2559).VuENGl, obj18);
+          formatToPlainStringResult = intl.formatToPlainString(tmp(2639).VuENGl, obj18);
         }
       }
       description = organization.description;

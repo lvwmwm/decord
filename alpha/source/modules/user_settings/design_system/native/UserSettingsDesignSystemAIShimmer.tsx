@@ -1,20 +1,20 @@
-// Module ID: 17144
-// Function ID: 17145
+// Module ID: 17268
+// Function ID: 17269
 // Name: UserSettingsDesignSystemAIShimmer
-// Dependencies: [32, 19, 17, 21, 4794, 5392, 5810, 6927, 5385, 15102, 2]
+// Dependencies: [32, 19, 17, 21, 4913, 5511, 5929, 7047, 5504, 15225, 2]
 // Exports: default
 
-// Module 17144 (UserSettingsDesignSystemAIShimmer)
-import Text_Text from "Text/Text" /* 5385 */;
-import components_Button_Button from "components/Button/Button" /* 5392 */;
-import Stack_Stack from "Stack/Stack" /* 5810 */;
-import Card_Card from "Card/Card" /* 6927 */;
-import AIShimmer from "AIShimmer" /* 15102 */;
+// Module 17268 (UserSettingsDesignSystemAIShimmer)
+import Text_Text from "Text/Text" /* 5504 */;
+import components_Button_Button from "components/Button/Button" /* 5511 */;
+import Stack_Stack from "Stack/Stack" /* 5929 */;
+import Card_Card from "Card/Card" /* 7047 */;
+import AIShimmer from "AIShimmer" /* 15225 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4794 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

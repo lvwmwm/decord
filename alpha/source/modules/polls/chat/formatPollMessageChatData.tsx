@@ -1,26 +1,26 @@
-// Module ID: 12024
-// Function ID: 12025
+// Module ID: 12146
+// Function ID: 12147
 // Name: formatPollMessageChatData
-// Dependencies: [4795, 6454, 4643, 4706, 5845, 1386, 11783, 1071, 1082, 6263, 4740, 4744, 1412, 9766, 4732, 4713, 12025, 1112, 8336, 12027, 1378, 12028, 12029, 2]
+// Dependencies: [4914, 6573, 4762, 4825, 5964, 1386, 11903, 1071, 1082, 6382, 4859, 4863, 1412, 9886, 4851, 4832, 12147, 1112, 8456, 12149, 1378, 12150, 12151, 2]
 // Exports: default, isPollMessageDirectlyInteractive
 
-// Module 12024 (formatPollMessageChatData)
+// Module 12146 (formatPollMessageChatData)
 import Constants2 from "Constants" /* 1082 */;
 import intl5 from "intl" /* 1112 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
-import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 4713 */;
-import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4732 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 4740 */;
-import EmojiUtilsDefault from "EmojiUtils" /* 4744 */;
-import merged5 from "merged5" /* 6263 */;
-import useFormattedExpirationLabel from "useFormattedExpirationLabel" /* 9766 */;
-import PollsInteractionStore from "PollsInteractionStore" /* 11783 */;
-import PollLayoutTypes from "PollLayoutTypes" /* 12027 */;
-import AccessibilityStore from "AccessibilityStore" /* 4795 */;
-import EmojiStore from "EmojiStore" /* 6454 */;
-import ChannelStore from "ChannelStore" /* 4643 */;
-import GuildMemberStore from "GuildMemberStore" /* 4706 */;
-import MessageStore from "MessageStore" /* 5845 */;
+import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 4832 */;
+import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4851 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4859 */;
+import EmojiUtilsDefault from "EmojiUtils" /* 4863 */;
+import merged5 from "merged5" /* 6382 */;
+import useFormattedExpirationLabel from "useFormattedExpirationLabel" /* 9886 */;
+import PollsInteractionStore from "PollsInteractionStore" /* 11903 */;
+import PollLayoutTypes from "PollLayoutTypes" /* 12149 */;
+import AccessibilityStore from "AccessibilityStore" /* 4914 */;
+import EmojiStore from "EmojiStore" /* 6573 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import GuildMemberStore from "GuildMemberStore" /* 4825 */;
+import MessageStore from "MessageStore" /* 5964 */;
 import UserStore from "UserStore" /* 1386 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;

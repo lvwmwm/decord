@@ -1,21 +1,21 @@
-// Module ID: 15725
-// Function ID: 15726
+// Module ID: 15848
+// Function ID: 15849
 // Name: ProfileGIFSelectActionSheet
-// Dependencies: [32, 5, 19, 17, 21, 4794, 575, 15712, 7284, 15713, 8792, 8790, 8789, 8011, 7290, 5008, 5022, 7395, 1112, 8832, 11232, 2]
+// Dependencies: [32, 5, 19, 17, 21, 4913, 575, 15835, 7404, 15836, 8912, 8910, 8909, 8131, 7410, 5127, 5141, 7515, 1112, 8952, 11352, 2]
 // Exports: default
 
-// Module 15725 (ProfileGIFSelectActionSheet)
+// Module 15848 (ProfileGIFSelectActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5022 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7395 */;
-import GIFPickerDefault from "GIFPicker" /* 11232 */;
-import ProfileEditSheetNitroUpdatesExperiment from "ProfileEditSheetNitroUpdatesExperiment" /* 15712 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5141 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7515 */;
+import GIFPickerDefault from "GIFPicker" /* 11352 */;
+import ProfileEditSheetNitroUpdatesExperiment from "ProfileEditSheetNitroUpdatesExperiment" /* 15835 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4794 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5;
@@ -25,7 +25,7 @@ let metroImportDefault;
 let obj2;
 let tmp2;
 const intl3 = tmp2(1112);
-const NitroWheelIcon = tmp2(8832);
+const NitroWheelIcon = tmp2(8952);
 const View = react_native.View;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let obj = { titleWrapper: { flex: 0 }, titleContainer: { justifyContent: "flex-start" }, gifPicker: obj2 };

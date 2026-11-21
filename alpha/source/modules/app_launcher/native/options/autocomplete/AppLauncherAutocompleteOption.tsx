@@ -1,28 +1,28 @@
-// Module ID: 12920
-// Function ID: 12921
+// Module ID: 13042
+// Function ID: 13043
 // Name: AppLauncherAutocompleteOption
-// Dependencies: [32, 19, 17, 1190, 21, 4794, 7121, 5358, 575, 2018, 5008, 12921, 2119, 12919, 6910, 5385, 2]
+// Dependencies: [32, 19, 17, 1190, 21, 4913, 7241, 5477, 575, 2018, 5127, 13043, 2119, 13041, 7030, 5504, 2]
 // Exports: default
 
-// Module 12920 (AppLauncherAutocompleteOption)
+// Module 13042 (AppLauncherAutocompleteOption)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import FormConstants from "FormConstants" /* 1190 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 2018 */;
 import asyncRequire from "asyncRequire" /* 2119 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5008 */;
-import useToken from "useToken" /* 5358 */;
-import Pressables from "Pressables" /* 6910 */;
-import InputFieldContainer2 from "InputFieldContainer" /* 7121 */;
-import useAnimationDelayedAutoFocus from "useAnimationDelayedAutoFocus" /* 12919 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
+import useToken from "useToken" /* 5477 */;
+import Pressables from "Pressables" /* 7030 */;
+import InputFieldContainer2 from "InputFieldContainer" /* 7241 */;
+import useAnimationDelayedAutoFocus from "useAnimationDelayedAutoFocus" /* 13041 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4794 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let tmp4;
-const Text_Text = tmp4(5385);
+const Text_Text = tmp4(5504);
 const View = react_native.View;
 const ANDROID_FOREGROUND_RIPPLE = FormConstants.ANDROID_FOREGROUND_RIPPLE;
 const jsx = Fragment.jsx;
@@ -61,7 +61,7 @@ export default function AppLauncherAutocompleteOption(arg0) {
       onDismissAutocompleteSheet: _slicedToArray,
       optionValues: ANDROID_FOREGROUND_RIPPLE.current
     };
-    obj2.openLazy(asyncRequire(12921, dependencyMap.paths), "AppLauncherAutocompleteActionSheet", obj3);
+    obj2.openLazy(asyncRequire(13043, dependencyMap.paths), "AppLauncherAutocompleteActionSheet", obj3);
   }
   ({ autoFocus, hasError } = arg0);
   [initChoice, closure_9] = react.useState(() => {

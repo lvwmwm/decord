@@ -1,16 +1,16 @@
-// Module ID: 9005
-// Function ID: 9006
+// Module ID: 9125
+// Function ID: 9126
 // Name: PremiumPill
-// Dependencies: [19, 17, 21, 4794, 575, 5003, 8836, 9006, 1112, 5385, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 5122, 8956, 9126, 1112, 5504, 2]
 // Exports: PremiumPill
 
-// Module 9005 (PremiumPill)
+// Module 9125 (PremiumPill)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1112 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4794 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;

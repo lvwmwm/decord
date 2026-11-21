@@ -1,21 +1,21 @@
-// Module ID: 17751
-// Function ID: 17752
+// Module ID: 17877
+// Function ID: 17878
 // Name: GuildsBarGuildJoinRequestBadge
-// Dependencies: [19, 17, 21, 4794, 575, 6436, 4830, 17752, 17753, 17754, 13023, 5481, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 6555, 4949, 17878, 17879, 17880, 13145, 5600, 2]
 // Exports: default
 
-// Module 17751 (GuildsBarGuildJoinRequestBadge)
+// Module 17877 (GuildsBarGuildJoinRequestBadge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 4830 */;
-import LegacyTokens from "LegacyTokens" /* 6436 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13023 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 17752 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 17753 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 17754 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4949 */;
+import LegacyTokens from "LegacyTokens" /* 6555 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13145 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 17878 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 17879 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 17880 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let size;

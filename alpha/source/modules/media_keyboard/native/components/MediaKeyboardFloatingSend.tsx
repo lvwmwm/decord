@@ -1,19 +1,19 @@
-// Module ID: 18285
-// Function ID: 18286
+// Module ID: 18412
+// Function ID: 18413
 // Name: MediaKeyboardFloatingSend
-// Dependencies: [32, 19, 17, 8347, 21, 4794, 575, 504, 1653, 1628, 5395, 5396, 671, 5349, 7487, 1112, 5492, 2]
+// Dependencies: [32, 19, 17, 8467, 21, 4913, 575, 504, 1653, 1628, 5514, 5515, 671, 5468, 7607, 1112, 5611, 2]
 
-// Module 18285 (MediaKeyboardFloatingSend)
+// Module 18412 (MediaKeyboardFloatingSend)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
-import LinearGradientDefault from "LinearGradient" /* 5349 */;
+import LinearGradientDefault from "LinearGradient" /* 5468 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 8347 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8467 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -183,7 +183,7 @@ const memoResult = react.memo(function MediaKeyboardFloatingSendInner(arg0) {
   const merged = Object.assign(memo);
   items12 = [closure_6(tmp2Result, obj6), ];
   const obj7 = { accessibilityLabel: intl.string(require("intl").t.TXNS7S), icon: closure_6(require("SendMessageIcon").SendMessageIcon, {}), onPress: onSend, positionBottom: bottom };
-  const FloatingActionButton = tmp6(7487).FloatingActionButton;
+  const FloatingActionButton = tmp6(7607).FloatingActionButton;
   intl = tmp6(1112).intl;
   items12[1] = closure_6(FloatingActionButton, obj7);
   return closure_7(View, obj5);

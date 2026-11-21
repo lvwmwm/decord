@@ -1,21 +1,21 @@
-// Module ID: 18166
-// Function ID: 18167
+// Module ID: 18293
+// Function ID: 18294
 // Name: useConjureProjects
-// Dependencies: [32, 19, 2163, 6837, 4724, 4665, 4726, 4827, 6806, 6502, 6538, 6720, 504, 1450, 6746, 2]
+// Dependencies: [32, 19, 2164, 6956, 4843, 4784, 4845, 4946, 6925, 6621, 6657, 6839, 504, 1450, 6865, 2]
 // Exports: useConjureEligibleGuilds, useConjureForMeGuildId, useConjureProjects
 
-// Module 18166 (useConjureProjects)
-import ConjureUtils from "ConjureUtils" /* 6746 */;
+// Module 18293 (useConjureProjects)
+import ConjureUtils from "ConjureUtils" /* 6865 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 2163 */;
-import UserProfileStore from "UserProfileStore" /* 6837 */;
-import GuildChannelStore from "GuildChannelStore" /* 4724 */;
-import GuildStore from "GuildStore" /* 4665 */;
-import PermissionStore from "PermissionStore" /* 4726 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4827 */;
-import ConjureChatStore from "ConjureChatStore" /* 6806 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6502 */;
+import ApplicationStore from "ApplicationStore" /* 2164 */;
+import UserProfileStore from "UserProfileStore" /* 6956 */;
+import GuildChannelStore from "GuildChannelStore" /* 4843 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4946 */;
+import ConjureChatStore from "ConjureChatStore" /* 6925 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6621 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

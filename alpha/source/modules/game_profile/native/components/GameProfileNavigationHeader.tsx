@@ -1,17 +1,17 @@
-// Module ID: 9823
-// Function ID: 9824
+// Module ID: 9943
+// Function ID: 9944
 // Name: GameProfileNavigationHeader
-// Dependencies: [19, 17, 21, 4794, 575, 5358, 1653, 5004, 1412, 7480, 5481, 5385, 9693, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 5477, 1653, 5123, 1412, 7600, 5600, 5504, 9813, 2]
 // Exports: default
 
-// Module 9823 (GameProfileNavigationHeader)
+// Module 9943 (GameProfileNavigationHeader)
 import nativeDefault from "native" /* 575 */;
 import AvatarUtils from "AvatarUtils" /* 1412 */;
-import timing_timing from "timing/timing" /* 5004 */;
+import timing_timing from "timing/timing" /* 5123 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap, set;
@@ -62,7 +62,7 @@ export default function GameProfileNavigationHeader(game) {
   let sharedValue;
   let tmp = closure_8();
   const tmp2 = game;
-  let obj = game(5358);
+  let obj = game(5477);
   dependencyMap = tmp6;
   const token = obj.useToken(application(575).colors.LEGACY_BLUR_FALLBACK_ULTRA_THIN);
   let num = 0;
@@ -159,18 +159,18 @@ export default function GameProfileNavigationHeader(game) {
   if (null != name) {
     const obj3 = { style: tmp.headerContainer, children: items6 };
     const obj4 = { android_fallbackColor: token };
-    items6 = [closure_6(tmp2(7480).BackgroundBlurFill, obj4), ];
+    items6 = [closure_6(tmp2(7600).BackgroundBlurFill, obj4), ];
     let tmp22Result = null != memo;
     const obj5 = { style: tmp.headerRow, children: items7 };
     if (tmp22Result) {
       const obj6 = { source: obj7, style: tmp.icon };
       obj7 = { uri: memo };
-      tmp22Result = tmp22(tmp4(5481), obj6);
+      tmp22Result = tmp22(tmp4(5600), obj6);
     }
     items7 = [tmp22Result, , ];
     const obj8 = { style: tmp.titleContainer, children: items8 };
     const obj9 = { variant: "heading-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: name };
-    items8 = [closure_6(tmp2(5385).Heading, obj9), ];
+    items8 = [closure_6(tmp2(5504).Heading, obj9), ];
     let l30Rank;
     if (game != null) {
       l30Rank = game.l30Rank;
@@ -179,14 +179,14 @@ export default function GameProfileNavigationHeader(game) {
     if (tmp20Result) {
       const obj10 = { style: tmp.rankPillContainer, children: items9 };
       let str = "no-hide-descendants";
-      const obj11 = { style: tmp.rankPillContainer, accessibilityElementsHidden: null == headerRight, importantForAccessibility: str2, children: closure_6(application(9693), obj12) };
+      const obj11 = { style: tmp.rankPillContainer, accessibilityElementsHidden: null == headerRight, importantForAccessibility: str2, children: closure_6(application(9813), obj12) };
       str2 = "no-hide-descendants";
       if (null != headerRight) {
         str2 = "auto";
       }
       obj12 = { rank: game.l30Rank, compact: true };
       items9 = [closure_6(closure_4, obj11), ];
-      const obj13 = { style: items10, accessibilityElementsHidden: null != headerRight, importantForAccessibility: str3, children: closure_6(application(9693), obj14) };
+      const obj13 = { style: items10, accessibilityElementsHidden: null != headerRight, importantForAccessibility: str3, children: closure_6(application(9813), obj14) };
       items10 = [StyleSheet.absoluteFill, animatedStyle1];
       str3 = "auto";
       const View = tmp4(1653).View;

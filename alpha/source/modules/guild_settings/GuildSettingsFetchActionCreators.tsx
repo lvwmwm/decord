@@ -1,14 +1,14 @@
-// Module ID: 7884
-// Function ID: 7885
+// Module ID: 8004
+// Function ID: 8005
 // Name: GuildSettingsFetchActionCreators
-// Dependencies: [5, 2141, 1405, 1071, 1284, 572, 2]
+// Dependencies: [5, 2142, 1405, 1071, 1284, 572, 2]
 // Exports: fetchGuildEmbed, fetchGuildIntegrationsApplications
 
-// Module 7884 (GuildSettingsFetchActionCreators)
+// Module 8004 (GuildSettingsFetchActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
 import HTTPUtils from "HTTPUtils" /* 1284 */;
-import ApplicationRecord from "ApplicationRecord" /* 2141 */;
+import ApplicationRecord from "ApplicationRecord" /* 2142 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import UserRecord from "UserRecord" /* 1405 */;
 import size from "module_2" /* 2 */;

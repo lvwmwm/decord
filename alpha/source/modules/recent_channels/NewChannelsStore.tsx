@@ -1,24 +1,24 @@
-// Module ID: 8205
-// Function ID: 8206
+// Module ID: 8325
+// Function ID: 8326
 // Name: NewChannelsStore
-// Dependencies: [1230, 502, 4643, 4724, 4706, 4665, 6500, 6433, 1071, 1088, 6523, 7356, 11, 504, 6319, 572, 2]
+// Dependencies: [1230, 502, 4762, 4843, 4825, 4784, 6619, 6552, 1071, 1088, 6642, 7476, 11, 504, 6438, 572, 2]
 
-// Module 8205 (NewChannelsStore)
+// Module 8325 (NewChannelsStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1088 */;
-import GuildChannelStore2 from "GuildChannelStore" /* 4724 */;
-import NSFWContentGate from "NSFWContentGate" /* 6319 */;
-import SidebarActionTypes from "SidebarActionTypes" /* 6523 */;
-import ReadStateActionCreators from "ReadStateActionCreators" /* 7356 */;
+import GuildChannelStore2 from "GuildChannelStore" /* 4843 */;
+import NSFWContentGate from "NSFWContentGate" /* 6438 */;
+import SidebarActionTypes from "SidebarActionTypes" /* 6642 */;
+import ReadStateActionCreators from "ReadStateActionCreators" /* 7476 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1230 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4643 */;
-import GuildMemberStore from "GuildMemberStore" /* 4706 */;
-import GuildStore from "GuildStore" /* 4665 */;
-import ReadStateStore from "ReadStateStore" /* 6500 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6433 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import GuildMemberStore from "GuildMemberStore" /* 4825 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import ReadStateStore from "ReadStateStore" /* 6619 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6552 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -142,11 +142,11 @@ function pruneNewChannels() {
   const obj = SnowflakeUtilsDefault;
   const keys = obj.keys(closure_16);
   const item = keys.forEach((item) => {
-    const f124505 = (item) => !channelOrParentOptedIn.isChannelOrParentOptedIn(item, item);
+    const f124908 = (item) => !channelOrParentOptedIn.isChannelOrParentOptedIn(item, item);
     let closure_0 = item;
     const items = [...closure_16[item]];
-    closure_16[item] = new Set(items.filter(f124505));
-    new Set(items.filter(f124505));
+    closure_16[item] = new Set(items.filter(f124908));
+    new Set(items.filter(f124908));
   });
 }
 let closure_7 = GuildChannelStore2.GUILD_SELECTABLE_CHANNELS_KEY;

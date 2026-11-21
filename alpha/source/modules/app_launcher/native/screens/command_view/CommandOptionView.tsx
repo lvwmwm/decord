@@ -1,19 +1,19 @@
-// Module ID: 12910
-// Function ID: 12911
+// Module ID: 13032
+// Function ID: 13033
 // Name: CommandOptionView
-// Dependencies: [19, 17, 4795, 21, 2117, 4794, 575, 504, 1653, 12911, 12912, 5385, 12913, 7105, 2]
+// Dependencies: [19, 17, 4914, 21, 2117, 4913, 575, 504, 1653, 13033, 13034, 5504, 13035, 7225, 2]
 // Exports: default
 
-// Module 12910 (CommandOptionView)
+// Module 13032 (CommandOptionView)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef1653 from "module_1653" /* 1653 */;
 import Server from "Server" /* 2117 */;
-import AppLauncherCommandOptionDefault from "AppLauncherCommandOption" /* 12913 */;
+import AppLauncherCommandOptionDefault from "AppLauncherCommandOption" /* 13035 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4795 */;
+import AccessibilityStore from "AccessibilityStore" /* 4914 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4794 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -58,7 +58,7 @@ export default function CommandOptionView(option) {
   const stateFromStores = obj.useStateFromStores(items, () => AccessibilityStore.useReducedMotion);
   const ReduceMotion = option(1653).ReduceMotion;
   const tmp5 = stateFromStores ? ReduceMotion.Always : ReduceMotion.Never;
-  const tmp2Result = option(12911);
+  const tmp2Result = option(13033);
   const optionEnteringAnimation = tmp2Result.useOptionEnteringAnimation();
   let fn = optionEnteringAnimation.registerAnimationCompleteCallback;
   const EnteringAnimation = optionEnteringAnimation.EnteringAnimation;
@@ -85,12 +85,12 @@ export default function CommandOptionView(option) {
     const obj3 = { skipEntering: option.required || isPreSelectedOption, children: closure_5(AwaitAnimationContext, obj4) };
     const LayoutAnimationConfig = tmp2(1653).LayoutAnimationConfig;
     obj4 = { handleQueuedCallback: fn, children: closure_5(View, obj5) };
-    AwaitAnimationContext = tmp2(12912).AwaitAnimationContext;
+    AwaitAnimationContext = tmp2(13034).AwaitAnimationContext;
     obj5 = {
       collapsable: false,
       entering: EnteringAnimation,
-      exiting: option(12911).ExitingAnimation,
-      layout: option(12911).LayoutAnimation,
+      exiting: option(13033).ExitingAnimation,
+      layout: option(13033).LayoutAnimation,
       onLayout(arg0) {
           importDefault(arg0, option);
         },
@@ -101,7 +101,7 @@ export default function CommandOptionView(option) {
     tmp21 = View;
     if (hasItem1) {
       const obj7 = { style: tmp.labelText, variant: "body-sm/semibold", color: "text-subtle", children: option.displayName };
-      hasItem1 = tmp18(tmp2(5385).Text, obj7);
+      hasItem1 = tmp18(tmp2(5504).Text, obj7);
     }
     items2 = [hasItem1, , , ];
     const obj8 = {
@@ -127,13 +127,13 @@ export default function CommandOptionView(option) {
     };
     items2[1] = closure_5(AppLauncherCommandOptionDefault, obj8);
     const obj9 = { style: tmp.optionDescription, variant: "body-xs/medium", color: "text-muted", children: option.displayDescription };
-    items2[2] = closure_5(option(5385).Text, obj9);
+    items2[2] = closure_5(option(5504).Text, obj9);
     if (hasItem) {
       const obj10 = { collapsable: false, entering: reduceMotionResult1, exiting: reduceMotionResult, style: tmp.optionErrorContainer, children: items3 };
       const View2 = tmp19(1653).View;
-      items3 = [closure_5(option(7105).CircleErrorIcon, { size: "xs", color: "text-feedback-critical" }), ];
+      items3 = [closure_5(option(7225).CircleErrorIcon, { size: "xs", color: "text-feedback-critical" }), ];
       const obj11 = { variant: "body-xs/medium", color: "text-feedback-critical", children: optionValidationResults[option.name].error };
-      items3[1] = closure_5(option(5385).Text, obj11);
+      items3[1] = closure_5(option(5504).Text, obj11);
       hasItem = tmp20(View2, obj10);
     }
     items2[3] = hasItem;

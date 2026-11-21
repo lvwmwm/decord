@@ -1,16 +1,16 @@
-// Module ID: 17235
-// Function ID: 17236
+// Module ID: 17359
+// Function ID: 17360
 // Name: DataAndPrivacyScreen
-// Dependencies: [19, 6308, 8592, 1071, 21, 17227, 1112, 2186, 9587, 1500, 16034, 16037, 11817, 15991, 15862, 2]
+// Dependencies: [19, 6427, 8712, 1071, 21, 17351, 1112, 2187, 9707, 1500, 16157, 16160, 11937, 16114, 15985, 2]
 // Exports: default
 
-// Module 17235 (DataAndPrivacyScreen)
+// Module 17359 (DataAndPrivacyScreen)
 import intl8 from "intl" /* 1112 */;
-import SettingsConstants from "SettingsConstants" /* 8592 */;
-import SecureFramesUtils from "SecureFramesUtils" /* 9587 */;
-import SettingBuilders from "SettingBuilders" /* 11817 */;
+import SettingsConstants from "SettingsConstants" /* 8712 */;
+import SecureFramesUtils from "SecureFramesUtils" /* 9707 */;
+import SettingBuilders from "SettingBuilders" /* 11937 */;
 import react from "react" /* 19 */;
-import ConsentStore from "ConsentStore" /* 6308 */;
+import ConsentStore from "ConsentStore" /* 6427 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -62,7 +62,7 @@ export default function DataAndPrivacySettings() {
   let stackNavigation;
   let obj = stackNavigation(1500);
   stackNavigation = obj.useStackNavigation();
-  let obj2 = stackNavigation(17227);
+  let obj2 = stackNavigation(17351);
   const pinotDataPrivacySections = obj2.usePinotDataPrivacySections();
   let obj3 = { settings: items, subLabel: format(prop, obj4) };
   items = [MobileUserSettings.USE_DATA_TO_IMPROVE_DISCORD];
@@ -70,7 +70,7 @@ export default function DataAndPrivacySettings() {
   format = intl.format;
   obj4 = { helpdeskArticle: obj5.getArticleURL(constants.DATA_PRIVACY_CONTROLS) };
   prop = stackNavigation(1112).t["igTSG/"];
-  obj5 = items1(2186);
+  obj5 = items1(2187);
   items1 = [obj3, , , ];
   let obj6 = { settings: items2, subLabel: format2(prop1, obj7) };
   items2 = [MobileUserSettings.USE_DATA_TO_CUSTOMIZE_DISCORD];
@@ -79,7 +79,7 @@ export default function DataAndPrivacySettings() {
   obj7 = { helpdeskArticle: obj8.getArticleURL(constants.DATA_USED_FOR_RECOMMENDED) };
   prop1 = stackNavigation(1112).t["eQL/Mr"];
   items1[1] = obj6;
-  obj8 = items1(2186);
+  obj8 = items1(2187);
   const obj9 = { settings: items3, subLabel: format3(cf9mvV, obj10) };
   items3 = [MobileUserSettings.USE_DATA_FOR_QUESTS];
   let intl3 = stackNavigation(1112).intl;
@@ -87,7 +87,7 @@ export default function DataAndPrivacySettings() {
   obj10 = { helpdeskArticle: obj11.getArticleURL(constants.QUESTS_PRIVACY_CONTROLS) };
   cf9mvV = stackNavigation(1112).t.cf9mvV;
   items1[2] = obj9;
-  obj11 = items1(2186);
+  obj11 = items1(2187);
   const obj12 = { settings: items4, subLabel: format4(prop2, obj13) };
   items4 = [MobileUserSettings.USE_DATA_FOR_QUESTS_3P];
   let intl4 = stackNavigation(1112).intl;
@@ -95,7 +95,7 @@ export default function DataAndPrivacySettings() {
   obj13 = { helpdeskArticle: obj14.getArticleURL(constants.QUESTS_PRIVACY_CONTROLS) };
   prop2 = stackNavigation(1112).t["2QFDU/"];
   items1[3] = obj12;
-  obj14 = items1(2186);
+  obj14 = items1(2187);
   HermesBuiltin.arraySpread(items1, pinotDataPrivacySections, 4);
   const push = items1.push;
   const obj15 = { label: intl5.string(stackNavigation(1112).t.BG7QsQ), settings: items5, subLabel: format5(P3kNfr, obj16) };
@@ -105,7 +105,7 @@ export default function DataAndPrivacySettings() {
   format5 = intl6.format;
   obj16 = { helpdeskArticle: obj17.getArticleURL(constants.GDPR_REQUEST_DATA) };
   P3kNfr = stackNavigation(1112).t.P3kNfr;
-  obj17 = items1(2186);
+  obj17 = items1(2187);
   push(obj15);
   const obj18 = { settings: items6, subLabel: intl7.format(stackNavigation(1112).t.N1P5gE, obj19) };
   items6 = [MobileUserSettings.PROFILE_PRIVACY];
@@ -170,8 +170,8 @@ export default function DataAndPrivacySettings() {
     HermesBuiltin.arraySpread(items, items3, tmp3 + 1);
     return createList(obj);
   }, items8);
-  const obj22 = { screen: stackNavigation(15991).SettingsScreen.DATA_AND_PRIVACY };
-  const tmp13 = items1(15991);
-  items9 = [closure_8(tmp13, obj22), closure_8(items1(15862), { node: memo })];
+  const obj22 = { screen: stackNavigation(16114).SettingsScreen.DATA_AND_PRIVACY };
+  const tmp13 = items1(16114);
+  items9 = [closure_8(tmp13, obj22), closure_8(items1(15985), { node: memo })];
   return closure_10(closure_9, obj21);
 };

@@ -1,25 +1,25 @@
-// Module ID: 13726
-// Function ID: 13727
+// Module ID: 13848
+// Function ID: 13849
 // Name: InstantInvite
-// Dependencies: [19, 17, 4647, 1386, 1071, 21, 4794, 575, 504, 6745, 13727, 13728, 5742, 1112, 12616, 1098, 13729, 6927, 5810, 7406, 5385, 8538, 7471, 13733, 13734, 13736, 13739, 13740, 2]
+// Dependencies: [19, 17, 4766, 1386, 1071, 21, 4913, 575, 504, 6864, 13849, 13850, 5861, 1112, 12738, 1098, 13851, 7047, 5929, 7526, 5504, 8658, 7591, 13855, 13856, 13858, 13861, 13862, 2]
 // Exports: LinkedChannelInvite
 
-// Module 13726 (InstantInvite)
+// Module 13848 (InstantInvite)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl3 from "intl" /* 1112 */;
-import ChannelRecord from "ChannelRecord" /* 4647 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5742 */;
-import ArrowSmallRightIcon from "ArrowSmallRightIcon" /* 12616 */;
-import InstantInviteIconsDefault from "InstantInviteIcons" /* 13729 */;
-import InstantInviteCreatorDefault from "InstantInviteCreator" /* 13734 */;
-import InviteRolesDisplayDefault from "InviteRolesDisplay" /* 13739 */;
-import InstantInviteUsesLabelDefault from "InstantInviteUsesLabel" /* 13740 */;
+import ChannelRecord from "ChannelRecord" /* 4766 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5861 */;
+import ArrowSmallRightIcon from "ArrowSmallRightIcon" /* 12738 */;
+import InstantInviteIconsDefault from "InstantInviteIcons" /* 13851 */;
+import InstantInviteCreatorDefault from "InstantInviteCreator" /* 13856 */;
+import InviteRolesDisplayDefault from "InviteRolesDisplay" /* 13861 */;
+import InstantInviteUsesLabelDefault from "InstantInviteUsesLabel" /* 13862 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4794 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -51,7 +51,7 @@ const memoResult = react.memo(function InstantInvite(invite) {
   }
   const items = [invite];
   const memo = react.useMemo(() => closure_5(invite.channel), items);
-  let obj = invite(13736);
+  let obj = invite(13858);
   const items1 = [invite.roles];
   const inviteActions = obj.useInviteActions({ invite, onInviteRevoked });
   const memo1 = react.useMemo(() => {
@@ -59,12 +59,12 @@ const memoResult = react.memo(function InstantInvite(invite) {
     return roles.map((id) => id.id);
   }, items1);
   let tmp9Result = memo1.length > 0 && null != id;
-  const Card = tmp4(6927).Card;
+  const Card = tmp4(7047).Card;
   const obj2 = { direction: "horizontal", justify: "space-between", children: items2 };
-  const Stack = tmp4(5810).Stack;
+  const Stack = tmp4(5929).Stack;
   items2 = [, ];
   const obj3 = { variant: "body-lg/semibold", tabularNumbers: true, children: invite.code };
-  items2[0] = closure_8(invite(5385).Text, obj3);
+  items2[0] = closure_8(invite(5504).Text, obj3);
   const obj4 = {
     items: inviteActions,
     children(ref) {
@@ -78,10 +78,10 @@ const memoResult = react.memo(function InstantInvite(invite) {
       return closure_1_8(IconButton, obj);
     }
   };
-  items2[1] = closure_8(invite(8538).ContextMenu, obj4);
+  items2[1] = closure_8(invite(8658).ContextMenu, obj4);
   const items3 = [closure_9(Stack, obj2), , , ];
   const obj5 = { channel: memo, expiresAt: invite.getExpiresAt() };
-  const InstantInviteDetails = tmp4(13733).InstantInviteDetails;
+  const InstantInviteDetails = tmp4(13855).InstantInviteDetails;
   items3[1] = closure_8(InstantInviteDetails, obj5);
   if (tmp9Result) {
     const obj6 = { roleIds: memo1, guildId: id };
@@ -91,7 +91,7 @@ const memoResult = react.memo(function InstantInvite(invite) {
   items3[2] = tmp9Result;
   const obj8 = { direction: "horizontal", align: "flex-end", children: items4 };
   const obj9 = { style: tmp.creatorWrapper, children: closure_8(InstantInviteCreatorDefault, obj10) };
-  const Stack2 = tmp4(5810).Stack;
+  const Stack2 = tmp4(5929).Stack;
   obj10 = { user: invite.inviter, guildId: id };
   items4 = [closure_8(View, obj9), closure_8(InstantInviteUsesLabelDefault, { uses, maxUses })];
   items3[3] = closure_9(Stack2, obj8);
@@ -126,17 +126,17 @@ export function LinkedChannelInvite(channel) {
   });
   let linkedLobby = channel.linkedLobby;
   let application_id;
-  const useGetOrFetchApplication = channel(6745).useGetOrFetchApplication;
-  const tmp5 = channel(6745);
+  const useGetOrFetchApplication = channel(6864).useGetOrFetchApplication;
+  const tmp5 = channel(6864);
   if (linkedLobby != null) {
     application_id = linkedLobby.application_id;
   }
   const getOrFetchApplication = useGetOrFetchApplication(application_id);
-  const tmp2Result = channel(13727);
+  const tmp2Result = channel(13849);
   canUnlinkLobbyChannel = tmp2Result.useCanUnlinkLobbyChannel(channel);
   let str;
   const id = channel.id;
-  const tmp10 = canUnlinkLobbyChannel(13728);
+  const tmp10 = canUnlinkLobbyChannel(13850);
   if (getOrFetchApplication != null) {
     str = getOrFetchApplication.name;
   }
@@ -182,15 +182,15 @@ export function LinkedChannelInvite(channel) {
     items[1] = obj2;
     return items;
   }, items2);
-  const Card = tmp2(6927).Card;
+  const Card = tmp2(7047).Card;
   let obj2 = { style: tmp.gameWrapper, children: items3 };
-  const Stack = tmp2(5810).Stack;
-  const obj3 = { game: getOrFetchApplication, size: channel(7406).GameIconSizes.SIZE_24 };
-  const tmp9Result = canUnlinkLobbyChannel(7406);
+  const Stack = tmp2(5929).Stack;
+  const obj3 = { game: getOrFetchApplication, size: channel(7526).GameIconSizes.SIZE_24 };
+  const tmp9Result = canUnlinkLobbyChannel(7526);
   items3 = [closure_8(tmp9Result, obj3), ];
   const obj4 = { ellipsizeMode: "tail", lineClamp: 1, variant: "body-lg/semibold", style: tmp.gameText, children: name };
   name = undefined;
-  const Text = tmp2(5385).Text;
+  const Text = tmp2(5504).Text;
   if (getOrFetchApplication != null) {
     name = getOrFetchApplication.name;
   }
@@ -211,11 +211,11 @@ export function LinkedChannelInvite(channel) {
       return closure_1_8(IconButton, obj);
     }
   };
-  items4[1] = closure_8(channel(8538).ContextMenu, obj7);
-  items5 = [closure_9(Stack, obj6), closure_8(tmp2(13733).InstantInviteDetails, { channel }), ];
+  items4[1] = closure_8(channel(8658).ContextMenu, obj7);
+  items5 = [closure_9(Stack, obj6), closure_8(tmp2(13855).InstantInviteDetails, { channel }), ];
   const obj8 = { direction: "horizontal", align: "flex-end", children: closure_8(View, obj9) };
-  obj9 = { style: tmp.creatorWrapper, children: closure_8(canUnlinkLobbyChannel(13734), obj10) };
-  const Stack2 = tmp2(5810).Stack;
+  obj9 = { style: tmp.creatorWrapper, children: closure_8(canUnlinkLobbyChannel(13856), obj10) };
+  const Stack2 = tmp2(5929).Stack;
   obj10 = { user: stateFromStores, guildId: channel.guild_id };
   items5[2] = closure_8(Stack2, obj8);
   return closure_9(Card, obj5);

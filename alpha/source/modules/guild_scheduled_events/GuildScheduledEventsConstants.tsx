@@ -1,9 +1,9 @@
-// Module ID: 4649
-// Function ID: 4650
+// Module ID: 4768
+// Function ID: 4769
 // Name: GuildScheduledEventsConstants
 // Dependencies: [1071, 1088, 2]
 
-// Module 4649 (GuildScheduledEventsConstants)
+// Module 4768 (GuildScheduledEventsConstants)
 import Constants from "Constants" /* 1071 */;
 import DurationsDefault from "Durations" /* 1088 */;
 import size from "module_2" /* 2 */;

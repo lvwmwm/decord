@@ -1,21 +1,21 @@
-// Module ID: 9753
-// Function ID: 9754
+// Module ID: 9873
+// Function ID: 9874
 // Name: GameProfileLinkAccount
-// Dependencies: [19, 17, 2163, 1386, 21, 4794, 575, 7253, 9754, 9755, 7401, 504, 9654, 1112, 5481, 1186, 5385, 5392, 9757, 2]
+// Dependencies: [19, 17, 2164, 1386, 21, 4913, 575, 7373, 9874, 9875, 7521, 504, 9774, 1112, 5600, 1186, 5504, 5511, 9877, 2]
 // Exports: default
 
-// Module 9753 (GameProfileLinkAccount)
+// Module 9873 (GameProfileLinkAccount)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 7253 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9654 */;
-import GameProfileSection from "GameProfileSection" /* 9754 */;
-import GameProfileSkeleton from "GameProfileSkeleton" /* 9755 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7373 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9774 */;
+import GameProfileSection from "GameProfileSection" /* 9874 */;
+import GameProfileSkeleton from "GameProfileSkeleton" /* 9875 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 2163 */;
+import ApplicationStore from "ApplicationStore" /* 2164 */;
 import UserStore from "UserStore" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 const GameProfileSkeletonDefault = GameProfileSkeleton;
@@ -105,7 +105,7 @@ let closure_11 = react.memo(function GameProfileLinkAccountSkeleton() {
   let tmp5Result = !tmp4;
   if (tmp5Result) {
     const obj13 = { style: tmp.skeletonCardContentBodySecondary };
-    tmp5Result = tmp5(tmp2(9755), obj13);
+    tmp5Result = tmp5(tmp2(9875), obj13);
   }
   items4[2] = tmp5Result;
   const obj14 = { showViewAllSkeleton: false, skeletonTitleWidth: 90, children: metroImportDefault(View, obj) };

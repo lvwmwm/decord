@@ -1,13 +1,13 @@
-// Module ID: 7109
-// Function ID: 7110
+// Module ID: 7229
+// Function ID: 7230
 // Name: useTextField
-// Dependencies: [32, 19, 4801, 1112, 5804, 2]
+// Dependencies: [32, 19, 4920, 1112, 5923, 2]
 // Exports: useTextField
 
-// Module 7109 (useTextField)
+// Module 7229 (useTextField)
 import intl2 from "intl" /* 1112 */;
-import shared from "shared" /* 4801 */;
-import react_native from "react-native" /* 5804 */;
+import shared from "shared" /* 4920 */;
+import react_native from "react-native" /* 5923 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

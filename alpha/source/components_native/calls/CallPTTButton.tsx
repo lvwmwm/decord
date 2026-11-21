@@ -1,20 +1,20 @@
-// Module ID: 10751
-// Function ID: 10752
+// Module ID: 10871
+// Function ID: 10872
 // Name: CallPTTButton
-// Dependencies: [32, 19, 4643, 2131, 5535, 1071, 21, 4794, 575, 4791, 504, 10547, 10594, 10752, 5054, 1706, 1653, 1186, 1112, 2]
+// Dependencies: [32, 19, 4762, 2131, 5654, 1071, 21, 4913, 575, 4910, 504, 10667, 10714, 10872, 5173, 1706, 1653, 1186, 1112, 2]
 
-// Module 10751 (CallPTTButton)
+// Module 10871 (CallPTTButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
-import MediaEngineActionCreators from "MediaEngineActionCreators" /* 10752 */;
+import MediaEngineActionCreators from "MediaEngineActionCreators" /* 10872 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4643 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
 import MediaEngineStore from "MediaEngineStore" /* 2131 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5535 */;
-import createStyles_mod from "createStyles" /* 4794 */;
-import ColorUtils_mod from "ColorUtils" /* 4791 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5654 */;
+import createStyles_mod from "createStyles" /* 4913 */;
+import ColorUtils_mod from "ColorUtils" /* 4910 */;
 import size from "module_2" /* 2 */;
 
 let ColorUtils;

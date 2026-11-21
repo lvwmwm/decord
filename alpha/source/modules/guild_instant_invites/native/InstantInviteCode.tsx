@@ -1,23 +1,23 @@
-// Module ID: 13733
-// Function ID: 13734
+// Module ID: 13855
+// Function ID: 13856
 // Name: InstantInviteCode
-// Dependencies: [19, 17, 4647, 4736, 1386, 21, 4794, 575, 7516, 7561, 5810, 5385, 5410, 5503, 1112, 10423, 2]
+// Dependencies: [19, 17, 4766, 4855, 1386, 21, 4913, 575, 7636, 7681, 5929, 5504, 5529, 5622, 1112, 10543, 2]
 // Exports: default
 
-// Module 13733 (InstantInviteCode)
+// Module 13855 (InstantInviteCode)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
-import ChannelRecord from "ChannelRecord" /* 4647 */;
-import useChannelName from "useChannelName" /* 5410 */;
-import ClockIcon from "ClockIcon" /* 5503 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 7516 */;
-import CountDownDefault from "CountDown" /* 10423 */;
+import ChannelRecord from "ChannelRecord" /* 4766 */;
+import useChannelName from "useChannelName" /* 5529 */;
+import ClockIcon from "ClockIcon" /* 5622 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 7636 */;
+import CountDownDefault from "CountDown" /* 10543 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4736 */;
+import RelationshipStore from "RelationshipStore" /* 4855 */;
 import UserStore from "UserStore" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4794 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -36,24 +36,24 @@ class InstantInviteDetails {
     const obj = utils_ChannelUtils;
     let TextIcon = obj.getSimpleChannelIconComponent(channel);
     if (TextIcon == null) {
-      TextIcon = tmp2(7561).TextIcon;
+      TextIcon = tmp2(7681).TextIcon;
     }
-    const Stack = tmp2(5810).Stack;
+    const Stack = tmp2(5929).Stack;
     const obj2 = { direction: "horizontal", align: "center", children: items };
-    const Stack2 = tmp2(5810).Stack;
+    const Stack2 = tmp2(5929).Stack;
     items = [metroImportAll(TextIcon, { color: "icon-subtle", size: "xs" }), ];
     const obj3 = { variant: "body-md/semibold", color: "text-subtle", style: tmp.channel, lineClamp: 1, children: tmp2Result.computeChannelName(channel, UserStore, RelationshipStore, false) };
-    const Text = tmp2(5385).Text;
+    const Text = tmp2(5504).Text;
     tmp2Result = useChannelName;
     items[1] = metroImportAll(Text, obj3);
     const children = [React4(Stack2, obj2), ];
     let tmp4Result = null != expiresAt;
     if (tmp4Result) {
       const obj4 = { direction: "horizontal", align: "center", children: items2 };
-      const Stack3 = tmp2(5810).Stack;
+      const Stack3 = tmp2(5929).Stack;
       items2 = [metroImportAll(ClockIcon.ClockIcon, { size: "xs", color: "icon-subtle" }), , ];
       const obj5 = { variant: "body-md/semibold", color: "text-subtle", children: intl.string(intl2.t.aTABYx) };
-      const Text2 = tmp2(5385).Text;
+      const Text2 = tmp2(5504).Text;
       intl = tmp2(1112).intl;
       items2[1] = metroImportAll(Text2, obj5);
       const obj6 = { style: tmp.time, deadline: expiresAt };
@@ -81,10 +81,10 @@ export default function InstantInviteCode(invite) {
   const obj = { style: closure_10().flex, children: closure_9(Stack, obj2) };
   const memo = react.useMemo(() => closure_5(invite.channel), items);
   obj2 = { children: items1 };
-  Stack = invite(5810).Stack;
+  Stack = invite(5929).Stack;
   items1 = [, ];
   const obj3 = { variant: "body-lg/semibold", tabularNumbers: true, children: invite.code };
-  items1[0] = closure_8(invite(5385).Text, obj3);
+  items1[0] = closure_8(invite(5504).Text, obj3);
   const obj4 = { channel: memo, expiresAt: invite.getExpiresAt() };
   items1[1] = closure_8(InstantInviteDetails, obj4);
   return closure_8(View, obj);

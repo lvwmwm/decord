@@ -1,21 +1,21 @@
-// Module ID: 19103
-// Function ID: 19104
+// Module ID: 19230
+// Function ID: 19231
 // Name: useVoicePanelParticipants
-// Dependencies: [32, 19, 6501, 6417, 502, 4643, 5535, 5442, 5538, 11630, 1071, 10735, 17910, 504, 17629, 11629, 11632, 2]
+// Dependencies: [32, 19, 6620, 6536, 502, 4762, 5654, 5561, 5657, 11750, 1071, 10855, 18036, 504, 17753, 11749, 11752, 2]
 // Exports: default, useChunkedParticipants
 
-// Module 19103 (useVoicePanelParticipants)
+// Module 19230 (useVoicePanelParticipants)
 import Constants from "Constants" /* 1071 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6501 */;
-import StageChannelRoleStore from "StageChannelRoleStore" /* 6417 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6620 */;
+import StageChannelRoleStore from "StageChannelRoleStore" /* 6536 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4643 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 5535 */;
-import VoiceStateStore from "VoiceStateStore" /* 5442 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5538 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11630 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5654 */;
+import VoiceStateStore from "VoiceStateStore" /* 5561 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5657 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11750 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

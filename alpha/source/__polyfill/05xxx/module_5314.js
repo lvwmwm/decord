@@ -1,73 +1,15 @@
 // Module ID: 5314
 // Function ID: 5315
-// Dependencies: [5267, 19, 5312]
-// Exports: useOnListLoad
+// Dependencies: [5315, 5317, 5318, 5319]
 
 // Module 5314
-import _slicedToArray2 from "_slicedToArray" /* 5312 */;
-import _slicedToArray from "_slicedToArray" /* 5267 */;
-import react from "react" /* 19 */;
+import _modDef5315 from "module_5315" /* 5315 */;
+import _modDef5317 from "module_5317" /* 5317 */;
+import _modDef5318 from "module_5318" /* 5318 */;
+import _modDef5319 from "module_5319" /* 5319 */;
 
-let isFirstLayoutComplete;
 
-let c3;
-let closure_4;
-let hasOwnProperty;
-let metroRequire;
-({ useEffect: c3, useMemo: closure_4, useRef: hasOwnProperty, useState: metroRequire } = react);
-function useOnLoad(arg0, arg1) {
-  let closure_0 = arg0;
-  let closure_1 = arg1;
-  let closure_2 = hasOwnProperty(false);
-  _false(() => {
-    isFirstLayoutComplete = isFirstLayoutComplete.getIsFirstLayoutComplete() && !ref.current;
-    if (isFirstLayoutComplete) {
-      ref.current = true;
-      f87306();
-    }
-  });
-}
-
-export const useOnListLoad = (getDataLength, arg1) => {
-  let closure_129_3;
-  let tmp3;
-  let closure_0 = getDataLength;
-  let closure_1 = arg1;
-  let tmp = hasOwnProperty;
-  let closure_2 = hasOwnProperty(Date.now());
-  [tmp3, closure_129_3] = _slicedToArray(metroRequire(false), 2);
-  const tmp2 = _slicedToArray(metroRequire(false), 2);
-  const dataLength = getDataLength.getDataLength();
-  let obj = _slicedToArray2;
-  const requestAnimationFrame = obj.useUnmountAwareAnimationFrame().requestAnimationFrame;
-  const items = [dataLength];
-  React3(() => {
-    closure_2.current = Date.now();
-  }, items);
-  if (typeof useOnLoad === "function") {
-    closure_0 = getDataLength;
-    const f87306 = () => {
-      const elapsedTimeInMs = Date.now() - ref.current;
-      const tmp = closure_4(() => {
-        elapsedTimeInMs.isFirstPaintOnUiComplete = true;
-        if (f87306 != null) {
-          const obj = { elapsedTimeInMs };
-          tmp(obj);
-        }
-        closure_2_3(true);
-      });
-    };
-    closure_2 = tmp(false);
-    _false(() => {
-      isFirstLayoutComplete = isFirstLayoutComplete.getIsFirstLayoutComplete() && !ref.current;
-      if (isFirstLayoutComplete) {
-        ref.current = true;
-        f87306();
-      }
-    });
-    return { isLoaded: tmp3 };
-  } else {
-    throw new TypeError("Trying to call a non-function");
-  }
-};
-export { useOnLoad };
+export const TouchableHighlight = _modDef5315;
+export const TouchableNativeFeedback = _modDef5317;
+export const TouchableOpacity = _modDef5318;
+export const TouchableWithoutFeedback = _modDef5319;

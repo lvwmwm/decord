@@ -1,11 +1,11 @@
-// Module ID: 6406
-// Function ID: 6407
+// Module ID: 6525
+// Function ID: 6526
 // Name: MemberVerificationAlertCancelPending
-// Dependencies: [19, 21, 6407, 6403, 1112, 5392, 2]
+// Dependencies: [19, 21, 6526, 6522, 1112, 5511, 2]
 // Exports: default
 
-// Module 6406 (MemberVerificationAlertCancelPending)
-import GuildJoinRequestActionCreatorsDefault from "GuildJoinRequestActionCreators" /* 6407 */;
+// Module 6525 (MemberVerificationAlertCancelPending)
+import GuildJoinRequestActionCreatorsDefault from "GuildJoinRequestActionCreators" /* 6526 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -38,14 +38,14 @@ export default function MemberVerificationAlertCancelPending(guildId) {
     const result = obj.removeGuildJoinRequest(guildId);
   }, items);
   let obj = { header: intl.string(guildId(1112).t.KYiN1Q), subtitle: subtitleText, buttons: tmp8(tmp9, obj2) };
-  const tmp5 = onClose(6403);
+  const tmp5 = onClose(6522);
   const merged1 = Object.assign(merged);
   intl = guildId(1112).intl;
   if (subtitleText == null) {
     const intl2 = tmp7(1112).intl;
     subtitleText = intl2.string(tmp7(1112).t.nQHxqm);
   }
-  const Button = tmp7(5392).Button;
+  const Button = tmp7(5511).Button;
   tmp8 = closure_6;
   tmp9 = closure_5;
   if (confirmText == null) {
@@ -55,7 +55,7 @@ export default function MemberVerificationAlertCancelPending(guildId) {
   obj2 = { children: items1 };
   items1 = [closure_4(Button, { variant: "destructive", text: confirmText, onPress: callback }), ];
   const obj3 = { text: intl4.string(guildId(1112).t.bANR0R), variant: "secondary", onPress: onClose };
-  const Button2 = tmp7(5392).Button;
+  const Button2 = tmp7(5511).Button;
   intl4 = tmp7(1112).intl;
   items1[1] = closure_4(Button2, obj3);
   return closure_4(tmp5, obj);

@@ -1,14 +1,14 @@
-// Module ID: 13626
-// Function ID: 13627
+// Module ID: 13748
+// Function ID: 13749
 // Name: conjureRouteRewriter
-// Dependencies: [1071, 4650, 4845, 4832, 2]
+// Dependencies: [1071, 4769, 4964, 4951, 2]
 // Exports: default
 
-// Module 13626 (conjureRouteRewriter)
+// Module 13748 (conjureRouteRewriter)
 import Constants from "Constants" /* 1071 */;
-import ChannelConstants from "ChannelConstants" /* 4650 */;
-import matchPathCompat from "matchPathCompat" /* 4832 */;
-import RouteUtils from "RouteUtils" /* 4845 */;
+import ChannelConstants from "ChannelConstants" /* 4769 */;
+import matchPathCompat from "matchPathCompat" /* 4951 */;
+import RouteUtils from "RouteUtils" /* 4964 */;
 import size from "module_2" /* 2 */;
 
 const Routes = Constants.Routes;

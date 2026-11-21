@@ -1,10 +1,10 @@
-// Module ID: 12707
-// Function ID: 12708
+// Module ID: 12829
+// Function ID: 12830
 // Name: MobileRTCV2Experiment
 // Dependencies: [1450, 2]
 // Exports: useIsMobileRTCV2Enabled, useShouldAnimateSpeakerLevels
 
-// Module 12707 (MobileRTCV2Experiment)
+// Module 12829 (MobileRTCV2Experiment)
 import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 

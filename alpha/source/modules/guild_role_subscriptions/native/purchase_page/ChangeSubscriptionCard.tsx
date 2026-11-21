@@ -1,24 +1,24 @@
-// Module ID: 18069
-// Function ID: 18070
+// Module ID: 18195
+// Function ID: 18196
 // Name: ChangeSubscriptionCard
-// Dependencies: [32, 19, 17, 1071, 21, 4794, 575, 5385, 1628, 16507, 2167, 5022, 1112, 1186, 18062, 6310, 18070, 2119, 5008, 2]
+// Dependencies: [32, 19, 17, 1071, 21, 4913, 575, 5504, 1628, 16630, 2168, 5141, 1112, 1186, 18188, 6429, 18196, 2119, 5127, 2]
 // Exports: default
 
-// Module 18069 (ChangeSubscriptionCard)
+// Module 18195 (ChangeSubscriptionCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
 import asyncRequire from "asyncRequire" /* 2119 */;
-import _modDef2167 from "module_2167" /* 2167 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5008 */;
-import Text_Text from "Text/Text" /* 5385 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6310 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16507 */;
+import _modDef2168 from "module_2168" /* 2168 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6429 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16630 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4794 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -54,7 +54,7 @@ export default function ChangeSubscriptionCard(activeSubscription) {
   const first = _slicedToArray(obj.useName(activeListingId), 1)[0];
   let obj2 = GuildRoleSubscriptionListingEditStateUtilsAll;
   const first1 = _slicedToArray(obj2.useName(changeToListingId), 1)[0];
-  let obj3 = _modDef2167(activeSubscription.currentPeriodEnd);
+  let obj3 = _modDef2168(activeSubscription.currentPeriodEnd);
   const status = activeSubscription.status;
   const CANCELED = SubscriptionStatusTypes.CANCELED;
   const obj4 = { style: items, children: items1 };
@@ -62,13 +62,13 @@ export default function ChangeSubscriptionCard(activeSubscription) {
   const obj5 = { paddingBottom: 16 + bottom };
   items[1] = obj5;
   const formatResult = obj3.format("MMMM Do");
-  const BottomSheet = activeSubscription(5022).BottomSheet;
+  const BottomSheet = activeSubscription(5141).BottomSheet;
   const obj6 = { variant: "heading-lg/semibold", color: "mobile-text-heading-primary", children: intl.format(activeSubscription(1112).t.l3uCCX, { activeListingName: first }) };
-  const Text = activeSubscription(5385).Text;
+  const Text = activeSubscription(5504).Text;
   intl = activeSubscription(1112).intl;
   items1 = [closure_7(Text, obj6), closure_7(activeSubscription(1186).Spacer, { size: 16 }), , ];
   const obj7 = { variant: "body-sm/normal", color: "text-default", children: items2 };
-  const Text2 = activeSubscription(5385).Text;
+  const Text2 = activeSubscription(5504).Text;
   const intl2 = activeSubscription(1112).intl;
   items2 = [, , ];
   const obj8 = { activeListingName: first, changeToListingName: first1, billingEndDate: formatResult, emphasisHook };
@@ -88,12 +88,12 @@ export default function ChangeSubscriptionCard(activeSubscription) {
       onPress: function handleCancelSubscription() {
           const obj = ModalActionCreatorsDefault;
           const obj2 = { subscriptionId: activeSubscription.id };
-          obj.pushLazy(asyncRequire(18070, dependencyMap.paths), obj2);
+          obj.pushLazy(asyncRequire(18196, dependencyMap.paths), obj2);
           const obj3 = ActionSheetActionCreatorsDefault;
           obj3.hideActionSheet();
         }
     };
-    const ArrowButton = tmp7(18062).ArrowButton;
+    const ArrowButton = tmp7(18188).ArrowButton;
     intl4 = tmp7(1112).intl;
     items3[1] = closure_7(ArrowButton, obj11);
     tmp8Result = tmp8(closure_9, obj10);

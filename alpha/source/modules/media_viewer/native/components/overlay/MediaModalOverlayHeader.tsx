@@ -1,25 +1,25 @@
-// Module ID: 10031
-// Function ID: 10032
+// Module ID: 10151
+// Function ID: 10152
 // Name: MediaModalOverlayHeader
-// Dependencies: [19, 17, 9601, 21, 4794, 10028, 9912, 10032, 4970, 1653, 5004, 9605, 9606, 1112, 7031, 1186, 575, 5385, 10033, 8538, 1378, 10040, 6902, 2]
+// Dependencies: [19, 17, 9721, 21, 4913, 10148, 10032, 10152, 5089, 1653, 5123, 9725, 9726, 1112, 7151, 1186, 575, 5504, 10153, 8658, 1378, 10160, 7022, 2]
 // Exports: MediaModalOverlayHeader
 
-// Module 10031 (MediaModalOverlayHeader)
+// Module 10151 (MediaModalOverlayHeader)
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
 import _mod1653 from "module_1653" /* 1653 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4970 */;
-import timing_timing from "timing/timing" /* 5004 */;
-import SharePreparingModalConstants from "SharePreparingModalConstants" /* 9601 */;
-import MediaViewerOverlayButtonDefault from "MediaViewerOverlayButton" /* 9606 */;
-import MediaShareActions from "MediaShareActions" /* 9912 */;
-import useOverlayLayoutDriver from "useOverlayLayoutDriver" /* 10028 */;
-import useShouldHideMediaOptionsDefault from "useShouldHideMediaOptions" /* 10032 */;
-import MediaViewerOverlayButtonFavoriteGIFDefault from "MediaViewerOverlayButtonFavoriteGIF" /* 10033 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5089 */;
+import timing_timing from "timing/timing" /* 5123 */;
+import SharePreparingModalConstants from "SharePreparingModalConstants" /* 9721 */;
+import MediaViewerOverlayButtonDefault from "MediaViewerOverlayButton" /* 9726 */;
+import MediaShareActions from "MediaShareActions" /* 10032 */;
+import useOverlayLayoutDriver from "useOverlayLayoutDriver" /* 10148 */;
+import useShouldHideMediaOptionsDefault from "useShouldHideMediaOptions" /* 10152 */;
+import MediaViewerOverlayButtonFavoriteGIFDefault from "MediaViewerOverlayButtonFavoriteGIF" /* 10153 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4794 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -29,10 +29,10 @@ let metroRequire;
 let tmp2;
 const intl2 = tmp2(1112);
 const native = tmp2(1186);
-const Text_Text = tmp2(5385);
-const XSmallIcon = tmp2(7031);
-const ContextMenu = tmp2(8538);
-const MediaModalOverlayHeaderWrapper2 = tmp2(9605);
+const Text_Text = tmp2(5504);
+const XSmallIcon = tmp2(7151);
+const ContextMenu = tmp2(8658);
+const MediaModalOverlayHeaderWrapper2 = tmp2(9725);
 ({ StyleSheet: c3, View: closure_4 } = react_native);
 const SHARE_PREPARING_MODAL_KEY = SharePreparingModalConstants.SHARE_PREPARING_MODAL_KEY;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);

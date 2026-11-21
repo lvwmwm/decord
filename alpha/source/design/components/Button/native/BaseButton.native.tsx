@@ -1,20 +1,20 @@
-// Module ID: 5401
-// Function ID: 5402
+// Module ID: 5520
+// Function ID: 5521
 // Name: Button/BaseButton
-// Dependencies: [109, 19, 17, 1071, 5402, 21, 4855, 4794, 5399, 1653, 1254, 1378, 2]
+// Dependencies: [109, 19, 17, 1071, 5521, 21, 4974, 4913, 5518, 1653, 1254, 1378, 2]
 // Exports: BaseButton
 
-// Module 5401 (Button/BaseButton)
+// Module 5520 (Button/BaseButton)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1071 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
-import native from "native" /* 4855 */;
-import ButtonHooks from "ButtonHooks" /* 5399 */;
-import react_native from "react-native" /* 5402 */;
+import native from "native" /* 4974 */;
+import ButtonHooks from "ButtonHooks" /* 5518 */;
+import react_native from "react-native" /* 5521 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 4794 */;
+import createStyles from "createStyles" /* 4913 */;
 import module_1653_mod from "module_1653" /* 1653 */;
 import size from "module_2" /* 2 */;
 
@@ -115,7 +115,7 @@ export function BaseButton(style) {
   }
   let tmp12 = children;
   if (null != DARK) {
-    tmp12 = jsx(tmp4(4855).ThemeContextProvider, { theme: DARK, children });
+    tmp12 = jsx(tmp4(4974).ThemeContextProvider, { theme: DARK, children });
   }
   const items1 = [style, , , ];
   if (flag) {

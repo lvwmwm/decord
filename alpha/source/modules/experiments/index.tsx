@@ -1,9 +1,9 @@
-// Module ID: 5734
-// Function ID: 5735
-// Dependencies: [5735, 2]
+// Module ID: 5853
+// Function ID: 5854
+// Dependencies: [5854, 2]
 
-// Module 5734
-import createExperiment from "createExperiment" /* 5735 */;
+// Module 5853
+import createExperiment from "createExperiment" /* 5854 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/experiments/index.tsx");

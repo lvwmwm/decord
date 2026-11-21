@@ -1,25 +1,25 @@
-// Module ID: 17790
-// Function ID: 17791
+// Module ID: 17916
+// Function ID: 17917
 // Name: HomeDrawerDM
-// Dependencies: [19, 17, 4647, 4736, 6433, 1386, 1082, 21, 4794, 504, 5410, 17791, 16600, 11581, 10244, 5385, 11005, 5455, 17758, 4976, 4973, 2]
+// Dependencies: [19, 17, 4766, 4855, 6552, 1386, 1082, 21, 4913, 504, 5529, 17917, 16723, 11701, 10364, 5504, 11125, 5574, 17884, 5095, 5092, 2]
 // Exports: default
 
-// Module 17790 (HomeDrawerDM)
+// Module 17916 (HomeDrawerDM)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1082 */;
-import ChannelRecord from "ChannelRecord" /* 4647 */;
-import HomeDrawerExperiment from "HomeDrawerExperiment" /* 4976 */;
-import Text_Text from "Text/Text" /* 5385 */;
-import useChannelName from "useChannelName" /* 5410 */;
-import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 5455 */;
-import ChannelRowPreview2 from "ChannelRowPreview" /* 11005 */;
-import useMessagePreviewsDefault from "useMessagePreviews" /* 16600 */;
+import ChannelRecord from "ChannelRecord" /* 4766 */;
+import HomeDrawerExperiment from "HomeDrawerExperiment" /* 5095 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import useChannelName from "useChannelName" /* 5529 */;
+import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 5574 */;
+import ChannelRowPreview2 from "ChannelRowPreview" /* 11125 */;
+import useMessagePreviewsDefault from "useMessagePreviews" /* 16723 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 4736 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6433 */;
+import RelationshipStore from "RelationshipStore" /* 4855 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6552 */;
 import UserStore from "UserStore" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4794 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, importDefault;
@@ -52,7 +52,7 @@ function HomeDrawerDMExpandedChildren(channel) {
     }
     return tmp2;
   });
-  const obj3 = channel(17791);
+  const obj3 = channel(17917);
   let tmp3 = useMessagePreviewsDefault(channel, { unread: obj3.useBaseChannelUnreadBadgeState(channel, false).unread });
   let closure_4 = tmp3;
   const items2 = [UserGuildSettingsStore];
@@ -97,9 +97,9 @@ function HomeDrawerDMExpandedChildren(channel) {
         isTemporary = tmp.isTemporary;
       }
       if (isTemporary) {
-        BellSlashIcon = tmp5(11581).BellZIcon;
+        BellSlashIcon = tmp5(11701).BellZIcon;
       } else {
-        BellSlashIcon = tmp5(10244).BellSlashIcon;
+        BellSlashIcon = tmp5(10364).BellSlashIcon;
       }
       tmp3 = BellSlashIcon;
     } else {
@@ -121,7 +121,7 @@ function HomeDrawerDMExpandedChildren(channel) {
     }
     return tmp2;
   }, items5);
-  return closure_10(channel(17758).HomeDrawerSharedItem, { title, subtitle });
+  return closure_10(channel(17884).HomeDrawerSharedItem, { title, subtitle });
 }
 const View = react_native.View;
 const isMultiUserDM = ChannelRecord.isMultiUserDM;

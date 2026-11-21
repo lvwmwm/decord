@@ -1,21 +1,21 @@
-// Module ID: 8835
-// Function ID: 8836
+// Module ID: 8955
+// Function ID: 8956
 // Name: LimitedTimeBadge
-// Dependencies: [19, 17, 2187, 1191, 21, 4794, 575, 1112, 504, 4801, 8836, 5385, 2]
+// Dependencies: [19, 17, 2188, 1191, 21, 4913, 575, 1112, 504, 4920, 8956, 5504, 2]
 // Exports: default
 
-// Module 8835 (LimitedTimeBadge)
+// Module 8955 (LimitedTimeBadge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl8 from "intl" /* 1112 */;
-import shared from "shared" /* 4801 */;
-import useCountdownDefault from "useCountdown" /* 8836 */;
+import shared from "shared" /* 4920 */;
+import useCountdownDefault from "useCountdown" /* 8956 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2187 */;
+import LocaleStore from "LocaleStore" /* 2188 */;
 import ThemeStore from "ThemeStore" /* 1191 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -90,7 +90,7 @@ export default function LimitedTimeBadge(unpublishedAt) {
   items3[1] = stateFromStores ? tmp.backgroundDarkMode : tmp.backgroundLightMode;
   items3[2] = style;
   let str2 = "text-overlay-light";
-  const Text = tmp2(5385).Text;
+  const Text = tmp2(5504).Text;
   if (stateFromStores) {
     str2 = "text-overlay-dark";
   }

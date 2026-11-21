@@ -1,30 +1,30 @@
-// Module ID: 16506
-// Function ID: 16507
+// Module ID: 16629
+// Function ID: 16630
 // Name: UserSettingsGuildRoleSubscriptionsCancel
-// Dependencies: [5, 32, 19, 17, 2177, 21, 4794, 575, 16507, 2167, 1112, 7202, 1186, 5385, 16499, 5481, 16515, 7400, 7419, 9127, 5742, 6241, 5475, 6232, 5392, 16503, 16494, 16516, 16517, 504, 2]
+// Dependencies: [5, 32, 19, 17, 2178, 21, 4913, 575, 16630, 2168, 1112, 7322, 1186, 5504, 16622, 5600, 16638, 7520, 7539, 9247, 5861, 6360, 5594, 6351, 5511, 16626, 16617, 16639, 16640, 504, 2]
 // Exports: default
 
-// Module 16506 (UserSettingsGuildRoleSubscriptionsCancel)
+// Module 16629 (UserSettingsGuildRoleSubscriptionsCancel)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
-import _modDef2167 from "module_2167" /* 2167 */;
-import Text_Text from "Text/Text" /* 5385 */;
-import FastImageDefault from "FastImage" /* 5481 */;
-import GuildIconDefault from "GuildIcon" /* 7202 */;
-import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 16494 */;
-import FormSeparatorDefault from "FormSeparator" /* 16499 */;
-import useManageSubscriptionCardDataDefault from "useManageSubscriptionCardData" /* 16503 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16507 */;
-import AssetRegistryDefault from "AssetRegistry" /* 16515 */;
-import GuildRoleSubscriptionCardAll from "GuildRoleSubscriptionCard" /* 16517 */;
+import _modDef2168 from "module_2168" /* 2168 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import FastImageDefault from "FastImage" /* 5600 */;
+import GuildIconDefault from "GuildIcon" /* 7322 */;
+import GuildRoleSubscriptionsHooks from "GuildRoleSubscriptionsHooks" /* 16617 */;
+import FormSeparatorDefault from "FormSeparator" /* 16622 */;
+import useManageSubscriptionCardDataDefault from "useManageSubscriptionCardData" /* 16626 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16630 */;
+import AssetRegistryDefault from "AssetRegistry" /* 16638 */;
+import GuildRoleSubscriptionCardAll from "GuildRoleSubscriptionCard" /* 16640 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SubscriptionStore from "SubscriptionStore" /* 2177 */;
+import SubscriptionStore from "SubscriptionStore" /* 2178 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let _undefined, c4, c5, dependencyMap;
@@ -36,7 +36,7 @@ let obj2;
 let obj4;
 let tmp2;
 let unpackModuleId;
-const FastAssetImageDefault = tmp2(16516);
+const FastAssetImageDefault = tmp2(16639);
 function WhatYouLose(subscription) {
   let guild;
   let intl3;
@@ -56,7 +56,7 @@ function WhatYouLose(subscription) {
   const first2 = _slicedToArray(obj3.useIntangibleBenefits(listingId), 1)[0];
   const obj4 = GuildRoleSubscriptionListingEditStateUtilsAll;
   const first3 = _slicedToArray(obj4.useName(listingId), 1)[0];
-  const obj5 = _modDef2167(subscription.currentPeriodEnd);
+  const obj5 = _modDef2168(subscription.currentPeriodEnd);
   const formatResult = obj5.format(c12);
   const intl = intl4.intl;
   const formatResult1 = intl.format(intl4.t.EtAXzC, { subscriptionEndDate: formatResult });
@@ -104,9 +104,9 @@ function CancelSubscriptionButtonFooter(guild) {
   [tmp3, c3] = cancelSubscription(isPurchasedViaAppleGeneric.useState(false), 2);
   const tmp4 = dependencyMap;
   const tmp2 = cancelSubscription(isPurchasedViaAppleGeneric.useState(false), 2);
-  const tmp5 = subscription(7400);
-  const analyticsLocations = tmp5(subscription(7419).GUILD_ROLE_SUBSCRIPTION_CANCELLATION_MODAL).analyticsLocations;
-  let obj = subscription(9127);
+  const tmp5 = subscription(7520);
+  const analyticsLocations = tmp5(subscription(7539).GUILD_ROLE_SUBSCRIPTION_CANCELLATION_MODAL).analyticsLocations;
+  let obj = subscription(9247);
   const cancelSubscription1 = obj.useCancelSubscription(subscription.id, subscription.isACOM);
   cancelSubscription = cancelSubscription1.cancelSubscription;
   isPurchasedViaAppleGeneric = subscription.isPurchasedViaAppleGeneric;
@@ -281,7 +281,7 @@ function CancelSubscriptionButtonFooter(guild) {
       }
     }
   }), items);
-  Button = guild(5392).Button;
+  Button = guild(5511).Button;
   const tmp9 = closure_7;
   if (!tmp3) {
     if (isPurchasedViaAppleGeneric) {
@@ -328,7 +328,7 @@ function Content(subscription) {
       const obj5 = { guild, listingId: listing.id, subscription };
       items1 = [authStore(WhatYouLose, obj5), authStore(native.Spacer, { size: 24 }), , , ];
       const obj6 = { variant: "body-sm/semibold", color: "text-default", children: intl.string(intl4.t.xyvN8p) };
-      const Text = tmp5(5385).Text;
+      const Text = tmp5(5504).Text;
       intl = tmp5(1112).intl;
       items1[2] = authStore(Text, obj6);
       items1[3] = authStore(native.Spacer, { size: 16 });

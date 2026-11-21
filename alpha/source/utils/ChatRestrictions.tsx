@@ -1,12 +1,12 @@
-// Module ID: 11135
-// Function ID: 11136
+// Module ID: 11255
+// Function ID: 11256
 // Name: ChatRestrictions
-// Dependencies: [1071, 11136, 1112, 2]
+// Dependencies: [1071, 11256, 1112, 2]
 
-// Module 11135 (ChatRestrictions)
+// Module 11255 (ChatRestrictions)
 import Constants from "Constants" /* 1071 */;
 import intl3 from "intl" /* 1112 */;
-import MentionGuardUtilsDefault from "MentionGuardUtils" /* 11136 */;
+import MentionGuardUtilsDefault from "MentionGuardUtils" /* 11256 */;
 import size from "module_2" /* 2 */;
 
 const TOKEN_REGEX = Constants.TOKEN_REGEX;

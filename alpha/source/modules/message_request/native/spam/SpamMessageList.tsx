@@ -1,21 +1,21 @@
-// Module ID: 18887
-// Function ID: 18888
+// Module ID: 19014
+// Function ID: 19015
 // Name: SpamMessageList
-// Dependencies: [19, 17, 1071, 21, 4794, 575, 1112, 13215, 5476, 5527, 6310, 13207, 1255, 6910, 18872, 1186, 14181, 16105, 7589, 1628, 18881, 18888, 18879, 5355, 6246, 6251, 18882, 7370, 1378, 5385, 2]
+// Dependencies: [19, 17, 1071, 21, 4913, 575, 1112, 13337, 5595, 5646, 6429, 13329, 1255, 7030, 18999, 1186, 14303, 16228, 7709, 1628, 19008, 19015, 19006, 5474, 6365, 6370, 19009, 7490, 1378, 5504, 2]
 // Exports: default
 
-// Module 18887 (SpamMessageList)
+// Module 19014 (SpamMessageList)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import transitionToChannel from "transitionToChannel" /* 5527 */;
-import MonitoringAgentDefault from "MonitoringAgent" /* 6246 */;
-import MetricEvents from "MetricEvents" /* 6251 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6310 */;
+import transitionToChannel from "transitionToChannel" /* 5646 */;
+import MonitoringAgentDefault from "MonitoringAgent" /* 6365 */;
+import MetricEvents from "MetricEvents" /* 6370 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6429 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

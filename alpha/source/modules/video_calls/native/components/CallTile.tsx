@@ -1,33 +1,33 @@
-// Module ID: 10959
-// Function ID: 10960
+// Module ID: 11079
+// Function ID: 11080
 // Name: CallTile
-// Dependencies: [19, 17, 6281, 1386, 10516, 5444, 21, 4794, 4791, 575, 7400, 1628, 504, 5530, 7947, 10599, 10927, 10620, 10653, 10960, 10965, 10966, 6962, 10967, 10968, 1186, 10524, 1653, 5004, 10969, 2]
+// Dependencies: [19, 17, 6400, 1386, 10636, 5563, 21, 4913, 4910, 575, 7520, 1628, 504, 5649, 8067, 10719, 11047, 10740, 10773, 11080, 11085, 11086, 7082, 11087, 11088, 1186, 10644, 1653, 5123, 11089, 2]
 
-// Module 10959 (CallTile)
+// Module 11079 (CallTile)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1186 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
 import _mod1653 from "module_1653" /* 1653 */;
-import timing_timing from "timing/timing" /* 5004 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5530 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6962 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7947 */;
-import RevealProvider from "RevealProvider" /* 10524 */;
-import TouchableStreamPreviewDefault from "TouchableStreamPreview" /* 10960 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 10965 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 10966 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 10967 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 10968 */;
-import ParticipantTitleDefault from "ParticipantTitle" /* 10969 */;
+import timing_timing from "timing/timing" /* 5123 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5649 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7082 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8067 */;
+import RevealProvider from "RevealProvider" /* 10644 */;
+import TouchableStreamPreviewDefault from "TouchableStreamPreview" /* 11080 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11085 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 11086 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 11087 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 11088 */;
+import ParticipantTitleDefault from "ParticipantTitle" /* 11089 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6281 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6400 */;
 import UserStore from "UserStore" /* 1386 */;
-import ChannelCallStore from "ChannelCallStore" /* 10516 */;
-import CallConstants from "CallConstants" /* 5444 */;
+import ChannelCallStore from "ChannelCallStore" /* 10636 */;
+import CallConstants from "CallConstants" /* 5563 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4794 */;
-import ColorUtils_mod from "ColorUtils" /* 4791 */;
+import createStyles_mod from "createStyles" /* 4913 */;
+import ColorUtils_mod from "ColorUtils" /* 4910 */;
 import size from "module_2" /* 2 */;
 
 let obj1;

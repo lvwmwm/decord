@@ -1,9 +1,9 @@
-// Module ID: 9711
-// Function ID: 9712
+// Module ID: 9831
+// Function ID: 9832
 // Name: OpenCriticTier
 // Dependencies: [2]
 
-// Module 9711 (OpenCriticTier)
+// Module 9831 (OpenCriticTier)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/OpenCriticTier.tsx");

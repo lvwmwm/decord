@@ -1,30 +1,30 @@
-// Module ID: 14464
-// Function ID: 14465
+// Module ID: 14586
+// Function ID: 14587
 // Name: UserProfileRecentActivityCard
-// Dependencies: [19, 17, 21, 14342, 7890, 14347, 4794, 575, 8876, 4855, 7857, 4801, 5481, 1412, 2151, 5385, 14329, 7400, 7419, 14354, 14355, 9645, 9654, 6910, 1112, 2]
+// Dependencies: [19, 17, 21, 14464, 8010, 14469, 4913, 575, 8996, 4974, 7977, 4920, 5600, 1412, 2152, 5504, 14451, 7520, 7539, 14476, 14477, 9765, 9774, 7030, 1112, 2]
 // Exports: default
 
-// Module 14464 (UserProfileRecentActivityCard)
+// Module 14586 (UserProfileRecentActivityCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AvatarUtils from "AvatarUtils" /* 1412 */;
-import StringUtils from "StringUtils" /* 2151 */;
-import shared from "shared" /* 4801 */;
-import native from "native" /* 4855 */;
-import FastImageDefault from "FastImage" /* 5481 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7400 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7419 */;
-import utils from "utils" /* 7890 */;
-import ContentInventoryTypes from "ContentInventoryTypes" /* 8876 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9654 */;
-import ContentInventoryActivityImageUtils from "ContentInventoryActivityImageUtils" /* 14329 */;
-import BadgesAll from "Badges" /* 14342 */;
-import TrendingType from "TrendingType" /* 14347 */;
-import useTrackUserProfileActivityActionDefault from "useTrackUserProfileActivityAction" /* 14354 */;
-import useTrackUserProfileActivityViewDefault from "useTrackUserProfileActivityView" /* 14355 */;
+import StringUtils from "StringUtils" /* 2152 */;
+import shared from "shared" /* 4920 */;
+import native from "native" /* 4974 */;
+import FastImageDefault from "FastImage" /* 5600 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7520 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7539 */;
+import utils from "utils" /* 8010 */;
+import ContentInventoryTypes from "ContentInventoryTypes" /* 8996 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9774 */;
+import ContentInventoryActivityImageUtils from "ContentInventoryActivityImageUtils" /* 14451 */;
+import BadgesAll from "Badges" /* 14464 */;
+import TrendingType from "TrendingType" /* 14469 */;
+import useTrackUserProfileActivityActionDefault from "useTrackUserProfileActivityAction" /* 14476 */;
+import useTrackUserProfileActivityViewDefault from "useTrackUserProfileActivityView" /* 14477 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -35,7 +35,7 @@ let obj9;
 let rect;
 let size;
 let tmp4;
-const useOpenGameProfileModalDefault = tmp4(9645);
+const useOpenGameProfileModalDefault = tmp4(9765);
 function GamingEntryBadges(entry) {
   let mapped;
   let obj4;
@@ -45,7 +45,7 @@ function GamingEntryBadges(entry) {
   const found = items.filter((predicate) => predicate.predicate(entry));
   let obj = { location: "user-profile", style: tmp.badges, children: mapped };
   const BadgesContainer = BadgesAll.BadgesContainer;
-  let obj2 = entry(8876);
+  let obj2 = entry(8996);
   if (obj2.isTopGameEntry(entry)) {
     const obj3 = { style: tmp.badgeCell, children: closure_6(BadgesAll.TopGameBadge, obj4) };
     obj4 = { entry };
@@ -150,7 +150,7 @@ let closure_11 = react.memo(function EntryImage(poster) {
     items = [, ];
     ({ imageContainer: arr2[0], imageAspectRatio: arr2[1] } = tmp);
     obj3 = { size: "custom", style: tmp.largeImage, color: isThemeDarkResult ? colors.WHITE : colors.BLACK };
-    UnknownGameIcon = tmp2(7857).UnknownGameIcon;
+    UnknownGameIcon = tmp2(7977).UnknownGameIcon;
     const tmp2Result = shared;
     isThemeDarkResult = tmp2Result.isThemeDark(theme);
     colors = nativeDefault.colors;
@@ -173,7 +173,7 @@ let closure_11 = react.memo(function EntryImage(poster) {
     if (tmp5Result) {
       const obj6 = { style: tmp.smallImageBackground, children: metroRequire(tmp6Result, obj7) };
       obj7 = { source: tmp2Result4.makeSource(smallImage.src), accessibilityLabel: smallImage.alt, style: tmp.smallImage };
-      tmp6Result = tmp6(5481);
+      tmp6Result = tmp6(5600);
       tmp2Result4 = AvatarUtils;
       tmp5Result = tmp5(tmp17, obj6);
     }
@@ -206,7 +206,7 @@ let closure_12 = react.memo(function EntryCardBody(arg0) {
   obj6.isNullOrEmpty(title);
   if (tmp2Result) {
     const obj7 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: title };
-    tmp2Result = tmp2(tmp5(5385).Text, obj7);
+    tmp2Result = tmp2(tmp5(5504).Text, obj7);
   }
   items1 = [tmp2Result, , ];
   const tmp5Result = StringUtils;
@@ -214,7 +214,7 @@ let closure_12 = react.memo(function EntryCardBody(arg0) {
   tmp5Result.isNullOrEmpty(subtitle);
   if (tmp2Result2) {
     const obj8 = { variant: "body-xs/medium", lineClamp: 1, children: subtitle };
-    tmp2Result2 = tmp2(tmp5(5385).Text, obj8);
+    tmp2Result2 = tmp2(tmp5(5504).Text, obj8);
   }
   items1[1] = tmp2Result2;
   const tmp5Result2 = ContentInventoryTypes;
@@ -323,10 +323,10 @@ export default function UserProfileRecentActivityCard(style) {
   const tmp20 = metroRequire(closure_12, { entry, largeImage, smallImage, title: str, subtitle: trimmed, style });
   const obj9 = { value: analyticsLocations, children: tmp19Result };
   tmp19Result = tmp20;
-  const AnalyticsLocationProvider = tmp(7400).AnalyticsLocationProvider;
+  const AnalyticsLocationProvider = tmp(7520).AnalyticsLocationProvider;
   if (null != tmp4ResultResult) {
     const obj10 = { onPress: callback, accessibilityRole: "button", accessibilityLabel: formatToPlainString(v9sZWVp, obj11), children: tmp20 };
-    const PressableOpacity = tmp(6910).PressableOpacity;
+    const PressableOpacity = tmp(7030).PressableOpacity;
     const intl = tmp(1112).intl;
     formatToPlainString = intl.formatToPlainString;
     v9sZWVp = tmp(1112).t["9sZWVp"];

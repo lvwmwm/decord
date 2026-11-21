@@ -1,21 +1,21 @@
-// Module ID: 9387
-// Function ID: 9388
+// Module ID: 9507
+// Function ID: 9508
 // Name: PremiumGiftPromotionDetails
-// Dependencies: [19, 17, 4795, 21, 575, 4794, 5385, 504, 5481, 2112, 8860, 2]
+// Dependencies: [19, 17, 4914, 21, 575, 4913, 5504, 504, 5600, 2112, 8980, 2]
 // Exports: PremiumGiftPromotionCollectibleRewardDetails, default
 
-// Module 9387 (PremiumGiftPromotionDetails)
+// Module 9507 (PremiumGiftPromotionDetails)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import CollectiblesItemType from "CollectiblesItemType" /* 2112 */;
-import Text_Text from "Text/Text" /* 5385 */;
-import FastImageDefault from "FastImage" /* 5481 */;
-import SKUPreview from "SKUPreview" /* 8860 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import FastImageDefault from "FastImage" /* 5600 */;
+import SKUPreview from "SKUPreview" /* 8980 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4795 */;
+import AccessibilityStore from "AccessibilityStore" /* 4914 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let metroImportDefault;

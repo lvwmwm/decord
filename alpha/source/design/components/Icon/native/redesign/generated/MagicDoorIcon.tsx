@@ -1,14 +1,14 @@
-// Module ID: 16903
-// Function ID: 16904
+// Module ID: 17026
+// Function ID: 17027
 // Name: MagicDoorIcon
-// Dependencies: [19, 21, 575, 5480, 16904, 2]
+// Dependencies: [19, 21, 575, 5599, 17027, 2]
 // Exports: MagicDoorIcon
 
-// Module 16903 (MagicDoorIcon)
+// Module 17026 (MagicDoorIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5480 */;
-import AssetRegistry from "AssetRegistry" /* 16904 */;
+import BaseIconImage2 from "BaseIconImage" /* 5599 */;
+import AssetRegistry from "AssetRegistry" /* 17027 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

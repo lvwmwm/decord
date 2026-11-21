@@ -1,11 +1,11 @@
-// Module ID: 5744
-// Function ID: 5745
+// Module ID: 5863
+// Function ID: 5864
 // Name: react-native
-// Dependencies: [5745, 2]
+// Dependencies: [5864, 2]
 // Exports: default
 
-// Module 5744 (react-native)
-import react_nativeDefault from "react-native" /* 5745 */;
+// Module 5863 (react-native)
+import react_nativeDefault from "react-native" /* 5864 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/a11y/native/setAccessibilityFocusPrevious.tsx");

@@ -1,35 +1,35 @@
-// Module ID: 14740
-// Function ID: 14741
+// Module ID: 14863
+// Function ID: 14864
 // Name: VoiceMemberList
-// Dependencies: [32, 5, 19, 17, 4642, 1405, 6281, 4726, 1386, 5538, 1071, 1190, 5023, 1082, 21, 4794, 14736, 10806, 504, 7589, 13947, 1112, 10935, 11939, 7931, 5385, 10616, 7400, 2018, 6410, 10659, 6375, 14741, 14742, 1494, 14749, 4970, 12, 5008, 7947, 4855, 14750, 7329, 2]
+// Dependencies: [32, 5, 19, 17, 4761, 1405, 6400, 4845, 1386, 5657, 1071, 1190, 5142, 1082, 21, 4913, 14859, 10926, 504, 7709, 14069, 1112, 11055, 12059, 8051, 5504, 10736, 7520, 2018, 6529, 10779, 6494, 14864, 14865, 1494, 14872, 5089, 12, 5127, 8067, 4974, 14873, 7449, 2]
 // Exports: default
 
-// Module 14740 (VoiceMemberList)
+// Module 14863 (VoiceMemberList)
 import Constants2 from "Constants" /* 1082 */;
 import FormConstants from "FormConstants" /* 1190 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5008 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5023 */;
-import Text_Text from "Text/Text" /* 5385 */;
-import _mod7589 from "module_7589" /* 7589 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 7931 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7947 */;
-import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 10806 */;
-import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11939 */;
-import GuildEventVoiceBannerDefault from "GuildEventVoiceBanner" /* 14736 */;
-import VoiceMemberUser from "VoiceMemberUser" /* 14742 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5142 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import _mod7709 from "module_7709" /* 7709 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8051 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8067 */;
+import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 10926 */;
+import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 12059 */;
+import GuildEventVoiceBannerDefault from "GuildEventVoiceBanner" /* 14859 */;
+import VoiceMemberUser from "VoiceMemberUser" /* 14865 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4642 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4761 */;
 import UserRecord from "UserRecord" /* 1405 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6281 */;
-import PermissionStore from "PermissionStore" /* 4726 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6400 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
 import UserStore from "UserStore" /* 1386 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5538 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5657 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4794 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -45,10 +45,10 @@ let closure_23;
 let metroImportAll;
 let metroImportDefault;
 let tmp;
-const AssetRegistryDefault = tmp(10935);
+const AssetRegistryDefault = tmp(11055);
 function ItemSeparator() {
   const obj = { style: closure_24().rowFormDivider };
-  return closure_21(_mod7589.FormDivider, obj);
+  return closure_21(_mod7709.FormDivider, obj);
 }
 function VoiceMemberListSectionHeader(title) {
   let Text;
@@ -228,9 +228,9 @@ let closure_26 = react.memo(function Footer(channel) {
               }
             }
       };
-      const FormRow = tmp4(7589).FormRow;
-      obj3 = { accessibilityLabel: intl.string(channel(1112).t["6Qgrev"]), accessibilityHidden: true, source: AssetRegistryDefault, size: channel(13947).CircularIconButton.Sizes.MEDIUM_32 };
-      CircularIconButton = tmp4(13947).CircularIconButton;
+      const FormRow = tmp4(7709).FormRow;
+      obj3 = { accessibilityLabel: intl.string(channel(1112).t["6Qgrev"]), accessibilityHidden: true, source: AssetRegistryDefault, size: channel(14069).CircularIconButton.Sizes.MEDIUM_32 };
+      CircularIconButton = tmp4(14069).CircularIconButton;
       intl = tmp4(1112).intl;
       intl2 = tmp4(1112).intl;
       items[1] = closure_21(FormRow, obj2);
@@ -255,7 +255,7 @@ export default function VoiceMemberList(channel) {
   let obj6;
   let reduced;
   let tmp25Result2;
-  const f106381 = (user) => stateFromStoresArray.includes(user.user.id);
+  const f106770 = (user) => stateFromStoresArray.includes(user.user.id);
   channel = channel.channel;
   let flag = channel.isActionSheet;
   if (flag === undefined) {
@@ -329,8 +329,8 @@ export default function VoiceMemberList(channel) {
           str = "";
         }
         const tmp3Result = flag(tmp4[37]);
-        [arr10, arr11] = _slicedToArray(tmp3Result.partition(stateFromStores, f106381), 2);
-        const tmp15 = _slicedToArray(tmp3Result.partition(stateFromStores, f106381), 2);
+        [arr10, arr11] = _slicedToArray(tmp3Result.partition(stateFromStores, f106770), 2);
+        const tmp15 = _slicedToArray(tmp3Result.partition(stateFromStores, f106770), 2);
         if (arr10.length > 0) {
           const push = items5.push;
           const obj5 = { type: constants4.SPECTATING, title: intl.formatToPlainString(channel(tmp4[21]).t.Fb0eT9, obj6), data: arr10 };
@@ -400,7 +400,7 @@ export default function VoiceMemberList(channel) {
                     const obj2 = { children: items };
                     items = [callback1(obj), ];
                     const obj3 = { style: rowFormDivider.rowFormDivider };
-                    items[1] = closure_21(_mod7589.FormDivider, obj3);
+                    items[1] = closure_21(_mod7709.FormDivider, obj3);
                     return authStore5(sidebars, obj2);
                   }
                 },
@@ -419,7 +419,7 @@ export default function VoiceMemberList(channel) {
                       let result;
                       const tmp = undefined !== items5[arg0].data[arg1].url && undefined !== items5[arg0].data[arg1].applicationId;
                       if (tmp) {
-                        const tmp9Result = tmp9(14741);
+                        const tmp9Result = tmp9(14864);
                         result = tmp9Result.calculateActivityRowHeight(tmp8);
                       } else {
                         const voiceState = tmp7.voiceState;

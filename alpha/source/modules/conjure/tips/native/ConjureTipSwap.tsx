@@ -1,13 +1,13 @@
-// Module ID: 18339
-// Function ID: 18340
+// Module ID: 18466
+// Function ID: 18467
 // Name: ConjureTipSwap
-// Dependencies: [19, 21, 1653, 5004, 2]
+// Dependencies: [19, 21, 1653, 5123, 2]
 // Exports: default
 
-// Module 18339 (ConjureTipSwap)
+// Module 18466 (ConjureTipSwap)
 import Fragment from "Fragment" /* 21 */;
 import _mod1653 from "module_1653" /* 1653 */;
-import timing_timing from "timing/timing" /* 5004 */;
+import timing_timing from "timing/timing" /* 5123 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

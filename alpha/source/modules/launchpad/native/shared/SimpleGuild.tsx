@@ -1,19 +1,19 @@
-// Module ID: 18996
-// Function ID: 18997
+// Module ID: 19123
+// Function ID: 19124
 // Name: SimpleGuild
-// Dependencies: [19, 17, 4661, 6545, 4665, 1071, 21, 4794, 7202, 18997, 504, 18998, 19000, 1112, 17780, 7552, 575, 18999, 2]
+// Dependencies: [19, 17, 4780, 6664, 4784, 1071, 21, 4913, 7322, 19124, 504, 19125, 19127, 1112, 17906, 7672, 575, 19126, 2]
 // Exports: default
 
-// Module 18996 (SimpleGuild)
+// Module 19123 (SimpleGuild)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1071 */;
 import intl4 from "intl" /* 1112 */;
-import GuildRecord from "GuildRecord" /* 4661 */;
+import GuildRecord from "GuildRecord" /* 4780 */;
 import react from "react" /* 19 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 6545 */;
-import GuildStore from "GuildStore" /* 4665 */;
-import createStyles from "createStyles" /* 4794 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6664 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;

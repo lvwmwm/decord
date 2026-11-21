@@ -1,26 +1,26 @@
-// Module ID: 10753
-// Function ID: 10754
+// Module ID: 10873
+// Function ID: 10874
 // Name: MicrophoneSpotIllustration
-// Dependencies: [19, 21, 10754, 10755, 10756, 7237, 5481, 2]
+// Dependencies: [19, 21, 10874, 10875, 10876, 7357, 5600, 2]
 // Exports: MicrophoneSpotIllustration
 
-// Module 10753 (MicrophoneSpotIllustration)
+// Module 10873 (MicrophoneSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 7237 */;
-import _modDef10754 from "module_10754" /* 10754 */;
-import _modDef10755 from "module_10755" /* 10755 */;
-import _modDef10756 from "module_10756" /* 10756 */;
+import react_native from "react-native" /* 7357 */;
+import _modDef10874 from "module_10874" /* 10874 */;
+import _modDef10875 from "module_10875" /* 10875 */;
+import _modDef10876 from "module_10876" /* 10876 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef10754 };
+let obj2 = { uri: _modDef10874 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef10755 };
+let obj3 = { uri: _modDef10875 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef10756 };
-({ uri: _modDef10756 });
+obj[3] = { uri: _modDef10876 };
+({ uri: _modDef10876 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/MicrophoneSpotIllustration.native.tsx");
 

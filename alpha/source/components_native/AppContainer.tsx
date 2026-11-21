@@ -1,9 +1,9 @@
-// Module ID: 15677
-// Function ID: 15678
+// Module ID: 15800
+// Function ID: 15801
 // Name: AppContainer
-// Dependencies: [32, 19, 17, 6534, 4643, 4697, 4827, 1071, 4650, 21, 4794, 575, 1653, 8030, 15678, 6312, 1107, 1242, 4971, 5749, 7067, 15680, 6535, 4970, 1098, 5003, 5808, 1255, 4972, 15681, 7072, 1501, 1254, 15682, 1706, 1378, 11858, 15683, 15691, 4911, 15693, 1497, 10694, 13617, 13623, 15694, 4986, 15695, 15697, 15698, 15699, 17317, 1241, 2]
+// Dependencies: [32, 19, 17, 6653, 4762, 4816, 4946, 1071, 4769, 21, 4913, 575, 1653, 8150, 15801, 6431, 1107, 1242, 5090, 5868, 7187, 15803, 6654, 5089, 1098, 5122, 5927, 1255, 5091, 15804, 7192, 1501, 1254, 15805, 1706, 1378, 11978, 15806, 15814, 5030, 15816, 1497, 10814, 13739, 13745, 15817, 5105, 15818, 15820, 15821, 15822, 17441, 1241, 2]
 
-// Module 15677 (AppContainer)
+// Module 15800 (AppContainer)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import router_utils from "router_utils" /* 1098 */;
@@ -13,45 +13,45 @@ import GlobalUtils from "GlobalUtils" /* 1254 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import AppEntryKeyContext from "AppEntryKeyContext" /* 1497 */;
 import Link from "Link" /* 1501 */;
-import ChannelConstants from "ChannelConstants" /* 4650 */;
-import ManaContext from "ManaContext" /* 4911 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 4970 */;
-import RootNavigationRef from "RootNavigationRef" /* 4971 */;
-import getInitialNavigationStateDefault from "getInitialNavigationState" /* 4972 */;
-import Portal from "Portal" /* 4986 */;
-import useThemeDefault from "useTheme" /* 5003 */;
-import enableScreens from "enableScreens" /* 5749 */;
-import BackPressTracking from "BackPressTracking" /* 5808 */;
-import ModalDispatchQueueDefault from "ModalDispatchQueue" /* 6312 */;
-import NavigationHistoryStore from "NavigationHistoryStore" /* 6534 */;
-import getChannelDetailsFromRouteDefault from "getChannelDetailsFromRoute" /* 6535 */;
-import useNavigationTheme from "useNavigationTheme" /* 7072 */;
-import useIsScreenLandscape from "useIsScreenLandscape" /* 8030 */;
-import WebViewContext from "WebViewContext" /* 10694 */;
-import StartupProfiler from "StartupProfiler" /* 11858 */;
-import _mod13617 from "module_13617" /* 13617 */;
-import RouteManagerDefault from "RouteManager" /* 13623 */;
-import DiscordGestureHandlerRootViewDefault from "DiscordGestureHandlerRootView" /* 15678 */;
-import useTrackNavigatorScreenImpression from "useTrackNavigatorScreenImpression" /* 15680 */;
-import MainNavigationLoggerDefault from "MainNavigationLogger" /* 15681 */;
-import _mod15683 from "module_15683" /* 15683 */;
-import RootThemeContextProvider2 from "RootThemeContextProvider" /* 15691 */;
-import AccessibilityPreferencesContextProviderDefault from "AccessibilityPreferencesContextProvider" /* 15693 */;
-import components_native_ErrorBoundaryDefault from "components_native/ErrorBoundary" /* 15694 */;
-import AnimatedKeyboardProviderDefault from "AnimatedKeyboardProvider" /* 15695 */;
-import ThemedStatusBarDefault from "ThemedStatusBar" /* 15697 */;
-import SafeAreaProvider2 from "SafeAreaProvider" /* 15698 */;
-import DevToolsLazyDefault from "DevToolsLazy" /* 15699 */;
+import ChannelConstants from "ChannelConstants" /* 4769 */;
+import ManaContext from "ManaContext" /* 5030 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5089 */;
+import RootNavigationRef from "RootNavigationRef" /* 5090 */;
+import getInitialNavigationStateDefault from "getInitialNavigationState" /* 5091 */;
+import Portal from "Portal" /* 5105 */;
+import useThemeDefault from "useTheme" /* 5122 */;
+import enableScreens from "enableScreens" /* 5868 */;
+import BackPressTracking from "BackPressTracking" /* 5927 */;
+import ModalDispatchQueueDefault from "ModalDispatchQueue" /* 6431 */;
+import NavigationHistoryStore from "NavigationHistoryStore" /* 6653 */;
+import getChannelDetailsFromRouteDefault from "getChannelDetailsFromRoute" /* 6654 */;
+import useNavigationTheme from "useNavigationTheme" /* 7192 */;
+import useIsScreenLandscape from "useIsScreenLandscape" /* 8150 */;
+import WebViewContext from "WebViewContext" /* 10814 */;
+import StartupProfiler from "StartupProfiler" /* 11978 */;
+import _mod13739 from "module_13739" /* 13739 */;
+import RouteManagerDefault from "RouteManager" /* 13745 */;
+import DiscordGestureHandlerRootViewDefault from "DiscordGestureHandlerRootView" /* 15801 */;
+import useTrackNavigatorScreenImpression from "useTrackNavigatorScreenImpression" /* 15803 */;
+import MainNavigationLoggerDefault from "MainNavigationLogger" /* 15804 */;
+import _mod15806 from "module_15806" /* 15806 */;
+import RootThemeContextProvider2 from "RootThemeContextProvider" /* 15814 */;
+import AccessibilityPreferencesContextProviderDefault from "AccessibilityPreferencesContextProvider" /* 15816 */;
+import components_native_ErrorBoundaryDefault from "components_native/ErrorBoundary" /* 15817 */;
+import AnimatedKeyboardProviderDefault from "AnimatedKeyboardProvider" /* 15818 */;
+import ThemedStatusBarDefault from "ThemedStatusBar" /* 15820 */;
+import SafeAreaProvider2 from "SafeAreaProvider" /* 15821 */;
+import DevToolsLazyDefault from "DevToolsLazy" /* 15822 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4643 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4697 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 4827 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4816 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4946 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4794 */;
+import createStyles from "createStyles" /* 4913 */;
 import module_1653 from "module_1653" /* 1653 */;
-import config from "config" /* 7067 */;
+import config from "config" /* 7187 */;
 import SentryUtils from "SentryUtils" /* 1241 */;
 import size from "module_2" /* 2 */;
 
@@ -245,7 +245,7 @@ let closure_24 = { code: "(function AppContainerTsx1(){let[RNScreensTurboModule]
 const result1 = SentryUtils.profiledRootComponent(function AppContainer(children) {
   children = children.children;
   const appEntryKey = children.appEntryKey;
-  let obj = appEntryKey(15682);
+  let obj = appEntryKey(15805);
   const requestGatewaySocket = obj.useRequestGatewaySocket("AppContainer:" + appEntryKey);
   const effect = react.useEffect(() => {
     let tmp7;
@@ -279,7 +279,7 @@ const result1 = SentryUtils.profiledRootComponent(function AppContainer(children
       SplashScreenManager2.hideSplashScreen();
     }
   }, []);
-  let obj2 = appEntryKey(17317);
+  let obj2 = appEntryKey(17441);
   const riveAppStatePlaybackExperiment = obj2.useRiveAppStatePlaybackExperiment("AppContainer");
   let items = [riveAppStatePlaybackExperiment];
   const memo = react.useMemo(() => {
@@ -334,7 +334,7 @@ const result1 = SentryUtils.profiledRootComponent(function AppContainer(children
     const obj = { profile: StartupProfiler.Profiles.AppContainer, children: closure_15(ReanimatedScreenProvider, obj2) };
     const tmp = StartupProfilerDefault;
     obj2 = { children: closure_15(RootThemeContextProvider, obj3) };
-    ReanimatedScreenProvider = _mod15683.ReanimatedScreenProvider;
+    ReanimatedScreenProvider = _mod15806.ReanimatedScreenProvider;
     obj3 = { children: closure_15(ManaContextProvider, obj4) };
     RootThemeContextProvider = RootThemeContextProvider2.RootThemeContextProvider;
     obj4 = { value: memo1, children: closure_15(tmp2, obj5) };
@@ -347,7 +347,7 @@ const result1 = SentryUtils.profiledRootComponent(function AppContainer(children
     obj8 = { children: closure_15(Router, obj9) };
     WebViewContextProvider = WebViewContext.WebViewContextProvider;
     obj9 = { history: obj10.getHistory(), children: closure_15(GestureWrapper, obj11) };
-    Router = _mod13617.Router;
+    Router = _mod13739.Router;
     obj10 = RouteManagerDefault;
     obj11 = { children: closure_15(tmp3, obj12) };
     obj12 = { children: closure_15(PortalProvider, obj13) };

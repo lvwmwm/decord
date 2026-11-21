@@ -1,19 +1,19 @@
-// Module ID: 5722
-// Function ID: 5723
+// Module ID: 5841
+// Function ID: 5842
 // Name: SpatialAudioSessionStats
-// Dependencies: [32, 5, 1245, 502, 2131, 5691, 5692, 5539, 5723, 5693, 5543, 2]
+// Dependencies: [32, 5, 1245, 502, 2131, 5810, 5811, 5658, 5842, 5812, 5662, 2]
 
-// Module 5722 (SpatialAudioSessionStats)
-import SpatialAudioConstants from "SpatialAudioConstants" /* 5692 */;
-import SpatialAudioForVoiceExperimentDefault from "SpatialAudioForVoiceExperiment" /* 5693 */;
-import classifyOutputDevice from "classifyOutputDevice" /* 5723 */;
+// Module 5841 (SpatialAudioSessionStats)
+import SpatialAudioConstants from "SpatialAudioConstants" /* 5811 */;
+import SpatialAudioForVoiceExperimentDefault from "SpatialAudioForVoiceExperiment" /* 5812 */;
+import classifyOutputDevice from "classifyOutputDevice" /* 5842 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1245 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaEngineStore from "MediaEngineStore" /* 2131 */;
-import SpatialAudioStore from "SpatialAudioStore" /* 5691 */;
-import Constants from "Constants" /* 5539 */;
+import SpatialAudioStore from "SpatialAudioStore" /* 5810 */;
+import Constants from "Constants" /* 5658 */;
 import size from "module_2" /* 2 */;
 
 const classifyOutputDeviceDefault = classifyOutputDevice;
@@ -181,7 +181,7 @@ class SpatialAudioSessionStats {
     let TimeStampProducer = arg0;
     if (arg0 === undefined) {
       let tmp = obj;
-      TimeStampProducer = obj(5543).TimeStampProducer;
+      TimeStampProducer = obj(5662).TimeStampProducer;
     }
     obj = Object.create(new.target.prototype);
     let obj2 = SpatialAudioForVoiceExperimentDefault;
@@ -207,7 +207,7 @@ class SpatialAudioSessionStats {
     obj.lastOverrideSource = constants.NONE;
     obj.anyOverride = false;
     new Map();
-    obj.outputClassAtStart = obj(5723).OutputDeviceClass.UNKNOWN;
+    obj.outputClassAtStart = obj(5842).OutputDeviceClass.UNKNOWN;
     obj.numOutputClassChanges = 0;
     obj.numStatusChanges = 0;
     obj.numMonoTransitions = 0;

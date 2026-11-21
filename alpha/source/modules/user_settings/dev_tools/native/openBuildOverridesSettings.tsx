@@ -1,14 +1,14 @@
-// Module ID: 16880
-// Function ID: 16881
+// Module ID: 17003
+// Function ID: 17004
 // Name: openBuildOverridesSettings
-// Dependencies: [8592, 5008, 6310, 8074, 2]
+// Dependencies: [8712, 5127, 6429, 8194, 2]
 // Exports: openBuildOverridesSettings
 
-// Module 16880 (openBuildOverridesSettings)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5008 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6310 */;
-import openUserSettings from "openUserSettings" /* 8074 */;
-import SettingsConstants from "SettingsConstants" /* 8592 */;
+// Module 17003 (openBuildOverridesSettings)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6429 */;
+import openUserSettings from "openUserSettings" /* 8194 */;
+import SettingsConstants from "SettingsConstants" /* 8712 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

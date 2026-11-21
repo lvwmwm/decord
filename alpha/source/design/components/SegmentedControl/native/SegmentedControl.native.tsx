@@ -1,15 +1,15 @@
-// Module ID: 11158
-// Function ID: 11159
+// Module ID: 11278
+// Function ID: 11279
 // Name: SegmentedControl
-// Dependencies: [19, 17, 21, 4794, 575, 5358, 1653, 5395, 11159, 5054, 1706, 1378, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 5477, 1653, 5514, 11279, 5173, 1706, 1378, 2]
 // Exports: SegmentedControl
 
-// Module 11158 (SegmentedControl)
+// Module 11278 (SegmentedControl)
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4794 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

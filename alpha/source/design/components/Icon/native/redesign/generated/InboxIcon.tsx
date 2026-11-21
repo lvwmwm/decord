@@ -1,14 +1,14 @@
-// Module ID: 13747
-// Function ID: 13748
+// Module ID: 13869
+// Function ID: 13870
 // Name: InboxIcon
-// Dependencies: [19, 21, 575, 5480, 13748, 2]
+// Dependencies: [19, 21, 575, 5599, 13870, 2]
 // Exports: InboxIcon
 
-// Module 13747 (InboxIcon)
+// Module 13869 (InboxIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5480 */;
-import AssetRegistry from "AssetRegistry" /* 13748 */;
+import BaseIconImage2 from "BaseIconImage" /* 5599 */;
+import AssetRegistry from "AssetRegistry" /* 13870 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

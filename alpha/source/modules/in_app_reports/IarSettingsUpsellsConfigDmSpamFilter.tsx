@@ -1,14 +1,14 @@
-// Module ID: 10069
-// Function ID: 10070
+// Module ID: 10189
+// Function ID: 10190
 // Name: IarSettingsUpsellsConfigDmSpamFilter
-// Dependencies: [1112, 10057, 1092, 4619, 1195, 2]
+// Dependencies: [1112, 10177, 1092, 4738, 1195, 2]
 
-// Module 10069 (IarSettingsUpsellsConfigDmSpamFilter)
+// Module 10189 (IarSettingsUpsellsConfigDmSpamFilter)
 import ChannelTypes from "ChannelTypes" /* 1092 */;
 import intl2 from "intl" /* 1112 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1195 */;
-import UserSettings from "UserSettings" /* 4619 */;
-import MenuTypes from "MenuTypes" /* 10057 */;
+import UserSettings from "UserSettings" /* 4738 */;
+import MenuTypes from "MenuTypes" /* 10177 */;
 import size from "module_2" /* 2 */;
 
 let items;

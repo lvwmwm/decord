@@ -1,11 +1,11 @@
-// Module ID: 12609
-// Function ID: 12610
+// Module ID: 12731
+// Function ID: 12732
 // Name: useCheckpointPressSound
-// Dependencies: [19, 12417, 2]
+// Dependencies: [19, 12539, 2]
 // Exports: default
 
-// Module 12609 (useCheckpointPressSound)
-import useCheckpointSoundDefault from "useCheckpointSound" /* 12417 */;
+// Module 12731 (useCheckpointPressSound)
+import useCheckpointSoundDefault from "useCheckpointSound" /* 12539 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

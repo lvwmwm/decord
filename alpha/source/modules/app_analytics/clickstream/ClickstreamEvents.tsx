@@ -1,10 +1,10 @@
-// Module ID: 8141
-// Function ID: 8142
+// Module ID: 8261
+// Function ID: 8262
 // Name: ClickstreamEvents
 // Dependencies: [1071, 2]
 // Exports: getClickstreamDrainEvent
 
-// Module 8141 (ClickstreamEvents)
+// Module 8261 (ClickstreamEvents)
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 

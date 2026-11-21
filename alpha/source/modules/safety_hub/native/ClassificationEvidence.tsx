@@ -1,18 +1,18 @@
-// Module ID: 12317
-// Function ID: 12318
+// Module ID: 12439
+// Function ID: 12440
 // Name: ClassificationEvidence
-// Dependencies: [19, 17, 21, 4794, 1186, 575, 5385, 1112, 12318, 2]
+// Dependencies: [19, 17, 21, 4913, 1186, 575, 5504, 1112, 12440, 2]
 // Exports: default
 
-// Module 12317 (ClassificationEvidence)
+// Module 12439 (ClassificationEvidence)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
-import Text_Text from "Text/Text" /* 5385 */;
-import ClassificationMessageEvidenceDefault from "ClassificationMessageEvidence" /* 12318 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import ClassificationMessageEvidenceDefault from "ClassificationMessageEvidence" /* 12440 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import native_mod from "native" /* 1186 */;
 import size from "module_2" /* 2 */;
 

@@ -1,15 +1,15 @@
-// Module ID: 8554
-// Function ID: 8555
+// Module ID: 8674
+// Function ID: 8675
 // Name: MessageWithContent
-// Dependencies: [8555, 8550, 8557, 1112, 8776, 2]
+// Dependencies: [8675, 8670, 8677, 1112, 8896, 2]
 // Exports: generateMessageRowData
 
-// Module 8554 (MessageWithContent)
+// Module 8674 (MessageWithContent)
 import intl6 from "intl" /* 1112 */;
-import RowGeneratorConstants from "RowGeneratorConstants" /* 8550 */;
-import createMessageContentDefault from "createMessageContent" /* 8557 */;
-import RowGeneratorUtilsDefault from "RowGeneratorUtils" /* 8776 */;
-import GuildAutomodMessageStore from "GuildAutomodMessageStore" /* 8555 */;
+import RowGeneratorConstants from "RowGeneratorConstants" /* 8670 */;
+import createMessageContentDefault from "createMessageContent" /* 8677 */;
+import RowGeneratorUtilsDefault from "RowGeneratorUtils" /* 8896 */;
+import GuildAutomodMessageStore from "GuildAutomodMessageStore" /* 8675 */;
 import size from "module_2" /* 2 */;
 
 const RowType = RowGeneratorConstants.RowType;

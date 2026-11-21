@@ -1,12 +1,12 @@
-// Module ID: 14374
-// Function ID: 14375
+// Module ID: 14496
+// Function ID: 14497
 // Name: isOnConsole
-// Dependencies: [14336, 14337, 2]
+// Dependencies: [14458, 14459, 2]
 // Exports: default
 
-// Module 14374 (isOnConsole)
-import isOnXboxDefault from "isOnXbox" /* 14336 */;
-import isOnPlayStationDefault from "isOnPlayStation" /* 14337 */;
+// Module 14496 (isOnConsole)
+import isOnXboxDefault from "isOnXbox" /* 14458 */;
+import isOnPlayStationDefault from "isOnPlayStation" /* 14459 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/activities/utils/isOnConsole.tsx");

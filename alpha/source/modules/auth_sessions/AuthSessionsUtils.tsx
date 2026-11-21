@@ -1,15 +1,15 @@
-// Module ID: 15959
-// Function ID: 15960
+// Module ID: 16082
+// Function ID: 16083
 // Name: AuthSessionsUtils
-// Dependencies: [19, 502, 15960, 504, 1112, 2167, 2]
+// Dependencies: [19, 502, 16083, 504, 1112, 2168, 2]
 // Exports: formatDate, useAuthSessions
 
-// Module 15959 (AuthSessionsUtils)
+// Module 16082 (AuthSessionsUtils)
 import intl2 from "intl" /* 1112 */;
-import _modDef2167 from "module_2167" /* 2167 */;
+import _modDef2168 from "module_2168" /* 2168 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import AuthSessionsStore from "AuthSessionsStore" /* 15960 */;
+import AuthSessionsStore from "AuthSessionsStore" /* 16083 */;
 import size from "module_2" /* 2 */;
 
 let approx_last_used_time;
@@ -50,7 +50,7 @@ export function formatDate(arg0) {
     const intl = intl2.intl;
     stringResult = intl.string(intl2.t.TXCmfL);
   } else {
-    const obj = _modDef2167(arg0);
+    const obj = _modDef2168(arg0);
     stringResult = obj.fromNow();
   }
   return stringResult;

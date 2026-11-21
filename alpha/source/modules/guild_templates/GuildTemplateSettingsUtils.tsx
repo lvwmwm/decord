@@ -1,17 +1,17 @@
-// Module ID: 19752
-// Function ID: 19753
+// Module ID: 19879
+// Function ID: 19880
 // Name: GuildTemplateSettingsUtils
-// Dependencies: [5, 32, 19, 4643, 4726, 7932, 1071, 504, 7611, 6230, 2]
+// Dependencies: [5, 32, 19, 4762, 4845, 8052, 1071, 504, 7731, 6349, 2]
 // Exports: isGuildTemplateNameValid, useCanViewAllChannels, useGuildTemplate
 
-// Module 19752 (GuildTemplateSettingsUtils)
+// Module 19879 (GuildTemplateSettingsUtils)
 import Constants from "Constants" /* 1071 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4643 */;
-import PermissionStore from "PermissionStore" /* 4726 */;
-import GuildTemplateStore from "GuildTemplateStore" /* 7932 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
+import GuildTemplateStore from "GuildTemplateStore" /* 8052 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

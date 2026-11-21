@@ -1,27 +1,27 @@
-// Module ID: 18616
-// Function ID: 18617
+// Module ID: 18743
+// Function ID: 18744
 // Name: DMRow
-// Dependencies: [5, 32, 19, 17, 4795, 5532, 4736, 1071, 21, 4794, 575, 5385, 4850, 13387, 504, 10267, 1186, 7658, 13988, 18601, 2]
+// Dependencies: [5, 32, 19, 17, 4914, 5651, 4855, 1071, 21, 4913, 575, 5504, 4969, 13509, 504, 10387, 1186, 7778, 14110, 18728, 2]
 
-// Module 18616 (DMRow)
+// Module 18743 (DMRow)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1186 */;
-import UserUtils from "UserUtils" /* 4850 */;
-import Text_Text from "Text/Text" /* 5385 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7658 */;
-import BotTagDefault from "BotTag" /* 10267 */;
-import ActivityStatusDefault from "ActivityStatus" /* 13387 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13988 */;
+import UserUtils from "UserUtils" /* 4969 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7778 */;
+import BotTagDefault from "BotTag" /* 10387 */;
+import ActivityStatusDefault from "ActivityStatus" /* 13509 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14110 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4795 */;
-import PresenceStore from "PresenceStore" /* 5532 */;
-import RelationshipStore from "RelationshipStore" /* 4736 */;
+import AccessibilityStore from "AccessibilityStore" /* 4914 */;
+import PresenceStore from "PresenceStore" /* 5651 */;
+import RelationshipStore from "RelationshipStore" /* 4855 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4794 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const UserUtilsDefault = UserUtils;

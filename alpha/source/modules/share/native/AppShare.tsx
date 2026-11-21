@@ -1,26 +1,26 @@
-// Module ID: 20079
-// Function ID: 20080
+// Module ID: 20206
+// Function ID: 20207
 // Name: AppShare
-// Dependencies: [32, 19, 17, 8134, 15514, 502, 1071, 13164, 21, 504, 6306, 1378, 7682, 15521, 13167, 8148, 1255, 5355, 5742, 15677, 14990, 1625, 9599, 7070, 18910, 18983, 5747, 2]
+// Dependencies: [32, 19, 17, 8254, 15637, 502, 1071, 13286, 21, 504, 6425, 1378, 7802, 15644, 13289, 8268, 1255, 5474, 5861, 15800, 15113, 1625, 9719, 7190, 19037, 19110, 5866, 2]
 // Exports: default
 
-// Module 20079 (AppShare)
+// Module 20206 (AppShare)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1071 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import useMountEffectDefault from "useMountEffect" /* 5355 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5742 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6306 */;
-import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 8148 */;
-import Constants2 from "Constants" /* 13164 */;
-import ShareScreenDefault from "ShareScreen" /* 14990 */;
-import AccessibilityManagerDefault from "AccessibilityManager" /* 15521 */;
-import AppContainerDefault from "AppContainer" /* 15677 */;
-import AppToastContainerDefault from "AppToastContainer" /* 18983 */;
+import useMountEffectDefault from "useMountEffect" /* 5474 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5861 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6425 */;
+import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 8268 */;
+import Constants2 from "Constants" /* 13286 */;
+import ShareScreenDefault from "ShareScreen" /* 15113 */;
+import AccessibilityManagerDefault from "AccessibilityManager" /* 15644 */;
+import AppContainerDefault from "AppContainer" /* 15800 */;
+import AppToastContainerDefault from "AppToastContainer" /* 19110 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 8134 */;
-import ShareStore from "ShareStore" /* 15514 */;
+import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 8254 */;
+import ShareStore from "ShareStore" /* 15637 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -139,14 +139,14 @@ export default function AppShare(targetUserId) {
     const tmp15Result = ShareScreenDefault;
     const tmp10Result = require("MetaQuestUtils");
     if (tmp10Result.isMetaQuest()) {
-      exitApp = tmp15(9599).close;
+      exitApp = tmp15(9719).close;
     } else {
       exitApp = BackHandler.exitApp;
     }
     tmp20Result = tmp20(tmp15Result, obj4);
     tmp22 = tmp20;
   } else {
-    tmp20Result = tmp20(tmp10(7070).SceneLoadingIndicator, {});
+    tmp20Result = tmp20(tmp10(7190).SceneLoadingIndicator, {});
     tmp22 = tmp20;
   }
   items5 = [tmp20Result, tmp22(require("MainShared").ActionSheetContainer, { appEntryKey: share }), tmp22(AppToastContainerDefault, { appChrome: false }), tmp22(require("AlertModal").AlertModalContainer, {})];

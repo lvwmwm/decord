@@ -1,13 +1,13 @@
-// Module ID: 7503
-// Function ID: 7504
+// Module ID: 7623
+// Function ID: 7624
 // Name: ActionSheetHeaderPressableText
-// Dependencies: [21, 4794, 6910, 5385, 2]
+// Dependencies: [21, 4913, 7030, 5504, 2]
 // Exports: ActionSheetHeaderPressableText
 
-// Module 7503 (ActionSheetHeaderPressableText)
+// Module 7623 (ActionSheetHeaderPressableText)
 import Fragment from "Fragment" /* 21 */;
-import Pressables from "Pressables" /* 6910 */;
-import createStyles from "createStyles" /* 4794 */;
+import Pressables from "Pressables" /* 7030 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;

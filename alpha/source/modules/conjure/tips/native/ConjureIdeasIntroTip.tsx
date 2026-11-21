@@ -1,15 +1,15 @@
-// Module ID: 18336
-// Function ID: 18337
+// Module ID: 18463
+// Function ID: 18464
 // Name: ConjureIdeasIntroTip
-// Dependencies: [19, 21, 18337, 18338, 11216, 1112, 4091, 5392, 2]
+// Dependencies: [19, 21, 18464, 18465, 11336, 1112, 4190, 5511, 2]
 
-// Module 18336 (ConjureIdeasIntroTip)
+// Module 18463 (ConjureIdeasIntroTip)
 import intl4 from "intl" /* 1112 */;
-import _modDef4091 from "module_4091" /* 4091 */;
-import components_Button_Button from "components/Button/Button" /* 5392 */;
-import LightbulbIcon from "LightbulbIcon" /* 11216 */;
-import conjureIdeasIntroTip from "conjureIdeasIntroTip" /* 18337 */;
-import ConjureTipCallout from "ConjureTipCallout" /* 18338 */;
+import _modDef4190 from "module_4190" /* 4190 */;
+import components_Button_Button from "components/Button/Button" /* 5511 */;
+import LightbulbIcon from "LightbulbIcon" /* 11336 */;
+import conjureIdeasIntroTip from "conjureIdeasIntroTip" /* 18464 */;
+import ConjureTipCallout from "ConjureTipCallout" /* 18465 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -31,11 +31,11 @@ let obj = {
     const dismiss = context.dismiss;
     const obj = { icon: LightbulbIcon.LightbulbIcon, onDismiss: dismiss, children: items };
     const tmp = ConjureTipCalloutDefault;
-    const obj2 = { children: intl.string(_modDef4091.OJlbhX) };
+    const obj2 = { children: intl.string(_modDef4190.OJlbhX) };
     const ConjureTipTitle = ConjureTipCallout.ConjureTipTitle;
     intl = intl4.intl;
     items = [_false(ConjureTipTitle, obj2), , ];
-    const obj3 = { children: intl2.string(_modDef4091["3vJBni"]) };
+    const obj3 = { children: intl2.string(_modDef4190["3vJBni"]) };
     const ConjureTipBody = ConjureTipCallout.ConjureTipBody;
     intl2 = intl4.intl;
     items[1] = _false(ConjureTipBody, obj3);
@@ -44,7 +44,7 @@ let obj = {
     obj5 = {
       variant: "primary",
       size: "sm",
-      text: intl3.string(_modDef4091["U/bLzU"]),
+      text: intl3.string(_modDef4190["U/bLzU"]),
       disabled: null == onAskForIdeas,
       onPress() {
         if (dismiss != null) {

@@ -1,8 +1,8 @@
-// Module ID: 12438
-// Function ID: 12439
+// Module ID: 12560
+// Function ID: 12561
 // Dependencies: [2]
 
-// Module 12438
+// Module 12560
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_aura_14_witchy.webp.js");

@@ -1,15 +1,15 @@
-// Module ID: 19685
-// Function ID: 19686
+// Module ID: 19812
+// Function ID: 19813
 // Name: GuildSettingsModalSoundboardSoundInfoActionSheet
-// Dependencies: [5, 32, 19, 17, 5842, 21, 504, 19680, 5742, 1112, 1186, 6711, 5475, 5022, 7395, 575, 7228, 6925, 6914, 11122, 19676, 5501, 2]
+// Dependencies: [5, 32, 19, 17, 5961, 21, 504, 19807, 5861, 1112, 1186, 6830, 5594, 5141, 7515, 575, 7348, 7045, 7034, 11242, 19803, 5620, 2]
 
-// Module 19685 (GuildSettingsModalSoundboardSoundInfoActionSheet)
-import showSoundboardSoundEditModalDefault from "showSoundboardSoundEditModal" /* 19676 */;
+// Module 19812 (GuildSettingsModalSoundboardSoundInfoActionSheet)
+import showSoundboardSoundEditModalDefault from "showSoundboardSoundEditModal" /* 19803 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SoundboardStore from "SoundboardStore" /* 5842 */;
+import SoundboardStore from "SoundboardStore" /* 5961 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 

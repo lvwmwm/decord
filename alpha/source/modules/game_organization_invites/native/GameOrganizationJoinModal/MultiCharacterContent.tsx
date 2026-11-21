@@ -1,13 +1,13 @@
-// Module ID: 12118
-// Function ID: 12119
+// Module ID: 12240
+// Function ID: 12241
 // Name: MultiCharacterContent
-// Dependencies: [19, 21, 6900, 12119, 2]
+// Dependencies: [19, 21, 7020, 12241, 2]
 // Exports: default
 
-// Module 12118 (MultiCharacterContent)
+// Module 12240 (MultiCharacterContent)
 import Fragment from "Fragment" /* 21 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 6900 */;
-import GameOrganizationCharacterListDefault from "GameOrganizationCharacterList" /* 12119 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 7020 */;
+import GameOrganizationCharacterListDefault from "GameOrganizationCharacterList" /* 12241 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

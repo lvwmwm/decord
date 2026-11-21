@@ -1,14 +1,14 @@
-// Module ID: 10040
-// Function ID: 10041
+// Module ID: 10160
+// Function ID: 10161
 // Name: MoreVerticalIcon
-// Dependencies: [19, 21, 575, 5480, 10041, 2]
+// Dependencies: [19, 21, 575, 5599, 10161, 2]
 // Exports: MoreVerticalIcon
 
-// Module 10040 (MoreVerticalIcon)
+// Module 10160 (MoreVerticalIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5480 */;
-import AssetRegistry from "AssetRegistry" /* 10041 */;
+import BaseIconImage2 from "BaseIconImage" /* 5599 */;
+import AssetRegistry from "AssetRegistry" /* 10161 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

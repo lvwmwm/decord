@@ -1,24 +1,24 @@
-// Module ID: 15852
-// Function ID: 15853
+// Module ID: 15975
+// Function ID: 15976
 // Name: ProfileSelectorActionSheet
-// Dependencies: [32, 19, 17, 4665, 6431, 15851, 21, 4794, 575, 7229, 1112, 9484, 7202, 504, 6437, 5369, 5744, 4803, 5008, 5022, 7395, 7307, 5385, 7370, 2]
+// Dependencies: [32, 19, 17, 4784, 6550, 15974, 21, 4913, 575, 7349, 1112, 9604, 7322, 504, 6556, 5488, 5863, 4922, 5127, 5141, 7515, 7427, 5504, 7490, 2]
 // Exports: default
 
-// Module 15852 (ProfileSelectorActionSheet)
+// Module 15975 (ProfileSelectorActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1112 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4803 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5008 */;
-import GuildIcon from "GuildIcon" /* 7202 */;
-import TableRadioRow2 from "TableRadioRow" /* 7229 */;
-import ProfileSelectorActionSheetConstants from "ProfileSelectorActionSheetConstants" /* 15851 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4922 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
+import GuildIcon from "GuildIcon" /* 7322 */;
+import TableRadioRow2 from "TableRadioRow" /* 7349 */;
+import ProfileSelectorActionSheetConstants from "ProfileSelectorActionSheetConstants" /* 15974 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4665 */;
-import SortedGuildStore from "SortedGuildStore" /* 6431 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import SortedGuildStore from "SortedGuildStore" /* 6550 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const GuildIconDefault = GuildIcon;
@@ -78,7 +78,7 @@ let closure_13 = react.memo(function ProfileOptionRow(option) {
   }
   if ("main" === option.type) {
     const obj2 = { size: "md", color: nativeDefault.colors.ICON_DEFAULT };
-    const ClydeIcon = tmp2(9484).ClydeIcon;
+    const ClydeIcon = tmp2(9604).ClydeIcon;
     tmpResult = tmp(ClydeIcon, obj2);
   } else {
     const obj3 = { guild: option.guild, size: GuildIcon.GuildIconSizes.XSMALL };

@@ -1,14 +1,14 @@
-// Module ID: 18973
-// Function ID: 18974
+// Module ID: 19100
+// Function ID: 19101
 // Name: HexagonCampaignExpiredPromoSheet
-// Dependencies: [5, 32, 19, 4640, 21, 15731, 6442, 16288, 5355, 5476, 1112, 8310, 15751, 11105, 16295, 4478, 5385, 5392, 2]
+// Dependencies: [5, 32, 19, 4759, 21, 15854, 6561, 16411, 5474, 5595, 1112, 8430, 15874, 11225, 16418, 4597, 5504, 5511, 2]
 // Exports: default
 
-// Module 18973 (HexagonCampaignExpiredPromoSheet)
+// Module 19100 (HexagonCampaignExpiredPromoSheet)
 import Fragment from "Fragment" /* 21 */;
-import _modDef4478 from "module_4478" /* 4478 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4640 */;
-import Text_Text from "Text/Text" /* 5385 */;
+import _modDef4597 from "module_4597" /* 4597 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4759 */;
+import Text_Text from "Text/Text" /* 5504 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -32,9 +32,9 @@ export default function HexagonCampaignExpiredPromoSheet(markAsDismissed) {
   importDefault = undefined;
   let callback;
   react = undefined;
-  const tmp = markAsDismissed(15731);
+  const tmp = markAsDismissed(15854);
   const useTrackHexagonCampaignContentViewed = tmp.useTrackHexagonCampaignContentViewed;
-  const trackHexagonCampaignContentViewed = useTrackHexagonCampaignContentViewed(markAsDismissed(6442).QuestContent.AD_PERK_MODAL, markAsDismissed(15731).HexagonCampaignContentSurface.EXPIRED_SHEET, true);
+  const trackHexagonCampaignContentViewed = useTrackHexagonCampaignContentViewed(markAsDismissed(6561).QuestContent.AD_PERK_MODAL, markAsDismissed(15854).HexagonCampaignContentSurface.EXPIRED_SHEET, true);
   const tmp3 = callback(react.useState(false), 2);
   [tmp4, c1] = tmp3;
   dependencyMap = react.useRef(false);
@@ -125,7 +125,7 @@ export default function HexagonCampaignExpiredPromoSheet(markAsDismissed) {
   callback = useCallback(function() {
     return closure_0(...arguments);
   }, items);
-  let obj = markAsDismissed(5355);
+  let obj = markAsDismissed(5474);
   const unmountEffect = obj.useUnmountEffect(() => {
     callback(ContentDismissActionType.AUTO_DISMISS);
   });
@@ -199,7 +199,7 @@ export default function HexagonCampaignExpiredPromoSheet(markAsDismissed) {
     const obj3 = markAsDismissed(ref[12]);
     const result1 = obj3.openHexagonCampaignLearnMore();
   }, []);
-  const PromoSheet = markAsDismissed(11105).PromoSheet;
+  const PromoSheet = markAsDismissed(11225).PromoSheet;
   let intl = markAsDismissed(1112).intl;
   const intl2 = markAsDismissed(1112).intl;
   let obj3 = {
@@ -208,7 +208,7 @@ export default function HexagonCampaignExpiredPromoSheet(markAsDismissed) {
     }
   };
   let obj4 = { size: "lg", grow: true, text: intl3.string(markAsDismissed(1112).t.i4jeWR), loading: tmp4, onPress: callback1 };
-  const Button = markAsDismissed(5392).Button;
+  const Button = markAsDismissed(5511).Button;
   intl3 = markAsDismissed(1112).intl;
-  return <PromoSheet illustration={null} title={intl.string(_modDef4478.bZTNDw)} description={intl2.format(_modDef4478.uL0TOA, obj3)} onDismiss={callback2} actions={null} />;
+  return <PromoSheet illustration={null} title={intl.string(_modDef4597.bZTNDw)} description={intl2.format(_modDef4597.uL0TOA, obj3)} onDismiss={callback2} actions={null} />;
 };

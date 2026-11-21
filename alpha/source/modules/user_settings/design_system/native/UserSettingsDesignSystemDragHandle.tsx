@@ -1,24 +1,24 @@
-// Module ID: 17140
-// Function ID: 17141
+// Module ID: 17264
+// Function ID: 17265
 // Name: UserSettingsDesignSystemDragHandle
-// Dependencies: [19, 17, 1071, 21, 4794, 575, 5385, 6929, 5810, 5349, 7228, 6925, 10251, 6927, 2]
+// Dependencies: [19, 17, 1071, 21, 4913, 575, 5504, 7049, 5929, 5468, 7348, 7045, 10371, 7047, 2]
 // Exports: default
 
-// Module 17140 (UserSettingsDesignSystemDragHandle)
+// Module 17264 (UserSettingsDesignSystemDragHandle)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
-import LinearGradientDefault from "LinearGradient" /* 5349 */;
-import Text_Text from "Text/Text" /* 5385 */;
-import Stack_Stack from "Stack/Stack" /* 5810 */;
-import TableRow3 from "TableRow" /* 6925 */;
-import Card_Card from "Card/Card" /* 6927 */;
-import DragHandle from "DragHandle" /* 6929 */;
-import TableRowGroup2 from "TableRowGroup" /* 7228 */;
-import SettingsIcon from "SettingsIcon" /* 10251 */;
+import LinearGradientDefault from "LinearGradient" /* 5468 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import Stack_Stack from "Stack/Stack" /* 5929 */;
+import TableRow3 from "TableRow" /* 7045 */;
+import Card_Card from "Card/Card" /* 7047 */;
+import DragHandle from "DragHandle" /* 7049 */;
+import TableRowGroup2 from "TableRowGroup" /* 7348 */;
+import SettingsIcon from "SettingsIcon" /* 10371 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let c3;

@@ -1,19 +1,19 @@
-// Module ID: 10955
-// Function ID: 10956
+// Module ID: 11075
+// Function ID: 11076
 // Name: StageSectionHeader
-// Dependencies: [19, 17, 21, 4794, 575, 1653, 5004, 5385, 1186, 7396, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 1653, 5123, 5504, 1186, 7516, 2]
 // Exports: default
 
-// Module 10955 (StageSectionHeader)
+// Module 11075 (StageSectionHeader)
 import nativeDefault from "native" /* 575 */;
 import _mod1653 from "module_1653" /* 1653 */;
-import timing_timing from "timing/timing" /* 5004 */;
-import Text_Text from "Text/Text" /* 5385 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7396 */;
+import timing_timing from "timing/timing" /* 5123 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7516 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const _modDef1653 = _mod1653;

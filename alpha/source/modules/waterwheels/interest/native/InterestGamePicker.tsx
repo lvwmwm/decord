@@ -1,30 +1,30 @@
-// Module ID: 17706
-// Function ID: 17707
+// Module ID: 17835
+// Function ID: 17836
 // Name: InterestGamePicker
-// Dependencies: [32, 19, 17, 4795, 2139, 17699, 1071, 21, 4794, 575, 5423, 1653, 5004, 5007, 1112, 2563, 17707, 17711, 17710, 1255, 5358, 1628, 7125, 1497, 7477, 504, 17712, 8706, 10095, 17713, 17714, 4803, 7272, 5010, 5476, 8933, 6897, 8441, 5385, 17715, 7307, 17716, 5392, 17717, 2]
+// Dependencies: [32, 19, 17, 4914, 2140, 17821, 1071, 21, 4913, 575, 5542, 1653, 5123, 5126, 1112, 2643, 17820, 17836, 17824, 1255, 5477, 1628, 7245, 1497, 7597, 504, 17837, 8826, 10215, 17838, 17839, 4922, 7392, 5129, 5595, 9053, 7017, 8561, 5504, 17840, 7427, 17841, 5511, 17842, 2]
 // Exports: default
 
-// Module 17706 (InterestGamePicker)
+// Module 17835 (InterestGamePicker)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl11 from "intl" /* 1112 */;
-import _modDef2563 from "module_2563" /* 2563 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4803 */;
-import timing_timing from "timing/timing" /* 5004 */;
-import timingPresets from "timingPresets" /* 5007 */;
-import HapticUtils from "HapticUtils" /* 5010 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5476 */;
-import GameAutocompleteUtils from "GameAutocompleteUtils" /* 8706 */;
-import useGame2 from "useGame" /* 8933 */;
-import InterestPickerPerformance2 from "InterestPickerPerformance" /* 17710 */;
+import _modDef2643 from "module_2643" /* 2643 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4922 */;
+import timing_timing from "timing/timing" /* 5123 */;
+import timingPresets from "timingPresets" /* 5126 */;
+import HapticUtils from "HapticUtils" /* 5129 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5595 */;
+import GameAutocompleteUtils from "GameAutocompleteUtils" /* 8826 */;
+import useGame2 from "useGame" /* 9053 */;
+import InterestPickerPerformance2 from "InterestPickerPerformance" /* 17824 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 4795 */;
-import GameStore from "GameStore" /* 2139 */;
-import InterestGamePickerConstants from "InterestGamePickerConstants" /* 17699 */;
+import AccessibilityStore from "AccessibilityStore" /* 4914 */;
+import GameStore from "GameStore" /* 2140 */;
+import InterestGamePickerConstants from "InterestGamePickerConstants" /* 17821 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4794 */;
+import createStyles from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -183,14 +183,14 @@ let closure_29 = react.memo(function StaticInterestGameTile(game) {
   if (unavailable) {
     const intl = tmp(tmp2[14]).intl;
     const obj4 = { count: max, max };
-    formatToPlainStringResult = intl.formatToPlainString(require("module_2563").v9v0uY, obj4);
+    formatToPlainStringResult = intl.formatToPlainString(require("module_2643").v9v0uY, obj4);
   }
   items4 = [styles.tileWrapper, selected && styles.selectedGlow, ];
   size = { width, height: closure_6.roundToNearestPixel(width / closure_19) };
   items4[2] = size;
   obj5 = { style: styles.screen, children: items7 };
   const obj6 = { style: styles.tile, children: items6 };
-  const obj7 = { style: items5, children: closure_23(require("InterestGameCover"), { game, width, performanceTracker, gridPosition }) };
+  const obj7 = { style: items5, children: closure_23(require("GameCover"), { game, width, performanceTracker, gridPosition }) };
   items5 = [styles.screen, animatedStyle1];
   const View = require("module_1653").View;
   items6 = [closure_23(View, obj7), closure_23(require("InterestTileEdge"), { radius, style: animatedStyle })];
@@ -268,8 +268,8 @@ export default function InterestGamePicker(catalog) {
   let tmp66;
   let tmp67;
   let tmp6Result2;
-  const f112584 = (item, index) => item !== first4[index];
-  const f112601 = (arr, index) => {
+  const f113005 = (item, index) => item !== first4[index];
+  const f113022 = (arr, index) => {
     let items;
     let onPress;
     let radius;
@@ -639,8 +639,8 @@ export default function InterestGamePicker(catalog) {
   let tmp53 = memo6.length > 0;
   const tmp52 = tmpResult[1];
   if (tmp53) {
-    tmp53 = memo6.length !== first4.length || memo6.some(f112584);
-    memo6.length !== first4.length || memo6.some(f112584);
+    tmp53 = memo6.length !== first4.length || memo6.some(f113005);
+    memo6.length !== first4.length || memo6.some(f113005);
   }
   if (tmp53) {
     tmp52(memo6);
@@ -735,7 +735,7 @@ export default function InterestGamePicker(catalog) {
       const announce = AccessibilityAnnouncer.announce;
       const intl = intl11.intl;
       const obj = { count: length, max };
-      announce(intl.formatToPlainString(_modDef2563.v9v0uY, obj));
+      announce(intl.formatToPlainString(_modDef2643.v9v0uY, obj));
     }
   }, items21);
   const tmp4Result12 = tmp4(tmp5[27]);
@@ -795,7 +795,7 @@ export default function InterestGamePicker(catalog) {
         ref3.current = timestamp;
         const intl = intl11.intl;
         const obj = { count: gesture, max: gesture };
-        const formatToPlainStringResult = intl.formatToPlainString(_modDef2563.v9v0uY, obj);
+        const formatToPlainStringResult = intl.formatToPlainString(_modDef2643.v9v0uY, obj);
         const obj2 = HapticUtils;
         const result = obj2.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_LIGHT);
         const obj4 = { text: formatToPlainStringResult };
@@ -932,7 +932,7 @@ export default function InterestGamePicker(catalog) {
     autoComplete: "off",
     textContentType: "none",
     importantForAutofill: "no",
-    accessibilityLabel: intl2.string(require("module_2563")["8Xenq+"]),
+    accessibilityLabel: intl2.string(require("module_2643")["8Xenq+"]),
     onChange: tmp14,
     onFocus() {
       closure_16(true);
@@ -941,7 +941,7 @@ export default function InterestGamePicker(catalog) {
     },
     onBlur: callback1,
     onSubmitEditing: callback5,
-    placeholder: intl3.string(require("module_2563")["8Xenq+"])
+    placeholder: intl3.string(require("module_2643")["8Xenq+"])
   };
   SearchBar = tmp4(tmp5[40]).SearchBar;
   intl2 = tmp4(tmp5[14]).intl;
@@ -996,11 +996,11 @@ export default function InterestGamePicker(catalog) {
   items34 = [tmp79Result, , , ];
   if (tmp77Result) {
     const obj22 = { style: tmp9.empty, children: items35 };
-    const obj23 = { variant: "body-sm/semibold", color: "text-muted", style: tmp9.subtitle, children: intl5.string(require("module_2563").w5cRz0) };
+    const obj23 = { variant: "body-sm/semibold", color: "text-muted", style: tmp9.subtitle, children: intl5.string(require("module_2643").w5cRz0) };
     const Heading = tmp4(tmp5[38]).Heading;
     intl5 = tmp4(tmp5[14]).intl;
     items35 = [callback1(Heading, obj23), ];
-    const obj24 = { variant: "body-sm/semibold", color: "text-muted", style: tmp9.subtitle, children: intl6.string(require("module_2563").Khsqzs) };
+    const obj24 = { variant: "body-sm/semibold", color: "text-muted", style: tmp9.subtitle, children: intl6.string(require("module_2643").Khsqzs) };
     const Text = tmp4(tmp5[38]).Text;
     intl6 = tmp4(tmp5[14]).intl;
     items35[1] = callback1(Text, obj24);
@@ -1013,7 +1013,7 @@ export default function InterestGamePicker(catalog) {
     const Text2 = tmp4(tmp5[38]).Text;
     const intl7 = tmp4(tmp5[14]).intl;
     string2 = intl7.string;
-    tmp6Result2 = require("module_2563");
+    tmp6Result2 = require("module_2643");
     items36 = [callback1(Text2, obj26), ];
     let tmp79Result4 = catalog.length > 0;
     if (tmp79Result4) {
@@ -1029,8 +1029,8 @@ export default function InterestGamePicker(catalog) {
   let tmp79Result5 = !tmp43 && memo3.length > 0;
   if (tmp79Result5) {
     let str2 = "browse";
-    const obj28 = { style: tmp9.grid, children: roundToNearestPixel2Result > 0 && memo5.map(f112601) };
-    roundToNearestPixel2Result > 0 && memo5.map(f112601);
+    const obj28 = { style: tmp9.grid, children: roundToNearestPixel2Result > 0 && memo5.map(f113022) };
+    roundToNearestPixel2Result > 0 && memo5.map(f113022);
     if (tmp35) {
       str2 = "search";
     }
@@ -1066,7 +1066,7 @@ export default function InterestGamePicker(catalog) {
   let tmp79Result6 = arr28.length >= 7;
   const obj33 = { style: tmp9.footerActions, children: items41 };
   if (tmp79Result6) {
-    const obj34 = { variant: "body-sm/medium", color: "text-default", children: intl9.format(require("module_2563").v9v0uY, obj35) };
+    const obj34 = { variant: "body-sm/medium", color: "text-default", children: intl9.format(require("module_2643").v9v0uY, obj35) };
     const Text3 = tmp4(tmp5[38]).Text;
     intl9 = tmp4(tmp5[14]).intl;
     obj35 = { count: arr28.length, max };

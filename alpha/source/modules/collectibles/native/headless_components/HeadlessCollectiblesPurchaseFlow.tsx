@@ -1,25 +1,25 @@
-// Module ID: 14129
-// Function ID: 14130
+// Module ID: 14251
+// Function ID: 14252
 // Name: HeadlessCollectiblesPurchaseFlow
-// Dependencies: [19, 1071, 1082, 21, 8801, 8918, 13788, 1378, 2184, 9488, 9126, 5008, 8798, 14130, 2]
+// Dependencies: [19, 1071, 1082, 21, 8921, 9038, 13910, 1378, 2185, 9608, 9246, 5127, 8918, 14252, 2]
 // Exports: default
 
-// Module 14129 (HeadlessCollectiblesPurchaseFlow)
+// Module 14251 (HeadlessCollectiblesPurchaseFlow)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1071 */;
 import Constants2 from "Constants" /* 1082 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
-import BillingPlatformUtils from "BillingPlatformUtils" /* 2184 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5008 */;
-import openProductDetailsActionSheet from "openProductDetailsActionSheet" /* 8798 */;
-import ACOMExperiments from "ACOMExperiments" /* 8801 */;
-import useProductPurchaseState from "useProductPurchaseState" /* 8918 */;
-import useCollectiblesExternalGatewayFacetDefault from "useCollectiblesExternalGatewayFacet" /* 13788 */;
+import BillingPlatformUtils from "BillingPlatformUtils" /* 2185 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
+import openProductDetailsActionSheet from "openProductDetailsActionSheet" /* 8918 */;
+import ACOMExperiments from "ACOMExperiments" /* 8921 */;
+import useProductPurchaseState from "useProductPurchaseState" /* 9038 */;
+import useCollectiblesExternalGatewayFacetDefault from "useCollectiblesExternalGatewayFacet" /* 13910 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 let tmp3;
-const NativeCheckoutStoreProviderDefault = tmp3(9126);
+const NativeCheckoutStoreProviderDefault = tmp3(9246);
 const application_id = Constants.COLLECTIBLES_APPLICATION_ID;
 const PaymentGateways = Constants2.PaymentGateways;
 const jsx = Fragment.jsx;
@@ -61,7 +61,7 @@ export default function HeadlessCollectiblesPurchaseFlow(arg0) {
     }
     tmp7 = tmp8;
   }
-  const NativePaymentContextProvider = tmp(9488).NativePaymentContextProvider;
+  const NativePaymentContextProvider = tmp(9608).NativePaymentContextProvider;
   const items = [product.skuId];
   const obj5 = { is_gift: false, location_stack: analyticsLocations, payment_type: "sku", sku_id: product.skuId, application_id };
   NativeCheckoutStoreProviderDefault;

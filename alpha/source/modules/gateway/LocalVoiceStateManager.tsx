@@ -1,21 +1,21 @@
-// Module ID: 14811
-// Function ID: 14812
+// Module ID: 14934
+// Function ID: 14935
 // Name: LocalVoiceStateManager
-// Dependencies: [6276, 502, 4643, 2131, 5634, 1071, 6278, 14809, 4619, 1404, 14757, 6282, 2]
+// Dependencies: [6395, 502, 4762, 2131, 5753, 1071, 6397, 14932, 4738, 1404, 14880, 6401, 2]
 
-// Module 14811 (LocalVoiceStateManager)
+// Module 14934 (LocalVoiceStateManager)
 import FlagUtils from "FlagUtils" /* 1404 */;
-import UserSettings from "UserSettings" /* 4619 */;
-import Constants2 from "Constants" /* 6278 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6282 */;
-import isClipsEnabled from "isClipsEnabled" /* 14757 */;
-import PassTheControllerStore from "PassTheControllerStore" /* 6276 */;
+import UserSettings from "UserSettings" /* 4738 */;
+import Constants2 from "Constants" /* 6397 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6401 */;
+import isClipsEnabled from "isClipsEnabled" /* 14880 */;
+import PassTheControllerStore from "PassTheControllerStore" /* 6395 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 4643 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
 import MediaEngineStore from "MediaEngineStore" /* 2131 */;
-import RTCRegionStore from "RTCRegionStore" /* 5634 */;
+import RTCRegionStore from "RTCRegionStore" /* 5753 */;
 import Constants from "Constants" /* 1071 */;
-import StateManager from "StateManager" /* 14809 */;
+import StateManager from "StateManager" /* 14932 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -45,7 +45,7 @@ class LocalVoiceStateManager extends StateManager {
     if (result) {
       let CALL;
       const isSelfPassingController = PassTheControllerStore.isSelfPassingController;
-      const encodeStreamKey = tmp(6282).encodeStreamKey;
+      const encodeStreamKey = tmp(6401).encodeStreamKey;
       StreamKeyUtils;
       if (null != guildId) {
         CALL = StreamTypes.GUILD;

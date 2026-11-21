@@ -1,9 +1,9 @@
-// Module ID: 5626
-// Function ID: 5627
+// Module ID: 5745
+// Function ID: 5746
 // Name: discord_common/VoiceEngine
 // Dependencies: [2]
 
-// Module 5626 (discord_common/VoiceEngine)
+// Module 5745 (discord_common/VoiceEngine)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/media-engine/native/VoiceEngine.tsx");

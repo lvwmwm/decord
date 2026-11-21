@@ -1,12 +1,12 @@
-// Module ID: 12102
-// Function ID: 12103
+// Module ID: 12224
+// Function ID: 12225
 // Name: openUserProfileFromCodedLink
-// Dependencies: [1386, 12103, 7947, 2]
+// Dependencies: [1386, 12225, 8067, 2]
 // Exports: default
 
-// Module 12102 (openUserProfileFromCodedLink)
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 7947 */;
-import UserProfileEmbedRenderingMobileExperiment from "UserProfileEmbedRenderingMobileExperiment" /* 12103 */;
+// Module 12224 (openUserProfileFromCodedLink)
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8067 */;
+import UserProfileEmbedRenderingMobileExperiment from "UserProfileEmbedRenderingMobileExperiment" /* 12225 */;
 import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 

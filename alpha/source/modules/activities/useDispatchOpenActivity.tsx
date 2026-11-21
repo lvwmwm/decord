@@ -1,10 +1,10 @@
-// Module ID: 10709
-// Function ID: 10710
+// Module ID: 10829
+// Function ID: 10830
 // Name: useDispatchOpenActivity
 // Dependencies: [19, 572, 2]
 // Exports: default
 
-// Module 10709 (useDispatchOpenActivity)
+// Module 10829 (useDispatchOpenActivity)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

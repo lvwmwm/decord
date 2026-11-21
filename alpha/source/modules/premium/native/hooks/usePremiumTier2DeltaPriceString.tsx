@@ -1,16 +1,16 @@
-// Module ID: 14040
-// Function ID: 14041
+// Module ID: 14162
+// Function ID: 14163
 // Name: usePremiumTier2DeltaPriceString
-// Dependencies: [19, 8992, 8731, 1388, 9011, 8050, 1378, 6737, 4607, 504, 2]
+// Dependencies: [19, 9112, 8851, 1388, 9131, 8170, 1378, 6856, 4726, 504, 2]
 // Exports: usePremiumTier2DeltaPriceString
 
-// Module 14040 (usePremiumTier2DeltaPriceString)
+// Module 14162 (usePremiumTier2DeltaPriceString)
 import PremiumConstants from "PremiumConstants" /* 1388 */;
-import ProductIds from "ProductIds" /* 8050 */;
-import NativeCheckoutStore from "NativeCheckoutStore" /* 8992 */;
-import PremiumBundledPlansUtils from "PremiumBundledPlansUtils" /* 9011 */;
+import ProductIds from "ProductIds" /* 8170 */;
+import NativeCheckoutStore from "NativeCheckoutStore" /* 9112 */;
+import PremiumBundledPlansUtils from "PremiumBundledPlansUtils" /* 9131 */;
 import react from "react" /* 19 */;
-import IAPStore from "IAPStore" /* 8731 */;
+import IAPStore from "IAPStore" /* 8851 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -88,7 +88,7 @@ export function usePremiumTier2DeltaPriceString(plan, subscription, currencyCode
         const tmp2Result = tmp2(subscription);
         let tmp11 = null;
         if (null != tmp2Result) {
-          tmp11 = tmp4(8050).AppStorePremiumProductIdsToPremiumBundledItems[tmp2Result];
+          tmp11 = tmp4(8170).AppStorePremiumProductIdsToPremiumBundledItems[tmp2Result];
         }
         flag = null != tmp11 && tmp11.basePlanId === plan.basePlanId && tmp11.numPremiumGuild < plan.numPremiumGuild;
       }
@@ -112,7 +112,7 @@ export function usePremiumTier2DeltaPriceString(plan, subscription, currencyCode
             if (addOnPrice.majorUnits > 0) {
               let tmp17 = null;
               if (null != tmp3) {
-                tmp17 = tmp4(8050).AppStorePremiumProductIdsToPremiumBundledItems[tmp3];
+                tmp17 = tmp4(8170).AppStorePremiumProductIdsToPremiumBundledItems[tmp3];
               }
               if (null != tmp3) {
                 if (null != tmp17) {

@@ -1,10 +1,10 @@
-// Module ID: 17476
-// Function ID: 17477
+// Module ID: 17600
+// Function ID: 17601
 // Name: utils/EmojiColorUtils
 // Dependencies: [5, 17, 1454, 2023, 2]
 // Exports: getEmojiDominantColors
 
-// Module 17476 (utils/EmojiColorUtils)
+// Module 17600 (utils/EmojiColorUtils)
 import react_native from "react-native" /* 17 */;
 import LRUCacheDefault from "LRUCache" /* 1454 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

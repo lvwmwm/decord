@@ -1,13 +1,13 @@
-// Module ID: 12878
-// Function ID: 12879
+// Module ID: 13000
+// Function ID: 13001
 // Name: AppDetailsOverflowMenu
-// Dependencies: [19, 21, 10554, 12879, 1112, 12880, 4619, 7425, 5475, 10258, 8538, 7471, 6903, 2]
+// Dependencies: [19, 21, 10674, 13001, 1112, 13002, 4738, 7545, 5594, 10378, 8658, 7591, 7023, 2]
 // Exports: default
 
-// Module 12878 (AppDetailsOverflowMenu)
+// Module 13000 (AppDetailsOverflowMenu)
 import Fragment from "Fragment" /* 21 */;
-import ToastUtils from "ToastUtils" /* 5475 */;
-import ClipboardUtils from "ClipboardUtils" /* 7425 */;
+import ToastUtils from "ToastUtils" /* 5594 */;
+import ClipboardUtils from "ClipboardUtils" /* 7545 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -22,10 +22,10 @@ export default function AppDetailsOverflowMenu(application) {
   let intl2;
   application = application.application;
   const onAddAppMenuClick = application.onAddAppMenuClick;
-  let obj = application(10554);
+  let obj = application(10674);
   dependencyMap = obj.getInstallAppProps(application);
-  const tmp3 = onAddAppMenuClick(12879);
-  let obj2 = application(10554);
+  const tmp3 = onAddAppMenuClick(13001);
+  let obj2 = application(10674);
   const items = [];
   const tmp3Result = tmp3(obj2.getInstallableApplication(application)) && null != onAddAppMenuClick;
   if (tmp3Result) {
@@ -36,12 +36,12 @@ export default function AppDetailsOverflowMenu(application) {
           const obj = { installAppProps };
           return onAddAppMenuClick(obj);
         },
-      IconComponent: application(12880).CirclePlusIcon
+      IconComponent: application(13002).CirclePlusIcon
     };
     intl = tmp(1112).intl;
     push(obj3);
   }
-  const DeveloperMode = tmp(4619).DeveloperMode;
+  const DeveloperMode = tmp(4738).DeveloperMode;
   if (DeveloperMode.getSetting()) {
     const push2 = items.push;
     const obj4 = {
@@ -52,14 +52,14 @@ export default function AppDetailsOverflowMenu(application) {
           const obj2 = ToastUtils;
           obj2.presentIdCopied();
         },
-      IconComponent: application(10258).IdIcon
+      IconComponent: application(10378).IdIcon
     };
     intl2 = tmp(1112).intl;
     push2(obj4);
   }
   let tmp8 = null;
   if (0 !== items.length) {
-    tmp8 = jsx(tmp(8538).ContextMenu, {
+    tmp8 = jsx(tmp(8658).ContextMenu, {
       items,
       children(ref) {
           ref = ref.ref;

@@ -1,12 +1,12 @@
-// Module ID: 8852
-// Function ID: 8853
+// Module ID: 8972
+// Function ID: 8973
 // Name: CollectiblesPromotionBadgeUtils
-// Dependencies: [8808, 6735, 2]
+// Dependencies: [8928, 6854, 2]
 // Exports: shouldShowPromotionBadge
 
-// Module 8852 (CollectiblesPromotionBadgeUtils)
-import StorefrontTypes from "StorefrontTypes" /* 6735 */;
-import StorefrontCollectiblesTypes from "StorefrontCollectiblesTypes" /* 8808 */;
+// Module 8972 (CollectiblesPromotionBadgeUtils)
+import StorefrontTypes from "StorefrontTypes" /* 6854 */;
+import StorefrontCollectiblesTypes from "StorefrontCollectiblesTypes" /* 8928 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/collectibles/utils/CollectiblesPromotionBadgeUtils.tsx");

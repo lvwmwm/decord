@@ -1,11 +1,11 @@
-// Module ID: 4676
-// Function ID: 4677
+// Module ID: 4795
+// Function ID: 4796
 // Name: Dao
-// Dependencies: [4677, 4679, 2]
+// Dependencies: [4796, 4798, 2]
 
-// Module 4676 (Dao)
-import Table from "Table" /* 4677 */;
-import TableId from "TableId" /* 4679 */;
+// Module 4795 (Dao)
+import Table from "Table" /* 4796 */;
+import TableId from "TableId" /* 4798 */;
 import size from "module_2" /* 2 */;
 
 class Dao {

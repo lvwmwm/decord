@@ -1,19 +1,19 @@
-// Module ID: 10685
-// Function ID: 10686
+// Module ID: 10805
+// Function ID: 10806
 // Name: transformMessage
-// Dependencies: [1405, 4643, 4736, 1386, 1071, 10686, 2117, 1254, 5518, 6222, 6788, 2]
+// Dependencies: [1405, 4762, 4855, 1386, 1071, 10806, 2117, 1254, 5637, 6341, 6907, 2]
 // Exports: transformMessageRecord, transformServerMessage
 
-// Module 10685 (transformMessage)
+// Module 10805 (transformMessage)
 import Constants from "Constants" /* 1071 */;
 import Server from "Server" /* 2117 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 5518 */;
-import useMessageAuthor from "useMessageAuthor" /* 6222 */;
-import transformUserDefault from "transformUser" /* 6788 */;
-import getRemoteIconURLDefault from "getRemoteIconURL" /* 10686 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 5637 */;
+import useMessageAuthor from "useMessageAuthor" /* 6341 */;
+import transformUserDefault from "transformUser" /* 6907 */;
+import getRemoteIconURLDefault from "getRemoteIconURL" /* 10806 */;
 import UserRecord from "UserRecord" /* 1405 */;
-import ChannelStore from "ChannelStore" /* 4643 */;
-import RelationshipStore from "RelationshipStore" /* 4736 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import RelationshipStore from "RelationshipStore" /* 4855 */;
 import UserStore from "UserStore" /* 1386 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ let images, results;
 
 let tmp;
 const GlobalUtils = tmp(1254);
-const f97934 = (emoji) => {
+const f98316 = (emoji) => {
   let id;
   let obj2;
   const obj = { emoji: obj2 };
@@ -369,7 +369,7 @@ export function transformMessageRecord(id) {
       return items;
     }),
     components: found1,
-    reactions: mapped2.map(f97934),
+    reactions: mapped2.map(f98316),
     nonce: null,
     pinned: null,
     webhook_id: null,
@@ -612,7 +612,7 @@ export function transformServerMessage(message) {
   mapped1 = undefined;
   if (null != message.reactions) {
     const reactions = message.reactions;
-    mapped1 = reactions.map(f97934);
+    mapped1 = reactions.map(f98316);
   }
   ({ nonce: obj.nonce, pinned: obj.pinned, webhook_id: obj.webhook_id, type: obj.type, activity: obj.activity, application: obj.application, application_id: obj.application_id, message_reference: obj.message_reference, flags: obj.flags, sticker_items: obj.sticker_items, poll: obj.poll } = message);
   tmp12 = undefined;

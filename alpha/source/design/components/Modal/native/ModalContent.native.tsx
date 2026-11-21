@@ -1,14 +1,14 @@
-// Module ID: 7693
-// Function ID: 7694
+// Module ID: 7813
+// Function ID: 7814
 // Name: ModalContent
-// Dependencies: [19, 17, 21, 4794, 2]
+// Dependencies: [19, 17, 21, 4913, 2]
 // Exports: ModalContent
 
-// Module 7693 (ModalContent)
+// Module 7813 (ModalContent)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4794 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const ScrollView = react_native.ScrollView;

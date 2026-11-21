@@ -1,14 +1,14 @@
-// Module ID: 18157
-// Function ID: 18158
+// Module ID: 18284
+// Function ID: 18285
 // Name: useConjureProjectSettingsDraft
-// Dependencies: [5, 32, 19, 6502, 504, 18158, 18130, 18160, 6870, 18136, 18135, 6503, 6746, 18161, 6836, 12176, 1112, 4091, 18139, 6814, 2]
+// Dependencies: [5, 32, 19, 6621, 504, 18285, 18257, 18287, 6990, 18263, 18262, 6622, 6865, 18288, 6955, 12298, 1112, 4190, 18266, 6933, 2]
 // Exports: default
 
-// Module 18157 (useConjureProjectSettingsDraft)
+// Module 18284 (useConjureProjectSettingsDraft)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 6502 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6621 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

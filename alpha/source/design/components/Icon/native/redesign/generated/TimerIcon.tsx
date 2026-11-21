@@ -1,14 +1,14 @@
-// Module ID: 11954
-// Function ID: 11955
+// Module ID: 12074
+// Function ID: 12075
 // Name: TimerIcon
-// Dependencies: [19, 21, 575, 5480, 11955, 2]
+// Dependencies: [19, 21, 575, 5599, 12075, 2]
 // Exports: TimerIcon
 
-// Module 11954 (TimerIcon)
+// Module 12074 (TimerIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5480 */;
-import AssetRegistry from "AssetRegistry" /* 11955 */;
+import BaseIconImage2 from "BaseIconImage" /* 5599 */;
+import AssetRegistry from "AssetRegistry" /* 12075 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

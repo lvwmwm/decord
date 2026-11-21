@@ -1,17 +1,17 @@
-// Module ID: 13972
-// Function ID: 13973
+// Module ID: 14094
+// Function ID: 14095
 // Name: usePremiumGroupFeaturesTableCardText
-// Dependencies: [2177, 2185, 1112, 3537, 1399, 8718, 13973, 504, 2]
+// Dependencies: [2178, 2186, 1112, 3636, 1399, 8838, 14095, 504, 2]
 // Exports: default
 
-// Module 13972 (usePremiumGroupFeaturesTableCardText)
+// Module 14094 (usePremiumGroupFeaturesTableCardText)
 import get_initialized from "get initialized" /* 504 */;
 import user from "user" /* 1399 */;
-import _modDef3537 from "module_3537" /* 3537 */;
-import PremiumGroupUtils from "PremiumGroupUtils" /* 8718 */;
-import usePremiumGroupPrimaryNameDefault from "usePremiumGroupPrimaryName" /* 13973 */;
-import SubscriptionStore from "SubscriptionStore" /* 2177 */;
-import PremiumGroupConstants from "PremiumGroupConstants" /* 2185 */;
+import _modDef3636 from "module_3636" /* 3636 */;
+import PremiumGroupUtils from "PremiumGroupUtils" /* 8838 */;
+import usePremiumGroupPrimaryNameDefault from "usePremiumGroupPrimaryName" /* 14095 */;
+import SubscriptionStore from "SubscriptionStore" /* 2178 */;
+import PremiumGroupConstants from "PremiumGroupConstants" /* 2186 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -40,7 +40,7 @@ export default function usePremiumGroupFeaturesTableCardText(arg0, arg1) {
         const intl = tmp(1112).intl;
         const format = intl.format;
         const obj3 = { primaryName: tmp4, premiumGroupProductName: React3() };
-        const Nu9LNm = tmp3(3537).Nu9LNm;
+        const Nu9LNm = tmp3(3636).Nu9LNm;
         priceString = format(Nu9LNm, obj3);
       }
     }
@@ -52,12 +52,12 @@ export default function usePremiumGroupFeaturesTableCardText(arg0, arg1) {
       const intl3 = tmp(1112).intl;
       const format3 = intl3.format;
       const obj4 = { helpCenterLink: hasOwnProperty, premiumGroupProductName: React3() };
-      const prop = tmp3(3537)["+R/K74"];
+      const prop = tmp3(3636)["+R/K74"];
       format3Result = format3(prop, obj4);
     } else {
       const intl2 = tmp(1112).intl;
       const format2 = intl2.format;
-      const tmp3Result = _modDef3537;
+      const tmp3Result = _modDef3636;
       const obj5 = { helpCenterLink: hasOwnProperty };
       format3Result = format2(arg1 ? tmp3Result["xF+upx"] : tmp3Result.qqfnOm, obj5);
     }

@@ -1,19 +1,19 @@
-// Module ID: 12857
-// Function ID: 12858
+// Module ID: 12979
+// Function ID: 12980
 // Name: InThisServerSection
-// Dependencies: [19, 17, 21, 4794, 575, 12835, 1254, 5385, 1112, 6910, 12799, 7480, 10556, 12804, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 12957, 1254, 5504, 1112, 7030, 12921, 7600, 10676, 12926, 2]
 // Exports: default
 
-// Module 12857 (InThisServerSection)
+// Module 12979 (InThisServerSection)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
 import GlobalUtils from "GlobalUtils" /* 1254 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 10556 */;
-import AppLauncherHomeTypes from "AppLauncherHomeTypes" /* 12835 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 10676 */;
+import AppLauncherHomeTypes from "AppLauncherHomeTypes" /* 12957 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4794 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let c2, dependencyMap;
@@ -30,7 +30,7 @@ function AppInThisServer(onAppSelected) {
   let tmp = closure_7();
   const application = appItem.application;
   let tmp2 = onAppSelected;
-  let obj = onAppSelected(12799);
+  let obj = onAppSelected(12921);
   const appLauncherIconSource = obj.getAppLauncherIconSource(application);
   let tmp6 = null;
   const obj2 = {
@@ -51,15 +51,15 @@ function AppInThisServer(onAppSelected) {
     style: tmp.appCardContainer,
     children: items
   };
-  const PressableScale = onAppSelected(7480).PressableScale;
+  const PressableScale = onAppSelected(7600).PressableScale;
   const tmp5 = closure_6;
   if (null != appLauncherIconSource) {
     const obj3 = { iconSource: appLauncherIconSource, wrapperStyle: tmp.iconContainer, iconSize: 36 };
-    tmp6 = closure_5(application(12804), obj3);
+    tmp6 = closure_5(application(12926), obj3);
   }
   items = [tmp6, ];
   const obj4 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", lineClamp: 1, children: application.name };
-  items[1] = closure_5(tmp2(5385).Text, obj4);
+  items[1] = closure_5(tmp2(5504).Text, obj4);
   return tmp5(PressableScale, obj2, application.id);
 }
 ({ View: c3, ScrollView: closure_4 } = react_native);
@@ -108,7 +108,7 @@ export default function InThisServerSection(arg0) {
     let obj = { style: tmp.container, children: items3 };
     const obj2 = { style: tmp.headerContainer, children: items2 };
     const obj3 = { variant: "body-lg/semibold", color: "mobile-text-heading-primary", children: intl.string(intl3.t.oJyzCu) };
-    const Text = tmp11(5385).Text;
+    const Text = tmp11(5504).Text;
     intl = tmp11(1112).intl;
     items2 = [closure_5(Text, obj3), ];
     let tmp5Result = null != dependencyMap;
@@ -122,9 +122,9 @@ export default function InThisServerSection(arg0) {
         accessibilityRole: "button",
         children: closure_5(Text2, obj5)
       };
-      const PressableOpacity = tmp11(6910).PressableOpacity;
+      const PressableOpacity = tmp11(7030).PressableOpacity;
       obj5 = { variant: "body-sm/medium", color: "text-brand", children: intl2.string(intl3.t["/qG8v7"]) };
-      Text2 = tmp11(5385).Text;
+      Text2 = tmp11(5504).Text;
       intl2 = tmp11(1112).intl;
       tmp5Result = tmp5(PressableOpacity, obj4);
     }

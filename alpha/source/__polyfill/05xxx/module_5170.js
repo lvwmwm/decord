@@ -1,72 +1,54 @@
 // Module ID: 5170
 // Function ID: 5171
-// Dependencies: [5125, 5058, 5098]
-// Exports: useComposedGesture
+// Dependencies: [19, 5153, 5162]
+// Exports: useScrollableSetter
 
 // Module 5170
-import _mod5125 from "module_5125" /* 5125 */;
+import _mod5162 from "module_5162" /* 5162 */;
+import react from "react" /* 19 */;
 
 const require = globalThis.__r;
-let _require, dependencyMap, handlerTags;
+let _require, dependencyMap;
 
+let c2;
+let c3;
+({ useCallback: c2, useEffect: c3 } = react);
 
-export function useComposedGesture(type) {
-  let _undefined;
-  _require = type;
-  const substr = [...arguments].slice();
-  const flatMapResult = substr.flatMap((type) => {
-    const obj = _mod5125;
-    if (obj.isComposedGesture(type)) {
-      let gestures;
-      if (type.type === type) {
-        gestures = type.gestures;
-      }
-      return gestures;
-    }
-    gestures = [type];
-  });
-  dependencyMap = flatMapResult;
-  const flatMapResult1 = flatMapResult.flatMap((handlerTags) => {
-    const obj = type(_undefined[0]);
-    if (obj.isComposedGesture(handlerTags)) {
-      handlerTags = handlerTags.handlerTags;
-    } else {
-      handlerTags = [handlerTags.handlerTag];
-    }
-    return handlerTags;
-  });
-  let tmp2 = _require;
-  const obj2 = require("module_5125");
-  if (obj2.containsDuplicates(flatMapResult1)) {
-    const _Error2 = Error;
-    const self3 = this;
-    const self4 = this;
-    const tmp2Result = tmp2(5058);
-    const error = new Error(tmp2Result.tagMessage("Each gesture can be used only once in the gesture composition."));
-    throw error;
-  } else {
-    let obj = { shouldUseReanimatedDetector: flatMapResult.some((config) => config.config.shouldUseReanimatedDetector), dispatchesAnimatedEvents: flatMapResult.some((config) => config.config.dispatchesAnimatedEvents) };
-    if (obj.shouldUseReanimatedDetector) {
-      if (obj.dispatchesAnimatedEvents) {
-        const _Error = Error;
-        const self = this;
-        const self2 = this;
-        const tmp2Result2 = tmp2(5058);
-        const error1 = new Error(tmp2Result2.tagMessage("Composed gestures cannot use both Reanimated and Animated events at the same time."));
-        throw error1;
-      }
-    }
-    const Reanimated = tmp2(5098).Reanimated;
-    let composedEventHandler;
-    if (Reanimated != null) {
-      composedEventHandler = Reanimated.useComposedEventHandler(flatMapResult.map((detectorCallbacks) => detectorCallbacks.detectorCallbacks.reanimatedEventHandler || null));
-    }
-    const found = flatMapResult.filter((detectorCallbacks) => undefined !== detectorCallbacks.detectorCallbacks.animatedEventHandler);
-    let animatedEventHandler;
-    if (found.length > 0) {
-      animatedEventHandler = found[0].detectorCallbacks.animatedEventHandler;
-    }
-    const obj3 = { handlerTags: flatMapResult1, type, config: obj, detectorCallbacks: obj4, externalSimultaneousHandlers: [], gestures: flatMapResult };
-    return obj3;
+export const useScrollableSetter = (arg0, value, arg2, value3) => {
+  let ref;
+  _require = arg0;
+  dependencyMap = value;
+  const value2 = arg2;
+  let tmp = arg4;
+  if (arg4 === undefined) {
+    tmp = value3;
   }
-}
+  let obj = require("react");
+  const bottomSheetInternal = obj.useBottomSheetInternal();
+  const animatedScrollableType = bottomSheetInternal.animatedScrollableType;
+  const animatedScrollableContentOffsetY = bottomSheetInternal.animatedScrollableContentOffsetY;
+  const isContentHeightFixed = bottomSheetInternal.isContentHeightFixed;
+  const isScrollableRefreshable = bottomSheetInternal.isScrollableRefreshable;
+  const setScrollableRef = bottomSheetInternal.setScrollableRef;
+  const removeScrollableRef = bottomSheetInternal.removeScrollableRef;
+  const items = [arg0, value, value3, animatedScrollableType, animatedScrollableContentOffsetY, arg2, isScrollableRefreshable, isContentHeightFixed, setScrollableRef, removeScrollableRef];
+  tmp(value2(() => {
+    animatedScrollableContentOffsetY.value = value2.value;
+    animatedScrollableType.value = value;
+    isScrollableRefreshable.value = value3;
+    isContentHeightFixed.value = false;
+    const obj = _mod5162;
+    const findNodeHandleResult = obj.findNodeHandle(ref.current);
+    const tmp = ref;
+    if (findNodeHandleResult) {
+      const obj2 = { id: findNodeHandleResult, node: tmp };
+      setScrollableRef(obj2);
+    } else {
+      const _console = console;
+      console.warn("Couldn't find the scrollable node handle id!");
+    }
+    return () => {
+      removeScrollableRef(ref);
+    };
+  }, items));
+};

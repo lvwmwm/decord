@@ -1,24 +1,20 @@
 // Module ID: 19565
 // Function ID: 19566
-// Dependencies: [42, 41, 94, 93, 95, 98, 158]
+// Dependencies: [5, 41, 42, 93, 95, 98, 19566, 19568, 19570]
 
 // Module 19565
-import _createClass_mod from "_createClass" /* 42 */;
+import pTimeout from "pTimeout" /* 19566 */;
+import _mod19568 from "module_19568" /* 19568 */;
+import _mod19570 from "module_19570" /* 19570 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
-import _assertThisInitialized from "_assertThisInitialized" /* 94 */;
-import c3_mod from "_possibleConstructorReturn" /* 93 */;
+import _createClass from "_createClass" /* 42 */;
+import _possibleConstructorReturn from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
-import _wrapNativeSuper from "_wrapNativeSuper" /* 158 */;
 
-let c1;
+let _resolveEmpty, _resolveIdle, c4, closure_1, closure_3, set;
 
-let POSITIVE_INFINITY;
-let _moduleResult1;
-let fn2;
-const o2 = function o(arg0, arg1) {
-
-};
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -34,636 +30,722 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-let _createClass = _createClass_mod;
-let c3 = c3_mod;
-if (typeof exports === "object") {
-  if (undefined !== module) {
-    const _Error = Error;
-    const fn3 = function t(arg0) {
-      let constructResult;
-      const self = this;
-      o(this, fn);
-      let str = "Timed out";
-      if (null != arg0) {
+function empty() {
+
+}
+const timeoutError = new pTimeout.TimeoutError();
+let closure_2;
+let _false;
+let closure_4;
+class PQueue {
+  constructor(arg0) {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, PQueue);
+    const obj = _getPrototypeOf(PQueue);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = _possibleConstructorReturn;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
+    } else {
+      constructResult = obj.apply(self, undefined);
+    }
+    const tmp3Result = tmp3(self, constructResult);
+    tmp3Result._intervalCount = 0;
+    tmp3Result._intervalEnd = 0;
+    tmp3Result._pendingCount = 0;
+    tmp3Result._resolveEmpty = empty;
+    tmp3Result._resolveIdle = empty;
+    const obj2 = { carryoverConcurrencyCount: false, intervalCap: Infinity, interval: 0, concurrency: Infinity, autoStart: true, queueClass: _mod19568.default };
+    const merged = Object.assign(obj2, arg0);
+    if (typeof merged.intervalCap === "number") {
+      if (merged.intervalCap >= 1) {
+        if (undefined !== merged.interval) {
+          const _Number = Number;
+          if (Number.isFinite(merged.interval)) {
+            if (merged.interval >= 0) {
+              tmp3Result._carryoverConcurrencyCount = merged.carryoverConcurrencyCount;
+              tmp3Result._isIntervalIgnored = merged.intervalCap === Infinity || 0 === merged.interval;
+              ({ intervalCap: tmp6._intervalCap, interval: tmp6._interval } = merged);
+              const self2 = this;
+              const self3 = this;
+              const queueClass = new merged.queueClass();
+              tmp3Result._queue = queueClass;
+              ({ queueClass: tmp6._queueClass, concurrency: tmp6.concurrency, timeout: tmp6._timeout } = merged);
+              tmp3Result._throwOnTimeout = true === merged.throwOnTimeout;
+              tmp3Result._isPaused = false === merged.autoStart;
+              return tmp3Result;
+            }
+          }
+        }
+        let str1;
+        const _TypeError2 = TypeError;
+        if (null !== merged.interval) {
+          if (undefined !== merged.interval) {
+            str1 = str3.toString();
+          }
+        }
+        let str5 = "";
+        if (null !== str1) {
+          str5 = "";
+          if (undefined !== str1) {
+            str5 = str1;
+          }
+        }
         const _HermesInternal = HermesInternal;
-        str = "Timed out after waiting for " + arg0 + " ms";
-      }
-      const items = [str];
-      const obj = _getPrototypeOf(fn);
-      const tmp4 = _getPrototypeOf;
-      const tmp5 = POSITIVE_INFINITY;
-      if (_isNativeReflectConstruct()) {
-        const _Reflect = Reflect;
-        constructResult = Reflect.construct(obj, items, tmp4(self).constructor);
-      } else {
-        constructResult = obj.apply(self, items);
-      }
-      const tmp5Result = tmp5(self, constructResult);
-      Object.setPrototypeOf(closure_2(tmp5Result), fn.prototype);
-      return tmp5Result;
-    };
-    _inherits(fn3, _wrapNativeSuper(Error));
-    let o = o2;
-    const _Number = Number;
-    const POSITIVE_INFINITY2 = Number.POSITIVE_INFINITY;
-    const fn4 = function r(arg0, timeout, arg2) {
-      let raceResult;
-      const f139130 = function(arg0, arg1) {
-        const f141331 = (fn, fn2) => {
-          try {
-            fn(closure_1_0());
-          } catch (tmp4) {
-            fn2(tmp4);
-          }
-        };
-        closure_0 = arg0;
-        let closure_1 = arg1;
-        function r() {
-          let tmp = c3;
-          if (!tmp) {
-            const tmp2 = globalThis;
-            let self = this;
-            let self2 = this;
-            let promise = new Promise(f141331);
-            const tmp3 = promise;
-            let nextPromise = promise.then(function(result) {
-              const tmp = result;
-              if (tmp) {
-                closure_1_0(result);
-              } else if (typeof num === "function") {
-                closure_0 = num2;
-                closure_1 = tmp3;
-                const self = this;
-                const self2 = this;
-                const promise = new Promise((arg0, fn) => {
-                  try {
-                    closure_0.schedule(arg0, closure_1);
-                  } catch (tmp5) {
-                    fn(tmp5);
-                  }
-                });
-                const tmp5 = promise;
-                const nextPromise = promise.then(closure_1_2);
-                nextPromise.catch(closure_1_1);
-              } else {
-                throw new TypeError("Trying to call a non-function");
-              }
-            });
-            const tmp4 = closure_1;
-            nextPromise.catch(closure_1);
-          }
-        }
-        let tmp = c3;
-        if (!tmp) {
-          let tmp2 = globalThis;
-          const _Promise = Promise;
-          let self = this;
-          let self2 = this;
-          let promise = new Promise(f141331);
-          let tmp3 = promise;
-          let nextPromise = promise.then(function(result) {
-            const tmp = result;
-            if (tmp) {
-              closure_1_0(result);
-            } else if (typeof num === "function") {
-              closure_0 = num2;
-              closure_1 = tmp3;
-              const self = this;
-              const self2 = this;
-              const promise = new Promise((arg0, fn) => {
-                try {
-                  closure_0.schedule(arg0, closure_1);
-                } catch (tmp5) {
-                  fn(tmp5);
-                }
-              });
-              const tmp5 = promise;
-              const nextPromise = promise.then(closure_1_2);
-              nextPromise.catch(closure_1_1);
-            } else {
-              throw new TypeError("Trying to call a non-function");
-            }
-          });
-          const catchPromise = nextPromise.catch(arg1);
-        }
-      };
-      closure_0 = arg0;
-      let tmp = timeout;
-      if (typeof timeout !== "number") {
-        timeout = undefined;
-        if (null != timeout) {
-          timeout = timeout.timeout;
-        }
-        tmp = timeout;
-      }
-      let num = 5000;
-      if (null !== tmp) {
-        num = 5000;
-        if (undefined !== tmp) {
-          num = tmp;
-        }
-      }
-      let tmp3 = arg2;
-      if (typeof timeout !== "number") {
-        let prop;
-        if (null != timeout) {
-          prop = timeout.intervalBetweenAttempts;
-        }
-        tmp3 = prop;
-      }
-      let num2 = 50;
-      if (null !== tmp3) {
-        num2 = 50;
-        if (undefined !== tmp3) {
-          num2 = tmp3;
-        }
-      }
-      let c3 = false;
-      let fn;
-      if (num !== c3) {
-        fn = function() {
-          let tmp;
-          if (typeof o === "function") {
-            closure_0 = closure_2;
-            let closure_1 = tmp;
-            const self = this;
-            const self2 = this;
-            const promise = new Promise((arg0, fn) => {
-              try {
-                closure_0.schedule(arg0, closure_1);
-              } catch (tmp5) {
-                fn(tmp5);
-              }
-            });
-            return promise.then(() => {
-              c3 = true;
-              const tmp = new closure_0(num);
-              throw tmp;
-            });
-          } else {
-            throw new TypeError("Trying to call a non-function");
-          }
-        };
-      }
-      if (null != fn) {
-        const tmp7 = globalThis;
-        const self3 = this;
         const self4 = this;
-        let promise = new Promise(f139130);
-        const items = [, ];
-        items[0] = promise;
-        items[1] = fn();
-        raceResult = race(items);
-      } else {
-        let tmp5 = globalThis;
-        let _Promise = Promise;
-        let self = this;
-        let self2 = this;
-        raceResult = new Promise(f139130);
-      }
-      return raceResult;
-    };
-    let num = 50;
-    exports.DEFAULT_INTERVAL_BETWEEN_ATTEMPTS_IN_MS = 50;
-    let num2 = 5000;
-    exports.DEFAULT_TIMEOUT_IN_MS = 5000;
-    exports.TimeoutError = _createClass(fn3);
-    exports.WAIT_FOREVER = POSITIVE_INFINITY2;
-    exports.default = fn4;
-    exports.waitUntil = fn4;
-    const _Object = Object;
-    let str = "__esModule";
-    const _moduleResult = _createClass(fn3);
-  }
-}
-if (typeof globalThis.define === "function") {
-  const define2 = globalThis.define;
-  if (globalThis.define.amd) {
-    globalThis.define(["exports"], function i(arg0) {
-      let fn = function t(arg0) {
-        let constructResult;
-        const self = this;
-        o(this, fn);
-        let str = "Timed out";
-        if (null != arg0) {
-          const _HermesInternal = HermesInternal;
-          str = "Timed out after waiting for " + arg0 + " ms";
-        }
-        const items = [str];
-        const obj = _getPrototypeOf(fn);
-        const tmp4 = _getPrototypeOf;
-        const tmp5 = POSITIVE_INFINITY;
-        if (_isNativeReflectConstruct()) {
-          const _Reflect = Reflect;
-          constructResult = Reflect.construct(obj, items, tmp4(self).constructor);
-        } else {
-          constructResult = obj.apply(self, items);
-        }
-        const tmp5Result = tmp5(self, constructResult);
-        Object.setPrototypeOf(closure_2(tmp5Result), fn.prototype);
-        return tmp5Result;
-      };
-      let tmp = _inherits(fn, _wrapNativeSuper(Error));
-      let tmp2 = _createClass(fn);
-      _createClass = tmp2;
-      const o = o2;
-      let closure_2 = {
-        schedule(arg0, arg1) {
-          closure_0 = arg0;
-          const timeout = setTimeout(() => {
-            if (null != c1) {
-              const _clearTimeout = clearTimeout;
-              clearTimeout(tmp);
-            }
-            c1 = undefined;
-            closure_0();
-          }, arg1);
-          return {
-            cancel() {
-              if (null != c1) {
-                const _clearTimeout = clearTimeout;
-                clearTimeout(tmp);
-              }
-              c1 = undefined;
-            }
-          };
-        }
-      };
-      const fn2 = function r(arg0, timeout, arg2) {
-        let raceResult;
-        const f139130 = function(arg0, arg1) {
-          const f141331 = (fn, fn2) => {
-            try {
-              fn(closure_1_0());
-            } catch (tmp4) {
-              fn2(tmp4);
-            }
-          };
-          closure_0 = arg0;
-          let closure_1 = arg1;
-          function r() {
-            let tmp = c3;
-            if (!tmp) {
-              const tmp2 = globalThis;
-              let self = this;
-              let self2 = this;
-              let promise = new Promise(f141331);
-              const tmp3 = promise;
-              let nextPromise = promise.then(function(result) {
-                const tmp = result;
-                if (tmp) {
-                  closure_1_0(result);
-                } else if (typeof num === "function") {
-                  closure_0 = num2;
-                  closure_1 = tmp3;
-                  const self = this;
-                  const self2 = this;
-                  const promise = new Promise((arg0, fn) => {
-                    try {
-                      closure_0.schedule(arg0, closure_1);
-                    } catch (tmp5) {
-                      fn(tmp5);
-                    }
-                  });
-                  const tmp5 = promise;
-                  const nextPromise = promise.then(closure_1_2);
-                  nextPromise.catch(closure_1_1);
-                } else {
-                  throw new TypeError("Trying to call a non-function");
-                }
-              });
-              const tmp4 = closure_1;
-              nextPromise.catch(closure_1);
-            }
-          }
-          let tmp = c3;
-          if (!tmp) {
-            let tmp2 = globalThis;
-            const _Promise = Promise;
-            let self = this;
-            let self2 = this;
-            let promise = new Promise(f141331);
-            let tmp3 = promise;
-            let nextPromise = promise.then(function(result) {
-              const tmp = result;
-              if (tmp) {
-                closure_1_0(result);
-              } else if (typeof num === "function") {
-                closure_0 = num2;
-                closure_1 = tmp3;
-                const self = this;
-                const self2 = this;
-                const promise = new Promise((arg0, fn) => {
-                  try {
-                    closure_0.schedule(arg0, closure_1);
-                  } catch (tmp5) {
-                    fn(tmp5);
-                  }
-                });
-                const tmp5 = promise;
-                const nextPromise = promise.then(closure_1_2);
-                nextPromise.catch(closure_1_1);
-              } else {
-                throw new TypeError("Trying to call a non-function");
-              }
-            });
-            const catchPromise = nextPromise.catch(arg1);
-          }
-        };
-        closure_0 = arg0;
-        let tmp = timeout;
-        if (typeof timeout !== "number") {
-          timeout = undefined;
-          if (null != timeout) {
-            timeout = timeout.timeout;
-          }
-          tmp = timeout;
-        }
-        let num = 5000;
-        if (null !== tmp) {
-          num = 5000;
-          if (undefined !== tmp) {
-            num = tmp;
-          }
-        }
-        let tmp3 = arg2;
-        if (typeof timeout !== "number") {
-          let prop;
-          if (null != timeout) {
-            prop = timeout.intervalBetweenAttempts;
-          }
-          tmp3 = prop;
-        }
-        let num2 = 50;
-        if (null !== tmp3) {
-          num2 = 50;
-          if (undefined !== tmp3) {
-            num2 = tmp3;
-          }
-        }
-        let c3 = false;
-        let fn;
-        if (num !== c3) {
-          fn = function() {
-            let tmp;
-            if (typeof o === "function") {
-              closure_0 = closure_2;
-              let closure_1 = tmp;
-              const self = this;
-              const self2 = this;
-              const promise = new Promise((arg0, fn) => {
-                try {
-                  closure_0.schedule(arg0, closure_1);
-                } catch (tmp5) {
-                  fn(tmp5);
-                }
-              });
-              return promise.then(() => {
-                c3 = true;
-                const tmp = new closure_0(num);
-                throw tmp;
-              });
-            } else {
-              throw new TypeError("Trying to call a non-function");
-            }
-          };
-        }
-        if (null != fn) {
-          const tmp7 = globalThis;
-          const self3 = this;
-          const self4 = this;
-          let promise = new Promise(f139130);
-          const items = [, ];
-          items[0] = promise;
-          items[1] = fn();
-          raceResult = race(items);
-        } else {
-          let tmp5 = globalThis;
-          let _Promise = Promise;
-          let self = this;
-          let self2 = this;
-          raceResult = new Promise(f139130);
-        }
-        return raceResult;
-      };
-      arg0.DEFAULT_INTERVAL_BETWEEN_ATTEMPTS_IN_MS = 50;
-      arg0.DEFAULT_TIMEOUT_IN_MS = 5000;
-      arg0.TimeoutError = tmp2;
-      arg0.WAIT_FOREVER = POSITIVE_INFINITY;
-      arg0.default = fn2;
-      arg0.waitUntil = fn2;
-    });
-  }
-}
-let self = this;
-if (typeof globalThis !== "undefined") {
-  self = globalThis;
-}
-let obj = { DEFAULT_INTERVAL_BETWEEN_ATTEMPTS_IN_MS: 50, DEFAULT_TIMEOUT_IN_MS: 5000, TimeoutError: _moduleResult1, WAIT_FOREVER: POSITIVE_INFINITY, default: fn2, waitUntil: fn2 };
-self["async-wait-until"] = obj;
-let fn = function t(arg0) {
-  let constructResult;
-  const self = this;
-  o(this, fn);
-  let str = "Timed out";
-  if (null != arg0) {
-    const _HermesInternal = HermesInternal;
-    str = "Timed out after waiting for " + arg0 + " ms";
-  }
-  const items = [str];
-  const obj = _getPrototypeOf(fn);
-  const tmp4 = _getPrototypeOf;
-  const tmp5 = POSITIVE_INFINITY;
-  if (_isNativeReflectConstruct()) {
-    const _Reflect = Reflect;
-    constructResult = Reflect.construct(obj, items, tmp4(self).constructor);
-  } else {
-    constructResult = obj.apply(self, items);
-  }
-  const tmp5Result = tmp5(self, constructResult);
-  Object.setPrototypeOf(closure_2(tmp5Result), fn.prototype);
-  return tmp5Result;
-};
-_inherits(fn, _wrapNativeSuper(Error));
-_moduleResult1 = _createClass(fn);
-o = o2;
-let closure_2 = {
-  schedule(arg0, arg1) {
-    closure_0 = arg0;
-    const timeout = setTimeout(() => {
-      if (null != c1) {
-        const _clearTimeout = clearTimeout;
-        clearTimeout(tmp);
-      }
-      c1 = undefined;
-      closure_0();
-    }, arg1);
-    return {
-      cancel() {
-        if (null != c1) {
-          const _clearTimeout = clearTimeout;
-          clearTimeout(tmp);
-        }
-        c1 = undefined;
-      }
-    };
-  }
-};
-POSITIVE_INFINITY = Number.POSITIVE_INFINITY;
-fn2 = function r(arg0, timeout, arg2) {
-  let raceResult;
-  const f139130 = function(arg0, arg1) {
-    const f141331 = (fn, fn2) => {
-      try {
-        fn(closure_1_0());
-      } catch (tmp4) {
-        fn2(tmp4);
-      }
-    };
-    closure_0 = arg0;
-    let closure_1 = arg1;
-    function r() {
-      let tmp = c3;
-      if (!tmp) {
-        const tmp2 = globalThis;
-        let self = this;
-        let self2 = this;
-        let promise = new Promise(f141331);
-        const tmp3 = promise;
-        let nextPromise = promise.then(function(result) {
-          const tmp = result;
-          if (tmp) {
-            closure_1_0(result);
-          } else if (typeof num === "function") {
-            closure_0 = num2;
-            closure_1 = tmp3;
-            const self = this;
-            const self2 = this;
-            const promise = new Promise((arg0, fn) => {
-              try {
-                closure_0.schedule(arg0, closure_1);
-              } catch (tmp5) {
-                fn(tmp5);
-              }
-            });
-            const tmp5 = promise;
-            const nextPromise = promise.then(closure_1_2);
-            nextPromise.catch(closure_1_1);
-          } else {
-            throw new TypeError("Trying to call a non-function");
-          }
-        });
-        const tmp4 = closure_1;
-        nextPromise.catch(closure_1);
+        const self5 = this;
+        const _TypeError21 = new _TypeError2("Expected `interval` to be a finite number >= 0, got `" + str5 + "` (" + typeof merged.interval + ")");
+        throw _TypeError21;
       }
     }
-    let tmp = c3;
-    if (!tmp) {
-      let tmp2 = globalThis;
-      const _Promise = Promise;
-      let self = this;
-      let self2 = this;
-      let promise = new Promise(f141331);
-      let tmp3 = promise;
-      let nextPromise = promise.then(function(result) {
-        const tmp = result;
-        if (tmp) {
-          closure_1_0(result);
-        } else if (typeof num === "function") {
-          closure_0 = num2;
-          closure_1 = tmp3;
+    let str9;
+    const _TypeError = TypeError;
+    if (null !== merged.intervalCap) {
+      if (undefined !== merged.intervalCap) {
+        str9 = str.toString();
+      }
+    }
+    let str2 = "";
+    if (null !== str9) {
+      str2 = "";
+      if (undefined !== str9) {
+        str2 = str9;
+      }
+    }
+    const _TypeError1 = new _TypeError("Expected `intervalCap` to be a number from 1 and up, got `" + str2 + "` (" + typeof merged.intervalCap + ")");
+    throw _TypeError1;
+  }
+}
+_inherits(PQueue, _mod19570);
+let obj = {
+  key: "_doesIntervalAllowAnother",
+  get() {
+    const self = this;
+    return this._isIntervalIgnored || self._intervalCount < self._intervalCap;
+  }
+};
+const items = [
+  obj,
+  {
+    key: "_doesConcurrentAllowAnother",
+    get() {
+      return this._pendingCount < this._concurrency;
+    }
+  },
+  {
+    key: "_next",
+    value: function _next() {
+      this._pendingCount = this._pendingCount - 1;
+      this._tryToStartAnother();
+      this.emit("next");
+    }
+  },
+  {
+    key: "_resolvePromises",
+    value: function _resolvePromises() {
+      const self = this;
+      this._resolveEmpty();
+      this._resolveEmpty = empty;
+      if (0 === this._pendingCount) {
+        self._resolveIdle();
+        self._resolveIdle = tmp2;
+        self.emit("idle");
+      }
+    }
+  },
+  {
+    key: "_onResumeInterval",
+    value: function _onResumeInterval() {
+      this._onInterval();
+      const result = this._initializeIntervalIfNeeded();
+      this._timeoutId = undefined;
+    }
+  },
+  {
+    key: "_isIntervalPaused",
+    value: function _isIntervalPaused() {
+      const self = this;
+      if (undefined === this._intervalId) {
+        const diff = self._intervalEnd - tmp;
+        if (diff < 0) {
+          let num2 = 0;
+          if (self._carryoverConcurrencyCount) {
+            num2 = self._pendingCount;
+          }
+          self._intervalCount = num2;
+        } else {
+          if (undefined === self._timeoutId) {
+            const _setTimeout = setTimeout;
+            self._timeoutId = setTimeout(() => {
+              self._onResumeInterval();
+            }, diff);
+          }
+          return true;
+        }
+      }
+      return false;
+    }
+  },
+  {
+    key: "_tryToStartAnother",
+    value: function _tryToStartAnother() {
+      const self = this;
+      if (0 === this._queue.size) {
+        if (self._intervalId) {
+          const _clearInterval = clearInterval;
+          clearInterval(self._intervalId);
+        }
+        self._intervalId = undefined;
+        self._resolvePromises();
+        return false;
+      } else {
+        if (!self._isPaused) {
+          const _isIntervalPausedResult = self._isIntervalPaused();
+          if (self._doesIntervalAllowAnother) {
+            if (self._doesConcurrentAllowAnother) {
+              const _queue = self._queue;
+              const dequeueResult = _queue.dequeue();
+              let flag = dequeueResult;
+              if (flag) {
+                self.emit("active");
+                dequeueResult();
+                flag = true;
+                if (!_isIntervalPausedResult) {
+                  const result = self._initializeIntervalIfNeeded();
+                  flag = true;
+                }
+              }
+              return flag;
+            }
+          }
+        }
+        return false;
+      }
+    }
+  },
+  {
+    key: "_initializeIntervalIfNeeded",
+    value: function _initializeIntervalIfNeeded() {
+      const self = this;
+      const _isIntervalIgnored = this._isIntervalIgnored || undefined !== self._intervalId;
+      if (!_isIntervalIgnored) {
+        const _setInterval = setInterval;
+        self._intervalId = setInterval(() => {
+          self._onInterval();
+        }, self._interval);
+        const _Date = Date;
+        self._intervalEnd = Date.now() + self._interval;
+      }
+    }
+  },
+  {
+    key: "_onInterval",
+    value: function _onInterval() {
+      const self = this;
+      const tmp = 0 === this._intervalCount && 0 === self._pendingCount && self._intervalId;
+      if (tmp) {
+        const _clearInterval = clearInterval;
+        clearInterval(self._intervalId);
+        self._intervalId = undefined;
+      }
+      let num = 0;
+      if (self._carryoverConcurrencyCount) {
+        num = self._pendingCount;
+      }
+      self._intervalCount = num;
+      self._processQueue();
+    }
+  },
+  {
+    key: "_processQueue",
+    value: function _processQueue() {
+      let _tryToStartAnotherResult;
+      const self = this;
+      if (this._tryToStartAnother()) {
+        do {
+          _tryToStartAnotherResult = self._tryToStartAnother();
+        } while (_tryToStartAnotherResult);
+      }
+    }
+  },
+  {
+    key: "concurrency",
+    get() {
+      return this._concurrency;
+    },
+    set(_concurrency) {
+      if (typeof _concurrency === "number") {
+        if (_concurrency >= 1) {
           const self = this;
-          const self2 = this;
-          const promise = new Promise((arg0, fn) => {
-            try {
-              closure_0.schedule(arg0, closure_1);
-            } catch (tmp5) {
-              fn(tmp5);
-            }
-          });
-          const tmp5 = promise;
-          const nextPromise = promise.then(closure_1_2);
-          nextPromise.catch(closure_1_1);
-        } else {
-          throw new TypeError("Trying to call a non-function");
+          this._concurrency = _concurrency;
+          this._processQueue();
         }
-      });
-      const catchPromise = nextPromise.catch(arg1);
-    }
-  };
-  closure_0 = arg0;
-  let tmp = timeout;
-  if (typeof timeout !== "number") {
-    timeout = undefined;
-    if (null != timeout) {
-      timeout = timeout.timeout;
-    }
-    tmp = timeout;
-  }
-  let num = 5000;
-  if (null !== tmp) {
-    num = 5000;
-    if (undefined !== tmp) {
-      num = tmp;
-    }
-  }
-  let tmp3 = arg2;
-  if (typeof timeout !== "number") {
-    let prop;
-    if (null != timeout) {
-      prop = timeout.intervalBetweenAttempts;
-    }
-    tmp3 = prop;
-  }
-  let num2 = 50;
-  if (null !== tmp3) {
-    num2 = 50;
-    if (undefined !== tmp3) {
-      num2 = tmp3;
-    }
-  }
-  let c3 = false;
-  let fn;
-  if (num !== c3) {
-    fn = function() {
-      let tmp;
-      if (typeof o === "function") {
-        closure_0 = closure_2;
-        let closure_1 = tmp;
-        const self = this;
-        const self2 = this;
-        const promise = new Promise((arg0, fn) => {
-          try {
-            closure_0.schedule(arg0, closure_1);
-          } catch (tmp5) {
-            fn(tmp5);
-          }
-        });
-        return promise.then(() => {
-          c3 = true;
-          const tmp = new closure_0(num);
-          throw tmp;
-        });
-      } else {
-        throw new TypeError("Trying to call a non-function");
       }
-    };
+      const typeError = new TypeError("Expected `concurrency` to be a number from 1 and up, got `" + _concurrency + "` (" + typeof _concurrency + ")");
+      throw typeError;
+    }
+  },
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+,
+
+];
+const entry = {
+  key: "add",
+  value: function add(arg0) {
+    return closure_4(...arguments);
   }
-  if (null != fn) {
-    const tmp7 = globalThis;
-    const self3 = this;
-    const self4 = this;
-    let promise = new Promise(f139130);
-    const items = [, ];
-    items[0] = promise;
-    items[1] = fn();
-    raceResult = race(items);
-  } else {
-    let tmp5 = globalThis;
-    let _Promise = Promise;
-    let self = this;
-    let self2 = this;
-    raceResult = new Promise(f139130);
-  }
-  return raceResult;
 };
+closure_4 = _asyncToGenerator(async function(arg0) {
+  let self = this;
+  closure_1 = arg0;
+  closure_2 = arg1;
+  let c5 = 0;
+  let c6 = 0;
+  const iter = (async function(arg0, value) {
+    if (c6 === 2) {
+      c6 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        let obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        c6 = 2;
+        const tmp4 = c5;
+        if (0 === c5) {
+          if (arg0 === 1) {
+            c6 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c6 = 3;
+            let obj3 = { value, done: true };
+            return obj3;
+          } else {
+            closure_4 = self;
+            closure_3 = self;
+            let obj4 = closure_2;
+            if (closure_2 === undefined) {
+              obj4 = {};
+            }
+            let closure_0;
+            c5 = 1;
+            c6 = 1;
+            return { value: "Path", done: true };
+          }
+        } else if (arg0 === 1) {
+          c6 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c6 = 3;
+          return { value, done: true };
+        } else {
+          let tmp5 = closure_3;
+          closure_0 = closure_4;
+          self = this;
+          const self2 = this;
+          const promise = new Promise((arg0, arg1) => {
+            closure_1 = arg1;
+            let closure_0 = closure_1_2(function*(arg0, value) {
+              let throwOnTimeout;
+              if (c5 === 2) {
+                c5 = 3;
+                throw new TypeError("Generator functions may not be called on executing generators");
+              } else if (tmp3 === 3) {
+                if (arg0 === 1) {
+                  throw value;
+                } else if (arg0 === 2) {
+                  const obj2 = { value, done: true };
+                  return obj2;
+                } else {
+                  return { value: "HermesInternal", done: null };
+                }
+              } else {
+                let c3;
+                try {
+                  c5 = 2;
+                  if (0 === c4) {
+                    if (arg0 === 1) {
+                      c5 = 3;
+                      throw value;
+                    } else if (arg0 === 2) {
+                      c5 = 3;
+                      const obj3 = { value, done: true };
+                      return obj3;
+                    } else {
+                      let timeout;
+                      closure_1 = tmp;
+                      _throwOnTimeout._pendingCount = _throwOnTimeout._pendingCount + 1;
+                      _throwOnTimeout._intervalCount = _throwOnTimeout._intervalCount + 1;
+                      c3 = 1;
+                      if (undefined === _throwOnTimeout._timeout) {
+                        let _defaultResult;
+                        if (undefined === config.timeout) {
+                          _defaultResult = closure_2_1();
+                        }
+                        c4 = 2;
+                        c5 = 1;
+                        const obj4 = { value: _defaultResult, done: false };
+                        return obj4;
+                      }
+                      const _default = _throwOnTimeout(closure_1[6]).default;
+                      const resolved = Promise.resolve(closure_2_1());
+                      if (undefined === config.timeout) {
+                        timeout = _throwOnTimeout._timeout;
+                      } else {
+                        timeout = tmp21.timeout;
+                      }
+                      _defaultResult = _default(resolved, timeout, () => {
+                        if (undefined === throwOnTimeout.throwOnTimeout) {
+                          throwOnTimeout = _throwOnTimeout._throwOnTimeout;
+                        } else {
+                          throwOnTimeout = tmp.throwOnTimeout;
+                        }
+                        if (throwOnTimeout) {
+                          closure_1_1(closure_3_8);
+                        }
+                      });
+                    }
+                  } else {
+                    if (1 === tmp4) {
+                      c3 = 0;
+                      closure_1(throwOnTimeout);
+                    } else if (arg0 === 1) {
+                      c5 = 3;
+                      throw value;
+                    } else if (arg0 === 2) {
+                      c3 = 0;
+                      c5 = 3;
+                      const obj = { value, done: true };
+                      return obj;
+                    } else {
+                      _throwOnTimeout(value);
+                      c3 = 0;
+                    }
+                    _throwOnTimeout._next();
+                    c5 = 3;
+                    return { value: "HermesInternal", done: null };
+                  }
+                } catch (tmp26) {
+                  throwOnTimeout = tmp26;
+                  if (0 === c3) {
+                    c5 = 3;
+                    throw tmp26;
+                  } else {
+                    c4 = 1;
+                  }
+                }
+              }
+            });
+            const _queue = closure_3._queue;
+            _queue.enqueue(function run() {
+              return closure_0(...arguments);
+            }, closure_2);
+            closure_3._tryToStartAnother();
+            closure_3.emit("add");
+          });
+          c6 = 3;
+          let obj = { value: promise, done: true };
+          return obj;
+        }
+      } catch (tmp12) {
+        c6 = 3;
+        throw tmp12;
+      }
+    }
+  })();
+  iter.next();
+  return iter;
+});
+items[11] = entry;
+const entry1 = {
+  key: "addAll",
+  value: function addAll(arg0, arg1) {
+    return closure_3(...arguments);
+  }
+};
+_false = _asyncToGenerator(async function(arg0, arg1) {
+  const self = this;
+  closure_1 = arg0;
+  closure_2 = arg1;
+  let c3 = 0;
+  return (async (arg0, value) => {
+    if (c3 === 2) {
+      c3 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp2 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        let obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        c3 = 2;
+        if (arg0 === 1) {
+          c3 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c3 = 3;
+          let obj3 = { value, done: true };
+          return obj3;
+        } else {
+          let closure_0 = closure_2;
+          closure_1 = self;
+          const tmp6 = globalThis;
+          c3 = 3;
+          let obj = {
+            value: Promise.all(closure_1.map((() => {
+                    closure_0 = closure_1_2(function*(arg0, value) {
+                      closure_0 = arg0;
+                      if (set === 2) {
+                        set = 3;
+                        throw new TypeError("Generator functions may not be called on executing generators");
+                      } else if (tmp2 === 3) {
+                        if (arg0 === 1) {
+                          throw value;
+                        } else if (arg0 === 2) {
+                          const obj2 = { value, done: true };
+                          return obj2;
+                        } else {
+                          return { value: "HermesInternal", done: null };
+                        }
+                      } else {
+                        try {
+                          set = 2;
+                          if (arg0 === 1) {
+                            set = 3;
+                            throw value;
+                          } else if (arg0 === 2) {
+                            set = 3;
+                            const obj3 = { value, done: true };
+                            return obj3;
+                          } else {
+                            set = 3;
+                            const obj = { value: set.add(closure_0, closure_0), done: true };
+                            return obj;
+                          }
+                        } catch (tmp6) {
+                          set = 3;
+                          throw tmp6;
+                        }
+                      }
+                    });
+                    return function(arg0) {
+                      return closure_0(...arguments);
+                    };
+                  })())),
+            done: true
+          };
+          return obj;
+        }
+      } catch (tmp7) {
+        c3 = 3;
+        throw tmp7;
+      }
+    }
+  })();
+});
+items[12] = entry1;
+items[13] = {
+  key: "start",
+  value: function start() {
+    const self = this;
+    if (this._isPaused) {
+      self._isPaused = false;
+      self._processQueue();
+    }
+    return self;
+  }
+};
+items[14] = {
+  key: "pause",
+  value: function pause() {
+    this._isPaused = true;
+  }
+};
+items[15] = {
+  key: "clear",
+  value: function clear() {
+    const _queueClass = new this._queueClass();
+    this._queue = _queueClass;
+  }
+};
+const entry2 = {
+  key: "onEmpty",
+  value: function onEmpty() {
+    return closure_2(...arguments);
+  }
+};
+closure_2 = _asyncToGenerator(async function() {
+  let self = this;
+  let c1 = 0;
+  return (async function(arg0, value) {
+    if (c1 === 2) {
+      c1 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp2 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        return { value, done: true };
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        c1 = 2;
+        if (arg0 === 1) {
+          c1 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c1 = 3;
+          return { value, done: true };
+        } else {
+          let closure_0 = self;
+          if (0 !== self._queue.size) {
+            self = this;
+            const self2 = this;
+            c1 = 3;
+            const obj = {
+              value: new Promise((arg0) => {
+                        _resolveEmpty = arg0;
+                        _resolveEmpty = _resolveEmpty._resolveEmpty;
+                        _resolveEmpty._resolveEmpty = () => {
+                          _resolveEmpty();
+                          closure_0();
+                        };
+                      }),
+              done: true
+            };
+            return obj;
+          } else {
+            c1 = 3;
+            return { value: "HermesInternal", done: null };
+          }
+        }
+      } catch (tmp7) {
+        c1 = 3;
+        throw tmp7;
+      }
+    }
+  })();
+});
+items[16] = entry2;
+const entry3 = {
+  key: "onIdle",
+  value: function onIdle() {
+    return closure_1(...arguments);
+  }
+};
+_asyncToGenerator(async function() {
+  let self = this;
+  let c1 = 0;
+  return (async function(arg0, value) {
+    if (c1 === 2) {
+      c1 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp2 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        return { value, done: true };
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        c1 = 2;
+        if (arg0 === 1) {
+          c1 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c1 = 3;
+          return { value, done: true };
+        } else {
+          let closure_0 = self;
+          if (0 === self._pendingCount) {
+            if (0 === self._queue.size) {
+              c1 = 3;
+              return { value: "HermesInternal", done: null };
+            }
+          }
+          self = this;
+          const self2 = this;
+          c1 = 3;
+          const obj = {
+            value: new Promise((arg0) => {
+                    _resolveIdle = arg0;
+                    _resolveIdle = _resolveIdle._resolveIdle;
+                    _resolveIdle._resolveIdle = () => {
+                      _resolveIdle();
+                      closure_0();
+                    };
+                  }),
+            done: true
+          };
+          return obj;
+        }
+      } catch (tmp6) {
+        c1 = 3;
+        throw tmp6;
+      }
+    }
+  })();
+});
+items[17] = entry3;
+items[18] = {
+  key: "size",
+  get() {
+    return this._queue.size;
+  }
+};
+items[19] = {
+  key: "sizeBy",
+  value: function sizeBy(arg0) {
+    const _queue = this._queue;
+    return _queue.filter(arg0).length;
+  }
+};
+items[20] = {
+  key: "pending",
+  get() {
+    return this._pendingCount;
+  }
+};
+items[21] = {
+  key: "isPaused",
+  get() {
+    return this._isPaused;
+  }
+};
+items[22] = {
+  key: "timeout",
+  get() {
+    return this._timeout;
+  },
+  set(_timeout) {
+    this._timeout = _timeout;
+  }
+};
+
+export default _createClass(PQueue, items);

@@ -1,27 +1,27 @@
-// Module ID: 14329
-// Function ID: 14330
+// Module ID: 14451
+// Function ID: 14452
 // Name: ContentInventoryActivityImageUtils
-// Dependencies: [19, 2163, 1071, 2143, 8876, 6798, 1112, 14330, 8933, 14332, 13402, 1412, 14336, 6572, 14337, 6813, 6745, 504, 1255, 8879, 2]
+// Dependencies: [19, 2164, 1071, 2144, 8996, 6917, 1112, 14452, 9053, 14454, 13524, 1412, 14458, 6691, 14459, 6932, 6864, 504, 1255, 8999, 2]
 // Exports: getApplicationImage, useImageForActivity, useImageForContentEntry
 
-// Module 14329 (ContentInventoryActivityImageUtils)
+// Module 14451 (ContentInventoryActivityImageUtils)
 import react from "react" /* 19 */;
 import intl5 from "intl" /* 1112 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
-import Constants2 from "Constants" /* 2143 */;
-import PlatformsDefault from "Platforms" /* 6572 */;
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 6745 */;
-import ApplicationAssetUtils from "ApplicationAssetUtils" /* 6798 */;
-import conjurePresenceActivity from "conjurePresenceActivity" /* 6813 */;
-import ContentInventoryTypes from "ContentInventoryTypes" /* 8876 */;
-import isCrunchyrollActivityDefault from "isCrunchyrollActivity" /* 8879 */;
-import useGame2 from "useGame" /* 8933 */;
-import StageChannelRichPresenceUtils from "StageChannelRichPresenceUtils" /* 13402 */;
-import useEntryActivityAndApplicationDefault from "useEntryActivityAndApplication" /* 14330 */;
-import isOnXboxDefault from "isOnXbox" /* 14336 */;
-import isOnPlayStationDefault from "isOnPlayStation" /* 14337 */;
-import ApplicationStore from "ApplicationStore" /* 2163 */;
+import Constants2 from "Constants" /* 2144 */;
+import PlatformsDefault from "Platforms" /* 6691 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 6864 */;
+import ApplicationAssetUtils from "ApplicationAssetUtils" /* 6917 */;
+import conjurePresenceActivity from "conjurePresenceActivity" /* 6932 */;
+import ContentInventoryTypes from "ContentInventoryTypes" /* 8996 */;
+import isCrunchyrollActivityDefault from "isCrunchyrollActivity" /* 8999 */;
+import useGame2 from "useGame" /* 9053 */;
+import StageChannelRichPresenceUtils from "StageChannelRichPresenceUtils" /* 13524 */;
+import useEntryActivityAndApplicationDefault from "useEntryActivityAndApplication" /* 14452 */;
+import isOnXboxDefault from "isOnXbox" /* 14458 */;
+import isOnPlayStationDefault from "isOnPlayStation" /* 14459 */;
+import ApplicationStore from "ApplicationStore" /* 2164 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 

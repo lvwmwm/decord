@@ -1,11 +1,11 @@
-// Module ID: 17050
-// Function ID: 17051
+// Module ID: 17173
+// Function ID: 17174
 // Name: useFrameMonitor
-// Dependencies: [32, 19, 17048, 2]
+// Dependencies: [32, 19, 17171, 2]
 // Exports: default
 
-// Module 17050 (useFrameMonitor)
-import startFrameMonitor from "startFrameMonitor" /* 17048 */;
+// Module 17173 (useFrameMonitor)
+import startFrameMonitor from "startFrameMonitor" /* 17171 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;

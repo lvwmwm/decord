@@ -1,50 +1,50 @@
-// Module ID: 19723
-// Function ID: 19724
+// Module ID: 19850
+// Function ID: 19851
 // Name: GuildSettingsRoleEdit
-// Dependencies: [109, 5, 19, 17, 4701, 502, 4706, 4700, 4665, 7875, 19710, 19705, 1071, 19712, 21, 4794, 575, 4855, 6975, 6909, 1112, 5531, 19714, 12, 1255, 7614, 19724, 5476, 6392, 11896, 5741, 1186, 7228, 6925, 7642, 19725, 19734, 19736, 19737, 5810, 7589, 1500, 504, 4731, 5368, 2]
+// Dependencies: [109, 5, 19, 17, 4820, 502, 4825, 4819, 4784, 7995, 19837, 19832, 1071, 19839, 21, 4913, 575, 4974, 7095, 7029, 1112, 5650, 19841, 12, 1255, 7734, 19851, 5595, 6511, 12016, 5860, 1186, 7348, 7045, 7762, 19852, 19861, 19863, 19864, 5929, 7709, 1500, 504, 4850, 5487, 2]
 // Exports: default
 
-// Module 19723 (GuildSettingsRoleEdit)
+// Module 19850 (GuildSettingsRoleEdit)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import GuildRoleRecord from "GuildRoleRecord" /* 4701 */;
-import PermissionUtilsAll from "PermissionUtils" /* 4731 */;
-import native2 from "native" /* 4855 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 5476 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5531 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 5741 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6392 */;
-import HeaderActionButton2 from "HeaderActionButton" /* 6909 */;
-import TableRow4 from "TableRow" /* 6925 */;
-import NavigatorHeader2 from "NavigatorHeader" /* 6975 */;
-import TableRowGroup2 from "TableRowGroup" /* 7228 */;
-import ChannelPermissionsUtils from "ChannelPermissionsUtils" /* 7614 */;
-import InlineNotice2 from "InlineNotice" /* 7642 */;
-import ConnectionsRoleActionCreators from "ConnectionsRoleActionCreators" /* 11896 */;
-import GuildSettingsConstants from "GuildSettingsConstants" /* 19705 */;
-import GuildSettingsRolesStore2 from "GuildSettingsRolesStore" /* 19710 */;
-import EnhancedRoleColorConstants from "EnhancedRoleColorConstants" /* 19712 */;
-import GuildSettingsRolesUtils from "GuildSettingsRolesUtils" /* 19714 */;
-import GuildSettingsRolesActionCreators from "GuildSettingsRolesActionCreators" /* 19724 */;
-import GuildSettingsRoleEditDisplayDefault from "GuildSettingsRoleEditDisplay" /* 19725 */;
-import GuildSettingsRoleEditPermissionsDefault from "GuildSettingsRoleEditPermissions" /* 19734 */;
-import GuildSettingsRoleMembersDefault from "GuildSettingsRoleMembers" /* 19736 */;
-import GuildSettingsRoleEditConnectionsControlsDefault from "GuildSettingsRoleEditConnectionsControls" /* 19737 */;
+import GuildRoleRecord from "GuildRoleRecord" /* 4820 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4850 */;
+import native2 from "native" /* 4974 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5595 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5650 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5860 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6511 */;
+import HeaderActionButton2 from "HeaderActionButton" /* 7029 */;
+import TableRow4 from "TableRow" /* 7045 */;
+import NavigatorHeader2 from "NavigatorHeader" /* 7095 */;
+import TableRowGroup2 from "TableRowGroup" /* 7348 */;
+import ChannelPermissionsUtils from "ChannelPermissionsUtils" /* 7734 */;
+import InlineNotice2 from "InlineNotice" /* 7762 */;
+import ConnectionsRoleActionCreators from "ConnectionsRoleActionCreators" /* 12016 */;
+import GuildSettingsConstants from "GuildSettingsConstants" /* 19832 */;
+import GuildSettingsRolesStore2 from "GuildSettingsRolesStore" /* 19837 */;
+import EnhancedRoleColorConstants from "EnhancedRoleColorConstants" /* 19839 */;
+import GuildSettingsRolesUtils from "GuildSettingsRolesUtils" /* 19841 */;
+import GuildSettingsRolesActionCreators from "GuildSettingsRolesActionCreators" /* 19851 */;
+import GuildSettingsRoleEditDisplayDefault from "GuildSettingsRoleEditDisplay" /* 19852 */;
+import GuildSettingsRoleEditPermissionsDefault from "GuildSettingsRoleEditPermissions" /* 19861 */;
+import GuildSettingsRoleMembersDefault from "GuildSettingsRoleMembers" /* 19863 */;
+import GuildSettingsRoleEditConnectionsControlsDefault from "GuildSettingsRoleEditConnectionsControls" /* 19864 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 4706 */;
-import GuildRoleStore from "GuildRoleStore" /* 4700 */;
-import GuildStore from "GuildStore" /* 4665 */;
-import GuildSettingsStore from "GuildSettingsStore" /* 7875 */;
+import GuildMemberStore from "GuildMemberStore" /* 4825 */;
+import GuildRoleStore from "GuildRoleStore" /* 4819 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import GuildSettingsStore from "GuildSettingsStore" /* 7995 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4794 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const GuildSettingsRolesStore = GuildSettingsRolesStore2;
@@ -485,7 +485,7 @@ class GuildSettingsRoleEdit extends PureComponent {
     };
     const sectionChanges = self.getSectionChanges();
     const setOptions = navigation.setOptions;
-    obj2 = role(6975);
+    obj2 = role(7095);
     if (submitting) {
       fn = () => closure_1_22(role(dependencyMap[18]).HeaderSubmittingIndicator, {});
     } else if (sectionChanges) {
@@ -506,7 +506,7 @@ class GuildSettingsRoleEdit extends PureComponent {
     let items;
     const self = this;
     const obj = { hasIcons: false, children: items };
-    const TableRowGroup = self(7228).TableRowGroup;
+    const TableRowGroup = self(7348).TableRowGroup;
     const obj2 = {
       label: intl.string(self(1112).t.WIDE1L),
       onPress() {
@@ -514,7 +514,7 @@ class GuildSettingsRoleEdit extends PureComponent {
       },
       arrow: true
     };
-    const TableRow = self(6925).TableRow;
+    const TableRow = self(7045).TableRow;
     intl = self(1112).intl;
     items = [closure_22(TableRow, obj2), , ];
     const obj3 = {
@@ -524,7 +524,7 @@ class GuildSettingsRoleEdit extends PureComponent {
       },
       arrow: true
     };
-    const TableRow2 = self(6925).TableRow;
+    const TableRow2 = self(7045).TableRow;
     intl2 = self(1112).intl;
     items[1] = closure_22(TableRow2, obj3);
     const obj4 = {
@@ -534,7 +534,7 @@ class GuildSettingsRoleEdit extends PureComponent {
       },
       arrow: true
     };
-    const TableRow3 = self(6925).TableRow;
+    const TableRow3 = self(7045).TableRow;
     intl3 = self(1112).intl;
     items[2] = closure_22(TableRow3, obj4);
     return closure_23(TableRowGroup, obj);
@@ -625,14 +625,14 @@ class GuildSettingsRoleEdit extends PureComponent {
     const tmp23 = View;
     if (tmp2) {
       const obj7 = { spacing: nativeDefault.space.PX_24, style: obj8, children: tmp11Result };
-      const Stack2 = tmp24(5810).Stack;
+      const Stack2 = tmp24(5929).Stack;
       obj8 = { flex: 1, paddingHorizontal: nativeDefault.space.PX_16 };
       tmp22Result = tmp22(Stack2, obj7);
     } else {
       const obj9 = { contentContainerStyle: tmp.form, children: tmp26(Stack, obj17) };
-      const Form = tmp24(7589).Form;
+      const Form = tmp24(7709).Form;
       obj17 = { spacing: nativeDefault.space.PX_24, children: items };
-      Stack = tmp24(5810).Stack;
+      Stack = tmp24(5929).Stack;
       let result = null;
       tmp26 = sidebars;
       if (effectiveSection === constants.DISPLAY) {

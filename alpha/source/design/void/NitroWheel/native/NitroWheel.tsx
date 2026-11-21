@@ -1,13 +1,13 @@
-// Module ID: 15292
-// Function ID: 15293
+// Module ID: 15415
+// Function ID: 15416
 // Name: NitroWheel
-// Dependencies: [19, 21, 5481, 10383, 2]
+// Dependencies: [19, 21, 5600, 10503, 2]
 // Exports: default
 
-// Module 15292 (NitroWheel)
+// Module 15415 (NitroWheel)
 import Fragment from "Fragment" /* 21 */;
-import FastImageDefault from "FastImage" /* 5481 */;
-import AssetRegistryDefault from "AssetRegistry" /* 10383 */;
+import FastImageDefault from "FastImage" /* 5600 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10503 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

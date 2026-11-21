@@ -1,14 +1,14 @@
-// Module ID: 7580
-// Function ID: 7581
+// Module ID: 7700
+// Function ID: 7701
 // Name: HubIcon
-// Dependencies: [19, 21, 575, 5480, 7524, 2]
+// Dependencies: [19, 21, 575, 5599, 7644, 2]
 // Exports: HubIcon
 
-// Module 7580 (HubIcon)
+// Module 7700 (HubIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 5480 */;
-import AssetRegistry from "AssetRegistry" /* 7524 */;
+import BaseIconImage2 from "BaseIconImage" /* 5599 */;
+import AssetRegistry from "AssetRegistry" /* 7644 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

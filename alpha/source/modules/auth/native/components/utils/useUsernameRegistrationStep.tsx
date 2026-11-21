@@ -1,18 +1,18 @@
-// Module ID: 17350
-// Function ID: 17351
+// Module ID: 17474
+// Function ID: 17475
 // Name: useUsernameRegistrationStep
-// Dependencies: [32, 19, 15883, 17324, 17325, 17321, 1500, 7265, 15881, 15880, 17323, 1501, 1112, 2]
+// Dependencies: [32, 19, 16006, 17448, 17449, 17445, 1500, 7385, 16004, 16003, 17447, 1501, 1112, 2]
 // Exports: useUsernameRegistrationStep
 
-// Module 17350 (useUsernameRegistrationStep)
+// Module 17474 (useUsernameRegistrationStep)
 import intl2 from "intl" /* 1112 */;
-import UniqueUsernamesTypes from "UniqueUsernamesTypes" /* 15880 */;
-import RegistrationStepsUtils from "RegistrationStepsUtils" /* 17323 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 17324 */;
+import UniqueUsernamesTypes from "UniqueUsernamesTypes" /* 16003 */;
+import RegistrationStepsUtils from "RegistrationStepsUtils" /* 17447 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 17448 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UniqueUsernamesStore from "UniqueUsernamesStore" /* 15883 */;
-import RegistrationConstants from "RegistrationConstants" /* 17325 */;
+import UniqueUsernamesStore from "UniqueUsernamesStore" /* 16006 */;
+import RegistrationConstants from "RegistrationConstants" /* 17449 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

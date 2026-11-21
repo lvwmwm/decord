@@ -1,13 +1,13 @@
-// Module ID: 19604
-// Function ID: 19605
+// Module ID: 19731
+// Function ID: 19732
 // Name: BaseRuleInfo
-// Dependencies: [12279, 19592, 19591, 1112, 2]
+// Dependencies: [12401, 19719, 19718, 1112, 2]
 // Exports: getBaseRuleInfo
 
-// Module 19604 (BaseRuleInfo)
-import Constants from "Constants" /* 12279 */;
-import AutomodRuleUtils from "AutomodRuleUtils" /* 19591 */;
-import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 19592 */;
+// Module 19731 (BaseRuleInfo)
+import Constants from "Constants" /* 12401 */;
+import AutomodRuleUtils from "AutomodRuleUtils" /* 19718 */;
+import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 19719 */;
 import size from "module_2" /* 2 */;
 
 const AutomodTriggerType = Constants.AutomodTriggerType;

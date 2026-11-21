@@ -1,19 +1,19 @@
-// Module ID: 19477
-// Function ID: 19478
+// Module ID: 19604
+// Function ID: 19605
 // Name: NewUserModal
-// Dependencies: [19, 17, 21, 8518, 4794, 575, 19478, 2119, 5743, 6972, 19476, 6310, 19475, 6981, 19479, 1378, 17380, 19480, 13482, 13470, 19481, 19488, 19494, 2]
+// Dependencies: [19, 17, 21, 8638, 4913, 575, 19605, 2119, 5862, 7092, 19603, 6429, 19602, 7101, 19606, 1378, 17504, 19607, 13604, 13592, 19608, 19615, 19621, 2]
 // Exports: default
 
-// Module 19477 (NewUserModal)
+// Module 19604 (NewUserModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
-import NewUserUtils from "NewUserUtils" /* 19476 */;
-import InterestPickerPicksContextDefault from "InterestPickerPicksContext" /* 19479 */;
+import NewUserUtils from "NewUserUtils" /* 19603 */;
+import InterestPickerPicksContextDefault from "InterestPickerPicksContext" /* 19606 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 8518 */;
-import createStyles from "createStyles" /* 4794 */;
+import NativeStackView from "NativeStackView" /* 8638 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

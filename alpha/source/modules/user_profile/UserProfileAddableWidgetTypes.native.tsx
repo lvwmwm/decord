@@ -1,10 +1,10 @@
-// Module ID: 14436
-// Function ID: 14437
+// Module ID: 14558
+// Function ID: 14559
 // Name: UserProfileAddableWidgetTypes
-// Dependencies: [6838, 2]
+// Dependencies: [6957, 2]
 
-// Module 14436 (UserProfileAddableWidgetTypes)
-import WidgetType from "WidgetType" /* 6838 */;
+// Module 14558 (UserProfileAddableWidgetTypes)
+import WidgetType from "WidgetType" /* 6957 */;
 import size from "module_2" /* 2 */;
 
 const items = [WidgetType.WidgetType.APPLICATION, WidgetType.WidgetType.FAVORITE_GAMES, WidgetType.WidgetType.PLAYED_GAMES, WidgetType.WidgetType.CURRENT_GAMES, WidgetType.WidgetType.WANT_TO_PLAY_GAMES];

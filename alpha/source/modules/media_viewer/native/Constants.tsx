@@ -1,9 +1,9 @@
-// Module ID: 9902
-// Function ID: 9903
+// Module ID: 10022
+// Function ID: 10023
 // Name: Constants
 // Dependencies: [2]
 
-// Module 9902 (Constants)
+// Module 10022 (Constants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/media_viewer/native/Constants.tsx");

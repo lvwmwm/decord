@@ -1,20 +1,20 @@
-// Module ID: 19115
-// Function ID: 19116
+// Module ID: 19242
+// Function ID: 19243
 // Name: VoicePanelDockSheet
-// Dependencies: [19, 17, 11630, 11648, 21, 11655, 5358, 575, 4791, 1653, 11629, 19116, 17858, 2]
+// Dependencies: [19, 17, 11750, 11768, 21, 11775, 5477, 575, 4910, 1653, 11749, 19243, 17984, 2]
 // Exports: VoicePanelContentWithDock, getDockSheetShadowOpacity, getDockSheetShape, getDockSheetSurfaceStyle, getDockSheetTransform, useDockSheetSurfaceFills
 
-// Module 19115 (VoicePanelDockSheet)
+// Module 19242 (VoicePanelDockSheet)
 import react_native from "react-native" /* 17 */;
 import _mod1653 from "module_1653" /* 1653 */;
-import ColorUtils from "ColorUtils" /* 4791 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11629 */;
-import VoicePanelSheetMorph from "VoicePanelSheetMorph" /* 11655 */;
-import VoicePanelDockDefault from "VoicePanelDock" /* 17858 */;
-import useVoicePanelDockStatusDefault from "useVoicePanelDockStatus" /* 19116 */;
+import ColorUtils from "ColorUtils" /* 4910 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11749 */;
+import VoicePanelSheetMorph from "VoicePanelSheetMorph" /* 11775 */;
+import VoicePanelDockDefault from "VoicePanelDock" /* 17984 */;
+import useVoicePanelDockStatusDefault from "useVoicePanelDockStatus" /* 19243 */;
 import react from "react" /* 19 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11630 */;
-import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11648 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11750 */;
+import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11768 */;
 import Fragment from "Fragment" /* 21 */;
 import size_mod from "module_2" /* 2 */;
 

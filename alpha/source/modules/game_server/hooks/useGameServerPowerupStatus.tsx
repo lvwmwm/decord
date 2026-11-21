@@ -1,14 +1,14 @@
-// Module ID: 13345
-// Function ID: 13346
+// Module ID: 13467
+// Function ID: 13468
 // Name: useGameServerPowerupStatus
-// Dependencies: [19, 8630, 504, 13329, 1112, 2757, 2]
+// Dependencies: [19, 8750, 504, 13451, 1112, 2856, 2]
 // Exports: default
 
-// Module 13345 (useGameServerPowerupStatus)
+// Module 13467 (useGameServerPowerupStatus)
 import intl2 from "intl" /* 1112 */;
-import _modDef2757 from "module_2757" /* 2757 */;
+import _modDef2856 from "module_2856" /* 2856 */;
 import react from "react" /* 19 */;
-import GameServerStore from "GameServerStore" /* 8630 */;
+import GameServerStore from "GameServerStore" /* 8750 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -31,7 +31,7 @@ export default function useGameServerPowerupStatus(arg0) {
     }
     return entitlements;
   }, items1);
-  const tmp2 = stateFromStores(13329)(arg0);
+  const tmp2 = stateFromStores(13451)(arg0);
   dependencyMap = tmp2;
   const items2 = [tmp2, stateFromStores];
   return react.useMemo(() => {
@@ -47,7 +47,7 @@ export default function useGameServerPowerupStatus(arg0) {
         obj3 = { type: "expiring", expiringAt: tmp[0].ends_at };
         const obj2 = { type: "expiring", expiringAt: tmp[0].ends_at };
       } else {
-        obj3 = { type: "active", statusText: intl.string(_modDef2757.FFLkmx) };
+        obj3 = { type: "active", statusText: intl.string(_modDef2856.FFLkmx) };
         intl = intl2.intl;
       }
       return obj3;

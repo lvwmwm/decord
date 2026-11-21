@@ -1,11 +1,11 @@
-// Module ID: 18308
-// Function ID: 18309
+// Module ID: 18435
+// Function ID: 18436
 // Name: useConjureProjectPickerOptions
-// Dependencies: [19, 18166, 2]
+// Dependencies: [19, 18293, 2]
 // Exports: default
 
-// Module 18308 (useConjureProjectPickerOptions)
-import useConjureProjects from "useConjureProjects" /* 18166 */;
+// Module 18435 (useConjureProjectPickerOptions)
+import useConjureProjects from "useConjureProjects" /* 18293 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,15 +1,15 @@
-// Module ID: 16044
-// Function ID: 16045
+// Module ID: 16167
+// Function ID: 16168
 // Name: useIsParentalConsentBannerActive
-// Dependencies: [16045, 16047, 2]
+// Dependencies: [16168, 16170, 2]
 // Exports: useIsParentalConsentBannerActive
 
-// Module 16044 (useIsParentalConsentBannerActive)
-import useParentalConsentWarning from "useParentalConsentWarning" /* 16045 */;
+// Module 16167 (useIsParentalConsentBannerActive)
+import useParentalConsentWarning from "useParentalConsentWarning" /* 16168 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const ParentalConsentWarningTypes = tmp(16047);
+const ParentalConsentWarningTypes = tmp(16170);
 const result = size.fileFinishedImporting("modules/parent_tools/useIsParentalConsentBannerActive.tsx");
 
 export function useIsParentalConsentBannerActive() {

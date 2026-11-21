@@ -1,16 +1,16 @@
-// Module ID: 8934
-// Function ID: 8935
+// Module ID: 9054
+// Function ID: 9055
 // Name: GameActionCreators
-// Dependencies: [5, 2139, 1071, 1284, 572, 4638, 12, 2]
+// Dependencies: [5, 2140, 1071, 1284, 572, 4757, 12, 2]
 // Exports: fetchGamesWithSupplementalData
 
-// Module 8934 (GameActionCreators)
+// Module 9054 (GameActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
 import HTTPUtils from "HTTPUtils" /* 1284 */;
-import Timers from "Timers" /* 4638 */;
+import Timers from "Timers" /* 4757 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GameStore from "GameStore" /* 2139 */;
+import GameStore from "GameStore" /* 2140 */;
 import size from "module_2" /* 2 */;
 
 let c1;

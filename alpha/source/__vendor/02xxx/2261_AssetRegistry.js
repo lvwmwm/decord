@@ -7,4 +7,4 @@
 import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/qualtrics", scales: [1], hash: "e7bc4c51da074c2c6c91e9f2ab2d0e6c", name: "CUJSurveyCard.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9kb3dubG9hZF9hcHBz", scales: [1], hash: "bf596f7c7cce9f6e3842c77d018a7627", name: "fr.messages.bf596f7c7cce9f6e3842c77d018a7627.compiled.messages", type: "jsona" });

@@ -1,19 +1,19 @@
-// Module ID: 14430
-// Function ID: 14431
+// Module ID: 14552
+// Function ID: 14553
 // Name: useConjureServerWidgetOffers
-// Dependencies: [5, 19, 10212, 4665, 1386, 14429, 559, 10216, 1284, 504, 1450, 6746, 14431, 10093, 6842, 14432, 14433, 2]
+// Dependencies: [5, 19, 10332, 4784, 1386, 14551, 559, 10336, 1284, 504, 1450, 6865, 14553, 10213, 6961, 14554, 14555, 2]
 // Exports: default
 
-// Module 14430 (useConjureServerWidgetOffers)
+// Module 14552 (useConjureServerWidgetOffers)
 import BackoffDefault from "Backoff" /* 559 */;
-import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 6842 */;
-import useAddableWidgets from "useAddableWidgets" /* 14433 */;
+import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 6961 */;
+import useAddableWidgets from "useAddableWidgets" /* 14555 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ApplicationWidgetConfigStore from "ApplicationWidgetConfigStore" /* 10212 */;
-import GuildStore from "GuildStore" /* 4665 */;
+import ApplicationWidgetConfigStore from "ApplicationWidgetConfigStore" /* 10332 */;
+import GuildStore from "GuildStore" /* 4784 */;
 import UserStore from "UserStore" /* 1386 */;
-import ConjureServerWidgetStore from "ConjureServerWidgetStore" /* 14429 */;
+import ConjureServerWidgetStore from "ConjureServerWidgetStore" /* 14551 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

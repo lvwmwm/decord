@@ -1,12 +1,12 @@
-// Module ID: 2186
-// Function ID: 2187
+// Module ID: 2187
+// Function ID: 2188
 // Name: HelpdeskUtils
-// Dependencies: [2187, 1071, 4606, 1378, 2]
+// Dependencies: [2188, 1071, 4725, 1378, 2]
 
-// Module 2186 (HelpdeskUtils)
+// Module 2187 (HelpdeskUtils)
 import PlatformUtils from "PlatformUtils" /* 1378 */;
-import getLocalizedLinkDefault from "getLocalizedLink" /* 4606 */;
-import LocaleStore from "LocaleStore" /* 2187 */;
+import getLocalizedLinkDefault from "getLocalizedLink" /* 4725 */;
+import LocaleStore from "LocaleStore" /* 2188 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 

@@ -1,9 +1,9 @@
-// Module ID: 8075
-// Function ID: 8076
+// Module ID: 8195
+// Function ID: 8196
 // Name: UserSettingsAccountStore
 // Dependencies: [1386, 1071, 504, 572, 2]
 
-// Module 8075 (UserSettingsAccountStore)
+// Module 8195 (UserSettingsAccountStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;

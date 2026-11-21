@@ -1,9 +1,9 @@
-// Module ID: 15883
-// Function ID: 15884
+// Module ID: 16006
+// Function ID: 16007
 // Name: UniqueUsernamesStore
 // Dependencies: [1454, 1088, 504, 572, 2]
 
-// Module 15883 (UniqueUsernamesStore)
+// Module 16006 (UniqueUsernamesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import DurationsDefault from "Durations" /* 1088 */;

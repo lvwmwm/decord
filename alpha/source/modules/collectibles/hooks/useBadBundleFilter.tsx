@@ -1,18 +1,18 @@
-// Module ID: 16266
-// Function ID: 16267
+// Module ID: 16389
+// Function ID: 16390
 // Name: useBadBundleFilter
-// Dependencies: [19, 1386, 7970, 563, 2172, 8918, 7967, 7966, 2]
+// Dependencies: [19, 1386, 8090, 563, 2173, 9038, 8087, 8086, 2]
 // Exports: useBadBundleFilter
 
-// Module 16266 (useBadBundleFilter)
+// Module 16389 (useBadBundleFilter)
 import react from "react" /* 19 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2172 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 7966 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 7967 */;
-import useProductPurchaseState from "useProductPurchaseState" /* 8918 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2173 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 8086 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 8087 */;
+import useProductPurchaseState from "useProductPurchaseState" /* 9038 */;
 import UserStore from "UserStore" /* 1386 */;
-import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 7970 */;
+import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 8090 */;
 import size from "module_2" /* 2 */;
 
 const useCallback = react.useCallback;

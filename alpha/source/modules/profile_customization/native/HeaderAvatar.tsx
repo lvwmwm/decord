@@ -1,18 +1,18 @@
-// Module ID: 8093
-// Function ID: 8094
+// Module ID: 8213
+// Function ID: 8214
 // Name: HeaderAvatar
-// Dependencies: [19, 17, 4795, 4706, 5532, 21, 4794, 575, 1186, 504, 5533, 8094, 8011, 8095, 8083, 6910, 2]
+// Dependencies: [19, 17, 4914, 4825, 5651, 21, 4913, 575, 1186, 504, 5652, 8214, 8131, 8215, 8203, 7030, 2]
 // Exports: default
 
-// Module 8093 (HeaderAvatar)
+// Module 8213 (HeaderAvatar)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 4795 */;
-import GuildMemberStore from "GuildMemberStore" /* 4706 */;
-import PresenceStore from "PresenceStore" /* 5532 */;
-import createStyles from "createStyles" /* 4794 */;
+import AccessibilityStore from "AccessibilityStore" /* 4914 */;
+import GuildMemberStore from "GuildMemberStore" /* 4825 */;
+import PresenceStore from "PresenceStore" /* 5651 */;
+import createStyles from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let obj2;
@@ -84,9 +84,9 @@ export default function HeaderAvatar(animate) {
   });
   const obj4 = { pendingValue: pendingAvatarDecoration, userValue: avatarDecoration, guildValue: avatarDecoration1, guildId };
   avatarDecoration = undefined;
-  const tmp11 = id(8094);
-  const getProfilePreviewValue = guildId(8011).getProfilePreviewValue;
-  guildId(8011);
+  const tmp11 = id(8214);
+  const getProfilePreviewValue = guildId(8131).getProfilePreviewValue;
+  guildId(8131);
   const tmp10 = id;
   if (user != null) {
     avatarDecoration = user.avatarDecoration;
@@ -95,7 +95,7 @@ export default function HeaderAvatar(animate) {
   if (stateFromStores1 != null) {
     avatarDecoration1 = stateFromStores1.avatarDecoration;
   }
-  const obj5 = { isMobileOnline, isVROnline, size, status: tmp16, statusStyle: items4, streaming: tmp10(8095)(activities), animate: flag, avatarDecoration: tmp11Result };
+  const obj5 = { isMobileOnline, isVROnline, size, status: tmp16, statusStyle: items4, streaming: tmp10(8215)(activities), animate: flag, avatarDecoration: tmp11Result };
   tmp16 = null;
   tmp11Result = tmp11(getProfilePreviewValue(obj4));
   if (!disableStatus) {
@@ -107,12 +107,12 @@ export default function HeaderAvatar(animate) {
   }
   if (null != onPress) {
     const obj6 = { ref: animate.ref, onPress, onLongPress: onPress, style, activeOpacity: 0.8, accessibilityRole: "imagebutton", children: <Avatar {...obj8} /> };
-    const PressableOpacity = tmp5(6910).PressableOpacity;
+    const PressableOpacity = tmp5(7030).PressableOpacity;
     const merged1 = Object.assign(merged);
     const Avatar = tmp5(1186).Avatar;
     if (undefined !== pendingAvatarSrc) {
       const obj7 = { source: tmp5Result.getAvatarSource(user, guildId, pendingAvatarSrc, stateFromStores) };
-      tmp5Result = guildId(8083);
+      tmp5Result = guildId(8203);
       const merged2 = Object.assign(obj5);
       obj8 = obj7;
     } else {
@@ -127,7 +127,7 @@ export default function HeaderAvatar(animate) {
     const tmp45 = View;
     if (undefined !== pendingAvatarSrc) {
       const obj10 = { source: tmp5Result2.getAvatarSource(user, guildId, pendingAvatarSrc, stateFromStores) };
-      tmp5Result2 = guildId(8083);
+      tmp5Result2 = guildId(8203);
       const merged5 = Object.assign(obj5);
       obj11 = obj10;
     } else {

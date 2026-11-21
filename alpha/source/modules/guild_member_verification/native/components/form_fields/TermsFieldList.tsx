@@ -1,19 +1,19 @@
-// Module ID: 7214
-// Function ID: 7215
+// Module ID: 7334
+// Function ID: 7335
 // Name: TermsFieldList
-// Dependencies: [19, 17, 21, 4794, 575, 5385, 1112, 5518, 6935, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 5504, 1112, 5637, 7055, 2]
 // Exports: default
 
-// Module 7214 (TermsFieldList)
+// Module 7334 (TermsFieldList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
-import Text_Text from "Text/Text" /* 5385 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 5518 */;
-import TableRowDivider from "TableRowDivider" /* 6935 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 5637 */;
+import TableRowDivider from "TableRowDivider" /* 7055 */;
 import react from "react" /* 19 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -67,7 +67,7 @@ export default function TermsFieldList(rules) {
   dependencyMap = tmp;
   let obj = { children: items };
   let obj2 = { style: tmp.title, accessibilityRole: "header", variant: "heading-sm/semibold", color: "mobile-text-heading-primary", children: intl.string(rules(1112).t.prJqwT) };
-  const Text = rules(5385).Text;
+  const Text = rules(5504).Text;
   intl = rules(1112).intl;
   items = [closure_5(Text, obj2), ];
   const obj3 = {

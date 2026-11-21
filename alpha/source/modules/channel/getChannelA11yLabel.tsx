@@ -1,14 +1,14 @@
-// Module ID: 7889
-// Function ID: 7890
+// Module ID: 8009
+// Function ID: 8010
 // Name: getChannelA11yLabel
-// Dependencies: [4736, 1386, 1071, 1112, 5410, 6704, 4850, 7890, 2]
+// Dependencies: [4855, 1386, 1071, 1112, 5529, 6823, 4969, 8010, 2]
 // Exports: default, getChannelA11yHint, getStatusLabel
 
-// Module 7889 (getChannelA11yLabel)
-import UserUtils from "UserUtils" /* 4850 */;
-import useChannelName from "useChannelName" /* 5410 */;
-import isRoleRequiredDefault from "isRoleRequired" /* 6704 */;
-import RelationshipStore from "RelationshipStore" /* 4736 */;
+// Module 8009 (getChannelA11yLabel)
+import UserUtils from "UserUtils" /* 4969 */;
+import useChannelName from "useChannelName" /* 5529 */;
+import isRoleRequiredDefault from "isRoleRequired" /* 6823 */;
+import RelationshipStore from "RelationshipStore" /* 4855 */;
 import UserStore from "UserStore" /* 1386 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
@@ -19,7 +19,7 @@ let hasOwnProperty;
 let metroRequire;
 let tmp;
 const intl20 = tmp(1112);
-const utils = tmp(7890);
+const utils = tmp(8010);
 ({ ChannelTypes: hasOwnProperty, StatusTypes: metroRequire } = Constants);
 const result = size.fileFinishedImporting("modules/channel/getChannelA11yLabel.tsx");
 

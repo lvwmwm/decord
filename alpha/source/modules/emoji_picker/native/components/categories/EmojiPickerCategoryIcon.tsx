@@ -1,24 +1,24 @@
-// Module ID: 11215
-// Function ID: 11216
+// Module ID: 11335
+// Function ID: 11336
 // Name: EmojiPickerCategoryIcon
-// Dependencies: [19, 6457, 21, 9694, 9891, 5503, 11216, 9369, 11218, 11220, 6920, 11222, 11224, 8856, 10149, 8832, 2]
+// Dependencies: [19, 6576, 21, 9814, 10011, 5622, 11336, 9489, 11338, 11340, 7040, 11342, 11344, 8976, 10269, 8952, 2]
 
-// Module 11215 (EmojiPickerCategoryIcon)
+// Module 11335 (EmojiPickerCategoryIcon)
 import Fragment from "Fragment" /* 21 */;
-import ClockIcon from "ClockIcon" /* 5503 */;
-import EmojiPickerConstants from "EmojiPickerConstants" /* 6457 */;
-import GameControllerIcon from "GameControllerIcon" /* 6920 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 8832 */;
-import HeartIcon from "HeartIcon" /* 8856 */;
-import ReactionIcon from "ReactionIcon" /* 9369 */;
-import TrophyIcon from "TrophyIcon" /* 9694 */;
-import StarIcon from "StarIcon" /* 9891 */;
-import FlagIcon from "FlagIcon" /* 10149 */;
-import LightbulbIcon from "LightbulbIcon" /* 11216 */;
-import NatureIcon from "NatureIcon" /* 11218 */;
-import FoodIcon from "FoodIcon" /* 11220 */;
-import BicycleIcon from "BicycleIcon" /* 11222 */;
-import ObjectIcon from "ObjectIcon" /* 11224 */;
+import ClockIcon from "ClockIcon" /* 5622 */;
+import EmojiPickerConstants from "EmojiPickerConstants" /* 6576 */;
+import GameControllerIcon from "GameControllerIcon" /* 7040 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 8952 */;
+import HeartIcon from "HeartIcon" /* 8976 */;
+import ReactionIcon from "ReactionIcon" /* 9489 */;
+import TrophyIcon from "TrophyIcon" /* 9814 */;
+import StarIcon from "StarIcon" /* 10011 */;
+import FlagIcon from "FlagIcon" /* 10269 */;
+import LightbulbIcon from "LightbulbIcon" /* 11336 */;
+import NatureIcon from "NatureIcon" /* 11338 */;
+import FoodIcon from "FoodIcon" /* 11340 */;
+import BicycleIcon from "BicycleIcon" /* 11342 */;
+import ObjectIcon from "ObjectIcon" /* 11344 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

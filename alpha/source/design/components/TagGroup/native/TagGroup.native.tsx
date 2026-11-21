@@ -1,16 +1,16 @@
-// Module ID: 15141
-// Function ID: 15142
+// Module ID: 15264
+// Function ID: 15265
 // Name: TagGroup
-// Dependencies: [19, 17, 21, 4794, 575, 15142, 15144, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 15265, 15267, 2]
 // Exports: TagGroup
 
-// Module 15141 (TagGroup)
+// Module 15264 (TagGroup)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import Tag from "Tag" /* 15144 */;
+import Tag from "Tag" /* 15267 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 4794 */;
+import createStyles from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let obj2;

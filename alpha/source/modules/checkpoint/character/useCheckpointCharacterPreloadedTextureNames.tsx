@@ -1,12 +1,12 @@
-// Module ID: 12591
-// Function ID: 12592
+// Module ID: 12713
+// Function ID: 12714
 // Name: useCheckpointCharacterPreloadedTextureNames
-// Dependencies: [32, 19, 6219, 12592, 2]
+// Dependencies: [32, 19, 6338, 12714, 2]
 // Exports: useCheckpointCharacterPreloadedTextureNames
 
-// Module 12591 (useCheckpointCharacterPreloadedTextureNames)
-import CheckpointNavigation from "CheckpointNavigation" /* 6219 */;
-import useCheckpointCharacterReferencedAssets from "useCheckpointCharacterReferencedAssets" /* 12592 */;
+// Module 12713 (useCheckpointCharacterPreloadedTextureNames)
+import CheckpointNavigation from "CheckpointNavigation" /* 6338 */;
+import useCheckpointCharacterReferencedAssets from "useCheckpointCharacterReferencedAssets" /* 12714 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

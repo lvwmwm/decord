@@ -1,15 +1,15 @@
-// Module ID: 9689
-// Function ID: 9690
+// Module ID: 9809
+// Function ID: 9810
 // Name: SKUUtils
-// Dependencies: [32, 1071, 4832, 1112, 6240, 1378, 2167, 2]
+// Dependencies: [32, 1071, 4951, 1112, 6359, 1378, 2168, 2]
 // Exports: canUserInstall, getGenreIdFromURLSlug, getGenreText, getGenreURLSlugFromId, getReadablePreorderReleaseDate, getSKUIdFromURL, isThirdPartySKU
 
-// Module 9689 (SKUUtils)
+// Module 9809 (SKUUtils)
 import intl71 from "intl" /* 1112 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
-import _modDef2167 from "module_2167" /* 2167 */;
-import matchPathCompat from "matchPathCompat" /* 4832 */;
-import StoreUtils from "StoreUtils" /* 6240 */;
+import _modDef2168 from "module_2168" /* 2168 */;
+import matchPathCompat from "matchPathCompat" /* 4951 */;
+import StoreUtils from "StoreUtils" /* 6359 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
@@ -293,7 +293,7 @@ export function getReadablePreorderReleaseDate(arg0) {
     if (0 < items.length) {
       [tmp3, tmp4] = items[num];
       _slicedToArray(items[num], 2);
-      const obj = _modDef2167(preorderApproximateReleaseDate, tmp3, true);
+      const obj = _modDef2168(preorderApproximateReleaseDate, tmp3, true);
       while (!obj.isValid()) {
         num = num + 1;
       }

@@ -1,23 +1,23 @@
-// Module ID: 18129
-// Function ID: 18130
+// Module ID: 18256
+// Function ID: 18257
 // Name: useConjurePublishReview
-// Dependencies: [5, 32, 19, 4665, 4726, 1386, 6502, 6860, 1071, 18130, 18132, 18133, 18134, 504, 18139, 18125, 7614, 6814, 2]
+// Dependencies: [5, 32, 19, 4784, 4845, 1386, 6621, 6980, 1071, 18257, 18259, 18260, 18261, 504, 18266, 18252, 7734, 6933, 2]
 // Exports: default
 
-// Module 18129 (useConjurePublishReview)
-import ConjureProjectStore from "ConjureProjectStore" /* 6502 */;
-import ChannelPermissionsUtils from "ChannelPermissionsUtils" /* 7614 */;
-import conjurePublishReview from "conjurePublishReview" /* 18125 */;
-import useConjureAppIdentityDraftDefault from "useConjureAppIdentityDraft" /* 18130 */;
-import useConjurePreviewDevicePermissionsDefault from "useConjurePreviewDevicePermissions" /* 18133 */;
-import useConjurePublishRemixDefault from "useConjurePublishRemix" /* 18134 */;
+// Module 18256 (useConjurePublishReview)
+import ConjureProjectStore from "ConjureProjectStore" /* 6621 */;
+import ChannelPermissionsUtils from "ChannelPermissionsUtils" /* 7734 */;
+import conjurePublishReview from "conjurePublishReview" /* 18252 */;
+import useConjureAppIdentityDraftDefault from "useConjureAppIdentityDraft" /* 18257 */;
+import useConjurePreviewDevicePermissionsDefault from "useConjurePreviewDevicePermissions" /* 18260 */;
+import useConjurePublishRemixDefault from "useConjurePublishRemix" /* 18261 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 4665 */;
-import PermissionStore from "PermissionStore" /* 4726 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
 import UserStore from "UserStore" /* 1386 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 6860 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 6980 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -175,11 +175,11 @@ export default function useConjurePublishReview(id, arg1) {
   const trimmed = str.trim();
   let result = null;
   if (tmp15) {
-    const tmp3Result = tmp3(18139);
+    const tmp3Result = tmp3(18266);
     result = tmp3Result.conjureProjectNameError(trimmed);
   }
   isProjectOwner = result;
-  const tmp3Result5 = tmp3(18125);
+  const tmp3Result5 = tmp3(18252);
   result1 = tmp3Result5.conjurePublishReviewReason(id, stateFromStores);
   const items2 = [id, stateFromStores, result1];
   const memo = obj3.useMemo(() => {

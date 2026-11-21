@@ -1,9 +1,9 @@
-// Module ID: 12371
-// Function ID: 12372
+// Module ID: 12493
+// Function ID: 12494
 // Name: CheckpointAvailability
 // Dependencies: [2]
 
-// Module 12371 (CheckpointAvailability)
+// Module 12493 (CheckpointAvailability)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/CheckpointAvailability.tsx");

@@ -1,17 +1,17 @@
-// Module ID: 10402
-// Function ID: 10403
+// Module ID: 10522
+// Function ID: 10523
 // Name: NsfwGateGuildAlert
-// Dependencies: [19, 4706, 1386, 10403, 1071, 21, 1255, 10322, 5747, 1112, 5473, 2186, 5743, 2]
+// Dependencies: [19, 4825, 1386, 10523, 1071, 21, 1255, 10442, 5866, 1112, 5592, 2187, 5862, 2]
 // Exports: showNsfwGateGuildAlert
 
-// Module 10402 (NsfwGateGuildAlert)
+// Module 10522 (NsfwGateGuildAlert)
 import Fragment from "Fragment" /* 21 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
-import useAlertStore from "useAlertStore" /* 5743 */;
-import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 10322 */;
-import Constants2 from "Constants" /* 10403 */;
+import useAlertStore from "useAlertStore" /* 5862 */;
+import AgeRestrictedContentSettingsUtils from "AgeRestrictedContentSettingsUtils" /* 10442 */;
+import Constants2 from "Constants" /* 10523 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 4706 */;
+import GuildMemberStore from "GuildMemberStore" /* 4825 */;
 import UserStore from "UserStore" /* 1386 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
@@ -53,10 +53,10 @@ class NsfwGateGuildAlert {
       }
       track(GUILD_NSFW_GATE_VIEWED, obj);
     }, items);
-    const AlertModal = guildId(5747).AlertModal;
+    const AlertModal = guildId(5866).AlertModal;
     const intl = guildId(1112).intl;
     const intl2 = guildId(1112).intl;
-    const AlertActionButton = guildId(5747).AlertActionButton;
+    const AlertActionButton = guildId(5866).AlertActionButton;
     const intl3 = guildId(1112).intl;
     const items1 = [
       <AlertActionButton key="help-center" text={intl3.string(guildId(1112).t.wi6hPV)} onPress={function onPress() {
@@ -67,7 +67,7 @@ class NsfwGateGuildAlert {
       }} />,
 
     ];
-    const AlertActionButton2 = guildId(5747).AlertActionButton;
+    const AlertActionButton2 = guildId(5866).AlertActionButton;
     const intl4 = guildId(1112).intl;
     items1[1] = <AlertActionButton2 key="dismiss" variant="secondary" text={intl4.string(guildId(1112).t.WAI6xu)} />;
     return <AlertModal title={intl.string(guildId(1112).t.JqfHGt)} content={intl2.string(guildId(1112).t.EdXn1A)} actions={items1} />;

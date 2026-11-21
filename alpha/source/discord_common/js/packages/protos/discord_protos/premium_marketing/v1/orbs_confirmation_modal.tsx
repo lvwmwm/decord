@@ -1,12 +1,12 @@
-// Module ID: 9071
-// Function ID: 9072
+// Module ID: 9191
+// Function ID: 9192
 // Name: orbs_confirmation_modal
-// Dependencies: [32, 1196, 9034, 9030, 2]
+// Dependencies: [32, 1196, 9154, 9150, 2]
 
-// Module 9071 (orbs_confirmation_modal)
+// Module 9191 (orbs_confirmation_modal)
 import _mod1196 from "module_1196" /* 1196 */;
-import localized_string from "localized_string" /* 9030 */;
-import theme_aware_asset from "theme_aware_asset" /* 9034 */;
+import localized_string from "localized_string" /* 9150 */;
+import theme_aware_asset from "theme_aware_asset" /* 9154 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

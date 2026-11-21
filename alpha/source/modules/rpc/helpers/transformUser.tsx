@@ -1,11 +1,11 @@
-// Module ID: 6788
-// Function ID: 6789
+// Module ID: 6907
+// Function ID: 6908
 // Name: transformUser
-// Dependencies: [6789, 2]
+// Dependencies: [6908, 2]
 // Exports: default
 
-// Module 6788 (transformUser)
-import transformAvatarDecorationDefault from "transformAvatarDecoration" /* 6789 */;
+// Module 6907 (transformUser)
+import transformAvatarDecorationDefault from "transformAvatarDecoration" /* 6908 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/rpc/helpers/transformUser.tsx");

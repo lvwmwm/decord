@@ -1,23 +1,23 @@
-// Module ID: 19257
-// Function ID: 19258
+// Module ID: 19384
+// Function ID: 19385
 // Name: StreamVolumeMovedNotice
-// Dependencies: [32, 19, 6281, 502, 14384, 11628, 4640, 21, 11629, 504, 8960, 4627, 6282, 7228, 1112, 6925, 2]
+// Dependencies: [32, 19, 6400, 502, 14506, 11748, 4759, 21, 11749, 504, 9080, 4746, 6401, 7348, 1112, 7045, 2]
 // Exports: default
 
-// Module 19257 (StreamVolumeMovedNotice)
+// Module 19384 (StreamVolumeMovedNotice)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import intl4 from "intl" /* 1112 */;
-import dismissible_content from "dismissible_content" /* 4627 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 4640 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6282 */;
-import useSelectedDismissibleContent2 from "useSelectedDismissibleContent" /* 8960 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11628 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11629 */;
-import StreamVolumeMovedStore from "StreamVolumeMovedStore" /* 14384 */;
+import dismissible_content from "dismissible_content" /* 4746 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4759 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6401 */;
+import useSelectedDismissibleContent2 from "useSelectedDismissibleContent" /* 9080 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11748 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11749 */;
+import StreamVolumeMovedStore from "StreamVolumeMovedStore" /* 14506 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6281 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6400 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
 
@@ -56,7 +56,7 @@ export default function StreamVolumeMovedNotice() {
   const useSelectedDismissibleContent = useSelectedDismissibleContent2.useSelectedDismissibleContent;
   useSelectedDismissibleContent2;
   if (null != stateFromStores) {
-    const items1 = [tmp3(4627).DismissibleContent.VOICE_PANEL_STREAM_VOLUME_MOVED_NOTICE];
+    const items1 = [tmp3(4746).DismissibleContent.VOICE_PANEL_STREAM_VOLUME_MOVED_NOTICE];
     items2 = items1;
   } else {
     items2 = [];
@@ -67,7 +67,7 @@ export default function StreamVolumeMovedNotice() {
     if (tmp7 === dismissible_content.DismissibleContent.VOICE_PANEL_STREAM_VOLUME_MOVED_NOTICE) {
       const tmp3Result = StreamKeyUtils;
       _slicedToArray = tmp3Result.encodeStreamKey(stateFromStores);
-      const TableRowGroup = tmp3(7228).TableRowGroup;
+      const TableRowGroup = tmp3(7348).TableRowGroup;
       const intl = tmp3(1112).intl;
       ({
         label: intl2.string(intl4.t["49qRvZ"]),
@@ -81,10 +81,10 @@ export default function StreamVolumeMovedNotice() {
               require(obj);
             }
       });
-      const TableRow = tmp3(6925).TableRow;
+      const TableRow = tmp3(7045).TableRow;
       intl2 = tmp3(1112).intl;
       ({ text: intl3.string(intl4.t.YuNoIm) });
-      const TrailingText = tmp3(6925).TableRow.TrailingText;
+      const TrailingText = tmp3(7045).TableRow.TrailingText;
       intl3 = tmp3(1112).intl;
       return <TableRowGroup title={intl.string(intl4.t.pEAl4b)} hasIcons={false}>{null}</TableRowGroup>;
     }

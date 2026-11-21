@@ -1,35 +1,35 @@
-// Module ID: 14166
-// Function ID: 14167
+// Module ID: 14288
+// Function ID: 14289
 // Name: CodedLinks
-// Dependencies: [32, 4727, 4665, 1386, 8271, 12681, 5516, 14167, 14172, 14186, 14188, 14178, 14190, 14183, 11826, 12203, 11845, 14191, 14194, 14195, 14197, 14198, 8779, 11931, 14199, 1254, 2]
+// Dependencies: [32, 4846, 4784, 1386, 8391, 12803, 5635, 14289, 14294, 14308, 14310, 14300, 14312, 14305, 11946, 12325, 11965, 14313, 14316, 14317, 14319, 14320, 8899, 12051, 14321, 1254, 2]
 // Exports: createCodedLinkEmbeds
 
-// Module 14166 (CodedLinks)
+// Module 14288 (CodedLinks)
 import GlobalUtils from "GlobalUtils" /* 1254 */;
-import CodedLink from "CodedLink" /* 5516 */;
-import ApplicationCodedLink from "ApplicationCodedLink" /* 8271 */;
-import conjureProjectLink from "conjureProjectLink" /* 8779 */;
-import useCodedLinksExperimentEmbeds from "useCodedLinksExperimentEmbeds" /* 11826 */;
-import storefrontCodedLink from "storefrontCodedLink" /* 11845 */;
-import LinkedGameOrgInvitesExperiment from "LinkedGameOrgInvitesExperiment" /* 11931 */;
-import ExperimentEmbed from "ExperimentEmbed" /* 12203 */;
-import createAppMessageEmbed from "createAppMessageEmbed" /* 12681 */;
-import createActivityMessageEmbed from "createActivityMessageEmbed" /* 14167 */;
-import InviteEmbed from "InviteEmbed" /* 14172 */;
-import GuildScheduledEventEmbed from "GuildScheduledEventEmbed" /* 14178 */;
-import EmbeddedActivityInviteEmbed from "EmbeddedActivityInviteEmbed" /* 14183 */;
-import GuildTemplateEmbed from "GuildTemplateEmbed" /* 14186 */;
-import BuildOverrideEmbed from "BuildOverrideEmbed" /* 14188 */;
-import VoiceChannelLinkEmbed from "VoiceChannelLinkEmbed" /* 14190 */;
-import createSocialLayerStorefrontMultiSkuEmbed2 from "createSocialLayerStorefrontMultiSkuEmbed" /* 14191 */;
-import createSocialLayerStorefrontProductDetailsEmbed2 from "createSocialLayerStorefrontProductDetailsEmbed" /* 14194 */;
-import QuestEmbed from "QuestEmbed" /* 14195 */;
-import UserProfileEmbed from "UserProfileEmbed" /* 14197 */;
-import createConjureProjectLinkEmbedDefault from "createConjureProjectLinkEmbed" /* 14198 */;
-import GameOrganizationInviteEmbed from "GameOrganizationInviteEmbed" /* 14199 */;
+import CodedLink from "CodedLink" /* 5635 */;
+import ApplicationCodedLink from "ApplicationCodedLink" /* 8391 */;
+import conjureProjectLink from "conjureProjectLink" /* 8899 */;
+import useCodedLinksExperimentEmbeds from "useCodedLinksExperimentEmbeds" /* 11946 */;
+import storefrontCodedLink from "storefrontCodedLink" /* 11965 */;
+import LinkedGameOrgInvitesExperiment from "LinkedGameOrgInvitesExperiment" /* 12051 */;
+import ExperimentEmbed from "ExperimentEmbed" /* 12325 */;
+import createAppMessageEmbed from "createAppMessageEmbed" /* 12803 */;
+import createActivityMessageEmbed from "createActivityMessageEmbed" /* 14289 */;
+import InviteEmbed from "InviteEmbed" /* 14294 */;
+import GuildScheduledEventEmbed from "GuildScheduledEventEmbed" /* 14300 */;
+import EmbeddedActivityInviteEmbed from "EmbeddedActivityInviteEmbed" /* 14305 */;
+import GuildTemplateEmbed from "GuildTemplateEmbed" /* 14308 */;
+import BuildOverrideEmbed from "BuildOverrideEmbed" /* 14310 */;
+import VoiceChannelLinkEmbed from "VoiceChannelLinkEmbed" /* 14312 */;
+import createSocialLayerStorefrontMultiSkuEmbed2 from "createSocialLayerStorefrontMultiSkuEmbed" /* 14313 */;
+import createSocialLayerStorefrontProductDetailsEmbed2 from "createSocialLayerStorefrontProductDetailsEmbed" /* 14316 */;
+import QuestEmbed from "QuestEmbed" /* 14317 */;
+import UserProfileEmbed from "UserProfileEmbed" /* 14319 */;
+import createConjureProjectLinkEmbedDefault from "createConjureProjectLinkEmbed" /* 14320 */;
+import GameOrganizationInviteEmbed from "GameOrganizationInviteEmbed" /* 14321 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import LurkingStore from "LurkingStore" /* 4727 */;
-import GuildStore from "GuildStore" /* 4665 */;
+import LurkingStore from "LurkingStore" /* 4846 */;
+import GuildStore from "GuildStore" /* 4784 */;
 import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 

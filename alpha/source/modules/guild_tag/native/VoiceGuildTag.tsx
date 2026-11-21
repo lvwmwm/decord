@@ -1,18 +1,18 @@
-// Module ID: 17521
-// Function ID: 17522
+// Module ID: 17645
+// Function ID: 17646
 // Name: VoiceGuildTag
-// Dependencies: [19, 17, 1386, 7880, 21, 1378, 4794, 575, 504, 7879, 9623, 5385, 2]
+// Dependencies: [19, 17, 1386, 8000, 21, 1378, 4913, 575, 504, 7999, 9743, 5504, 2]
 // Exports: default
 
-// Module 17521 (VoiceGuildTag)
+// Module 17645 (VoiceGuildTag)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import GuildTagConstants from "GuildTagConstants" /* 7880 */;
+import GuildTagConstants from "GuildTagConstants" /* 8000 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1378 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -52,8 +52,8 @@ export default function VoiceGuildTagChiplet(userId) {
   const obj = userId(504);
   const stateFromStores = obj.useStateFromStores(items, () => UserStore.getUser(userId), items1);
   let primaryGuild;
-  const getUserPrimaryGuild = userId(7879).getUserPrimaryGuild;
-  userId(7879);
+  const getUserPrimaryGuild = userId(7999).getUserPrimaryGuild;
+  userId(7999);
   if (stateFromStores != null) {
     primaryGuild = stateFromStores.primaryGuild;
   }
@@ -63,13 +63,13 @@ export default function VoiceGuildTagChiplet(userId) {
     if (null != tag) {
       const obj2 = { style: tmp.gapContainer, children: closure_6(View, obj3) };
       obj3 = { style: tmp.tagContainer, children: items2 };
-      const tmp2Result = userId(7879);
+      const tmp2Result = userId(7999);
       const guildTagBadgeUrl = tmp2Result.getGuildTagBadgeUrl(guildId, tmp8, GuildTagBadgeSize.SIZE_12);
       const obj4 = { source: obj5, size: GuildTagBadgeSize.SIZE_12 };
       obj5 = { uri: guildTagBadgeUrl };
-      items2 = [closure_5(userId(9623).GuildTagBadge, obj4), ];
+      items2 = [closure_5(userId(9743).GuildTagBadge, obj4), ];
       const obj6 = { variant: "body-xs/semibold", color: "text-default", style: tmp.tag, children: tag };
-      items2[1] = closure_5(userId(5385).Text, obj6);
+      items2[1] = closure_5(userId(5504).Text, obj6);
       return closure_5(View, obj2);
     }
   }

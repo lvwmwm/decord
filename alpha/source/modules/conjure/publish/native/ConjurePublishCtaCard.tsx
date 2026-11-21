@@ -1,15 +1,15 @@
-// Module ID: 18474
-// Function ID: 18475
+// Module ID: 18601
+// Function ID: 18602
 // Name: ConjurePublishCtaCard
-// Dependencies: [19, 21, 18124, 5810, 5392, 12176, 18292, 18475, 5385, 2]
+// Dependencies: [19, 21, 18251, 5929, 5511, 12298, 18419, 18602, 5504, 2]
 // Exports: default
 
-// Module 18474 (ConjurePublishCtaCard)
-import components_Button_Button from "components/Button/Button" /* 5392 */;
-import Stack_Stack from "Stack/Stack" /* 5810 */;
-import useConjurePublishActionDefault from "useConjurePublishAction" /* 12176 */;
-import useConjureStartPublishDefault from "useConjureStartPublish" /* 18124 */;
-import conjurePublishCard from "conjurePublishCard" /* 18292 */;
+// Module 18601 (ConjurePublishCtaCard)
+import components_Button_Button from "components/Button/Button" /* 5511 */;
+import Stack_Stack from "Stack/Stack" /* 5929 */;
+import useConjurePublishActionDefault from "useConjurePublishAction" /* 12298 */;
+import useConjureStartPublishDefault from "useConjureStartPublish" /* 18251 */;
+import conjurePublishCard from "conjurePublishCard" /* 18419 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -17,7 +17,7 @@ import size from "module_2" /* 2 */;
 let c3;
 let closure_4;
 let tmp;
-const ConjureTipInlineCalloutDefault = tmp(18475);
+const ConjureTipInlineCalloutDefault = tmp(18602);
 function PublishCta(publish) {
   let publishing;
   publish = publish.publish;
@@ -55,13 +55,13 @@ export default function ConjurePublishCtaCard(projectId) {
     if (obj.isConjurePublishCtaVisible(tmp3, cta)) {
       const obj2 = { projectId, publish: tmp3 };
       const tmpResult = ConjureTipInlineCalloutDefault;
-      const Stack = tmp5(5810).Stack;
+      const Stack = tmp5(5929).Stack;
       const items = [_false(PublishCta, obj2), ];
       let tmp6Result = null;
       const tmp8 = React3;
       if (null != tmp3.failure) {
         const obj3 = { variant: "body-sm/normal", color: "text-feedback-critical", accessibilityRole: "alert", children: tmp3.failure };
-        tmp6Result = tmp6(tmp5(5385).Text, obj3);
+        tmp6Result = tmp6(tmp5(5504).Text, obj3);
       }
       const obj4 = { children: tmp8(Stack, obj5) };
       obj5 = { spacing: 12, children: items };

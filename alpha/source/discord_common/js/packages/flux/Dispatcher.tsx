@@ -15,7 +15,7 @@ import size from "module_2" /* 2 */;
 
 let _self, map, map1;
 
-const f78594 = (item) => {
+const f78861 = (item) => {
   items = [item, []];
   return items;
 };
@@ -33,9 +33,9 @@ class ActionHandlersGraph {
     merged[0] = new Map();
     merged[1] = {};
     new Map();
-    merged[2] = new Map(items.map(f78594));
+    merged[2] = new Map(items.map(f78861));
     merged[3] = {};
-    new Map(items.map(f78594));
+    new Map(items.map(f78861));
     return merged;
   }
   getOrderedActionHandlers(type) {
@@ -243,12 +243,12 @@ class Dispatcher {
       const self3 = this;
       const self4 = this;
       map = new Map();
-      merged1[2] = new Map(items.map(f78594));
+      merged1[2] = new Map(items.map(f78861));
       merged1[3] = {};
       merged[5] = merged1;
       merged[7] = {};
       merged._sentryUtils = _sentryUtils;
-      map1 = new Map(items.map(f78594));
+      map1 = new Map(items.map(f78861));
       if (null == actionLogger) {
         const self5 = this;
         const self6 = this;

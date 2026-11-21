@@ -1,16 +1,16 @@
-// Module ID: 10530
-// Function ID: 10531
+// Module ID: 10650
+// Function ID: 10651
 // Name: useShouldForcePipOrientation
-// Dependencies: [4642, 6501, 502, 5444, 10531, 504, 6510, 2144, 9311, 2]
+// Dependencies: [4761, 6620, 502, 5563, 10651, 504, 6629, 2145, 9431, 2]
 // Exports: useShouldForcePipOrientation
 
-// Module 10530 (useShouldForcePipOrientation)
-import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6510 */;
-import usePipVideoOrStreamDefault from "usePipVideoOrStream" /* 10531 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4642 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 6501 */;
+// Module 10650 (useShouldForcePipOrientation)
+import ChannelRTCParticipants from "ChannelRTCParticipants" /* 6629 */;
+import usePipVideoOrStreamDefault from "usePipVideoOrStream" /* 10651 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4761 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6620 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import CallConstants from "CallConstants" /* 5444 */;
+import CallConstants from "CallConstants" /* 5563 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -89,17 +89,17 @@ export function useShouldForcePipOrientation(channel) {
     if (closure_6(focusedEmbeddedActivityParticipant)) {
       let LANDSCAPE;
       if (null == stateFromStores) {
-        LANDSCAPE = tmp3(9311).OrientationType.LANDSCAPE;
+        LANDSCAPE = tmp3(9431).OrientationType.LANDSCAPE;
       }
       return LANDSCAPE;
     }
   }
-  if (activityLockOrientation === channel(2144).EmbeddedActivityOrientationLockState.LANDSCAPE) {
-    LANDSCAPE1 = tmp3(9311).OrientationType.LANDSCAPE;
+  if (activityLockOrientation === channel(2145).EmbeddedActivityOrientationLockState.LANDSCAPE) {
+    LANDSCAPE1 = tmp3(9431).OrientationType.LANDSCAPE;
   } else {
     LANDSCAPE1 = null;
-    if (activityLockOrientation === channel(2144).EmbeddedActivityOrientationLockState.PORTRAIT) {
-      LANDSCAPE1 = tmp3(9311).OrientationType.PORTRAIT;
+    if (activityLockOrientation === channel(2145).EmbeddedActivityOrientationLockState.PORTRAIT) {
+      LANDSCAPE1 = tmp3(9431).OrientationType.PORTRAIT;
     }
   }
   LANDSCAPE = LANDSCAPE1;

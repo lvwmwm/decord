@@ -1,22 +1,22 @@
-// Module ID: 12227
-// Function ID: 12228
+// Module ID: 12349
+// Function ID: 12350
 // Name: SearchableSelectActionComponentUtils
-// Dependencies: [4643, 4706, 4700, 4665, 4736, 1386, 11779, 2117, 6437, 5824, 5857, 5410, 12228, 1254, 2]
+// Dependencies: [4762, 4825, 4819, 4784, 4855, 1386, 11899, 2117, 6556, 5943, 5976, 5529, 12350, 1254, 2]
 // Exports: getInitialSnowflakeSelectOptions, getSnowflakeSelectDefaultValues, queryChannels, queryMentionables
 
-// Module 12227 (SearchableSelectActionComponentUtils)
-import useChannelName from "useChannelName" /* 5410 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 5824 */;
-import InteractionComponentTypes from "InteractionComponentTypes" /* 5857 */;
-import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6437 */;
-import SnowflakeSelectDefaultValueTypes from "SnowflakeSelectDefaultValueTypes" /* 12228 */;
-import ChannelStore from "ChannelStore" /* 4643 */;
-import GuildMemberStore from "GuildMemberStore" /* 4706 */;
-import GuildRoleStore from "GuildRoleStore" /* 4700 */;
-import GuildStore from "GuildStore" /* 4665 */;
-import RelationshipStore from "RelationshipStore" /* 4736 */;
+// Module 12349 (SearchableSelectActionComponentUtils)
+import useChannelName from "useChannelName" /* 5529 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5943 */;
+import InteractionComponentTypes from "InteractionComponentTypes" /* 5976 */;
+import AutocompleteUtilsDefault from "AutocompleteUtils" /* 6556 */;
+import SnowflakeSelectDefaultValueTypes from "SnowflakeSelectDefaultValueTypes" /* 12350 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import GuildMemberStore from "GuildMemberStore" /* 4825 */;
+import GuildRoleStore from "GuildRoleStore" /* 4819 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import RelationshipStore from "RelationshipStore" /* 4855 */;
 import UserStore from "UserStore" /* 1386 */;
-import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 11779 */;
+import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 11899 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -43,7 +43,7 @@ export function queryMentionables(type, query, channelId, arg3) {
   } else {
     const tmp3 = type === require("Server").ComponentType.USER_SELECT || type === require("Server").ComponentType.MENTIONABLE_SELECT;
     const tmp4 = type === require("Server").ComponentType.ROLE_SELECT || type === require("Server").ComponentType.MENTIONABLE_SELECT;
-    let obj2 = channel(6437);
+    let obj2 = channel(6556);
     const obj3 = { query, channel, canMentionEveryone: false, canMentionHere: false, canMentionUsers: tmp3, canMentionRoles: tmp4, includeAllGuildUsers: true, includeNonMentionableRoles: true, checkRecentlyTalkedOnEmptyQuery: false, request: flag, limit: 15 };
     ({ users, roles } = obj2.queryMentionResults(obj3));
     const items = [];

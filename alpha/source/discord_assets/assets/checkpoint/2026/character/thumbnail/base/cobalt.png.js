@@ -1,8 +1,8 @@
-// Module ID: 5919
-// Function ID: 5920
+// Module ID: 6038
+// Function ID: 6039
 // Dependencies: [2]
 
-// Module 5919
+// Module 6038
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/thumbnail/base/cobalt.png.js");

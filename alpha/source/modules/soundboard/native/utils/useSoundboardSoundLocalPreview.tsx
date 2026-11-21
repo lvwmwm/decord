@@ -1,14 +1,14 @@
-// Module ID: 19680
-// Function ID: 19681
+// Module ID: 19807
+// Function ID: 19808
 // Name: useSoundboardSoundLocalPreview
-// Dependencies: [19, 502, 5842, 504, 6711, 5355, 2]
+// Dependencies: [19, 502, 5961, 504, 6830, 5474, 2]
 // Exports: default
 
-// Module 19680 (useSoundboardSoundLocalPreview)
-import SoundboardActionCreators from "SoundboardActionCreators" /* 6711 */;
+// Module 19807 (useSoundboardSoundLocalPreview)
+import SoundboardActionCreators from "SoundboardActionCreators" /* 6830 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import SoundboardStore from "SoundboardStore" /* 5842 */;
+import SoundboardStore from "SoundboardStore" /* 5961 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

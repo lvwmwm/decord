@@ -1,108 +1,54 @@
 // Module ID: 15505
 // Function ID: 15506
-// Dependencies: [41, 42]
-// Exports: memoize
+// Dependencies: [15506, 15507, 15509, 1158, 15511, 15510]
+// Exports: getCanonicalLocales
 
 // Module 15505
-import _createClassDefault from "_createClass" /* 42 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
+import emitUnicodeLanguageId from "emitUnicodeLanguageId" /* 15506 */;
+import canonicalizeUnicodeLanguageId from "canonicalizeUnicodeLanguageId" /* 15507 */;
+import likelySubtags from "likelySubtags" /* 15510 */;
+import _mod15511 from "module_15511" /* 15511 */;
+import module_1158_mod from "module_1158" /* 1158 */;
 
-function monadic(call, get, fn, num) {
-  let tmp2 = num;
-  const tmp = null == num || typeof num === "number" || typeof num === "boolean";
-  if (!tmp) {
-    tmp2 = fn(num);
-  }
-  let value = get.get(tmp2);
-  if (undefined === value) {
-    const callResult = call.call(this, num);
-    const result = get.set(tmp2, callResult);
-    value = callResult;
-  }
-  return value;
-}
-function variadic(apply, get, fn) {
-  const callResult = slice.call(arguments, 3);
-  const tmp2 = fn(callResult);
-  let value = get.get(tmp2);
-  if (undefined === value) {
-    const self = this;
-    const applyResult = apply.apply(this, callResult);
-    const result = get.set(tmp2, applyResult);
-    value = applyResult;
-  }
-  return value;
-}
-function strategyDefault(c165, cache) {
-  cache = cache.cache;
-  const obj = 1 === c165.length ? monadic : variadic;
-  return obj.bind(this, c165, cache.create(), cache.serializer);
-}
-function serializerDefault() {
-  return JSON.stringify(arguments);
-}
-class ObjectWithoutPrototypeCache {
-  constructor() {
-    _classCallCheck(this, ObjectWithoutPrototypeCache);
-    this.cache = Object.create(null);
-  }
-}
-const entry = {
-  key: "get",
-  value: function get(arg0) {
-    return this.cache[arg0];
-  }
-};
-const items = [
-  entry,
-  {
-    key: "set",
-    value: function set(arg0, arg1) {
-      this.cache[arg0] = arg1;
-    }
-  }
-];
-let closure_5 = _createClassDefault(ObjectWithoutPrototypeCache, items);
-let closure_6 = {
-  create() {
-    const tmp = new closure_5();
-    return tmp;
-  }
-};
-let obj = {
-  variadic: function strategyVariadic(c165, cache) {
-    cache = cache.cache;
-    return variadic.bind(this, c165, cache.create(), cache.serializer);
-  },
-  monadic: function strategyMonadic(c165, cache) {
-    cache = cache.cache;
-    return monadic.bind(this, c165, cache.create(), cache.serializer);
-  }
-};
+const require = globalThis.__r;
 
-export function memoize(arg0, cache) {
-  const tmp = cache;
-  if (tmp) {
-    if (cache.cache) {
-      cache = cache.cache;
+let module_1158 = module_1158_mod;
+module_1158.__exportStar(emitUnicodeLanguageId, exports);
+module_1158 = module_1158_mod;
+module_1158.__exportStar(_mod15511, exports);
+module_1158 = module_1158_mod;
+module_1158.__exportStar(likelySubtags, exports);
+
+export function getCanonicalLocales(items) {
+  if (undefined === items) {
+    items = [];
+  } else {
+    let arr3 = items;
+    if (typeof items === "string") {
+      const items1 = [items];
+      arr3 = items1;
     }
-    if (cache) {
-      let serializer;
-      if (cache.serializer) {
-        serializer = cache.serializer;
-      }
-      if (cache) {
-        let strategy;
-        if (cache.strategy) {
-          strategy = cache.strategy;
+    const items2 = [];
+    let num3 = 0;
+    items = items2;
+    if (0 < arr3.length) {
+      do {
+        let tmp = arr3[num3];
+        let emitUnicodeLocaleId = emitUnicodeLanguageId.emitUnicodeLocaleId;
+        let emitUnicodeLocaleIdResult = emitUnicodeLocaleId(canonicalizeUnicodeLanguageId.CanonicalizeUnicodeLocaleId(require("SEPARATOR").parseUnicodeLocaleId(tmp)));
+        if (items2.indexOf(emitUnicodeLocaleIdResult) < 0) {
+          let arr = items2.push(emitUnicodeLocaleIdResult);
         }
-        const obj = { cache, serializer };
-        return strategy(arg0, obj);
-      }
-      strategy = strategyDefault;
+        num3 = num3 + 1;
+        items = items2;
+      } while (num3 < arr3.length);
     }
-    serializer = serializerDefault;
   }
-  cache = closure_6;
+  return items;
 }
-export const strategies = obj;
+export const isStructurallyValidLanguageTag = require("SEPARATOR").isStructurallyValidLanguageTag;
+export const isUnicodeLanguageSubtag = require("SEPARATOR").isUnicodeLanguageSubtag;
+export const isUnicodeRegionSubtag = require("SEPARATOR").isUnicodeRegionSubtag;
+export const isUnicodeScriptSubtag = require("SEPARATOR").isUnicodeScriptSubtag;
+export const parseUnicodeLanguageId = require("SEPARATOR").parseUnicodeLanguageId;
+export const parseUnicodeLocaleId = require("SEPARATOR").parseUnicodeLocaleId;

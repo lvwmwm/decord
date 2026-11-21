@@ -1,22 +1,23 @@
-// Module ID: 5572
-// Function ID: 5573
+// Module ID: 5691
+// Function ID: 5692
 // Name: Connection
-// Dependencies: [32, 5, 5539, 5562, 5573, 2133, 4, 5577, 5621, 5622, 5623, 5571, 5625, 5574, 5626, 5578, 5627, 5630, 2]
+// Dependencies: [32, 5, 5658, 5681, 5692, 2133, 4, 5696, 5740, 5741, 5742, 5690, 5744, 5693, 5745, 5697, 5746, 5749, 2137, 2]
 
-// Module 5572 (Connection)
+// Module 5691 (Connection)
 import inject from "inject" /* 2133 */;
-import VideoQualityManager from "VideoQualityManager" /* 5574 */;
-import discord_common_BaseConnectionEvent from "discord_common/BaseConnectionEvent" /* 5577 */;
-import cloneDeepDefault from "cloneDeep" /* 5578 */;
-import VideoCodecUtils from "VideoCodecUtils" /* 5621 */;
-import isEqualDefault from "isEqual" /* 5625 */;
-import discord_common_VoiceEngine from "discord_common/VoiceEngine" /* 5626 */;
-import reduceDefault from "reduce" /* 5627 */;
+import RosterUpdate from "RosterUpdate" /* 2137 */;
+import VideoQualityManager from "VideoQualityManager" /* 5693 */;
+import discord_common_BaseConnectionEvent from "discord_common/BaseConnectionEvent" /* 5696 */;
+import cloneDeepDefault from "cloneDeep" /* 5697 */;
+import VideoCodecUtils from "VideoCodecUtils" /* 5740 */;
+import isEqualDefault from "isEqual" /* 5744 */;
+import discord_common_VoiceEngine from "discord_common/VoiceEngine" /* 5745 */;
+import reduceDefault from "reduce" /* 5746 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants_mod from "Constants" /* 5539 */;
-import Constants_mod2 from "Constants" /* 5562 */;
-import BaseConnection from "BaseConnection" /* 5573 */;
+import Constants_mod from "Constants" /* 5658 */;
+import Constants_mod2 from "Constants" /* 5681 */;
+import BaseConnection from "BaseConnection" /* 5692 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -151,7 +152,7 @@ class Connection extends BaseConnection {
           tmp11 = false === obj.soundshareSentSpeakingEvent;
         }
         if (tmp11) {
-          closure_0.emit(tmp3(5577).BaseConnectionEvent.SoundshareSpeaking);
+          closure_0.emit(tmp3(5696).BaseConnectionEvent.SoundshareSpeaking);
           closure_0.soundshareSentSpeakingEvent = true;
         }
       }
@@ -404,7 +405,7 @@ class Connection extends BaseConnection {
               if (diff1 >= 0) {
                 let num = 1;
                 let num2 = 100;
-                const tmp6 = tmp24(5630)(diff1 / (diff + diff1), 0, 1);
+                const tmp6 = tmp24(5749)(diff1 / (diff + diff1), 0, 1);
                 closure_0.emit(discord_common_BaseConnectionEvent.BaseConnectionEvent.OutboundLossRate, 100 * tmp6);
               }
             }
@@ -1712,7 +1713,7 @@ class Connection extends BaseConnection {
           FIXED = constants7.FIXED;
         }
         const emit = self.emit;
-        const Video = tmp8(5577).BaseConnectionEvent.Video;
+        const Video = tmp8(5696).BaseConnectionEvent.Video;
         ({ userId, audioSSRC } = self);
         const ssrc = self.videoStreamParameters[num5].ssrc;
         const ssrc2 = self.videoStreamParameters[num5].ssrc;
@@ -2209,19 +2210,27 @@ class Connection extends BaseConnection {
     }
   }
   prepareMLSCommitTransition(lastPreparedTransitionId, arg1, arg2) {
+    let closure_0 = arg2;
     this.lastPreparedTransitionId = lastPreparedTransitionId;
     const conn = this.conn;
     const prepareMLSCommitTransition = conn.prepareMLSCommitTransition;
     if (prepareMLSCommitTransition != null) {
-      const result = prepareMLSCommitTransition(lastPreparedTransitionId, arg1, arg2);
+      const result = prepareMLSCommitTransition(lastPreparedTransitionId, arg1, (arg0, arg1, changes) => {
+        const obj = RosterUpdate;
+        return closure_0(arg0, arg1, obj.toRosterUpdate(changes));
+      });
     }
   }
   processMLSWelcome(lastPreparedTransitionId, arg1, arg2) {
+    let closure_0 = arg2;
     this.lastPreparedTransitionId = lastPreparedTransitionId;
     const conn = this.conn;
     const processMLSWelcome = conn.processMLSWelcome;
     if (processMLSWelcome != null) {
-      processMLSWelcome(lastPreparedTransitionId, arg1, arg2);
+      processMLSWelcome(lastPreparedTransitionId, arg1, (arg0, arg1, changes) => {
+        const obj = RosterUpdate;
+        return closure_0(arg0, arg1, obj.toRosterUpdate(changes));
+      });
     }
   }
   presentDesktopSourcePicker(arg0) {

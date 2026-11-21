@@ -1,22 +1,22 @@
-// Module ID: 19488
-// Function ID: 19489
+// Module ID: 19615
+// Function ID: 19616
 // Name: RedesignDiscoverabilityModal
-// Dependencies: [19, 17, 13462, 1386, 1071, 21, 4794, 575, 5348, 1500, 504, 13469, 1091, 19489, 13490, 13483, 1263, 13482, 6972, 1112, 2]
+// Dependencies: [19, 17, 13584, 1386, 1071, 21, 4913, 575, 5467, 1500, 504, 13591, 1091, 19616, 13612, 13605, 1263, 13604, 7092, 1112, 2]
 
-// Module 19488 (RedesignDiscoverabilityModal)
+// Module 19615 (RedesignDiscoverabilityModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import ConstantsIOS from "ConstantsIOS" /* 1091 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1263 */;
-import NavigatorConstants from "NavigatorConstants" /* 5348 */;
-import ContactSyncModalStore from "ContactSyncModalStore" /* 13462 */;
-import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 13469 */;
-import NUFActionCreators from "NUFActionCreators" /* 13490 */;
+import NavigatorConstants from "NavigatorConstants" /* 5467 */;
+import ContactSyncModalStore from "ContactSyncModalStore" /* 13584 */;
+import ContactSyncActionCreatorsDefault from "ContactSyncActionCreators" /* 13591 */;
+import NUFActionCreators from "NUFActionCreators" /* 13612 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1386 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -87,7 +87,7 @@ function DiscoverabilityNameScene(onComplete) {
     const result = obj.startContactSyncForDiscoverability(arg0);
     onComplete();
   }, items1);
-  allowPhone(13483);
+  allowPhone(13605);
   if (name == null) {
     name = "";
   }
@@ -98,7 +98,7 @@ class RedesignDiscoverabilityModal {
     const onComplete = route.route.params.onComplete;
     let tmp = closure_8();
     const items = [onComplete];
-    const Navigator = onComplete(6972).Navigator;
+    const Navigator = onComplete(7092).Navigator;
     const intl = onComplete(1112).intl;
     return <Navigator headerStyle={tmp.header} screens={react.useMemo(() => {
       if (null == onComplete) {

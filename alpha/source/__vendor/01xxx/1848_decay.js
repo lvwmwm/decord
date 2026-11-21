@@ -116,7 +116,7 @@ function pnpm_decayTs3(arg0, arg1) {
       initialVelocity: 0,
       current: "sa",
       lastTimestamp: null,
-      startTimestamp: "(function useIOSPressEffectsTsx1(){let[withSpring,interpolate,sharedPressState,sharedWidthScale,SPRING_CONFIG,withOpacity]=this.__closure;const scale=withSpring(interpolate(sharedPressState.get(),[0,1],[1,sharedWidthScale.get()]),SPRING_CONFIG);if(withOpacity){return{transform:[{scale:scale}],opacity:withSpring(interpolate(sharedPressState.get(),[0,1],[1,0.5]),SPRING_CONFIG)};}else{return{transform:[{scale:scale}]};}})",
+      startTimestamp: "keyword",
       reduceMotion: closure_6(obj.reduceMotion)
     };
     num = obj.velocity;

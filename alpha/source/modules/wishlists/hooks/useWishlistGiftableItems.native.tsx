@@ -1,10 +1,10 @@
-// Module ID: 8882
-// Function ID: 8883
+// Module ID: 9002
+// Function ID: 9003
 // Name: useWishlistGiftableItems
 // Dependencies: [19, 1071, 2]
 // Exports: useWishlistGiftableItems
 
-// Module 8882 (useWishlistGiftableItems)
+// Module 9002 (useWishlistGiftableItems)
 import Constants from "Constants" /* 1071 */;
 import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;

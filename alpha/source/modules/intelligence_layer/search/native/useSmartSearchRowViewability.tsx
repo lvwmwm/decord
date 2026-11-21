@@ -1,13 +1,13 @@
-// Module ID: 18652
-// Function ID: 18653
+// Module ID: 18779
+// Function ID: 18780
 // Name: useSmartSearchRowViewability
-// Dependencies: [19, 2118, 4970, 13185, 1501, 4973, 13101, 13099, 504, 1091, 2]
+// Dependencies: [19, 2118, 5089, 13307, 1501, 5092, 13223, 13221, 504, 1091, 2]
 // Exports: useSmartSearchRowViewability
 
-// Module 18652 (useSmartSearchRowViewability)
-import useChatLayoutDefault from "useChatLayout" /* 4973 */;
-import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 13099 */;
-import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 13101 */;
+// Module 18779 (useSmartSearchRowViewability)
+import useChatLayoutDefault from "useChatLayout" /* 5092 */;
+import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 13221 */;
+import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 13223 */;
 import react from "react" /* 19 */;
 import AppStateStore from "AppStateStore" /* 2118 */;
 import size from "module_2" /* 2 */;
@@ -18,18 +18,18 @@ let result = size.fileFinishedImporting("modules/intelligence_layer/search/nativ
 
 export function useSmartSearchRowViewability() {
   let stateFromStores;
-  let obj = stateFromStores(4970);
+  let obj = stateFromStores(5089);
   const currentNavigationRouteName = obj.useCurrentNavigationRouteName();
-  const context = react.useContext(stateFromStores(13185).SwipeForMemberListContext);
+  const context = react.useContext(stateFromStores(13307).SwipeForMemberListContext);
   const obj3 = stateFromStores(1501);
   const isFocused = obj3.useIsFocused();
   let isChatLockedOpen = useChatLayoutDefault().isChatLockedOpen;
-  const obj4 = stateFromStores(4970);
+  const obj4 = stateFromStores(5089);
   let tmp6 = null != obj4.coerceChannelRoute({ name: currentNavigationRouteName });
   if (!tmp6) {
     if (isChatLockedOpen) {
       const obj5 = { name: currentNavigationRouteName };
-      const tmpResult = stateFromStores(4970);
+      const tmpResult = stateFromStores(5089);
       isChatLockedOpen = null != tmpResult.coerceGuildsRoute(obj5);
     }
     tmp6 = isChatLockedOpen;

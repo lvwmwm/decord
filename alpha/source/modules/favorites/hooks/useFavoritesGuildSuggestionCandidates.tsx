@@ -1,18 +1,18 @@
-// Module ID: 17727
-// Function ID: 17728
+// Module ID: 17853
+// Function ID: 17854
 // Name: useFavoritesGuildSuggestionCandidates
-// Dependencies: [19, 17728, 8023, 4643, 17592, 9951, 17730, 504, 9531, 13762, 9962, 9949, 9943, 2]
+// Dependencies: [19, 17854, 8143, 4762, 17716, 10071, 17856, 504, 9651, 13884, 10082, 10069, 10063, 2]
 // Exports: default
 
-// Module 17727 (useFavoritesGuildSuggestionCandidates)
-import _mod9943 from "module_9943" /* 9943 */;
-import createAutocompleterResultForChannelIdDefault from "createAutocompleterResultForChannelId" /* 9949 */;
-import ShareConstants from "ShareConstants" /* 9951 */;
-import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 17592 */;
+// Module 17853 (useFavoritesGuildSuggestionCandidates)
+import _mod10063 from "module_10063" /* 10063 */;
+import createAutocompleterResultForChannelIdDefault from "createAutocompleterResultForChannelId" /* 10069 */;
+import ShareConstants from "ShareConstants" /* 10071 */;
+import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 17716 */;
 import react from "react" /* 19 */;
-import ChannelAffinitiesV2Store from "ChannelAffinitiesV2Store" /* 17728 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 8023 */;
-import ChannelStore from "ChannelStore" /* 4643 */;
+import ChannelAffinitiesV2Store from "ChannelAffinitiesV2Store" /* 17854 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 8143 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -154,7 +154,7 @@ export default function useFavoritesGuildSuggestionCandidates(arg0) {
               let sum = tmp25 + 1;
               if (null != tmp20) {
                 let tmp24;
-                if (tmp20.type !== _mod9943.AutocompleterResultTypes.HEADER) {
+                if (tmp20.type !== _mod10063.AutocompleterResultTypes.HEADER) {
                   tmp24 = sum;
                   if (!set.has(tmp20.record.id)) {
                     break;

@@ -1,23 +1,23 @@
-// Module ID: 11928
-// Function ID: 11929
+// Module ID: 12048
+// Function ID: 12049
 // Name: useMemberListAction
-// Dependencies: [32, 19, 17, 4643, 4726, 4736, 1386, 9537, 1071, 21, 4794, 563, 11929, 11930, 7614, 11933, 11937, 7306, 11939, 11948, 11949, 1112, 10935, 10936, 4826, 4627, 11951, 11956, 10251, 11957, 2018, 7931, 5810, 7591, 6920, 11961, 2559, 2]
+// Dependencies: [32, 19, 17, 4762, 4845, 4855, 1386, 9657, 1071, 21, 4913, 563, 12049, 12050, 7734, 12053, 12057, 7426, 12059, 12068, 12069, 1112, 11055, 11056, 4945, 4746, 12071, 12076, 10371, 12077, 2018, 8051, 5929, 7711, 7040, 12081, 2639, 2]
 // Exports: default
 
-// Module 11928 (useMemberListAction)
+// Module 12048 (useMemberListAction)
 import react_native from "react-native" /* 17 */;
-import UsersFastListConstants from "UsersFastListConstants" /* 9537 */;
-import isGameOrganizationInviteRecipientDefault from "isGameOrganizationInviteRecipient" /* 11929 */;
-import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 11939 */;
+import UsersFastListConstants from "UsersFastListConstants" /* 9657 */;
+import isGameOrganizationInviteRecipientDefault from "isGameOrganizationInviteRecipient" /* 12049 */;
+import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 12059 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 4643 */;
-import PermissionStore from "PermissionStore" /* 4726 */;
-import RelationshipStore from "RelationshipStore" /* 4736 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
+import RelationshipStore from "RelationshipStore" /* 4855 */;
 import UserStore from "UserStore" /* 1386 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 4794 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

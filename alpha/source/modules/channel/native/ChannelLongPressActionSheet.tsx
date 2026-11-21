@@ -1,32 +1,32 @@
-// Module ID: 13724
-// Function ID: 13725
+// Module ID: 13846
+// Function ID: 13847
 // Name: ChannelLongPressActionSheet
-// Dependencies: [5, 19, 11664, 6321, 4648, 6520, 4647, 7363, 4643, 8200, 4665, 4726, 6500, 4736, 4697, 6433, 1386, 1071, 10411, 21, 7160, 2119, 6375, 1112, 12930, 7947, 5488, 7617, 5410, 10329, 11122, 10412, 5490, 6310, 13725, 3703, 12342, 1098, 10141, 7555, 13743, 11098, 4091, 13744, 5008, 12169, 12168, 12200, 10936, 7931, 11551, 7359, 4971, 7031, 13746, 7643, 11717, 13747, 11705, 11114, 11115, 11117, 7117, 7356, 10244, 11119, 7365, 7360, 11547, 11131, 7554, 13749, 13750, 7500, 7552, 13751, 13752, 5530, 6378, 10149, 10056, 13753, 13754, 10248, 13755, 7115, 6392, 10251, 5494, 7626, 10258, 7425, 5475, 7400, 7419, 11100, 504, 4651, 6544, 8496, 4619, 7202, 1186, 13758, 11554, 13759, 13765, 6746, 13770, 13771, 1450, 10697, 13773, 9833, 7433, 1625, 11555, 7435, 2]
+// Dependencies: [5, 19, 11784, 6440, 4767, 6639, 4766, 7483, 4762, 8320, 4784, 4845, 6619, 4855, 4816, 6552, 1386, 1071, 10531, 21, 7280, 2119, 6494, 1112, 13052, 8067, 5607, 7737, 5529, 10449, 11242, 10532, 5609, 6429, 13847, 3802, 12464, 1098, 10261, 7675, 13865, 11218, 4190, 13866, 5127, 12291, 12290, 12322, 11056, 8051, 11671, 7479, 5090, 7151, 13868, 7763, 11837, 13869, 11825, 11234, 11235, 11237, 7237, 7476, 10364, 11239, 7485, 7480, 11667, 11251, 7674, 13871, 13872, 7620, 7672, 13873, 13874, 5649, 6497, 10269, 10176, 13875, 13876, 10368, 13877, 7235, 6511, 10371, 5613, 7746, 10378, 7545, 5594, 7520, 7539, 11220, 504, 4770, 6663, 8616, 4738, 7322, 1186, 13880, 11674, 13881, 13887, 6865, 13892, 13893, 1450, 10817, 13895, 9953, 7553, 1625, 11675, 7555, 2]
 // Exports: default
 
-// Module 13724 (ChannelLongPressActionSheet)
+// Module 13846 (ChannelLongPressActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import asyncRequire from "asyncRequire" /* 2119 */;
-import StageChannelPermissions from "StageChannelPermissions" /* 4651 */;
-import ActionSheetRow2 from "ActionSheetRow" /* 7435 */;
-import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10411 */;
-import EmbeddedAppShimExperiment from "EmbeddedAppShimExperiment" /* 10697 */;
-import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 11664 */;
+import StageChannelPermissions from "StageChannelPermissions" /* 4770 */;
+import ActionSheetRow2 from "ActionSheetRow" /* 7555 */;
+import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10531 */;
+import EmbeddedAppShimExperiment from "EmbeddedAppShimExperiment" /* 10817 */;
+import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 11784 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ChannelSpoilerAgreeStore from "ChannelSpoilerAgreeStore" /* 6321 */;
-import StageInstanceStore from "StageInstanceStore" /* 4648 */;
-import ActiveThreadsStore from "ActiveThreadsStore" /* 6520 */;
-import ChannelRecord from "ChannelRecord" /* 4647 */;
-import CategoryCollapseStore from "CategoryCollapseStore" /* 7363 */;
-import ChannelStore from "ChannelStore" /* 4643 */;
-import CollapsedVoiceChannelStore from "CollapsedVoiceChannelStore" /* 8200 */;
-import GuildStore from "GuildStore" /* 4665 */;
-import PermissionStore from "PermissionStore" /* 4726 */;
-import ReadStateStore from "ReadStateStore" /* 6500 */;
-import RelationshipStore from "RelationshipStore" /* 4736 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 4697 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6433 */;
+import ChannelSpoilerAgreeStore from "ChannelSpoilerAgreeStore" /* 6440 */;
+import StageInstanceStore from "StageInstanceStore" /* 4767 */;
+import ActiveThreadsStore from "ActiveThreadsStore" /* 6639 */;
+import ChannelRecord from "ChannelRecord" /* 4766 */;
+import CategoryCollapseStore from "CategoryCollapseStore" /* 7483 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import CollapsedVoiceChannelStore from "CollapsedVoiceChannelStore" /* 8320 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
+import ReadStateStore from "ReadStateStore" /* 6619 */;
+import RelationshipStore from "RelationshipStore" /* 4855 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4816 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6552 */;
 import UserStore from "UserStore" /* 1386 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;

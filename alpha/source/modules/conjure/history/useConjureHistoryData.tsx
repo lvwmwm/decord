@@ -1,13 +1,13 @@
-// Module ID: 18238
-// Function ID: 18239
+// Module ID: 18365
+// Function ID: 18366
 // Name: useConjureHistoryData
-// Dependencies: [32, 19, 18231, 18239, 18240, 18233, 2]
+// Dependencies: [32, 19, 18358, 18366, 18367, 18360, 2]
 // Exports: default, useHistoryLoad
 
-// Module 18238 (useConjureHistoryData)
-import conjureHistoryRequests from "conjureHistoryRequests" /* 18231 */;
-import ConjureHistoryFormat from "ConjureHistoryFormat" /* 18233 */;
-import ConjureRestorePanelOp from "ConjureRestorePanelOp" /* 18240 */;
+// Module 18365 (useConjureHistoryData)
+import conjureHistoryRequests from "conjureHistoryRequests" /* 18358 */;
+import ConjureHistoryFormat from "ConjureHistoryFormat" /* 18360 */;
+import ConjureRestorePanelOp from "ConjureRestorePanelOp" /* 18367 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -15,7 +15,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let c0, importDefault, map, set;
 
-const f114230 = () => {
+const f114633 = () => {
   _undefined2(null);
   _undefined((arg0) => arg0 + 1);
 };
@@ -80,7 +80,7 @@ export default function useConjureHistoryData(arg0) {
       c0 = true;
     };
   }, items2);
-  const callback1 = obj4.useCallback(f114230, []);
+  const callback1 = obj4.useCallback(f114633, []);
   if (null != tmp8) {
     if (tmp8.load === callback) {
       let state = tmp8.state;
@@ -131,7 +131,7 @@ export default function useConjureHistoryData(arg0) {
         c0 = true;
       };
     }, items4);
-    const callback3 = obj.useCallback(f114230, []);
+    const callback3 = obj.useCallback(f114633, []);
     if (null != tmp16) {
       let state1;
       if (tmp16.load === callback2) {
@@ -180,7 +180,7 @@ export default function useConjureHistoryData(arg0) {
           c0 = true;
         };
       }, items6);
-      const callback5 = obj.useCallback(f114230, []);
+      const callback5 = obj.useCallback(f114633, []);
       if (null != tmp24) {
         let state4;
         if (tmp24.load === callback4) {
@@ -229,7 +229,7 @@ export default function useConjureHistoryData(arg0) {
             c0 = true;
           };
         }, items8);
-        const callback7 = obj.useCallback(f114230, []);
+        const callback7 = obj.useCallback(f114633, []);
         if (null != tmp32) {
           let state5;
           if (tmp32.load === callback6) {
@@ -354,7 +354,7 @@ export function useHistoryLoad(callback) {
       c0 = true;
     };
   }, items);
-  callback = react.useCallback(f114230, []);
+  callback = react.useCallback(f114633, []);
   if (null != tmp4) {
     if (tmp4.load === callback) {
       const state = tmp4.state;

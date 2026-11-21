@@ -1,12 +1,12 @@
-// Module ID: 8670
-// Function ID: 8671
+// Module ID: 8790
+// Function ID: 8791
 // Name: PollTextUtils
-// Dependencies: [5518, 8606, 2]
+// Dependencies: [5637, 8726, 2]
 // Exports: getPollPlainText
 
-// Module 8670 (PollTextUtils)
-import MarkupUtilsDefault from "MarkupUtils" /* 5518 */;
-import markup_MarkupParser from "markup/MarkupParser" /* 8606 */;
+// Module 8790 (PollTextUtils)
+import MarkupUtilsDefault from "MarkupUtils" /* 5637 */;
+import markup_MarkupParser from "markup/MarkupParser" /* 8726 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/polls/PollTextUtils.tsx");

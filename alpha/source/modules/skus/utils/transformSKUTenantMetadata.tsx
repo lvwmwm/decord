@@ -1,10 +1,10 @@
-// Module ID: 2170
-// Function ID: 2171
+// Module ID: 2171
+// Function ID: 2172
 // Name: transformSKUTenantMetadata
 // Dependencies: [2112, 2]
 // Exports: default
 
-// Module 2170 (transformSKUTenantMetadata)
+// Module 2171 (transformSKUTenantMetadata)
 import CollectiblesItemType from "CollectiblesItemType" /* 2112 */;
 import size_mod from "module_2" /* 2 */;
 

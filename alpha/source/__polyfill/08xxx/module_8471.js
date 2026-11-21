@@ -1,997 +1,614 @@
 // Module ID: 8471
 // Function ID: 8472
-// Dependencies: [5, 41, 42, 8467, 8468, 8469]
+// Dependencies: []
 
 // Module 8471
-import NitroHeaders2 from "NitroHeaders" /* 8467 */;
-import stringToUTF8 from "stringToUTF8" /* 8468 */;
-import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import _classCallCheck from "_classCallCheck" /* 41 */;
-import _createClass from "_createClass" /* 42 */;
-
-let _self, byteLength, byteLength2, bytesToBlob, closure_1, closure_2;
-
-function decodeFormComponent(str) {
-  const replaced = str.replace(/\+/g, " ");
-  try {
-    const _decodeURIComponent = decodeURIComponent;
-    return decodeURIComponent(replaced);
-  } catch (err) {
-    return replaced;
-  }
-}
-function parseFormData(value, headers) {
-  let formatted;
-  if (headers != null) {
-    const str2 = headers.split(";")[0];
-    if (str2 != null) {
-      const str3 = str2.trim();
-      formatted = str3.toLowerCase();
-    }
-  }
-  if ("application/x-www-form-urlencoded" !== formatted) {
-    const _TypeError = TypeError;
-    const self = this;
-    const self2 = this;
-    const typeError = new TypeError("formData() only supports application/x-www-form-urlencoded bodies");
-    throw typeError;
-  } else {
-    const _FormData = FormData;
-    const self3 = this;
-    const self4 = this;
-    const formData = new FormData();
-    const parts = value.split("&");
-    const iter = parts[Symbol.iterator]();
-    const nextResult = iter.next();
-    while (iter !== undefined) {
-      let arr = nextResult;
-      if (arr) {
-        let substr;
-        let index = arr.indexOf("=");
-        let tmp7 = index;
-        let tmp8 = decodeFormComponent;
-        let append = formData.append;
-        if (index < 0) {
-          substr = nextResult;
-        } else {
-          substr = arr.slice(0, tmp7);
+const obj = exports;
+const fn = function() {
+  let tmp;
+  let self = this;
+  const humanize = {
+    noConflict: function() {
+      self.humanize = humanize;
+      return this;
+    },
+    pad: (arg0, arg1, str, arg3) => {
+      let length;
+      let length2;
+      let tmp2;
+      const text = `${arg0}`;
+      str = " ";
+      if (str) {
+        if (str.length > 1) {
+          str = str.charAt(0);
         }
-        let str4 = "";
-        let tmp8Result = tmp8(substr);
-        if (tmp7 >= 0) {
-          str4 = arr.slice(tmp7 + 1);
+      }
+      let str2 = "right";
+      if (undefined === arg3) {
+        str2 = "left";
+      }
+      if ("right" === str2) {
+        let tmp3 = text;
+        tmp2 = text;
+        if (text.length < arg1) {
+          do {
+            let sum = tmp3 + str;
+            tmp3 = sum;
+            tmp2 = sum;
+            length2 = sum.length;
+          } while (length2 < arg1);
         }
-        let appendResult = append(tmp8Result, tmp8(str4));
-      }
-      continue;
-    }
-    return formData;
-  }
-}
-let React2;
-let closure_3;
-let closure_4;
-let closure_5;
-let closure_6;
-let closure_7;
-class NitroResponse {
-  constructor(response, headers) {
-    let type;
-    const self = this;
-    _classCallCheck(this, NitroResponse);
-    this._bodyUsed = false;
-    const tmp2 = null != response && typeof response === "object" && "url" in response && "status" in response && "ok" in response;
-    if (tmp2) {
-      ({ url: self.url, ok: self.ok, status: self.status, statusText: self.statusText, redirected: self.redirected, type } = response);
-      if (type == null) {
-        type = "basic";
-      }
-      self.type = type;
-      const tmp14 = require;
-      if (response.headers instanceof NitroHeaders2.NitroHeaders) {
-        self.headers = response.headers;
       } else {
-        const self4 = this;
+        let tmp = text;
+        tmp2 = text;
+        if (text.length < arg1) {
+          do {
+            let sum1 = str + tmp;
+            tmp = sum1;
+            tmp2 = sum1;
+            length = sum1.length;
+          } while (length < arg1);
+        }
+      }
+      return tmp2;
+    },
+    time: () => {
+      const date = new Date();
+      return date.getTime() / 1000;
+    },
+    date: function(str, arg1) {
+      if (undefined === arg1) {
+        let tmp4 = globalThis;
+        const _Date3 = Date;
         const self5 = this;
-        const nitroHeaders = new tmp14(8467).NitroHeaders(response.headers);
-        self.headers = nitroHeaders;
-      }
-      ({ bodyBytes: self._bodyBytes, bodyString: self._bodyString, body: self._bodyStream } = response);
-    } else {
-      let num;
-      if (headers != null) {
-        num = headers.status;
-      }
-      if (num == null) {
-        num = 200;
-      }
-      self.status = num;
-      let str4;
-      if (headers != null) {
-        str4 = headers.statusText;
-      }
-      if (str4 == null) {
-        str4 = "";
-      }
-      self.statusText = str4;
-      const tmp4 = self.status >= 200 && self.status < 300;
-      self.ok = tmp4;
-      self.url = "";
-      self.redirected = false;
-      self.type = "default";
-      let headers1;
-      const NitroHeaders = NitroHeaders2.NitroHeaders;
-      if (headers != null) {
-        headers1 = headers.headers;
-      }
-      const self2 = this;
-      const self3 = this;
-      const nitroHeaders1 = new NitroHeaders(headers1);
-      self.headers = nitroHeaders1;
-      if (null != response) {
-        if (typeof response === "string") {
-          self._bodyString = response;
-        } else {
-          const _ArrayBuffer2 = ArrayBuffer;
-          if (response instanceof ArrayBuffer) {
-            self._bodyBytes = response;
-          } else {
-            const _ArrayBuffer = ArrayBuffer;
-            if (ArrayBuffer.isView(response)) {
-              const buffer = response.buffer;
-              self._bodyBytes = buffer.slice(response.byteOffset, response.byteOffset + response.byteLength);
-            } else {
-              const _ReadableStream = ReadableStream;
-              if (typeof ReadableStream !== "undefined") {
-                const _ReadableStream2 = ReadableStream;
-                if (response instanceof ReadableStream) {
-                  self._bodyStream = response;
-                }
-              }
-              const _URLSearchParams = URLSearchParams;
-              if (typeof URLSearchParams !== "undefined") {
-                const _URLSearchParams2 = URLSearchParams;
-                if (response instanceof URLSearchParams) {
-                  self._bodyString = response.toString();
-                  headers = self.headers;
-                  if (!headers.has("content-type")) {
-                    const headers2 = self.headers;
-                    const result = headers2.set("content-type", "application/x-www-form-urlencoded;charset=UTF-8");
-                  }
-                }
-              }
-              const _Blob = Blob;
-              let tmp11 = typeof Blob !== "undefined";
-              if (typeof Blob !== "undefined") {
-                const _Blob2 = Blob;
-                tmp11 = response instanceof Blob;
-              }
-              if (tmp11) {
-                self._bodyString = "";
-                const stream = response.stream;
-                let streamResult;
-                if (stream != null) {
-                  streamResult = stream();
-                }
-                self._bodyStream = streamResult;
-              }
-            }
-          }
-        }
-      }
-    }
-  }
-}
-let obj = {
-  key: "bodyUsed",
-  get() {
-    return this._bodyUsed;
-  }
-};
-let items = [
-  obj,
-  {
-    key: "body",
-    get() {
-      const self = this;
-      if (this._bodyStream) {
-        return self._bodyStream;
+        const self6 = this;
+        let date = new Date();
       } else {
-        const _getBodyBytesResult = self._getBodyBytes();
-        require = _getBodyBytesResult;
-        let readableStream = null;
-        if (_getBodyBytesResult) {
-          const _ReadableStream = ReadableStream;
-          const self2 = this;
-          const self3 = this;
-          const obj = {
-            start(enqueue) {
-                  enqueue = enqueue.enqueue;
-                  const uint8Array = new Uint8Array(require);
-                  enqueue(uint8Array);
-                  enqueue.close();
-                }
-          };
-          readableStream = new ReadableStream(obj);
-        }
-        return readableStream;
-      }
-    }
-  },
-  {
-    key: "_throwIfBodyUsed",
-    value: function _throwIfBodyUsed() {
-      if (this._bodyUsed) {
-        const _TypeError = TypeError;
-        const self = this;
-        const self2 = this;
-        const typeError = new TypeError("Body has already been consumed.");
-        throw typeError;
-      }
-    }
-  },
-  {
-    key: "_getBodyBytes",
-    value: function _getBodyBytes() {
-      const self = this;
-      if (null != this._bodyBytes) {
-        return self._bodyBytes;
-      } else if (null != self._bodyString) {
-        const obj = stringToUTF8;
-        const stringToUTF8Result = obj.stringToUTF8(self._bodyString);
-        const buffer = stringToUTF8Result.buffer;
-        return buffer.slice(stringToUTF8Result.byteOffset, stringToUTF8Result.byteOffset + stringToUTF8Result.byteLength);
-      }
-    }
-  },
-  {
-    key: "_getBodyString",
-    value: function _getBodyString() {
-      let str;
-      const self = this;
-      if (null != this._bodyString) {
-        str = self._bodyString;
-      } else {
-        str = "";
-        if (self._bodyBytes) {
-          const _Uint8Array = Uint8Array;
-          const self2 = this;
-          const self3 = this;
-          const utf8ToString = stringToUTF8.utf8ToString;
-          stringToUTF8;
-          const uint8Array = new Uint8Array(self._bodyBytes);
-          str = utf8ToString(uint8Array);
-        }
-      }
-      return str;
-    }
-  },
-,
-,
-,
-,
-,
-,
-,
-
-];
-const entry = {
-  key: "text",
-  value: function text() {
-    return closure_7(...arguments);
-  }
-};
-closure_7 = _asyncToGenerator(async function() {
-  let self = this;
-  let c9 = 0;
-  let c10 = 0;
-  let c8 = 0;
-  return (async function(arg0, value) {
-    let self;
-    if (c10 === 2) {
-      c10 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp4 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        return { value, done: true };
-      } else {
-        return { value: "HermesInternal", done: null };
-      }
-    } else {
-      while (true) {
-        let done;
-        let uint8Array;
-        let closure_8;
-        c10 = 2;
-        let tmp5 = byteLength2;
-        if (0 === byteLength2) {
-          if (arg0 === 1) {
-            c10 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c10 = 3;
-            let obj3 = { value, done: true };
-            return obj3;
-          } else {
-            let obj8 = self;
-            closure_6 = tmp;
-            _self = undefined;
-            closure_1 = undefined;
-            closure_2 = undefined;
-            done = undefined;
-            value = undefined;
-            closure_5 = undefined;
-            byteLength = undefined;
-            uint8Array = undefined;
-            closure_8 = undefined;
-            byteLength2 = undefined;
-            let _throwIfBodyUsedResult = self._throwIfBodyUsed();
-            self._bodyUsed = true;
-            if (self._bodyStream) {
-              if (!obj8._bodyBytes) {
-                if (null == obj8._bodyString) {
-                  let _bodyStream = obj8._bodyStream;
-                  _self = _bodyStream.getReader();
-                  closure_1 = [];
-                }
-              }
-            }
-            c10 = 3;
-            let obj4 = { value: obj8._getBodyString(), done: true };
-            return obj4;
-          }
-        } else if (1 === tmp5) {
-          if (arg0 === 1) {
-            c10 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c10 = 3;
-            let obj5 = { value, done: true };
-            return obj5;
-          } else {
-            closure_2 = value;
-            done = closure_2.done;
-            value = closure_2.value;
-            if (done) {
-              closure_5 = 0;
-              closure_2 = closure_1;
-              closure_1 = closure_1[Symbol.iterator]();
-              while (closure_1 !== undefined) {
-                byteLength = tmp20;
-                closure_5 = closure_5 + byteLength.byteLength;
-                c8 = 0;
-                continue;
-              }
-              let _Uint8Array = Uint8Array;
-              self = this;
-              let self2 = this;
-              uint8Array = new Uint8Array(closure_5);
-              closure_8 = 0;
-              closure_4 = closure_1;
-              closure_3 = closure_1[Symbol.iterator]();
-              while (closure_3 !== undefined) {
-                byteLength2 = tmp32;
-                let result = uint8Array.set(byteLength2, closure_8);
-                closure_8 = closure_8 + byteLength2.byteLength;
-                c8 = 0;
-                continue;
-              }
-              let obj = self(closure_1[4]);
-              c10 = 3;
-              let obj6 = { value: obj.utf8ToString(uint8Array), done: true };
-              return obj6;
-            } else {
-              let tmp12 = value;
-              if (tmp12) {
-                let arr = closure_1.push(value);
-              }
-            }
-          }
-        } else if (2 === tmp5) {
-          c8 = 0;
-          closure_1.return();
-          throw closure_1_7;
-        } else {
-          c8 = 0;
-          closure_3.return();
-          throw closure_1_7;
-        }
-        byteLength2 = 1;
-        c10 = 1;
-        let obj7 = { value: _self.read(), done: false };
-        return obj7;
-      }
-    }
-  })();
-});
-items[5] = entry;
-const entry1 = {
-  key: "json",
-  value: function json() {
-    return closure_6(...arguments);
-  }
-};
-closure_6 = _asyncToGenerator(async function() {
-  const self = this;
-  let c1 = 0;
-  return (async (arg0, value) => {
-    if (c1 === 2) {
-      c1 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp2 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        return { value, done: true };
-      } else {
-        return { value: "HermesInternal", done: null };
-      }
-    } else {
-      try {
-        c1 = 2;
-        if (arg0 === 1) {
-          c1 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c1 = 3;
-          return { value, done: true };
-        } else {
-          self._throwIfBodyUsed();
-          self._bodyUsed = true;
-          let str = self._getBodyString();
-          const _JSON = JSON;
-          if (!str) {
-            str = "{}";
-          }
-          c1 = 3;
-          const obj = { value: parse(str), done: true };
-          return obj;
-        }
-      } catch (tmp6) {
-        c1 = 3;
-        throw tmp6;
-      }
-    }
-  })();
-});
-items[6] = entry1;
-const entry2 = {
-  key: "arrayBuffer",
-  value: function arrayBuffer() {
-    return closure_5(...arguments);
-  }
-};
-closure_5 = _asyncToGenerator(async function() {
-  let self = this;
-  let c7 = 0;
-  let c10 = 0;
-  let c9 = 0;
-  return (async function(arg0, value) {
-    let self;
-    if (c10 === 2) {
-      c10 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        return { value, done: true };
-      } else {
-        return { value: "HermesInternal", done: null };
-      }
-    } else {
-      while (true) {
-        let done;
-        let uint8Array;
-        let closure_8;
-        c10 = 2;
-        let tmp4 = c7;
-        if (0 === c7) {
-          if (arg0 === 1) {
-            c10 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c10 = 3;
-            let obj3 = { value, done: true };
-            return obj3;
-          } else {
-            let obj7 = self;
-            closure_6 = tmp;
-            _self = undefined;
-            arrayBuffer = undefined;
-            closure_2 = undefined;
-            done = undefined;
-            value = undefined;
-            closure_5 = undefined;
-            byteLength = undefined;
-            uint8Array = undefined;
-            closure_8 = undefined;
-            byteLength2 = undefined;
-            let _throwIfBodyUsedResult = self._throwIfBodyUsed();
-            self._bodyUsed = true;
-            if (self._bodyStream) {
-              if (!obj7._bodyBytes) {
-                if (null == obj7._bodyString) {
-                  let _bodyStream = obj7._bodyStream;
-                  _self = _bodyStream.getReader();
-                  arrayBuffer = [];
-                }
-              }
-            }
-            let _getBodyBytesResult = obj7._getBodyBytes();
-            arrayBuffer = _getBodyBytesResult;
-            if (_getBodyBytesResult == null) {
-              let _ArrayBuffer = ArrayBuffer;
-              let self3 = this;
-              let self4 = this;
-              arrayBuffer = new ArrayBuffer(0);
-            }
-            c10 = 3;
-            let obj4 = { value: arrayBuffer, done: true };
-            return obj4;
-          }
-        } else if (1 === tmp4) {
-          if (arg0 === 1) {
-            c10 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c10 = 3;
-            let obj5 = { value, done: true };
-            return obj5;
-          } else {
-            closure_2 = value;
-            done = closure_2.done;
-            value = closure_2.value;
-            if (done) {
-              closure_5 = 0;
-              closure_3 = arrayBuffer;
-              closure_2 = arrayBuffer[Symbol.iterator]();
-              while (closure_2 !== undefined) {
-                byteLength = tmp19;
-                closure_5 = closure_5 + byteLength.byteLength;
-                byteLength2 = 0;
-                continue;
-              }
-              let _Uint8Array = Uint8Array;
-              self = this;
-              let self2 = this;
-              uint8Array = new Uint8Array(closure_5);
-              closure_8 = 0;
-              closure_5 = arrayBuffer;
-              closure_4 = arrayBuffer[Symbol.iterator]();
-              while (closure_4 !== undefined) {
-                byteLength2 = tmp31;
-                let result = uint8Array.set(byteLength2, closure_8);
-                closure_8 = closure_8 + byteLength2.byteLength;
-                byteLength2 = 0;
-                continue;
-              }
-              let buffer = uint8Array.buffer;
-              c10 = 3;
-              let obj = { value: buffer.slice(uint8Array.byteOffset, uint8Array.byteOffset + uint8Array.byteLength), done: true };
-              return obj;
-            } else {
-              let tmp11 = value;
-              if (tmp11) {
-                let arr = arrayBuffer.push(value);
-              }
-            }
-          }
-        } else if (2 === tmp4) {
-          byteLength2 = 0;
-          closure_2.return();
-          throw closure_1_8;
-        } else {
-          byteLength2 = 0;
-          closure_4.return();
-          throw closure_1_8;
-        }
-        c7 = 1;
-        c10 = 1;
-        let obj6 = { value: _self.read(), done: false };
-        return obj6;
-      }
-    }
-  })();
-});
-items[7] = entry2;
-const entry3 = {
-  key: "_drainStream",
-  value: function _drainStream() {
-    return closure_4(...arguments);
-  }
-};
-closure_4 = _asyncToGenerator(async function() {
-  let self = this;
-  let c6 = 0;
-  let c9 = 0;
-  let c8 = 0;
-  return (async function(arg0, value) {
-    let self;
-    if (byteLength2 === 2) {
-      byteLength2 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        return { value, done: true };
-      } else {
-        return { value: "HermesInternal", done: null };
-      }
-    } else {
-      while (true) {
-        let done;
-        let uint8Array;
-        let closure_8;
-        byteLength2 = 2;
-        let tmp4 = byteLength;
-        if (0 === byteLength) {
-          if (arg0 === 1) {
-            byteLength2 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            byteLength2 = 3;
-            let obj3 = { value, done: true };
-            return obj3;
-          } else {
-            closure_2 = undefined;
-            done = undefined;
-            value = undefined;
-            closure_5 = undefined;
-            byteLength = undefined;
-            uint8Array = undefined;
-            closure_8 = undefined;
-            byteLength2 = undefined;
-            let _bodyStream = self._bodyStream;
-            _self = _bodyStream.getReader();
-            closure_1 = [];
-          }
-        } else if (1 === tmp4) {
-          if (arg0 === 1) {
-            byteLength2 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            byteLength2 = 3;
-            let obj4 = { value, done: true };
-            return obj4;
-          } else {
-            closure_2 = value;
-            done = closure_2.done;
-            value = closure_2.value;
-            if (done) {
-              closure_5 = 0;
-              closure_2 = closure_1;
-              closure_1 = closure_1[Symbol.iterator]();
-              while (closure_1 !== undefined) {
-                byteLength = tmp19;
-                closure_5 = closure_5 + byteLength.byteLength;
-                c8 = 0;
-                continue;
-              }
-              let _Uint8Array = Uint8Array;
-              self = this;
-              let self2 = this;
-              uint8Array = new Uint8Array(closure_5);
-              closure_8 = 0;
-              closure_4 = closure_1;
-              closure_3 = closure_1[Symbol.iterator]();
-              while (closure_3 !== undefined) {
-                byteLength2 = tmp31;
-                let result = uint8Array.set(byteLength2, closure_8);
-                closure_8 = closure_8 + byteLength2.byteLength;
-                c8 = 0;
-                continue;
-              }
-              let buffer = uint8Array.buffer;
-              byteLength2 = 3;
-              let obj = { value: buffer.slice(uint8Array.byteOffset, uint8Array.byteOffset + uint8Array.byteLength), done: true };
-              return obj;
-            } else {
-              let tmp11 = value;
-              if (tmp11) {
-                let arr = closure_1.push(value);
-              }
-            }
-          }
-        } else if (2 === tmp4) {
-          c8 = 0;
-          closure_1.return();
-          throw closure_1_7;
-        } else {
-          c8 = 0;
-          closure_3.return();
-          throw closure_1_7;
-        }
-        byteLength = 1;
-        byteLength2 = 1;
-        let obj5 = { value: _self.read(), done: false };
-        return obj5;
-      }
-    }
-  })();
-});
-items[8] = entry3;
-const entry4 = {
-  key: "blob",
-  value: function blob() {
-    return closure_3(...arguments);
-  }
-};
-closure_3 = _asyncToGenerator(async function() {
-  let self = this;
-  let c5 = 0;
-  let c6 = 0;
-  return (async function(arg0, value) {
-    if (c6 === 2) {
-      c6 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp3 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        return { value, done: true };
-      } else {
-        return { value: "HermesInternal", done: null };
-      }
-    } else {
-      try {
-        let closure_0;
-        let tmp9;
-        c6 = 2;
-        if (0 === c5) {
-          if (arg0 === 1) {
-            c6 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c6 = 3;
-            return { value, done: true };
-          } else {
-            let bytesToBlobResult;
-            closure_4 = tmp;
-            closure_0 = undefined;
-            self._throwIfBodyUsed();
-            self._bodyUsed = true;
-            const headers = self.headers;
-            value = headers.get("content-type");
-            type = value;
-            if (value == null) {
-              type = "";
-            }
-            closure_0 = type;
-            if (self._bodyStream) {
-              if (!self._bodyBytes) {
-                if (null == self._bodyString) {
-                  const tmp13 = self(type[5]);
-                  closure_3 = tmp13;
-                  bytesToBlob = tmp13.bytesToBlob;
-                  c5 = 1;
-                  c6 = 1;
-                  const obj5 = { value: self._drainStream(), done: false };
-                  return obj5;
-                }
-              }
-            }
-            if (null != self._bodyBytes) {
-              const obj4 = self(type[5]);
-              bytesToBlobResult = obj4.bytesToBlob(obj8._bodyBytes, tmp10);
-            } else {
-              const _Blob = Blob;
-              const items = [self._getBodyString()];
-              self = this;
-              const self2 = this;
-              const obj6 = { type };
-              bytesToBlobResult = new Blob(items, obj6);
-            }
-            tmp9 = bytesToBlobResult;
-          }
-        } else if (arg0 === 1) {
-          c6 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c6 = 3;
-          return { value, done: true };
-        } else {
-          tmp9 = bytesToBlob(value, closure_0);
-        }
-        c6 = 3;
-        return { value: tmp9, done: true };
-      } catch (tmp20) {
-        c6 = 3;
-        throw tmp20;
-      }
-    }
-  })();
-});
-items[9] = entry4;
-const entry5 = {
-  key: "bytes",
-  value: function bytes() {
-    return closure_2(...arguments);
-  }
-};
-React2 = _asyncToGenerator(async function() {
-  let self = this;
-  let c2 = 0;
-  return (async function(arg0, value) {
-    if (c2 === 2) {
-      c2 = 3;
-      throw new TypeError("Generator functions may not be called on executing generators");
-    } else if (tmp2 === 3) {
-      if (arg0 === 1) {
-        throw value;
-      } else if (arg0 === 2) {
-        return { value, done: true };
-      } else {
-        return { value: "HermesInternal", done: null };
-      }
-    } else {
-      try {
-        c2 = 2;
-        if (arg0 === 1) {
-          c2 = 3;
-          throw value;
-        } else if (arg0 === 2) {
-          c2 = 3;
-          return { value, done: true };
-        } else {
-          self._throwIfBodyUsed();
-          self._bodyUsed = true;
-          const _getBodyBytesResult = self._getBodyBytes();
-          arrayBuffer = _getBodyBytesResult;
-          if (_getBodyBytesResult == null) {
-            const _ArrayBuffer = ArrayBuffer;
-            self = this;
-            const self2 = this;
-            arrayBuffer = new ArrayBuffer(0);
-          }
-          const _Uint8Array = Uint8Array;
+        let tmp = globalThis;
+        const _Date = Date;
+        const _Date2 = Date;
+        if (arg1 instanceof Date) {
           const self3 = this;
           const self4 = this;
-          const uint8Array = new Uint8Array(arrayBuffer);
-          c2 = 3;
-          return { value: uint8Array, done: true };
+          date = new _Date2(arg1);
+        } else {
+          let num = 1000;
+          self = this;
+          const self2 = this;
+          date = new _Date2(1000 * arg1);
         }
-      } catch (tmp10) {
-        c2 = 3;
-        throw tmp10;
       }
-    }
-  })();
-});
-items[10] = entry5;
-items[11] = {
-  key: "clone",
-  value: function clone() {
-    if (this._bodyUsed) {
-      const _TypeError = TypeError;
-      const self = this;
-      const self2 = this;
-      const typeError = new TypeError("Cannot clone a Response whose body has been used.");
-      throw typeError;
-    } else {
-      const response = { url: null, status: null, statusText: null, ok: null, redirected: null, headers: null, bodyBytes: null, bodyString: null, type: null };
-      ({ url: obj.url, status: obj.status, statusText: obj.statusText, ok: obj.ok, redirected: obj.redirected, headers: obj.headers, _bodyBytes: obj.bodyBytes, _bodyString: obj.bodyString, type: obj.type } = this);
-      const obj2 = Object.create(NitroResponse.prototype);
-      NitroResponse(response);
-      return obj2;
-    }
-  }
-};
-const entry6 = {
-  key: "formData",
-  value: function formData() {
-    return closure_1(...arguments);
-  }
-};
-_asyncToGenerator(async function() {
-  const self = this;
-  let c3 = 0;
-  let c4 = 0;
-  return (async () => {
-    headers = self;
-    await self.text();
-    headers = headers.headers;
-    return closure_1(value, headers.get("content-type"));
-  })();
-});
-items[12] = entry6;
-const entry7 = {
-  key: "error",
-  value: function error() {
-    const obj = Object.create(NitroResponse.prototype);
-    NitroResponse({ url: "", status: 0, statusText: "", ok: false, redirected: false, headers: [], type: "error" });
-    return obj;
-  }
-};
-const items1 = [
-  entry7,
-  {
-    key: "json",
-    value: function json(arg0, headers) {
+      const tmp5 = /\\?([a-z])/gi;
+      const re1 = tmp5;
+      function formatChrCb(arg0, arg1) {
+        let tmp = arg1;
+        const tmp2 = closure_5;
+        if (closure_5[arg0]) {
+          tmp = tmp2[arg0]();
+        }
+        return tmp;
+      }
+      closure_3 = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+      closure_4 = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+      let closure_5 = {
+        d() {
+          return obj.pad(closure_5.j(), 2, "0");
+        },
+        D() {
+          const lResult = closure_5.l();
+          return lResult.slice(0, 3);
+        },
+        j() {
+          return date.getDate();
+        },
+        l() {
+          return closure_3[closure_5.w(closure_5)];
+        },
+        N() {
+          const tmp = closure_5.w() || 7;
+          return tmp;
+        },
+        S() {
+          let str;
+          const jResult = closure_5.j();
+          if (jResult <= 4) {
+            str = { 1: "st", 2: "nd", 3: "rd" }[jResult % 10] || "th";
+          } else {
+            str = "th";
+          }
+          return str;
+        },
+        w() {
+          return date.getDay();
+        },
+        z() {
+          let tmp2;
+          if (closure_5.L()) {
+            tmp2 = closure_4[obj.n(obj)];
+          } else {
+            tmp2 = closure_3[obj.n(obj)];
+          }
+          return tmp2 + closure_5.j() - 1;
+        },
+        W() {
+          const zResult = closure_5.z();
+          const sum = zResult - closure_5.N() + 1.5;
+          const pad = obj.pad;
+          let num = 0;
+          const sum1 = 1 + Math.floor(Math.abs(sum) / 7);
+          if (3.5 < sum % 7) {
+            num = 1;
+          }
+          return pad(sum1 + num, 2, "0");
+        },
+        F() {
+          return closure_4[date.getMonth(date)];
+        },
+        m() {
+          return obj.pad(closure_5.n(), 2, "0");
+        },
+        M() {
+          const FResult = closure_5.F();
+          return FResult.slice(0, 3);
+        },
+        n() {
+          return date.getMonth() + 1;
+        },
+        t() {
+          const YResult = closure_5.Y();
+          date = new Date(YResult, closure_5.n(), 0);
+          return date.getDate();
+        },
+        L() {
+          let num = 0;
+          date = new Date(closure_5.Y(), 1, 29);
+          if (1 === date.getMonth()) {
+            num = 1;
+          }
+          return num;
+        },
+        o() {
+          let num2;
+          const nResult = closure_5.n();
+          const WResult = closure_5.W();
+          const YResult = closure_5.Y();
+          if (12 !== nResult) {
+            num2 = 1 === nResult && WResult > 9;
+            const tmp4 = 1 === nResult && WResult > 9;
+          } else {
+            num2 = -1;
+          }
+          return YResult + num2;
+        },
+        Y() {
+          return date.getFullYear();
+        },
+        y() {
+          const StringResult = String(closure_5.Y());
+          return StringResult.slice(-2);
+        },
+        a() {
+          let str = "am";
+          if (date.getHours() > 11) {
+            str = "pm";
+          }
+          return str;
+        },
+        A() {
+          const str = closure_5.a();
+          return str.toUpperCase();
+        },
+        B() {
+          let rounded;
+          const result = date.getTime() / 1000;
+          const sum = result % 86400 + 3600;
+          let sum1 = sum;
+          if (sum < 0) {
+            sum1 = sum + 86400;
+          }
+          const result1 = sum1 / 86.4 % 1000;
+          if (result < 0) {
+            const _Math2 = Math;
+            rounded = Math.ceil(result1);
+          } else {
+            const _Math = Math;
+            rounded = Math.floor(result1);
+          }
+          return rounded;
+        },
+        g() {
+          const tmp = closure_5.G() % 12 || 12;
+          return tmp;
+        },
+        G() {
+          return date.getHours();
+        },
+        h() {
+          return obj.pad(closure_5.g(), 2, "0");
+        },
+        H() {
+          return obj.pad(closure_5.G(), 2, "0");
+        },
+        i() {
+          return obj.pad(date.getMinutes(), 2, "0");
+        },
+        s() {
+          return obj.pad(date.getSeconds(), 2, "0");
+        },
+        u() {
+          return obj.pad(1000 * date.getMilliseconds(), 6, "0");
+        },
+        O() {
+          const timezoneOffset = date.getTimezoneOffset();
+          const absolute = Math.abs(timezoneOffset);
+          let str = "+";
+          if (timezoneOffset > 0) {
+            str = "-";
+          }
+          return str + obj.pad(100 * Math.floor(absolute / 60) + absolute % 60, 4, "0");
+        },
+        P() {
+          const str = closure_5.O();
+          const text = `${str.substr(0, 3)}:`;
+          return `${str.substr(0, 3)}:` + str.substr(3, 2);
+        },
+        Z() {
+          return 60 * -date.getTimezoneOffset();
+        },
+        c() {
+          return "Y-m-d\\TH:i:sP".replace(re1, formatChrCb);
+        },
+        r() {
+          return "D, d M Y H:i:s O".replace(re1, formatChrCb);
+        },
+        U() {
+          const tmp = date.getTime() / 1000 || 0;
+          return tmp;
+        }
+      };
+      return str.replace(tmp5, formatChrCb);
+    },
+    numberFormat: (arg0, arg1, arg2, arg3) => {
+      let num = 2;
+      if (!isNaN(arg1)) {
+        const _Math = Math;
+        num = Math.abs(arg1);
+      }
+      let str = ".";
+      if (undefined !== arg2) {
+        str = arg2;
+      }
+      let str2 = ",";
+      if (undefined !== arg3) {
+        str2 = arg3;
+      }
+      let str3 = "";
+      let str4 = "";
+      if (arg0 < 0) {
+        str4 = "-";
+      }
+      let num2 = +arg0;
+      const _Math2 = Math;
+      if (!num2) {
+        num2 = 0;
+      }
+      const absResult = abs(num2);
+      const str5 = `${parseInt(obj.toFixed(num), 10)}`;
+      let num3 = 0;
+      if (`${parseInt(obj.toFixed(num), 10)}`.length > 3) {
+        num3 = `${parseInt(obj.toFixed(num), 10)}`.length % 3;
+      }
+      let sum = str3;
+      if (num3) {
+        sum = str5.substr(0, num3) + str2;
+      }
+      const str6 = str5.substr(num3);
+      const sum1 = str4 + sum + str6.replace(/(\d{3})(?=\d)/g, `$1${str2}`);
+      if (num) {
+        const _Math3 = Math;
+        const absolute = Math.abs(absResult - str5);
+        const toFixedResult = absolute.toFixed(num);
+        str3 = str + toFixedResult.slice(2);
+      }
+      return sum1 + str3;
+    },
+    naturalDay: (arg0, arg1) => {
       let str2;
-      let tmp5;
-      const json = JSON.stringify(arg0);
-      headers = undefined;
-      const NitroHeaders = NitroHeaders2.NitroHeaders;
-      if (headers != null) {
-        headers = headers.headers;
+      let timeResult = arg0;
+      if (undefined === arg0) {
+        timeResult = obj.time();
       }
-      const nitroHeaders = new NitroHeaders(headers);
-      if (!nitroHeaders.has("content-type")) {
-        const result = nitroHeaders.set("content-type", "application/json");
+      let str = "Y-m-d";
+      if (undefined !== arg1) {
+        str = arg1;
       }
-      let num;
-      if (headers != null) {
-        num = headers.status;
-      }
-      if (num == null) {
-        num = 200;
-      }
-      const response = { url: "", status: num, statusText: str2, ok: tmp5, redirected: false, headers: nitroHeaders, bodyString: json };
-      str2 = undefined;
-      if (headers != null) {
-        str2 = headers.statusText;
-      }
-      if (str2 == null) {
-        str2 = "";
-      }
-      let num2;
-      if (headers != null) {
-        num2 = headers.status;
-      }
-      if (num2 == null) {
-        num2 = 200;
-      }
-      tmp5 = num2 >= 200;
-      if (tmp5) {
-        let num3;
-        if (headers != null) {
-          num3 = headers.status;
+      const date = new Date();
+      const fullYear = date.getFullYear();
+      const month = date.getMonth();
+      const date1 = new Date(fullYear, month, date.getDate());
+      const result = date1.getTime() / 1000;
+      if (timeResult >= result) {
+        let str3;
+        if (timeResult < result) {
+          let str4;
+          if (timeResult < result + 86400) {
+            str4 = obj.date(str, timeResult);
+          } else {
+            str4 = "tomorrow";
+          }
+          str3 = str4;
+        } else {
+          str3 = "today";
         }
-        if (num3 == null) {
-          num3 = 200;
-        }
-        tmp5 = num3 < 300;
-      }
-      const obj = Object.create(NitroResponse.prototype);
-      NitroResponse(response);
-      return obj;
-    }
-  },
-  {
-    key: "redirect",
-    value: function redirect(_loadingFrameUrl) {
-      let num = arg1;
-      if (arg1 === undefined) {
-        num = 302;
-      }
-      const items = [301, 302, 303, 307, 308];
-      if (items.includes(num)) {
-        const self3 = this;
-        const self4 = this;
-        const nitroHeaders = new NitroHeaders2.NitroHeaders();
-        const result = nitroHeaders.set("location", _loadingFrameUrl);
-        const response = { url: "", status: num, statusText: "", ok: false, redirected: false, headers: nitroHeaders };
-        const obj = Object.create(NitroResponse.prototype);
-        NitroResponse(response);
-        return obj;
+        str2 = str3;
       } else {
-        const _RangeError = RangeError;
-        const _HermesInternal = HermesInternal;
-        const self = this;
-        const self2 = this;
-        const rangeError = new RangeError("Invalid redirect status: " + num + ". Must be one of " + items.join(", "));
-        throw rangeError;
+        str2 = "yesterday";
       }
+      return str2;
+    },
+    relativeTime: (arg0) => {
+      let text5;
+      let timeResult = arg0;
+      if (undefined === arg0) {
+        timeResult = obj.time();
+      }
+      const timeResult1 = obj.time();
+      const diff = timeResult1 - timeResult;
+      if (diff < 2) {
+        if (diff > -2) {
+          let str24 = "";
+          if (diff >= 0) {
+            str24 = "just ";
+          }
+          return str24 + "now";
+        }
+      }
+      if (diff < 60) {
+        if (diff > -60) {
+          let text;
+          if (diff >= 0) {
+            const _Math8 = Math;
+            text = `${Math.floor(tmp4)} seconds ago`;
+          } else {
+            const _Math7 = Math;
+            text = `${"in " + Math.floor(-tmp4)} seconds`;
+          }
+          return text;
+        }
+      }
+      if (diff < 120) {
+        if (diff > -120) {
+          let str20 = "in about a minute";
+          if (diff >= 0) {
+            str20 = "about a minute ago";
+          }
+          return str20;
+        }
+      }
+      if (diff < 3600) {
+        if (diff > -3600) {
+          let text1;
+          if (diff >= 0) {
+            const _Math6 = Math;
+            text1 = `${Math.floor(tmp4 / 60)} minutes ago`;
+          } else {
+            const _Math5 = Math;
+            text1 = `${"in " + Math.floor(-tmp4 / 60)} minutes`;
+          }
+          return text1;
+        }
+      }
+      if (diff < 7200) {
+        if (diff > -7200) {
+          let str16 = "in about an hour";
+          if (diff >= 0) {
+            str16 = "about an hour ago";
+          }
+          return str16;
+        }
+      }
+      if (diff < 86400) {
+        if (diff > -86400) {
+          let text2;
+          if (diff >= 0) {
+            const _Math4 = Math;
+            text2 = `${Math.floor(tmp4 / 3600)} hours ago`;
+          } else {
+            const _Math3 = Math;
+            text2 = `${"in " + Math.floor(-tmp4 / 3600)} hours`;
+          }
+          return text2;
+        }
+      }
+      if (diff < 172800) {
+        if (diff > -172800) {
+          let str12 = "in 1 day";
+          if (diff >= 0) {
+            str12 = "1 day ago";
+          }
+          return str12;
+        }
+      }
+      if (diff < 2505600) {
+        if (diff > -2505600) {
+          let text3;
+          if (diff >= 0) {
+            const _Math2 = Math;
+            text3 = `${Math.floor(tmp4 / 86400)} days ago`;
+          } else {
+            const _Math = Math;
+            text3 = `${"in " + Math.floor(-tmp4 / 86400)} days`;
+          }
+          return text3;
+        }
+      }
+      if (diff < 5184000) {
+        if (diff > -5184000) {
+          let str8 = "in about a month";
+          if (diff >= 0) {
+            str8 = "about a month ago";
+          }
+          return str8;
+        }
+      }
+      const parsed = parseInt(obj.date("Y", timeResult1), 10);
+      const parsed1 = parseInt(obj.date("Y", timeResult), 10);
+      const result = 12 * parsed;
+      const sum = result + parseInt(obj.date("n", timeResult1), 10);
+      const result1 = 12 * parsed1;
+      const diff1 = sum - (result1 + parseInt(obj.date("n", timeResult), 10));
+      if (diff1 < 12) {
+        if (-12 < diff1) {
+          let text4;
+          if (0 <= diff1) {
+            text4 = `${tmp10} months ago`;
+          } else {
+            text4 = `${"in " + -tmp10} months`;
+          }
+          return text4;
+        }
+      }
+      const diff2 = parsed - parsed1;
+      if (diff2 < 2) {
+        if (diff2 > -2) {
+          let str4 = "in a year";
+          if (diff2 >= 0) {
+            str4 = "a year ago";
+          }
+          text5 = str4;
+        }
+        return text5;
+      }
+      if (diff2 >= 0) {
+        text5 = `${tmp11} years ago`;
+      } else {
+        text5 = `${"in " + -tmp11} years`;
+      }
+    },
+    ordinal: (match) => {
+      let str2;
+      const parsed = parseInt(match, 10);
+      let num = 0;
+      if (!isNaN(parsed)) {
+        num = parsed;
+      }
+      let str = "";
+      if (num < 0) {
+        str = "-";
+      }
+      const absolute = Math.abs(num);
+      const result = absolute % 100;
+      const sum = str + absolute;
+      if (4 >= result) {
+        str2 = { 1: "st", 2: "nd", 3: "rd" }[absolute % 10] || "th";
+      } else {
+        str2 = "th";
+      }
+      return sum + str2;
+    },
+    filesize: (arg0, arg1, arg2, arg3, arg4, arg5) => {
+      let str = "0 bytes";
+      if (arg0 > 0) {
+        let num = 1024;
+        if (undefined !== arg1) {
+          num = arg1;
+        }
+        let num2 = arg2;
+        const tmp2 = arg0 < num && undefined === num2;
+        if (tmp2) {
+          num2 = 0;
+        }
+        let str2 = arg5;
+        if (undefined === arg5) {
+          str2 = " ";
+        }
+        str = obj.intword(arg0, ["bytes", "KB", "MB", "GB", "TB", "PB"], num, num2, arg3, arg4, str2);
+      }
+      return str;
+    },
+    intword: (arg0, arg1, sum, arg3, arg4, arg5, arg6) => {
+      const arr = arg1 || ["", "K", "M", "B", "T"];
+      let num = sum;
+      const diff = arr.length - 1;
+      if (!sum) {
+        num = 1000;
+      }
+      let num2 = 2;
+      if (!isNaN(arg3)) {
+        const _Math = Math;
+        num2 = Math.abs(arg3);
+      }
+      let num3 = 0;
+      let tmp5 = diff;
+      const tmp2 = arg4 || ".";
+      const tmp3 = arg5 || ",";
+      const tmp4 = arg6 || "";
+      if (0 < arr.length) {
+        const _Math2 = Math;
+        sum = num3 + 1;
+        tmp5 = num3;
+        while (arg0 >= Math.pow(num, sum)) {
+          tmp5 = diff;
+          num3 = sum;
+          if (sum >= arr.length) {
+            break;
+          }
+        }
+      }
+      const result = arg0 / Math.pow(num, tmp5);
+      let str = "";
+      if (arr[tmp5]) {
+        str = tmp4 + arr[tmp5];
+      }
+      return obj.numberFormat(result, num2, tmp2, tmp3) + str;
+    },
+    linebreaks: (str) => {
+      str = str.replace(/^([\n|\r]*)/, "");
+      const str2 = str.replace(/([\n|\r]*)$/, "");
+      const str3 = str2.replace(/(\r\n|\n|\r)/g, "\n");
+      const str4 = str3.replace(/(\n{2,})/g, "</p><p>");
+      return "<p>" + str4.replace(/\n/g, "<br />") + "</p>";
+    },
+    nl2br: (str) => str.replace(/(\r\n|\n|\r)/g, "<br />"),
+    truncatechars: (arg0, arg1) => {
+      let text = arg0;
+      if (arg0.length > arg1) {
+        text = `${arg0.substr(0, arg1)}…`;
+      }
+      return text;
+    },
+    truncatewords: (str, arg1) => {
+      let text = str;
+      const parts = str.split(" ");
+      if (parts.length >= arg1) {
+        const substr = parts.slice(0, arg1);
+        text = `${obj.join(" ")}…`;
+      }
+      return text;
     }
+  };
+  if (undefined !== humanize) {
+    let tmp4 = module;
+    let tmp5 = undefined !== module && tmp4.exports;
+    if (tmp5) {
+      tmp4.exports = humanize;
+    }
+    humanize.humanize = humanize;
+  } else {
+    let tmp2 = globalThis;
+    let amd = typeof globalThis.define === "function";
+    if (typeof globalThis.define === "function") {
+      const define3 = globalThis.define;
+      amd = globalThis.define.amd;
+    }
+    if (amd) {
+      const define2 = globalThis.define;
+      let str = "humanize";
+      globalThis.define("humanize", () => obj);
+    }
+    tmp.humanize = humanize;
   }
-];
-const importDefaultResult1Result = _createClass(NitroResponse, items, items1);
-Object.defineProperty(importDefaultResult1Result.prototype, Symbol.toStringTag, { value: "Response", configurable: true });
-const NitroResponse_export = importDefaultResult1Result;
-
-export { parseFormData };
-export { NitroResponse_export as NitroResponse };
+  let closure_3 = [0, 0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334];
+  let closure_4 = [0, 0, 31, 60, 91, 121, 152, 182, 213, 244, 274, 305, 335];
+};
+fn.call(this);

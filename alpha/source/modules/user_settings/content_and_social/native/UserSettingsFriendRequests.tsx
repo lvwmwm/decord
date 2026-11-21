@@ -1,14 +1,14 @@
-// Module ID: 18755
-// Function ID: 18756
+// Module ID: 18882
+// Function ID: 18883
 // Name: UserSettingsFriendRequests
-// Dependencies: [19, 17, 1071, 21, 4619, 7295, 7228, 1112, 7436, 1404, 2]
+// Dependencies: [19, 17, 1071, 21, 4738, 7415, 7348, 1112, 7556, 1404, 2]
 // Exports: default
 
-// Module 18755 (UserSettingsFriendRequests)
+// Module 18882 (UserSettingsFriendRequests)
 import react_native from "react-native" /* 17 */;
 import FlagUtilsAll from "FlagUtils" /* 1404 */;
-import UserSettings from "UserSettings" /* 4619 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7295 */;
+import UserSettings from "UserSettings" /* 4738 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7415 */;
 import react from "react" /* 19 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
@@ -32,7 +32,7 @@ export default function UserSettingsFriendRequests() {
   let items1;
   let obj2;
   let setting;
-  let FriendSourceFlagsSetting = setting(4619).FriendSourceFlagsSetting;
+  let FriendSourceFlagsSetting = setting(4738).FriendSourceFlagsSetting;
   setting = FriendSourceFlagsSetting.useSetting();
   const items = [setting];
   const memo = react.useMemo(() => {
@@ -41,7 +41,7 @@ export default function UserSettingsFriendRequests() {
   }, items);
   let obj = { children: closure_8(TableRowGroup, obj2) };
   obj2 = { title: intl.string(setting(1112).t.vyodkM), hasIcons: false, children: items1 };
-  TableRowGroup = setting(7228).TableRowGroup;
+  TableRowGroup = setting(7348).TableRowGroup;
   intl = setting(1112).intl;
   const obj3 = {
     label: intl2.string(setting(1112).t.mGr3CX),
@@ -58,7 +58,7 @@ export default function UserSettingsFriendRequests() {
       return updateSetting(tmp3);
     }
   };
-  const TableSwitchRow = setting(7436).TableSwitchRow;
+  const TableSwitchRow = setting(7556).TableSwitchRow;
   intl2 = setting(1112).intl;
   items1 = [closure_7(TableSwitchRow, obj3), , ];
   const obj4 = {
@@ -78,7 +78,7 @@ export default function UserSettingsFriendRequests() {
       return updateSetting(addFlagResult);
     }
   };
-  const TableSwitchRow2 = setting(7436).TableSwitchRow;
+  const TableSwitchRow2 = setting(7556).TableSwitchRow;
   intl3 = setting(1112).intl;
   items1[1] = closure_7(TableSwitchRow2, obj4);
   const obj5 = {
@@ -98,7 +98,7 @@ export default function UserSettingsFriendRequests() {
       return updateSetting(addFlagResult);
     }
   };
-  const TableSwitchRow3 = setting(7436).TableSwitchRow;
+  const TableSwitchRow3 = setting(7556).TableSwitchRow;
   intl4 = setting(1112).intl;
   items1[2] = closure_7(TableSwitchRow3, obj5);
   return closure_7(View, obj);

@@ -1,16 +1,16 @@
-// Module ID: 13146
-// Function ID: 13147
+// Module ID: 13268
+// Function ID: 13269
 // Name: ApplicationSectionHeader
-// Dependencies: [19, 17, 4706, 21, 4794, 575, 504, 12971, 1112, 5481, 5385, 2]
+// Dependencies: [19, 17, 4825, 21, 4913, 575, 504, 13093, 1112, 5600, 5504, 2]
 // Exports: default
 
-// Module 13146 (ApplicationSectionHeader)
+// Module 13268 (ApplicationSectionHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 4706 */;
+import GuildMemberStore from "GuildMemberStore" /* 4825 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 4794 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -49,7 +49,7 @@ export default function ApplicationSectionHeader(section) {
       }
     }
   });
-  const obj2 = section(12971);
+  const obj2 = section(13093);
   const applicationCommandsIconSource = obj2.getApplicationCommandsIconSource(section, stateFromStores);
   let nick;
   if (stateFromStores != null) {
@@ -67,9 +67,9 @@ export default function ApplicationSectionHeader(section) {
   const tmp8 = View;
   if (tmp9) {
     const obj4 = { style: tmp.applicationIcon, source: applicationCommandsIconSource };
-    tmp9 = closure_5(guildId(5481), obj4);
+    tmp9 = closure_5(guildId(5600), obj4);
   }
-  items1 = [tmp9, closure_5(tmp2(5385).Text, { variant: "body-sm/medium", color: "interactive-text-default", children: name })];
+  items1 = [tmp9, closure_5(tmp2(5504).Text, { variant: "body-sm/medium", color: "interactive-text-default", children: name })];
   return tmp7(tmp8, obj3);
 };
 export const APPLICATION_SECTION_HEADER_HEIGHT = 32;
