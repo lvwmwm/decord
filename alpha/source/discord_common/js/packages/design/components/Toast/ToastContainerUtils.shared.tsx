@@ -1,10 +1,10 @@
-// Module ID: 15278
-// Function ID: 15279
+// Module ID: 15276
+// Function ID: 15277
 // Name: DEFAULT_TOAST_POSITION
 // Dependencies: [32, 19, 4924, 5597, 4927, 4922, 2]
 // Exports: useToastContainer
 
-// Module 15278 (DEFAULT_TOAST_POSITION)
+// Module 15276 (DEFAULT_TOAST_POSITION)
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4922 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

@@ -1,10 +1,10 @@
-// Module ID: 12412
-// Function ID: 12413
+// Module ID: 12419
+// Function ID: 12420
 // Name: MediaAnalytics
 // Dependencies: [1071, 1255, 2]
 // Exports: logMediaAttachmentPlaybackEnded, logMediaAttachmentPlaybackStarted
 
-// Module 12412 (MediaAnalytics)
+// Module 12419 (MediaAnalytics)
 import Constants from "Constants" /* 1071 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import size from "module_2" /* 2 */;

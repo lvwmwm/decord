@@ -1,7 +1,7 @@
 // Module ID: 18928
 // Function ID: 18929
 // Name: openConjureDeleteAppChannelAlert
-// Dependencies: [5, 32, 19, 21, 12382, 18929, 1112, 4190, 5866, 12384, 5929, 5504, 5862, 2]
+// Dependencies: [5, 32, 19, 21, 12389, 18929, 1112, 4190, 5866, 12391, 5929, 5504, 5862, 2]
 // Exports: default
 
 // Module 18928 (openConjureDeleteAppChannelAlert)

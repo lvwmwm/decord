@@ -1,9 +1,9 @@
-// Module ID: 13658
-// Function ID: 13659
+// Module ID: 13656
+// Function ID: 13657
 // Name: InviteQueue
 // Dependencies: [4762, 1088, 8527, 3, 8250, 7737, 2]
 
-// Module 13658 (InviteQueue)
+// Module 13656 (InviteQueue)
 import LoggerDefault from "Logger" /* 3 */;
 import DurationsDefault from "Durations" /* 1088 */;
 import MessageActionCreatorsDefault from "MessageActionCreators" /* 8250 */;

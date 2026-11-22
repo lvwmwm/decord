@@ -1,10 +1,10 @@
-// Module ID: 16899
-// Function ID: 16900
+// Module ID: 16897
+// Function ID: 16898
 // Name: CustomStatusNotificationSettings
 // Dependencies: [8712, 1071, 4858, 4738, 1195, 1255, 11937, 1112, 2]
 // Exports: onChange
 
-// Module 16899 (CustomStatusNotificationSettings)
+// Module 16897 (CustomStatusNotificationSettings)
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1195 */;

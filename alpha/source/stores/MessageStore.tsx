@@ -1,7 +1,7 @@
 // Module ID: 5964
 // Function ID: 5965
 // Name: MessageStore
-// Dependencies: [32, 4818, 5965, 2188, 502, 4762, 6388, 4843, 4825, 4784, 4845, 4855, 4816, 4946, 1386, 1071, 3, 11, 6389, 6394, 5966, 1404, 12, 8344, 6341, 4857, 8526, 15044, 504, 12174, 5973, 2117, 572, 2]
+// Dependencies: [32, 4818, 5965, 2188, 502, 4762, 6388, 4843, 4825, 4784, 4845, 4855, 4816, 4946, 1386, 1071, 3, 11, 6389, 6394, 5966, 1404, 12, 8344, 6341, 4857, 8526, 15042, 504, 12181, 5973, 2117, 572, 2]
 
 // Module 5964 (MessageStore)
 import LoggerDefault from "Logger" /* 3 */;
@@ -17,8 +17,8 @@ import ChannelMessagesDefault from "ChannelMessages" /* 6389 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 6394 */;
 import handleExplicitMediaScanTimeoutForMessage from "handleExplicitMediaScanTimeoutForMessage" /* 8344 */;
 import MessageQueue from "MessageQueue" /* 8526 */;
-import canEditMessageDefault from "canEditMessage" /* 12174 */;
-import GuildAutomodMessageStoreUtils from "GuildAutomodMessageStoreUtils" /* 15044 */;
+import canEditMessageDefault from "canEditMessage" /* 12181 */;
+import GuildAutomodMessageStoreUtils from "GuildAutomodMessageStoreUtils" /* 15042 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import ImpersonateStore from "ImpersonateStore" /* 4818 */;
 import EphemeralMessageStore from "EphemeralMessageStore" /* 5965 */;

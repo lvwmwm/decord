@@ -1,14 +1,14 @@
-// Module ID: 16345
-// Function ID: 16346
+// Module ID: 16343
+// Function ID: 16344
 // Name: ClosedCaptionsIcon
-// Dependencies: [19, 21, 575, 5599, 16346, 2]
+// Dependencies: [19, 21, 575, 5599, 16344, 2]
 // Exports: ClosedCaptionsIcon
 
-// Module 16345 (ClosedCaptionsIcon)
+// Module 16343 (ClosedCaptionsIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5599 */;
-import AssetRegistry from "AssetRegistry" /* 16346 */;
+import AssetRegistry from "AssetRegistry" /* 16344 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

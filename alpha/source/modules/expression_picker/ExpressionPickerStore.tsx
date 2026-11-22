@@ -190,7 +190,7 @@ export function setExpressionPickerView(activeView) {
   _require = activeView;
   let obj = require("react-native");
   obj.batchUpdates(() => {
-    const obj = { activeView, lastActiveView: withEqualityFnResult.getState().activeView, showEmojiPacks: false, showSelectedEmojiPackId: "url" };
+    const obj = { activeView, lastActiveView: withEqualityFnResult.getState().activeView, showEmojiPacks: false, showSelectedEmojiPackId: "add" };
     return withEqualityFnResult.setState(obj);
   });
 }
@@ -198,7 +198,7 @@ export function setShowEmojiPacks(showEmojiPacks) {
   _require = showEmojiPacks;
   let obj = require("react-native");
   obj.batchUpdates(() => {
-    const obj = { showEmojiPacks, showSelectedEmojiPackId: "Array" };
+    const obj = { showEmojiPacks, showSelectedEmojiPackId: "r" };
     return withEqualityFnResult.setState(obj);
   });
 }

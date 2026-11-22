@@ -1,7 +1,7 @@
 // Module ID: 18058
 // Function ID: 18059
 // Name: ForYouItemActionButtons
-// Dependencies: [5, 19, 17, 4762, 1386, 1071, 21, 4913, 1107, 1653, 5123, 5929, 5511, 1112, 5504, 563, 8713, 17563, 5628, 15061, 10251, 6637, 7737, 7740, 5595, 12133, 1255, 2]
+// Dependencies: [5, 19, 17, 4762, 1386, 1071, 21, 4913, 1107, 1653, 5123, 5929, 5511, 1112, 5504, 563, 8713, 17563, 5628, 15059, 10251, 6637, 7737, 7740, 5595, 12140, 1255, 2]
 // Exports: ForYouItemActionButtons, useItemActionButtonPropsV2
 
 // Module 18058 (ForYouItemActionButtons)
@@ -15,7 +15,7 @@ import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 6637 
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7737 */;
 import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7740 */;
 import PeopleUtilsDefault from "PeopleUtils" /* 10251 */;
-import handleSupportedURLDefault from "handleSupportedURL" /* 15061 */;
+import handleSupportedURLDefault from "handleSupportedURL" /* 15059 */;
 import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 17563 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;

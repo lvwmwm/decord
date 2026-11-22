@@ -1,7 +1,7 @@
 // Module ID: 19139
 // Function ID: 19140
 // Name: VoiceOrStageChannel
-// Dependencies: [5, 19, 17, 6534, 4767, 2188, 6552, 5657, 1071, 1190, 4769, 21, 1112, 6494, 2119, 5947, 7285, 7286, 1098, 6835, 13874, 13845, 4913, 5122, 8571, 4920, 18754, 10640, 17917, 504, 6543, 6537, 12929, 18753, 5529, 19134, 5519, 11135, 19130, 7030, 19136, 19132, 17750, 13147, 19140, 17756, 2]
+// Dependencies: [5, 19, 17, 6534, 4767, 2188, 6552, 5657, 1071, 1190, 4769, 21, 1112, 6494, 2119, 5947, 7285, 7286, 1098, 6835, 13872, 13843, 4913, 5122, 8571, 4920, 18754, 10640, 17917, 504, 6543, 6537, 12927, 18753, 5529, 19134, 5519, 11135, 19130, 7030, 19136, 19132, 17750, 13145, 19140, 17756, 2]
 
 // Module 19139 (VoiceOrStageChannel)
 import react_native from "react-native" /* 17 */;
@@ -225,7 +225,7 @@ let closure_20 = react.memo(function UnmemoedVoiceOrStageChannelBase(channel) {
   };
   items1 = [channel, callback];
   items2 = [channel.id];
-  const arr5 = subtitle(12929)(channel);
+  const arr5 = subtitle(12927)(channel);
   let obj8 = channel(18753);
   const obj9 = { channel, unread, mentionCount, voiceStates, embeddedActivitiesCount: arr5.length };
   let channelAccessibilityProps = obj8.getChannelAccessibilityProps(obj9);
@@ -311,7 +311,7 @@ let closure_20 = react.memo(function UnmemoedVoiceOrStageChannelBase(channel) {
   } else {
     tmp32 = closure_14;
     const obj18 = { channel, voiceStates };
-    tmp33 = closure_14(tmp5(13147).VocalChannelJoinButton, obj18);
+    tmp33 = closure_14(tmp5(13145).VocalChannelJoinButton, obj18);
   }
   items8 = [tmpResult2(obj16), ];
   let tmp32Result = null;

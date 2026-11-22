@@ -1,10 +1,10 @@
-// Module ID: 20206
-// Function ID: 20207
+// Module ID: 20204
+// Function ID: 20205
 // Name: AppShare
-// Dependencies: [32, 19, 17, 8254, 15637, 502, 1071, 13286, 21, 504, 6425, 1378, 7802, 15644, 13289, 8268, 1255, 5474, 5861, 15800, 15113, 1625, 9719, 7190, 19037, 19110, 5866, 2]
+// Dependencies: [32, 19, 17, 8254, 15635, 502, 1071, 13284, 21, 504, 6425, 1378, 7802, 15642, 13287, 8268, 1255, 5474, 5861, 15798, 15111, 1625, 9719, 7190, 19037, 19110, 5866, 2]
 // Exports: default
 
-// Module 20206 (AppShare)
+// Module 20204 (AppShare)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1071 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
@@ -12,15 +12,15 @@ import useMountEffectDefault from "useMountEffect" /* 5474 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5861 */;
 import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6425 */;
 import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 8268 */;
-import Constants2 from "Constants" /* 13286 */;
-import ShareScreenDefault from "ShareScreen" /* 15113 */;
-import AccessibilityManagerDefault from "AccessibilityManager" /* 15644 */;
-import AppContainerDefault from "AppContainer" /* 15800 */;
+import Constants2 from "Constants" /* 13284 */;
+import ShareScreenDefault from "ShareScreen" /* 15111 */;
+import AccessibilityManagerDefault from "AccessibilityManager" /* 15642 */;
+import AppContainerDefault from "AppContainer" /* 15798 */;
 import AppToastContainerDefault from "AppToastContainer" /* 19110 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 8254 */;
-import ShareStore from "ShareStore" /* 15637 */;
+import ShareStore from "ShareStore" /* 15635 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

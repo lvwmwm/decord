@@ -1,7 +1,7 @@
 // Module ID: 18986
 // Function ID: 18987
 // Name: ChannelSecondaryViewChatNavigator
-// Dependencies: [19, 21, 8638, 4913, 575, 8561, 1378, 11098, 11741, 18406, 5085, 7092, 14378, 8573, 4974, 2]
+// Dependencies: [19, 21, 8638, 4913, 575, 8561, 1378, 11098, 11741, 18406, 5085, 7092, 14376, 8573, 4974, 2]
 // Exports: default
 
 // Module 18986 (ChannelSecondaryViewChatNavigator)

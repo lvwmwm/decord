@@ -1,10 +1,10 @@
-// Module ID: 12728
-// Function ID: 12729
+// Module ID: 12726
+// Function ID: 12727
 // Name: CheckpointWelcomeScreen
-// Dependencies: [17, 1386, 5969, 21, 575, 4913, 1494, 504, 4969, 1112, 3408, 12729, 12509, 12730, 12742, 3440, 12743, 2]
+// Dependencies: [17, 1386, 5969, 21, 575, 4913, 1494, 504, 4969, 1112, 3408, 12727, 12509, 12728, 12740, 3440, 12741, 2]
 // Exports: default
 
-// Module 12728 (CheckpointWelcomeScreen)
+// Module 12726 (CheckpointWelcomeScreen)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -14,10 +14,10 @@ import _modDef3408 from "module_3408" /* 3408 */;
 import _modDef3440 from "module_3440" /* 3440 */;
 import UserUtils from "UserUtils" /* 4969 */;
 import CheckpointScreen from "CheckpointScreen" /* 12509 */;
-import useIsCheckpointWideDefault from "useIsCheckpointWide" /* 12729 */;
-import CheckpointNavigationControls from "CheckpointNavigationControls" /* 12730 */;
-import TextWritingAnimation from "TextWritingAnimation" /* 12742 */;
-import CheckpointKnickKnacksDefault from "CheckpointKnickKnacks" /* 12743 */;
+import useIsCheckpointWideDefault from "useIsCheckpointWide" /* 12727 */;
+import CheckpointNavigationControls from "CheckpointNavigationControls" /* 12728 */;
+import TextWritingAnimation from "TextWritingAnimation" /* 12740 */;
+import CheckpointKnickKnacksDefault from "CheckpointKnickKnacks" /* 12741 */;
 import UserStore from "UserStore" /* 1386 */;
 import CheckpointConstants from "CheckpointConstants" /* 5969 */;
 import Fragment from "Fragment" /* 21 */;

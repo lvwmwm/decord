@@ -1,7 +1,7 @@
 // Module ID: 17371
 // Function ID: 17372
 // Name: SafetyGuildSettingDirectMessages
-// Dependencies: [4784, 17363, 8712, 11938, 16118, 17366, 4738, 5860, 1112, 5932, 7415, 17372, 11937, 2]
+// Dependencies: [4784, 17363, 8712, 11938, 16116, 17366, 4738, 5860, 1112, 5932, 7415, 17372, 11937, 2]
 
 // Module 17371 (SafetyGuildSettingDirectMessages)
 import intl5 from "intl" /* 1112 */;
@@ -10,7 +10,7 @@ import AlertActionCreatorsDefault from "AlertActionCreators" /* 5860 */;
 import AlertDefault from "Alert" /* 5932 */;
 import SettingsConstants from "SettingsConstants" /* 8712 */;
 import SettingRendererConstants from "SettingRendererConstants" /* 11938 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 16118 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 16116 */;
 import DefultGuildsRestrictedSetting from "DefultGuildsRestrictedSetting" /* 17366 */;
 import useAllowFriendsFromMutualGuildsOnly from "useAllowFriendsFromMutualGuildsOnly" /* 17372 */;
 import GuildStore from "GuildStore" /* 4784 */;

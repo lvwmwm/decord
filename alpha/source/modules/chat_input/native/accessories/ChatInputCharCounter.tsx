@@ -1,9 +1,9 @@
-// Module ID: 13308
-// Function ID: 13309
+// Module ID: 13306
+// Function ID: 13307
 // Name: ChatInputCharCounter
 // Dependencies: [32, 19, 1386, 1071, 1388, 21, 4913, 575, 504, 2173, 10119, 10459, 5595, 1112, 7030, 5504, 8952, 2]
 
-// Module 13308 (ChatInputCharCounter)
+// Module 13306 (ChatInputCharCounter)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
 import PremiumConstants from "PremiumConstants" /* 1388 */;

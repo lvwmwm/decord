@@ -1,10 +1,10 @@
-// Module ID: 20047
-// Function ID: 20048
+// Module ID: 20044
+// Function ID: 20045
 // Name: FormPriceTier
-// Dependencies: [19, 20008, 1071, 21, 1112, 15111, 6856, 38, 5127, 7612, 2119, 2]
+// Dependencies: [19, 20005, 1071, 21, 1112, 15109, 6856, 38, 5127, 7612, 2119, 2]
 // Exports: default
 
-// Module 20047 (FormPriceTier)
+// Module 20044 (FormPriceTier)
 import Fragment from "Fragment" /* 21 */;
 import _modDef38 from "module_38" /* 38 */;
 import Constants from "Constants" /* 1071 */;
@@ -12,7 +12,7 @@ import intl4 from "intl" /* 1112 */;
 import asyncRequire from "asyncRequire" /* 2119 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
 import react from "react" /* 19 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 20008 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 20005 */;
 import size from "module_2" /* 2 */;
 
 let c3;

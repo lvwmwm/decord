@@ -1,7 +1,7 @@
 // Module ID: 17721
 // Function ID: 17722
 // Name: GuildHomeChannelRow
-// Dependencies: [19, 1071, 4769, 5642, 21, 4913, 575, 1098, 13250, 1112, 15052, 2]
+// Dependencies: [19, 1071, 4769, 5642, 21, 4913, 575, 1098, 13248, 1112, 15050, 2]
 // Exports: default
 
 // Module 17721 (GuildHomeChannelRow)
@@ -11,7 +11,7 @@ import Constants from "Constants" /* 1071 */;
 import router_utils from "router_utils" /* 1098 */;
 import ChannelConstants from "ChannelConstants" /* 4769 */;
 import RedesignChannelListConstants from "RedesignChannelListConstants" /* 5642 */;
-import BaseChannelItemDefault from "BaseChannelItem" /* 13250 */;
+import BaseChannelItemDefault from "BaseChannelItem" /* 13248 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
@@ -38,7 +38,7 @@ export default function GuildHomeChannelRow(selected) {
     const obj = router_utils;
     obj.transitionTo(Routes.CHANNEL(id, StaticChannelRoute.GUILD_HOME));
   }, items);
-  const ChannelModes = id(13250).ChannelModes;
+  const ChannelModes = id(13248).ChannelModes;
   if (selected) {
     DEFAULT = ChannelModes.SELECTED;
     tmp5 = tmp3;
@@ -49,9 +49,9 @@ export default function GuildHomeChannelRow(selected) {
   BaseChannelItemDefault;
   const intl = tmp5(1112).intl;
   ({ name: intl2.string(tmp5(1112).t.VbpLyU), mode: DEFAULT });
-  const BaseChannelName = tmp5(13250).BaseChannelName;
+  const BaseChannelName = tmp5(13248).BaseChannelName;
   intl2 = tmp5(1112).intl;
-  ({ mode: DEFAULT, IconComponent: tmp5(15052).SignPostIcon });
-  const BaseChannelIcon = tmp5(13250).BaseChannelIcon;
+  ({ mode: DEFAULT, IconComponent: tmp5(15050).SignPostIcon });
+  const BaseChannelIcon = tmp5(13248).BaseChannelIcon;
   return <tmp7 onPress={callback} style={tmp.container} accessible accessibilityLabel={intl.string(tmp5(1112).t.VbpLyU)} accessibilityState={{ selected }} mode={DEFAULT} name={null} icon={null} />;
 };

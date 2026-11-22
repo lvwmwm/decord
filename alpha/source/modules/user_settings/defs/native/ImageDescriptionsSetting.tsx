@@ -1,14 +1,14 @@
-// Module ID: 16869
-// Function ID: 16870
+// Module ID: 16867
+// Function ID: 16868
 // Name: ImageDescriptionsSetting
-// Dependencies: [1193, 8712, 4738, 16870, 11937, 1112, 2]
+// Dependencies: [1193, 8712, 4738, 16868, 11937, 1112, 2]
 // Exports: onImageDescriptionSettingValueChange
 
-// Module 16869 (ImageDescriptionsSetting)
+// Module 16867 (ImageDescriptionsSetting)
 import intl2 from "intl" /* 1112 */;
 import UserSettings from "UserSettings" /* 4738 */;
 import SettingsConstants from "SettingsConstants" /* 8712 */;
-import UserSettingsText from "UserSettingsText" /* 16870 */;
+import UserSettingsText from "UserSettingsText" /* 16868 */;
 import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1193 */;
 import SettingBuilders from "SettingBuilders" /* 11937 */;
 import size from "module_2" /* 2 */;

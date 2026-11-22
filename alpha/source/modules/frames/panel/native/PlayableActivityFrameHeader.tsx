@@ -1,7 +1,7 @@
 // Module ID: 19209
 // Function ID: 19210
 // Name: PlayableActivityFrameHeader
-// Dependencies: [19, 17, 5539, 6558, 21, 4913, 575, 19210, 19204, 19189, 5173, 16362, 5504, 1112, 4661, 7591, 7151, 6953, 2]
+// Dependencies: [19, 17, 5539, 6558, 21, 4913, 575, 19210, 19204, 19189, 5173, 16360, 5504, 1112, 4661, 7591, 7151, 6953, 2]
 // Exports: default
 
 // Module 19209 (PlayableActivityFrameHeader)
@@ -77,7 +77,7 @@ export default function PlayableActivityFrameHeader(arg0) {
   const obj6 = { style: tmp.info, children: items1 };
   items1 = [, ];
   const obj7 = { isCompleted: isClaimed, totalSeconds: playable.rewardTimerSeconds, remainingSeconds };
-  items1[0] = closure_7(setMode(16362), obj7);
+  items1[0] = closure_7(setMode(16360), obj7);
   const obj8 = { style: tmp.titleGroup, children: items2 };
   const obj9 = { variant: "body-md/semibold", color: "text-strong", lineClamp: 1, maxFontSizeMultiplier: 1.25, style: tmp.textShadow, children: productName };
   const Text = Text_Text.Text;

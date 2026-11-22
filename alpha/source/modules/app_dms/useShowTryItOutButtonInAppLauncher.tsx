@@ -1,12 +1,12 @@
-// Module ID: 13015
-// Function ID: 13016
+// Module ID: 13013
+// Function ID: 13014
 // Name: useShowTryItOutButtonInAppLauncher
-// Dependencies: [10693, 13016, 10672, 2]
+// Dependencies: [10693, 13014, 10672, 2]
 // Exports: default
 
-// Module 13015 (useShowTryItOutButtonInAppLauncher)
+// Module 13013 (useShowTryItOutButtonInAppLauncher)
 import getPrimaryAppCommand from "getPrimaryAppCommand" /* 10693 */;
-import useIsAppDMDefault from "useIsAppDM" /* 13016 */;
+import useIsAppDMDefault from "useIsAppDM" /* 13014 */;
 import size from "module_2" /* 2 */;
 
 let tmp;

@@ -1,7 +1,7 @@
 // Module ID: 17447
 // Function ID: 17448
 // Name: RegistrationStepsUtils
-// Dependencies: [5, 19, 16006, 6426, 17448, 17449, 1071, 21, 1263, 17450, 17457, 17458, 17470, 17471, 17477, 7369, 17479, 17480, 7425, 7422, 17484, 17485, 17491, 17492, 1501, 2152, 17460, 6349, 7376, 17499, 2]
+// Dependencies: [5, 19, 16004, 6426, 17448, 17449, 1071, 21, 1263, 17450, 17457, 17458, 17470, 17471, 17477, 7369, 17479, 17480, 7425, 7422, 17484, 17485, 17491, 17492, 1501, 2152, 17460, 6349, 7376, 17499, 2]
 // Exports: getAllAuthScreens, getNextRegistrationTransitionStep, getPreviousAuthState, getPreviousRegistrationTransitionStep, getRegistrationSteps, handleNextOrSubmitRegistration
 
 // Module 17447 (RegistrationStepsUtils)
@@ -27,7 +27,7 @@ import AgeGateUnderageDefault from "AgeGateUnderage" /* 17491 */;
 import CompanionRemoteAuth from "CompanionRemoteAuth" /* 17492 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import UniqueUsernamesStore from "UniqueUsernamesStore" /* 16006 */;
+import UniqueUsernamesStore from "UniqueUsernamesStore" /* 16004 */;
 import RegistrationUIStore from "RegistrationUIStore" /* 17448 */;
 import RegistrationConstants from "RegistrationConstants" /* 17449 */;
 import size from "module_2" /* 2 */;

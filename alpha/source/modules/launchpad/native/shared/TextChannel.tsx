@@ -1,7 +1,7 @@
 // Module ID: 19133
 // Function ID: 19134
 // Name: shared/TextChannel
-// Dependencies: [19, 17, 6618, 2188, 4762, 1190, 6553, 21, 4913, 18754, 575, 17917, 6893, 504, 5529, 8617, 16723, 6439, 5519, 19134, 5947, 12929, 11125, 5574, 19136, 7466, 17750, 19130, 7030, 19137, 18753, 19131, 19132, 2]
+// Dependencies: [19, 17, 6618, 2188, 4762, 1190, 6553, 21, 4913, 18754, 575, 17917, 6893, 504, 5529, 8617, 16721, 6439, 5519, 19134, 5947, 12927, 11125, 5574, 19136, 7466, 17750, 19130, 7030, 19137, 18753, 19131, 19132, 2]
 
 // Module 19133 (shared/TextChannel)
 import react_native from "react-native" /* 17 */;
@@ -91,7 +91,7 @@ const memoResult = react.memo(function TextChannel(channel) {
   const tmp2Result = channel(8617);
   const unreadThreadsCountForParent = tmp2Result.useUnreadThreadsCountForParent(channel.guild_id, channel.id);
   let tmp12 = unread;
-  const tmp8Result = arr4(16723);
+  const tmp8Result = arr4(16721);
   if (unread) {
     tmp12 = !flag;
   }
@@ -106,7 +106,7 @@ const memoResult = react.memo(function TextChannel(channel) {
   const tmp17 = arr4(19134)();
   ({ isSubscriptionGated, needSubscriptionToAccess } = arr4(5947)(channel.id));
   arr4(5947)(channel.id);
-  arr4 = tmp8(12929)(channel);
+  arr4 = tmp8(12927)(channel);
   if (null != tmp8ResultResult) {
     let result;
     if (!isChannelSpoilerGated) {

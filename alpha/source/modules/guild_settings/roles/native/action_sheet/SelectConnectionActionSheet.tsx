@@ -1,10 +1,10 @@
-// Module ID: 19867
-// Function ID: 19868
+// Module ID: 19864
+// Function ID: 19865
 // Name: SelectConnectionActionSheet
 // Dependencies: [32, 19, 17, 21, 12005, 7045, 1186, 5122, 7515, 1112, 8296, 1412, 4920, 5127, 7586, 7553, 11278, 5145, 7017, 7348, 2]
 // Exports: default
 
-// Module 19867 (SelectConnectionActionSheet)
+// Module 19864 (SelectConnectionActionSheet)
 import react_native from "react-native" /* 17 */;
 import intl5 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;
@@ -47,7 +47,7 @@ function IdentityApplicationRow(arg0) {
     let tmp6Result = null;
     const TableRow = tmp(7045).TableRow;
     if (null != bot) {
-      const obj2 = { user: bot, size: native.AvatarSizes.XSMALL, guildId: "r" };
+      const obj2 = { user: bot, size: native.AvatarSizes.XSMALL, guildId: "Array" };
       const Avatar = tmp(1186).Avatar;
       tmp6Result = tmp6(Avatar, obj2);
     }
@@ -147,7 +147,7 @@ export default function SelectConnectionActionSheet(arg0) {
             }
         };
         const TableRow = TableRow2.TableRow;
-        obj2 = { user: application.bot, size: native.AvatarSizes.XSMALL, guildId: "r" };
+        obj2 = { user: application.bot, size: native.AvatarSizes.XSMALL, guildId: "Array" };
         Avatar = native.Avatar;
         description = undefined;
         const tmp2 = closure_1_6;

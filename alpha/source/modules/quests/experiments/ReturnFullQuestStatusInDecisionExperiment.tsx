@@ -1,10 +1,10 @@
-// Module ID: 16501
-// Function ID: 16502
+// Module ID: 16499
+// Function ID: 16500
 // Name: ReturnFullQuestStatusInDecisionExperiment
 // Dependencies: [1450, 2]
 // Exports: getReturnFullQuestStatusInDecision
 
-// Module 16501 (ReturnFullQuestStatusInDecisionExperiment)
+// Module 16499 (ReturnFullQuestStatusInDecisionExperiment)
 import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 

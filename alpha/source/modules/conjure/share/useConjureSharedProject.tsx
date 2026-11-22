@@ -1,10 +1,10 @@
-// Module ID: 12279
-// Function ID: 12280
+// Module ID: 12286
+// Function ID: 12287
 // Name: useConjureSharedProject
 // Dependencies: [19, 2164, 1386, 6621, 11970, 504, 11976, 2]
 // Exports: default
 
-// Module 12279 (useConjureSharedProject)
+// Module 12286 (useConjureSharedProject)
 import ConjureProjectStore2 from "ConjureProjectStore" /* 6621 */;
 import loadConjureSharedProjectDefault from "loadConjureSharedProject" /* 11976 */;
 import react from "react" /* 19 */;

@@ -1,7 +1,7 @@
 // Module ID: 19145
 // Function ID: 19146
 // Name: ParentalConsentWarningBanner
-// Dependencies: [19, 17, 8336, 1071, 21, 575, 4913, 1628, 16168, 16167, 19146, 10851, 5477, 8085, 1255, 8337, 8194, 5504, 5468, 1112, 2824, 2]
+// Dependencies: [19, 17, 8336, 1071, 21, 575, 4913, 1628, 16166, 16165, 19146, 10851, 5477, 8085, 1255, 8337, 8194, 5504, 5468, 1112, 2824, 2]
 // Exports: default
 
 // Module 19145 (ParentalConsentWarningBanner)

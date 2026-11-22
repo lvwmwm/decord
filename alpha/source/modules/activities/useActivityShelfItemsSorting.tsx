@@ -1,10 +1,10 @@
-// Module ID: 12911
-// Function ID: 12912
+// Module ID: 12909
+// Function ID: 12910
 // Name: useActivityShelfItemsSorting
 // Dependencies: [19, 4743, 5564, 1378, 2117, 2]
 // Exports: default
 
-// Module 12911 (useActivityShelfItemsSorting)
+// Module 12909 (useActivityShelfItemsSorting)
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

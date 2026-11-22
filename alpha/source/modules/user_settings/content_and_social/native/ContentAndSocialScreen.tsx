@@ -1,7 +1,7 @@
 // Module ID: 17361
 // Function ID: 17362
 // Name: ContentAndSocialScreen
-// Dependencies: [32, 19, 17, 8712, 1071, 21, 4913, 575, 1112, 2187, 17362, 16116, 13587, 17367, 8233, 11937, 16114, 15985, 17368, 5504, 2]
+// Dependencies: [32, 19, 17, 8712, 1071, 21, 4913, 575, 1112, 2187, 17362, 16114, 13585, 17367, 8233, 11937, 16112, 15983, 17368, 5504, 2]
 // Exports: ConnectedGamesPage, DiscordPermissionsPage, default
 
 // Module 17361 (ContentAndSocialScreen)
@@ -12,7 +12,7 @@ import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2187 */;
 import Text_Text from "Text/Text" /* 5504 */;
 import SettingsConstants from "SettingsConstants" /* 8712 */;
 import SettingBuilders from "SettingBuilders" /* 11937 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 13587 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 13585 */;
 import SafetyGuildSettingGuildSelect from "SafetyGuildSettingGuildSelect" /* 17362 */;
 import useAuthorizedSlayerApplicationsDefault from "useAuthorizedSlayerApplications" /* 17368 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -42,7 +42,7 @@ let closure_12 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/user_settings/content_and_social/native/ContentAndSocialScreen.tsx");
 
 export default function ContentAndSocialSettings(route) {
-  const f111880 = () => {
+  const f111891 = () => {
     let tab;
     if (route != null) {
       const params = route.params;
@@ -62,9 +62,9 @@ export default function ContentAndSocialSettings(route) {
     ({ CONTENT_AND_SOCIAL_DISCORD: arr[0], CONNECTED_GAMES: arr[1] } = MobileUserSettings);
     return items;
   }, []);
-  const defaultIndex = _slicedToArray(react.useState(f111880), 2)[0];
+  const defaultIndex = _slicedToArray(react.useState(f111891), 2)[0];
   let items = [defaultIndex, memo];
-  _slicedToArray(react.useState(f111880), 2);
+  _slicedToArray(react.useState(f111891), 2);
   const node = react.useMemo(() => {
     const obj = SettingBuilders;
     const obj2 = { defaultIndex, settings: memo };
@@ -193,7 +193,7 @@ export function DiscordPermissionsPage() {
     tmp16 = undefined;
     if (allServersOptionSelected) {
       if (tmp9) {
-        tmp16 = React4(tmp3(16116).MessageRequestsNotice, {});
+        tmp16 = React4(tmp3(16114).MessageRequestsNotice, {});
       }
     }
     items8[5] = obj16;
@@ -282,7 +282,7 @@ export function ConnectedGamesPage() {
     tmp7 = unpackModuleId(metroRequire, obj3);
   } else {
     let obj = { node: tmp5 };
-    tmp7 = React4(tmp2(15985), obj);
+    tmp7 = React4(tmp2(15983), obj);
   }
   return tmp7;
 }

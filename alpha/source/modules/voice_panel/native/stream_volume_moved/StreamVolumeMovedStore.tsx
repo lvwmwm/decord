@@ -1,10 +1,10 @@
-// Module ID: 14506
-// Function ID: 14507
+// Module ID: 14504
+// Function ID: 14505
 // Name: StreamVolumeMovedStore
 // Dependencies: [5102, 2]
 // Exports: clearScrollToStreamVolume, clearStreamVolumeMovedHint, consumeStreamVolumeMovedHint, hideStreamVolumeCoachmark, showStreamVolumeCoachmark, showStreamVolumeMovedHint
 
-// Module 14506 (StreamVolumeMovedStore)
+// Module 14504 (StreamVolumeMovedStore)
 import ZustandStore from "ZustandStore" /* 5102 */;
 import size from "module_2" /* 2 */;
 

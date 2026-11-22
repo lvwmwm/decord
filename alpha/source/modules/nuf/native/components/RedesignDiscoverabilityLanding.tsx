@@ -1,18 +1,18 @@
-// Module ID: 19616
-// Function ID: 19617
+// Module ID: 19612
+// Function ID: 19613
 // Name: RedesignDiscoverabilityLanding
-// Dependencies: [19, 17, 21, 4913, 575, 1628, 5467, 5504, 1112, 19617, 13587, 5511, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 1628, 5467, 5504, 1112, 19613, 13585, 5511, 2]
 // Exports: default
 
-// Module 19616 (RedesignDiscoverabilityLanding)
+// Module 19612 (RedesignDiscoverabilityLanding)
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1112 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
 import NavigatorConstants from "NavigatorConstants" /* 5467 */;
 import Text_Text from "Text/Text" /* 5504 */;
 import components_Button_Button from "components/Button/Button" /* 5511 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 13587 */;
-import LanternSpotIllustration from "LanternSpotIllustration" /* 19617 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 13585 */;
+import LanternSpotIllustration from "LanternSpotIllustration" /* 19613 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

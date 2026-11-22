@@ -1,7 +1,7 @@
 // Module ID: 19309
 // Function ID: 19310
 // Name: VoiceChannelAppSurface
-// Dependencies: [19, 21, 1628, 18398, 5557, 18697, 15747, 18399, 18700, 18402, 15756, 18704, 1112, 4288, 2]
+// Dependencies: [19, 21, 1628, 18398, 5557, 18697, 15745, 18399, 18700, 18402, 15754, 18704, 1112, 4288, 2]
 // Exports: default
 
 // Module 19309 (VoiceChannelAppSurface)

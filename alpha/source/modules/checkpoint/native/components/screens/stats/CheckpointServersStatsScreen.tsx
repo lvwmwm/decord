@@ -1,10 +1,10 @@
-// Module ID: 12756
-// Function ID: 12757
+// Module ID: 12754
+// Function ID: 12755
 // Name: CheckpointServersStatsScreen
-// Dependencies: [32, 19, 17, 12492, 5969, 21, 4913, 575, 12729, 12513, 504, 12512, 12725, 12726, 12757, 1112, 3408, 12510, 3440, 12464, 12758, 12509, 12759, 12761, 7322, 2]
+// Dependencies: [32, 19, 17, 12128, 5969, 21, 4913, 575, 12727, 12513, 504, 12512, 12723, 12724, 12755, 1112, 3408, 12510, 3440, 12471, 12756, 12509, 12757, 12759, 7322, 2]
 // Exports: default
 
-// Module 12756 (CheckpointServersStatsScreen)
+// Module 12754 (CheckpointServersStatsScreen)
 import nativeDefault from "native" /* 575 */;
 import _modDef3408 from "module_3408" /* 3408 */;
 import _modDef3440 from "module_3440" /* 3440 */;
@@ -13,17 +13,17 @@ import CheckpointScreen from "CheckpointScreen" /* 12509 */;
 import CheckpointTextDefault from "CheckpointText" /* 12510 */;
 import CheckpointApngPlayerDefault from "CheckpointApngPlayer" /* 12512 */;
 import CheckpointHeaderButton from "CheckpointHeaderButton" /* 12513 */;
-import _modDef12725 from "module_12725" /* 12725 */;
-import _modDef12726 from "module_12726" /* 12726 */;
-import useIsCheckpointWide from "useIsCheckpointWide" /* 12729 */;
-import CheckpointDisplayTextDefault from "CheckpointDisplayText" /* 12757 */;
-import CheckpointGuildStatsDefault from "CheckpointGuildStats" /* 12758 */;
-import CheckpointRankTagDefault from "CheckpointRankTag" /* 12759 */;
-import CheckpointTruncatedTextDefault from "CheckpointTruncatedText" /* 12761 */;
+import _modDef12723 from "module_12723" /* 12723 */;
+import _modDef12724 from "module_12724" /* 12724 */;
+import useIsCheckpointWide from "useIsCheckpointWide" /* 12727 */;
+import CheckpointDisplayTextDefault from "CheckpointDisplayText" /* 12755 */;
+import CheckpointGuildStatsDefault from "CheckpointGuildStats" /* 12756 */;
+import CheckpointRankTagDefault from "CheckpointRankTag" /* 12757 */;
+import CheckpointTruncatedTextDefault from "CheckpointTruncatedText" /* 12759 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import CheckpointStore from "CheckpointStore" /* 12492 */;
+import CheckpointStore from "CheckpointStore" /* 12128 */;
 import CheckpointConstants from "CheckpointConstants" /* 5969 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;
@@ -266,7 +266,7 @@ export default function CheckpointServersStatsScreen() {
       const obj4 = { style: tmp.heading, children: items2 };
       const obj5 = { style: tmp.title, children: items1 };
       const obj6 = { size: "refresh_sm", color: CHECKPOINT_PRIMARY };
-      items1 = [closure_9(tmp2(12464).ServerIcon, obj6), ];
+      items1 = [closure_9(tmp2(12471).ServerIcon, obj6), ];
       const obj7 = { isStepHeading: true, variant: "heading-sm/semibold", style: tmp.titleText, children: stringResult.toLocaleUpperCase() };
       const tmp18 = CheckpointTextDefault;
       const intl3 = tmp2(1112).intl;
@@ -292,7 +292,7 @@ export default function CheckpointServersStatsScreen() {
   ({ container: arr2[0], globalContainer: arr2[1] } = tmp);
   obj11 = { style: tmp.header, children: items6 };
   const obj12 = { style: tmp.globalHeading, children: items5 };
-  const obj13 = { animatedUri: _modDef12725, staticUri: _modDef12726, style: tmp.globe };
+  const obj13 = { animatedUri: _modDef12723, staticUri: _modDef12724, style: tmp.globe };
   let tmp7 = CheckpointApngPlayerDefault;
   items5 = [closure_9(tmp7, obj13), ];
   const obj14 = { isStepHeading: true, children: stringResult2.toLocaleUpperCase() };

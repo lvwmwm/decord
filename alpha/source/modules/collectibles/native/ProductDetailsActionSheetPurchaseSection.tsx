@@ -1,10 +1,10 @@
-// Module ID: 14235
-// Function ID: 14236
+// Module ID: 14233
+// Function ID: 14234
 // Name: ProductDetailsActionSheetPurchaseSection
-// Dependencies: [32, 19, 17, 8090, 1073, 1071, 9420, 1388, 21, 4913, 575, 7591, 12468, 5127, 13908, 1112, 9565, 9580, 9038, 5518, 1500, 7520, 6429, 14236, 2119, 8074, 14244, 1074, 14245, 9410, 8958, 5504, 5512, 2112, 8920, 504, 14204, 2173, 8087, 8086, 9566, 9247, 8916, 14247, 9564, 9419, 14248, 14249, 1628, 5511, 14250, 1241, 1378, 6366, 5861, 2]
+// Dependencies: [32, 19, 17, 8090, 1073, 1071, 9420, 1388, 21, 4913, 575, 7591, 12475, 5127, 13906, 1112, 9565, 9580, 9038, 5518, 1500, 7520, 6429, 14234, 2119, 8074, 14242, 1074, 14243, 9410, 8958, 5504, 5512, 2112, 8920, 504, 14202, 2173, 8087, 8086, 9566, 9247, 8916, 14245, 9564, 9419, 14246, 14247, 1628, 5511, 14248, 1241, 1378, 6366, 5861, 2]
 // Exports: default
 
-// Module 14235 (ProductDetailsActionSheetPurchaseSection)
+// Module 14233 (ProductDetailsActionSheetPurchaseSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl10 from "intl" /* 1112 */;
@@ -22,7 +22,7 @@ import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7520 */;
 import OrbsIcon from "OrbsIcon" /* 8958 */;
 import ProductPurchaseSuccessActionCreatorsDefault from "ProductPurchaseSuccessActionCreators" /* 9410 */;
 import MainTabsConstants from "MainTabsConstants" /* 9420 */;
-import openGiftModal from "openGiftModal" /* 13908 */;
+import openGiftModal from "openGiftModal" /* 13906 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 8090 */;
@@ -197,7 +197,7 @@ function VCButton(balance) {
         }
       }
     };
-    obj2.pushLazy(asyncRequire(14236, dependencyMap.paths), obj3, ORB_CHECKOUT_MODAL);
+    obj2.pushLazy(asyncRequire(14234, dependencyMap.paths), obj3, ORB_CHECKOUT_MODAL);
   }, items);
   if (null == price) {
     return null;

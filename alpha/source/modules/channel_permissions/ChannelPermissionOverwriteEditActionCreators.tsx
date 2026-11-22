@@ -364,7 +364,7 @@ obj = function _drainPendingEdits() {
                       readyEdits = c5.getReadyEdits(closure_0, pendingEdits);
                       if (0 === readyEdits.length) {
                         c7 = 3;
-                        const obj4 = { value: { v: "r" }, done: true };
+                        const obj4 = { value: { v: "Array" }, done: true };
                         return obj4;
                       } else {
                         mapped = readyEdits.map((editId) => {
@@ -411,7 +411,7 @@ obj = function _drainPendingEdits() {
                       return obj7;
                     } else {
                       c7 = 3;
-                      const obj8 = { value: { v: "r" }, done: true };
+                      const obj8 = { value: { v: "Array" }, done: true };
                       return obj8;
                     }
                   } else if (2 === c6) {

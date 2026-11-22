@@ -1,11 +1,11 @@
 // Module ID: 18402
 // Function ID: 18403
 // Name: FrameRenderTarget
-// Dependencies: [19, 17, 21, 4913, 18403, 15754, 7819, 2]
+// Dependencies: [19, 17, 21, 4913, 18403, 15752, 7819, 2]
 // Exports: default
 
 // Module 18402 (FrameRenderTarget)
-import FramePoolManagerDefault from "FramePoolManager" /* 15754 */;
+import FramePoolManagerDefault from "FramePoolManager" /* 15752 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

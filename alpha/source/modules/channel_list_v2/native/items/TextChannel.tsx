@@ -1,7 +1,7 @@
 // Module ID: 17740
 // Function ID: 17741
 // Name: TextChannel
-// Dependencies: [19, 17, 4761, 4817, 4762, 4845, 6619, 6552, 5642, 21, 4913, 575, 17637, 7676, 7636, 13250, 504, 5947, 7737, 17741, 5646, 1110, 13845, 17636, 7466, 13893, 17742, 11146, 5529, 8009, 5504, 7324, 13251, 7600, 17744, 17745, 2]
+// Dependencies: [19, 17, 4761, 4817, 4762, 4845, 6619, 6552, 5642, 21, 4913, 575, 17637, 7676, 7636, 13248, 504, 5947, 7737, 17741, 5646, 1110, 13843, 17636, 7466, 13891, 17742, 11146, 5529, 8009, 5504, 7324, 13249, 7600, 17744, 17745, 2]
 
 // Module 17740 (TextChannel)
 import react_native from "react-native" /* 17 */;
@@ -10,7 +10,7 @@ import RoutingSourcesDefault from "RoutingSources" /* 1110 */;
 import transitionToChannel2 from "transitionToChannel" /* 5646 */;
 import useChannelRoleSubscriptionStatus from "useChannelRoleSubscriptionStatus" /* 5947 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7737 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 13845 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 13843 */;
 import preloadChannelAppFrame from "preloadChannelAppFrame" /* 17741 */;
 import react from "react" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4761 */;

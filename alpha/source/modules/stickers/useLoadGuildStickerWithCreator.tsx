@@ -1,10 +1,10 @@
-// Module ID: 19788
-// Function ID: 19789
+// Module ID: 19785
+// Function ID: 19786
 // Name: useLoadGuildStickerWithCreator
 // Dependencies: [5, 32, 19, 1386, 6615, 504, 11369, 2]
 // Exports: default
 
-// Module 19788 (useLoadGuildStickerWithCreator)
+// Module 19785 (useLoadGuildStickerWithCreator)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

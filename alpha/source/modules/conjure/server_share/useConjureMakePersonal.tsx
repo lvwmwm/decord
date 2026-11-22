@@ -1,7 +1,7 @@
 // Module ID: 18300
 // Function ID: 18301
 // Name: useConjureMakePersonal
-// Dependencies: [5, 32, 19, 6621, 6933, 12387, 18294, 1112, 4190, 18295, 2]
+// Dependencies: [5, 32, 19, 6621, 6933, 12394, 18294, 1112, 4190, 18295, 2]
 // Exports: default
 
 // Module 18300 (useConjureMakePersonal)
@@ -152,7 +152,7 @@ export default function useConjureMakePersonal(id) {
     }
   }), items2);
   if (null != target) {
-    const tmp6Result = tmp6(12387);
+    const tmp6Result = tmp6(12394);
     result = tmp6Result.conjureRemoveAppKeptChannels(target);
   }
   return obj3;

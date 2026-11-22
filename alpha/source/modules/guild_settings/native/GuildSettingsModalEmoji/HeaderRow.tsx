@@ -1,10 +1,10 @@
-// Module ID: 19780
-// Function ID: 19781
+// Module ID: 19777
+// Function ID: 19778
 // Name: HeaderRow
-// Dependencies: [5, 32, 19, 17, 19774, 1071, 1389, 21, 4913, 575, 7633, 10394, 1255, 1112, 1268, 8474, 5511, 5504, 504, 2]
+// Dependencies: [5, 32, 19, 17, 19771, 1071, 1389, 21, 4913, 575, 7633, 10394, 1255, 1112, 1268, 8474, 5511, 5504, 504, 2]
 // Exports: ConnectedHeaderRow
 
-// Module 19780 (HeaderRow)
+// Module 19777 (HeaderRow)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -13,7 +13,7 @@ import Text_Text from "Text/Text" /* 5504 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GuildSettingsEmojiStore from "GuildSettingsEmojiStore" /* 19774 */;
+import GuildSettingsEmojiStore from "GuildSettingsEmojiStore" /* 19771 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;

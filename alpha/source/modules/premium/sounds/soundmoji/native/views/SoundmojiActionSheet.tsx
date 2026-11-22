@@ -1,10 +1,10 @@
-// Module ID: 12484
-// Function ID: 12485
+// Module ID: 12491
+// Function ID: 12492
 // Name: SoundmojiActionSheet
-// Dependencies: [19, 17, 21, 4913, 575, 1378, 5960, 5141, 7496, 12485, 5504, 1112, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 1378, 5960, 5141, 7496, 12492, 5504, 1112, 2]
 // Exports: default
 
-// Module 12484 (SoundmojiActionSheet)
+// Module 12491 (SoundmojiActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import getSoundmojiASTFromString from "getSoundmojiASTFromString" /* 5960 */;

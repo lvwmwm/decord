@@ -1,7 +1,7 @@
 // Module ID: 19002
 // Function ID: 19003
 // Name: MessageRequestMutualServers
-// Dependencies: [19, 17, 21, 4913, 7322, 19003, 1112, 13538, 5504, 7030, 2]
+// Dependencies: [19, 17, 21, 4913, 7322, 19003, 1112, 13536, 5504, 7030, 2]
 // Exports: default
 
 // Module 19002 (MessageRequestMutualServers)
@@ -64,7 +64,7 @@ export default function MessageRequestMutualServers(textVariant) {
           return React3(GuildIconDefault, obj, guild.id);
         })
     };
-    const GuildIconPile = tmp4(13538).GuildIconPile;
+    const GuildIconPile = tmp4(13536).GuildIconPile;
     tmp9 = closure_4(GuildIconPile, obj4);
   }
   items1 = [tmp9, ];

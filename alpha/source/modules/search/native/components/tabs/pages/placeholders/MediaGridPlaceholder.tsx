@@ -1,7 +1,7 @@
 // Module ID: 18739
 // Function ID: 18740
 // Name: MediaGridPlaceholder
-// Dependencies: [19, 17, 8576, 21, 4913, 575, 18738, 1653, 18740, 12, 5504, 1112, 13199, 18741, 2]
+// Dependencies: [19, 17, 8576, 21, 4913, 575, 18738, 1653, 18740, 12, 5504, 1112, 13197, 18741, 2]
 // Exports: RecentsMediaGridPlaceholder, default
 
 // Module 18739 (MediaGridPlaceholder)
@@ -11,7 +11,7 @@ import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
 import _modDef1653 from "module_1653" /* 1653 */;
 import Text_Text from "Text/Text" /* 5504 */;
-import SearchPlatformUtils from "SearchPlatformUtils" /* 13199 */;
+import SearchPlatformUtils from "SearchPlatformUtils" /* 13197 */;
 import usePlaceholderStyles from "usePlaceholderStyles" /* 18738 */;
 import GridItemPlaceholderDefault from "GridItemPlaceholder" /* 18740 */;
 import react from "react" /* 19 */;

@@ -1,7 +1,7 @@
 // Module ID: 17286
 // Function ID: 17287
 // Name: ShopCategory
-// Dependencies: [19, 17, 1073, 1071, 21, 9545, 4913, 575, 1653, 5123, 1112, 7520, 1500, 16388, 17283, 7490, 17287, 8936, 9575, 5127, 8918, 8074, 7539, 7030, 5600, 7565, 2]
+// Dependencies: [19, 17, 1073, 1071, 21, 9545, 4913, 575, 1653, 5123, 1112, 7520, 1500, 16386, 17283, 7490, 17287, 8936, 9575, 5127, 8918, 8074, 7539, 7030, 5600, 7565, 2]
 // Exports: ShopCategory, ShopCategorySkeleton
 
 // Module 17286 (ShopCategory)
@@ -143,7 +143,7 @@ export function ShopCategory(category) {
   dependencyMap = obj.useNavigation();
   const unpublishedAt = category.unpublishedAt;
   const products = category.products;
-  let obj2 = category(16388);
+  let obj2 = category(16386);
   const obj3 = { products, bypassAndroidUnsyncedFilter: category.isOrbsExclusive };
   const filteredAndSortedProducts = obj2.useFilteredAndSortedProducts(obj3);
   const mobileBannerUrl = category.mobileBannerUrl;

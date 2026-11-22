@@ -1,7 +1,7 @@
 // Module ID: 17703
 // Function ID: 17704
 // Name: renderRedesignChannelListItem
-// Dependencies: [19, 17, 6534, 4766, 4762, 4843, 5657, 5642, 4769, 8327, 21, 17702, 17704, 17708, 575, 7449, 8321, 17625, 1112, 13151, 17697, 17709, 17648, 5517, 17711, 17713, 17715, 17719, 17721, 17722, 17723, 17724, 17725, 17728, 17730, 17733, 17736, 17633, 17740, 1092, 17752, 17755, 17757, 4787, 17758, 17643, 6537, 17641, 17759, 2]
+// Dependencies: [19, 17, 6534, 4766, 4762, 4843, 5657, 5642, 4769, 8327, 21, 17702, 17704, 17708, 575, 7449, 8321, 17625, 1112, 13149, 17697, 17709, 17648, 5517, 17711, 17713, 17715, 17719, 17721, 17722, 17723, 17724, 17725, 17728, 17730, 17733, 17736, 17633, 17740, 1092, 17752, 17755, 17757, 4787, 17758, 17643, 6537, 17641, 17759, 2]
 // Exports: calculateVoiceSummary, getChannelListItemSize, getChannelListSectionFooterSize, getChannelListSectionHasFooterDivider, getChannelListSectionHeaderSize, getFastListRecyclerKey, isMobileGuildActionRow, renderChannelListItem, renderChannelListSectionFooter, renderChannelListSectionHeader
 
 // Module 17703 (renderRedesignChannelListItem)
@@ -14,7 +14,7 @@ import FavoritesUtils from "FavoritesUtils" /* 4787 */;
 import StageChannelParticipants from "StageChannelParticipants" /* 6537 */;
 import FastList from "FastList" /* 7449 */;
 import ChannelListState from "ChannelListState" /* 8321 */;
-import Divider from "Divider" /* 13151 */;
+import Divider from "Divider" /* 13149 */;
 import CategoryChannel from "CategoryChannel" /* 17625 */;
 import ThreadChannelDefault from "ThreadChannel" /* 17633 */;
 import VoiceUsers from "VoiceUsers" /* 17641 */;
@@ -307,7 +307,7 @@ export function getChannelListSectionFooterSize(guildChannels, section, result) 
     let num4 = 0;
     const isEmptyResult = guildActionSection.isEmpty();
     if (!isEmptyResult) {
-      num4 = tmp3(13151).DIVIDER_HEIGHT;
+      num4 = tmp3(13149).DIVIDER_HEIGHT;
     }
     return num4;
   } else {
@@ -449,7 +449,7 @@ export function renderChannelListItem(arg0) {
         const tmp45 = View;
         const tmp46 = closure_18;
         if (row < guildActionSection1.getRows().length - 1) {
-          tmp46Result = tmp46(selectedChannelId(13151), {});
+          tmp46Result = tmp46(selectedChannelId(13149), {});
         }
         const obj19 = { children: items };
         items[1] = tmp46Result;
@@ -476,7 +476,7 @@ export function renderChannelListItem(arg0) {
         const tmp31 = closure_18;
         const tmp32 = selectedChannelId;
         if (row < guildActionSection2.getRows().length - 1) {
-          tmp31Result = tmp31(tmp32(13151), {});
+          tmp31Result = tmp31(tmp32(13149), {});
         }
         const obj25 = { children: items1 };
         items1[1] = tmp31Result;
@@ -627,7 +627,7 @@ export function getChannelListItemSize(liveChannelNoticeHeight) {
                       const guildActionSection1 = guildChannels.getGuildActionSection();
                       let num8 = 0;
                       if (row < guildActionSection1.getRows().length - 1) {
-                        num8 = tmp(13151).DIVIDER_HEIGHT;
+                        num8 = tmp(13149).DIVIDER_HEIGHT;
                       }
                       num4 = 48 + num8;
                     } else {
@@ -640,7 +640,7 @@ export function getChannelListItemSize(liveChannelNoticeHeight) {
                             const guildActionSection2 = guildChannels.getGuildActionSection();
                             let num6 = 0;
                             if (row < guildActionSection2.getRows().length - 1) {
-                              num6 = tmp(13151).DIVIDER_HEIGHT;
+                              num6 = tmp(13149).DIVIDER_HEIGHT;
                             }
                             num4 = BOOST_PROGRESS_BAR_HEIGHT + num6;
                           } else {

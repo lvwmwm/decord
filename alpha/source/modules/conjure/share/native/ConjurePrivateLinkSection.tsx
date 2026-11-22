@@ -1,7 +1,7 @@
 // Module ID: 18347
 // Function ID: 18348
 // Name: ConjurePrivateLinkSection
-// Dependencies: [5, 32, 19, 17, 21, 4913, 575, 18348, 18349, 18350, 6933, 5595, 1112, 4190, 14368, 5127, 18351, 2119, 5862, 5866, 7545, 5594, 9718, 7348, 7045, 7057, 5622, 18352, 5609, 10137, 5504, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4913, 575, 18348, 18349, 18350, 6933, 5595, 1112, 4190, 14366, 5127, 18351, 2119, 5862, 5866, 7545, 5594, 9718, 7348, 7045, 7057, 5622, 18352, 5609, 10137, 5504, 2]
 // Exports: default
 
 // Module 18347 (ConjurePrivateLinkSection)
@@ -353,7 +353,7 @@ export default function ConjurePrivateLinkSection(project) {
   if (isOwner) {
     const obj13 = { icon: callback1(TableRowIcon5, obj14), variant: "danger", label: intl7.string(value(4190).oq0hBy), disabled: tmp9, onPress: callback3 };
     const TableRow5 = tmp2(7045).TableRow;
-    obj14 = { IconComponent: tmp2(14368).RefreshIcon, variant: "danger" };
+    obj14 = { IconComponent: tmp2(14366).RefreshIcon, variant: "danger" };
     TableRowIcon5 = tmp2(7057).TableRowIcon;
     intl7 = tmp2(1112).intl;
     tmp21Result = tmp21(TableRow5, obj13);

@@ -1,7 +1,7 @@
 // Module ID: 17579
 // Function ID: 17580
 // Name: MessagesItemHappeningNow
-// Dependencies: [19, 17, 16701, 21, 13061, 575, 4913, 5477, 9024, 17580, 2]
+// Dependencies: [19, 17, 16699, 21, 13059, 575, 4913, 5477, 9024, 17580, 2]
 // Exports: getMessagesItemHappeningNowHeight
 
 // Module 17579 (MessagesItemHappeningNow)
@@ -10,9 +10,9 @@ import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import useToken from "useToken" /* 5477 */;
 import CutoutBackgroundContext from "CutoutBackgroundContext" /* 9024 */;
-import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 13061 */;
+import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 13059 */;
 import react from "react" /* 19 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 16701 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 16699 */;
 import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 

@@ -1,10 +1,10 @@
-// Module ID: 12239
-// Function ID: 12240
+// Module ID: 12246
+// Function ID: 12247
 // Name: GameOrganizationInviteSummary
 // Dependencies: [19, 21, 4913, 5929, 575, 12086, 5504, 1112, 2639, 7038, 2]
 // Exports: default
 
-// Module 12239 (GameOrganizationInviteSummary)
+// Module 12246 (GameOrganizationInviteSummary)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
 import _modDef2639 from "module_2639" /* 2639 */;

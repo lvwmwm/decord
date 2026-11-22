@@ -1,10 +1,10 @@
-// Module ID: 14190
-// Function ID: 14191
+// Module ID: 14188
+// Function ID: 14189
 // Name: GiftPurchaseButton
-// Dependencies: [5, 19, 17, 2178, 8851, 1388, 21, 5518, 5504, 504, 8170, 9287, 9494, 7520, 9473, 5861, 1112, 2173, 9465, 5512, 14191, 2]
+// Dependencies: [5, 19, 17, 2178, 8851, 1388, 21, 5518, 5504, 504, 8170, 9287, 9494, 7520, 9473, 5861, 1112, 2173, 9465, 5512, 14189, 2]
 // Exports: default
 
-// Module 14190 (GiftPurchaseButton)
+// Module 14188 (GiftPurchaseButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import PremiumConstants from "PremiumConstants" /* 1388 */;

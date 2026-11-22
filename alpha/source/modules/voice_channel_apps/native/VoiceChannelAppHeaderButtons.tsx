@@ -1,13 +1,13 @@
 // Module ID: 19264
 // Function ID: 19265
 // Name: VoiceChannelAppHeaderButtons
-// Dependencies: [19, 21, 19265, 19200, 17229, 7641, 1112, 4288, 13879, 10369, 2]
+// Dependencies: [19, 21, 19265, 19200, 17229, 7641, 1112, 4288, 13877, 10369, 2]
 // Exports: default
 
 // Module 19264 (VoiceChannelAppHeaderButtons)
 import _modDef4288 from "module_4288" /* 4288 */;
 import AssetRegistryDefault from "AssetRegistry" /* 10369 */;
-import VoiceChannelAppActionCreators from "VoiceChannelAppActionCreators" /* 13879 */;
+import VoiceChannelAppActionCreators from "VoiceChannelAppActionCreators" /* 13877 */;
 import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 19200 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

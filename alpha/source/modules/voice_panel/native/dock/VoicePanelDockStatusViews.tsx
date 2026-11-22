@@ -1,7 +1,7 @@
 // Module ID: 18009
 // Function ID: 18010
 // Name: VoicePanelDockStatusViews
-// Dependencies: [19, 17, 4914, 5961, 4762, 4784, 4855, 6535, 1386, 18008, 11768, 21, 4913, 575, 1378, 18010, 11749, 504, 18011, 7322, 1186, 6823, 5529, 1112, 7697, 7034, 5504, 5943, 1653, 5123, 18012, 7496, 12485, 5477, 5514, 13311, 13313, 5600, 2]
+// Dependencies: [19, 17, 4914, 5961, 4762, 4784, 4855, 6535, 1386, 18008, 11768, 21, 4913, 575, 1378, 18010, 11749, 504, 18011, 7322, 1186, 6823, 5529, 1112, 7697, 7034, 5504, 5943, 1653, 5123, 18012, 7496, 12492, 5477, 5514, 13309, 13311, 5600, 2]
 // Exports: DockChannelIcon, DockChannelTitle, DockFace, DockUserTitle
 
 // Module 18009 (VoicePanelDockStatusViews)
@@ -147,7 +147,7 @@ let closure_24 = react.memo(function DockSpeakerHalo(isSpeaking) {
   const tmp3 = closure_19();
   let obj = isSpeaking(5477);
   const token = obj.useToken(ICON_VOICE_SPEAKING);
-  let obj2 = isSpeaking(13311);
+  let obj2 = isSpeaking(13309);
   const voicePanelDockSpeakerLevelProps = obj2.useVoicePanelDockSpeakerLevelProps();
   const obj3 = isSpeaking(1653);
   sharedValue = obj3.useSharedValue(0);
@@ -189,7 +189,7 @@ let closure_24 = react.memo(function DockSpeakerHalo(isSpeaking) {
   items3 = [tmp3.halo, animatedStyle];
   View = sharedValue(1653).View;
   obj6 = { style: StyleSheet.absoluteFill, userId, minScale: 0.84, maxScale: 1, children: closure_16(View, obj7) };
-  tmp14 = sharedValue(13313);
+  tmp14 = sharedValue(13311);
   const merged = Object.assign(voicePanelDockSpeakerLevelProps);
   obj7 = { style: items4 };
   items4 = [tmp3.haloDisc, { backgroundColor: token }];

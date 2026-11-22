@@ -18,7 +18,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require;
 
-let closure_8 = { user: "a", profile: "Path", wishlistId: "context", wishlist: "chorro", updatedAt: "chorro de agua", storedUpdatedAt: "c\u00F3mic", fetching: "c\u00F3mics", error: "emoci\u00F3n" };
+let closure_8 = { user: "a", profile: "Path", wishlistId: "container", wishlist: "Notifications", updatedAt: null, storedUpdatedAt: null, fetching: "", error: "Array" };
 const result = size.fileFinishedImporting("modules/slayer_storefront/native/useFetchSocialLayerStorefrontEmbedWishlist.tsx");
 
 export function useFetchSocialLayerStorefrontEmbedWishlist(arg0) {

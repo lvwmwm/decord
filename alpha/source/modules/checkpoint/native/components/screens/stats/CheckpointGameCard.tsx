@@ -1,10 +1,10 @@
-// Module ID: 12769
-// Function ID: 12770
+// Module ID: 12767
+// Function ID: 12768
 // Name: CheckpointGameCard
 // Dependencies: [19, 17, 2140, 5969, 21, 4913, 575, 504, 1412, 5600, 7977, 5504, 12510, 2]
 // Exports: CheckpointGameCard, CheckpointGameCardDescription
 
-// Module 12769 (CheckpointGameCard)
+// Module 12767 (CheckpointGameCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;

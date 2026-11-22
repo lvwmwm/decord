@@ -1,7 +1,7 @@
 // Module ID: 17595
 // Function ID: 17596
 // Name: HappeningNowCardActivity
-// Dependencies: [19, 17, 4767, 1386, 16701, 1071, 1082, 21, 17596, 17597, 4913, 575, 7520, 504, 6864, 5652, 1255, 12199, 2119, 8067, 17591, 5943, 17598, 16702, 17592, 1186, 17601, 13523, 17602, 10894, 14458, 9798, 7620, 7040, 1112, 4910, 1378, 11081, 5600, 17593, 17604, 11084, 6917, 17606, 8204, 2]
+// Dependencies: [19, 17, 4767, 1386, 16699, 1071, 1082, 21, 17596, 17597, 4913, 575, 7520, 504, 6864, 5652, 1255, 12206, 2119, 8067, 17591, 5943, 17598, 16700, 17592, 1186, 17601, 13521, 17602, 10894, 14456, 9798, 7620, 7040, 1112, 4910, 1378, 11081, 5600, 17593, 17604, 11084, 6917, 17606, 8204, 2]
 
 // Module 17595 (HappeningNowCardActivity)
 import nativeDefault from "native" /* 575 */;
@@ -15,8 +15,8 @@ import FastImageDefault from "FastImage" /* 5600 */;
 import ActivityTypes from "ActivityTypes" /* 5652 */;
 import StreamPreviewDefault from "StreamPreview" /* 11081 */;
 import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 11084 */;
-import isListeningOnSpotifyDefault from "isListeningOnSpotify" /* 13523 */;
-import isOnXboxDefault from "isOnXbox" /* 14458 */;
+import isListeningOnSpotifyDefault from "isListeningOnSpotify" /* 13521 */;
+import isOnXboxDefault from "isOnXbox" /* 14456 */;
 import useLiveStageData from "useLiveStageData" /* 17593 */;
 import AssetRegistryDefault from "AssetRegistry" /* 17596 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 17597 */;
@@ -25,7 +25,7 @@ import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import StageInstanceStore from "StageInstanceStore" /* 4767 */;
 import UserStore from "UserStore" /* 1386 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 16701 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 16699 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
@@ -367,7 +367,7 @@ const memoResult = react.memo(function ActivityCard(userId) {
     }
     track(ACTIVITY_CARD_CLICKED, obj);
     if (null != stream) {
-      const promise2 = asyncRequire(12199, dependencyMap.paths);
+      const promise2 = asyncRequire(12206, dependencyMap.paths);
       promise2.then((result) => result.default(channelId.channelId, true));
     } else {
       const promise = asyncRequire(8067, dependencyMap.paths);

@@ -1,10 +1,10 @@
-// Module ID: 14234
-// Function ID: 14235
+// Module ID: 14232
+// Function ID: 14233
 // Name: ProductDetailsActionSheetVariants
 // Dependencies: [19, 17, 21, 4913, 575, 9038, 7030, 1112, 9577, 7499, 8086, 5504, 2]
 // Exports: default
 
-// Module 14234 (ProductDetailsActionSheetVariants)
+// Module 14232 (ProductDetailsActionSheetVariants)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Pressables from "Pressables" /* 7030 */;

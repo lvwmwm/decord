@@ -1,10 +1,10 @@
-// Module ID: 19803
-// Function ID: 19804
+// Module ID: 19800
+// Function ID: 19801
 // Name: showSoundboardSoundEditModal
-// Dependencies: [5127, 6429, 19804, 2119, 2]
+// Dependencies: [5127, 6429, 19801, 2119, 2]
 // Exports: default
 
-// Module 19803 (showSoundboardSoundEditModal)
+// Module 19800 (showSoundboardSoundEditModal)
 import asyncRequire from "asyncRequire" /* 2119 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6429 */;
@@ -16,5 +16,5 @@ export default function showSoundboardSoundEditModal(merged) {
   const obj = ActionSheetActionCreatorsDefault;
   obj.hideActionSheet();
   const obj2 = ModalActionCreatorsDefault;
-  obj2.pushLazy(asyncRequire(19804, dependencyMap.paths), merged, "SoundboardSoundEditModal");
+  obj2.pushLazy(asyncRequire(19801, dependencyMap.paths), merged, "SoundboardSoundEditModal");
 };

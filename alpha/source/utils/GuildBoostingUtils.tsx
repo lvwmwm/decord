@@ -46,8 +46,8 @@ let closure_26;
 let map1;
 let tmp7;
 const _modDef3636 = tmp7(3636);
-const f93906 = (isAvailable) => isAvailable.isAvailable();
-const f93907 = (endsAt) => null != endsAt.endsAt;
+const f93915 = (isAvailable) => isAvailable.isAvailable();
+const f93916 = (endsAt) => null != endsAt.endsAt;
 function getTotalSoundboardSoundCountForTier(items, features) {
   let premiumTier;
   features = features.features;
@@ -525,7 +525,7 @@ export function isTierUnlocked(dependencyMap, arg1) {
 export function getAvailableGuildBoostSlots(boostSlots) {
   const obj = module_12;
   const values = obj.values(boostSlots);
-  return values.filter(f93906);
+  return values.filter(f93915);
 }
 export function generateBlockGuildSubscriptionPurchasesNode(fractionalState) {
   fractionalState = fractionalState.fractionalState;
@@ -541,7 +541,7 @@ export function generateBlockGuildSubscriptionPurchasesNode(fractionalState) {
   obj3 = module_12;
   const values = obj3.values(boostSlots);
   let prop;
-  const found = values.filter(f93906);
+  const found = values.filter(f93915);
   if (premiumTypeSubscription != null) {
     prop = premiumTypeSubscription.isPausedOrPausePending;
   }
@@ -645,7 +645,7 @@ export function isInGracePeriod(arr, arg1) {
     if (premiumTier == null) {
       premiumTier = BoostedGuildTiers.NONE;
     }
-    num = AppliedGuildBoostsRequiredForBoostedGuildTier[premiumTier] - (arr.length - arr.filter(f93907).length);
+    num = AppliedGuildBoostsRequiredForBoostedGuildTier[premiumTier] - (arr.length - arr.filter(f93916).length);
   }
   return num > 0;
 }
@@ -668,7 +668,7 @@ export function appliedGuildBoostsRequiredForPerks(arr, arg1) {
     if (premiumTier == null) {
       premiumTier = BoostedGuildTiers.NONE;
     }
-    return AppliedGuildBoostsRequiredForBoostedGuildTier[premiumTier] - (arr.length - arr.filter(f93907).length);
+    return AppliedGuildBoostsRequiredForBoostedGuildTier[premiumTier] - (arr.length - arr.filter(f93916).length);
   }
 }
 export const GuildTierSubscriptionsOrdered = items1;
@@ -691,7 +691,7 @@ export function getGracePeriodEndingDate(arr, arg1) {
     if (premiumTier == null) {
       premiumTier = BoostedGuildTiers.NONE;
     }
-    num = AppliedGuildBoostsRequiredForBoostedGuildTier[premiumTier] - (arr.length - arr.filter(f93907).length);
+    num = AppliedGuildBoostsRequiredForBoostedGuildTier[premiumTier] - (arr.length - arr.filter(f93916).length);
   }
   if (num > 0) {
     const sorted = arr.sort((endsAt, endsAt2) => {

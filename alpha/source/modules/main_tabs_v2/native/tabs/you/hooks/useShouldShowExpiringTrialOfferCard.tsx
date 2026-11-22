@@ -1,7 +1,7 @@
 // Module ID: 18917
 // Function ID: 18918
 // Name: useShouldShowExpiringTrialOfferCard
-// Dependencies: [15001, 1071, 1388, 1088, 563, 8859, 8956, 2]
+// Dependencies: [14999, 1071, 1388, 1088, 563, 8859, 8956, 2]
 // Exports: useShouldShowExpiringTrialOfferCard
 
 // Module 18917 (useShouldShowExpiringTrialOfferCard)
@@ -11,7 +11,7 @@ import DurationsDefault from "Durations" /* 1088 */;
 import PremiumConstants from "PremiumConstants" /* 1388 */;
 import usePremiumTrialOffer from "usePremiumTrialOffer" /* 8859 */;
 import useCountdownDefault from "useCountdown" /* 8956 */;
-import NoticeStore from "NoticeStore" /* 15001 */;
+import NoticeStore from "NoticeStore" /* 14999 */;
 import size from "module_2" /* 2 */;
 
 const NoticeTypes = Constants.NoticeTypes;

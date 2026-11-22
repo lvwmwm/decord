@@ -1,10 +1,10 @@
-// Module ID: 13259
-// Function ID: 13260
+// Module ID: 13257
+// Function ID: 13258
 // Name: ChannelAutocompleteEmojiUpsell
 // Dependencies: [19, 17, 1389, 21, 4913, 575, 5600, 1412, 5504, 1112, 2]
 // Exports: default
 
-// Module 13259 (ChannelAutocompleteEmojiUpsell)
+// Module 13257 (ChannelAutocompleteEmojiUpsell)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import EmojiConstants from "EmojiConstants" /* 1389 */;

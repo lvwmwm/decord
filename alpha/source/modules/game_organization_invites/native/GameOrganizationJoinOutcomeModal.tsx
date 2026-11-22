@@ -1,10 +1,10 @@
-// Module ID: 12245
-// Function ID: 12246
+// Module ID: 12252
+// Function ID: 12253
 // Name: GameOrganizationJoinOutcomeModal
-// Dependencies: [19, 17, 11896, 21, 4913, 6429, 12246, 7811, 7813, 5929, 575, 12247, 5504, 12251, 12242, 5511, 7092, 7095, 12043, 2]
+// Dependencies: [19, 17, 11896, 21, 4913, 6429, 12253, 7811, 7813, 5929, 575, 12254, 5504, 12258, 12249, 5511, 7092, 7095, 12043, 2]
 // Exports: default
 
-// Module 12245 (GameOrganizationJoinOutcomeModal)
+// Module 12252 (GameOrganizationJoinOutcomeModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5504 */;
@@ -15,8 +15,8 @@ import NavigatorHeader from "NavigatorHeader" /* 7095 */;
 import ModalScreen2 from "ModalScreen" /* 7811 */;
 import ModalContent2 from "ModalContent" /* 7813 */;
 import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11896 */;
-import useGameOrganizationJoinOutcomeDefault from "useGameOrganizationJoinOutcome" /* 12246 */;
-import HighFiveSpotIllustration from "HighFiveSpotIllustration" /* 12247 */;
+import useGameOrganizationJoinOutcomeDefault from "useGameOrganizationJoinOutcome" /* 12253 */;
+import HighFiveSpotIllustration from "HighFiveSpotIllustration" /* 12254 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4913 */;
@@ -27,7 +27,7 @@ let importDefault;
 let hasOwnProperty;
 let metroRequire;
 let tmp2;
-const GameOrganizationJoinOutcomeChecklistDefault = tmp2(12251);
+const GameOrganizationJoinOutcomeChecklistDefault = tmp2(12258);
 function closeGameOrganizationJoinOutcomeModal() {
   const obj = ModalActionCreatorsDefault;
   obj.popWithKey(closure_4);
@@ -70,7 +70,7 @@ function GameOrganizationJoinOutcomeScreen(arg0) {
   items[1] = metroRequire(Stack2, obj3);
   items2 = [hasOwnProperty(ModalContent, obj7), ];
   const obj8 = { children: hasOwnProperty(components_Button_Button.Button, obj9) };
-  const ModalFooter = tmp6(12242).ModalFooter;
+  const ModalFooter = tmp6(12249).ModalFooter;
   obj9 = { text: cta.text, size: "lg", onPress: cta.action, disabled: isWaitingForGuild, loading: isWaitingForGuild };
   items2[1] = hasOwnProperty(ModalFooter, obj8);
   return metroRequire(ModalScreen, obj6);

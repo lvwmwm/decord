@@ -1,10 +1,10 @@
-// Module ID: 12994
-// Function ID: 12995
+// Module ID: 12992
+// Function ID: 12993
 // Name: AppLauncherApplicationViewScreen
-// Dependencies: [19, 17, 10436, 1499, 5937, 21, 4913, 12106, 12995, 10674, 1626, 12996, 6864, 1653, 12997, 2]
+// Dependencies: [19, 17, 10436, 1499, 5937, 21, 4913, 12106, 12993, 10674, 1626, 12994, 6864, 1653, 12995, 2]
 // Exports: default
 
-// Module 12994 (AppLauncherApplicationViewScreen)
+// Module 12992 (AppLauncherApplicationViewScreen)
 import Fragment from "Fragment" /* 21 */;
 import KeyboardTypes from "KeyboardTypes" /* 1626 */;
 import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5937 */;

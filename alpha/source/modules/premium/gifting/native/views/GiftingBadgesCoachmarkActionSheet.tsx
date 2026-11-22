@@ -1,7 +1,7 @@
 // Module ID: 19071
 // Function ID: 19072
 // Name: GiftingBadgesCoachmarkActionSheet
-// Dependencies: [19, 17, 8137, 4759, 21, 4913, 575, 9482, 5127, 5090, 5141, 9484, 5504, 1112, 2920, 5511, 9465, 7539, 5600, 19072, 12468, 504, 8070, 2]
+// Dependencies: [19, 17, 8137, 4759, 21, 4913, 575, 9482, 5127, 5090, 5141, 9484, 5504, 1112, 2920, 5511, 9465, 7539, 5600, 19072, 12475, 504, 8070, 2]
 // Exports: default
 
 // Module 19071 (GiftingBadgesCoachmarkActionSheet)
@@ -165,7 +165,7 @@ function NewBadgeCoachmark(markAsDismissed) {
   Button = markAsDismissed(5511).Button;
   intl3 = markAsDismissed(1112).intl;
   obj11 = { size: "sm", color: nativeDefault.colors.CONTROL_PRIMARY_TEXT_DEFAULT };
-  GiftIcon = markAsDismissed(12468).GiftIcon;
+  GiftIcon = markAsDismissed(12475).GiftIcon;
   items2[2] = closure_7(View, obj9);
   return closure_7(BottomSheet, obj);
 }

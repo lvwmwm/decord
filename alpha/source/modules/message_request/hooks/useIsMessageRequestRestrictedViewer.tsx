@@ -1,10 +1,10 @@
-// Module ID: 13328
-// Function ID: 13329
+// Module ID: 13326
+// Function ID: 13327
 // Name: useIsMessageRequestRestrictedViewer
 // Dependencies: [6411, 5575, 5583, 2]
 // Exports: useIsMessageRequestRestrictedViewer
 
-// Module 13328 (useIsMessageRequestRestrictedViewer)
+// Module 13326 (useIsMessageRequestRestrictedViewer)
 import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5575 */;
 import SettingsDefaultFeature from "SettingsDefaultFeature" /* 5583 */;
 import AgeVerificationUtils from "AgeVerificationUtils" /* 6411 */;

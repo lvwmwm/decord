@@ -1,7 +1,7 @@
 // Module ID: 17476
 // Function ID: 17477
 // Name: RegisterPasswordInput
-// Dependencies: [109, 32, 19, 7370, 17448, 21, 4913, 575, 1653, 17473, 1112, 5504, 15285, 7385, 504, 5579, 7221, 5080, 2]
+// Dependencies: [109, 32, 19, 7370, 17448, 21, 4913, 575, 1653, 17473, 1112, 5504, 15283, 7385, 504, 5579, 7221, 5080, 2]
 // Exports: RegisterPasswordInput
 
 // Module 17476 (RegisterPasswordInput)
@@ -123,7 +123,7 @@ export function RegisterPasswordInput(ref) {
   const ref1 = react.useRef(null);
   const obj2 = { inputRef: ref1, enabled: autoFocus };
   const tmp4 = isPasswordFocused;
-  const tmp6 = isPasswordFocused(15285);
+  const tmp6 = isPasswordFocused(15283);
   if (autoFocus == null) {
     autoFocus = false;
   }

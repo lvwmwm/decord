@@ -1,9 +1,9 @@
-// Module ID: 12917
-// Function ID: 12918
+// Module ID: 12915
+// Function ID: 12916
 // Name: AppLauncherOnboardingLayer
-// Dependencies: [19, 17, 10382, 21, 4913, 575, 12918, 2]
+// Dependencies: [19, 17, 10382, 21, 4913, 575, 12916, 2]
 
-// Module 12917 (AppLauncherOnboardingLayer)
+// Module 12915 (AppLauncherOnboardingLayer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

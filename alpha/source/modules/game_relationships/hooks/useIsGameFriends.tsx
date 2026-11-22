@@ -1,10 +1,10 @@
-// Module ID: 14591
-// Function ID: 14592
+// Module ID: 14589
+// Function ID: 14590
 // Name: useIsGameFriends
 // Dependencies: [32, 8360, 1071, 504, 6544, 2]
 // Exports: useIsGameFriends
 
-// Module 14591 (useIsGameFriends)
+// Module 14589 (useIsGameFriends)
 import Constants from "Constants" /* 1071 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import GameRelationshipStore from "GameRelationshipStore" /* 8360 */;

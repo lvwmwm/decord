@@ -1,7 +1,7 @@
 // Module ID: 17828
 // Function ID: 17829
 // Name: WaterwheelsDiscoverHeader
-// Dependencies: [19, 17, 10044, 17821, 21, 575, 4913, 17829, 504, 10215, 17014, 5504, 1112, 2643, 5511, 7040, 17843, 2]
+// Dependencies: [19, 17, 10044, 17821, 21, 575, 4913, 17829, 504, 10215, 17012, 5504, 1112, 2643, 5511, 7040, 17843, 2]
 // Exports: default
 
 // Module 17828 (WaterwheelsDiscoverHeader)

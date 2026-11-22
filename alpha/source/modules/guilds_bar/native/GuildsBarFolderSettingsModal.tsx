@@ -1,7 +1,7 @@
 // Module ID: 17867
 // Function ID: 17868
 // Name: GuildsBarFolderSettingsModal
-// Dependencies: [32, 19, 17, 6550, 17868, 21, 4913, 5826, 5488, 5127, 17869, 2119, 575, 5929, 7221, 1112, 7348, 7045, 1089, 15842, 7095, 504, 17866, 7092, 2]
+// Dependencies: [32, 19, 17, 6550, 17868, 21, 4913, 5826, 5488, 5127, 17869, 2119, 575, 5929, 7221, 1112, 7348, 7045, 1089, 15840, 7095, 504, 17866, 7092, 2]
 // Exports: default
 
 // Module 17867 (GuildsBarFolderSettingsModal)
@@ -85,7 +85,7 @@ function GuildFolderSettingsScene(color) {
     int2hexResult = intl4.string(tmp8(1112).t.bBvAEH);
   }
   let tmp11 = color;
-  tmp2Result = tmp2(15842);
+  tmp2Result = tmp2(15840);
   if (color == null) {
     tmp11 = closure_8;
   }

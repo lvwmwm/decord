@@ -1,7 +1,7 @@
 // Module ID: 17325
 // Function ID: 17326
 // Name: useCollectiblesShopHeader
-// Dependencies: [19, 17, 1386, 1073, 1071, 6558, 8069, 21, 4913, 575, 13009, 5504, 1112, 504, 9428, 9950, 16298, 8074, 7539, 7499, 1255, 5127, 9955, 6561, 6429, 8067, 9433, 7591, 8976, 8658, 17326, 1500, 2]
+// Dependencies: [19, 17, 1386, 1073, 1071, 6558, 8069, 21, 4913, 575, 13007, 5504, 1112, 504, 9428, 9950, 16296, 8074, 7539, 7499, 1255, 5127, 9955, 6561, 6429, 8067, 9433, 7591, 8976, 8658, 17326, 1500, 2]
 // Exports: default
 
 // Module 17325 (useCollectiblesShopHeader)
@@ -16,7 +16,7 @@ import QuestConstants from "QuestConstants" /* 6558 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7539 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8067 */;
 import Constants2 from "Constants" /* 8069 */;
-import ShopIcon from "ShopIcon" /* 13009 */;
+import ShopIcon from "ShopIcon" /* 13007 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1386 */;
 import Constants from "Constants" /* 1071 */;

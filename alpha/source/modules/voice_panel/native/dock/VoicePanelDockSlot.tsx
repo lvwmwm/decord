@@ -1,7 +1,7 @@
 // Module ID: 17981
 // Function ID: 17982
 // Name: VoicePanelDockSlot
-// Dependencies: [19, 17, 16473, 13312, 21, 11775, 1653, 10598, 11749, 17982, 17984, 18039, 5514, 12829, 11954, 5094, 11770, 504, 2]
+// Dependencies: [19, 17, 16471, 13310, 21, 11775, 1653, 10598, 11749, 17982, 17984, 18039, 5514, 12827, 11954, 5094, 11770, 504, 2]
 
 // Module 17981 (VoicePanelDockSlot)
 import react_native from "react-native" /* 17 */;
@@ -10,11 +10,11 @@ import useBaseAppContainerDimensionsDefault from "useBaseAppContainerDimensions"
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11749 */;
 import MainTabsNavigatorPanelContextDefault from "MainTabsNavigatorPanelContext" /* 11770 */;
 import VoicePanelSheetMorph from "VoicePanelSheetMorph" /* 11775 */;
-import VoicePanelDockSlotStore from "VoicePanelDockSlotStore" /* 13312 */;
+import VoicePanelDockSlotStore from "VoicePanelDockSlotStore" /* 13310 */;
 import VoicePanelDockGlow from "VoicePanelDockGlow" /* 17982 */;
 import useVoicePanelDockMicLiveDefault from "useVoicePanelDockMicLive" /* 18039 */;
 import react from "react" /* 19 */;
-import QuestDockStore from "QuestDockStore" /* 16473 */;
+import QuestDockStore from "QuestDockStore" /* 16471 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -388,7 +388,7 @@ let closure_19 = { code: "(function VoicePanelDockSlotTsx8(){let[withSpring,isQu
 let closure_20 = { code: "(function VoicePanelDockSlotTsx9(){let[dockHeight,sheetExitProgress,questBarHideProgress,dockEntryProgress,isQuestBarExpanded,isDockInLayout,dockTouched]=this.__closure;const height=dockHeight.get();const isLeaving=sheetExitProgress.get()>0;return{height:height,opacity:1-questBarHideProgress.get(),transform:[{translateY:(1-dockEntryProgress.get()+sheetExitProgress.get())*height}],pointerEvents:!isLeaving&&!isQuestBarExpanded&&(isDockInLayout.get()||dockTouched.get())?'box-none':'none'};})" };
 const memoResult = react.memo(function VoicePanelDockSlot(placement) {
   placement = placement.placement;
-  const obj = placement(12829);
+  const obj = placement(12827);
   const isMobileRTCV2Enabled = obj.useIsMobileRTCV2Enabled("VoicePanelDockSlot");
   const tmp2 = useVoicePanelDockState();
   const obj2 = placement(11954);

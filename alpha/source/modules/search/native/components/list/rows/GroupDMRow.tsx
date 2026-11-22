@@ -1,7 +1,7 @@
 // Module ID: 18744
 // Function ID: 18745
 // Name: GroupDMRow
-// Dependencies: [19, 21, 5529, 10124, 1186, 13843, 5504, 18728, 2]
+// Dependencies: [19, 21, 5529, 10124, 1186, 13841, 5504, 18728, 2]
 // Exports: default
 
 // Module 18744 (GroupDMRow)
@@ -9,7 +9,7 @@ import Fragment from "Fragment" /* 21 */;
 import native from "native" /* 1186 */;
 import useChannelNameDefault from "useChannelName" /* 5529 */;
 import GroupDMAvatarDefault from "GroupDMAvatar" /* 10124 */;
-import useRecipientsLabel from "useRecipientsLabel" /* 13843 */;
+import useRecipientsLabel from "useRecipientsLabel" /* 13841 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

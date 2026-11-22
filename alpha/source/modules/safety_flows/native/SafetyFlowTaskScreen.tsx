@@ -1,15 +1,15 @@
-// Module ID: 20148
-// Function ID: 20149
+// Module ID: 20145
+// Function ID: 20146
 // Name: SafetyFlowTaskScreen
-// Dependencies: [19, 21, 4913, 7811, 7813, 5929, 5504, 12242, 20146, 10121, 2]
+// Dependencies: [19, 21, 4913, 7811, 7813, 5929, 5504, 12249, 20143, 10121, 2]
 // Exports: default
 
-// Module 20148 (SafetyFlowTaskScreen)
+// Module 20145 (SafetyFlowTaskScreen)
 import Text_Text from "Text/Text" /* 5504 */;
 import Stack_Stack from "Stack/Stack" /* 5929 */;
 import ModalScreen2 from "ModalScreen" /* 7811 */;
 import ModalContent2 from "ModalContent" /* 7813 */;
-import LogOutDisclaimerDefault from "LogOutDisclaimer" /* 20146 */;
+import LogOutDisclaimerDefault from "LogOutDisclaimer" /* 20143 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4913 */;
@@ -65,7 +65,7 @@ export default function SafetyFlowTaskScreen(title) {
   items1 = [React3(Stack, { align: "center", justify: "center", spacing: 8, children: items }), children];
   const children1 = [React3(ModalContent, obj3), ];
   if (undefined === footer) {
-    const ModalFooter = tmp4(12242).ModalFooter;
+    const ModalFooter = tmp4(12249).ModalFooter;
     if (withLogout) {
       withLogout = tmp7(LogOutDisclaimerDefault, {});
     }

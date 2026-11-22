@@ -1,14 +1,14 @@
 // Module ID: 17653
 // Function ID: 17654
 // Name: ChannelListStickyHeader
-// Dependencies: [19, 17, 1071, 21, 1653, 4913, 575, 17624, 4787, 1112, 17654, 15121, 17652, 9753, 7054, 5477, 10011, 5504, 9755, 1186, 7565, 17668, 13153, 17672, 17673, 2]
+// Dependencies: [19, 17, 1071, 21, 1653, 4913, 575, 17624, 4787, 1112, 17654, 15119, 17652, 9753, 7054, 5477, 10011, 5504, 9755, 1186, 7565, 17668, 13151, 17672, 17673, 2]
 // Exports: default
 
 // Module 17653 (ChannelListStickyHeader)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import GuildBadgeV2Default from "GuildBadgeV2" /* 9755 */;
-import openGuildActionSheetDefault from "openGuildActionSheet" /* 15121 */;
+import openGuildActionSheetDefault from "openGuildActionSheet" /* 15119 */;
 import useIsGameCommunityServerPreviewDefault from "useIsGameCommunityServerPreview" /* 17624 */;
 import useStickyServerHeaderSubtitleDefault from "useStickyServerHeaderSubtitle" /* 17652 */;
 import openFavoritesGuildActionSheetDefault from "openFavoritesGuildActionSheet" /* 17654 */;
@@ -208,7 +208,7 @@ export default function ChannelListStickyHeader(guild) {
   let tmp25Result6 = null;
   if (flag) {
     const obj16 = { guild, useButtonComponent: true, useEventsButton: true };
-    tmp25Result6 = tmp25(tmp2(13153), obj16);
+    tmp25Result6 = tmp25(tmp2(13151), obj16);
   }
   items7[1] = tmp25Result6;
   if (tmp25Result7) {

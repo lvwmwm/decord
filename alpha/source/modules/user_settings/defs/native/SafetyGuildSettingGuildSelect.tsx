@@ -1,7 +1,7 @@
 // Module ID: 17362
 // Function ID: 17363
 // Name: SafetyGuildSettingGuildSelect
-// Dependencies: [19, 6550, 15987, 17363, 8712, 5127, 17364, 2119, 17365, 1112, 11937, 2]
+// Dependencies: [19, 6550, 15985, 17363, 8712, 5127, 17364, 2119, 17365, 1112, 11937, 2]
 
 // Module 17362 (SafetyGuildSettingGuildSelect)
 import intl2 from "intl" /* 1112 */;
@@ -11,7 +11,7 @@ import SettingsConstants from "SettingsConstants" /* 8712 */;
 import useDMPermissionsOverrideCount from "useDMPermissionsOverrideCount" /* 17365 */;
 import react from "react" /* 19 */;
 import SortedGuildStore from "SortedGuildStore" /* 6550 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 15987 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 15985 */;
 import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 17363 */;
 import SettingBuilders from "SettingBuilders" /* 11937 */;
 import size from "module_2" /* 2 */;

@@ -1,7 +1,7 @@
 // Module ID: 19000
 // Function ID: 19001
 // Name: useMessageRequestTimestampText
-// Dependencies: [6619, 11, 13490, 504, 2168, 8518, 2]
+// Dependencies: [6619, 11, 13488, 504, 2168, 8518, 2]
 // Exports: useMessageRequestRelativeTimestampText, useMessageRequestTimestampText
 
 // Module 19000 (useMessageRequestTimestampText)

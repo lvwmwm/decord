@@ -1,10 +1,10 @@
-// Module ID: 13266
-// Function ID: 13267
+// Module ID: 13264
+// Function ID: 13265
 // Name: ApplicationCommandDiscovery
-// Dependencies: [32, 19, 17, 5937, 13267, 11261, 1071, 21, 13268, 4913, 575, 5519, 13269, 10682, 2117, 10444, 4922, 1112, 5650, 12, 13270, 5565, 13271, 13272, 1186, 11401, 2]
+// Dependencies: [32, 19, 17, 5937, 13265, 11261, 1071, 21, 13266, 4913, 575, 5519, 13267, 10682, 2117, 10444, 4922, 1112, 5650, 12, 13268, 5565, 13269, 13270, 1186, 11401, 2]
 // Exports: default
 
-// Module 13266 (ApplicationCommandDiscovery)
+// Module 13264 (ApplicationCommandDiscovery)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
@@ -15,10 +15,10 @@ import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5650 */;
 import ApplicationCommandQueryTypes from "ApplicationCommandQueryTypes" /* 10444 */;
 import ApplicationCommandsConstants from "ApplicationCommandsConstants" /* 11261 */;
 import AssetRegistryDefault from "AssetRegistry" /* 11401 */;
-import ApplicationCommandsCategoriesConstants from "ApplicationCommandsCategoriesConstants" /* 13267 */;
-import ApplicationSectionHeader from "ApplicationSectionHeader" /* 13268 */;
-import ApplicationCommandDiscoveryManager from "ApplicationCommandDiscoveryManager" /* 13269 */;
-import ApplicationCommandsCategoriesDefault from "ApplicationCommandsCategories" /* 13270 */;
+import ApplicationCommandsCategoriesConstants from "ApplicationCommandsCategoriesConstants" /* 13265 */;
+import ApplicationSectionHeader from "ApplicationSectionHeader" /* 13266 */;
+import ApplicationCommandDiscoveryManager from "ApplicationCommandDiscoveryManager" /* 13267 */;
+import ApplicationCommandsCategoriesDefault from "ApplicationCommandsCategories" /* 13268 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

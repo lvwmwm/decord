@@ -1,13 +1,13 @@
 // Module ID: 19191
 // Function ID: 19192
 // Name: InviteActivityButton
-// Dependencies: [19, 6921, 6920, 21, 5127, 19192, 2119, 504, 12188, 5511, 11055, 1112, 2]
+// Dependencies: [19, 6921, 6920, 21, 5127, 19192, 2119, 504, 12195, 5511, 11055, 1112, 2]
 
 // Module 19191 (InviteActivityButton)
 import Fragment from "Fragment" /* 21 */;
 import asyncRequire from "asyncRequire" /* 2119 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
-import getCurrentUserPresenceActivityDefault from "getCurrentUserPresenceActivity" /* 12188 */;
+import getCurrentUserPresenceActivityDefault from "getCurrentUserPresenceActivity" /* 12195 */;
 import react from "react" /* 19 */;
 import LocalActivityStore from "LocalActivityStore" /* 6921 */;
 import SelfPresenceStore from "SelfPresenceStore" /* 6920 */;

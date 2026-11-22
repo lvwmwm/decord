@@ -57,7 +57,7 @@ function useVoicePanelDockPIPState(streamKey, arg1, tmp4Result, isWatching, stat
   [tmp3, c3] = tmp2;
   const items = [layoutManager, streamKey];
   const effect = react.useEffect(() => {
-    const f139351 = (safeAreaState) => {
+    const f139367 = (safeAreaState) => {
       let targetDimensions = closure_1_2.getTargetDimensions(closure_1_0);
       if (targetDimensions === closure_1_2.getDefaultTargetDimensions()) {
         targetDimensions = closure_2_16;
@@ -68,9 +68,9 @@ function useVoicePanelDockPIPState(streamKey, arg1, tmp4Result, isWatching, stat
       }
       return targetDimensions;
     };
-    _undefined(f139351);
+    _undefined(f139367);
     return layoutManager.subscribeFromItem(function updateTargetDimensions() {
-      _undefined(f139351);
+      _undefined(f139367);
     });
   }, items);
   let tmp6 = tmp4Result.mode !== containerHeight.IN_PANEL;

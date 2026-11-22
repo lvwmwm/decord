@@ -1,16 +1,16 @@
-// Module ID: 12776
-// Function ID: 12777
+// Module ID: 12774
+// Function ID: 12775
 // Name: SidekickMessageInput
-// Dependencies: [5, 17, 5969, 21, 575, 4913, 1494, 5093, 12777, 12500, 5594, 1112, 1186, 12490, 9465, 7539, 12468, 5611, 2]
+// Dependencies: [5, 17, 5969, 21, 575, 4913, 1494, 5093, 12775, 12500, 5594, 1112, 1186, 12126, 9465, 7539, 12475, 5611, 2]
 // Exports: default, useSidekickMessageInputKeyboardOffset
 
-// Module 12776 (SidekickMessageInput)
+// Module 12774 (SidekickMessageInput)
 import nativeDefault from "native" /* 575 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
 import useWindowSizeClassifier from "useWindowSizeClassifier" /* 5093 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7539 */;
 import utils_openGiftModal from "utils/openGiftModal" /* 9465 */;
-import Tracking from "Tracking" /* 12490 */;
+import Tracking from "Tracking" /* 12126 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_native from "react-native" /* 17 */;
 import CheckpointConstants from "CheckpointConstants" /* 5969 */;
@@ -72,7 +72,7 @@ export default function SidekickMessageInput(user) {
     obj = _asyncToGenerator(async (arg0, value) => {
       let closure_0;
       let obj2;
-      const f140845 = (arg0) => {
+      const f140862 = (arg0) => {
         obj = { isSending: false };
         const merged = Object.assign(arg0);
         return obj;
@@ -120,7 +120,7 @@ export default function SidekickMessageInput(user) {
             }
           } else if (1 === c4) {
             c3 = 0;
-            closure_129_1(f140845);
+            closure_129_1(f140862);
             throw closure_2;
           } else {
             if (2 === c4) {
@@ -134,7 +134,7 @@ export default function SidekickMessageInput(user) {
               throw value;
             } else if (arg0 === 2) {
               c3 = 0;
-              closure_129_1(f140845);
+              closure_129_1(f140862);
               c5 = 3;
               obj = { value, done: true };
               return obj;
@@ -147,7 +147,7 @@ export default function SidekickMessageInput(user) {
               c3 = 1;
             }
             c3 = 0;
-            closure_129_1(f140845);
+            closure_129_1(f140862);
           }
           c5 = 3;
           return { value: "HermesInternal", done: null };
@@ -238,7 +238,7 @@ export default function SidekickMessageInput(user) {
           let items;
           React3.dismiss();
           obj = Tracking;
-          const result = obj.trackCheckpoint2026GiftCtaClicked(user.id);
+          const result = obj.trackCheckpoint2026GiftCTAClicked(user.id);
           const obj2 = { recipientUserId: user.id, analyticsLocations: items };
           const openGiftModal = utils_openGiftModal.openGiftModal;
           items = [, ];

@@ -1,7 +1,7 @@
 // Module ID: 18734
 // Function ID: 18735
 // Name: useOnPressSearchItem
-// Dependencies: [5, 19, 8343, 4762, 13213, 8576, 18735, 8575, 1071, 4769, 13199, 13224, 1379, 5594, 1112, 7255, 5592, 1500, 13307, 18736, 13202, 8631, 8649, 1107, 6439, 8217, 7737, 5646, 6494, 2119, 6419, 14694, 5947, 7285, 7286, 1098, 13220, 2]
+// Dependencies: [5, 19, 8343, 4762, 13211, 8576, 18735, 8575, 1071, 4769, 13197, 13222, 1379, 5594, 1112, 7255, 5592, 1500, 13305, 18736, 13200, 8631, 8649, 1107, 6439, 8217, 7737, 5646, 6494, 2119, 6419, 14692, 5947, 7285, 7286, 1098, 13218, 2]
 // Exports: useOnPressConversationCitation, useOnPressDMItem, useOnPressGroupDMItem, useOnPressGuildTextChannel, useOnPressGuildVoiceChannel, useOnPressMediaItem, useOnPressMessageItem, useOnPressSearchHistoryText, useOnPressSearchLink
 
 // Module 18734 (useOnPressSearchItem)
@@ -12,15 +12,15 @@ import ToastUtils from "ToastUtils" /* 5594 */;
 import MaskedLinkUtils from "MaskedLinkUtils" /* 7255 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7737 */;
 import TrackingConstants from "TrackingConstants" /* 8575 */;
-import SearchPlatformUtils from "SearchPlatformUtils" /* 13199 */;
-import TrackingDefault from "Tracking" /* 13220 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13224 */;
+import SearchPlatformUtils from "SearchPlatformUtils" /* 13197 */;
+import TrackingDefault from "Tracking" /* 13218 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13222 */;
 import SearchNavigatorConstants from "SearchNavigatorConstants" /* 18735 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ConversationPreviewStore from "ConversationPreviewStore" /* 8343 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
-import SearchQueryStore from "SearchQueryStore" /* 13213 */;
+import SearchQueryStore from "SearchQueryStore" /* 13211 */;
 import SearchConstants from "SearchConstants" /* 8576 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;

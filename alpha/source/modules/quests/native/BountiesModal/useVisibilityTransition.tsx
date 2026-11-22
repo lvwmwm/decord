@@ -1,10 +1,10 @@
-// Module ID: 16324
-// Function ID: 16325
+// Module ID: 16322
+// Function ID: 16323
 // Name: useVisibilityTransition
 // Dependencies: [32, 19, 1653, 5123, 1706, 2]
 // Exports: useVisibilityTransition
 
-// Module 16324 (useVisibilityTransition)
+// Module 16322 (useVisibilityTransition)
 import _mod1653 from "module_1653" /* 1653 */;
 import _mod1706 from "module_1706" /* 1706 */;
 import timing_timing from "timing/timing" /* 5123 */;

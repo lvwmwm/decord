@@ -1,7 +1,7 @@
 // Module ID: 19317
 // Function ID: 19318
 // Name: VoicePanelDockPIPOverlay
-// Dependencies: [32, 19, 17, 4914, 1386, 5658, 21, 1653, 4913, 575, 5517, 7324, 11040, 5679, 5817, 19318, 7034, 14504, 1112, 11749, 5123, 1706, 11759, 10598, 504, 1186, 9036, 19200, 7152, 10953, 7035, 16355, 3376, 2]
+// Dependencies: [32, 19, 17, 4914, 1386, 5658, 21, 1653, 4913, 575, 5517, 7324, 11040, 5679, 5817, 19318, 7034, 14502, 1112, 11749, 5123, 1706, 11759, 10598, 504, 1186, 9036, 19200, 7152, 10953, 7035, 16353, 3376, 2]
 
 // Module 19317 (VoicePanelDockPIPOverlay)
 import react_native from "react-native" /* 17 */;
@@ -79,7 +79,7 @@ function StreamVolumeSlider(stacked) {
     accessibilityLabel: intl.string(handleVolumeChange(1112).t.pEAl4b)
   };
   const tmp11 = NativeViewDefault;
-  Slider = tmp5(14504).Slider;
+  Slider = tmp5(14502).Slider;
   tmp5Result = handleVolumeChange(5817);
   intl = tmp5(1112).intl;
   const tmp8Result = closure_9(tmp11, obj3);
@@ -342,7 +342,7 @@ const memoResult = react.memo(function VoicePanelDockPIPOverlay(ownerId) {
       }
       items13 = [tmp29Result5, ];
       const obj13 = { children: items11 };
-      const obj14 = { icon: tmp2(16355), onPress: onOpenCall, accessibilityLabel: intl3.string(tmp2(3376).MPtef8) };
+      const obj14 = { icon: tmp2(16353), onPress: onOpenCall, accessibilityLabel: intl3.string(tmp2(3376).MPtef8) };
       const tmp2Result12 = tmp2(19200);
       intl3 = tmp12(1112).intl;
       items13[1] = closure_9(tmp2Result12, obj14);

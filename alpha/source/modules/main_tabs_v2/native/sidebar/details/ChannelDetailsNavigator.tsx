@@ -1,7 +1,7 @@
 // Module ID: 18921
 // Function ID: 18922
 // Name: ChannelDetailsNavigator
-// Dependencies: [19, 17, 4762, 10531, 1071, 18735, 21, 8638, 563, 6893, 11646, 8561, 1112, 13729, 1255, 11251, 18922, 7092, 7101, 5090, 18981, 1378, 18982, 18983, 8649, 8650, 14351, 18984, 18985, 18816, 18888, 2]
+// Dependencies: [19, 17, 4762, 10531, 1071, 18735, 21, 8638, 563, 6893, 11646, 8561, 1112, 13727, 1255, 11251, 18922, 7092, 7101, 5090, 18981, 1378, 18982, 18983, 8649, 8650, 14349, 18984, 18985, 18816, 18888, 2]
 
 // Module 18921 (ChannelDetailsNavigator)
 import react_native from "react-native" /* 17 */;
@@ -11,7 +11,7 @@ import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import HeaderShared from "HeaderShared" /* 8561 */;
 import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10531 */;
 import navigateToThreadCreation from "navigateToThreadCreation" /* 11646 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13729 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13727 */;
 import SearchNavigatorConstants from "SearchNavigatorConstants" /* 18735 */;
 import ChannelSettingsModal from "ChannelSettingsModal" /* 18922 */;
 import react from "react" /* 19 */;

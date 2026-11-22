@@ -1,10 +1,10 @@
-// Module ID: 14634
-// Function ID: 14635
+// Module ID: 14632
+// Function ID: 14633
 // Name: UserProfileRemediatedNotice
 // Dependencies: [19, 17, 4855, 1071, 21, 4913, 575, 8197, 563, 5504, 1112, 7740, 2]
 // Exports: default
 
-// Module 14634 (UserProfileRemediatedNotice)
+// Module 14632 (UserProfileRemediatedNotice)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;

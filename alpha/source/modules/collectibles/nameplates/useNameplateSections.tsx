@@ -1,10 +1,10 @@
-// Module ID: 15902
-// Function ID: 15903
+// Module ID: 15900
+// Function ID: 15901
 // Name: useNameplateSections
-// Dependencies: [32, 19, 8075, 8090, 563, 8087, 1112, 14256, 2]
+// Dependencies: [32, 19, 8075, 8090, 563, 8087, 1112, 14254, 2]
 // Exports: default
 
-// Module 15902 (useNameplateSections)
+// Module 15900 (useNameplateSections)
 import react from "react" /* 19 */;
 import intl4 from "intl" /* 1112 */;
 import CollectiblesUtils from "CollectiblesUtils" /* 8087 */;
@@ -88,7 +88,7 @@ export default function useNameplateSections() {
     items1[2] = obj4;
     return items1.filter((items) => items.items.length > 0);
   }, items2);
-  return first(14256)(tmp5, obj.PREVIEW);
+  return first(14254)(tmp5, obj.PREVIEW);
 };
 export { Section };
 export const NONE_ITEM = obj2;

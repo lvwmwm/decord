@@ -196,7 +196,7 @@ function PreviewItem(overState) {
     let items;
     if ("convert-after" === overState) {
       if (null != overNode) {
-        const element = { type: GuildsNodeType.FOLDER, id: -1, parentId: "Path", name: "Array", color: "analyticsLocations", expanded: null, children: items };
+        const element = { type: GuildsNodeType.FOLDER, id: -1, parentId: "Path", name: "Array", color: "add", expanded: null, children: items };
         items = [tmp2];
         return element;
       }

@@ -1,7 +1,7 @@
 // Module ID: 19057
 // Function ID: 19058
 // Name: AppIconsCoachmark
-// Dependencies: [19, 17, 1386, 4759, 21, 4913, 575, 504, 2173, 5127, 5141, 5600, 19058, 1186, 10947, 5504, 1112, 5511, 14049, 2]
+// Dependencies: [19, 17, 1386, 4759, 21, 4913, 575, 504, 2173, 5127, 5141, 5600, 19058, 1186, 10947, 5504, 1112, 5511, 14047, 2]
 // Exports: default
 
 // Module 19057 (AppIconsCoachmark)
@@ -12,7 +12,7 @@ import DismissibleContentConstants from "DismissibleContentConstants" /* 4759 */
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
 import FastImageDefault from "FastImage" /* 5600 */;
 import AssetRegistryDefault from "AssetRegistry" /* 10947 */;
-import AppIconUtils from "AppIconUtils" /* 14049 */;
+import AppIconUtils from "AppIconUtils" /* 14047 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 19058 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1386 */;

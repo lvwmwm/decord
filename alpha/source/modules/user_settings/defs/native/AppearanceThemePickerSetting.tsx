@@ -1,14 +1,14 @@
-// Module ID: 16672
-// Function ID: 16673
+// Module ID: 16670
+// Function ID: 16671
 // Name: AppearanceThemePickerSetting
-// Dependencies: [1191, 8712, 1071, 504, 11937, 1112, 16666, 16673, 2]
+// Dependencies: [1191, 8712, 1071, 504, 11937, 1112, 16664, 16671, 2]
 
-// Module 16672 (AppearanceThemePickerSetting)
+// Module 16670 (AppearanceThemePickerSetting)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
 import SettingsConstants from "SettingsConstants" /* 8712 */;
-import AppearanceSetting from "AppearanceSetting" /* 16666 */;
+import AppearanceSetting from "AppearanceSetting" /* 16664 */;
 import ThemeStore from "ThemeStore" /* 1191 */;
 import SettingBuilders from "SettingBuilders" /* 11937 */;
 import size from "module_2" /* 2 */;

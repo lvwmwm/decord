@@ -1,7 +1,7 @@
 // Module ID: 18673
 // Function ID: 18674
 // Name: ConjureDebugLogsTab
-// Dependencies: [32, 19, 17, 6973, 21, 4913, 575, 18674, 12799, 7565, 5504, 18667, 1112, 4190, 7030, 7047, 1628, 504, 7586, 18675, 11278, 7427, 18677, 18678, 7490, 2]
+// Dependencies: [32, 19, 17, 6973, 21, 4913, 575, 18674, 12797, 7565, 5504, 18667, 1112, 4190, 7030, 7047, 1628, 504, 7586, 18675, 11278, 7427, 18677, 18678, 7490, 2]
 // Exports: default
 
 // Module 18673 (ConjureDebugLogsTab)
@@ -68,7 +68,7 @@ let closure_11 = react.memo(function LogRow(entry) {
     str = "text-feedback-critical";
   }
   if (expanded) {
-    ChevronSmallRightIcon = tmp3(12799).ChevronSmallDownIcon;
+    ChevronSmallRightIcon = tmp3(12797).ChevronSmallDownIcon;
     tmp6 = tmp3;
   } else {
     ChevronSmallRightIcon = tmp3(7565).ChevronSmallRightIcon;

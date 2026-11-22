@@ -1,7 +1,7 @@
 // Module ID: 19270
 // Function ID: 19271
 // Name: VoicePanelCard
-// Dependencies: [32, 19, 17, 5961, 6400, 5654, 6535, 14506, 11750, 11748, 19165, 11753, 1071, 5563, 11751, 21, 1653, 5504, 5468, 1186, 4913, 575, 504, 6456, 6401, 7324, 1112, 5511, 11749, 1706, 10720, 5679, 14497, 10722, 10719, 19271, 10729, 19272, 19161, 14478, 5123, 5514, 9036, 19273, 5600, 5477, 19275, 10093, 10656, 4974, 7520, 11759, 19250, 19164, 19276, 19277, 8067, 5173, 5767, 19278, 11752, 19279, 19280, 19281, 19282, 19283, 19284, 19294, 2]
+// Dependencies: [32, 19, 17, 5961, 6400, 5654, 6535, 14504, 11750, 11748, 19165, 11753, 1071, 5563, 11751, 21, 1653, 5504, 5468, 1186, 4913, 575, 504, 6456, 6401, 7324, 1112, 5511, 11749, 1706, 10720, 5679, 14495, 10722, 10719, 19271, 10729, 19272, 19161, 14476, 5123, 5514, 9036, 19273, 5600, 5477, 19275, 10093, 10656, 4974, 7520, 11759, 19250, 19164, 19276, 19277, 8067, 5173, 5767, 19278, 11752, 19279, 19280, 19281, 19282, 19283, 19284, 19294, 2]
 
 // Module 19270 (VoicePanelCard)
 import get_initialized from "get initialized" /* 504 */;
@@ -33,7 +33,7 @@ import SoundboardStore from "SoundboardStore" /* 5961 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6400 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5654 */;
 import SpeakingStore from "SpeakingStore" /* 6535 */;
-import StreamVolumeMovedStore from "StreamVolumeMovedStore" /* 14506 */;
+import StreamVolumeMovedStore from "StreamVolumeMovedStore" /* 14504 */;
 import VoicePanelConstants from "VoicePanelConstants" /* 11750 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;
@@ -1716,7 +1716,7 @@ let closure_48 = { code: "(function VoicePanelCardTsx10(){let[focused]=this.__cl
 let closure_49 = { code: "(function VoicePanelCardTsx11(focusedId,previous){let[scheduleOnRN,handleFocusedParticipantChange]=this.__closure;if(focusedId===previous)return;scheduleOnRN(handleFocusedParticipantChange,focusedId);})" };
 let closure_50 = { code: "(function VoicePanelCardTsx12(){let[mode,focused,sharedTransitionState]=this.__closure;return{mode:mode.get(),focused:focused.get(),transitionState:sharedTransitionState.get()};})" };
 let closure_51 = { code: "(function VoicePanelCardTsx13(props,previous){let[cheapWorkletShallowEqual,VoicePanelModes,TransitionStates,sharedVisible,isScrollVisible,scheduleOnRN,cleanUp,id]=this.__closure;if(cheapWorkletShallowEqual(props,previous!==null&&previous!==void 0?previous:undefined))return;const{mode:mode,focused:focused,transitionState:transitionState}=props;const isPIPMode=mode===VoicePanelModes.PIP;const manuallyFocusedId=focused===null||focused===void 0?void 0:focused.id;if(previous==null&&transitionState!==TransitionStates.YEETED){sharedVisible.set(1);}else if(transitionState===TransitionStates.YEETED){if(sharedVisible.get()===1&&isScrollVisible.get()){sharedVisible.set(0);}else{scheduleOnRN(cleanUp);}}else if((previous===null||previous===void 0?void 0:previous.transitionState)===TransitionStates.YEETED){sharedVisible.set(1);}else if(!isPIPMode){if(manuallyFocusedId==null){sharedVisible.set(1);}else{if(manuallyFocusedId!==id){sharedVisible.set(0);}else{sharedVisible.set(1);}}}})" };
-let closure_52 = { isSelf: false, hasVideo: false, user: { id: "r" } };
+let closure_52 = { isSelf: false, hasVideo: false, user: { id: "Array" } };
 let items = [{ code: "(function layoutTransitionFunction_VoicePanelCardTsx14(values,physics,disableAnimation=false){let[withSpring]=this.__closure;const shouldAnimate=!disableAnimation?'respect-motion-settings':'animate-never';return{animations:{originX:withSpring(values.targetOriginX,physics,shouldAnimate),originY:withSpring(values.targetOriginY,physics,shouldAnimate),width:withSpring(values.targetWidth,physics,shouldAnimate),height:withSpring(values.targetHeight,physics,shouldAnimate)},initialValues:{originX:values.currentOriginX,originY:values.currentOriginY,width:values.currentWidth,height:values.currentHeight}};})" }, spring_spring.withSpring];
 let c0;
 [tmp15, tmp16] = items;

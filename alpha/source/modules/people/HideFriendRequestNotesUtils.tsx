@@ -1,10 +1,10 @@
-// Module ID: 14632
-// Function ID: 14633
+// Module ID: 14630
+// Function ID: 14631
 // Name: HideFriendRequestNotesUtils
 // Dependencies: [4855, 4738, 10192, 504, 2]
 // Exports: useFriendRequestNote, useHideFriendRequestNotes
 
-// Module 14632 (HideFriendRequestNotesUtils)
+// Module 14630 (HideFriendRequestNotesUtils)
 import UserSettings from "UserSettings" /* 4738 */;
 import useUserIsTeen from "useUserIsTeen" /* 10192 */;
 import RelationshipStore from "RelationshipStore" /* 4855 */;

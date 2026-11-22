@@ -1,14 +1,14 @@
 // Module ID: 17745
 // Function ID: 17746
 // Name: ChannelInfo
-// Dependencies: [19, 8325, 4784, 4845, 6619, 5561, 1071, 21, 4913, 504, 12929, 8617, 17746, 17747, 5949, 1186, 17749, 17750, 17638, 6533, 13150, 17639, 17751, 14464, 2]
+// Dependencies: [19, 8325, 4784, 4845, 6619, 5561, 1071, 21, 4913, 504, 12927, 8617, 17746, 17747, 5949, 1186, 17749, 17750, 17638, 6533, 13148, 17639, 17751, 14462, 2]
 // Exports: default
 
 // Module 17745 (ChannelInfo)
 import Fragment from "Fragment" /* 21 */;
 import StageMediaHooks from "StageMediaHooks" /* 6533 */;
-import useEmbeddedAppsForChannelDefault from "useEmbeddedAppsForChannel" /* 12929 */;
-import useShowConnectedUserLimitDefault from "useShowConnectedUserLimit" /* 13150 */;
+import useEmbeddedAppsForChannelDefault from "useEmbeddedAppsForChannel" /* 12927 */;
+import useShowConnectedUserLimitDefault from "useShowConnectedUserLimit" /* 13148 */;
 import showChannelBadgeDefault from "showChannelBadge" /* 17746 */;
 import ChannelBadgeDefault from "ChannelBadge" /* 17747 */;
 import useVoiceChannelStartTime from "useVoiceChannelStartTime" /* 17751 */;
@@ -26,7 +26,7 @@ let Fonts;
 let c9;
 let metroImportAll;
 let tmp2;
-const Badges = tmp2(14464);
+const Badges = tmp2(14462);
 function LimitAndDurationInfo(channel) {
   let hasMedia;
   let hasVideo;

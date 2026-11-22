@@ -1,9 +1,9 @@
-// Module ID: 19881
-// Function ID: 19882
+// Module ID: 19878
+// Function ID: 19879
 // Name: GuildSettingsModalMembersWrapper
 // Dependencies: [19, 21, 6884, 18215, 18217, 2]
 
-// Module 19881 (GuildSettingsModalMembersWrapper)
+// Module 19878 (GuildSettingsModalMembersWrapper)
 import Fragment from "Fragment" /* 21 */;
 import canReviewGuildMemberApplications from "canReviewGuildMemberApplications" /* 6884 */;
 import react from "react" /* 19 */;

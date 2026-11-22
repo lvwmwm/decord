@@ -1,10 +1,10 @@
-// Module ID: 13790
-// Function ID: 13791
+// Module ID: 13788
+// Function ID: 13789
 // Name: ConjureProjectGroupList
-// Dependencies: [19, 17, 4784, 6980, 6621, 21, 4913, 575, 2018, 5127, 6838, 13791, 12290, 7020, 5504, 13772, 504, 13792, 5979, 1112, 4190, 7045, 7322, 12354, 13789, 7348, 13793, 7565, 12799, 7600, 13782, 13795, 5511, 6933, 2]
+// Dependencies: [19, 17, 4784, 6980, 6621, 21, 4913, 575, 2018, 5127, 6838, 13789, 12297, 7020, 5504, 13770, 504, 13790, 5979, 1112, 4190, 7045, 7322, 12361, 13787, 7348, 13791, 7565, 12797, 7600, 13780, 13793, 5511, 6933, 2]
 // Exports: default
 
-// Module 13790 (ConjureProjectGroupList)
+// Module 13788 (ConjureProjectGroupList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 2018 */;
@@ -16,11 +16,11 @@ import conjureServerProject from "conjureServerProject" /* 6838 */;
 import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 7020 */;
 import GuildIcon from "GuildIcon" /* 7322 */;
 import TableRowGroup2 from "TableRowGroup" /* 7348 */;
-import openConjureHomeScreenDefault from "openConjureHomeScreen" /* 12290 */;
-import useConjureProjectGroupsDefault from "useConjureProjectGroups" /* 13782 */;
-import ConjureProjectIconDefault from "ConjureProjectIcon" /* 13789 */;
-import openConjureProject from "openConjureProject" /* 13791 */;
-import useConjureProjectGroupState from "useConjureProjectGroupState" /* 13793 */;
+import openConjureHomeScreenDefault from "openConjureHomeScreen" /* 12297 */;
+import useConjureProjectGroupsDefault from "useConjureProjectGroups" /* 13780 */;
+import ConjureProjectIconDefault from "ConjureProjectIcon" /* 13787 */;
+import openConjureProject from "openConjureProject" /* 13789 */;
+import useConjureProjectGroupState from "useConjureProjectGroupState" /* 13791 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4784 */;
 import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 6980 */;
@@ -115,7 +115,7 @@ function ProjectGroup(arg0) {
   if (collapsed) {
     ChevronSmallDownIcon = tmp2(7565).ChevronSmallRightIcon;
   } else {
-    ChevronSmallDownIcon = tmp2(12799).ChevronSmallDownIcon;
+    ChevronSmallDownIcon = tmp2(12797).ChevronSmallDownIcon;
   }
   let tmp8 = null;
   const tmp7 = authStore;
@@ -245,7 +245,7 @@ let closure_15 = react.memo(function ProjectRow(project) {
     hideServer = false;
   }
   const tmp = closure_11();
-  let obj = project(13772);
+  let obj = project(13770);
   const conjureHomeProjectState = obj.useConjureHomeProjectState(project.id);
   let obj2 = project(504);
   const items = [ConjurePublishStatusStore];
@@ -261,11 +261,11 @@ let closure_15 = react.memo(function ProjectRow(project) {
     }
     return publishState;
   }, items1);
-  let obj3 = project(13772);
+  let obj3 = project(13770);
   let result = obj3.conjureHomeProjectShowsDraft(conjureHomeProjectState, stateFromStores);
-  let obj4 = project(13772);
+  let obj4 = project(13770);
   let result1 = obj4.conjureProjectLastActivityTime(project);
-  const obj5 = project(13792);
+  const obj5 = project(13790);
   const conjureProjectShareTargetDetails = obj5.useConjureProjectShareTargetDetails(project);
   if (!hideServer) {
     tmp11 = conjureProjectShareTargetDetails;
@@ -301,7 +301,7 @@ let closure_15 = react.memo(function ProjectRow(project) {
     }
     if (label == null) {
       let stringResult2 = null;
-      const tmp2Result = project(13792);
+      const tmp2Result = project(13790);
       if (tmp2Result.isConjureProjectWithoutServer(project)) {
         const intl2 = tmp2(1112).intl;
         stringResult2 = intl2.string(_modDef4190.poYQxw);
@@ -344,7 +344,7 @@ let closure_15 = react.memo(function ProjectRow(project) {
         } else {
           const obj11 = { style: tmp.userIconWrapper, children: closure_8(UserIcon, obj12) };
           obj12 = { size: "xxs", color: nativeDefault.colors.TEXT_SUBTLE };
-          UserIcon = tmp2(12354).UserIcon;
+          UserIcon = tmp2(12361).UserIcon;
           tmp28Result4 = tmp28(tmp46, obj11);
         }
         items4[1] = tmp28Result4;

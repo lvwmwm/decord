@@ -1,15 +1,15 @@
-// Module ID: 12744
-// Function ID: 12745
+// Module ID: 12742
+// Function ID: 12743
 // Name: CheckpointCharacterUnavailableScreen
-// Dependencies: [21, 12722, 12508, 12510, 1112, 3440, 2]
+// Dependencies: [21, 12720, 12508, 12510, 1112, 3440, 2]
 // Exports: default
 
-// Module 12744 (CheckpointCharacterUnavailableScreen)
+// Module 12742 (CheckpointCharacterUnavailableScreen)
 import intl3 from "intl" /* 1112 */;
 import _modDef3440 from "module_3440" /* 3440 */;
 import CheckpointUnavailableScreenDefault from "CheckpointUnavailableScreen" /* 12508 */;
 import CheckpointTextDefault from "CheckpointText" /* 12510 */;
-import useCheckpointHasUserStatsDefault from "useCheckpointHasUserStats" /* 12722 */;
+import useCheckpointHasUserStatsDefault from "useCheckpointHasUserStats" /* 12720 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 

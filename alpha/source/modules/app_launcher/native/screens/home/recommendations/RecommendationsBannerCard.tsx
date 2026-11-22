@@ -1,17 +1,17 @@
-// Module ID: 12960
-// Function ID: 12961
+// Module ID: 12958
+// Function ID: 12959
 // Name: RecommendationsBannerCard
-// Dependencies: [19, 17, 1071, 21, 4913, 575, 10674, 8073, 1412, 12952, 7030, 12961, 2117, 12955, 5504, 1112, 12926, 7058, 2]
+// Dependencies: [19, 17, 1071, 21, 4913, 575, 10674, 8073, 1412, 12950, 7030, 12959, 2117, 12953, 5504, 1112, 12924, 7058, 2]
 // Exports: default
 
-// Module 12960 (RecommendationsBannerCard)
+// Module 12958 (RecommendationsBannerCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
 import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8073 */;
-import ActivityShelfBadgeDefault from "ActivityShelfBadge" /* 12955 */;
-import RecommendationsBannerDefault from "RecommendationsBanner" /* 12961 */;
+import ActivityShelfBadgeDefault from "ActivityShelfBadge" /* 12953 */;
+import RecommendationsBannerDefault from "RecommendationsBanner" /* 12959 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;
@@ -94,7 +94,7 @@ export default function RecommendationsBannerCard(application) {
   const applicationIconSource = obj3.getApplicationIconSource(obj4);
   if (isLandscape) {
     const obj5 = { application, iconSource: applicationIconSource, onPress, isFirstRow: isFirst, isLastRow: isLast };
-    tmp12Result2 = closure_6(tmp4(12952).BaseAppRow, obj5);
+    tmp12Result2 = closure_6(tmp4(12950).BaseAppRow, obj5);
   } else {
     let tmp12Result;
     const items1 = [tmp.container, , ];
@@ -139,7 +139,7 @@ export default function RecommendationsBannerCard(application) {
     const obj15 = { style: tmp.appDetailsContainer, children: items5 };
     if (tmp14Result) {
       const obj16 = { iconSource: applicationIconSource, iconSize: 36, wrapperStyle: tmp.appIconContainer };
-      tmp14Result = tmp14(tmp10(12926), obj16);
+      tmp14Result = tmp14(tmp10(12924), obj16);
     }
     items5 = [tmp14Result, , ];
     const obj17 = { style: tmp.appDetails, children: items6 };

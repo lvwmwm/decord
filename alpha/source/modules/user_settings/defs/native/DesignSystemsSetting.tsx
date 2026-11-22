@@ -1,11 +1,11 @@
 // Module ID: 17200
 // Function ID: 17201
 // Name: DesignSystemsSetting
-// Dependencies: [1071, 11937, 16667, 17201, 17035, 2]
+// Dependencies: [1071, 11937, 16665, 17201, 17033, 2]
 
 // Module 17200 (DesignSystemsSetting)
 import Constants from "Constants" /* 1071 */;
-import PaintPaletteIcon from "PaintPaletteIcon" /* 16667 */;
+import PaintPaletteIcon from "PaintPaletteIcon" /* 16665 */;
 import useDesignSystemsSettingPredicate from "useDesignSystemsSettingPredicate" /* 17201 */;
 import SettingBuilders from "SettingBuilders" /* 11937 */;
 import size from "module_2" /* 2 */;

@@ -1,14 +1,14 @@
-// Module ID: 13103
-// Function ID: 13104
+// Module ID: 13101
+// Function ID: 13102
 // Name: ChatInputActionButtonApps
-// Dependencies: [19, 17, 12827, 21, 12913, 12968, 13104, 13101, 5923, 13106, 1112, 2]
+// Dependencies: [19, 17, 12825, 21, 12911, 12966, 13102, 13099, 5923, 13104, 1112, 2]
 
-// Module 13103 (ChatInputActionButtonApps)
+// Module 13101 (ChatInputActionButtonApps)
 import react_native from "react-native" /* 17 */;
 import react_native2 from "react-native" /* 5923 */;
-import ChatInputConstants from "ChatInputConstants" /* 12827 */;
-import AppLauncherOnboardingActionCreators from "AppLauncherOnboardingActionCreators" /* 12968 */;
-import AppLauncherOnboardingChatInputButtonAnimation from "AppLauncherOnboardingChatInputButtonAnimation" /* 13104 */;
+import ChatInputConstants from "ChatInputConstants" /* 12825 */;
+import AppLauncherOnboardingActionCreators from "AppLauncherOnboardingActionCreators" /* 12966 */;
+import AppLauncherOnboardingChatInputButtonAnimation from "AppLauncherOnboardingChatInputButtonAnimation" /* 13102 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

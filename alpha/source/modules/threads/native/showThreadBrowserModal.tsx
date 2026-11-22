@@ -1,10 +1,10 @@
-// Module ID: 13871
-// Function ID: 13872
+// Module ID: 13869
+// Function ID: 13870
 // Name: showThreadBrowserModal
 // Dependencies: [10531, 8518, 5090, 2]
 // Exports: default
 
-// Module 13871 (showThreadBrowserModal)
+// Module 13869 (showThreadBrowserModal)
 import RootNavigationRef from "RootNavigationRef" /* 5090 */;
 import ThreadUtils from "ThreadUtils" /* 8518 */;
 import ChannelDetailsConstants from "ChannelDetailsConstants" /* 10531 */;

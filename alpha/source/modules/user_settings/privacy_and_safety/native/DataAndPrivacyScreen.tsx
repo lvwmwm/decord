@@ -1,7 +1,7 @@
 // Module ID: 17359
 // Function ID: 17360
 // Name: DataAndPrivacyScreen
-// Dependencies: [19, 6427, 8712, 1071, 21, 17351, 1112, 2187, 9707, 1500, 16157, 16160, 11937, 16114, 15985, 2]
+// Dependencies: [19, 6427, 8712, 1071, 21, 17351, 1112, 2187, 9707, 1500, 16155, 16158, 11937, 16112, 15983, 2]
 // Exports: default
 
 // Module 17359 (DataAndPrivacyScreen)
@@ -170,8 +170,8 @@ export default function DataAndPrivacySettings() {
     HermesBuiltin.arraySpread(items, items3, tmp3 + 1);
     return createList(obj);
   }, items8);
-  const obj22 = { screen: stackNavigation(16114).SettingsScreen.DATA_AND_PRIVACY };
-  const tmp13 = items1(16114);
-  items9 = [closure_8(tmp13, obj22), closure_8(items1(15985), { node: memo })];
+  const obj22 = { screen: stackNavigation(16112).SettingsScreen.DATA_AND_PRIVACY };
+  const tmp13 = items1(16112);
+  items9 = [closure_8(tmp13, obj22), closure_8(items1(15983), { node: memo })];
   return closure_10(closure_9, obj21);
 };

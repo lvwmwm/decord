@@ -1,7 +1,7 @@
 // Module ID: 19017
 // Function ID: 19018
 // Name: MessageRequestsPreviewScreen
-// Dependencies: [19, 6619, 1071, 21, 13328, 8579, 11098, 19018, 11741, 2]
+// Dependencies: [19, 6619, 1071, 21, 13326, 8579, 11098, 19018, 11741, 2]
 // Exports: default
 
 // Module 19017 (MessageRequestsPreviewScreen)
@@ -20,7 +20,7 @@ export default function MessageRequestsScreen(route) {
   let tmp5Result;
   const channelId = route.route.params.channelId;
   const ref = react.useRef(null);
-  let obj = channelId(13328);
+  let obj = channelId(13326);
   const items = [channelId];
   const isMessageRequestRestrictedViewer = obj.useIsMessageRequestRestrictedViewer();
   const effect = react.useEffect(() => {

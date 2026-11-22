@@ -1,9 +1,9 @@
-// Module ID: 13847
-// Function ID: 13848
+// Module ID: 13845
+// Function ID: 13846
 // Name: GroupDMInviteManagementScreen
-// Dependencies: [5, 32, 19, 17, 7266, 11252, 1071, 21, 4913, 575, 5474, 1284, 12, 13848, 7190, 1186, 13863, 13864, 1112, 7490, 7095, 1263, 7092, 2]
+// Dependencies: [5, 32, 19, 17, 7266, 11252, 1071, 21, 4913, 575, 5474, 1284, 12, 13846, 7190, 1186, 13861, 13862, 1112, 7490, 7095, 1263, 7092, 2]
 
-// Module 13847 (GroupDMInviteManagementScreen)
+// Module 13845 (GroupDMInviteManagementScreen)
 import _modDef12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
@@ -141,7 +141,7 @@ function GroupDMInviteManagement(channelId) {
     const EmptyState = channelId(1186).EmptyState;
     const intl = channelId(1112).intl;
     const intl2 = channelId(1112).intl;
-    tmp13 = <EmptyState lightSource={tmp5(13863)} darkSource={tmp5(13864)} title={intl.string(channelId(1112).t["+nLJkZ"])} body={intl2.string(channelId(1112).t.F53CAc)} />;
+    tmp13 = <EmptyState lightSource={tmp5(13861)} darkSource={tmp5(13862)} title={intl.string(channelId(1112).t["+nLJkZ"])} body={intl2.string(channelId(1112).t.F53CAc)} />;
   } else {
     const tmp12 = channelId;
     tmp13 = jsx(channelId(7490).FlashList, { contentContainerStyle: tmp.listContent, data: memo, keyExtractor: callback, renderItem: tmp10 });

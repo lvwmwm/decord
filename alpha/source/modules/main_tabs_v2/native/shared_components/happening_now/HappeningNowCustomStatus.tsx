@@ -1,7 +1,7 @@
 // Module ID: 17598
 // Function ID: 17599
 // Name: HappeningNowCustomStatus
-// Dependencies: [5, 32, 19, 17, 5651, 16701, 1082, 21, 4913, 575, 563, 6342, 9456, 17599, 17600, 9052, 8009, 16702, 1378, 5600, 13527, 1186, 5504, 2]
+// Dependencies: [5, 32, 19, 17, 5651, 16699, 1082, 21, 4913, 575, 563, 6342, 9456, 17599, 17600, 9052, 8009, 16700, 1378, 5600, 13525, 1186, 5504, 2]
 // Exports: CustomStatusActivityCard
 
 // Module 17598 (HappeningNowCustomStatus)
@@ -10,12 +10,12 @@ import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1082 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
 import FastImageDefault from "FastImage" /* 5600 */;
-import ActivityEmojiDefault from "ActivityEmoji" /* 13527 */;
+import ActivityEmojiDefault from "ActivityEmoji" /* 13525 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import PresenceStore from "PresenceStore" /* 5651 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 16701 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 16699 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
@@ -236,7 +236,7 @@ export function CustomStatusActivityCard(user) {
   const joined = items2.join(", ");
   let obj4 = { onPress, width: str, style: tmp.cardContainer, accessibilityLabel: joined, panelVariant, children: tmp15(tmp17, obj5) };
   str = "stretchy";
-  const tmp9Result = activity(16702);
+  const tmp9Result = activity(16700);
   if (fullwidth) {
     str = "full";
   }
@@ -258,7 +258,7 @@ export function CustomStatusActivityCard(user) {
       tmp15Result3 = tmp15Result;
     } else {
       let obj9 = { emoji: activity.emoji, size: v32, style: tmp.largeEmoji, animate: false };
-      tmp15Result3 = tmp15(tmp9(13527), obj9);
+      tmp15Result3 = tmp15(tmp9(13525), obj9);
     }
     items4 = [tmp15Result3, ];
     items4[1] = items1.map((item, index) => {
@@ -286,7 +286,7 @@ export function CustomStatusActivityCard(user) {
     const Avatar = tmp6(1186).Avatar;
     items6 = [tmp15(Avatar, obj11), , ];
     const obj12 = { noMargin: true, displayNameFont: displayNameStylesFont, children: userTitle };
-    items6[1] = closure_11(user(16702).HappeningNowCardHeader, obj12);
+    items6[1] = closure_11(user(16700).HappeningNowCardHeader, obj12);
     const state = activity.state;
     let num2;
     if (state != null) {
@@ -312,7 +312,7 @@ export function CustomStatusActivityCard(user) {
     items7 = [tmp15(Avatar2, obj16), ];
     const obj17 = { style: tmp.customStatusContextContainer, children: items8 };
     const obj18 = { noMargin: true, displayNameFont: displayNameStylesFont, children: userTitle };
-    items8 = [tmp15(tmp6(16702).HappeningNowCardHeader, obj18), ];
+    items8 = [tmp15(tmp6(16700).HappeningNowCardHeader, obj18), ];
     const obj19 = { ellipsizeMode: "tail", variant: "body-xs/medium", color: "text-default", lineClamp: num, maxFontSizeMultiplier: 2, children: gameMentionsAsPlainText };
     items8[1] = closure_11(user(5504).Text, obj19);
     items7[1] = closure_12(View, obj17);

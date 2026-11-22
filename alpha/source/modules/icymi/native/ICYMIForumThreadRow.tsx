@@ -1,7 +1,7 @@
 // Module ID: 18157
 // Function ID: 18158
 // Name: ICYMIForumThreadRow
-// Dependencies: [19, 17, 4762, 4784, 21, 18091, 575, 504, 6511, 10043, 18130, 13845, 18122, 5529, 18132, 1112, 11, 7030, 5504, 5637, 18136, 18138, 2]
+// Dependencies: [19, 17, 4762, 4784, 21, 18091, 575, 504, 6511, 10043, 18130, 13843, 18122, 5529, 18132, 1112, 11, 7030, 5504, 5637, 18136, 18138, 2]
 // Exports: default
 
 // Module 18157 (ICYMIForumThreadRow)
@@ -9,7 +9,7 @@ import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import GuildActionCreatorsDefault from "GuildActionCreators" /* 6511 */;
 import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 10043 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 13845 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 13843 */;
 import ICYMIShared from "ICYMIShared" /* 18130 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4762 */;

@@ -1,7 +1,7 @@
 // Module ID: 17291
 // Function ID: 17292
 // Name: HeroBlock
-// Dependencies: [19, 17, 8075, 1073, 21, 4913, 575, 9895, 9545, 16429, 17292, 17295, 17298, 504, 9950, 17299, 17300, 16388, 7520, 7539, 8936, 17310, 17312, 5491, 17313, 1112, 7490, 2]
+// Dependencies: [19, 17, 8075, 1073, 21, 4913, 575, 9895, 9545, 16427, 17292, 17295, 17298, 504, 9950, 17299, 17300, 16386, 7520, 7539, 8936, 17310, 17312, 5491, 17313, 1112, 7490, 2]
 // Exports: default
 
 // Module 17291 (HeroBlock)
@@ -11,7 +11,7 @@ import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1073 */;
 import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 8936 */;
 import CollectiblesShopCardV2 from "CollectiblesShopCardV2" /* 9545 */;
 import SkeletonCardDefault from "SkeletonCard" /* 9895 */;
-import OrbsArcadeExperiment2 from "OrbsArcadeExperiment" /* 16429 */;
+import OrbsArcadeExperiment2 from "OrbsArcadeExperiment" /* 16427 */;
 import react_mod from "react" /* 19 */;
 import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 8075 */;
 import Fragment from "Fragment" /* 21 */;

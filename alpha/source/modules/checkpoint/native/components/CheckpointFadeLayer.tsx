@@ -1,10 +1,10 @@
-// Module ID: 12543
-// Function ID: 12544
+// Module ID: 12541
+// Function ID: 12542
 // Name: CheckpointFadeLayer
 // Dependencies: [32, 19, 4914, 21, 1653, 504, 6417, 7392, 12506, 5123, 2]
 // Exports: default
 
-// Module 12543 (CheckpointFadeLayer)
+// Module 12541 (CheckpointFadeLayer)
 import Fragment from "Fragment" /* 21 */;
 import _mod1653 from "module_1653" /* 1653 */;
 import timing_timing from "timing/timing" /* 5123 */;

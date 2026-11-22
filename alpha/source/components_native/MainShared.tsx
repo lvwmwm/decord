@@ -1,7 +1,7 @@
 // Module ID: 19037
 // Function ID: 19038
 // Name: MainShared
-// Dependencies: [19, 4762, 5654, 21, 504, 10651, 5089, 10854, 19038, 1378, 5925, 1112, 19040, 15644, 2, 19041, 19042, 19043, 19044, 19052, 19056, 19110]
+// Dependencies: [19, 4762, 5654, 21, 504, 10651, 5089, 10854, 19038, 1378, 5925, 1112, 19040, 15642, 2, 19041, 19042, 19043, 19044, 19052, 19056, 19110]
 // Exports: PictureInPictureGlobalContainer, useAppKeyCommands, useScreenReaderEnabled
 
 // Module 19037 (MainShared)
@@ -13,7 +13,7 @@ import NavigationRouteUtils from "NavigationRouteUtils" /* 5089 */;
 import KeyCommands from "KeyCommands" /* 5925 */;
 import usePipVideoOrStream from "usePipVideoOrStream" /* 10651 */;
 import VoicePanelUtils from "VoicePanelUtils" /* 10854 */;
-import AccessibilityManagerDefault from "AccessibilityManager" /* 15644 */;
+import AccessibilityManagerDefault from "AccessibilityManager" /* 15642 */;
 import PictureInPictureGlobalDefault from "PictureInPictureGlobal" /* 19038 */;
 import BurstReactionAnimationContainerDefault from "BurstReactionAnimationContainer" /* 19041 */;
 import NativeMenuPresenterDefault from "NativeMenuPresenter" /* 19042 */;

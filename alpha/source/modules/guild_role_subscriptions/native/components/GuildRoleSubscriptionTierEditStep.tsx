@@ -1,17 +1,17 @@
-// Module ID: 20011
-// Function ID: 20012
+// Module ID: 20008
+// Function ID: 20009
 // Name: GuildRoleSubscriptionTierEditStep
-// Dependencies: [19, 17, 21, 4913, 575, 7017, 5504, 16622, 1112, 1628, 5511, 1500, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 7017, 5504, 16620, 1112, 1628, 5511, 1500, 2]
 // Exports: default
 
-// Module 20011 (GuildRoleSubscriptionTierEditStep)
+// Module 20008 (GuildRoleSubscriptionTierEditStep)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
 import useNavigation from "useNavigation" /* 1500 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
 import Text_Text from "Text/Text" /* 5504 */;
 import common_SafeAreaView from "common/SafeAreaView" /* 7017 */;
-import FormSeparatorDefault from "FormSeparator" /* 16622 */;
+import FormSeparatorDefault from "FormSeparator" /* 16620 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

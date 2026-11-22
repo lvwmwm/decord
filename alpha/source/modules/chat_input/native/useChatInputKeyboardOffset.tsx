@@ -1,10 +1,10 @@
-// Module ID: 13303
-// Function ID: 13304
+// Module ID: 13301
+// Function ID: 13302
 // Name: useChatInputKeyboardOffset
 // Dependencies: [1642, 5489, 5100, 1628, 5477, 575, 1378, 1626, 2]
 // Exports: default
 
-// Module 13303 (useChatInputKeyboardOffset)
+// Module 13301 (useChatInputKeyboardOffset)
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;

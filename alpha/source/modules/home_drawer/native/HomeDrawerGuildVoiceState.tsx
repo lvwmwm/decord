@@ -1,7 +1,7 @@
 // Module ID: 17895
 // Function ID: 17896
 // Name: HomeDrawerGuildVoiceState
-// Dependencies: [19, 17, 4843, 4855, 6552, 5657, 1071, 21, 4913, 575, 14488, 1186, 5504, 1112, 11084, 5600, 5468, 17894, 504, 12, 14991, 2]
+// Dependencies: [19, 17, 4843, 4855, 6552, 5657, 1071, 21, 4913, 575, 14486, 1186, 5504, 1112, 11084, 5600, 5468, 17894, 504, 12, 14989, 2]
 // Exports: GuildVoiceState, useVoiceUsers
 
 // Module 17895 (HomeDrawerGuildVoiceState)
@@ -16,7 +16,7 @@ import LinearGradientDefault from "LinearGradient" /* 5468 */;
 import Text_Text from "Text/Text" /* 5504 */;
 import FastImageDefault from "FastImage" /* 5600 */;
 import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 11084 */;
-import AvatarPile2 from "AvatarPile" /* 14488 */;
+import AvatarPile2 from "AvatarPile" /* 14486 */;
 import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4855 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6552 */;

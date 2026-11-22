@@ -1,11 +1,11 @@
-// Module ID: 20176
-// Function ID: 20177
+// Module ID: 20173
+// Function ID: 20174
 // Name: DeepLinkEventMapping
-// Dependencies: [20173, 2]
+// Dependencies: [20170, 2]
 // Exports: mapDeepLinkEvent
 
-// Module 20176 (DeepLinkEventMapping)
-import DeepLinkTypes from "DeepLinkTypes" /* 20173 */;
+// Module 20173 (DeepLinkEventMapping)
+import DeepLinkTypes from "DeepLinkTypes" /* 20170 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/app_startup/native/DeepLinkProcessor/DeepLinkEventMapping.tsx");
@@ -18,12 +18,12 @@ export function mapDeepLinkEvent(url, arg1, arg2) {
   let AppsFlyer = DeepLinkTypes.DeeplinkSource.OS;
   if ("appsflyer" === url.source) {
     const isDeferred = url.isDeferred;
-    const DeeplinkSource = tmp3(20173).DeeplinkSource;
+    const DeeplinkSource = tmp3(20170).DeeplinkSource;
     AppsFlyer = isDeferred ? DeeplinkSource.AppsFlyerDeferred : DeeplinkSource.AppsFlyer;
   } else {
     const tmp5 = arg2;
     if (tmp5) {
-      AppsFlyer = tmp3(20173).DeeplinkSource.AppsFlyer;
+      AppsFlyer = tmp3(20170).DeeplinkSource.AppsFlyer;
     }
   }
   return { deeplink: { url: url.url, source: AppsFlyer }, isColdStart: tmp };

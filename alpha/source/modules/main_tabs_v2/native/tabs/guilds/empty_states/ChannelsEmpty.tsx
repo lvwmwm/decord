@@ -1,7 +1,7 @@
 // Module ID: 17772
 // Function ID: 17773
 // Name: ChannelsEmpty
-// Dependencies: [19, 17, 4845, 1071, 21, 4913, 5504, 575, 563, 7994, 7746, 16480, 7711, 1186, 17773, 1112, 5600, 17774, 5512, 2]
+// Dependencies: [19, 17, 4845, 1071, 21, 4913, 5504, 575, 563, 7994, 7746, 16478, 7711, 1186, 17773, 1112, 5600, 17774, 5512, 2]
 
 // Module 17772 (ChannelsEmpty)
 import react_native from "react-native" /* 17 */;
@@ -72,7 +72,7 @@ const memoResult = react.memo(function ChannelsEmpty(guild) {
   }, items3);
   const obj3 = { style: items4, children: items5 };
   items4 = [tmp.wrapper, ];
-  const obj2 = guild(16480);
+  const obj2 = guild(16478);
   items4[1] = { paddingBottom: obj2.useYouBarTotalHeight(16) };
   ({ paddingBottom: obj2.useYouBarTotalHeight(16) });
   if (canCustomizeGuild) {

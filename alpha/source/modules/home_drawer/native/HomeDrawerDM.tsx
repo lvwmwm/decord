@@ -1,7 +1,7 @@
 // Module ID: 17916
 // Function ID: 17917
 // Name: HomeDrawerDM
-// Dependencies: [19, 17, 4766, 4855, 6552, 1386, 1082, 21, 4913, 504, 5529, 17917, 16723, 11701, 10364, 5504, 11125, 5574, 17884, 5095, 5092, 2]
+// Dependencies: [19, 17, 4766, 4855, 6552, 1386, 1082, 21, 4913, 504, 5529, 17917, 16721, 11701, 10364, 5504, 11125, 5574, 17884, 5095, 5092, 2]
 // Exports: default
 
 // Module 17916 (HomeDrawerDM)
@@ -13,7 +13,7 @@ import Text_Text from "Text/Text" /* 5504 */;
 import useChannelName from "useChannelName" /* 5529 */;
 import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 5574 */;
 import ChannelRowPreview2 from "ChannelRowPreview" /* 11125 */;
-import useMessagePreviewsDefault from "useMessagePreviews" /* 16723 */;
+import useMessagePreviewsDefault from "useMessagePreviews" /* 16721 */;
 import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4855 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6552 */;

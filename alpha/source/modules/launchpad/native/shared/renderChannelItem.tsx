@@ -1,7 +1,7 @@
 // Module ID: 18753
 // Function ID: 18754
 // Name: renderChannelItem
-// Dependencies: [19, 17, 4784, 4855, 1386, 6553, 21, 8009, 1112, 4913, 575, 18754, 504, 7322, 13065, 6638, 18755, 10124, 18757, 5529, 2]
+// Dependencies: [19, 17, 4784, 4855, 1386, 6553, 21, 8009, 1112, 4913, 575, 18754, 504, 7322, 13063, 6638, 18755, 10124, 18757, 5529, 2]
 // Exports: default, getChannelAccessibilityProps
 
 // Module 18753 (renderChannelItem)
@@ -39,7 +39,7 @@ function LaunchpadChannelIcon(channel) {
   const obj = channel(504);
   const stateFromStores = obj.useStateFromStores(items, () => GuildStore.getGuild(channel.guild_id));
   obj4 = { guild: stateFromStores, size: tmp2.icon.guildBadgeIconSize };
-  items1 = [closure_8(View, obj3), closure_8(channel(13065).ChannelIcon, { channel, size: "sm", wrapperSize: 32 })];
+  items1 = [closure_8(View, obj3), closure_8(channel(13063).ChannelIcon, { channel, size: "sm", wrapperSize: 32 })];
   return closure_10(closure_9, obj2);
 }
 const View = react_native.View;

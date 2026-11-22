@@ -46,13 +46,13 @@ export default function useSpeakerTooltips(targetRef, arg1) {
   let tmp17;
   let tmp18;
   let voiceUpsellDismissed;
-  const f117282 = () => {
+  const f117293 = () => {
     const obj = memo2;
     if (memo2.visible) {
       obj.onDismiss();
     }
   };
-  const f117283 = () => {
+  const f117294 = () => {
     const tmp = closure_1;
     if (!tmp) {
       callback1();
@@ -195,16 +195,16 @@ export default function useSpeakerTooltips(targetRef, arg1) {
     }
   }, items7);
   const items8 = [memo1];
-  const callback = obj2.useCallback(f117282, items8);
+  const callback = obj2.useCallback(f117293, items8);
   const items9 = [tmp, callback];
-  const effect1 = obj2.useEffect(f117283, items9);
+  const effect1 = obj2.useEffect(f117294, items9);
   const tmp6Result3 = require("useCoachmark");
   const coachmark = tmp6Result3.useCoachmark(targetRef, memo1);
   importDefault = tmp;
   const items10 = [memo2];
-  const callback1 = obj2.useCallback(f117282, items10);
+  const callback1 = obj2.useCallback(f117293, items10);
   const items11 = [tmp, callback1];
-  const effect2 = obj2.useEffect(f117283, items11);
+  const effect2 = obj2.useEffect(f117294, items11);
   const tmp6Result4 = require("useCoachmark");
   const coachmark1 = tmp6Result4.useCoachmark(targetRef, memo2);
 };

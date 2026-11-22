@@ -1,7 +1,7 @@
 // Module ID: 18000
 // Function ID: 18001
 // Name: VoicePanelSettingsOverview
-// Dependencies: [19, 4761, 6620, 10647, 502, 4762, 2131, 4845, 1386, 5657, 1071, 5563, 9708, 21, 4913, 575, 504, 18001, 5529, 10855, 10908, 9735, 9688, 7324, 5504, 13819, 1112, 7695, 7, 5595, 17998, 9718, 7045, 7057, 16981, 14844, 7058, 572, 7556, 4738, 5809, 5649, 11251, 10961, 5127, 18002, 2119, 9711, 9738, 18003, 17986, 17987, 11890, 9674, 18004, 10371, 18005, 9680, 18006, 11126, 10935, 11056, 11055, 2]
+// Dependencies: [19, 4761, 6620, 10647, 502, 4762, 2131, 4845, 1386, 5657, 1071, 5563, 9708, 21, 4913, 575, 504, 18001, 5529, 10855, 10908, 9735, 9688, 7324, 5504, 13817, 1112, 7695, 7, 5595, 17998, 9718, 7045, 7057, 16979, 14842, 7058, 572, 7556, 4738, 5809, 5649, 11251, 10961, 5127, 18002, 2119, 9711, 9738, 18003, 17986, 17987, 11890, 9674, 18004, 10371, 18005, 9680, 18006, 11126, 10935, 11056, 11055, 2]
 
 // Module 18000 (VoicePanelSettingsOverview)
 import LogAggregator from "LogAggregator" /* 7 */;
@@ -29,8 +29,8 @@ import useIsSecureFramesUIEnabled from "useIsSecureFramesUIEnabled" /* 9735 */;
 import StageChannelUnifiedCallExperiment from "StageChannelUnifiedCallExperiment" /* 10855 */;
 import ChannelCallConnectingScreen from "ChannelCallConnectingScreen" /* 10961 */;
 import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 11251 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14844 */;
-import WrenchIcon from "WrenchIcon" /* 16981 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14842 */;
+import WrenchIcon from "WrenchIcon" /* 16979 */;
 import VoicePanelSettingsActionCreators from "VoicePanelSettingsActionCreators" /* 17998 */;
 import getChannelInfoSubtitleDefault from "getChannelInfoSubtitle" /* 18001 */;
 import react from "react" /* 19 */;
@@ -98,7 +98,7 @@ class VoicePanelSettingsOverviewHeader {
     const tmp6 = channelId;
     if (isCallSecureFramesVerified) {
       const obj9 = { style: tmp.secureFramesIcon, size: "xs", accessibilityLabel: intl.string(intl18.t.mR9cf3) };
-      const ShieldLockIcon = tmp2(13819).ShieldLockIcon;
+      const ShieldLockIcon = tmp2(13817).ShieldLockIcon;
       intl = tmp2(1112).intl;
       isCallSecureFramesVerified = tmp15(ShieldLockIcon, obj9);
     }

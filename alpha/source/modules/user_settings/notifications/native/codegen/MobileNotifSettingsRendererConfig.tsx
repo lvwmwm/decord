@@ -1,10 +1,10 @@
 // Module ID: 17414
 // Function ID: 17415
 // Name: MobileNotifSettingsRendererConfig
-// Dependencies: [16896, 17415, 17432, 2]
+// Dependencies: [16894, 17415, 17432, 2]
 
 // Module 17414 (MobileNotifSettingsRendererConfig)
-import MobileNotifSettings from "MobileNotifSettings" /* 16896 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 16894 */;
 import MobileNotifSettingsRoutesAll from "MobileNotifSettingsRoutes" /* 17415 */;
 import MobileNotifSettingsNodesAll from "MobileNotifSettingsNodes" /* 17432 */;
 import size from "module_2" /* 2 */;

@@ -1,10 +1,10 @@
-// Module ID: 12180
-// Function ID: 12181
+// Module ID: 12187
+// Function ID: 12188
 // Name: isInviteActive
 // Dependencies: [4762, 1088, 11, 8529, 2]
 // Exports: default
 
-// Module 12180 (isInviteActive)
+// Module 12187 (isInviteActive)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DurationsDefault from "Durations" /* 1088 */;
 import RequestToStreamNonGamesExperimentDefault from "RequestToStreamNonGamesExperiment" /* 8529 */;

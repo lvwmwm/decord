@@ -12,7 +12,7 @@ let _window;
 let c2;
 let map;
 function Suspender(freeze) {
-  const f88504 = (current) => {
+  const f88513 = (current) => {
     ref1.current = current;
   };
   freeze = freeze.freeze;
@@ -23,8 +23,8 @@ function Suspender(freeze) {
   if (tmp2) {
     const self = this;
     const self2 = this;
-    ref.current = new Promise(f88504);
-    const promise = new Promise(f88504);
+    ref.current = new Promise(f88513);
+    const promise = new Promise(f88513);
   }
   const tmp6 = freeze || null == ref1.current;
   if (!tmp6) {

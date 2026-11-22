@@ -1,10 +1,10 @@
-// Module ID: 12204
-// Function ID: 12205
+// Module ID: 12211
+// Function ID: 12212
 // Name: useCanFulfillStreamRequest
 // Dependencies: [2139, 6400, 502, 4762, 4784, 4845, 5651, 5654, 10932, 7074, 1378, 8529, 5652, 504, 2]
 // Exports: default
 
-// Module 12204 (useCanFulfillStreamRequest)
+// Module 12211 (useCanFulfillStreamRequest)
 import ActivityTypes from "ActivityTypes" /* 5652 */;
 import RunningGameStore from "RunningGameStore" /* 2139 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6400 */;

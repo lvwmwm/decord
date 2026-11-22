@@ -1,7 +1,7 @@
 // Module ID: 18997
 // Function ID: 18998
 // Name: MessageRequestsScreenWithTabs
-// Dependencies: [19, 17, 21, 4913, 575, 7597, 7586, 1112, 18998, 19014, 11278, 13536, 10432, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 7597, 7586, 1112, 18998, 19014, 11278, 13534, 10432, 2]
 
 // Module 18997 (MessageRequestsScreenWithTabs)
 import react_native from "react-native" /* 17 */;
@@ -11,7 +11,7 @@ import SegmentedControlState from "SegmentedControlState" /* 7586 */;
 import useMeasuredLayoutDefault from "useMeasuredLayout" /* 7597 */;
 import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 10432 */;
 import SegmentedControl from "SegmentedControl" /* 11278 */;
-import SegmentedControlPages from "SegmentedControlPages" /* 13536 */;
+import SegmentedControlPages from "SegmentedControlPages" /* 13534 */;
 import MessageRequestListDefault from "MessageRequestList" /* 18998 */;
 import SpamMessageListDefault from "SpamMessageList" /* 19014 */;
 import react from "react" /* 19 */;

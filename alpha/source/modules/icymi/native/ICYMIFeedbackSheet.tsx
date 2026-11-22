@@ -1,7 +1,7 @@
 // Module ID: 18114
 // Function ID: 18115
 // Name: ICYMIFeedbackSheet
-// Dependencies: [19, 21, 10574, 1112, 15642, 10043, 2]
+// Dependencies: [19, 21, 10574, 1112, 15640, 10043, 2]
 // Exports: default
 
 // Module 18114 (ICYMIFeedbackSheet)
@@ -9,7 +9,7 @@ import Fragment from "Fragment" /* 21 */;
 import intl8 from "intl" /* 1112 */;
 import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 10043 */;
 import FeedbackActionSheetDefault from "FeedbackActionSheet" /* 10574 */;
-import ICYMIAnalytics2 from "ICYMIAnalytics" /* 15642 */;
+import ICYMIAnalytics2 from "ICYMIAnalytics" /* 15640 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

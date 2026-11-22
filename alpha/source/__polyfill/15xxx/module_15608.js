@@ -1,8 +1,26 @@
 // Module ID: 15608
 // Function ID: 15609
-// Dependencies: []
+// Dependencies: [15609, 15613, 15616]
 
 // Module 15608
-const obj = { name: "react-native-url-polyfill", version: "2.0.0", description: "A lightweight and trustworthy URL polyfill for React Native", keywords: ["URL", "URLSearchParams", "polyfill", "react native", "whatwg-url"], bugs: { url: "https://github.com/charpeni/react-native-url-polyfill/issues" }, homepage: "https://github.com/charpeni/react-native-url-polyfill", readme: "https://github.com/charpeni/react-native-url-polyfill#readme", repository: { type: "git", url: "https://github.com/charpeni/react-native-url-polyfill.git" }, main: "index.js", types: "index.d.ts", scripts: { test: "jest", lint: "eslint .", prepare: "husky install", "bundle-size": "node scripts/bundle-size" }, author: "Nicolas Charpentier <nicolas.charpentier079@gmail.com>", license: "MIT", dependencies: { "whatwg-url-without-unicode": "8.0.0-3" }, devDependencies: { "@react-native-community/eslint-config": "3.2.0", detox: "20.9.1", eslint: "8.44.0", "eslint-plugin-prettier": "4.2.1", husky: "8.0.3", jest: "29.5.0", "lint-staged": "13.2.3", "metro-react-native-babel-preset": "0.76.7", nanoid: "3.3.6", prettier: "2.8.8", react: "18.2.0", "react-native": "0.72.1", "react-native-bundle-scale": "1.1.0", typescript: "5.1.6" }, peerDependencies: { "react-native": "*" }, jest: { preset: "react-native", testPathIgnorePatterns: ["/node_modules/", "./platforms/"] }, "lint-staged": { "*.js": ["eslint --fix"] } };
+import _mod15609 from "module_15609" /* 15609 */;
+import _mod15613 from "module_15613" /* 15613 */;
+import _mod15616 from "module_15616" /* 15616 */;
 
-export default obj;
+const obj = {};
+const _URL = _mod15609.URL;
+_URL.install(obj);
+const _URLSearchParams = _mod15609.URLSearchParams;
+_URLSearchParams.install(obj);
+({ URL: exports.URL, URLSearchParams: exports.URLSearchParams } = obj);
+
+export const parseURL = _mod15613.parseURL;
+export const basicURLParse = _mod15613.basicURLParse;
+export const serializeURL = _mod15613.serializeURL;
+export const serializeHost = _mod15613.serializeHost;
+export const serializeInteger = _mod15613.serializeInteger;
+export const serializeURLOrigin = _mod15613.serializeURLOrigin;
+export const setTheUsername = _mod15613.setTheUsername;
+export const setThePassword = _mod15613.setThePassword;
+export const cannotHaveAUsernamePasswordPort = _mod15613.cannotHaveAUsernamePasswordPort;
+export const percentDecode = _mod15616.percentDecode;

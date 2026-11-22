@@ -1,10 +1,10 @@
-// Module ID: 16245
-// Function ID: 16246
+// Module ID: 16243
+// Function ID: 16244
 // Name: ConnectedApplicationIdentity
-// Dependencies: [5, 32, 19, 17, 21, 4913, 16246, 1112, 1186, 5504, 11030, 5860, 16253, 5932, 1412, 5513, 10334, 7591, 9736, 7046, 7045, 7556, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4913, 16244, 1112, 1186, 5504, 11030, 5860, 16251, 5932, 1412, 5513, 10334, 7591, 9736, 7046, 7045, 7556, 2]
 // Exports: default
 
-// Module 16245 (ConnectedApplicationIdentity)
+// Module 16243 (ConnectedApplicationIdentity)
 import react_native from "react-native" /* 17 */;
 import intl6 from "intl" /* 1112 */;
 import native from "native" /* 1186 */;

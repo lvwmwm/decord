@@ -1,7 +1,7 @@
 // Module ID: 18193
 // Function ID: 18194
 // Name: GuildRoleSubscriptionPurchaseCard
-// Dependencies: [32, 19, 17, 21, 4913, 575, 1628, 16630, 18188, 5141, 5504, 1186, 18194, 5145, 1112, 16640, 2]
+// Dependencies: [32, 19, 17, 21, 4913, 575, 1628, 16628, 18188, 5141, 5504, 1186, 18194, 5145, 1112, 16638, 2]
 // Exports: default
 
 // Module 18193 (GuildRoleSubscriptionPurchaseCard)
@@ -13,8 +13,8 @@ import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
 import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5141 */;
 import BottomSheetModal from "BottomSheetModal" /* 5145 */;
 import Text_Text from "Text/Text" /* 5504 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16630 */;
-import GuildRoleSubscriptionCard from "GuildRoleSubscriptionCard" /* 16640 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16628 */;
+import GuildRoleSubscriptionCard from "GuildRoleSubscriptionCard" /* 16638 */;
 import Elements from "Elements" /* 18188 */;
 import SubscribeButtonDefault from "SubscribeButton" /* 18194 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

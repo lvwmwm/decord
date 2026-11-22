@@ -1,10 +1,10 @@
-// Module ID: 13817
-// Function ID: 13818
+// Module ID: 13815
+// Function ID: 13816
 // Name: GuildProfileCTA
-// Dependencies: [19, 5632, 1071, 1081, 21, 12273, 9424, 5127, 6835, 7262, 10521, 13818, 4949, 6518, 7291, 7286, 6834, 6516, 5511, 1112, 2]
+// Dependencies: [19, 5632, 1071, 1081, 21, 12280, 9424, 5127, 6835, 7262, 10521, 13816, 4949, 6518, 7291, 7286, 6834, 6516, 5511, 1112, 2]
 // Exports: default
 
-// Module 13817 (GuildProfileCTA)
+// Module 13815 (GuildProfileCTA)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1071 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1081 */;

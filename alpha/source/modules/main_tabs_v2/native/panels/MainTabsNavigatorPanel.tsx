@@ -73,7 +73,7 @@ const memoResult = react.memo(function MainTabsNavigatorPanel(showHeaderGradient
   let tmp77;
   let tmp78;
   let type1;
-  const f131569 = () => first4;
+  const f131583 = () => first4;
   let flag = showHeaderGradient.showHeaderGradient;
   if (flag === undefined) {
     flag = true;
@@ -187,9 +187,9 @@ const memoResult = react.memo(function MainTabsNavigatorPanel(showHeaderGradient
     const obj = navigation(drawerWidth[8]);
     return obj.isActiveTabsGuilds(navigation.getState());
   });
-  [tmp25, c3] = react.useState(f131569);
+  [tmp25, c3] = react.useState(f131583);
   const items3 = [navigation];
-  _slicedToArray(react.useState(f131569), 2);
+  _slicedToArray(react.useState(f131583), 2);
   const effect1 = obj3.useEffect(() => {
     let addListenerResult1;
     let state;

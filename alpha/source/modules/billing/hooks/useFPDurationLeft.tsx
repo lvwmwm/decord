@@ -1,10 +1,10 @@
-// Module ID: 14063
-// Function ID: 14064
+// Module ID: 14061
+// Function ID: 14062
 // Name: useFPDurationLeft
 // Dependencies: [1112, 8956, 4735, 1241, 2]
 // Exports: default
 
-// Module 14063 (useFPDurationLeft)
+// Module 14061 (useFPDurationLeft)
 import intl from "intl" /* 1112 */;
 import useCountdownDefault from "useCountdown" /* 8956 */;
 import size from "module_2" /* 2 */;

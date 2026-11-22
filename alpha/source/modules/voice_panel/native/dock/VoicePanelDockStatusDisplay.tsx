@@ -627,7 +627,7 @@ const memoResult = react.memo(function VoicePanelDockStatusDisplay() {
   let tmp12;
   let tmp17;
   let userId;
-  const f113467 = () => {
+  const f113478 = () => {
     let items;
     if ("channel" === obj5.kind) {
       items = [];
@@ -706,8 +706,8 @@ const memoResult = react.memo(function VoicePanelDockStatusDisplay() {
   }
   const tmp13 = first(obj.useState(() => ({ status: obj5, enter: null })), 2);
   first = tmp13[0];
-  [arr7, tmp17] = first(obj.useState(f113467), 2);
-  first(obj.useState(f113467), 2);
+  [arr7, tmp17] = first(obj.useState(f113478), 2);
+  first(obj.useState(f113478), 2);
   const tmp18 = first(obj.useState(() => {
     map = new Map();
     return map;

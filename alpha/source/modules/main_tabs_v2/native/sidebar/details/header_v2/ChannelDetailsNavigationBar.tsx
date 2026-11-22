@@ -1,7 +1,7 @@
 // Module ID: 18838
 // Function ID: 18839
 // Name: ChannelDetailsNavigationBar
-// Dependencies: [19, 17, 4846, 4847, 4762, 6552, 8574, 10531, 1071, 8575, 21, 4913, 13241, 575, 5477, 504, 1500, 7591, 1112, 10365, 8683, 13155, 13220, 6419, 7429, 13845, 11251, 10372, 18839, 4974, 1653, 5123, 1706, 18711, 5126, 12080, 7030, 7099, 2]
+// Dependencies: [19, 17, 4846, 4847, 4762, 6552, 8574, 10531, 1071, 8575, 21, 4913, 13239, 575, 5477, 504, 1500, 7591, 1112, 10365, 8683, 13153, 13218, 6419, 7429, 13843, 11251, 10372, 18839, 4974, 1653, 5123, 1706, 18711, 5126, 12080, 7030, 7099, 2]
 
 // Module 18838 (ChannelDetailsNavigationBar)
 import react_native from "react-native" /* 17 */;
@@ -15,10 +15,10 @@ import AssetRegistryDefault from "AssetRegistry" /* 7429 */;
 import TrackingConstants from "TrackingConstants" /* 8575 */;
 import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 11251 */;
 import ChannelDetailsUtils from "ChannelDetailsUtils" /* 12080 */;
-import useSearchContext from "useSearchContext" /* 13155 */;
-import TrackingDefault from "Tracking" /* 13220 */;
-import SearchButton2 from "SearchButton" /* 13241 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 13845 */;
+import useSearchContext from "useSearchContext" /* 13153 */;
+import TrackingDefault from "Tracking" /* 13218 */;
+import SearchButton2 from "SearchButton" /* 13239 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 13843 */;
 import ChannelDetailsSearchBarDefault from "ChannelDetailsSearchBar" /* 18711 */;
 import react from "react" /* 19 */;
 import LurkingStore from "LurkingStore" /* 4846 */;

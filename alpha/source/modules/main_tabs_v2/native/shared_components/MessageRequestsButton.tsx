@@ -1,15 +1,15 @@
 // Module ID: 17548
 // Function ID: 17549
 // Name: MessageRequestsButton
-// Dependencies: [19, 17, 6634, 6635, 21, 4913, 504, 17549, 5511, 1112, 7591, 14358, 14674, 2]
+// Dependencies: [19, 17, 6634, 6635, 21, 4913, 504, 17549, 5511, 1112, 7591, 14356, 14672, 2]
 // Exports: default
 
 // Module 17548 (MessageRequestsButton)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import intl4 from "intl" /* 1112 */;
-import IconActionButton from "IconActionButton" /* 14358 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14674 */;
+import IconActionButton from "IconActionButton" /* 14356 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14672 */;
 import _mod17549 from "module_17549" /* 17549 */;
 import react from "react" /* 19 */;
 import MessageRequestStore from "MessageRequestStore" /* 6634 */;
@@ -22,17 +22,17 @@ const IconActionButtonDefault = IconActionButton;
 
 let metroImportAll;
 let metroImportDefault;
-const f112233 = () => messageRequestsCount.getMessageRequestsCount();
-const f112234 = () => spamChannelsCount.getSpamChannelsCount();
+const f112244 = () => messageRequestsCount.getMessageRequestsCount();
+const f112245 = () => spamChannelsCount.getSpamChannelsCount();
 function MessageRequestAnimation(color) {
   color = color.color;
   const ref = react.useRef(null);
   const items = [MessageRequestStore];
   const obj = get_initialized;
-  const stateFromStores = obj.useStateFromStores(items, f112233);
+  const stateFromStores = obj.useStateFromStores(items, f112244);
   const items1 = [SpamMessageRequestStore];
   const obj2 = get_initialized;
-  const stateFromStores1 = obj2.useStateFromStores(items1, f112234);
+  const stateFromStores1 = obj2.useStateFromStores(items1, f112245);
   const items2 = [stateFromStores];
   const effect = react.useEffect(() => {
     if (stateFromStores > 0) {
@@ -67,11 +67,11 @@ export default function MessageRequestsButton(alternateVariant) {
   const items = [MessageRequestStore];
   const tmp2 = closure_9();
   const obj = get_initialized;
-  const str = obj.useStateFromStores(items, f112233);
+  const str = obj.useStateFromStores(items, f112244);
   const items1 = [SpamMessageRequestStore];
   const obj2 = get_initialized;
   if (0 === str) {
-    if (0 === obj2.useStateFromStores(items1, f112234)) {
+    if (0 === obj2.useStateFromStores(items1, f112245)) {
       return null;
     }
   }

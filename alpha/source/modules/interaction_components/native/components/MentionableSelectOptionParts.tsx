@@ -1,10 +1,10 @@
-// Module ID: 12353
-// Function ID: 12354
+// Module ID: 12360
+// Function ID: 12361
 // Name: MentionableSelectOptionParts
-// Dependencies: [19, 17, 4819, 5651, 1386, 1071, 21, 4913, 575, 5976, 1186, 7544, 7561, 7776, 10386, 5504, 12354, 1112, 2]
+// Dependencies: [19, 17, 4819, 5651, 1386, 1071, 21, 4913, 575, 5976, 1186, 7544, 7561, 7776, 10386, 5504, 12361, 1112, 2]
 // Exports: mentionableOptionAccessibilityLabel, renderMentionableOptionDescription, renderMentionableOptionIcon, renderMentionableOptionSuffix
 
-// Module 12353 (MentionableSelectOptionParts)
+// Module 12360 (MentionableSelectOptionParts)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
@@ -14,7 +14,7 @@ import InteractionComponentTypes from "InteractionComponentTypes" /* 5976 */;
 import RoleIconUtils from "RoleIconUtils" /* 7544 */;
 import RoleIconDefault from "RoleIcon" /* 7561 */;
 import DiscordTagDefault from "DiscordTag" /* 10386 */;
-import UserIcon from "UserIcon" /* 12354 */;
+import UserIcon from "UserIcon" /* 12361 */;
 import react from "react" /* 19 */;
 import GuildRoleStore from "GuildRoleStore" /* 4819 */;
 import PresenceStore from "PresenceStore" /* 5651 */;

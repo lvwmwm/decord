@@ -1,7 +1,7 @@
 // Module ID: 18978
 // Function ID: 18979
 // Name: ChannelSettingsChangeDefaultForumLayout
-// Dependencies: [32, 19, 17, 4762, 21, 4913, 575, 11251, 7347, 1112, 4772, 7349, 18939, 14837, 5504, 7348, 5600, 18979, 18980, 504, 2]
+// Dependencies: [32, 19, 17, 4762, 21, 4913, 575, 11251, 7347, 1112, 4772, 7349, 18939, 14835, 5504, 7348, 5600, 18979, 18980, 504, 2]
 // Exports: default
 
 // Module 18978 (ChannelSettingsChangeDefaultForumLayout)
@@ -64,7 +64,7 @@ class ChannelSettingsChangeDefaultForumLayout {
     const TableRadioRow = tmp7(7349).TableRadioRow;
     intl2 = tmp7(1112).intl;
     items1 = [closure_7(TableRadioRow, obj3), ];
-    let obj4 = { icon: closure_7(channel(14837).ListViewIcon, {}), label: intl3.string(channel(1112).t.tuHPRX), value: channel(4772).ForumLayout.LIST };
+    let obj4 = { icon: closure_7(channel(14835).ListViewIcon, {}), label: intl3.string(channel(1112).t.tuHPRX), value: channel(4772).ForumLayout.LIST };
     const TableRadioRow2 = tmp7(7349).TableRadioRow;
     intl3 = tmp7(1112).intl;
     items1[1] = closure_7(TableRadioRow2, obj4);

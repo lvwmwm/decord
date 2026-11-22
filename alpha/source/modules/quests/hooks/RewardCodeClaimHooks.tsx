@@ -1,10 +1,10 @@
-// Module ID: 13755
-// Function ID: 13756
+// Module ID: 13753
+// Function ID: 13754
 // Name: RewardCodeClaimHooks
 // Dependencies: [5, 32, 19, 9959, 6561, 9996, 9961, 9964, 6565, 8430, 5588, 2]
 // Exports: useClaimOrFetchRewardCode, useClaimRewardCodePrimaryCtaClickHandler, useHandleRedemptionLinkClick
 
-// Module 13755 (RewardCodeClaimHooks)
+// Module 13753 (RewardCodeClaimHooks)
 import QuestTypes from "QuestTypes" /* 6561 */;
 import AdCreativeType from "AdCreativeType" /* 6565 */;
 import QuestActionCreators from "QuestActionCreators" /* 9959 */;

@@ -1,7 +1,7 @@
 // Module ID: 18392
 // Function ID: 18393
 // Name: ConjureProjectHeaderTitle
-// Dependencies: [19, 17, 21, 4913, 575, 7030, 1112, 4190, 13789, 5504, 7061, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 7030, 1112, 4190, 13787, 5504, 7061, 2]
 // Exports: default
 
 // Module 18392 (ConjureProjectHeaderTitle)
@@ -11,7 +11,7 @@ import intl3 from "intl" /* 1112 */;
 import _modDef4190 from "module_4190" /* 4190 */;
 import Text_Text from "Text/Text" /* 5504 */;
 import Pressables from "Pressables" /* 7030 */;
-import ConjureProjectIconDefault from "ConjureProjectIcon" /* 13789 */;
+import ConjureProjectIconDefault from "ConjureProjectIcon" /* 13787 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;

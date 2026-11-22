@@ -1,9 +1,9 @@
-// Module ID: 19555
-// Function ID: 19556
+// Module ID: 19551
+// Function ID: 19552
 // Name: JankNavigationReporter
 // Dependencies: [5090, 17524, 17528, 17529, 5092, 2]
 
-// Module 19555 (JankNavigationReporter)
+// Module 19551 (JankNavigationReporter)
 import RootNavigationRef from "RootNavigationRef" /* 5090 */;
 import getJankScreenName from "getJankScreenName" /* 17524 */;
 import react_nativeDefault from "react-native" /* 17528 */;
@@ -14,7 +14,7 @@ const getJankScreenNameDefault = getJankScreenName;
 
 class JankNavigationReporter {
   constructor() {
-    return Object.assign({ _isAttached: false, _routeKeyAtDispatch: "disabled", _screensBeforeDispatch: "isArray" });
+    return Object.assign({ _isAttached: false, _routeKeyAtDispatch: "description", _screensBeforeDispatch: "isArray" });
   }
   attach() {
     const self = this;
@@ -116,4 +116,4 @@ const prototype = JankNavigationReporter.prototype;
 const prototype2 = JankNavigationReporter.prototype;
 let result = size.fileFinishedImporting("modules/jank_stats/native/JankNavigationReporter.native.tsx");
 
-export default Object.assign({ _isAttached: false, _routeKeyAtDispatch: "disabled", _screensBeforeDispatch: "isArray" });
+export default Object.assign({ _isAttached: false, _routeKeyAtDispatch: "description", _screensBeforeDispatch: "isArray" });

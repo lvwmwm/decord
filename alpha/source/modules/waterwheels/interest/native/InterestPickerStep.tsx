@@ -1,10 +1,10 @@
-// Module ID: 19608
-// Function ID: 19609
+// Module ID: 19604
+// Function ID: 19605
 // Name: InterestPickerStep
-// Dependencies: [19, 21, 17832, 19609, 19606, 1241, 19610, 2]
+// Dependencies: [19, 21, 17832, 19605, 19602, 1241, 19606, 2]
 // Exports: default
 
-// Module 19608 (InterestPickerStep)
+// Module 19604 (InterestPickerStep)
 import Fragment from "Fragment" /* 21 */;
 import SentryUtilsDefault from "SentryUtils" /* 1241 */;
 import react from "react" /* 19 */;
@@ -24,9 +24,9 @@ export default function InterestPickerStep(navigation) {
   const tmp = dependencyMap;
   let obj = navigation(17832);
   const interestPickerGameList = obj.useInterestPickerGameList("InterestPickerStep");
-  const tmp4 = onComplete(19609)("InterestPickerStep");
+  const tmp4 = onComplete(19605)("InterestPickerStep");
   dependencyMap = tmp4;
-  let obj2 = navigation(19606);
+  let obj2 = navigation(19602);
   const setPicks = obj2.useInterestPickerPicks().setPicks;
   jsx = setPicks.useRef(false);
   const items = [navigation, onComplete, setPicks];
@@ -55,7 +55,7 @@ export default function InterestPickerStep(navigation) {
   if (null != tmp4) {
     tmp7 = null;
     if (null != interestPickerGameList) {
-      tmp7 = jsx(tmp3(19610), { arm: interestPickerGameList, catalog: tmp4, onComplete });
+      tmp7 = jsx(tmp3(19606), { arm: interestPickerGameList, catalog: tmp4, onComplete });
     }
   }
   return tmp7;

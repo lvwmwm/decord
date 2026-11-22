@@ -1,10 +1,10 @@
-// Module ID: 12252
-// Function ID: 12253
+// Module ID: 12259
+// Function ID: 12260
 // Name: openGameOrganizationJoinOutcomeActionSheet
-// Dependencies: [11896, 5127, 12253, 2119, 2]
+// Dependencies: [11896, 5127, 12260, 2119, 2]
 // Exports: default
 
-// Module 12252 (openGameOrganizationJoinOutcomeActionSheet)
+// Module 12259 (openGameOrganizationJoinOutcomeActionSheet)
 import asyncRequire from "asyncRequire" /* 2119 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
 import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11896 */;
@@ -16,5 +16,5 @@ const result = size.fileFinishedImporting("modules/game_organization_invites/nat
 export default function openGameOrganizationJoinOutcomeActionSheet(code, result) {
   const obj = ActionSheetActionCreatorsDefault;
   const obj2 = { code, result };
-  return obj.openLazy(asyncRequire(12253, dependencyMap.paths), closure_3, obj2);
+  return obj.openLazy(asyncRequire(12260, dependencyMap.paths), closure_3, obj2);
 };

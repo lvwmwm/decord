@@ -1,9 +1,9 @@
-// Module ID: 15664
-// Function ID: 15665
+// Module ID: 15662
+// Function ID: 15663
 // Name: VoiceNotificationManager
-// Dependencies: [32, 17, 4761, 2164, 6400, 4762, 2131, 5654, 4855, 1386, 1071, 575, 8454, 8452, 11062, 13522, 5529, 1112, 15665, 2121, 2]
+// Dependencies: [32, 17, 4761, 2164, 6400, 4762, 2131, 5654, 4855, 1386, 1071, 575, 8454, 8452, 11062, 13520, 5529, 1112, 15663, 2121, 2]
 
-// Module 15664 (VoiceNotificationManager)
+// Module 15662 (VoiceNotificationManager)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -12,8 +12,8 @@ import useChannelName from "useChannelName" /* 5529 */;
 import ForegroundServiceManagerDefault from "ForegroundServiceManager" /* 8452 */;
 import ForegroundServiceManagerTypes from "ForegroundServiceManagerTypes" /* 8454 */;
 import RTCConnectionUtilsDefault from "RTCConnectionUtils" /* 11062 */;
-import getChannelCopyForEmbeddedActivityDefault from "getChannelCopyForEmbeddedActivity" /* 13522 */;
-import AndroidCallWifiLockExperiment from "AndroidCallWifiLockExperiment" /* 15665 */;
+import getChannelCopyForEmbeddedActivityDefault from "getChannelCopyForEmbeddedActivity" /* 13520 */;
+import AndroidCallWifiLockExperiment from "AndroidCallWifiLockExperiment" /* 15663 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4761 */;
 import ApplicationStore from "ApplicationStore" /* 2164 */;
@@ -69,7 +69,7 @@ class VoiceNotificationManager {
     let createAction;
     obj = Object.create(new.target.prototype);
     obj.voiceServiceHandlerId = 9000;
-    obj.state = { channelId: "s", connectionState: "context", selfMute: false, deafened: "sunrise", isPushToTalk: "sunrise_over_mountains", embeddedActivity: "sparkler", isStreaming: "fireworks" };
+    obj.state = { channelId: "s", connectionState: "container", selfMute: false, deafened: "palm_tree", isPushToTalk: "leafless_tree", embeddedActivity: "bare", isStreaming: "barren" };
     obj.handleVoiceStateChange = handleVoiceStateChange;
     obj.handleMediaEngineStateChange = function handleMediaEngineStateChange() {
       const tmp = MediaEngineStore.isSelfMute() || MediaEngineStore.isSelfMutedTemporarily();
@@ -244,7 +244,7 @@ class VoiceNotificationManager {
 const prototype = VoiceNotificationManager.prototype;
 let obj = Object.create(VoiceNotificationManager.prototype);
 obj.voiceServiceHandlerId = 9000;
-obj.state = { channelId: "s", connectionState: "context", selfMute: false, deafened: "sunrise", isPushToTalk: "sunrise_over_mountains", embeddedActivity: "sparkler", isStreaming: "fireworks" };
+obj.state = { channelId: "s", connectionState: "container", selfMute: false, deafened: "palm_tree", isPushToTalk: "leafless_tree", embeddedActivity: "bare", isStreaming: "barren" };
 obj.handleVoiceStateChange = handleVoiceStateChange;
 obj.handleMediaEngineStateChange = function handleMediaEngineStateChange() {
   const tmp = MediaEngineStore.isSelfMute() || MediaEngineStore.isSelfMutedTemporarily();

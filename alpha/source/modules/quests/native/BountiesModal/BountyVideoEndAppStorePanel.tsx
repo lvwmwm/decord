@@ -1,10 +1,10 @@
-// Module ID: 16372
-// Function ID: 16373
+// Module ID: 16370
+// Function ID: 16371
 // Name: BountyVideoEndAppStorePanel
 // Dependencies: [19, 17, 1191, 5142, 21, 4913, 575, 10005, 5474, 1653, 8421, 5588, 10000, 5173, 1706, 5123, 5126, 5476, 504, 4974, 2]
 // Exports: default
 
-// Module 16372 (BountyVideoEndAppStorePanel)
+// Module 16370 (BountyVideoEndAppStorePanel)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1706 from "module_1706" /* 1706 */;

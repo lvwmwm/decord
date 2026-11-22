@@ -1,7 +1,7 @@
 // Module ID: 17755
 // Function ID: 17756
 // Name: StageVoiceChannel
-// Dependencies: [19, 17, 8320, 4845, 6619, 6552, 5657, 4767, 1071, 5642, 21, 1112, 4913, 575, 504, 6533, 17756, 6543, 6537, 7285, 7286, 2018, 6494, 13845, 5529, 10640, 17636, 17745, 17641, 2]
+// Dependencies: [19, 17, 8320, 4845, 6619, 6552, 5657, 4767, 1071, 5642, 21, 1112, 4913, 575, 504, 6533, 17756, 6543, 6537, 7285, 7286, 2018, 6494, 13843, 5529, 10640, 17636, 17745, 17641, 2]
 
 // Module 17755 (StageVoiceChannel)
 import react_native from "react-native" /* 17 */;
@@ -15,7 +15,7 @@ import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 6494 */;
 import StageMediaHooks from "StageMediaHooks" /* 6533 */;
 import useShowMemberVerificationGate from "useShowMemberVerificationGate" /* 7285 */;
 import MemberVerificationModalActionCreators from "MemberVerificationModalActionCreators" /* 7286 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 13845 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 13843 */;
 import ChannelItemDefault from "ChannelItem" /* 17636 */;
 import ChannelInfoDefault from "ChannelInfo" /* 17745 */;
 import useStageChannelSpeakerVoiceStatesDefault from "useStageChannelSpeakerVoiceStates" /* 17756 */;

@@ -1,7 +1,7 @@
 // Module ID: 18761
 // Function ID: 18762
 // Name: SearchMediaImage
-// Dependencies: [32, 19, 17, 4762, 6641, 1071, 21, 4913, 5122, 4920, 8229, 11656, 7682, 5481, 504, 11951, 1493, 12881, 1378, 5600, 1112, 9887, 10130, 1404, 6439, 8223, 9818, 11193, 2]
+// Dependencies: [32, 19, 17, 4762, 6641, 1071, 21, 4913, 5122, 4920, 8229, 11656, 7682, 5481, 504, 11951, 1493, 12879, 1378, 5600, 1112, 9887, 10130, 1404, 6439, 8223, 9818, 11193, 2]
 // Exports: SearchAttachmentMediaImage, SearchComponentMediaImage, SearchEmbedMediaImage, SearchFileMediaImage, SearchSoundMediaImage
 
 // Module 18761 (SearchMediaImage)
@@ -12,7 +12,7 @@ import ObscureMediaModels from "ObscureMediaModels" /* 8229 */;
 import CirclePlayIcon from "CirclePlayIcon" /* 9818 */;
 import AttachmentPreview from "AttachmentPreview" /* 11193 */;
 import generated_SpoilerIcon from "generated/SpoilerIcon" /* 11656 */;
-import MessageAttachmentUtils from "MessageAttachmentUtils" /* 12881 */;
+import MessageAttachmentUtils from "MessageAttachmentUtils" /* 12879 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -249,8 +249,8 @@ export function SearchEmbedMediaImage(embed) {
       if (flag2 == null) {
         flag2 = false;
       }
-      const getObscureReasonForEmbed = tmp2(12881).getObscureReasonForEmbed;
-      const tmp2Result = tmp2(12881);
+      const getObscureReasonForEmbed = tmp2(12879).getObscureReasonForEmbed;
+      const tmp2Result = tmp2(12879);
       if (!flag2) {
         flag2 = closure_4;
       }

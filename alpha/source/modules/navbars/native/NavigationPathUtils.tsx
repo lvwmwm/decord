@@ -1,10 +1,10 @@
-// Module ID: 13731
-// Function ID: 13732
+// Module ID: 13729
+// Function ID: 13730
 // Name: NavigationPathUtils
 // Dependencies: [1071, 4957, 2]
 // Exports: getSelectedSpecialNavigationPath, useSelectedSpecialNavigationPath
 
-// Module 13731 (NavigationPathUtils)
+// Module 13729 (NavigationPathUtils)
 import Constants from "Constants" /* 1071 */;
 import MemoryRouter from "MemoryRouter" /* 4957 */;
 import size from "module_2" /* 2 */;

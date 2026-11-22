@@ -1,10 +1,10 @@
-// Module ID: 13407
-// Function ID: 13408
+// Module ID: 13405
+// Function ID: 13406
 // Name: powerupListing
 // Dependencies: [32, 19, 8331, 8332, 8001, 504, 2]
 // Exports: useBuildGuildPowerupsSections
 
-// Module 13407 (powerupListing)
+// Module 13405 (powerupListing)
 import Powerups from "Powerups" /* 8001 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

@@ -1,7 +1,7 @@
 // Module ID: 18497
 // Function ID: 18498
 // Name: useConjurePatchNotesComposer
-// Dependencies: [5, 32, 19, 4843, 4918, 504, 6865, 10119, 18498, 12300, 8382, 8250, 2]
+// Dependencies: [5, 32, 19, 4843, 4918, 504, 6865, 10119, 18498, 12307, 8382, 8250, 2]
 // Exports: default
 
 // Module 18497 (useConjurePatchNotesComposer)

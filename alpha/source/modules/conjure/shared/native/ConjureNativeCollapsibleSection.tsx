@@ -1,7 +1,7 @@
 // Module ID: 18554
 // Function ID: 18555
 // Name: ConjureNativeCollapsibleSection
-// Dependencies: [19, 17, 21, 4913, 575, 5504, 12799, 7565, 7600, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 5504, 12797, 7565, 7600, 2]
 // Exports: ConjureNativeCollapsibleMeta, default
 
 // Module 18554 (ConjureNativeCollapsibleSection)
@@ -61,7 +61,7 @@ export default function ConjureNativeCollapsibleSection(showHeader) {
   ({ hideLabel, children } = showHeader);
   const tmp = closure_6();
   if (flag3) {
-    ChevronSmallRightIcon = tmp2(12799).ChevronSmallDownIcon;
+    ChevronSmallRightIcon = tmp2(12797).ChevronSmallDownIcon;
     tmp4 = tmp2;
   } else {
     ChevronSmallRightIcon = tmp2(7565).ChevronSmallRightIcon;

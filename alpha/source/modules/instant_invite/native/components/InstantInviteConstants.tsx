@@ -1,9 +1,9 @@
-// Module ID: 14651
-// Function ID: 14652
+// Module ID: 14649
+// Function ID: 14650
 // Name: components/InstantInviteConstants
-// Dependencies: [17, 8058, 1071, 12118, 10138, 575, 1112, 8051, 13663, 5610, 14652, 1625, 14653, 5127, 14654, 2119, 8066, 1378, 14671, 14672, 6450, 8250, 5861, 14673, 14674, 14675, 14676, 14677, 14678, 14679, 14680, 2]
+// Dependencies: [17, 8058, 1071, 12118, 10138, 575, 1112, 8051, 13661, 5610, 14650, 1625, 14651, 5127, 14652, 2119, 8066, 1378, 14669, 14670, 6450, 8250, 5861, 14671, 14672, 14673, 14674, 14675, 14676, 14677, 14678, 2]
 
-// Module 14651 (components/InstantInviteConstants)
+// Module 14649 (components/InstantInviteConstants)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
@@ -15,19 +15,19 @@ import getInviteURLDefault from "getInviteURL" /* 8066 */;
 import MessageActionCreatorsDefault from "MessageActionCreators" /* 8250 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 10138 */;
 import ShareDefault from "Share" /* 12118 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 13663 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 14652 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 14653 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 14671 */;
-import AssetRegistryDefault7 from "AssetRegistry" /* 14672 */;
-import AssetRegistryDefault8 from "AssetRegistry" /* 14673 */;
-import AssetRegistryDefault9 from "AssetRegistry" /* 14674 */;
-import AssetRegistryDefault10 from "AssetRegistry" /* 14675 */;
-import AssetRegistryDefault11 from "AssetRegistry" /* 14676 */;
-import AssetRegistryDefault12 from "AssetRegistry" /* 14677 */;
-import AssetRegistryDefault13 from "AssetRegistry" /* 14678 */;
-import AssetRegistryDefault14 from "AssetRegistry" /* 14679 */;
-import AssetRegistryDefault15 from "AssetRegistry" /* 14680 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 13661 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 14650 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 14651 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 14669 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 14670 */;
+import AssetRegistryDefault8 from "AssetRegistry" /* 14671 */;
+import AssetRegistryDefault9 from "AssetRegistry" /* 14672 */;
+import AssetRegistryDefault10 from "AssetRegistry" /* 14673 */;
+import AssetRegistryDefault11 from "AssetRegistry" /* 14674 */;
+import AssetRegistryDefault12 from "AssetRegistry" /* 14675 */;
+import AssetRegistryDefault13 from "AssetRegistry" /* 14676 */;
+import AssetRegistryDefault14 from "AssetRegistry" /* 14677 */;
+import AssetRegistryDefault15 from "AssetRegistry" /* 14678 */;
 import InstantInviteConstants from "InstantInviteConstants" /* 8058 */;
 import Constants from "Constants" /* 1071 */;
 import MetaQuestUtils_mod from "MetaQuestUtils" /* 1625 */;
@@ -108,7 +108,7 @@ const obj4 = {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     ActionSheetActionCreatorsDefault;
     const obj = { link: getInviteURLDefault(code), location: _location, channel };
-    const tmp2 = asyncRequire(14654, dependencyMap.paths);
+    const tmp2 = asyncRequire(14652, dependencyMap.paths);
     const combined = "InstantInviteQRCodeActionSheet-" + code;
     openLazy(tmp2, combined, obj, "stack");
   }

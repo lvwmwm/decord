@@ -1,14 +1,14 @@
-// Module ID: 12314
-// Function ID: 12315
+// Module ID: 12321
+// Function ID: 12322
 // Name: conjurePublishEval
-// Dependencies: [32, 5, 19, 4784, 1386, 6925, 6980, 12315, 12316, 12317, 504, 572, 4190, 1112, 12318, 2]
+// Dependencies: [32, 5, 19, 4784, 1386, 6925, 6980, 12322, 12323, 12324, 504, 572, 4190, 1112, 12325, 2]
 // Exports: conjurePublishEvalDimensionLabel, conjurePublishEvalScoreLabel, getPendingConjurePublishEval, isConjurePublishEvalUser, requestConjurePublishEval, useConjurePublishEvalForm, usePendingConjurePublishEval
 
-// Module 12314 (conjurePublishEval)
+// Module 12321 (conjurePublishEval)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl3 from "intl" /* 1112 */;
 import _modDef4190 from "module_4190" /* 4190 */;
-import ConjurePublishEvalTypes from "ConjurePublishEvalTypes" /* 12317 */;
+import ConjurePublishEvalTypes from "ConjurePublishEvalTypes" /* 12324 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
@@ -16,14 +16,14 @@ import GuildStore from "GuildStore" /* 4784 */;
 import UserStore from "UserStore" /* 1386 */;
 import ConjureChatStore from "ConjureChatStore" /* 6925 */;
 import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 6980 */;
-import ConjurePublishEvalCooldownStore from "ConjurePublishEvalCooldownStore" /* 12315 */;
-import ConjurePublishEvalStore from "ConjurePublishEvalStore" /* 12316 */;
+import ConjurePublishEvalCooldownStore from "ConjurePublishEvalCooldownStore" /* 12322 */;
+import ConjurePublishEvalStore from "ConjurePublishEvalStore" /* 12323 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, c1, c3, c6, c7, importDefault, publishStatus;
 
-const f101877 = (item) => null != guild.getGuild(item);
+const f101891 = (item) => null != guild.getGuild(item);
 let obj = function _submitConjurePublishEval() {
   obj = _asyncToGenerator(async function(arg0, value, arg2) {
     let published_revision;
@@ -125,7 +125,7 @@ const result = size.fileFinishedImporting("modules/conjure/publish_eval/conjureP
 export function isConjurePublishEvalUser() {
   let closure_0 = GuildStore;
   const CONJURE_PUBLISH_EVAL_GUILD_IDS = ConjurePublishEvalTypes.CONJURE_PUBLISH_EVAL_GUILD_IDS;
-  return CONJURE_PUBLISH_EVAL_GUILD_IDS.some(f101877);
+  return CONJURE_PUBLISH_EVAL_GUILD_IDS.some(f101891);
 }
 export function getPendingConjurePublishEval() {
   const pending = ConjurePublishEvalStore.getPending();
@@ -142,7 +142,7 @@ export function getPendingConjurePublishEval() {
       let closure_0 = GuildStore;
       const CONJURE_PUBLISH_EVAL_GUILD_IDS = ConjurePublishEvalTypes.CONJURE_PUBLISH_EVAL_GUILD_IDS;
       tmp2 = null;
-      if (CONJURE_PUBLISH_EVAL_GUILD_IDS.some(f101877)) {
+      if (CONJURE_PUBLISH_EVAL_GUILD_IDS.some(f101891)) {
         tmp2 = pending;
       }
     }
@@ -173,7 +173,7 @@ export function usePendingConjurePublishEval(projectId) {
         closure_0 = GuildStore;
         const CONJURE_PUBLISH_EVAL_GUILD_IDS = ConjurePublishEvalTypes.CONJURE_PUBLISH_EVAL_GUILD_IDS;
         tmp3 = null;
-        if (CONJURE_PUBLISH_EVAL_GUILD_IDS.some(f101877)) {
+        if (CONJURE_PUBLISH_EVAL_GUILD_IDS.some(f101891)) {
           tmp3 = pending;
         }
       }
@@ -192,13 +192,13 @@ export function requestConjurePublishEval(projectId) {
     let closure_0 = GuildStore;
     const CONJURE_PUBLISH_EVAL_GUILD_IDS = ConjurePublishEvalTypes.CONJURE_PUBLISH_EVAL_GUILD_IDS;
     const tmp20 = require;
-    if (CONJURE_PUBLISH_EVAL_GUILD_IDS.some(f101877)) {
+    if (CONJURE_PUBLISH_EVAL_GUILD_IDS.some(f101891)) {
       const submittedAt = ConjurePublishEvalCooldownStore.getSubmittedAt(id1, projectId);
       let tmp6 = null != submittedAt;
       if (tmp6) {
         const _Date = Date;
         const diff = Date.now() - submittedAt;
-        tmp6 = diff < tmp20(12317).CONJURE_PUBLISH_EVAL_COOLDOWN_MS;
+        tmp6 = diff < tmp20(12324).CONJURE_PUBLISH_EVAL_COOLDOWN_MS;
       }
       if (!tmp6) {
         obj = { userId: id1, projectId, publishTurnId: null, createdAt: null };

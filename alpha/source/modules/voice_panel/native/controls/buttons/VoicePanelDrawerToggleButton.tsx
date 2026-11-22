@@ -1,7 +1,7 @@
 // Module ID: 19363
 // Function ID: 19364
 // Name: VoicePanelDrawerToggleButton
-// Dependencies: [19, 21, 4913, 575, 19346, 19333, 19347, 7324, 12799, 14194, 2]
+// Dependencies: [19, 21, 4913, 575, 19346, 19333, 19347, 7324, 12797, 14192, 2]
 // Exports: default
 
 // Module 19363 (VoicePanelDrawerToggleButton)
@@ -53,9 +53,9 @@ export default function VoicePanelDrawerToggleButton(arg0) {
   const tmp6 = React3;
   const tmp9 = NativeViewDefault;
   if (isDrawerOpen) {
-    ChevronSmallUpIcon = tmp2(12799).ChevronSmallDownIcon;
+    ChevronSmallUpIcon = tmp2(12797).ChevronSmallDownIcon;
   } else {
-    ChevronSmallUpIcon = tmp2(14194).ChevronSmallUpIcon;
+    ChevronSmallUpIcon = tmp2(14192).ChevronSmallUpIcon;
   }
   items1[1] = _false(tmp9, obj3);
   return tmp6(tmp7, element);

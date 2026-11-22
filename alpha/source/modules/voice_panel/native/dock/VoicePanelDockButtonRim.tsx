@@ -1,7 +1,7 @@
 // Module ID: 18037
 // Function ID: 18038
 // Name: VoicePanelDockButtonRim
-// Dependencies: [32, 19, 17, 11768, 21, 5477, 575, 7865, 1653, 5123, 13310, 2]
+// Dependencies: [32, 19, 17, 11768, 21, 5477, 575, 7865, 1653, 5123, 13308, 2]
 
 // Module 18037 (VoicePanelDockButtonRim)
 import nativeDefault from "native" /* 575 */;

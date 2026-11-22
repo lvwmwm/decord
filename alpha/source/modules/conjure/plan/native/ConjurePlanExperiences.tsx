@@ -1,7 +1,7 @@
 // Module ID: 18572
 // Function ID: 18573
 // Name: ConjurePlanExperiences
-// Dependencies: [19, 17, 21, 7040, 18271, 13052, 12172, 10133, 4913, 575, 5504, 7704, 18557, 1112, 4190, 18573, 18579, 18565, 2]
+// Dependencies: [19, 17, 21, 7040, 18271, 13050, 12179, 10133, 4913, 575, 5504, 7704, 18557, 1112, 4190, 18573, 18579, 18565, 2]
 // Exports: default
 
 // Module 18572 (ConjurePlanExperiences)
@@ -13,8 +13,8 @@ import Text_Text from "Text/Text" /* 5504 */;
 import GameControllerIcon from "GameControllerIcon" /* 7040 */;
 import AppsIcon2 from "AppsIcon" /* 7704 */;
 import ShieldIcon from "ShieldIcon" /* 10133 */;
-import RobotIcon from "RobotIcon" /* 12172 */;
-import UserCircleIcon from "UserCircleIcon" /* 13052 */;
+import RobotIcon from "RobotIcon" /* 12179 */;
+import UserCircleIcon from "UserCircleIcon" /* 13050 */;
 import WindowTopIcon from "WindowTopIcon" /* 18271 */;
 import conjurePlanExperienceSurfaces from "conjurePlanExperienceSurfaces" /* 18557 */;
 import conjurePlanFormat from "conjurePlanFormat" /* 18565 */;

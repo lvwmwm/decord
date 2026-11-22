@@ -1,10 +1,10 @@
-// Module ID: 16586
-// Function ID: 16587
+// Module ID: 16584
+// Function ID: 16585
 // Name: useQuestDockAcceptQuest
-// Dependencies: [5, 19, 8404, 6558, 16508, 563, 16469, 16479, 9958, 16397, 13756, 6561, 8430, 16504, 9959, 16511, 2]
+// Dependencies: [5, 19, 8404, 6558, 16506, 563, 16467, 16477, 9958, 16395, 13754, 6561, 8430, 16502, 9959, 16509, 2]
 // Exports: useQuestDockAcceptQuest
 
-// Module 16586 (useQuestDockAcceptQuest)
+// Module 16584 (useQuestDockAcceptQuest)
 import QuestConstants from "QuestConstants" /* 6558 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;

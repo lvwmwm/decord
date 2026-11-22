@@ -1,10 +1,10 @@
-// Module ID: 12183
-// Function ID: 12184
+// Module ID: 12190
+// Function ID: 12191
 // Name: isPartyFull
 // Dependencies: [2]
 // Exports: isPartyFull
 
-// Module 12183 (isPartyFull)
+// Module 12190 (isPartyFull)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/activities/utils/isPartyFull.tsx");

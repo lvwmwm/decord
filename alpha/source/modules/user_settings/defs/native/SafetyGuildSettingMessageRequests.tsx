@@ -1,7 +1,7 @@
 // Module ID: 17373
 // Function ID: 17374
 // Name: SafetyGuildSettingMessageRequests
-// Dependencies: [4784, 17363, 8712, 11938, 17374, 16118, 4738, 5860, 1112, 5932, 17375, 7793, 6414, 7415, 17366, 11937, 2]
+// Dependencies: [4784, 17363, 8712, 11938, 17374, 16116, 4738, 5860, 1112, 5932, 17375, 7793, 6414, 7415, 17366, 11937, 2]
 
 // Module 17373 (SafetyGuildSettingMessageRequests)
 import intl5 from "intl" /* 1112 */;
@@ -12,7 +12,7 @@ import UserSettingsUtils from "UserSettingsUtils" /* 7415 */;
 import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7793 */;
 import SettingsConstants from "SettingsConstants" /* 8712 */;
 import SettingRendererConstants from "SettingRendererConstants" /* 11938 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 16118 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 16116 */;
 import DefultGuildsRestrictedSetting from "DefultGuildsRestrictedSetting" /* 17366 */;
 import useShouldDisableMessageRequestSettings from "useShouldDisableMessageRequestSettings" /* 17374 */;
 import DefaultDMSettingsExperiment from "DefaultDMSettingsExperiment" /* 17375 */;

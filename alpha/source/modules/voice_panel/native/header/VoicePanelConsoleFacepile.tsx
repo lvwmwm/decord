@@ -1,7 +1,7 @@
 // Module ID: 19261
 // Function ID: 19262
 // Name: VoicePanelConsoleFacepile
-// Dependencies: [19, 1071, 21, 4913, 575, 13822, 1112, 11015, 1254, 7324, 1186, 2]
+// Dependencies: [19, 1071, 21, 4913, 575, 13820, 1112, 11015, 1254, 7324, 1186, 2]
 // Exports: default
 
 // Module 19261 (VoicePanelConsoleFacepile)
@@ -13,7 +13,7 @@ import native from "native" /* 1186 */;
 import GlobalUtils from "GlobalUtils" /* 1254 */;
 import NativeViewDefault from "NativeView" /* 7324 */;
 import useGameConsoleAccountsDefault from "useGameConsoleAccounts" /* 11015 */;
-import getConsoleIconDefault from "getConsoleIcon" /* 13822 */;
+import getConsoleIconDefault from "getConsoleIcon" /* 13820 */;
 import react from "react" /* 19 */;
 import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;

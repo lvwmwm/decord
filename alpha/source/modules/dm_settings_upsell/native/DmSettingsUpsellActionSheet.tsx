@@ -1,7 +1,7 @@
 // Module ID: 19478
 // Function ID: 19479
 // Name: DmSettingsUpsellActionSheet
-// Dependencies: [19, 17, 4784, 21, 4913, 575, 504, 19475, 19479, 7553, 5600, 11800, 5504, 1112, 7322, 5511, 7415, 4738, 5595, 5127, 15121, 2]
+// Dependencies: [19, 17, 4784, 21, 4913, 575, 504, 19475, 19479, 7553, 5600, 11800, 5504, 1112, 7322, 5511, 7415, 4738, 5595, 5127, 15119, 2]
 // Exports: default
 
 // Module 19478 (DmSettingsUpsellActionSheet)
@@ -10,7 +10,7 @@ import nativeDefault from "native" /* 575 */;
 import UserSettings from "UserSettings" /* 4738 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
 import UserSettingsUtils from "UserSettingsUtils" /* 7415 */;
-import openGuildActionSheetDefault from "openGuildActionSheet" /* 15121 */;
+import openGuildActionSheetDefault from "openGuildActionSheet" /* 15119 */;
 import DmSettingsUpsellManager from "DmSettingsUpsellManager" /* 19475 */;
 import DmSettingsUpsellUtils from "DmSettingsUpsellUtils" /* 19479 */;
 import react from "react" /* 19 */;

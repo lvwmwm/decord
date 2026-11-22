@@ -1,10 +1,10 @@
-// Module ID: 16666
-// Function ID: 16667
+// Module ID: 16664
+// Function ID: 16665
 // Name: AppearanceSetting
-// Dependencies: [4937, 1194, 1071, 5122, 504, 1238, 8572, 1112, 3056, 11937, 16667, 16669, 2]
+// Dependencies: [4937, 1194, 1071, 5122, 504, 1238, 8572, 1112, 3056, 11937, 16665, 16667, 2]
 // Exports: useAppearanceSettingTrailing
 
-// Module 16666 (AppearanceSetting)
+// Module 16664 (AppearanceSetting)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1071 */;
 import intl3 from "intl" /* 1112 */;
@@ -12,7 +12,7 @@ import ThemeConstants from "ThemeConstants" /* 1194 */;
 import ClientThemesUtils from "ClientThemesUtils" /* 1238 */;
 import useThemeDefault from "useTheme" /* 5122 */;
 import useActiveTheme from "useActiveTheme" /* 8572 */;
-import PaintPaletteIcon from "PaintPaletteIcon" /* 16667 */;
+import PaintPaletteIcon from "PaintPaletteIcon" /* 16665 */;
 import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4937 */;
 import SettingBuilders from "SettingBuilders" /* 11937 */;
 import size from "module_2" /* 2 */;

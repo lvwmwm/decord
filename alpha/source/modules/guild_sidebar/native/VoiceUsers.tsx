@@ -1,7 +1,7 @@
 // Module ID: 17641
 // Function ID: 17642
 // Name: VoiceUsers
-// Dependencies: [19, 17, 4825, 21, 4913, 575, 11130, 8571, 9677, 504, 17642, 5643, 1112, 13421, 5504, 17646, 12380, 17647, 2]
+// Dependencies: [19, 17, 4825, 21, 4913, 575, 11130, 8571, 9677, 504, 17642, 5643, 1112, 13419, 5504, 17646, 12387, 17647, 2]
 // Exports: default, getAudienceItemHeight
 
 // Module 17641 (VoiceUsers)
@@ -12,7 +12,7 @@ import Text_Text from "Text/Text" /* 5504 */;
 import useScaledTextLineHeight from "useScaledTextLineHeight" /* 5643 */;
 import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 8571 */;
 import ChannelListLayout from "ChannelListLayout" /* 11130 */;
-import HeadphonesIcon from "HeadphonesIcon" /* 13421 */;
+import HeadphonesIcon from "HeadphonesIcon" /* 13419 */;
 import react_mod from "react" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 4825 */;
 import Fragment from "Fragment" /* 21 */;

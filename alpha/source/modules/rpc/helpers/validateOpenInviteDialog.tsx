@@ -1,10 +1,10 @@
-// Module ID: 15699
-// Function ID: 15700
+// Module ID: 15697
+// Function ID: 15698
 // Name: validateOpenInviteDialog
 // Dependencies: [4762, 4784, 4845, 1071, 6903, 6909, 6626, 6625, 6914, 7589, 2]
 // Exports: validateOpenInviteDialog
 
-// Module 15699 (validateOpenInviteDialog)
+// Module 15697 (validateOpenInviteDialog)
 import Constants from "Constants" /* 1071 */;
 import EmbeddedAppTypes from "EmbeddedAppTypes" /* 6625 */;
 import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6626 */;

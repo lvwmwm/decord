@@ -1,7 +1,7 @@
 // Module ID: 17799
 // Function ID: 17800
 // Name: WaterwheelsDiscoverPanel
-// Dependencies: [5, 32, 19, 17, 1245, 502, 1386, 21, 4913, 575, 16480, 17800, 17803, 17810, 5127, 17813, 17818, 10051, 17825, 7490, 1112, 2643, 10041, 504, 17826, 17570, 17828, 2]
+// Dependencies: [5, 32, 19, 17, 1245, 502, 1386, 21, 4913, 575, 16478, 17800, 17803, 17810, 5127, 17813, 17818, 10051, 17825, 7490, 1112, 2643, 10041, 504, 17826, 17570, 17828, 2]
 // Exports: default
 
 // Module 17799 (WaterwheelsDiscoverPanel)
@@ -59,7 +59,7 @@ function WaterwheelsDiscoverFeed(enabled) {
   let tmp = closure_14();
   const tmp2 = youBarTotalHeight;
   const tmp3 = dependencyMap;
-  let obj = youBarTotalHeight(16480);
+  let obj = youBarTotalHeight(16478);
   youBarTotalHeight = obj.useYouBarTotalHeight();
   let tmp5 = entries(memo.useState(() => {
     set = new Set();

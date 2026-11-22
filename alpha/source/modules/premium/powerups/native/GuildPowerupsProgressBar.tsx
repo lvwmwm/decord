@@ -1,7 +1,7 @@
 // Module ID: 17736
 // Function ID: 17737
 // Name: GuildPowerupsProgressBar
-// Dependencies: [19, 17, 17737, 4784, 21, 575, 1653, 5468, 4913, 563, 17738, 17739, 5123, 13370, 7539, 1112, 2856, 7600, 5504, 7565, 2]
+// Dependencies: [19, 17, 17737, 4784, 21, 575, 1653, 5468, 4913, 563, 17738, 17739, 5123, 13368, 7539, 1112, 2856, 7600, 5504, 7565, 2]
 // Exports: default
 
 // Module 17736 (GuildPowerupsProgressBar)
@@ -9,7 +9,7 @@ import nativeDefault from "native" /* 575 */;
 import timing_timing from "timing/timing" /* 5123 */;
 import LinearGradientDefault from "LinearGradient" /* 5468 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7539 */;
-import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 13370 */;
+import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 13368 */;
 import GuildBoostingProgressBarActionCreators from "GuildBoostingProgressBarActionCreators" /* 17739 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

@@ -1,7 +1,7 @@
 // Module ID: 18745
 // Function ID: 18746
 // Name: SearchHistoryRow
-// Dependencies: [5, 19, 17, 4762, 6619, 1386, 8576, 21, 4913, 575, 13224, 7030, 7151, 18734, 13220, 18728, 5504, 7428, 563, 18744, 6954, 7737, 18743, 18746, 18759, 1112, 2]
+// Dependencies: [5, 19, 17, 4762, 6619, 1386, 8576, 21, 4913, 575, 13222, 7030, 7151, 18734, 13218, 18728, 5504, 7428, 563, 18744, 6954, 7737, 18743, 18746, 18759, 1112, 2]
 
 // Module 18745 (SearchHistoryRow)
 import react_native from "react-native" /* 17 */;
@@ -9,8 +9,8 @@ import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5504 */;
 import UserActionCreators from "UserActionCreators" /* 6954 */;
 import SearchConstants from "SearchConstants" /* 8576 */;
-import TrackingDefault from "Tracking" /* 13220 */;
-import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13224 */;
+import TrackingDefault from "Tracking" /* 13218 */;
+import SearchPlatformActionCreatorsDefault from "SearchPlatformActionCreators" /* 13222 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4762 */;

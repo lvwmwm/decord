@@ -1,7 +1,7 @@
 // Module ID: 18743
 // Function ID: 18744
 // Name: DMRow
-// Dependencies: [5, 32, 19, 17, 4914, 5651, 4855, 1071, 21, 4913, 575, 5504, 4969, 13509, 504, 10387, 1186, 7778, 14110, 18728, 2]
+// Dependencies: [5, 32, 19, 17, 4914, 5651, 4855, 1071, 21, 4913, 575, 5504, 4969, 13507, 504, 10387, 1186, 7778, 14108, 18728, 2]
 
 // Module 18743 (DMRow)
 import nativeDefault from "native" /* 575 */;
@@ -10,8 +10,8 @@ import UserUtils from "UserUtils" /* 4969 */;
 import Text_Text from "Text/Text" /* 5504 */;
 import AssetRegistryDefault from "AssetRegistry" /* 7778 */;
 import BotTagDefault from "BotTag" /* 10387 */;
-import ActivityStatusDefault from "ActivityStatus" /* 13509 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14110 */;
+import ActivityStatusDefault from "ActivityStatus" /* 13507 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14108 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

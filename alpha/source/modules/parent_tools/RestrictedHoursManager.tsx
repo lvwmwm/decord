@@ -1,10 +1,10 @@
-// Module ID: 20166
-// Function ID: 20167
+// Module ID: 20163
+// Function ID: 20164
 // Name: RestrictedHoursManager
 // Dependencies: [11102, 1386, 8335, 1112, 2824, 1410, 11104, 572, 19418, 7484, 2]
 // Exports: getCurrentRestrictedHoursState
 
-// Module 20166 (RestrictedHoursManager)
+// Module 20163 (RestrictedHoursManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import intl2 from "intl" /* 1112 */;
 import FamilyCenterModels from "FamilyCenterModels" /* 1410 */;

@@ -1,7 +1,7 @@
 // Module ID: 17572
 // Function ID: 17573
 // Name: MessagesEmptyState
-// Dependencies: [19, 17, 21, 4913, 1500, 5930, 1263, 8150, 16480, 17573, 5504, 1112, 5511, 2]
+// Dependencies: [19, 17, 21, 4913, 1500, 5930, 1263, 8150, 16478, 17573, 5504, 1112, 5511, 2]
 // Exports: default
 
 // Module 17572 (MessagesEmptyState)
@@ -10,7 +10,7 @@ import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 126
 import useNavigation from "useNavigation" /* 1500 */;
 import useTrackImpressionDefault from "useTrackImpression" /* 5930 */;
 import useIsScreenLandscape from "useIsScreenLandscape" /* 8150 */;
-import useYouBarTotalHeight from "useYouBarTotalHeight" /* 16480 */;
+import useYouBarTotalHeight from "useYouBarTotalHeight" /* 16478 */;
 import ActivitiesTogetherSpotIllustration from "ActivitiesTogetherSpotIllustration" /* 17573 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

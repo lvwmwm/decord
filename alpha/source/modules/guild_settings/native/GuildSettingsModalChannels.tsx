@@ -1,7 +1,7 @@
 // Module ID: 17664
 // Function ID: 17665
 // Name: GuildSettingsModalChannels
-// Dependencies: [19, 17, 4762, 4784, 4845, 4855, 1386, 17662, 1071, 21, 4913, 6407, 575, 4787, 4974, 1112, 4920, 1089, 7709, 1186, 17665, 504, 7636, 5529, 7030, 1628, 5511, 7550, 7746, 9578, 7029, 4850, 13891, 17666, 5487, 11251, 17667, 17663, 12217, 16704, 11219, 12079, 6511, 5860, 1500, 38, 5519, 2]
+// Dependencies: [19, 17, 4762, 4784, 4845, 4855, 1386, 17662, 1071, 21, 4913, 6407, 575, 4787, 4974, 1112, 4920, 1089, 7709, 1186, 17665, 504, 7636, 5529, 7030, 1628, 5511, 7550, 7746, 9578, 7029, 4850, 13889, 17666, 5487, 11251, 17667, 17663, 12224, 16702, 11219, 12079, 6511, 5860, 1500, 38, 5519, 2]
 // Exports: default
 
 // Module 17664 (GuildSettingsModalChannels)
@@ -24,9 +24,9 @@ import Pressables from "Pressables" /* 7030 */;
 import showSimpleActionSheet2 from "showSimpleActionSheet" /* 7550 */;
 import FavoritesActionCreators from "FavoritesActionCreators" /* 11219 */;
 import ChannelSettingsActionCreators from "ChannelSettingsActionCreators" /* 11251 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12217 */;
-import ChannelSortingUtils from "ChannelSortingUtils" /* 13891 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 16704 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12224 */;
+import ChannelSortingUtils from "ChannelSortingUtils" /* 13889 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 16702 */;
 import GuildSettingsModalChannelsActionCreatorsDefault from "GuildSettingsModalChannelsActionCreators" /* 17663 */;
 import AssetRegistryDefault3 from "AssetRegistry" /* 17667 */;
 import react from "react" /* 19 */;

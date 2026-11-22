@@ -1,10 +1,10 @@
-// Module ID: 19863
-// Function ID: 19864
+// Module ID: 19860
+// Function ID: 19861
 // Name: GuildSettingsRoleMembers
-// Dependencies: [32, 19, 17, 7494, 1071, 21, 4913, 575, 5595, 1112, 19841, 12380, 504, 5860, 7994, 1186, 1255, 5127, 19842, 2119, 13857, 7591, 7231, 7427, 5617, 5504, 7045, 13002, 2]
+// Dependencies: [32, 19, 17, 7494, 1071, 21, 4913, 575, 5595, 1112, 19838, 12387, 504, 5860, 7994, 1186, 1255, 5127, 19839, 2119, 13855, 7591, 7231, 7427, 5617, 5504, 7045, 13000, 2]
 // Exports: default
 
-// Module 19863 (GuildSettingsRoleMembers)
+// Module 19860 (GuildSettingsRoleMembers)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -147,7 +147,7 @@ export default function GuildSettingsRoleMembers(guild) {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     ActionSheetActionCreatorsDefault;
     const obj2 = { guild, role };
-    const tmp3 = asyncRequire(19842, dependencyMap.paths);
+    const tmp3 = asyncRequire(19839, dependencyMap.paths);
     openLazy(tmp3, "role-add-members-" + guild.id + "-" + role.id, obj2);
   }, items3);
   closure_6 = found.useCallback((item) => {

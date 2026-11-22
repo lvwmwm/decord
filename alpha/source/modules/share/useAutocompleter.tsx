@@ -48,13 +48,13 @@ export default function useAutocompleter(searchOptions) {
     search: react.useCallback((arg0) => {
       let query;
       let resultTypes;
-      const f137263 = (item) => resultTypes2.has(item);
+      const f137279 = (item) => resultTypes2.has(item);
       ({ query, resultTypes } = arg0);
       let tmp = null != options.resultTypes;
       if (tmp) {
         const resultTypes2 = obj.resultTypes;
-        tmp = resultTypes.length === resultTypes2.size && resultTypes.every(f137263);
-        resultTypes.length === resultTypes2.size && resultTypes.every(f137263);
+        tmp = resultTypes.length === resultTypes2.size && resultTypes.every(f137279);
+        resultTypes.length === resultTypes2.size && resultTypes.every(f137279);
       }
       if (!tmp) {
         options.setResultTypes(resultTypes);

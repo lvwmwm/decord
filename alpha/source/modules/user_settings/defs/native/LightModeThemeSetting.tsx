@@ -1,15 +1,15 @@
-// Module ID: 16710
-// Function ID: 16711
+// Module ID: 16708
+// Function ID: 16709
 // Name: LightModeThemeSetting
-// Dependencies: [1191, 1194, 8712, 1071, 504, 11937, 1112, 16711, 16712, 2]
+// Dependencies: [1191, 1194, 8712, 1071, 504, 11937, 1112, 16709, 16710, 2]
 
-// Module 16710 (LightModeThemeSetting)
+// Module 16708 (LightModeThemeSetting)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
 import ThemeConstants from "ThemeConstants" /* 1194 */;
 import SettingsConstants from "SettingsConstants" /* 8712 */;
-import useSyncedModeThemeName from "useSyncedModeThemeName" /* 16711 */;
+import useSyncedModeThemeName from "useSyncedModeThemeName" /* 16709 */;
 import ThemeStore from "ThemeStore" /* 1191 */;
 import SettingBuilders from "SettingBuilders" /* 11937 */;
 import size from "module_2" /* 2 */;

@@ -1,14 +1,14 @@
 // Module ID: 19519
 // Function ID: 19520
 // Name: GuildPowerupsManager
-// Dependencies: [4784, 4845, 4946, 8331, 7484, 4787, 6890, 13388, 13389, 13404, 17681, 5848, 13379, 8746, 2]
+// Dependencies: [4784, 4845, 4946, 8331, 7484, 4787, 6890, 13386, 13387, 13402, 17681, 5848, 13377, 8746, 2]
 
 // Module 19519 (GuildPowerupsManager)
 import FavoritesUtils from "FavoritesUtils" /* 4787 */;
 import shared_PlatformUtils from "shared/PlatformUtils" /* 5848 */;
 import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 8746 */;
-import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 13379 */;
-import useHasAllocateBoostPermission from "useHasAllocateBoostPermission" /* 13404 */;
+import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 13377 */;
+import useHasAllocateBoostPermission from "useHasAllocateBoostPermission" /* 13402 */;
 import useIsCurrentUserEligibleForPowerupUpsells from "useIsCurrentUserEligibleForPowerupUpsells" /* 17681 */;
 import GuildStore from "GuildStore" /* 4784 */;
 import PermissionStore from "PermissionStore" /* 4845 */;
@@ -44,10 +44,10 @@ class GuildPowerupsManager extends AutomaticLifecycleManager {
           const GameServerExperiment = tmp7(6890).GameServerExperiment;
           const obj = { guildId: guild.id, location: "GuildPowerupsManager" };
           GameServerExperiment.trackExposure(obj);
-          const ServerThemeExperiment = tmp7(13388).ServerThemeExperiment;
+          const ServerThemeExperiment = tmp7(13386).ServerThemeExperiment;
           const obj2 = { guildId: guild.id, location: "GuildPowerupsManager" };
           ServerThemeExperiment.trackExposure(obj2);
-          const ServerThemeApexShadowExperiment = tmp7(13389).ServerThemeApexShadowExperiment;
+          const ServerThemeApexShadowExperiment = tmp7(13387).ServerThemeApexShadowExperiment;
           const obj4 = { guildId: guild.id, location: "GuildPowerupsManager" };
           const config = ServerThemeApexShadowExperiment.getConfig(obj4);
           const tmp7Result = useHasAllocateBoostPermission;

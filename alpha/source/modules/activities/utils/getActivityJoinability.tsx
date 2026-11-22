@@ -1,21 +1,21 @@
-// Module ID: 14494
-// Function ID: 14495
+// Module ID: 14492
+// Function ID: 14493
 // Name: getActivityJoinability
-// Dependencies: [1071, 12188, 12184, 10673, 5557, 10777, 10663, 8061, 14331, 1378, 12181, 12182, 12183, 2]
+// Dependencies: [1071, 12195, 12191, 10673, 5557, 10777, 10663, 8061, 14329, 1378, 12188, 12189, 12190, 2]
 // Exports: default
 
-// Module 14494 (getActivityJoinability)
+// Module 14492 (getActivityJoinability)
 import PlatformUtils from "PlatformUtils" /* 1378 */;
 import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5557 */;
 import hasFlagDefault from "hasFlag" /* 8061 */;
 import useIsActivitiesEnabledForCurrentPlatform from "useIsActivitiesEnabledForCurrentPlatform" /* 10663 */;
 import getFrameSurfaces from "getFrameSurfaces" /* 10673 */;
 import getEmbeddedActivityJoinability from "getEmbeddedActivityJoinability" /* 10777 */;
-import _slicedToArray from "_slicedToArray" /* 12181 */;
-import hasPartySize from "hasPartySize" /* 12182 */;
-import getIsInParty from "getIsInParty" /* 12184 */;
-import getCurrentUserPresenceActivityDefault from "getCurrentUserPresenceActivity" /* 12188 */;
-import isActivityJoinableOnCurrentPlatformDefault from "isActivityJoinableOnCurrentPlatform" /* 14331 */;
+import _slicedToArray from "_slicedToArray" /* 12188 */;
+import hasPartySize from "hasPartySize" /* 12189 */;
+import getIsInParty from "getIsInParty" /* 12191 */;
+import getCurrentUserPresenceActivityDefault from "getCurrentUserPresenceActivity" /* 12195 */;
+import isActivityJoinableOnCurrentPlatformDefault from "isActivityJoinableOnCurrentPlatform" /* 14329 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
@@ -131,7 +131,7 @@ export default function getActivityJoinability(arg0) {
       const obj8 = hasPartySize;
       const tmp40 = require;
       if (obj8.hasPartySize(partySize)) {
-        const tmp40Result = tmp40(12183);
+        const tmp40Result = tmp40(12190);
         if (!tmp40Result.isPartyFull(partySize)) {
           const tmp43 = importDefault;
           const tmp44 = constants;

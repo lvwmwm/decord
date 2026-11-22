@@ -1,10 +1,10 @@
-// Module ID: 12929
-// Function ID: 12930
+// Module ID: 12927
+// Function ID: 12928
 // Name: useEmbeddedAppsForChannel
 // Dependencies: [19, 5651, 1386, 4761, 504, 4834, 6864, 1254, 2]
 // Exports: default, useEmbeddedAppsByChannel, useEmbeddedAppsWithPresence
 
-// Module 12929 (useEmbeddedAppsForChannel)
+// Module 12927 (useEmbeddedAppsForChannel)
 import EmbeddedActivitiesStore2 from "EmbeddedActivitiesStore" /* 4761 */;
 import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 6864 */;
 import react from "react" /* 19 */;

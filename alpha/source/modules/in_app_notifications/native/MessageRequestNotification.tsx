@@ -35,7 +35,7 @@ export default function MessageRequestInAppNotification(notification) {
     }
   }, []);
   const NotificationPressable = author(11160).NotificationPressable;
-  let obj2 = { user: author, size: author(1186).AvatarSizes.NORMAL, guildId: "r" };
+  let obj2 = { user: author, size: author(1186).AvatarSizes.NORMAL, guildId: "Array" };
   const Avatar = author(1186).Avatar;
   ({ text: intl.string(author(1112).t["Bx4/Lf"]) });
   const SystemMessageText = author(11123).SystemMessageText;

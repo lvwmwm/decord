@@ -1,10 +1,10 @@
-// Module ID: 12324
-// Function ID: 12325
+// Module ID: 12331
+// Function ID: 12332
 // Name: ExperimentEmbedPlatformUtils
-// Dependencies: [5127, 12325, 2119, 11947, 11948, 8239, 5855, 2]
+// Dependencies: [5127, 12332, 2119, 11947, 11948, 8239, 5855, 2]
 // Exports: handleCodedLinkExperimentEmbedTap
 
-// Module 12324 (ExperimentEmbedPlatformUtils)
+// Module 12331 (ExperimentEmbedPlatformUtils)
 import asyncRequire from "asyncRequire" /* 2119 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
 import ExperimentManager from "ExperimentManager" /* 5855 */;
@@ -60,5 +60,5 @@ export function handleCodedLinkExperimentEmbedTap(experimentFromEmbedURL, experi
   }
   const obj3 = { id: experimentFromEmbedURL };
   const obj6 = ActionSheetActionCreatorsDefault;
-  obj6.openLazy(asyncRequire(12325, dependencyMap.paths), "ExperimentOverrideSheet", obj3);
+  obj6.openLazy(asyncRequire(12332, dependencyMap.paths), "ExperimentOverrideSheet", obj3);
 }

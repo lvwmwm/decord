@@ -1,10 +1,10 @@
-// Module ID: 13911
-// Function ID: 13912
+// Module ID: 13909
+// Function ID: 13910
 // Name: CollectiblesShopCheckoutDetails
-// Dependencies: [19, 17, 1073, 9010, 21, 4913, 575, 8179, 5600, 13912, 8151, 9032, 8913, 9009, 2109, 9028, 2112, 1074, 9552, 9551, 9020, 1112, 5504, 8086, 9562, 13913, 8920, 2173, 9574, 2]
+// Dependencies: [19, 17, 1073, 9010, 21, 4913, 575, 8179, 5600, 13910, 8151, 9032, 8913, 9009, 2109, 9028, 2112, 1074, 9552, 9551, 9020, 1112, 5504, 8086, 9562, 13911, 8920, 2173, 9574, 2]
 // Exports: default
 
-// Module 13911 (CollectiblesShopCheckoutDetails)
+// Module 13909 (CollectiblesShopCheckoutDetails)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1073 */;
@@ -26,7 +26,7 @@ import _modDef9551 from "module_9551" /* 9551 */;
 import FractionalNitroCoinIllustration2 from "FractionalNitroCoinIllustration" /* 9552 */;
 import collectibles_CollectiblesUtils from "collectibles/CollectiblesUtils" /* 9562 */;
 import getProductName from "getProductName" /* 9574 */;
-import _modDef13912 from "module_13912" /* 13912 */;
+import _modDef13910 from "module_13910" /* 13910 */;
 import react_mod from "react" /* 19 */;
 import CollectiblesPreviewConstants from "CollectiblesPreviewConstants" /* 9010 */;
 import Fragment from "Fragment" /* 21 */;
@@ -55,7 +55,7 @@ function ProfileEffectAssetPreview(item) {
   if (null != tmp4) {
     const obj = { style: tmp.profileEffectContainer, children: items };
     const obj2 = { source: obj3, accessibilityLabel: tmp4.accessibilityLabel, style: tmp.profileEffect, resizeMode: "cover" };
-    obj3 = { uri: _modDef13912 };
+    obj3 = { uri: _modDef13910 };
     const tmp2Result = FastImageDefault;
     items = [metroImportDefault(tmp2Result, obj2), ];
     const obj4 = { style: tmp.profileEffect, source: obj5, accessibilityLabel: tmp4.title, resizeMode: "cover" };

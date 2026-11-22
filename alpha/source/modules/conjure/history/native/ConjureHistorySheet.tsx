@@ -1,7 +1,7 @@
 // Module ID: 18363
 // Function ID: 18364
 // Name: ConjureHistorySheet
-// Dependencies: [5, 32, 19, 17, 21, 4913, 575, 5929, 5504, 5511, 1112, 4190, 7020, 18360, 7348, 7045, 15264, 18364, 7047, 8658, 7591, 7023, 7597, 7586, 13533, 5127, 7622, 2119, 2168, 1628, 18365, 18362, 18366, 5866, 18361, 5595, 5594, 18358, 18368, 18368, 7553, 7515, 5145, 18369, 18367, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4913, 575, 5929, 5504, 5511, 1112, 4190, 7020, 18360, 7348, 7045, 15262, 18364, 7047, 8658, 7591, 7023, 7597, 7586, 13531, 5127, 7622, 2119, 2168, 1628, 18365, 18362, 18366, 5866, 18361, 5595, 5594, 18358, 18368, 18368, 7553, 7515, 5145, 18369, 18367, 2]
 // Exports: default
 
 // Module 18363 (ConjureHistorySheet)
@@ -469,7 +469,7 @@ function HistoryTabs(onChange) {
       }
     }
   };
-  let obj3 = { ref, onLayout, accessibilityLabel: intl.string(_modDef4190["/2GnYy"]), children: closure_7(onChange(13533).Tabs, { state: segmentedControlState }) };
+  let obj3 = { ref, onLayout, accessibilityLabel: intl.string(_modDef4190["/2GnYy"]), children: closure_7(onChange(13531).Tabs, { state: segmentedControlState }) };
   segmentedControlState = obj.useSegmentedControlState(obj2);
   intl = onChange(1112).intl;
   return closure_7(View, obj3);

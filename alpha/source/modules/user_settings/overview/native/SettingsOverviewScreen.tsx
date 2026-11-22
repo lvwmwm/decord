@@ -1,7 +1,7 @@
 // Module ID: 19030
 // Function ID: 19031
 // Name: SettingsOverviewScreen
-// Dependencies: [19, 2188, 8712, 21, 1112, 1254, 16896, 2173, 16144, 504, 9947, 17180, 17179, 11937, 15986, 2]
+// Dependencies: [19, 2188, 8712, 21, 1112, 1254, 16894, 2173, 16142, 504, 9947, 17180, 17178, 17177, 11937, 15984, 2]
 // Exports: default
 
 // Module 19030 (SettingsOverviewScreen)
@@ -10,7 +10,7 @@ import intl9 from "intl" /* 1112 */;
 import GlobalUtils from "GlobalUtils" /* 1254 */;
 import SettingsConstants from "SettingsConstants" /* 8712 */;
 import SettingBuilders from "SettingBuilders" /* 11937 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 16896 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 16894 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2188 */;
 import size from "module_2" /* 2 */;
@@ -38,15 +38,16 @@ export default function SettingsOverviewScreen() {
   const mapleSyrup3Enabled = obj5.useMapleSyrup3Enabled("SettingsOverviewScreen");
   let obj6 = hasPremiumSubscriptionToDisplay(mapleSyrup1Enabled[11]);
   const isPhoenixInstalled = obj6.useIsPhoenixInstalled();
-  let tmp10 = !staffOrDeveloperSettingPredicate;
-  const useConfig = staffOrDeveloperSettingPredicate(mapleSyrup1Enabled[12]).useConfig;
-  staffOrDeveloperSettingPredicate(mapleSyrup1Enabled[12]);
-  if (!staffOrDeveloperSettingPredicate) {
-    tmp10 = isPhoenixInstalled;
+  let obj7 = staffOrDeveloperSettingPredicate(mapleSyrup1Enabled[12]);
+  const tmp9 = null != obj7.useConfig({ location: "SettingsOverviewScreen" }, { autoTrackExposure: false }).forcedClient;
+  staffOrDeveloperSettingPredicate(mapleSyrup1Enabled[13]);
+  const tmp11 = !staffOrDeveloperSettingPredicate && isPhoenixInstalled && !tmp9;
+  let tmp13 = !tmp9;
+  if (tmp13) {
+    tmp13 = staffOrDeveloperSettingPredicate || tmp12;
   }
-  const tmp11 = staffOrDeveloperSettingPredicate || useConfig({ location: "SettingsOverviewScreen" }, { autoTrackExposure: tmp10 }).enabled;
-  locale = tmp11;
-  let items1 = [hasPremiumSubscriptionToDisplay, staffOrDeveloperSettingPredicate, stateFromStores, mapleSyrup1Enabled, mapleSyrup3Enabled, tmp11];
+  locale = tmp13;
+  let items1 = [hasPremiumSubscriptionToDisplay, staffOrDeveloperSettingPredicate, stateFromStores, mapleSyrup1Enabled, mapleSyrup3Enabled, tmp13];
   const node = mapleSyrup3Enabled.useMemo(() => {
     let intl;
     let intl2;
@@ -158,5 +159,5 @@ export default function SettingsOverviewScreen() {
     items1[10] = obj11;
     return createList(obj12);
   }, items1);
-  return jsx(tmp(tmp2[14]).SearchableSettingsList, { node });
+  return jsx(tmp(tmp2[15]).SearchableSettingsList, { node });
 };

@@ -1,10 +1,10 @@
-// Module ID: 16723
-// Function ID: 16724
+// Module ID: 16721
+// Function ID: 16722
 // Name: useMessagePreviews
-// Dependencies: [1230, 6619, 4738, 504, 8616, 5574, 16724, 2]
+// Dependencies: [1230, 6619, 4738, 504, 8616, 5574, 16722, 2]
 // Exports: default, useMessagePreviewSetting
 
-// Module 16723 (useMessagePreviews)
+// Module 16721 (useMessagePreviews)
 import useIsNsfwGatedDefault from "useIsNsfwGated" /* 8616 */;
 import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1230 */;
 import ReadStateStore from "ReadStateStore" /* 6619 */;
@@ -14,7 +14,7 @@ const require = globalThis.__r;
 let _require;
 
 let tmp5;
-const useLatestChannelMessageDefault = tmp5(16724);
+const useLatestChannelMessageDefault = tmp5(16722);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/useMessagePreviews.tsx");
 
 export default function useMessagePreview(guild_id, arg1) {

@@ -1,7 +1,7 @@
 // Module ID: 18998
 // Function ID: 18999
 // Name: MessageRequestList
-// Dependencies: [19, 17, 1071, 21, 4913, 575, 1112, 5595, 5646, 6429, 13329, 1255, 7030, 18999, 1186, 14303, 16228, 7709, 1628, 19004, 19006, 13328, 19009, 7490, 1378, 5504, 2]
+// Dependencies: [19, 17, 1071, 21, 4913, 575, 1112, 5595, 5646, 6429, 13327, 1255, 7030, 18999, 1186, 14301, 16226, 7709, 1628, 19004, 19006, 13326, 19009, 7490, 1378, 5504, 2]
 // Exports: default
 
 // Module 18998 (MessageRequestList)
@@ -220,7 +220,7 @@ export default function MessageRequestList(goToMessageRequestPreview) {
   data = data(19004)();
   let obj = goToMessageRequestPreview(19006);
   dependencyMap = obj.useListHasSingleMessageRequest();
-  const obj2 = goToMessageRequestPreview(13328);
+  const obj2 = goToMessageRequestPreview(13326);
   const isRestricted = obj2.useIsMessageRequestRestrictedViewer();
   if (0 === data.length) {
     const obj3 = { bodyText: intl2.string(goToMessageRequestPreview(1112).t.SXrqTf) };

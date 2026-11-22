@@ -1,16 +1,16 @@
 // Module ID: 17711
 // Function ID: 17712
 // Name: GuildProgressButton
-// Dependencies: [19, 21, 13061, 575, 5643, 13362, 13365, 7711, 17712, 1112, 13485, 2]
+// Dependencies: [19, 21, 13059, 575, 5643, 13360, 13363, 7711, 17712, 1112, 13483, 2]
 // Exports: default, getScaledGuildProgressButtonHeight
 
 // Module 17711 (GuildProgressButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import useScaledTextLineHeight from "useScaledTextLineHeight" /* 5643 */;
-import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 13061 */;
-import GuildProgressUtils from "GuildProgressUtils" /* 13362 */;
-import GuildProgressActionCreatorsDefault from "GuildProgressActionCreators" /* 13365 */;
+import MobileVisualRefreshExperiment from "MobileVisualRefreshExperiment" /* 13059 */;
+import GuildProgressUtils from "GuildProgressUtils" /* 13360 */;
+import GuildProgressActionCreatorsDefault from "GuildProgressActionCreators" /* 13363 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ export default function GuildProgressButton(guild) {
   let percentComplete;
   let subtitle;
   guild = guild.guild;
-  let obj = guild(13362);
+  let obj = guild(13360);
   const guildProgressStep = obj.useGuildProgressStep(guild);
   const completed = guildProgressStep.completed;
   const items = [completed, guild.id];

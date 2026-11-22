@@ -1,7 +1,7 @@
 // Module ID: 19294
 // Function ID: 19295
 // Name: VoicePanelCardFloatingControls
-// Dependencies: [19, 17, 4914, 4761, 6400, 5654, 11750, 11748, 11753, 1071, 5563, 21, 1653, 1186, 4913, 575, 11749, 19254, 19295, 11086, 19296, 19252, 1112, 10981, 9676, 9675, 7324, 19297, 7225, 5514, 19250, 6456, 6401, 10626, 19200, 19299, 19300, 504, 19279, 19301, 4974, 9739, 9768, 8827, 9766, 9774, 9743, 19302, 5143, 7520, 8067, 9688, 6342, 9456, 5504, 13819, 19228, 2]
+// Dependencies: [19, 17, 4914, 4761, 6400, 5654, 11750, 11748, 11753, 1071, 5563, 21, 1653, 1186, 4913, 575, 11749, 19254, 19295, 11086, 19296, 19252, 1112, 10981, 9676, 9675, 7324, 19297, 7225, 5514, 19250, 6456, 6401, 10626, 19200, 19299, 19300, 504, 19279, 19301, 4974, 9739, 9768, 8827, 9766, 9774, 9743, 19302, 5143, 7520, 8067, 9688, 6342, 9456, 5504, 13817, 19228, 2]
 
 // Module 19294 (VoicePanelCardFloatingControls)
 import get_initialized from "get initialized" /* 504 */;
@@ -652,7 +652,7 @@ let closure_48 = react.memo(function FloatingParticipantLabel(controlsHidden) {
   let tmp32;
   let tmp33;
   let tmp37;
-  const f117381 = (type) => type.type !== channelId(analyticsLocations[21]).VoicePanelCardUserStateIconType.STREAM_ICON;
+  const f117392 = (type) => type.type !== channelId(analyticsLocations[21]).VoicePanelCardUserStateIconType.STREAM_ICON;
   ({ label, layout, participant } = controlsHidden);
   channelId = undefined;
   let id;
@@ -696,7 +696,7 @@ let closure_48 = react.memo(function FloatingParticipantLabel(controlsHidden) {
   const tmp4Result7 = tmp4(tmp2[53]);
   const displayNameStylesFont = tmp4Result7.useDisplayNameStylesFont({ displayNameStyles: tmp12 });
   const length = tmpResultResult.length;
-  const items1 = [closure_45, tmpResultResult.filter(f117381).length >= 1, focused, connected, mode, closure_10, controlsHidden];
+  const items1 = [closure_45, tmpResultResult.filter(f117392).length >= 1, focused, connected, mode, closure_10, controlsHidden];
   let c0;
   let c1;
   let c2;
@@ -704,7 +704,7 @@ let closure_48 = react.memo(function FloatingParticipantLabel(controlsHidden) {
   let c4;
   let c5;
   [tmp14, tmp15, tmp16, tmp17, tmp18, tmp19, tmp20] = items1;
-  const length2 = tmpResultResult.filter(f117381).length;
+  const length2 = tmpResultResult.filter(f117392).length;
   const tmp4Result8 = tmp4(tmp2[12]);
   class VoicePanelCardFloatingControlsTsx10 {
     constructor() {

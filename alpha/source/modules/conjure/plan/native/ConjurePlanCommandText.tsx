@@ -78,7 +78,7 @@ export function ConjurePlanCommandMarkup(markup) {
   return conjurePlanCommandPattern.useMemo(() => {
     let mapped;
     let validElement;
-    const f115215 = (icon) => {
+    const f115226 = (icon) => {
       let Children;
       let cloneElement;
       let cloneElementResult;
@@ -107,7 +107,7 @@ export function ConjurePlanCommandMarkup(markup) {
           cloneElementResult = mapped;
           if (null != mapped.props.children) {
             ({ Children, cloneElement } = tmp11);
-            cloneElementResult = cloneElement(mapped, undefined, Children.map(mapped.props.children, f115215));
+            cloneElementResult = cloneElement(mapped, undefined, Children.map(mapped.props.children, f115226));
           }
         }
       }
@@ -119,7 +119,7 @@ export function ConjurePlanCommandMarkup(markup) {
       let closure_0 = tmp;
       let closure_1 = size;
       const Children = react.Children;
-      mapped = Children.map(markup, f115215);
+      mapped = Children.map(markup, f115226);
     }
     return mapped;
   }, items);

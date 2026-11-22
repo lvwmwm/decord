@@ -1,7 +1,7 @@
 // Module ID: 18918
 // Function ID: 18919
 // Name: YouExpiringTrialOfferCard
-// Dependencies: [19, 17, 15001, 1071, 8951, 1388, 21, 1088, 4913, 575, 18919, 1255, 1112, 2168, 563, 8859, 8956, 18917, 2187, 5504, 2173, 7030, 1186, 8952, 5468, 7563, 2]
+// Dependencies: [19, 17, 14999, 1071, 8951, 1388, 21, 1088, 4913, 575, 18919, 1255, 1112, 2168, 563, 8859, 8956, 18917, 2187, 5504, 2173, 7030, 1186, 8952, 5468, 7563, 2]
 // Exports: default
 
 // Module 18918 (YouExpiringTrialOfferCard)
@@ -16,7 +16,7 @@ import ColorConstants from "ColorConstants" /* 8951 */;
 import useCountdownDefault from "useCountdown" /* 8956 */;
 import NoticeActionCreatorsDefault from "NoticeActionCreators" /* 18919 */;
 import react from "react" /* 19 */;
-import NoticeStore from "NoticeStore" /* 15001 */;
+import NoticeStore from "NoticeStore" /* 14999 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;

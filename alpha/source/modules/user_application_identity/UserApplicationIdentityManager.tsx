@@ -1,9 +1,9 @@
-// Module ID: 20164
-// Function ID: 20165
+// Module ID: 20161
+// Function ID: 20162
 // Name: UserApplicationIdentityManager
 // Dependencies: [10334, 7484, 2]
 
-// Module 20164 (UserApplicationIdentityManager)
+// Module 20161 (UserApplicationIdentityManager)
 import UserApplicationIdentityActionCreators from "UserApplicationIdentityActionCreators" /* 10334 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7484 */;
 import size from "module_2" /* 2 */;

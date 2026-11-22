@@ -13,7 +13,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 
 let closure_1;
 
-const f81268 = (arg0, arg1) => {
+const f81277 = (arg0, arg1) => {
   const NumberResult = Number(arg0);
   return NumberResult - Number(arg1);
 };
@@ -38,7 +38,7 @@ function keysSorter(arr) {
     if (typeof arr === "object") {
       const _Object = Object;
       const obj = keysSorter(Object.keys(arr));
-      const sorted1 = obj.sort(f81268);
+      const sorted1 = obj.sort(f81277);
       sorted = sorted1.map((item) => obj[item]);
     }
   }
@@ -327,11 +327,11 @@ function parse(str, arg1) {
                       if (typeof keys === "object") {
                         const _Object2 = Object;
                         const obj4 = keysSorter(Object.keys(keys));
-                        const sorted2 = obj4.sort(f81268);
+                        const sorted2 = obj4.sort(f81277);
                         sorted1 = sorted2.map((item) => obj[item]);
                       }
                     }
-                    const sorted3 = sorted1.sort(f81268);
+                    const sorted3 = sorted1.sort(f81277);
                     sorted = sorted3.map((item) => obj[item]);
                   }
                 }

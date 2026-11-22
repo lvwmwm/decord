@@ -1,7 +1,7 @@
 // Module ID: 19384
 // Function ID: 19385
 // Name: StreamVolumeMovedNotice
-// Dependencies: [32, 19, 6400, 502, 14506, 11748, 4759, 21, 11749, 504, 9080, 4746, 6401, 7348, 1112, 7045, 2]
+// Dependencies: [32, 19, 6400, 502, 14504, 11748, 4759, 21, 11749, 504, 9080, 4746, 6401, 7348, 1112, 7045, 2]
 // Exports: default
 
 // Module 19384 (StreamVolumeMovedNotice)
@@ -14,7 +14,7 @@ import StreamKeyUtils from "StreamKeyUtils" /* 6401 */;
 import useSelectedDismissibleContent2 from "useSelectedDismissibleContent" /* 9080 */;
 import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11748 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11749 */;
-import StreamVolumeMovedStore from "StreamVolumeMovedStore" /* 14506 */;
+import StreamVolumeMovedStore from "StreamVolumeMovedStore" /* 14504 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6400 */;

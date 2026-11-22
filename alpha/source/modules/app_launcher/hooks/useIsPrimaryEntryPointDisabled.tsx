@@ -1,15 +1,15 @@
-// Module ID: 13014
-// Function ID: 13015
+// Module ID: 13012
+// Function ID: 13013
 // Name: useIsPrimaryEntryPointDisabled
-// Dependencies: [2142, 10709, 12927, 7466, 5564, 1378, 1112, 2]
+// Dependencies: [2142, 10709, 12925, 7466, 5564, 1378, 1112, 2]
 // Exports: default
 
-// Module 13014 (useIsPrimaryEntryPointDisabled)
+// Module 13012 (useIsPrimaryEntryPointDisabled)
 import PlatformUtils from "PlatformUtils" /* 1378 */;
 import getPlatformDefault from "getPlatform" /* 5564 */;
 import ActivitiesInTextUtils from "ActivitiesInTextUtils" /* 7466 */;
 import getEmbeddedActivityLaunchability from "getEmbeddedActivityLaunchability" /* 10709 */;
-import useActivityShelfItem from "useActivityShelfItem" /* 12927 */;
+import useActivityShelfItem from "useActivityShelfItem" /* 12925 */;
 import ApplicationRecord from "ApplicationRecord" /* 2142 */;
 import size from "module_2" /* 2 */;
 

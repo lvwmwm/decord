@@ -1,7 +1,7 @@
 // Module ID: 17532
 // Function ID: 17533
 // Name: guilds/Guilds
-// Dependencies: [32, 19, 6394, 9420, 1071, 21, 5092, 9, 5095, 5089, 5090, 572, 1107, 17533, 5085, 9950, 17534, 4974, 16479, 17535, 17941, 17981, 16565, 17517, 2]
+// Dependencies: [32, 19, 6394, 9420, 1071, 21, 5092, 9, 5095, 5089, 5090, 572, 1107, 17533, 5085, 9950, 17534, 4974, 16477, 17535, 17941, 17981, 16563, 17517, 2]
 
 // Module 17532 (guilds/Guilds)
 import TTITrackerDefault from "TTITracker" /* 9 */;
@@ -135,11 +135,11 @@ const memoResult = react.memo(function GuildsOnly() {
   if (!enabled) {
     const obj3 = { gradient: tmp5, children: tmp12(QuestDockExternalCoordinationContextProvider, obj4) };
     const ThemeContextProvider = tmp(4974).ThemeContextProvider;
-    QuestDockExternalCoordinationContextProvider = tmp(16479).QuestDockExternalCoordinationContextProvider;
+    QuestDockExternalCoordinationContextProvider = tmp(16477).QuestDockExternalCoordinationContextProvider;
     const items1 = [closure_8(tmp4(17535), {}), closure_8(tmp4(17941), {}), closure_8(tmp4(17981), { placement: "channel-list" }), , ];
     obj4 = { children: items1 };
-    items1[3] = isEligibleForQuests && closure_8(tmp4(16565), {});
-    isEligibleForQuests && closure_8(tmp4(16565), {});
+    items1[3] = isEligibleForQuests && closure_8(tmp4(16563), {});
+    isEligibleForQuests && closure_8(tmp4(16563), {});
     items1[4] = closure_8(tmp(17517).BackgroundChatHost, {});
     tmp11Result = tmp11(ThemeContextProvider, obj3);
     tmp12 = closure_9;

@@ -1,10 +1,10 @@
-// Module ID: 13765
-// Function ID: 13766
+// Module ID: 13763
+// Function ID: 13764
 // Name: applyOrientationLock
 // Dependencies: [10641, 9431, 2]
 // Exports: applyOrientationLock, releaseOrientationLock, restoreDefaultOrientationLock
 
-// Module 13765 (applyOrientationLock)
+// Module 13763 (applyOrientationLock)
 import DeviceOrientation from "DeviceOrientation" /* 9431 */;
 import isOrientationLockSupportedDefault from "isOrientationLockSupported" /* 10641 */;
 import size from "module_2" /* 2 */;

@@ -1,10 +1,10 @@
-// Module ID: 13489
-// Function ID: 13490
+// Module ID: 13487
+// Function ID: 13488
 // Name: getApplicationFromBotUserId
 // Dependencies: [6956, 1071, 504, 2]
 // Exports: default
 
-// Module 13489 (getApplicationFromBotUserId)
+// Module 13487 (getApplicationFromBotUserId)
 import Constants from "Constants" /* 1071 */;
 import UserProfileStore from "UserProfileStore" /* 6956 */;
 import size from "module_2" /* 2 */;

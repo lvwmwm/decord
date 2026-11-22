@@ -1,11 +1,11 @@
 // Module ID: 17683
 // Function ID: 17684
 // Name: GuildPowerupsBoostToUnlockCoachmark
-// Dependencies: [19, 13386, 17684, 2]
+// Dependencies: [19, 13384, 17684, 2]
 // Exports: default
 
 // Module 17683 (GuildPowerupsBoostToUnlockCoachmark)
-import GuildPowerupsNotification from "GuildPowerupsNotification" /* 13386 */;
+import GuildPowerupsNotification from "GuildPowerupsNotification" /* 13384 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

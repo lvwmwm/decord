@@ -1,7 +1,7 @@
 // Module ID: 18394
 // Function ID: 18395
 // Name: ConjurePublishStatusBadge
-// Dependencies: [19, 17, 21, 4913, 18393, 575, 5477, 1653, 5123, 13486, 2]
+// Dependencies: [19, 17, 21, 4913, 18393, 575, 5477, 1653, 5123, 13484, 2]
 // Exports: conjurePublishBadgeSize, default
 
 // Module 18394 (ConjurePublishStatusBadge)

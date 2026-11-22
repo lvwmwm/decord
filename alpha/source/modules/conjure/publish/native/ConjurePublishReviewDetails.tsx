@@ -1,7 +1,7 @@
 // Module ID: 18268
 // Function ID: 18269
 // Name: ConjurePublishReviewDetails
-// Dependencies: [19, 17, 21, 9904, 7034, 7704, 6622, 12172, 17996, 18269, 10133, 18271, 4913, 575, 5595, 7703, 18273, 18275, 7221, 1112, 4190, 7461, 5600, 5504, 14724, 18252, 18279, 4975, 7030, 7336, 7061, 2]
+// Dependencies: [19, 17, 21, 9904, 7034, 7704, 6622, 12179, 17996, 18269, 10133, 18271, 4913, 575, 5595, 7703, 18273, 18275, 7221, 1112, 4190, 7461, 5600, 5504, 14722, 18252, 18279, 4975, 7030, 7336, 7061, 2]
 // Exports: default
 
 // Module 18268 (ConjurePublishReviewDetails)
@@ -19,7 +19,7 @@ import AppsLockIcon2 from "AppsLockIcon" /* 7703 */;
 import AppsIcon from "AppsIcon" /* 7704 */;
 import ScreenIcon from "ScreenIcon" /* 9904 */;
 import ShieldIcon from "ShieldIcon" /* 10133 */;
-import RobotIcon from "RobotIcon" /* 12172 */;
+import RobotIcon from "RobotIcon" /* 12179 */;
 import ActivitiesIcon from "ActivitiesIcon" /* 17996 */;
 import BadgeIcon from "BadgeIcon" /* 18269 */;
 import WindowTopIcon from "WindowTopIcon" /* 18271 */;
@@ -270,7 +270,7 @@ export default function ConjurePublishReviewDetails(review) {
   let tmp15Result2 = null;
   if (true === shared) {
     const obj15 = { label: intl5.string(appChannelsPrivate(4190).Td1mlg), checked: null, onToggle: null };
-    const Checkbox = tmp16(14724).Checkbox;
+    const Checkbox = tmp16(14722).Checkbox;
     intl5 = tmp16(1112).intl;
     ({ isPrivate: obj12.checked, setPrivate: obj12.onToggle } = appChannelsPrivate);
     tmp15Result2 = tmp15(Checkbox, obj15);

@@ -1,26 +1,26 @@
-// Module ID: 14852
-// Function ID: 14853
+// Module ID: 14850
+// Function ID: 14851
 // Name: ServerChannelsAbstractUI
-// Dependencies: [19, 21, 14853, 14854, 14855, 7357, 5600, 2]
+// Dependencies: [19, 21, 14851, 14852, 14853, 7357, 5600, 2]
 // Exports: ServerChannelsAbstractUI
 
-// Module 14852 (ServerChannelsAbstractUI)
+// Module 14850 (ServerChannelsAbstractUI)
 import Fragment from "Fragment" /* 21 */;
 import react_native from "react-native" /* 7357 */;
+import _modDef14851 from "module_14851" /* 14851 */;
+import _modDef14852 from "module_14852" /* 14852 */;
 import _modDef14853 from "module_14853" /* 14853 */;
-import _modDef14854 from "module_14854" /* 14854 */;
-import _modDef14855 from "module_14855" /* 14855 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef14853 };
+let obj2 = { uri: _modDef14851 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef14854 };
+let obj3 = { uri: _modDef14852 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef14855 };
-({ uri: _modDef14855 });
+obj[3] = { uri: _modDef14853 };
+({ uri: _modDef14853 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/ServerChannelsAbstractUI.native.tsx");
 

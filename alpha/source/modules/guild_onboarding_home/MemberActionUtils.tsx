@@ -1,10 +1,10 @@
-// Module ID: 13144
-// Function ID: 13145
+// Module ID: 13142
+// Function ID: 13143
 // Name: MemberActionUtils
 // Dependencies: [4825, 6684, 8511, 4831, 6686, 563, 1404, 2]
 // Exports: useAllActionsCompleted, useMemberActionsForChannel, useNextMemberAction
 
-// Module 13144 (MemberActionUtils)
+// Module 13142 (MemberActionUtils)
 import GuildMemberConstants from "GuildMemberConstants" /* 4831 */;
 import useIsNewMemberDefault from "useIsNewMember" /* 6686 */;
 import GuildMemberStore from "GuildMemberStore" /* 4825 */;

@@ -1,10 +1,10 @@
-// Module ID: 12357
-// Function ID: 12358
+// Module ID: 12364
+// Function ID: 12365
 // Name: NativeSearchableSelectActionComponentUtils
 // Dependencies: [4762, 4819, 4784, 1386, 1071, 5976, 1254, 1415, 7544, 7777, 1089, 575, 11611, 7636, 2]
 // Exports: getChannelIconData, transformSearchableSelectOptions
 
-// Module 12357 (NativeSearchableSelectActionComponentUtils)
+// Module 12364 (NativeSearchableSelectActionComponentUtils)
 import nativeDefault from "native" /* 575 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1089 */;
 import utils_AvatarUtils from "utils/AvatarUtils" /* 1415 */;

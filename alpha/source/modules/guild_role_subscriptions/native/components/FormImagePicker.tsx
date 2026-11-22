@@ -1,10 +1,10 @@
-// Module ID: 20010
-// Function ID: 20011
+// Module ID: 20007
+// Function ID: 20008
 // Name: FormImagePicker
 // Dependencies: [5, 19, 17, 21, 4913, 575, 8474, 1447, 8042, 1112, 5600, 18277, 11242, 5504, 5511, 2]
 // Exports: default
 
-// Module 20010 (FormImagePicker)
+// Module 20007 (FormImagePicker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ImageLoaderUtils from "ImageLoaderUtils" /* 1447 */;

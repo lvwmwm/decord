@@ -1,10 +1,10 @@
-// Module ID: 15422
-// Function ID: 15423
+// Module ID: 15420
+// Function ID: 15421
 // Name: RefreshEmptyState
 // Dependencies: [19, 17, 1071, 21, 4913, 6407, 575, 5600, 7724, 5511, 4920, 2]
 // Exports: ThemedEmptyState
 
-// Module 15422 (RefreshEmptyState)
+// Module 15420 (RefreshEmptyState)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;

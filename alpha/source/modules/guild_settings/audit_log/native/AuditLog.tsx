@@ -1,9 +1,9 @@
-// Module ID: 19767
-// Function ID: 19768
+// Module ID: 19764
+// Function ID: 19765
 // Name: AuditLog
-// Dependencies: [19, 17, 1191, 1405, 4855, 1386, 1071, 21, 4913, 575, 1415, 1412, 6691, 4920, 6864, 5504, 1378, 4974, 19755, 4969, 1186, 1112, 4776, 5529, 5948, 2168, 1254, 1089, 11614, 7496, 7047, 19759, 7030, 5127, 8067, 15847, 504, 2]
+// Dependencies: [19, 17, 1191, 1405, 4855, 1386, 1071, 21, 4913, 575, 1415, 1412, 6691, 4920, 6864, 5504, 1378, 4974, 19752, 4969, 1186, 1112, 4776, 5529, 5948, 2168, 1254, 1089, 11614, 7496, 7047, 19756, 7030, 5127, 8067, 15845, 504, 2]
 
-// Module 19767 (AuditLog)
+// Module 19764 (AuditLog)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
@@ -19,7 +19,7 @@ import PlatformsDefault from "Platforms" /* 6691 */;
 import useGetOrFetchApplications from "useGetOrFetchApplications" /* 6864 */;
 import EmojiDefault from "Emoji" /* 7496 */;
 import AppliedForumTag from "AppliedForumTag" /* 11614 */;
-import AuditLogUtilsAll from "AuditLogUtils" /* 19755 */;
+import AuditLogUtilsAll from "AuditLogUtils" /* 19752 */;
 import react from "react" /* 19 */;
 import ThemeStore from "ThemeStore" /* 1191 */;
 import UserRecord from "UserRecord" /* 1405 */;
@@ -681,7 +681,7 @@ class AuditLog extends PureComponent {
     const obj5 = { style: tmp.rowContainer, children: null };
     const items2 = [, , , ];
     const obj6 = { action: log.action };
-    items2[0] = closure_14(user(19759), obj6);
+    items2[0] = closure_14(user(19756), obj6);
     const obj7 = {
       accessibilityRole: "button",
       accessibilityLabel: intl.string(tmp10(1112).t.iXAna6),
@@ -740,7 +740,7 @@ class AuditLog extends PureComponent {
           items2[2] = closure_15(PressableOpacity2, obj9);
           let tmp17Result = null;
           if (checkChangesToRenderResult) {
-            const obj11 = { style: items4, size: tmp10(1186).Icon.Sizes.CUSTOM, source: user(15847) };
+            const obj11 = { style: items4, size: tmp10(1186).Icon.Sizes.CUSTOM, source: user(15845) };
             items4 = [tmp.arrow, rotate90];
             const Icon = tmp10(1186).Icon;
             tmp17Result = tmp17(Icon, obj11);

@@ -1,16 +1,16 @@
 // Module ID: 18161
 // Function ID: 18162
 // Name: useNotificationPermissionPrompt
-// Dependencies: [19, 4755, 6394, 4756, 13281, 504, 4758, 13290, 18162, 18164, 2]
+// Dependencies: [19, 4755, 6394, 4756, 13279, 504, 4758, 13288, 18162, 18164, 2]
 // Exports: default
 
 // Module 18161 (useNotificationPermissionPrompt)
-import NotificationUtilsDefault from "NotificationUtils" /* 13290 */;
+import NotificationUtilsDefault from "NotificationUtils" /* 13288 */;
 import react from "react" /* 19 */;
 import LoginRequiredActionStore from "LoginRequiredActionStore" /* 4755 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 6394 */;
 import UserRequiredActionStore from "UserRequiredActionStore" /* 4756 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13281 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13279 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/nuf/native/useNotificationPermissionPrompt.tsx");

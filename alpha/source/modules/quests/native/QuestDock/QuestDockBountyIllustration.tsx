@@ -1,9 +1,9 @@
-// Module ID: 16575
-// Function ID: 16576
+// Module ID: 16573
+// Function ID: 16574
 // Name: QuestDockBountyIllustration
-// Dependencies: [19, 17, 4914, 6558, 16475, 21, 4913, 16576, 16472, 504, 5600, 16577, 4974, 9967, 2]
+// Dependencies: [19, 17, 4914, 6558, 16473, 21, 4913, 16574, 16470, 504, 5600, 16575, 4974, 9967, 2]
 
-// Module 16575 (QuestDockBountyIllustration)
+// Module 16573 (QuestDockBountyIllustration)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
@@ -11,12 +11,12 @@ import native from "native" /* 4974 */;
 import FastImageDefault from "FastImage" /* 5600 */;
 import QuestConstants from "QuestConstants" /* 6558 */;
 import BountiesMobileQuestBarExperiment2 from "BountiesMobileQuestBarExperiment" /* 9967 */;
-import QuestDockHooks from "QuestDockHooks" /* 16472 */;
-import useIsQuestDockContentVisibleDefault from "useIsQuestDockContentVisible" /* 16576 */;
-import _modDef16577 from "module_16577" /* 16577 */;
+import QuestDockHooks from "QuestDockHooks" /* 16470 */;
+import useIsQuestDockContentVisibleDefault from "useIsQuestDockContentVisible" /* 16574 */;
+import _modDef16575 from "module_16575" /* 16575 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4914 */;
-import QuestDockConstants from "QuestDockConstants" /* 16475 */;
+import QuestDockConstants from "QuestDockConstants" /* 16473 */;
 import createStyles from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -97,7 +97,7 @@ function QuestDock3DOrbsIllustration() {
   const obj2 = QuestDockHooks;
   let tmp6 = tmp5 && !obj2.useIsQuestDockExpanded();
   const obj3 = { source: obj4, style: tmp.fill, resizeMode: "contain", enableAnimation: !stateFromStores, paused: !tmp6, accessible: false };
-  obj4 = { uri: _modDef16577 };
+  obj4 = { uri: _modDef16575 };
   const tmp4Result = FastImageDefault;
   const tmp7 = jsx;
   if (tmp6) {

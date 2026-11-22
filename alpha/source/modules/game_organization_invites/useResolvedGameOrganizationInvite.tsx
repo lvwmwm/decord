@@ -1,10 +1,10 @@
-// Module ID: 12235
-// Function ID: 12236
+// Module ID: 12242
+// Function ID: 12243
 // Name: useResolvedGameOrganizationInvite
 // Dependencies: [11895, 11896, 504, 2]
 // Exports: default
 
-// Module 12235 (useResolvedGameOrganizationInvite)
+// Module 12242 (useResolvedGameOrganizationInvite)
 import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11896 */;
 import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 11895 */;
 import size from "module_2" /* 2 */;

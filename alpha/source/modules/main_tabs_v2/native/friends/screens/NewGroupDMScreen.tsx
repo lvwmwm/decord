@@ -1,7 +1,7 @@
 // Module ID: 18866
 // Function ID: 18867
 // Name: NewGroupDMScreen
-// Dependencies: [32, 5, 19, 17, 4762, 15034, 5654, 1386, 9646, 1071, 21, 4913, 575, 7737, 6494, 7739, 12199, 5127, 504, 12061, 12063, 12060, 1255, 5595, 1112, 18865, 8561, 12064, 5594, 8571, 14650, 7262, 8066, 1186, 9647, 18802, 2]
+// Dependencies: [32, 5, 19, 17, 4762, 15032, 5654, 1386, 9646, 1071, 21, 4913, 575, 7737, 6494, 7739, 12206, 5127, 504, 12061, 12063, 12060, 1255, 5595, 1112, 18865, 8561, 12064, 5594, 8571, 14648, 7262, 8066, 1186, 9647, 18802, 2]
 // Exports: default
 
 // Module 18866 (NewGroupDMScreen)
@@ -19,7 +19,7 @@ import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
-import PrivateChannelRecipientsInviteStore from "PrivateChannelRecipientsInviteStore" /* 15034 */;
+import PrivateChannelRecipientsInviteStore from "PrivateChannelRecipientsInviteStore" /* 15032 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5654 */;
 import UserStore from "UserStore" /* 1386 */;
 import Constants from "Constants" /* 1071 */;

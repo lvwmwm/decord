@@ -1,7 +1,7 @@
 // Module ID: 18611
 // Function ID: 18612
 // Name: ConjureFloatingActivity
-// Dependencies: [32, 19, 17, 21, 4913, 575, 1653, 5123, 18553, 7030, 1112, 4190, 12322, 5504, 15263, 6524, 2]
+// Dependencies: [32, 19, 17, 21, 4913, 575, 1653, 5123, 18553, 7030, 1112, 4190, 12329, 5504, 15261, 6524, 2]
 // Exports: default
 
 // Module 18611 (ConjureFloatingActivity)
@@ -120,7 +120,7 @@ export default function ConjureFloatingActivity(agents) {
   const PressableOpacity = tmp2(7030).PressableOpacity;
   intl = tmp2(1112).intl;
   const obj9 = { size: "xs", color: nativeDefault.colors.TEXT_BRAND };
-  const MagicWandIcon = tmp2(12322).MagicWandIcon;
+  const MagicWandIcon = tmp2(12329).MagicWandIcon;
   items5 = [closure_6(MagicWandIcon, obj9), ];
   const obj10 = { style: tmp.label, children: closure_6(sharedValue(5504).Text, { variant: "body-sm/medium", color: "text-default", lineClamp: 1, children: line }) };
   items5[1] = closure_6(View, obj10);
@@ -129,7 +129,7 @@ export default function ConjureFloatingActivity(agents) {
   if (null != todos) {
     const obj11 = { style: tmp.checklistButton, children: closure_6(ToggleIconButton, obj12) };
     obj12 = { variant: "default", size: "sm", icon: AssetRegistryDefault, pressed: tmp10, accessibilityLabel: intl2.string(_modDef4190.Qp2isI), onPress: callback };
-    ToggleIconButton = tmp2(15263).ToggleIconButton;
+    ToggleIconButton = tmp2(15261).ToggleIconButton;
     intl2 = tmp2(1112).intl;
     tmp18Result = tmp18(tmp17, obj11);
   }

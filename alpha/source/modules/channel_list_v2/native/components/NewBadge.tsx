@@ -1,10 +1,10 @@
-// Module ID: 13152
-// Function ID: 13153
+// Module ID: 13150
+// Function ID: 13151
 // Name: NewBadge
 // Dependencies: [19, 17, 21, 4913, 1378, 575, 4920, 8571, 5122, 5504, 1112, 2]
 // Exports: default
 
-// Module 13152 (NewBadge)
+// Module 13150 (NewBadge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

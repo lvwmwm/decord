@@ -1,7 +1,7 @@
 // Module ID: 19214
 // Function ID: 19215
 // Name: PlayableFrameBanner
-// Dependencies: [19, 16470, 21, 575, 4913, 1628, 504, 9996, 9998, 6565, 8430, 6561, 16361, 16360, 2]
+// Dependencies: [19, 16468, 21, 575, 4913, 1628, 504, 9996, 9998, 6565, 8430, 6561, 16359, 16358, 2]
 // Exports: default
 
 // Module 19214 (PlayableFrameBanner)
@@ -12,7 +12,7 @@ import AdCreativeType from "AdCreativeType" /* 6565 */;
 import AnalyticsTypes from "AnalyticsTypes" /* 8430 */;
 import QuestPlatformUtils from "QuestPlatformUtils" /* 9998 */;
 import react from "react" /* 19 */;
-import PlayableStore from "PlayableStore" /* 16470 */;
+import PlayableStore from "PlayableStore" /* 16468 */;
 import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 

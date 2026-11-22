@@ -1,12 +1,12 @@
-// Module ID: 14589
-// Function ID: 14590
+// Module ID: 14587
+// Function ID: 14588
 // Name: useCanViewOthersWishlist
-// Dependencies: [8983, 4855, 6956, 12777, 504, 14590, 2]
+// Dependencies: [8983, 4855, 6956, 12775, 504, 14588, 2]
 // Exports: default
 
-// Module 14589 (useCanViewOthersWishlist)
-import useCanDMDefault from "useCanDM" /* 12777 */;
-import WishlistVisibility from "WishlistVisibility" /* 14590 */;
+// Module 14587 (useCanViewOthersWishlist)
+import useCanDMDefault from "useCanDM" /* 12775 */;
+import WishlistVisibility from "WishlistVisibility" /* 14588 */;
 import WishlistStore from "WishlistStore" /* 8983 */;
 import RelationshipStore from "RelationshipStore" /* 4855 */;
 import UserProfileStore from "UserProfileStore" /* 6956 */;

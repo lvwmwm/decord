@@ -1,10 +1,10 @@
-// Module ID: 12399
-// Function ID: 12400
+// Module ID: 12406
+// Function ID: 12407
 // Name: GuildRaidResolveActionSheet
-// Dependencies: [5, 32, 19, 17, 1071, 6504, 21, 4913, 575, 1112, 8311, 5127, 5650, 12361, 6509, 7553, 7076, 5504, 7709, 1186, 5511, 2]
+// Dependencies: [5, 32, 19, 17, 1071, 6504, 21, 4913, 575, 1112, 8311, 5127, 5650, 12368, 6509, 7553, 7076, 5504, 7709, 1186, 5511, 2]
 // Exports: default
 
-// Module 12399 (GuildRaidResolveActionSheet)
+// Module 12406 (GuildRaidResolveActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;

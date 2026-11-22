@@ -19,7 +19,7 @@ export function useReportProfileModalTransition() {
   navigation = obj.useNavigation();
   let items = [navigation];
   const effect = react.useEffect(() => {
-    const f116204 = (fn) => fn();
+    const f116215 = (fn) => fn();
     function leave() {
       const tmp = c0;
       if (tmp) {
@@ -27,7 +27,7 @@ export function useReportProfileModalTransition() {
         const _Math = Math;
         bound = Math.max(0, bound - 1);
         if (bound !== bound) {
-          const item = closure_2_4.forEach(f116204);
+          const item = closure_2_4.forEach(f116215);
         }
       }
     }
@@ -40,7 +40,7 @@ export function useReportProfileModalTransition() {
           const _Math = Math;
           bound = Math.max(0, bound + 1);
           if (bound !== bound) {
-            const item = closure_2_4.forEach(f116204);
+            const item = closure_2_4.forEach(f116215);
           }
         }
       }),
@@ -55,7 +55,7 @@ export function useReportProfileModalTransition() {
         const _Math = Math;
         bound = Math.max(0, bound - 1);
         if (bound !== bound) {
-          const item1 = closure_2_4.forEach(f116204);
+          const item1 = closure_2_4.forEach(f116215);
         }
       }
     };

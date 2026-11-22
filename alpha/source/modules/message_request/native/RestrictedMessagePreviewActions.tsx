@@ -1,7 +1,7 @@
 // Module ID: 19020
 // Function ID: 19021
 // Name: RestrictedMessagePreviewActions
-// Dependencies: [19, 17, 4855, 1071, 11813, 21, 4913, 575, 13487, 504, 7740, 10251, 10247, 4969, 5127, 11814, 2119, 10176, 7737, 5511, 1112, 5504, 2]
+// Dependencies: [19, 17, 4855, 1071, 11813, 21, 4913, 575, 13485, 504, 7740, 10251, 10247, 4969, 5127, 11814, 2119, 10176, 7737, 5511, 1112, 5504, 2]
 // Exports: default
 
 // Module 19020 (RestrictedMessagePreviewActions)

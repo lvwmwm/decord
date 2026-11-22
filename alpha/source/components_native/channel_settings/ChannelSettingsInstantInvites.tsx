@@ -1,7 +1,7 @@
 // Module ID: 18943
 // Function ID: 18944
 // Name: ChannelSettingsInstantInvites
-// Dependencies: [32, 19, 17, 11252, 4762, 1071, 21, 4913, 575, 1628, 504, 11251, 13848, 1186, 13863, 13864, 1112, 7190, 18944, 7432, 2]
+// Dependencies: [32, 19, 17, 11252, 4762, 1071, 21, 4913, 575, 1628, 504, 11251, 13846, 1186, 13861, 13862, 1112, 7190, 18944, 7432, 2]
 // Exports: default
 
 // Module 18943 (ChannelSettingsInstantInvites)
@@ -10,9 +10,9 @@ import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
 import FastestListDefault from "FastestList" /* 7432 */;
-import InstantInvite from "InstantInvite" /* 13848 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13863 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13864 */;
+import InstantInvite from "InstantInvite" /* 13846 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13861 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13862 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelSettingsStore from "ChannelSettingsStore" /* 11252 */;

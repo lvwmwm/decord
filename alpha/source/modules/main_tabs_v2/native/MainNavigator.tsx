@@ -1,7 +1,7 @@
 // Module ID: 17442
 // Function ID: 17443
 // Name: MainNavigator
-// Dependencies: [32, 19, 17, 502, 17443, 1071, 21, 4913, 1378, 4870, 15284, 17444, 17445, 17512, 18849, 18856, 18889, 18921, 8637, 18986, 18987, 18990, 18994, 18996, 19025, 19031, 19032, 5098, 1498, 1626, 19033, 5650, 8561, 19037, 19111, 563, 10606, 5092, 7092, 11978, 18902, 19114, 19145, 10857, 19147, 10538, 2]
+// Dependencies: [32, 19, 17, 502, 17443, 1071, 21, 4913, 1378, 4870, 15282, 17444, 17445, 17512, 18849, 18856, 18889, 18921, 8637, 18986, 18987, 18990, 18994, 18996, 19025, 19031, 19032, 5098, 1498, 1626, 19033, 5650, 8561, 19037, 19111, 563, 10606, 5092, 7092, 11978, 18902, 19114, 19145, 10857, 19147, 10538, 2]
 // Exports: getChannelScreen
 
 // Module 17442 (MainNavigator)
@@ -12,7 +12,7 @@ import DeviceUtils from "DeviceUtils" /* 4870 */;
 import ChatInputUtils from "ChatInputUtils" /* 5098 */;
 import GlobalStatusIndicatorDefault from "GlobalStatusIndicator" /* 10857 */;
 import StartupProfiler from "StartupProfiler" /* 11978 */;
-import createAccessibleNativeStackNavigatorDefault from "createAccessibleNativeStackNavigator" /* 15284 */;
+import createAccessibleNativeStackNavigatorDefault from "createAccessibleNativeStackNavigator" /* 15282 */;
 import NavigationConstants from "NavigationConstants" /* 17443 */;
 import createChatPanelNativeStackNavigatorDefault from "createChatPanelNativeStackNavigator" /* 17444 */;
 import AutoAnalytics from "AutoAnalytics" /* 18849 */;

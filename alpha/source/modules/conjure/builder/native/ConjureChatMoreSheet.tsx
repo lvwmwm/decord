@@ -1,7 +1,7 @@
 // Module ID: 18382
 // Function ID: 18383
 // Name: ConjureChatMoreSheet
-// Dependencies: [19, 18383, 21, 5127, 7556, 7057, 7045, 6936, 14732, 18385, 7553, 1112, 4190, 7348, 2]
+// Dependencies: [19, 18383, 21, 5127, 7556, 7057, 7045, 6936, 14730, 18385, 7553, 1112, 4190, 7348, 2]
 // Exports: default
 
 // Module 18382 (ConjureChatMoreSheet)
@@ -67,7 +67,7 @@ export default function ConjureChatMoreSheet(canAnnotate) {
   let obj = id(6936);
   const isConjureProjectMuted = obj.useIsConjureProjectMuted(id);
   const active = closure_5(id).active;
-  const obj2 = id(14732);
+  const obj2 = id(14730);
   const conjureControlActive = obj2.useConjureControlActive(id);
   const obj3 = { muted: isConjureProjectMuted, annotate: tmp };
   const conjureChatMoreSections = id(18385).conjureChatMoreSections;

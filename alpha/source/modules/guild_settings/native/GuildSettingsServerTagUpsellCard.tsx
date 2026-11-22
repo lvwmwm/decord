@@ -1,16 +1,16 @@
-// Module ID: 19814
-// Function ID: 19815
+// Module ID: 19811
+// Function ID: 19812
 // Name: GuildSettingsServerTagUpsellCard
-// Dependencies: [19, 17, 8331, 1071, 21, 4913, 575, 504, 8001, 13411, 13379, 4974, 5468, 5929, 13414, 5504, 1112, 5511, 17734, 2]
+// Dependencies: [19, 17, 8331, 1071, 21, 4913, 575, 504, 8001, 13409, 13377, 4974, 5468, 5929, 13412, 5504, 1112, 5511, 17734, 2]
 // Exports: default
 
-// Module 19814 (GuildSettingsServerTagUpsellCard)
+// Module 19811 (GuildSettingsServerTagUpsellCard)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import LinearGradientDefault from "LinearGradient" /* 5468 */;
 import Powerups from "Powerups" /* 8001 */;
-import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 13379 */;
-import useGetGuildPowerupBannerImageDefault from "useGetGuildPowerupBannerImage" /* 13411 */;
+import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 13377 */;
+import useGetGuildPowerupBannerImageDefault from "useGetGuildPowerupBannerImage" /* 13409 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import GuildPowerupsStore from "GuildPowerupsStore" /* 8331 */;
@@ -87,7 +87,7 @@ export default function GuildSettingsServerTagUpsellCard(guildId) {
   tmp8Result = null != tmp6;
   if (tmp8Result) {
     const obj9 = { imageUrl: tmp6, style: tmp.powerupImage };
-    tmp8Result = tmp8(tmp5(13414), obj9);
+    tmp8Result = tmp8(tmp5(13412), obj9);
   }
   items5 = [closure_7(closure_4, obj8), , ];
   const obj10 = { spacing: nativeDefault.space.PX_8, style: tmp.textBlock, children: items6 };

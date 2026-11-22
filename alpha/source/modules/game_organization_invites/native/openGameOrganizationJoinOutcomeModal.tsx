@@ -1,10 +1,10 @@
-// Module ID: 12244
-// Function ID: 12245
+// Module ID: 12251
+// Function ID: 12252
 // Name: openGameOrganizationJoinOutcomeModal
-// Dependencies: [11896, 6429, 12245, 2119, 2]
+// Dependencies: [11896, 6429, 12252, 2119, 2]
 // Exports: default
 
-// Module 12244 (openGameOrganizationJoinOutcomeModal)
+// Module 12251 (openGameOrganizationJoinOutcomeModal)
 import asyncRequire from "asyncRequire" /* 2119 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6429 */;
 import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11896 */;
@@ -16,5 +16,5 @@ const result = size.fileFinishedImporting("modules/game_organization_invites/nat
 export default function openGameOrganizationJoinOutcomeModal(code, result) {
   const obj = ModalActionCreatorsDefault;
   const obj2 = { code, result };
-  obj.pushLazy(asyncRequire(12245, dependencyMap.paths), obj2, closure_3);
+  obj.pushLazy(asyncRequire(12252, dependencyMap.paths), obj2, closure_3);
 };

@@ -1,7 +1,7 @@
 // Module ID: 19056
 // Function ID: 19057
 // Name: MainViewTooltipActionSheetsV2
-// Dependencies: [32, 19, 5128, 1230, 1071, 4759, 21, 19057, 2119, 19059, 19060, 19061, 17142, 19063, 17115, 19065, 19071, 19073, 19080, 19085, 12838, 19086, 19093, 19094, 19100, 19101, 4746, 4753, 1255, 4750, 11613, 4945, 4747, 19102, 504, 11612, 2]
+// Dependencies: [32, 19, 5128, 1230, 1071, 4759, 21, 19057, 2119, 19059, 19060, 19061, 17140, 19063, 17113, 19065, 19071, 19073, 19080, 19085, 12836, 19086, 19093, 19094, 19100, 19101, 4746, 4753, 1255, 4750, 11613, 4945, 4747, 19102, 504, 11612, 2]
 // Exports: default
 
 // Module 19056 (MainViewTooltipActionSheetsV2)
@@ -62,12 +62,12 @@ class GiftingPromotionCoachmarkImporter {
 }
 class PremiumMarketingMomentActionSheetImporter {
   constructor() {
-    return asyncRequire(17142, dependencyMap.paths);
+    return asyncRequire(17140, dependencyMap.paths);
   }
 }
 class CustomTypingIndicatorAnnounceActionSheetImporter {
   constructor() {
-    return asyncRequire(12838, dependencyMap.paths);
+    return asyncRequire(12836, dependencyMap.paths);
   }
 }
 function trackActionSheetImpression(actionSheetConfig) {
@@ -143,7 +143,7 @@ items[2] = obj3;
 let obj4 = {
   id: dismissible_content.DismissibleContent.MOBILE_PREMIUM_TRIAL_OFFER_ACTION_SHEET,
   importer: function PremiumTrialOfferActionSheetImporter() {
-    return asyncRequire(17115, dependencyMap.paths);
+    return asyncRequire(17113, dependencyMap.paths);
   }
 };
 items[3] = obj4;

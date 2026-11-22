@@ -1,7 +1,7 @@
 // Module ID: 17892
 // Function ID: 17893
 // Name: HomeDrawerGuildRow
-// Dependencies: [19, 17, 4847, 4766, 4762, 4843, 6664, 4784, 6619, 4855, 6552, 1386, 1071, 6553, 21, 4913, 504, 5095, 5092, 11701, 10364, 5504, 17893, 17894, 5529, 11, 17895, 17896, 12834, 17897, 17898, 17899, 17901, 17902, 17884, 2]
+// Dependencies: [19, 17, 4847, 4766, 4762, 4843, 6664, 4784, 6619, 4855, 6552, 1386, 1071, 6553, 21, 4913, 504, 5095, 5092, 11701, 10364, 5504, 17893, 17894, 5529, 11, 17895, 17896, 12832, 17897, 17898, 17899, 17901, 17902, 17884, 2]
 // Exports: default
 
 // Module 17892 (HomeDrawerGuildRow)
@@ -170,7 +170,7 @@ function GuildRowWrapper(guild) {
     const tmp = unreadChannel.getMutableGuildStates()[guild.id];
     guild = tmp;
     if (null == tmp) {
-      return { mentionChannel: "disabled", mentionChannelName: "isArray", mentionChannelCount: null };
+      return { mentionChannel: "description", mentionChannelName: "isArray", mentionChannelCount: null };
     } else {
       let tmp8 = disableSubtitle;
       const obj3 = disableSubtitle(onActiveHookChange[25]);

@@ -1,7 +1,7 @@
 // Module ID: 18096
 // Function ID: 18097
 // Name: ICYMICustomScoresGuildScreen
-// Dependencies: [32, 19, 17, 8319, 4762, 4784, 6552, 10033, 21, 4913, 575, 504, 5529, 10042, 1112, 5127, 18097, 2119, 7636, 7045, 1186, 11157, 5504, 8321, 1628, 18098, 12799, 7490, 2]
+// Dependencies: [32, 19, 17, 8319, 4762, 4784, 6552, 10033, 21, 4913, 575, 504, 5529, 10042, 1112, 5127, 18097, 2119, 7636, 7045, 1186, 11157, 5504, 8321, 1628, 18098, 12797, 7490, 2]
 // Exports: default
 
 // Module 18096 (ICYMICustomScoresGuildScreen)
@@ -13,7 +13,7 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127
 import Text_Text from "Text/Text" /* 5504 */;
 import ChannelListState from "ChannelListState" /* 8321 */;
 import ICYMIUtils from "ICYMIUtils" /* 10042 */;
-import ChevronSmallDownIcon2 from "ChevronSmallDownIcon" /* 12799 */;
+import ChevronSmallDownIcon2 from "ChevronSmallDownIcon" /* 12797 */;
 import ICYMIContentSettingControl from "ICYMIContentSettingControl" /* 18098 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;

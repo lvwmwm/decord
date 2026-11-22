@@ -1,7 +1,7 @@
 // Module ID: 18203
 // Function ID: 18204
 // Name: ResourcesRow
-// Dependencies: [19, 17, 18204, 21, 4913, 575, 18205, 13141, 5127, 18206, 2119, 7030, 5504, 1112, 2]
+// Dependencies: [19, 17, 18204, 21, 4913, 575, 18205, 13139, 5127, 18206, 2119, 7030, 5504, 1112, 2]
 // Exports: default
 
 // Module 18203 (ResourcesRow)
@@ -9,7 +9,7 @@ import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import asyncRequire from "asyncRequire" /* 2119 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
-import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 13141 */;
+import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 13139 */;
 import OnboardingHomeConstants from "OnboardingHomeConstants" /* 18204 */;
 import useResourceChannelsDefault from "useResourceChannels" /* 18205 */;
 import react from "react" /* 19 */;

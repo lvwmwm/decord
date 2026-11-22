@@ -1,7 +1,7 @@
 // Module ID: 19206
 // Function ID: 19207
 // Name: FramePanelPIPView
-// Dependencies: [19, 6623, 6624, 19034, 21, 504, 19183, 19204, 18402, 15756, 2]
+// Dependencies: [19, 6623, 6624, 19034, 21, 504, 19183, 19204, 18402, 15754, 2]
 
 // Module 19206 (FramePanelPIPView)
 import Fragment from "Fragment" /* 21 */;
@@ -18,7 +18,7 @@ let metroImportDefault;
 let metroRequire;
 let tmp2;
 let tmp6;
-const FrameStackLevel = tmp2(15756);
+const FrameStackLevel = tmp2(15754);
 const FrameRenderTargetDefault = tmp6(18402);
 let react = react_mod;
 ({ asLaunched: hasOwnProperty, FrameLayoutModes: metroRequire, getPipOrientationLockStateForFrame: metroImportDefault } = FramesConstants);

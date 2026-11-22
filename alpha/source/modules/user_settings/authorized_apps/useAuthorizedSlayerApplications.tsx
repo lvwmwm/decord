@@ -1,7 +1,7 @@
 // Module ID: 17368
 // Function ID: 17369
 // Name: useAuthorizedSlayerApplications
-// Dependencies: [19, 6825, 504, 13494, 7012, 2]
+// Dependencies: [19, 6825, 504, 13492, 7012, 2]
 // Exports: default
 
 // Module 17368 (useAuthorizedSlayerApplications)

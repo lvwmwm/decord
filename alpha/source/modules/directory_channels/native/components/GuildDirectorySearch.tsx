@@ -1,23 +1,23 @@
-// Module ID: 13158
-// Function ID: 13159
+// Module ID: 13156
+// Function ID: 13157
 // Name: GuildDirectorySearch
-// Dependencies: [32, 19, 17, 4784, 13159, 1071, 21, 4913, 575, 5600, 13162, 5504, 1112, 1186, 504, 13163, 13164, 1628, 13193, 13196, 7490, 7095, 13198, 13172, 13156, 1255, 2]
+// Dependencies: [32, 19, 17, 4784, 13157, 1071, 21, 4913, 575, 5600, 13160, 5504, 1112, 1186, 504, 13161, 13162, 1628, 13191, 13194, 7490, 7095, 13196, 13170, 13154, 1255, 2]
 // Exports: default
 
-// Module 13158 (GuildDirectorySearch)
+// Module 13156 (GuildDirectorySearch)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1186 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import FastImageDefault from "FastImage" /* 5600 */;
-import GuildDirectorySearchModalActionCreatorsDefault from "GuildDirectorySearchModalActionCreators" /* 13156 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13162 */;
-import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 13164 */;
-import GuildDirectoryActionCreatorsAll from "GuildDirectoryActionCreators" /* 13172 */;
+import GuildDirectorySearchModalActionCreatorsDefault from "GuildDirectorySearchModalActionCreators" /* 13154 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13160 */;
+import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 13162 */;
+import GuildDirectoryActionCreatorsAll from "GuildDirectoryActionCreators" /* 13170 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4784 */;
-import GuildDirectorySearchStore from "GuildDirectorySearchStore" /* 13159 */;
+import GuildDirectorySearchStore from "GuildDirectorySearchStore" /* 13157 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;
@@ -65,7 +65,7 @@ function EmptyState(channel) {
   let obj = channel(504);
   const items = [GuildStore];
   importDefault = obj.useStateFromStores(items, () => GuildStore.getGuild(channel.getGuildId()));
-  let obj2 = channel(13163);
+  let obj2 = channel(13161);
   const canCreateOrAddGuildInDirectory = obj2.useCanCreateOrAddGuildInDirectory(channel);
   const intl = channel(1112).intl;
   if (canCreateOrAddGuildInDirectory) {

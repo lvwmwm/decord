@@ -1,10 +1,10 @@
-// Module ID: 12276
-// Function ID: 12277
+// Module ID: 12283
+// Function ID: 12284
 // Name: launchConjureSharedProject
 // Dependencies: [10688, 2]
 // Exports: default
 
-// Module 12276 (launchConjureSharedProject)
+// Module 12283 (launchConjureSharedProject)
 import openFrameDefault from "openFrame" /* 10688 */;
 import size from "module_2" /* 2 */;
 

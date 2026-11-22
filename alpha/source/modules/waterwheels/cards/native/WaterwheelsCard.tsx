@@ -1,7 +1,7 @@
 // Module ID: 17805
 // Function ID: 17806
 // Name: WaterwheelsCard
-// Dependencies: [19, 17, 6689, 13281, 1071, 6496, 21, 4913, 575, 10051, 504, 17806, 5600, 5504, 17807, 5511, 7325, 1112, 7565, 2]
+// Dependencies: [19, 17, 6689, 13279, 1071, 6496, 21, 4913, 575, 10051, 504, 17806, 5600, 5504, 17807, 5511, 7325, 1112, 7565, 2]
 // Exports: WaterwheelsCard, useWaterwheelsCardEligible
 
 // Module 17805 (WaterwheelsCard)
@@ -15,7 +15,7 @@ import entry_data_ErrorBoundary from "entry_data/ErrorBoundary" /* 17806 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6689 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13281 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13279 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;

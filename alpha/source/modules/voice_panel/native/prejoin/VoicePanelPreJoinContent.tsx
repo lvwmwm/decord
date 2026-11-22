@@ -1,7 +1,7 @@
 // Module ID: 19303
 // Function ID: 19304
 // Name: VoicePanelPreJoinContent
-// Dependencies: [5, 32, 19, 17, 4761, 5655, 15011, 6400, 502, 4762, 2131, 4845, 5656, 1386, 5561, 5657, 11750, 11753, 1071, 15015, 5658, 21, 4913, 11755, 575, 11749, 504, 6419, 7280, 6529, 6456, 6401, 7324, 5504, 1112, 14497, 6864, 4834, 19291, 1494, 1653, 1706, 10777, 10782, 10834, 7030, 19289, 5511, 5930, 1263, 7225, 9674, 5943, 7045, 10093, 11890, 7520, 7539, 1255, 19240, 18004, 19304, 5514, 4974, 5515, 18036, 19306, 2]
+// Dependencies: [5, 32, 19, 17, 4761, 5655, 15009, 6400, 502, 4762, 2131, 4845, 5656, 1386, 5561, 5657, 11750, 11753, 1071, 15013, 5658, 21, 4913, 11755, 575, 11749, 504, 6419, 7280, 6529, 6456, 6401, 7324, 5504, 1112, 14495, 6864, 4834, 19291, 1494, 1653, 1706, 10777, 10782, 10834, 7030, 19289, 5511, 5930, 1263, 7225, 9674, 5943, 7045, 10093, 11890, 7520, 7539, 1255, 19240, 18004, 19304, 5514, 4974, 5515, 18036, 19306, 2]
 
 // Module 19303 (VoicePanelPreJoinContent)
 import react_native from "react-native" /* 17 */;
@@ -24,13 +24,13 @@ import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11749 */;
 import VoicePanelConstants from "VoicePanelConstants" /* 11750 */;
 import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11753 */;
 import calculateVoicePanelHeaderSpecs from "calculateVoicePanelHeaderSpecs" /* 11755 */;
-import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 15015 */;
+import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 15013 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4761 */;
 import GameConsoleStore from "GameConsoleStore" /* 5655 */;
-import VoiceChannelBlockedUserStore from "VoiceChannelBlockedUserStore" /* 15011 */;
+import VoiceChannelBlockedUserStore from "VoiceChannelBlockedUserStore" /* 15009 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6400 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
@@ -152,7 +152,7 @@ function ActivityInfo(activity) {
   let tmp14;
   let tmp15;
   let tmp8;
-  const f117388 = () => {
+  const f117399 = () => {
     const obj = activity(first[39]);
     return obj.getWindowDimensions().width - 2 * (EDGE_GUTTER + 16);
   };
@@ -172,8 +172,8 @@ function ActivityInfo(activity) {
   const context = react.useContext(analyticsLocations(application[25]));
   const channelId = context.channelId;
   const windowDimensions = context.windowDimensions;
-  [r10039, tmp8] = embeddedActivityJoinability(react.useState(f117388), 2);
-  embeddedActivityJoinability(react.useState(f117388), 2);
+  [r10039, tmp8] = embeddedActivityJoinability(react.useState(f117399), 2);
+  embeddedActivityJoinability(react.useState(f117399), 2);
   const items1 = [closure_31, windowDimensions];
   let c0;
   [tmp10, tmp11] = items1;

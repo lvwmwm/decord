@@ -1,9 +1,9 @@
-// Module ID: 19531
-// Function ID: 19532
+// Module ID: 19527
+// Function ID: 19528
 // Name: HolidayEventsUtils
 // Dependencies: [19525, 2]
 
-// Module 19531 (HolidayEventsUtils)
+// Module 19527 (HolidayEventsUtils)
 import HolidayEventsConfigDefault from "HolidayEventsConfig" /* 19525 */;
 import size from "module_2" /* 2 */;
 
@@ -40,14 +40,10 @@ let obj = {
     const tmp5 = timestamp >= HolidayEventsConfigDefault.startTimeMs && timestamp <= HolidayEventsConfigDefault.endTimeMs && isExperimentEligible;
     return tmp5;
   },
-  getAppSpinnerSources() {
+  isHolidayHappening() {
     const timestamp = Date.now();
-    let appSpinnerSources = null;
     const tmp4 = timestamp >= HolidayEventsConfigDefault.startTimeMs && timestamp <= HolidayEventsConfigDefault.endTimeMs;
-    if (tmp4) {
-      appSpinnerSources = tmp2(19525).appSpinnerSources;
-    }
-    return appSpinnerSources;
+    return tmp4;
   },
   getLoadingTips() {
     const timestamp = Date.now();

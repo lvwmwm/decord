@@ -1,7 +1,7 @@
 // Module ID: 5645
 // Function ID: 5646
 // Name: MarkupReactRules
-// Dependencies: [19, 17, 4914, 4762, 4819, 1071, 4769, 1082, 21, 575, 5641, 5504, 4913, 5646, 5536, 5090, 6429, 8067, 5860, 1112, 7545, 5594, 7322, 1186, 1379, 7255, 5592, 10519, 10416, 8802, 504, 4910, 8699, 5127, 12044, 2119, 11, 4738, 5600, 12102, 12007, 15052, 15054, 5609, 11990, 15056, 12103, 11141, 5934, 1378, 5936, 7636, 11137, 11142, 2]
+// Dependencies: [19, 17, 4914, 4762, 4819, 1071, 4769, 1082, 21, 575, 5641, 5504, 4913, 5646, 5536, 5090, 6429, 8067, 5860, 1112, 7545, 5594, 7322, 1186, 1379, 7255, 5592, 10519, 10416, 8802, 504, 4910, 8699, 5127, 12044, 2119, 11, 4738, 5600, 12102, 12007, 15050, 15052, 5609, 11990, 15054, 12103, 11141, 5934, 1378, 5936, 7636, 11137, 11142, 2]
 // Exports: default, plainMentionRenderer, plainSpoilerRenderer
 
 // Module 5645 (MarkupReactRules)
@@ -77,7 +77,7 @@ class MarkupText {
     let tmp = null;
     const merged = Object.assign(color, Object.assign({ children: 0, color: 0, variant: 0 }));
     if (react.useContext(Spoiler.SpoilerHiddenContext)) {
-      const obj = { style: items, onPress: "analyticsLocations", onLongPress: "channelId", accessibilityRole: "position" };
+      const obj = { style: items, onPress: "channel", onLongPress: "done", accessibilityRole: "getCurrentUser" };
       items = [merged.style, obj.spoilerHiddenText];
       tmp = obj;
     }
@@ -634,7 +634,7 @@ function MarkupStaticRouteLink(state) {
   const node = state.node;
   ({ output, styles, variants } = state);
   let tmp = closure_16();
-  let SignPostIcon = state(15052).SignPostIcon;
+  let SignPostIcon = state(15050).SignPostIcon;
   const channelId = node.channelId;
   if (StaticChannelId.GUILD_HOME !== channelId) {
     if (StaticChannelId.SERVER_GUIDE !== channelId) {
@@ -645,7 +645,7 @@ function MarkupStaticRouteLink(state) {
           }
         }
       }
-      SignPostIcon = tmp2(15054).ChannelListMagnifyingGlassIcon;
+      SignPostIcon = tmp2(15052).ChannelListMagnifyingGlassIcon;
     }
     let str = "button";
     if (state.noStyleAndInteraction) {
@@ -719,7 +719,7 @@ function MarkupStaticRouteLink(state) {
       return tmp7Result;
     }
   }
-  SignPostIcon = tmp2(15052).SignPostIcon;
+  SignPostIcon = tmp2(15050).SignPostIcon;
 }
 function MarkupAttachmentLink(state) {
   let SMALL;
@@ -745,7 +745,7 @@ function MarkupAttachmentLink(state) {
     str2 = "body-xs/medium";
   }
   let obj = { variant: str2, style: tmp.channelMentionText, children: items };
-  const obj2 = { themedColor: node(575).colors.MENTION_FOREGROUND, source: node(15056), size: SMALL };
+  const obj2 = { themedColor: node(575).colors.MENTION_FOREGROUND, source: node(15054), size: SMALL };
   const ThemedIcon = tmp3(1186).ThemedIcon;
   const fontScale = closure_4.getFontScale();
   if (fontScale < 1) {
@@ -824,7 +824,7 @@ let style = { unicodeEmoji: obj2, emoji: { width: EMOJI_CHAT_SIZE, height: EMOJI
 obj2 = { transform: items };
 let obj3 = { translateY: nativeDefault.space.PX_4 };
 items = [obj3];
-obj4 = { color: Spoiler.SPOILER_HIDDEN_TEXT_COLOR, backgroundColor: "Array" };
+obj4 = { color: Spoiler.SPOILER_HIDDEN_TEXT_COLOR, backgroundColor: "r" };
 let createStyles = createStyles_mod;
 let obj5 = { link: obj6, channelMention: obj7, channelMentionText: obj8, mention: obj9, inlineCode: obj10, codeBlock: obj11, blockQuote: obj12 };
 obj6 = { fontFamily: Fonts.PRIMARY_BOLD, color: nativeDefault.colors.TEXT_LINK };

@@ -25,7 +25,7 @@ const VoicePanelModes = VoicePanelConstants.VoicePanelModes;
 ({ CONTROLS_HEIGHT, VoicePanelControlsModes } = VoicePanelControlsConstants);
 const obj = {
   channelId: "context-not-initialized",
-  channelType: "fill",
+  channelType: "fileBytes",
   connected: ReanimatedHelperTypes.createFakeSharedValue(false),
   contentDimensions: ReanimatedHelperTypes.createFakeSharedValue({ width: 0, height: 0 }),
   controlsSpecs: ReanimatedHelperTypes.createFakeSharedValue(obj2),
@@ -51,7 +51,7 @@ const obj = {
   dockPressed: ReanimatedHelperTypes.createFakeSharedValue(false),
   dockPTTPortalHostName: null,
   dockPTTMeasureHostRef: { current: null },
-  dismissToPIPGestureRef: { current: "r" },
+  dismissToPIPGestureRef: { current: "Array" },
   dragScrolling: ReanimatedHelperTypes.createFakeSharedValue(false),
   focused: ReanimatedHelperTypes.createFakeSharedValue(null),
   generateStateLocker() {

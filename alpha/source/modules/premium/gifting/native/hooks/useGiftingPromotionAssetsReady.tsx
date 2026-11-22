@@ -19,7 +19,7 @@ export default function useGiftingPromotionAssetsReady(asset, asset2) {
   let first1;
   let themeAndReducedMotionAwareAssetUrl;
   let themeAndReducedMotionAwareAssetUrl1;
-  const f116857 = () => {
+  const f116868 = () => {
     let tmp;
     if (null != c0) {
       c0 = true;
@@ -54,7 +54,7 @@ export default function useGiftingPromotionAssetsReady(asset, asset2) {
   let obj2 = react;
   [first, closure_1] = react.useState(null);
   const items = [themeAndReducedMotionAwareAssetUrl];
-  const effect = react.useEffect(f116857, items);
+  const effect = react.useEffect(f116868, items);
   let asset1;
   const obj3 = { isGiftCoachmarkAssetReady: null == themeAndReducedMotionAwareAssetUrl || first === themeAndReducedMotionAwareAssetUrl, isGiftReminderAssetReady: null == themeAndReducedMotionAwareAssetUrl1 || first1 === themeAndReducedMotionAwareAssetUrl1 };
   const tmp5 = _slicedToArray;
@@ -67,6 +67,6 @@ export default function useGiftingPromotionAssetsReady(asset, asset2) {
   closure_1 = tmp5Result[1];
   const items1 = [themeAndReducedMotionAwareAssetUrl1];
   first1 = tmp5Result[0];
-  const effect1 = obj2.useEffect(f116857, items1);
+  const effect1 = obj2.useEffect(f116868, items1);
   return obj3;
 };

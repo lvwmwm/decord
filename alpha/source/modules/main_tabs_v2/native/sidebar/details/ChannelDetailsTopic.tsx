@@ -345,7 +345,7 @@ let obj = { hidden: { flex: 1, flexGrow: 1, position: "absolute", opacity: 0 }, 
 createStyles = createStyles.createStyles;
 let obj2 = null;
 if (!PlatformUtils.isAndroid()) {
-  obj2 = { lineHeight: "r" };
+  obj2 = { lineHeight: "Array" };
 }
 obj3 = { paddingVertical: 5 };
 let merged = Object.assign(obj2);

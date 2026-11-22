@@ -1,7 +1,7 @@
 // Module ID: 18953
 // Function ID: 18954
 // Name: ChannelSettingsPermissionsOverrides
-// Dependencies: [32, 5, 19, 17, 18954, 4780, 4762, 4819, 4784, 4845, 4855, 1386, 1071, 21, 4913, 575, 504, 18956, 1500, 1628, 6866, 12079, 18955, 18959, 4850, 7736, 1083, 2117, 4969, 5860, 1112, 5592, 2187, 4770, 18574, 8561, 5504, 5529, 13857, 7045, 7762, 7348, 18578, 1378, 2]
+// Dependencies: [32, 5, 19, 17, 18954, 4780, 4762, 4819, 4784, 4845, 4855, 1386, 1071, 21, 4913, 575, 504, 18956, 1500, 1628, 6866, 12079, 18955, 18959, 4850, 7736, 1083, 2117, 4969, 5860, 1112, 5592, 2187, 4770, 18574, 8561, 5504, 5529, 13855, 7045, 7762, 7348, 18578, 1378, 2]
 // Exports: default
 
 // Module 18953 (ChannelSettingsPermissionsOverrides)
@@ -340,7 +340,7 @@ export default function ChannelSettingsPermissionsOverrides(channelId) {
   const tmp12 = closure_20(Text, obj5);
   if (type === constants.MEMBER) {
     let obj6 = { userId: id, guildId: stateFromStores.guild_id, start: true, end: true, trailing: tmp12 };
-    tmp11Result = tmp11(tmp5(13857), obj6);
+    tmp11Result = tmp11(tmp5(13855), obj6);
   } else {
     let tmp13 = GuildRoleStore;
     let TableRow = tmp2(7045).TableRow;

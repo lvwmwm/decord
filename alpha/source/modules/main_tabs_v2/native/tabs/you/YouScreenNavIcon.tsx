@@ -1,16 +1,16 @@
-// Module ID: 13776
-// Function ID: 13777
+// Module ID: 13774
+// Function ID: 13775
 // Name: YouScreenNavIcon
-// Dependencies: [19, 17, 21, 13777, 575, 9023, 4913, 13778, 1112, 7600, 5080, 5504, 2]
+// Dependencies: [19, 17, 21, 13775, 575, 9023, 4913, 13776, 1112, 7600, 5080, 5504, 2]
 
-// Module 13776 (YouScreenNavIcon)
+// Module 13774 (YouScreenNavIcon)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
 import mergeProps from "mergeProps" /* 5080 */;
 import ClipView from "ClipView" /* 9023 */;
-import getIconSize from "getIconSize" /* 13777 */;
-import YouScreenNavIconMeasurer from "YouScreenNavIconMeasurer" /* 13778 */;
+import getIconSize from "getIconSize" /* 13775 */;
+import YouScreenNavIconMeasurer from "YouScreenNavIconMeasurer" /* 13776 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4913 */;

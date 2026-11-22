@@ -1,10 +1,10 @@
-// Module ID: 12541
-// Function ID: 12542
+// Module ID: 12539
+// Function ID: 12540
 // Name: useCheckpointCharacterExit
 // Dependencies: [32, 19, 4914, 12515, 504, 7392, 2]
 // Exports: default
 
-// Module 12541 (useCheckpointCharacterExit)
+// Module 12539 (useCheckpointCharacterExit)
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4914 */;

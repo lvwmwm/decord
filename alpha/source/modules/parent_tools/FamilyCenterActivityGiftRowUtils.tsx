@@ -1,10 +1,10 @@
-// Module ID: 16206
-// Function ID: 16207
+// Module ID: 16204
+// Function ID: 16205
 // Name: FamilyCenterActivityGiftRowUtils
 // Dependencies: [1112, 2168, 6856, 2824, 2]
 // Exports: formatGiftDate, getGiftRowDisplayInfo, getGiftSubtext
 
-// Module 16206 (FamilyCenterActivityGiftRowUtils)
+// Module 16204 (FamilyCenterActivityGiftRowUtils)
 import intl3 from "intl" /* 1112 */;
 import _modDef2168 from "module_2168" /* 2168 */;
 import _modDef2824 from "module_2824" /* 2824 */;

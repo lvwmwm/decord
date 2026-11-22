@@ -1,7 +1,7 @@
 // Module ID: 17557
 // Function ID: 17558
 // Name: usePrivateChannelWave
-// Dependencies: [5, 32, 19, 1071, 4918, 13130, 1098, 8250, 5595, 1112, 17558, 2]
+// Dependencies: [5, 32, 19, 1071, 4918, 13128, 1098, 8250, 5595, 1112, 17558, 2]
 // Exports: default
 
 // Module 17557 (usePrivateChannelWave)

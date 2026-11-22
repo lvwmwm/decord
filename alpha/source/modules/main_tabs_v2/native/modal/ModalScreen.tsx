@@ -1,7 +1,7 @@
 // Module ID: 18994
 // Function ID: 18995
 // Name: modal/ModalScreen
-// Dependencies: [109, 19, 17, 1071, 21, 4913, 575, 7373, 4870, 18995, 17513, 6429, 5930, 1263, 8268, 15821, 1378, 18406, 2]
+// Dependencies: [109, 19, 17, 1071, 21, 4913, 575, 7373, 4870, 18995, 17513, 6429, 5930, 1263, 8268, 15819, 1378, 18406, 2]
 // Exports: default
 
 // Module 18994 (modal/ModalScreen)
@@ -130,7 +130,7 @@ export default function Modal(route) {
   items1 = [tmp7.content, styles.content];
   const obj8 = { style: items2, collapsable: null == styles.container, children: null };
   items2 = [tmp7.content, styles.body];
-  SafeAreaProvider = tmp12(15821).SafeAreaProvider;
+  SafeAreaProvider = tmp12(15819).SafeAreaProvider;
   const createElement = obj5.createElement;
   const modal2 = modal.modal;
   const merged = Object.assign(tmp9);

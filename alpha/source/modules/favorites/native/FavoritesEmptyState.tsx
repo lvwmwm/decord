@@ -1,7 +1,7 @@
 // Module ID: 18847
 // Function ID: 18848
 // Name: FavoritesEmptyState
-// Dependencies: [19, 17, 21, 4913, 575, 13882, 11226, 5929, 5504, 1112, 3802, 5511, 13709, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 13880, 11226, 5929, 5504, 1112, 3802, 5511, 13707, 2]
 // Exports: default
 
 // Module 18847 (FavoritesEmptyState)
@@ -13,8 +13,8 @@ import Text_Text from "Text/Text" /* 5504 */;
 import components_Button_Button from "components/Button/Button" /* 5511 */;
 import Stack_Stack from "Stack/Stack" /* 5929 */;
 import FavoritesSpotIllustration from "FavoritesSpotIllustration" /* 11226 */;
-import PlusMediumIcon from "PlusMediumIcon" /* 13709 */;
-import openFavoritesGuildAddChannelModalDefault from "openFavoritesGuildAddChannelModal" /* 13882 */;
+import PlusMediumIcon from "PlusMediumIcon" /* 13707 */;
+import openFavoritesGuildAddChannelModalDefault from "openFavoritesGuildAddChannelModal" /* 13880 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4913 */;

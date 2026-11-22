@@ -1,7 +1,7 @@
 // Module ID: 18107
 // Function ID: 18108
 // Name: ICYMIInfoScreen
-// Dependencies: [32, 5, 19, 17, 1082, 21, 4913, 575, 5467, 1628, 5122, 1500, 15642, 18108, 6429, 8561, 8569, 1112, 5600, 18110, 18111, 18112, 18113, 5504, 12464, 14465, 7532, 5127, 18114, 2119, 5511, 2]
+// Dependencies: [32, 5, 19, 17, 1082, 21, 4913, 575, 5467, 1628, 5122, 1500, 15640, 18108, 6429, 8561, 8569, 1112, 5600, 18110, 18111, 18112, 18113, 5504, 12471, 14463, 7532, 5127, 18114, 2119, 5511, 2]
 // Exports: default
 
 // Module 18107 (ICYMIInfoScreen)
@@ -215,7 +215,7 @@ export default function ICYMIInfoScreen(extendedOnboarding) {
   items9 = [, ];
   const obj14 = { children: items13 };
   const obj15 = { style: tmp.body, children: items10 };
-  const obj17 = { style: tmp.infoIcon, children: closure_9(extendedOnboarding(12464).ServerIcon, { size: "sm", color: "interactive-text-active" }) };
+  const obj17 = { style: tmp.infoIcon, children: closure_9(extendedOnboarding(12471).ServerIcon, { size: "sm", color: "interactive-text-active" }) };
   items9[0] = closure_9(closure_6, obj17);
   const obj18 = { variant: "body-md/medium", color: "mobile-text-heading-primary", style: tmp.infoText, children: intl4.string(extendedOnboarding(1112).t.knxfqR) };
   const Text3 = tmp6(5504).Text;
@@ -226,7 +226,7 @@ export default function ICYMIInfoScreen(extendedOnboarding) {
   items10[1] = closure_9(closure_6, obj19);
   const obj20 = { style: tmp.infoRow, children: items11 };
   items11 = [, ];
-  const obj21 = { style: tmp.infoIcon, children: closure_9(extendedOnboarding(14465).NewUserIcon, { size: "sm", color: "interactive-text-active" }) };
+  const obj21 = { style: tmp.infoIcon, children: closure_9(extendedOnboarding(14463).NewUserIcon, { size: "sm", color: "interactive-text-active" }) };
   items11[0] = closure_9(closure_6, obj21);
   const obj22 = { variant: "body-md/medium", color: "mobile-text-heading-primary", style: tmp.infoText, children: intl5.string(extendedOnboarding(1112).t.BnUXZi) };
   const Text4 = tmp6(5504).Text;

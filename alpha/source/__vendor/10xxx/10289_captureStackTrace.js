@@ -16,7 +16,7 @@ let items1;
 let items2;
 let items3;
 let items4;
-const f52759 = function() {
+const f52757 = function() {
   if (NEVER2.globalConfig.jitless) {
     return false;
   } else {
@@ -52,11 +52,11 @@ function mirrorProps(arg0, arg1) {
       let tmp = closure_0;
       if (iter.get) {
         closure_0 = iter;
-        const f137295 = () => closure_2_1[closure_0];
+        const f137311 = () => closure_2_1[closure_0];
         const _Object2 = Object;
         const obj2 = {
           get() {
-                const tmp = f137295();
+                const tmp = f137311();
                 Object.defineProperty(this, closure_0, { value: tmp, writable: true, enumerable: true, configurable: true });
                 return tmp;
               },
@@ -114,7 +114,7 @@ function mirrorShape(arg0, _zod, arg2, arg3) {
       const tmp = closure_0;
       if (iter.get) {
         closure_0 = iter;
-        const f126452 = () => {
+        const f126465 = () => {
           let tmp3Result = tmp2;
           if (closure_2_2) {
             tmp3Result = tmp3(tmp2, tmp);
@@ -124,7 +124,7 @@ function mirrorShape(arg0, _zod, arg2, arg3) {
         const _Object2 = Object;
         const obj2 = {
           get() {
-                const tmp = f137295();
+                const tmp = f137311();
                 Object.defineProperty(this, closure_0, { value: tmp, writable: true, enumerable: true, configurable: true });
                 return tmp;
               },
@@ -323,7 +323,7 @@ if ("captureStackTrace" in Error) {
 
   };
 }
-new _moduleResult(f52759);
+new _moduleResult(f52757);
 let set = new Set(["string", "number", "symbol"]);
 let obj2 = { safeint: items1, int32: [-2147483648, 2147483647], uint32: [0, 4294967295], float32: [-340282346638528860000000000000000000000, 340282346638528860000000000000000000000], float64: items2 };
 items1 = [Number.MIN_SAFE_INTEGER, Number.MAX_SAFE_INTEGER];
@@ -1736,7 +1736,7 @@ export function constantCatch(fn) {
   return fn;
 }
 export const captureStackTrace = fn;
-export const allowsEval = new _moduleResult(f52759);
+export const allowsEval = new _moduleResult(f52757);
 export const getParsedType = function(self) {
   if ("undefined" === typeof self) {
     return "undefined";

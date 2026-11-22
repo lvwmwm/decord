@@ -1,7 +1,7 @@
 // Module ID: 18044
 // Function ID: 18045
 // Name: NotificationCenterActionSheet
-// Dependencies: [19, 6665, 1071, 21, 504, 18045, 5127, 11679, 8558, 8194, 7553, 7515, 1112, 7555, 7690, 13294, 11239, 18046, 11692, 11680, 5622, 13083, 10371, 2]
+// Dependencies: [19, 6665, 1071, 21, 504, 18045, 5127, 11679, 8558, 8194, 7553, 7515, 1112, 7555, 7690, 13292, 11239, 18046, 11692, 11680, 5622, 13081, 10371, 2]
 // Exports: default
 
 // Module 18044 (NotificationCenterActionSheet)
@@ -101,7 +101,7 @@ export default function NotificationCenterActionSheet() {
   };
   const ActionSheetSwitchRow = roleFilter(7555).ActionSheetSwitchRow;
   intl2 = roleFilter(1112).intl;
-  obj6 = { IconComponent: roleFilter(7690).AtIcon, source: everyoneFilter(13294) };
+  obj6 = { IconComponent: roleFilter(7690).AtIcon, source: everyoneFilter(13292) };
   Icon = roleFilter(7555).ActionSheetRow.Icon;
   items2 = [closure_6(ActionSheetSwitchRow, obj5), ];
   const obj7 = {
@@ -151,7 +151,7 @@ export default function NotificationCenterActionSheet() {
   items4[1] = closure_6(ActionSheetRow2, obj12, "reminders");
   const obj14 = { icon: closure_6(Icon5, obj15), label: intl7.string(roleFilter(1112).t.SZVs3K), onPress: callback, arrow: true };
   const ActionSheetRow3 = roleFilter(7555).ActionSheetRow;
-  obj15 = { IconComponent: roleFilter(13083).CalendarPlusIcon };
+  obj15 = { IconComponent: roleFilter(13081).CalendarPlusIcon };
   Icon5 = roleFilter(7555).ActionSheetRow.Icon;
   intl7 = roleFilter(1112).intl;
   items4[2] = closure_6(ActionSheetRow3, obj14, "scheduled-messages");

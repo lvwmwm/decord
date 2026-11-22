@@ -1,7 +1,7 @@
 // Module ID: 12524
 // Function ID: 12525
 // Name: CheckpointShareCardStats
-// Dependencies: [19, 17, 21, 4913, 575, 7977, 5600, 12523, 5504, 9489, 2022, 1412, 11011, 7672, 12464, 7040, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 7977, 5600, 12523, 5504, 9489, 2022, 1412, 11011, 7672, 12471, 7040, 2]
 // Exports: default
 
 // Module 12524 (CheckpointShareCardStats)
@@ -15,7 +15,7 @@ import ChatIcon from "ChatIcon" /* 7672 */;
 import UnknownGameIcon from "UnknownGameIcon" /* 7977 */;
 import ReactionIcon from "ReactionIcon" /* 9489 */;
 import MicrophoneIcon from "MicrophoneIcon" /* 11011 */;
-import ServerIcon from "ServerIcon" /* 12464 */;
+import ServerIcon from "ServerIcon" /* 12471 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;

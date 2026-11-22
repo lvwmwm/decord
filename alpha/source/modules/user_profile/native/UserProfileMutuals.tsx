@@ -1,10 +1,10 @@
-// Module ID: 14628
-// Function ID: 14629
+// Module ID: 14626
+// Function ID: 14627
 // Name: UserProfileMutuals
-// Dependencies: [19, 17, 8069, 7564, 21, 4913, 8135, 13501, 14444, 5127, 13508, 2119, 8067, 6835, 7030, 14488, 1186, 5504, 13528, 13538, 7322, 13503, 2]
+// Dependencies: [19, 17, 8069, 7564, 21, 4913, 8135, 13499, 14442, 5127, 13506, 2119, 8067, 6835, 7030, 14486, 1186, 5504, 13526, 13536, 7322, 13501, 2]
 // Exports: default
 
-// Module 14628 (UserProfileMutuals)
+// Module 14626 (UserProfileMutuals)
 import react_native from "react-native" /* 17 */;
 import asyncRequire from "asyncRequire" /* 2119 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
@@ -61,9 +61,9 @@ export default function UserProfileMutuals(user) {
   let obj = user(8135);
   const userProfileAnalyticsContext = obj.useUserProfileAnalyticsContext();
   ({ context: c2, trackUserProfileAction: c3 } = userProfileAnalyticsContext);
-  ({ mutualFriends, mutualGuilds } = guildId(13501)(user));
-  guildId(13501)(user);
-  if (guildId(14444)(user)) {
+  ({ mutualFriends, mutualGuilds } = guildId(13499)(user));
+  guildId(13499)(user);
+  if (guildId(14442)(user)) {
     if (!(null != mutualFriends && mutualFriends.length > 0)) {
       if (!(null != mutualGuilds && mutualGuilds.length > 0)) {
         return null;
@@ -83,7 +83,7 @@ export default function UserProfileMutuals(user) {
               _undefined2({ action: "PRESS_SECTION", section: MUTUAL_FRIENDS });
               const obj = ActionSheetActionCreatorsDefault;
               const obj2 = { user, section: MUTUAL_FRIENDS, guildId, onPressMutualFriend, onPressMutualGuild };
-              obj.openLazy(asyncRequire(13508, dependencyMap.paths), "UserProfileMutualsActionSheet", obj2, "stack");
+              obj.openLazy(asyncRequire(13506, dependencyMap.paths), "UserProfileMutualsActionSheet", obj2, "stack");
             },
         children: items
       };
@@ -93,14 +93,14 @@ export default function UserProfileMutuals(user) {
         totalCount: mapped.length,
         names: mapped.map((username) => username.username),
         children: mapped.map((user) => {
-              const obj = { user, size: user(c2[16]).AvatarSizes.SIZE_16, guildId: "r" };
+              const obj = { user, size: user(c2[16]).AvatarSizes.SIZE_16, guildId: "Array" };
               const Avatar = user(c2[16]).Avatar;
               return closure_1_6(Avatar, obj, user.id);
             })
       };
-      const AvatarPile = tmp2(14488).AvatarPile;
+      const AvatarPile = tmp2(14486).AvatarPile;
       items = [closure_6(AvatarPile, obj4), ];
-      const obj5 = { variant, color, children: guildId(13528)(mutualFriends.length) };
+      const obj5 = { variant, color, children: guildId(13526)(mutualFriends.length) };
       const Text = tmp2(5504).Text;
       items[1] = closure_6(Text, obj5);
       tmp9Result = tmp9(PressableOpacity, obj3);
@@ -125,7 +125,7 @@ export default function UserProfileMutuals(user) {
               _undefined2({ action: "PRESS_SECTION", section: MUTUAL_GUILDS });
               let obj = ActionSheetActionCreatorsDefault;
               let obj2 = { user, section: MUTUAL_GUILDS, guildId, onPressMutualFriend, onPressMutualGuild };
-              obj.openLazy(asyncRequire(13508, dependencyMap.paths), "UserProfileMutualsActionSheet", obj2, "stack");
+              obj.openLazy(asyncRequire(13506, dependencyMap.paths), "UserProfileMutualsActionSheet", obj2, "stack");
             },
         children: items2
       };
@@ -141,11 +141,11 @@ export default function UserProfileMutuals(user) {
                   return closure_1_6(tmp, obj, guild.id);
                 })
         };
-        const GuildIconPile = tmp2(13538).GuildIconPile;
+        const GuildIconPile = tmp2(13536).GuildIconPile;
         tmp21 = closure_6(GuildIconPile, obj8);
       }
       items2 = [tmp21, ];
-      const obj9 = { variant, color, children: guildId(13503)(mutualGuilds.length) };
+      const obj9 = { variant, color, children: guildId(13501)(mutualGuilds.length) };
       const Text2 = tmp2(5504).Text;
       items2[1] = closure_6(Text2, obj9);
       tmp9Result2 = tmp9(PressableOpacity2, obj7);

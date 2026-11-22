@@ -1,12 +1,12 @@
-// Module ID: 13509
-// Function ID: 13510
+// Module ID: 13507
+// Function ID: 13508
 // Name: ActivityStatus
-// Dependencies: [19, 17, 5651, 4855, 1386, 13510, 21, 4913, 504, 13511, 13512, 5652, 9052, 13513, 13518, 13519, 13525, 13527, 13517, 2]
+// Dependencies: [19, 17, 5651, 4855, 1386, 13508, 21, 4913, 504, 13509, 13510, 5652, 9052, 13511, 13516, 13517, 13523, 13525, 13515, 2]
 // Exports: default
 
-// Module 13509 (ActivityStatus)
+// Module 13507 (ActivityStatus)
 import react_native from "react-native" /* 17 */;
-import ActivityStatusConstants from "ActivityStatusConstants" /* 13510 */;
+import ActivityStatusConstants from "ActivityStatusConstants" /* 13508 */;
 import react from "react" /* 19 */;
 import PresenceStore from "PresenceStore" /* 5651 */;
 import RelationshipStore from "RelationshipStore" /* 4855 */;
@@ -58,8 +58,8 @@ export default function ActivityStatus(userId) {
   const items1 = [PresenceStore];
   const obj2 = userId(504);
   const stateFromStores1 = obj2.useStateFromStores(items1, () => PresenceStore.getActivities(userId));
-  const tmp6 = stateFromStores1(13511)(userId);
-  const voiceChannel = stateFromStores1(13512)({ userId, guildId }).voiceChannel;
+  const tmp6 = stateFromStores1(13509)(userId);
+  const voiceChannel = stateFromStores1(13510)({ userId, guildId }).voiceChannel;
   const items2 = [stateFromStores1];
   const memo = react.useMemo(() => {
     let found;
@@ -115,9 +115,9 @@ export default function ActivityStatus(userId) {
     if (null != tmp6) {
       let found;
       const tmp19 = closure_9;
-      const tmp5Result = stateFromStores1(13513);
+      const tmp5Result = stateFromStores1(13511);
       if (stateFromStores1 != null) {
-        found = stateFromStores1.find(tmp5(13518));
+        found = stateFromStores1.find(tmp5(13516));
       }
       const obj3 = { game: found, iconStyle: items4, textStyle, maxFontSizeMultiplier, hideIcon: true === bot, hideText: null != state1 };
       items4 = [tmp.icon, iconStyle];
@@ -134,13 +134,13 @@ export default function ActivityStatus(userId) {
       if (null != found1) {
         const obj4 = { activity: found1, iconStyle: items5, textStyle, maxFontSizeMultiplier, hideIcon: true === bot, hideText: null != state1 };
         items5 = [tmp.icon, iconStyle];
-        tmp19Result = closure_9(tmp5(13519), obj4);
+        tmp19Result = closure_9(tmp5(13517), obj4);
       } else {
         tmp19Result = null;
         if (null != voiceChannel) {
           const obj5 = { channel: voiceChannel, iconStyle: items6, textStyle, maxFontSizeMultiplier, hideIcon: true === bot, hideText: null != state1 };
           items6 = [tmp.icon, iconStyle];
-          tmp19Result = closure_9(tmp5(13525), obj5);
+          tmp19Result = closure_9(tmp5(13523), obj5);
         }
       }
     }
@@ -156,13 +156,13 @@ export default function ActivityStatus(userId) {
         }
         if (tmp26) {
           const obj6 = { emoji: memo.emoji, size: emojiSize, animate, style: tmp.emoji };
-          tmp26 = closure_9(tmp5(13527), obj6);
+          tmp26 = closure_9(tmp5(13525), obj6);
         }
         const items7 = [tmp26, ];
         let tmp28 = null != memo.state;
         if (tmp28) {
           const obj7 = { variant: "body-xs/normal", style: textStyle, maxFontSizeMultiplier, children: gameMentionsAsPlainText };
-          tmp28 = closure_9(tmp5(13517), obj7);
+          tmp28 = closure_9(tmp5(13515), obj7);
         }
         const obj8 = { children: items7 };
         items7[1] = tmp28;
@@ -180,7 +180,7 @@ export default function ActivityStatus(userId) {
     }
     if (tmp32) {
       const obj10 = { variant: "body-xs/normal", style: textStyle, maxFontSizeMultiplier, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: DOT_UNICODE };
-      tmp32 = closure_9(tmp5(13517), obj10);
+      tmp32 = closure_9(tmp5(13515), obj10);
     }
     items8[1] = tmp32;
     items8[2] = tmp22;

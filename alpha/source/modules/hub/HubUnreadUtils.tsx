@@ -1,12 +1,12 @@
 // Module ID: 17726
 // Function ID: 17727
 // Name: HubUnreadUtils
-// Dependencies: [13168, 6619, 504, 11, 13160, 2]
+// Dependencies: [13166, 6619, 504, 11, 13158, 2]
 // Exports: useHubUnreadCount
 
 // Module 17726 (HubUnreadUtils)
-import GuildDirectoryUtils from "GuildDirectoryUtils" /* 13160 */;
-import GuildDirectoryStore from "GuildDirectoryStore" /* 13168 */;
+import GuildDirectoryUtils from "GuildDirectoryUtils" /* 13158 */;
+import GuildDirectoryStore from "GuildDirectoryStore" /* 13166 */;
 import ReadStateStore from "ReadStateStore" /* 6619 */;
 import size from "module_2" /* 2 */;
 

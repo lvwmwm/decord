@@ -1,7 +1,7 @@
 // Module ID: 18305
 // Function ID: 18306
 // Name: useConjureAppSettingsForm
-// Dependencies: [5, 32, 19, 17, 4843, 4784, 4855, 1386, 6982, 21, 4913, 575, 504, 18306, 14747, 18308, 1112, 4190, 14746, 18309, 7348, 18310, 7335, 7347, 7349, 18321, 7461, 7221, 5504, 5511, 6865, 7045, 7060, 5529, 5127, 11731, 18307, 18325, 2]
+// Dependencies: [5, 32, 19, 17, 4843, 4784, 4855, 1386, 6982, 21, 4913, 575, 504, 18306, 14745, 18308, 1112, 4190, 14744, 18309, 7348, 18310, 7335, 7347, 7349, 18321, 7461, 7221, 5504, 5511, 6865, 7045, 7060, 5529, 5127, 11731, 18307, 18325, 2]
 // Exports: default
 
 // Module 18305 (useConjureAppSettingsForm)
@@ -11,7 +11,7 @@ import intl9 from "intl" /* 1112 */;
 import _modDef4190 from "module_4190" /* 4190 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5127 */;
 import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 11731 */;
-import conjureSettingValues from "conjureSettingValues" /* 14747 */;
+import conjureSettingValues from "conjureSettingValues" /* 14745 */;
 import ConjureGuildPickerSheetDefault from "ConjureGuildPickerSheet" /* 18325 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

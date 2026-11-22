@@ -1,14 +1,14 @@
 // Module ID: 19138
 // Function ID: 19139
 // Name: shared/DMChannel
-// Dependencies: [19, 6553, 21, 5646, 13845, 4913, 575, 18754, 17917, 16723, 11, 5519, 19130, 7030, 18753, 19131, 11125, 5574, 5529, 2]
+// Dependencies: [19, 6553, 21, 5646, 13843, 4913, 575, 18754, 17917, 16721, 11, 5519, 19130, 7030, 18753, 19131, 11125, 5574, 5529, 2]
 
 // Module 19138 (shared/DMChannel)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import transitionToChannel from "transitionToChannel" /* 5646 */;
 import ReadStateConstants from "ReadStateConstants" /* 6553 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 13845 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 13843 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
@@ -40,7 +40,7 @@ const memoResult = react.memo(function DMChannel(navigationReplace) {
   let obj = channel(17917);
   const baseChannelUnreadBadgeState = obj.useBaseChannelUnreadBadgeState(channel, muted);
   ({ unread, mentionCount } = baseChannelUnreadBadgeState);
-  const tmp7 = flag(16723)(channel, { unread });
+  const tmp7 = flag(16721)(channel, { unread });
   let extractTimestampResult;
   if (null != tmp7) {
     const tmp2Result = flag(11);

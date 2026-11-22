@@ -1,16 +1,16 @@
-// Module ID: 19647
-// Function ID: 19648
+// Module ID: 19644
+// Function ID: 19645
 // Name: RelationshipUtils
-// Dependencies: [1071, 16922, 1412, 1112, 19648, 7737, 2]
+// Dependencies: [1071, 16920, 1412, 1112, 19645, 7737, 2]
 // Exports: showAcceptedNotification, showPendingNotification
 
-// Module 19647 (RelationshipUtils)
+// Module 19644 (RelationshipUtils)
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
 import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7737 */;
-import NotificationActionCreatorsDefault from "NotificationActionCreators" /* 16922 */;
-import FriendsActionCreatorsDefault from "FriendsActionCreators" /* 19648 */;
+import NotificationActionCreatorsDefault from "NotificationActionCreators" /* 16920 */;
+import FriendsActionCreatorsDefault from "FriendsActionCreators" /* 19645 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

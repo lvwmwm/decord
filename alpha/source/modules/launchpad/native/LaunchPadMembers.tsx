@@ -1,7 +1,7 @@
 // Module ID: 19142
 // Function ID: 19143
 // Name: LaunchPadMembers
-// Dependencies: [19, 17, 4762, 4816, 21, 4913, 563, 13060, 18800, 12045, 5504, 1112, 2]
+// Dependencies: [19, 17, 4762, 4816, 21, 4913, 563, 13058, 18800, 12045, 5504, 1112, 2]
 
 // Module 19142 (LaunchPadMembers)
 import react_native from "react-native" /* 17 */;
@@ -45,7 +45,7 @@ const memoResult = react.memo(function LaunchPadMembers() {
         }
       }
     }
-    return { channelId: "channel_id", type: 16192376236573344000000000000000000000000000000000000000000000000000000000000000000 };
+    return { channelId: "channel", type: null };
   });
   if ("private" === stateFromStoresObject.type) {
     tmp8 = <View style={tmp.wrapper}>{null}</View>;

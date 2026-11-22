@@ -1,7 +1,7 @@
 // Module ID: 18215
 // Function ID: 18216
 // Name: GuildSettingsModalMembersWithTabs
-// Dependencies: [19, 17, 4784, 4845, 1386, 21, 4913, 575, 7597, 17729, 504, 6887, 1112, 18216, 18217, 18224, 4949, 1500, 8658, 18219, 7029, 8028, 7586, 13533, 13536, 2]
+// Dependencies: [19, 17, 4784, 4845, 1386, 21, 4913, 575, 7597, 17729, 504, 6887, 1112, 18216, 18217, 18224, 4949, 1500, 8658, 18219, 7029, 8028, 7586, 13531, 13534, 2]
 
 // Module 18215 (GuildSettingsModalMembersWithTabs)
 import react_native from "react-native" /* 17 */;

@@ -1,10 +1,10 @@
-// Module ID: 12425
-// Function ID: 12426
+// Module ID: 12432
+// Function ID: 12433
 // Name: AgeVerificationIntroScreen
-// Dependencies: [5, 19, 17, 1071, 21, 4913, 575, 1628, 7858, 7814, 5504, 6411, 7348, 12426, 11807, 1112, 7793, 2187, 6414, 5511, 12427, 2]
+// Dependencies: [5, 19, 17, 1071, 21, 4913, 575, 1628, 7858, 7814, 5504, 6411, 7348, 12433, 11807, 1112, 7793, 2187, 6414, 5511, 12434, 2]
 // Exports: default
 
-// Module 12425 (AgeVerificationIntroScreen)
+// Module 12432 (AgeVerificationIntroScreen)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2187 */;
@@ -105,7 +105,7 @@ export default function GetStartedScreen(modalSessionId) {
     })
   };
   const TableRowGroup = modalSessionId(7348).TableRowGroup;
-  const obj11 = modalSessionId(12426);
+  const obj11 = modalSessionId(12433);
   ageVerificationGetStartedSteps = obj11.getAgeVerificationGetStartedSteps(modalSessionId);
   items1[1] = closure_7(TableRowGroup, obj10);
   const obj12 = { style: tmp.ageGroupLearnMoreContainer, children: closure_7(Text3, obj13) };
@@ -190,7 +190,7 @@ export default function GetStartedScreen(modalSessionId) {
   Button = modalSessionId(5511).Button;
   intl2 = modalSessionId(1112).intl;
   obj18 = { color: initiateAgeVerification(575).colors.WHITE };
-  LinkExternalSmallIcon = modalSessionId(12427).LinkExternalSmallIcon;
+  LinkExternalSmallIcon = modalSessionId(12434).LinkExternalSmallIcon;
   items2[1] = closure_7(closure_5, obj15);
   return closure_8(closure_9, obj2);
 };

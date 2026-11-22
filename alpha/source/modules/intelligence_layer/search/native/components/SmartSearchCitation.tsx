@@ -1,7 +1,7 @@
 // Module ID: 18784
 // Function ID: 18785
 // Name: SmartSearchCitation
-// Dependencies: [5, 19, 8576, 21, 18734, 13223, 13221, 18785, 18765, 2]
+// Dependencies: [5, 19, 8576, 21, 18734, 13221, 13219, 18785, 18765, 2]
 // Exports: SmartSearchCitation
 
 // Module 18784 (SmartSearchCitation)

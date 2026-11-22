@@ -1,10 +1,10 @@
-// Module ID: 13783
-// Function ID: 13784
+// Module ID: 13781
+// Function ID: 13782
 // Name: conjureProjectGroups
 // Dependencies: [6838, 2]
 // Exports: groupConjureProjects
 
-// Module 13783 (conjureProjectGroups)
+// Module 13781 (conjureProjectGroups)
 import conjureServerProject from "conjureServerProject" /* 6838 */;
 import size from "module_2" /* 2 */;
 

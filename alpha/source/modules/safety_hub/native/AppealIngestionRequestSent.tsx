@@ -1,14 +1,14 @@
-// Module ID: 12449
-// Function ID: 12450
+// Module ID: 12456
+// Function ID: 12457
 // Name: AppealIngestionRequestSent
-// Dependencies: [19, 17, 7809, 21, 4913, 12437, 1112, 12435, 5600, 12450, 5504, 12444, 2]
+// Dependencies: [19, 17, 7809, 21, 4913, 12444, 1112, 12442, 5600, 12457, 5504, 12451, 2]
 // Exports: default
 
-// Module 12449 (AppealIngestionRequestSent)
+// Module 12456 (AppealIngestionRequestSent)
 import react_native from "react-native" /* 17 */;
 import FastImageDefault from "FastImage" /* 5600 */;
-import AppealIngestionExternalLinkDefault from "AppealIngestionExternalLink" /* 12444 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12450 */;
+import AppealIngestionExternalLinkDefault from "AppealIngestionExternalLink" /* 12451 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12457 */;
 import react from "react" /* 19 */;
 import SafetyHubConstants from "SafetyHubConstants" /* 7809 */;
 import Fragment from "Fragment" /* 21 */;

@@ -1,7 +1,7 @@
 // Module ID: 19149
 // Function ID: 19150
 // Name: FrameView
-// Dependencies: [32, 19, 6621, 6624, 21, 6659, 504, 572, 6953, 19150, 10783, 19151, 5861, 1112, 6625, 19152, 10800, 15754, 10832, 2]
+// Dependencies: [32, 19, 6621, 6624, 21, 6659, 504, 572, 6953, 19150, 10783, 19151, 5861, 1112, 6625, 19152, 10800, 15752, 10832, 2]
 // Exports: default
 
 // Module 19149 (FrameView)
@@ -11,7 +11,7 @@ import intl3 from "intl" /* 1112 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5861 */;
 import FramesConstants from "FramesConstants" /* 6624 */;
 import leaveFrame from "leaveFrame" /* 6953 */;
-import FramePoolManagerDefault from "FramePoolManager" /* 15754 */;
+import FramePoolManagerDefault from "FramePoolManager" /* 15752 */;
 import frames_getDefaultOrientationLockState from "frames/getDefaultOrientationLockState" /* 19150 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

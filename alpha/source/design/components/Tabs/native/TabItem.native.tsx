@@ -1,10 +1,10 @@
-// Module ID: 13534
-// Function ID: 13535
+// Module ID: 13532
+// Function ID: 13533
 // Name: TabItem
-// Dependencies: [19, 17, 21, 1653, 4913, 575, 5514, 5504, 1706, 13535, 1378, 1112, 9007, 2]
+// Dependencies: [19, 17, 21, 1653, 4913, 575, 5514, 5504, 1706, 13533, 1378, 1112, 9007, 2]
 // Exports: TabItem
 
-// Module 13534 (TabItem)
+// Module 13532 (TabItem)
 import nativeDefault from "native" /* 575 */;
 import _mod1653 from "module_1653" /* 1653 */;
 import _mod1706 from "module_1706" /* 1706 */;
@@ -220,7 +220,7 @@ export function TabItem(arg0) {
   items2[1] = { flexGrow: num };
   const merged1 = Object.assign(merged);
   formatToPlainStringResult = undefined;
-  tmp3Result = index(13535);
+  tmp3Result = index(13533);
   const tmp3Result2 = index(1378);
   if (tmp3Result2.isAndroid()) {
     const intl = tmp3(1112).intl;

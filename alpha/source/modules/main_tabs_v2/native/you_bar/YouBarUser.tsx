@@ -1,7 +1,7 @@
 // Module ID: 17965
 // Function ID: 17966
 // Name: YouBarUser
-// Dependencies: [19, 17, 1386, 16478, 21, 4913, 575, 504, 1653, 5514, 4969, 17966, 17967, 17968, 2]
+// Dependencies: [19, 17, 1386, 16476, 21, 4913, 575, 504, 1653, 5514, 4969, 17966, 17967, 17968, 2]
 
 // Module 17965 (YouBarUser)
 import react_native from "react-native" /* 17 */;
@@ -9,7 +9,7 @@ import nativeDefault from "native" /* 575 */;
 import spring_spring from "spring/spring" /* 5514 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1386 */;
-import YouBarConstants from "YouBarConstants" /* 16478 */;
+import YouBarConstants from "YouBarConstants" /* 16476 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;

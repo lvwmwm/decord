@@ -1,18 +1,18 @@
-// Module ID: 16135
-// Function ID: 16136
+// Module ID: 16133
+// Function ID: 16134
 // Name: GoreMediaFiltersGuildsSetting
-// Dependencies: [8712, 10192, 16118, 16127, 8448, 8233, 16128, 1112, 1195, 11937, 2]
+// Dependencies: [8712, 10192, 16116, 16125, 8448, 8233, 16126, 1112, 1195, 11937, 2]
 
-// Module 16135 (GoreMediaFiltersGuildsSetting)
+// Module 16133 (GoreMediaFiltersGuildsSetting)
 import intl4 from "intl" /* 1112 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1195 */;
 import SensitiveMediaGoreRedactionSettingsUtils from "SensitiveMediaGoreRedactionSettingsUtils" /* 8233 */;
 import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8448 */;
 import SettingsConstants from "SettingsConstants" /* 8712 */;
 import useUserIsTeen from "useUserIsTeen" /* 10192 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 16118 */;
-import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 16127 */;
-import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 16128 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 16116 */;
+import useExplicitContentSettingsOrDefault from "useExplicitContentSettingsOrDefault" /* 16125 */;
+import ExplicitMediaRedactionNativeUtils from "ExplicitMediaRedactionNativeUtils" /* 16126 */;
 import SettingBuilders from "SettingBuilders" /* 11937 */;
 import size from "module_2" /* 2 */;
 

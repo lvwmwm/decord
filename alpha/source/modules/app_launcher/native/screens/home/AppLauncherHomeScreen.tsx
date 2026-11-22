@@ -1,10 +1,10 @@
-// Module ID: 12952
-// Function ID: 12953
+// Module ID: 12950
+// Function ID: 12951
 // Name: AppLauncherHomeScreen
-// Dependencies: [32, 19, 17, 4761, 10436, 5507, 12942, 4845, 12914, 1499, 1071, 4759, 21, 2152, 11135, 5574, 11144, 575, 12946, 4913, 5504, 1112, 12926, 10674, 7045, 12921, 1412, 10093, 12953, 10834, 504, 5565, 12954, 5600, 7600, 12955, 12930, 7373, 1628, 12956, 10598, 7426, 12106, 1494, 10676, 10671, 12958, 12957, 12959, 12960, 12962, 12963, 12922, 8314, 12964, 12, 5650, 7189, 12966, 12967, 5930, 1263, 4945, 4746, 12968, 12969, 12971, 7427, 12973, 1254, 12979, 12980, 12981, 12984, 12947, 12985, 12909, 12986, 12989, 7466, 10665, 12940, 10683, 12990, 12977, 12991, 1404, 12992, 12993, 2]
+// Dependencies: [32, 19, 17, 4761, 10436, 5507, 12940, 4845, 12912, 1499, 1071, 4759, 21, 2152, 11135, 5574, 11144, 575, 12944, 4913, 5504, 1112, 12924, 10674, 7045, 12919, 1412, 10093, 12951, 10834, 504, 5565, 12952, 5600, 7600, 12953, 12928, 7373, 1628, 12954, 10598, 7426, 12106, 1494, 10676, 10671, 12956, 12955, 12957, 12958, 12960, 12961, 12920, 8314, 12962, 12, 5650, 7189, 12964, 12965, 5930, 1263, 4945, 4746, 12966, 12967, 12969, 7427, 12971, 1254, 12977, 12978, 12979, 12982, 12945, 12983, 12907, 12984, 12987, 7466, 10665, 12938, 10683, 12988, 12975, 12989, 1404, 12990, 12991, 2]
 // Exports: default
 
-// Module 12952 (AppLauncherHomeScreen)
+// Module 12950 (AppLauncherHomeScreen)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
@@ -26,23 +26,23 @@ import AppLauncherTypes from "AppLauncherTypes" /* 10676 */;
 import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 10834 */;
 import MessagePreviewMarkup from "MessagePreviewMarkup" /* 11135 */;
 import AppLauncherContext from "AppLauncherContext" /* 12106 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12921 */;
-import FrecencySection from "FrecencySection" /* 12922 */;
-import EntityBorderAppIconDefault from "EntityBorderAppIcon" /* 12926 */;
-import ApplicationCollectionSurface from "ApplicationCollectionSurface" /* 12946 */;
-import HeroMedia from "HeroMedia" /* 12953 */;
-import ActivityShelfBadgeDefault from "ActivityShelfBadge" /* 12955 */;
-import AppLauncherHomeTypes from "AppLauncherHomeTypes" /* 12957 */;
-import AppLauncherOnboardingActionCreators from "AppLauncherOnboardingActionCreators" /* 12968 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12919 */;
+import FrecencySection from "FrecencySection" /* 12920 */;
+import EntityBorderAppIconDefault from "EntityBorderAppIcon" /* 12924 */;
+import ApplicationCollectionSurface from "ApplicationCollectionSurface" /* 12944 */;
+import HeroMedia from "HeroMedia" /* 12951 */;
+import ActivityShelfBadgeDefault from "ActivityShelfBadge" /* 12953 */;
+import AppLauncherHomeTypes from "AppLauncherHomeTypes" /* 12955 */;
+import AppLauncherOnboardingActionCreators from "AppLauncherOnboardingActionCreators" /* 12966 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4761 */;
 import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 10436 */;
 import DevSettingsStore from "DevSettingsStore" /* 5507 */;
-import ApplicationDirectoryCollectionsStore from "ApplicationDirectoryCollectionsStore" /* 12942 */;
+import ApplicationDirectoryCollectionsStore from "ApplicationDirectoryCollectionsStore" /* 12940 */;
 import PermissionStore from "PermissionStore" /* 4845 */;
-import AppLauncherOnboardingPersistedStore from "AppLauncherOnboardingPersistedStore" /* 12914 */;
+import AppLauncherOnboardingPersistedStore from "AppLauncherOnboardingPersistedStore" /* 12912 */;
 import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1499 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
@@ -202,7 +202,7 @@ function ActivityRow(section) {
   let tmp6 = null != applicationIconSource;
   if (tmp6) {
     let obj2 = { iconSource: applicationIconSource };
-    tmp6 = closure_19(tmp(12926), obj2);
+    tmp6 = closure_19(tmp(12924), obj2);
   }
   const items = [section];
   const items1 = [section, onPress];
@@ -247,7 +247,7 @@ function ActivityItemTuple(arg0) {
   const items = [containerWidth];
   size = react.useMemo(() => {
     if (null == containerWidth) {
-      return { width: "Array", height: "analyticsLocations" };
+      return { width: "disabled", height: "isArray" };
     } else {
       const tmp5 = roundToNearestPixelDefault(tmp / 2 - DEFAULT_CONTENT_PADDING - 6);
       size = { width: tmp5, height: roundToNearestPixelDefault(tmp5 / c22) };
@@ -284,7 +284,7 @@ function ActivityItem(context) {
   let onActivityItemSelected;
   let tmp19;
   let width;
-  const f102888 = () => {
+  const f102897 = () => {
     const items = [EmbeddedActivitiesStore.isLaunchingActivity(), ];
     let id1;
     const getLaunchState = EmbeddedActivitiesStore.getLaunchState;
@@ -325,8 +325,8 @@ function ActivityItem(context) {
   let items = [EmbeddedActivitiesStore];
   const tmp2Result = context(flag[30]);
   let isLaunching = null != tmp14;
-  const first1 = tmp5(tmp2Result.useStateFromStoresArray(items, f102888), 2)[0];
-  const tmp5Result = tmp5(tmp2Result.useStateFromStoresArray(items, f102888), 2);
+  const first1 = tmp5(tmp2Result.useStateFromStoresArray(items, f102897), 2)[0];
+  const tmp5Result = tmp5(tmp2Result.useStateFromStoresArray(items, f102897), 2);
   if (isLaunching) {
     isLaunching = tmp14.isLaunching;
   }
@@ -411,7 +411,7 @@ function RecommendationItemTuple(isLastTuple) {
   const items1 = [containerWidth, num];
   styles = react.useMemo(() => {
     if (null == containerWidth) {
-      return { width: "Array", height: "analyticsLocations" };
+      return { width: "disabled", height: "isArray" };
     } else {
       const tmp6 = roundToNearestPixelDefault((tmp - 2 * DEFAULT_CONTENT_PADDING - 12 * (2 - 1)) / 2);
       size = { width: tmp6, height: roundToNearestPixelDefault(tmp6 / c22) };
@@ -486,7 +486,7 @@ function RecommendationItem(onPress) {
   }
   const tmp13 = "loading" === tmp9Result.state || null == tmp9Result.url;
   if (tmp12) {
-    tmp14 = closure_19(tmp8(12954), {});
+    tmp14 = closure_19(tmp8(12952), {});
   } else {
     tmp14 = null;
     if (!tmp13) {
@@ -587,7 +587,7 @@ function getRecommendationItemsWithViewAll(arr, sectionName, section, arg3) {
     const tmp11 = _require;
     if (bound < arr.length) {
       let obj = {
-        type: tmp11(12957).AppLauncherHomeListItemType.VIEW_ALL,
+        type: tmp11(12955).AppLauncherHomeListItemType.VIEW_ALL,
         applications: arr.map((application) => application.application),
         promotedApplicationIds: reduce((add, showsPromoted) => {
               if (showsPromoted.showsPromoted) {
@@ -933,7 +933,7 @@ export default function AppLauncherHomeScreen(route) {
   }
   items13[1] = sections1;
   let memo5 = useMemo(() => {
-    const f140851 = (commands) => Object.keys(commands.commands).length > 0;
+    const f140868 = (commands) => Object.keys(commands.commands).length > 0;
     result = result.result;
     let sections;
     if (result != null) {
@@ -951,11 +951,11 @@ export default function AppLauncherHomeScreen(route) {
       sections1 = {};
     }
     const values = Object.values(sections);
-    let someResult = values.some(f140851);
+    let someResult = values.some(f140868);
     if (!someResult) {
       const _Object = Object;
       const values2 = Object.values(sections1);
-      someResult = values2.some(f140851);
+      someResult = values2.some(f140868);
     }
     return someResult;
   }, items13);

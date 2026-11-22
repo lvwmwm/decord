@@ -312,7 +312,7 @@ obj = {
     if (tmp) {
       if (null !== guildId) {
         if (isJoining) {
-          obj = { threadId: id, guildId, flags: 0, muted: true, muteConfig: { end_time: "r" }, joinTimestamp: date };
+          obj = { threadId: id, guildId, flags: 0, muted: true, muteConfig: { end_time: "Array" }, joinTimestamp: date };
           const _Date = Date;
           const self = this;
           const self2 = this;

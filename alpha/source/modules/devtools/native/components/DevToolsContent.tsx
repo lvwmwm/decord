@@ -1,7 +1,7 @@
 // Module ID: 17192
 // Function ID: 17193
 // Name: DevToolsContent
-// Dependencies: [32, 19, 17, 11894, 5530, 1245, 21, 4913, 575, 504, 12220, 17193, 5504, 7030, 5129, 17194, 17196, 1500, 1628, 7348, 7045, 5595, 15823, 2]
+// Dependencies: [32, 19, 17, 11894, 5530, 1245, 21, 4913, 575, 504, 12227, 17193, 5504, 7030, 5129, 17194, 17196, 1500, 1628, 7348, 7045, 5595, 15821, 2]
 
 // Module 17192 (DevToolsContent)
 import nativeDefault from "native" /* 575 */;
@@ -9,7 +9,7 @@ import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
 import HapticUtils from "HapticUtils" /* 5129 */;
 import Text_Text from "Text/Text" /* 5504 */;
 import Pressables from "Pressables" /* 7030 */;
-import DevToolsNavigator from "DevToolsNavigator" /* 15823 */;
+import DevToolsNavigator from "DevToolsNavigator" /* 15821 */;
 import useSortedDevToolsScreens from "useSortedDevToolsScreens" /* 17193 */;
 import ArrowSmallUpIcon from "ArrowSmallUpIcon" /* 17194 */;
 import ArrowSmallDownIcon from "ArrowSmallDownIcon" /* 17196 */;

@@ -1,11 +1,11 @@
 // Module ID: 18169
 // Function ID: 18170
 // Name: navigationTTIEnabled
-// Dependencies: [15631, 18170, 2]
+// Dependencies: [15629, 18170, 2]
 // Exports: isNavigationTTIEnabled
 
 // Module 18169 (navigationTTIEnabled)
-import isTTITest from "isTTITest" /* 15631 */;
+import isTTITest from "isTTITest" /* 15629 */;
 import size from "module_2" /* 2 */;
 
 let tmp;

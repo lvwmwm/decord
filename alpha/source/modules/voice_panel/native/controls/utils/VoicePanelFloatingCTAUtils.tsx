@@ -1,7 +1,7 @@
 // Module ID: 19221
 // Function ID: 19222
 // Name: VoicePanelFloatingCTAUtils
-// Dependencies: [32, 19, 17, 6620, 19222, 6633, 4762, 4768, 21, 5122, 11749, 18036, 8017, 563, 7633, 7575, 7571, 5127, 7592, 19223, 14301, 7711, 8048, 1112, 7151, 17987, 11056, 10855, 10850, 10848, 10866, 10924, 5929, 575, 7591, 6503, 7499, 11722, 10845, 7620, 6497, 19224, 9081, 10598, 4945, 7225, 4746, 18015, 13419, 5140, 2]
+// Dependencies: [32, 19, 17, 6620, 19222, 6633, 4762, 4768, 21, 5122, 11749, 18036, 8017, 563, 7633, 7575, 7571, 5127, 7592, 19223, 14299, 7711, 8048, 1112, 7151, 17987, 11056, 10855, 10850, 10848, 10866, 10924, 5929, 575, 7591, 6503, 7499, 11722, 10845, 7620, 6497, 19224, 9081, 10598, 4945, 7225, 4746, 18015, 13417, 5140, 2]
 // Exports: useShouldShowFloatingCTA
 
 // Module 19221 (VoicePanelFloatingCTAUtils)
@@ -30,7 +30,7 @@ let closure_12;
 let tmp;
 let unpackModuleId;
 const getDeviceSpecificString2 = tmp(5140);
-const SoundboardIcon = tmp(13419);
+const SoundboardIcon = tmp(13417);
 function useStageCTAProps(stateFromStores) {
   let Icon;
   let Icon2;

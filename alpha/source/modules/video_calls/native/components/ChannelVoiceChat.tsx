@@ -1,7 +1,7 @@
 // Module ID: 11097
 // Function ID: 11098
 // Name: ChannelVoiceChat
-// Dependencies: [19, 17, 10636, 21, 4913, 575, 8579, 1628, 10714, 12, 10640, 5122, 9659, 11098, 10601, 4920, 11741, 7030, 1112, 1186, 12022, 13730, 2]
+// Dependencies: [19, 17, 10636, 21, 4913, 575, 8579, 1628, 10714, 12, 10640, 5122, 9659, 11098, 10601, 4920, 11741, 7030, 1112, 1186, 12022, 13728, 2]
 
 // Module 11097 (ChannelVoiceChat)
 import react_native from "react-native" /* 17 */;
@@ -135,7 +135,7 @@ const memoResult = react.memo(function ChannelVoice(channel) {
   obj11 = { source: guild_id(12022), size: id(1186).Icon.Sizes.MEDIUM };
   Icon = tmp7(1186).Icon;
   items7 = [closure_6(PressableOpacity, obj10), ];
-  const obj12 = { style: tmp.chatHeaderTitleContainer, children: closure_6(id(13730).ChannelTitle, { guildId: guild_id, channelId: id }) };
+  const obj12 = { style: tmp.chatHeaderTitleContainer, children: closure_6(id(13728).ChannelTitle, { guildId: guild_id, channelId: id }) };
   items7[1] = closure_6(View, obj12);
   items3[4] = closure_7(View, obj9);
   items2[1] = closure_7(ChannelContainer, obj5);

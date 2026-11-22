@@ -1,7 +1,7 @@
 // Module ID: 12511
 // Function ID: 12512
 // Name: CheckpointHeader
-// Dependencies: [17, 12492, 5969, 21, 4913, 575, 5129, 6429, 5998, 5999, 1628, 504, 10981, 7034, 12512, 12513, 12500, 1112, 7151, 2]
+// Dependencies: [17, 12128, 5969, 21, 4913, 575, 5129, 6429, 5998, 5999, 1628, 504, 10981, 7034, 12512, 12513, 12500, 1112, 7151, 2]
 // Exports: default
 
 // Module 12511 (CheckpointHeader)
@@ -18,7 +18,7 @@ import XSmallIcon from "XSmallIcon" /* 7151 */;
 import CheckpointActionCreators from "CheckpointActionCreators" /* 12500 */;
 import CheckpointApngPlayerDefault from "CheckpointApngPlayer" /* 12512 */;
 import CheckpointHeaderButtonDefault from "CheckpointHeaderButton" /* 12513 */;
-import CheckpointStore from "CheckpointStore" /* 12492 */;
+import CheckpointStore from "CheckpointStore" /* 12128 */;
 import CheckpointConstants from "CheckpointConstants" /* 5969 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;

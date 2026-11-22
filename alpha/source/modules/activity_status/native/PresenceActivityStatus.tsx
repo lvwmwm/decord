@@ -1,15 +1,15 @@
-// Module ID: 13519
-// Function ID: 13520
+// Module ID: 13517
+// Function ID: 13518
 // Name: PresenceActivityStatus
-// Dependencies: [19, 21, 8060, 6932, 7040, 7704, 5652, 10894, 13515, 13520, 13514, 13517, 2]
+// Dependencies: [19, 21, 8060, 6932, 7040, 7704, 5652, 10894, 13513, 13518, 13512, 13515, 2]
 // Exports: default
 
-// Module 13519 (PresenceActivityStatus)
+// Module 13517 (PresenceActivityStatus)
 import ActivityTypes from "ActivityTypes" /* 5652 */;
 import conjurePresenceActivity from "conjurePresenceActivity" /* 6932 */;
 import AppsIcon from "AppsIcon" /* 7704 */;
 import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 8060 */;
-import getActivityStatusTextDefault from "getActivityStatusText" /* 13520 */;
+import getActivityStatusTextDefault from "getActivityStatusText" /* 13518 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -58,7 +58,7 @@ export default function PresenceActivityStatus(hideText) {
             }
           }
         }
-        GameControllerIcon = tmp3(13515).TvIcon;
+        GameControllerIcon = tmp3(13513).TvIcon;
       }
     }
     let tmp7 = !hideIcon;
@@ -69,13 +69,13 @@ export default function PresenceActivityStatus(hideText) {
     }
     if (tmp7) {
       const obj2 = { icon: GameControllerIcon, style: iconStyle };
-      tmp7 = _false(tmp(13514), obj2);
+      tmp7 = _false(tmp(13512), obj2);
     }
     const items = [tmp7, ];
     let tmp10 = !flag;
     if (tmp10) {
       const obj3 = { style: textStyle, maxFontSizeMultiplier, children: text };
-      tmp10 = _false(tmp(13517), obj3);
+      tmp10 = _false(tmp(13515), obj3);
     }
     const obj4 = { children: items };
     items[1] = tmp10;

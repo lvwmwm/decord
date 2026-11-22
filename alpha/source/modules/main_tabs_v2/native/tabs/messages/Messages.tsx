@@ -1,7 +1,7 @@
 // Module ID: 17541
 // Function ID: 17542
 // Name: messages/Messages
-// Dependencies: [19, 6394, 21, 7520, 7539, 1653, 16480, 17542, 17546, 17564, 1378, 17566, 17567, 17568, 14051, 17569, 8268, 9, 16479, 1112, 17570, 9024, 575, 17547, 17572, 17577, 17621, 17622, 10432, 2]
+// Dependencies: [19, 6394, 21, 7520, 7539, 1653, 16478, 17542, 17546, 17564, 1378, 17566, 17567, 17568, 14049, 17569, 8268, 9, 16477, 1112, 17570, 9024, 575, 17547, 17572, 17577, 17621, 17622, 10432, 2]
 
 // Module 17541 (messages/Messages)
 import TTITrackerDefault from "TTITracker" /* 9 */;
@@ -52,9 +52,9 @@ const memoResult = react.memo(function Messages(style) {
   const analyticsLocations = tmp3(AnalyticsLocationDefault.MESSAGES).analyticsLocations;
   let obj = sections(1653);
   const sharedValue = obj.useSharedValue(0);
-  const obj2 = sections(16480);
+  const obj2 = sections(16478);
   const youBarTotalHeight = obj2.useYouBarTotalHeight();
-  const obj3 = sections(16480);
+  const obj3 = sections(16478);
   const youBarTotalHeight1 = obj3.useYouBarTotalHeight(-16);
   const obj4 = sections(17542);
   const doesLandOnHomeDrawer = obj4.useDoesLandOnHomeDrawer();
@@ -76,7 +76,7 @@ const memoResult = react.memo(function Messages(style) {
   ({ list, recycleItems } = config);
   useMessagesScrollToTopDefault({ listRef: ref, listRefHappeningNow: ref1 });
   useMessagesReconnectToCallsEffectDefault();
-  const tmp4Result = sections(14051);
+  const tmp4Result = sections(14049);
   const commonTriggerPoint = tmp4Result.useCommonTriggerPoint(tmp4(17569).DmGdmListRenderTriggerPoint);
   const layoutEffect = obj5.useLayoutEffect(() => {
     const obj = TTIAnalyticsUtils;
@@ -86,7 +86,7 @@ const memoResult = react.memo(function Messages(style) {
     const reduced = sections.reduce((acc, item) => acc + item, 0);
     recordRender(reduced, GatewayConnectionStore.isConnected());
   });
-  const tmp4Result3 = sections(16479);
+  const tmp4Result3 = sections(16477);
   const items = [closure_7, sharedValue, tmp4Result3.useExternalScrollEventHandler({ id: "messages" })];
   let c0;
   let c1;

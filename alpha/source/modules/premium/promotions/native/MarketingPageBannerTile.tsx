@@ -1,7 +1,7 @@
 // Module ID: 9405
 // Function ID: 9406
 // Name: MarketingPageBannerTile
-// Dependencies: [19, 17, 21, 4913, 575, 7520, 9406, 5930, 1263, 13953, 5600, 5504, 5592, 10952, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 7520, 9406, 5930, 1263, 13951, 5600, 5504, 5592, 10952, 2]
 // Exports: default
 
 // Module 9405 (MarketingPageBannerTile)
@@ -89,9 +89,9 @@ export default function MarketingPageBannerTile(bannerFields) {
   const buttonActionHandler = getButtonActionHandler(obj);
   const tmp2Result = useTrackImpressionDefault;
   tmp2Result(obj2);
-  const tmp4Result = helpArticleLinkProps(13953);
+  const tmp4Result = helpArticleLinkProps(13951);
   const formatStringWithCommonPremiumParams = tmp4Result.useFormatStringWithCommonPremiumParams(bannerFields.body);
-  const tmp4Result2 = helpArticleLinkProps(13953);
+  const tmp4Result2 = helpArticleLinkProps(13951);
   helpArticleLinkProps = tmp4Result2.getHelpArticleLinkProps(bannerFields.helpArticle, bannerFields.helpArticleId);
   const obj3 = { style: items, children: closure_5(View, obj4) };
   items = [tmp.container, style];

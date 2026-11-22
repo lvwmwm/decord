@@ -1,19 +1,19 @@
-// Module ID: 14014
-// Function ID: 14015
+// Module ID: 14012
+// Function ID: 14013
 // Name: BadgeUnlockAnimation
-// Dependencies: [32, 19, 17, 4914, 21, 1653, 4913, 14015, 1378, 4910, 14017, 5123, 14012, 7135, 504, 13992, 14018, 8070, 1706, 4920, 14007, 5036, 2]
+// Dependencies: [32, 19, 17, 4914, 21, 1653, 4913, 14013, 1378, 4910, 14015, 5123, 14010, 7135, 504, 13990, 14016, 8070, 1706, 4920, 14005, 5036, 2]
 // Exports: default
 
-// Module 14014 (BadgeUnlockAnimation)
+// Module 14012 (BadgeUnlockAnimation)
 import react_native from "react-native" /* 17 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
 import _mod1653 from "module_1653" /* 1653 */;
 import _mod1706 from "module_1706" /* 1706 */;
 import shared from "shared" /* 4920 */;
 import timing_timing from "timing/timing" /* 5123 */;
-import BadgeUtils from "BadgeUtils" /* 13992 */;
-import trackBadgeDirectoryActionDefault from "trackBadgeDirectoryAction" /* 14007 */;
-import reactDefault from "react" /* 14017 */;
+import BadgeUtils from "BadgeUtils" /* 13990 */;
+import trackBadgeDirectoryActionDefault from "trackBadgeDirectoryAction" /* 14005 */;
+import reactDefault from "react" /* 14015 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4914 */;
@@ -341,13 +341,13 @@ export default function BadgeUnlockAnimation(badge) {
   let obj = badge(504);
   let items = [AccessibilityStore];
   const stateFromStores = obj.useStateFromStores(items, () => AccessibilityStore.useReducedMotion);
-  let obj2 = badge(13992);
+  let obj2 = badge(13990);
   const findTierResult = obj2.findTier(badge, previousTierKey);
-  const getBadgeUnlockArt = badge(14018).getBadgeUnlockArt;
-  badge(14018);
-  let obj3 = badge(13992);
+  const getBadgeUnlockArt = badge(14016).getBadgeUnlockArt;
+  badge(14016);
+  let obj3 = badge(13990);
   const badgeUnlockArt = getBadgeUnlockArt(badge, obj3.getDisplayTier(badge), false);
-  let obj4 = badge(14018);
+  let obj4 = badge(14016);
   const badgeUnlockArt1 = obj4.getBadgeUnlockArt(badge, findTierResult, true);
   const tmp9 = badge.badge_id === badge(8070).BadgeId.PREMIUM_TENURE && !stateFromStores;
   let tmp61Result = null != findTierResult && !stateFromStores;
@@ -432,10 +432,10 @@ export default function BadgeUnlockAnimation(badge) {
   const animatedReaction = useAnimatedReaction(BadgeUnlockAnimationTsx3, BadgeUnlockAnimationTsx4);
   closure_18 = tmp32;
   ref = obj8.useRef(null);
-  const tmp2Result15 = tmp2(14015);
+  const tmp2Result15 = tmp2(14013);
   FALLBACK_BADGE_COLOR = tmp2Result15.useBadgeColor(badgeUnlockArt.rasterUrl);
   if (FALLBACK_BADGE_COLOR == null) {
-    FALLBACK_BADGE_COLOR = tmp2(14015).FALLBACK_BADGE_COLOR;
+    FALLBACK_BADGE_COLOR = tmp2(14013).FALLBACK_BADGE_COLOR;
   }
   const items5 = [FALLBACK_BADGE_COLOR];
   const memo = obj8.useMemo(() => ({ fill: FALLBACK_BADGE_COLOR }), items5);

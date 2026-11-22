@@ -1,7 +1,7 @@
 // Module ID: 18407
 // Function ID: 18408
 // Name: PortalKeyboardRendererComponent
-// Dependencies: [19, 4762, 21, 4974, 5924, 6843, 1626, 12905, 10676, 18408, 18414, 2]
+// Dependencies: [19, 4762, 21, 4974, 5924, 6843, 1626, 12903, 10676, 18408, 18414, 2]
 
 // Module 18407 (PortalKeyboardRendererComponent)
 import Fragment from "Fragment" /* 21 */;
@@ -65,7 +65,7 @@ const memoResult = react.memo(function PortalKeyboardRendererComponent(item) {
   if (null != memo) {
     if (undefined !== memo1) {
       if (tmp(1626).KeyboardTypes.APP_LAUNCHER === type) {
-        chatInputRef(12905);
+        chatInputRef(12903);
         return <tmp14 context={memo1} chatInputRef={chatInputRef} onClose={cleanUp} transitionState={state} entrypoint={tmp(10676).AppLauncherEntrypoint.TEXT} />;
       } else if (tmp(1626).KeyboardTypes.MEDIA === type) {
         return jsx(chatInputRef(18408), { channel: memo, chatInputRef, onClose: cleanUp, transitionState: state });

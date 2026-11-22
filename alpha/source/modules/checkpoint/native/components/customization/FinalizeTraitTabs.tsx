@@ -1,16 +1,16 @@
-// Module ID: 12797
-// Function ID: 12798
+// Module ID: 12795
+// Function ID: 12796
 // Name: FinalizeTraitTabs
-// Dependencies: [19, 17, 4914, 5969, 21, 575, 5127, 12798, 2119, 4913, 1378, 1112, 12734, 5504, 6336, 504, 5477, 12741, 3440, 12799, 2]
+// Dependencies: [19, 17, 4914, 5969, 21, 575, 5127, 12796, 2119, 4913, 1378, 1112, 12732, 5504, 6336, 504, 5477, 12739, 3440, 12797, 2]
 // Exports: FinalizeTraitTabs
 
-// Module 12797 (FinalizeTraitTabs)
+// Module 12795 (FinalizeTraitTabs)
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
 import asyncRequire from "asyncRequire" /* 2119 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
-import CheckpointPressable from "CheckpointPressable" /* 12734 */;
-import showNitroLockedToastDefault from "showNitroLockedToast" /* 12741 */;
+import CheckpointPressable from "CheckpointPressable" /* 12732 */;
+import showNitroLockedToastDefault from "showNitroLockedToast" /* 12739 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 4914 */;
@@ -358,7 +358,7 @@ export function FinalizeTraitTabs(activeCustomizationOption) {
           if (tmp3) {
             const obj = { selectedOption: activeCustomizationOption, onSelectOption: dependencyMap };
             const obj2 = ActionSheetActionCreatorsDefault;
-            obj2.openLazy(asyncRequire(12798, dependencyMap.paths), "CheckpointFinalizeTraitPicker", obj);
+            obj2.openLazy(asyncRequire(12796, dependencyMap.paths), "CheckpointFinalizeTraitPicker", obj);
           } else if (null != moreTabOption) {
             dependencyMap(tmp4);
           }
@@ -368,7 +368,7 @@ export function FinalizeTraitTabs(activeCustomizationOption) {
     onLayout(nativeEvent) {
       handleTabLayout("more", nativeEvent);
     },
-    trailing: str(tmp2(12799).ChevronSmallDownIcon, { color: token, size: "xs" })
+    trailing: str(tmp2(12797).ChevronSmallDownIcon, { color: token, size: "xs" })
   };
   const tmp20 = ref2;
   if (null != customizationOptionName) {

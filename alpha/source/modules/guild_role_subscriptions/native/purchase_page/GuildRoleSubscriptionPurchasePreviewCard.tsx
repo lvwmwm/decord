@@ -1,7 +1,7 @@
 // Module ID: 18192
 // Function ID: 18193
 // Name: GuildRoleSubscriptionPurchasePreviewCard
-// Dependencies: [32, 19, 17, 4762, 21, 4913, 575, 5504, 5127, 18193, 2119, 16644, 1186, 504, 5529, 1112, 7636, 16630, 18188, 5600, 18194, 16641, 2]
+// Dependencies: [32, 19, 17, 4762, 21, 4913, 575, 5504, 5127, 18193, 2119, 16642, 1186, 504, 5529, 1112, 7636, 16628, 18188, 5600, 18194, 16639, 2]
 // Exports: default
 
 // Module 18192 (GuildRoleSubscriptionPurchasePreviewCard)
@@ -12,8 +12,8 @@ import asyncRequire from "asyncRequire" /* 2119 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
 import Text_Text from "Text/Text" /* 5504 */;
 import useChannelNameDefault from "useChannelName" /* 5529 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16630 */;
-import EmojiIconDefault from "EmojiIcon" /* 16644 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16628 */;
+import EmojiIconDefault from "EmojiIcon" /* 16642 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -211,7 +211,7 @@ export default function GuildRoleSubscriptionPurchasePreviewCard(listingId) {
     const items3 = [closure_8(listingId(1186).Spacer, { size: 24 }), , ];
     const obj11 = { style: tmp2.contentContainer, children: closure_9(SeparatedList, obj12) };
     obj12 = { separator: closure_8(Separator, {}), children: items6 };
-    SeparatedList = tmp6(16641).SeparatedList;
+    SeparatedList = tmp6(16639).SeparatedList;
     let tmp10Result = null;
     const tmp16 = closure_10;
     if (size > 0) {

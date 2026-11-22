@@ -1,7 +1,7 @@
 // Module ID: 17450
 // Function ID: 17451
 // Name: Welcome
-// Dependencies: [19, 17, 17451, 5530, 8052, 1405, 5632, 8057, 1071, 7733, 8438, 21, 4913, 575, 13572, 1112, 38, 1186, 4969, 5504, 5600, 14309, 7373, 15073, 1500, 1628, 504, 17452, 5474, 8268, 1255, 510, 6425, 5492, 17453, 17447, 1501, 6545, 5511, 4974, 5467, 10432, 2]
+// Dependencies: [19, 17, 17451, 5530, 8052, 1405, 5632, 8057, 1071, 7733, 8438, 21, 4913, 575, 13570, 1112, 38, 1186, 4969, 5504, 5600, 14307, 7373, 15071, 1500, 1628, 504, 17452, 5474, 8268, 1255, 510, 6425, 5492, 17453, 17447, 1501, 6545, 5511, 4974, 5467, 10432, 2]
 // Exports: default
 
 // Module 17450 (Welcome)
@@ -18,9 +18,9 @@ import useIsWindowLargeDefault from "useIsWindowLarge" /* 7373 */;
 import GuildTemplatesConstants from "GuildTemplatesConstants" /* 7733 */;
 import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 8268 */;
 import Constants2 from "Constants" /* 8438 */;
-import GuildInviteIconDefault from "GuildInviteIcon" /* 13572 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14309 */;
-import AssetRegistry from "AssetRegistry" /* 15073 */;
+import GuildInviteIconDefault from "GuildInviteIcon" /* 13570 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14307 */;
+import AssetRegistry from "AssetRegistry" /* 15071 */;
 import RegistrationStepsUtils from "RegistrationStepsUtils" /* 17447 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -82,7 +82,7 @@ function InviteCard(invite) {
       _modDef38(null != inviter, "Null inviter");
       const self = this;
       const self2 = this;
-      const obj = { user: tmp10, guildId: "Array" };
+      const obj = { user: tmp10, guildId: "r" };
       const Avatar = native.Avatar;
       tmp10 = new UserRecord(inviter);
       tmp12 = closure_19(Avatar, obj);
@@ -97,7 +97,7 @@ function InviteCard(invite) {
     } else {
       const self3 = this;
       const self4 = this;
-      const obj4 = { user: tmp29, guildId: "Array" };
+      const obj4 = { user: tmp29, guildId: "r" };
       const Avatar2 = native.Avatar;
       tmp29 = new UserRecord(inviter);
       const tmp31 = closure_19(Avatar2, obj4);

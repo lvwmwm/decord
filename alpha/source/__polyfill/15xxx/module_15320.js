@@ -1,12 +1,12 @@
 // Module ID: 15320
 // Function ID: 15321
-// Dependencies: [15310]
+// Dependencies: [15308]
 
 // Module 15320
-import _mod15310 from "module_15310" /* 15310 */;
+import _mod15308 from "module_15308" /* 15308 */;
 
 
 export default (arg0, arg1) => {
-  const tmp = new _mod15310(arg0, arg1);
-  return tmp.major;
+  const tmp = new _mod15308(arg0, arg1);
+  return tmp.patch;
 };

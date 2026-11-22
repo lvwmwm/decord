@@ -1,88 +1,102 @@
 // Module ID: 15345
 // Function ID: 15346
-// Dependencies: [15339, 15310, 15330]
+// Dependencies: [15308, 15337, 15328, 15333, 15329, 15332, 15339, 15336]
 
 // Module 15345
-import _mod15310 from "module_15310" /* 15310 */;
+import _mod15336 from "module_15336" /* 15336 */;
 
-let tmp;
-const _mod15330 = tmp(15330);
+const require = globalThis.__r;
+let _require, closure_1, dependencyMap;
 
-export default function(arg0, arg1) {
+
+export default function(arg0, arg1, arg2, arg3) {
+  let closure_0;
   let obj;
-  let tmp = obj;
-  obj = new obj(15339)(arg0, arg1);
-  const tmp3 = new obj(15310)("0.0.0");
-  if (obj.test(tmp3)) {
-    return tmp3;
+  let str;
+  let str3;
+  let tmpResult;
+  let tmpResult4;
+  _require = arg3;
+  let tmp = _require;
+  let tmp2 = dependencyMap;
+  const tmp3 = new require("module_15308")(arg0, arg3);
+  let tmp4 = new require("module_15337")(arg1, arg3);
+  if (">" === arg2) {
+    dependencyMap = tmp(15328);
+    tmpResult = tmp(15333);
+    const tmpResult3 = tmp(15329);
+    let closure_2 = tmpResult3;
+    str3 = ">=";
+    str = ">";
+    tmpResult4 = tmpResult3;
   } else {
-    let self = this;
-    let self2 = this;
-    const tmp4 = new tmp(15310)("0.0.0-0");
-    if (obj.test(tmp4)) {
-      return tmp4;
+    str = "<";
+    if ("<" === arg2) {
+      dependencyMap = tmp(15329);
+      tmpResult = tmp(15332);
+      tmpResult4 = tmp(15328);
+      closure_2 = tmpResult4;
+      str3 = "<=";
     } else {
-      let num = 0;
-      let num3 = 0;
-      let tmp7 = null;
-      let tmp8 = null;
-      if (0 < obj.set.length) {
-        do {
-          let arr = obj.set[num3];
-          obj = null;
-          let item = arr.forEach(function(semver) {
-            obj = new _mod15310(semver.semver.version);
-            const operator = semver.operator;
-            if (">" === operator) {
-              if (0 === obj.prerelease.length) {
-                obj.patch = obj.patch + 1;
-              } else {
-                const prerelease = obj.prerelease;
-                prerelease.push(0);
-              }
-              obj.raw = obj.format();
-            } else if ("" !== operator) {
-              if (">=" !== operator) {
-                if ("<" !== operator) {
-                  if ("<=" !== operator) {
-                    const _Error = Error;
-                    const _HermesInternal = HermesInternal;
-                    const self = this;
-                    const self2 = this;
-                    const error = new Error("Unexpected operation: " + semver.operator);
-                    throw error;
-                  }
-                }
-              }
-            }
-            obj && !_mod15330(obj, obj);
-          });
-          let tmp11 = !obj;
-          let tmp12 = tmp7;
-          if (obj) {
-            let tmp14 = tmp12;
-            if (tmp14) {
-              tmp14 = !obj(15330)(tmp12, obj);
-            }
-            tmp11 = tmp14;
-          }
-          if (!tmp11) {
-            tmp12 = obj;
-          }
-          num3 = num + 1;
-          tmp7 = tmp12;
-          tmp8 = tmp12;
-          num = num3;
-        } while (num3 < obj.set.length);
-      }
-      let tmp18 = null;
-      if (tmp8) {
-        tmp18 = null;
-        if (obj.test(tmp8)) {
-          tmp18 = tmp8;
-        }
-      }
-      return tmp18;
+      const _TypeError = TypeError;
+      let self = this;
+      let self2 = this;
+      const typeError = new TypeError("Must provide a hilo val of \"<\" or \">\"");
+      throw typeError;
     }
+  }
+  if (tmp(15339)(tmp3, tmp4, arg3)) {
+    return false;
+  } else {
+    let num = 0;
+    let num3 = 0;
+    if (0 < tmp4.set.length) {
+      while (true) {
+        let arr = tmp4.set[num3];
+        _require = null;
+        dependencyMap = null;
+        let item = arr.forEach(function(semver) {
+          let tmp = semver;
+          if (semver.semver === _mod15336.ANY) {
+            const self = this;
+            const self2 = this;
+            tmp = new _mod15336(">=0.0.0");
+          }
+          semver = semver || tmp;
+          closure_1 = closure_1 || tmp;
+          const tmp4 = semver;
+          if (closure_1(tmp.semver, semver.semver, semver)) {
+            semver = tmp;
+          } else if (closure_2(tmp.semver, closure_1.semver, tmp4)) {
+            closure_1 = tmp;
+          }
+        });
+        if (_require.operator !== str) {
+          if (_require.operator !== str3) {
+            if (!dependencyMap.operator) {
+              if (tmpResult(tmp3, dependencyMap.semver)) {
+                obj = { v: false };
+              }
+            }
+            let obj2;
+            if (dependencyMap.operator === str3) {
+              if (tmpResult4(tmp3, dependencyMap.semver)) {
+                obj2 = { v: false };
+              }
+            }
+            obj = obj2;
+          }
+          if (obj) {
+            break;
+          } else {
+            num3 = num + 1;
+            num = num3;
+          }
+        }
+        obj = { v: false };
+      }
+      return obj.v;
+    }
+    return true;
   }
 };

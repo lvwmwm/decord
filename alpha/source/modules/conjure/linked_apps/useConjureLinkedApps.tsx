@@ -73,10 +73,10 @@ export default function useConjureLinkedApps(projectId, arg1) {
   let items1 = [ConjureProjectStore];
   const items2 = [projectId];
   const stateFromStoresArray = obj2.useStateFromStoresArray(items1, () => {
-    const f132453 = (id) => id.id;
+    const f132467 = (id) => id.id;
     const items = [...ConjureProjectStore.getOwnedProjects(), ...ConjureProjectStore.getSharedWithMeProjects(), ...ConjureProjectStore.getRailProjects()];
-    const items1 = [...new Set(items.map(f132453))];
-    new Set(items.map(f132453));
+    const items1 = [...new Set(items.map(f132467))];
+    new Set(items.map(f132467));
     const found = items1.filter((item) => item !== current);
     return found.sort();
   }, items2);

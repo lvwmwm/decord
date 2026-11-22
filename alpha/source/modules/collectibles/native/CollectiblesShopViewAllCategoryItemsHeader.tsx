@@ -1,7 +1,7 @@
 // Module ID: 17337
 // Function ID: 17338
 // Name: CollectiblesShopViewAllCategoryItemsHeader
-// Dependencies: [19, 17, 21, 4913, 1500, 14061, 8561, 8565, 1112, 5600, 2]
+// Dependencies: [19, 17, 21, 4913, 1500, 14059, 8561, 8565, 1112, 5600, 2]
 // Exports: default
 
 // Module 17337 (CollectiblesShopViewAllCategoryItemsHeader)
@@ -11,7 +11,7 @@ import useNavigation from "useNavigation" /* 1500 */;
 import FastImageDefault from "FastImage" /* 5600 */;
 import HeaderShared from "HeaderShared" /* 8561 */;
 import AssetRegistryDefault from "AssetRegistry" /* 8565 */;
-import useYouBarSettingsSafeArea from "useYouBarSettingsSafeArea" /* 14061 */;
+import useYouBarSettingsSafeArea from "useYouBarSettingsSafeArea" /* 14059 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4913 */;

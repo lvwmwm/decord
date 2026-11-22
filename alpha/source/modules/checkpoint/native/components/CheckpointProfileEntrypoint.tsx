@@ -1,10 +1,10 @@
-// Module ID: 14605
-// Function ID: 14606
+// Module ID: 14603
+// Function ID: 14604
 // Name: CheckpointProfileEntrypoint
-// Dependencies: [5, 17, 12492, 21, 12497, 5127, 14606, 2119, 6340, 504, 7045, 1112, 3440, 10116, 2]
+// Dependencies: [5, 17, 12128, 21, 12497, 5127, 14604, 2119, 6340, 504, 7045, 1112, 3440, 10116, 2]
 // Exports: default
 
-// Module 14605 (CheckpointProfileEntrypoint)
+// Module 14603 (CheckpointProfileEntrypoint)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import asyncRequire from "asyncRequire" /* 2119 */;
@@ -12,7 +12,7 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127
 import CheckpointExperiments from "CheckpointExperiments" /* 6340 */;
 import openCheckpoint from "openCheckpoint" /* 12497 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import CheckpointStore from "CheckpointStore" /* 12492 */;
+import CheckpointStore from "CheckpointStore" /* 12128 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3;
@@ -97,7 +97,7 @@ function CheckpointProfileEntrypointRow(source) {
     fn = () => {
       obj = ActionSheetActionCreatorsDefault;
       const obj2 = { mode: checkpointQAMode };
-      obj.openLazy(asyncRequire(14606, dependencyMap.paths), "CheckpointTestingActionSheet", obj2);
+      obj.openLazy(asyncRequire(14604, dependencyMap.paths), "CheckpointTestingActionSheet", obj2);
     };
   }
   return <TableRow label={intl.string(checkpointQAMode(3440)["8hclXY"])} subLabel={intl2.string(checkpointQAMode(3440).BFc4lY)} icon={tmp5Result} onPress={function onPress() {

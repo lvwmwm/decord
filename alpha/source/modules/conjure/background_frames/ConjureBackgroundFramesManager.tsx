@@ -1,7 +1,7 @@
 // Module ID: 19467
 // Function ID: 19468
 // Name: ConjureBackgroundFramesManager
-// Dependencies: [5, 7484, 5557, 15747, 2119, 2]
+// Dependencies: [5, 7484, 5557, 15745, 2119, 2]
 
 // Module 19467 (ConjureBackgroundFramesManager)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;

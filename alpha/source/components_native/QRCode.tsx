@@ -1,14 +1,14 @@
-// Module ID: 14655
-// Function ID: 14656
+// Module ID: 14653
+// Function ID: 14654
 // Name: components_native/QRCode
-// Dependencies: [109, 19, 17, 21, 4913, 575, 4974, 14656, 5481, 5600, 14670, 8201, 2]
+// Dependencies: [109, 19, 17, 21, 4913, 575, 4974, 14654, 5481, 5600, 14668, 8201, 2]
 
-// Module 14655 (components_native/QRCode)
+// Module 14653 (components_native/QRCode)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 4974 */;
 import FastImageDefault from "FastImage" /* 5600 */;
-import QRCodeDefault from "QRCode" /* 14656 */;
-import AssetRegistry from "AssetRegistry" /* 14670 */;
+import QRCodeDefault from "QRCode" /* 14654 */;
+import AssetRegistry from "AssetRegistry" /* 14668 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

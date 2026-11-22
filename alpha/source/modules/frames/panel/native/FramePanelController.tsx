@@ -1,7 +1,7 @@
 // Module ID: 19203
 // Function ID: 19204
 // Name: FramePanelController
-// Dependencies: [19, 2164, 6623, 6624, 5539, 21, 504, 15747, 10622, 19177, 19204, 2]
+// Dependencies: [19, 2164, 6623, 6624, 5539, 21, 504, 15745, 10622, 19177, 19204, 2]
 // Exports: default
 
 // Module 19203 (FramePanelController)
@@ -9,7 +9,7 @@ import Fragment from "Fragment" /* 21 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 5539 */;
 import FramesConstants from "FramesConstants" /* 6624 */;
 import FramesActionCreatorsDefault from "FramesActionCreators" /* 10622 */;
-import conjureBackgroundFrames from "conjureBackgroundFrames" /* 15747 */;
+import conjureBackgroundFrames from "conjureBackgroundFrames" /* 15745 */;
 import FramePanelStateContextDefault from "FramePanelStateContext" /* 19204 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 2164 */;

@@ -1,10 +1,10 @@
-// Module ID: 12410
-// Function ID: 12411
+// Module ID: 12417
+// Function ID: 12418
 // Name: AutomodQuarantineUtils
 // Dependencies: [19, 9425, 502, 4825, 4784, 4845, 4946, 1071, 4831, 1081, 563, 4851, 1112, 9426, 9427, 8194, 2]
 // Exports: useCurrentUserHasAutomodQuarantinedProfile, useGuildAutomodProfileQuarantineErrors, useOpenFixQuarantinedProfileModal
 
-// Module 12410 (AutomodQuarantineUtils)
+// Module 12417 (AutomodQuarantineUtils)
 import UserSettingsConstants from "UserSettingsConstants" /* 1081 */;
 import intl4 from "intl" /* 1112 */;
 import GuildMemberConstants from "GuildMemberConstants" /* 4831 */;
@@ -58,7 +58,7 @@ export function useGuildAutomodProfileQuarantineErrors(id) {
     if (id == null) {
       guildId = SelectedGuildStore.getGuildId();
     }
-    const obj = { nick: "Array", bio: "analyticsLocations" };
+    const obj = { nick: "disabled", bio: "isArray" };
     const guild = GuildStore.getGuild(guildId);
     if (null != guild) {
       if (null != guildId) {

@@ -1,18 +1,18 @@
-// Module ID: 12544
-// Function ID: 12545
+// Module ID: 12542
+// Function ID: 12543
 // Name: CheckpointCharacterStage
-// Dependencies: [32, 19, 17, 12492, 21, 4913, 12506, 1494, 504, 5492, 12545, 12711, 12713, 12714, 12716, 12717, 12718, 6338, 12719, 6335, 4980, 2]
+// Dependencies: [32, 19, 17, 12128, 21, 4913, 12506, 1494, 504, 5492, 12543, 12709, 12711, 12712, 12714, 12715, 12716, 6338, 12717, 6335, 4980, 2]
 // Exports: default
 
-// Module 12544 (CheckpointCharacterStage)
+// Module 12542 (CheckpointCharacterStage)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
-import CheckpointCharacterTextureUtils from "CheckpointCharacterTextureUtils" /* 12545 */;
-import CheckpointCharacterDataBinding from "CheckpointCharacterDataBinding" /* 12711 */;
+import CheckpointCharacterTextureUtils from "CheckpointCharacterTextureUtils" /* 12543 */;
+import CheckpointCharacterDataBinding from "CheckpointCharacterDataBinding" /* 12709 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import CheckpointStore from "CheckpointStore" /* 12492 */;
+import CheckpointStore from "CheckpointStore" /* 12128 */;
 import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 

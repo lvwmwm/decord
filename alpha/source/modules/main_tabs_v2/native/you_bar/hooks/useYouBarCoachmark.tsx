@@ -1,7 +1,7 @@
 // Module ID: 17942
 // Function ID: 17943
 // Name: useYouBarCoachmark
-// Dependencies: [32, 19, 4946, 4759, 1112, 4746, 1653, 16013, 1501, 504, 14981, 5662, 9080, 17943, 9087, 2]
+// Dependencies: [32, 19, 4946, 4759, 1112, 4746, 1653, 16011, 1501, 504, 14979, 5662, 9080, 17943, 9087, 2]
 // Exports: useYouBarCoachmark
 
 // Module 17942 (useYouBarCoachmark)

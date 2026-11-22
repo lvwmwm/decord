@@ -1,9 +1,9 @@
-// Module ID: 20212
-// Function ID: 20213
+// Module ID: 20210
+// Function ID: 20211
 // Name: MarkAsRead
 // Dependencies: [1071, 7476, 2]
 
-// Module 20212 (MarkAsRead)
+// Module 20210 (MarkAsRead)
 import ReadStateActionCreators from "ReadStateActionCreators" /* 7476 */;
 import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;

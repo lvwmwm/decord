@@ -1,10 +1,10 @@
-// Module ID: 13821
-// Function ID: 13822
+// Module ID: 13819
+// Function ID: 13820
 // Name: useOnConnectToConsole
 // Dependencies: [19, 1071, 4945, 4746, 7026, 7193, 11017, 2]
 // Exports: onConnectToConsole, useOnConnectToConsole
 
-// Module 13821 (useOnConnectToConsole)
+// Module 13819 (useOnConnectToConsole)
 import dismissible_content from "dismissible_content" /* 4746 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4945 */;
 import XboxLinkModalActionCreatorsDefault from "XboxLinkModalActionCreators" /* 7026 */;

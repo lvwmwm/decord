@@ -1,7 +1,7 @@
 // Module ID: 9661
 // Function ID: 9662
 // Name: UserRow
-// Dependencies: [19, 17, 4914, 2164, 8362, 4762, 5651, 4855, 9646, 1071, 21, 1358, 4913, 575, 7737, 38, 9662, 10251, 5594, 10252, 7740, 8363, 504, 1186, 5504, 4969, 13509, 7520, 6631, 1112, 13823, 10273, 7340, 5511, 2153, 8612, 7672, 8067, 2119, 8166, 13824, 9370, 5942, 8699, 6342, 9456, 9454, 10387, 13826, 9743, 13827, 7335, 13841, 7045, 2]
+// Dependencies: [19, 17, 4914, 2164, 8362, 4762, 5651, 4855, 9646, 1071, 21, 1358, 4913, 575, 7737, 38, 9662, 10251, 5594, 10252, 7740, 8363, 504, 1186, 5504, 4969, 13507, 7520, 6631, 1112, 13821, 10273, 7340, 5511, 2153, 8612, 7672, 8067, 2119, 8166, 13822, 9370, 5942, 8699, 6342, 9456, 9454, 10387, 13824, 9743, 13825, 7335, 13839, 7045, 2]
 
 // Module 9661 (UserRow)
 import react_native from "react-native" /* 17 */;
@@ -25,9 +25,9 @@ import UserRowConstants from "UserRowConstants" /* 9646 */;
 import PeopleUtilsDefault from "PeopleUtils" /* 10251 */;
 import GameRelationshipActionCreatorsDefault from "GameRelationshipActionCreators" /* 10252 */;
 import XLargeIcon from "XLargeIcon" /* 10273 */;
-import ActivityStatusDefault from "ActivityStatus" /* 13509 */;
-import ActionButtonDefault from "ActionButton" /* 13823 */;
-import CrownIcon2 from "CrownIcon" /* 13824 */;
+import ActivityStatusDefault from "ActivityStatus" /* 13507 */;
+import ActionButtonDefault from "ActionButton" /* 13821 */;
+import CrownIcon2 from "CrownIcon" /* 13822 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4914 */;
 import ApplicationStore from "ApplicationStore" /* 2164 */;
@@ -115,7 +115,7 @@ const UserRowModes = UserRowConstants.UserRowModes;
 ({ jsx: closure_14, jsxs: closure_15, Fragment: closure_16 } = Fragment);
 let obj;
 if (PlatformUtils.isIOS()) {
-  obj = { lineHeight: "r" };
+  obj = { lineHeight: "Array" };
 }
 let closure_18 = { CALL: "call", MESSAGE: "message", ACCEPT: "accept", DECLINE: "decline", CANCEL: "cancel", ACCEPT_SUGGESTION: "accept-suggestion", IGNORE_SUGGESTION: "ignore-suggestion", TOGGLE: "toggle" };
 let createStyles = createStyles_mod;
@@ -293,7 +293,7 @@ const memoResult = react.memo(function UserRow(type) {
     let zFfSFQ2;
     const items = [];
     if (NONE !== UserRowModes.ACTIONS) {
-      let obj2 = { accessibilityActions: items, actions: "Array" };
+      let obj2 = { accessibilityActions: items, actions: "r" };
       return obj2;
     } else {
       let tmp9;

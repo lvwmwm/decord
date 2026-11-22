@@ -1,13 +1,14 @@
-// Module ID: 17178
-// Function ID: 17179
+// Module ID: 17176
+// Function ID: 17177
 // Name: PhoenixLaunchSetting
-// Dependencies: [16144, 17179, 17180, 11937, 1112, 7388, 2]
+// Dependencies: [16142, 17177, 17178, 17180, 11937, 1112, 7388, 2]
 
-// Module 17178 (PhoenixLaunchSetting)
+// Module 17176 (PhoenixLaunchSetting)
 import intl2 from "intl" /* 1112 */;
 import MobilePhoneIcon from "MobilePhoneIcon" /* 7388 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 16144 */;
-import PhoenixSwitchEntrypointExperimentDefault from "PhoenixSwitchEntrypointExperiment" /* 17179 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 16142 */;
+import PhoenixSwitchEntrypointExperimentDefault from "PhoenixSwitchEntrypointExperiment" /* 17177 */;
+import PhoenixRolloutExperimentDefault from "PhoenixRolloutExperiment" /* 17178 */;
 import PhoenixLaunchState from "PhoenixLaunchState" /* 17180 */;
 import SettingBuilders from "SettingBuilders" /* 11937 */;
 import size from "module_2" /* 2 */;
@@ -30,15 +31,21 @@ let obj = {
     let staffOrDeveloperSettingPredicate = obj.useStaffOrDeveloperSettingPredicate();
     const obj2 = PhoenixSwitchEntrypointExperimentDefault;
     const enabled = obj2.useConfig({ location: "PhoenixLaunchSetting" }, { autoTrackExposure: false }).enabled;
-    const obj3 = PhoenixLaunchState;
-    const isPhoenixInstalled = obj3.useIsPhoenixInstalled();
-    if (!staffOrDeveloperSettingPredicate) {
-      staffOrDeveloperSettingPredicate = enabled;
+    const obj3 = PhoenixRolloutExperimentDefault;
+    const tmp2 = null != obj3.useConfig({ location: "PhoenixLaunchSetting" }, { autoTrackExposure: false }).forcedClient;
+    let tmp4 = !tmp2;
+    const obj4 = PhoenixLaunchState;
+    const isPhoenixInstalled = obj4.useIsPhoenixInstalled();
+    if (!tmp2) {
+      if (!staffOrDeveloperSettingPredicate) {
+        staffOrDeveloperSettingPredicate = enabled;
+      }
+      tmp4 = staffOrDeveloperSettingPredicate;
     }
-    if (staffOrDeveloperSettingPredicate) {
-      staffOrDeveloperSettingPredicate = isPhoenixInstalled;
+    if (tmp4) {
+      tmp4 = isPhoenixInstalled;
     }
-    return staffOrDeveloperSettingPredicate;
+    return tmp4;
   }
 };
 const toggle = SettingBuilders.createToggle(obj);

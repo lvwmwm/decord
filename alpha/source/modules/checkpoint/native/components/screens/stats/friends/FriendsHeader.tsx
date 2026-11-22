@@ -1,10 +1,10 @@
-// Module ID: 12779
-// Function ID: 12780
+// Module ID: 12777
+// Function ID: 12778
 // Name: FriendsHeader
-// Dependencies: [17, 5969, 21, 4913, 575, 1112, 3408, 3440, 5598, 12510, 12757, 2]
+// Dependencies: [17, 5969, 21, 4913, 575, 1112, 3408, 3440, 5598, 12510, 12755, 2]
 // Exports: default, getSidekickTitleAccessibilityLabel, getSquadTitleAccessibilityLabel
 
-// Module 12779 (FriendsHeader)
+// Module 12777 (FriendsHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
@@ -13,7 +13,7 @@ import _modDef3440 from "module_3440" /* 3440 */;
 import FriendsIcon from "FriendsIcon" /* 5598 */;
 import CheckpointConstants from "CheckpointConstants" /* 5969 */;
 import CheckpointTextDefault from "CheckpointText" /* 12510 */;
-import CheckpointDisplayTextDefault from "CheckpointDisplayText" /* 12757 */;
+import CheckpointDisplayTextDefault from "CheckpointDisplayText" /* 12755 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;

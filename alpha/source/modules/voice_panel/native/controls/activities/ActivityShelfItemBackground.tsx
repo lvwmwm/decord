@@ -1,7 +1,7 @@
 // Module ID: 19289
 // Function ID: 19290
 // Name: ActivityShelfItemBackground
-// Dependencies: [32, 19, 21, 4913, 7324, 12954, 5600, 2]
+// Dependencies: [32, 19, 21, 4913, 7324, 12952, 5600, 2]
 
 // Module 19289 (ActivityShelfItemBackground)
 import Fragment from "Fragment" /* 21 */;

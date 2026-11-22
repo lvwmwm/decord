@@ -1,10 +1,10 @@
-// Module ID: 20003
-// Function ID: 20004
+// Module ID: 20000
+// Function ID: 20001
 // Name: FormGuildGatingModeSelector
-// Dependencies: [19, 17, 21, 4913, 575, 20004, 5861, 1112, 5504, 20006, 7681, 7386, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 20001, 5861, 1112, 5504, 20003, 7681, 7386, 2]
 // Exports: default
 
-// Module 20003 (FormGuildGatingModeSelector)
+// Module 20000 (FormGuildGatingModeSelector)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1112 */;
@@ -43,7 +43,7 @@ export default function FormGuildGatingModeSelector(isFullServerGating) {
   const onChange = isFullServerGating.onChange;
   let tmp = closure_8();
   dependencyMap = tmp;
-  let obj = isFullServerGating(20004);
+  let obj = isFullServerGating(20001);
   const roleSubscriptionSettingsDisabled = obj.useRoleSubscriptionSettingsDisabled();
   let items = [onChange];
   const items1 = [onChange, isFullServerGating, tmp];
@@ -77,12 +77,12 @@ export default function FormGuildGatingModeSelector(isFullServerGating) {
     onChange(true);
   }, items1);
   let obj3 = { icon: isFullServerGating(7681).TextIcon, title: intl.string(isFullServerGating(1112).t.rXqxhF), description: intl2.string(isFullServerGating(1112).t.yQiJne), selected: !isFullServerGating, onPress: callback, disabled: roleSubscriptionSettingsDisabled };
-  const tmp5 = onChange(20006);
+  const tmp5 = onChange(20003);
   intl = isFullServerGating(1112).intl;
   intl2 = isFullServerGating(1112).intl;
   items2 = [closure_5(tmp5, obj3), ];
   let obj4 = { icon: isFullServerGating(7386).KeyIcon, title: intl3.string(isFullServerGating(1112).t.WzC9s6), description: intl4.string(isFullServerGating(1112).t.WmagiB), selected: isFullServerGating, onPress: callback1, disabled: roleSubscriptionSettingsDisabled };
-  const tmp6 = onChange(20006);
+  const tmp6 = onChange(20003);
   intl3 = isFullServerGating(1112).intl;
   intl4 = isFullServerGating(1112).intl;
   items2[1] = closure_5(tmp6, obj4);

@@ -1,9 +1,9 @@
-// Module ID: 16585
-// Function ID: 16586
+// Module ID: 16583
+// Function ID: 16584
 // Name: QuestDockUnenrolledBody
-// Dependencies: [19, 6558, 21, 16508, 16564, 16472, 16586, 8430, 9958, 9996, 9994, 9979, 9980, 13756, 6561, 9955, 9998, 16587, 16550, 1112, 7591, 10376, 9982, 2]
+// Dependencies: [19, 6558, 21, 16506, 16562, 16470, 16584, 8430, 9958, 9996, 9994, 9979, 9980, 13754, 6561, 9955, 9998, 16585, 16548, 1112, 7591, 10376, 9982, 2]
 
-// Module 16585 (QuestDockUnenrolledBody)
+// Module 16583 (QuestDockUnenrolledBody)
 import Fragment from "Fragment" /* 21 */;
 import QuestConstants from "QuestConstants" /* 6558 */;
 import QuestTypes from "QuestTypes" /* 6561 */;

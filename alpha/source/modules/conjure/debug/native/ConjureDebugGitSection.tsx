@@ -1,7 +1,7 @@
 // Module ID: 18683
 // Function ID: 18684
 // Name: ConjureDebugGitSection
-// Dependencies: [32, 19, 17, 21, 4913, 575, 7675, 11242, 13767, 18684, 8048, 18686, 12464, 18688, 10943, 11148, 7532, 7763, 7231, 17194, 17196, 18690, 18678, 5504, 4975, 5866, 5929, 7336, 5511, 10343, 2]
+// Dependencies: [32, 19, 17, 21, 4913, 575, 7675, 11242, 13765, 18684, 8048, 18686, 12471, 18688, 10943, 11148, 7532, 7763, 7231, 17194, 17196, 18690, 18678, 5504, 4975, 5866, 5929, 7336, 5511, 10343, 2]
 // Exports: ConjureDebugGitSection, ConjureDebugRestartAgent
 
 // Module 18683 (ConjureDebugGitSection)
@@ -15,8 +15,8 @@ import CalendarIcon from "CalendarIcon" /* 8048 */;
 import SpeedometerIcon from "SpeedometerIcon" /* 10943 */;
 import FileIcon from "FileIcon" /* 11148 */;
 import PencilIcon from "PencilIcon" /* 11242 */;
-import ServerIcon from "ServerIcon" /* 12464 */;
-import CloudIcon from "CloudIcon" /* 13767 */;
+import ServerIcon from "ServerIcon" /* 12471 */;
+import CloudIcon from "CloudIcon" /* 13765 */;
 import ArrowSmallUpIcon from "ArrowSmallUpIcon" /* 17194 */;
 import ArrowSmallDownIcon from "ArrowSmallDownIcon" /* 17196 */;
 import ConjureDebugPrimitives from "ConjureDebugPrimitives" /* 18678 */;

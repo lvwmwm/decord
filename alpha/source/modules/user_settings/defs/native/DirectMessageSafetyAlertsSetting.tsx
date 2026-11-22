@@ -1,16 +1,16 @@
-// Module ID: 16136
-// Function ID: 16137
+// Module ID: 16134
+// Function ID: 16135
 // Name: DirectMessageSafetyAlertsSetting
-// Dependencies: [8712, 12415, 11790, 11792, 11937, 1112, 11791, 16137, 2]
+// Dependencies: [8712, 12422, 11790, 11792, 11937, 1112, 11791, 16135, 2]
 
-// Module 16136 (DirectMessageSafetyAlertsSetting)
+// Module 16134 (DirectMessageSafetyAlertsSetting)
 import intl2 from "intl" /* 1112 */;
 import SettingsConstants from "SettingsConstants" /* 8712 */;
 import SelfModInappropriateConversationExperiment from "SelfModInappropriateConversationExperiment" /* 11790 */;
 import useSafetyAlertsSettingOrDefault from "useSafetyAlertsSettingOrDefault" /* 11791 */;
 import InappropriateConversationsDefaultOn from "InappropriateConversationsDefaultOn" /* 11792 */;
-import useUserIsConsideredAdultDefault from "useUserIsConsideredAdult" /* 12415 */;
-import updateDmSafetyAlertsSetting from "updateDmSafetyAlertsSetting" /* 16137 */;
+import useUserIsConsideredAdultDefault from "useUserIsConsideredAdult" /* 12422 */;
+import updateDmSafetyAlertsSetting from "updateDmSafetyAlertsSetting" /* 16135 */;
 import SettingBuilders from "SettingBuilders" /* 11937 */;
 import size from "module_2" /* 2 */;
 

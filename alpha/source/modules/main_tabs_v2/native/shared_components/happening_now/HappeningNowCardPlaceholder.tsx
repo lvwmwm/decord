@@ -1,7 +1,7 @@
 // Module ID: 17591
 // Function ID: 17592
 // Name: HappeningNowCardPlaceholder
-// Dependencies: [19, 17, 16701, 21, 4913, 575, 1653, 1706, 5123, 16702, 2]
+// Dependencies: [19, 17, 16699, 21, 4913, 575, 1653, 1706, 5123, 16700, 2]
 // Exports: HappeningNowCardPlaceholder
 
 // Module 17591 (HappeningNowCardPlaceholder)
@@ -10,7 +10,7 @@ import nativeDefault from "native" /* 575 */;
 import _mod1653 from "module_1653" /* 1653 */;
 import _mod1706 from "module_1706" /* 1706 */;
 import timing_timing from "timing/timing" /* 5123 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 16701 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 16699 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;

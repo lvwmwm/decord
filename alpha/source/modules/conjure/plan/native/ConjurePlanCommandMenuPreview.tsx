@@ -1,7 +1,7 @@
 // Module ID: 18584
 // Function ID: 18585
 // Name: ConjurePlanCommandMenuPreview
-// Dependencies: [19, 17, 21, 4913, 575, 12162, 5504, 1112, 5600, 1412, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 12169, 5504, 1112, 5600, 1412, 2]
 // Exports: default
 
 // Module 18584 (ConjurePlanCommandMenuPreview)
@@ -11,7 +11,7 @@ import intl2 from "intl" /* 1112 */;
 import AvatarUtils from "AvatarUtils" /* 1412 */;
 import Text_Text from "Text/Text" /* 5504 */;
 import FastImageDefault from "FastImage" /* 5600 */;
-import ArrowAngleLeftUpIcon2 from "ArrowAngleLeftUpIcon" /* 12162 */;
+import ArrowAngleLeftUpIcon2 from "ArrowAngleLeftUpIcon" /* 12169 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;

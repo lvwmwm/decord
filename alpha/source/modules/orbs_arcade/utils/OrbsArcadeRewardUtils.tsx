@@ -1,15 +1,15 @@
-// Module ID: 16424
-// Function ID: 16425
+// Module ID: 16422
+// Function ID: 16423
 // Name: OrbsArcadeRewardUtils
-// Dependencies: [16425, 1112, 2]
+// Dependencies: [16423, 1112, 2]
 // Exports: getOrbsArcadeClaimableRewards, getOrbsArcadeFocusedReward, getOrbsArcadeRewardScoreLabel, hasOrbsArcadeUnclaimedRewards, hasOrbsArcadeUnlockedRewards, isOrbsArcadeEnrollmentOver, mustClaimOrbsArcadeRewardsToPlay
 
-// Module 16424 (OrbsArcadeRewardUtils)
+// Module 16422 (OrbsArcadeRewardUtils)
 import intl3 from "intl" /* 1112 */;
-import OrbsArcadeTypes from "OrbsArcadeTypes" /* 16425 */;
+import OrbsArcadeTypes from "OrbsArcadeTypes" /* 16423 */;
 import size from "module_2" /* 2 */;
 
-const f109821 = (pendingAt) => null != pendingAt.pendingAt && null == pendingAt.claimedAt;
+const f109830 = (pendingAt) => null != pendingAt.pendingAt && null == pendingAt.claimedAt;
 function getOrbsArcadeRewardStatus(reward, gameState, ownedRewardSkuIds) {
   let tmp;
   if (gameState != null) {
@@ -93,7 +93,7 @@ export function hasOrbsArcadeUnclaimedRewards(gameState) {
     rewardGrants = {};
   }
   const values2 = values(rewardGrants);
-  return values2.some(f109821);
+  return values2.some(f109830);
 }
 export function isOrbsArcadeEnrollmentOver(gameStateForGame) {
   let tmp = null != gameStateForGame.expiresAt;
@@ -113,7 +113,7 @@ export function isOrbsArcadeEnrollmentOver(gameStateForGame) {
       rewardGrants = {};
     }
     const values2 = values(rewardGrants);
-    tmp = !values2.some(f109821);
+    tmp = !values2.some(f109830);
   }
   return tmp;
 }
@@ -135,7 +135,7 @@ export function mustClaimOrbsArcadeRewardsToPlay(gameStateForGame) {
       rewardGrants = {};
     }
     const values2 = values(rewardGrants);
-    someResult = values2.some(f109821);
+    someResult = values2.some(f109830);
   }
   return someResult;
 }

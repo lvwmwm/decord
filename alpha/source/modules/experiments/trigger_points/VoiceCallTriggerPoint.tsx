@@ -1,12 +1,12 @@
 // Module ID: 19463
 // Function ID: 19464
 // Name: VoiceCallTriggerPoint
-// Dependencies: [5531, 9239, 19464, 18576, 19465, 19466, 14276, 2]
+// Dependencies: [5531, 9239, 19464, 18576, 19465, 19466, 14274, 2]
 
 // Module 19463 (VoiceCallTriggerPoint)
 import ExperimentConstants from "ExperimentConstants" /* 5531 */;
 import Helpers from "Helpers" /* 9239 */;
-import VoiceChannelBadgeExperiment from "VoiceChannelBadgeExperiment" /* 14276 */;
+import VoiceChannelBadgeExperiment from "VoiceChannelBadgeExperiment" /* 14274 */;
 import HangoutWindowExperiment from "HangoutWindowExperiment" /* 18576 */;
 import VoiceChannelHoistingExperiment from "VoiceChannelHoistingExperiment" /* 19464 */;
 import PastVcActivityMessagesExperimentDefault from "PastVcActivityMessagesExperiment" /* 19465 */;

@@ -1,9 +1,9 @@
-// Module ID: 19804
-// Function ID: 19805
+// Module ID: 19801
+// Function ID: 19802
 // Name: SoundboardSoundEditModal
-// Dependencies: [19, 1071, 21, 6429, 1112, 7095, 19805, 5474, 1255, 7092, 2]
+// Dependencies: [19, 1071, 21, 6429, 1112, 7095, 19802, 5474, 1255, 7092, 2]
 
-// Module 19804 (SoundboardSoundEditModal)
+// Module 19801 (SoundboardSoundEditModal)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1112 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;

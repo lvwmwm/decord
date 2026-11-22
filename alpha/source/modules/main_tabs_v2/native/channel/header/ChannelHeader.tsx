@@ -1,10 +1,10 @@
-// Module ID: 14378
-// Function ID: 14379
+// Module ID: 14376
+// Function ID: 14377
 // Name: ChannelHeader
-// Dependencies: [19, 4762, 1071, 4769, 21, 1378, 5098, 11935, 1107, 5090, 563, 6419, 14379, 14380, 14381, 14386, 1112, 14387, 2]
+// Dependencies: [19, 4762, 1071, 4769, 21, 1378, 5098, 11935, 1107, 5090, 563, 6419, 14377, 14378, 14379, 14384, 1112, 14385, 2]
 // Exports: default, navigateToChannelDetails
 
-// Module 14378 (ChannelHeader)
+// Module 14376 (ChannelHeader)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1071 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
@@ -12,11 +12,11 @@ import ChannelConstants from "ChannelConstants" /* 4769 */;
 import RootNavigationRef from "RootNavigationRef" /* 5090 */;
 import ChatInputUtils from "ChatInputUtils" /* 5098 */;
 import SwipeToMemberListUtils from "SwipeToMemberListUtils" /* 11935 */;
-import GuildRoleSubscriptionsChannelHeaderDefault from "GuildRoleSubscriptionsChannelHeader" /* 14379 */;
-import HomeChannelHeaderDefault from "HomeChannelHeader" /* 14380 */;
-import PrivateChannelHeaderDefault from "PrivateChannelHeader" /* 14381 */;
-import ForumChannelHeaderDefault from "ForumChannelHeader" /* 14386 */;
-import GuildChannelHeaderDefault from "GuildChannelHeader" /* 14387 */;
+import GuildRoleSubscriptionsChannelHeaderDefault from "GuildRoleSubscriptionsChannelHeader" /* 14377 */;
+import HomeChannelHeaderDefault from "HomeChannelHeader" /* 14378 */;
+import PrivateChannelHeaderDefault from "PrivateChannelHeader" /* 14379 */;
+import ForumChannelHeaderDefault from "ForumChannelHeader" /* 14384 */;
+import GuildChannelHeaderDefault from "GuildChannelHeader" /* 14385 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
 import size from "module_2" /* 2 */;

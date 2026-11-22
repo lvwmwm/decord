@@ -1,7 +1,7 @@
 // Module ID: 17494
 // Function ID: 17495
 // Name: useAuthWebsocket
-// Dependencies: [5, 32, 19, 1071, 3, 17493, 559, 7392, 14899, 17495, 1107, 1284, 6425, 17497, 2]
+// Dependencies: [5, 32, 19, 1071, 3, 17493, 559, 7392, 14897, 17495, 1107, 1284, 6425, 17497, 2]
 // Exports: useAuthWebsocket
 
 // Module 17494 (useAuthWebsocket)

@@ -1,10 +1,10 @@
-// Module ID: 19557
-// Function ID: 19558
+// Module ID: 19553
+// Function ID: 19554
 // Name: FramePanelUtils
 // Dependencies: [6623, 6624, 5539, 504, 2]
 // Exports: isFramePanelFullscreen, useIsActivityPanelFullscreen
 
-// Module 19557 (FramePanelUtils)
+// Module 19553 (FramePanelUtils)
 import get_initialized from "get initialized" /* 504 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 5539 */;
 import FramesConstants from "FramesConstants" /* 6624 */;

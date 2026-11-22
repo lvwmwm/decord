@@ -1,10 +1,10 @@
-// Module ID: 13523
-// Function ID: 13524
+// Module ID: 13521
+// Function ID: 13522
 // Name: isListeningOnSpotify
 // Dependencies: [1071, 6897, 5652, 6691, 2]
 // Exports: default
 
-// Module 13523 (isListeningOnSpotify)
+// Module 13521 (isListeningOnSpotify)
 import Constants from "Constants" /* 1071 */;
 import ActivityTypes from "ActivityTypes" /* 5652 */;
 import PlatformsDefault from "Platforms" /* 6691 */;

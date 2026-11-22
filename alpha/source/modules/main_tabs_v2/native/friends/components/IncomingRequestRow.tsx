@@ -1,7 +1,7 @@
 // Module ID: 18871
 // Function ID: 18872
 // Name: IncomingRequestRow
-// Dependencies: [19, 4914, 2164, 9646, 1071, 21, 1653, 563, 1112, 4969, 17563, 13540, 9661, 18077, 18872, 2]
+// Dependencies: [19, 4914, 2164, 9646, 1071, 21, 1653, 563, 1112, 4969, 17563, 13538, 9661, 18077, 18872, 2]
 // Exports: ConnectedIncomingGameFriendRequestRow, IncomingFriendRequestRow
 
 // Module 18871 (IncomingRequestRow)
@@ -10,7 +10,7 @@ import Constants from "Constants" /* 1071 */;
 import intl6 from "intl" /* 1112 */;
 import UserUtilsDefault from "UserUtils" /* 4969 */;
 import UserRowConstants from "UserRowConstants" /* 9646 */;
-import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 13540 */;
+import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 13538 */;
 import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 17563 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4914 */;

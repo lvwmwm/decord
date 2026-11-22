@@ -1,7 +1,7 @@
 // Module ID: 18227
 // Function ID: 18228
 // Name: JoinRequestActionSheetContent
-// Dependencies: [19, 17, 4762, 5142, 7564, 21, 4913, 575, 8197, 8183, 8180, 8191, 8067, 18225, 8202, 8212, 9050, 14522, 14628, 504, 13546, 4948, 5511, 7672, 1112, 4949, 10346, 5504, 7231, 4735, 11, 7532, 6545, 7591, 7340, 10273, 1628, 18228, 2]
+// Dependencies: [19, 17, 4762, 5142, 7564, 21, 4913, 575, 8197, 8183, 8180, 8191, 8067, 18225, 8202, 8212, 9050, 14520, 14626, 504, 13544, 4948, 5511, 7672, 1112, 4949, 10346, 5504, 7231, 4735, 11, 7532, 6545, 7591, 7340, 10273, 1628, 18228, 2]
 
 // Module 18227 (JoinRequestActionSheetContent)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
@@ -50,7 +50,7 @@ function OpenInterviewButton(arg0) {
     const tmp2 = null != interviewChannelId && null != ChannelStore.getChannel(tmp);
     return tmp2;
   }, items1);
-  const obj2 = interviewChannelId(13546);
+  const obj2 = interviewChannelId(13544);
   const joinRequestButtonActions = obj2.useJoinRequestButtonActions(joinRequest, interviewChannelId);
   ({ handleOpenInterview, submitting } = joinRequestButtonActions);
   const obj3 = interviewChannelId(4948);
@@ -130,9 +130,9 @@ let closure_12 = react.memo(function JoinRequestActionSheetHeader(user) {
     items4 = [, ];
     const obj10 = { user, displayProfile, badgeContainerBackground: containerBackground, isPreviewingChanges: false };
     const tmpResult = tmp(9050);
-    items4[0] = closure_8(tmp6(14522).PrimaryInfo, obj10);
+    items4[0] = closure_8(tmp6(14520).PrimaryInfo, obj10);
     const obj11 = { user };
-    items4[1] = closure_8(tmp(14628), obj11);
+    items4[1] = closure_8(tmp(14626), obj11);
     items2[1] = closure_8(tmpResult, obj7);
     items1[1] = closure_9(View, obj4);
     tmp9 = closure_9(closure_10, obj2);
@@ -319,7 +319,7 @@ let closure_15 = react.memo(function JoinRequestActionSheetApplicationActions(jo
   const callback = react.useCallback(() => {
     openJoinRequestActionSheetDefault(joinRequest);
   }, items);
-  const obj = joinRequest(13546);
+  const obj = joinRequest(13544);
   const joinRequestButtonActions = obj.useJoinRequestButtonActions(joinRequest, joinRequest.interviewChannelId, callback);
   ({ submitting, approveRequest, rejectRequest, handleOpenInterview } = joinRequestButtonActions);
   const ButtonGroup = joinRequest(6545).ButtonGroup;

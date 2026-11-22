@@ -1,7 +1,7 @@
 // Module ID: 19239
 // Function ID: 19240
 // Name: VoicePanelUI
-// Dependencies: [32, 19, 17, 6620, 10020, 6495, 11750, 11748, 5563, 11751, 21, 3, 5514, 4913, 575, 1653, 1625, 11749, 1628, 5173, 10656, 1706, 11754, 19240, 19241, 5129, 11775, 19164, 5477, 11755, 10851, 12903, 11759, 19225, 10093, 5765, 19242, 6366, 19244, 19245, 7520, 7539, 1262, 19246, 5491, 19247, 19269, 19303, 19307, 19310, 19311, 10623, 19312, 19314, 19324, 19332, 2]
+// Dependencies: [32, 19, 17, 6620, 10020, 6495, 11750, 11748, 5563, 11751, 21, 3, 5514, 4913, 575, 1653, 1625, 11749, 1628, 5173, 10656, 1706, 11754, 19240, 19241, 5129, 11775, 19164, 5477, 11755, 10851, 12901, 11759, 19225, 10093, 5765, 19242, 6366, 19244, 19245, 7520, 7539, 1262, 19246, 5491, 19247, 19269, 19303, 19307, 19310, 19311, 10623, 19312, 19314, 19324, 19332, 2]
 
 // Module 19239 (VoicePanelUI)
 import LoggerDefault from "Logger" /* 3 */;
@@ -16,7 +16,7 @@ import useGlobalStatusIndicatorState from "useGlobalStatusIndicatorState" /* 108
 import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11748 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11749 */;
 import MorphablePanelConstants from "MorphablePanelConstants" /* 11751 */;
-import useWindowDimensionsSharedValueDefault from "useWindowDimensionsSharedValue" /* 12903 */;
+import useWindowDimensionsSharedValueDefault from "useWindowDimensionsSharedValue" /* 12901 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

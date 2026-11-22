@@ -1,7 +1,7 @@
 // Module ID: 19360
 // Function ID: 19361
 // Name: VoicePanelScreenshareButton
-// Dependencies: [19, 4762, 21, 1625, 13423, 17994, 4913, 11749, 19346, 504, 38, 17988, 19361, 19347, 1112, 7324, 2]
+// Dependencies: [19, 4762, 21, 1625, 13421, 17994, 4913, 11749, 19346, 504, 38, 17988, 19361, 19347, 1112, 7324, 2]
 // Exports: default
 
 // Module 19360 (VoicePanelScreenshareButton)
@@ -9,7 +9,7 @@ import Fragment from "Fragment" /* 21 */;
 import _modDef38 from "module_38" /* 38 */;
 import NativeViewDefault from "NativeView" /* 7324 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11749 */;
-import ScreenArrowIcon from "ScreenArrowIcon" /* 13423 */;
+import ScreenArrowIcon from "ScreenArrowIcon" /* 13421 */;
 import useVoicePanelScreenshareToggleDefault from "useVoicePanelScreenshareToggle" /* 17988 */;
 import MobilePhoneShareIcon2 from "MobilePhoneShareIcon" /* 17994 */;
 import VoicePanelAnimatedButtonWrapperDefault from "VoicePanelAnimatedButtonWrapper" /* 19347 */;

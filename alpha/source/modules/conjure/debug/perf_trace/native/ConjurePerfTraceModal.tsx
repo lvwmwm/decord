@@ -1,7 +1,7 @@
 // Module ID: 18664
 // Function ID: 18665
 // Name: ConjurePerfTraceModal
-// Dependencies: [19, 17, 6968, 21, 4913, 575, 18665, 7565, 12799, 5504, 7763, 18666, 18668, 1628, 18669, 6989, 5511, 504, 7095, 6429, 12043, 2]
+// Dependencies: [19, 17, 6968, 21, 4913, 575, 18665, 7565, 12797, 5504, 7763, 18666, 18668, 1628, 18669, 6989, 5511, 504, 7095, 6429, 12043, 2]
 // Exports: default
 
 // Module 18664 (ConjurePerfTraceModal)
@@ -81,7 +81,7 @@ function WaterfallRow(node) {
   if (collapsed) {
     ChevronSmallDownIcon = tmp2(7565).ChevronSmallRightIcon;
   } else {
-    ChevronSmallDownIcon = tmp2(12799).ChevronSmallDownIcon;
+    ChevronSmallDownIcon = tmp2(12797).ChevronSmallDownIcon;
   }
   if (node.failed) {
     running = tmp.failed;

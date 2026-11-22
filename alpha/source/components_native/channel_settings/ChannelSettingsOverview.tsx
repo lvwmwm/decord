@@ -1,7 +1,7 @@
 // Module ID: 18923
 // Function ID: 18924
 // Name: ChannelSettingsOverview
-// Dependencies: [5, 19, 17, 4847, 4766, 4780, 11252, 4762, 4843, 4784, 4845, 6619, 18924, 4855, 1386, 18925, 1071, 4769, 8506, 1111, 1082, 21, 4913, 575, 504, 11671, 18926, 1112, 4974, 12, 18927, 5650, 7095, 8561, 11251, 5595, 7749, 7750, 4859, 1404, 4920, 7736, 5861, 5504, 7994, 5529, 5932, 6865, 12382, 18928, 6349, 5090, 18930, 7221, 7461, 1378, 7348, 7556, 6419, 14503, 18931, 10452, 4852, 7751, 18932, 18933, 7347, 7349, 4771, 4773, 2187, 5948, 7045, 6893, 7776, 11239, 11669, 5609, 4772, 18939, 14837, 13849, 18940, 11056, 8459, 5622, 10273, 7695, 13868, 5607, 5620, 5929, 11664, 7591, 9578, 7030, 17671, 7709, 1500, 2]
+// Dependencies: [5, 19, 17, 4847, 4766, 4780, 11252, 4762, 4843, 4784, 4845, 6619, 18924, 4855, 1386, 18925, 1071, 4769, 8506, 1111, 1082, 21, 4913, 575, 504, 11671, 18926, 1112, 4974, 12, 18927, 5650, 7095, 8561, 11251, 5595, 7749, 7750, 4859, 1404, 4920, 7736, 5861, 5504, 7994, 5529, 5932, 6865, 12389, 18928, 6349, 5090, 18930, 7221, 7461, 1378, 7348, 7556, 6419, 14501, 18931, 10452, 4852, 7751, 18932, 18933, 7347, 7349, 4771, 4773, 2187, 5948, 7045, 6893, 7776, 11239, 11669, 5609, 4772, 18939, 14835, 13847, 18940, 11056, 8459, 5622, 10273, 7695, 13866, 5607, 5620, 5929, 11664, 7591, 9578, 7030, 17671, 7709, 1500, 2]
 // Exports: default
 
 // Module 18923 (ChannelSettingsOverview)
@@ -48,8 +48,8 @@ import GroupPlusIcon from "GroupPlusIcon" /* 11056 */;
 import ChannelSettingsActionCreatorsDefault from "ChannelSettingsActionCreators" /* 11251 */;
 import AvailableForumTagDefault from "AvailableForumTag" /* 11664 */;
 import threadActionSheets from "threadActionSheets" /* 11669 */;
-import ChannelActionSheetUtils from "ChannelActionSheetUtils" /* 13868 */;
-import TableSliderRow2 from "TableSliderRow" /* 14503 */;
+import ChannelActionSheetUtils from "ChannelActionSheetUtils" /* 13866 */;
+import TableSliderRow2 from "TableSliderRow" /* 14501 */;
 import ChannelSettingsConstants from "ChannelSettingsConstants" /* 18925 */;
 import SecondsSliderUtils from "SecondsSliderUtils" /* 18926 */;
 import RegionActionCreatorsDefault from "RegionActionCreators" /* 18927 */;
@@ -891,7 +891,7 @@ class ChannelSettingsOverview extends PureComponent {
         const obj = { helperText: stringResult, hasIcons: false, children: closure_47(TableSliderRow, obj2) };
         const TableRowGroup = tmp8(7348).TableRowGroup;
         obj2 = { label: intl3.string(tmp8(1112).t.piZgKF), value: self._cooldown, minValue: 0, maxValue: length.length - 1, onChange: self.handleSlowmodeChange, formatValue: formatSlowmodeCooldown };
-        TableSliderRow = tmp8(14503).TableSliderRow;
+        TableSliderRow = tmp8(14501).TableSliderRow;
         intl3 = tmp8(1112).intl;
         push(closure_47(TableRowGroup, obj, "slowmode-section"));
         return items;
@@ -1233,7 +1233,7 @@ class ChannelSettingsOverview extends PureComponent {
         }
         const obj = { description: formatResult, hasIcons: false, children: closure_47(TableSliderRow, obj2) };
         obj2 = { label: intl2.string(intl9.t["/AoSGN"]), value: Math.min(channel.userLimit, tmp), minValue: 0, maxValue: tmp, onChange: this.handleUserLimitChange, formatValue: formatUserLimit };
-        TableSliderRow = tmp3(14503).TableSliderRow;
+        TableSliderRow = tmp3(14501).TableSliderRow;
         intl2 = tmp3(1112).intl;
         const _Math = Math;
         push(closure_47(TableRowGroup, obj, "channel-user-limit"));
@@ -1463,7 +1463,7 @@ class ChannelSettingsOverview extends PureComponent {
       if (channel.defaultForumLayout === self(4772).ForumLayout.GRID) {
         tmp2Result = tmp2(tmp3(18939).GridSquareIcon, {});
       } else {
-        tmp2Result = tmp2(tmp3(14837).ListViewIcon, {});
+        tmp2Result = tmp2(tmp3(14835).ListViewIcon, {});
       }
       tmp = tmp2(TableRowGroup, obj, "default-forum-layout");
     }

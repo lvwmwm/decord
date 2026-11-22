@@ -1,7 +1,7 @@
 // Module ID: 17673
 // Function ID: 17674
 // Name: GuildHeaderCoachmarks
-// Dependencies: [32, 19, 4845, 1071, 4759, 21, 504, 17674, 13404, 17681, 13397, 13398, 4746, 9080, 13394, 17682, 17683, 2]
+// Dependencies: [32, 19, 4845, 1071, 4759, 21, 504, 17674, 13402, 17681, 13395, 13396, 4746, 9080, 13392, 17682, 17683, 2]
 // Exports: default
 
 // Module 17673 (GuildHeaderCoachmarks)
@@ -32,11 +32,11 @@ export default function GuildHeaderCoachmarks(arg0) {
   const obj = guild(504);
   const stateFromStores = obj.useStateFromStores(items, () => PermissionStore.can(Permissions.MANAGE_GUILD, guild), items1);
   stateFromStores(17674)(guild.id);
-  const tmp6 = stateFromStores(13404)(guild.id);
+  const tmp6 = stateFromStores(13402)(guild.id);
   const tmp7 = stateFromStores(17681)();
-  const tmp8 = stateFromStores(13397)(guild.id);
+  const tmp8 = stateFromStores(13395)(guild.id);
   const items2 = [stateFromStores, guild.premiumProgressBarEnabled];
-  const tmp9 = stateFromStores(13398)();
+  const tmp9 = stateFromStores(13396)();
   const memo = react.useMemo(() => {
     const items = [];
     const tmp = stateFromStores && !guild.premiumProgressBarEnabled;
@@ -50,8 +50,8 @@ export default function GuildHeaderCoachmarks(arg0) {
   [tmp14, tmp15] = obj2.useSelectedDismissibleContent(memo, obj3);
   _slicedToArray(obj2.useSelectedDismissibleContent(memo, obj3), 2);
   let tmp17 = false === tmp6;
-  const useBoostToUnlockCoachmarkDCF = guild(13394).useBoostToUnlockCoachmarkDCF;
-  guild(13394);
+  const useBoostToUnlockCoachmarkDCF = guild(13392).useBoostToUnlockCoachmarkDCF;
+  guild(13392);
   const tmp11 = constants;
   const tmp12 = _slicedToArray;
   if (tmp17) {

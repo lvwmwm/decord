@@ -1,16 +1,16 @@
-// Module ID: 12387
-// Function ID: 12388
+// Module ID: 12394
+// Function ID: 12395
 // Name: conjureRemoveApp
-// Dependencies: [19, 2164, 6956, 4843, 4825, 4784, 4845, 4855, 1386, 6980, 6621, 1071, 6955, 5529, 504, 12, 6622, 6511, 1112, 4190, 12312, 2]
+// Dependencies: [19, 2164, 6956, 4843, 4825, 4784, 4845, 4855, 1386, 6980, 6621, 1071, 6955, 5529, 504, 12, 6622, 6511, 1112, 4190, 12319, 2]
 // Exports: conjureDeleteProjectBody, conjureDeleteProjectItems, conjureRemoveAppKeptChannels, conjureTitleWithAppTag, isPublishedConjureUserApp, readConjureOtherRemoveTargets, useConjureRemoveTarget, useIsPublishedConjureUserApp
 
-// Module 12387 (conjureRemoveApp)
+// Module 12394 (conjureRemoveApp)
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
 import _modDef4190 from "module_4190" /* 4190 */;
 import useChannelName from "useChannelName" /* 5529 */;
 import GuildActionCreatorsDefault from "GuildActionCreators" /* 6511 */;
-import ConjurePublishTypes from "ConjurePublishTypes" /* 12312 */;
+import ConjurePublishTypes from "ConjurePublishTypes" /* 12319 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 2164 */;
 import UserProfileStore from "UserProfileStore" /* 6956 */;

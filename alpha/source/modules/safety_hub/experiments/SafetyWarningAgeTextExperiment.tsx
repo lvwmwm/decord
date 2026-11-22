@@ -1,10 +1,10 @@
-// Module ID: 14346
-// Function ID: 14347
+// Module ID: 14344
+// Function ID: 14345
 // Name: SafetyWarningAgeTextExperiment
 // Dependencies: [1450, 2]
 // Exports: getIsSafetyWarningAgeTextEnabled, useIsSafetyWarningAgeTextEnabled
 
-// Module 14346 (SafetyWarningAgeTextExperiment)
+// Module 14344 (SafetyWarningAgeTextExperiment)
 import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 

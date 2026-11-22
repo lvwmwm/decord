@@ -1,12 +1,12 @@
 // Module ID: 18418
 // Function ID: 18419
 // Name: useConjureRemixNotice
-// Dependencies: [19, 6981, 504, 12293, 1112, 4190, 2]
+// Dependencies: [19, 6981, 504, 12300, 1112, 4190, 2]
 // Exports: default, useConjureRemixStartedAt
 
 // Module 18418 (useConjureRemixNotice)
 import _modDef4190 from "module_4190" /* 4190 */;
-import conjureRemixConnection from "conjureRemixConnection" /* 12293 */;
+import conjureRemixConnection from "conjureRemixConnection" /* 12300 */;
 import react from "react" /* 19 */;
 import ConjureRemixStore from "ConjureRemixStore" /* 6981 */;
 import size from "module_2" /* 2 */;

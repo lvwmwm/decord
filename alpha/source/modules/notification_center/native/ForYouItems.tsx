@@ -1,7 +1,7 @@
 // Module ID: 18055
 // Function ID: 18056
 // Name: ForYouItems
-// Dependencies: [5, 32, 19, 17, 4914, 2164, 4762, 4784, 1386, 18049, 1071, 6428, 21, 4913, 5504, 575, 5933, 18054, 1112, 1404, 8831, 8456, 11660, 11403, 11052, 504, 8236, 1186, 13540, 18056, 1500, 5628, 15061, 6637, 1255, 14280, 11336, 10550, 5595, 10573, 2119, 5127, 18057, 5620, 18051, 7550, 18058, 18059, 11, 7030, 18060, 6638, 14631, 1501, 4738, 5574, 18070, 18071, 18072, 18073, 18074, 18080, 674, 18081, 18082, 1254, 18053, 7597, 11767, 7490, 18083, 2]
+// Dependencies: [5, 32, 19, 17, 4914, 2164, 4762, 4784, 1386, 18049, 1071, 6428, 21, 4913, 5504, 575, 5933, 18054, 1112, 1404, 8831, 8456, 11660, 11403, 11052, 504, 8236, 1186, 13538, 18056, 1500, 5628, 15059, 6637, 1255, 14278, 11336, 10550, 5595, 10573, 2119, 5127, 18057, 5620, 18051, 7550, 18058, 18059, 11, 7030, 18060, 6638, 14629, 1501, 4738, 5574, 18070, 18071, 18072, 18073, 18074, 18080, 674, 18081, 18082, 1254, 18053, 7597, 11767, 7490, 18083, 2]
 
 // Module 18055 (ForYouItems)
 import nativeDefault from "native" /* 575 */;
@@ -14,8 +14,8 @@ import parseURLDefault from "parseURL" /* 5628 */;
 import CustomMarkupAll from "CustomMarkup" /* 5933 */;
 import PushNotificationConstants from "PushNotificationConstants" /* 6428 */;
 import NotificationCenterItemsTypes from "NotificationCenterItemsTypes" /* 6637 */;
-import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 13540 */;
-import handleSupportedURLDefault from "handleSupportedURL" /* 15061 */;
+import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 13538 */;
+import handleSupportedURLDefault from "handleSupportedURL" /* 15059 */;
 import NotificationCenterStoreActions from "NotificationCenterStoreActions" /* 18053 */;
 import ForYouMentionPlaceholder from "ForYouMentionPlaceholder" /* 18054 */;
 import ForYouReadSectionHeader from "ForYouReadSectionHeader" /* 18070 */;

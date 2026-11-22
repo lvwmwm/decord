@@ -1,12 +1,12 @@
 // Module ID: 19335
 // Function ID: 19336
 // Name: useConsoleConnectingInfo
-// Dependencies: [5655, 5656, 10853, 563, 19336, 13822, 19337, 19338, 2]
+// Dependencies: [5655, 5656, 10853, 563, 19336, 13820, 19337, 19338, 2]
 // Exports: default
 
 // Module 19335 (useConsoleConnectingInfo)
 import useVoiceStateForRemoteSessionDefault from "useVoiceStateForRemoteSession" /* 10853 */;
-import getConsoleIconDefault from "getConsoleIcon" /* 13822 */;
+import getConsoleIconDefault from "getConsoleIcon" /* 13820 */;
 import useShouldDisplayCancelConsoleTransferDefault from "useShouldDisplayCancelConsoleTransfer" /* 19336 */;
 import getConsoleColorDefault from "getConsoleColor" /* 19338 */;
 import GameConsoleStore from "GameConsoleStore" /* 5655 */;

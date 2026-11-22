@@ -1,10 +1,10 @@
-// Module ID: 12272
-// Function ID: 12273
+// Module ID: 12279
+// Function ID: 12280
 // Name: prefetchGameOrganizationAccountLinkState
 // Dependencies: [5, 2164, 6825, 11895, 11896, 6659, 7523, 7012, 2]
 // Exports: default
 
-// Module 12272 (prefetchGameOrganizationAccountLinkState)
+// Module 12279 (prefetchGameOrganizationAccountLinkState)
 import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6659 */;
 import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 6825 */;
 import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11896 */;

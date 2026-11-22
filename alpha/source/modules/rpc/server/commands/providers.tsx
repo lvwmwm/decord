@@ -1,9 +1,9 @@
-// Module ID: 15712
-// Function ID: 15713
+// Module ID: 15710
+// Function ID: 15711
 // Name: providers
 // Dependencies: [5, 6689, 6354, 1071, 2144, 1082, 7068, 6909, 10801, 10804, 6691, 572, 1107, 7024, 2]
 
-// Module 15712 (providers)
+// Module 15710 (providers)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1107 */;
 import RPCErrorDefault from "RPCError" /* 6909 */;

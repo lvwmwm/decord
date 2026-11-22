@@ -1,15 +1,15 @@
-// Module ID: 12283
-// Function ID: 12284
+// Module ID: 12290
+// Function ID: 12291
 // Name: ConjureSharedProjectCover
-// Dependencies: [19, 17, 21, 4913, 575, 5600, 12284, 5511, 7208, 1112, 4190, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 5600, 12291, 5511, 7208, 1112, 4190, 2]
 // Exports: default
 
-// Module 12283 (ConjureSharedProjectCover)
+// Module 12290 (ConjureSharedProjectCover)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import components_Button_Button from "components/Button/Button" /* 5511 */;
 import FastImageDefault from "FastImage" /* 5600 */;
-import ConjureAppSheetIconDefault from "ConjureAppSheetIcon" /* 12284 */;
+import ConjureAppSheetIconDefault from "ConjureAppSheetIcon" /* 12291 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4913 */;

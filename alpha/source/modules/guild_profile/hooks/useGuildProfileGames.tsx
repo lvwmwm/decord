@@ -1,10 +1,10 @@
-// Module ID: 13807
-// Function ID: 13808
+// Module ID: 13805
+// Function ID: 13806
 // Name: useGuildProfileGames
 // Dependencies: [19, 2141, 2140, 502, 504, 9053, 1254, 2]
 // Exports: default, useAllGuildProfileGames
 
-// Module 13807 (useGuildProfileGames)
+// Module 13805 (useGuildProfileGames)
 import GlobalUtils from "GlobalUtils" /* 1254 */;
 import react from "react" /* 19 */;
 import GameRecord from "GameRecord" /* 2141 */;
@@ -15,7 +15,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, dependencyMap, game, map, set;
 
-const f104904 = () => authenticated.isAuthenticated();
+const f104913 = () => authenticated.isAuthenticated();
 let result = size.fileFinishedImporting("modules/guild_profile/hooks/useGuildProfileGames.tsx");
 
 export default function useGuildProfileGames(gameActivity) {
@@ -33,7 +33,7 @@ export default function useGuildProfileGames(gameActivity) {
   const tmp2 = dependencyMap;
   let items = [AuthenticationStore];
   const obj = require("get initialized");
-  const stateFromStores = obj.useStateFromStores(items, f104904);
+  const stateFromStores = obj.useStateFromStores(items, f104913);
   require("useGame");
   if (null != games) {
     let items1;
@@ -125,7 +125,7 @@ export function useAllGuildProfileGames(profile) {
   const games = profile.games;
   const items = [AuthenticationStore];
   const obj = require("get initialized");
-  const stateFromStores = obj.useStateFromStores(items, f104904);
+  const stateFromStores = obj.useStateFromStores(items, f104913);
   require("useGame");
   const tmp = _require;
   if (null != games) {

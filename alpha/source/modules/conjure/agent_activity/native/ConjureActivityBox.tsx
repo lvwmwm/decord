@@ -1,7 +1,7 @@
 // Module ID: 18503
 // Function ID: 18504
 // Name: ConjureActivityBox
-// Dependencies: [32, 19, 17, 1071, 21, 4913, 18468, 575, 18504, 18425, 12321, 1112, 4190, 18459, 18550, 5504, 18276, 7763, 18551, 2]
+// Dependencies: [32, 19, 17, 1071, 21, 4913, 18468, 575, 18504, 18425, 12328, 1112, 4190, 18459, 18550, 5504, 18276, 7763, 18551, 2]
 // Exports: default, stretchOf
 
 // Module 18503 (ConjureActivityBox)
@@ -262,7 +262,7 @@ function TimelineRow(inGutter) {
   if (null != node.durationMs) {
     let obj3 = { variant: "body-xs/normal", color: "text-subtle", children: tmp8Result.describeDuration(node.durationMs) };
     let Text = tmp8(5504).Text;
-    tmp8Result = tmp8(12321);
+    tmp8Result = tmp8(12328);
     tmp4Result = tmp4(Text, obj3);
   }
   const children = [tmp4(tmp7, obj), , ];

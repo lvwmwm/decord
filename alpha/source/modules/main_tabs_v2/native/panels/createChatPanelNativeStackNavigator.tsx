@@ -1,7 +1,7 @@
 // Module ID: 17444
 // Function ID: 17445
 // Name: createChatPanelNativeStackNavigator
-// Dependencies: [19, 21, 1501, 5089, 15284, 8638, 2]
+// Dependencies: [19, 21, 1501, 5089, 15282, 8638, 2]
 // Exports: default
 
 // Module 17444 (createChatPanelNativeStackNavigator)

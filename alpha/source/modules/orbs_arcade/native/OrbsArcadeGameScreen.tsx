@@ -1,7 +1,7 @@
 // Module ID: 19033
 // Function ID: 19034
 // Name: OrbsArcadeGameScreen
-// Dependencies: [19, 17, 6623, 16423, 1071, 5539, 19034, 6624, 21, 4913, 575, 16424, 16434, 1628, 504, 1501, 18399, 6953, 16433, 4974, 10830, 18402, 15756, 19035, 19036, 2]
+// Dependencies: [19, 17, 6623, 16421, 1071, 5539, 19034, 6624, 21, 4913, 575, 16422, 16432, 1628, 504, 1501, 18399, 6953, 16431, 4974, 10830, 18402, 15754, 19035, 19036, 2]
 // Exports: default
 
 // Module 19033 (OrbsArcadeGameScreen)
@@ -14,7 +14,7 @@ import leaveFrame from "leaveFrame" /* 6953 */;
 import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 19034 */;
 import react from "react" /* 19 */;
 import FramesStore from "FramesStore" /* 6623 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 16423 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 16421 */;
 import FramesConstants from "FramesConstants" /* 6624 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;

@@ -1,7 +1,7 @@
 // Module ID: 9748
 // Function ID: 9749
 // Name: GuildProfileView
-// Dependencies: [19, 17, 4784, 1071, 21, 4935, 4974, 4913, 575, 504, 4776, 1494, 1412, 9749, 5600, 5122, 5477, 9750, 5468, 9751, 5504, 9764, 13809, 2]
+// Dependencies: [19, 17, 4784, 1071, 21, 4935, 4974, 4913, 575, 504, 4776, 1494, 1412, 9749, 5600, 5122, 5477, 9750, 5468, 9751, 5504, 9764, 13807, 2]
 // Exports: default, getBackgroundForProfile
 
 // Module 9748 (GuildProfileView)
@@ -21,7 +21,7 @@ import getDevicePixelRatioDefault from "getDevicePixelRatio" /* 9749 */;
 import guild_profile_GuildProfileUtils from "guild_profile/GuildProfileUtils" /* 9750 */;
 import GuildProfileHeaderDefault from "GuildProfileHeader" /* 9751 */;
 import GuildProfileGamesDefault from "GuildProfileGames" /* 9764 */;
-import GuildProfileTraitsDefault from "GuildProfileTraits" /* 13809 */;
+import GuildProfileTraitsDefault from "GuildProfileTraits" /* 13807 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4784 */;
 import Fragment from "Fragment" /* 21 */;

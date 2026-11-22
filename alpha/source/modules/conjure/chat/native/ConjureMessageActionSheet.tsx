@@ -1,7 +1,7 @@
 // Module ID: 18473
 // Function ID: 18474
 // Name: ConjureMessageActionSheet
-// Dependencies: [19, 21, 8067, 5127, 7545, 5595, 1112, 5613, 7553, 7555, 4190, 18474, 7151, 12354, 16489, 17187, 2]
+// Dependencies: [19, 21, 8067, 5127, 7545, 5595, 1112, 5613, 7553, 7555, 4190, 18474, 7151, 12361, 16487, 17187, 2]
 // Exports: openMessageAuthorProfile, showConjureMessageActions
 
 // Module 18473 (ConjureMessageActionSheet)

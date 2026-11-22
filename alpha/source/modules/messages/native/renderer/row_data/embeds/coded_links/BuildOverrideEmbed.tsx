@@ -1,10 +1,10 @@
-// Module ID: 14310
-// Function ID: 14311
+// Module ID: 14308
+// Function ID: 14309
 // Name: BuildOverrideEmbed
-// Dependencies: [17, 11894, 8438, 8680, 12220, 14311, 1377, 1112, 8673, 575, 4920, 12326, 12327, 14309, 2]
+// Dependencies: [17, 11894, 8438, 8680, 12227, 14309, 1377, 1112, 8673, 575, 4920, 12333, 12334, 14307, 2]
 // Exports: createBuildOverrideEmbed
 
-// Module 14310 (BuildOverrideEmbed)
+// Module 14308 (BuildOverrideEmbed)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl6 from "intl" /* 1112 */;
@@ -14,9 +14,9 @@ import Constants from "Constants" /* 8438 */;
 import react_native2 from "react-native" /* 8673 */;
 import getEmbedThemeColorsDefault from "getEmbedThemeColors" /* 8680 */;
 import BuildOverrideStore2 from "BuildOverrideStore" /* 11894 */;
-import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 12220 */;
-import AssetRegistryDefault from "AssetRegistry" /* 14309 */;
-import validateBuildOverrideDefault from "validateBuildOverride" /* 14311 */;
+import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 12227 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14307 */;
+import validateBuildOverrideDefault from "validateBuildOverride" /* 14309 */;
 import size from "module_2" /* 2 */;
 
 const BuildOverrideStore = BuildOverrideStore2;
@@ -142,9 +142,9 @@ export function createBuildOverrideEmbed(code, arg1) {
     resolveAssetSource = Image.resolveAssetSource;
     const tmp20Result = shared;
     if (tmp20Result.isThemeDark(arg1)) {
-      tmpResult2 = tmp(12326);
+      tmpResult2 = tmp(12333);
     } else {
-      tmpResult2 = tmp(12327);
+      tmpResult2 = tmp(12334);
     }
   }
 }

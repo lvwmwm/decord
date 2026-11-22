@@ -1,10 +1,10 @@
-// Module ID: 13399
-// Function ID: 13400
+// Module ID: 13397
+// Function ID: 13398
 // Name: useFeaturedExpiringPowerup
-// Dependencies: [19, 8750, 8331, 504, 13400, 8087, 2]
+// Dependencies: [19, 8750, 8331, 504, 13398, 8087, 2]
 // Exports: default
 
-// Module 13399 (useFeaturedExpiringPowerup)
+// Module 13397 (useFeaturedExpiringPowerup)
 import CollectiblesUtils from "CollectiblesUtils" /* 8087 */;
 import react from "react" /* 19 */;
 import GameServerStore from "GameServerStore" /* 8750 */;

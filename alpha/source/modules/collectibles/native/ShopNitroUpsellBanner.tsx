@@ -1,7 +1,7 @@
 // Module ID: 17288
 // Function ID: 17289
 // Name: ShopNitroUpsellBanner
-// Dependencies: [19, 21, 4913, 575, 671, 5477, 5127, 14227, 2119, 7539, 1112, 7047, 5468, 1091, 1186, 7151, 5929, 5504, 17284, 5511, 10952, 2]
+// Dependencies: [19, 21, 4913, 575, 671, 5477, 5127, 14225, 2119, 7539, 1112, 7047, 5468, 1091, 1186, 7151, 5929, 5504, 17284, 5511, 10952, 2]
 
 // Module 17288 (ShopNitroUpsellBanner)
 import nativeDefault from "native" /* 575 */;

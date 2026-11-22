@@ -1,10 +1,10 @@
-// Module ID: 16989
-// Function ID: 16990
+// Module ID: 16987
+// Function ID: 16988
 // Name: CacheActionsDiskUsageSection
-// Dependencies: [5, 32, 19, 21, 4913, 575, 16990, 4791, 4922, 1112, 5929, 5504, 6355, 1378, 7047, 16992, 2]
+// Dependencies: [5, 32, 19, 21, 4913, 575, 16988, 4791, 4922, 1112, 5929, 5504, 6355, 1378, 7047, 16990, 2]
 // Exports: default, useDiskUsageMeasurement
 
-// Module 16989 (CacheActionsDiskUsageSection)
+// Module 16987 (CacheActionsDiskUsageSection)
 import nativeDefault from "native" /* 575 */;
 import intl24 from "intl" /* 1112 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
@@ -12,7 +12,7 @@ import Text_Text from "Text/Text" /* 5504 */;
 import Stack_Stack from "Stack/Stack" /* 5929 */;
 import FileSizeUtils from "FileSizeUtils" /* 6355 */;
 import Card_Card from "Card/Card" /* 7047 */;
-import CacheActionsStorageDiagnosticsDefault from "CacheActionsStorageDiagnostics" /* 16992 */;
+import CacheActionsStorageDiagnosticsDefault from "CacheActionsStorageDiagnostics" /* 16990 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

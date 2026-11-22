@@ -1,7 +1,7 @@
 // Module ID: 12123
 // Function ID: 12124
 // Name: LongPressMessageActionSheet
-// Dependencies: [5, 32, 19, 8675, 12124, 11684, 4856, 502, 4784, 4845, 4918, 1071, 21, 7520, 7539, 5650, 12122, 8713, 10136, 504, 6893, 10152, 12125, 5990, 6340, 5477, 575, 12126, 4738, 6891, 12128, 5968, 1404, 12129, 10630, 12130, 7555, 12131, 7553, 1625, 12157, 12158, 1112, 10343, 5613, 5620, 5609, 11242, 12162, 10077, 7674, 10141, 11235, 12164, 9489, 7694, 11671, 12166, 12168, 12170, 11692, 5622, 12172, 7672, 7690, 5615, 7020, 3440, 10137, 10378, 11892, 10269, 9604, 2958, 7682, 11248, 10175, 12174, 5953, 8224, 8456, 10545, 2]
+// Dependencies: [5, 32, 19, 8675, 12124, 11684, 4856, 502, 4784, 4845, 4918, 1071, 21, 7520, 7539, 5650, 12122, 8713, 10136, 504, 6893, 10152, 12125, 5990, 6340, 5477, 575, 12126, 12133, 4738, 6891, 12135, 5968, 1404, 12136, 10630, 12137, 7555, 12138, 7553, 1625, 12164, 12165, 1112, 10343, 5613, 5620, 5609, 11242, 12169, 10077, 7674, 10141, 11235, 12171, 9489, 7694, 11671, 12173, 12175, 12177, 11692, 5622, 12179, 7672, 7690, 5615, 7020, 3440, 10137, 10378, 11892, 10269, 9604, 2958, 7682, 11248, 10175, 12181, 5953, 8224, 8456, 10545, 2]
 // Exports: default
 
 // Module 12123 (LongPressMessageActionSheet)
@@ -14,9 +14,9 @@ import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5650 */;
 import useAnalyticsLocations from "useAnalyticsLocations" /* 7520 */;
 import ActionSheet2 from "ActionSheet" /* 7553 */;
 import showLongPressMessageActionSheet from "showLongPressMessageActionSheet" /* 12122 */;
-import LongPressMessageActionSheetUtils from "LongPressMessageActionSheetUtils" /* 12131 */;
-import EmojiRowUtils from "EmojiRowUtils" /* 12157 */;
-import EmojiRowDefault from "EmojiRow" /* 12158 */;
+import LongPressMessageActionSheetUtils from "LongPressMessageActionSheetUtils" /* 12138 */;
+import EmojiRowUtils from "EmojiRowUtils" /* 12164 */;
+import EmojiRowDefault from "EmojiRow" /* 12165 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -113,10 +113,10 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
   let tmp15;
   let tmp27;
   let user;
-  const f101540 = (flags) => {
+  const f101549 = (flags) => {
     let tmp = null == flags.flags;
     if (!tmp) {
-      obj = analyticsLocation(analyticsLocation[32]);
+      obj = analyticsLocation(analyticsLocation[33]);
       tmp = !obj.hasFlag(flags.flags, props8.IS_THUMBNAIL);
     }
     return tmp;
@@ -128,12 +128,12 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
       if (c2 === 2) {
         c2 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp2 === 3) {
+      } else if (tmp3 === 3) {
         if (arg0 === 1) {
           throw value;
         } else if (arg0 === 2) {
-          const obj3 = { value, done: true };
-          return obj3;
+          const obj4 = { value, done: true };
+          return obj4;
         } else {
           return { value: "HermesInternal", done: null };
         }
@@ -146,15 +146,17 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
               throw value;
             } else if (arg0 === 2) {
               c2 = 3;
-              const obj4 = { value, done: true };
-              return obj4;
+              const obj5 = { value, done: true };
+              return obj5;
             } else if (null != checkpoint2026CharacterFromMessage) {
+              const obj2 = tmp(c2[27]);
+              const result = obj2.trackCheckpoint2026CharacterSaveClicked();
               GuildStore(true);
               c1 = 1;
-              const obj2 = tmp3(c2[27]);
+              const obj3 = tmp(c2[28]);
               c2 = 1;
-              const obj5 = { value: obj2.saveCheckpointCharacterImage(tmp7), done: false };
-              return obj5;
+              const obj6 = { value: obj3.saveCheckpointCharacterImage(tmp17), done: false };
+              return obj6;
             }
           } else if (arg0 === 1) {
             c2 = 3;
@@ -177,7 +179,6 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
     return obj(...arguments);
   };
   let tmp = analyticsLocations;
-  const tmp2 = analyticsLocation;
   let tmp3 = analyticsLocation;
   const tmp4 = analyticsLocations(analyticsLocation[13]);
   analyticsLocations = tmp4(analyticsLocations(analyticsLocation[14]).MESSAGE_LONG_PRESS_MENU).analyticsLocations;
@@ -213,7 +214,6 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
     obj = showLongPressMessageActionSheet;
     const result = obj.showLongPressMessageActionSheet(analyticsLocation);
   }, items1);
-  const tmp7 = _require;
   const tmp8 = _require;
   let obj3 = require("canReplyToMessage");
   const canReplyToMessage = obj3.useCanReplyToMessage(channel, message);
@@ -227,7 +227,7 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
     return items;
   }), 2);
   [tmp14, tmp15] = tmp13;
-  const obj6 = require("ThreadHooks");
+  let obj6 = require("ThreadHooks");
   const isNonModInLockedThread = obj6.useIsNonModInLockedThread(channel);
   let id1;
   const tmpResult = tmp(tmp3[21]);
@@ -256,16 +256,16 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
     isNonUserBotResult = user.isNonUserBot();
   }
   const id3 = checkpoint2026CharacterFromMessage.getId();
-  const DeveloperMode = tmp8(tmp3[28]).DeveloperMode;
+  const DeveloperMode = tmp8(tmp3[29]).DeveloperMode;
   const setting = DeveloperMode.getSetting();
   const canResult = obj.can(props15.MANAGE_MESSAGES, channel);
   const canResult1 = obj.can(props15.SEND_MESSAGES, channel);
-  const tmp8Result21 = tmp8(tmp3[29]);
+  const tmp8Result21 = tmp8(tmp3[30]);
   const canToggleGuildOfficialMessages = tmp8Result21.useCanToggleGuildOfficialMessages(message, channel, "LongPressMessageActionSheet");
   const id = message.author.id;
   let hasFlagResult = message.hasFlag(props11.CROSSPOSTED);
   let tmp39 = !hasFlagResult;
-  const tmp38 = tmp(tmp3[30])(message, channel);
+  const tmp38 = tmp(tmp3[31])(message, channel);
   if (!hasFlagResult) {
     tmp39 = channel.type === props2.GUILD_ANNOUNCEMENT;
   }
@@ -293,7 +293,7 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
   const canStartPublicThread = tmp8Result22.computeCanStartPublicThread(channel, message);
   const contentMessage = message.getContentMessage();
   if (isMessageComponentsV2(contentMessage)) {
-    const tmp8Result23 = tmp8(tmp3[31]);
+    const tmp8Result23 = tmp8(tmp3[32]);
     allTextDisplayContent = tmp8Result23.getAllTextDisplayContent(contentMessage.components);
   } else {
     allTextDisplayContent = contentMessage.content;
@@ -306,17 +306,17 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
     tmp49 = message.author.id !== props4;
   }
   if (tmp49) {
-    const tmp8Result24 = tmp8(tmp3[32]);
+    const tmp8Result24 = tmp8(tmp3[33]);
     tmp49 = !tmp8Result24.hasFlag(message.flags, tmp36.EPHEMERAL);
   }
   if (tmp49) {
-    tmp49 = tmp(tmp3[33])(message) >= 1;
+    tmp49 = tmp(tmp3[34])(message) >= 1;
   }
   let tmp54 = !tmp20 && interactionError !== EXPLICIT_CONTENT;
   if (tmp54) {
     let result1 = null == message.interactionData;
     if (!result1) {
-      const tmp8Result25 = tmp8(tmp3[34]);
+      const tmp8Result25 = tmp8(tmp3[35]);
       result1 = tmp8Result25.canRetryInteractionData(message.interactionData);
     }
     tmp54 = result1;
@@ -324,13 +324,13 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
   const attachments1 = message.attachments;
   let tmp58 = message.author.id === id3;
   if (tmp58) {
-    tmp58 = attachments1.filter(f101540).length > 1 || "" !== message.content;
-    const tmp59 = attachments1.filter(f101540).length > 1 || "" !== message.content;
+    tmp58 = attachments1.filter(f101549).length > 1 || "" !== message.content;
+    const tmp59 = attachments1.filter(f101549).length > 1 || "" !== message.content;
   }
   const items3 = [actionSheetSource];
   const tmp8Result26 = tmp8(tmp3[19]);
   const stateFromStores = tmp8Result26.useStateFromStores(items3, () => ReportToModStore.hasReportedMessage(message.channel_id, message.id));
-  tmp8(tmp3[35]);
+  tmp8(tmp3[36]);
   if (guild != null) {
     const id2 = guild.id;
   }
@@ -344,7 +344,7 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
     ({ onActionExecuted: analyticsLocations, disabled } = arrow);
     obj = {
       arrow: arrow.arrow,
-      icon: props16(analyticsLocation(analyticsLocation[36]).ActionSheetRow.Icon, { IconComponent }),
+      icon: props16(analyticsLocation(analyticsLocation[37]).ActionSheetRow.Icon, { IconComponent }),
       label,
       onPress() {
         obj = { actionSheetSource, analyticsLocations, channel, chatInputRef: react, label, message, onBack, onActionExecuted: analyticsLocations, selectedMedia, disabled };
@@ -384,10 +384,10 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
             let onPress;
             let variant;
             ({ icon, arrow, label, onPress, variant, disabled } = item);
-            return closure_1_25(closure_1_0(closure_1_2[36]).ActionSheetRow, { icon, arrow, label, onPress, variant, disabled }, index);
+            return closure_1_25(closure_1_0(closure_1_2[37]).ActionSheetRow, { icon, arrow, label, onPress, variant, disabled }, index);
           })
         };
-        const Group = closure_1_0(closure_1_2[36]).ActionSheetRow.Group;
+        const Group = closure_1_0(closure_1_2[37]).ActionSheetRow.Group;
         return props16(Group, obj, index);
       });
     }
@@ -396,9 +396,9 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
   if (message.state === props12.SEND_FAILED) {
     const items4 = [];
     if (tmp54) {
-      obj = { label: intl21.string(tmp8(tmp3[42]).t["5911Lb"]), IconComponent: tmp8(tmp3[43]).RetryIcon };
+      obj = { label: intl21.string(tmp8(tmp3[43]).t["5911Lb"]), IconComponent: tmp8(tmp3[44]).RetryIcon };
       const push3 = items4.push;
-      intl21 = tmp8(tmp3[42]).intl;
+      intl21 = tmp8(tmp3[43]).intl;
       push3(getProps(obj));
     }
     let tmp204 = null != allTextDisplayContent;
@@ -407,13 +407,13 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
     }
     if (tmp204) {
       const push4 = items4.push;
-      const obj7 = { label: intl22.string(tmp8(tmp3[42]).t.JrGD7E), IconComponent: tmp8(tmp3[44]).CopyIcon };
-      intl22 = tmp8(tmp3[42]).intl;
+      const obj7 = { label: intl22.string(tmp8(tmp3[43]).t.JrGD7E), IconComponent: tmp8(tmp3[45]).CopyIcon };
+      intl22 = tmp8(tmp3[43]).intl;
       push4(getProps(obj7));
     }
     const push5 = items4.push;
-    const obj8 = { label: intl23.string(tmp7(tmp2[42]).t.xwMqD7), IconComponent: tmp7(tmp2[45]).TrashIcon, variant: "danger" };
-    intl23 = tmp7(tmp2[42]).intl;
+    const obj8 = { label: intl23.string(require("intl").t.xwMqD7), IconComponent: require("TrashIcon").TrashIcon, variant: "danger" };
+    intl23 = tmp7(tmp2[43]).intl;
     push5(getProps(obj8));
     const items5 = [items4];
     return render(items5);
@@ -425,122 +425,122 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
     const items6 = [];
     if (tmp194) {
       const push = items6.push;
-      const obj9 = { label: intl19.string(tmp8(tmp3[42]).t.JrGD7E), IconComponent: tmp8(tmp3[44]).CopyIcon };
-      intl19 = tmp8(tmp3[42]).intl;
+      const obj9 = { label: intl19.string(tmp8(tmp3[43]).t.JrGD7E), IconComponent: tmp8(tmp3[45]).CopyIcon };
+      intl19 = tmp8(tmp3[43]).intl;
       push(getProps(obj9));
     }
     const push2 = items6.push;
-    const obj10 = { label: intl20.string(tmp8(tmp3[42]).t.xwMqD7), IconComponent: tmp8(tmp3[45]).TrashIcon, variant: "danger" };
-    intl20 = tmp8(tmp3[42]).intl;
+    const obj10 = { label: intl20.string(tmp8(tmp3[43]).t.xwMqD7), IconComponent: tmp8(tmp3[46]).TrashIcon, variant: "danger" };
+    intl20 = tmp8(tmp3[43]).intl;
     push2(getProps(obj10));
     const items7 = [items6];
     return render(items7);
   } else if (message.type === props13.THREAD_STARTER_MESSAGE) {
-    const obj12 = { label: intl18.string(tmp8(tmp3[42]).t.k5WiPf), IconComponent: tmp8(tmp3[46]).LinkIcon };
-    intl18 = tmp8(tmp3[42]).intl;
+    const obj12 = { label: intl18.string(tmp8(tmp3[43]).t.k5WiPf), IconComponent: tmp8(tmp3[47]).LinkIcon };
+    intl18 = tmp8(tmp3[43]).intl;
     const items8 = [getProps(obj12)];
     const items9 = [items8];
     return render(items9);
   } else {
     let tmp236Result;
     let stringResult;
-    const obj13 = { label: intl24.string(tmp8(tmp3[42]).t.fsBWmS), IconComponent: tmp8(tmp3[47]).PencilIcon };
-    intl24 = tmp8(tmp3[42]).intl;
+    const obj13 = { label: intl24.string(tmp8(tmp3[43]).t.fsBWmS), IconComponent: tmp8(tmp3[48]).PencilIcon };
+    intl24 = tmp8(tmp3[43]).intl;
     const props = getProps(obj13);
-    const obj14 = { label: intl25.string(tmp8(tmp3[42]).t.Y8ujqr), IconComponent: tmp8(tmp3[47]).PencilIcon };
-    intl25 = tmp8(tmp3[42]).intl;
+    const obj14 = { label: intl25.string(tmp8(tmp3[43]).t.Y8ujqr), IconComponent: tmp8(tmp3[48]).PencilIcon };
+    intl25 = tmp8(tmp3[43]).intl;
     const props1 = getProps(obj14);
-    const obj15 = { label: intl26.string(tmp8(tmp3[42]).t["5IEsGx"]), IconComponent: tmp8(tmp3[48]).ArrowAngleLeftUpIcon };
-    intl26 = tmp8(tmp3[42]).intl;
+    const obj15 = { label: intl26.string(tmp8(tmp3[43]).t["5IEsGx"]), IconComponent: tmp8(tmp3[49]).ArrowAngleLeftUpIcon };
+    intl26 = tmp8(tmp3[43]).intl;
     props2 = getProps(obj15);
-    const obj16 = { label: intl27.string(tmp8(tmp3[42]).t.I3ltXO), IconComponent: tmp(tmp3[49]) };
-    intl27 = tmp8(tmp3[42]).intl;
+    const obj16 = { label: intl27.string(tmp8(tmp3[43]).t.I3ltXO), IconComponent: tmp(tmp3[50]) };
+    intl27 = tmp8(tmp3[43]).intl;
     props3 = getProps(obj16);
-    const obj17 = { label: intl28.string(tmp8(tmp3[42]).t.rBIGBL), IconComponent: tmp8(tmp3[50]).ThreadIcon };
-    intl28 = tmp8(tmp3[42]).intl;
+    const obj17 = { label: intl28.string(tmp8(tmp3[43]).t.rBIGBL), IconComponent: tmp8(tmp3[51]).ThreadIcon };
+    intl28 = tmp8(tmp3[43]).intl;
     props4 = getProps(obj17);
-    const obj18 = { label: intl29.string(tmp8(tmp3[42]).t["39d0Wj"]), IconComponent: tmp8(tmp3[50]).ThreadIcon };
-    intl29 = tmp8(tmp3[42]).intl;
+    const obj18 = { label: intl29.string(tmp8(tmp3[43]).t["39d0Wj"]), IconComponent: tmp8(tmp3[51]).ThreadIcon };
+    intl29 = tmp8(tmp3[43]).intl;
     const props5 = getProps(obj18);
-    const obj19 = { label: intl30.string(tmp8(tmp3[42]).t["+TSRGD"]), IconComponent: tmp8(tmp3[51]).ChatArrowRightIcon };
-    intl30 = tmp8(tmp3[42]).intl;
+    const obj19 = { label: intl30.string(tmp8(tmp3[43]).t["+TSRGD"]), IconComponent: tmp8(tmp3[52]).ChatArrowRightIcon };
+    intl30 = tmp8(tmp3[43]).intl;
     const props6 = getProps(obj19);
-    const obj20 = { label: intl31.string(tmp8(tmp3[42]).t.JrGD7E), IconComponent: tmp8(tmp3[44]).CopyIcon };
-    intl31 = tmp8(tmp3[42]).intl;
+    const obj20 = { label: intl31.string(tmp8(tmp3[43]).t.JrGD7E), IconComponent: tmp8(tmp3[45]).CopyIcon };
+    intl31 = tmp8(tmp3[43]).intl;
     const props7 = getProps(obj20);
-    const obj21 = { label: intl32.string(tmp8(tmp3[42]).t.RpE9k7), IconComponent: tmp8(tmp3[52]).ChatMarkUnreadIcon };
-    intl32 = tmp8(tmp3[42]).intl;
+    const obj21 = { label: intl32.string(tmp8(tmp3[43]).t.RpE9k7), IconComponent: tmp8(tmp3[53]).ChatMarkUnreadIcon };
+    intl32 = tmp8(tmp3[43]).intl;
     const props8 = getProps(obj21);
-    const obj22 = { label: intl33.string(tmp8(tmp3[42]).t.grdwwt), IconComponent: tmp8(tmp3[53]).ClockXIcon };
-    intl33 = tmp8(tmp3[42]).intl;
+    const obj22 = { label: intl33.string(tmp8(tmp3[43]).t.grdwwt), IconComponent: tmp8(tmp3[54]).ClockXIcon };
+    intl33 = tmp8(tmp3[43]).intl;
     const props9 = getProps(obj22);
-    const obj23 = { label: intl34.string(tmp8(tmp3[42]).t.gHp0C4), IconComponent: tmp8(tmp3[54]).ReactionIcon };
-    intl34 = tmp8(tmp3[42]).intl;
+    const obj23 = { label: intl34.string(tmp8(tmp3[43]).t.gHp0C4), IconComponent: tmp8(tmp3[55]).ReactionIcon };
+    intl34 = tmp8(tmp3[43]).intl;
     const props10 = getProps(obj23);
-    const obj25 = { label: intl35.string(tmp8(tmp3[42]).t.MFGE51), IconComponent: tmp8(tmp3[55]).AnnouncementsIcon };
-    intl35 = tmp8(tmp3[42]).intl;
+    const obj25 = { label: intl35.string(tmp8(tmp3[43]).t.MFGE51), IconComponent: tmp8(tmp3[56]).AnnouncementsIcon };
+    intl35 = tmp8(tmp3[43]).intl;
     props11 = getProps(obj25);
-    const obj26 = { label: intl36.string(tmp8(tmp3[42]).t.CvQ18w), IconComponent: tmp8(tmp3[56]).PinIcon };
-    intl36 = tmp8(tmp3[42]).intl;
+    const obj26 = { label: intl36.string(tmp8(tmp3[43]).t.CvQ18w), IconComponent: tmp8(tmp3[57]).PinIcon };
+    intl36 = tmp8(tmp3[43]).intl;
     props12 = getProps(obj26);
-    const obj27 = { label: intl37.string(tmp8(tmp3[42]).t["Bse+F/"]), IconComponent: tmp8(tmp3[56]).PinIcon };
-    intl37 = tmp8(tmp3[42]).intl;
+    const obj27 = { label: intl37.string(tmp8(tmp3[43]).t["Bse+F/"]), IconComponent: tmp8(tmp3[57]).PinIcon };
+    intl37 = tmp8(tmp3[43]).intl;
     props13 = getProps(obj27);
-    const obj28 = { label: intl38.string(tmp8(tmp3[42]).t["lE/PG3"]), IconComponent: tmp8(tmp3[57]).StampIcon };
-    intl38 = tmp8(tmp3[42]).intl;
+    const obj28 = { label: intl38.string(tmp8(tmp3[43]).t["lE/PG3"]), IconComponent: tmp8(tmp3[58]).StampIcon };
+    intl38 = tmp8(tmp3[43]).intl;
     const props14 = getProps(obj28);
-    const obj29 = { label: intl39.string(tmp8(tmp3[42]).t["2km5Gf"]), IconComponent: tmp8(tmp3[58]).StampXIcon };
-    intl39 = tmp8(tmp3[42]).intl;
+    const obj29 = { label: intl39.string(tmp8(tmp3[43]).t["2km5Gf"]), IconComponent: tmp8(tmp3[59]).StampXIcon };
+    intl39 = tmp8(tmp3[43]).intl;
     props15 = getProps(obj29);
-    const obj30 = { label: intl40.string(tmp8(tmp3[42]).t.tpxJto), IconComponent: tmp8(tmp3[59]).BookmarkOutlineIcon };
-    intl40 = tmp8(tmp3[42]).intl;
+    const obj30 = { label: intl40.string(tmp8(tmp3[43]).t.tpxJto), IconComponent: tmp8(tmp3[60]).BookmarkOutlineIcon };
+    intl40 = tmp8(tmp3[43]).intl;
     const props16 = getProps(obj30);
-    const obj31 = { label: intl41.string(tmp8(tmp3[42]).t.SvXS1Z), IconComponent: tmp8(tmp3[60]).BookmarkIcon };
-    intl41 = tmp8(tmp3[42]).intl;
+    const obj31 = { label: intl41.string(tmp8(tmp3[43]).t.SvXS1Z), IconComponent: tmp8(tmp3[61]).BookmarkIcon };
+    intl41 = tmp8(tmp3[43]).intl;
     const props17 = getProps(obj31);
-    const obj32 = { label: intl42.string(tmp8(tmp3[42]).t.mJ3P0N), IconComponent: tmp8(tmp3[61]).ClockIcon, arrow: true };
-    intl42 = tmp8(tmp3[42]).intl;
+    const obj32 = { label: intl42.string(tmp8(tmp3[43]).t.mJ3P0N), IconComponent: tmp8(tmp3[62]).ClockIcon, arrow: true };
+    intl42 = tmp8(tmp3[43]).intl;
     const props18 = getProps(obj32);
-    const obj33 = { label: intl43.string(tmp8(tmp3[42]).t.vrbqs1), IconComponent: tmp8(tmp3[61]).ClockIcon, arrow: true };
-    intl43 = tmp8(tmp3[42]).intl;
+    const obj33 = { label: intl43.string(tmp8(tmp3[43]).t.vrbqs1), IconComponent: tmp8(tmp3[62]).ClockIcon, arrow: true };
+    intl43 = tmp8(tmp3[43]).intl;
     const props19 = getProps(obj33);
-    const obj34 = { label: intl44.string(tmp8(tmp3[42]).t.PHjkRE), IconComponent: tmp8(tmp3[62]).RobotIcon, arrow: true };
-    intl44 = tmp8(tmp3[42]).intl;
+    const obj34 = { label: intl44.string(tmp8(tmp3[43]).t.PHjkRE), IconComponent: tmp8(tmp3[63]).RobotIcon, arrow: true };
+    intl44 = tmp8(tmp3[43]).intl;
     const props20 = getProps(obj34);
-    const obj35 = { label: intl45.string(tmp8(tmp3[42]).t["g33r/P"]), IconComponent: tmp8(tmp3[63]).ChatIcon };
-    intl45 = tmp8(tmp3[42]).intl;
+    const obj35 = { label: intl45.string(tmp8(tmp3[43]).t["g33r/P"]), IconComponent: tmp8(tmp3[64]).ChatIcon };
+    intl45 = tmp8(tmp3[43]).intl;
     const props21 = getProps(obj35);
-    const obj36 = { label: intl46.string(tmp8(tmp3[42]).t.P8tvKG), IconComponent: tmp8(tmp3[64]).AtIcon };
-    intl46 = tmp8(tmp3[42]).intl;
+    const obj36 = { label: intl46.string(tmp8(tmp3[43]).t.P8tvKG), IconComponent: tmp8(tmp3[65]).AtIcon };
+    intl46 = tmp8(tmp3[43]).intl;
     const props22 = getProps(obj36);
-    const obj37 = { label: intl47.string(tmp8(tmp3[42]).t["S/xNKV"]), IconComponent: tmp8(tmp3[65]).DownloadIcon };
-    intl47 = tmp8(tmp3[42]).intl;
+    const obj37 = { label: intl47.string(tmp8(tmp3[43]).t["S/xNKV"]), IconComponent: tmp8(tmp3[66]).DownloadIcon };
+    intl47 = tmp8(tmp3[43]).intl;
     const props23 = getProps(obj37);
     if (tmp27) {
       const obj38 = { size: "small", color: token };
-      tmp236Result = tmp236(tmp8(tmp3[66]).ActivityIndicator, obj38);
+      tmp236Result = tmp236(tmp8(tmp3[67]).ActivityIndicator, obj38);
     } else {
-      const obj39 = { IconComponent: tmp8(tmp3[65]).DownloadIcon };
-      const Icon = tmp8(tmp3[36]).ActionSheetRow.Icon;
+      const obj39 = { IconComponent: tmp8(tmp3[66]).DownloadIcon };
+      const Icon = tmp8(tmp3[37]).ActionSheetRow.Icon;
       tmp236Result = tmp236(Icon, obj39);
     }
     const obj40 = {
       icon: tmp236Result,
-      label: intl.string(tmp(tmp3[67]).CYcfZo),
+      label: intl.string(tmp(tmp3[68]).CYcfZo),
       onPress: function handleSaveCheckpointCharacter() {
           return obj(...arguments);
         },
       disabled: tmp27
     };
-    intl = tmp8(tmp3[42]).intl;
-    const obj41 = { label: intl2.string(tmp(tmp3[67]).DqUBGM), IconComponent: tmp8(tmp3[68]).ShareIcon };
-    intl2 = tmp8(tmp3[42]).intl;
+    intl = tmp8(tmp3[43]).intl;
+    const obj41 = { label: intl2.string(tmp(tmp3[68]).DqUBGM), IconComponent: tmp8(tmp3[69]).ShareIcon };
+    intl2 = tmp8(tmp3[43]).intl;
     const props24 = getProps(obj41);
-    const obj42 = { label: intl3.string(tmp8(tmp3[42]).t.JVuuz3), IconComponent: tmp8(tmp3[65]).DownloadIcon };
-    intl3 = tmp8(tmp3[42]).intl;
+    const obj42 = { label: intl3.string(tmp8(tmp3[43]).t.JVuuz3), IconComponent: tmp8(tmp3[66]).DownloadIcon };
+    intl3 = tmp8(tmp3[43]).intl;
     const props25 = getProps(obj42);
-    const obj43 = { label: intl4.string(tmp8(tmp3[42]).t.vbAEaA), IconComponent: tmp8(tmp3[65]).DownloadIcon };
-    intl4 = tmp8(tmp3[42]).intl;
+    const obj43 = { label: intl4.string(tmp8(tmp3[43]).t.vbAEaA), IconComponent: tmp8(tmp3[66]).DownloadIcon };
+    intl4 = tmp8(tmp3[43]).intl;
     const props26 = getProps(obj43);
     let flag = false;
     try {
@@ -567,49 +567,49 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
       flag = isMatch;
     } catch (err) {
     }
-    const intl5 = tmp8(tmp3[42]).intl;
+    const intl5 = tmp8(tmp3[43]).intl;
     const string = intl5.string;
-    const t = tmp8(tmp3[42]).t;
-    const obj45 = { label: string(flag ? t["8xHmxo"] : t["92CPQ+"]), IconComponent: tmp8(tmp3[46]).LinkIcon };
+    const t = tmp8(tmp3[43]).t;
+    const obj45 = { label: string(flag ? t["8xHmxo"] : t["92CPQ+"]), IconComponent: tmp8(tmp3[47]).LinkIcon };
     const props27 = getProps(obj45);
-    const obj46 = { label: intl6.string(tmp8(tmp3[42]).t.Xrt5Po), IconComponent: tmp8(tmp3[46]).LinkIcon };
-    intl6 = tmp8(tmp3[42]).intl;
+    const obj46 = { label: intl6.string(tmp8(tmp3[43]).t.Xrt5Po), IconComponent: tmp8(tmp3[47]).LinkIcon };
+    intl6 = tmp8(tmp3[43]).intl;
     const props28 = getProps(obj46);
-    const obj47 = { label: intl7.string(tmp8(tmp3[42]).t.Rjezbz), IconComponent: tmp8(tmp3[61]).ClockIcon, arrow: true };
-    intl7 = tmp8(tmp3[42]).intl;
+    const obj47 = { label: intl7.string(tmp8(tmp3[43]).t.Rjezbz), IconComponent: tmp8(tmp3[62]).ClockIcon, arrow: true };
+    intl7 = tmp8(tmp3[43]).intl;
     const props29 = getProps(obj47);
-    const obj48 = { label: intl8.string(tmp8(tmp3[42]).t.zBoHlf), IconComponent: tmp8(tmp3[69]).IdIcon };
-    intl8 = tmp8(tmp3[42]).intl;
+    const obj48 = { label: intl8.string(tmp8(tmp3[43]).t.zBoHlf), IconComponent: tmp8(tmp3[70]).IdIcon };
+    intl8 = tmp8(tmp3[43]).intl;
     const props30 = getProps(obj48);
     if (contentMessage.embeds.length > 1) {
-      const intl10 = tmp8(tmp3[42]).intl;
-      stringResult = intl10.string(tmp8(tmp3[42]).t.wUIMqa);
+      const intl10 = tmp8(tmp3[43]).intl;
+      stringResult = intl10.string(tmp8(tmp3[43]).t.wUIMqa);
     } else {
-      const intl9 = tmp8(tmp3[42]).intl;
-      stringResult = intl9.string(tmp8(tmp3[42]).t["4sxKOb"]);
+      const intl9 = tmp8(tmp3[43]).intl;
+      stringResult = intl9.string(tmp8(tmp3[43]).t["4sxKOb"]);
     }
-    const obj49 = { label: stringResult, IconComponent: tmp8(tmp3[70]).XSmallBoldIcon, variant: "danger" };
+    const obj49 = { label: stringResult, IconComponent: tmp8(tmp3[71]).XSmallBoldIcon, variant: "danger" };
     const props31 = getProps(obj49);
-    const obj50 = { label: intl11.string(tmp8(tmp3[42]).t.ZbtGBm), IconComponent: tmp8(tmp3[45]).TrashIcon, variant: "danger" };
-    intl11 = tmp8(tmp3[42]).intl;
+    const obj50 = { label: intl11.string(tmp8(tmp3[43]).t.ZbtGBm), IconComponent: tmp8(tmp3[46]).TrashIcon, variant: "danger" };
+    intl11 = tmp8(tmp3[43]).intl;
     const props32 = getProps(obj50);
-    const obj51 = { label: intl12.string(tmp8(tmp3[42]).t.kFwAsa), IconComponent: tmp8(tmp3[45]).TrashIcon, variant: "danger" };
-    intl12 = tmp8(tmp3[42]).intl;
+    const obj51 = { label: intl12.string(tmp8(tmp3[43]).t.kFwAsa), IconComponent: tmp8(tmp3[46]).TrashIcon, variant: "danger" };
+    intl12 = tmp8(tmp3[43]).intl;
     const props33 = getProps(obj51);
-    const obj52 = { label: intl13.string(tmp8(tmp3[42]).t["+78Pfm"]), IconComponent: tmp8(tmp3[71]).FlagIcon, variant: "danger" };
-    intl13 = tmp8(tmp3[42]).intl;
+    const obj52 = { label: intl13.string(tmp8(tmp3[43]).t["+78Pfm"]), IconComponent: tmp8(tmp3[72]).FlagIcon, variant: "danger" };
+    intl13 = tmp8(tmp3[43]).intl;
     const props34 = getProps(obj52);
-    const obj53 = { label: intl14.string(tmp8(tmp3[42]).t.n5EBAJ), variant: "danger", IconComponent: tmp8(tmp3[72]).ClydeIcon };
-    intl14 = tmp8(tmp3[42]).intl;
+    const obj53 = { label: intl14.string(tmp8(tmp3[43]).t.n5EBAJ), variant: "danger", IconComponent: tmp8(tmp3[73]).ClydeIcon };
+    intl14 = tmp8(tmp3[43]).intl;
     const props35 = getProps(obj53);
-    const obj54 = { label: intl15.string(tmp(tmp3[73])["1D+vqy"]), IconComponent: tmp8(tmp3[71]).FlagIcon, disabled: stateFromStores };
-    intl15 = tmp8(tmp3[42]).intl;
+    const obj54 = { label: intl15.string(tmp(tmp3[74])["1D+vqy"]), IconComponent: tmp8(tmp3[72]).FlagIcon, disabled: stateFromStores };
+    intl15 = tmp8(tmp3[43]).intl;
     const props36 = getProps(obj54);
-    const obj55 = { label: intl16.string(tmp8(tmp3[42]).t.ZH7P2h), IconComponent: tmp8(tmp3[74]).ImageWarningIcon };
-    intl16 = tmp8(tmp3[42]).intl;
+    const obj55 = { label: intl16.string(tmp8(tmp3[43]).t.ZH7P2h), IconComponent: tmp8(tmp3[75]).ImageWarningIcon };
+    intl16 = tmp8(tmp3[43]).intl;
     const props37 = getProps(obj55);
-    const obj56 = { label: intl17.string(tmp8(tmp3[42]).t.xwMqD7), IconComponent: tmp8(tmp3[45]).TrashIcon, variant: "danger" };
-    intl17 = tmp8(tmp3[42]).intl;
+    const obj56 = { label: intl17.string(tmp8(tmp3[43]).t.xwMqD7), IconComponent: tmp8(tmp3[46]).TrashIcon, variant: "danger" };
+    intl17 = tmp8(tmp3[43]).intl;
     const props38 = getProps(obj56);
     set = (() => {
       let hasFlagResult = "Preview" === actionSheetSource;
@@ -650,7 +650,7 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
       items10.unshift(props30);
     }
     if (tmp62) {
-      const tmp8Result28 = tmp8(tmp3[75]);
+      const tmp8Result28 = tmp8(tmp3[76]);
       if (tmp8Result28.canReportMessageToMods(message)) {
         items10.unshift(props35);
         items10.unshift(props36);
@@ -684,7 +684,7 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
       if (!hasItem1) {
         items10.unshift(props38);
       }
-      const tmp130 = tmp(tmp3[77])(message, id3) && !isNonModInLockedThread;
+      const tmp130 = tmp(tmp3[78])(message, id3) && !isNonModInLockedThread;
       if (tmp130) {
         items10.unshift(props);
       }
@@ -719,7 +719,7 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
       if (canToggleGuildOfficialMessages) {
         const unshift4 = items10.unshift;
         let tmp144 = props14;
-        const tmp8Result29 = tmp8(tmp3[32]);
+        const tmp8Result29 = tmp8(tmp3[33]);
         if (tmp8Result29.hasFlag(message.flags, props11.IS_GUILD_OFFICIAL)) {
           tmp144 = props15;
         }
@@ -745,7 +745,7 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
         const tmp152 = "image" !== selectedMedia.mediaType && "video" !== selectedMedia.mediaType;
       }
       if (!tmp151) {
-        tmp151 = !tmp(tmp3[77])(message, id3);
+        tmp151 = !tmp(tmp3[78])(message, id3);
       }
       if (!tmp151) {
         tmp151 = isNonModInLockedThread;
@@ -764,7 +764,7 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
           items10.unshift(props23);
         } else {
           if ("video" === selectedMedia.mediaType) {
-            const tmp8Result30 = tmp8(tmp3[78]);
+            const tmp8Result30 = tmp8(tmp3[79]);
             if (!tmp8Result30.isWebPlayerVideoUrl(selectedMedia.mediaUrl)) {
               items10.unshift(props25);
             }
@@ -774,7 +774,7 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
             items10.unshift(props26);
           }
         }
-        const tmp8Result31 = tmp8(tmp3[79]);
+        const tmp8Result31 = tmp8(tmp3[80]);
         if (tmp8Result31.messageHasObscurableMedia(message)) {
           items10.unshift(props37);
         }
@@ -788,7 +788,7 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
         const isPollResult = message.isPoll();
         let hasNonVoteReactionsResult = !isPollResult;
         if (isPollResult) {
-          const tmp8Result32 = tmp8(tmp3[80]);
+          const tmp8Result32 = tmp8(tmp3[81]);
           hasNonVoteReactionsResult = tmp8Result32.hasNonVoteReactions(message);
         }
         tmp168 = hasNonVoteReactionsResult;
@@ -828,11 +828,11 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
     }
     let canReportUserResult = null != user;
     if (canReportUserResult) {
-      const tmp8Result33 = tmp8(tmp3[76]);
+      const tmp8Result33 = tmp8(tmp3[77]);
       canReportUserResult = tmp8Result33.canReportUser(user);
     }
     if (canReportUserResult) {
-      const tmp8Result34 = tmp8(tmp3[76]);
+      const tmp8Result34 = tmp8(tmp3[77]);
       canReportUserResult = tmp8Result34.canReportMessage(message);
     }
     if (canReportUserResult) {

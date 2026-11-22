@@ -1,9 +1,9 @@
-// Module ID: 20208
-// Function ID: 20209
+// Module ID: 20206
+// Function ID: 20207
 // Name: BackgroundSync
 // Dependencies: [6394, 502, 2118, 3, 4808, 19449, 2]
 
-// Module 20208 (BackgroundSync)
+// Module 20206 (BackgroundSync)
 import LoggerDefault from "Logger" /* 3 */;
 import DatabaseManagerDefault from "DatabaseManager" /* 4808 */;
 import background_sync_BackgroundSync from "background_sync/BackgroundSync" /* 19449 */;

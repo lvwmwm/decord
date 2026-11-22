@@ -1,7 +1,7 @@
 // Module ID: 17771
 // Function ID: 17772
 // Name: useIsEligibleForTierTemplateUpsell
-// Dependencies: [4784, 1071, 504, 15108, 6880, 2]
+// Dependencies: [4784, 1071, 504, 15106, 6880, 2]
 // Exports: default
 
 // Module 17771 (useIsEligibleForTierTemplateUpsell)

@@ -1,7 +1,7 @@
 // Module ID: 18574
 // Function ID: 18575
 // Name: PermissionSpecUtils
-// Dependencies: [4766, 4784, 1071, 6506, 18575, 6871, 12483, 18576, 1112, 2187, 6893, 6533, 18577, 6892, 18578, 7994, 8461, 2]
+// Dependencies: [4766, 4784, 1071, 6506, 18575, 6871, 12490, 18576, 1112, 2187, 6893, 6533, 18577, 6892, 18578, 7994, 8461, 2]
 
 // Module 18574 (PermissionSpecUtils)
 import intl34 from "intl" /* 1112 */;
@@ -12,7 +12,7 @@ import useIsCreatorMonetizationEnabledGuild from "useIsCreatorMonetizationEnable
 import GuildOfficialMessagesExperimentDefault from "GuildOfficialMessagesExperiment" /* 6892 */;
 import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 7994 */;
 import Tracking from "Tracking" /* 8461 */;
-import SoundmojiRenderingExperiment from "SoundmojiRenderingExperiment" /* 12483 */;
+import SoundmojiRenderingExperiment from "SoundmojiRenderingExperiment" /* 12490 */;
 import useGuildEligibleForStageChannels from "useGuildEligibleForStageChannels" /* 18575 */;
 import HangoutWindowExperiment from "HangoutWindowExperiment" /* 18576 */;
 import permissions_PermissionUtilsAll from "permissions/PermissionUtils" /* 18578 */;

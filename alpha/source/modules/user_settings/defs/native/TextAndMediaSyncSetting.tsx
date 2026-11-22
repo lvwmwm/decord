@@ -1,9 +1,9 @@
-// Module ID: 16880
-// Function ID: 16881
+// Module ID: 16878
+// Function ID: 16879
 // Name: TextAndMediaSyncSetting
 // Dependencies: [1192, 8712, 504, 11937, 1112, 5826, 2]
 
-// Module 16880 (TextAndMediaSyncSetting)
+// Module 16878 (TextAndMediaSyncSetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1112 */;
 import UserSettingsActionCreatorsDefault from "UserSettingsActionCreators" /* 5826 */;

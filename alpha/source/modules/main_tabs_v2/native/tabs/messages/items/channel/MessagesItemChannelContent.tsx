@@ -1,7 +1,7 @@
 // Module ID: 17555
 // Function ID: 17556
 // Name: MessagesItemChannelContent
-// Dependencies: [19, 17, 6619, 6553, 21, 4913, 575, 1186, 8147, 7236, 11157, 11672, 4935, 5122, 504, 16723, 2168, 6671, 17556, 11, 5529, 17557, 5477, 9454, 9455, 5504, 9743, 10387, 11125, 5574, 13509, 1112, 17559, 2]
+// Dependencies: [19, 17, 6619, 6553, 21, 4913, 575, 1186, 8147, 7236, 11157, 11672, 4935, 5122, 504, 16721, 2168, 6671, 17556, 11, 5529, 17557, 5477, 9454, 9455, 5504, 9743, 10387, 11125, 5574, 13507, 1112, 17559, 2]
 
 // Module 17555 (MessagesItemChannelContent)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
@@ -19,8 +19,8 @@ import UsernameWithEffectsDefault from "UsernameWithEffects" /* 9454 */;
 import BotTagDefault from "BotTag" /* 10387 */;
 import AssetRegistryDefault3 from "AssetRegistry" /* 11157 */;
 import AssetRegistryDefault4 from "AssetRegistry" /* 11672 */;
-import ActivityStatusDefault from "ActivityStatus" /* 13509 */;
-import useMessagePreviewsDefault from "useMessagePreviews" /* 16723 */;
+import ActivityStatusDefault from "ActivityStatus" /* 13507 */;
+import useMessagePreviewsDefault from "useMessagePreviews" /* 16721 */;
 import usePrivateChannelWaveDefault from "usePrivateChannelWave" /* 17557 */;
 import react from "react" /* 19 */;
 import ReadStateStore from "ReadStateStore" /* 6619 */;

@@ -1,7 +1,7 @@
 // Module ID: 18217
 // Function ID: 18218
 // Name: GuildSettingsModalMembers
-// Dependencies: [32, 19, 17, 502, 5534, 4825, 4819, 4784, 4845, 1386, 7995, 1071, 21, 10063, 4913, 575, 1500, 12218, 5943, 4969, 1112, 13857, 1628, 504, 6887, 18218, 7734, 8658, 18219, 7029, 8028, 6511, 7994, 11, 4922, 12, 11609, 7427, 7490, 1186, 8186, 5487, 2]
+// Dependencies: [32, 19, 17, 502, 5534, 4825, 4819, 4784, 4845, 1386, 7995, 1071, 21, 10063, 4913, 575, 1500, 12225, 5943, 4969, 1112, 13855, 1628, 504, 6887, 18218, 7734, 8658, 18219, 7029, 8028, 6511, 7994, 11, 4922, 12, 11609, 7427, 7490, 1186, 8186, 5487, 2]
 
 // Module 18217 (GuildSettingsModalMembers)
 import _mod12 from "module_12" /* 12 */;
@@ -13,7 +13,7 @@ import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4922 */;
 import GuildActionCreatorsDefault from "GuildActionCreators" /* 6511 */;
 import MemberSafetyPermissionsUtils from "MemberSafetyPermissionsUtils" /* 6887 */;
 import _mod10063 from "module_10063" /* 10063 */;
-import RolePillDefault from "RolePill" /* 12218 */;
+import RolePillDefault from "RolePill" /* 12225 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -111,7 +111,7 @@ let closure_20 = react.memo(function GuildSettingsModalMember(guild) {
       end
     };
     tmp12Result = null;
-    const tmp14 = guildMember(13857);
+    const tmp14 = guildMember(13855);
     if (mapped.length > 0) {
       const obj5 = { style: tmp.roleList, pointerEvents: "none", children: mapped };
       tmp12Result = tmp12(View, obj5);
@@ -129,7 +129,7 @@ const memoResult = react.memo(function GuildSettingsModalMembers(guildId) {
   let obj10;
   let obj12;
   let tmp35Result;
-  const f114140 = () => {
+  const f114151 = () => {
     const tmp = new _modDef10063((arg0) => {
       closure_1_10(arg0);
       closure_1_14(false);
@@ -201,9 +201,9 @@ const memoResult = react.memo(function GuildSettingsModalMembers(guildId) {
   const tmp16 = guildLoaded(sortedGuildRoles.useState(false), 2);
   first2 = tmp16[0];
   let closure_14 = tmp16[1];
-  const first3 = guildLoaded(sortedGuildRoles.useState(f114140), 2)[0];
+  const first3 = guildLoaded(sortedGuildRoles.useState(f114151), 2)[0];
   const items8 = [guildId, stateFromStoresArray, first, stateFromStores1, first1];
-  const tmp18 = guildLoaded(sortedGuildRoles.useState(f114140), 2);
+  const tmp18 = guildLoaded(sortedGuildRoles.useState(f114151), 2);
   const memo = sortedGuildRoles.useMemo(() => {
     function guildRoleIsFiltered(roles) {
       let tmp2 = null != stateFromStores1;

@@ -1,7 +1,7 @@
 // Module ID: 18856
 // Function ID: 18857
 // Name: FriendsNavigator
-// Dependencies: [19, 21, 8638, 4913, 575, 8564, 8561, 13492, 1112, 8268, 7092, 18857, 18863, 18866, 18867, 18868, 18879, 18880, 18881, 18883, 18886, 18887, 5085, 7373, 4870, 4974, 18888, 2]
+// Dependencies: [19, 21, 8638, 4913, 575, 8564, 8561, 13490, 1112, 8268, 7092, 18857, 18863, 18866, 18867, 18868, 18879, 18880, 18881, 18883, 18886, 18887, 5085, 7373, 4870, 4974, 18888, 2]
 // Exports: default
 
 // Module 18856 (FriendsNavigator)
@@ -13,7 +13,7 @@ import useColorThemeBackgroundDefault from "useColorThemeBackground" /* 5085 */;
 import useIsWindowLargeDefault from "useIsWindowLarge" /* 7373 */;
 import HeaderShared from "HeaderShared" /* 8561 */;
 import PressableNavigatorButtonWrapperDefault from "PressableNavigatorButtonWrapper" /* 8564 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13492 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13490 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import NativeStackView from "NativeStackView" /* 8638 */;

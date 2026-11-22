@@ -1,14 +1,14 @@
 // Module ID: 19524
 // Function ID: 19525
 // Name: HolidayEventsManager
-// Dependencies: [1245, 10884, 502, 10885, 7484, 19525, 19531, 19532, 19533, 10886, 2]
+// Dependencies: [1245, 10884, 502, 10885, 7484, 19525, 19527, 19528, 19529, 10886, 2]
 
 // Module 19524 (HolidayEventsManager)
 import Constants from "Constants" /* 10885 */;
 import HolidayEventsConfigDefault from "HolidayEventsConfig" /* 19525 */;
-import HolidayEventsUtilsDefault from "HolidayEventsUtils" /* 19531 */;
-import SoundpackActions from "SoundpackActions" /* 19532 */;
-import react_native from "react-native" /* 19533 */;
+import HolidayEventsUtilsDefault from "HolidayEventsUtils" /* 19527 */;
+import SoundpackActions from "SoundpackActions" /* 19528 */;
+import react_native from "react-native" /* 19529 */;
 import ApexExperimentStore from "ApexExperimentStore" /* 1245 */;
 import SoundpackStore from "SoundpackStore" /* 10884 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

@@ -1,19 +1,19 @@
-// Module ID: 16207
-// Function ID: 16208
+// Module ID: 16205
+// Function ID: 16206
 // Name: FamilyCenterActivityGiftRow
-// Dependencies: [19, 17, 21, 4913, 575, 8915, 16195, 16204, 16206, 4969, 16205, 5504, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 8915, 16193, 16202, 16204, 4969, 16203, 5504, 2]
 // Exports: default
 
-// Module 16207 (FamilyCenterActivityGiftRow)
+// Module 16205 (FamilyCenterActivityGiftRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import UserUtilsDefault from "UserUtils" /* 4969 */;
 import Text_Text from "Text/Text" /* 5504 */;
 import useCollectiblesDataDefault from "useCollectiblesData" /* 8915 */;
-import useSelectedTeenUser from "useSelectedTeenUser" /* 16195 */;
-import FamilyCenterActivityPurchaseRowUtils from "FamilyCenterActivityPurchaseRowUtils" /* 16204 */;
-import FamilyCenterActivityItemPreviewDefault from "FamilyCenterActivityItemPreview" /* 16205 */;
-import FamilyCenterActivityGiftRowUtils from "FamilyCenterActivityGiftRowUtils" /* 16206 */;
+import useSelectedTeenUser from "useSelectedTeenUser" /* 16193 */;
+import FamilyCenterActivityPurchaseRowUtils from "FamilyCenterActivityPurchaseRowUtils" /* 16202 */;
+import FamilyCenterActivityItemPreviewDefault from "FamilyCenterActivityItemPreview" /* 16203 */;
+import FamilyCenterActivityGiftRowUtils from "FamilyCenterActivityGiftRowUtils" /* 16204 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4913 */;

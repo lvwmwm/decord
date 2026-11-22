@@ -1,7 +1,7 @@
 // Module ID: 17862
 // Function ID: 17863
 // Name: useGuildsBarGesture
-// Dependencies: [5, 19, 17, 4784, 6550, 17863, 17860, 1653, 551, 5129, 4920, 12, 1241, 1112, 7449, 17542, 5477, 575, 4828, 10093, 1262, 6511, 5826, 8660, 1378, 1628, 5143, 17864, 17865, 8660, 16479, 5173, 1706, 2]
+// Dependencies: [5, 19, 17, 4784, 6550, 17863, 17860, 1653, 551, 5129, 4920, 12, 1241, 1112, 7449, 17542, 5477, 575, 4828, 10093, 1262, 6511, 5826, 8660, 1378, 1628, 5143, 17864, 17865, 8660, 16477, 5173, 1706, 2]
 // Exports: default
 
 // Module 17862 (useGuildsBarGesture)
@@ -268,7 +268,7 @@ function getItemAndNodeFromTouchEvent(arg0, arg1, fastListRef, map) {
     sectionItemFromPosition = current.getSectionItemFromPosition(bound, map);
   }
   if (sectionItemFromPosition == null) {
-    sectionItemFromPosition = { item: "disabled", positionPercentage: false };
+    sectionItemFromPosition = { item: "description", positionPercentage: false };
   }
   const item = sectionItemFromPosition.item;
   let tmp6;
@@ -702,7 +702,7 @@ export default function useGuildsBarGesture() {
         const close = menu.requestClose(-1 === activeIndex.get());
       }
     }
-    setStateShallow({ dragSpecs: "Array", overSpecs: "analyticsLocations" });
+    setStateShallow({ dragSpecs: "disabled", overSpecs: "isArray" });
     const value = gestureState.get();
     if (null != value.mode) {
       const obj10 = { mode: null };

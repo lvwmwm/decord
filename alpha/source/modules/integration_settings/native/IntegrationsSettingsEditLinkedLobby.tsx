@@ -1,7 +1,7 @@
 // Module ID: 18974
 // Function ID: 18975
 // Name: IntegrationsSettingsEditLinkedLobby
-// Dependencies: [19, 17, 1386, 21, 4913, 575, 5477, 1500, 7520, 7539, 6864, 5529, 504, 13850, 8067, 1112, 5504, 7709, 5929, 1186, 1412, 7348, 7045, 2]
+// Dependencies: [19, 17, 1386, 21, 4913, 575, 5477, 1500, 7520, 7539, 6864, 5529, 504, 13848, 8067, 1112, 5504, 7709, 5929, 1186, 1412, 7348, 7045, 2]
 // Exports: default
 
 // Module 18974 (IntegrationsSettingsEditLinkedLobby)

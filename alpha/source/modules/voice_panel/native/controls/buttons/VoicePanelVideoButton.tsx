@@ -1,7 +1,7 @@
 // Module ID: 19358
 // Function ID: 19359
 // Name: VoicePanelVideoButton
-// Dependencies: [19, 17, 21, 11749, 19346, 17989, 19347, 1112, 14394, 5044, 11126, 14510, 2]
+// Dependencies: [19, 17, 21, 11749, 19346, 17989, 19347, 1112, 14392, 5044, 11126, 14508, 2]
 // Exports: default
 
 // Module 19358 (VoicePanelVideoButton)
@@ -23,7 +23,7 @@ function VideoButtonRive(arg0) {
   if (isVideoEnabled) {
     let VideoSlashIcon = tmp3(11126).VideoIcon;
   } else {
-    VideoSlashIcon = tmp3(14510).VideoSlashIcon;
+    VideoSlashIcon = tmp3(14508).VideoSlashIcon;
   }
   return <tmp2 style={{ width: 24, height: 24, pointerEvents: "none" }}>{null}</tmp2>;
 }
@@ -77,7 +77,7 @@ export default function VideoButton(arg0) {
   }
   if (videoBlocked) {
     const obj3 = { color: voicePanelButtonStyles.iconFill.color };
-    memo = tmp7(tmp3(14394).VideoDenyIcon, obj3);
+    memo = tmp7(tmp3(14392).VideoDenyIcon, obj3);
   }
   return <tmpResult onPress={onPress} disabled={tmp9} props={props} accessibilityLabel={stringResult} style={isVideoEnabled ? voicePanelButtonStyles.iconBgSelected : voicePanelButtonStyles.iconBg}>{memo}</tmpResult>;
 };

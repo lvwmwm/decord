@@ -1,15 +1,15 @@
-// Module ID: 14382
-// Function ID: 14383
+// Module ID: 14380
+// Function ID: 14381
 // Name: useActivityStatusLabel
-// Dependencies: [6400, 4762, 4845, 5651, 4855, 5561, 504, 5652, 9052, 13511, 13512, 13518, 1112, 13520, 13525, 2]
+// Dependencies: [6400, 4762, 4845, 5651, 4855, 5561, 504, 5652, 9052, 13509, 13510, 13516, 1112, 13518, 13523, 2]
 // Exports: default
 
-// Module 14382 (useActivityStatusLabel)
-import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 13511 */;
-import useUserVoiceActivity from "useUserVoiceActivity" /* 13512 */;
-import isGameActivityDefault from "isGameActivity" /* 13518 */;
-import getActivityStatusTextDefault from "getActivityStatusText" /* 13520 */;
-import VoiceActivityStatus from "VoiceActivityStatus" /* 13525 */;
+// Module 14380 (useActivityStatusLabel)
+import useDiscoverableApplicationStream from "useDiscoverableApplicationStream" /* 13509 */;
+import useUserVoiceActivity from "useUserVoiceActivity" /* 13510 */;
+import isGameActivityDefault from "isGameActivity" /* 13516 */;
+import getActivityStatusTextDefault from "getActivityStatusText" /* 13518 */;
+import VoiceActivityStatus from "VoiceActivityStatus" /* 13523 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6400 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
 import PermissionStore from "PermissionStore" /* 4845 */;

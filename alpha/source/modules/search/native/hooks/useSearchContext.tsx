@@ -1,10 +1,10 @@
-// Module ID: 13155
-// Function ID: 13156
+// Module ID: 13153
+// Function ID: 13154
 // Name: useSearchContext
 // Dependencies: [19, 4762, 1071, 38, 563, 2]
 // Exports: getChannelDetailsSearchContext, useChannelDetailsSearchContext, useGuildChannelSearchContext, useGuildSearchContext
 
-// Module 13155 (useSearchContext)
+// Module 13153 (useSearchContext)
 import _modDef38 from "module_38" /* 38 */;
 import Constants from "Constants" /* 1071 */;
 import react from "react" /* 19 */;

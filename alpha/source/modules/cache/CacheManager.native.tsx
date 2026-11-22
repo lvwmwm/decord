@@ -1,7 +1,7 @@
 // Module ID: 19453
 // Function ID: 19454
 // Name: CacheManager
-// Dependencies: [6394, 8269, 3, 1088, 7484, 8356, 16993, 1378, 1091, 2]
+// Dependencies: [6394, 8269, 3, 1088, 7484, 8356, 16991, 1378, 1091, 2]
 
 // Module 19453 (CacheManager)
 import LoggerDefault from "Logger" /* 3 */;
@@ -15,7 +15,7 @@ import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7484 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const CacheActionCreators = tmp(16993);
+const CacheActionCreators = tmp(16991);
 const hasOwnProperty = new LoggerDefault("CacheStore");
 const tmp2 = new LoggerDefault("CacheStore");
 let closure_6 = 15 * DurationsDefault.Millis.MINUTE;

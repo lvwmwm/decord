@@ -1,7 +1,7 @@
 // Module ID: 17853
 // Function ID: 17854
 // Name: useFavoritesGuildSuggestionCandidates
-// Dependencies: [19, 17854, 8143, 4762, 17716, 10071, 17856, 504, 9651, 13884, 10082, 10069, 10063, 2]
+// Dependencies: [19, 17854, 8143, 4762, 17716, 10071, 17856, 504, 9651, 13882, 10082, 10069, 10063, 2]
 // Exports: default
 
 // Module 17853 (useFavoritesGuildSuggestionCandidates)

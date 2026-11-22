@@ -1,10 +1,10 @@
-// Module ID: 12282
-// Function ID: 12283
+// Module ID: 12289
+// Function ID: 12290
 // Name: useConjureSharedProjectAppChannel
 // Dependencies: [19, 4762, 4784, 4845, 504, 11974, 11975, 2]
 // Exports: default
 
-// Module 12282 (useConjureSharedProjectAppChannel)
+// Module 12289 (useConjureSharedProjectAppChannel)
 import ChannelStore2 from "ChannelStore" /* 4762 */;
 import conjureSharedProjectHome from "conjureSharedProjectHome" /* 11974 */;
 import findLoadedAppChannelDefault from "findLoadedAppChannel" /* 11975 */;

@@ -1,7 +1,7 @@
 // Module ID: 17554
 // Function ID: 17555
 // Name: MessagesItemChannelAvatar
-// Dependencies: [19, 4914, 502, 5651, 12831, 1386, 5642, 21, 4913, 575, 1186, 504, 10124, 2]
+// Dependencies: [19, 4914, 502, 5651, 12829, 1386, 5642, 21, 4913, 575, 1186, 504, 10124, 2]
 
 // Module 17554 (MessagesItemChannelAvatar)
 import Fragment from "Fragment" /* 21 */;
@@ -12,7 +12,7 @@ import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4914 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import PresenceStore from "PresenceStore" /* 5651 */;
-import TypingStore from "TypingStore" /* 12831 */;
+import TypingStore from "TypingStore" /* 12829 */;
 import UserStore from "UserStore" /* 1386 */;
 import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;

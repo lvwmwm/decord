@@ -1,10 +1,10 @@
-// Module ID: 12807
-// Function ID: 12808
+// Module ID: 12805
+// Function ID: 12806
 // Name: nativeAppMessageEmbedUtil
 // Dependencies: [4910, 575, 8128, 11958, 1412, 2]
 // Exports: getAppGradientColors, getAppIconSrc
 
-// Module 12807 (nativeAppMessageEmbedUtil)
+// Module 12805 (nativeAppMessageEmbedUtil)
 import nativeDefault from "native" /* 575 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
 import useAvatarColor from "useAvatarColor" /* 8128 */;

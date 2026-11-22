@@ -1,10 +1,10 @@
-// Module ID: 17114
-// Function ID: 17115
+// Module ID: 17112
+// Function ID: 17113
 // Name: DevToolsRevenuePlaygroundScreen
-// Dependencies: [5, 32, 19, 17, 8878, 8143, 1230, 4762, 4816, 1386, 5507, 1388, 21, 572, 563, 1284, 5595, 7045, 7058, 7348, 7551, 8250, 1186, 575, 9478, 4913, 8859, 5127, 17115, 2119, 7556, 17122, 9287, 12222, 6429, 17123, 17126, 17131, 17133, 17136, 2]
+// Dependencies: [5, 32, 19, 17, 8878, 8143, 1230, 4762, 4816, 1386, 5507, 1388, 21, 572, 563, 1284, 5595, 7045, 7058, 7348, 7551, 8250, 1186, 575, 9478, 4913, 8859, 5127, 17113, 2119, 7556, 17120, 9287, 12229, 6429, 17121, 9110, 7539, 17124, 17129, 17131, 17134, 2]
 // Exports: default
 
-// Module 17114 (DevToolsRevenuePlaygroundScreen)
+// Module 17112 (DevToolsRevenuePlaygroundScreen)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 575 */;
@@ -15,11 +15,13 @@ import DevSettingsStore2 from "DevSettingsStore" /* 5507 */;
 import TableRow6 from "TableRow" /* 7045 */;
 import TableRowArrow from "TableRowArrow" /* 7058 */;
 import TableRowGroup4 from "TableRowGroup" /* 7348 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7539 */;
 import Sheet_showSimpleActionSheet from "Sheet/showSimpleActionSheet" /* 7551 */;
 import TableSwitchRow2 from "TableSwitchRow" /* 7556 */;
+import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 9110 */;
 import IAPUtils from "IAPUtils" /* 9287 */;
-import BundleUpdaterDefault from "BundleUpdater" /* 12222 */;
-import DevSettingsActions from "DevSettingsActions" /* 17122 */;
+import BundleUpdaterDefault from "BundleUpdater" /* 12229 */;
+import DevSettingsActions from "DevSettingsActions" /* 17120 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -699,7 +701,7 @@ function TrialOfferSheetExample() {
       if (null != premiumTrialOffer) {
         const obj2 = { fallbackPremiumType: tmp, userTrialOffer: tmp2, markAsDismissed };
         const obj = ActionSheetActionCreatorsDefault;
-        obj.openLazy(asyncRequire(17115, dependencyMap.paths), "PremiumTrialOfferActionSheet", obj2);
+        obj.openLazy(asyncRequire(17113, dependencyMap.paths), "PremiumTrialOfferActionSheet", obj2);
       }
     }
   };
@@ -714,7 +716,7 @@ function TrialOfferSheetExample() {
       if (null != premiumTrialOffer) {
         const obj2 = { fallbackPremiumType: tmp, userTrialOffer: tmp2, markAsDismissed };
         const obj = ActionSheetActionCreatorsDefault;
-        obj.openLazy(asyncRequire(17115, dependencyMap.paths), "PremiumTrialOfferActionSheet", obj2);
+        obj.openLazy(asyncRequire(17113, dependencyMap.paths), "PremiumTrialOfferActionSheet", obj2);
       }
     }
   };
@@ -801,6 +803,23 @@ function PaymentFlowTest() {
   TableRow = TableRow6.TableRow;
   return authStore4(TableRowGroup, obj);
 }
+function NitroHalfSheetBypass() {
+  let TIER_2;
+  let obj2;
+  let obj = { title: "Nitro half-sheet", hasIcons: false, children: authStore4(TableRow6.TableRow, obj2) };
+  const TableRowGroup = TableRowGroup4.TableRowGroup;
+  obj2 = {
+    label: "Open Nitro plan selection half-sheet",
+    onPress() {
+      const obj = { analyticsLocation: {}, analyticsLocations: items, premiumType: TIER_2.TIER_2 };
+      items = [];
+      const tmp = openPremiumPlanSelectionActionSheetDefault;
+      items[0] = AnalyticsLocationDefault.DEV_TOOLS;
+      tmp(obj);
+    }
+  };
+  return authStore4(TableRowGroup, obj);
+}
 function Orbs() {
   let TableRow;
   let obj2;
@@ -811,7 +830,7 @@ function Orbs() {
     label: "Test Orbs Flow",
     onPress() {
       const obj = require("ModalActionCreators");
-      obj.pushLazy(require("asyncRequire")(paths[36], paths.paths));
+      obj.pushLazy(require("asyncRequire")(paths[38], paths.paths));
     },
     trailing: authStore4(TableRowArrow.TableRowArrow, {})
   };
@@ -828,7 +847,7 @@ function RevenueSmokeTests() {
     label: "Test all purchasing flows",
     onPress() {
       const obj = require("ModalActionCreators");
-      obj.pushLazy(require("asyncRequire")(paths[37], paths.paths));
+      obj.pushLazy(require("asyncRequire")(paths[39], paths.paths));
     },
     trailing: authStore4(TableRowArrow.TableRowArrow, {})
   };
@@ -845,7 +864,7 @@ function GuildPowerups() {
     label: "Guild Powerups",
     onPress() {
       const obj = require("ModalActionCreators");
-      obj.pushLazy(require("asyncRequire")(paths[38], paths.paths));
+      obj.pushLazy(require("asyncRequire")(paths[40], paths.paths));
     },
     trailing: authStore4(TableRowArrow.TableRowArrow, {})
   };
@@ -863,7 +882,7 @@ function GuildTagBadges() {
     subLabel: "Preview all native badge kinds across sizes and tints",
     onPress() {
       const obj = require("ModalActionCreators");
-      obj.pushLazy(require("asyncRequire")(paths[39], paths.paths));
+      obj.pushLazy(require("asyncRequire")(paths[41], paths.paths));
     },
     trailing: authStore4(TableRowArrow.TableRowArrow, {})
   };
@@ -888,7 +907,7 @@ let result = size.fileFinishedImporting("modules/devtools/native/components/scre
 export default function DevToolsRevenuePlaygroundScreen() {
   const tmp = closure_25();
   const obj = { style: tmp.container, contentContainerStyle: tmp.scrollContainer, children: items };
-  items = [authStore4(TrialOfferSheetExample, {}), , , , , , , , , , , , , , , , ];
+  items = [authStore4(TrialOfferSheetExample, {}), , , , , , , , , , , , , , , , , , ];
   const obj2 = { size: nativeDefault.space.PX_16 };
   const Spacer = native.Spacer;
   items[1] = authStore4(Spacer, obj2);
@@ -904,22 +923,26 @@ export default function DevToolsRevenuePlaygroundScreen() {
   const obj5 = { size: nativeDefault.space.PX_16 };
   const Spacer4 = native.Spacer;
   items[7] = authStore4(Spacer4, obj5);
-  items[8] = authStore4(Orbs, {});
+  items[8] = authStore4(NitroHalfSheetBypass, {});
   const obj6 = { size: nativeDefault.space.PX_16 };
   const Spacer5 = native.Spacer;
   items[9] = authStore4(Spacer5, obj6);
-  items[10] = authStore4(RevenueSmokeTests, {});
+  items[10] = authStore4(Orbs, {});
   const obj7 = { size: nativeDefault.space.PX_16 };
   const Spacer6 = native.Spacer;
   items[11] = authStore4(Spacer6, obj7);
-  items[12] = authStore4(GuildPowerups, {});
+  items[12] = authStore4(RevenueSmokeTests, {});
   const obj8 = { size: nativeDefault.space.PX_16 };
   const Spacer7 = native.Spacer;
   items[13] = authStore4(Spacer7, obj8);
-  items[14] = authStore4(GuildTagBadges, {});
+  items[14] = authStore4(GuildPowerups, {});
   const obj9 = { size: nativeDefault.space.PX_16 };
   const Spacer8 = native.Spacer;
   items[15] = authStore4(Spacer8, obj9);
-  items[16] = authStore4(FriendAnniversary, {});
+  items[16] = authStore4(GuildTagBadges, {});
+  const obj10 = { size: nativeDefault.space.PX_16 };
+  const Spacer9 = native.Spacer;
+  items[17] = authStore4(Spacer9, obj10);
+  items[18] = authStore4(FriendAnniversary, {});
   return closure_18(ScrollView, obj);
 };

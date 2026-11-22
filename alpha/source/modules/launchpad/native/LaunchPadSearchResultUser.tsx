@@ -1,7 +1,7 @@
 // Module ID: 19141
 // Function ID: 19142
 // Name: LaunchPadSearchResultUser
-// Dependencies: [19, 4914, 2188, 4762, 5651, 12831, 6552, 1071, 6553, 21, 4913, 575, 18754, 7737, 5519, 504, 11, 6638, 19130, 7030, 18755, 19131, 1186, 8215, 18757, 4969, 11125, 5574, 19132, 17917, 16723, 2]
+// Dependencies: [19, 4914, 2188, 4762, 5651, 12829, 6552, 1071, 6553, 21, 4913, 575, 18754, 7737, 5519, 504, 11, 6638, 19130, 7030, 18755, 19131, 1186, 8215, 18757, 4969, 11125, 5574, 19132, 17917, 16721, 2]
 
 // Module 19141 (LaunchPadSearchResultUser)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
@@ -24,7 +24,7 @@ import AccessibilityStore from "AccessibilityStore" /* 4914 */;
 import LocaleStore from "LocaleStore" /* 2188 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
 import PresenceStore from "PresenceStore" /* 5651 */;
-import TypingStore from "TypingStore" /* 12831 */;
+import TypingStore from "TypingStore" /* 12829 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6552 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4913 */;
@@ -172,7 +172,7 @@ function UserResultWithChannel(arg0) {
   const obj3 = get_initialized;
   const stateFromStores1 = obj3.useStateFromStores(items1, () => TypingStore.isTyping(channel.id, require.id));
   const obj4 = { channel, lastMessage: tmp4, unread, mentionCount, muted: stateFromStores, isTyping: stateFromStores1 };
-  tmp4 = channel(16723)(channel, { unread });
+  tmp4 = channel(16721)(channel, { unread });
   const merged = Object.assign(arg0);
   return closure_12(UserResult, obj4);
 }

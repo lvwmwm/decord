@@ -1,10 +1,10 @@
-// Module ID: 12965
-// Function ID: 12966
+// Module ID: 12963
+// Function ID: 12964
 // Name: TrackSectionHeader
 // Dependencies: [10675, 5930, 1263, 2]
 // Exports: default
 
-// Module 12965 (TrackSectionHeader)
+// Module 12963 (TrackSectionHeader)
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1263 */;
 import useTrackImpressionDefault from "useTrackImpression" /* 5930 */;
 import AppLauncherStore from "AppLauncherStore" /* 10675 */;

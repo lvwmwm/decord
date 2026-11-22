@@ -1,7 +1,7 @@
 // Module ID: 18795
 // Function ID: 18796
 // Name: SuggestedSearchSkeleton
-// Dependencies: [19, 17, 13201, 8576, 21, 4913, 575, 1653, 5123, 2]
+// Dependencies: [19, 17, 13199, 8576, 21, 4913, 575, 1653, 5123, 2]
 // Exports: default
 
 // Module 18795 (SuggestedSearchSkeleton)
@@ -10,7 +10,7 @@ import nativeDefault from "native" /* 575 */;
 import _mod1653 from "module_1653" /* 1653 */;
 import timing_timing from "timing/timing" /* 5123 */;
 import SearchConstants from "SearchConstants" /* 8576 */;
-import SmartSearchConstants from "SmartSearchConstants" /* 13201 */;
+import SmartSearchConstants from "SmartSearchConstants" /* 13199 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;

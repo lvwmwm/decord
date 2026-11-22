@@ -1,15 +1,15 @@
-// Module ID: 19735
-// Function ID: 19736
+// Module ID: 19732
+// Function ID: 19733
 // Name: MentionSpamTriggerFields
-// Dependencies: [32, 19, 17, 12401, 21, 4913, 18577, 1112, 7348, 5504, 7045, 7228, 19718, 7335, 2]
+// Dependencies: [32, 19, 17, 12408, 21, 4913, 18577, 1112, 7348, 5504, 7045, 7228, 19715, 7335, 2]
 // Exports: default
 
-// Module 19735 (MentionSpamTriggerFields)
+// Module 19732 (MentionSpamTriggerFields)
 import react_native from "react-native" /* 17 */;
-import AutomodRuleUtils from "AutomodRuleUtils" /* 19718 */;
+import AutomodRuleUtils from "AutomodRuleUtils" /* 19715 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import Constants from "Constants" /* 12401 */;
+import Constants from "Constants" /* 12408 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;

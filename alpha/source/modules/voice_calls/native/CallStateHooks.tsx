@@ -1,10 +1,10 @@
-// Module ID: 14874
-// Function ID: 14875
+// Module ID: 14872
+// Function ID: 14873
 // Name: CallStateHooks
 // Dependencies: [6620, 502, 6627, 5654, 1071, 5563, 504, 10853, 2]
 // Exports: default
 
-// Module 14874 (CallStateHooks)
+// Module 14872 (CallStateHooks)
 import CallConstants from "CallConstants" /* 5563 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6620 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
@@ -21,7 +21,7 @@ let metroImportDefault;
 ({ EMPTY_STRING_SNOWFLAKE_ID: metroImportDefault, RTCConnectionStates: metroImportAll } = Constants);
 const ParticipantTypes = CallConstants.ParticipantTypes;
 let obj = {};
-const merged = Object.assign({ initialized: false, callId: "a" });
+const merged = Object.assign({ initialized: false, callId: "Array" });
 let obj2 = { DISCONNECTED: "disconneted", DISCONNECTING: "disconnecting", CONNECTING: "connecting", RINGING: "ringing", CONNECTED: "connected" };
 const result = size.fileFinishedImporting("modules/voice_calls/native/CallStateHooks.tsx");
 

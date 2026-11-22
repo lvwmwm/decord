@@ -1,7 +1,7 @@
 // Module ID: 19399
 // Function ID: 19400
 // Name: superagentPatch
-// Dependencies: [5, 5530, 1071, 1285, 19400, 1379, 1450, 572, 1284, 502, 1360, 2188, 1386, 1255, 1378, 19401, 1113, 19402, 19403, 7, 1241, 19406, 2119, 6363, 17088, 7743, 6514, 19417, 6404, 19418, 1478, 2]
+// Dependencies: [5, 5530, 1071, 1285, 19400, 1379, 1450, 572, 1284, 502, 1360, 2188, 1386, 1255, 1378, 19401, 1113, 19402, 19403, 7, 1241, 19406, 2119, 6363, 17086, 7743, 6514, 19417, 6404, 19418, 1478, 2]
 
 // Module 19399 (superagentPatch)
 import LogAggregatorAll from "LogAggregator" /* 7 */;
@@ -351,7 +351,7 @@ let obj3 = {
           mfa = body3.mfa;
         }
         if (mfa) {
-          const promise4 = asyncRequire(17088, dependencyMap.paths);
+          const promise4 = asyncRequire(17086, dependencyMap.paths);
           const nextPromise2 = promise4.then((openMFAModal) => {
             openMFAModal.openMFAModal(closure_0.body.mfa, closure_1, closure_2);
           });

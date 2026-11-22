@@ -1,9 +1,9 @@
-// Module ID: 12851
-// Function ID: 12852
+// Module ID: 12849
+// Function ID: 12850
 // Name: SlowModeIndicator
 // Dependencies: [32, 19, 8388, 21, 4913, 575, 504, 8389, 8942, 7030, 5504, 12074, 2]
 
-// Module 12851 (SlowModeIndicator)
+// Module 12849 (SlowModeIndicator)
 import nativeDefault from "native" /* 575 */;
 import SlowmodeUtils from "SlowmodeUtils" /* 8389 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

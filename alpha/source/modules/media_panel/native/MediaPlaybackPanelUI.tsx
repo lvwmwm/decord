@@ -1,7 +1,7 @@
 // Module ID: 19389
 // Function ID: 19390
 // Name: MediaPlaybackPanelUI
-// Dependencies: [32, 19, 10840, 15784, 11751, 11750, 21, 4913, 575, 1628, 1494, 19388, 1653, 10656, 11754, 19184, 5123, 5126, 5514, 19186, 5491, 5173, 19390, 2]
+// Dependencies: [32, 19, 10840, 15782, 11751, 11750, 21, 4913, 575, 1628, 1494, 19388, 1653, 10656, 11754, 19184, 5123, 5126, 5514, 19186, 5491, 5173, 19390, 2]
 // Exports: default
 
 // Module 19389 (MediaPlaybackPanelUI)
@@ -15,7 +15,7 @@ import MorphablePanelConstants from "MorphablePanelConstants" /* 11751 */;
 import MediaPlaybackPanelStateContextDefault from "MediaPlaybackPanelStateContext" /* 19388 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import SafeAreaDisabledStore from "SafeAreaDisabledStore" /* 10840 */;
-import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 15784 */;
+import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 15782 */;
 import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 

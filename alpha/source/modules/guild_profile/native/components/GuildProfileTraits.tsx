@@ -1,10 +1,10 @@
-// Module ID: 13809
-// Function ID: 13810
+// Module ID: 13807
+// Function ID: 13808
 // Name: GuildProfileTraits
 // Dependencies: [19, 17, 21, 4913, 575, 1412, 4863, 7496, 5504, 2]
 // Exports: default
 
-// Module 13809 (GuildProfileTraits)
+// Module 13807 (GuildProfileTraits)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;

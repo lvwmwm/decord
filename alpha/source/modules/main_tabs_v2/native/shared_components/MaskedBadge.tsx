@@ -15,7 +15,7 @@ import size from "module_2" /* 2 */;
 
 let obj2;
 const jsx = Fragment.jsx;
-const obj = { maskStyle: { position: "relative", right: "IconComponent" }, unreadDot: { width: 0, height: 0 }, badgeStyle: { flexGrow: 1, flexShrink: 0 }, unreadBadge: { position: "relative", bottom: -3 }, lowPriorityBadge: obj2 };
+const obj = { maskStyle: { position: "relative", right: "HermesInternal" }, unreadDot: { width: 0, height: 0 }, badgeStyle: { flexGrow: 1, flexShrink: 0 }, unreadBadge: { position: "relative", bottom: -3 }, lowPriorityBadge: obj2 };
 obj2 = { backgroundColor: nativeDefault.unsafe_rawColors.PRIMARY_400 };
 let closure_5 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/main_tabs_v2/native/shared_components/MaskedBadge.tsx");

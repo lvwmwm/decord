@@ -10,11 +10,11 @@ import ConjureProjectTypes from "ConjureProjectTypes" /* 6622 */;
 import conjurePlanTags from "conjurePlanTags" /* 18559 */;
 import size from "module_2" /* 2 */;
 
-const f115179 = (bot) => {
+const f115190 = (bot) => {
   const str = bot.bot;
   return "" !== str.trim();
 };
-const f115180 = (item) => {
+const f115191 = (item) => {
   let bot;
   let obj2;
   let user;
@@ -32,7 +32,7 @@ const f115180 = (item) => {
   }
   return obj2;
 };
-const f115181 = (kind) => {
+const f115192 = (kind) => {
   let tmp = "command" === kind.kind;
   if (!tmp) {
     tmp = "user_command" === kind.kind || "message_command" === kind.kind;
@@ -127,14 +127,14 @@ export function getConjurePlanBotInteraction(bot) {
   return tmp2;
 }
 export function getConjurePlanExperienceBotExchanges(arr) {
-  const found = arr.filter(f115179);
+  const found = arr.filter(f115190);
   const substr = found.slice(0, 3);
-  return substr.map(f115180);
+  return substr.map(f115191);
 }
 export function mergeConjurePlanBotExchanges(arr, arg1) {
   if (0 !== arg1.length) {
     let items;
-    if (!arr.some(f115181)) {
+    if (!arr.some(f115192)) {
       items = [];
       items[HermesBuiltin.arraySpread(items, arr.slice(0, 2), 0)] = arg1[0];
     }
@@ -151,15 +151,15 @@ export function getConjurePlanSectionBotExchanges(kind, arg1, arg2) {
       example_exchanges = [];
     }
     let arr2 = arg1;
-    const found = example_exchanges.filter(f115179);
+    const found = example_exchanges.filter(f115190);
     const substr = found.slice(0, 3);
-    const mapped = substr.map(f115180);
+    const mapped = substr.map(f115191);
     if (mapped.length > 0) {
       arr2 = mapped;
     }
     if (0 !== arg2.length) {
       let items;
-      if (!arr2.some(f115181)) {
+      if (!arr2.some(f115192)) {
         items = [];
         let tmp2 = items;
         items[HermesBuiltin.arraySpread(items, arr2.slice(0, 2), 0)] = arg2[0];

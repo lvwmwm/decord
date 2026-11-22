@@ -1,10 +1,10 @@
-// Module ID: 13087
-// Function ID: 13088
+// Module ID: 13085
+// Function ID: 13086
 // Name: PollAnswerInput
-// Dependencies: [32, 19, 17, 4762, 8315, 8521, 1389, 21, 4913, 575, 13088, 1112, 8456, 7030, 1186, 9063, 10453, 7241, 5127, 13089, 2119, 9490, 7709, 5621, 13092, 2]
+// Dependencies: [32, 19, 17, 4762, 8315, 8521, 1389, 21, 4913, 575, 13086, 1112, 8456, 7030, 1186, 9063, 10453, 7241, 5127, 13087, 2119, 9490, 7709, 5621, 13090, 2]
 // Exports: default
 
-// Module 13087 (PollAnswerInput)
+// Module 13085 (PollAnswerInput)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1112 */;
 import EmojiConstants from "EmojiConstants" /* 1389 */;
@@ -211,7 +211,7 @@ export default function PollAnswerInput(answer) {
     openImageInputActionSheet() {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { channelId, index, answer, onSaveAltText: handleSaveAltText, onRemoveAnswerImage, openExpressionPicker };
-      obj.openLazy(asyncRequire(13089, dependencyMap.paths), unpackModuleId, obj2);
+      obj.openLazy(asyncRequire(13087, dependencyMap.paths), unpackModuleId, obj2);
     },
     iconSrc: index(channelId[21]),
     containerStyle: tmp.defaultImageContainer,
@@ -238,14 +238,14 @@ export default function PollAnswerInput(answer) {
     },
     blurOnSubmit: false,
     style: tmp.pollAnswerTextInput,
-    selectionColor: "channel_id",
-    textContentType: 16192376236573344000000000000000000000000000000000000000000000000000000000000000000,
+    selectionColor: "channel",
+    textContentType: null,
     accessibilityLabel: intl2.formatToPlainString(answer(channelId[11]).t["3+V8G9"], obj6),
     accessibilityHint: formatToPlainStringResult,
     maxLength,
-    returnKeyType: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007490645142137,
-    required: -573032490325623300000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000,
-    autoCorrect: 0.000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000015710889413692892,
+    returnKeyType: true,
+    required: true,
+    autoCorrect: true,
     "aria-invalid": error
   };
   const FormInput = tmp9(tmp10[22]).FormInput;

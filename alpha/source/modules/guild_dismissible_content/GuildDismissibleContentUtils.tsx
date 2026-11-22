@@ -1,10 +1,10 @@
-// Module ID: 13385
-// Function ID: 13386
+// Module ID: 13383
+// Function ID: 13384
 // Name: GuildDismissibleContentUtils
 // Dependencies: [1230, 1071, 4759, 1081, 4745, 504, 4743, 1255, 4746, 2]
 // Exports: isContentDismissed, markContentAsDismissed, unmarkContentAsDismissed, useIsContentDismissed
 
-// Module 13385 (GuildDismissibleContentUtils)
+// Module 13383 (GuildDismissibleContentUtils)
 import Constants from "Constants" /* 1071 */;
 import UserSettingsConstants from "UserSettingsConstants" /* 1081 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;

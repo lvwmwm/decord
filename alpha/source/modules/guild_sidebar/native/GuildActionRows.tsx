@@ -1,7 +1,7 @@
 // Module ID: 17722
 // Function ID: 17723
 // Name: GuildActionRows
-// Dependencies: [19, 17, 8325, 6619, 5642, 7468, 6553, 21, 4913, 575, 6827, 4945, 4746, 563, 8321, 6429, 11991, 2119, 13250, 13147, 1112, 15054, 2]
+// Dependencies: [19, 17, 8325, 6619, 5642, 7468, 6553, 21, 4913, 575, 6827, 4945, 4746, 563, 8321, 6429, 11991, 2119, 13248, 13145, 1112, 15052, 2]
 // Exports: GuildRolesAndChannelsRow
 
 // Module 17722 (GuildActionRows)
@@ -54,9 +54,9 @@ export function GuildRolesAndChannelsRow(guild) {
     const obj2 = { guildId: id };
     obj.pushLazy(asyncRequire(11991, dependencyMap.paths), obj2, closure_7);
   }, items2);
-  let SELECTED = guild(13250).ChannelModes.DEFAULT;
+  let SELECTED = guild(13248).ChannelModes.DEFAULT;
   if (selected) {
-    SELECTED = tmp5(13250).ChannelModes.SELECTED;
+    SELECTED = tmp5(13248).ChannelModes.SELECTED;
   }
   let tmp10 = !result;
   if (result) {
@@ -67,9 +67,9 @@ export function GuildRolesAndChannelsRow(guild) {
   }
   let tmp11 = null;
   if (tmp10) {
-    tmp11 = <View style={tmp.channelInfoContainer}>{jsx(guild(13147).NewBadge, {})}</View>;
+    tmp11 = <View style={tmp.channelInfoContainer}>{jsx(guild(13145).NewBadge, {})}</View>;
   }
-  tmp2(13250);
+  tmp2(13248);
   const intl = tmp5(1112).intl;
   const string = intl.string;
   const t = tmp5(1112).t;
@@ -78,7 +78,7 @@ export function GuildRolesAndChannelsRow(guild) {
   } else {
     stringResult = string(t.et6wav);
   }
-  const BaseChannelName = tmp5(13250).BaseChannelName;
+  const BaseChannelName = tmp5(13248).BaseChannelName;
   const intl2 = tmp5(1112).intl;
   const string2 = intl2.string;
   const t2 = tmp5(1112).t;
@@ -87,7 +87,7 @@ export function GuildRolesAndChannelsRow(guild) {
   } else {
     string2(t2.et6wav);
   }
-  ({ mode: SELECTED, IconComponent: guild(15054).ChannelListMagnifyingGlassIcon });
-  const BaseChannelIcon = tmp5(13250).BaseChannelIcon;
+  ({ mode: SELECTED, IconComponent: guild(15052).ChannelListMagnifyingGlassIcon });
+  const BaseChannelIcon = tmp5(13248).BaseChannelIcon;
   return <tmp2Result onPress={callback} style={tmp.container} accessible accessibilityLabel={stringResult} accessibilityState={{ selected }} mode={SELECTED} name={null} icon={null} channelInfo={tmp11} />;
 }

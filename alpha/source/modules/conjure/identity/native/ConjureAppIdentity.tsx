@@ -1,7 +1,7 @@
 // Module ID: 18275
 // Function ID: 18276
 // Name: ConjureAppIdentity
-// Dependencies: [32, 5, 19, 17, 21, 575, 4913, 8442, 8475, 18276, 1112, 4190, 1491, 18258, 9487, 12322, 8658, 15947, 7047, 18277, 5600, 5929, 7221, 6622, 5504, 7461, 2]
+// Dependencies: [32, 5, 19, 17, 21, 575, 4913, 8442, 8475, 18276, 1112, 4190, 1491, 18258, 9487, 12329, 8658, 15945, 7047, 18277, 5600, 5929, 7221, 6622, 5504, 7461, 2]
 // Exports: ConjureAppIdentitySection
 
 // Module 18275 (ConjureAppIdentity)
@@ -13,7 +13,7 @@ import FastImageDefault from "FastImage" /* 5600 */;
 import Card_Card from "Card/Card" /* 7047 */;
 import ImagePickerDefault from "ImagePicker" /* 8475 */;
 import UploadIcon from "UploadIcon" /* 9487 */;
-import MagicWandIcon from "MagicWandIcon" /* 12322 */;
+import MagicWandIcon from "MagicWandIcon" /* 12329 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;

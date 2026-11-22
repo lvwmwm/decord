@@ -1,10 +1,10 @@
-// Module ID: 15955
-// Function ID: 15956
+// Module ID: 15953
+// Function ID: 15954
 // Name: UserProfileWidgetEditingHeader
-// Dependencies: [19, 17, 502, 8069, 21, 4913, 575, 504, 10349, 5504, 1112, 5511, 9578, 8136, 5127, 14576, 2119, 7591, 10228, 15956, 2]
+// Dependencies: [19, 17, 502, 8069, 21, 4913, 575, 504, 10349, 5504, 1112, 5511, 9578, 8136, 5127, 14574, 2119, 7591, 10228, 15954, 2]
 // Exports: default
 
-// Module 15955 (UserProfileWidgetEditingHeader)
+// Module 15953 (UserProfileWidgetEditingHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import asyncRequire from "asyncRequire" /* 2119 */;
@@ -61,7 +61,7 @@ export default function UserProfileWidgetEditingHeader() {
       const obj2 = { userId: stateFromStores, action: constants.PRESS_ADD_WIDGET };
       const result = obj.trackUserProfileEditAction(obj2);
       const obj3 = ActionSheetActionCreatorsDefault;
-      obj3.openLazy(asyncRequire(14576, dependencyMap.paths), "UserProfileWidgetAddActionSheet");
+      obj3.openLazy(asyncRequire(14574, dependencyMap.paths), "UserProfileWidgetAddActionSheet");
     }
   };
   const Button = stateFromStores(5511).Button;
@@ -79,7 +79,7 @@ export default function UserProfileWidgetEditingHeader() {
     onPress() {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { returnFocusRef: ref };
-      return obj.openLazy(asyncRequire(15956, dependencyMap.paths), "UserProfileWidgetReorderActionSheet", obj2);
+      return obj.openLazy(asyncRequire(15954, dependencyMap.paths), "UserProfileWidgetReorderActionSheet", obj2);
     }
   };
   const IconButton = stateFromStores(7591).IconButton;

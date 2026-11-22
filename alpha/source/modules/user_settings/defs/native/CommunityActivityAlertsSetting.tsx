@@ -1,14 +1,14 @@
-// Module ID: 16914
-// Function ID: 16915
+// Module ID: 16912
+// Function ID: 16913
 // Name: CommunityActivityAlertsSetting
-// Dependencies: [11101, 8712, 1071, 504, 1112, 11937, 16915, 16896, 2]
+// Dependencies: [11101, 8712, 1071, 504, 1112, 11937, 16913, 16894, 2]
 
-// Module 16914 (CommunityActivityAlertsSetting)
+// Module 16912 (CommunityActivityAlertsSetting)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
 import SettingsConstants from "SettingsConstants" /* 8712 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 16896 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 16894 */;
 import GuildIncidentsStore from "GuildIncidentsStore" /* 11101 */;
 import SettingBuilders_mod from "SettingBuilders" /* 11937 */;
 import size from "module_2" /* 2 */;

@@ -1,10 +1,10 @@
-// Module ID: 12882
-// Function ID: 12883
+// Module ID: 12880
+// Function ID: 12881
 // Name: ForumPostAppliedTags
 // Dependencies: [19, 17, 21, 4913, 575, 11614, 2]
 // Exports: ForumPostAppliedTagPills, ForumPostAppliedTags
 
-// Module 12882 (ForumPostAppliedTags)
+// Module 12880 (ForumPostAppliedTags)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AppliedForumTag2 from "AppliedForumTag" /* 11614 */;

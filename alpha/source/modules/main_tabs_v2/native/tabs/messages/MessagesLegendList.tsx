@@ -1,7 +1,7 @@
 // Module ID: 17577
 // Function ID: 17578
 // Name: MessagesLegendList
-// Dependencies: [19, 21, 17578, 17550, 17617, 17618, 17561, 17560, 17564, 17579, 17616, 17619, 13902, 2]
+// Dependencies: [19, 21, 17578, 17550, 17617, 17618, 17561, 17560, 17564, 17579, 17616, 17619, 13900, 2]
 
 // Module 17577 (MessagesLegendList)
 import Fragment from "Fragment" /* 21 */;

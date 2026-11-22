@@ -1,12 +1,12 @@
-// Module ID: 19912
-// Function ID: 19913
+// Module ID: 19909
+// Function ID: 19910
 // Name: GuildSettingsAnalyticsStore
-// Dependencies: [19913, 504, 572, 2]
+// Dependencies: [19910, 504, 572, 2]
 
-// Module 19912 (GuildSettingsAnalyticsStore)
+// Module 19909 (GuildSettingsAnalyticsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import createCompounderDefault from "createCompounder" /* 19913 */;
+import createCompounderDefault from "createCompounder" /* 19910 */;
 import size from "module_2" /* 2 */;
 
 let closure_3;

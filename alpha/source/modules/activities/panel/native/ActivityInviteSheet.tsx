@@ -1,7 +1,7 @@
 // Module ID: 19192
 // Function ID: 19193
 // Name: ActivityInviteSheet
-// Dependencies: [32, 19, 17, 12084, 13191, 1071, 8438, 1082, 21, 4913, 575, 8065, 7520, 7539, 5127, 8067, 8054, 11941, 504, 13190, 7267, 5141, 7515, 1112, 1186, 14644, 7427, 19193, 2]
+// Dependencies: [32, 19, 17, 12084, 13189, 1071, 8438, 1082, 21, 4913, 575, 8065, 7520, 7539, 5127, 8067, 8054, 11941, 504, 13188, 7267, 5141, 7515, 1112, 1186, 14642, 7427, 19193, 2]
 // Exports: default
 
 // Module 19192 (ActivityInviteSheet)
@@ -14,11 +14,11 @@ import InviteTargetTypes from "InviteTargetTypes" /* 7267 */;
 import UserPlaceholderRowDefault from "UserPlaceholderRow" /* 8065 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8067 */;
 import Constants3 from "Constants" /* 8438 */;
-import InviteSuggestionsActionCreators from "InviteSuggestionsActionCreators" /* 13190 */;
+import InviteSuggestionsActionCreators from "InviteSuggestionsActionCreators" /* 13188 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 12084 */;
-import InviteSuggestionsStore from "InviteSuggestionsStore" /* 13191 */;
+import InviteSuggestionsStore from "InviteSuggestionsStore" /* 13189 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
@@ -210,7 +210,7 @@ export default function ActivityInviteSheet(activity) {
   BottomSheetTitleHeader = tmp11(7515).BottomSheetTitleHeader;
   intl = tmp11(1112).intl;
   if (null != tmp6) {
-    const obj5 = { style: tmp.emptyState, Illustration: activity(14644).AppCrash, title: tmp6 };
+    const obj5 = { style: tmp.emptyState, Illustration: activity(14642).AppCrash, title: tmp6 };
     const EmptyState2 = tmp11(1186).EmptyState;
     tmp19Result = tmp17(EmptyState2, obj5);
   } else if (0 === stateFromStores.length && tmp13) {
@@ -219,7 +219,7 @@ export default function ActivityInviteSheet(activity) {
     let tmp17Result2;
     const obj6 = { children: tmp17(View, obj7) };
     obj7 = { style: tmp.searchAndShareContainer, children: tmp17(SearchBar, obj8) };
-    obj8 = { size: "md", round: true, onChange: activity(13190).searchInviteSuggestions, placeholder: intl2.string(activity(1112).t.iI1gMg) };
+    obj8 = { size: "md", round: true, onChange: activity(13188).searchInviteSuggestions, placeholder: intl2.string(activity(1112).t.iI1gMg) };
     SearchBar = tmp11(7427).SearchBar;
     intl2 = tmp11(1112).intl;
     const items4 = [tmp17(View, obj6), ];

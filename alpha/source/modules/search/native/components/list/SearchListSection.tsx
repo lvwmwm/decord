@@ -1,7 +1,7 @@
 // Module ID: 18777
 // Function ID: 18778
 // Name: SearchListSection
-// Dependencies: [19, 17, 8576, 21, 4913, 5504, 7565, 12799, 7030, 2]
+// Dependencies: [19, 17, 8576, 21, 4913, 5504, 7565, 12797, 7030, 2]
 
 // Module 18777 (SearchListSection)
 import react_native from "react-native" /* 17 */;
@@ -40,7 +40,7 @@ const memoResult = react.memo(function SearchListSection(trailing) {
     if (true === collapsed) {
       ChevronSmallDownIcon = tmp3(7565).ChevronSmallRightIcon;
     } else {
-      ChevronSmallDownIcon = tmp3(12799).ChevronSmallDownIcon;
+      ChevronSmallDownIcon = tmp3(12797).ChevronSmallDownIcon;
     }
     const obj = { accessibilityRole: "button", accessibilityLabel: title, accessibilityState: obj3, activeOpacity: 0.4, onPress: onToggle, style: tmp.section, children: items1 };
     items1 = [tmp5, ];

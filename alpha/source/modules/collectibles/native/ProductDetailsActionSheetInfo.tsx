@@ -1,10 +1,10 @@
-// Module ID: 14224
-// Function ID: 14225
+// Module ID: 14222
+// Function ID: 14223
 // Name: ProductDetailsActionSheetInfo
-// Dependencies: [17, 21, 4913, 575, 14225, 5504, 8087, 9038, 1112, 14226, 2112, 2]
+// Dependencies: [17, 21, 4913, 575, 14223, 5504, 8087, 9038, 1112, 14224, 2112, 2]
 // Exports: default
 
-// Module 14224 (ProductDetailsActionSheetInfo)
+// Module 14222 (ProductDetailsActionSheetInfo)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
@@ -12,8 +12,8 @@ import CollectiblesItemType from "CollectiblesItemType" /* 2112 */;
 import Text_Text from "Text/Text" /* 5504 */;
 import CollectiblesUtils from "CollectiblesUtils" /* 8087 */;
 import useProductPurchaseState from "useProductPurchaseState" /* 9038 */;
-import useProductDescription from "useProductDescription" /* 14225 */;
-import InlinePriceTagDefault from "InlinePriceTag" /* 14226 */;
+import useProductDescription from "useProductDescription" /* 14223 */;
+import InlinePriceTagDefault from "InlinePriceTag" /* 14224 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;

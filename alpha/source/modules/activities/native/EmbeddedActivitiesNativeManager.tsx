@@ -1,9 +1,9 @@
-// Module ID: 15777
-// Function ID: 15778
+// Module ID: 15775
+// Function ID: 15776
 // Name: EmbeddedActivitiesNativeManager
-// Dependencies: [17, 4762, 5654, 4761, 1071, 1378, 15778, 15779, 1107, 5850, 4834, 1255, 572, 15677, 15678, 10671, 5098, 5861, 1112, 5595, 1254, 10787, 2]
+// Dependencies: [17, 4762, 5654, 4761, 1071, 1378, 15776, 15777, 1107, 5850, 4834, 1255, 572, 15675, 15676, 10671, 5098, 5861, 1112, 5595, 1254, 10787, 2]
 
-// Module 15777 (EmbeddedActivitiesNativeManager)
+// Module 15775 (EmbeddedActivitiesNativeManager)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1107 */;
@@ -16,13 +16,13 @@ import ThermalUtilsDefault from "ThermalUtils" /* 5850 */;
 import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5861 */;
 import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 10671 */;
 import activityWebViewController from "activityWebViewController" /* 10787 */;
-import react_nativeDefault from "react-native" /* 15778 */;
+import react_nativeDefault from "react-native" /* 15776 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
 import RTCConnectionStore from "RTCConnectionStore" /* 5654 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4761 */;
 import Constants from "Constants" /* 1071 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
-import EmbeddedActivitiesManager from "EmbeddedActivitiesManager" /* 15779 */;
+import EmbeddedActivitiesManager from "EmbeddedActivitiesManager" /* 15777 */;
 import size from "module_2" /* 2 */;
 
 let basicChannel, currentEmbeddedActivity, rawThermalState;

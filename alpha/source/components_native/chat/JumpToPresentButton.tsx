@@ -1,10 +1,10 @@
-// Module ID: 13132
-// Function ID: 13133
+// Module ID: 13130
+// Function ID: 13131
 // Name: JumpToPresentButton
-// Dependencies: [19, 17, 10382, 6394, 5964, 21, 4913, 575, 1378, 5477, 504, 10854, 1112, 13133, 13134, 13135, 2]
+// Dependencies: [19, 17, 10382, 6394, 5964, 21, 4913, 575, 1378, 5477, 504, 10854, 1112, 13131, 13132, 13133, 2]
 // Exports: default
 
-// Module 13132 (JumpToPresentButton)
+// Module 13130 (JumpToPresentButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
@@ -101,11 +101,11 @@ export default function JumpToPresentButton(channelId) {
   }
   const items3 = [tmp.container, tmp10];
   if (tmp5) {
-    const obj6 = { accessibilityLabel: stringResult, icon: screenIndex(13134), onPress: onJumpToPresent };
-    const tmp16 = screenIndex(13133);
+    const obj6 = { accessibilityLabel: stringResult, icon: screenIndex(13132), onPress: onJumpToPresent };
+    const tmp16 = screenIndex(13131);
     tmp12Result = tmp12(tmp16, obj6);
   } else {
-    tmp12Result = tmp12(tmp3(13135).MemoedVoicePanelDismissChatButton, {});
+    tmp12Result = tmp12(tmp3(13133).MemoedVoicePanelDismissChatButton, {});
   }
   return <tmp13 style={items3}>{tmp12Result}</tmp13>;
 };

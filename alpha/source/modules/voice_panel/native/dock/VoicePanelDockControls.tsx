@@ -1,7 +1,7 @@
 // Module ID: 18013
 // Function ID: 18014
 // Name: VoicePanelDockControls
-// Dependencies: [19, 17, 4762, 2131, 6495, 11768, 1071, 21, 4913, 575, 504, 11009, 10985, 5477, 5129, 7591, 1112, 9682, 11010, 6529, 8615, 13420, 11749, 18010, 18014, 18034, 18037, 2]
+// Dependencies: [19, 17, 4762, 2131, 6495, 11768, 1071, 21, 4913, 575, 504, 11009, 10985, 5477, 5129, 7591, 1112, 9682, 11010, 6529, 8615, 13418, 11749, 18010, 18014, 18034, 18037, 2]
 
 // Module 18013 (VoicePanelDockControls)
 import react_native from "react-native" /* 17 */;
@@ -16,7 +16,7 @@ import AssetRegistryDefault from "AssetRegistry" /* 8615 */;
 import VoiceActionUtils from "VoiceActionUtils" /* 11009 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11749 */;
 import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11768 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13420 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 13418 */;
 import useDockBoxShadowDefault from "useDockBoxShadow" /* 18010 */;
 import useSoundboardConfig from "useSoundboardConfig" /* 18014 */;
 import VoicePanelDockButtonRimDefault from "VoicePanelDockButtonRim" /* 18037 */;

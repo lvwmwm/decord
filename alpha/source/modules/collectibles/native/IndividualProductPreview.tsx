@@ -1,7 +1,7 @@
 // Module ID: 9046
 // Function ID: 9047
 // Name: IndividualProductPreview
-// Dependencies: [19, 17, 1073, 21, 4913, 575, 5468, 8920, 9047, 9452, 14218, 14219, 2112, 1074, 14220, 14223, 2]
+// Dependencies: [19, 17, 1073, 21, 4913, 575, 5468, 8920, 9047, 9452, 14216, 14217, 2112, 1074, 14218, 14221, 2]
 // Exports: IndividualProductPreview
 
 // Module 9046 (IndividualProductPreview)
@@ -11,8 +11,8 @@ import LinearGradientDefault from "LinearGradient" /* 5468 */;
 import useCurrentUser from "useCurrentUser" /* 8920 */;
 import ProfileEffectUserPreviewDefault from "ProfileEffectUserPreview" /* 9047 */;
 import ProfileFrameUserPreviewDefault from "ProfileFrameUserPreview" /* 9452 */;
-import AvatarDecorationProductPreviewDefault from "AvatarDecorationProductPreview" /* 14218 */;
-import NameplateProductPreviewDefault from "NameplateProductPreview" /* 14219 */;
+import AvatarDecorationProductPreviewDefault from "AvatarDecorationProductPreview" /* 14216 */;
+import NameplateProductPreviewDefault from "NameplateProductPreview" /* 14217 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1073 */;
@@ -151,11 +151,11 @@ export function IndividualProductPreview(arg0) {
     let tmp5;
     const ALL = tmp(1074).FractionalPremiumSKUsSets.ALL;
     if (ALL.has(product.skuId)) {
-      tmp5 = metroImportDefault(tmp(14220).FractionalNitroPreview, {});
+      tmp5 = metroImportDefault(tmp(14218).FractionalNitroPreview, {});
     } else {
       tmp5 = null;
       if (product.skuId === hasOwnProperty.ORB_PROFILE_BADGE) {
-        tmp5 = metroImportDefault(tmp(14223).OrbBadgePreview, {});
+        tmp5 = metroImportDefault(tmp(14221).OrbBadgePreview, {});
       }
     }
     return tmp5;

@@ -1,7 +1,7 @@
 // Module ID: 17704
 // Function ID: 17705
 // Name: GameClaimCoachmark
-// Dependencies: [5, 19, 17, 1071, 4759, 21, 575, 17705, 5643, 5517, 4913, 17706, 10233, 1112, 7047, 7030, 7151, 5504, 5511, 12427, 9595, 9599, 2]
+// Dependencies: [5, 19, 17, 1071, 4759, 21, 575, 17705, 5643, 5517, 4913, 17706, 10233, 1112, 7047, 7030, 7151, 5504, 5511, 12434, 9595, 9599, 2]
 // Exports: getScaledGameClaimNoticeHeight
 
 // Module 17704 (GameClaimCoachmark)
@@ -39,7 +39,7 @@ const components_Button_Button = tmp2(5511);
 const Pressables = tmp2(7030);
 const Card_Card = tmp2(7047);
 const XSmallIcon = tmp2(7151);
-const LinkExternalSmallIcon = tmp2(12427);
+const LinkExternalSmallIcon = tmp2(12434);
 const GameClaimCardStackDefault = tmp5(17705);
 const View = react_native.View;
 ({ GuildFeatures: hasOwnProperty, RelativeMarketingURLs: metroRequire } = Constants);

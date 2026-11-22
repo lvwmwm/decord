@@ -1,10 +1,10 @@
-// Module ID: 14354
-// Function ID: 14355
+// Module ID: 14352
+// Function ID: 14353
 // Name: useConjureAppChannelSoundButton
-// Dependencies: [19, 6623, 6624, 6865, 5557, 14355, 504, 14356, 10981, 7034, 1112, 4190, 5595, 10622, 2]
+// Dependencies: [19, 6623, 6624, 6865, 5557, 14353, 504, 14354, 10981, 7034, 1112, 4190, 5595, 10622, 2]
 // Exports: default
 
-// Module 14354 (useConjureAppChannelSoundButton)
+// Module 14352 (useConjureAppChannelSoundButton)
 import intl2 from "intl" /* 1112 */;
 import _modDef4190 from "module_4190" /* 4190 */;
 import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5557 */;

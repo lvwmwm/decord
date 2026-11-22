@@ -1,10 +1,10 @@
-// Module ID: 16943
-// Function ID: 16944
+// Module ID: 16941
+// Function ID: 16942
 // Name: AppIconRows
-// Dependencies: [32, 19, 17, 1386, 21, 4913, 4939, 7348, 1112, 16944, 14049, 504, 2108, 4941, 16945, 2]
+// Dependencies: [32, 19, 17, 1386, 21, 4913, 4939, 7348, 1112, 16942, 14047, 504, 2108, 4941, 16943, 2]
 // Exports: default
 
-// Module 16943 (AppIconRows)
+// Module 16941 (AppIconRows)
 import react_native from "react-native" /* 17 */;
 import react2 from "react" /* 19 */;
 import get_initialized from "get initialized" /* 504 */;
@@ -12,9 +12,9 @@ import intl4 from "intl" /* 1112 */;
 import PremiumTypeUtils from "PremiumTypeUtils" /* 2108 */;
 import AppIconTypes from "AppIconTypes" /* 4939 */;
 import HexagonCampaignUtils from "HexagonCampaignUtils" /* 4941 */;
-import AppIconUtils from "AppIconUtils" /* 14049 */;
-import AppIconRowDefault from "AppIconRow" /* 16944 */;
-import HexagonCampaignAppIconSectionDefault from "HexagonCampaignAppIconSection" /* 16945 */;
+import AppIconUtils from "AppIconUtils" /* 14047 */;
+import AppIconRowDefault from "AppIconRow" /* 16942 */;
+import HexagonCampaignAppIconSectionDefault from "HexagonCampaignAppIconSection" /* 16943 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import UserStore from "UserStore" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;

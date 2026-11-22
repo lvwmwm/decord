@@ -1,7 +1,7 @@
 // Module ID: 19359
 // Function ID: 19360
 // Name: VoicePanelSoundboardButton
-// Dependencies: [19, 21, 4913, 575, 11749, 19346, 18014, 19347, 1112, 7324, 13419, 2]
+// Dependencies: [19, 21, 4913, 575, 11749, 19346, 18014, 19347, 1112, 7324, 13417, 2]
 // Exports: default
 
 // Module 19359 (VoicePanelSoundboardButton)
@@ -9,7 +9,7 @@ import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
 import NativeViewDefault from "NativeView" /* 7324 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11749 */;
-import SoundboardIcon from "SoundboardIcon" /* 13419 */;
+import SoundboardIcon from "SoundboardIcon" /* 13417 */;
 import useSoundboardConfig from "useSoundboardConfig" /* 18014 */;
 import VoicePanelStyles from "VoicePanelStyles" /* 19346 */;
 import VoicePanelAnimatedButtonWrapperDefault from "VoicePanelAnimatedButtonWrapper" /* 19347 */;

@@ -1,17 +1,17 @@
-// Module ID: 12126
-// Function ID: 12127
+// Module ID: 12133
+// Function ID: 12134
 // Name: CheckpointCharacterImage
-// Dependencies: [5, 17, 6496, 9721, 1378, 5990, 12127, 7802, 5594, 5860, 1112, 9723, 5662, 9718, 2]
+// Dependencies: [5, 17, 6496, 9721, 1378, 5990, 12134, 7802, 5594, 5860, 1112, 9723, 5662, 9718, 2]
 // Exports: saveCheckpointCharacterImage, shareCheckpointCharacterImage
 
-// Module 12126 (CheckpointCharacterImage)
+// Module 12133 (CheckpointCharacterImage)
 import react_native from "react-native" /* 17 */;
 import checkpoint_CheckpointMessageComponentUtils from "checkpoint/CheckpointMessageComponentUtils" /* 5990 */;
 import NativePermissionConstants from "NativePermissionConstants" /* 6496 */;
 import react_nativeDefault from "react-native" /* 7802 */;
 import SharePreparingModalConstants from "SharePreparingModalConstants" /* 9721 */;
 import showSharePreparingModal from "showSharePreparingModal" /* 9723 */;
-import react_nativeDefault2 from "react-native" /* 12127 */;
+import react_nativeDefault2 from "react-native" /* 12134 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import PlatformUtils_mod from "PlatformUtils" /* 1378 */;
 import size from "module_2" /* 2 */;

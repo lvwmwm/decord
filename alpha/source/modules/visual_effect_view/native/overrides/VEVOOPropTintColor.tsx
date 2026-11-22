@@ -1,14 +1,14 @@
 // Module ID: 17439
 // Function ID: 17440
 // Name: VEVOOPropTintColor
-// Dependencies: [32, 19, 17, 5482, 21, 4913, 575, 17436, 4910, 7709, 7557, 17438, 15840, 1089, 2]
+// Dependencies: [32, 19, 17, 5482, 21, 4913, 575, 17436, 4910, 7709, 7557, 17438, 15838, 1089, 2]
 
 // Module 17439 (VEVOOPropTintColor)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1089 */;
 import ColorUtils from "ColorUtils" /* 4910 */;
-import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 15840 */;
+import showCustomColorPickerActionSheetDefault from "showCustomColorPickerActionSheet" /* 15838 */;
 import VEVOO from "VEVOO" /* 17436 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;

@@ -1,7 +1,7 @@
 // Module ID: 17982
 // Function ID: 17983
 // Name: VoicePanelDockGlow
-// Dependencies: [32, 19, 17, 11768, 21, 11749, 1653, 5123, 5477, 575, 17983, 7865, 10598, 13311, 13310, 13313, 4910, 11775, 5468, 2]
+// Dependencies: [32, 19, 17, 11768, 21, 11749, 1653, 5123, 5477, 575, 17983, 7865, 10598, 13309, 13308, 13311, 4910, 11775, 5468, 2]
 // Exports: VoicePanelDockBottomLine, VoicePanelDockGlow
 
 // Module 17982 (VoicePanelDockGlow)
@@ -14,9 +14,9 @@ import inlineStyles from "inlineStyles" /* 7865 */;
 import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 10598 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11749 */;
 import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11768 */;
-import VoicePanelDockRimLight from "VoicePanelDockRimLight" /* 13310 */;
-import useVoicePanelDockLevelProps from "useVoicePanelDockLevelProps" /* 13311 */;
-import LiveVoiceLevelViewDefault from "LiveVoiceLevelView" /* 13313 */;
+import VoicePanelDockRimLight from "VoicePanelDockRimLight" /* 13308 */;
+import useVoicePanelDockLevelProps from "useVoicePanelDockLevelProps" /* 13309 */;
+import LiveVoiceLevelViewDefault from "LiveVoiceLevelView" /* 13311 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -341,7 +341,7 @@ export function VoicePanelDockBottomLine(micLive) {
     items[2] = obj2.hexWithOpacity(token, 0);
     return items;
   }, items);
-  let obj2 = token(13311);
+  let obj2 = token(13309);
   const voicePanelDockGlowLevelProps = obj2.useVoicePanelDockGlowLevelProps();
   const items1 = [closure_21, getDockInset, dockPressProgress, isDockConnected, wrapperDimensions, , , , , , , ];
   const useAnimatedStyle = token(1653).useAnimatedStyle;

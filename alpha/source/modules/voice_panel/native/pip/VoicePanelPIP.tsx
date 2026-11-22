@@ -538,7 +538,7 @@ class VoicePanelPIPTiles {
         constructor(arg0) {
           closure_0 = arg0;
           allTouches = arg0.allTouches;
-          found = allTouches.filter(function() { /* body not rendered: F141729 */ });
+          found = allTouches.filter(function() { /* body not rendered: F141746 */ });
           if (0 !== found.length) {
             tmp4 = closure_2;
             tmp5 = closure_2(found);

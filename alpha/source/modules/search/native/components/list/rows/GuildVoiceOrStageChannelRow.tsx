@@ -1,7 +1,7 @@
 // Module ID: 18746
 // Function ID: 18747
 // Name: GuildVoiceOrStageChannelRow
-// Dependencies: [19, 17, 4767, 8576, 21, 11130, 4969, 1112, 4913, 504, 18747, 6543, 6537, 18748, 18750, 13147, 2]
+// Dependencies: [19, 17, 4767, 8576, 21, 11130, 4969, 1112, 4913, 504, 18747, 6543, 6537, 18748, 18750, 13145, 2]
 
 // Module 18746 (GuildVoiceOrStageChannelRow)
 import react_native from "react-native" /* 17 */;

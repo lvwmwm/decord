@@ -1,10 +1,10 @@
-// Module ID: 12156
-// Function ID: 12157
+// Module ID: 12163
+// Function ID: 12164
 // Name: AppInteractionInfoActionSheet
 // Dependencies: [19, 1405, 4784, 1386, 21, 4913, 575, 7515, 1112, 7030, 7099, 5528, 504, 6954, 7045, 7322, 1186, 8067, 5141, 7348, 2]
 // Exports: default
 
-// Module 12156 (AppInteractionInfoActionSheet)
+// Module 12163 (AppInteractionInfoActionSheet)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
 import UserActionCreators from "UserActionCreators" /* 6954 */;

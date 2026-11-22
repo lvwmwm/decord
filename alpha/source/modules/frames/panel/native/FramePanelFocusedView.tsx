@@ -1,7 +1,7 @@
 // Module ID: 19207
 // Function ID: 19208
 // Name: FramePanelFocusedView
-// Dependencies: [19, 6623, 6624, 5539, 21, 504, 19188, 19204, 19208, 19209, 19211, 10622, 18700, 18402, 15756, 19213, 19214, 2]
+// Dependencies: [19, 6623, 6624, 5539, 21, 504, 19188, 19204, 19208, 19209, 19211, 10622, 18700, 18402, 15754, 19213, 19214, 2]
 
 // Module 19207 (FramePanelFocusedView)
 import ActivityPanelConstants from "ActivityPanelConstants" /* 5539 */;
@@ -25,7 +25,7 @@ let hasOwnProperty;
 let metroImportAll;
 let metroRequire;
 let tmp2;
-const FrameStackLevel = tmp2(15756);
+const FrameStackLevel = tmp2(15754);
 ({ asLaunched: hasOwnProperty, FrameLayoutModes: metroRequire } = FramesConstants);
 const ActivityPanelModes = ActivityPanelConstants.ActivityPanelModes;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);

@@ -1,7 +1,7 @@
 // Module ID: 19237
 // Function ID: 19238
 // Name: usePanelOpenState
-// Dependencies: [32, 19, 6495, 11750, 1071, 1653, 1706, 1107, 13745, 4951, 4964, 13738, 10623, 2]
+// Dependencies: [32, 19, 6495, 11750, 1071, 1653, 1706, 1107, 13743, 4951, 4964, 13736, 10623, 2]
 // Exports: default
 
 // Module 19237 (usePanelOpenState)

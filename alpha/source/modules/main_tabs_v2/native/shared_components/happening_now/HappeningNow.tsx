@@ -1,7 +1,7 @@
 // Module ID: 17580
 // Function ID: 17581
 // Name: HappeningNow
-// Dependencies: [32, 19, 17, 16701, 1071, 21, 7450, 4913, 575, 5173, 7392, 17581, 1255, 5474, 1501, 17582, 7520, 7539, 17589, 17590, 1653, 11754, 12, 7490, 1112, 17591, 17592, 17609, 17610, 17611, 17595, 17608, 17612, 17607, 17594, 1254, 2]
+// Dependencies: [32, 19, 17, 16699, 1071, 21, 7450, 4913, 575, 5173, 7392, 17581, 1255, 5474, 1501, 17582, 7520, 7539, 17589, 17590, 1653, 11754, 12, 7490, 1112, 17591, 17592, 17609, 17610, 17611, 17595, 17608, 17612, 17607, 17594, 1254, 2]
 
 // Module 17580 (HappeningNow)
 import _mod12 from "module_12" /* 12 */;
@@ -25,7 +25,7 @@ import HappeningNowActions from "HappeningNowActions" /* 17612 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 16701 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 16699 */;
 import ReanimatedHelperTypes from "ReanimatedHelperTypes" /* 7450 */;
 import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
@@ -277,7 +277,7 @@ const memoResult = react.memo(function HappeningNow(listRef) {
   let tmp3 = data;
   let obj = listRef(data[14]);
   const isFocused1 = obj.useIsFocused();
-  let obj2 = { withoutUserCards: "HermesInternal", guildId: "Array", showMultipleActivitiesPerChannel: "Weihnachten", isFocused: isFocused1 };
+  let obj2 = { withoutUserCards: "HermesInternal", guildId: "Array", showMultipleActivitiesPerChannel: "params", isFocused: isFocused1 };
   const tmp7 = _slicedToArray(isFocused1(data[15])(cards, obj2), 2);
   data = tmp7[0];
   const tmp6 = _slicedToArray;

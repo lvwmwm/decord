@@ -1,7 +1,7 @@
 // Module ID: 17720
 // Function ID: 17721
 // Name: GuildRoleSubscriptionsChannelLongPressActionSheet
-// Dependencies: [19, 17, 4769, 21, 4913, 575, 7553, 7515, 1186, 13735, 1112, 7709, 17620, 13868, 2]
+// Dependencies: [19, 17, 4769, 21, 4913, 575, 7553, 7515, 1186, 13733, 1112, 7709, 17620, 13866, 2]
 // Exports: default
 
 // Module 17720 (GuildRoleSubscriptionsChannelLongPressActionSheet)
@@ -13,8 +13,8 @@ import ChannelConstants from "ChannelConstants" /* 4769 */;
 import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7515 */;
 import ActionSheet2 from "ActionSheet" /* 7553 */;
 import _mod7709 from "module_7709" /* 7709 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13735 */;
-import ChannelActionSheetUtils from "ChannelActionSheetUtils" /* 13868 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13733 */;
+import ChannelActionSheetUtils from "ChannelActionSheetUtils" /* 13866 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 17620 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

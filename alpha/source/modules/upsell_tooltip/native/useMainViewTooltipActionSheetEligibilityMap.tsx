@@ -1,7 +1,7 @@
 // Module ID: 19102
 // Function ID: 19103
 // Name: useMainViewTooltipActionSheetEligibilityMap
-// Dependencies: [32, 1245, 8842, 19062, 9143, 1230, 4756, 7522, 1388, 1081, 1088, 504, 19103, 1625, 8862, 19104, 8856, 8859, 19105, 9399, 9147, 17141, 9477, 9482, 4945, 4746, 19106, 19107, 19060, 19108, 12833, 16763, 19109, 19096, 7524, 6864, 2]
+// Dependencies: [32, 1245, 8842, 19062, 9143, 1230, 4756, 7522, 1388, 1081, 1088, 504, 19103, 1625, 8862, 19104, 8856, 8859, 19105, 9399, 9147, 17139, 9477, 9482, 4945, 4746, 19106, 19107, 19060, 19108, 12831, 16761, 19109, 19096, 7524, 6864, 2]
 // Exports: useMainViewTooltipActionSheetMap
 
 // Module 19102 (useMainViewTooltipActionSheetEligibilityMap)
@@ -40,9 +40,9 @@ const MarketingSurfaceType = tmp(9147);
 const usePromotionMarketingSurface = tmp(9399);
 const GiftPromotionReminderExperiment2 = tmp(9477);
 const GiftingBadgesUtils = tmp(9482);
-const CustomTypingIndicatorExperiment = tmp(12833);
-const CustomTypingIndicatorNewPresetsExperiment = tmp(16763);
-const MobileBottomSheetCopy = tmp(17141);
+const CustomTypingIndicatorExperiment = tmp(12831);
+const CustomTypingIndicatorNewPresetsExperiment = tmp(16761);
+const MobileBottomSheetCopy = tmp(17139);
 const RobloxConnectionCoachmark = tmp(19060);
 const bloonsTDBattlesUpsellExperiment2 = tmp(19096);
 const PremiumTrialOfferActionSheetKillSwitchExperiment2 = tmp(19105);
@@ -94,12 +94,12 @@ export function useMainViewTooltipActionSheetMap() {
   let tmp8;
   let tmp9;
   let token;
-  const f116851 = () => {
+  const f116862 = () => {
     const items = [, ];
     ({ shouldShowGooglePlayPriceChange: arr[0], priceChangeRecord: arr[1] } = GooglePlayPriceChangeStore);
     return items;
   };
-  const f116853 = () => {
+  const f116864 = () => {
     const items = [ReferralTrialStore.getReferralsRemaining({ bypassFetch: true }), ReferralTrialStore.getRecurringReminderStateId()];
     return items;
   };
@@ -124,8 +124,8 @@ export function useMainViewTooltipActionSheetMap() {
   }
   const items2 = [GooglePlayPriceChangeStore];
   const tmpResult23 = get_initialized;
-  [tmp8, tmp9] = tmpResult23.useStateFromStoresArray(items2, f116851);
-  _slicedToArray(tmpResult23.useStateFromStoresArray(items2, f116851), 2);
+  [tmp8, tmp9] = tmpResult23.useStateFromStoresArray(items2, f116862);
+  _slicedToArray(tmpResult23.useStateFromStoresArray(items2, f116862), 2);
   const tmpResult24 = usePremiumDiscountOffer;
   const premiumDiscountOffer = tmpResult24.usePremiumDiscountOffer();
   const items3 = [ApexExperimentStore];
@@ -139,8 +139,8 @@ export function useMainViewTooltipActionSheetMap() {
   const isEligibleSenderForReferralProgram = tmpResult26.useIsEligibleSenderForReferralProgram(!stateFromStores2);
   const items4 = [ReferralTrialStore];
   const tmpResult27 = get_initialized;
-  [tmp14, tmp15] = tmpResult27.useStateFromStoresArray(items4, f116853);
-  _slicedToArray(tmpResult27.useStateFromStoresArray(items4, f116853), 2);
+  [tmp14, tmp15] = tmpResult27.useStateFromStoresArray(items4, f116864);
+  _slicedToArray(tmpResult27.useStateFromStoresArray(items4, f116864), 2);
   const tmpResult28 = usePremiumTrialOffer;
   const premiumTrialOffer = tmpResult28.usePremiumTrialOffer();
   const PremiumTrialOfferActionSheetKillSwitchExperiment = PremiumTrialOfferActionSheetKillSwitchExperiment2.PremiumTrialOfferActionSheetKillSwitchExperiment;

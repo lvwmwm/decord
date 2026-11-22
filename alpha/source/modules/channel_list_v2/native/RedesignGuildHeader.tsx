@@ -1,7 +1,7 @@
 // Module ID: 17651
 // Function ID: 17652
 // Name: RedesignGuildHeader
-// Dependencies: [19, 17, 4914, 5128, 5642, 1071, 21, 8571, 5122, 4920, 5519, 17652, 4787, 17624, 5643, 5477, 575, 5517, 10093, 4913, 1653, 9659, 17653, 1494, 504, 1501, 5514, 5515, 15121, 1412, 1112, 5600, 17691, 2]
+// Dependencies: [19, 17, 4914, 5128, 5642, 1071, 21, 8571, 5122, 4920, 5519, 17652, 4787, 17624, 5643, 5477, 575, 5517, 10093, 4913, 1653, 9659, 17653, 1494, 504, 1501, 5514, 5515, 15119, 1412, 1112, 5600, 17691, 2]
 // Exports: useRedesignGuildHeaderHeight
 
 // Module 17651 (RedesignGuildHeader)
@@ -19,7 +19,7 @@ import useScaledTextLineHeight from "useScaledTextLineHeight" /* 5643 */;
 import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 8571 */;
 import ThemedGradientDefault from "ThemedGradient" /* 9659 */;
 import roundToNearestPixelDefault from "roundToNearestPixel" /* 10093 */;
-import openGuildActionSheetDefault from "openGuildActionSheet" /* 15121 */;
+import openGuildActionSheetDefault from "openGuildActionSheet" /* 15119 */;
 import useIsGameCommunityServerPreviewDefault from "useIsGameCommunityServerPreview" /* 17624 */;
 import useStickyServerHeaderSubtitleDefault from "useStickyServerHeaderSubtitle" /* 17652 */;
 import ChannelListStickyHeaderDefault from "ChannelListStickyHeader" /* 17653 */;

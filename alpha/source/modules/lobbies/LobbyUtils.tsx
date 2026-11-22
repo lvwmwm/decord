@@ -1,10 +1,10 @@
-// Module ID: 13849
-// Function ID: 13850
+// Module ID: 13847
+// Function ID: 13848
 // Name: LobbyUtils
 // Dependencies: [4845, 1071, 504, 2]
 // Exports: canUnlinkLobbyChannel, useCanUnlinkLobbyChannel
 
-// Module 13849 (LobbyUtils)
+// Module 13847 (LobbyUtils)
 import Constants from "Constants" /* 1071 */;
 import PermissionStore from "PermissionStore" /* 4845 */;
 import size from "module_2" /* 2 */;

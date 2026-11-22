@@ -1,10 +1,10 @@
-// Module ID: 13526
-// Function ID: 13527
+// Module ID: 13524
+// Function ID: 13525
 // Name: UserProfileVoiceActivityIcon
 // Dependencies: [19, 4845, 1082, 21, 504, 8612, 6823, 7696, 7620, 7698, 7697, 7034, 2]
 // Exports: default
 
-// Module 13526 (UserProfileVoiceActivityIcon)
+// Module 13524 (UserProfileVoiceActivityIcon)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1082 */;
 import isRoleRequiredDefault from "isRoleRequired" /* 6823 */;

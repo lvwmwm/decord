@@ -1,7 +1,7 @@
 // Module ID: 17857
 // Function ID: 17858
 // Name: FavoritesGuildSidebarHeader
-// Dependencies: [19, 17, 17716, 21, 4913, 575, 13882, 5504, 1112, 3802, 7681, 7034, 7672, 5929, 2]
+// Dependencies: [19, 17, 17716, 21, 4913, 575, 13880, 5504, 1112, 3802, 7681, 7034, 7672, 5929, 2]
 // Exports: default
 
 // Module 17857 (FavoritesGuildSidebarHeader)
@@ -14,7 +14,7 @@ import Stack_Stack from "Stack/Stack" /* 5929 */;
 import VoiceNormalIcon2 from "VoiceNormalIcon" /* 7034 */;
 import ChatIcon2 from "ChatIcon" /* 7672 */;
 import TextIcon2 from "TextIcon" /* 7681 */;
-import openFavoritesGuildAddChannelModalDefault from "openFavoritesGuildAddChannelModal" /* 13882 */;
+import openFavoritesGuildAddChannelModalDefault from "openFavoritesGuildAddChannelModal" /* 13880 */;
 import FavoritesGuildSuggestionsStore from "FavoritesGuildSuggestionsStore" /* 17716 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

@@ -1,10 +1,10 @@
-// Module ID: 12785
-// Function ID: 12786
+// Module ID: 12783
+// Function ID: 12784
 // Name: FinalizeTraitPicker
-// Dependencies: [19, 17, 21, 4913, 12786, 575, 6336, 12788, 5504, 1112, 3440, 12787, 12795, 12796, 12791, 12797, 6013, 6014, 2]
+// Dependencies: [19, 17, 21, 4913, 12784, 575, 6336, 12786, 5504, 1112, 3440, 12785, 12793, 12794, 12789, 12795, 6013, 6014, 2]
 // Exports: default
 
-// Module 12785 (FinalizeTraitPicker)
+// Module 12783 (FinalizeTraitPicker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
@@ -12,13 +12,13 @@ import _modDef3440 from "module_3440" /* 3440 */;
 import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 6013 */;
 import CheckpointTrait from "CheckpointTrait" /* 6014 */;
 import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6336 */;
-import TraitOptionList from "TraitOptionList" /* 12786 */;
-import TraitOptionItem from "TraitOptionItem" /* 12787 */;
-import TraitPicker from "TraitPicker" /* 12788 */;
-import useTraitPicker from "useTraitPicker" /* 12791 */;
-import useLastColorwayIdByOutfitIdDefault from "useLastColorwayIdByOutfitId" /* 12795 */;
-import useLastMoreTabOptionDefault from "useLastMoreTabOption" /* 12796 */;
-import FinalizeTraitTabs from "FinalizeTraitTabs" /* 12797 */;
+import TraitOptionList from "TraitOptionList" /* 12784 */;
+import TraitOptionItem from "TraitOptionItem" /* 12785 */;
+import TraitPicker from "TraitPicker" /* 12786 */;
+import useTraitPicker from "useTraitPicker" /* 12789 */;
+import useLastColorwayIdByOutfitIdDefault from "useLastColorwayIdByOutfitId" /* 12793 */;
+import useLastMoreTabOptionDefault from "useLastMoreTabOption" /* 12794 */;
+import FinalizeTraitTabs from "FinalizeTraitTabs" /* 12795 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;

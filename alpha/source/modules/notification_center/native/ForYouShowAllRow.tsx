@@ -1,7 +1,7 @@
 // Module ID: 18080
 // Function ID: 18081
 // Name: ForYouShowAllRow
-// Dependencies: [19, 17, 1071, 13607, 21, 4913, 11130, 575, 1378, 1500, 1255, 1186, 5519, 18075, 7030, 18076, 15287, 5504, 1112, 7508, 2]
+// Dependencies: [19, 17, 1071, 13605, 21, 4913, 11130, 575, 1378, 1500, 1255, 1186, 5519, 18075, 7030, 18076, 15285, 5504, 1112, 7508, 2]
 // Exports: ForYouSuggestedFriendShowAllRow
 
 // Module 18080 (ForYouShowAllRow)
@@ -16,8 +16,8 @@ import useFontScale from "useFontScale" /* 5519 */;
 import Pressables from "Pressables" /* 7030 */;
 import AssetRegistryDefault from "AssetRegistry" /* 7508 */;
 import ChannelListLayout from "ChannelListLayout" /* 11130 */;
-import FriendsScreenConstants from "FriendsScreenConstants" /* 13607 */;
-import AvatarDuoPile2 from "AvatarDuoPile" /* 15287 */;
+import FriendsScreenConstants from "FriendsScreenConstants" /* 13605 */;
+import AvatarDuoPile2 from "AvatarDuoPile" /* 15285 */;
 import ChannelPressableWrapper from "ChannelPressableWrapper" /* 18075 */;
 import ChannelWrapper from "ChannelWrapper" /* 18076 */;
 import react from "react" /* 19 */;

@@ -1,10 +1,10 @@
-// Module ID: 14353
-// Function ID: 14354
+// Module ID: 14351
+// Function ID: 14352
 // Name: ChatPreview
-// Dependencies: [19, 17, 4914, 5128, 4762, 1386, 8670, 21, 4913, 575, 4974, 11980, 8669, 10381, 10404, 12814, 4735, 1112, 10403, 12, 8631, 5646, 10435, 10416, 10380, 5976, 2018, 12122, 8709, 10383, 8458, 11988, 11989, 12026, 12027, 11745, 11747, 10424, 1378, 7017, 7030, 5504, 4738, 504, 1494, 6439, 6419, 2]
+// Dependencies: [19, 17, 4914, 5128, 4762, 1386, 8670, 21, 4913, 575, 4974, 11980, 8669, 10381, 10404, 12812, 4735, 1112, 10403, 12, 8631, 5646, 10435, 10416, 10380, 5976, 2018, 12122, 8709, 10383, 8458, 11988, 11989, 12026, 12027, 11745, 11747, 10424, 1378, 7017, 7030, 5504, 4738, 504, 1494, 6439, 6419, 2]
 // Exports: ChatPreview
 
-// Module 14353 (ChatPreview)
+// Module 14351 (ChatPreview)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
@@ -156,7 +156,7 @@ class ChatPreviewBase extends PureComponent {
         let item1 = items.forEach((arr, index) => {
           let c1;
           let obj8;
-          const f140915 = (message) => {
+          const f140932 = (message) => {
             const content = obj3.content;
             const obj = { rowType: constants2.MESSAGE, changeType: constants.NOOP, roleStyle, message, isFirst: message === closure_0 };
             content.unshift(obj);
@@ -194,7 +194,7 @@ class ChatPreviewBase extends PureComponent {
               tmp8 = obj3;
             }
             obj3 = tmp8;
-            const item = arr.forEach(f140915);
+            const item = arr.forEach(f140932);
             tmp8.revealed = arr[arr.length - 1].id === messages.revealedMessageId;
             tmp8.context = arr[arr.length - 1].id;
             const intl2 = _undefined(changeType[17]).intl;
@@ -210,7 +210,7 @@ class ChatPreviewBase extends PureComponent {
               tmp14 = obj5;
             }
             obj5 = tmp14;
-            const item1 = arr.forEach(f140915);
+            const item1 = arr.forEach(f140932);
             tmp14.revealed = arr[arr.length - 1].id === messages.revealedMessageId;
             tmp14.context = arr[arr.length - 1].id;
             const intl = _undefined(changeType[17]).intl;
@@ -335,7 +335,7 @@ class ChatPreviewBase extends PureComponent {
         },
         message: require.getMessage(data.messageId),
         messageChannel: channel,
-        selectedChannelId: 966.313,
+        selectedChannelId: "asc",
         tapLinkData: nativeEvent
       };
       const handleMessagesTapLink = handleMessagesTapLink2.handleMessagesTapLink;

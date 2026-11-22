@@ -1,10 +1,10 @@
-// Module ID: 16085
-// Function ID: 16086
+// Module ID: 16083
+// Function ID: 16084
 // Name: WebAuthnRegisterStep
-// Dependencies: [32, 19, 17, 1071, 21, 4913, 575, 7377, 1112, 1186, 1500, 1378, 16086, 7017, 16087, 5504, 6545, 5511, 2]
+// Dependencies: [32, 19, 17, 1071, 21, 4913, 575, 7377, 1112, 1186, 1500, 1378, 16084, 7017, 16085, 5504, 6545, 5511, 2]
 // Exports: default
 
-// Module 16085 (WebAuthnRegisterStep)
+// Module 16083 (WebAuthnRegisterStep)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl4 from "intl" /* 1112 */;
@@ -107,13 +107,13 @@ export default function WebAuthnRegisterStep() {
   let closure_5 = obj2.useMemo(() => obj4[first], items1);
   const items2 = [onRegisterSuccess, tmp11, tmp8];
   let closure_6 = obj2.useMemo(() => ({ onRegisterSuccess, setError: dependencyMap, setRegistering: importDefault }), items2);
-  const tmpResult = navigation(16086);
+  const tmpResult = navigation(16084);
   const announceError = tmpResult.useAnnounceError(tmp10);
   obj4 = { contentContainerStyle: tmp4.scrollContent, alwaysBounceVertical: false, children: closure_9(SafeAreaPaddingView, rect) };
   rect = { bottom: true, left: true, right: true, style: tmp4.flexContainer, children: items4 };
   const obj5 = { style: tmp4.centerFlex, children: items3 };
   SafeAreaPaddingView = tmp(7017).SafeAreaPaddingView;
-  items3 = [closure_8(navigation(16087).KeyImage, {}), , ];
+  items3 = [closure_8(navigation(16085).KeyImage, {}), , ];
   const obj6 = { style: tmp4.margin, variant: "body-md/normal", children: stringResult };
   const Text = tmp(5504).Text;
   const intl = tmp(1112).intl;

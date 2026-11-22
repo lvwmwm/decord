@@ -1,7 +1,7 @@
 // Module ID: 19255
 // Function ID: 19256
 // Name: VoicePanelHeaderSpeaker
-// Dependencies: [109, 19, 17, 19256, 5655, 5674, 19257, 4762, 5656, 1071, 21, 19258, 19240, 9663, 10960, 10853, 563, 13822, 11015, 19262, 1378, 9670, 5675, 1112, 9667, 9669, 19263, 13821, 4945, 4746, 7324, 19200, 15220, 2]
+// Dependencies: [109, 19, 17, 19256, 5655, 5674, 19257, 4762, 5656, 1071, 21, 19258, 19240, 9663, 10960, 10853, 563, 13820, 11015, 19262, 1378, 9670, 5675, 1112, 9667, 9669, 19263, 13819, 4945, 4746, 7324, 19200, 15218, 2]
 
 // Module 19255 (VoicePanelHeaderSpeaker)
 import react_native from "react-native" /* 17 */;
@@ -11,7 +11,7 @@ import PlatformUtils from "PlatformUtils" /* 1378 */;
 import dismissible_content from "dismissible_content" /* 4746 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4945 */;
 import NativeViewDefault from "NativeView" /* 7324 */;
-import getConsoleIconDefault from "getConsoleIcon" /* 13822 */;
+import getConsoleIconDefault from "getConsoleIcon" /* 13820 */;
 import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 19200 */;
 import ConsoleVoiceUpsellStore from "ConsoleVoiceUpsellStore" /* 19256 */;
 import useSpeakerTooltipsDefault from "useSpeakerTooltips" /* 19258 */;
@@ -293,8 +293,8 @@ const memoResult = react.memo(function VoicePanelHeaderSpeaker(isConnectedToVoic
       let tmp9;
       let tmp = arg0;
       if (arg0 == null) {
-        tmp = { onPress, ref: "Array" };
-        const obj = { onPress, ref: "Array" };
+        tmp = { onPress, ref: "r" };
+        const obj = { onPress, ref: "r" };
       }
       const obj2 = { targetRef: tmp.ref, canShowTooltip: tmp9 };
       tmp9 = !stateFromStores2;

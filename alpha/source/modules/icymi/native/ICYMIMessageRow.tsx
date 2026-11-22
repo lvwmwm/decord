@@ -1,7 +1,7 @@
 // Module ID: 18134
 // Function ID: 18135
 // Name: ICYMIMessageRow
-// Dependencies: [19, 17, 4762, 4825, 4784, 4855, 6552, 1386, 18129, 1071, 21, 575, 18091, 1378, 18092, 8223, 10037, 504, 18135, 18136, 5504, 1112, 1186, 5943, 6511, 18122, 10043, 13845, 12122, 18130, 18132, 11, 7030, 8009, 18138, 2]
+// Dependencies: [19, 17, 4762, 4825, 4784, 4855, 6552, 1386, 18129, 1071, 21, 575, 18091, 1378, 18092, 8223, 10037, 504, 18135, 18136, 5504, 1112, 1186, 5943, 6511, 18122, 10043, 13843, 12122, 18130, 18132, 11, 7030, 8009, 18138, 2]
 // Exports: default
 
 // Module 18134 (ICYMIMessageRow)
@@ -11,7 +11,7 @@ import PlatformUtils from "PlatformUtils" /* 1378 */;
 import GuildActionCreatorsDefault from "GuildActionCreators" /* 6511 */;
 import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 10043 */;
 import showLongPressMessageActionSheet from "showLongPressMessageActionSheet" /* 12122 */;
-import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 13845 */;
+import openChannelLongPressActionSheet from "openChannelLongPressActionSheet" /* 13843 */;
 import DesignConstants from "DesignConstants" /* 18129 */;
 import ICYMIShared from "ICYMIShared" /* 18130 */;
 import react from "react" /* 19 */;

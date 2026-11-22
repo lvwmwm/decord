@@ -1,7 +1,7 @@
 // Module ID: 19073
 // Function ID: 19074
 // Name: CollectiblesMobileAnnouncementActionSheet
-// Dependencies: [19, 17, 1073, 5142, 4759, 21, 4913, 575, 1494, 5145, 1628, 1653, 5600, 19074, 5504, 8074, 7539, 5141, 19075, 1112, 13639, 13627, 19076, 5511, 2]
+// Dependencies: [19, 17, 1073, 5142, 4759, 21, 4913, 575, 1494, 5145, 1628, 1653, 5600, 19074, 5504, 8074, 7539, 5141, 19075, 1112, 13637, 13625, 19076, 5511, 2]
 // Exports: default
 
 // Module 19073 (CollectiblesMobileAnnouncementActionSheet)
@@ -176,10 +176,10 @@ export default function CollectiblesMobileAnnouncementActionSheet(markAsDismisse
   intl = markAsDismissed(1112).intl;
   items3[1] = closure_8(Text, obj5);
   const obj6 = { style: tmp.featureRows, children: items4 };
-  const obj7 = { icon: closure_8(markAsDismissed(13639).PaintIllocon, { size: 32 }), text: intl2.string(markAsDismissed(1112).t["6ZWB0C"]) };
+  const obj7 = { icon: closure_8(markAsDismissed(13637).PaintIllocon, { size: 32 }), text: intl2.string(markAsDismissed(1112).t["6ZWB0C"]) };
   intl2 = markAsDismissed(1112).intl;
   items4 = [closure_8(FeatureRow, obj7), , ];
-  const obj8 = { icon: closure_8(markAsDismissed(13627).HeartIllocon, { size: 32 }), text: intl3.string(markAsDismissed(1112).t.MkVbBY) };
+  const obj8 = { icon: closure_8(markAsDismissed(13625).HeartIllocon, { size: 32 }), text: intl3.string(markAsDismissed(1112).t.MkVbBY) };
   intl3 = markAsDismissed(1112).intl;
   items4[1] = closure_8(FeatureRow, obj8);
   const obj9 = { icon: closure_8(markAsDismissed(19076).ShopIllocon, { size: 32 }), text: intl4.string(markAsDismissed(1112).t["/4bQuG"]) };

@@ -1,7 +1,7 @@
 // Module ID: 19059
 // Function ID: 19060
 // Name: GiftingPromotionCoachmark
-// Dependencies: [19, 17, 4914, 9143, 1071, 4759, 21, 4913, 575, 504, 9505, 9477, 9506, 6417, 5127, 7520, 7539, 9465, 5141, 5600, 9508, 5504, 5511, 12468, 1112, 2]
+// Dependencies: [19, 17, 4914, 9143, 1071, 4759, 21, 4913, 575, 504, 9505, 9477, 9506, 6417, 5127, 7520, 7539, 9465, 5141, 5600, 9508, 5504, 5511, 12475, 1112, 2]
 // Exports: default
 
 // Module 19059 (GiftingPromotionCoachmark)
@@ -153,7 +153,7 @@ export default function GiftingPromotionCoachmarkActionSheet(arg0) {
     const obj10 = { grow: true, icon: closure_11(GiftIcon, obj11), text: intl.string(tmp2(1112).t.Ve9Ge6), onPress: tmp19 };
     const Button = tmp2(5511).Button;
     obj11 = { size: "sm", color: nativeDefault.colors.WHITE };
-    GiftIcon = tmp2(12468).GiftIcon;
+    GiftIcon = tmp2(12475).GiftIcon;
     intl = tmp2(1112).intl;
     items4[3] = closure_11(Button, obj10);
     tmp21Result2 = tmp21(BottomSheet, obj2);

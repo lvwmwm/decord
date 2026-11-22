@@ -1,7 +1,7 @@
 // Module ID: 18619
 // Function ID: 18620
 // Name: ConjureNativeComposer
-// Dependencies: [5, 32, 19, 17, 4914, 6977, 18432, 11617, 21, 575, 4913, 1112, 4190, 5477, 11616, 7763, 18620, 14756, 18621, 1378, 12857, 12861, 18430, 18314, 18470, 18622, 18276, 18316, 504, 18591, 11181, 10107, 10894, 11182, 16957, 10141, 5127, 18338, 13101, 18499, 16314, 5611, 13108, 8658, 10261, 13115, 4974, 18623, 5504, 2]
+// Dependencies: [5, 32, 19, 17, 4914, 6977, 18432, 11617, 21, 575, 4913, 1112, 4190, 5477, 11616, 7763, 18620, 14754, 18621, 1378, 12855, 12859, 18430, 18314, 18470, 18622, 18276, 18316, 504, 18591, 11181, 10107, 10894, 11182, 16955, 10141, 5127, 18338, 13099, 18499, 16312, 5611, 13106, 8658, 10261, 13113, 4974, 18623, 5504, 2]
 // Exports: default
 
 // Module 18619 (ConjureNativeComposer)
@@ -18,12 +18,12 @@ import PlusLargeIcon from "PlusLargeIcon" /* 10261 */;
 import MusicIcon from "MusicIcon" /* 10894 */;
 import ImageCarousel from "ImageCarousel" /* 11616 */;
 import ImageCarouselConstants from "ImageCarouselConstants" /* 11617 */;
-import ChatInputNativeCommandsDefault from "ChatInputNativeCommands" /* 12857 */;
-import ChatInputParser from "ChatInputParser" /* 12861 */;
-import ChatInputActionButtonDefault from "ChatInputActionButton" /* 13101 */;
-import ChatInputActionButtonTransitionItemDefault from "ChatInputActionButtonTransitionItem" /* 13108 */;
-import FiltersHorizontalIcon from "FiltersHorizontalIcon" /* 16314 */;
-import FileUpIcon from "FileUpIcon" /* 16957 */;
+import ChatInputNativeCommandsDefault from "ChatInputNativeCommands" /* 12855 */;
+import ChatInputParser from "ChatInputParser" /* 12859 */;
+import ChatInputActionButtonDefault from "ChatInputActionButton" /* 13099 */;
+import ChatInputActionButtonTransitionItemDefault from "ChatInputActionButtonTransitionItem" /* 13106 */;
+import FiltersHorizontalIcon from "FiltersHorizontalIcon" /* 16312 */;
+import FileUpIcon from "FileUpIcon" /* 16955 */;
 import conjureStoredAttachments2 from "conjureStoredAttachments" /* 18314 */;
 import ConjureModelSettingsSheet from "ConjureModelSettingsSheet" /* 18338 */;
 import conjureAttachmentDrafts from "conjureAttachmentDrafts" /* 18430 */;

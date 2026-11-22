@@ -1,7 +1,7 @@
 // Module ID: 18255
 // Function ID: 18256
 // Name: ConjurePublishSheet
-// Dependencies: [5, 19, 17, 6621, 21, 4913, 575, 5127, 18254, 12298, 504, 7597, 18256, 5924, 5472, 5595, 1112, 4190, 18267, 7553, 7017, 5511, 18268, 7322, 1186, 5504, 2]
+// Dependencies: [5, 19, 17, 6621, 21, 4913, 575, 5127, 18254, 12305, 504, 7597, 18256, 5924, 5472, 5595, 1112, 4190, 18267, 7553, 7017, 5511, 18268, 7322, 1186, 5504, 2]
 // Exports: default
 
 // Module 18255 (ConjurePublishSheet)
@@ -12,7 +12,7 @@ import native from "native" /* 1186 */;
 import _modDef4190 from "module_4190" /* 4190 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
 import GuildIcon from "GuildIcon" /* 7322 */;
-import useConjurePublishActionDefault from "useConjurePublishAction" /* 12298 */;
+import useConjurePublishActionDefault from "useConjurePublishAction" /* 12305 */;
 import showConjurePublishSheet from "showConjurePublishSheet" /* 18254 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;

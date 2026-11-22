@@ -1,7 +1,7 @@
 // Module ID: 19378
 // Function ID: 19379
 // Name: ChannelCallUtils
-// Dependencies: [19, 6396, 1071, 21, 1112, 19379, 8194, 5127, 5649, 5861, 19376, 2119, 19380, 6401, 19381, 8051, 12059, 11007, 14844, 7, 5595, 9718, 2]
+// Dependencies: [19, 6396, 1071, 21, 1112, 19379, 8194, 5127, 5649, 5861, 19376, 2119, 19380, 6401, 19381, 8051, 12059, 11007, 14842, 7, 5595, 9718, 2]
 // Exports: invite, openHideSelfStreamAndVideoConfirmDialog, reportStreamIssue, rtcDebugPanel, selfVideoHidden, shareActivityLogs, videoParticipantsHidden, voiceSettings
 
 // Module 19378 (ChannelCallUtils)
@@ -15,7 +15,7 @@ import StreamKeyUtils from "StreamKeyUtils" /* 6401 */;
 import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8051 */;
 import AssetRegistryDefault from "AssetRegistry" /* 11007 */;
 import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 12059 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14844 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14842 */;
 import AssetRegistryDefault3 from "AssetRegistry" /* 19379 */;
 import AssetRegistryDefault4 from "AssetRegistry" /* 19380 */;
 import react from "react" /* 19 */;

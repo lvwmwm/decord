@@ -1,7 +1,7 @@
 // Module ID: 18992
 // Function ID: 18993
 // Name: ContextMenuCommandItem
-// Dependencies: [19, 17, 21, 4913, 575, 7045, 12, 1112, 13093, 5600, 2117, 5611, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 7045, 12, 1112, 13091, 5600, 2117, 5611, 2]
 // Exports: ContextMenuCommandAppItem, ContextMenuCommandEmptyItem, ContextMenuCommandLoadingItem, default
 
 // Module 18992 (ContextMenuCommandItem)
@@ -12,7 +12,7 @@ import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
 import FastImageDefault from "FastImage" /* 5600 */;
 import TableRow2 from "TableRow" /* 7045 */;
-import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 13093 */;
+import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 13091 */;
 import react from "react" /* 19 */;
 import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
@@ -61,7 +61,7 @@ export default function ContextMenuCommandItem(item) {
     const obj = { applicationName: name, commandName: tmp.displayName };
     return formatToPlainString(Pk4Mz3, obj);
   }, items);
-  let obj = item(13093);
+  let obj = item(13091);
   const applicationCommandsIconSource = obj.getApplicationCommandsIconSource(section);
   let tmp8Result = null != applicationCommandsIconSource;
   const TableRow = item(7045).TableRow;

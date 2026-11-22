@@ -1,10 +1,10 @@
-// Module ID: 13761
-// Function ID: 13762
+// Module ID: 13759
+// Function ID: 13760
 // Name: QuestOrbsRewardModal
-// Dependencies: [32, 5, 19, 17, 4914, 1386, 2118, 6558, 21, 6429, 13761, 2119, 4913, 575, 1494, 1628, 8958, 7102, 7151, 1112, 2023, 5600, 13762, 13763, 13764, 504, 9566, 1091, 9977, 13765, 9955, 6561, 9252, 7017, 5504, 5511, 2]
+// Dependencies: [32, 5, 19, 17, 4914, 1386, 2118, 6558, 21, 6429, 13759, 2119, 4913, 575, 1494, 1628, 8958, 7102, 7151, 1112, 2023, 5600, 13760, 13761, 13762, 504, 9566, 1091, 9977, 13763, 9955, 6561, 9252, 7017, 5504, 5511, 2]
 // Exports: default, openQuestOrbsRewardModal
 
-// Module 13761 (QuestOrbsRewardModal)
+// Module 13759 (QuestOrbsRewardModal)
 import nativeDefault from "native" /* 575 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
@@ -13,8 +13,8 @@ import FastImageDefault from "FastImage" /* 5600 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6429 */;
 import XSmallIcon from "XSmallIcon" /* 7151 */;
 import OrbsIcon2 from "OrbsIcon" /* 8958 */;
-import _modDef13762 from "module_13762" /* 13762 */;
-import _modDef13763 from "module_13763" /* 13763 */;
+import _modDef13760 from "module_13760" /* 13760 */;
+import _modDef13761 from "module_13761" /* 13761 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -44,7 +44,7 @@ let obj3;
 let obj4;
 let obj6;
 let tmp17;
-const _modDef13764 = tmp17(13764);
+const _modDef13762 = tmp17(13762);
 function OrbsBalance(balance) {
   let items;
   balance = balance.balance;
@@ -91,7 +91,7 @@ function StaticOrb() {
   let tmp2;
   const obj = { style: { width: "100%", height: "100%" }, children: gesture(tmp2, obj2) };
   obj2 = { source: obj3, style: tmp.animatedOrb, fadeDuration: 0 };
-  obj3 = { uri: _modDef13762 };
+  obj3 = { uri: _modDef13760 };
   tmp = closure_25();
   tmp2 = FastImageDefault;
   return gesture(metroImportAll, obj);
@@ -150,11 +150,11 @@ function AnimatedOrbContainer(isAppActive) {
     tmp13 = gesture(tmp12, obj2);
   }
   items1 = [tmp13, , ];
-  const obj3 = { uri: _modDef13763, style: items2, onLoad: callback1, animate: !tmp15Result && isAppActive };
+  const obj3 = { uri: _modDef13761, style: items2, onLoad: callback1, animate: !tmp15Result && isAppActive };
   items2 = [tmp.animatedOrb, (tmp15Result || !first1) && { opacity: 0 }];
   items1[1] = gesture(closure_24, obj3);
   if (tmp15Result) {
-    const obj4 = { uri: _modDef13764, style: tmp.animatedOrb, onLoad: callback, animate: isAppActive };
+    const obj4 = { uri: _modDef13762, style: tmp.animatedOrb, onLoad: callback, animate: isAppActive };
     tmp15Result = gesture(closure_24, obj4);
   }
   items1[2] = tmp15Result;

@@ -1,10 +1,10 @@
-// Module ID: 14935
-// Function ID: 14936
+// Module ID: 14933
+// Function ID: 14934
 // Name: dispatchSocketMessage
-// Dependencies: [109, 4766, 8748, 1405, 4762, 4825, 1386, 5561, 2177, 2178, 3, 5652, 14909, 14894, 9, 504, 14936, 1232, 14937, 8285, 14953, 15039, 572, 1408, 12, 8520, 2105, 1394, 4833, 11680, 5495, 15041, 6360, 6877, 6954, 8142, 6379, 5968, 6464, 2104, 15042, 2]
+// Dependencies: [109, 4766, 8748, 1405, 4762, 4825, 1386, 5561, 2177, 2178, 3, 5652, 14907, 14892, 9, 504, 14934, 1232, 14935, 8285, 14951, 15037, 572, 1408, 12, 8520, 2105, 1394, 4833, 11680, 5495, 15039, 6360, 6877, 6954, 8142, 6379, 5968, 6464, 2104, 15040, 2]
 // Exports: default
 
-// Module 14935 (dispatchSocketMessage)
+// Module 14933 (dispatchSocketMessage)
 import LoggerDefault from "Logger" /* 3 */;
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import _modDef12 from "module_12" /* 12 */;
@@ -16,10 +16,10 @@ import SubscriptionPlanActionCreatorsAll from "SubscriptionPlanActionCreators" /
 import UserActionCreatorsAll from "UserActionCreators" /* 6954 */;
 import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8142 */;
 import convertServerThreadMemberDefault from "convertServerThreadMember" /* 8520 */;
-import GatewaySocketSingleton from "GatewaySocketSingleton" /* 14894 */;
-import ReadyPayloadUtilsAll from "ReadyPayloadUtils" /* 14936 */;
-import isUserSettingsOpen from "isUserSettingsOpen" /* 15041 */;
-import splitAgeRestrictedActivitiesDefault from "splitAgeRestrictedActivities" /* 15042 */;
+import GatewaySocketSingleton from "GatewaySocketSingleton" /* 14892 */;
+import ReadyPayloadUtilsAll from "ReadyPayloadUtils" /* 14934 */;
+import isUserSettingsOpen from "isUserSettingsOpen" /* 15039 */;
+import splitAgeRestrictedActivitiesDefault from "splitAgeRestrictedActivities" /* 15040 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import GuildBoostSlotRecord from "GuildBoostSlotRecord" /* 8748 */;
 import UserRecord from "UserRecord" /* 1405 */;
@@ -28,7 +28,7 @@ import UserStore from "UserStore" /* 1386 */;
 import VoiceStateStore from "VoiceStateStore" /* 5561 */;
 import SubscriptionPlanStore from "SubscriptionPlanStore" /* 2177 */;
 import SubscriptionStore from "SubscriptionStore" /* 2178 */;
-import ActionBatcher_mod from "ActionBatcher" /* 14909 */;
+import ActionBatcher_mod from "ActionBatcher" /* 14907 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -37,7 +37,7 @@ let _require, importDefault, op, purchase_token_hash, timestamps;
 
 let tmp;
 const actions_BillingActionCreators = tmp(6360);
-const f106890 = (sessionId) => {
+const f106899 = (sessionId) => {
   let activities;
   let hidden_activities;
   const obj = {
@@ -683,7 +683,7 @@ let result1 = definePreloadableDispatch(["READY"], (guilds) => {
           let regional_feature_config;
           let relationships;
           let sessions;
-          let obj = { type: "CONNECTION_OPEN", sessionId: user.session_id, authSessionIdHash: user.auth_session_id_hash, staticAuthSessionId: user.static_client_session_id, user: user.user, users: user.users, guilds, initialPrivateChannels, unavailableGuilds, readState: user.read_state, userGuildSettings: user.user_guild_settings, tutorial: user.tutorial, relationships, gameRelationships: user.game_relationships, friendSuggestionCount: user.friend_suggestion_count, analyticsToken: user.analytics_token, experiments: user.experiments, connectedAccounts: user.connected_accounts, guildExperiments: user.guild_experiments, apexExperiments: apex_experiments, requiredAction: user.required_action, consents: user.consents, sessions: sessions.map(f106890), pendingPayments: user.pending_payments, countryCode: country_code, guildJoinRequests: guild_join_requests, userSettingsProto: result, apiCodeVersion: user.api_code_version, auth: user.auth, notificationSettings: obj2, geoRestrictedGuilds, explicitContentScanVersion: user.explicit_content_scan_version, failedStates: user.failed_states, linkedUsers: linked_users, regionalFeatureConfig: regional_feature_config, qosToken: qos_token };
+          let obj = { type: "CONNECTION_OPEN", sessionId: user.session_id, authSessionIdHash: user.auth_session_id_hash, staticAuthSessionId: user.static_client_session_id, user: user.user, users: user.users, guilds, initialPrivateChannels, unavailableGuilds, readState: user.read_state, userGuildSettings: user.user_guild_settings, tutorial: user.tutorial, relationships, gameRelationships: user.game_relationships, friendSuggestionCount: user.friend_suggestion_count, analyticsToken: user.analytics_token, experiments: user.experiments, connectedAccounts: user.connected_accounts, guildExperiments: user.guild_experiments, apexExperiments: apex_experiments, requiredAction: user.required_action, consents: user.consents, sessions: sessions.map(f106899), pendingPayments: user.pending_payments, countryCode: country_code, guildJoinRequests: guild_join_requests, userSettingsProto: result, apiCodeVersion: user.api_code_version, auth: user.auth, notificationSettings: obj2, geoRestrictedGuilds, explicitContentScanVersion: user.explicit_content_scan_version, failedStates: user.failed_states, linkedUsers: linked_users, regionalFeatureConfig: regional_feature_config, qosToken: qos_token };
           relationships = user.relationships;
           if (relationships == null) {
             relationships = [];
@@ -775,9 +775,9 @@ defineSimpleDispatch(["EXPERIMENT_SESSION_OVERRIDE_DELETE"], (experimentName) =>
 });
 defineSimpleDispatch(["RESUMED"], () => {
   let obj;
-  const localPresenceState = obj(14894).localPresenceState;
+  const localPresenceState = obj(14892).localPresenceState;
   localPresenceState.forceUpdate();
-  const localVoiceState = obj(14894).localVoiceState;
+  const localVoiceState = obj(14892).localVoiceState;
   localVoiceState.forceUpdate();
   obj = { type: "CONNECTION_RESUMED" };
   const obj2 = DispatcherDefault;
@@ -1879,7 +1879,7 @@ defineSimpleDispatch(["PRESENCES_REPLACE"], (arr) => {
   });
 });
 defineSimpleDispatch(["SESSIONS_REPLACE"], (arr) => {
-  const obj = { type: "SESSIONS_REPLACE", sessions: arr.map(f106890) };
+  const obj = { type: "SESSIONS_REPLACE", sessions: arr.map(f106899) };
   const obj2 = DispatcherDefault;
   const dispatchResult = obj2.dispatch(obj);
   dispatchResult.catch((error) => {
@@ -3160,7 +3160,7 @@ defineSimpleDispatch(["NOTIFICATION_SETTINGS_UPDATE"], (flags) => {
   }
   let result;
   if (null != prop) {
-    const obj = obj2(14937);
+    const obj = obj2(14935);
     result = obj.b64ToDeclarativeSettingsProto(flags.declarative_settings_proto);
   }
   obj2 = { type: "NOTIFICATION_SETTINGS_UPDATE", settings: { flags: flags.flags, declarativeSettings: result } };

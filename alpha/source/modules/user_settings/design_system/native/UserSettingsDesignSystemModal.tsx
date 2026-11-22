@@ -1,7 +1,7 @@
 // Module ID: 17245
 // Function ID: 17246
 // Name: UserSettingsDesignSystemModal
-// Dependencies: [32, 19, 17, 21, 4913, 575, 7092, 7095, 6429, 7029, 1112, 7221, 5592, 12043, 12269, 7811, 7813, 5504, 12242, 15286, 10121, 10120, 7348, 7556, 5511, 2]
+// Dependencies: [32, 19, 17, 21, 4913, 575, 7092, 7095, 6429, 7029, 1112, 7221, 5592, 12043, 12276, 7811, 7813, 5504, 12249, 15284, 10121, 10120, 7348, 7556, 5511, 2]
 // Exports: default
 
 // Module 17245 (UserSettingsDesignSystemModal)
@@ -14,7 +14,7 @@ import NavigatorHeader from "NavigatorHeader" /* 7095 */;
 import ModalScreen2 from "ModalScreen" /* 7811 */;
 import ModalContent2 from "ModalContent" /* 7813 */;
 import Modal from "Modal" /* 12043 */;
-import StepModal from "StepModal" /* 12269 */;
+import StepModal from "StepModal" /* 12276 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -28,7 +28,7 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let size;
-const f111640 = () => {
+const f111651 = () => {
   let obj11;
   let obj12;
   let obj14;
@@ -173,13 +173,13 @@ const f111640 = () => {
 };
 function DemoModal() {
   const obj = Navigator;
-  const navigatorScreens = obj.useNavigatorScreens(f111640, []);
+  const navigatorScreens = obj.useNavigatorScreens(f111651, []);
   const obj2 = { screens: navigatorScreens, initialRouteName: constants.START };
   return metroImportDefault(Modal.Modal, obj2);
 }
 function DemoStepModal() {
   const obj = Navigator;
-  const navigatorScreens = obj.useNavigatorScreens(f111640, []);
+  const navigatorScreens = obj.useNavigatorScreens(f111651, []);
   const memo = react.useMemo(() => {
     const items = [, , , , ];
     ({ START: arr[0], WHO_DAT: arr[1], EVERYBODY: arr[2], JOCKIN: arr[3], LIMIT: arr[4] } = constants);
@@ -190,7 +190,7 @@ function DemoStepModal() {
 }
 function DemoGradientStepModal() {
   const obj = Navigator;
-  const navigatorScreens = obj.useNavigatorScreens(f111640, []);
+  const navigatorScreens = obj.useNavigatorScreens(f111651, []);
   const memo = react.useMemo(() => {
     const items = [, , , , ];
     ({ START: arr[0], WHO_DAT: arr[1], EVERYBODY: arr[2], JOCKIN: arr[3], LIMIT: arr[4] } = constants);
@@ -201,7 +201,7 @@ function DemoGradientStepModal() {
 }
 function DemoGradientModal() {
   let obj = Navigator;
-  const navigatorScreens = obj.useNavigatorScreens(f111640, []);
+  const navigatorScreens = obj.useNavigatorScreens(f111651, []);
   let obj2 = { screens: navigatorScreens, initialRouteName: constants.START, gradientColor: "blue" };
   return metroImportDefault(Modal.Modal, obj2);
 }
@@ -236,10 +236,10 @@ function DemoScreen(arg0) {
   const children1 = [metroImportAll(ModalContent, obj3), ];
   if (footer == null) {
     let tmp8Result = null != disclaimer;
-    const ModalFooter = tmp3(12242).ModalFooter;
+    const ModalFooter = tmp3(12249).ModalFooter;
     if (tmp8Result) {
       const obj5 = { children: disclaimer };
-      tmp8Result = tmp8(tmp3(15286).ModalDisclaimer, obj5);
+      tmp8Result = tmp8(tmp3(15284).ModalDisclaimer, obj5);
     }
     const items2 = [tmp8Result, , ];
     let tmp8Result3 = null != action;
@@ -268,15 +268,15 @@ function SwitchesScreen(onAction) {
   let items;
   let obj2;
   let obj4;
-  const f111643 = () => false;
+  const f111654 = () => false;
   c1 = undefined;
   onAction = onAction.onAction;
   let tmp = closure_9();
   let parts = "I said ooh ah fhqwhgads, I said ooh ah fhqhgads!".split(" ");
-  [arr2, c1] = react.useState(parts.map(f111643));
+  [arr2, c1] = react.useState(parts.map(f111654));
   let obj = { title: "Everybody come on fhqwhgads.", emoji: "\u{1F44F}", footer: closure_7(ModalFloatingAction, obj2), children: items };
   obj2 = { isVisible: arr2.some((item) => item), floatingBackgroundColor: tmp.screen.backgroundColor, text: "Come on fhqwhgads", onPress: onAction };
-  _slicedToArray(react.useState(parts.map(f111643)), 2);
+  _slicedToArray(react.useState(parts.map(f111654)), 2);
   ModalFloatingAction = parts(10120).ModalFloatingAction;
   const obj3 = { style: tmp.tableRows, children: closure_7(TableRowGroup, obj4) };
   obj4 = {

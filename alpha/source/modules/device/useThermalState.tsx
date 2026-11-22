@@ -1,13 +1,13 @@
-// Module ID: 15677
-// Function ID: 15678
+// Module ID: 15675
+// Function ID: 15676
 // Name: useThermalState
-// Dependencies: [15678, 1378, 5850, 2]
+// Dependencies: [15676, 1378, 5850, 2]
 // Exports: default, getThermalState
 
-// Module 15677 (useThermalState)
+// Module 15675 (useThermalState)
 import PlatformUtils from "PlatformUtils" /* 1378 */;
 import ThermalUtilsDefault from "ThermalUtils" /* 5850 */;
-import ThermalStates from "ThermalStates" /* 15678 */;
+import ThermalStates from "ThermalStates" /* 15676 */;
 import size from "module_2" /* 2 */;
 
 function _getThermalState(rawThermalState) {

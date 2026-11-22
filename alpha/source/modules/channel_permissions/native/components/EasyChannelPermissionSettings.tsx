@@ -1,7 +1,7 @@
 // Module ID: 18945
 // Function ID: 18946
 // Name: EasyChannelPermissionSettings
-// Dependencies: [32, 5, 19, 17, 18946, 4762, 4825, 4819, 4784, 4845, 4855, 1386, 6506, 1071, 21, 4913, 575, 1500, 12079, 504, 7734, 7735, 7736, 1112, 5529, 5860, 7775, 4850, 5929, 7348, 7556, 7762, 7045, 13002, 12077, 7101, 5650, 7586, 11278, 18947, 18949, 2]
+// Dependencies: [32, 5, 19, 17, 18946, 4762, 4825, 4819, 4784, 4845, 4855, 1386, 6506, 1071, 21, 4913, 575, 1500, 12079, 504, 7734, 7735, 7736, 1112, 5529, 5860, 7775, 4850, 5929, 7348, 7556, 7762, 7045, 13000, 12077, 7101, 5650, 7586, 11278, 18947, 18949, 2]
 // Exports: default
 
 // Module 18945 (EasyChannelPermissionSettings)
@@ -287,7 +287,7 @@ function ChannelPermissionSettingsBasicView(channel) {
   const sortedGuildRoles = stateFromStoresObject.sortedGuildRoles;
   const items1 = [navigation];
   const layoutEffect = togglePrivateChannel.useLayoutEffect(() => {
-    navigation.setOptions({ headerRight: "r" });
+    navigation.setOptions({ headerRight: "Array" });
   }, items1);
   const items2 = [guild, sortedGuildRoles, channel];
   const memo = togglePrivateChannel.useMemo(() => {

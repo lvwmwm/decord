@@ -1,15 +1,15 @@
-// Module ID: 13745
-// Function ID: 13746
+// Module ID: 13743
+// Function ID: 13744
 // Name: RouteManager
-// Dependencies: [6394, 13746, 1071, 1098, 13747, 673, 2]
+// Dependencies: [6394, 13744, 1071, 1098, 13745, 673, 2]
 
-// Module 13745 (RouteManager)
+// Module 13743 (RouteManager)
 import addSentryBreadcrumbDefault from "addSentryBreadcrumb" /* 673 */;
 import Constants from "Constants" /* 1071 */;
 import router_utils from "router_utils" /* 1098 */;
-import convertRouteToNavigation from "convertRouteToNavigation" /* 13747 */;
+import convertRouteToNavigation from "convertRouteToNavigation" /* 13745 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 6394 */;
-import KeybindRouterStore from "KeybindRouterStore" /* 13746 */;
+import KeybindRouterStore from "KeybindRouterStore" /* 13744 */;
 import size from "module_2" /* 2 */;
 
 function handleConnectionChange() {

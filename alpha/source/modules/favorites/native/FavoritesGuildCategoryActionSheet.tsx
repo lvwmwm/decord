@@ -1,7 +1,7 @@
 // Module ID: 17630
 // Function ID: 17631
 // Name: FavoritesGuildCategoryActionSheet
-// Dependencies: [19, 4765, 21, 5529, 13881, 4738, 7553, 7515, 7555, 10261, 1112, 10371, 17631, 10378, 7545, 5594, 504, 2]
+// Dependencies: [19, 4765, 21, 5529, 13879, 4738, 7553, 7515, 7555, 10261, 1112, 10371, 17631, 10378, 7545, 5594, 504, 2]
 // Exports: default
 
 // Module 17630 (FavoritesGuildCategoryActionSheet)
@@ -37,7 +37,7 @@ function FavoritesGuildCategoryActionSheetConnected(category) {
   category = category.category;
   const onClose = category.onClose;
   const tmp2 = onClose(5529)(category, true);
-  const tmp3 = onClose(13881)(category);
+  const tmp3 = onClose(13879)(category);
   dependencyMap = tmp3;
   const DeveloperMode = category(4738).DeveloperMode;
   const setting = DeveloperMode.useSetting();

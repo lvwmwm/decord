@@ -1,10 +1,10 @@
-// Module ID: 14598
-// Function ID: 14599
+// Module ID: 14596
+// Function ID: 14597
 // Name: UserProfilePrivacyNotice
 // Dependencies: [32, 19, 17, 1071, 4759, 21, 4913, 575, 1195, 1112, 10192, 4738, 4746, 9080, 5504, 8194, 5617, 7030, 7151, 2]
 // Exports: default, useIsPrivacyNoticeVisible
 
-// Module 14598 (UserProfilePrivacyNotice)
+// Module 14596 (UserProfilePrivacyNotice)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;

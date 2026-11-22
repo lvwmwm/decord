@@ -1,7 +1,7 @@
 // Module ID: 18620
 // Function ID: 18621
 // Name: conjureComposerPills
-// Dependencies: [32, 17, 1386, 18315, 11149, 4969, 18470, 1112, 4190, 12861, 2]
+// Dependencies: [32, 17, 1386, 18315, 11149, 4969, 18470, 1112, 4190, 12859, 2]
 // Exports: conjureFilePillIcon, conjurePillNodes, conjurePillText, conjureUserPillLabel, decodeConjurePills, encodeConjurePills
 
 // Module 18620 (conjureComposerPills)
@@ -10,7 +10,7 @@ import intl2 from "intl" /* 1112 */;
 import _modDef4190 from "module_4190" /* 4190 */;
 import UserUtils from "UserUtils" /* 4969 */;
 import AssetRegistryDefault from "AssetRegistry" /* 11149 */;
-import ChatInputParser from "ChatInputParser" /* 12861 */;
+import ChatInputParser from "ChatInputParser" /* 12859 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import UserStore from "UserStore" /* 1386 */;
 import ConjureStoredAttachmentStore from "ConjureStoredAttachmentStore" /* 18315 */;

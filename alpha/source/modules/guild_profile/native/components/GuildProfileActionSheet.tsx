@@ -1,7 +1,7 @@
 // Module ID: 9744
 // Function ID: 9745
 // Name: GuildProfileActionSheet
-// Dependencies: [19, 17, 1071, 21, 4913, 575, 5122, 5477, 8149, 671, 9745, 13817, 13811, 5141, 5468, 5145, 5476, 2]
+// Dependencies: [19, 17, 1071, 21, 4913, 575, 5122, 5477, 8149, 671, 9745, 13815, 13809, 5141, 5468, 5145, 5476, 2]
 // Exports: default
 
 // Module 9744 (GuildProfileActionSheet)
@@ -15,7 +15,7 @@ import BottomSheetModal from "BottomSheetModal" /* 5145 */;
 import LinearGradientDefault from "LinearGradient" /* 5468 */;
 import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 5476 */;
 import GuildProfileSheetBodyDefault from "GuildProfileSheetBody" /* 9745 */;
-import GuildProfileCTADefault from "GuildProfileCTA" /* 13817 */;
+import GuildProfileCTADefault from "GuildProfileCTA" /* 13815 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4913 */;
@@ -25,7 +25,7 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp4;
-const GuildProfileCreateTagUpsellDefault = tmp4(13811);
+const GuildProfileCreateTagUpsellDefault = tmp4(13809);
 let react = react_mod;
 const View = react_native.View;
 const VerticalGradient = Constants.VerticalGradient;

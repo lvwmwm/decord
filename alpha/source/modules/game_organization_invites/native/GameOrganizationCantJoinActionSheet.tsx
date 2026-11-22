@@ -1,14 +1,14 @@
-// Module ID: 12234
-// Function ID: 12235
+// Module ID: 12241
+// Function ID: 12242
 // Name: GameOrganizationCantJoinActionSheet
-// Dependencies: [19, 4784, 11896, 21, 5127, 12235, 504, 6835, 2639, 11225, 7515, 1112, 5511, 2]
+// Dependencies: [19, 4784, 11896, 21, 5127, 12242, 504, 6835, 2639, 11225, 7515, 1112, 5511, 2]
 // Exports: default
 
-// Module 12234 (GameOrganizationCantJoinActionSheet)
+// Module 12241 (GameOrganizationCantJoinActionSheet)
 import Fragment from "Fragment" /* 21 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
 import transitionToGuild from "transitionToGuild" /* 6835 */;
-import useResolvedGameOrganizationInviteDefault from "useResolvedGameOrganizationInvite" /* 12235 */;
+import useResolvedGameOrganizationInviteDefault from "useResolvedGameOrganizationInvite" /* 12242 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4784 */;
 import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11896 */;

@@ -1,10 +1,10 @@
-// Module ID: 12887
-// Function ID: 12888
+// Module ID: 12885
+// Function ID: 12886
 // Name: ForumPostMessageCount
 // Dependencies: [19, 17, 21, 4913, 575, 1378, 8617, 1112, 7672, 5504, 11676, 2]
 // Exports: default
 
-// Module 12887 (ForumPostMessageCount)
+// Module 12885 (ForumPostMessageCount)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;

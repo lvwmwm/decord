@@ -1,7 +1,7 @@
 // Module ID: 18400
 // Function ID: 18401
 // Name: ConjureNativeControlOverlay
-// Dependencies: [19, 17, 4914, 21, 4913, 575, 18401, 14732, 504, 1653, 5514, 5515, 5123, 1112, 4190, 15221, 17248, 5504, 5511, 2]
+// Dependencies: [19, 17, 4914, 21, 4913, 575, 18401, 14730, 504, 1653, 5514, 5515, 5123, 1112, 4190, 15219, 17248, 5504, 5511, 2]
 // Exports: default
 
 // Module 18400 (ConjureNativeControlOverlay)
@@ -94,7 +94,7 @@ export default function ConjureNativeControlOverlay(arg0) {
   let obj2 = conjureControlPhase(18401);
   const conjureControlStop = obj2.useConjureControlStop(projectId);
   ({ stop, stopping } = conjureControlStop);
-  const obj3 = conjureControlPhase(14732);
+  const obj3 = conjureControlPhase(14730);
   const conjureControlTuning = obj3.useConjureControlTuning(projectId);
   let items = [sharedValue2];
   const obj4 = conjureControlPhase(504);
@@ -261,7 +261,7 @@ export default function ConjureNativeControlOverlay(arg0) {
       items10 = [tmp.bar, animatedStyle1];
       View2 = tmp28(1653).View;
       if (tmp8) {
-        tmp44Result = tmp44(tmp2(15221).AILoader, { size: 12, color: "text-overlay-light" });
+        tmp44Result = tmp44(tmp2(15219).AILoader, { size: 12, color: "text-overlay-light" });
       } else {
         const obj8 = { size: "sm", color: tmp28(575).colors.TEXT_OVERLAY_LIGHT };
         const SparklesIcon = tmp2(17248).SparklesIcon;

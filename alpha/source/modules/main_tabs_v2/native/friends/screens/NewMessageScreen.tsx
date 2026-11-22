@@ -1,7 +1,7 @@
 // Module ID: 18863
 // Function ID: 18864
 // Name: NewMessageScreen
-// Dependencies: [5, 32, 19, 17, 4766, 4762, 4855, 6842, 9646, 1071, 21, 1653, 5504, 4913, 575, 1378, 7737, 6843, 572, 504, 1255, 18864, 5123, 18865, 8561, 1112, 11741, 18406, 7520, 7539, 5488, 5474, 12063, 12061, 12060, 8573, 1098, 12064, 5594, 11055, 11056, 5604, 5603, 10094, 5511, 13229, 18802, 2]
+// Dependencies: [5, 32, 19, 17, 4766, 4762, 4855, 6842, 9646, 1071, 21, 1653, 5504, 4913, 575, 1378, 7737, 6843, 572, 504, 1255, 18864, 5123, 18865, 8561, 1112, 11741, 18406, 7520, 7539, 5488, 5474, 12063, 12061, 12060, 8573, 1098, 12064, 5594, 11055, 11056, 5604, 5603, 10094, 5511, 13227, 18802, 2]
 // Exports: default
 
 // Module 18863 (NewMessageScreen)
@@ -59,7 +59,7 @@ let str;
 let tmp2;
 const getGroupDMRecipientLimitDefault = tmp2(12061);
 const GroupDMNitroCapExperimentDefault = tmp2(12063);
-const NewMessageUserListDefault = tmp2(13229);
+const NewMessageUserListDefault = tmp2(13227);
 const GroupDMNitroUpsellBannerDefault = tmp2(18802);
 function isPrivateChannelMatch(arr, channel) {
   const recipients = channel.recipients;
@@ -523,9 +523,9 @@ export default function NewMessageScreen(navigation) {
         tmp82 = new tmp8(obj);
         dispatch(obj2);
         return () => {
-          const obj2 = { type: "CHANNEL_DELETE", channel: { id: first(closure_1_2[17]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, guild_id: "Array", parent_id: "fill" } };
+          const obj2 = { type: "CHANNEL_DELETE", channel: { id: first(closure_1_2[17]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, guild_id: "Array", parent_id: "isArray" } };
           obj = FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID(closure_1_2[18]);
-          ({ id: first(closure_1_2[17]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, guild_id: "Array", parent_id: "fill" });
+          ({ id: first(closure_1_2[17]).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID, guild_id: "Array", parent_id: "isArray" });
           obj.dispatch(obj2);
         };
       }

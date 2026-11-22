@@ -1,7 +1,7 @@
 // Module ID: 19247
 // Function ID: 19248
 // Name: VoicePanelHeader
-// Dependencies: [32, 19, 17, 6620, 5530, 10880, 502, 4762, 2131, 4855, 6535, 1386, 11750, 11753, 11748, 11768, 5563, 1082, 21, 4913, 575, 1653, 5514, 5515, 5480, 7324, 11749, 11057, 504, 10882, 10855, 19200, 1112, 10893, 8891, 10895, 5143, 18036, 19248, 5529, 1706, 5477, 11755, 5123, 1092, 17986, 17987, 19249, 7101, 19250, 5809, 9735, 9688, 4974, 18166, 19251, 12800, 19253, 13819, 19255, 19264, 11055, 19266, 19267, 2]
+// Dependencies: [32, 19, 17, 6620, 5530, 10880, 502, 4762, 2131, 4855, 6535, 1386, 11750, 11753, 11748, 11768, 5563, 1082, 21, 4913, 575, 1653, 5514, 5515, 5480, 7324, 11749, 11057, 504, 10882, 10855, 19200, 1112, 10893, 8891, 10895, 5143, 18036, 19248, 5529, 1706, 5477, 11755, 5123, 1092, 17986, 17987, 19249, 7101, 19250, 5809, 9735, 9688, 4974, 18166, 19251, 12798, 19253, 13817, 19255, 19264, 11055, 19266, 19267, 2]
 
 // Module 19247 (VoicePanelHeader)
 import nativeDefault from "native" /* 575 */;
@@ -55,7 +55,7 @@ const springPresets = tmp2(5515);
 const AssetRegistryDefault = tmp2(11055);
 const useMyCurrentStageChannelRoleDefault = tmp2(11057);
 const calculateVoicePanelHeaderSpecsDefault = tmp2(11755);
-const AssetRegistryDefault2 = tmp2(12800);
+const AssetRegistryDefault2 = tmp2(12798);
 const ThemedHeaderBackgroundGradientDefault = tmp2(18166);
 const VoicePanelIconButtonDefault = tmp2(19200);
 const useVoicePanelNavArrowPressedDefault = tmp2(19249);
@@ -1027,7 +1027,7 @@ const memoResult = react.memo(function VoicePanelHeader(layout) {
     tmp115Result8 = null;
     if (flag2) {
       const obj16 = { size: "xs", color: nativeDefault.colors.TEXT_SUBTLE, style: tmp.shieldIconMargin };
-      const ShieldLockIcon = tmp5(13819).ShieldLockIcon;
+      const ShieldLockIcon = tmp5(13817).ShieldLockIcon;
       tmp115Result8 = tmp115(ShieldLockIcon, obj16);
     }
   }

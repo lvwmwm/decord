@@ -1,10 +1,10 @@
-// Module ID: 17037
-// Function ID: 17038
+// Module ID: 17035
+// Function ID: 17036
 // Name: toggleDismissibleContentDismissState
 // Dependencies: [19, 4946, 5572, 4760, 4747, 4743, 11, 504, 4945, 1088, 4753, 2]
 // Exports: default
 
-// Module 17037 (toggleDismissibleContentDismissState)
+// Module 17035 (toggleDismissibleContentDismissState)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react from "react" /* 19 */;
 import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4743 */;

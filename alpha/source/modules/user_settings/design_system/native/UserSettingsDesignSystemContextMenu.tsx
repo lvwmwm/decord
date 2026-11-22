@@ -1,7 +1,7 @@
 // Module ID: 17228
 // Function ID: 17229
 // Name: UserSettingsDesignSystemContextMenu
-// Dependencies: [19, 17, 21, 13729, 14838, 8704, 12011, 5623, 17229, 17230, 12006, 4913, 575, 12, 8658, 5511, 7047, 5504, 2]
+// Dependencies: [19, 17, 21, 13727, 14836, 8704, 12011, 5623, 17229, 17230, 12006, 4913, 575, 12, 8658, 5511, 7047, 5504, 2]
 // Exports: default
 
 // Module 17228 (UserSettingsDesignSystemContextMenu)
@@ -14,8 +14,8 @@ import Card_Card from "Card/Card" /* 7047 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 8704 */;
 import AssetRegistryDefault3 from "AssetRegistry" /* 12006 */;
 import AssetRegistryDefault4 from "AssetRegistry" /* 12011 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 13729 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 14838 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 13727 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 14836 */;
 import AssetRegistryDefault7 from "AssetRegistry" /* 17229 */;
 import AssetRegistryDefault8 from "AssetRegistry" /* 17230 */;
 import react from "react" /* 19 */;

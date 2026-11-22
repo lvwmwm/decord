@@ -190,7 +190,7 @@ export function showReportModalForGuildDirectoryEntry(entry, onSubmit) {
   const GUILD_DIRECTORY_ENTRY = MenuTypes.ReportNames.GUILD_DIRECTORY_ENTRY;
   const trackWithMetadata = AppAnalyticsUtilsDefault.trackWithMetadata;
   const IAR_MODAL_OPEN = AnalyticEvents.IAR_MODAL_OPEN;
-  const obj2 = { report_type: GUILD_DIRECTORY_ENTRY, location: "Array" };
+  const obj2 = { report_type: GUILD_DIRECTORY_ENTRY, location: "r" };
   AppAnalyticsUtilsDefault;
   const merged = Object.assign(obj);
   trackWithMetadata(IAR_MODAL_OPEN, obj2);
@@ -204,7 +204,7 @@ export function showReportModalForMessage(message, mobile_media_message_preview_
   const MESSAGE = MenuTypes.ReportNames.MESSAGE;
   const trackWithMetadata = AppAnalyticsUtilsDefault.trackWithMetadata;
   const IAR_MODAL_OPEN = AnalyticEvents.IAR_MODAL_OPEN;
-  const obj2 = { report_type: MESSAGE, location: "Array" };
+  const obj2 = { report_type: MESSAGE, location: "r" };
   AppAnalyticsUtilsDefault;
   const merged = Object.assign(obj);
   trackWithMetadata(IAR_MODAL_OPEN, obj2);
@@ -218,7 +218,7 @@ export function showStaffTestReportModalForMessage(id, arg1, onSubmit) {
   const MESSAGE = MenuTypes.ReportNames.MESSAGE;
   const trackWithMetadata = AppAnalyticsUtilsDefault.trackWithMetadata;
   const IAR_MODAL_OPEN = AnalyticEvents.IAR_MODAL_OPEN;
-  const obj2 = { report_type: MESSAGE, location: "Array" };
+  const obj2 = { report_type: MESSAGE, location: "r" };
   AppAnalyticsUtilsDefault;
   const merged = Object.assign(obj);
   trackWithMetadata(IAR_MODAL_OPEN, obj2);
@@ -232,7 +232,7 @@ export function showStaffTestReportModalForGuild(guild_id, arg1, onSubmit) {
   const GUILD = MenuTypes.ReportNames.GUILD;
   const trackWithMetadata = AppAnalyticsUtilsDefault.trackWithMetadata;
   const IAR_MODAL_OPEN = AnalyticEvents.IAR_MODAL_OPEN;
-  const obj2 = { report_type: GUILD, location: "Array" };
+  const obj2 = { report_type: GUILD, location: "r" };
   AppAnalyticsUtilsDefault;
   const merged = Object.assign(obj);
   trackWithMetadata(IAR_MODAL_OPEN, obj2);
@@ -247,7 +247,7 @@ export function showReportModalForStageChannel(channel, onSubmit) {
     obj = { stage_instance_id: null, channel_id: null, guild_id: null };
     ({ id: obj.stage_instance_id, channel_id: obj.channel_id, guild_id: obj.guild_id } = stageInstanceByChannel);
     const STAGE_CHANNEL = MenuTypes.ReportNames.STAGE_CHANNEL;
-    const obj2 = { report_type: STAGE_CHANNEL, location: "Array" };
+    const obj2 = { report_type: STAGE_CHANNEL, location: "r" };
     const trackWithMetadata = AppAnalyticsUtilsDefault.trackWithMetadata;
     const IAR_MODAL_OPEN = AnalyticEvents.IAR_MODAL_OPEN;
     AppAnalyticsUtilsDefault;
@@ -267,7 +267,7 @@ export function showReportModalForGuildScheduledEvent(guild_scheduled_event_id, 
   const GUILD_SCHEDULED_EVENT = MenuTypes.ReportNames.GUILD_SCHEDULED_EVENT;
   const trackWithMetadata = AppAnalyticsUtilsDefault.trackWithMetadata;
   const IAR_MODAL_OPEN = AnalyticEvents.IAR_MODAL_OPEN;
-  const obj2 = { report_type: GUILD_SCHEDULED_EVENT, location: "Array" };
+  const obj2 = { report_type: GUILD_SCHEDULED_EVENT, location: "r" };
   AppAnalyticsUtilsDefault;
   const merged = Object.assign(obj);
   trackWithMetadata(IAR_MODAL_OPEN, obj2);
@@ -281,7 +281,7 @@ export function showReportModalForFirstDM(id, onSubmit) {
   const FIRST_DM = MenuTypes.ReportNames.FIRST_DM;
   const trackWithMetadata = AppAnalyticsUtilsDefault.trackWithMetadata;
   const IAR_MODAL_OPEN = AnalyticEvents.IAR_MODAL_OPEN;
-  const obj2 = { report_type: FIRST_DM, location: "Array" };
+  const obj2 = { report_type: FIRST_DM, location: "r" };
   AppAnalyticsUtilsDefault;
   const merged = Object.assign(obj);
   trackWithMetadata(IAR_MODAL_OPEN, obj2);
@@ -298,7 +298,7 @@ export function showReportModalForUser(user, contextualGuildId, onSubmit, appCon
   const USER = MenuTypes.ReportNames.USER;
   const trackWithMetadata = AppAnalyticsUtilsDefault.trackWithMetadata;
   const IAR_MODAL_OPEN = AnalyticEvents.IAR_MODAL_OPEN;
-  const obj2 = { report_type: USER, location: "Array" };
+  const obj2 = { report_type: USER, location: "r" };
   AppAnalyticsUtilsDefault;
   const merged = Object.assign(obj);
   trackWithMetadata(IAR_MODAL_OPEN, obj2);
@@ -312,7 +312,7 @@ export function showStaffTestReportModalForUser(id, contextualGuildId, onSubmit,
   const USER = MenuTypes.ReportNames.USER;
   const trackWithMetadata = AppAnalyticsUtilsDefault.trackWithMetadata;
   const IAR_MODAL_OPEN = AnalyticEvents.IAR_MODAL_OPEN;
-  const obj2 = { report_type: USER, location: "Array" };
+  const obj2 = { report_type: USER, location: "r" };
   AppAnalyticsUtilsDefault;
   const merged = Object.assign(obj);
   trackWithMetadata(IAR_MODAL_OPEN, obj2);
@@ -327,7 +327,7 @@ export function showUnauthenticatedReportModalForUser(emailToken, onClose) {
   const USER = MenuTypes.UnauthenticatedReportNames.USER;
   const trackWithMetadata = AppAnalyticsUtilsDefault.trackWithMetadata;
   const IAR_MODAL_OPEN = AnalyticEvents.IAR_MODAL_OPEN;
-  const obj2 = { report_type: USER, location: "Array" };
+  const obj2 = { report_type: USER, location: "r" };
   AppAnalyticsUtilsDefault;
   const merged = Object.assign(obj);
   trackWithMetadata(IAR_MODAL_OPEN, obj2);
@@ -343,7 +343,7 @@ export function showUnauthenticatedReportModalForGuild(emailToken, onClose) {
   const GUILD = MenuTypes.UnauthenticatedReportNames.GUILD;
   const trackWithMetadata = AppAnalyticsUtilsDefault.trackWithMetadata;
   const IAR_MODAL_OPEN = AnalyticEvents.IAR_MODAL_OPEN;
-  const obj3 = { report_type: GUILD, location: "Array" };
+  const obj3 = { report_type: GUILD, location: "r" };
   AppAnalyticsUtilsDefault;
   const merged = Object.assign(obj2);
   trackWithMetadata(IAR_MODAL_OPEN, obj3);
@@ -356,7 +356,7 @@ export function showUnauthenticatedReportModalForTida(emailToken, onClose) {
   const MEDIA_TAKEDOWN = MenuTypes.UnauthenticatedReportNames.MEDIA_TAKEDOWN;
   const trackWithMetadata = AppAnalyticsUtilsDefault.trackWithMetadata;
   const IAR_MODAL_OPEN = AnalyticEvents.IAR_MODAL_OPEN;
-  obj = { report_type: MEDIA_TAKEDOWN, location: "Array" };
+  obj = { report_type: MEDIA_TAKEDOWN, location: "r" };
   AppAnalyticsUtilsDefault;
   const merged = Object.assign({});
   trackWithMetadata(IAR_MODAL_OPEN, obj);
@@ -370,9 +370,9 @@ export function showUnauthenticatedReportModalForMessage(emailToken, onClose) {
   const MESSAGE = MenuTypes.UnauthenticatedReportNames.MESSAGE;
   const trackWithMetadata = AppAnalyticsUtilsDefault.trackWithMetadata;
   const IAR_MODAL_OPEN = AnalyticEvents.IAR_MODAL_OPEN;
-  obj = { report_type: MESSAGE, location: "Array" };
+  obj = { report_type: MESSAGE, location: "r" };
   AppAnalyticsUtilsDefault;
-  const merged = Object.assign({ message_id: "Array", channel_id: "analyticsLocations" });
+  const merged = Object.assign({ message_id: "disabled", channel_id: "isArray" });
   trackWithMetadata(IAR_MODAL_OPEN, obj);
   const obj2 = showReportModal2;
   const obj3 = { name: MenuTypes.UnauthenticatedReportNames.MESSAGE, record: tmp };
@@ -387,7 +387,7 @@ export function showReportModalForInappropriateConversationSafetyAlert(lastChann
   const MESSAGE = MenuTypes.ReportNames.MESSAGE;
   const trackWithMetadata = AppAnalyticsUtilsDefault.trackWithMetadata;
   const IAR_MODAL_OPEN = AnalyticEvents.IAR_MODAL_OPEN;
-  const obj2 = { report_type: MESSAGE, location: "Array" };
+  const obj2 = { report_type: MESSAGE, location: "r" };
   AppAnalyticsUtilsDefault;
   const merged = Object.assign(obj);
   trackWithMetadata(IAR_MODAL_OPEN, obj2);
@@ -424,7 +424,7 @@ export function showReportModalForApp(arg0) {
   const APPLICATION = MenuTypes.ReportNames.APPLICATION;
   const trackWithMetadata = AppAnalyticsUtilsDefault.trackWithMetadata;
   const IAR_MODAL_OPEN = AnalyticEvents.IAR_MODAL_OPEN;
-  const obj4 = { report_type: APPLICATION, location: "Array" };
+  const obj4 = { report_type: APPLICATION, location: "r" };
   AppAnalyticsUtilsDefault;
   const merged = Object.assign(obj3);
   trackWithMetadata(IAR_MODAL_OPEN, obj4);

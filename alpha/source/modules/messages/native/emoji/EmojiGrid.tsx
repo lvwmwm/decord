@@ -74,12 +74,12 @@ export function EmojiGrid(numberToShow) {
   const arr4 = obj(11331)(substr1, num2);
   let Stack = tmp(5929).Stack;
   return <Stack spacing={8} align="center" style={obj.emojiGridContainer}>{arr4.map((arr, index) => {
-    const f127187 = (guildEmoji) => {
+    const f127200 = (guildEmoji) => {
       obj = { guildEmoji };
       return closure_1_3(closure_1_5, obj, guildEmoji.id);
     };
-    obj = { direction: "horizontal", spacing: 32, justify: "center", style: obj.emojiGridRowContainer, children: arr.map(f127187) };
+    obj = { direction: "horizontal", spacing: 32, justify: "center", style: obj.emojiGridRowContainer, children: arr.map(f127200) };
     const Stack = Stack_Stack.Stack;
-    return <Stack key={arg1} direction="horizontal" spacing={32} justify="center" style={obj.emojiGridRowContainer}>{arg0.map(f127187)}</Stack>;
+    return <Stack key={arg1} direction="horizontal" spacing={32} justify="center" style={obj.emojiGridRowContainer}>{arg0.map(f127200)}</Stack>;
   })}</Stack>;
 }

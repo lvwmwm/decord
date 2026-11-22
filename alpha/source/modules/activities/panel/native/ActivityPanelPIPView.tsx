@@ -34,7 +34,7 @@ let map1;
 let obj2;
 let obj3;
 let unpackModuleId;
-const f117074 = () => {
+const f117085 = () => {
   let num;
   const _Math = Math;
   if (right != null) {
@@ -372,7 +372,7 @@ const memoResult = react.memo(function ActivityPanelPIPView(transitionState) {
   const tmp8 = transitionCleanUp(1628)();
   let closure_0 = tmp8;
   const items3 = [tmp8.right];
-  memo = activity.useMemo(f117074, items3);
+  memo = activity.useMemo(f117085, items3);
   const items4 = [activity, stateFromStores1, memo, stateFromStores, transitionCleanUp, transitionState];
   return activity.useMemo(() => <BaseActivityPanelPIPView transitionState={transitionState} transitionCleanUp={transitionCleanUp} pipOrientationLockState={stateFromStores} hasActivity={null != activity} context={ActivityPanelStateContextDefault}>{null}</BaseActivityPanelPIPView>, items4);
 });
@@ -384,7 +384,7 @@ export function useBaseActivityPanelPIPView() {
   let items;
   const tmp = useSafeAreaInsetsDefault();
   let closure_0 = tmp;
-  const obj = { landscapeSafeAreasConfig: react.useMemo(f117074, items) };
+  const obj = { landscapeSafeAreasConfig: react.useMemo(f117085, items) };
   items = [tmp.right];
   return obj;
 }

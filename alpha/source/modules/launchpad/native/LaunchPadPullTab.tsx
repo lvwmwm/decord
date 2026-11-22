@@ -1,14 +1,14 @@
 // Module ID: 19119
 // Function ID: 19120
 // Name: LaunchPadPullTab
-// Dependencies: [19, 17, 11933, 12827, 21, 4913, 575, 18235, 1653, 12903, 19120, 5514, 1112, 19040, 15054, 2]
+// Dependencies: [19, 17, 11933, 12825, 21, 4913, 575, 18235, 1653, 12901, 19120, 5514, 1112, 19040, 15052, 2]
 
 // Module 19119 (LaunchPadPullTab)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import ChatInputConstants from "ChatInputConstants" /* 12827 */;
-import useWindowDimensionsSharedValueDefault from "useWindowDimensionsSharedValue" /* 12903 */;
+import ChatInputConstants from "ChatInputConstants" /* 12825 */;
+import useWindowDimensionsSharedValueDefault from "useWindowDimensionsSharedValue" /* 12901 */;
 import useLaunchPadPullTabMinimizedDefault from "useLaunchPadPullTabMinimized" /* 19120 */;
 import react from "react" /* 19 */;
 import LaunchPadConstants from "LaunchPadConstants" /* 11933 */;
@@ -190,7 +190,7 @@ const memoResult = react.memo(function LaunchPadPullTab(gestureState) {
   LaunchPadPullTabTsx1.__initData = tmp28;
   const items4 = [closure_16, launchPadSharedState, updaters, sharedValue, launchPadPullTabState, CHAT_INPUT_HEIGHT, tmp8, , , ];
   const useAnimatedReaction = tmp6Result2.useAnimatedReaction;
-  items4[7] = updaters(12903).getWindowDimensionsWorklet;
+  items4[7] = updaters(12901).getWindowDimensionsWorklet;
   items4[8] = LAUNCH_PAD_PULL_TAB_HEIGHT;
   items4[9] = closure_10;
   c0 = undefined;

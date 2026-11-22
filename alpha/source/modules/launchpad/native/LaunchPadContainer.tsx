@@ -1,7 +1,7 @@
 // Module ID: 19114
 // Function ID: 19115
 // Name: LaunchPadContainer
-// Dependencies: [19, 17, 11933, 21, 4913, 19115, 5867, 5173, 19116, 11934, 19144, 10598, 12903, 1653, 5514, 17520, 2]
+// Dependencies: [19, 17, 11933, 21, 4913, 19115, 5867, 5173, 19116, 11934, 19144, 10598, 12901, 1653, 5514, 17520, 2]
 // Exports: default
 
 // Module 19114 (LaunchPadContainer)
@@ -11,7 +11,7 @@ import spring_spring from "spring/spring" /* 5514 */;
 import OverlayViewDefault from "OverlayView" /* 5867 */;
 import useStateFromSharedValueDefault from "useStateFromSharedValue" /* 10598 */;
 import useLaunchPadTypeDefault from "useLaunchPadType" /* 11934 */;
-import useWindowDimensionsSharedValueDefault from "useWindowDimensionsSharedValue" /* 12903 */;
+import useWindowDimensionsSharedValueDefault from "useWindowDimensionsSharedValue" /* 12901 */;
 import useLaunchPadGestureDefault from "useLaunchPadGesture" /* 19115 */;
 import LaunchPadWrapperDefault from "LaunchPadWrapper" /* 19116 */;
 import useLaunchPadStateDefault from "useLaunchPadState" /* 19144 */;

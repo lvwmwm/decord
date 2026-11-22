@@ -1,7 +1,7 @@
 // Module ID: 18385
 // Function ID: 18386
 // Name: conjureChatMoreSections
-// Dependencies: [6621, 1112, 4190, 10371, 10137, 18386, 14368, 11239, 6936, 5622, 10343, 7386, 5609, 18388, 5615, 16957, 17187, 18352, 10378, 7235, 18301, 5620, 2]
+// Dependencies: [6621, 1112, 4190, 10371, 10137, 18386, 14366, 11239, 6936, 5622, 10343, 7386, 5609, 18388, 5615, 16955, 17187, 18352, 10378, 7235, 18301, 5620, 2]
 // Exports: conjureChatMoreSections
 
 // Module 18385 (conjureChatMoreSections)
@@ -68,7 +68,7 @@ export function conjureChatMoreSections(project) {
   }
   if (null != onRefresh) {
     const push2 = items.push;
-    const obj3 = { kind: "action", key: "refresh", label: intl4.string(_modDef4190["p4B/7M"]), IconComponent: tmp2(14368).RefreshIcon, onPress: onRefresh };
+    const obj3 = { kind: "action", key: "refresh", label: intl4.string(_modDef4190["p4B/7M"]), IconComponent: tmp2(14366).RefreshIcon, onPress: onRefresh };
     intl4 = tmp2(1112).intl;
     push2(obj3);
   }
@@ -149,7 +149,7 @@ export function conjureChatMoreSections(project) {
       kind: "action",
       key: "import",
       label: intl9.string(_modDef4190.rWGY3e),
-      IconComponent: tmp2(16957).FileUpIcon,
+      IconComponent: tmp2(16955).FileUpIcon,
       onPress() {
           const obj = conjureProjectActions;
           return obj.importConjureProject(project);

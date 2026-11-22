@@ -1,6 +1,6 @@
 // Module ID: 19393
 // Function ID: 19394
-// Dependencies: [41, 42, 93, 95, 98, 19, 17, 21, 7865, 14666]
+// Dependencies: [41, 42, 93, 95, 98, 19, 17, 21, 7865, 14664]
 
 // Module 19393
 import inlineStyles from "inlineStyles" /* 7865 */;
@@ -12,14 +12,14 @@ import _inherits from "_inherits" /* 98 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import module_14666_mod from "module_14666" /* 14666 */;
+import module_14664_mod from "module_14664" /* 14664 */;
 
 let Animated;
 let hasOwnProperty;
 let items1;
 let metroImportDefault;
 let metroRequire;
-let module_14666;
+let module_14664;
 let oneOfType;
 function _isNativeReflectConstruct() {
   try {
@@ -198,12 +198,12 @@ let items = [
   }
 ];
 const importDefaultResultResult = _createClass(CircularProgress, items);
-let obj = { style: module_14666.object, size: oneOfType(items1).isRequired, fill: module_14666.number.isRequired, width: module_14666.number.isRequired, backgroundWidth: module_14666.number, tintColor: module_14666.string, tintTransparency: module_14666.bool, backgroundColor: module_14666.string, rotation: module_14666.number, lineCap: module_14666.string, arcSweepAngle: module_14666.number, children: module_14666.func, childrenContainerStyle: module_14666.object, padding: module_14666.number, renderCap: module_14666.func, dashedBackground: module_14666.object, dashedTint: module_14666.object };
-module_14666 = module_14666_mod;
-oneOfType = module_14666.oneOfType;
-items1 = [module_14666.number, ];
-module_14666 = module_14666_mod;
-items1[1] = module_14666.instanceOf(Animated.Value);
+let obj = { style: module_14664.object, size: oneOfType(items1).isRequired, fill: module_14664.number.isRequired, width: module_14664.number.isRequired, backgroundWidth: module_14664.number, tintColor: module_14664.string, tintTransparency: module_14664.bool, backgroundColor: module_14664.string, rotation: module_14664.number, lineCap: module_14664.string, arcSweepAngle: module_14664.number, children: module_14664.func, childrenContainerStyle: module_14664.object, padding: module_14664.number, renderCap: module_14664.func, dashedBackground: module_14664.object, dashedTint: module_14664.object };
+module_14664 = module_14664_mod;
+oneOfType = module_14664.oneOfType;
+items1 = [module_14664.number, ];
+module_14664 = module_14664_mod;
+items1[1] = module_14664.instanceOf(Animated.Value);
 importDefaultResultResult.propTypes = obj;
 importDefaultResultResult.defaultProps = { tintColor: "black", tintTransparency: true, rotation: 90, lineCap: "butt", arcSweepAngle: 360, padding: 0, dashedBackground: { width: 0, gap: 0 }, dashedTint: { width: 0, gap: 0 } };
 

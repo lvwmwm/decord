@@ -1,7 +1,7 @@
 // Module ID: 17985
 // Function ID: 17986
 // Name: useVoicePanelDockContextMenuItems
-// Dependencies: [19, 1071, 11749, 17986, 10926, 17987, 17988, 17989, 10667, 6533, 1107, 17991, 1112, 5603, 17992, 17994, 3376, 14510, 11126, 17996, 7672, 10371, 17998, 2]
+// Dependencies: [19, 1071, 11749, 17986, 10926, 17987, 17988, 17989, 10667, 6533, 1107, 17991, 1112, 5603, 17992, 17994, 3376, 14508, 11126, 17996, 7672, 10371, 17998, 2]
 // Exports: default
 
 // Module 17985 (useVoicePanelDockContextMenuItems)
@@ -116,7 +116,7 @@ export default function useVoicePanelDockContextMenuItems(id, arg1) {
       }
       const obj3 = { label: stringResult, IconComponent: VideoIcon, action: closure_7.onPress };
       if (closure_7.isVideoEnabled) {
-        VideoIcon = tmp28(14510).VideoSlashIcon;
+        VideoIcon = tmp28(14508).VideoSlashIcon;
       } else {
         VideoIcon = tmp28(11126).VideoIcon;
       }

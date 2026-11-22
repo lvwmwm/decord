@@ -1,7 +1,7 @@
 // Module ID: 17976
 // Function ID: 17977
 // Name: ConnectionBanner
-// Dependencies: [32, 19, 17, 14965, 16478, 1071, 21, 4913, 575, 1112, 5477, 17977, 17979, 5504, 671, 1653, 7135, 5468, 504, 1255, 16477, 5514, 1706, 14966, 2]
+// Dependencies: [32, 19, 17, 14963, 16476, 1071, 21, 4913, 575, 1112, 5477, 17977, 17979, 5504, 671, 1653, 7135, 5468, 504, 1255, 16475, 5514, 1706, 14964, 2]
 // Exports: default
 
 // Module 17976 (ConnectionBanner)
@@ -15,11 +15,11 @@ import useToken from "useToken" /* 5477 */;
 import Text_Text from "Text/Text" /* 5504 */;
 import spring_spring from "spring/spring" /* 5514 */;
 import _modDef7135 from "module_7135" /* 7135 */;
-import ConnectivityIndicatorStateStore2 from "ConnectivityIndicatorStateStore" /* 14965 */;
+import ConnectivityIndicatorStateStore2 from "ConnectivityIndicatorStateStore" /* 14963 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import YouBarConstants from "YouBarConstants" /* 16478 */;
+import YouBarConstants from "YouBarConstants" /* 16476 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
@@ -278,7 +278,7 @@ export default function ConnectionBanner() {
   let ref;
   let state;
   let stateFromStores;
-  let obj = stateFromStores(14966);
+  let obj = stateFromStores(14964);
   const config = obj.useConfig({ location: "ConnectionBanner" });
   const hidden = config.hidden;
   const timeoutMs = config.timeoutMs;

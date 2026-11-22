@@ -1,7 +1,7 @@
 // Module ID: 9101
 // Function ID: 9102
 // Name: UserSettingsPremium
-// Dependencies: [32, 19, 17, 1386, 2177, 2178, 8120, 2118, 8851, 1071, 1388, 21, 4913, 9102, 1628, 7520, 7539, 7414, 5474, 1255, 504, 1500, 4779, 9103, 9105, 9107, 8123, 9210, 8859, 9141, 9126, 9321, 8864, 7411, 7415, 2173, 4726, 9322, 9365, 9369, 9372, 10505, 14066, 9242, 1378, 2]
+// Dependencies: [32, 19, 17, 1386, 2177, 2178, 8120, 2118, 8851, 1071, 1388, 21, 4913, 9102, 1628, 7520, 7539, 7414, 5474, 1255, 504, 1500, 4779, 9103, 9105, 9107, 8123, 9210, 8859, 9141, 9126, 9321, 8864, 7411, 7415, 2173, 4726, 9322, 9365, 9369, 9372, 10505, 14064, 9242, 1378, 2]
 // Exports: default
 
 // Module 9101 (UserSettingsPremium)
@@ -48,7 +48,7 @@ const PremiumSubscriptionDetailsDefault = tmp2(9322);
 const PremiumBillingInfoDefault = tmp2(9365);
 const PremiumAccountCreditDefault = tmp2(9369);
 const PremiumNitroHomeDefault = tmp2(9372);
-const PremiumMarketingPageDefault = tmp2(14066);
+const PremiumMarketingPageDefault = tmp2(14064);
 ({ ActivityIndicator: hasOwnProperty, View: metroRequire, ScrollView: metroImportDefault } = react_native);
 ({ AnalyticEvents: closure_14, AppStates: closure_15, UserSettingsSections: closure_16, USER_SETTINGS_CONTAINER_HORIZONTAL_PADDING } = Constants);
 ({ PremiumTypes: closure_17, PREMIUM_SUBSCRIPTION_APPLICATION: closure_18 } = PremiumConstants);
@@ -73,7 +73,7 @@ export default function UserSettingsPremium(applicationId) {
   let tmp30Result;
   let tmp30Result5;
   let tmp9;
-  const f94416 = () => {
+  const f94425 = () => {
     const items = [premiumTrialOffer.getPremiumTypeSubscription(), premiumTrialOffer.hasFetchedSubscriptions()];
     return items;
   };
@@ -134,8 +134,8 @@ export default function UserSettingsPremium(applicationId) {
   });
   let obj2 = applicationId(504);
   const items3 = [premiumTrialOffer];
-  [tmp9, tmp10] = obj2.useStateFromStoresArray(items3, f94416);
-  _slicedToArray(obj2.useStateFromStoresArray(items3, f94416), 2);
+  [tmp9, tmp10] = obj2.useStateFromStoresArray(items3, f94425);
+  _slicedToArray(obj2.useStateFromStoresArray(items3, f94425), 2);
   let obj3 = applicationId(1500);
   state = obj3.useNavigation();
   const items4 = [state2];

@@ -1,7 +1,7 @@
 // Module ID: 5660
 // Function ID: 5661
 // Name: RTCConnection
-// Dependencies: [5, 5661, 5671, 5672, 5673, 5674, 502, 4762, 4784, 2131, 5654, 5677, 5753, 1386, 5561, 1071, 5754, 5755, 5658, 5756, 559, 5662, 5682, 1241, 3, 5757, 5758, 5759, 1268, 5761, 5770, 5764, 5771, 1478, 1378, 4724, 1379, 572, 2130, 1404, 5773, 14, 5774, 5775, 5776, 5777, 5778, 5779, 5780, 5781, 5782, 1255, 4919, 5783, 5726, 5784, 5786, 5799, 5795, 5800, 5801, 5802, 2173, 5803, 5805, 5806, 5807, 5679, 5808, 5840, 5841, 5843, 5844, 5845, 5847, 5850, 5852, 5859, 5860, 1112, 551, 15048, 1250, 2]
+// Dependencies: [5, 5661, 5671, 5672, 5673, 5674, 502, 4762, 4784, 2131, 5654, 5677, 5753, 1386, 5561, 1071, 5754, 5755, 5658, 5756, 559, 5662, 5682, 1241, 3, 5757, 5758, 5759, 1268, 5761, 5770, 5764, 5771, 1478, 1378, 4724, 1379, 572, 2130, 1404, 5773, 14, 5774, 5775, 5776, 5777, 5778, 5779, 5780, 5781, 5782, 1255, 4919, 5783, 5726, 5784, 5786, 5799, 5795, 5800, 5801, 5802, 2173, 5803, 5805, 5806, 5807, 5679, 5808, 5840, 5841, 5843, 5844, 5845, 5847, 5850, 5852, 5859, 5860, 1112, 551, 15046, 1250, 2]
 
 // Module 5660 (RTCConnection)
 import LoggerDefault from "Logger" /* 3 */;
@@ -43,7 +43,7 @@ import ThermalUtilsDefault from "ThermalUtils" /* 5850 */;
 import BandwidthEstimationExperimentDefault from "BandwidthEstimationExperiment" /* 5852 */;
 import DaveMessageValidator from "DaveMessageValidator" /* 5859 */;
 import AlertActionCreatorsDefault from "AlertActionCreators" /* 5860 */;
-import E2eLatencyMeasurementExperiment2 from "E2eLatencyMeasurementExperiment" /* 15048 */;
+import E2eLatencyMeasurementExperiment2 from "E2eLatencyMeasurementExperiment" /* 15046 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import DeviceFrecencyStore from "DeviceFrecencyStore" /* 5661 */;
 import MediaEngineStatsStore from "MediaEngineStatsStore" /* 5671 */;

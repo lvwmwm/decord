@@ -1,7 +1,7 @@
 // Module ID: 18691
 // Function ID: 18692
 // Name: CreateThreadView
-// Dependencies: [5, 32, 19, 17, 8315, 8388, 1071, 21, 4913, 575, 10451, 8514, 7520, 7539, 1628, 5488, 9659, 7674, 18692, 7556, 1112, 18694, 5491, 12851, 12823, 13555, 11777, 1501, 1255, 5650, 5097, 1098, 11253, 18693, 5098, 2]
+// Dependencies: [5, 32, 19, 17, 8315, 8388, 1071, 21, 4913, 575, 10451, 8514, 7520, 7539, 1628, 5488, 9659, 7674, 18692, 7556, 1112, 18694, 5491, 12849, 12821, 13553, 11777, 1501, 1255, 5650, 5097, 1098, 11253, 18693, 5098, 2]
 
 // Module 18691 (CreateThreadView)
 import nativeDefault from "native" /* 575 */;
@@ -318,16 +318,16 @@ function CreateThreadViewInner(threadSettingsDraft) {
   let tmp23Result2 = null;
   if (parentChannel.rateLimitPerUser > 0) {
     const obj17 = { children: closure_13(tmp24, obj18) };
-    obj18 = { style: tmp.typingWrapper, children: closure_13(parentChannel(12851), obj19) };
+    obj18 = { style: tmp.typingWrapper, children: closure_13(parentChannel(12849), obj19) };
     const LayerScope = tmp2(5491).LayerScope;
     obj19 = { channel: parentChannel, hasTypingText: false, slowmodeType: SlowmodeType.CreateThread };
     tmp23Result2 = tmp23(LayerScope, obj17);
   }
   items5[2] = tmp23Result2;
   const obj20 = { ref, channel: parentChannel, onJumpToPresent, screenIndex, secondaryTextFieldRef: ref1, threadCreationCallback: callback1 };
-  items5[3] = closure_13(parentChannel(12823), obj20);
+  items5[3] = closure_13(parentChannel(12821), obj20);
   const obj21 = { channelId: parentChannel.id };
-  items5[4] = closure_13(parentChannel(13555), obj21);
+  items5[4] = closure_13(parentChannel(13553), obj21);
   items3[1] = closure_14(tmp24, obj6);
   return closure_14(AnalyticsLocationProvider, obj5);
 }

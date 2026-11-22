@@ -1,10 +1,10 @@
-// Module ID: 14473
-// Function ID: 14474
+// Module ID: 14471
+// Function ID: 14472
 // Name: isOnMetaQuest
 // Dependencies: [7074, 2]
 // Exports: default
 
-// Module 14473 (isOnMetaQuest)
+// Module 14471 (isOnMetaQuest)
 import ActivityGamePlatforms from "ActivityGamePlatforms" /* 7074 */;
 import size from "module_2" /* 2 */;
 

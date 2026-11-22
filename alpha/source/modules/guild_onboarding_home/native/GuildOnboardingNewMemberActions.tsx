@@ -1,7 +1,7 @@
 // Module ID: 18208
 // Function ID: 18209
 // Name: GuildOnboardingNewMemberActions
-// Dependencies: [19, 17, 6573, 4762, 4825, 4784, 4845, 6684, 8511, 1071, 1389, 4831, 21, 4913, 575, 4975, 504, 5529, 1412, 13141, 5600, 4859, 5504, 1186, 12217, 7030, 1112, 13145, 18209, 1404, 18210, 2]
+// Dependencies: [19, 17, 6573, 4762, 4825, 4784, 4845, 6684, 8511, 1071, 1389, 4831, 21, 4913, 575, 4975, 504, 5529, 1412, 13139, 5600, 4859, 5504, 1186, 12224, 7030, 1112, 13143, 18209, 1404, 18210, 2]
 // Exports: default
 
 // Module 18208 (GuildOnboardingNewMemberActions)
@@ -11,7 +11,7 @@ import Constants from "Constants" /* 1071 */;
 import EmojiConstants from "EmojiConstants" /* 1389 */;
 import FlagUtils from "FlagUtils" /* 1404 */;
 import GuildMemberConstants from "GuildMemberConstants" /* 4831 */;
-import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 13141 */;
+import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 13139 */;
 import react from "react" /* 19 */;
 import EmojiStore from "EmojiStore" /* 6573 */;
 import ChannelStore from "ChannelStore" /* 4762 */;

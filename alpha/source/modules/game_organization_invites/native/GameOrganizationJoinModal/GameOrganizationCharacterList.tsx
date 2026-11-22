@@ -1,10 +1,10 @@
-// Module ID: 12241
-// Function ID: 12242
+// Module ID: 12248
+// Function ID: 12249
 // Name: GameOrganizationCharacterList
 // Dependencies: [19, 17, 21, 4913, 575, 1112, 2639, 5504, 5929, 7225, 5477, 4975, 7047, 12086, 7348, 2]
 // Exports: default
 
-// Module 12241 (GameOrganizationCharacterList)
+// Module 12248 (GameOrganizationCharacterList)
 import nativeDefault from "native" /* 575 */;
 import _modDef2639 from "module_2639" /* 2639 */;
 import react_native from "react-native" /* 4975 */;

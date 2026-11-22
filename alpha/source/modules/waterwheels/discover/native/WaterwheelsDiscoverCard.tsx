@@ -1,7 +1,7 @@
 // Module ID: 17818
 // Function ID: 17819
 // Name: WaterwheelsDiscoverCard
-// Dependencies: [32, 19, 17, 2140, 4784, 1071, 21, 575, 4913, 4776, 504, 17819, 5519, 10051, 5600, 5504, 9755, 7565, 1112, 2643, 5511, 17808, 12464, 5468, 9813, 17820, 7061, 13805, 17539, 7040, 17807, 17806, 2]
+// Dependencies: [32, 19, 17, 2140, 4784, 1071, 21, 575, 4913, 4776, 504, 17819, 5519, 10051, 5600, 5504, 9755, 7565, 1112, 2643, 5511, 17808, 12471, 5468, 9813, 17820, 7061, 13803, 17539, 7040, 17807, 17806, 2]
 // Exports: default
 
 // Module 17818 (WaterwheelsDiscoverCard)
@@ -356,7 +356,7 @@ function ServerRowCard(server) {
     const obj7 = { icon: unpackModuleId(ServerIcon, obj8), text: intl3.string(_modDef2643["2iP+h2"]) };
     obj8 = { size: "sm", color: nativeDefault.colors.ICON_MUTED, accessible: false };
     const tmp17 = WaterwheelsSectionLabelDefault;
-    ServerIcon = tmp9(12464).ServerIcon;
+    ServerIcon = tmp9(12471).ServerIcon;
     intl3 = tmp9(1112).intl;
     tmp14 = unpackModuleId(tmp17, obj7);
   }
@@ -621,7 +621,7 @@ function GamePoster(game) {
   const tmp8 = closure_5;
   if (null != game.l30Rank) {
     const obj5 = { style: tmp.posterRank, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_11(Badge, obj6) };
-    obj6 = { type: obj7, variant: "inverted", icon: game(13805).FireIcon };
+    obj6 = { type: obj7, variant: "inverted", icon: game(13803).FireIcon };
     obj7 = { text: intl3.formatToPlainString(game(1112).t.UA6RoE, obj8) };
     Badge = tmp2(7061).Badge;
     intl3 = tmp2(1112).intl;

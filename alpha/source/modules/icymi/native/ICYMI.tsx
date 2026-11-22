@@ -1,7 +1,7 @@
 // Module ID: 18089
 // Function ID: 18090
 // Name: ICYMI
-// Dependencies: [32, 19, 17, 4914, 502, 4784, 10036, 10033, 18090, 4759, 21, 4913, 575, 18091, 7591, 16314, 10043, 5127, 18093, 2119, 5617, 18104, 5504, 1112, 7373, 7017, 9659, 5083, 7030, 18040, 15971, 7151, 18122, 1494, 1628, 1501, 8268, 504, 17973, 17804, 18124, 18127, 9081, 4746, 18114, 1500, 10037, 11679, 11680, 16469, 1092, 18128, 18134, 18139, 18150, 18151, 18152, 18153, 18154, 18155, 18156, 18157, 18158, 8570, 18159, 7490, 10042, 1378, 10432, 5085, 18160, 18092, 4974, 2]
+// Dependencies: [32, 19, 17, 4914, 502, 4784, 10036, 10033, 18090, 4759, 21, 4913, 575, 18091, 7591, 16312, 10043, 5127, 18093, 2119, 5617, 18104, 5504, 1112, 7373, 7017, 9659, 5083, 7030, 18040, 15969, 7151, 18122, 1494, 1628, 1501, 8268, 504, 17973, 17804, 18124, 18127, 9081, 4746, 18114, 1500, 10037, 11679, 11680, 16467, 1092, 18128, 18134, 18139, 18150, 18151, 18152, 18153, 18154, 18155, 18156, 18157, 18158, 8570, 18159, 7490, 10042, 1378, 10432, 5085, 18160, 18092, 4974, 2]
 // Exports: ICYMITab
 
 // Module 18089 (ICYMI)
@@ -21,7 +21,7 @@ import IconButton2 from "IconButton" /* 7591 */;
 import ThemedGradientDefault from "ThemedGradient" /* 9659 */;
 import ICYMITypes from "ICYMITypes" /* 10037 */;
 import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 10043 */;
-import FiltersHorizontalIcon from "FiltersHorizontalIcon" /* 16314 */;
+import FiltersHorizontalIcon from "FiltersHorizontalIcon" /* 16312 */;
 import Notifications from "Notifications" /* 18040 */;
 import ICYMIConstants from "ICYMIConstants" /* 18090 */;
 import NativeICYMIUtils from "NativeICYMIUtils" /* 18104 */;
@@ -439,7 +439,7 @@ let closure_22 = react.memo(function Header(inNestedNavigator) {
     const PressableOpacity = tmp5(7030).PressableOpacity;
     intl = tmp5(1112).intl;
     if (inNestedNavigator) {
-      tmp6Result = tmp6(tmp5(15971).LeftBackIconWithBadge, { includeNotificationsCount: true });
+      tmp6Result = tmp6(tmp5(15969).LeftBackIconWithBadge, { includeNotificationsCount: true });
     } else {
       tmp6Result = tmp6(tmp5(7151).XSmallIcon, { color: "interactive-text-default" });
     }

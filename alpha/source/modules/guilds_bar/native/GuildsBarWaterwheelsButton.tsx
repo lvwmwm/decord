@@ -1,7 +1,7 @@
 // Module ID: 17929
 // Function ID: 17930
 // Name: GuildsBarWaterwheelsButton
-// Dependencies: [19, 17, 10044, 4946, 1071, 21, 4913, 17884, 5504, 1112, 2643, 17826, 17829, 5477, 575, 17872, 504, 17922, 17014, 2]
+// Dependencies: [19, 17, 10044, 4946, 1071, 21, 4913, 17884, 5504, 1112, 2643, 17826, 17829, 5477, 575, 17872, 504, 17922, 17012, 2]
 
 // Module 17929 (GuildsBarWaterwheelsButton)
 import react_native from "react-native" /* 17 */;
@@ -12,7 +12,7 @@ import intl2 from "intl" /* 1112 */;
 import _modDef2643 from "module_2643" /* 2643 */;
 import useToken from "useToken" /* 5477 */;
 import Text_Text from "Text/Text" /* 5504 */;
-import CompassIcon2 from "CompassIcon" /* 17014 */;
+import CompassIcon2 from "CompassIcon" /* 17012 */;
 import WaterwheelsDiscoverNavigation from "WaterwheelsDiscoverNavigation" /* 17826 */;
 import openWaterwheelsInterestPickerDefault from "openWaterwheelsInterestPicker" /* 17829 */;
 import GuildsBarAnimatedItemWrapper from "GuildsBarAnimatedItemWrapper" /* 17872 */;

@@ -1,8 +1,8 @@
-// Module ID: 12676
-// Function ID: 12677
+// Module ID: 12674
+// Function ID: 12675
 // Dependencies: [2]
 
-// Module 12676
+// Module 12674
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_outfit_14_magical_amethyst.webp.js");

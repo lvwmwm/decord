@@ -1,9 +1,9 @@
-// Module ID: 20169
-// Function ID: 20170
+// Module ID: 20166
+// Function ID: 20167
 // Name: QuestProgressManager
 // Dependencies: [5, 32, 4761, 6623, 2139, 6400, 2158, 5657, 8404, 19197, 6558, 6624, 1088, 8412, 8411, 10618, 6559, 9959, 6561, 8430, 6448, 6447, 7484, 6566, 8427, 6401, 1254, 6446, 8425, 2]
 
-// Module 20169 (QuestProgressManager)
+// Module 20166 (QuestProgressManager)
 import DurationsDefault from "Durations" /* 1088 */;
 import GlobalUtils from "GlobalUtils" /* 1254 */;
 import StreamKeyUtils from "StreamKeyUtils" /* 6401 */;

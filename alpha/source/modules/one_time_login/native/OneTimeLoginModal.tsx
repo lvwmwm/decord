@@ -1,10 +1,10 @@
-// Module ID: 15072
-// Function ID: 15073
+// Module ID: 15070
+// Function ID: 15071
 // Name: OneTimeLoginModal
-// Dependencies: [5, 19, 17, 502, 1386, 1071, 1239, 21, 4913, 575, 1628, 1494, 1358, 1255, 6429, 5089, 1098, 5862, 5866, 7225, 1112, 5866, 6425, 9659, 5083, 5600, 15073, 5504, 7369, 2]
+// Dependencies: [5, 19, 17, 502, 1386, 1071, 1239, 21, 4913, 575, 1628, 1494, 1358, 1255, 6429, 5089, 1098, 5862, 5866, 7225, 1112, 5866, 6425, 9659, 5083, 5600, 15071, 5504, 7369, 2]
 // Exports: default
 
-// Module 15072 (OneTimeLoginModal)
+// Module 15070 (OneTimeLoginModal)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
 import ClientThemesConstants from "ClientThemesConstants" /* 1239 */;
@@ -282,7 +282,7 @@ export default function OneTimeLoginModal(token) {
   items6 = [closure_12(tmp11, obj2), ];
   let obj4 = { style: tmp.container, children: items9 };
   let obj5 = { style: tmp.centerContent, children: items7 };
-  let obj6 = { source: token(15073), style: tmp.logo };
+  let obj6 = { source: token(15071), style: tmp.logo };
   const tmp12 = FastImageDefault;
   items7 = [closure_12(tmp12, obj6), ];
   let obj7 = { style: tmp.loadingContainer, children: items8 };

@@ -1,17 +1,17 @@
 // Module ID: 17474
 // Function ID: 17475
 // Name: useUsernameRegistrationStep
-// Dependencies: [32, 19, 16006, 17448, 17449, 17445, 1500, 7385, 16004, 16003, 17447, 1501, 1112, 2]
+// Dependencies: [32, 19, 16004, 17448, 17449, 17445, 1500, 7385, 16002, 16001, 17447, 1501, 1112, 2]
 // Exports: useUsernameRegistrationStep
 
 // Module 17474 (useUsernameRegistrationStep)
 import intl2 from "intl" /* 1112 */;
-import UniqueUsernamesTypes from "UniqueUsernamesTypes" /* 16003 */;
+import UniqueUsernamesTypes from "UniqueUsernamesTypes" /* 16001 */;
 import RegistrationStepsUtils from "RegistrationStepsUtils" /* 17447 */;
 import RegistrationUIStore from "RegistrationUIStore" /* 17448 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UniqueUsernamesStore from "UniqueUsernamesStore" /* 16006 */;
+import UniqueUsernamesStore from "UniqueUsernamesStore" /* 16004 */;
 import RegistrationConstants from "RegistrationConstants" /* 17449 */;
 import size from "module_2" /* 2 */;
 

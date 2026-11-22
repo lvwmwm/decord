@@ -1,12 +1,12 @@
-// Module ID: 13277
-// Function ID: 13278
+// Module ID: 13275
+// Function ID: 13276
 // Name: ChatInputAppCommandManager
-// Dependencies: [32, 19, 8516, 8517, 2140, 8825, 1386, 5938, 4913, 575, 12861, 12, 9053, 504, 8827, 12862, 12860, 10682, 2117, 13278, 2]
+// Dependencies: [32, 19, 8516, 8517, 2140, 8825, 1386, 5938, 4913, 575, 12859, 12, 9053, 504, 8827, 12860, 12858, 10682, 2117, 13276, 2]
 
-// Module 13277 (ChatInputAppCommandManager)
+// Module 13275 (ChatInputAppCommandManager)
 import nativeDefault from "native" /* 575 */;
-import ChatInputCommandOptionParser from "ChatInputCommandOptionParser" /* 12860 */;
-import ApplicationCommandManagerDefault from "ApplicationCommandManager" /* 13278 */;
+import ChatInputCommandOptionParser from "ChatInputCommandOptionParser" /* 12858 */;
+import ApplicationCommandManagerDefault from "ApplicationCommandManager" /* 13276 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ApplicationCommandAutocompleteStore from "ApplicationCommandAutocompleteStore" /* 8516 */;

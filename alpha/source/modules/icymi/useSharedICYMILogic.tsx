@@ -1,14 +1,14 @@
 // Module ID: 18124
 // Function ID: 18125
 // Name: useSharedICYMILogic
-// Dependencies: [32, 19, 10033, 18090, 10052, 10037, 18125, 504, 15642, 18123, 8026, 10043, 18122, 10042, 18126, 2]
+// Dependencies: [32, 19, 10033, 18090, 10052, 10037, 18125, 504, 15640, 18123, 8026, 10043, 18122, 10042, 18126, 2]
 // Exports: useSharedICYMILogic
 
 // Module 18124 (useSharedICYMILogic)
 import ICYMITypes from "ICYMITypes" /* 10037 */;
 import ICYMIUtils from "ICYMIUtils" /* 10042 */;
 import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 10043 */;
-import ICYMIAnalytics2 from "ICYMIAnalytics" /* 15642 */;
+import ICYMIAnalytics2 from "ICYMIAnalytics" /* 15640 */;
 import ICYMIConstants from "ICYMIConstants" /* 18090 */;
 import ICYMIStoreUtils from "ICYMIStoreUtils" /* 18122 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -29,7 +29,7 @@ export function useSharedICYMILogic(notificationItem) {
   let closure_1;
   let isWaterwheelsCardEligible;
   let showDot;
-  const f113807 = (item) => {
+  const f113818 = (item) => {
     let items;
     let tmpResult;
     const obj = notificationItem(unreadItems[4]);
@@ -162,7 +162,7 @@ export function useSharedICYMILogic(notificationItem) {
         obj3.ackGravityItems(items, true);
       }
       const ICYMIAnalytics = ICYMIAnalytics2.ICYMIAnalytics;
-      const result = ICYMIAnalytics.trackItemShortImpression(viewableItems, viewableFeedItemsArray.flatMap(f113807), stateFromStores);
+      const result = ICYMIAnalytics.trackItemShortImpression(viewableItems, viewableFeedItemsArray.flatMap(f113818), stateFromStores);
     }
   }, items7);
   const items8 = [stateFromStores];
@@ -174,7 +174,7 @@ export function useSharedICYMILogic(notificationItem) {
       let obj = ICYMIStoreUtils;
       const viewableFeedItemsArray = obj.getViewableFeedItemsArray(viewableItems);
       const ICYMIAnalytics = ICYMIAnalytics2.ICYMIAnalytics;
-      const result = ICYMIAnalytics.trackItemLongImpression(viewableItems, viewableFeedItemsArray.flatMap(f113807), stateFromStores);
+      const result = ICYMIAnalytics.trackItemLongImpression(viewableItems, viewableFeedItemsArray.flatMap(f113818), stateFromStores);
       const triggerItemsLongImpression = ICYMIActionCreatorsDefault.triggerItemsLongImpression;
       ICYMIActionCreatorsDefault;
       const found = viewableItems.filter((item) => {

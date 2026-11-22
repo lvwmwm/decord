@@ -1,11 +1,11 @@
-// Module ID: 13451
-// Function ID: 13452
+// Module ID: 13449
+// Function ID: 13450
 // Name: useGameServerGetExpiringEntitlements
-// Dependencies: [19, 8750, 504, 13384, 2]
+// Dependencies: [19, 8750, 504, 13382, 2]
 // Exports: default
 
-// Module 13451 (useGameServerGetExpiringEntitlements)
-import getExpiringGuildEntitlements from "getExpiringGuildEntitlements" /* 13384 */;
+// Module 13449 (useGameServerGetExpiringEntitlements)
+import getExpiringGuildEntitlements from "getExpiringGuildEntitlements" /* 13382 */;
 import react from "react" /* 19 */;
 import GameServerStore from "GameServerStore" /* 8750 */;
 import size from "module_2" /* 2 */;

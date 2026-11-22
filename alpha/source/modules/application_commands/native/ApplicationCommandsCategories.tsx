@@ -1,20 +1,20 @@
-// Module ID: 13270
-// Function ID: 13271
+// Module ID: 13268
+// Function ID: 13269
 // Name: ApplicationCommandsCategories
-// Dependencies: [19, 17, 4825, 13267, 21, 4913, 575, 504, 13093, 5600, 7030, 1112, 5129, 5130, 7490, 2]
+// Dependencies: [19, 17, 4825, 13265, 21, 4913, 575, 504, 13091, 5600, 7030, 1112, 5129, 5130, 7490, 2]
 // Exports: default
 
-// Module 13270 (ApplicationCommandsCategories)
+// Module 13268 (ApplicationCommandsCategories)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import HapticUtils from "HapticUtils" /* 5129 */;
 import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5130 */;
 import FastImageDefault from "FastImage" /* 5600 */;
-import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 13093 */;
+import application_commands_ApplicationCommandUtils from "application_commands/ApplicationCommandUtils" /* 13091 */;
 import react_mod from "react" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 4825 */;
-import ApplicationCommandsCategoriesConstants from "ApplicationCommandsCategoriesConstants" /* 13267 */;
+import ApplicationCommandsCategoriesConstants from "ApplicationCommandsCategoriesConstants" /* 13265 */;
 import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 

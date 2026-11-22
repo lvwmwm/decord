@@ -1,7 +1,7 @@
 // Module ID: 19426
 // Function ID: 19427
 // Name: AcceptInviteModal
-// Dependencies: [19, 7399, 21, 1263, 5633, 13666, 9881, 7092, 2]
+// Dependencies: [19, 7399, 21, 1263, 5633, 13664, 9881, 7092, 2]
 // Exports: default
 
 // Module 19426 (AcceptInviteModal)

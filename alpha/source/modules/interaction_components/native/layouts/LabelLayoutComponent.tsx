@@ -1,10 +1,10 @@
-// Module ID: 19541
-// Function ID: 19542
+// Module ID: 19537
+// Function ID: 19538
 // Name: LabelLayoutComponent
 // Dependencies: [19, 17, 21, 8248, 2117, 7222, 2]
 // Exports: default
 
-// Module 19541 (LabelLayoutComponent)
+// Module 19537 (LabelLayoutComponent)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Server from "Server" /* 2117 */;

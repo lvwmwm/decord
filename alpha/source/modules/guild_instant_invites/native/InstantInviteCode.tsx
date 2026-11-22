@@ -1,10 +1,10 @@
-// Module ID: 13855
-// Function ID: 13856
+// Module ID: 13853
+// Function ID: 13854
 // Name: InstantInviteCode
 // Dependencies: [19, 17, 4766, 4855, 1386, 21, 4913, 575, 7636, 7681, 5929, 5504, 5529, 5622, 1112, 10543, 2]
 // Exports: default
 
-// Module 13855 (InstantInviteCode)
+// Module 13853 (InstantInviteCode)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;

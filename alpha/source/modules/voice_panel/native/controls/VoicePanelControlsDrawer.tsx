@@ -1,13 +1,13 @@
 // Module ID: 19372
 // Function ID: 19373
 // Name: VoicePanelControlsDrawer
-// Dependencies: [32, 19, 17, 11750, 21, 4913, 575, 7018, 5891, 13135, 11749, 1653, 13136, 5514, 10656, 1706, 19373, 19385, 17522, 19369, 2]
+// Dependencies: [32, 19, 17, 11750, 21, 4913, 575, 7018, 5891, 13133, 11749, 1653, 13134, 5514, 10656, 1706, 19373, 19385, 17522, 19369, 2]
 
 // Module 19372 (VoicePanelControlsDrawer)
 import nativeDefault from "native" /* 575 */;
 import react2 from "react" /* 5891 */;
 import useRefValueDefault from "useRefValue" /* 7018 */;
-import VoicePanelChatViewDefault from "VoicePanelChatView" /* 13135 */;
+import VoicePanelChatViewDefault from "VoicePanelChatView" /* 13133 */;
 import VoicePanelVoiceControlsDefault from "VoicePanelVoiceControls" /* 19373 */;
 import VoicePanelControlsAppLauncherDefault from "VoicePanelControlsAppLauncher" /* 19385 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -126,7 +126,7 @@ const memoResult1 = react.memo(function VoicePanelControlsDrawer(openTab) {
   let items = [closure_14, , , , , , , ];
   const useAnimatedStyle = gestureSpecs(1653).useAnimatedStyle;
   const tmp11 = gestureSpecs(1653);
-  items[1] = gestureSpecs(13136).getControlsDrawerOpenWidth;
+  items[1] = gestureSpecs(13134).getControlsDrawerOpenWidth;
   items[2] = windowDimensions;
   items[3] = safeArea;
   items[4] = gestureSpecs(5514).withSpring;

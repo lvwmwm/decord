@@ -1,7 +1,7 @@
 // Module ID: 19044
 // Function ID: 19045
 // Name: Alerts
-// Dependencies: [19, 17, 4914, 15032, 15638, 10529, 21, 19045, 19046, 19050, 4913, 575, 504, 1653, 4974, 5123, 1706, 5514, 5515, 5861, 5924, 5919, 7076, 5867, 558, 19051, 2]
+// Dependencies: [19, 17, 4914, 15030, 15636, 10529, 21, 19045, 19046, 19050, 4913, 575, 504, 1653, 4974, 5123, 1706, 5514, 5515, 5861, 5924, 5919, 7076, 5867, 558, 19051, 2]
 
 // Module 19044 (Alerts)
 import shallowEqualDefault from "shallowEqual" /* 558 */;
@@ -13,8 +13,8 @@ import ModalRegistryDefault from "ModalRegistry" /* 19045 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 4914 */;
-import PermissionSpeakStore from "PermissionSpeakStore" /* 15032 */;
-import PermissionVADStore from "PermissionVADStore" /* 15638 */;
+import PermissionSpeakStore from "PermissionSpeakStore" /* 15030 */;
+import PermissionVADStore from "PermissionVADStore" /* 15636 */;
 import AlertStore from "AlertStore" /* 10529 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;
@@ -300,7 +300,7 @@ function renderAlertItem(arg0, item, transitionState, cleanUp) {
   const obj = { item, transitionState, cleanUp };
   return unpackModuleId(AlertWrapper, obj, arg0);
 }
-let closure_23 = Object.freeze({ renderAlert: "disabled", renderKey: "isArray", props: "isArray" });
+let closure_23 = Object.freeze({ renderAlert: "fill", renderKey: "channel", props: "justifyContent" });
 const memoResult = react.memo(function Alerts() {
   let alertDismissable;
   let ref;
@@ -337,7 +337,7 @@ const memoResult = react.memo(function Alerts() {
           return <component />;
         };
       } else {
-        return { renderAlert: "disabled", renderKey: "isArray", props: "isArray" };
+        return { renderAlert: "fill", renderKey: "channel", props: "justifyContent" };
       }
     }
   });

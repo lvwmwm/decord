@@ -1,7 +1,7 @@
 // Module ID: 18040
 // Function ID: 18041
 // Name: Notifications
-// Dependencies: [19, 17, 9420, 4759, 21, 4913, 575, 5090, 7373, 18041, 7017, 7030, 1112, 15971, 5504, 18042, 11680, 18043, 17513, 7520, 7539, 8268, 7101, 5491, 18047, 18048, 13714, 10432, 5085, 1628, 17533, 9659, 4974, 2]
+// Dependencies: [19, 17, 9420, 4759, 21, 4913, 575, 5090, 7373, 18041, 7017, 7030, 1112, 15969, 5504, 18042, 11680, 18043, 17513, 7520, 7539, 8268, 7101, 5491, 18047, 18048, 13712, 10432, 5085, 1628, 17533, 9659, 4974, 2]
 // Exports: ThemedNotificationsModal
 
 // Module 18040 (Notifications)
@@ -20,7 +20,7 @@ import AnalyticsLocationDefault from "AnalyticsLocation" /* 7539 */;
 import MainTabsConstants from "MainTabsConstants" /* 9420 */;
 import ThemedGradientDefault from "ThemedGradient" /* 9659 */;
 import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 10432 */;
-import VoicePanelDockScrimDefault from "VoicePanelDockScrim" /* 13714 */;
+import VoicePanelDockScrimDefault from "VoicePanelDockScrim" /* 13712 */;
 import useAppFrameDefault from "useAppFrame" /* 17513 */;
 import TabsPerformanceTracker from "TabsPerformanceTracker" /* 17533 */;
 import useForLaterCoachmarkDefault from "useForLaterCoachmark" /* 18041 */;

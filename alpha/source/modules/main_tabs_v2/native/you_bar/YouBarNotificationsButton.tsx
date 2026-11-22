@@ -1,15 +1,15 @@
 // Module ID: 17974
 // Function ID: 17975
 // Name: YouBarNotificationsButton
-// Dependencies: [19, 17, 11684, 16478, 21, 4913, 575, 15972, 1653, 5514, 504, 5129, 11679, 11680, 1112, 11239, 17971, 7591, 1186, 5090, 2]
+// Dependencies: [19, 17, 11684, 16476, 21, 4913, 575, 15970, 1653, 5514, 504, 5129, 11679, 11680, 1112, 11239, 17971, 7591, 1186, 5090, 2]
 
 // Module 17974 (YouBarNotificationsButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import useNotificationsTabBadgeDefault from "useNotificationsTabBadge" /* 15972 */;
+import useNotificationsTabBadgeDefault from "useNotificationsTabBadge" /* 15970 */;
 import react from "react" /* 19 */;
 import SavedMessagesStore from "SavedMessagesStore" /* 11684 */;
-import YouBarConstants from "YouBarConstants" /* 16478 */;
+import YouBarConstants from "YouBarConstants" /* 16476 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;

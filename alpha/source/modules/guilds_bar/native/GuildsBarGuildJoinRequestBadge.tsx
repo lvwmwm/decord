@@ -1,7 +1,7 @@
 // Module ID: 17877
 // Function ID: 17878
 // Name: GuildsBarGuildJoinRequestBadge
-// Dependencies: [19, 17, 21, 4913, 575, 6555, 4949, 17878, 17879, 17880, 13145, 5600, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 6555, 4949, 17878, 17879, 17880, 13143, 5600, 2]
 // Exports: default
 
 // Module 17877 (GuildsBarGuildJoinRequestBadge)
@@ -10,7 +10,7 @@ import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import MemberVerificationTypes from "MemberVerificationTypes" /* 4949 */;
 import LegacyTokens from "LegacyTokens" /* 6555 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13145 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13143 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 17878 */;
 import AssetRegistryDefault3 from "AssetRegistry" /* 17879 */;
 import AssetRegistryDefault4 from "AssetRegistry" /* 17880 */;

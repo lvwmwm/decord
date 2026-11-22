@@ -1,9 +1,9 @@
-// Module ID: 12230
-// Function ID: 12231
+// Module ID: 12237
+// Function ID: 12238
 // Name: GameOrganizationCharacterEligibilityStore
 // Dependencies: [11898, 504, 572, 2]
 
-// Module 12230 (GameOrganizationCharacterEligibilityStore)
+// Module 12237 (GameOrganizationCharacterEligibilityStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import fromServerGameOrganization from "fromServerGameOrganization" /* 11898 */;
