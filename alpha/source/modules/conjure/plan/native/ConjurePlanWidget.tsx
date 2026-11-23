@@ -1,10 +1,10 @@
-// Module ID: 18580
-// Function ID: 18581
+// Module ID: 18582
+// Function ID: 18583
 // Name: ConjurePlanWidget
 // Dependencies: [19, 502, 21, 4913, 575, 8197, 504, 6961, 10275, 2]
 // Exports: default
 
-// Module 18580 (ConjurePlanWidget)
+// Module 18582 (ConjurePlanWidget)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 6961 */;

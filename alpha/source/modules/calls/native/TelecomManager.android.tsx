@@ -1,9 +1,9 @@
-// Module ID: 19668
-// Function ID: 19669
+// Module ID: 19670
+// Function ID: 19671
 // Name: TelecomManager
-// Dependencies: [5, 17, 10884, 6400, 502, 6627, 4762, 2131, 11102, 5654, 4855, 4970, 1386, 1071, 5658, 3, 15776, 7484, 19669, 6529, 7739, 6494, 5809, 10932, 10936, 1625, 5529, 10883, 2]
+// Dependencies: [5, 17, 10884, 6400, 502, 6627, 4762, 2131, 11102, 5654, 4855, 4970, 1386, 1071, 5658, 3, 15778, 7484, 19671, 6529, 7739, 6494, 5809, 10932, 10936, 1625, 5529, 10883, 2]
 
-// Module 19668 (TelecomManager)
+// Module 19670 (TelecomManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1071 */;
 import MetaQuestUtils from "MetaQuestUtils" /* 1625 */;
@@ -14,8 +14,8 @@ import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators"
 import CallActionCreatorsDefault from "CallActionCreators" /* 7739 */;
 import useHasVideoPermission from "useHasVideoPermission" /* 10932 */;
 import useScreenshareUtils from "useScreenshareUtils" /* 10936 */;
-import react_nativeDefault from "react-native" /* 15776 */;
-import react_nativeDefault2 from "react-native" /* 19669 */;
+import react_nativeDefault from "react-native" /* 15778 */;
+import react_nativeDefault2 from "react-native" /* 19671 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_native from "react-native" /* 17 */;
 import SoundpackStore from "SoundpackStore" /* 10884 */;
@@ -374,8 +374,8 @@ class TelecomManager extends AutomaticLifecycleManager {
       currentCall.info("Reporting incoming call to Telecom:", channelId, "callerName:", channelName);
       self.startRingtone();
       let tmp20 = null;
-      const reportIncomingCall = self(19669).reportIncomingCall;
-      self(19669);
+      const reportIncomingCall = self(19671).reportIncomingCall;
+      self(19671);
       if (null != guildId) {
         tmp20 = { guildId };
         const obj3 = { guildId };
@@ -402,7 +402,7 @@ class TelecomManager extends AutomaticLifecycleManager {
     const self = this;
     let closure_0 = channelId;
     obj.info("Cancelling incoming call:", channelId);
-    obj = self(19669);
+    obj = self(19671);
     const cancelIncomingCallResult = obj.cancelIncomingCall(channelId);
     const nextPromise = cancelIncomingCallResult.then(() => {
       self.clearCall(channelId);
@@ -831,7 +831,7 @@ class TelecomManager extends AutomaticLifecycleManager {
     let obj;
     const self = this;
     obj.info("Ending call:", channelId.channelId);
-    obj = self(19669);
+    obj = self(19671);
     const endCallResult = obj.endCall(channelId.channelId);
     const nextPromise = endCallResult.then((result) => {
       self.clearCall(channelId.channelId);
@@ -986,7 +986,7 @@ class TelecomManager extends AutomaticLifecycleManager {
             const result = self.clearPendingScreenShareOffSync();
             if (null != currentUserActiveStream && currentUserActiveStream.state === ApplicationStreamStates.ACTIVE) {
               obj.info("Syncing Discord -> Call Bar screen share state: true");
-              obj = self(19669);
+              obj = self(19671);
               obj.setScreenShareState(self.currentCall.channelId, true, true);
             } else {
               let channelId = self.currentCall.channelId;

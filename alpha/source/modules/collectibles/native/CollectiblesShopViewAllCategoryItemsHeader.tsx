@@ -1,10 +1,10 @@
-// Module ID: 17337
-// Function ID: 17338
+// Module ID: 17339
+// Function ID: 17340
 // Name: CollectiblesShopViewAllCategoryItemsHeader
 // Dependencies: [19, 17, 21, 4913, 1500, 14059, 8561, 8565, 1112, 5600, 2]
 // Exports: default
 
-// Module 17337 (CollectiblesShopViewAllCategoryItemsHeader)
+// Module 17339 (CollectiblesShopViewAllCategoryItemsHeader)
 import react_native from "react-native" /* 17 */;
 import intl3 from "intl" /* 1112 */;
 import useNavigation from "useNavigation" /* 1500 */;

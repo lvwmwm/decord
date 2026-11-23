@@ -1,17 +1,17 @@
-// Module ID: 18259
-// Function ID: 18260
+// Module ID: 18261
+// Function ID: 18262
 // Name: useConjureManagedCopy
 // Dependencies: [6976, 504, 2]
 // Exports: default, useConjureCopyLastSync, useConjureDownstreamUpdates, useIsConjureManagedCopy
 
-// Module 18259 (useConjureManagedCopy)
+// Module 18261 (useConjureManagedCopy)
 import ConjureManagedCopyStore from "ConjureManagedCopyStore" /* 6976 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const f114324 = () => {
+const f114301 = () => {
   let copy = null;
   if (null != id) {
     copy = ConjureManagedCopyStore.getCopy(tmp);
@@ -26,14 +26,14 @@ export default function useConjureManagedCopy(arg0) {
   const items = [ConjureManagedCopyStore];
   const items1 = [arg0];
   const obj = require("get initialized");
-  return obj.useStateFromStores(items, f114324, items1);
+  return obj.useStateFromStores(items, f114301, items1);
 };
 export function useIsConjureManagedCopy(id) {
   _require = id;
   const items = [ConjureManagedCopyStore];
   const items1 = [id];
   const obj = require("get initialized");
-  return null != obj.useStateFromStores(items, f114324, items1);
+  return null != obj.useStateFromStores(items, f114301, items1);
 }
 export function useConjureCopyLastSync(projectId) {
   _require = projectId;

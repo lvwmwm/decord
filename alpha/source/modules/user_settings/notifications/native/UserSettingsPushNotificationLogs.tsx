@@ -1,10 +1,10 @@
-// Module ID: 16985
-// Function ID: 16986
+// Module ID: 16987
+// Function ID: 16988
 // Name: UserSettingsPushNotificationLogs
 // Dependencies: [5, 32, 19, 17, 1071, 21, 4913, 575, 7242, 510, 11175, 1628, 7427, 7030, 1112, 9718, 11176, 10137, 7490, 5504, 2]
 // Exports: default
 
-// Module 16985 (UserSettingsPushNotificationLogs)
+// Module 16987 (UserSettingsPushNotificationLogs)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;

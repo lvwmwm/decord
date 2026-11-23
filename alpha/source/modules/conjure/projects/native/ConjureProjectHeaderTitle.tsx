@@ -1,10 +1,10 @@
-// Module ID: 18392
-// Function ID: 18393
+// Module ID: 18394
+// Function ID: 18395
 // Name: ConjureProjectHeaderTitle
 // Dependencies: [19, 17, 21, 4913, 575, 7030, 1112, 4190, 13787, 5504, 7061, 2]
 // Exports: default
 
-// Module 18392 (ConjureProjectHeaderTitle)
+// Module 18394 (ConjureProjectHeaderTitle)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;

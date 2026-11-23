@@ -1,10 +1,10 @@
-// Module ID: 16036
-// Function ID: 16037
+// Module ID: 16038
+// Function ID: 16039
 // Name: SafetyHubPage
-// Dependencies: [19, 17, 7835, 7809, 1071, 21, 6425, 12429, 7993, 7762, 1112, 504, 3540, 5504, 16037, 1399, 16038, 4913, 575, 16039, 12460, 12427, 16033, 5474, 12426, 1255, 6365, 6370, 5127, 16040, 2119, 16041, 16043, 2]
+// Dependencies: [19, 17, 7835, 7809, 1071, 21, 6425, 12429, 7993, 7762, 1112, 504, 3540, 5504, 16039, 1399, 16040, 4913, 575, 16041, 12460, 12427, 16035, 5474, 12426, 1255, 6365, 6370, 5127, 16042, 2119, 16043, 16045, 2]
 // Exports: default
 
-// Module 16036 (SafetyHubPage)
+// Module 16038 (SafetyHubPage)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1112 */;
@@ -21,8 +21,8 @@ import SafetyHubConstants from "SafetyHubConstants" /* 7809 */;
 import ManualReviewActionCreators from "ManualReviewActionCreators" /* 7993 */;
 import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 12426 */;
 import AutomatedUnderageAppealModalActionCreatorsDefault from "AutomatedUnderageAppealModalActionCreators" /* 12429 */;
-import useAvailableAgeVerificationMethods from "useAvailableAgeVerificationMethods" /* 16037 */;
-import useShouldShowInitialGoogleWalletBanner from "useShouldShowInitialGoogleWalletBanner" /* 16038 */;
+import useAvailableAgeVerificationMethods from "useAvailableAgeVerificationMethods" /* 16039 */;
+import useShouldShowInitialGoogleWalletBanner from "useShouldShowInitialGoogleWalletBanner" /* 16040 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import SafetyHubStore from "SafetyHubStore" /* 7835 */;
@@ -249,7 +249,7 @@ export default function SafetyHubPage(visible) {
     if (tmp) {
       if (null != safetyHubFetchError) {
         const obj2 = ActionSheetActionCreatorsDefault;
-        obj2.openLazy(asyncRequire(16040, dependencyMap.paths), "SafetyHubErrorActionSheet", {});
+        obj2.openLazy(asyncRequire(16042, dependencyMap.paths), "SafetyHubErrorActionSheet", {});
       }
     }
     const obj = ActionSheetActionCreatorsDefault;

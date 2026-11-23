@@ -1,10 +1,10 @@
-// Module ID: 18232
-// Function ID: 18233
+// Module ID: 18234
+// Function ID: 18235
 // Name: ConjureStandaloneScreen
-// Dependencies: [32, 19, 17, 4825, 4784, 4845, 6621, 1071, 21, 4913, 575, 7095, 1112, 4190, 7322, 504, 6839, 18233, 1500, 18240, 18234, 6657, 9953, 6933, 8563, 18624, 18646, 18662, 18396, 7092, 2]
+// Dependencies: [32, 19, 17, 4825, 4784, 4845, 6621, 1071, 21, 4913, 575, 7095, 1112, 4190, 7322, 504, 6839, 18235, 1500, 18242, 18236, 6657, 9953, 6933, 8563, 18626, 18648, 18664, 18398, 7092, 2]
 // Exports: default
 
-// Module 18232 (ConjureStandaloneScreen)
+// Module 18234 (ConjureStandaloneScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -15,9 +15,9 @@ import ConjureActionCreators from "ConjureActionCreators" /* 6933 */;
 import NavigatorHeader2 from "NavigatorHeader" /* 7095 */;
 import GuildIcon from "GuildIcon" /* 7322 */;
 import PressableNavigatorBackIcon from "PressableNavigatorBackIcon" /* 8563 */;
-import ConjureChatSceneDefault from "ConjureChatScene" /* 18233 */;
-import conjureStandaloneScenes from "conjureStandaloneScenes" /* 18240 */;
-import ConjureDebugSceneDefault from "ConjureDebugScene" /* 18662 */;
+import ConjureChatSceneDefault from "ConjureChatScene" /* 18235 */;
+import conjureStandaloneScenes from "conjureStandaloneScenes" /* 18242 */;
+import ConjureDebugSceneDefault from "ConjureDebugScene" /* 18664 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildMemberStore from "GuildMemberStore" /* 4825 */;
@@ -79,7 +79,7 @@ function GlobalChatScene(projectId) {
     }
     return result;
   }, items1);
-  return closure_11(fallbackGuildId(18233), { guildId, projectId, entryPoint, onExit });
+  return closure_11(fallbackGuildId(18235), { guildId, projectId, entryPoint, onExit });
 }
 function RoutedProjectOpener(request) {
   request = request.request;
@@ -266,10 +266,10 @@ export default function ConjureStandaloneScreen(guildId) {
       const children = [tmp4, ];
       if (closure_5) {
         const obj2 = { focusRequest };
-        tmp9Result = tmp9(tmp10(18624), obj2);
+        tmp9Result = tmp9(tmp10(18626), obj2);
       } else {
         const obj3 = { guildId };
-        tmp9Result = tmp9(tmp10(18646), obj3);
+        tmp9Result = tmp9(tmp10(18648), obj3);
       }
       children[1] = tmp9Result;
       return tmp(tmp2, { children });

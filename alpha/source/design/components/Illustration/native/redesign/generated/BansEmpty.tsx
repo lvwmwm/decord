@@ -1,10 +1,10 @@
-// Module ID: 19880
-// Function ID: 19881
+// Module ID: 19882
+// Function ID: 19883
 // Name: BansEmpty
-// Dependencies: [19, 21, 7786, 19881, 19882, 19883, 4920, 5600, 2]
+// Dependencies: [19, 21, 7786, 19883, 19884, 19885, 4920, 5600, 2]
 // Exports: BansEmpty, getBansEmptySource, useBansEmptySource
 
-// Module 19880 (BansEmpty)
+// Module 19882 (BansEmpty)
 import Fragment from "Fragment" /* 21 */;
 import shared from "shared" /* 4920 */;
 import FastImageDefault from "FastImage" /* 5600 */;

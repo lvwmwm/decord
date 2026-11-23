@@ -1,14 +1,14 @@
-// Module ID: 16024
-// Function ID: 16025
+// Module ID: 16026
+// Function ID: 16027
 // Name: AccountAgeGroupAssignedAdultSetting
-// Dependencies: [8712, 1071, 11937, 1112, 3444, 16025, 16020, 2]
+// Dependencies: [8712, 1071, 11937, 1112, 3444, 16027, 16022, 2]
 
-// Module 16024 (AccountAgeGroupAssignedAdultSetting)
+// Module 16026 (AccountAgeGroupAssignedAdultSetting)
 import Constants from "Constants" /* 1071 */;
 import intl3 from "intl" /* 1112 */;
 import _modDef3444 from "module_3444" /* 3444 */;
 import SettingsConstants from "SettingsConstants" /* 8712 */;
-import AgeGroupScreenRowProps from "AgeGroupScreenRowProps" /* 16025 */;
+import AgeGroupScreenRowProps from "AgeGroupScreenRowProps" /* 16027 */;
 import SettingBuilders from "SettingBuilders" /* 11937 */;
 import size from "module_2" /* 2 */;
 

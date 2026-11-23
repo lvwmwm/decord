@@ -1,17 +1,17 @@
-// Module ID: 17745
-// Function ID: 17746
+// Module ID: 17747
+// Function ID: 17748
 // Name: ChannelInfo
-// Dependencies: [19, 8325, 4784, 4845, 6619, 5561, 1071, 21, 4913, 504, 12927, 8617, 17746, 17747, 5949, 1186, 17749, 17750, 17638, 6533, 13148, 17639, 17751, 14462, 2]
+// Dependencies: [19, 8325, 4784, 4845, 6619, 5561, 1071, 21, 4913, 504, 12927, 8617, 17748, 17749, 5949, 1186, 17751, 17752, 17640, 6533, 13148, 17641, 17753, 14462, 2]
 // Exports: default
 
-// Module 17745 (ChannelInfo)
+// Module 17747 (ChannelInfo)
 import Fragment from "Fragment" /* 21 */;
 import StageMediaHooks from "StageMediaHooks" /* 6533 */;
 import useEmbeddedAppsForChannelDefault from "useEmbeddedAppsForChannel" /* 12927 */;
 import useShowConnectedUserLimitDefault from "useShowConnectedUserLimit" /* 13148 */;
-import showChannelBadgeDefault from "showChannelBadge" /* 17746 */;
-import ChannelBadgeDefault from "ChannelBadge" /* 17747 */;
-import useVoiceChannelStartTime from "useVoiceChannelStartTime" /* 17751 */;
+import showChannelBadgeDefault from "showChannelBadge" /* 17748 */;
+import ChannelBadgeDefault from "ChannelBadge" /* 17749 */;
+import useVoiceChannelStartTime from "useVoiceChannelStartTime" /* 17753 */;
 import react from "react" /* 19 */;
 import NewChannelsStore from "NewChannelsStore" /* 8325 */;
 import GuildStore from "GuildStore" /* 4784 */;
@@ -58,7 +58,7 @@ function LimitAndDurationInfo(channel) {
   }
   if (tmp4(obj2)) {
     const obj3 = { userCount: voiceStatesCount, video: hasVideo, channel };
-    const ConnectedUserLimit = tmp(17639).ConnectedUserLimit;
+    const ConnectedUserLimit = tmp(17641).ConnectedUserLimit;
     if (!hasVideo) {
       hasVideo = hasMedia;
     }
@@ -142,16 +142,16 @@ export default function ChannelInfo(channel) {
     }
     if (null != enableActivities) {
       if (enableActivities) {
-        const tmpResult2 = channel(17749);
+        const tmpResult2 = channel(17751);
         if (tmpResult2.showChannelItemEmbeddedActivities(tmp5)) {
-          tmp11Result = jsx(tmp4(17750), { embeddedApps: tmp5, muted });
+          tmp11Result = jsx(tmp4(17752), { embeddedApps: tmp5, muted });
         }
       }
     }
     if (null != isSubscriptionGated) {
       if (null != needSubscriptionToAccess) {
         if (isSubscriptionGated) {
-          tmp11Result = jsx(tmp4(17638), { locked: needSubscriptionToAccess });
+          tmp11Result = jsx(tmp4(17640), { locked: needSubscriptionToAccess });
         }
       }
     }

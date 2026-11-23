@@ -1,9 +1,9 @@
-// Module ID: 17240
-// Function ID: 17241
+// Module ID: 17242
+// Function ID: 17243
 // Name: DesignSystemStackSetting
-// Dependencies: [8712, 1071, 11937, 17241, 2]
+// Dependencies: [8712, 1071, 11937, 17243, 2]
 
-// Module 17240 (DesignSystemStackSetting)
+// Module 17242 (DesignSystemStackSetting)
 import Constants from "Constants" /* 1071 */;
 import SettingsConstants from "SettingsConstants" /* 8712 */;
 import SettingBuilders from "SettingBuilders" /* 11937 */;

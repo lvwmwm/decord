@@ -1,10 +1,10 @@
-// Module ID: 14640
-// Function ID: 14641
+// Module ID: 14642
+// Function ID: 14643
 // Name: useMobileInviteSuggestions
-// Dependencies: [32, 19, 4825, 4784, 13189, 5657, 1071, 1082, 504, 1255, 7267, 14641, 13188, 2]
+// Dependencies: [32, 19, 4825, 4784, 13189, 5657, 1071, 1082, 504, 1255, 7267, 14643, 13188, 2]
 // Exports: default
 
-// Module 14640 (useMobileInviteSuggestions)
+// Module 14642 (useMobileInviteSuggestions)
 import Constants from "Constants" /* 1071 */;
 import Constants2 from "Constants" /* 1082 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;

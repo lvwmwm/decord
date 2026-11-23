@@ -1,9 +1,9 @@
-// Module ID: 17752
-// Function ID: 17753
+// Module ID: 17754
+// Function ID: 17755
 // Name: VoiceChannel
-// Dependencies: [5, 19, 17, 8320, 4845, 6619, 6552, 5657, 5642, 1071, 21, 575, 7285, 7286, 2119, 6494, 8017, 17751, 17753, 10640, 504, 17744, 9052, 5637, 8685, 8009, 1255, 17745, 17636, 13843, 1112, 5948, 17648, 17641, 12927, 2]
+// Dependencies: [5, 19, 17, 8320, 4845, 6619, 6552, 5657, 5642, 1071, 21, 575, 7285, 7286, 2119, 6494, 8017, 17753, 17755, 10640, 504, 17746, 9052, 5637, 8685, 8009, 1255, 17747, 17638, 13843, 1112, 5948, 17650, 17643, 12927, 2]
 
-// Module 17752 (VoiceChannel)
+// Module 17754 (VoiceChannel)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

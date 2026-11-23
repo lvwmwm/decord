@@ -1,9 +1,9 @@
-// Module ID: 18824
-// Function ID: 18825
+// Module ID: 18826
+// Function ID: 18827
 // Name: smartSearchViewabilityConfig
 // Dependencies: [8576, 13221, 13219, 2]
 
-// Module 18824 (smartSearchViewabilityConfig)
+// Module 18826 (smartSearchViewabilityConfig)
 import SearchConstants from "SearchConstants" /* 8576 */;
 import SearchSessionAnalyticsManagerDefault from "SearchSessionAnalyticsManager" /* 13219 */;
 import SmartSearchAnalyticsManagerDefault from "SmartSearchAnalyticsManager" /* 13221 */;

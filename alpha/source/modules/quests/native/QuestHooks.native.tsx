@@ -1,10 +1,10 @@
-// Module ID: 16467
-// Function ID: 16468
+// Module ID: 16469
+// Function ID: 16470
 // Name: QuestHooks
-// Dependencies: [5, 19, 5128, 2164, 8403, 8404, 16468, 6558, 6371, 1082, 16470, 16498, 6561, 6652, 5089, 504, 6565, 16480, 7373, 8400, 9958, 9950, 9972, 8427, 7520, 10672, 8425, 10778, 6659, 12199, 2]
+// Dependencies: [5, 19, 5128, 2164, 8403, 8404, 16470, 6558, 6371, 1082, 16472, 16500, 6561, 6652, 5089, 504, 6565, 16482, 7373, 8400, 9958, 9950, 9972, 8427, 7520, 10672, 8425, 10778, 6659, 12199, 2]
 // Exports: useHasWatchVideoOnMobileTasks, useIsMobileQuestDockRendered, useIsMobileQuestDockVisibleToUser, useMobileActivityQuest, useMobileQuestDock, useMobileQuestDockHeight, useQuestDockHeroAsset, useQuestGameLogotypeAssetUrl
 
-// Module 16467 (QuestHooks)
+// Module 16469 (QuestHooks)
 import Constants from "Constants" /* 1082 */;
 import CaptchaConstants from "CaptchaConstants" /* 6371 */;
 import QuestTypes from "QuestTypes" /* 6561 */;
@@ -12,15 +12,15 @@ import AdCreativeType from "AdCreativeType" /* 6565 */;
 import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6659 */;
 import QuestTaskUtils from "QuestTaskUtils" /* 8427 */;
 import AssetUtils from "AssetUtils" /* 9972 */;
-import QuestDockHooks from "QuestDockHooks" /* 16470 */;
-import useQuestForPlacement from "useQuestForPlacement" /* 16498 */;
+import QuestDockHooks from "QuestDockHooks" /* 16472 */;
+import useQuestForPlacement from "useQuestForPlacement" /* 16500 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
 import ActionSheetStore from "ActionSheetStore" /* 5128 */;
 import ApplicationStore from "ApplicationStore" /* 2164 */;
 import BountyStore from "BountyStore" /* 8403 */;
 import QuestStore from "QuestStore" /* 8404 */;
-import PlayableStore from "PlayableStore" /* 16468 */;
+import PlayableStore from "PlayableStore" /* 16470 */;
 import QuestConstants from "QuestConstants" /* 6558 */;
 import size from "module_2" /* 2 */;
 
@@ -61,7 +61,7 @@ function useIsMobileQuestDockRenderedBase(mobileQuestDock) {
   const isQuestExpired = tmpResult7.useIsQuestExpired(questDockQuest);
   const tmpResult8 = tmp(9950);
   let isEligibleForQuests = tmpResult8.getIsEligibleForQuests();
-  const tmpResult9 = tmp(16480);
+  const tmpResult9 = tmp(16482);
   questDockAdCreativeId = tmpResult9.getQuestDockAdCreativeId(mobileQuestDock);
   const items1 = [tmp5];
   const items2 = [questDockAdCreativeId];

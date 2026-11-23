@@ -1,7 +1,7 @@
 // Module ID: 6497
 // Function ID: 6498
 // Name: StageChannelActionCreatorExtras
-// Dependencies: [6495, 6498, 6500, 1071, 5127, 6501, 2119, 14838, 14839, 14844, 10855, 1107, 6494, 5089, 6429, 10642, 8067, 10848, 2]
+// Dependencies: [6495, 6498, 6500, 1071, 5127, 6501, 2119, 14840, 14841, 14846, 10855, 1107, 6494, 5089, 6429, 10642, 8067, 10848, 2]
 // Exports: navigateToStage, openEndGuildEventConfirmationModal, openEndStageModal, openStageBlockedUsersSheet, openStageChannelSettings, openStageSettingsSheet, shouldShowBlockedUsers, showChannelChangeConfirmationAlert, showPlatformUserProfile
 
 // Module 6497 (StageChannelActionCreatorExtras)
@@ -63,17 +63,17 @@ export function openEndGuildEventConfirmationModal() {
 export function openStageBlockedUsersSheet(channel, onAccept) {
   const obj = ActionSheetActionCreatorsDefault;
   const obj2 = { channel, onAccept };
-  obj.openLazy(asyncRequire(14838, dependencyMap.paths), metroRequire, obj2);
+  obj.openLazy(asyncRequire(14840, dependencyMap.paths), metroRequire, obj2);
 }
 export function openStageSettingsSheet(channelId, onOpenRTCDebugOverlay) {
   const obj = ActionSheetActionCreatorsDefault;
   const obj2 = { channelId, onOpenRTCDebugOverlay };
-  obj.openLazy(asyncRequire(14839, dependencyMap.paths), metroImportDefault, obj2);
+  obj.openLazy(asyncRequire(14841, dependencyMap.paths), metroImportDefault, obj2);
 }
 export function openEndStageModal(channel) {
   const obj = ActionSheetActionCreatorsDefault;
   const obj2 = { channel };
-  obj.openLazy(asyncRequire(14844, dependencyMap.paths), metroImportAll, obj2);
+  obj.openLazy(asyncRequire(14846, dependencyMap.paths), metroImportAll, obj2);
 }
 export { openStageChannel };
 export function showPlatformUserProfile(arg0) {

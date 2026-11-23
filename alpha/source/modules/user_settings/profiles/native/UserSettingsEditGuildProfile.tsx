@@ -1,10 +1,10 @@
-// Module ID: 15957
-// Function ID: 15958
+// Module ID: 15959
+// Function ID: 15960
 // Name: UserSettingsEditGuildProfile
-// Dependencies: [19, 17, 8132, 1386, 21, 4913, 575, 7520, 7539, 504, 15958, 9427, 8073, 15960, 7045, 7322, 14195, 5127, 15962, 2119, 15963, 2]
+// Dependencies: [19, 17, 8132, 1386, 21, 4913, 575, 7520, 7539, 504, 15960, 9427, 8073, 15962, 7045, 7322, 14195, 5127, 15964, 2119, 15965, 2]
 // Exports: default
 
-// Module 15957 (UserSettingsEditGuildProfile)
+// Module 15959 (UserSettingsEditGuildProfile)
 import nativeDefault from "native" /* 575 */;
 import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8073 */;
 import GuildIdentityActionCreators from "GuildIdentityActionCreators" /* 9427 */;
@@ -67,7 +67,7 @@ export default function UserSettingsEditGuildProfile(arg0) {
   let obj = stateFromStores(504);
   const items = [UserStore];
   stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  const tmp7 = guild(15958)();
+  const tmp7 = guild(15960)();
   guild = tmp7.guild;
   ({ resetPending: c2, handleSubmit: c3 } = tmp7);
   let obj2 = stateFromStores(504);
@@ -129,12 +129,12 @@ export default function UserSettingsEditGuildProfile(arg0) {
       items3 = [showGuildSelector, ];
       const _HermesInternal = HermesInternal;
       const obj7 = { currentUser: stateFromStores, header };
-      const tmp2Result2 = tmp2(15963);
+      const tmp2Result2 = tmp2(15965);
       items3[1] = tmp11(tmp2Result2, obj7, "" + stateFromStores.id + "-" + guild.id);
       return tmp15(AnalyticsLocationProvider, obj6);
     }
   }
   const obj8 = { children: items4 };
-  items4 = [header, closure_7(tmp2(15960), {})];
+  items4 = [header, closure_7(tmp2(15962), {})];
   return closure_9(closure_8, obj8);
 };

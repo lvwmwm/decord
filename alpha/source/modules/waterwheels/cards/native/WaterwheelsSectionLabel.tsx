@@ -1,10 +1,10 @@
-// Module ID: 17808
-// Function ID: 17809
+// Module ID: 17810
+// Function ID: 17811
 // Name: WaterwheelsSectionLabel
 // Dependencies: [19, 17, 21, 4913, 575, 5504, 2]
 // Exports: default
 
-// Module 17808 (WaterwheelsSectionLabel)
+// Module 17810 (WaterwheelsSectionLabel)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5504 */;

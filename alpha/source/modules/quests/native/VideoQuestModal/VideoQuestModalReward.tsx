@@ -1,12 +1,12 @@
-// Module ID: 16533
-// Function ID: 16534
+// Module ID: 16535
+// Function ID: 16536
 // Name: VideoQuestModalReward
-// Dependencies: [19, 21, 4913, 16511, 9958, 9955, 5929, 575, 16516, 5504, 1112, 2]
+// Dependencies: [19, 21, 4913, 16513, 9958, 9955, 5929, 575, 16518, 5504, 1112, 2]
 
-// Module 16533 (VideoQuestModalReward)
+// Module 16535 (VideoQuestModalReward)
 import nativeDefault from "native" /* 575 */;
 import QuestUtils from "QuestUtils" /* 9955 */;
-import QuestProgressIndicatorDefault from "QuestProgressIndicator" /* 16516 */;
+import QuestProgressIndicatorDefault from "QuestProgressIndicator" /* 16518 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4913 */;
@@ -39,7 +39,7 @@ const memoResult = react.memo(function VideoQuestModalReward(withQuestName) {
     str = size;
   }
   ({ withRewardTileAnimation, onTextBlockLayout } = withQuestName);
-  let obj = quest(16511);
+  let obj = quest(16513);
   quest = obj.useVideoQuestModalContext().quest;
   let obj2 = quest(9958);
   const items = [quest.id];

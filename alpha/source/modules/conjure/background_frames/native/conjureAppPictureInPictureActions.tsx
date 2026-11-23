@@ -1,10 +1,10 @@
-// Module ID: 19172
-// Function ID: 19173
+// Module ID: 19174
+// Function ID: 19175
 // Name: conjureAppPictureInPictureActions
-// Dependencies: [6623, 6621, 6624, 6943, 15745, 13494, 1112, 4190, 10139, 13874, 10368, 13875, 7551, 10817, 2]
+// Dependencies: [6623, 6621, 6624, 6943, 15747, 13494, 1112, 4190, 10139, 13874, 10368, 13875, 7551, 10817, 2]
 // Exports: openConjureAppPictureInPictureFrame, showConjureAppPictureInPictureActions
 
-// Module 19172 (conjureAppPictureInPictureActions)
+// Module 19174 (conjureAppPictureInPictureActions)
 import _modDef4190 from "module_4190" /* 4190 */;
 import FramesConstants from "FramesConstants" /* 6624 */;
 import conjurePreviewSurface from "conjurePreviewSurface" /* 6943 */;
@@ -22,7 +22,7 @@ let _require;
 let tmp;
 let tmp3;
 const getConjureAppSoundButtonDefault = tmp3(13874);
-const conjureBackgroundFrames = tmp(15745);
+const conjureBackgroundFrames = tmp(15747);
 function getConjureAppPictureInPictureActions(id, appName, arg2) {
   let intl;
   let intl2;

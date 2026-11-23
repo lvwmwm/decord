@@ -1,10 +1,10 @@
-// Module ID: 16500
-// Function ID: 16501
+// Module ID: 16502
+// Function ID: 16503
 // Name: useAdRefreshLoop
-// Dependencies: [19, 8401, 6558, 9950, 8402, 6651, 9992, 16501, 6561, 504, 2]
+// Dependencies: [19, 8401, 6558, 9950, 8402, 6651, 9992, 16503, 6561, 504, 2]
 // Exports: useAdRefreshLoop
 
-// Module 16500 (useAdRefreshLoop)
+// Module 16502 (useAdRefreshLoop)
 import react from "react" /* 19 */;
 import QuestConstants from "QuestConstants" /* 6558 */;
 import DiscordAppStateDefault from "DiscordAppState" /* 6651 */;
@@ -17,7 +17,7 @@ const require = globalThis.__r;
 let _require;
 
 function maybeRefreshAd(arr, QUEST_HOME_BANNER_DESKTOP, fn, arg3, refetchOnFocus) {
-  const f110009 = (item) => {
+  const f109986 = (item) => {
     const obj = require("AdDecisionUtils");
     return obj.isAdDecisionValid(item);
   };
@@ -25,8 +25,8 @@ function maybeRefreshAd(arr, QUEST_HOME_BANNER_DESKTOP, fn, arg3, refetchOnFocus
   const isEligibleForQuests = obj.getIsEligibleForQuests();
   let tmp5 = !isEligibleForQuests;
   if (isEligibleForQuests) {
-    tmp5 = arr.length > 0 && arr.every(f110009);
-    arr.length > 0 && arr.every(f110009);
+    tmp5 = arr.length > 0 && arr.every(f109986);
+    arr.length > 0 && arr.every(f109986);
   }
   if (!tmp5) {
     const obj2 = DiscordAppStateDefault;

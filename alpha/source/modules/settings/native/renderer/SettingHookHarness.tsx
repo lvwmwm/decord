@@ -1,15 +1,15 @@
-// Module ID: 15822
-// Function ID: 15823
+// Module ID: 15824
+// Function ID: 15825
 // Name: SettingHookHarness
-// Dependencies: [32, 19, 2188, 15823, 11938, 504, 15824, 2]
+// Dependencies: [32, 19, 2188, 15825, 11938, 504, 15826, 2]
 // Exports: getCachedSettingSearchTerms, getCachedSettingTitle
 
-// Module 15822 (SettingHookHarness)
+// Module 15824 (SettingHookHarness)
 import SettingRendererConstants from "SettingRendererConstants" /* 11938 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import LocaleStore from "LocaleStore" /* 2188 */;
-import SettingBlocklistStore from "SettingBlocklistStore" /* 15823 */;
+import SettingBlocklistStore from "SettingBlocklistStore" /* 15825 */;
 import size from "module_2" /* 2 */;
 
 let set;

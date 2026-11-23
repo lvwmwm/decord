@@ -1,9 +1,9 @@
-// Module ID: 19580
-// Function ID: 19581
+// Module ID: 19582
+// Function ID: 19583
 // Name: NewUserManager
-// Dependencies: [5, 7370, 6689, 1386, 7264, 13611, 1071, 13669, 19581, 13581, 13610, 1091, 8051, 572, 7484, 13588, 13700, 2]
+// Dependencies: [5, 7370, 6689, 1386, 7264, 13611, 1071, 13669, 19583, 13581, 13610, 1091, 8051, 572, 7484, 13588, 13700, 2]
 
-// Module 19580 (NewUserManager)
+// Module 19582 (NewUserManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
 import ConstantsIOS from "ConstantsIOS" /* 1091 */;
@@ -12,7 +12,7 @@ import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 1
 import NUFActionCreators from "NUFActionCreators" /* 13610 */;
 import NUFConstants from "NUFConstants" /* 13611 */;
 import HubConstants from "HubConstants" /* 13669 */;
-import AddAvatarModalActionCreators from "AddAvatarModalActionCreators" /* 19581 */;
+import AddAvatarModalActionCreators from "AddAvatarModalActionCreators" /* 19583 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import PhoneStore from "PhoneStore" /* 7370 */;
 import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6689 */;

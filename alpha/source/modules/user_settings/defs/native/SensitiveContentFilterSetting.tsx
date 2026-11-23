@@ -1,9 +1,9 @@
-// Module ID: 16110
-// Function ID: 16111
+// Module ID: 16112
+// Function ID: 16113
 // Name: SensitiveContentFilterSetting
-// Dependencies: [8712, 1071, 11937, 1112, 7682, 16111, 2]
+// Dependencies: [8712, 1071, 11937, 1112, 7682, 16113, 2]
 
-// Module 16110 (SensitiveContentFilterSetting)
+// Module 16112 (SensitiveContentFilterSetting)
 import Constants from "Constants" /* 1071 */;
 import intl7 from "intl" /* 1112 */;
 import ImageWarningIcon from "ImageWarningIcon" /* 7682 */;

@@ -1,9 +1,9 @@
-// Module ID: 18843
-// Function ID: 18844
+// Module ID: 18845
+// Function ID: 18846
 // Name: ChannelDetailsTopic
-// Dependencies: [32, 19, 17, 1386, 10531, 1071, 21, 4913, 1378, 18844, 1653, 5514, 5637, 11139, 7030, 5504, 1112, 5468, 504, 4969, 5948, 2]
+// Dependencies: [32, 19, 17, 1386, 10531, 1071, 21, 4913, 1378, 18846, 1653, 5514, 5637, 11139, 7030, 5504, 1112, 5468, 504, 4969, 5948, 2]
 
-// Module 18843 (ChannelDetailsTopic)
+// Module 18845 (ChannelDetailsTopic)
 import Constants from "Constants" /* 1071 */;
 import UserUtilsDefault from "UserUtils" /* 4969 */;
 import MarkupUtilsDefault from "MarkupUtils" /* 5637 */;
@@ -345,7 +345,7 @@ let obj = { hidden: { flex: 1, flexGrow: 1, position: "absolute", opacity: 0 }, 
 createStyles = createStyles.createStyles;
 let obj2 = null;
 if (!PlatformUtils.isAndroid()) {
-  obj2 = { lineHeight: "Array" };
+  obj2 = { lineHeight: "r" };
 }
 obj3 = { paddingVertical: 5 };
 let merged = Object.assign(obj2);

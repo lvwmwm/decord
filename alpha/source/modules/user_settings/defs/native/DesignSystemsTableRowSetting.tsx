@@ -1,9 +1,9 @@
-// Module ID: 17217
-// Function ID: 17218
+// Module ID: 17219
+// Function ID: 17220
 // Name: DesignSystemsTableRowSetting
-// Dependencies: [8712, 1071, 11937, 17218, 2]
+// Dependencies: [8712, 1071, 11937, 17220, 2]
 
-// Module 17217 (DesignSystemsTableRowSetting)
+// Module 17219 (DesignSystemsTableRowSetting)
 import Constants from "Constants" /* 1071 */;
 import SettingsConstants from "SettingsConstants" /* 8712 */;
 import SettingBuilders from "SettingBuilders" /* 11937 */;

@@ -1,15 +1,15 @@
-// Module ID: 20091
-// Function ID: 20092
+// Module ID: 20093
+// Function ID: 20094
 // Name: NativeExperimentBridgeManager
-// Dependencies: [17, 2188, 502, 9256, 1378, 11723, 8375, 1255, 20092, 1284, 7484, 2]
+// Dependencies: [17, 2188, 502, 9256, 1378, 11723, 8375, 1255, 20094, 1284, 7484, 2]
 
-// Module 20091 (NativeExperimentBridgeManager)
+// Module 20093 (NativeExperimentBridgeManager)
 import react_native from "react-native" /* 17 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import HTTPUtils from "HTTPUtils" /* 1284 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
 import IOSAnchoredChatScrollerExperiment from "IOSAnchoredChatScrollerExperiment" /* 8375 */;
-import NotificationLoadMessagesExperimentDefault from "NotificationLoadMessagesExperiment" /* 20092 */;
+import NotificationLoadMessagesExperimentDefault from "NotificationLoadMessagesExperiment" /* 20094 */;
 import LocaleStore from "LocaleStore" /* 2188 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import MediaPlaybackExperiment_mod from "MediaPlaybackExperiment" /* 9256 */;

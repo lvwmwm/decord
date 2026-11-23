@@ -1,10 +1,10 @@
-// Module ID: 19358
-// Function ID: 19359
+// Module ID: 19360
+// Function ID: 19361
 // Name: VoicePanelVideoButton
-// Dependencies: [19, 17, 21, 11749, 19346, 17989, 19347, 1112, 14392, 5044, 11126, 14508, 2]
+// Dependencies: [19, 17, 21, 11749, 19348, 17991, 19349, 1112, 14392, 5044, 11126, 14510, 2]
 // Exports: default
 
-// Module 19358 (VoicePanelVideoButton)
+// Module 19360 (VoicePanelVideoButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import CameraRive2 from "CameraRive" /* 5044 */;
@@ -23,7 +23,7 @@ function VideoButtonRive(arg0) {
   if (isVideoEnabled) {
     let VideoSlashIcon = tmp3(11126).VideoIcon;
   } else {
-    VideoSlashIcon = tmp3(14508).VideoSlashIcon;
+    VideoSlashIcon = tmp3(14510).VideoSlashIcon;
   }
   return <tmp2 style={{ width: 24, height: 24, pointerEvents: "none" }}>{null}</tmp2>;
 }
@@ -42,9 +42,9 @@ export default function VideoButton(arg0) {
   let color;
   ({ props, wrapperSpecs } = arg0);
   const channelId = react.useContext(color(11749)).channelId;
-  const obj2 = isVideoEnabled(19346);
+  const obj2 = isVideoEnabled(19348);
   const voicePanelButtonStyles = obj2.useVoicePanelButtonStyles(wrapperSpecs);
-  const tmp5 = color(17989)(channelId, "VoicePanelVideoButton");
+  const tmp5 = color(17991)(channelId, "VoicePanelVideoButton");
   isVideoEnabled = tmp5.isVideoEnabled;
   ({ videoSupported, videoBlocked, onPress } = tmp5);
   const obj = react;
@@ -63,7 +63,7 @@ export default function VideoButton(arg0) {
   const items = [color, isVideoEnabled];
   let memo = obj.useMemo(() => <VideoButtonRive isVideoEnabled={isVideoEnabled} color={color} />, items);
   let tmp9 = !videoBlocked;
-  tmp(19347);
+  tmp(19349);
   if (!videoBlocked) {
     tmp9 = !videoSupported;
   }

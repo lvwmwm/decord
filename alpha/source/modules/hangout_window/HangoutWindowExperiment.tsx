@@ -1,10 +1,10 @@
-// Module ID: 18576
-// Function ID: 18577
+// Module ID: 18578
+// Function ID: 18579
 // Name: HangoutWindowExperiment
 // Dependencies: [5531, 5853, 2]
 // Exports: getHangoutWindowExperiment, useHangoutWindowExperiment
 
-// Module 18576 (HangoutWindowExperiment)
+// Module 18578 (HangoutWindowExperiment)
 import ExperimentConstants from "ExperimentConstants" /* 5531 */;
 import createExperiment from "module_5853" /* 5853 */;
 import size from "module_2" /* 2 */;

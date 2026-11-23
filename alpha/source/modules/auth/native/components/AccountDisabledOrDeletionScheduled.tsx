@@ -1,10 +1,10 @@
-// Module ID: 17480
-// Function ID: 17481
+// Module ID: 17482
+// Function ID: 17483
 // Name: AccountDisabledOrDeletionScheduled
-// Dependencies: [19, 17, 502, 1071, 21, 4913, 575, 1500, 504, 6425, 7372, 1112, 7394, 17481, 5504, 6545, 5511, 2]
+// Dependencies: [19, 17, 502, 1071, 21, 4913, 575, 1500, 504, 6425, 7372, 1112, 7394, 17483, 5504, 6545, 5511, 2]
 // Exports: default
 
-// Module 17480 (AccountDisabledOrDeletionScheduled)
+// Module 17482 (AccountDisabledOrDeletionScheduled)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;

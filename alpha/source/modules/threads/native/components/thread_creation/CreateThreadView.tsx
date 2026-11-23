@@ -1,9 +1,9 @@
-// Module ID: 18691
-// Function ID: 18692
+// Module ID: 18693
+// Function ID: 18694
 // Name: CreateThreadView
-// Dependencies: [5, 32, 19, 17, 8315, 8388, 1071, 21, 4913, 575, 10451, 8514, 7520, 7539, 1628, 5488, 9659, 7674, 18692, 7556, 1112, 18694, 5491, 12849, 12821, 13553, 11777, 1501, 1255, 5650, 5097, 1098, 11253, 18693, 5098, 2]
+// Dependencies: [5, 32, 19, 17, 8315, 8388, 1071, 21, 4913, 575, 10451, 8514, 7520, 7539, 1628, 5488, 9659, 7674, 18694, 7556, 1112, 18696, 5491, 12849, 12821, 13553, 11777, 1501, 1255, 5650, 5097, 1098, 11253, 18695, 5098, 2]
 
-// Module 18691 (CreateThreadView)
+// Module 18693 (CreateThreadView)
 import nativeDefault from "native" /* 575 */;
 import DraftStore from "DraftStore" /* 8315 */;
 import SlowmodeStore from "SlowmodeStore" /* 8388 */;
@@ -269,7 +269,7 @@ function CreateThreadViewInner(threadSettingsDraft) {
   obj9 = { style: tmp.options, children: items7 };
   let obj10 = { style: tmp.optionsInner, children: items6 };
   const obj11 = { style: tmp.threadIconContainer, children: closure_13(tmp2(7674).ThreadIcon, { size: "lg" }) };
-  items6 = [closure_13(closure_6, obj11), closure_13(tmp12(18692), { ref: ref1, chatInputRef: ref, threadSettingsDraft, threadNameError: first, optional: tmp21 }), ];
+  items6 = [closure_13(closure_6, obj11), closure_13(tmp12(18694), { ref: ref1, chatInputRef: ref, threadSettingsDraft, threadNameError: first, optional: tmp21 }), ];
   let tmp23Result = null;
   const tmp25 = closure_7;
   if (!isForumLikeChannelResult) {
@@ -310,7 +310,7 @@ function CreateThreadViewInner(threadSettingsDraft) {
     const obj15 = { style: tmp.border };
     items8 = [tmp23(tmp24, obj15), ];
     const obj16 = { channelId: parentChannel.id, messageId: threadSettingsDraft.parentMessageId };
-    items8[1] = closure_13(threadSettingsDraft(18694).ThreadCreationStarterMessage, obj16);
+    items8[1] = closure_13(threadSettingsDraft(18696).ThreadCreationStarterMessage, obj16);
     tmp22Result = tmp22(tmp24, obj14);
   }
   items7[1] = tmp22Result;

@@ -1,10 +1,10 @@
-// Module ID: 19221
-// Function ID: 19222
+// Module ID: 19223
+// Function ID: 19224
 // Name: VoicePanelFloatingCTAUtils
-// Dependencies: [32, 19, 17, 6620, 19222, 6633, 4762, 4768, 21, 5122, 11749, 18036, 8017, 563, 7633, 7575, 7571, 5127, 7592, 19223, 14299, 7711, 8048, 1112, 7151, 17987, 11056, 10855, 10850, 10848, 10866, 10924, 5929, 575, 7591, 6503, 7499, 11722, 10845, 7620, 6497, 19224, 9081, 10598, 4945, 7225, 4746, 18015, 13417, 5140, 2]
+// Dependencies: [32, 19, 17, 6620, 19224, 6633, 4762, 4768, 21, 5122, 11749, 18038, 8017, 563, 7633, 7575, 7571, 5127, 7592, 19225, 14299, 7711, 8048, 1112, 7151, 17989, 11056, 10855, 10850, 10848, 10866, 10924, 5929, 575, 7591, 6503, 7499, 11722, 10845, 7620, 6497, 19226, 9081, 10598, 4945, 7225, 4746, 18017, 13417, 5140, 2]
 // Exports: useShouldShowFloatingCTA
 
-// Module 19221 (VoicePanelFloatingCTAUtils)
+// Module 19223 (VoicePanelFloatingCTAUtils)
 import react_native from "react-native" /* 17 */;
 import intl6 from "intl" /* 1112 */;
 import dismissible_content from "dismissible_content" /* 4746 */;
@@ -14,11 +14,11 @@ import StageChannelActionCreators from "StageChannelActionCreators" /* 6503 */;
 import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6633 */;
 import XSmallIcon from "XSmallIcon" /* 7151 */;
 import speakOnStageDefault from "speakOnStage" /* 11722 */;
-import soundboard_SoundboardActionCreators from "soundboard/SoundboardActionCreators" /* 18015 */;
+import soundboard_SoundboardActionCreators from "soundboard/SoundboardActionCreators" /* 18017 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ChannelRTCStore from "ChannelRTCStore" /* 6620 */;
-import EventBannerStore from "EventBannerStore" /* 19222 */;
+import EventBannerStore from "EventBannerStore" /* 19224 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -53,7 +53,7 @@ function useStageCTAProps(stateFromStores) {
   let tmp = showControls;
   const context = react.useContext(showControls(11749));
   showControls = context.showControls;
-  const tmp4 = showControls(18036)(context.channelId);
+  const tmp4 = showControls(18038)(context.channelId);
   const obj2 = require("StageChannelUnifiedCallExperiment");
   const isStageUnifiedCall = obj2.useIsStageUnifiedCall(stateFromStores, "VoicePanelFloatingCTA");
   const tmp7 = showControls(10850)();
@@ -118,7 +118,7 @@ function useStageCTAProps(stateFromStores) {
     tmp16 = obj3;
   }
   _require = stateFromStores;
-  const tmp20 = tmp(18036)(obj.useContext(tmp(11749)).channelId);
+  const tmp20 = tmp(18038)(obj.useContext(tmp(11749)).channelId);
   const tmp5Result3 = require("StageChannelUnifiedCallExperiment");
   const isStageUnifiedCall1 = tmp5Result3.useIsStageUnifiedCall(stateFromStores, "VoicePanelFloatingCTA");
   let id2;
@@ -199,7 +199,7 @@ function useFloatingCTAProps(stateFromStores) {
   let nextRecurrenceIdInEvent;
   const tmp5 = setShowFloatingCTA(5122)();
   let id1;
-  const tmp6 = setShowFloatingCTA(18036)(react.useContext(setShowFloatingCTA(11749)).channelId);
+  const tmp6 = setShowFloatingCTA(18038)(react.useContext(setShowFloatingCTA(11749)).channelId);
   const useImminentUpcomingGuildEvents = require("useGuildScheduledEvents").useImminentUpcomingGuildEvents;
   require("useGuildScheduledEvents");
   if (stateFromStores != null) {
@@ -273,7 +273,7 @@ function useFloatingCTAProps(stateFromStores) {
   const context = obj.useContext(tmp(11749));
   ({ channelId, isDockEnabled } = context);
   const items4 = [ChannelRTCStore];
-  const tmp29 = tmp(18036)(channelId);
+  const tmp29 = tmp(18038)(channelId);
   const tmp7Result11 = require("useStateFromStores");
   const stateFromStores1 = tmp7Result11.useStateFromStores(items4, () => {
     let id;

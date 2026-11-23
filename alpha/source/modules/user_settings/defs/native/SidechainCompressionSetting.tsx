@@ -1,9 +1,9 @@
-// Module ID: 16661
-// Function ID: 16662
+// Module ID: 16663
+// Function ID: 16664
 // Name: SidechainCompressionSetting
 // Dependencies: [2131, 8712, 5658, 504, 11937, 1112, 5809, 2]
 
-// Module 16661 (SidechainCompressionSetting)
+// Module 16663 (SidechainCompressionSetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1112 */;
 import Constants from "Constants" /* 5658 */;

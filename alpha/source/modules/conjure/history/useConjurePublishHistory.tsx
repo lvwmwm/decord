@@ -1,14 +1,14 @@
-// Module ID: 18370
-// Function ID: 18371
+// Module ID: 18372
+// Function ID: 18373
 // Name: useConjurePublishHistory
-// Dependencies: [32, 19, 1112, 4190, 2168, 18371, 18365, 2]
+// Dependencies: [32, 19, 1112, 4190, 2168, 18373, 18367, 2]
 // Exports: publishHistoryTitle, useConjurePublishHistory, useConjurePublishHistoryNotes
 
-// Module 18370 (useConjurePublishHistory)
+// Module 18372 (useConjurePublishHistory)
 import intl2 from "intl" /* 1112 */;
 import _modDef2168 from "module_2168" /* 2168 */;
 import _modDef4190 from "module_4190" /* 4190 */;
-import conjurePublishHistoryRequests from "conjurePublishHistoryRequests" /* 18371 */;
+import conjurePublishHistoryRequests from "conjurePublishHistoryRequests" /* 18373 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

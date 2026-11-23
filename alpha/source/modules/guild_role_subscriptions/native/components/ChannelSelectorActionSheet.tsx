@@ -1,10 +1,10 @@
-// Module ID: 20029
-// Function ID: 20030
+// Module ID: 20031
+// Function ID: 20032
 // Name: ChannelSelectorActionSheet
-// Dependencies: [32, 19, 17, 4762, 7477, 4784, 4845, 4855, 1386, 1071, 21, 4913, 575, 5529, 16645, 5127, 7349, 7045, 1628, 504, 1112, 5141, 7515, 7427, 7490, 13707, 6429, 7708, 2119, 7728, 7746, 5504, 2]
+// Dependencies: [32, 19, 17, 4762, 7477, 4784, 4845, 4855, 1386, 1071, 21, 4913, 575, 5529, 16647, 5127, 7349, 7045, 1628, 504, 1112, 5141, 7515, 7427, 7490, 13707, 6429, 7708, 2119, 7728, 7746, 5504, 2]
 // Exports: default
 
-// Module 20029 (ChannelSelectorActionSheet)
+// Module 20031 (ChannelSelectorActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -41,7 +41,7 @@ function ChannelRow(channel) {
   const onChannelSelected = channel.onChannelSelected;
   ({ selected, guild, start, end } = channel);
   let str = onChannelSelected(5529)(channel);
-  let obj = channel(16645);
+  let obj = channel(16647);
   const items = [onChannelSelected, channel];
   const channelIconComponentOrDefault = obj.getChannelIconComponentOrDefault(channel, guild);
   const callback = react.useCallback(() => {

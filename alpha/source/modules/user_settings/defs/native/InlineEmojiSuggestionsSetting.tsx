@@ -1,9 +1,9 @@
-// Module ID: 16877
-// Function ID: 16878
+// Module ID: 16879
+// Function ID: 16880
 // Name: InlineEmojiSuggestionsSetting
 // Dependencies: [8712, 1071, 1255, 4738, 11937, 1112, 12826, 2]
 
-// Module 16877 (InlineEmojiSuggestionsSetting)
+// Module 16879 (InlineEmojiSuggestionsSetting)
 import intl2 from "intl" /* 1112 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import UserSettings from "UserSettings" /* 4738 */;

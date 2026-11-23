@@ -1,10 +1,10 @@
-// Module ID: 19798
-// Function ID: 19799
+// Module ID: 19800
+// Function ID: 19801
 // Name: SoundboardRecordSoundActionSheet
-// Dependencies: [32, 5, 19, 17, 2131, 6496, 12824, 21, 5679, 13119, 4913, 575, 12, 7795, 5594, 7784, 1112, 7553, 5504, 19799, 8492, 5511, 19800, 2]
+// Dependencies: [32, 5, 19, 17, 2131, 6496, 12824, 21, 5679, 13119, 4913, 575, 12, 7795, 5594, 7784, 1112, 7553, 5504, 19801, 8492, 5511, 19802, 2]
 // Exports: default
 
-// Module 19798 (SoundboardRecordSoundActionSheet)
+// Module 19800 (SoundboardRecordSoundActionSheet)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
@@ -12,7 +12,7 @@ import intl6 from "intl" /* 1112 */;
 import NativePermissionConstants from "NativePermissionConstants" /* 6496 */;
 import reactDefault from "react" /* 7784 */;
 import utils_TimeUtils from "utils/TimeUtils" /* 8492 */;
-import showSoundboardSoundEditModalDefault from "showSoundboardSoundEditModal" /* 19800 */;
+import showSoundboardSoundEditModalDefault from "showSoundboardSoundEditModal" /* 19802 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
@@ -36,8 +36,8 @@ let obj5;
 let obj6;
 let tmp13;
 let unpackModuleId;
-const SoundboardRecordingWaveformDefault = tmp13(19799);
-const f118731 = (arg0) => {
+const SoundboardRecordingWaveformDefault = tmp13(19801);
+const f118708 = (arg0) => {
   let num = arg0;
   if (arg0 == null) {
     num = 0;
@@ -45,7 +45,7 @@ const f118731 = (arg0) => {
   return num;
 };
 function getRecordedLevels(arg0) {
-  return Array.from(arg0, f118731);
+  return Array.from(arg0, f118708);
 }
 let obj = function _startSoundboardRecording() {
   obj = _asyncToGenerator(async (arg0, value) => {
@@ -253,7 +253,7 @@ export default function SoundboardRecordSoundActionSheet(arg0) {
           ref4.current(true);
         } else {
           const _Array = Array;
-          memo(diff, Array.from(tmp5.current, f118731));
+          memo(diff, Array.from(tmp5.current, f118708));
         }
       }
     }

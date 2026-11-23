@@ -22,7 +22,7 @@ let tmp6;
 let tmp7;
 let tmp8;
 let tmp9;
-const f121519 = () => {
+const f121496 = () => {
   let tmp10;
   let tmp6;
   let tmp7;
@@ -69,7 +69,7 @@ function scheduleOnUI(arg0) {
   closure_4.push(items);
   if (1 === closure_4.length) {
     const _queueMicrotask = queueMicrotask;
-    queueMicrotask(f121519);
+    queueMicrotask(f121496);
   }
 }
 function runOnUISync(arg0) {
@@ -236,7 +236,7 @@ export function runOnUIAsync(arg0) {
     if (1 === closure_4.length) {
       let tmp2 = globalThis;
       const _queueMicrotask = queueMicrotask;
-      queueMicrotask(f121519);
+      queueMicrotask(f121496);
     }
   });
   return promise;

@@ -1,9 +1,9 @@
-// Module ID: 17981
-// Function ID: 17982
+// Module ID: 17983
+// Function ID: 17984
 // Name: VoicePanelDockSlot
-// Dependencies: [19, 17, 16471, 13310, 21, 11775, 1653, 10598, 11749, 17982, 17984, 18039, 5514, 12827, 11954, 5094, 11770, 504, 2]
+// Dependencies: [19, 17, 16473, 13310, 21, 11775, 1653, 10598, 11749, 17984, 17986, 18041, 5514, 12827, 11954, 5094, 11770, 504, 2]
 
-// Module 17981 (VoicePanelDockSlot)
+// Module 17983 (VoicePanelDockSlot)
 import react_native from "react-native" /* 17 */;
 import _mod1653 from "module_1653" /* 1653 */;
 import useBaseAppContainerDimensionsDefault from "useBaseAppContainerDimensions" /* 5094 */;
@@ -11,10 +11,10 @@ import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11749 */;
 import MainTabsNavigatorPanelContextDefault from "MainTabsNavigatorPanelContext" /* 11770 */;
 import VoicePanelSheetMorph from "VoicePanelSheetMorph" /* 11775 */;
 import VoicePanelDockSlotStore from "VoicePanelDockSlotStore" /* 13310 */;
-import VoicePanelDockGlow from "VoicePanelDockGlow" /* 17982 */;
-import useVoicePanelDockMicLiveDefault from "useVoicePanelDockMicLive" /* 18039 */;
+import VoicePanelDockGlow from "VoicePanelDockGlow" /* 17984 */;
+import useVoicePanelDockMicLiveDefault from "useVoicePanelDockMicLive" /* 18041 */;
 import react from "react" /* 19 */;
-import QuestDockStore from "QuestDockStore" /* 16471 */;
+import QuestDockStore from "QuestDockStore" /* 16473 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -30,7 +30,7 @@ let tmp5;
 const _modDef1653 = tmp(1653);
 const spring_spring = tmp(5514);
 const useStateFromSharedValueDefault = tmp(10598);
-const VoicePanelDockDefault = tmp(17984);
+const VoicePanelDockDefault = tmp(17986);
 function VoicePanelDockSlotDock(micLive) {
   let dockMinimizeProgress;
   let dockTouched;

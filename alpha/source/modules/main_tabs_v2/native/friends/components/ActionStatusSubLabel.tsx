@@ -1,10 +1,10 @@
-// Module ID: 18077
-// Function ID: 18078
+// Module ID: 18079
+// Function ID: 18080
 // Name: ActionStatusSubLabel
 // Dependencies: [19, 21, 4913, 4922, 1653, 5504, 5519, 5123, 1706, 2]
 // Exports: ActionStatusSubLabel
 
-// Module 18077 (ActionStatusSubLabel)
+// Module 18079 (ActionStatusSubLabel)
 import _mod1653 from "module_1653" /* 1653 */;
 import _mod1706 from "module_1706" /* 1706 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4922 */;

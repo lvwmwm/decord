@@ -1,10 +1,10 @@
-// Module ID: 15059
-// Function ID: 15060
+// Module ID: 15061
+// Function ID: 15062
 // Name: handleSupportedURL
-// Dependencies: [109, 5, 7263, 6633, 9109, 9373, 502, 4946, 1071, 4769, 6397, 6496, 10696, 8336, 5630, 15060, 8712, 13581, 6429, 5090, 15061, 8067, 8194, 14006, 9881, 12212, 2018, 11906, 1255, 11908, 6868, 10417, 9589, 9408, 15067, 6674, 7539, 12464, 15068, 13614, 7001, 2119, 10697, 10695, 15070, 15072, 1625, 7795, 15081, 5592, 15083, 4784, 6835, 7573, 7568, 9595, 6493, 11018, 5089, 6570, 1098, 572, 7068, 1379, 7994, 15086, 15101, 1378, 5861, 15110, 8051, 12459, 15118, 6360, 15119, 8074, 9711, 15206, 8421, 6563, 9955, 13749, 6564, 9465, 15207, 6546, 10623, 15208, 9774, 9769, 12297, 12284, 5624, 2]
+// Dependencies: [109, 5, 7263, 6633, 9109, 9373, 502, 4946, 1071, 4769, 6397, 6496, 10696, 8336, 5630, 15062, 8712, 13581, 6429, 5090, 15063, 8067, 8194, 14006, 9881, 12212, 2018, 11906, 1255, 11908, 6868, 10417, 9589, 9408, 15069, 6674, 7539, 12464, 15070, 13614, 7001, 2119, 10697, 10695, 15072, 15074, 1625, 7795, 15083, 5592, 15085, 4784, 6835, 7573, 7568, 9595, 6493, 11018, 5089, 6570, 1098, 572, 7068, 1379, 7994, 15088, 15103, 1378, 5861, 15112, 8051, 12459, 15120, 6360, 15121, 8074, 9711, 15208, 8421, 6563, 9955, 13749, 6564, 9465, 15209, 6546, 10623, 15210, 9774, 9769, 12297, 12284, 5624, 2]
 // Exports: default
 
-// Module 15059 (handleSupportedURL)
+// Module 15061 (handleSupportedURL)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import KeyboardManagerUtils from "KeyboardManagerUtils" /* 2018 */;
 import asyncRequire from "asyncRequire" /* 2119 */;
@@ -37,10 +37,10 @@ import ApplicationUtils from "ApplicationUtils" /* 10695 */;
 import Constants3 from "Constants" /* 10696 */;
 import guild_templates_GuildTemplateActionCreatorsDefault from "guild_templates/GuildTemplateActionCreators" /* 12212 */;
 import BountyActionCreators from "BountyActionCreators" /* 13749 */;
-import ShareScreenConstants from "ShareScreenConstants" /* 15060 */;
-import MidjourneyOnboardingUtils from "MidjourneyOnboardingUtils" /* 15068 */;
-import GuildSettingsPickerActionCreators from "GuildSettingsPickerActionCreators" /* 15101 */;
-import AgeKeyReturnHandler from "AgeKeyReturnHandler" /* 15206 */;
+import ShareScreenConstants from "ShareScreenConstants" /* 15062 */;
+import MidjourneyOnboardingUtils from "MidjourneyOnboardingUtils" /* 15070 */;
+import GuildSettingsPickerActionCreators from "GuildSettingsPickerActionCreators" /* 15103 */;
+import AgeKeyReturnHandler from "AgeKeyReturnHandler" /* 15208 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6633 */;
@@ -432,7 +432,7 @@ export default function handleSupportedURL(payload) {
           pathname(null != remoteAuthFingerprint ? (() => {
             const obj = ModalActionCreatorsDefault;
             const obj2 = { remoteAuthFingerprint };
-            obj.pushLazy(asyncRequire(15072, dependencyMap.paths), obj2, "REMOTE_AUTH_MODAL");
+            obj.pushLazy(asyncRequire(15074, dependencyMap.paths), obj2, "REMOTE_AUTH_MODAL");
           }) : (() => {
             let paths;
             let tmp = inviteCode;

@@ -247,7 +247,7 @@ function ActivityItemTuple(arg0) {
   const items = [containerWidth];
   size = react.useMemo(() => {
     if (null == containerWidth) {
-      return { width: "disabled", height: "isArray" };
+      return { width: "Array", height: "Path" };
     } else {
       const tmp5 = roundToNearestPixelDefault(tmp / 2 - DEFAULT_CONTENT_PADDING - 6);
       size = { width: tmp5, height: roundToNearestPixelDefault(tmp5 / c22) };
@@ -284,7 +284,7 @@ function ActivityItem(context) {
   let onActivityItemSelected;
   let tmp19;
   let width;
-  const f102897 = () => {
+  const f102872 = () => {
     const items = [EmbeddedActivitiesStore.isLaunchingActivity(), ];
     let id1;
     const getLaunchState = EmbeddedActivitiesStore.getLaunchState;
@@ -325,8 +325,8 @@ function ActivityItem(context) {
   let items = [EmbeddedActivitiesStore];
   const tmp2Result = context(flag[30]);
   let isLaunching = null != tmp14;
-  const first1 = tmp5(tmp2Result.useStateFromStoresArray(items, f102897), 2)[0];
-  const tmp5Result = tmp5(tmp2Result.useStateFromStoresArray(items, f102897), 2);
+  const first1 = tmp5(tmp2Result.useStateFromStoresArray(items, f102872), 2)[0];
+  const tmp5Result = tmp5(tmp2Result.useStateFromStoresArray(items, f102872), 2);
   if (isLaunching) {
     isLaunching = tmp14.isLaunching;
   }
@@ -411,7 +411,7 @@ function RecommendationItemTuple(isLastTuple) {
   const items1 = [containerWidth, num];
   styles = react.useMemo(() => {
     if (null == containerWidth) {
-      return { width: "disabled", height: "isArray" };
+      return { width: "Array", height: "Path" };
     } else {
       const tmp6 = roundToNearestPixelDefault((tmp - 2 * DEFAULT_CONTENT_PADDING - 12 * (2 - 1)) / 2);
       size = { width: tmp6, height: roundToNearestPixelDefault(tmp6 / c22) };
@@ -933,7 +933,7 @@ export default function AppLauncherHomeScreen(route) {
   }
   items13[1] = sections1;
   let memo5 = useMemo(() => {
-    const f140868 = (commands) => Object.keys(commands.commands).length > 0;
+    const f140846 = (commands) => Object.keys(commands.commands).length > 0;
     result = result.result;
     let sections;
     if (result != null) {
@@ -951,11 +951,11 @@ export default function AppLauncherHomeScreen(route) {
       sections1 = {};
     }
     const values = Object.values(sections);
-    let someResult = values.some(f140868);
+    let someResult = values.some(f140846);
     if (!someResult) {
       const _Object = Object;
       const values2 = Object.values(sections1);
-      someResult = values2.some(f140868);
+      someResult = values2.some(f140846);
     }
     return someResult;
   }, items13);

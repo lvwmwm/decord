@@ -1,10 +1,10 @@
-// Module ID: 18829
-// Function ID: 18830
+// Module ID: 18831
+// Function ID: 18832
 // Name: useAutoSearchGuildChannelTab
 // Dependencies: [19, 13213, 13204, 13222, 12, 13197, 2]
 // Exports: useAutoSearchGuildChannelTab
 
-// Module 18829 (useAutoSearchGuildChannelTab)
+// Module 18831 (useAutoSearchGuildChannelTab)
 import _mod12 from "module_12" /* 12 */;
 import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 13197 */;
 import SearchUtils from "SearchUtils" /* 13204 */;

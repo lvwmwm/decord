@@ -1,14 +1,14 @@
-// Module ID: 19252
-// Function ID: 19253
+// Module ID: 19254
+// Function ID: 19255
 // Name: useVoicePanelCardUserStateIcons
-// Dependencies: [19, 6536, 4762, 5654, 5561, 5563, 11749, 9676, 563, 11040, 5679, 10965, 17753, 10855, 19221, 5595, 1112, 7225, 575, 2]
+// Dependencies: [19, 6536, 4762, 5654, 5561, 5563, 11749, 9676, 563, 11040, 5679, 10965, 17755, 10855, 19223, 5595, 1112, 7225, 575, 2]
 // Exports: default
 
-// Module 19252 (useVoicePanelCardUserStateIcons)
+// Module 19254 (useVoicePanelCardUserStateIcons)
 import CallConstants from "CallConstants" /* 5563 */;
 import VoiceStateIconUtils from "VoiceStateIconUtils" /* 9676 */;
 import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11749 */;
-import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 19221 */;
+import VoicePanelFloatingCTAUtils from "VoicePanelFloatingCTAUtils" /* 19223 */;
 import react from "react" /* 19 */;
 import StageChannelRoleStore from "StageChannelRoleStore" /* 6536 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
@@ -97,7 +97,7 @@ export default function useVoicePanelCardUserStateIcons(arg0, id, guildId) {
   if (showTileVolumeIndicator) {
     showTileVolumeIndicator = arg0 === tmp6.STREAM;
   }
-  const tmp4Result9 = tmp4(17753);
+  const tmp4Result9 = tmp4(17755);
   isRTCDisconnectedUIVisible = tmp4Result9.useIsRTCDisconnectedUIVisible(tmp, id);
   const items3 = [videoIconState];
   const items4 = [tmp];

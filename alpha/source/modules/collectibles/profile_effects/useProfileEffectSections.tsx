@@ -1,10 +1,10 @@
-// Module ID: 15891
-// Function ID: 15892
+// Module ID: 15893
+// Function ID: 15894
 // Name: useProfileEffectSections
 // Dependencies: [32, 19, 8075, 8090, 563, 8087, 1112, 14254, 2]
 // Exports: default
 
-// Module 15891 (useProfileEffectSections)
+// Module 15893 (useProfileEffectSections)
 import react from "react" /* 19 */;
 import intl4 from "intl" /* 1112 */;
 import CollectiblesUtils from "CollectiblesUtils" /* 8087 */;

@@ -1,10 +1,10 @@
-// Module ID: 14769
-// Function ID: 14770
+// Module ID: 14771
+// Function ID: 14772
 // Name: GuildBoostingMarketingPersistentCta
 // Dependencies: [19, 17, 4914, 1071, 21, 4913, 575, 563, 1653, 5514, 5468, 7322, 5504, 13478, 2]
 // Exports: default
 
-// Module 14769 (GuildBoostingMarketingPersistentCta)
+// Module 14771 (GuildBoostingMarketingPersistentCta)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 575 */;

@@ -1,10 +1,10 @@
-// Module ID: 18584
-// Function ID: 18585
+// Module ID: 18586
+// Function ID: 18587
 // Name: ConjurePlanCommandMenuPreview
 // Dependencies: [19, 17, 21, 4913, 575, 12169, 5504, 1112, 5600, 1412, 2]
 // Exports: default
 
-// Module 18584 (ConjurePlanCommandMenuPreview)
+// Module 18586 (ConjurePlanCommandMenuPreview)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;

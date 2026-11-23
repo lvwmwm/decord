@@ -1,10 +1,10 @@
-// Module ID: 17473
-// Function ID: 17474
+// Module ID: 17475
+// Function ID: 17476
 // Name: usePasswordScore
-// Dependencies: [5, 32, 19, 12, 17460, 2]
+// Dependencies: [5, 32, 19, 12, 17462, 2]
 // Exports: usePasswordScore
 
-// Module 17473 (usePasswordScore)
+// Module 17475 (usePasswordScore)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

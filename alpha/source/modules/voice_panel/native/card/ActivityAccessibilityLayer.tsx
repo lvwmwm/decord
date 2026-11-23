@@ -1,10 +1,10 @@
-// Module ID: 19286
-// Function ID: 19287
+// Module ID: 19288
+// Function ID: 19289
 // Name: ActivityAccessibilityLayer
 // Dependencies: [32, 19, 17, 11750, 21, 4913, 5923, 1112, 5920, 5143, 2]
 // Exports: default
 
-// Module 19286 (ActivityAccessibilityLayer)
+// Module 19288 (ActivityAccessibilityLayer)
 import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5143 */;
 import react_native from "react-native" /* 5923 */;
 import VoicePanelConstants from "VoicePanelConstants" /* 11750 */;

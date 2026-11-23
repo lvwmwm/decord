@@ -58,7 +58,7 @@ function VideoDisabledSvgIcon(size) {
 const StyleSheet = react_native.StyleSheet;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { redTint: obj2, defaultTint: obj3, noTint: { tintColor: "Array" } };
+let obj = { redTint: obj2, defaultTint: obj3, noTint: { tintColor: "r" } };
 obj2 = { tintColor: nativeDefault.colors.ICON_FEEDBACK_CRITICAL };
 createStyles = createStyles.createStyles;
 obj3 = { tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };

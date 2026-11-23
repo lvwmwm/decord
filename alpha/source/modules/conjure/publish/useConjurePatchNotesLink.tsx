@@ -1,10 +1,10 @@
-// Module ID: 18495
-// Function ID: 18496
+// Module ID: 18497
+// Function ID: 18498
 // Name: useConjurePatchNotesLink
 // Dependencies: [19, 6621, 6980, 1071, 12305, 504, 1098, 2]
 // Exports: conjurePatchNotesEditorProps, default, openConjureSentPatchNotes
 
-// Module 18495 (useConjurePatchNotesLink)
+// Module 18497 (useConjurePatchNotesLink)
 import Constants from "Constants" /* 1071 */;
 import router_utils from "router_utils" /* 1098 */;
 import ConjureProjectStore2 from "ConjureProjectStore" /* 6621 */;

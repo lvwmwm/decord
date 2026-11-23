@@ -23,12 +23,12 @@ let ChannelTypes;
 let c3;
 let c9;
 let closure_4;
-const f89750 = (guildId) => {
+const f89724 = (guildId) => {
   const obj = ConjureGuildExperiment;
   const obj2 = { guildId: guildId.id, location: _location };
   return obj.isConjureGuildEnabled(obj2);
 };
-const f89751 = (id, id2) => {
+const f89725 = (id, id2) => {
   let num = -1;
   if (id.id >= id2.id) {
     let num2 = 0;
@@ -136,8 +136,8 @@ export function isConjureGuildEligible(guildId, ConjureRemixSheet) {
 }
 export function eligibleConjureGuilds(arr, arg1) {
   let closure_0 = arg1;
-  const found = arr.filter(f89750);
-  return found.sort(f89751);
+  const found = arr.filter(f89724);
+  return found.sort(f89725);
 }
 export function hasEligibleConjureGuild(guildsArray, useConjureServerWidgetOffers) {
   const _location = useConjureServerWidgetOffers;
@@ -165,9 +165,9 @@ export function resolveConjureWorkspaceGuildId(ConjureChatStore) {
   }
   const guildsArray = GuildStore.getGuildsArray();
   _require = ConjureChatStore;
-  const found = guildsArray.filter(f89750);
+  const found = guildsArray.filter(f89724);
   id = undefined;
-  const first = found.sort(f89751)[0];
+  const first = found.sort(f89725)[0];
   if (first != null) {
     id = first.id;
   }

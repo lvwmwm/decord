@@ -1,10 +1,10 @@
-// Module ID: 19378
-// Function ID: 19379
+// Module ID: 19380
+// Function ID: 19381
 // Name: ChannelCallUtils
-// Dependencies: [19, 6396, 1071, 21, 1112, 19379, 8194, 5127, 5649, 5861, 19376, 2119, 19380, 6401, 19381, 8051, 12059, 11007, 14842, 7, 5595, 9718, 2]
+// Dependencies: [19, 6396, 1071, 21, 1112, 19381, 8194, 5127, 5649, 5861, 19378, 2119, 19382, 6401, 19383, 8051, 12059, 11007, 14844, 7, 5595, 9718, 2]
 // Exports: invite, openHideSelfStreamAndVideoConfirmDialog, reportStreamIssue, rtcDebugPanel, selfVideoHidden, shareActivityLogs, videoParticipantsHidden, voiceSettings
 
-// Module 19378 (ChannelCallUtils)
+// Module 19380 (ChannelCallUtils)
 import Fragment from "Fragment" /* 21 */;
 import intl2 from "intl" /* 1112 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
@@ -15,9 +15,9 @@ import StreamKeyUtils from "StreamKeyUtils" /* 6401 */;
 import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8051 */;
 import AssetRegistryDefault from "AssetRegistry" /* 11007 */;
 import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 12059 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 14842 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 19379 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 19380 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 14844 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 19381 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 19382 */;
 import react from "react" /* 19 */;
 import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 6396 */;
 import Constants from "Constants" /* 1071 */;
@@ -77,7 +77,7 @@ export function openHideSelfStreamAndVideoConfirmDialog(arg0, arg1) {
     importer() {
       let onConfirm;
       let type;
-      const promise = asyncRequire(19376, dependencyMap.paths);
+      const promise = asyncRequire(19378, dependencyMap.paths);
       return promise.then((result) => {
         closure_0 = result.default;
         return (arg0) => {
@@ -121,7 +121,7 @@ export function reportStreamIssue(stream) {
       const merged = Object.assign(videoStats);
       const openLazy = ActionSheetActionCreatorsDefault.openLazy;
       ActionSheetActionCreatorsDefault;
-      const tmp7 = asyncRequire(19381, tmp2.paths);
+      const tmp7 = asyncRequire(19383, tmp2.paths);
       openLazy(tmp7, "StreamReportProblem" + stream.ownerId, { stream, analyticsData: obj3 });
     }
   };

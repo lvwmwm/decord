@@ -1,10 +1,10 @@
-// Module ID: 15900
-// Function ID: 15901
+// Module ID: 15902
+// Function ID: 15903
 // Name: useNameplateSections
 // Dependencies: [32, 19, 8075, 8090, 563, 8087, 1112, 14254, 2]
 // Exports: default
 
-// Module 15900 (useNameplateSections)
+// Module 15902 (useNameplateSections)
 import react from "react" /* 19 */;
 import intl4 from "intl" /* 1112 */;
 import CollectiblesUtils from "CollectiblesUtils" /* 8087 */;

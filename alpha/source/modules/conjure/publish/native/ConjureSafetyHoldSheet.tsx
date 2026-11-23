@@ -1,15 +1,15 @@
-// Module ID: 18247
-// Function ID: 18248
+// Module ID: 18249
+// Function ID: 18250
 // Name: ConjureSafetyHoldSheet
-// Dependencies: [19, 17, 21, 4913, 575, 18248, 7553, 7515, 5504, 5511, 1112, 4190, 12307, 5127, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 18250, 7553, 7515, 5504, 5511, 1112, 4190, 12307, 5127, 2]
 // Exports: default
 
-// Module 18247 (ConjureSafetyHoldSheet)
+// Module 18249 (ConjureSafetyHoldSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5127 */;
 import conjurePublishConnection from "conjurePublishConnection" /* 12307 */;
-import useConjureSafetyRecheckDefault from "useConjureSafetyRecheck" /* 18248 */;
+import useConjureSafetyRecheckDefault from "useConjureSafetyRecheck" /* 18250 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4913 */;
@@ -35,9 +35,9 @@ function ConjureSafetyHoldSheet(projectId) {
   projectId = projectId.projectId;
   const tmp = closure_8();
   const tmp4 = useConjureSafetyRecheckDefault(projectId);
-  let obj = projectId(18248);
+  let obj = projectId(18250);
   const conjureSafetyRecheckNotice = obj.getConjureSafetyRecheckNotice(tmp4);
-  const obj2 = projectId(18248);
+  const obj2 = projectId(18250);
   const conjureSafetyHoldCopy = obj2.getConjureSafetyHoldCopy(tmp4);
   let status;
   if (tmp4 != null) {

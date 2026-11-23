@@ -1,11 +1,11 @@
-// Module ID: 18250
-// Function ID: 18251
+// Module ID: 18252
+// Function ID: 18253
 // Name: useConjurePublishButton
-// Dependencies: [19, 1112, 4190, 12305, 2]
+// Dependencies: [19, 12305, 1112, 4190, 2]
 // Exports: default
 
-// Module 18250 (useConjurePublishButton)
-import intl3 from "intl" /* 1112 */;
+// Module 18252 (useConjurePublishButton)
+import intl4 from "intl" /* 1112 */;
 import useConjurePublishActionDefault from "useConjurePublishAction" /* 12305 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -13,55 +13,57 @@ import size from "module_2" /* 2 */;
 const result = size.fileFinishedImporting("modules/conjure/publish/useConjurePublishButton.tsx");
 
 export default function useConjurePublishButton(arg0, arg1, arg2, arg3) {
-  let label;
-  let publishing;
-  let str2;
-  let tmp10;
-  let tmp13;
+  let str3;
+  let str4;
+  let stringResult;
+  let stringResult1;
+  let tmp11;
   let closure_0 = arg1;
   let closure_1 = arg2;
   let closure_2 = arg3;
   const items = [arg1, arg3, arg2];
   const memo = react.useMemo(() => ({ guildId, platform, busy }), items);
   const tmp4 = useConjurePublishActionDefault(arg0, memo);
-  const obj = { publishOptions: memo, publish: tmp4, publishing: true === publishing, variant: str2, text: label, indicator: tmp10, pendingChanges: tmp13 };
-  publishing = undefined;
+  let str;
   if (tmp4 != null) {
-    publishing = tmp4.publishing;
+    str = tmp4.state;
   }
-  str2 = "primary";
-  const tmp6 = null != tmp4 && tmp4.upToDate && "publish" === tmp4.action && !tmp4.awaitingApproval;
-  if (tmp6) {
-    str2 = "secondary";
+  if (str == null) {
+    str = "hidden";
   }
-  if (null == tmp4) {
-    const intl2 = intl3.intl;
-    label = intl2.string(tmp2(4190)["120EFN"]);
+  const obj = { publishOptions: memo, publish: tmp4, state: str, variant: str3, text: stringResult, indicator: str4, hint: stringResult1, pendingChanges: tmp11 };
+  str3 = "primary";
+  if ("up_to_date" === str || "auto_synced" === str) {
+    str3 = "secondary";
+  }
+  if ("up_to_date" === str || "auto_synced" === str) {
+    const intl2 = intl4.intl;
+    stringResult = intl2.string(tmp2(4190).kAfbEN);
   } else {
-    const tmp7 = null != tmp4 && tmp4.upToDate && "publish" === tmp4.action && !tmp4.awaitingApproval;
-    if (tmp7) {
-      if (!tmp4.publishing) {
-        const intl = intl3.intl;
-        label = intl.string(tmp2(4190).kAfbEN);
-      }
+    stringResult = undefined;
+    if (tmp4 != null) {
+      stringResult = tmp4.label;
     }
-    label = tmp4.label;
-  }
-  tmp10 = null;
-  if (null != tmp4) {
-    let str4 = "publishing";
-    if (!tmp4.publishing) {
-      let tmp12 = "unpublished";
-      const tmp11 = null != tmp4 && tmp4.upToDate && "publish" === tmp4.action && !tmp4.awaitingApproval;
-      if (tmp11) {
-        tmp12 = null;
-      }
-      str4 = tmp12;
+    if (stringResult == null) {
+      const intl = intl4.intl;
+      stringResult = intl.string(tmp2(4190)["120EFN"]);
     }
-    tmp10 = str4;
   }
-  tmp13 = null != tmp4;
-  if (tmp13) {
+  str4 = "publishing";
+  if ("publishing" !== str) {
+    let str6 = null;
+    if ("action_needed" === str) {
+      str6 = "unpublished";
+    }
+    str4 = str6;
+  }
+  stringResult1 = null;
+  if ("auto_synced" === str) {
+    const intl3 = intl4.intl;
+    stringResult1 = intl3.string(tmp2(4190).W4LzCY);
+  }
+  tmp11 = null != tmp4;
+  if (tmp11) {
     let isUpdate = tmp4.isUpdate;
     if (!isUpdate) {
       const status = tmp4.status;
@@ -71,7 +73,7 @@ export default function useConjurePublishButton(arg0, arg1, arg2, arg3) {
       }
       isUpdate = "not_live" === publishState;
     }
-    tmp13 = isUpdate;
+    tmp11 = isUpdate;
   }
   return obj;
 };

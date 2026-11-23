@@ -62,7 +62,7 @@ function NameplateUser(arg0) {
   }
   const items1 = [currentUser, tmp5Result, stateFromStores];
   const icon = react.useMemo(() => {
-    const obj = { user: currentUser, guildId: "a", size: native.AvatarSizes.NORMAL, avatarDecoration, animate: !stateFromStores, autoStatusCutout: 0.023, "aria-hidden": 11.5 };
+    const obj = { user: currentUser, guildId: "a", size: native.AvatarSizes.NORMAL, avatarDecoration, animate: !stateFromStores, autoStatusCutout: null, "aria-hidden": "\u{1F69B}" };
     const Avatar = native.Avatar;
     return metroRequire(Avatar, obj);
   }, items1);

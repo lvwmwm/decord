@@ -1,9 +1,9 @@
-// Module ID: 17246
-// Function ID: 17247
+// Module ID: 17248
+// Function ID: 17249
 // Name: DesignSystemsNavigatorSetting
-// Dependencies: [8712, 1071, 11937, 17247, 2]
+// Dependencies: [8712, 1071, 11937, 17249, 2]
 
-// Module 17246 (DesignSystemsNavigatorSetting)
+// Module 17248 (DesignSystemsNavigatorSetting)
 import Constants from "Constants" /* 1071 */;
 import SettingsConstants from "SettingsConstants" /* 8712 */;
 import SettingBuilders from "SettingBuilders" /* 11937 */;

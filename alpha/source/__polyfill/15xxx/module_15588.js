@@ -1,18 +1,10 @@
 // Module ID: 15588
 // Function ID: 15589
-// Dependencies: [15561]
+// Dependencies: []
 
 // Module 15588
-import _mod15561 from "module_15561" /* 15561 */;
+const tmp = Math.trunc || (function trunc(arg0) {
+  return 0 < +arg0 ? floor : ceil(+arg0);
+});
 
-
-export default function(arg0) {
-  if (_mod15561(arg0)) {
-    return arg0;
-  } else {
-    const self = this;
-    const self2 = this;
-    const tmp3 = new TypeError(String(arg0) + " is not an object");
-    throw tmp3;
-  }
-};
+export default tmp;

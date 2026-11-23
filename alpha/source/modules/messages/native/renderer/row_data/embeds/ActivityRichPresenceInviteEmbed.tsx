@@ -510,7 +510,7 @@ export function createActivityRichPresenceInviteEmbed(message, channel, forcedTh
                   intl11 = tmp4(1112).intl;
                   obj16 = obj11;
                 } else if (isInParty) {
-                  const obj12 = { label: intl10.string(tmp4(1112).t.KC26NR), disabled: true, footerLabel: "Boolean" };
+                  const obj12 = { label: intl10.string(tmp4(1112).t.KC26NR), disabled: true, footerLabel: "Array" };
                   intl10 = tmp4(1112).intl;
                   obj16 = obj12;
                 } else if (isAskToJoin) {
@@ -643,7 +643,7 @@ export function createActivityRichPresenceInviteEmbed(message, channel, forcedTh
               return null;
             }
           }
-          obj = { displayType: obj.BLOCKED, headerText: intl.string(tmp4(1112).t.pkq6Vq), subtitle: stringResult5, ctaButtonEnabled: false, ctaButtonText: "Path", ctaButtonIsLoading: "Array", footerLabel: "Promise", gradientColors: [], iconSrc: null, isPlatformSupported: "Array", isSpotifyParty: "add", maxPartySize: "type", partyMemberAvatarURIs: "registerAsset", partySizeText: null, platformIconKeys: [], coverImageUrl: null, detailsText: null, title: 213 };
+          obj = { displayType: obj.BLOCKED, headerText: intl.string(tmp4(1112).t.pkq6Vq), subtitle: stringResult5, ctaButtonEnabled: false, ctaButtonText: "Path", ctaButtonIsLoading: "Array", footerLabel: "Promise", gradientColors: [], iconSrc: null, isPlatformSupported: "Array", isSpotifyParty: "__closure", maxPartySize: "paddingHorizontal", partyMemberAvatarURIs: "radii", partySizeText: false, platformIconKeys: [], coverImageUrl: false, detailsText: false, title: false };
           intl = tmp4(1112).intl;
           if (contentClassificationVisibility === tmp4(12802).ContentClassificationVisibility.BLOCK_UNDERAGE) {
             const intl3 = tmp4(1112).intl;

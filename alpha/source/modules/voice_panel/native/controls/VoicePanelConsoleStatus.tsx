@@ -1,10 +1,10 @@
-// Module ID: 19341
-// Function ID: 19342
+// Module ID: 19343
+// Function ID: 19344
 // Name: VoicePanelConsoleStatus
-// Dependencies: [19, 11750, 11753, 11748, 21, 4913, 575, 11749, 19335, 1653, 4974, 19342, 19340, 5514, 1706, 7324, 1186, 5504, 7030, 11018, 1112, 19343, 2]
+// Dependencies: [19, 11750, 11753, 11748, 21, 4913, 575, 11749, 19337, 1653, 4974, 19344, 19342, 5514, 1706, 7324, 1186, 5504, 7030, 11018, 1112, 19345, 2]
 // Exports: renderVoicePanelConsoleStatus
 
-// Module 19341 (VoicePanelConsoleStatus)
+// Module 19343 (VoicePanelConsoleStatus)
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 4974 */;
 import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11748 */;
@@ -68,7 +68,7 @@ class VoicePanelConsoleStatus {
     let tmp2 = sharedValue;
     const context = react.useContext(sharedValue(11749));
     ({ windowDimensions, mode, channelId } = context);
-    const tmp5 = sharedValue(19335)(channelId);
+    const tmp5 = sharedValue(19337)(channelId);
     const tmp6 = state;
     ({ icon, text, color, displayCancel } = tmp5);
     let obj = state(1653);
@@ -77,9 +77,9 @@ class VoicePanelConsoleStatus {
     const effect = react.useEffect(() => {
       const result = sharedValue.set(state !== native.TransitionStates.YEETED);
     }, items);
-    const tmp9 = sharedValue(19342)(mode, wrapperSpecs, accessoryHeights);
-    ({ hiddenProps, hiddenStyles } = sharedValue(19340)(mode, wrapperSpecs));
-    sharedValue(19340)(mode, wrapperSpecs);
+    const tmp9 = sharedValue(19344)(mode, wrapperSpecs, accessoryHeights);
+    ({ hiddenProps, hiddenStyles } = sharedValue(19342)(mode, wrapperSpecs));
+    sharedValue(19342)(mode, wrapperSpecs);
     let items1 = [closure_11, color, windowDimensions, EDGE_GUTTER, CONTROLS_HEIGHT, 36, , , , , , ];
     const useAnimatedStyle = state(1653).useAnimatedStyle;
     state(1653);
@@ -188,7 +188,7 @@ class VoicePanelConsoleStatus {
     }
     items6[2] = tmp31Result;
     items7 = [closure_6(tmp2Result, obj3), ];
-    const obj10 = { style: items8, children: closure_6(tmp6(19343).VoicePanelVisualEffectView, {}) };
+    const obj10 = { style: items8, children: closure_6(tmp6(19345).VoicePanelVisualEffectView, {}) };
     items8 = [tmp.blockingControlCover, animatedStyle1];
     const View3 = tmp2(1653).View;
     items7[1] = closure_6(View3, obj10);

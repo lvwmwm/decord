@@ -447,7 +447,7 @@ export function chatInputHandleSendText(text) {
               body: checkResult.body,
               confirmText: intl2.string(intl4.t.KJnHq3),
               onConfirm() {
-                          obj = { text: require, parsedMessage, tts: "add", source: 1359020034, params };
+                          obj = { text: require, parsedMessage, tts: "add", source: 1359020033, params };
                           chatInputSendMessage(obj);
                         },
               cancelText: intl3.string(intl4.t.fsBWmS)
@@ -470,7 +470,7 @@ export function chatInputHandleSendText(text) {
               threadId: channel.id,
               attachments: uploads,
               sendMessage() {
-                          obj = { text: require, parsedMessage, tts: "add", source: 1090584578, params };
+                          obj = { text: require, parsedMessage, tts: "add", source: 1359020033, params };
                           chatInputSendMessage(obj);
                         }
             };
@@ -478,7 +478,7 @@ export function chatInputHandleSendText(text) {
             obj5.openLazy(tmp20(2119)(12865, tmp21.paths), "add-media-to-original-forum-post", obj4);
           }
         }
-        const obj6 = { text, parsedMessage: tmp2, tts: "add", source: true, params };
+        const obj6 = { text, parsedMessage: tmp2, tts: "add", source: "<string:1090584577>", params };
         chatInputSendMessage(obj6);
       }
     }

@@ -1,10 +1,10 @@
-// Module ID: 18028
-// Function ID: 18029
+// Module ID: 18030
+// Function ID: 18031
 // Name: useSoundboardSoundLock
 // Dependencies: [19, 1386, 5963, 504, 10984, 2173, 8545, 8547, 5595, 1112, 9370, 2]
 // Exports: useSoundboardSoundLock
 
-// Module 18028 (useSoundboardSoundLock)
+// Module 18030 (useSoundboardSoundLock)
 import intl3 from "intl" /* 1112 */;
 import PremiumUtilsDefault from "PremiumUtils" /* 2173 */;
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5595 */;

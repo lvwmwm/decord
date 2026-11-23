@@ -99,7 +99,7 @@ function canonicalKey(obj, has) {
   }
 }
 function containsRef(contains) {
-  const f97488 = (item) => {
+  const f97463 = (item) => {
     let someResult1;
     let tmp;
     [tmp, obj] = item;
@@ -118,7 +118,7 @@ function containsRef(contains) {
           if (!someResult) {
             const _Object2 = Object;
             const entries = Object.entries(obj);
-            someResult = entries.some(f97488);
+            someResult = entries.some(f97463);
           }
         }
         tmp9 = someResult;
@@ -157,7 +157,7 @@ function containsRef(contains) {
       if (!someResult) {
         let _Object = Object;
         let entries = Object.entries(contains);
-        someResult = entries.some(f97488);
+        someResult = entries.some(f97463);
       }
     }
     tmp = someResult;

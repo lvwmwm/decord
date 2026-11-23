@@ -1,17 +1,17 @@
-// Module ID: 17608
-// Function ID: 17609
+// Module ID: 17610
+// Function ID: 17611
 // Name: HappeningNowCardVoice
-// Dependencies: [19, 17, 8143, 1386, 5561, 16699, 1071, 21, 4913, 1255, 12206, 2119, 17591, 16700, 7034, 14496, 17601, 8873, 504, 12, 1254, 5943, 1112, 2]
+// Dependencies: [19, 17, 8143, 1386, 5561, 16701, 1071, 21, 4913, 1255, 12206, 2119, 17593, 16702, 7034, 14496, 17603, 8873, 504, 12, 1254, 5943, 1112, 2]
 // Exports: useVoiceChannelUsers
 
-// Module 17608 (HappeningNowCardVoice)
+// Module 17610 (HappeningNowCardVoice)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1071 */;
 import intl3 from "intl" /* 1112 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import asyncRequire from "asyncRequire" /* 2119 */;
 import NicknameUtilsDefault from "NicknameUtils" /* 5943 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 16699 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 16701 */;
 import react from "react" /* 19 */;
 import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 8143 */;
 import UserStore from "UserStore" /* 1386 */;

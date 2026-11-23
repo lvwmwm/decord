@@ -1,10 +1,10 @@
-// Module ID: 19567
-// Function ID: 19568
+// Module ID: 19569
+// Function ID: 19570
 // Name: resolveUserProfileCodedLink
-// Dependencies: [5, 4762, 12232, 19568, 19560, 8073, 2]
+// Dependencies: [5, 4762, 12232, 19570, 19562, 8073, 2]
 // Exports: default
 
-// Module 19567 (resolveUserProfileCodedLink)
+// Module 19569 (resolveUserProfileCodedLink)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
 import size from "module_2" /* 2 */;
@@ -48,7 +48,7 @@ export default function resolveUserProfileCodedLink(arg0, arg1) {
       tmp10 = guild_id;
     }
     guild_id = tmp10;
-    const tmp6Result = tmp6(19560);
+    const tmp6Result = tmp6(19562);
     const result = tmp6Result.queueMessageLinkFetch(_asyncToGenerator(async (arg0, value) => {
       let v1;
       if (c0 === 2) {

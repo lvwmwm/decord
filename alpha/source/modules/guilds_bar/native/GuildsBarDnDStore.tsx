@@ -1,10 +1,10 @@
-// Module ID: 17863
-// Function ID: 17864
+// Module ID: 17865
+// Function ID: 17866
 // Name: GuildsBarDnDStore
 // Dependencies: [6550, 1257, 1653, 1262, 1241, 4828, 2]
 // Exports: useFolderBGHeightOffset, useItemDragState
 
-// Module 17863 (GuildsBarDnDStore)
+// Module 17865 (GuildsBarDnDStore)
 import SentryUtilsDefault from "SentryUtils" /* 1241 */;
 import react_native from "react-native" /* 1262 */;
 import _slicedToArray from "_slicedToArray" /* 4828 */;
@@ -30,7 +30,7 @@ const withEqualityFn = module_1257.createWithEqualityFn((arg0, arg1) => {
   let closure_1 = arg1;
   obj = {
     dragSpecs: "Boolean",
-    overSpecs: "description",
+    overSpecs: "disabled",
     dropSpecs: "isArray",
     dragRegion: obj2.makeMutable({ min: 0, max: 0 }),
     gestureState: obj3.makeMutable(obj),
@@ -77,7 +77,7 @@ const withEqualityFn = module_1257.createWithEqualityFn((arg0, arg1) => {
       } else {
         const obj4 = dropSpecs(tmp2[3]);
         obj4.batchUpdates(() => {
-          const obj = { dropSpecs, dragSpecs: "Array", overSpecs: "isArray" };
+          const obj = { dropSpecs, dragSpecs: "Array", overSpecs: "add" };
           return dropSpecs(obj);
         });
         const _clearTimeout = clearTimeout;
@@ -108,7 +108,7 @@ const withEqualityFn = module_1257.createWithEqualityFn((arg0, arg1) => {
       obj.addBreadcrumb(obj2);
       if (null != dropSpecs) {
         const obj4 = react_native;
-        obj4.batchUpdates(() => closure_1_0({ dropSpecs: "Array" }));
+        obj4.batchUpdates(() => closure_1_0({ dropSpecs: "r" }));
         const _clearTimeout = clearTimeout;
         clearTimeout(c5);
         if (null == dragSpecs) {
@@ -149,7 +149,7 @@ export function useItemDragState(guildId, flag) {
     ({ dragSpecs, overSpecs, dropSpecs, dragDropInProgress } = arg0);
     if (null == dragSpecs) {
       if (null == dropSpecs) {
-        return { isDragTarget: false, dragState: "description", overState: "isArray", itemSize: null, dragDropInProgress };
+        return { isDragTarget: false, dragState: "disabled", overState: "isArray", itemSize: null, dragDropInProgress };
       }
     }
     let tmp2 = !closure_1;

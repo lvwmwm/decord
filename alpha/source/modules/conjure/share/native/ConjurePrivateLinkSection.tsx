@@ -1,10 +1,10 @@
-// Module ID: 18347
-// Function ID: 18348
+// Module ID: 18349
+// Function ID: 18350
 // Name: ConjurePrivateLinkSection
-// Dependencies: [5, 32, 19, 17, 21, 4913, 575, 18348, 18349, 18350, 6933, 5595, 1112, 4190, 14366, 5127, 18351, 2119, 5862, 5866, 7545, 5594, 9718, 7348, 7045, 7057, 5622, 18352, 5609, 10137, 5504, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4913, 575, 18350, 18351, 18352, 6933, 5595, 1112, 4190, 14366, 5127, 18353, 2119, 5862, 5866, 7545, 5594, 9718, 7348, 7045, 7057, 5622, 18354, 5609, 10137, 5504, 2]
 // Exports: default
 
-// Module 18347 (ConjurePrivateLinkSection)
+// Module 18349 (ConjurePrivateLinkSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl9 from "intl" /* 1112 */;
@@ -16,7 +16,7 @@ import useAlertStore from "useAlertStore" /* 5862 */;
 import AlertModal2 from "AlertModal" /* 5866 */;
 import ClipboardUtils from "ClipboardUtils" /* 7545 */;
 import showShareActionSheet from "showShareActionSheet" /* 9718 */;
-import conjureShareLinkMaxAges from "conjureShareLinkMaxAges" /* 18348 */;
+import conjureShareLinkMaxAges from "conjureShareLinkMaxAges" /* 18350 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -89,7 +89,7 @@ export default function ConjurePrivateLinkSection(project) {
   let tmp2 = project;
   const tmp3 = dependencyMap;
   const tmp = closure_10();
-  [value, dependencyMap] = react.useState(project(18348).CONJURE_SHARE_LINK_DEFAULT_MAX_AGE);
+  [value, dependencyMap] = react.useState(project(18350).CONJURE_SHARE_LINK_DEFAULT_MAX_AGE);
   [first1, _slicedToArray] = react.useState(null);
   let tmp8 = _slicedToArray(react.useState(false), 2);
   [tmp9, c5] = tmp8;
@@ -266,7 +266,7 @@ export default function ConjurePrivateLinkSection(project) {
         return closure_1_2(arg0);
       }
     };
-    const tmp2 = asyncRequire(18351, dependencyMap.paths);
+    const tmp2 = asyncRequire(18353, dependencyMap.paths);
     intl = intl9.intl;
     prop = conjureShareLinkMaxAges.CONJURE_SHARE_LINK_MAX_AGES;
     openLazy(tmp2, "ConjurePrivateLinkMaxAge", obj, "stack");
@@ -323,11 +323,11 @@ export default function ConjurePrivateLinkSection(project) {
   intl3 = project(1112).intl;
   obj4 = { text: obj5.conjureShareLinkMaxAgeLabel(value) };
   TrailingText = project(7045).TableRow.TrailingText;
-  obj5 = project(18348);
+  obj5 = project(18350);
   items6 = [tmp21(TableRow, obj2), , , ];
   let obj6 = { icon: tmp21(TableRowIcon2, obj7), label: intl4.string(tmp20(4190).wELODD), disabled: tmp9 || flag, onPress: callback };
   const TableRow2 = tmp2(7045).TableRow;
-  obj7 = { IconComponent: tmp2(18352).LinkPlusIcon };
+  obj7 = { IconComponent: tmp2(18354).LinkPlusIcon };
   TableRowIcon2 = tmp2(7057).TableRowIcon;
   intl4 = tmp2(1112).intl;
   items6[1] = callback1(TableRow2, obj6);

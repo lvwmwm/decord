@@ -1,10 +1,10 @@
-// Module ID: 18923
-// Function ID: 18924
+// Module ID: 18925
+// Function ID: 18926
 // Name: ChannelSettingsOverview
-// Dependencies: [5, 19, 17, 4847, 4766, 4780, 11252, 4762, 4843, 4784, 4845, 6619, 18924, 4855, 1386, 18925, 1071, 4769, 8506, 1111, 1082, 21, 4913, 575, 504, 11671, 18926, 1112, 4974, 12, 18927, 5650, 7095, 8561, 11251, 5595, 7749, 7750, 4859, 1404, 4920, 7736, 5861, 5504, 7994, 5529, 5932, 6865, 12389, 18928, 6349, 5090, 18930, 7221, 7461, 1378, 7348, 7556, 6419, 14501, 18931, 10452, 4852, 7751, 18932, 18933, 7347, 7349, 4771, 4773, 2187, 5948, 7045, 6893, 7776, 11239, 11669, 5609, 4772, 18939, 14835, 13847, 18940, 11056, 8459, 5622, 10273, 7695, 13866, 5607, 5620, 5929, 11664, 7591, 9578, 7030, 17671, 7709, 1500, 2]
+// Dependencies: [5, 19, 17, 4847, 4766, 4780, 11252, 4762, 4843, 4784, 4845, 6619, 18926, 4855, 1386, 18927, 1071, 4769, 8506, 1111, 1082, 21, 4913, 575, 504, 11671, 18928, 1112, 4974, 12, 18929, 5650, 7095, 8561, 11251, 5595, 7749, 7750, 4859, 1404, 4920, 7736, 5861, 5504, 7994, 5529, 5932, 6865, 12389, 18930, 6349, 5090, 18932, 7221, 7461, 1378, 7348, 7556, 6419, 14501, 18933, 10452, 4852, 7751, 18934, 18935, 7347, 7349, 4771, 4773, 2187, 5948, 7045, 6893, 7776, 11239, 11669, 5609, 4772, 18941, 14837, 13847, 18942, 11056, 8459, 5622, 10273, 7695, 13866, 5607, 5620, 5929, 11664, 7591, 9578, 7030, 17673, 7709, 1500, 2]
 // Exports: default
 
-// Module 18923 (ChannelSettingsOverview)
+// Module 18925 (ChannelSettingsOverview)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
@@ -50,12 +50,12 @@ import AvailableForumTagDefault from "AvailableForumTag" /* 11664 */;
 import threadActionSheets from "threadActionSheets" /* 11669 */;
 import ChannelActionSheetUtils from "ChannelActionSheetUtils" /* 13866 */;
 import TableSliderRow2 from "TableSliderRow" /* 14501 */;
-import ChannelSettingsConstants from "ChannelSettingsConstants" /* 18925 */;
-import SecondsSliderUtils from "SecondsSliderUtils" /* 18926 */;
-import RegionActionCreatorsDefault from "RegionActionCreators" /* 18927 */;
-import ChannelSettingsUtils from "ChannelSettingsUtils" /* 18930 */;
-import ThreadAutoArchiveBottomSheet from "ThreadAutoArchiveBottomSheet" /* 18931 */;
-import VoiceChannelAppSettingDefault from "VoiceChannelAppSetting" /* 18933 */;
+import ChannelSettingsConstants from "ChannelSettingsConstants" /* 18927 */;
+import SecondsSliderUtils from "SecondsSliderUtils" /* 18928 */;
+import RegionActionCreatorsDefault from "RegionActionCreators" /* 18929 */;
+import ChannelSettingsUtils from "ChannelSettingsUtils" /* 18932 */;
+import ThreadAutoArchiveBottomSheet from "ThreadAutoArchiveBottomSheet" /* 18933 */;
+import VoiceChannelAppSettingDefault from "VoiceChannelAppSetting" /* 18935 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 4847 */;
@@ -66,7 +66,7 @@ import GuildChannelStore from "GuildChannelStore" /* 4843 */;
 import GuildStore from "GuildStore" /* 4784 */;
 import PermissionStore from "PermissionStore" /* 4845 */;
 import ReadStateStore from "ReadStateStore" /* 6619 */;
-import RegionStore from "RegionStore" /* 18924 */;
+import RegionStore from "RegionStore" /* 18926 */;
 import RelationshipStore from "RelationshipStore" /* 4855 */;
 import UserStore from "UserStore" /* 1386 */;
 import Constants from "Constants" /* 1071 */;
@@ -925,7 +925,7 @@ class ChannelSettingsOverview extends PureComponent {
           tmp5 = tmp;
         }
         const obj = { title: intl2.string(tmp5(1112).t.FGjMZS), description: stringResult, selected: autoArchiveDuration, channel, onSelectDuration: this.handleAutoArchiveDurationChange };
-        const AutoArchiveDurationOptions = tmp5(18931).AutoArchiveDurationOptions;
+        const AutoArchiveDurationOptions = tmp5(18933).AutoArchiveDurationOptions;
         intl2 = tmp5(1112).intl;
         const threadMetadata = channel.threadMetadata;
         autoArchiveDuration = undefined;
@@ -1010,7 +1010,7 @@ class ChannelSettingsOverview extends PureComponent {
         const tmp6 = importDefault;
         const tmp8 = AppChannelApplicationSelectorDefault;
         if (!canManageChannels) {
-          tmp9 = tmp6(18932)(channel);
+          tmp9 = tmp6(18934)(channel);
         }
         return tmp5(tmp8, obj);
       }
@@ -1461,9 +1461,9 @@ class ChannelSettingsOverview extends PureComponent {
       }
       obj3 = { text: stringResult };
       if (channel.defaultForumLayout === self(4772).ForumLayout.GRID) {
-        tmp2Result = tmp2(tmp3(18939).GridSquareIcon, {});
+        tmp2Result = tmp2(tmp3(18941).GridSquareIcon, {});
       } else {
-        tmp2Result = tmp2(tmp3(14835).ListViewIcon, {});
+        tmp2Result = tmp2(tmp3(14837).ListViewIcon, {});
       }
       tmp = tmp2(TableRowGroup, obj, "default-forum-layout");
     }
@@ -1890,7 +1890,7 @@ class ChannelSettingsOverview extends PureComponent {
           tmp7 = self;
         }
         const TableRowGroup = tmp7(7348).TableRowGroup;
-        const obj2 = { icon: closure_47(tmp7(17671).FolderPlusIcon, {}), label: intl2.string(tmp7(1112).t.vHCZwr), trailing: closure_47(tmp7(7045).TableRow.TrailingText, obj3), arrow: canManageParent, onPress: fn };
+        const obj2 = { icon: closure_47(tmp7(17673).FolderPlusIcon, {}), label: intl2.string(tmp7(1112).t.vHCZwr), trailing: closure_47(tmp7(7045).TableRow.TrailingText, obj3), arrow: canManageParent, onPress: fn };
         const TableRow = tmp7(7045).TableRow;
         intl2 = tmp7(1112).intl;
         fn = undefined;

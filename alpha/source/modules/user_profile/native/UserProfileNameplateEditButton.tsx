@@ -1,10 +1,10 @@
-// Module ID: 15897
-// Function ID: 15898
+// Module ID: 15899
+// Function ID: 15900
 // Name: UserProfileNameplateEditButton
-// Dependencies: [19, 17, 4825, 7564, 1082, 21, 4913, 575, 504, 8131, 15898, 5127, 15899, 2119, 15867, 1112, 9028, 1186, 14262, 2]
+// Dependencies: [19, 17, 4825, 7564, 1082, 21, 4913, 575, 504, 8131, 15900, 5127, 15901, 2119, 15869, 1112, 9028, 1186, 14262, 2]
 // Exports: default
 
-// Module 15897 (UserProfileNameplateEditButton)
+// Module 15899 (UserProfileNameplateEditButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1082 */;
@@ -79,8 +79,8 @@ export default function UserProfileNameplateEditButton(user) {
   }
   const profilePreviewValue = getProfilePreviewValue(obj2);
   let skuId;
-  const useFetchNameplate = tmp3(15898).useFetchNameplate;
-  user(15898);
+  const useFetchNameplate = tmp3(15900).useFetchNameplate;
+  user(15900);
   if (profilePreviewValue != null) {
     skuId = profilePreviewValue.skuId;
   }
@@ -106,7 +106,7 @@ export default function UserProfileNameplateEditButton(user) {
   }
   const items1 = [user, nameplate, guildId];
   if (isFetching) {
-    const UserProfileEditFormButton2 = tmp3(15867).UserProfileEditFormButton;
+    const UserProfileEditFormButton2 = tmp3(15869).UserProfileEditFormButton;
     const intl4 = tmp3(1112).intl;
     const intl5 = tmp3(1112).intl;
     return <UserProfileEditFormButton2 label={intl4.string(user(1112).t.x5CoXR)} buttonText={intl5.string(user(1112).t.MKDeyL)} onPress={NOOP} leading={null} loading disabled hideArrow />;
@@ -129,7 +129,7 @@ export default function UserProfileNameplateEditButton(user) {
       }
     }
     const obj5 = { label: intl3.string(user(1112).t.x5CoXR), buttonText: formatToPlainStringResult, accessibilityValue: obj6, onPress: tmp14, leading: null };
-    const UserProfileEditFormButton = tmp3(15867).UserProfileEditFormButton;
+    const UserProfileEditFormButton = tmp3(15869).UserProfileEditFormButton;
     intl3 = tmp3(1112).intl;
     obj6 = { text: formatToPlainStringResult };
     if (null != nameplateData) {

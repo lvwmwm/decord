@@ -1,9 +1,9 @@
-// Module ID: 17723
-// Function ID: 17724
+// Module ID: 17725
+// Function ID: 17726
 // Name: DirectoryChannel
-// Dependencies: [19, 4762, 4843, 5642, 6553, 21, 4913, 575, 563, 1098, 13843, 17636, 8009, 2]
+// Dependencies: [19, 4762, 4843, 5642, 6553, 21, 4913, 575, 563, 1098, 13843, 17638, 8009, 2]
 
-// Module 17723 (DirectoryChannel)
+// Module 17725 (DirectoryChannel)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import router_utils from "router_utils" /* 1098 */;
@@ -54,7 +54,7 @@ const memoResult = react.memo(function DirectoryChannel(guildId) {
   let tmp7 = null;
   if (null != stateFromStores) {
     const obj3 = { channel: stateFromStores };
-    id(17636);
+    id(17638);
     const obj4 = { selected };
     tmp7 = <tmp10 onPress={callback} onLongPress={tmp6} style={tmp.container} accessible accessibilityRole="button" accessibilityLabel={id(8009)(obj3)} accessibilityState={obj4} channel={stateFromStores} selected={selected} resolvedUnreadSetting={UnreadSetting.ONLY_MENTIONS} />;
   }

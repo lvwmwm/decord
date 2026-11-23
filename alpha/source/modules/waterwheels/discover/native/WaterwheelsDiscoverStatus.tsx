@@ -1,10 +1,10 @@
-// Module ID: 17825
-// Function ID: 17826
+// Module ID: 17827
+// Function ID: 17828
 // Name: WaterwheelsDiscoverStatus
 // Dependencies: [19, 17, 21, 4913, 575, 5504, 1112, 2643, 5511, 2]
 // Exports: WaterwheelsDiscoverRefreshError, default
 
-// Module 17825 (WaterwheelsDiscoverStatus)
+// Module 17827 (WaterwheelsDiscoverStatus)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1112 */;

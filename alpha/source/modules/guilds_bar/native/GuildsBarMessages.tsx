@@ -1,17 +1,17 @@
-// Module ID: 17886
-// Function ID: 17887
+// Module ID: 17888
+// Function ID: 17889
 // Name: GuildsBarMessages
-// Dependencies: [19, 10033, 4946, 1071, 21, 17827, 17872, 504, 17875, 575, 1112, 17887, 7672, 2]
+// Dependencies: [19, 10033, 4946, 1071, 21, 17829, 17874, 504, 17877, 575, 1112, 17889, 7672, 2]
 
-// Module 17886 (GuildsBarMessages)
+// Module 17888 (GuildsBarMessages)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
-import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 17827 */;
-import GuildsBarAnimatedItemWrapper from "GuildsBarAnimatedItemWrapper" /* 17872 */;
-import useGuildsBarBottomRightBadgeDefault from "useGuildsBarBottomRightBadge" /* 17875 */;
+import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 17829 */;
+import GuildsBarAnimatedItemWrapper from "GuildsBarAnimatedItemWrapper" /* 17874 */;
+import useGuildsBarBottomRightBadgeDefault from "useGuildsBarBottomRightBadge" /* 17877 */;
 import react from "react" /* 19 */;
 import ICYMIStore from "ICYMIStore" /* 10033 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4946 */;

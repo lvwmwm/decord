@@ -1,10 +1,10 @@
-// Module ID: 18280
-// Function ID: 18281
+// Module ID: 18282
+// Function ID: 18283
 // Name: useIsConjureProjectLive
 // Dependencies: [6980, 504, 12319, 2]
 // Exports: default
 
-// Module 18280 (useIsConjureProjectLive)
+// Module 18282 (useIsConjureProjectLive)
 import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 6980 */;
 import size from "module_2" /* 2 */;
 

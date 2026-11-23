@@ -1,32 +1,62 @@
 // Module ID: 14665
 // Function ID: 14666
-// Dependencies: [14666]
+// Dependencies: []
 
 // Module 14665
-function emptyFunction() {
-
-}
-function emptyFunctionWithReset() {
-
-}
-emptyFunctionWithReset.resetWarningCache = emptyFunction;
-
-export default () => {
-  let obj;
-  function shim(arg0, arg1, arg2, arg3, arg4, arg5) {
-    if (arg5 !== shim(dependencyMap[0])) {
+let array;
+let array2;
+let num2;
+let num3;
+exports = {
+  glog(self) {
+    if (self < 1) {
       const _Error = Error;
-      const self = this;
+      self = this;
       const self2 = this;
-      const error = new Error("Calling PropTypes validators directly is not supported by the `prop-types` package. Use PropTypes.checkPropTypes() to call them. Read more at http://fb.me/use-check-prop-types");
-      error.name = "Invariant Violation";
+      const error = new Error("glog(" + self + ")");
       throw error;
+    } else {
+      return obj.LOG_TABLE[self];
     }
-  }
-  function getShim() {
-    return shim;
-  }
-  shim.isRequired = shim;
-  obj = { array: shim, bigint: shim, bool: shim, func: shim, number: shim, object: shim, string: shim, symbol: shim, any: shim, arrayOf: getShim, element: shim, elementType: shim, instanceOf: getShim, node: shim, objectOf: getShim, oneOf: getShim, oneOfType: getShim, shape: getShim, exact: getShim, checkPropTypes: emptyFunctionWithReset, resetWarningCache: emptyFunction, PropTypes: obj };
-  return obj;
+  },
+  gexp(arg0) {
+    let sum = arg0;
+    let tmp2 = arg0;
+    if (arg0 < 0) {
+      do {
+        sum = sum + 255;
+        tmp2 = sum;
+      } while (sum < 0);
+    }
+    let diff = tmp2;
+    let tmp4 = tmp2;
+    if (tmp2 >= 256) {
+      do {
+        diff = diff - 255;
+        tmp4 = diff;
+      } while (256 <= diff);
+    }
+    return obj.EXP_TABLE[tmp4];
+  },
+  EXP_TABLE: array,
+  LOG_TABLE: array2
 };
+array = new Array(256);
+array2 = new Array(256);
+let num = 0;
+do {
+  exports.EXP_TABLE[num] = 1 << num;
+  num = num + 1;
+  num2 = 8;
+} while (num < 8);
+do {
+  exports.EXP_TABLE[num2] = exports.EXP_TABLE[num2 - 4] ^ exports.EXP_TABLE[num2 - 5] ^ exports.EXP_TABLE[num2 - 6] ^ exports.EXP_TABLE[num2 - 8];
+  num2 = num2 + 1;
+  num3 = 0;
+} while (num2 < 256);
+do {
+  exports.LOG_TABLE[exports.EXP_TABLE[num3]] = num3;
+  num3 = num3 + 1;
+} while (num3 < 255);
+
+export default exports;

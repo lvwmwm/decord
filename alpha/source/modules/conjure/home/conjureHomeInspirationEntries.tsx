@@ -1,10 +1,10 @@
-// Module ID: 18637
-// Function ID: 18638
+// Module ID: 18639
+// Function ID: 18640
 // Name: conjureHomeInspirationEntries
 // Dependencies: [1112, 4190, 2]
 // Exports: conjureHomeCategoryLabel, conjureHomeInspirationEntries
 
-// Module 18637 (conjureHomeInspirationEntries)
+// Module 18639 (conjureHomeInspirationEntries)
 import intl22 from "intl" /* 1112 */;
 import _modDef4190 from "module_4190" /* 4190 */;
 import size from "module_2" /* 2 */;

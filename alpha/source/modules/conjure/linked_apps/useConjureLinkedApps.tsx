@@ -1,10 +1,10 @@
-// Module ID: 18326
-// Function ID: 18327
+// Module ID: 18328
+// Function ID: 18329
 // Name: useConjureLinkedApps
-// Dependencies: [5, 32, 19, 6621, 504, 18327, 1112, 4190, 2]
+// Dependencies: [5, 32, 19, 6621, 504, 18329, 1112, 4190, 2]
 // Exports: default
 
-// Module 18326 (useConjureLinkedApps)
+// Module 18328 (useConjureLinkedApps)
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
@@ -73,10 +73,10 @@ export default function useConjureLinkedApps(projectId, arg1) {
   let items1 = [ConjureProjectStore];
   const items2 = [projectId];
   const stateFromStoresArray = obj2.useStateFromStoresArray(items1, () => {
-    const f132467 = (id) => id.id;
+    const f132445 = (id) => id.id;
     const items = [...ConjureProjectStore.getOwnedProjects(), ...ConjureProjectStore.getSharedWithMeProjects(), ...ConjureProjectStore.getRailProjects()];
-    const items1 = [...new Set(items.map(f132467))];
-    new Set(items.map(f132467));
+    const items1 = [...new Set(items.map(f132445))];
+    new Set(items.map(f132445));
     const found = items1.filter((item) => item !== current);
     return found.sort();
   }, items2);

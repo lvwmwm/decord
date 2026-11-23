@@ -1,19 +1,19 @@
-// Module ID: 19108
-// Function ID: 19109
+// Module ID: 19110
+// Function ID: 19111
 // Name: useLaunchAccountLinkingCampaign
-// Dependencies: [32, 19, 2164, 14991, 6825, 6427, 19087, 1071, 504, 1378, 6864, 2117, 7523, 7524, 2]
+// Dependencies: [32, 19, 2164, 14993, 6825, 6427, 19089, 1071, 504, 1378, 6864, 2117, 7523, 7524, 2]
 // Exports: default
 
-// Module 19108 (useLaunchAccountLinkingCampaign)
+// Module 19110 (useLaunchAccountLinkingCampaign)
 import Constants from "Constants" /* 1071 */;
 import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 6825 */;
 import useAuthorizationApp from "useAuthorizationApp" /* 7523 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ApplicationStore from "ApplicationStore" /* 2164 */;
-import LocalAppDetectionStore from "LocalAppDetectionStore" /* 14991 */;
+import LocalAppDetectionStore from "LocalAppDetectionStore" /* 14993 */;
 import ConsentStore from "ConsentStore" /* 6427 */;
-import AccountLinkingCampaignStore from "AccountLinkingCampaignStore" /* 19087 */;
+import AccountLinkingCampaignStore from "AccountLinkingCampaignStore" /* 19089 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

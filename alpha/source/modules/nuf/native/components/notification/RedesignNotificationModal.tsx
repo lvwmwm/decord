@@ -1,10 +1,10 @@
-// Module ID: 17504
-// Function ID: 17505
+// Module ID: 17506
+// Function ID: 17507
 // Name: RedesignNotificationModal
-// Dependencies: [19, 17, 13279, 13280, 1071, 21, 4913, 575, 13281, 1255, 13282, 13593, 17505, 1112, 2]
+// Dependencies: [19, 17, 13279, 13280, 1071, 21, 4913, 575, 13281, 1255, 13282, 13593, 17507, 1112, 2]
 // Exports: RedesignNotificationScreen
 
-// Module 17504 (RedesignNotificationModal)
+// Module 17506 (RedesignNotificationModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

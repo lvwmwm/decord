@@ -1,21 +1,21 @@
-// Module ID: 17272
-// Function ID: 17273
+// Module ID: 17274
+// Function ID: 17275
 // Name: CollectiblesShopScreen
-// Dependencies: [19, 1073, 21, 7414, 17273, 14051, 17274, 7539, 2]
+// Dependencies: [19, 1073, 21, 7414, 17275, 14051, 17276, 7539, 2]
 // Exports: default
 
-// Module 17272 (CollectiblesShopScreen)
+// Module 17274 (CollectiblesShopScreen)
 import Fragment from "Fragment" /* 21 */;
 import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1073 */;
 import useSettingNavigationRoute from "useSettingNavigationRoute" /* 7414 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7539 */;
 import useGiftCardMobileConsumptionHalfsheet from "useGiftCardMobileConsumptionHalfsheet" /* 14051 */;
-import useShopOrientationLock from "useShopOrientationLock" /* 17273 */;
+import useShopOrientationLock from "useShopOrientationLock" /* 17275 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const CollectiblesShopV22 = tmp(17274);
+const CollectiblesShopV22 = tmp(17276);
 const constants = CollectiblesShopConstants.CollectiblesMobileShopScreen;
 const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/user_settings/shop/native/CollectiblesShopScreen.tsx");

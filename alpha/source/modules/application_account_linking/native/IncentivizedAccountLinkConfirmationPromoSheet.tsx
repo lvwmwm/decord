@@ -1,10 +1,10 @@
-// Module ID: 19091
-// Function ID: 19092
+// Module ID: 19093
+// Function ID: 19094
 // Name: IncentivizedAccountLinkConfirmationPromoSheet
-// Dependencies: [19, 4914, 21, 4913, 504, 5600, 17320, 17321, 11225, 5127, 2]
+// Dependencies: [19, 4914, 21, 4913, 504, 5600, 17322, 17323, 11225, 5127, 2]
 // Exports: default
 
-// Module 19091 (IncentivizedAccountLinkConfirmationPromoSheet)
+// Module 19093 (IncentivizedAccountLinkConfirmationPromoSheet)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
@@ -29,7 +29,7 @@ export default function IncentivizedAccountLinkConfirmationPromoSheet(arg0) {
   let obj = get_initialized;
   const items = [AccessibilityStore];
   const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
-  const obj3 = { uri: importDefault(stateFromStores ? 17320 : 17321) };
+  const obj3 = { uri: importDefault(stateFromStores ? 17322 : 17323) };
   FastImageDefault;
   return jsx(PromoSheet.PromoSheet, {
     title,

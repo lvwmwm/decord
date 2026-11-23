@@ -239,13 +239,13 @@ export default function PollAnswerInput(answer) {
     blurOnSubmit: false,
     style: tmp.pollAnswerTextInput,
     selectionColor: "channel",
-    textContentType: null,
+    textContentType: "HFU_MAU",
     accessibilityLabel: intl2.formatToPlainString(answer(channelId[11]).t["3+V8G9"], obj6),
     accessibilityHint: formatToPlainStringResult,
     maxLength,
-    returnKeyType: true,
-    required: true,
-    autoCorrect: true,
+    returnKeyType: "allow_labels",
+    required: "numSelections",
+    autoCorrect: "col",
     "aria-invalid": error
   };
   const FormInput = tmp9(tmp10[22]).FormInput;

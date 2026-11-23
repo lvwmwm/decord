@@ -10,12 +10,12 @@ import size from "module_2" /* 2 */;
 const result = size.fileFinishedImporting("../discord_common/js/shared/utils/Future.tsx");
 
 export function Future() {
-  const f97775 = (resolve, reject) => {
+  const f97750 = (resolve, reject) => {
     obj.resolve = resolve;
     obj.reject = reject;
   };
   const obj = Object.create(new.target.prototype);
-  obj.promise = new Promise(f97775);
-  new Promise(f97775);
+  obj.promise = new Promise(f97750);
+  new Promise(f97750);
   return obj;
 }

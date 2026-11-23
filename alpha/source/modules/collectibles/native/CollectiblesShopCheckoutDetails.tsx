@@ -320,8 +320,8 @@ let closure_10 = createStyles.createStyles((arg0) => {
     BORDER_FEEDBACK_CRITICAL = colors.BORDER_FEEDBACK_CRITICAL;
     tmp5 = tmp;
   }
-  const obj = { giftProductContainer: { borderWidth: 2, borderColor: BORDER_FEEDBACK_CRITICAL, marginHorizontal: tmp5(575).space.PX_16, backgroundColor: "__workletHash" } };
-  ({ borderWidth: 2, borderColor: BORDER_FEEDBACK_CRITICAL, marginHorizontal: tmp5(575).space.PX_16, backgroundColor: "__workletHash" });
+  const obj = { giftProductContainer: { borderWidth: 2, borderColor: BORDER_FEEDBACK_CRITICAL, marginHorizontal: tmp5(575).space.PX_16, backgroundColor: "__closure" } };
+  ({ borderWidth: 2, borderColor: BORDER_FEEDBACK_CRITICAL, marginHorizontal: tmp5(575).space.PX_16, backgroundColor: "__closure" });
   return obj;
 });
 createStyles = createStyles_mod;

@@ -1,10 +1,10 @@
-// Module ID: 16220
-// Function ID: 16221
+// Module ID: 16222
+// Function ID: 16223
 // Name: FamilyCenterEmpty
 // Dependencies: [19, 17, 21, 4913, 5504, 2]
 // Exports: default
 
-// Module 16220 (FamilyCenterEmpty)
+// Module 16222 (FamilyCenterEmpty)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Text_Text from "Text/Text" /* 5504 */;

@@ -1,10 +1,10 @@
-// Module ID: 18390
-// Function ID: 18391
+// Module ID: 18392
+// Function ID: 18393
 // Name: openConjureRemoveAppAlert
 // Dependencies: [32, 5, 19, 21, 4913, 12393, 1112, 4190, 5595, 5866, 12391, 5929, 5504, 12394, 6933, 5862, 2]
 // Exports: default
 
-// Module 18390 (openConjureRemoveAppAlert)
+// Module 18392 (openConjureRemoveAppAlert)
 import useAlertStore from "useAlertStore" /* 5862 */;
 import useConjureRemoveFromServer from "useConjureRemoveFromServer" /* 12393 */;
 import conjureRemoveApp from "conjureRemoveApp" /* 12394 */;

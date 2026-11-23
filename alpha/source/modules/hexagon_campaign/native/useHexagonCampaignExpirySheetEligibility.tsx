@@ -1,19 +1,19 @@
-// Module ID: 19109
-// Function ID: 19110
+// Module ID: 19111
+// Function ID: 19112
 // Name: useHexagonCampaignExpirySheetEligibility
-// Dependencies: [32, 19, 4937, 6394, 1191, 1386, 15634, 4938, 1194, 4941, 4944, 504, 14047, 4972, 16409, 4945, 4746, 16403, 2]
+// Dependencies: [32, 19, 4937, 6394, 1191, 1386, 15636, 4938, 1194, 4941, 4944, 504, 14047, 4972, 16411, 4945, 4746, 16405, 2]
 // Exports: useHexagonCampaignExpirySheetEligibility
 
-// Module 19109 (useHexagonCampaignExpirySheetEligibility)
+// Module 19111 (useHexagonCampaignExpirySheetEligibility)
 import ThemeConstants from "ThemeConstants" /* 1194 */;
-import restoreHexagonCampaignPerks from "restoreHexagonCampaignPerks" /* 16409 */;
+import restoreHexagonCampaignPerks from "restoreHexagonCampaignPerks" /* 16411 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4937 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 6394 */;
 import ThemeStore from "ThemeStore" /* 1191 */;
 import UserStore from "UserStore" /* 1386 */;
-import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 15634 */;
+import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 15636 */;
 import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4938 */;
 import size from "module_2" /* 2 */;
 

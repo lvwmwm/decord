@@ -1,9 +1,9 @@
-// Module ID: 18848
-// Function ID: 18849
+// Module ID: 18850
+// Function ID: 18851
 // Name: AccountSwitcherRail
-// Dependencies: [19, 17, 1405, 4970, 1386, 13283, 14893, 13284, 1071, 21, 575, 4913, 4975, 4969, 1112, 5600, 1412, 7499, 5617, 1628, 5477, 17454, 504, 17954, 1255, 7539, 13287, 5603, 10371, 8658, 2]
+// Dependencies: [19, 17, 1405, 4970, 1386, 13283, 14895, 13284, 1071, 21, 575, 4913, 4975, 4969, 1112, 5600, 1412, 7499, 5617, 1628, 5477, 17456, 504, 17956, 1255, 7539, 13287, 5603, 10371, 8658, 2]
 
-// Module 18848 (AccountSwitcherRail)
+// Module 18850 (AccountSwitcherRail)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
@@ -14,13 +14,13 @@ import AnalyticsLocationDefault from "AnalyticsLocation" /* 7539 */;
 import SettingsIcon2 from "SettingsIcon" /* 10371 */;
 import MultiAccountStore2 from "MultiAccountStore" /* 13283 */;
 import MultiAccountActionCreatorsAll from "MultiAccountActionCreators" /* 13287 */;
-import openManageAccountsModalDefault from "openManageAccountsModal" /* 17954 */;
+import openManageAccountsModalDefault from "openManageAccountsModal" /* 17956 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import UserRecord from "UserRecord" /* 1405 */;
 import StreamerModeStore from "StreamerModeStore" /* 4970 */;
 import UserStore from "UserStore" /* 1386 */;
-import MultiAccountSwitchStore from "MultiAccountSwitchStore" /* 14893 */;
+import MultiAccountSwitchStore from "MultiAccountSwitchStore" /* 14895 */;
 import Constants_mod from "Constants" /* 13284 */;
 import Constants_mod2 from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;

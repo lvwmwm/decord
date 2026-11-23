@@ -151,7 +151,7 @@ export default function _default(delayHoverOut) {
       let items1;
       let obj3;
       if (closure_13.current) {
-        const obj = { identifier: 0, locationX: null, locationY: null, pageX: null, pageY: null, target: 0, timestamp: Date.now(), touches: [], changedTouches: [], force: "Promise" };
+        const obj = { identifier: 0, locationX: null, locationY: null, pageX: null, pageY: null, target: 0, timestamp: Date.now(), touches: [], changedTouches: [], force: "a" };
         ({ x: obj.locationX, y: obj.locationY, absoluteX: obj.pageX, absoluteY: obj.pageY } = arg0);
         const _Date = Date;
         const obj2 = { nativeEvent: obj3 };
@@ -180,7 +180,7 @@ export default function _default(delayHoverOut) {
           if (typeof firePressIn === "function") {
             closure_10(true);
             if (onPressIn != null) {
-              const obj2 = { identifier: 0, locationX: null, locationY: null, pageX: null, pageY: null, target: 0, timestamp: Date.now(), touches: [], changedTouches: [], force: "Promise" };
+              const obj2 = { identifier: 0, locationX: null, locationY: null, pageX: null, pageY: null, target: 0, timestamp: Date.now(), touches: [], changedTouches: [], force: "a" };
               ({ x: obj4.locationX, y: obj4.locationY, absoluteX: obj4.pageX, absoluteY: obj4.pageY } = arg0);
               const _Date2 = Date;
               const obj3 = { nativeEvent: obj5 };
@@ -194,7 +194,7 @@ export default function _default(delayHoverOut) {
             throw new TypeError("Trying to call a non-function");
           }
         }
-        const obj = { identifier: 0, locationX: null, locationY: null, pageX: null, pageY: null, target: 0, timestamp: Date.now(), touches: [], changedTouches: [], force: "Promise" };
+        const obj = { identifier: 0, locationX: null, locationY: null, pageX: null, pageY: null, target: 0, timestamp: Date.now(), touches: [], changedTouches: [], force: "a" };
         ({ x: obj.locationX, y: obj.locationY, absoluteX: obj.pageX, absoluteY: obj.pageY } = arg0);
         const _Date = Date;
         const obj6 = { nativeEvent: obj11 };
@@ -225,7 +225,7 @@ export default function _default(delayHoverOut) {
             let items1;
             let obj3;
             ref.current.hoverIn = null;
-            const obj = { identifier: 0, locationX: closure_0.x, locationY: closure_0.y, pageX: closure_0.absoluteX, pageY: closure_0.absoluteY, target: 0, timestamp: Date.now(), touches: [], changedTouches: [], force: "Promise" };
+            const obj = { identifier: 0, locationX: closure_0.x, locationY: closure_0.y, pageX: closure_0.absoluteX, pageY: closure_0.absoluteY, target: 0, timestamp: Date.now(), touches: [], changedTouches: [], force: "a" };
             const obj2 = { nativeEvent: obj3 };
             obj3 = { touches: items, changedTouches: items1 };
             const merged = Object.assign(obj);
@@ -234,7 +234,7 @@ export default function _default(delayHoverOut) {
             onHoverIn(obj2);
           }, tmp6);
         } else {
-          let obj = { identifier: 0, locationX: null, locationY: null, pageX: null, pageY: null, target: 0, timestamp: Date.now(), touches: [], changedTouches: [], force: "Promise" };
+          let obj = { identifier: 0, locationX: null, locationY: null, pageX: null, pageY: null, target: 0, timestamp: Date.now(), touches: [], changedTouches: [], force: "a" };
           ({ x: obj.locationX, y: obj.locationY, absoluteX: obj.pageX, absoluteY: obj.pageY } = arg0);
           const _Date = Date;
           let obj2 = { nativeEvent: obj3 };
@@ -266,7 +266,7 @@ export default function _default(delayHoverOut) {
             let items1;
             let obj3;
             ref.current.hoverOut = null;
-            const obj = { identifier: 0, locationX: closure_0.x, locationY: closure_0.y, pageX: closure_0.absoluteX, pageY: closure_0.absoluteY, target: 0, timestamp: Date.now(), touches: [], changedTouches: [], force: "Promise" };
+            const obj = { identifier: 0, locationX: closure_0.x, locationY: closure_0.y, pageX: closure_0.absoluteX, pageY: closure_0.absoluteY, target: 0, timestamp: Date.now(), touches: [], changedTouches: [], force: "a" };
             const obj2 = { nativeEvent: obj3 };
             obj3 = { touches: items, changedTouches: items1 };
             const merged = Object.assign(obj);
@@ -275,7 +275,7 @@ export default function _default(delayHoverOut) {
             onHoverOut(obj2);
           }, tmp6);
         } else {
-          let obj = { identifier: 0, locationX: null, locationY: null, pageX: null, pageY: null, target: 0, timestamp: Date.now(), touches: [], changedTouches: [], force: "Promise" };
+          let obj = { identifier: 0, locationX: null, locationY: null, pageX: null, pageY: null, target: 0, timestamp: Date.now(), touches: [], changedTouches: [], force: "a" };
           ({ x: obj.locationX, y: obj.locationY, absoluteX: obj.pageX, absoluteY: obj.pageY } = arg0);
           const _Date = Date;
           let obj2 = { nativeEvent: obj3 };
@@ -325,7 +325,7 @@ export default function _default(delayHoverOut) {
       let tmp;
       let closure_0 = locationX;
       let obj = delayHoverIn(delayHoverOut[5]);
-      let obj2 = { identifier: 0, locationX: locationX.x, locationY: locationX.y, pageX: locationX.absoluteX, pageY: locationX.absoluteY, target: 0, timestamp: Date.now(), touches: [], changedTouches: [], force: "Promise" };
+      let obj2 = { identifier: 0, locationX: locationX.x, locationY: locationX.y, pageX: locationX.absoluteX, pageY: locationX.absoluteY, target: 0, timestamp: Date.now(), touches: [], changedTouches: [], force: "a" };
       closure_13.current = obj.isTouchWithinInset(ref.current, closure_14, obj2);
       if (closure_13.current) {
         if (unstable_pressDelay) {
@@ -343,7 +343,7 @@ export default function _default(delayHoverOut) {
             if (typeof firePressIn === "function") {
               closure_10(true);
               if (onPressIn != null) {
-                const obj = { identifier: 0, locationX: null, locationY: null, pageX: null, pageY: null, target: 0, timestamp: Date.now(), touches: [], changedTouches: [], force: "Promise" };
+                const obj = { identifier: 0, locationX: null, locationY: null, pageX: null, pageY: null, target: 0, timestamp: Date.now(), touches: [], changedTouches: [], force: "a" };
                 ({ x: obj.locationX, y: obj.locationY, absoluteX: obj.pageX, absoluteY: obj.pageY } = tmp);
                 const _Date = Date;
                 const obj2 = { nativeEvent: obj3 };
@@ -360,7 +360,7 @@ export default function _default(delayHoverOut) {
         } else if (typeof firePressIn === "function") {
           const tmp4 = closure_10(true);
           if (onPressIn != null) {
-            const obj4 = { identifier: 0, locationX: null, locationY: null, pageX: null, pageY: null, target: 0, timestamp: Date.now(), touches: [], changedTouches: [], force: "Promise" };
+            const obj4 = { identifier: 0, locationX: null, locationY: null, pageX: null, pageY: null, target: 0, timestamp: Date.now(), touches: [], changedTouches: [], force: "a" };
             ({ x: obj3.locationX, y: obj3.locationY, absoluteX: obj3.pageX, absoluteY: obj3.pageY } = locationX);
             let _Date = Date;
             const obj5 = { nativeEvent: obj9 };
@@ -391,7 +391,7 @@ export default function _default(delayHoverOut) {
           if (typeof firePressIn === "function") {
             closure_10(true);
             if (onPressIn != null) {
-              const obj = { identifier: 0, locationX: null, locationY: null, pageX: null, pageY: null, target: 0, timestamp: Date.now(), touches: [], changedTouches: [], force: "Promise" };
+              const obj = { identifier: 0, locationX: null, locationY: null, pageX: null, pageY: null, target: 0, timestamp: Date.now(), touches: [], changedTouches: [], force: "a" };
               ({ x: obj.locationX, y: obj.locationY, absoluteX: obj.pageX, absoluteY: obj.pageY } = arg0);
               const _Date = Date;
               const obj2 = { nativeEvent: obj3 };
@@ -407,7 +407,7 @@ export default function _default(delayHoverOut) {
         }
         closure_10(false);
         if (onPressOut != null) {
-          const obj5 = { identifier: 0, locationX: null, locationY: null, pageX: null, pageY: null, target: 0, timestamp: Date.now(), touches: [], changedTouches: [], force: "Promise" };
+          const obj5 = { identifier: 0, locationX: null, locationY: null, pageX: null, pageY: null, target: 0, timestamp: Date.now(), touches: [], changedTouches: [], force: "a" };
           ({ x: obj4.locationX, y: obj4.locationY, absoluteX: obj4.pageX, absoluteY: obj4.pageY } = arg0);
           const _Date2 = Date;
           const obj6 = { nativeEvent: obj11 };

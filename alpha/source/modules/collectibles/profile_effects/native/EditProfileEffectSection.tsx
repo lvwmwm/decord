@@ -1,9 +1,9 @@
-// Module ID: 15892
-// Function ID: 15893
+// Module ID: 15894
+// Function ID: 15895
 // Name: EditProfileEffectSection
-// Dependencies: [19, 17, 8081, 9010, 21, 4913, 14260, 15891, 14261, 7539, 8179, 5600, 9033, 9013, 2]
+// Dependencies: [19, 17, 8081, 9010, 21, 4913, 14260, 15893, 14261, 7539, 8179, 5600, 9033, 9013, 2]
 
-// Module 15892 (EditProfileEffectSection)
+// Module 15894 (EditProfileEffectSection)
 import react_native from "react-native" /* 17 */;
 import FastImageDefault from "FastImage" /* 5600 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7539 */;
@@ -14,7 +14,7 @@ import ProfileEffectDefault from "ProfileEffect" /* 9013 */;
 import _modDef9033 from "module_9033" /* 9033 */;
 import useCollectibleListLayout from "useCollectibleListLayout" /* 14260 */;
 import CollectiblesEditUserProfileListItems from "CollectiblesEditUserProfileListItems" /* 14261 */;
-import useProfileEffectSections from "useProfileEffectSections" /* 15891 */;
+import useProfileEffectSections from "useProfileEffectSections" /* 15893 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;

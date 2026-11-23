@@ -1,14 +1,14 @@
-// Module ID: 17399
-// Function ID: 17400
+// Module ID: 17401
+// Function ID: 17402
 // Name: ParentalControlsUseDataForQuestsSetting
-// Dependencies: [8335, 8712, 16117, 16121, 1112, 2824, 11937, 2]
+// Dependencies: [8335, 8712, 16119, 16123, 1112, 2824, 11937, 2]
 
-// Module 17399 (ParentalControlsUseDataForQuestsSetting)
+// Module 17401 (ParentalControlsUseDataForQuestsSetting)
 import intl2 from "intl" /* 1112 */;
 import _modDef2824 from "module_2824" /* 2824 */;
 import SettingsConstants from "SettingsConstants" /* 8712 */;
-import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 16117 */;
-import FamilyCenterSaveErrorUtils from "FamilyCenterSaveErrorUtils" /* 16121 */;
+import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 16119 */;
+import FamilyCenterSaveErrorUtils from "FamilyCenterSaveErrorUtils" /* 16123 */;
 import FamilyCenterStore from "FamilyCenterStore" /* 8335 */;
 import SettingBuilders from "SettingBuilders" /* 11937 */;
 import size from "module_2" /* 2 */;

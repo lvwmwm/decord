@@ -1,9 +1,9 @@
-// Module ID: 17984
-// Function ID: 17985
+// Module ID: 17986
+// Function ID: 17987
 // Name: VoicePanelDock
-// Dependencies: [19, 17, 4762, 11750, 11768, 11769, 21, 4913, 575, 17985, 1653, 8658, 1112, 8659, 5129, 11749, 504, 1642, 1378, 12901, 1628, 11775, 1706, 5765, 11754, 5173, 5123, 17983, 18007, 18013, 2]
+// Dependencies: [19, 17, 4762, 11750, 11768, 11769, 21, 4913, 575, 17987, 1653, 8658, 1112, 8659, 5129, 11749, 504, 1642, 1378, 12901, 1628, 11775, 1706, 5765, 11754, 5173, 5123, 17985, 18009, 18015, 2]
 
-// Module 17984 (VoicePanelDock)
+// Module 17986 (VoicePanelDock)
 import nativeDefault from "native" /* 575 */;
 import _mod1653 from "module_1653" /* 1653 */;
 import _mod1706 from "module_1706" /* 1706 */;
@@ -16,7 +16,7 @@ import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11749 */;
 import VoicePanelConstants from "VoicePanelConstants" /* 11750 */;
 import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11754 */;
 import VoicePanelSheetMorph from "VoicePanelSheetMorph" /* 11775 */;
-import useVoicePanelDockContextMenuItemsDefault from "useVoicePanelDockContextMenuItems" /* 17985 */;
+import useVoicePanelDockContextMenuItemsDefault from "useVoicePanelDockContextMenuItems" /* 17987 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import ChannelStore from "ChannelStore" /* 4762 */;

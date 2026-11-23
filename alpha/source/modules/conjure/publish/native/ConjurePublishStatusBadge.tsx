@@ -1,16 +1,16 @@
-// Module ID: 18394
-// Function ID: 18395
+// Module ID: 18396
+// Function ID: 18397
 // Name: ConjurePublishStatusBadge
-// Dependencies: [19, 17, 21, 4913, 18393, 575, 5477, 1653, 5123, 13484, 2]
+// Dependencies: [19, 17, 21, 4913, 18395, 575, 5477, 1653, 5123, 13484, 2]
 // Exports: conjurePublishBadgeSize, default
 
-// Module 18394 (ConjurePublishStatusBadge)
+// Module 18396 (ConjurePublishStatusBadge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1653 from "module_1653" /* 1653 */;
 import timing_timing from "timing/timing" /* 5123 */;
-import ConjureHeaderIconButton from "ConjureHeaderIconButton" /* 18393 */;
+import ConjureHeaderIconButton from "ConjureHeaderIconButton" /* 18395 */;
 import react from "react" /* 19 */;
 import createStyles from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;

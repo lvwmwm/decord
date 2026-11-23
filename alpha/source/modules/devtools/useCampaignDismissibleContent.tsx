@@ -1,10 +1,10 @@
-// Module ID: 17138
-// Function ID: 17139
+// Module ID: 17140
+// Function ID: 17141
 // Name: useCampaignDismissibleContent
 // Dependencies: [32, 5, 19, 1230, 1386, 4753, 4743, 5572, 504, 9193, 2]
 // Exports: default
 
-// Module 17138 (useCampaignDismissibleContent)
+// Module 17140 (useCampaignDismissibleContent)
 import DismissibleContentTypes from "DismissibleContentTypes" /* 4753 */;
 import CampaignDevToolsUtils from "CampaignDevToolsUtils" /* 9193 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
@@ -174,7 +174,7 @@ export default function useCampaignDismissibleContent(arg0, arg1) {
                         return obj3;
                       } else if (c0 !== ref.current) {
                         c1 = 3;
-                        const obj4 = { value: { v: "Array" }, done: true };
+                        const obj4 = { value: { v: "r" }, done: true };
                         return obj4;
                       } else if (closure_1_5.some((content) => content.content === closure_0)) {
                         c2 = 1;

@@ -1,9 +1,9 @@
-// Module ID: 15796
-// Function ID: 15797
+// Module ID: 15798
+// Function ID: 15799
 // Name: LocalMessageCacheManager
-// Dependencies: [5, 32, 4856, 502, 4762, 5964, 12139, 1071, 15797, 3, 1088, 510, 2168, 4735, 8446, 8250, 12182, 12147, 2119, 2121, 572, 6389, 8579, 2]
+// Dependencies: [5, 32, 4856, 502, 4762, 5964, 12139, 1071, 15799, 3, 1088, 510, 2168, 4735, 8446, 8250, 12182, 12147, 2119, 2121, 572, 6389, 8579, 2]
 
-// Module 15796 (LocalMessageCacheManager)
+// Module 15798 (LocalMessageCacheManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Storage3 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
@@ -21,7 +21,7 @@ import ChannelStore from "ChannelStore" /* 4762 */;
 import MessageStore from "MessageStore" /* 5964 */;
 import SendMessageOptionsStore from "SendMessageOptionsStore" /* 12139 */;
 import Constants from "Constants" /* 1071 */;
-import MutexUtils from "MutexUtils" /* 15797 */;
+import MutexUtils from "MutexUtils" /* 15799 */;
 import LifecycleManager from "LifecycleManager" /* 2121 */;
 import size from "module_2" /* 2 */;
 

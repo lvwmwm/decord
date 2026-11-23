@@ -1,20 +1,20 @@
-// Module ID: 14560
-// Function ID: 14561
+// Module ID: 14562
+// Function ID: 14563
 // Name: UserProfileWidgetsEmptyState
-// Dependencies: [32, 19, 17, 502, 8069, 7564, 21, 575, 4913, 14561, 504, 14553, 14565, 14568, 14570, 14571, 9953, 5504, 1112, 14572, 5511, 8136, 5127, 14574, 2119, 2]
+// Dependencies: [32, 19, 17, 502, 8069, 7564, 21, 575, 4913, 14563, 504, 14555, 14567, 14570, 14572, 14573, 9953, 5504, 1112, 14574, 5511, 8136, 5127, 14576, 2119, 2]
 // Exports: default
 
-// Module 14560 (UserProfileWidgetsEmptyState)
+// Module 14562 (UserProfileWidgetsEmptyState)
 import nativeDefault from "native" /* 575 */;
 import asyncRequire from "asyncRequire" /* 2119 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
 import Constants from "Constants" /* 7564 */;
 import Constants2 from "Constants" /* 8069 */;
 import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8136 */;
-import useAddableWidgetsDefault from "useAddableWidgets" /* 14553 */;
-import UserProfileWidgetOptionAddButton from "UserProfileWidgetOptionAddButton" /* 14561 */;
-import useApplicationWidgetAffinityDataDefault from "useApplicationWidgetAffinityData" /* 14565 */;
-import WidgetEmptyStateSuggestionUtils from "WidgetEmptyStateSuggestionUtils" /* 14568 */;
+import useAddableWidgetsDefault from "useAddableWidgets" /* 14555 */;
+import UserProfileWidgetOptionAddButton from "UserProfileWidgetOptionAddButton" /* 14563 */;
+import useApplicationWidgetAffinityDataDefault from "useApplicationWidgetAffinityData" /* 14567 */;
+import WidgetEmptyStateSuggestionUtils from "WidgetEmptyStateSuggestionUtils" /* 14570 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -96,7 +96,7 @@ export default function UserProfileWidgetsEmptyState() {
   const callback = obj2.useCallback((nativeEvent) => {
     _slicedToArray(nativeEvent.nativeEvent.layout.width);
   }, []);
-  id = tmp4(14570)();
+  id = tmp4(14572)();
   const tmp2Result = require("ConjureCustomWidget");
   const canConjureCustomWidget = tmp2Result.useCanConjureCustomWidget(UserProfileWidgetsEmptyState_str);
   const tmp2Result2 = require("ConjureMobileExperiment");
@@ -139,7 +139,7 @@ export default function UserProfileWidgetsEmptyState() {
     const tmp20 = compact;
     if (isConjureMobileEnabled) {
       const obj8 = { width: result, padding: PX_16 };
-      isConjureMobileEnabled = tmp18(tmp4(14572), obj8);
+      isConjureMobileEnabled = tmp18(tmp4(14574), obj8);
     }
     items4[1] = isConjureMobileEnabled;
     tmp16Result = tmp16(tmp20, obj7);
@@ -153,7 +153,7 @@ export default function UserProfileWidgetsEmptyState() {
       const obj2 = { userId, action: constants.PRESS_ADD_WIDGET };
       const result = obj.trackUserProfileEditAction(obj2);
       const obj3 = ActionSheetActionCreatorsDefault;
-      obj3.openLazy(asyncRequire(14574, dependencyMap.paths), "UserProfileWidgetAddActionSheet");
+      obj3.openLazy(asyncRequire(14576, dependencyMap.paths), "UserProfileWidgetAddActionSheet");
     }
   };
   const Button = tmp2(5511).Button;

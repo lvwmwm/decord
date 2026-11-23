@@ -1,15 +1,15 @@
-// Module ID: 17406
-// Function ID: 17407
+// Module ID: 17408
+// Function ID: 17409
 // Name: NotifyFriendsOnCustomStatusUpdateSetting
-// Dependencies: [8712, 11937, 1112, 2992, 4738, 17407, 17408, 2]
+// Dependencies: [8712, 11937, 1112, 2992, 4738, 17409, 17410, 2]
 
-// Module 17406 (NotifyFriendsOnCustomStatusUpdateSetting)
+// Module 17408 (NotifyFriendsOnCustomStatusUpdateSetting)
 import intl2 from "intl" /* 1112 */;
 import _modDef2992 from "module_2992" /* 2992 */;
 import UserSettings from "UserSettings" /* 4738 */;
 import SettingsConstants from "SettingsConstants" /* 8712 */;
-import NotifyFriendsOnCustomStatusUpdateUtils from "NotifyFriendsOnCustomStatusUpdateUtils" /* 17407 */;
-import NotifyFriendsOnCustomStatusUpdateExperiment from "NotifyFriendsOnCustomStatusUpdateExperiment" /* 17408 */;
+import NotifyFriendsOnCustomStatusUpdateUtils from "NotifyFriendsOnCustomStatusUpdateUtils" /* 17409 */;
+import NotifyFriendsOnCustomStatusUpdateExperiment from "NotifyFriendsOnCustomStatusUpdateExperiment" /* 17410 */;
 import SettingBuilders from "SettingBuilders" /* 11937 */;
 import size from "module_2" /* 2 */;
 

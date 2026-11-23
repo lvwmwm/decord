@@ -1,10 +1,10 @@
-// Module ID: 17228
-// Function ID: 17229
+// Module ID: 17230
+// Function ID: 17231
 // Name: UserSettingsDesignSystemContextMenu
-// Dependencies: [19, 17, 21, 13727, 14836, 8704, 12011, 5623, 17229, 17230, 12006, 4913, 575, 12, 8658, 5511, 7047, 5504, 2]
+// Dependencies: [19, 17, 21, 13727, 14838, 8704, 12011, 5623, 17231, 17232, 12006, 4913, 575, 12, 8658, 5511, 7047, 5504, 2]
 // Exports: default
 
-// Module 17228 (UserSettingsDesignSystemContextMenu)
+// Module 17230 (UserSettingsDesignSystemContextMenu)
 import _mod12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5504 */;
@@ -15,9 +15,9 @@ import AssetRegistryDefault2 from "AssetRegistry" /* 8704 */;
 import AssetRegistryDefault3 from "AssetRegistry" /* 12006 */;
 import AssetRegistryDefault4 from "AssetRegistry" /* 12011 */;
 import AssetRegistryDefault5 from "AssetRegistry" /* 13727 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 14836 */;
-import AssetRegistryDefault7 from "AssetRegistry" /* 17229 */;
-import AssetRegistryDefault8 from "AssetRegistry" /* 17230 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 14838 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 17231 */;
+import AssetRegistryDefault8 from "AssetRegistry" /* 17232 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

@@ -23,7 +23,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, c1, c3, c6, c7, importDefault, publishStatus;
 
-const f101891 = (item) => null != guild.getGuild(item);
+const f101866 = (item) => null != guild.getGuild(item);
 let obj = function _submitConjurePublishEval() {
   obj = _asyncToGenerator(async function(arg0, value, arg2) {
     let published_revision;
@@ -125,7 +125,7 @@ const result = size.fileFinishedImporting("modules/conjure/publish_eval/conjureP
 export function isConjurePublishEvalUser() {
   let closure_0 = GuildStore;
   const CONJURE_PUBLISH_EVAL_GUILD_IDS = ConjurePublishEvalTypes.CONJURE_PUBLISH_EVAL_GUILD_IDS;
-  return CONJURE_PUBLISH_EVAL_GUILD_IDS.some(f101891);
+  return CONJURE_PUBLISH_EVAL_GUILD_IDS.some(f101866);
 }
 export function getPendingConjurePublishEval() {
   const pending = ConjurePublishEvalStore.getPending();
@@ -142,7 +142,7 @@ export function getPendingConjurePublishEval() {
       let closure_0 = GuildStore;
       const CONJURE_PUBLISH_EVAL_GUILD_IDS = ConjurePublishEvalTypes.CONJURE_PUBLISH_EVAL_GUILD_IDS;
       tmp2 = null;
-      if (CONJURE_PUBLISH_EVAL_GUILD_IDS.some(f101891)) {
+      if (CONJURE_PUBLISH_EVAL_GUILD_IDS.some(f101866)) {
         tmp2 = pending;
       }
     }
@@ -173,7 +173,7 @@ export function usePendingConjurePublishEval(projectId) {
         closure_0 = GuildStore;
         const CONJURE_PUBLISH_EVAL_GUILD_IDS = ConjurePublishEvalTypes.CONJURE_PUBLISH_EVAL_GUILD_IDS;
         tmp3 = null;
-        if (CONJURE_PUBLISH_EVAL_GUILD_IDS.some(f101891)) {
+        if (CONJURE_PUBLISH_EVAL_GUILD_IDS.some(f101866)) {
           tmp3 = pending;
         }
       }
@@ -192,7 +192,7 @@ export function requestConjurePublishEval(projectId) {
     let closure_0 = GuildStore;
     const CONJURE_PUBLISH_EVAL_GUILD_IDS = ConjurePublishEvalTypes.CONJURE_PUBLISH_EVAL_GUILD_IDS;
     const tmp20 = require;
-    if (CONJURE_PUBLISH_EVAL_GUILD_IDS.some(f101891)) {
+    if (CONJURE_PUBLISH_EVAL_GUILD_IDS.some(f101866)) {
       const submittedAt = ConjurePublishEvalCooldownStore.getSubmittedAt(id1, projectId);
       let tmp6 = null != submittedAt;
       if (tmp6) {

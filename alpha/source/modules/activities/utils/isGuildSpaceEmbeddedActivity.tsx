@@ -1,10 +1,10 @@
-// Module ID: 14759
-// Function ID: 14760
+// Module ID: 14761
+// Function ID: 14762
 // Name: isGuildSpaceEmbeddedActivity
 // Dependencies: [4762, 4761, 7074, 4834, 1092, 2]
 // Exports: default
 
-// Module 14759 (isGuildSpaceEmbeddedActivity)
+// Module 14761 (isGuildSpaceEmbeddedActivity)
 import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4834 */;
 import ActivityGamePlatforms from "ActivityGamePlatforms" /* 7074 */;
 import ChannelStore from "ChannelStore" /* 4762 */;

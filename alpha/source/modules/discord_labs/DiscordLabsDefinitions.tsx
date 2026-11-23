@@ -1,10 +1,10 @@
-// Module ID: 14967
-// Function ID: 14968
+// Module ID: 14969
+// Function ID: 14970
 // Name: DiscordLabsDefinitions
 // Dependencies: [2]
 // Exports: isDefinedLab
 
-// Module 14967 (DiscordLabsDefinitions)
+// Module 14969 (DiscordLabsDefinitions)
 import size from "module_2" /* 2 */;
 
 const items = [];

@@ -1,10 +1,10 @@
-// Module ID: 17933
-// Function ID: 17934
+// Module ID: 17935
+// Function ID: 17936
 // Name: UnreadBars
 // Dependencies: [19, 17, 4914, 1071, 21, 4913, 6407, 575, 4910, 4974, 5129, 5130, 1186, 1112, 504, 13293, 2]
 // Exports: default
 
-// Module 17933 (UnreadBars)
+// Module 17935 (UnreadBars)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;

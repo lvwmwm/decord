@@ -1,10 +1,10 @@
-// Module ID: 18911
-// Function ID: 18912
+// Module ID: 18913
+// Function ID: 18914
 // Name: useProfileCoachmarkPosition
 // Dependencies: [32, 19, 575, 1494, 1628, 9945, 2]
 // Exports: default
 
-// Module 18911 (useProfileCoachmarkPosition)
+// Module 18913 (useProfileCoachmarkPosition)
 import nativeDefault from "native" /* 575 */;
 import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;

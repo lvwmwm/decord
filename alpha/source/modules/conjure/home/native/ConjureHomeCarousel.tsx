@@ -1,9 +1,9 @@
-// Module ID: 18625
-// Function ID: 18626
+// Module ID: 18627
+// Function ID: 18628
 // Name: ConjureHomeCarousel
-// Dependencies: [19, 17, 4914, 2118, 1071, 21, 575, 7040, 7704, 18626, 9904, 10133, 12179, 4913, 1653, 18628, 5600, 1412, 5504, 16308, 18629, 18637, 504, 1501, 7597, 1112, 4190, 2]
+// Dependencies: [19, 17, 4914, 2118, 1071, 21, 575, 7040, 7704, 18628, 9904, 10133, 12179, 4913, 1653, 18630, 5600, 1412, 5504, 16310, 18631, 18639, 504, 1501, 7597, 1112, 4190, 2]
 
-// Module 18625 (ConjureHomeCarousel)
+// Module 18627 (ConjureHomeCarousel)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -14,10 +14,10 @@ import AppsIcon from "AppsIcon" /* 7704 */;
 import ScreenIcon from "ScreenIcon" /* 9904 */;
 import ShieldIcon from "ShieldIcon" /* 10133 */;
 import RobotIcon from "RobotIcon" /* 12179 */;
-import LocalSvgDefault from "LocalSvg" /* 16308 */;
-import WidgetsIcon from "WidgetsIcon" /* 18626 */;
-import conjureHomeCarouselFan from "conjureHomeCarouselFan" /* 18628 */;
-import conjureHomeInspirationArtDefault from "conjureHomeInspirationArt" /* 18629 */;
+import LocalSvgDefault from "LocalSvg" /* 16310 */;
+import WidgetsIcon from "WidgetsIcon" /* 18628 */;
+import conjureHomeCarouselFan from "conjureHomeCarouselFan" /* 18630 */;
+import conjureHomeInspirationArtDefault from "conjureHomeInspirationArt" /* 18631 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4914 */;
 import AppStateStore from "AppStateStore" /* 2118 */;
@@ -42,7 +42,7 @@ let size1;
 let tmp3;
 const AvatarUtils = tmp3(1412);
 const Text_Text = tmp3(5504);
-const conjureHomeInspirationEntries = tmp3(18637);
+const conjureHomeInspirationEntries = tmp3(18639);
 let View = react_native.View;
 const AppStates = Constants.AppStates;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);

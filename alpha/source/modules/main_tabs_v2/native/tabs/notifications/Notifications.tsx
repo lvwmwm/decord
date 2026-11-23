@@ -1,10 +1,10 @@
-// Module ID: 18040
-// Function ID: 18041
+// Module ID: 18042
+// Function ID: 18043
 // Name: Notifications
-// Dependencies: [19, 17, 9420, 4759, 21, 4913, 575, 5090, 7373, 18041, 7017, 7030, 1112, 15969, 5504, 18042, 11680, 18043, 17513, 7520, 7539, 8268, 7101, 5491, 18047, 18048, 13712, 10432, 5085, 1628, 17533, 9659, 4974, 2]
+// Dependencies: [19, 17, 9420, 4759, 21, 4913, 575, 5090, 7373, 18043, 7017, 7030, 1112, 15971, 5504, 18044, 11680, 18045, 17515, 7520, 7539, 8268, 7101, 5491, 18049, 18050, 13712, 10432, 5085, 1628, 17535, 9659, 4974, 2]
 // Exports: ThemedNotificationsModal
 
-// Module 18040 (Notifications)
+// Module 18042 (Notifications)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
@@ -21,13 +21,13 @@ import MainTabsConstants from "MainTabsConstants" /* 9420 */;
 import ThemedGradientDefault from "ThemedGradient" /* 9659 */;
 import TTIFirstContentfulPaint from "TTIFirstContentfulPaint" /* 10432 */;
 import VoicePanelDockScrimDefault from "VoicePanelDockScrim" /* 13712 */;
-import useAppFrameDefault from "useAppFrame" /* 17513 */;
-import TabsPerformanceTracker from "TabsPerformanceTracker" /* 17533 */;
-import useForLaterCoachmarkDefault from "useForLaterCoachmark" /* 18041 */;
-import ForLaterOpenActionButtonDefault from "ForLaterOpenActionButton" /* 18042 */;
-import NotificationCenterActionButtonDefault from "NotificationCenterActionButton" /* 18043 */;
-import NotificationCenterPermissionNudgeDefault from "NotificationCenterPermissionNudge" /* 18047 */;
-import NotificationCenterForYou from "NotificationCenterForYou" /* 18048 */;
+import useAppFrameDefault from "useAppFrame" /* 17515 */;
+import TabsPerformanceTracker from "TabsPerformanceTracker" /* 17535 */;
+import useForLaterCoachmarkDefault from "useForLaterCoachmark" /* 18043 */;
+import ForLaterOpenActionButtonDefault from "ForLaterOpenActionButton" /* 18044 */;
+import NotificationCenterActionButtonDefault from "NotificationCenterActionButton" /* 18045 */;
+import NotificationCenterPermissionNudgeDefault from "NotificationCenterPermissionNudge" /* 18049 */;
+import NotificationCenterForYou from "NotificationCenterForYou" /* 18050 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;

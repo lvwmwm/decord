@@ -1,10 +1,10 @@
-// Module ID: 19806
-// Function ID: 19807
+// Module ID: 19808
+// Function ID: 19809
 // Name: SoundboardWaveformDisplay
 // Dependencies: [19, 17, 12824, 21, 4913, 575, 206, 13120, 2]
 // Exports: default
 
-// Module 19806 (SoundboardWaveformDisplay)
+// Module 19808 (SoundboardWaveformDisplay)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

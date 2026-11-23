@@ -1,9 +1,9 @@
-// Module ID: 19255
-// Function ID: 19256
+// Module ID: 19257
+// Function ID: 19258
 // Name: VoicePanelHeaderSpeaker
-// Dependencies: [109, 19, 17, 19256, 5655, 5674, 19257, 4762, 5656, 1071, 21, 19258, 19240, 9663, 10960, 10853, 563, 13820, 11015, 19262, 1378, 9670, 5675, 1112, 9667, 9669, 19263, 13819, 4945, 4746, 7324, 19200, 15218, 2]
+// Dependencies: [109, 19, 17, 19258, 5655, 5674, 19259, 4762, 5656, 1071, 21, 19260, 19242, 9663, 10960, 10853, 563, 13820, 11015, 19264, 1378, 9670, 5675, 1112, 9667, 9669, 19265, 13819, 4945, 4746, 7324, 19202, 15220, 2]
 
-// Module 19255 (VoicePanelHeaderSpeaker)
+// Module 19257 (VoicePanelHeaderSpeaker)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1071 */;
 import intl4 from "intl" /* 1112 */;
@@ -12,14 +12,14 @@ import dismissible_content from "dismissible_content" /* 4746 */;
 import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4945 */;
 import NativeViewDefault from "NativeView" /* 7324 */;
 import getConsoleIconDefault from "getConsoleIcon" /* 13820 */;
-import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 19200 */;
-import ConsoleVoiceUpsellStore from "ConsoleVoiceUpsellStore" /* 19256 */;
-import useSpeakerTooltipsDefault from "useSpeakerTooltips" /* 19258 */;
+import VoicePanelIconButtonDefault from "VoicePanelIconButton" /* 19202 */;
+import ConsoleVoiceUpsellStore from "ConsoleVoiceUpsellStore" /* 19258 */;
+import useSpeakerTooltipsDefault from "useSpeakerTooltips" /* 19260 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react_mod from "react" /* 19 */;
 import GameConsoleStore from "GameConsoleStore" /* 5655 */;
 import AudioRouteStore from "AudioRouteStore" /* 5674 */;
-import AudioRouteSwitchingStore from "AudioRouteSwitchingStore" /* 19257 */;
+import AudioRouteSwitchingStore from "AudioRouteSwitchingStore" /* 19259 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
 import SessionsStore from "SessionsStore" /* 5656 */;
 import Fragment from "Fragment" /* 21 */;

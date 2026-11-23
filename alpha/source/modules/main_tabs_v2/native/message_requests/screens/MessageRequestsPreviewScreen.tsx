@@ -1,10 +1,10 @@
-// Module ID: 19017
-// Function ID: 19018
+// Module ID: 19019
+// Function ID: 19020
 // Name: MessageRequestsPreviewScreen
-// Dependencies: [19, 6619, 1071, 21, 13326, 8579, 11098, 19018, 11741, 2]
+// Dependencies: [19, 6619, 1071, 21, 13326, 8579, 11098, 19020, 11741, 2]
 // Exports: default
 
-// Module 19017 (MessageRequestsPreviewScreen)
+// Module 19019 (MessageRequestsPreviewScreen)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1071 */;
 import MessageManagerDefault from "MessageManager" /* 8579 */;
@@ -31,7 +31,7 @@ export default function MessageRequestsScreen(route) {
   const ChannelContainer = channelId(11098).ChannelContainer;
   if (isMessageRequestRestrictedViewer) {
     const obj3 = { channelId };
-    tmp5Result = tmp5(tmp7(19018), obj3);
+    tmp5Result = tmp5(tmp7(19020), obj3);
   } else {
     const obj4 = { guildId: tmp6, channelId, chatInputRef: ref, HACK_fixModalInteraction: true, screenIndex: "message-request" };
     tmp5Result = tmp5(tmp7(11741), obj4);

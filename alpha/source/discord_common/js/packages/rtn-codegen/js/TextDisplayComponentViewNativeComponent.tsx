@@ -1,9 +1,9 @@
-// Module ID: 17151
-// Function ID: 17152
+// Module ID: 17153
+// Function ID: 17154
 // Name: TextDisplayComponentViewNativeComponent
 // Dependencies: [106, 65, 2]
 
-// Module 17151 (TextDisplayComponentViewNativeComponent)
+// Module 17153 (TextDisplayComponentViewNativeComponent)
 import DynamicallyInjectedByGestureHandler from "DynamicallyInjectedByGestureHandler" /* 106 */;
 import module_65 from "module_65" /* 65 */;
 import size from "module_2" /* 2 */;

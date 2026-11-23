@@ -1,10 +1,10 @@
-// Module ID: 16650
-// Function ID: 16651
+// Module ID: 16652
+// Function ID: 16653
 // Name: SettingsVoiceScreen
-// Dependencies: [19, 17, 2131, 8712, 1071, 21, 2187, 4913, 5122, 4920, 11000, 11001, 5600, 1112, 5173, 10999, 5504, 10996, 11937, 15983, 2]
+// Dependencies: [19, 17, 2131, 8712, 1071, 21, 2187, 4913, 5122, 4920, 11000, 11001, 5600, 1112, 5173, 10999, 5504, 10996, 11937, 15985, 2]
 // Exports: default
 
-// Module 16650 (SettingsVoiceScreen)
+// Module 16652 (SettingsVoiceScreen)
 import react_native from "react-native" /* 17 */;
 import Constants from "Constants" /* 1071 */;
 import intl10 from "intl" /* 1112 */;
@@ -15,7 +15,7 @@ import SettingsConstants from "SettingsConstants" /* 8712 */;
 import NoiseCancellationUtils from "NoiseCancellationUtils" /* 10996 */;
 import KrispLogo2 from "KrispLogo" /* 10999 */;
 import SettingBuilders from "SettingBuilders" /* 11937 */;
-import SettingLayoutDefault from "SettingLayout" /* 15983 */;
+import SettingLayoutDefault from "SettingLayout" /* 15985 */;
 import react from "react" /* 19 */;
 import MediaEngineStore from "MediaEngineStore" /* 2131 */;
 import Fragment from "Fragment" /* 21 */;

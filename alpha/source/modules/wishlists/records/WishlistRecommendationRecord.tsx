@@ -9,24 +9,24 @@ import SKURecord from "SKURecord" /* 2166 */;
 import ApplicationRecord from "ApplicationRecord" /* 2142 */;
 import size from "module_2" /* 2 */;
 
-const f89665 = (item) => SKURecord.createFromServer(item);
-const f89666 = (item) => {
+const f89639 = (item) => SKURecord.createFromServer(item);
+const f89640 = (item) => {
   let tmp;
   let tmp2;
   [tmp, tmp2] = item;
   const items = [tmp, tmp2];
   return items;
 };
-const f89667 = (item) => ApplicationRecord.createFromServer(item);
+const f89641 = (item) => ApplicationRecord.createFromServer(item);
 class WishlistRecommendationRecord extends Record {
   constructor(skus) {
     const tmp5 = new WishlistRecommendationRecord(tmp4, tmp3, tmp2, tmp);
     skus = skus.skus;
-    tmp5.skus = skus.map(f89665);
+    tmp5.skus = skus.map(f89639);
     const entries = Object.entries(skus.skus_to_user_and_reason);
-    tmp5.skusToUserAndReason = fromEntries(entries.map(f89666));
+    tmp5.skusToUserAndReason = fromEntries(entries.map(f89640));
     const applications = skus.applications;
-    tmp5.applications = applications.map(f89667);
+    tmp5.applications = applications.map(f89641);
     return tmp5;
   }
   static fromServer(skus) {
@@ -35,13 +35,13 @@ class WishlistRecommendationRecord extends Record {
       const self2 = this;
       const tmp7 = new WishlistRecommendationRecord(tmp4, tmp3, tmp2, tmp);
       skus = skus.skus;
-      tmp7.skus = skus.map(f89665);
+      tmp7.skus = skus.map(f89639);
       const _Object = Object;
       const _Object2 = Object;
       const entries = Object.entries(skus.skus_to_user_and_reason);
-      tmp7.skusToUserAndReason = fromEntries(entries.map(f89666));
+      tmp7.skusToUserAndReason = fromEntries(entries.map(f89640));
       const applications = skus.applications;
-      tmp7.applications = applications.map(f89667);
+      tmp7.applications = applications.map(f89641);
       return tmp7;
     } else {
       throw new TypeError("Trying to call a non-function");

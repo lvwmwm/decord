@@ -1,10 +1,10 @@
-// Module ID: 17818
-// Function ID: 17819
+// Module ID: 17820
+// Function ID: 17821
 // Name: WaterwheelsDiscoverCard
-// Dependencies: [32, 19, 17, 2140, 4784, 1071, 21, 575, 4913, 4776, 504, 17819, 5519, 10051, 5600, 5504, 9755, 7565, 1112, 2643, 5511, 17808, 12471, 5468, 9813, 17820, 7061, 13803, 17539, 7040, 17807, 17806, 2]
+// Dependencies: [32, 19, 17, 2140, 4784, 1071, 21, 575, 4913, 4776, 504, 17821, 5519, 10051, 5600, 5504, 9755, 7565, 1112, 2643, 5511, 17810, 12471, 5468, 9813, 17822, 7061, 13803, 17541, 7040, 17809, 17808, 2]
 // Exports: default
 
-// Module 17818 (WaterwheelsDiscoverCard)
+// Module 17820 (WaterwheelsDiscoverCard)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl7 from "intl" /* 1112 */;
@@ -14,11 +14,11 @@ import Text_Text from "Text/Text" /* 5504 */;
 import FastImageDefault from "FastImage" /* 5600 */;
 import GameControllerIcon2 from "GameControllerIcon" /* 7040 */;
 import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 10051 */;
-import useChannelListWidthDefault from "useChannelListWidth" /* 17539 */;
-import entry_data_ErrorBoundary from "entry_data/ErrorBoundary" /* 17806 */;
-import WaterwheelsPostCardDefault from "WaterwheelsPostCard" /* 17807 */;
-import WaterwheelsSectionLabelDefault from "WaterwheelsSectionLabel" /* 17808 */;
-import selectDiscoverServerAction from "selectDiscoverServerAction" /* 17819 */;
+import useChannelListWidthDefault from "useChannelListWidth" /* 17541 */;
+import entry_data_ErrorBoundary from "entry_data/ErrorBoundary" /* 17808 */;
+import WaterwheelsPostCardDefault from "WaterwheelsPostCard" /* 17809 */;
+import WaterwheelsSectionLabelDefault from "WaterwheelsSectionLabel" /* 17810 */;
+import selectDiscoverServerAction from "selectDiscoverServerAction" /* 17821 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -615,7 +615,7 @@ function GamePoster(game) {
   intl2 = tmp2(1112).intl;
   items3 = [, ];
   const obj4 = { gameId: game.gameId, name: game.name, coverUrl: game.coverUrl, iconGame: stateFromStores, width: 114, aspectRatio: 0.6909090909090909 };
-  items3[0] = closure_11(game(17820).GameCoverFromURLs, obj4);
+  items3[0] = closure_11(game(17822).GameCoverFromURLs, obj4);
   let tmp9Result = null;
   const tmp7 = closure_12;
   const tmp8 = closure_5;

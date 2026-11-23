@@ -1,9 +1,9 @@
-// Module ID: 18709
-// Function ID: 18710
+// Module ID: 18711
+// Function ID: 18712
 // Name: ChannelDetails
-// Dependencies: [19, 17, 13211, 4762, 8574, 10531, 21, 575, 4913, 504, 13153, 18710, 7520, 7539, 1500, 13305, 5143, 7373, 1628, 1378, 4870, 8268, 13222, 13197, 1653, 5123, 5126, 5514, 13231, 5098, 5173, 18711, 18721, 18838, 18840, 18841, 18842, 18843, 5891, 2]
+// Dependencies: [19, 17, 13211, 4762, 8574, 10531, 21, 575, 4913, 504, 13153, 18712, 7520, 7539, 1500, 13305, 5143, 7373, 1628, 1378, 4870, 8268, 13222, 13197, 1653, 5123, 5126, 5514, 13231, 5098, 5173, 18713, 18723, 18840, 18842, 18843, 18844, 18845, 5891, 2]
 
-// Module 18709 (ChannelDetails)
+// Module 18711 (ChannelDetails)
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
 import SearchPlatformUtilsDefault from "SearchPlatformUtils" /* 13197 */;

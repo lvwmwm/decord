@@ -1,10 +1,10 @@
-// Module ID: 17733
-// Function ID: 17734
+// Module ID: 17735
+// Function ID: 17736
 // Name: GuildPowerupsChannelRow
-// Dependencies: [19, 17, 5642, 21, 13384, 7225, 575, 1186, 4913, 17684, 17530, 5493, 13380, 13399, 13248, 13368, 7539, 5491, 1112, 2856, 17734, 13145, 2]
+// Dependencies: [19, 17, 5642, 21, 13384, 7225, 575, 1186, 4913, 17686, 17532, 5493, 13380, 13399, 13248, 13368, 7539, 5491, 1112, 2856, 17736, 13145, 2]
 // Exports: default
 
-// Module 17733 (GuildPowerupsChannelRow)
+// Module 17735 (GuildPowerupsChannelRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import native from "native" /* 1186 */;
@@ -12,8 +12,8 @@ import RedesignChannelListConstants from "RedesignChannelListConstants" /* 5642 
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7539 */;
 import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 13368 */;
 import GuildPowerupsNotification from "GuildPowerupsNotification" /* 13384 */;
-import SidebarCoachmarkOverlay from "SidebarCoachmarkOverlay" /* 17530 */;
-import useGuildPowerupsCoachmarkDefault from "useGuildPowerupsCoachmark" /* 17684 */;
+import SidebarCoachmarkOverlay from "SidebarCoachmarkOverlay" /* 17532 */;
+import useGuildPowerupsCoachmarkDefault from "useGuildPowerupsCoachmark" /* 17686 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4913 */;
@@ -143,7 +143,7 @@ export default function GuildPowerupsChannelRow(guildId) {
   obj5 = { name: intl2.string(dismissNewBadgeIfShown(2856).yv3DJJ), mode: DEFAULT };
   BaseChannelName = tmp14(13248).BaseChannelName;
   intl2 = tmp14(1112).intl;
-  obj6 = { mode: DEFAULT, IconComponent: tmp14(17734).BoostTier2Icon };
+  obj6 = { mode: DEFAULT, IconComponent: tmp14(17736).BoostTier2Icon };
   BaseChannelIcon = tmp14(13248).BaseChannelIcon;
   if (showNewBadgeOnRow) {
     tmp16Result = tmp16(tmp14(13145).NewBadge, {});

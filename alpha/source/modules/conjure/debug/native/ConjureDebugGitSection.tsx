@@ -1,10 +1,10 @@
-// Module ID: 18683
-// Function ID: 18684
+// Module ID: 18685
+// Function ID: 18686
 // Name: ConjureDebugGitSection
-// Dependencies: [32, 19, 17, 21, 4913, 575, 7675, 11242, 13765, 18684, 8048, 18686, 12471, 18688, 10943, 11148, 7532, 7763, 7231, 17194, 17196, 18690, 18678, 5504, 4975, 5866, 5929, 7336, 5511, 10343, 2]
+// Dependencies: [32, 19, 17, 21, 4913, 575, 7675, 11242, 13765, 18686, 8048, 18688, 12471, 18690, 10943, 11148, 7532, 7763, 7231, 17196, 17198, 18692, 18680, 5504, 4975, 5866, 5929, 7336, 5511, 10343, 2]
 // Exports: ConjureDebugGitSection, ConjureDebugRestartAgent
 
-// Module 18683 (ConjureDebugGitSection)
+// Module 18685 (ConjureDebugGitSection)
 import nativeDefault from "native" /* 575 */;
 import AlertModal from "AlertModal" /* 5866 */;
 import CircleXIcon from "CircleXIcon" /* 7231 */;
@@ -17,13 +17,13 @@ import FileIcon from "FileIcon" /* 11148 */;
 import PencilIcon from "PencilIcon" /* 11242 */;
 import ServerIcon from "ServerIcon" /* 12471 */;
 import CloudIcon from "CloudIcon" /* 13765 */;
-import ArrowSmallUpIcon from "ArrowSmallUpIcon" /* 17194 */;
-import ArrowSmallDownIcon from "ArrowSmallDownIcon" /* 17196 */;
-import ConjureDebugPrimitives from "ConjureDebugPrimitives" /* 18678 */;
-import ListNumberedIcon from "ListNumberedIcon" /* 18684 */;
-import SaveIcon from "SaveIcon" /* 18686 */;
-import CloudDownloadIcon from "CloudDownloadIcon" /* 18688 */;
-import ConjureDebugGit from "ConjureDebugGit" /* 18690 */;
+import ArrowSmallUpIcon from "ArrowSmallUpIcon" /* 17196 */;
+import ArrowSmallDownIcon from "ArrowSmallDownIcon" /* 17198 */;
+import ConjureDebugPrimitives from "ConjureDebugPrimitives" /* 18680 */;
+import ListNumberedIcon from "ListNumberedIcon" /* 18686 */;
+import SaveIcon from "SaveIcon" /* 18688 */;
+import CloudDownloadIcon from "CloudDownloadIcon" /* 18690 */;
+import ConjureDebugGit from "ConjureDebugGit" /* 18692 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

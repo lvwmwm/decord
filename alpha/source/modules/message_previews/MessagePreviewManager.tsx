@@ -1,20 +1,20 @@
-// Module ID: 16723
-// Function ID: 16724
+// Module ID: 16725
+// Function ID: 16726
 // Name: MessagePreviewManager
-// Dependencies: [32, 5, 6394, 4766, 502, 4762, 14995, 1071, 3, 7484, 12, 4791, 572, 1284, 16724, 2]
+// Dependencies: [32, 5, 6394, 4766, 502, 4762, 14997, 1071, 3, 7484, 12, 4791, 572, 1284, 16726, 2]
 
-// Module 16723 (MessagePreviewManager)
+// Module 16725 (MessagePreviewManager)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
 import Constants from "Constants" /* 1071 */;
 import ChannelRecord from "ChannelRecord" /* 4766 */;
-import RemoteFetchData from "RemoteFetchData" /* 16724 */;
+import RemoteFetchData from "RemoteFetchData" /* 16726 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 6394 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
-import MessagePreviewStore from "message_previews/MessagePreviewStore" /* 14995 */;
+import MessagePreviewStore from "message_previews/MessagePreviewStore" /* 14997 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7484 */;
 import size from "module_2" /* 2 */;
 

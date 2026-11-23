@@ -1,10 +1,10 @@
-// Module ID: 18393
-// Function ID: 18394
+// Module ID: 18395
+// Function ID: 18396
 // Name: ConjureHeaderIconButton
 // Dependencies: [19, 17, 21, 9023, 4913, 7030, 2]
 // Exports: default
 
-// Module 18393 (ConjureHeaderIconButton)
+// Module 18395 (ConjureHeaderIconButton)
 import react_native from "react-native" /* 17 */;
 import ClipView from "ClipView" /* 9023 */;
 import react from "react" /* 19 */;
@@ -30,10 +30,12 @@ const result = size.fileFinishedImporting("modules/conjure/shared/native/Conjure
 export default function ConjureHeaderIconButton(ref) {
   let IconComponent;
   let accessibilityActions;
+  let accessibilityHint;
   let accessibilityLabel;
   let accessibilityState;
   let badge;
   let badgeSize;
+  let dimmed;
   let disabled;
   let items1;
   let items2;
@@ -41,13 +43,14 @@ export default function ConjureHeaderIconButton(ref) {
   let onPress;
   let tmp3Result;
   ({ IconComponent, disabled, badge, badgeSize } = ref);
-  ({ onPress, accessibilityLabel, accessibilityActions, onAccessibilityAction, accessibilityState } = ref);
+  ({ onPress, accessibilityLabel, accessibilityHint, accessibilityActions, onAccessibilityAction, accessibilityState, dimmed } = ref);
   if (badgeSize === undefined) {
     badgeSize = 8;
   }
   ref = ref.ref;
   const tmp = closure_7(badgeSize);
   let items = [badgeSize];
+  let disabledIcon = true === disabled;
   const memo = react.useMemo(() => {
     let diff1;
     const point = { shape: ClipView.CutoutShape.Circle, x: diff1, y: diff1, size: badgeSize + 4 };
@@ -56,31 +59,33 @@ export default function ConjureHeaderIconButton(ref) {
     const items = [point];
     return items;
   }, items);
-  const obj = { ref, accessibilityRole: "button", accessibilityLabel, accessibilityActions, onAccessibilityAction, accessibilityState, disabled, onPress, activeOpacity: 0.6, androidRippleConfig, style: tmp.button, children: tmp3Result };
+  if (!disabledIcon) {
+    disabledIcon = true === dimmed;
+  }
+  const obj = { ref, accessibilityRole: "button", accessibilityLabel, accessibilityHint, accessibilityActions, onAccessibilityAction, accessibilityState, disabled, onPress, activeOpacity: 0.6, androidRippleConfig, style: tmp.button, children: tmp3Result };
   const PressableOpacity = badgeSize(7030).PressableOpacity;
   if (null != badge) {
     const obj2 = { style: tmp.icon, children: items2 };
     const obj3 = { cutouts: memo, style: items1, children: closure_5(IconComponent, {}) };
     items1 = [tmp.icon, ];
-    let disabledIcon2 = true === disabled;
     const tmp10 = ClipViewDefault;
     const tmp7 = closure_6;
-    if (disabledIcon2) {
-      disabledIcon2 = tmp.disabledIcon;
+    if (disabledIcon) {
+      disabledIcon = tmp.disabledIcon;
     }
-    items1[1] = disabledIcon2;
+    items1[1] = disabledIcon;
     items2 = [closure_5(tmp10, obj3), ];
     const obj4 = { style: tmp.badge, children: badge };
     items2[1] = closure_5(View, obj4);
     tmp3Result = tmp7(tmp8, obj2);
   } else {
     const items3 = [tmp.icon, ];
-    let disabledIcon = true === disabled;
+    let disabledIcon2 = disabledIcon;
     const tmp5 = View;
     if (disabledIcon) {
-      disabledIcon = tmp.disabledIcon;
+      disabledIcon2 = tmp.disabledIcon;
     }
-    items3[1] = disabledIcon;
+    items3[1] = disabledIcon2;
     const obj5 = { style: items3, children: closure_5(IconComponent, {}) };
     tmp3Result = tmp3(tmp5, obj5);
   }

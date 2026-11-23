@@ -1,10 +1,10 @@
-// Module ID: 16695
-// Function ID: 16696
+// Module ID: 16697
+// Function ID: 16698
 // Name: SettingsAppearanceChannelRowItem
 // Dependencies: [19, 17, 1071, 21, 4913, 575, 1186, 10124, 5504, 2]
 // Exports: default
 
-// Module 16695 (SettingsAppearanceChannelRowItem)
+// Module 16697 (SettingsAppearanceChannelRowItem)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;

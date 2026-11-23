@@ -1,18 +1,18 @@
-// Module ID: 18305
-// Function ID: 18306
+// Module ID: 18307
+// Function ID: 18308
 // Name: useConjureAppSettingsForm
-// Dependencies: [5, 32, 19, 17, 4843, 4784, 4855, 1386, 6982, 21, 4913, 575, 504, 18306, 14745, 18308, 1112, 4190, 14744, 18309, 7348, 18310, 7335, 7347, 7349, 18321, 7461, 7221, 5504, 5511, 6865, 7045, 7060, 5529, 5127, 11731, 18307, 18325, 2]
+// Dependencies: [5, 32, 19, 17, 4843, 4784, 4855, 1386, 6982, 21, 4913, 575, 504, 18308, 14747, 18310, 1112, 4190, 14746, 18311, 7348, 18312, 7335, 7347, 7349, 18323, 7461, 7221, 5504, 5511, 6865, 7045, 7060, 5529, 5127, 11731, 18309, 18327, 2]
 // Exports: default
 
-// Module 18305 (useConjureAppSettingsForm)
+// Module 18307 (useConjureAppSettingsForm)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl9 from "intl" /* 1112 */;
 import _modDef4190 from "module_4190" /* 4190 */;
 import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5127 */;
 import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 11731 */;
-import conjureSettingValues from "conjureSettingValues" /* 14745 */;
-import ConjureGuildPickerSheetDefault from "ConjureGuildPickerSheet" /* 18325 */;
+import conjureSettingValues from "conjureSettingValues" /* 14747 */;
+import ConjureGuildPickerSheetDefault from "ConjureGuildPickerSheet" /* 18327 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -35,7 +35,7 @@ let obj3;
 let obj4;
 let obj5;
 let tmp;
-const useConjureSettingPickerOptions = tmp(18306);
+const useConjureSettingPickerOptions = tmp(18308);
 function ConjureChannelSettingRow(guildId) {
   let TableRowTrailingText;
   let disabled;
@@ -117,7 +117,7 @@ function ConjureChannelSettingRow(guildId) {
         let obj3 = { variant: "body-xs/medium", color: "text-subtle", children: tmpResult3.conjureLinkedNodes(hint, "body-xs/medium") };
         const Text = tmp(5504).Text;
         let str = "body-xs/medium";
-        tmpResult3 = tmp(18310);
+        tmpResult3 = tmp(18312);
         tmp5Result = tmp5(Text, obj3);
       }
       TableRowTrailingText = tmp(7060).TableRowTrailingText;
@@ -153,12 +153,12 @@ function ConjurePickerSettingRow(guildId) {
   let tmp = def;
   let tmp2 = dependencyMap;
   ({ disabled, fallback } = guildId);
-  let tmp3 = def(18306)(guildId, def);
+  let tmp3 = def(18308)(guildId, def);
   let tmp4 = guildId;
-  let obj = guildId(18306);
+  let obj = guildId(18308);
   const result = obj.conjureSettingPickedIds(value);
   let c3 = result;
-  let tmp5 = guildId(18307);
+  let tmp5 = guildId(18309);
   let tmp6 = null;
   const useConjureMemberRequests = tmp5.useConjureMemberRequests;
   if ("user" === def.type) {
@@ -168,7 +168,7 @@ function ConjurePickerSettingRow(guildId) {
   if (null != guildId) {
     if (null != tmp3) {
       let formatToPlainStringResult;
-      const tmp4Result = tmp4(18306);
+      const tmp4Result = tmp4(18308);
       const withSavedPicksResult = tmp4Result.withSavedPicks(tmp3, value, (id) => ({ id, label: id }));
       c4 = withSavedPicksResult;
       closure_5 = tmp12;
@@ -236,7 +236,7 @@ function ConjurePickerSettingRow(guildId) {
         const obj4 = { variant: "body-xs/medium", color: "text-subtle", children: tmp4Result2.conjureLinkedNodes(hint, "body-xs/medium") };
         const Text = tmp4(5504).Text;
         let str = "body-xs/medium";
-        tmp4Result2 = tmp4(18310);
+        tmp4Result2 = tmp4(18312);
         tmp10Result = tmp10(Text, obj4);
       }
       const obj5 = { hasIcons: false, children: closure_12(TableRow, obj3) };

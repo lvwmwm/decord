@@ -1,10 +1,10 @@
-// Module ID: 18267
-// Function ID: 18268
+// Module ID: 18269
+// Function ID: 18270
 // Name: requestConjureAppIcon
 // Dependencies: [6967, 1112, 4190, 2]
 // Exports: default
 
-// Module 18267 (requestConjureAppIcon)
+// Module 18269 (requestConjureAppIcon)
 import intl2 from "intl" /* 1112 */;
 import _modDef4190 from "module_4190" /* 4190 */;
 import ConjureConnectionStore from "ConjureConnectionStore" /* 6967 */;

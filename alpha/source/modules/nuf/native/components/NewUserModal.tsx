@@ -1,15 +1,15 @@
-// Module ID: 19600
-// Function ID: 19601
+// Module ID: 19602
+// Function ID: 19603
 // Name: NewUserModal
-// Dependencies: [19, 17, 21, 8638, 4913, 575, 19601, 2119, 5862, 7092, 19599, 6429, 19598, 7101, 19602, 1378, 17504, 19603, 13602, 13590, 19604, 19611, 19617, 2]
+// Dependencies: [19, 17, 21, 8638, 4913, 575, 19603, 2119, 5862, 7092, 19601, 6429, 19600, 7101, 19604, 1378, 17506, 19605, 13602, 13590, 19606, 19613, 19619, 2]
 // Exports: default
 
-// Module 19600 (NewUserModal)
+// Module 19602 (NewUserModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
-import NewUserUtils from "NewUserUtils" /* 19599 */;
-import InterestPickerPicksContextDefault from "InterestPickerPicksContext" /* 19602 */;
+import NewUserUtils from "NewUserUtils" /* 19601 */;
+import InterestPickerPicksContextDefault from "InterestPickerPicksContext" /* 19604 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import NativeStackView from "NativeStackView" /* 8638 */;

@@ -1,18 +1,18 @@
-// Module ID: 17653
-// Function ID: 17654
+// Module ID: 17655
+// Function ID: 17656
 // Name: ChannelListStickyHeader
-// Dependencies: [19, 17, 1071, 21, 1653, 4913, 575, 17624, 4787, 1112, 17654, 15119, 17652, 9753, 7054, 5477, 10011, 5504, 9755, 1186, 7565, 17668, 13151, 17672, 17673, 2]
+// Dependencies: [19, 17, 1071, 21, 1653, 4913, 575, 17626, 4787, 1112, 17656, 15121, 17654, 9753, 7054, 5477, 10011, 5504, 9755, 1186, 7565, 17670, 13151, 17674, 17675, 2]
 // Exports: default
 
-// Module 17653 (ChannelListStickyHeader)
+// Module 17655 (ChannelListStickyHeader)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import GuildBadgeV2Default from "GuildBadgeV2" /* 9755 */;
-import openGuildActionSheetDefault from "openGuildActionSheet" /* 15119 */;
-import useIsGameCommunityServerPreviewDefault from "useIsGameCommunityServerPreview" /* 17624 */;
-import useStickyServerHeaderSubtitleDefault from "useStickyServerHeaderSubtitle" /* 17652 */;
-import openFavoritesGuildActionSheetDefault from "openFavoritesGuildActionSheet" /* 17654 */;
-import LurkerServerPreviewJoinButtonDefault from "LurkerServerPreviewJoinButton" /* 17672 */;
+import openGuildActionSheetDefault from "openGuildActionSheet" /* 15121 */;
+import useIsGameCommunityServerPreviewDefault from "useIsGameCommunityServerPreview" /* 17626 */;
+import useStickyServerHeaderSubtitleDefault from "useStickyServerHeaderSubtitle" /* 17654 */;
+import openFavoritesGuildActionSheetDefault from "openFavoritesGuildActionSheet" /* 17656 */;
+import LurkerServerPreviewJoinButtonDefault from "LurkerServerPreviewJoinButton" /* 17674 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -201,7 +201,7 @@ export default function ChannelListStickyHeader(guild) {
   items6 = [tmp16Result2, ];
   let tmp25Result5 = null;
   if (isFavoritesGuildIdResult) {
-    tmp25Result5 = tmp25(tmp6(17668).FavoritesGuildHeaderActionButton, {});
+    tmp25Result5 = tmp25(tmp6(17670).FavoritesGuildHeaderActionButton, {});
   }
   items6[1] = tmp25Result5;
   items7 = [closure_7(closure_4, obj15), , , , ];
@@ -222,7 +222,7 @@ export default function ChannelListStickyHeader(guild) {
   let tmp25Result8 = null;
   if (flag3) {
     const obj20 = { targetRef: ref, guild };
-    tmp25Result8 = tmp25(tmp2(17673), obj20);
+    tmp25Result8 = tmp25(tmp2(17675), obj20);
   }
   items7[4] = tmp25Result8;
   return closure_7(closure_4, obj14);

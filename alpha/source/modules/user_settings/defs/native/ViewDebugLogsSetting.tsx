@@ -1,9 +1,9 @@
-// Module ID: 16978
-// Function ID: 16979
+// Module ID: 16980
+// Function ID: 16981
 // Name: ViewDebugLogsSetting
-// Dependencies: [19, 17, 21, 5127, 7555, 6429, 10537, 7553, 7515, 1112, 16979, 16981, 5622, 16984, 1378, 11667, 16985, 11937, 15052, 4738, 2]
+// Dependencies: [19, 17, 21, 5127, 7555, 6429, 10537, 7553, 7515, 1112, 16981, 16983, 5622, 16986, 1378, 11667, 16987, 11937, 15054, 4738, 2]
 
-// Module 16978 (ViewDebugLogsSetting)
+// Module 16980 (ViewDebugLogsSetting)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 19 */;
 import intl5 from "intl" /* 1112 */;
@@ -17,11 +17,11 @@ import ActionSheet2 from "ActionSheet" /* 7553 */;
 import ActionSheetRow from "ActionSheetRow" /* 7555 */;
 import ModalStackNavigatorDefault from "ModalStackNavigator" /* 10537 */;
 import ChannelNotificationIcon from "ChannelNotificationIcon" /* 11667 */;
-import ChannelListMagnifyingGlassIcon from "ChannelListMagnifyingGlassIcon" /* 15052 */;
-import WrenchIcon from "WrenchIcon" /* 16979 */;
-import UserSettingsDebugLogsDefault from "UserSettingsDebugLogs" /* 16981 */;
-import UserSettingsStartupTimingsDefault from "UserSettingsStartupTimings" /* 16984 */;
-import UserSettingsPushNotificationLogsDefault from "UserSettingsPushNotificationLogs" /* 16985 */;
+import ChannelListMagnifyingGlassIcon from "ChannelListMagnifyingGlassIcon" /* 15054 */;
+import WrenchIcon from "WrenchIcon" /* 16981 */;
+import UserSettingsDebugLogsDefault from "UserSettingsDebugLogs" /* 16983 */;
+import UserSettingsStartupTimingsDefault from "UserSettingsStartupTimings" /* 16986 */;
+import UserSettingsPushNotificationLogsDefault from "UserSettingsPushNotificationLogs" /* 16987 */;
 import Fragment from "Fragment" /* 21 */;
 import SettingBuilders from "SettingBuilders" /* 11937 */;
 import size from "module_2" /* 2 */;

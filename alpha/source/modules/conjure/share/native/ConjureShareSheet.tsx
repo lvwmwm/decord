@@ -1,18 +1,18 @@
-// Module ID: 18345
-// Function ID: 18346
+// Module ID: 18347
+// Function ID: 18348
 // Name: ConjureShareSheet
-// Dependencies: [19, 17, 21, 4913, 575, 5127, 18262, 7553, 13787, 7515, 1112, 4190, 18346, 5511, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 5127, 18264, 7553, 13787, 7515, 1112, 4190, 18348, 5511, 2]
 // Exports: default
 
-// Module 18345 (ConjureShareSheet)
+// Module 18347 (ConjureShareSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
 import _modDef4190 from "module_4190" /* 4190 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
 import ActionSheet2 from "ActionSheet" /* 7553 */;
-import useConjureSharingModeDefault from "useConjureSharingMode" /* 18262 */;
-import ConjureShareAccessDefault from "ConjureShareAccess" /* 18346 */;
+import useConjureSharingModeDefault from "useConjureSharingMode" /* 18264 */;
+import ConjureShareAccessDefault from "ConjureShareAccess" /* 18348 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;

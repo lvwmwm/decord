@@ -1,10 +1,10 @@
-// Module ID: 20004
-// Function ID: 20005
+// Module ID: 20006
+// Function ID: 20007
 // Name: GuildRoleSubscriptionGroupDetailsModal
-// Dependencies: [32, 19, 17, 20005, 16608, 1071, 21, 4913, 575, 20006, 20001, 7348, 1112, 20007, 5504, 16620, 7461, 20008, 2]
+// Dependencies: [32, 19, 17, 20007, 16610, 1071, 21, 4913, 575, 20008, 20003, 7348, 1112, 20009, 5504, 16622, 7461, 20010, 2]
 // Exports: default
 
-// Module 20004 (GuildRoleSubscriptionGroupDetailsModal)
+// Module 20006 (GuildRoleSubscriptionGroupDetailsModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -12,15 +12,15 @@ import intl5 from "intl" /* 1112 */;
 import Text_Text from "Text/Text" /* 5504 */;
 import TableRowGroup from "TableRowGroup" /* 7348 */;
 import TextArea2 from "TextArea" /* 7461 */;
-import FormSeparatorDefault from "FormSeparator" /* 16620 */;
-import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 20001 */;
-import FormStylesDefault from "FormStyles" /* 20006 */;
-import FormImagePicker from "FormImagePicker" /* 20007 */;
-import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 20008 */;
+import FormSeparatorDefault from "FormSeparator" /* 16622 */;
+import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 20003 */;
+import FormStylesDefault from "FormStyles" /* 20008 */;
+import FormImagePicker from "FormImagePicker" /* 20009 */;
+import GuildRoleSubscriptionTierEditStepDefault from "GuildRoleSubscriptionTierEditStep" /* 20010 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 20005 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16608 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 20007 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16610 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;

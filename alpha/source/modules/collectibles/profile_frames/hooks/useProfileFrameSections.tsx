@@ -1,10 +1,10 @@
-// Module ID: 15895
-// Function ID: 15896
+// Module ID: 15897
+// Function ID: 15898
 // Name: useProfileFrameSections
 // Dependencies: [32, 19, 8075, 8090, 563, 8087, 1112, 14254, 2]
 // Exports: default
 
-// Module 15895 (useProfileFrameSections)
+// Module 15897 (useProfileFrameSections)
 import react from "react" /* 19 */;
 import intl4 from "intl" /* 1112 */;
 import CollectiblesUtils from "CollectiblesUtils" /* 8087 */;

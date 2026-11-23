@@ -36,7 +36,7 @@ let c10;
 let c9;
 let closure_12;
 let unpackModuleId;
-const f98640 = (joinSound) => null != joinSound.joinSound;
+const f98615 = (joinSound) => null != joinSound.joinSound;
 function hasPermissionToPlaySound(guildId, guild_id) {
   guild_id = undefined;
   if (guild_id != null) {
@@ -257,7 +257,7 @@ export function hasSetAnyCustomJoinSound() {
     obj = {};
   }
   const values = Object.values(obj);
-  return values.some(f98640);
+  return values.some(f98615);
 }
 export function maybePlayCustomJoinSound() {
   return obj(...arguments);
@@ -283,7 +283,7 @@ export function useSoundBoardDismissContentTypes(isSoundboardButtonDisabled) {
     }
     const _Object = Object;
     const values = Object.values(obj2);
-    if (!values.some(f98640)) {
+    if (!values.some(f98615)) {
       const tmpResult = UserUtils;
       const result = tmpResult.ageEligibleForPremiumUpsell(stateFromStores);
       const obj5 = PremiumUtilsDefault;

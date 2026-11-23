@@ -1,9 +1,9 @@
-// Module ID: 18796
-// Function ID: 18797
+// Module ID: 18798
+// Function ID: 18799
 // Name: PeopleScreen
-// Dependencies: [5, 32, 19, 13226, 13211, 8576, 8575, 21, 13204, 504, 18738, 18734, 7737, 13218, 18797, 18729, 18742, 2]
+// Dependencies: [5, 32, 19, 13226, 13211, 8576, 8575, 21, 13204, 504, 18740, 18736, 7737, 13218, 18799, 18731, 18744, 2]
 
-// Module 18796 (PeopleScreen)
+// Module 18798 (PeopleScreen)
 import Fragment from "Fragment" /* 21 */;
 import TrackingConstants from "TrackingConstants" /* 8575 */;
 import TrackingDefault from "Tracking" /* 13218 */;

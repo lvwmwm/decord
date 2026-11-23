@@ -1,10 +1,10 @@
-// Module ID: 16043
-// Function ID: 16044
+// Module ID: 16045
+// Function ID: 16046
 // Name: SafetyHubViolationsContainer
-// Dependencies: [32, 19, 17, 7835, 7809, 1071, 21, 4913, 575, 8042, 7763, 5504, 1112, 14192, 12797, 7808, 11, 16044, 7810, 6429, 12423, 2119, 12427, 504, 1255, 12425, 2]
+// Dependencies: [32, 19, 17, 7835, 7809, 1071, 21, 4913, 575, 8042, 7763, 5504, 1112, 14192, 12797, 7808, 11, 16046, 7810, 6429, 12423, 2119, 12427, 504, 1255, 12425, 2]
 // Exports: ConnectedSafetyHubViolationsContainer
 
-// Module 16043 (SafetyHubViolationsContainer)
+// Module 16045 (SafetyHubViolationsContainer)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl4 from "intl" /* 1112 */;
@@ -255,7 +255,7 @@ class SafetyHubViolationsContainer {
     let obj11;
     let obj9;
     let status;
-    const f109051 = (classification) => {
+    const f109028 = (classification) => {
       const obj = { classification };
       return closure_1_11(ClassificationDetail, obj, classification.id);
     };
@@ -305,9 +305,9 @@ class SafetyHubViolationsContainer {
     items3[0] = closure_11(SafetyHubViolationsHeader, obj4);
     if (opened) {
       const obj5 = { style: tmp.separator };
-      const items4 = [closure_11(stateFromStores, obj5), memo.length > 0 && memo.map(f109051), , , ];
+      const items4 = [closure_11(stateFromStores, obj5), memo.length > 0 && memo.map(f109028), , , ];
       let tmp11Result = memo.length < classifications.length;
-      memo.length > 0 && memo.map(f109051);
+      memo.length > 0 && memo.map(f109028);
       if (tmp11Result) {
         const obj6 = { children: items5 };
         const obj7 = { style: tmp.separator };

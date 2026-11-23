@@ -1,10 +1,10 @@
-// Module ID: 18886
-// Function ID: 18887
+// Module ID: 18888
+// Function ID: 18889
 // Name: SpamRequestsScreen
-// Dependencies: [19, 4855, 1386, 9646, 1071, 21, 7520, 7539, 504, 18885, 5930, 1263, 8067, 9656, 2]
+// Dependencies: [19, 4855, 1386, 9646, 1071, 21, 7520, 7539, 504, 18887, 5930, 1263, 8067, 9656, 2]
 // Exports: default
 
-// Module 18886 (SpamRequestsScreen)
+// Module 18888 (SpamRequestsScreen)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1071 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8067 */;

@@ -1,9 +1,9 @@
-// Module ID: 15666
-// Function ID: 15667
+// Module ID: 15668
+// Function ID: 15669
 // Name: FrecencySettingsMigrations
 // Dependencies: [1081, 1071, 504, 1231, 12, 1232, 510, 11, 2]
 
-// Module 15666 (FrecencySettingsMigrations)
+// Module 15668 (FrecencySettingsMigrations)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage4 from "Storage" /* 510 */;

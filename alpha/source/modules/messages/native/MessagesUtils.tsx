@@ -72,7 +72,7 @@ let tmp;
 let tmp9;
 const SnowflakeUtilsDefault = tmp9(11);
 const KeyboardTypes = tmp(1626);
-const f97594 = (id) => id.id;
+const f97569 = (id) => id.id;
 function getVisibleMessages(arg0) {
   let chatManager;
   let firstVisibleMessagePercentVisible;
@@ -310,7 +310,7 @@ export function getLongPressSelectedMedia(message, mediaIndex, mediaType, tmpRes
     } else {
       if (obj.embeds[mediaIndex].type === constants4.IMAGE) {
         if (null != obj.embeds[mediaIndex].url) {
-          return { sourceType: "embed", source: obj.embeds[mediaIndex], mediaType: "image", mediaUrl: obj.embeds[mediaIndex].url, contentType: "a" };
+          return { sourceType: "embed", source: obj.embeds[mediaIndex], mediaType: "image", mediaUrl: obj.embeds[mediaIndex].url, contentType: "Array" };
         }
       }
       if (obj.embeds[mediaIndex].type === constants4.GIFV) {
@@ -581,7 +581,7 @@ export function startOrCancelChannelLatestMessagesLoad(hasJumpedToOriginalPost) 
 export function recordTimings(channelId, hasFetched) {
   const recordMessageRender = TTITrackerDefault.recordMessageRender;
   TTITrackerDefault;
-  const mapped = hasFetched.map(f97594);
+  const mapped = hasFetched.map(f97569);
   hasFetched = hasFetched.hasFetched;
   if (!hasFetched) {
     hasFetched = hasFetched.ready && !hasFetched.cached;
@@ -830,7 +830,7 @@ export function syncMessageDisplay(messages) {
   }
   const recordMessageRender = oldestUnreadMessageId(scrollToMessageId[39]).recordMessageRender;
   oldestUnreadMessageId(scrollToMessageId[39]);
-  const mapped = messages.map(f97594);
+  const mapped = messages.map(f97569);
   let hasFetched = messages.hasFetched;
   if (!hasFetched) {
     hasFetched = messages.ready && !messages.cached;

@@ -1,17 +1,17 @@
-// Module ID: 18587
-// Function ID: 18588
+// Module ID: 18589
+// Function ID: 18590
 // Name: ConjureImageOptions
 // Dependencies: [32, 1112, 4190, 7258, 2]
 // Exports: answeredOptionIds, hasTypedAnswer, imageOptionCaption, imageOptionViewerSize, imageOptionsLayout, isImageQuestion, noImageAnswer, ownImageOption, ownImageUploadText, registrableDomain, uploadHint, viewableImageOptions
 
-// Module 18587 (ConjureImageOptions)
+// Module 18589 (ConjureImageOptions)
 import intl3 from "intl" /* 1112 */;
 import _modDef4190 from "module_4190" /* 4190 */;
 import MaskedLinkStoreMethodsAdditional from "MaskedLinkStoreMethodsAdditional" /* 7258 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size_mod from "module_2" /* 2 */;
 
-const f115258 = (image) => null != image.image;
+const f115235 = (image) => null != image.image;
 let closure_4 = [];
 let size = size_mod;
 const result = size.fileFinishedImporting("modules/conjure/clarification/ConjureImageOptions.tsx");
@@ -20,7 +20,7 @@ export function isImageQuestion(upload) {
   let someResult = true === upload.upload;
   if (!someResult) {
     const options = upload.options;
-    someResult = options.some(f115258);
+    someResult = options.some(f115235);
   }
   return someResult;
 }
@@ -32,7 +32,7 @@ export function hasTypedAnswer(allow_custom) {
       let someResult = true === allow_custom.upload;
       if (!someResult) {
         const options = allow_custom.options;
-        someResult = options.some(f115258);
+        someResult = options.some(f115235);
       }
       tmp2 = !someResult;
     }

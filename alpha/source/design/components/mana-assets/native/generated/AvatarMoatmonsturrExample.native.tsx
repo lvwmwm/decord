@@ -1,26 +1,26 @@
-// Module ID: 19969
-// Function ID: 19970
+// Module ID: 19971
+// Function ID: 19972
 // Name: AvatarMoatmonsturrExample
-// Dependencies: [19, 21, 19970, 19971, 19972, 7357, 5600, 2]
+// Dependencies: [19, 21, 19972, 19973, 19974, 7357, 5600, 2]
 // Exports: AvatarMoatmonsturrExample
 
-// Module 19969 (AvatarMoatmonsturrExample)
+// Module 19971 (AvatarMoatmonsturrExample)
 import Fragment from "Fragment" /* 21 */;
 import react_native from "react-native" /* 7357 */;
-import _modDef19970 from "module_19970" /* 19970 */;
-import _modDef19971 from "module_19971" /* 19971 */;
 import _modDef19972 from "module_19972" /* 19972 */;
+import _modDef19973 from "module_19973" /* 19973 */;
+import _modDef19974 from "module_19974" /* 19974 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef19970 };
+let obj2 = { uri: _modDef19972 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef19971 };
+let obj3 = { uri: _modDef19973 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef19972 };
-({ uri: _modDef19972 });
+obj[3] = { uri: _modDef19974 };
+({ uri: _modDef19974 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/AvatarMoatmonsturrExample.native.tsx");
 

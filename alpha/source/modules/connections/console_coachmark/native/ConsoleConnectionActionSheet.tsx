@@ -1,10 +1,10 @@
-// Module ID: 18895
-// Function ID: 18896
+// Module ID: 18897
+// Function ID: 18898
 // Name: ConsoleConnectionActionSheet
-// Dependencies: [19, 18896, 1071, 21, 5127, 7193, 7026, 1112, 7553, 7515, 7348, 7045, 6691, 9906, 9798, 2]
+// Dependencies: [19, 18898, 1071, 21, 5127, 7193, 7026, 1112, 7553, 7515, 7348, 7045, 6691, 9906, 9798, 2]
 // Exports: default
 
-// Module 18895 (ConsoleConnectionActionSheet)
+// Module 18897 (ConsoleConnectionActionSheet)
 import Constants from "Constants" /* 1071 */;
 import intl3 from "intl" /* 1112 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
@@ -17,7 +17,7 @@ import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7515 */;
 import ActionSheet2 from "ActionSheet" /* 7553 */;
 import XboxNeutralIcon from "XboxNeutralIcon" /* 9798 */;
 import PlaystationNeutralIcon from "PlaystationNeutralIcon" /* 9906 */;
-import ConsoleConnectionCoachmarkConstants from "ConsoleConnectionCoachmarkConstants" /* 18896 */;
+import ConsoleConnectionCoachmarkConstants from "ConsoleConnectionCoachmarkConstants" /* 18898 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

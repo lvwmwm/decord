@@ -1,9 +1,9 @@
-// Module ID: 17551
-// Function ID: 17552
+// Module ID: 17553
+// Function ID: 17554
 // Name: MessagesItemChannelBase
-// Dependencies: [19, 17, 5651, 6619, 4855, 4816, 6552, 1386, 21, 4913, 575, 504, 17552, 8166, 1378, 7737, 5646, 13843, 7030, 8009, 1112, 9028, 17553, 5574, 9024, 17554, 8215, 17555, 5652, 2]
+// Dependencies: [19, 17, 5651, 6619, 4855, 4816, 6552, 1386, 21, 4913, 575, 504, 17554, 8166, 1378, 7737, 5646, 13843, 7030, 8009, 1112, 9028, 17555, 5574, 9024, 17556, 8215, 17557, 5652, 2]
 
-// Module 17551 (MessagesItemChannelBase)
+// Module 17553 (MessagesItemChannelBase)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
@@ -99,7 +99,7 @@ const memoResult = react.memo(function MessagesItemChannelBase(channel) {
       obj3 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
       const obj2 = { status: PresenceStore.getStatus(channel.getRecipientId()), activities };
     } else {
-      obj3 = { status: "disabled", activities: "isArray" };
+      obj3 = { status: "Array", activities: "Path" };
     }
     return obj3;
   });

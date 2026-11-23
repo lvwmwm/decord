@@ -1,10 +1,10 @@
-// Module ID: 14731
-// Function ID: 14732
+// Module ID: 14733
+// Function ID: 14734
 // Name: conjurePreviewNativeSurfaces
-// Dependencies: [6623, 1071, 14732, 12310, 12308, 6915, 2]
+// Dependencies: [6623, 1071, 14734, 12310, 12308, 6915, 2]
 // Exports: beginNativeSurfaceSessionForFrame, holdPreviewGameCaptureAnswers
 
-// Module 14731 (conjurePreviewNativeSurfaces)
+// Module 14733 (conjurePreviewNativeSurfaces)
 import Constants from "Constants" /* 1071 */;
 import RpcCommandInterception from "RpcCommandInterception" /* 6915 */;
 import FramesStore from "FramesStore" /* 6623 */;
@@ -215,15 +215,15 @@ let obj = {
   },
   [RPCCommands.REQUEST_DEVICE_PERMISSIONS]: (args) => {
     let found;
-    const f106594 = (permission) => ({ permission, state: "denied" });
+    const f106571 = (permission) => ({ permission, state: "denied" });
     if (Array.isArray(args.args.permissions)) {
       const permissions = args.args.permissions;
       found = permissions.filter((item) => typeof item === "string");
     } else {
       found = [];
     }
-    obj = { result: { permissions: found.map(f106594) }, answered: "denied; an agent may not grant device access", options: found };
-    ({ permissions: found.map(f106594) });
+    obj = { result: { permissions: found.map(f106571) }, answered: "denied; an agent may not grant device access", options: found };
+    ({ permissions: found.map(f106571) });
     return obj;
   },
   [RPCCommands.CAPTURE_SCREEN]: () => ({ result: { status: "permission_denied" }, answered: "denied; an agent may not capture the screen" }),
@@ -244,8 +244,8 @@ let obj = {
   [RPCCommands.HIDE_TOOLTIP]: () => ({ result: { hidden: true }, answered: "hidden" }),
   [RPCCommands.OPEN_MEDIA_VIEWER]: () => ({ result: { opened: true }, answered: "opened" }),
   [RPCCommands.SHOW_TOAST]: () => ({ result: { shown: true }, answered: "shown" }),
-  [RPCCommands.OPEN_INVITE_DIALOG]: () => ({ result: "channel", answered: "<string:27297859>" }),
-  [RPCCommands.OPEN_SHARE_MOMENT_DIALOG]: () => ({ result: "channel", answered: "<string:27297859>" })
+  [RPCCommands.OPEN_INVITE_DIALOG]: () => ({ result: "channel", answered: true }),
+  [RPCCommands.OPEN_SHARE_MOMENT_DIALOG]: () => ({ result: "channel", answered: true })
 };
 let closure_7 = {
   drain() {

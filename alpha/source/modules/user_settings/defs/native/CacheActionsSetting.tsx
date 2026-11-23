@@ -1,9 +1,9 @@
-// Module ID: 16986
-// Function ID: 16987
+// Module ID: 16988
+// Function ID: 16989
 // Name: CacheActionsSetting
-// Dependencies: [5, 32, 19, 6394, 21, 5127, 5595, 5617, 1112, 504, 4738, 16987, 7553, 7515, 7348, 7045, 16955, 16991, 16988, 11148, 7020, 16992, 5624, 11937, 2]
+// Dependencies: [5, 32, 19, 6394, 21, 5127, 5595, 5617, 1112, 504, 4738, 16989, 7553, 7515, 7348, 7045, 16957, 16993, 16990, 11148, 7020, 16994, 5624, 11937, 2]
 
-// Module 16986 (CacheActionsSetting)
+// Module 16988 (CacheActionsSetting)
 import react from "react" /* 19 */;
 import get_initialized from "get initialized" /* 504 */;
 import UserSettings from "UserSettings" /* 4738 */;
@@ -11,10 +11,10 @@ import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127
 import ToastActionCreatorsDefault from "ToastActionCreators" /* 5595 */;
 import CircleInformationIcon from "CircleInformationIcon" /* 5617 */;
 import BrowserManager from "BrowserManager" /* 5624 */;
-import CacheActionsDiskUsageSection from "CacheActionsDiskUsageSection" /* 16987 */;
-import DiskUsageManagerDefault from "DiskUsageManager" /* 16988 */;
-import CacheActionCreators from "CacheActionCreators" /* 16991 */;
-import FileWarningIcon from "FileWarningIcon" /* 16992 */;
+import CacheActionsDiskUsageSection from "CacheActionsDiskUsageSection" /* 16989 */;
+import DiskUsageManagerDefault from "DiskUsageManager" /* 16990 */;
+import CacheActionCreators from "CacheActionCreators" /* 16993 */;
+import FileWarningIcon from "FileWarningIcon" /* 16994 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import GatewayConnectionStore from "GatewayConnectionStore" /* 6394 */;
@@ -35,8 +35,8 @@ const TableRowGroup2 = tmp(7348);
 const BottomSheetTitleHeader2 = tmp(7515);
 const ActionSheet2 = tmp(7553);
 const FileIcon = tmp(11148);
-const FileUpIcon = tmp(16955);
-const CacheActionsDiskUsageSectionDefault = tmp10(16987);
+const FileUpIcon = tmp(16957);
+const CacheActionsDiskUsageSectionDefault = tmp10(16989);
 function handleCacheActionPress(text) {
   const obj = ToastActionCreatorsDefault;
   const obj2 = { text, icon: CircleInformationIcon.CircleInformationIcon };

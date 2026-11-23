@@ -1,12 +1,12 @@
-// Module ID: 18556
-// Function ID: 18557
+// Module ID: 18558
+// Function ID: 18559
 // Name: conjurePlanOverlayDesign
-// Dependencies: [18557, 18560, 2]
+// Dependencies: [18559, 18562, 2]
 // Exports: conjurePlanDesignPreviews, conjurePlanOverlayWidgetBox
 
-// Module 18556 (conjurePlanOverlayDesign)
-import conjurePlanExperienceSurfaces from "conjurePlanExperienceSurfaces" /* 18557 */;
-import conjureOverlayPreview from "conjureOverlayPreview" /* 18560 */;
+// Module 18558 (conjurePlanOverlayDesign)
+import conjurePlanExperienceSurfaces from "conjurePlanExperienceSurfaces" /* 18559 */;
+import conjureOverlayPreview from "conjureOverlayPreview" /* 18562 */;
 import size_mod from "module_2" /* 2 */;
 
 const combined = "" + Number((2.357563850687623).toFixed(3)) + "%";
@@ -101,7 +101,7 @@ export function conjurePlanDesignPreviews(proposal) {
     if (null != id3) {
       const obj4 = { experienceId: id3, design: overlay_design_image1, size: overlayWidgetPreviewSize(overlay_widget) };
       overlay_widget = proposal.overlay_widget;
-      overlayWidgetPreviewSize = tmp(18560).overlayWidgetPreviewSize;
+      overlayWidgetPreviewSize = tmp(18562).overlayWidgetPreviewSize;
       conjureOverlayPreview;
       if (overlay_widget == null) {
         overlay_widget = null;

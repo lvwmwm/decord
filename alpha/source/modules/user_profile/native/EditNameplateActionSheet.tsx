@@ -1,17 +1,17 @@
-// Module ID: 15899
-// Function ID: 15900
+// Module ID: 15901
+// Function ID: 15902
 // Name: EditNameplateActionSheet
-// Dependencies: [32, 19, 17, 8090, 2110, 4825, 1071, 21, 4913, 575, 8149, 7520, 7539, 1255, 8909, 8913, 5141, 7515, 1112, 8914, 9475, 504, 15900, 14258, 8131, 15901, 14264, 14265, 8915, 9027, 5468, 9453, 2]
+// Dependencies: [32, 19, 17, 8090, 2110, 4825, 1071, 21, 4913, 575, 8149, 7520, 7539, 1255, 8909, 8913, 5141, 7515, 1112, 8914, 9475, 504, 15902, 14258, 8131, 15903, 14264, 14265, 8915, 9027, 5468, 9453, 2]
 // Exports: default
 
-// Module 15899 (EditNameplateActionSheet)
+// Module 15901 (EditNameplateActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import NameplateRecord from "NameplateRecord" /* 2110 */;
 import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8909 */;
 import useShopProductItems from "useShopProductItems" /* 8913 */;
-import EditNameplateSection from "EditNameplateSection" /* 15901 */;
+import EditNameplateSection from "EditNameplateSection" /* 15903 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import CollectiblesPurchaseStore from "CollectiblesPurchaseStore" /* 8090 */;

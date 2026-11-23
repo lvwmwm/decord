@@ -1,9 +1,9 @@
-// Module ID: 17222
-// Function ID: 17223
+// Module ID: 17224
+// Function ID: 17225
 // Name: DesignSystemsShadowsSetting
-// Dependencies: [8712, 1071, 11937, 17220, 2]
+// Dependencies: [8712, 1071, 11937, 17222, 2]
 
-// Module 17222 (DesignSystemsShadowsSetting)
+// Module 17224 (DesignSystemsShadowsSetting)
 import Constants from "Constants" /* 1071 */;
 import SettingsConstants from "SettingsConstants" /* 8712 */;
 import SettingBuilders from "SettingBuilders" /* 11937 */;

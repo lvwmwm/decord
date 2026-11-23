@@ -1,10 +1,10 @@
-// Module ID: 19192
-// Function ID: 19193
+// Module ID: 19194
+// Function ID: 19195
 // Name: ActivityInviteSheet
-// Dependencies: [32, 19, 17, 12084, 13189, 1071, 8438, 1082, 21, 4913, 575, 8065, 7520, 7539, 5127, 8067, 8054, 11941, 504, 13188, 7267, 5141, 7515, 1112, 1186, 14642, 7427, 19193, 2]
+// Dependencies: [32, 19, 17, 12084, 13189, 1071, 8438, 1082, 21, 4913, 575, 8065, 7520, 7539, 5127, 8067, 8054, 11941, 504, 13188, 7267, 5141, 7515, 1112, 1186, 14644, 7427, 19195, 2]
 // Exports: default
 
-// Module 19192 (ActivityInviteSheet)
+// Module 19194 (ActivityInviteSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -210,7 +210,7 @@ export default function ActivityInviteSheet(activity) {
   BottomSheetTitleHeader = tmp11(7515).BottomSheetTitleHeader;
   intl = tmp11(1112).intl;
   if (null != tmp6) {
-    const obj5 = { style: tmp.emptyState, Illustration: activity(14642).AppCrash, title: tmp6 };
+    const obj5 = { style: tmp.emptyState, Illustration: activity(14644).AppCrash, title: tmp6 };
     const EmptyState2 = tmp11(1186).EmptyState;
     tmp19Result = tmp17(EmptyState2, obj5);
   } else if (0 === stateFromStores.length && tmp13) {
@@ -232,7 +232,7 @@ export default function ActivityInviteSheet(activity) {
       tmp17Result2 = tmp17(EmptyState, obj9);
     } else {
       const obj10 = { data: stateFromStores, error: tmp6, getSendState: callback, onInviteSent: callback2, onPressAvatar: callback1 };
-      tmp17Result2 = tmp17(tmp2(19193), obj10);
+      tmp17Result2 = tmp17(tmp2(19195), obj10);
     }
     const obj11 = { children: items4 };
     items4[1] = tmp17Result2;

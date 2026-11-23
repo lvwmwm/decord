@@ -1,9 +1,9 @@
-// Module ID: 19439
-// Function ID: 19440
+// Module ID: 19441
+// Function ID: 19442
 // Name: AppIconPremiumManager
-// Dependencies: [5, 15634, 1386, 10468, 1071, 4938, 3, 4939, 7484, 1378, 14047, 4941, 4943, 4945, 4746, 2173, 1255, 2]
+// Dependencies: [5, 15636, 1386, 10468, 1071, 4938, 3, 4939, 7484, 1378, 14047, 4941, 4943, 4945, 4746, 2173, 1255, 2]
 
-// Module 19439 (AppIconPremiumManager)
+// Module 19441 (AppIconPremiumManager)
 import LoggerDefault from "Logger" /* 3 */;
 import Constants from "Constants" /* 1071 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
@@ -12,7 +12,7 @@ import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4938 */;
 import AppIconTypes from "AppIconTypes" /* 4939 */;
 import AppIconConstants from "AppIconConstants" /* 10468 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 15634 */;
+import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 15636 */;
 import UserStore from "UserStore" /* 1386 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7484 */;
 import size from "module_2" /* 2 */;

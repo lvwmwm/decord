@@ -1,13 +1,13 @@
-// Module ID: 18147
-// Function ID: 18148
+// Module ID: 18149
+// Function ID: 18150
 // Name: CustomStatusEntryRow
-// Dependencies: [19, 21, 18143, 18148, 2]
+// Dependencies: [19, 21, 18145, 18150, 2]
 // Exports: default
 
-// Module 18147 (CustomStatusEntryRow)
+// Module 18149 (CustomStatusEntryRow)
 import Fragment from "Fragment" /* 21 */;
-import useReplyActions from "useReplyActions" /* 18143 */;
-import ICYMICustomStatusRowDefault from "ICYMICustomStatusRow" /* 18148 */;
+import useReplyActions from "useReplyActions" /* 18145 */;
+import ICYMICustomStatusRowDefault from "ICYMICustomStatusRow" /* 18150 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

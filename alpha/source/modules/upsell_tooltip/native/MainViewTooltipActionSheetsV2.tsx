@@ -1,10 +1,10 @@
-// Module ID: 19056
-// Function ID: 19057
+// Module ID: 19058
+// Function ID: 19059
 // Name: MainViewTooltipActionSheetsV2
-// Dependencies: [32, 19, 5128, 1230, 1071, 4759, 21, 19057, 2119, 19059, 19060, 19061, 17140, 19063, 17113, 19065, 19071, 19073, 19080, 19085, 12836, 19086, 19093, 19094, 19100, 19101, 4746, 4753, 1255, 4750, 11613, 4945, 4747, 19102, 504, 11612, 2]
+// Dependencies: [32, 19, 5128, 1230, 1071, 4759, 21, 19059, 2119, 19061, 19062, 19063, 17142, 19065, 17115, 19067, 19073, 19075, 19082, 19087, 12836, 19088, 19095, 19096, 19102, 19103, 4746, 4753, 1255, 4750, 11613, 4945, 4747, 19104, 504, 11612, 2]
 // Exports: default
 
-// Module 19056 (MainViewTooltipActionSheetsV2)
+// Module 19058 (MainViewTooltipActionSheetsV2)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1071 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
@@ -26,43 +26,43 @@ let metroImportDefault;
 let metroRequire;
 let tmp3;
 function LaunchAccountLinkingCampaignActionSheetImporter() {
-  return asyncRequire(19086, dependencyMap.paths);
+  return asyncRequire(19088, dependencyMap.paths);
 }
 function ReferralProgramEntryPointActionSheetImporter() {
-  return asyncRequire(19093, dependencyMap.paths);
+  return asyncRequire(19095, dependencyMap.paths);
 }
 function GiftingBadgesCoachmarkImporter() {
-  return asyncRequire(19071, dependencyMap.paths);
-}
-function AppIconsCoachMarkImporter() {
-  return asyncRequire(19057, dependencyMap.paths);
-}
-function RobloxConnectionCoachmarkImporter() {
-  return asyncRequire(19060, dependencyMap.paths);
-}
-function DisplayNameStylesFlywheelMobileActionSheetImporter() {
-  return asyncRequire(19065, dependencyMap.paths);
-}
-function CollectiblesMobileAnnouncementActionSheetImporter() {
   return asyncRequire(19073, dependencyMap.paths);
 }
+function AppIconsCoachMarkImporter() {
+  return asyncRequire(19059, dependencyMap.paths);
+}
+function RobloxConnectionCoachmarkImporter() {
+  return asyncRequire(19062, dependencyMap.paths);
+}
+function DisplayNameStylesFlywheelMobileActionSheetImporter() {
+  return asyncRequire(19067, dependencyMap.paths);
+}
+function CollectiblesMobileAnnouncementActionSheetImporter() {
+  return asyncRequire(19075, dependencyMap.paths);
+}
 function NitroFileUploadAnnouncementPromoSheetImporter() {
-  return asyncRequire(19080, dependencyMap.paths);
+  return asyncRequire(19082, dependencyMap.paths);
 }
 function NitroFileUploadUpsellPromoSheetImporter() {
-  return asyncRequire(19085, dependencyMap.paths);
+  return asyncRequire(19087, dependencyMap.paths);
 }
 function BloonsTDBattlesAccountLinkUpsellImporter() {
-  return asyncRequire(19094, dependencyMap.paths);
+  return asyncRequire(19096, dependencyMap.paths);
 }
 class GiftingPromotionCoachmarkImporter {
   constructor() {
-    return asyncRequire(19059, dependencyMap.paths);
+    return asyncRequire(19061, dependencyMap.paths);
   }
 }
 class PremiumMarketingMomentActionSheetImporter {
   constructor() {
-    return asyncRequire(17140, dependencyMap.paths);
+    return asyncRequire(17142, dependencyMap.paths);
   }
 }
 class CustomTypingIndicatorAnnounceActionSheetImporter {
@@ -122,28 +122,28 @@ const MainViewTooltipActionSheets = "MainViewTooltipActionSheets";
 let obj = {
   id: dismissible_content.DismissibleContent.HEXAGON_CAMPAIGN_PERKS_EXPIRED_PROMO_SHEET,
   importer: function HexagonCampaignExpiredPromoSheetImporter() {
-    return asyncRequire(19100, dependencyMap.paths);
+    return asyncRequire(19102, dependencyMap.paths);
   }
 };
 let items = [obj, , , ];
 let obj2 = {
   id: dismissible_content.DismissibleContent.GOOGLE_PLAY_PRICE_CHANGE_ACTION_SHEET,
   importer: function GooglePlayPriceChangeActionSheetImporter() {
-    return asyncRequire(19061, dependencyMap.paths);
+    return asyncRequire(19063, dependencyMap.paths);
   }
 };
 items[1] = obj2;
 let obj3 = {
   id: dismissible_content.DismissibleContent.DISCOUNT_OFFER_ACTION_SHEET,
   importer: function PremiumDiscountOfferActionSheetImporter() {
-    return asyncRequire(19063, dependencyMap.paths);
+    return asyncRequire(19065, dependencyMap.paths);
   }
 };
 items[2] = obj3;
 let obj4 = {
   id: dismissible_content.DismissibleContent.MOBILE_PREMIUM_TRIAL_OFFER_ACTION_SHEET,
   importer: function PremiumTrialOfferActionSheetImporter() {
-    return asyncRequire(17113, dependencyMap.paths);
+    return asyncRequire(17115, dependencyMap.paths);
   }
 };
 items[3] = obj4;
@@ -151,7 +151,7 @@ let items1 = [...items];
 let obj5 = {
   id: dismissible_content.DismissibleContent.HEXAGON_CAMPAIGN_PERKS_EXPIRING_PROMO_SHEET,
   importer: function HexagonCampaignExpiringPromoSheetImporter() {
-    return asyncRequire(19101, dependencyMap.paths);
+    return asyncRequire(19103, dependencyMap.paths);
   }
 };
 items1[tmp3] = obj5;
@@ -214,7 +214,7 @@ export default function MainViewTooltipActionSheetsV2() {
   let stateFromStores;
   let str6;
   const tmp = mainViewTooltipActionSheetMap;
-  let obj = mainViewTooltipActionSheetMap(19102);
+  let obj = mainViewTooltipActionSheetMap(19104);
   mainViewTooltipActionSheetMap = obj.useMainViewTooltipActionSheetMap();
   [first, dependencyMap] = react.useState(null);
   _slicedToArray = ref(false);

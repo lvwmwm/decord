@@ -19,7 +19,7 @@ import size from "module_2" /* 2 */;
 
 let set3;
 
-const f90000 = (kind) => "preview_ready" === kind.kind;
+const f89974 = (kind) => "preview_ready" === kind.kind;
 function patchTurn(projectId, turnId, fn) {
   const value = map.get(projectId);
   if (null != value) {
@@ -626,7 +626,7 @@ let obj = {
             }
             if (everyResult) {
               const steps = tmp53.steps;
-              everyResult = steps.every(f90000);
+              everyResult = steps.every(f89974);
             }
             if (everyResult) {
               const obj5 = conjureChatTurns;
@@ -768,7 +768,7 @@ let obj = {
           let everyResult = null != tmp11 && "assistant" === tmp11.role && null == tmp11.turn_id;
           if (everyResult) {
             const steps = tmp11.steps;
-            everyResult = steps.every(f90000);
+            everyResult = steps.every(f89974);
           }
           if (everyResult) {
             const tmp2Result = id(6926);

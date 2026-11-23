@@ -1,10 +1,10 @@
-// Module ID: 18161
-// Function ID: 18162
+// Module ID: 18163
+// Function ID: 18164
 // Name: useNotificationPermissionPrompt
-// Dependencies: [19, 4755, 6394, 4756, 13279, 504, 4758, 13288, 18162, 18164, 2]
+// Dependencies: [19, 4755, 6394, 4756, 13279, 504, 4758, 13288, 18164, 18166, 2]
 // Exports: default
 
-// Module 18161 (useNotificationPermissionPrompt)
+// Module 18163 (useNotificationPermissionPrompt)
 import NotificationUtilsDefault from "NotificationUtils" /* 13288 */;
 import react from "react" /* 19 */;
 import LoginRequiredActionStore from "LoginRequiredActionStore" /* 4755 */;
@@ -39,8 +39,8 @@ export default function useNotificationPermissionPrompt() {
       }
     }
   }, items2);
-  const obj3 = stateFromStores(18162);
+  const obj3 = stateFromStores(18164);
   const guildOpenNudge = obj3.useGuildOpenNudge();
-  const obj4 = stateFromStores(18164);
+  const obj4 = stateFromStores(18166);
   const postCallDisconnectNudge = obj4.usePostCallDisconnectNudge();
 };

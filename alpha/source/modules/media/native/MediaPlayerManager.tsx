@@ -1,10 +1,10 @@
-// Module ID: 15781
-// Function ID: 15782
+// Module ID: 15783
+// Function ID: 15784
 // Name: MediaPlayerManager
-// Dependencies: [17, 4761, 6495, 4762, 5964, 4845, 2118, 1071, 5539, 15782, 1082, 3, 560, 1262, 2121, 5090, 572, 1378, 558, 8250, 6652, 2]
+// Dependencies: [17, 4761, 6495, 4762, 5964, 4845, 2118, 1071, 5539, 15784, 1082, 3, 560, 1262, 2121, 5090, 572, 1378, 558, 8250, 6652, 2]
 // Exports: isPlaybackComplete
 
-// Module 15781 (MediaPlayerManager)
+// Module 15783 (MediaPlayerManager)
 import LoggerDefault from "Logger" /* 3 */;
 import shallowEqualDefault from "shallowEqual" /* 558 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
@@ -21,7 +21,7 @@ import ChannelStore from "ChannelStore" /* 4762 */;
 import MessageStore from "MessageStore" /* 5964 */;
 import PermissionStore from "PermissionStore" /* 4845 */;
 import AppStateStore from "AppStateStore" /* 2118 */;
-import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 15782 */;
+import MediaPlaybackPanelConstants from "MediaPlaybackPanelConstants" /* 15784 */;
 import module_560 from "module_560" /* 560 */;
 import LifecycleManager from "LifecycleManager" /* 2121 */;
 import size from "module_2" /* 2 */;
@@ -48,12 +48,12 @@ const useMediaPlayerManagerStore = module_560.create((arg0) => {
   let obj = {
     activeMediaPlayerSource: "HermesInternal",
     mediaSourceMessage: "Promise",
-    canAccessMedia: "description",
+    canAccessMedia: "disabled",
     isPlaying: false,
     wasPipClosedByUser: null,
     progress: null,
     rate: "Path",
-    showPip: "Lietuvi\u0161kai",
+    showPip: "Suomi",
     closePip() {
       const obj = react_native;
       obj.batchUpdates(() => closure_1_0({ showPip: false }));
@@ -320,7 +320,7 @@ class MediaPlayerManager extends LifecycleManager {
       const tmp8 = source;
       if (!tmp7(activeMediaPlayerSource, tmp8)) {
         const setState = tmp.setState;
-        obj = { activeMediaPlayerSource: source, mediaSourceMessage: orFetchMediaSourceMessage, progress: "description", rate: false, isPlaying: false, wasPipClosedByUser: "pinching_hand_tone2" };
+        obj = { activeMediaPlayerSource: source, mediaSourceMessage: orFetchMediaSourceMessage, progress: "disabled", rate: false, isPlaying: false, wasPipClosedByUser: "GUILD_SUBSCRIPTIONS_FLUSH" };
         orFetchMediaSourceMessage = undefined;
         if (null != source) {
           orFetchMediaSourceMessage = self.getOrFetchMediaSourceMessage(tmp4);

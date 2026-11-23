@@ -1,10 +1,10 @@
-// Module ID: 18416
-// Function ID: 18417
+// Module ID: 18418
+// Function ID: 18419
 // Name: useConjureIncompleteAppNotice
 // Dependencies: [32, 19, 4784, 12305, 504, 1112, 4190, 2]
 // Exports: default
 
-// Module 18416 (useConjureIncompleteAppNotice)
+// Module 18418 (useConjureIncompleteAppNotice)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import GuildStore from "GuildStore" /* 4784 */;

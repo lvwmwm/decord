@@ -1,10 +1,10 @@
-// Module ID: 19868
-// Function ID: 19869
+// Module ID: 19870
+// Function ID: 19871
 // Name: GuildSettingsModalVanityURL
-// Dependencies: [19, 17, 19869, 4784, 7995, 1071, 21, 4913, 575, 7095, 7029, 1112, 19870, 8066, 5504, 19695, 7221, 5600, 19871, 1500, 504, 5487, 2]
+// Dependencies: [19, 17, 19871, 4784, 7995, 1071, 21, 4913, 575, 7095, 7029, 1112, 19872, 8066, 5504, 19697, 7221, 5600, 19873, 1500, 504, 5487, 2]
 // Exports: default
 
-// Module 19868 (GuildSettingsModalVanityURL)
+// Module 19870 (GuildSettingsModalVanityURL)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -14,11 +14,11 @@ import FastImageDefault from "FastImage" /* 5600 */;
 import HeaderActionButton2 from "HeaderActionButton" /* 7029 */;
 import TextInput_TextInput from "TextInput/TextInput" /* 7221 */;
 import getInviteURLDefault from "getInviteURL" /* 8066 */;
-import GuildSettingsVanityURLUtils from "GuildSettingsVanityURLUtils" /* 19695 */;
-import ChangeVanityURLActionCreatorsDefault from "ChangeVanityURLActionCreators" /* 19870 */;
-import AssetRegistryDefault from "AssetRegistry" /* 19871 */;
+import GuildSettingsVanityURLUtils from "GuildSettingsVanityURLUtils" /* 19697 */;
+import ChangeVanityURLActionCreatorsDefault from "ChangeVanityURLActionCreators" /* 19872 */;
+import AssetRegistryDefault from "AssetRegistry" /* 19873 */;
 import react from "react" /* 19 */;
-import ChangeVanityURLModalStore from "ChangeVanityURLModalStore" /* 19869 */;
+import ChangeVanityURLModalStore from "ChangeVanityURLModalStore" /* 19871 */;
 import GuildStore from "GuildStore" /* 4784 */;
 import GuildSettingsStore from "GuildSettingsStore" /* 7995 */;
 import Fragment from "Fragment" /* 21 */;
@@ -138,7 +138,7 @@ class GuildSettingsModalVanityURL extends PureComponent {
   render() {
     let errorDetails;
     let guild;
-    let intl2;
+    let intl;
     let intl3;
     let intl4;
     let intl5;
@@ -149,9 +149,9 @@ class GuildSettingsModalVanityURL extends PureComponent {
     let items2;
     let items3;
     let obj13;
-    let obj3;
+    let obj2;
     let styles;
-    let tmp20;
+    let tmp25;
     let vanityURLCode;
     const self = this;
     ({ errorDetails, guild, styles } = this.props);
@@ -159,77 +159,77 @@ class GuildSettingsModalVanityURL extends PureComponent {
     let tmp;
     if (null != vanityURLCode) {
       if ("" !== vanityURLCode) {
-        const obj2 = { variant: "body-sm/medium", color: "text-muted", children: intl6.format(intl7.t.FcGpNU, obj3) };
-        const tmp23 = getInviteURLDefault(vanityURLCode);
-        const Text5 = Text_Text.Text;
-        intl6 = intl7.intl;
-        obj3 = { url: tmp23 };
-        tmp = metroImportAll(Text5, obj2);
+        const obj = { variant: "body-sm/medium", color: "text-muted", children: intl.format(intl7.t.FcGpNU, obj2) };
+        const tmp4 = getInviteURLDefault(vanityURLCode);
+        const Text = Text_Text.Text;
+        intl = intl7.intl;
+        obj2 = { url: tmp4 };
+        tmp = metroImportAll(Text, obj);
       }
     }
-    let tmp2 = vanityURLCode;
+    let tmp7 = vanityURLCode;
     if (!isEditing) {
       let combined;
       if ("" !== vanityURLCode) {
         const _HermesInternal = HermesInternal;
         combined = "discord.gg/" + vanityURLCode;
       } else {
-        const intl = intl7.intl;
-        combined = intl.string(intl7.t["FaXGO/"]);
+        const intl2 = intl7.intl;
+        combined = intl2.string(intl7.t["FaXGO/"]);
       }
-      tmp2 = combined;
+      tmp7 = combined;
     }
     let errorMessageFromErrorCode;
     if (null != errorDetails) {
-      const obj = GuildSettingsVanityURLUtils;
-      errorMessageFromErrorCode = obj.getErrorMessageFromErrorCode(errorDetails.code);
+      const obj3 = GuildSettingsVanityURLUtils;
+      errorMessageFromErrorCode = obj3.getErrorMessageFromErrorCode(errorDetails.code);
     }
     let hasItem;
     if (guild != null) {
       const features = guild.features;
       hasItem = features.has(GuildFeatures.GUILD_WEB_PAGE_VANITY_URL);
     }
-    let tmp17Result = true === hasItem;
-    if (tmp17Result) {
+    let tmp22Result = true === hasItem;
+    if (tmp22Result) {
       let hasItem1;
       if (guild != null) {
         const features2 = guild.features;
         hasItem1 = features2.has(GuildFeatures.VANITY_URL);
       }
-      tmp17Result = true !== hasItem1;
+      tmp22Result = true !== hasItem1;
     }
     const obj4 = { style: items, children: items3 };
     items = [styles.wrapper, self.props.contentContainerStyle];
     const obj5 = { style: styles.section, children: items1 };
     items1 = [, ];
-    const obj6 = { disabled: !isEditing, value: tmp2, onChange: self.handleChange, autoFocus: isEditing, errorMessage: errorMessageFromErrorCode };
+    const obj6 = { disabled: !isEditing, value: tmp7, onChange: self.handleChange, autoFocus: isEditing, errorMessage: errorMessageFromErrorCode };
     items1[0] = metroImportAll(TextInput_TextInput.TextInput, obj6);
     const obj7 = { style: styles.hints, children: items2 };
-    const obj8 = { variant: "body-sm/medium", color: "text-muted", children: intl2.string(intl7.t.IhWDcu) };
-    const Text = Text_Text.Text;
-    intl2 = intl7.intl;
-    items2 = [metroImportAll(Text, obj8), , , , ];
-    const obj9 = { variant: "body-sm/medium", color: "text-muted", children: intl3.string(intl7.t["1mRkFr"]) };
+    const obj8 = { variant: "body-sm/medium", color: "text-muted", children: intl3.string(intl7.t.IhWDcu) };
     const Text2 = Text_Text.Text;
     intl3 = intl7.intl;
-    items2[1] = metroImportAll(Text2, obj9);
-    const obj10 = { variant: "body-sm/medium", color: "text-muted", children: intl4.string(intl7.t["eH/HMz"]) };
+    items2 = [metroImportAll(Text2, obj8), , , , ];
+    const obj9 = { variant: "body-sm/medium", color: "text-muted", children: intl4.string(intl7.t["1mRkFr"]) };
     const Text3 = Text_Text.Text;
     intl4 = intl7.intl;
-    items2[2] = metroImportAll(Text3, obj10);
-    if (tmp17Result) {
-      const obj11 = { variant: "body-sm/medium", color: "text-muted", children: intl5.string(intl7.t.o3kmm3) };
-      const Text4 = tmp18(5504).Text;
-      intl5 = tmp18(1112).intl;
-      tmp17Result = tmp17(Text4, obj11);
+    items2[1] = metroImportAll(Text3, obj9);
+    const obj10 = { variant: "body-sm/medium", color: "text-muted", children: intl5.string(intl7.t["eH/HMz"]) };
+    const Text4 = Text_Text.Text;
+    intl5 = intl7.intl;
+    items2[2] = metroImportAll(Text4, obj10);
+    if (tmp22Result) {
+      const obj11 = { variant: "body-sm/medium", color: "text-muted", children: intl6.string(intl7.t.o3kmm3) };
+      const Text5 = tmp23(5504).Text;
+      intl6 = tmp23(1112).intl;
+      tmp22Result = tmp22(Text5, obj11);
     }
-    items2[3] = tmp17Result;
+    items2[3] = tmp22Result;
     items2[4] = tmp;
     items1[1] = React4(View, obj7);
     items3 = [React4(View, obj5), ];
-    const obj12 = { style: styles.center, children: metroImportAll(tmp20, obj13) };
+    const obj12 = { style: styles.center, children: metroImportAll(tmp25, obj13) };
     obj13 = { source: AssetRegistryDefault, style: styles.image, resizeMode: "contain" };
-    tmp20 = FastImageDefault;
+    tmp25 = FastImageDefault;
     items3[1] = metroImportAll(View, obj12);
     return React4(View, obj4);
   }

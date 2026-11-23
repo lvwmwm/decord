@@ -1,10 +1,10 @@
-// Module ID: 19854
-// Function ID: 19855
+// Module ID: 19856
+// Function ID: 19857
 // Name: EnhancedRoleColorsSelectStyleModal
-// Dependencies: [17, 19834, 19836, 19833, 1082, 21, 4913, 575, 5122, 5942, 19855, 1112, 8669, 5141, 7515, 5127, 10100, 4822, 8699, 11716, 5504, 2856, 2]
+// Dependencies: [17, 19836, 19838, 19835, 1082, 21, 4913, 575, 5122, 5942, 19857, 1112, 8669, 5141, 7515, 5127, 10100, 4822, 8699, 11716, 5504, 2856, 2]
 // Exports: default
 
-// Module 19854 (EnhancedRoleColorsSelectStyleModal)
+// Module 19856 (EnhancedRoleColorsSelectStyleModal)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1082 */;
 import intl6 from "intl" /* 1112 */;
@@ -17,10 +17,10 @@ import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7515 */;
 import RowGeneratorDefault from "RowGenerator" /* 8669 */;
 import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 8699 */;
 import _modDef11716 from "module_11716" /* 11716 */;
-import GuildSettingsRoleConstants from "GuildSettingsRoleConstants" /* 19833 */;
-import GuildSettingsRolesStore from "GuildSettingsRolesStore" /* 19834 */;
-import EnhancedRoleColorConstants from "EnhancedRoleColorConstants" /* 19836 */;
-import useGuildSettingsRoleExampleMessage2 from "useGuildSettingsRoleExampleMessage" /* 19855 */;
+import GuildSettingsRoleConstants from "GuildSettingsRoleConstants" /* 19835 */;
+import GuildSettingsRolesStore from "GuildSettingsRolesStore" /* 19836 */;
+import EnhancedRoleColorConstants from "EnhancedRoleColorConstants" /* 19838 */;
+import useGuildSettingsRoleExampleMessage2 from "useGuildSettingsRoleExampleMessage" /* 19857 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4913 */;

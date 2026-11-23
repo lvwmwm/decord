@@ -1,9 +1,9 @@
-// Module ID: 16104
-// Function ID: 16105
+// Module ID: 16106
+// Function ID: 16107
 // Name: AccountIgnoredUsersSetting
-// Dependencies: [4855, 8712, 1071, 504, 1112, 11937, 7235, 16105, 2]
+// Dependencies: [4855, 8712, 1071, 504, 1112, 11937, 7235, 16107, 2]
 
-// Module 16104 (AccountIgnoredUsersSetting)
+// Module 16106 (AccountIgnoredUsersSetting)
 import get_initialized from "get initialized" /* 504 */;
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;

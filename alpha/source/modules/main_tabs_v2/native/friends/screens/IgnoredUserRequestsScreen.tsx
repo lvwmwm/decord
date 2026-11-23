@@ -1,10 +1,10 @@
-// Module ID: 18887
-// Function ID: 18888
+// Module ID: 18889
+// Function ID: 18890
 // Name: IgnoredUserRequestsScreen
-// Dependencies: [19, 4855, 1386, 9646, 1071, 21, 7520, 7539, 504, 18885, 8067, 9656, 2]
+// Dependencies: [19, 4855, 1386, 9646, 1071, 21, 7520, 7539, 504, 18887, 8067, 9656, 2]
 // Exports: default
 
-// Module 18887 (IgnoredUserRequestsScreen)
+// Module 18889 (IgnoredUserRequestsScreen)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1071 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8067 */;

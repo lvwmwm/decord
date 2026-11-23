@@ -1,10 +1,10 @@
-// Module ID: 17872
-// Function ID: 17873
+// Module ID: 17874
+// Function ID: 17875
 // Name: GuildsBarAnimatedItemWrapper
-// Dependencies: [19, 5521, 17860, 21, 4913, 575, 5477, 4974, 1653, 5514, 1706, 17873, 17542, 17545, 1112, 4922, 17874, 7324, 9023, 2]
+// Dependencies: [19, 5521, 17862, 21, 4913, 575, 5477, 4974, 1653, 5514, 1706, 17875, 17544, 17547, 1112, 4922, 17876, 7324, 9023, 2]
 // Exports: default, useGuildsBarAnimatedWrapperStyles
 
-// Module 17872 (GuildsBarAnimatedItemWrapper)
+// Module 17874 (GuildsBarAnimatedItemWrapper)
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;
 import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4922 */;
@@ -12,7 +12,7 @@ import native from "native" /* 4974 */;
 import useToken from "useToken" /* 5477 */;
 import react_native from "react-native" /* 5521 */;
 import react from "react" /* 19 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 17860 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 17862 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;

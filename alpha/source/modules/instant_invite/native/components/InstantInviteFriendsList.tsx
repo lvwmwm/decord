@@ -1,10 +1,10 @@
-// Module ID: 14680
-// Function ID: 14681
+// Module ID: 14682
+// Function ID: 14683
 // Name: InstantInviteFriendsList
 // Dependencies: [19, 1071, 21, 4913, 6407, 575, 1186, 1112, 7030, 5127, 5090, 5504, 13655, 5488, 7490, 2]
 // Exports: default
 
-// Module 14680 (InstantInviteFriendsList)
+// Module 14682 (InstantInviteFriendsList)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl5 from "intl" /* 1112 */;

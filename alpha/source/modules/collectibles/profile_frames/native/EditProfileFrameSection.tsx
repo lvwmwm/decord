@@ -1,9 +1,9 @@
-// Module ID: 15896
-// Function ID: 15897
+// Module ID: 15898
+// Function ID: 15899
 // Name: EditProfileFrameSection
-// Dependencies: [19, 17, 8082, 8174, 21, 575, 4913, 14260, 15895, 14261, 7539, 9032, 2]
+// Dependencies: [19, 17, 8082, 8174, 21, 575, 4913, 14260, 15897, 14261, 7539, 9032, 2]
 
-// Module 15896 (EditProfileFrameSection)
+// Module 15898 (EditProfileFrameSection)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7539 */;
@@ -12,7 +12,7 @@ import ProfileFrameConstants from "ProfileFrameConstants" /* 8174 */;
 import ProfileFrameSamplePreviewDefault from "ProfileFrameSamplePreview" /* 9032 */;
 import useCollectibleListLayout from "useCollectibleListLayout" /* 14260 */;
 import CollectiblesEditUserProfileListItems from "CollectiblesEditUserProfileListItems" /* 14261 */;
-import useProfileFrameSections from "useProfileFrameSections" /* 15895 */;
+import useProfileFrameSections from "useProfileFrameSections" /* 15897 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;

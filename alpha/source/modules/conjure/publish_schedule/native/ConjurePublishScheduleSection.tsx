@@ -1,13 +1,13 @@
-// Module ID: 18328
-// Function ID: 18329
+// Module ID: 18330
+// Function ID: 18331
 // Name: ConjurePublishScheduleSection
-// Dependencies: [19, 21, 18329, 5929, 575, 5504, 1112, 4190, 18330, 5511, 5866, 2]
+// Dependencies: [19, 21, 18331, 5929, 575, 5504, 1112, 4190, 18332, 5511, 5866, 2]
 // Exports: default
 
-// Module 18328 (ConjurePublishScheduleSection)
+// Module 18330 (ConjurePublishScheduleSection)
 import intl6 from "intl" /* 1112 */;
 import AlertModal from "AlertModal" /* 5866 */;
-import useConjurePublishScheduleDefault from "useConjurePublishSchedule" /* 18329 */;
+import useConjurePublishScheduleDefault from "useConjurePublishSchedule" /* 18331 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -75,7 +75,7 @@ export default function ConjurePublishScheduleSection(projectId) {
         items1 = [closure_3(Text2, obj5), ];
         const obj6 = { spacing: nativeDefault.space.PX_8, children: items2 };
         const Stack2 = tmp7(5929).Stack;
-        const tmp7Result = projectId(18330);
+        const tmp7Result = projectId(18332);
         const result = tmp7Result.publishScheduleDetails(tmp3.saved);
         items2 = [
           result.map((children, index) => {

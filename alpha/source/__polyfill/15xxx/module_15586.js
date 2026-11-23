@@ -1,10 +1,16 @@
 // Module ID: 15586
 // Function ID: 15587
-// Dependencies: []
+// Dependencies: [15587]
 
 // Module 15586
-const tmp = Math.trunc || (function trunc(arg0) {
-  return 0 < +arg0 ? floor : ceil(+arg0);
-});
+import _mod15587 from "module_15587" /* 15587 */;
 
-export default tmp;
+
+export default (arg0) => {
+  const tmp = _mod15587(arg0);
+  let num = 0;
+  if (tmp > 0) {
+    num = min(tmp, 9007199254740991);
+  }
+  return num;
+};

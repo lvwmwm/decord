@@ -1,17 +1,17 @@
-// Module ID: 18038
-// Function ID: 18039
+// Module ID: 18040
+// Function ID: 18041
 // Name: VoicePanelDockPTTFloatingContent
-// Dependencies: [19, 17, 11768, 21, 575, 4913, 18010, 5122, 1653, 5481, 4920, 11011, 2]
+// Dependencies: [19, 17, 11768, 21, 575, 4913, 18012, 5122, 1653, 5481, 4920, 11011, 2]
 // Exports: default
 
-// Module 18038 (VoicePanelDockPTTFloatingContent)
+// Module 18040 (VoicePanelDockPTTFloatingContent)
 import native from "native" /* 575 */;
 import _mod1653 from "module_1653" /* 1653 */;
 import shared from "shared" /* 4920 */;
 import useThemeDefault from "useTheme" /* 5122 */;
 import VisualEffectViewDefault from "VisualEffectView" /* 5481 */;
 import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11768 */;
-import useDockBoxShadowDefault from "useDockBoxShadow" /* 18010 */;
+import useDockBoxShadowDefault from "useDockBoxShadow" /* 18012 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

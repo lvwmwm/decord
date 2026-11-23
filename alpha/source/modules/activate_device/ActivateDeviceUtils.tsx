@@ -1,10 +1,10 @@
-// Module ID: 15090
-// Function ID: 15091
+// Module ID: 15092
+// Function ID: 15093
 // Name: ActivateDeviceUtils
 // Dependencies: [1071, 7079, 2]
 // Exports: clientIdToActivateDevicePlatform
 
-// Module 15090 (ActivateDeviceUtils)
+// Module 15092 (ActivateDeviceUtils)
 import Constants from "Constants" /* 1071 */;
 import ConsoleOAuthApplications from "ConsoleOAuthApplications" /* 7079 */;
 import size from "module_2" /* 2 */;

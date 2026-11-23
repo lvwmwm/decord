@@ -1,10 +1,10 @@
-// Module ID: 16764
-// Function ID: 16765
+// Module ID: 16766
+// Function ID: 16767
 // Name: CustomTypingIndicatorEditScreen
-// Dependencies: [5, 32, 19, 17, 1386, 1071, 4759, 21, 4913, 575, 4746, 1399, 1112, 4192, 1501, 7520, 1500, 504, 2173, 7539, 16761, 9080, 4743, 1255, 12833, 1408, 5744, 5127, 16765, 2119, 16766, 8910, 8909, 7402, 6349, 15853, 12834, 9099, 12845, 5943, 5504, 16767, 7348, 7045, 2187, 5929, 5511, 8953, 8667, 16812, 10952, 2]
+// Dependencies: [5, 32, 19, 17, 1386, 1071, 4759, 21, 4913, 575, 4746, 1399, 1112, 4192, 1501, 7520, 1500, 504, 2173, 7539, 16763, 9080, 4743, 1255, 12833, 1408, 5744, 5127, 16767, 2119, 16768, 8910, 8909, 7402, 6349, 15855, 12834, 9099, 12845, 5943, 5504, 16769, 7348, 7045, 2187, 5929, 5511, 8953, 8667, 16814, 10952, 2]
 // Exports: default
 
-// Module 16764 (CustomTypingIndicatorEditScreen)
+// Module 16766 (CustomTypingIndicatorEditScreen)
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import user from "user" /* 1399 */;
@@ -175,7 +175,7 @@ function CustomTypingIndicatorEditScreenContent(mode) {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     const obj = { initialValue: first2, presets: obj2.getCustomTypingIndicatorSuggestionPresets(enabled), onChange, highlightedPresets: prop, onDismiss: tmp7 };
     ActionSheetActionCreatorsDefault;
-    const tmp4 = asyncRequire(16765, dependencyMap.paths);
+    const tmp4 = asyncRequire(16767, dependencyMap.paths);
     prop = undefined;
     obj2 = CustomTypingIndicatorUtils;
     if (closure_5) {
@@ -190,7 +190,7 @@ function CustomTypingIndicatorEditScreenContent(mode) {
   const callback3 = react.useCallback(() => {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { emojis: memo, initialAnimation: first3, onChange: onChange2 };
-    obj.openLazy(asyncRequire(16766, dependencyMap.paths), "CustomTypingIndicatorAnimationPickerSheet", obj2);
+    obj.openLazy(asyncRequire(16768, dependencyMap.paths), "CustomTypingIndicatorAnimationPickerSheet", obj2);
   }, items6);
   const ref = react.useRef(null);
   const items7 = [analyticsLocations, enabled];

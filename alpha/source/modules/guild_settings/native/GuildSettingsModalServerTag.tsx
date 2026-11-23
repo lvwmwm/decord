@@ -1,10 +1,10 @@
-// Module ID: 19810
-// Function ID: 19811
+// Module ID: 19812
+// Function ID: 19813
 // Name: GuildSettingsModalServerTag
-// Dependencies: [5, 32, 19, 17, 7759, 4784, 7995, 1071, 8000, 21, 4913, 575, 1500, 7998, 504, 7760, 7999, 7761, 7994, 5594, 1112, 13368, 8001, 7095, 7029, 1501, 5861, 1186, 7190, 13808, 5504, 7348, 7556, 7045, 5929, 15129, 7709, 15126, 19811, 2]
+// Dependencies: [5, 32, 19, 17, 7759, 4784, 7995, 1071, 8000, 21, 4913, 575, 1500, 7998, 504, 7760, 7999, 7761, 7994, 5594, 1112, 13368, 8001, 7095, 7029, 1501, 5861, 1186, 7190, 13808, 5504, 7348, 7556, 7045, 5929, 15131, 7709, 15128, 19813, 2]
 // Exports: default
 
-// Module 19810 (GuildSettingsModalServerTag)
+// Module 19812 (GuildSettingsModalServerTag)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -300,7 +300,7 @@ export default function GuildSettingsModalServerTag(guildId) {
         }
       }
     }
-    navigation.setOptions({ headerRight: "Array" });
+    navigation.setOptions({ headerRight: "r" });
   }, items9);
   const items10 = [guildId, stateFromStores2];
   closure_13 = obj7.useCallback(() => {
@@ -426,7 +426,7 @@ export default function GuildSettingsModalServerTag(guildId) {
           if (tmp33Result) {
             size = { badge: null, primaryTintColor: badgeColorPrimary, secondaryTintColor: badgeColorSecondary, width: null, height: null };
             ({ badge: obj15.badge, badgeColorPrimary } = stateFromStores1);
-            const GuildBadge = tmp2(15129).GuildBadge;
+            const GuildBadge = tmp2(15131).GuildBadge;
             badgeColorSecondary = stateFromStores1.badgeColorSecondary;
             ({ SIZE_16: obj15.width, SIZE_16: obj15.height } = closure_12);
             tmp33Result = tmp33(GuildBadge, size);
@@ -452,12 +452,12 @@ export default function GuildSettingsModalServerTag(guildId) {
           items14[2] = closure_13(Text2, obj18);
           const obj19 = { guildId, tag: null, badge: null, primaryColor: null, secondaryColor: null, isDirty: result1 };
           ({ tag: obj21.tag, badge: obj21.badge, badgeColorPrimary: obj21.primaryColor, badgeColorSecondary: obj21.secondaryColor } = stateFromStores1);
-          items14[3] = closure_13(navigation(15126), obj19);
+          items14[3] = closure_13(navigation(15128), obj19);
           obj16.children = items14;
           tmp41 = obj16;
         } else {
           const obj20 = { guildId, onUnlockPress: callback2 };
-          const items15 = [tmp33(tmp40(19811), obj20), tmp32Result2];
+          const items15 = [tmp33(tmp40(19813), obj20), tmp32Result2];
           obj16.children = items15;
           tmp41 = obj16;
         }

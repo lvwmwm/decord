@@ -1,9 +1,9 @@
-// Module ID: 17844
-// Function ID: 17845
+// Module ID: 17846
+// Function ID: 17847
 // Name: GuildsEmpty
-// Dependencies: [32, 19, 17, 4780, 502, 4784, 4946, 1071, 21, 4913, 575, 5504, 13614, 17845, 1112, 5929, 5511, 1501, 563, 5930, 1263, 4787, 5091, 8150, 16478, 2]
+// Dependencies: [32, 19, 17, 4780, 502, 4784, 4946, 1071, 21, 4913, 575, 5504, 13614, 17847, 1112, 5929, 5511, 1501, 563, 5930, 1263, 4787, 5091, 8150, 16480, 2]
 
-// Module 17844 (GuildsEmpty)
+// Module 17846 (GuildsEmpty)
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1112 */;
 import GuildRecord from "GuildRecord" /* 4780 */;
@@ -12,7 +12,7 @@ import Text_Text from "Text/Text" /* 5504 */;
 import components_Button_Button from "components/Button/Button" /* 5511 */;
 import Stack_Stack from "Stack/Stack" /* 5929 */;
 import CreateGuildModalActionCreatorsDefault from "CreateGuildModalActionCreators" /* 13614 */;
-import CheersSpotIllustration from "CheersSpotIllustration" /* 17845 */;
+import CheersSpotIllustration from "CheersSpotIllustration" /* 17847 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -206,7 +206,7 @@ const memoResult = react.memo(function GuildsEmpty(arg0) {
   }, items1);
   const tmp2Result = navigation(8150);
   const isScreenLandscape = tmp2Result.useIsScreenLandscape();
-  navigation(16478);
+  navigation(16480);
   let tmp14Result = null;
   if (stateFromStores) {
     const obj4 = { style: items2, children: items3 };

@@ -1,10 +1,10 @@
-// Module ID: 17519
-// Function ID: 17520
+// Module ID: 17521
+// Function ID: 17522
 // Name: PanelsConfig
 // Dependencies: [1186, 2]
 // Exports: isTimingConfig
 
-// Module 17519 (PanelsConfig)
+// Module 17521 (PanelsConfig)
 import native from "native" /* 1186 */;
 import size from "module_2" /* 2 */;
 

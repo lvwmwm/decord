@@ -1,11 +1,23 @@
 // Module ID: 15545
 // Function ID: 15546
-// Dependencies: [15543]
+// Dependencies: [15546]
 
 // Module 15545
-import _mod15543 from "module_15543" /* 15543 */;
+import module_15546_mod from "module_15546" /* 15546 */;
 
-let closure_0 = _mod15543({}.toString);
-let closure_1 = _mod15543("".slice);
+const call = prototype.call;
+let module_15546 = module_15546_mod;
+if (module_15546) {
+  const bind = prototype.bind;
+  module_15546 = bind.bind(call, call);
+}
+if (!module_15546) {
+  module_15546 = (arg0) => {
+    let closure_0 = arg0;
+    return function() {
+      return call(...arguments);
+    };
+  };
+}
 
-export default (arg0) => closure_1(closure_0(arg0), 8, -1);
+export default module_15546;

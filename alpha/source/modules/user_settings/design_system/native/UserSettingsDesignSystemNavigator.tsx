@@ -1,10 +1,10 @@
-// Module ID: 17247
-// Function ID: 17248
+// Module ID: 17249
+// Function ID: 17250
 // Name: UserSettingsDesignSystemNavigator
-// Dependencies: [32, 19, 17, 21, 4913, 575, 7813, 5504, 7811, 7348, 7045, 7102, 12249, 15284, 6545, 5511, 7092, 7095, 6429, 17248, 7029, 5929, 7347, 7349, 2]
+// Dependencies: [32, 19, 17, 21, 4913, 575, 7813, 5504, 7811, 7348, 7045, 7102, 12249, 15286, 6545, 5511, 7092, 7095, 6429, 17250, 7029, 5929, 7347, 7349, 2]
 // Exports: default
 
-// Module 17247 (UserSettingsDesignSystemNavigator)
+// Module 17249 (UserSettingsDesignSystemNavigator)
 import nativeDefault from "native" /* 575 */;
 import Text_Text from "Text/Text" /* 5504 */;
 import components_Button_Button from "components/Button/Button" /* 5511 */;
@@ -18,7 +18,7 @@ import TableRowGroup2 from "TableRowGroup" /* 7348 */;
 import ModalScreen2 from "ModalScreen" /* 7811 */;
 import ModalContent2 from "ModalContent" /* 7813 */;
 import ModalFooter2 from "ModalFooter" /* 12249 */;
-import ModalDisclaimer from "ModalDisclaimer" /* 15284 */;
+import ModalDisclaimer from "ModalDisclaimer" /* 15286 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;

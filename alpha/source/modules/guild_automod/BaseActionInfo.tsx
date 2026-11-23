@@ -1,10 +1,10 @@
-// Module ID: 19723
-// Function ID: 19724
+// Module ID: 19725
+// Function ID: 19726
 // Name: BaseActionInfo
 // Dependencies: [4762, 4855, 1386, 12408, 4827, 1112, 5529, 2]
 // Exports: getBaseActionInfo
 
-// Module 19723 (BaseActionInfo)
+// Module 19725 (BaseActionInfo)
 import intl13 from "intl" /* 1112 */;
 import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 4827 */;
 import useChannelName from "useChannelName" /* 5529 */;

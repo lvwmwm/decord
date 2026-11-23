@@ -1,10 +1,10 @@
-// Module ID: 17435
-// Function ID: 17436
+// Module ID: 17437
+// Function ID: 17438
 // Name: DevWidget
-// Dependencies: [19, 8422, 573, 21, 4913, 575, 1653, 11771, 12901, 5173, 1706, 5514, 5515, 7030, 15821, 16996, 17436, 16995, 2]
+// Dependencies: [19, 8422, 573, 21, 4913, 575, 1653, 11771, 12901, 5173, 1706, 5514, 5515, 7030, 15823, 16998, 17438, 16997, 2]
 // Exports: default
 
-// Module 17435 (DevWidget)
+// Module 17437 (DevWidget)
 import Constants from "Constants" /* 573 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1653 from "module_1653" /* 1653 */;
@@ -15,8 +15,8 @@ import springPresets from "springPresets" /* 5515 */;
 import Pressables from "Pressables" /* 7030 */;
 import useSafeAreaInsetsSharedValueDefault from "useSafeAreaInsetsSharedValue" /* 11771 */;
 import useWindowDimensionsSharedValueDefault from "useWindowDimensionsSharedValue" /* 12901 */;
-import StaffBadgeIcon from "StaffBadgeIcon" /* 16996 */;
-import VEVOODefault from "VEVOO" /* 17436 */;
+import StaffBadgeIcon from "StaffBadgeIcon" /* 16998 */;
+import VEVOODefault from "VEVOO" /* 17438 */;
 import react from "react" /* 19 */;
 import DevToolsSettingsStore from "DevToolsSettingsStore" /* 8422 */;
 import Fragment from "Fragment" /* 21 */;

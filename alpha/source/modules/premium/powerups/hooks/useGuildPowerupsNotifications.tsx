@@ -42,8 +42,8 @@ let unpackModuleId;
 const useBoostToUnlockFeaturedPowerupDefault = tmp7(13395);
 const useCanPurchaseBoostsDefault = tmp7(13396);
 const useFeaturedExpiringPowerupDefault = tmp7(13397);
-const f104100 = () => notificationStateForGuild.getNotificationStateForGuild(closure_0);
-const f104101 = () => stateForGuild.getStateForGuild(closure_0);
+const f104075 = () => notificationStateForGuild.getNotificationStateForGuild(closure_0);
+const f104076 = () => stateForGuild.getStateForGuild(closure_0);
 function maybeGetPerkPurchaseablePopoutDCF(c0, arg1, available) {
   function markAsDismissed(AUTO_DISMISS) {
     const obj = GuildDismissibleContentUtils;
@@ -523,10 +523,10 @@ export default function useGuildPowerupsNotifications(arg0) {
   const items = [GuildPowerupsNotificationStore];
   const items1 = [arg0];
   const obj = require("useStateFromStores");
-  const stateFromStores = obj.useStateFromStores(items, f104100, items1);
+  const stateFromStores = obj.useStateFromStores(items, f104075, items1);
   const items2 = [GuildPowerupsStore];
   const obj2 = require("useStateFromStores");
-  const stateFromStores1 = obj2.useStateFromStores(items2, f104101);
+  const stateFromStores1 = obj2.useStateFromStores(items2, f104076);
   ({ indicator, showUnread } = useGuildPowerupsNotificationIndicator(arg0, stateFromStores1, stateFromStores));
   useGuildPowerupsNotificationIndicator(arg0, stateFromStores1, stateFromStores);
   const tmp6Result = useGuildPowerupsChannelListPopout(arg0, stateFromStores1);
@@ -613,10 +613,10 @@ export function useAutoDismissGuildPowerupsNotifications(guildId) {
   const items1 = [GuildPowerupsNotificationStore];
   const items2 = [guildId];
   const obj2 = require("useStateFromStores");
-  const stateFromStores1 = obj2.useStateFromStores(items1, f104100, items2);
+  const stateFromStores1 = obj2.useStateFromStores(items1, f104075, items2);
   const items3 = [GuildPowerupsStore];
   const obj3 = require("useStateFromStores");
-  const stateFromStores2 = obj3.useStateFromStores(items3, f104101);
+  const stateFromStores2 = obj3.useStateFromStores(items3, f104076);
   ({ indicator, showUnread } = useGuildPowerupsNotificationIndicator(guildId, stateFromStores2, stateFromStores1));
   useGuildPowerupsNotificationIndicator(guildId, stateFromStores2, stateFromStores1);
   let tmp12;

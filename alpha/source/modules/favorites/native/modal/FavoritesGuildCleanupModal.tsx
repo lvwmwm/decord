@@ -1,10 +1,10 @@
-// Module ID: 17658
-// Function ID: 17659
+// Module ID: 17660
+// Function ID: 17661
 // Name: FavoritesGuildCleanupModal
-// Dependencies: [19, 17, 4775, 21, 4913, 575, 6429, 1628, 17659, 5929, 7347, 1112, 3802, 7349, 5504, 5511, 7095, 12043, 2]
+// Dependencies: [19, 17, 4775, 21, 4913, 575, 6429, 1628, 17661, 5929, 7347, 1112, 3802, 7349, 5504, 5511, 7095, 12043, 2]
 // Exports: default
 
-// Module 17658 (FavoritesGuildCleanupModal)
+// Module 17660 (FavoritesGuildCleanupModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef3802 from "module_3802" /* 3802 */;
@@ -62,7 +62,7 @@ function CleanupScreen() {
   let tmp = loading;
   const tmp2 = dependencyMap;
   const tmp3 = closure_14(loading(1628)().bottom);
-  const tmp4 = loading(17659)(closeCleanup);
+  const tmp4 = loading(17661)(closeCleanup);
   _require = tmp4;
   loading = tmp4.loading;
   let obj = { style: tmp3.container, spacing: 0, children: items4 };

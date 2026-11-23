@@ -1,10 +1,10 @@
-// Module ID: 15124
-// Function ID: 15125
+// Module ID: 15126
+// Function ID: 15127
 // Name: useIsServerThemeAvailableForGuild
 // Dependencies: [13386, 5116, 2]
 // Exports: default
 
-// Module 15124 (useIsServerThemeAvailableForGuild)
+// Module 15126 (useIsServerThemeAvailableForGuild)
 import GuildThemeResolver from "GuildThemeResolver" /* 5116 */;
 import ServerThemeExperiment from "ServerThemeExperiment" /* 13386 */;
 import size from "module_2" /* 2 */;

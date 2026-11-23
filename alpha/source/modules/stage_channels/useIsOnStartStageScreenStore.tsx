@@ -16,7 +16,7 @@ import size from "module_2" /* 2 */;
 const require = globalThis.__r;
 let _require, dependencyMap;
 
-const f89081 = () => {
+const f89054 = () => {
   obj = { isOnStartStageScreen };
   return state.setState(obj);
 };
@@ -28,7 +28,7 @@ export function setIsOnStartStageScreen(arg0) {
   let closure_0;
   _require = arg0;
   obj = require("react-native");
-  obj.batchUpdates(f89081);
+  obj.batchUpdates(f89054);
 }
 export function useUpdateIsOnStartStageScreenEffect(id) {
   let closure_2;
@@ -49,12 +49,12 @@ export function useUpdateIsOnStartStageScreenEffect(id) {
       if (!closure_2) {
         let c0 = false;
         const obj2 = react_native;
-        obj2.batchUpdates(f89081);
+        obj2.batchUpdates(f89054);
       }
     } else {
       let closure_0 = tmp;
       obj = react_native;
-      obj.batchUpdates(f89081);
+      obj.batchUpdates(f89054);
     }
   }, items3);
 }

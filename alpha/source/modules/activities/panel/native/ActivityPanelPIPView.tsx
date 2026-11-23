@@ -1,10 +1,10 @@
-// Module ID: 19183
-// Function ID: 19184
+// Module ID: 19185
+// Function ID: 19186
 // Name: ActivityPanelPIPView
-// Dependencies: [19, 17, 4914, 10840, 4762, 4761, 5539, 19034, 1071, 11751, 10774, 21, 1186, 4913, 575, 1628, 504, 1494, 19179, 11754, 1653, 19184, 4974, 1706, 5123, 5514, 19185, 19186, 1112, 5173, 4834, 19181, 10783, 2]
+// Dependencies: [19, 17, 4914, 10840, 4762, 4761, 5539, 19036, 1071, 11751, 10774, 21, 1186, 4913, 575, 1628, 504, 1494, 19181, 11754, 1653, 19186, 4974, 1706, 5123, 5514, 19187, 19188, 1112, 5173, 4834, 19183, 10783, 2]
 // Exports: useBaseActivityPanelPIPView
 
-// Module 19183 (ActivityPanelPIPView)
+// Module 19185 (ActivityPanelPIPView)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
@@ -14,8 +14,8 @@ import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
 import Constants2 from "Constants" /* 10774 */;
 import MorphablePanelConstants from "MorphablePanelConstants" /* 11751 */;
 import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11754 */;
-import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 19034 */;
-import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 19181 */;
+import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 19036 */;
+import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 19183 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4914 */;
 import SafeAreaDisabledStore from "SafeAreaDisabledStore" /* 10840 */;
@@ -34,7 +34,7 @@ let map1;
 let obj2;
 let obj3;
 let unpackModuleId;
-const f117085 = () => {
+const f117062 = () => {
   let num;
   const _Math = Math;
   if (right != null) {
@@ -372,7 +372,7 @@ const memoResult = react.memo(function ActivityPanelPIPView(transitionState) {
   const tmp8 = transitionCleanUp(1628)();
   let closure_0 = tmp8;
   const items3 = [tmp8.right];
-  memo = activity.useMemo(f117085, items3);
+  memo = activity.useMemo(f117062, items3);
   const items4 = [activity, stateFromStores1, memo, stateFromStores, transitionCleanUp, transitionState];
   return activity.useMemo(() => <BaseActivityPanelPIPView transitionState={transitionState} transitionCleanUp={transitionCleanUp} pipOrientationLockState={stateFromStores} hasActivity={null != activity} context={ActivityPanelStateContextDefault}>{null}</BaseActivityPanelPIPView>, items4);
 });
@@ -384,7 +384,7 @@ export function useBaseActivityPanelPIPView() {
   let items;
   const tmp = useSafeAreaInsetsDefault();
   let closure_0 = tmp;
-  const obj = { landscapeSafeAreasConfig: react.useMemo(f117085, items) };
+  const obj = { landscapeSafeAreasConfig: react.useMemo(f117062, items) };
   items = [tmp.right];
   return obj;
 }

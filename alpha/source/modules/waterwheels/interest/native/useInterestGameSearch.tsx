@@ -1,10 +1,10 @@
-// Module ID: 17837
-// Function ID: 17838
+// Module ID: 17839
+// Function ID: 17840
 // Name: useInterestGameSearch
 // Dependencies: [5, 32, 19, 8825, 9932, 8826, 9930, 9931, 9929, 2]
 // Exports: default
 
-// Module 17837 (useInterestGameSearch)
+// Module 17839 (useInterestGameSearch)
 import GameAutocompleteUtils from "GameAutocompleteUtils" /* 8826 */;
 import GameSearchSession from "GameSearchSession" /* 9930 */;
 import GameSearchSurfaces from "GameSearchSurfaces" /* 9931 */;

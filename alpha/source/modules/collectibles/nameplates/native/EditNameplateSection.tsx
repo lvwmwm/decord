@@ -1,16 +1,16 @@
-// Module ID: 15901
-// Function ID: 15902
+// Module ID: 15903
+// Function ID: 15904
 // Name: EditNameplateSection
-// Dependencies: [19, 17, 2110, 21, 4913, 14260, 15900, 14261, 7539, 2109, 9028, 2]
+// Dependencies: [19, 17, 2110, 21, 4913, 14260, 15902, 14261, 7539, 2109, 9028, 2]
 
-// Module 15901 (EditNameplateSection)
+// Module 15903 (EditNameplateSection)
 import react_native from "react-native" /* 17 */;
 import utils from "utils" /* 2109 */;
 import NameplateRecord from "NameplateRecord" /* 2110 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7539 */;
 import useCollectibleListLayout from "useCollectibleListLayout" /* 14260 */;
 import CollectiblesEditUserProfileListItems from "CollectiblesEditUserProfileListItems" /* 14261 */;
-import useNameplateSections from "useNameplateSections" /* 15900 */;
+import useNameplateSections from "useNameplateSections" /* 15902 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;

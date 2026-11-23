@@ -1,10 +1,10 @@
-// Module ID: 16546
-// Function ID: 16547
+// Module ID: 16548
+// Function ID: 16549
 // Name: QuestBottomSheetConsoleConnect
-// Dependencies: [19, 17, 1071, 21, 575, 4913, 9958, 9996, 9998, 5127, 8194, 16504, 2119, 9961, 9964, 6565, 8430, 6561, 7024, 7348, 7045, 9906, 1112, 9798, 2]
+// Dependencies: [19, 17, 1071, 21, 575, 4913, 9958, 9996, 9998, 5127, 8194, 16506, 2119, 9961, 9964, 6565, 8430, 6561, 7024, 7348, 7045, 9906, 1112, 9798, 2]
 // Exports: default
 
-// Module 16546 (QuestBottomSheetConsoleConnect)
+// Module 16548 (QuestBottomSheetConsoleConnect)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1112 */;
@@ -118,7 +118,7 @@ export default function QuestBottomSheetConsoleConnect(quest) {
   function openQuestBottomSheet() {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { questId: quest.id, initialStep: importDefault, sourceQuestContent: dependencyMap };
-    obj.openLazy(asyncRequire(16504, dependencyMap.paths), "QuestBottomSheet", obj2);
+    obj.openLazy(asyncRequire(16506, dependencyMap.paths), "QuestBottomSheet", obj2);
   }
   let obj = quest(9958);
   const xboxAndPlaystationAccounts = obj.useConnectedAccounts().xboxAndPlaystationAccounts;

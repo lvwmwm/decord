@@ -1,10 +1,10 @@
-// Module ID: 18268
-// Function ID: 18269
+// Module ID: 18270
+// Function ID: 18271
 // Name: ConjurePublishReviewDetails
-// Dependencies: [19, 17, 21, 9904, 7034, 7704, 6622, 12179, 17996, 18269, 10133, 18271, 4913, 575, 5595, 7703, 18273, 18275, 7221, 1112, 4190, 7461, 5600, 5504, 14722, 18252, 18279, 4975, 7030, 7336, 7061, 2]
+// Dependencies: [19, 17, 21, 9904, 7034, 7704, 6622, 12179, 17998, 18271, 10133, 18273, 4913, 575, 5595, 7703, 18275, 18277, 7221, 1112, 4190, 7461, 5600, 5504, 14724, 18254, 18281, 4975, 7030, 7336, 7061, 2]
 // Exports: default
 
-// Module 18268 (ConjurePublishReviewDetails)
+// Module 18270 (ConjurePublishReviewDetails)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl7 from "intl" /* 1112 */;
@@ -20,9 +20,9 @@ import AppsIcon from "AppsIcon" /* 7704 */;
 import ScreenIcon from "ScreenIcon" /* 9904 */;
 import ShieldIcon from "ShieldIcon" /* 10133 */;
 import RobotIcon from "RobotIcon" /* 12179 */;
-import ActivitiesIcon from "ActivitiesIcon" /* 17996 */;
-import BadgeIcon from "BadgeIcon" /* 18269 */;
-import WindowTopIcon from "WindowTopIcon" /* 18271 */;
+import ActivitiesIcon from "ActivitiesIcon" /* 17998 */;
+import BadgeIcon from "BadgeIcon" /* 18271 */;
+import WindowTopIcon from "WindowTopIcon" /* 18273 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;
@@ -197,7 +197,7 @@ export default function ConjurePublishReviewDetails(review) {
   if (review.managedCopy) {
     const tmp9 = dependencyMap;
     obj = { projectId: review.projectId };
-    tmp6 = closure_4(appChannelsPrivate(18273), obj);
+    tmp6 = closure_4(appChannelsPrivate(18275), obj);
   }
   const items = [tmp6, , , , , ];
   obj2 = { children: null };
@@ -217,7 +217,7 @@ export default function ConjurePublishReviewDetails(review) {
         },
       onConjure: onConjureIcon
     };
-    const items1 = [closure_4(appChannelsPrivate(18275).ConjureAppIconTile, obj3), , ];
+    const items1 = [closure_4(appChannelsPrivate(18277).ConjureAppIconTile, obj3), , ];
     const obj4 = { label: intl.string(appChannelsPrivate(4190).knevPu), value: null, onChange: null, maxLength: appChannelsPrivate(6622).MAX_PROJECT_NAME_LENGTH, disabled: null, errorMessage: nameError };
     const TextInput = appChannelsPrivate(7221).TextInput;
     intl = appChannelsPrivate(1112).intl;
@@ -270,7 +270,7 @@ export default function ConjurePublishReviewDetails(review) {
   let tmp15Result2 = null;
   if (true === shared) {
     const obj15 = { label: intl5.string(appChannelsPrivate(4190).Td1mlg), checked: null, onToggle: null };
-    const Checkbox = tmp16(14722).Checkbox;
+    const Checkbox = tmp16(14724).Checkbox;
     intl5 = tmp16(1112).intl;
     ({ isPrivate: obj12.checked, setPrivate: obj12.onToggle } = appChannelsPrivate);
     tmp15Result2 = tmp15(Checkbox, obj15);
@@ -290,6 +290,6 @@ export default function ConjurePublishReviewDetails(review) {
   devicePermissions = review.devicePermissions;
   items[4] = tmp15(tmp24, obj30);
   const obj31 = { remix: review.remix, disabled: review.saving };
-  items[5] = tmp15(appChannelsPrivate(18279), obj31);
+  items[5] = tmp15(appChannelsPrivate(18281), obj31);
   return closure_6(closure_5, obj29);
 };

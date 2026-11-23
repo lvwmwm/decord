@@ -1,15 +1,15 @@
-// Module ID: 19119
-// Function ID: 19120
+// Module ID: 19121
+// Function ID: 19122
 // Name: LaunchPadPullTab
-// Dependencies: [19, 17, 11933, 12825, 21, 4913, 575, 18235, 1653, 12901, 19120, 5514, 1112, 19040, 15052, 2]
+// Dependencies: [19, 17, 11933, 12825, 21, 4913, 575, 18237, 1653, 12901, 19122, 5514, 1112, 19042, 15054, 2]
 
-// Module 19119 (LaunchPadPullTab)
+// Module 19121 (LaunchPadPullTab)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import ChatInputConstants from "ChatInputConstants" /* 12825 */;
 import useWindowDimensionsSharedValueDefault from "useWindowDimensionsSharedValue" /* 12901 */;
-import useLaunchPadPullTabMinimizedDefault from "useLaunchPadPullTabMinimized" /* 19120 */;
+import useLaunchPadPullTabMinimizedDefault from "useLaunchPadPullTabMinimized" /* 19122 */;
 import react from "react" /* 19 */;
 import LaunchPadConstants from "LaunchPadConstants" /* 11933 */;
 import createStyles_mod from "createStyles" /* 4913 */;
@@ -28,8 +28,8 @@ let size;
 let tmp2;
 let unpackModuleId;
 const _modDef1653 = tmp2(1653);
-const useAnimatedKeyboardHeightDefault = tmp2(18235);
-const showLaunchPadDefault = tmp2(19040);
+const useAnimatedKeyboardHeightDefault = tmp2(18237);
+const showLaunchPadDefault = tmp2(19042);
 const Pressable = react_native.Pressable;
 ({ LAUNCH_PAD_MARGIN: closure_4, LAUNCH_PAD_PULL_TAB_BORDER_RADIUS } = LaunchPadConstants);
 const LAUNCH_PAD_PULL_TAB_HEIGHT = LaunchPadConstants.LAUNCH_PAD_PULL_TAB_HEIGHT;

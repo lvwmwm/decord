@@ -1,10 +1,10 @@
-// Module ID: 14584
-// Function ID: 14585
+// Module ID: 14586
+// Function ID: 14587
 // Name: UserProfileRecentActivityCard
 // Dependencies: [19, 17, 21, 14462, 8010, 14467, 4913, 575, 8996, 4974, 7977, 4920, 5600, 1412, 2152, 5504, 14449, 7520, 7539, 14474, 14475, 9765, 9774, 7030, 1112, 2]
 // Exports: default
 
-// Module 14584 (UserProfileRecentActivityCard)
+// Module 14586 (UserProfileRecentActivityCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AvatarUtils from "AvatarUtils" /* 1412 */;
@@ -306,7 +306,7 @@ export default function UserProfileRecentActivityCard(style) {
           obj8 = { title: entry.extra.activity_name };
           const obj7 = { title: entry.extra.activity_name };
         } else {
-          obj8 = { title: "Array" };
+          obj8 = { title: "r" };
         }
       }
     }

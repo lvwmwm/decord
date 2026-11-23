@@ -1,9 +1,9 @@
-// Module ID: 16726
-// Function ID: 16727
+// Module ID: 16728
+// Function ID: 16729
 // Name: ExactSearchResultCountsSetting
 // Dependencies: [8712, 1112, 11937, 4738, 2]
 
-// Module 16726 (ExactSearchResultCountsSetting)
+// Module 16728 (ExactSearchResultCountsSetting)
 import intl2 from "intl" /* 1112 */;
 import UserSettings from "UserSettings" /* 4738 */;
 import SettingsConstants from "SettingsConstants" /* 8712 */;

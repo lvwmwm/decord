@@ -32,11 +32,11 @@ let closure_4;
 let hasOwnProperty;
 let map1;
 let unpackModuleId;
-const f88599 = (item) => {
+const f88572 = (item) => {
   const obj = EmbedUtils;
   return obj.sanitizeEmbed(message2.channel_id, message2.id, item);
 };
-const f88601 = (item) => {
+const f88574 = (item) => {
   const obj = {};
   const merged = Object.assign(item);
   if (null != obj.count_details) {
@@ -59,7 +59,7 @@ const f88601 = (item) => {
   }
   return obj;
 };
-const f88602 = (message) => {
+const f88575 = (message) => {
   const obj = { message: createMinimalMessageRecord(message.message), moderator_report: message.moderator_report };
   const tmp = new closure_1_4(obj);
   return tmp;
@@ -91,7 +91,7 @@ function createMinimalMessageRecord(timestamp) {
     items = [];
   } else {
     const embeds = timestamp.embeds;
-    const mapped = embeds.map(f88599);
+    const mapped = embeds.map(f88572);
     const obj2 = require("EmbedUtils");
     items = obj2.mergeEmbedsOnURL(mapped);
   }
@@ -274,7 +274,7 @@ function createMessageRecord(message, arg1) {
     items = [];
   } else {
     const message_snapshots = message.message_snapshots;
-    items = message_snapshots.map(f88602);
+    items = message_snapshots.map(f88575);
   }
   if (reactions == null) {
     reactions = message.reactions;
@@ -335,7 +335,7 @@ function createMessageRecord(message, arg1) {
     mapped1 = [];
   }
   HermesBuiltin.arraySpread(items2, mapped1, tmp49);
-  items1 = items2.map(f88601);
+  items1 = items2.map(f88574);
 }
 function isCurrentReactionType(count_details) {
   count_details = count_details.count_details;
@@ -436,7 +436,7 @@ export function updateMessageRecord(message, message2) {
         items = [];
       } else {
         const embeds = message2.embeds;
-        const mapped = embeds.map(f88599);
+        const mapped = embeds.map(f88572);
         const obj7 = require("EmbedUtils");
         items = obj7.mergeEmbedsOnURL(mapped);
       }
@@ -450,7 +450,7 @@ export function updateMessageRecord(message, message2) {
         items1 = [];
       } else {
         const message_snapshots = message2.message_snapshots;
-        items1 = message_snapshots.map(f88602);
+        items1 = message_snapshots.map(f88575);
       }
       set2Result = set2("messageSnapshots", items1);
     }
@@ -500,7 +500,7 @@ export function updateMessageRecord(message, message2) {
         let num = 0;
         const arraySpreadResult = HermesBuiltin.arraySpread(items3, reactions.filter(isCurrentReactionType), 0);
         HermesBuiltin.arraySpread(items3, [], arraySpreadResult);
-        items2 = items3.map(f88601);
+        items2 = items3.map(f88574);
       }
       set5Result = set5("reactions", items2);
     }

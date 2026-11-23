@@ -1,9 +1,9 @@
-// Module ID: 17202
-// Function ID: 17203
+// Module ID: 17204
+// Function ID: 17205
 // Name: DesignSystemsTextSetting
-// Dependencies: [8712, 1071, 11937, 17203, 2]
+// Dependencies: [8712, 1071, 11937, 17205, 2]
 
-// Module 17202 (DesignSystemsTextSetting)
+// Module 17204 (DesignSystemsTextSetting)
 import Constants from "Constants" /* 1071 */;
 import SettingsConstants from "SettingsConstants" /* 8712 */;
 import SettingBuilders from "SettingBuilders" /* 11937 */;

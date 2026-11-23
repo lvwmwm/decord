@@ -64,7 +64,7 @@ export function useTrialOffer(arg0) {
   }
   const items2 = [first, stateFromStores];
   const effect = obj3.useEffect(function() {
-    const f137045 = () => {
+    const f137023 = () => {
       const tmp = first;
       if (!tmp) {
         if (stateFromStores.hasExpired) {
@@ -81,7 +81,7 @@ export function useTrialOffer(arg0) {
         }
         const obj = timeout;
         if (timeout != null) {
-          obj.start(num, f137045);
+          obj.start(num, f137023);
         }
       }
     };
@@ -99,7 +99,7 @@ export function useTrialOffer(arg0) {
             let time = expiresAt.getTime();
             num = time - Date.now();
           }
-          timeout.start(num, f137045);
+          timeout.start(num, f137023);
         }
         return () => timeout.stop();
       }

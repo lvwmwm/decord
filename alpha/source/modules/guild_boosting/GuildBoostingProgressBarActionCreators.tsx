@@ -1,10 +1,10 @@
-// Module ID: 17739
-// Function ID: 17740
+// Module ID: 17741
+// Function ID: 17742
 // Name: GuildBoostingProgressBarActionCreators
 // Dependencies: [572, 2]
 // Exports: resetGuildPremiumSubscriptionCount, updateGuildPremiumSubscriptionCount
 
-// Module 17739 (GuildBoostingProgressBarActionCreators)
+// Module 17741 (GuildBoostingProgressBarActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 

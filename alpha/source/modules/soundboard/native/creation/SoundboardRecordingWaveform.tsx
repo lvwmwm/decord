@@ -1,9 +1,9 @@
-// Module ID: 19799
-// Function ID: 19800
+// Module ID: 19801
+// Function ID: 19802
 // Name: SoundboardRecordingWaveform
 // Dependencies: [19, 17, 12824, 21, 4913, 575, 1653, 5514, 5515, 2]
 
-// Module 19799 (SoundboardRecordingWaveform)
+// Module 19801 (SoundboardRecordingWaveform)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;

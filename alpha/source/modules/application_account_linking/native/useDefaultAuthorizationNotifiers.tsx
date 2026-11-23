@@ -1,10 +1,10 @@
-// Module ID: 17783
-// Function ID: 17784
+// Module ID: 17785
+// Function ID: 17786
 // Name: useDefaultAuthorizationNotifiers
 // Dependencies: [19, 2118, 1071, 504, 5624, 6417, 5595, 1112, 3670, 2]
 // Exports: useDefaultAuthorizationNotifiers
 
-// Module 17783 (useDefaultAuthorizationNotifiers)
+// Module 17785 (useDefaultAuthorizationNotifiers)
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
 import _modDef3670 from "module_3670" /* 3670 */;

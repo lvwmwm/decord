@@ -1,10 +1,10 @@
-// Module ID: 16105
-// Function ID: 16106
+// Module ID: 16107
+// Function ID: 16108
 // Name: IgnoredUsersList
-// Dependencies: [19, 17, 4855, 21, 4913, 575, 7520, 7539, 1186, 16098, 1112, 7017, 5504, 7348, 16106, 504, 2]
+// Dependencies: [19, 17, 4855, 21, 4913, 575, 7520, 7539, 1186, 16100, 1112, 7017, 5504, 7348, 16108, 504, 2]
 // Exports: default
 
-// Module 16105 (IgnoredUsersList)
+// Module 16107 (IgnoredUsersList)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -14,8 +14,8 @@ import Text_Text from "Text/Text" /* 5504 */;
 import common_SafeAreaView from "common/SafeAreaView" /* 7017 */;
 import TableRowGroup2 from "TableRowGroup" /* 7348 */;
 import useAnalyticsLocations from "useAnalyticsLocations" /* 7520 */;
-import Blocked from "Blocked" /* 16098 */;
-import IgnoredUserRowDefault from "IgnoredUserRow" /* 16106 */;
+import Blocked from "Blocked" /* 16100 */;
+import IgnoredUserRowDefault from "IgnoredUserRow" /* 16108 */;
 import react from "react" /* 19 */;
 import RelationshipStore from "RelationshipStore" /* 4855 */;
 import Fragment from "Fragment" /* 21 */;

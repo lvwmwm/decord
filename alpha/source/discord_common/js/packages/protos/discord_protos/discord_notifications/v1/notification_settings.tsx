@@ -1,13 +1,13 @@
-// Module ID: 14937
-// Function ID: 14938
+// Module ID: 14939
+// Function ID: 14940
 // Name: notification_settings
-// Dependencies: [32, 1196, 1226, 1224, 14938, 2]
+// Dependencies: [32, 1196, 1226, 1224, 14940, 2]
 
-// Module 14937 (notification_settings)
+// Module 14939 (notification_settings)
 import _mod1196 from "module_1196" /* 1196 */;
 import user_settings_shared from "user_settings_shared" /* 1224 */;
 import wrappers from "wrappers" /* 1226 */;
-import mute2 from "mute" /* 14938 */;
+import mute2 from "mute" /* 14940 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

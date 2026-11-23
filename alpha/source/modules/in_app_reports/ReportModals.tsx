@@ -372,7 +372,7 @@ export function showUnauthenticatedReportModalForMessage(emailToken, onClose) {
   const IAR_MODAL_OPEN = AnalyticEvents.IAR_MODAL_OPEN;
   obj = { report_type: MESSAGE, location: "r" };
   AppAnalyticsUtilsDefault;
-  const merged = Object.assign({ message_id: "disabled", channel_id: "isArray" });
+  const merged = Object.assign({ message_id: "Array", channel_id: "Path" });
   trackWithMetadata(IAR_MODAL_OPEN, obj);
   const obj2 = showReportModal2;
   const obj3 = { name: MenuTypes.UnauthenticatedReportNames.MESSAGE, record: tmp };

@@ -1,18 +1,18 @@
-// Module ID: 15908
-// Function ID: 15909
+// Module ID: 15910
+// Function ID: 15911
 // Name: usePremiumTryItOutPresetShuffle
-// Dependencies: [19, 8132, 1071, 5122, 4920, 15909, 8910, 15834, 7410, 1255, 1112, 2]
+// Dependencies: [19, 8132, 1071, 5122, 4920, 15911, 8910, 15836, 7410, 1255, 1112, 2]
 // Exports: default
 
-// Module 15908 (usePremiumTryItOutPresetShuffle)
+// Module 15910 (usePremiumTryItOutPresetShuffle)
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import shared from "shared" /* 4920 */;
 import ProfilePendingImageTypes from "ProfilePendingImageTypes" /* 7410 */;
 import UserProfileActionCreators from "UserProfileActionCreators" /* 8910 */;
-import ProfilePendingImageUtils from "ProfilePendingImageUtils" /* 15834 */;
-import TryItOutPresets from "TryItOutPresets" /* 15909 */;
+import ProfilePendingImageUtils from "ProfilePendingImageUtils" /* 15836 */;
+import TryItOutPresets from "TryItOutPresets" /* 15911 */;
 import react from "react" /* 19 */;
 import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8132 */;
 import size from "module_2" /* 2 */;
@@ -38,7 +38,7 @@ export default function usePremiumTryItOutPresetShuffle() {
     UserProfileActionCreators;
     obj4 = ProfilePendingImageUtils;
     themeColors = tryItOutPresetConfig.themeColors;
-    obj3 = { assetOrigin: ProfilePendingImageTypes.AssetOriginTypes.NEW_ASSET, imageUri: tryItOutPresetConfig.getBannerSrc(false), staticImageUri: tryItOutPresetConfig.getBannerSrc(true), description: tryItOutPresetConfig.getBannerAltText(), originalAsset: "fileBytes" };
+    obj3 = { assetOrigin: ProfilePendingImageTypes.AssetOriginTypes.NEW_ASSET, imageUri: tryItOutPresetConfig.getBannerSrc(false), staticImageUri: tryItOutPresetConfig.getBannerSrc(true), description: tryItOutPresetConfig.getBannerAltText(), originalAsset: "find" };
     setTryItOutPreset(obj2);
   }, items);
   const items1 = [callback];

@@ -24,7 +24,7 @@ export function useAnimatedKeyboard() {
   let tmp5;
   let obj = arg0;
   if (arg0 === undefined) {
-    obj = { isStatusBarTranslucentAndroid: "disabled", isNavigationBarTranslucentAndroid: "isArray" };
+    obj = { isStatusBarTranslucentAndroid: "Array", isNavigationBarTranslucentAndroid: "Path" };
   }
   let ref2;
   const tmp = ref2(null);

@@ -24,7 +24,7 @@ let c9;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-const f89631 = (arg0) => {
+const f89605 = (arg0) => {
   closure_0 = arg0;
   function onSoundboardActionCompleted() {
     const item = closure_0.forEach((item) => {
@@ -137,7 +137,7 @@ function _maybeFetchDefaultSounds() {
     let closure_0 = ["SOUNDBOARD_FETCH_DEFAULT_SOUNDS_SUCCESS", "SOUNDBOARD_FETCH_DEFAULT_SOUNDS_FAILURE"];
     const self = this;
     const self2 = this;
-    const promise = new Promise(f89631);
+    const promise = new Promise(f89605);
     _fetchDefaultSoundsFromApi();
     return promise;
   } else {
@@ -153,7 +153,7 @@ function _maybeFetchGuildSoundboardSounds() {
     _require = ["SOUNDBOARD_SOUNDS_RECEIVED"];
     const self = this;
     const self2 = this;
-    const promise = new Promise(f89631);
+    const promise = new Promise(f89605);
     const obj2 = DispatcherDefault;
     obj2.dispatch({ type: "GUILD_SOUNDBOARD_FETCH" });
     const obj4 = { type: "REQUEST_SOUNDBOARD_SOUNDS", guildIds: guildIdsToFetchSoundsFor };

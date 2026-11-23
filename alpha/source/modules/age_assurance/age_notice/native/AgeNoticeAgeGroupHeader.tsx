@@ -1,10 +1,10 @@
-// Module ID: 16021
-// Function ID: 16022
+// Module ID: 16023
+// Function ID: 16024
 // Name: AgeNoticeAgeGroupHeader
-// Dependencies: [32, 19, 17, 6422, 4759, 21, 4913, 575, 4746, 10526, 3476, 7793, 16011, 9080, 5617, 5504, 1112, 7030, 7151, 16022, 5511, 2]
+// Dependencies: [32, 19, 17, 6422, 4759, 21, 4913, 575, 4746, 10526, 3476, 7793, 16013, 9080, 5617, 5504, 1112, 7030, 7151, 16024, 5511, 2]
 // Exports: AgeNoticeAgeGroupHeader
 
-// Module 16021 (AgeNoticeAgeGroupHeader)
+// Module 16023 (AgeNoticeAgeGroupHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
@@ -15,7 +15,7 @@ import Text_Text from "Text/Text" /* 5504 */;
 import AgeNoticeConstants from "AgeNoticeConstants" /* 6422 */;
 import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7793 */;
 import useAgeGroupPresentation from "useAgeGroupPresentation" /* 10526 */;
-import handleOpenUnconfirmedAgeGroupSupportArticle from "handleOpenUnconfirmedAgeGroupSupportArticle" /* 16022 */;
+import handleOpenUnconfirmedAgeGroupSupportArticle from "handleOpenUnconfirmedAgeGroupSupportArticle" /* 16024 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;

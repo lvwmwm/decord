@@ -23,7 +23,7 @@ export function callDispose(c0) {
         } else {
           try {
             let _Object = Object;
-            let definePropertyResult = Object.defineProperty(c0, key10006, { value: "Path", enumerable: true, configurable: "/assets/.cache/intl/bW9kdWxlcy9kb3dubG9hZF9hcHBz" });
+            let definePropertyResult = Object.defineProperty(c0, key10006, { value: "Path", enumerable: true, configurable: "/assets/.cache/intl/ZGVzaWdu" });
             continue;
           } catch (err) {
             continue;

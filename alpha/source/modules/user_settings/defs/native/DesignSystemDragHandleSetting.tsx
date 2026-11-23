@@ -1,9 +1,9 @@
-// Module ID: 17263
-// Function ID: 17264
+// Module ID: 17265
+// Function ID: 17266
 // Name: DesignSystemDragHandleSetting
-// Dependencies: [8712, 1071, 11937, 17264, 2]
+// Dependencies: [8712, 1071, 11937, 17266, 2]
 
-// Module 17263 (DesignSystemDragHandleSetting)
+// Module 17265 (DesignSystemDragHandleSetting)
 import Constants from "Constants" /* 1071 */;
 import SettingsConstants from "SettingsConstants" /* 8712 */;
 import SettingBuilders from "SettingBuilders" /* 11937 */;

@@ -1,10 +1,10 @@
-// Module ID: 16224
-// Function ID: 16225
+// Module ID: 16226
+// Function ID: 16227
 // Name: FamilyCenterModalDisconnect
-// Dependencies: [32, 19, 17, 21, 4913, 575, 6429, 4969, 9136, 5594, 1112, 12467, 12470, 2824, 7811, 7813, 16225, 7032, 5504, 16174, 5929, 14722, 12249, 6545, 5511, 7095, 12043, 2]
+// Dependencies: [32, 19, 17, 21, 4913, 575, 6429, 4969, 9136, 5594, 1112, 12467, 12470, 2824, 7811, 7813, 16227, 7032, 5504, 16176, 5929, 14724, 12249, 6545, 5511, 7095, 12043, 2]
 // Exports: default
 
-// Module 16224 (FamilyCenterModalDisconnect)
+// Module 16226 (FamilyCenterModalDisconnect)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl14 from "intl" /* 1112 */;
@@ -14,7 +14,7 @@ import ToastUtils from "ToastUtils" /* 5594 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6429 */;
 import AssetRegistryDefault from "AssetRegistry" /* 7032 */;
 import NavigatorHeader from "NavigatorHeader" /* 7095 */;
-import FamilyCenterAvatarPairDefault from "FamilyCenterAvatarPair" /* 16225 */;
+import FamilyCenterAvatarPairDefault from "FamilyCenterAvatarPair" /* 16227 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -138,7 +138,7 @@ function FamilyCenterModalDisconnectScreen(otherUser) {
   let tmp33Result = requiresParentalConsent;
   if (tmp33Result) {
     const obj8 = { style: tmp.warning, text: ageSpecificText2 };
-    tmp33Result = tmp33(tmp3(16174), obj8);
+    tmp33Result = tmp33(tmp3(16176), obj8);
   }
   const obj9 = { children: items4 };
   items4[1] = tmp33Result;
@@ -146,7 +146,7 @@ function FamilyCenterModalDisconnectScreen(otherUser) {
   items4[2] = closure_6(otherUser(5504).Text, obj10);
   const obj11 = { spacing: nativeDefault.space.PX_12, children: items5 };
   const Stack = tmp6(5929).Stack;
-  items5 = [closure_6(otherUser(14722).Checkbox, { label: ageSpecificText4, checked: tmp9, onToggle: callback3 }), closure_6(otherUser(14722).Checkbox, { label: ageSpecificText5, checked: tmp11, onToggle: callback4 })];
+  items5 = [closure_6(otherUser(14724).Checkbox, { label: ageSpecificText4, checked: tmp9, onToggle: callback3 }), closure_6(otherUser(14724).Checkbox, { label: ageSpecificText5, checked: tmp11, onToggle: callback4 })];
   items4[3] = closure_7(Stack, obj11);
   const items6 = [closure_7(ModalContent, obj9), ];
   const ModalFooter = tmp6(12249).ModalFooter;

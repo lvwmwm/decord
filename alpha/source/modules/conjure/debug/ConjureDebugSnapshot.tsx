@@ -1,10 +1,10 @@
-// Module ID: 18672
-// Function ID: 18673
+// Module ID: 18674
+// Function ID: 18675
 // Name: ConjureDebugSnapshot
 // Dependencies: [6973, 6968, 2]
 // Exports: conjureDebugSnapshot
 
-// Module 18672 (ConjureDebugSnapshot)
+// Module 18674 (ConjureDebugSnapshot)
 import ConjureDebugLogStore from "ConjureDebugLogStore" /* 6973 */;
 import ConjureDebugStore from "ConjureDebugStore" /* 6968 */;
 import size from "module_2" /* 2 */;

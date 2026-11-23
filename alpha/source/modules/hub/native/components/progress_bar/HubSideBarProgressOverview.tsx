@@ -1,10 +1,10 @@
-// Module ID: 17727
-// Function ID: 17728
+// Module ID: 17729
+// Function ID: 17730
 // Name: HubSideBarProgressOverview
-// Dependencies: [19, 13193, 21, 13574, 1112, 13360, 15201, 5127, 13578, 2119, 2]
+// Dependencies: [19, 13193, 21, 13574, 1112, 13360, 15203, 5127, 13578, 2119, 2]
 // Exports: default
 
-// Module 17727 (HubSideBarProgressOverview)
+// Module 17729 (HubSideBarProgressOverview)
 import Fragment from "Fragment" /* 21 */;
 import asyncRequire from "asyncRequire" /* 2119 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
@@ -45,7 +45,7 @@ export default function HubSidebarProgressOverview(guild) {
     }
     const _Math = Math;
     const bound = Math.max(tmp(13360).MIN_PROGRESS_PERCENT, 100 * size / tmp12);
-    return jsx(guild(15201).GuildProgressOverviewView, {
+    return jsx(guild(15203).GuildProgressOverviewView, {
       onPress: function handlePress() {
           const obj = ActionSheetActionCreatorsDefault;
           const obj2 = { guild, analyticsSource: "Channels Sidebar" };

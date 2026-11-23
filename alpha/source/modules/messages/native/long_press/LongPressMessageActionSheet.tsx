@@ -113,7 +113,7 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
   let tmp15;
   let tmp27;
   let user;
-  const f101549 = (flags) => {
+  const f101524 = (flags) => {
     let tmp = null == flags.flags;
     if (!tmp) {
       obj = analyticsLocation(analyticsLocation[33]);
@@ -324,8 +324,8 @@ export default function LongPressMessageActionSheet(analyticsLocation) {
   const attachments1 = message.attachments;
   let tmp58 = message.author.id === id3;
   if (tmp58) {
-    tmp58 = attachments1.filter(f101549).length > 1 || "" !== message.content;
-    const tmp59 = attachments1.filter(f101549).length > 1 || "" !== message.content;
+    tmp58 = attachments1.filter(f101524).length > 1 || "" !== message.content;
+    const tmp59 = attachments1.filter(f101524).length > 1 || "" !== message.content;
   }
   const items3 = [actionSheetSource];
   const tmp8Result26 = tmp8(tmp3[19]);

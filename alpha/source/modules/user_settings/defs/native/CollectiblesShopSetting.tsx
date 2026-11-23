@@ -1,9 +1,9 @@
-// Module ID: 17271
-// Function ID: 17272
+// Module ID: 17273
+// Function ID: 17274
 // Name: CollectiblesShopSetting
-// Dependencies: [1071, 11937, 1112, 13007, 17272, 8074, 7539, 2]
+// Dependencies: [1071, 11937, 1112, 13007, 17274, 8074, 7539, 2]
 
-// Module 17271 (CollectiblesShopSetting)
+// Module 17273 (CollectiblesShopSetting)
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
 import AnalyticsLocationDefault from "AnalyticsLocation" /* 7539 */;

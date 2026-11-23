@@ -1,10 +1,10 @@
-// Module ID: 19357
-// Function ID: 19358
+// Module ID: 19359
+// Function ID: 19360
 // Name: ScreenXIcon
 // Dependencies: [19, 21, 575, 5599, 10953, 2]
 // Exports: ScreenXIcon
 
-// Module 19357 (ScreenXIcon)
+// Module 19359 (ScreenXIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5599 */;

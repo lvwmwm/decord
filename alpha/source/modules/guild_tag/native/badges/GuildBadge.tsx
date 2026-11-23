@@ -1,53 +1,53 @@
-// Module ID: 15129
-// Function ID: 15130
+// Module ID: 15131
+// Function ID: 15132
 // Name: badges/GuildBadge
-// Dependencies: [19, 8000, 21, 15130, 15133, 15134, 15135, 15136, 15137, 15138, 15139, 15140, 15141, 15142, 15143, 15144, 15145, 15146, 15147, 15148, 15149, 15150, 15151, 15152, 15153, 15154, 15155, 15156, 15157, 15158, 15159, 15160, 15161, 15162, 15163, 15164, 15165, 15166, 15167, 15168, 15169, 15170, 15171, 15172, 2]
+// Dependencies: [19, 8000, 21, 15132, 15135, 15136, 15137, 15138, 15139, 15140, 15141, 15142, 15143, 15144, 15145, 15146, 15147, 15148, 15149, 15150, 15151, 15152, 15153, 15154, 15155, 15156, 15157, 15158, 15159, 15160, 15161, 15162, 15163, 15164, 15165, 15166, 15167, 15168, 15169, 15170, 15171, 15172, 15173, 15174, 2]
 // Exports: GuildBadge
 
-// Module 15129 (badges/GuildBadge)
+// Module 15131 (badges/GuildBadge)
 import Fragment from "Fragment" /* 21 */;
 import GuildTagConstants from "GuildTagConstants" /* 8000 */;
-import GuildBadgeSword2 from "GuildBadgeSword" /* 15130 */;
-import GuildBadgeWaterDrop2 from "GuildBadgeWaterDrop" /* 15133 */;
-import GuildBadgeSkull2 from "GuildBadgeSkull" /* 15134 */;
-import GuildBadgeToadstool2 from "GuildBadgeToadstool" /* 15135 */;
-import GuildBadgeMoon2 from "GuildBadgeMoon" /* 15136 */;
-import GuildBadgeLightning2 from "GuildBadgeLightning" /* 15137 */;
-import GuildBadgeLeaf2 from "GuildBadgeLeaf" /* 15138 */;
-import GuildBadgeHeart2 from "GuildBadgeHeart" /* 15139 */;
-import GuildBadgeFire2 from "GuildBadgeFire" /* 15140 */;
-import GuildBadgeCompass2 from "GuildBadgeCompass" /* 15141 */;
-import GuildBadgeCrosshairs2 from "GuildBadgeCrosshairs" /* 15142 */;
-import GuildBadgeFlower2 from "GuildBadgeFlower" /* 15143 */;
-import GuildBadgeForce2 from "GuildBadgeForce" /* 15144 */;
-import GuildBadgeGem2 from "GuildBadgeGem" /* 15145 */;
-import GuildBadgeLava2 from "GuildBadgeLava" /* 15146 */;
-import GuildBadgePsychic2 from "GuildBadgePsychic" /* 15147 */;
-import GuildBadgeSmoke2 from "GuildBadgeSmoke" /* 15148 */;
-import GuildBadgeSnow2 from "GuildBadgeSnow" /* 15149 */;
-import GuildBadgeSound2 from "GuildBadgeSound" /* 15150 */;
-import GuildBadgeSun2 from "GuildBadgeSun" /* 15151 */;
-import GuildBadgeWind2 from "GuildBadgeWind" /* 15152 */;
-import GuildBadgeBunny2 from "GuildBadgeBunny" /* 15153 */;
-import GuildBadgeDog2 from "GuildBadgeDog" /* 15154 */;
-import GuildBadgeFrog2 from "GuildBadgeFrog" /* 15155 */;
-import GuildBadgeGoat2 from "GuildBadgeGoat" /* 15156 */;
-import GuildBadgeCat2 from "GuildBadgeCat" /* 15157 */;
-import GuildBadgeDiamond2 from "GuildBadgeDiamond" /* 15158 */;
-import GuildBadgeCrown2 from "GuildBadgeCrown" /* 15159 */;
-import GuildBadgeTrophy2 from "GuildBadgeTrophy" /* 15160 */;
-import GuildBadgeMoneyBag2 from "GuildBadgeMoneyBag" /* 15161 */;
-import GuildBadgeDollarSign2 from "GuildBadgeDollarSign" /* 15162 */;
-import GuildBadgeClover2 from "GuildBadgeClover" /* 15163 */;
-import GuildBadgeBlossom2 from "GuildBadgeBlossom" /* 15164 */;
-import GuildBadgePottedPlant2 from "GuildBadgePottedPlant" /* 15165 */;
-import GuildBadgeMaple2 from "GuildBadgeMaple" /* 15166 */;
-import GuildBadgeWiltedFlower2 from "GuildBadgeWiltedFlower" /* 15167 */;
-import GuildBadgeButterfly2 from "GuildBadgeButterfly" /* 15168 */;
-import GuildBadgeSnail2 from "GuildBadgeSnail" /* 15169 */;
-import GuildBadgeCaterpillar2 from "GuildBadgeCaterpillar" /* 15170 */;
-import GuildBadgeSpider2 from "GuildBadgeSpider" /* 15171 */;
-import GuildBadgeBee2 from "GuildBadgeBee" /* 15172 */;
+import GuildBadgeSword2 from "GuildBadgeSword" /* 15132 */;
+import GuildBadgeWaterDrop2 from "GuildBadgeWaterDrop" /* 15135 */;
+import GuildBadgeSkull2 from "GuildBadgeSkull" /* 15136 */;
+import GuildBadgeToadstool2 from "GuildBadgeToadstool" /* 15137 */;
+import GuildBadgeMoon2 from "GuildBadgeMoon" /* 15138 */;
+import GuildBadgeLightning2 from "GuildBadgeLightning" /* 15139 */;
+import GuildBadgeLeaf2 from "GuildBadgeLeaf" /* 15140 */;
+import GuildBadgeHeart2 from "GuildBadgeHeart" /* 15141 */;
+import GuildBadgeFire2 from "GuildBadgeFire" /* 15142 */;
+import GuildBadgeCompass2 from "GuildBadgeCompass" /* 15143 */;
+import GuildBadgeCrosshairs2 from "GuildBadgeCrosshairs" /* 15144 */;
+import GuildBadgeFlower2 from "GuildBadgeFlower" /* 15145 */;
+import GuildBadgeForce2 from "GuildBadgeForce" /* 15146 */;
+import GuildBadgeGem2 from "GuildBadgeGem" /* 15147 */;
+import GuildBadgeLava2 from "GuildBadgeLava" /* 15148 */;
+import GuildBadgePsychic2 from "GuildBadgePsychic" /* 15149 */;
+import GuildBadgeSmoke2 from "GuildBadgeSmoke" /* 15150 */;
+import GuildBadgeSnow2 from "GuildBadgeSnow" /* 15151 */;
+import GuildBadgeSound2 from "GuildBadgeSound" /* 15152 */;
+import GuildBadgeSun2 from "GuildBadgeSun" /* 15153 */;
+import GuildBadgeWind2 from "GuildBadgeWind" /* 15154 */;
+import GuildBadgeBunny2 from "GuildBadgeBunny" /* 15155 */;
+import GuildBadgeDog2 from "GuildBadgeDog" /* 15156 */;
+import GuildBadgeFrog2 from "GuildBadgeFrog" /* 15157 */;
+import GuildBadgeGoat2 from "GuildBadgeGoat" /* 15158 */;
+import GuildBadgeCat2 from "GuildBadgeCat" /* 15159 */;
+import GuildBadgeDiamond2 from "GuildBadgeDiamond" /* 15160 */;
+import GuildBadgeCrown2 from "GuildBadgeCrown" /* 15161 */;
+import GuildBadgeTrophy2 from "GuildBadgeTrophy" /* 15162 */;
+import GuildBadgeMoneyBag2 from "GuildBadgeMoneyBag" /* 15163 */;
+import GuildBadgeDollarSign2 from "GuildBadgeDollarSign" /* 15164 */;
+import GuildBadgeClover2 from "GuildBadgeClover" /* 15165 */;
+import GuildBadgeBlossom2 from "GuildBadgeBlossom" /* 15166 */;
+import GuildBadgePottedPlant2 from "GuildBadgePottedPlant" /* 15167 */;
+import GuildBadgeMaple2 from "GuildBadgeMaple" /* 15168 */;
+import GuildBadgeWiltedFlower2 from "GuildBadgeWiltedFlower" /* 15169 */;
+import GuildBadgeButterfly2 from "GuildBadgeButterfly" /* 15170 */;
+import GuildBadgeSnail2 from "GuildBadgeSnail" /* 15171 */;
+import GuildBadgeCaterpillar2 from "GuildBadgeCaterpillar" /* 15172 */;
+import GuildBadgeSpider2 from "GuildBadgeSpider" /* 15173 */;
+import GuildBadgeBee2 from "GuildBadgeBee" /* 15174 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

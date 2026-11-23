@@ -1,10 +1,10 @@
-// Module ID: 16236
-// Function ID: 16237
+// Module ID: 16238
+// Function ID: 16239
 // Name: FamilyCenterParentalControlsScreenTime
-// Dependencies: [17, 1071, 21, 4913, 575, 11104, 7045, 5504, 1112, 2824, 16193, 1500, 7348, 2]
+// Dependencies: [17, 1071, 21, 4913, 575, 11104, 7045, 5504, 1112, 2824, 16195, 1500, 7348, 2]
 // Exports: default
 
-// Module 16236 (FamilyCenterParentalControlsScreenTime)
+// Module 16238 (FamilyCenterParentalControlsScreenTime)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;

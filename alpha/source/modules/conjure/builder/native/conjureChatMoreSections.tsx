@@ -1,15 +1,15 @@
-// Module ID: 18385
-// Function ID: 18386
+// Module ID: 18387
+// Function ID: 18388
 // Name: conjureChatMoreSections
-// Dependencies: [6621, 1112, 4190, 10371, 10137, 18386, 14366, 11239, 6936, 5622, 10343, 7386, 5609, 18388, 5615, 16955, 17187, 18352, 10378, 7235, 18301, 5620, 2]
+// Dependencies: [6621, 1112, 4190, 10371, 10137, 18388, 14366, 11239, 6936, 5622, 10343, 7386, 5609, 18390, 5615, 16957, 17189, 18354, 10378, 7235, 18303, 5620, 2]
 // Exports: conjureChatMoreSections
 
-// Module 18385 (conjureChatMoreSections)
+// Module 18387 (conjureChatMoreSections)
 import _modDef4190 from "module_4190" /* 4190 */;
 import ConjureProjectStore from "ConjureProjectStore" /* 6621 */;
 import conjureProjectMute from "conjureProjectMute" /* 6936 */;
-import openConjureUnpublishUserAppAlertDefault from "openConjureUnpublishUserAppAlert" /* 18301 */;
-import conjureProjectActions from "conjureProjectActions" /* 18388 */;
+import openConjureUnpublishUserAppAlertDefault from "openConjureUnpublishUserAppAlert" /* 18303 */;
+import conjureProjectActions from "conjureProjectActions" /* 18390 */;
 import size from "module_2" /* 2 */;
 
 const isProjectOwner = ConjureProjectStore.isProjectOwner;
@@ -55,7 +55,7 @@ export function conjureChatMoreSections(project) {
     push(obj2);
   }
   if (null != annotate) {
-    const entry = { kind: "switch", key: "annotate", label: intl15.string(tmp4(4190)["6GOFLB"]), IconComponent: tmp2(18386).ExperimentalDirectSelectIcon, value: null, disabled: null, subLabel: stringResult, closesOnEnable: true, onValueChange: annotate.onToggle };
+    const entry = { kind: "switch", key: "annotate", label: intl15.string(tmp4(4190)["6GOFLB"]), IconComponent: tmp2(18388).ExperimentalDirectSelectIcon, value: null, disabled: null, subLabel: stringResult, closesOnEnable: true, onValueChange: annotate.onToggle };
     const push10 = items.push;
     intl15 = tmp2(1112).intl;
     ({ active: obj15.value, busy: obj15.disabled } = annotate);
@@ -149,7 +149,7 @@ export function conjureChatMoreSections(project) {
       kind: "action",
       key: "import",
       label: intl9.string(_modDef4190.rWGY3e),
-      IconComponent: tmp2(16955).FileUpIcon,
+      IconComponent: tmp2(16957).FileUpIcon,
       onPress() {
           const obj = conjureProjectActions;
           return obj.importConjureProject(project);
@@ -161,13 +161,13 @@ export function conjureChatMoreSections(project) {
   const items3 = [];
   if (null != onDebug) {
     const push5 = items3.push;
-    const obj8 = { kind: "action", key: "debug", label: intl10.string(_modDef4190["Q4FN+H"]), IconComponent: tmp2(17187).BugIcon, onPress: onDebug };
+    const obj8 = { kind: "action", key: "debug", label: intl10.string(_modDef4190["Q4FN+H"]), IconComponent: tmp2(17189).BugIcon, onPress: onDebug };
     intl10 = tmp2(1112).intl;
     push5(obj8);
   }
   if (null != onConnectTool) {
     const push6 = items3.push;
-    const obj9 = { kind: "action", key: "connect-tool", label: intl11.string(_modDef4190.yOIql5), IconComponent: tmp2(18352).LinkPlusIcon, onPress: onConnectTool };
+    const obj9 = { kind: "action", key: "connect-tool", label: intl11.string(_modDef4190.yOIql5), IconComponent: tmp2(18354).LinkPlusIcon, onPress: onConnectTool };
     intl11 = tmp2(1112).intl;
     push6(obj9);
   }
@@ -184,7 +184,7 @@ export function conjureChatMoreSections(project) {
   };
   intl12 = tmp2(1112).intl;
   push7(obj10);
-  const tmp2Result = tmp2(18388);
+  const tmp2Result = tmp2(18390);
   if (tmp2Result.canUnpublishConjureUserApp(project)) {
     const push8 = items3.push;
     const obj11 = {

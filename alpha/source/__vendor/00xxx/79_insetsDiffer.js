@@ -5,7 +5,7 @@
 // Exports: default
 
 // Module 79 (insetsDiffer)
-let closure_0 = { top: "Array", left: "s", right: "ao", bottom: "Text" };
+let closure_0 = { top: "constructor", left: "constructor", right: "done", bottom: "children" };
 
 export default function insetsDiffer(arg0, arg1) {
   const rect = arg0 || closure_0;

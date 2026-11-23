@@ -1,10 +1,10 @@
-// Module ID: 17593
-// Function ID: 17594
+// Module ID: 17595
+// Function ID: 17596
 // Name: useLiveStageData
 // Dependencies: [19, 6534, 4762, 563, 6537, 12, 2]
 // Exports: useLiveStageData
 
-// Module 17593 (useLiveStageData)
+// Module 17595 (useLiveStageData)
 import _modDef12 from "module_12" /* 12 */;
 import StageChannelParticipants from "StageChannelParticipants" /* 6537 */;
 import react from "react" /* 19 */;

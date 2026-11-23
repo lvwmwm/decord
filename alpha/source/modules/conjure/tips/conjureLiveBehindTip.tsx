@@ -1,12 +1,12 @@
-// Module ID: 18446
-// Function ID: 18447
+// Module ID: 18448
+// Function ID: 18449
 // Name: conjureLiveBehindTip
-// Dependencies: [18419, 18447, 2]
+// Dependencies: [18421, 18449, 2]
 // Exports: resolveLiveBehindTip
 
-// Module 18446 (conjureLiveBehindTip)
-import conjurePublishCard from "conjurePublishCard" /* 18419 */;
-import conjureTipImpressions from "conjureTipImpressions" /* 18447 */;
+// Module 18448 (conjureLiveBehindTip)
+import conjurePublishCard from "conjurePublishCard" /* 18421 */;
+import conjureTipImpressions from "conjureTipImpressions" /* 18449 */;
 import size from "module_2" /* 2 */;
 
 function resolveLiveBehindTip(draftHasText) {
@@ -15,27 +15,29 @@ function resolveLiveBehindTip(draftHasText) {
   ({ turn, publish } = draftHasText);
   if (null != turn) {
     if (!draftHasText.draftHasText) {
-      if (null != publish) {
-        if (!publish.publishing) {
-          if (publish.isUpdate) {
-            if (null == publish.disabledReason) {
-              let tmp8;
-              if (tmp >= c3) {
-                if (null == turn.publishCta) {
-                  tmp8 = "hint";
-                  conjureTipImpressions;
-                } else {
-                  conjurePublishCard;
-                }
+      let state;
+      if (publish != null) {
+        state = publish.state;
+      }
+      if ("action_needed" === state) {
+        if (publish.isUpdate) {
+          if (null == publish.disabledReason) {
+            let tmp9;
+            if (tmp >= c3) {
+              if (null == turn.publishCta) {
+                tmp9 = "hint";
+                conjureTipImpressions;
+              } else {
+                conjurePublishCard;
               }
-              return tmp8;
             }
+            return tmp9;
           }
         }
       }
     }
   }
-  tmp8 = null;
+  tmp9 = null;
 }
 const live_behind = "live_behind";
 let c3 = 120000;

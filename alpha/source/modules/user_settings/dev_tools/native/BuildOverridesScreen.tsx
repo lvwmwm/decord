@@ -1,9 +1,9 @@
-// Module ID: 17183
-// Function ID: 17184
+// Module ID: 17185
+// Function ID: 17186
 // Name: BuildOverridesScreen
-// Dependencies: [5, 32, 19, 17, 11894, 21, 4913, 575, 5488, 504, 12227, 12230, 12228, 1375, 7545, 5594, 5929, 7348, 7045, 5613, 7388, 14366, 5620, 7347, 7349, 9041, 17184, 7221, 5511, 5609, 5504, 2]
+// Dependencies: [5, 32, 19, 17, 11894, 21, 4913, 575, 5488, 504, 12227, 12230, 12228, 1375, 7545, 5594, 5929, 7348, 7045, 5613, 7388, 14366, 5620, 7347, 7349, 9041, 17186, 7221, 5511, 5609, 5504, 2]
 
-// Module 17183 (BuildOverridesScreen)
+// Module 17185 (BuildOverridesScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import ToastUtils from "ToastUtils" /* 5594 */;
@@ -364,7 +364,7 @@ const memoResult = react.memo(function BuildOverridesScreen() {
   const obj11 = { value: "branch", label: "Branch name", icon: tmp16(tmp3(9041).TagIcon, {}) };
   const TableRadioRow = tmp3(7349).TableRadioRow;
   items6 = [tmp16(TableRadioRow, obj11), ];
-  const obj12 = { value: "id", label: "Commit SHA", icon: tmp16(tmp3(17184).HashmarkIcon, {}) };
+  const obj12 = { value: "id", label: "Commit SHA", icon: tmp16(tmp3(17186).HashmarkIcon, {}) };
   const TableRadioRow2 = tmp3(7349).TableRadioRow;
   items6[1] = tmp16(TableRadioRow2, obj12);
   items5[1] = obj(TableRadioGroup, obj10);
@@ -372,7 +372,7 @@ const memoResult = react.memo(function BuildOverridesScreen() {
   if ("branch" === first.type) {
     HashmarkIcon = tmp3(9041).TagIcon;
   } else {
-    HashmarkIcon = tmp3(17184).HashmarkIcon;
+    HashmarkIcon = tmp3(17186).HashmarkIcon;
   }
   const obj13 = {
     leadingIcon: HashmarkIcon,

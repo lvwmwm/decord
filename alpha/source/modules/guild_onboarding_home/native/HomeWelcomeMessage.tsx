@@ -1,10 +1,10 @@
-// Module ID: 18207
-// Function ID: 18208
+// Module ID: 18209
+// Function ID: 18210
 // Name: HomeWelcomeMessage
 // Dependencies: [19, 17, 4784, 1386, 6684, 21, 4913, 575, 563, 8072, 8180, 12387, 8073, 4969, 4974, 1089, 8213, 1186, 9050, 5504, 5943, 7778, 2]
 // Exports: default
 
-// Module 18207 (HomeWelcomeMessage)
+// Module 18209 (HomeWelcomeMessage)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8073 */;

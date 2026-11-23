@@ -1,16 +1,16 @@
-// Module ID: 19814
-// Function ID: 19815
+// Module ID: 19816
+// Function ID: 19817
 // Name: GuildSettingsServerTagBadgeGrid
-// Dependencies: [19, 17, 8000, 21, 575, 4913, 19815, 13368, 5929, 5504, 1112, 19816, 19817, 15129, 7565, 2]
+// Dependencies: [19, 17, 8000, 21, 575, 4913, 19817, 13368, 5929, 5504, 1112, 19818, 19819, 15131, 7565, 2]
 // Exports: default
 
-// Module 19814 (GuildSettingsServerTagBadgeGrid)
+// Module 19816 (GuildSettingsServerTagBadgeGrid)
 import nativeDefault from "native" /* 575 */;
 import GuildTagConstants from "GuildTagConstants" /* 8000 */;
 import openGuildPowerupsModalDefault from "openGuildPowerupsModal" /* 13368 */;
-import useGuildTagBadgeCollectionDefault from "useGuildTagBadgeCollection" /* 19815 */;
-import GuildSettingsServerTagPickerCellDefault from "GuildSettingsServerTagPickerCell" /* 19816 */;
-import getGuildTagBadgeLabelDefault from "getGuildTagBadgeLabel" /* 19817 */;
+import useGuildTagBadgeCollectionDefault from "useGuildTagBadgeCollection" /* 19817 */;
+import GuildSettingsServerTagPickerCellDefault from "GuildSettingsServerTagPickerCell" /* 19818 */;
+import getGuildTagBadgeLabelDefault from "getGuildTagBadgeLabel" /* 19819 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;

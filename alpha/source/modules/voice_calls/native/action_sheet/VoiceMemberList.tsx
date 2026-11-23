@@ -1,10 +1,10 @@
-// Module ID: 14861
-// Function ID: 14862
+// Module ID: 14863
+// Function ID: 14864
 // Name: VoiceMemberList
-// Dependencies: [32, 5, 19, 17, 4761, 1405, 6400, 4845, 1386, 5657, 1071, 1190, 5142, 1082, 21, 4913, 14857, 10926, 504, 7709, 14067, 1112, 11055, 12059, 8051, 5504, 10736, 7520, 2018, 6529, 10779, 6494, 14862, 14863, 1494, 14870, 5089, 12, 5127, 8067, 4974, 14871, 7449, 2]
+// Dependencies: [32, 5, 19, 17, 4761, 1405, 6400, 4845, 1386, 5657, 1071, 1190, 5142, 1082, 21, 4913, 14859, 10926, 504, 7709, 14067, 1112, 11055, 12059, 8051, 5504, 10736, 7520, 2018, 6529, 10779, 6494, 14864, 14865, 1494, 14872, 5089, 12, 5127, 8067, 4974, 14873, 7449, 2]
 // Exports: default
 
-// Module 14861 (VoiceMemberList)
+// Module 14863 (VoiceMemberList)
 import Constants2 from "Constants" /* 1082 */;
 import FormConstants from "FormConstants" /* 1190 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
@@ -15,8 +15,8 @@ import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8067 */;
 import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 10926 */;
 import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 12059 */;
-import GuildEventVoiceBannerDefault from "GuildEventVoiceBanner" /* 14857 */;
-import VoiceMemberUser from "VoiceMemberUser" /* 14863 */;
+import GuildEventVoiceBannerDefault from "GuildEventVoiceBanner" /* 14859 */;
+import VoiceMemberUser from "VoiceMemberUser" /* 14865 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
@@ -255,7 +255,7 @@ export default function VoiceMemberList(channel) {
   let obj6;
   let reduced;
   let tmp25Result2;
-  const f106779 = (user) => stateFromStoresArray.includes(user.user.id);
+  const f106756 = (user) => stateFromStoresArray.includes(user.user.id);
   channel = channel.channel;
   let flag = channel.isActionSheet;
   if (flag === undefined) {
@@ -329,8 +329,8 @@ export default function VoiceMemberList(channel) {
           str = "";
         }
         const tmp3Result = flag(tmp4[37]);
-        [arr10, arr11] = _slicedToArray(tmp3Result.partition(stateFromStores, f106779), 2);
-        const tmp15 = _slicedToArray(tmp3Result.partition(stateFromStores, f106779), 2);
+        [arr10, arr11] = _slicedToArray(tmp3Result.partition(stateFromStores, f106756), 2);
+        const tmp15 = _slicedToArray(tmp3Result.partition(stateFromStores, f106756), 2);
         if (arr10.length > 0) {
           const push = items5.push;
           const obj5 = { type: constants4.SPECTATING, title: intl.formatToPlainString(channel(tmp4[21]).t.Fb0eT9, obj6), data: arr10 };
@@ -419,7 +419,7 @@ export default function VoiceMemberList(channel) {
                       let result;
                       const tmp = undefined !== items5[arg0].data[arg1].url && undefined !== items5[arg0].data[arg1].applicationId;
                       if (tmp) {
-                        const tmp9Result = tmp9(14862);
+                        const tmp9Result = tmp9(14864);
                         result = tmp9Result.calculateActivityRowHeight(tmp8);
                       } else {
                         const voiceState = tmp7.voiceState;

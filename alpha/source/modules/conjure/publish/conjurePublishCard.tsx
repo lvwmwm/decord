@@ -1,10 +1,10 @@
-// Module ID: 18419
-// Function ID: 18420
+// Module ID: 18421
+// Function ID: 18422
 // Name: conjurePublishCard
 // Dependencies: [4190, 2]
 // Exports: isConjurePublishCtaVisible, isPublishCardLive, livePublishCardMessageId, publishNoticeMessage, withLivePublishCard
 
-// Module 18419 (conjurePublishCard)
+// Module 18421 (conjurePublishCard)
 import _modDef4190 from "module_4190" /* 4190 */;
 import size from "module_2" /* 2 */;
 
@@ -25,22 +25,33 @@ export function isPublishCardLive(reason, newUiUnpublished) {
   return tmp;
 }
 export function isConjurePublishCtaVisible(publish, cta) {
-  let tmp = null != publish;
-  if (tmp) {
-    const status = publish.status;
-    let tmp2 = null != status;
-    if (tmp2) {
-      let tmp4;
-      if ("new_ui" === cta.reason) {
-        tmp4 = true === status.newUiUnpublished;
-      } else {
-        tmp4 = "not_live" === status.publishState;
-      }
-      tmp2 = tmp4;
-    }
-    tmp = tmp2;
+  let state;
+  if (publish != null) {
+    state = publish.state;
   }
-  return tmp;
+  let tmp2 = "action_needed" === state;
+  if (!tmp2) {
+    let state1;
+    if (publish != null) {
+      state1 = publish.state;
+    }
+    tmp2 = "publishing" === state1;
+  }
+  if (tmp2) {
+    const status = publish.status;
+    let tmp4 = null != status;
+    if (tmp4) {
+      let tmp6;
+      if ("new_ui" === cta.reason) {
+        tmp6 = true === status.newUiUnpublished;
+      } else {
+        tmp6 = "not_live" === status.publishState;
+      }
+      tmp4 = tmp6;
+    }
+    tmp2 = tmp4;
+  }
+  return tmp2;
 }
 export function livePublishCardMessageId(arg0, newUiUnpublished) {
   let diff = arg0.length - 1;

@@ -1,10 +1,10 @@
-// Module ID: 18955
-// Function ID: 18956
+// Module ID: 18957
+// Function ID: 18958
 // Name: ChannelPermissionOverwriteEditUtils
 // Dependencies: [4850, 1083, 2]
 // Exports: applyChannelPermissionOverwriteEdit, getChannelPermissionOverwrite, getChannelPermissionOverwriteValue
 
-// Module 18955 (ChannelPermissionOverwriteEditUtils)
+// Module 18957 (ChannelPermissionOverwriteEditUtils)
 import BigFlagUtilsAll from "BigFlagUtils" /* 1083 */;
 import PermissionUtils from "PermissionUtils" /* 4850 */;
 import size from "module_2" /* 2 */;

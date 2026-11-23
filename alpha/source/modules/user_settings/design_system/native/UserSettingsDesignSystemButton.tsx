@@ -1,10 +1,10 @@
-// Module ID: 17205
-// Function ID: 17206
+// Module ID: 17207
+// Function ID: 17208
 // Name: UserSettingsDesignSystemButton
-// Dependencies: [32, 19, 17, 1071, 1239, 21, 17206, 5511, 17207, 7591, 10372, 14679, 15259, 8683, 15261, 10365, 15260, 9685, 4913, 575, 1500, 5127, 17208, 2119, 5929, 5504, 11637, 14669, 14675, 14677, 14676, 14674, 14673, 6545, 4974, 1089, 5468, 7047, 9659, 7607, 2]
+// Dependencies: [32, 19, 17, 1071, 1239, 21, 17208, 5511, 17209, 7591, 10372, 14681, 15261, 8683, 15263, 10365, 15262, 9685, 4913, 575, 1500, 5127, 17210, 2119, 5929, 5504, 11637, 14671, 14677, 14679, 14678, 14676, 14675, 6545, 4974, 1089, 5468, 7047, 9659, 7607, 2]
 // Exports: default
 
-// Module 17205 (UserSettingsDesignSystemButton)
+// Module 17207 (UserSettingsDesignSystemButton)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import LinearGradientDefault from "LinearGradient" /* 5468 */;
@@ -14,17 +14,17 @@ import AssetRegistryDefault from "AssetRegistry" /* 8683 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 9685 */;
 import AssetRegistryDefault3 from "AssetRegistry" /* 10365 */;
 import AssetRegistryDefault5 from "AssetRegistry" /* 11637 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 14669 */;
-import AssetRegistryDefault7 from "AssetRegistry" /* 14673 */;
-import AssetRegistryDefault8 from "AssetRegistry" /* 14674 */;
-import AssetRegistryDefault9 from "AssetRegistry" /* 14675 */;
-import AssetRegistryDefault10 from "AssetRegistry" /* 14676 */;
-import AssetRegistryDefault11 from "AssetRegistry" /* 14677 */;
-import ImageButton2 from "ImageButton" /* 14679 */;
-import ToggleButton2 from "ToggleButton" /* 15259 */;
-import useToggleButtonProps from "useToggleButtonProps" /* 15260 */;
-import ToggleIconButton2 from "ToggleIconButton" /* 15261 */;
-import useDesignSystemSettingsStateDefault from "useDesignSystemSettingsState" /* 17206 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 14671 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 14675 */;
+import AssetRegistryDefault8 from "AssetRegistry" /* 14676 */;
+import AssetRegistryDefault9 from "AssetRegistry" /* 14677 */;
+import AssetRegistryDefault10 from "AssetRegistry" /* 14678 */;
+import AssetRegistryDefault11 from "AssetRegistry" /* 14679 */;
+import ImageButton2 from "ImageButton" /* 14681 */;
+import ToggleButton2 from "ToggleButton" /* 15261 */;
+import useToggleButtonProps from "useToggleButtonProps" /* 15262 */;
+import ToggleIconButton2 from "ToggleIconButton" /* 15263 */;
+import useDesignSystemSettingsStateDefault from "useDesignSystemSettingsState" /* 17208 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -49,7 +49,7 @@ let obj5;
 let tmp;
 let unpackModuleId;
 const AssetRegistryDefault4 = tmp(10372);
-const AssetRegistryDefault12 = tmp(17207);
+const AssetRegistryDefault12 = tmp(17209);
 function ExampleButton(arg0) {
   let buttonScale;
   let buttonSize;

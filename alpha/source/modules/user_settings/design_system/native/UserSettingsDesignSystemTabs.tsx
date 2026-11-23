@@ -1,10 +1,10 @@
-// Module ID: 17226
-// Function ID: 17227
+// Module ID: 17228
+// Function ID: 17229
 // Name: UserSettingsDesignSystemTabs
 // Dependencies: [32, 19, 17, 21, 4913, 575, 5504, 5477, 4910, 7597, 7586, 5929, 13531, 13714, 13534, 5511, 7556, 2]
 // Exports: default
 
-// Module 17226 (UserSettingsDesignSystemTabs)
+// Module 17228 (UserSettingsDesignSystemTabs)
 import nativeDefault from "native" /* 575 */;
 import useMeasuredLayoutDefault from "useMeasuredLayout" /* 7597 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

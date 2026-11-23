@@ -1,10 +1,10 @@
-// Module ID: 19008
-// Function ID: 19009
+// Module ID: 19010
+// Function ID: 19011
 // Name: useSpamMessageRequestsCount
 // Dependencies: [6635, 504, 2]
 // Exports: useSpamMessageRequestCount
 
-// Module 19008 (useSpamMessageRequestsCount)
+// Module 19010 (useSpamMessageRequestsCount)
 import get_initialized from "get initialized" /* 504 */;
 import SpamMessageRequestStore from "SpamMessageRequestStore" /* 6635 */;
 import size from "module_2" /* 2 */;

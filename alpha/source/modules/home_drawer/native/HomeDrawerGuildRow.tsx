@@ -1,20 +1,20 @@
-// Module ID: 17892
-// Function ID: 17893
+// Module ID: 17894
+// Function ID: 17895
 // Name: HomeDrawerGuildRow
-// Dependencies: [19, 17, 4847, 4766, 4762, 4843, 6664, 4784, 6619, 4855, 6552, 1386, 1071, 6553, 21, 4913, 504, 5095, 5092, 11701, 10364, 5504, 17893, 17894, 5529, 11, 17895, 17896, 12832, 17897, 17898, 17899, 17901, 17902, 17884, 2]
+// Dependencies: [19, 17, 4847, 4766, 4762, 4843, 6664, 4784, 6619, 4855, 6552, 1386, 1071, 6553, 21, 4913, 504, 5095, 5092, 11701, 10364, 5504, 17895, 17896, 5529, 11, 17897, 17898, 12832, 17899, 17900, 17901, 17903, 17904, 17886, 2]
 // Exports: default
 
-// Module 17892 (HomeDrawerGuildRow)
+// Module 17894 (HomeDrawerGuildRow)
 import react_native from "react-native" /* 17 */;
 import ChannelRecord from "ChannelRecord" /* 4766 */;
 import Text_Text from "Text/Text" /* 5504 */;
 import useChannelName from "useChannelName" /* 5529 */;
 import ReadStateConstants from "ReadStateConstants" /* 6553 */;
-import StreamingSubtitleDefault from "StreamingSubtitle" /* 17897 */;
-import VoiceSubtitleDefault from "VoiceSubtitle" /* 17898 */;
-import MentionSubtitleDefault from "MentionSubtitle" /* 17899 */;
-import TypingSubtitleDefault from "TypingSubtitle" /* 17901 */;
-import UnreadSubtitleDefault from "UnreadSubtitle" /* 17902 */;
+import StreamingSubtitleDefault from "StreamingSubtitle" /* 17899 */;
+import VoiceSubtitleDefault from "VoiceSubtitle" /* 17900 */;
+import MentionSubtitleDefault from "MentionSubtitle" /* 17901 */;
+import TypingSubtitleDefault from "TypingSubtitle" /* 17903 */;
+import UnreadSubtitleDefault from "UnreadSubtitle" /* 17904 */;
 import react_mod from "react" /* 19 */;
 import JoinedThreadsStore from "JoinedThreadsStore" /* 4847 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
@@ -170,7 +170,7 @@ function GuildRowWrapper(guild) {
     const tmp = unreadChannel.getMutableGuildStates()[guild.id];
     guild = tmp;
     if (null == tmp) {
-      return { mentionChannel: "description", mentionChannelName: "isArray", mentionChannelCount: null };
+      return { mentionChannel: "disabled", mentionChannelName: "isArray", mentionChannelCount: null };
     } else {
       let tmp8 = disableSubtitle;
       const obj3 = disableSubtitle(onActiveHookChange[25]);

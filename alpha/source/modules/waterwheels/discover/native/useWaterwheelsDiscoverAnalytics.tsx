@@ -1,17 +1,17 @@
-// Module ID: 17810
-// Function ID: 17811
+// Module ID: 17812
+// Function ID: 17813
 // Name: useWaterwheelsDiscoverAnalytics
-// Dependencies: [32, 19, 17, 502, 4946, 1071, 17809, 1501, 17811, 17812, 10051, 17801, 572, 2]
+// Dependencies: [32, 19, 17, 502, 4946, 1071, 17811, 1501, 17813, 17814, 10051, 17803, 572, 2]
 // Exports: default
 
-// Module 17810 (useWaterwheelsDiscoverAnalytics)
+// Module 17812 (useWaterwheelsDiscoverAnalytics)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
 import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 10051 */;
-import WaterwheelsDiscoverJoinAttribution from "WaterwheelsDiscoverJoinAttribution" /* 17801 */;
-import WaterwheelsDiscoverFeedState from "WaterwheelsDiscoverFeedState" /* 17809 */;
-import WaterwheelsDiscoverAnalytics from "WaterwheelsDiscoverAnalytics" /* 17812 */;
+import WaterwheelsDiscoverJoinAttribution from "WaterwheelsDiscoverJoinAttribution" /* 17803 */;
+import WaterwheelsDiscoverFeedState from "WaterwheelsDiscoverFeedState" /* 17811 */;
+import WaterwheelsDiscoverAnalytics from "WaterwheelsDiscoverAnalytics" /* 17814 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;

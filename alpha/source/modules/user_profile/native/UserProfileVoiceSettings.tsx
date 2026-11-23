@@ -1,7 +1,7 @@
 // Module ID: 14500
 // Function ID: 14501
 // Name: UserProfileVoiceSettings
-// Dependencies: [19, 17, 5961, 6400, 2131, 4845, 5654, 1071, 1082, 5658, 21, 4913, 8135, 504, 5950, 9735, 11040, 5679, 10965, 5809, 10980, 7348, 14501, 1112, 5817, 14503, 14505, 7563, 9684, 11011, 14506, 13417, 1255, 14508, 11126, 7225, 5504, 10247, 13817, 7709, 5127, 9711, 9707, 2]
+// Dependencies: [19, 17, 5961, 6400, 2131, 4845, 5654, 1071, 1082, 5658, 21, 4913, 8135, 504, 5950, 9735, 11040, 5679, 10965, 5809, 10980, 7348, 14501, 1112, 5817, 14505, 14507, 7563, 9684, 11011, 14508, 13417, 1255, 14510, 11126, 7225, 5504, 10247, 13817, 7709, 5127, 9711, 9707, 2]
 // Exports: default
 
 // Module 14500 (UserProfileVoiceSettings)
@@ -14,7 +14,7 @@ import AudioActionCreatorsDefault from "AudioActionCreators" /* 5809 */;
 import PerceptualVolumeUtils from "PerceptualVolumeUtils" /* 5817 */;
 import SecureFramesPlatformUtilsDefault from "SecureFramesPlatformUtils" /* 9711 */;
 import UserProfileAlertUtils from "UserProfileAlertUtils" /* 10247 */;
-import completeStreamVolumeMovedTutorialDefault from "completeStreamVolumeMovedTutorial" /* 14505 */;
+import completeStreamVolumeMovedTutorialDefault from "completeStreamVolumeMovedTutorial" /* 14507 */;
 import react from "react" /* 19 */;
 import SoundboardStore from "SoundboardStore" /* 5961 */;
 import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6400 */;

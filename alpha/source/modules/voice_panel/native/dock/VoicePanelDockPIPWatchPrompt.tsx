@@ -1,10 +1,10 @@
-// Module ID: 19315
-// Function ID: 19316
+// Module ID: 19317
+// Function ID: 19318
 // Name: VoicePanelDockPIPWatchPrompt
-// Dependencies: [19, 17, 6400, 1386, 1071, 21, 4913, 575, 11749, 7520, 7539, 6456, 1255, 19316, 504, 5943, 4974, 1653, 5123, 1706, 7324, 7061, 1112, 5504, 3376, 5511, 7591, 7151, 2]
+// Dependencies: [19, 17, 6400, 1386, 1071, 21, 4913, 575, 11749, 7520, 7539, 6456, 1255, 19318, 504, 5943, 4974, 1653, 5123, 1706, 7324, 7061, 1112, 5504, 3376, 5511, 7591, 7151, 2]
 // Exports: useVoicePanelDockWatchPromptActions
 
-// Module 19315 (VoicePanelDockPIPWatchPrompt)
+// Module 19317 (VoicePanelDockPIPWatchPrompt)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;

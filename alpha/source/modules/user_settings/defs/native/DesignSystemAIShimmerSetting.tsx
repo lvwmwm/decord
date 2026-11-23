@@ -1,9 +1,9 @@
-// Module ID: 17267
-// Function ID: 17268
+// Module ID: 17269
+// Function ID: 17270
 // Name: DesignSystemAIShimmerSetting
-// Dependencies: [8712, 1071, 11937, 17268, 2]
+// Dependencies: [8712, 1071, 11937, 17270, 2]
 
-// Module 17267 (DesignSystemAIShimmerSetting)
+// Module 17269 (DesignSystemAIShimmerSetting)
 import Constants from "Constants" /* 1071 */;
 import SettingsConstants from "SettingsConstants" /* 8712 */;
 import SettingBuilders from "SettingBuilders" /* 11937 */;

@@ -1,13 +1,13 @@
-// Module ID: 17131
-// Function ID: 17132
+// Module ID: 17133
+// Function ID: 17134
 // Name: DevToolsGuildPowerupsModal
-// Dependencies: [19, 21, 8638, 7092, 8561, 10538, 17132, 2]
+// Dependencies: [19, 21, 8638, 7092, 8561, 10538, 17134, 2]
 
-// Module 17131 (DevToolsGuildPowerupsModal)
+// Module 17133 (DevToolsGuildPowerupsModal)
 import Fragment from "Fragment" /* 21 */;
 import HeaderShared from "HeaderShared" /* 8561 */;
 import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10538 */;
-import DevToolsGuildPowerupsScreenDefault from "DevToolsGuildPowerupsScreen" /* 17132 */;
+import DevToolsGuildPowerupsScreenDefault from "DevToolsGuildPowerupsScreen" /* 17134 */;
 import react from "react" /* 19 */;
 import NativeStackView from "NativeStackView" /* 8638 */;
 import size from "module_2" /* 2 */;

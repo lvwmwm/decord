@@ -1,14 +1,14 @@
-// Module ID: 17187
-// Function ID: 17188
+// Module ID: 17189
+// Function ID: 17190
 // Name: BugIcon
-// Dependencies: [19, 21, 575, 5599, 17188, 2]
+// Dependencies: [19, 21, 575, 5599, 17190, 2]
 // Exports: BugIcon
 
-// Module 17187 (BugIcon)
+// Module 17189 (BugIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5599 */;
-import AssetRegistry from "AssetRegistry" /* 17188 */;
+import AssetRegistry from "AssetRegistry" /* 17190 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

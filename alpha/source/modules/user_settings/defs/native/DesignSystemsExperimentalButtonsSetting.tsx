@@ -1,9 +1,9 @@
-// Module ID: 17215
-// Function ID: 17216
+// Module ID: 17217
+// Function ID: 17218
 // Name: DesignSystemsExperimentalButtonsSetting
-// Dependencies: [8712, 1071, 11937, 17216, 2]
+// Dependencies: [8712, 1071, 11937, 17218, 2]
 
-// Module 17215 (DesignSystemsExperimentalButtonsSetting)
+// Module 17217 (DesignSystemsExperimentalButtonsSetting)
 import Constants from "Constants" /* 1071 */;
 import SettingsConstants from "SettingsConstants" /* 8712 */;
 import SettingBuilders from "SettingBuilders" /* 11937 */;

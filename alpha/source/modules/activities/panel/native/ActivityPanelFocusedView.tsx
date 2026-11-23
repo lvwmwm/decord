@@ -1,10 +1,10 @@
-// Module ID: 19188
-// Function ID: 19189
+// Module ID: 19190
+// Function ID: 19191
 // Name: ActivityPanelFocusedView
-// Dependencies: [19, 17, 4914, 4762, 4761, 5539, 19034, 1071, 11750, 10774, 21, 4913, 575, 1628, 504, 1494, 19179, 18235, 1653, 4974, 1706, 5123, 5514, 5920, 4834, 19181, 19189, 10671, 10783, 2]
+// Dependencies: [19, 17, 4914, 4762, 4761, 5539, 19036, 1071, 11750, 10774, 21, 4913, 575, 1628, 504, 1494, 19181, 18237, 1653, 4974, 1706, 5123, 5514, 5920, 4834, 19183, 19191, 10671, 10783, 2]
 // Exports: useBaseActivityPanelFocusedView
 
-// Module 19188 (ActivityPanelFocusedView)
+// Module 19190 (ActivityPanelFocusedView)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -12,13 +12,13 @@ import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
 import Constants2 from "Constants" /* 10774 */;
 import EmbeddedActivityViewDefault from "EmbeddedActivityView" /* 10783 */;
 import VoicePanelConstants from "VoicePanelConstants" /* 11750 */;
-import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 19181 */;
+import ActivityPanelStateContextDefault from "ActivityPanelStateContext" /* 19183 */;
 import react from "react" /* 19 */;
 import AccessibilityStore from "AccessibilityStore" /* 4914 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4761 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 5539 */;
-import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 19034 */;
+import ActivityPanelNativeConstants from "ActivityPanelNativeConstants" /* 19036 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;

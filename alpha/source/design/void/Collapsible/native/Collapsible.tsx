@@ -1,10 +1,10 @@
-// Module ID: 15388
-// Function ID: 15389
+// Module ID: 15390
+// Function ID: 15391
 // Name: Collapsible
 // Dependencies: [32, 19, 17, 21, 4913, 575, 1653, 5514, 2]
 // Exports: default
 
-// Module 15388 (Collapsible)
+// Module 15390 (Collapsible)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1653 from "module_1653" /* 1653 */;

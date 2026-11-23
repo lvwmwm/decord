@@ -27,7 +27,7 @@ let c9;
 let obj2;
 let tmp;
 const BaseConnectionEvent = tmp(5679);
-const f88891 = (destroy, arg1) => {
+const f88864 = (destroy, arg1) => {
   let str = "receiver-disconnect";
   destroy = destroy.destroy;
   if (destroy.isOwner) {
@@ -206,12 +206,12 @@ if (MediaEngineStore.isSupported()) {
     CONNECTION_OPEN: function handleConnectionOpen(sessionId) {
         sessionId = sessionId.sessionId;
         const arr = _modDef12;
-        const item = arr.forEach(closure_18, f88891);
+        const item = arr.forEach(closure_18, f88864);
       },
     CONNECTION_CLOSED: function handleConnectionClosed() {
         let c3 = null;
         const arr = _modDef12;
-        const item = arr.forEach(closure_18, f88891);
+        const item = arr.forEach(closure_18, f88864);
       },
     RTC_CONNECTION_STATE: handleRtcAction,
     RTC_CONNECTION_PING: handleRtcAction,

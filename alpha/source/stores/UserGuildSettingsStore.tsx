@@ -30,14 +30,14 @@ let closure_14;
 let closure_15;
 let metroImportDefault;
 let metroRequire;
-const f89225 = (item) => {
+const f89198 = (item) => {
   const obj = closure_1_0(closure_1_3[10]);
   return obj.computeIsMuted(item);
 };
-const f89226 = (channel_id) => channel_id.channel_id;
+const f89199 = (channel_id) => channel_id.channel_id;
 function updateUserGuildSettingsInternal(guild_id, channel_overrides) {
   let ALL_MESSAGES;
-  const f89221 = (channel_id) => channel_id.channel_id;
+  const f89194 = (channel_id) => channel_id.channel_id;
   const tmp = guild_id;
   channel_overrides = undefined;
   if (userGuildSettings[guild_id] != null) {
@@ -139,8 +139,8 @@ function updateUserGuildSettingsInternal(guild_id, channel_overrides) {
   const tmp16 = closure_24;
   if (null != userGuildSettings[guild_id].channel_overrides) {
     const arr3 = _modDef12(userGuildSettings[guild_id].channel_overrides);
-    const found = arr3.filter(f89225);
-    const iter = found.map(f89226);
+    const found = arr3.filter(f89198);
+    const iter = found.map(f89199);
     valueResult = iter.value();
   }
   const _Set1 = new _Set(valueResult);
@@ -155,8 +155,8 @@ function updateUserGuildSettingsInternal(guild_id, channel_overrides) {
     }
     return hasFlag(num, constants.OPT_IN_ENABLED);
   });
-  optedInChannelsByGuild[guild_id] = new Set(found1.map(f89221));
-  new Set(found1.map(f89221));
+  optedInChannelsByGuild[guild_id] = new Set(found1.map(f89194));
+  new Set(found1.map(f89194));
   if (null != guild_id) {
     const _Set2 = Set;
     const self = this;
@@ -308,8 +308,8 @@ class UserGuildSettingsStoreClass extends PersistedStore {
           const tmp = mutedChannels;
           if (null != channel_overrides.channel_overrides) {
             const arr = _modDef12(channel_overrides.channel_overrides);
-            const found = arr.filter(f89225);
-            const iter = found.map(f89226);
+            const found = arr.filter(f89198);
+            const iter = found.map(f89199);
             valueResult = iter.value();
           }
           const _Set1 = new _Set(valueResult);

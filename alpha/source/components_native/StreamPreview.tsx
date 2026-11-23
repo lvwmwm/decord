@@ -61,7 +61,7 @@ const prototype = DefaultFallback.prototype;
 DefaultFallback.contextType = native.ThemeContext;
 createStyles = createStyles_mod;
 let obj4 = { touchable: size, imageContainer: { flex: 1, backgroundColor: nativeDefault.unsafe_rawColors.BLACK }, image: { flex: 1 } };
-size = { flex: 1, width: "100%", height: "__d", aspectRatio: true, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
+size = { flex: 1, width: "100%", height: "WireType", aspectRatio: true, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWEST };
 const createLegacyClassComponentStyles2 = createStyles.createLegacyClassComponentStyles;
 ({ flex: 1, backgroundColor: nativeDefault.unsafe_rawColors.BLACK });
 const React4 = createLegacyClassComponentStyles2(obj4);

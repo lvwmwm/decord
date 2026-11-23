@@ -1,9 +1,9 @@
-// Module ID: 19248
-// Function ID: 19249
+// Module ID: 19250
+// Function ID: 19251
 // Name: MobileGoLiveEntrypointExperiment
 // Dependencies: [1450, 2]
 
-// Module 19248 (MobileGoLiveEntrypointExperiment)
+// Module 19250 (MobileGoLiveEntrypointExperiment)
 import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 

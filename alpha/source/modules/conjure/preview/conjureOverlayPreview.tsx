@@ -1,10 +1,10 @@
-// Module ID: 18560
-// Function ID: 18561
+// Module ID: 18562
+// Function ID: 18563
 // Name: conjureOverlayPreview
 // Dependencies: [6622, 2]
 // Exports: overlayWidgetPlacement, overlayWidgetPreviewScale, overlayWidgetPreviewSize, previewOverlayWidgetSize, previewSupportsOverlay
 
-// Module 18560 (conjureOverlayPreview)
+// Module 18562 (conjureOverlayPreview)
 import ConjureProjectTypes from "ConjureProjectTypes" /* 6622 */;
 import size_mod from "module_2" /* 2 */;
 

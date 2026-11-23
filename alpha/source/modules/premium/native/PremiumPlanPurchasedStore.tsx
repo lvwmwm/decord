@@ -114,6 +114,6 @@ export function reset() {
         str = "dismissed";
       }
     }
-    setState({ productId: "", initiatedPurchaseFromNewFlow: false, isPaymentSuccess: false, mobileWebRedirectCheckoutStatus: str, onPaymentSuccess: "add", onPaymentDismiss: "count" });
+    setState({ productId: "", initiatedPurchaseFromNewFlow: false, isPaymentSuccess: false, mobileWebRedirectCheckoutStatus: str, onPaymentSuccess: "r", onPaymentDismiss: "disabled" });
   });
 }

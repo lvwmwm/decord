@@ -34,6 +34,7 @@ export default function useConjureSharedProject(arg0) {
   let stateFromStores3;
   let closure_7;
   let tmp2 = _require;
+  const tmp3 = stateFromStores;
   let obj = require("get initialized");
   const items = [ConjureSharedProjectStore];
   const items1 = [arg0, tmp];
@@ -58,7 +59,7 @@ export default function useConjureSharedProject(arg0) {
   }
   const items4 = [stateFromStores3];
   const items5 = [projectId];
-  const tmp2Result = tmp2(stateFromStores[5]);
+  const tmp2Result = tmp2(tmp3[5]);
   stateFromStores2 = tmp2Result.useStateFromStores(items4, () => {
     let tmp2 = null;
     if (null != projectId) {
@@ -71,7 +72,7 @@ export default function useConjureSharedProject(arg0) {
     return tmp2;
   }, items5);
   const items6 = [stateFromStores2];
-  const tmp2Result2 = tmp2(stateFromStores[5]);
+  const tmp2Result2 = tmp2(tmp3[5]);
   stateFromStores3 = tmp2Result2.useStateFromStores(items6, () => {
     const currentUser = stateFromStores2.getCurrentUser();
     let id;
@@ -113,7 +114,7 @@ export default function useConjureSharedProject(arg0) {
                 obj = { type: "loading" };
               } else {
                 obj = { type: "ready", application: stateFromStores1, project: stateFromStores2, canRemix: ticketValid };
-                ticketValid = tmp.ticketValid || canRemixProject(tmp2);
+                ticketValid = tmp.ticketValid || canRemixProject(tmp3);
               }
             }
           }

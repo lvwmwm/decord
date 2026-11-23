@@ -1,17 +1,17 @@
-// Module ID: 18987
-// Function ID: 18988
+// Module ID: 18989
+// Function ID: 18990
 // Name: SearchNavigator
-// Dependencies: [19, 8575, 18735, 1071, 21, 8638, 7092, 13218, 18888, 18988, 8561, 18982, 18983, 8649, 8650, 1358, 14349, 2]
+// Dependencies: [19, 8575, 18737, 1071, 21, 8638, 7092, 13218, 18890, 18990, 8561, 18984, 18985, 8649, 8650, 1358, 14349, 2]
 
-// Module 18987 (SearchNavigator)
+// Module 18989 (SearchNavigator)
 import Constants from "Constants" /* 1071 */;
 import utils_PlatformUtils from "utils/PlatformUtils" /* 1358 */;
 import TrackingConstants from "TrackingConstants" /* 8575 */;
 import ConversationNavigatorHeader from "ConversationNavigatorHeader" /* 8650 */;
 import TrackingDefault from "Tracking" /* 13218 */;
-import SearchNavigatorConstants from "SearchNavigatorConstants" /* 18735 */;
-import AppFrameContainerDefault from "AppFrameContainer" /* 18888 */;
-import SearchNavigatorPreviewHeaderDefault from "SearchNavigatorPreviewHeader" /* 18982 */;
+import SearchNavigatorConstants from "SearchNavigatorConstants" /* 18737 */;
+import AppFrameContainerDefault from "AppFrameContainer" /* 18890 */;
+import SearchNavigatorPreviewHeaderDefault from "SearchNavigatorPreviewHeader" /* 18984 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import NativeStackView from "NativeStackView" /* 8638 */;

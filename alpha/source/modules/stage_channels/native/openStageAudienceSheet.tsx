@@ -1,10 +1,10 @@
-// Module ID: 19366
-// Function ID: 19367
+// Module ID: 19368
+// Function ID: 19369
 // Name: openStageAudienceSheet
 // Dependencies: [6500, 5127, 10904, 2119, 2]
 // Exports: default
 
-// Module 19366 (openStageAudienceSheet)
+// Module 19368 (openStageAudienceSheet)
 import asyncRequire from "asyncRequire" /* 2119 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
 import StageChannelsConstants from "StageChannelsConstants" /* 6500 */;

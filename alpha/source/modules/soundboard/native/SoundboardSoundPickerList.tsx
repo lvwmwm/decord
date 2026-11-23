@@ -1,9 +1,9 @@
-// Module ID: 18023
-// Function ID: 18024
+// Module ID: 18025
+// Function ID: 18026
 // Name: SoundboardSoundPickerList
-// Dependencies: [19, 17, 1386, 18018, 21, 4913, 575, 6831, 1112, 11331, 504, 2173, 10949, 11296, 18024, 5519, 12, 7322, 1186, 18031, 11373, 5622, 9814, 11295, 7449, 5504, 2]
+// Dependencies: [19, 17, 1386, 18020, 21, 4913, 575, 6831, 1112, 11331, 504, 2173, 10949, 11296, 18026, 5519, 12, 7322, 1186, 18033, 11373, 5622, 9814, 11295, 7449, 5504, 2]
 
-// Module 18023 (SoundboardSoundPickerList)
+// Module 18025 (SoundboardSoundPickerList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl5 from "intl" /* 1112 */;
@@ -20,10 +20,10 @@ import PremiumUpsellSectionDivider from "PremiumUpsellSectionDivider" /* 11295 *
 import PremiumUpsellGradientBackground from "PremiumUpsellGradientBackground" /* 11296 */;
 import chunkDefault from "chunk" /* 11331 */;
 import AssetRegistryDefault from "AssetRegistry" /* 11373 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 18031 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 18033 */;
 import react from "react" /* 19 */;
 import UserStore from "UserStore" /* 1386 */;
-import SoundboardStyleConstants from "SoundboardStyleConstants" /* 18018 */;
+import SoundboardStyleConstants from "SoundboardStyleConstants" /* 18020 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
@@ -99,7 +99,7 @@ function SoundPickerButtonRow(section) {
         const sound = type.sound;
         const obj = { sound, channel, style: soundButtonNotFirst, isSectionLocked };
         soundButtonNotFirst = null;
-        const SoundButton = tmp(18024).SoundButton;
+        const SoundButton = tmp(18026).SoundButton;
         const tmp7 = metroImportDefault;
         if (index > 0) {
           soundButtonNotFirst = soundButtonNotFirst.soundButtonNotFirst;

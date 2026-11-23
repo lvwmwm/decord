@@ -1,10 +1,10 @@
-// Module ID: 18081
-// Function ID: 18082
+// Module ID: 18083
+// Function ID: 18084
 // Name: ForYouUnreadClearedState
 // Dependencies: [19, 17, 21, 4913, 575, 1186, 11637, 5504, 1112, 2]
 // Exports: ForYouUnreadClearedState
 
-// Module 18081 (ForYouUnreadClearedState)
+// Module 18083 (ForYouUnreadClearedState)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl3 from "intl" /* 1112 */;

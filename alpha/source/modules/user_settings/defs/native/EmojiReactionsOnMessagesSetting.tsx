@@ -1,9 +1,9 @@
-// Module ID: 16873
-// Function ID: 16874
+// Module ID: 16875
+// Function ID: 16876
 // Name: EmojiReactionsOnMessagesSetting
 // Dependencies: [8712, 11937, 1112, 4738, 2]
 
-// Module 16873 (EmojiReactionsOnMessagesSetting)
+// Module 16875 (EmojiReactionsOnMessagesSetting)
 import intl2 from "intl" /* 1112 */;
 import UserSettings from "UserSettings" /* 4738 */;
 import SettingsConstants from "SettingsConstants" /* 8712 */;

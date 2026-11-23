@@ -1,14 +1,14 @@
-// Module ID: 18996
-// Function ID: 18997
+// Module ID: 18998
+// Function ID: 18999
 // Name: MessageRequestsNavigator
-// Dependencies: [19, 21, 8638, 4913, 575, 7092, 8268, 18888, 8561, 1112, 10538, 18997, 19016, 19017, 2]
+// Dependencies: [19, 21, 8638, 4913, 575, 7092, 8268, 18890, 8561, 1112, 10538, 18999, 19018, 19019, 2]
 // Exports: default
 
-// Module 18996 (MessageRequestsNavigator)
+// Module 18998 (MessageRequestsNavigator)
 import nativeDefault from "native" /* 575 */;
 import HeaderShared from "HeaderShared" /* 8561 */;
 import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10538 */;
-import AppFrameContainerDefault from "AppFrameContainer" /* 18888 */;
+import AppFrameContainerDefault from "AppFrameContainer" /* 18890 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import NativeStackView from "NativeStackView" /* 8638 */;

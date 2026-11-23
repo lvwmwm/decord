@@ -1,9 +1,9 @@
-// Module ID: 16879
-// Function ID: 16880
+// Module ID: 16881
+// Function ID: 16882
 // Name: TimestampHourCycleSetting
 // Dependencies: [19, 8712, 4738, 1112, 1195, 11937, 5584, 2]
 
-// Module 16879 (TimestampHourCycleSetting)
+// Module 16881 (TimestampHourCycleSetting)
 import intl4 from "intl" /* 1112 */;
 import preloaded_user_settings from "preloaded_user_settings" /* 1195 */;
 import UserSettings from "UserSettings" /* 4738 */;

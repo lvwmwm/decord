@@ -1,13 +1,13 @@
-// Module ID: 16707
-// Function ID: 16708
+// Module ID: 16709
+// Function ID: 16710
 // Name: SameAsDeviceThemeSetting
-// Dependencies: [1191, 8712, 504, 16405, 11937, 1112, 2]
+// Dependencies: [1191, 8712, 504, 16407, 11937, 1112, 2]
 
-// Module 16707 (SameAsDeviceThemeSetting)
+// Module 16709 (SameAsDeviceThemeSetting)
 import get_initialized from "get initialized" /* 504 */;
 import intl2 from "intl" /* 1112 */;
 import SettingsConstants from "SettingsConstants" /* 8712 */;
-import UserSettingsAppearanceThemeUtils from "UserSettingsAppearanceThemeUtils" /* 16405 */;
+import UserSettingsAppearanceThemeUtils from "UserSettingsAppearanceThemeUtils" /* 16407 */;
 import ThemeStore from "ThemeStore" /* 1191 */;
 import SettingBuilders from "SettingBuilders" /* 11937 */;
 import size from "module_2" /* 2 */;

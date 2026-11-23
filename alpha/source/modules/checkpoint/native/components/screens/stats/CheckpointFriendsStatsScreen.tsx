@@ -326,7 +326,7 @@ export default function CheckpointFriendsStatsScreen(arg0) {
       }
       tmp36Result7 = tmp36Result6;
     } else {
-      const obj25 = { animationState, sidekickUser: user3, firstUser: tmp12, secondUser: tmp13, twoFriends: stateFromStores.length < 2, isReducedMotion: stateFromStores2, artboardFrame: "add" };
+      const obj25 = { animationState, sidekickUser: user3, firstUser: tmp12, secondUser: tmp13, twoFriends: stateFromStores.length < 2, isReducedMotion: stateFromStores2, artboardFrame: "disabled" };
       user3 = undefined;
       const tmp23Result16 = width(height[20]);
       if (stateFromStores1 != null) {

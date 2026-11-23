@@ -1,14 +1,14 @@
-// Module ID: 17396
-// Function ID: 17397
+// Module ID: 17398
+// Function ID: 17399
 // Name: ParentalControlsGoreMediaFiltersNonFriendsDMsSetting
-// Dependencies: [8335, 8712, 16116, 8448, 16120, 16126, 1112, 1195, 11937, 2]
+// Dependencies: [8335, 8712, 16118, 8448, 16122, 16128, 1112, 1195, 11937, 2]
 // Exports: onGoreContentNonFriendsDmOnPress, useGoreContentNonFriendsDmSettingValue
 
-// Module 17396 (ParentalControlsGoreMediaFiltersNonFriendsDMsSetting)
+// Module 17398 (ParentalControlsGoreMediaFiltersNonFriendsDMsSetting)
 import intl3 from "intl" /* 1112 */;
 import SettingsConstants from "SettingsConstants" /* 8712 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 16116 */;
-import FamilyCenterControlledSettingsUtils from "FamilyCenterControlledSettingsUtils" /* 16120 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 16118 */;
+import FamilyCenterControlledSettingsUtils from "FamilyCenterControlledSettingsUtils" /* 16122 */;
 import FamilyCenterStore from "FamilyCenterStore" /* 8335 */;
 import SettingBuilders from "SettingBuilders" /* 11937 */;
 import size from "module_2" /* 2 */;
@@ -35,7 +35,7 @@ function onGoreContentNonFriendsDmOnPress() {
   let items;
   const selectedTeenId = FamilyCenterStore.getSelectedTeenId();
   if (null != selectedTeenId) {
-    let obj = selectedTeenId(16120);
+    let obj = selectedTeenId(16122);
     const goreContentNonFriendDm = obj.getGoreContentSettingOrDefault(selectedTeenId).goreContentNonFriendDm;
     let obj2 = {
       title: intl.string(selectedTeenId(1112).t["16/3Bi"]),
@@ -48,8 +48,8 @@ function onGoreContentNonFriendsDmOnPress() {
       currentValue: goreContentNonFriendDm,
       excluded: items
     };
-    const handleSensitiveMediaFilterPress = selectedTeenId(16126).handleSensitiveMediaFilterPress;
-    selectedTeenId(16126);
+    const handleSensitiveMediaFilterPress = selectedTeenId(16128).handleSensitiveMediaFilterPress;
+    selectedTeenId(16128);
     intl = selectedTeenId(1112).intl;
     intl2 = selectedTeenId(1112).intl;
     items = [selectedTeenId(1195).ExplicitContentRedaction.SHOW];

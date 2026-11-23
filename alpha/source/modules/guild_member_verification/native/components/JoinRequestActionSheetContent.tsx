@@ -1,9 +1,9 @@
-// Module ID: 18227
-// Function ID: 18228
+// Module ID: 18229
+// Function ID: 18230
 // Name: JoinRequestActionSheetContent
-// Dependencies: [19, 17, 4762, 5142, 7564, 21, 4913, 575, 8197, 8183, 8180, 8191, 8067, 18225, 8202, 8212, 9050, 14520, 14626, 504, 13544, 4948, 5511, 7672, 1112, 4949, 10346, 5504, 7231, 4735, 11, 7532, 6545, 7591, 7340, 10273, 1628, 18228, 2]
+// Dependencies: [19, 17, 4762, 5142, 7564, 21, 4913, 575, 8197, 8183, 8180, 8191, 8067, 18227, 8202, 8212, 9050, 14522, 14628, 504, 13544, 4948, 5511, 7672, 1112, 4949, 10346, 5504, 7231, 4735, 11, 7532, 6545, 7591, 7340, 10273, 1628, 18230, 2]
 
-// Module 18227 (JoinRequestActionSheetContent)
+// Module 18229 (JoinRequestActionSheetContent)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
@@ -14,7 +14,7 @@ import ActionSheetConstants from "ActionSheetConstants" /* 5142 */;
 import Text_Text from "Text/Text" /* 5504 */;
 import Constants from "Constants" /* 7564 */;
 import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8067 */;
-import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 18225 */;
+import openJoinRequestActionSheetDefault from "openJoinRequestActionSheet" /* 18227 */;
 import react from "react" /* 19 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
 import Fragment from "Fragment" /* 21 */;
@@ -130,9 +130,9 @@ let closure_12 = react.memo(function JoinRequestActionSheetHeader(user) {
     items4 = [, ];
     const obj10 = { user, displayProfile, badgeContainerBackground: containerBackground, isPreviewingChanges: false };
     const tmpResult = tmp(9050);
-    items4[0] = closure_8(tmp6(14520).PrimaryInfo, obj10);
+    items4[0] = closure_8(tmp6(14522).PrimaryInfo, obj10);
     const obj11 = { user };
-    items4[1] = closure_8(tmp(14626), obj11);
+    items4[1] = closure_8(tmp(14628), obj11);
     items2[1] = closure_8(tmpResult, obj7);
     items1[1] = closure_9(View, obj4);
     tmp9 = closure_9(closure_10, obj2);
@@ -523,7 +523,7 @@ const memoResult = react.memo(function JoinRequestActionSheetContent(displayProf
   items1[2] = closure_8(View, obj6);
   items1[3] = closure_8(closure_17, { joinRequest, user });
   const obj7 = { guildId: joinRequest.guildId, userId: joinRequest.userId, selectedJoinRequestId: joinRequest.joinRequestId };
-  items1[4] = closure_8(tmp2(18228), obj7);
+  items1[4] = closure_8(tmp2(18230), obj7);
   return closure_9(View, obj);
 });
 size = size_mod;

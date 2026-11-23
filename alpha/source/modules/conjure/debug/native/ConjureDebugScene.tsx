@@ -1,10 +1,10 @@
-// Module ID: 18662
-// Function ID: 18663
+// Module ID: 18664
+// Function ID: 18665
 // Name: ConjureDebugScene
-// Dependencies: [32, 19, 17, 6967, 6968, 21, 4913, 575, 1112, 4190, 1500, 1628, 18377, 7586, 504, 6988, 18239, 18663, 7545, 18672, 5595, 5613, 18393, 11278, 18673, 18679, 18681, 2]
+// Dependencies: [32, 19, 17, 6967, 6968, 21, 4913, 575, 1112, 4190, 1500, 1628, 18379, 7586, 504, 6988, 18241, 18665, 7545, 18674, 5595, 5613, 18395, 11278, 18675, 18681, 18683, 2]
 // Exports: default
 
-// Module 18662 (ConjureDebugScene)
+// Module 18664 (ConjureDebugScene)
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
 import _modDef4190 from "module_4190" /* 4190 */;
@@ -13,8 +13,8 @@ import CopyIcon from "CopyIcon" /* 5613 */;
 import ConjureConnectionStore from "ConjureConnectionStore" /* 6967 */;
 import conjureDebugConnection from "conjureDebugConnection" /* 6988 */;
 import ClipboardUtils from "ClipboardUtils" /* 7545 */;
-import conjureTraceRequests2 from "conjureTraceRequests" /* 18239 */;
-import ConjureDebugSnapshot from "ConjureDebugSnapshot" /* 18672 */;
+import conjureTraceRequests2 from "conjureTraceRequests" /* 18241 */;
+import ConjureDebugSnapshot from "ConjureDebugSnapshot" /* 18674 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
@@ -129,7 +129,7 @@ export default function ConjureDebugScene(projectId) {
       const tmp4 = projectId;
       if (null != result) {
         setActiveIndex(memo.indexOf("trace"), false);
-        const tmp2Result = tmp2(18663);
+        const tmp2Result = tmp2(18665);
         tmp2Result.openPerfTrace(tmp4, result);
       }
     }

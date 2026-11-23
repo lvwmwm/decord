@@ -1,9 +1,9 @@
-// Module ID: 18765
-// Function ID: 18766
+// Module ID: 18767
+// Function ID: 18768
 // Name: MessageRow
-// Dependencies: [19, 17, 4914, 4765, 4762, 4784, 6552, 1071, 21, 4913, 575, 504, 7636, 5529, 1186, 5504, 11157, 11373, 10387, 4969, 6954, 18766, 11701, 18767, 6341, 8699, 6439, 18728, 1112, 11125, 5574, 2]
+// Dependencies: [19, 17, 4914, 4765, 4762, 4784, 6552, 1071, 21, 4913, 575, 504, 7636, 5529, 1186, 5504, 11157, 11373, 10387, 4969, 6954, 18768, 11701, 18769, 6341, 8699, 6439, 18730, 1112, 11125, 5574, 2]
 
-// Module 18765 (MessageRow)
+// Module 18767 (MessageRow)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -18,8 +18,8 @@ import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/En
 import BotTagDefault from "BotTag" /* 10387 */;
 import AssetRegistryDefault from "AssetRegistry" /* 11157 */;
 import AssetRegistryDefault2 from "AssetRegistry" /* 11373 */;
-import SearchListRow2 from "SearchListRow" /* 18728 */;
-import useSearchMessageTimestamp from "useSearchMessageTimestamp" /* 18766 */;
+import SearchListRow2 from "SearchListRow" /* 18730 */;
+import useSearchMessageTimestamp from "useSearchMessageTimestamp" /* 18768 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AccessibilityStore from "AccessibilityStore" /* 4914 */;
@@ -37,7 +37,7 @@ let closure_4;
 let obj2;
 let tmp5;
 let unpackModuleId;
-const PollBadgeDefault = tmp5(18767);
+const PollBadgeDefault = tmp5(18769);
 function GuildChannelMessageRowHeader(channel) {
   let isFavorite;
   let items1;
@@ -118,7 +118,7 @@ function PrivateChannelMessageRowLabel(message) {
       });
     }
   }, items1);
-  let obj = message(18766);
+  let obj = message(18768);
   const searchMessageTimestamp = obj.useSearchMessageTimestamp(message, channel);
   const obj2 = { style: tmp.labelContainer, children: items3 };
   const obj3 = { style: tmp.authorRow, children: items2 };
@@ -149,7 +149,7 @@ function PrivateChannelMessageRowLabel(message) {
   let tmp9Result2 = null;
   if (message.isPoll()) {
     const obj8 = { style: tmp.pollBadge };
-    tmp9Result2 = tmp9(channel(18767), obj8);
+    tmp9Result2 = tmp9(channel(18769), obj8);
   }
   items3[3] = tmp9Result2;
   return closure_12(closure_4, obj2);

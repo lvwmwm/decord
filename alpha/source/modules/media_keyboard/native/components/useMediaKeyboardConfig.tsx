@@ -1,10 +1,10 @@
-// Module ID: 18410
-// Function ID: 18411
+// Module ID: 18412
+// Function ID: 18413
 // Name: useMediaKeyboardConfig
 // Dependencies: [19, 1624, 1071, 8456, 13096, 6893, 7466, 11620, 2117, 2]
 // Exports: default
 
-// Module 18410 (useMediaKeyboardConfig)
+// Module 18412 (useMediaKeyboardConfig)
 import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1624 */;
 import Server from "Server" /* 2117 */;
 import useUploadDisabledDefault from "useUploadDisabled" /* 13096 */;

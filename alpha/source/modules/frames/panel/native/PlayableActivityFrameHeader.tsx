@@ -1,10 +1,10 @@
-// Module ID: 19209
-// Function ID: 19210
+// Module ID: 19211
+// Function ID: 19212
 // Name: PlayableActivityFrameHeader
-// Dependencies: [19, 17, 5539, 6558, 21, 4913, 575, 19210, 19204, 19189, 5173, 16360, 5504, 1112, 4661, 7591, 7151, 6953, 2]
+// Dependencies: [19, 17, 5539, 6558, 21, 4913, 575, 19212, 19206, 19191, 5173, 16362, 5504, 1112, 4661, 7591, 7151, 6953, 2]
 // Exports: default
 
-// Module 19209 (PlayableActivityFrameHeader)
+// Module 19211 (PlayableActivityFrameHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl4 from "intl" /* 1112 */;
@@ -13,7 +13,7 @@ import Text_Text from "Text/Text" /* 5504 */;
 import ActivityPanelConstants from "ActivityPanelConstants" /* 5539 */;
 import QuestConstants from "QuestConstants" /* 6558 */;
 import leaveFrame from "leaveFrame" /* 6953 */;
-import ActivityPanelHeader from "ActivityPanelHeader" /* 19189 */;
+import ActivityPanelHeader from "ActivityPanelHeader" /* 19191 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;
@@ -61,10 +61,10 @@ export default function PlayableActivityFrameHeader(arg0) {
   ({ frameId: require, playable } = arg0);
   let setMode;
   const tmp = closure_9();
-  const tmp4 = setMode(19210)(playable.id);
+  const tmp4 = setMode(19212)(playable.id);
   let isClaimed = tmp4.isClaimed;
   const remainingSeconds = tmp4.remainingSeconds;
-  const context = react.useContext(setMode(19204));
+  const context = react.useContext(setMode(19206));
   setMode = context.setMode;
   ({ wrapperOffset, pipState } = context);
   let obj = ActivityPanelHeader;
@@ -77,7 +77,7 @@ export default function PlayableActivityFrameHeader(arg0) {
   const obj6 = { style: tmp.info, children: items1 };
   items1 = [, ];
   const obj7 = { isCompleted: isClaimed, totalSeconds: playable.rewardTimerSeconds, remainingSeconds };
-  items1[0] = closure_7(setMode(16360), obj7);
+  items1[0] = closure_7(setMode(16362), obj7);
   const obj8 = { style: tmp.titleGroup, children: items2 };
   const obj9 = { variant: "body-md/semibold", color: "text-strong", lineClamp: 1, maxFontSizeMultiplier: 1.25, style: tmp.textShadow, children: productName };
   const Text = Text_Text.Text;

@@ -1,14 +1,14 @@
-// Module ID: 16774
-// Function ID: 16775
+// Module ID: 16776
+// Function ID: 16777
 // Name: EmojiCryingFaceIcon
-// Dependencies: [19, 21, 575, 5599, 16775, 2]
+// Dependencies: [19, 21, 575, 5599, 16777, 2]
 // Exports: EmojiCryingFaceIcon
 
-// Module 16774 (EmojiCryingFaceIcon)
+// Module 16776 (EmojiCryingFaceIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import BaseIconImage2 from "BaseIconImage" /* 5599 */;
-import AssetRegistry from "AssetRegistry" /* 16775 */;
+import AssetRegistry from "AssetRegistry" /* 16777 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

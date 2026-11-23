@@ -1,17 +1,17 @@
-// Module ID: 19682
-// Function ID: 19683
+// Module ID: 19684
+// Function ID: 19685
 // Name: VerificationModal
-// Dependencies: [5, 19, 17, 19683, 4756, 1386, 1071, 21, 4913, 1186, 19684, 1112, 5511, 1501, 1263, 7095, 7029, 8028, 7550, 6425, 19688, 7358, 7367, 7364, 7400, 7421, 7422, 7359, 19689, 7454, 7413, 504, 5127, 5098, 7092, 2]
+// Dependencies: [5, 19, 17, 19685, 4756, 1386, 1071, 21, 4913, 1186, 19686, 1112, 5511, 1501, 1263, 7095, 7029, 8028, 7550, 6425, 19690, 7358, 7367, 7364, 7400, 7421, 7422, 7359, 19691, 7454, 7413, 504, 5127, 5098, 7092, 2]
 // Exports: default
 
-// Module 19682 (VerificationModal)
+// Module 19684 (VerificationModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import Link from "Link" /* 1501 */;
 import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import PhoneVerificationStore from "PhoneVerificationStore" /* 19683 */;
+import PhoneVerificationStore from "PhoneVerificationStore" /* 19685 */;
 import UserRequiredActionStore from "UserRequiredActionStore" /* 4756 */;
 import UserStore from "UserStore" /* 1386 */;
 import Constants from "Constants" /* 1071 */;
@@ -50,7 +50,7 @@ function PhoneThenEmailInterstitial(navigation) {
   });
   const Button = navigation(5511).Button;
   intl3 = navigation(1112).intl;
-  return <EmptyState Illustration={navigation(19684).VerifyPhone} title={intl.string(navigation(1112).t.KLnLIP)} body={intl2.string(navigation(1112).t.XGbCq3)}>{null}</EmptyState>;
+  return <EmptyState Illustration={navigation(19686).VerifyPhone} title={intl.string(navigation(1112).t.KLnLIP)} body={intl2.string(navigation(1112).t.XGbCq3)}>{null}</EmptyState>;
 }
 const View = react_native.View;
 ({ UserRequiredActions: c9, VerificationModalScenes: c10 } = Constants);

@@ -1,10 +1,10 @@
-// Module ID: 18233
-// Function ID: 18234
+// Module ID: 18235
+// Function ID: 18236
 // Name: ConjureChatScene
-// Dependencies: [5, 32, 19, 17, 2164, 6967, 6934, 6621, 6980, 6624, 21, 4913, 575, 1500, 18234, 1628, 18235, 1642, 1706, 504, 18236, 6933, 6659, 18237, 14740, 18239, 18240, 5554, 12306, 6998, 18241, 18242, 12303, 1653, 18243, 1112, 4190, 12797, 18245, 1494, 7586, 6996, 6951, 18246, 18251, 18280, 18281, 5127, 18282, 12298, 18344, 18354, 5595, 16487, 18358, 5594, 18360, 18361, 18363, 18377, 18378, 6943, 14353, 14360, 1501, 18379, 12394, 18382, 18391, 18392, 18393, 13864, 9487, 18394, 7022, 9659, 5504, 5511, 18395, 18396, 12305, 18312, 18415, 5090, 5089, 7101, 2]
+// Dependencies: [5, 32, 19, 17, 2164, 6967, 6934, 6621, 6980, 6624, 21, 4913, 575, 1500, 18236, 1628, 18237, 1642, 1706, 504, 18238, 6933, 6659, 18239, 14742, 18241, 18242, 5554, 12306, 6998, 18243, 18244, 12303, 1653, 18245, 1112, 4190, 12797, 18247, 1494, 7586, 6996, 6951, 18248, 18253, 18282, 18283, 5127, 18284, 12298, 18346, 18356, 5595, 16489, 18360, 5594, 18362, 18363, 18365, 18379, 18380, 6943, 14353, 14360, 1501, 18381, 12394, 18384, 18393, 18394, 18395, 13864, 9487, 18396, 7022, 9659, 5504, 5511, 18397, 18398, 12305, 18314, 18417, 5090, 5089, 7101, 2]
 // Exports: default
 
-// Module 18233 (ConjureChatScene)
+// Module 18235 (ConjureChatScene)
 import nativeDefault from "native" /* 575 */;
 import intl8 from "intl" /* 1112 */;
 import _modDef4190 from "module_4190" /* 4190 */;
@@ -20,13 +20,13 @@ import ConjurePreviewActionCreators from "ConjurePreviewActionCreators" /* 6996 
 import useNavigatorBackPressHandler from "useNavigatorBackPressHandler" /* 7101 */;
 import ConjureRemixSheet from "ConjureRemixSheet" /* 12298 */;
 import restartFrames from "restartFrames" /* 14360 */;
-import conjureStandaloneScenes from "conjureStandaloneScenes" /* 18240 */;
-import conjurePreviewTargets from "conjurePreviewTargets" /* 18243 */;
-import ConjureSettingsSheet from "ConjureSettingsSheet" /* 18282 */;
-import openConjureShareSheetDefault from "openConjureShareSheet" /* 18344 */;
-import ConjureConnectToolSheet from "ConjureConnectToolSheet" /* 18354 */;
-import ConjureHistorySheet from "ConjureHistorySheet" /* 18363 */;
-import ConjureChatMoreSheet from "ConjureChatMoreSheet" /* 18382 */;
+import conjureStandaloneScenes from "conjureStandaloneScenes" /* 18242 */;
+import conjurePreviewTargets from "conjurePreviewTargets" /* 18245 */;
+import ConjureSettingsSheet from "ConjureSettingsSheet" /* 18284 */;
+import openConjureShareSheetDefault from "openConjureShareSheet" /* 18346 */;
+import ConjureConnectToolSheet from "ConjureConnectToolSheet" /* 18356 */;
+import ConjureHistorySheet from "ConjureHistorySheet" /* 18365 */;
+import ConjureChatMoreSheet from "ConjureChatMoreSheet" /* 18384 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -90,6 +90,7 @@ export default function ConjureChatScene(guildId) {
   let entryPoint;
   let frameLaunchParams;
   let has_activity;
+  let hint;
   let indicator;
   let intl3;
   let intl4;
@@ -103,7 +104,6 @@ export default function ConjureChatScene(guildId) {
   let items51;
   let items52;
   let items53;
-  let obj12;
   let obj18;
   let obj21;
   let obj23;
@@ -121,6 +121,7 @@ export default function ConjureChatScene(guildId) {
   let prop2;
   let publish;
   let publishOptions;
+  let result2;
   let str6;
   let str7;
   let text;
@@ -130,7 +131,8 @@ export default function ConjureChatScene(guildId) {
   let tmp136Result;
   let tmp136Result4;
   let tmp14;
-  let tmp141Result10;
+  let tmp141Result12;
+  let tmp141Result7;
   let tmp143;
   let tmp145;
   let tmp15;
@@ -154,7 +156,6 @@ export default function ConjureChatScene(guildId) {
   let tmp89;
   let tmp90;
   let tmp91;
-  let tmpResult47;
   let widgetApplicationId;
   guildId = guildId.guildId;
   const projectId = guildId.projectId;
@@ -776,7 +777,7 @@ export default function ConjureChatScene(guildId) {
   }, items25);
   const items26 = [previewAppId];
   const effect2 = obj2.useEffect(() => null != previewAppId ? (() => projectId(navigation[42])(previewAppId)) : undefined, items26);
-  ({ publishOptions, publish, indicator, text, pendingChanges } = tmp4(tmp2[43])(projectId, guildId));
+  ({ publishOptions, publish, indicator, hint, text, pendingChanges } = tmp4(tmp2[43])(projectId, guildId));
   tmp4(tmp2[43])(projectId, guildId);
   closure_30 = tmp4(tmp2[44])(projectId, publish, publishOptions);
   const tmp110 = tmp4(tmp2[45])(stateFromStores);
@@ -1168,28 +1169,35 @@ export default function ConjureChatScene(guildId) {
       }
     }
     const items44 = [tmp141Result, , ];
-    let tmp141Result6 = null;
+    let tmp141Result8 = null;
     if (null != publish) {
-      tmp141Result6 = null;
+      let obj11 = {
+        IconComponent: tmp(tmp2[72]).UploadIcon,
+        onPress() {
+              return closure_30("header");
+            },
+        disabled: "publishing" === indicator,
+        dimmed: null == indicator,
+        accessibilityLabel: text,
+        accessibilityHint: hint,
+        badge: tmp141Result7,
+        badgeSize: result2
+      };
+      tmp141Result7 = undefined;
+      const tmp4Result9 = tmp4(tmp2[70]);
       if (null != indicator) {
-        let obj11 = {
-          IconComponent: tmp(tmp2[72]).UploadIcon,
-          onPress() {
-                  return closure_30("header");
-                },
-          disabled: "publishing" === indicator,
-          accessibilityLabel: text,
-          badge: c16(tmp4(tmp2[73]), obj12),
-          badgeSize: tmpResult47.conjurePublishBadgeSize(indicator)
-        };
-        obj12 = { indicator };
-        const tmp4Result9 = tmp4(tmp2[70]);
-        tmpResult47 = tmp(tmp2[73]);
-        tmp141Result6 = tmp141(tmp4Result9, obj11);
+        let obj12 = { indicator };
+        tmp141Result7 = tmp141(tmp4(tmp2[73]), obj12);
       }
+      result2 = undefined;
+      if (null != indicator) {
+        const tmpResult47 = tmp(tmp2[73]);
+        result2 = tmpResult47.conjurePublishBadgeSize(indicator);
+      }
+      tmp141Result8 = tmp141(tmp4Result9, obj11);
     }
     let obj13 = { children: items44 };
-    items44[1] = tmp141Result6;
+    items44[1] = tmp141Result8;
     let obj14 = { IconComponent: tmp(tmp2[74]).MoreHorizontalIcon, onPress: callback12, accessibilityLabel: intl4.string(tmp(tmp2[35]).t["UKOtz+"]) };
     const tmp4Result10 = tmp4(tmp2[70]);
     intl4 = tmp(tmp2[35]).intl;
@@ -1205,7 +1213,7 @@ export default function ConjureChatScene(guildId) {
   if (context != null) {
     routeFocused = context.routeFocused;
   }
-  closure_52 = tmp156;
+  closure_52 = tmp158;
   const items45 = [true === routeFocused && isFocused, projectId];
   const effect5 = obj2.useEffect(() => {
     if (closure_52) {
@@ -1233,17 +1241,17 @@ export default function ConjureChatScene(guildId) {
     items47 = [tmp7.contentBare, animatedStyle];
     const View = tmp4(tmp2[33]).View;
     items48 = [c16(tmp4(tmp2[75]), { absolute: true, mix: true }), tmp136Result3, , ];
-    let tmp141Result7 = null;
+    let tmp141Result9 = null;
     if (true === preview_ready && null != previewAppId && !isResolving && availability.modes.length > 0) {
       const obj17 = { style: tmp7.segments, children: c16(tmp4(tmp2[78]), obj18) };
       obj18 = { state: segmentedControlState, extras: memo4 };
-      tmp141Result7 = tmp141(availability, obj17);
+      tmp141Result9 = tmp141(availability, obj17);
     }
-    items48[2] = tmp141Result7;
-    let tmp141Result8 = null;
+    items48[2] = tmp141Result9;
+    let tmp141Result10 = null;
     const obj19 = { style: tmp7.panes, children: items49 };
     if (hasItem) {
-      tmp141Result8 = null;
+      tmp141Result10 = null;
       if (null != previewAppId) {
         const obj20 = { style: tmp72 ? tmp7.pane : tmp7.paneBackstage, pointerEvents: str6, accessibilityElementsHidden: !tmp72, importantForAccessibility: str7, children: c16(tmp(tmp2[79]).PreviewFrame, obj21) };
         str6 = "none";
@@ -1255,23 +1263,23 @@ export default function ConjureChatScene(guildId) {
           str7 = "auto";
         }
         obj21 = { applicationId: previewAppId, projectId, frameSurface, launch: frameLaunchParams, visible: tmp72 };
-        tmp141Result8 = tmp141(tmp165, obj20);
+        tmp141Result10 = tmp141(tmp167, obj20);
       }
     }
-    items49 = [tmp141Result8, , ];
-    let tmp141Result9 = null;
+    items49 = [tmp141Result10, , ];
+    let tmp141Result11 = null;
     if (tmp69) {
-      tmp141Result9 = null;
+      tmp141Result11 = null;
       if (null != previewAppId) {
-        tmp141Result9 = null;
+        tmp141Result11 = null;
         if (!tmp72) {
           const obj22 = { style: tmp7.pane, children: c16(tmp4(tmp2[79]), obj23) };
           obj23 = { projectId, previewApplicationId: previewAppId, mode: activeMode, availability, frameSurface, frameLaunchParams, widgetApplicationId, frameHostAvailable: tmp40, botInstall: memo };
-          tmp141Result9 = tmp141(tmp165, obj22);
+          tmp141Result11 = tmp141(tmp167, obj22);
         }
       }
     }
-    items49[1] = tmp141Result9;
+    items49[1] = tmp141Result11;
     const items50 = [tmp7.chatPane, , ];
     let paneHidden = tmp69;
     const View2 = tmp4(tmp2[33]).View;
@@ -1292,11 +1300,11 @@ export default function ConjureChatScene(guildId) {
   } else {
     const obj28 = { style: tmp7.contentBare, children: items51 };
     items51 = [c16(tmp4(tmp2[75]), { absolute: true, mix: true }), tmp136Result3, ];
-    const obj29 = { style: items52, children: tmp141Result10 };
+    const obj29 = { style: items52, children: tmp141Result12 };
     items52 = [, ];
     ({ content: arr50[0], centered: arr50[1] } = tmp7);
     if (stateFromStores1) {
-      tmp141Result10 = tmp141(isLoading, {});
+      tmp141Result12 = tmp141(isLoading, {});
     } else {
       const obj30 = { style: tmp7.listError, children: items53 };
       const obj31 = { variant: "heading-lg/semibold", color: "text-default", children: intl5.string(tmp4(tmp2[36]).G1WwgK) };
@@ -1325,10 +1333,10 @@ export default function ConjureChatScene(guildId) {
       const Button = tmp(tmp2[77]).Button;
       intl7 = tmp(tmp2[35]).intl;
       items53[2] = c16(Button, obj33);
-      tmp141Result10 = tmp136(tmp159, obj30);
+      tmp141Result12 = tmp136(tmp161, obj30);
     }
     items51[2] = c16(availability, obj29);
-    tmp136Result4 = tmp136(tmp159, obj28);
+    tmp136Result4 = tmp136(tmp161, obj28);
   }
   return tmp136Result4;
 };

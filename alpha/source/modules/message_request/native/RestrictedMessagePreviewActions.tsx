@@ -1,10 +1,10 @@
-// Module ID: 19020
-// Function ID: 19021
+// Module ID: 19022
+// Function ID: 19023
 // Name: RestrictedMessagePreviewActions
 // Dependencies: [19, 17, 4855, 1071, 11813, 21, 4913, 575, 13485, 504, 7740, 10251, 10247, 4969, 5127, 11814, 2119, 10176, 7737, 5511, 1112, 5504, 2]
 // Exports: default
 
-// Module 19020 (RestrictedMessagePreviewActions)
+// Module 19022 (RestrictedMessagePreviewActions)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import asyncRequire from "asyncRequire" /* 2119 */;
@@ -182,7 +182,7 @@ export default function RestrictedMessagePreviewActions(channel) {
     tmp18 = null;
     formatResult = null;
   } else if (constants2.PENDING_OUTGOING === stateFromStores) {
-    const obj11 = { size: "sm", variant: "active", text: intl3.string(channel(message[20]).t.xMH6vD), disabled: true, onPress: "a" };
+    const obj11 = { size: "sm", variant: "active", text: intl3.string(channel(message[20]).t.xMH6vD), disabled: true, onPress: "Boolean" };
     const Button3 = tmp2(tmp3[19]).Button;
     intl3 = tmp2(tmp3[20]).intl;
     tmp19 = closure_9(Button3, obj11);

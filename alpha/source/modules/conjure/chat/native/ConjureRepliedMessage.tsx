@@ -1,14 +1,14 @@
-// Module ID: 18469
-// Function ID: 18470
+// Module ID: 18471
+// Function ID: 18472
 // Name: ConjureRepliedMessage
-// Dependencies: [19, 17, 21, 18459, 4913, 575, 11977, 4969, 18384, 18470, 1112, 4190, 18471, 1186, 5504, 18477, 2]
+// Dependencies: [19, 17, 21, 18461, 4913, 575, 11977, 4969, 18386, 18472, 1112, 4190, 18473, 1186, 5504, 18479, 2]
 // Exports: default
 
-// Module 18469 (ConjureRepliedMessage)
+// Module 18471 (ConjureRepliedMessage)
 import nativeDefault from "native" /* 575 */;
 import _modDef4190 from "module_4190" /* 4190 */;
-import ConjureDesignFeedback from "ConjureDesignFeedback" /* 18384 */;
-import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 18459 */;
+import ConjureDesignFeedback from "ConjureDesignFeedback" /* 18386 */;
+import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 18461 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -22,7 +22,7 @@ let metroRequire;
 let obj2;
 let rect;
 let tmp11;
-const ConjureSelectedMentionDefault = tmp11(18477);
+const ConjureSelectedMentionDefault = tmp11(18479);
 ({ Pressable: closure_4, View: hasOwnProperty } = react_native);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 const diff = ConjureNativeStatusLine.MESSAGE_EDGE_INSET + ConjureNativeStatusLine.MESSAGE_AVATAR_SIZE / 2 - 1;
@@ -57,8 +57,8 @@ export default function ConjureRepliedMessage(replied) {
     return obj.parseConjureDesignRemark(replied.content);
   }, items);
   let body;
-  const useConjureMentionNames = replied(18470).useConjureMentionNames;
-  replied(18470);
+  const useConjureMentionNames = replied(18472).useConjureMentionNames;
+  replied(18472);
   if (memo != null) {
     body = memo.body;
   }
@@ -78,7 +78,7 @@ export default function ConjureRepliedMessage(replied) {
   if (null != messageAuthorUser) {
     const obj5 = { style: tmp.avatar, children: closure_6(ConjureUserAvatar, obj6) };
     obj6 = { userId: replied.userId, size: replied(1186).AvatarSizes.SIZE_16 };
-    ConjureUserAvatar = tmp2(18471).ConjureUserAvatar;
+    ConjureUserAvatar = tmp2(18473).ConjureUserAvatar;
     tmp12Result = tmp12(tmp13, obj5);
   }
   items1[1] = tmp12Result;

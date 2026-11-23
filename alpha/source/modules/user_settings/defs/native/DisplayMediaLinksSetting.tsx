@@ -1,9 +1,9 @@
-// Module ID: 16865
-// Function ID: 16866
+// Module ID: 16867
+// Function ID: 16868
 // Name: DisplayMediaLinksSetting
 // Dependencies: [8712, 11937, 1112, 4738, 2]
 
-// Module 16865 (DisplayMediaLinksSetting)
+// Module 16867 (DisplayMediaLinksSetting)
 import intl2 from "intl" /* 1112 */;
 import UserSettings from "UserSettings" /* 4738 */;
 import SettingsConstants from "SettingsConstants" /* 8712 */;

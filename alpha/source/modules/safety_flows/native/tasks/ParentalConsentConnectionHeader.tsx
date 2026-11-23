@@ -1,10 +1,10 @@
-// Module ID: 20150
-// Function ID: 20151
+// Module ID: 20152
+// Function ID: 20153
 // Name: ParentalConsentConnectionHeader
 // Dependencies: [19, 17, 1386, 21, 4913, 5467, 575, 1628, 504, 5504, 6425, 1112, 3120, 2]
 // Exports: ParentalConsentConnectionNavbar
 
-// Module 20150 (ParentalConsentConnectionHeader)
+// Module 20152 (ParentalConsentConnectionHeader)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;

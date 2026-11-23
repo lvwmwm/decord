@@ -1,10 +1,10 @@
-// Module ID: 18375
-// Function ID: 18376
+// Module ID: 18377
+// Function ID: 18378
 // Name: ConjureStreamReveal
 // Dependencies: [2]
 // Exports: nextRevealLength, reconcileRevealedLength, safeRevealBoundary, wholeCharacterBoundary
 
-// Module 18375 (ConjureStreamReveal)
+// Module 18377 (ConjureStreamReveal)
 import size from "module_2" /* 2 */;
 
 function splitsCharacter(target, sum) {

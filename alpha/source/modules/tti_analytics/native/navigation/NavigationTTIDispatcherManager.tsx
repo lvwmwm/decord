@@ -1,11 +1,11 @@
-// Module ID: 20133
-// Function ID: 20134
+// Module ID: 20135
+// Function ID: 20136
 // Name: NavigationTTIDispatcherManager
-// Dependencies: [4762, 5964, 4816, 18169, 10427, 12818, 7484, 2]
+// Dependencies: [4762, 5964, 4816, 18171, 10427, 12818, 7484, 2]
 
-// Module 20133 (NavigationTTIDispatcherManager)
+// Module 20135 (NavigationTTIDispatcherManager)
 import NavigationSpanTrackerDefault from "NavigationSpanTracker" /* 10427 */;
-import navigationTTIEnabled from "navigationTTIEnabled" /* 18169 */;
+import navigationTTIEnabled from "navigationTTIEnabled" /* 18171 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
 import MessageStore from "MessageStore" /* 5964 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4816 */;

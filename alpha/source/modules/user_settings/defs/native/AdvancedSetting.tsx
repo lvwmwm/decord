@@ -1,9 +1,9 @@
-// Module ID: 16944
-// Function ID: 16945
+// Module ID: 16946
+// Function ID: 16947
 // Name: AdvancedSetting
-// Dependencies: [1071, 11937, 1112, 10371, 16945, 2]
+// Dependencies: [1071, 11937, 1112, 10371, 16947, 2]
 
-// Module 16944 (AdvancedSetting)
+// Module 16946 (AdvancedSetting)
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
 import SettingsIcon from "SettingsIcon" /* 10371 */;

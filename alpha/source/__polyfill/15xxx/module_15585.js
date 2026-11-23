@@ -6,13 +6,4 @@
 import _mod15586 from "module_15586" /* 15586 */;
 
 
-export default (arg0) => {
-  let num = 0;
-  {
-    num = 0;
-    if (0 !== +arg0) {
-      num = _mod15586(tmp);
-    }
-  }
-  return num;
-};
+export default (arg0) => _mod15586(arg0.length);

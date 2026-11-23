@@ -1,9 +1,9 @@
-// Module ID: 18037
-// Function ID: 18038
+// Module ID: 18039
+// Function ID: 18040
 // Name: VoicePanelDockButtonRim
 // Dependencies: [32, 19, 17, 11768, 21, 5477, 575, 7865, 1653, 5123, 13308, 2]
 
-// Module 18037 (VoicePanelDockButtonRim)
+// Module 18039 (VoicePanelDockButtonRim)
 import nativeDefault from "native" /* 575 */;
 import timing_timing from "timing/timing" /* 5123 */;
 import useToken from "useToken" /* 5477 */;

@@ -1,10 +1,10 @@
-// Module ID: 14770
-// Function ID: 14771
+// Module ID: 14772
+// Function ID: 14773
 // Name: GuildBoostingMarketingCtaBar
-// Dependencies: [32, 19, 17, 1386, 8744, 1071, 1388, 21, 1088, 4913, 575, 1186, 1653, 5123, 7520, 7539, 563, 14061, 8866, 8749, 2173, 1399, 14121, 14123, 5468, 14771, 5504, 1112, 7322, 7030, 14108, 13478, 14774, 14775, 5511, 6546, 9465, 14776, 9099, 2]
+// Dependencies: [32, 19, 17, 1386, 8744, 1071, 1388, 21, 1088, 4913, 575, 1186, 1653, 5123, 7520, 7539, 563, 14061, 8866, 8749, 2173, 1399, 14121, 14123, 5468, 14773, 5504, 1112, 7322, 7030, 14108, 13478, 14776, 14777, 5511, 6546, 9465, 14778, 9099, 2]
 // Exports: default
 
-// Module 14770 (GuildBoostingMarketingCtaBar)
+// Module 14772 (GuildBoostingMarketingCtaBar)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import DurationsDefault from "Durations" /* 1088 */;
@@ -184,7 +184,7 @@ export default function GuildBoostingMarketingCtaBar(premiumGroupRole) {
   obj8 = { angle: 0, angleCenter: { x: 0.5, y: 0.5 }, colors: ["rgba(0, 0, 0, 0.7)", "rgba(0, 0, 0, 0)"], locations: [0.12, 0.5], useAngle: true, style: tmp.gradient, children: items5 };
   items5 = [, , , ];
   tmp4Result3 = first(5468);
-  items5[0] = closure_12(first(14771), { guild });
+  items5[0] = closure_12(first(14773), { guild });
   const obj9 = { style: tmp.headerContent, children: items6 };
   const obj10 = { style: tmp.heading, color: "text-overlay-light", variant: "display-sm", children: intl.string(guild(1112).t["AF+Tyh"]) };
   const Heading = tmp7(5504).Heading;
@@ -234,9 +234,9 @@ export default function GuildBoostingMarketingCtaBar(premiumGroupRole) {
   items6[4] = closure_12(first(13478), obj20);
   items5[1] = closure_13(memo, obj9);
   const obj21 = { style: tmp.headerStars };
-  items5[2] = closure_12(first(14774), obj21);
+  items5[2] = closure_12(first(14776), obj21);
   const obj22 = { style: tmp.headerWave };
-  items5[3] = closure_12(first(14775), obj22);
+  items5[3] = closure_12(first(14777), obj22);
   const items14 = [closure_12(tmp4Result, obj7), ];
   const obj23 = { style: items15, children: closure_12(Button, obj26) };
   items15 = [, ];
@@ -260,7 +260,7 @@ export default function GuildBoostingMarketingCtaBar(premiumGroupRole) {
       grow: true
     };
     intl5 = tmp7(1112).intl;
-    obj25 = { size: guild(1186).Icon.Sizes.SMALL, source: first(14776), style: tmp.giftIcon };
+    obj25 = { size: guild(1186).Icon.Sizes.SMALL, source: first(14778), style: tmp.giftIcon };
     Icon2 = tmp7(1186).Icon;
     obj26 = obj24;
   } else {

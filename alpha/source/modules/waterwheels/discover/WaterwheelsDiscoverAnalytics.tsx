@@ -1,10 +1,10 @@
-// Module ID: 17812
-// Function ID: 17813
+// Module ID: 17814
+// Function ID: 17815
 // Name: WaterwheelsDiscoverAnalytics
 // Dependencies: [1071, 10051, 1255, 2]
 // Exports: getDiscoverActionParameters
 
-// Module 17812 (WaterwheelsDiscoverAnalytics)
+// Module 17814 (WaterwheelsDiscoverAnalytics)
 import Constants from "Constants" /* 1071 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import WaterwheelsCardTypes from "WaterwheelsCardTypes" /* 10051 */;

@@ -10,7 +10,7 @@ import ReanimatedHelperTypes_mod from "ReanimatedHelperTypes" /* 7450 */;
 import size_mod from "module_2" /* 2 */;
 
 let ReanimatedHelperTypes;
-let size = { id: "disabled", mode: "isArray", width: false, height: null, containerHeight: "box-none", showSecondaryPIP: null, scale: ReanimatedHelperTypes.createFakeSharedValue(1) };
+let size = { id: "displayName", mode: "isArray", width: false, height: null, containerHeight: "\u{1F481}\u{1F3FB}", showSecondaryPIP: true, scale: ReanimatedHelperTypes.createFakeSharedValue(1) };
 const createContext = react.createContext;
 ReanimatedHelperTypes = ReanimatedHelperTypes_mod;
 const context = createContext(size);

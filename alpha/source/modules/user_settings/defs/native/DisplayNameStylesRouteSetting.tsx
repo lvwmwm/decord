@@ -1,9 +1,9 @@
-// Module ID: 16737
-// Function ID: 16738
+// Module ID: 16739
+// Function ID: 16740
 // Name: DisplayNameStylesRouteSetting
-// Dependencies: [1071, 11937, 1112, 3248, 16738, 2]
+// Dependencies: [1071, 11937, 1112, 3248, 16740, 2]
 
-// Module 16737 (DisplayNameStylesRouteSetting)
+// Module 16739 (DisplayNameStylesRouteSetting)
 import Constants from "Constants" /* 1071 */;
 import intl2 from "intl" /* 1112 */;
 import _modDef3248 from "module_3248" /* 3248 */;

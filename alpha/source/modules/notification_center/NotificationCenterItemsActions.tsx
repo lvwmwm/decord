@@ -1,10 +1,10 @@
-// Module ID: 18051
-// Function ID: 18052
+// Module ID: 18053
+// Function ID: 18054
 // Name: NotificationCenterItemsActions
 // Dependencies: [5, 6636, 1071, 572, 6432, 1263, 4774, 6638, 1284, 4738, 2]
 // Exports: bulkMarkNotificationCenterItemsAcked, deleteNotificationCenterItem, fetchNotificationCenterItems, markNotificationCenterItemAcked, markNotificationCenterLocalItemsAcked, markNotificationCenterMentionAcked, resetNotificationCenter, setNotificationCenterActive, setNotificationCenterTabFocused
 
-// Module 18051 (NotificationCenterItemsActions)
+// Module 18053 (NotificationCenterItemsActions)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import Constants from "Constants" /* 1071 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1263 */;

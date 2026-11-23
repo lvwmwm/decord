@@ -1,12 +1,12 @@
-// Module ID: 19722
-// Function ID: 19723
+// Module ID: 19724
+// Function ID: 19725
 // Name: getActionInfo
-// Dependencies: [12408, 7231, 7681, 12397, 13351, 19723, 2]
+// Dependencies: [12408, 7231, 7681, 12397, 13351, 19725, 2]
 // Exports: getActionInfo
 
-// Module 19722 (getActionInfo)
+// Module 19724 (getActionInfo)
 import Constants from "Constants" /* 12408 */;
-import BaseActionInfo from "BaseActionInfo" /* 19723 */;
+import BaseActionInfo from "BaseActionInfo" /* 19725 */;
 import size from "module_2" /* 2 */;
 
 const AutomodActionType = Constants.AutomodActionType;

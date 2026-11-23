@@ -1,20 +1,20 @@
-// Module ID: 18471
-// Function ID: 18472
+// Module ID: 18473
+// Function ID: 18474
 // Name: ConjureMessageAuthor
-// Dependencies: [19, 17, 21, 4913, 575, 18459, 18472, 5504, 7030, 1112, 11977, 4969, 18473, 4190, 1186, 5600, 18476, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 18461, 18474, 5504, 7030, 1112, 11977, 4969, 18475, 4190, 1186, 5600, 18478, 2]
 // Exports: ConjureAvatar, ConjureHeader, ConjureUserAvatar, ConjureUserHeader
 
-// Module 18471 (ConjureMessageAuthor)
+// Module 18473 (ConjureMessageAuthor)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
 import _modDef4190 from "module_4190" /* 4190 */;
 import Text_Text from "Text/Text" /* 5504 */;
 import FastImageDefault from "FastImage" /* 5600 */;
-import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 18459 */;
-import ConjureMessageTime from "ConjureMessageTime" /* 18472 */;
-import ConjureMessageActionSheet from "ConjureMessageActionSheet" /* 18473 */;
-import AssetRegistryDefault from "AssetRegistry" /* 18476 */;
+import ConjureNativeStatusLine from "ConjureNativeStatusLine" /* 18461 */;
+import ConjureMessageTime from "ConjureMessageTime" /* 18474 */;
+import ConjureMessageActionSheet from "ConjureMessageActionSheet" /* 18475 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18478 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;

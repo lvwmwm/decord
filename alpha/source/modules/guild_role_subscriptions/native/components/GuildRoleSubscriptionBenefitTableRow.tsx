@@ -1,19 +1,19 @@
-// Module ID: 20033
-// Function ID: 20034
+// Module ID: 20035
+// Function ID: 20036
 // Name: GuildRoleSubscriptionBenefitTableRow
-// Dependencies: [19, 17, 16608, 21, 4913, 575, 16634, 5529, 5504, 1112, 16645, 7045, 16642, 2]
+// Dependencies: [19, 17, 16610, 21, 4913, 575, 16636, 5529, 5504, 1112, 16647, 7045, 16644, 2]
 // Exports: default
 
-// Module 20033 (GuildRoleSubscriptionBenefitTableRow)
+// Module 20035 (GuildRoleSubscriptionBenefitTableRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import intl2 from "intl" /* 1112 */;
 import Text_Text from "Text/Text" /* 5504 */;
 import TableRow2 from "TableRow" /* 7045 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16608 */;
-import GuildRoleSubscriptionTierTemplatesUtils from "GuildRoleSubscriptionTierTemplatesUtils" /* 16634 */;
-import EmojiIconDefault from "EmojiIcon" /* 16642 */;
-import GuildRoleSubscriptionBenefitUtils from "GuildRoleSubscriptionBenefitUtils" /* 16645 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16610 */;
+import GuildRoleSubscriptionTierTemplatesUtils from "GuildRoleSubscriptionTierTemplatesUtils" /* 16636 */;
+import EmojiIconDefault from "EmojiIcon" /* 16644 */;
+import GuildRoleSubscriptionBenefitUtils from "GuildRoleSubscriptionBenefitUtils" /* 16647 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles from "createStyles" /* 4913 */;

@@ -1,10 +1,10 @@
-// Module ID: 19308
-// Function ID: 19309
+// Module ID: 19310
+// Function ID: 19311
 // Name: voiceChannelAppLayerLayout
 // Dependencies: [11753, 11748, 11755, 2]
 // Exports: getVoiceChannelAppLayerInsets, shouldRestoreVoiceChannelAppControls
 
-// Module 19308 (voiceChannelAppLayerLayout)
+// Module 19310 (voiceChannelAppLayerLayout)
 import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11748 */;
 import VoicePanelCardConstants from "VoicePanelCardConstants" /* 11753 */;
 import calculateVoicePanelHeaderSpecsDefault from "calculateVoicePanelHeaderSpecs" /* 11755 */;

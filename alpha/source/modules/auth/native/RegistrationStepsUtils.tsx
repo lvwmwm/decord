@@ -1,10 +1,10 @@
-// Module ID: 17447
-// Function ID: 17448
+// Module ID: 17449
+// Function ID: 17450
 // Name: RegistrationStepsUtils
-// Dependencies: [5, 19, 16004, 6426, 17448, 17449, 1071, 21, 1263, 17450, 17457, 17458, 17470, 17471, 17477, 7369, 17479, 17480, 7425, 7422, 17484, 17485, 17491, 17492, 1501, 2152, 17460, 6349, 7376, 17499, 2]
+// Dependencies: [5, 19, 16006, 6426, 17450, 17451, 1071, 21, 1263, 17452, 17459, 17460, 17472, 17473, 17479, 7369, 17481, 17482, 7425, 7422, 17486, 17487, 17493, 17494, 1501, 2152, 17462, 6349, 7376, 17501, 2]
 // Exports: getAllAuthScreens, getNextRegistrationTransitionStep, getPreviousAuthState, getPreviousRegistrationTransitionStep, getRegistrationSteps, handleNextOrSubmitRegistration
 
-// Module 17447 (RegistrationStepsUtils)
+// Module 17449 (RegistrationStepsUtils)
 import Fragment from "Fragment" /* 21 */;
 import Constants from "Constants" /* 1071 */;
 import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1263 */;
@@ -12,24 +12,24 @@ import Link from "Link" /* 1501 */;
 import StringUtils from "StringUtils" /* 2152 */;
 import PromoEmailConsentStore from "PromoEmailConsentStore" /* 6426 */;
 import LoginDefault from "Login" /* 7369 */;
-import WelcomeDefault from "Welcome" /* 17450 */;
-import RegistrationUtils from "RegistrationUtils" /* 17457 */;
-import RegisterIdentity from "RegisterIdentity" /* 17458 */;
-import register from "register" /* 17460 */;
-import RegisterDisplayNameDefault from "RegisterDisplayName" /* 17470 */;
-import RegisterAccountInformationDefault from "RegisterAccountInformation" /* 17471 */;
-import VerifyPhoneDefault from "VerifyPhone" /* 17477 */;
-import components_MFADefault from "components/MFA" /* 17479 */;
-import AccountDisabledOrDeletionScheduledDefault from "AccountDisabledOrDeletionScheduled" /* 17480 */;
-import ExternalLinkDefault from "ExternalLink" /* 17484 */;
-import RegisterAgeGateDefault from "RegisterAgeGate" /* 17485 */;
-import AgeGateUnderageDefault from "AgeGateUnderage" /* 17491 */;
-import CompanionRemoteAuth from "CompanionRemoteAuth" /* 17492 */;
+import WelcomeDefault from "Welcome" /* 17452 */;
+import RegistrationUtils from "RegistrationUtils" /* 17459 */;
+import RegisterIdentity from "RegisterIdentity" /* 17460 */;
+import register from "register" /* 17462 */;
+import RegisterDisplayNameDefault from "RegisterDisplayName" /* 17472 */;
+import RegisterAccountInformationDefault from "RegisterAccountInformation" /* 17473 */;
+import VerifyPhoneDefault from "VerifyPhone" /* 17479 */;
+import components_MFADefault from "components/MFA" /* 17481 */;
+import AccountDisabledOrDeletionScheduledDefault from "AccountDisabledOrDeletionScheduled" /* 17482 */;
+import ExternalLinkDefault from "ExternalLink" /* 17486 */;
+import RegisterAgeGateDefault from "RegisterAgeGate" /* 17487 */;
+import AgeGateUnderageDefault from "AgeGateUnderage" /* 17493 */;
+import CompanionRemoteAuth from "CompanionRemoteAuth" /* 17494 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import UniqueUsernamesStore from "UniqueUsernamesStore" /* 16004 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 17448 */;
-import RegistrationConstants from "RegistrationConstants" /* 17449 */;
+import UniqueUsernamesStore from "UniqueUsernamesStore" /* 16006 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 17450 */;
+import RegistrationConstants from "RegistrationConstants" /* 17451 */;
 import size from "module_2" /* 2 */;
 
 let c3, c4, c7, c8, state;

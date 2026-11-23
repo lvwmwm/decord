@@ -1,9 +1,9 @@
-// Module ID: 15695
-// Function ID: 15696
+// Module ID: 15697
+// Function ID: 15698
 // Name: images
 // Dependencies: [1386, 6354, 1071, 10801, 1412, 6909, 1491, 2]
 
-// Module 15695 (images)
+// Module 15697 (images)
 import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
 import ImageUtils from "ImageUtils" /* 1491 */;
 import Constants2 from "Constants" /* 6354 */;

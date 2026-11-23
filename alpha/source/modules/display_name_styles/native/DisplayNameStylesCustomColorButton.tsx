@@ -1,15 +1,15 @@
-// Module ID: 16753
-// Function ID: 16754
+// Module ID: 16755
+// Function ID: 16756
 // Name: DisplayNameStylesCustomColorButton
-// Dependencies: [19, 17, 21, 4913, 575, 1089, 16754, 1112, 15866, 16755, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 1089, 16756, 1112, 15868, 16757, 2]
 // Exports: default
 
-// Module 16753 (DisplayNameStylesCustomColorButton)
+// Module 16755 (DisplayNameStylesCustomColorButton)
 import nativeDefault from "native" /* 575 */;
 import utils_ColorUtils from "utils/ColorUtils" /* 1089 */;
 import intl2 from "intl" /* 1112 */;
-import useCustomSwatchA11yDefault from "useCustomSwatchA11y" /* 16754 */;
-import EyeDropperIcon2 from "EyeDropperIcon" /* 16755 */;
+import useCustomSwatchA11yDefault from "useCustomSwatchA11y" /* 16756 */;
+import EyeDropperIcon2 from "EyeDropperIcon" /* 16757 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
@@ -93,7 +93,7 @@ export default function DisplayNameStylesCustomColorButton(onPress) {
   }
   if (showGummyStripes) {
     const obj2 = { colors: activeColors };
-    showGummyStripes = metroRequire(tmp6(15866), obj2);
+    showGummyStripes = metroRequire(tmp6(15868), obj2);
   }
   items1 = [showGummyStripes, , ];
   const items2 = [tmpResult.border, ];

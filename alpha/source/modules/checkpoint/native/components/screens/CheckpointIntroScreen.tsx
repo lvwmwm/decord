@@ -62,7 +62,7 @@ export default function CheckpointIntroScreen(onCharacterBottomInsetChange) {
   let tmp18;
   let tmp19;
   let useReducedMotion;
-  const f102426 = () => useReducedMotion.useReducedMotion;
+  const f102401 = () => useReducedMotion.useReducedMotion;
   const _require = onCharacterBottomInsetChange.onCharacterBottomInsetChange;
   let landscapeContainer;
   let ref;
@@ -78,8 +78,8 @@ export default function CheckpointIntroScreen(onCharacterBottomInsetChange) {
   const tmp8 = landscapeContainer(ref[9])();
   let obj = require("get initialized");
   let items = [AccessibilityStore];
-  [tmp11, c3] = react.useState(obj.useStateFromStores(items, f102426));
-  _slicedToArray(react.useState(obj.useStateFromStores(items, f102426)), 2);
+  [tmp11, c3] = react.useState(obj.useStateFromStores(items, f102401));
+  _slicedToArray(react.useState(obj.useStateFromStores(items, f102401)), 2);
   const effect = react.useEffect(() => {
     const timeout = setTimeout(() => closure_1_3(true), closure_1_9);
     return () => clearTimeout(closure_0);

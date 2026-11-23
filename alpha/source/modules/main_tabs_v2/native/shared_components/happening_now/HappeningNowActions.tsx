@@ -1,10 +1,10 @@
-// Module ID: 17612
-// Function ID: 17613
+// Module ID: 17614
+// Function ID: 17615
 // Name: HappeningNowActions
-// Dependencies: [19, 17, 4843, 4784, 4816, 16699, 1071, 21, 4913, 575, 1255, 7746, 17613, 1112, 7994, 17614, 8051, 17615, 13162, 13727, 16700, 5600, 5504, 2]
+// Dependencies: [19, 17, 4843, 4784, 4816, 16701, 1071, 21, 4913, 575, 1255, 7746, 17615, 1112, 7994, 17616, 8051, 17617, 13162, 13727, 16702, 5600, 5504, 2]
 // Exports: HappeningNowCardCreateChannel, HappeningNowCardCustomizeGuild, HappeningNowCardInvite, HappeningNowStudentHubAddServer
 
-// Module 17612 (HappeningNowActions)
+// Module 17614 (HappeningNowActions)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
@@ -15,15 +15,15 @@ import GuildSettingsActionCreatorsDefault from "GuildSettingsActionCreators" /* 
 import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8051 */;
 import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 13162 */;
 import AssetRegistryDefault from "AssetRegistry" /* 13727 */;
-import HappeningNowCardDefault from "HappeningNowCard" /* 16700 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 17613 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 17614 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 17615 */;
+import HappeningNowCardDefault from "HappeningNowCard" /* 16702 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 17615 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 17616 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 17617 */;
 import react from "react" /* 19 */;
 import GuildChannelStore from "GuildChannelStore" /* 4843 */;
 import GuildStore from "GuildStore" /* 4784 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4816 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 16699 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 16701 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;

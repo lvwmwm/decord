@@ -1,15 +1,15 @@
-// Module ID: 17186
-// Function ID: 17187
+// Module ID: 17188
+// Function ID: 17189
 // Name: BugReporterSetting
-// Dependencies: [11169, 6429, 11170, 2119, 11210, 11937, 1112, 17187, 2]
+// Dependencies: [11169, 6429, 11170, 2119, 11210, 11937, 1112, 17189, 2]
 // Exports: useBugReporterExperimentSettingPredicate
 
-// Module 17186 (BugReporterSetting)
+// Module 17188 (BugReporterSetting)
 import intl2 from "intl" /* 1112 */;
 import asyncRequire from "asyncRequire" /* 2119 */;
 import ModalActionCreatorsDefault from "ModalActionCreators" /* 6429 */;
 import BugReporterExperimentDefault from "BugReporterExperiment" /* 11210 */;
-import BugIcon from "BugIcon" /* 17187 */;
+import BugIcon from "BugIcon" /* 17189 */;
 import BugReportStore from "BugReportStore" /* 11169 */;
 import SettingBuilders from "SettingBuilders" /* 11937 */;
 import size from "module_2" /* 2 */;

@@ -1,10 +1,10 @@
-// Module ID: 19060
-// Function ID: 19061
+// Module ID: 19062
+// Function ID: 19063
 // Name: RobloxConnectionCoachmark
-// Dependencies: [32, 19, 17, 6689, 1386, 14991, 1071, 4759, 21, 4913, 575, 4974, 1628, 5127, 5141, 7515, 7554, 5929, 7022, 5504, 1112, 5511, 10139, 7024, 8194, 4935, 6691, 1412, 1186, 504, 14992, 7068, 4945, 4746, 2]
+// Dependencies: [32, 19, 17, 6689, 1386, 14993, 1071, 4759, 21, 4913, 575, 4974, 1628, 5127, 5141, 7515, 7554, 5929, 7022, 5504, 1112, 5511, 10139, 7024, 8194, 4935, 6691, 1412, 1186, 504, 14994, 7068, 4945, 4746, 2]
 // Exports: default, useShouldShowRobloxConnectionCoachmark
 
-// Module 19060 (RobloxConnectionCoachmark)
+// Module 19062 (RobloxConnectionCoachmark)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
@@ -23,7 +23,7 @@ import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6689 */;
 import UserStore from "UserStore" /* 1386 */;
-import LocalAppDetectionStore from "LocalAppDetectionStore" /* 14991 */;
+import LocalAppDetectionStore from "LocalAppDetectionStore" /* 14993 */;
 import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
 import createStyles_mod from "createStyles" /* 4913 */;

@@ -1,10 +1,10 @@
-// Module ID: 14771
-// Function ID: 14772
+// Module ID: 14773
+// Function ID: 14774
 // Name: GuildPowerupsMarketingHeader
-// Dependencies: [19, 17, 8331, 21, 4913, 575, 671, 5504, 14772, 13377, 13402, 1112, 2856, 14773, 2]
+// Dependencies: [19, 17, 8331, 21, 4913, 575, 671, 5504, 14774, 13377, 13402, 1112, 2856, 14775, 2]
 // Exports: default
 
-// Module 14771 (GuildPowerupsMarketingHeader)
+// Module 14773 (GuildPowerupsMarketingHeader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
@@ -12,8 +12,8 @@ import _modDef671 from "module_671" /* 671 */;
 import Text_Text from "Text/Text" /* 5504 */;
 import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 13377 */;
 import useHasAllocateBoostPermissionDefault from "useHasAllocateBoostPermission" /* 13402 */;
-import useMarketablePowerupPerksDefault from "useMarketablePowerupPerks" /* 14772 */;
-import orderMarketablePerksForDisplayDefault from "orderMarketablePerksForDisplay" /* 14773 */;
+import useMarketablePowerupPerksDefault from "useMarketablePowerupPerks" /* 14774 */;
+import orderMarketablePerksForDisplayDefault from "orderMarketablePerksForDisplay" /* 14775 */;
 import react from "react" /* 19 */;
 import GuildPowerupsStore from "GuildPowerupsStore" /* 8331 */;
 import createStyles_mod from "createStyles" /* 4913 */;

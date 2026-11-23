@@ -1,10 +1,10 @@
-// Module ID: 19228
-// Function ID: 19229
+// Module ID: 19230
+// Function ID: 19231
 // Name: useIsVoicePanelParticipantFocusable
 // Dependencies: [4761, 6620, 6400, 2131, 5563, 10739, 1254, 504, 2]
 // Exports: default
 
-// Module 19228 (useIsVoicePanelParticipantFocusable)
+// Module 19230 (useIsVoicePanelParticipantFocusable)
 import GlobalUtils from "GlobalUtils" /* 1254 */;
 import participantHasVideo from "participantHasVideo" /* 10739 */;
 import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4761 */;

@@ -1,10 +1,10 @@
-// Module ID: 17698
-// Function ID: 17699
+// Module ID: 17700
+// Function ID: 17701
 // Name: useGuildHasLiveChannelNotice
-// Dependencies: [19, 6534, 4767, 6400, 4762, 4845, 5657, 17699, 4768, 1082, 17700, 504, 8017, 17701, 6543, 6537, 2]
+// Dependencies: [19, 6534, 4767, 6400, 4762, 4845, 5657, 17701, 4768, 1082, 17702, 504, 8017, 17703, 6543, 6537, 2]
 // Exports: useGuildHasLiveChannelNotice, useGuildLiveChannelNoticeInfo
 
-// Module 17698 (useGuildHasLiveChannelNotice)
+// Module 17700 (useGuildHasLiveChannelNotice)
 import Constants from "Constants" /* 1082 */;
 import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4768 */;
 import StageChannelParticipants from "StageChannelParticipants" /* 6537 */;
@@ -15,7 +15,7 @@ import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6400 */;
 import ChannelStore from "ChannelStore" /* 4762 */;
 import PermissionStore from "PermissionStore" /* 4845 */;
 import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5657 */;
-import LiveChannelNoticesStore from "LiveChannelNoticesStore" /* 17699 */;
+import LiveChannelNoticesStore from "LiveChannelNoticesStore" /* 17701 */;
 import size from "module_2" /* 2 */;
 
 let closure_11 = GuildScheduledEventsConstants.GuildScheduledEventEntityTypes;

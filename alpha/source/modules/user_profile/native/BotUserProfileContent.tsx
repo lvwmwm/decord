@@ -1,7 +1,7 @@
 // Module ID: 14414
 // Function ID: 14415
 // Name: BotUserProfileContent
-// Dependencies: [19, 17, 1386, 7564, 5142, 21, 8197, 8183, 8199, 1628, 8135, 504, 5943, 4969, 14415, 12999, 13014, 12387, 8198, 14199, 8180, 8191, 7545, 5594, 8200, 1653, 14416, 8212, 9051, 5127, 14198, 2119, 14200, 1112, 14441, 14444, 10684, 14445, 5511, 7672, 575, 6429, 7737, 14446, 14211, 7542, 14510, 14513, 2]
+// Dependencies: [19, 17, 1386, 7564, 5142, 21, 8197, 8183, 8199, 1628, 8135, 504, 5943, 4969, 14415, 12999, 13014, 12387, 8198, 14199, 8180, 8191, 7545, 5594, 8200, 1653, 14416, 8212, 9051, 5127, 14198, 2119, 14200, 1112, 14441, 14444, 10684, 14445, 5511, 7672, 575, 6429, 7737, 14446, 14211, 7542, 14512, 14515, 2]
 
 // Module 14414 (BotUserProfileContent)
 import react_native from "react-native" /* 17 */;
@@ -262,7 +262,7 @@ const memoResult = react.memo(function BotUserProfileContent(user) {
           const items10 = [closure_9(tmp(7542), obj25), ];
           const obj26 = { user, currentUser: stateFromStores, guildId: guild_id, channelId: id1, showUserProfile: showUserProfileActionSheet, style: items8 };
           id1 = undefined;
-          const tmpResult12 = tmp(14510);
+          const tmpResult12 = tmp(14512);
           if (channel != null) {
             id1 = channel.id;
           }
@@ -272,7 +272,7 @@ const memoResult = react.memo(function BotUserProfileContent(user) {
         }
         items9[2] = tmp42Result;
         const obj28 = { userId: user.id, onBack: showUserProfileActionSheet };
-        items9[3] = closure_9(tmp(14513), obj28);
+        items9[3] = closure_9(tmp(14515), obj28);
         tmp42Result2 = tmp42(tmp29, obj22);
       }
       const obj29 = { children: items2 };

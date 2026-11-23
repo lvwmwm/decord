@@ -1,10 +1,10 @@
-// Module ID: 18586
-// Function ID: 18587
+// Module ID: 18588
+// Function ID: 18589
 // Name: useConjureClarificationLinks
-// Dependencies: [5, 32, 19, 6621, 18423, 18327, 504, 6622, 18333, 2]
+// Dependencies: [5, 32, 19, 6621, 18425, 18329, 504, 6622, 18335, 2]
 // Exports: default
 
-// Module 18586 (useConjureClarificationLinks)
+// Module 18588 (useConjureClarificationLinks)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

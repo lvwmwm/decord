@@ -1,10 +1,10 @@
-// Module ID: 16541
-// Function ID: 16542
+// Module ID: 16543
+// Function ID: 16544
 // Name: useVideoExternallyPaused
 // Dependencies: [5128, 8660, 5089, 10615, 504, 5862, 1378, 2]
 // Exports: useVideoExternallyPaused
 
-// Module 16541 (useVideoExternallyPaused)
+// Module 16543 (useVideoExternallyPaused)
 import get_initialized from "get initialized" /* 504 */;
 import PlatformUtils from "PlatformUtils" /* 1378 */;
 import NavigationRouteUtils from "NavigationRouteUtils" /* 5089 */;

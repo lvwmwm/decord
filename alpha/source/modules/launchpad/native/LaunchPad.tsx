@@ -1,9 +1,9 @@
-// Module ID: 19121
-// Function ID: 19122
+// Module ID: 19123
+// Function ID: 19124
 // Name: LaunchPad
-// Dependencies: [32, 19, 17, 5128, 8319, 6653, 6618, 4766, 502, 4762, 8423, 6664, 4784, 15031, 6619, 6550, 6552, 5561, 1071, 21, 575, 4913, 7030, 5504, 504, 1653, 5098, 1706, 7427, 1112, 14465, 11239, 16996, 1378, 15821, 13872, 10069, 5089, 10070, 10063, 1494, 1628, 10064, 13743, 1255, 19122, 19129, 17192, 19142, 19143, 2]
+// Dependencies: [32, 19, 17, 5128, 8319, 6653, 6618, 4766, 502, 4762, 8423, 6664, 4784, 15033, 6619, 6550, 6552, 5561, 1071, 21, 575, 4913, 7030, 5504, 504, 1653, 5098, 1706, 7427, 1112, 14465, 11239, 16998, 1378, 15823, 13872, 10069, 5089, 10070, 10063, 1494, 1628, 10064, 13743, 1255, 19124, 19131, 17194, 19144, 19145, 2]
 
-// Module 19121 (LaunchPad)
+// Module 19123 (LaunchPad)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
@@ -26,7 +26,7 @@ import ChannelStore from "ChannelStore" /* 4762 */;
 import DeveloperExperimentStore from "DeveloperExperimentStore" /* 8423 */;
 import GuildReadStateStore from "GuildReadStateStore" /* 6664 */;
 import GuildStore from "GuildStore" /* 4784 */;
-import PrivateChannelReadStateStore from "PrivateChannelReadStateStore" /* 15031 */;
+import PrivateChannelReadStateStore from "PrivateChannelReadStateStore" /* 15033 */;
 import ReadStateStore from "ReadStateStore" /* 6619 */;
 import SortedGuildStore from "SortedGuildStore" /* 6550 */;
 import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6552 */;
@@ -53,7 +53,7 @@ let obj3;
 let obj4;
 let size;
 let tmp;
-const DevToolsNavigator = tmp(15821);
+const DevToolsNavigator = tmp(15823);
 function TabButton(selected) {
   let accessibilityLabel;
   let colors;

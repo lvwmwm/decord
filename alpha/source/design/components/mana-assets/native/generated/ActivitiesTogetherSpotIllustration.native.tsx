@@ -1,26 +1,26 @@
-// Module ID: 17573
-// Function ID: 17574
+// Module ID: 17575
+// Function ID: 17576
 // Name: ActivitiesTogetherSpotIllustration
-// Dependencies: [19, 21, 17574, 17575, 17576, 7357, 5600, 2]
+// Dependencies: [19, 21, 17576, 17577, 17578, 7357, 5600, 2]
 // Exports: ActivitiesTogetherSpotIllustration
 
-// Module 17573 (ActivitiesTogetherSpotIllustration)
+// Module 17575 (ActivitiesTogetherSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
 import react_native from "react-native" /* 7357 */;
-import _modDef17574 from "module_17574" /* 17574 */;
-import _modDef17575 from "module_17575" /* 17575 */;
 import _modDef17576 from "module_17576" /* 17576 */;
+import _modDef17577 from "module_17577" /* 17577 */;
+import _modDef17578 from "module_17578" /* 17578 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef17574 };
+let obj2 = { uri: _modDef17576 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef17575 };
+let obj3 = { uri: _modDef17577 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef17576 };
-({ uri: _modDef17576 });
+obj[3] = { uri: _modDef17578 };
+({ uri: _modDef17578 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/ActivitiesTogetherSpotIllustration.native.tsx");
 

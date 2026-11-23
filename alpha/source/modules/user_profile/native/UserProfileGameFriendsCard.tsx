@@ -1,10 +1,10 @@
-// Module ID: 14597
-// Function ID: 14598
+// Module ID: 14599
+// Function ID: 14600
 // Name: UserProfileGameFriendsCard
 // Dependencies: [19, 21, 4913, 6864, 1112, 13538, 7563, 5504, 2]
 // Exports: default
 
-// Module 14597 (UserProfileGameFriendsCard)
+// Module 14599 (UserProfileGameFriendsCard)
 import Fragment from "Fragment" /* 21 */;
 import useGetOrFetchApplicationsDefault from "useGetOrFetchApplications" /* 6864 */;
 import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 13538 */;

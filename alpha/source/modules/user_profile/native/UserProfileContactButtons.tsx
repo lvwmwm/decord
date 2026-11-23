@@ -1,10 +1,10 @@
-// Module ID: 14633
-// Function ID: 14634
+// Module ID: 14635
+// Function ID: 14636
 // Name: UserProfileContactButtons
-// Dependencies: [19, 17, 4855, 1071, 21, 4913, 575, 5511, 7520, 8135, 14524, 504, 4969, 14634, 5603, 1112, 10247, 7740, 12108, 5127, 6429, 7737, 14636, 7591, 7672, 8612, 14374, 2]
+// Dependencies: [19, 17, 4855, 1071, 21, 4913, 575, 5511, 7520, 8135, 14526, 504, 4969, 14636, 5603, 1112, 10247, 7740, 12108, 5127, 6429, 7737, 14638, 7591, 7672, 8612, 14374, 2]
 // Exports: default
 
-// Module 14633 (UserProfileContactButtons)
+// Module 14635 (UserProfileContactButtons)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
@@ -72,7 +72,7 @@ function FriendRequestButton(user) {
     _location = newestAnalyticsLocation;
   }
   dependencyMap = { location: _location };
-  const tmp3Result = user(14524);
+  const tmp3Result = user(14526);
   const gameFriendsForUser = tmp3Result.useGameFriendsForUser(user.id);
   const items = [userDisplayName];
   const tmp3Result2 = user(504);
@@ -90,7 +90,7 @@ function FriendRequestButton(user) {
         let stringResult;
         let string2Result;
         if (stateFromStores === RelationshipTypes.PENDING_OUTGOING) {
-          UserPlusIcon = tmp3(14634).UserClockIcon;
+          UserPlusIcon = tmp3(14636).UserClockIcon;
         } else {
           UserPlusIcon = tmp3(5603).UserPlusIcon;
         }

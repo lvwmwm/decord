@@ -1,10 +1,10 @@
-// Module ID: 19440
-// Function ID: 19441
+// Module ID: 19442
+// Function ID: 19443
 // Name: AutomodRemovedContentManager
-// Dependencies: [5964, 4816, 19441, 7484, 2]
+// Dependencies: [5964, 4816, 19443, 7484, 2]
 
-// Module 19440 (AutomodRemovedContentManager)
-import AutomodRemovedContentActionCreators from "AutomodRemovedContentActionCreators" /* 19441 */;
+// Module 19442 (AutomodRemovedContentManager)
+import AutomodRemovedContentActionCreators from "AutomodRemovedContentActionCreators" /* 19443 */;
 import MessageStore from "MessageStore" /* 5964 */;
 import SelectedChannelStore from "SelectedChannelStore" /* 4816 */;
 import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7484 */;

@@ -1,10 +1,10 @@
-// Module ID: 17319
-// Function ID: 17320
+// Module ID: 17321
+// Function ID: 17322
 // Name: PersonalizationDisclaimerActionSheet
 // Dependencies: [19, 1071, 21, 4913, 575, 5592, 2187, 5141, 5504, 1112, 6545, 5511, 12434, 5127, 2]
 // Exports: default
 
-// Module 17319 (PersonalizationDisclaimerActionSheet)
+// Module 17321 (PersonalizationDisclaimerActionSheet)
 import nativeDefault from "native" /* 575 */;
 import Constants from "Constants" /* 1071 */;
 import intl4 from "intl" /* 1112 */;

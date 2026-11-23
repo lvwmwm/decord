@@ -1,15 +1,15 @@
-// Module ID: 19519
-// Function ID: 19520
+// Module ID: 19521
+// Function ID: 19522
 // Name: GuildPowerupsManager
-// Dependencies: [4784, 4845, 4946, 8331, 7484, 4787, 6890, 13386, 13387, 13402, 17681, 5848, 13377, 8746, 2]
+// Dependencies: [4784, 4845, 4946, 8331, 7484, 4787, 6890, 13386, 13387, 13402, 17683, 5848, 13377, 8746, 2]
 
-// Module 19519 (GuildPowerupsManager)
+// Module 19521 (GuildPowerupsManager)
 import FavoritesUtils from "FavoritesUtils" /* 4787 */;
 import shared_PlatformUtils from "shared/PlatformUtils" /* 5848 */;
 import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 8746 */;
 import GuildPowerupsActionCreators from "GuildPowerupsActionCreators" /* 13377 */;
 import useHasAllocateBoostPermission from "useHasAllocateBoostPermission" /* 13402 */;
-import useIsCurrentUserEligibleForPowerupUpsells from "useIsCurrentUserEligibleForPowerupUpsells" /* 17681 */;
+import useIsCurrentUserEligibleForPowerupUpsells from "useIsCurrentUserEligibleForPowerupUpsells" /* 17683 */;
 import GuildStore from "GuildStore" /* 4784 */;
 import PermissionStore from "PermissionStore" /* 4845 */;
 import SelectedGuildStore from "SelectedGuildStore" /* 4946 */;

@@ -1,9 +1,9 @@
-// Module ID: 19317
-// Function ID: 19318
+// Module ID: 19319
+// Function ID: 19320
 // Name: VoicePanelDockPIPOverlay
-// Dependencies: [32, 19, 17, 4914, 1386, 5658, 21, 1653, 4913, 575, 5517, 7324, 11040, 5679, 5817, 19318, 7034, 14502, 1112, 11749, 5123, 1706, 11759, 10598, 504, 1186, 9036, 19200, 7152, 10953, 7035, 16353, 3376, 2]
+// Dependencies: [32, 19, 17, 4914, 1386, 5658, 21, 1653, 4913, 575, 5517, 7324, 11040, 5679, 5817, 19320, 7034, 14502, 1112, 11749, 5123, 1706, 11759, 10598, 504, 1186, 9036, 19202, 7152, 10953, 7035, 16355, 3376, 2]
 
-// Module 19317 (VoicePanelDockPIPOverlay)
+// Module 19319 (VoicePanelDockPIPOverlay)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _mod1653 from "module_1653" /* 1653 */;
@@ -60,7 +60,7 @@ function StreamVolumeSlider(stacked) {
   handleVolumeChange = tmp4Result.handleVolumeChange;
   const items = [handleVolumeChange];
   const effectiveVolume = tmp4Result.effectiveVolume;
-  let obj = { Icon: handleVolumeChange(19318).VoiceLowIcon };
+  let obj = { Icon: handleVolumeChange(19320).VoiceLowIcon };
   const callback = react.useCallback((arg0) => {
     const obj = PerceptualVolumeUtils;
     return handleVolumeChange(obj.perceptualToAmplitude(arg0));
@@ -313,7 +313,7 @@ const memoResult = react.memo(function VoicePanelDockPIPOverlay(ownerId) {
       const obj9 = { pointerEvents: "none", children: tmp29Result4 };
       items10 = [closure_9(tmp2Result8, obj9), ];
       const obj10 = { icon: tmp2("video" === kind ? 7152 : 10953), onPress: onStopWatching, accessibilityLabel: stringResult };
-      const tmp2Result9 = tmp2(19200);
+      const tmp2Result9 = tmp2(19202);
       const intl = tmp12(1112).intl;
       const string = intl.string;
       const t = tmp12(1112).t;
@@ -336,14 +336,14 @@ const memoResult = react.memo(function VoicePanelDockPIPOverlay(ownerId) {
       let tmp29Result5 = null;
       if ("video" !== kind) {
         const obj12 = { icon: tmp2(7035), onPress: onToggleVolume, accessibilityLabel: intl2.string(ownerId(1112).t.pEAl4b) };
-        const tmp2Result11 = tmp2(19200);
+        const tmp2Result11 = tmp2(19202);
         intl2 = tmp12(1112).intl;
         tmp29Result5 = tmp29(tmp2Result11, obj12);
       }
       items13 = [tmp29Result5, ];
       const obj13 = { children: items11 };
-      const obj14 = { icon: tmp2(16353), onPress: onOpenCall, accessibilityLabel: intl3.string(tmp2(3376).MPtef8) };
-      const tmp2Result12 = tmp2(19200);
+      const obj14 = { icon: tmp2(16355), onPress: onOpenCall, accessibilityLabel: intl3.string(tmp2(3376).MPtef8) };
+      const tmp2Result12 = tmp2(19202);
       intl3 = tmp12(1112).intl;
       items13[1] = closure_9(tmp2Result12, obj14);
       items11[1] = closure_10(tmp2Result10, obj11);

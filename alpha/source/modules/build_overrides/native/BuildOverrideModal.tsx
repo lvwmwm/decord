@@ -1,10 +1,10 @@
-// Module ID: 15083
-// Function ID: 15084
+// Module ID: 15085
+// Function ID: 15086
 // Name: BuildOverrideModal
-// Dependencies: [19, 17, 11894, 21, 4913, 575, 5122, 4920, 15084, 15085, 504, 12227, 2168, 7017, 5600, 5504, 1112, 5511, 6429, 2]
+// Dependencies: [19, 17, 11894, 21, 4913, 575, 5122, 4920, 15086, 15087, 504, 12227, 2168, 7017, 5600, 5504, 1112, 5511, 6429, 2]
 // Exports: default
 
-// Module 15083 (BuildOverrideModal)
+// Module 15085 (BuildOverrideModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import build_overrides_BuildOverrideUtils from "build_overrides/BuildOverrideUtils" /* 12227 */;
@@ -56,9 +56,9 @@ export default function BuildOverrideModal(overrideUrl) {
   const tmp4 = stateFromStores(5122)();
   const obj = str(4920);
   if (obj.isThemeDark(tmp4)) {
-    tmp2Result = tmp2(15084);
+    tmp2Result = tmp2(15086);
   } else {
-    tmp2Result = tmp2(15085);
+    tmp2Result = tmp2(15087);
   }
   const items = [BuildOverrideStore];
   const items1 = [str];

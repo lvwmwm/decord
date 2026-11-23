@@ -1,10 +1,10 @@
-// Module ID: 17896
-// Function ID: 17897
+// Module ID: 17898
+// Function ID: 17899
 // Name: useHomeDrawerGuildTyping
-// Dependencies: [4847, 4766, 4762, 12829, 558, 17893, 17894, 504, 11, 2]
+// Dependencies: [4847, 4766, 4762, 12829, 558, 17895, 17896, 504, 11, 2]
 // Exports: useHomeDrawerGuildTyping
 
-// Module 17896 (useHomeDrawerGuildTyping)
+// Module 17898 (useHomeDrawerGuildTyping)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import shallowEqual from "shallowEqual" /* 558 */;
 import ChannelRecord from "ChannelRecord" /* 4766 */;
@@ -25,7 +25,7 @@ function areHomeDrawerGuildTypingStatesEqual(typingChannelId, typingChannelId2) 
   return result;
 }
 const isThread = ChannelRecord.isThread;
-let closure_7 = { typingChannelId: "Array", typingChannelName: "isArray", typingUserIds: [] };
+let closure_7 = { typingChannelId: "Array", typingChannelName: "Path", typingUserIds: [] };
 let result = size.fileFinishedImporting("modules/home_drawer/native/useHomeDrawerGuildTyping.tsx");
 
 export function useHomeDrawerGuildTyping(id) {
