@@ -7993,6 +7993,20 @@
         "width": 24,
         "height": 24
     },
+    "SliderThumbDark": {
+        "file": "app/design/components/Slider/native/images/SliderThumbDark.png",
+        "hash": "ee106eea2881015fca49190d7b87a5f4",
+        "scales": [],
+        "width": 130,
+        "height": 130
+    },
+    "SliderThumbLight": {
+        "file": "app/design/components/Slider/native/images/SliderThumbLight.png",
+        "hash": "8a1f7296e9f503153807d2bac27985a9",
+        "scales": [],
+        "width": 130,
+        "height": 130
+    },
     "Small": {
         "file": "app/images/native/icons/Small.png",
         "hash": "cb49d7446dbcac5ce6ba16b6a9b83961",
