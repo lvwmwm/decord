@@ -1,19 +1,19 @@
-// Module ID: 18039
-// Function ID: 18040
+// Module ID: 16818
+// Function ID: 16819
 // Name: ContrastModeSetting
-// Dependencies: [19, 5307, 9202, 21, 16891, 17937, 13468, 12408, 1113, 1187, 2]
+// Dependencies: [19, 4914, 8712, 21, 15645, 16716, 13000, 11937, 1112, 1186, 2]
 
-// Module 18039 (ContrastModeSetting)
+// Module 16818 (ContrastModeSetting)
 import Fragment from "Fragment" /* 21 */;
-import intl2 from "intl" /* 1113 */;
-import native from "native" /* 1187 */;
-import SettingsConstants from "SettingsConstants" /* 9202 */;
-import CirclePlusIcon from "CirclePlusIcon" /* 13468 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 16891 */;
-import CircleMinusIcon from "CircleMinusIcon" /* 17937 */;
+import intl2 from "intl" /* 1112 */;
+import native from "native" /* 1186 */;
+import SettingsConstants from "SettingsConstants" /* 8712 */;
+import CirclePlusIcon from "CirclePlusIcon" /* 13000 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 15645 */;
+import CircleMinusIcon from "CircleMinusIcon" /* 16716 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5307 */;
-import SettingBuilders from "SettingBuilders" /* 12408 */;
+import AccessibilityStore from "AccessibilityStore" /* 4914 */;
+import SettingBuilders from "SettingBuilders" /* 11937 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

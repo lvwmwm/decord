@@ -1,8 +1,8 @@
-// Module ID: 6418
-// Function ID: 6419
+// Module ID: 6020
+// Function ID: 6021
 // Dependencies: [2]
 
-// Module 6418
+// Module 6020
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/thumbnail/base/crimson.png.js");

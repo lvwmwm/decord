@@ -1,18 +1,18 @@
-// Module ID: 9221
-// Function ID: 9222
+// Module ID: 8729
+// Function ID: 8730
 // Name: GuildRoleSubscriptionSystemMessageUtils
-// Dependencies: [5177, 1388, 9222, 1072, 11, 1113, 7266, 6057, 2]
+// Dependencies: [4784, 1386, 8730, 1071, 11, 1112, 6871, 5650, 2]
 // Exports: getRoleSubscriptionPurchaseStickerCTA, getRoleSubscriptionPurchaseSystemMessageAstFormattedContent, getRoleSubscriptionPurchaseSystemMessageContentMobile, getRoleSubscriptionPurchaseSystemMessageEventProperties, getRoleSubscriptionPurchaseSystemMessageFormattedContent, isEligibleForRoleSubscriptionPurchaseSystemMessageSettings, pickRoleSubscriptionPurchaseSticker, trackRoleSubscriptionPurchaseMessageTierClick
 
-// Module 9221 (GuildRoleSubscriptionSystemMessageUtils)
+// Module 8729 (GuildRoleSubscriptionSystemMessageUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import intl2 from "intl" /* 1113 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6057 */;
-import useIsCreatorMonetizationEnabledGuild from "useIsCreatorMonetizationEnabledGuild" /* 7266 */;
-import GuildStore from "GuildStore" /* 5177 */;
-import UserStore from "UserStore" /* 1388 */;
-import GuildRoleSubscriptionSystemMessageConstants from "GuildRoleSubscriptionSystemMessageConstants" /* 9222 */;
-import Constants from "Constants" /* 1072 */;
+import intl2 from "intl" /* 1112 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5650 */;
+import useIsCreatorMonetizationEnabledGuild from "useIsCreatorMonetizationEnabledGuild" /* 6871 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import UserStore from "UserStore" /* 1386 */;
+import GuildRoleSubscriptionSystemMessageConstants from "GuildRoleSubscriptionSystemMessageConstants" /* 8730 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -169,7 +169,7 @@ export function getRoleSubscriptionPurchaseSystemMessageContentMobile(usernameOn
     OxP1NC = t["6Z1E+7"];
     tmp7 = tmp3;
   }
-  const intl = tmp7(1113).intl;
+  const intl = tmp7(1112).intl;
   let name;
   const formatToParts = intl.formatToParts;
   if (guild != null) {

@@ -1,24 +1,24 @@
-// Module ID: 17242
-// Function ID: 17243
+// Module ID: 16010
+// Function ID: 16011
 // Name: AccountAgeGroupSetting
-// Dependencies: [17, 9202, 1072, 21, 5306, 575, 10812, 17243, 17250, 5139, 7443, 12408, 1113, 17251, 17211, 17252, 2]
+// Dependencies: [17, 8712, 1071, 21, 4913, 575, 10526, 16011, 16018, 4746, 7045, 11937, 1112, 16019, 15979, 16020, 2]
 
-// Module 17242 (AccountAgeGroupSetting)
+// Module 16010 (AccountAgeGroupSetting)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import intl2 from "intl" /* 1113 */;
-import dismissible_content from "dismissible_content" /* 5139 */;
-import TableRow from "TableRow" /* 7443 */;
-import SettingsConstants from "SettingsConstants" /* 9202 */;
-import useAgeGroupPresentation from "useAgeGroupPresentation" /* 10812 */;
-import AgeNoticeSettingsPredicate from "AgeNoticeSettingsPredicate" /* 17211 */;
-import AgeNoticeLazy from "AgeNoticeLazy" /* 17243 */;
-import DismissiblePremiumNewBadgeDefault from "DismissiblePremiumNewBadge" /* 17250 */;
+import Constants from "Constants" /* 1071 */;
+import intl2 from "intl" /* 1112 */;
+import dismissible_content from "dismissible_content" /* 4746 */;
+import TableRow from "TableRow" /* 7045 */;
+import SettingsConstants from "SettingsConstants" /* 8712 */;
+import useAgeGroupPresentation from "useAgeGroupPresentation" /* 10526 */;
+import AgeNoticeSettingsPredicate from "AgeNoticeSettingsPredicate" /* 15979 */;
+import AgeNoticeLazy from "AgeNoticeLazy" /* 16011 */;
+import DismissiblePremiumNewBadgeDefault from "DismissiblePremiumNewBadge" /* 16018 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
-import SettingBuilders from "SettingBuilders" /* 12408 */;
-import DismissibleBadgeUtils from "DismissibleBadgeUtils" /* 17251 */;
+import createStyles from "createStyles" /* 4913 */;
+import SettingBuilders from "SettingBuilders" /* 11937 */;
+import DismissibleBadgeUtils from "DismissibleBadgeUtils" /* 16019 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

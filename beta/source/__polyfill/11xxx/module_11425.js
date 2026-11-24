@@ -1,209 +1,95 @@
 // Module ID: 11425
 // Function ID: 11426
-// Dependencies: [41, 42, 11426, 11432]
+// Dependencies: [41, 42, 93, 95, 98, 11415, 11414, 11416, 11422]
 
 // Module 11425
-import _mod11426 from "module_11426" /* 11426 */;
-import ReferenceWithTimezone2 from "ReferenceWithTimezone" /* 11432 */;
+import _mod11414 from "module_11414" /* 11414 */;
+import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 11415 */;
+import findMostLikelyADYear from "findMostLikelyADYear" /* 11416 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 11422 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
+import c3 from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
-let tmp2 = this && this.__importDefault || ((__esModule) => {
-  let tmp2;
-  const tmp = __esModule;
-  if (!tmp) {
-    tmp2 = { default: __esModule };
-    const obj = { default: __esModule };
-  } else {
-    tmp2 = __esModule;
-  }
-  return tmp2;
-});
-const module_11426 = tmp2(_mod11426);
-class Chrono {
-  constructor(configuration) {
-    const self = this;
-    let casualConfiguration = configuration;
-    _classCallCheck(this, Chrono);
-    this.defaultConfig = new module_11426.default();
-    new module_11426.default();
-    if (!configuration) {
-      const defaultConfig = self.defaultConfig;
-      casualConfiguration = defaultConfig.createCasualConfiguration();
-    }
-    const items = [...casualConfiguration.parsers];
-    self.parsers = items;
-    self.refiners = [...casualConfiguration.refiners];
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
+
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
 }
+const matchAnyPatternResult = repeatedTimeunitPattern.matchAnyPattern(_mod11414.MONTH_DICTIONARY);
+const regExp = new RegExp("((?:in)\\s*)?(" + matchAnyPatternResult + ")\\s*(?:(?:,|-|of)?\\s*(" + _mod11414.YEAR_PATTERN + ")?)?(?=[^\\s\\w]|\\s+[^0-9]|\\s+$|$)", "i");
+class ENMonthNameParser {
+  constructor() {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, ENMonthNameParser);
+    const obj = _getPrototypeOf(ENMonthNameParser);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = c3;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      constructResult = obj(...arguments);
+    }
+    return tmp3(self, constructResult);
+  }
+}
+_inherits(ENMonthNameParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "clone",
-  value: function clone() {
-    let items;
-    const obj = { parsers: items, refiners: [...this.refiners] };
-    items = [...this.parsers];
-    const obj2 = Object.create(Chrono.prototype);
-    _classCallCheck(obj2, Chrono);
-    obj2.defaultConfig = new module_11426.default();
-    obj2.parsers = [...obj.parsers];
-    obj2.refiners = [...obj.refiners];
-    new module_11426.default();
-    return obj2;
+  key: "innerPattern",
+  value: function innerPattern() {
+    return regExp;
   }
 };
-let items = [
+const items = [
   entry,
   {
-    key: "parseDate",
-    value: function parseDate(arg0, arg1, arg2) {
-      const parsed = this.parse(arg0, arg1, arg2);
-      let dateResult = null;
-      if (parsed.length > 0) {
-        const start = parsed[0].start;
-        dateResult = start.date();
-      }
-      return dateResult;
-    }
-  },
-  {
-    key: "parse",
-    value: function parse(arg0, arg1, arg2) {
-      let closure_0 = new closure_1_4(arg0, arg1, arg2);
-      let closure_1 = [];
-      const parsers = this.parsers;
-      new closure_1_4(arg0, arg1, arg2);
-      const item = parsers.forEach((item) => {
-        closure_1 = closure_1.concat(Chrono.executeParser(closure_0, item));
-      });
-      const sorted = closure_1.sort((index, index2) => index.index - index2.index);
-      const refiners = this.refiners;
-      const item1 = refiners.forEach((refine) => {
-        closure_1 = refine.refine(closure_0, closure_1);
-      });
-      return closure_1;
-    }
-  }
-];
-const entry1 = {
-  key: "executeParser",
-  value: function executeParser(createParsingResult, pattern) {
-    let match1;
-    let text;
-    let text2;
-    const constructor = pattern;
-    const items = [];
-    const patternResult = pattern.pattern(createParsingResult);
-    ({ text, text: text2 } = createParsingResult);
-    let match = patternResult.exec(text2);
-    if (match) {
-      do {
-        let substr1;
-        match.index = match.index + text.length - text2.length;
-        let extractResult = pattern.extract(createParsingResult, match);
-        if (extractResult) {
-          let tmp6 = require;
-          let parsingResult1 = extractResult;
-          if (!(extractResult instanceof ReferenceWithTimezone2.ParsingResult)) {
-            createParsingResult = createParsingResult.createParsingResult;
-            let index = match.index;
-            let first = match[0];
-            if (extractResult instanceof tmp6(11432).ParsingComponents) {
-              let parsingResult = createParsingResult(index, first);
-              parsingResult.start = extractResult;
-              parsingResult1 = parsingResult;
-            } else {
-              parsingResult1 = createParsingResult(index, first, extractResult);
-            }
-          }
-          let index2 = parsingResult1.index;
-          let text1 = parsingResult1.text;
-          let debugResult = createParsingResult.debug(() => console.log("" + constructor.constructor.name + " extracted (at index=" + index2 + ") '" + text1 + "'"));
-          let arr = items.push(parsingResult1);
-          let substr = text.substring(index2 + text1.length);
-          match1 = patternResult.exec(substr);
-          substr1 = substr;
-        } else {
-          substr1 = text.substring(match.index + 1);
-          match1 = patternResult.exec(substr1);
+    key: "innerExtract",
+    value: function innerExtract(createParsingResult, index) {
+      const str = index[2];
+      const formatted = str.toLowerCase();
+      if (index[0].length <= 3) {
+        if (!_mod11414.FULL_MONTH_NAME_DICTIONARY[formatted]) {
+          return null;
         }
-        match = match1;
-        text2 = substr1;
-      } while (match1);
-    }
-    return items;
-  }
-};
-const items1 = [entry1];
-class ParsingContext {
-  constructor(text, instant, arg2) {
-    const self = this;
-    let obj = arg2;
-    _classCallCheck(this, ParsingContext);
-    this.text = text;
-    if (null == arg2) {
-      obj = {};
-    }
-    self.option = obj;
-    const ReferenceWithTimezone = ReferenceWithTimezone2.ReferenceWithTimezone;
-    self.reference = ReferenceWithTimezone.fromInput(instant, self.option.timezones);
-    self.refDate = self.reference.instant;
-  }
-}
-const entry2 = {
-  key: "createParsingComponents",
-  value: function createParsingComponents(date) {
-    let parsingComponents = date;
-    if (!(date instanceof ReferenceWithTimezone2.ParsingComponents)) {
-      const self = this;
-      const self2 = this;
-      const self3 = this;
-      parsingComponents = new ReferenceWithTimezone2.ParsingComponents(this.reference, date);
-    }
-    return parsingComponents;
-  }
-};
-const items2 = [
-  entry2,
-  {
-    key: "createParsingResult",
-    value: function createParsingResult(sum, substr, extractResult, date) {
-      const self = this;
-      if (typeof substr !== "string") {
-        const str = self.text;
-        substr = str.substring(sum, substr);
       }
-      let parsingComponents = null;
-      if (extractResult) {
-        parsingComponents = self.createParsingComponents(extractResult);
+      let str2 = index[1];
+      index = index.index;
+      createParsingResult = createParsingResult.createParsingResult;
+      if (!str2) {
+        str2 = "";
       }
-      let parsingComponents1 = null;
-      if (date) {
-        parsingComponents1 = self.createParsingComponents(date);
+      const parsingResult = createParsingResult(index + str2.length, index.index + index[0].length);
+      const start = parsingResult.start;
+      start.imply("day", 1);
+      const start2 = parsingResult.start;
+      start2.addTag("parser/ENMonthNameParser");
+      const tmp10 = _mod11414.MONTH_DICTIONARY[formatted];
+      const start3 = parsingResult.start;
+      start3.assign("month", tmp10);
+      if (index[3]) {
+        const start5 = parsingResult.start;
+        start5.assign("year", _mod11414.parseYear(index[3]));
+      } else {
+        const start4 = parsingResult.start;
+        start4.imply("year", findMostLikelyADYear.findYearClosestToRef(createParsingResult.refDate, 1, tmp10));
       }
-      const parsingResult = new ReferenceWithTimezone2.ParsingResult(self.reference, sum, substr, parsingComponents, parsingComponents1);
       return parsingResult;
     }
-  },
-  {
-    key: "debug",
-    value: function debug(arg0) {
-      const self = this;
-      if (this.option.debug) {
-        const _Function = Function;
-        const option = self.option;
-        const debug = option.debug;
-        if (self.option.debug instanceof Function) {
-          debug(arg0);
-        } else {
-          debug.debug(arg0);
-        }
-      }
-    }
   }
 ];
-const _moduleResult = _createClass(ParsingContext, items2);
-const Chrono_export = _createClass(Chrono, items, items1);
-const ParsingContext_export = _createClass(ParsingContext, items2);
 
-export { Chrono_export as Chrono };
-export { ParsingContext_export as ParsingContext };
+export default _createClass(ENMonthNameParser, items);

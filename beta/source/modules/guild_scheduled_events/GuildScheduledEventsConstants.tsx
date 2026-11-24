@@ -1,11 +1,11 @@
-// Module ID: 5161
-// Function ID: 5162
+// Module ID: 4768
+// Function ID: 4769
 // Name: GuildScheduledEventsConstants
-// Dependencies: [1072, 1089, 2]
+// Dependencies: [1071, 1088, 2]
 
-// Module 5161 (GuildScheduledEventsConstants)
-import Constants from "Constants" /* 1072 */;
-import DurationsDefault from "Durations" /* 1089 */;
+// Module 4768 (GuildScheduledEventsConstants)
+import Constants from "Constants" /* 1071 */;
+import DurationsDefault from "Durations" /* 1088 */;
 import size from "module_2" /* 2 */;
 
 const ChannelTypes = Constants.ChannelTypes;

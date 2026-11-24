@@ -1,34 +1,34 @@
-// Module ID: 19724
-// Function ID: 19725
+// Module ID: 18975
+// Function ID: 18976
 // Name: ChannelSettingsChangeCategory
-// Dependencies: [32, 717, 19, 5155, 7875, 5177, 5238, 5248, 1388, 1072, 21, 5306, 575, 5367, 7876, 14834, 5243, 6907, 6258, 1113, 5944, 7443, 7746, 8106, 6327, 5919, 504, 1502, 12562, 38, 2]
+// Dependencies: [32, 717, 19, 4762, 7477, 4784, 4845, 4855, 1386, 1071, 21, 4913, 575, 4974, 7478, 13286, 4850, 6511, 5860, 1112, 5529, 7045, 7348, 7709, 5929, 5504, 504, 1500, 12079, 38, 2]
 // Exports: default
 
-// Module 19724 (ChannelSettingsChangeCategory)
+// Module 18975 (ChannelSettingsChangeCategory)
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import intl5 from "intl" /* 1113 */;
-import native from "native" /* 5367 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import useChannelName from "useChannelName" /* 5944 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6258 */;
-import Stack_Stack from "Stack/Stack" /* 6327 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6907 */;
-import TableRow from "TableRow" /* 7443 */;
-import TableRowGroup2 from "TableRowGroup" /* 7746 */;
-import _mod8106 from "module_8106" /* 8106 */;
+import Constants from "Constants" /* 1071 */;
+import intl5 from "intl" /* 1112 */;
+import native from "native" /* 4974 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import useChannelName from "useChannelName" /* 5529 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5860 */;
+import Stack_Stack from "Stack/Stack" /* 5929 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6511 */;
+import TableRow from "TableRow" /* 7045 */;
+import TableRowGroup2 from "TableRowGroup" /* 7348 */;
+import _mod7709 from "module_7709" /* 7709 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _toArray from "_toArray" /* 717 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import GuildCategoryStore_mod from "GuildCategoryStore" /* 7875 */;
-import GuildStore from "GuildStore" /* 5177 */;
-import PermissionStore from "PermissionStore" /* 5238 */;
-import RelationshipStore from "RelationshipStore" /* 5248 */;
-import UserStore from "UserStore" /* 1388 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import GuildCategoryStore_mod from "GuildCategoryStore" /* 7477 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
+import RelationshipStore from "RelationshipStore" /* 4855 */;
+import UserStore from "UserStore" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -79,7 +79,7 @@ class ChannelSettingsChangeCategory extends Component {
   handleSetCategory(id) {
     let obj7;
     let parent_id;
-    const f138198 = () => closure_1_2.pop();
+    const f133244 = () => closure_1_2.pop();
     let self = this;
     _require = id;
     function saveUpdates() {
@@ -92,7 +92,7 @@ class ChannelSettingsChangeCategory extends Component {
       } else {
         const obj = GuildActionCreatorsDefault;
         const batchChannelUpdateResult = obj.batchChannelUpdate(tmp, GuildCategoryStore);
-        return batchChannelUpdateResult.then(f138198);
+        return batchChannelUpdateResult.then(f133244);
       }
     }
     const props = this.props;
@@ -209,7 +209,7 @@ class ChannelSettingsChangeCategory extends Component {
                           } else {
                             const obj = channel(channel1[17]);
                             const batchChannelUpdateResult = obj.batchChannelUpdate(tmp, closure_1_7);
-                            batchChannelUpdateResult.then(f138198);
+                            batchChannelUpdateResult.then(f133244);
                           }
                         },
                   onCancel: saveUpdates,
@@ -239,7 +239,7 @@ class ChannelSettingsChangeCategory extends Component {
           } else {
             const obj5 = GuildActionCreatorsDefault;
             let batchChannelUpdateResult = obj5.batchChannelUpdate(tmp26, GuildCategoryStore);
-            batchChannelUpdateResult.then(f138198);
+            batchChannelUpdateResult.then(f133244);
           }
         });
       }
@@ -288,7 +288,7 @@ class ChannelSettingsChangeCategory extends Component {
     const first = _slicedToArray(this.state.categories, 1)[0];
     const tmp2 = closure_15(this.context);
     const obj = { style: tmp2.screenContainer, children: tmp6(Stack, obj2) };
-    const Form = _mod8106.Form;
+    const Form = _mod7709.Form;
     obj2 = { style: tmp2.stackPadding, spacing: nativeDefault.space.PX_24, children: items };
     Stack = Stack_Stack.Stack;
     const Text = Text_Text.Text;
@@ -299,8 +299,8 @@ class ChannelSettingsChangeCategory extends Component {
     if (null != category) {
       name = category.name;
     } else {
-      const intl2 = tmp4(1113).intl;
-      name = intl2.string(tmp4(1113).t.GSfOoo);
+      const intl2 = tmp4(1112).intl;
+      name = intl2.string(tmp4(1112).t.GSfOoo);
     }
     items = [, , ];
     const obj3 = { variant: "body-md/medium", color: "text-muted", children: formatToPlainString(OqccVl, { categoryName: name }) };
@@ -312,7 +312,7 @@ class ChannelSettingsChangeCategory extends Component {
         tmp3Result = null;
         if (null != category) {
           const obj4 = { hasIcons: false, children: map1(TableRow.TableRow, obj5, first.id) };
-          const TableRowGroup = tmp4(7746).TableRowGroup;
+          const TableRowGroup = tmp4(7348).TableRowGroup;
           obj5 = {
             label: first.name,
             onPress() {
@@ -337,9 +337,9 @@ export default function ConnectedChannelSettingsChangeCategory(channelId) {
   const items = [ChannelStore];
   const obj = channelId(504);
   const channel = obj.useStateFromStores(items, () => ChannelStore.getChannel(channelId));
-  const obj2 = channelId(1502);
+  const obj2 = channelId(1500);
   navigation = obj2.useNavigation();
-  const obj3 = channelId(12562);
+  const obj3 = channelId(12079);
   const appChannelBotUserId = obj3.useAppChannelBotUserId(channel);
   _modDef38(null != channel, "ConnectedChannelSettingsChangeCategory: channel cannot be undefined");
   return closure_13(ChannelSettingsChangeCategory, { channel, navigation, appChannelBotUserId });

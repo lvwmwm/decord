@@ -1,10 +1,10 @@
 // Module ID: 2500
 // Function ID: 2501
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 2500 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/go_live/web/modal", scales: [1], hash: "cd2d5c0ef187afb877c9d94c96dd5098", name: "GoLiveModal.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9naWZ0X2NhcmRzL21lc3NhZ2Vz", scales: [1], hash: "413ce69461f6e9dca97c3374b7548e45", name: "th.messages.413ce69461f6e9dca97c3374b7548e45.compiled.messages", type: "jsona" });

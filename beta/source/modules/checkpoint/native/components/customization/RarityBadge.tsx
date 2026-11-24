@@ -1,20 +1,20 @@
-// Module ID: 14544
-// Function ID: 14545
+// Module ID: 12788
+// Function ID: 12789
 // Name: RarityBadge
-// Dependencies: [32, 19, 17, 6367, 21, 5306, 575, 6368, 8263, 6734, 5919, 1113, 9436, 2]
+// Dependencies: [32, 19, 17, 5969, 21, 4913, 575, 5970, 7865, 6336, 5504, 1112, 8952, 2]
 // Exports: default
 
-// Module 14544 (RarityBadge)
+// Module 12788 (RarityBadge)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import CheckpointTraitRarity from "CheckpointTraitRarity" /* 6368 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6734 */;
-import inlineStylesDefault from "inlineStyles" /* 8263 */;
+import CheckpointTraitRarity from "CheckpointTraitRarity" /* 5970 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6336 */;
+import inlineStylesDefault from "inlineStyles" /* 7865 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import CheckpointConstants from "CheckpointConstants" /* 6367 */;
+import CheckpointConstants from "CheckpointConstants" /* 5969 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let c9;
@@ -90,7 +90,7 @@ export default function RarityBadge(rarity) {
     ({ width: obj2.width, height: obj2.height } = size);
     obj3 = { points: tmp3Result.getChamferedRectPoints(size.width, size.height, 6), fill: metroRequire[rarity] };
     const tmp10 = inlineStylesDefault;
-    Polygon = tmp3(8263).Polygon;
+    Polygon = tmp3(7865).Polygon;
     tmp3Result = CheckpointCustomizationUtils;
     tmp7 = metroImportAll(tmp10, size1);
   }
@@ -98,13 +98,13 @@ export default function RarityBadge(rarity) {
   items1 = [tmp7, ];
   const obj4 = { style: tmp.badgeContent, children: items2 };
   const obj5 = { variant: "mono-md/bold", style: tmp.badgeLabel, children: intl.string(metroImportDefault[rarity]) };
-  const Text = tmp3(5919).Text;
-  intl = tmp3(1113).intl;
+  const Text = tmp3(5504).Text;
+  intl = tmp3(1112).intl;
   items2 = [metroImportAll(Text, obj5), ];
   const tmp13 = metroImportAll;
   if (tmp13Result) {
     const obj6 = { size: "xxs", color: nativeDefault.colors.BLACK };
-    const NitroWheelIcon = tmp3(9436).NitroWheelIcon;
+    const NitroWheelIcon = tmp3(8952).NitroWheelIcon;
     tmp13Result = tmp13(NitroWheelIcon, obj6);
   }
   items2[1] = tmp13Result;

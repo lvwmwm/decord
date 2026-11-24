@@ -1,27 +1,27 @@
-// Module ID: 13694
-// Function ID: 13695
+// Module ID: 18541
+// Function ID: 18542
 // Name: BeeIllocon
-// Dependencies: [19, 21, 13695, 13696, 13697, 7755, 6010, 2]
+// Dependencies: [19, 21, 18542, 18543, 18544, 7357, 5600, 2]
 // Exports: BeeIllocon
 
-// Module 13694 (BeeIllocon)
+// Module 18541 (BeeIllocon)
 import Fragment from "Fragment" /* 21 */;
-import FastImageDefault from "FastImage" /* 6010 */;
-import react_native from "react-native" /* 7755 */;
-import _modDef13695 from "module_13695" /* 13695 */;
-import _modDef13696 from "module_13696" /* 13696 */;
-import _modDef13697 from "module_13697" /* 13697 */;
+import FastImageDefault from "FastImage" /* 5600 */;
+import react_native from "react-native" /* 7357 */;
+import _modDef18542 from "module_18542" /* 18542 */;
+import _modDef18543 from "module_18543" /* 18543 */;
+import _modDef18544 from "module_18544" /* 18544 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef13695 };
+let obj2 = { uri: _modDef18542 };
 obj[1] = obj2;
-obj[2] = { uri: _modDef13696 };
-({ uri: _modDef13696 });
-obj[3] = { uri: _modDef13697 };
-({ uri: _modDef13697 });
+obj[2] = { uri: _modDef18543 };
+({ uri: _modDef18543 });
+obj[3] = { uri: _modDef18544 };
+({ uri: _modDef18544 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/BeeIllocon.native.tsx");
 
@@ -43,6 +43,6 @@ export function BeeIllocon(size) {
   }, items);
   obj = { fadeDuration: 0, source: obj2.getAssetSource(obj), style: memo, accessible, accessibilityLabel, resizeMode };
   FastImageDefault;
-  obj2 = num(7755);
+  obj2 = num(7357);
   return <tmp2 fadeDuration={0} source={obj2.getAssetSource(obj)} style={memo} accessible={accessible} accessibilityLabel={accessibilityLabel} resizeMode={resizeMode} />;
 }

@@ -1,10 +1,10 @@
 // Module ID: 13093
 // Function ID: 13094
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 13093 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/stage_channels/native/images", width: 16, height: 16, scales: [1, 2, 3], hash: "98e013109b389eb9fdfad5277cb35b88", name: "ic_moderator", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/emoji", width: 24, height: 24, scales: [2, 3], hash: "79fe2790d902aba7709041b8b44a4ced", name: "ic_emoji_recent_color_24px", type: "png" });

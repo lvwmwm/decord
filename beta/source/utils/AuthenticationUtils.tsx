@@ -1,11 +1,11 @@
-// Module ID: 8773
-// Function ID: 8774
+// Module ID: 8368
+// Function ID: 8369
 // Name: AuthenticationUtils
-// Dependencies: [1098, 2]
+// Dependencies: [1097, 2]
 // Exports: getToken, isAuthenticated
 
-// Module 8773 (AuthenticationUtils)
-import TokenManagerAll from "TokenManager" /* 1098 */;
+// Module 8368 (AuthenticationUtils)
+import TokenManagerAll from "TokenManager" /* 1097 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("utils/AuthenticationUtils.tsx");

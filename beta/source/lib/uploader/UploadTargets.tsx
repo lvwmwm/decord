@@ -1,17 +1,17 @@
-// Module ID: 8900
-// Function ID: 8901
+// Module ID: 8495
+// Function ID: 8496
 // Name: UploadTargets
-// Dependencies: [5155, 1072, 8890, 8875, 8846, 8901, 8903, 2]
+// Dependencies: [4762, 1071, 8485, 8470, 8442, 8496, 8498, 2]
 // Exports: getUploadTarget
 
-// Module 8900 (UploadTargets)
-import UploadUtils from "UploadUtils" /* 8846 */;
-import FileUtilsAll from "FileUtils" /* 8875 */;
-import UploadLimits from "UploadLimits" /* 8890 */;
-import GuildProductAttachmentUploadTargetDefault from "GuildProductAttachmentUploadTarget" /* 8901 */;
-import ICYMIAttachmentUploadTargetDefault from "ICYMIAttachmentUploadTarget" /* 8903 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import Constants from "Constants" /* 1072 */;
+// Module 8495 (UploadTargets)
+import UploadUtils from "UploadUtils" /* 8442 */;
+import FileUtilsAll from "FileUtils" /* 8470 */;
+import UploadLimits from "UploadLimits" /* 8485 */;
+import GuildProductAttachmentUploadTargetDefault from "GuildProductAttachmentUploadTarget" /* 8496 */;
+import ICYMIAttachmentUploadTargetDefault from "ICYMIAttachmentUploadTarget" /* 8498 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;

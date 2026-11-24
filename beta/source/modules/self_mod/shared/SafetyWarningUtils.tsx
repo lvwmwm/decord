@@ -1,13 +1,13 @@
-// Module ID: 12038
-// Function ID: 12039
+// Module ID: 11796
+// Function ID: 11797
 // Name: SafetyWarningUtils
-// Dependencies: [1388, 1072, 1256, 2]
+// Dependencies: [1386, 1071, 1255, 2]
 // Exports: getUserIsTeen, trackCtaEvent, trackNamedViewEvent, trackViewedEvent
 
-// Module 12038 (SafetyWarningUtils)
-import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import UserStore from "UserStore" /* 1388 */;
+// Module 11796 (SafetyWarningUtils)
+import Constants from "Constants" /* 1071 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

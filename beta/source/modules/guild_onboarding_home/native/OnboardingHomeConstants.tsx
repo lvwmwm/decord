@@ -1,9 +1,9 @@
-// Module ID: 19402
-// Function ID: 19403
+// Module ID: 18204
+// Function ID: 18205
 // Name: OnboardingHomeConstants
 // Dependencies: [2]
 
-// Module 19402 (OnboardingHomeConstants)
+// Module 18204 (OnboardingHomeConstants)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_onboarding_home/native/OnboardingHomeConstants.tsx");

@@ -1,12 +1,12 @@
-// Module ID: 19064
-// Function ID: 19065
+// Module ID: 17860
+// Function ID: 17861
 // Name: GuildsBarConstants
-// Dependencies: [5892, 575, 2]
+// Dependencies: [5477, 575, 2]
 // Exports: useGuildWrapperSize
 
-// Module 19064 (GuildsBarConstants)
+// Module 17860 (GuildsBarConstants)
 import nativeDefault from "native" /* 575 */;
-import useToken from "useToken" /* 5892 */;
+import useToken from "useToken" /* 5477 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guilds_bar/native/GuildsBarConstants.tsx");
@@ -23,6 +23,6 @@ export function useGuildWrapperSize() {
   const obj2 = useToken;
   return token + 2 * obj2.useToken(nativeDefault.modules.mobile.GUILD_BAR_ITEM_MARGIN);
 }
-export const FastListRenderSections = { MESSAGES: 0, [0]: "MESSAGES", FAVORITES: 1, [1]: "FAVORITES", PENDING_JOIN_REQUESTS: 2, [2]: "PENDING_JOIN_REQUESTS", LURKING_GUILDS: 3, [3]: "LURKING_GUILDS", GUEST_GUILDS: 4, [4]: "GUEST_GUILDS", UNREAD_PRIVATE_CHANNELS: 5, [5]: "UNREAD_PRIVATE_CHANNELS", SEPARATOR: 6, [6]: "SEPARATOR", GUILDS: 7, [7]: "GUILDS" };
+export const FastListRenderSections = { MESSAGES: 0, [0]: "MESSAGES", FAVORITES: 1, [1]: "FAVORITES", PENDING_JOIN_REQUESTS: 2, [2]: "PENDING_JOIN_REQUESTS", LURKING_GUILDS: 3, [3]: "LURKING_GUILDS", GUEST_GUILDS: 4, [4]: "GUEST_GUILDS", UNREAD_PRIVATE_CHANNELS: 5, [5]: "UNREAD_PRIVATE_CHANNELS", CHECKPOINT_INTRO: 6, [6]: "CHECKPOINT_INTRO", SEPARATOR: 7, [7]: "SEPARATOR", GUILDS: 8, [8]: "GUILDS" };
 export const FOLDER_SPRING_PHYSICS = { mass: 0.5, damping: 30, stiffness: 300 };
 export const TRANSITION_PHYSICS = { mass: 0.5, damping: 15, stiffness: 120 };

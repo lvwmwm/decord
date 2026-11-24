@@ -1,168 +1,202 @@
-// Module ID: 16112
-// Function ID: 16113
+// Module ID: 14880
+// Function ID: 14881
 // Name: InputConnection
-// Dependencies: [6089, 3, 16113, 16114, 6179, 2]
+// Dependencies: [5682, 3, 14881, 14883, 14887, 2]
 
-// Module 16112 (InputConnection)
+// Module 14880 (InputConnection)
 import LoggerDefault from "Logger" /* 3 */;
-import RTCConnectionEvent from "RTCConnectionEvent" /* 6179 */;
-import InputEvent from "InputEvent" /* 16113 */;
-import TypedEventEmitter from "TypedEventEmitter" /* 6089 */;
+import DatagramEvent from "DatagramEvent" /* 14883 */;
+import InputEvent from "InputEvent" /* 14887 */;
+import TypedEventEmitter from "TypedEventEmitter" /* 5682 */;
 import size from "module_2" /* 2 */;
 
-const _false = { Closed: 0, [0]: "Closed", Connecting: 1, [1]: "Connecting", Connected: 2, [2]: "Connected" };
+let _instance_members_initializer_InputConnection_;
+
+_instance_members_initializer_InputConnection_ = function() {
+  this.detach = [];
+  this.logger = new LoggerDefault("InputConnection");
+  this.hosting = false;
+  this.closed = false;
+  new LoggerDefault("InputConnection");
+};
 class InputConnection extends TypedEventEmitter {
   constructor(rTCConnection, id) {
-    let on;
-    let on2;
-    let onDisconnect;
-    let onLogMessage;
-    const obj = new InputConnection(tmp4, tmp3, tmp2, tmp, new.target);
-    obj.state = Connected.Closed;
-    obj.userId = id;
-    obj.logger = new LoggerDefault("InputConnection");
-    obj.rtc = rTCConnection;
-    const onWebTransportAck = obj.onWebTransportAck;
-    new LoggerDefault("InputConnection");
-    obj.webTransportAck = onWebTransportAck.bind(obj);
-    obj.on(obj(16113).InputEvent.Connect, () => {
-      obj.state = Connected.Connected;
+    let connected;
+    let failure;
+    let starting;
+    let timeout;
+    let tmp;
+    const obj = new failure(tmp4, tmp3, tmp2, tmp);
+    timeout();
+    const obj2 = connected(starting[2]);
+    obj.lease = obj2.acquireDatagramConnection(rTCConnection, id);
+    obj.transport = obj.lease.connection;
+    connected = function connected() {
+      return obj.setHosting(obj.hosting);
+    };
+    let transport = obj.transport;
+    transport.on(connected(starting[3]).DatagramEvent.Connect, connected);
+    const detach = obj.detach;
+    detach.push(() => {
+      const transport = obj.transport;
+      return transport.off(DatagramEvent.DatagramEvent.Connect, connected);
     });
-    ({ on, onDisconnect } = obj);
-    on(obj(16113).InputEvent.Disconnect, onDisconnect.bind(obj));
-    ({ on: on2, onLogMessage } = obj);
-    on2(obj(16113).InputEvent.Log, onLogMessage.bind(obj));
-    const obj2 = obj(16114);
-    obj.worker = obj2.createInputWorker();
-    if (null != obj.worker) {
-      obj.worker.onmessage = (data) => {
-        const items = [data.data[0], ...data.slice(1)];
-        data = data.data;
-        obj.emit.apply(items);
-      };
+    obj.on(connected(starting[4]).InputEvent.Log, (arg0) => {
+      const logger = obj.logger;
+      return logger.log(arg0);
+    });
+    const values = Object.values(connected(starting[4]).InputEvent);
+    for (const item10049 of values) {
+      let forwardResult = obj.forward(item10049);
+      continue;
     }
+    function missingAddress() {
+      const logger = obj.logger;
+      return logger.info("Failed to get SFU address");
+    }
+    starting = function starting(arg0, arg1) {
+      const logger = obj.logger;
+      return logger.info("Starting WebTransport connection to " + arg0 + ":" + arg1);
+    };
+    failure = function failure(arg0, arg1) {
+      let tmp = arg1;
+      if (arg1 === undefined) {
+        tmp = arg0;
+      }
+      const logger = obj.logger;
+      return logger.log(tmp);
+    };
+    timeout = function timeout() {
+      const logger = obj.logger;
+      return logger.info("Timed out connecting");
+    };
+    function readStarted(arg0) {
+      const emit = obj.emit;
+      return emit(InputEvent.InputEvent.Log, "awaiting read with size " + arg0);
+    }
+    const transport2 = obj.transport;
+    transport2.on(connected(starting[3]).DatagramEvent.Failure, failure);
+    const transport3 = obj.transport;
+    transport3.on(connected(starting[3]).DatagramEvent.Timeout, timeout);
+    const transport4 = obj.transport;
+    transport4.on(connected(starting[3]).DatagramEvent.ReadStarted, readStarted);
+    const detach1 = obj.detach;
+    detach1.push(() => {
+      const transport = obj.transport;
+      return transport.off(DatagramEvent.DatagramEvent.Failure, failure);
+    });
+    const detach2 = obj.detach;
+    detach2.push(() => {
+      const transport = obj.transport;
+      return transport.off(DatagramEvent.DatagramEvent.Timeout, timeout);
+    });
+    const detach3 = obj.detach;
+    detach3.push(() => {
+      const transport = obj.transport;
+      return transport.off(DatagramEvent.DatagramEvent.ReadStarted, readStarted);
+    });
+    const transport5 = obj.transport;
+    transport5.on(connected(starting[3]).DatagramEvent.MissingAddress, missingAddress);
+    const transport6 = obj.transport;
+    transport6.on(connected(starting[3]).DatagramEvent.Starting, starting);
+    const detach4 = obj.detach;
+    detach4.push(() => {
+      const transport = obj.transport;
+      return transport.off(DatagramEvent.DatagramEvent.MissingAddress, missingAddress);
+    });
+    const detach5 = obj.detach;
+    detach5.push(() => {
+      const transport = obj.transport;
+      return transport.off(DatagramEvent.DatagramEvent.Starting, starting);
+    });
     return obj;
   }
+  forward(arg0) {
+    const self = this;
+    let closure_1 = arg0;
+    function listener() {
+      const items = [closure_1, ...HermesBuiltin.copyRestArgs()];
+      return self.emit.apply(items);
+    }
+    let transport = this.transport;
+    transport.on(arg0, listener);
+    const detach = this.detach;
+    detach.push(() => {
+      const transport = self.transport;
+      return transport.off(closure_1, listener);
+    });
+  }
   connect() {
+    const transport = this.transport;
+    transport.connect();
+  }
+  setHosting(hosting) {
     const self = this;
-    this.state = Connecting.Connecting;
-    let rtc = this.rtc;
-    rtc.on(self(6179).RTCConnectionEvent.WebTransportAck, this.webTransportAck);
-    const rtc2 = this.rtc;
-    rtc2.startWebTransport();
-    const timerId = setTimeout(() => {
-      if (self.state === Connecting.Connecting) {
-        const logger = obj.logger;
-        logger.info("Timed out connecting");
-        const rtc = obj.rtc;
-        rtc.off(RTCConnectionEvent.RTCConnectionEvent.WebTransportAck, self.webTransportAck);
-        self.emit(InputEvent.InputEvent.Disconnect);
-      }
-    }, 10000);
-  }
-  onWebTransportAck(arg0, arg1) {
-    const self = this;
-    const rtc = this.rtc;
-    rtc.off(RTCConnectionEvent.RTCConnectionEvent.WebTransportAck, this.webTransportAck);
-    const rtc2 = this.rtc;
-    const voiceAddress = rtc2.getVoiceAddress();
-    if (null == voiceAddress) {
-      const logger = self.logger;
-      logger.info("Failed to get SFU address");
-      self.emit(InputEvent.InputEvent.Disconnect);
-    } else {
-      const _HermesInternal = HermesInternal;
-      const logger2 = self.logger;
-      const _HermesInternal2 = HermesInternal;
-      const combined = "https://" + voiceAddress.address + ":" + voiceAddress.port + "/?token=" + arg0;
-      logger2.info("Starting WebTransport connection to " + voiceAddress.address + ":" + voiceAddress.port);
-      const worker = self.worker;
-      if (worker != null) {
-        const postMessage = worker.postMessage;
-        const items = [InputEvent.InputCommand.Connect, combined, arg1, self.userId];
-        postMessage(items);
-      }
-    }
-  }
-  onLogMessage(arg0) {
-    const logger = this.logger;
-    logger.log(arg0);
-  }
-  onDisconnect() {
-    this.state = closure_3.Closed;
-    const worker = this.worker;
-    if (worker != null) {
-      worker.terminate();
-    }
-  }
-  setHosting(arg0) {
-    const worker = this.worker;
-    if (worker != null) {
-      const postMessage = worker.postMessage;
-      const items = [InputEvent.InputCommand.SetHosting, arg0];
-      postMessage(items);
+    if (!this.closed) {
+      self.hosting = hosting;
+      const transport = self.transport;
+      transport.send(InputEvent.InputCommand.SetHosting, hosting);
     }
   }
   sendKey(sessionId, arg1, arg2) {
-    const worker = this.worker;
-    if (worker != null) {
-      const postMessage = worker.postMessage;
-      const items = [InputEvent.InputCommand.SendKey, sessionId, arg1, arg2];
-      postMessage(items);
-    }
+    const transport = this.transport;
+    transport.send(InputEvent.InputCommand.SendKey, sessionId, arg1, arg2);
+  }
+  sendMouseWheel(sessionId, arg1) {
+    const transport = this.transport;
+    transport.send(InputEvent.InputCommand.SendMouseWheel, sessionId, arg1);
   }
   sendMouseMove(sessionId, movementX, movementY) {
-    const worker = this.worker;
-    if (worker != null) {
-      const postMessage = worker.postMessage;
-      const items = [InputEvent.InputCommand.SendMouseMove, sessionId, movementX, movementY];
-      postMessage(items);
-    }
+    const transport = this.transport;
+    transport.send(InputEvent.InputCommand.SendMouseMove, sessionId, movementX, movementY);
   }
   sendMouseButton(sessionId, button, arg2) {
-    const worker = this.worker;
-    if (worker != null) {
-      const postMessage = worker.postMessage;
-      const items = [InputEvent.InputCommand.SendMouseButton, sessionId, button, arg2];
-      postMessage(items);
-    }
+    const transport = this.transport;
+    transport.send(InputEvent.InputCommand.SendMouseButton, sessionId, button, arg2);
+  }
+  sendControllerButton(sessionId, item, flag) {
+    const transport = this.transport;
+    transport.send(InputEvent.InputCommand.SendControllerButton, sessionId, item, flag);
+  }
+  sendControllerStick(sessionId, arg1, max2Result, bound) {
+    const transport = this.transport;
+    transport.send(InputEvent.InputCommand.SendControllerStick, sessionId, arg1, max2Result, bound);
+  }
+  sendControllerTrigger(sessionId, arg1, max4Result) {
+    const transport = this.transport;
+    transport.send(InputEvent.InputCommand.SendControllerTrigger, sessionId, arg1, max4Result);
+  }
+  sendControllerPlug(sessionId, arg1) {
+    const transport = this.transport;
+    transport.send(InputEvent.InputCommand.SendControllerPlug, sessionId, arg1);
   }
   sendGrab(hostAsBigInt, sessionId) {
-    const worker = this.worker;
-    if (worker != null) {
-      const postMessage = worker.postMessage;
-      const items = [InputEvent.InputCommand.SendGrab, hostAsBigInt, sessionId];
-      postMessage(items);
-    }
+    const transport = this.transport;
+    transport.send(InputEvent.InputCommand.SendGrab, hostAsBigInt, sessionId);
   }
   sendGrabAllow(holderSessionId) {
-    const worker = this.worker;
-    if (worker != null) {
-      const postMessage = worker.postMessage;
-      const items = [InputEvent.InputCommand.SendGrabAllow, holderSessionId];
-      postMessage(items);
-    }
+    const transport = this.transport;
+    transport.send(InputEvent.InputCommand.SendGrabAllow, holderSessionId);
   }
   sendDrop(holderSessionId) {
-    const worker = this.worker;
-    if (worker != null) {
-      const postMessage = worker.postMessage;
-      const items = [InputEvent.InputCommand.SendDrop, holderSessionId];
-      postMessage(items);
-    }
+    const transport = this.transport;
+    transport.send(InputEvent.InputCommand.SendDrop, holderSessionId);
   }
   close() {
-    const worker = this.worker;
-    if (worker != null) {
-      const postMessage = worker.postMessage;
-      const items = [InputEvent.InputCommand.Close];
-      postMessage(items);
+    this.closed = true;
+    const detach = this.detach;
+    const spliceResult = detach.splice(0);
+    for (const item10010 of spliceResult) {
+      let item10010Result = item10010();
+      continue;
     }
+    const lease = this.lease;
+    lease.release();
   }
 }
 Object.defineProperty(InputConnection.prototype, "isConnected", {
   get: function isConnected() {
-    return this.state === closure_3.Connected;
+    return this.transport.isConnected;
   },
   set: undefined
 });

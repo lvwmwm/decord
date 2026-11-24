@@ -1,10 +1,10 @@
 // Module ID: 4157
 // Function ID: 4158
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 4157 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9jdXN0b21fdHlwaW5nX2luZGljYXRvci9pbnRs", scales: [1], hash: "05f5ebc7cb4c9ffeba76d88818796017", name: "sv-SE.messages.05f5ebc7cb4c9ffeba76d88818796017.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/game_invite_channels", scales: [1], hash: "1f9ab1ee6385662cdd6891a4feb70a40", name: "GameInviteChannels.compiled.messages", type: "jsona" });

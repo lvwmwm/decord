@@ -1,22 +1,22 @@
-// Module ID: 12526
-// Function ID: 12527
+// Module ID: 12044
+// Function ID: 12045
 // Name: RoleMembersActionSheet
-// Dependencies: [19, 17, 5307, 7315, 5212, 21, 5306, 575, 11, 7893, 504, 7891, 1187, 5919, 5556, 12527, 2]
+// Dependencies: [19, 17, 4914, 6919, 4819, 21, 4913, 575, 11, 7495, 504, 7493, 1186, 5504, 5141, 12045, 2]
 // Exports: default
 
-// Module 12526 (RoleMembersActionSheet)
+// Module 12044 (RoleMembersActionSheet)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import ChannelMemberStore from "ChannelMemberStore" /* 7315 */;
-import GuildRoleMemberActionCreators from "GuildRoleMemberActionCreators" /* 7893 */;
+import native from "native" /* 1186 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import ChannelMemberStore from "ChannelMemberStore" /* 6919 */;
+import GuildRoleMemberActionCreators from "GuildRoleMemberActionCreators" /* 7495 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5307 */;
-import GuildRoleStore from "GuildRoleStore" /* 5212 */;
+import AccessibilityStore from "AccessibilityStore" /* 4914 */;
+import GuildRoleStore from "GuildRoleStore" /* 4819 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -79,7 +79,7 @@ export default function RoleMembersActionSheet(guildId) {
   const tmp9 = roleId;
   let obj3 = roleId(11);
   const result = obj3.castGuildIdAsEveryoneGuildRoleId(guildId);
-  const tmp11 = roleId(7891)(guildId);
+  const tmp11 = roleId(7493)(guildId);
   let tmp12 = null;
   if (roleId !== result) {
     let tmp13;
@@ -96,9 +96,9 @@ export default function RoleMembersActionSheet(guildId) {
   let tmp16Result = null;
   if (null != stateFromStores) {
     let obj4 = { scrollable: true, header: tmp14, children: closure_8(tmp9Result, obj5) };
-    const BottomSheet = tmp3(5556).BottomSheet;
+    const BottomSheet = tmp3(5141).BottomSheet;
     obj5 = { guildId, channelId, roleId, headerShown: false, inActionSheet: true, disableStickySections: true, disableThemedGradient: true };
-    tmp9Result = tmp9(12527);
+    tmp9Result = tmp9(12045);
     if (channelId == null) {
       channelId = EVERYONE_CHANNEL_ID;
     }

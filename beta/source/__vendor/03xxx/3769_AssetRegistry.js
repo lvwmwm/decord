@@ -1,10 +1,10 @@
 // Module ID: 3769
 // Function ID: 3770
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 3769 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9wcmVtaXVtL2xvZ2l0ZWNoXzNwcA==", scales: [1], hash: "bd9669734b2c226e20aa86809814b321", name: "tr.messages.bd9669734b2c226e20aa86809814b321.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/hangout_window", scales: [1], hash: "0ffaf58e78768b3ade273f3634f7892a", name: "HangoutWindow.compiled.messages", type: "jsona" });

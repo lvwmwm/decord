@@ -1,30 +1,30 @@
-// Module ID: 19605
-// Function ID: 19606
+// Module ID: 18866
+// Function ID: 18867
 // Name: NewGroupDMScreen
-// Dependencies: [32, 5, 19, 17, 5155, 16259, 6061, 1388, 10244, 1072, 21, 5306, 575, 8134, 6890, 8136, 14039, 5542, 504, 12544, 12546, 12543, 1256, 6005, 1113, 19604, 9051, 12547, 6004, 9061, 15894, 7660, 8475, 1187, 11781, 19541, 2]
+// Dependencies: [32, 5, 19, 17, 4762, 15032, 5654, 1386, 9646, 1071, 21, 4913, 575, 7737, 6494, 7739, 12206, 5127, 504, 12061, 12063, 12060, 1255, 5595, 1112, 18865, 8561, 12064, 5594, 8571, 14648, 7262, 8066, 1186, 9647, 18802, 2]
 // Exports: default
 
-// Module 19605 (NewGroupDMScreen)
+// Module 18866 (NewGroupDMScreen)
 import nativeDefault from "native" /* 575 */;
-import intl4 from "intl" /* 1113 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import ToastUtils from "ToastUtils" /* 6004 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 8134 */;
-import HeaderShared from "HeaderShared" /* 9051 */;
-import UserRowConstants from "UserRowConstants" /* 10244 */;
-import openGroupDMNitroCapLimitSheetDefault from "openGroupDMNitroCapLimitSheet" /* 12547 */;
-import GroupDMRecipientLimitTitleDefault from "GroupDMRecipientLimitTitle" /* 19604 */;
+import intl4 from "intl" /* 1112 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import ToastUtils from "ToastUtils" /* 5594 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7737 */;
+import HeaderShared from "HeaderShared" /* 8561 */;
+import UserRowConstants from "UserRowConstants" /* 9646 */;
+import openGroupDMNitroCapLimitSheetDefault from "openGroupDMNitroCapLimitSheet" /* 12064 */;
+import GroupDMRecipientLimitTitleDefault from "GroupDMRecipientLimitTitle" /* 18865 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import PrivateChannelRecipientsInviteStore from "PrivateChannelRecipientsInviteStore" /* 16259 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 6061 */;
-import UserStore from "UserStore" /* 1388 */;
-import Constants from "Constants" /* 1072 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import PrivateChannelRecipientsInviteStore from "PrivateChannelRecipientsInviteStore" /* 15032 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5654 */;
+import UserStore from "UserStore" /* 1386 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -635,7 +635,7 @@ export default function NewGroupDMScreen(navigation) {
       title: "" + stringResult + " (" + formatToPlainStringResult + ")",
       headerTitle: tmp6 ? (() => {
         obj = { title: stringResult, memberCount, recipientLimit };
-        return memberCount(GroupDMRecipientLimitTitleDefault, obj);
+        return authStore4(GroupDMRecipientLimitTitleDefault, obj);
       }) : ((arg0) => {
         let str;
         if (arg0 == null) {
@@ -646,7 +646,7 @@ export default function NewGroupDMScreen(navigation) {
           const GenericHeaderTitle = HeaderShared.GenericHeaderTitle;
           const merged1 = Object.assign(merged);
           str = "mobile-text-heading-primary";
-          const tmp3 = closure_17;
+          const tmp3 = authStore4;
           if (closure_2) {
             str = "text-feedback-critical";
           }
@@ -659,7 +659,7 @@ export default function NewGroupDMScreen(navigation) {
         const tmp = first1;
         if (tmp) {
           const obj2 = { color: button.button.color, size: "small" };
-          result = memberCount(metroRequire, obj2);
+          result = authStore4(metroRequire, obj2);
         } else {
           obj = stateFromStores;
           let isGroupDMResult;

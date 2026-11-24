@@ -15,7 +15,7 @@ import _mod733 from "module_733" /* 733 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export function getTraceData() {
+export function getTraceData(arg0) {
   let propagationSpanId;
   let propagationSpanId2;
   let sampled;

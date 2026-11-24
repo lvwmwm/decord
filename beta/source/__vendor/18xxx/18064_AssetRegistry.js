@@ -1,10 +1,10 @@
 // Module ID: 18064
 // Function ID: 18065
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 18064 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/../discord_common/js/shared/images/flags", width: 70, height: 47, scales: [1], hash: "08d0c70a708cd25acecb7a8b0cb0eb23", name: "hu", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/notification_center/native/images", width: 24, height: 24, scales: [1, 2, 3], hash: "6840fde776aba6730d4f566b68c449e7", name: "ic_highlight", type: "png" });

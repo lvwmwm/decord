@@ -1,11 +1,11 @@
-// Module ID: 11955
-// Function ID: 11956
+// Module ID: 11723
+// Function ID: 11724
 // Name: YYTextReplacementExperiment
-// Dependencies: [1452, 2]
+// Dependencies: [1450, 2]
 // Exports: shouldEnableYYTextReplacement
 
-// Module 11955 (YYTextReplacementExperiment)
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+// Module 11723 (YYTextReplacementExperiment)
+import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

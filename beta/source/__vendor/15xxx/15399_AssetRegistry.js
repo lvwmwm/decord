@@ -1,10 +1,10 @@
 // Module ID: 15399
 // Function ID: 15400
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 15399 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/guild_boosting/perks", width: 20, height: 20, scales: [2, 3], hash: "6d92319c85fd42e305e389df8a64c64a", name: "badge", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/status", width: 36, height: 24, scales: [2, 3], hash: "48a492306912f6e40271e3f606596ed0", name: "StatusVROnline", type: "png" });

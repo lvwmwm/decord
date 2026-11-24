@@ -1,25 +1,25 @@
-// Module ID: 15546
-// Function ID: 15547
+// Module ID: 14279
+// Function ID: 14280
 // Name: ExecutedCommand
-// Dependencies: [17, 1407, 5155, 1388, 1072, 1417, 1414, 6739, 12591, 575, 8724, 6371, 9189, 9191, 7864, 1113, 12700, 2]
+// Dependencies: [17, 1405, 4762, 1386, 1071, 1415, 1412, 6341, 10545, 575, 8314, 5973, 8699, 8701, 7466, 1112, 10674, 2]
 // Exports: createExecutedCommand
 
-// Module 15546 (ExecutedCommand)
+// Module 14279 (ExecutedCommand)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import InteractionTypes from "InteractionTypes" /* 6371 */;
-import useMessageAuthor from "useMessageAuthor" /* 6739 */;
-import ActivitiesInTextUtils from "ActivitiesInTextUtils" /* 7864 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 8724 */;
-import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 9189 */;
-import createDisplayNameStylesMobile from "createDisplayNameStylesMobile" /* 9191 */;
-import ApplicationInteractionInfoUtils from "ApplicationInteractionInfoUtils" /* 12591 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 12700 */;
-import UserRecord from "UserRecord" /* 1407 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import UserStore from "UserStore" /* 1388 */;
+import Constants from "Constants" /* 1071 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
+import InteractionTypes from "InteractionTypes" /* 5973 */;
+import useMessageAuthor from "useMessageAuthor" /* 6341 */;
+import ActivitiesInTextUtils from "ActivitiesInTextUtils" /* 7466 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 8314 */;
+import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 8699 */;
+import createDisplayNameStylesMobile from "createDisplayNameStylesMobile" /* 8701 */;
+import ApplicationInteractionInfoUtils from "ApplicationInteractionInfoUtils" /* 10545 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 10674 */;
+import UserRecord from "UserRecord" /* 1405 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 
 const processColor = react_native.processColor;
@@ -64,7 +64,7 @@ export function createExecutedCommand(message, channel, roleStyle, forcedTheme, 
       if (channel != null) {
         guildId = channel.getGuildId();
       }
-      tmp7(1417);
+      tmp7(1415);
       if (null != guildMemberAvatar) {
         let guildMemberAvatarSource;
         if (null != guildId) {
@@ -171,9 +171,9 @@ export function createExecutedCommand(message, channel, roleStyle, forcedTheme, 
       if (!result) {
         const tmp17Result18 = ActivitiesInTextUtils;
         const result3 = tmp17Result18.isActivitiesInTextEnabled(channel);
-        const intl = tmp17(1113).intl;
+        const intl = tmp17(1112).intl;
         const formatToParts = intl.formatToParts;
-        const t = tmp17(1113).t;
+        const t = tmp17(1112).t;
         if (result3) {
           const prop = t["R/mrBi"];
           const obj10 = { activityTextOnClick: obj11 };
@@ -196,10 +196,10 @@ export function createExecutedCommand(message, channel, roleStyle, forcedTheme, 
       const tmp17Result19 = AppLauncherUtils;
       result4 = tmp17Result19.formatPrimaryEntryPointCommandName(displayName);
     }
-    const intl2 = tmp17(1113).intl;
+    const intl2 = tmp17(1112).intl;
     const formatToParts2 = intl2.formatToParts;
     const obj15 = { commandName: result4, commandNameOnClick: obj16 };
-    const SSrolr = tmp17(1113).t.SSrolr;
+    const SSrolr = tmp17(1112).t.SSrolr;
     const merged2 = Object.assign(obj5);
     if (null == channel) {
       obj16 = {};
@@ -210,10 +210,10 @@ export function createExecutedCommand(message, channel, roleStyle, forcedTheme, 
     }
     formatToPartsResult = formatToParts2(SSrolr, obj15);
     if (null != tmp25) {
-      const intl3 = tmp17(1113).intl;
+      const intl3 = tmp17(1112).intl;
       const formatToParts3 = intl3.formatToParts;
       const obj18 = { commandName: result4, commandNameOnClick: {}, targetUsername: tmp17Result20.getUserAuthor(tmp25, channel).nick, targetUsernameOnClick: obj19 };
-      const mqKdCM = tmp17(1113).t.mqKdCM;
+      const mqKdCM = tmp17(1112).t.mqKdCM;
       const merged3 = Object.assign(obj5);
       let id3;
       tmp17Result20 = useMessageAuthor;

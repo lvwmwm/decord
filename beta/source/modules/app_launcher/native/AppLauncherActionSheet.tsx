@@ -1,20 +1,20 @@
-// Module ID: 13535
-// Function ID: 13536
+// Module ID: 18409
+// Function ID: 18410
 // Name: AppLauncherActionSheet
-// Dependencies: [32, 19, 1501, 21, 1655, 12580, 12581, 12582, 5556, 13415, 13536, 5887, 2]
+// Dependencies: [32, 19, 1499, 21, 1653, 12106, 10676, 12107, 5141, 12949, 13068, 5472, 2]
 // Exports: useAppLauncherActionSheet
 
-// Module 13535 (AppLauncherActionSheet)
+// Module 18409 (AppLauncherActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1501 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5556 */;
-import reactDefault from "react" /* 5887 */;
-import AppLauncherContext from "AppLauncherContext" /* 12580 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 12581 */;
-import useDefaultAppLauncherWidth from "useDefaultAppLauncherWidth" /* 12582 */;
-import AppLauncherNavigatorDefault from "AppLauncherNavigator" /* 13415 */;
-import getAppDMApplication from "getAppDMApplication" /* 13536 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1499 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5141 */;
+import reactDefault from "react" /* 5472 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 10676 */;
+import AppLauncherContext from "AppLauncherContext" /* 12106 */;
+import useDefaultAppLauncherWidth from "useDefaultAppLauncherWidth" /* 12107 */;
+import AppLauncherNavigatorDefault from "AppLauncherNavigator" /* 12949 */;
+import getAppDMApplication from "getAppDMApplication" /* 13068 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -25,9 +25,9 @@ function AppLauncherActionSheet(arg0) {
   let name;
   ({ chatInputRef: closure_129_0, channel } = arg0);
   const ref = react.useRef(null);
-  const obj = _mod1655;
+  const obj = _mod1653;
   const sharedValue = obj.useSharedValue(-1);
-  const obj2 = _mod1655;
+  const obj2 = _mod1653;
   const sharedValue1 = obj2.useSharedValue(0);
   const ref1 = react.useRef(undefined);
   const ref2 = react.useRef(AppLauncherContext.AppLauncherKeyboardCloseReason.DISMISSED);

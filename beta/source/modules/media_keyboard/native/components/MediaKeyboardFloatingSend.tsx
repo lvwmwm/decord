@@ -1,19 +1,19 @@
-// Module ID: 13562
-// Function ID: 13563
+// Module ID: 18412
+// Function ID: 18413
 // Name: MediaKeyboardFloatingSend
-// Dependencies: [32, 19, 17, 8872, 21, 5306, 575, 504, 1655, 1630, 5929, 5930, 671, 5883, 8004, 1113, 6021, 2]
+// Dependencies: [32, 19, 17, 8467, 21, 4913, 575, 504, 1653, 1628, 5514, 5515, 671, 5468, 7607, 1112, 5611, 2]
 
-// Module 13562 (MediaKeyboardFloatingSend)
+// Module 18412 (MediaKeyboardFloatingSend)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import LinearGradientDefault from "LinearGradient" /* 5883 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
+import LinearGradientDefault from "LinearGradient" /* 5468 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 8872 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8467 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -82,9 +82,9 @@ const memoResult = react.memo(function MediaKeyboardFloatingSendInner(arg0) {
   let items = [UploadAttachmentStore];
   const items1 = [channelId, draftType];
   const stateFromStores = obj2.useStateFromStores(items, () => uploadCount.getUploadCount(channelId, draftType) > 0, items1);
-  const obj3 = require("module_1655");
+  const obj3 = require("module_1653");
   const sharedValue = obj3.useSharedValue(false);
-  let obj4 = require("module_1655");
+  let obj4 = require("module_1653");
   const items2 = [closure_9, animatedIndex, 0.7, stateFromStores];
   let c0;
   importDefault = undefined;
@@ -114,8 +114,8 @@ const memoResult = react.memo(function MediaKeyboardFloatingSendInner(arg0) {
   MediaKeyboardFloatingSendTsx2.__initData = tmp13;
   const animatedReaction = obj4.useAnimatedReaction(MediaKeyboardFloatingSendTsx1, MediaKeyboardFloatingSendTsx2);
   const items6 = [closure_11, bottom, , , , ];
-  const useAnimatedStyle = require("module_1655").useAnimatedStyle;
-  require("module_1655");
+  const useAnimatedStyle = require("module_1653").useAnimatedStyle;
+  require("module_1653");
   items6[2] = nativeDefault;
   items6[3] = require("spring/spring").withSpring;
   items6[4] = sharedValue;
@@ -147,7 +147,7 @@ const memoResult = react.memo(function MediaKeyboardFloatingSendInner(arg0) {
   const items8 = [closure_12, sharedValue];
   c0 = undefined;
   [tmp24, tmp25] = items8;
-  const tmp6Result2 = require("module_1655");
+  const tmp6Result2 = require("module_1653");
   class MediaKeyboardFloatingSendTsx4 {
     constructor() {
       let pointerEvents = "none";
@@ -177,14 +177,14 @@ const memoResult = react.memo(function MediaKeyboardFloatingSendInner(arg0) {
   const imperativeHandle = obj.useImperativeHandle(ref, () => ({ setInsetFab }));
   const obj5 = { style: items11, animatedProps, children: items12 };
   items11 = [animatedStyle, tmp.sendContainer];
-  const View = tmp2(1655).View;
+  const View = tmp2(1653).View;
   const obj6 = { style: tmp.gradient, pointerEvents: "none" };
   const tmp2Result = LinearGradientDefault;
   const merged = Object.assign(memo);
   items12 = [closure_6(tmp2Result, obj6), ];
   const obj7 = { accessibilityLabel: intl.string(require("intl").t.TXNS7S), icon: closure_6(require("SendMessageIcon").SendMessageIcon, {}), onPress: onSend, positionBottom: bottom };
-  const FloatingActionButton = tmp6(8004).FloatingActionButton;
-  intl = tmp6(1113).intl;
+  const FloatingActionButton = tmp6(7607).FloatingActionButton;
+  intl = tmp6(1112).intl;
   items12[1] = closure_6(FloatingActionButton, obj7);
   return closure_7(View, obj5);
 });

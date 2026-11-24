@@ -1,10 +1,10 @@
 // Module ID: 2640
 // Function ID: 2641
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 2640 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9ndWlsZF9zZXR0aW5ncy9zZXJ2ZXJfbW9uZXRpemF0aW9uL3RhZ3Mvd2Vi", scales: [1], hash: "d86ccac87c58387b6a30614bba23fdcd", name: "el.messages.d86ccac87c58387b6a30614bba23fdcd.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/game_organization_invites", scales: [1], hash: "6845b3d5671375f75f1afd78e121b052", name: "GameOrganizationInvitesUntranslated.compiled.messages", type: "jsona" });

@@ -1,17 +1,17 @@
-// Module ID: 17075
-// Function ID: 17076
+// Module ID: 15840
+// Function ID: 15841
 // Name: ColorBlock
-// Dependencies: [19, 17, 21, 5306, 575, 1090, 7428, 5303, 1187, 12483, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 1089, 7030, 4910, 1186, 12006, 2]
 
-// Module 17075 (ColorBlock)
+// Module 15840 (ColorBlock)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
-import ColorUtils from "ColorUtils" /* 5303 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12483 */;
+import utils_ColorUtils from "utils/ColorUtils" /* 1089 */;
+import ColorUtils from "ColorUtils" /* 4910 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12006 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let color;
@@ -57,7 +57,7 @@ const memoResult = react.memo((color) => {
       style: items,
       children: tmp7Result
     };
-    const PressableOpacity = tmp2(7428).PressableOpacity;
+    const PressableOpacity = tmp2(7030).PressableOpacity;
     hexToColorName = ColorUtils.hexToColorName;
     ColorUtils;
     items = [tmp.colorBlock, style, ];
@@ -69,7 +69,7 @@ const memoResult = react.memo((color) => {
     tmp2Result5 = utils_ColorUtils;
     if (selected) {
       const obj5 = { source: AssetRegistryDefault, color: BLACK2 };
-      const Icon2 = tmp2(1187).Icon;
+      const Icon2 = tmp2(1186).Icon;
       if (v < 0.5) {
         BLACK2 = tmp10(575).unsafe_rawColors.WHITE;
       } else {
@@ -88,7 +88,7 @@ const memoResult = react.memo((color) => {
     tmp2Result6 = utils_ColorUtils;
     if (selected) {
       const obj8 = { source: AssetRegistryDefault, color: BLACK };
-      const Icon = tmp2(1187).Icon;
+      const Icon = tmp2(1186).Icon;
       if (v < 0.5) {
         BLACK = tmp4(575).unsafe_rawColors.WHITE;
       } else {

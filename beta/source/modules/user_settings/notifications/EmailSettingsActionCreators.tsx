@@ -1,52 +1,112 @@
-// Module ID: 18123
-// Function ID: 18124
+// Module ID: 16903
+// Function ID: 16904
 // Name: EmailSettingsActionCreators
-// Dependencies: [5, 16243, 18124, 1072, 6841, 1264, 5167, 572, 18125, 2]
+// Dependencies: [5, 15016, 16904, 1071, 572, 6432, 1263, 4774, 16905, 2]
 // Exports: fetchEmailSettings, updateEmailSetting, updateMarketingEmailSettings
 
-// Module 18123 (EmailSettingsActionCreators)
+// Module 16903 (EmailSettingsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import Constants from "Constants" /* 1072 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
-import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6841 */;
-import EmailSettingsConstants from "EmailSettingsConstants" /* 18124 */;
+import Constants from "Constants" /* 1071 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1263 */;
+import TrackedHTTPUtilsDefault from "TrackedHTTPUtils" /* 6432 */;
+import EmailSettingsConstants from "EmailSettingsConstants" /* 16904 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import EmailSettingsStore from "EmailSettingsStore" /* 16243 */;
+import EmailSettingsStore from "EmailSettingsStore" /* 15016 */;
 import size from "module_2" /* 2 */;
 
-let closure_3, closure_4;
+let c4, closure_3, closure_4;
 
 let obj = function _fetchEmailSettings() {
-  obj = _asyncToGenerator(async () => {
-    let c2;
-    let c3;
-    let c4;
-    let closure_1;
-    let obj6;
-    const obj4 = { url: constants.EMAIL_SETTINGS, trackedActionData: obj6, rejectWithError: true };
-    obj6 = {
-      event: discord_common_AnalyticsUtils.NetworkActionNames.EMAIL_SETTINGS_FETCH,
-      properties(body) {
-        let initialized;
-        if (body != null) {
-          body = body.body;
-          if (body != null) {
-            initialized = body.initialized;
-          }
-        }
-        obj = closure_1_0(closure_1_2[6]);
-        return obj.exact({ initialized });
+  let isFetching;
+  obj = _asyncToGenerator(async (arg0, value) => {
+    let obj7;
+    if (c4 === 2) {
+      c4 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "HermesInternal", done: null };
       }
-    };
-    const get = TrackedHTTPUtilsDefault.get;
-    await get(obj4);
-    const obj5 = closure_129_1(closure_129_2[7]);
-    obj5.dispatch({ type: "EMAIL_SETTINGS_FETCH_FAILURE" });
-    let closure_0 = await "HermesInternal";
-    obj = closure_129_1(closure_129_2[7]);
-    const obj9 = { type: "EMAIL_SETTINGS_FETCH_SUCCESS", settings: closure_0.body };
-    obj.dispatch(obj9);
-    return closure_0.body;
+    } else {
+      let c2;
+      try {
+        let closure_0;
+        c4 = 2;
+        if (0 === c3) {
+          if (arg0 === 1) {
+            c4 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c4 = 3;
+            const obj3 = { value, done: true };
+            return obj3;
+          } else {
+            let closure_1 = tmp;
+            closure_0 = undefined;
+            if (!isFetching.isFetching) {
+              const obj6 = DispatcherDefault;
+              obj6.dispatch({ type: "EMAIL_SETTINGS_FETCH_START" });
+              c2 = 1;
+              const obj4 = { url: constants.EMAIL_SETTINGS, trackedActionData: obj7, rejectWithError: true };
+              obj7 = {
+                event: discord_common_AnalyticsUtils.NetworkActionNames.EMAIL_SETTINGS_FETCH,
+                properties(body) {
+                            let initialized;
+                            if (body != null) {
+                              body = body.body;
+                              if (body != null) {
+                                initialized = body.initialized;
+                              }
+                            }
+                            obj = closure_1_0(closure_1_2[7]);
+                            return obj.exact({ initialized });
+                          }
+              };
+              const get = TrackedHTTPUtilsDefault.get;
+              c3 = 2;
+              c4 = 1;
+              const obj8 = { value: get(obj4), done: false };
+              return obj8;
+            }
+          }
+        } else if (1 === c3) {
+          c2 = 0;
+          const obj5 = closure_129_1(closure_129_2[4]);
+          obj5.dispatch({ type: "EMAIL_SETTINGS_FETCH_FAILURE" });
+        } else if (arg0 === 1) {
+          c4 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c2 = 0;
+          c4 = 3;
+          const obj9 = { value, done: true };
+          return obj9;
+        } else {
+          closure_0 = value;
+          obj = closure_129_1(closure_129_2[4]);
+          const obj10 = { type: "EMAIL_SETTINGS_FETCH_SUCCESS", settings: closure_0.body };
+          obj.dispatch(obj10);
+          c2 = 0;
+          c4 = 3;
+          const obj11 = { value: closure_0.body, done: true };
+          return obj11;
+        }
+        c4 = 3;
+        return { value: "HermesInternal", done: null };
+      } catch (tmp25) {
+        if (0 === c2) {
+          c4 = 3;
+          throw tmp25;
+        } else {
+          c3 = 1;
+        }
+      }
+    }
   });
   return obj(...arguments);
 };
@@ -128,7 +188,7 @@ obj = function _updateEmailSetting() {
             if (1 === tmp4) {
               c5 = 0;
               const obj15 = { type: "EMAIL_SETTINGS_UPDATE_FAILURE", previous };
-              const obj4 = closure_131_1(closure_131_2[7]);
+              const obj4 = closure_131_1(closure_131_2[4]);
               obj4.dispatch(obj15);
               closure_131_1(closure_131_2[8])();
               tmp9 = closure_131_1;
@@ -141,7 +201,7 @@ obj = function _updateEmailSetting() {
               return { value, done: true };
             } else {
               const obj17 = { type: "EMAIL_SETTINGS_UPDATE_SUCCESS", settings: value.body };
-              obj = closure_131_1(closure_131_2[7]);
+              obj = closure_131_1(closure_131_2[4]);
               obj.dispatch(obj17);
               c5 = 0;
             }
@@ -220,7 +280,7 @@ obj = function _updateMarketingEmailSettings() {
           if (1 === tmp4) {
             c3 = 0;
             const obj11 = { type: "EMAIL_SETTINGS_UPDATE_FAILURE", previous };
-            const obj4 = closure_129_1(closure_129_2[7]);
+            const obj4 = closure_129_1(closure_129_2[4]);
             obj4.dispatch(obj11);
             closure_129_1(closure_129_2[8])();
           } else if (arg0 === 1) {
@@ -233,7 +293,7 @@ obj = function _updateMarketingEmailSettings() {
             return obj12;
           } else {
             body = value;
-            obj = closure_129_1(closure_129_2[7]);
+            obj = closure_129_1(closure_129_2[4]);
             const obj13 = { type: "EMAIL_SETTINGS_UPDATE_SUCCESS", settings: body.body };
             obj.dispatch(obj13);
             c3 = 0;

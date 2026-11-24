@@ -1,32 +1,32 @@
-// Module ID: 15214
-// Function ID: 15215
+// Module ID: 10169
+// Function ID: 10170
 // Name: MediaMessagePreview
-// Dependencies: [32, 19, 17, 8867, 7037, 5155, 6362, 10228, 1072, 21, 9159, 11069, 5306, 10195, 11065, 1655, 1708, 575, 15215, 504, 11899, 1113, 11, 15216, 12465, 11864, 8863, 12506, 5588, 14198, 12588, 6053, 2]
+// Dependencies: [32, 19, 17, 8462, 6641, 4762, 5964, 10054, 1071, 21, 8669, 10099, 4913, 10023, 10100, 1653, 1706, 575, 10170, 504, 10171, 1112, 11, 10173, 10380, 10381, 8458, 10416, 5173, 10424, 10435, 5646, 2]
 // Exports: default
 
-// Module 15214 (MediaMessagePreview)
+// Module 10169 (MediaMessagePreview)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import intl2 from "intl" /* 1113 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5588 */;
-import RowGeneratorDefault from "RowGenerator" /* 9159 */;
-import RowGeneratorTypes from "RowGeneratorTypes" /* 11069 */;
-import messages_MessagesUtils from "messages/MessagesUtils" /* 11864 */;
-import MessageDataSnowflakeUtils from "MessageDataSnowflakeUtils" /* 12465 */;
-import handleMessagesTapLink from "handleMessagesTapLink" /* 12588 */;
-import showMediaMessagePreviewActionSheetDefault from "showMediaMessagePreviewActionSheet" /* 15216 */;
+import Constants from "Constants" /* 1071 */;
+import intl2 from "intl" /* 1112 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5173 */;
+import RowGeneratorDefault from "RowGenerator" /* 8669 */;
+import RowGeneratorTypes from "RowGeneratorTypes" /* 10099 */;
+import showMediaMessagePreviewActionSheetDefault from "showMediaMessagePreviewActionSheet" /* 10173 */;
+import MessageDataSnowflakeUtils from "MessageDataSnowflakeUtils" /* 10380 */;
+import messages_MessagesUtils from "messages/MessagesUtils" /* 10381 */;
+import handleMessagesTapLink from "handleMessagesTapLink" /* 10435 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ForumPostMessagesStore from "ForumPostMessagesStore" /* 8867 */;
-import SearchMessageStore from "SearchMessageStore" /* 7037 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import MessageStore from "MessageStore" /* 6362 */;
-import MessagePreviewStore from "MessagePreviewStore" /* 10228 */;
+import ForumPostMessagesStore from "ForumPostMessagesStore" /* 8462 */;
+import SearchMessageStore from "SearchMessageStore" /* 6641 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import MessageStore from "MessageStore" /* 5964 */;
+import MessagePreviewStore from "MessagePreviewStore" /* 10054 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let flag, rowGenerator;
@@ -37,7 +37,7 @@ let hasOwnProperty;
 let map1;
 let metroRequire;
 let tmp5;
-const _mod1708 = tmp5(1708);
+const _mod1706 = tmp5(1706);
 function MeasureMessage(message) {
   let closure_4;
   let items1;
@@ -105,7 +105,7 @@ function MeasureMessageAfterEntrance(entranceAnimationDriver) {
   let c0;
   [tmp8, tmp9] = items;
   const tmp2 = _slicedToArray(react.useState(false), 2);
-  const tmp7 = _mod1655;
+  const tmp7 = _mod1653;
   class MediaMessagePreviewTsx1 {
     constructor() {
       return closure_0.get() >= 1;
@@ -117,7 +117,7 @@ function MeasureMessageAfterEntrance(entranceAnimationDriver) {
   MediaMessagePreviewTsx1.__initData = tmp8;
   const items2 = [closure_20, , ];
   const useAnimatedReaction = tmp7.useAnimatedReaction;
-  items2[1] = _mod1708.scheduleOnRN;
+  items2[1] = _mod1706.scheduleOnRN;
   items2[2] = tmp4;
   c0 = undefined;
   let c1;
@@ -234,7 +234,7 @@ export default function MediaMessagePreview(channelId) {
     const tmp3 = full;
     if (!tmp3) {
       const obj = { numberOfLines: 3, expandable: true, seeMoreLabel: " " + intl.string(intl2.t["7qbp3B"]), seeMoreLabelColor, outAnimationDuration: Math.min(0.25 * animationDriver.get(), 0.1), outAnimation: "fade" };
-      intl = tmp(1113).intl;
+      intl = tmp(1112).intl;
       const _HermesInternal = HermesInternal;
       const _Math = Math;
       message.truncation = obj;
@@ -314,7 +314,7 @@ export default function MediaMessagePreview(channelId) {
           const merged = Object.assign(reaction);
           tmp7 = obj;
         }
-        const result = handleAddOrRemoveReaction(tmp6, channel, tmp7, isBurst, tmp3(8863).ReactionLocations.MOBILE_MEDIA_VIEWER);
+        const result = handleAddOrRemoveReaction(tmp6, channel, tmp7, isBurst, tmp3(8458).ReactionLocations.MOBILE_MEDIA_VIEWER);
       }
     }
   }, items7);

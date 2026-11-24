@@ -1,10 +1,10 @@
-// Module ID: 1376
-// Function ID: 1377
+// Module ID: 1374
+// Function ID: 1375
 // Name: utils/AnalyticsSchema
-// Dependencies: [1072, 2]
+// Dependencies: [1071, 2]
 
-// Module 1376 (utils/AnalyticsSchema)
-import Constants from "Constants" /* 1072 */;
+// Module 1374 (utils/AnalyticsSchema)
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

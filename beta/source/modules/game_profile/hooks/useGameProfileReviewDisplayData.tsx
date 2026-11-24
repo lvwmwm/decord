@@ -1,14 +1,14 @@
-// Module ID: 10347
-// Function ID: 10348
+// Module ID: 9837
+// Function ID: 9838
 // Name: useGameProfileReviewDisplayData
-// Dependencies: [19, 10291, 10337, 2162, 1113, 10338, 2]
+// Dependencies: [19, 9781, 9827, 2161, 1112, 9828, 2]
 // Exports: useGameProfileReviewDisplayData
 
-// Module 10347 (useGameProfileReviewDisplayData)
-import GameDetectionTypes from "GameDetectionTypes" /* 2162 */;
-import SteamReleaseStatus from "SteamReleaseStatus" /* 10291 */;
-import calculateSteamReviewScoreDescription from "calculateSteamReviewScoreDescription" /* 10337 */;
-import GameProfileReviewUtils from "GameProfileReviewUtils" /* 10338 */;
+// Module 9837 (useGameProfileReviewDisplayData)
+import GameDetectionTypes from "GameDetectionTypes" /* 2161 */;
+import SteamReleaseStatus from "SteamReleaseStatus" /* 9781 */;
+import calculateSteamReviewScoreDescription from "calculateSteamReviewScoreDescription" /* 9827 */;
+import GameProfileReviewUtils from "GameProfileReviewUtils" /* 9828 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -62,7 +62,7 @@ export function useGameProfileReviewDisplayData(game, steamWebsiteUrl) {
     } else if (steam != null) {
       ratingCount = steam.ratingCount;
     }
-    t = tmp3(1113).t;
+    t = tmp3(1112).t;
     tmp3Result2 = GameProfileReviewUtils;
     return obj;
   }, items);

@@ -1,23 +1,23 @@
-// Module ID: 14184
-// Function ID: 14185
+// Module ID: 12425
+// Function ID: 12426
 // Name: useSafetyHubClassifications
-// Dependencies: [19, 8231, 8206, 504, 11, 8205, 8207, 14185, 2]
+// Dependencies: [19, 7835, 7809, 504, 11, 7808, 7810, 12426, 2]
 // Exports: useActiveSafetyHubClassifications, useExpiredSafetyHubClassifications, useSafetyHubAppealSignal, useSafetyHubClassification, useSafetyHubClassifications
 
-// Module 14184 (useSafetyHubClassifications)
+// Module 12425 (useSafetyHubClassifications)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initialized from "get initialized" /* 504 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 8206 */;
-import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 14185 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7809 */;
+import SafetyHubActionCreatorsAll from "SafetyHubActionCreators" /* 12426 */;
 import react from "react" /* 19 */;
-import SafetyHubStore from "SafetyHubStore" /* 8231 */;
+import SafetyHubStore from "SafetyHubStore" /* 7835 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
-const f109232 = () => classifications.getClassifications();
-const f109233 = (id, id2) => {
+const f102172 = () => classifications.getClassifications();
+const f102173 = (id, id2) => {
   const obj = SnowflakeUtilsDefault;
   const extractTimestampResult = obj.extractTimestamp(id2.id);
   const obj2 = SnowflakeUtilsDefault;
@@ -29,8 +29,8 @@ const result = size.fileFinishedImporting("modules/safety_hub/hooks/useSafetyHub
 export function useSafetyHubClassifications() {
   const items = [SafetyHubStore];
   const obj = get_initialized;
-  const stateFromStoresArray = obj.useStateFromStoresArray(items, f109232);
-  return stateFromStoresArray.sort(f109233);
+  const stateFromStoresArray = obj.useStateFromStoresArray(items, f102172);
+  return stateFromStoresArray.sort(f102173);
 }
 export function useSafetyHubClassification(classificationId) {
   let USER;
@@ -56,7 +56,7 @@ export function useSafetyHubClassification(classificationId) {
     if (guild_metadata != null) {
       member_type = guild_metadata.member_type;
     }
-    if (member_type === tmp(8207).MemberType.OWNER) {
+    if (member_type === tmp(7810).MemberType.OWNER) {
       GUILD_MEMBER = ViolationType.GUILD_OWNER;
     } else {
       GUILD_MEMBER = ViolationType.GUILD_MEMBER;
@@ -85,8 +85,8 @@ export function useSafetyHubClassification(classificationId) {
 export function useActiveSafetyHubClassifications() {
   const items = [SafetyHubStore];
   const obj = get_initialized;
-  const stateFromStoresArray = obj.useStateFromStoresArray(items, f109232);
-  const sorted = stateFromStoresArray.sort(f109233);
+  const stateFromStoresArray = obj.useStateFromStoresArray(items, f102172);
+  const sorted = stateFromStoresArray.sort(f102173);
   let date = new Date();
   return sorted.filter((max_expiration_time) => {
     date = new Date(max_expiration_time.max_expiration_time);
@@ -97,8 +97,8 @@ export function useExpiredSafetyHubClassifications() {
   let classifications;
   let obj = get_initialized;
   const items = [SafetyHubStore];
-  const stateFromStoresArray = obj.useStateFromStoresArray(items, f109232);
-  const sorted = stateFromStoresArray.sort(f109233);
+  const stateFromStoresArray = obj.useStateFromStoresArray(items, f102172);
+  const sorted = stateFromStoresArray.sort(f102173);
   let date = new Date();
   return sorted.filter((max_expiration_time) => {
     date = new Date(max_expiration_time.max_expiration_time);

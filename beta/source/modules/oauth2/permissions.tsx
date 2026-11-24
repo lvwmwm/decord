@@ -1,13 +1,13 @@
-// Module ID: 7413
-// Function ID: 7414
+// Module ID: 7015
+// Function ID: 7016
 // Name: permissions
-// Dependencies: [1072, 1084, 1113, 2]
+// Dependencies: [1071, 1083, 1112, 2]
 // Exports: containsDisallowedPermission, getPermissionName
 
-// Module 7413 (permissions)
-import Constants from "Constants" /* 1072 */;
-import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
-import intl2 from "intl" /* 1113 */;
+// Module 7015 (permissions)
+import Constants from "Constants" /* 1071 */;
+import BigFlagUtilsAll from "BigFlagUtils" /* 1083 */;
+import intl2 from "intl" /* 1112 */;
 import size from "module_2" /* 2 */;
 
 let ADD_REACTIONS;

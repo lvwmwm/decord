@@ -1,31 +1,31 @@
-// Module ID: 7400
-// Function ID: 7401
+// Module ID: 7002
+// Function ID: 7003
 // Name: useOAuth2AuthorizeForm
-// Dependencies: [5, 32, 19, 17, 5253, 5307, 2143, 7085, 1388, 7401, 1072, 21, 5306, 5243, 504, 5558, 1655, 5538, 7055, 7402, 7403, 1084, 7404, 1285, 1269, 7405, 7407, 7409, 5943, 7410, 1242, 7411, 7412, 6057, 7413, 6322, 7414, 5926, 1113, 7418, 7087, 7419, 15959, 7307, 7408, 15960, 15964, 15963, 15965, 15966, 15967, 15969, 15972, 7894, 2]
+// Dependencies: [5, 32, 19, 17, 4860, 4914, 2142, 6689, 1386, 7003, 1071, 21, 4913, 4850, 504, 5143, 1653, 5123, 6659, 7004, 7005, 1083, 7006, 1284, 1268, 7007, 7009, 7011, 5528, 7012, 1241, 7013, 7014, 5650, 7015, 5924, 7016, 5511, 1112, 7020, 6691, 7021, 14713, 6913, 7010, 14714, 14718, 14717, 14719, 14720, 14721, 14723, 14726, 7496, 2]
 // Exports: default
 
-// Module 7400 (useOAuth2AuthorizeForm)
+// Module 7002 (useOAuth2AuthorizeForm)
 import react_native from "react-native" /* 17 */;
-import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
-import PermissionUtilsAll from "PermissionUtils" /* 5243 */;
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5943 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6057 */;
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 7055 */;
-import Authorize from "Authorize" /* 7402 */;
-import react_nativeDefault from "react-native" /* 7404 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 7418 */;
+import BigFlagUtilsAll from "BigFlagUtils" /* 1083 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4850 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5528 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5650 */;
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6659 */;
+import Authorize from "Authorize" /* 7004 */;
+import react_nativeDefault from "react-native" /* 7006 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 7020 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import module_5253 from "module_5253" /* 5253 */;
-import AccessibilityStore from "AccessibilityStore" /* 5307 */;
-import ApplicationRecord from "ApplicationRecord" /* 2143 */;
-import ConnectedAccountsStore from "ConnectedAccountsStore" /* 7085 */;
-import UserStore from "UserStore" /* 1388 */;
-import Constants_mod from "Constants" /* 7401 */;
-import Constants_mod2 from "Constants" /* 1072 */;
+import module_4860 from "module_4860" /* 4860 */;
+import AccessibilityStore from "AccessibilityStore" /* 4914 */;
+import ApplicationRecord from "ApplicationRecord" /* 2142 */;
+import ConnectedAccountsStore from "ConnectedAccountsStore" /* 6689 */;
+import UserStore from "UserStore" /* 1386 */;
+import Constants_mod from "Constants" /* 7003 */;
+import Constants_mod2 from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let _require, c5, c6, isAuthorized;
@@ -38,7 +38,7 @@ let closure_18;
 let closure_19;
 let map1;
 let tmp4;
-const scopes2 = tmp4(7403);
+const scopes2 = tmp4(7005);
 let View = react_native.View;
 let Constants = Constants_mod2;
 ({ EMOJI_POINTING_DOWN_CODE_POINT: map1, OAuth2Steps: closure_14 } = Constants);
@@ -1033,7 +1033,7 @@ export default function useOAuth2AuthorizeForm(clientId) {
             const error1 = new Error("Invalid scope: " + found[0]);
             closure_23(error1);
           } else {
-            const tmp27Result = tmp27(7413);
+            const tmp27Result = tmp27(7015);
             if (tmp27Result.containsDisallowedPermission(memo4)) {
               const _Error = Error;
               const self = this;
@@ -1102,8 +1102,8 @@ export default function useOAuth2AuthorizeForm(clientId) {
         let str5;
         class Spinner {
           constructor() {
-            const obj = { style: loading.loading, children: loading(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
-            return loading(View, obj);
+            const obj = { style: loading.loading, children: authStore4(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
+            return authStore4(View, obj);
           }
         }
         if (str5 == null) {
@@ -1113,16 +1113,16 @@ export default function useOAuth2AuthorizeForm(clientId) {
       }
       class Spinner {
         constructor() {
-          const obj = { style: loading.loading, children: loading(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
-          return loading(View, obj);
+          const obj = { style: loading.loading, children: authStore4(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
+          return authStore4(View, obj);
         }
       }
       if (null === first1) {
         let obj7 = { body: loading(Spinner, {}), obscured: false };
         class Spinner {
           constructor() {
-            const obj = { style: loading.loading, children: loading(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
-            return loading(View, obj);
+            const obj = { style: loading.loading, children: authStore4(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
+            return authStore4(View, obj);
           }
         }
       } else {
@@ -1135,8 +1135,8 @@ export default function useOAuth2AuthorizeForm(clientId) {
           let obj8 = { clientId, platformType: null, platformName: str4 };
           class Spinner {
             constructor() {
-              const obj = { style: loading.loading, children: loading(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
-              return loading(View, obj);
+              const obj = { style: loading.loading, children: authStore4(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
+              return authStore4(View, obj);
             }
           }
           tmp96 = loading(tmp89(tmp18[41]), obj8);
@@ -1149,16 +1149,16 @@ export default function useOAuth2AuthorizeForm(clientId) {
             let obj9 = { body: loading(Spinner, {}), obscured: false };
             class Spinner {
               constructor() {
-                const obj = { style: loading.loading, children: loading(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
-                return loading(View, obj);
+                const obj = { style: loading.loading, children: authStore4(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
+                return authStore4(View, obj);
               }
             }
           } else {
             let obj10 = { application: first9, onSelect: null };
             class Spinner {
               constructor() {
-                const obj = { style: loading.loading, children: loading(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
-                return loading(View, obj);
+                const obj = { style: loading.loading, children: authStore4(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
+                return authStore4(View, obj);
               }
             }
             tmp96 = loading(tmp89(tmp18[42]), obj10);
@@ -1189,8 +1189,8 @@ export default function useOAuth2AuthorizeForm(clientId) {
                 }
                 class Spinner {
                   constructor() {
-                    const obj = { style: loading.loading, children: loading(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
-                    return loading(View, obj);
+                    const obj = { style: loading.loading, children: authStore4(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
+                    return authStore4(View, obj);
                   }
                 }
                 if (hasItem) {
@@ -1203,8 +1203,8 @@ export default function useOAuth2AuthorizeForm(clientId) {
                     const hasItem1 = requestedScopes.includes(tmp21(tmp18[43]).OAuth2Scopes.BOT) || requestedScopes.includes(tmp21(tmp18[43]).OAuth2Scopes.APPLICATIONS_COMMANDS);
                     class Spinner {
                       constructor() {
-                        const obj = { style: loading.loading, children: loading(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
-                        return loading(View, obj);
+                        const obj = { style: loading.loading, children: authStore4(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
+                        return authStore4(View, obj);
                       }
                     }
                   }
@@ -1220,8 +1220,8 @@ export default function useOAuth2AuthorizeForm(clientId) {
                     let obj12 = { platformType: stateFromStores1.type, platformName: null, connectedAccount: stateFromStores1, applicationName: first.application.name };
                     class Spinner {
                       constructor() {
-                        const obj = { style: loading.loading, children: loading(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
-                        return loading(View, obj);
+                        const obj = { style: loading.loading, children: authStore4(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
+                        return authStore4(View, obj);
                       }
                     }
                     tmp106 = loading(tmp21(tmp18[41]).ConnectedAccountCard, obj12);
@@ -1242,8 +1242,8 @@ export default function useOAuth2AuthorizeForm(clientId) {
                   const tmp89Result8 = responseType(tmp18[48]);
                   class Spinner {
                     constructor() {
-                      const obj = { style: loading.loading, children: loading(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
-                      return loading(View, obj);
+                      const obj = { style: loading.loading, children: authStore4(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
+                      return authStore4(View, obj);
                     }
                   }
                   if (items28 == null) {
@@ -1268,8 +1268,8 @@ export default function useOAuth2AuthorizeForm(clientId) {
                   const tmp89Result9 = responseType(tmp18[49]);
                   class Spinner {
                     constructor() {
-                      const obj = { style: loading.loading, children: loading(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
-                      return loading(View, obj);
+                      const obj = { style: loading.loading, children: authStore4(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
+                      return authStore4(View, obj);
                     }
                   }
                   if (items30 == null) {
@@ -1314,8 +1314,8 @@ export default function useOAuth2AuthorizeForm(clientId) {
           const obj20 = { body: null, obscured: false };
           class Spinner {
             constructor() {
-              const obj = { style: loading.loading, children: loading(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
-              return loading(View, obj);
+              const obj = { style: loading.loading, children: authStore4(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
+              return authStore4(View, obj);
             }
           }
           return obj20;
@@ -1325,8 +1325,8 @@ export default function useOAuth2AuthorizeForm(clientId) {
           flag8 = false;
           class Spinner {
             constructor() {
-              const obj = { style: loading.loading, children: loading(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
-              return loading(View, obj);
+              const obj = { style: loading.loading, children: authStore4(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
+              return authStore4(View, obj);
             }
           }
           if (disclosures.AUTHORIZE_BOT_PERMISSIONS === first1) {
@@ -1334,16 +1334,16 @@ export default function useOAuth2AuthorizeForm(clientId) {
               ({ body: loading(Spinner, {}), obscured: false });
               class Spinner {
                 constructor() {
-                  const obj = { style: loading.loading, children: loading(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
-                  return loading(View, obj);
+                  const obj = { style: loading.loading, children: authStore4(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
+                  return authStore4(View, obj);
                 }
               }
             } else {
               const obj22 = { application: first.application, permissions: null, deniedPermissions: first6, onPermissionsChange: tmp92, guild: memo };
               class Spinner {
                 constructor() {
-                  const obj = { style: loading.loading, children: loading(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
-                  return loading(View, obj);
+                  const obj = { style: loading.loading, children: authStore4(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
+                  return authStore4(View, obj);
                 }
               }
               tmp96 = loading(tmp89(tmp18[50]), obj22);
@@ -1374,8 +1374,8 @@ export default function useOAuth2AuthorizeForm(clientId) {
               }
               class Spinner {
                 constructor() {
-                  const obj = { style: loading.loading, children: loading(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
-                  return loading(View, obj);
+                  const obj = { style: loading.loading, children: authStore4(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
+                  return authStore4(View, obj);
                 }
               }
               const obj23 = { application: first.application, scopes: requestedScopes, disclosures: first12, redirectUri: redirect_uri, approximateGuildCount: tmp128, isEmbeddedFlow: flag3, connectedAccount: stateFromStores1 };
@@ -1394,8 +1394,8 @@ export default function useOAuth2AuthorizeForm(clientId) {
         }
         class Spinner {
           constructor() {
-            const obj = { style: loading.loading, children: loading(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
-            return loading(View, obj);
+            const obj = { style: loading.loading, children: authStore4(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
+            return authStore4(View, obj);
           }
         }
         if (flag6) {
@@ -1406,8 +1406,8 @@ export default function useOAuth2AuthorizeForm(clientId) {
           const obj24 = { user: stateFromStores, application: null, accountScopes, bot: first.bot };
           class Spinner {
             constructor() {
-              const obj = { style: loading.loading, children: loading(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
-              return loading(View, obj);
+              const obj = { style: loading.loading, children: authStore4(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
+              return authStore4(View, obj);
             }
           }
           tmp129 = loading(tmp89(tmp18[52]), obj24);
@@ -1422,8 +1422,8 @@ export default function useOAuth2AuthorizeForm(clientId) {
             str6 = "auto";
             class Spinner {
               constructor() {
-                const obj = { style: loading.loading, children: loading(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
-                return loading(View, obj);
+                const obj = { style: loading.loading, children: authStore4(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
+                return authStore4(View, obj);
               }
             }
             if (flag8 && !first8) {
@@ -1435,8 +1435,8 @@ export default function useOAuth2AuthorizeForm(clientId) {
               const t = tmp21(tmp18[38]).t;
               class Spinner {
                 constructor() {
-                  const obj = { style: loading.loading, children: loading(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
-                  return loading(View, obj);
+                  const obj = { style: loading.loading, children: authStore4(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
+                  return authStore4(View, obj);
                 }
               }
               const obj27 = {
@@ -1458,8 +1458,8 @@ export default function useOAuth2AuthorizeForm(clientId) {
                   const View2 = tmp89(tmp18[16]).View;
                   class Spinner {
                     constructor() {
-                      const obj = { style: loading.loading, children: loading(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
-                      return loading(View, obj);
+                      const obj = { style: loading.loading, children: authStore4(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
+                      return authStore4(View, obj);
                     }
                   }
                   const convert2 = scopes.convert;
@@ -1480,8 +1480,8 @@ export default function useOAuth2AuthorizeForm(clientId) {
               const t2 = tmp21(tmp18[38]).t;
               class Spinner {
                 constructor() {
-                  const obj = { style: loading.loading, children: loading(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
-                  return loading(View, obj);
+                  const obj = { style: loading.loading, children: authStore4(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
+                  return authStore4(View, obj);
                 }
               }
               obj30 = {
@@ -1503,8 +1503,8 @@ export default function useOAuth2AuthorizeForm(clientId) {
                 View = tmp89(tmp18[16]).View;
                 class Spinner {
                   constructor() {
-                    const obj = { style: loading.loading, children: loading(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
-                    return loading(View, obj);
+                    const obj = { style: loading.loading, children: authStore4(ActivityIndicator_ActivityIndicator.ActivityIndicator, {}) };
+                    return authStore4(View, obj);
                   }
                 }
                 const convert = scopes.convert;

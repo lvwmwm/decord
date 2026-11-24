@@ -1,22 +1,22 @@
-// Module ID: 13095
-// Function ID: 13096
+// Module ID: 11075
+// Function ID: 11076
 // Name: StageSectionHeader
-// Dependencies: [19, 17, 21, 5306, 575, 1655, 5538, 5919, 1187, 7914, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 1653, 5123, 5504, 1186, 7516, 2]
 // Exports: default
 
-// Module 13095 (StageSectionHeader)
+// Module 11075 (StageSectionHeader)
 import nativeDefault from "native" /* 575 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import timing_timing from "timing/timing" /* 5538 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7914 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import timing_timing from "timing/timing" /* 5123 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7516 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
-const _modDef1655 = _mod1655;
+const _modDef1653 = _mod1653;
 let obj1, str;
 
 let c3;
@@ -57,8 +57,8 @@ export default function StageSectionHeader(children) {
   ({ label, count, collapsed, onToggleCollapse } = children);
   const tmp = closure_7();
   let items = [closure_8, , ];
-  const useAnimatedStyle = _mod1655.useAnimatedStyle;
-  _mod1655;
+  const useAnimatedStyle = _mod1653.useAnimatedStyle;
+  _mod1653;
   items[1] = timing_timing.withTiming;
   items[2] = collapsed;
   let c0;
@@ -99,9 +99,9 @@ export default function StageSectionHeader(children) {
   items3[1] = tmp9Result;
   const obj5 = { style: tmp.collapseButton, children: metroRequire(View, obj6) };
   obj6 = { style: animatedStyle, children: metroRequire(Icon, obj7) };
-  View = _modDef1655.View;
+  View = _modDef1653.View;
   obj7 = { source: AssetRegistryDefault, style: tmp.collapseIcon };
-  Icon = tmp2(1187).Icon;
+  Icon = tmp2(1186).Icon;
   items3[2] = metroRequire(React3, obj5);
   return metroRequire(React3, obj);
 };

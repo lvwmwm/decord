@@ -1,13 +1,13 @@
-// Module ID: 1108
-// Function ID: 1109
+// Module ID: 1107
+// Function ID: 1108
 // Name: ComponentDispatchUtils
-// Dependencies: [1072, 1109, 3, 1110, 2]
+// Dependencies: [1071, 1108, 3, 1109, 2]
 
-// Module 1108 (ComponentDispatchUtils)
+// Module 1107 (ComponentDispatchUtils)
 import LoggerDefault from "Logger" /* 3 */;
-import Constants from "Constants" /* 1072 */;
-import DevtoolsExtensionAll from "DevtoolsExtension" /* 1109 */;
-import utils_ComponentDispatchUtils from "utils/ComponentDispatchUtils" /* 1110 */;
+import Constants from "Constants" /* 1071 */;
+import DevtoolsExtensionAll from "DevtoolsExtension" /* 1108 */;
+import utils_ComponentDispatchUtils from "utils/ComponentDispatchUtils" /* 1109 */;
 import size from "module_2" /* 2 */;
 
 const ComponentActionsKeyed = Constants.ComponentActionsKeyed;

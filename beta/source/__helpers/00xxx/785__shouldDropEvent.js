@@ -4,7 +4,7 @@
 // Dependencies: [687, 688, 751, 697]
 
 // Module 785 (_shouldDropEvent)
-import _mod687 from "module_687" /* 687 */;
+import DEBUG_BUILD from "DEBUG_BUILD" /* 687 */;
 import UNKNOWN_FUNCTION from "UNKNOWN_FUNCTION" /* 697 */;
 import module_751 from "module_751" /* 751 */;
 
@@ -203,7 +203,7 @@ export const dedupeIntegration = module_751.defineIntegration(() => ({
       try {
         if (_shouldDropEvent(type, closure_1_0)) {
           const tmp3 = require;
-          if (_mod687.DEBUG_BUILD) {
+          if (DEBUG_BUILD.DEBUG_BUILD) {
             const debug = tmp3(688).debug;
             debug.warn("Event dropped due to being a duplicate of previously captured event.");
           }

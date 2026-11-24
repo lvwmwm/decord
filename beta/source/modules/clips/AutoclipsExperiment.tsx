@@ -1,16 +1,16 @@
-// Module ID: 20807
-// Function ID: 20808
+// Module ID: 20077
+// Function ID: 20078
 // Name: AutoclipsExperiment
-// Dependencies: [1452, 2]
+// Dependencies: [1450, 2]
 
-// Module 20807 (AutoclipsExperiment)
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+// Module 20077 (AutoclipsExperiment)
+import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
-const obj = { kind: "user", name: "2026-09-autoclips", defaultConfig: { enabled: false }, variations: obj2 };
-obj2 = { 1: null, 2: { enabled: true } };
-obj2[2] = { enabled: true };
+const obj = { kind: "user", name: "2026-09-autoclips", defaultConfig: { enabled: false, marketingEnabled: false }, variations: obj2 };
+obj2 = { 1: null, 2: { enabled: true, marketingEnabled: false } };
+obj2[2] = { enabled: true, marketingEnabled: true };
 const apexExperiment = ApexExperiment.createApexExperiment(obj);
 const result = size.fileFinishedImporting("modules/clips/AutoclipsExperiment.tsx");
 

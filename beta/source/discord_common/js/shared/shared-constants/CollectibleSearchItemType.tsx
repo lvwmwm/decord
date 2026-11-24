@@ -1,9 +1,9 @@
-// Module ID: 1076
-// Function ID: 1077
+// Module ID: 1075
+// Function ID: 1076
 // Name: CollectibleSearchItemType
 // Dependencies: [2]
 
-// Module 1076 (CollectibleSearchItemType)
+// Module 1075 (CollectibleSearchItemType)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/CollectibleSearchItemType.tsx");

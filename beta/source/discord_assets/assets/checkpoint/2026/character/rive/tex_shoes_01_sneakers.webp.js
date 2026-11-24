@@ -1,11 +1,11 @@
-// Module ID: 14439
-// Function ID: 14440
+// Module ID: 12678
+// Function ID: 12679
 // Dependencies: [2]
 
-// Module 14439
+// Module 12678
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_shoes_01_sneakers.webp.js");
 
-export default "https://cdn.discordapp.com/assets/content/65eac1112a7cad9ad3119662358d747610dc3aa744e2eb94b613e5aad0922e8f.webp";
-export const metadata = { fileBytes: 13004 };
+export default "https://cdn.discordapp.com/assets/content/722d815b75dd143e886bc2680f2acba82611c04914496e46ff0515c5d5ecc4a1.webp";
+export const metadata = { fileBytes: 36904 };

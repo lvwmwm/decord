@@ -1,13 +1,13 @@
-// Module ID: 20578
-// Function ID: 20579
+// Module ID: 19848
+// Function ID: 19849
 // Name: GuildSettingsRolesActionCreators
-// Dependencies: [5, 1072, 572, 6907, 12494, 1108, 2]
+// Dependencies: [5, 1071, 572, 6511, 12016, 1107, 2]
 // Exports: clearRolePermissions, commitSectionChanges, discardConnectionsChanges, discardSectionChanges, init, saveRoleSettings, toggleRoleSettings, updateRoleColor, updateRoleColors, updateRoleConnectionConfigurations, updateRoleDescription, updateRoleIcon, updateRoleName, updateRolePermissionSet, updateRolePermissions, updateRoleSort, updateRoleStyles
 
-// Module 20578 (GuildSettingsRolesActionCreators)
+// Module 19848 (GuildSettingsRolesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants from "Constants" /* 1072 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 let closure_15, closure_16, closure_17, closure_19, closure_7, closure_8, first1, value2, value3, value4;

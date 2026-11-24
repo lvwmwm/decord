@@ -1,15 +1,15 @@
-// Module ID: 17222
-// Function ID: 17223
+// Module ID: 15990
+// Function ID: 15991
 // Name: SettingListItemHighlight
-// Dependencies: [19, 17, 17217, 21, 5306, 575, 1655, 5538, 1708, 2]
+// Dependencies: [19, 17, 15985, 21, 4913, 575, 1653, 5123, 1706, 2]
 
-// Module 17222 (SettingListItemHighlight)
+// Module 15990 (SettingListItemHighlight)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 17217 */;
-import createStyles from "createStyles" /* 5306 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 15985 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let _undefined2, tmp2;
@@ -64,15 +64,15 @@ const memoResult = react.memo(function SettingListItemHighlight(start) {
     state.setState({ selected: null });
   }, []);
   let tmp4 = dependencyMap;
-  const tmp5 = start(1655);
+  const tmp5 = start(1653);
   let items1 = [closure_9, , , , , , , ];
   const useAnimatedStyle = tmp5.useAnimatedStyle;
-  items1[1] = start(1655).withSequence;
-  items1[2] = start(1655).withDelay;
-  items1[3] = start(5538).withTiming;
-  items1[4] = start(1655).Easing;
+  items1[1] = start(1653).withSequence;
+  items1[2] = start(1653).withDelay;
+  items1[3] = start(5123).withTiming;
+  items1[4] = start(1653).Easing;
   items1[5] = closure_8;
-  items1[6] = start(1708).scheduleOnRN;
+  items1[6] = start(1706).scheduleOnRN;
   items1[7] = callback;
   let c0;
   let c1;
@@ -125,7 +125,7 @@ const memoResult = react.memo(function SettingListItemHighlight(start) {
   SettingListItemHighlightTsx2.__initData = tmp6;
   const animatedStyle = useAnimatedStyle(SettingListItemHighlightTsx2);
   const items3 = [StyleSheet.absoluteFill, tmp.background, memo, animatedStyle, style];
-  return jsx(end(1655).View, { pointerEvents: "none", style: items3 });
+  return jsx(end(1653).View, { pointerEvents: "none", style: items3 });
 });
 const result = size.fileFinishedImporting("modules/settings/native/renderer/SettingListItemHighlight.tsx");
 

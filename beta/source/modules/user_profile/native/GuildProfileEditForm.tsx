@@ -1,36 +1,36 @@
-// Module ID: 17195
-// Function ID: 17196
+// Module ID: 15963
+// Function ID: 15964
 // Name: GuildProfileEditForm
-// Dependencies: [109, 19, 17, 8547, 5218, 7352, 1072, 1390, 21, 2174, 7918, 7937, 17082, 5542, 17070, 2121, 8541, 1113, 9398, 17081, 17081, 11170, 17090, 17084, 5903, 17176, 17116, 575, 5919, 8607, 8544, 7643, 11851, 17190, 504, 8482, 9529, 8608, 10078, 8552, 9401, 16403, 17196, 8590, 8601, 5367, 17197, 9530, 9531, 15469, 17093, 5362, 17094, 17118, 17122, 17123, 17127, 17131, 9579, 10954, 2]
+// Dependencies: [109, 19, 17, 8137, 4825, 6956, 1071, 1388, 21, 2173, 7520, 7539, 15847, 5127, 15832, 2119, 8131, 1112, 8909, 15846, 15846, 10459, 15855, 15849, 5488, 15942, 15882, 575, 5504, 8197, 8134, 7245, 11654, 15958, 504, 8072, 9049, 8198, 13955, 8142, 8912, 15175, 15964, 8180, 8191, 4974, 15965, 9050, 9051, 14200, 15859, 4969, 15860, 15884, 15888, 15889, 15893, 15897, 9099, 10505, 2]
 // Exports: default
 
-// Module 17195 (GuildProfileEditForm)
+// Module 15963 (GuildProfileEditForm)
 import nativeDefault from "native" /* 575 */;
-import intl7 from "intl" /* 1113 */;
-import PremiumConstants from "PremiumConstants" /* 1390 */;
-import asyncRequire from "asyncRequire" /* 2121 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2174 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7918 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
-import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8541 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8552 */;
-import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 9398 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9579 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10954 */;
-import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 11170 */;
-import UserProfileEditBannerButtonDefault from "UserProfileEditBannerButton" /* 17082 */;
-import UserProfileEditFormSharedStylesDefault from "UserProfileEditFormSharedStyles" /* 17084 */;
-import UserProfilePremiumTryItOutMobileRefreshExperiment from "UserProfilePremiumTryItOutMobileRefreshExperiment" /* 17090 */;
-import UserProfileUpsellCardDefault from "UserProfileUpsellCard" /* 17116 */;
-import UserProfileFloatingUpsellDefault from "UserProfileFloatingUpsell" /* 17176 */;
+import intl7 from "intl" /* 1112 */;
+import PremiumConstants from "PremiumConstants" /* 1388 */;
+import asyncRequire from "asyncRequire" /* 2119 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2173 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7520 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7539 */;
+import ProfileCustomizationUtils from "ProfileCustomizationUtils" /* 8131 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8142 */;
+import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8909 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9099 */;
+import PremiumUpsellUtilsDefault from "PremiumUpsellUtils" /* 10459 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10505 */;
+import UserProfileEditBannerButtonDefault from "UserProfileEditBannerButton" /* 15847 */;
+import UserProfileEditFormSharedStylesDefault from "UserProfileEditFormSharedStyles" /* 15849 */;
+import UserProfilePremiumTryItOutMobileRefreshExperiment from "UserProfilePremiumTryItOutMobileRefreshExperiment" /* 15855 */;
+import UserProfileUpsellCardDefault from "UserProfileUpsellCard" /* 15882 */;
+import UserProfileFloatingUpsellDefault from "UserProfileFloatingUpsell" /* 15942 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8547 */;
-import GuildMemberStore from "GuildMemberStore" /* 5218 */;
-import UserProfileStore from "UserProfileStore" /* 7352 */;
-import Constants from "Constants" /* 1072 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8137 */;
+import GuildMemberStore from "GuildMemberStore" /* 4825 */;
+import UserProfileStore from "UserProfileStore" /* 6956 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -63,7 +63,7 @@ function EditGuildProfileBanner(user) {
   let tmp3 = useAnalyticsLocationsDefault;
   const analyticsLocations = tmp3(AnalyticsLocationDefault.EDIT_BANNER).analyticsLocations;
   let obj2 = { value: analyticsLocations, children: tmp4(tmp6, obj3) };
-  const AnalyticsLocationProvider = user(7918).AnalyticsLocationProvider;
+  const AnalyticsLocationProvider = user(7520).AnalyticsLocationProvider;
   obj3 = {
     user,
     displayProfile,
@@ -104,14 +104,14 @@ function EditGuildProfileBanner(user) {
         };
         ActionSheetActionCreatorsDefault;
         banner = undefined;
-        const tmp14 = asyncRequire(17070, dependencyMap.paths);
+        const tmp14 = asyncRequire(15832, dependencyMap.paths);
         showRemoveBanner = ProfileCustomizationUtils.showRemoveBanner;
         ProfileCustomizationUtils;
         tmp19 = pendingBanner;
         if (dependencyMap != null) {
           banner = dependencyMap.banner;
         }
-        intl = tmp10(1113).intl;
+        intl = tmp10(1112).intl;
         openLazy(tmp14, "Change Banner", obj);
       } else {
         let obj2 = { initialUpsellKey: constants.PREMIUM_GUILD_PROFILE, analyticsLocation: obj3, analyticsLocations, analyticsProperties: obj4 };
@@ -122,14 +122,14 @@ function EditGuildProfileBanner(user) {
         const result = tmpResult2.handleShowUpsellAlert(obj2);
       }
     },
-    editButtonAccessibilityLabel: intl.string(tmp5(1113).t["95hPAe"]),
+    editButtonAccessibilityLabel: intl.string(tmp5(1112).t["95hPAe"]),
     editDisabled: disabled
   };
   tmp6 = UserProfileEditBannerButtonDefault;
   if (result) {
     result = null != guildMember;
   }
-  intl = tmp5(1113).intl;
+  intl = tmp5(1112).intl;
   return closure_17(AnalyticsLocationProvider, obj2);
 }
 function GuildProfileTryItOutUpsellExperimentWrapper(onButtonPress) {
@@ -149,19 +149,19 @@ function GuildProfileTryItOutUpsellExperimentWrapper(onButtonPress) {
   if (enabled) {
     const obj2 = { text: intl3.string(intl7.t.YIZS5B), buttonText: intl4.string(intl7.t.pj0XBN), buttonVariant: "experimental_premium-primary", onButtonPress, onLayout };
     const tmp3Result = UserProfileFloatingUpsellDefault;
-    intl3 = tmp(1113).intl;
-    intl4 = tmp(1113).intl;
+    intl3 = tmp(1112).intl;
+    intl4 = tmp(1112).intl;
     tmp6Result = tmp6(tmp3Result, obj2);
   } else {
-    const obj3 = { style: items, ctaText: intl.string(intl7.t.pj0XBN), onPress: onButtonPress, children: closure_17(Text, obj5) };
+    const obj3 = { style: items, ctaText: intl.string(intl7.t.pj0XBN), onPress: onButtonPress, children: authStore4(Text, obj5) };
     items = [tmp4.floatingUpsell, ];
     const obj4 = { bottom: nativeDefault.space.PX_16 + tmp5.bottom };
     items[1] = obj4;
     const tmp3Result2 = UserProfileUpsellCardDefault;
-    intl = tmp(1113).intl;
+    intl = tmp(1112).intl;
     obj5 = { variant: "body-sm/normal", children: intl2.string(intl7.t.YIZS5B) };
-    Text = tmp(5919).Text;
-    intl2 = tmp(1113).intl;
+    Text = tmp(5504).Text;
+    intl2 = tmp(1112).intl;
     tmp6Result = tmp6(tmp3Result2, obj3);
   }
   return tmp6Result;

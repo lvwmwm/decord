@@ -1,14 +1,14 @@
-// Module ID: 17824
-// Function ID: 17825
+// Module ID: 16604
+// Function ID: 16605
 // Name: useNoFillDecision
-// Dependencies: [32, 19, 8805, 8808, 17825, 504, 10132, 2]
+// Dependencies: [32, 19, 8401, 8404, 16605, 504, 9950, 2]
 // Exports: default
 
-// Module 17824 (useNoFillDecision)
+// Module 16604 (useNoFillDecision)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AdDeliveryStore from "AdDeliveryStore" /* 8805 */;
-import QuestStore from "QuestStore" /* 8808 */;
+import AdDeliveryStore from "AdDeliveryStore" /* 8401 */;
+import QuestStore from "QuestStore" /* 8404 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -23,7 +23,7 @@ export default function useNoFillDecision(arg0, location) {
   let stateFromStores;
   _require = arg0;
   const tmp = dependencyMap;
-  const obj = stateFromStores(17825);
+  const obj = stateFromStores(16605);
   const obj2 = { location };
   const enableNoFill = obj.useConfig(obj2).enableNoFill;
   const items = [AdDeliveryStore];
@@ -54,7 +54,7 @@ export default function useNoFillDecision(arg0, location) {
       tmp8 = null;
       if (stateFromStores.decisionId !== first) {
         tmp8 = null;
-        const tmp2Result = tmp2(10132);
+        const tmp2Result = tmp2(9950);
         if (tmp2Result.getIsEligibleForQuests()) {
           tmp8 = null;
           if (!stateFromStores1) {

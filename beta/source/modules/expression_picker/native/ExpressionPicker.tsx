@@ -1,20 +1,20 @@
-// Module ID: 11247
-// Function ID: 11248
+// Module ID: 11274
+// Function ID: 11275
 // Name: ExpressionPicker
-// Dependencies: [19, 17, 1228, 1072, 1391, 21, 5306, 575, 11248, 9549, 7983, 1500, 1628, 6057, 11249, 11250, 5558, 11251, 11254, 11337, 11356, 2]
+// Dependencies: [19, 17, 1227, 1071, 1389, 21, 4913, 575, 11275, 9069, 7586, 1498, 1626, 5650, 11276, 11277, 5143, 11278, 11280, 11352, 11367, 2]
 
-// Module 11247 (ExpressionPicker)
+// Module 11274 (ExpressionPicker)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import EmojiConstants from "EmojiConstants" /* 1391 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6057 */;
-import TopEmojisUtils from "TopEmojisUtils" /* 9549 */;
-import trackOnEmojiPickerOpenedDefault from "trackOnEmojiPickerOpened" /* 11249 */;
+import Constants from "Constants" /* 1071 */;
+import EmojiConstants from "EmojiConstants" /* 1389 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5650 */;
+import TopEmojisUtils from "TopEmojisUtils" /* 9069 */;
+import trackOnEmojiPickerOpenedDefault from "trackOnEmojiPickerOpened" /* 11276 */;
 import react from "react" /* 19 */;
-import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1228 */;
+import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1227 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

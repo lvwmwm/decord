@@ -1,11 +1,11 @@
-// Module ID: 10442
-// Function ID: 10443
+// Module ID: 9571
+// Function ID: 9572
 // Name: Stripe3DSChallenge
-// Dependencies: [5, 6771, 2]
+// Dependencies: [5, 6375, 2]
 // Exports: authenticateStripePaymentIntent
 
-// Module 10442 (Stripe3DSChallenge)
-import StripeUtils from "StripeUtils" /* 6771 */;
+// Module 9571 (Stripe3DSChallenge)
+import StripeUtils from "StripeUtils" /* 6375 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

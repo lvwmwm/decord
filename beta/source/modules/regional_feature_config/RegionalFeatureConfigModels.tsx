@@ -1,10 +1,10 @@
-// Module ID: 5991
-// Function ID: 5992
+// Module ID: 5581
+// Function ID: 5582
 // Name: RegionalFeatureConfigModels
-// Dependencies: [5992, 2]
+// Dependencies: [5582, 2]
 
-// Module 5991 (RegionalFeatureConfigModels)
-import MediaTakedownRegulation from "MediaTakedownRegulation" /* 5992 */;
+// Module 5581 (RegionalFeatureConfigModels)
+import MediaTakedownRegulation from "MediaTakedownRegulation" /* 5582 */;
 import size from "module_2" /* 2 */;
 
 class SettingsConfig {

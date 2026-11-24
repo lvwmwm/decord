@@ -1,13 +1,13 @@
-// Module ID: 14671
-// Function ID: 14672
+// Module ID: 13126
+// Function ID: 13127
 // Name: ChatInputAccessibilityDivider
-// Dependencies: [19, 17, 21, 5558, 1380, 1113, 2]
+// Dependencies: [19, 17, 21, 5143, 1378, 1112, 2]
 
-// Module 14671 (ChatInputAccessibilityDivider)
+// Module 13126 (ChatInputAccessibilityDivider)
 import Fragment from "Fragment" /* 21 */;
-import intl2 from "intl" /* 1113 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5558 */;
+import intl2 from "intl" /* 1112 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5143 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
@@ -23,7 +23,7 @@ const memoResult = react.memo(function ChatInputAccessibilityDivider() {
     tmp3 = null;
     const tmpResult = PlatformUtils;
     if (!tmpResult.isAndroid()) {
-      const intl = tmp(1113).intl;
+      const intl = tmp(1112).intl;
       const items = [absoluteFill.absoluteFill, { height: 1 }];
       tmp3 = <_false nativeID="chat-input-accessibility-divider" accessible accessibilityLabel={intl.string(intl2.t["uKZtC/"])} accessibilityRole="header" style={items} />;
     }

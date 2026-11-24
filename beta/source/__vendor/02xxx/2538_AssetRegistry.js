@@ -1,10 +1,10 @@
 // Module ID: 2538
 // Function ID: 2539
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 2538 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9jbGlwcw==", scales: [1], hash: "af552c230ffc13884e3d87c8d4cfb43e", name: "el.messages.af552c230ffc13884e3d87c8d4cfb43e.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/collectibles/web", scales: [1], hash: "84f7d9cdf2bf301df423f836e8247433", name: "CollectiblesSearchBar.compiled.messages", type: "jsona" });

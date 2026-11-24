@@ -1,11 +1,11 @@
-// Module ID: 9440
-// Function ID: 9441
+// Module ID: 8956
+// Function ID: 8957
 // Name: useCountdown
-// Dependencies: [32, 19, 5128, 9441, 2]
+// Dependencies: [32, 19, 4735, 8957, 2]
 // Exports: default
 
-// Module 9440 (useCountdown)
-import DateUtils from "DateUtils" /* 5128 */;
+// Module 8956 (useCountdown)
+import DateUtils from "DateUtils" /* 4735 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

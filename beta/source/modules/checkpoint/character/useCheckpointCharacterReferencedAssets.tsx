@@ -1,19 +1,20 @@
-// Module ID: 14472
-// Function ID: 14473
+// Module ID: 12712
+// Function ID: 12713
 // Name: useCheckpointCharacterReferencedAssets
-// Dependencies: [19, 1360, 14305, 14304, 14471, 14473, 2]
+// Dependencies: [19, 1358, 12544, 12543, 12710, 12713, 2]
 // Exports: useCheckpointCharacterReferencedAssets
 
-// Module 14472 (useCheckpointCharacterReferencedAssets)
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1360 */;
-import CheckpointCharacterTextureUtils from "CheckpointCharacterTextureUtils" /* 14304 */;
-import CheckpointCharacterTextureAssets from "CheckpointCharacterTextureAssets" /* 14305 */;
+// Module 12712 (useCheckpointCharacterReferencedAssets)
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1358 */;
+import CheckpointCharacterTextureUtils from "CheckpointCharacterTextureUtils" /* 12543 */;
+import CheckpointCharacterTextureAssets from "CheckpointCharacterTextureAssets" /* 12544 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
-let set = new Set([1]);
+const tex_wireframe_spritesheet = "tex_wireframe_spritesheet";
+let set = new Set([1, 9]);
 const keys = Object.keys(CheckpointCharacterTextureAssets.CHECKPOINT_CHARACTER_TEXTURE_NAME_TO_ASSET);
-let closure_4 = keys.map((name) => {
+let closure_5 = keys.map((name) => {
   let combined;
   let obj2;
   const obj = { name, role: obj2.getCheckpointCharacterTextureRole(name), swapKey: combined };
@@ -28,15 +29,16 @@ let closure_4 = keys.map((name) => {
 });
 const result = size.fileFinishedImporting("modules/checkpoint/character/useCheckpointCharacterReferencedAssets.tsx");
 
-export function useCheckpointCharacterReferencedAssets(arg0) {
+export const WIREFRAME_TEXTURE = "tex_wireframe_spritesheet";
+export function useCheckpointCharacterReferencedAssets(preloadedTextureNames) {
   let requestedDataBinding;
   let textureScale;
   let visibleDataBinding;
-  const f109429 = () => {
+  const f102384 = () => {
     const obj = { faceID: faceID2, headwearID: headwearID2, shoesID: shoesID2, wearableID: wearableID2 };
     let closure_2 = device2;
     set = new Set();
-    const item = closure_2_4.forEach((item) => {
+    const item = closure_2_5.forEach((item) => {
       let name;
       let role;
       ({ name, role } = item);
@@ -52,7 +54,7 @@ export function useCheckpointCharacterReferencedAssets(arg0) {
             set.add(name);
           }
         } else if (faceID2(chapterID2[3]).CheckpointCharacterTextureType.ALWAYS === type) {
-          const hasItem = "tex_wireframe_spritesheet" !== name || set.has(closure_1);
+          const hasItem = name !== wearableID2 || set.has(closure_1);
           if (hasItem) {
             set.add(name);
           }
@@ -61,7 +63,8 @@ export function useCheckpointCharacterReferencedAssets(arg0) {
     });
     return set;
   };
-  ({ visibleDataBinding, requestedDataBinding, textureScale } = arg0);
+  ({ visibleDataBinding, requestedDataBinding, textureScale } = preloadedTextureNames);
+  preloadedTextureNames = preloadedTextureNames.preloadedTextureNames;
   let checkpointCharacterLoadedTextureNames;
   const faceID = visibleDataBinding.faceID;
   const headwearID = visibleDataBinding.headwearID;
@@ -69,7 +72,7 @@ export function useCheckpointCharacterReferencedAssets(arg0) {
   const wearableID = visibleDataBinding.wearableID;
   const chapterID = visibleDataBinding.chapterID;
   const device = visibleDataBinding.device;
-  const items = [faceID, headwearID, shoesID, wearableID, chapterID, device];
+  let items = [faceID, headwearID, shoesID, wearableID, chapterID, device];
   const faceID2 = requestedDataBinding.faceID;
   const headwearID2 = requestedDataBinding.headwearID;
   const shoesID2 = requestedDataBinding.shoesID;
@@ -77,21 +80,21 @@ export function useCheckpointCharacterReferencedAssets(arg0) {
   let chapterID2 = requestedDataBinding.chapterID;
   const device2 = requestedDataBinding.device;
   const items1 = [faceID2, headwearID2, shoesID2, wearableID2, chapterID2, device2];
-  const memo = react.useMemo(f109429, items);
-  const memo1 = react.useMemo(f109429, items1);
-  let obj = textureScale(checkpointCharacterLoadedTextureNames[5]);
+  const memo = checkpointCharacterLoadedTextureNames.useMemo(f102384, items);
+  const memo1 = checkpointCharacterLoadedTextureNames.useMemo(f102384, items1);
+  let obj = textureScale(preloadedTextureNames[5]);
   checkpointCharacterLoadedTextureNames = obj.useCheckpointCharacterLoadedTextureNames({ visibleTextureNames: memo, requestedTextureNames: memo1 });
-  const items2 = [checkpointCharacterLoadedTextureNames, textureScale];
-  return react.useMemo(() => {
-    let closure_0 = checkpointCharacterLoadedTextureNames;
-    let closure_1 = textureScale;
+  const items2 = [checkpointCharacterLoadedTextureNames, preloadedTextureNames, textureScale];
+  return checkpointCharacterLoadedTextureNames.useMemo(() => {
+    const items = [...preloadedTextureNames];
+    set = new Set(items);
     let obj = {};
-    const item = closure_4.forEach((name) => {
+    const item = closure_5.forEach((name) => {
       let url;
       name = name.name;
       const swapKey = name.swapKey;
       if (set.has(name)) {
-        const tmpResult = checkpointCharacterLoadedTextureNames(textureScale[3]);
+        const tmpResult = closure_2_0(textureScale[3]);
         url = tmpResult.getCheckpointCharacterTextureUrl(name, closure_1);
       } else {
         url = tmp(tmp2[4]).CHECKPOINT_CHARACTER_BLANK_TEXTURE.url;

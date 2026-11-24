@@ -1,18 +1,18 @@
-// Module ID: 10891
-// Function ID: 10892
+// Module ID: 10124
+// Function ID: 10125
 // Name: GroupDMAvatar
-// Dependencies: [19, 17, 1388, 21, 1187, 5306, 9503, 504, 1255, 2]
+// Dependencies: [19, 17, 1386, 21, 1186, 4913, 9023, 504, 1254, 2]
 // Exports: default
 
-// Module 10891 (GroupDMAvatar)
+// Module 10124 (GroupDMAvatar)
 import react_native from "react-native" /* 17 */;
-import native from "native" /* 1187 */;
-import GlobalUtils from "GlobalUtils" /* 1255 */;
-import ClipView from "ClipView" /* 9503 */;
+import native from "native" /* 1186 */;
+import GlobalUtils from "GlobalUtils" /* 1254 */;
+import ClipView from "ClipView" /* 9023 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1388 */;
+import UserStore from "UserStore" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -72,7 +72,7 @@ class FacepileGroupDMAvatar {
       return obj;
     }, items1);
     const obj3 = { style: tmp.firstFace, size: pileSizeOverride, guildId: "r", cutout: memo1, animate };
-    const Avatar = tmp2(1187).Avatar;
+    const Avatar = tmp2(1186).Avatar;
     const tmp10 = View;
     const tmp9 = closure_6;
     if (null == users) {
@@ -84,7 +84,7 @@ class FacepileGroupDMAvatar {
     const merged = Object.assign(obj5);
     items3 = [closure_5(Avatar, obj3), ];
     const obj6 = { status, statusSizeOverride: require("native").StatusSizes.REFRESH_MEDIUM_10, autoStatusCutout: true, style: tmp.secondFace, size: pileSizeOverride, guildId: "Array", animate };
-    const Avatar2 = tmp2(1187).Avatar;
+    const Avatar2 = tmp2(1186).Avatar;
     if (null == users) {
       obj8 = { source: sources[1] };
       const obj7 = { source: sources[1] };
@@ -138,6 +138,6 @@ export default function GroupDMAvatar(pileSizeOverride) {
     }
     return tmp5;
   }
-  tmp5 = closure_5(tmp(1187).Avatar, { autoStatusCutout: true, status, style, size, channel, animate, accessible, accessibilityLabel });
+  tmp5 = closure_5(tmp(1186).Avatar, { autoStatusCutout: true, status, style, size, channel, animate, accessible, accessibilityLabel });
 };
 export { FacepileGroupDMAvatar };

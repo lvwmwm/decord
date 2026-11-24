@@ -1,58 +1,58 @@
-// Module ID: 8660
-// Function ID: 8661
+// Module ID: 8250
+// Function ID: 8251
 // Name: MessageActionCreators
-// Dependencies: [32, 5, 8661, 6790, 6923, 8461, 8662, 8782, 8784, 8744, 7010, 6810, 502, 5155, 8785, 5177, 6042, 6362, 5238, 6058, 7015, 8792, 1388, 1072, 8794, 8130, 5311, 17, 3, 6041, 8795, 6045, 8798, 8799, 6057, 8804, 6959, 8825, 1256, 6043, 8841, 8468, 6745, 8844, 1113, 2188, 8846, 572, 8851, 6778, 8852, 8853, 1285, 6364, 7241, 9, 8691, 6785, 11, 5184, 5204, 8680, 6787, 8855, 8856, 8475, 8860, 2174, 8788, 1406, 7285, 8861, 9012, 9016, 9019, 9020, 9028, 9029, 9033, 6924, 1089, 9166, 2119, 8864, 5313, 11674, 6258, 2]
+// Dependencies: [32, 5, 8251, 6394, 6527, 8052, 8252, 8378, 8380, 8339, 6614, 6400, 502, 4762, 8381, 4784, 5632, 5964, 4845, 5651, 6619, 8388, 1386, 1071, 8390, 7733, 4918, 17, 3, 5631, 8391, 5635, 8394, 8395, 5650, 8400, 6563, 8421, 1255, 5633, 8437, 8059, 6347, 8440, 1112, 2187, 8442, 572, 8446, 6382, 8447, 8448, 1284, 5966, 6843, 9, 8281, 6389, 11, 4791, 4811, 8270, 8450, 8451, 8066, 8455, 2173, 8384, 1404, 6891, 8456, 8522, 8526, 8529, 8530, 8538, 8539, 8543, 6528, 1088, 8676, 2117, 8459, 4920, 9478, 5860, 2]
 
-// Module 8660 (MessageActionCreators)
+// Module 8250 (MessageActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import intl5 from "intl" /* 1113 */;
-import FlagUtils from "FlagUtils" /* 1406 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2174 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
-import InviteCodeUtils from "InviteCodeUtils" /* 6043 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6057 */;
-import merged5 from "merged5" /* 6778 */;
-import GuildTemplatesConstants from "GuildTemplatesConstants" /* 8130 */;
-import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 8468 */;
-import getInviteURLDefault from "getInviteURL" /* 8475 */;
-import useClipMessageNoticeStore from "useClipMessageNoticeStore" /* 8661 */;
-import MessageCacheStatsDefault from "MessageCacheStats" /* 8691 */;
-import ReferencedMessageStore2 from "ReferencedMessageStore" /* 8744 */;
-import SlowmodeStore from "SlowmodeStore" /* 8792 */;
-import MessageEmbedConstants from "MessageEmbedConstants" /* 8794 */;
-import appMessageEmbedTracking from "appMessageEmbedTracking" /* 8799 */;
-import InviteTypeUtils from "InviteTypeUtils" /* 8841 */;
-import UploadUtils from "UploadUtils" /* 8846 */;
-import createMessage from "createMessage" /* 8851 */;
-import createNonce from "createNonce" /* 8852 */;
-import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8853 */;
-import SentMessageIntentsHandlerDefault from "SentMessageIntentsHandler" /* 8860 */;
-import PremiumGiftingIntentActionCreators from "PremiumGiftingIntentActionCreators" /* 11674 */;
+import intl5 from "intl" /* 1112 */;
+import FlagUtils from "FlagUtils" /* 1404 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2173 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2187 */;
+import InviteCodeUtils from "InviteCodeUtils" /* 5633 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5650 */;
+import merged5 from "merged5" /* 6382 */;
+import GuildTemplatesConstants from "GuildTemplatesConstants" /* 7733 */;
+import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 8059 */;
+import getInviteURLDefault from "getInviteURL" /* 8066 */;
+import useClipMessageNoticeStore from "useClipMessageNoticeStore" /* 8251 */;
+import MessageCacheStatsDefault from "MessageCacheStats" /* 8281 */;
+import ReferencedMessageStore2 from "ReferencedMessageStore" /* 8339 */;
+import SlowmodeStore from "SlowmodeStore" /* 8388 */;
+import MessageEmbedConstants from "MessageEmbedConstants" /* 8390 */;
+import appMessageEmbedTracking from "appMessageEmbedTracking" /* 8395 */;
+import InviteTypeUtils from "InviteTypeUtils" /* 8437 */;
+import UploadUtils from "UploadUtils" /* 8442 */;
+import createMessage from "createMessage" /* 8446 */;
+import createNonce from "createNonce" /* 8447 */;
+import ExplicitMediaRedactionUtils from "ExplicitMediaRedactionUtils" /* 8448 */;
+import SentMessageIntentsHandlerDefault from "SentMessageIntentsHandler" /* 8455 */;
+import PremiumGiftingIntentActionCreators from "PremiumGiftingIntentActionCreators" /* 9478 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6790 */;
-import GuildJoinRequestStore from "GuildJoinRequestStore" /* 6923 */;
-import GuildTemplateStore from "GuildTemplateStore" /* 8461 */;
-import MessageRoundtripTrackerStore from "MessageRoundtripTrackerStore" /* 8662 */;
-import PoggermodeSettingsStore from "PoggermodeSettingsStore" /* 8782 */;
-import PendingReplyStore from "PendingReplyStore" /* 8784 */;
-import StickersStore from "StickersStore" /* 7010 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6810 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6394 */;
+import GuildJoinRequestStore from "GuildJoinRequestStore" /* 6527 */;
+import GuildTemplateStore from "GuildTemplateStore" /* 8052 */;
+import MessageRoundtripTrackerStore from "MessageRoundtripTrackerStore" /* 8252 */;
+import PoggermodeSettingsStore from "PoggermodeSettingsStore" /* 8378 */;
+import PendingReplyStore from "PendingReplyStore" /* 8380 */;
+import StickersStore from "StickersStore" /* 6614 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6400 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import EditMessageStore from "EditMessageStore" /* 8785 */;
-import GuildStore from "GuildStore" /* 5177 */;
-import InviteStore from "InviteStore" /* 6042 */;
-import MessageStore from "MessageStore" /* 6362 */;
-import PermissionStore from "PermissionStore" /* 5238 */;
-import PresenceStore from "PresenceStore" /* 6058 */;
-import ReadStateStore from "ReadStateStore" /* 7015 */;
-import UserStore from "UserStore" /* 1388 */;
-import Constants from "Constants" /* 1072 */;
-import MessageConstants from "MessageConstants" /* 5311 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import EditMessageStore from "EditMessageStore" /* 8381 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import InviteStore from "InviteStore" /* 5632 */;
+import MessageStore from "MessageStore" /* 5964 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
+import PresenceStore from "PresenceStore" /* 5651 */;
+import ReadStateStore from "ReadStateStore" /* 6619 */;
+import UserStore from "UserStore" /* 1386 */;
+import Constants from "Constants" /* 1071 */;
+import MessageConstants from "MessageConstants" /* 4918 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -447,7 +447,7 @@ let obj17 = {
   sendExplicitMediaClydeError(c0, attachments, EXPLICIT_MEDIA_ADD_MEDIA_TO_FORUM_POST_BLOCKED) {
     let message;
     let messageName;
-    const f96610 = () => {
+    const f92634 = () => {
       let intl;
       const obj = { message: intl.string(require("intl").t.i4AbAS), messageName: "BOT_GUILD_EXPLICIT_CONTENT" };
       intl = require("intl").intl;
@@ -471,8 +471,8 @@ let obj17 = {
         intl = require("intl").intl;
         return obj;
       });
-      ({ message, messageName } = withResult1.otherwise(f96610));
-      withResult1.otherwise(f96610);
+      ({ message, messageName } = withResult1.otherwise(f92634));
+      withResult1.otherwise(f92634);
       const obj8 = createNonce;
       const nonce = obj8.createNonce();
       obj17.sendBotMessage(c0, message, messageName, nonce);
@@ -931,7 +931,6 @@ let obj17 = {
     let closure_0 = channelId;
     let closure_1 = arg1;
     return (async (arg0, value) => {
-      let obj9;
       if (c3 === 2) {
         c3 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -946,7 +945,6 @@ let obj17 = {
         }
       } else {
         try {
-          let v0;
           let basicChannel;
           let orCreate;
           let closure_3;
@@ -961,7 +959,7 @@ let obj17 = {
               const obj5 = { value, done: true };
               return obj5;
             } else {
-              v0 = 0;
+              const v0 = 0;
               basicChannel = undefined;
               orCreate = undefined;
               closure_3 = undefined;
@@ -1020,11 +1018,9 @@ let obj17 = {
               const _HermesInternal = HermesInternal;
               logger.log("Fetched " + closure_3.messages.length + " messages from the cache after foregrounding. " + messages.length + " are new");
               if (0 !== messages.length) {
-                const obj8 = { type: "LOCAL_MESSAGES_LOADED", guildId: basicChannel.guild_id, channelId, users: closure_3.users, members: closure_3.members, messages, stale: true, isForegroundCacheLoad: obj9.isIOSPushNotificationRawPayloadFixExperimentEnabled() };
-                const dispatch = tmp(c3[47]).dispatch;
-                const tmp44 = tmp(c3[47]);
-                obj9 = v0(c3[62]);
-                dispatch(obj8);
+                const obj9 = { type: "LOCAL_MESSAGES_LOADED", guildId: basicChannel.guild_id, channelId, users: closure_3.users, members: closure_3.members, messages, stale: true };
+                const obj8 = tmp(c3[47]);
+                obj8.dispatch(obj9);
               }
             }
           }
@@ -1177,7 +1173,7 @@ let obj17 = {
       if (nonce.reaction) {
         return Promise.resolve();
       }
-      closure_0 = await nonce(c3[63])(closure_0);
+      closure_0 = await nonce(c3[62])(closure_0);
       if (null != closure_0) {
         return obj17.sendMessage(closure_0, closure_130_1, closure_130_2, obj9);
       }
@@ -1190,7 +1186,7 @@ let obj17 = {
       nonce = closure_0;
       obj9 = { nonce };
       const merged = Object.assign(obj9);
-      const obj3 = nonce(c3[64]);
+      const obj3 = nonce(c3[63]);
       const tmp4 = obj3.backgroundify(function _trySend() {
         return closure_2_56._sendMessage(closure_1_0, nonce, closure_1_3);
       }, undefined);
@@ -1411,8 +1407,7 @@ let obj17 = {
       let obj18;
       let publish;
       let tmp127;
-      let tmp186;
-      let tmp189;
+      let tmp187;
       let tts;
       if (c9 === 2) {
         c9 = 3;
@@ -1420,7 +1415,7 @@ let obj17 = {
         throw new TypeError("Generator functions may not be called on executing generators");
       } else {
         const str3 = "Converting channel to a private channel";
-        const tmp195 = globalThis;
+        const tmp196 = globalThis;
         const flag2 = true;
         let str4 = "Activity is required unless it is a non-game stream request.";
         let str5 = "";
@@ -1491,7 +1486,7 @@ let obj17 = {
                 reason = undefined;
                 responseBody = undefined;
                 value = undefined;
-                const promise = emojiUsed(publish[63])(channelId);
+                const promise = emojiUsed(publish[62])(channelId);
                 if (null != promise) {
                   const infoResult = logger.info("Converting channel to a private channel");
                   c9 = 3;
@@ -1530,13 +1525,13 @@ let obj17 = {
                     channelId = 0;
                   }
                   const tmp90 = channelId;
-                  const tmp94 = activity(emojiUsed(publish[68])(content), 2);
+                  const tmp94 = activity(emojiUsed(publish[67])(content), 2);
                   const tmp95 = tmp94[1];
                   let addFlagResult = channelId;
                   let tmp97 = content;
                   if (tmp94[0]) {
                     channelId = tmp95;
-                    let obj12 = channelId(publish[69]);
+                    let obj12 = channelId(publish[68]);
                     addFlagResult = obj12.addFlag(tmp90, constants.SUPPRESS_NOTIFICATIONS);
                     tmp97 = tmp95;
                   }
@@ -1547,10 +1542,10 @@ let obj17 = {
                     guild_id = channel.guild_id;
                   }
                   const guild = getGuild(guild_id);
-                  let obj13 = channelId(publish[70]);
+                  let obj13 = channelId(publish[69]);
                   let addFlagResult1 = addFlagResult;
                   if (obj13.canSendGuildOfficialMessages(guild, channel, "_sendMessage")) {
-                    let obj14 = channelId(publish[69]);
+                    let obj14 = channelId(publish[68]);
                     addFlagResult1 = obj14.addFlag(addFlagResult, constants.IS_GUILD_OFFICIAL);
                   }
                   c11 = false;
@@ -1608,11 +1603,11 @@ let obj17 = {
                     tmp127 = addFlagResult1;
                   }
                   let tmp128 = channelId;
-                  obj18 = channelId(publish[71]);
+                  obj18 = channelId(publish[70]);
                   const tmp125Result = tmp125(obj9);
                   const tmp132 = false !== guildId.eagerDispatch && null == scheduledTimestamp;
                   if (tmp132) {
-                    let obj19 = channelId(publish[72]);
+                    let obj19 = channelId(publish[71]);
                     let result = obj19.updateComboOnMessageSend(channelId, tmp125Result.id);
                     if (null != stickerIds) {
                       const mapped = stickerIds.map((item) => messageId.getStickerById(item));
@@ -1632,13 +1627,13 @@ let obj17 = {
                     }
                   }
                   if (null != announcementSendOptions) {
-                    SEND = channelId(publish[73]).MessageDataType.SEND_ANNOUNCEMENT;
+                    SEND = channelId(publish[72]).MessageDataType.SEND_ANNOUNCEMENT;
                   } else {
-                    SEND = channelId(publish[73]).MessageDataType.SEND;
+                    SEND = channelId(publish[72]).MessageDataType.SEND;
                   }
                   obj10 = { type: SEND, message: obj11 };
                   obj11 = { channelId, content: tmp97, nonce: emojiUsed, tts: tmp72, message_reference: messageReference, allowed_mentions: allowedMentions, flags: addFlagResult1, analyticsLocation: _location };
-                  activity = tmp208.components;
+                  activity = tmp209.components;
                   if (null != activity) {
                     obj10.message.components = emojiUsed.components;
                   }
@@ -1653,7 +1648,7 @@ let obj17 = {
                     message.publish = publish;
                   }
                   if (null != activityAction) {
-                    activity = emojiUsed(publish[74]);
+                    activity = emojiUsed(publish[73]);
                     let guild_id1;
                     const getConfig = activity.getConfig;
                     if (channel != null) {
@@ -1752,11 +1747,11 @@ let obj17 = {
                     if (attachmentsToUpload.length > 0) {
                       c7 = 1;
                       const tmp181 = channelId;
-                      let obj21 = { channelId, nonce: emojiUsed, items: attachmentsToUpload, message: tmp125Result, shouldUploadFailureSendNotification: tmp186 };
+                      let obj21 = { channelId, nonce: emojiUsed, items: attachmentsToUpload, pendingUploadId: guildId.pendingUploadId, message: tmp125Result, shouldUploadFailureSendNotification: tmp187 };
                       const doNotNotifyOnError = guildId.doNotNotifyOnError;
-                      tmp186 = !doNotNotifyOnError;
-                      const uploadMessageAttachments = channelId(publish[75]).uploadMessageAttachments;
-                      const tmp183 = channelId(publish[75]);
+                      tmp187 = !doNotNotifyOnError;
+                      const uploadMessageAttachments = channelId(publish[74]).uploadMessageAttachments;
+                      const tmp183 = channelId(publish[74]);
                       c8 = 2;
                       c9 = 1;
                       let obj22 = { value: uploadMessageAttachments(obj21), done: false };
@@ -1774,8 +1769,8 @@ let obj17 = {
               responseBody = closure_20.responseBody;
               let obj23 = { fileItems: file.items, failureCode: code, errorMessage: msg };
               msg = undefined;
-              let logMessageSendFailure = channelId(publish[76]).logMessageSendFailure;
-              const tmp59 = channelId(publish[76]);
+              let logMessageSendFailure = channelId(publish[75]).logMessageSendFailure;
+              const tmp59 = channelId(publish[75]);
               if (reason != null) {
                 msg = reason.msg;
               }
@@ -1804,8 +1799,8 @@ let obj17 = {
                 } else {
                   attachments2 = channel.attachments;
                   uploader = channel.uploader;
-                  const tmp204 = c11;
-                  if (tmp204) {
+                  const tmp205 = c11;
+                  if (tmp205) {
                     c7 = 0;
                     c9 = 3;
                     return { value: "HermesInternal", done: null };
@@ -1831,7 +1826,7 @@ let obj17 = {
                 const dispatchResult = obj6.dispatch(obj27);
               }
               if (true !== closure_133_2.doNotNotifyOnError) {
-                let obj8 = channelId(publish[78]);
+                let obj8 = channelId(publish[77]);
                 let result2 = obj8.handleScheduleMessageError(closure_26);
               }
               throw closure_26;
@@ -1851,7 +1846,7 @@ let obj17 = {
                 const dispatchResult1 = obj.dispatch(obj29);
               }
               let tmp12 = activity;
-              let obj3 = channelId(publish[78]);
+              let obj3 = channelId(publish[77]);
               let result3 = obj3.showScheduleMessageSuccessToast(scheduledTimestamp);
               c7 = 0;
               c9 = 3;
@@ -1860,7 +1855,7 @@ let obj17 = {
             }
             if (null != scheduledTimestamp) {
               c7 = 2;
-              let obj25 = channelId(publish[77]);
+              let obj25 = channelId(publish[76]);
               let obj31 = { channelId: closure_133_0, scheduledTimestamp, messageSendData: obj10.message };
               c8 = 4;
               c9 = 1;
@@ -1873,10 +1868,10 @@ let obj17 = {
                 closure_0 = arg0;
                 emojiUsed = arg1;
                 closure_2 = Date.now();
-                const length = emojiUsed(inviteAnalyticsMetadata[73]).length;
+                const length = emojiUsed(inviteAnalyticsMetadata[72]).length;
                 const rounded = Math.floor(10000 * Math.random());
                 logger.info("Queueing message to be sent LogId:" + rounded);
-                let obj = emojiUsed(inviteAnalyticsMetadata[73]);
+                let obj = emojiUsed(inviteAnalyticsMetadata[72]);
                 obj.enqueue(closure_17, (ok) => {
                   let applicationStatus;
                   let closure_129_0;
@@ -1897,7 +1892,7 @@ let obj17 = {
                   let tmp4;
                   let userId;
                   if (ok.ok) {
-                    const obj13 = closure_1(dependencyMap[66]);
+                    const obj13 = closure_1(dependencyMap[65]);
                     obj13.donateSentMessage(content, channelId);
                     let obj4 = { sendAnalytics: obj5, poll };
                     obj5 = { duration: tmp, queueSize: length };
@@ -1907,7 +1902,7 @@ let obj17 = {
                     if (null != request) {
                       ({ guildId, userId, applicationStatus } = request);
                       let obj6 = { guildId, channelId, messageId: ok.body.id, joinRequestStatus: applicationStatus, joinRequestUserId: userId };
-                      obj17 = closure_0(dependencyMap[79]);
+                      obj17 = closure_0(dependencyMap[78]);
                       let result = obj17.trackMemberApplicationInterviewMessage(obj6);
                     }
                     let result1 = MessageRoundtripTrackerStore.recordMessageSendApiResponse(closure_2_14);
@@ -2242,14 +2237,14 @@ let obj17 = {
                               flag = false;
                               const tmp26 = null != retry_after && retry_after > 0;
                               if (tmp26) {
-                                const obj27 = { type: "SLOWMODE_SET_COOLDOWN", channelId, slowmodeType: SlowmodeType.SendMessage, cooldownMs: retry_after * closure_1(dependencyMap[80]).Millis.SECOND };
+                                const obj27 = { type: "SLOWMODE_SET_COOLDOWN", channelId, slowmodeType: SlowmodeType.SendMessage, cooldownMs: retry_after * closure_1(dependencyMap[79]).Millis.SECOND };
                                 const dispatch = closure_1(dependencyMap[47]).dispatch;
                                 closure_1(dependencyMap[47]);
                                 dispatch(obj27);
                                 flag = false;
                               }
                             } else {
-                              const AUTOMOD_ERROR_CODES = closure_0(dependencyMap[81]).AUTOMOD_ERROR_CODES;
+                              const AUTOMOD_ERROR_CODES = closure_0(dependencyMap[80]).AUTOMOD_ERROR_CODES;
                               if (AUTOMOD_ERROR_CODES.has(ok.body.code)) {
                                 let obj3 = closure_1(dependencyMap[47]);
                                 const obj28 = { type: "MESSAGE_SEND_FAILED_AUTOMOD", messageData, errorResponseBody: obj29 };
@@ -2308,8 +2303,8 @@ let obj17 = {
                       const obj33 = { type: "MESSAGE_SEND_FAILED", messageId, channelId, shouldNotify: !c2.doNotNotifyOnError, reason: EXPLICIT_CONTENT };
                       obj9.dispatch(obj33);
                       let status1;
-                      const logMessageSendFailure = closure_0(dependencyMap[76]).logMessageSendFailure;
-                      closure_0(dependencyMap[76]);
+                      const logMessageSendFailure = closure_0(dependencyMap[75]).logMessageSendFailure;
+                      closure_0(dependencyMap[75]);
                       if (!ok.hasErr) {
                         status1 = ok.status;
                       }
@@ -2319,7 +2314,7 @@ let obj17 = {
                         message1 = ok.err.message;
                       }
                       let result3 = logMessageSendFailure(obj34);
-                      const obj12 = closure_1(dependencyMap[73]);
+                      const obj12 = closure_1(dependencyMap[72]);
                       let result4 = obj12.cancelPendingSendRequests(channelId);
                       const item3 = result4.forEach((messageId) => {
                         logger.log("Cancelling pending message", messageId.nonce);
@@ -2336,12 +2331,12 @@ let obj17 = {
               const obj55 = { value: promise2, done: true };
               return obj55;
             }
-          } catch (tmp189) {
-            poll = tmp189;
+          } catch (tmp190) {
+            poll = tmp190;
             if (0 === c7) {
               c9 = 3;
-              throw tmp189;
-            } else if (1 === tmp191) {
+              throw tmp190;
+            } else if (1 === tmp192) {
               c8 = 1;
             } else {
               c8 = 3;
@@ -2457,7 +2452,7 @@ let obj17 = {
                 isCrossposted = undefined;
                 obj6 = undefined;
                 const tmp8 = tryTrackEditMessageSwipeSend(isCrossposted, allowed_mentions);
-                let obj2 = isCrossposted(c3[83]);
+                let obj2 = isCrossposted(c3[82]);
                 c2 = 1;
                 c3 = 1;
                 let obj5 = { value: obj2.unarchiveThreadIfNecessary(allowed_mentions), done: false };
@@ -2474,24 +2469,24 @@ let obj17 = {
               allowed_mentions = getAllowedMentionsForMessageEdit(closure_129_0, closure_129_1);
               isCrossposted = getIsCrosspostedForMessageEdit(closure_129_0, closure_129_1);
               obj6 = { channelId: closure_129_0, messageId: closure_129_1, content: closure_129_2, isCrossposted, allowed_mentions, components: closure_129_3 };
-              const obj7 = { type: allowed_mentions(c3[73]).MessageDataType.EDIT, message: obj6 };
-              const enqueue = isCrossposted(c3[73]).enqueue;
-              const tmp30 = isCrossposted(c3[73]);
+              const obj7 = { type: allowed_mentions(c3[72]).MessageDataType.EDIT, message: obj6 };
+              const enqueue = isCrossposted(c3[72]).enqueue;
+              const tmp30 = isCrossposted(c3[72]);
               enqueue(obj7, (hasErr) => {
                 let obj4;
                 let hasItem = !hasErr.hasErr;
                 if (hasItem) {
-                  const AUTOMOD_ERROR_CODES = channelId(dependencyMap[81]).AUTOMOD_ERROR_CODES;
+                  const AUTOMOD_ERROR_CODES = channelId(dependencyMap[80]).AUTOMOD_ERROR_CODES;
                   hasItem = AUTOMOD_ERROR_CODES.has(hasErr.body.code);
                 }
                 if (hasItem) {
-                  const obj3 = { type: "MESSAGE_EDIT_FAILED_AUTOMOD", messageData: { type: channelId(dependencyMap[73]).MessageDataType.EDIT, message }, errorResponseBody: obj4 };
+                  const obj3 = { type: "MESSAGE_EDIT_FAILED_AUTOMOD", messageData: { type: channelId(dependencyMap[72]).MessageDataType.EDIT, message }, errorResponseBody: obj4 };
                   obj4 = { code: hasErr.body.code, message: hasErr.body.message };
                   const obj2 = messageId(dependencyMap[47]);
                   obj2.dispatch(obj3);
                 }
                 hasErr = hasErr.hasErr;
-                const AccessibilityAnnouncer = channelId(dependencyMap[84]).AccessibilityAnnouncer;
+                const AccessibilityAnnouncer = channelId(dependencyMap[83]).AccessibilityAnnouncer;
                 const announce = AccessibilityAnnouncer.announce;
                 const intl = channelId(dependencyMap[44]).intl;
                 const string = intl.string;
@@ -2560,7 +2555,7 @@ let obj17 = {
             } else {
               tmp = undefined;
               c2 = 1;
-              const obj2 = tmp4(c3[83]);
+              const obj2 = tmp4(c3[82]);
               c3 = 1;
               const obj5 = { value: obj2.unarchiveThreadIfNecessary(tmp), done: false };
               return obj5;
@@ -2579,7 +2574,7 @@ let obj17 = {
               const request = { url: closure_1_29.MESSAGE(closure_129_0, closure_129_1), body: obj6, oldFormErrors: true, rejectWithError: obj9.rejectWithMigratedError() };
               const patch = HTTP.patch;
               obj6 = { flags: obj8.setFlag(tmp.flags, constants.SUPPRESS_EMBEDS, true) };
-              obj8 = tmp(c3[69]);
+              obj8 = tmp(c3[68]);
               obj9 = tmp(c3[52]);
               patch(request);
             }
@@ -2630,7 +2625,7 @@ let obj17 = {
             } else {
               tmp = undefined;
               c2 = 1;
-              const obj2 = tmp4(c3[83]);
+              const obj2 = tmp4(c3[82]);
               c3 = 1;
               const obj5 = { value: obj2.unarchiveThreadIfNecessary(tmp), done: false };
               return obj5;
@@ -2649,7 +2644,7 @@ let obj17 = {
               const request = { url: closure_1_29.MESSAGE(closure_129_0, closure_129_1), body: obj6, oldFormErrors: true, rejectWithError: obj9.rejectWithMigratedError() };
               const patch = HTTP.patch;
               obj6 = { flags: obj8.setFlag(tmp.flags, constants.IS_GUILD_OFFICIAL, closure_129_2) };
-              obj8 = tmp(c3[69]);
+              obj8 = tmp(c3[68]);
               obj9 = tmp(c3[52]);
               patch(request);
             }
@@ -2672,7 +2667,7 @@ let obj17 = {
       let obj7;
       let obj9;
       let v1;
-      const obj3 = id(dependencyMap[83]);
+      const obj3 = id(dependencyMap[82]);
       await obj3.unarchiveThreadIfNecessary(tmp3);
       const HTTP = tmp3(dependencyMap[52]).HTTP;
       const request = { url: closure_1_29.MESSAGE(closure_128_0, closure_128_1), body: obj7, oldFormErrors: true, rejectWithError: obj9.rejectWithMigratedError() };
@@ -2695,10 +2690,10 @@ let obj17 = {
         const obj = id(c3[47]);
         const obj2 = { type: "MESSAGE_DELETE", id, channelId, local };
         const dispatchResult = obj.dispatch(obj2);
-        dispatchResult.then(f145555);
+        dispatchResult.then(f140486);
       }
-      const f145555 = () => {
-        const AccessibilityAnnouncer = channelId(closure_1_3[84]).AccessibilityAnnouncer;
+      const f140486 = () => {
+        const AccessibilityAnnouncer = channelId(closure_1_3[83]).AccessibilityAnnouncer;
         const announce = AccessibilityAnnouncer.announce;
         const intl = channelId(closure_1_3[44]).intl;
         announce(intl.string(channelId(closure_1_3[44]).t.RYMs7s));
@@ -2734,7 +2729,7 @@ let obj17 = {
               if (tmp4) {
                 dispatchDelete();
               } else {
-                let obj2 = id(c3[83]);
+                let obj2 = id(c3[82]);
                 c2 = 1;
                 c3 = 1;
                 const obj5 = { value: obj2.unarchiveThreadIfNecessary(channelId), done: false };
@@ -2758,7 +2753,7 @@ let obj17 = {
               const obj = id(c3[47]);
               const obj2 = { type: "MESSAGE_DELETE", id, channelId, local };
               const dispatchResult = obj.dispatch(obj2);
-              dispatchResult.then(f145555);
+              dispatchResult.then(f140486);
             });
           }
           c3 = 3;
@@ -2817,8 +2812,8 @@ let obj17 = {
       }
       body = formatToPlainStringResult;
       const obj7 = { title: intl3.string(body(c3[44]).t.Vd1hs6), body, confirmText: intl4.string(body(c3[44]).t.BddRzS) };
-      const show = tmp(c3[86]).show;
-      const tmp27 = tmp(c3[86]);
+      const show = tmp(c3[85]).show;
+      const tmp27 = tmp(c3[85]);
       intl3 = body(c3[44]).intl;
       intl4 = body(c3[44]).intl;
       show(obj7);

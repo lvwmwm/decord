@@ -1,16 +1,16 @@
-// Module ID: 13995
-// Function ID: 13996
+// Module ID: 18656
+// Function ID: 18657
 // Name: ConjureTemplateWizard
-// Dependencies: [5, 7365, 1113, 4131, 13996, 7260, 2]
+// Dependencies: [5, 6967, 1112, 4190, 18657, 6865, 2]
 // Exports: canLeaveConjureWizardQuestion, conjureTemplateWizardGuilds, conjureTemplateWizardSteps, conjureWizardIntro, conjureWizardQuestions, conjureWizardServerCopy, conjureWizardServerStep, formatConjureWizardAnswers, isConjureWizardComplete, latestConjureIntake, startConjureTemplateWizard
 
-// Module 13995 (ConjureTemplateWizard)
-import intl3 from "intl" /* 1113 */;
-import _modDef4131 from "module_4131" /* 4131 */;
-import ConjureUtils from "ConjureUtils" /* 7260 */;
-import conjureTemplateIntakeRequests from "conjureTemplateIntakeRequests" /* 13996 */;
+// Module 18656 (ConjureTemplateWizard)
+import intl3 from "intl" /* 1112 */;
+import _modDef4190 from "module_4190" /* 4190 */;
+import ConjureUtils from "ConjureUtils" /* 6865 */;
+import conjureTemplateIntakeRequests from "conjureTemplateIntakeRequests" /* 18657 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 7365 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 6967 */;
 import size from "module_2" /* 2 */;
 
 let closure_3, name;
@@ -21,7 +21,7 @@ function conjureTemplateStartMessage(templateName) {
   const intl = intl3.intl;
   const formatToPlainString = intl.formatToPlainString;
   obj = { templateName, locale: intl3.intl.currentLocale };
-  const prop = _modDef4131["/qSx7+"];
+  const prop = _modDef4190["/qSx7+"];
   return formatToPlainString(prop, obj);
 }
 let obj = function _startConjureTemplateWizard() {
@@ -205,7 +205,7 @@ export function conjureWizardServerCopy(stateFromStores1) {
     server = stateFromStores1.server;
   }
   if (server == null) {
-    obj = { title: intl.string(_modDef4131.vcxYIA), hint: intl2.string(_modDef4131.auUHPZ) };
+    obj = { title: intl.string(_modDef4190.vcxYIA), hint: intl2.string(_modDef4190.auUHPZ) };
     intl = intl3.intl;
     intl2 = intl3.intl;
     server = obj;

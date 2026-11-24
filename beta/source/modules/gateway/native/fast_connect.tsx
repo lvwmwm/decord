@@ -1,7 +1,7 @@
 // Module ID: 15
 // Function ID: 16
 // Name: fast_connect
-// Dependencies: [16, 17, 499, 3, 500, 1264, 8858, 16155, 16645, 8756, 16137, 16124, 10, 9, 2]
+// Dependencies: [16, 17, 499, 3, 500, 1263, 8453, 14928, 15432, 8351, 14910, 14897, 10, 9, 2]
 // Exports: closeFastConnectSocket, createFastConnectSocket, getLastFastConnectIdentifyUserId, identifyWebSocket
 
 // Module 15 (fast_connect)
@@ -11,11 +11,11 @@ import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
 import react_native from "react-native" /* 17 */;
 import KvCacheVersionConstants from "KvCacheVersionConstants" /* 499 */;
 import QosToken from "QosToken" /* 500 */;
-import discord_common_AnalyticsUtilsAll from "discord_common/AnalyticsUtils" /* 1264 */;
-import isCacheEnabled from "isCacheEnabled" /* 8756 */;
-import RequestGatewaySocketAll from "RequestGatewaySocket" /* 8858 */;
-import GatewayCapabilities from "GatewayCapabilities" /* 16155 */;
-import react_nativeDefault from "react-native" /* 16645 */;
+import discord_common_AnalyticsUtilsAll from "discord_common/AnalyticsUtils" /* 1263 */;
+import isCacheEnabled from "isCacheEnabled" /* 8351 */;
+import RequestGatewaySocketAll from "RequestGatewaySocket" /* 8453 */;
+import GatewayCapabilities from "GatewayCapabilities" /* 14928 */;
+import react_nativeDefault from "react-native" /* 15432 */;
 import checkEnv from "checkEnv" /* 16 */;
 import size from "module_2" /* 2 */;
 
@@ -25,7 +25,7 @@ function createFastConnectSocket() {
   let obj;
   let obj3;
   if (null != window.WebSocket) {
-    obj = obj3(16137);
+    obj = obj3(14910);
     constants = obj.getConstants();
     let flag;
     if (constants != null) {
@@ -45,7 +45,7 @@ function createFastConnectSocket() {
     obj.log(`[FAST CONNECT] ${tmp7}`);
     const _Date = Date;
     let closure_0 = Date.now();
-    const tmp9 = obj3(16124)(combined);
+    const tmp9 = obj3(14897)(combined);
     const _parseFloat = parseFloat;
     const parsed = parseFloat(tmp9._socketId);
     const _isNaN = isNaN;
@@ -53,7 +53,7 @@ function createFastConnectSocket() {
     if (isNaN(parsed)) {
       obj2.log("[FAST CONNECT] Unable to create socketId from NaN value ", tmp9._socketId);
     } else {
-      const tmp3Result = obj3(16137);
+      const tmp3Result = obj3(14910);
       if (flag) {
         const result = tmp3Result.enableZstdStreamSupport(parsed);
       } else {
@@ -119,7 +119,6 @@ export function identifyWebSocket() {
       let obj3;
       let obj6;
       let obj8;
-      let obj9;
       let tmp11Result;
       const loadFastConnectNativeModule = TTITrackerDefault.loadFastConnectNativeModule;
       const measureResult = loadFastConnectNativeModule.measure(() => {
@@ -155,14 +154,10 @@ export function identifyWebSocket() {
           if (prop == null) {
             prop = null;
           }
-          let flag = measureResult.useChannelObfuscation;
-          if (flag == null) {
-            flag = false;
-          }
           const obj2 = QosToken;
           const qosTokenFromDerivedData = obj2.buildQosTokenFromDerivedData(derivedQosData, true);
           logger.info("prepareIdentify: app state: ", AppState.currentState, "qosTokenPresent: ", qosTokenFromDerivedData.length > 0);
-          const d = { token, properties: obj3, capabilities: tmp11Result.getClientCapabilities(obj8), client_state: obj9, qos_token: qosTokenFromDerivedData };
+          const d = { token, properties: obj3, capabilities: tmp11Result.getClientCapabilities(), client_state: obj8, qos_token: qosTokenFromDerivedData };
           obj3 = { client_app_state: AppState.currentState, is_fast_connect: true, gateway_connect_reasons: obj6.describeConnectionReasons() };
           const obj5 = discord_common_AnalyticsUtilsAll;
           const merged = Object.assign(obj5.getSuperProperties());
@@ -174,12 +169,11 @@ export function identifyWebSocket() {
             obj7 = {};
           }
           const merged1 = Object.assign(obj7);
-          obj8 = { useChannelObfuscation: flag };
           const _JSON = JSON;
-          const obj10 = { op: 2, d };
-          obj9 = { guild_versions: {} };
+          obj8 = { guild_versions: {} };
+          const obj9 = { op: 2, d };
           tmp11Result = GatewayCapabilities;
-          const json = JSON.stringify(obj10);
+          const json = JSON.stringify(obj9);
           let str1;
           const prepareIdentify = react_nativeDefault.prepareIdentify;
           const tmpResult2 = react_nativeDefault;

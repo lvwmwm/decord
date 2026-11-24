@@ -1,13 +1,13 @@
-// Module ID: 8450
-// Function ID: 8451
+// Module ID: 8041
+// Function ID: 8042
 // Name: HotspotActionCreators
-// Dependencies: [1072, 1256, 572, 2]
+// Dependencies: [1071, 1255, 572, 2]
 // Exports: clearHotspotOverride, hideHotspot, setHotspotOverride
 
-// Module 8450 (HotspotActionCreators)
+// Module 8041 (HotspotActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+import Constants from "Constants" /* 1071 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

@@ -1,29 +1,30 @@
-// Module ID: 9623
-// Function ID: 9624
+// Module ID: 9143
+// Function ID: 9144
 // Name: PromotionsStore
-// Dependencies: [2189, 1231, 9624, 1388, 1389, 9625, 9669, 2161, 9670, 12, 504, 9626, 9627, 9678, 572, 2]
+// Dependencies: [2188, 1230, 9144, 1386, 1387, 9145, 9192, 2160, 9193, 12, 504, 9146, 9147, 9201, 9202, 572, 2]
 
-// Module 9623 (PromotionsStore)
+// Module 9143 (PromotionsStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import MarketingSurfaceTypeUtils from "MarketingSurfaceTypeUtils" /* 9626 */;
-import CampaignDevToolsUtils from "CampaignDevToolsUtils" /* 9670 */;
-import selectActiveMarketingComponentDefault from "selectActiveMarketingComponent" /* 9678 */;
-import LocaleStore from "LocaleStore" /* 2189 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import PromotionRecord from "PromotionRecord" /* 9624 */;
-import UserStore from "UserStore" /* 1388 */;
-import OverridePremiumTypeStore from "OverridePremiumTypeStore" /* 1389 */;
-import MarketingComponentRecord from "MarketingComponentRecord" /* 9625 */;
-import FunctionUtils from "FunctionUtils" /* 2161 */;
+import MarketingSurfaceTypeUtils from "MarketingSurfaceTypeUtils" /* 9146 */;
+import CampaignDevToolsUtils from "CampaignDevToolsUtils" /* 9193 */;
+import selectActiveMarketingComponentDefault from "selectActiveMarketingComponent" /* 9201 */;
+import filterActiveMarketingComponentsUnprioritizedDefault from "filterActiveMarketingComponentsUnprioritized" /* 9202 */;
+import LocaleStore from "LocaleStore" /* 2188 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1230 */;
+import PromotionRecord from "PromotionRecord" /* 9144 */;
+import UserStore from "UserStore" /* 1386 */;
+import OverridePremiumTypeStore from "OverridePremiumTypeStore" /* 1387 */;
+import MarketingComponentRecord from "MarketingComponentRecord" /* 9145 */;
+import FunctionUtils from "FunctionUtils" /* 2160 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let closure_14, hasBogoReward;
 
 let tmp;
-const MarketingSurfaceType = tmp(9627);
+const MarketingSurfaceType = tmp(9147);
 function createEmptyPromotionsByType() {
   return { [closure_1_0(closure_1_2[6]).PromotionTypes.THIRD_PARTY]: {}, [closure_1_0(closure_1_2[6]).PromotionTypes.BOGO]: {}, [closure_1_0(closure_1_2[6]).PromotionTypes.THIRD_PARTY_DIRECT_FULFILLMENT]: {}, [closure_1_0(closure_1_2[6]).PromotionTypes.MARKETING_MOMENT]: {}, [closure_1_0(closure_1_2[6]).PromotionTypes.THIRD_PARTY_INBOUND]: {}, [closure_1_0(closure_1_2[6]).PromotionTypes.THIRD_PARTY_OUTBOUND]: {}, [closure_1_0(closure_1_2[6]).PromotionTypes.GIFT_PROMOTION]: {}, [closure_1_0(closure_1_2[6]).PromotionTypes.THIRD_PARTY_OUTBOUND_RECURRING]: {} };
 }
@@ -156,9 +157,14 @@ class PromotionsStore extends PersistedStore {
           isStaffResult = currentUser.isStaff();
         }
         if (true === isStaffResult) {
-          const self = this;
-          const prop = this.campaignOverrideComponents;
-          found = prop.filter((properties) => properties.properties.properties.oneofKind === closure_0);
+          found = closure_18.filter((properties) => properties.properties.properties.oneofKind === closure_0);
+        }
+        if (null == found) {
+          let items1 = map.get(tmp3);
+          if (items1 == null) {
+            items1 = [];
+          }
+          found = items1;
         }
         return found;
       }
@@ -166,14 +172,10 @@ class PromotionsStore extends PersistedStore {
       if (closure_21 != null) {
         oneofKind = closure_21.properties.properties.oneofKind;
       }
+      found = null;
       if (oneofKind === tmp3) {
         items = [closure_21];
         found = items;
-      } else {
-        found = map.get(tmp3);
-        if (found == null) {
-          found = [];
-        }
       }
     } else {
       return [];
@@ -189,45 +191,97 @@ class PromotionsStore extends PersistedStore {
     return marketingComponentByKind;
   }
   getMarketingComponentByKind(arg0) {
-    let closure_0 = arg0;
+    let found;
+    let currentUser2 = arg0;
     if (null != c17) {
-      const tmp = UserStore;
+      let tmp9Result;
       const currentUser = UserStore.getCurrentUser();
       let isStaffResult;
       if (currentUser != null) {
         isStaffResult = currentUser.isStaff();
       }
       if (true === isStaffResult) {
-        const self3 = this;
-        const prop = this.campaignOverrideComponents;
-        let found = prop.find((properties) => properties.properties.properties.oneofKind === closure_0);
-        if (found == null) {
-          found = null;
-        }
-        return found;
+        found = closure_18.filter((properties) => properties.properties.properties.oneofKind === closure_0);
       }
+      if (null != found) {
+        let first = found[0];
+        if (first == null) {
+          first = null;
+        }
+        tmp9Result = first;
+      } else {
+        const tmp9 = selectActiveMarketingComponentDefault;
+        currentUser2 = UserStore.getCurrentUser();
+        const _Date = Date;
+        const self = this;
+        const self2 = this;
+        const date = new Date();
+        let items1 = map.get(arg0);
+        if (items1 == null) {
+          items1 = [];
+        }
+        tmp9Result = tmp9(items1, date, (isIncludedInRollout) => {
+          const isIncludedInRolloutResult = null != closure_0 && isIncludedInRollout.isIncludedInRollout(tmp.id, date);
+          return isIncludedInRolloutResult;
+        });
+      }
+      return tmp9Result;
     }
     let oneofKind;
     if (closure_21 != null) {
       oneofKind = closure_21.properties.properties.oneofKind;
     }
+    found = null;
     if (oneofKind === arg0) {
-      return closure_21;
-    } else {
-      const currentUser2 = UserStore.getCurrentUser();
-      const _Date = Date;
-      const self = this;
-      const self2 = this;
-      const date = new Date();
-      const tmp10 = selectActiveMarketingComponentDefault;
-      let items = map.get(arg0);
-      if (items == null) {
-        items = [];
+      const items = [closure_21];
+      found = items;
+    }
+  }
+  getActiveMarketingComponentsBySurfaceUnprioritized(items) {
+    const tmp = require;
+    const obj = MarketingSurfaceTypeUtils;
+    if (obj.isMarketingSurfaceType(items)) {
+      let found;
+      const tmp3 = MarketingSurfaceType.MarketingSurfaceKindByType[items];
+      let currentUser2 = tmp3;
+      if (null != c17) {
+        const currentUser = UserStore.getCurrentUser();
+        let isStaffResult;
+        if (currentUser != null) {
+          isStaffResult = currentUser.isStaff();
+        }
+        if (true === isStaffResult) {
+          found = closure_18.filter((properties) => properties.properties.properties.oneofKind === closure_0);
+        }
+        if (found == null) {
+          const tmp13 = filterActiveMarketingComponentsUnprioritizedDefault;
+          currentUser2 = UserStore.getCurrentUser();
+          const _Date = Date;
+          const self = this;
+          const self2 = this;
+          const date = new Date();
+          let items1 = map.get(tmp3);
+          if (items1 == null) {
+            items1 = [];
+          }
+          found = tmp13(items1, date, (isIncludedInRollout) => {
+            const isIncludedInRolloutResult = null != closure_0 && isIncludedInRollout.isIncludedInRollout(tmp.id, date);
+            return isIncludedInRolloutResult;
+          });
+        }
+        return found;
       }
-      return tmp10(items, date, (isIncludedInRollout) => {
-        const isIncludedInRolloutResult = null != closure_1 && isIncludedInRollout.isIncludedInRollout(tmp.id, date);
-        return isIncludedInRolloutResult;
-      });
+      let oneofKind;
+      if (closure_21 != null) {
+        oneofKind = closure_21.properties.properties.oneofKind;
+      }
+      found = null;
+      if (oneofKind === tmp3) {
+        items = [closure_21];
+        found = items;
+      }
+    } else {
+      return [];
     }
   }
   hasPromotion(arg0) {

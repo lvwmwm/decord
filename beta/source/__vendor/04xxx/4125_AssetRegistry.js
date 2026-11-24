@@ -1,10 +1,10 @@
 // Module ID: 4125
 // Function ID: 4126
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 4125 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9wcml2YXRlX2NoYW5uZWxzL2NsZWFuX3VwX2luYWN0aXZlX2dkbXM=", scales: [1], hash: "3349d03b6f77a8b013a3c323bcbd8b88", name: "tr.messages.3349d03b6f77a8b013a3c323bcbd8b88.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/spatial_audio", scales: [1], hash: "f3a2ddb0cb8e5293ad55679523803863", name: "SpatialAudio.compiled.messages", type: "jsona" });

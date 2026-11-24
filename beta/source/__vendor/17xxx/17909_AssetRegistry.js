@@ -1,10 +1,10 @@
 // Module ID: 17909
 // Function ID: 17910
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 17909 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/main_tabs", width: 216, height: 216, scales: [1], hash: "e8cc96dfc04f2226c8870fdf46cc16af", name: "ExampleVoiceChatActivity", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "9055490a5df5abd5b4d009687b826923", name: "ic_guild_voice_24px", type: "png" });

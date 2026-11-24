@@ -1,24 +1,24 @@
-// Module ID: 11317
-// Function ID: 11318
+// Module ID: 11335
+// Function ID: 11336
 // Name: EmojiPickerCategoryIcon
-// Dependencies: [19, 6972, 21, 10324, 10183, 6032, 11318, 10409, 11320, 11322, 7438, 11324, 11326, 9458, 11328, 9436, 2]
+// Dependencies: [19, 6576, 21, 9814, 10011, 5622, 11336, 9489, 11338, 11340, 7040, 11342, 11344, 8976, 10269, 8952, 2]
 
-// Module 11317 (EmojiPickerCategoryIcon)
+// Module 11335 (EmojiPickerCategoryIcon)
 import Fragment from "Fragment" /* 21 */;
-import ClockIcon from "ClockIcon" /* 6032 */;
-import EmojiPickerConstants from "EmojiPickerConstants" /* 6972 */;
-import GameControllerIcon from "GameControllerIcon" /* 7438 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 9436 */;
-import HeartIcon from "HeartIcon" /* 9458 */;
-import StarIcon from "StarIcon" /* 10183 */;
-import TrophyIcon from "TrophyIcon" /* 10324 */;
-import ReactionIcon from "ReactionIcon" /* 10409 */;
-import LightbulbIcon from "LightbulbIcon" /* 11318 */;
-import NatureIcon from "NatureIcon" /* 11320 */;
-import FoodIcon from "FoodIcon" /* 11322 */;
-import BicycleIcon from "BicycleIcon" /* 11324 */;
-import ObjectIcon from "ObjectIcon" /* 11326 */;
-import FlagIcon from "FlagIcon" /* 11328 */;
+import ClockIcon from "ClockIcon" /* 5622 */;
+import EmojiPickerConstants from "EmojiPickerConstants" /* 6576 */;
+import GameControllerIcon from "GameControllerIcon" /* 7040 */;
+import NitroWheelIcon from "NitroWheelIcon" /* 8952 */;
+import HeartIcon from "HeartIcon" /* 8976 */;
+import ReactionIcon from "ReactionIcon" /* 9489 */;
+import TrophyIcon from "TrophyIcon" /* 9814 */;
+import StarIcon from "StarIcon" /* 10011 */;
+import FlagIcon from "FlagIcon" /* 10269 */;
+import LightbulbIcon from "LightbulbIcon" /* 11336 */;
+import NatureIcon from "NatureIcon" /* 11338 */;
+import FoodIcon from "FoodIcon" /* 11340 */;
+import BicycleIcon from "BicycleIcon" /* 11342 */;
+import ObjectIcon from "ObjectIcon" /* 11344 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

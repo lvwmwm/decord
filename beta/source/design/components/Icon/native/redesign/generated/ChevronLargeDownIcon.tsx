@@ -1,14 +1,14 @@
-// Module ID: 16020
-// Function ID: 16021
+// Module ID: 14788
+// Function ID: 14789
 // Name: ChevronLargeDownIcon
-// Dependencies: [19, 21, 575, 6009, 16021, 2]
+// Dependencies: [19, 21, 575, 5599, 14789, 2]
 // Exports: ChevronLargeDownIcon
 
-// Module 16020 (ChevronLargeDownIcon)
+// Module 14788 (ChevronLargeDownIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 6009 */;
-import AssetRegistry from "AssetRegistry" /* 16021 */;
+import BaseIconImage2 from "BaseIconImage" /* 5599 */;
+import AssetRegistry from "AssetRegistry" /* 14789 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

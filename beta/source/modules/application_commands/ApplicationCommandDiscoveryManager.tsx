@@ -1,10 +1,10 @@
-// Module ID: 14815
-// Function ID: 14816
+// Module ID: 13267
+// Function ID: 13268
 // Name: ApplicationCommandDiscoveryManager
-// Dependencies: [560, 1263, 2]
+// Dependencies: [560, 1262, 2]
 // Exports: updateInitialSectionId
 
-// Module 14815 (ApplicationCommandDiscoveryManager)
+// Module 13267 (ApplicationCommandDiscoveryManager)
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 

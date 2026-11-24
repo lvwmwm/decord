@@ -1,19 +1,19 @@
-// Module ID: 17104
-// Function ID: 17105
+// Module ID: 15870
+// Function ID: 15871
 // Name: HexagonCampaignPromoGradient
-// Dependencies: [32, 19, 17, 21, 17105, 5306, 575, 5892, 5883, 2]
+// Dependencies: [32, 19, 17, 21, 15871, 4913, 575, 5477, 5468, 2]
 // Exports: default
 
-// Module 17104 (HexagonCampaignPromoGradient)
+// Module 15870 (HexagonCampaignPromoGradient)
 import nativeDefault from "native" /* 575 */;
-import LinearGradientDefault from "LinearGradient" /* 5883 */;
-import useToken from "useToken" /* 5892 */;
-import HexagonCampaignPromoGradient2 from "HexagonCampaignPromoGradient" /* 17105 */;
+import LinearGradientDefault from "LinearGradient" /* 5468 */;
+import useToken from "useToken" /* 5477 */;
+import HexagonCampaignPromoGradient2 from "HexagonCampaignPromoGradient" /* 15871 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let c10;

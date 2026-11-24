@@ -1,20 +1,20 @@
-// Module ID: 20586
-// Function ID: 20587
+// Module ID: 19856
+// Function ID: 19857
 // Name: InRolePromptNotice
-// Dependencies: [19, 17, 1072, 21, 5306, 575, 1406, 20587, 1187, 12836, 5919, 1113, 2]
+// Dependencies: [19, 17, 1071, 21, 4913, 575, 1404, 19857, 1186, 10766, 5504, 1112, 2]
 // Exports: default
 
-// Module 20586 (InRolePromptNotice)
+// Module 19856 (InRolePromptNotice)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import intl3 from "intl" /* 1113 */;
-import FlagUtils from "FlagUtils" /* 1406 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12836 */;
-import GuildSettingsUtils from "GuildSettingsUtils" /* 20587 */;
+import Constants from "Constants" /* 1071 */;
+import intl3 from "intl" /* 1112 */;
+import FlagUtils from "FlagUtils" /* 1404 */;
+import AssetRegistryDefault from "AssetRegistry" /* 10766 */;
+import GuildSettingsUtils from "GuildSettingsUtils" /* 19857 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -44,13 +44,13 @@ export default function InRolePromptNotice(role) {
     const obj2 = { style: tmp.promptRow, children: null };
     const tmp2Result = GuildSettingsUtils;
     const isRolePowerfulResult = tmp2Result.isRolePowerful(role);
-    const Icon = tmp2(1187).Icon;
+    const Icon = tmp2(1186).Icon;
     if (isRolePowerfulResult) {
       const obj3 = { style: tmp.icon, source: AssetRegistryDefault, color: nativeDefault.unsafe_rawColors.YELLOW_300 };
       const items = [hasOwnProperty(Icon, obj3), ];
       const obj4 = { style: tmp.promptText, variant: "body-sm/medium", children: intl2.string(intl3.t.YRbgXz) };
-      const Text2 = tmp2(5919).Text;
-      intl2 = tmp2(1113).intl;
+      const Text2 = tmp2(5504).Text;
+      intl2 = tmp2(1112).intl;
       items[1] = hasOwnProperty(Text2, obj4);
       obj2.children = items;
       tmp6Result = tmp6(tmp7, obj2);
@@ -58,8 +58,8 @@ export default function InRolePromptNotice(role) {
       const obj5 = { style: tmp.icon, source: AssetRegistryDefault };
       const items1 = [hasOwnProperty(Icon, obj5), ];
       const obj6 = { style: tmp.promptText, variant: "body-sm/medium", children: intl.string(intl3.t.mqeO2v) };
-      const Text = tmp2(5919).Text;
-      intl = tmp2(1113).intl;
+      const Text = tmp2(5504).Text;
+      intl = tmp2(1112).intl;
       items1[1] = hasOwnProperty(Text, obj6);
       obj2.children = items1;
       tmp6Result = tmp6(tmp7, obj2);

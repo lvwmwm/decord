@@ -1,16 +1,16 @@
-// Module ID: 2178
-// Function ID: 2179
+// Module ID: 2177
+// Function ID: 2178
 // Name: SubscriptionPlanStore
-// Dependencies: [2171, 1072, 1390, 2161, 504, 11, 572, 2]
+// Dependencies: [2170, 1071, 1388, 2160, 504, 11, 572, 2]
 
-// Module 2178 (SubscriptionPlanStore)
+// Module 2177 (SubscriptionPlanStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import FunctionUtils from "FunctionUtils" /* 2161 */;
-import SubscriptionPlanRecord from "SubscriptionPlanRecord" /* 2171 */;
-import Constants from "Constants" /* 1072 */;
-import PremiumConstants from "PremiumConstants" /* 1390 */;
+import FunctionUtils from "FunctionUtils" /* 2160 */;
+import SubscriptionPlanRecord from "SubscriptionPlanRecord" /* 2170 */;
+import Constants from "Constants" /* 1071 */;
+import PremiumConstants from "PremiumConstants" /* 1388 */;
 import size from "module_2" /* 2 */;
 
 let set2, set3;
@@ -21,7 +21,7 @@ let c9;
 let closure_4;
 let hasOwnProperty;
 let metroImportAll;
-const f86877 = (id) => {
+const f83212 = (id) => {
   const obj = { id: id.id, name: id.name, interval: id.interval, interval_count: id.intervalCount, tax_inclusive: true, sku_id: id.skuId, currency: constants.USD, price: 0, price_tier: 0 };
   addSubscriptionPlan(SubscriptionPlanRecord.createFromServer(obj));
 };
@@ -81,7 +81,7 @@ function reset() {
   const obj4 = FunctionUtils;
   obj4.clearObject(closure_15);
   const items = [SubscriptionPlanInfo[SubscriptionPlans.NONE_MONTH], SubscriptionPlanInfo[SubscriptionPlans.NONE_YEAR], SubscriptionPlanInfo[SubscriptionPlans.NONE_3_MONTH], SubscriptionPlanInfo[SubscriptionPlans.NONE_6_MONTH]];
-  const item = items.forEach(f86877);
+  const item = items.forEach(f83212);
 }
 ({ CurrencyCodes: closure_4, PriceSetAssignmentPurchaseTypes: hasOwnProperty } = Constants);
 ({ SubscriptionIntervalTypes, SubscriptionPlanInfo } = PremiumConstants);
@@ -94,7 +94,7 @@ let set1 = new Set();
 const gesture = {};
 let closure_15 = {};
 let items = [SubscriptionPlanInfo[SubscriptionPlans.NONE_MONTH], SubscriptionPlanInfo[SubscriptionPlans.NONE_YEAR], SubscriptionPlanInfo[SubscriptionPlans.NONE_3_MONTH], SubscriptionPlanInfo[SubscriptionPlans.NONE_6_MONTH]];
-let item = items.forEach(f86877);
+let item = items.forEach(f83212);
 let items1 = [, , ];
 ({ DAY: arr2[0], MONTH: arr2[1], YEAR: arr2[2] } = SubscriptionIntervalTypes);
 const Store = get_initializedDefault.Store;

@@ -1,10 +1,10 @@
 // Module ID: 2798
 // Function ID: 2799
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 2798 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/gifting", scales: [1], hash: "9ecc6a7c078e9a754077d5562ee83e47", name: "GiftingBadge.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9ndWlsZF9zZXR0aW5ncy9zZXJ2ZXJfbW9uZXRpemF0aW9uL2d1aWxkX3RoZW1lL3dlYg==", scales: [1], hash: "2663771a86a0f11fc1e7850399dc9757", name: "en-GB.messages.2663771a86a0f11fc1e7850399dc9757.compiled.messages", type: "jsona" });

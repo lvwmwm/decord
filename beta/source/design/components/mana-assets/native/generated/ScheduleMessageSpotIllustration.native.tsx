@@ -1,26 +1,26 @@
-// Module ID: 14862
-// Function ID: 14863
+// Module ID: 13315
+// Function ID: 13316
 // Name: ScheduleMessageSpotIllustration
-// Dependencies: [19, 21, 14863, 14864, 14865, 7755, 6010, 2]
+// Dependencies: [19, 21, 13316, 13317, 13318, 7357, 5600, 2]
 // Exports: ScheduleMessageSpotIllustration
 
-// Module 14862 (ScheduleMessageSpotIllustration)
+// Module 13315 (ScheduleMessageSpotIllustration)
 import Fragment from "Fragment" /* 21 */;
-import react_native from "react-native" /* 7755 */;
-import _modDef14863 from "module_14863" /* 14863 */;
-import _modDef14864 from "module_14864" /* 14864 */;
-import _modDef14865 from "module_14865" /* 14865 */;
+import react_native from "react-native" /* 7357 */;
+import _modDef13316 from "module_13316" /* 13316 */;
+import _modDef13317 from "module_13317" /* 13317 */;
+import _modDef13318 from "module_13318" /* 13318 */;
 import react from "react" /* 19 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
 let obj = { 1: null, 2: null, 3: null };
-let obj2 = { uri: _modDef14863 };
+let obj2 = { uri: _modDef13316 };
 obj[1] = obj2;
-let obj3 = { uri: _modDef14864 };
+let obj3 = { uri: _modDef13317 };
 obj[2] = obj3;
-obj[3] = { uri: _modDef14865 };
-({ uri: _modDef14865 });
+obj[3] = { uri: _modDef13318 };
+({ uri: _modDef13318 });
 let size = size_mod;
 const result = size.fileFinishedImporting("design/components/mana-assets/native/generated/ScheduleMessageSpotIllustration.native.tsx");
 

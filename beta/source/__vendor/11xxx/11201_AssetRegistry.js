@@ -1,10 +1,10 @@
 // Module ID: 11201
 // Function ID: 11202
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 11201 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/custom_app_icons/AngryIcon", width: 60, height: 60, scales: [2, 3], hash: "f576bb59fd8aa7b768b785da00a17a1a", name: "AngryIcon", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 32, scales: [1, 2, 3], hash: "a706a0d368e318c310cbc99fe4471213", name: "ic_file_small_image", type: "png" });

@@ -1,24 +1,24 @@
-// Module ID: 12527
-// Function ID: 12528
+// Module ID: 12045
+// Function ID: 12046
 // Name: GuildChannelUserList
-// Dependencies: [32, 19, 17, 7315, 5155, 5218, 5177, 5209, 1388, 1072, 21, 10247, 504, 11621, 7075, 550, 12528, 7918, 7824, 5243, 12530, 8131, 6341, 5362, 1113, 8476, 575, 7825, 10577, 2]
+// Dependencies: [32, 19, 17, 6919, 4762, 4825, 4784, 4816, 1386, 1071, 21, 10063, 504, 11607, 6679, 550, 12046, 7520, 7426, 4850, 12048, 7734, 5943, 4969, 1112, 8067, 575, 7427, 9656, 2]
 
-// Module 12527 (GuildChannelUserList)
+// Module 12045 (GuildChannelUserList)
 import react_native from "react-native" /* 17 */;
-import intl2 from "intl" /* 1113 */;
-import PermissionUtilsAll from "PermissionUtils" /* 5243 */;
-import UserUtilsDefault from "UserUtils" /* 5362 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6341 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8476 */;
+import intl2 from "intl" /* 1112 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4850 */;
+import UserUtilsDefault from "UserUtils" /* 4969 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5943 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8067 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelMemberStore_mod from "ChannelMemberStore" /* 7315 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import GuildMemberStore from "GuildMemberStore" /* 5218 */;
-import GuildStore from "GuildStore" /* 5177 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
-import UserStore from "UserStore" /* 1388 */;
-import Constants from "Constants" /* 1072 */;
+import ChannelMemberStore_mod from "ChannelMemberStore" /* 6919 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import GuildMemberStore from "GuildMemberStore" /* 4825 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4816 */;
+import UserStore from "UserStore" /* 1386 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 

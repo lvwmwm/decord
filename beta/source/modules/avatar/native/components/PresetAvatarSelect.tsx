@@ -1,27 +1,27 @@
-// Module ID: 20331
-// Function ID: 20332
+// Module ID: 19584
+// Function ID: 19585
 // Name: PresetAvatarSelect
-// Dependencies: [19, 17, 21, 20332, 20333, 20334, 20335, 20336, 20337, 20338, 20339, 1113, 5306, 575, 5919, 7428, 6010, 2]
+// Dependencies: [19, 17, 21, 19585, 19586, 19587, 19588, 19589, 19590, 19591, 19592, 1112, 4913, 575, 5504, 7030, 5600, 2]
 // Exports: default
 
-// Module 20331 (PresetAvatarSelect)
+// Module 19584 (PresetAvatarSelect)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import FastImageDefault from "FastImage" /* 6010 */;
-import Pressables from "Pressables" /* 7428 */;
-import defaultAvatar1Default from "defaultAvatar1" /* 20332 */;
-import defaultAvatar2Default from "defaultAvatar2" /* 20333 */;
-import defaultAvatar3Default from "defaultAvatar3" /* 20334 */;
-import defaultAvatar4Default from "defaultAvatar4" /* 20335 */;
-import defaultAvatar5Default from "defaultAvatar5" /* 20336 */;
-import defaultAvatar6Default from "defaultAvatar6" /* 20337 */;
-import defaultAvatar7Default from "defaultAvatar7" /* 20338 */;
-import defaultAvatar8Default from "defaultAvatar8" /* 20339 */;
+import intl2 from "intl" /* 1112 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import FastImageDefault from "FastImage" /* 5600 */;
+import Pressables from "Pressables" /* 7030 */;
+import defaultAvatar1Default from "defaultAvatar1" /* 19585 */;
+import defaultAvatar2Default from "defaultAvatar2" /* 19586 */;
+import defaultAvatar3Default from "defaultAvatar3" /* 19587 */;
+import defaultAvatar4Default from "defaultAvatar4" /* 19588 */;
+import defaultAvatar5Default from "defaultAvatar5" /* 19589 */;
+import defaultAvatar6Default from "defaultAvatar6" /* 19590 */;
+import defaultAvatar7Default from "defaultAvatar7" /* 19591 */;
+import defaultAvatar8Default from "defaultAvatar8" /* 19592 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;
@@ -60,7 +60,7 @@ function DefaultAvatarButton(selected) {
   }
   items[1] = prop;
   const obj = { style: items, accessibilityRole: "button", accessibilityLabel, accessibilityState: { selected }, accessibilityHint: intl.string(intl2.t.vw2RsD), onPress: onSelect, children: React3(FastImageDefault, obj2) };
-  intl = tmp3(1113).intl;
+  intl = tmp3(1112).intl;
   obj2 = { style: tmp.defaultAvatarButton, source: { uri: source } };
   return React3(PressableOpacity, obj);
 }

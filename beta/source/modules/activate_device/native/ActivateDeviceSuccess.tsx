@@ -1,20 +1,20 @@
-// Module ID: 16326
-// Function ID: 16327
+// Module ID: 15098
+// Function ID: 15099
 // Name: ActivateDeviceSuccess
-// Dependencies: [19, 17, 21, 5306, 1113, 7403, 6010, 1414, 16325, 5919, 5926, 2]
+// Dependencies: [19, 17, 21, 4913, 1112, 7005, 5600, 1412, 15097, 5504, 5511, 2]
 // Exports: ActivateDeviceSuccess
 
-// Module 16326 (ActivateDeviceSuccess)
+// Module 15098 (ActivateDeviceSuccess)
 import react_native from "react-native" /* 17 */;
-import intl5 from "intl" /* 1113 */;
-import AvatarUtils from "AvatarUtils" /* 1414 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import FastImageDefault from "FastImage" /* 6010 */;
-import scopes2 from "scopes" /* 7403 */;
-import ActivateDeviceSharedStylesDefault from "ActivateDeviceSharedStyles" /* 16325 */;
+import intl5 from "intl" /* 1112 */;
+import AvatarUtils from "AvatarUtils" /* 1412 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import FastImageDefault from "FastImage" /* 5600 */;
+import scopes2 from "scopes" /* 7005 */;
+import ActivateDeviceSharedStylesDefault from "ActivateDeviceSharedStyles" /* 15097 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -68,15 +68,15 @@ export function ActivateDeviceSuccess(onComplete) {
   const tmp15 = View;
   if (null != stringResult) {
     const obj5 = { variant: "body-md/medium", color: "text-default", style: ActivateDeviceSharedStylesDefault.centerText, children: stringResult };
-    const Text2 = tmp19(5919).Text;
+    const Text2 = tmp19(5504).Text;
     tmp18Result = tmp18(Text2, obj5);
   }
   const obj6 = { children: items };
   items1[1] = tmp18Result;
   items[1] = hasOwnProperty(tmp15, obj3);
   const obj7 = { size: "lg", text: intl4.string(intl5.t.cpT0Cq), onPress: onComplete, grow: true };
-  const Button = tmp19(5926).Button;
-  intl4 = tmp19(1113).intl;
+  const Button = tmp19(5511).Button;
+  intl4 = tmp19(1112).intl;
   items[2] = React3(Button, obj7);
   return hasOwnProperty(tmp8, obj6);
 }

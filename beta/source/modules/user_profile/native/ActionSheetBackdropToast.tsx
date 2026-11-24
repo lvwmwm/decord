@@ -1,19 +1,19 @@
-// Module ID: 15885
-// Function ID: 15886
+// Module ID: 14639
+// Function ID: 14640
 // Name: ActionSheetBackdropToast
-// Dependencies: [19, 17, 5557, 21, 1380, 5306, 575, 1630, 1496, 1655, 5538, 5882, 5919, 2]
+// Dependencies: [19, 17, 5142, 21, 1378, 4913, 575, 1628, 1494, 1653, 5123, 5467, 5504, 2]
 // Exports: ActionSheetBackdropToast
 
-// Module 15885 (ActionSheetBackdropToast)
+// Module 14639 (ActionSheetBackdropToast)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import timing_timing from "timing/timing" /* 5538 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5557 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import timing_timing from "timing/timing" /* 5123 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5142 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let set, set2;
@@ -55,29 +55,29 @@ export function ActionSheetBackdropToast(arg0) {
   ({ text, isExpanded } = arg0);
   let tmp = closure_8();
   const tmp2 = sharedValue1;
-  const top = sharedValue1(1630)().top;
-  const height = sharedValue1(1496)().height;
-  let obj = sharedValue(1655);
+  const top = sharedValue1(1628)().top;
+  const height = sharedValue1(1494)().height;
+  let obj = sharedValue(1653);
   sharedValue = obj.useSharedValue(0);
-  let obj2 = sharedValue(1655);
+  let obj2 = sharedValue(1653);
   sharedValue1 = obj2.useSharedValue(0);
   const items = [sharedValue, sharedValue1];
   const effect = react.useEffect(() => {
     let Easing;
     let Easing2;
     set = sharedValue.set;
-    const tmp = _mod1655;
+    const tmp = _mod1653;
     let withDelay = tmp.withDelay;
-    let obj = { duration: 200, easing: Easing.in(_mod1655.Easing.ease) };
+    let obj = { duration: 200, easing: Easing.in(_mod1653.Easing.ease) };
     let withTiming = timing_timing.withTiming;
     timing_timing;
-    Easing = _mod1655.Easing;
+    Easing = _mod1653.Easing;
     let result = set(withDelay(100, withTiming(1, obj)));
     set2 = sharedValue1.set;
-    let obj2 = { duration: 300, easing: Easing2.in(_mod1655.Easing.linear) };
+    let obj2 = { duration: 300, easing: Easing2.in(_mod1653.Easing.linear) };
     const withTiming2 = timing_timing.withTiming;
     timing_timing;
-    Easing2 = _mod1655.Easing;
+    Easing2 = _mod1653.Easing;
     set2(withTiming2(1, obj2));
     return () => {
       let Easing;
@@ -93,9 +93,9 @@ export function ActionSheetBackdropToast(arg0) {
     };
   }, items);
   const items1 = [closure_9, closure_7, isExpanded, , , , , , , , ];
-  const useAnimatedStyle = sharedValue(1655).useAnimatedStyle;
-  const tmp8 = sharedValue(1655);
-  items1[3] = height - sharedValue(5882).NAV_BAR_HEIGHT_MULTILINE - top;
+  const useAnimatedStyle = sharedValue(1653).useAnimatedStyle;
+  const tmp8 = sharedValue(1653);
+  items1[3] = height - sharedValue(5467).NAV_BAR_HEIGHT_MULTILINE - top;
   items1[4] = 24;
   items1[5] = height * closure_5;
   items1[6] = closure_5;
@@ -140,6 +140,6 @@ export function ActionSheetBackdropToast(arg0) {
   ActionSheetBackdropToastTsx1.__initData = tmp9;
   const animatedStyle = useAnimatedStyle(ActionSheetBackdropToastTsx1);
   const items3 = [tmp.toast, animatedStyle];
-  const View = tmp2(1655).View;
+  const View = tmp2(1653).View;
   return <closure_4 style={tmp.container} pointerEvents="none">{null}</closure_4>;
 }

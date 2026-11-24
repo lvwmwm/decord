@@ -1,31 +1,31 @@
-// Module ID: 19574
-// Function ID: 19575
+// Module ID: 18835
+// Function ID: 18836
 // Name: AutocompleteScreenUtils
-// Dependencies: [5218, 5248, 1388, 14756, 9066, 1072, 1113, 10267, 6019, 15970, 11638, 11048, 11046, 8085, 10726, 10737, 10553, 12684, 19575, 14749, 5362, 2]
+// Dependencies: [4825, 4855, 1386, 13211, 8576, 1071, 1112, 10077, 5609, 14724, 11623, 10109, 11126, 7688, 13417, 11128, 12361, 12179, 18836, 13204, 4969, 2]
 // Exports: getSearchFilterAuthorTypeIcon, getSearchFilterHasIcon, getSearchQueryChannelIds, getSearchQueryUserIds, toSearchListChannelItem, toSearchListUserItem
 
-// Module 19574 (AutocompleteScreenUtils)
-import Constants from "Constants" /* 1072 */;
-import intl10 from "intl" /* 1113 */;
-import UserUtilsDefault from "UserUtils" /* 5362 */;
-import LinkIcon from "LinkIcon" /* 6019 */;
-import ImageIcon from "ImageIcon" /* 8085 */;
-import SearchConstants from "SearchConstants" /* 9066 */;
-import ForwardingIconDefault from "ForwardingIcon" /* 10267 */;
-import UserIcon from "UserIcon" /* 10553 */;
-import SoundboardIcon from "SoundboardIcon" /* 10726 */;
-import StickerIcon from "StickerIcon" /* 10737 */;
-import VideoIcon from "VideoIcon" /* 11046 */;
-import AttachmentIcon from "AttachmentIcon" /* 11048 */;
-import PollsIcon from "PollsIcon" /* 11638 */;
-import RobotIcon from "RobotIcon" /* 12684 */;
-import SearchUtils from "SearchUtils" /* 14749 */;
-import EmbedIcon from "EmbedIcon" /* 15970 */;
-import WebhookIcon from "WebhookIcon" /* 19575 */;
-import GuildMemberStore from "GuildMemberStore" /* 5218 */;
-import RelationshipStore from "RelationshipStore" /* 5248 */;
-import UserStore from "UserStore" /* 1388 */;
-import SearchQueryStore from "SearchQueryStore" /* 14756 */;
+// Module 18835 (AutocompleteScreenUtils)
+import Constants from "Constants" /* 1071 */;
+import intl10 from "intl" /* 1112 */;
+import UserUtilsDefault from "UserUtils" /* 4969 */;
+import LinkIcon from "LinkIcon" /* 5609 */;
+import ImageIcon from "ImageIcon" /* 7688 */;
+import SearchConstants from "SearchConstants" /* 8576 */;
+import ForwardingIconDefault from "ForwardingIcon" /* 10077 */;
+import AttachmentIcon from "AttachmentIcon" /* 10109 */;
+import VideoIcon from "VideoIcon" /* 11126 */;
+import StickerIcon from "StickerIcon" /* 11128 */;
+import PollsIcon from "PollsIcon" /* 11623 */;
+import RobotIcon from "RobotIcon" /* 12179 */;
+import UserIcon from "UserIcon" /* 12361 */;
+import SearchUtils from "SearchUtils" /* 13204 */;
+import SoundboardIcon from "SoundboardIcon" /* 13417 */;
+import EmbedIcon from "EmbedIcon" /* 14724 */;
+import WebhookIcon from "WebhookIcon" /* 18836 */;
+import GuildMemberStore from "GuildMemberStore" /* 4825 */;
+import RelationshipStore from "RelationshipStore" /* 4855 */;
+import UserStore from "UserStore" /* 1386 */;
+import SearchQueryStore from "SearchQueryStore" /* 13211 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -60,35 +60,35 @@ export function getSearchFilterHasIcon(text) {
   if (intl.string(intl10.t.nrpA5E) === text) {
     return ForwardingIconDefault;
   } else {
-    const intl3 = tmp(1113).intl;
+    const intl3 = tmp(1112).intl;
     if (intl3.string(intl10.t.ZNR2fi) === text) {
       return LinkIcon.LinkIcon;
     } else {
-      const intl4 = tmp(1113).intl;
+      const intl4 = tmp(1112).intl;
       if (intl4.string(intl10.t["20uQR3"]) === text) {
         return EmbedIcon.EmbedIcon;
       } else {
-        const intl5 = tmp(1113).intl;
+        const intl5 = tmp(1112).intl;
         if (intl5.string(intl10.t.L4lxyE) === text) {
           return PollsIcon.PollsIcon;
         } else {
-          const intl6 = tmp(1113).intl;
+          const intl6 = tmp(1112).intl;
           if (intl6.string(intl10.t["AV/v6i"]) === text) {
             return AttachmentIcon.AttachmentIcon;
           } else {
-            const intl7 = tmp(1113).intl;
+            const intl7 = tmp(1112).intl;
             if (intl7.string(intl10.t.XM9XGP) === text) {
               return VideoIcon.VideoIcon;
             } else {
-              const intl8 = tmp(1113).intl;
+              const intl8 = tmp(1112).intl;
               if (intl8.string(intl10.t.TNLcpx) === text) {
                 return ImageIcon.ImageIcon;
               } else {
-                const intl9 = tmp(1113).intl;
+                const intl9 = tmp(1112).intl;
                 if (intl9.string(intl10.t.F8Wf0e) === text) {
                   return SoundboardIcon.SoundboardIcon;
                 } else {
-                  const intl2 = tmp(1113).intl;
+                  const intl2 = tmp(1112).intl;
                   if (intl2.string(intl10.t.PJgX2h) === text) {
                     return StickerIcon.StickerIcon;
                   }
@@ -106,11 +106,11 @@ export function getSearchFilterAuthorTypeIcon(text) {
   if (intl.string(intl10.t.tPZo4p) === text) {
     return UserIcon.UserIcon;
   } else {
-    const intl3 = tmp(1113).intl;
+    const intl3 = tmp(1112).intl;
     if (intl3.string(intl10.t.JL7sRS) === text) {
       return RobotIcon.RobotIcon;
     } else {
-      const intl2 = tmp(1113).intl;
+      const intl2 = tmp(1112).intl;
       if (intl2.string(intl10.t.WjkIKU) === text) {
         return WebhookIcon.WebhookIcon;
       }

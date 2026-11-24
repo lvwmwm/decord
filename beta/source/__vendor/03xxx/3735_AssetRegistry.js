@@ -1,10 +1,10 @@
 // Module ID: 3735
 // Function ID: 3736
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 3735 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9wcmVtaXVtL2NhbGxfb2ZfZHV0eV8zcHA=", scales: [1], hash: "26847b70109f8a9efc7c8c7df2c01f8f", name: "sv-SE.messages.26847b70109f8a9efc7c8c7df2c01f8f.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/tenure_reward", scales: [1], hash: "4ce7db81a29e051a11be32b72852c173", name: "TenureReward.compiled.messages", type: "jsona" });

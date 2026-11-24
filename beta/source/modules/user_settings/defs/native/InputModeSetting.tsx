@@ -1,16 +1,16 @@
-// Module ID: 17871
-// Function ID: 17872
+// Module ID: 16651
+// Function ID: 16652
 // Name: InputModeSetting
-// Dependencies: [2133, 9202, 6065, 504, 1113, 12408, 13007, 2]
+// Dependencies: [2131, 8712, 5658, 504, 1112, 11937, 10968, 2]
 
-// Module 17871 (InputModeSetting)
+// Module 16651 (InputModeSetting)
 import get_initialized from "get initialized" /* 504 */;
-import intl3 from "intl" /* 1113 */;
-import Constants from "Constants" /* 6065 */;
-import SettingsConstants from "SettingsConstants" /* 9202 */;
-import UserSettingsVoiceInputOptions from "UserSettingsVoiceInputOptions" /* 13007 */;
-import MediaEngineStore from "MediaEngineStore" /* 2133 */;
-import SettingBuilders from "SettingBuilders" /* 12408 */;
+import intl3 from "intl" /* 1112 */;
+import Constants from "Constants" /* 5658 */;
+import SettingsConstants from "SettingsConstants" /* 8712 */;
+import UserSettingsVoiceInputOptions from "UserSettingsVoiceInputOptions" /* 10968 */;
+import MediaEngineStore from "MediaEngineStore" /* 2131 */;
+import SettingBuilders from "SettingBuilders" /* 11937 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
@@ -27,11 +27,11 @@ let obj = {
     const items = [MediaEngineStore];
     const obj = get_initialized;
     if (obj.useStateFromStores(items, () => mode.getMode()) === InputModes.PUSH_TO_TALK) {
-      const intl2 = tmp(1113).intl;
-      stringResult = intl2.string(tmp(1113).t.Q8gkVL);
+      const intl2 = tmp(1112).intl;
+      stringResult = intl2.string(tmp(1112).t.Q8gkVL);
     } else {
-      const intl = tmp(1113).intl;
-      stringResult = intl.string(tmp(1113).t.cHCEOJ);
+      const intl = tmp(1112).intl;
+      stringResult = intl.string(tmp(1112).t.cHCEOJ);
     }
     return stringResult;
   },

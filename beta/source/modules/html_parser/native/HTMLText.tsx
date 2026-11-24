@@ -1,16 +1,16 @@
-// Module ID: 10379
-// Function ID: 10380
+// Module ID: 9870
+// Function ID: 9871
 // Name: html_parser/HTMLText
-// Dependencies: [19, 21, 5306, 5919, 7653, 10380, 10381, 2]
+// Dependencies: [19, 21, 4913, 5504, 7255, 9871, 9872, 2]
 // Exports: HTMLText
 
-// Module 10379 (html_parser/HTMLText)
+// Module 9870 (html_parser/HTMLText)
 import Fragment from "Fragment" /* 21 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import MaskedLinkUtils from "MaskedLinkUtils" /* 7653 */;
-import groupHTMLTextRuns from "groupHTMLTextRuns" /* 10381 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import MaskedLinkUtils from "MaskedLinkUtils" /* 7255 */;
+import groupHTMLTextRuns from "groupHTMLTextRuns" /* 9872 */;
 import react_mod from "react" /* 19 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -59,6 +59,7 @@ function TextRun(arg0) {
 function RunSegment(arg0) {
   let heading;
   let segment;
+  let str;
   let styles;
   ({ segment, heading, styles } = arg0);
   const merged = Object.assign(arg0, Object.assign({ segment: 0, heading: 0, styles: 0 }));
@@ -78,7 +79,8 @@ function RunSegment(arg0) {
     let obj = {
       variant: textVariant,
       color: merged.linkColor,
-      accessibilityRole: "link",
+      accessibilityRole: str,
+      accessible: merged.linksAccessible && undefined,
       style: styles.underline,
       onPress() {
           const onLinkPress = merged.onLinkPress;
@@ -91,6 +93,10 @@ function RunSegment(arg0) {
         },
       children: mapped
     };
+    str = "text";
+    if (merged.linksAccessible) {
+      str = "link";
+    }
     tmp4Result = tmp4(Text, obj);
   }
   return tmp4Result;
@@ -123,23 +129,27 @@ export function HTMLText(runs) {
   runs = runs.runs;
   let DEFAULT_TEXT_VARIANT = runs.textVariant;
   if (DEFAULT_TEXT_VARIANT === undefined) {
-    DEFAULT_TEXT_VARIANT = runs(10380).DEFAULT_TEXT_VARIANT;
+    DEFAULT_TEXT_VARIANT = runs(9871).DEFAULT_TEXT_VARIANT;
   }
   let DEFAULT_BOLD_TEXT_VARIANT = runs.boldTextVariant;
   if (DEFAULT_BOLD_TEXT_VARIANT === undefined) {
-    DEFAULT_BOLD_TEXT_VARIANT = runs(10380).DEFAULT_BOLD_TEXT_VARIANT;
+    DEFAULT_BOLD_TEXT_VARIANT = runs(9871).DEFAULT_BOLD_TEXT_VARIANT;
   }
   let DEFAULT_HEADING_VARIANTS = runs.headingVariants;
   if (DEFAULT_HEADING_VARIANTS === undefined) {
-    DEFAULT_HEADING_VARIANTS = runs(10380).DEFAULT_HEADING_VARIANTS;
+    DEFAULT_HEADING_VARIANTS = runs(9871).DEFAULT_HEADING_VARIANTS;
   }
   let native = runs.headingColor;
   if (native === undefined) {
-    native = runs(10380).DEFAULT_HEADING_COLORS.native;
+    native = runs(9871).DEFAULT_HEADING_COLORS.native;
   }
   let DEFAULT_LINK_COLOR = runs.linkColor;
   if (DEFAULT_LINK_COLOR === undefined) {
-    DEFAULT_LINK_COLOR = runs(10380).DEFAULT_LINK_COLOR;
+    DEFAULT_LINK_COLOR = runs(9871).DEFAULT_LINK_COLOR;
+  }
+  let flag = runs.linksAccessible;
+  if (flag === undefined) {
+    flag = true;
   }
   react = undefined;
   const onLinkPress = runs.onLinkPress;
@@ -149,7 +159,7 @@ export function HTMLText(runs) {
     const obj = groupHTMLTextRuns;
     return obj.groupHTMLTextRuns(runs);
   }, items);
-  react = { textVariant: DEFAULT_TEXT_VARIANT, boldTextVariant: DEFAULT_BOLD_TEXT_VARIANT, headingVariants: DEFAULT_HEADING_VARIANTS, headingColor: native, linkColor: DEFAULT_LINK_COLOR, onLinkPress };
+  react = { textVariant: DEFAULT_TEXT_VARIANT, boldTextVariant: DEFAULT_BOLD_TEXT_VARIANT, headingVariants: DEFAULT_HEADING_VARIANTS, headingColor: native, linkColor: DEFAULT_LINK_COLOR, linksAccessible: flag, onLinkPress };
   return memo.map((group, index) => {
     const merged = Object.assign(closure_2);
     return <RunGroup key={arg1} group={arg0} styles={styles} />;

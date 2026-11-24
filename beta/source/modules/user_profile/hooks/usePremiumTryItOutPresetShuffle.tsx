@@ -1,20 +1,20 @@
-// Module ID: 17142
-// Function ID: 17143
+// Module ID: 15908
+// Function ID: 15909
 // Name: usePremiumTryItOutPresetShuffle
-// Dependencies: [19, 8542, 1072, 5537, 5313, 17143, 9399, 17071, 7808, 1256, 1113, 2]
+// Dependencies: [19, 8132, 1071, 5122, 4920, 15909, 8910, 15834, 7410, 1255, 1112, 2]
 // Exports: default
 
-// Module 17142 (usePremiumTryItOutPresetShuffle)
-import Constants from "Constants" /* 1072 */;
-import intl2 from "intl" /* 1113 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import shared from "shared" /* 5313 */;
-import ProfilePendingImageTypes from "ProfilePendingImageTypes" /* 7808 */;
-import UserProfileActionCreators from "UserProfileActionCreators" /* 9399 */;
-import ProfilePendingImageUtils from "ProfilePendingImageUtils" /* 17071 */;
-import TryItOutPresets from "TryItOutPresets" /* 17143 */;
+// Module 15908 (usePremiumTryItOutPresetShuffle)
+import Constants from "Constants" /* 1071 */;
+import intl2 from "intl" /* 1112 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import shared from "shared" /* 4920 */;
+import ProfilePendingImageTypes from "ProfilePendingImageTypes" /* 7410 */;
+import UserProfileActionCreators from "UserProfileActionCreators" /* 8910 */;
+import ProfilePendingImageUtils from "ProfilePendingImageUtils" /* 15834 */;
+import TryItOutPresets from "TryItOutPresets" /* 15909 */;
 import react from "react" /* 19 */;
-import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8542 */;
+import UserProfileSettingsStore from "UserProfileSettingsStore" /* 8132 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
@@ -22,7 +22,7 @@ const result = size.fileFinishedImporting("modules/user_profile/hooks/usePremium
 
 export default function usePremiumTryItOutPresetShuffle() {
   let callback;
-  const tmp = callback(5537)();
+  const tmp = callback(5122)();
   let obj = shared;
   const isThemeLightResult = obj.isThemeLight(tmp);
   require = isThemeLightResult;
@@ -38,7 +38,7 @@ export default function usePremiumTryItOutPresetShuffle() {
     UserProfileActionCreators;
     obj4 = ProfilePendingImageUtils;
     themeColors = tryItOutPresetConfig.themeColors;
-    obj3 = { assetOrigin: ProfilePendingImageTypes.AssetOriginTypes.NEW_ASSET, imageUri: tryItOutPresetConfig.getBannerSrc(false), staticImageUri: tryItOutPresetConfig.getBannerSrc(true), description: tryItOutPresetConfig.getBannerAltText(), originalAsset: "Array" };
+    obj3 = { assetOrigin: ProfilePendingImageTypes.AssetOriginTypes.NEW_ASSET, imageUri: tryItOutPresetConfig.getBannerSrc(false), staticImageUri: tryItOutPresetConfig.getBannerSrc(true), description: tryItOutPresetConfig.getBannerAltText(), originalAsset: "find" };
     setTryItOutPreset(obj2);
   }, items);
   const items1 = [callback];

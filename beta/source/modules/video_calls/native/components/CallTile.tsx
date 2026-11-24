@@ -1,33 +1,33 @@
-// Module ID: 13098
-// Function ID: 13099
+// Module ID: 11079
+// Function ID: 11080
 // Name: CallTile
-// Dependencies: [19, 17, 6810, 1388, 11003, 5973, 21, 5306, 5303, 575, 7918, 1630, 504, 6056, 8476, 12789, 13069, 12810, 12843, 13099, 13104, 13105, 7480, 10838, 13106, 1187, 12717, 1655, 5538, 13107, 2]
+// Dependencies: [19, 17, 6400, 1386, 10636, 5563, 21, 4913, 4910, 575, 7520, 1628, 504, 5649, 8067, 10719, 11047, 10740, 10773, 11080, 11085, 11086, 7082, 11087, 11088, 1186, 10644, 1653, 5123, 11089, 2]
 
-// Module 13098 (CallTile)
+// Module 11079 (CallTile)
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 1187 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import timing_timing from "timing/timing" /* 5538 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 6056 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7480 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8476 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 10838 */;
-import RevealProvider from "RevealProvider" /* 12717 */;
-import TouchableStreamPreviewDefault from "TouchableStreamPreview" /* 13099 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 13104 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 13105 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 13106 */;
-import ParticipantTitleDefault from "ParticipantTitle" /* 13107 */;
+import native from "native" /* 1186 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import timing_timing from "timing/timing" /* 5123 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5649 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7082 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8067 */;
+import RevealProvider from "RevealProvider" /* 10644 */;
+import TouchableStreamPreviewDefault from "TouchableStreamPreview" /* 11080 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11085 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 11086 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 11087 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 11088 */;
+import ParticipantTitleDefault from "ParticipantTitle" /* 11089 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6810 */;
-import UserStore from "UserStore" /* 1388 */;
-import ChannelCallStore from "ChannelCallStore" /* 11003 */;
-import CallConstants from "CallConstants" /* 5973 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6400 */;
+import UserStore from "UserStore" /* 1386 */;
+import ChannelCallStore from "ChannelCallStore" /* 10636 */;
+import CallConstants from "CallConstants" /* 5563 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
-import ColorUtils_mod from "ColorUtils" /* 5303 */;
+import createStyles_mod from "createStyles" /* 4913 */;
+import ColorUtils_mod from "ColorUtils" /* 4910 */;
 import size from "module_2" /* 2 */;
 
 let obj1;
@@ -59,7 +59,7 @@ class StreamPreviewTile {
     obj2 = {
       guildId: participant.stream.guildId,
       userId: participant.user.id,
-      style: { aspectRatio: "ip", borderRadius: false },
+      style: { aspectRatio: "disabled", borderRadius: false },
       disableTransition: true,
       onPress() {
         return closure_1_8();
@@ -73,15 +73,15 @@ function ParticipantIcon(participant) {
   participant = participant.participant;
   const tmp = closure_16();
   if (participant.type === constants.STREAM) {
-    tmp3 = AssetRegistryDefault3;
+    tmp3 = AssetRegistryDefault2;
   } else if (participant.type === tmp2.USER) {
     const voicePlatform = participant.voicePlatform;
     if (constants2.MOBILE === voicePlatform) {
-      tmp3 = AssetRegistryDefault4;
+      tmp3 = AssetRegistryDefault3;
     } else if (constants2.XBOX === voicePlatform) {
       tmp3 = AssetRegistryDefault;
     } else if (constants2.PLAYSTATION === voicePlatform) {
-      tmp3 = AssetRegistryDefault2;
+      tmp3 = AssetRegistryDefault4;
     } else if (constants2.QUEST === voicePlatform) {
       tmp3 = AssetRegistryDefault5;
     }
@@ -125,8 +125,8 @@ class TileOverlay {
     useSafeAreaInsetsDefault();
     const reveal = react.useContext(RevealProvider.RevealContext).reveal;
     const items = [closure_19, , , ];
-    const useAnimatedStyle = _mod1655.useAnimatedStyle;
-    _mod1655;
+    const useAnimatedStyle = _mod1653.useAnimatedStyle;
+    _mod1653;
     items[1] = timing_timing.withTiming;
     items[2] = reveal;
     items[3] = native.STANDARD_EASING;
@@ -171,7 +171,7 @@ class TileOverlay {
     }
     let obj = { pointerEvents: "none", style: items2, children: items3 };
     items2 = [absoluteFill.absoluteFill, rect, animatedStyle];
-    const View = tmp2(1655).View;
+    const View = tmp2(1653).View;
     if (isActiveStream) {
       const obj2 = { style: tmp.liveContainer, children: map1(native.LiveTag, {}) };
       isActiveStream = map1(hasOwnProperty, obj2);

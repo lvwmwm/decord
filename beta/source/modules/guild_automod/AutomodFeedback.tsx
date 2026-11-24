@@ -1,11 +1,11 @@
-// Module ID: 8721
-// Function ID: 8722
+// Module ID: 8311
+// Function ID: 8312
 // Name: AutomodFeedback
-// Dependencies: [1113, 2]
+// Dependencies: [1112, 2]
 // Exports: generateFeedbackOptions, getMostImportantRaidResolutionType
 
-// Module 8721 (AutomodFeedback)
-import intl3 from "intl" /* 1113 */;
+// Module 8311 (AutomodFeedback)
+import intl3 from "intl" /* 1112 */;
 import size from "module_2" /* 2 */;
 
 const Feedback = { BUG: "BUG", ALLOWED: "ALLOWED", MENTION_RAID_REMOVE_RESTRICTION: "MENTION_RAID_REMOVE_RESTRICTION" };

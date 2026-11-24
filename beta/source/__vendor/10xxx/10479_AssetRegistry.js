@@ -1,10 +1,10 @@
 // Module ID: 10479
 // Function ID: 10480
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 10479 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "46bee89e41092010bef3088a4b8308ea", name: "BlueskyNeutralIcon", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/custom_app_icons/PirateIcon", width: 60, height: 60, scales: [2, 3], hash: "02ec404298afd1c009d52e4ac428845a", name: "PirateIcon", type: "png" });

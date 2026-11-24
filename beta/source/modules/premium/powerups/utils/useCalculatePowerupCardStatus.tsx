@@ -1,13 +1,13 @@
-// Module ID: 10717
-// Function ID: 10718
+// Module ID: 13408
+// Function ID: 13409
 // Name: useCalculatePowerupCardStatus
-// Dependencies: [19, 5514, 1113, 2733, 2]
+// Dependencies: [19, 8332, 1112, 2856, 2]
 // Exports: useCalculatePowerupCardStatus
 
-// Module 10717 (useCalculatePowerupCardStatus)
-import intl4 from "intl" /* 1113 */;
-import _modDef2733 from "module_2733" /* 2733 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5514 */;
+// Module 13408 (useCalculatePowerupCardStatus)
+import intl4 from "intl" /* 1112 */;
+import _modDef2856 from "module_2856" /* 2856 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 8332 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -43,19 +43,19 @@ export function useCalculatePowerupCardStatus(powerup, arg1, arg2) {
         const formatToPlainString = intl2.formatToPlainString;
         const sourcePowerup = tmp.sourcePowerup;
         let title;
-        const WRRYUT = _modDef2733.WRRYUT;
+        const WRRYUT = _modDef2856.WRRYUT;
         if (sourcePowerup != null) {
           title = sourcePowerup.title;
         }
         if (title == null) {
-          const intl3 = tmp9(1113).intl;
-          title = intl3.string(tmp9(1113).t.BfF6ED);
+          const intl3 = tmp9(1112).intl;
+          title = intl3.string(tmp9(1112).t.BfF6ED);
         }
         const obj4 = { type: "active", statusText: formatToPlainString(WRRYUT, obj5) };
         tmp5 = obj4;
         obj5 = { perkName: title };
       } else if (sourceEntitlement.type !== tmp4.INACTIVE) {
-        const obj = { type: "active", statusText: intl.string(_modDef2733.FFLkmx) };
+        const obj = { type: "active", statusText: intl.string(_modDef2856.FFLkmx) };
         intl = intl4.intl;
         tmp5 = obj;
       }

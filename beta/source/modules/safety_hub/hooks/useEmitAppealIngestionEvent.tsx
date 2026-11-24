@@ -1,15 +1,15 @@
-// Module ID: 14192
-// Function ID: 14193
+// Module ID: 12444
+// Function ID: 12445
 // Name: useEmitAppealIngestionEvent
-// Dependencies: [19, 8231, 8206, 1072, 504, 14184, 14186, 1256, 2]
+// Dependencies: [19, 7835, 7809, 1071, 504, 12425, 12427, 1255, 2]
 // Exports: useEmitAppealIngestionEvent
 
-// Module 14192 (useEmitAppealIngestionEvent)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 8206 */;
+// Module 12444 (useEmitAppealIngestionEvent)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7809 */;
 import react from "react" /* 19 */;
-import SafetyHubStore from "SafetyHubStore" /* 8231 */;
-import Constants from "Constants" /* 1072 */;
+import SafetyHubStore from "SafetyHubStore" /* 7835 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;

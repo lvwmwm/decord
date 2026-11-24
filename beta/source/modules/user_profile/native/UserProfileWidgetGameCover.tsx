@@ -1,19 +1,19 @@
-// Module ID: 12111
-// Function ID: 12112
+// Module ID: 10234
+// Function ID: 10235
 // Name: UserProfileWidgetGameCover
-// Dependencies: [19, 17, 21, 5306, 575, 12110, 1113, 12112, 12113, 12114, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 10233, 1112, 10235, 10236, 10237, 2]
 
-// Module 12111 (UserProfileWidgetGameCover)
+// Module 10234 (UserProfileWidgetGameCover)
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1113 */;
-import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 12110 */;
-import GameCoverImageDefault from "GameCoverImage" /* 12112 */;
-import UserProfileWidgetRemoveGameButtonDefault from "UserProfileWidgetRemoveGameButton" /* 12113 */;
-import useWidgetGamePressDefault from "useWidgetGamePress" /* 12114 */;
+import intl2 from "intl" /* 1112 */;
+import useGameNameAndCoverImageDefault from "useGameNameAndCoverImage" /* 10233 */;
+import GameCoverImageDefault from "GameCoverImage" /* 10235 */;
+import UserProfileWidgetRemoveGameButtonDefault from "UserProfileWidgetRemoveGameButton" /* 10236 */;
+import useWidgetGamePressDefault from "useWidgetGamePress" /* 10237 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

@@ -1,7 +1,7 @@
 // Module ID: 886
 // Function ID: 887
 // Name: feedbackAsyncIntegration
-// Dependencies: [887, 891, 681, 890, 892, 894, 933, 935, 893, 936, 937, 945, 939, 940, 942, 941, 938, 889, 946, 947, 948, 949, 950, 951, 888, 952, 954, 958, 959, 960, 961, 956, 943, 965, 966, 967, 968, 969, 970, 971]
+// Dependencies: [887, 891, 681, 890, 892, 894, 933, 935, 893, 936, 937, 945, 939, 940, 942, 941, 938, 889, 946, 947, 948, 949, 950, 950, 888, 951, 953, 957, 958, 959, 960, 955, 943, 964, 965, 966, 967, 968, 969, 970]
 
 // Module 886 (feedbackAsyncIntegration)
 import _mod681 from "module_681" /* 681 */;
@@ -29,21 +29,20 @@ import httpClientIntegration from "httpClientIntegration" /* 947 */;
 import applySourceContextToFrame from "applySourceContextToFrame" /* 948 */;
 import _getGraphQLOperation from "_getGraphQLOperation" /* 949 */;
 import _mod950 from "module_950" /* 950 */;
-import _mod951 from "module_951" /* 951 */;
-import defaultRequestInstrumentationOptions from "defaultRequestInstrumentationOptions" /* 952 */;
-import BROWSER_TRACING_INTEGRATION_ID from "BROWSER_TRACING_INTEGRATION_ID" /* 954 */;
-import _mod956 from "module_956" /* 956 */;
-import reportPageLoaded from "reportPageLoaded" /* 958 */;
+import defaultRequestInstrumentationOptions from "defaultRequestInstrumentationOptions" /* 951 */;
+import BROWSER_TRACING_INTEGRATION_ID from "BROWSER_TRACING_INTEGRATION_ID" /* 953 */;
+import _mod955 from "module_955" /* 955 */;
+import reportPageLoaded from "reportPageLoaded" /* 957 */;
+import _mod958 from "module_958" /* 958 */;
 import _mod959 from "module_959" /* 959 */;
-import _mod960 from "module_960" /* 960 */;
-import browserProfilingIntegration from "browserProfilingIntegration" /* 961 */;
-import _mod965 from "module_965" /* 965 */;
-import OpenFeatureIntegrationHook from "OpenFeatureIntegrationHook" /* 966 */;
-import unleashIntegration from "unleashIntegration" /* 967 */;
-import _mod968 from "module_968" /* 968 */;
-import statsigIntegration from "statsigIntegration" /* 969 */;
-import _asyncToGenerator from "_asyncToGenerator" /* 970 */;
-import _mod971 from "module_971" /* 971 */;
+import browserProfilingIntegration from "browserProfilingIntegration" /* 960 */;
+import _mod964 from "module_964" /* 964 */;
+import OpenFeatureIntegrationHook from "OpenFeatureIntegrationHook" /* 965 */;
+import unleashIntegration from "unleashIntegration" /* 966 */;
+import _mod967 from "module_967" /* 967 */;
+import statsigIntegration from "statsigIntegration" /* 968 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 969 */;
+import _mod970 from "module_970" /* 970 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 const feedbackSyncIntegration_export = feedbackSyncIntegration.feedbackSyncIntegration;
@@ -181,7 +180,7 @@ export const contextLinesIntegration = applySourceContextToFrame.contextLinesInt
 export const graphqlClientIntegration = _getGraphQLOperation.graphqlClientIntegration;
 export const getReplay = _mod950.getReplay;
 export const replayIntegration = _mod950.replayIntegration;
-export const replayCanvasIntegration = _mod951.replayCanvasIntegration;
+export const replayCanvasIntegration = _mod950.replayCanvasIntegration;
 export const getFeedback = _mod888.getFeedback;
 export const sendFeedback = _mod888.sendFeedback;
 export { defaultRequestInstrumentationOptions_export as defaultRequestInstrumentationOptions };
@@ -190,18 +189,18 @@ export const browserTracingIntegration = BROWSER_TRACING_INTEGRATION_ID.browserT
 export const startBrowserTracingNavigationSpan = BROWSER_TRACING_INTEGRATION_ID.startBrowserTracingNavigationSpan;
 export const startBrowserTracingPageLoadSpan = BROWSER_TRACING_INTEGRATION_ID.startBrowserTracingPageLoadSpan;
 export { reportPageLoaded_export as reportPageLoaded };
-export const setActiveSpanInBrowser = _mod959.setActiveSpanInBrowser;
-export const makeBrowserOfflineTransport = _mod960.makeBrowserOfflineTransport;
+export const setActiveSpanInBrowser = _mod958.setActiveSpanInBrowser;
+export const makeBrowserOfflineTransport = _mod959.makeBrowserOfflineTransport;
 export { browserProfilingIntegration_export as browserProfilingIntegration };
-export const spotlightBrowserIntegration = _mod956.spotlightBrowserIntegration;
+export const spotlightBrowserIntegration = _mod955.spotlightBrowserIntegration;
 export { browserSessionIntegration_export as browserSessionIntegration };
-export const buildLaunchDarklyFlagUsedHandler = _mod965.buildLaunchDarklyFlagUsedHandler;
-export const launchDarklyIntegration = _mod965.launchDarklyIntegration;
+export const buildLaunchDarklyFlagUsedHandler = _mod964.buildLaunchDarklyFlagUsedHandler;
+export const launchDarklyIntegration = _mod964.launchDarklyIntegration;
 export { OpenFeatureIntegrationHook_export as OpenFeatureIntegrationHook };
 export const openFeatureIntegration = OpenFeatureIntegrationHook.openFeatureIntegration;
 export { unleashIntegration_export as unleashIntegration };
-export const growthbookIntegration = _mod968.growthbookIntegration;
+export const growthbookIntegration = _mod967.growthbookIntegration;
 export { statsigIntegration_export as statsigIntegration };
 export const diagnoseSdkConnectivity = _asyncToGenerator.diagnoseSdkConnectivity;
-export const registerWebWorker = _mod971.registerWebWorker;
-export const webWorkerIntegration = _mod971.webWorkerIntegration;
+export const registerWebWorker = _mod970.registerWebWorker;
+export const webWorkerIntegration = _mod970.webWorkerIntegration;

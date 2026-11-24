@@ -1,12 +1,12 @@
-// Module ID: 6783
-// Function ID: 6784
+// Module ID: 6387
+// Function ID: 6388
 // Name: StickersTypes
-// Dependencies: [5171, 5313, 2]
+// Dependencies: [4778, 4920, 2]
 // Exports: isAnimatedSticker, isCustomSticker
 
-// Module 6783 (StickersTypes)
-import js_shim_PlainRecord from "js_shim/PlainRecord" /* 5171 */;
-import shared from "shared" /* 5313 */;
+// Module 6387 (StickersTypes)
+import js_shim_PlainRecord from "js_shim/PlainRecord" /* 4778 */;
+import shared from "shared" /* 4920 */;
 import size from "module_2" /* 2 */;
 
 const TypeTag = js_shim_PlainRecord.TypeTag;

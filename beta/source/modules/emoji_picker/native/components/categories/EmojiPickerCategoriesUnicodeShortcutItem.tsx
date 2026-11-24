@@ -1,20 +1,20 @@
-// Module ID: 11332
-// Function ID: 11333
+// Module ID: 11348
+// Function ID: 11349
 // Name: EmojiPickerCategoriesUnicodeShortcutItem
-// Dependencies: [32, 19, 17, 1072, 21, 5306, 1655, 11333, 1708, 7428, 1113, 11317, 2]
+// Dependencies: [32, 19, 17, 1071, 21, 4913, 1653, 10656, 1706, 7030, 1112, 11335, 2]
 // Exports: default
 
-// Module 11332 (EmojiPickerCategoriesUnicodeShortcutItem)
+// Module 11348 (EmojiPickerCategoriesUnicodeShortcutItem)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import intl2 from "intl" /* 1113 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import _mod1708 from "module_1708" /* 1708 */;
-import cheapWorkletShallowEqual from "cheapWorkletShallowEqual" /* 11333 */;
+import intl2 from "intl" /* 1112 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import _mod1706 from "module_1706" /* 1706 */;
+import cheapWorkletShallowEqual from "cheapWorkletShallowEqual" /* 10656 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 1072 */;
-import createStyles from "createStyles" /* 5306 */;
+import Constants from "Constants" /* 1071 */;
+import createStyles from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let end, num, tmp, tmp2, tmp5;
@@ -55,7 +55,7 @@ export default function EmojiPickerCategoriesUnicodeShortcutItem(category) {
   const items = [closure_9, blockRef];
   let c0;
   [tmp7, tmp8] = items;
-  const tmp6 = _mod1655;
+  const tmp6 = _mod1653;
   class EmojiPickerCategoriesUnicodeShortcutItemTsx1 {
     constructor() {
       return closure_0.get();
@@ -71,7 +71,7 @@ export default function EmojiPickerCategoriesUnicodeShortcutItem(category) {
   items2[2] = categoryIndex;
   items2[3] = metroRequire;
   items2[4] = first;
-  items2[5] = _mod1708.scheduleOnRN;
+  items2[5] = _mod1706.scheduleOnRN;
   items2[6] = tmp3;
   c0 = undefined;
   let c1;
@@ -111,8 +111,8 @@ export default function EmojiPickerCategoriesUnicodeShortcutItem(category) {
   let tmp19 = null;
   const tmp17 = closure_8();
   if (first) {
-    const PressableOpacity = tmp4(7428).PressableOpacity;
-    const intl = tmp4(1113).intl;
+    const PressableOpacity = tmp4(7030).PressableOpacity;
+    const intl = tmp4(1112).intl;
     const items5 = [, ];
     ({ itemInner: arr6[0], fadedItemOpacity: arr6[1] } = tmp17);
     tmp19 = <PressableOpacity style={style} onPress={tmp18} accessibilityRole="button" accessibilityLabel={intl.string(intl2.t.gg3lOG)}>{null}</PressableOpacity>;

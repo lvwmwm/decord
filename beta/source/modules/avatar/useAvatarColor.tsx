@@ -1,21 +1,21 @@
-// Module ID: 8538
-// Function ID: 8539
+// Module ID: 8128
+// Function ID: 8129
 // Name: useAvatarColor
-// Dependencies: [32, 5, 19, 5307, 560, 1263, 1493, 5303, 504, 8495, 2]
+// Dependencies: [32, 5, 19, 4914, 560, 1262, 1491, 4910, 504, 8085, 2]
 // Exports: default, maybeFetchColors, useAvatarColors, useHasFetchedColors
 
-// Module 8538 (useAvatarColor)
+// Module 8128 (useAvatarColor)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5307 */;
+import AccessibilityStore from "AccessibilityStore" /* 4914 */;
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, c1, c2, c5, c6, dependencyMap;
 
-const f96244 = () => {
+const f92266 = () => {
   let tmp2 = null != closure_0;
   const tmp = closure_0;
   if (tmp2) {
@@ -229,7 +229,7 @@ export default function useAvatarColor(arg0, arg1) {
     return num;
   });
   const items1 = [arg0, tmp];
-  const effect = react.useEffect(f96244, items1);
+  const effect = react.useEffect(f92266, items1);
   const items2 = [tmp, stateFromStores];
   let memo = react.useMemo(() => {
     let mapped;
@@ -293,7 +293,7 @@ export function useAvatarColors(pendingAvatarSrc, PRIMARY_530) {
     return num;
   });
   const items1 = [pendingAvatarSrc, tmp];
-  const effect = react.useEffect(f96244, items1);
+  const effect = react.useEffect(f92266, items1);
   const items2 = [tmp, stateFromStores];
   let memo = react.useMemo(() => {
     let mapped;

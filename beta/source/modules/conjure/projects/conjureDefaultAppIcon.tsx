@@ -1,40 +1,40 @@
-// Module ID: 10548
-// Function ID: 10549
+// Module ID: 11873
+// Function ID: 11874
 // Name: conjureDefaultAppIcon
-// Dependencies: [10549, 10071, 5303, 671, 2]
+// Dependencies: [9746, 9463, 4910, 671, 2]
 // Exports: getConjureDefaultAppIcon, getConjureDefaultAppIconColors
 
-// Module 10548 (conjureDefaultAppIcon)
+// Module 11873 (conjureDefaultAppIcon)
 import _modDef671 from "module_671" /* 671 */;
-import ColorUtils from "ColorUtils" /* 5303 */;
-import _modDef10071 from "module_10071" /* 10071 */;
-import GuildProfileConstants from "GuildProfileConstants" /* 10549 */;
+import ColorUtils from "ColorUtils" /* 4910 */;
+import _modDef9463 from "module_9463" /* 9463 */;
+import GuildProfileConstants from "GuildProfileConstants" /* 9746 */;
 import size from "module_2" /* 2 */;
 
 const BANNER_PALETTE_PRESETS = GuildProfileConstants.BANNER_PALETTE_PRESETS;
 let c4 = 0.12156862745098039;
 const result = size.fileFinishedImporting("modules/conjure/projects/conjureDefaultAppIcon.tsx");
 
-export function getConjureDefaultAppIcon(str, str2) {
+export function getConjureDefaultAppIcon(id, name) {
   let length;
   let toLocaleUpperCaseResult;
   let num = 0;
   let num2 = 0;
   let num3 = 0;
-  if (0 < str.length) {
+  if (0 < id.length) {
     do {
-      num2 = 31 * num2 + str.charCodeAt(num) >>> 0;
+      num2 = 31 * num2 + id.charCodeAt(num) >>> 0;
       num = num + 1;
       num3 = num2;
-      length = str.length;
+      length = id.length;
     } while (num < length);
   }
   let tmp;
   const color = arr[num3 % arr.length].color;
-  if (null != str2) {
+  if (null != name) {
     let first;
-    const replaced = str2.replace(/^(?:[\t-\r \xA0\xAD\u0600-\u0605\u061C\u06DD\u070F\u0890\u0891\u08E2\u1680\u180E\u2000-\u200F\u2028-\u202F\u205F-\u2064\u2066-\u206F\u3000\uFEFF\uFFF9-\uFFFB]|\uD804[\uDCBD\uDCCD]|\uD80D[\uDC30-\uDC3F]|\uD82F[\uDCA0-\uDCA3]|\uD834[\uDD73-\uDD7A]|\uDB40[\uDC01\uDC20-\uDC7F])+/, "");
-    const obj = _modDef10071();
+    const replaced = name.replace(/^(?:[\t-\r \xA0\xAD\u0600-\u0605\u061C\u06DD\u070F\u0890\u0891\u08E2\u1680\u180E\u2000-\u200F\u2028-\u202F\u205F-\u2064\u2066-\u206F\u3000\uFEFF\uFFF9-\uFFFB]|\uD804[\uDCBD\uDCCD]|\uD80D[\uDC30-\uDC3F]|\uD82F[\uDCA0-\uDCA3]|\uD834[\uDD73-\uDD7A]|\uDB40[\uDC01\uDC20-\uDC7F])+/, "");
+    const obj = _modDef9463();
     const match = obj.exec(replaced);
     let index;
     if (match != null) {
@@ -61,10 +61,10 @@ export function getConjureDefaultAppIcon(str, str2) {
   }
   return obj3;
 }
-export function getConjureDefaultAppIconColors(color, token) {
+export function getConjureDefaultAppIconColors(color, internal) {
   let accessibleForegroundColor1;
   let alphaResult;
-  const tmp3 = _modDef671(token);
+  const tmp3 = _modDef671(internal);
   const tmp4 = _modDef671(color);
   const tmp5 = _modDef671(color);
   const obj = _modDef671;

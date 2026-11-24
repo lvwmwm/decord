@@ -1,13 +1,13 @@
-// Module ID: 15329
-// Function ID: 15330
+// Module ID: 14060
+// Function ID: 14061
 // Name: useMaybeFetchTieredTenureBadgeData
-// Dependencies: [1388, 504, 15290, 5889, 8483, 2]
+// Dependencies: [1386, 504, 14021, 5474, 8073, 2]
 // Exports: useMaybeFetchTieredTenureBadgeData
 
-// Module 15329 (useMaybeFetchTieredTenureBadgeData)
-import useMountEffectDefault from "useMountEffect" /* 5889 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8483 */;
-import UserStore from "UserStore" /* 1388 */;
+// Module 14060 (useMaybeFetchTieredTenureBadgeData)
+import useMountEffectDefault from "useMountEffect" /* 5474 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8073 */;
+import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,10 +1,10 @@
 // Module ID: 11199
 // Function ID: 11200
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 11199 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/custom_app_icons/HoloWavesIcon", width: 60, height: 60, scales: [2, 3], hash: "88fd60fc6961a4cc52d32c54b3209f38", name: "HoloWavesIcon", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 32, scales: [1, 2, 3], hash: "135884ac95baa487151d1a8517964199", name: "ic_file_small_code", type: "png" });

@@ -1,38 +1,38 @@
-// Module ID: 18855
-// Function ID: 18856
+// Module ID: 17651
+// Function ID: 17652
 // Name: RedesignGuildHeader
-// Dependencies: [19, 17, 5307, 5543, 6050, 1072, 21, 9061, 5537, 5313, 5934, 18856, 5180, 18828, 6051, 5892, 575, 5932, 10576, 5306, 1655, 10271, 18857, 1496, 504, 1503, 5929, 5930, 16347, 1414, 1113, 6010, 18898, 2]
+// Dependencies: [19, 17, 4914, 5128, 5642, 1071, 21, 8571, 5122, 4920, 5519, 17652, 4787, 17624, 5643, 5477, 575, 5517, 10093, 4913, 1653, 9659, 17653, 1494, 504, 1501, 5514, 5515, 15119, 1412, 1112, 5600, 17691, 2]
 // Exports: useRedesignGuildHeaderHeight
 
-// Module 18855 (RedesignGuildHeader)
+// Module 17651 (RedesignGuildHeader)
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import FavoritesUtils from "FavoritesUtils" /* 5180 */;
-import shared from "shared" /* 5313 */;
-import useToken from "useToken" /* 5892 */;
-import spring_spring from "spring/spring" /* 5929 */;
-import springPresets from "springPresets" /* 5930 */;
-import useFontScale from "useFontScale" /* 5934 */;
-import useScaledTextLineHeight from "useScaledTextLineHeight" /* 6051 */;
-import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 9061 */;
-import ThemedGradientDefault from "ThemedGradient" /* 10271 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 10576 */;
-import openGuildActionSheetDefault from "openGuildActionSheet" /* 16347 */;
-import useIsGameCommunityServerPreviewDefault from "useIsGameCommunityServerPreview" /* 18828 */;
-import useStickyServerHeaderSubtitleDefault from "useStickyServerHeaderSubtitle" /* 18856 */;
-import ChannelListStickyHeaderDefault from "ChannelListStickyHeader" /* 18857 */;
+import Constants from "Constants" /* 1071 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import FavoritesUtils from "FavoritesUtils" /* 4787 */;
+import shared from "shared" /* 4920 */;
+import useToken from "useToken" /* 5477 */;
+import spring_spring from "spring/spring" /* 5514 */;
+import springPresets from "springPresets" /* 5515 */;
+import useFontScale from "useFontScale" /* 5519 */;
+import useScaledTextLineHeight from "useScaledTextLineHeight" /* 5643 */;
+import useIsUsingClientThemeDefault from "useIsUsingClientTheme" /* 8571 */;
+import ThemedGradientDefault from "ThemedGradient" /* 9659 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 10093 */;
+import openGuildActionSheetDefault from "openGuildActionSheet" /* 15119 */;
+import useIsGameCommunityServerPreviewDefault from "useIsGameCommunityServerPreview" /* 17624 */;
+import useStickyServerHeaderSubtitleDefault from "useStickyServerHeaderSubtitle" /* 17652 */;
+import ChannelListStickyHeaderDefault from "ChannelListStickyHeader" /* 17653 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5307 */;
-import ActionSheetStore from "ActionSheetStore" /* 5543 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 6050 */;
+import AccessibilityStore from "AccessibilityStore" /* 4914 */;
+import ActionSheetStore from "ActionSheetStore" /* 5128 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 5642 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
-const _modDef1655 = _mod1655;
+const _modDef1653 = _mod1653;
 let obj1, set;
 
 let c10;
@@ -58,7 +58,7 @@ function GuildInfoHeader(arg0) {
   let tmp9;
   ({ guild, scrollPosition, bannerHeight } = arg0);
   const tmp = closure_17();
-  let obj = _mod1655;
+  let obj = _mod1653;
   let items = [closure_18, scrollPosition, bannerHeight];
   let c0;
   let c1;
@@ -82,7 +82,7 @@ function GuildInfoHeader(arg0) {
   c0 = undefined;
   c1 = undefined;
   [tmp8, tmp9, tmp10] = items2;
-  const tmp2Result = _mod1655;
+  const tmp2Result = _mod1653;
   class RedesignGuildHeaderTsx2 {
     constructor() {
       obj = { transform: null };
@@ -102,9 +102,9 @@ function GuildInfoHeader(arg0) {
   const isFavoritesGuildIdResult = tmp2Result2.isFavoritesGuildId(guild.id);
   const obj2 = { style: items4, children: items5 };
   items4 = [animatedStyle, { overflow: "hidden" }];
-  const View = _modDef1655.View;
+  const View = _modDef1653.View;
   const obj3 = { style: animatedStyle1, children: map1(ThemedGradientDefault, { absolute: true, tall: true }) };
-  const View2 = _modDef1655.View;
+  const View2 = _modDef1653.View;
   items5 = [map1(View2, obj3), ];
   const obj4 = { style: tmp.headerWrapper, children: map1(ChannelListStickyHeaderDefault, obj5) };
   obj5 = { guild, showExtraButtons: !isFavoritesGuildIdResult, canOpenGuildActionSheet: !isFavoritesGuildIdResult, showCoachmarks: !isFavoritesGuildIdResult };
@@ -343,11 +343,11 @@ export function useRedesignGuildHeaderHeight(id) {
   const tmp7Result = useToken;
   const token = tmp7Result.useToken(tmp(575).modules.mobile.CHANNEL_LIST_SUBTITLE_TEXT_STYLE);
   if (!isFavoritesGuildIdResult) {
-    num2 = tmp7(5932).SMALL_BUTTON_HEIGHT + unpackModuleId;
+    num2 = tmp7(5517).SMALL_BUTTON_HEIGHT + unpackModuleId;
   }
   let num3 = 0;
   if (tmp11) {
-    num3 = 8 + tmp7(5932).MEDIUM_BUTTON_HEIGHT + 8;
+    num3 = 8 + tmp7(5517).MEDIUM_BUTTON_HEIGHT + 8;
   }
   let num5 = 16;
   if (isFavoritesGuildIdResult) {
@@ -361,7 +361,7 @@ export function useRedesignGuildHeaderHeight(id) {
   let bound = scaleTextLineHeightResult;
   if (isFavoritesGuildIdResult) {
     const _Math = Math;
-    bound = Math.max(scaleTextLineHeightResult, tmp7(5932).SMALL_BUTTON_HEIGHT);
+    bound = Math.max(scaleTextLineHeightResult, tmp7(5517).SMALL_BUTTON_HEIGHT);
   }
   return roundToNearestPixelDefault(16 + bound + num6 + num2 + num3 + num5 + num);
 }

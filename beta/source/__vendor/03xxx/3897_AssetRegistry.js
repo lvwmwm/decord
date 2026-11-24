@@ -1,10 +1,10 @@
 // Module ID: 3897
 // Function ID: 3898
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 3897 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9wcmVtaXVtL3Byb21vdGlvbnMvdGhpcmRfcGFydHk=", scales: [1], hash: "eab99002ca066fb675d2bb1e7a66819b", name: "tr.messages.eab99002ca066fb675d2bb1e7a66819b.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/logitech_3pp", scales: [1], hash: "74d114c91c81530f2c73cdb12ed764ee", name: "Logitech3PP.compiled.messages", type: "jsona" });

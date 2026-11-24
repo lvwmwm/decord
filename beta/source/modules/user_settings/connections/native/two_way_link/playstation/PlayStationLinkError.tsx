@@ -1,16 +1,16 @@
-// Module ID: 7601
-// Function ID: 7602
+// Module ID: 7203
+// Function ID: 7204
 // Name: PlayStationLinkError
-// Dependencies: [19, 7593, 1072, 21, 1502, 7486, 1113, 7487, 2]
+// Dependencies: [19, 7195, 1071, 21, 1500, 7088, 1112, 7089, 2]
 // Exports: PlayStationLinkError
 
-// Module 7601 (PlayStationLinkError)
+// Module 7203 (PlayStationLinkError)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1072 */;
-import intl4 from "intl" /* 1113 */;
-import useNavigation from "useNavigation" /* 1502 */;
-import react2 from "react" /* 7486 */;
-import PlayStationLinkConstants from "PlayStationLinkConstants" /* 7593 */;
+import Constants from "Constants" /* 1071 */;
+import intl4 from "intl" /* 1112 */;
+import useNavigation from "useNavigation" /* 1500 */;
+import react2 from "react" /* 7088 */;
+import PlayStationLinkConstants from "PlayStationLinkConstants" /* 7195 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -31,13 +31,13 @@ export function PlayStationLinkError(arg0) {
   const obj2 = react2;
   const connectRetry = obj2.useConnectRetry(navigation, constants.PRE_CONNECT);
   if (errorCode === AbortCodes.UNDER_MINIMUM_AGE) {
-    const intl2 = tmp(1113).intl;
-    stringResult = intl2.string(tmp(1113).t["3dIn2A"]);
+    const intl2 = tmp(1112).intl;
+    stringResult = intl2.string(tmp(1112).t["3dIn2A"]);
   } else {
-    const intl = tmp(1113).intl;
-    stringResult = intl.string(tmp(1113).t.qE9nqE);
+    const intl = tmp(1112).intl;
+    stringResult = intl.string(tmp(1112).t.qE9nqE);
   }
-  const TwoWayLinkError = tmp(7487).TwoWayLinkError;
-  const intl3 = tmp(1113).intl;
+  const TwoWayLinkError = tmp(7089).TwoWayLinkError;
+  const intl3 = tmp(1112).intl;
   return <TwoWayLinkError title={intl3.string(intl4.t.eY3qHd)} body={stringResult} onClose={onClose} onRetry={connectRetry} />;
 }

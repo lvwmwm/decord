@@ -1,24 +1,23 @@
-// Module ID: 14073
-// Function ID: 14074
+// Module ID: 12241
+// Function ID: 12242
 // Name: GameOrganizationCantJoinActionSheet
-// Dependencies: [19, 5177, 12369, 21, 5542, 14074, 504, 7231, 12541, 2565, 10713, 7913, 1113, 5926, 2]
+// Dependencies: [19, 4784, 11896, 21, 5127, 12242, 504, 6835, 2639, 11225, 7515, 1112, 5511, 2]
 // Exports: default
 
-// Module 14073 (GameOrganizationCantJoinActionSheet)
+// Module 12241 (GameOrganizationCantJoinActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
-import transitionToGuild from "transitionToGuild" /* 7231 */;
-import useResolvedGameOrganizationInviteDefault from "useResolvedGameOrganizationInvite" /* 14074 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
+import transitionToGuild from "transitionToGuild" /* 6835 */;
+import useResolvedGameOrganizationInviteDefault from "useResolvedGameOrganizationInvite" /* 12242 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5177 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 12369 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11896 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
 let metroRequire;
 let tmp;
-const _modDef2565 = tmp(2565);
-const getGameOrganizationDisplayNounDefault = tmp(12541);
+const _modDef2639 = tmp(2639);
 function hideSheet() {
   const obj = ActionSheetActionCreatorsDefault;
   obj.hideActionSheet(hasOwnProperty);
@@ -51,26 +50,28 @@ export default function GameOrganizationCantJoinActionSheet(arg0) {
     return null;
   } else {
     let lXyJMS;
-    let obj2 = { displayNoun: tmp3.displayNoun, lowercase: true };
-    const tmp11 = getGameOrganizationDisplayNounDefault(obj2);
+    let str = tmp3.displayNoun;
+    if (str == null) {
+      str = "other";
+    }
     if (reason === constants.NO_CHARACTERS) {
-      lXyJMS = _modDef2565.lXyJMS;
+      lXyJMS = _modDef2639.lXyJMS;
     } else {
-      lXyJMS = _modDef2565["IIR/NZ"];
+      lXyJMS = _modDef2639["IIR/NZ"];
     }
-    const PromoSheet = tmp5(10713).PromoSheet;
-    const intl = tmp5(1113).intl;
-    const obj4 = { noun: tmp11 };
-    const intl2 = tmp5(1113).intl;
-    const obj5 = { noun: tmp11, guildName: tmp3.linkedGuild.name };
-    const Button = tmp5(5926).Button;
+    const PromoSheet = tmp5(11225).PromoSheet;
+    const intl = tmp5(1112).intl;
+    const obj3 = { displayNoun: str };
+    const intl2 = tmp5(1112).intl;
+    const obj4 = { displayNoun: str, guildName: tmp3.linkedGuild.name };
+    const Button = tmp5(5511).Button;
     if (stateFromStores) {
-      const obj6 = { text: intl4.string(_modDef2565.H1wMHV), size: "lg", onPress: tmp7 };
-      intl4 = tmp5(1113).intl;
+      const obj5 = { text: intl4.string(_modDef2639.H1wMHV), size: "lg", onPress: tmp7 };
+      intl4 = tmp5(1112).intl;
     } else {
-      ({ text: intl3.string(guildId(1113).t.cpT0Cq), variant: "secondary", size: "lg", onPress: hideSheet });
-      intl3 = tmp5(1113).intl;
+      ({ text: intl3.string(guildId(1112).t.cpT0Cq), variant: "secondary", size: "lg", onPress: hideSheet });
+      intl3 = tmp5(1112).intl;
     }
-    return <PromoSheet header={null} title={intl.formatToPlainString(_modDef2565.DinVUQ, obj4)} description={intl2.formatToPlainString(lXyJMS, obj5)} actions={null} />;
+    return <PromoSheet header={null} title={intl.formatToPlainString(_modDef2639.DinVUQ, obj3)} description={intl2.formatToPlainString(lXyJMS, obj4)} actions={null} />;
   }
 };

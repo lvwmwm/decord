@@ -1,18 +1,18 @@
-// Module ID: 20159
-// Function ID: 20160
+// Module ID: 19416
+// Function ID: 19417
 // Name: HcaptchaModal
-// Dependencies: [109, 19, 17, 2189, 1388, 1072, 21, 5306, 504, 1502, 2119, 1630, 1113, 6759, 6322, 6327, 575, 5919, 1380, 20157, 7428, 10866, 2]
+// Dependencies: [109, 19, 17, 2188, 1386, 1071, 21, 4913, 504, 1500, 2117, 1628, 1112, 6363, 5924, 5929, 575, 5504, 1378, 19414, 7030, 10273, 2]
 
-// Module 20159 (HcaptchaModal)
-import Constants from "Constants" /* 1072 */;
-import SharedCaptchaUtils from "SharedCaptchaUtils" /* 6759 */;
+// Module 19416 (HcaptchaModal)
+import Constants from "Constants" /* 1071 */;
+import SharedCaptchaUtils from "SharedCaptchaUtils" /* 6363 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import LocaleStore from "LocaleStore" /* 2189 */;
-import UserStore from "UserStore" /* 1388 */;
+import LocaleStore from "LocaleStore" /* 2188 */;
+import UserStore from "UserStore" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -42,7 +42,7 @@ class HcaptchaModal {
     let obj = onMessage(504);
     const items = [UserStore];
     const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-    let obj2 = onMessage(1502);
+    let obj2 = onMessage(1500);
     navigation = obj2.useNavigation();
     const routes = navigation.getState().routes;
     let tmp6 = routes.length > 0 && "auth" === routes[0].name;
@@ -51,12 +51,12 @@ class HcaptchaModal {
       if (stateFromStores != null) {
         prop = stateFromStores.ageVerificationStatus;
       }
-      tmp6 = prop === tmp3(2119).AgeVerificationStatusUkAndAusOnly.CLIENT_ONLY_PENDING;
+      tmp6 = prop === tmp3(2117).AgeVerificationStatusUkAndAusOnly.CLIENT_ONLY_PENDING;
     }
-    const rect = onPress(1630)();
-    const intl = tmp3(1113).intl;
+    const rect = onPress(1628)();
+    const intl = tmp3(1112).intl;
     const items1 = [onMessage];
-    const stringResult = intl.string(onMessage(1113).t.wsoPhr);
+    const stringResult = intl.string(onMessage(1112).t.wsoPhr);
     onPress = react.useCallback(() => {
       let obj2;
       if (onMessage != null) {
@@ -65,7 +65,7 @@ class HcaptchaModal {
         tmp(obj);
       }
     }, items1);
-    onPress(6322)(() => {
+    onPress(5924)(() => {
       callback();
       return true;
     });
@@ -73,13 +73,13 @@ class HcaptchaModal {
     const obj3 = { style: tmp2.container, children: items3 };
     if (tmp13Result) {
       const obj4 = { spacing: onPress(575).space.PX_16, align: "center", children: items2 };
-      const Stack = tmp3(6327).Stack;
+      const Stack = tmp3(5929).Stack;
       const obj5 = { accessibilityRole: "header", variant: "heading-lg/semibold", color: "mobile-text-heading-primary", style: tmp2.title, children: stringResult };
-      items2 = [closure_11(tmp3(5919).Text, obj5), ];
+      items2 = [closure_11(tmp3(5504).Text, obj5), ];
       let WHITE;
       const tmp16 = closure_11;
       const tmp17 = closure_6;
-      const tmp3Result = onMessage(1380);
+      const tmp3Result = onMessage(1378);
       if (tmp3Result.isAndroid()) {
         WHITE = tmp9(575).unsafe_rawColors.WHITE;
       }
@@ -90,17 +90,17 @@ class HcaptchaModal {
     items3 = [tmp13Result, , ];
     const obj7 = { style: absoluteFillObject.absoluteFillObject, children: closure_11(tmp9Result, obj8) };
     obj8 = { languageCode: LocaleStore.locale, onMessage };
-    tmp9Result = onPress(20157);
+    tmp9Result = onPress(19414);
     const merged = Object.assign(tmp);
     items3[1] = closure_11(closure_7, obj7);
     const obj9 = { style: items4, pointerEvents: "box-none", children: closure_11(PressableOpacity, obj11) };
     items4 = [tmp2.closeButtonContainer, { paddingTop: rect.top + onPress(575).space.PX_8, paddingLeft: rect.left + onPress(575).space.PX_16 }];
-    obj11 = { accessibilityRole: "button", accessibilityLabel: intl2.string(onMessage(1113).t.cpT0Cq), onPress, style: tmp2.closeButtonHitArea, children: closure_11(XLargeIcon, obj12) };
+    obj11 = { accessibilityRole: "button", accessibilityLabel: intl2.string(onMessage(1112).t.cpT0Cq), onPress, style: tmp2.closeButtonHitArea, children: closure_11(XLargeIcon, obj12) };
     ({ paddingTop: rect.top + onPress(575).space.PX_8, paddingLeft: rect.left + onPress(575).space.PX_16 });
-    PressableOpacity = tmp3(7428).PressableOpacity;
-    intl2 = tmp3(1113).intl;
+    PressableOpacity = tmp3(7030).PressableOpacity;
+    intl2 = tmp3(1112).intl;
     obj12 = { color: onPress(575).colors.INTERACTIVE_ICON_DEFAULT };
-    XLargeIcon = tmp3(10866).XLargeIcon;
+    XLargeIcon = tmp3(10273).XLargeIcon;
     items3[2] = closure_11(closure_7, obj9);
     return closure_12(closure_7, obj3);
   }

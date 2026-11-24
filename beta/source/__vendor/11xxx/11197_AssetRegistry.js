@@ -1,10 +1,10 @@
 // Module ID: 11197
 // Function ID: 11198
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 11197 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/custom_app_icons/GamingIcon", width: 60, height: 60, scales: [2, 3], hash: "27dc2bbcf6aa3b0cbef53a5212edf486", name: "GamingIcon", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 32, scales: [1, 2, 3], hash: "40c0d9a37382b6f4efeb6b9b20cf23ba", name: "ic_file_small_ai", type: "png" });

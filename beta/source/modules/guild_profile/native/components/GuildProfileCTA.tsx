@@ -1,27 +1,27 @@
-// Module ID: 10802
-// Function ID: 10803
+// Module ID: 13815
+// Function ID: 13816
 // Name: GuildProfileCTA
-// Dependencies: [19, 6042, 1072, 1082, 21, 10803, 10034, 5542, 7231, 7660, 10805, 10814, 5342, 6914, 7689, 7684, 7230, 6912, 5926, 1113, 2]
+// Dependencies: [19, 5632, 1071, 1081, 21, 12280, 9424, 5127, 6835, 7262, 10521, 13816, 4949, 6518, 7291, 7286, 6834, 6516, 5511, 1112, 2]
 // Exports: default
 
-// Module 10802 (GuildProfileCTA)
+// Module 13815 (GuildProfileCTA)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1072 */;
-import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 5342 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
-import JoinGuildRefusedError from "JoinGuildRefusedError" /* 6912 */;
-import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 6914 */;
-import GuildDiscoveryUtils from "GuildDiscoveryUtils" /* 7230 */;
-import transitionToGuild from "transitionToGuild" /* 7231 */;
-import GuildProfileTypes from "GuildProfileTypes" /* 7689 */;
-import handleNSFWGuildInvite from "handleNSFWGuildInvite" /* 10805 */;
+import Constants from "Constants" /* 1071 */;
+import UserSettingsConstants from "UserSettingsConstants" /* 1081 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4949 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
+import JoinGuildRefusedError from "JoinGuildRefusedError" /* 6516 */;
+import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 6518 */;
+import GuildDiscoveryUtils from "GuildDiscoveryUtils" /* 6834 */;
+import transitionToGuild from "transitionToGuild" /* 6835 */;
+import GuildProfileTypes from "GuildProfileTypes" /* 7291 */;
+import handleNSFWGuildInvite from "handleNSFWGuildInvite" /* 10521 */;
 import react_mod from "react" /* 19 */;
-import InviteStore from "InviteStore" /* 6042 */;
+import InviteStore from "InviteStore" /* 5632 */;
 import size from "module_2" /* 2 */;
 
 let tmp4;
-const MemberVerificationModalActionCreators = tmp4(7684);
+const MemberVerificationModalActionCreators = tmp4(7286);
 let react = react_mod;
 const AnalyticsObjects = Constants.AnalyticsObjects;
 const constants = UserSettingsConstants.ProfileCustomizationScrollPositions;
@@ -68,7 +68,7 @@ export default function GuildProfileCTA(profile) {
       const tmp3 = importDefault;
       if (!obj4.handleNSFWGuildInvite(InviteStore.getInvite(validInviteKey), obj)) {
         let obj2 = { inviteKey: validInviteKey, context: { location: "guild_profile" } };
-        const tmp3Result = tmp3(7660);
+        const tmp3Result = tmp3(7262);
         let result = tmp3Result.acceptInviteAndTransitionToInviteChannel(obj2);
       }
     }

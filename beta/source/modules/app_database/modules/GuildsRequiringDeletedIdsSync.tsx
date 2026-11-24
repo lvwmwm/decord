@@ -1,10 +1,10 @@
-// Module ID: 8758
-// Function ID: 8759
+// Module ID: 8353
+// Function ID: 8354
 // Name: GuildsRequiringDeletedIdsSync
-// Dependencies: [5, 5184, 2]
+// Dependencies: [5, 4791, 2]
 
-// Module 8758 (GuildsRequiringDeletedIdsSync)
-import DatabaseDaosDefault from "DatabaseDaos" /* 5184 */;
+// Module 8353 (GuildsRequiringDeletedIdsSync)
+import DatabaseDaosDefault from "DatabaseDaos" /* 4791 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

@@ -1,9 +1,9 @@
-// Module ID: 5988
-// Function ID: 5989
+// Module ID: 5578
+// Function ID: 5579
 // Name: Countries
 // Dependencies: [2]
 
-// Module 5988 (Countries)
+// Module 5578 (Countries)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/Countries.tsx");

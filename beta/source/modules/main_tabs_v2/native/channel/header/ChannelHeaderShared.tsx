@@ -1,34 +1,34 @@
-// Module ID: 12346
-// Function ID: 12347
+// Module ID: 11868
+// Function ID: 11869
 // Name: ChannelHeaderShared
-// Dependencies: [32, 19, 17, 5248, 1388, 21, 5306, 575, 7428, 1380, 10064, 5919, 1187, 12347, 10891, 5892, 8033, 12348, 1113, 5944, 6010, 1414, 10546, 10870, 2]
+// Dependencies: [32, 19, 17, 4855, 1386, 21, 4913, 575, 7030, 1378, 9454, 5504, 1186, 11869, 10124, 5477, 7636, 11870, 1112, 5529, 5600, 1412, 11871, 10387, 2]
 // Exports: renderAppSubTitle, renderChannelIcon, renderChannelIconRaw, renderChannelTitle, renderEmptyIcon, renderGroupDMIcon, renderMemberCountText, renderParentChannelSubTitle, renderTitleWrapper, renderUserAvatar
 
-// Module 12346 (ChannelHeaderShared)
+// Module 11868 (ChannelHeaderShared)
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1113 */;
-import native from "native" /* 1187 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import useToken from "useToken" /* 5892 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import useChannelName from "useChannelName" /* 5944 */;
-import FastImageDefault from "FastImage" /* 6010 */;
-import Pressables from "Pressables" /* 7428 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8033 */;
-import UsernameWithEffectsDefault from "UsernameWithEffects" /* 10064 */;
-import ConjureAppIconTileDefault from "ConjureAppIconTile" /* 10546 */;
-import BotTagDefault from "BotTag" /* 10870 */;
-import GroupDMAvatarDefault from "GroupDMAvatar" /* 10891 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12347 */;
-import GuildActionSheetMemberCountDefault from "GuildActionSheetMemberCount" /* 12348 */;
+import intl2 from "intl" /* 1112 */;
+import native from "native" /* 1186 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
+import useToken from "useToken" /* 5477 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import useChannelName from "useChannelName" /* 5529 */;
+import FastImageDefault from "FastImage" /* 5600 */;
+import Pressables from "Pressables" /* 7030 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 7636 */;
+import UsernameWithEffectsDefault from "UsernameWithEffects" /* 9454 */;
+import GroupDMAvatarDefault from "GroupDMAvatar" /* 10124 */;
+import BotTagDefault from "BotTag" /* 10387 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11869 */;
+import GuildActionSheetMemberCountDefault from "GuildActionSheetMemberCount" /* 11870 */;
+import ConjureAppIconTileDefault from "ConjureAppIconTile" /* 11871 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import RelationshipStore from "RelationshipStore" /* 5248 */;
-import UserStore from "UserStore" /* 1388 */;
+import RelationshipStore from "RelationshipStore" /* 4855 */;
+import UserStore from "UserStore" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let Platform;
@@ -157,7 +157,7 @@ function ChannelIconRaw(IconComponent) {
     tmp6 = metroImportAll(IconComponent, obj2);
   } else {
     const obj3 = { size: native.Icon.Sizes.SMALL_20, source: icon, color: tmp4.guildChannelIcon.tintColor };
-    const Icon = tmp(1187).Icon;
+    const Icon = tmp(1186).Icon;
     tmp6 = metroImportAll(Icon, obj3);
   }
   return tmp6;

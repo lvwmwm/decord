@@ -1,18 +1,18 @@
-// Module ID: 13206
-// Function ID: 13207
+// Module ID: 18290
+// Function ID: 18291
 // Name: ConjureDownstreamUpdatesSwitch
-// Dependencies: [32, 19, 17, 21, 5306, 575, 13194, 7391, 7746, 7954, 1113, 4131, 5919, 2]
+// Dependencies: [32, 19, 17, 21, 4913, 575, 18259, 6993, 7348, 7556, 1112, 4190, 5504, 2]
 // Exports: default
 
-// Module 13206 (ConjureDownstreamUpdatesSwitch)
+// Module 18290 (ConjureDownstreamUpdatesSwitch)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef4131 from "module_4131" /* 4131 */;
-import conjureManagedCopyConnection from "conjureManagedCopyConnection" /* 7391 */;
+import _modDef4190 from "module_4190" /* 4190 */;
+import conjureManagedCopyConnection from "conjureManagedCopyConnection" /* 6993 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
@@ -41,7 +41,7 @@ export default function ConjureDownstreamUpdatesSwitch(projectId) {
   projectId = projectId.projectId;
   importDefault = undefined;
   const tmp = closure_8();
-  let obj = projectId(13194);
+  let obj = projectId(18259);
   const conjureDownstreamUpdates = obj.useConjureDownstreamUpdates(projectId);
   [first, importDefault] = react.useState(false);
   [][0] = projectId;
@@ -50,20 +50,20 @@ export default function ConjureDownstreamUpdatesSwitch(projectId) {
     let tmp11Result;
     const obj2 = { style: tmp.container, children: items };
     const obj3 = { hasIcons: false, children: closure_6(TableSwitchRow, obj5) };
-    const TableRowGroup = tmp2(7746).TableRowGroup;
-    obj5 = { label: intl.string(_modDef4131["Nf+zrD"]), subLabel: intl2.string(_modDef4131.heoCNf), value: null, disabled: null, onValueChange: tmp7 };
-    TableSwitchRow = tmp2(7954).TableSwitchRow;
-    intl = tmp2(1113).intl;
-    intl2 = tmp2(1113).intl;
+    const TableRowGroup = tmp2(7348).TableRowGroup;
+    obj5 = { label: intl.string(_modDef4190["Nf+zrD"]), subLabel: intl2.string(_modDef4190.heoCNf), value: null, disabled: null, onValueChange: tmp7 };
+    TableSwitchRow = tmp2(7556).TableSwitchRow;
+    intl = tmp2(1112).intl;
+    intl2 = tmp2(1112).intl;
     ({ enabled: obj4.value, pending: obj4.disabled } = conjureDownstreamUpdates);
     items = [closure_6(TableRowGroup, obj3), ];
     const tmp12 = importDefault;
     const tmp9 = closure_7;
     if (first) {
       const obj6 = { accessibilityRole: "alert", children: closure_6(Text, obj11) };
-      obj11 = { variant: "body-sm/normal", color: "text-feedback-critical", children: intl3.string(tmp12(4131)["UU+oef"]) };
-      Text = tmp2(5919).Text;
-      intl3 = tmp2(1113).intl;
+      obj11 = { variant: "body-sm/normal", color: "text-feedback-critical", children: intl3.string(tmp12(4190)["UU+oef"]) };
+      Text = tmp2(5504).Text;
+      intl3 = tmp2(1112).intl;
       tmp11Result = tmp11(tmp10, obj6);
     } else {
       tmp11Result = null;

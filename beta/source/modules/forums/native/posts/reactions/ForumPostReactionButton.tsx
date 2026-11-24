@@ -1,28 +1,28 @@
-// Module ID: 11144
-// Function ID: 11145
+// Module ID: 11213
+// Function ID: 11214
 // Name: ForumPostReactionButton
-// Dependencies: [19, 17, 21, 5306, 575, 11145, 7428, 1113, 5919, 5910, 11866, 11899, 5131, 11870, 1090, 1414, 5250, 7894, 11901, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 11214, 7030, 1112, 5504, 5495, 10383, 10171, 4738, 10390, 1089, 1412, 4857, 7496, 11676, 2]
 // Exports: AddReactionButton, AdditionalReactionCount, ForumPostReactionButton
 
-// Module 11144 (ForumPostReactionButton)
+// Module 11213 (ForumPostReactionButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
-import intl2 from "intl" /* 1113 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import UserSettings from "UserSettings" /* 5131 */;
-import ReactionUtils from "ReactionUtils" /* 5250 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 5910 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import Pressables from "Pressables" /* 7428 */;
-import EmojiDefault from "Emoji" /* 7894 */;
-import useNativeForumPostHandlersDefault from "useNativeForumPostHandlers" /* 11145 */;
-import reactions_ReactionUtils from "reactions/ReactionUtils" /* 11866 */;
-import useEmojiColorPalette from "useEmojiColorPalette" /* 11870 */;
-import useReactionPermissionsDefault from "useReactionPermissions" /* 11899 */;
+import utils_ColorUtils from "utils/ColorUtils" /* 1089 */;
+import intl2 from "intl" /* 1112 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
+import UserSettings from "UserSettings" /* 4738 */;
+import ReactionUtils from "ReactionUtils" /* 4857 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 5495 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import Pressables from "Pressables" /* 7030 */;
+import EmojiDefault from "Emoji" /* 7496 */;
+import useReactionPermissionsDefault from "useReactionPermissions" /* 10171 */;
+import reactions_ReactionUtils from "reactions/ReactionUtils" /* 10383 */;
+import useEmojiColorPalette from "useEmojiColorPalette" /* 10390 */;
+import useNativeForumPostHandlersDefault from "useNativeForumPostHandlers" /* 11214 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -30,7 +30,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp10;
-const AnimatedCounterDefault = tmp10(11901);
+const AnimatedCounterDefault = tmp10(11676);
 class BurstReactionButton {
   constructor(arg0) {
     let accentColor;
@@ -53,7 +53,7 @@ class BurstReactionButton {
     let str = "";
     if (null != emojiColorPalette) {
       let backgroundColor;
-      const hex2rgb = tmp(1090).hex2rgb;
+      const hex2rgb = tmp(1089).hex2rgb;
       utils_ColorUtils;
       if (emojiColorPalette != null) {
         backgroundColor = emojiColorPalette.backgroundColor;

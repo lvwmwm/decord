@@ -1,17 +1,17 @@
-// Module ID: 19703
-// Function ID: 19704
+// Module ID: 18959
+// Function ID: 18960
 // Name: ChannelPermissionOverwriteEditActionCreators
-// Dependencies: [5, 5155, 19698, 572, 6005, 1113, 19699, 8134, 2]
+// Dependencies: [5, 4762, 18954, 572, 5595, 1112, 18955, 7737, 2]
 // Exports: updateChannelPermissionOverwrite
 
-// Module 19703 (ChannelPermissionOverwriteEditActionCreators)
+// Module 18959 (ChannelPermissionOverwriteEditActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import intl2 from "intl" /* 1113 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 6005 */;
-import ChannelPermissionOverwriteEditStore2 from "ChannelPermissionOverwriteEditStore" /* 19698 */;
-import ChannelPermissionOverwriteEditUtils from "ChannelPermissionOverwriteEditUtils" /* 19699 */;
+import intl2 from "intl" /* 1112 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5595 */;
+import ChannelPermissionOverwriteEditStore2 from "ChannelPermissionOverwriteEditStore" /* 18954 */;
+import ChannelPermissionOverwriteEditUtils from "ChannelPermissionOverwriteEditUtils" /* 18955 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
 import size from "module_2" /* 2 */;
 
 let c10, c5, c9, closure_5, closure_8, editId;

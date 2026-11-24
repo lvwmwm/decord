@@ -1,26 +1,26 @@
-// Module ID: 10592
-// Function ID: 10593
+// Module ID: 9672
+// Function ID: 9673
 // Name: VoicePanelAudioOutputActionSheet
-// Dependencies: [19, 17, 6062, 10584, 5155, 6063, 10591, 1072, 21, 5306, 5542, 563, 10593, 10594, 1113, 7745, 7747, 7455, 10583, 10817, 10818, 10819, 5338, 5139, 10837, 5556, 7913, 7722, 2]
+// Dependencies: [19, 17, 5655, 9664, 4762, 5656, 9671, 1071, 21, 4913, 5127, 563, 9673, 9674, 1112, 7347, 7349, 7057, 9663, 11015, 10853, 13819, 4945, 4746, 13820, 5141, 7515, 7324, 2]
 
-// Module 10592 (VoicePanelAudioOutputActionSheet)
+// Module 9672 (VoicePanelAudioOutputActionSheet)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;
-import Constants from "Constants" /* 1072 */;
-import intl3 from "intl" /* 1113 */;
-import dismissible_content from "dismissible_content" /* 5139 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5338 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
-import NativeViewDefault from "NativeView" /* 7722 */;
-import VoicePanelHeaderConstants from "VoicePanelHeaderConstants" /* 10591 */;
-import useOnConnectToConsole from "useOnConnectToConsole" /* 10819 */;
+import Constants from "Constants" /* 1071 */;
+import intl3 from "intl" /* 1112 */;
+import dismissible_content from "dismissible_content" /* 4746 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4945 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
+import NativeViewDefault from "NativeView" /* 7324 */;
+import VoicePanelHeaderConstants from "VoicePanelHeaderConstants" /* 9671 */;
+import useOnConnectToConsole from "useOnConnectToConsole" /* 13819 */;
 import react from "react" /* 19 */;
-import GameConsoleStore from "GameConsoleStore" /* 6062 */;
-import AudioManagerStore from "AudioManagerStore" /* 10584 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import SessionsStore from "SessionsStore" /* 6063 */;
+import GameConsoleStore from "GameConsoleStore" /* 5655 */;
+import AudioManagerStore from "AudioManagerStore" /* 9664 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import SessionsStore from "SessionsStore" /* 5656 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, type;
@@ -49,9 +49,9 @@ function VoicePanelAudioPhoneOutputSection() {
   }, []);
   let tmp5 = null;
   if (availableDevices.length > 0) {
-    let obj2 = { style: tmp.sectionContainer, title: intl.string(tmp2(1113).t.CxyS15), hasIcons: true, children: closure_11(TableRadioGroup, obj3) };
-    const VoicePanelFormSection = tmp2(10594).VoicePanelFormSection;
-    intl = tmp2(1113).intl;
+    let obj2 = { style: tmp.sectionContainer, title: intl.string(tmp2(1112).t.CxyS15), hasIcons: true, children: closure_11(TableRadioGroup, obj3) };
+    const VoicePanelFormSection = tmp2(9674).VoicePanelFormSection;
+    intl = tmp2(1112).intl;
     obj3 = {
       value: activeDevice.deviceId,
       onChange(arg0) {
@@ -85,7 +85,7 @@ function VoicePanelAudioPhoneOutputSection() {
           return tmp(TableRadioRow, obj, deviceId.deviceId);
         })
     };
-    TableRadioGroup = tmp2(7745).TableRadioGroup;
+    TableRadioGroup = tmp2(7347).TableRadioGroup;
     tmp5 = closure_11(VoicePanelFormSection, obj2);
   }
   return tmp5;
@@ -102,8 +102,8 @@ function VoicePanelAudioConsoleSection(channel) {
   let awaitingRemoteSessionInfo;
   let tmp2 = dependencyMap;
   let tmp = closure_13();
-  arr = arr(10817)();
-  dependencyMap = arr(10818)();
+  arr = arr(11015)();
+  dependencyMap = arr(10853)();
   let obj = channel(563);
   const items = [awaitingRemoteSessionInfo];
   const stateFromStores = obj.useStateFromStores(items, () => awaitingRemoteSessionInfo.getAwaitingRemoteSessionInfo());
@@ -155,8 +155,8 @@ function VoicePanelAudioConsoleSection(channel) {
       obj.hideActionSheet(closure_9);
     }
   }, items3);
-  let obj3 = channel(5338);
-  const tmp8 = !obj3.useIsDismissibleContentDismissed_UNSAFE(channel(5139).DismissibleContent.DONUT_MOBILE_NUX);
+  let obj3 = channel(4945);
+  const tmp8 = !obj3.useIsDismissibleContentDismissed_UNSAFE(channel(4746).DismissibleContent.DONUT_MOBILE_NUX);
   awaitingRemoteSessionInfo = tmp8;
   const items4 = [arr, tmp8];
   const effect = stateFromStores.useEffect(() => {
@@ -168,11 +168,11 @@ function VoicePanelAudioConsoleSection(channel) {
   }, items4);
   let tmp10 = null;
   if (arr.length > 0) {
-    let obj4 = { title: intl.string(tmp3(1113).t.q22XnQ), style: tmp.sectionContainer, hasIcons: true, children: closure_11(TableRadioGroup, obj5) };
-    const VoicePanelFormSection = tmp3(10594).VoicePanelFormSection;
-    intl = tmp3(1113).intl;
+    let obj4 = { title: intl.string(tmp3(1112).t.q22XnQ), style: tmp.sectionContainer, hasIcons: true, children: closure_11(TableRadioGroup, obj5) };
+    const VoicePanelFormSection = tmp3(9674).VoicePanelFormSection;
+    intl = tmp3(1112).intl;
     obj5 = { defaultValue: memo, onChange: callback, hasIcons: true, children: mapped.filter((item) => Boolean(item)) };
-    TableRadioGroup = tmp3(7745).TableRadioGroup;
+    TableRadioGroup = tmp3(7347).TableRadioGroup;
     mapped = arr.map((type) => {
       let TableRowIcon;
       let intl;
@@ -226,10 +226,10 @@ const memoResult = react.memo(function VoicePanelAudioOutputActionSheet(arg0) {
   let tmp4Result2 = null;
   if (null != stateFromStores) {
     const obj2 = { header: closure_11(BottomSheetTitleHeader, obj3), children: closure_11(tmp5, obj5) };
-    const BottomSheet = tmp(5556).BottomSheet;
+    const BottomSheet = tmp(5141).BottomSheet;
     obj3 = { title: intl.string(intl3.t.iwxPM3) };
-    BottomSheetTitleHeader = tmp(7913).BottomSheetTitleHeader;
-    intl = tmp(1113).intl;
+    BottomSheetTitleHeader = tmp(7515).BottomSheetTitleHeader;
+    intl = tmp(1112).intl;
     tmp5 = ScrollView;
     const tmp6 = closure_12;
     const tmp8 = NativeViewDefault;

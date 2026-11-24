@@ -1,0 +1,10 @@
+// Module ID: 12219
+// Function ID: 12220
+// Name: AssetRegistry
+// Dependencies: [1118]
+
+// Module 12219 (AssetRegistry)
+import AssetRegistry from "AssetRegistry" /* 1118 */;
+
+
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [1, 2, 3], hash: "599bfed8ff498926fcd56f01832a54ca", name: "camera_upload", type: "png" });

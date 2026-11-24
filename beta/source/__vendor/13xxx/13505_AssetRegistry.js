@@ -1,10 +1,10 @@
 // Module ID: 13505
 // Function ID: 13506
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 13505 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/empties", width: 141, height: 128, scales: [2, 3], hash: "2d906861c73988d1392c3f207cda799f", name: "empty_quick_switcher", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/empties", width: 240, height: 130, scales: [2, 3], hash: "ddcb188db6ac661c6c9a0057112012b2", name: "no_mutual_servers_light", type: "png" });

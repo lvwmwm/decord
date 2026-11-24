@@ -1,21 +1,21 @@
-// Module ID: 14787
-// Function ID: 14788
+// Module ID: 13244
+// Function ID: 13245
 // Name: UpcomingEventsLongPressActionSheet
-// Dependencies: [19, 17, 5177, 6948, 6949, 21, 5306, 504, 7951, 7913, 7720, 1113, 8106, 1187, 14788, 7874, 5542, 14789, 14790, 7883, 7878, 2]
+// Dependencies: [19, 17, 4784, 6552, 6553, 21, 4913, 504, 7553, 7515, 7322, 1112, 7709, 1186, 13245, 7476, 5127, 13246, 13247, 7485, 7480, 2]
 // Exports: default
 
-// Module 14787 (UpcomingEventsLongPressActionSheet)
+// Module 13244 (UpcomingEventsLongPressActionSheet)
 import react_native from "react-native" /* 17 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
-import ReadStateConstants from "ReadStateConstants" /* 6949 */;
-import ReadStateActionCreators from "ReadStateActionCreators" /* 7874 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7878 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7883 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
+import ReadStateConstants from "ReadStateConstants" /* 6553 */;
+import ReadStateActionCreators from "ReadStateActionCreators" /* 7476 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7480 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7485 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5177 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6948 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6552 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -48,13 +48,13 @@ export default function UpcomingEventsLongPressActionSheet(guildId) {
   let obj2 = guildId(504);
   const items1 = [UserGuildSettingsStore];
   const stateFromStores1 = obj2.useStateFromStores(items1, () => UserGuildSettingsStore.isMuteScheduledEventsEnabled(guildId));
-  const ActionSheet = guildId(7951).ActionSheet;
-  const obj3 = { leading: closure_7(View, obj4), title: intl.string(guildId(1113).t.tlopTM) };
+  const ActionSheet = guildId(7553).ActionSheet;
+  const obj3 = { leading: closure_7(View, obj4), title: intl.string(guildId(1112).t.tlopTM) };
   obj4 = { style: tmp.headerIcon, children: closure_7(tmp9, obj5) };
-  const BottomSheetTitleHeader = guildId(7913).BottomSheetTitleHeader;
-  obj5 = { guild: stateFromStores, size: guildId(7720).GuildIconSizes.LARGE };
-  tmp9 = stateFromStores1(7720);
-  intl = guildId(1113).intl;
+  const BottomSheetTitleHeader = guildId(7515).BottomSheetTitleHeader;
+  obj5 = { guild: stateFromStores, size: guildId(7322).GuildIconSizes.LARGE };
+  tmp9 = stateFromStores1(7322);
+  intl = guildId(1112).intl;
   const items2 = [closure_7(BottomSheetTitleHeader, obj3), , ];
   const obj6 = {
     leading: closure_7(Icon, obj7),
@@ -66,14 +66,14 @@ export default function UpcomingEventsLongPressActionSheet(guildId) {
       obj2.hideActionSheet();
     }
   };
-  const FormRow = guildId(8106).FormRow;
-  obj7 = { source: stateFromStores1(14788) };
-  Icon = guildId(1187).Icon;
-  obj8 = { text: intl2.string(guildId(1113).t.e6RscS) };
-  FormLabel = guildId(8106).FormLabel;
-  intl2 = guildId(1113).intl;
+  const FormRow = guildId(7709).FormRow;
+  obj7 = { source: stateFromStores1(13245) };
+  Icon = guildId(1186).Icon;
+  obj8 = { text: intl2.string(guildId(1112).t.e6RscS) };
+  FormLabel = guildId(7709).FormLabel;
+  intl2 = guildId(1112).intl;
   items2[1] = closure_7(FormRow, obj6);
-  const FormRow2 = guildId(8106).FormRow;
+  const FormRow2 = guildId(7709).FormRow;
   const obj9 = {
     leading: closure_7(Icon2, obj10),
     label: closure_7(FormLabel2, { text: stringResult }),
@@ -85,12 +85,12 @@ export default function UpcomingEventsLongPressActionSheet(guildId) {
       const result = updateGuildNotificationSettings(guildId, obj, NotificationLabel.mutedEvents(!stateFromStores1));
     }
   };
-  obj10 = { source: stateFromStores1(stateFromStores1 ? 14789 : 14790) };
-  Icon2 = guildId(1187).Icon;
-  FormLabel2 = tmp2(8106).FormLabel;
-  const intl3 = tmp2(1113).intl;
+  obj10 = { source: stateFromStores1(stateFromStores1 ? 13246 : 13247) };
+  Icon2 = guildId(1186).Icon;
+  FormLabel2 = tmp2(7709).FormLabel;
+  const intl3 = tmp2(1112).intl;
   const string = intl3.string;
-  const t = tmp2(1113).t;
+  const t = tmp2(1112).t;
   const tmp6 = closure_8;
   const tmp8 = stateFromStores1;
   if (tmp8) {

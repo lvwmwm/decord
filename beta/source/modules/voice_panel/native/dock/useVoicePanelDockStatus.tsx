@@ -1,24 +1,24 @@
-// Module ID: 19986
-// Function ID: 19987
+// Module ID: 19243
+// Function ID: 19244
 // Name: useVoicePanelDockStatus
-// Dependencies: [32, 19, 7016, 6359, 502, 6061, 6931, 1388, 5971, 19206, 5973, 6361, 11984, 504, 1089, 572, 2]
+// Dependencies: [32, 19, 6620, 5961, 502, 5654, 6535, 1386, 5561, 18008, 5563, 5963, 11749, 504, 1088, 572, 2]
 // Exports: default
 
-// Module 19986 (useVoicePanelDockStatus)
-import DurationsDefault from "Durations" /* 1089 */;
-import CallConstants from "CallConstants" /* 5973 */;
-import SoundboardConstants from "SoundboardConstants" /* 6361 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11984 */;
+// Module 19243 (useVoicePanelDockStatus)
+import DurationsDefault from "Durations" /* 1088 */;
+import CallConstants from "CallConstants" /* 5563 */;
+import SoundboardConstants from "SoundboardConstants" /* 5963 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11749 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 7016 */;
-import SoundboardStore from "SoundboardStore" /* 6359 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6620 */;
+import SoundboardStore from "SoundboardStore" /* 5961 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 6061 */;
-import SpeakingStore from "SpeakingStore" /* 6931 */;
-import UserStore from "UserStore" /* 1388 */;
-import VoiceStateStore from "VoiceStateStore" /* 5971 */;
-import VoicePanelDockStatusStore from "VoicePanelDockStatusStore" /* 19206 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5654 */;
+import SpeakingStore from "SpeakingStore" /* 6535 */;
+import UserStore from "UserStore" /* 1386 */;
+import VoiceStateStore from "VoiceStateStore" /* 5561 */;
+import VoicePanelDockStatusStore from "VoicePanelDockStatusStore" /* 18008 */;
 import size from "module_2" /* 2 */;
 
 let importDefault, map, set, speakers, streamParticipants;

@@ -1,13 +1,13 @@
-// Module ID: 17140
-// Function ID: 17141
+// Module ID: 15906
+// Function ID: 15907
 // Name: UserProfileLegacyUsernameSwitch
-// Dependencies: [19, 21, 5131, 17101, 1113, 7800, 9398, 2]
+// Dependencies: [19, 21, 4738, 15867, 1112, 7402, 8909, 2]
 // Exports: default
 
-// Module 17140 (UserProfileLegacyUsernameSwitch)
+// Module 15906 (UserProfileLegacyUsernameSwitch)
 import Fragment from "Fragment" /* 21 */;
-import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 7800 */;
-import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 9398 */;
+import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 7402 */;
+import UserProfileSettingsActionCreators from "UserProfileSettingsActionCreators" /* 8909 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ export default function UserProfileLegacyUsernameSwitch(pendingLegacyUsernameDis
   pendingLegacyUsernameDisabled = pendingLegacyUsernameDisabled.pendingLegacyUsernameDisabled;
   let setting;
   const legacyUsername = pendingLegacyUsernameDisabled.legacyUsername;
-  const LegacyUsernameDisabled = setting(5131).LegacyUsernameDisabled;
+  const LegacyUsernameDisabled = setting(4738).LegacyUsernameDisabled;
   setting = LegacyUsernameDisabled.useSetting();
   let tmp4 = setting;
   if (undefined !== pendingLegacyUsernameDisabled) {
@@ -29,9 +29,9 @@ export default function UserProfileLegacyUsernameSwitch(pendingLegacyUsernameDis
   }
   let obj = {
     value: !tmp4,
-    label: intl.string(tmp(1113).t["3cWDuO"]),
+    label: intl.string(tmp(1112).t["3cWDuO"]),
     subLabel: stringResult,
-    accessibilityLabel: intl3.string(tmp(1113).t["3cWDuO"]),
+    accessibilityLabel: intl3.string(tmp(1112).t["3cWDuO"]),
     onValueChange(arg0) {
       if (!arg0 === setting) {
         const obj3 = UserSettingsAccountActionCreators;
@@ -43,16 +43,16 @@ export default function UserProfileLegacyUsernameSwitch(pendingLegacyUsernameDis
       }
     }
   };
-  const UserProfileEditFormSwitch = tmp(17101).UserProfileEditFormSwitch;
-  intl = tmp(1113).intl;
-  const intl2 = tmp(1113).intl;
+  const UserProfileEditFormSwitch = tmp(15867).UserProfileEditFormSwitch;
+  intl = tmp(1112).intl;
+  const intl2 = tmp(1112).intl;
   const tmp5 = jsx;
   if (tmp4) {
-    stringResult = intl2.string(tmp(1113).t.eD6Yq0);
+    stringResult = intl2.string(tmp(1112).t.eD6Yq0);
   } else {
     let obj2 = { username: legacyUsername };
-    stringResult = intl2.formatToPlainString(tmp(1113).t.aYhclf, obj2);
+    stringResult = intl2.formatToPlainString(tmp(1112).t.aYhclf, obj2);
   }
-  intl3 = tmp(1113).intl;
+  intl3 = tmp(1112).intl;
   return tmp5(UserProfileEditFormSwitch, obj);
 };

@@ -1,21 +1,21 @@
-// Module ID: 11347
-// Function ID: 11348
+// Module ID: 11356
+// Function ID: 11357
 // Name: GIFPickerHeader
-// Dependencies: [32, 19, 17, 1072, 21, 5306, 575, 11342, 7640, 1655, 5538, 5541, 7988, 7827, 1113, 7825, 11340, 7428, 10772, 5919, 2]
+// Dependencies: [32, 19, 17, 1071, 21, 4913, 575, 11353, 7242, 1653, 5123, 5126, 7591, 7429, 1112, 7427, 10157, 7030, 11357, 5504, 2]
 
-// Module 11347 (GIFPickerHeader)
+// Module 11356 (GIFPickerHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import intl6 from "intl" /* 1113 */;
-import timing_timing from "timing/timing" /* 5538 */;
-import InputTypes from "InputTypes" /* 7640 */;
-import GifProvider from "GifProvider" /* 11340 */;
-import gif_picker_GIFPickerUtils from "gif_picker/GIFPickerUtils" /* 11342 */;
+import Constants from "Constants" /* 1071 */;
+import intl6 from "intl" /* 1112 */;
+import timing_timing from "timing/timing" /* 5123 */;
+import InputTypes from "InputTypes" /* 7242 */;
+import GifProvider from "GifProvider" /* 10157 */;
+import gif_picker_GIFPickerUtils from "gif_picker/GIFPickerUtils" /* 11353 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -27,7 +27,7 @@ let obj2;
 let obj3;
 let obj4;
 let tmp2;
-const timingPresets = tmp2(5541);
+const timingPresets = tmp2(5126);
 function FavoritesSearch(onQueryChange) {
   let IconButton;
   let accessibilityElementsHidden;
@@ -193,30 +193,30 @@ const memoResult = react.memo(function GIFPickerHeader(arg0) {
   const obj = { style: tmp.container, children: tmp13Result };
   if (categoryType === GIFPickerResultTypes.SEARCH) {
     const obj2 = { size: "md", onChange: onQueryChange, placeholder: tmp5, onClear: onQueryClear, ref: searchInputRef, round: true };
-    tmp13Result = tmp6(tmp2(7825).SearchBar, obj2);
+    tmp13Result = tmp6(tmp2(7427).SearchBar, obj2);
   } else {
     let stringResult;
     const obj3 = { style: tmp.headerContainer, children: items1 };
     const obj4 = { style: tmp.header, accessibilityRole: "button", onPress: onQueryClear, accessibilityLabel: formatToPlainString(UTypEu, obj5), children: items };
-    const PressableOpacity = tmp2(7428).PressableOpacity;
-    const intl4 = tmp2(1113).intl;
+    const PressableOpacity = tmp2(7030).PressableOpacity;
+    const intl4 = tmp2(1112).intl;
     formatToPlainString = intl4.formatToPlainString;
     obj5 = { destination: intl5.string(intl6.t.ffgJrs) };
-    UTypEu = tmp2(1113).t.UTypEu;
-    intl5 = tmp2(1113).intl;
+    UTypEu = tmp2(1112).t.UTypEu;
+    intl5 = tmp2(1112).intl;
     const obj6 = { color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE, size: "sm" };
-    const ChevronLargeLeftIcon = tmp2(10772).ChevronLargeLeftIcon;
+    const ChevronLargeLeftIcon = tmp2(11357).ChevronLargeLeftIcon;
     items = [metroImportDefault(ChevronLargeLeftIcon, obj6), ];
-    const Text = tmp2(5919).Text;
+    const Text = tmp2(5504).Text;
     if (categoryType === GIFPickerResultTypes.TRENDING_GIFS) {
-      const intl3 = tmp2(1113).intl;
-      stringResult = intl3.string(tmp2(1113).t.TsWCdW);
+      const intl3 = tmp2(1112).intl;
+      stringResult = intl3.string(tmp2(1112).t.TsWCdW);
     } else if (categoryType === GIFPickerResultTypes.FAVORITES) {
-      const intl2 = tmp2(1113).intl;
-      stringResult = intl2.string(tmp2(1113).t.k8fFjp);
+      const intl2 = tmp2(1112).intl;
+      stringResult = intl2.string(tmp2(1112).t.k8fFjp);
     } else {
-      const intl = tmp2(1113).intl;
-      stringResult = intl.string(tmp2(1113).t["5h0QOP"]);
+      const intl = tmp2(1112).intl;
+      stringResult = intl.string(tmp2(1112).t["5h0QOP"]);
     }
     const obj7 = { variant: "body-sm/semibold", color: "text-default", maxFontSizeMultiplier: 2, children: stringResult };
     items[1] = metroImportDefault(Text, obj7);

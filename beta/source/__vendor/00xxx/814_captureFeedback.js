@@ -9,7 +9,7 @@ import _mod712 from "module_712" /* 712 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export function captureFeedback(contact_email) {
+export function captureFeedback(contact_email, arg1) {
   let obj4;
   let obj = arg1;
   if (arg1 === undefined) {

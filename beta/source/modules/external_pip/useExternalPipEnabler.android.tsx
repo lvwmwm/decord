@@ -1,14 +1,14 @@
-// Module ID: 19906
-// Function ID: 19907
+// Module ID: 19157
+// Function ID: 19158
 // Name: useExternalPipEnabler
-// Dependencies: [7016, 502, 6061, 504, 19907, 2]
+// Dependencies: [6620, 502, 5654, 504, 19158, 2]
 // Exports: default
 
-// Module 19906 (useExternalPipEnabler)
-import ExternalPipEnablerState from "ExternalPipEnablerState" /* 19907 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 7016 */;
+// Module 19157 (useExternalPipEnabler)
+import ExternalPipEnablerState from "ExternalPipEnablerState" /* 19158 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6620 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 6061 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5654 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/external_pip/useExternalPipEnabler.android.tsx");

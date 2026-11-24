@@ -1,22 +1,22 @@
-// Module ID: 12673
-// Function ID: 12674
+// Module ID: 12168
+// Function ID: 12169
 // Name: DoubleTapEmojiEditNudge
-// Dependencies: [5, 19, 17, 5307, 1497, 1072, 1391, 21, 5306, 575, 5131, 9196, 1499, 504, 1414, 9543, 1256, 9555, 5919, 1113, 7894, 7428, 2]
+// Dependencies: [5, 19, 17, 4914, 1495, 1071, 1389, 21, 4913, 575, 4738, 8706, 1497, 504, 1412, 9063, 1255, 9075, 5504, 1112, 7496, 7030, 2]
 // Exports: DoubleTapEmojiEditNudge
 
-// Module 12673 (DoubleTapEmojiEditNudge)
+// Module 12168 (DoubleTapEmojiEditNudge)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import DoubleTapToReactUtils from "DoubleTapToReactUtils" /* 9196 */;
+import Constants from "Constants" /* 1071 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
+import DoubleTapToReactUtils from "DoubleTapToReactUtils" /* 8706 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5307 */;
-import DimensionsStore from "DimensionsStore" /* 1497 */;
-import EmojiConstants from "EmojiConstants" /* 1391 */;
+import AccessibilityStore from "AccessibilityStore" /* 4914 */;
+import DimensionsStore from "DimensionsStore" /* 1495 */;
+import EmojiConstants from "EmojiConstants" /* 1389 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let c3, c4, closure_2, dependencyMap;
@@ -36,7 +36,7 @@ function DoubleTapEmojiEditNudgeInner(location) {
   const _location = location.location;
   const emoji = location.emoji;
   let tmp = _location;
-  let obj = _location(1499);
+  let obj = _location(1497);
   dependencyMap = obj.useAppEntryKey();
   const tmp3 = DimensionsStore((arg0) => arg0.byAppEntry[closure_2].fontScale);
   let obj2 = _location(504);
@@ -134,13 +134,13 @@ function DoubleTapEmojiEditNudgeInner(location) {
     });
     let result = openEmojiPickerActionSheet(obj, "stack");
   }, items2);
-  let obj4 = { color: "text-subtle", variant: "body-sm/normal", children: intl.string(_location(1113).t["1EUr/W"]) };
-  const Text = _location(5919).Text;
-  intl = _location(1113).intl;
+  let obj4 = { color: "text-subtle", variant: "body-sm/normal", children: intl.string(_location(1112).t["1EUr/W"]) };
+  const Text = _location(5504).Text;
+  intl = _location(1112).intl;
   items3 = [closure_11(Text, obj4), , ];
   let obj5 = { style: tmp5.doubleTapEmojiContainer, fastImageStyle: tmp5.doubleTapCustomEmoji, textEmojiStyle: tmp5.doubleTapTextEmoji, src: memo, name: str };
   str = "";
-  const tmp11 = emoji(7894);
+  const tmp11 = emoji(7496);
   const tmp8 = closure_12;
   const tmp9 = View;
   if (null == emoji.id) {
@@ -148,10 +148,10 @@ function DoubleTapEmojiEditNudgeInner(location) {
   }
   items3[1] = closure_11(tmp11, obj5);
   let obj6 = { accessibilityRole: "button", onPress: callback, hitSlop, style: tmp5.editButton, children: closure_11(Text2, obj7) };
-  const PressableOpacity = tmp(7428).PressableOpacity;
-  obj7 = { color: "text-brand", variant: "body-sm/normal", children: intl2.string(tmp(1113).t.bt75uw) };
-  Text2 = tmp(5919).Text;
-  intl2 = tmp(1113).intl;
+  const PressableOpacity = tmp(7030).PressableOpacity;
+  obj7 = { color: "text-brand", variant: "body-sm/normal", children: intl2.string(tmp(1112).t.bt75uw) };
+  Text2 = tmp(5504).Text;
+  intl2 = tmp(1112).intl;
   items3[2] = closure_11(PressableOpacity, obj6);
   return tmp8(tmp9, obj3);
 }
@@ -175,7 +175,7 @@ let result = size.fileFinishedImporting("modules/double_tap_to_react/native/Doub
 export function DoubleTapEmojiEditNudge(location) {
   const _location = location.location;
   let setting;
-  const DoubleTapReactionEmoji = setting(5131).DoubleTapReactionEmoji;
+  const DoubleTapReactionEmoji = setting(4738).DoubleTapReactionEmoji;
   setting = DoubleTapReactionEmoji.useSetting();
   const items = [setting];
   const memo = react.useMemo(() => {

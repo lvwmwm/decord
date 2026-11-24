@@ -1,10 +1,10 @@
 // Module ID: 14677
 // Function ID: 14678
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 14677 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "7a12457578ccd631e10642d2124014f3", name: "ArrowLargeDownIcon", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/instant_invite/native/images", width: 60, height: 60, scales: [2, 3], hash: "bc9640d059e4504fae6e197e103e15f0", name: "whatsapp", type: "png" });

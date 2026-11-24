@@ -1,20 +1,20 @@
-// Module ID: 18416
-// Function ID: 18417
+// Module ID: 17210
+// Function ID: 17211
 // Name: UserSettingsDesignSystemLegacyButton
-// Dependencies: [19, 17, 21, 1187, 5919, 5926, 5306, 575, 6327, 8106, 2]
+// Dependencies: [19, 17, 21, 1186, 5504, 5511, 4913, 575, 5929, 7709, 2]
 // Exports: default
 
-// Module 18416 (UserSettingsDesignSystemLegacyButton)
+// Module 17210 (UserSettingsDesignSystemLegacyButton)
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import components_Button_Button from "components/Button/Button" /* 5926 */;
-import Stack_Stack from "Stack/Stack" /* 6327 */;
-import _mod8106 from "module_8106" /* 8106 */;
+import native from "native" /* 1186 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import components_Button_Button from "components/Button/Button" /* 5511 */;
+import Stack_Stack from "Stack/Stack" /* 5929 */;
+import _mod7709 from "module_7709" /* 7709 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -43,7 +43,7 @@ function ComparisonRow(entry) {
   const tmp9 = hasItem && tmp.darkBg;
   items[1] = tmp9;
   let str = "text-muted";
-  const Text = tmp4(5919).Text;
+  const Text = tmp4(5504).Text;
   if (hasItem) {
     str = "text-default";
   }
@@ -69,7 +69,7 @@ function ComparisonRow(entry) {
 
     }
   };
-  const Button = tmp4(1187).Button;
+  const Button = tmp4(1186).Button;
   darkText = null;
   if (hasItem) {
     darkText = null;
@@ -142,7 +142,7 @@ function ComboRow(combo) {
     }
   };
   darkText = null;
-  const Button = tmp6(1187).Button;
+  const Button = tmp6(1186).Button;
   const tmp8 = hasOwnProperty;
   if (hasItem) {
     darkText = null;
@@ -326,7 +326,7 @@ export default function UserSettingsDesignSystemLegacyButton() {
         return closure_1_5(closure_1_8, obj, index);
       })
     };
-    const FormSection = _mod8106.FormSection;
+    const FormSection = _mod7709.FormSection;
     return closure_1_5(FormSection, obj, "cmp-" + tmp);
   });
   const obj4 = { spacing: 4, style: tmp.header, children: items2 };
@@ -345,7 +345,7 @@ export default function UserSettingsDesignSystemLegacyButton() {
         return closure_1_5(closure_1_9, obj, index);
       })
     };
-    const FormSection = _mod8106.FormSection;
+    const FormSection = _mod7709.FormSection;
     return closure_1_5(FormSection, obj, tmp);
   });
   return React3(React2, obj2);

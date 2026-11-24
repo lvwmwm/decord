@@ -1,10 +1,10 @@
 // Module ID: 10912
 // Function ID: 10913
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 10912 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 40, height: 40, scales: [1, 2, 3], hash: "55227139f1f67d25c138599e308898b1", name: "ic_upload_image_40px", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/stage_channels/native/images", width: 24, height: 24, scales: [1, 2, 3], hash: "a9e66a93023e2550ab4df6fac50c261a", name: "ic_move_to_speaker", type: "png" });

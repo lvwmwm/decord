@@ -1,17 +1,17 @@
-// Module ID: 12093
-// Function ID: 12094
+// Module ID: 10219
+// Function ID: 10220
 // Name: WidgetActionCreators
-// Dependencies: [5, 1388, 1072, 572, 1285, 7360, 1242, 2]
+// Dependencies: [5, 1386, 1071, 572, 1284, 6962, 1241, 2]
 
-// Module 12093 (WidgetActionCreators)
+// Module 10219 (WidgetActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import Constants from "Constants" /* 1072 */;
-import HTTPUtils from "HTTPUtils" /* 1285 */;
+import Constants from "Constants" /* 1071 */;
+import HTTPUtils from "HTTPUtils" /* 1284 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserStore from "UserStore" /* 1388 */;
+import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 
-let c2, c6, c7, closure_4, constants, currentUser;
+let c6, c7, closure_4, constants, currentUser;
 
 const Endpoints = Constants.Endpoints;
 let obj = {
@@ -115,107 +115,6 @@ let obj = {
   clearPendingWidgets() {
     const obj = DispatcherDefault;
     obj.dispatch({ type: "WIDGET_PENDING_CLEAR" });
-  },
-  uploadWidgetAsset(arg0) {
-    let closure_0 = arg0;
-    return (async function(arg0, value) {
-      let obj4;
-      let obj7;
-      if (c3 === 2) {
-        c3 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          const obj2 = { value, done: true };
-          return obj2;
-        } else {
-          return { value: "HermesInternal", done: null };
-        }
-      } else {
-        try {
-          let body;
-          let upload_url;
-          let upload_filename;
-          let closure_3;
-          c3 = 2;
-          if (0 === c2) {
-            if (arg0 === 1) {
-              c3 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c3 = 3;
-              const obj3 = { value, done: true };
-              return obj3;
-            } else {
-              let closure_1 = tmp;
-              closure_0 = tmp4;
-              body = undefined;
-              upload_url = undefined;
-              upload_filename = undefined;
-              closure_3 = undefined;
-              const HTTP = closure_0(c2[4]).HTTP;
-              const request = { url: constants.USER_PROFILE_WIDGET_ASSET_UPLOAD, body: obj4, rejectWithError: true };
-              obj4 = { filename: closure_0.name, file_size: closure_0.size };
-              c2 = 1;
-              c3 = 1;
-              const obj5 = { value: HTTP.post(request), done: false };
-              return obj5;
-            }
-          } else if (1 === c2) {
-            if (arg0 === 1) {
-              c3 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c3 = 3;
-              const obj6 = { value, done: true };
-              return obj6;
-            } else {
-              body = value.body;
-              upload_url = body.upload_url;
-              upload_filename = body.upload_filename;
-              const request1 = { method: "PUT", body: closure_129_0, headers: obj7 };
-              let str2 = "application/octet-stream";
-              const _fetch = fetch;
-              const tmp23 = upload_url;
-              if ("" !== closure_129_0.type) {
-                str2 = closure_129_0.type;
-              }
-              obj7 = { "Content-Type": str2 };
-              c2 = 2;
-              c3 = 1;
-              const obj8 = { value: _fetch(tmp23, request1), done: false };
-              return obj8;
-            }
-          } else if (arg0 === 1) {
-            c3 = 3;
-            throw value;
-          } else if (arg0 === 2) {
-            c3 = 3;
-            const obj9 = { value, done: true };
-            return obj9;
-          } else {
-            closure_3 = value;
-            if (closure_3.ok) {
-              c3 = 3;
-              const obj = { value: upload_filename, done: true };
-              return obj;
-            } else {
-              const _Error = Error;
-              const _HermesInternal = HermesInternal;
-              const self = this;
-              const self2 = this;
-              const error = new Error("Failed to upload widget asset: " + closure_3.status);
-              throw error;
-            }
-          }
-        } catch (tmp14) {
-          c3 = 3;
-          throw tmp14;
-        }
-      }
-    })();
   },
   uploadWidgetClip(arg0) {
     let closure_0 = arg0;

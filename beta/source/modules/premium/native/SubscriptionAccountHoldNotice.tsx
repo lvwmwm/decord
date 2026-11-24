@@ -1,18 +1,18 @@
-// Module ID: 9974
-// Function ID: 9975
+// Module ID: 9363
+// Function ID: 9364
 // Name: SubscriptionAccountHoldNotice
-// Dependencies: [19, 17, 1072, 21, 5306, 575, 1187, 9975, 5919, 1113, 2174, 5926, 2]
+// Dependencies: [19, 17, 1071, 21, 4913, 575, 1186, 9364, 5504, 1112, 2173, 5511, 2]
 // Exports: default
 
-// Module 9974 (SubscriptionAccountHoldNotice)
+// Module 9363 (SubscriptionAccountHoldNotice)
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import PremiumUtils from "PremiumUtils" /* 2174 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9975 */;
+import Constants from "Constants" /* 1071 */;
+import PremiumUtils from "PremiumUtils" /* 2173 */;
+import AssetRegistryDefault from "AssetRegistry" /* 9364 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -42,29 +42,29 @@ export default function SubscriptionAccountHoldNotice(subscription) {
   if (subscription.status === SubscriptionStatusTypes.ACCOUNT_HOLD) {
     let obj = { style: tmp.container, children: items1 };
     const obj2 = { style: tmp.textContainer, children: items };
-    const obj3 = { size: subscription(1187).IconSizes.MEDIUM, style: tmp.icon, source: AssetRegistryDefault };
-    const Icon = subscription(1187).Icon;
+    const obj3 = { size: subscription(1186).IconSizes.MEDIUM, style: tmp.icon, source: AssetRegistryDefault };
+    const Icon = subscription(1186).Icon;
     items = [closure_6(Icon, obj3), ];
     const obj4 = { style: tmp.text, variant: "body-sm/medium", children: format(v7I21Iz, obj5) };
-    const Text = subscription(5919).Text;
-    const intl = subscription(1113).intl;
+    const Text = subscription(5504).Text;
+    const intl = subscription(1112).intl;
     format = intl.format;
     obj5 = { endDate: subscription.currentPeriodEnd, planDescription: obj6.getDisplayName(subscription.planId) };
-    v7I21Iz = subscription(1113).t["7I21Iz"];
-    obj6 = subscription(2174);
+    v7I21Iz = subscription(1112).t["7I21Iz"];
+    obj6 = subscription(2173);
     items[1] = closure_6(Text, obj4);
     items1 = [closure_7(closure_4, obj2), ];
     const obj7 = {
       size: "sm",
-      text: intl2.string(subscription(1113).t.VJmUNy),
+      text: intl2.string(subscription(1112).t.VJmUNy),
       onPress() {
           c3 = c3.openURL;
           const obj = PremiumUtils;
           return c3(obj.getExternalSubscriptionMethodUrl(subscription.paymentGateway, "PAYMENT_SOURCE_MANAGEMENT"));
         }
     };
-    const Button = subscription(5926).Button;
-    intl2 = subscription(1113).intl;
+    const Button = subscription(5511).Button;
+    intl2 = subscription(1112).intl;
     items1[1] = closure_6(Button, obj7);
     tmp2 = closure_7(closure_4, obj);
   }

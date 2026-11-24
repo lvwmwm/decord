@@ -1,17 +1,17 @@
-// Module ID: 8387
-// Function ID: 8388
+// Module ID: 7989
+// Function ID: 7990
 // Name: AppStoreAgeSignalReport
-// Dependencies: [32, 5, 1388, 2120, 1072, 8383, 8240, 1242, 1380, 8379, 8380, 1256, 5985, 6069, 2]
+// Dependencies: [32, 5, 1386, 2118, 1071, 7985, 7842, 1241, 1378, 7981, 7982, 1255, 5575, 5662, 2]
 // Exports: beginAppStoreAgeSignalReport, isAppStoreAgeSignalColdLaunch, isAppStoreAgeSignalLaunchPending, queueAppStoreAgeSignalSubmit, resumeAppStoreAgeSignalReport, settleAppStoreAgeSignalReport, startPendingAppStoreAgeSignalReport
 
-// Module 8387 (AppStoreAgeSignalReport)
-import PlatformUtils from "PlatformUtils" /* 1380 */;
-import AppStoreAgeSignalSupport from "AppStoreAgeSignalSupport" /* 8240 */;
+// Module 7989 (AppStoreAgeSignalReport)
+import PlatformUtils from "PlatformUtils" /* 1378 */;
+import AppStoreAgeSignalSupport from "AppStoreAgeSignalSupport" /* 7842 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
-import UserStore from "UserStore" /* 1388 */;
-import AppStateStore from "AppStateStore" /* 2120 */;
-import Constants from "Constants" /* 1072 */;
+import UserStore from "UserStore" /* 1386 */;
+import AppStateStore from "AppStateStore" /* 2118 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -260,7 +260,7 @@ function startAgeSignalReport(isColdLaunch, connection) {
     let result = obj.isAppStoreAgeSignalSupported();
     const tmp2 = _require;
     if (result) {
-      const tmp2Result = tmp2(5985);
+      const tmp2Result = tmp2(5575);
       result = tmp2Result.shouldCollectAppStoreSignal();
     }
     tmp = result;
@@ -637,7 +637,7 @@ export function resumeAppStoreAgeSignalReport() {
       obj = AppStoreAgeSignalSupport;
       let result = obj.isAppStoreAgeSignalSupported();
       if (result) {
-        const tmp3Result = tmp3(5985);
+        const tmp3Result = tmp3(5575);
         result = tmp3Result.shouldCollectAppStoreSignal();
       }
       tmp6 = result;

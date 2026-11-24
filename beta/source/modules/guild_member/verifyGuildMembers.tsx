@@ -1,21 +1,21 @@
-// Module ID: 11623
-// Function ID: 11624
+// Module ID: 11609
+// Function ID: 11610
 // Name: verifyGuildMembers
-// Dependencies: [32, 6790, 502, 5218, 1388, 5224, 1406, 572, 8851, 559, 6907, 5150, 2]
+// Dependencies: [32, 6394, 502, 4825, 1386, 4831, 1404, 572, 8446, 559, 6511, 4757, 2]
 // Exports: verifyGuildMembers
 
-// Module 11623 (verifyGuildMembers)
+// Module 11609 (verifyGuildMembers)
 import BackoffDefault from "Backoff" /* 559 */;
-import FlagUtils from "FlagUtils" /* 1406 */;
-import Timers from "Timers" /* 5150 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 5224 */;
-import GatewayConnectionStore2 from "GatewayConnectionStore" /* 6790 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6907 */;
-import createMessage from "createMessage" /* 8851 */;
+import FlagUtils from "FlagUtils" /* 1404 */;
+import Timers from "Timers" /* 4757 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4831 */;
+import GatewayConnectionStore2 from "GatewayConnectionStore" /* 6394 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6511 */;
+import createMessage from "createMessage" /* 8446 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 5218 */;
-import UserStore from "UserStore" /* 1388 */;
+import GuildMemberStore from "GuildMemberStore" /* 4825 */;
+import UserStore from "UserStore" /* 1386 */;
 import Dispatcher_mod from "Dispatcher" /* 572 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -505,7 +505,6 @@ const subscription = Dispatcher.subscribe("GUILD_MEMBERS_CHUNK_BATCH", (arg0) =>
 });
 Dispatcher = Dispatcher_mod;
 const subscription1 = Dispatcher.subscribe("GUILD_DELETE", (guild) => {
-  let set4;
   let set5;
   let set6;
   function clearGuild(id) {

@@ -1,16 +1,16 @@
-// Module ID: 9555
-// Function ID: 9556
+// Module ID: 9075
+// Function ID: 9076
 // Name: DoubleTapEmojiUpdatedToast
-// Dependencies: [5307, 1391, 1414, 5558, 5315, 1113, 6005, 2]
+// Dependencies: [4914, 1389, 1412, 5143, 4922, 1112, 5595, 2]
 // Exports: getToastEmojiEntity, showDoubleTapEmojiUpdatedToast
 
-// Module 9555 (DoubleTapEmojiUpdatedToast)
-import intl3 from "intl" /* 1113 */;
-import EmojiConstants from "EmojiConstants" /* 1391 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5558 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 6005 */;
-import AccessibilityStore from "AccessibilityStore" /* 5307 */;
+// Module 9075 (DoubleTapEmojiUpdatedToast)
+import intl3 from "intl" /* 1112 */;
+import EmojiConstants from "EmojiConstants" /* 1389 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5143 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5595 */;
+import AccessibilityStore from "AccessibilityStore" /* 4914 */;
 import size from "module_2" /* 2 */;
 
 const EMOJI_URL_BASE_SIZE = EmojiConstants.EMOJI_URL_BASE_SIZE;
@@ -49,22 +49,22 @@ export function showDoubleTapEmojiUpdatedToast(emoji) {
   emoji = emoji.emoji;
   const obj = useIsScreenReaderEnabled;
   if (obj.getIsScreenReaderEnabled()) {
-    const AccessibilityAnnouncer = tmp(5315).AccessibilityAnnouncer;
+    const AccessibilityAnnouncer = tmp(4922).AccessibilityAnnouncer;
     const announce = AccessibilityAnnouncer.announce;
-    const intl2 = tmp(1113).intl;
+    const intl2 = tmp(1112).intl;
     const obj2 = { emojiName: emoji.name };
     announce(intl2.formatToPlainString(intl3.t.nKY0Fl, obj2));
   } else {
     const obj3 = { text: intl.formatToPlainString(intl3.t.nKY0Fl, obj4), icon: obj8 };
     const open = ToastActionCreatorsDefault.open;
     ToastActionCreatorsDefault;
-    intl = tmp(1113).intl;
+    intl = tmp(1112).intl;
     obj4 = { emojiName: emoji.name };
     if (null != emoji.id) {
       const useReducedMotion = AccessibilityStore.useReducedMotion;
       const obj5 = { id: emoji.id, animated, size: EMOJI_URL_BASE_SIZE };
       animated = !useReducedMotion;
-      const getEmojiURL = tmp3(1414).getEmojiURL;
+      const getEmojiURL = tmp3(1412).getEmojiURL;
       AvatarUtilsDefault;
       if (!useReducedMotion) {
         animated = emoji.animated;

@@ -1,20 +1,20 @@
-// Module ID: 11081
-// Function ID: 11082
+// Module ID: 11156
+// Function ID: 11157
 // Name: MuteSettingsActionSheet
-// Dependencies: [19, 5155, 5177, 5248, 1388, 1072, 21, 5919, 1113, 11082, 5542, 7746, 7443, 1187, 11084, 5944, 11085, 7951, 7913, 2]
+// Dependencies: [19, 4762, 4784, 4855, 1386, 1071, 21, 5504, 1112, 10362, 5127, 7348, 7045, 1186, 11157, 5529, 11158, 7553, 7515, 2]
 // Exports: MuteSettingsHint, default
 
-// Module 11081 (MuteSettingsActionSheet)
-import Constants from "Constants" /* 1072 */;
-import intl6 from "intl" /* 1113 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import MuteSettingsUtils from "MuteSettingsUtils" /* 11082 */;
+// Module 11156 (MuteSettingsActionSheet)
+import Constants from "Constants" /* 1071 */;
+import intl6 from "intl" /* 1112 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import MuteSettingsUtils from "MuteSettingsUtils" /* 10362 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import GuildStore_mod from "GuildStore" /* 5177 */;
-import RelationshipStore from "RelationshipStore" /* 5248 */;
-import UserStore from "UserStore" /* 1388 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import GuildStore_mod from "GuildStore" /* 4784 */;
+import RelationshipStore from "RelationshipStore" /* 4855 */;
+import UserStore from "UserStore" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -172,11 +172,11 @@ export function MuteSettingsHint(guildMessageNotifications) {
     const Text = Text_Text.Text;
     const tmp4 = React4;
     if (guildMessageNotifications === UserNotificationSettings.ALL_MESSAGES) {
-      const intl2 = tmp5(1113).intl;
-      stringResult = intl2.string(tmp5(1113).t.mUbulW);
+      const intl2 = tmp5(1112).intl;
+      stringResult = intl2.string(tmp5(1112).t.mUbulW);
     } else {
-      const intl = tmp5(1113).intl;
-      stringResult = intl.string(tmp5(1113).t.GGAdHV);
+      const intl = tmp5(1112).intl;
+      stringResult = intl.string(tmp5(1112).t.GGAdHV);
     }
     let obj = { variant: "body-sm/medium", color: "text-default", children: stringResult };
     tmp4Result = tmp4(Text, obj);

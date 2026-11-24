@@ -1,11 +1,11 @@
-// Module ID: 14355
-// Function ID: 14356
+// Module ID: 12594
+// Function ID: 12595
 // Dependencies: [2]
 
-// Module 14355
+// Module 12594
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_headwear_02_headphones.webp.js");
 
-export default "https://cdn.discordapp.com/assets/content/71d94c94a82c5357529c52d33facf7361cd733be7bb1908632aa1fd375bc8678.webp";
-export const metadata = { fileBytes: 30692 };
+export default "https://cdn.discordapp.com/assets/content/eaddbf168d9c3299571d82b97821798842d31c12f9cd41f40ea41d3c16137428.webp";
+export const metadata = { fileBytes: 91566 };

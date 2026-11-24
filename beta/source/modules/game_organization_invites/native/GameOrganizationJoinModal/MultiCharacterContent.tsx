@@ -1,13 +1,13 @@
-// Module ID: 14079
-// Function ID: 14080
+// Module ID: 12247
+// Function ID: 12248
 // Name: MultiCharacterContent
-// Dependencies: [19, 21, 7418, 14080, 2]
+// Dependencies: [19, 21, 7020, 12248, 2]
 // Exports: default
 
-// Module 14079 (MultiCharacterContent)
+// Module 12247 (MultiCharacterContent)
 import Fragment from "Fragment" /* 21 */;
-import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 7418 */;
-import GameOrganizationCharacterListDefault from "GameOrganizationCharacterList" /* 14080 */;
+import ActivityIndicator_ActivityIndicator from "ActivityIndicator/ActivityIndicator" /* 7020 */;
+import GameOrganizationCharacterListDefault from "GameOrganizationCharacterList" /* 12248 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -20,7 +20,7 @@ export default function MultiCharacterContent(characters) {
   if (null == characters) {
     tmp7 = jsx(ActivityIndicator_ActivityIndicator.ActivityIndicator, {});
   } else {
-    tmp7 = jsx(GameOrganizationCharacterListDefault, { characters, selectedCharacterId: tmp, onSelect: tmp2, noun: tmp3 });
+    tmp7 = jsx(GameOrganizationCharacterListDefault, { characters, selectedCharacterId: tmp, onSelect: tmp2, displayNoun: tmp3 });
   }
   return tmp7;
 };

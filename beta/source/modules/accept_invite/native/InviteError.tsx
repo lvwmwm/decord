@@ -1,28 +1,28 @@
-// Module ID: 15084
-// Function ID: 15085
+// Module ID: 13671
+// Function ID: 13672
 // Name: InviteError
-// Dependencies: [19, 17, 1072, 21, 5306, 575, 5313, 5537, 15085, 15086, 15087, 1113, 6010, 5919, 5926, 1414, 1187, 15088, 7720, 2188, 2]
+// Dependencies: [19, 17, 1071, 21, 4913, 575, 4920, 5122, 13672, 13673, 13674, 1112, 5600, 5504, 5511, 1412, 1186, 13675, 7322, 2187, 2]
 // Exports: default
 
-// Module 15084 (InviteError)
+// Module 13671 (InviteError)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl5 from "intl" /* 1113 */;
-import native from "native" /* 1187 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
-import shared from "shared" /* 5313 */;
-import useThemeDefault from "useTheme" /* 5537 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import components_Button_Button from "components/Button/Button" /* 5926 */;
-import FastImageDefault from "FastImage" /* 6010 */;
-import GuildIcon from "GuildIcon" /* 7720 */;
-import InviteErrorUtils from "InviteErrorUtils" /* 15087 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15088 */;
+import intl5 from "intl" /* 1112 */;
+import native from "native" /* 1186 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2187 */;
+import shared from "shared" /* 4920 */;
+import useThemeDefault from "useTheme" /* 5122 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import components_Button_Button from "components/Button/Button" /* 5511 */;
+import FastImageDefault from "FastImage" /* 5600 */;
+import GuildIcon from "GuildIcon" /* 7322 */;
+import InviteErrorUtils from "InviteErrorUtils" /* 13674 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13675 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 1072 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 const GuildIconDefault = GuildIcon;
@@ -46,7 +46,7 @@ function InviteErrorBase(invite) {
   const tmp = closure_10();
   const obj = shared;
   let code;
-  const tmp4Result = importDefault(obj.isThemeDark(useThemeDefault()) ? 15085 : 15086);
+  const tmp4Result = importDefault(obj.isThemeDark(useThemeDefault()) ? 13672 : 13673);
   const getDescriptiveInviteError = InviteErrorUtils.getDescriptiveInviteError;
   InviteErrorUtils;
   if (inviteError != null) {
@@ -54,16 +54,16 @@ function InviteErrorBase(invite) {
   }
   const descriptiveInviteError = getDescriptiveInviteError(code);
   if (invite.state === metroRequire.BANNED) {
-    const intl2 = tmp2(1113).intl;
-    stringResult = intl2.string(tmp2(1113).t["GzD/aa"]);
+    const intl2 = tmp2(1112).intl;
+    stringResult = intl2.string(tmp2(1112).t["GzD/aa"]);
   } else {
     stringResult = undefined;
     if (descriptiveInviteError != null) {
       stringResult = descriptiveInviteError.description;
     }
     if (stringResult == null) {
-      const intl = tmp2(1113).intl;
-      stringResult = intl.string(tmp2(1113).t.FWkU6P);
+      const intl = tmp2(1112).intl;
+      stringResult = intl.string(tmp2(1112).t.FWkU6P);
     }
   }
   const items = [, , , ];
@@ -71,15 +71,15 @@ function InviteErrorBase(invite) {
   items[0] = metroImportDefault(FastImageDefault, obj2);
   const obj3 = { style: tmp.expiredTitle, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: title };
   title = undefined;
-  const Text = tmp2(5919).Text;
+  const Text = tmp2(5504).Text;
   const tmp10 = React4;
   const tmp11 = metroImportAll;
   if (descriptiveInviteError != null) {
     title = descriptiveInviteError.title;
   }
   if (title == null) {
-    const intl3 = tmp2(1113).intl;
-    title = intl3.string(tmp2(1113).t.u9zxnX);
+    const intl3 = tmp2(1112).intl;
+    title = intl3.string(tmp2(1112).t.u9zxnX);
   }
   function handlePressClose() {
     closure_1_0();
@@ -89,8 +89,8 @@ function InviteErrorBase(invite) {
   const obj5 = { style: tmp.expiredBody, variant: "body-sm/medium", color: "text-default", children: stringResult };
   items[2] = metroImportDefault(Text_Text.Text, obj5);
   const obj6 = { variant: "primary", size: "lg", text: intl4.string(intl5.t.wcqOoF), onPress: handlePressClose };
-  const Button = tmp2(5926).Button;
-  intl4 = tmp2(1113).intl;
+  const Button = tmp2(5511).Button;
+  intl4 = tmp2(1112).intl;
   items[3] = metroImportDefault(Button, obj6);
   return tmp10(tmp11, obj4);
 }

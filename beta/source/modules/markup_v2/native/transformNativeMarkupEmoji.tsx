@@ -1,13 +1,13 @@
-// Module ID: 9372
-// Function ID: 9373
+// Module ID: 8819
+// Function ID: 8820
 // Name: transformNativeMarkupEmoji
-// Dependencies: [5252, 6332, 1414, 2]
+// Dependencies: [4859, 5934, 1412, 2]
 // Exports: transformNativeEmoji
 
-// Module 9372 (transformNativeMarkupEmoji)
-import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 5252 */;
-import MarkupTypes from "MarkupTypes" /* 6332 */;
+// Module 8819 (transformNativeMarkupEmoji)
+import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4859 */;
+import MarkupTypes from "MarkupTypes" /* 5934 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/markup_v2/native/transformNativeMarkupEmoji.tsx");

@@ -1,11 +1,11 @@
-// Module ID: 14459
-// Function ID: 14460
+// Module ID: 12698
+// Function ID: 12699
 // Dependencies: [2]
 
-// Module 14459
+// Module 12698
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_wearable_07_pixelWrench.webp.js");
 
-export default "https://cdn.discordapp.com/assets/content/41b921fee09a12551cb671b5c8c162abff806ebbb80dc2a03e2f4068bb7732b4.webp";
-export const metadata = { fileBytes: 10882 };
+export default "https://cdn.discordapp.com/assets/content/85d71b12477b3710167aa7f228e6bdcfd0c80d165b6314f373e839f2b2053a69.webp";
+export const metadata = { fileBytes: 27644 };

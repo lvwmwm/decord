@@ -1,14 +1,14 @@
-// Module ID: 11157
-// Function ID: 11158
+// Module ID: 10119
+// Function ID: 10120
 // Name: useMessageMaxLength
-// Dependencies: [1388, 1072, 2174, 504, 2]
+// Dependencies: [1386, 1071, 2173, 504, 2]
 // Exports: default, getMaxMessageLength
 
-// Module 11157 (useMessageMaxLength)
+// Module 10119 (useMessageMaxLength)
 import get_initialized from "get initialized" /* 504 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2174 */;
-import UserStore from "UserStore" /* 1388 */;
-import Constants from "Constants" /* 1072 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2173 */;
+import UserStore from "UserStore" /* 1386 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

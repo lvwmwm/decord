@@ -1,21 +1,21 @@
-// Module ID: 16077
-// Function ID: 16078
+// Module ID: 14845
+// Function ID: 14846
 // Name: VoiceActionSheet
-// Dependencies: [19, 17, 6064, 21, 5306, 7918, 7937, 504, 5482, 6890, 16078, 16079, 7951, 16086, 16089, 16090, 5896, 16093, 2]
+// Dependencies: [19, 17, 5657, 21, 4913, 7520, 7539, 504, 5089, 6494, 14846, 14847, 7553, 14854, 14857, 14858, 5481, 14861, 2]
 // Exports: default
 
-// Module 16077 (VoiceActionSheet)
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5482 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 6890 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7918 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
-import VoiceActionSheetManagerDefault from "VoiceActionSheetManager" /* 16078 */;
-import NUFChannelsManagerDefault from "NUFChannelsManager" /* 16079 */;
+// Module 14845 (VoiceActionSheet)
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5089 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 6494 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7520 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7539 */;
+import VoiceActionSheetManagerDefault from "VoiceActionSheetManager" /* 14846 */;
+import NUFChannelsManagerDefault from "NUFChannelsManager" /* 14847 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 6064 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5657 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -24,11 +24,11 @@ let metroImportDefault;
 let metroRequire;
 let obj2;
 let tmp2;
-const VisualEffectViewDefault = tmp2(5896);
-const NUFVoiceChannelsTemplateDefault = tmp2(16086);
-const GuildEventVoiceBannerDefault = tmp2(16089);
-const VoiceEmptyStateDefault = tmp2(16090);
-const VoiceMemberListDefault = tmp2(16093);
+const VisualEffectViewDefault = tmp2(5481);
+const NUFVoiceChannelsTemplateDefault = tmp2(14854);
+const GuildEventVoiceBannerDefault = tmp2(14857);
+const VoiceEmptyStateDefault = tmp2(14858);
+const VoiceMemberListDefault = tmp2(14861);
 ({ View: closure_4, StyleSheet } = react_native);
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 let createStyles = createStyles_mod;
@@ -72,13 +72,13 @@ export default function VoiceActionSheet(channel) {
   let obj2 = NUFChannelsManagerDefault;
   if (obj2.requiresVoiceChannelsOnboard()) {
     const obj3 = { children: closure_6(NUFVoiceChannelsTemplateDefault, obj4) };
-    const ActionSheet3 = tmp5(7951).ActionSheet;
+    const ActionSheet3 = tmp5(7553).ActionSheet;
     obj4 = { channel };
     children = closure_6(ActionSheet3, obj3);
     tmp8 = closure_6;
   } else if (stateFromStores) {
     const obj5 = { children: items2 };
-    const ActionSheet2 = tmp5(7951).ActionSheet;
+    const ActionSheet2 = tmp5(7553).ActionSheet;
     const obj6 = { channel };
     items2 = [closure_6(GuildEventVoiceBannerDefault, obj6), ];
     const obj7 = { channel };
@@ -89,12 +89,12 @@ export default function VoiceActionSheet(channel) {
     tmp8 = closure_6;
     const obj8 = { scrollable: true, startExpanded: true, children: closure_7(closure_4, obj9) };
     obj9 = { style: tmp.container, children: items3 };
-    const ActionSheet = tmp5(7951).ActionSheet;
+    const ActionSheet = tmp5(7553).ActionSheet;
     const obj10 = { blurTheme: "dark", style: tmp.visualEffectView };
     items3 = [closure_6(VisualEffectViewDefault, obj10), ];
     const obj11 = { channel };
     items3[1] = closure_6(VoiceMemberListDefault, obj11);
     children = closure_6(ActionSheet, obj8);
   }
-  return tmp8(channel(7918).AnalyticsLocationProvider, { value: analyticsLocations, children });
+  return tmp8(channel(7520).AnalyticsLocationProvider, { value: analyticsLocations, children });
 };

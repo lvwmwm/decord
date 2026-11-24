@@ -1,12 +1,12 @@
-// Module ID: 16364
-// Function ID: 16365
+// Module ID: 15136
+// Function ID: 15137
 // Name: GuildBadgeMoon
-// Dependencies: [19, 21, 16359, 8263, 2]
+// Dependencies: [19, 21, 15131, 7865, 2]
 // Exports: GuildBadgeMoon
 
-// Module 16364 (GuildBadgeMoon)
-import inlineStyles from "inlineStyles" /* 8263 */;
-import GuildBadgeUtils from "GuildBadgeUtils" /* 16359 */;
+// Module 15136 (GuildBadgeMoon)
+import inlineStyles from "inlineStyles" /* 7865 */;
+import GuildBadgeUtils from "GuildBadgeUtils" /* 15131 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

@@ -1,23 +1,22 @@
-// Module ID: 13142
-// Function ID: 13143
+// Module ID: 12306
+// Function ID: 12307
 // Name: ConjureInstallTarget
-// Dependencies: [5, 7018, 7329, 2]
+// Dependencies: [5, 6933, 2]
 // Exports: conjureInstallGuildId, repairConjureGuildHints
 
-// Module 13142 (ConjureInstallTarget)
-import ConjureProjectTypes from "ConjureProjectTypes" /* 7018 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 7329 */;
+// Module 12306 (ConjureInstallTarget)
+import ConjureActionCreators from "ConjureActionCreators" /* 6933 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
 let obj = function _repairConjureGuildHints() {
-  obj = _asyncToGenerator(async (arg0, arg1) => {
-    const guild_id = arg0;
-    let closure_1 = arg1;
+  obj = _asyncToGenerator(async (arg0, preview_guild_id) => {
+    const install_scope = arg0;
     let c3 = 0;
     let c2 = 0;
     return (async (arg0, value) => {
-      let obj2;
+      let obj3;
+      let obj6;
       if (c2 === 2) {
         c2 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -39,16 +38,29 @@ let obj = function _repairConjureGuildHints() {
             } else if (arg0 === 2) {
               c2 = 3;
               return { value, done: true };
-            } else {
-              const tmp4 = guild_id.guild_id === preview_guild_id && tmp11.preview_guild_id === tmp12;
-              if (!tmp4) {
+            } else if ("guild" === install_scope.install_scope) {
+              if (null == install_scope.guild_id) {
                 c3 = 1;
                 c2 = 1;
-                const obj5 = { guild_id: preview_guild_id, preview_guild_id };
-                const obj6 = { value: obj2.setGuildHints(guild_id.id, obj5), done: false };
-                obj2 = ConjureActionCreators;
-                return obj6;
+                const obj5 = { value: obj6.setConjureProjectServer(install_scope.id, preview_guild_id), done: false };
+                obj6 = ConjureActionCreators;
+                return obj5;
+              } else if (install_scope.preview_guild_id !== preview_guild_id) {
+                c3 = 2;
+                c2 = 1;
+                const obj7 = { preview_guild_id };
+                const obj8 = { value: obj3.updateProjectSettings(install_scope.id, obj7), done: false };
+                obj3 = ConjureActionCreators;
+                return obj8;
               }
+            }
+          } else if (1 === tmp3) {
+            if (arg0 === 1) {
+              c2 = 3;
+              throw value;
+            } else if (arg0 === 2) {
+              c2 = 3;
+              return { value, done: true };
             }
           } else if (arg0 === 1) {
             c2 = 3;
@@ -59,43 +71,30 @@ let obj = function _repairConjureGuildHints() {
           }
           c2 = 3;
           return { value: "HermesInternal", done: null };
-        } catch (tmp7) {
+        } catch (tmp9) {
           c2 = 3;
-          throw tmp7;
+          throw tmp9;
         }
       }
     })();
   });
   return obj(...arguments);
 };
-let result = size.fileFinishedImporting("modules/conjure/publish/ConjureInstallTarget.tsx");
+const result = size.fileFinishedImporting("modules/conjure/publish/ConjureInstallTarget.tsx");
 
-export function conjureInstallGuildId(project, integrationStatus, guildId) {
-  let guild_id1;
+export function conjureInstallGuildId(project, guildId) {
+  let install_scope;
   if (project != null) {
-    guild_id1 = project.guild_id;
+    install_scope = project.install_scope;
   }
-  if (null == guild_id1) {
-    return guildId;
-  } else {
-    let guild_id;
-    let hasItem = guildId !== project.guild_id;
-    if (hasItem) {
-      obj = ConjureProjectTypes;
-      const result = obj.conjureProjectServerIds(project);
-      hasItem = result.includes(guildId);
-    }
-    let prop;
-    if (integrationStatus != null) {
-      prop = integrationStatus.integration_installed;
-    }
-    if (true === prop) {
+  let guild_id = guildId;
+  if ("guild" === install_scope) {
+    guild_id = guildId;
+    if (null != project.guild_id) {
       guild_id = project.guild_id;
-    } else {
-      guild_id = guildId;
     }
-    return guild_id;
   }
+  return guild_id;
 }
 export function repairConjureGuildHints() {
   return obj(...arguments);

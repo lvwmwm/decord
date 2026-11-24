@@ -1,10 +1,10 @@
 // Module ID: 10570
 // Function ID: 10571
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 10570 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "37c0d54449905a6c09826b9fd26f5470", name: "SettingsIcon", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/stream_feedback/dark-theme-desaturated", width: 64, height: 64, scales: [2, 3], hash: "3bf80d0ee51953e3bee2dbf2f586efb1", name: "feedback-modal-happy-desaturated", type: "png" });

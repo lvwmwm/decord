@@ -1,16 +1,16 @@
-// Module ID: 18400
-// Function ID: 18401
+// Module ID: 17190
+// Function ID: 17191
 // Name: InternalBuildUpdateSetting
-// Dependencies: [16846, 21, 16346, 504, 2169, 17374, 6025, 13310, 12408, 2]
+// Dependencies: [15633, 21, 15118, 504, 2168, 16142, 5615, 14366, 11937, 2]
 
-// Module 18400 (InternalBuildUpdateSetting)
+// Module 17190 (InternalBuildUpdateSetting)
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
-import _modDef2169 from "module_2169" /* 2169 */;
-import MobileNativeUpdateUtilsAll from "MobileNativeUpdateUtils" /* 16346 */;
-import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 17374 */;
-import MobileNativeUpdateStore from "MobileNativeUpdateStore" /* 16846 */;
-import SettingBuilders from "SettingBuilders" /* 12408 */;
+import _modDef2168 from "module_2168" /* 2168 */;
+import MobileNativeUpdateUtilsAll from "MobileNativeUpdateUtils" /* 15118 */;
+import useIsStaffOrDeveloperSettingPredicate from "useIsStaffOrDeveloperSettingPredicate" /* 16142 */;
+import MobileNativeUpdateStore from "MobileNativeUpdateStore" /* 15633 */;
+import SettingBuilders from "SettingBuilders" /* 11937 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -25,9 +25,9 @@ let obj = {
     const obj = get_initialized;
     const tmp3 = jsx;
     if (obj.useStateFromStores(items, () => null !== MobileNativeUpdateStore.latestFetchedBuild().newBuild)) {
-      RefreshIcon = tmp(6025).DownloadIcon;
+      RefreshIcon = tmp(5615).DownloadIcon;
     } else {
-      RefreshIcon = tmp(13310).RefreshIcon;
+      RefreshIcon = tmp(14366).RefreshIcon;
     }
     return tmp3(RefreshIcon, {});
   },
@@ -53,7 +53,7 @@ let obj = {
       str = "Never refreshed";
       if (null != stateFromStores1) {
         const _HermesInternal = HermesInternal;
-        const obj3 = _modDef2169(stateFromStores1);
+        const obj3 = _modDef2168(stateFromStores1);
         str = "Last refreshed " + obj3.fromNow();
       }
     }

@@ -1,20 +1,20 @@
-// Module ID: 19810
-// Function ID: 19811
+// Module ID: 19061
+// Function ID: 19062
 // Name: GooglePlayPriceChangeActionSheet
-// Dependencies: [19, 17, 2179, 19811, 1072, 5152, 21, 5306, 575, 504, 2174, 7253, 5556, 5919, 1113, 2188, 5926, 2]
+// Dependencies: [19, 17, 2178, 19062, 1071, 4759, 21, 4913, 575, 504, 2173, 6856, 5141, 5504, 1112, 2187, 5511, 2]
 // Exports: default
 
-// Module 19810 (GooglePlayPriceChangeActionSheet)
+// Module 19061 (GooglePlayPriceChangeActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
+import Constants from "Constants" /* 1071 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2187 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4759 */;
 import react from "react" /* 19 */;
-import SubscriptionStore from "SubscriptionStore" /* 2179 */;
-import GooglePlayPriceChangeStore from "GooglePlayPriceChangeStore" /* 19811 */;
+import SubscriptionStore from "SubscriptionStore" /* 2178 */;
+import GooglePlayPriceChangeStore from "GooglePlayPriceChangeStore" /* 19062 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -62,43 +62,43 @@ export default function GooglePlayPriceChangeActionSheet(markAsDismissed) {
   if (str == null) {
     str = "";
   }
-  const tmp2Result = markAsDismissed(2174);
+  const tmp2Result = markAsDismissed(2173);
   const tierDisplayNameByPlanId = tmp2Result.getTierDisplayNameByPlanId(str);
-  const tmp2Result5 = markAsDismissed(2174);
+  const tmp2Result5 = markAsDismissed(2173);
   const intervalType = tmp2Result5.getInterval(str).intervalType;
-  const tmp2Result6 = markAsDismissed(2174);
+  const tmp2Result6 = markAsDismissed(2173);
   const intervalStringAsNoun = tmp2Result6.getIntervalStringAsNoun(intervalType);
-  const tmp2Result7 = markAsDismissed(7253);
+  const tmp2Result7 = markAsDismissed(6856);
   const formatPriceResult = tmp2Result7.formatPrice(stateFromStores.oldPrice, stateFromStores.oldCurrency);
-  const tmp2Result8 = markAsDismissed(7253);
+  const tmp2Result8 = markAsDismissed(6856);
   const obj3 = { children: closure_9(View, obj4) };
   obj4 = { style: tmp.container, children: items3 };
   const obj5 = { style: tmp.textContainer, children: items2 };
   const formatPriceResult1 = tmp2Result8.formatPrice(stateFromStores.newPrice, stateFromStores.newCurrency);
-  const BottomSheet = tmp2(5556).BottomSheet;
-  const obj6 = { variant: "heading-xl/semibold", style: tmp.header, children: intl.format(markAsDismissed(1113).t.x0bFvn, { subscriptionName: tierDisplayNameByPlanId }) };
-  const Text = tmp2(5919).Text;
-  intl = tmp2(1113).intl;
+  const BottomSheet = tmp2(5141).BottomSheet;
+  const obj6 = { variant: "heading-xl/semibold", style: tmp.header, children: intl.format(markAsDismissed(1112).t.x0bFvn, { subscriptionName: tierDisplayNameByPlanId }) };
+  const Text = tmp2(5504).Text;
+  intl = tmp2(1112).intl;
   items2 = [closure_8(Text, obj6), ];
   const obj7 = { variant: "body-md/medium", style: tmp.body, children: format(prop, obj8) };
-  const Text2 = tmp2(5919).Text;
-  const intl2 = tmp2(1113).intl;
+  const Text2 = tmp2(5504).Text;
+  const intl2 = tmp2(1112).intl;
   format = intl2.format;
   obj8 = { subscriptionName: tierDisplayNameByPlanId, changeDate: new Date(stateFromStores.expectedChargeTime), interval: intervalStringAsNoun, newPrice: formatPriceResult1, oldPrice: formatPriceResult, hc_article_url: obj14.getArticleURL(HelpdeskArticles.SUBSCRIPTION_CANCEL) };
-  prop = tmp2(1113).t["n+Hrjb"];
+  prop = tmp2(1112).t["n+Hrjb"];
   new Date(stateFromStores.expectedChargeTime);
   obj14 = HelpdeskUtilsDefault;
   items2[1] = closure_8(Text2, obj7);
   items3 = [closure_9(View, obj5), ];
   const obj9 = {
     variant: "primary",
-    text: intl3.string(markAsDismissed(1113).t.BddRzS),
+    text: intl3.string(markAsDismissed(1112).t.BddRzS),
     onPress() {
       markAsDismissed(ContentDismissActionType.USER_DISMISS);
     }
   };
-  const Button = tmp2(5926).Button;
-  intl3 = tmp2(1113).intl;
+  const Button = tmp2(5511).Button;
+  intl3 = tmp2(1112).intl;
   items3[1] = closure_8(Button, obj9);
   return closure_8(BottomSheet, obj3);
 };

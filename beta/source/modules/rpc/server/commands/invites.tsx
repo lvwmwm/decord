@@ -1,17 +1,17 @@
-// Module ID: 16942
-// Function ID: 16943
+// Module ID: 15696
+// Function ID: 15697
 // Name: invites
-// Dependencies: [5, 5154, 5155, 6751, 1072, 1083, 16924, 7307, 7304, 12762, 16943, 1093, 12743, 2]
+// Dependencies: [5, 4761, 4762, 6354, 1071, 1082, 15678, 6913, 6910, 10691, 15697, 1092, 10671, 2]
 
-// Module 16942 (invites)
-import Constants2 from "Constants" /* 1072 */;
-import Constants3 from "Constants" /* 6751 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 7307 */;
+// Module 15696 (invites)
+import Constants2 from "Constants" /* 1071 */;
+import Constants3 from "Constants" /* 6354 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 6913 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5154 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import Constants from "Constants" /* 1083 */;
-import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 16924 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4761 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import Constants from "Constants" /* 1082 */;
+import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 15678 */;
 import size from "module_2" /* 2 */;
 
 let connectedActivityLocation, userId;

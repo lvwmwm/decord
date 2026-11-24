@@ -1,16 +1,16 @@
-// Module ID: 10489
-// Function ID: 10490
+// Module ID: 9595
+// Function ID: 9596
 // Name: MobileWebHandoffLinking
-// Dependencies: [5, 502, 1072, 6838, 10490, 10492, 1256, 1254, 10493, 1381, 6002, 2]
+// Dependencies: [5, 502, 1071, 6429, 9596, 9598, 1255, 1253, 9599, 1379, 5592, 2]
 
-// Module 10489 (MobileWebHandoffLinking)
-import FingerprintUtils from "FingerprintUtils" /* 1254 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
-import SimpleLoadingModal from "SimpleLoadingModal" /* 10490 */;
-import MobileWebHandoffUtilsDefault from "MobileWebHandoffUtils" /* 10492 */;
+// Module 9595 (MobileWebHandoffLinking)
+import FingerprintUtils from "FingerprintUtils" /* 1253 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6429 */;
+import SimpleLoadingModal from "SimpleLoadingModal" /* 9596 */;
+import MobileWebHandoffUtilsDefault from "MobileWebHandoffUtils" /* 9598 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import Constants from "Constants" /* 1072 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -20,7 +20,7 @@ let hasOwnProperty;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const AnalyticsUtilsDefault = tmp(1256);
+const AnalyticsUtilsDefault = tmp(1255);
 function createHandoffTokenWithLoadingModal(arg0) {
   let authenticated;
   let fingerprint;

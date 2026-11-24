@@ -1,11 +1,11 @@
-// Module ID: 20479
-// Function ID: 20480
+// Module ID: 19733
+// Function ID: 19734
 // Name: DefaultKeywordListTriggerFields
-// Dependencies: [19, 14168, 21, 7746, 1113, 20480, 7733, 20481, 2]
+// Dependencies: [19, 12408, 21, 7348, 1112, 19734, 7335, 19735, 2]
 // Exports: default
 
-// Module 20479 (DefaultKeywordListTriggerFields)
-import Constants from "Constants" /* 14168 */;
+// Module 19733 (DefaultKeywordListTriggerFields)
+import Constants from "Constants" /* 12408 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -48,7 +48,7 @@ export default function DefaultKeywordListTriggerFields(rule) {
           const tmp4 = arg0;
           if (tmp4) {
             const items = [];
-            items[HermesBuiltin.arraySpread(items, filter((arg0) => arg0 !== closure_0), 0)] = tmp2;
+            items[HermesBuiltin.arraySpread(items, filter((arg0) => arg0 !== items), 0)] = tmp2;
             found = items;
           } else {
             found = filter((arg0) => arg0 !== closure_0);

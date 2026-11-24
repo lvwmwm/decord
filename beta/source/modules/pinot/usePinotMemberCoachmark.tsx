@@ -1,14 +1,14 @@
-// Module ID: 12334
-// Function ID: 12335
+// Module ID: 11856
+// Function ID: 11857
 // Name: usePinotMemberCoachmark
-// Dependencies: [32, 19, 12335, 12330, 9560, 5139, 12338, 5338, 2]
+// Dependencies: [32, 19, 11857, 11852, 9080, 4746, 11860, 4945, 2]
 // Exports: useIsPinotMemberCoachmarkPending, usePinotMemberCoachmark
 
-// Module 12334 (usePinotMemberCoachmark)
-import dismissible_content from "dismissible_content" /* 5139 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5338 */;
-import useIsPinotMemberCoachmarkEligible from "useIsPinotMemberCoachmarkEligible" /* 12335 */;
-import PinotMemberNoticeActionCreators from "PinotMemberNoticeActionCreators" /* 12338 */;
+// Module 11856 (usePinotMemberCoachmark)
+import dismissible_content from "dismissible_content" /* 4746 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4945 */;
+import useIsPinotMemberCoachmarkEligible from "useIsPinotMemberCoachmarkEligible" /* 11857 */;
+import PinotMemberNoticeActionCreators from "PinotMemberNoticeActionCreators" /* 11860 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -23,14 +23,14 @@ export function usePinotMemberCoachmark(channel, mobile_member_coachmark) {
   let items1;
   let pinotPromotableChannelId;
   const tmp2 = dependencyMap;
-  let obj = pinotPromotableChannelId(12335);
+  let obj = pinotPromotableChannelId(11857);
   const isPinotMemberCoachmarkEligible = obj.useIsPinotMemberCoachmarkEligible(channel, mobile_member_coachmark);
-  const obj2 = pinotPromotableChannelId(12330);
+  const obj2 = pinotPromotableChannelId(11852);
   pinotPromotableChannelId = obj2.usePinotPromotableChannelId(channel, mobile_member_coachmark);
-  const useSelectedDismissibleContent = pinotPromotableChannelId(9560).useSelectedDismissibleContent;
-  pinotPromotableChannelId(9560);
+  const useSelectedDismissibleContent = pinotPromotableChannelId(9080).useSelectedDismissibleContent;
+  pinotPromotableChannelId(9080);
   if (isPinotMemberCoachmarkEligible) {
-    const items = [tmp(5139).DismissibleContent.PINOT_MEMBER_COACHMARK];
+    const items = [tmp(4746).DismissibleContent.PINOT_MEMBER_COACHMARK];
     items1 = items;
   } else {
     items1 = [];
@@ -39,7 +39,7 @@ export function usePinotMemberCoachmark(channel, mobile_member_coachmark) {
   dependencyMap = tmp8;
   const items2 = [tmp6[1], pinotPromotableChannelId];
   const first = tmp6[0];
-  const obj3 = { visible: first === pinotPromotableChannelId(5139).DismissibleContent.PINOT_MEMBER_COACHMARK, markAsDismissed: callback };
+  const obj3 = { visible: first === pinotPromotableChannelId(4746).DismissibleContent.PINOT_MEMBER_COACHMARK, markAsDismissed: callback };
   callback = react.useCallback((arg0) => {
     closure_1(arg0);
     if (null != pinotPromotableChannelId) {

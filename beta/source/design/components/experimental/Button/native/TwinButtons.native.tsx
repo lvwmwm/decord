@@ -1,16 +1,16 @@
-// Module ID: 7999
-// Function ID: 8000
+// Module ID: 7602
+// Function ID: 7603
 // Name: TwinButtons
-// Dependencies: [19, 17, 21, 5306, 575, 5934, 5926, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 5519, 5511, 2]
 // Exports: TwinButtons
 
-// Module 7999 (TwinButtons)
+// Module 7602 (TwinButtons)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import components_Button_Button from "components/Button/Button" /* 5926 */;
+import components_Button_Button from "components/Button/Button" /* 5511 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

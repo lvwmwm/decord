@@ -1,11 +1,11 @@
-// Module ID: 13525
-// Function ID: 13526
+// Module ID: 13059
+// Function ID: 13060
 // Name: MobileVisualRefreshExperiment
-// Dependencies: [1453, 2]
+// Dependencies: [1451, 2]
 // Exports: default, isMobileVisualRefreshEnabled, resolveRefreshToken, useMobileVisualRefreshConfig
 
-// Module 13525 (MobileVisualRefreshExperiment)
-import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1453 */;
+// Module 13059 (MobileVisualRefreshExperiment)
+import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1451 */;
 import size from "module_2" /* 2 */;
 
 let obj = { kind: "user", name: "2026-02-mobile-visual-refresh", defaultConfig: { enabled: false, chatInputFloating: false, chatInputLegacySendButton: false }, variations: { 0: { enabled: false, chatInputFloating: false, chatInputLegacySendButton: false }, 1: { enabled: true, chatInputFloating: false, chatInputLegacySendButton: false }, 2: { enabled: true, chatInputFloating: true, chatInputLegacySendButton: false }, 3: { enabled: true, chatInputFloating: true, chatInputLegacySendButton: false }, 4: { enabled: true, chatInputFloating: true, chatInputLegacySendButton: true } } };

@@ -1,21 +1,21 @@
-// Module ID: 17099
-// Function ID: 17100
+// Module ID: 15865
+// Function ID: 15866
 // Name: DisplayNameStylesColorSwatch
-// Dependencies: [17, 21, 5306, 575, 1399, 17100, 5883, 1090, 2]
+// Dependencies: [17, 21, 4913, 575, 1397, 15866, 5468, 1089, 2]
 // Exports: default
 
-// Module 17099 (DisplayNameStylesColorSwatch)
+// Module 15865 (DisplayNameStylesColorSwatch)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import DisplayNameEffect from "DisplayNameEffect" /* 1399 */;
-import LinearGradientDefault from "LinearGradient" /* 5883 */;
-import createStyles from "createStyles" /* 5306 */;
+import DisplayNameEffect from "DisplayNameEffect" /* 1397 */;
+import LinearGradientDefault from "LinearGradient" /* 5468 */;
+import createStyles from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let size;
 let tmp2;
-const utils_ColorUtils = tmp2(1090);
+const utils_ColorUtils = tmp2(1089);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 let obj = { colorSwatch: size, gummySwatch: { flexDirection: "row", overflow: "hidden" } };

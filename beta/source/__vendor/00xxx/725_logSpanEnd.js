@@ -6,14 +6,14 @@
 
 // Module 725 (logSpanEnd)
 import TRACE_FLAG_NONE from "TRACE_FLAG_NONE" /* 683 */;
-import _mod687 from "module_687" /* 687 */;
+import DEBUG_BUILD from "DEBUG_BUILD" /* 687 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export function logSpanEnd(spanContext) {
-  if (_mod687.DEBUG_BUILD) {
+export function logSpanEnd(self) {
+  if (DEBUG_BUILD.DEBUG_BUILD) {
     const tmpResult = TRACE_FLAG_NONE;
-    const spanToJSONResult = tmpResult.spanToJSON(spanContext);
+    const spanToJSONResult = tmpResult.spanToJSON(self);
     const description = spanToJSONResult.description;
     let str = "< unknown name >";
     if (undefined !== description) {
@@ -24,10 +24,10 @@ export function logSpanEnd(spanContext) {
     if (undefined !== op) {
       str2 = op;
     }
-    const spanId = spanContext.spanContext().spanId;
+    const spanId = self.spanContext().spanId;
     let str3 = "";
     const tmpResult2 = TRACE_FLAG_NONE;
-    if (tmpResult2.getRootSpan(spanContext) === spanContext) {
+    if (tmpResult2.getRootSpan(self) === self) {
       str3 = "root ";
     }
     const _HermesInternal = HermesInternal;
@@ -36,12 +36,12 @@ export function logSpanEnd(spanContext) {
     debug.log(combined);
   }
 }
-export function logSpanStart(spanContext) {
+export function logSpanStart(sentrySpan) {
   let description2;
   let op2;
-  if (_mod687.DEBUG_BUILD) {
+  if (DEBUG_BUILD.DEBUG_BUILD) {
     const tmpResult = TRACE_FLAG_NONE;
-    const spanToJSONResult = tmpResult.spanToJSON(spanContext);
+    const spanToJSONResult = tmpResult.spanToJSON(sentrySpan);
     const description = spanToJSONResult.description;
     let str = "< unknown name >";
     if (undefined !== description) {
@@ -53,17 +53,17 @@ export function logSpanStart(spanContext) {
       str2 = op;
     }
     const parent_span_id = spanToJSONResult.parent_span_id;
-    const spanId = spanContext.spanContext().spanId;
+    const spanId = sentrySpan.spanContext().spanId;
     const tmpResult4 = TRACE_FLAG_NONE;
-    const spanIsSampledResult = tmpResult4.spanIsSampled(spanContext);
+    const spanIsSampledResult = tmpResult4.spanIsSampled(sentrySpan);
     const tmpResult5 = TRACE_FLAG_NONE;
-    const rootSpan = tmpResult5.getRootSpan(spanContext);
+    const rootSpan = tmpResult5.getRootSpan(sentrySpan);
     let str3 = "unsampled";
     if (spanIsSampledResult) {
       str3 = "sampled";
     }
     let str5 = "";
-    if (rootSpan === spanContext) {
+    if (rootSpan === sentrySpan) {
       str5 = "root ";
     }
     const _HermesInternal = HermesInternal;
@@ -78,7 +78,7 @@ export function logSpanStart(spanContext) {
       const _HermesInternal5 = HermesInternal;
       items.push("parent ID: " + parent_span_id);
     }
-    if (rootSpan !== spanContext) {
+    if (rootSpan !== sentrySpan) {
       const tmpResult6 = TRACE_FLAG_NONE;
       ({ op: op2, description: description2 } = tmpResult6.spanToJSON(rootSpan));
       const _HermesInternal6 = HermesInternal;

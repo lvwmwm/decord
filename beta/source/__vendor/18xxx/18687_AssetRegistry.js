@@ -1,10 +1,10 @@
 // Module ID: 18687
 // Function ID: 18688
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 18687 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Illustration/native/redesign/generated/images", width: 151, height: 119, scales: [2, 3], hash: "2a93fa6b4a038d5a151d558000723423", name: "img_wump_trash_darker", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "fd7a05931e4df085da6e8b62ffa48f48", name: "SaveIcon", type: "png" });

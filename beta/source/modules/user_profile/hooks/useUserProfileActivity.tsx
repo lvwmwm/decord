@@ -1,16 +1,16 @@
-// Module ID: 15758
-// Function ID: 15759
+// Module ID: 14497
+// Function ID: 14498
 // Name: useUserProfileActivity
-// Dependencies: [19, 9476, 2133, 6058, 6065, 504, 10847, 15759, 8419, 9478, 9477, 2]
+// Dependencies: [19, 8994, 2131, 5651, 5658, 504, 13509, 14498, 8010, 8996, 8995, 2]
 // Exports: default
 
-// Module 15758 (useUserProfileActivity)
+// Module 14497 (useUserProfileActivity)
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 6065 */;
-import UserProfileStackedActivityCardUtils from "UserProfileStackedActivityCardUtils" /* 15759 */;
-import ContentInventoryOutboxStore from "ContentInventoryOutboxStore" /* 9476 */;
-import MediaEngineStore from "MediaEngineStore" /* 2133 */;
-import PresenceStore from "PresenceStore" /* 6058 */;
+import Constants from "Constants" /* 5658 */;
+import UserProfileStackedActivityCardUtils from "UserProfileStackedActivityCardUtils" /* 14498 */;
+import ContentInventoryOutboxStore from "ContentInventoryOutboxStore" /* 8994 */;
+import MediaEngineStore from "MediaEngineStore" /* 2131 */;
+import PresenceStore from "PresenceStore" /* 5651 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -54,7 +54,7 @@ export default function useUserProfileActivity(arg0) {
     if (stateFromStores2 != null) {
       const entries = stateFromStores2.entries;
       found = entries.filter((extra) => {
-        const f143342 = (item) => {
+        const f138161 = (item) => {
           let result = null != item;
           if (result) {
             const obj = userProfileLiveActivities(closure_2_2[10]);
@@ -70,8 +70,8 @@ export default function useUserProfileActivity(arg0) {
           let result;
           const tmpResult = closure_2_0(stateFromStores2[9]);
           if (tmpResult.isListenedSessionEntry(extra)) {
-            result = extra.extra.entries.length > 0 && !userProfileLiveActivities.some(f143342);
-            const tmp7 = extra.extra.entries.length > 0 && !userProfileLiveActivities.some(f143342);
+            result = extra.extra.entries.length > 0 && !userProfileLiveActivities.some(f138161);
+            const tmp7 = extra.extra.entries.length > 0 && !userProfileLiveActivities.some(f138161);
           } else {
             const tmpResult3 = closure_2_0(stateFromStores2[9]);
             if (tmpResult3.isWatchedMediaEntry(extra)) {

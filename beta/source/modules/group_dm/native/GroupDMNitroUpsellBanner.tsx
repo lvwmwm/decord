@@ -1,27 +1,27 @@
-// Module ID: 19541
-// Function ID: 19542
+// Module ID: 18802
+// Function ID: 18803
 // Name: GroupDMNitroUpsellBanner
-// Dependencies: [32, 19, 17, 5307, 12545, 21, 575, 5306, 1630, 13131, 5892, 1655, 671, 5929, 5883, 504, 12546, 12543, 12550, 19542, 5926, 1113, 9291, 5919, 2]
+// Dependencies: [32, 19, 17, 4914, 12062, 21, 575, 4913, 1628, 18235, 5477, 1653, 671, 5514, 5468, 504, 12063, 12060, 12067, 18803, 5511, 1112, 8840, 5504, 2]
 // Exports: default
 
-// Module 19541 (GroupDMNitroUpsellBanner)
+// Module 18802 (GroupDMNitroUpsellBanner)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
-import intl4 from "intl" /* 1113 */;
-import spring_spring from "spring/spring" /* 5929 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9291 */;
-import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 12543 */;
-import GroupDMConstants from "GroupDMConstants" /* 12545 */;
-import GroupDMNitroCapExperimentDefault from "GroupDMNitroCapExperiment" /* 12546 */;
-import useGroupDMNitroUpsellActionDefault from "useGroupDMNitroUpsellAction" /* 12550 */;
-import GroupDMNitroCapBannerDefault from "GroupDMNitroCapBanner" /* 19542 */;
+import intl4 from "intl" /* 1112 */;
+import spring_spring from "spring/spring" /* 5514 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8840 */;
+import GroupDMNitroUpsellModel from "GroupDMNitroUpsellModel" /* 12060 */;
+import GroupDMConstants from "GroupDMConstants" /* 12062 */;
+import GroupDMNitroCapExperimentDefault from "GroupDMNitroCapExperiment" /* 12063 */;
+import useGroupDMNitroUpsellActionDefault from "useGroupDMNitroUpsellAction" /* 12067 */;
+import GroupDMNitroCapBannerDefault from "GroupDMNitroCapBanner" /* 18803 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5307 */;
+import AccessibilityStore from "AccessibilityStore" /* 4914 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let set, set2;
@@ -132,7 +132,7 @@ function FloatingBanner(visible) {
     const result2 = set(withSpring(num2, closure_16));
     let num3 = 0;
     set2 = sharedValue1.set;
-    const withSpring2 = tmp8(5929).withSpring;
+    const withSpring2 = tmp8(5514).withSpring;
     spring_spring;
     const tmp11 = closure_16;
     if (!visible) {
@@ -265,17 +265,17 @@ export default function GroupDMNitroUpsellBanner(wrapperStyle) {
   }
   const obj6 = { showLeadingIcon: false, wrapperStyle: tmp13, trailing: React4(Button, obj7), children: items2 };
   obj7 = { text: string(tmp2Result.getGroupDMNitroCapCTAMessage(groupDMNitroAudience)), size: "sm", variant: "experimental_premium-primary", shiny: tmp9 && !stateFromStores, icon: AssetRegistryDefault, onPress: tmp7Result };
-  Button = tmp2(5926).Button;
-  const intl = tmp2(1113).intl;
+  Button = tmp2(5511).Button;
+  const intl = tmp2(1112).intl;
   string = intl.string;
   tmp2Result = GroupDMNitroUpsellModel;
   const obj8 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", children: intl2.string(intl4.t.KCD0Hp) };
-  const Text = tmp2(5919).Text;
-  intl2 = tmp2(1113).intl;
+  const Text = tmp2(5504).Text;
+  intl2 = tmp2(1112).intl;
   items2 = [React4(Text, obj8), ];
   const obj9 = { variant: "body-xs/medium", color: "mobile-text-heading-primary", children: intl3.formatToPlainString(intl4.t["8o8Zk5"], obj10) };
-  const Text2 = tmp2(5919).Text;
-  intl3 = tmp2(1113).intl;
+  const Text2 = tmp2(5504).Text;
+  intl3 = tmp2(1112).intl;
   obj10 = { number };
   items2[1] = React4(Text2, obj9);
   const tmp11Result = tmp11(tmp5Result, obj6);

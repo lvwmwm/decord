@@ -1,20 +1,20 @@
-// Module ID: 7883
-// Function ID: 7884
+// Module ID: 7485
+// Function ID: 7486
 // Name: NotificationSettingsModalActionCreators
-// Dependencies: [5, 6948, 1072, 5251, 1082, 572, 7878, 7880, 11, 5313, 1113, 1406, 1285, 2]
+// Dependencies: [5, 6552, 1071, 4858, 1081, 572, 7480, 7482, 11, 4920, 1112, 1404, 1284, 2]
 
-// Module 7883 (NotificationSettingsModalActionCreators)
+// Module 7485 (NotificationSettingsModalActionCreators)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import Constants from "Constants" /* 1072 */;
-import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
-import intl2 from "intl" /* 1113 */;
-import NotificationConstants from "NotificationConstants" /* 5251 */;
-import shared from "shared" /* 5313 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7878 */;
-import UserGuildSettingsManagerDefault from "UserGuildSettingsManager" /* 7880 */;
+import Constants from "Constants" /* 1071 */;
+import UserSettingsConstants from "UserSettingsConstants" /* 1081 */;
+import intl2 from "intl" /* 1112 */;
+import NotificationConstants from "NotificationConstants" /* 4858 */;
+import shared from "shared" /* 4920 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7480 */;
+import UserGuildSettingsManagerDefault from "UserGuildSettingsManager" /* 7482 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6948 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6552 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -96,8 +96,8 @@ let obj = {
       message = accessibilityAnnouncement.message;
     }
     if (message == null) {
-      const intl = tmp(1113).intl;
-      message = intl.string(tmp(1113).t.MlIsJ8);
+      const intl = tmp(1112).intl;
+      message = intl.string(tmp(1112).t.MlIsJ8);
     }
     let assertiveness;
     if (accessibilityAnnouncement != null) {

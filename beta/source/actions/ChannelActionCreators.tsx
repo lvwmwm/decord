@@ -1,26 +1,26 @@
-// Module ID: 8134
-// Function ID: 8135
+// Module ID: 7737
+// Function ID: 7738
 // Name: ChannelActionCreators
-// Dependencies: [32, 5, 8135, 5159, 5155, 7015, 1072, 8136, 1285, 6879, 6886, 6910, 5483, 6053, 6925, 572, 7067, 1256, 1099, 5313, 1113, 8127, 6055, 6756, 2]
+// Dependencies: [32, 5, 7738, 4766, 4762, 6619, 1071, 7739, 1284, 6483, 6490, 6514, 5090, 5646, 6529, 572, 6671, 1255, 1098, 4920, 1112, 7730, 5648, 6359, 2]
 
-// Module 8134 (ChannelActionCreators)
+// Module 7737 (ChannelActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import intl2 from "intl" /* 1113 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import HTTPUtils from "HTTPUtils" /* 1285 */;
-import ChannelRecord from "ChannelRecord" /* 5159 */;
-import shared from "shared" /* 5313 */;
-import RootNavigationRef from "RootNavigationRef" /* 5483 */;
-import preloadChannelDefault from "preloadChannel" /* 6055 */;
-import QualtricsActionCreatorsDefault from "QualtricsActionCreators" /* 6879 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6925 */;
-import isChangelogChannelDefault from "isChangelogChannel" /* 7067 */;
+import intl2 from "intl" /* 1112 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import HTTPUtils from "HTTPUtils" /* 1284 */;
+import ChannelRecord from "ChannelRecord" /* 4766 */;
+import shared from "shared" /* 4920 */;
+import RootNavigationRef from "RootNavigationRef" /* 5090 */;
+import preloadChannelDefault from "preloadChannel" /* 5648 */;
+import QualtricsActionCreatorsDefault from "QualtricsActionCreators" /* 6483 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6529 */;
+import isChangelogChannelDefault from "isChangelogChannel" /* 6671 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChangelogStore from "ChangelogStore" /* 8135 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import ReadStateStore from "ReadStateStore" /* 7015 */;
-import Constants from "Constants" /* 1072 */;
+import ChangelogStore from "ChangelogStore" /* 7738 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import ReadStateStore from "ReadStateStore" /* 6619 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 let _require, c0, c5, recipient_id;
@@ -32,8 +32,8 @@ let map1;
 let tmp;
 let tmp5;
 let unpackModuleId;
-const transitionToChannel = tmp5(6053);
-const SurveyActionTypes = tmp(6886);
+const transitionToChannel = tmp5(5646);
+const SurveyActionTypes = tmp(6490);
 let closure_6 = ChannelRecord.createChannelRecordFromServer;
 ({ AnalyticEvents: c9, AbortCodes: c10, Endpoints: unpackModuleId, Routes: closure_12, ChannelTypes: map1 } = Constants);
 let obj = {
@@ -316,7 +316,7 @@ let obj = {
         const tmp6 = require;
         if (null != obj2.getRootNavigationRef()) {
           const obj4 = { navigationReplace: flag2 };
-          const tmp6Result = tmp6(6053);
+          const tmp6Result = tmp6(5646);
           tmp6Result.transitionToChannel(channel.id, obj4);
           tmp3 = channel;
         } else {
@@ -492,17 +492,17 @@ let obj = {
     if (flag3 == null) {
       flag3 = false;
     }
-    const obj2 = { type: "CHANNEL_DELETE", channel: { id, guild_id: "Array", parent_id: "alignItems" }, silent: flag2 };
+    const obj2 = { type: "CHANNEL_DELETE", channel: { id, guild_id: "Array", parent_id: "add" }, silent: flag2 };
     const tmpResult2 = DispatcherDefault;
     tmpResult2.dispatch(obj2);
     if (flag) {
-      const obj5 = flag3(1099);
+      const obj5 = flag3(1098);
       obj5.transitionTo(constants2.FRIENDS);
     }
-    const HTTP = flag3(1285).HTTP;
+    const HTTP = flag3(1284).HTTP;
     const request = { url: closure_11.CHANNEL(id), query: { silent: flag2 }, oldFormErrors: true, rejectWithError: obj7.rejectWithMigratedError() };
     const del = HTTP.del;
-    obj7 = flag3(1285);
+    obj7 = flag3(1284);
     const delResult = del(request);
     const nextPromise = delResult.then(() => {
       const AccessibilityAnnouncer = shared.AccessibilityAnnouncer;

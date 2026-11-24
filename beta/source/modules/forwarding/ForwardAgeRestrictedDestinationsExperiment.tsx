@@ -1,10 +1,10 @@
-// Module ID: 10263
-// Function ID: 10264
+// Module ID: 10073
+// Function ID: 10074
 // Name: ForwardAgeRestrictedDestinationsExperiment
-// Dependencies: [1453, 2]
+// Dependencies: [1451, 2]
 
-// Module 10263 (ForwardAgeRestrictedDestinationsExperiment)
-import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1453 */;
+// Module 10073 (ForwardAgeRestrictedDestinationsExperiment)
+import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1451 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

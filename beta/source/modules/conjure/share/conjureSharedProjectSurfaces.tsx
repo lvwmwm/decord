@@ -1,30 +1,47 @@
-// Module ID: 13787
-// Function ID: 13788
+// Module ID: 11972
+// Function ID: 11973
 // Name: conjureSharedProjectSurfaces
-// Dependencies: [7018, 4131, 1113, 2]
-// Exports: conjureSharedProjectSurfaceLabels
+// Dependencies: [6622, 4190, 1112, 2]
+// Exports: conjureSharedProjectSurfaceLabels, conjureSharedProjectTypeLabel, conjureSharedProjectTypes
 
-// Module 13787 (conjureSharedProjectSurfaces)
-import _modDef4131 from "module_4131" /* 4131 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 7018 */;
+// Module 11972 (conjureSharedProjectSurfaces)
+import intl2 from "intl" /* 1112 */;
+import _modDef4190 from "module_4190" /* 4190 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6622 */;
 import size from "module_2" /* 2 */;
 
-const items = [ConjureProjectTypes.ConjureSupportedSurface.APP_CHANNEL, _modDef4131.bHLrO8];
+const items = [ConjureProjectTypes.ConjureSupportedSurface.APP_CHANNEL, _modDef4190.bHLrO8];
 const items1 = [items, , , , , , , ];
-const items2 = [ConjureProjectTypes.ConjureSupportedSurface.ACTIVITY, _modDef4131["hp+8nc"]];
+const items2 = [ConjureProjectTypes.ConjureSupportedSurface.ACTIVITY, _modDef4190["hp+8nc"]];
 items1[1] = items2;
-const items3 = [ConjureProjectTypes.ConjureSupportedSurface.VOICE_CHANNEL, _modDef4131["4V2QWl"]];
+const items3 = [ConjureProjectTypes.ConjureSupportedSurface.VOICE_CHANNEL, _modDef4190["4V2QWl"]];
 items1[2] = items3;
-const items4 = [ConjureProjectTypes.ConjureSupportedSurface.PROFILE_WIDGET, _modDef4131.oJ06Po];
+const items4 = [ConjureProjectTypes.ConjureSupportedSurface.PROFILE_WIDGET, _modDef4190.oJ06Po];
 items1[3] = items4;
-const items5 = [ConjureProjectTypes.ConjureSupportedSurface.OVERLAY, _modDef4131.Qbnej2];
+const items5 = [ConjureProjectTypes.ConjureSupportedSurface.OVERLAY, _modDef4190.Qbnej2];
 items1[4] = items5;
-const items6 = [ConjureProjectTypes.ConjureSupportedSurface.APPLICATION_COMMANDS, _modDef4131.pEwndv];
+const items6 = [ConjureProjectTypes.ConjureSupportedSurface.APPLICATION_COMMANDS, _modDef4190.pEwndv];
 items1[5] = items6;
-const items7 = [ConjureProjectTypes.ConjureSupportedSurface.BOT, _modDef4131.HWOzBW];
+const items7 = [ConjureProjectTypes.ConjureSupportedSurface.BOT, _modDef4190.HWOzBW];
 items1[6] = items7;
-const items8 = [ConjureProjectTypes.ConjureSupportedSurface.AUTOMOD, _modDef4131.gsIXM9];
+const items8 = [ConjureProjectTypes.ConjureSupportedSurface.AUTOMOD, _modDef4190.gsIXM9];
 items1[7] = items8;
+const items9 = [ConjureProjectTypes.ConjureSupportedSurface.APP_CHANNEL, ConjureProjectTypes.ConjureSupportedSurface.ACTIVITY, ConjureProjectTypes.ConjureSupportedSurface.VOICE_CHANNEL];
+const items10 = ["app", items9];
+const items11 = [items10, , , , ];
+const items12 = [ConjureProjectTypes.ConjureSupportedSurface.OVERLAY];
+const items13 = ["overlay", items12];
+items11[1] = items13;
+const items14 = [ConjureProjectTypes.ConjureSupportedSurface.PROFILE_WIDGET];
+const items15 = ["profile_widget", items14];
+items11[2] = items15;
+const items16 = [ConjureProjectTypes.ConjureSupportedSurface.BOT, ConjureProjectTypes.ConjureSupportedSurface.APPLICATION_COMMANDS];
+const items17 = ["bot", items16];
+items11[3] = items17;
+const items18 = [ConjureProjectTypes.ConjureSupportedSurface.AUTOMOD];
+const items19 = ["automod", items18];
+items11[4] = items19;
+const obj = { app: _modDef4190.BM4Ymz, overlay: _modDef4190["0mGHfU"], profile_widget: _modDef4190.Jipr29, bot: _modDef4190.EbvC13, automod: _modDef4190.tiMvei };
 const result = size.fileFinishedImporting("modules/conjure/share/conjureSharedProjectSurfaces.tsx");
 
 export function conjureSharedProjectSurfaceLabels(supported_surfaces) {
@@ -39,4 +56,20 @@ export function conjureSharedProjectSurfaceLabels(supported_surfaces) {
     const intl = supported_surfaces(dependencyMap[2]).intl;
     return intl.string(tmp);
   });
+}
+export function conjureSharedProjectTypes(supported_surfaces) {
+  let closure_0 = supported_surfaces;
+  const found = items11.filter((item) => {
+    [, obj] = item;
+    return obj.some((item) => closure_1_0.includes(item));
+  });
+  return found.map((item) => {
+    let tmp;
+    [tmp] = item;
+    return tmp;
+  });
+}
+export function conjureSharedProjectTypeLabel(type) {
+  const intl = intl2.intl;
+  return intl.string(obj[type]);
 }

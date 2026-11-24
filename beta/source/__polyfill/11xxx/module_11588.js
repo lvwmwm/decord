@@ -1,12 +1,11 @@
 // Module ID: 11588
 // Function ID: 11589
-// Dependencies: [41, 42, 93, 95, 98, 11583, 11431, 11432, 11585]
+// Dependencies: [41, 42, 93, 95, 98, 11415, 11584, 11422]
 
 // Module 11588
-import EmptyDuration from "EmptyDuration" /* 11431 */;
-import ReferenceWithTimezone from "ReferenceWithTimezone" /* 11432 */;
-import _mod11583 from "module_11583" /* 11583 */;
-import _mod11585 from "module_11585" /* 11585 */;
+import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 11415 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 11422 */;
+import _mod11584 from "module_11584" /* 11584 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
@@ -28,12 +27,13 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class UKTimeUnitAgoFormatParser {
+const regExp = new RegExp("([0-9]{4})[\\.\\/\\s](?:(" + repeatedTimeunitPattern.matchAnyPattern(_mod11584.MONTH_DICTIONARY) + ")|([0-9]{1,2}))[\\.\\/\\s]([0-9]{1,2})(?=\\W|$)", "i");
+class ENCasualYearMonthDayParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, UKTimeUnitAgoFormatParser);
-    const obj = _getPrototypeOf(UKTimeUnitAgoFormatParser);
+    _classCallCheck(this, ENCasualYearMonthDayParser);
+    const obj = _getPrototypeOf(ENCasualYearMonthDayParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
@@ -45,24 +45,38 @@ class UKTimeUnitAgoFormatParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(UKTimeUnitAgoFormatParser, _mod11585.AbstractParserWithLeftBoundaryChecking);
+_inherits(ENCasualYearMonthDayParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "innerPatternString",
-  value: function innerPatternString(arg0) {
-    return "(" + _mod11583.TIME_UNITS_PATTERN + ")\\s{0,5}\u0442\u043E\u043C\u0443(?=(?:\\W|$))";
+  key: "innerPattern",
+  value: function innerPattern() {
+    return regExp;
   }
 };
 const items = [
   entry,
   {
     key: "innerExtract",
-    value: function innerExtract(reference, arg1) {
-      const parseDurationResult = _mod11583.parseDuration(arg1[1]);
-      const reverseDurationResult = EmptyDuration.reverseDuration(parseDurationResult);
-      const ParsingComponents = ReferenceWithTimezone.ParsingComponents;
-      return ParsingComponents.createRelativeFromReference(reference.reference, reverseDurationResult);
+    value: function innerExtract(arg0, arg1) {
+      let parsed;
+      let parsed1;
+      if (arg1[3]) {
+        const _parseInt = parseInt;
+        parsed = parseInt(arg1[3]);
+      } else {
+        parsed = _mod11584.MONTH_DICTIONARY[str.toLowerCase(str)];
+      }
+      if (parsed >= 1) {
+        if (parsed <= 12) {
+          const _parseInt2 = parseInt;
+          const _parseInt3 = parseInt;
+          const date = { day: parseInt(arg1[4]), month: parsed, year: parsed1 };
+          parsed1 = parseInt(arg1[1]);
+          return date;
+        }
+      }
+      return null;
     }
   }
 ];
 
-export default _createClass(UKTimeUnitAgoFormatParser, items);
+export default _createClass(ENCasualYearMonthDayParser, items);

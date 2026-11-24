@@ -1,16 +1,16 @@
-// Module ID: 9062
-// Function ID: 9063
+// Module ID: 8572
+// Function ID: 8573
 // Name: useActiveTheme
-// Dependencies: [1194, 5330, 1238, 1195, 504, 5481, 2]
+// Dependencies: [1193, 4937, 1237, 1194, 504, 5088, 2]
 // Exports: useIsClientThemeOrCustomThemeActive, useIsCustomThemeActive
 
-// Module 9062 (useActiveTheme)
+// Module 8572 (useActiveTheme)
 import get_initialized from "get initialized" /* 504 */;
-import useRoutedActiveGuildThemeDefault from "useRoutedActiveGuildTheme" /* 5481 */;
-import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1194 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5330 */;
-import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1238 */;
-import ThemeConstants from "ThemeConstants" /* 1195 */;
+import useRoutedActiveGuildThemeDefault from "useRoutedActiveGuildTheme" /* 5088 */;
+import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1193 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4937 */;
+import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1237 */;
+import ThemeConstants from "ThemeConstants" /* 1194 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;

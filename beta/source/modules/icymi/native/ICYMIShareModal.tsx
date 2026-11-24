@@ -1,27 +1,27 @@
-// Module ID: 19339
-// Function ID: 19340
+// Module ID: 18141
+// Function ID: 18142
 // Name: ICYMIShareModal
-// Dependencies: [32, 5, 19, 17, 5155, 1072, 10244, 5311, 21, 5306, 575, 7987, 1113, 19340, 6005, 5903, 15182, 15194, 5926, 6838, 10245, 1255, 8786, 8660, 1630, 1496, 1380, 10270, 10272, 2]
+// Dependencies: [32, 5, 19, 17, 4762, 1071, 9646, 4918, 21, 4913, 575, 7590, 1112, 18142, 5595, 5488, 10096, 10118, 5511, 6429, 10061, 1254, 8382, 8250, 1628, 1494, 1378, 10080, 10081, 2]
 // Exports: GameShareModal, GuildEventShareModal
 
-// Module 19339 (ICYMIShareModal)
+// Module 18141 (ICYMIShareModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import intl3 from "intl" /* 1113 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
-import MessageConstants from "MessageConstants" /* 5311 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5903 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 6005 */;
-import ShareEventUtils from "ShareEventUtils" /* 7987 */;
-import UserRowConstants from "UserRowConstants" /* 10244 */;
-import useShareChatInputActions from "useShareChatInputActions" /* 15182 */;
+import Constants from "Constants" /* 1071 */;
+import intl3 from "intl" /* 1112 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
+import MessageConstants from "MessageConstants" /* 4918 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5488 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5595 */;
+import ShareEventUtils from "ShareEventUtils" /* 7590 */;
+import UserRowConstants from "UserRowConstants" /* 9646 */;
+import useShareChatInputActions from "useShareChatInputActions" /* 10096 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -31,7 +31,7 @@ let closure_12;
 let obj2;
 let tmp5;
 let unpackModuleId;
-const ShareChatInputDefault = tmp5(15194);
+const ShareChatInputDefault = tmp5(10118);
 function GravityShareFooter(arg0) {
   let count;
   let handleMessageBlur;
@@ -58,12 +58,12 @@ function GravityShareFooter(arg0) {
     onSend(first);
   }, items);
   if (count <= 1) {
-    const intl2 = tmp7(1113).intl;
-    stringResult = intl2.string(tmp7(1113).t.TXNS7S);
+    const intl2 = tmp7(1112).intl;
+    stringResult = intl2.string(tmp7(1112).t.TXNS7S);
   } else {
-    const intl = tmp7(1113).intl;
+    const intl = tmp7(1112).intl;
     const obj2 = { count };
-    stringResult = intl.formatToPlainString(tmp7(1113).t.jWtYUm, obj2);
+    stringResult = intl.formatToPlainString(tmp7(1112).t.jWtYUm, obj2);
   }
   const items1 = [tmp.footer, insets.bottom];
   let tmp14Result = null;
@@ -73,7 +73,7 @@ function GravityShareFooter(arg0) {
     items2 = [unpackModuleId(ShareChatInputDefault, obj4), ];
     const obj5 = { variant: "primary", size: "md", text: stringResult, disabled: 0 === count, onPress: tmp17, loading: isSending };
     tmp17 = undefined;
-    const Button = tmp7(5926).Button;
+    const Button = tmp7(5511).Button;
     const tmp14 = authStore2;
     const tmp15 = View;
     const tmp16 = unpackModuleId;
@@ -315,13 +315,13 @@ export function GameShareModal(content) {
   let intl;
   content = content.content;
   let obj = {
-    title: intl.string(content(1113).t["59CWHK"]),
+    title: intl.string(content(1112).t["59CWHK"]),
     linkText: "",
     forwardToChannel: function() {
       return closure_0(...arguments);
     }
   };
-  intl = content(1113).intl;
+  intl = content(1112).intl;
   let closure_0 = _asyncToGenerator(async (arg0, value) => {
     let obj3;
     if (c6 === 2) {

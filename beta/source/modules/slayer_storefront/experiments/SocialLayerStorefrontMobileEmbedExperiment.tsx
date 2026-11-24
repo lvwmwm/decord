@@ -1,11 +1,11 @@
-// Module ID: 12437
-// Function ID: 12438
+// Module ID: 11966
+// Function ID: 11967
 // Name: SocialLayerStorefrontMobileEmbedExperiment
-// Dependencies: [1452, 2]
+// Dependencies: [1450, 2]
 // Exports: getIsEligibleForSocialLayerStorefrontMobileEmbed
 
-// Module 12437 (SocialLayerStorefrontMobileEmbedExperiment)
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+// Module 11966 (SocialLayerStorefrontMobileEmbedExperiment)
+import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-08-social-layer-storefront-mobile-embed", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };

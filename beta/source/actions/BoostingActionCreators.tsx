@@ -1,17 +1,17 @@
-// Module ID: 9238
-// Function ID: 9239
+// Module ID: 8746
+// Function ID: 8747
 // Name: actions/BoostingActionCreators
-// Dependencies: [5, 9239, 9240, 2179, 1072, 1285, 572, 6747, 2]
+// Dependencies: [5, 8747, 8748, 2178, 1071, 1284, 572, 6349, 2]
 // Exports: applyToGuild, cancelGuildBoostSlot, fetchAppliedBoostsCooldown, fetchAppliedGuildBoostsForGuild, fetchAppliedGuildBoostsForUser, unapplyFromGuild, uncancelGuildBoostSlot
 
-// Module 9238 (actions/BoostingActionCreators)
+// Module 8746 (actions/BoostingActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import Constants from "Constants" /* 1072 */;
-import HTTPUtils from "HTTPUtils" /* 1285 */;
+import Constants from "Constants" /* 1071 */;
+import HTTPUtils from "HTTPUtils" /* 1284 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import AppliedGuildBoostRecord from "AppliedGuildBoostRecord" /* 9239 */;
-import GuildBoostSlotRecord from "GuildBoostSlotRecord" /* 9240 */;
-import SubscriptionStore from "SubscriptionStore" /* 2179 */;
+import AppliedGuildBoostRecord from "AppliedGuildBoostRecord" /* 8747 */;
+import GuildBoostSlotRecord from "GuildBoostSlotRecord" /* 8748 */;
+import SubscriptionStore from "SubscriptionStore" /* 2178 */;
 import size from "module_2" /* 2 */;
 
 let boostId, closure_3, closure_4, closure_5;

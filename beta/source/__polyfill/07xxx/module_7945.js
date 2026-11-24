@@ -1,35 +1,13 @@
 // Module ID: 7945
 // Function ID: 7946
-// Dependencies: [19, 7946]
-// Exports: useClipboard
+// Dependencies: [26, 65]
 
 // Module 7945
-import _mod7946 from "module_7946" /* 7946 */;
-import react from "react" /* 19 */;
+import _mod26 from "module_26" /* 26 */;
+import module_65 from "module_65" /* 65 */;
 
-function setString(arg0) {
-  let closure_0 = arg0;
-  const Clipboard = _mod7946.Clipboard;
-  Clipboard.setString(arg0);
-  const item = set.forEach((fn) => fn(closure_0));
-}
-const set = new Set();
+const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSVGMarker", validAttributes: { name: true, opacity: true, matrix: true, mask: true, markerStart: true, markerMid: true, markerEnd: true, clipPath: true, clipRule: true, responsible: true, display: true, pointerEvents: true, color: _mod26.colorAttribute, fill: true, fillOpacity: true, fillRule: true, stroke: true, strokeOpacity: true, strokeWidth: true, strokeLinecap: true, strokeLinejoin: true, strokeDasharray: true, strokeDashoffset: true, strokeMiterlimit: true, vectorEffect: true, propList: true, filter: true, fontSize: true, fontWeight: true, font: true, refX: true, refY: true, markerHeight: true, markerWidth: true, markerUnits: true, orient: true, minX: true, minY: true, vbWidth: true, vbHeight: true, align: true, meetOrSlice: true } };
+({ name: true, opacity: true, matrix: true, mask: true, markerStart: true, markerMid: true, markerEnd: true, clipPath: true, clipRule: true, responsible: true, display: true, pointerEvents: true, color: _mod26.colorAttribute, fill: true, fillOpacity: true, fillRule: true, stroke: true, strokeOpacity: true, strokeWidth: true, strokeLinecap: true, strokeLinejoin: true, strokeDasharray: true, strokeDashoffset: true, strokeMiterlimit: true, vectorEffect: true, propList: true, filter: true, fontSize: true, fontWeight: true, font: true, refX: true, refY: true, markerHeight: true, markerWidth: true, markerUnits: true, orient: true, minX: true, minY: true, vbWidth: true, vbHeight: true, align: true, meetOrSlice: true });
 
-export const useClipboard = () => {
-  let tmp2;
-  const state = react.useState("");
-  [tmp2, require] = state;
-  const effect = react.useEffect(() => {
-    const Clipboard = _mod7946.Clipboard;
-    const string = Clipboard.getString();
-    string.then(require);
-  }, []);
-  const effect1 = react.useEffect(() => {
-    set.add(require);
-    return () => {
-      set.delete(closure_1_0);
-    };
-  }, []);
-  const items = [tmp2, setString];
-  return items;
-};
+export default module_65.get("RNSVGMarker", () => obj);
+export { __INTERNAL_VIEW_CONFIG };

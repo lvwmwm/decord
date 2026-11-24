@@ -1,24 +1,24 @@
-// Module ID: 10594
-// Function ID: 10595
+// Module ID: 9674
+// Function ID: 9675
 // Name: FormComponents
-// Dependencies: [19, 6058, 21, 5306, 575, 7722, 7746, 10595, 1187, 7918, 10596, 10608, 8142, 6740, 10066, 8476, 504, 8468, 10650, 10652, 5919, 1113, 7443, 5926, 8136, 10653, 5362, 10654, 10815, 2]
+// Dependencies: [19, 5651, 21, 4913, 575, 7324, 7348, 9675, 1186, 7520, 9676, 9688, 7745, 6342, 9456, 8067, 504, 8059, 9739, 9741, 5504, 1112, 7045, 5511, 7739, 9742, 4969, 9743, 13817, 2]
 // Exports: MemberRowItem, VoicePanelFormSection
 
-// Module 10594 (FormComponents)
+// Module 9674 (FormComponents)
 import nativeDefault from "native" /* 575 */;
-import intl3 from "intl" /* 1113 */;
-import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import NativeViewDefault from "NativeView" /* 7722 */;
-import TableRowGroup2 from "TableRowGroup" /* 7746 */;
-import CallActionCreatorsDefault from "CallActionCreators" /* 8136 */;
-import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 8468 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8476 */;
-import VoiceStateIcons from "VoiceStateIcons" /* 10595 */;
+import intl3 from "intl" /* 1112 */;
+import native from "native" /* 1186 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import NativeViewDefault from "NativeView" /* 7324 */;
+import TableRowGroup2 from "TableRowGroup" /* 7348 */;
+import CallActionCreatorsDefault from "CallActionCreators" /* 7739 */;
+import StreamerApplicationSelectors from "StreamerApplicationSelectors" /* 8059 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8067 */;
+import VoiceStateIcons from "VoiceStateIcons" /* 9675 */;
 import react from "react" /* 19 */;
-import PresenceStore from "PresenceStore" /* 6058 */;
+import PresenceStore from "PresenceStore" /* 5651 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;

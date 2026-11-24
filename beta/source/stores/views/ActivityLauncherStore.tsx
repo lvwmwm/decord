@@ -1,14 +1,14 @@
-// Module ID: 12402
-// Function ID: 12403
+// Module ID: 11931
+// Function ID: 11932
 // Name: ActivityLauncherStore
-// Dependencies: [7317, 7316, 1072, 5150, 572, 504, 2]
+// Dependencies: [6921, 6920, 1071, 4757, 572, 504, 2]
 
-// Module 12402 (ActivityLauncherStore)
+// Module 11931 (ActivityLauncherStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import LocalActivityStore from "LocalActivityStore" /* 7317 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 7316 */;
-import Constants from "Constants" /* 1072 */;
+import LocalActivityStore from "LocalActivityStore" /* 6921 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 6920 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -16,7 +16,7 @@ let metroRequire;
 function handleActivityStateChanged(COMPLETE, JOIN, type) {
   let applicationId;
   let remotePartyId;
-  const f104990 = () => {
+  const f100891 = () => {
     obj = activityType(dependencyMap[4]);
     const obj2 = { type: "ACTIVITY_LAUNCH_FAIL", applicationId, activityType };
     return obj.dispatch(obj2);
@@ -48,8 +48,8 @@ function handleActivityStateChanged(COMPLETE, JOIN, type) {
       }
       const self3 = this;
       const self4 = this;
-      const timeout = new applicationId(5150).Timeout();
-      timeout.start(tmp10, f104990);
+      const timeout = new applicationId(4757).Timeout();
+      timeout.start(tmp10, f100891);
       closure_8[applicationId] = timeout;
     } else if (COMPLETE === constants.LOADING) {
       let num = 15000;
@@ -63,8 +63,8 @@ function handleActivityStateChanged(COMPLETE, JOIN, type) {
       }
       const self = this;
       const self2 = this;
-      const timeout1 = new applicationId(5150).Timeout();
-      timeout1.start(num, f104990);
+      const timeout1 = new applicationId(4757).Timeout();
+      timeout1.start(num, f100891);
       closure_8[applicationId] = timeout1;
     }
   }

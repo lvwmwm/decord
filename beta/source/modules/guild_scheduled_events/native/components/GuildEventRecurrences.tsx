@@ -1,18 +1,18 @@
-// Module ID: 8433
-// Function ID: 8434
+// Module ID: 8024
+// Function ID: 8025
 // Name: GuildEventRecurrences
-// Dependencies: [19, 17, 21, 5306, 575, 8434, 5919, 1113, 11, 8436, 5926, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 8025, 5504, 1112, 11, 8027, 5511, 2]
 // Exports: default
 
-// Module 8433 (GuildEventRecurrences)
+// Module 8024 (GuildEventRecurrences)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import nativeDefault from "native" /* 575 */;
-import useGuildEventRecurrencesDefault from "useGuildEventRecurrences" /* 8434 */;
-import GuildEventRecurrenceDefault from "GuildEventRecurrence" /* 8436 */;
+import useGuildEventRecurrencesDefault from "useGuildEventRecurrences" /* 8025 */;
+import GuildEventRecurrenceDefault from "GuildEventRecurrence" /* 8027 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -48,10 +48,10 @@ export default function GuildEventRecurrences(guildEventId) {
   const tmp2 = closure_8();
   ({ recurrenceStartTimes, canViewMoreRecurrences, updateRecurrenceStartTimes: c4 } = useGuildEventRecurrencesDefault(guildEventId, guildId, recurrenceRule));
   let obj = { style: tmp2.container, children: items };
-  let obj2 = { variant: "heading-sm/semibold", children: intl.string(guildEventId(1113).t["D/jjoa"]) };
+  let obj2 = { variant: "heading-sm/semibold", children: intl.string(guildEventId(1112).t["D/jjoa"]) };
   useGuildEventRecurrencesDefault(guildEventId, guildId, recurrenceRule);
-  const Text = guildEventId(5919).Text;
-  intl = guildEventId(1113).intl;
+  const Text = guildEventId(5504).Text;
+  intl = guildEventId(1112).intl;
   items = [closure_6(Text, obj2), , ];
   const obj3 = {
     style: tmp2.scrollView,
@@ -72,7 +72,7 @@ export default function GuildEventRecurrences(guildEventId) {
   }
   if (canViewMoreRecurrences) {
     const obj4 = {
-      text: intl2.string(guildEventId(1113).t["8O7Hpy"]),
+      text: intl2.string(guildEventId(1112).t["8O7Hpy"]),
       onPress: function handleViewMore(stopPropagation) {
           stopPropagation.stopPropagation();
           _undefined();
@@ -83,8 +83,8 @@ export default function GuildEventRecurrences(guildEventId) {
         },
       size: "sm"
     };
-    const Button = tmp8(5926).Button;
-    intl2 = tmp8(1113).intl;
+    const Button = tmp8(5511).Button;
+    intl2 = tmp8(1112).intl;
     canViewMoreRecurrences = tmp7(Button, obj4);
   }
   items[2] = canViewMoreRecurrences;

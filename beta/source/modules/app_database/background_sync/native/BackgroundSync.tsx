@@ -1,32 +1,32 @@
-// Module ID: 20192
-// Function ID: 20193
+// Module ID: 19449
+// Function ID: 19450
 // Name: background_sync/BackgroundSync
-// Dependencies: [32, 5, 5159, 5155, 7015, 2120, 8682, 1072, 7010, 6969, 5177, 3, 1089, 510, 8856, 1380, 572, 1242, 1256, 5184, 1285, 5185, 11, 12, 8760, 8763, 8761, 16156, 18210, 8680, 1255, 8690, 2]
+// Dependencies: [32, 5, 4766, 4762, 6619, 2118, 8272, 1071, 6614, 6573, 4784, 3, 1088, 510, 8451, 1378, 572, 1241, 1255, 4791, 1284, 4792, 11, 12, 8355, 8358, 8356, 16991, 8270, 1254, 8280, 2]
 // Exports: backgroundSync
 
-// Module 20192 (background_sync/BackgroundSync)
+// Module 19449 (background_sync/BackgroundSync)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
 import Storage4 from "Storage" /* 510 */;
-import DurationsDefault from "Durations" /* 1089 */;
-import HTTPUtils from "HTTPUtils" /* 1285 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 5184 */;
-import modules_Messages from "modules/Messages" /* 8680 */;
-import GuildVersionsDefault from "GuildVersions" /* 8760 */;
-import KvCacheVersionDefault from "KvCacheVersion" /* 8761 */;
-import NonGuildVersionsDefault from "NonGuildVersions" /* 8763 */;
+import DurationsDefault from "Durations" /* 1088 */;
+import HTTPUtils from "HTTPUtils" /* 1284 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 4791 */;
+import modules_Messages from "modules/Messages" /* 8270 */;
+import GuildVersionsDefault from "GuildVersions" /* 8355 */;
+import KvCacheVersionDefault from "KvCacheVersion" /* 8356 */;
+import NonGuildVersionsDefault from "NonGuildVersions" /* 8358 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelRecord from "ChannelRecord" /* 5159 */;
+import ChannelRecord from "ChannelRecord" /* 4766 */;
 import "ChannelStore";
-import ReadStateStore from "ReadStateStore" /* 7015 */;
-import AppStateStore from "AppStateStore" /* 2120 */;
-import FileSystemStore from "FileSystemStore" /* 8682 */;
-import Constants from "Constants" /* 1072 */;
-import StickersStore from "StickersStore" /* 7010 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import EmojiStore from "EmojiStore" /* 6969 */;
-import GuildStore from "GuildStore" /* 5177 */;
+import ReadStateStore from "ReadStateStore" /* 6619 */;
+import AppStateStore from "AppStateStore" /* 2118 */;
+import FileSystemStore from "FileSystemStore" /* 8272 */;
+import Constants from "Constants" /* 1071 */;
+import StickersStore from "StickersStore" /* 6614 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import EmojiStore from "EmojiStore" /* 6573 */;
+import GuildStore from "GuildStore" /* 4784 */;
 import size from "module_2" /* 2 */;
 
 let c1, c11, c12, c21, c22, closure_13, config, readStatesByChannel;
@@ -343,9 +343,7 @@ function backgroundSyncGuildData() {
 }
 obj = function _backgroundSyncGuildData() {
   obj = _asyncToGenerator(async function(arg0, value, arg2) {
-    let obj11;
     let obj7;
-    let obj9;
     let closure_0 = arg0;
     let closure_1 = value;
     let closure_2 = arg2;
@@ -392,12 +390,12 @@ obj = function _backgroundSyncGuildData() {
             api_code_version = undefined;
             promisesForBackgroundSyncToWaitOn = undefined;
             const items = [, , ];
-            const obj18 = GuildVersionsDefault;
-            items[0] = obj18.getCommittedVersions();
-            const obj19 = NonGuildVersionsDefault;
-            items[1] = obj19.getCommittedVersions();
-            const obj20 = KvCacheVersionDefault;
-            items[2] = obj20.canUseGuildVersions();
+            const obj16 = GuildVersionsDefault;
+            items[0] = obj16.getCommittedVersions();
+            const obj17 = NonGuildVersionsDefault;
+            items[1] = obj17.getCommittedVersions();
+            const obj18 = KvCacheVersionDefault;
+            items[2] = obj18.canUseGuildVersions();
             c5 = 1;
             c6 = 1;
             const obj4 = { value: all(items), done: false };
@@ -421,12 +419,10 @@ obj = function _backgroundSyncGuildData() {
             const request = { url: closure_132_12.BACKGROUND_SYNC, body: obj7, timeout: 5000, rejectWithError: false };
             const post = HTTP.post;
             if (closure_7) {
-              const obj6 = { guild_versions, highest_last_message_id: closure_6.highest_last_message_id, api_code_version: closure_6.api_code_version, channel_privacy: obj11.isChannelMetadataObfuscationEnabled("background-sync") };
-              obj11 = closure_132_0(closure_132_2[27]);
+              const obj6 = { guild_versions, highest_last_message_id: closure_6.highest_last_message_id, api_code_version: closure_6.api_code_version, channel_privacy: true };
               obj7 = obj6;
             } else {
-              obj7 = { channel_privacy: obj9.isChannelMetadataObfuscationEnabled("background-sync") };
-              obj9 = closure_132_0(closure_132_2[27]);
+              obj7 = { channel_privacy: true };
             }
             c5 = 2;
             c6 = 1;
@@ -440,8 +436,8 @@ obj = function _backgroundSyncGuildData() {
               throw value;
             } else if (arg0 === 2) {
               c6 = 3;
-              const obj10 = { value, done: true };
-              return obj10;
+              const obj9 = { value, done: true };
+              return obj9;
             } else {
               body = value.body;
               guilds = body.guilds;
@@ -467,8 +463,8 @@ obj = function _backgroundSyncGuildData() {
                 const promise = new Promise((arg0) => setTimeout(arg0, 0));
                 c5 = 3;
                 c6 = 1;
-                const obj12 = { value: promise, done: false };
-                return obj12;
+                const obj10 = { value: promise, done: false };
+                return obj10;
               }
             }
           } else if (3 === c5) {
@@ -477,18 +473,18 @@ obj = function _backgroundSyncGuildData() {
               throw value;
             } else if (arg0 === 2) {
               c6 = 3;
-              const obj13 = { value, done: true };
-              return obj13;
+              const obj11 = { value, done: true };
+              return obj11;
             } else {
-              const tmp50 = closure_2;
-              if (!tmp50) {
+              const tmp44 = closure_2;
+              if (!tmp44) {
                 const str = "active";
                 if ("active" === closure_132_9.getState()) {
                   closure_132_14.log("Skipping guild data background sync because app is now active");
                 }
               }
               promisesForBackgroundSyncToWaitOn = [];
-              const obj14 = {
+              const obj12 = {
                 type: "BACKGROUND_SYNC",
                 guilds,
                 emojis: guilds.map((data_mode) => {
@@ -542,21 +538,21 @@ obj = function _backgroundSyncGuildData() {
               };
               const dispatch = closure_132_1(closure_132_2[16]).dispatch;
               const tmp22 = closure_132_1(closure_132_2[16]);
-              dispatch(obj14);
+              dispatch(obj12);
               c5 = 4;
               c6 = 1;
-              const obj15 = { value: Promise.all(promisesForBackgroundSyncToWaitOn), done: false };
-              return obj15;
+              const obj13 = { value: Promise.all(promisesForBackgroundSyncToWaitOn), done: false };
+              return obj13;
             }
           } else if (arg0 === 1) {
             c6 = 3;
             throw value;
           } else if (arg0 === 2) {
             c6 = 3;
-            const obj16 = { value, done: true };
-            return obj16;
+            const obj14 = { value, done: true };
+            return obj14;
           } else {
-            obj = closure_132_0(closure_132_2[28]);
+            obj = closure_132_0(closure_132_2[27]);
             obj.writeCaches(true);
             const _Date = Date;
             closure_0.time_save_guild_data = Date.now() - closure_1;
@@ -564,9 +560,9 @@ obj = function _backgroundSyncGuildData() {
           c6 = 3;
           return { value: "HermesInternal", done: null };
         }
-      } catch (tmp45) {
+      } catch (tmp39) {
         c6 = 3;
-        throw tmp45;
+        throw tmp39;
       }
     }
   });
@@ -994,7 +990,7 @@ obj = function _processChannelChanges() {
               let obj6 = { value, done: true };
               return obj6;
             } else {
-              length = value.filter(closure_136_0(closure_136_2[30]).isNotNullish);
+              length = value.filter(closure_136_0(closure_136_2[29]).isNotNullish);
               let _HermesInternal = HermesInternal;
               let verboseResult = closure_136_14.verbose("Fetched " + length.length + " modified messages from the database");
               let obj7 = closure_136_1(closure_136_2[23]);

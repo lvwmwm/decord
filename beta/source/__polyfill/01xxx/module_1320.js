@@ -4,4 +4,4 @@
 
 // Module 1320
 
-export default Math.abs;
+export default Math.floor;

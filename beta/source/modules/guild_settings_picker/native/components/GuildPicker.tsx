@@ -1,14 +1,14 @@
-// Module ID: 16335
-// Function ID: 16336
+// Module ID: 15107
+// Function ID: 15108
 // Name: GuildPicker
-// Dependencies: [19, 21, 16336, 16337, 7720, 5542, 8009, 2121, 1113, 2]
+// Dependencies: [19, 21, 15108, 15109, 7322, 5127, 7612, 2119, 1112, 2]
 // Exports: default
 
-// Module 16335 (GuildPicker)
+// Module 15107 (GuildPicker)
 import Fragment from "Fragment" /* 21 */;
-import intl2 from "intl" /* 1113 */;
-import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import intl2 from "intl" /* 1112 */;
+import asyncRequire from "asyncRequire" /* 2119 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -27,20 +27,20 @@ export default function GuildPicker(isGuildIncluded) {
   dependencyMap = undefined;
   let tmp2 = dependencyMap;
   let tmp = onChange;
-  ({ options: c2, selectedGuild } = onChange(16336)({ isGuildIncluded: isGuildIncluded.isGuildIncluded, selectedGuildId: guildId }));
+  ({ options: c2, selectedGuild } = onChange(15108)({ isGuildIncluded: isGuildIncluded.isGuildIncluded, selectedGuildId: guildId }));
   let tmp4Result;
-  onChange(16336)({ isGuildIncluded: isGuildIncluded.isGuildIncluded, selectedGuildId: guildId });
-  onChange(16337);
+  onChange(15108)({ isGuildIncluded: isGuildIncluded.isGuildIncluded, selectedGuildId: guildId });
+  onChange(15109);
   if (null != selectedGuild) {
-    let obj = { guild: selectedGuild, size: guildId(7720).GuildIconSizes.XSMALL };
-    const tmpResult = tmp(7720);
+    let obj = { guild: selectedGuild, size: guildId(7322).GuildIconSizes.XSMALL };
+    const tmpResult = tmp(7322);
     tmp4Result = tmp4(tmpResult, obj);
   }
   let name;
   if (selectedGuild != null) {
     name = selectedGuild.name;
   }
-  let intl = guildId(1113).intl;
+  let intl = guildId(1112).intl;
   return <tmp5 leading={tmp4Result} label={name} onPress={function handleSelectGuild() {
     let intl;
     const tmp = ActionSheetActionCreatorsDefault;
@@ -62,8 +62,8 @@ export default function GuildPicker(isGuildIncluded) {
       selectedItem: guildId,
       hasIcons: false
     };
-    const tmp2 = asyncRequire(8009, dependencyMap.paths);
+    const tmp2 = asyncRequire(7612, dependencyMap.paths);
     intl = intl2.intl;
     openLazy(tmp2, GuildPicker_str, obj);
-  }} placeholder={intl.string(guildId(1113).t.etZ9tX)} />;
+  }} placeholder={intl.string(guildId(1112).t.etZ9tX)} />;
 };

@@ -1,13 +1,13 @@
-// Module ID: 20570
-// Function ID: 20571
+// Module ID: 19840
+// Function ID: 19841
 // Name: actions/GuildActionCreators
-// Dependencies: [1072, 572, 1285, 2]
+// Dependencies: [1071, 572, 1284, 2]
 // Exports: batchChannelUpdate, batchRoleUpdate
 
-// Module 20570 (actions/GuildActionCreators)
+// Module 19840 (actions/GuildActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import Constants from "Constants" /* 1072 */;
-import HTTPUtils from "HTTPUtils" /* 1285 */;
+import Constants from "Constants" /* 1071 */;
+import HTTPUtils from "HTTPUtils" /* 1284 */;
 import size from "module_2" /* 2 */;
 
 function batchChannelUpdate(guildId, body) {

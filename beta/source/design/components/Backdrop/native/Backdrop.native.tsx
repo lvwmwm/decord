@@ -1,19 +1,19 @@
-// Module ID: 5894
-// Function ID: 5895
+// Module ID: 5479
+// Function ID: 5480
 // Name: Backdrop
-// Dependencies: [19, 17, 21, 5306, 575, 1113, 5367, 1630, 1655, 5895, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 1112, 4974, 1628, 1653, 5480, 2]
 // Exports: Backdrop
 
-// Module 5894 (Backdrop)
+// Module 5479 (Backdrop)
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1113 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import _modDef1655 from "module_1655" /* 1655 */;
-import native from "native" /* 5367 */;
+import intl2 from "intl" /* 1112 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
+import _modDef1653 from "module_1653" /* 1653 */;
+import native from "native" /* 4974 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -23,7 +23,7 @@ let hasOwnProperty;
 let obj2;
 let obj3;
 let tmp6;
-const VisualEffectViewAnimatedDefault = tmp6(5895);
+const VisualEffectViewAnimatedDefault = tmp6(5480);
 ({ Pressable: c3, StyleSheet } = react_native);
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
 let closure_6 = {};
@@ -75,7 +75,7 @@ export function Backdrop(animatedProps) {
   const obj3 = { style: items, pointerEvents: "box-none", animatedProps, children: items2 };
   items = [tmp4.fill, style];
   let tmp8 = null != onDismiss;
-  const View = _modDef1655.View;
+  const View = _modDef1653.View;
   const tmp7 = hasOwnProperty;
   if (tmp8) {
     const obj4 = { style: items1, onPress: onDismiss, accessibilityRole: "button", accessibilityLabel, "aria-hidden": prop };

@@ -1,14 +1,14 @@
-// Module ID: 16978
-// Function ID: 16979
+// Module ID: 15733
+// Function ID: 15734
 // Name: activities
-// Dependencies: [5, 1072, 16924, 16923, 12871, 2151, 7303, 7297, 7022, 7021, 7341, 2]
+// Dependencies: [5, 1071, 15678, 15677, 10804, 2150, 6909, 6903, 6626, 6625, 6945, 2]
 
-// Module 16978 (activities)
-import RPCHelpers from "RPCHelpers" /* 12871 */;
-import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 16923 */;
+// Module 15733 (activities)
+import RPCHelpers from "RPCHelpers" /* 10804 */;
+import activityInstanceConnectedParticipants from "activityInstanceConnectedParticipants" /* 15677 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants from "Constants" /* 1072 */;
-import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 16924 */;
+import Constants from "Constants" /* 1071 */;
+import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 15678 */;
 import size from "module_2" /* 2 */;
 
 let c5, closure_2, constants;
@@ -38,8 +38,8 @@ let obj3 = {
     socket = socket.socket;
     return (async function(arg0, value) {
       let closure_1;
-      let tmp36Result;
-      let tmp36Result2;
+      let tmp38Result3;
+      let tmp38Result4;
       if (c5 === 2) {
         c5 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -73,31 +73,33 @@ let obj3 = {
               if (obj14.isEmbeddedApplication(socket.application)) {
                 let context;
                 if (tmp(closure_2[7])(socket)) {
-                  context = tmp38.context;
+                  context = tmp40.context;
                 }
                 let surface;
                 const tmp22 = tmp(closure_2[8]);
                 if (context != null) {
                   surface = context.surface;
                 }
-                const tmp22Result = tmp22(surface);
                 c3 = 1;
                 value = {};
                 let type;
+                const tmp22Result = tmp22(surface);
                 if (context != null) {
                   type = context.source.type;
                 }
                 if (type === value(closure_2[9]).EmbeddedContextSourceType.FRAME) {
+                  const createProxyTicket = value(closure_2[10]).createProxyTicket;
+                  const tmp38Result = value(closure_2[10]);
                   constants = 3;
                   c5 = 1;
-                  const obj4 = { value: tmp36Result.createProxyTicket(validateApplicationResult, tmp22Result, context.surface.type), done: false };
-                  tmp36Result = value(closure_2[10]);
+                  const obj4 = { value: createProxyTicket(validateApplicationResult, tmp38Result3.getProxyTicketChannelId(context.surface), context.surface.type), done: false };
+                  tmp38Result3 = value(closure_2[8]);
                   return obj4;
                 } else {
                   constants = 2;
                   c5 = 1;
-                  const obj5 = { value: tmp36Result2.createProxyTicket(validateApplicationResult, tmp22Result), done: false };
-                  tmp36Result2 = value(closure_2[10]);
+                  const obj5 = { value: tmp38Result4.createProxyTicket(validateApplicationResult, tmp22Result), done: false };
+                  tmp38Result4 = value(closure_2[10]);
                   return obj5;
                 }
               } else {
@@ -141,11 +143,11 @@ let obj3 = {
             const obj9 = { value, done: true };
             return obj9;
           }
-        } catch (tmp29) {
-          closure_2 = tmp29;
+        } catch (tmp31) {
+          closure_2 = tmp31;
           if (0 === c3) {
             c5 = 3;
-            throw tmp29;
+            throw tmp31;
           } else {
             constants = 1;
           }

@@ -1,22 +1,22 @@
-// Module ID: 15371
-// Function ID: 15372
+// Module ID: 14102
+// Function ID: 14103
 // Name: PremiumMarketingFloatingSubscribeButton
-// Dependencies: [19, 17, 5307, 1072, 21, 5306, 575, 1630, 504, 15369, 7937, 671, 1655, 5538, 5883, 10074, 2]
+// Dependencies: [19, 17, 4914, 1071, 21, 4913, 575, 1628, 504, 14100, 7539, 671, 1653, 5123, 5468, 10952, 2]
 // Exports: default
 
-// Module 15371 (PremiumMarketingFloatingSubscribeButton)
+// Module 14102 (PremiumMarketingFloatingSubscribeButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
-import Constants from "Constants" /* 1072 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
-import NitroUpsellButtonDefault from "NitroUpsellButton" /* 10074 */;
-import useOpenPremiumMarketingPaymentDefault from "useOpenPremiumMarketingPayment" /* 15369 */;
+import Constants from "Constants" /* 1071 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7539 */;
+import NitroUpsellButtonDefault from "NitroUpsellButton" /* 10952 */;
+import useOpenPremiumMarketingPaymentDefault from "useOpenPremiumMarketingPayment" /* 14100 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5307 */;
+import AccessibilityStore from "AccessibilityStore" /* 4914 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -70,9 +70,9 @@ export default function PremiumMarketingFloatingSubscribeButton(style) {
     return items;
   }, items1);
   const items2 = [closure_10, , , , , ];
-  const useAnimatedStyle = backgroundColor(1655).useAnimatedStyle;
-  backgroundColor(1655);
-  items2[1] = backgroundColor(5538).withTiming;
+  const useAnimatedStyle = backgroundColor(1653).useAnimatedStyle;
+  backgroundColor(1653);
+  items2[1] = backgroundColor(5123).withTiming;
   items2[2] = isVisible;
   items2[3] = stateFromStores;
   items2[4] = 150;
@@ -118,7 +118,7 @@ export default function PremiumMarketingFloatingSubscribeButton(style) {
   const items4 = [closure_11, isVisible];
   c0 = undefined;
   [tmp17, tmp18] = items4;
-  const tmp4Result = tmp4(1655);
+  const tmp4Result = tmp4(1653);
   class PremiumMarketingFloatingSubscribeButtonTsx2 {
     constructor() {
       let str2;
@@ -141,9 +141,9 @@ export default function PremiumMarketingFloatingSubscribeButton(style) {
   const animatedProps = tmp4Result.useAnimatedProps(PremiumMarketingFloatingSubscribeButtonTsx2);
   let obj2 = { animatedProps, style: items6, children: items7 };
   items6 = [tmp.container, animatedStyle];
-  View = tmp2(1655).View;
+  View = tmp2(1653).View;
   const obj3 = { pointerEvents: "none", style: tmp.gradient, colors: memo, locations: [0, 0.75, 1], start: VerticalGradient.START, end: VerticalGradient.END };
-  items7 = [closure_7(tmp2(5883), obj3), ];
+  items7 = [closure_7(tmp2(5468), obj3), ];
   const obj4 = { style: items8, children: closure_7(NitroUpsellButtonDefault, { onPress: openPayment, text: buttonText }) };
   items8 = [tmp.buttonContainer, { paddingBottom: Math.max(bottom, tmp2(575).space.PX_16) }, style];
   ({ paddingBottom: Math.max(bottom, nativeDefault.space.PX_16) });

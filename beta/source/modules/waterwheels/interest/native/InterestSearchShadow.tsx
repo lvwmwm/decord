@@ -1,20 +1,20 @@
-// Module ID: 19045
-// Function ID: 19046
+// Module ID: 17840
+// Function ID: 17841
 // Name: InterestSearchShadow
-// Dependencies: [19, 17, 21, 5306, 575, 5892, 1655, 19044, 1380, 5883, 671, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 5477, 1653, 17839, 1378, 5468, 671, 2]
 // Exports: default
 
-// Module 19045 (InterestSearchShadow)
+// Module 17840 (InterestSearchShadow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import LinearGradientDefault from "LinearGradient" /* 5883 */;
-import useToken from "useToken" /* 5892 */;
-import InterestScrollHeader from "InterestScrollHeader" /* 19044 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import LinearGradientDefault from "LinearGradient" /* 5468 */;
+import useToken from "useToken" /* 5477 */;
+import InterestScrollHeader from "InterestScrollHeader" /* 17839 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -24,7 +24,7 @@ let rect;
 let rect1;
 let rect2;
 let tmp2;
-const PlatformUtils = tmp2(1380);
+const PlatformUtils = tmp2(1378);
 let View = react_native.View;
 ({ jsx: closure_4, Fragment: hasOwnProperty, jsxs: metroRequire } = Fragment);
 let createStyles = createStyles_mod;
@@ -54,8 +54,8 @@ export default function InterestSearchShadow(arg0) {
   let obj = useToken;
   const token = obj.useToken(nativeDefault.colors.BACKGROUND_BASE_LOWEST);
   const items = [closure_8, , , ];
-  const useAnimatedStyle = _mod1655.useAnimatedStyle;
-  _mod1655;
+  const useAnimatedStyle = _mod1653.useAnimatedStyle;
+  _mod1653;
   items[1] = InterestScrollHeader.interestHeaderElevation;
   items[2] = scrollY;
   items[3] = collapseOffset;
@@ -78,7 +78,7 @@ export default function InterestSearchShadow(arg0) {
   const obj2 = { pointerEvents: "none", style: tmp.backing };
   items2[0] = React3(View, obj2);
   const items3 = [tmp.bar, , ];
-  View = tmp4(1655).View;
+  View = tmp4(1653).View;
   const tmp2Result = PlatformUtils;
   const obj3 = { children: items2 };
   items3[1] = tmp2Result.isAndroid() && tmp.barAndroid;
@@ -87,7 +87,7 @@ export default function InterestSearchShadow(arg0) {
   items2[1] = React3(View, { pointerEvents: "none", style: items3 });
   const obj4 = { pointerEvents: "none", style: items4, children: React3(tmp4Result, obj5) };
   items4 = [tmp.shadow, animatedStyle];
-  const View2 = tmp4(1655).View;
+  const View2 = tmp4(1653).View;
   obj5 = { style: tmp.fill, colors: items5 };
   items5 = [token, ];
   tmp4Result = LinearGradientDefault;

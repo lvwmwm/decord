@@ -1,20 +1,20 @@
-// Module ID: 5896
-// Function ID: 5897
+// Module ID: 5481
+// Function ID: 5482
 // Name: VisualEffectView
-// Dependencies: [19, 17, 5897, 1072, 21, 1380, 5898, 5892, 575, 5901, 2]
+// Dependencies: [19, 17, 5482, 1071, 21, 1378, 5483, 5477, 575, 5486, 2]
 // Exports: default, isBlurDisabled, isBlurThemeLight, normalizeBlurTheme
 
-// Module 5896 (VisualEffectView)
+// Module 5481 (VisualEffectView)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import useToken from "useToken" /* 5892 */;
-import VEVOOStore from "VEVOOStore" /* 5897 */;
-import VisualEffectViewIOS from "VisualEffectViewIOS" /* 5898 */;
-import VisualEffectViewAndroid from "VisualEffectViewAndroid" /* 5901 */;
+import Constants from "Constants" /* 1071 */;
+import useToken from "useToken" /* 5477 */;
+import VEVOOStore from "VEVOOStore" /* 5482 */;
+import VisualEffectViewIOS from "VisualEffectViewIOS" /* 5483 */;
+import VisualEffectViewAndroid from "VisualEffectViewAndroid" /* 5486 */;
 import react from "react" /* 19 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
 import size from "module_2" /* 2 */;
 
 const VisualEffectViewIOSDefault = VisualEffectViewIOS;
@@ -100,7 +100,7 @@ export default function VisualEffectView(blurAmount) {
     let tmp18 = null == android_blurTargetViewNativeId;
     if (!tmp18) {
       if (android_softwareBlurDisabled) {
-        android_softwareBlurDisabled = !tmp6(5901).MODERN_ANDROID_BLURRING_AVAILABLE;
+        android_softwareBlurDisabled = !tmp6(5486).MODERN_ANDROID_BLURRING_AVAILABLE;
       }
       tmp18 = true === android_softwareBlurDisabled;
     }

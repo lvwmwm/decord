@@ -1,18 +1,18 @@
-// Module ID: 17225
-// Function ID: 17226
+// Module ID: 15993
+// Function ID: 15994
 // Name: useSettingSearchResults
-// Dependencies: [32, 19, 2189, 17217, 17061, 17220, 17062, 504, 17226, 17219, 551, 2]
+// Dependencies: [32, 19, 2188, 15985, 15823, 15988, 15824, 504, 15994, 15987, 551, 2]
 // Exports: useSettingSearchResults
 
-// Module 17225 (useSettingSearchResults)
+// Module 15993 (useSettingSearchResults)
 import debounceDefault from "debounce" /* 551 */;
-import SettingRendererUtils from "SettingRendererUtils" /* 17219 */;
-import UserSettingSearchManagerDefault from "UserSettingSearchManager" /* 17226 */;
+import SettingRendererUtils from "SettingRendererUtils" /* 15987 */;
+import UserSettingSearchManagerDefault from "UserSettingSearchManager" /* 15994 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2189 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 17217 */;
-import SettingBlocklistStore from "SettingBlocklistStore" /* 17061 */;
+import LocaleStore from "LocaleStore" /* 2188 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 15985 */;
+import SettingBlocklistStore from "SettingBlocklistStore" /* 15823 */;
 import size from "module_2" /* 2 */;
 
 let scoredSearchResults, setting;

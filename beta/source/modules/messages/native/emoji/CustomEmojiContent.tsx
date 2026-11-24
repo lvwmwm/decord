@@ -1,33 +1,33 @@
-// Module ID: 11307
-// Function ID: 11308
+// Module ID: 11325
+// Function ID: 11326
 // Name: CustomEmojiContent
-// Dependencies: [19, 17, 7721, 5261, 5339, 1388, 1072, 21, 5306, 575, 2174, 1256, 9579, 5542, 11301, 504, 7918, 5260, 5255, 5230, 9547, 5985, 5131, 11308, 8604, 11302, 11305, 6005, 1113, 10181, 10183, 11309, 2121, 7420, 1187, 5926, 6010, 5919, 11310, 8106, 11311, 11312, 2]
+// Dependencies: [19, 17, 7323, 4868, 4946, 1386, 1071, 21, 4913, 575, 2173, 1255, 9099, 5127, 11321, 504, 7520, 4867, 4862, 4837, 9067, 4738, 11326, 8194, 11322, 10394, 5595, 1112, 10009, 10011, 11327, 2119, 7022, 1186, 5511, 5600, 5504, 11328, 7709, 11329, 11330, 2]
 // Exports: default
 
-// Module 11307 (CustomEmojiContent)
+// Module 11325 (CustomEmojiContent)
 import nativeDefault from "native" /* 575 */;
-import intl6 from "intl" /* 1113 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import asyncRequire from "asyncRequire" /* 2121 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2174 */;
-import RoleSubscriptionEmojiUtilsAll from "RoleSubscriptionEmojiUtils" /* 5260 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 6005 */;
-import ExpressionSourceRecord from "ExpressionSourceRecord" /* 7721 */;
-import openUserSettings from "openUserSettings" /* 8604 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9579 */;
-import StarOutlineIcon2 from "StarOutlineIcon" /* 10181 */;
-import StarIcon2 from "StarIcon" /* 10183 */;
-import EmojiActionCreators from "EmojiActionCreators" /* 11305 */;
-import guild_GuildUtils from "guild/GuildUtils" /* 11310 */;
+import intl5 from "intl" /* 1112 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import asyncRequire from "asyncRequire" /* 2119 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2173 */;
+import RoleSubscriptionEmojiUtilsAll from "RoleSubscriptionEmojiUtils" /* 4867 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5595 */;
+import ExpressionSourceRecord from "ExpressionSourceRecord" /* 7323 */;
+import openUserSettings from "openUserSettings" /* 8194 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9099 */;
+import StarOutlineIcon from "StarOutlineIcon" /* 10009 */;
+import StarIcon from "StarIcon" /* 10011 */;
+import EmojiActionCreators from "EmojiActionCreators" /* 10394 */;
+import guild_GuildUtils from "guild/GuildUtils" /* 11328 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SubscriptionRoleStore from "SubscriptionRoleStore" /* 5261 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5339 */;
-import UserStore from "UserStore" /* 1388 */;
-import Constants from "Constants" /* 1072 */;
+import SubscriptionRoleStore from "SubscriptionRoleStore" /* 4868 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4946 */;
+import UserStore from "UserStore" /* 1386 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_12;
@@ -43,8 +43,6 @@ let obj3;
 let obj4;
 let obj5;
 let obj6;
-let obj7;
-let obj8;
 let size;
 let unpackModuleId;
 ({ Pressable: hasOwnProperty, View: metroRequire } = react_native);
@@ -52,16 +50,14 @@ const EmojiSourceDataTypes = ExpressionSourceRecord.EmojiSourceDataTypes;
 ({ UserSettingsSections: unpackModuleId, AnalyticEvents: closure_12, AnalyticsPages: map1, AnalyticsSections: closure_14 } = Constants);
 ({ jsx: closure_15, jsxs: closure_16, Fragment: closure_17 } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { nitroWheel: { height: 32, width: 32 }, nitroWheelPurple: obj2, emojiDescriptionWrapperOuter: { flexDirection: "row", flex: 1, alignItems: "center", gap: 8 }, starIcon: { height: 32, width: 32, margin: 0, padding: 0, flex: 0 }, starIconSelected: obj3, starIconUnselected: obj4, moreMenuIcon: size, bottomCtaButton: { marginTop: 24 }, ctaDescriptionWrapper: { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "flex-start", marginTop: 8 }, betaTag: obj5, betaTagTextAddPack: obj6, betaTagTextRemovePack: obj7, favoriteButtonContainer: obj8 };
+let obj = { nitroWheel: { height: 32, width: 32 }, nitroWheelPurple: obj2, emojiDescriptionWrapperOuter: { flexDirection: "row", flex: 1, alignItems: "center", gap: 8 }, moreMenuIcon: size, bottomCtaButton: { marginTop: 24 }, ctaDescriptionWrapper: { display: "flex", flexDirection: "row", alignItems: "center", justifyContent: "flex-start", marginTop: 8 }, betaTag: obj3, betaTagTextAddPack: obj4, betaTagTextRemovePack: obj5, favoriteButtonContainer: obj6 };
 obj2 = { tintColor: nativeDefault.colors.CONTROL_BRAND_FOREGROUND_NEW };
 createStyles = createStyles.createStyles;
-obj3 = { tintColor: nativeDefault.colors.ICON_FEEDBACK_WARNING };
-obj4 = { tintColor: nativeDefault.colors.INTERACTIVE_TEXT_DEFAULT };
 size = { height: 32, width: 32, justifyContent: "center", alignItems: "center", color: nativeDefault.colors.INTERACTIVE_ICON_DEFAULT };
-obj5 = { backgroundColor: nativeDefault.colors.WHITE };
-obj6 = { color: nativeDefault.unsafe_rawColors.BRAND_530 };
-obj7 = { color: nativeDefault.unsafe_rawColors.PRIMARY_500 };
-obj8 = { paddingTop: nativeDefault.space.PX_4 };
+obj3 = { backgroundColor: nativeDefault.colors.WHITE };
+obj4 = { color: nativeDefault.unsafe_rawColors.BRAND_530 };
+obj5 = { color: nativeDefault.unsafe_rawColors.PRIMARY_500 };
+obj6 = { paddingTop: nativeDefault.space.PX_4 };
 let closure_18 = createStyles(obj);
 size = size_mod;
 let result = size.fileFinishedImporting("modules/messages/native/emoji/CustomEmojiContent.tsx");
@@ -78,8 +74,8 @@ export default function CustomEmojiContent(emojiNode) {
   let handleOpenEmojiOptionsMenu;
   let hasJoinedEmojiSourceGuild;
   let id1;
-  let intl3;
-  let intl5;
+  let intl2;
+  let intl4;
   let isRoleSubscriptionEmoji;
   let items4;
   let items5;
@@ -87,19 +83,16 @@ export default function CustomEmojiContent(emojiNode) {
   let items9;
   let nonce;
   let obj11;
-  let obj19;
+  let obj18;
   let obj21;
-  let obj23;
-  let obj26;
-  let obj27;
-  let obj29;
-  let obj36;
+  let obj22;
+  let obj24;
+  let obj31;
   let sourceType;
   let str;
   let stringResult;
-  let tmp30Result;
-  let tmp34Result11;
-  let tmp34Result7;
+  let tmp28Result;
+  let tmp32Result7;
   let type;
   let userIsRoleSubscriber;
   emojiNode = emojiNode.emojiNode;
@@ -169,11 +162,9 @@ export default function CustomEmojiContent(emojiNode) {
     }
     result = shouldHideGuildPurchaseEntryPoints(guildId);
   }
-  const tmp2Result5 = emojiNode(tmp3[20]);
-  isFavoriteEmoji = tmp2Result5.useIsFavoriteEmoji(stateFromStores1, customEmojiFromJoinedGuild);
-  const tmp2Result6 = emojiNode(tmp3[21]);
-  const isTidaMediaTakedownRegion = tmp2Result6.useIsTidaMediaTakedownRegion();
-  const DeveloperMode = tmp2(tmp3[22]).DeveloperMode;
+  const tmp2Result4 = emojiNode(tmp3[20]);
+  isFavoriteEmoji = tmp2Result4.useIsFavoriteEmoji(stateFromStores1, customEmojiFromJoinedGuild);
+  const DeveloperMode = tmp2(tmp3[21]).DeveloperMode;
   let flag;
   const setting = DeveloperMode.useSetting();
   if (expressionSourceGuild != null) {
@@ -213,150 +204,88 @@ export default function CustomEmojiContent(emojiNode) {
       obj6.openUserSettings(obj7);
     }
   };
-  const tmp2Result7 = emojiNode(tmp3[23]);
-  const emojiPopoutData = tmp2Result7.getEmojiPopoutData(obj7);
+  const tmp2Result5 = emojiNode(tmp3[22]);
+  const emojiPopoutData = tmp2Result5.getEmojiPopoutData(obj7);
   const obj8 = { emojiId: emojiNode.id, currentGuildId: stateFromStores1, popoutData: emojiPopoutData, emojiSourceGuildId: id1, nonce };
   id1 = undefined;
-  const useTrackOpenPopout = tmp2(tmp3[25]).useTrackOpenPopout;
-  emojiNode(tmp3[25]);
+  const useTrackOpenPopout = tmp2(tmp3[24]).useTrackOpenPopout;
+  emojiNode(tmp3[24]);
   if (expressionSourceGuild != null) {
     id1 = expressionSourceGuild.id;
   }
   const trackOpenPopout = useTrackOpenPopout(obj8);
   ({ emojiDescription, type } = emojiPopoutData);
-  let intl = tmp2(tmp3[28]).intl;
+  let intl = tmp2(tmp3[27]).intl;
   const string = intl.string;
-  const t = tmp2(tmp3[28]).t;
+  const t = tmp2(tmp3[27]).t;
   if (hasJoinedEmojiSourceGuild) {
     stringResult = string(t.ohTzZH);
   } else {
     stringResult = string(t["eLfh+a"]);
   }
-  const JOIN_GUILD = tmp2(tmp3[23]).EmojiPopoutType.JOIN_GUILD;
-  const items3 = [tmp2(tmp3[23]).EmojiPopoutType.GET_PREMIUM, tmp2(tmp3[23]).EmojiPopoutType.JOIN_GUILD];
+  const JOIN_GUILD = tmp2(tmp3[22]).EmojiPopoutType.JOIN_GUILD;
+  const items3 = [tmp2(tmp3[22]).EmojiPopoutType.GET_PREMIUM, tmp2(tmp3[22]).EmojiPopoutType.JOIN_GUILD];
   const obj9 = { borderRadius: expressionSourceGuild(tmp3[9]).radii.xl };
-  const tmp28 = items3.includes(type) ? obj.ctaButton : obj.bottomCtaButton;
-  const merged2 = Object.assign(tmp28);
+  const tmp26 = items3.includes(type) ? obj.ctaButton : obj.bottomCtaButton;
+  const merged2 = Object.assign(tmp26);
   let obj10 = { style: obj11, children: items4 };
   obj11 = { marginTop: 8 };
   const merged3 = Object.assign(obj.emojiContainer);
   items4 = [, ];
   const obj12 = { style: obj.emojiIcon, source: { uri: emojiNode.src } };
-  items4[0] = closure_15(expressionSourceGuild(tmp3[36]), obj12);
+  items4[0] = closure_15(expressionSourceGuild(tmp3[35]), obj12);
   const obj13 = { style: obj.emojiDescriptionWrapperOuter, children: items6 };
   const obj14 = { style: obj.emojiDescriptionWrapper, children: items5 };
   const obj15 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", children: ":" + emojiNode.alt + ":" };
-  const Text = tmp2(tmp3[37]).Text;
+  const Text = tmp2(tmp3[36]).Text;
   items5 = [closure_15(Text, obj15), ];
-  let tmp34Result = null != emojiDescription;
-  if (tmp34Result) {
+  let tmp32Result = null != emojiDescription;
+  if (tmp32Result) {
     const obj16 = { variant: "body-sm/medium", children: emojiDescription };
-    tmp34Result = tmp34(tmp2(tmp3[37]).Text, obj16);
+    tmp32Result = tmp32(tmp2(tmp3[36]).Text, obj16);
   }
-  function handleAddRemoveFavorite() {
-    let intl;
-    let intl2;
-    const obj = ActionSheetActionCreatorsDefault;
-    obj.hideAllActionSheets();
-    const obj2 = AnalyticsUtilsDefault;
-    const obj3 = { nonce };
-    obj2.track(constants.CLOSE_POPOUT, obj3);
-    const obj4 = EmojiActionCreators;
-    if (isFavoriteEmoji) {
-      obj4.unfavoriteEmoji(customEmojiFromJoinedGuild);
-      const obj5 = { text: intl2.string(intl6.t.in1rga), icon: StarOutlineIcon2.StarOutlineIcon };
-      const open2 = ToastActionCreatorsDefault.open;
-      ToastActionCreatorsDefault;
-      intl2 = tmp5(1113).intl;
-      open2("EMOJI_UNFAVORITED", obj5);
-    } else {
-      obj4.favoriteEmoji(customEmojiFromJoinedGuild);
-      obj6 = { text: intl.string(intl6.t.mE2e8A), icon: StarIcon2.StarIcon, iconColor: nativeDefault.colors.ICON_FEEDBACK_WARNING };
-      const open = ToastActionCreatorsDefault.open;
-      ToastActionCreatorsDefault;
-      intl = tmp5(1113).intl;
-      open("EMOJI_FAVORITED", obj6);
+  items5[1] = tmp32Result;
+  items6 = [closure_16(analyticsLocations, obj14), ];
+  let tmp32Result5 = null;
+  if (setting) {
+    tmp32Result5 = null;
+    if (sourceType !== isFavoriteEmoji.PACK) {
+      const obj17 = { accessibilityLabel: intl4.string(emojiNode(tmp3[27]).t.PdRCRg), style: obj.moreMenuIcon, onPress: handleOpenEmojiOptionsMenu, children: closure_15(MoreHorizontalIcon, obj18) };
+      handleOpenEmojiOptionsMenu = function handleOpenEmojiOptionsMenu() {
+        const obj = ActionSheetActionCreatorsDefault;
+        const obj2 = { emojiSrc: emojiNode.src };
+        obj.openLazy(asyncRequire(11327, dependencyMap.paths), "EmojiOptionsActionSheet", obj2, "stack");
+      };
+      intl4 = tmp2(tmp3[27]).intl;
+      obj18 = { color: expressionSourceGuild(tmp3[9]).colors.INTERACTIVE_TEXT_DEFAULT };
+      MoreHorizontalIcon = tmp2(tmp3[32]).MoreHorizontalIcon;
+      tmp32Result5 = tmp32(stateFromStores1, obj17);
     }
   }
-  items5[1] = tmp34Result;
-  items6 = [closure_16(analyticsLocations, obj14), , ];
-  let tmp34Result8 = null;
-  if (!isUnusableRoleSubscriptionEmoji && hasJoinedEmojiSourceGuild) {
-    tmp34Result8 = null;
-    if (!isTidaMediaTakedownRegion) {
-      let string2Result;
-      let intl2 = tmp2(tmp3[28]).intl;
-      const string2 = intl2.string;
-      const t2 = tmp2(tmp3[28]).t;
-      const tmp37 = stateFromStores1;
-      if (isFavoriteEmoji) {
-        string2Result = string2(t2.aBUcp3);
-      } else {
-        string2Result = string2(t2.yZFibY);
-      }
-      const obj17 = { accessibilityLabel: string2Result, style: obj.moreMenuIcon, onPress: handleAddRemoveFavorite, children: tmp34Result7 };
-      if (isFavoriteEmoji) {
-        const obj18 = { style: obj19 };
-        obj19 = {};
-        const StarIcon = tmp2(tmp3[30]).StarIcon;
-        const merged4 = Object.assign(obj.starIcon);
-        const merged5 = Object.assign(obj.starIconSelected);
-        tmp34Result7 = tmp34(StarIcon, obj18);
-      } else {
-        const obj20 = { style: obj21 };
-        obj21 = {};
-        const StarOutlineIcon = tmp2(tmp3[29]).StarOutlineIcon;
-        const merged6 = Object.assign(obj.starIcon);
-        const merged7 = Object.assign(obj.starIconUnselected);
-        tmp34Result7 = tmp34(StarOutlineIcon, obj20);
-      }
-      tmp34Result8 = tmp34(tmp37, obj17);
-    }
-  }
-  items6[1] = tmp34Result8;
-  let tmp34Result9 = null;
-  if (isTidaMediaTakedownRegion) {
-    tmp34Result9 = null;
-    if (setting) {
-      tmp34Result9 = null;
-      if (sourceType !== isFavoriteEmoji.PACK) {
-        const obj22 = { accessibilityLabel: intl5.string(emojiNode(tmp3[28]).t.PdRCRg), style: obj.moreMenuIcon, onPress: handleOpenEmojiOptionsMenu, children: closure_15(MoreHorizontalIcon, obj23) };
-        handleOpenEmojiOptionsMenu = function handleOpenEmojiOptionsMenu() {
-          const obj = ActionSheetActionCreatorsDefault;
-          const obj2 = { emojiSrc: emojiNode.src };
-          obj.openLazy(asyncRequire(11309, dependencyMap.paths), "EmojiOptionsActionSheet", obj2, "stack");
-        };
-        intl5 = tmp2(tmp3[28]).intl;
-        obj23 = { color: expressionSourceGuild(tmp3[9]).colors.INTERACTIVE_TEXT_DEFAULT };
-        MoreHorizontalIcon = tmp2(tmp3[33]).MoreHorizontalIcon;
-        tmp34Result9 = tmp34(stateFromStores1, obj22);
-      }
-    }
-  }
-  items6[2] = tmp34Result9;
+  items6[1] = tmp32Result5;
   items4[1] = closure_16(analyticsLocations, obj13);
   const children = [closure_16(analyticsLocations, obj10), , , ];
-  if (type === emojiNode(tmp3[23]).EmojiPopoutType.GET_PREMIUM) {
-    let tmp34Result10 = null;
-    if (type === emojiNode(tmp3[23]).EmojiPopoutType.GET_PREMIUM) {
-      let tmp53;
+  if (type === emojiNode(tmp3[22]).EmojiPopoutType.GET_PREMIUM) {
+    let tmp32Result6 = null;
+    if (type === emojiNode(tmp3[22]).EmojiPopoutType.GET_PREMIUM) {
+      let tmp39;
       let flag2 = { shouldTintPurple: false }.shouldTintPurple;
-      const obj24 = { style: obj9, children: closure_15(Button3, obj26) };
-      Button3 = tmp2(tmp3[35]).Button;
+      const obj19 = { style: obj9, children: closure_15(Button3, obj21) };
+      Button3 = tmp2(tmp3[34]).Button;
       if (flag2 === undefined) {
         flag2 = false;
       }
       const nitroWheel = obj.nitroWheel;
       if (flag2) {
-        const obj25 = {};
-        const merged8 = Object.assign(nitroWheel);
-        const merged9 = Object.assign(obj.nitroWheelPurple);
-        tmp53 = obj25;
+        const obj20 = {};
+        const merged4 = Object.assign(nitroWheel);
+        const merged5 = Object.assign(obj.nitroWheelPurple);
+        tmp39 = obj20;
       } else {
-        tmp53 = nitroWheel;
+        tmp39 = nitroWheel;
       }
-      obj26 = {
-        icon: closure_15(emojiNode(tmp3[34]).NitroWheel, obj27),
+      obj21 = {
+        icon: closure_15(emojiNode(tmp3[33]).NitroWheel, obj22),
         text: emojiPopoutData.text,
         variant: "active",
         size: "md",
@@ -383,16 +312,16 @@ export default function CustomEmojiContent(emojiNode) {
               }
             }
       };
-      obj27 = { style: tmp53 };
-      tmp34Result10 = tmp34(tmp32, obj24);
+      obj22 = { style: tmp39 };
+      tmp32Result6 = tmp32(tmp30, obj19);
     }
-    tmp34Result11 = tmp34Result10;
+    tmp32Result7 = tmp32Result6;
   } else {
-    tmp34Result11 = null;
+    tmp32Result7 = null;
     if (type === JOIN_GUILD) {
-      const obj28 = { style: obj9, children: closure_15(Button, obj29) };
-      obj29 = {
-        text: intl3.string(emojiNode(tmp3[28]).t.riu2R5),
+      const obj23 = { style: obj9, children: closure_15(Button, obj24) };
+      obj24 = {
+        text: intl2.string(emojiNode(tmp3[27]).t.riu2R5),
         size: "md",
         grow: true,
         onPress() {
@@ -405,60 +334,89 @@ export default function CustomEmojiContent(emojiNode) {
               handleJoinGuild(id);
             }
       };
-      Button = tmp2(tmp3[35]).Button;
-      intl3 = tmp2(tmp3[28]).intl;
-      tmp34Result11 = tmp34(tmp32, obj28);
+      Button = tmp2(tmp3[34]).Button;
+      intl2 = tmp2(tmp3[27]).intl;
+      tmp32Result7 = tmp32(tmp30, obj23);
     }
   }
-  children[1] = tmp34Result11;
+  children[1] = tmp32Result7;
   if (hasJoinedEmojiSourceGuild) {
-    tmp30Result = null;
+    tmp28Result = null;
     if (null != expressionSourceGuild) {
-      const obj30 = { style: obj.divider };
-      const items8 = [closure_15(tmp2(tmp3[39]).FormDivider, obj30), , ];
-      const obj31 = { guild: expressionSourceGuild, hasJoinedGuild: hasJoinedEmojiSourceGuild, title: stringResult, showingJoinGuildCta: type === JOIN_GUILD };
-      items8[1] = closure_15(expressionSourceGuild(tmp3[40]), obj31);
-      let tmp34Result12 = !hasJoinedEmojiSourceGuild;
-      if (tmp34Result12) {
-        const obj32 = { expressionSourceGuild, doNotDisplayEmojiIds: items9 };
+      const obj25 = { style: obj.divider };
+      const items8 = [closure_15(tmp2(tmp3[38]).FormDivider, obj25), , ];
+      const obj26 = { guild: expressionSourceGuild, hasJoinedGuild: hasJoinedEmojiSourceGuild, title: stringResult, showingJoinGuildCta: type === JOIN_GUILD };
+      items8[1] = closure_15(expressionSourceGuild(tmp3[39]), obj26);
+      let tmp32Result8 = !hasJoinedEmojiSourceGuild;
+      if (tmp32Result8) {
+        const obj27 = { expressionSourceGuild, doNotDisplayEmojiIds: items9 };
         items9 = [emojiNode.id];
-        tmp34Result12 = tmp34(tmp2(tmp3[41]).EmojiGrid, obj32);
+        tmp32Result8 = tmp32(tmp2(tmp3[40]).EmojiGrid, obj27);
       }
-      const obj33 = { children: items8 };
-      items8[2] = tmp34Result12;
-      tmp30Result = tmp30(tmp31, obj33);
+      const obj28 = { children: items8 };
+      items8[2] = tmp32Result8;
+      tmp28Result = tmp28(tmp29, obj28);
     }
   } else {
-    tmp30Result = null;
+    tmp28Result = null;
   }
-  children[2] = tmp30Result;
-  let tmp30Result2 = null;
-  if (!isUnusableRoleSubscriptionEmoji && hasJoinedEmojiSourceGuild) {
-    tmp30Result2 = null;
-    if (isTidaMediaTakedownRegion) {
-      let string3Result;
-      const obj34 = { style: obj.divider };
-      const items10 = [closure_15(tmp2(tmp3[39]).FormDivider, obj34), ];
-      const obj35 = { style: obj.favoriteButtonContainer, children: closure_15(Button2, obj36) };
-      Button2 = tmp2(tmp3[35]).Button;
-      const intl4 = tmp2(tmp3[28]).intl;
-      const string3 = intl4.string;
-      const t3 = tmp2(tmp3[28]).t;
+  children[2] = tmp28Result;
+  let tmp28Result2 = null;
+  if (!isUnusableRoleSubscriptionEmoji) {
+    tmp28Result2 = null;
+    if (hasJoinedEmojiSourceGuild) {
+      let string2Result;
+      const obj29 = { style: obj.divider };
+      const items10 = [closure_15(tmp2(tmp3[38]).FormDivider, obj29), ];
+      const obj30 = { style: obj.favoriteButtonContainer, children: closure_15(Button2, obj31) };
+      Button2 = tmp2(tmp3[34]).Button;
+      const intl3 = tmp2(tmp3[27]).intl;
+      const string2 = intl3.string;
+      const t2 = tmp2(tmp3[27]).t;
       if (isFavoriteEmoji) {
-        string3Result = string3(t3.Ay49KA);
+        string2Result = string2(t2.Ay49KA);
       } else {
-        string3Result = string3(t3.nNsr67);
+        string2Result = string2(t2.nNsr67);
       }
-      obj36 = { text: string3Result, variant: str, size: "md", onPress: handleAddRemoveFavorite };
+      obj31 = {
+        text: string2Result,
+        variant: str,
+        size: "md",
+        onPress: function handleAddRemoveFavorite() {
+              let intl;
+              let intl2;
+              const obj = ActionSheetActionCreatorsDefault;
+              obj.hideAllActionSheets();
+              const obj2 = AnalyticsUtilsDefault;
+              const obj3 = { nonce };
+              obj2.track(constants.CLOSE_POPOUT, obj3);
+              const obj4 = EmojiActionCreators;
+              if (isFavoriteEmoji) {
+                obj4.unfavoriteEmoji(customEmojiFromJoinedGuild);
+                const obj5 = { text: intl2.string(intl5.t.in1rga), icon: StarOutlineIcon.StarOutlineIcon };
+                const open2 = ToastActionCreatorsDefault.open;
+                ToastActionCreatorsDefault;
+                intl2 = tmp5(1112).intl;
+                open2("EMOJI_UNFAVORITED", obj5);
+              } else {
+                obj4.favoriteEmoji(customEmojiFromJoinedGuild);
+                obj6 = { text: intl.string(intl5.t.mE2e8A), icon: StarIcon.StarIcon, iconColor: nativeDefault.colors.ICON_FEEDBACK_WARNING };
+                const open = ToastActionCreatorsDefault.open;
+                ToastActionCreatorsDefault;
+                intl = tmp5(1112).intl;
+                open("EMOJI_FAVORITED", obj6);
+              }
+            }
+      };
       str = "primary";
       if (isFavoriteEmoji) {
         str = "tertiary";
       }
-      const obj37 = { children: items10 };
-      items10[1] = closure_15(analyticsLocations, obj35);
-      tmp30Result2 = tmp30(tmp31, obj37);
+      const obj32 = { children: items10 };
+      items10[1] = closure_15(analyticsLocations, obj30);
+      tmp28Result2 = tmp28(tmp29, obj32);
     }
   }
-  children[3] = tmp30Result2;
+  children[3] = tmp28Result2;
   return closure_16(closure_17, { children });
 };

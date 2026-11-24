@@ -1,22 +1,22 @@
-// Module ID: 17662
-// Function ID: 17663
+// Module ID: 16434
+// Function ID: 16435
 // Name: OrbsArcadeRewardChain
-// Dependencies: [19, 17, 17649, 21, 575, 5306, 17663, 1655, 5313, 504, 17656, 17650, 17667, 671, 5883, 17668, 5919, 2]
+// Dependencies: [19, 17, 16421, 21, 575, 4913, 16435, 1653, 4920, 504, 16422, 16423, 16439, 671, 5468, 16440, 5504, 2]
 // Exports: default
 
-// Module 17662 (OrbsArcadeRewardChain)
+// Module 16434 (OrbsArcadeRewardChain)
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
-import _modDef1655 from "module_1655" /* 1655 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import OrbsArcadeTypes from "OrbsArcadeTypes" /* 17650 */;
-import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 17656 */;
-import OrbsArcadeRewardChainCell from "OrbsArcadeRewardChainCell" /* 17663 */;
+import _modDef1653 from "module_1653" /* 1653 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 16422 */;
+import OrbsArcadeTypes from "OrbsArcadeTypes" /* 16423 */;
+import OrbsArcadeRewardChainCell from "OrbsArcadeRewardChainCell" /* 16435 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 17649 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 16421 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const OrbsArcadeRewardChainCellDefault = OrbsArcadeRewardChainCell;
@@ -31,7 +31,7 @@ let obj3;
 let obj4;
 let obj5;
 let tmp17;
-const OrbsArcadeRewardStatusLabelDefault = tmp17(17668);
+const OrbsArcadeRewardStatusLabelDefault = tmp17(16440);
 function OrbsArcadeRewardChainRow(arg0) {
   let children;
   let focusRingAtMs;
@@ -45,7 +45,7 @@ function OrbsArcadeRewardChainRow(arg0) {
   const orbsArcadeRewardChainRowStyle = obj.useOrbsArcadeRewardChainRowStyle({ isGranted, isFocused, timeline, focusRingAtMs });
   const obj2 = { style: items, children };
   items = [tmp.row, orbsArcadeRewardChainRowStyle];
-  return metroImportDefault(_modDef1655.View, obj2);
+  return metroImportDefault(_modDef1653.View, obj2);
 }
 ({ StyleSheet: closure_4, View: hasOwnProperty } = react_native);
 let Fragment = Fragment_mod;
@@ -90,7 +90,7 @@ export default function OrbsArcadeRewardChain(game) {
   let tmp = closure_12();
   dependencyMap = tmp;
   const tmp3 = dependencyMap;
-  let obj = game(5313);
+  let obj = game(4920);
   const theme = obj.useThemeContext().theme;
   let obj2 = game(504);
   let items = [c6];
@@ -113,19 +113,19 @@ export default function OrbsArcadeRewardChain(game) {
     first = memo[0];
   }
   let tmp7 = gameState;
-  const tmp8 = gameState(17667)(first);
+  const tmp8 = gameState(16439)(first);
   closure_7 = tmp8;
   let type;
   if (first != null) {
     type = first.type;
   }
   NITRO_GLOW_COLOR = tmp8;
-  if (type === game(17650).OrbsArcadeRewardType.FRACTIONAL_PREMIUM) {
-    NITRO_GLOW_COLOR = tmp2(17667).NITRO_GLOW_COLOR;
+  if (type === game(16423).OrbsArcadeRewardType.FRACTIONAL_PREMIUM) {
+    NITRO_GLOW_COLOR = tmp2(16439).NITRO_GLOW_COLOR;
   }
   let obj4 = { grantedRewardIds: mapped.reverse(), focusedRewardId: id, grantAnimatedOnOpenRewardIds };
-  const useOrbsArcadeRewardChainTimeline = tmp2(17663).useOrbsArcadeRewardChainTimeline;
-  game(17663);
+  const useOrbsArcadeRewardChainTimeline = tmp2(16435).useOrbsArcadeRewardChainTimeline;
+  game(16435);
   const found = memo.filter((item, index) => closure_5[index] !== OrbsArcadeTypes.OrbsArcadeRewardStatus.LOCKED);
   mapped = found.map((id) => id.id);
   id = undefined;
@@ -154,7 +154,7 @@ export default function OrbsArcadeRewardChain(game) {
     items[0] = obj2;
     return obj;
   }, items4);
-  const tmp2Result2 = game(5313);
+  const tmp2Result2 = game(4920);
   const isThemeLightResult = tmp2Result2.isThemeLight(theme);
   let tmp17 = closure_5;
   const items5 = [tmp.chainGlowContainer, ];
@@ -169,7 +169,7 @@ export default function OrbsArcadeRewardChain(game) {
   tmp19 = NITRO_GLOW_COLOR;
   if (!isThemeLightResult) {
     let obj7 = { style: memo.absoluteFill, start, end, colors: memo1 };
-    tmp16Result = tmp16(tmp7(5883), obj7);
+    tmp16Result = tmp16(tmp7(5468), obj7);
   }
   items6 = [
     tmp16Result,
@@ -209,7 +209,7 @@ export default function OrbsArcadeRewardChain(game) {
         }
       }
       const obj4 = { children: items };
-      tmp20 = index > 0 && tmp[index - 1] !== tmp3(17650).OrbsArcadeRewardStatus.LOCKED;
+      tmp20 = index > 0 && tmp[index - 1] !== tmp3(16423).OrbsArcadeRewardStatus.LOCKED;
       items1 = [metroImportDefault(tmp18, obj3), ];
       const obj5 = { style: closure_2.rewardCopy, children: items2 };
       items2 = [, , ];
@@ -218,7 +218,7 @@ export default function OrbsArcadeRewardChain(game) {
       const obj7 = { variant: "heading-xs/semibold", color: "text-strong", children: reward.name };
       items2[1] = metroImportDefault(Text_Text.Text, obj7);
       const obj8 = { variant: "footnote/medium", color: "text-muted", children: tmp3Result.getOrbsArcadeRewardScoreLabel(reward, hasOwnProperty[index], gameState, stateFromStores) };
-      const Text = tmp3(5919).Text;
+      const Text = tmp3(5504).Text;
       tmp3Result = OrbsArcadeRewardUtils;
       items2[2] = metroImportDefault(Text, obj8);
       items1[1] = metroImportAll(hasOwnProperty, obj5);

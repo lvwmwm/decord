@@ -1,12 +1,12 @@
-// Module ID: 17725
-// Function ID: 17726
+// Module ID: 16502
+// Function ID: 16503
 // Name: openQuestAccessSuspendedBottomSheet
-// Dependencies: [5542, 17726, 2121, 2]
+// Dependencies: [5127, 16503, 2119, 2]
 // Exports: default
 
-// Module 17725 (openQuestAccessSuspendedBottomSheet)
-import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+// Module 16502 (openQuestAccessSuspendedBottomSheet)
+import asyncRequire from "asyncRequire" /* 2119 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
 import size from "module_2" /* 2 */;
 
 const QuestAccessSuspendedBottomSheet = "QuestAccessSuspendedBottomSheet";
@@ -14,6 +14,6 @@ const result = size.fileFinishedImporting("modules/quests/native/openQuestAccess
 
 export default function openQuestAccessSuspendedBottomSheet() {
   const obj = ActionSheetActionCreatorsDefault;
-  obj.openLazy(asyncRequire(17726, dependencyMap.paths), QuestAccessSuspendedBottomSheet, {});
+  obj.openLazy(asyncRequire(16503, dependencyMap.paths), QuestAccessSuspendedBottomSheet, {});
 };
 export const ACTION_SHEET_KEY = "QuestAccessSuspendedBottomSheet";

@@ -1,14 +1,14 @@
-// Module ID: 9653
-// Function ID: 9654
+// Module ID: 9174
+// Function ID: 9175
 // Name: guild_header_coachmark
-// Dependencies: [32, 1197, 9640, 9632, 9631, 9630, 2]
+// Dependencies: [32, 1196, 9154, 9152, 9151, 9150, 2]
 
-// Module 9653 (guild_header_coachmark)
-import _mod1197 from "module_1197" /* 1197 */;
-import localized_string from "localized_string" /* 9630 */;
-import help_article from "help_article" /* 9631 */;
-import cta_button from "cta_button" /* 9632 */;
-import theme_aware_asset from "theme_aware_asset" /* 9640 */;
+// Module 9174 (guild_header_coachmark)
+import _mod1196 from "module_1196" /* 1196 */;
+import localized_string from "localized_string" /* 9150 */;
+import help_article from "help_article" /* 9151 */;
+import cta_button from "cta_button" /* 9152 */;
+import theme_aware_asset from "theme_aware_asset" /* 9154 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -28,7 +28,7 @@ const T4 = function T() {
 const T5 = function T() {
   return require("localized_string").LocalizedString;
 };
-const MessageType = _mod1197.MessageType;
+const MessageType = _mod1196.MessageType;
 class GuildHeaderCoachmark$Type extends MessageType {
   constructor() {
     const items = [, , , , , , ];
@@ -53,9 +53,9 @@ class GuildHeaderCoachmark$Type extends MessageType {
     const obj = { header: "", body: "" };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1197;
+      const tmpResult = _mod1196;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -109,7 +109,7 @@ class GuildHeaderCoachmark$Type extends MessageType {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1197.UnknownFieldHandler.onRead;
+                onRead = _mod1196.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -124,7 +124,7 @@ class GuildHeaderCoachmark$Type extends MessageType {
       const ThemeAwareAsset = theme_aware_asset.ThemeAwareAsset;
       internalBinaryWrite = ThemeAwareAsset.internalBinaryWrite;
       asset = asset.asset;
-      const tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
+      const tagResult = tag.tag(1, _mod1196.WireType.LengthDelimited);
       const internalBinaryWriteResult = internalBinaryWrite(asset, tagResult.fork(), writeUnknownFields);
       const joined = internalBinaryWriteResult.join();
     }
@@ -132,7 +132,7 @@ class GuildHeaderCoachmark$Type extends MessageType {
       const CTAButton = cta_button.CTAButton;
       internalBinaryWrite2 = CTAButton.internalBinaryWrite;
       const button = asset.button;
-      const tagResult1 = tag.tag(2, _mod1197.WireType.LengthDelimited);
+      const tagResult1 = tag.tag(2, _mod1196.WireType.LengthDelimited);
       const internalBinaryWrite2Result = internalBinaryWrite2(button, tagResult1.fork(), writeUnknownFields);
       const joined1 = internalBinaryWrite2Result.join();
     }
@@ -140,7 +140,7 @@ class GuildHeaderCoachmark$Type extends MessageType {
       const HelpArticle = help_article.HelpArticle;
       internalBinaryWrite3 = HelpArticle.internalBinaryWrite;
       const helpArticle = asset.helpArticle;
-      const tagResult2 = tag.tag(3, _mod1197.WireType.LengthDelimited);
+      const tagResult2 = tag.tag(3, _mod1196.WireType.LengthDelimited);
       const internalBinaryWrite3Result = internalBinaryWrite3(helpArticle, tagResult2.fork(), writeUnknownFields);
       const joined2 = internalBinaryWrite3Result.join();
     }
@@ -148,7 +148,7 @@ class GuildHeaderCoachmark$Type extends MessageType {
       const LocalizedString = localized_string.LocalizedString;
       internalBinaryWrite4 = LocalizedString.internalBinaryWrite;
       const headerLocalized = asset.headerLocalized;
-      const tagResult3 = tag.tag(4, _mod1197.WireType.LengthDelimited);
+      const tagResult3 = tag.tag(4, _mod1196.WireType.LengthDelimited);
       const internalBinaryWrite4Result = internalBinaryWrite4(headerLocalized, tagResult3.fork(), writeUnknownFields);
       const joined3 = internalBinaryWrite4Result.join();
     }
@@ -156,22 +156,22 @@ class GuildHeaderCoachmark$Type extends MessageType {
       const LocalizedString2 = localized_string.LocalizedString;
       internalBinaryWrite5 = LocalizedString2.internalBinaryWrite;
       const bodyLocalized = asset.bodyLocalized;
-      const tagResult4 = tag.tag(5, _mod1197.WireType.LengthDelimited);
+      const tagResult4 = tag.tag(5, _mod1196.WireType.LengthDelimited);
       const internalBinaryWrite5Result = internalBinaryWrite5(bodyLocalized, tagResult4.fork(), writeUnknownFields);
       const joined4 = internalBinaryWrite5Result.join();
     }
     if ("" !== asset.header) {
-      const tagResult5 = tag.tag(6, _mod1197.WireType.LengthDelimited);
+      const tagResult5 = tag.tag(6, _mod1196.WireType.LengthDelimited);
       tagResult5.string(asset.header);
     }
     if ("" !== asset.body) {
-      const tagResult6 = tag.tag(7, _mod1197.WireType.LengthDelimited);
+      const tagResult6 = tag.tag(7, _mod1196.WireType.LengthDelimited);
       tagResult6.string(asset.body);
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+        onWrite = _mod1196.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, asset, tag);

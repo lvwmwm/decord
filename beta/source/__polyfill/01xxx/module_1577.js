@@ -1,34 +1,23 @@
 // Module ID: 1577
 // Function ID: 1578
-// Dependencies: [32, 19, 1511, 1537]
-// Exports: useRegisterNavigator
+// Dependencies: [19, 1530, 1578]
+// Exports: useScheduleUpdate
 
 // Module 1577
-import _slicedToArray from "_slicedToArray" /* 32 */;
+import react2 from "react" /* 1530 */;
+import react3 from "react" /* 1578 */;
 import react from "react" /* 19 */;
 
 
-export function useRegisterNavigator() {
-  let context;
-  let obj = react;
-  const first = _slicedToArray(react.useState(() => {
-    const obj = first(context[2]);
-    return obj.nanoid();
-  }), 1)[0];
-  context = react.useContext(first(context[3]).SingleNavigatorContext);
-  if (undefined === context) {
-    const _Error = Error;
-    const self = this;
-    const self2 = this;
-    const error = new Error("Couldn't register the navigator. Have you wrapped your app with 'NavigationContainer'?\n\nThis can also happen if there are multiple copies of '@react-navigation' packages installed.");
-    throw error;
-  } else {
-    const items = [context, first];
-    const effect = obj.useEffect(() => {
-      const unregister = context.unregister;
-      context.register(unregister);
-      return () => unregister(first);
-    }, items);
-    return first;
-  }
+export function useScheduleUpdate(arg0) {
+  let closure_129_1;
+  let flushUpdates;
+  let closure_0 = arg0;
+  const context = react.useContext(react2.NavigationBuilderContext);
+  ({ scheduleUpdate: closure_129_1, flushUpdates } = context);
+  const insertionEffect = react.useInsertionEffect(() => {
+    closure_1_1(closure_0);
+  });
+  const obj = react3;
+  const clientLayoutEffect = obj.useClientLayoutEffect(flushUpdates);
 }

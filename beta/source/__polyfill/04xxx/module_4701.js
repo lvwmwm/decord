@@ -1,42 +1,106 @@
 // Module ID: 4701
 // Function ID: 4702
-// Dependencies: [2197]
+// Dependencies: [2168]
 
 // Module 4701
-import buildLocalizeFn from "buildLocalizeFn" /* 2197 */;
+import _mod2168 from "module_2168" /* 2168 */;
 
-let obj;
-let obj3;
-let obj4;
-let obj5;
-let obj6;
-let obj7;
-if (!buildLocalizeFn) {
-  obj = { default: buildLocalizeFn };
-  const obj2 = { default: buildLocalizeFn };
-} else {
-  obj = buildLocalizeFn;
-}
-const date = {
-  ordinalNumber(arg0, arg1) {
-    return String(arg0);
-  },
-  era: obj.default(obj3),
-  quarter: obj.default(obj4),
-  month: obj.default(obj5),
-  day: obj.default(obj6),
-  dayPeriod: obj.default(obj7)
+const fn = function n(moment) {
+  let obj2;
+  let closure_0 = "ene._feb._mar._abr._may._jun._jul._ago._sep._oct._nov._dic.".split("_");
+  let closure_1 = "ene_feb_mar_abr_may_jun_jul_ago_sep_oct_nov_dic".split("_");
+  const items = [/^ene/i, /^feb/i, /^mar/i, /^abr/i, /^may/i, /^jun/i, /^jul/i, /^ago/i, /^sep/i, /^oct/i, /^nov/i, /^dic/i];
+  let tmp = /^(enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre|ene\.?|feb\.?|mar\.?|abr\.?|may\.?|jun\.?|jul\.?|ago\.?|sep\.?|oct\.?|nov\.?|dic\.?)/i;
+  let obj = {
+    months: "enero_febrero_marzo_abril_mayo_junio_julio_agosto_septiembre_octubre_noviembre_diciembre".split("_"),
+    monthsShort(arg0, arg1) {
+      let tmp2;
+      const tmp = arg0;
+      if (tmp) {
+        let tmp5;
+        const obj = /-MMM-/;
+        if (obj.test(arg1)) {
+          tmp5 = closure_1[arg0.month(arg0)];
+        } else {
+          tmp5 = closure_0[arg0.month(arg0)];
+        }
+        tmp2 = tmp5;
+      } else {
+        tmp2 = closure_0;
+      }
+      return tmp2;
+    },
+    monthsRegex: tmp,
+    monthsShortRegex: tmp,
+    monthsStrictRegex: /^(enero|febrero|marzo|abril|mayo|junio|julio|agosto|septiembre|octubre|noviembre|diciembre)/i,
+    monthsShortStrictRegex: /^(ene\.?|feb\.?|mar\.?|abr\.?|may\.?|jun\.?|jul\.?|ago\.?|sep\.?|oct\.?|nov\.?|dic\.?)/i,
+    monthsParse: items,
+    longMonthsParse: items,
+    shortMonthsParse: items,
+    weekdays: "domingo_lunes_martes_mi\u00E9rcoles_jueves_viernes_s\u00E1bado".split("_"),
+    weekdaysShort: "dom._lun._mar._mi\u00E9._jue._vie._s\u00E1b.".split("_"),
+    weekdaysMin: "do_lu_ma_mi_ju_vi_s\u00E1".split("_"),
+    weekdaysParseExact: true,
+    longDateFormat: { LT: "H:mm", LTS: "H:mm:ss", L: "DD/MM/YYYY", LL: "D [de] MMMM [de] YYYY", LLL: "D [de] MMMM [de] YYYY H:mm", LLLL: "dddd, D [de] MMMM [de] YYYY H:mm" },
+    calendar: obj2,
+    relativeTime: { future: "en %s", past: "hace %s", s: "unos segundos", ss: "%d segundos", m: "un minuto", mm: "%d minutos", h: "una hora", hh: "%d horas", d: "un d\u00EDa", dd: "%d d\u00EDas", w: "una semana", ww: "%d semanas", M: "un mes", MM: "%d meses", y: "un a\u00F1o", yy: "%d a\u00F1os" },
+    dayOfMonthOrdinalParse: /\d{1,2}º/,
+    ordinal: "%d\u00BA",
+    week: { dow: 1, doy: 4 },
+    invalidDate: "Fecha inv\u00E1lida"
+  };
+  obj2 = {
+    sameDay() {
+      let str = "";
+      if (1 !== this.hours()) {
+        str = "s";
+      }
+      return "[hoy a la" + str + "] LT";
+    },
+    nextDay() {
+      let str = "";
+      if (1 !== this.hours()) {
+        str = "s";
+      }
+      return "[ma\u00F1ana a la" + str + "] LT";
+    },
+    nextWeek() {
+      let str = "";
+      if (1 !== this.hours()) {
+        str = "s";
+      }
+      return "dddd [a la" + str + "] LT";
+    },
+    lastDay() {
+      let str = "";
+      if (1 !== this.hours()) {
+        str = "s";
+      }
+      return "[ayer a la" + str + "] LT";
+    },
+    lastWeek() {
+      let str = "";
+      if (1 !== this.hours()) {
+        str = "s";
+      }
+      return "[el] dddd [pasado a la" + str + "] LT";
+    },
+    sameElse: "L"
+  };
+  return moment.defineLocale("es", obj);
 };
-obj3 = { values: { narrow: ["\u00CE", "D"], abbreviated: ["\u00CE.d.C.", "D.C."], wide: ["\u00CEnainte de Cristos", "Dup\u0103 Cristos"] }, defaultWidth: "wide" };
-obj4 = {
-  values: { narrow: ["1", "2", "3", "4"], abbreviated: ["T1", "T2", "T3", "T4"], wide: ["primul trimestru", "al doilea trimestru", "al treilea trimestru", "al patrulea trimestru"] },
-  defaultWidth: "wide",
-  argumentCallback(arg0) {
-    return arg0 - 1;
+if (typeof exports === "object") {
+  if (undefined !== module) {
+    let tmp = require;
+    if (typeof require === "function") {
+      fn(_mod2168);
+    }
   }
-};
-obj5 = { values: { narrow: ["I", "F", "M", "A", "M", "I", "I", "A", "S", "O", "N", "D"], abbreviated: ["ian", "feb", "mar", "apr", "mai", "iun", "iul", "aug", "sep", "oct", "noi", "dec"], wide: ["ianuarie", "februarie", "martie", "aprilie", "mai", "iunie", "iulie", "august", "septembrie", "octombrie", "noiembrie", "decembrie"] }, defaultWidth: "wide" };
-obj6 = { values: { narrow: ["d", "l", "m", "m", "j", "v", "s"], short: ["du", "lu", "ma", "mi", "jo", "vi", "s\u00E2"], abbreviated: ["dum", "lun", "mar", "mie", "joi", "vin", "s\u00E2m"], wide: ["duminic\u0103", "luni", "mar\u021Bi", "miercuri", "joi", "vineri", "s\u00E2mb\u0103t\u0103"] }, defaultWidth: "wide" };
-obj7 = { values: { narrow: { am: "a", pm: "p", midnight: "mn", noon: "ami", morning: "dim", afternoon: "da", evening: "s", night: "n" }, abbreviated: { am: "AM", pm: "PM", midnight: "miezul nop\u021Bii", noon: "amiaz\u0103", morning: "diminea\u021B\u0103", afternoon: "dup\u0103-amiaz\u0103", evening: "sear\u0103", night: "noapte" }, wide: { am: "a.m.", pm: "p.m.", midnight: "miezul nop\u021Bii", noon: "amiaz\u0103", morning: "diminea\u021B\u0103", afternoon: "dup\u0103-amiaz\u0103", evening: "sear\u0103", night: "noapte" } }, defaultWidth: "wide", formattingValues: { narrow: { am: "a", pm: "p", midnight: "mn", noon: "amiaz\u0103", morning: "diminea\u021B\u0103", afternoon: "dup\u0103-amiaz\u0103", evening: "sear\u0103", night: "noapte" }, abbreviated: { am: "AM", pm: "PM", midnight: "miezul nop\u021Bii", noon: "amiaz\u0103", morning: "diminea\u021B\u0103", afternoon: "dup\u0103-amiaz\u0103", evening: "sear\u0103", night: "noapte" }, wide: { am: "a.m.", pm: "p.m.", midnight: "miezul nop\u021Bii", noon: "amiaz\u0103", morning: "diminea\u021B\u0103", afternoon: "dup\u0103-amiaz\u0103", evening: "sear\u0103", night: "noapte" } }, defaultFormattingWidth: "wide" };
-
-export default date;
+}
+if (typeof globalThis.define === "function") {
+  const define2 = globalThis.define;
+  if (globalThis.define.amd) {
+    globalThis.define(["../moment"], fn);
+  }
+}
+fn(this.moment);

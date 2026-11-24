@@ -1,28 +1,28 @@
-// Module ID: 15722
-// Function ID: 15723
+// Module ID: 14462
+// Function ID: 14463
 // Name: Badges
-// Dependencies: [19, 17, 2189, 21, 575, 5306, 15720, 8419, 5919, 504, 7438, 12557, 15723, 1113, 15725, 15727, 10667, 11095, 10324, 1089, 2]
+// Dependencies: [19, 17, 2188, 21, 575, 4913, 14460, 8010, 5504, 504, 7040, 12074, 14463, 1112, 14465, 14467, 13803, 10343, 9814, 1088, 2]
 // Exports: BadgesContainer, CustomStatusTimestampBadge, GameTimestampBadge, MarathonBadge, NewGameBadge, ResurrectedBadge, StreakBadge, TopGameBadge, TrendingBadge
 
-// Module 15722 (Badges)
+// Module 14462 (Badges)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import DurationsDefault from "Durations" /* 1089 */;
-import intl3 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import utils from "utils" /* 8419 */;
-import TrophyIcon from "TrophyIcon" /* 10324 */;
-import FireIcon from "FireIcon" /* 10667 */;
-import RetryIcon from "RetryIcon" /* 11095 */;
-import TimerIcon2 from "TimerIcon" /* 12557 */;
-import NewUserIcon from "NewUserIcon" /* 15723 */;
-import FlashIcon from "FlashIcon" /* 15725 */;
-import TrendingType from "TrendingType" /* 15727 */;
+import DurationsDefault from "Durations" /* 1088 */;
+import intl3 from "intl" /* 1112 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import utils from "utils" /* 8010 */;
+import TrophyIcon from "TrophyIcon" /* 9814 */;
+import RetryIcon from "RetryIcon" /* 10343 */;
+import TimerIcon2 from "TimerIcon" /* 12074 */;
+import FireIcon from "FireIcon" /* 13803 */;
+import NewUserIcon from "NewUserIcon" /* 14463 */;
+import FlashIcon from "FlashIcon" /* 14465 */;
+import TrendingType from "TrendingType" /* 14467 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2189 */;
+import LocaleStore from "LocaleStore" /* 2188 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -31,19 +31,19 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp3;
-const GameControllerIcon = tmp3(7438);
+const GameControllerIcon = tmp3(7040);
 class ActiveTimestamp {
   constructor(entry) {
     entry = entry.entry;
     const style = entry.style;
-    obj = entry(15720);
+    obj = entry(14460);
     const now = obj.useTimestampTickedNow().now;
     const items = [entry, now];
     const children = react.useMemo(() => {
       obj = utils;
       return obj.formatActiveTimestamp(entry, now);
     }, items);
-    return closure_6(entry(5919).Text, { style, variant: "body-sm/medium", tabularNumbers: true, color: "text-feedback-positive", children });
+    return closure_6(entry(5504).Text, { style, variant: "body-sm/medium", tabularNumbers: true, color: "text-feedback-positive", children });
   }
 }
 function ContentTimestamp(entry) {
@@ -61,7 +61,7 @@ function ContentTimestamp(entry) {
     tmp7Result = tmp7(ActiveTimestamp, obj2);
   } else {
     const obj3 = { variant: "body-sm/medium", color: tmp.text, children: tmp2Result.formatEndedTimestamp(entry, tmp6) };
-    const Text = tmp2(5919).Text;
+    const Text = tmp2(5504).Text;
     tmp2Result = utils;
     tmp7Result = tmp7(Text, obj3);
   }
@@ -163,7 +163,7 @@ export function NewGameBadge(entry) {
   obj = utils;
   if (obj.isEntryNew(entry)) {
     const obj2 = { Icon: NewUserIcon.NewUserIcon, text: intl.string(intl3.t.keY6mW), iconColor: nativeDefault.colors.STATUS_POSITIVE };
-    intl = tmp(1113).intl;
+    intl = tmp(1112).intl;
     tmp3 = metroRequire(BaseBadge, obj2);
   }
   return tmp3;
@@ -182,9 +182,9 @@ export function StreakBadge(entry) {
     tmp5 = null;
     if (streakCount >= 2) {
       const obj2 = { Icon: FlashIcon.FlashIcon, text: intl.formatToPlainString(intl3.t["Klie/P"], obj3), iconColor: tmp.icon, accessibilityLabel: intl2.formatToPlainString(intl3.t.nVLPBf, obj4) };
-      intl = tmp2(1113).intl;
+      intl = tmp2(1112).intl;
       obj3 = { days: streakCount };
-      intl2 = tmp2(1113).intl;
+      intl2 = tmp2(1112).intl;
       obj4 = { days: streakCount };
       tmp5 = metroRequire(BaseBadge, obj2);
     }
@@ -202,7 +202,7 @@ export function TrendingBadge(entry) {
     tmp5 = null;
     if (trendingType !== TrendingType.TrendingType.TRENDING_TYPE_UNSPECIFIED) {
       const obj2 = { Icon: FireIcon.FireIcon, text: intl.string(intl3.t.TsWCdW), iconColor: tmp.icon };
-      intl = tmp2(1113).intl;
+      intl = tmp2(1112).intl;
       tmp5 = metroRequire(BaseBadge, obj2);
     }
   }
@@ -216,7 +216,7 @@ export function ResurrectedBadge(entry) {
   let tmp4 = null;
   if (null != obj.getResurrectedEntryLastPlayTime(entry)) {
     const obj2 = { Icon: RetryIcon.RetryIcon, text: intl.string(intl3.t.adnLsB), iconColor: tmp.icon };
-    intl = tmp2(1113).intl;
+    intl = tmp2(1112).intl;
     tmp4 = metroRequire(BaseBadge, obj2);
   }
   return tmp4;
@@ -232,11 +232,11 @@ export function TopGameBadge(entry) {
     return null;
   } else {
     const obj2 = { Icon: TrophyIcon.TrophyIcon, text: metroImportDefault(metroImportAll, obj3), iconColor: tmp.icon };
-    const SDRHgr = tmp2(1113).t.SDRHgr;
+    const SDRHgr = tmp2(1112).t.SDRHgr;
     obj3 = { children: items };
-    const intl = tmp2(1113).intl;
+    const intl = tmp2(1112).intl;
     items = [intl.string(intl3.t["/50eHi"]), ": ", ];
-    const intl2 = tmp2(1113).intl;
+    const intl2 = tmp2(1112).intl;
     const _Math = Math;
     const format = intl2.format;
     const obj4 = { hours: Math.round(entryDuration / DurationsDefault.Seconds.HOUR) };

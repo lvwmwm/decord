@@ -1,15 +1,15 @@
-// Module ID: 8229
-// Function ID: 8230
+// Module ID: 7832
+// Function ID: 7833
 // Name: AgeVerificationModal
-// Dependencies: [19, 21, 6002, 8216, 1113, 3321, 5306, 575, 6838, 7427, 7490, 2]
+// Dependencies: [19, 21, 5592, 7819, 1112, 3444, 4913, 575, 6429, 7029, 7092, 2]
 // Exports: default
 
-// Module 8229 (AgeVerificationModal)
+// Module 7832 (AgeVerificationModal)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import LinkingDefault from "Linking" /* 6002 */;
+import LinkingDefault from "Linking" /* 5592 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 function isOwnDeepLinkUrl(url) {
@@ -139,7 +139,7 @@ export default function AgeVerificationModal(webviewUrl) {
       arr.pop();
       const tmp2 = onComplete;
       const tmp3 = onClose;
-      const tmp5 = isExpressiveModalV2;
+      const tmp5 = closure_3;
       if (tmp5) {
         const tmp2Result = tmp2(tmp3[8]);
         tmp2Result.pop();
@@ -156,7 +156,7 @@ export default function AgeVerificationModal(webviewUrl) {
         return headerStyle(HeaderActionButton, obj);
       },
       render() {
-        const obj = { webviewUrl, onComplete, onClose: handleCloseAfterCompletion, isExpressiveModalV2 };
+        const obj = { webviewUrl, onComplete, onClose: handleCloseAfterCompletion };
         return headerStyle(closure_2_7, obj);
       }
     };

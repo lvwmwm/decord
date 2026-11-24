@@ -1,23 +1,23 @@
-// Module ID: 19586
-// Function ID: 19587
+// Module ID: 18847
+// Function ID: 18848
 // Name: FavoritesEmptyState
-// Dependencies: [19, 17, 21, 5306, 575, 15156, 10950, 6327, 5919, 1113, 3679, 5926, 13999, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 13880, 11226, 5929, 5504, 1112, 3802, 5511, 13707, 2]
 // Exports: default
 
-// Module 19586 (FavoritesEmptyState)
+// Module 18847 (FavoritesEmptyState)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl4 from "intl" /* 1113 */;
-import _modDef3679 from "module_3679" /* 3679 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import components_Button_Button from "components/Button/Button" /* 5926 */;
-import Stack_Stack from "Stack/Stack" /* 6327 */;
-import FavoritesSpotIllustration from "FavoritesSpotIllustration" /* 10950 */;
-import PlusMediumIcon from "PlusMediumIcon" /* 13999 */;
-import openFavoritesGuildAddChannelModalDefault from "openFavoritesGuildAddChannelModal" /* 15156 */;
+import intl4 from "intl" /* 1112 */;
+import _modDef3802 from "module_3802" /* 3802 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import components_Button_Button from "components/Button/Button" /* 5511 */;
+import Stack_Stack from "Stack/Stack" /* 5929 */;
+import FavoritesSpotIllustration from "FavoritesSpotIllustration" /* 11226 */;
+import PlusMediumIcon from "PlusMediumIcon" /* 13707 */;
+import openFavoritesGuildAddChannelModalDefault from "openFavoritesGuildAddChannelModal" /* 13880 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -44,16 +44,16 @@ export default function FavoritesEmptyState() {
   items = [hasOwnProperty(FavoritesSpotIllustration.FavoritesSpotIllustration, { width: 192, height: 108 }), , ];
   const obj2 = { spacing: nativeDefault.space.PX_8, align: "center", children: items1 };
   const Stack = Stack_Stack.Stack;
-  const obj3 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", style: tmp.text, children: intl.string(_modDef3679["wh+Rz1"]) };
+  const obj3 = { variant: "heading-sm/semibold", color: "mobile-text-heading-primary", style: tmp.text, children: intl.string(_modDef3802["wh+Rz1"]) };
   const Heading = Text_Text.Heading;
   intl = intl4.intl;
   items1 = [hasOwnProperty(Heading, obj3), ];
-  const obj4 = { variant: "body-md/medium", color: "text-default", style: tmp.text, children: intl2.string(_modDef3679["+SuGKb"]) };
+  const obj4 = { variant: "body-md/medium", color: "text-default", style: tmp.text, children: intl2.string(_modDef3802["+SuGKb"]) };
   const Text = Text_Text.Text;
   intl2 = intl4.intl;
   items1[1] = hasOwnProperty(Text, obj4);
   items[1] = metroRequire(Stack, obj2);
-  const obj5 = { variant: "primary", text: intl3.string(_modDef3679["6kk0gM"]), icon: hasOwnProperty(PlusMediumIcon.PlusMediumIcon, {}), onPress: callback };
+  const obj5 = { variant: "primary", text: intl3.string(_modDef3802["6kk0gM"]), icon: hasOwnProperty(PlusMediumIcon.PlusMediumIcon, {}), onPress: callback };
   const Button = components_Button_Button.Button;
   intl3 = intl4.intl;
   items[2] = hasOwnProperty(Button, obj5);

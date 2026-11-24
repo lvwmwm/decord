@@ -1,24 +1,24 @@
-// Module ID: 10272
-// Function ID: 10273
+// Module ID: 10081
+// Function ID: 10082
 // Name: SearchableDestinationList
-// Dependencies: [32, 19, 17, 1072, 10244, 21, 5306, 575, 10273, 7587, 10245, 10247, 8766, 1255, 7824, 6051, 10576, 10577, 11788, 1113, 10271, 7825, 2]
+// Dependencies: [32, 19, 17, 1071, 9646, 21, 4913, 575, 10082, 7189, 10061, 10063, 8361, 1254, 7426, 5643, 10093, 9656, 10094, 1112, 9659, 7427, 2]
 // Exports: default
 
-// Module 10272 (SearchableDestinationList)
+// Module 10081 (SearchableDestinationList)
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import GlobalUtils from "GlobalUtils" /* 1255 */;
-import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 7587 */;
-import UserSearchUtils from "UserSearchUtils" /* 8766 */;
-import UserRowConstants from "UserRowConstants" /* 10244 */;
-import formatResults from "formatResults" /* 10245 */;
-import _mod10247 from "module_10247" /* 10247 */;
-import roundToNearestPixelDefault from "roundToNearestPixel" /* 10576 */;
+import Constants from "Constants" /* 1071 */;
+import GlobalUtils from "GlobalUtils" /* 1254 */;
+import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 7189 */;
+import UserSearchUtils from "UserSearchUtils" /* 8361 */;
+import UserRowConstants from "UserRowConstants" /* 9646 */;
+import formatResults from "formatResults" /* 10061 */;
+import _mod10063 from "module_10063" /* 10063 */;
+import roundToNearestPixelDefault from "roundToNearestPixel" /* 10093 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let results;
@@ -246,7 +246,7 @@ export default function SearchableDestinationList(getRowIsUnavailable) {
     let type;
     ({ type, record } = results[arg1]);
     const arr = results;
-    if (type !== _mod10247.AutocompleterResultTypes.HEADER) {
+    if (type !== _mod10063.AutocompleterResultTypes.HEADER) {
       const destinationKey = formatResults.destinationKey;
       formatResults;
       const tmp2Result4 = formatResults;
@@ -289,20 +289,20 @@ export default function SearchableDestinationList(getRowIsUnavailable) {
         const obj2 = { onLongPress: NOOP };
       }
       const merged = Object.assign(tmp17);
-      if (_mod10247.AutocompleterResultTypes.USER === type) {
+      if (_mod10063.AutocompleterResultTypes.USER === type) {
         const element = { type: "user", props: obj3 };
         obj3 = { user: record, type: tmp2Result5.getRelationshipType(record.id), onPress: callback3 };
         const merged1 = Object.assign(obj);
         tmp2Result5 = UserSearchUtils;
         return element;
-      } else if (_mod10247.AutocompleterResultTypes.GROUP_DM === type) {
+      } else if (_mod10063.AutocompleterResultTypes.GROUP_DM === type) {
         const element1 = { type: "gdm", props: obj4 };
         obj4 = { channel: record, onPress: callback4 };
         const merged2 = Object.assign(obj);
         return element1;
       } else {
-        if (_mod10247.AutocompleterResultTypes.TEXT_CHANNEL !== type) {
-          if (_mod10247.AutocompleterResultTypes.VOICE_CHANNEL !== type) {
+        if (_mod10063.AutocompleterResultTypes.TEXT_CHANNEL !== type) {
+          if (_mod10063.AutocompleterResultTypes.VOICE_CHANNEL !== type) {
             const tmp2Result6 = GlobalUtils;
             return tmp2Result6.assertNever(type);
           }
@@ -325,7 +325,7 @@ export default function SearchableDestinationList(getRowIsUnavailable) {
     let type;
     ({ type, record } = results[arg1]);
     let tmp2;
-    if (type !== _mod10247.AutocompleterResultTypes.HEADER) {
+    if (type !== _mod10063.AutocompleterResultTypes.HEADER) {
       let lineClamp;
       if (getRowIsUnavailable != null) {
         const tmp5 = getRowIsUnavailable(record);

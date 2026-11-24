@@ -1,18 +1,18 @@
-// Module ID: 14654
-// Function ID: 14655
+// Module ID: 13105
+// Function ID: 13106
 // Name: ChatInputActionButtonGiftOrThread
-// Dependencies: [19, 17, 13806, 21, 5306, 13805, 13802, 1113, 14647, 14655, 5892, 575, 5367, 2]
+// Dependencies: [19, 17, 12825, 21, 4913, 13106, 13099, 1112, 13097, 13108, 5477, 575, 4974, 2]
 
-// Module 14654 (ChatInputActionButtonGiftOrThread)
+// Module 13105 (ChatInputActionButtonGiftOrThread)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import useToken from "useToken" /* 5892 */;
-import ChatInputActionButtonDefault from "ChatInputActionButton" /* 13802 */;
-import ChatInputActionButtonTransitionItemDefault from "ChatInputActionButtonTransitionItem" /* 13805 */;
-import ChatInputConstants from "ChatInputConstants" /* 13806 */;
+import useToken from "useToken" /* 5477 */;
+import ChatInputConstants from "ChatInputConstants" /* 12825 */;
+import ChatInputActionButtonDefault from "ChatInputActionButton" /* 13099 */;
+import ChatInputActionButtonTransitionItemDefault from "ChatInputActionButtonTransitionItem" /* 13106 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 function renderChatInputActionButtonGiftAndThread(arg0, styleButton, state, cleanup) {
@@ -31,20 +31,20 @@ function renderChatInputActionButtonGiftAndThread(arg0, styleButton, state, clea
   if (shouldShowThread) {
     const obj2 = {
       accessible,
-      accessibilityLabel: intl.string(onPress(1113).t["4WNcpu"]),
+      accessibilityLabel: intl.string(onPress(1112).t["4WNcpu"]),
       disabled: !canStartThreads,
-      IconComponent: onPress(14647).ThreadPlusIcon,
+      IconComponent: onPress(13097).ThreadPlusIcon,
       onPress(arg0) {
           return onPress(arg0, ChatInputActionType.THREAD);
         },
       style: styleButton
     };
     const tmp2Result = ChatInputActionButtonDefault;
-    intl = onPress(1113).intl;
+    intl = onPress(1112).intl;
     tmpResult = tmp(tmp2Result, obj2);
   } else {
     const obj3 = { accessible, channel, onPress, style: styleButtonWrapper, styleButton };
-    tmpResult = tmp(tmp2(14655), obj3);
+    tmpResult = tmp(tmp2(13108), obj3);
   }
   return <tmp4 key={arg0} cleanup={arg3} state={arg2}>{tmpResult}</tmp4>;
 }

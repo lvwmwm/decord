@@ -1,19 +1,19 @@
-// Module ID: 12842
-// Function ID: 12843
+// Module ID: 10772
+// Function ID: 10773
 // Name: AnimatedEffectEmoji
-// Dependencies: [19, 17, 5307, 21, 1089, 5306, 575, 6010, 1187, 504, 1655, 5538, 12812, 2]
+// Dependencies: [19, 17, 4914, 21, 1088, 4913, 575, 5600, 1186, 504, 1653, 5123, 10742, 2]
 // Exports: default
 
-// Module 12842 (AnimatedEffectEmoji)
+// Module 10772 (AnimatedEffectEmoji)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import DurationsDefault from "Durations" /* 1089 */;
-import native from "native" /* 1187 */;
-import FastImageDefault from "FastImage" /* 6010 */;
+import DurationsDefault from "Durations" /* 1088 */;
+import native from "native" /* 1186 */;
+import FastImageDefault from "FastImage" /* 5600 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5307 */;
-import createStyles from "createStyles" /* 5306 */;
+import AccessibilityStore from "AccessibilityStore" /* 4914 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let rect;
@@ -92,8 +92,8 @@ export default function AnimatedEffectEmoji(userId) {
       }
     };
   }, items1);
-  const tmp6 = onComplete(1655);
-  const items2 = [closure_11, onComplete(1655).withSequence, onComplete(5538).withTiming, -120, onComplete(1655).withDelay, stateFromStores, onComplete(1187).STANDARD_EASING];
+  const tmp6 = onComplete(1653);
+  const items2 = [closure_11, onComplete(1653).withSequence, onComplete(5123).withTiming, -120, onComplete(1653).withDelay, stateFromStores, onComplete(1186).STANDARD_EASING];
   let c0;
   let c1;
   let c2;
@@ -129,9 +129,9 @@ export default function AnimatedEffectEmoji(userId) {
   let tmp16Result = null;
   if (null != emoji) {
     const items4 = [tmp.voiceChannelEffectEmojiContainer, , , ];
-    View = sentAt(1655).View;
-    let tmp2Result = tmp2(1187);
-    items4[1] = tmp2Result.generateBoxShadowStyle(tmp2(1187).EIGHT_DP_ELEVATION_SHADOW_PARAMS);
+    View = sentAt(1653).View;
+    let tmp2Result = tmp2(1186);
+    items4[1] = tmp2Result.generateBoxShadowStyle(tmp2(1186).EIGHT_DP_ELEVATION_SHADOW_PARAMS);
     items4[2] = tmp14;
     if (hasNotch) {
       hasNotch = tmp.voiceChannelEffectEmojiContainerTileNotch;
@@ -140,7 +140,7 @@ export default function AnimatedEffectEmoji(userId) {
     items4[3] = hasNotch;
     const obj3 = { style: tmp.voiceChannelEffectEmoji, children: null };
     ({ url: tmp2Result2.getEffectUrl(emoji), surrogates: emoji.name });
-    tmp2Result2 = tmp2(12812);
+    tmp2Result2 = tmp2(10742);
     tmp16Result = tmp16(View, obj2);
   }
   return tmp16Result;

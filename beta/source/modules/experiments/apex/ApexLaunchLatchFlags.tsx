@@ -1,11 +1,11 @@
-// Module ID: 1252
-// Function ID: 1253
+// Module ID: 1251
+// Function ID: 1252
 // Name: ApexLaunchLatchFlags
-// Dependencies: [1253, 2]
+// Dependencies: [1252, 2]
 // Exports: resolveLaunchLatchFlags
 
-// Module 1252 (ApexLaunchLatchFlags)
-import ApexUnitUtils from "ApexUnitUtils" /* 1253 */;
+// Module 1251 (ApexLaunchLatchFlags)
+import ApexUnitUtils from "ApexUnitUtils" /* 1252 */;
 import size from "module_2" /* 2 */;
 
 let obj3;

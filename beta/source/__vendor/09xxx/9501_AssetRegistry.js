@@ -1,10 +1,10 @@
 // Module ID: 9501
 // Function ID: 9502
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 9501 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images", width: 132, height: 132, scales: [1], hash: "e32a360d37f718d45e03d9f2fe827035", name: "avatar_placeholder", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/illustrations", width: 189, height: 163, scales: [2, 3], hash: "b5d60c4f52c2e5640ed435ba1b0b3fc3", name: "img_tier_2_clouds", type: "png" });

@@ -1,10 +1,10 @@
 // Module ID: 16636
 // Function ID: 16637
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 16636 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/intl/messages", scales: [1], hash: "52d7feaf309857edc6fd8640f057b56e", name: "llm-pilot.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_role_subscriptions/native/images", width: 99, height: 70, scales: [2, 3], hash: "67e9bc8b12cbc0fed84dfc34cd178623", name: "cactus", type: "png" });

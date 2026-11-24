@@ -1,12 +1,12 @@
-// Module ID: 12515
-// Function ID: 12516
+// Module ID: 12034
+// Function ID: 12035
 // Name: useDownloadedFile
-// Dependencies: [5, 32, 19, 1113, 6752, 6338, 2]
+// Dependencies: [5, 32, 19, 1112, 6355, 5940, 2]
 // Exports: getBytesLeftNotice, useDownloadedFile
 
-// Module 12515 (useDownloadedFile)
-import intl2 from "intl" /* 1113 */;
-import FileSizeUtils from "FileSizeUtils" /* 6752 */;
+// Module 12034 (useDownloadedFile)
+import intl2 from "intl" /* 1112 */;
+import FileSizeUtils from "FileSizeUtils" /* 6355 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

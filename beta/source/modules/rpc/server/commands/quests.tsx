@@ -1,19 +1,19 @@
-// Module ID: 16979
-// Function ID: 16980
+// Module ID: 15734
+// Function ID: 15735
 // Name: quests
-// Dependencies: [8808, 1072, 16924, 7307, 12871, 8831, 7303, 1256, 572, 15254, 2]
+// Dependencies: [8404, 1071, 15678, 6913, 10804, 8427, 6909, 1255, 572, 10618, 2]
 
-// Module 16979 (quests)
+// Module 15734 (quests)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import RPCErrorDefault from "RPCError" /* 7303 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 7307 */;
-import QuestTaskUtils from "QuestTaskUtils" /* 8831 */;
-import RPCHelpers from "RPCHelpers" /* 12871 */;
-import QuestMatchingUtils from "QuestMatchingUtils" /* 15254 */;
-import QuestStore from "QuestStore" /* 8808 */;
-import Constants from "Constants" /* 1072 */;
-import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 16924 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import RPCErrorDefault from "RPCError" /* 6909 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 6913 */;
+import QuestTaskUtils from "QuestTaskUtils" /* 8427 */;
+import QuestMatchingUtils from "QuestMatchingUtils" /* 10618 */;
+import RPCHelpers from "RPCHelpers" /* 10804 */;
+import QuestStore from "QuestStore" /* 8404 */;
+import Constants from "Constants" /* 1071 */;
+import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 15678 */;
 import size from "module_2" /* 2 */;
 
 let RPCCommands;

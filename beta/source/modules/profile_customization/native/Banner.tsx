@@ -1,17 +1,17 @@
-// Module ID: 8620
-// Function ID: 8621
+// Module ID: 8210
+// Function ID: 8211
 // Name: Banner
-// Dependencies: [19, 17, 1072, 21, 5306, 1090, 6010, 2]
+// Dependencies: [19, 17, 1071, 21, 4913, 1089, 5600, 2]
 // Exports: default
 
-// Module 8620 (Banner)
+// Module 8210 (Banner)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1072 */;
-import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
-import FastImageDefault from "FastImage" /* 6010 */;
+import Constants from "Constants" /* 1071 */;
+import utils_ColorUtils from "utils/ColorUtils" /* 1089 */;
+import FastImageDefault from "FastImage" /* 5600 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;

@@ -1,35 +1,35 @@
-// Module ID: 15375
-// Function ID: 15376
+// Module ID: 14106
+// Function ID: 14107
 // Name: UserSettingsPremiumGuildSubscriptions
-// Dependencies: [19, 17, 1388, 2175, 9236, 2178, 2179, 1072, 1390, 21, 5306, 6951, 5367, 9238, 7272, 6757, 7809, 7813, 5919, 1113, 2188, 15376, 1401, 15390, 15392, 15394, 15398, 9987, 8529, 9317, 15330, 504, 1502, 9978, 1627, 2]
+// Dependencies: [19, 17, 1386, 2174, 8744, 2177, 2178, 1071, 1388, 21, 4913, 6555, 4974, 8746, 6877, 6360, 7411, 7415, 5504, 1112, 2187, 14107, 1399, 14121, 14123, 14125, 14129, 9376, 8119, 8866, 14061, 504, 1500, 9367, 1625, 2]
 // Exports: default
 
-// Module 15375 (UserSettingsPremiumGuildSubscriptions)
-import intl3 from "intl" /* 1113 */;
-import PremiumConstants from "PremiumConstants" /* 1390 */;
-import user from "user" /* 1401 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
-import native from "native" /* 5367 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import actions_BillingActionCreators from "actions/BillingActionCreators" /* 6757 */;
-import LegacyTokens from "LegacyTokens" /* 6951 */;
-import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 7272 */;
-import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7809 */;
-import UserSettingsUtils from "UserSettingsUtils" /* 7813 */;
-import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 9238 */;
-import BoostingUnavailablePillDefault from "BoostingUnavailablePill" /* 15390 */;
-import BoostingCountDownPillDefault from "BoostingCountDownPill" /* 15392 */;
-import GuildBoostingUpsellDefault from "GuildBoostingUpsell" /* 15398 */;
+// Module 14106 (UserSettingsPremiumGuildSubscriptions)
+import intl3 from "intl" /* 1112 */;
+import PremiumConstants from "PremiumConstants" /* 1388 */;
+import user from "user" /* 1399 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2187 */;
+import native from "native" /* 4974 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import actions_BillingActionCreators from "actions/BillingActionCreators" /* 6360 */;
+import LegacyTokens from "LegacyTokens" /* 6555 */;
+import SubscriptionPlanActionCreators from "SubscriptionPlanActionCreators" /* 6877 */;
+import UserSettingsModalActionCreatorsDefault from "UserSettingsModalActionCreators" /* 7411 */;
+import UserSettingsUtils from "UserSettingsUtils" /* 7415 */;
+import actions_BoostingActionCreators from "actions/BoostingActionCreators" /* 8746 */;
+import BoostingUnavailablePillDefault from "BoostingUnavailablePill" /* 14121 */;
+import BoostingCountDownPillDefault from "BoostingCountDownPill" /* 14123 */;
+import GuildBoostingUpsellDefault from "GuildBoostingUpsell" /* 14129 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1388 */;
-import BillingInfoStore from "BillingInfoStore" /* 2175 */;
-import GuildBoostSlotStore from "GuildBoostSlotStore" /* 9236 */;
-import SubscriptionPlanStore from "SubscriptionPlanStore" /* 2178 */;
-import SubscriptionStore from "SubscriptionStore" /* 2179 */;
-import Constants from "Constants" /* 1072 */;
+import UserStore from "UserStore" /* 1386 */;
+import BillingInfoStore from "BillingInfoStore" /* 2174 */;
+import GuildBoostSlotStore from "GuildBoostSlotStore" /* 8744 */;
+import SubscriptionPlanStore from "SubscriptionPlanStore" /* 2177 */;
+import SubscriptionStore from "SubscriptionStore" /* 2178 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let _require, dependencyMap, navigation;
@@ -42,7 +42,7 @@ let hasOwnProperty;
 let obj2;
 let tmp2;
 let unpackModuleId;
-const TopPattern = tmp2(15394);
+const TopPattern = tmp2(14125);
 ({ View: closure_4, ScrollView: hasOwnProperty } = react_native);
 ({ HelpdeskArticles: unpackModuleId, UserSettingsSections: closure_12 } = Constants);
 const FractionalPremiumStates = PremiumConstants.FractionalPremiumStates;
@@ -126,11 +126,11 @@ class UserSettingsPremiumGuildSubscriptions extends PureComponent {
       const tmp9 = importDefault;
       if (tmp6Result) {
         const obj6 = { style: tmp.externalManagement, variant: "body-sm/medium", color: "text-default", children: externalManagementMessage };
-        tmp6Result = tmp6(tmp7(5919).Text, obj6);
+        tmp6Result = tmp6(tmp7(5504).Text, obj6);
       }
       const obj7 = { children: items2 };
       items1[2] = tmp6Result;
-      items2 = [closure_15(tmp5, obj), gesture(tmp9(15376), {})];
+      items2 = [closure_15(tmp5, obj), gesture(tmp9(14107), {})];
       tmp3Result = tmp3(Fragment, obj7);
     }
     return tmp3Result;
@@ -207,12 +207,12 @@ export default function ConnectedUserSettingsPremiumGuildSubscriptions(route) {
   if (flag == null) {
     flag = true;
   }
-  ({ fractionalState: c2, endsAt } = flag(8529)({ forceFetch: true }));
-  flag(8529)({ forceFetch: true });
+  ({ fractionalState: c2, endsAt } = flag(8119)({ forceFetch: true }));
+  flag(8119)({ forceFetch: true });
   const tmpResult = require("ReverseTrialUtils");
   isInReverseTrial = tmpResult.useIsInReverseTrial();
-  const tmp4 = flag(15330);
-  fpDurationText = tmp4(endsAt, tmp(15330).CountDownMessageTypes.LONG_TIME_LEFT);
+  const tmp4 = flag(14061);
+  fpDurationText = tmp4(endsAt, tmp(14061).CountDownMessageTypes.LONG_TIME_LEFT);
   const items = [GuildBoostSlotStore, BillingInfoStore, SubscriptionPlanStore, UserStore];
   const tmpResult6 = require("get initialized");
   const stateFromStoresObject = tmpResult6.useStateFromStoresObject(items, () => {

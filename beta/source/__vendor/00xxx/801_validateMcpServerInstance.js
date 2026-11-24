@@ -5,7 +5,7 @@
 // Exports: isJsonRpcNotification, isJsonRpcRequest, isJsonRpcResponse, isValidContentItem, validateMcpServerInstance
 
 // Module 801 (validateMcpServerInstance)
-import _mod687 from "module_687" /* 687 */;
+import DEBUG_BUILD from "DEBUG_BUILD" /* 687 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
@@ -90,7 +90,7 @@ export function validateMcpServerInstance(obj) {
   if (!flag) {
     flag = false;
     const tmp = require;
-    if (_mod687.DEBUG_BUILD) {
+    if (DEBUG_BUILD.DEBUG_BUILD) {
       const debug = tmp(688).debug;
       debug.warn("Did not patch MCP server. Interface is incompatible.");
       flag = false;

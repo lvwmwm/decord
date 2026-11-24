@@ -1,18 +1,18 @@
-// Module ID: 10447
-// Function ID: 10448
+// Module ID: 9576
+// Function ID: 9577
 // Name: CollectiblesShopCardVariants
-// Dependencies: [19, 17, 21, 5306, 575, 9518, 10448, 7897, 10449, 10417, 8496, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 9038, 9577, 7499, 9578, 9546, 8086, 2]
 
-// Module 10447 (CollectiblesShopCardVariants)
+// Module 9576 (CollectiblesShopCardVariants)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import CheckmarkSmallIcon2 from "CheckmarkSmallIcon" /* 7897 */;
-import useProductPurchaseState from "useProductPurchaseState" /* 9518 */;
-import useIsVariantColorLightDefault from "useIsVariantColorLight" /* 10448 */;
-import PlusSmallIcon2 from "PlusSmallIcon" /* 10449 */;
+import CheckmarkSmallIcon2 from "CheckmarkSmallIcon" /* 7499 */;
+import useProductPurchaseState from "useProductPurchaseState" /* 9038 */;
+import useIsVariantColorLightDefault from "useIsVariantColorLight" /* 9577 */;
+import PlusSmallIcon2 from "PlusSmallIcon" /* 9578 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;
@@ -87,9 +87,9 @@ const memoResult = react.memo(function CardProductVariants(product) {
   product = product.product;
   let defaultVariantIndex;
   const tmp = closure_6();
-  let obj = defaultVariantIndex(10417);
+  let obj = defaultVariantIndex(9546);
   defaultVariantIndex = obj.useDefaultVariantIndex(product);
-  const obj2 = defaultVariantIndex(8496);
+  const obj2 = defaultVariantIndex(8086);
   if (obj2.getIsVariantProduct(product)) {
     let num3 = 3;
     if (product.variants.length <= 4) {

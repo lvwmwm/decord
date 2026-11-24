@@ -1,21 +1,21 @@
-// Module ID: 19091
-// Function ID: 19092
+// Module ID: 17887
+// Function ID: 17888
 // Name: HomeDrawerDirectMessagesRow
-// Dependencies: [19, 17, 6058, 5248, 1072, 21, 5306, 575, 504, 5919, 1113, 19088, 5488, 5485, 2]
+// Dependencies: [19, 17, 5651, 4855, 1071, 21, 4913, 575, 504, 5504, 1112, 17884, 5095, 5092, 2]
 // Exports: default
 
-// Module 19091 (HomeDrawerDirectMessagesRow)
+// Module 17887 (HomeDrawerDirectMessagesRow)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import intl3 from "intl" /* 1113 */;
-import HomeDrawerExperiment from "HomeDrawerExperiment" /* 5488 */;
+import Constants from "Constants" /* 1071 */;
+import intl3 from "intl" /* 1112 */;
+import HomeDrawerExperiment from "HomeDrawerExperiment" /* 5095 */;
 import react from "react" /* 19 */;
-import PresenceStore from "PresenceStore" /* 6058 */;
-import RelationshipStore from "RelationshipStore" /* 5248 */;
+import PresenceStore from "PresenceStore" /* 5651 */;
+import RelationshipStore from "RelationshipStore" /* 4855 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let friendIDs;
@@ -44,17 +44,17 @@ function HomeDrawerDMsRow() {
     const obj3 = { style: tmp.onlineDot };
     items1 = [metroImportDefault(View, obj3), ];
     const obj4 = { variant: "body-xs/medium", color: "text-muted", lineClamp: 1, children: intl.format(intl3.t.N5UIKr, obj5) };
-    const Text = tmp2(5919).Text;
-    intl = tmp2(1113).intl;
+    const Text = tmp2(5504).Text;
+    intl = tmp2(1112).intl;
     obj5 = { numFriends: stateFromStores };
     items1[1] = metroImportDefault(Text, obj4);
     tmp5 = metroImportAll(View, obj2);
   }
   const obj6 = { title: metroImportDefault(Text2, obj7), subtitle: tmp5 };
-  const HomeDrawerSharedItem = tmp2(19088).HomeDrawerSharedItem;
+  const HomeDrawerSharedItem = tmp2(17884).HomeDrawerSharedItem;
   obj7 = { variant: "body-md/medium", color: "text-default", lineClamp: 1, children: intl2.string(intl3.t.YUU0RF) };
-  Text2 = tmp2(5919).Text;
-  intl2 = tmp2(1113).intl;
+  Text2 = tmp2(5504).Text;
+  intl2 = tmp2(1112).intl;
   return metroImportDefault(HomeDrawerSharedItem, obj6);
 }
 const View = react_native.View;

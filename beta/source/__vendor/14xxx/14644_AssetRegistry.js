@@ -1,10 +1,10 @@
 // Module ID: 14644
 // Function ID: 14645
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 14644 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/emoji", width: 24, height: 24, scales: [2, 3], hash: "79fe2790d902aba7709041b8b44a4ced", name: "ic_emoji_recent_color_24px", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Illustration/native/redesign/generated/images", width: 254, height: 154, scales: [2, 3], hash: "82ae7189682c36bee3dc3a129ab02a11", name: "img_app_crash_darker", type: "png" });

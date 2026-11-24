@@ -1,12 +1,12 @@
-// Module ID: 9520
-// Function ID: 9521
+// Module ID: 9040
+// Function ID: 9041
 // Name: CollectiblesWishlistUtils
-// Dependencies: [2114, 1113, 8497, 2]
+// Dependencies: [2112, 1112, 8087, 2]
 // Exports: getProductNameAndTypeFromSku, isWishlistableCollectiblesProduct
 
-// Module 9520 (CollectiblesWishlistUtils)
-import CollectiblesItemType from "CollectiblesItemType" /* 2114 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 8497 */;
+// Module 9040 (CollectiblesWishlistUtils)
+import CollectiblesItemType from "CollectiblesItemType" /* 2112 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 8087 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/wishlists/CollectiblesWishlistUtils.tsx");
@@ -24,19 +24,19 @@ export function getProductNameAndTypeFromSku(sku) {
     }
   }
   if (CollectiblesItemType.CollectiblesItemType.AVATAR_DECORATION === type) {
-    const intl2 = tmp2(1113).intl;
+    const intl2 = tmp2(1112).intl;
     const obj2 = { product: name };
-    formatToPlainStringResult = intl2.formatToPlainString(tmp2(1113).t.lvBzLi, obj2);
+    formatToPlainStringResult = intl2.formatToPlainString(tmp2(1112).t.lvBzLi, obj2);
   } else if (CollectiblesItemType.CollectiblesItemType.PROFILE_EFFECT === type) {
-    const intl = tmp2(1113).intl;
+    const intl = tmp2(1112).intl;
     const obj = { product: name };
-    formatToPlainStringResult = intl.formatToPlainString(tmp2(1113).t.eR7moP, obj);
+    formatToPlainStringResult = intl.formatToPlainString(tmp2(1112).t.eR7moP, obj);
   } else {
     formatToPlainStringResult = name;
     if (CollectiblesItemType.CollectiblesItemType.NAMEPLATE === type) {
-      const intl3 = tmp2(1113).intl;
+      const intl3 = tmp2(1112).intl;
       const obj3 = { product: name };
-      formatToPlainStringResult = intl3.formatToPlainString(tmp2(1113).t.YFOwHj, obj3);
+      formatToPlainStringResult = intl3.formatToPlainString(tmp2(1112).t.YFOwHj, obj3);
     }
   }
   return formatToPlainStringResult;

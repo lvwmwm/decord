@@ -5,22 +5,21 @@
 // Exports: createTransport
 
 // Module 742 (DEFAULT_TRANSPORT_BUFFER_SIZE)
-import _mod687 from "module_687" /* 687 */;
+import DEBUG_BUILD2 from "DEBUG_BUILD" /* 687 */;
 import _mod728 from "module_728" /* 728 */;
 import SENTRY_BUFFER_FULL_ERROR from "SENTRY_BUFFER_FULL_ERROR" /* 741 */;
 import DEFAULT_RETRY_AFTER from "DEFAULT_RETRY_AFTER" /* 743 */;
 
 const require = globalThis.__r;
-let _require, closure_1, dependencyMap;
+let _require, dependencyMap;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
 export const DEFAULT_TRANSPORT_BUFFER_SIZE = 64;
-export function createTransport(bufferSize, arg1) {
+export function createTransport(bufferSize, makeRequest, promiseBuffer) {
   _require = bufferSize;
-  dependencyMap = arg1;
-  let promiseBuffer = arg2;
-  if (arg2 === undefined) {
+  dependencyMap = makeRequest;
+  if (promiseBuffer === undefined) {
     let tmp2 = _require;
     let tmp3 = dependencyMap;
     const tmp4 = require("SENTRY_BUFFER_FULL_ERROR");
@@ -34,10 +33,11 @@ export function createTransport(bufferSize, arg1) {
   let closure_3 = {};
   let obj = {
     send(arg0) {
+      let closure_1;
       const items = [];
       let tmp = bufferSize;
-      const tmp2 = closure_1;
-      let obj = bufferSize(closure_1[1]);
+      const tmp2 = makeRequest;
+      let obj = bufferSize(makeRequest[1]);
       obj.forEachEnvelopeItem(arg0, (arg0, arg1) => {
         const obj = _mod728;
         const result = obj.envelopeItemTypeToDataCategory(arg1);
@@ -53,7 +53,7 @@ export function createTransport(bufferSize, arg1) {
         return Promise.resolve({});
       } else {
         let tmpResult = tmp(tmp2[1]);
-        closure_1 = tmpResult.createEnvelope(arg0[0], items);
+        makeRequest = tmpResult.createEnvelope(arg0[0], items);
         function recordEnvelopeLoss(arg0) {
 
         }
@@ -83,23 +83,23 @@ export function createTransport(bufferSize, arg1) {
             let recordDroppedEvent;
             if (typeof recordEnvelopeLoss === "function") {
               const network_error = "network_error";
-              let obj = recordDroppedEvent(closure_1[1]);
+              let obj = recordDroppedEvent(makeRequest[1]);
               const tmp3 = closure_1_1;
               if (obj.envelopeContainsItemType(closure_1_1, ["client_report"])) {
-                if (recordDroppedEvent(closure_1[3]).DEBUG_BUILD) {
+                if (recordDroppedEvent(makeRequest[3]).DEBUG_BUILD) {
                   const debug = tmp(tmp2[4]).debug;
                   const _HermesInternal = HermesInternal;
                   debug.warn("Dropping client report. Will not send outcomes (reason: " + "network_error" + ").");
                 }
               } else {
-                const tmpResult = recordDroppedEvent(closure_1[1]);
+                const tmpResult = recordDroppedEvent(makeRequest[1]);
                 tmpResult.forEachEnvelopeItem(tmp3, (arg0, arg1) => {
                   recordDroppedEvent = recordDroppedEvent.recordDroppedEvent;
                   const obj = items(closure_3_1[1]);
                   recordDroppedEvent(network_error, obj.envelopeItemTypeToDataCategory(arg1));
                 });
               }
-              if (recordDroppedEvent(closure_1[3]).DEBUG_BUILD) {
+              if (recordDroppedEvent(makeRequest[3]).DEBUG_BUILD) {
                 const debug2 = tmp(tmp2[4]).debug;
                 debug2.error("Encountered error running transport request:", arg0);
               }
@@ -111,7 +111,7 @@ export function createTransport(bufferSize, arg1) {
         });
         return addResult.then((result) => result, (arg0) => {
           if (arg0 === SENTRY_BUFFER_FULL_ERROR.SENTRY_BUFFER_FULL_ERROR) {
-            if (_mod687.DEBUG_BUILD) {
+            if (DEBUG_BUILD2.DEBUG_BUILD) {
               const debug = tmp(688).debug;
               debug.error("Skipped sending event because buffer is full.");
             }
@@ -120,7 +120,7 @@ export function createTransport(bufferSize, arg1) {
               const tmp5 = closure_1;
               const tmpResult = _mod728;
               if (tmpResult.envelopeContainsItemType(closure_1, ["client_report"])) {
-                if (_mod687.DEBUG_BUILD) {
+                if (DEBUG_BUILD2.DEBUG_BUILD) {
                   const debug2 = tmp(688).debug;
                   const _HermesInternal = HermesInternal;
                   debug2.warn("Dropping client report. Will not send outcomes (reason: " + "queue_overflow" + ").");

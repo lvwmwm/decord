@@ -1,30 +1,31 @@
-// Module ID: 13817
-// Function ID: 13818
+// Module ID: 18625
+// Function ID: 18626
 // Name: ConjureHomeCarousel
-// Dependencies: [19, 17, 5307, 2120, 1072, 21, 575, 7438, 8101, 13818, 10467, 11224, 12684, 5306, 1655, 13820, 6010, 1414, 5919, 13821, 13964, 13972, 504, 1503, 7994, 1113, 4131, 2]
+// Dependencies: [19, 17, 4914, 2118, 1071, 21, 575, 7040, 7704, 18626, 9904, 10133, 12179, 4913, 1653, 18628, 5600, 1412, 5504, 16308, 18629, 18637, 504, 1501, 7597, 1112, 4190, 2]
 
-// Module 13817 (ConjureHomeCarousel)
+// Module 18625 (ConjureHomeCarousel)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import FastImageDefault from "FastImage" /* 6010 */;
-import GameControllerIcon from "GameControllerIcon" /* 7438 */;
-import AppsIcon from "AppsIcon" /* 8101 */;
-import ScreenIcon from "ScreenIcon" /* 10467 */;
-import ShieldIcon from "ShieldIcon" /* 11224 */;
-import RobotIcon from "RobotIcon" /* 12684 */;
-import WidgetsIcon from "WidgetsIcon" /* 13818 */;
-import conjureHomeCarouselFan from "conjureHomeCarouselFan" /* 13820 */;
-import conjureHomeInspirationArtDefault from "conjureHomeInspirationArt" /* 13964 */;
+import Constants from "Constants" /* 1071 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import FastImageDefault from "FastImage" /* 5600 */;
+import GameControllerIcon from "GameControllerIcon" /* 7040 */;
+import AppsIcon from "AppsIcon" /* 7704 */;
+import ScreenIcon from "ScreenIcon" /* 9904 */;
+import ShieldIcon from "ShieldIcon" /* 10133 */;
+import RobotIcon from "RobotIcon" /* 12179 */;
+import LocalSvgDefault from "LocalSvg" /* 16308 */;
+import WidgetsIcon from "WidgetsIcon" /* 18626 */;
+import conjureHomeCarouselFan from "conjureHomeCarouselFan" /* 18628 */;
+import conjureHomeInspirationArtDefault from "conjureHomeInspirationArt" /* 18629 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5307 */;
-import AppStateStore from "AppStateStore" /* 2120 */;
+import AccessibilityStore from "AccessibilityStore" /* 4914 */;
+import AppStateStore from "AppStateStore" /* 2118 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
-const _modDef1655 = _mod1655;
+const _modDef1653 = _mod1653;
 let obj1;
 
 let c9;
@@ -39,10 +40,9 @@ let rect;
 let size;
 let size1;
 let tmp3;
-const AvatarUtils = tmp3(1414);
-const Text_Text = tmp3(5919);
-const SvgCss = tmp3(13821);
-const conjureHomeInspirationEntries = tmp3(13972);
+const AvatarUtils = tmp3(1412);
+const Text_Text = tmp3(5504);
+const conjureHomeInspirationEntries = tmp3(18637);
 let View = react_native.View;
 const AppStates = Constants.AppStates;
 ({ jsx: metroImportAll, jsxs: c9 } = Fragment);
@@ -66,7 +66,6 @@ size1 = { width: nativeDefault.space.PX_32, height: nativeDefault.space.PX_32, a
 let closure_12 = createStyles(obj2);
 let closure_13 = { code: "(function ConjureHomeCarouselTsx1(){let[wrapConjureHomeCarouselDistance,index,STEP,offset,loop,conjureHomeCarouselFan,viewportWidth,CARD_WIDTH]=this.__closure;const distance=wrapConjureHomeCarouselDistance(index*STEP,offset.get(),loop);const{angleDeg:angleDeg,dropPx:dropPx}=conjureHomeCarouselFan(distance/STEP,STEP);return{transform:[{translateX:viewportWidth/2-CARD_WIDTH/2+distance},{translateY:dropPx},{rotate:angleDeg+\"deg\"}]};})" };
 let closure_14 = react.memo(function ConjureHomeCarouselItem(inspiration) {
-  let LocalSvg;
   let count;
   let index;
   let items2;
@@ -84,6 +83,7 @@ let closure_14 = react.memo(function ConjureHomeCarouselItem(inspiration) {
   let tmp12;
   let tmp13;
   let tmp14;
+  let tmp18;
   let tmp3Result3;
   let tmp3Result4;
   let tmp6;
@@ -97,8 +97,8 @@ let closure_14 = react.memo(function ConjureHomeCarouselItem(inspiration) {
   let tmp3 = require;
   let tmp2 = obj[inspiration.category];
   let items = [closure_13, , , , , , , , ];
-  const useAnimatedStyle = _mod1655.useAnimatedStyle;
-  _mod1655;
+  const useAnimatedStyle = _mod1653.useAnimatedStyle;
+  _mod1653;
   items[1] = conjureHomeCarouselFan.wrapConjureHomeCarouselDistance;
   items[2] = index;
   items[3] = closure_10;
@@ -140,7 +140,7 @@ let closure_14 = react.memo(function ConjureHomeCarouselItem(inspiration) {
   obj = { style: items2, children: items4 };
   items2 = [tmp.item, animatedStyle];
   let obj2 = { style: tmp.promptRow, children: items3 };
-  View = _modDef1655.View;
+  View = _modDef1653.View;
   const obj3 = { style: tmp.avatar, source: makeSource(tmp3Result3.getDefaultAvatarURL(undefined, inspiration.authorAvatarSeed)) };
   const tmp16 = FastImageDefault;
   makeSource = AvatarUtils.makeSource;
@@ -152,9 +152,9 @@ let closure_14 = react.memo(function ConjureHomeCarouselItem(inspiration) {
   items3[1] = metroImportAll(View, obj4);
   items4 = [React4(View, obj2), ];
   const obj6 = { style: tmp.card, children: items5 };
-  const obj7 = { style: tmp.thumbnail, children: metroImportAll(LocalSvg, size) };
+  const obj7 = { style: tmp.thumbnail, children: metroImportAll(tmp18, size) };
   size = { asset: conjureHomeInspirationArtDefault[inspiration.id], width: "100%", height: "100%" };
-  LocalSvg = SvgCss.LocalSvg;
+  tmp18 = LocalSvgDefault;
   items5 = [metroImportAll(View, obj7), ];
   const obj8 = { style: tmp.footer, children: items6 };
   const obj9 = { style: tmp.categoryIcon, children: metroImportAll(tmp2, obj10) };

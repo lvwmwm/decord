@@ -1,25 +1,25 @@
-// Module ID: 11164
-// Function ID: 11165
+// Module ID: 10451
+// Function ID: 10452
 // Name: ThreadCreationHooks
-// Dependencies: [32, 5, 19, 9108, 502, 5155, 8725, 6362, 8792, 1112, 1072, 5311, 7287, 8786, 8147, 1113, 11165, 11, 1285, 9004, 11153, 8788, 1406, 8846, 11166, 8866, 6057, 8660, 6258, 572, 5313, 1089, 8852, 11217, 2]
+// Dependencies: [32, 5, 19, 8618, 502, 4762, 8315, 5964, 8388, 1111, 1071, 4918, 6893, 8382, 7750, 1112, 10452, 11, 1284, 8514, 10453, 8384, 1404, 8442, 10455, 8461, 5650, 8250, 5860, 572, 4920, 1088, 8447, 10510, 2]
 // Exports: createThread, useCreateForumPostCommon, useCreateThreadCommon, usePrivateThreadMode
 
-// Module 11164 (ThreadCreationHooks)
-import HTTPUtils from "HTTPUtils" /* 1285 */;
-import MessageConstants from "MessageConstants" /* 5311 */;
-import ThreadHooks from "ThreadHooks" /* 7287 */;
-import DraftStore from "DraftStore" /* 8725 */;
-import MessageParserDefault from "MessageParser" /* 8786 */;
-import SlowmodeStore from "SlowmodeStore" /* 8792 */;
+// Module 10451 (ThreadCreationHooks)
+import HTTPUtils from "HTTPUtils" /* 1284 */;
+import MessageConstants from "MessageConstants" /* 4918 */;
+import ThreadHooks from "ThreadHooks" /* 6893 */;
+import DraftStore from "DraftStore" /* 8315 */;
+import MessageParserDefault from "MessageParser" /* 8382 */;
+import SlowmodeStore from "SlowmodeStore" /* 8388 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ForumActivePostStore from "ForumActivePostStore" /* 9108 */;
+import ForumActivePostStore from "ForumActivePostStore" /* 8618 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import MessageStore from "MessageStore" /* 6362 */;
-import ThreadConstants from "ThreadConstants" /* 1112 */;
-import Constants from "Constants" /* 1072 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import MessageStore from "MessageStore" /* 5964 */;
+import ThreadConstants from "ThreadConstants" /* 1111 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 let andDeleteMostRecentUserCreatedThreadId, c3, c4, channel, getChannel;
@@ -103,7 +103,7 @@ function getDefaultThreadName(stateFromStores, parentMessageId) {
       str3 = "";
     }
     const str4 = unparse(str3, stateFromStores.id, true);
-    const tmp17Result = tmp17(8147);
+    const tmp17Result = tmp17(7750);
     const str6 = tmp17Result(str4.split("\n")[0], true);
     let str7 = str6.replace(/^[ #-]+/, "");
     const items = [];
@@ -706,7 +706,7 @@ export function createThread(arg0, name, type, auto_archive_duration, _location)
   return createThread_(arg0, [], undefined, () => {
     let obj3;
     const HTTP = HTTPUtils.HTTP;
-    const request = { url: closure_17.CHANNEL_THREADS(id.id), body: obj, rejectWithError: obj3.rejectWithMigratedError() };
+    const request = { url: authStore4.CHANNEL_THREADS(id.id), body: obj, rejectWithError: obj3.rejectWithMigratedError() };
     const post = HTTP.post;
     obj = { name, type, auto_archive_duration, location: _location };
     obj3 = HTTPUtils;

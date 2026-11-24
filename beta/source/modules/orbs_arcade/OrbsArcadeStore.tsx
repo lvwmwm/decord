@@ -1,19 +1,20 @@
-// Module ID: 17649
-// Function ID: 17650
+// Module ID: 16421
+// Function ID: 16422
 // Name: OrbsArcadeStore
-// Dependencies: [32, 10039, 502, 17650, 17651, 504, 572, 2]
+// Dependencies: [32, 9429, 502, 16422, 16423, 16424, 504, 572, 2]
 
-// Module 17649 (OrbsArcadeStore)
+// Module 16421 (OrbsArcadeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import OrbsArcadeTypes from "OrbsArcadeTypes" /* 17650 */;
+import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 16422 */;
+import OrbsArcadeTypes from "OrbsArcadeTypes" /* 16423 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import VirtualCurrencyStore from "VirtualCurrencyStore" /* 10039 */;
+import VirtualCurrencyStore from "VirtualCurrencyStore" /* 9429 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const orbs_arcade_game_state = tmp(17651);
+const orbs_arcade_game_state = tmp(16424);
 function handleBalanceChange(balance) {
   let tmp8;
   let tmp9;
@@ -44,8 +45,9 @@ let orbsArcadeGames = [];
 new Map();
 new Set();
 const set1 = new Set();
-let set = set1;
-let c9 = null;
+const set2 = new Set();
+let set = set2;
+let c10 = null;
 const map1 = new Map();
 let map = map1;
 let balance = null;
@@ -63,17 +65,32 @@ class OrbsArcadeStore extends Store {
     return found;
   }
   getGameStateForGame(id) {
-    let value = map.get(id);
-    if (value == null) {
-      value = null;
+    let tmp = null;
+    if (!set.has(id)) {
+      let value = map.get(id);
+      if (value == null) {
+        value = null;
+      }
+      tmp = value;
     }
-    return value;
+    return tmp;
+  }
+  getAllTimeHighScore(gameId) {
+    const value = map.get(gameId);
+    let num;
+    if (value != null) {
+      num = value.allTimeHighScore;
+    }
+    if (num == null) {
+      num = 0;
+    }
+    return num;
   }
   isClaimingRewards(id) {
     return set.has(id);
   }
   isLaunchingGame(id) {
-    return c9 === id;
+    return c10 === id;
   }
 }
 const prototype = OrbsArcadeStore.prototype;
@@ -103,13 +120,13 @@ Object.defineProperty(prototype, "orbsArcadeGames", {
 });
 Object.defineProperty(prototype, "ownedRewardSkuIds", {
   get: function ownedRewardSkuIds() {
-    return set;
+    return set1;
   },
   set: undefined
 });
 Object.defineProperty(prototype, "isLaunchingAnyGame", {
   get: function isLaunchingAnyGame() {
-    return null != c9;
+    return null != c10;
   },
   set: undefined
 });
@@ -136,17 +153,27 @@ let obj = {
       c2 = false;
       c4 = false;
       const _Map = Map;
-      const _Object = Object;
-      const values = Object.values(gameStateByGameId);
-      const self = this;
-      const self2 = this;
-      new Map(values.map((gameId) => {
-        const items = [gameId.gameId, gameId];
-        return items;
-      }));
-      const _Set = Set;
       const self3 = this;
       const self4 = this;
+      map = new Map();
+      const _Set2 = Set;
+      const self5 = this;
+      const self6 = this;
+      set = new Set();
+      const _Object = Object;
+      const values = Object.values(gameStateByGameId);
+      for (const item10012 of values) {
+        let tmp2 = item10012;
+        let result = map.set(item10012.gameId, item10012);
+        let obj = OrbsArcadeRewardUtils;
+        if (obj.isOrbsArcadeEnrollmentOver(item10012)) {
+          let addResult = set.add(tmp2.gameId);
+        }
+        continue;
+      }
+      const _Set = Set;
+      const self = this;
+      const self2 = this;
       new Set(ownedRewardSkuIds);
     }
   },
@@ -170,6 +197,7 @@ let obj = {
     }
     const currentRun2 = result.currentRun;
     const result1 = map.set(game_id, result);
+    set.delete(game_id);
     if (null != currentRun2) {
       let id1;
       const id = currentRun2.id;
@@ -177,8 +205,8 @@ let obj = {
         id1 = currentRun.id;
       }
       if (id !== id1) {
-        const tmp7 = null != currentRun && null == currentRun.endedAt;
-        if (tmp7) {
+        const tmp8 = null != currentRun && null == currentRun.endedAt;
+        if (tmp8) {
           map.delete(currentRun.id);
         }
         if (null == currentRun2.endedAt) {
@@ -191,15 +219,15 @@ let obj = {
                 orbCost = found.orbCost;
               }
             }
-            let tmp13 = null;
+            let tmp14 = null;
             if (null != orbCost) {
-              tmp13 = null;
+              tmp14 = null;
               if (orbCost > 0) {
-                tmp13 = orbCost;
+                tmp14 = orbCost;
               }
             }
-            if (null != tmp13) {
-              const result2 = map.set(currentRun2.id, tmp13);
+            if (null != tmp14) {
+              const result2 = map.set(currentRun2.id, tmp14);
             }
           }
         }
@@ -225,6 +253,7 @@ let obj = {
       set = new Set(set);
       set.delete(gameId);
       const result = map.set(gameId, gameState);
+      set.delete(gameId);
     }
   },
   ORBS_ARCADE_CLAIM_REWARDS_FAILURE: function handleClaimRewardsFailure(arg0) {
@@ -247,10 +276,10 @@ let obj = {
     balance = VirtualCurrencyStore.balance;
   },
   ORBS_ARCADE_LAUNCH_GAME_END: function handleLaunchGameEnd(gameId) {
-    if (c9 !== gameId.gameId) {
+    if (c10 !== gameId.gameId) {
       return false;
     } else {
-      c9 = null;
+      c10 = null;
     }
   },
   VIRTUAL_CURRENCY_BALANCE_UPDATE: handleBalanceChange,
@@ -263,7 +292,8 @@ let obj = {
     new Map();
     new Set();
     new Set();
-    c9 = null;
+    new Set();
+    c10 = null;
     new Set();
     new Map();
     balance = null;

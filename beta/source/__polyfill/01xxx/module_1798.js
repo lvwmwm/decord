@@ -1,44 +1,71 @@
 // Module ID: 1798
 // Function ID: 1799
-// Dependencies: [1668, 1799]
-// Exports: initSvgCssSupport
+// Dependencies: [1799, 1800, 1809, 1810, 1811, 1812, 1813, 1814, 1815, 1816, 1817, 1818, 1819]
 
 // Module 1798
-import _mod1668 from "module_1668" /* 1668 */;
-import _mod1799 from "module_1799" /* 1799 */;
+import SVG_CIRCLE_PROPERTIES_CONFIG from "SVG_CIRCLE_PROPERTIES_CONFIG" /* 1799 */;
+import SVG_COMMON_PROPERTIES_CONFIG from "SVG_COMMON_PROPERTIES_CONFIG" /* 1800 */;
+import SVG_ELLIPSE_PROPERTIES_CONFIG from "SVG_ELLIPSE_PROPERTIES_CONFIG" /* 1809 */;
+import SVG_IMAGE_PROPERTIES_CONFIG from "SVG_IMAGE_PROPERTIES_CONFIG" /* 1810 */;
+import SVG_LINE_PROPERTIES_CONFIG from "SVG_LINE_PROPERTIES_CONFIG" /* 1811 */;
+import SVG_LINEAR_GRADIENT_PROPERTIES_CONFIG from "SVG_LINEAR_GRADIENT_PROPERTIES_CONFIG" /* 1812 */;
+import SVG_PATH_PROPERTIES_CONFIG from "SVG_PATH_PROPERTIES_CONFIG" /* 1813 */;
+import _mod1814 from "module_1814" /* 1814 */;
+import SVG_POLYGON_PROPERTIES_CONFIG from "SVG_POLYGON_PROPERTIES_CONFIG" /* 1815 */;
+import SVG_POLYLINE_PROPERTIES_CONFIG from "SVG_POLYLINE_PROPERTIES_CONFIG" /* 1816 */;
+import SVG_RADIAL_GRADIENT_PROPERTIES_CONFIG from "SVG_RADIAL_GRADIENT_PROPERTIES_CONFIG" /* 1817 */;
+import SVG_RECT_PROPERTIES_CONFIG from "SVG_RECT_PROPERTIES_CONFIG" /* 1818 */;
+import SVG_TEXT_PROPERTIES_CONFIG from "SVG_TEXT_PROPERTIES_CONFIG" /* 1819 */;
 
-
-export function initSvgCssSupport() {
-  const obj = _mod1668;
-  const result = obj.registerComponentPropsBuilder("RNSVGCircle", _mod1799.SVG_CIRCLE_PROPERTIES_CONFIG);
-  const obj2 = _mod1668;
-  const result1 = obj2.registerComponentPropsBuilder("RNSVGEllipse", _mod1799.SVG_ELLIPSE_PROPERTIES_CONFIG);
-  const obj3 = _mod1668;
-  const result2 = obj3.registerComponentPropsBuilder("RNSVGImage", _mod1799.SVG_IMAGE_PROPERTIES_CONFIG);
-  const obj4 = _mod1668;
-  const result3 = obj4.registerComponentPropsBuilder("RNSVGLine", _mod1799.SVG_LINE_PROPERTIES_CONFIG);
-  const obj5 = _mod1668;
-  const result4 = obj5.registerComponentPropsBuilder("RNSVGLinearGradient", _mod1799.SVG_LINEAR_GRADIENT_PROPERTIES_CONFIG);
-  const obj6 = _mod1668;
-  const result5 = obj6.registerComponentPropsBuilder("RNSVGRadialGradient", _mod1799.SVG_RADIAL_GRADIENT_PROPERTIES_CONFIG);
-  const obj7 = _mod1668;
-  const result6 = obj7.registerComponentPropsBuilder("RNSVGPath", _mod1799.SVG_PATH_PROPERTIES_CONFIG);
-  const obj8 = _mod1668;
-  const result7 = obj8.registerComponentPropsBuilder("RNSVGPattern", _mod1799.SVG_PATTERN_PROPERTIES_CONFIG);
-  const registerComponentPropsBuilder = _mod1668.registerComponentPropsBuilder;
-  _mod1668;
-  const obj9 = _mod1668;
-  const compoundComponentName = obj9.getCompoundComponentName("RNSVGPath", "Polygon");
-  const result8 = registerComponentPropsBuilder(compoundComponentName, _mod1799.SVG_POLYGON_PROPERTIES_CONFIG);
-  const registerComponentPropsBuilder2 = _mod1668.registerComponentPropsBuilder;
-  _mod1668;
-  const obj10 = _mod1668;
-  const compoundComponentName1 = obj10.getCompoundComponentName("RNSVGPath", "Polyline");
-  const result9 = registerComponentPropsBuilder2(compoundComponentName1, _mod1799.SVG_POLYLINE_PROPERTIES_CONFIG);
-  const obj11 = _mod1668;
-  const result10 = obj11.registerComponentPropsBuilder("RNSVGRect", _mod1799.SVG_RECT_PROPERTIES_CONFIG);
-  const obj12 = _mod1668;
-  const result11 = obj12.registerComponentPropsBuilder("RNSVGText", _mod1799.SVG_TEXT_PROPERTIES_CONFIG);
-  const obj13 = _mod1668;
-  const result12 = obj13.registerComponentPropsBuilder(/^RNSVG/, _mod1799.SVG_COMMON_PROPERTIES_CONFIG);
+for (const key10013 in SVG_CIRCLE_PROPERTIES_CONFIG) {
+  exports[key10013] = SVG_CIRCLE_PROPERTIES_CONFIG[key10013];
+  continue;
+}
+for (const key10017 in SVG_COMMON_PROPERTIES_CONFIG) {
+  exports[key10017] = SVG_COMMON_PROPERTIES_CONFIG[key10017];
+  continue;
+}
+for (const key10021 in SVG_ELLIPSE_PROPERTIES_CONFIG) {
+  exports[key10021] = SVG_ELLIPSE_PROPERTIES_CONFIG[key10021];
+  continue;
+}
+for (const key10025 in SVG_IMAGE_PROPERTIES_CONFIG) {
+  exports[key10025] = SVG_IMAGE_PROPERTIES_CONFIG[key10025];
+  continue;
+}
+for (const key10029 in SVG_LINE_PROPERTIES_CONFIG) {
+  exports[key10029] = SVG_LINE_PROPERTIES_CONFIG[key10029];
+  continue;
+}
+for (const key10033 in SVG_LINEAR_GRADIENT_PROPERTIES_CONFIG) {
+  exports[key10033] = SVG_LINEAR_GRADIENT_PROPERTIES_CONFIG[key10033];
+  continue;
+}
+for (const key10037 in SVG_PATH_PROPERTIES_CONFIG) {
+  exports[key10037] = SVG_PATH_PROPERTIES_CONFIG[key10037];
+  continue;
+}
+for (const key10041 in _mod1814) {
+  exports[key10041] = _mod1814[key10041];
+  continue;
+}
+for (const key10045 in SVG_POLYGON_PROPERTIES_CONFIG) {
+  exports[key10045] = SVG_POLYGON_PROPERTIES_CONFIG[key10045];
+  continue;
+}
+for (const key10049 in SVG_POLYLINE_PROPERTIES_CONFIG) {
+  exports[key10049] = SVG_POLYLINE_PROPERTIES_CONFIG[key10049];
+  continue;
+}
+for (const key10053 in SVG_RADIAL_GRADIENT_PROPERTIES_CONFIG) {
+  exports[key10053] = SVG_RADIAL_GRADIENT_PROPERTIES_CONFIG[key10053];
+  continue;
+}
+for (const key10057 in SVG_RECT_PROPERTIES_CONFIG) {
+  exports[key10057] = SVG_RECT_PROPERTIES_CONFIG[key10057];
+  continue;
+}
+for (const key10061 in SVG_TEXT_PROPERTIES_CONFIG) {
+  exports[key10061] = SVG_TEXT_PROPERTIES_CONFIG[key10061];
+  continue;
 }

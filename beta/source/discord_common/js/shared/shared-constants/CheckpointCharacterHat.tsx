@@ -1,9 +1,9 @@
-// Module ID: 6646
-// Function ID: 6647
+// Module ID: 6248
+// Function ID: 6249
 // Name: CheckpointCharacterHat
 // Dependencies: [2]
 
-// Module 6646 (CheckpointCharacterHat)
+// Module 6248 (CheckpointCharacterHat)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/CheckpointCharacterHat.tsx");

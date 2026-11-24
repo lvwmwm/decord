@@ -1,33 +1,33 @@
-// Module ID: 19891
-// Function ID: 19892
+// Module ID: 19141
+// Function ID: 19142
 // Name: LaunchPadSearchResultUser
-// Dependencies: [19, 5307, 2189, 5155, 6058, 14577, 6948, 1072, 6949, 21, 5306, 575, 19493, 8134, 5934, 504, 11, 7034, 19880, 7428, 19494, 19881, 1187, 8625, 19496, 5362, 11045, 5984, 19882, 19121, 17942, 2]
+// Dependencies: [19, 4914, 2188, 4762, 5651, 12829, 6552, 1071, 6553, 21, 4913, 575, 18754, 7737, 5519, 504, 11, 6638, 19130, 7030, 18755, 19131, 1186, 8215, 18757, 4969, 11125, 5574, 19132, 17917, 16721, 2]
 
-// Module 19891 (LaunchPadSearchResultUser)
+// Module 19141 (LaunchPadSearchResultUser)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import UserUtilsDefault from "UserUtils" /* 5362 */;
-import ReadStateConstants from "ReadStateConstants" /* 6949 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 8134 */;
-import isStreamingDefault from "isStreaming" /* 8625 */;
-import useChannelUnreadBadgeState from "useChannelUnreadBadgeState" /* 19121 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 19493 */;
-import renderChannelWrapperDefault from "renderChannelWrapper" /* 19494 */;
-import renderChannelContentDefault from "renderChannelContent" /* 19496 */;
-import renderChannelPressableWrapperDefault from "renderChannelPressableWrapper" /* 19880 */;
-import UnreadBadgeDefault from "UnreadBadge" /* 19881 */;
-import renderChannelBadgeDefault from "renderChannelBadge" /* 19882 */;
+import Constants from "Constants" /* 1071 */;
+import UserUtilsDefault from "UserUtils" /* 4969 */;
+import ReadStateConstants from "ReadStateConstants" /* 6553 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7737 */;
+import isStreamingDefault from "isStreaming" /* 8215 */;
+import useChannelUnreadBadgeState from "useChannelUnreadBadgeState" /* 17917 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 18754 */;
+import renderChannelWrapperDefault from "renderChannelWrapper" /* 18755 */;
+import renderChannelContentDefault from "renderChannelContent" /* 18757 */;
+import renderChannelPressableWrapperDefault from "renderChannelPressableWrapper" /* 19130 */;
+import UnreadBadgeDefault from "UnreadBadge" /* 19131 */;
+import renderChannelBadgeDefault from "renderChannelBadge" /* 19132 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5307 */;
-import LocaleStore from "LocaleStore" /* 2189 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import PresenceStore from "PresenceStore" /* 6058 */;
-import TypingStore from "TypingStore" /* 14577 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6948 */;
+import AccessibilityStore from "AccessibilityStore" /* 4914 */;
+import LocaleStore from "LocaleStore" /* 2188 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import PresenceStore from "PresenceStore" /* 5651 */;
+import TypingStore from "TypingStore" /* 12829 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6552 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let closure_12;
@@ -79,7 +79,7 @@ function UserResult(user) {
     const obj = ChannelActionCreatorsDefault;
     obj.openPrivateChannel(obj2);
   }, items);
-  let obj = user(5934);
+  let obj = user(5519);
   const fontScale = obj.useFontScale();
   let obj2 = user(504);
   const items1 = [LocaleStore];
@@ -102,7 +102,7 @@ function UserResult(user) {
   }
   let relativeTimestamp = null;
   if (null != extractTimestampResult) {
-    const tmp6Result = user(7034);
+    const tmp6Result = user(6638);
     relativeTimestamp = tmp6Result.getRelativeTimestamp(extractTimestampResult);
   }
   let str = "text-muted";
@@ -115,13 +115,13 @@ function UserResult(user) {
   const obj5 = { onPress: callback, underlayColor: tmp.pressableUnderlayColor.backgroundColor, style: items4, children: tmp2Result6(tmp16(tmp17, obj10), { fontScale }) };
   items4 = [tmp.pressable, { borderRadius: tmp4.container.borderRadius }];
   const tmp2Result5 = renderChannelPressableWrapperDefault;
-  const PressableHighlight = tmp6(7428).PressableHighlight;
+  const PressableHighlight = tmp6(7030).PressableHighlight;
   const items5 = [, , ];
   const obj6 = { unread, resolvedUnreadSetting: UnreadSetting.ALL_MESSAGES };
   tmp2Result6 = renderChannelWrapperDefault;
   items5[0] = closure_12(UnreadBadgeDefault, obj6);
   const obj7 = { user, guildId: "Button", isMobileOnline, isVROnline, status: tmp19, streaming: isStreamingDefault(activities), style: tmp4.icon.margin, size: tmp4.icon.avatarSize, animate: tmp21, typing: flag2, autoStatusCutout: null };
-  const Avatar = tmp6(1187).Avatar;
+  const Avatar = tmp6(1186).Avatar;
   tmp19 = null;
   tmp16 = closure_14;
   tmp17 = closure_13;
@@ -146,8 +146,8 @@ function UserResult(user) {
   tmp14Result = undefined;
   if (null != lastMessage) {
     if (null != channel) {
-      const obj9 = { channel, message: lastMessage, color: str, muted: flag, layout: user(5984).ChannelListLayoutTypes.COMPACT };
-      const ChannelRowPreview = tmp6(11045).ChannelRowPreview;
+      const obj9 = { channel, message: lastMessage, color: str, muted: flag, layout: user(5574).ChannelListLayoutTypes.COMPACT };
+      const ChannelRowPreview = tmp6(11125).ChannelRowPreview;
       tmp14Result = tmp14(ChannelRowPreview, obj9);
     }
   }
@@ -172,7 +172,7 @@ function UserResultWithChannel(arg0) {
   const obj3 = get_initialized;
   const stateFromStores1 = obj3.useStateFromStores(items1, () => TypingStore.isTyping(channel.id, require.id));
   const obj4 = { channel, lastMessage: tmp4, unread, mentionCount, muted: stateFromStores, isTyping: stateFromStores1 };
-  tmp4 = channel(17942)(channel, { unread });
+  tmp4 = channel(16721)(channel, { unread });
   const merged = Object.assign(arg0);
   return closure_12(UserResult, obj4);
 }

@@ -1,12 +1,12 @@
-// Module ID: 5904
-// Function ID: 5905
+// Module ID: 5489
+// Function ID: 5490
 // Name: useCustomKeyboardHeight
-// Dependencies: [1499, 1500, 2]
+// Dependencies: [1497, 1498, 2]
 // Exports: default, getCustomKeyboardHeight
 
-// Module 5904 (useCustomKeyboardHeight)
-import AppEntryKeyContext from "AppEntryKeyContext" /* 1499 */;
-import KeyboardUIStoreDefault from "KeyboardUIStore" /* 1500 */;
+// Module 5489 (useCustomKeyboardHeight)
+import AppEntryKeyContext from "AppEntryKeyContext" /* 1497 */;
+import KeyboardUIStoreDefault from "KeyboardUIStore" /* 1498 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/keyboard/native/useCustomKeyboardHeight.tsx");

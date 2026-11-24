@@ -1,24 +1,24 @@
-// Module ID: 18623
-// Function ID: 18624
+// Module ID: 17419
+// Function ID: 17420
 // Name: SystemNotifPermissionLayout
-// Dependencies: [5, 32, 19, 14827, 18624, 1072, 6892, 14828, 21, 3029, 5306, 575, 14837, 18110, 504, 1380, 1256, 14829, 12925, 6327, 7445, 10994, 5919, 1113, 5926, 18627, 8199, 14830, 18628, 2]
+// Dependencies: [5, 32, 19, 13279, 17420, 1071, 6496, 13280, 21, 3152, 4913, 575, 13289, 16889, 504, 1378, 1255, 13281, 10865, 5929, 7047, 10364, 5504, 1112, 5511, 17423, 7802, 13282, 17424, 2]
 // Exports: default
 
-// Module 18623 (SystemNotifPermissionLayout)
+// Module 17419 (SystemNotifPermissionLayout)
 import nativeDefault from "native" /* 575 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import _modDef3029 from "module_3029" /* 3029 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 6892 */;
-import NotificationPermissionUtil from "NotificationPermissionUtil" /* 14829 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import _modDef3152 from "module_3152" /* 3152 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 6496 */;
+import NotificationPermissionUtil from "NotificationPermissionUtil" /* 13281 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 14827 */;
-import DeclarativeSystemNotifPermissionStore from "DeclarativeSystemNotifPermissionStore" /* 18624 */;
-import Constants from "Constants" /* 1072 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 14828 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13279 */;
+import DeclarativeSystemNotifPermissionStore from "DeclarativeSystemNotifPermissionStore" /* 17420 */;
+import Constants from "Constants" /* 1071 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13280 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -37,7 +37,7 @@ let obj6;
 let size;
 let tmp;
 let unpackModuleId;
-const react_nativeDefault = tmp(12925);
+const react_nativeDefault = tmp(10865);
 function SystemNotifPermissionHeader() {
   let BellSlashIcon;
   let Button;
@@ -162,8 +162,8 @@ function SystemNotifPermissionHeader() {
 let closure_10 = NativePermissionConstants.NotificationAuthorizationStatus;
 ({ EventActionLocation: unpackModuleId, EventActionType: closure_12, NotificationNudgeAnalyticsAction: map1, NotificationNudgeSurface: closure_14 } = NotificationPermissionConstants);
 ({ jsx: closure_15, jsxs: closure_16 } = Fragment);
-let obj = { "111_realtime": _modDef3029.dF4FmA, "222_social": _modDef3029.tgF0IR, "333_server": _modDef3029.rwJXCw, "444_other": _modDef3029["8gfmjs"] };
-let obj2 = { "111_realtime": _modDef3029.HszTZQ, "222_social": _modDef3029.UbGSlJ, "333_server": _modDef3029.Jweb0a, "444_other": _modDef3029.NQH8GA };
+let obj = { "111_realtime": _modDef3152.dF4FmA, "222_social": _modDef3152.tgF0IR, "333_server": _modDef3152.rwJXCw, "444_other": _modDef3152["8gfmjs"] };
+let obj2 = { "111_realtime": _modDef3152.HszTZQ, "222_social": _modDef3152.UbGSlJ, "333_server": _modDef3152.Jweb0a, "444_other": _modDef3152.NQH8GA };
 const redux = react.createContext(undefined);
 let createStyles = createStyles_mod;
 let obj3 = { container: obj4, card: obj5, iconCircle: size, centeredText: { textAlign: "center" }, button: obj6 };

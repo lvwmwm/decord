@@ -1,14 +1,14 @@
-// Module ID: 19494
-// Function ID: 19495
+// Module ID: 18755
+// Function ID: 18756
 // Name: renderChannelWrapper
-// Dependencies: [19, 17, 21, 19493, 19495, 2]
+// Dependencies: [19, 17, 21, 18754, 18756, 2]
 // Exports: default
 
-// Module 19494 (renderChannelWrapper)
+// Module 18755 (renderChannelWrapper)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import getLayoutStylesDefault from "getLayoutStyles" /* 19493 */;
-import getScaledChannelRowHeightDefault from "getScaledChannelRowHeight" /* 19495 */;
+import getLayoutStylesDefault from "getLayoutStyles" /* 18754 */;
+import getScaledChannelRowHeightDefault from "getScaledChannelRowHeight" /* 18756 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

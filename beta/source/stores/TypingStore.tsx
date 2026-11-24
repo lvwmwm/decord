@@ -1,17 +1,17 @@
-// Module ID: 14577
-// Function ID: 14578
+// Module ID: 12829
+// Function ID: 12830
 // Name: TypingStore
-// Dependencies: [502, 5155, 8792, 1072, 1089, 7241, 1285, 572, 504, 2]
+// Dependencies: [502, 4762, 8388, 1071, 1088, 6843, 1284, 572, 504, 2]
 
-// Module 14577 (TypingStore)
+// Module 12829 (TypingStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import Constants from "Constants" /* 1072 */;
-import DurationsDefault from "Durations" /* 1089 */;
-import HTTPUtils from "HTTPUtils" /* 1285 */;
-import SlowmodeStore from "SlowmodeStore" /* 8792 */;
+import Constants from "Constants" /* 1071 */;
+import DurationsDefault from "Durations" /* 1088 */;
+import HTTPUtils from "HTTPUtils" /* 1284 */;
+import SlowmodeStore from "SlowmodeStore" /* 8388 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
 import size from "module_2" /* 2 */;
 
 let _null, closure_10, closure_11, closure_12;
@@ -176,7 +176,7 @@ let obj = {
     const id = AuthenticationStore.getId();
     if (null == id) {
       return false;
-    } else if (channelId === channelId(7241).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
+    } else if (channelId === channelId(6843).FAKE_PLACEHOLDER_PRIVATE_CHANNEL_ID) {
       return false;
     } else {
       let num3;

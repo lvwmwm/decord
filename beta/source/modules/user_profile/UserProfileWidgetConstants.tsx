@@ -1,16 +1,16 @@
-// Module ID: 7355
-// Function ID: 7356
+// Module ID: 6959
+// Function ID: 6960
 // Name: UserProfileWidgetConstants
-// Dependencies: [2165, 7353, 1113, 2]
+// Dependencies: [2164, 6957, 1112, 2]
 // Exports: widgetShowsGameDetails, widgetSupportsComment, widgetSupportsTags
 
-// Module 7355 (UserProfileWidgetConstants)
-import intl2 from "intl" /* 1113 */;
-import WidgetType from "WidgetType" /* 7353 */;
-import ApplicationStore from "ApplicationStore" /* 2165 */;
+// Module 6959 (UserProfileWidgetConstants)
+import intl2 from "intl" /* 1112 */;
+import WidgetType from "WidgetType" /* 6957 */;
+import ApplicationStore from "ApplicationStore" /* 2164 */;
 import size from "module_2" /* 2 */;
 
-const items = [WidgetType.WidgetType.PERSONAL, WidgetType.WidgetType.CLIPS_GALLERY, WidgetType.WidgetType.APPLICATION, WidgetType.WidgetType.FAVORITE_GAMES, WidgetType.WidgetType.PLAYED_GAMES, WidgetType.WidgetType.CURRENT_GAMES, WidgetType.WidgetType.WANT_TO_PLAY_GAMES];
+const items = [WidgetType.WidgetType.CLIPS_GALLERY, WidgetType.WidgetType.APPLICATION, WidgetType.WidgetType.FAVORITE_GAMES, WidgetType.WidgetType.PLAYED_GAMES, WidgetType.WidgetType.CURRENT_GAMES, WidgetType.WidgetType.WANT_TO_PLAY_GAMES];
 const items1 = [];
 const obj = {
   [WidgetType.WidgetType.FAVORITE_GAMES]: () => {
@@ -39,10 +39,6 @@ const obj = {
       str = "";
     }
     return str;
-  },
-  [WidgetType.WidgetType.PERSONAL]: () => {
-    const intl = intl2.intl;
-    return intl.string(intl2.t.AVkYMx);
   },
   [WidgetType.WidgetType.CLIPS_GALLERY]: () => {
     const intl = intl2.intl;

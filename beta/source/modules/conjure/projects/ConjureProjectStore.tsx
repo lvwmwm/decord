@@ -1,15 +1,15 @@
-// Module ID: 7017
-// Function ID: 7018
+// Module ID: 6621
+// Function ID: 6622
 // Name: ConjureProjectStore
-// Dependencies: [32, 1388, 7018, 504, 572, 2]
+// Dependencies: [32, 1386, 6622, 504, 572, 2]
 // Exports: canPublishProject, canRemixProject
 
-// Module 7017 (ConjureProjectStore)
+// Module 6621 (ConjureProjectStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 7018 */;
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6622 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import UserStore from "UserStore" /* 1388 */;
+import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 
 function isProjectOwner(project) {

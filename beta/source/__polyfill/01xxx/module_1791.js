@@ -1,142 +1,171 @@
 // Module ID: 1791
 // Function ID: 1792
-// Dependencies: [32, 41, 42, 1668, 1792, 1793, 1794, 1761, 1665, 1795]
+// Dependencies: [41, 42, 1756, 1663, 1759]
 
 // Module 1791
 import _createClassDefault from "_createClass" /* 42 */;
-import _mod1665 from "module_1665" /* 1665 */;
-import _mod1668 from "module_1668" /* 1668 */;
-import _mod1761 from "module_1761" /* 1761 */;
-import _modDef1792 from "module_1792" /* 1792 */;
-import _modDef1793 from "module_1793" /* 1793 */;
-import _modDef1794 from "module_1794" /* 1794 */;
-import _modDef1795 from "module_1795" /* 1795 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
+import _mod1663 from "module_1663" /* 1663 */;
+import _mod1756 from "module_1756" /* 1756 */;
+import _mod1759 from "module_1759" /* 1759 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 
-class CSSManager {
-  constructor(_getViewInfoResult, name) {
-    let reactViewName;
-    let shadowNodeWrapper;
-    let viewTag;
-    ({ shadowNodeWrapper, viewTag, reactViewName } = _getViewInfoResult);
-    if (reactViewName === undefined) {
-      reactViewName = "RCTView";
-    }
-    let str = name;
-    if (name === undefined) {
-      str = "";
-    }
-    _classCallCheck(this, CSSManager);
-    this.cssCallbacksManager = null;
-    this.hadTransitionLastUpdate = false;
+class CSSTransitionsManager {
+  constructor(shadowNodeWrapper, viewTag) {
+    _classCallCheck(this, CSSTransitionsManager);
+    this.prevProps = null;
+    this.propsWithTransitions = new Set();
+    this.hasTransition = false;
+    this.appliedEventMask = 0;
     this.viewTag = viewTag;
-    const obj = _mod1668;
-    const compoundComponentName = obj.getCompoundComponentName(reactViewName, str);
-    const obj2 = _mod1668;
-    this.propsBuilder = obj2.getPropsBuilder(compoundComponentName);
-    this.cssAnimationsManager = new _modDef1792(shadowNodeWrapper, viewTag, compoundComponentName);
-    new _modDef1792(shadowNodeWrapper, viewTag, compoundComponentName);
-    this.cssTransitionsManager = new _modDef1793(shadowNodeWrapper, viewTag);
-    new _modDef1793(shadowNodeWrapper, viewTag);
-    this.cssPseudoStylesManager = new _modDef1794(shadowNodeWrapper, viewTag, this.propsBuilder, compoundComponentName);
-    new _modDef1794(shadowNodeWrapper, viewTag, this.propsBuilder, compoundComponentName);
+    this.shadowNodeWrapper = shadowNodeWrapper;
+    new Set();
   }
 }
 const entry = {
   key: "update",
-  value: function update(iter) {
-    let buildResult;
-    let tmp4;
-    let tmp5;
-    let obj = arg1;
-    if (arg1 === undefined) {
-      obj = {};
+  value: function update(prevTransitionProperties, arg1) {
+    let num = arg2;
+    if (arg2 === undefined) {
+      num = 0;
+    }
+    let result = prevTransitionProperties;
+    if (result) {
+      const obj = _mod1756;
+      result = obj.normalizeCSSTransitionProperties(prevTransitionProperties);
+    }
+    let tmp4 = arg1;
+    let obj2 = arg1;
+    if (arg1 == null) {
+      obj2 = {};
     }
     const self = this;
-    const obj2 = _mod1761;
-    const tmp3 = _slicedToArray(obj2.filterCSSAndStyleProperties(iter), 4);
-    [tmp4, tmp5] = tmp3;
-    let tmp8 = null !== tmp4;
-    const cssAnimationsManager = this.cssAnimationsManager;
-    const tmp6 = tmp3[2];
-    const tmp7 = tmp3[3];
-    const result = cssAnimationsManager.hasAttachedAnimations();
-    const obj3 = _mod1761;
-    const tmp11 = _slicedToArray(obj3.splitCSSCallbacks(obj), 2);
-    this.syncCallbacks(tmp11[0], tmp11[1]);
-    if (!tmp8) {
-      if (null === tmp5) {
-        const cssTransitionsManager = self.cssTransitionsManager;
-        let tmp17 = buildResult;
-        if (tmp17) {
-          if (!tmp8) {
-            tmp8 = result;
+    const prevProps = this.prevProps;
+    if (tmp4 == null) {
+      tmp4 = null;
+    }
+    self.prevProps = tmp4;
+    if (prevProps) {
+      if (result) {
+        const result1 = self.processTransitionConfig(prevProps, obj2, result);
+        const _Object = Object;
+        if (Object.keys(result1).length) {
+          self.appliedEventMask = num;
+          const obj4 = _mod1663;
+          obj4.runCSSTransition(self.shadowNodeWrapper, result1, num);
+          self.hasTransition = true;
+        } else {
+          const tmp8 = self.hasTransition && num !== self.appliedEventMask;
+          if (tmp8) {
+            self.appliedEventMask = num;
+            const obj3 = _mod1663;
+            obj3.runCSSTransition(self.shadowNodeWrapper, {}, num);
           }
-          if (!tmp8) {
-            let IS_ANDROID = tmp(1668).IS_ANDROID;
-            if (IS_ANDROID) {
-              IS_ANDROID = null !== tmp5 || tmp15;
-            }
-            tmp8 = IS_ANDROID;
-          }
-          tmp17 = tmp8;
         }
-        if (tmp17) {
-          const tmpResult = _mod1665;
-          tmpResult.setViewStyle(self.viewTag, buildResult);
-        }
-        const cssAnimationsManager2 = self.cssAnimationsManager;
-        cssAnimationsManager2.update(tmp4, tmp13);
-        const cssPseudoStylesManager = self.cssPseudoStylesManager;
-        cssPseudoStylesManager.update(tmp6, tmp5);
-        self.hadTransitionLastUpdate = null !== tmp5;
+        return false;
       }
     }
-    const propsBuilder = self.propsBuilder;
-    buildResult = propsBuilder.build(tmp7);
+    let flag = self.hasTransition;
+    if (flag) {
+      self.detach();
+      flag = true;
+    }
+    return flag;
   }
 };
-const items = [
+let items = [
   entry,
   {
     key: "unmountCleanup",
     value: function unmountCleanup() {
-      const self = this;
-      if (this.cssCallbacksManager != null) {
-        this.cssCallbacksManager.retire();
-      }
-      const cssAnimationsManager = self.cssAnimationsManager;
-      cssAnimationsManager.unmountCleanup();
-      const cssTransitionsManager = self.cssTransitionsManager;
-      cssTransitionsManager.unmountCleanup();
-      const cssPseudoStylesManager = self.cssPseudoStylesManager;
-      cssPseudoStylesManager.unmountCleanup();
+
     }
   },
   {
-    key: "syncCallbacks",
-    value: function syncCallbacks(arg0, arg1) {
+    key: "detach",
+    value: function detach() {
+      const obj = _mod1663;
+      const result = obj.unregisterCSSTransition(this.viewTag);
+      const propsWithTransitions = this.propsWithTransitions;
+      propsWithTransitions.clear();
+      this.hasTransition = false;
+      this.appliedEventMask = 0;
+    }
+  },
+  {
+    key: "processTransitionConfig",
+    value: function processTransitionConfig(prevProps, obj, specificProperties) {
       const self = this;
-      if (!this.cssCallbacksManager) {
-        if (!arg0) {
-          if (!arg1) {
-            return { animationEventMask: 0, transitionEventMask: 0 };
-          }
+      let closure_1 = prevProps;
+      let closure_2 = obj;
+      let closure_3 = specificProperties;
+      obj = {};
+      specificProperties = specificProperties.specificProperties;
+      function isAllowedProperty(key10014) {
+        let hasItem = !specificProperties;
+        if (specificProperties) {
+          hasItem = obj.has(key10014);
         }
-        const self2 = this;
-        const self3 = this;
-        self.cssCallbacksManager = new _modDef1795(self.viewTag);
-        const tmp3 = new _modDef1795(self.viewTag);
+        return hasItem;
       }
-      const cssCallbacksManager = self.cssCallbacksManager;
-      const result = cssCallbacksManager.syncAnimationCallbacks(arg0);
-      const cssCallbacksManager2 = self.cssCallbacksManager;
-      const result1 = cssCallbacksManager2.syncTransitionCallbacks(arg1);
-      const obj = { animationEventMask: cssCallbacksManager3.getAnimationEventMask(), transitionEventMask: cssCallbacksManager4.getTransitionEventMask() };
+      function getPropertySettings(arg0) {
+
+      }
+      function triggerTransition(key10014) {
+        let items;
+        if (typeof getPropertySettings === "function") {
+          let all = closure_3.settings[key10014];
+          if (all == null) {
+            all = closure_3.settings.all;
+          }
+          obj = { value: items };
+          const merged = Object.assign(all);
+          items = [closure_1[key10014], closure_2[key10014]];
+          tmp[key10014] = obj;
+          const propsWithTransitions = self.propsWithTransitions;
+          propsWithTransitions.add(key10014);
+        } else {
+          throw new TypeError("Trying to call a non-function");
+        }
+      }
+      for (const key10014 in obj) {
+        let isAllowedPropertyResult = isAllowedProperty(key10014);
+        if (isAllowedPropertyResult) {
+          let tmp = require;
+          let obj2 = _mod1759;
+          isAllowedPropertyResult = !obj2.deepEqual(obj[key10014], prevProps[key10014]);
+        }
+        if (!isAllowedPropertyResult) {
+          continue;
+        } else {
+          let triggerTransitionResult = triggerTransition(key10014);
+          continue;
+        }
+        continue;
+      }
+      const iter = self.propsWithTransitions[Symbol.iterator]();
+      const nextResult = iter.next();
+      while (iter !== undefined) {
+        let tmp6 = nextResult;
+        if (!isAllowedProperty(nextResult)) {
+          obj[tmp6] = null;
+          let propsWithTransitions = self.propsWithTransitions;
+          let deleteResult = propsWithTransitions.delete(tmp6);
+        }
+        continue;
+      }
+      for (const key10041 in prevProps) {
+        let isAllowedPropertyResult1 = isAllowedProperty(key10041) && !(key10041 in obj);
+        if (!isAllowedPropertyResult1) {
+          continue;
+        } else {
+          let triggerTransitionResult1 = triggerTransition(key10041);
+          continue;
+        }
+        continue;
+      }
       return obj;
     }
   }
 ];
 
-export default _createClassDefault(CSSManager, items);
+export default _createClassDefault(CSSTransitionsManager, items);

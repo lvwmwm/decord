@@ -1,32 +1,32 @@
-// Module ID: 8405
-// Function ID: 8406
+// Module ID: 7995
+// Function ID: 7996
 // Name: GuildSettingsStore
-// Dependencies: [5170, 8156, 5159, 5173, 7664, 1407, 5177, 1388, 1072, 8406, 8407, 11, 8408, 1285, 572, 8411, 5169, 8412, 2169, 8413, 504, 12, 510, 2]
+// Dependencies: [4777, 7759, 4766, 4780, 7266, 1405, 4784, 1386, 1071, 7996, 7997, 11, 7998, 1284, 572, 8002, 4776, 8003, 2168, 8004, 504, 12, 510, 2]
 
-// Module 8405 (GuildSettingsStore)
+// Module 7995 (GuildSettingsStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import HTTPUtils from "HTTPUtils" /* 1285 */;
-import _modDef2169 from "module_2169" /* 2169 */;
-import ChannelRecord from "ChannelRecord" /* 5159 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 5169 */;
-import PlainRecord from "PlainRecord" /* 5170 */;
-import GuildRecord from "GuildRecord" /* 5173 */;
-import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 8406 */;
-import GuildSettingsServerTagUtils from "GuildSettingsServerTagUtils" /* 8408 */;
-import GuildSettingsVanityURLActionCreators from "GuildSettingsVanityURLActionCreators" /* 8411 */;
-import getDefaultGuildSettingsSection from "getDefaultGuildSettingsSection" /* 8412 */;
-import GuildSettingsFetchActionCreators from "GuildSettingsFetchActionCreators" /* 8413 */;
-import GuildProfileStore from "GuildProfileStore" /* 8156 */;
-import InviteRecord from "InviteRecord" /* 7664 */;
-import UserRecord from "UserRecord" /* 1407 */;
-import GuildStore from "GuildStore" /* 5177 */;
-import UserStore from "UserStore" /* 1388 */;
-import Constants from "Constants" /* 1072 */;
-import PublicGuildsConstants from "PublicGuildsConstants" /* 8407 */;
+import HTTPUtils from "HTTPUtils" /* 1284 */;
+import _modDef2168 from "module_2168" /* 2168 */;
+import ChannelRecord from "ChannelRecord" /* 4766 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 4776 */;
+import PlainRecord from "PlainRecord" /* 4777 */;
+import GuildRecord from "GuildRecord" /* 4780 */;
+import GlobalDiscoveryServersConstants from "GlobalDiscoveryServersConstants" /* 7996 */;
+import GuildSettingsServerTagUtils from "GuildSettingsServerTagUtils" /* 7998 */;
+import GuildSettingsVanityURLActionCreators from "GuildSettingsVanityURLActionCreators" /* 8002 */;
+import getDefaultGuildSettingsSection from "getDefaultGuildSettingsSection" /* 8003 */;
+import GuildSettingsFetchActionCreators from "GuildSettingsFetchActionCreators" /* 8004 */;
+import GuildProfileStore from "GuildProfileStore" /* 7759 */;
+import InviteRecord from "InviteRecord" /* 7266 */;
+import UserRecord from "UserRecord" /* 1405 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import UserStore from "UserStore" /* 1386 */;
+import Constants from "Constants" /* 1071 */;
+import PublicGuildsConstants from "PublicGuildsConstants" /* 7997 */;
 import size from "module_2" /* 2 */;
 
 let c11, c12, closure_56, closure_9, defaultGuildSettingsSection, map;
@@ -70,8 +70,8 @@ function handleFormInit(type) {
     CLOSED = FormStates.OPEN;
     errors = {};
     c38 = null;
-    const obj6 = SnowflakeUtilsDefault;
-    roleId = obj6.castGuildIdAsEveryoneGuildRoleId(guildId);
+    const obj5 = SnowflakeUtilsDefault;
+    roleId = obj5.castGuildIdAsEveryoneGuildRoleId(guildId);
     NONE = guild.mfaLevel;
     obj = obj2;
     c12 = null;
@@ -82,16 +82,18 @@ function handleFormInit(type) {
         c11 = undefined;
       }
     }
-    if (null != section) {
-      obj2 = { key: "landing", name: constants.LANDING };
-      const items = [obj2];
+    if (section === constants.SOUNDBOARD) {
+      c11 = undefined;
+    } else if (null != section) {
+      const items = [{ key: "landing", name: constants.LANDING }];
+      const obj3 = { key: "landing", name: constants.LANDING };
       if (section === constants.TAG_CUSTOMIZE) {
         const obj4 = { key: null, name: null };
-        ({ TAG: obj3.key, TAG: obj3.name } = constants);
+        ({ TAG: obj2.key, TAG: obj2.name } = constants);
         items.push(obj4);
       }
-      const obj5 = { key: section, name: section };
-      items.push(obj5);
+      const obj6 = { key: section, name: section };
+      items.push(obj6);
       c11 = { type: "stack", routes: items };
       const obj10 = { type: "stack", routes: items };
     }
@@ -118,7 +120,7 @@ function _createInvite(code) {
   ({ uses: obj.uses, max_uses: obj.maxUses, max_age: obj.maxAge } = code);
   created_at = code.created_at;
   ({ flags: obj.flags, roles: obj.roles } = code);
-  tmp7 = _modDef2169;
+  tmp7 = _modDef2168;
   const tmp4 = new tmp(obj);
   return tmp4;
 }

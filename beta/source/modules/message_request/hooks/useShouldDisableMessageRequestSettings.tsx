@@ -1,13 +1,13 @@
-// Module ID: 18578
-// Function ID: 18579
+// Module ID: 17374
+// Function ID: 17375
 // Name: useShouldDisableMessageRequestSettings
-// Dependencies: [6820, 5985, 5993, 2]
+// Dependencies: [6411, 5575, 5583, 2]
 // Exports: useShouldDisableMessageRequestSettings
 
-// Module 18578 (useShouldDisableMessageRequestSettings)
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5985 */;
-import SettingsDefaultFeature from "SettingsDefaultFeature" /* 5993 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6820 */;
+// Module 17374 (useShouldDisableMessageRequestSettings)
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5575 */;
+import SettingsDefaultFeature from "SettingsDefaultFeature" /* 5583 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6411 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/message_request/hooks/useShouldDisableMessageRequestSettings.tsx");

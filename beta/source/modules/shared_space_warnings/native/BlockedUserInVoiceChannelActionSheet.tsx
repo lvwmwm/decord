@@ -1,24 +1,24 @@
-// Module ID: 16241
-// Function ID: 16242
+// Module ID: 15014
+// Function ID: 15015
 // Name: BlockedUserInVoiceChannelActionSheet
-// Dependencies: [19, 17, 5155, 5248, 1388, 16238, 16240, 1072, 21, 5306, 575, 504, 1113, 7951, 6010, 12042, 5919, 7746, 7443, 1187, 10553, 13050, 5926, 5542, 6925, 1256, 2]
+// Dependencies: [19, 17, 4762, 4855, 1386, 15011, 15013, 1071, 21, 4913, 575, 504, 1112, 7553, 5600, 11800, 5504, 7348, 7045, 1186, 12361, 11011, 5511, 5127, 6529, 1255, 2]
 // Exports: default
 
-// Module 16241 (BlockedUserInVoiceChannelActionSheet)
+// Module 15014 (BlockedUserInVoiceChannelActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6925 */;
-import SharedSpacesWarningStore from "SharedSpacesWarningStore" /* 16238 */;
+import Constants from "Constants" /* 1071 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6529 */;
+import SharedSpacesWarningStore from "SharedSpacesWarningStore" /* 15011 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import RelationshipStore from "RelationshipStore" /* 5248 */;
-import UserStore from "UserStore" /* 1388 */;
-import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 16240 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import RelationshipStore from "RelationshipStore" /* 4855 */;
+import UserStore from "UserStore" /* 1386 */;
+import SharedSpaceWarningConstants from "SharedSpaceWarningConstants" /* 15013 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

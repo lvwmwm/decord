@@ -1,11 +1,11 @@
-// Module ID: 14333
-// Function ID: 14334
+// Module ID: 12572
+// Function ID: 12573
 // Dependencies: [2]
 
-// Module 14333
+// Module 12572
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_base_14_butter.webp.js");
 
-export default "https://cdn.discordapp.com/assets/content/56a1b0472868f73c93350c8a73127eda64771bd884c7f4b9fc7055527b07a1d4.webp";
-export const metadata = { fileBytes: 47088 };
+export default "https://cdn.discordapp.com/assets/content/b9b76c830a1966450017238c2a506857bff49ee9e6684995f7461bd873e4d8f4.webp";
+export const metadata = { fileBytes: 121544 };

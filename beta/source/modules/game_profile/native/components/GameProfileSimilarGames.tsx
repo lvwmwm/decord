@@ -1,24 +1,24 @@
-// Module ID: 10460
-// Function ID: 10461
+// Module ID: 9900
+// Function ID: 9901
 // Name: GameProfileSimilarGames
-// Dependencies: [19, 17, 10316, 21, 575, 5306, 10461, 10286, 10281, 1113, 10321, 10384, 10383, 10403, 10464, 1496, 7888, 10332, 2]
+// Dependencies: [19, 17, 9806, 21, 575, 4913, 9766, 9774, 9769, 1112, 9811, 9875, 9874, 9883, 9901, 1494, 7490, 9822, 2]
 // Exports: default
 
-// Module 10460 (GameProfileSimilarGames)
+// Module 9900 (GameProfileSimilarGames)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
-import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 10281 */;
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 10286 */;
-import GameProfileConstants from "GameProfileConstants" /* 10316 */;
-import GameProfileHorizontalScrollViewDefault from "GameProfileHorizontalScrollView" /* 10332 */;
-import GameProfileSectionDefault from "GameProfileSection" /* 10383 */;
-import GameProfileSkeleton from "GameProfileSkeleton" /* 10384 */;
-import GameProfileSkeletonCardRowDefault from "GameProfileSkeletonCardRow" /* 10403 */;
-import useSimilarGamesDefault from "useSimilarGames" /* 10464 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
+import GameProfileActionCreatorsDefault from "GameProfileActionCreators" /* 9769 */;
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9774 */;
+import GameProfileConstants from "GameProfileConstants" /* 9806 */;
+import GameProfileHorizontalScrollViewDefault from "GameProfileHorizontalScrollView" /* 9822 */;
+import GameProfileSectionDefault from "GameProfileSection" /* 9874 */;
+import GameProfileSkeleton from "GameProfileSkeleton" /* 9875 */;
+import GameProfileSkeletonCardRowDefault from "GameProfileSkeletonCardRow" /* 9883 */;
+import useSimilarGamesDefault from "useSimilarGames" /* 9901 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let importDefault;
@@ -107,7 +107,7 @@ let closure_15 = react.memo(function GameProfileSimilarGameSkeleton(cardWidth) {
 let closure_16 = react.memo(function GameProfileSimilarGamesSkeleton(cardWidth) {
   cardWidth = cardWidth.cardWidth;
   const tmp = closure_11();
-  const GameProfileSectionSkeleton = cardWidth(10383).GameProfileSectionSkeleton;
+  const GameProfileSectionSkeleton = cardWidth(9874).GameProfileSectionSkeleton;
   ({ contentContainerStyle: tmp.skeletonCards, children: Array.from({ length: 4 }, (arg0, arg1) => <closure_15 key={arg1} animationDelayMs={arg1 * GameProfileSkeleton.SKELETON_CARD_ANIMATION_DELAY_MS} cardWidth={cardWidth} />) });
   GameProfileSkeletonCardRowDefault;
   return <GameProfileSectionSkeleton style={tmp.container} headerStyle={tmp.header} showViewAllSkeleton={false} skeletonTitleWidth={124}>{null}</GameProfileSectionSkeleton>;
@@ -134,7 +134,7 @@ export default function GameProfileSimilarGames(trackAction) {
     if (0 !== similarGames.length) {
       ({ container: obj2.style, header: obj2.headerStyle } = tmp);
       GameProfileSectionDefault;
-      const intl = trackAction(1113).intl;
+      const intl = trackAction(1112).intl;
       ({
         horizontal: true,
         renderScrollComponent: GameProfileHorizontalScrollViewDefault,
@@ -149,8 +149,8 @@ export default function GameProfileSimilarGames(trackAction) {
         decelerationRate: "fast",
         snapToInterval: result + tmp5
       });
-      const FlashList = trackAction(7888).FlashList;
-      tmp7 = <tmp2Result style={null} headerStyle={null} title={intl.string(trackAction(1113).t["6rLyQB"])}>{null}</tmp2Result>;
+      const FlashList = trackAction(7490).FlashList;
+      tmp7 = <tmp2Result style={null} headerStyle={null} title={intl.string(trackAction(1112).t["6rLyQB"])}>{null}</tmp2Result>;
     }
   }
   return tmp7;

@@ -1,36 +1,36 @@
-// Module ID: 20139
-// Function ID: 20140
+// Module ID: 19396
+// Function ID: 19397
 // Name: NativeAppStartup
-// Dependencies: [32, 5, 20140, 20142, 17, 20166, 2190, 5209, 2120, 8664, 20167, 1072, 9, 3, 20901, 1380, 8695, 20902, 10, 20904, 20905, 14063, 504, 1263, 1244, 20906, 2124, 20907, 17016, 572, 20908, 8678, 1242, 20909, 20910, 12922, 510, 1256, 16645, 5201, 9071, 11409, 2201, 1152, 20911, 2121, 10041, 20913, 16842, 8777, 20930, 20931, 20932, 9069, 8691, 8679, 5484, 1192, 5307, 16892, 19861, 19862, 1098, 16642, 8663, 16899, 16913, 7060, 20933, 5588, 8665, 8679, 2]
+// Dependencies: [32, 5, 19397, 19399, 17, 19423, 2189, 4816, 2118, 8254, 19424, 1071, 9, 3, 20170, 1378, 8285, 20171, 10, 20173, 20174, 12229, 504, 1262, 1243, 20175, 2122, 20176, 15776, 572, 20177, 8268, 1241, 20178, 20179, 10861, 510, 1255, 15432, 4808, 8581, 10439, 2190, 1151, 20180, 2119, 9431, 20182, 15629, 8372, 20200, 20201, 20202, 8579, 8281, 8269, 5091, 1191, 4914, 15646, 19112, 19113, 1097, 15429, 8253, 15653, 15667, 6664, 20203, 5173, 8255, 8269, 2]
 // Exports: init, initHeadlessTask
 
-// Module 20139 (NativeAppStartup)
+// Module 19396 (NativeAppStartup)
 import LoggerDefault from "Logger" /* 3 */;
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
 import Storage4 from "Storage" /* 510 */;
-import TokenManagerAll from "TokenManager" /* 1098 */;
-import SentryUtilsDefault from "SentryUtils" /* 1242 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
-import IntlLoaderStore from "IntlLoaderStore" /* 2190 */;
-import DatabaseManagerDefault from "DatabaseManager" /* 5201 */;
-import timeRequireDefault from "timeRequire" /* 8695 */;
-import Future from "Future" /* 11409 */;
-import react_nativeDefault from "react-native" /* 16645 */;
-import DeepLinkEventMapping from "DeepLinkEventMapping" /* 20904 */;
-import DeepLinkProcessorDefault from "DeepLinkProcessor" /* 20905 */;
+import TokenManagerAll from "TokenManager" /* 1097 */;
+import SentryUtilsDefault from "SentryUtils" /* 1241 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
+import IntlLoaderStore from "IntlLoaderStore" /* 2189 */;
+import DatabaseManagerDefault from "DatabaseManager" /* 4808 */;
+import timeRequireDefault from "timeRequire" /* 8285 */;
+import Future from "Future" /* 10439 */;
+import react_nativeDefault from "react-native" /* 15432 */;
+import DeepLinkEventMapping from "DeepLinkEventMapping" /* 20173 */;
+import DeepLinkProcessorDefault from "DeepLinkProcessor" /* 20174 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import module_20140 from "module_20140" /* 20140 */;
-import superagentPatch from "superagentPatch" /* 20142 */;
+import module_19397 from "module_19397" /* 19397 */;
+import superagentPatch from "superagentPatch" /* 19399 */;
 import react_native from "react-native" /* 17 */;
-import logThirdPartyImportsDone from "logThirdPartyImportsDone" /* 20166 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
-import AppStateStore from "AppStateStore" /* 2120 */;
-import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 8664 */;
-import ManagerRegistry from "ManagerRegistry" /* 20167 */;
-import Constants from "Constants" /* 1072 */;
+import logThirdPartyImportsDone from "logThirdPartyImportsDone" /* 19423 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4816 */;
+import AppStateStore from "AppStateStore" /* 2118 */;
+import AnalyticsTrackingStore from "stores/AnalyticsTrackingStore" /* 8254 */;
+import ManagerRegistry from "ManagerRegistry" /* 19424 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -156,11 +156,11 @@ let obj = function _getInitialURLs() {
 function sharedInit() {
   let _true;
   let closure_1;
-  const f138817 = () => _true(handleNotification[33]);
+  const f133866 = () => _true(handleNotification[33]);
   function handleNotification(arg0) {
     const tmp = c0;
     if (tmp) {
-      timeRequireDefault("receiveNotification", f138817).default(arg0, false);
+      timeRequireDefault("receiveNotification", f133866).default(arg0, false);
       TTITrackerDefault.extraProperties.tapped_notification = true;
     } else {
       closure_1.push(arg0);
@@ -294,7 +294,7 @@ function sharedInit() {
     if (state !== constants.ACTIVE) {
       const tmp4 = c0;
       if (tmp4) {
-        timeRequireDefault("receiveNotification", f138817).default(arg0, false);
+        timeRequireDefault("receiveNotification", f133866).default(arg0, false);
         TTITrackerDefault.extraProperties.tapped_notification = true;
       } else {
         closure_1.push(arg0);
@@ -430,7 +430,7 @@ obj = function _loadStorage() {
             let Storage = require("Storage").Storage;
             c4 = 2;
             c5 = 1;
-            const obj4 = { value: Storage.refresh([], authStore4), done: false };
+            const obj4 = { value: Storage.refresh([], closure_2_18), done: false };
             return obj4;
           }
         } else {
@@ -1060,7 +1060,7 @@ obj = function _initHeadlessTask() {
 };
 function initializeTokenStorage() {
   const Storage = Storage4.Storage;
-  if (null == Storage.get(closure_17)) {
+  if (null == Storage.get(authStore4)) {
     const obj2 = react_nativeDefault;
     const token = obj2.getConstants().token;
     if (null != token) {
@@ -1081,9 +1081,9 @@ function initializeTokenStorage() {
   const obj4 = TokenManagerAll;
   const tmp12 = null != obj4.getToken();
   const Storage3 = tmp(510).Storage;
-  const obj5 = { storageHasToken: null != Storage3.get(closure_17), tokenManagerHasToken: tmp12 };
+  const obj5 = { storageHasToken: null != Storage3.get(authStore4), tokenManagerHasToken: tmp12 };
   obj.verbose("Token manager has initialized", obj5);
-  map3();
+  closure_1_32();
 }
 ({ AppState: metroRequire, NativeEventEmitter: metroImportDefault, Linking: metroImportAll, LogBox: c9, NativeModules: c10 } = react_native);
 let closure_11 = IntlLoaderStore.subscribeToIntlLoadingSuccess;

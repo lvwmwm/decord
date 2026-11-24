@@ -1,23 +1,23 @@
-// Module ID: 19634
-// Function ID: 19635
+// Module ID: 18895
+// Function ID: 18896
 // Name: ConsoleConnectionActionSheet
-// Dependencies: [19, 19635, 1072, 21, 5542, 7591, 7424, 1113, 7951, 7913, 7746, 7443, 7087, 10469, 10308, 2]
+// Dependencies: [19, 18896, 1071, 21, 5127, 7193, 7026, 1112, 7553, 7515, 7348, 7045, 6691, 9906, 9798, 2]
 // Exports: default
 
-// Module 19634 (ConsoleConnectionActionSheet)
-import Constants from "Constants" /* 1072 */;
-import intl3 from "intl" /* 1113 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
-import PlatformsDefault from "Platforms" /* 7087 */;
-import XboxLinkModalActionCreatorsDefault from "XboxLinkModalActionCreators" /* 7424 */;
-import TableRow3 from "TableRow" /* 7443 */;
-import PlayStationLinkModalActionCreatorsDefault from "PlayStationLinkModalActionCreators" /* 7591 */;
-import TableRowGroup2 from "TableRowGroup" /* 7746 */;
-import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7913 */;
-import ActionSheet2 from "ActionSheet" /* 7951 */;
-import XboxNeutralIcon from "XboxNeutralIcon" /* 10308 */;
-import PlaystationNeutralIcon from "PlaystationNeutralIcon" /* 10469 */;
-import ConsoleConnectionCoachmarkConstants from "ConsoleConnectionCoachmarkConstants" /* 19635 */;
+// Module 18895 (ConsoleConnectionActionSheet)
+import Constants from "Constants" /* 1071 */;
+import intl3 from "intl" /* 1112 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
+import PlatformsDefault from "Platforms" /* 6691 */;
+import XboxLinkModalActionCreatorsDefault from "XboxLinkModalActionCreators" /* 7026 */;
+import TableRow3 from "TableRow" /* 7045 */;
+import PlayStationLinkModalActionCreatorsDefault from "PlayStationLinkModalActionCreators" /* 7193 */;
+import TableRowGroup2 from "TableRowGroup" /* 7348 */;
+import BottomSheetTitleHeader from "BottomSheetTitleHeader" /* 7515 */;
+import ActionSheet2 from "ActionSheet" /* 7553 */;
+import XboxNeutralIcon from "XboxNeutralIcon" /* 9798 */;
+import PlaystationNeutralIcon from "PlaystationNeutralIcon" /* 9906 */;
+import ConsoleConnectionCoachmarkConstants from "ConsoleConnectionCoachmarkConstants" /* 18896 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

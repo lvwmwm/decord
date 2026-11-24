@@ -1,17 +1,17 @@
-// Module ID: 12339
-// Function ID: 12340
+// Module ID: 11861
+// Function ID: 11862
 // Name: PinotChannelLabel
-// Dependencies: [19, 17, 21, 1113, 3385, 12340, 12341, 12346, 2]
+// Dependencies: [19, 17, 21, 1112, 3508, 11862, 11863, 11868, 2]
 // Exports: PinotChannelLabel, getPinotChannelLabelText
 
-// Module 12339 (PinotChannelLabel)
+// Module 11861 (PinotChannelLabel)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import intl2 from "intl" /* 1113 */;
-import _modDef3385 from "module_3385" /* 3385 */;
-import PinotChannelLabelAnchor from "PinotChannelLabelAnchor" /* 12340 */;
-import useAttachPinotMemberCoachmark from "useAttachPinotMemberCoachmark" /* 12341 */;
-import ChannelHeaderShared from "ChannelHeaderShared" /* 12346 */;
+import intl2 from "intl" /* 1112 */;
+import _modDef3508 from "module_3508" /* 3508 */;
+import PinotChannelLabelAnchor from "PinotChannelLabelAnchor" /* 11862 */;
+import useAttachPinotMemberCoachmark from "useAttachPinotMemberCoachmark" /* 11863 */;
+import ChannelHeaderShared from "ChannelHeaderShared" /* 11868 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ const result = size.fileFinishedImporting("modules/pinot/native/PinotChannelLabe
 
 export function getPinotChannelLabelText() {
   const intl = intl2.intl;
-  return intl.string(_modDef3385.uneDIi);
+  return intl.string(_modDef3508.uneDIi);
 }
 export function PinotChannelLabel(channel) {
   let intl;
@@ -34,7 +34,7 @@ export function PinotChannelLabel(channel) {
   const obj2 = useAttachPinotMemberCoachmark;
   const attachPinotMemberCoachmark = obj2.useAttachPinotMemberCoachmark(ref1, channel, "bottom");
   const items = [ref];
-  ({ children: intl.string(_modDef3385.uneDIi) });
+  ({ children: intl.string(_modDef3508.uneDIi) });
   const SubtitleText = ChannelHeaderShared.SubtitleText;
   intl = intl2.intl;
   return <View ref={react.useCallback((current) => {

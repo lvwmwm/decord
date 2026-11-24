@@ -1,13 +1,13 @@
-// Module ID: 1073
-// Function ID: 1074
+// Module ID: 1072
+// Function ID: 1073
 // Name: RouteConstants
-// Dependencies: [1074, 1079, 1080, 1081, 2]
+// Dependencies: [1073, 1078, 1079, 1080, 2]
 
-// Module 1073 (RouteConstants)
-import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
-import ConferenceModeConstants from "ConferenceModeConstants" /* 1079 */;
-import GlobalDiscoveryAppsConstants from "GlobalDiscoveryAppsConstants" /* 1080 */;
-import PathUtils from "utils/PathUtils" /* 1081 */;
+// Module 1072 (RouteConstants)
+import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1073 */;
+import ConferenceModeConstants from "ConferenceModeConstants" /* 1078 */;
+import GlobalDiscoveryAppsConstants from "GlobalDiscoveryAppsConstants" /* 1079 */;
+import PathUtils from "utils/PathUtils" /* 1080 */;
 import size from "module_2" /* 2 */;
 
 let c2;
@@ -252,6 +252,7 @@ const obj = {
   GLOBAL_DISCOVERY: "/discovery",
   QUEST_HOME_DEPRECATED: "/discovery/quests",
   QUEST_HOME: "/quest-home",
+  QUEST_BAR_PREVIEW: "/quest-bar-preview",
   CONJURE: "/conjure",
   CONJURE_PROJECT(arg0) {
     return "/conjure/" + arg0;

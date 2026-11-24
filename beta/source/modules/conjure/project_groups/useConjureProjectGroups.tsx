@@ -1,33 +1,23 @@
-// Module ID: 10533
-// Function ID: 10534
+// Module ID: 13780
+// Function ID: 13781
 // Name: useConjureProjectGroups
-// Dependencies: [19, 6946, 1388, 7017, 10522, 504, 10534, 10535, 2]
+// Dependencies: [19, 6550, 1386, 6621, 13771, 504, 13781, 13782, 2]
 // Exports: default
 
-// Module 10533 (useConjureProjectGroups)
-import conjureProjectGroups from "conjureProjectGroups" /* 10534 */;
-import filterConjureProjectsByName from "filterConjureProjectsByName" /* 10535 */;
+// Module 13780 (useConjureProjectGroups)
+import conjureProjectGroups from "conjureProjectGroups" /* 13781 */;
+import filterConjureProjectsByName from "filterConjureProjectsByName" /* 13782 */;
 import react from "react" /* 19 */;
-import SortedGuildStore from "SortedGuildStore" /* 6946 */;
-import UserStore from "UserStore" /* 1388 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 7017 */;
+import SortedGuildStore from "SortedGuildStore" /* 6550 */;
+import UserStore from "UserStore" /* 1386 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6621 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, currentUser, set;
+let _require, currentUser;
 
 function getListedConjureProjects() {
-  const railProjects = ConjureProjectStore.getRailProjects();
-  set = new Set(railProjects.map((id) => id.id));
-  const sharedWithMeProjects = ConjureProjectStore.getSharedWithMeProjects();
-  for (const item10019 of sharedWithMeProjects) {
-    let tmp2 = item10019;
-    if (!set.has(item10019.id)) {
-      let arr = railProjects.push(tmp2);
-    }
-    continue;
-  }
-  return railProjects;
+  return ConjureProjectStore.getRailProjects();
 }
 const result = size.fileFinishedImporting("modules/conjure/project_groups/useConjureProjectGroups.tsx");
 

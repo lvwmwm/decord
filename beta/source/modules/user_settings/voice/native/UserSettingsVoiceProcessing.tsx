@@ -1,24 +1,24 @@
-// Module ID: 13033
-// Function ID: 13034
+// Module ID: 10994
+// Function ID: 10995
 // Name: UserSettingsVoiceProcessing
-// Dependencies: [19, 17, 2133, 21, 5306, 575, 504, 13034, 13035, 6215, 7745, 1113, 7747, 5919, 13038, 13001, 7954, 2]
+// Dependencies: [19, 17, 2131, 21, 4913, 575, 504, 10995, 10996, 5809, 7347, 1112, 7349, 5504, 10999, 10962, 7556, 2]
 // Exports: default
 
-// Module 13033 (UserSettingsVoiceProcessing)
+// Module 10994 (UserSettingsVoiceProcessing)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import intl8 from "intl" /* 1113 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 6215 */;
-import TableSwitchRow4 from "TableSwitchRow" /* 7954 */;
-import UserSettingsVoice from "UserSettingsVoice" /* 13001 */;
-import UserSettingsVoiceUtils from "UserSettingsVoiceUtils" /* 13034 */;
-import NoiseCancellationUtils from "NoiseCancellationUtils" /* 13035 */;
-import KrispLogoDefault from "KrispLogo" /* 13038 */;
+import intl8 from "intl" /* 1112 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 5809 */;
+import TableSwitchRow4 from "TableSwitchRow" /* 7556 */;
+import UserSettingsVoice from "UserSettingsVoice" /* 10962 */;
+import UserSettingsVoiceUtils from "UserSettingsVoiceUtils" /* 10995 */;
+import NoiseCancellationUtils from "NoiseCancellationUtils" /* 10996 */;
+import KrispLogoDefault from "KrispLogo" /* 10999 */;
 import react from "react" /* 19 */;
-import MediaEngineStore from "MediaEngineStore" /* 2133 */;
+import MediaEngineStore from "MediaEngineStore" /* 2131 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -64,24 +64,24 @@ class VoiceProcessingOptions {
         hasIcons: false,
         children: items1
       };
-      const TableRadioGroup = tmp2(7745).TableRadioGroup;
-      intl3 = tmp2(1113).intl;
+      const TableRadioGroup = tmp2(7347).TableRadioGroup;
+      intl3 = tmp2(1112).intl;
       const obj6 = { value: UserSettingsVoiceUtils.NoiseSuppressionOpt.KRISP, label: intl4.string(intl8.t.rdoNzt), disabled: noiseCancellationDeferredToSystem };
-      const TableRadioRow = tmp2(7747).TableRadioRow;
-      intl4 = tmp2(1113).intl;
+      const TableRadioRow = tmp2(7349).TableRadioRow;
+      intl4 = tmp2(1112).intl;
       items1 = [hasOwnProperty(TableRadioRow, obj6), , ];
       const obj7 = { disabled: noiseCancellationDeferredToSystem, value: UserSettingsVoiceUtils.NoiseSuppressionOpt.STANDARD, label: intl5.string(intl8.t.qXeYHw) };
-      const TableRadioRow2 = tmp2(7747).TableRadioRow;
-      intl5 = tmp2(1113).intl;
+      const TableRadioRow2 = tmp2(7349).TableRadioRow;
+      intl5 = tmp2(1112).intl;
       items1[1] = hasOwnProperty(TableRadioRow2, obj7);
       const obj8 = { disabled: noiseCancellationDeferredToSystem, value: UserSettingsVoiceUtils.NoiseSuppressionOpt.NONE, label: intl6.string(intl8.t.wkYAlz) };
-      const TableRadioRow3 = tmp2(7747).TableRadioRow;
-      intl6 = tmp2(1113).intl;
+      const TableRadioRow3 = tmp2(7349).TableRadioRow;
+      intl6 = tmp2(1112).intl;
       items1[2] = hasOwnProperty(TableRadioRow3, obj8);
       items2 = [metroRequire(TableRadioGroup, obj5), ];
       const obj9 = { style: tmp.optionsDescriptionContainer, children: items3 };
-      const Text = tmp2(5919).Text;
-      const intl7 = tmp2(1113).intl;
+      const Text = tmp2(5504).Text;
+      const intl7 = tmp2(1112).intl;
       if (noiseCancellationDeferredToSystem) {
         const obj10 = {
           onSettingsClick() {
@@ -89,9 +89,9 @@ class VoiceProcessingOptions {
                 const result = mediaEngine.showSystemCaptureConfigurationUI("microphone_modes");
               }
         };
-        formatResult = intl7.format(tmp2(1113).t.EUNgko, obj10);
+        formatResult = intl7.format(tmp2(1112).t.EUNgko, obj10);
       } else {
-        formatResult = intl7.string(tmp2(1113).t.k6h1F4);
+        formatResult = intl7.string(tmp2(1112).t.k6h1F4);
       }
       const obj11 = { variant: "body-xs/medium", color: "text-muted", children: formatResult };
       items3 = [hasOwnProperty(Text, obj11), ];
@@ -101,7 +101,7 @@ class VoiceProcessingOptions {
       tmp9Result = tmp9(tmp10, obj4);
     } else {
       const obj13 = { hasIcons: false, children: hasOwnProperty(TableSwitchRow, obj14) };
-      const UserSettingsTableRowGroup = tmp2(13001).UserSettingsTableRowGroup;
+      const UserSettingsTableRowGroup = tmp2(10962).UserSettingsTableRowGroup;
       obj14 = {
         label: intl.string(intl8.t.t8Qhib),
         subLabel: intl2.string(intl8.t.najZCV),
@@ -113,9 +113,9 @@ class VoiceProcessingOptions {
             return handleNoiseSuppressionChange(arg0 ? NoiseSuppressionOpt.STANDARD : NoiseSuppressionOpt.NONE);
           }
       };
-      TableSwitchRow = tmp2(7954).TableSwitchRow;
-      intl = tmp2(1113).intl;
-      intl2 = tmp2(1113).intl;
+      TableSwitchRow = tmp2(7556).TableSwitchRow;
+      intl = tmp2(1112).intl;
+      intl2 = tmp2(1112).intl;
       tmp9Result = hasOwnProperty(UserSettingsTableRowGroup, obj13);
     }
     return tmp9Result;
@@ -175,9 +175,9 @@ export default function UserSettingsVoiceProcessing() {
           return obj.setMode(require, obj2);
         }
     };
-    const TableSwitchRow3 = tmp(7954).TableSwitchRow;
-    intl5 = tmp(1113).intl;
-    intl6 = tmp(1113).intl;
+    const TableSwitchRow3 = tmp(7556).TableSwitchRow;
+    intl5 = tmp(1112).intl;
+    intl6 = tmp(1112).intl;
     advancedVoiceActivitySupported = tmp6(TableSwitchRow3, obj5);
   }
   const obj6 = { children: items1 };

@@ -1,11 +1,11 @@
-// Module ID: 6832
-// Function ID: 6833
+// Module ID: 6423
+// Function ID: 6424
 // Name: AgeNoticeExperiment
-// Dependencies: [1452, 2]
+// Dependencies: [1450, 2]
 // Exports: isAgeNoticeEnabled, useIsAgeNoticeEnabled
 
-// Module 6832 (AgeNoticeExperiment)
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+// Module 6423 (AgeNoticeExperiment)
+import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2026-08-tiny-bronco", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };

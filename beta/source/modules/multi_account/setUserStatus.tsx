@@ -1,14 +1,14 @@
-// Module ID: 11022
-// Function ID: 11023
+// Module ID: 11110
+// Function ID: 11111
 // Name: setUserStatus
-// Dependencies: [5, 7879, 7316, 1072, 5362, 1113, 11023, 5136, 1227, 5314, 1256, 2]
+// Dependencies: [5, 7481, 6920, 1071, 4969, 1112, 11111, 4743, 1226, 4921, 1255, 2]
 // Exports: default
 
-// Module 11022 (setUserStatus)
-import Constants from "Constants" /* 1072 */;
+// Module 11110 (setUserStatus)
+import Constants from "Constants" /* 1071 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LastMentionTimestampStore from "LastMentionTimestampStore" /* 7879 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 7316 */;
+import LastMentionTimestampStore from "LastMentionTimestampStore" /* 7481 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 6920 */;
 import size from "module_2" /* 2 */;
 
 let closure_2, prev_status, statusCreatedAtMs;

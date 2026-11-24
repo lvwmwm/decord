@@ -1,36 +1,36 @@
-// Module ID: 19629
-// Function ID: 19630
+// Module ID: 18890
+// Function ID: 18891
 // Name: YouScreen
-// Dependencies: [32, 19, 17, 7352, 2189, 17217, 7060, 1388, 19150, 1072, 1074, 5152, 7962, 21, 1655, 8611, 5306, 1360, 575, 671, 5483, 563, 1113, 7428, 17201, 7994, 8593, 6328, 1264, 8482, 1630, 8590, 5537, 8609, 5485, 1496, 5131, 1503, 19630, 1414, 8613, 7771, 10509, 8545, 8560, 8561, 8573, 7937, 8587, 5263, 5139, 9560, 6010, 19631, 14579, 5906, 19639, 19640, 5367, 19641, 8583, 8567, 8600, 1090, 11651, 9493, 19643, 14206, 8483, 9464, 8604, 8484, 9535, 8678, 2]
+// Dependencies: [32, 19, 17, 6956, 2188, 15985, 6664, 1386, 17950, 1071, 1073, 4759, 7564, 21, 1653, 8201, 4913, 1358, 575, 671, 5090, 563, 1112, 7030, 15969, 7597, 8183, 5930, 1263, 8072, 1628, 8180, 5122, 8199, 5092, 1494, 4738, 1501, 18891, 1412, 8203, 7373, 9945, 8135, 8150, 8151, 8163, 7539, 8177, 4870, 4746, 9080, 5600, 18892, 12831, 5491, 18900, 18901, 4974, 18902, 8173, 8157, 8190, 1089, 11636, 9013, 18904, 10432, 8073, 8982, 8194, 8074, 9055, 8268, 2]
 // Exports: default
 
-// Module 19629 (YouScreen)
+// Module 18890 (YouScreen)
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
-import Constants2 from "Constants" /* 1072 */;
-import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
-import intl4 from "intl" /* 1113 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1360 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
-import RootNavigationRef from "RootNavigationRef" /* 5483 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8483 */;
-import VisualEffectViewThemedDefault from "VisualEffectViewThemed" /* 8611 */;
-import YouBannerDecorations from "YouBannerDecorations" /* 10509 */;
-import BackIconWithBadge from "BackIconWithBadge" /* 17201 */;
+import Constants2 from "Constants" /* 1071 */;
+import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1073 */;
+import intl4 from "intl" /* 1112 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1358 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4759 */;
+import RootNavigationRef from "RootNavigationRef" /* 5090 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8073 */;
+import VisualEffectViewThemedDefault from "VisualEffectViewThemed" /* 8201 */;
+import YouBannerDecorations from "YouBannerDecorations" /* 9945 */;
+import BackIconWithBadge from "BackIconWithBadge" /* 15969 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserProfileStore from "UserProfileStore" /* 7352 */;
-import LocaleStore from "LocaleStore" /* 2189 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 17217 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 7060 */;
-import UserStore from "UserStore" /* 1388 */;
-import YouConstants from "YouConstants" /* 19150 */;
-import Constants from "Constants" /* 7962 */;
+import UserProfileStore from "UserProfileStore" /* 6956 */;
+import LocaleStore from "LocaleStore" /* 2188 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 15985 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6664 */;
+import UserStore from "UserStore" /* 1386 */;
+import YouConstants from "YouConstants" /* 17950 */;
+import Constants from "Constants" /* 7564 */;
 import Fragment from "Fragment" /* 21 */;
-import module_1655_mod from "module_1655" /* 1655 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import module_1653_mod from "module_1653" /* 1653 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let navigation;
@@ -67,16 +67,16 @@ function BackButton(paddingTop) {
   const obj = useStateFromStores;
   const stateFromStores = obj.useStateFromStores(items, () => totalMentionCount.getTotalMentionCount());
   if (stateFromStores > 0) {
-    const intl2 = tmp2(1113).intl;
+    const intl2 = tmp2(1112).intl;
     const obj2 = { mentionCount: stateFromStores };
-    formatToPlainStringResult = intl2.formatToPlainString(tmp2(1113).t.vxFYaM, obj2);
+    formatToPlainStringResult = intl2.formatToPlainString(tmp2(1112).t.vxFYaM, obj2);
   } else {
-    const intl = tmp2(1113).intl;
-    formatToPlainStringResult = intl.string(tmp2(1113).t["13/7kX"]);
+    const intl = tmp2(1112).intl;
+    formatToPlainStringResult = intl.string(tmp2(1112).t["13/7kX"]);
   }
   const obj3 = { style: items1, accessibilityRole: "button", accessibilityLabel: formatToPlainStringResult, onPress: handleBackButtonPress, children: closure_21(BackIconWithBadge.CloseIconWithBadgeOnSide, { count: stateFromStores }) };
   items1 = [tmp.backButton, { top: paddingTop }];
-  const PressableOpacity = tmp2(7428).PressableOpacity;
+  const PressableOpacity = tmp2(7030).PressableOpacity;
   return closure_21(PressableOpacity, obj3);
 }
 function UnconnectedYouScreen(arg0) {
@@ -564,8 +564,8 @@ let closure_17 = CollectiblesShopConstants.CollectiblesMobileShopScreen;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 ({ BANNER_ASPECT_RATIO: closure_19, UserProfileThemeTypes: closure_20 } = Constants);
 ({ jsx: closure_21, jsxs: closure_22 } = Fragment);
-let module_1655 = module_1655_mod;
-const VisualEffectViewThemed = module_1655.createAnimatedComponent(VisualEffectViewThemedDefault);
+let module_1653 = module_1653_mod;
+const VisualEffectViewThemed = module_1653.createAnimatedComponent(VisualEffectViewThemedDefault);
 let createStyles = createStyles_mod;
 let closure_24 = createStyles.createStyles(() => {
   let alphaResult;
@@ -607,8 +607,8 @@ let closure_25 = createStyles.createStyles(() => {
   ({ position: "absolute", marginTop: nativeDefault.space.PX_4, left: nativeDefault.space.PX_16, zIndex: 99, alignItems: "center", justifyContent: "center" });
   return obj;
 });
-module_1655 = module_1655_mod;
-let closure_26 = module_1655.createAnimatedComponent(ScrollView);
+module_1653 = module_1653_mod;
+let closure_26 = module_1653.createAnimatedComponent(ScrollView);
 let closure_29 = { code: "(function YouScreenTsx1(e){let[scrollPosition]=this.__closure;scrollPosition.set(e.contentOffset.y);})" };
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/you/YouScreen.tsx");
@@ -683,11 +683,9 @@ export default function YouScreen(initialTab) {
     items = [id(memo[47]).YOU_SCREEN];
     const result = openCollectiblesShopMobile(obj);
   }, []);
-  const callback3 = react.useCallback((autoFocusElement) => {
-    let obj3;
-    const obj2 = { screen: constants.PROFILE_CUSTOMIZATION, params: obj3 };
-    obj3 = { autoFocusElement };
+  const callback3 = react.useCallback((params) => {
     const obj = stateFromStores(memo[70]);
+    const obj2 = { screen: constants.PROFILE_CUSTOMIZATION, params };
     obj.openUserSettings(obj2);
   }, []);
   const callback4 = react.useCallback(() => {
@@ -713,7 +711,7 @@ export default function YouScreen(initialTab) {
     const obj = stateFromStores(memo[73]);
     return obj.trackAppUIViewed();
   }, []);
-  let obj3 = {
+  const obj3 = {
     scrollToTop() {
       callback();
     }

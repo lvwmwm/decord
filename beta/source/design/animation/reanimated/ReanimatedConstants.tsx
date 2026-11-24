@@ -1,13 +1,13 @@
-// Module ID: 5539
-// Function ID: 5540
+// Module ID: 5124
+// Function ID: 5125
 // Name: ReanimatedConstants
-// Dependencies: [1655, 2]
+// Dependencies: [1653, 2]
 
-// Module 5539 (ReanimatedConstants)
-import _mod1655 from "module_1655" /* 1655 */;
+// Module 5124 (ReanimatedConstants)
+import _mod1653 from "module_1653" /* 1653 */;
 import size from "module_2" /* 2 */;
 
-const obj = { duration: 1, reduceMotion: _mod1655.ReduceMotion.Always };
+const obj = { duration: 1, reduceMotion: _mod1653.ReduceMotion.Always };
 const obj2 = { reduceMotion: undefined };
 const merged = Object.assign(obj);
 const result = size.fileFinishedImporting("design/animation/reanimated/ReanimatedConstants.tsx");

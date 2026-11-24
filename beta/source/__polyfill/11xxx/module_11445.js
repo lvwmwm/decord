@@ -1,18 +1,16 @@
 // Module ID: 11445
 // Function ID: 11446
-// Dependencies: [41, 42, 93, 95, 98, 11428, 11432, 11436]
+// Dependencies: [41, 42, 93, 95, 98, 11414, 11417, 11418, 11422]
 
 // Module 11445
-import _mod11428 from "module_11428" /* 11428 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 11436 */;
+import _mod11414 from "module_11414" /* 11414 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 11422 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
-let tmp;
-const ReferenceWithTimezone = tmp(11432);
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -28,14 +26,18 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-const regExp = new RegExp("(" + _mod11428.TIME_UNITS_PATTERN + ")\\s{0,5}(?:later|after|from now|henceforth|forward|out)(?=(?:\\W|$))", "i");
-const regExp1 = new RegExp("(" + _mod11428.TIME_UNITS_NO_ABBR_PATTERN + ")\\s{0,5}(later|after|from now)(?=\\W|$)", "i");
-class ENTimeUnitLaterFormatParser {
-  constructor(strictMode) {
+const regExp = new RegExp("(this|last|past|next|after|\\+|-)\\s*(" + _mod11414.TIME_UNITS_PATTERN + ")(?=\\W|$)", "i");
+const regExp1 = new RegExp("(this|last|past|next|after|\\+|-)\\s*(" + _mod11414.TIME_UNITS_NO_ABBR_PATTERN + ")(?=\\W|$)", "i");
+class ENTimeUnitCasualRelativeFormatParser {
+  constructor() {
     let constructResult;
+    let flag = arg0;
+    if (arg0 === undefined) {
+      flag = true;
+    }
     const self = this;
-    _classCallCheck(this, ENTimeUnitLaterFormatParser);
-    const obj = _getPrototypeOf(ENTimeUnitLaterFormatParser);
+    _classCallCheck(this, ENTimeUnitCasualRelativeFormatParser);
+    const obj = _getPrototypeOf(ENTimeUnitCasualRelativeFormatParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
@@ -45,15 +47,15 @@ class ENTimeUnitLaterFormatParser {
       constructResult = obj.apply(self, undefined);
     }
     const tmp3Result = tmp3(self, constructResult);
-    tmp3Result.strictMode = strictMode;
+    tmp3Result.allowAbbreviations = flag;
     return tmp3Result;
   }
 }
-_inherits(ENTimeUnitLaterFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(ENTimeUnitCasualRelativeFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
   key: "innerPattern",
   value: function innerPattern() {
-    return this.strictMode ? regExp1 : regExp;
+    return this.allowAbbreviations ? regExp : regExp1;
   }
 };
 const items = [
@@ -61,15 +63,24 @@ const items = [
   {
     key: "innerExtract",
     value: function innerExtract(reference, arg1) {
-      const parseDurationResult = _mod11428.parseDuration(arg1[1]);
-      let relativeFromReference = null;
+      const str = arg1[1];
+      const formatted = str.toLowerCase();
+      const parseDurationResult = _mod11414.parseDuration(arg1[2]);
       if (parseDurationResult) {
-        const ParsingComponents = ReferenceWithTimezone.ParsingComponents;
-        relativeFromReference = ParsingComponents.createRelativeFromReference(reference.reference, parseDurationResult);
+        if ("last" !== formatted) {
+          let reverseDurationResult;
+          if ("past" !== formatted) {
+            reverseDurationResult = parseDurationResult;
+          }
+          const ParsingComponents = tmp2(11418).ParsingComponents;
+          return ParsingComponents.createRelativeFromReference(reference.reference, reverseDurationResult);
+        }
+        reverseDurationResult = tmp2(11417).reverseDuration(parseDurationResult);
+      } else {
+        return null;
       }
-      return relativeFromReference;
     }
   }
 ];
 
-export default _createClass(ENTimeUnitLaterFormatParser, items);
+export default _createClass(ENTimeUnitCasualRelativeFormatParser, items);

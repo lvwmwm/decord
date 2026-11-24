@@ -1,25 +1,23 @@
-// Module ID: 17604
-// Function ID: 17605
+// Module ID: 16376
+// Function ID: 16377
 // Name: QuestHomeBounties
-// Dependencies: [32, 19, 17, 8807, 5152, 21, 575, 5306, 5139, 9560, 17605, 572, 17611, 10131, 504, 17618, 17624, 2]
+// Dependencies: [32, 19, 17, 8403, 4759, 21, 575, 4913, 4746, 9080, 16377, 572, 16383, 9958, 504, 16390, 16396, 2]
 
-// Module 17604 (QuestHomeBounties)
+// Module 16376 (QuestHomeBounties)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import nativeDefault from "native" /* 575 */;
-import dismissible_content from "dismissible_content" /* 5139 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
-import openBountiesNuxPromoSheetDefault from "openBountiesNuxPromoSheet" /* 17605 */;
-import BountiesCtaHeaderDefault from "BountiesCtaHeader" /* 17618 */;
-import QuestHomeOrbShopCarouselDefault from "QuestHomeOrbShopCarousel" /* 17624 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4759 */;
+import BountiesCtaHeaderDefault from "BountiesCtaHeader" /* 16390 */;
+import QuestHomeOrbShopCarouselDefault from "QuestHomeOrbShopCarousel" /* 16396 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import BountyStore from "BountyStore" /* 8807 */;
+import BountyStore from "BountyStore" /* 8403 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
-let dependencyMap, importDefault;
+const require = globalThis.__r;
 
 let c9;
 let metroImportAll;
@@ -36,14 +34,11 @@ const memoResult = react.memo(function QuestHomeBounties(shopCarouselConfig) {
   let PX_20;
   let buttonVariant;
   let clickable;
-  let closure_1;
-  let first;
   let items1;
-  let items5;
+  let items6;
   let obtainableOrbRewards;
   let orbShopProducts;
   let placement;
-  let ref;
   let showOrbShopPlaceholderCarousel;
   let tmp22;
   let tmp23;
@@ -52,30 +47,35 @@ const memoResult = react.memo(function QuestHomeBounties(shopCarouselConfig) {
     showOrbShopPlaceholderCarousel = false;
   }
   shopCarouselConfig = shopCarouselConfig.shopCarouselConfig;
-  let tmp = first;
-  let obj = first(10131);
-  const questHomeBounties = obj.useQuestHomeBounties().questHomeBounties;
+  let questHomeBounties;
+  let tmp = questHomeBounties;
+  let obj = questHomeBounties(9958);
+  questHomeBounties = obj.useQuestHomeBounties().questHomeBounties;
   const tmp3 = closure_11();
-  first = undefined;
-  importDefault = undefined;
-  dependencyMap = undefined;
+  let first;
+  let closure_1;
+  let closure_2;
   if (questHomeBounties.length > 0) {
-    const items = [tmp(5139).DismissibleContent.BOUNTIES_NUX_PROMO_SHEET];
+    const items = [tmp(4746).DismissibleContent.BOUNTIES_NUX_PROMO_SHEET];
     items1 = items;
   } else {
     items1 = [];
   }
-  const tmpResult = tmp(9560);
+  const tmpResult = tmp(9080);
   const tmp4 = _slicedToArray(tmpResult.useSelectedDismissibleContent(items1), 2);
   first = tmp4[0];
-  importDefault = tmp6;
-  dependencyMap = react.useRef(false);
+  closure_1 = tmp6;
+  closure_2 = react.useRef(false);
   const items2 = [first];
   const effect = react.useEffect(() => {
-    const current = first !== dismissible_content.DismissibleContent.BOUNTIES_NUX_PROMO_SHEET || ref.current;
+    let current = first !== questHomeBounties(dependencyMap[8]).DismissibleContent.BOUNTIES_NUX_PROMO_SHEET;
+    const tmp = dependencyMap;
+    if (!current) {
+      current = ref.current;
+    }
     if (!current) {
       ref.current = true;
-      openBountiesNuxPromoSheetDefault();
+      require("openBountiesNuxPromoSheet")();
     }
   }, items2);
   const items3 = [first, tmp4[1]];
@@ -96,11 +96,16 @@ const memoResult = react.memo(function QuestHomeBounties(shopCarouselConfig) {
     }
   }, items3);
   const items4 = [BountyStore];
+  const items5 = [questHomeBounties];
   const length = questHomeBounties.length;
   ({ placement, buttonVariant, clickable } = shopCarouselConfig);
   let tmp10 = undefined !== clickable;
   const tmpResult2 = tmp(504);
-  const stateFromStores = tmpResult2.useStateFromStores(items4, () => BountyStore.areAllBountiesCompleted());
+  const stateFromStores = tmpResult2.useStateFromStores(items4, () => {
+    let bountyCompleted;
+    const tmp = questHomeBounties.length > 0 && questHomeBounties.every((id) => bountyCompleted.isBountyCompleted(id.id));
+    return tmp;
+  }, items5);
   if (tmp10) {
     tmp10 = clickable;
   }
@@ -108,8 +113,8 @@ const memoResult = react.memo(function QuestHomeBounties(shopCarouselConfig) {
     if (!stateFromStores) {
       let tmp11 = "none" !== placement && obtainableOrbRewards > 0;
       if (tmp11) {
-        tmp11 = orbShopProducts.length >= tmp(17611).MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL || showOrbShopPlaceholderCarousel;
-        orbShopProducts.length >= tmp(17611).MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL || showOrbShopPlaceholderCarousel;
+        tmp11 = orbShopProducts.length >= tmp(16383).MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL || showOrbShopPlaceholderCarousel;
+        orbShopProducts.length >= tmp(16383).MIN_PRODUCTS_FOR_ORB_SHOP_CAROUSEL || showOrbShopPlaceholderCarousel;
       }
       let tmp14Result = null;
       if (tmp11) {
@@ -126,7 +131,7 @@ const memoResult = react.memo(function QuestHomeBounties(shopCarouselConfig) {
       }
       const obj4 = { bounties: questHomeBounties, shopCarouselButtonVariant: buttonVariant, footer: tmp22, replaceHeaderMediaWith: tmp23 };
       tmp22 = undefined;
-      const obj3 = { style: tmp3.container, children: items5 };
+      const obj3 = { style: tmp3.container, children: items6 };
       const tmp17 = closure_9;
       const tmp18 = View;
       const tmp19 = closure_8;
@@ -138,12 +143,12 @@ const memoResult = react.memo(function QuestHomeBounties(shopCarouselConfig) {
       if ("replace_media" === placement) {
         tmp23 = tmp14Result;
       }
-      items5 = [tmp19(tmp21, obj4), ];
+      items6 = [tmp19(tmp21, obj4), ];
       let tmp24 = null;
       if ("outside" === placement) {
         tmp24 = tmp14Result;
       }
-      items5[1] = tmp24;
+      items6[1] = tmp24;
       return tmp17(tmp18, obj3);
     }
   }

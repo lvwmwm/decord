@@ -1,22 +1,22 @@
-// Module ID: 9154
-// Function ID: 9155
+// Module ID: 8664
+// Function ID: 8665
 // Name: ConversationListItem
-// Dependencies: [19, 17, 8745, 5947, 1072, 21, 5306, 575, 1502, 504, 9121, 9139, 9124, 7445, 5919, 1113, 7533, 5883, 9155, 9156, 9158, 2]
+// Dependencies: [19, 17, 8340, 5537, 1071, 21, 4913, 575, 1500, 504, 8631, 8649, 8634, 7047, 5504, 1112, 7135, 5468, 8665, 8666, 8668, 2]
 
-// Module 9154 (ConversationListItem)
+// Module 8664 (ConversationListItem)
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import ConversationConstants from "ConversationConstants" /* 5947 */;
-import ConversationsActionCreators from "ConversationsActionCreators" /* 9121 */;
-import ConversationsAnalytics2 from "ConversationsAnalytics" /* 9124 */;
-import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 9139 */;
-import ConversationPreviewBlockedMessageDefault from "ConversationPreviewBlockedMessage" /* 9156 */;
-import ConversationPreviewMessageDefault from "ConversationPreviewMessage" /* 9158 */;
+import Constants from "Constants" /* 1071 */;
+import ConversationConstants from "ConversationConstants" /* 5537 */;
+import ConversationsActionCreators from "ConversationsActionCreators" /* 8631 */;
+import ConversationsAnalytics2 from "ConversationsAnalytics" /* 8634 */;
+import ConversationNavigatorUtils from "ConversationNavigatorUtils" /* 8649 */;
+import ConversationPreviewBlockedMessageDefault from "ConversationPreviewBlockedMessage" /* 8666 */;
+import ConversationPreviewMessageDefault from "ConversationPreviewMessage" /* 8668 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelConversationsStore from "ChannelConversationsStore" /* 8745 */;
+import ChannelConversationsStore from "ChannelConversationsStore" /* 8340 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let navigation;

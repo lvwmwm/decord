@@ -1,19 +1,19 @@
-// Module ID: 12302
-// Function ID: 12303
+// Module ID: 10377
+// Function ID: 10378
 // Name: InAppReportsBottomButton
-// Dependencies: [19, 17, 1083, 21, 5306, 575, 1113, 2835, 5919, 5926, 1187, 2]
+// Dependencies: [19, 17, 1082, 21, 4913, 575, 1112, 2958, 5504, 5511, 1186, 2]
 // Exports: default
 
-// Module 12302 (InAppReportsBottomButton)
+// Module 10377 (InAppReportsBottomButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1083 */;
-import intl6 from "intl" /* 1113 */;
-import _modDef2835 from "module_2835" /* 2835 */;
-import components_Button_Button from "components/Button/Button" /* 5926 */;
+import Constants from "Constants" /* 1082 */;
+import intl6 from "intl" /* 1112 */;
+import _modDef2958 from "module_2958" /* 2958 */;
+import components_Button_Button from "components/Button/Button" /* 5511 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -51,35 +51,35 @@ export default function InAppReportsBottomButton(button) {
     const string3 = intl6.intl.string;
     if ("submit" === button.type) {
       let stringResult;
-      const intl2 = tmp15(1113).intl;
+      const intl2 = tmp15(1112).intl;
       const string = intl2.string;
       if (isModeratorReport) {
-        stringResult = string(_modDef2835.ZUyreS);
+        stringResult = string(_modDef2958.ZUyreS);
       } else {
         const stringResult1 = string(intl6.t["G+vU89"]);
-        const intl3 = tmp15(1113).intl;
+        const intl3 = tmp15(1112).intl;
         stringResult = stringResult1;
         intl3.format(intl6.t.Q0tSKT, {});
       }
       str2 = "destructive";
       stringResult2 = stringResult;
     } else if ("next" === button.type) {
-      const intl = tmp15(1113).intl;
-      stringResult2 = intl.string(tmp15(1113).t.PDTjLN);
+      const intl = tmp15(1112).intl;
+      stringResult2 = intl.string(tmp15(1112).t.PDTjLN);
     } else {
       stringResult2 = tmp17;
       if ("cancel" === button.type) {
-        const intl5 = tmp15(1113).intl;
-        stringResult2 = intl5.string(tmp15(1113).t["ETE/oC"]);
+        const intl5 = tmp15(1112).intl;
+        stringResult2 = intl5.string(tmp15(1112).t["ETE/oC"]);
         str2 = "secondary";
       }
     }
-    const intl4 = tmp15(1113).intl;
+    const intl4 = tmp15(1112).intl;
     const string2 = intl4.string;
     if (isModeratorReport) {
-      string2Result = string2(_modDef2835.psKFdJ);
+      string2Result = string2(_modDef2958.psKFdJ);
     } else {
-      string2Result = string2(tmp15(1113).t.h6D8Vy);
+      string2Result = string2(tmp15(1112).t.h6D8Vy);
     }
     const obj = { style: tmp.container, children: items };
     const obj2 = { style: tmp.divider };
@@ -88,7 +88,7 @@ export default function InAppReportsBottomButton(button) {
     const obj3 = { style: tmp.paddingHorizontal, children: items1 };
     if (null != tmp3) {
       const obj4 = { style: tmp.descriptionText, variant: "body-xs/medium", color: "text-default", children: tmp3 };
-      tmp12Result = tmp12(tmp15(5919).Text, obj4);
+      tmp12Result = tmp12(tmp15(5504).Text, obj4);
     }
     items1 = [tmp12Result, , ];
     const obj5 = {
@@ -103,7 +103,7 @@ export default function InAppReportsBottomButton(button) {
     let tmp12Result2 = null;
     if (hasError) {
       const obj6 = { style: tmp.errorText, children: string2Result };
-      tmp12Result2 = tmp12(tmp15(1187).LegacyText, obj6);
+      tmp12Result2 = tmp12(tmp15(1186).LegacyText, obj6);
     }
     items1[2] = tmp12Result2;
     items[1] = hasOwnProperty(View, obj3);

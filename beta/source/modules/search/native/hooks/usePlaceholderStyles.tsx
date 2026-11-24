@@ -1,17 +1,17 @@
-// Module ID: 19477
-// Function ID: 19478
+// Module ID: 18738
+// Function ID: 18739
 // Name: usePlaceholderStyles
-// Dependencies: [5307, 9066, 1496, 504, 1655, 5538, 1187, 2]
+// Dependencies: [4914, 8576, 1494, 504, 1653, 5123, 1186, 2]
 // Exports: useFullscreenPlaceholderCount, usePlaceholderAnimatedStyle
 
-// Module 19477 (usePlaceholderStyles)
+// Module 18738 (usePlaceholderStyles)
 import get_initialized from "get initialized" /* 504 */;
-import native from "native" /* 1187 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import timing_timing from "timing/timing" /* 5538 */;
-import SearchConstants from "SearchConstants" /* 9066 */;
-import AccessibilityStore from "AccessibilityStore" /* 5307 */;
+import native from "native" /* 1186 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import timing_timing from "timing/timing" /* 5123 */;
+import SearchConstants from "SearchConstants" /* 8576 */;
+import AccessibilityStore from "AccessibilityStore" /* 4914 */;
 import size from "module_2" /* 2 */;
 
 let closure_4 = SearchConstants.FADE_LAYOUT_ANIMATION_DURATION;
@@ -38,9 +38,9 @@ export function usePlaceholderAnimatedStyle(visible) {
   const items = [AccessibilityStore];
   const stateFromStores = obj.useStateFromStores(items, () => useReducedMotion.useReducedMotion);
   const items1 = [closure_5, stateFromStores, visible, , , , , ];
-  const useAnimatedStyle = _mod1655.useAnimatedStyle;
-  items1[3] = _mod1655.withRepeat;
-  items1[4] = _mod1655.withSequence;
+  const useAnimatedStyle = _mod1653.useAnimatedStyle;
+  items1[3] = _mod1653.withRepeat;
+  items1[4] = _mod1653.withSequence;
   items1[5] = timing_timing.withTiming;
   items1[6] = native.STANDARD_EASING;
   items1[7] = closure_4;

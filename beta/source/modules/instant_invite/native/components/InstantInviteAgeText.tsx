@@ -1,19 +1,19 @@
-// Module ID: 15075
-// Function ID: 15076
+// Module ID: 13662
+// Function ID: 13663
 // Name: InstantInviteAgeText
-// Dependencies: [19, 17, 8462, 21, 5306, 504, 5919, 8463, 7428, 8460, 1113, 2]
+// Dependencies: [19, 17, 8053, 21, 4913, 504, 5504, 8054, 7030, 8051, 1112, 2]
 // Exports: default
 
-// Module 15075 (InstantInviteAgeText)
+// Module 13662 (InstantInviteAgeText)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
-import intl3 from "intl" /* 1113 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8460 */;
-import InstantInviteUtils from "InstantInviteUtils" /* 8463 */;
+import intl3 from "intl" /* 1112 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8051 */;
+import InstantInviteUtils from "InstantInviteUtils" /* 8054 */;
 import react from "react" /* 19 */;
-import CreateInviteModalStore from "CreateInviteModalStore" /* 8462 */;
+import CreateInviteModalStore from "CreateInviteModalStore" /* 8053 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -48,7 +48,7 @@ export default function InstantInviteAgeText(style) {
     const obj2 = { style: items1, children: items3 };
     items1 = [tmp.inviteAgeContainer, style];
     const obj3 = { variant: "body-md/normal", children: items2 };
-    const Text = tmp2(5919).Text;
+    const Text = tmp2(5504).Text;
     items2 = [, ];
     const tmp2Result = InstantInviteUtils;
     items2[0] = tmp2Result.maxAgeString(stateFromStores.maxAge, stateFromStores.maxUses);
@@ -70,11 +70,11 @@ export default function InstantInviteAgeText(style) {
         hitSlop: { top: 8, left: 8, bottom: 8, right: 8 },
         children: closure_5(Text2, obj5)
       };
-      const PressableOpacity = tmp2(7428).PressableOpacity;
-      intl = tmp2(1113).intl;
+      const PressableOpacity = tmp2(7030).PressableOpacity;
+      intl = tmp2(1112).intl;
       obj5 = { variant: "body-md/medium", color: "text-link", children: intl2.string(intl3.t["VNe8P/"]) };
-      Text2 = tmp2(5919).Text;
-      intl2 = tmp2(1113).intl;
+      Text2 = tmp2(5504).Text;
+      intl2 = tmp2(1112).intl;
       canEditInvite = closure_5(PressableOpacity, obj4);
     }
     items3[1] = canEditInvite;

@@ -1,21 +1,21 @@
-// Module ID: 11835
-// Function ID: 11836
+// Module ID: 13943
+// Function ID: 13944
 // Name: PremiumGiftDuration
-// Dependencies: [19, 17, 1390, 21, 5306, 575, 11664, 7443, 8108, 11682, 5368, 5919, 1113, 2]
+// Dependencies: [19, 17, 1388, 21, 4913, 575, 9468, 7045, 7711, 9493, 4975, 5504, 1112, 2]
 // Exports: default
 
-// Module 11835 (PremiumGiftDuration)
+// Module 13943 (PremiumGiftDuration)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl4 from "intl" /* 1113 */;
-import react_native2 from "react-native" /* 5368 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import NativeGiftContext from "NativeGiftContext" /* 11664 */;
-import usePremiumProductPricingStringDefault from "usePremiumProductPricingString" /* 11682 */;
+import intl4 from "intl" /* 1112 */;
+import react_native2 from "react-native" /* 4975 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import NativeGiftContext from "NativeGiftContext" /* 9468 */;
+import usePremiumProductPricingStringDefault from "usePremiumProductPricingString" /* 9493 */;
 import react from "react" /* 19 */;
-import PremiumConstants from "PremiumConstants" /* 1390 */;
+import PremiumConstants from "PremiumConstants" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let SubscriptionIntervalTypes;
@@ -46,9 +46,9 @@ function PremiumGiftDurationButton(arg0) {
   const premiumType = nativeGiftContext.premiumType;
   const tmp4 = closure_9();
   if (selected) {
-    RowButton = tmp(7443).TableRow;
+    RowButton = tmp(7045).TableRow;
   } else {
-    RowButton = tmp(8108).RowButton;
+    RowButton = tmp(7711).RowButton;
   }
   let combined = null;
   const tmp5 = SubscriptionIntervalTypes;
@@ -67,22 +67,22 @@ function PremiumGiftDurationButton(arg0) {
   items[1] = selected;
   const obj2 = { style: items, children: metroRequire(RowButton, obj7) };
   const obj3 = { style: tmp4.labelContainer, children: items1 };
-  const Text = tmp(5919).Text;
+  const Text = tmp(5504).Text;
   const tmp13 = metroImportDefault;
   if (planInterval === tmp5.MONTH) {
-    const intl2 = tmp(1113).intl;
-    stringResult = intl2.string(tmp(1113).t.Mh9bTt);
+    const intl2 = tmp(1112).intl;
+    stringResult = intl2.string(tmp(1112).t.Mh9bTt);
   } else {
-    const intl = tmp(1113).intl;
-    stringResult = intl.string(tmp(1113).t.DRgqMo);
+    const intl = tmp(1112).intl;
+    stringResult = intl.string(tmp(1112).t.DRgqMo);
   }
   items1 = [metroRequire(Text, { variant: "body-md/semibold", children: stringResult }), ];
   let tmp11Result = null != combined;
   if (tmp11Result) {
     const obj4 = { style: tmp4.labelPromo, children: metroRequire(Text2, obj5) };
     obj5 = { variant: "body-md/semibold", color: "text-overlay-light", children: str3.toUpperCase() };
-    Text2 = tmp(5919).Text;
-    const intl3 = tmp(1113).intl;
+    Text2 = tmp(5504).Text;
+    const intl3 = tmp(1112).intl;
     const obj6 = { discount: combined };
     str3 = intl3.formatToPlainString(intl4.t.IAybsG, obj6);
     tmp11Result = tmp11(tmp12, obj4);
@@ -126,12 +126,12 @@ export default function PremiumGiftDuration() {
   let intl;
   let planInterval;
   const tmp = closure_11();
-  let obj = planInterval(11664);
+  let obj = planInterval(9468);
   planInterval = obj.useNativeGiftContext().planInterval;
   const obj2 = { style: tmp.durationContainer, children: items };
-  const obj3 = { style: tmp.durationTitle, variant: "body-sm/semibold", children: intl.string(planInterval(1113).t["8XT6Nf"]) };
-  const Text = planInterval(5919).Text;
-  intl = planInterval(1113).intl;
+  const obj3 = { style: tmp.durationTitle, variant: "body-sm/semibold", children: intl.string(planInterval(1112).t["8XT6Nf"]) };
+  const Text = planInterval(5504).Text;
+  intl = planInterval(1112).intl;
   items = [closure_6(Text, obj3), ];
   items[1] = items.map((planInterval, index) => {
     const obj = { selected: planInterval === planInterval, planInterval };

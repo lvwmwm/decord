@@ -1,27 +1,27 @@
-// Module ID: 19004
-// Function ID: 19005
+// Module ID: 17798
+// Function ID: 17799
 // Name: GameCommunityMultiGuildUpsellCard
-// Dependencies: [5, 32, 19, 17, 5307, 5239, 5177, 1072, 21, 5306, 575, 504, 1414, 1449, 1496, 7231, 7230, 6907, 6912, 1113, 9503, 6010, 10390, 1187, 5919, 5926, 9148, 7988, 7420, 2]
+// Dependencies: [5, 32, 19, 17, 4914, 4846, 4784, 1071, 21, 4913, 575, 504, 1412, 1447, 1494, 6835, 6834, 6511, 6516, 1112, 9023, 5600, 9755, 1186, 5504, 5511, 8658, 7591, 7022, 2]
 // Exports: default
 
-// Module 19004 (GameCommunityMultiGuildUpsellCard)
+// Module 17798 (GameCommunityMultiGuildUpsellCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl7 from "intl" /* 1113 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import ImageLoaderUtils from "ImageLoaderUtils" /* 1449 */;
-import transitionToGuild from "transitionToGuild" /* 7231 */;
-import MoreHorizontalIcon from "MoreHorizontalIcon" /* 7420 */;
-import IconButton2 from "IconButton" /* 7988 */;
+import intl7 from "intl" /* 1112 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
+import ImageLoaderUtils from "ImageLoaderUtils" /* 1447 */;
+import transitionToGuild from "transitionToGuild" /* 6835 */;
+import MoreHorizontalIcon from "MoreHorizontalIcon" /* 7022 */;
+import IconButton2 from "IconButton" /* 7591 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5307 */;
-import LurkingStore from "LurkingStore" /* 5239 */;
-import GuildStore from "GuildStore" /* 5177 */;
-import Constants from "Constants" /* 1072 */;
+import AccessibilityStore from "AccessibilityStore" /* 4914 */;
+import LurkingStore from "LurkingStore" /* 4846 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let c4, c5;

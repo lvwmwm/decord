@@ -1,20 +1,20 @@
-// Module ID: 20384
-// Function ID: 20385
+// Module ID: 19637
+// Function ID: 19638
 // Name: GiftIntentReconcilingManager
-// Dependencies: [6363, 1231, 5155, 9329, 1072, 1089, 7882, 559, 11674, 572, 8660, 2]
+// Dependencies: [5965, 1230, 4762, 8878, 1071, 1088, 7484, 559, 9478, 572, 8250, 2]
 
-// Module 20384 (GiftIntentReconcilingManager)
+// Module 19637 (GiftIntentReconcilingManager)
 import BackoffDefault from "Backoff" /* 559 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import Constants from "Constants" /* 1072 */;
-import DurationsDefault from "Durations" /* 1089 */;
-import MessageActionCreatorsDefault from "MessageActionCreators" /* 8660 */;
-import PremiumGiftingIntentActionCreators from "PremiumGiftingIntentActionCreators" /* 11674 */;
-import EphemeralMessageStore from "EphemeralMessageStore" /* 6363 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import PremiumGiftingIntentStore from "PremiumGiftingIntentStore" /* 9329 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;
+import Constants from "Constants" /* 1071 */;
+import DurationsDefault from "Durations" /* 1088 */;
+import MessageActionCreatorsDefault from "MessageActionCreators" /* 8250 */;
+import PremiumGiftingIntentActionCreators from "PremiumGiftingIntentActionCreators" /* 9478 */;
+import EphemeralMessageStore from "EphemeralMessageStore" /* 5965 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1230 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import PremiumGiftingIntentStore from "PremiumGiftingIntentStore" /* 8878 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7484 */;
 import size from "module_2" /* 2 */;
 
 let set;

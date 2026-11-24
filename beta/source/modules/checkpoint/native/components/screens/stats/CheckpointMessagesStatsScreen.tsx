@@ -1,28 +1,28 @@
-// Module ID: 14510
-// Function ID: 14511
+// Module ID: 12751
+// Function ID: 12752
 // Name: CheckpointMessagesStatsScreen
-// Dependencies: [17, 14255, 6367, 21, 5306, 575, 14487, 504, 6737, 1113, 3317, 3285, 14272, 14275, 14511, 14512, 8069, 14273, 14506, 14508, 14507, 14509, 2]
+// Dependencies: [17, 12128, 5969, 21, 4913, 575, 12727, 504, 6339, 1112, 3440, 3408, 12509, 12512, 12752, 12753, 7672, 12510, 12747, 12749, 12748, 12750, 2]
 // Exports: default
 
-// Module 14510 (CheckpointMessagesStatsScreen)
+// Module 12751 (CheckpointMessagesStatsScreen)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import CheckpointConstants from "CheckpointConstants" /* 6367 */;
-import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6737 */;
-import ChatIcon from "ChatIcon" /* 8069 */;
-import CheckpointScreenDefault from "CheckpointScreen" /* 14272 */;
-import CheckpointTextDefault from "CheckpointText" /* 14273 */;
-import CheckpointApngPlayerDefault from "CheckpointApngPlayer" /* 14275 */;
-import useIsCheckpointWide from "useIsCheckpointWide" /* 14487 */;
-import CheckpointCountUpStatNumberDefault from "CheckpointCountUpStatNumber" /* 14507 */;
-import CheckpointNumberUtils from "CheckpointNumberUtils" /* 14508 */;
-import CheckpointEmphasisDefault from "CheckpointEmphasis" /* 14509 */;
-import _modDef14511 from "module_14511" /* 14511 */;
-import _modDef14512 from "module_14512" /* 14512 */;
-import CheckpointStore from "CheckpointStore" /* 14255 */;
+import CheckpointConstants from "CheckpointConstants" /* 5969 */;
+import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6339 */;
+import ChatIcon from "ChatIcon" /* 7672 */;
+import CheckpointScreenDefault from "CheckpointScreen" /* 12509 */;
+import CheckpointTextDefault from "CheckpointText" /* 12510 */;
+import CheckpointApngPlayerDefault from "CheckpointApngPlayer" /* 12512 */;
+import useIsCheckpointWide from "useIsCheckpointWide" /* 12727 */;
+import CheckpointCountUpStatNumberDefault from "CheckpointCountUpStatNumber" /* 12748 */;
+import CheckpointNumberUtils from "CheckpointNumberUtils" /* 12749 */;
+import CheckpointEmphasisDefault from "CheckpointEmphasis" /* 12750 */;
+import _modDef12752 from "module_12752" /* 12752 */;
+import _modDef12753 from "module_12753" /* 12753 */;
+import CheckpointStore from "CheckpointStore" /* 12128 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const useIsCheckpointWideDefault = useIsCheckpointWide;
@@ -107,26 +107,26 @@ export default function CheckpointMessagesStatsScreen() {
     prop = stateFromStores.numMessagesSentPercentile;
   }
   const checkpointTopPercent = getCheckpointTopPercent(prop);
-  const intl = tmp5(1113).intl;
+  const intl = tmp5(1112).intl;
   const string = intl.string;
   if (roundResult <= 0 && null != stateFromStores1) {
-    wWKySP = tmp2(3317)["2BuyVC"];
+    wWKySP = tmp2(3440)["2BuyVC"];
   } else {
-    wWKySP = tmp2(3285).wWKySP;
+    wWKySP = tmp2(3408).wWKySP;
   }
   let formatToPlainStringResult;
   const stringResult = string(wWKySP);
   if (!(roundResult <= 0 && null != stateFromStores1)) {
     if (null != checkpointTopPercent) {
-      const intl2 = tmp5(1113).intl;
+      const intl2 = tmp5(1112).intl;
       const obj3 = { percent: checkpointTopPercent };
-      formatToPlainStringResult = intl2.formatToPlainString(tmp2(3317).wHn2YM, obj3);
+      formatToPlainStringResult = intl2.formatToPlainString(tmp2(3440).wHn2YM, obj3);
     }
   }
   const obj4 = { centered: tmp4, children: metroImportDefault(View, obj5) };
   obj5 = { style: tmp4 ? tmp.wideContainer : tmp.container, children: items3 };
   const obj6 = { style: tmp4 ? tmp.wideImageContainer : tmp.imageContainer, children: metroRequire(tmp2Result4, obj7) };
-  obj7 = { animatedUri: _modDef14511, staticUri: _modDef14512, style: items2 };
+  obj7 = { animatedUri: _modDef12752, staticUri: _modDef12753, style: items2 };
   const tmp2Result = CheckpointScreenDefault;
   items2 = [tmp.image, tmp4 && tmp.wideImage];
   tmp2Result4 = CheckpointApngPlayerDefault;
@@ -142,7 +142,7 @@ export default function CheckpointMessagesStatsScreen() {
   items5 = [metroImportDefault(View, obj9), , ];
   if (roundResult <= 0 && null != stateFromStores1) {
     const obj12 = { value: stateFromStores1 };
-    tmp14Result = tmp14(tmp2(14506), obj12);
+    tmp14Result = tmp14(tmp2(12747), obj12);
   } else {
     const obj13 = { accessible: true, accessibilityLabel: tmp5Result5.formatCheckpointStatAccessibilityLabel("messages", roundResult), style: tmp.number, children: metroRequire(CheckpointCountUpStatNumberDefault, obj14) };
     obj14 = { end: roundResult };
@@ -153,17 +153,17 @@ export default function CheckpointMessagesStatsScreen() {
   const obj15 = { variant: "heading-lg/medium", accessibilityLabel: formatToPlainStringResult, children: formatToPlainStringResult1 };
   const tmp2Result6 = CheckpointTextDefault;
   if (roundResult <= 0 && null != stateFromStores1) {
-    const intl5 = tmp5(1113).intl;
+    const intl5 = tmp5(1112).intl;
     const formatToPlainString = intl5.formatToPlainString;
     const obj16 = { numWords: tmp5Result6.formatCheckpointCompactNumber(stateFromStores1), numCopies: formatCheckpointCompactNumber(tmp5Result8.getCheckpointOdysseyCopies(stateFromStores1)) };
-    const bAxEs2 = tmp2(3317).bAxEs2;
+    const bAxEs2 = tmp2(3440).bAxEs2;
     tmp5Result6 = CheckpointStatsUtils;
     formatCheckpointCompactNumber = CheckpointStatsUtils.formatCheckpointCompactNumber;
     CheckpointStatsUtils;
     tmp5Result8 = CheckpointStatsUtils;
     formatToPlainStringResult1 = formatToPlainString(bAxEs2, obj16);
   } else if (null != checkpointTopPercent) {
-    const intl4 = tmp5(1113).intl;
+    const intl4 = tmp5(1112).intl;
     const obj17 = {
       percent: checkpointTopPercent,
       percentHook(children, arg1) {
@@ -171,11 +171,11 @@ export default function CheckpointMessagesStatsScreen() {
           return closure_1_6(CheckpointEmphasisDefault, obj, arg1);
         }
     };
-    formatToPlainStringResult1 = intl4.format(tmp2(3317).TOMBAW, obj17);
+    formatToPlainStringResult1 = intl4.format(tmp2(3440).TOMBAW, obj17);
   } else {
-    const intl3 = tmp5(1113).intl;
+    const intl3 = tmp5(1112).intl;
     const obj18 = { numMessages: roundResult };
-    formatToPlainStringResult1 = intl3.format(tmp2(3317).cYCqz8, obj18);
+    formatToPlainStringResult1 = intl3.format(tmp2(3440).cYCqz8, obj18);
   }
   items5[2] = metroRequire(tmp2Result6, obj15);
   items3[1] = metroImportDefault(View, obj8);

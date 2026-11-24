@@ -1,19 +1,19 @@
-// Module ID: 17122
-// Function ID: 17123
+// Module ID: 15888
+// Function ID: 15889
 // Name: UserProfileAvatarDecorationEditButton
-// Dependencies: [19, 17, 5218, 7962, 1083, 21, 5306, 575, 504, 8624, 8541, 11832, 9394, 1113, 17101, 9502, 1187, 15530, 2]
+// Dependencies: [19, 17, 4825, 7564, 1082, 21, 4913, 575, 504, 8214, 8131, 11918, 8905, 1112, 15867, 9022, 1186, 14262, 2]
 // Exports: default
 
-// Module 17122 (UserProfileAvatarDecorationEditButton)
+// Module 15888 (UserProfileAvatarDecorationEditButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1083 */;
-import Constants2 from "Constants" /* 7962 */;
-import avatar_decorations_AvatarDecorationUtils from "avatar_decorations/AvatarDecorationUtils" /* 9394 */;
+import Constants from "Constants" /* 1082 */;
+import Constants2 from "Constants" /* 7564 */;
+import avatar_decorations_AvatarDecorationUtils from "avatar_decorations/AvatarDecorationUtils" /* 8905 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildMemberStore from "GuildMemberStore" /* 5218 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import GuildMemberStore from "GuildMemberStore" /* 4825 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;

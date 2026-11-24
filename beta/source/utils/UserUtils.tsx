@@ -1,15 +1,15 @@
-// Module ID: 5362
-// Function ID: 5363
+// Module ID: 4969
+// Function ID: 4970
 // Name: UserUtils
-// Dependencies: [5363, 1388, 1072, 504, 1113, 2]
+// Dependencies: [4970, 1386, 1071, 504, 1112, 2]
 // Exports: accountAgeInRange, ageEligibleForPremiumUpsell, getFormattedName, getGlobalName, getName, getUserIsStaff, getUserTag, humanizeStatus, isNewUser, useDirectMessageRecipient, useName, useUserTag
 
-// Module 5362 (UserUtils)
+// Module 4969 (UserUtils)
 import get_initialized from "get initialized" /* 504 */;
-import intl7 from "intl" /* 1113 */;
-import StreamerModeStore from "StreamerModeStore" /* 5363 */;
-import UserStore from "UserStore" /* 1388 */;
-import Constants from "Constants" /* 1072 */;
+import intl7 from "intl" /* 1112 */;
+import StreamerModeStore from "StreamerModeStore" /* 4970 */;
+import UserStore from "UserStore" /* 1386 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

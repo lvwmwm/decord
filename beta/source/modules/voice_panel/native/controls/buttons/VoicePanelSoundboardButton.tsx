@@ -1,21 +1,21 @@
-// Module ID: 20102
-// Function ID: 20103
+// Module ID: 19359
+// Function ID: 19360
 // Name: VoicePanelSoundboardButton
-// Dependencies: [19, 21, 5306, 575, 11984, 20089, 19212, 20090, 1113, 7722, 10726, 2]
+// Dependencies: [19, 21, 4913, 575, 11749, 19346, 18014, 19347, 1112, 7324, 13417, 2]
 // Exports: default
 
-// Module 20102 (VoicePanelSoundboardButton)
+// Module 19359 (VoicePanelSoundboardButton)
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1113 */;
-import NativeViewDefault from "NativeView" /* 7722 */;
-import SoundboardIcon from "SoundboardIcon" /* 10726 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11984 */;
-import useSoundboardConfig from "useSoundboardConfig" /* 19212 */;
-import VoicePanelStyles from "VoicePanelStyles" /* 20089 */;
-import VoicePanelAnimatedButtonWrapperDefault from "VoicePanelAnimatedButtonWrapper" /* 20090 */;
+import intl2 from "intl" /* 1112 */;
+import NativeViewDefault from "NativeView" /* 7324 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11749 */;
+import SoundboardIcon from "SoundboardIcon" /* 13417 */;
+import useSoundboardConfig from "useSoundboardConfig" /* 18014 */;
+import VoicePanelStyles from "VoicePanelStyles" /* 19346 */;
+import VoicePanelAnimatedButtonWrapperDefault from "VoicePanelAnimatedButtonWrapper" /* 19347 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 const useSoundboardConfigDefault = useSoundboardConfig;
@@ -60,7 +60,7 @@ export default function SoundboardButton(arg0) {
   if (visible) {
     const element = { onPress: handlePress, disabled, props, accessibilityLabel: intl.string(intl2.t["6EJvHt"]), accessibilityHint: disabledAccessibilityHint, children: items1 };
     const tmpResult = VoicePanelAnimatedButtonWrapperDefault;
-    intl = tmp4(1113).intl;
+    intl = tmp4(1112).intl;
     const obj2 = { style: items };
     items = [tmp3.circle, ];
     const obj3 = { backgroundColor };

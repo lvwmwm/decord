@@ -1,10 +1,10 @@
 // Module ID: 4509
 // Function ID: 4510
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 4509 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9wcmVtaXVtL3Byb21vdGlvbnMvdGhpcmRfcGFydHkvY29kZV9ibHVycGxlL2JsdWVwcmludA==", scales: [1], hash: "8115318107d5bda2135e6a2de21665cd", name: "th.messages.8115318107d5bda2135e6a2de21665cd.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/promotions/third_party/code_blurple", scales: [1], hash: "b59878279e93cc37a1ec280690b41dfd", name: "CodeBlurple.compiled.messages", type: "jsona" });

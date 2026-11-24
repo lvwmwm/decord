@@ -1,19 +1,19 @@
-// Module ID: 13377
-// Function ID: 13378
+// Module ID: 12911
+// Function ID: 12912
 // Name: useCanShowAppLauncherOnboarding
-// Dependencies: [32, 5155, 5526, 1388, 13378, 13379, 6335, 1089, 504, 11, 5139, 9560, 5338, 2]
+// Dependencies: [32, 4762, 5534, 1386, 12912, 12913, 5937, 1088, 504, 11, 4746, 9080, 4945, 2]
 // Exports: default
 
-// Module 13377 (useCanShowAppLauncherOnboarding)
+// Module 12911 (useCanShowAppLauncherOnboarding)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import DurationsDefault from "Durations" /* 1089 */;
-import ApplicationCommandConstants from "ApplicationCommandConstants" /* 6335 */;
+import DurationsDefault from "Durations" /* 1088 */;
+import ApplicationCommandConstants from "ApplicationCommandConstants" /* 5937 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5526 */;
-import UserStore from "UserStore" /* 1388 */;
-import AppLauncherOnboardingPersistedStore from "AppLauncherOnboardingPersistedStore" /* 13378 */;
-import AppLauncherOnboardingStore from "AppLauncherOnboardingStore" /* 13379 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5534 */;
+import UserStore from "UserStore" /* 1386 */;
+import AppLauncherOnboardingPersistedStore from "AppLauncherOnboardingPersistedStore" /* 12912 */;
+import AppLauncherOnboardingStore from "AppLauncherOnboardingStore" /* 12913 */;
 import size from "module_2" /* 2 */;
 
 const BuiltInSectionId = ApplicationCommandConstants.BuiltInSectionId;
@@ -68,11 +68,11 @@ export default function useCanShowAppLauncherOnboarding(channelId) {
   }
   const items4 = [];
   if (!tmp16) {
-    items4.push(channelId(5139).DismissibleContent.APP_LAUNCHER_GLOBAL_SEARCH_ONBOARDING);
+    items4.push(channelId(4746).DismissibleContent.APP_LAUNCHER_GLOBAL_SEARCH_ONBOARDING);
   }
-  const tmp2Result11 = channelId(9560);
+  const tmp2Result11 = channelId(9080);
   const first = _slicedToArray(tmp2Result11.useSelectedDismissibleContent(items4), 1)[0];
-  const APP_LAUNCHER_GLOBAL_SEARCH_ONBOARDING = tmp2(5139).DismissibleContent.APP_LAUNCHER_GLOBAL_SEARCH_ONBOARDING;
+  const APP_LAUNCHER_GLOBAL_SEARCH_ONBOARDING = tmp2(4746).DismissibleContent.APP_LAUNCHER_GLOBAL_SEARCH_ONBOARDING;
   const items5 = [AppLauncherOnboardingStore];
   const tmp2Result12 = channelId(504);
   const stateFromStoresObject = tmp2Result12.useStateFromStoresObject(items5, () => {
@@ -103,13 +103,13 @@ export default function useCanShowAppLauncherOnboarding(channelId) {
     applicationId = recentApplicationCommandMetadata.applicationId;
   }
   const BUILT_IN = BuiltInSectionId.BUILT_IN;
-  const tmp2Result14 = channelId(5338);
-  result = tmp2Result14.useIsDismissibleContentDismissed_UNSAFE(tmp2(5139).DismissibleContent.APP_LAUNCHER_ONBOARDING_BOTS_BANNER);
-  const tmp2Result15 = channelId(5338);
-  let result1 = tmp2Result15.useIsDismissibleContentDismissed_UNSAFE(tmp2(5139).DismissibleContent.APP_LAUNCHER_ONBOARDING_APPS_BANNER);
+  const tmp2Result14 = channelId(4945);
+  result = tmp2Result14.useIsDismissibleContentDismissed_UNSAFE(tmp2(4746).DismissibleContent.APP_LAUNCHER_ONBOARDING_BOTS_BANNER);
+  const tmp2Result15 = channelId(4945);
+  let result1 = tmp2Result15.useIsDismissibleContentDismissed_UNSAFE(tmp2(4746).DismissibleContent.APP_LAUNCHER_ONBOARDING_APPS_BANNER);
   let tmp31 = null != stateFromStores4;
-  const tmp2Result16 = channelId(5338);
-  const result2 = tmp2Result16.useIsDismissibleContentDismissed_UNSAFE(tmp2(5139).DismissibleContent.APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER);
+  const tmp2Result16 = channelId(4945);
+  const result2 = tmp2Result16.useIsDismissibleContentDismissed_UNSAFE(tmp2(4746).DismissibleContent.APP_LAUNCHER_ONBOARDING_ACTIVITIES_BANNER);
   if (tmp31) {
     tmp31 = stateFromStores4.channelId === channelId;
   }

@@ -1,19 +1,19 @@
-// Module ID: 5930
-// Function ID: 5931
+// Module ID: 5515
+// Function ID: 5516
 // Name: springPresets
-// Dependencies: [2, 5931, 1655]
+// Dependencies: [2, 5516, 1653]
 
-// Module 5930 (springPresets)
-import _mod1655 from "module_1655" /* 1655 */;
-import SUBTLE_SPRING from "SUBTLE_SPRING" /* 5931 */;
+// Module 5515 (springPresets)
+import _mod1653 from "module_1653" /* 1653 */;
+import SUBTLE_SPRING from "SUBTLE_SPRING" /* 5516 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("design/animation/reanimated/spring/springPresets.tsx");
 const SUBTLE_SPRING_export = SUBTLE_SPRING.SUBTLE_SPRING;
 
 export { SUBTLE_SPRING_export as SUBTLE_SPRING };
-export const Reanimated3DefaultSpringConfig = _mod1655.Reanimated3DefaultSpringConfig;
-export const Reanimated3DefaultSpringConfigWithDuration = _mod1655.Reanimated3DefaultSpringConfigWithDuration;
+export const Reanimated3DefaultSpringConfig = _mod1653.Reanimated3DefaultSpringConfig;
+export const Reanimated3DefaultSpringConfigWithDuration = _mod1653.Reanimated3DefaultSpringConfigWithDuration;
 export const ON_PRESS_SPRING = { mass: 1, overshootClamping: true, damping: 27, stiffness: 300 };
 export const springSlow = { mass: 1, damping: 30, stiffness: 380 };
 export const springUnclamped = { mass: 0.35, damping: 13, stiffness: 250 };

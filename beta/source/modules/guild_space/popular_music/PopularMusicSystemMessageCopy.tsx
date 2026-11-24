@@ -1,12 +1,12 @@
-// Module ID: 9179
-// Function ID: 9180
+// Module ID: 8689
+// Function ID: 8690
 // Name: PopularMusicSystemMessageCopy
-// Dependencies: [9178, 2603, 2]
+// Dependencies: [8688, 2707, 2]
 // Exports: getMobileMusicSystemMessage, getMusicSystemMessage
 
-// Module 9179 (PopularMusicSystemMessageCopy)
-import _modDef2603 from "module_2603" /* 2603 */;
-import PopularMusicSystemMessageTypes from "PopularMusicSystemMessageTypes" /* 9178 */;
+// Module 8689 (PopularMusicSystemMessageCopy)
+import _modDef2707 from "module_2707" /* 2707 */;
+import PopularMusicSystemMessageTypes from "PopularMusicSystemMessageTypes" /* 8688 */;
 import size from "module_2" /* 2 */;
 
 function getMusicSystemMessageFor(trackTitle, name, BlHpAk) {
@@ -29,23 +29,23 @@ function getMusicSystemMessageFor(trackTitle, name, BlHpAk) {
   if (PopularMusicSystemMessageTypes.GuildSpaceMusicEvent.TOP_SONG_CHANGED === event) {
     let Cf11AE;
     if (null != trackTitle.trackTitle) {
-      Cf11AE = _modDef2603.vqPR3w;
+      Cf11AE = _modDef2707.vqPR3w;
     } else {
-      Cf11AE = _modDef2603.Cf11AE;
+      Cf11AE = _modDef2707.Cf11AE;
     }
     return { message: Cf11AE, values: obj };
   } else if (PopularMusicSystemMessageTypes.GuildSpaceMusicEvent.TOP_ARTIST_CHANGED === event) {
     let ygm9YB;
     if (null != trackTitle.artistName) {
-      ygm9YB = _modDef2603.ZbrKrk;
+      ygm9YB = _modDef2707.ZbrKrk;
     } else {
-      ygm9YB = _modDef2603.ygm9YB;
+      ygm9YB = _modDef2707.ygm9YB;
     }
     return { message: ygm9YB, values: obj };
   } else if (PopularMusicSystemMessageTypes.GuildSpaceMusicEvent.TOP_LISTENER_CHANGED === event) {
     let OlxQF3;
     if (null == name) {
-      OlxQF3 = _modDef2603.OlxQF3;
+      OlxQF3 = _modDef2707.OlxQF3;
     } else {
       OlxQF3 = BlHpAk;
     }
@@ -57,8 +57,8 @@ function getMusicSystemMessageFor(trackTitle, name, BlHpAk) {
 const result = size.fileFinishedImporting("modules/guild_space/popular_music/PopularMusicSystemMessageCopy.tsx");
 
 export function getMusicSystemMessage(result, name) {
-  return getMusicSystemMessageFor(result, name, _modDef2603["k41/aX"]);
+  return getMusicSystemMessageFor(result, name, _modDef2707["k41/aX"]);
 }
 export function getMobileMusicSystemMessage(result, name) {
-  return getMusicSystemMessageFor(result, name, _modDef2603.BlHpAk);
+  return getMusicSystemMessageFor(result, name, _modDef2707.BlHpAk);
 }

@@ -1,13 +1,13 @@
-// Module ID: 20316
-// Function ID: 20317
+// Module ID: 19570
+// Function ID: 19571
 // Name: resolveStorefrontCodedLink
-// Dependencies: [32, 5, 7070, 20306, 12436, 6045, 12437, 12438, 10018, 572, 16295, 2]
+// Dependencies: [32, 5, 6674, 19560, 11965, 5635, 11966, 11967, 9408, 572, 15067, 2]
 // Exports: default
 
-// Module 20316 (resolveStorefrontCodedLink)
+// Module 19570 (resolveStorefrontCodedLink)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SKUStore from "SKUStore" /* 7070 */;
+import SKUStore from "SKUStore" /* 6674 */;
 import size from "module_2" /* 2 */;
 
 let c1, c4, closure_2;
@@ -17,7 +17,7 @@ let result = size.fileFinishedImporting("modules/slayer_storefront/resolveStoref
 
 export default function resolveStorefrontCodedLink(arg0, code) {
   let obj3;
-  const f122704 = function*(arg0, value) {
+  const f118082 = function*(arg0, value) {
     if (c4 === 2) {
       c4 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
@@ -82,20 +82,20 @@ export default function resolveStorefrontCodedLink(arg0, code) {
   };
   const tmp = obj3;
   const tmp2 = dependencyMap;
-  let obj = obj3(12436);
+  let obj = obj3(11965);
   const result = obj.parseStorefrontCodedLink(code);
   if (null != result) {
     let skuId;
-    if (arg0 === tmp(6045).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP) {
+    if (arg0 === tmp(5635).CodedLinkType.SOCIAL_LAYER_STOREFRONT_APP) {
       let obj2 = { type: "application", applicationId: result.scopeId };
       obj3 = obj2;
     } else {
       obj3 = { type: "guild", guildId: result.scopeId };
     }
     if (result.skuIds.length > 1) {
-      const tmpResult = tmp(12437);
+      const tmpResult = tmp(11966);
       if (tmpResult.getIsEligibleForSocialLayerStorefrontMobileEmbed({ location: "resolveStorefrontCodedLink" })) {
-        const tmpResult5 = tmp(12438);
+        const tmpResult5 = tmp(11967);
         if (tmpResult5.getIsEligibleForSocialLayerStorefrontMobileMultiSkuEmbed({ location: "resolveStorefrontCodedLink" })) {
           const _HermesInternal = HermesInternal;
           const combined = "" + arg0 + ":" + result.scopeId;
@@ -168,8 +168,8 @@ export default function resolveStorefrontCodedLink(arg0, code) {
           const tmp13 = _asyncToGenerator;
           if (!set.has(combined)) {
             obj11.add(combined);
-            const tmpResult6 = tmp(20306);
-            const result1 = tmpResult6.queueMessageLinkFetch(tmp13(f122704));
+            const tmpResult6 = tmp(19560);
+            const result1 = tmpResult6.queueMessageLinkFetch(tmp13(f118082));
           }
         }
       }
@@ -181,7 +181,7 @@ export default function resolveStorefrontCodedLink(arg0, code) {
         let obj5 = { type: "STORE_LISTINGS_FETCH_START", skuId };
         obj4.dispatch(obj5);
         const items = [skuId];
-        const tmpResult7 = tmp(12436);
+        const tmpResult7 = tmp(11965);
         const storefrontCodedLink = tmpResult7.makeStorefrontCodedLink(items, result.scopeId);
         const tmp8 = _asyncToGenerator;
         skuId = _asyncToGenerator(async (arg0, value) => {
@@ -256,8 +256,8 @@ export default function resolveStorefrontCodedLink(arg0, code) {
         let obj7 = set;
         if (!set.has(storefrontCodedLink)) {
           obj7.add(storefrontCodedLink);
-          const tmpResult8 = tmp(20306);
-          const result2 = tmpResult8.queueMessageLinkFetch(tmp8(f122704));
+          const tmpResult8 = tmp(19560);
+          const result2 = tmpResult8.queueMessageLinkFetch(tmp8(f118082));
         }
       }
     }

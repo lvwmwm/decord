@@ -1,10 +1,10 @@
-// Module ID: 15741
-// Function ID: 15742
+// Module ID: 14481
+// Function ID: 14482
 // Name: RequestToStreamConstants
-// Dependencies: [1089, 2]
+// Dependencies: [1088, 2]
 
-// Module 15741 (RequestToStreamConstants)
-import DurationsDefault from "Durations" /* 1089 */;
+// Module 14481 (RequestToStreamConstants)
+import DurationsDefault from "Durations" /* 1088 */;
 import size from "module_2" /* 2 */;
 
 const result = 10 * DurationsDefault.Millis.MINUTE;

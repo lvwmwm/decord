@@ -1,28 +1,28 @@
-// Module ID: 17015
-// Function ID: 17016
+// Module ID: 15775
+// Function ID: 15776
 // Name: EmbeddedActivitiesNativeManager
-// Dependencies: [17, 5155, 6061, 5154, 1072, 1380, 17016, 17017, 1108, 6254, 5227, 1256, 572, 16921, 16922, 12743, 5491, 6259, 1113, 6005, 1255, 12854, 2]
+// Dependencies: [17, 4762, 5654, 4761, 1071, 1378, 15776, 15777, 1107, 5850, 4834, 1255, 572, 15675, 15676, 10671, 5098, 5861, 1112, 5595, 1254, 10787, 2]
 
-// Module 17015 (EmbeddedActivitiesNativeManager)
+// Module 15775 (EmbeddedActivitiesNativeManager)
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
-import intl2 from "intl" /* 1113 */;
-import GlobalUtils from "GlobalUtils" /* 1255 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import ChatInputUtils from "ChatInputUtils" /* 5491 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 6005 */;
-import ThermalUtilsDefault from "ThermalUtils" /* 6254 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6259 */;
-import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 12743 */;
-import activityWebViewController from "activityWebViewController" /* 12854 */;
-import react_nativeDefault from "react-native" /* 17016 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 6061 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5154 */;
-import Constants from "Constants" /* 1072 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
-import EmbeddedActivitiesManager from "EmbeddedActivitiesManager" /* 17017 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1107 */;
+import intl2 from "intl" /* 1112 */;
+import GlobalUtils from "GlobalUtils" /* 1254 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import ChatInputUtils from "ChatInputUtils" /* 5098 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5595 */;
+import ThermalUtilsDefault from "ThermalUtils" /* 5850 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5861 */;
+import EmbeddedActivitiesActionCreators from "EmbeddedActivitiesActionCreators" /* 10671 */;
+import activityWebViewController from "activityWebViewController" /* 10787 */;
+import react_nativeDefault from "react-native" /* 15776 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5654 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4761 */;
+import Constants from "Constants" /* 1071 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
+import EmbeddedActivitiesManager from "EmbeddedActivitiesManager" /* 15777 */;
 import size from "module_2" /* 2 */;
 
 let basicChannel, currentEmbeddedActivity, rawThermalState;
@@ -51,7 +51,7 @@ class EmbeddedActivitiesNativeManager extends EmbeddedActivitiesManager {
     const self = this;
     super._initialize();
     const tmp2 = dependencyMap;
-    const ComponentDispatch = self(1108).ComponentDispatch;
+    const ComponentDispatch = self(1107).ComponentDispatch;
     const subscription = ComponentDispatch.subscribe(constants.OPEN_EMBEDDED_ACTIVITY, this.handleOpenEmbeddedActivity);
     const lifecycleSubscription = this.lifecycleSubscription;
     if (lifecycleSubscription != null) {

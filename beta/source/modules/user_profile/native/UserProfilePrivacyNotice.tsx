@@ -1,27 +1,27 @@
-// Module ID: 15851
-// Function ID: 15852
+// Module ID: 14596
+// Function ID: 14597
 // Name: UserProfilePrivacyNotice
-// Dependencies: [32, 19, 17, 1072, 5152, 21, 5306, 575, 1196, 1113, 12029, 5131, 5139, 9560, 5919, 8604, 6027, 7428, 7549, 2]
+// Dependencies: [32, 19, 17, 1071, 4759, 21, 4913, 575, 1195, 1112, 10192, 4738, 4746, 9080, 5504, 8194, 5617, 7030, 7151, 2]
 // Exports: default, useIsPrivacyNoticeVisible
 
-// Module 15851 (UserProfilePrivacyNotice)
+// Module 14596 (UserProfilePrivacyNotice)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import intl3 from "intl" /* 1113 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
-import UserSettings from "UserSettings" /* 5131 */;
-import dismissible_content from "dismissible_content" /* 5139 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 6027 */;
-import XSmallIcon from "XSmallIcon" /* 7549 */;
-import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 9560 */;
-import useUserIsTeen from "useUserIsTeen" /* 12029 */;
+import Constants from "Constants" /* 1071 */;
+import intl3 from "intl" /* 1112 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1195 */;
+import UserSettings from "UserSettings" /* 4738 */;
+import dismissible_content from "dismissible_content" /* 4746 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4759 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5617 */;
+import XSmallIcon from "XSmallIcon" /* 7151 */;
+import useSelectedDismissibleContent from "useSelectedDismissibleContent" /* 9080 */;
+import useUserIsTeen from "useUserIsTeen" /* 10192 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -55,7 +55,7 @@ export default function UserProfilePrivacyNotice() {
     if (tmp) {
       const tmp3 = require;
       if (setting !== preloaded_user_settings.ProfileVisibility.FRIENDS_AND_ALL_GUILDS) {
-        const items = [tmp3(5139).DismissibleContent.PRIVATE_PROFILE_INLINE_NOTICE];
+        const items = [tmp3(4746).DismissibleContent.PRIVATE_PROFILE_INLINE_NOTICE];
       }
       return [];
     }
@@ -83,19 +83,19 @@ export default function UserProfilePrivacyNotice() {
   } else {
     let dqQ7AN;
     if (preloaded_user_settings.ProfileVisibility.FRIENDS_ONLY === setting1) {
-      dqQ7AN = tmp2(1113).t["0UBDvq"];
+      dqQ7AN = tmp2(1112).t["0UBDvq"];
     } else if (preloaded_user_settings.ProfileVisibility.FRIENDS_AND_SMALL_GUILDS === setting1) {
-      dqQ7AN = tmp2(1113).t["9AvQO/"];
+      dqQ7AN = tmp2(1112).t["9AvQO/"];
     } else {
-      const FRIENDS_AND_ALL_GUILDS = tmp2(1196).ProfileVisibility.FRIENDS_AND_ALL_GUILDS;
-      dqQ7AN = tmp2(1113).t.dqQ7AN;
+      const FRIENDS_AND_ALL_GUILDS = tmp2(1195).ProfileVisibility.FRIENDS_AND_ALL_GUILDS;
+      dqQ7AN = tmp2(1112).t.dqQ7AN;
     }
     const obj3 = { style: tmp.container, children: items1 };
     const obj4 = { style: tmp.icon, children: closure_7(CircleInformationIcon.CircleInformationIcon, { size: "xs", color: "icon-feedback-info" }) };
     items1 = [closure_7(View, obj4), , ];
     const obj5 = { style: tmp.text, variant: "body-sm/normal", color: "text-default", children: intl.format(dqQ7AN, obj6) };
-    const Text = tmp2(5919).Text;
-    intl = tmp2(1113).intl;
+    const Text = tmp2(5504).Text;
+    intl = tmp2(1112).intl;
     obj6 = { privacySettingsLink: callback };
     items1[1] = closure_7(Text, obj5);
     const obj7 = {
@@ -107,8 +107,8 @@ export default function UserProfilePrivacyNotice() {
       style: tmp.closeButton,
       children: closure_7(XSmallIcon.XSmallIcon, { size: "xs", color: "icon-feedback-info" })
     };
-    const PressableOpacity = tmp2(7428).PressableOpacity;
-    intl2 = tmp2(1113).intl;
+    const PressableOpacity = tmp2(7030).PressableOpacity;
+    intl2 = tmp2(1112).intl;
     items1[2] = closure_7(PressableOpacity, obj7);
     return closure_8(View, obj3);
   }
@@ -126,7 +126,7 @@ export function useIsPrivacyNoticeVisible() {
     if (tmp) {
       const tmp3 = require;
       if (setting !== preloaded_user_settings.ProfileVisibility.FRIENDS_AND_ALL_GUILDS) {
-        const items = [tmp3(5139).DismissibleContent.PRIVATE_PROFILE_INLINE_NOTICE];
+        const items = [tmp3(4746).DismissibleContent.PRIVATE_PROFILE_INLINE_NOTICE];
       }
       return [];
     }

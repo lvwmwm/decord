@@ -1,19 +1,19 @@
-// Module ID: 19009
-// Function ID: 19010
+// Module ID: 17803
+// Function ID: 17804
 // Name: useWaterwheelsDiscoverFeed
-// Dependencies: [19, 1246, 10205, 502, 1388, 10218, 10217, 504, 10214, 19010, 19014, 2]
+// Dependencies: [19, 1245, 10033, 502, 1386, 10044, 10043, 504, 10040, 17804, 17809, 2]
 // Exports: default, useWaterwheelsDiscoverInitialRequest
 
-// Module 19009 (useWaterwheelsDiscoverFeed)
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 10217 */;
-import useWaterwheelsCardEligibilityDefault from "useWaterwheelsCardEligibility" /* 19010 */;
-import WaterwheelsDiscoverFeedState from "WaterwheelsDiscoverFeedState" /* 19014 */;
+// Module 17803 (useWaterwheelsDiscoverFeed)
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 10043 */;
+import useWaterwheelsCardEligibilityDefault from "useWaterwheelsCardEligibility" /* 17804 */;
+import WaterwheelsDiscoverFeedState from "WaterwheelsDiscoverFeedState" /* 17809 */;
 import react_mod from "react" /* 19 */;
-import ApexExperimentStore from "ApexExperimentStore" /* 1246 */;
-import ICYMIStore from "ICYMIStore" /* 10205 */;
+import ApexExperimentStore from "ApexExperimentStore" /* 1245 */;
+import ICYMIStore from "ICYMIStore" /* 10033 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import UserStore from "UserStore" /* 1388 */;
-import InterestPickerSessionStore from "InterestPickerSessionStore" /* 10218 */;
+import UserStore from "UserStore" /* 1386 */;
+import InterestPickerSessionStore from "InterestPickerSessionStore" /* 10044 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -42,7 +42,7 @@ export default function useWaterwheelsDiscoverFeed(arg0) {
   EMPTY_DISCOVER_SNAPSHOT = obj.useStateFromStores(items, () => discoverSnapshot.getDiscoverSnapshot());
   const tmp3 = arg0;
   if (!tmp3) {
-    EMPTY_DISCOVER_SNAPSHOT = tmp(10214).EMPTY_DISCOVER_SNAPSHOT;
+    EMPTY_DISCOVER_SNAPSHOT = tmp(10040).EMPTY_DISCOVER_SNAPSHOT;
   }
   const tmp4 = useWaterwheelsCardEligibilityDefault();
   importDefault = tmp4;
@@ -51,7 +51,7 @@ export default function useWaterwheelsDiscoverFeed(arg0) {
     const obj = WaterwheelsDiscoverFeedState;
     return obj.selectWaterwheelsDiscoverEntries(EMPTY_DISCOVER_SNAPSHOT, closure_1);
   }, items1);
-  const tmpResult = EMPTY_DISCOVER_SNAPSHOT(19014);
+  const tmpResult = EMPTY_DISCOVER_SNAPSHOT(17809);
   const obj2 = { snapshot: EMPTY_DISCOVER_SNAPSHOT, entries: memo, status: tmpResult.getWaterwheelsDiscoverFeedStatus(EMPTY_DISCOVER_SNAPSHOT, memo.length), retry: requestWaterwheelsDiscover };
   return obj2;
 };
@@ -132,7 +132,7 @@ export function useWaterwheelsDiscoverInitialRequest(enabled, visible, snapshot)
             obj3 = ICYMIActionCreatorsDefault;
             const tmp4 = importDefault;
             if (shouldRequestWaterwheelsDiscover(obj2)) {
-              const tmp4Result = tmp4(10217);
+              const tmp4Result = tmp4(10043);
               let dehydrated = tmp4Result.fetchDehydrated();
             }
             return result;

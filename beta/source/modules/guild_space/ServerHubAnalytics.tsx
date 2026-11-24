@@ -1,16 +1,16 @@
-// Module ID: 20449
-// Function ID: 20450
+// Module ID: 19704
+// Function ID: 19705
 // Name: ServerHubAnalytics
-// Dependencies: [1072, 1343, 20450, 1256, 6328, 1264, 2]
+// Dependencies: [1071, 1341, 19705, 1255, 5930, 1263, 2]
 // Exports: trackServerHubEditCanceled, trackServerHubEditSaved, trackServerHubEditStarted, trackServerHubEditWidgetAdded, trackServerHubEditWidgetDeleted, trackServerHubEditWidgetMoved, trackServerHubToggleSetting, trackServerHubVisit, trackServerHubWidgetEditClicked, trackServerHubWidgetEmptyViewed, trackServerHubWidgetImpression
 
-// Module 20449 (ServerHubAnalytics)
-import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
-import StandardAnalyticsConstants from "StandardAnalyticsConstants" /* 1343 */;
-import useTrackImpression from "useTrackImpression" /* 6328 */;
-import editorUtils from "editorUtils" /* 20450 */;
+// Module 19704 (ServerHubAnalytics)
+import Constants from "Constants" /* 1071 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1263 */;
+import StandardAnalyticsConstants from "StandardAnalyticsConstants" /* 1341 */;
+import useTrackImpression from "useTrackImpression" /* 5930 */;
+import editorUtils from "editorUtils" /* 19705 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

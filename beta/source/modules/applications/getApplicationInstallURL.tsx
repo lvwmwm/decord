@@ -1,11 +1,11 @@
-// Module ID: 13465
-// Function ID: 13466
+// Module ID: 12997
+// Function ID: 12998
 // Name: getApplicationInstallURL
-// Dependencies: [1072, 2]
+// Dependencies: [1071, 2]
 // Exports: getActivityLaunchURL, getApplicationInstallURL
 
-// Module 13465 (getApplicationInstallURL)
-import Constants from "Constants" /* 1072 */;
+// Module 12997 (getApplicationInstallURL)
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 const Routes = Constants.Routes;

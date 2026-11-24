@@ -1,14 +1,14 @@
-// Module ID: 15571
-// Function ID: 15572
+// Module ID: 14304
+// Function ID: 14305
 // Name: useEmbeddedActivityParticipantAvatarUris
-// Dependencies: [19, 5154, 1388, 1255, 563, 2]
+// Dependencies: [19, 4761, 1386, 1254, 563, 2]
 // Exports: default, getEmbeddedActivityParticipantAvatarUris
 
-// Module 15571 (useEmbeddedActivityParticipantAvatarUris)
-import GlobalUtils from "GlobalUtils" /* 1255 */;
+// Module 14304 (useEmbeddedActivityParticipantAvatarUris)
+import GlobalUtils from "GlobalUtils" /* 1254 */;
 import react from "react" /* 19 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5154 */;
-import UserStore from "UserStore" /* 1388 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4761 */;
+import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/messages/native/renderer/row_data/embeds/coded_links/useEmbeddedActivityParticipantAvatarUris.tsx");

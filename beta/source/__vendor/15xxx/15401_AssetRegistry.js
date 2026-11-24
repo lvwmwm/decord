@@ -1,10 +1,10 @@
 // Module ID: 15401
 // Function ID: 15402
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 15401 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "2e0d6978350694e35552111153599c69", name: "BoostTier3Icon", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/status", width: 16, height: 16, scales: [2, 3], hash: "b452f17f7046013be582dffe125561c0", name: "StatusIdle", type: "png" });

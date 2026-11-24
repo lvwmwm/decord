@@ -1,15 +1,15 @@
-// Module ID: 15154
-// Function ID: 15155
+// Module ID: 13878
+// Function ID: 13879
 // Name: useInappropriateConversationsTiers
-// Dependencies: [1388, 10896, 12032, 504, 12031, 2]
+// Dependencies: [1386, 11784, 11790, 504, 11789, 2]
 // Exports: useInappropriateConversationsTiers
 
-// Module 15154 (useInappropriateConversationsTiers)
+// Module 13878 (useInappropriateConversationsTiers)
 import get_initialized from "get initialized" /* 504 */;
-import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 10896 */;
-import useInappropriateConversationBannerForChannel from "useInappropriateConversationBannerForChannel" /* 12031 */;
-import SelfModInappropriateConversationExperiment from "SelfModInappropriateConversationExperiment" /* 12032 */;
-import UserStore from "UserStore" /* 1388 */;
+import ChannelSafetyWarningsStore from "ChannelSafetyWarningsStore" /* 11784 */;
+import useInappropriateConversationBannerForChannel from "useInappropriateConversationBannerForChannel" /* 11789 */;
+import SelfModInappropriateConversationExperiment from "SelfModInappropriateConversationExperiment" /* 11790 */;
+import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 
 const SafetyWarningTypes = ChannelSafetyWarningsStore.SafetyWarningTypes;

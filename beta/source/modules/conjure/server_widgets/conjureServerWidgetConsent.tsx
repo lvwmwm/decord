@@ -1,15 +1,15 @@
-// Module ID: 15818
-// Function ID: 15819
+// Module ID: 14558
+// Function ID: 14559
 // Name: conjureServerWidgetConsent
-// Dependencies: [5, 12091, 7017, 15819, 7357, 12090, 12093, 1113, 4131, 1242, 12274, 7307, 5943, 1381, 2]
+// Dependencies: [5, 10207, 14549, 14559, 6961, 10217, 10219, 1112, 4190, 1241, 10340, 6913, 5528, 1379, 2]
 // Exports: getConjureServerWidgetConsentRequest
 
-// Module 15818 (conjureServerWidgetConsent)
-import URLUtilsDefault from "URLUtils" /* 1381 */;
-import WidgetActionCreatorsDefault from "WidgetActionCreators" /* 12093 */;
+// Module 14558 (conjureServerWidgetConsent)
+import URLUtilsDefault from "URLUtils" /* 1379 */;
+import WidgetActionCreatorsDefault from "WidgetActionCreators" /* 10219 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import WidgetStore from "WidgetStore" /* 12091 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 7017 */;
+import WidgetStore from "WidgetStore" /* 10207 */;
+import ConjureServerWidgetStore from "ConjureServerWidgetStore" /* 14549 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -388,10 +388,10 @@ export function getConjureServerWidgetConsentRequest(clientId, arg1) {
   let items;
   _require = clientId;
   let closure_1 = arg1;
-  const result = ConjureProjectStore.findProjectByApplicationId(clientId);
+  const project = ConjureServerWidgetStore.getProject(clientId);
   let id;
-  if (result != null) {
-    id = result.id;
+  if (project != null) {
+    id = project.id;
   }
   let tmp3 = null;
   if (null != id) {

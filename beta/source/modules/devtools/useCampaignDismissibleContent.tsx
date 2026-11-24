@@ -1,17 +1,17 @@
-// Module ID: 18356
-// Function ID: 18357
+// Module ID: 17138
+// Function ID: 17139
 // Name: useCampaignDismissibleContent
-// Dependencies: [32, 5, 19, 1231, 1388, 5146, 5136, 5982, 504, 9670, 2]
+// Dependencies: [32, 5, 19, 1230, 1386, 4753, 4743, 5572, 504, 9193, 2]
 // Exports: default
 
-// Module 18356 (useCampaignDismissibleContent)
-import DismissibleContentTypes from "DismissibleContentTypes" /* 5146 */;
-import CampaignDevToolsUtils from "CampaignDevToolsUtils" /* 9670 */;
+// Module 17138 (useCampaignDismissibleContent)
+import DismissibleContentTypes from "DismissibleContentTypes" /* 4753 */;
+import CampaignDevToolsUtils from "CampaignDevToolsUtils" /* 9193 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
-import UserSettingsProtoStore_mod from "UserSettingsProtoStore" /* 1231 */;
-import UserStore from "UserStore" /* 1388 */;
+import UserSettingsProtoStore_mod from "UserSettingsProtoStore" /* 1230 */;
+import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -375,7 +375,7 @@ export default function useCampaignDismissibleContent(arg0, arg1) {
       if (obj.isSnowflakeBoundDismissibleContent(content)) {
         const obj2 = { content, label: tmp, status: campaignPromotionDismissalStatus(tmp2, tmp7) };
         tmp7 = undefined;
-        campaignPromotionDismissalStatus = tmp3(9670).campaignPromotionDismissalStatus;
+        campaignPromotionDismissalStatus = tmp3(9193).campaignPromotionDismissalStatus;
         CampaignDevToolsUtils;
         if (closure_1 != null) {
           tmp7 = closure_1.recurringDismissibleContentStates[content];

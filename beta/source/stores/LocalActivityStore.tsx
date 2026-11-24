@@ -1,35 +1,35 @@
-// Module ID: 7317
-// Function ID: 7318
+// Module ID: 6921
+// Function ID: 6922
 // Name: LocalActivityStore
-// Dependencies: [32, 5154, 2165, 2140, 7318, 7319, 7290, 1231, 6810, 5155, 2159, 15988, 5209, 6063, 1072, 5131, 9529, 6059, 12, 15989, 15990, 6802, 1345, 7472, 12697, 1406, 504, 572, 2]
+// Dependencies: [32, 4761, 2164, 2139, 6922, 6923, 6896, 1230, 6400, 4762, 2158, 14756, 4816, 5656, 1071, 4738, 9049, 5652, 12, 14757, 14758, 6447, 1343, 7074, 12194, 1404, 504, 572, 2]
 
-// Module 7317 (LocalActivityStore)
+// Module 6921 (LocalActivityStore)
 import _modDef12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import Constants from "Constants" /* 1072 */;
-import _modDef1345 from "module_1345" /* 1345 */;
-import FlagUtils from "FlagUtils" /* 1406 */;
-import ActivityTypes from "ActivityTypes" /* 6059 */;
-import ActivityGamePlatforms from "ActivityGamePlatforms" /* 7472 */;
+import Constants from "Constants" /* 1071 */;
+import _modDef1343 from "module_1343" /* 1343 */;
+import FlagUtils from "FlagUtils" /* 1404 */;
+import ActivityTypes from "ActivityTypes" /* 5652 */;
+import ActivityGamePlatforms from "ActivityGamePlatforms" /* 7074 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5154 */;
-import ApplicationStore from "ApplicationStore" /* 2165 */;
-import RunningGameStore from "RunningGameStore" /* 2140 */;
-import SocialSdkApplicationStore from "SocialSdkApplicationStore" /* 7318 */;
-import FirstPartyRichPresenceStore from "FirstPartyRichPresenceStore" /* 7319 */;
-import SpotifyStore from "SpotifyStore" /* 7290 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6810 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import DetectableGameStore from "DetectableGameStore" /* 2159 */;
-import ExternalStreamingStore from "ExternalStreamingStore" /* 15988 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
-import SessionsStore from "SessionsStore" /* 6063 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4761 */;
+import ApplicationStore from "ApplicationStore" /* 2164 */;
+import RunningGameStore from "RunningGameStore" /* 2139 */;
+import SocialSdkApplicationStore from "SocialSdkApplicationStore" /* 6922 */;
+import FirstPartyRichPresenceStore from "FirstPartyRichPresenceStore" /* 6923 */;
+import SpotifyStore from "SpotifyStore" /* 6896 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1230 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6400 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import DetectableGameStore from "DetectableGameStore" /* 2158 */;
+import ExternalStreamingStore from "ExternalStreamingStore" /* 14756 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4816 */;
+import SessionsStore from "SessionsStore" /* 5656 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const ActivityFlagUtils = tmp(12697);
+const ActivityFlagUtils = tmp(12194);
 function updateActivities() {
   let id;
   let obj3;
@@ -93,39 +93,46 @@ function updateActivities() {
     if (streamerActiveStreamMetadata != null) {
       pid = streamerActiveStreamMetadata.pid;
     }
-    let tmp24 = null;
+    if (pid == null) {
+      let gamePid;
+      if (streamerActiveStreamMetadata != null) {
+        gamePid = streamerActiveStreamMetadata.gamePid;
+      }
+      pid = gamePid;
+    }
+    let tmp25 = null;
     if (null != pid) {
-      let found = visibleRunningGames.find((pid) => pid.pid === streamerActiveStreamMetadata.pid);
+      let found = visibleRunningGames.find((pid) => pid.pid === pid);
       if (found == null) {
         found = null;
       }
-      tmp24 = found;
+      tmp25 = found;
     }
-    let tmp26 = null == tmp24;
-    if (tmp26) {
+    let tmp27 = null == tmp25;
+    if (tmp27) {
       let id1;
       if (streamerActiveStreamMetadata != null) {
         id1 = streamerActiveStreamMetadata.id;
       }
-      tmp26 = null != id1;
+      tmp27 = null != id1;
     }
-    if (tmp26) {
+    if (tmp27) {
       let found1 = visibleRunningGames.find((id) => id.id === streamerActiveStreamMetadata.id);
       if (found1 == null) {
         found1 = null;
       }
-      tmp24 = found1;
+      tmp25 = found1;
     }
-    if (null != tmp24) {
-      tmp21 = tmp24;
+    if (null != tmp25) {
+      tmp21 = tmp25;
       if (null == c21) {
-        let start = tmp24.start;
+        let start = tmp25.start;
         if (start == null) {
           const _Date3 = Date;
           start = Date.now();
         }
         c21 = start;
-        tmp21 = tmp24;
+        tmp21 = tmp25;
       }
     } else {
       c21 = null;
@@ -165,8 +172,8 @@ function updateActivities() {
       return tmp2;
     });
   }
-  let tmp39 = null != tmp21 && null != tmp21.name;
-  if (tmp39) {
+  let tmp40 = null != tmp21 && null != tmp21.name;
+  if (tmp40) {
     if (!someResult) {
       someResult = set.has(tmp21.name);
     }
@@ -177,13 +184,13 @@ function updateActivities() {
       HermesBuiltin.arraySpread(items3, remoteActivities, HermesBuiltin.arraySpread(items3, items, 0));
       someResult = doesGameHaveRichPresence(tmp21, items3);
     }
-    tmp39 = someResult;
+    tmp40 = someResult;
   }
-  const tmp46 = null != tmp21 && tmp21.isLauncher;
+  const tmp47 = null != tmp21 && tmp21.isLauncher;
   if (null != tmp21) {
     if (null != tmp21.name) {
-      if (!tmp39) {
-        if (!tmp46) {
+      if (!tmp40) {
+        if (!tmp47) {
           const findGameResult = DetectableGameStore.findGame(tmp21);
           const push3 = items.push;
           const obj2 = { type: tmp(tmp2[17]).ActivityTypes.PLAYING, name: null, application_id: id, timestamps: obj3 };
@@ -230,7 +237,7 @@ function isNonContextlessEmbeddedActivity(platform) {
   return tmp3;
 }
 const ActivityFlags = Constants.ActivityFlags;
-const authStore4 = [];
+let closure_18 = [];
 let closure_19 = {};
 let set = new Set();
 let c21 = null;
@@ -305,7 +312,7 @@ let obj = {
         let tmp = activity.platform === ActivityGamePlatforms.ActivityGamePlatforms.EMBEDDED;
         const tmp11 = require;
         if (tmp) {
-          const tmp11Result = tmp11(12697);
+          const tmp11Result = tmp11(12194);
           tmp = !tmp11Result.isContextlessEmbeddedActivity(activity);
         }
         if (tmp) {
@@ -325,7 +332,7 @@ let obj = {
       tmp7 = null == closure_19[socketId];
     } else {
       const items = [pid, activity, partyPrivacy];
-      tmp7 = _modDef1345(closure_19[socketId], items);
+      tmp7 = _modDef1343(closure_19[socketId], items);
     }
     if (!tmp7) {
       if (null != activity) {

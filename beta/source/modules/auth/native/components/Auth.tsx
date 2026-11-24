@@ -1,30 +1,30 @@
-// Module ID: 18649
-// Function ID: 18650
+// Module ID: 17445
+// Function ID: 17446
 // Name: Auth
-// Dependencies: [32, 19, 17, 14831, 1072, 21, 18650, 18651, 7493, 18661, 7551, 7777, 5306, 575, 18704, 7770, 18656, 1644, 7714, 18705, 7712, 7793, 7490, 1360, 1113, 18706, 8678, 18715, 2]
+// Dependencies: [32, 19, 17, 13283, 1071, 21, 17446, 17447, 7095, 17457, 7153, 7379, 4913, 575, 17500, 7372, 17452, 1642, 7316, 17501, 7314, 7395, 7092, 1358, 1112, 17502, 8268, 17511, 2]
 
-// Module 18649 (Auth)
+// Module 17445 (Auth)
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import KeyboardChatScrollView from "KeyboardChatScrollView" /* 1644 */;
-import _mod7551 from "module_7551" /* 7551 */;
-import BackgroundImageDefault from "BackgroundImage" /* 7714 */;
-import useWideAuthViewDefault from "useWideAuthView" /* 7770 */;
-import MFAUtils from "MFAUtils" /* 7777 */;
-import RegistrationHandoff from "RegistrationHandoff" /* 18650 */;
-import useShouldShowChooseAccountDefault from "useShouldShowChooseAccount" /* 18656 */;
-import RegistrationUtils from "RegistrationUtils" /* 18661 */;
-import useIsHCaptchaModalOpenTracking from "useIsHCaptchaModalOpenTracking" /* 18704 */;
-import AssetRegistry from "AssetRegistry" /* 18705 */;
-import AuthManagerDefault from "AuthManager" /* 18706 */;
-import useOrientationLockDefault from "useOrientationLock" /* 18715 */;
+import Constants from "Constants" /* 1071 */;
+import KeyboardChatScrollView from "KeyboardChatScrollView" /* 1642 */;
+import _mod7153 from "module_7153" /* 7153 */;
+import BackgroundImageDefault from "BackgroundImage" /* 7316 */;
+import useWideAuthViewDefault from "useWideAuthView" /* 7372 */;
+import MFAUtils from "MFAUtils" /* 7379 */;
+import RegistrationHandoff from "RegistrationHandoff" /* 17446 */;
+import useShouldShowChooseAccountDefault from "useShouldShowChooseAccount" /* 17452 */;
+import RegistrationUtils from "RegistrationUtils" /* 17457 */;
+import useIsHCaptchaModalOpenTracking from "useIsHCaptchaModalOpenTracking" /* 17500 */;
+import AssetRegistry from "AssetRegistry" /* 17501 */;
+import AuthManagerDefault from "AuthManager" /* 17502 */;
+import useOrientationLockDefault from "useOrientationLock" /* 17511 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import MultiAccountStore from "MultiAccountStore" /* 14831 */;
+import MultiAccountStore from "MultiAccountStore" /* 13283 */;
 import Fragment from "Fragment" /* 21 */;
-import RegistrationStepsUtils_mod from "RegistrationStepsUtils" /* 18651 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import RegistrationStepsUtils_mod from "RegistrationStepsUtils" /* 17447 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let importDefault, set;
@@ -39,10 +39,10 @@ let obj4;
 let size;
 let tmp;
 let unpackModuleId;
-const intl2 = tmp(1113);
-const utils_PlatformUtils = tmp(1360);
-const Navigator3 = tmp(7490);
-const react2 = tmp(7793);
+const intl2 = tmp(1112);
+const utils_PlatformUtils = tmp(1358);
+const Navigator3 = tmp(7092);
+const react2 = tmp(7395);
 function getInitialAuthRouteStack() {
   let items1;
   obj = RegistrationHandoff;
@@ -112,7 +112,7 @@ function NavigatorWithCaptchaHook() {
     if (tmp9 === AuthStates.WELCOME) {
       tmp19Result = null;
       if (tmp7) {
-        tmp19Result = tmp19(tmp4(7712), {});
+        tmp19Result = tmp19(tmp4(7314), {});
       }
     }
   }
@@ -219,8 +219,8 @@ const screens = fromEntries(RegistrationStepsUtils.map((item) => {
   let tmp8 = null;
   set = new Set(items1);
   if (set.has(tmp)) {
-    tmp8 = { cardStyleInterpolator: _mod7551.CardStyleInterpolators.forFadeFromCenter };
-    const obj4 = { cardStyleInterpolator: _mod7551.CardStyleInterpolators.forFadeFromCenter };
+    tmp8 = { cardStyleInterpolator: _mod7153.CardStyleInterpolators.forFadeFromCenter };
+    const obj4 = { cardStyleInterpolator: _mod7153.CardStyleInterpolators.forFadeFromCenter };
   }
   const merged3 = Object.assign(tmp8);
   items[1] = obj;

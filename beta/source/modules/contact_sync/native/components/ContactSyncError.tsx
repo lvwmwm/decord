@@ -1,18 +1,18 @@
-// Module ID: 15014
-// Function ID: 15015
+// Module ID: 13600
+// Function ID: 13601
 // Name: ContactSyncError
-// Dependencies: [19, 21, 5306, 1655, 5538, 5919, 2]
+// Dependencies: [19, 21, 4913, 1653, 5123, 5504, 2]
 // Exports: default
 
-// Module 15014 (ContactSyncError)
+// Module 13600 (ContactSyncError)
 import Fragment from "Fragment" /* 21 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import timing_timing from "timing/timing" /* 5538 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import timing_timing from "timing/timing" /* 5123 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
-const _modDef1655 = _mod1655;
+const _modDef1653 = _mod1653;
 let num, obj;
 
 const jsx = Fragment.jsx;
@@ -29,8 +29,8 @@ export default function ContactSyncError(error) {
   const style = error.style;
   let tmp = closure_4();
   const items = [closure_5, , , ];
-  const useAnimatedStyle = _mod1655.useAnimatedStyle;
-  _mod1655;
+  const useAnimatedStyle = _mod1653.useAnimatedStyle;
+  _mod1653;
   items[1] = timing_timing.withTiming;
   let tmp5 = null != error;
   if (tmp5) {
@@ -56,6 +56,6 @@ export default function ContactSyncError(error) {
   ContactSyncErrorTsx1.__initData = tmp6;
   const animatedStyle = useAnimatedStyle(ContactSyncErrorTsx1);
   const items2 = [tmp.container, style, animatedStyle];
-  const View = _modDef1655.View;
+  const View = _modDef1653.View;
   return <View style={items2}>{null}</View>;
 };

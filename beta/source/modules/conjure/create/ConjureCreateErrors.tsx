@@ -1,13 +1,13 @@
-// Module ID: 7333
-// Function ID: 7334
+// Module ID: 6937
+// Function ID: 6938
 // Name: ConjureCreateErrors
-// Dependencies: [1072, 1113, 4131, 2]
+// Dependencies: [1071, 1112, 4190, 2]
 // Exports: classifyCreateFailure, createFailureStatus, getConjureCreateErrorMessage
 
-// Module 7333 (ConjureCreateErrors)
-import Constants from "Constants" /* 1072 */;
-import intl4 from "intl" /* 1113 */;
-import _modDef4131 from "module_4131" /* 4131 */;
+// Module 6937 (ConjureCreateErrors)
+import Constants from "Constants" /* 1071 */;
+import intl4 from "intl" /* 1112 */;
+import _modDef4190 from "module_4190" /* 4190 */;
 import size from "module_2" /* 2 */;
 
 const AbortCodes = Constants.AbortCodes;
@@ -69,12 +69,12 @@ export function getConjureCreateErrorMessage(reason) {
   }
   if ("project_limit" === str) {
     const intl3 = intl4.intl;
-    return intl3.string(_modDef4131["lh+h/p"]);
+    return intl3.string(_modDef4190["lh+h/p"]);
   } else if ("rate_limited" === str) {
     const intl2 = intl4.intl;
-    return intl2.string(_modDef4131.zBENJU);
+    return intl2.string(_modDef4190.zBENJU);
   } else {
     const intl = intl4.intl;
-    return intl.string(_modDef4131["9m86fn"]);
+    return intl.string(_modDef4190["9m86fn"]);
   }
 }

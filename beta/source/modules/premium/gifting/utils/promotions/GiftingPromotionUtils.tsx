@@ -1,23 +1,22 @@
-// Module ID: 11670
-// Function ID: 11671
+// Module ID: 9474
+// Function ID: 9475
 // Name: GiftingPromotionUtils
-// Dependencies: [32, 19, 9623, 1390, 504, 11671, 11672, 9627, 5338, 5139, 2]
-// Exports: combinePromotionStyles, createBackgroundStyle, createGradientStyle, getRewardAssetIdMap, shouldShowGiftPromotionReminderNotice, useFetchClaimableGiftingPromotionRewardSkuIds, useIsPlanEligibleForGiftingPromotion, useShouldAutoSelectGiftingPromotionReward, useShouldShowSelectFreeSkuStep
+// Dependencies: [32, 19, 9143, 504, 9475, 9476, 9477, 9147, 4945, 4746, 2]
+// Exports: combinePromotionStyles, createBackgroundStyle, createGradientStyle, getRewardAssetIdMap, shouldShowGiftPromotionReminderNotice, useFetchClaimableGiftingPromotionRewardSkuIds, useIsPlanEligibleForGiftingPromotion, useShouldAutoSelectGiftingPromotionReward
 
-// Module 11670 (GiftingPromotionUtils)
-import PremiumConstants from "PremiumConstants" /* 1390 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5338 */;
-import MarketingSurfaceType from "MarketingSurfaceType" /* 9627 */;
-import GiftPromotionReminderExperiment2 from "GiftPromotionReminderExperiment" /* 11672 */;
+// Module 9474 (GiftingPromotionUtils)
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4945 */;
+import MarketingSurfaceType from "MarketingSurfaceType" /* 9147 */;
+import GiftingPromotionPlanEligibility from "GiftingPromotionPlanEligibility" /* 9476 */;
+import GiftPromotionReminderExperiment2 from "GiftPromotionReminderExperiment" /* 9477 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import PromotionsStore from "PromotionsStore" /* 9623 */;
+import PromotionsStore from "PromotionsStore" /* 9143 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, map;
 
-const SubscriptionPlans = PremiumConstants.SubscriptionPlans;
 let result = size.fileFinishedImporting("modules/premium/gifting/utils/promotions/GiftingPromotionUtils.tsx");
 
 export function useFetchClaimableGiftingPromotionRewardSkuIds() {
@@ -64,51 +63,34 @@ export function getRewardAssetIdMap(arr) {
   const item = arr.forEach((skuId) => map.set(skuId.skuId, skuId.assetId));
   return map;
 }
-export function useShouldShowSelectFreeSkuStep(id, arg1, arg2) {
-  const items = [, , ];
-  ({ PREMIUM_YEAR_TIER_2: arr[0], PREMIUM_MONTH_TIER_2: arr[1], PREMIUM_3_MONTH_TIER_2: arr[2] } = SubscriptionPlans);
-  id = undefined;
-  const includes = items.includes;
-  if (id != null) {
-    id = id.id;
-  }
-  let tmp3 = null != arg2;
-  const hasItem = includes(id);
-  if (tmp3) {
-    tmp3 = arg2.length >= 1;
-  }
-  return arg1 && hasItem && tmp3;
-}
 export function useShouldAutoSelectGiftingPromotionReward(id, arg1, arg2) {
-  const items = [, , ];
-  ({ PREMIUM_YEAR_TIER_2: arr[0], PREMIUM_MONTH_TIER_2: arr[1], PREMIUM_3_MONTH_TIER_2: arr[2] } = SubscriptionPlans);
   id = undefined;
-  const includes = items.includes;
+  const isPlanEligibleForGiftingPromotion = GiftingPromotionPlanEligibility.isPlanEligibleForGiftingPromotion;
+  GiftingPromotionPlanEligibility;
   if (id != null) {
     id = id.id;
   }
-  let tmp3 = null != arg2;
-  const hasItem = includes(id);
-  if (tmp3) {
-    tmp3 = 1 === arg2.length;
+  let tmp4 = null != arg2;
+  const result = isPlanEligibleForGiftingPromotion(id);
+  if (tmp4) {
+    tmp4 = 1 === arg2.length;
   }
-  if (tmp3) {
-    tmp3 = hasItem;
+  if (tmp4) {
+    tmp4 = result;
   }
-  if (tmp3) {
-    tmp3 = arg1;
+  if (tmp4) {
+    tmp4 = arg1;
   }
-  return tmp3;
+  return tmp4;
 }
 export function useIsPlanEligibleForGiftingPromotion(id) {
-  const items = [, , ];
-  ({ PREMIUM_YEAR_TIER_2: arr[0], PREMIUM_MONTH_TIER_2: arr[1], PREMIUM_3_MONTH_TIER_2: arr[2] } = SubscriptionPlans);
   id = undefined;
-  const includes = items.includes;
+  const isPlanEligibleForGiftingPromotion = GiftingPromotionPlanEligibility.isPlanEligibleForGiftingPromotion;
+  GiftingPromotionPlanEligibility;
   if (id != null) {
     id = id.id;
   }
-  return includes(id);
+  return isPlanEligibleForGiftingPromotion(id);
 }
 export function createGradientStyle(gradient, arg1) {
   if (null != gradient) {
@@ -200,10 +182,10 @@ export function shouldShowGiftPromotionReminderNotice() {
       let tmp5 = null != id;
       if (tmp5) {
         const tmpResult = DismissibleContentUnsafeUtils;
-        let isDismissed = tmpResult.UNSAFE_isSnowflakeBoundDismissibleContentDismissed(tmp(5139).DismissibleContent.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK, id).isDismissed;
+        let isDismissed = tmpResult.UNSAFE_isSnowflakeBoundDismissibleContentDismissed(tmp(4746).DismissibleContent.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK, id).isDismissed;
         if (isDismissed) {
           const tmpResult2 = DismissibleContentUnsafeUtils;
-          isDismissed = !tmpResult2.UNSAFE_isSnowflakeBoundDismissibleContentDismissed(tmp(5139).DismissibleContent.GIFTING_PROMOTION_REMINDER, id).isDismissed;
+          isDismissed = !tmpResult2.UNSAFE_isSnowflakeBoundDismissibleContentDismissed(tmp(4746).DismissibleContent.GIFTING_PROMOTION_REMINDER, id).isDismissed;
         }
         tmp5 = isDismissed;
       }

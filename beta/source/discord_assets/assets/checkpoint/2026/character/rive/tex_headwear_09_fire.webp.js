@@ -1,11 +1,11 @@
-// Module ID: 14362
-// Function ID: 14363
+// Module ID: 12601
+// Function ID: 12602
 // Dependencies: [2]
 
-// Module 14362
+// Module 12601
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_headwear_09_fire.webp.js");
 
-export default "https://cdn.discordapp.com/assets/content/52c3472e9e5c5d0923e77b50358d3e71ab1e40aab8df78dba73163d2c3dea572.webp";
-export const metadata = { fileBytes: 95256 };
+export default "https://cdn.discordapp.com/assets/content/55947b2deb21a91c8f89dc38e7fcf7c399ca7ff0cf0c69237a83e3cb2b28a0ee.webp";
+export const metadata = { fileBytes: 332120 };

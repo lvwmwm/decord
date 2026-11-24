@@ -1,15 +1,15 @@
-// Module ID: 8531
-// Function ID: 8532
+// Module ID: 8121
+// Function ID: 8122
 // Name: LibraryApplicationUtils
-// Dependencies: [32, 1388, 7070, 1072, 5131, 2]
+// Dependencies: [32, 1386, 6674, 1071, 4738, 2]
 // Exports: calculateProgressPercentage, convertComboId, convertToTransitionState, getCombinedProgress, getComboId, isUserEntitledToLibraryApplication, shouldShareApplicationActivity, shouldShowGameInLibrary
 
-// Module 8531 (LibraryApplicationUtils)
-import UserSettings from "UserSettings" /* 5131 */;
+// Module 8121 (LibraryApplicationUtils)
+import UserSettings from "UserSettings" /* 4738 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import UserStore from "UserStore" /* 1388 */;
-import SKUStore from "SKUStore" /* 7070 */;
-import Constants from "Constants" /* 1072 */;
+import UserStore from "UserStore" /* 1386 */;
+import SKUStore from "SKUStore" /* 6674 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;

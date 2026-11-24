@@ -1,20 +1,20 @@
-// Module ID: 19401
-// Function ID: 19402
+// Module ID: 18203
+// Function ID: 18204
 // Name: ResourcesRow
-// Dependencies: [19, 17, 19402, 21, 5306, 575, 19403, 14684, 5542, 19404, 2121, 7428, 5919, 1113, 2]
+// Dependencies: [19, 17, 18204, 21, 4913, 575, 18205, 13139, 5127, 18206, 2119, 7030, 5504, 1112, 2]
 // Exports: default
 
-// Module 19401 (ResourcesRow)
+// Module 18203 (ResourcesRow)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
-import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 14684 */;
-import OnboardingHomeConstants from "OnboardingHomeConstants" /* 19402 */;
-import useResourceChannelsDefault from "useResourceChannels" /* 19403 */;
+import asyncRequire from "asyncRequire" /* 2119 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
+import GuildOnboardingHomeActionCreators from "GuildOnboardingHomeActionCreators" /* 13139 */;
+import OnboardingHomeConstants from "OnboardingHomeConstants" /* 18204 */;
+import useResourceChannelsDefault from "useResourceChannels" /* 18205 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
@@ -71,14 +71,14 @@ export default function ResourcesRow(guildId) {
       onPress() {
           const obj = ActionSheetActionCreatorsDefault;
           const obj2 = { guildId };
-          obj.openLazy(asyncRequire(19404, dependencyMap.paths), closure_4, obj2);
+          obj.openLazy(asyncRequire(18206, dependencyMap.paths), closure_4, obj2);
         },
       children: closure_5(Text, obj3)
     };
-    let PressableOpacity = guildId(7428).PressableOpacity;
-    obj3 = { variant: "body-md/medium", color: "text-default", children: intl.format(guildId(1113).t.F6iMs4, obj4) };
-    Text = guildId(5919).Text;
-    intl = guildId(1113).intl;
+    let PressableOpacity = guildId(7030).PressableOpacity;
+    obj3 = { variant: "body-md/medium", color: "text-default", children: intl.format(guildId(1112).t.F6iMs4, obj4) };
+    Text = guildId(5504).Text;
+    intl = guildId(1112).intl;
     obj4 = { count: arr.length - 2 };
     tmp6 = closure_5(PressableOpacity, obj2);
   }

@@ -1,23 +1,23 @@
-// Module ID: 19709
-// Function ID: 19710
+// Module ID: 18960
+// Function ID: 18961
 // Name: ChannelSettingsIntegrationsOverview
-// Dependencies: [19, 5159, 5155, 1072, 21, 1502, 7259, 7746, 1113, 7443, 8151, 5306, 575, 504, 8106, 6327, 19575, 19710, 2]
+// Dependencies: [19, 4766, 4762, 1071, 21, 1500, 6864, 7348, 1112, 7045, 7754, 4913, 575, 504, 7709, 5929, 18836, 18961, 2]
 // Exports: default
 
-// Module 19709 (ChannelSettingsIntegrationsOverview)
+// Module 18960 (ChannelSettingsIntegrationsOverview)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import intl5 from "intl" /* 1113 */;
-import useNavigation from "useNavigation" /* 1502 */;
-import ChannelRecord from "ChannelRecord" /* 5159 */;
-import TableRowApplicationIconDefault from "TableRowApplicationIcon" /* 8151 */;
-import WebhookIcon from "WebhookIcon" /* 19575 */;
-import ChannelsFollowedIcon from "ChannelsFollowedIcon" /* 19710 */;
+import Constants from "Constants" /* 1071 */;
+import intl5 from "intl" /* 1112 */;
+import useNavigation from "useNavigation" /* 1500 */;
+import ChannelRecord from "ChannelRecord" /* 4766 */;
+import TableRowApplicationIconDefault from "TableRowApplicationIcon" /* 7754 */;
+import WebhookIcon from "WebhookIcon" /* 18836 */;
+import ChannelsFollowedIcon from "ChannelsFollowedIcon" /* 18961 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
@@ -32,21 +32,21 @@ function LinkedLobbyFormSection(channel) {
   let obj3;
   let obj4;
   channel = channel.channel;
-  let obj = channel(1502);
+  let obj = channel(1500);
   importDefault = obj.useNavigation();
   const linkedLobby = channel.linkedLobby;
   let application_id;
-  const useGetOrFetchApplication = channel(7259).useGetOrFetchApplication;
-  channel(7259);
+  const useGetOrFetchApplication = channel(6864).useGetOrFetchApplication;
+  channel(6864);
   if (linkedLobby != null) {
     application_id = linkedLobby.application_id;
   }
   const getOrFetchApplication = useGetOrFetchApplication(application_id);
   let tmp6 = null;
   if (null != getOrFetchApplication) {
-    const obj2 = { title: intl.string(channel(1113).t.oAvIAg), hasIcons: true, children: closure_6(TableRow, obj3) };
-    const TableRowGroup = tmp(7746).TableRowGroup;
-    intl = tmp(1113).intl;
+    const obj2 = { title: intl.string(channel(1112).t.oAvIAg), hasIcons: true, children: closure_6(TableRow, obj3) };
+    const TableRowGroup = tmp(7348).TableRowGroup;
+    intl = tmp(1112).intl;
     obj3 = {
       label: getOrFetchApplication.name,
       icon: closure_6(TableRowApplicationIconDefault, obj4),
@@ -56,7 +56,7 @@ function LinkedLobbyFormSection(channel) {
           closure_1.push(ChannelSettingsSections.EDIT_LINKED_LOBBY, obj);
         }
     };
-    TableRow = tmp(7443).TableRow;
+    TableRow = tmp(7045).TableRow;
     obj4 = { application: getOrFetchApplication };
     tmp6 = closure_6(TableRowGroup, obj2);
   }
@@ -91,12 +91,12 @@ export default function ConnectedChannelSettingsIntegrationsOverview(arg0) {
   let tmp6Result = null;
   if (null != stateFromStores) {
     const obj3 = { style: tmp4.screenContainer, children: closure_7(Stack, obj4) };
-    const Form = tmp(8106).Form;
+    const Form = tmp(7709).Form;
     obj4 = { style: obj5, spacing: nativeDefault.space.PX_24, children: items2 };
     obj5 = { paddingHorizontal: nativeDefault.space.PX_12 };
-    Stack = tmp(6327).Stack;
+    Stack = tmp(5929).Stack;
     if (canManageWebhooks) {
-      const TableRowGroup = tmp(7746).TableRowGroup;
+      const TableRowGroup = tmp(7348).TableRowGroup;
       const obj6 = {
         label: intl.string(intl5.t.jp25Id),
         subLabel: intl2.string(intl5.t.mKIOkI),
@@ -106,9 +106,9 @@ export default function ConnectedChannelSettingsIntegrationsOverview(arg0) {
               return closure_1.push(ChannelSettingsSections.WEBHOOKS);
             }
       };
-      const TableRow = tmp(7443).TableRow;
-      intl = tmp(1113).intl;
-      intl2 = tmp(1113).intl;
+      const TableRow = tmp(7045).TableRow;
+      intl = tmp(1112).intl;
+      intl2 = tmp(1112).intl;
       const items1 = [closure_6(TableRow, obj6), ];
       let hasItem = set.has(stateFromStores.type);
       if (hasItem) {
@@ -121,9 +121,9 @@ export default function ConnectedChannelSettingsIntegrationsOverview(arg0) {
                   return closure_1.push(ChannelSettingsSections.CHANNELS_FOLLOWED);
                 }
         };
-        const TableRow2 = tmp(7443).TableRow;
-        intl3 = tmp(1113).intl;
-        intl4 = tmp(1113).intl;
+        const TableRow2 = tmp(7045).TableRow;
+        intl3 = tmp(1112).intl;
+        intl4 = tmp(1112).intl;
         hasItem = tmp6(TableRow2, obj7);
       }
       const obj8 = { hasIcons: true, children: items1 };

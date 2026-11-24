@@ -1,11 +1,11 @@
-// Module ID: 14466
-// Function ID: 14467
+// Module ID: 12705
+// Function ID: 12706
 // Dependencies: [2]
 
-// Module 14466
+// Module 12705
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_wearable_12_magicalStaff.webp.js");
 
-export default "https://cdn.discordapp.com/assets/content/3f2089245e36fa8abca99b90cfc479420e158de8b7f7d1875a09e2da33861bcb.webp";
-export const metadata = { fileBytes: 27938 };
+export default "https://cdn.discordapp.com/assets/content/d8d4dbae472982c2ab1537504dba4aa659314eb7ccc5feffdc08e971bdee8ca2.webp";
+export const metadata = { fileBytes: 64206 };

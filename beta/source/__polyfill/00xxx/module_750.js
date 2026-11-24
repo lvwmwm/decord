@@ -16,20 +16,20 @@ export function createMetricContainerEnvelopeItem(items) {
   items[1] = { items };
   return items;
 }
-export function createMetricEnvelope(items, sdk, arg2, arg3) {
-  sdk = undefined;
-  if (sdk != null) {
-    sdk = sdk.sdk;
+export function createMetricEnvelope(items, _metadata, tunnel, dsn) {
+  let sdk;
+  if (_metadata != null) {
+    sdk = _metadata.sdk;
   }
   const obj = {};
   if (sdk) {
-    const obj2 = { name: sdk.sdk.name, version: sdk.sdk.version };
+    const obj2 = { name: _metadata.sdk.name, version: _metadata.sdk.version };
     obj.sdk = obj2;
   }
-  const tmp2 = arg2 && arg3;
+  const tmp2 = tunnel && dsn;
   if (tmp2) {
     const obj3 = _mod701;
-    obj.dsn = obj3.dsnToString(arg3);
+    obj.dsn = obj3.dsnToString(dsn);
   }
   items = [, ];
   const obj5 = { type: "trace_metric", item_count: items.length, content_type: "application/vnd.sentry.items.trace-metric+json" };

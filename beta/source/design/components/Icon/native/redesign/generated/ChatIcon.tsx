@@ -1,14 +1,14 @@
-// Module ID: 8069
-// Function ID: 8070
+// Module ID: 7672
+// Function ID: 7673
 // Name: ChatIcon
-// Dependencies: [19, 21, 575, 6009, 8050, 2]
+// Dependencies: [19, 21, 575, 5599, 7653, 2]
 // Exports: ChatIcon
 
-// Module 8069 (ChatIcon)
+// Module 7672 (ChatIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 6009 */;
-import AssetRegistry from "AssetRegistry" /* 8050 */;
+import BaseIconImage2 from "BaseIconImage" /* 5599 */;
+import AssetRegistry from "AssetRegistry" /* 7653 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

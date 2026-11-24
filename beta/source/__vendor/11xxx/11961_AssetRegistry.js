@@ -1,10 +1,10 @@
 // Module ID: 11961
 // Function ID: 11962
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 11961 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/channel_following", width: 400, height: 96, scales: [1, 2, 3], hash: "6d4af89335f89fb4d2742f6a0658e9cc", name: "channel-following-backdrop-dark", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 16, height: 16, scales: [1, 2, 3], hash: "2b87933d8084823c9896755fb55aa5f1", name: "ic_spotify_white_16px", type: "png" });

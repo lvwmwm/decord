@@ -1,16 +1,16 @@
-// Module ID: 14765
-// Function ID: 14766
+// Module ID: 13220
+// Function ID: 13221
 // Name: AbstractSearchSessionAnalyticsManager
-// Dependencies: [1269, 14749, 2]
+// Dependencies: [1268, 13204, 2]
 
-// Module 14765 (AbstractSearchSessionAnalyticsManager)
-import SearchUtils from "SearchUtils" /* 14749 */;
+// Module 13220 (AbstractSearchSessionAnalyticsManager)
+import SearchUtils from "SearchUtils" /* 13204 */;
 import size from "module_2" /* 2 */;
 
 let set;
 
 let tmp;
-const v1 = tmp(1269);
+const v1 = tmp(1268);
 let result = size.fileFinishedImporting("modules/search/managers/AbstractSearchSessionAnalyticsManager.tsx");
 class AbstractSearchSessionAnalyticsManager {
   constructor() {
@@ -91,15 +91,15 @@ class AbstractSearchSessionAnalyticsManager {
     obj2 = v1;
     setSession(arg0, obj);
   }
-  terminate(arg0) {
-    this._terminate(arg0);
-    this.deleteSession(arg0);
+  terminate(searchContext) {
+    this._terminate(searchContext);
+    this.deleteSession(searchContext);
   }
-  transferSession(arg0, searchContext) {
+  transferSession(searchContext, searchContext2) {
     let tmp3Result;
     const self = this;
-    this._transferSession(arg0, searchContext);
-    let session = this.getSession(arg0);
+    this._transferSession(searchContext, searchContext);
+    let session = this.getSession(searchContext);
     const sessions = this.sessions;
     set = sessions.set;
     const obj = SearchUtils;
@@ -110,7 +110,7 @@ class AbstractSearchSessionAnalyticsManager {
       tmp3Result = v1;
     }
     const result = set(searchContextId, session);
-    self.deleteSession(arg0);
+    self.deleteSession(searchContext);
   }
 }
 const prototype = AbstractSearchSessionAnalyticsManager.prototype;

@@ -1,11 +1,11 @@
-// Module ID: 18936
-// Function ID: 18937
+// Module ID: 17729
+// Function ID: 17730
 // Name: useSubmittedGuildJoinRequestTotal
-// Dependencies: [6923, 504, 2]
+// Dependencies: [6527, 504, 2]
 // Exports: useSubmittedGuildJoinRequestTotal
 
-// Module 18936 (useSubmittedGuildJoinRequestTotal)
-import GuildJoinRequestStore from "GuildJoinRequestStore" /* 6923 */;
+// Module 17729 (useSubmittedGuildJoinRequestTotal)
+import GuildJoinRequestStore from "GuildJoinRequestStore" /* 6527 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/guild_member_verification/hooks/useSubmittedGuildJoinRequestTotal.tsx");

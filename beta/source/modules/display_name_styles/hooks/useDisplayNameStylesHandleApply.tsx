@@ -1,16 +1,16 @@
-// Module ID: 17960
-// Function ID: 17961
+// Module ID: 16739
+// Function ID: 16740
 // Name: useDisplayNameStylesHandleApply
-// Dependencies: [5, 32, 19, 1388, 1072, 5331, 1396, 17086, 5334, 7800, 17087, 6957, 9399, 9398, 1256, 1398, 1399, 2]
+// Dependencies: [5, 32, 19, 1386, 1071, 4938, 1394, 15851, 4941, 7402, 15852, 6561, 8910, 8909, 1255, 1396, 1397, 2]
 // Exports: useDisplayNameStylesHandleApply
 
-// Module 17960 (useDisplayNameStylesHandleApply)
-import Constants from "Constants" /* 1072 */;
+// Module 16739 (useDisplayNameStylesHandleApply)
+import Constants from "Constants" /* 1071 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1388 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5331 */;
+import UserStore from "UserStore" /* 1386 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4938 */;
 import size from "module_2" /* 2 */;
 
 let c3, c4, c5, closure_0, colors, displayNameStyles;

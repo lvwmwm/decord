@@ -1,75 +1,155 @@
-// Module ID: 17822
-// Function ID: 17823
+// Module ID: 16601
+// Function ID: 16602
 // Name: QuestDockPlayableBody
-// Dependencies: [19, 6954, 21, 17785, 17729, 17697, 17704, 10168, 7918, 10135, 10138, 6961, 8834, 6957, 12707, 10170, 17808, 10158, 17819, 1113, 7988, 12301, 2]
+// Dependencies: [5, 19, 6558, 21, 16562, 16506, 16470, 16477, 9996, 7520, 9961, 9964, 6565, 8430, 6561, 16602, 12199, 9998, 16585, 9984, 16598, 1112, 7591, 10376, 2]
 
-// Module 17822 (QuestDockPlayableBody)
+// Module 16601 (QuestDockPlayableBody)
 import Fragment from "Fragment" /* 21 */;
-import QuestConstants from "QuestConstants" /* 6954 */;
-import QuestTypes from "QuestTypes" /* 6957 */;
-import AdCreativeType from "AdCreativeType" /* 6961 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 8834 */;
-import captureAdUserAction from "captureAdUserAction" /* 10135 */;
-import captureAdUserActionTypes from "captureAdUserActionTypes" /* 10138 */;
-import QuestPlatformUtils from "QuestPlatformUtils" /* 10170 */;
-import GamesActionCreatorsDefault from "GamesActionCreators" /* 12707 */;
+import QuestConstants from "QuestConstants" /* 6558 */;
+import QuestTypes from "QuestTypes" /* 6561 */;
+import AdCreativeType from "AdCreativeType" /* 6565 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 8430 */;
+import QuestPlatformUtils from "QuestPlatformUtils" /* 9998 */;
+import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
+
+let c6, c7, constants;
 
 const QuestDockMode = QuestConstants.QuestDockMode;
 const jsx = Fragment.jsx;
 const memoResult = react.memo(function QuestDockPlayableBody() {
-  let analyticsLocations;
+  let IconButton;
   let getQuestImpressionId;
+  let intl;
+  let intl2;
+  let obj6;
+  let obj7;
   let questDockPlayable;
   let setRestingQuestDockMode;
+  let tmp11;
   let tmp = setRestingQuestDockMode;
-  const isRendered = analyticsLocations.useContext(setRestingQuestDockMode(getQuestImpressionId[3])).isRendered;
-  let obj = questDockPlayable(getQuestImpressionId[4]);
+  const isRendered = react.useContext(setRestingQuestDockMode(getQuestImpressionId[4])).isRendered;
+  const tmp3 = questDockPlayable;
+  let obj = questDockPlayable(getQuestImpressionId[5]);
   questDockPlayable = obj.useQuestDockPlayable();
-  let obj2 = questDockPlayable(getQuestImpressionId[5]);
+  let obj2 = questDockPlayable(getQuestImpressionId[6]);
   let isQuestDockExpanded = obj2.useIsQuestDockExpanded();
-  setRestingQuestDockMode = analyticsLocations.useContext(questDockPlayable(getQuestImpressionId[6]).QuestDockExternalCoordinationContext).setRestingQuestDockMode;
-  let obj3 = questDockPlayable(getQuestImpressionId[7]);
+  setRestingQuestDockMode = react.useContext(questDockPlayable(getQuestImpressionId[7]).QuestDockExternalCoordinationContext).setRestingQuestDockMode;
+  let obj3 = questDockPlayable(getQuestImpressionId[8]);
   getQuestImpressionId = obj3.useGetQuestImpressionId();
-  analyticsLocations = setRestingQuestDockMode(getQuestImpressionId[8])().analyticsLocations;
-  const items = [, , , , ];
-  ({ id: arr[0], applicationId: arr[1] } = questDockPlayable);
-  items[2] = analyticsLocations;
-  items[3] = getQuestImpressionId;
-  items[4] = setRestingQuestDockMode;
+  const analyticsLocations = setRestingQuestDockMode(getQuestImpressionId[9])().analyticsLocations;
+  const items = [questDockPlayable, analyticsLocations, getQuestImpressionId, setRestingQuestDockMode];
   const items1 = [, , ];
   ({ id: arr2[0], cta: arr2[1] } = questDockPlayable);
   items1[2] = getQuestImpressionId;
-  const callback = analyticsLocations.useCallback(() => {
-    const obj = captureAdUserAction;
-    const obj2 = { type: captureAdUserActionTypes.AdUserActionType.CLICK_INTERNAL, adCreativeType: AdCreativeType.AdCreativeType.PLAYABLE, adCreativeId: questDockPlayable.id, questContentCTA: AnalyticsTypes.QuestContentCTA.LAUNCH_MOBILE_ACTIVITY, surfaceId: QuestTypes.QuestContent.QUEST_BAR_MOBILE, sourceQuestContent: QuestTypes.QuestContent.QUEST_BAR_MOBILE, impressionId: getQuestImpressionId() };
-    obj.captureAdUserAction(obj2);
-    const obj3 = GamesActionCreatorsDefault;
-    const obj4 = { applicationId: questDockPlayable.applicationId, analyticsLocations };
-    obj3.launch(obj4);
-    setRestingQuestDockMode(QuestDockMode.COLLAPSED);
-  }, items);
-  const callback1 = analyticsLocations.useCallback(() => {
+  const callback = react.useCallback(analyticsLocations(function*(arg0, value) {
+    let closure_2;
+    let completePlayableLaunch;
+    let recordPlayableLaunchResult;
+    let tmp16;
+    if (c7 === 2) {
+      c7 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj3 = { value, done: true };
+        return obj3;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        let c0;
+        c7 = 2;
+        if (0 === c6) {
+          if (arg0 === 1) {
+            c7 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c7 = 3;
+            const obj4 = { value, done: true };
+            return obj4;
+          } else {
+            let closure_3 = tmp;
+            let closure_4 = tmp16;
+            const tmp21 = getQuestImpressionId();
+            const obj5 = { type: recordPlayableLaunchResult(getQuestImpressionId[11]).AdUserActionType.CLICK_INTERNAL, adCreativeType: recordPlayableLaunchResult(getQuestImpressionId[12]).AdCreativeType.PLAYABLE, adCreativeId: questDockPlayable.id, questContentCTA: recordPlayableLaunchResult(getQuestImpressionId[13]).QuestContentCTA.LAUNCH_MOBILE_ACTIVITY, surfaceId: recordPlayableLaunchResult(getQuestImpressionId[14]).QuestContent.QUEST_BAR_MOBILE, sourceQuestContent: recordPlayableLaunchResult(getQuestImpressionId[14]).QuestContent.QUEST_BAR_MOBILE, impressionId: tmp21 };
+            const captureAdUserAction = recordPlayableLaunchResult(getQuestImpressionId[10]).captureAdUserAction;
+            const tmp24 = recordPlayableLaunchResult(getQuestImpressionId[10]);
+            captureAdUserAction(obj5);
+            const obj7 = recordPlayableLaunchResult(getQuestImpressionId[15]);
+            recordPlayableLaunchResult = obj7.recordPlayableLaunch(questDockPlayable, tmp21);
+            c0 = recordPlayableLaunchResult;
+            constants = 1;
+            const obj6 = { applicationId: questDockPlayable.applicationId, analyticsLocations };
+            const obj8 = completePlayableLaunch(getQuestImpressionId[16]);
+            const launchResult = obj8.launch(obj6);
+            setRestingQuestDockMode(constants.COLLAPSED);
+            const tmp49 = recordPlayableLaunchResult(getQuestImpressionId[15]);
+            getQuestImpressionId = tmp49;
+            completePlayableLaunch = tmp49.completePlayableLaunch;
+            c6 = 2;
+            c7 = 1;
+            const obj9 = { value: launchResult, done: false };
+            return obj9;
+          }
+        } else {
+          if (1 === tmp4) {
+            constants = 0;
+            const obj2 = recordPlayableLaunchResult(getQuestImpressionId[15]);
+            const result = obj2.completePlayableLaunch(c0, false);
+          } else if (arg0 === 1) {
+            c7 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            constants = 0;
+            c7 = 3;
+            const obj = { value, done: true };
+            return obj;
+          } else {
+            completePlayableLaunch(recordPlayableLaunchResult, value);
+            constants = 0;
+          }
+          c7 = 3;
+          return { value: "HermesInternal", done: null };
+        }
+      } catch (tmp15) {
+        tmp16 = constants;
+        if (0 === constants) {
+          c7 = 3;
+          throw tmp15;
+        } else {
+          c6 = 1;
+        }
+      }
+    }
+  }), items);
+  const callback1 = react.useCallback(() => {
     const openAdGameLinkDirectly = QuestPlatformUtils.openAdGameLinkDirectly;
     const obj = { adContentId: questDockPlayable.id, adCreativeType: AdCreativeType.AdCreativeType.PLAYABLE, cta: questDockPlayable.cta };
     const obj2 = { content: QuestTypes.QuestContent.QUEST_BAR_MOBILE, ctaContent: AnalyticsTypes.QuestContentCTA.OPEN_GAME_LINK, impressionId: getQuestImpressionId(), sourceQuestContent: QuestTypes.QuestContent.QUEST_BAR_MOBILE };
     const result = openAdGameLinkDirectly(obj, obj2);
   }, items1);
-  setRestingQuestDockMode(getQuestImpressionId[16]);
-  const QuestDockBodyRewardTile = questDockPlayable(getQuestImpressionId[16]).QuestDockBodyRewardTile;
-  let tmp11 = !isQuestDockExpanded;
+  const tmp10 = setRestingQuestDockMode(getQuestImpressionId[18]);
+  let obj4 = { assetUrl: setRestingQuestDockMode(getQuestImpressionId[19]), isAnimatedAsset: true, paused: tmp11, withAnimation: isQuestDockExpanded };
+  const QuestDockBodyRewardTile = questDockPlayable(getQuestImpressionId[18]).QuestDockBodyRewardTile;
+  tmp11 = !isQuestDockExpanded;
   if (isQuestDockExpanded) {
     tmp11 = !isRendered;
   }
   if (isQuestDockExpanded) {
     isQuestDockExpanded = isRendered;
   }
-  const intl = tmp3(tmp2[19]).intl;
-  const intl2 = tmp3(tmp2[19]).intl;
-  ({ variant: "secondary-overlay", size: "md", icon: tmp(getQuestImpressionId[21]), accessibilityLabel: questDockPlayable.cta.buttonLabel, onPress: callback1 });
-  const IconButton = tmp3(tmp2[20]).IconButton;
-  return <tmp10 rewardTile={<QuestDockBodyRewardTile assetUrl={setRestingQuestDockMode(getQuestImpressionId[17])} isAnimatedAsset paused={tmp11} withAnimation={isQuestDockExpanded} />} contentBadge={jsx(tmp(getQuestImpressionId[18]), {})} title={questDockPlayable.productName} description={intl.string(questDockPlayable(getQuestImpressionId[19]).t["1uzE2S"])} ctaText={intl2.string(questDockPlayable(getQuestImpressionId[19]).t.U7cCLU)} onCtaPress={callback} ctaButtonVariant="primary" secondaryCta={null} />;
+  let obj5 = { rewardTile: tmp9(QuestDockBodyRewardTile, obj4), contentBadge: tmp9(tmp(tmp2[20]), {}), title: questDockPlayable.productName, description: intl.string(tmp3(tmp2[21]).t.vGP84Q), ctaText: intl2.formatToPlainString(tmp3(tmp2[21]).t.dPT1o7, obj6), onCtaPress: callback, ctaButtonVariant: "primary", secondaryCta: tmp9(IconButton, obj7) };
+  intl = tmp3(tmp2[21]).intl;
+  intl2 = tmp3(tmp2[21]).intl;
+  obj6 = { seconds: questDockPlayable.rewardTimerSeconds };
+  obj7 = { variant: "secondary-overlay", size: "md", icon: tmp(tmp2[23]), accessibilityLabel: questDockPlayable.cta.buttonLabel, onPress: callback1 };
+  IconButton = tmp3(tmp2[22]).IconButton;
+  return jsx(tmp10, obj5);
 });
 let result = size.fileFinishedImporting("modules/quests/native/QuestDock/QuestDockPlayableBody.tsx");
 

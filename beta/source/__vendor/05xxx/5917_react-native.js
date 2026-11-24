@@ -1,45 +1,14 @@
 // Module ID: 5917
 // Function ID: 5918
 // Name: react-native
-// Dependencies: [17]
-// Exports: parsePossibleSources
+// Dependencies: [17, 65]
 
 // Module 5917 (react-native)
 import react_native from "react-native" /* 17 */;
+import module_65 from "module_65" /* 65 */;
 
-const Image = react_native.Image;
+const codegenNativeComponent = react_native.codegenNativeComponent;
+const __INTERNAL_VIEW_CONFIG = { uiViewClassName: "RNSFullWindowOverlay", validAttributes: { accessibilityContainerViewIsModal: true } };
 
-export function parsePossibleSources(source) {
-  let obj;
-  const uri = source.uri;
-  if (typeof source === "string") {
-    obj = { sourceName: source };
-    const obj2 = { sourceName: source };
-  } else {
-    let tmp2;
-    if (typeof source === "object") {
-      if (!uri) {
-        obj = { sourceJson: JSON.stringify(source) };
-        const _JSON = JSON;
-      }
-    }
-    if (typeof source === "object") {
-      if (uri) {
-        let obj4;
-        if (uri.includes(".lottie")) {
-          obj4 = { sourceDotLottieURI: uri };
-          const obj3 = { sourceDotLottieURI: uri };
-        } else {
-          obj4 = { sourceURL: uri };
-        }
-        tmp2 = obj4;
-      }
-      obj = tmp2;
-    }
-    if (typeof source === "number") {
-      tmp2 = { sourceDotLottieURI: Image.resolveAssetSource(source).uri };
-      const obj5 = { sourceDotLottieURI: Image.resolveAssetSource(source).uri };
-    }
-  }
-  return obj;
-}
+export default module_65.get("RNSFullWindowOverlay", () => obj);
+export { __INTERNAL_VIEW_CONFIG };

@@ -1,0 +1,12 @@
+// Module ID: 15319
+// Function ID: 15320
+// Dependencies: [15308]
+
+// Module 15319
+import _mod15308 from "module_15308" /* 15308 */;
+
+
+export default (arg0, arg1) => {
+  const tmp = new _mod15308(arg0, arg1);
+  return tmp.minor;
+};

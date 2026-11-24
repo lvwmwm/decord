@@ -1,14 +1,14 @@
-// Module ID: 8468
-// Function ID: 8469
+// Module ID: 8059
+// Function ID: 8060
 // Name: StreamerApplicationSelectors
-// Dependencies: [6058, 6059, 8469, 558, 504, 2]
+// Dependencies: [5651, 5652, 8060, 558, 504, 2]
 // Exports: getStreamerActivity, getStreamerActivityByUserId, getStreamerApplication, useGetStreamApplication
 
-// Module 8468 (StreamerApplicationSelectors)
+// Module 8059 (StreamerApplicationSelectors)
 import shallowEqualDefault from "shallowEqual" /* 558 */;
-import ActivityTypes from "ActivityTypes" /* 6059 */;
-import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 8469 */;
-import PresenceStore from "PresenceStore" /* 6058 */;
+import ActivityTypes from "ActivityTypes" /* 5652 */;
+import isEmbeddedActivityDefault from "isEmbeddedActivity" /* 8060 */;
+import PresenceStore from "PresenceStore" /* 5651 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

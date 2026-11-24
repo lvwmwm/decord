@@ -1,31 +1,31 @@
-// Module ID: 19434
-// Function ID: 19435
+// Module ID: 18695
+// Function ID: 18696
 // Name: AppChannel
-// Dependencies: [19, 17, 19435, 21, 5306, 575, 2023, 5903, 13347, 19436, 16990, 13346, 13348, 7260, 6053, 13357, 13361, 19439, 7394, 19440, 19443, 1113, 7055, 6010, 1414, 10546, 5926, 5967, 19444, 9068, 7052, 19445, 11977, 2]
+// Dependencies: [19, 17, 18696, 21, 4913, 575, 2021, 5488, 18398, 18697, 15745, 18397, 18399, 6865, 5646, 18402, 15754, 18700, 6996, 18701, 18704, 1112, 6659, 5600, 1412, 11871, 5511, 5557, 18705, 8578, 6656, 18706, 11742, 2]
 // Exports: default
 
-// Module 19434 (AppChannel)
+// Module 18695 (AppChannel)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl6 from "intl" /* 1113 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5967 */;
-import FastImageDefault from "FastImage" /* 6010 */;
-import transitionToChannel from "transitionToChannel" /* 6053 */;
-import conjureDMAppChannel from "conjureDMAppChannel" /* 7052 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 7055 */;
-import ConjurePreviewActionCreators from "ConjurePreviewActionCreators" /* 7394 */;
-import openChannelSecondaryViewChat from "openChannelSecondaryViewChat" /* 9068 */;
-import ConjureAppIconTileDefault from "ConjureAppIconTile" /* 10546 */;
-import useChannelContentGate from "useChannelContentGate" /* 11977 */;
-import getInlineFramePresentationDefault from "getInlineFramePresentation" /* 13347 */;
-import ConjureFrameUpdateStore from "ConjureFrameUpdateStore" /* 19435 */;
-import FrameSurfaceState from "FrameSurfaceState" /* 19443 */;
-import useAppChannelClosedDefault from "useAppChannelClosed" /* 19444 */;
-import useChannelAppFrameTeardownDefault from "useChannelAppFrameTeardown" /* 19445 */;
+import intl6 from "intl" /* 1112 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5557 */;
+import FastImageDefault from "FastImage" /* 5600 */;
+import transitionToChannel from "transitionToChannel" /* 5646 */;
+import conjureDMAppChannel from "conjureDMAppChannel" /* 6656 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 6659 */;
+import ConjurePreviewActionCreators from "ConjurePreviewActionCreators" /* 6996 */;
+import openChannelSecondaryViewChat from "openChannelSecondaryViewChat" /* 8578 */;
+import useChannelContentGate from "useChannelContentGate" /* 11742 */;
+import ConjureAppIconTileDefault from "ConjureAppIconTile" /* 11871 */;
+import getInlineFramePresentationDefault from "getInlineFramePresentation" /* 18398 */;
+import ConjureFrameUpdateStore from "ConjureFrameUpdateStore" /* 18696 */;
+import FrameSurfaceState from "FrameSurfaceState" /* 18704 */;
+import useAppChannelClosedDefault from "useAppChannelClosed" /* 18705 */;
+import useChannelAppFrameTeardownDefault from "useChannelAppFrameTeardown" /* 18706 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -183,8 +183,8 @@ function ClosedAppChannel(arg0) {
     name = data.name;
   }
   obj15 = { text: intl.string(intl6.t.PPYvuv), onPress: onLaunch };
-  Button = tmp2(5926).Button;
-  intl = tmp2(1113).intl;
+  Button = tmp2(5511).Button;
+  intl = tmp2(1112).intl;
   return metroRequire(FrameSurfaceExplanation, obj14);
 }
 function AppChannel(arg0) {
@@ -250,9 +250,9 @@ export default function ConnectedAppChannel(channel) {
     result = tmpResult2.renderChannelContentGate(channelContentGate);
   } else if (null == application_id) {
     const obj2 = { heading: intl.string(intl6.t.tU5fiM), description: intl2.string(intl6.t.E94mJf) };
-    const FrameSurfaceExplanation = tmp(19443).FrameSurfaceExplanation;
-    intl = tmp(1113).intl;
-    intl2 = tmp(1113).intl;
+    const FrameSurfaceExplanation = tmp(18704).FrameSurfaceExplanation;
+    intl = tmp(1112).intl;
+    intl2 = tmp(1112).intl;
     result = metroRequire(FrameSurfaceExplanation, obj2);
   } else {
     const obj3 = { applicationId: application_id, channel };

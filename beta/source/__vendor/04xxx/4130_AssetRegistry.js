@@ -1,10 +1,10 @@
 // Module ID: 4130
 // Function ID: 4131
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 4130 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/private_channels/clean_up_inactive_gdms", scales: [1], hash: "130e925e8a424a9b43d870d884dca58e", name: "CleanUpInactiveGDMs.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9nYW1lX2ludml0ZV9jaGFubmVscw==", scales: [1], hash: "88519da288e99ec38bd1b0ab70325138", name: "de.messages.88519da288e99ec38bd1b0ab70325138.compiled.messages", type: "jsona" });

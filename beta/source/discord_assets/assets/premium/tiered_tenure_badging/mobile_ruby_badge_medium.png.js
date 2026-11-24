@@ -1,8 +1,8 @@
-// Module ID: 10105
-// Function ID: 10106
+// Module ID: 13982
+// Function ID: 13983
 // Dependencies: [2]
 
-// Module 10105
+// Module 13982
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/premium/tiered_tenure_badging/mobile_ruby_badge_medium.png.js");

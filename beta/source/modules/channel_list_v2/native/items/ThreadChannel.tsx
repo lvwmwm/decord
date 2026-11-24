@@ -1,31 +1,31 @@
-// Module ID: 18837
-// Function ID: 18838
+// Module ID: 17633
+// Function ID: 17634
 // Name: ThreadChannel
-// Dependencies: [19, 17, 5240, 5155, 5238, 7015, 5209, 1388, 5971, 6064, 6050, 1072, 6949, 1112, 21, 5306, 575, 8263, 5934, 504, 14693, 6053, 11147, 18838, 18840, 8418, 18843, 1187, 18845, 18852, 6346, 2]
+// Dependencies: [19, 17, 4847, 4762, 4845, 6619, 4816, 1386, 5561, 5657, 5642, 1071, 6553, 1111, 21, 4913, 575, 7865, 5519, 504, 13148, 5646, 11216, 17634, 17636, 8009, 17639, 1186, 17641, 17648, 5948, 2]
 // Exports: default
 
-// Module 18837 (ThreadChannel)
+// Module 17633 (ThreadChannel)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import ThreadConstants from "ThreadConstants" /* 1112 */;
-import transitionToChannel from "transitionToChannel" /* 6053 */;
-import ReadStateConstants from "ReadStateConstants" /* 6949 */;
-import inlineStyles from "inlineStyles" /* 8263 */;
-import showLongPressForumPostActionSheetDefault from "showLongPressForumPostActionSheet" /* 11147 */;
-import showThreadLongPressActionSheetDefault from "showThreadLongPressActionSheet" /* 18838 */;
+import Constants from "Constants" /* 1071 */;
+import ThreadConstants from "ThreadConstants" /* 1111 */;
+import transitionToChannel from "transitionToChannel" /* 5646 */;
+import ReadStateConstants from "ReadStateConstants" /* 6553 */;
+import inlineStyles from "inlineStyles" /* 7865 */;
+import showLongPressForumPostActionSheetDefault from "showLongPressForumPostActionSheet" /* 11216 */;
+import showThreadLongPressActionSheetDefault from "showThreadLongPressActionSheet" /* 17634 */;
 import react_mod from "react" /* 19 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 5240 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import PermissionStore from "PermissionStore" /* 5238 */;
-import ReadStateStore from "ReadStateStore" /* 7015 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
-import UserStore from "UserStore" /* 1388 */;
-import VoiceStateStore from "VoiceStateStore" /* 5971 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 6064 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 6050 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4847 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
+import ReadStateStore from "ReadStateStore" /* 6619 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4816 */;
+import UserStore from "UserStore" /* 1386 */;
+import VoiceStateStore from "VoiceStateStore" /* 5561 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5657 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 5642 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 const inlineStylesDefault = inlineStyles;
@@ -105,7 +105,7 @@ function ThreadChannel(channel) {
     const style = [threadLineSegment.threadLineSegment, ];
     let num = 0;
     const diff = threadCount - 1;
-    const tmp4 = closure_17;
+    const tmp4 = authStore4;
     const tmp5 = View;
     if (0 === threadIndex) {
       num = 2;
@@ -229,10 +229,10 @@ let closure_21 = react.memo(function SpineCurveSvg(arg0) {
   let fontScale;
   let rect;
   ({ color, fontScale } = arg0);
-  size = { width: 12, height: 16, style: rect, children: closure_17(inlineStyles.Path, { fill: color, d: "M11 16C11.5523 16 12 15.5523 12 15C12 14.4477 11.5523 14 11 14H8C2.47715 14 2 8.52285 2 3V0H0V3H0.00542736C0 9.5 1.49449 16 8 16H11Z" }) };
+  size = { width: 12, height: 16, style: rect, children: authStore4(inlineStyles.Path, { fill: color, d: "M11 16C11.5523 16 12 15.5523 12 15C12 14.4477 11.5523 14 11 14H8C2.47715 14 2 8.52285 2 3V0H0V3H0.00542736C0 9.5 1.49449 16 8 16H11Z" }) };
   rect = { position: "absolute", left: 23, top: map1(fontScale) / 2 - 16 + 2 };
   const tmp = inlineStylesDefault;
-  return closure_17(tmp, size);
+  return authStore4(tmp, size);
 });
 size = size_mod;
 const result = size.fileFinishedImporting("modules/channel_list_v2/native/items/ThreadChannel.tsx");

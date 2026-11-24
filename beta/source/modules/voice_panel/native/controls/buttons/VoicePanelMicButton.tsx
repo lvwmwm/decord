@@ -1,28 +1,28 @@
-// Module ID: 20088
-// Function ID: 20089
+// Module ID: 19345
+// Function ID: 19346
 // Name: VoicePanelMicButton
-// Dependencies: [32, 19, 6062, 5211, 502, 5155, 2133, 5238, 1388, 5971, 21, 3, 5306, 504, 13024, 13048, 13063, 11984, 1655, 19983, 5544, 11975, 5588, 1708, 20089, 20090, 1113, 13050, 5919, 10602, 13049, 2]
+// Dependencies: [32, 19, 5655, 4818, 502, 4762, 2131, 4845, 1386, 5561, 21, 3, 4913, 504, 10985, 11009, 11041, 11749, 1653, 19240, 5129, 10872, 5173, 1706, 19346, 19347, 1112, 11011, 5504, 9682, 11010, 2]
 // Exports: MicButton, PTTButton
 
-// Module 20088 (VoicePanelMicButton)
+// Module 19345 (VoicePanelMicButton)
 import LoggerDefault from "Logger" /* 3 */;
-import _mod1708 from "module_1708" /* 1708 */;
-import HapticUtils from "HapticUtils" /* 5544 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5588 */;
-import MediaEngineActionCreators from "MediaEngineActionCreators" /* 11975 */;
-import VoiceActionUtils from "VoiceActionUtils" /* 13048 */;
+import _mod1706 from "module_1706" /* 1706 */;
+import HapticUtils from "HapticUtils" /* 5129 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5173 */;
+import MediaEngineActionCreators from "MediaEngineActionCreators" /* 10872 */;
+import VoiceActionUtils from "VoiceActionUtils" /* 11009 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import GameConsoleStore from "GameConsoleStore" /* 6062 */;
-import ImpersonateStore from "ImpersonateStore" /* 5211 */;
+import GameConsoleStore from "GameConsoleStore" /* 5655 */;
+import ImpersonateStore from "ImpersonateStore" /* 4818 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import MediaEngineStore from "MediaEngineStore" /* 2133 */;
-import PermissionStore from "PermissionStore" /* 5238 */;
-import UserStore from "UserStore" /* 1388 */;
-import VoiceStateStore from "VoiceStateStore" /* 5971 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import MediaEngineStore from "MediaEngineStore" /* 2131 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
+import UserStore from "UserStore" /* 1386 */;
+import VoiceStateStore from "VoiceStateStore" /* 5561 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -77,13 +77,13 @@ export function PTTButton(arg0) {
   react.useRef(null);
   const tmp6 = _require;
   let obj2 = require("get initialized");
-  let items = [ChannelStore, callback3, VoiceStateStore, MediaEngineStore, PermissionStore, callback1, onPressIn];
+  let items = [ChannelStore, callback3, VoiceStateStore, MediaEngineStore, PermissionStore, callback1, onPressIn, UserStore];
   let items1 = [channelId];
   const stateFromStoresObject = obj2.useStateFromStoresObject(items, () => {
     let muteStates;
     channel = channel.getChannel(channelId);
     if (null != channel) {
-      const obj = { channel, authenticationStore, voiceStateStore, mediaEngineStore, permissionStore, impersonateStore };
+      const obj = { channel, AuthenticationStore, VoiceStateStore, MediaEngineStore, PermissionStore, ImpersonateStore };
       const obj2 = mute(voicePanelButtonStyles[14]);
       muteStates = obj2.getMuteStates(obj);
     } else {
@@ -202,7 +202,7 @@ export function PTTButton(arg0) {
     const onTouchesMove = PanResult.manualActivation(true).onTouchesMove;
     PanResult.manualActivation(true);
     items[1] = LegacyBaseButton.State;
-    items[2] = _mod1708.scheduleOnRN;
+    items[2] = _mod1706.scheduleOnRN;
     items[3] = callback3;
     let c0;
     let c1;
@@ -227,7 +227,7 @@ export function PTTButton(arg0) {
     const items2 = [closure_19, , ];
     const onFinalize = onTouchesMove(VoicePanelMicButtonTsx1).onFinalize;
     onTouchesMove(VoicePanelMicButtonTsx1);
-    items2[1] = _mod1708.scheduleOnRN;
+    items2[1] = _mod1706.scheduleOnRN;
     items2[2] = callback1;
     c0 = undefined;
     c1 = undefined;
@@ -270,14 +270,9 @@ export function PTTButton(arg0) {
   return tmp19(tmp20, obj5);
 }
 export function MicButton(arg0) {
-  let authenticationStore;
   let awaitingRemoteSessionInfo;
-  let impersonateStore;
-  let mediaEngineStore;
-  let permissionStore;
   let props;
   let stringResult;
-  let voiceStateStore;
   let wrapperSpecs;
   let mute;
   let dominantMuteState;
@@ -286,13 +281,13 @@ export function MicButton(arg0) {
   const channelId = react.useContext(dominantMuteState(voicePanelButtonStyles[17])).channelId;
   let closure_1 = react.useRef(null);
   let obj = mute(voicePanelButtonStyles[13]);
-  const items = [ChannelStore, AuthenticationStore, VoiceStateStore, MediaEngineStore, PermissionStore, ImpersonateStore, GameConsoleStore];
+  const items = [ChannelStore, AuthenticationStore, VoiceStateStore, MediaEngineStore, PermissionStore, ImpersonateStore, GameConsoleStore, UserStore];
   const items1 = [channelId];
   const stateFromStoresObject = obj.useStateFromStoresObject(items, () => {
     let muteStates;
     channel = channel.getChannel(channelId);
     if (null != channel) {
-      const obj = { channel, authenticationStore, voiceStateStore, mediaEngineStore, permissionStore, impersonateStore };
+      const obj = { channel, AuthenticationStore, VoiceStateStore, MediaEngineStore, PermissionStore, ImpersonateStore };
       const obj2 = mute(voicePanelButtonStyles[14]);
       muteStates = obj2.getMuteStates(obj);
     } else {
@@ -335,10 +330,10 @@ export function MicButton(arg0) {
     let tmp3Result;
     if (dominantMuteState === VoiceActionUtils.DominantMuteState.SERVER_MUTE) {
       const obj2 = { color: voicePanelButtonStyles.iconFillRed.color };
-      tmp3Result = map1(tmp(10602).MicrophoneDenyIcon, obj2);
+      tmp3Result = map1(tmp(9682).MicrophoneDenyIcon, obj2);
     } else {
       let color;
-      const VoicePanelRiveMicButton = tmp(13049).VoicePanelRiveMicButton;
+      const VoicePanelRiveMicButton = tmp(11010).VoicePanelRiveMicButton;
       const tmp3 = map1;
       if (mute) {
         color = tmp5.iconFillRed.color;

@@ -1,22 +1,22 @@
-// Module ID: 19232
-// Function ID: 19233
+// Module ID: 18034
+// Function ID: 18035
 // Name: VoicePanelDockPTTButton
-// Dependencies: [19, 17, 5155, 2133, 12009, 21, 575, 5306, 11984, 1655, 19208, 504, 13048, 13024, 13063, 5538, 5929, 5544, 11975, 19233, 7790, 5588, 1708, 19235, 7988, 1113, 13051, 5498, 19236, 2]
+// Dependencies: [19, 17, 4762, 2131, 11768, 21, 575, 4913, 11749, 1653, 18010, 504, 11009, 10985, 11041, 5123, 5514, 5129, 10872, 18035, 7392, 5173, 1706, 18037, 7591, 1112, 11012, 5105, 18038, 2]
 
-// Module 19232 (VoicePanelDockPTTButton)
+// Module 18034 (VoicePanelDockPTTButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _mod1708 from "module_1708" /* 1708 */;
-import timing_timing from "timing/timing" /* 5538 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5588 */;
-import spring_spring from "spring/spring" /* 5929 */;
-import MediaEngineActionCreators from "MediaEngineActionCreators" /* 11975 */;
+import _mod1706 from "module_1706" /* 1706 */;
+import timing_timing from "timing/timing" /* 5123 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5173 */;
+import spring_spring from "spring/spring" /* 5514 */;
+import MediaEngineActionCreators from "MediaEngineActionCreators" /* 10872 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import MediaEngineStore from "MediaEngineStore" /* 2133 */;
-import VoicePanelDockConstants from "VoicePanelDockConstants" /* 12009 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import MediaEngineStore from "MediaEngineStore" /* 2131 */;
+import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11768 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let activateResult, first, num, num2, point2, result2, set, set2, set3, tmp3, tmp7;
@@ -132,18 +132,18 @@ const memoResult = react.memo(function VoicePanelDockPTTButton(measureGlowOffset
   const tmp5Result4 = tmp5(dockPTTMeasureHostRef[9]);
   sharedValue4 = tmp5Result4.useSharedValue(0);
   let items2 = [sharedValue, sharedValue3, sharedValue4, useReducedMotion];
-  callback = obj.useCallback((c9) => {
+  callback = obj.useCallback((bound) => {
     let withTimingResult;
     set = sharedValue.set;
     if (useReducedMotion.get()) {
       const tmp2Result = timing_timing;
-      withTimingResult = tmp2Result.withTiming(c9, { duration: 150 });
+      withTimingResult = tmp2Result.withTiming(bound, { duration: 150 });
     } else {
       const tmp2Result2 = spring_spring;
-      withTimingResult = tmp2Result2.withSpring(c9, closure_10);
+      withTimingResult = tmp2Result2.withSpring(bound, closure_10);
     }
     const result = set(withTimingResult);
-    if (0 === c9) {
+    if (0 === bound) {
       let withTimingResult1;
       let withTimingResult2;
       set3 = sharedValue3.set;
@@ -240,7 +240,7 @@ const memoResult = react.memo(function VoicePanelDockPTTButton(measureGlowOffset
     let result = manualActivationResult.shouldCancelWhenOutside(false);
     const items = [closure_13, , ];
     const onBegin = result.onBegin;
-    items[1] = _mod1708.scheduleOnRN;
+    items[1] = _mod1706.scheduleOnRN;
     items[2] = closure_13;
     let c0;
     let c1;
@@ -324,7 +324,7 @@ const memoResult = react.memo(function VoicePanelDockPTTButton(measureGlowOffset
     const items6 = [closure_16, , ];
     const onFinalize = onTouchesMove(VoicePanelDockPTTButtonTsx4).onFinalize;
     onTouchesMove(VoicePanelDockPTTButtonTsx4);
-    items6[1] = _mod1708.scheduleOnRN;
+    items6[1] = _mod1706.scheduleOnRN;
     items6[2] = closure_14;
     c0 = undefined;
     c1 = undefined;

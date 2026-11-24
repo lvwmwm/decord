@@ -1,11 +1,11 @@
-// Module ID: 9658
-// Function ID: 9659
+// Module ID: 9179
+// Function ID: 9180
 // Name: premium_home_perk_card
-// Dependencies: [32, 1197, 9640, 2]
+// Dependencies: [32, 1196, 9154, 2]
 
-// Module 9658 (premium_home_perk_card)
-import _mod1197 from "module_1197" /* 1197 */;
-import theme_aware_asset from "theme_aware_asset" /* 9640 */;
+// Module 9179 (premium_home_perk_card)
+import _mod1196 from "module_1196" /* 1196 */;
+import theme_aware_asset from "theme_aware_asset" /* 9154 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -15,7 +15,7 @@ let tmp;
 function T() {
   return theme_aware_asset.ThemeAwareAsset;
 }
-const MessageType = _mod1197.MessageType;
+const MessageType = _mod1196.MessageType;
 class PremiumHomePerkCard$Type extends MessageType {
   constructor() {
     const items = [];
@@ -28,9 +28,9 @@ class PremiumHomePerkCard$Type extends MessageType {
     const obj = {};
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1197;
+      const tmpResult = _mod1196;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -68,7 +68,7 @@ class PremiumHomePerkCard$Type extends MessageType {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1197.UnknownFieldHandler.onRead;
+                onRead = _mod1196.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -83,14 +83,14 @@ class PremiumHomePerkCard$Type extends MessageType {
       const ThemeAwareAsset = theme_aware_asset.ThemeAwareAsset;
       internalBinaryWrite = ThemeAwareAsset.internalBinaryWrite;
       asset = asset.asset;
-      const tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
+      const tagResult = tag.tag(1, _mod1196.WireType.LengthDelimited);
       const internalBinaryWriteResult = internalBinaryWrite(asset, tagResult.fork(), writeUnknownFields);
       const joined = internalBinaryWriteResult.join();
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+        onWrite = _mod1196.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, asset, tag);

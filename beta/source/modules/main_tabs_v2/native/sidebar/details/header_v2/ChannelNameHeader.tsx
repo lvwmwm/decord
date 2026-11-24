@@ -1,28 +1,28 @@
-// Module ID: 19579
-// Function ID: 19580
+// Module ID: 18840
+// Function ID: 18841
 // Name: ChannelNameHeader
-// Dependencies: [19, 17, 5155, 5177, 5238, 6058, 1388, 1072, 21, 5306, 575, 504, 1187, 5944, 1502, 6053, 7428, 5919, 1113, 6346, 4067, 10891, 8033, 10064, 7918, 8476, 2]
+// Dependencies: [19, 17, 4762, 4784, 4845, 5651, 1386, 1071, 21, 4913, 575, 504, 1186, 5529, 1500, 5646, 7030, 5504, 1112, 5948, 4126, 10124, 7636, 9454, 7520, 8067, 2]
 
-// Module 19579 (ChannelNameHeader)
+// Module 18840 (ChannelNameHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 1187 */;
-import _modDef4067 from "module_4067" /* 4067 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import transitionToChannel from "transitionToChannel" /* 6053 */;
-import ChannelUtils from "ChannelUtils" /* 6346 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8033 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8476 */;
-import GroupDMAvatarDefault from "GroupDMAvatar" /* 10891 */;
+import native from "native" /* 1186 */;
+import _modDef4126 from "module_4126" /* 4126 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import transitionToChannel from "transitionToChannel" /* 5646 */;
+import ChannelUtils from "ChannelUtils" /* 5948 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 7636 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8067 */;
+import GroupDMAvatarDefault from "GroupDMAvatar" /* 10124 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import GuildStore from "GuildStore" /* 5177 */;
-import PermissionStore from "PermissionStore" /* 5238 */;
-import PresenceStore from "PresenceStore" /* 6058 */;
-import UserStore from "UserStore" /* 1388 */;
-import Constants from "Constants" /* 1072 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
+import PresenceStore from "PresenceStore" /* 5651 */;
+import UserStore from "UserStore" /* 1386 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -60,8 +60,8 @@ function DirectMessageIcon(channel) {
   }, items2);
   let tmp9Result = null;
   if (null != stateFromStores) {
-    const obj2 = { avatarDecoration: stateFromStores.avatarDecoration, user: stateFromStores, guildId: "Boolean", size: channel(1187).AvatarSizes.NORMAL, status: tmp11, isMobileOnline: tmp5, isVROnline: tmp6, statusStyle: tmp.statusStyle };
-    const Avatar = tmp2(1187).Avatar;
+    const obj2 = { avatarDecoration: stateFromStores.avatarDecoration, user: stateFromStores, guildId: "Boolean", size: channel(1186).AvatarSizes.NORMAL, status: tmp11, isMobileOnline: tmp5, isVROnline: tmp6, statusStyle: tmp.statusStyle };
+    const Avatar = tmp2(1186).Avatar;
     let isSystemUserResult;
     const tmp9 = closure_12;
     if (stateFromStores != null) {
@@ -126,10 +126,10 @@ function ChannelSubtitle(channel) {
   if (!channel.isPrivate()) {
     let stringResult;
     if (channel.isGameInvitesChannel()) {
-      const intl = tmp(1113).intl;
-      stringResult = intl.string(_modDef4067["D+2/QP"]);
+      const intl = tmp(1112).intl;
+      stringResult = intl.string(_modDef4126["D+2/QP"]);
     } else {
-      const tmpResult = tmp(6346);
+      const tmpResult = tmp(5948);
       stringResult = tmpResult.channelTypeString(channel);
     }
     stateFromStores = stringResult;
@@ -139,7 +139,7 @@ function ChannelSubtitle(channel) {
     tmp6 = null;
     if ("" !== stateFromStores) {
       const obj2 = { variant: "body-sm/medium", color: "text-muted", lineClamp: 1, children: stateFromStores };
-      tmp6 = closure_12(tmp(5919).Text, obj2);
+      tmp6 = closure_12(tmp(5504).Text, obj2);
     }
   }
   return tmp6;
@@ -255,7 +255,7 @@ function DMChannelNameHeader(channel) {
   let analyticsLocations;
   const containerStyle = channel.containerStyle;
   let tmp = closure_15();
-  analyticsLocations = analyticsLocations(7918)().analyticsLocations;
+  analyticsLocations = analyticsLocations(7520)().analyticsLocations;
   const items = [channel, analyticsLocations];
   const callback = react.useCallback(() => {
     const recipientId = channel.getRecipientId();
@@ -267,7 +267,7 @@ function DMChannelNameHeader(channel) {
   }, items);
   let obj = { style: items1, onPress: callback, children: closure_12(ChannelNameHeaderContent, { channel }) };
   items1 = [tmp.container, containerStyle];
-  const PressableOpacity = channel(7428).PressableOpacity;
+  const PressableOpacity = channel(7030).PressableOpacity;
   return closure_12(PressableOpacity, obj);
 }
 function DefaultChannelNameHeader(arg0) {

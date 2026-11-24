@@ -1,12 +1,12 @@
-// Module ID: 14286
-// Function ID: 14287
+// Module ID: 12523
+// Function ID: 12524
 // Name: CheckpointShareCardContext
-// Dependencies: [19, 6391, 6389, 2]
+// Dependencies: [19, 5993, 5991, 2]
 
-// Module 14286 (CheckpointShareCardContext)
-import CheckpointCardColorPalette from "CheckpointCardColorPalette" /* 6389 */;
+// Module 12523 (CheckpointShareCardContext)
+import CheckpointCardColorPalette from "CheckpointCardColorPalette" /* 5991 */;
 import react from "react" /* 19 */;
-import CheckpointCardColors from "CheckpointCardColors" /* 6391 */;
+import CheckpointCardColors from "CheckpointCardColors" /* 5993 */;
 import size from "module_2" /* 2 */;
 
 const createContext = react.createContext;

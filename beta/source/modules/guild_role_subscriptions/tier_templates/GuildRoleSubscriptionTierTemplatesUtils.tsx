@@ -1,28 +1,28 @@
-// Module ID: 17854
-// Function ID: 17855
+// Module ID: 16634
+// Function ID: 16635
 // Name: GuildRoleSubscriptionTierTemplatesUtils
-// Dependencies: [5, 19, 5155, 5231, 17849, 17855, 1072, 5162, 563, 1406, 572, 8126, 7275, 16334, 2]
+// Dependencies: [5, 19, 4762, 4838, 16629, 16635, 1071, 4769, 563, 1404, 572, 7729, 6880, 15106, 2]
 // Exports: announceCreateTemplateChannels, announceDeleteTemplateChannels, createChannelsFromTemplateTierBenefits, getTemplateTierCreationAnalyticsContext, isEligibleForNewBadge, useChannelWithTemplateFallback, useSuggestedUnusedPrices
 
-// Module 17854 (GuildRoleSubscriptionTierTemplatesUtils)
+// Module 16634 (GuildRoleSubscriptionTierTemplatesUtils)
 import react from "react" /* 19 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import Constants from "Constants" /* 1072 */;
-import FlagUtilsAll from "FlagUtils" /* 1406 */;
-import ChannelConstants from "ChannelConstants" /* 5162 */;
-import GuildRoleSubscriptionSettingUtils from "GuildRoleSubscriptionSettingUtils" /* 7275 */;
-import GuildRoleSubscriptionEditStore from "GuildRoleSubscriptionEditStore" /* 17849 */;
+import Constants from "Constants" /* 1071 */;
+import FlagUtilsAll from "FlagUtils" /* 1404 */;
+import ChannelConstants from "ChannelConstants" /* 4769 */;
+import GuildRoleSubscriptionSettingUtils from "GuildRoleSubscriptionSettingUtils" /* 6880 */;
+import GuildRoleSubscriptionEditStore from "GuildRoleSubscriptionEditStore" /* 16629 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 5231 */;
-import GuildRoleSubscriptionTierTemplatesStore from "GuildRoleSubscriptionTierTemplatesStore" /* 17855 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import GuildRoleSubscriptionsStore from "GuildRoleSubscriptionsStore" /* 4838 */;
+import GuildRoleSubscriptionTierTemplatesStore from "GuildRoleSubscriptionTierTemplatesStore" /* 16635 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, c3, c4, set;
 
 let tmp;
-const GuildRoleSubscriptionsExperimentUtils = tmp(16334);
+const GuildRoleSubscriptionsExperimentUtils = tmp(15106);
 function getUsedTemplateChannelsForGuild(arg0) {
   const arr = useEditStateStore.getState().editStateIdsForGroup[arg0];
   const listings = useEditStateStore.getState().listings;

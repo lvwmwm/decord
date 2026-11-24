@@ -1,22 +1,22 @@
-// Module ID: 17074
-// Function ID: 17075
+// Module ID: 15839
+// Function ID: 15840
 // Name: CustomColorPickerActionSheet
-// Dependencies: [32, 19, 17, 21, 5306, 575, 17075, 1090, 1655, 17076, 5303, 671, 5542, 5556, 7913, 1113, 5926, 7619, 12, 17077, 1708, 2]
+// Dependencies: [32, 19, 17, 21, 4913, 575, 15840, 1089, 1653, 15841, 4910, 671, 5127, 5141, 7515, 1112, 5511, 7221, 12, 15842, 1706, 2]
 // Exports: default
 
-// Module 17074 (CustomColorPickerActionSheet)
+// Module 15839 (CustomColorPickerActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
-import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
-import _mod1708 from "module_1708" /* 1708 */;
-import ColorUtils from "ColorUtils" /* 5303 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
-import ColorPickerUtils from "ColorPickerUtils" /* 17076 */;
+import utils_ColorUtils from "utils/ColorUtils" /* 1089 */;
+import _mod1706 from "module_1706" /* 1706 */;
+import ColorUtils from "ColorUtils" /* 4910 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
+import ColorPickerUtils from "ColorPickerUtils" /* 15841 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -105,9 +105,9 @@ export default function CustomColorPickerActionSheet(arg0) {
     closure_2(obj2.rgbToHex(hsvToRgbWorkletResult[0], hsvToRgbWorkletResult[1], hsvToRgbWorkletResult[2]));
   }
   let tmp = closure_9();
-  let obj = onSelect(1090);
+  let obj = onSelect(1089);
   const int2hexResult = obj.int2hex(color);
-  let obj2 = onSelect(1090);
+  let obj2 = onSelect(1089);
   let int2hsvResult = obj2.int2hsv(color);
   let obj3 = sharedValue;
   ({ h, s, v } = int2hsvResult);
@@ -129,11 +129,11 @@ export default function CustomColorPickerActionSheet(arg0) {
       }
     }
   }, items);
-  const obj4 = onSelect(1655);
+  const obj4 = onSelect(1653);
   sharedValue = obj4.useSharedValue(h);
-  const obj6 = onSelect(1655);
+  const obj6 = onSelect(1653);
   const sharedValue1 = obj6.useSharedValue(s);
-  const obj8 = onSelect(1655);
+  const obj8 = onSelect(1653);
   const sharedValue2 = obj8.useSharedValue(v);
   let combined;
   if (suggestedColors != null) {
@@ -165,16 +165,16 @@ export default function CustomColorPickerActionSheet(arg0) {
     obj.hideActionSheet();
   }, items2);
   const obj5 = { onDismiss, startExpanded: true, header: sharedValue2(BottomSheetTitleHeader, obj7), children: tmp13(tmp14, obj10) };
-  const BottomSheet = tmp2(5556).BottomSheet;
-  obj7 = { title: intl.string(onSelect(1113).t.WTqQ5e), trailing: sharedValue2(Button, obj9) };
-  BottomSheetTitleHeader = tmp2(7913).BottomSheetTitleHeader;
-  intl = tmp2(1113).intl;
-  obj9 = { variant: actionButtonVariant, size: "sm", text: intl2.string(onSelect(1113).t.XqMe3N), onPress: callback1 };
-  Button = tmp2(5926).Button;
-  intl2 = tmp2(1113).intl;
+  const BottomSheet = tmp2(5141).BottomSheet;
+  obj7 = { title: intl.string(onSelect(1112).t.WTqQ5e), trailing: sharedValue2(Button, obj9) };
+  BottomSheetTitleHeader = tmp2(7515).BottomSheetTitleHeader;
+  intl = tmp2(1112).intl;
+  obj9 = { variant: actionButtonVariant, size: "sm", text: intl2.string(onSelect(1112).t.XqMe3N), onPress: callback1 };
+  Button = tmp2(5511).Button;
+  intl2 = tmp2(1112).intl;
   obj10 = { style: tmp.container, children: items3 };
   const obj11 = {
-    accessibilityLabel: intl3.string(onSelect(1113).t["ozfa/h"]),
+    accessibilityLabel: intl3.string(onSelect(1112).t["ozfa/h"]),
     value,
     onChange: function onTextInputChange(first4) {
       let text = first4;
@@ -193,8 +193,8 @@ export default function CustomColorPickerActionSheet(arg0) {
     },
     maxLength: 7
   };
-  const TextInput = tmp2(7619).TextInput;
-  intl3 = tmp2(1113).intl;
+  const TextInput = tmp2(7221).TextInput;
+  intl3 = tmp2(1112).intl;
   items3 = [sharedValue2(TextInput, obj11), , ];
   const obj12 = {
     suggestedColors: obj17.uniq(combined),
@@ -218,8 +218,8 @@ export default function CustomColorPickerActionSheet(arg0) {
   const tmp15 = SuggestedColors;
   const tmp16 = value;
   if (null == value) {
-    const hsv2int = tmp2(1090).hsv2int;
-    onSelect(1090);
+    const hsv2int = tmp2(1089).hsv2int;
+    onSelect(1089);
     value = sharedValue.get();
     let value2 = sharedValue1.get();
     memo = hsv2int(value, value2, sharedValue2.get());
@@ -230,11 +230,11 @@ export default function CustomColorPickerActionSheet(arg0) {
     saturation: sharedValue1,
     value: sharedValue2,
     onPanFinalize() {
-      const obj = _mod1708;
+      const obj = _mod1706;
       const obj2 = { h: sharedValue.get(), s: sharedValue1.get(), v: sharedValue2.get() };
       obj.scheduleOnRN(updateInputHexValueFromHsv, obj2);
     }
   };
-  items3[2] = sharedValue2(tmp16(17077), obj13);
+  items3[2] = sharedValue2(tmp16(15842), obj13);
   return sharedValue2(BottomSheet, obj5);
 };

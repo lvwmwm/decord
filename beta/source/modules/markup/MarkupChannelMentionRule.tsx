@@ -1,27 +1,27 @@
-// Module ID: 6344
-// Function ID: 6345
+// Module ID: 5946
+// Function ID: 5947
 // Name: MarkupChannelMentionRule
-// Dependencies: [5210, 5155, 5177, 5238, 5248, 1388, 1072, 2153, 1414, 1113, 6345, 6346, 5944, 6355, 5946, 6343, 2070, 2]
+// Dependencies: [4817, 4762, 4784, 4845, 4855, 1386, 1071, 2152, 1412, 1112, 5947, 5948, 5529, 5957, 5536, 5945, 2068, 2]
 // Exports: getGuildIdFromChannelId
 
-// Module 6344 (MarkupChannelMentionRule)
-import intl3 from "intl" /* 1113 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import _modDef2070 from "module_2070" /* 2070 */;
-import StringUtils from "StringUtils" /* 2153 */;
-import useChannelName from "useChannelName" /* 5944 */;
-import LinkUtils from "LinkUtils" /* 5946 */;
-import MarkupTextRuleDefault from "MarkupTextRule" /* 6343 */;
-import useChannelRoleSubscriptionStatus from "useChannelRoleSubscriptionStatus" /* 6345 */;
-import ChannelUtils from "ChannelUtils" /* 6346 */;
-import markup_ChannelUtils from "markup/ChannelUtils" /* 6355 */;
-import GatedChannelStore from "GatedChannelStore" /* 5210 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import GuildStore from "GuildStore" /* 5177 */;
-import PermissionStore from "PermissionStore" /* 5238 */;
-import RelationshipStore from "RelationshipStore" /* 5248 */;
-import UserStore from "UserStore" /* 1388 */;
-import Constants from "Constants" /* 1072 */;
+// Module 5946 (MarkupChannelMentionRule)
+import intl3 from "intl" /* 1112 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
+import _modDef2068 from "module_2068" /* 2068 */;
+import StringUtils from "StringUtils" /* 2152 */;
+import useChannelName from "useChannelName" /* 5529 */;
+import LinkUtils from "LinkUtils" /* 5536 */;
+import MarkupTextRuleDefault from "MarkupTextRule" /* 5945 */;
+import useChannelRoleSubscriptionStatus from "useChannelRoleSubscriptionStatus" /* 5947 */;
+import ChannelUtils from "ChannelUtils" /* 5948 */;
+import markup_ChannelUtils from "markup/ChannelUtils" /* 5957 */;
+import GatedChannelStore from "GatedChannelStore" /* 4817 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
+import RelationshipStore from "RelationshipStore" /* 4855 */;
+import UserStore from "UserStore" /* 1386 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -157,7 +157,7 @@ function parseChannel(channel, messageId, guildIdFromChannelId, url) {
           obj11 = obj4;
           obj20 = StringUtils;
         } else if (null != url) {
-          const obj9 = { type: "link", content: items4, target: url, title: "channel_id" };
+          const obj9 = { type: "link", content: items4, target: url, title: "channel" };
           items4 = [{ type: "text", content: url }];
           obj11 = obj9;
           const obj10 = { type: "text", content: url };
@@ -313,7 +313,7 @@ obj2 = {
   }
 };
 obj3 = {
-  order: _modDef2070.defaultRules.url.order - 0.5,
+  order: _modDef2068.defaultRules.url.order - 0.5,
   requiredFirstCharacters: ["h"],
   match(arg0) {
     const CHANNEL_OR_MESSAGES_URL_WITH_QUERY_RE = LinkUtils.CHANNEL_OR_MESSAGES_URL_WITH_QUERY_RE;
@@ -343,7 +343,7 @@ obj3 = {
     [tmp, tmp2, tmp3, tmp4] = arg0;
     LinkUtils;
     if (null == tmp3) {
-      const obj = { type: "link", content: items, target: tmp, title: "channel_id" };
+      const obj = { type: "link", content: items, target: tmp, title: "channel" };
       items = [{ type: "text", content: tmp }];
       return obj;
     } else {
@@ -377,7 +377,7 @@ obj3 = {
   }
 };
 obj4 = {
-  order: _modDef2070.defaultRules.url.order - 0.5,
+  order: _modDef2068.defaultRules.url.order - 0.5,
   requiredFirstCharacters: ["h"],
   match(arg0) {
     const MEDIA_POST_URL_RE = LinkUtils.MEDIA_POST_URL_RE;
@@ -427,7 +427,7 @@ obj4 = {
         }
       }
     }
-    const obj = { type: "link", content: items, target: tmp, title: "channel_id" };
+    const obj = { type: "link", content: items, target: tmp, title: "channel" };
     items = [{ type: "text", content: tmp }];
     return obj;
   }

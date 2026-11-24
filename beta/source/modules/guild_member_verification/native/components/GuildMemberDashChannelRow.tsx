@@ -1,20 +1,20 @@
-// Module ID: 18935
-// Function ID: 18936
+// Module ID: 17728
+// Function ID: 17729
 // Name: GuildMemberDashChannelRow
-// Dependencies: [19, 1072, 5162, 6050, 21, 5306, 575, 18936, 6922, 5342, 1099, 14791, 1113, 7436, 1187, 2]
+// Dependencies: [19, 1071, 4769, 5642, 21, 4913, 575, 17729, 6526, 4949, 1098, 13248, 1112, 7038, 1186, 2]
 // Exports: default
 
-// Module 18935 (GuildMemberDashChannelRow)
+// Module 17728 (GuildMemberDashChannelRow)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import router_utils from "router_utils" /* 1099 */;
-import ChannelConstants from "ChannelConstants" /* 5162 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 5342 */;
-import RedesignChannelListConstants from "RedesignChannelListConstants" /* 6050 */;
-import GuildJoinRequestActionCreatorsDefault from "GuildJoinRequestActionCreators" /* 6922 */;
+import router_utils from "router_utils" /* 1098 */;
+import ChannelConstants from "ChannelConstants" /* 4769 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4949 */;
+import RedesignChannelListConstants from "RedesignChannelListConstants" /* 5642 */;
+import GuildJoinRequestActionCreatorsDefault from "GuildJoinRequestActionCreators" /* 6526 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 1072 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import Constants from "Constants" /* 1071 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -43,7 +43,7 @@ export default function GuildMemberDashChannelRow(arg0) {
   let hasItem;
   let tmp = closure_8();
   const id = guild.id;
-  let obj = id(18936);
+  let obj = id(17729);
   let num = obj.useSubmittedGuildJoinRequestTotal({ guildId: id });
   if (num == null) {
     num = 0;
@@ -65,20 +65,20 @@ export default function GuildMemberDashChannelRow(arg0) {
     const obj = router_utils;
     obj.transitionTo(hasOwnProperty.CHANNEL(id, StaticChannelRoute.MEMBER_SAFETY));
   }, items1);
-  const ChannelModes = tmp2(14791).ChannelModes;
+  const ChannelModes = tmp2(13248).ChannelModes;
   const tmp7 = selected ? ChannelModes.SELECTED : ChannelModes.DEFAULT;
-  hasItem(14791);
-  const intl = tmp2(1113).intl;
-  ({ name: intl2.string(id(1113).t["9Oq93m"]), mode: tmp7 });
-  const BaseChannelName = tmp2(14791).BaseChannelName;
-  intl2 = tmp2(1113).intl;
-  ({ mode: tmp7, IconComponent: id(7436).GroupIcon });
-  const BaseChannelIcon = tmp2(14791).BaseChannelIcon;
+  hasItem(13248);
+  const intl = tmp2(1112).intl;
+  ({ name: intl2.string(id(1112).t["9Oq93m"]), mode: tmp7 });
+  const BaseChannelName = tmp2(13248).BaseChannelName;
+  intl2 = tmp2(1112).intl;
+  ({ mode: tmp7, IconComponent: id(7038).GroupIcon });
+  const BaseChannelIcon = tmp2(13248).BaseChannelIcon;
   let tmp8Result = null;
   if (num > 0) {
     const obj9 = { style: null, textStyle: null, value: num };
     ({ badge: obj5.style, badgeText: obj5.textStyle } = tmp);
-    tmp8Result = tmp8(tmp2(1187).Badge, obj9);
+    tmp8Result = tmp8(tmp2(1186).Badge, obj9);
   }
-  return <tmp9 onPress={callback} style={tmp.container} accessible accessibilityLabel={intl.string(id(1113).t["9Oq93m"])} accessibilityState={{ selected }} mode={tmp7} name={null} icon={null} channelInfo={tmp8Result} />;
+  return <tmp9 onPress={callback} style={tmp.container} accessible accessibilityLabel={intl.string(id(1112).t["9Oq93m"])} accessibilityState={{ selected }} mode={tmp7} name={null} icon={null} channelInfo={tmp8Result} />;
 };

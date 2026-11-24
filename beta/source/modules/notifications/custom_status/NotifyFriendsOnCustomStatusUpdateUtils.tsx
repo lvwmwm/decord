@@ -1,14 +1,14 @@
-// Module ID: 18611
-// Function ID: 18612
+// Module ID: 17407
+// Function ID: 17408
 // Name: NotifyFriendsOnCustomStatusUpdateUtils
-// Dependencies: [5251, 1072, 5131, 1256, 2]
+// Dependencies: [4858, 1071, 4738, 1255, 2]
 // Exports: onNotifyFriendsOnCustomStatusUpdateSettingsChanged
 
-// Module 18611 (NotifyFriendsOnCustomStatusUpdateUtils)
-import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import UserSettings from "UserSettings" /* 5131 */;
-import NotificationConstants from "NotificationConstants" /* 5251 */;
+// Module 17407 (NotifyFriendsOnCustomStatusUpdateUtils)
+import Constants from "Constants" /* 1071 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import UserSettings from "UserSettings" /* 4738 */;
+import NotificationConstants from "NotificationConstants" /* 4858 */;
 import size from "module_2" /* 2 */;
 
 const constants = NotificationConstants.NotificationSettingsUpdateType;

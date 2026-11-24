@@ -1,11 +1,11 @@
-// Module ID: 8140
-// Function ID: 8141
+// Module ID: 7743
+// Function ID: 7744
 // Name: UserLimitedAccessUtils
-// Dependencies: [1072, 2]
+// Dependencies: [1071, 2]
 // Exports: isLimitedAccessErrorCode
 
-// Module 8140 (UserLimitedAccessUtils)
-import Constants from "Constants" /* 1072 */;
+// Module 7743 (UserLimitedAccessUtils)
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 const AbortCodes = Constants.AbortCodes;

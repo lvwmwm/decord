@@ -1,15 +1,15 @@
-// Module ID: 19611
-// Function ID: 19612
+// Module ID: 18872
+// Function ID: 18873
 // Name: IncomingRequestRowActions
-// Dependencies: [19, 17, 21, 5306, 1655, 5538, 18767, 6327, 7988, 17458, 15568, 5926, 1113, 5919, 2]
+// Dependencies: [19, 17, 21, 4913, 1653, 5123, 17563, 5929, 7591, 16226, 14301, 5511, 1112, 5504, 2]
 // Exports: IncomingRequestRowActions
 
-// Module 19611 (IncomingRequestRowActions)
+// Module 18872 (IncomingRequestRowActions)
 import react_native from "react-native" /* 17 */;
-import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 18767 */;
+import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 17563 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;

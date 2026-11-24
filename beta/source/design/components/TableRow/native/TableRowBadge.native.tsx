@@ -1,15 +1,15 @@
-// Module ID: 7461
-// Function ID: 7462
+// Module ID: 7063
+// Function ID: 7064
 // Name: TableRowBadge
-// Dependencies: [5471, 7459, 2]
+// Dependencies: [5078, 7061, 2]
 // Exports: getTableRowAccessibilityLabel, resolveTableRowBadgeProps
 
-// Module 7461 (TableRowBadge)
-import native from "native" /* 5471 */;
+// Module 7063 (TableRowBadge)
+import native from "native" /* 5078 */;
 import size from "module_2" /* 2 */;
 
 let tmp;
-const Badge_Badge = tmp(7459);
+const Badge_Badge = tmp(7061);
 const result = size.fileFinishedImporting("design/components/TableRow/native/TableRowBadge.native.tsx");
 
 export function resolveTableRowBadgeProps(badge) {

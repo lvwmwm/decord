@@ -1,23 +1,23 @@
-// Module ID: 17055
-// Function ID: 17056
+// Module ID: 15815
+// Function ID: 15816
 // Name: components_native/ErrorBoundary
-// Dependencies: [5, 32, 19, 17, 12367, 21, 5306, 504, 14061, 5926, 1113, 5367, 1242, 572, 1187, 15888, 5919, 2]
+// Dependencies: [5, 32, 19, 17, 11894, 21, 4913, 504, 12227, 5511, 1112, 4974, 1241, 572, 1186, 14642, 5504, 2]
 
-// Module 17055 (components_native/ErrorBoundary)
+// Module 15815 (components_native/ErrorBoundary)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import intl4 from "intl" /* 1113 */;
-import native from "native" /* 1187 */;
-import SentryUtilsDefault from "SentryUtils" /* 1242 */;
-import native2 from "native" /* 5367 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import AppCrash from "AppCrash" /* 15888 */;
+import intl4 from "intl" /* 1112 */;
+import native from "native" /* 1186 */;
+import SentryUtilsDefault from "SentryUtils" /* 1241 */;
+import native2 from "native" /* 4974 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import AppCrash from "AppCrash" /* 14642 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import BuildOverrideStore from "BuildOverrideStore" /* 12367 */;
+import BuildOverrideStore from "BuildOverrideStore" /* 11894 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -120,13 +120,13 @@ function MaybeClearBuildOverride() {
     let obj2 = {
       variant: "secondary",
       loading: first,
-      text: intl.string(tmp3(1113).t["/Nz9rY"]),
+      text: intl.string(tmp3(1112).t["/Nz9rY"]),
       onPress: function clearOverride() {
           return obj(...arguments);
         }
     };
-    const Button = tmp3(5926).Button;
-    intl = tmp3(1113).intl;
+    const Button = tmp3(5511).Button;
+    intl = tmp3(1112).intl;
     return closure_9(Button, obj2);
   }
 }
@@ -214,8 +214,8 @@ class ErrorBoundary extends PureComponent {
       const obj3 = { style: tmp.buttons, children: items1 };
       items1 = [React4(MaybeClearBuildOverride, {}), ];
       const obj4 = { text: intl3.string(intl4.t["4n8OJn"]), onPress: self.handleReload };
-      const Button = tmp3(5926).Button;
-      intl3 = tmp3(1113).intl;
+      const Button = tmp3(5511).Button;
+      intl3 = tmp3(1112).intl;
       items1[1] = React4(Button, obj4);
       items[1] = authStore(metroImportDefault, obj3);
       items[2] = null;

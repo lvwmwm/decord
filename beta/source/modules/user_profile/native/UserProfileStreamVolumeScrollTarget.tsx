@@ -1,16 +1,16 @@
-// Module ID: 15764
-// Function ID: 15765
+// Module ID: 14503
+// Function ID: 14504
 // Name: UserProfileStreamVolumeScrollTarget
-// Dependencies: [19, 17, 5307, 15765, 21, 8603, 504, 5560, 1655, 1708, 1113, 9567, 2]
+// Dependencies: [19, 17, 4914, 14504, 21, 8193, 504, 5145, 1653, 1706, 1112, 9087, 2]
 // Exports: default
 
-// Module 15764 (UserProfileStreamVolumeScrollTarget)
+// Module 14503 (UserProfileStreamVolumeScrollTarget)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import intl3 from "intl" /* 1113 */;
+import intl3 from "intl" /* 1112 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5307 */;
-import StreamVolumeMovedStore_mod from "StreamVolumeMovedStore" /* 15765 */;
+import AccessibilityStore from "AccessibilityStore" /* 4914 */;
+import StreamVolumeMovedStore_mod from "StreamVolumeMovedStore" /* 14504 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

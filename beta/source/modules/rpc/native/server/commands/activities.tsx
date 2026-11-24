@@ -1,18 +1,18 @@
-// Module ID: 16982
-// Function ID: 16983
+// Module ID: 15737
+// Function ID: 15738
 // Name: commands/activities
-// Dependencies: [5, 6751, 1072, 6892, 16924, 7307, 16943, 7303, 8460, 7297, 7022, 7339, 8880, 8192, 12743, 6748, 2]
+// Dependencies: [5, 6354, 1071, 6496, 15678, 6913, 15697, 6909, 8051, 6903, 6626, 6943, 8475, 7795, 10671, 6350, 2]
 
-// Module 16982 (commands/activities)
-import NativePermissionConstants from "NativePermissionConstants" /* 6892 */;
-import RPCErrorDefault from "RPCError" /* 7303 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 7307 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8460 */;
-import validateOpenInviteDialog from "validateOpenInviteDialog" /* 16943 */;
+// Module 15737 (commands/activities)
+import NativePermissionConstants from "NativePermissionConstants" /* 6496 */;
+import RPCErrorDefault from "RPCError" /* 6909 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 6913 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8051 */;
+import validateOpenInviteDialog from "validateOpenInviteDialog" /* 15697 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants_mod from "Constants" /* 6751 */;
-import Constants_mod2 from "Constants" /* 1072 */;
-import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 16924 */;
+import Constants_mod from "Constants" /* 6354 */;
+import Constants_mod2 from "Constants" /* 1071 */;
+import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 15678 */;
 import size from "module_2" /* 2 */;
 
 let c2, c3, c4;
@@ -49,7 +49,7 @@ let obj2 = {
     } else {
       const obj3 = { source: constants.ACTIVITY_INVITE, targetApplicationId: id };
       id = socket.application.id;
-      const showInstantInviteActionSheet = tmp(8460).showInstantInviteActionSheet;
+      const showInstantInviteActionSheet = tmp(8051).showInstantInviteActionSheet;
       instant_invite_InstantInviteUtils;
       const result1 = showInstantInviteActionSheet(tmp4, obj3);
     }

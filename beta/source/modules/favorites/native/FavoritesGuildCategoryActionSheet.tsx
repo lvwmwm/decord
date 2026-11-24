@@ -1,15 +1,15 @@
-// Module ID: 18834
-// Function ID: 18835
+// Module ID: 17630
+// Function ID: 17631
 // Name: FavoritesGuildCategoryActionSheet
-// Dependencies: [19, 5158, 21, 5944, 15155, 5131, 7951, 7913, 7953, 10941, 1113, 10569, 18835, 11629, 7943, 6004, 504, 2]
+// Dependencies: [19, 4765, 21, 5529, 13879, 4738, 7553, 7515, 7555, 10261, 1112, 10371, 17631, 10378, 7545, 5594, 504, 2]
 // Exports: default
 
-// Module 18834 (FavoritesGuildCategoryActionSheet)
-import ToastUtils from "ToastUtils" /* 6004 */;
-import ClipboardUtils from "ClipboardUtils" /* 7943 */;
-import openFavoritesGuildCategorySettingsModalDefault from "openFavoritesGuildCategorySettingsModal" /* 18835 */;
+// Module 17630 (FavoritesGuildCategoryActionSheet)
+import ToastUtils from "ToastUtils" /* 5594 */;
+import ClipboardUtils from "ClipboardUtils" /* 7545 */;
+import openFavoritesGuildCategorySettingsModalDefault from "openFavoritesGuildCategorySettingsModal" /* 17631 */;
 import react from "react" /* 19 */;
-import FavoriteStore from "FavoriteStore" /* 5158 */;
+import FavoriteStore from "FavoriteStore" /* 4765 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -36,18 +36,18 @@ function FavoritesGuildCategoryActionSheetConnected(category) {
   let obj9;
   category = category.category;
   const onClose = category.onClose;
-  const tmp2 = onClose(5944)(category, true);
-  const tmp3 = onClose(15155)(category);
+  const tmp2 = onClose(5529)(category, true);
+  const tmp3 = onClose(13879)(category);
   dependencyMap = tmp3;
-  const DeveloperMode = category(5131).DeveloperMode;
+  const DeveloperMode = category(4738).DeveloperMode;
   const setting = DeveloperMode.useSetting();
-  let obj = { header: closure_5(category(7913).BottomSheetTitleHeader, { title: tmp2 }), children: items };
-  const ActionSheet = category(7951).ActionSheet;
+  let obj = { header: closure_5(category(7515).BottomSheetTitleHeader, { title: tmp2 }), children: items };
+  const ActionSheet = category(7553).ActionSheet;
   let tmp7Result = null;
   const tmp6 = closure_6;
   if (null != tmp3) {
     let obj2 = { hasIcons: true, children: closure_5(ActionSheetRow, obj3) };
-    const Group = tmp4(7953).ActionSheetRow.Group;
+    const Group = tmp4(7555).ActionSheetRow.Group;
     obj3 = {
       label: tmp3.label,
       icon: closure_5(Icon, obj4),
@@ -56,33 +56,33 @@ function FavoritesGuildCategoryActionSheetConnected(category) {
           onClose();
         }
     };
-    ActionSheetRow = tmp4(7953).ActionSheetRow;
-    obj4 = { IconComponent: category(10941).PlusLargeIcon };
-    Icon = tmp4(7953).ActionSheetRow.Icon;
+    ActionSheetRow = tmp4(7555).ActionSheetRow;
+    obj4 = { IconComponent: category(10261).PlusLargeIcon };
+    Icon = tmp4(7555).ActionSheetRow.Icon;
     tmp7Result = tmp7(Group, obj2);
   }
   items = [tmp7Result, , ];
   const obj5 = { hasIcons: true, children: closure_5(ActionSheetRow2, obj6) };
-  const Group2 = tmp4(7953).ActionSheetRow.Group;
+  const Group2 = tmp4(7555).ActionSheetRow.Group;
   obj6 = {
-    label: intl.string(category(1113).t.zdPFs9),
+    label: intl.string(category(1112).t.zdPFs9),
     icon: closure_5(Icon2, obj7),
     onPress() {
       openFavoritesGuildCategorySettingsModalDefault(category.id);
       onClose();
     }
   };
-  ActionSheetRow2 = tmp4(7953).ActionSheetRow;
-  intl = tmp4(1113).intl;
-  obj7 = { IconComponent: category(10569).SettingsIcon };
-  Icon2 = tmp4(7953).ActionSheetRow.Icon;
+  ActionSheetRow2 = tmp4(7555).ActionSheetRow;
+  intl = tmp4(1112).intl;
+  obj7 = { IconComponent: category(10371).SettingsIcon };
+  Icon2 = tmp4(7555).ActionSheetRow.Icon;
   items[1] = closure_5(Group2, obj5);
   let tmp7Result2 = null;
   if (setting) {
     const obj8 = { hasIcons: true, children: closure_5(ActionSheetRow3, obj9) };
-    const Group3 = tmp4(7953).ActionSheetRow.Group;
+    const Group3 = tmp4(7555).ActionSheetRow.Group;
     obj9 = {
-      label: intl2.string(category(1113).t["2visC6"]),
+      label: intl2.string(category(1112).t["2visC6"]),
       icon: closure_5(Icon3, obj10),
       onPress() {
           const obj = ClipboardUtils;
@@ -92,10 +92,10 @@ function FavoritesGuildCategoryActionSheetConnected(category) {
           onClose();
         }
     };
-    ActionSheetRow3 = tmp4(7953).ActionSheetRow;
-    intl2 = tmp4(1113).intl;
-    obj10 = { IconComponent: category(11629).IdIcon };
-    Icon3 = tmp4(7953).ActionSheetRow.Icon;
+    ActionSheetRow3 = tmp4(7555).ActionSheetRow;
+    intl2 = tmp4(1112).intl;
+    obj10 = { IconComponent: category(10378).IdIcon };
+    Icon3 = tmp4(7555).ActionSheetRow.Icon;
     tmp7Result2 = tmp7(Group3, obj8);
   }
   items[2] = tmp7Result2;

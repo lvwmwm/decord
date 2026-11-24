@@ -1,15 +1,15 @@
-// Module ID: 20114
-// Function ID: 20115
+// Module ID: 19371
+// Function ID: 19372
 // Name: VoicePanelControlsDimOverlay
-// Dependencies: [19, 16438, 11985, 11983, 21, 11984, 1655, 20077, 5929, 16890, 5894, 2]
+// Dependencies: [19, 15210, 11750, 11748, 21, 11749, 1653, 19334, 5514, 15644, 5479, 2]
 
-// Module 20114 (VoicePanelControlsDimOverlay)
+// Module 19371 (VoicePanelControlsDimOverlay)
 import Fragment from "Fragment" /* 21 */;
-import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11983 */;
-import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11984 */;
-import BackdropConstants from "BackdropConstants" /* 16438 */;
+import VoicePanelControlsConstants from "VoicePanelControlsConstants" /* 11748 */;
+import VoicePanelStateContextDefault from "VoicePanelStateContext" /* 11749 */;
+import BackdropConstants from "BackdropConstants" /* 15210 */;
 import react from "react" /* 19 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11985 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11750 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -54,15 +54,15 @@ const memoResult = react.memo(function VoicePanelControlsDimOverlay(wrapperSpecs
   const setControlsMode = context.setControlsMode;
   ({ windowDimensions, controlsSpecs, safeArea, mode } = context);
   let items = [closure_9, windowDimensions, , , , , , , , , ];
-  const useDerivedValue = setControlsMode(1655).useDerivedValue;
-  const tmp4 = setControlsMode(1655);
-  items[2] = setControlsMode(20077).getDrawerSpec;
+  const useDerivedValue = setControlsMode(1653).useDerivedValue;
+  const tmp4 = setControlsMode(1653);
+  items[2] = setControlsMode(19334).getDrawerSpec;
   items[3] = safeArea;
   items[4] = controlsSpecs;
   items[5] = VoicePanelControlsModes;
   items[6] = mode;
   items[7] = constants;
-  items[8] = setControlsMode(1655).interpolate;
+  items[8] = setControlsMode(1653).interpolate;
   items[9] = wrapperSpecs;
   items[10] = closure_4;
   let c0;
@@ -102,7 +102,7 @@ const memoResult = react.memo(function VoicePanelControlsDimOverlay(wrapperSpecs
   const items2 = [closure_10, derivedValue];
   c0 = undefined;
   [tmp17, tmp18] = items2;
-  const tmp3Result = setControlsMode(1655);
+  const tmp3Result = setControlsMode(1653);
   class VoicePanelControlsDimOverlayTsx2 {
     constructor() {
       return _undefined.get() >= 0.35;
@@ -114,12 +114,12 @@ const memoResult = react.memo(function VoicePanelControlsDimOverlay(wrapperSpecs
   VoicePanelControlsDimOverlayTsx2.__initData = tmp17;
   const derivedValue1 = tmp3Result.useDerivedValue(VoicePanelControlsDimOverlayTsx2);
   const items4 = [closure_11, , , , , ];
-  const useAnimatedStyle = tmp3(1655).useAnimatedStyle;
-  setControlsMode(1655);
-  items4[1] = setControlsMode(5929).withSpring;
+  const useAnimatedStyle = tmp3(1653).useAnimatedStyle;
+  setControlsMode(1653);
+  items4[1] = setControlsMode(5514).withSpring;
   items4[2] = derivedValue;
   items4[3] = closure_5;
-  items4[4] = setControlsMode(16890).accessibilityPreferencesSharedValue;
+  items4[4] = setControlsMode(15644).accessibilityPreferencesSharedValue;
   items4[5] = derivedValue1;
   c0 = undefined;
   c1 = undefined;
@@ -149,7 +149,7 @@ const memoResult = react.memo(function VoicePanelControlsDimOverlay(wrapperSpecs
   const items6 = [closure_12, derivedValue1];
   c0 = undefined;
   [tmp28, tmp29] = items6;
-  const tmp3Result4 = setControlsMode(1655);
+  const tmp3Result4 = setControlsMode(1653);
   class VoicePanelControlsDimOverlayTsx4 {
     constructor() {
       let pointerEvents = "none";
@@ -169,7 +169,7 @@ const memoResult = react.memo(function VoicePanelControlsDimOverlay(wrapperSpecs
     const obj = { mode: VoicePanelControlsModes.FLOATING_DEFAULT };
     setControlsMode(obj);
   }, items8);
-  return jsx(setControlsMode(5894).Backdrop, { onDismiss, style, animatedProps, opaque: true, "aria-hidden": true });
+  return jsx(setControlsMode(5479).Backdrop, { onDismiss, style, animatedProps, opaque: true, "aria-hidden": true });
 });
 const result = size.fileFinishedImporting("modules/voice_panel/native/controls/VoicePanelControlsDimOverlay.tsx");
 

@@ -15,13 +15,12 @@ let c4 = 5000;
 
 export const MIN_DELAY = 100;
 export const START_DELAY = 5000;
-export function makeOfflineTransport(arg0) {
-  let closure_0 = arg0;
+export function makeOfflineTransport(makeFetchTransport) {
   function log() {
     const items = [...arguments];
-    const tmp2 = closure_0;
+    const tmp2 = makeFetchTransport;
     const tmp3 = log;
-    if (closure_0(log[1]).DEBUG_BUILD) {
+    if (makeFetchTransport(log[1]).DEBUG_BUILD) {
       const debug = tmp2(tmp3[2]).debug;
       log = debug.log;
       const items1 = ["[Offline]:"];
@@ -32,7 +31,7 @@ export function makeOfflineTransport(arg0) {
   return function(createStore) {
     let timerId;
     let tmp5;
-    closure_0 = createStore;
+    makeFetchTransport = createStore;
     function flushIn(arg0) {
       const tmp = timerId;
       if (tmp) {
@@ -54,6 +53,7 @@ export function makeOfflineTransport(arg0) {
           }
         } else {
           try {
+            let closure_0;
             c3 = 2;
             if (0 === c2) {
               if (arg0 === 1) {
@@ -133,6 +133,7 @@ export function makeOfflineTransport(arg0) {
             }
           } else {
             try {
+              let closure_0;
               c3 = 2;
               if (0 === c2) {
                 if (arg0 === 1) {
@@ -197,6 +198,7 @@ export function makeOfflineTransport(arg0) {
     }
     let obj = function _send() {
       obj = _asyncToGenerator(async function(arg0, value) {
+        let closure_0;
         let flag;
         let shouldStore;
         function shouldQueue(arg0, arg1, arg2) {
@@ -381,7 +383,7 @@ export function makeOfflineTransport(arg0) {
       });
       return obj(...arguments);
     };
-    let closure_1 = closure_0(createStore);
+    let closure_1 = makeFetchTransport(createStore);
     if (createStore.createStore) {
       let closure_3 = createStore.createStore(createStore);
       let tmp4 = closure_1_4;
@@ -411,6 +413,7 @@ export function makeOfflineTransport(arg0) {
               }
             } else {
               try {
+                let closure_0;
                 c3 = 2;
                 if (0 === c2) {
                   if (arg0 === 1) {
@@ -499,6 +502,7 @@ export function makeOfflineTransport(arg0) {
                   }
                 } else {
                   try {
+                    let closure_0;
                     c3 = 2;
                     if (0 === c2) {
                       if (arg0 === 1) {

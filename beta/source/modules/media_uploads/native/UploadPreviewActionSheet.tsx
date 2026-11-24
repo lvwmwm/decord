@@ -1,25 +1,25 @@
-// Module ID: 11634
-// Function ID: 11635
+// Module ID: 11619
+// Function ID: 11620
 // Name: UploadPreviewActionSheet
-// Dependencies: [32, 19, 17, 8725, 1072, 5557, 21, 5306, 575, 38, 8850, 1496, 1630, 5889, 5542, 8880, 11635, 1256, 6005, 8879, 11844, 11845, 5556, 5560, 6327, 5919, 1380, 9730, 11651, 7746, 7443, 11846, 11848, 1113, 7733, 11853, 11153, 8085, 11855, 5926, 6030, 2]
+// Dependencies: [32, 19, 17, 8315, 1071, 5142, 21, 4913, 575, 38, 8445, 1494, 1628, 5474, 5127, 8475, 11620, 1255, 5595, 8474, 11647, 11648, 5141, 5145, 5929, 5504, 1378, 9254, 11636, 7348, 7045, 11649, 11651, 1112, 7335, 11656, 10453, 7688, 11658, 5511, 5620, 2]
 // Exports: default
 
-// Module 11634 (UploadPreviewActionSheet)
+// Module 11619 (UploadPreviewActionSheet)
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5557 */;
-import DraftStore from "DraftStore" /* 8725 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 8879 */;
-import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 11153 */;
-import MediaKeyboardUtils from "MediaKeyboardUtils" /* 11635 */;
-import AddImageDescriptionModalActionCreatorsDefault from "AddImageDescriptionModalActionCreators" /* 11848 */;
+import Constants from "Constants" /* 1071 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5142 */;
+import DraftStore from "DraftStore" /* 8315 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 8474 */;
+import UploadAttachmentActionCreatorsDefault from "UploadAttachmentActionCreators" /* 10453 */;
+import MediaKeyboardUtils from "MediaKeyboardUtils" /* 11620 */;
+import AddImageDescriptionModalActionCreatorsDefault from "AddImageDescriptionModalActionCreators" /* 11651 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let cropRect;

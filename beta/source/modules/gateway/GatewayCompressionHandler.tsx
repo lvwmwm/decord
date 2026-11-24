@@ -1,15 +1,15 @@
-// Module ID: 16135
-// Function ID: 16136
+// Module ID: 14908
+// Function ID: 14909
 // Name: GatewayCompressionHandler
-// Dependencies: [16136, 16138, 3, 16137, 8193, 2]
+// Dependencies: [14909, 14911, 3, 14910, 7796, 2]
 // Exports: getCompressionHandler
 
-// Module 16135 (GatewayCompressionHandler)
+// Module 14908 (GatewayCompressionHandler)
 import LoggerDefault from "Logger" /* 3 */;
-import ProcessArgs2 from "ProcessArgs" /* 8193 */;
-import react_native from "react-native" /* 16136 */;
-import react_native2 from "react-native" /* 16137 */;
-import _mod16138 from "module_16138" /* 16138 */;
+import ProcessArgs2 from "ProcessArgs" /* 7796 */;
+import react_native from "react-native" /* 14909 */;
+import react_native2 from "react-native" /* 14910 */;
+import _mod14911 from "module_14911" /* 14911 */;
 import size from "module_2" /* 2 */;
 
 const items = [];
@@ -103,7 +103,7 @@ class tmp4 extends BaseGatewayCompressionHandler {
     let _inflate;
     let handleFlushEnd;
     const tmp2 = new tmp(arg0, new.target, tmp, this);
-    tmp2._pako = _mod16138;
+    tmp2._pako = _mod14911;
     tmp2._usesZstd = false;
     tmp2._zstdDecoder = null;
     tmp2._zstdStream = null;
@@ -129,7 +129,7 @@ class tmp4 extends BaseGatewayCompressionHandler {
   usesLegacyCompression() {
     return false;
   }
-  feed(buffer) {
+  feed(arg0) {
     const self = this;
     if (null == this._inflate) {
       const _Error3 = Error;
@@ -145,11 +145,11 @@ class tmp4 extends BaseGatewayCompressionHandler {
       throw error1;
     } else {
       const _ArrayBuffer = ArrayBuffer;
-      if (buffer instanceof ArrayBuffer) {
+      if (arg0 instanceof ArrayBuffer) {
         const _DataView = DataView;
         const self4 = this;
         const self5 = this;
-        const dataView = new DataView(buffer);
+        const dataView = new DataView(arg0);
         const _inflate = self._inflate;
         let Z_SYNC_FLUSH = dataView.byteLength >= 4 && 65535 === dataView.getUint32(dataView.byteLength - 4, false);
         const push = _inflate.push;
@@ -157,12 +157,12 @@ class tmp4 extends BaseGatewayCompressionHandler {
         if (Z_SYNC_FLUSH) {
           Z_SYNC_FLUSH = self._pako.Z_SYNC_FLUSH;
         }
-        push(buffer, Z_SYNC_FLUSH);
+        push(arg0, Z_SYNC_FLUSH);
       } else {
         const _Error = Error;
         const self2 = this;
         const self3 = this;
-        const error2 = new Error("Expected array buffer, but got " + typeof buffer);
+        const error2 = new Error("Expected array buffer, but got " + typeof arg0);
         throw error2;
       }
     }
@@ -247,7 +247,7 @@ items.push(tmp4);
 class tmp6 extends BaseGatewayCompressionHandler {
   constructor() {
     const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
-    applyArgumentsResult._pako = _mod16138;
+    applyArgumentsResult._pako = _mod14911;
     return applyArgumentsResult;
   }
   static canUse() {

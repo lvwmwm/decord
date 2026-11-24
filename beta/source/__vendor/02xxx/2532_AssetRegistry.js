@@ -1,10 +1,10 @@
 // Module ID: 2532
 // Function ID: 2533
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 2532 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/go_live", scales: [1], hash: "f6e3c365e8a3adf05325d11d5ed6a02b", name: "MobileGoLiveActionSheet.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9jb2xsZWN0aWJsZXMvd2Vi", scales: [1], hash: "14bbe00144203e10d868c2407f6f975d", name: "th.messages.14bbe00144203e10d868c2407f6f975d.compiled.messages", type: "jsona" });

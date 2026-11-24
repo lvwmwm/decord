@@ -8,27 +8,27 @@ import _mod691 from "module_691" /* 691 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export function isMatchingPattern(arr, test) {
+export function isMatchingPattern(description, name) {
   let flag = arg2;
   if (arg2 === undefined) {
     flag = false;
   }
   const obj = _mod691;
-  let isStringResult = obj.isString(arr);
+  let isStringResult = obj.isString(description);
   if (isStringResult) {
     let isMatch;
     const tmpResult = _mod691;
-    if (tmpResult.isRegExp(test)) {
-      isMatch = test.test(arr);
+    if (tmpResult.isRegExp(name)) {
+      isMatch = name.test(description);
     } else {
       const tmpResult2 = _mod691;
-      isMatch = tmpResult2.isString(test);
+      isMatch = tmpResult2.isString(name);
       if (isMatch) {
         let hasItem;
         if (flag) {
-          hasItem = arr === test;
+          hasItem = description === name;
         } else {
-          hasItem = arr.includes(test);
+          hasItem = description.includes(name);
         }
         isMatch = hasItem;
       }
@@ -37,21 +37,21 @@ export function isMatchingPattern(arr, test) {
   }
   return isStringResult;
 }
-export function safeJoin(__v_isVNode, arg1) {
-  if (Array.isArray(__v_isVNode)) {
+export function safeJoin(args, arg1) {
+  if (Array.isArray(args)) {
     const items = [];
     let num = 0;
-    if (0 < __v_isVNode.length) {
+    if (0 < args.length) {
       try {
         const push = items.push;
         const obj = _mod691;
         const tmp3 = require;
-        if (obj.isVueViewModel(__v_isVNode[num])) {
+        if (obj.isVueViewModel(args[num])) {
           const tmp3Result = tmp3(697);
-          push(tmp3Result.getVueInternalName(__v_isVNode[num]));
+          push(tmp3Result.getVueInternalName(args[num]));
         } else {
           const _String = String;
-          push(String(__v_isVNode[num]));
+          push(String(args[num]));
         }
       } catch (err) {
         items.push("[value cannot be serialized]");
@@ -63,12 +63,12 @@ export function safeJoin(__v_isVNode, arg1) {
     return "";
   }
 }
-export function snipLine(arr, arg1) {
+export function snipLine(arr, lineno) {
   if (arr.length <= 150) {
     return arr;
   } else {
-    let tmp = arg1;
-    if (arg1 > arr.length) {
+    let tmp = lineno;
+    if (lineno > arr.length) {
       tmp = length;
     }
     const _Math = Math;
@@ -98,10 +98,10 @@ export function snipLine(arr, arg1) {
     return text;
   }
 }
-export function stringMatchesSomePattern(arg0) {
-  let closure_0 = arg0;
-  let items = arg1;
-  if (arg1 === undefined) {
+export function stringMatchesSomePattern(name, endpoints) {
+  let closure_0 = name;
+  let items = endpoints;
+  if (endpoints === undefined) {
     items = [];
   }
   let flag = arg2;

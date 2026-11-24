@@ -1,19 +1,18 @@
-// Module ID: 6785
-// Function ID: 6786
+// Module ID: 6389
+// Function ID: 6390
 // Name: ChannelMessages
-// Dependencies: [1072, 3, 6786, 11, 6364, 12, 5533, 6787, 6788, 6789, 2]
+// Dependencies: [1071, 3, 6390, 11, 5966, 12, 6391, 6392, 6393, 2]
 // Exports: flatMapChannelMessages
 
-// Module 6785 (ChannelMessages)
+// Module 6389 (ChannelMessages)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
-import flow_Client from "flow/Client" /* 5533 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 6364 */;
-import EnsureReceivedMessagesAddedInOrderExperimentDefault from "EnsureReceivedMessagesAddedInOrderExperiment" /* 6786 */;
-import IOSPushNotificationRawPayloadFixExperiment from "IOSPushNotificationRawPayloadFixExperiment" /* 6787 */;
-import SortedArrayUtilsAll from "SortedArrayUtils" /* 6789 */;
-import Constants from "Constants" /* 1072 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 5966 */;
+import EnsureReceivedMessagesAddedInOrderExperimentDefault from "EnsureReceivedMessagesAddedInOrderExperiment" /* 6390 */;
+import flow_Client from "flow/Client" /* 6391 */;
+import SortedArrayUtilsAll from "SortedArrayUtils" /* 6393 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -1343,7 +1342,7 @@ class ChannelMessages {
       return truncateTopResult;
     }
   }
-  receivePushNotification(message, isConnectedResult) {
+  receivePushNotification(message) {
     const self = this;
     let value = null;
     if (null != message.nonce) {
@@ -1355,20 +1354,13 @@ class ChannelMessages {
       return self;
     } else {
       let insertInOrderResult;
-      const obj4 = IOSPushNotificationRawPayloadFixExperiment;
-      const result = obj4.isIOSPushNotificationRawPayloadFixExperimentEnabled();
-      let tmp3 = !result;
-      if (result) {
-        tmp3 = !isConnectedResult;
-      }
-      const obj = { ready: true, cached: tmp3 };
-      const mutation = self.mutate(obj);
-      const tmp5 = mergeMessage(self, message);
-      const obj3 = EnsureReceivedMessagesAddedInOrderExperimentDefault;
-      if (obj3.getConfig({ location: "receiveMessage" }).enabled) {
-        insertInOrderResult = mutation.insertInOrder(tmp5);
+      const mutation = self.mutate({ ready: true, cached: true });
+      const tmp3 = mergeMessage(self, message);
+      const obj2 = EnsureReceivedMessagesAddedInOrderExperimentDefault;
+      if (obj2.getConfig({ location: "receiveMessage" }).enabled) {
+        insertInOrderResult = mutation.insertInOrder(tmp3);
       } else {
-        const items = [tmp5];
+        const items = [tmp3];
         insertInOrderResult = mutation.merge(items);
       }
       return insertInOrderResult;
@@ -1514,7 +1506,7 @@ class ChannelMessages {
           jumpType = jump.jumpType;
         }
         if (jumpType == null) {
-          jumpType = id(5533).JumpType.ANIMATED;
+          jumpType = id(6391).JumpType.ANIMATED;
         }
         let obj2 = { ready: true, loadingMore: false, jumpType, jumpFlash: flag8, jumped: null != jump, jumpedToPresent: flag9, jumpTargetId: messageId, jumpTargetOffset: num, jumpSequenceId: null, jumpReturnTargetId: null, onJumpComplete: null, hasMoreBefore: null, hasMoreAfter: null, cached: null, hasFetched: null, error: false, initialScrollSequenceId: null, suppressRowAnimationSequenceId: null };
         flag8 = undefined;
@@ -1683,7 +1675,7 @@ class ChannelMessages {
     let reversed;
     let sum;
     const self = this;
-    let obj = reversed(6788);
+    let obj = reversed(6392);
     const result = obj.requireSortedDescending(messages);
     const mapped = messages.map((item) => mergeMessage(self, item));
     reversed = mapped.reverse();

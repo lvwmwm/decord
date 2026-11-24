@@ -1,22 +1,22 @@
-// Module ID: 7885
-// Function ID: 7886
+// Module ID: 7487
+// Function ID: 7488
 // Name: GuildOnboardingModal
-// Dependencies: [19, 7707, 5155, 5177, 5209, 7869, 7866, 1072, 21, 1099, 7886, 7493, 7915, 7084, 7938, 7887, 504, 7872, 7686, 7490, 1113, 2]
+// Dependencies: [19, 7309, 4762, 4784, 4816, 7471, 7468, 1071, 21, 1098, 7488, 7095, 7517, 6688, 7540, 7489, 504, 7474, 7288, 7092, 1112, 2]
 // Exports: default
 
-// Module 7885 (GuildOnboardingModal)
+// Module 7487 (GuildOnboardingModal)
 import Fragment from "Fragment" /* 21 */;
-import NavigatorHeader from "NavigatorHeader" /* 7493 */;
-import MemberVerificationActionCreatorsDefault from "MemberVerificationActionCreators" /* 7686 */;
-import GuildOnboardingConstants from "GuildOnboardingConstants" /* 7866 */;
-import GuildOnboardingActionCreatorsDefault from "GuildOnboardingActionCreators" /* 7872 */;
+import NavigatorHeader from "NavigatorHeader" /* 7095 */;
+import MemberVerificationActionCreatorsDefault from "MemberVerificationActionCreators" /* 7288 */;
+import GuildOnboardingConstants from "GuildOnboardingConstants" /* 7468 */;
+import GuildOnboardingActionCreatorsDefault from "GuildOnboardingActionCreators" /* 7474 */;
 import react from "react" /* 19 */;
-import MemberVerificationFormStore from "MemberVerificationFormStore" /* 7707 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import GuildStore from "GuildStore" /* 5177 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
-import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7869 */;
-import Constants from "Constants" /* 1072 */;
+import MemberVerificationFormStore from "MemberVerificationFormStore" /* 7309 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4816 */;
+import GuildOnboardingPromptsStore from "GuildOnboardingPromptsStore" /* 7471 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 let c10;

@@ -1,20 +1,20 @@
-// Module ID: 1113
-// Function ID: 1114
+// Module ID: 1112
+// Function ID: 1113
 // Name: intl
-// Dependencies: [19, 1072, 21, 1114, 1115, 1152, 1187, 12754, 2, 16634, 16639]
+// Dependencies: [19, 1071, 21, 1113, 1114, 1151, 1186, 10633, 2, 15421, 15426]
 // Exports: getSystemLocale, useSyncMessages
 
-// Module 1113 (intl)
+// Module 1112 (intl)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1072 */;
-import react_native from "react-native" /* 1114 */;
-import native from "native" /* 1187 */;
-import IntlLink from "IntlLink" /* 12754 */;
-import defaultMessageProxy from "defaultMessageProxy" /* 16634 */;
-import _modDef16639 from "module_16639" /* 16639 */;
+import Constants from "Constants" /* 1071 */;
+import react_native from "react-native" /* 1113 */;
+import native from "native" /* 1186 */;
+import IntlLink from "IntlLink" /* 10633 */;
+import defaultMessageProxy from "defaultMessageProxy" /* 15421 */;
+import _modDef15426 from "module_15426" /* 15426 */;
 import react from "react" /* 19 */;
-import util from "intl/util" /* 1115 */;
-import module_1152 from "module_1152" /* 1152 */;
+import util from "intl/util" /* 1114 */;
+import module_1151 from "module_1151" /* 1151 */;
 import size from "module_2" /* 2 */;
 
 const Fonts = Constants.Fonts;
@@ -60,10 +60,10 @@ const obj2 = {
     return jsx(IntlLink.IntlLink, { target: tmp, children }, arg1);
   }
 };
-const reactFormatter = module_1152.makeReactFormatter(obj2);
+const reactFormatter = module_1151.makeReactFormatter(obj2);
 const obj3 = { initialLocale: normalizedLocale, defaultLocale: "en-US" };
-const intlManager = new module_1152.IntlManager(obj3);
-const obj4 = { format: reactFormatter, formatToPlainString: module_1152.stringFormatter, formatToMarkdownString: module_1152.markdownFormatter, formatToParts: module_1152.astFormatter };
+const intlManager = new module_1151.IntlManager(obj3);
+const obj4 = { format: reactFormatter, formatToPlainString: module_1151.stringFormatter, formatToMarkdownString: module_1151.markdownFormatter, formatToParts: module_1151.astFormatter };
 const withFormattersResult = intlManager.withFormatters(obj4);
 const result = size.fileFinishedImporting("intl/index.native.tsx");
 
@@ -76,6 +76,6 @@ export function useSyncMessages(arg0) {
   return obj.useSyncMessages(arg0, withFormattersResult);
 }
 export const t = defaultMessageProxy._defaultMessages;
-export const international = _modDef16639;
+export const international = _modDef15426;
 export const systemLocale = str;
 export const initialLocale = normalizedLocale;

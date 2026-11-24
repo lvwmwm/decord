@@ -1,22 +1,22 @@
-// Module ID: 9556
-// Function ID: 9557
+// Module ID: 9076
+// Function ID: 9077
 // Name: BurstReactionToggle
-// Dependencies: [19, 17, 5307, 5152, 21, 1655, 504, 5892, 575, 5538, 5929, 5306, 9557, 1113, 9558, 2]
+// Dependencies: [19, 17, 4914, 4759, 21, 1653, 504, 5477, 575, 5123, 5514, 4913, 9077, 1112, 9078, 2]
 // Exports: default
 
-// Module 9556 (BurstReactionToggle)
+// Module 9076 (BurstReactionToggle)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
-import timing_timing from "timing/timing" /* 5538 */;
-import useToken2 from "useToken" /* 5892 */;
-import spring_spring from "spring/spring" /* 5929 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4759 */;
+import timing_timing from "timing/timing" /* 5123 */;
+import useToken2 from "useToken" /* 5477 */;
+import spring_spring from "spring/spring" /* 5514 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5307 */;
-import createStyles from "createStyles" /* 5306 */;
+import AccessibilityStore from "AccessibilityStore" /* 4914 */;
+import createStyles from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -27,8 +27,8 @@ let size;
 const Pressable = react_native.Pressable;
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
 const jsx = Fragment.jsx;
-let obj = { duration: 100, easing: Easing.out(_mod1655.Easing.quad) };
-Easing = _mod1655.Easing;
+let obj = { duration: 100, easing: Easing.out(_mod1653.Easing.quad) };
+Easing = _mod1653.Easing;
 let closure_9 = { stiffness: 750, mass: 2.5, damping: 70 };
 let closure_10 = { code: "(function BurstReactionToggleTsx1(){let[reducedMotion,targetBackgroundColor,backgroundColor,rotation]=this.__closure;const _backgroundColor=reducedMotion?targetBackgroundColor:backgroundColor.get();const _rotation=reducedMotion?0:rotation.get();return{backgroundColor:_backgroundColor,transform:[{rotate:_rotation+\"deg\"}]};})" };
 let obj2 = { container: size };
@@ -64,7 +64,7 @@ export default function BurstReactionToggle(arg0) {
   }
   obj = react;
   const ref = react.useRef(null);
-  importDefault = tmp7(9557)(ref);
+  importDefault = tmp7(9077)(ref);
   let num;
   let sharedValue;
   let sharedValue1;
@@ -82,9 +82,9 @@ export default function BurstReactionToggle(arg0) {
   if (isActive) {
     num = 360;
   }
-  const tmp9Result = _mod1655;
+  const tmp9Result = _mod1653;
   sharedValue = tmp9Result.useSharedValue(str);
-  const tmp9Result3 = _mod1655;
+  const tmp9Result3 = _mod1653;
   sharedValue1 = tmp9Result3.useSharedValue(num);
   const items1 = [closure_10, stateFromStores, str, sharedValue, sharedValue1];
   let c0;
@@ -92,7 +92,7 @@ export default function BurstReactionToggle(arg0) {
   let c2;
   let c3;
   [tmp14, tmp15, tmp16, tmp17, tmp18] = items1;
-  const tmp9Result4 = _mod1655;
+  const tmp9Result4 = _mod1653;
   class BurstReactionToggleTsx1 {
     constructor() {
       let items;
@@ -126,16 +126,16 @@ export default function BurstReactionToggle(arg0) {
     const obj2 = spring_spring;
     set2(obj2.withSpring(num, closure_2_9));
   }, items3);
-  const intl = tmp9(1113).intl;
+  const intl = tmp9(1112).intl;
   const string = intl.string;
-  const t = tmp9(1113).t;
+  const t = tmp9(1112).t;
   if (isActive) {
     stringResult = string(t["5cRA/b"]);
   } else {
     stringResult = string(t.buV4av);
   }
   const items4 = [tmp.container, animatedStyle];
-  const View = tmp7(1655).View;
+  const View = tmp7(1653).View;
   return <tmp22 onPress={function handleOnPress() {
     closure_1(ContentDismissActionType.AUTO);
     require();

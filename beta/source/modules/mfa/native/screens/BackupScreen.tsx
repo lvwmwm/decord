@@ -1,15 +1,15 @@
-// Module ID: 18316
-// Function ID: 18317
+// Module ID: 17099
+// Function ID: 17100
 // Name: BackupScreen
-// Dependencies: [5, 32, 19, 21, 18314, 5919, 1113, 7770, 18309, 18315, 18312, 2]
+// Dependencies: [5, 32, 19, 21, 17097, 5504, 1112, 7372, 17092, 17098, 17095, 2]
 // Exports: default
 
-// Module 18316 (BackupScreen)
-import intl10 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import useWideAuthViewDefault from "useWideAuthView" /* 7770 */;
-import MfaOptionScreenDefault from "MfaOptionScreen" /* 18309 */;
-import MFA from "MFA" /* 18314 */;
+// Module 17099 (BackupScreen)
+import intl10 from "intl" /* 1112 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import useWideAuthViewDefault from "useWideAuthView" /* 7372 */;
+import MfaOptionScreenDefault from "MfaOptionScreen" /* 17092 */;
+import MFA from "MFA" /* 17097 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -22,8 +22,8 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const buttonDefault = tmp(18312);
-const ClipboardCopyInputDefault = tmp(18315);
+const buttonDefault = tmp(17095);
+const ClipboardCopyInputDefault = tmp(17098);
 function isValidClipboardCode(arg0) {
   let tmp3 = arg0.length >= MFA.BACKUP_CODE_MIN_LENGTH;
   if (tmp3) {
@@ -184,25 +184,25 @@ export default function BackupScreen(finish) {
   tmp18 = metroImportAll;
   if (first1 > 0) {
     let obj2 = { variant: "body-md/normal", children: items2 };
-    const intl3 = tmp16(1113).intl;
-    items2 = [intl3.string(tmp16(1113).t.RRtlLg), ];
-    const intl4 = tmp16(1113).intl;
+    const intl3 = tmp16(1112).intl;
+    items2 = [intl3.string(tmp16(1112).t.RRtlLg), ];
+    const intl4 = tmp16(1112).intl;
     let obj3 = { countdown: first1 };
     items2[1] = intl4.format(intl10.t.tsWkAE, obj3);
     obj4 = obj2;
   } else {
     obj4 = { variant: "body-md/normal", children: items3 };
-    const intl8 = tmp16(1113).intl;
-    items3 = [intl8.string(tmp16(1113).t.RRtlLg), ];
-    const intl9 = tmp16(1113).intl;
+    const intl8 = tmp16(1112).intl;
+    items3 = [intl8.string(tmp16(1112).t.RRtlLg), ];
+    const intl9 = tmp16(1112).intl;
     items3[1] = intl9.string(intl10.t.v3a6Pd);
   }
   const items4 = [metroRequire(Text, obj4), ];
   let obj5 = {
-    label: intl5.string(tmp16(1113).t["C/ZAw/"]),
-    placeholder: intl6.string(tmp16(1113).t.fZSi1D),
+    label: intl5.string(tmp16(1112).t["C/ZAw/"]),
+    placeholder: intl6.string(tmp16(1112).t.fZSi1D),
     isValidClipboardCode,
-    maxLength: tmp16(18314).BACKUP_CODE_MAX_LENGTH,
+    maxLength: tmp16(17097).BACKUP_CODE_MAX_LENGTH,
     onChangeCode(arg0) {
       closure_3(arg0);
       _undefined(undefined);
@@ -212,8 +212,8 @@ export default function BackupScreen(finish) {
     autoFocus: !tmp3
   };
   const tmpResult = ClipboardCopyInputDefault;
-  intl5 = tmp16(1113).intl;
-  intl6 = tmp16(1113).intl;
+  intl5 = tmp16(1112).intl;
+  intl6 = tmp16(1112).intl;
   obj6 = { children: items4 };
   tmp20 = tmp5 || tmp10;
   items4[1] = metroImportDefault(tmpResult, obj5);
@@ -227,12 +227,12 @@ export default function BackupScreen(finish) {
     disabled: tmp5
   };
   tmpResult2 = buttonDefault;
-  intl7 = tmp16(1113).intl;
+  intl7 = tmp16(1112).intl;
   if (!tmp5) {
     tmp5 = tmp10;
   }
   if (!tmp5) {
-    tmp5 = first.length < tmp16(18314).BACKUP_CODE_MIN_LENGTH;
+    tmp5 = first.length < tmp16(17097).BACKUP_CODE_MIN_LENGTH;
   }
   if (!tmp5) {
     tmp5 = first1 > 0;

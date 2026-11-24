@@ -1,19 +1,19 @@
-// Module ID: 19226
-// Function ID: 19227
+// Module ID: 18028
+// Function ID: 18029
 // Name: useSoundboardSoundLock
-// Dependencies: [19, 1388, 6361, 504, 13023, 2174, 9035, 9037, 6005, 1113, 9981, 2]
+// Dependencies: [19, 1386, 5963, 504, 10984, 2173, 8545, 8547, 5595, 1112, 9370, 2]
 // Exports: useSoundboardSoundLock
 
-// Module 19226 (useSoundboardSoundLock)
-import intl3 from "intl" /* 1113 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2174 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 6005 */;
-import SoundboardConstants from "SoundboardConstants" /* 6361 */;
-import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 9035 */;
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 9037 */;
-import BoostGemIcon from "BoostGemIcon" /* 9981 */;
+// Module 18028 (useSoundboardSoundLock)
+import intl3 from "intl" /* 1112 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2173 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5595 */;
+import SoundboardConstants from "SoundboardConstants" /* 5963 */;
+import openPremiumUpsellActionSheetDefault from "openPremiumUpsellActionSheet" /* 8545 */;
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 8547 */;
+import BoostGemIcon from "BoostGemIcon" /* 9370 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1388 */;
+import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -59,11 +59,11 @@ export function useSoundboardSoundLock(sound, channel) {
   if (!result) {
     let stringResult;
     if (tmp7) {
-      const intl2 = tmp(1113).intl;
-      stringResult = intl2.string(tmp(1113).t.BARTXV);
+      const intl2 = tmp(1112).intl;
+      stringResult = intl2.string(tmp(1112).t.BARTXV);
     } else if (!sound.available) {
-      let intl = tmp(1113).intl;
-      stringResult = intl.string(tmp(1113).t.MDOXJR);
+      let intl = tmp(1112).intl;
+      stringResult = intl.string(tmp(1112).t.MDOXJR);
     }
     lockedAccessibilityHint = stringResult;
   }

@@ -1,15 +1,15 @@
-// Module ID: 13538
-// Function ID: 13539
+// Module ID: 13096
+// Function ID: 13097
 // Name: useUploadDisabled
-// Dependencies: [8725, 5238, 8872, 1072, 504, 7241, 2]
+// Dependencies: [8315, 4845, 8467, 1071, 504, 6843, 2]
 // Exports: default
 
-// Module 13538 (useUploadDisabled)
-import FakePlaceholderPrivateChannel from "FakePlaceholderPrivateChannel" /* 7241 */;
-import DraftStore from "DraftStore" /* 8725 */;
-import PermissionStore from "PermissionStore" /* 5238 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 8872 */;
-import Constants from "Constants" /* 1072 */;
+// Module 13096 (useUploadDisabled)
+import FakePlaceholderPrivateChannel from "FakePlaceholderPrivateChannel" /* 6843 */;
+import DraftStore from "DraftStore" /* 8315 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8467 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

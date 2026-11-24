@@ -1,10 +1,10 @@
 // Module ID: 13065
 // Function ID: 13066
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 13065 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons/voice_calls/light_theme", width: 24, height: 24, scales: [2, 3], hash: "b58afbfc4faaabe5f94fadb0443cc8ee", name: "voice_bar_deafen_off", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/empties", width: 128, height: 128, scales: [2, 3], hash: "e383fc0d018f183d68f1f643b1d8ed25", name: "app_dock_not_found_light", type: "png" });

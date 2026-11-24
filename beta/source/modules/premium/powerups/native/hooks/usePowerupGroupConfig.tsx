@@ -1,18 +1,18 @@
-// Module ID: 10756
-// Function ID: 10757
+// Module ID: 13439
+// Function ID: 13440
 // Name: usePowerupGroupConfig
-// Dependencies: [19, 5177, 504, 8409, 1113, 2733, 10757, 10758, 1255, 2]
+// Dependencies: [19, 4784, 504, 7999, 1112, 2856, 13440, 13441, 1254, 2]
 // Exports: default
 
-// Module 10756 (usePowerupGroupConfig)
-import intl4 from "intl" /* 1113 */;
-import GlobalUtils from "GlobalUtils" /* 1255 */;
-import _modDef2733 from "module_2733" /* 2733 */;
-import GuildTagUtils from "GuildTagUtils" /* 8409 */;
-import _modDef10757 from "module_10757" /* 10757 */;
-import _modDef10758 from "module_10758" /* 10758 */;
+// Module 13439 (usePowerupGroupConfig)
+import intl4 from "intl" /* 1112 */;
+import GlobalUtils from "GlobalUtils" /* 1254 */;
+import _modDef2856 from "module_2856" /* 2856 */;
+import GuildTagUtils from "GuildTagUtils" /* 7999 */;
+import _modDef13440 from "module_13440" /* 13440 */;
+import _modDef13441 from "module_13441" /* 13441 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5177 */;
+import GuildStore from "GuildStore" /* 4784 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -43,15 +43,15 @@ export default function usePowerupGroupConfig(arg0, arg1) {
     let obj3;
     let stringResult;
     if ("guildTagsBadgePacks" === group.group) {
-      const obj2 = { title: intl.string(_modDef2733.KC9HRW), description: intl2.string(_modDef2733.GJiSmP), image: obj3, disabledReason: stringResult, badge: "HermesInternal", forceStaticImages: "HermesInternal" };
+      const obj2 = { title: intl.string(_modDef2856.KC9HRW), description: intl2.string(_modDef2856.GJiSmP), image: obj3, disabledReason: stringResult, badge: "HermesInternal", forceStaticImages: "HermesInternal" };
       intl = intl4.intl;
       intl2 = intl4.intl;
       stringResult = undefined;
-      obj3 = { staticUrl: _modDef10757, animatedUrl: _modDef10758 };
+      obj3 = { staticUrl: _modDef13440, animatedUrl: _modDef13441 };
       const tmp7 = importDefault;
       if (!stateFromStores) {
         const intl3 = intl4.intl;
-        stringResult = intl3.string(tmp7(2733).lvk1Gc);
+        stringResult = intl3.string(tmp7(2856).lvk1Gc);
       }
       return obj2;
     } else {

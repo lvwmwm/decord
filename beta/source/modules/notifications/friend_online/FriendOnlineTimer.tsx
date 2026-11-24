@@ -1,18 +1,19 @@
-// Module ID: 20811
-// Function ID: 20812
+// Module ID: 20081
+// Function ID: 20082
 // Name: FriendOnlineTimer
-// Dependencies: [5, 7316, 20812, 1072, 1083, 1089, 1285, 1242, 572, 7882, 5131, 2]
+// Dependencies: [5, 502, 6920, 20082, 1071, 1082, 1088, 1284, 1241, 572, 7484, 4738, 2]
 
-// Module 20811 (FriendOnlineTimer)
-import Constants from "Constants" /* 1072 */;
-import Constants2 from "Constants" /* 1083 */;
-import DurationsDefault from "Durations" /* 1089 */;
-import HTTPUtils from "HTTPUtils" /* 1285 */;
-import UserSettings from "UserSettings" /* 5131 */;
+// Module 20081 (FriendOnlineTimer)
+import Constants from "Constants" /* 1071 */;
+import Constants2 from "Constants" /* 1082 */;
+import DurationsDefault from "Durations" /* 1088 */;
+import HTTPUtils from "HTTPUtils" /* 1284 */;
+import UserSettings from "UserSettings" /* 4738 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 7316 */;
-import FriendOnlineTimerStore from "FriendOnlineTimerStore" /* 20812 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;
+import AuthenticationStore from "AuthenticationStore" /* 502 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 6920 */;
+import FriendOnlineTimerStore from "FriendOnlineTimerStore" /* 20082 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7484 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, closure_2;
@@ -60,7 +61,7 @@ let obj = function _reportSessionMeaningfullyOnline() {
             c3 = 0;
             status = closure_2;
             const obj7 = { tags: { app_context: "session_timer" } };
-            const obj3 = closure_129_1(closure_129_2[7]);
+            const obj3 = closure_129_1(closure_129_2[8]);
             obj3.captureException(status, obj7);
             c5 = 3;
             const obj8 = { value: undefined, done: true };
@@ -78,8 +79,8 @@ let obj = function _reportSessionMeaningfullyOnline() {
           }
           const obj9 = { type: "FRIEND_ONLINE_TIMER_REPORTED", timestampMs: Date.now() };
           const _Date = Date;
-          const dispatch = closure_129_1(closure_129_2[8]).dispatch;
-          const tmp17 = closure_129_1(closure_129_2[8]);
+          const dispatch = closure_129_1(closure_129_2[9]).dispatch;
+          const tmp17 = closure_129_1(closure_129_2[9]);
           dispatch(obj9);
           c5 = 3;
           return { value: "HermesInternal", done: null };
@@ -99,9 +100,10 @@ let obj = function _reportSessionMeaningfullyOnline() {
 };
 const Endpoints = Constants.Endpoints;
 const StatusTypes = Constants2.StatusTypes;
-let closure_8 = 5 * DurationsDefault.Millis.MINUTE;
+let closure_9 = 5 * DurationsDefault.Millis.MINUTE;
 class FriendOnlineTimerManager extends AutomaticLifecycleManager {
   constructor() {
+    let authenticated;
     let cooldownElapsed;
     let status;
     const applyArgumentsResult = HermesBuiltin.applyArguments(this, new.target);
@@ -120,38 +122,50 @@ class FriendOnlineTimerManager extends AutomaticLifecycleManager {
       CONNECTION_INTERRUPTED() {
         return require.clear();
       },
+      LOGOUT() {
+        return require.clear();
+      },
       SELF_PRESENCE_STORE_UPDATE() {
         return require.start();
       }
     };
     applyArgumentsResult.start = function start() {
-      const NotifyFriendsOnComeOnline = UserSettings.NotifyFriendsOnComeOnline;
-      let setting = NotifyFriendsOnComeOnline.getSetting();
-      if (setting) {
-        setting = FriendOnlineTimerStore.isCooldownElapsed();
+      let isAuthenticatedResult = AuthenticationStore.isAuthenticated();
+      if (isAuthenticatedResult) {
+        const NotifyFriendsOnComeOnline = UserSettings.NotifyFriendsOnComeOnline;
+        isAuthenticatedResult = NotifyFriendsOnComeOnline.getSetting();
       }
-      if (setting) {
-        setting = null == require.timerId;
+      if (isAuthenticatedResult) {
+        isAuthenticatedResult = FriendOnlineTimerStore.isCooldownElapsed();
       }
-      if (setting) {
+      if (isAuthenticatedResult) {
+        isAuthenticatedResult = null == require.timerId;
+      }
+      if (isAuthenticatedResult) {
         let items = [, ];
         ({ ONLINE: arr[0], STREAMING: arr[1] } = StatusTypes);
-        setting = items.includes(SelfPresenceStore.getStatus());
+        isAuthenticatedResult = items.includes(SelfPresenceStore.getStatus());
       }
-      if (setting) {
+      if (isAuthenticatedResult) {
         const _setTimeout = setTimeout;
         require.timerId = setTimeout(() => {
           function reportSessionMeaningfullyOnline() {
-            return closure_1_9(...arguments);
+            return closure_1_10(...arguments);
           }
           closure_1_0.timerId = null;
-          const items = [, ];
-          ({ ONLINE: arr[0], STREAMING: arr[1] } = StatusTypes);
-          const hasItem = items.includes(status.getStatus()) && cooldownElapsed.isCooldownElapsed();
-          if (hasItem) {
+          let isAuthenticatedResult = authenticated.isAuthenticated();
+          if (isAuthenticatedResult) {
+            const items = [, ];
+            ({ ONLINE: arr[0], STREAMING: arr[1] } = StatusTypes);
+            isAuthenticatedResult = items.includes(status.getStatus());
+          }
+          if (isAuthenticatedResult) {
+            isAuthenticatedResult = cooldownElapsed.isCooldownElapsed();
+          }
+          if (isAuthenticatedResult) {
             reportSessionMeaningfullyOnline();
           }
-        }, closure_8);
+        }, closure_9);
       }
     };
     applyArgumentsResult.clear = function clear() {

@@ -1,46 +1,46 @@
-// Module ID: 13793
-// Function ID: 13794
+// Module ID: 18619
+// Function ID: 18620
 // Name: ConjureNativeComposer
-// Dependencies: [5, 32, 19, 17, 5307, 7375, 13583, 11632, 21, 575, 5306, 1113, 4131, 5892, 11631, 8160, 13794, 13796, 13798, 1380, 13799, 13795, 13581, 13228, 13623, 13801, 13187, 13230, 504, 13741, 11112, 10735, 10856, 11113, 13319, 11926, 5542, 13258, 13802, 13652, 13803, 6021, 13805, 9148, 10941, 13808, 5367, 13814, 5919, 2]
+// Dependencies: [5, 32, 19, 17, 4914, 6977, 18432, 11617, 21, 575, 4913, 1112, 4190, 5477, 11616, 7763, 18620, 14754, 18621, 1378, 12855, 12859, 18430, 18314, 18470, 18622, 18276, 18316, 504, 18591, 11181, 10107, 10894, 11182, 16955, 10141, 5127, 18338, 13099, 18499, 16312, 5611, 13106, 8658, 10261, 13113, 4974, 18623, 5504, 2]
 // Exports: default
 
-// Module 13793 (ConjureNativeComposer)
+// Module 18619 (ConjureNativeComposer)
 import nativeDefault from "native" /* 575 */;
-import intl5 from "intl" /* 1113 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
-import _modDef4131 from "module_4131" /* 4131 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5542 */;
-import useToken from "useToken" /* 5892 */;
-import SendMessageIcon from "SendMessageIcon" /* 6021 */;
-import ImagesIcon from "ImagesIcon" /* 10735 */;
-import MusicIcon from "MusicIcon" /* 10856 */;
-import PlusLargeIcon from "PlusLargeIcon" /* 10941 */;
-import ImageCarousel from "ImageCarousel" /* 11631 */;
-import ImageCarouselConstants from "ImageCarouselConstants" /* 11632 */;
-import ChatArrowRightIcon from "ChatArrowRightIcon" /* 11926 */;
-import conjureStoredAttachments2 from "conjureStoredAttachments" /* 13228 */;
-import ConjureModelSettingsSheet from "ConjureModelSettingsSheet" /* 13258 */;
-import FileUpIcon from "FileUpIcon" /* 13319 */;
-import conjureAttachmentDrafts from "conjureAttachmentDrafts" /* 13581 */;
-import conjureMentions from "conjureMentions" /* 13623 */;
-import StopIcon from "StopIcon" /* 13652 */;
-import conjurePickedFiles from "conjurePickedFiles" /* 13741 */;
-import conjureComposerPills from "conjureComposerPills" /* 13794 */;
-import ChatInputParser from "ChatInputParser" /* 13795 */;
-import ConjureChatActionCreators from "ConjureChatActionCreators" /* 13798 */;
-import ChatInputNativeCommandsDefault from "ChatInputNativeCommands" /* 13799 */;
-import ChatInputActionButtonDefault from "ChatInputActionButton" /* 13802 */;
-import FiltersHorizontalIcon from "FiltersHorizontalIcon" /* 13803 */;
-import ChatInputActionButtonTransitionItemDefault from "ChatInputActionButtonTransitionItem" /* 13805 */;
+import intl5 from "intl" /* 1112 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
+import _modDef4190 from "module_4190" /* 4190 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5127 */;
+import useToken from "useToken" /* 5477 */;
+import SendMessageIcon from "SendMessageIcon" /* 5611 */;
+import ImagesIcon from "ImagesIcon" /* 10107 */;
+import ChatArrowRightIcon from "ChatArrowRightIcon" /* 10141 */;
+import PlusLargeIcon from "PlusLargeIcon" /* 10261 */;
+import MusicIcon from "MusicIcon" /* 10894 */;
+import ImageCarousel from "ImageCarousel" /* 11616 */;
+import ImageCarouselConstants from "ImageCarouselConstants" /* 11617 */;
+import ChatInputNativeCommandsDefault from "ChatInputNativeCommands" /* 12855 */;
+import ChatInputParser from "ChatInputParser" /* 12859 */;
+import ChatInputActionButtonDefault from "ChatInputActionButton" /* 13099 */;
+import ChatInputActionButtonTransitionItemDefault from "ChatInputActionButtonTransitionItem" /* 13106 */;
+import FiltersHorizontalIcon from "FiltersHorizontalIcon" /* 16312 */;
+import FileUpIcon from "FileUpIcon" /* 16955 */;
+import conjureStoredAttachments2 from "conjureStoredAttachments" /* 18314 */;
+import ConjureModelSettingsSheet from "ConjureModelSettingsSheet" /* 18338 */;
+import conjureAttachmentDrafts from "conjureAttachmentDrafts" /* 18430 */;
+import conjureMentions from "conjureMentions" /* 18470 */;
+import StopIcon from "StopIcon" /* 18499 */;
+import conjurePickedFiles from "conjurePickedFiles" /* 18591 */;
+import conjureComposerPills from "conjureComposerPills" /* 18620 */;
+import ConjureChatActionCreators from "ConjureChatActionCreators" /* 18621 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5307 */;
-import ConjureModelSettingsStore from "ConjureModelSettingsStore" /* 7375 */;
-import ConjureComposerDraftStore from "ConjureComposerDraftStore" /* 13583 */;
+import AccessibilityStore from "AccessibilityStore" /* 4914 */;
+import ConjureModelSettingsStore from "ConjureModelSettingsStore" /* 6977 */;
+import ConjureComposerDraftStore from "ConjureComposerDraftStore" /* 18432 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 const ConjureModelSettingsSheetDefault = ConjureModelSettingsSheet;
@@ -96,20 +96,20 @@ function ConjureNativeDraftTile(draft) {
   ({ name: obj2.fileName, contentType } = draft);
   contentType2 = draft.contentType;
   if ("uploading" === draft.status) {
-    const intl3 = tmp2(1113).intl;
+    const intl3 = tmp2(1112).intl;
     const obj5 = { name: draft.name };
-    formatToPlainStringResult = intl3.formatToPlainString(tmp4(4131).MWTYwv, obj5);
+    formatToPlainStringResult = intl3.formatToPlainString(tmp4(4190).MWTYwv, obj5);
   } else if (null != draft.errorText) {
-    const intl2 = tmp2(1113).intl;
+    const intl2 = tmp2(1112).intl;
     const obj6 = { name: null, error: null };
     ({ name: obj4.name, errorText: obj4.error } = draft);
-    formatToPlainStringResult = intl2.formatToPlainString(tmp4(4131).U2WbGx, obj6);
+    formatToPlainStringResult = intl2.formatToPlainString(tmp4(4190).U2WbGx, obj6);
   } else {
-    const intl = tmp2(1113).intl;
+    const intl = tmp2(1112).intl;
     const obj7 = { name: draft.name };
-    formatToPlainStringResult = intl.formatToPlainString(tmp2(1113).t.MJHFt9, obj7);
+    formatToPlainStringResult = intl.formatToPlainString(tmp2(1112).t.MJHFt9, obj7);
   }
-  intl4 = tmp2(1113).intl;
+  intl4 = tmp2(1112).intl;
   obj8 = { name: draft.name };
   if ("uploading" === draft.status) {
     const obj9 = { style: tmp.draftOverlay, children: authStore2(metroRequire, obj10) };
@@ -120,7 +120,7 @@ function ConjureNativeDraftTile(draft) {
     if ("error" === draft.status) {
       const obj19 = { style: tmp.draftOverlay, children: authStore2(WarningIcon, obj20) };
       obj20 = { size: "sm", color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL };
-      WarningIcon = tmp2(8160).WarningIcon;
+      WarningIcon = tmp2(7763).WarningIcon;
       tmp7Result = tmp7(metroImportAll, obj19);
     }
   }
@@ -170,17 +170,17 @@ export default function ConjureNativeComposer(projectId) {
   let items31;
   let items33;
   let items36;
-  let managedCopy;
   let num2;
   let obj4;
   let obj6;
   let obj7;
   let placeholder;
+  let sending;
   let stackedAccessory;
   let tmp15;
   let tmp26;
   let tmp36Result;
-  let tmp91;
+  let tmp90;
   projectId = projectId.projectId;
   ({ canSend, aiPaused } = projectId);
   if (aiPaused === undefined) {
@@ -196,13 +196,9 @@ export default function ConjureNativeComposer(projectId) {
   }
   const onSendToOtherProjects = projectId.onSendToOtherProjects;
   const onSendFiles = projectId.onSendFiles;
-  ({ stackedAccessory, placeholder, managedCopy } = projectId);
-  if (managedCopy === undefined) {
-    managedCopy = false;
-  }
-  let flag2 = projectId.sending;
-  if (flag2 === undefined) {
-    flag2 = false;
+  ({ stackedAccessory, placeholder, sending } = projectId);
+  if (sending === undefined) {
+    sending = false;
   }
   const focusRequest = projectId.focusRequest;
   const blurRequest = projectId.blurRequest;
@@ -247,7 +243,7 @@ export default function ConjureNativeComposer(projectId) {
     canSend = !aiPaused;
   }
   if (canSend) {
-    canSend = !flag2;
+    canSend = !sending;
   }
   let tmp = null != onSendFiles;
   closure_12 = tmp;
@@ -821,11 +817,11 @@ export default function ConjureNativeComposer(projectId) {
     let intl3;
     let intl4;
     let items2;
-    const obj = { label: intl.string(_modDef4131["51+9lc"]), IconComponent: ImagesIcon.ImagesIcon, action: callback7 };
+    const obj = { label: intl.string(_modDef4190["51+9lc"]), IconComponent: ImagesIcon.ImagesIcon, action: callback7 };
     intl = intl5.intl;
     let items = [obj, , ];
     const obj2 = {
-      label: intl2.string(_modDef4131["10ljr2"]),
+      label: intl2.string(_modDef4190["10ljr2"]),
       IconComponent: MusicIcon.MusicIcon,
       action() {
         const items = [projectId(onSend[33]).types.audio];
@@ -835,7 +831,7 @@ export default function ConjureNativeComposer(projectId) {
     intl2 = intl5.intl;
     items[1] = obj2;
     const obj3 = {
-      label: intl3.string(_modDef4131.aotDee),
+      label: intl3.string(_modDef4190.aotDee),
       IconComponent: FileUpIcon.FileUpIcon,
       action() {
         return callback9();
@@ -844,8 +840,8 @@ export default function ConjureNativeComposer(projectId) {
     intl3 = intl5.intl;
     items[2] = obj3;
     if (null != onSendToOtherProjects) {
-      const obj4 = { label: intl4.string(_modDef4131["5HmLrK"]), IconComponent: ChatArrowRightIcon.ChatArrowRightIcon, action: callback10 };
-      intl4 = tmp2(1113).intl;
+      const obj4 = { label: intl4.string(_modDef4190["5HmLrK"]), IconComponent: ChatArrowRightIcon.ChatArrowRightIcon, action: callback10 };
+      intl4 = tmp2(1112).intl;
       const items1 = [obj4];
       items2 = items1;
     } else {
@@ -966,10 +962,10 @@ export default function ConjureNativeComposer(projectId) {
   }, items26);
   const tmp5Result16 = tmp5(onSend[13]);
   token4 = tmp5Result16.useToken(tmp36(tmp6[9]).colors.CHAT_INPUT_SEND_BUTTON_ICON_ACTIVE_TINT);
-  const items27 = [flag2, tmp62, running, stateFromStores1, canSend && tmp62 && everyResult];
+  const items27 = [sending, tmp62, running, stateFromStores1, canSend && tmp62 && everyResult];
   const memo4 = obj.useMemo(() => {
     str = "sending";
-    if (!flag2) {
+    if (!sending) {
       let str2 = "send";
       let str3 = "send";
       if (!closure_41) {
@@ -1005,12 +1001,12 @@ export default function ConjureNativeComposer(projectId) {
       obj3 = { size: "small", color: token4 };
       tmp14 = authStore2(metroImportAll, obj2);
     } else if ("stop" === key.key) {
-      const obj4 = { style: closure_35.trailingButton, IconComponent: StopIcon.StopIcon, onPress: onInterrupt, disabled: null == onInterrupt, accessibilityLabel: intl2.string(_modDef4131.wiguT0) };
+      const obj4 = { style: closure_35.trailingButton, IconComponent: StopIcon.StopIcon, onPress: onInterrupt, disabled: null == onInterrupt, accessibilityLabel: intl2.string(_modDef4190.wiguT0) };
       const tmp18 = ChatInputActionButtonDefault;
       intl2 = intl5.intl;
       tmp14 = authStore2(tmp18, obj4);
     } else if ("models" === key.key) {
-      const obj = { style: closure_35.trailingButton, IconComponent: FiltersHorizontalIcon.FiltersHorizontalIcon, onPress: callback13, disabled: !canSend, accessibilityLabel: intl.string(_modDef4131["3E7Yc0"]) };
+      const obj = { style: closure_35.trailingButton, IconComponent: FiltersHorizontalIcon.FiltersHorizontalIcon, onPress: callback13, disabled: !canSend, accessibilityLabel: intl.string(_modDef4190["3E7Yc0"]) };
       const tmp4 = ChatInputActionButtonDefault;
       intl = intl5.intl;
       tmp14 = authStore2(tmp4, obj);
@@ -1052,20 +1048,20 @@ export default function ConjureNativeComposer(projectId) {
       let onAccessibilityAction;
       let onPress;
       ({ ref, onPress, accessibilityActions, onAccessibilityAction } = arg0);
-      const obj = { ref, IconComponent: PlusLargeIcon.PlusLargeIcon, onPress, disabled: !canSend, accessibilityLabel: intl.string(_modDef4131.hFS71Z), accessibilityActions, onAccessibilityAction };
+      const obj = { ref, IconComponent: PlusLargeIcon.PlusLargeIcon, onPress, disabled: !canSend, accessibilityLabel: intl.string(_modDef4190.hFS71Z), accessibilityActions, onAccessibilityAction };
       const tmp = ChatInputActionButtonDefault;
       intl = intl5.intl;
       return authStore2(tmp, obj);
     }
   };
-  const tmp76Result = closure_12(flag2, obj3);
+  const tmp76Result = closure_12(sending, obj3);
   const items30 = [undefined !== stackedAccessory ? tmp53.inputStacked : tmp53.input, ];
   let num4 = 0;
   const tmp79 = onSendFiles;
   if (undefined === stackedAccessory) {
     num4 = bound;
   }
-  let obj5 = { style: items30, onPress: callback2, disabled: minResult >= bound2, accessible: false, children: closure_12(flag2, obj6) };
+  let obj5 = { style: items30, onPress: callback2, disabled: minResult >= bound2, accessible: false, children: closure_12(sending, obj6) };
   items30[1] = { marginBottom: num4, height: bound2 };
   obj6 = { style: { height: minResult }, children: closure_12(tmp36Result, obj7) };
   obj7 = { ref, editable: canSend, shouldShowCursor: true, maxHeight: 120, verticalInset: bound1, placeholder, accessibilityLabel: intl2.string(tmp36(tmp6[12]).ldNl9x), onBeginFocus: callback16, onEndBlur: callback17, onChangeContentSize: callback3, onSelectionOrTextChange: callback4, onPasteImage: callback8 };
@@ -1078,13 +1074,7 @@ export default function ConjureNativeComposer(projectId) {
     if (aiPaused) {
       zZ9NgM = tmp36Result2.Z0hyNL;
     } else if (canSend) {
-      let prop;
-      if (running) {
-        prop = tmp36Result2["0BJa/0"];
-      } else {
-        prop = managedCopy ? tmp36Result2.dDDSuF : tmp36Result2.TEeU7z;
-      }
-      zZ9NgM = prop;
+      zZ9NgM = running ? tmp36Result2["0BJa/0"] : tmp36Result2.TEeU7z;
     } else {
       zZ9NgM = tmp36Result2.zZ9NgM;
     }
@@ -1100,11 +1090,11 @@ export default function ConjureNativeComposer(projectId) {
     let obj9 = { items: memo4, renderItem: callback15, getItemKey };
     callback14Result = tmp76(tmp5(tmp6[46]).TransitionGroup, obj9);
   }
-  const tmp76Result6 = closure_12(flag2, obj8);
+  const tmp76Result6 = closure_12(sending, obj8);
   const items32 = [tmp53.container, ];
   const obj10 = { style: items32, children: items33 };
-  const tmp88 = undefined !== stackedAccessory && !tmp75 && tmp53.containerFlushTop;
-  items32[1] = tmp88;
+  const tmp87 = undefined !== stackedAccessory && !tmp75 && tmp53.containerFlushTop;
+  items32[1] = tmp87;
   items33 = [closure_12(tmp36(tmp6[47]), { projectId, suggestions: memo2, onSelect: callback5 }), , , , ];
   let tmp76Result7 = null;
   if (null != tmp26) {
@@ -1146,24 +1136,24 @@ export default function ConjureNativeComposer(projectId) {
   }
   items34[1] = boxFocused;
   const obj14 = { style: null, children: null };
-  const obj13 = { style: items34, children: str(flag2, tmp91) };
+  const obj13 = { style: items34, children: str(sending, tmp90) };
   if (undefined !== stackedAccessory) {
     obj14.style = tmp53.boxContentsStacked;
     const items35 = [tmp76Result5, ];
     const obj15 = { style: tmp53.actionsRow, children: items36 };
     items36 = [tmp76Result, , ];
     const obj16 = { style: tmp53.actionsAccessory, children: stackedAccessory };
-    items36[1] = closure_12(flag2, obj16);
+    items36[1] = closure_12(sending, obj16);
     items36[2] = tmp76Result6;
-    items35[1] = str(flag2, obj15);
+    items35[1] = str(sending, obj15);
     obj14.children = items35;
-    tmp91 = obj14;
+    tmp90 = obj14;
   } else {
     obj14.style = tmp53.boxContents;
     const items37 = [tmp76Result, tmp76Result5, tmp76Result6];
     obj14.children = items37;
-    tmp91 = obj14;
+    tmp90 = obj14;
   }
-  items33[4] = closure_12(flag2, obj13);
-  return str(flag2, obj10);
+  items33[4] = closure_12(sending, obj13);
+  return str(sending, obj10);
 };

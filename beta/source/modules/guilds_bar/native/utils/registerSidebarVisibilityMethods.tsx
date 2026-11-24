@@ -1,13 +1,13 @@
-// Module ID: 18901
-// Function ID: 18902
+// Module ID: 17694
+// Function ID: 17695
 // Name: registerSidebarVisibilityMethods
-// Dependencies: [10134, 5177, 6946, 2]
+// Dependencies: [9960, 4784, 6550, 2]
 // Exports: registerFastListChannelVisibilityMethod, registerGuildVisibilityMethod
 
-// Module 18901 (registerSidebarVisibilityMethods)
-import SortedGuildStore2 from "SortedGuildStore" /* 6946 */;
-import SidebarVisibilityMethodStore from "SidebarVisibilityMethodStore" /* 10134 */;
-import GuildStore from "GuildStore" /* 5177 */;
+// Module 17694 (registerSidebarVisibilityMethods)
+import SortedGuildStore2 from "SortedGuildStore" /* 6550 */;
+import SidebarVisibilityMethodStore from "SidebarVisibilityMethodStore" /* 9960 */;
+import GuildStore from "GuildStore" /* 4784 */;
 import size from "module_2" /* 2 */;
 
 const SortedGuildStore = SortedGuildStore2;
@@ -27,9 +27,17 @@ export function registerGuildVisibilityMethod(fastListRef) {
       if (null == current) {
         return [];
       } else {
+        let num;
         const items = obj.getItems();
         const scrollPosition = obj.getScrollPosition();
-        const containerSize = obj.containerSize;
+        if (current.containerSize > 0) {
+          num = obj.containerSize;
+        } else {
+          num = obj.props.chunkBase;
+          if (num == null) {
+            num = 0;
+          }
+        }
         let tmp = GuildStore;
         const guilds = GuildStore.getGuilds();
         let tmp2 = SortedGuildStore;
@@ -46,7 +54,7 @@ export function registerGuildVisibilityMethod(fastListRef) {
             const layoutStart = recyclerKey.layoutStart;
             let tmp2 = layoutStart + recyclerKey.layoutSize >= closure_0;
             if (tmp2) {
-              tmp2 = layoutStart <= tmp + containerSize;
+              tmp2 = layoutStart <= tmp + num;
             }
             if (tmp2) {
               let children;

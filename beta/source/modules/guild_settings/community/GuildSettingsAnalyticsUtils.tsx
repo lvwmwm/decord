@@ -1,18 +1,18 @@
-// Module ID: 20638
-// Function ID: 20639
+// Module ID: 19908
+// Function ID: 19909
 // Name: GuildSettingsAnalyticsUtils
-// Dependencies: [19, 5526, 5177, 20639, 1072, 504, 1113, 20656, 2027, 2]
+// Dependencies: [19, 5534, 4784, 19909, 1071, 504, 1112, 19926, 2025, 2]
 // Exports: getGuildAnalyticsCardProps, useGuildAnalyticsOverview
 
-// Module 20638 (GuildSettingsAnalyticsUtils)
-import intl4 from "intl" /* 1113 */;
-import NumberUtils from "NumberUtils" /* 2027 */;
-import GuildSettingsAnalyticsActionCreators from "GuildSettingsAnalyticsActionCreators" /* 20656 */;
+// Module 19908 (GuildSettingsAnalyticsUtils)
+import intl4 from "intl" /* 1112 */;
+import NumberUtils from "NumberUtils" /* 2025 */;
+import GuildSettingsAnalyticsActionCreators from "GuildSettingsAnalyticsActionCreators" /* 19926 */;
 import react from "react" /* 19 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5526 */;
-import GuildStore from "GuildStore" /* 5177 */;
-import GuildSettingsAnalyticsStore from "GuildSettingsAnalyticsStore" /* 20639 */;
-import Constants from "Constants" /* 1072 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5534 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import GuildSettingsAnalyticsStore from "GuildSettingsAnalyticsStore" /* 19909 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -85,18 +85,18 @@ export function useGuildAnalyticsOverview(guildId) {
   }, items6);
   let obj3 = { analytics, notice: tmp12 };
   if (tmp5) {
-    const obj4 = { type: "info", message: intl3.string(tmp(1113).t["FsgE/B"]), role: "none" };
-    intl3 = tmp(1113).intl;
+    const obj4 = { type: "info", message: intl3.string(tmp(1112).t["FsgE/B"]), role: "none" };
+    intl3 = tmp(1112).intl;
     tmp12 = obj4;
   } else if (errorCode === constants.NOT_ENOUGH_GUILD_MEMBERS) {
-    const obj5 = { type: "info", message: intl2.string(tmp(1113).t["FsgE/B"]), role: "status" };
-    intl2 = tmp(1113).intl;
+    const obj5 = { type: "info", message: intl2.string(tmp(1112).t["FsgE/B"]), role: "status" };
+    intl2 = tmp(1112).intl;
     tmp12 = obj5;
   } else {
     tmp12 = null;
     if (null != errorCode) {
-      const obj6 = { type: "critical", message: intl.string(tmp(1113).t.Iju63e), role: "alert" };
-      intl = tmp(1113).intl;
+      const obj6 = { type: "critical", message: intl.string(tmp(1112).t.Iju63e), role: "alert" };
+      intl = tmp(1112).intl;
       tmp12 = obj6;
     }
   }

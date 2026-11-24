@@ -1,17 +1,17 @@
-// Module ID: 11021
-// Function ID: 11022
+// Module ID: 11109
+// Function ID: 11110
 // Name: FocusModeUtils
-// Dependencies: [7316, 5251, 1072, 5131, 5136, 1227, 1256, 6258, 1113, 11022, 2]
+// Dependencies: [6920, 4858, 1071, 4738, 4743, 1226, 1255, 5860, 1112, 11110, 2]
 // Exports: getFocusModeEnabled, setFocusMode, useFocusModeEnabled
 
-// Module 11021 (FocusModeUtils)
-import wrappers from "wrappers" /* 1227 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import UserSettings from "UserSettings" /* 5131 */;
-import NotificationConstants from "NotificationConstants" /* 5251 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6258 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 7316 */;
-import Constants from "Constants" /* 1072 */;
+// Module 11109 (FocusModeUtils)
+import wrappers from "wrappers" /* 1226 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import UserSettings from "UserSettings" /* 4738 */;
+import NotificationConstants from "NotificationConstants" /* 4858 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5860 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 6920 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -107,21 +107,21 @@ export function setFocusMode(quiet_mode_enabled, arg1) {
   }
   if (tmp7) {
     const obj3 = {
-      title: intl.string(tmp(1113).t["B+cbLS"]),
-      body: intl2.string(tmp(1113).t.CYVgLI),
-      cancelText: intl3.string(tmp(1113).t.f3Pet9),
-      confirmText: intl4.string(tmp(1113).t.BddRzS),
+      title: intl.string(tmp(1112).t["B+cbLS"]),
+      body: intl2.string(tmp(1112).t.CYVgLI),
+      cancelText: intl3.string(tmp(1112).t.f3Pet9),
+      confirmText: intl4.string(tmp(1112).t.BddRzS),
       onConfirm() {
           const obj = { nextStatus: constants.ONLINE };
           closure_1(dependencyMap[9])(obj);
         }
     };
-    const show = tmp5(6258).show;
+    const show = tmp5(5860).show;
     AlertActionCreatorsDefault;
-    intl = tmp(1113).intl;
-    intl2 = tmp(1113).intl;
-    intl3 = tmp(1113).intl;
-    intl4 = tmp(1113).intl;
+    intl = tmp(1112).intl;
+    intl2 = tmp(1112).intl;
+    intl3 = tmp(1112).intl;
+    intl4 = tmp(1112).intl;
     show(obj3);
   }
 }

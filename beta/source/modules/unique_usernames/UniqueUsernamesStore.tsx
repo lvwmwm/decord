@@ -1,13 +1,13 @@
-// Module ID: 17236
-// Function ID: 17237
+// Module ID: 16004
+// Function ID: 16005
 // Name: UniqueUsernamesStore
-// Dependencies: [1456, 1089, 504, 572, 2]
+// Dependencies: [1454, 1088, 504, 572, 2]
 
-// Module 17236 (UniqueUsernamesStore)
+// Module 16004 (UniqueUsernamesStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import DurationsDefault from "Durations" /* 1089 */;
-import LRUCacheDefault from "LRUCache" /* 1456 */;
+import DurationsDefault from "Durations" /* 1088 */;
+import LRUCacheDefault from "LRUCache" /* 1454 */;
 import size from "module_2" /* 2 */;
 
 let set;

@@ -1,23 +1,23 @@
-// Module ID: 19942
-// Function ID: 19943
+// Module ID: 19193
+// Function ID: 19194
 // Name: ActivityInviteSheetList
-// Dependencies: [19, 1072, 21, 5306, 6816, 575, 1187, 1113, 7428, 5542, 5483, 5919, 19943, 5903, 7888, 2]
+// Dependencies: [19, 1071, 21, 4913, 6407, 575, 1186, 1112, 7030, 5127, 5090, 5504, 19194, 5488, 7490, 2]
 // Exports: default
 
-// Module 19942 (ActivityInviteSheetList)
+// Module 19193 (ActivityInviteSheetList)
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import intl5 from "intl" /* 1113 */;
-import native from "native" /* 1187 */;
-import RootNavigationRef from "RootNavigationRef" /* 5483 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import Pressables from "Pressables" /* 7428 */;
-import ActivityInviteSheetRowDefault from "ActivityInviteSheetRow" /* 19943 */;
+import Constants from "Constants" /* 1071 */;
+import intl5 from "intl" /* 1112 */;
+import native from "native" /* 1186 */;
+import RootNavigationRef from "RootNavigationRef" /* 5090 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import Pressables from "Pressables" /* 7030 */;
+import ActivityInviteSheetRowDefault from "ActivityInviteSheetRow" /* 19194 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
-import TextStyles_mod from "TextStyles" /* 6816 */;
+import createStyles_mod from "createStyles" /* 4913 */;
+import TextStyles_mod from "TextStyles" /* 6407 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

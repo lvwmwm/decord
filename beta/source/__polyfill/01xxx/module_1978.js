@@ -1,38 +1,31 @@
 // Module ID: 1978
 // Function ID: 1979
-// Dependencies: [32, 19, 17, 1645]
-// Exports: useWindowDimensions
+// Dependencies: [1979, 1980, 1981, 1982, 1983]
 
 // Module 1978
-import react_native from "react-native" /* 17 */;
-import KeyboardControllerNative from "KeyboardControllerNative" /* 1645 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
-import react from "react" /* 19 */;
+import _mod1979 from "module_1979" /* 1979 */;
+import _mod1980 from "module_1980" /* 1980 */;
+import _mod1981 from "module_1981" /* 1981 */;
+import _mod1982 from "module_1982" /* 1982 */;
+import _mod1983 from "module_1983" /* 1983 */;
 
-let c3;
-let closure_4;
-({ useEffect: c3, useState: closure_4 } = react);
-const Dimensions = react_native.Dimensions;
-const size = Dimensions.get("window");
-let closure_5 = { width: size.width, height: size.height };
-let WindowDimensionsEvents = KeyboardControllerNative.WindowDimensionsEvents;
-WindowDimensionsEvents.addListener("windowDidResize", (arg0) => {
-  closure_5 = arg0;
-});
-
-export const useWindowDimensions = () => {
-  let closure_0;
-  let first;
-  [first, closure_0] = closure_4(closure_5);
-  closure_3(() => {
-    const WindowDimensionsEvents = closure_0(dependencyMap[3]).WindowDimensionsEvents;
-    closure_0 = WindowDimensionsEvents.addListener("windowDidResize", (arg0) => {
-      closure_0(arg0);
-    });
-    closure_0(closure_1_5);
-    return () => {
-      closure_0.remove();
-    };
-  }, []);
-  return first;
-};
+for (const key10013 in _mod1979) {
+  exports[key10013] = _mod1979[key10013];
+  continue;
+}
+for (const key10017 in _mod1980) {
+  exports[key10017] = _mod1980[key10017];
+  continue;
+}
+for (const key10021 in _mod1981) {
+  exports[key10021] = _mod1981[key10021];
+  continue;
+}
+for (const key10025 in _mod1982) {
+  exports[key10025] = _mod1982[key10025];
+  continue;
+}
+for (const key10029 in _mod1983) {
+  exports[key10029] = _mod1983[key10029];
+  continue;
+}

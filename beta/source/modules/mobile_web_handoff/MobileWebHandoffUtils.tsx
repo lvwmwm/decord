@@ -1,12 +1,12 @@
-// Module ID: 10492
-// Function ID: 10493
+// Module ID: 9598
+// Function ID: 9599
 // Name: MobileWebHandoffUtils
-// Dependencies: [5, 1072, 1269, 1285, 2]
+// Dependencies: [5, 1071, 1268, 1284, 2]
 
-// Module 10492 (MobileWebHandoffUtils)
-import Constants from "Constants" /* 1072 */;
-import v1 from "v1" /* 1269 */;
-import HTTPUtils from "HTTPUtils" /* 1285 */;
+// Module 9598 (MobileWebHandoffUtils)
+import Constants from "Constants" /* 1071 */;
+import v1 from "v1" /* 1268 */;
+import HTTPUtils from "HTTPUtils" /* 1284 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

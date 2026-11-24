@@ -1,10 +1,10 @@
 // Module ID: 3220
 // Function ID: 3221
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 3220 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/game_server", scales: [1], hash: "07fd70c81acb23a00337981ee5eb6d54", name: "GameServer.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9uYXRpdmVfc3VydmV5cw==", scales: [1], hash: "165f3fec212a85c9d86ee08ab2c27132", name: "de.messages.165f3fec212a85c9d86ee08ab2c27132.compiled.messages", type: "jsona" });

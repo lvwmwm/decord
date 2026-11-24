@@ -1,13 +1,13 @@
-// Module ID: 13090
-// Function ID: 13091
+// Module ID: 11070
+// Function ID: 11071
 // Name: getParticipantTitle
-// Dependencies: [5973, 13091, 6341, 1113, 2]
+// Dependencies: [5563, 11071, 5943, 1112, 2]
 // Exports: default
 
-// Module 13090 (getParticipantTitle)
-import CallConstants from "CallConstants" /* 5973 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6341 */;
-import useIsGuestOrLurker from "useIsGuestOrLurker" /* 13091 */;
+// Module 11070 (getParticipantTitle)
+import CallConstants from "CallConstants" /* 5563 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5943 */;
+import useIsGuestOrLurker from "useIsGuestOrLurker" /* 11071 */;
 import size from "module_2" /* 2 */;
 
 const ParticipantTypes = CallConstants.ParticipantTypes;
@@ -37,9 +37,9 @@ export default function getParticipantTitle(guild_id, type, name) {
     const obj = NicknameUtilsDefault;
     const name1 = obj.getName(guild_id.getGuildId(), guild_id.id, type.user);
     if (result) {
-      const intl = tmp10(1113).intl;
+      const intl = tmp10(1112).intl;
       const _HermesInternal = HermesInternal;
-      str = " " + intl.string(tmp10(1113).t["pFO/Ph"]);
+      str = " " + intl.string(tmp10(1112).t["pFO/Ph"]);
     }
     return name1 + str;
   }

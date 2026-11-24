@@ -1,14 +1,14 @@
-// Module ID: 13792
-// Function ID: 13793
+// Module ID: 12296
+// Function ID: 12297
 // Name: openConjureSharedProjectRemixSheet
-// Dependencies: [19, 21, 10536, 5542, 10978, 2]
+// Dependencies: [19, 21, 12297, 5127, 12298, 2]
 // Exports: default
 
-// Module 13792 (openConjureSharedProjectRemixSheet)
+// Module 12296 (openConjureSharedProjectRemixSheet)
 import Fragment from "Fragment" /* 21 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5542 */;
-import openConjureHomeScreenDefault from "openConjureHomeScreen" /* 10536 */;
-import ConjureRemixSheet from "ConjureRemixSheet" /* 10978 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5127 */;
+import openConjureHomeScreenDefault from "openConjureHomeScreen" /* 12297 */;
+import ConjureRemixSheet from "ConjureRemixSheet" /* 12298 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -20,18 +20,18 @@ function openRemixed(arg0) {
 const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/conjure/share/native/openConjureSharedProjectRemixSheet.tsx");
 
-export default function openConjureSharedProjectRemixSheet(project, currentGuildId, mode) {
+export default function openConjureSharedProjectRemixSheet(project, currentGuildId) {
   let obj2;
   let tmp3;
   let tmp4;
-  let tmp = arg3;
-  if (arg3 === undefined) {
+  let tmp = arg2;
+  if (arg2 === undefined) {
     tmp = null;
   }
   const tmp2 = ActionSheetActionCreators;
   const showActionSheet = tmp2.showActionSheet;
   const obj = { key: ConjureRemixSheet.CONJURE_REMIX_SHEET_KEY, content: tmp3(tmp4, obj2) };
-  obj2 = { project, mode, currentGuildId, onRemixed: openRemixed, shareTicket: tmp };
+  obj2 = { project, currentGuildId, onRemixed: openRemixed, shareTicket: tmp };
   tmp4 = ConjureRemixSheetDefault;
   showActionSheet(obj);
   tmp3 = jsx;

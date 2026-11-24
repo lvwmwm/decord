@@ -1,13 +1,13 @@
-// Module ID: 13466
-// Function ID: 13467
+// Module ID: 12998
+// Function ID: 12999
 // Name: AppDetailsOverflowMenu
-// Dependencies: [19, 21, 12700, 13467, 1113, 13468, 5131, 7943, 6004, 11629, 9148, 7988, 7421, 2]
+// Dependencies: [19, 21, 10674, 12999, 1112, 13000, 4738, 7545, 5594, 10378, 8658, 7591, 7023, 2]
 // Exports: default
 
-// Module 13466 (AppDetailsOverflowMenu)
+// Module 12998 (AppDetailsOverflowMenu)
 import Fragment from "Fragment" /* 21 */;
-import ToastUtils from "ToastUtils" /* 6004 */;
-import ClipboardUtils from "ClipboardUtils" /* 7943 */;
+import ToastUtils from "ToastUtils" /* 5594 */;
+import ClipboardUtils from "ClipboardUtils" /* 7545 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -22,44 +22,44 @@ export default function AppDetailsOverflowMenu(application) {
   let intl2;
   application = application.application;
   const onAddAppMenuClick = application.onAddAppMenuClick;
-  let obj = application(12700);
+  let obj = application(10674);
   dependencyMap = obj.getInstallAppProps(application);
-  const tmp3 = onAddAppMenuClick(13467);
-  let obj2 = application(12700);
+  const tmp3 = onAddAppMenuClick(12999);
+  let obj2 = application(10674);
   const items = [];
   const tmp3Result = tmp3(obj2.getInstallableApplication(application)) && null != onAddAppMenuClick;
   if (tmp3Result) {
     const push = items.push;
     const obj3 = {
-      label: intl.string(application(1113).t.NgXl3C),
+      label: intl.string(application(1112).t.NgXl3C),
       action() {
           const obj = { installAppProps };
           return onAddAppMenuClick(obj);
         },
-      IconComponent: application(13468).CirclePlusIcon
+      IconComponent: application(13000).CirclePlusIcon
     };
-    intl = tmp(1113).intl;
+    intl = tmp(1112).intl;
     push(obj3);
   }
-  const DeveloperMode = tmp(5131).DeveloperMode;
+  const DeveloperMode = tmp(4738).DeveloperMode;
   if (DeveloperMode.getSetting()) {
     const push2 = items.push;
     const obj4 = {
-      label: intl2.string(application(1113).t["+NP/b2"]),
+      label: intl2.string(application(1112).t["+NP/b2"]),
       action() {
           const obj = ClipboardUtils;
           obj.copy(application.id);
           const obj2 = ToastUtils;
           obj2.presentIdCopied();
         },
-      IconComponent: application(11629).IdIcon
+      IconComponent: application(10378).IdIcon
     };
-    intl2 = tmp(1113).intl;
+    intl2 = tmp(1112).intl;
     push2(obj4);
   }
   let tmp8 = null;
   if (0 !== items.length) {
-    tmp8 = jsx(tmp(9148).ContextMenu, {
+    tmp8 = jsx(tmp(8658).ContextMenu, {
       items,
       children(ref) {
           ref = ref.ref;

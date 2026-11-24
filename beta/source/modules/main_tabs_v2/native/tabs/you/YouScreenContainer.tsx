@@ -1,20 +1,20 @@
-// Module ID: 19628
-// Function ID: 19629
+// Module ID: 18889
+// Function ID: 18890
 // Name: YouScreenContainer
-// Dependencies: [19, 17, 10030, 21, 5306, 575, 1630, 18737, 1496, 5485, 5263, 19627, 19629, 1360, 2]
+// Dependencies: [19, 17, 9420, 21, 4913, 575, 1628, 17533, 1494, 5092, 4870, 18888, 18890, 1358, 2]
 
-// Module 19628 (YouScreenContainer)
+// Module 18889 (YouScreenContainer)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1360 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import DeviceUtils from "DeviceUtils" /* 5263 */;
-import MainTabsConstants from "MainTabsConstants" /* 10030 */;
-import TabsPerformanceTracker from "TabsPerformanceTracker" /* 18737 */;
-import AppFrameContainerDefault from "AppFrameContainer" /* 19627 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1358 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
+import DeviceUtils from "DeviceUtils" /* 4870 */;
+import MainTabsConstants from "MainTabsConstants" /* 9420 */;
+import TabsPerformanceTracker from "TabsPerformanceTracker" /* 17533 */;
+import AppFrameContainerDefault from "AppFrameContainer" /* 18888 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -44,8 +44,8 @@ const memoResult = react.memo(function YouScreenContainer(route) {
       initialTab = params.initialTab;
     }
   }
-  const width = tmp2(1496)().width;
-  const isChatBesideChannelList = tmp2(5485)().isChatBesideChannelList;
+  const width = tmp2(1494)().width;
+  const isChatBesideChannelList = tmp2(5092)().isChatBesideChannelList;
   const tmp4Result = DeviceUtils;
   if (tmp4Result.isDuo()) {
     const obj2 = { children: null };
@@ -71,12 +71,12 @@ const memoResult = react.memo(function YouScreenContainer(route) {
       tmp6Result2 = tmp6(tmp8, obj6);
     } else {
       const obj9 = { initialTab };
-      tmp6Result2 = tmp6(tmp2(19629), obj9);
+      tmp6Result2 = tmp6(tmp2(18890), obj9);
     }
     tmp6Result = tmp6(tmp8, obj5);
   } else {
     const obj10 = { initialTab };
-    tmp6Result = tmp6(tmp2(19629), obj10);
+    tmp6Result = tmp6(tmp2(18890), obj10);
   }
   return tmp6Result;
 });

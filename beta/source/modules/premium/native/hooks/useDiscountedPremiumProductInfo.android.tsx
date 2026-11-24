@@ -1,12 +1,12 @@
-// Module ID: 9711
-// Function ID: 9712
+// Module ID: 9235
+// Function ID: 9236
 // Name: useDiscountedPremiumProductInfo
-// Dependencies: [19, 1083, 9712, 8580, 7253, 2]
+// Dependencies: [19, 1082, 9236, 8170, 6856, 2]
 // Exports: useDiscountedPremiumProductInfo
 
-// Module 9711 (useDiscountedPremiumProductInfo)
-import Constants from "Constants" /* 1083 */;
-import ProductIds from "ProductIds" /* 8580 */;
+// Module 9235 (useDiscountedPremiumProductInfo)
+import Constants from "Constants" /* 1082 */;
+import ProductIds from "ProductIds" /* 8170 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -54,7 +54,7 @@ export function useDiscountedPremiumProductInfo(premiumDiscountOffer, items3) {
                 if (null != found.pricingPhases) {
                   if (found.pricingPhases.length > 0) {
                     const result = found.pricingPhases[0].price / 100;
-                    const tmp6Result = tmp6(7253);
+                    const tmp6Result = tmp6(6856);
                     return tmp6Result.formatPrice(result, USD, { convertToMajorUnits: false });
                   }
                 }

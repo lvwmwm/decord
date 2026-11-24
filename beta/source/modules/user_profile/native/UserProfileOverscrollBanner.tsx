@@ -1,24 +1,24 @@
-// Module ID: 8610
-// Function ID: 8611
+// Module ID: 8200
+// Function ID: 8201
 // Name: UserProfileOverscrollBanner
-// Dependencies: [19, 17, 21, 1655, 8611, 8612, 1380, 2]
+// Dependencies: [19, 17, 21, 1653, 8201, 8202, 1378, 2]
 // Exports: default
 
-// Module 8610 (UserProfileOverscrollBanner)
+// Module 8200 (UserProfileOverscrollBanner)
 import react_native from "react-native" /* 17 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
-import VisualEffectViewThemedDefault from "VisualEffectViewThemed" /* 8611 */;
-import UserProfileBannerDefault from "UserProfileBanner" /* 8612 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
+import VisualEffectViewThemedDefault from "VisualEffectViewThemed" /* 8201 */;
+import UserProfileBannerDefault from "UserProfileBanner" /* 8202 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import module_1655 from "module_1655" /* 1655 */;
+import module_1653 from "module_1653" /* 1653 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
 let hasOwnProperty;
 const StyleSheet = react_native.StyleSheet;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
-const VisualEffectViewThemed = module_1655.createAnimatedComponent(VisualEffectViewThemedDefault);
+const VisualEffectViewThemed = module_1653.createAnimatedComponent(VisualEffectViewThemedDefault);
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileOverscrollBanner.tsx");
 
 export default function UserProfileOverscrollBanner(arg0) {
@@ -33,9 +33,9 @@ export default function UserProfileOverscrollBanner(arg0) {
   ({ bannerAnimatedStyle, bannerImageAnimatedStyle, blurAnimatedProps, showBlur } = arg0);
   const merged = Object.assign(arg0, Object.assign({ bannerAnimatedStyle: 0, bannerImageAnimatedStyle: 0, blurAnimatedProps: 0, showBlur: 0 }));
   const obj = { style: bannerAnimatedStyle, children: tmp3(View2, obj2) };
-  const View = module_1655.View;
+  const View = module_1653.View;
   obj2 = { style: bannerImageAnimatedStyle, children: items };
-  View2 = module_1655.View;
+  View2 = module_1653.View;
   const obj3 = {};
   const tmp4 = UserProfileBannerDefault;
   const merged1 = Object.assign(merged);

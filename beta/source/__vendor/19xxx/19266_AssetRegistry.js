@@ -1,10 +1,10 @@
 // Module ID: 19266
 // Function ID: 19267
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 19266 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 40, height: 23, scales: [1, 2], hash: "f508ffa8fec7b43f0c7e1765658cd955", name: "ic_message", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/voice_panel/native/images", width: 24, height: 24, scales: [2, 3, 4], hash: "0cb7c4a68220aef405b92da8324026d2", name: "camera-swap", type: "png" });

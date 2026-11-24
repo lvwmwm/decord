@@ -1,19 +1,19 @@
-// Module ID: 11919
-// Function ID: 11920
+// Module ID: 11694
+// Function ID: 11695
 // Name: SavedMessageUtils
-// Dependencies: [5, 19, 5159, 502, 5155, 1072, 1113, 2169, 504, 8134, 7262, 5482, 2]
+// Dependencies: [5, 19, 4766, 502, 4762, 1071, 1112, 2168, 504, 7737, 6867, 5089, 2]
 // Exports: savedMessageJumpToMessage, useDueInString, useSavedMessageChannel
 
-// Module 11919 (SavedMessageUtils)
-import intl2 from "intl" /* 1113 */;
-import _modDef2169 from "module_2169" /* 2169 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 8134 */;
+// Module 11694 (SavedMessageUtils)
+import intl2 from "intl" /* 1112 */;
+import _modDef2168 from "module_2168" /* 2168 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7737 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ChannelRecord from "ChannelRecord" /* 5159 */;
+import ChannelRecord from "ChannelRecord" /* 4766 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import Constants from "Constants" /* 1072 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -168,19 +168,19 @@ export function useDueInString(arg0) {
       H4gnX9 = intl2.t.H4gnX9;
     }
     if (type === tmp10.LONG) {
-      haia16 = tmp(1113).t.haia16;
+      haia16 = tmp(1112).t.haia16;
     } else {
-      haia16 = tmp(1113).t["Uq7Y+7"];
+      haia16 = tmp(1112).t["Uq7Y+7"];
     }
     if (now > dueAt) {
       H4gnX9 = haia16;
     }
     obj = { dueInText: formatToPlainString(H4gnX9, obj2), isOverdue: now > dueAt };
-    const intl = tmp(1113).intl;
+    const intl = tmp(1112).intl;
     formatToPlainString = intl.formatToPlainString;
     obj2 = { duration: durationResult.humanize() };
-    const duration = _modDef2169.duration;
-    _modDef2169;
+    const duration = _modDef2168.duration;
+    _modDef2168;
     const time = dueAt.getTime();
     durationResult = duration(time - now.getTime(), "millisecond");
     return obj;

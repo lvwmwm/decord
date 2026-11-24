@@ -1,21 +1,21 @@
-// Module ID: 15204
-// Function ID: 15205
+// Module ID: 10149
+// Function ID: 10150
 // Name: MediaViewerThumbnails
-// Dependencies: [32, 19, 17, 10194, 21, 15205, 5892, 575, 1655, 5896, 1380, 5306, 6010, 8633, 7847, 2]
+// Dependencies: [32, 19, 17, 10022, 21, 10150, 5477, 575, 1653, 5481, 1378, 4913, 5600, 8223, 7449, 2]
 // Exports: default
 
-// Module 15204 (MediaViewerThumbnails)
-import _modDef1655 from "module_1655" /* 1655 */;
-import useToken from "useToken" /* 5892 */;
-import VisualEffectViewDefault from "VisualEffectView" /* 5896 */;
-import FastImageDefault from "FastImage" /* 6010 */;
-import useMediaItemSpoilerState from "useMediaItemSpoilerState" /* 15205 */;
+// Module 10149 (MediaViewerThumbnails)
+import _modDef1653 from "module_1653" /* 1653 */;
+import useToken from "useToken" /* 5477 */;
+import VisualEffectViewDefault from "VisualEffectView" /* 5481 */;
+import FastImageDefault from "FastImage" /* 5600 */;
+import useMediaItemSpoilerState from "useMediaItemSpoilerState" /* 10150 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 10194 */;
+import Constants from "Constants" /* 10022 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let THUMBNAIL_HEIGHT;
@@ -26,7 +26,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const PlatformUtils = tmp(1380);
+const PlatformUtils = tmp(1378);
 function ObscuredView(source) {
   let items;
   let obj3;
@@ -44,7 +44,7 @@ function ObscuredView(source) {
     if (source.spoiler) {
       const obj2 = { style: items, children: metroImportAll(tmp7Result, obj3) };
       items = [metroRequire.absoluteFill, tmp5];
-      const View = tmp7(1655).View;
+      const View = tmp7(1653).View;
       let str = "light";
       tmp7Result = VisualEffectViewDefault;
       const tmp11 = metroRequire;
@@ -95,7 +95,7 @@ let closure_12 = react.memo(function MediaThumbnail(source) {
   const obj = { style: items2, children: React4(hasOwnProperty, obj2) };
   items2 = [tmp.thumbnailButtonPortrait, thumbnailStyle];
   obj2 = { needsOffscreenAlphaCompositing: true, renderToHardwareTextureAndroid: true, accessibilityRole: "imagebutton", accessibilityLabel: "Thumbnail preview, " + index + 1 + " of " + numSources, accessibilityHint: "Double tap to focus", accessibilityState: { selected: selectedIndex === index }, onPress: callback, children: items3 };
-  const View = _modDef1655.View;
+  const View = _modDef1653.View;
   items3 = [, ];
   const obj3 = { style: tmp.thumbnailImagePortrait, source: memo, enableAnimation: false };
   items3[0] = metroImportAll(FastImageDefault, obj3);
@@ -182,12 +182,12 @@ export default function MediaViewerThumbnails(syncer) {
   const items6 = [footerBufferStyle];
   const callback1 = obj.useCallback(() => {
     const obj = { style: headerBufferStyle };
-    return metroImportAll(_modDef1655.View, obj);
+    return metroImportAll(_modDef1653.View, obj);
   }, items5);
   const items7 = [index];
   const callback2 = obj.useCallback(() => {
     const obj = { style: footerBufferStyle };
-    return metroImportAll(_modDef1655.View, obj);
+    return metroImportAll(_modDef1653.View, obj);
   }, items6);
   const memo2 = obj.useMemo(() => index.get(), items7);
   const obj4 = { ref, style: tmp.containerPortrait, sections: memo1, stickyHeaderFooter: true, disableContentWrappers: true, automaticallyAdjustContentInsets: false, showsVerticalScrollIndicator: false, showsHorizontalScrollIndicator: false, initialScrollOrientation: "center", initialScrollItem: memo2, itemSize, renderItem: callback, onScroll, horizontal: true, headerSize: headerBufferSize, footerSize: footerBufferSize, renderHeader: callback1, renderFooter: callback2, onEndReached, endReachedThreshold: onEndReachedThreshold, chunkBase: screenWidth, snapToOffsets: memo, animatedProps };

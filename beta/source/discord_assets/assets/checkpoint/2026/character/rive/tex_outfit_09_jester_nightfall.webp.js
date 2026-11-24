@@ -1,11 +1,11 @@
-// Module ID: 14412
-// Function ID: 14413
+// Module ID: 12651
+// Function ID: 12652
 // Dependencies: [2]
 
-// Module 14412
+// Module 12651
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_outfit_09_jester_nightfall.webp.js");
 
-export default "https://cdn.discordapp.com/assets/content/f303b179db0856f11658b6b3244d4175637248d757786e8d8917b8147ab53bb3.webp";
-export const metadata = { fileBytes: 36018 };
+export default "https://cdn.discordapp.com/assets/content/ad1a5bbca04ec8809e67230269b592f3619066068e675e570569f1c94eb10d7a.webp";
+export const metadata = { fileBytes: 94106 };

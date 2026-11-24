@@ -1,9 +1,9 @@
-// Module ID: 8197
-// Function ID: 8198
+// Module ID: 7800
+// Function ID: 7801
 // Name: NativePermissionActionCreators
 // Dependencies: [572, 2]
 
-// Module 8197 (NativePermissionActionCreators)
+// Module 7800 (NativePermissionActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 

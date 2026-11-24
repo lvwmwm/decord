@@ -1,11 +1,11 @@
-// Module ID: 14421
-// Function ID: 14422
+// Module ID: 12660
+// Function ID: 12661
 // Dependencies: [2]
 
-// Module 14421
+// Module 12660
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_outfit_11_mage_shadow.webp.js");
 
-export default "https://cdn.discordapp.com/assets/content/739ea8b814a59fe6fb3c6db9104032d8172e45906a95e75c302f56b9e9449c98.webp";
-export const metadata = { fileBytes: 34802 };
+export default "https://cdn.discordapp.com/assets/content/396531678d1213980197c3d4ae3da6fa4a24ce300e2c23dfda509522d768f3b7.webp";
+export const metadata = { fileBytes: 90008 };

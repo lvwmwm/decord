@@ -1,10 +1,10 @@
 // Module ID: 4460
 // Function ID: 4461
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 4460 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9wcmVtaXVtL3Byb21vdGlvbnMvdGhpcmRfcGFydHkvbWFjYXJvbg==", scales: [1], hash: "8aa4b80b23a0c6023506e6a333a6c843", name: "fr.messages.8aa4b80b23a0c6023506e6a333a6c843.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9lbW9qaXMvZGVmYXVsdF9lbW9qaXM=", scales: [1], hash: "46c8788df37c3ca2f7cacf7cb4e086fa", name: "it.messages.46c8788df37c3ca2f7cacf7cb4e086fa.compiled.messages", type: "jsona" });

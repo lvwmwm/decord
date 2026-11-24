@@ -1,13 +1,14 @@
-// Module ID: 10404
-// Function ID: 10405
+// Module ID: 9884
+// Function ID: 9885
 // Name: AnnouncementMessageUtils
-// Dependencies: [5249, 2119, 6373, 6351, 1090, 10405, 6364, 10406, 1113, 1381, 2]
-// Exports: getPollExpiryLabel, getPosterUrl, toAnnouncementMessages
+// Dependencies: [4856, 2117, 5975, 5953, 1089, 9885, 5966, 9886, 1112, 1447, 1379, 2]
+// Exports: getAnnouncementMediaURL, getPollExpiryLabel, getPosterUrl, toAnnouncementMessages
 
-// Module 10404 (AnnouncementMessageUtils)
-import URLUtilsDefault from "URLUtils" /* 1381 */;
-import MessageRecord from "MessageRecord" /* 5249 */;
-import useFormattedExpirationLabel from "useFormattedExpirationLabel" /* 10406 */;
+// Module 9884 (AnnouncementMessageUtils)
+import URLUtilsDefault from "URLUtils" /* 1379 */;
+import ImageLoaderUtils from "ImageLoaderUtils" /* 1447 */;
+import MessageRecord from "MessageRecord" /* 4856 */;
+import useFormattedExpirationLabel from "useFormattedExpirationLabel" /* 9886 */;
 import size from "module_2" /* 2 */;
 
 let reactions;
@@ -258,10 +259,37 @@ export function getPollExpiryLabel(poll) {
   const obj = useFormattedExpirationLabel;
   let result = obj.formatExpirationLabel(poll.expiry);
   if (result == null) {
-    const intl = tmp(1113).intl;
-    result = intl.string(tmp(1113).t["e+J3JZ"]);
+    const intl = tmp(1112).intl;
+    result = intl.string(tmp(1112).t["e+J3JZ"]);
   }
   return result;
+}
+export function getAnnouncementMediaURL(assetURL, arg1, arg2) {
+  const getBestMediaProxySize = ImageLoaderUtils.getBestMediaProxySize;
+  ImageLoaderUtils;
+  const obj = ImageLoaderUtils;
+  const str = getBestMediaProxySize(arg2 * obj.getDevicePixelRatio());
+  const str2 = Math.round(str / arg1);
+  const obj2 = URLUtilsDefault;
+  const str3 = obj2.toURLSafe(assetURL);
+  let str1 = null;
+  if (null != str3) {
+    const searchParams = str3.searchParams;
+    searchParams.append("format", "webp");
+    if (null != str) {
+      const searchParams2 = str3.searchParams;
+      searchParams2.append("width", str.toString());
+    }
+    if (null != str2) {
+      const searchParams3 = str3.searchParams;
+      searchParams3.append("height", str2.toString());
+    }
+    str1 = str3.toString();
+  }
+  if (str1 == null) {
+    str1 = assetURL;
+  }
+  return str1;
 }
 export function getPosterUrl(proxyUrl, arg1, arg2) {
   const obj = URLUtilsDefault;

@@ -1,14 +1,14 @@
-// Module ID: 14872
-// Function ID: 14873
+// Module ID: 13325
+// Function ID: 13326
 // Name: ChatInputGuardMessageRequest
-// Dependencies: [5, 19, 1388, 21, 1502, 14873, 504, 14874, 6005, 1113, 6053, 14880, 2]
+// Dependencies: [5, 19, 1386, 21, 1500, 13326, 504, 13327, 5595, 1112, 5646, 13333, 2]
 
-// Module 14872 (ChatInputGuardMessageRequest)
+// Module 13325 (ChatInputGuardMessageRequest)
 import Fragment from "Fragment" /* 21 */;
-import ChatInputGuardDefault from "ChatInputGuard" /* 14880 */;
+import ChatInputGuardDefault from "ChatInputGuard" /* 13333 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1388 */;
+import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 
 let c1, closure_1, dependencyMap, id, importDefault;
@@ -143,14 +143,14 @@ const memoResult = react.memo(function ChatInputGuardMessageRequest(channel) {
   };
   const tmp = channel;
   const tmp2 = dependencyMap;
-  obj = channel(1502);
+  obj = channel(1500);
   importDefault = obj.useNavigation();
-  let obj2 = channel(14873);
+  let obj2 = channel(13326);
   const isMessageRequestRestrictedViewer = obj2.useIsMessageRequestRestrictedViewer();
   let obj3 = channel(504);
   const items = [obj];
   const stateFromStores = obj3.useStateFromStores(items, () => UserStore.getUser(channel.getRecipientId()));
-  let obj4 = channel(14874);
+  let obj4 = channel(13327);
   let obj5 = {
     user: stateFromStores,
     onError: function handleRequestError() {
@@ -169,9 +169,9 @@ const memoResult = react.memo(function ChatInputGuardMessageRequest(channel) {
   ({ acceptMessageRequest: c2, rejectMessageRequest: c3, isAcceptLoading, isRejectLoading, isUserProfileLoading, isOptimisticAccepted, isOptimisticRejected } = messageRequestActions);
   const obj6 = {
     type: "button-action",
-    message: intl.string(tmp(1113).t["e/eQVB"]),
+    message: intl.string(tmp(1112).t["e/eQVB"]),
     subtext: string(isMessageRequestRestrictedViewer ? t.YQ0uUE : t.HcVzGI),
-    buttonPrimaryText: intl3.string(tmp(1113).t.Kz8Pwr),
+    buttonPrimaryText: intl3.string(tmp(1112).t.Kz8Pwr),
     buttonPrimaryOnPress: function onAcceptClick(arg0) {
       return obj(...arguments);
     },
@@ -185,11 +185,11 @@ const memoResult = react.memo(function ChatInputGuardMessageRequest(channel) {
     buttonSecondaryLoading: isRejectLoading
   };
   const tmp8 = ChatInputGuardDefault;
-  intl = tmp(1113).intl;
-  const intl2 = tmp(1113).intl;
+  intl = tmp(1112).intl;
+  const intl2 = tmp(1112).intl;
   string = intl2.string;
-  t = tmp(1113).t;
-  intl3 = tmp(1113).intl;
+  t = tmp(1112).t;
+  intl3 = tmp(1112).intl;
   const tmp7 = obj;
   if (!isAcceptLoading) {
     isAcceptLoading = isUserProfileLoading;
@@ -197,9 +197,9 @@ const memoResult = react.memo(function ChatInputGuardMessageRequest(channel) {
   if (!isAcceptLoading) {
     isAcceptLoading = isOptimisticAccepted;
   }
-  const intl4 = tmp(1113).intl;
+  const intl4 = tmp(1112).intl;
   string2 = intl4.string;
-  t2 = tmp(1113).t;
+  t2 = tmp(1112).t;
   if (!isRejectLoading) {
     isRejectLoading = isOptimisticRejected;
   }

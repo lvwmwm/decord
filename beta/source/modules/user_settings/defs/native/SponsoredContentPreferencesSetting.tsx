@@ -1,15 +1,15 @@
-// Module ID: 18557
-// Function ID: 18558
+// Module ID: 17353
+// Function ID: 17354
 // Name: SponsoredContentPreferencesSetting
-// Dependencies: [1072, 12408, 1113, 2236, 10562, 18553, 18558, 2]
+// Dependencies: [1071, 11937, 1112, 2276, 13796, 17349, 17354, 2]
 
-// Module 18557 (SponsoredContentPreferencesSetting)
-import Constants from "Constants" /* 1072 */;
-import intl2 from "intl" /* 1113 */;
-import _modDef2236 from "module_2236" /* 2236 */;
-import QuestsIcon from "QuestsIcon" /* 10562 */;
-import AdTopicOptOutClientExperiment from "AdTopicOptOutClientExperiment" /* 18553 */;
-import SettingBuilders from "SettingBuilders" /* 12408 */;
+// Module 17353 (SponsoredContentPreferencesSetting)
+import Constants from "Constants" /* 1071 */;
+import intl2 from "intl" /* 1112 */;
+import _modDef2276 from "module_2276" /* 2276 */;
+import QuestsIcon from "QuestsIcon" /* 13796 */;
+import AdTopicOptOutClientExperiment from "AdTopicOptOutClientExperiment" /* 17349 */;
+import SettingBuilders from "SettingBuilders" /* 11937 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -18,7 +18,7 @@ const UserSettingsSections = Constants.UserSettingsSections;
 const obj = {
   useTitle() {
     const intl = intl2.intl;
-    return intl.string(_modDef2236.XUj46U);
+    return intl.string(_modDef2276.XUj46U);
   },
   parent: null,
   IconComponent: QuestsIcon.QuestsIcon,

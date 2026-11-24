@@ -1,13 +1,13 @@
-// Module ID: 5929
-// Function ID: 5930
+// Module ID: 5514
+// Function ID: 5515
 // Name: spring/spring
-// Dependencies: [5539, 5540, 1655, 2]
+// Dependencies: [5124, 5125, 1653, 2]
 // Exports: withSpring
 
-// Module 5929 (spring/spring)
-import _mod1655 from "module_1655" /* 1655 */;
-import ReanimatedConstants from "ReanimatedConstants" /* 5539 */;
-import reanimated_AccessibilityPreferencesSharedValue from "reanimated/AccessibilityPreferencesSharedValue" /* 5540 */;
+// Module 5514 (spring/spring)
+import _mod1653 from "module_1653" /* 1653 */;
+import ReanimatedConstants from "ReanimatedConstants" /* 5124 */;
+import reanimated_AccessibilityPreferencesSharedValue from "reanimated/AccessibilityPreferencesSharedValue" /* 5125 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;
@@ -19,14 +19,14 @@ const items = [{ code: "(function withSpring_springTsx1(toValue,config,shouldAni
 const CONFIG_NEVER_ANIMATE = ReanimatedConstants.CONFIG_NEVER_ANIMATE;
 items[1] = reanimated_AccessibilityPreferencesSharedValue.accessibilityPreferencesSharedValue;
 items[2] = CONFIG_NEVER_ANIMATE;
-items[3] = _mod1655.ReduceMotion;
-items[4] = _mod1655.withSpring;
+items[3] = _mod1653.ReduceMotion;
+items[4] = _mod1653.withSpring;
 let c0;
 let c1;
 let c2;
 let c3;
 [tmp2, tmp3, tmp4, tmp5, tmp6] = items;
-function withSpring(channelDockHeight, Reanimated3DefaultSpringConfig, arg2, BalanceCounterTsx1) {
+function withSpring(bound, Reanimated3DefaultSpringConfig, arg2, BalanceCounterTsx1) {
   let tmp3;
   let str = arg2;
   if (arg2 === undefined) {
@@ -47,7 +47,7 @@ function withSpring(channelDockHeight, Reanimated3DefaultSpringConfig, arg2, Bal
   } else {
     tmp3 = c1;
   }
-  return _undefined2(channelDockHeight, tmp3, BalanceCounterTsx1);
+  return _undefined2(bound, tmp3, BalanceCounterTsx1);
 }
 const items1 = [tmp3, tmp4, tmp5, tmp6];
 withSpring.__closure = items1;

@@ -1,15 +1,15 @@
-// Module ID: 15597
-// Function ID: 15598
+// Module ID: 14329
+// Function ID: 14330
 // Name: isActivityJoinableOnCurrentPlatform
-// Dependencies: [1072, 1360, 7472, 1627, 8470, 6059, 2]
+// Dependencies: [1071, 1358, 7074, 1625, 8061, 5652, 2]
 // Exports: default, getCurrentActivityGamePlatform, isActivityJoinable
 
-// Module 15597 (isActivityJoinableOnCurrentPlatform)
-import Constants from "Constants" /* 1072 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1360 */;
-import MetaQuestUtils from "MetaQuestUtils" /* 1627 */;
-import ActivityTypes from "ActivityTypes" /* 6059 */;
-import hasFlagDefault from "hasFlag" /* 8470 */;
+// Module 14329 (isActivityJoinableOnCurrentPlatform)
+import Constants from "Constants" /* 1071 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1358 */;
+import MetaQuestUtils from "MetaQuestUtils" /* 1625 */;
+import ActivityTypes from "ActivityTypes" /* 5652 */;
+import hasFlagDefault from "hasFlag" /* 8061 */;
 import size from "module_2" /* 2 */;
 
 const ActivityFlags = Constants.ActivityFlags;
@@ -22,17 +22,19 @@ export default function isActivityJoinableOnCurrentPlatform(type) {
     let DESKTOP;
     const obj = utils_PlatformUtils;
     if (obj.isIOS()) {
-      META_QUEST = tmp7(7472).ActivityGamePlatforms.IOS;
+      META_QUEST = tmp7(7074).ActivityGamePlatforms.IOS;
     } else {
       const tmp7Result = MetaQuestUtils;
-      if (tmp7Result.isMetaQuest()) {
-        META_QUEST = tmp7(7472).ActivityGamePlatforms.META_QUEST;
-      } else {
-        const tmp7Result2 = utils_PlatformUtils;
-        const isAndroidResult = tmp7Result2.isAndroid();
-        const ActivityGamePlatforms = tmp7(7472).ActivityGamePlatforms;
-        META_QUEST = isAndroidResult ? ActivityGamePlatforms.ANDROID : ActivityGamePlatforms.DESKTOP;
+      if (!tmp7Result.isMetaQuest()) {
+        const tmp7Result3 = utils_PlatformUtils;
+        if (!tmp7Result3.isOculusWeb()) {
+          const tmp7Result4 = utils_PlatformUtils;
+          const isAndroidResult = tmp7Result4.isAndroid();
+          const ActivityGamePlatforms = tmp7(7074).ActivityGamePlatforms;
+          META_QUEST = isAndroidResult ? ActivityGamePlatforms.ANDROID : ActivityGamePlatforms.DESKTOP;
+        }
       }
+      META_QUEST = tmp7(7074).ActivityGamePlatforms.META_QUEST;
     }
     let platform;
     if (type != null) {
@@ -41,7 +43,7 @@ export default function isActivityJoinableOnCurrentPlatform(type) {
     if (null != platform) {
       DESKTOP = type.platform;
     } else {
-      DESKTOP = tmp7(7472).ActivityGamePlatforms.DESKTOP;
+      DESKTOP = tmp7(7074).ActivityGamePlatforms.DESKTOP;
     }
     if (DESKTOP === META_QUEST) {
       return true;
@@ -61,17 +63,19 @@ export function getCurrentActivityGamePlatform() {
   let META_QUEST;
   const obj = utils_PlatformUtils;
   if (obj.isIOS()) {
-    META_QUEST = tmp(7472).ActivityGamePlatforms.IOS;
+    META_QUEST = tmp(7074).ActivityGamePlatforms.IOS;
   } else {
     const tmpResult = MetaQuestUtils;
-    if (tmpResult.isMetaQuest()) {
-      META_QUEST = tmp(7472).ActivityGamePlatforms.META_QUEST;
-    } else {
-      const tmpResult2 = utils_PlatformUtils;
-      const isAndroidResult = tmpResult2.isAndroid();
-      const ActivityGamePlatforms = tmp(7472).ActivityGamePlatforms;
-      META_QUEST = isAndroidResult ? ActivityGamePlatforms.ANDROID : ActivityGamePlatforms.DESKTOP;
+    if (!tmpResult.isMetaQuest()) {
+      const tmpResult3 = utils_PlatformUtils;
+      if (!tmpResult3.isOculusWeb()) {
+        const tmpResult4 = utils_PlatformUtils;
+        const isAndroidResult = tmpResult4.isAndroid();
+        const ActivityGamePlatforms = tmp(7074).ActivityGamePlatforms;
+        META_QUEST = isAndroidResult ? ActivityGamePlatforms.ANDROID : ActivityGamePlatforms.DESKTOP;
+      }
     }
+    META_QUEST = tmp(7074).ActivityGamePlatforms.META_QUEST;
   }
   return META_QUEST;
 }

@@ -1,10 +1,10 @@
 // Module ID: 14176
 // Function ID: 14177
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 14176 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_automod/images", width: 32, height: 32, scales: [1, 2, 3], hash: "c1e94f3a9063956a896dc2a0d96e8ae1", name: "ic_blocked_chat_bubble_icon", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/gifting/standard", width: 144, height: 150, scales: [1], hash: "c4e1982e9b2ef93acb5f2236a23782fc", name: "coffee_idle", type: "png" });

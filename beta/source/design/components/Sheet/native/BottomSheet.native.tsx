@@ -1,27 +1,27 @@
-// Module ID: 5556
-// Function ID: 5557
+// Module ID: 5141
+// Function ID: 5142
 // Name: Sheet/BottomSheet
-// Dependencies: [32, 19, 17, 5557, 21, 5306, 575, 1380, 1630, 5558, 5559, 5560, 5882, 5883, 1092, 1496, 1655, 5887, 5320, 5888, 5889, 1708, 5891, 5893, 5902, 5478, 5905, 5906, 5367, 2]
+// Dependencies: [32, 19, 17, 5142, 21, 4913, 575, 1378, 1628, 5143, 5144, 5145, 5467, 5468, 1091, 1494, 1653, 5472, 4927, 5473, 5474, 1706, 5476, 5478, 5487, 5085, 5490, 5491, 4974, 2]
 // Exports: BottomSheet, useBottomSheetContainerStyle, useBottomSheetWidth
 
-// Module 5556 (Sheet/BottomSheet)
+// Module 5141 (Sheet/BottomSheet)
 import nativeDefault from "native" /* 575 */;
-import ConstantsIOS from "ConstantsIOS" /* 1092 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5558 */;
-import BottomSheetSnapPoints from "BottomSheetSnapPoints" /* 5559 */;
-import BottomSheetModal from "BottomSheetModal" /* 5560 */;
-import LinearGradientDefault from "LinearGradient" /* 5883 */;
-import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 5891 */;
-import Sheet_BottomSheetBackdrop from "Sheet/BottomSheetBackdrop" /* 5893 */;
+import ConstantsIOS from "ConstantsIOS" /* 1091 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5143 */;
+import BottomSheetSnapPoints from "BottomSheetSnapPoints" /* 5144 */;
+import BottomSheetModal from "BottomSheetModal" /* 5145 */;
+import LinearGradientDefault from "LinearGradient" /* 5468 */;
+import ActionSheetHeaderBar from "ActionSheetHeaderBar" /* 5476 */;
+import Sheet_BottomSheetBackdrop from "Sheet/BottomSheetBackdrop" /* 5478 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5557 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5142 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let Platform;
@@ -40,9 +40,9 @@ let metroRequire;
 let tmp2;
 let tmp4;
 let unpackModuleId;
-const BottomSheetModalDefault = tmp2(5560);
-const NavigatorConstants = tmp4(5882);
-const NavScrim = tmp2(5902);
+const BottomSheetModalDefault = tmp2(5145);
+const NavigatorConstants = tmp4(5467);
+const NavScrim = tmp2(5487);
 function Background(arg0) {
   const obj = {};
   const merged = Object.assign(arg0);
@@ -75,7 +75,7 @@ function BorderGradientBackground(borderGradient) {
   const obj3 = { style: items1 };
   items1 = [tmp2.gradientInnerFill, { backgroundColor }];
   items[1] = authStore3(metroRequire, obj3);
-  return closure_17(metroRequire, obj);
+  return authStore4(metroRequire, obj);
 }
 ({ StyleSheet: hasOwnProperty, View: metroRequire, Platform } = react_native);
 ({ ACTION_SHEET_START_HEIGHT_RATIO: metroImportDefault, ACTION_SHEET_MAX_WIDTH: metroImportAll, ACTION_SHEET_SPRING_CONFIG: c9, ACTION_SHEET_SPRING_CONFIG_REDUCED_MOTION: c10, ACTION_SHEET_GRADIENT_BORDER_WIDTH: unpackModuleId, ACTION_SHEET_GRADIENT_BORDER_RADIUS: closure_12, ACTION_SHEET_BORDER_RADIUS: map1, ACTION_SHEET_INNER_BORDER_RADIUS: closure_14, ACTION_SHEET_MINIMUM_BOTTOM_PADDING: closure_15 } = ActionSheetConstants);
@@ -300,7 +300,7 @@ function ScrollableBottomSheetInner(windowDimensions) {
   const tmp2Result = BottomSheetModalDefault;
   const merged1 = Object.assign(merged);
   items3 = [tmp9, extraContent];
-  return closure_17(tmp2Result, obj3);
+  return authStore4(tmp2Result, obj3);
 }
 let closure_24 = { code: "(function BottomSheetNativeTsx1(){let[animatedIndex]=this.__closure;return animatedIndex.get()<=-1;})" };
 let closure_25 = { code: "(function BottomSheetNativeTsx2(){let[animatedIsVisuallyClosed]=this.__closure;return animatedIsVisuallyClosed.get();})" };
@@ -545,7 +545,7 @@ export function BottomSheet(scrollable) {
     const obj2 = { animatedIndex: animatedIndex.animatedIndex, opacity: backdropOpacity };
     items1[0] = authStore3(Sheet_BottomSheetBackdrop.BottomSheetBackdrop, obj2);
     items1[1] = backdropChildren;
-    return closure_17(metroRequire, obj);
+    return authStore4(metroRequire, obj);
   }, items11);
   const callback4 = obj.useCallback((arg0) => {
     let tmpResult;

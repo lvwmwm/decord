@@ -23,9 +23,9 @@ function instrumentUnhandledRejection() {
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 let onunhandledrejection = null;
 
-export function addGlobalUnhandledRejectionInstrumentationHandler(arg0) {
+export function addGlobalUnhandledRejectionInstrumentationHandler(errorCallback) {
   const obj = _mod714;
-  obj.addHandler("unhandledrejection", arg0);
+  obj.addHandler("unhandledrejection", errorCallback);
   const obj2 = _mod714;
   obj2.maybeInstrument("unhandledrejection", instrumentUnhandledRejection);
 }

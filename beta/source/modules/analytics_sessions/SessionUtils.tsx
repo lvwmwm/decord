@@ -1,11 +1,11 @@
-// Module ID: 8675
-// Function ID: 8676
+// Module ID: 8265
+// Function ID: 8266
 // Name: SessionUtils
-// Dependencies: [1089, 2]
+// Dependencies: [1088, 2]
 // Exports: isSessionExpired, timestampOrZero
 
-// Module 8675 (SessionUtils)
-import DurationsDefault from "Durations" /* 1089 */;
+// Module 8265 (SessionUtils)
+import DurationsDefault from "Durations" /* 1088 */;
 import size from "module_2" /* 2 */;
 
 const result = 30 * DurationsDefault.Millis.MINUTE;
@@ -14,8 +14,8 @@ const result1 = size.fileFinishedImporting("modules/analytics_sessions/SessionUt
 
 export const SESSION_IDLE_TIMEOUT_MILLIS = result;
 export const CLIENT_SESSION_STORAGE_VERSION = 1;
-export function isSessionExpired(lastUsedTimestamp) {
-  const sum = _window + lastUsedTimestamp.lastUsedTimestamp;
+export function isSessionExpired(c2) {
+  const sum = _window + c2.lastUsedTimestamp;
   return sum - Date.now() <= 0;
 }
 export function timestampOrZero(arg0) {

@@ -1,10 +1,10 @@
-// Module ID: 6903
-// Function ID: 6904
+// Module ID: 6507
+// Function ID: 6508
 // Name: ForumPlatformUtils
-// Dependencies: [1113, 2]
+// Dependencies: [1112, 2]
 
-// Module 6903 (ForumPlatformUtils)
-import intl2 from "intl" /* 1113 */;
+// Module 6507 (ForumPlatformUtils)
+import intl2 from "intl" /* 1112 */;
 import size from "module_2" /* 2 */;
 
 const obj = {

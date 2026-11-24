@@ -1,14 +1,14 @@
-// Module ID: 20857
-// Function ID: 20858
+// Module ID: 20127
+// Function ID: 20128
 // Name: StreamFullAlert
-// Dependencies: [19, 21, 6247, 1113, 6330, 5919, 2]
+// Dependencies: [19, 21, 5843, 1112, 5932, 5504, 2]
 // Exports: default
 
-// Module 20857 (StreamFullAlert)
-import intl4 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import AVError from "AVError" /* 6247 */;
-import AlertDefault from "Alert" /* 6330 */;
+// Module 20127 (StreamFullAlert)
+import intl4 from "intl" /* 1112 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import AVError from "AVError" /* 5843 */;
+import AlertDefault from "Alert" /* 5932 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -29,15 +29,15 @@ export default function StreamFullAlert(arg0) {
   if (errorInfo != null) {
     errorCode = errorInfo.errorCode;
   }
-  const intl = tmp(1113).intl;
+  const intl = tmp(1112).intl;
   const obj2 = { title: intl2.string(intl4.t.GzjdO5), children: items };
   const formatToPlainStringResult = intl.formatToPlainString(intl4.t.ejOT95, { errorCode });
   const tmp6 = AlertDefault;
   const merged = Object.assign(arg0);
-  intl2 = tmp(1113).intl;
+  intl2 = tmp(1112).intl;
   const obj3 = { variant: "body-md/normal", style: closure_5.body, children: intl3.string(intl4.t.VVZDBL) };
-  const Text = tmp(5919).Text;
-  intl3 = tmp(1113).intl;
+  const Text = tmp(5504).Text;
+  intl3 = tmp(1112).intl;
   items = [_false(Text, obj3), ];
   const obj4 = { variant: "body-md/normal", selectable: true, color: "text-muted", style: closure_5.body, children: formatToPlainStringResult };
   items[1] = _false(Text_Text.Text, obj4);

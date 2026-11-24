@@ -1,20 +1,20 @@
-// Module ID: 11315
-// Function ID: 11316
+// Module ID: 11333
+// Function ID: 11334
 // Name: EmojiPickerCategories
-// Dependencies: [19, 6972, 1072, 1228, 21, 5306, 575, 1655, 1708, 1256, 5544, 5545, 11316, 11330, 5588, 11331, 7830, 11332, 11334, 2]
+// Dependencies: [19, 6576, 1071, 1227, 21, 4913, 575, 1653, 1706, 1255, 5129, 5130, 11334, 11346, 5173, 11347, 7432, 11348, 11349, 2]
 
-// Module 11315 (EmojiPickerCategories)
+// Module 11333 (EmojiPickerCategories)
 import nativeDefault from "native" /* 575 */;
-import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1228 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import HapticUtils from "HapticUtils" /* 5544 */;
-import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5545 */;
-import EmojiPickerConstants from "EmojiPickerConstants" /* 6972 */;
-import EmojiPickerCategoriesItemDefault from "EmojiPickerCategoriesItem" /* 11316 */;
+import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1227 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import HapticUtils from "HapticUtils" /* 5129 */;
+import haptics_HapticFeedbackTypesDefault from "haptics/HapticFeedbackTypes" /* 5130 */;
+import EmojiPickerConstants from "EmojiPickerConstants" /* 6576 */;
+import EmojiPickerCategoriesItemDefault from "EmojiPickerCategoriesItem" /* 11334 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 1072 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -29,7 +29,7 @@ let obj2;
 let unpackModuleId;
 const EmojiCategoryTypes = EmojiPickerConstants.EmojiCategoryTypes;
 ({ AnalyticEvents: hasOwnProperty, AnalyticsPages: metroRequire, CATEGORY_ICON_SIZE, EXPRESSION_FOOTER_HEIGHT } = Constants);
-const ExpressionPickerViewType = ExpressionPickerConstants.ExpressionPickerViewType;
+let ExpressionPickerViewType = ExpressionPickerConstants.ExpressionPickerViewType;
 ({ jsx: c9, Fragment: c10, jsxs: unpackModuleId } = Fragment);
 let obj = { list: { flex: 1, height: EXPRESSION_FOOTER_HEIGHT }, listPlaceholder: obj2, item: { height: EXPRESSION_FOOTER_HEIGHT, width: EXPRESSION_FOOTER_HEIGHT, justifyContent: "center", alignItems: "center" }, keyboardItem: { height: CATEGORY_ICON_SIZE, width: CATEGORY_ICON_SIZE } };
 obj2 = { backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED };
@@ -41,6 +41,7 @@ let closure_16 = { code: "(function EmojiPickerCategoriesTsx4(){let[bottomSheetO
 let closure_17 = { code: "(function EmojiPickerCategoriesTsx5(open){let[scheduleOnRN,handleScrollToCategoryIndex]=this.__closure;if(!open){return;}scheduleOnRN(handleScrollToCategoryIndex);})" };
 const memoResult = react.memo(function EmojiPickerCategories(bottomSheetRef) {
   let bottomSheetIndex;
+  let closure_8;
   let firstUnicodeCategory;
   let firstUnicodeCategoryIndex;
   let isSearching;
@@ -69,6 +70,7 @@ const memoResult = react.memo(function EmojiPickerCategories(bottomSheetRef) {
   let tmp42;
   let tmp9;
   bottomSheetRef = bottomSheetRef.bottomSheetRef;
+  const isSheetExpandedRef = bottomSheetRef.isSheetExpandedRef;
   const categories = bottomSheetRef.categories;
   const categoryIndexActive = bottomSheetRef.categoryIndexActive;
   const emojiPickerListRef = bottomSheetRef.emojiPickerListRef;
@@ -86,22 +88,23 @@ const memoResult = react.memo(function EmojiPickerCategories(bottomSheetRef) {
     isSearching = false;
   }
   const onClearSearch = bottomSheetRef.onClearSearch;
+  let callback;
   let derivedValue;
   let ref2;
   let ref3;
   let callback2;
   let callback3;
-  let tmp = derivedValue();
-  let closure_7 = tmp;
+  let tmp = callback();
+  ExpressionPickerViewType = tmp;
   let tmp2 = bottomSheetRef;
-  let tmp3 = categoryIndexActive;
-  let obj = bottomSheetRef(categoryIndexActive[7]);
+  let tmp3 = categories;
+  let obj = bottomSheetRef(categories[7]);
   const sharedValue = obj.useSharedValue(undefined);
-  let obj2 = emojiPickerListRef;
-  emojiPickerListRef.useRef(undefined);
-  const ref = emojiPickerListRef.useRef(null);
+  let obj2 = categoryIndexActive;
+  categoryIndexActive.useRef(undefined);
+  const ref = categoryIndexActive.useRef(null);
   let items = [categories];
-  const memo = emojiPickerListRef.useMemo(() => {
+  const memo = categoryIndexActive.useMemo(() => {
     let items;
     let items1;
     let arr = categories;
@@ -120,7 +123,7 @@ const memoResult = react.memo(function EmojiPickerCategories(bottomSheetRef) {
     return obj;
   }, items);
   ({ firstUnicodeCategory, sections, firstUnicodeCategoryIndex } = memo);
-  const callback = emojiPickerListRef.useCallback((item) => {
+  callback = categoryIndexActive.useCallback((item) => {
     if (null != ref.current) {
       const current = ref.current;
       if (current != null) {
@@ -129,10 +132,10 @@ const memoResult = react.memo(function EmojiPickerCategories(bottomSheetRef) {
       }
     }
   }, []);
-  let tmp8 = bottomSheetRef(categoryIndexActive[7]);
-  let items1 = [ref2, categoryIndexActive];
+  let items1 = [derivedValue, categoryIndexActive];
   let c0;
   [tmp9, tmp10] = items1;
+  const tmp8 = bottomSheetRef(categories[7]);
   class EmojiPickerCategoriesTsx1 {
     constructor() {
       return _undefined.get();
@@ -142,8 +145,9 @@ const memoResult = react.memo(function EmojiPickerCategories(bottomSheetRef) {
   EmojiPickerCategoriesTsx1.__closure = items2;
   EmojiPickerCategoriesTsx1.__workletHash = 726737127541;
   EmojiPickerCategoriesTsx1.__initData = tmp9;
-  const items3 = [ref3, sharedValue, closure_7, , ];
+  const items3 = [ref2, sharedValue, onClearSearch, , ];
   const useAnimatedReaction = tmp8.useAnimatedReaction;
+  const tmp11 = onClearSearch;
   items3[3] = tmp2(tmp3[8]).scheduleOnRN;
   items3[4] = callback;
   c0 = undefined;
@@ -151,7 +155,6 @@ const memoResult = react.memo(function EmojiPickerCategories(bottomSheetRef) {
   let c2;
   let c3;
   [tmp12, tmp13, tmp14, tmp15, tmp16] = items3;
-  const tmp11 = closure_7;
   class EmojiPickerCategoriesTsx2 {
     constructor(arg0, arg1) {
       const value = _undefined.get();
@@ -180,7 +183,7 @@ const memoResult = react.memo(function EmojiPickerCategories(bottomSheetRef) {
       const result = sharedValue.set(obj);
     }
   }, items5);
-  const items6 = [callback2, flag, bottomSheetIndex];
+  const items6 = [ref3, flag, bottomSheetIndex];
   c0 = undefined;
   c1 = undefined;
   [tmp19, tmp20, tmp21] = items6;
@@ -204,47 +207,48 @@ const memoResult = react.memo(function EmojiPickerCategories(bottomSheetRef) {
   derivedValue = tmp2Result.useDerivedValue(EmojiPickerCategoriesTsx3);
   ref2 = obj2.useRef(undefined);
   ref3 = obj2.useRef(false);
-  const items8 = [derivedValue, bottomSheetRef, emojiPickerListRef, flag, isSearching, onClearSearch];
+  const items8 = [derivedValue, bottomSheetRef, emojiPickerListRef, flag, isSheetExpandedRef, isSearching, onClearSearch];
   callback2 = obj2.useCallback(() => {
-    let tmp7;
     let current = arg0;
     if (arg0 === undefined) {
       current = ref2.current;
     }
     if (null != current) {
-      if (!derivedValue.get()) {
-        const tmp3 = flag;
-        if (tmp3) {
-          if (bottomSheetRef != null) {
-            const current2 = bottomSheetRef.current;
-            if (current2 != null) {
-              current2.expandActionSheet();
-            }
-          }
-          ref2.current = current;
-          ref3.current = false;
-        }
-        return tmp7;
+      let tmp3;
+      const tmp2 = flag;
+      if (tmp2) {
+        tmp3 = !derivedValue.get();
+      } else {
+        tmp3 = null != isSheetExpandedRef && !isSheetExpandedRef.current;
       }
-      const tmp8 = isSearching;
-      if (tmp8) {
-        if (null != onClearSearch) {
-          ref2.current = current;
-          ref3.current = true;
-          tmp9();
-        }
-        tmp7 = tmp14;
-      }
-      if (null != emojiPickerListRef.current) {
-        ref2.current = undefined;
+      if (tmp3) {
+        ref2.current = current;
         ref3.current = false;
-        const current3 = tmp10.current;
-        const obj = { index: current };
-        current3.scrollToHeaderIndex(obj);
+        const current3 = bottomSheetRef.current;
+        if (current3 != null) {
+          current3.expandActionSheet();
+        }
+      } else {
+        const tmp5 = isSearching;
+        if (tmp5) {
+          if (null != onClearSearch) {
+            ref2.current = current;
+            ref3.current = true;
+            tmp6();
+          }
+        }
+        if (null != emojiPickerListRef.current) {
+          ref2.current = undefined;
+          ref3.current = false;
+          const current2 = tmp7.current;
+          const obj = { index: current };
+          current2.scrollToHeaderIndex(obj);
+        }
       }
+      return tmp11;
     }
   }, items8);
-  const items9 = [callback3, derivedValue];
+  const items9 = [callback2, derivedValue];
   c0 = undefined;
   [tmp25, tmp26] = items9;
   const tmp2Result2 = tmp2(tmp3[7]);
@@ -257,7 +261,7 @@ const memoResult = react.memo(function EmojiPickerCategories(bottomSheetRef) {
   EmojiPickerCategoriesTsx4.__closure = items10;
   EmojiPickerCategoriesTsx4.__workletHash = 4255098648304;
   EmojiPickerCategoriesTsx4.__initData = tmp25;
-  const items11 = [closure_17, , ];
+  const items11 = [callback3, , ];
   const useAnimatedReaction2 = tmp2Result2.useAnimatedReaction;
   items11[1] = tmp2(tmp3[8]).scheduleOnRN;
   items11[2] = callback2;
@@ -343,23 +347,23 @@ const memoResult = react.memo(function EmojiPickerCategories(bottomSheetRef) {
     const result = set(obj);
   }, items16);
   const callback6 = obj2.useCallback((arg0, index) => {
-    const obj = { category: categories[index], categoryIndexActive, index, handlePressCategory: callback3, loadingStyle: closure_7.listPlaceholder, locked: categories[index].isNitroLocked, style: closure_7.item };
+    const obj = { category: categories[index], categoryIndexActive, index, handlePressCategory: callback3, loadingStyle: closure_8.listPlaceholder, locked: categories[index].isNitroLocked, style: closure_8.item };
     return React4(EmojiPickerCategoriesItemDefault, obj);
   }, items17);
-  const tmp37 = categories(tmp3[13])();
+  const tmp37 = isSheetExpandedRef(tmp3[13])();
   const memo1 = obj2.useMemo(() => {
-    const Gesture = bottomSheetRef(categoryIndexActive[14]).Gesture;
+    const Gesture = bottomSheetRef(categories[14]).Gesture;
     const NativeResult = Gesture.Native();
     return NativeResult.disallowInterruption(true);
   }, []);
   let obj3 = { portalHostName, style, children: tmp41(tmp42, { children: items18 }) };
-  let obj4 = { gesture: memo1, children: ref(categories(tmp3[16]), obj5) };
-  const tmp40 = categories(tmp3[15]);
+  let obj4 = { gesture: memo1, children: sharedValue(isSheetExpandedRef(tmp3[16]), obj5) };
+  const tmp40 = isSheetExpandedRef(tmp3[15]);
   const GestureDetector = tmp2(tmp3[14]).GestureDetector;
-  obj5 = { estimatedListSize: "windowSize", horizontal: true, itemSize: tmp11, keyboardShouldPersistTaps: "always", listId: sharedValue.EMOJI, onLayout: callback5, onScroll: callback1, placeholderConfig: tmp37, ref, renderAhead, renderItem: callback6, scrollReporting: "callbacks", sections, showsHorizontalScrollIndicator: false, style: tmp.list };
-  items18 = [ref(GestureDetector, obj4), , ];
+  obj5 = { estimatedListSize: "windowSize", horizontal: true, itemSize: tmp11, keyboardShouldPersistTaps: "always", listId: ExpressionPickerViewType.EMOJI, onLayout: callback5, onScroll: callback1, placeholderConfig: tmp37, ref, renderAhead, renderItem: callback6, scrollReporting: "callbacks", sections, showsHorizontalScrollIndicator: false, style: tmp.list };
+  items18 = [sharedValue(GestureDetector, obj4), , ];
   let tmp39Result = null;
-  tmp41 = callback;
+  tmp41 = ref;
   tmp42 = ref;
   if (null != firstUnicodeCategory) {
     const obj6 = { blockRef: sharedValue, category: firstUnicodeCategory, categoryIndex: firstUnicodeCategoryIndex, onPress: callback4, style: tmp.item };
@@ -373,7 +377,7 @@ const memoResult = react.memo(function EmojiPickerCategories(bottomSheetRef) {
     tmp39Result2 = tmp39(tmp36(tmp3[18]), obj7);
   }
   items18[2] = tmp39Result2;
-  return ref(tmp40, obj3);
+  return sharedValue(tmp40, obj3);
 });
 let result = size.fileFinishedImporting("modules/emoji_picker/native/components/categories/EmojiPickerCategories.tsx");
 

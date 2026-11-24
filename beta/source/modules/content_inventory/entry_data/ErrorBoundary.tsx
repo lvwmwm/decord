@@ -1,9 +1,9 @@
-// Module ID: 19012
-// Function ID: 19013
+// Module ID: 17806
+// Function ID: 17807
 // Name: entry_data/ErrorBoundary
 // Dependencies: [19, 2]
 
-// Module 19012 (entry_data/ErrorBoundary)
+// Module 17806 (entry_data/ErrorBoundary)
 import reactAll from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

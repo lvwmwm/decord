@@ -1,15 +1,15 @@
-// Module ID: 15882
-// Function ID: 15883
+// Module ID: 14636
+// Function ID: 14637
 // Name: usePrivateChannelCall
-// Dependencies: [5, 19, 5155, 504, 1113, 10582, 8134, 2]
+// Dependencies: [5, 19, 4762, 504, 1112, 9662, 7737, 2]
 // Exports: default
 
-// Module 15882 (usePrivateChannelCall)
-import intl3 from "intl" /* 1113 */;
-import getPrivateChannelCallDefault from "getPrivateChannelCall" /* 10582 */;
+// Module 14636 (usePrivateChannelCall)
+import intl3 from "intl" /* 1112 */;
+import getPrivateChannelCallDefault from "getPrivateChannelCall" /* 9662 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -51,9 +51,9 @@ export default function usePrivateChannelCall(arg0, arg1, arg2) {
       tmp10 = tmp6;
     }
     const obj3 = { text: stringResult, accessibilityHint: string2Result, inCall: false };
-    const intl2 = tmp10(1113).intl;
+    const intl2 = tmp10(1112).intl;
     const string2 = intl2.string;
-    const t2 = tmp10(1113).t;
+    const t2 = tmp10(1112).t;
     if (closure_1) {
       string2Result = string2(t2.oCqlGG);
     } else {

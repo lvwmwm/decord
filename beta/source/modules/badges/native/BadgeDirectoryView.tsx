@@ -1,25 +1,25 @@
-// Module ID: 15277
-// Function ID: 15278
+// Module ID: 14008
+// Function ID: 14009
 // Name: BadgeDirectoryView
-// Dependencies: [19, 17, 10035, 1388, 8547, 1072, 21, 5306, 575, 1496, 5919, 7997, 1113, 15278, 10078, 1630, 504, 8552, 10113, 11819, 15280, 15275, 8604, 10110, 5926, 7418, 2]
+// Dependencies: [19, 17, 9425, 1386, 8137, 1071, 21, 4913, 575, 1494, 5504, 7600, 1112, 14009, 13955, 1628, 504, 8142, 13990, 13930, 14011, 14006, 8194, 13987, 5511, 7020, 2]
 // Exports: default
 
-// Module 15277 (BadgeDirectoryView)
+// Module 14008 (BadgeDirectoryView)
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import native from "native" /* 7997 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8552 */;
-import openBadgeDetailsSheet from "openBadgeDetailsSheet" /* 10110 */;
-import BadgeUtils from "BadgeUtils" /* 10113 */;
-import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 15278 */;
+import Constants from "Constants" /* 1071 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import native from "native" /* 7600 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8142 */;
+import openBadgeDetailsSheet from "openBadgeDetailsSheet" /* 13987 */;
+import BadgeUtils from "BadgeUtils" /* 13990 */;
+import BadgeCatalogIconDefault from "BadgeCatalogIcon" /* 14009 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 10035 */;
-import UserStore from "UserStore" /* 1388 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8547 */;
+import ProfileCustomizationNavigationStore from "ProfileCustomizationNavigationStore" /* 9425 */;
+import UserStore from "UserStore" /* 1386 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8137 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let currentUser, dependencyMap, set;
@@ -100,7 +100,7 @@ function BadgeSection(title) {
       tmp5Result = tmp5(tmp4, obj3);
     } else {
       const obj4 = { variant: "body-md/medium", color: "text-muted", children: emptyText };
-      tmp5Result = tmp5(tmp6(5919).Text, obj4);
+      tmp5Result = tmp5(tmp6(5504).Text, obj4);
     }
     items[1] = tmp5Result;
     tmp3Result = tmp3(tmp4, obj);
@@ -156,13 +156,13 @@ export default function BadgeDirectoryView(arg0) {
   let badgeIndicatorIds;
   let tmp = targetUsername;
   let tmp2 = dependencyMap;
-  let obj = targetUsername(10078);
+  let obj = targetUsername(13955);
   let isBadgeManagementEnabled = obj.useIsBadgeManagementEnabled({ location: "BadgeDirectoryView" });
   const tmp4 = closure_12();
-  const diff = stateFromStores(1496)().width - 2 * stateFromStores(575).space.PX_16;
+  const diff = stateFromStores(1494)().width - 2 * stateFromStores(575).space.PX_16;
   let result = 3 * stateFromStores(575).space.PX_12;
   let items = [tmp4.footer, ];
-  let obj2 = { paddingBottom: stateFromStores(1630)().bottom + stateFromStores(575).space.PX_16 };
+  let obj2 = { paddingBottom: stateFromStores(1628)().bottom + stateFromStores(575).space.PX_16 };
   items[1] = obj2;
   let obj3 = targetUsername(504);
   const items1 = [UserStore];
@@ -232,13 +232,13 @@ export default function BadgeDirectoryView(arg0) {
   ({ owned, earnable } = memo);
   let tmp36Result = !tmp8;
   let someResult = tmp36Result;
-  const useIsBadgeUnreadStateEnabled = tmp(11819).useIsBadgeUnreadStateEnabled;
-  tmp(11819);
+  const useIsBadgeUnreadStateEnabled = tmp(13930).useIsBadgeUnreadStateEnabled;
+  tmp(13930);
   if (!(null != targetUserId && targetUserId !== stateFromStores)) {
     someResult = stateFromStoresArray.some((has_updates) => true === has_updates.has_updates);
   }
   isBadgeUnreadStateEnabled = useIsBadgeUnreadStateEnabled({ location: "BadgeDirectoryView", hasUnread: someResult });
-  const tmpResult8 = tmp(15280);
+  const tmpResult8 = tmp(14011);
   badgeIndicatorIds = tmpResult8.useBadgeDirectoryBadgeIndicators({ badges: stateFromStoresArray, enabled: tmp36Result }).badgeIndicatorIds;
   const items11 = [stateFromStoresArray, isBadgeUnreadStateEnabled, tmp8, badgeIndicatorIds];
   const memo1 = obj8.useMemo(function() {
@@ -263,9 +263,9 @@ export default function BadgeDirectoryView(arg0) {
     let formatToPlainStringResult;
     let tmp33Result;
     if (null != targetUsername) {
-      const intl2 = tmp(1113).intl;
+      const intl2 = tmp(1112).intl;
       const obj4 = { username: targetUsername };
-      formatToPlainStringResult = intl2.formatToPlainString(tmp(1113).t.EIcwoe, obj4);
+      formatToPlainStringResult = intl2.formatToPlainString(tmp(1112).t.EIcwoe, obj4);
     }
     const items12 = [tmp9];
     const callback = obj8.useCallback(() => {
@@ -300,17 +300,17 @@ export default function BadgeDirectoryView(arg0) {
       let tmp28;
       if (stateFromStores2) {
         const obj5 = { style: tmp4.centered, children: items14 };
-        const obj6 = { variant: "body-md/semibold", children: intl3.string(tmp(1113).t.iufib1) };
-        const Text = tmp(5919).Text;
-        intl3 = tmp(1113).intl;
+        const obj6 = { variant: "body-md/semibold", children: intl3.string(tmp(1112).t.iufib1) };
+        const Text = tmp(5504).Text;
+        intl3 = tmp(1112).intl;
         items14 = [closure_10(Text, obj6), , ];
-        const obj7 = { variant: "body-md/normal", color: "text-subtle", children: intl4.string(tmp(1113).t.eAn6z2) };
-        const Text2 = tmp(5919).Text;
-        intl4 = tmp(1113).intl;
+        const obj7 = { variant: "body-md/normal", color: "text-subtle", children: intl4.string(tmp(1112).t.eAn6z2) };
+        const Text2 = tmp(5504).Text;
+        intl4 = tmp(1112).intl;
         items14[1] = closure_10(Text2, obj7);
-        const obj9 = { variant: "secondary", size: "sm", onPress: callback, text: intl5.string(tmp(1113).t["7NqTJn"]) };
-        const Button = tmp(5926).Button;
-        intl5 = tmp(1113).intl;
+        const obj9 = { variant: "secondary", size: "sm", onPress: callback, text: intl5.string(tmp(1112).t["7NqTJn"]) };
+        const Button = tmp(5511).Button;
+        intl5 = tmp(1112).intl;
         items14[2] = closure_10(Button, obj9);
         tmp28 = closure_11(isBadgeUnreadStateEnabled, obj5);
       }
@@ -324,22 +324,22 @@ export default function BadgeDirectoryView(arg0) {
       const obj11 = { alwaysBounceVertical: false, contentContainerStyle: tmp4.content, children: items15 };
       const tmp35 = stateFromStoresArray;
       if (!(null != targetUserId && targetUserId !== stateFromStores)) {
-        const intl6 = tmp(1113).intl;
-        stringResult = intl6.string(tmp(1113).t.Qno0jg);
+        const intl6 = tmp(1112).intl;
+        stringResult = intl6.string(tmp(1112).t.Qno0jg);
       }
       items15 = [closure_10(BadgeSection, obj12), ];
       if (!(null != targetUserId && targetUserId !== stateFromStores)) {
-        const obj13 = { title: intl7.string(tmp(1113).t["0YzU//"]), badges: earnable, tileSize: result1, onPressBadge: callback2, badgeIndicatorIds: memo1 };
-        intl7 = tmp(1113).intl;
+        const obj13 = { title: intl7.string(tmp(1112).t["0YzU//"]), badges: earnable, tileSize: result1, onPressBadge: callback2, badgeIndicatorIds: memo1 };
+        intl7 = tmp(1112).intl;
         tmp36Result = tmp36(tmp37, obj13);
       }
       items15[1] = tmp36Result;
       items16 = [closure_11(tmp35, obj11), ];
       if (null != targetUserId && targetUserId !== stateFromStores) {
         const obj14 = { style: items, children: closure_10(Button3, obj15) };
-        obj15 = { variant: "secondary", onPress: callback3, text: intl9.string(tmp(1113).t.msyp90) };
-        Button3 = tmp(5926).Button;
-        intl9 = tmp(1113).intl;
+        obj15 = { variant: "secondary", onPress: callback3, text: intl9.string(tmp(1112).t.msyp90) };
+        Button3 = tmp(5511).Button;
+        intl9 = tmp(1112).intl;
         isBadgeManagementEnabled = tmp36(tmp34, obj14);
       } else {
         if (isBadgeManagementEnabled) {
@@ -347,20 +347,20 @@ export default function BadgeDirectoryView(arg0) {
         }
         if (isBadgeManagementEnabled) {
           const obj16 = { style: items, children: closure_10(Button2, obj17) };
-          obj17 = { variant: "secondary", onPress: callback1, text: intl8.string(tmp(1113).t["6CLLyH"]) };
-          Button2 = tmp(5926).Button;
-          intl8 = tmp(1113).intl;
+          obj17 = { variant: "secondary", onPress: callback1, text: intl8.string(tmp(1112).t["6CLLyH"]) };
+          Button2 = tmp(5511).Button;
+          intl8 = tmp(1112).intl;
           isBadgeManagementEnabled = tmp36(tmp34, obj16);
         }
       }
       items16[1] = isBadgeManagementEnabled;
       tmp33Result = tmp33(tmp34, obj10);
     } else {
-      const obj18 = { style: tmp4.centered, children: closure_10(tmp(7418).ActivityIndicator, {}) };
+      const obj18 = { style: tmp4.centered, children: closure_10(tmp(7020).ActivityIndicator, {}) };
       tmp33Result = closure_10(isBadgeUnreadStateEnabled, obj18);
     }
     tmp28 = tmp33Result;
   }
-  const intl = tmp(1113).intl;
-  formatToPlainStringResult = intl.string(tmp(1113).t.UqnlQF);
+  const intl = tmp(1112).intl;
+  formatToPlainStringResult = intl.string(tmp(1112).t.UqnlQF);
 };

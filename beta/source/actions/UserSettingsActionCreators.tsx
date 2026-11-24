@@ -1,20 +1,20 @@
-// Module ID: 6232
-// Function ID: 6233
+// Module ID: 5826
+// Function ID: 5827
 // Name: UserSettingsActionCreators
-// Dependencies: [5, 5330, 1193, 1192, 1072, 1195, 5136, 1196, 1227, 572, 5366, 5131, 2]
+// Dependencies: [5, 4937, 1192, 1191, 1071, 1194, 4743, 1195, 1226, 572, 4973, 4738, 2]
 // Exports: saveClientTheme, saveGuildFolders
 
-// Module 6232 (UserSettingsActionCreators)
+// Module 5826 (UserSettingsActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import Constants from "Constants" /* 1072 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
-import wrappers from "wrappers" /* 1227 */;
-import UserSettings from "UserSettings" /* 5131 */;
+import Constants from "Constants" /* 1071 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1195 */;
+import wrappers from "wrappers" /* 1226 */;
+import UserSettings from "UserSettings" /* 4738 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 5330 */;
-import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1193 */;
-import ThemeStore from "ThemeStore" /* 1192 */;
-import ThemeConstants from "ThemeConstants" /* 1195 */;
+import ClientThemesBackgroundStore from "ClientThemesBackgroundStore" /* 4937 */;
+import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1192 */;
+import ThemeStore from "ThemeStore" /* 1191 */;
+import ThemeConstants from "ThemeConstants" /* 1194 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -357,7 +357,7 @@ export function saveClientTheme(backgroundGradientPresetId, INFREQUENT_USER_ACTI
       arg0.theme = DARK;
       let obj2;
       if (null != backgroundGradientPresetId) {
-        const UInt32Value = tmp3(1227).UInt32Value;
+        const UInt32Value = tmp3(1226).UInt32Value;
         const obj = { value: tmp13 };
         obj2 = UInt32Value.create(obj);
       }

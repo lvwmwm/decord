@@ -1,13 +1,13 @@
-// Module ID: 15638
-// Function ID: 15639
+// Module ID: 14374
+// Function ID: 14375
 // Name: ConfirmStartCall
-// Dependencies: [19, 21, 6264, 1113, 6264, 6260, 2]
+// Dependencies: [19, 21, 5866, 1112, 5866, 5862, 2]
 // Exports: confirmStartCall
 
-// Module 15638 (ConfirmStartCall)
-import intl5 from "intl" /* 1113 */;
-import useAlertStore from "useAlertStore" /* 6260 */;
-import AlertModal2 from "AlertModal" /* 6264 */;
+// Module 14374 (ConfirmStartCall)
+import intl5 from "intl" /* 1112 */;
+import useAlertStore from "useAlertStore" /* 5862 */;
+import AlertModal2 from "AlertModal" /* 5866 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

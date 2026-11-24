@@ -1,16 +1,16 @@
-// Module ID: 12707
-// Function ID: 12708
+// Module ID: 12199
+// Function ID: 12200
 // Name: GamesActionCreators
-// Dependencies: [5, 1072, 12708, 12709, 1092, 8470, 6002, 572, 1285, 12710, 12712, 12713, 2]
+// Dependencies: [5, 1071, 10774, 12200, 1091, 8061, 5592, 572, 1284, 12201, 12203, 10779, 2]
 
-// Module 12707 (GamesActionCreators)
+// Module 12199 (GamesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import LinkingDefault from "Linking" /* 6002 */;
-import Constants2 from "Constants" /* 12708 */;
-import getOrFetchApplicationDefault from "getOrFetchApplication" /* 12709 */;
-import fetchDetectableGamesDefault from "fetchDetectableGames" /* 12710 */;
+import LinkingDefault from "Linking" /* 5592 */;
+import Constants2 from "Constants" /* 10774 */;
+import getOrFetchApplicationDefault from "getOrFetchApplication" /* 12200 */;
+import fetchDetectableGamesDefault from "fetchDetectableGames" /* 12201 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants from "Constants" /* 1072 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

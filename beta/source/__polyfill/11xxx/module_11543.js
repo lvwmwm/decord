@@ -1,10 +1,11 @@
 // Module ID: 11543
 // Function ID: 11544
-// Dependencies: [41, 42, 93, 95, 98, 11544, 11436]
+// Dependencies: [41, 42, 93, 95, 98, 11544, 11418, 11422]
 
 // Module 11543
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 11436 */;
-import _mod11544 from "module_11544" /* 11544 */;
+import ReferenceWithTimezone from "ReferenceWithTimezone" /* 11418 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 11422 */;
+import REGEX_PARTS from "REGEX_PARTS" /* 11544 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
@@ -26,12 +27,13 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class ZHHantDateParser {
+let closure_6 = "(?:(?:\u043E\u043A\u043E\u043B\u043E|\u043F\u0440\u0438\u043C\u0435\u0440\u043D\u043E)\\s*(?:~\\s*)?)?(" + REGEX_PARTS.TIME_UNITS_PATTERN + ")" + REGEX_PARTS.REGEX_PARTS.rightBoundary;
+class RUTimeUnitWithinFormatParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, ZHHantDateParser);
-    const obj = _getPrototypeOf(ZHHantDateParser);
+    _classCallCheck(this, RUTimeUnitWithinFormatParser);
+    const obj = _getPrototypeOf(RUTimeUnitWithinFormatParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
@@ -43,66 +45,42 @@ class ZHHantDateParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(ZHHantDateParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(RUTimeUnitWithinFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "innerPattern",
-  value: function innerPattern() {
-    const keys = Object.keys(_mod11544.NUMBER);
-    const text = `(\\d{2,4}|[${obj.join("")}`;
-    const keys1 = Object.keys(_mod11544.NUMBER);
-    const text1 = `${`(\\d{2,4}|[${obj.join("")}`}]{4}|[${obj2.join("")}`;
-    const keys2 = Object.keys(_mod11544.NUMBER);
-    const text2 = `${tmp2}]{2})?(?:\\s*)(?:年)?(?:[\\s|,|，]*)(\\d{1,2}|[${obj3.join("")}`;
-    const keys3 = Object.keys(_mod11544.NUMBER);
-    const regExp = new RegExp(text2 + "]{1,2})(?:\\s*)(?:\u6708)(?:\\s*)(\\d{1,2}|[" + keys3.join("") + "]{1,2})?(?:\\s*)(?:\u65E5|\u865F)?");
-    return regExp;
+  key: "patternLeftBoundary",
+  value: function patternLeftBoundary() {
+    return REGEX_PARTS.REGEX_PARTS.leftBoundary;
   }
 };
 const items = [
   entry,
   {
+    key: "innerPattern",
+    value: function innerPattern(option) {
+      let _RegExp1;
+      const _RegExp = RegExp;
+      if (option.option.forwardDate) {
+        const self3 = this;
+        const self4 = this;
+        _RegExp1 = new _RegExp(tmp, REGEX_PARTS.REGEX_PARTS.flags);
+      } else {
+        const _HermesInternal = HermesInternal;
+        const combined = "(?:\u0432 \u0442\u0435\u0447\u0435\u043D\u0438\u0435|\u0432 \u0442\u0435\u0447\u0435\u043D\u0438\u0438)\\s*" + tmp;
+        const self = this;
+        const self2 = this;
+        _RegExp1 = new _RegExp(combined, REGEX_PARTS.REGEX_PARTS.flags);
+      }
+      return _RegExp1;
+    }
+  },
+  {
     key: "innerExtract",
-    value: function innerExtract(createParsingResult, index) {
-      const parsingResult = createParsingResult.createParsingResult(index.index, index[0]);
-      const parsed = parseInt(index[2]);
-      let zhStringToNumberResult = parsed;
-      if (isNaN(parsed)) {
-        zhStringToNumberResult = _mod11544.zhStringToNumber(index[2]);
-      }
-      const start = parsingResult.start;
-      start.assign("month", zhStringToNumberResult);
-      if (index[3]) {
-        const _parseInt = parseInt;
-        const parsed1 = parseInt(index[3]);
-        const _isNaN = isNaN;
-        let zhStringToNumberResult1 = parsed1;
-        if (isNaN(parsed1)) {
-          zhStringToNumberResult1 = _mod11544.zhStringToNumber(index[3]);
-        }
-        const start3 = parsingResult.start;
-        start3.assign("day", zhStringToNumberResult1);
-      } else {
-        const start2 = parsingResult.start;
-        const refDate = createParsingResult.refDate;
-        start2.imply("day", refDate.getDate());
-      }
-      if (index[1]) {
-        const _parseInt2 = parseInt;
-        let parsed2 = parseInt(index[1]);
-        const _isNaN2 = isNaN;
-        if (isNaN(parsed2)) {
-          parsed2 = _mod11544.zhStringToYear(index[1]);
-        }
-        const start5 = parsingResult.start;
-        start5.assign("year", parsed2);
-      } else {
-        const start4 = parsingResult.start;
-        const refDate2 = createParsingResult.refDate;
-        start4.imply("year", refDate2.getFullYear());
-      }
-      return parsingResult;
+    value: function innerExtract(reference, arg1) {
+      const parseDurationResult = REGEX_PARTS.parseDuration(arg1[1]);
+      const ParsingComponents = ReferenceWithTimezone.ParsingComponents;
+      return ParsingComponents.createRelativeFromReference(reference.reference, parseDurationResult);
     }
   }
 ];
 
-export default _createClass(ZHHantDateParser, items);
+export default _createClass(RUTimeUnitWithinFormatParser, items);

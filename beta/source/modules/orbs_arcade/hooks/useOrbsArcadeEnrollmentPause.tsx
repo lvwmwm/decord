@@ -1,18 +1,18 @@
-// Module ID: 17675
-// Function ID: 17676
+// Module ID: 16447
+// Function ID: 16448
 // Name: useOrbsArcadeEnrollmentPause
-// Dependencies: [32, 19, 9441, 1089, 5128, 2]
+// Dependencies: [32, 19, 8957, 1088, 4735, 2]
 // Exports: default
 
-// Module 17675 (useOrbsArcadeEnrollmentPause)
-import DateUtils from "DateUtils" /* 5128 */;
-import useIntervalDefault from "useInterval" /* 9441 */;
+// Module 16447 (useOrbsArcadeEnrollmentPause)
+import DateUtils from "DateUtils" /* 4735 */;
+import useIntervalDefault from "useInterval" /* 8957 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 let tmp3;
-const DurationsDefault = tmp3(1089);
+const DurationsDefault = tmp3(1088);
 const result = size.fileFinishedImporting("modules/orbs_arcade/hooks/useOrbsArcadeEnrollmentPause.tsx");
 
 export default function useOrbsArcadeEnrollmentPause(endsAt, expiresAt) {

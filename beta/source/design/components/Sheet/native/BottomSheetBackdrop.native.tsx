@@ -1,17 +1,17 @@
-// Module ID: 5893
-// Function ID: 5894
+// Module ID: 5478
+// Function ID: 5479
 // Name: Sheet/BottomSheetBackdrop
-// Dependencies: [19, 21, 5306, 5560, 5588, 1708, 1655, 5894, 2]
+// Dependencies: [19, 21, 4913, 5145, 5173, 1706, 1653, 5479, 2]
 
-// Module 5893 (Sheet/BottomSheetBackdrop)
+// Module 5478 (Sheet/BottomSheetBackdrop)
 import Fragment from "Fragment" /* 21 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import _mod1708 from "module_1708" /* 1708 */;
-import BottomSheetModal from "BottomSheetModal" /* 5560 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5588 */;
-import Backdrop from "Backdrop" /* 5894 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import _mod1706 from "module_1706" /* 1706 */;
+import BottomSheetModal from "BottomSheetModal" /* 5145 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5173 */;
+import Backdrop from "Backdrop" /* 5479 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -72,7 +72,7 @@ const memoResult = react.memo(function BottomSheetBackdropComponent(opacity) {
   let items1 = [closure_5, , ];
   const onEnd = Gesture.Tap().onEnd;
   Gesture.Tap();
-  items1[1] = _mod1708.scheduleOnRN;
+  items1[1] = _mod1706.scheduleOnRN;
   items1[2] = callback;
   let c0;
   let c1;
@@ -89,9 +89,9 @@ const memoResult = react.memo(function BottomSheetBackdropComponent(opacity) {
   BottomSheetBackdropNativeTsx1.__initData = tmp7;
   const items3 = [closure_6, , , , , ];
   const onEndResult = onEnd(BottomSheetBackdropNativeTsx1);
-  const useAnimatedStyle = _mod1655.useAnimatedStyle;
-  _mod1655;
-  items3[1] = _mod1655.interpolate;
+  const useAnimatedStyle = _mod1653.useAnimatedStyle;
+  _mod1653;
+  items3[1] = _mod1653.interpolate;
   items3[2] = animatedIndex;
   items3[3] = num3;
   items3[4] = num2;
@@ -127,7 +127,7 @@ const memoResult = react.memo(function BottomSheetBackdropComponent(opacity) {
   const tmp20 = jsx;
   if ("none" !== str) {
     const obj3 = { gesture: onEndResult, children: tmp21 };
-    tmp20Result = tmp20(tmp2(5588).GestureDetector, obj3);
+    tmp20Result = tmp20(tmp2(5173).GestureDetector, obj3);
   }
   return tmp20Result;
 });

@@ -1,20 +1,20 @@
-// Module ID: 15391
-// Function ID: 15392
+// Module ID: 14122
+// Function ID: 14123
 // Name: PremiumGroupEducationActionSheet
-// Dependencies: [17, 2187, 21, 5306, 575, 5556, 7623, 5919, 1113, 3513, 2]
+// Dependencies: [17, 2186, 21, 4913, 575, 5141, 7225, 5504, 1112, 3636, 2]
 // Exports: default
 
-// Module 15391 (PremiumGroupEducationActionSheet)
+// Module 14122 (PremiumGroupEducationActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1113 */;
-import PremiumGroupConstants from "PremiumGroupConstants" /* 2187 */;
-import _modDef3513 from "module_3513" /* 3513 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5556 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import CircleErrorIcon from "CircleErrorIcon" /* 7623 */;
+import intl2 from "intl" /* 1112 */;
+import PremiumGroupConstants from "PremiumGroupConstants" /* 2186 */;
+import _modDef3636 from "module_3636" /* 3636 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5141 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import CircleErrorIcon from "CircleErrorIcon" /* 7225 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -46,7 +46,7 @@ export default function PremiumGroupEducationActionSheet(aboutText) {
   const obj5 = { style: tmp.aboutTextContainer, children: hasOwnProperty(Text_Text.Text, { variant: "body-sm/medium", color: "text-overlay-light", children: aboutText }) };
   items[1] = hasOwnProperty(View, obj5);
   items1 = [metroRequire(View, obj3), ];
-  const obj6 = { variant: "body-sm/medium", color: "text-overlay-light", style: tmp.helpdeskText, children: intl.format(_modDef3513.ah1Ecm, obj7) };
+  const obj6 = { variant: "body-sm/medium", color: "text-overlay-light", style: tmp.helpdeskText, children: intl.format(_modDef3636.ah1Ecm, obj7) };
   const Text = Text_Text.Text;
   intl = intl2.intl;
   obj7 = { helpCenterLink: HELP_CENTER_LINK };

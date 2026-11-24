@@ -1,16 +1,16 @@
-// Module ID: 14103
-// Function ID: 14104
+// Module ID: 12279
+// Function ID: 12280
 // Name: prefetchGameOrganizationAccountLinkState
-// Dependencies: [5, 2165, 7221, 12368, 12369, 7055, 7921, 7410, 2]
+// Dependencies: [5, 2164, 6825, 11895, 11896, 6659, 7523, 7012, 2]
 // Exports: default
 
-// Module 14103 (prefetchGameOrganizationAccountLinkState)
-import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 7055 */;
-import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 7221 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 12369 */;
+// Module 12279 (prefetchGameOrganizationAccountLinkState)
+import ApplicationActionCreatorsDefault from "ApplicationActionCreators" /* 6659 */;
+import AuthorizedAppsStore2 from "AuthorizedAppsStore" /* 6825 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11896 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ApplicationStore from "ApplicationStore" /* 2165 */;
-import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 12368 */;
+import ApplicationStore from "ApplicationStore" /* 2164 */;
+import GameOrganizationInviteStore from "GameOrganizationInviteStore" /* 11895 */;
 import size from "module_2" /* 2 */;
 
 let c5, c6, invite;

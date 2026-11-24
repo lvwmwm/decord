@@ -1,17 +1,17 @@
-// Module ID: 19656
-// Function ID: 19657
+// Module ID: 18917
+// Function ID: 18918
 // Name: useShouldShowExpiringTrialOfferCard
-// Dependencies: [16226, 1072, 1390, 1089, 563, 9310, 9440, 2]
+// Dependencies: [14999, 1071, 1388, 1088, 563, 8859, 8956, 2]
 // Exports: useShouldShowExpiringTrialOfferCard
 
-// Module 19656 (useShouldShowExpiringTrialOfferCard)
+// Module 18917 (useShouldShowExpiringTrialOfferCard)
 import useStateFromStores from "useStateFromStores" /* 563 */;
-import Constants from "Constants" /* 1072 */;
-import DurationsDefault from "Durations" /* 1089 */;
-import PremiumConstants from "PremiumConstants" /* 1390 */;
-import usePremiumTrialOffer from "usePremiumTrialOffer" /* 9310 */;
-import useCountdownDefault from "useCountdown" /* 9440 */;
-import NoticeStore from "NoticeStore" /* 16226 */;
+import Constants from "Constants" /* 1071 */;
+import DurationsDefault from "Durations" /* 1088 */;
+import PremiumConstants from "PremiumConstants" /* 1388 */;
+import usePremiumTrialOffer from "usePremiumTrialOffer" /* 8859 */;
+import useCountdownDefault from "useCountdown" /* 8956 */;
+import NoticeStore from "NoticeStore" /* 14999 */;
 import size from "module_2" /* 2 */;
 
 const NoticeTypes = Constants.NoticeTypes;

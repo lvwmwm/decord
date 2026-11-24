@@ -1,22 +1,22 @@
-// Module ID: 9141
-// Function ID: 9142
+// Module ID: 8651
+// Function ID: 8652
 // Name: ConversationNavigatorMoreMenu
-// Dependencies: [19, 17, 9122, 21, 5306, 575, 504, 1113, 9142, 9121, 9124, 6004, 9144, 6019, 7943, 9146, 9148, 7988, 7420, 2]
+// Dependencies: [19, 17, 8632, 21, 4913, 575, 504, 1112, 8652, 8631, 8634, 5594, 8654, 5609, 7545, 8656, 8658, 7591, 7022, 2]
 // Exports: default
 
-// Module 9141 (ConversationNavigatorMoreMenu)
+// Module 8651 (ConversationNavigatorMoreMenu)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import intl4 from "intl" /* 1113 */;
-import LinkIcon from "LinkIcon" /* 6019 */;
-import MoreHorizontalIcon from "MoreHorizontalIcon" /* 7420 */;
-import IconButton2 from "IconButton" /* 7988 */;
-import ThumbsUpIcon from "ThumbsUpIcon" /* 9142 */;
-import ThumbsDownIcon from "ThumbsDownIcon" /* 9144 */;
+import intl4 from "intl" /* 1112 */;
+import LinkIcon from "LinkIcon" /* 5609 */;
+import MoreHorizontalIcon from "MoreHorizontalIcon" /* 7022 */;
+import IconButton2 from "IconButton" /* 7591 */;
+import ThumbsUpIcon from "ThumbsUpIcon" /* 8652 */;
+import ThumbsDownIcon from "ThumbsDownIcon" /* 8654 */;
 import react_mod from "react" /* 19 */;
-import SelectedConversationStore from "SelectedConversationStore" /* 9122 */;
-import createStyles from "createStyles" /* 5306 */;
+import SelectedConversationStore from "SelectedConversationStore" /* 8632 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -99,7 +99,7 @@ export default function ConversationNavigatorMoreMenu(channelId) {
           }
       };
       const arraySpreadResult = HermesBuiltin.arraySpread(items1, items, 0);
-      intl3 = tmp2(1113).intl;
+      intl3 = tmp2(1112).intl;
       items1[arraySpreadResult] = obj3;
       tmp4 = items1;
     }

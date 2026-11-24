@@ -1,16 +1,16 @@
-// Module ID: 13479
-// Function ID: 13480
+// Module ID: 13012
+// Function ID: 13013
 // Name: useIsPrimaryEntryPointDisabled
-// Dependencies: [2143, 12780, 13391, 7864, 5974, 1380, 1113, 2]
+// Dependencies: [2142, 10709, 12925, 7466, 5564, 1378, 1112, 2]
 // Exports: default
 
-// Module 13479 (useIsPrimaryEntryPointDisabled)
-import PlatformUtils from "PlatformUtils" /* 1380 */;
-import getPlatformDefault from "getPlatform" /* 5974 */;
-import ActivitiesInTextUtils from "ActivitiesInTextUtils" /* 7864 */;
-import getEmbeddedActivityLaunchability from "getEmbeddedActivityLaunchability" /* 12780 */;
-import useActivityShelfItem from "useActivityShelfItem" /* 13391 */;
-import ApplicationRecord from "ApplicationRecord" /* 2143 */;
+// Module 13012 (useIsPrimaryEntryPointDisabled)
+import PlatformUtils from "PlatformUtils" /* 1378 */;
+import getPlatformDefault from "getPlatform" /* 5564 */;
+import ActivitiesInTextUtils from "ActivitiesInTextUtils" /* 7466 */;
+import getEmbeddedActivityLaunchability from "getEmbeddedActivityLaunchability" /* 10709 */;
+import useActivityShelfItem from "useActivityShelfItem" /* 12925 */;
+import ApplicationRecord from "ApplicationRecord" /* 2142 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/app_launcher/hooks/useIsPrimaryEntryPointDisabled.tsx");
@@ -61,7 +61,7 @@ export default function useIsPrimaryEntryPointDisabled(arg0) {
           isGuildVoiceResult1 = channel.isGuildVoice();
         }
         if (isGuildVoiceResult1) {
-          flag = embeddedActivityLaunchability !== tmp2(12780).EmbeddedActivityLaunchability.CAN_LAUNCH;
+          flag = embeddedActivityLaunchability !== tmp2(10709).EmbeddedActivityLaunchability.CAN_LAUNCH;
         } else {
           flag = false;
           const tmp2Result3 = ActivitiesInTextUtils;
@@ -81,16 +81,16 @@ export default function useIsPrimaryEntryPointDisabled(arg0) {
     const tmp12Result = tmp12(tmp2Result4.getOS());
     if (flag) {
       if (embeddedActivityLaunchability === getEmbeddedActivityLaunchability.EmbeddedActivityLaunchability.CHANNEL_CONTENT_GATED) {
-        const intl3 = tmp2(1113).intl;
-        reason = intl3.string(tmp2(1113).t.pKLV22);
+        const intl3 = tmp2(1112).intl;
+        reason = intl3.string(tmp2(1112).t.pKLV22);
         disabled = flag;
       }
     }
     if (null != tmp10) {
       const supported_platforms = tmp10.supported_platforms;
       if (!supported_platforms.includes(tmp12Result)) {
-        const intl = tmp2(1113).intl;
-        reason = intl.string(tmp2(1113).t.z2YTgJ);
+        const intl = tmp2(1112).intl;
+        reason = intl.string(tmp2(1112).t.z2YTgJ);
         disabled = false;
       }
     }
@@ -100,15 +100,15 @@ export default function useIsPrimaryEntryPointDisabled(arg0) {
     }
     disabled = flag;
     if (isThreadResult) {
-      const intl2 = tmp2(1113).intl;
-      reason = intl2.string(tmp2(1113).t.ddSR3v);
+      const intl2 = tmp2(1112).intl;
+      reason = intl2.string(tmp2(1112).t.ddSR3v);
       disabled = true;
     }
   }
   const tmp15 = disabled && null == reason;
   if (tmp15) {
-    const intl4 = tmp2(1113).intl;
-    reason = intl4.string(tmp2(1113).t.f41E1g);
+    const intl4 = tmp2(1112).intl;
+    reason = intl4.string(tmp2(1112).t.f41E1g);
   }
   return { disabled, reason };
 };

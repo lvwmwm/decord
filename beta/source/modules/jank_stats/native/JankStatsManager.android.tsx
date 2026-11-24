@@ -1,14 +1,14 @@
-// Module ID: 20300
-// Function ID: 20301
+// Module ID: 19554
+// Function ID: 19555
 // Name: JankStatsManager
-// Dependencies: [1072, 7882, 20301, 1256, 8678, 2]
+// Dependencies: [1071, 7484, 19555, 1255, 8268, 2]
 
-// Module 20300 (JankStatsManager)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 8678 */;
-import react_nativeDefault from "react-native" /* 20301 */;
-import Constants from "Constants" /* 1072 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;
+// Module 19554 (JankStatsManager)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 8268 */;
+import react_nativeDefault from "react-native" /* 19555 */;
+import Constants from "Constants" /* 1071 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7484 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -75,7 +75,7 @@ class JankStatsManager extends AutomaticLifecycleManager {
     const tmp4 = 0 === report.totalFrameCount && 0 === report.frameMetricsTotalFrameCount;
     if (!tmp4) {
       const obj4 = { version: 2, trigger: background };
-      const track = tmp(1256).track;
+      const track = tmp(1255).track;
       const ANDROID_JANK_STATS = constants2.ANDROID_JANK_STATS;
       AnalyticsUtilsDefault;
       const obj3 = TTIAnalyticsUtils;

@@ -9,12 +9,11 @@ import UNKNOWN_FUNCTION from "UNKNOWN_FUNCTION" /* 697 */;
 const require = globalThis.__r;
 let _require, closure_2, closure_5;
 
-function getFilenameToDebugIdMap(arg0) {
-  let closure_0;
+function getFilenameToDebugIdMap(stackParser) {
   let keys;
   let keys1;
   let length;
-  _require = arg0;
+  _require = stackParser;
   const _sentryDebugIds = require("module_685").GLOBAL_OBJ._sentryDebugIds;
   const _debugIds = require("module_685").GLOBAL_OBJ._debugIds;
   if (!_sentryDebugIds) {
@@ -79,7 +78,7 @@ function getFilenameToDebugIdMap(arg0) {
       }
       let tmp10 = tmp3;
       if (tmp10) {
-        let arr = closure_0(tmp2);
+        let arr = stackParser(tmp2);
         let diff = arr.length - 1;
         let tmp15 = diff;
         if (0 <= diff) {
@@ -121,11 +120,11 @@ function getFilenameToDebugIdMap(arg0) {
 }
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export function getDebugImagesForResources(arg0, arg1) {
-  const tmp = getFilenameToDebugIdMap(arg0);
+export function getDebugImagesForResources(stackParser, resources) {
+  const tmp = getFilenameToDebugIdMap(stackParser);
   const items = [];
   if (tmp) {
-    const iter = arg1[Symbol.iterator]();
+    const iter = resources[Symbol.iterator]();
     const nextResult = iter.next();
     while (iter !== undefined) {
       let tmp7 = nextResult;

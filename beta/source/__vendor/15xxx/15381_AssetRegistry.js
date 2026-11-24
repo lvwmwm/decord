@@ -1,10 +1,10 @@
 // Module ID: 15381
 // Function ID: 15382
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 15381 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/guild_boosting", width: 420, height: 112, scales: [1, 2, 3], hash: "f08d67e9827cdce1fe3b9851e7c6b005", name: "subscription_placeholder_pattern_light", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "727899a26eec90f323c88c339b15535a", name: "ic_radio_square_24px", type: "png" });

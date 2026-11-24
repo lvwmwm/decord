@@ -1,19 +1,19 @@
-// Module ID: 16487
-// Function ID: 16488
+// Module ID: 15275
+// Function ID: 15276
 // Name: ToastContainer
-// Dependencies: [32, 19, 17, 21, 575, 1655, 5306, 5538, 5372, 1708, 16483, 16488, 6265, 2]
+// Dependencies: [32, 19, 17, 21, 575, 1653, 4913, 5123, 4979, 1706, 15271, 15276, 5867, 2]
 // Exports: ToastContainer
 
-// Module 16487 (ToastContainer)
+// Module 15275 (ToastContainer)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import TransitionGroup_TransitionGroup from "TransitionGroup/TransitionGroup" /* 5372 */;
-import OverlayViewDefault from "OverlayView" /* 6265 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import TransitionGroup_TransitionGroup from "TransitionGroup/TransitionGroup" /* 4979 */;
+import OverlayViewDefault from "OverlayView" /* 5867 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let _undefined2, _undefined3, tmp4, tmp5, tmp6;
@@ -201,7 +201,7 @@ const jsx = Fragment.jsx;
 let obj = { HIDDEN: 0, [0]: "HIDDEN", VISIBLE: 1, [1]: "VISIBLE" };
 let items = [, ];
 ({ HIDDEN: arr[0], VISIBLE: arr[1] } = obj);
-let obj2 = { duration: ANIMATION_DURATION_MS.resolve({}), easing: _mod1655.Easing.linear };
+let obj2 = { duration: ANIMATION_DURATION_MS.resolve({}), easing: _mod1653.Easing.linear };
 ANIMATION_DURATION_MS = nativeDefault.modules.toast.ANIMATION_DURATION_MS;
 const QUEUE_ENTER_DELAY_MS = nativeDefault.modules.toast.QUEUE_ENTER_DELAY_MS;
 let closure_11 = QUEUE_ENTER_DELAY_MS.resolve({});
@@ -316,7 +316,7 @@ export function ToastContainer(surface) {
     let tmpResult = tmp2;
     const tmp = jsx;
     if (flag) {
-      const obj3 = { pointerEvents: "box-none", style: StyleSheet.absoluteFill, children: tmp2 };
+      const obj3 = { pointerEvents: "box-none", style: StyleSheet.absoluteFill, unstable_accessibilityContainerViewIsModal: false, children: tmp2 };
       tmpResult = tmp(OverlayViewDefault, obj3);
     }
     return tmpResult;

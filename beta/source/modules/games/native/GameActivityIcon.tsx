@@ -1,18 +1,18 @@
-// Module ID: 10653
-// Function ID: 10654
+// Module ID: 9742
+// Function ID: 9743
 // Name: GameActivityIcon
-// Dependencies: [19, 17, 21, 5306, 575, 5367, 8375, 5313, 6010, 1414, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 4974, 7977, 4920, 5600, 1412, 2]
 
-// Module 10653 (GameActivityIcon)
+// Module 9742 (GameActivityIcon)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import AvatarUtils from "AvatarUtils" /* 1414 */;
-import shared from "shared" /* 5313 */;
-import native from "native" /* 5367 */;
-import FastImageDefault from "FastImage" /* 6010 */;
+import AvatarUtils from "AvatarUtils" /* 1412 */;
+import shared from "shared" /* 4920 */;
+import native from "native" /* 4974 */;
+import FastImageDefault from "FastImage" /* 5600 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -51,7 +51,7 @@ const memoResult = react.memo(function GameActivityIcon(style) {
     } else {
       const obj2 = { size: "custom", style: items1, color: isThemeDarkResult ? colors.WHITE : colors.BLACK };
       items1 = [tmp.icon, size1];
-      const UnknownGameIcon = tmp2(8375).UnknownGameIcon;
+      const UnknownGameIcon = tmp2(7977).UnknownGameIcon;
       const tmp2Result = shared;
       isThemeDarkResult = tmp2Result.isThemeDark(theme);
       colors = nativeDefault.colors;

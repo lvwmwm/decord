@@ -1,10 +1,10 @@
 // Module ID: 9334
 // Function ID: 9335
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 9334 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "a333b4d54b908efbf29afe6221422e97", name: "GifIcon", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/illustrations", width: 51, height: 36, scales: [2, 3], hash: "d8a20104f4217083a13e0ca284c4bad2", name: "img_premium_resubscribe_mobile", type: "png" });

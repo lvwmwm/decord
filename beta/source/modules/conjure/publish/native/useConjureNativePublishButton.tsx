@@ -1,22 +1,20 @@
-// Module ID: 13147
-// Function ID: 13148
+// Module ID: 18246
+// Function ID: 18247
 // Name: useConjureNativePublishButton
-// Dependencies: [19, 7017, 13148, 13150, 13162, 6005, 504, 7055, 13163, 5315, 2]
+// Dependencies: [6621, 12314, 18247, 18249, 5595, 504, 6659, 18250, 2]
 // Exports: default
 
-// Module 13147 (useConjureNativePublishButton)
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5315 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 6005 */;
-import ConjurePublishBlockedSheetDefault from "ConjurePublishBlockedSheet" /* 13148 */;
-import ConjureSafetyHoldSheetDefault from "ConjureSafetyHoldSheet" /* 13150 */;
-import ConjurePublishDestinationSheetDefault from "ConjurePublishDestinationSheet" /* 13162 */;
-import useConjurePublishButtonDefault from "useConjurePublishButton" /* 13163 */;
-import react from "react" /* 19 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 7017 */;
+// Module 18246 (useConjureNativePublishButton)
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5595 */;
+import ConjurePublishBlockedSheetDefault from "ConjurePublishBlockedSheet" /* 12314 */;
+import ConjureSafetyHoldSheetDefault from "ConjureSafetyHoldSheet" /* 18247 */;
+import ConjurePublishDestinationSheetDefault from "ConjurePublishDestinationSheet" /* 18249 */;
+import useConjurePublishButtonDefault from "useConjurePublishButton" /* 18250 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6621 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, importDefault;
+let _require;
 
 let obj = {
   showPublishBlocked: ConjurePublishBlockedSheetDefault,
@@ -26,17 +24,20 @@ let obj = {
     obj = ToastActionCreatorsDefault;
     const obj2 = { text, variant: "critical" };
     return obj.open("CONJURE_PUBLISH_FAILED", obj2);
+  },
+  showConfirmation(intl) {
+    obj = ToastActionCreatorsDefault;
+    const obj2 = { text: intl, variant: "success" };
+    return obj.open("CONJURE_PUBLISH_SUCCEEDED", obj2);
   }
 };
 const result = size.fileFinishedImporting("modules/conjure/publish/native/useConjureNativePublishButton.tsx");
 
 export default function useConjureNativePublishButton(arg0, arg1) {
   let closure_0;
-  let confirmation;
   let integrationStatusChecked;
   let previewAppId;
   _require = arg0;
-  const tmp = dependencyMap;
   obj = require("get initialized");
   const items = [ConjureProjectStore];
   const items1 = [arg0];
@@ -55,21 +56,12 @@ export default function useConjureNativePublishButton(arg0, arg1) {
   }, items1);
   ({ integrationStatusChecked, previewAppId } = stateFromStoresObject);
   const useApplication = require("ApplicationActionCreators").useApplication;
-  const tmp3 = require("ApplicationActionCreators");
+  require("ApplicationActionCreators");
   const isLoading = useApplication(previewAppId).isLoading;
   let tmp5 = !integrationStatusChecked;
   const tmp4 = useConjurePublishButtonDefault;
   if (integrationStatusChecked) {
     tmp5 = isLoading;
   }
-  const tmp4Result = tmp4(arg0, arg1, tmp5, obj);
-  importDefault = tmp4Result;
-  const items2 = [tmp4Result.confirmation];
-  const effect = react.useEffect(() => {
-    if (null != confirmation.confirmation) {
-      const AccessibilityAnnouncer = AccessibilityAnnouncer2.AccessibilityAnnouncer;
-      AccessibilityAnnouncer.announce(tmp.confirmation, "polite");
-    }
-  }, items2);
-  return tmp4Result;
+  return tmp4(arg0, arg1, tmp5, obj);
 };

@@ -1,17 +1,17 @@
-// Module ID: 17371
-// Function ID: 17372
+// Module ID: 16139
+// Function ID: 16140
 // Name: useDerivedDMSpamFilterSetting
-// Dependencies: [1388, 5133, 5131, 504, 5985, 5993, 1196, 2]
+// Dependencies: [1386, 4740, 4738, 504, 5575, 5583, 1195, 2]
 // Exports: useDerivedDmSpamFilterSettingValue
 
-// Module 17371 (useDerivedDMSpamFilterSetting)
+// Module 16139 (useDerivedDMSpamFilterSetting)
 import get_initialized from "get initialized" /* 504 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
-import UserSettings from "UserSettings" /* 5131 */;
-import DMSafetyConstants from "DMSafetyConstants" /* 5133 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5985 */;
-import SettingsDefaultFeature from "SettingsDefaultFeature" /* 5993 */;
-import UserStore from "UserStore" /* 1388 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1195 */;
+import UserSettings from "UserSettings" /* 4738 */;
+import DMSafetyConstants from "DMSafetyConstants" /* 4740 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5575 */;
+import SettingsDefaultFeature from "SettingsDefaultFeature" /* 5583 */;
+import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 
 let closure_3 = DMSafetyConstants.ExplicitContentFilterToDmSpamFilterV2;
@@ -36,13 +36,13 @@ export function useDerivedDmSpamFilterSettingValue() {
     }
     if (false === nsfwAllowed) {
       if (isSettingTeenByDefault) {
-        NON_FRIENDS = tmp(1196).DmSpamFilterV2.FRIENDS_AND_NON_FRIENDS;
+        NON_FRIENDS = tmp(1195).DmSpamFilterV2.FRIENDS_AND_NON_FRIENDS;
       }
       setting = NON_FRIENDS;
     }
     NON_FRIENDS = closure_3.get(setting1);
     if (NON_FRIENDS == null) {
-      NON_FRIENDS = tmp(1196).DmSpamFilterV2.NON_FRIENDS;
+      NON_FRIENDS = tmp(1195).DmSpamFilterV2.NON_FRIENDS;
     }
   }
   return setting;

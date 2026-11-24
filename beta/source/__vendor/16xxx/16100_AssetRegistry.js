@@ -1,10 +1,10 @@
 // Module ID: 16100
 // Function ID: 16101
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 16100 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/video_calls/native/images", width: 24, height: 24, scales: [2, 3], hash: "cc65a5f47aada2d48ca57f930a5ac833", name: "camera", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Illustration/native/redesign/generated/images", width: 433, height: 231, scales: [2, 3], hash: "a255589f0ef23e06a175ac0fc6767b9f", name: "blocked_darker", type: "png" });

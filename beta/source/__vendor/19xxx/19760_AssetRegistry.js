@@ -1,10 +1,10 @@
 // Module ID: 19760
 // Function ID: 19761
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 19760 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/empties", width: 414.5, height: 200, scales: [2, 3], hash: "98918a2680690cf1174a4749a18c1a4a", name: "pending_dark", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "93179a968b4cfa174507b1708e979f98", name: "HomeIcon", type: "png" });

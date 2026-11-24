@@ -1,43 +1,43 @@
-// Module ID: 16894
-// Function ID: 16895
+// Module ID: 15648
+// Function ID: 15649
 // Name: SystemTelecomManager
-// Dependencies: [5, 32, 17, 6790, 5159, 502, 5155, 2133, 6061, 5248, 5209, 1388, 5971, 6064, 1072, 6065, 3, 16895, 572, 16896, 1256, 6057, 7937, 6925, 11, 8136, 6215, 8858, 1269, 16897, 5944, 8134, 1380, 2123, 2]
+// Dependencies: [5, 32, 17, 6394, 4766, 502, 4762, 2131, 5654, 4855, 4816, 1386, 5561, 5657, 1071, 5658, 3, 15649, 572, 15650, 1255, 5650, 7539, 6529, 11, 7739, 5809, 8453, 1268, 15651, 5529, 7737, 1378, 2121, 2]
 
-// Module 16894 (SystemTelecomManager)
+// Module 15648 (SystemTelecomManager)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import react_native from "react-native" /* 17 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import v1 from "v1" /* 1269 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
-import ChannelRecord from "ChannelRecord" /* 5159 */;
-import useChannelName from "useChannelName" /* 5944 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6057 */;
-import AudioActionCreatorsDefault from "AudioActionCreators" /* 6215 */;
-import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6925 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 8134 */;
-import CallActionCreatorsDefault from "CallActionCreators" /* 8136 */;
-import RequestGatewaySocketAll from "RequestGatewaySocket" /* 8858 */;
-import SystemTelecomPlatform from "SystemTelecomPlatform" /* 16896 */;
-import SystemTelecomUtils from "SystemTelecomUtils" /* 16897 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import v1 from "v1" /* 1268 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
+import ChannelRecord from "ChannelRecord" /* 4766 */;
+import useChannelName from "useChannelName" /* 5529 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5650 */;
+import AudioActionCreatorsDefault from "AudioActionCreators" /* 5809 */;
+import SelectedChannelActionCreatorsDefault from "SelectedChannelActionCreators" /* 6529 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7539 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7737 */;
+import CallActionCreatorsDefault from "CallActionCreators" /* 7739 */;
+import RequestGatewaySocketAll from "RequestGatewaySocket" /* 8453 */;
+import SystemTelecomPlatform from "SystemTelecomPlatform" /* 15650 */;
+import SystemTelecomUtils from "SystemTelecomUtils" /* 15651 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6790 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6394 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import MediaEngineStore from "MediaEngineStore" /* 2133 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 6061 */;
-import RelationshipStore from "RelationshipStore" /* 5248 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
-import UserStore from "UserStore" /* 1388 */;
-import VoiceStateStore from "VoiceStateStore" /* 5971 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 6064 */;
-import Constants_mod from "Constants" /* 1072 */;
-import Constants_mod2 from "Constants" /* 6065 */;
-import react_native2 from "react-native" /* 16895 */;
-import LifecycleManager from "LifecycleManager" /* 2123 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import MediaEngineStore from "MediaEngineStore" /* 2131 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5654 */;
+import RelationshipStore from "RelationshipStore" /* 4855 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4816 */;
+import UserStore from "UserStore" /* 1386 */;
+import VoiceStateStore from "VoiceStateStore" /* 5561 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5657 */;
+import Constants_mod from "Constants" /* 1071 */;
+import Constants_mod2 from "Constants" /* 5658 */;
+import react_native2 from "react-native" /* 15649 */;
+import LifecycleManager from "LifecycleManager" /* 2121 */;
 import size from "module_2" /* 2 */;
 
 let c3, c5;
@@ -342,6 +342,17 @@ class SystemTelecomManager {
         }
       }
     };
+    obj.handleCallStopRingingSelf = function handleCallStopRingingSelf(channelId) {
+      channelId = channelId.channelId;
+      const ringing = null != tmp && "incoming" === tmp.direction && tmp.ringing && !tmp.connected;
+      if (ringing) {
+        delete obj.calls[channelId];
+        const result = obj.updateActiveCallStatus();
+        const result1 = obj.clearReportCallEndedTimeout(tmp.uuid);
+        const obj2 = react_native;
+        obj2.endCall(obj.calls[channelId].uuid);
+      }
+    };
     obj.handleCallDelete = function handleCallDelete(arg0) {
       let deletable;
       if (obj.calls[arg0.channelId] != null) {
@@ -454,35 +465,37 @@ class SystemTelecomManager {
     const obj6 = DispatcherDefault;
     const subscription5 = obj6.subscribe("CALL_DELETE", this.handleCallDelete);
     const obj7 = DispatcherDefault;
-    const subscription6 = obj7.subscribe("CHANNEL_DELETE", this.handleChannelDelete);
+    const subscription6 = obj7.subscribe("CALL_STOP_RINGING_SELF", this.handleCallStopRingingSelf);
     const obj8 = DispatcherDefault;
-    const subscription7 = obj8.subscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect);
+    const subscription7 = obj8.subscribe("CHANNEL_DELETE", this.handleChannelDelete);
     const obj9 = DispatcherDefault;
-    const subscription8 = obj9.subscribe("VOICE_STATE_UPDATES", this.handleVoiceStateUpdates);
+    const subscription8 = obj9.subscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect);
     const obj10 = DispatcherDefault;
-    const subscription9 = obj10.subscribe("AUDIO_TOGGLE_SELF_MUTE", this.handleAudioToggleSelfMute);
+    const subscription9 = obj10.subscribe("VOICE_STATE_UPDATES", this.handleVoiceStateUpdates);
     const obj11 = DispatcherDefault;
-    const subscription10 = obj11.subscribe("RTC_CONNECTION_STATE", this.handleRTCConnectionState);
+    const subscription10 = obj11.subscribe("AUDIO_TOGGLE_SELF_MUTE", this.handleAudioToggleSelfMute);
+    const obj12 = DispatcherDefault;
+    const subscription11 = obj12.subscribe("RTC_CONNECTION_STATE", this.handleRTCConnectionState);
     const emitterSubscriptions = this.emitterSubscriptions;
     const push = emitterSubscriptions.push;
     const items = [...SystemTelecomPlatform.subscribeToCallPushToken()];
     SystemTelecomPlatform;
-    const obj13 = react_native;
-    items[tmp12] = obj13.onIncomingCall(this.handleIncomingCall);
-    const sum = tmp12 + 1;
     const obj14 = react_native;
-    items[sum] = obj14.onIncomingCallEnded(this.handleIncomingCallEnded);
-    const sum1 = sum + 1;
+    items[tmp13] = obj14.onIncomingCall(this.handleIncomingCall);
+    const sum = tmp13 + 1;
     const obj15 = react_native;
-    items[sum1] = obj15.onSystemStartCall(this.handleSystemStartCall);
-    const sum2 = sum1 + 1;
+    items[sum] = obj15.onIncomingCallEnded(this.handleIncomingCallEnded);
+    const sum1 = sum + 1;
     const obj16 = react_native;
-    items[sum2] = obj16.onSystemAnswerCall(this.handleSystemAnswerCall);
-    const sum3 = sum2 + 1;
+    items[sum1] = obj16.onSystemStartCall(this.handleSystemStartCall);
+    const sum2 = sum1 + 1;
     const obj17 = react_native;
-    items[sum3] = obj17.onSystemEndCall(this.handleSystemEndCall);
+    items[sum2] = obj17.onSystemAnswerCall(this.handleSystemAnswerCall);
+    const sum3 = sum2 + 1;
     const obj18 = react_native;
-    items[sum3 + 1] = obj18.onSystemSetMuted(this.handleSystemSetMuted);
+    items[sum3] = obj18.onSystemEndCall(this.handleSystemEndCall);
+    const obj19 = react_native;
+    items[sum3 + 1] = obj19.onSystemSetMuted(this.handleSystemSetMuted);
     push.apply(items);
   }
   terminate() {
@@ -499,22 +512,24 @@ class SystemTelecomManager {
     const obj6 = DispatcherDefault;
     obj6.unsubscribe("CALL_DELETE", this.handleCallDelete);
     const obj7 = DispatcherDefault;
-    obj7.unsubscribe("CHANNEL_DELETE", this.handleChannelDelete);
+    obj7.unsubscribe("CALL_STOP_RINGING_SELF", this.handleCallStopRingingSelf);
     const obj8 = DispatcherDefault;
-    obj8.unsubscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect);
+    obj8.unsubscribe("CHANNEL_DELETE", this.handleChannelDelete);
     const obj9 = DispatcherDefault;
-    obj9.unsubscribe("VOICE_STATE_UPDATES", this.handleVoiceStateUpdates);
+    obj9.unsubscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect);
     const obj10 = DispatcherDefault;
-    obj10.unsubscribe("AUDIO_TOGGLE_SELF_MUTE", this.handleAudioToggleSelfMute);
+    obj10.unsubscribe("VOICE_STATE_UPDATES", this.handleVoiceStateUpdates);
     const obj11 = DispatcherDefault;
-    obj11.unsubscribe("RTC_CONNECTION_STATE", this.handleRTCConnectionState);
+    obj11.unsubscribe("AUDIO_TOGGLE_SELF_MUTE", this.handleAudioToggleSelfMute);
+    const obj12 = DispatcherDefault;
+    obj12.unsubscribe("RTC_CONNECTION_STATE", this.handleRTCConnectionState);
     const emitterSubscriptions = this.emitterSubscriptions;
     const item = emitterSubscriptions.forEach((remove) => remove.remove());
     this.emitterSubscriptions = [];
   }
-  clearReportCallEndedTimeout(callId) {
-    clearTimeout(this.reportCallEndedTimeouts[callId]);
-    delete this.reportCallEndedTimeouts[callId];
+  clearReportCallEndedTimeout(uuid) {
+    clearTimeout(this.reportCallEndedTimeouts[uuid]);
+    delete this.reportCallEndedTimeouts[uuid];
   }
   findCall(callId) {
     const values = Object.values(this.calls);
@@ -759,14 +774,14 @@ class SystemTelecomManager {
       }
     }
   }
-  reportCallEnded(callId, arg1) {
+  reportCallEnded(uuid, arg1) {
     const self = this;
-    const result = this.clearReportCallEndedTimeout(callId);
+    const result = this.clearReportCallEndedTimeout(uuid);
     obj = react_native;
-    obj.reportCallEnded(callId);
+    obj.reportCallEnded(uuid);
     if (null != arg1) {
       delete self.calls[arg1];
-      if (self.incomingCalls[arg1] === callId) {
+      if (self.incomingCalls[arg1] === uuid) {
         delete self.incomingCalls[arg1];
       }
       const result1 = self.updateActiveCallStatus();

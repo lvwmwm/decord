@@ -1,22 +1,22 @@
-// Module ID: 8705
-// Function ID: 8706
+// Module ID: 8295
+// Function ID: 8296
 // Name: MemberSafetySupplementalUtils
-// Dependencies: [5, 1072, 1113, 7087, 8706, 5537, 5313, 1285, 2]
+// Dependencies: [5, 1071, 1112, 6691, 8296, 5122, 4920, 1284, 2]
 // Exports: fetchMemberSupplemental, getIntegrationLabel, getJoinSourceTypeLabel, registerFetchedSupplementals, useGetIntegrationIconString
 
-// Module 8705 (MemberSafetySupplementalUtils)
-import Constants from "Constants" /* 1072 */;
-import intl11 from "intl" /* 1113 */;
-import HTTPUtils from "HTTPUtils" /* 1285 */;
-import PlatformsDefault from "Platforms" /* 7087 */;
-import ConnectionsHooks from "ConnectionsHooks" /* 8706 */;
+// Module 8295 (MemberSafetySupplementalUtils)
+import Constants from "Constants" /* 1071 */;
+import intl11 from "intl" /* 1112 */;
+import HTTPUtils from "HTTPUtils" /* 1284 */;
+import PlatformsDefault from "Platforms" /* 6691 */;
+import ConnectionsHooks from "ConnectionsHooks" /* 8296 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
 let c6, c7;
 
 let tmp3;
-const shared = tmp3(5313);
+const shared = tmp3(4920);
 function createFetchKeys(arg0, arr) {
   let closure_0 = arg0;
   return arr.map((item) => closure_0 + item);

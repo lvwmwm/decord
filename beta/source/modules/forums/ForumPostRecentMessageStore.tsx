@@ -1,16 +1,16 @@
-// Module ID: 11146
-// Function ID: 11147
+// Module ID: 11215
+// Function ID: 11216
 // Name: ForumPostRecentMessageStore
-// Dependencies: [5155, 1388, 11, 6364, 1255, 504, 572, 2]
+// Dependencies: [4762, 1386, 11, 5966, 1254, 504, 572, 2]
 
-// Module 11146 (ForumPostRecentMessageStore)
+// Module 11215 (ForumPostRecentMessageStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import GlobalUtils from "GlobalUtils" /* 1255 */;
-import MessageRecordUtils from "MessageRecordUtils" /* 6364 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import UserStore from "UserStore" /* 1388 */;
+import GlobalUtils from "GlobalUtils" /* 1254 */;
+import MessageRecordUtils from "MessageRecordUtils" /* 5966 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 
 let closure_5;

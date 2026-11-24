@@ -1,13 +1,13 @@
-// Module ID: 18589
-// Function ID: 18590
+// Module ID: 17385
+// Function ID: 17386
 // Name: DoubleTapToReactSetting
-// Dependencies: [9202, 12408, 1113, 5131, 2]
+// Dependencies: [8712, 11937, 1112, 4738, 2]
 
-// Module 18589 (DoubleTapToReactSetting)
-import intl2 from "intl" /* 1113 */;
-import UserSettings from "UserSettings" /* 5131 */;
-import SettingsConstants from "SettingsConstants" /* 9202 */;
-import SettingBuilders from "SettingBuilders" /* 12408 */;
+// Module 17385 (DoubleTapToReactSetting)
+import intl2 from "intl" /* 1112 */;
+import UserSettings from "UserSettings" /* 4738 */;
+import SettingsConstants from "SettingsConstants" /* 8712 */;
+import SettingBuilders from "SettingBuilders" /* 11937 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

@@ -1,16 +1,16 @@
-// Module ID: 18325
-// Function ID: 18326
+// Module ID: 14606
+// Function ID: 14607
 // Name: CheckpointMockData
-// Dependencies: [14256, 2]
+// Dependencies: [12129, 2]
 
-// Module 18325 (CheckpointMockData)
-import CheckpointAvailability from "CheckpointAvailability" /* 14256 */;
+// Module 14606 (CheckpointMockData)
+import CheckpointAvailability from "CheckpointAvailability" /* 12129 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
 let obj3;
 let obj4;
-const obj = { FAKE_DATA: obj2, GLOBAL_STATS: { stats: null, character: null, didPlayerShareDataWithDiscord: false }, ZERO_STATS: obj3, UNAVAILABLE: { availability: CheckpointAvailability.CheckpointAvailability.UNAVAILABLE }, NO_CHARACTER: { availability: CheckpointAvailability.CheckpointAvailability.NO_CHARACTER }, COMPACT_ASSETS: { compactAssets: true } };
+const obj = { FAKE_DATA: obj2, GLOBAL_STATS: { stats: null, character: null }, ZERO_STATS: obj3, UNAVAILABLE: { availability: CheckpointAvailability.CheckpointAvailability.UNAVAILABLE }, NO_CHARACTER: { availability: CheckpointAvailability.CheckpointAvailability.NO_CHARACTER }, COMPACT_ASSETS: { compactAssets: true } };
 obj3 = { stats: obj4, character: null };
 obj2 = { stats: { voice: { totalVoiceMinutes: 54423, totalVoiceMinutesPercentile: 92 } }, character: null };
 obj4 = { voice: { totalVoiceMinutes: 0, totalVoiceMinutesPercentile: 0 }, messages: { numMessagesSent: 0, numMessagesSentPercentile: 0 }, guilds: { guilds: [] }, emojis: { numEmojisSent: 0, numEmojisSentPercentile: 0, emojis: [] }, games: { totalGamesPlayed: 0, totalGamesPlayedPercentile: 0, games: [], totalDaysPlayed: 0, totalDaysPlayedPercentile: 0 }, sidekick: null, users: [], power: { powerLevel: 0, powerLevelPercentile: 0 } };

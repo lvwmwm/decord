@@ -1,11 +1,11 @@
-// Module ID: 14430
-// Function ID: 14431
+// Module ID: 12669
+// Function ID: 12670
 // Dependencies: [2]
 
-// Module 14430
+// Module 12669
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_outfit_13_knight_glacier.webp.js");
 
-export default "https://cdn.discordapp.com/assets/content/9fd7b1d11a9a189a75aee3b505b7232db5ef4acb0954528a1ca0e83ffbb7fe5f.webp";
-export const metadata = { fileBytes: 35990 };
+export default "https://cdn.discordapp.com/assets/content/4b896a993bcc24782124d8661c74174149cffc035e5abaad20d6d7b736875c1e.webp";
+export const metadata = { fileBytes: 93862 };

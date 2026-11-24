@@ -1,18 +1,17 @@
-// Module ID: 11678
-// Function ID: 11679
+// Module ID: 9482
+// Function ID: 9483
 // Name: GiftingBadgesUtils
-// Dependencies: [19, 8547, 1388, 1113, 2797, 11673, 11679, 504, 5338, 5139, 8480, 8552, 2]
-// Exports: getGiftingBadgeAccessibilityLabel, getGiftingBadgeProgressPercent, getGiftingBadgeTierIconUrl, getIsGiftingBadgesDesktopEnabled, useGiftingBadgeCoachmarkVariant, useIsGiftingBadgesDesktopEnabled
+// Dependencies: [19, 8137, 1386, 1112, 2920, 9483, 504, 4945, 4746, 8070, 8142, 2]
+// Exports: getGiftingBadgeAccessibilityLabel, getGiftingBadgeProgressPercent, getGiftingBadgeTierIconUrl, useGiftingBadgeCoachmarkVariant
 
-// Module 11678 (GiftingBadgesUtils)
-import intl2 from "intl" /* 1113 */;
-import _modDef2797 from "module_2797" /* 2797 */;
-import BadgeId from "BadgeId" /* 8480 */;
-import BadgeDirectoryStore2 from "BadgeDirectoryStore" /* 8547 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8552 */;
-import GiftingBadgeExperiment2 from "GiftingBadgeExperiment" /* 11673 */;
+// Module 9482 (GiftingBadgesUtils)
+import intl2 from "intl" /* 1112 */;
+import _modDef2920 from "module_2920" /* 2920 */;
+import BadgeId from "BadgeId" /* 8070 */;
+import BadgeDirectoryStore2 from "BadgeDirectoryStore" /* 8137 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8142 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1388 */;
+import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -32,7 +31,7 @@ export function getGiftingBadgeAccessibilityLabel(name) {
     str = "";
   }
   const intl = intl2.intl;
-  return "" + str + ", " + intl.formatToPlainString(_modDef2797.qvx9E4, { count });
+  return "" + str + ", " + intl.formatToPlainString(_modDef2920.qvx9E4, { count });
 }
 export function getGiftingBadgeProgressPercent(badgeProgress, currentTier, nextTier) {
   let num3;
@@ -53,16 +52,6 @@ export function getGiftingBadgeProgressPercent(badgeProgress, currentTier, nextT
   }
   return Math.min(Math.max(num3, 0), 100);
 }
-export function useIsGiftingBadgesDesktopEnabled(location) {
-  const GiftingBadgeExperiment = GiftingBadgeExperiment2.GiftingBadgeExperiment;
-  const obj = { location };
-  return GiftingBadgeExperiment.useConfig(obj).enabled;
-}
-export function getIsGiftingBadgesDesktopEnabled(location) {
-  const GiftingBadgeExperiment = GiftingBadgeExperiment2.GiftingBadgeExperiment;
-  const obj = { location };
-  return GiftingBadgeExperiment.getConfig(obj).enabled;
-}
 export function getGiftingBadgeTierIconUrl(nextTier) {
   let prop;
   if (nextTier != null) {
@@ -77,33 +66,21 @@ export function getGiftingBadgeTierIconUrl(nextTier) {
   }
   return prop;
 }
-export function useGiftingBadgeCoachmarkVariant(arg0) {
-  let _location;
+export function useGiftingBadgeCoachmarkVariant(enabled) {
   let badgeById;
   let closure_0;
-  let enabled;
-  let str2;
-  ({ location: _location, enabled } = arg0);
-  if (enabled === undefined) {
-    enabled = true;
+  let str;
+  let flag = enabled.enabled;
+  const _location = enabled.location;
+  if (flag === undefined) {
+    flag = true;
   }
   _require = undefined;
-  let closure_1;
-  let tmp = _require;
-  let tmp2 = dependencyMap;
-  const GiftingBadgeExperiment = require("GiftingBadgeExperiment").GiftingBadgeExperiment;
-  let enabled2 = GiftingBadgeExperiment.useConfig({ location: _location }).enabled;
   const GiftingBadgeCoachmarkAudienceExperiment = require("GiftingBadgeCoachmarkAudienceExperiment").GiftingBadgeCoachmarkAudienceExperiment;
-  let str = "-DISABLED";
-  const useConfig = GiftingBadgeCoachmarkAudienceExperiment.useConfig;
-  if (enabled2) {
-    str = "";
-  }
-  let obj = { location: "" + _location + str };
-  const enabled3 = useConfig(obj).enabled;
+  enabled = GiftingBadgeCoachmarkAudienceExperiment.useConfig({ location: _location }).enabled;
+  let obj = require("get initialized");
   const items = [UserStore];
-  const tmpResult = tmp(504);
-  const stateFromStores = tmpResult.useStateFromStores(items, () => {
+  const stateFromStores = obj.useStateFromStores(items, () => {
     currentUser = currentUser.getCurrentUser();
     let flag;
     if (currentUser != null) {
@@ -114,24 +91,14 @@ export function useGiftingBadgeCoachmarkVariant(arg0) {
     }
     return flag;
   });
-  const tmpResult3 = tmp(5338);
-  const result = tmpResult3.useIsDismissibleContentDismissed_UNSAFE(tmp(5139).DismissibleContent.NEW_GIFTING_BADGES_COACHMARK);
+  let obj2 = require("DismissibleContentUnsafeUtils");
+  const result = obj2.useIsDismissibleContentDismissed_UNSAFE(require("dismissible_content").DismissibleContent.NEW_GIFTING_BADGES_COACHMARK);
   const items1 = [BadgeDirectoryStore];
-  const tmpResult4 = tmp(504);
-  const stateFromStores1 = tmpResult4.useStateFromStores(items1, () => badgeById.getBadgeById(closure_0(dependencyMap[10]).BadgeId.GIFTING));
-  if (enabled2) {
-    enabled2 = !result;
-  }
-  if (enabled2) {
-    enabled2 = enabled;
-  }
-  _require = tmp6;
-  let tmp7 = enabled2 && enabled3;
-  if (tmp7) {
-    tmp7 = null == stateFromStores1;
-  }
-  closure_1 = tmp7;
-  const items2 = [tmp6, tmp7];
+  const obj3 = require("get initialized");
+  const stateFromStores1 = obj3.useStateFromStores(items1, () => badgeById.getBadgeById(closure_0(dependencyMap[9]).BadgeId.GIFTING));
+  _require = tmp5;
+  let closure_1 = tmp6;
+  const items2 = [tmp5, tmp6];
   const effect = react.useEffect(() => {
     const tmp = closure_1;
     if (tmp) {
@@ -145,33 +112,33 @@ export function useGiftingBadgeCoachmarkVariant(arg0) {
       }
     }
   }, items2);
-  if (enabled3) {
-    let tmp10 = null;
-    if (enabled2) {
-      tmp10 = null;
+  if (enabled) {
+    let tmp9 = null;
+    if (!result && flag) {
+      tmp9 = null;
       if (null != stateFromStores1) {
-        tmp10 = null;
+        tmp9 = null;
         if (!stateFromStores1.hidden) {
           if (stateFromStores) {
-            tmp10 = "noCount";
+            tmp9 = "noCount";
           } else {
-            tmp10 = null;
+            tmp9 = null;
           }
         }
       }
     }
-    str2 = tmp10;
+    str = tmp9;
   } else {
-    str2 = null;
-    if (enabled2) {
-      str2 = null;
+    str = null;
+    if (!result && flag) {
+      str = null;
       if (stateFromStores) {
-        str2 = null;
+        str = null;
         if (null != stateFromStores1) {
-          str2 = "count";
+          str = "count";
         }
       }
     }
   }
-  return str2;
+  return str;
 }

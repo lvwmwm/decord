@@ -1,22 +1,22 @@
-// Module ID: 15012
-// Function ID: 15013
+// Module ID: 13598
+// Function ID: 13599
 // Name: ContactSyncLandingOnboardingRedesign
-// Dependencies: [5, 19, 17, 6892, 21, 5306, 575, 5882, 8192, 6010, 15013, 5919, 1113, 5926, 15014, 15005, 2]
+// Dependencies: [5, 19, 17, 6496, 21, 4913, 575, 5467, 7795, 5600, 13599, 5504, 1112, 5511, 13600, 13591, 2]
 // Exports: default
 
-// Module 15012 (ContactSyncLandingOnboardingRedesign)
+// Module 13598 (ContactSyncLandingOnboardingRedesign)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import NavigatorConstants from "NavigatorConstants" /* 5882 */;
-import FastImageDefault from "FastImage" /* 6010 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 6892 */;
-import RedesignContactSyncDiscoverabilityFooterDefault from "RedesignContactSyncDiscoverabilityFooter" /* 15005 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15013 */;
-import ContactSyncErrorDefault from "ContactSyncError" /* 15014 */;
+import NavigatorConstants from "NavigatorConstants" /* 5467 */;
+import FastImageDefault from "FastImage" /* 5600 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 6496 */;
+import RedesignContactSyncDiscoverabilityFooterDefault from "RedesignContactSyncDiscoverabilityFooter" /* 13591 */;
+import AssetRegistryDefault from "AssetRegistry" /* 13599 */;
+import ContactSyncErrorDefault from "ContactSyncError" /* 13600 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let c1, c2;
@@ -122,18 +122,18 @@ export default function ContactSyncLandingOnboardingRedesign(onNext) {
   let obj3 = { resizeMode: "contain", style: tmp.headerImage, source: AssetRegistryDefault };
   const tmp3 = FastImageDefault;
   items1 = [closure_7(tmp3, obj3), , , , ];
-  let obj4 = { style: tmp.title, variant: "heading-xl/semibold", children: intl.string(onNext(1113).t["/G+nci"]) };
-  const Text = onNext(5919).Text;
-  intl = onNext(1113).intl;
+  let obj4 = { style: tmp.title, variant: "heading-xl/semibold", children: intl.string(onNext(1112).t["/G+nci"]) };
+  const Text = onNext(5504).Text;
+  intl = onNext(1112).intl;
   items1[1] = closure_7(Text, obj4);
-  let obj5 = { style: tmp.subtitle, variant: "body-sm/medium", children: intl2.string(onNext(1113).t.G8zcHt) };
-  const Text2 = onNext(5919).Text;
-  intl2 = onNext(1113).intl;
+  let obj5 = { style: tmp.subtitle, variant: "body-sm/medium", children: intl2.string(onNext(1112).t.G8zcHt) };
+  const Text2 = onNext(5504).Text;
+  intl2 = onNext(1112).intl;
   items1[2] = closure_7(Text2, obj5);
   const obj6 = { style: tmp.buttonContainer, children: closure_7(Button, obj7) };
-  obj7 = { variant: "primary", size: "lg", text: intl3.string(onNext(1113).t.LhlgY9), onPress: callback, loading };
-  Button = onNext(5926).Button;
-  intl3 = onNext(1113).intl;
+  obj7 = { variant: "primary", size: "lg", text: intl3.string(onNext(1112).t.LhlgY9), onPress: callback, loading };
+  Button = onNext(5511).Button;
+  intl3 = onNext(1112).intl;
   items1[3] = closure_7(View, obj6);
   items1[4] = closure_7(ContactSyncErrorDefault, { error });
   items2 = [closure_8(View, obj2), ];

@@ -60,12 +60,12 @@ export const captureConsoleIntegration = module_751.defineIntegration(() => {
             const tmpResult4 = _mod712;
             tmpResult4.withScope((addEventProcessor) => {
               let handled;
-              addEventProcessor.addEventProcessor((arg0) => {
-                arg0.logger = "console";
+              addEventProcessor.addEventProcessor((tmpResult) => {
+                tmpResult.logger = "console";
                 const obj = args(level[6]);
                 obj2 = { handled, type: "auto.core.capture_console" };
-                const result = obj.addExceptionMechanism(arg0, obj2);
-                return arg0;
+                const result = obj.addExceptionMechanism(tmpResult, obj2);
+                return tmpResult;
               });
               if ("assert" !== level) {
                 const found = args.find((item) => item instanceof Error);

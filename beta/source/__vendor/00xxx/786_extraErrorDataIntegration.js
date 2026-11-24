@@ -5,11 +5,11 @@
 
 // Module 786 (extraErrorDataIntegration)
 import _mod686 from "module_686" /* 686 */;
-import _mod687 from "module_687" /* 687 */;
+import DEBUG_BUILD from "DEBUG_BUILD" /* 687 */;
 import _mod691 from "module_691" /* 691 */;
 import module_751 from "module_751" /* 751 */;
 
-function _extractErrorData(cause, arg1, arg2) {
+function _extractErrorData(cause, arg1, maxValueLength) {
   try {
     const items = ["name", "message", "stack", "line", "column", "fileName", "lineNumber", "columnNumber", "toJSON"];
     const obj = {};
@@ -32,10 +32,10 @@ function _extractErrorData(cause, arg1, arg2) {
           }
           obj[tmp8] = tmp16;
         }
-        if (arg2) {
+        if (maxValueLength) {
           let tmp43Result = tmp43(696);
           let _HermesInternal2 = HermesInternal;
-          truncateResult = tmp43Result.truncate("" + tmp40, arg2);
+          truncateResult = tmp43Result.truncate("" + tmp40, maxValueLength);
         } else {
           let _HermesInternal = HermesInternal;
           truncateResult = "" + tmp40;
@@ -51,7 +51,7 @@ function _extractErrorData(cause, arg1, arg2) {
         if (obj6.isError(cause.cause)) {
           const name = cause.cause.name || cause.cause.constructor.name;
           const obj2 = {};
-          obj2[name] = _extractErrorData(cause.cause, false, arg2);
+          obj2[name] = _extractErrorData(cause.cause, false, maxValueLength);
           obj.cause = obj2;
         } else {
           obj.cause = cause.cause;
@@ -80,7 +80,7 @@ function _extractErrorData(cause, arg1, arg2) {
     return obj;
   } catch (tmp31) {
     const tmp32 = require;
-    if (_mod687.DEBUG_BUILD) {
+    if (DEBUG_BUILD.DEBUG_BUILD) {
       const debug = tmp32(688).debug;
       debug.error("Unable to extract extra data from the Error object:", tmp31);
     }

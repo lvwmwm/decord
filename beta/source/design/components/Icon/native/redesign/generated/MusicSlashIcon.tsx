@@ -1,14 +1,14 @@
-// Module ID: 12942
-// Function ID: 12943
+// Module ID: 10892
+// Function ID: 10893
 // Name: MusicSlashIcon
-// Dependencies: [19, 21, 575, 6009, 12943, 2]
+// Dependencies: [19, 21, 575, 5599, 10893, 2]
 // Exports: MusicSlashIcon
 
-// Module 12942 (MusicSlashIcon)
+// Module 10892 (MusicSlashIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 6009 */;
-import AssetRegistry from "AssetRegistry" /* 12943 */;
+import BaseIconImage2 from "BaseIconImage" /* 5599 */;
+import AssetRegistry from "AssetRegistry" /* 10893 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,13 +1,13 @@
-// Module ID: 6801
-// Function ID: 6802
+// Module ID: 6446
+// Function ID: 6447
 // Name: GameAnalyticsUtils
-// Dependencies: [2159, 6802, 1380, 2]
+// Dependencies: [2158, 6447, 1378, 2]
 // Exports: getGameAnalyticsMetadata, getRunningGameAnalytics, isVerifiedGameExecutable, removeExecutablePathPrefix
 
-// Module 6801 (GameAnalyticsUtils)
-import PlatformUtils from "PlatformUtils" /* 1380 */;
-import RobloxSubgameUtils from "RobloxSubgameUtils" /* 6802 */;
-import DetectableGameStore from "DetectableGameStore" /* 2159 */;
+// Module 6446 (GameAnalyticsUtils)
+import PlatformUtils from "PlatformUtils" /* 1378 */;
+import RobloxSubgameUtils from "RobloxSubgameUtils" /* 6447 */;
+import DetectableGameStore from "DetectableGameStore" /* 2158 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/game_detection/GameAnalyticsUtils.tsx");
@@ -32,7 +32,7 @@ export function getRunningGameAnalytics(streamApplication) {
   let str3;
   let subgameMetadata;
   if (null == streamApplication) {
-    return { gameName: "Array", gameId: "channel_id", exe: "error", distributor: "width", sku: "HermesInternal", gameMetadata: "__closure", rawExePath: "__esModule" };
+    return { gameName: "np", gameId: "channel", exe: "ks", distributor: "accessibilityLabel", sku: "Array", gameMetadata: "channel", rawExePath: "get" };
   } else {
     const str = "exePath" in streamApplication ? streamApplication.exePath : streamApplication.exe;
     const id = streamApplication.id;

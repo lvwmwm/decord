@@ -1,10 +1,10 @@
 // Module ID: 16048
 // Function ID: 16049
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 16048 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/guild_boosting", width: 203, height: 120, scales: [1, 2, 3], hash: "4cb64ea1ce49f760ec2c14cca07c9930", name: "guild_subscription_removal_dark", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/user_settings/account/native/images", width: 121, height: 90, scales: [1, 2, 3], hash: "6fbfa0aa2194635b21a8ebd068b44d0c", name: "lock", type: "png" });

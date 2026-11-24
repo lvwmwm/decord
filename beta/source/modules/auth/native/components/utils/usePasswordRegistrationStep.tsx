@@ -1,11 +1,11 @@
-// Module ID: 18676
-// Function ID: 18677
+// Module ID: 17472
+// Function ID: 17473
 // Name: usePasswordRegistrationStep
-// Dependencies: [5, 32, 19, 18652, 7783, 18677, 1113, 18664, 2]
+// Dependencies: [5, 32, 19, 17448, 7385, 17473, 1112, 17460, 2]
 // Exports: usePasswordRegistrationStep
 
-// Module 18676 (usePasswordRegistrationStep)
-import RegistrationUIStore from "RegistrationUIStore" /* 18652 */;
+// Module 17472 (usePasswordRegistrationStep)
+import RegistrationUIStore from "RegistrationUIStore" /* 17448 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

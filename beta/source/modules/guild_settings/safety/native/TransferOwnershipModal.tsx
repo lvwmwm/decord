@@ -1,18 +1,18 @@
-// Module ID: 14148
-// Function ID: 14149
+// Module ID: 12383
+// Function ID: 12384
 // Name: TransferOwnershipModal
-// Dependencies: [5, 19, 14149, 21, 14147, 1264, 1113, 7493, 14150, 7766, 8404, 6004, 7490, 2]
+// Dependencies: [5, 19, 12384, 21, 12382, 1263, 1112, 7095, 12385, 7368, 7994, 5594, 7092, 2]
 // Exports: default
 
-// Module 14148 (TransferOwnershipModal)
+// Module 12383 (TransferOwnershipModal)
 import Fragment from "Fragment" /* 21 */;
-import intl3 from "intl" /* 1113 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
-import NavigatorHeader from "NavigatorHeader" /* 7493 */;
-import TransferOwnershipModalActionCreatorsDefault from "TransferOwnershipModalActionCreators" /* 14147 */;
+import intl3 from "intl" /* 1112 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1263 */;
+import NavigatorHeader from "NavigatorHeader" /* 7095 */;
+import TransferOwnershipModalActionCreatorsDefault from "TransferOwnershipModalActionCreators" /* 12382 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import TransferOwnershipConstants from "TransferOwnershipConstants" /* 14149 */;
+import TransferOwnershipConstants from "TransferOwnershipConstants" /* 12384 */;
 import size from "module_2" /* 2 */;
 
 let c0;
@@ -149,7 +149,7 @@ export default function TransferOwnershipModal(guild) {
     obj2[CONFIRM_EMAIL_CODE] = obj5;
     return obj2;
   }, items);
-  const Navigator = guild(7490).Navigator;
-  let intl = guild(1113).intl;
-  return <Navigator screens={memo} initialRouteName={constants.TRANFSER_OWNERSHIP} headerBackTitle={intl.string(guild(1113).t["13/7kX"])} />;
+  const Navigator = guild(7092).Navigator;
+  let intl = guild(1112).intl;
+  return <Navigator screens={memo} initialRouteName={constants.TRANFSER_OWNERSHIP} headerBackTitle={intl.string(guild(1112).t["13/7kX"])} />;
 };

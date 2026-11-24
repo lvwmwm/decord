@@ -1,24 +1,24 @@
-// Module ID: 13979
-// Function ID: 13980
+// Module ID: 18644
+// Function ID: 18645
 // Name: conjureHomeShowcaseTiles
-// Dependencies: [4131, 2]
+// Dependencies: [4190, 2]
 
-// Module 13979 (conjureHomeShowcaseTiles)
-import _modDef4131 from "module_4131" /* 4131 */;
+// Module 18644 (conjureHomeShowcaseTiles)
+import _modDef4190 from "module_4190" /* 4190 */;
 import size from "module_2" /* 2 */;
 
-const items = [{ id: "apps", title: _modDef4131["bvcT/Q"], description: _modDef4131.ArcJqa }, , , , , ];
-({ id: "apps", title: _modDef4131["bvcT/Q"], description: _modDef4131.ArcJqa });
-items[1] = { id: "bots", title: _modDef4131.KBHZfO, description: _modDef4131.qNmKhG };
-({ id: "bots", title: _modDef4131.KBHZfO, description: _modDef4131.qNmKhG });
-items[2] = { id: "games", title: _modDef4131["JU01/4"], description: _modDef4131.FXwLsv };
-({ id: "games", title: _modDef4131["JU01/4"], description: _modDef4131.FXwLsv });
-items[3] = { id: "automod", title: _modDef4131["+EKk4D"], description: _modDef4131.fpXK3z };
-({ id: "automod", title: _modDef4131["+EKk4D"], description: _modDef4131.fpXK3z });
-items[4] = { id: "overlay-widgets", title: _modDef4131.uVOH1p, description: _modDef4131.zm7y9u };
-({ id: "overlay-widgets", title: _modDef4131.uVOH1p, description: _modDef4131.zm7y9u });
-items[5] = { id: "profile-widgets", title: _modDef4131.GUb2zA, description: _modDef4131["v+F6qW"] };
-({ id: "profile-widgets", title: _modDef4131.GUb2zA, description: _modDef4131["v+F6qW"] });
+const items = [{ id: "apps", title: _modDef4190["bvcT/Q"], description: _modDef4190.ArcJqa }, , , , , ];
+({ id: "apps", title: _modDef4190["bvcT/Q"], description: _modDef4190.ArcJqa });
+items[1] = { id: "bots", title: _modDef4190.KBHZfO, description: _modDef4190.qNmKhG };
+({ id: "bots", title: _modDef4190.KBHZfO, description: _modDef4190.qNmKhG });
+items[2] = { id: "games", title: _modDef4190["JU01/4"], description: _modDef4190.FXwLsv };
+({ id: "games", title: _modDef4190["JU01/4"], description: _modDef4190.FXwLsv });
+items[3] = { id: "automod", title: _modDef4190["+EKk4D"], description: _modDef4190.fpXK3z };
+({ id: "automod", title: _modDef4190["+EKk4D"], description: _modDef4190.fpXK3z });
+items[4] = { id: "overlay-widgets", title: _modDef4190.uVOH1p, description: _modDef4190.zm7y9u };
+({ id: "overlay-widgets", title: _modDef4190.uVOH1p, description: _modDef4190.zm7y9u });
+items[5] = { id: "profile-widgets", title: _modDef4190.GUb2zA, description: _modDef4190["v+F6qW"] };
+({ id: "profile-widgets", title: _modDef4190.GUb2zA, description: _modDef4190["v+F6qW"] });
 const result = size.fileFinishedImporting("modules/conjure/home/conjureHomeShowcaseTiles.tsx");
 
 export const CONJURE_HOME_SHOWCASE_TILES = items;

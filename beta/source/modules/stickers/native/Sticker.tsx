@@ -1,20 +1,20 @@
-// Module ID: 11093
-// Function ID: 11094
+// Module ID: 11165
+// Function ID: 11166
 // Name: Sticker
-// Dependencies: [19, 17, 1192, 21, 6783, 6782, 1113, 9228, 6010, 5313, 7895, 7896, 2]
+// Dependencies: [19, 17, 1191, 21, 6387, 6386, 1112, 8736, 5600, 4920, 7497, 7498, 2]
 // Exports: default, getStickerAssetUrl
 
-// Module 11093 (Sticker)
+// Module 11165 (Sticker)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import intl2 from "intl" /* 1113 */;
-import shared from "shared" /* 5313 */;
-import FastImageDefault from "FastImage" /* 6010 */;
-import StickersUtils from "StickersUtils" /* 6782 */;
-import StickersTypes from "StickersTypes" /* 6783 */;
-import NativeLottieViewDefault from "NativeLottieView" /* 9228 */;
+import intl2 from "intl" /* 1112 */;
+import shared from "shared" /* 4920 */;
+import FastImageDefault from "FastImage" /* 5600 */;
+import StickersUtils from "StickersUtils" /* 6386 */;
+import StickersTypes from "StickersTypes" /* 6387 */;
+import NativeLottieViewDefault from "NativeLottieView" /* 8736 */;
 import react from "react" /* 19 */;
-import ThemeStore from "ThemeStore" /* 1192 */;
+import ThemeStore from "ThemeStore" /* 1191 */;
 import size from "module_2" /* 2 */;
 
 const PixelRatio = react_native.PixelRatio;
@@ -59,7 +59,7 @@ export default function Sticker(opaque) {
   if (str == null) {
     str = "";
   }
-  const intl = tmp(1113).intl;
+  const intl = tmp(1112).intl;
   const obj3 = { stickerName: sticker.name };
   const formatToPlainStringResult = intl.formatToPlainString(intl2.t.rk6pOw, obj3);
   if (sticker.format_type === StickersTypes.StickerFormat.LOTTIE) {
@@ -70,7 +70,7 @@ export default function Sticker(opaque) {
     if (str2 == null) {
       str2 = "";
     }
-    NativeLottieRenderMode = tmp(9228).NativeLottieRenderMode;
+    NativeLottieRenderMode = tmp(8736).NativeLottieRenderMode;
     tmp11Result = tmp8(tmp10, size1);
   } else {
     const obj4 = { enableAnimation: animated, resizeMode: "contain", style: size2, placeholder: tmp12Result, source: obj5, accessible: true, accessibilityLabel: formatToPlainStringResult };
@@ -79,9 +79,9 @@ export default function Sticker(opaque) {
     const tmp11 = jsx;
     const tmpResult6 = shared;
     if (tmpResult6.isThemeDark(ThemeStore.theme)) {
-      tmp12Result = tmp12(7895);
+      tmp12Result = tmp12(7497);
     } else {
-      tmp12Result = tmp12(7896);
+      tmp12Result = tmp12(7498);
     }
     obj5 = { uri: str };
     tmp11Result = tmp11(tmp13, obj4);

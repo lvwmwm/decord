@@ -1,20 +1,20 @@
-// Module ID: 14969
-// Function ID: 14970
+// Module ID: 13555
+// Function ID: 13556
 // Name: ChannelSafeAreaBottomAnimated
-// Dependencies: [19, 17, 21, 12007, 1655, 12018, 12016, 14575, 2]
+// Dependencies: [19, 17, 21, 11766, 1653, 11776, 11774, 12827, 2]
 
-// Module 14969 (ChannelSafeAreaBottomAnimated)
+// Module 13555 (ChannelSafeAreaBottomAnimated)
 import Fragment from "Fragment" /* 21 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import useChannelSafeAreaHeightSharedValue from "useChannelSafeAreaHeightSharedValue" /* 12007 */;
-import useIsChannelFullyOpenDefault from "useIsChannelFullyOpen" /* 12016 */;
-import useChannelSafeAreaBottomStylesDefault from "useChannelSafeAreaBottomStyles" /* 12018 */;
-import MobileRTCV2Experiment from "MobileRTCV2Experiment" /* 14575 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import useChannelSafeAreaHeightSharedValue from "useChannelSafeAreaHeightSharedValue" /* 11766 */;
+import useIsChannelFullyOpenDefault from "useIsChannelFullyOpen" /* 11774 */;
+import useChannelSafeAreaBottomStylesDefault from "useChannelSafeAreaBottomStyles" /* 11776 */;
+import MobileRTCV2Experiment from "MobileRTCV2Experiment" /* 12827 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
 
-const _modDef1655 = _mod1655;
+const _modDef1653 = _mod1653;
 const useChannelSafeAreaHeightSharedValueDefault = useChannelSafeAreaHeightSharedValue;
 
 let c3;
@@ -23,7 +23,7 @@ function useChannelSafeAreaAnimatedStyles() {
   let tmp2;
   let tmp3;
   const tmp = useChannelSafeAreaHeightSharedValueDefault();
-  let obj = _mod1655;
+  let obj = _mod1653;
   const items = [closure_6, tmp];
   let c0;
   [tmp2, tmp3] = items;
@@ -42,7 +42,7 @@ function useChannelSafeAreaAnimatedStyles() {
 function KeyboardAwareChannelSafeAreaBottom(channelId) {
   const items = [_false.absoluteFill, useChannelSafeAreaBottomStylesDefault(channelId.channelId)];
   const tmp = useChannelSafeAreaBottomStylesDefault(channelId.channelId);
-  const View = _modDef1655.View;
+  const View = _modDef1653.View;
   return <View style={useChannelSafeAreaAnimatedStyles()}>{null}</View>;
 }
 function DockAwareChannelSafeAreaBottom(channelId) {
@@ -55,7 +55,7 @@ function DockAwareChannelSafeAreaBottom(channelId) {
   if (useIsChannelFullyOpenDefault()) {
     const items = [_false.absoluteFill, tmp3];
     const obj2 = { style: tmp4, children: null };
-    const View = _modDef1655.View;
+    const View = _modDef1653.View;
     tmp6Result = tmp6(View, obj2);
   } else {
     const obj4 = { style: obj5, children: null };

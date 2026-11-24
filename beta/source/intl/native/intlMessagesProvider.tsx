@@ -1,13 +1,13 @@
-// Module ID: 20911
-// Function ID: 20912
+// Module ID: 20180
+// Function ID: 20181
 // Name: intlMessagesProvider
-// Dependencies: [20912, 1152, 1113, 2]
+// Dependencies: [20181, 1151, 1112, 2]
 // Exports: default
 
-// Module 20911 (intlMessagesProvider)
-import intl2 from "intl" /* 1113 */;
-import _mod1152 from "module_1152" /* 1152 */;
-import react_nativeDefault from "react-native" /* 20912 */;
+// Module 20180 (intlMessagesProvider)
+import intl2 from "intl" /* 1112 */;
+import _mod1151 from "module_1151" /* 1151 */;
+import react_nativeDefault from "react-native" /* 20181 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("intl/native/intlMessagesProvider.tsx");
@@ -16,7 +16,7 @@ export default function intlMessagesProvider() {
   let obj = react_nativeDefault;
   const keys = obj.getKeys();
   const mapped = keys.map((item) => {
-    const obj = _mod1152;
+    const obj = _mod1151;
     const result = obj.runtimeHashMessageKey(item);
     const tmp4 = intl2.t[result];
     let str = "";

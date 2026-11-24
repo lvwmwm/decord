@@ -1,13 +1,13 @@
-// Module ID: 18886
-// Function ID: 18887
+// Module ID: 17680
+// Function ID: 17681
 // Name: useGuildThemeNuxTrigger
-// Dependencies: [32, 19, 5152, 5509, 9560, 5139, 2]
+// Dependencies: [32, 19, 4759, 5116, 9080, 4746, 2]
 // Exports: default
 
-// Module 18886 (useGuildThemeNuxTrigger)
-import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
-import GuildThemeResolver from "GuildThemeResolver" /* 5509 */;
-import useSelectedDismissibleContent2 from "useSelectedDismissibleContent" /* 9560 */;
+// Module 17680 (useGuildThemeNuxTrigger)
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4759 */;
+import GuildThemeResolver from "GuildThemeResolver" /* 5116 */;
+import useSelectedDismissibleContent2 from "useSelectedDismissibleContent" /* 9080 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -15,7 +15,7 @@ import size from "module_2" /* 2 */;
 let c0;
 
 let tmp;
-const dismissible_content = tmp(5139);
+const dismissible_content = tmp(4746);
 let constants = DismissibleContentConstants.DismissibleContentGroupName;
 const result = size.fileFinishedImporting("modules/guild_themes/useGuildThemeNuxTrigger.tsx");
 

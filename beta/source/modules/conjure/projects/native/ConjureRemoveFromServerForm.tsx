@@ -1,10 +1,10 @@
-// Module ID: 14156
-// Function ID: 14157
+// Module ID: 12392
+// Function ID: 12393
 // Name: ConjureRemoveFromServerForm
-// Dependencies: [5, 19, 21, 13210, 6005, 6327, 5919, 13211, 5926, 1113, 4131, 2]
+// Dependencies: [5, 19, 21, 12393, 5595, 5929, 5504, 12391, 5511, 1112, 4190, 2]
 // Exports: default
 
-// Module 14156 (ConjureRemoveFromServerForm)
+// Module 12392 (ConjureRemoveFromServerForm)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
@@ -107,7 +107,7 @@ export default function ConjureRemoveFromServerForm(onRemoved) {
   });
   let obj2 = {
     variant: "destructive",
-    text: intl.string(tmp(tmp2[10]).BGF8VT),
+    text: intl.string(tmp(tmp2[10]).GqcQyH),
     onPress: function remove() {
       return obj(...arguments);
     },

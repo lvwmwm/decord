@@ -1,19 +1,19 @@
-// Module ID: 12780
-// Function ID: 12781
+// Module ID: 10709
+// Function ID: 10710
 // Name: getEmbeddedActivityLaunchability
-// Dependencies: [5155, 5177, 5238, 5971, 2145, 1072, 12736, 6828, 504, 1113, 2]
+// Dependencies: [4762, 4784, 4845, 5561, 2144, 1071, 10663, 6419, 504, 1112, 2]
 // Exports: getEmbeddedActivityLaunchabilityForChannel, getEmbeddedActivityLaunchabilityLabel, useEmbeddedActivityLaunchability
 
-// Module 12780 (getEmbeddedActivityLaunchability)
-import Constants from "Constants" /* 1072 */;
-import intl5 from "intl" /* 1113 */;
-import Constants2 from "Constants" /* 2145 */;
-import AgeGateUtils from "AgeGateUtils" /* 6828 */;
-import useIsActivitiesEnabledForCurrentPlatform from "useIsActivitiesEnabledForCurrentPlatform" /* 12736 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import GuildStore from "GuildStore" /* 5177 */;
-import PermissionStore from "PermissionStore" /* 5238 */;
-import VoiceStateStore from "VoiceStateStore" /* 5971 */;
+// Module 10709 (getEmbeddedActivityLaunchability)
+import Constants from "Constants" /* 1071 */;
+import intl5 from "intl" /* 1112 */;
+import Constants2 from "Constants" /* 2144 */;
+import AgeGateUtils from "AgeGateUtils" /* 6419 */;
+import useIsActivitiesEnabledForCurrentPlatform from "useIsActivitiesEnabledForCurrentPlatform" /* 10663 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
+import VoiceStateStore from "VoiceStateStore" /* 5561 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

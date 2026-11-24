@@ -1,20 +1,20 @@
-// Module ID: 17858
-// Function ID: 17859
+// Module ID: 16638
+// Function ID: 16639
 // Name: GuildRoleSubscriptionCard
-// Dependencies: [32, 19, 17, 21, 5306, 575, 5919, 17848, 17859, 1113, 1187, 17860, 17861, 17864, 2]
+// Dependencies: [32, 19, 17, 21, 4913, 575, 5504, 16628, 16639, 1112, 1186, 16640, 16641, 16644, 2]
 // Exports: Content
 
-// Module 17858 (GuildRoleSubscriptionCard)
+// Module 16638 (GuildRoleSubscriptionCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17848 */;
-import GuildRoleSubscriptionEmojiGalleryDefault from "GuildRoleSubscriptionEmojiGallery" /* 17861 */;
-import GuildRoleSubscriptionBenefitRow from "GuildRoleSubscriptionBenefitRow" /* 17864 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16628 */;
+import GuildRoleSubscriptionEmojiGalleryDefault from "GuildRoleSubscriptionEmojiGallery" /* 16641 */;
+import GuildRoleSubscriptionBenefitRow from "GuildRoleSubscriptionBenefitRow" /* 16644 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -70,17 +70,17 @@ export function Content(arg0) {
   const role = obj4.useRole(listingId, guildId);
   size = first.size;
   const obj5 = { separator: closure_6(Separator, {}), children: items1 };
-  const SeparatedList = guildId(17859).SeparatedList;
+  const SeparatedList = guildId(16639).SeparatedList;
   const obj6 = { children: items };
-  const obj7 = { children: intl.string(guildId(1113).t["DJ+bGu"]) };
-  intl = guildId(1113).intl;
-  items = [closure_6(SectionTitle, obj7), closure_6(guildId(1187).Spacer, { size: 8 }), closure_6(guildId(17860).GuildRoleSubscriptionMemberPreview, { guildId, role })];
+  const obj7 = { children: intl.string(guildId(1112).t["DJ+bGu"]) };
+  intl = guildId(1112).intl;
+  items = [closure_6(SectionTitle, obj7), closure_6(guildId(1186).Spacer, { size: 8 }), closure_6(guildId(16640).GuildRoleSubscriptionMemberPreview, { guildId, role })];
   items1 = [closure_8(closure_7, obj6), , , ];
   let tmp6Result = null;
   if (size > 0) {
     const obj8 = { style: tmp2.section, children: items2 };
-    const obj9 = { children: intl2.format(guildId(1113).t.oDeFmv, obj10) };
-    intl2 = tmp7(1113).intl;
+    const obj9 = { children: intl2.format(guildId(1112).t.oDeFmv, obj10) };
+    intl2 = tmp7(1112).intl;
     obj10 = { numEmojis: first.size };
     items2 = [closure_6(SectionTitle, obj9), ];
     const obj11 = { emojiIds: items3, guildId };
@@ -94,8 +94,8 @@ export function Content(arg0) {
   let tmp6Result3 = null;
   if (first1.length > 0) {
     const obj12 = { style: tmp2.section, children: items4 };
-    const obj13 = { children: intl3.format(guildId(1113).t.l40GUu, obj14) };
-    intl3 = tmp7(1113).intl;
+    const obj13 = { children: intl3.format(guildId(1112).t.l40GUu, obj14) };
+    intl3 = tmp7(1112).intl;
     obj14 = { numChannels: first1.length };
     items4 = [
       closure_6(SectionTitle, obj13),
@@ -110,8 +110,8 @@ export function Content(arg0) {
   let tmp6Result4 = null;
   if (first2.length > 0) {
     const obj15 = { style: tmp2.section, children: items5 };
-    const obj16 = { children: intl4.format(guildId(1113).t["4V/Mfi"], obj17) };
-    intl4 = tmp7(1113).intl;
+    const obj16 = { children: intl4.format(guildId(1112).t["4V/Mfi"], obj17) };
+    intl4 = tmp7(1112).intl;
     obj17 = { numIntangibles: first2.length };
     items5 = [
       closure_6(SectionTitle, obj16),

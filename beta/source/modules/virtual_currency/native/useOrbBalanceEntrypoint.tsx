@@ -1,16 +1,16 @@
-// Module ID: 17528
-// Function ID: 17529
+// Module ID: 16296
+// Function ID: 16297
 // Name: useOrbBalanceEntrypoint
-// Dependencies: [5, 19, 17529, 17530, 7937, 5542, 17531, 2121, 10055, 15950, 17541, 17533, 2]
+// Dependencies: [5, 19, 16297, 16298, 7539, 5127, 16299, 2119, 9445, 14704, 16310, 16301, 2]
 // Exports: openBalanceWidgetActionSheet, useIsOrbWalletEntrypointEnabled, useOrbBalanceEntrypoint
 
-// Module 17528 (useOrbBalanceEntrypoint)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
-import useVirtualCurrencyMobileEnabled from "useVirtualCurrencyMobileEnabled" /* 15950 */;
-import OrbWalletConstants from "OrbWalletConstants" /* 17529 */;
-import VirtualCurrencyAnalyticsUtil from "VirtualCurrencyAnalyticsUtil" /* 17530 */;
-import OrbchievementsExperiment from "OrbchievementsExperiment" /* 17541 */;
+// Module 16296 (useOrbBalanceEntrypoint)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7539 */;
+import useVirtualCurrencyMobileEnabled from "useVirtualCurrencyMobileEnabled" /* 14704 */;
+import OrbWalletConstants from "OrbWalletConstants" /* 16297 */;
+import VirtualCurrencyAnalyticsUtil from "VirtualCurrencyAnalyticsUtil" /* 16298 */;
+import OrbchievementsExperiment from "OrbchievementsExperiment" /* 16310 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -130,7 +130,7 @@ export function useOrbBalanceEntrypoint(location) {
   let obj2 = require("OrbchievementsExperiment");
   let tmp3 = obj2.useIsOrbchievementsMobileEnabled({ location: _location }) && enabled;
   _require = tmp3;
-  const tmpResult = tmp(17533);
+  const tmpResult = tmp(16301);
   const orbChallengeUnreadState = tmpResult.useOrbChallengeUnreadState({ enabled: tmp3 });
   const items = [tmp3];
   ({ hasUnreadUpdate, notificationType } = orbChallengeUnreadState);

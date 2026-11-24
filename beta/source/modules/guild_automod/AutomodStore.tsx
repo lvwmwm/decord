@@ -1,24 +1,24 @@
-// Module ID: 20458
-// Function ID: 20459
+// Module ID: 19712
+// Function ID: 19713
 // Name: AutomodStore
-// Dependencies: [32, 5, 19, 14168, 1072, 1258, 20459, 1263, 14173, 6747, 5221, 2]
+// Dependencies: [32, 5, 19, 12408, 1071, 1257, 19713, 1262, 12413, 6349, 4828, 2]
 // Exports: getRuleCountByTriggerType, useAutomodRulesList, useSyncAutomodRules, useSyncAutomodRulesEffect
 
-// Module 20458 (AutomodStore)
-import Constants from "Constants" /* 1072 */;
-import _slicedToArray2 from "_slicedToArray" /* 5221 */;
-import Constants2 from "Constants" /* 14168 */;
-import SystemRulesUtils from "SystemRulesUtils" /* 20459 */;
+// Module 19712 (AutomodStore)
+import Constants from "Constants" /* 1071 */;
+import _slicedToArray2 from "_slicedToArray" /* 4828 */;
+import Constants2 from "Constants" /* 12408 */;
+import SystemRulesUtils from "SystemRulesUtils" /* 19713 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import module_1258 from "module_1258" /* 1258 */;
+import module_1257 from "module_1257" /* 1257 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, c0, c1, c6, c7, closure_5;
 
-const f123096 = (arg0) => {
+const f118477 = (arg0) => {
   const items = [, ];
   ({ syncRules: arr[0], fetching: arr[1] } = arg0);
   return items;
@@ -26,7 +26,7 @@ const f123096 = (arg0) => {
 const AutomodTriggerType = Constants2.AutomodTriggerType;
 const EMPTY_STRING_SNOWFLAKE_ID = Constants.EMPTY_STRING_SNOWFLAKE_ID;
 let closure_7 = {};
-const withEqualityFn = module_1258.createWithEqualityFn((arg0, arg1) => {
+const withEqualityFn = module_1257.createWithEqualityFn((arg0, arg1) => {
   let closure_0 = arg0;
   let closure_1 = arg1;
   let obj = {
@@ -242,7 +242,7 @@ export function useSyncAutomodRules(arg0) {
   let first;
   let closure_0 = arg0;
   [first, closure_1] = react.useState(false);
-  const tmp3 = _slicedToArray(withEqualityFn(f123096, _slicedToArray2.shallow), 2);
+  const tmp3 = _slicedToArray(withEqualityFn(f118477, _slicedToArray2.shallow), 2);
   const first1 = tmp3[0];
   let closure_3 = tmp5;
   const items = [first, ];
@@ -327,7 +327,7 @@ export function useSyncAutomodRulesEffect(arg0) {
   let tmp8;
   _require = arg0;
   [first, closure_1] = react.useState(false);
-  [first1, tmp5] = withEqualityFn(f123096, require("_slicedToArray").shallow);
+  [first1, tmp5] = withEqualityFn(f118477, require("_slicedToArray").shallow);
   let closure_3 = tmp5;
   let items = [first, ];
   const items1 = [arg0, tmp5, first1];

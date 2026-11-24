@@ -19,10 +19,10 @@ export const linkedErrorsIntegration = module_751.defineIntegration(() => {
   let closure_1 = obj.key || "cause";
   return {
     name: "LinkedErrors",
-    preprocessEvent(arg0, arg1, getOptions) {
+    preprocessEvent(exception, originalException, getOptions) {
       const options = getOptions.getOptions();
       const obj = applyAggregateErrorsToEvent;
-      const result = obj.applyAggregateErrorsToEvent(_enhanceErrorWithSentryInfo.exceptionFromError, options.stackParser, closure_1, closure_0, arg0, arg1);
+      const result = obj.applyAggregateErrorsToEvent(_enhanceErrorWithSentryInfo.exceptionFromError, options.stackParser, closure_1, closure_0, exception, originalException);
     }
   };
 });

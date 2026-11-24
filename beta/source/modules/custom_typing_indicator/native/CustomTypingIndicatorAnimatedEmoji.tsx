@@ -1,19 +1,19 @@
-// Module ID: 14595
-// Function ID: 14596
+// Module ID: 12847
+// Function ID: 12848
 // Name: CustomTypingIndicatorAnimatedEmoji
-// Dependencies: [32, 19, 2120, 1072, 21, 5306, 5320, 14596, 1655, 504, 1401, 5538, 7894, 1414, 2]
+// Dependencies: [32, 19, 2118, 1071, 21, 4913, 4927, 12848, 1653, 504, 1399, 5123, 7496, 1412, 2]
 // Exports: default
 
-// Module 14595 (CustomTypingIndicatorAnimatedEmoji)
+// Module 12847 (CustomTypingIndicatorAnimatedEmoji)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1072 */;
-import user from "user" /* 1401 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import timing_timing from "timing/timing" /* 5538 */;
+import Constants from "Constants" /* 1071 */;
+import user from "user" /* 1399 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import timing_timing from "timing/timing" /* 5123 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AppStateStore from "AppStateStore" /* 2120 */;
-import createStyles from "createStyles" /* 5306 */;
+import AppStateStore from "AppStateStore" /* 2118 */;
+import createStyles from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let set, set2, set3;
@@ -102,12 +102,12 @@ export default function CustomTypingIndicatorAnimatedEmoji(emojiCount) {
           const result4 = duration * (emojiCount - 1);
           if (user.TypingIndicatorAnimation.PULSE === animation) {
             set2 = tmp.set;
-            const withDelay2 = _mod1655.withDelay;
-            _mod1655;
-            const withRepeat2 = _mod1655.withRepeat;
-            _mod1655;
-            const withSequence = _mod1655.withSequence;
-            _mod1655;
+            const withDelay2 = _mod1653.withDelay;
+            _mod1653;
+            const withRepeat2 = _mod1653.withRepeat;
+            _mod1653;
+            const withSequence = _mod1653.withSequence;
+            _mod1653;
             let obj2 = { duration };
             const tmp9Result17 = timing_timing;
             let obj3 = { duration };
@@ -119,25 +119,25 @@ export default function CustomTypingIndicatorAnimatedEmoji(emojiCount) {
             set2(withDelay2(result3, withRepeat2(withSequence(withTimingResult, withTimingResult1, tmp9Result19.withTiming(1, obj4)), -1)));
           } else if (user.TypingIndicatorAnimation.RING === animation) {
             set = tmp3.set;
-            const withDelay = _mod1655.withDelay;
-            _mod1655;
-            const withRepeat = _mod1655.withRepeat;
-            _mod1655;
+            const withDelay = _mod1653.withDelay;
+            _mod1653;
+            const withRepeat = _mod1653.withRepeat;
+            _mod1653;
             const _Math = Math;
             num = 2;
-            let obj = { duration: 1600, easing: _mod1655.Easing.linear };
+            let obj = { duration: 1600, easing: _mod1653.Easing.linear };
             const withTiming = timing_timing.withTiming;
             const result5 = 2 * Math.PI;
             timing_timing;
             const result6 = set(withDelay(result3, withRepeat(withTiming(result5, obj), -1)));
           } else if (user.TypingIndicatorAnimation.WAVE === animation) {
             set3 = tmp5.set;
-            const withDelay3 = _mod1655.withDelay;
-            _mod1655;
-            const withRepeat3 = _mod1655.withRepeat;
-            _mod1655;
-            const withSequence2 = _mod1655.withSequence;
-            _mod1655;
+            const withDelay3 = _mod1653.withDelay;
+            _mod1653;
+            const withRepeat3 = _mod1653.withRepeat;
+            _mod1653;
+            const withSequence2 = _mod1653.withSequence;
+            _mod1653;
             const obj5 = { duration };
             const tmp9Result26 = timing_timing;
             const obj6 = { duration };

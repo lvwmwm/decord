@@ -1,10 +1,10 @@
-// Module ID: 7283
-// Function ID: 7284
+// Module ID: 6888
+// Function ID: 6889
 // Name: BulkRoleActionsExperiment
-// Dependencies: [1452, 2]
+// Dependencies: [1450, 2]
 
-// Module 7283 (BulkRoleActionsExperiment)
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+// Module 6888 (BulkRoleActionsExperiment)
+import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 
 const obj = { kind: "guild", name: "2026-10-guild-bulk-role-actions", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };

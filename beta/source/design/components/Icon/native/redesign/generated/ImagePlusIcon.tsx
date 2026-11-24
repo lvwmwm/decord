@@ -1,14 +1,14 @@
-// Module ID: 13188
-// Function ID: 13189
+// Module ID: 18277
+// Function ID: 18278
 // Name: ImagePlusIcon
-// Dependencies: [19, 21, 575, 6009, 13189, 2]
+// Dependencies: [19, 21, 575, 5599, 18278, 2]
 // Exports: ImagePlusIcon
 
-// Module 13188 (ImagePlusIcon)
+// Module 18277 (ImagePlusIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 6009 */;
-import AssetRegistry from "AssetRegistry" /* 13189 */;
+import BaseIconImage2 from "BaseIconImage" /* 5599 */;
+import AssetRegistry from "AssetRegistry" /* 18278 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

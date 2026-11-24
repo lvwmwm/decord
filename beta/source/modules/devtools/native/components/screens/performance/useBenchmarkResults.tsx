@@ -1,10 +1,10 @@
-// Module ID: 18390
-// Function ID: 18391
+// Module ID: 17172
+// Function ID: 17173
 // Name: useBenchmarkResults
 // Dependencies: [32, 19, 2]
 // Exports: default
 
-// Module 18390 (useBenchmarkResults)
+// Module 17172 (useBenchmarkResults)
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

@@ -1,11 +1,11 @@
-// Module ID: 13132
-// Function ID: 13133
+// Module ID: 15816
+// Function ID: 15817
 // Name: AnimatedKeyboardProvider
-// Dependencies: [1642, 2, 13133]
+// Dependencies: [1640, 2, 15817]
 
-// Module 13132 (AnimatedKeyboardProvider)
-import AnimatedKeyboardProviderControllerDefault from "AnimatedKeyboardProviderController" /* 13133 */;
-import react_native from "react-native" /* 1642 */;
+// Module 15816 (AnimatedKeyboardProvider)
+import AnimatedKeyboardProviderControllerDefault from "AnimatedKeyboardProviderController" /* 15817 */;
+import react_native from "react-native" /* 1640 */;
 import size from "module_2" /* 2 */;
 
 const result = react_native.setNavigationBarContrastEnforced(false);

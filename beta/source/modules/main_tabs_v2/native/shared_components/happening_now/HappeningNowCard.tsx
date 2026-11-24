@@ -1,18 +1,18 @@
-// Module ID: 17920
-// Function ID: 17921
+// Module ID: 16700
+// Function ID: 16701
 // Name: HappeningNowCard
-// Dependencies: [19, 17, 17919, 21, 5306, 7771, 5478, 7445, 5919, 2]
+// Dependencies: [19, 17, 16699, 21, 4913, 7373, 5085, 7047, 5504, 2]
 // Exports: HappeningNowCardHeader, HappeningNowCardSubtitle, default
 
-// Module 17920 (HappeningNowCard)
+// Module 16700 (HappeningNowCard)
 import react_native from "react-native" /* 17 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import Card_Card from "Card/Card" /* 7445 */;
-import useIsWindowLargeDefault from "useIsWindowLarge" /* 7771 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import Card_Card from "Card/Card" /* 7047 */;
+import useIsWindowLargeDefault from "useIsWindowLarge" /* 7373 */;
 import react from "react" /* 19 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 17919 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 16699 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let HAPPENING_NOW_BADGE_SIZE;
@@ -33,7 +33,7 @@ let metroRequire;
 let obj2;
 let tmp;
 let unpackModuleId;
-const useColorThemeBackgroundDefault = tmp(5478);
+const useColorThemeBackgroundDefault = tmp(5085);
 const View = react_native.View;
 const HAPPENING_NOW_CARD_MARGIN_RIGHT = HappeningNowConstants.HAPPENING_NOW_CARD_MARGIN_RIGHT;
 ({ HAPPENING_NOW_CARD_PADDING: hasOwnProperty, HAPPENING_NOW_CARD_HEIGHT: metroRequire, HAPPENING_NOW_BADGE_SIZE } = HappeningNowConstants);
@@ -59,7 +59,7 @@ let closure_21 = createStyles.createStyles((arg0, arg1, arg2) => {
       if (arg2) {
         diff = 252 - closure_20;
       } else {
-        diff = closure_17;
+        diff = authStore4;
       }
       tmp6 = diff;
     } else {
@@ -73,7 +73,7 @@ let closure_21 = createStyles.createStyles((arg0, arg1, arg2) => {
       if (arg2) {
         diff1 = 252 - closure_20;
       } else {
-        diff1 = closure_17;
+        diff1 = authStore4;
       }
       tmp2 = diff1;
     } else {
@@ -125,9 +125,9 @@ export default function HappeningNowCard(onPress) {
   items1 = [onPress.children, ];
   let tmp8 = null;
   if (null != IconComponent) {
-    const obj2 = { style: tmp4Result.cardBadgeWrapper, children: authStore4(View, obj3) };
-    obj3 = { style: tmp4Result.cardBadge, children: authStore4(IconComponent, { size: "xxs", color: "icon-voice-connected" }) };
-    tmp8 = authStore4(View, obj2);
+    const obj2 = { style: tmp4Result.cardBadgeWrapper, children: closure_18(View, obj3) };
+    obj3 = { style: tmp4Result.cardBadge, children: closure_18(IconComponent, { size: "xxs", color: "icon-voice-connected" }) };
+    tmp8 = closure_18(View, obj2);
   }
   items1[1] = tmp8;
   return tmp7(Card, obj);
@@ -141,7 +141,7 @@ export function HappeningNowCardHeader(displayNameFont) {
   let cardHeaderMargin = null;
   const tmp2 = closure_22();
   const Text = Text_Text.Text;
-  const tmp3 = authStore4;
+  const tmp3 = closure_18;
   if (!noMargin) {
     cardHeaderMargin = tmp2.cardHeaderMargin;
   }
@@ -161,7 +161,7 @@ export function HappeningNowCardSubtitle(variant) {
   const children = variant.children;
   const merged = Object.assign(variant, Object.assign({ children: 0, variant: 0 }));
   const Text = Text_Text.Text;
-  const tmp2 = authStore4;
+  const tmp2 = closure_18;
   if (str == null) {
     str = "body-sm/normal";
   }

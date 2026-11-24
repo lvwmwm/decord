@@ -1,13 +1,13 @@
-// Module ID: 16988
-// Function ID: 16989
+// Module ID: 15743
+// Function ID: 15744
 // Name: frameRelaunchDeepLink
-// Dependencies: [6751, 1072, 16924, 16916, 7303, 15995, 7339, 2]
+// Dependencies: [6354, 1071, 15678, 15670, 6909, 14763, 6943, 2]
 
-// Module 16988 (frameRelaunchDeepLink)
-import validateConjureAppFrameDefault from "validateConjureAppFrame" /* 16916 */;
-import Constants_mod from "Constants" /* 6751 */;
-import Constants_mod2 from "Constants" /* 1072 */;
-import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 16924 */;
+// Module 15743 (frameRelaunchDeepLink)
+import validateConjureAppFrameDefault from "validateConjureAppFrame" /* 15670 */;
+import Constants_mod from "Constants" /* 6354 */;
+import Constants_mod2 from "Constants" /* 1071 */;
+import CONTEXT_MENU_ICON_NAMES from "CONTEXT_MENU_ICON_NAMES" /* 15678 */;
 import size from "module_2" /* 2 */;
 
 let RPCCommands;
@@ -18,7 +18,7 @@ let c3;
 let closure_4;
 let items;
 let tmp;
-const RPCErrorDefault = tmp(7303);
+const RPCErrorDefault = tmp(6909);
 let Constants = Constants_mod2;
 ({ RPC_AUTHENTICATED_SCOPE, RPC_EMBEDDED_APP_SCOPE, RPC_SCOPE_CONFIG } = Constants);
 Constants = Constants_mod2;
@@ -48,20 +48,20 @@ let obj2 = {
       } else {
         substr = hash1;
       }
-      const obj = socket(15995);
+      const obj = socket(14763);
       const frameDeepLinkChannelId = obj.getFrameDeepLinkChannelId(frame);
       const subscriptions = server.subscriptions;
       let tmp8 = null != frameDeepLinkChannelId;
       const someResult = subscriptions.some((socket) => socket.socket === socket && socket.evt === constants.FRAME_DEEP_LINK);
       if (tmp8) {
-        const tmp4Result = socket(7339);
+        const tmp4Result = socket(6943);
         tmp8 = !tmp4Result.isConjurePreviewSurface(frame.surface);
       }
       if (tmp8) {
         tmp8 = someResult;
       }
       if (tmp8) {
-        const tmp4Result2 = socket(15995);
+        const tmp4Result2 = socket(14763);
         const result = tmp4Result2.setFrameRelaunchDeepLink(frameDeepLinkChannelId, frame.applicationId, substr);
       }
       return { hash: substr };

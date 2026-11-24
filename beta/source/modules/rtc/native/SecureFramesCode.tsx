@@ -1,17 +1,17 @@
-// Module ID: 10641
-// Function ID: 10642
+// Module ID: 9730
+// Function ID: 9731
 // Name: SecureFramesCode
-// Dependencies: [19, 17, 1083, 21, 5306, 575, 5919, 2]
+// Dependencies: [19, 17, 1082, 21, 4913, 575, 5504, 2]
 // Exports: default
 
-// Module 10641 (SecureFramesCode)
+// Module 9730 (SecureFramesCode)
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1083 */;
-import Text_Text from "Text/Text" /* 5919 */;
+import Constants from "Constants" /* 1082 */;
+import Text_Text from "Text/Text" /* 5504 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let c3;

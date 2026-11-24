@@ -1,19 +1,19 @@
-// Module ID: 11311
-// Function ID: 11312
+// Module ID: 11329
+// Function ID: 11330
 // Name: ExpressionGuildDetails
-// Dependencies: [19, 17, 7721, 21, 5306, 575, 7720, 1414, 6010, 5919, 1113, 7428, 11310, 7723, 1187, 2]
+// Dependencies: [19, 17, 7323, 21, 4913, 575, 7322, 1412, 5600, 5504, 1112, 7030, 11328, 7325, 1186, 2]
 
-// Module 11311 (ExpressionGuildDetails)
+// Module 11329 (ExpressionGuildDetails)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import FastImageDefault from "FastImage" /* 6010 */;
-import GuildIconDefault from "GuildIcon" /* 7720 */;
-import ExpressionSourceRecord from "ExpressionSourceRecord" /* 7721 */;
-import guild_GuildUtils from "guild/GuildUtils" /* 11310 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
+import FastImageDefault from "FastImage" /* 5600 */;
+import GuildIconDefault from "GuildIcon" /* 7322 */;
+import ExpressionSourceRecord from "ExpressionSourceRecord" /* 7323 */;
+import guild_GuildUtils from "guild/GuildUtils" /* 11328 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -23,7 +23,7 @@ let obj2;
 let size;
 let size1;
 let tmp10;
-const GuildBadgeDefault = tmp10(7723);
+const GuildBadgeDefault = tmp10(7325);
 const View = react_native.View;
 const React3 = ExpressionSourceRecord.ExpressionSourceGuildRecord;
 ({ jsx: hasOwnProperty, Fragment: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -68,24 +68,24 @@ class ExpressionGuildDetails {
       }
       const obj5 = { style: tmp.guildDetailsContainer, children: null };
       const obj6 = { variant: "body-sm/medium", color: "text-default", children: title };
-      const items = [tmp12(guild(5919).Text, obj6), ];
+      const items = [tmp12(guild(5504).Text, obj6), ];
       const obj7 = { style: tmp.guildDetailsContent, children: null };
       const items1 = [tmp7, ];
       const obj8 = { style: tmp.guildNameAndOnlineMembers, children: null };
       const obj9 = { style: tmp.guildNameWrapper, children: items2 };
-      const obj10 = { guild, style: tmp.guildPartnerIcon, size: guild(1187).Icon.Sizes.REFRESH_SMALL_16, disableColor: true };
+      const obj10 = { guild, style: tmp.guildPartnerIcon, size: guild(1186).Icon.Sizes.REFRESH_SMALL_16, disableColor: true };
       const tmp10Result = GuildBadgeDefault;
       items2 = [tmp12(tmp10Result, obj10), ];
       const obj11 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", children: guild.name };
-      items2[1] = tmp12(guild(5919).Text, obj11);
+      items2[1] = tmp12(guild(5504).Text, obj11);
       const items3 = [closure_7(View, obj9), ];
       const obj12 = { style: tmp.guildDescriptionSection, children: null };
       if (isDiscoverableResult) {
         let tmp9Result1;
         if (null != fromGuildType.presenceCount) {
-          const obj13 = { variant: "body-xs/medium", color: "text-default", children: intl2.format(guild(1113).t["LC+S+m"], obj14) };
-          const Text2 = tmp16(5919).Text;
-          intl2 = tmp16(1113).intl;
+          const obj13 = { variant: "body-xs/medium", color: "text-default", children: intl2.format(guild(1112).t["LC+S+m"], obj14) };
+          const Text2 = tmp16(5504).Text;
+          intl2 = tmp16(1112).intl;
           obj14 = { membersOnline: fromGuildType.presenceCount };
           const items4 = [tmp9(Text2, obj13), , ];
           const obj15 = { style: tmp.dotSeparator };
@@ -102,19 +102,19 @@ class ExpressionGuildDetails {
                           },
                 children: tmp9(Text3, obj17)
               };
-              const PressableOpacity = tmp16(7428).PressableOpacity;
-              obj17 = { variant: "body-xs/medium", color: "text-default", children: intl3.string(guild(1113).t.riu2R5) };
-              Text3 = tmp16(5919).Text;
-              intl3 = tmp16(1113).intl;
+              const PressableOpacity = tmp16(7030).PressableOpacity;
+              obj17 = { variant: "body-xs/medium", color: "text-default", children: intl3.string(guild(1112).t.riu2R5) };
+              Text3 = tmp16(5504).Text;
+              intl3 = tmp16(1112).intl;
               tmp9Result = tmp9(PressableOpacity, obj16);
             }
             const obj18 = { children: items4 };
             items4[2] = tmp9Result;
             tmp9Result1 = tmp14(tmp20, obj18);
           }
-          const obj19 = { variant: "body-xs/medium", color: "text-default", children: intl4.string(guild(1113).t.inyJqO) };
-          const Text4 = tmp16(5919).Text;
-          intl4 = tmp16(1113).intl;
+          const obj19 = { variant: "body-xs/medium", color: "text-default", children: intl4.string(guild(1112).t.inyJqO) };
+          const Text4 = tmp16(5504).Text;
+          intl4 = tmp16(1112).intl;
           tmp9Result = tmp9(Text4, obj19);
         }
         obj12.children = tmp9Result1;
@@ -126,12 +126,12 @@ class ExpressionGuildDetails {
         obj5.children = items;
         return closure_7(View, obj5);
       }
-      const obj20 = { variant: "body-xs/medium", color: "text-default", children: intl.string(guild(1113).t.H29mx4) };
-      const Text = tmp16(5919).Text;
-      intl = tmp16(1113).intl;
+      const obj20 = { variant: "body-xs/medium", color: "text-default", children: intl.string(guild(1112).t.H29mx4) };
+      const Text = tmp16(5504).Text;
+      intl = tmp16(1112).intl;
       tmp9Result1 = tmp9(Text, obj20);
     }
-    const obj21 = { style: tmp.guildIcon, guild: fromGuildType, size: guild(7720).GuildIconSizes.XLARGE, animate: true };
+    const obj21 = { style: tmp.guildIcon, guild: fromGuildType, size: guild(7322).GuildIconSizes.XLARGE, animate: true };
     const tmp13 = GuildIconDefault;
     tmp7 = closure_5(tmp13, obj21);
     tmp9 = closure_5;

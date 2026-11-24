@@ -1,15 +1,15 @@
-// Module ID: 17057
-// Function ID: 17058
+// Module ID: 15819
+// Function ID: 15820
 // Name: SafeAreaProvider
-// Dependencies: [19, 17, 21, 1627, 1632, 1380, 1631, 1642, 1263, 1633, 1499, 2]
+// Dependencies: [19, 17, 21, 1625, 1630, 1378, 1629, 1640, 1262, 1631, 1497, 2]
 // Exports: SafeAreaProvider, SafeAreaReporter
 
-// Module 17057 (SafeAreaProvider)
+// Module 15819 (SafeAreaProvider)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import react_native2 from "react-native" /* 1263 */;
-import SafeAreaConstants from "SafeAreaConstants" /* 1632 */;
-import _mod1633 from "module_1633" /* 1633 */;
+import react_native2 from "react-native" /* 1262 */;
+import SafeAreaConstants from "SafeAreaConstants" /* 1630 */;
+import _mod1631 from "module_1631" /* 1631 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -23,9 +23,9 @@ const result = size.fileFinishedImporting("modules/safe_area/SafeAreaProvider.na
 export function SafeAreaReporter() {
   let ref;
   let safeAreaInsets;
-  let obj = safeAreaInsets(1633);
+  let obj = safeAreaInsets(1631);
   safeAreaInsets = obj.useSafeAreaInsets();
-  let obj2 = safeAreaInsets(1499);
+  let obj2 = safeAreaInsets(1497);
   const appEntryKey = obj2.useAppEntryKey();
   const items = [safeAreaInsets, appEntryKey];
   const layoutEffect = react.useLayoutEffect(() => {
@@ -143,6 +143,6 @@ export function SafeAreaReporter() {
 export function SafeAreaProvider(arg0) {
   let children;
   ({ children, style } = arg0);
-  const SafeAreaProvider = _mod1633.SafeAreaProvider;
+  const SafeAreaProvider = _mod1631.SafeAreaProvider;
   return <SafeAreaProvider initialMetrics={SafeAreaConstants.INITIAL_SAFE_AREA_METRICS} style={style}>{children}</SafeAreaProvider>;
 }

@@ -1,28 +1,28 @@
-// Module ID: 8438
-// Function ID: 8439
+// Module ID: 8029
+// Function ID: 8030
 // Name: StartEventModal
-// Dependencies: [5, 32, 19, 17, 5155, 5177, 5161, 7966, 21, 5306, 575, 6838, 7428, 1113, 1187, 7863, 5919, 8431, 504, 8030, 8439, 7415, 8432, 8443, 5926, 2]
+// Dependencies: [5, 32, 19, 17, 4762, 4784, 4768, 7569, 21, 4913, 575, 6429, 7030, 1112, 1186, 7465, 5504, 8022, 504, 7633, 8030, 7017, 8023, 8034, 5511, 2]
 // Exports: default
 
-// Module 8438 (StartEventModal)
+// Module 8029 (StartEventModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1113 */;
-import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
-import Pressables from "Pressables" /* 7428 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7863 */;
-import GuildEventModalConstants from "GuildEventModalConstants" /* 7966 */;
-import GuildEventCardDefault from "GuildEventCard" /* 8431 */;
+import intl2 from "intl" /* 1112 */;
+import native from "native" /* 1186 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6429 */;
+import Pressables from "Pressables" /* 7030 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7465 */;
+import GuildEventModalConstants from "GuildEventModalConstants" /* 7569 */;
+import GuildEventCardDefault from "GuildEventCard" /* 8022 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import GuildStore from "GuildStore" /* 5177 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 5161 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4768 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let c0, c1;

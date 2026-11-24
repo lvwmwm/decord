@@ -1,12 +1,12 @@
-// Module ID: 7040
-// Function ID: 7041
+// Module ID: 6644
+// Function ID: 6645
 // Name: FriendsSidebarTracking
-// Dependencies: [1072, 1256, 2]
+// Dependencies: [1071, 1255, 2]
 // Exports: trackFriendsSidebarGroupingModeChanged, trackFriendsSidebarHeaderButtonClicked, trackFriendsSidebarToggled, trackFriendsSidebarVoiceGroupingToggled
 
-// Module 7040 (FriendsSidebarTracking)
-import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+// Module 6644 (FriendsSidebarTracking)
+import Constants from "Constants" /* 1071 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

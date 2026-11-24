@@ -1,23 +1,23 @@
-// Module ID: 15966
-// Function ID: 15967
+// Module ID: 14720
+// Function ID: 14721
 // Name: WebhookGuildChannelSelector
-// Dependencies: [5, 32, 19, 17, 5159, 5248, 1388, 21, 5306, 575, 5542, 8009, 2121, 1113, 5944, 7409, 5919, 1187, 8106, 2]
+// Dependencies: [5, 32, 19, 17, 4766, 4855, 1386, 21, 4913, 575, 5127, 7612, 2119, 1112, 5529, 7011, 5504, 1186, 7709, 2]
 // Exports: default
 
-// Module 15966 (WebhookGuildChannelSelector)
+// Module 14720 (WebhookGuildChannelSelector)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl4 from "intl" /* 1113 */;
-import asyncRequire from "asyncRequire" /* 2121 */;
-import ChannelRecord from "ChannelRecord" /* 5159 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import intl4 from "intl" /* 1112 */;
+import asyncRequire from "asyncRequire" /* 2119 */;
+import ChannelRecord from "ChannelRecord" /* 4766 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 5248 */;
-import UserStore from "UserStore" /* 1388 */;
+import RelationshipStore from "RelationshipStore" /* 4855 */;
+import UserStore from "UserStore" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let closure_2, v3;
@@ -85,7 +85,7 @@ export default function WebhookGuildChannelSelector(selectedGuildId) {
         hasIcons: false
       };
       ActionSheetActionCreatorsDefault;
-      const tmp8 = asyncRequire(8009, dependencyMap.paths);
+      const tmp8 = asyncRequire(7612, dependencyMap.paths);
       intl = intl4.intl;
       channels = tmp.channels;
       openLazy(tmp8, WebhookGuildChannelSelector_str, obj);

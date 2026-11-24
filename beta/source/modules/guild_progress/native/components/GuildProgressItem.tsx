@@ -1,16 +1,16 @@
-// Module ID: 14916
-// Function ID: 14917
+// Module ID: 13481
+// Function ID: 13482
 // Name: GuildProgressItem
-// Dependencies: [19, 21, 5306, 14907, 14911, 14910, 14917, 1113, 14918, 2]
+// Dependencies: [19, 21, 4913, 13360, 13364, 13363, 13482, 1112, 13483, 2]
 // Exports: default
 
-// Module 14916 (GuildProgressItem)
+// Module 13481 (GuildProgressItem)
 import Fragment from "Fragment" /* 21 */;
-import GuildProgressUtils from "GuildProgressUtils" /* 14907 */;
-import GuildProgressActionCreatorsDefault from "GuildProgressActionCreators" /* 14910 */;
-import GuildProgressCircleDefault from "GuildProgressCircle" /* 14918 */;
+import GuildProgressUtils from "GuildProgressUtils" /* 13360 */;
+import GuildProgressActionCreatorsDefault from "GuildProgressActionCreators" /* 13363 */;
+import GuildProgressCircleDefault from "GuildProgressCircle" /* 13483 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -43,8 +43,7 @@ export default function GuildProgressItem(guild) {
     iconStyle: tmp.icon,
     title: intl.string(guild(completed[7]).t["J2+r16"]),
     isCompleted: completed,
-    renderEndComponent: fn,
-    fullWidth: true
+    renderEndComponent: fn
   };
   obj3 = { uri: numFinished(completed[6]) };
   const tmp4 = numFinished(completed[4]);

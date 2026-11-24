@@ -1,16 +1,16 @@
-// Module ID: 10377
-// Function ID: 10378
+// Module ID: 9867
+// Function ID: 9868
 // Name: HTMLParserLinkUtils
-// Dependencies: [109, 10351, 6338, 6041, 1381, 2070, 6337, 10376, 2]
+// Dependencies: [109, 9841, 5940, 5631, 1379, 2068, 5939, 9866, 2]
 // Exports: addTextLinks
 
-// Module 10377 (HTMLParserLinkUtils)
-import MarkupLinkRule2 from "MarkupLinkRule" /* 6337 */;
-import UnicodeSanitizationUtils from "UnicodeSanitizationUtils" /* 6338 */;
-import HTMLParserRunUtils from "HTMLParserRunUtils" /* 10376 */;
+// Module 9867 (HTMLParserLinkUtils)
+import MarkupLinkRule2 from "MarkupLinkRule" /* 5939 */;
+import UnicodeSanitizationUtils from "UnicodeSanitizationUtils" /* 5940 */;
+import HTMLParserRunUtils from "HTMLParserRunUtils" /* 9866 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
-import HTMLParserConstants from "HTMLParserConstants" /* 10351 */;
-import module_2070_mod from "module_2070" /* 2070 */;
+import HTMLParserConstants from "HTMLParserConstants" /* 9841 */;
+import module_2068_mod from "module_2068" /* 2068 */;
 import size from "module_2" /* 2 */;
 
 const MarkupLinkRuleDefault = MarkupLinkRule2;
@@ -27,7 +27,7 @@ let map1;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-let module_2070;
+let module_2068;
 let obj2;
 let obj3;
 let unpackModuleId;
@@ -441,7 +441,7 @@ function validateSplitURLs(items) {
 }
 let closure_3 = ["rawURL"];
 ({ ALLOWED_MAILTO_HEADERS: hasOwnProperty, BIDI_CONTROL_CHARACTERS: metroRequire, BIDI_CONTROL_CHARACTERS_GLOBAL: metroImportDefault, BIDI_PARAGRAPH_SEPARATOR: metroImportAll, BIDI_PARAGRAPH_SEPARATORS: c9, BROKEN_URL_SCHEME_IN_LABEL: c10, EMAIL_IN_LABEL: unpackModuleId, HTTP_URL_SCHEME: closure_12, URL_IN_LABEL: map1, URL_LABEL_IGNORABLE_CHARACTERS: closure_14, URL_MATCH: closure_15, URL_TEXT_BOUNDARY: closure_16 } = HTMLParserConstants);
-let obj = { text: module_2070.defaultRules.text, link: obj2, url: obj3 };
+let obj = { text: module_2068.defaultRules.text, link: obj2, url: obj3 };
 obj2 = {
   match(arg0, arg1, arg2) {
     const str = MarkupLinkRuleDefault;
@@ -450,7 +450,7 @@ obj2 = {
     if (null != match) {
       tmp4 = null;
       if (!metroImportAll.test(match[0])) {
-        const tmpResult = module_2070;
+        const tmpResult = module_2068;
         const unescapeUrlResult = tmpResult.unescapeUrl(match[2]);
         let tmp7;
         if (null != unescapeUrlResult) {
@@ -471,7 +471,7 @@ obj2 = {
     return tmp4;
   },
   parse(content, arg1, arg2) {
-    const obj = module_2070;
+    const obj = module_2068;
     const unescapeUrlResult = obj.unescapeUrl(content[2]);
     let tmp4;
     if (null != unescapeUrlResult) {
@@ -501,7 +501,7 @@ obj2 = {
 };
 const MarkupLinkRule = Object.assign(MarkupLinkRuleDefault);
 obj3 = {
-  order: module_2070.defaultRules.url.order,
+  order: module_2068.defaultRules.url.order,
   requiredFirstCharacters: ["h", "H"],
   match(arg0) {
     const match = regex3.exec(arg0);
@@ -579,8 +579,8 @@ obj3 = {
     }
   }
 };
-module_2070 = module_2070_mod;
-let closure_22 = module_2070.parserFor(obj);
+module_2068 = module_2068_mod;
+let closure_22 = module_2068.parserFor(obj);
 const result = size.fileFinishedImporting("modules/html_parser/HTMLParserLinkUtils.tsx");
 
 export { getLink };

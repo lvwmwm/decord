@@ -1,27 +1,27 @@
-// Module ID: 7287
-// Function ID: 7288
+// Module ID: 6893
+// Function ID: 6894
 // Name: ThreadHooks
-// Dependencies: [32, 19, 5521, 5159, 502, 5155, 5238, 7014, 7288, 1072, 504, 1084, 7062, 11, 12, 12528, 12529, 12739, 14634, 6819, 6828, 2]
+// Dependencies: [32, 19, 5854, 4766, 502, 4762, 4845, 6618, 6894, 1071, 504, 1083, 6666, 11, 12, 12046, 12047, 10666, 12890, 6410, 6419, 2]
 // Exports: computeCanStartPrivateThread, computeCanStartPublicThread, computeIsReadOnlyThread, getIsActiveChannelOrUnarchivableThread, isNonModInLockedThread, isThreadModerator, useCanJoinThreadVoice, useCanManageThread, useCanRemoveThreadMember, useCanStartPublicThread, useCanStartThread, useCanViewThreadForMessage, useHasActiveThreads, useHasPermissionToJoinThreadVoice, useIsActiveChannelOrUnarchivableThread, useIsNonModInLockedThread, useIsThreadMember, useIsThreadModerator
 
-// Module 7287 (ThreadHooks)
+// Module 6893 (ThreadHooks)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import _modDef12 from "module_12" /* 12 */;
-import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
-import ChannelRecord from "ChannelRecord" /* 5159 */;
-import isSystemMessageDefault from "isSystemMessage" /* 7062 */;
-import GuildSubscriptionsActionCreators from "GuildSubscriptionsActionCreators" /* 12528 */;
-import GuildChannelSubscriptions from "GuildChannelSubscriptions" /* 12529 */;
-import useIsRemoteDefault from "useIsRemote" /* 12739 */;
+import BigFlagUtilsAll from "BigFlagUtils" /* 1083 */;
+import ChannelRecord from "ChannelRecord" /* 4766 */;
+import isSystemMessageDefault from "isSystemMessage" /* 6666 */;
+import useIsRemoteDefault from "useIsRemote" /* 10666 */;
+import GuildSubscriptionsActionCreators from "GuildSubscriptionsActionCreators" /* 12046 */;
+import GuildChannelSubscriptions from "GuildChannelSubscriptions" /* 12047 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import createExperiment from "createExperiment" /* 5521 */;
+import createExperiment from "createExperiment" /* 5854 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import PermissionStore from "PermissionStore" /* 5238 */;
-import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 7014 */;
-import ThreadMemberListStore from "ThreadMemberListStore" /* 7288 */;
-import Constants from "Constants" /* 1072 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
+import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6618 */;
+import ThreadMemberListStore from "ThreadMemberListStore" /* 6894 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -31,7 +31,7 @@ let closure_12;
 let closure_14;
 let items;
 let map1;
-const f93733 = () => {
+const f89794 = () => {
   let SEND_MESSAGES;
   const tmp = channel;
   if (channel.isForumLikeChannel()) {
@@ -42,7 +42,7 @@ const f93733 = () => {
   }
   return PermissionStore.can(SEND_MESSAGES, tmp);
 };
-const f93737 = () => {
+const f89798 = () => {
   const items = [PermissionStore];
   const first = _slicedToArray(items, 1)[0];
   let canResult = null != channel;
@@ -52,7 +52,7 @@ const f93737 = () => {
   }
   return canResult;
 };
-const f93738 = () => PermissionStore.can(constants.CONNECT, channel);
+const f89799 = () => PermissionStore.can(constants.CONNECT, channel);
 function useCanStartPrivateThread(type) {
   _require = type;
   let obj = require("get initialized");
@@ -101,7 +101,7 @@ function useCanUnarchiveThread(channel) {
   }, items2);
   const items3 = [PermissionStore];
   const obj3 = require("get initialized");
-  const stateFromStores2 = obj3.useStateFromStores(items3, f93737);
+  const stateFromStores2 = obj3.useStateFromStores(items3, f89798);
   if (stateFromStores) {
     stateFromStores = stateFromStores1;
   }
@@ -162,7 +162,7 @@ export function useCanStartPublicThread(type, arg1) {
   const items1 = [type];
   let flag = false;
   const obj = require("get initialized");
-  if (obj.useStateFromStores(items, f93733, items1)) {
+  if (obj.useStateFromStores(items, f89794, items1)) {
     flag = false;
     if (THREADED_CHANNEL_TYPES.has(type.type)) {
       flag = true;
@@ -239,7 +239,7 @@ export function useCanStartThread(channel) {
   const items = [PermissionStore];
   const items1 = [channel];
   let flag = false;
-  if (obj.useStateFromStores(items, f93733, items1)) {
+  if (obj.useStateFromStores(items, f89794, items1)) {
     let tmp = THREADED_CHANNEL_TYPES;
     flag = false;
     if (THREADED_CHANNEL_TYPES.has(channel.type)) {
@@ -405,7 +405,7 @@ export function useIsThreadModerator(channel) {
   _require = channel;
   const items = [PermissionStore];
   const obj = require("get initialized");
-  return obj.useStateFromStores(items, f93737);
+  return obj.useStateFromStores(items, f89798);
 }
 export function isThreadModerator(arg0) {
   let tmp = arg1;
@@ -480,7 +480,7 @@ export function useHasPermissionToJoinThreadVoice(isThread) {
   _require = isThread;
   const items = [PermissionStore];
   const obj = require("get initialized");
-  let stateFromStores = obj.useStateFromStores(items, f93738);
+  let stateFromStores = obj.useStateFromStores(items, f89799);
   let tmp3 = null != isThread;
   if (tmp3) {
     const isThreadResult = isThread.isThread();
@@ -515,7 +515,7 @@ export function useCanJoinThreadVoice(channel) {
   const items = [PermissionStore];
   const tmp2 = useIsRemoteDefault();
   const obj = require("get initialized");
-  let stateFromStores = obj.useStateFromStores(items, f93738);
+  let stateFromStores = obj.useStateFromStores(items, f89799);
   let tmp6 = null != channel;
   if (tmp6) {
     const isThreadResult = channel.isThread();
@@ -572,7 +572,7 @@ export function useIsNonModInLockedThread(channel) {
   _require = channel;
   let items = [PermissionStore];
   const obj = require("get initialized");
-  const stateFromStores = obj.useStateFromStores(items, f93737);
+  const stateFromStores = obj.useStateFromStores(items, f89798);
   const tmp2 = channel.isLockedThread() && !stateFromStores;
   return tmp2;
 }

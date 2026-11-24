@@ -1,12 +1,12 @@
-// Module ID: 15740
-// Function ID: 15741
+// Module ID: 14480
+// Function ID: 14481
 // Name: RequestToStreamActionCreators
-// Dependencies: [15741, 572, 2]
+// Dependencies: [14481, 572, 2]
 // Exports: dismissStreamRequestReminder, startStreamRequestCooldown
 
-// Module 15740 (RequestToStreamActionCreators)
+// Module 14480 (RequestToStreamActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import RequestToStreamConstants from "RequestToStreamConstants" /* 15741 */;
+import RequestToStreamConstants from "RequestToStreamConstants" /* 14481 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;

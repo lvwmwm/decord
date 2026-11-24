@@ -1,19 +1,19 @@
-// Module ID: 10390
-// Function ID: 10391
+// Module ID: 9755
+// Function ID: 9756
 // Name: GuildBadgeV2
-// Dependencies: [19, 21, 5306, 1187, 5313, 10391, 10392, 10393, 575, 10396, 2]
+// Dependencies: [19, 21, 4913, 1186, 4920, 9754, 9753, 9756, 575, 9759, 2]
 // Exports: default, hasGuildBadge
 
-// Module 10390 (GuildBadgeV2)
+// Module 9755 (GuildBadgeV2)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 1187 */;
-import shared from "shared" /* 5313 */;
-import BadgeCategory from "BadgeCategory" /* 10391 */;
-import GuildTraits from "GuildTraits" /* 10392 */;
-import GuildBadgeImageSource from "GuildBadgeImageSource" /* 10396 */;
+import native from "native" /* 1186 */;
+import shared from "shared" /* 4920 */;
+import GuildTraits from "GuildTraits" /* 9753 */;
+import BadgeCategory from "BadgeCategory" /* 9754 */;
+import GuildBadgeImageSource from "GuildBadgeImageSource" /* 9759 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -42,7 +42,7 @@ export default function GuildBadgeV2(arg0) {
       const tmp5Result5 = native;
       const iconSize = tmp5Result5.getIconSize(size);
       const obj = { size: "custom", color: nativeDefault.colors.BADGE_INVERTED_BACKGROUND, secondaryColor: nativeDefault.colors.BADGE_INVERTED_TEXT, style: items };
-      const ExperimentalWebBadgeIcon = tmp5(10393).ExperimentalWebBadgeIcon;
+      const ExperimentalWebBadgeIcon = tmp5(9756).ExperimentalWebBadgeIcon;
       const size1 = { width: iconSize, height: iconSize };
       items = [size1, ];
       let icon = merged.style;
@@ -57,7 +57,7 @@ export default function GuildBadgeV2(arg0) {
       const guildBadgeImageSource = tmp5Result6.getGuildBadgeImageSource(guild, tmp8);
       let tmp10 = null;
       if (null != guildBadgeImageSource) {
-        const Icon = tmp5(1187).Icon;
+        const Icon = tmp5(1186).Icon;
         const merged1 = Object.assign(merged);
         tmp10 = <Icon size={size} source={guildBadgeImageSource} style={tmp4.icon} disableColor />;
       }

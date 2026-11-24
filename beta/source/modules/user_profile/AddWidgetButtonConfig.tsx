@@ -1,15 +1,15 @@
-// Module ID: 15822
-// Function ID: 15823
+// Module ID: 14562
+// Function ID: 14563
 // Name: AddWidgetButtonConfig
-// Dependencies: [2165, 7355, 7353, 15823, 1113, 2]
+// Dependencies: [2164, 6959, 6957, 14563, 1112, 2]
 // Exports: getAddWidgetAriaLabel, getAddWidgetPlaceholder, getAddWidgetTitle
 
-// Module 15822 (AddWidgetButtonConfig)
-import intl2 from "intl" /* 1113 */;
-import WidgetType from "WidgetType" /* 7353 */;
-import UserProfileWidgetConstants from "UserProfileWidgetConstants" /* 7355 */;
-import SampleGameWidgetData from "SampleGameWidgetData" /* 15823 */;
-import ApplicationStore from "ApplicationStore" /* 2165 */;
+// Module 14562 (AddWidgetButtonConfig)
+import intl2 from "intl" /* 1112 */;
+import WidgetType from "WidgetType" /* 6957 */;
+import UserProfileWidgetConstants from "UserProfileWidgetConstants" /* 6959 */;
+import SampleGameWidgetData from "SampleGameWidgetData" /* 14563 */;
+import ApplicationStore from "ApplicationStore" /* 2164 */;
 import size from "module_2" /* 2 */;
 
 const WIDGET_TITLES_BY_TYPE = UserProfileWidgetConstants.WIDGET_TITLES_BY_TYPE;
@@ -78,19 +78,6 @@ const obj5 = {
 };
 const obj6 = {
   placeholder() {
-    return { variant: "personal" };
-  },
-  getAriaLabel() {
-    const intl = intl2.intl;
-    return intl.string(intl2.t["1l30oB"]);
-  },
-  getTitle() {
-    const intl = intl2.intl;
-    return intl.string(intl2.t.f8kllL);
-  }
-};
-const obj7 = {
-  placeholder() {
     return { variant: "clips-gallery" };
   },
   getAriaLabel() {
@@ -98,7 +85,7 @@ const obj7 = {
     return intl.string(intl2.t["7AVpta"]);
   }
 };
-let closure_4 = { [WidgetType.WidgetType.FAVORITE_GAMES]: obj, [WidgetType.WidgetType.CURRENT_GAMES]: obj2, [WidgetType.WidgetType.PLAYED_GAMES]: obj3, [WidgetType.WidgetType.WANT_TO_PLAY_GAMES]: obj4, [WidgetType.WidgetType.APPLICATION]: obj5, [WidgetType.WidgetType.PERSONAL]: obj6, [WidgetType.WidgetType.CLIPS_GALLERY]: obj7 };
+let closure_4 = { [WidgetType.WidgetType.FAVORITE_GAMES]: obj, [WidgetType.WidgetType.CURRENT_GAMES]: obj2, [WidgetType.WidgetType.PLAYED_GAMES]: obj3, [WidgetType.WidgetType.WANT_TO_PLAY_GAMES]: obj4, [WidgetType.WidgetType.APPLICATION]: obj5, [WidgetType.WidgetType.CLIPS_GALLERY]: obj6 };
 const result = size.fileFinishedImporting("modules/user_profile/AddWidgetButtonConfig.tsx");
 
 export function getAddWidgetPlaceholder(widget) {

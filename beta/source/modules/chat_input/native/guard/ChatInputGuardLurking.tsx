@@ -1,22 +1,22 @@
-// Module ID: 14887
-// Function ID: 14888
+// Module ID: 13340
+// Function ID: 13341
 // Name: ChatInputGuardLurking
-// Dependencies: [19, 5239, 5155, 13806, 1072, 21, 504, 1099, 6057, 11959, 14737, 1196, 7230, 6907, 6912, 14880, 1113, 2]
+// Dependencies: [19, 4846, 4762, 12825, 1071, 21, 504, 1098, 5650, 11726, 13192, 1195, 6834, 6511, 6516, 13333, 1112, 2]
 
-// Module 14887 (ChatInputGuardLurking)
+// Module 13340 (ChatInputGuardLurking)
 import Fragment from "Fragment" /* 21 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6057 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6907 */;
-import JoinGuildRefusedError from "JoinGuildRefusedError" /* 6912 */;
-import GuildDiscoveryUtilsAll from "GuildDiscoveryUtils" /* 7230 */;
-import showChannelFollowingActionSheet from "showChannelFollowingActionSheet" /* 11959 */;
-import ChatInputConstants from "ChatInputConstants" /* 13806 */;
-import HubProgressActionCreators from "HubProgressActionCreators" /* 14737 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1195 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5650 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6511 */;
+import JoinGuildRefusedError from "JoinGuildRefusedError" /* 6516 */;
+import GuildDiscoveryUtilsAll from "GuildDiscoveryUtils" /* 6834 */;
+import showChannelFollowingActionSheet from "showChannelFollowingActionSheet" /* 11726 */;
+import ChatInputConstants from "ChatInputConstants" /* 12825 */;
+import HubProgressActionCreators from "HubProgressActionCreators" /* 13192 */;
 import react from "react" /* 19 */;
-import LurkingStore from "LurkingStore" /* 5239 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import Constants from "Constants" /* 1072 */;
+import LurkingStore from "LurkingStore" /* 4846 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -99,40 +99,40 @@ const memoResult = react.memo(function ChatInputGuardLurking(channel) {
     type = lurkingSource.type;
   }
   if (type === constants2.DIRECTORY_ENTRY) {
-    guildId(14880);
-    const intl9 = tmp2(1113).intl;
-    const intl10 = tmp2(1113).intl;
-    const intl11 = tmp2(1113).intl;
-    tmp15Result = <tmp14 type="button-action" message={intl9.string(tmp2(1113).t.G42YmG)} buttonSecondaryText={intl10.string(tmp2(1113).t.GlKb5i)} buttonSecondaryOnPress={callback} buttonPrimaryText={intl11.string(tmp2(1113).t.RLch70)} buttonPrimaryOnPress={callback2} />;
+    guildId(13333);
+    const intl9 = tmp2(1112).intl;
+    const intl10 = tmp2(1112).intl;
+    const intl11 = tmp2(1112).intl;
+    tmp15Result = <tmp14 type="button-action" message={intl9.string(tmp2(1112).t.G42YmG)} buttonSecondaryText={intl10.string(tmp2(1112).t.GlKb5i)} buttonSecondaryOnPress={callback} buttonPrimaryText={intl11.string(tmp2(1112).t.RLch70)} buttonPrimaryOnPress={callback2} />;
   } else {
     let obj9;
     const tmp15 = jsx;
-    const tmp17 = guildId(14880);
+    const tmp17 = guildId(13333);
     if (null != channel.pendingGameProfileReturn) {
-      let obj3 = { type: "button-action", message: intl6.string(tmp2(1113).t.G42YmG), buttonSecondaryText: intl7.string(tmp2(1113).t.DjifDP), buttonSecondaryOnPress: null, buttonSecondaryLoading: null, buttonPrimaryText: intl8.string(tmp2(1113).t.RLch70), buttonPrimaryOnPress: callback2 };
-      intl6 = tmp2(1113).intl;
-      intl7 = tmp2(1113).intl;
+      let obj3 = { type: "button-action", message: intl6.string(tmp2(1112).t.G42YmG), buttonSecondaryText: intl7.string(tmp2(1112).t.DjifDP), buttonSecondaryOnPress: null, buttonSecondaryLoading: null, buttonPrimaryText: intl8.string(tmp2(1112).t.RLch70), buttonPrimaryOnPress: callback2 };
+      intl6 = tmp2(1112).intl;
+      intl7 = tmp2(1112).intl;
       ({ onReturnToGameProfile: obj4.buttonSecondaryOnPress, isReturning: obj4.buttonSecondaryLoading } = channel.pendingGameProfileReturn);
-      intl8 = tmp2(1113).intl;
+      intl8 = tmp2(1112).intl;
       obj9 = obj3;
     } else if (isReadonlyAnnouncementsChannel) {
-      let obj5 = { type: "button-action", message: intl3.string(tmp2(1113).t.Hl0Mqh), buttonSecondaryText: stringResult, buttonSecondaryOnPress: tmp10, buttonPrimaryText: intl5.string(tmp2(1113).t["3aOv+h"]), buttonPrimaryOnPress: callback1 };
-      intl3 = tmp2(1113).intl;
+      let obj5 = { type: "button-action", message: intl3.string(tmp2(1112).t.Hl0Mqh), buttonSecondaryText: stringResult, buttonSecondaryOnPress: tmp10, buttonPrimaryText: intl5.string(tmp2(1112).t["3aOv+h"]), buttonPrimaryOnPress: callback1 };
+      intl3 = tmp2(1112).intl;
       stringResult = undefined;
       if (isLurking) {
-        const intl4 = tmp2(1113).intl;
-        stringResult = intl4.string(tmp2(1113).t.VJlc0S);
+        const intl4 = tmp2(1112).intl;
+        stringResult = intl4.string(tmp2(1112).t.VJlc0S);
       }
       tmp10 = undefined;
       if (isLurking) {
         tmp10 = callback2;
       }
-      intl5 = tmp2(1113).intl;
+      intl5 = tmp2(1112).intl;
       obj9 = obj5;
     } else {
-      obj9 = { type: "button-action", message: intl.string(tmp2(1113).t.G42YmG), buttonPrimaryText: intl2.string(tmp2(1113).t.RLch70), buttonPrimaryOnPress: callback2 };
-      intl = tmp2(1113).intl;
-      intl2 = tmp2(1113).intl;
+      obj9 = { type: "button-action", message: intl.string(tmp2(1112).t.G42YmG), buttonPrimaryText: intl2.string(tmp2(1112).t.RLch70), buttonPrimaryOnPress: callback2 };
+      intl = tmp2(1112).intl;
+      intl2 = tmp2(1112).intl;
     }
     tmp15Result = tmp15(tmp17, obj9);
   }

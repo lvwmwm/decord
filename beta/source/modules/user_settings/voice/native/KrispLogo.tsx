@@ -1,20 +1,20 @@
-// Module ID: 13038
-// Function ID: 13039
+// Module ID: 10999
+// Function ID: 11000
 // Name: KrispLogo
-// Dependencies: [19, 17, 1192, 1072, 21, 2188, 1256, 1113, 6002, 504, 5313, 13039, 13040, 6010, 5919, 2]
+// Dependencies: [19, 17, 1191, 1071, 21, 2187, 1255, 1112, 5592, 504, 4920, 11000, 11001, 5600, 5504, 2]
 // Exports: default
 
-// Module 13038 (KrispLogo)
+// Module 10999 (KrispLogo)
 import get_initialized from "get initialized" /* 504 */;
-import intl4 from "intl" /* 1113 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
-import shared from "shared" /* 5313 */;
-import LinkingDefault from "Linking" /* 6002 */;
+import intl4 from "intl" /* 1112 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2187 */;
+import shared from "shared" /* 4920 */;
+import LinkingDefault from "Linking" /* 5592 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ThemeStore from "ThemeStore" /* 1192 */;
-import Constants from "Constants" /* 1072 */;
+import ThemeStore from "ThemeStore" /* 1191 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -62,22 +62,22 @@ export default function KrispLogo() {
   const stateFromStores = obj.useStateFromStores(items, () => theme.theme);
   const obj2 = shared;
   if (obj2.isThemeLight(stateFromStores)) {
-    tmp4Result = tmp4(13039);
+    tmp4Result = tmp4(11000);
     tmp6 = tmp4;
   } else {
-    tmp4Result = tmp4(13040);
+    tmp4Result = tmp4(11001);
     tmp6 = tmp4;
   }
   const obj3 = { style: closure_12.detailsView, children: items1 };
   const obj4 = { style: closure_12.logo, source: tmp4Result, accessibilityLabel: intl.string(intl4.t.vFiCSx) };
-  const tmp6Result = tmp6(6010);
-  intl = tmp(1113).intl;
+  const tmp6Result = tmp6(5600);
+  intl = tmp(1112).intl;
   items1 = [authStore(tmp6Result, obj4), ];
   const obj5 = { accessibilityRole: "link", accessibilityLabel: intl2.string(intl4.t.hvVgAZ), onPress: handleKrispLinkPressed, children: authStore(Text, obj6) };
-  intl2 = tmp(1113).intl;
+  intl2 = tmp(1112).intl;
   obj6 = { variant: "body-sm/medium", color: "text-link", children: intl3.string(intl4.t.hvVgAZ) };
-  Text = tmp(5919).Text;
-  intl3 = tmp(1113).intl;
+  Text = tmp(5504).Text;
+  intl3 = tmp(1112).intl;
   items1[1] = authStore(React3, obj5);
   return unpackModuleId(_false, obj3);
 };

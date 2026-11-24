@@ -5,7 +5,7 @@
 // Exports: reparentChildSpans, shouldIgnoreSpan
 
 // Module 723 (reparentChildSpans)
-import _mod687 from "module_687" /* 687 */;
+import DEBUG_BUILD from "DEBUG_BUILD" /* 687 */;
 import CONSOLE_LEVELS from "CONSOLE_LEVELS" /* 688 */;
 import _mod696 from "module_696" /* 696 */;
 
@@ -61,7 +61,7 @@ export function shouldIgnoreSpan(spanToJSONResult, ignoreSpans) {
               }
               if (tmp17) {
                 if (tmp23) {
-                  if (_mod687.DEBUG_BUILD) {
+                  if (DEBUG_BUILD.DEBUG_BUILD) {
                     let tmp29 = logIgnoredSpan(spanToJSONResult);
                   }
                   iter.return();

@@ -1,18 +1,17 @@
-// Module ID: 5514
-// Function ID: 5515
+// Module ID: 8332
+// Function ID: 8333
 // Name: GuildPowerupsConstants
-// Dependencies: [1390, 1072, 5515, 5517, 5139, 1113, 5518, 5519, 5532, 2]
+// Dependencies: [1388, 1071, 8333, 8001, 4746, 1112, 6890, 2]
 // Exports: GUILD_FEATURE_TO_PERK
 
-// Module 5514 (GuildPowerupsConstants)
-import intl15 from "intl" /* 1113 */;
-import dismissible_content from "dismissible_content" /* 5139 */;
-import GameServerConstants from "GameServerConstants" /* 5515 */;
-import Powerups from "Powerups" /* 5517 */;
-import ServerThemeUserExperiment from "ServerThemeUserExperiment" /* 5518 */;
-import GameServerExperiment from "GameServerExperiment" /* 5532 */;
-import PremiumConstants from "PremiumConstants" /* 1390 */;
-import Constants from "Constants" /* 1072 */;
+// Module 8332 (GuildPowerupsConstants)
+import intl15 from "intl" /* 1112 */;
+import dismissible_content from "dismissible_content" /* 4746 */;
+import GameServerExperiment from "GameServerExperiment" /* 6890 */;
+import Powerups from "Powerups" /* 8001 */;
+import GameServerConstants from "GameServerConstants" /* 8333 */;
+import PremiumConstants from "PremiumConstants" /* 1388 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 let TIER_1;
@@ -23,8 +22,6 @@ let TIER_3;
 let TIER_32;
 let c2;
 let c3;
-let tmp;
-const ServerThemeExperiment = tmp(5519);
 ({ BoostedGuildFeatures: c2, PerkIcons: c3 } = PremiumConstants);
 const BoostedGuildTiers = Constants.BoostedGuildTiers;
 const GuildFeatures = Constants.GuildFeatures;
@@ -61,14 +58,8 @@ items11[1] = Powerups.GUILD_POWERUP_TAG_SKU_ID;
 let obj4 = { boostPrice: 5, includedInLevel: BoostedGuildTiers.TIER_3 };
 let obj5 = {
   boostPrice: 3,
-  isEnabled(guildId) {
-    const obj = ServerThemeUserExperiment;
-    let serverThemeUserEnabled = obj.getServerThemeUserEnabled("GuildPowerupsConstants");
-    if (serverThemeUserEnabled) {
-      const tmpResult = ServerThemeExperiment;
-      serverThemeUserEnabled = tmpResult.getServerThemeEnabled(guildId, "GuildPowerupsConstants");
-    }
-    return serverThemeUserEnabled;
+  isEnabled() {
+    return false;
   }
 };
 let obj6 = {

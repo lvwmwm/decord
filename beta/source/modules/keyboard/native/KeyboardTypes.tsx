@@ -1,9 +1,9 @@
-// Module ID: 1628
-// Function ID: 1629
+// Module ID: 1626
+// Function ID: 1627
 // Name: KeyboardTypes
 // Dependencies: [2]
 
-// Module 1628 (KeyboardTypes)
+// Module 1626 (KeyboardTypes)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/keyboard/native/KeyboardTypes.tsx");

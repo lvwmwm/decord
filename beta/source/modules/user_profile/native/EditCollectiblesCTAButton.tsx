@@ -1,22 +1,22 @@
-// Module ID: 9403
-// Function ID: 9404
+// Module ID: 8914
+// Function ID: 8915
 // Name: EditCollectiblesCTAButton
-// Dependencies: [19, 5307, 1074, 1626, 21, 5306, 1630, 504, 9404, 1655, 5929, 2174, 8497, 9405, 1113, 5544, 9406, 9407, 8484, 5542, 5926, 2]
+// Dependencies: [19, 4914, 1073, 1624, 21, 4913, 1628, 504, 8915, 1653, 5514, 2173, 8087, 8916, 1112, 5129, 8917, 8918, 8074, 5127, 5511, 2]
 
-// Module 9403 (EditCollectiblesCTAButton)
+// Module 8914 (EditCollectiblesCTAButton)
 import Fragment from "Fragment" /* 21 */;
-import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
-import intl4 from "intl" /* 1113 */;
-import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1626 */;
-import PremiumUtilsDefault from "PremiumUtils" /* 2174 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
-import HapticUtils from "HapticUtils" /* 5544 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 8484 */;
-import EditCollectiblesActionCreators from "EditCollectiblesActionCreators" /* 9406 */;
-import openProductDetailsActionSheet from "openProductDetailsActionSheet" /* 9407 */;
+import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1073 */;
+import intl4 from "intl" /* 1112 */;
+import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1624 */;
+import PremiumUtilsDefault from "PremiumUtils" /* 2173 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
+import HapticUtils from "HapticUtils" /* 5129 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 8074 */;
+import EditCollectiblesActionCreators from "EditCollectiblesActionCreators" /* 8917 */;
+import openProductDetailsActionSheet from "openProductDetailsActionSheet" /* 8918 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5307 */;
-import createStyles from "createStyles" /* 5306 */;
+import AccessibilityStore from "AccessibilityStore" /* 4914 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let closure_5 = CollectiblesShopConstants.CollectiblesMobileShopScreen;

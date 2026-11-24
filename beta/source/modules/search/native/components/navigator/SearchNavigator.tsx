@@ -1,20 +1,20 @@
-// Module ID: 19736
-// Function ID: 19737
+// Module ID: 18987
+// Function ID: 18988
 // Name: SearchNavigator
-// Dependencies: [19, 9065, 19474, 1072, 21, 9128, 7490, 14763, 19627, 19737, 9051, 19731, 19732, 9139, 9140, 1360, 15617, 2]
+// Dependencies: [19, 8575, 18735, 1071, 21, 8638, 7092, 13218, 18888, 18988, 8561, 18982, 18983, 8649, 8650, 1358, 14349, 2]
 
-// Module 19736 (SearchNavigator)
-import Constants from "Constants" /* 1072 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1360 */;
-import TrackingConstants from "TrackingConstants" /* 9065 */;
-import ConversationNavigatorHeader from "ConversationNavigatorHeader" /* 9140 */;
-import TrackingDefault from "Tracking" /* 14763 */;
-import SearchNavigatorConstants from "SearchNavigatorConstants" /* 19474 */;
-import AppFrameContainerDefault from "AppFrameContainer" /* 19627 */;
-import SearchNavigatorPreviewHeaderDefault from "SearchNavigatorPreviewHeader" /* 19731 */;
+// Module 18987 (SearchNavigator)
+import Constants from "Constants" /* 1071 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1358 */;
+import TrackingConstants from "TrackingConstants" /* 8575 */;
+import ConversationNavigatorHeader from "ConversationNavigatorHeader" /* 8650 */;
+import TrackingDefault from "Tracking" /* 13218 */;
+import SearchNavigatorConstants from "SearchNavigatorConstants" /* 18735 */;
+import AppFrameContainerDefault from "AppFrameContainer" /* 18888 */;
+import SearchNavigatorPreviewHeaderDefault from "SearchNavigatorPreviewHeader" /* 18982 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 9128 */;
+import NativeStackView from "NativeStackView" /* 8638 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -32,7 +32,7 @@ const memoResult = react.memo(function SearchNavigator(route) {
   let obj3;
   let obj4;
   const searchContext = route.route.params.searchContext;
-  let obj = searchContext(7490);
+  let obj = searchContext(7092);
   const accessibilityNativeStackOptions = obj.useAccessibilityNativeStackOptions();
   const items = [searchContext];
   const effect = react.useEffect(() => {
@@ -92,7 +92,7 @@ const memoResult = react.memo(function SearchNavigator(route) {
   };
   items1[1] = closure_7(closure_9.Screen, obj6);
   const obj7 = {
-    name: searchContext(9139).ConversationNavigatorScreens.FOCUS,
+    name: searchContext(8649).ConversationNavigatorScreens.FOCUS,
     options(arg0) {
       let route;
       ({ route, navigation } = arg0);

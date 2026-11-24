@@ -1,14 +1,14 @@
-// Module ID: 5231
-// Function ID: 5232
+// Module ID: 4838
+// Function ID: 4839
 // Name: GuildRoleSubscriptionsStore
-// Dependencies: [5232, 5233, 504, 38, 572, 2]
+// Dependencies: [4839, 4840, 504, 38, 572, 2]
 
-// Module 5231 (GuildRoleSubscriptionsStore)
+// Module 4838 (GuildRoleSubscriptionsStore)
 import _modDef38 from "module_38" /* 38 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import CreatorMonetizationReviewConstants from "CreatorMonetizationReviewConstants" /* 5232 */;
-import SecondaryIndexMap from "SecondaryIndexMap" /* 5233 */;
+import CreatorMonetizationReviewConstants from "CreatorMonetizationReviewConstants" /* 4839 */;
+import SecondaryIndexMap from "SecondaryIndexMap" /* 4840 */;
 import size from "module_2" /* 2 */;
 
 let closure_10, closure_11, closure_12, closure_7, closure_9;

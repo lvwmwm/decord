@@ -1,11 +1,11 @@
-// Module ID: 14989
-// Function ID: 14990
+// Module ID: 13575
+// Function ID: 13576
 // Name: GuildDirectoryRowGenerator
-// Dependencies: [14704, 14703, 1113, 2]
+// Dependencies: [13159, 13158, 1112, 2]
 // Exports: generateDirectoryRows
 
-// Module 14989 (GuildDirectoryRowGenerator)
-import GuildDirectoryConstants from "GuildDirectoryConstants" /* 14704 */;
+// Module 13575 (GuildDirectoryRowGenerator)
+import GuildDirectoryConstants from "GuildDirectoryConstants" /* 13159 */;
 import size from "module_2" /* 2 */;
 
 let set;
@@ -31,12 +31,12 @@ export function generateDirectoryRows(arg0, arr, currentCategoryId) {
   if (0 === arr.length) {
     return [];
   } else if (currentCategoryId !== DirectoryEntryCategories.ALL) {
-    const obj4 = set(14703);
+    const obj4 = set(13158);
     const rankGuildEntriesResult = obj4.rankGuildEntries(arr);
     return rankGuildEntriesResult.map((entry) => ({ type: constants.ENTRY, entry }));
   } else {
     const items = [];
-    const obj5 = set(14703);
+    const obj5 = set(13158);
     const rankByDateAddedResult = obj5.rankByDateAdded(arr);
     const _Set = Set;
     const self = this;
@@ -44,20 +44,20 @@ export function generateDirectoryRows(arg0, arr, currentCategoryId) {
     set = new Set(rankByDateAddedResult.map((guildId) => guildId.guildId));
     let combined = items;
     if (rankByDateAddedResult.length > 0) {
-      obj = { type: obj.HEADER, header: intl.string(set(1113).t.CbaapP) };
+      obj = { type: obj.HEADER, header: intl.string(set(1112).t.CbaapP) };
       const push = items.push;
-      intl = tmp13(1113).intl;
+      intl = tmp13(1112).intl;
       push(obj);
       combined = items.concat(rankByDateAddedResult.map((entry) => ({ type: constants.ENTRY, entry })));
     }
     const found = arr.filter((guildId) => !set.has(guildId.guildId));
-    const tmp13Result = set(14703);
+    const tmp13Result = set(13158);
     const result = tmp13Result.orderByTotalMemberCount(found);
     let combined1 = combined;
     if (result.length > 0) {
       const push2 = combined.push;
-      const obj2 = { type: obj.HEADER, header: intl2.string(set(1113).t.wxbhEe) };
-      intl2 = tmp13(1113).intl;
+      const obj2 = { type: obj.HEADER, header: intl2.string(set(1112).t.wxbhEe) };
+      intl2 = tmp13(1112).intl;
       push2(obj2);
       combined1 = combined.concat(result.map((entry) => ({ type: constants.ENTRY, entry })));
     }

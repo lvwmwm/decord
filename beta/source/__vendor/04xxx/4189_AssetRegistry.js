@@ -1,10 +1,10 @@
 // Module ID: 4189
 // Function ID: 4190
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 4189 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9jb25uZWN0ZWRfZGV2aWNlcw==", scales: [1], hash: "7b49230e6a20c58d93c3de362e8c1cda", name: "sv-SE.messages.7b49230e6a20c58d93c3de362e8c1cda.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/private_channels/clean_up_inactive_gdms", scales: [1], hash: "130e925e8a424a9b43d870d884dca58e", name: "CleanUpInactiveGDMs.compiled.messages", type: "jsona" });

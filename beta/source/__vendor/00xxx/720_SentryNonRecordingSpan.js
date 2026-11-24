@@ -11,7 +11,7 @@ import _createClass from "_createClass" /* 42 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 class SentryNonRecordingSpan {
-  constructor() {
+  constructor(arg0) {
     let obj = arg0;
     if (arg0 === undefined) {
       obj = {};

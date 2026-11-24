@@ -6,28 +6,14 @@
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 
-class Filter {
+class OverlapRemovalRefiner {
   constructor() {
-    _classCallCheck(this, Filter);
+    _classCallCheck(this, OverlapRemovalRefiner);
   }
 }
 const entry = {
   key: "refine",
-  value: function refine(arg0, arr) {
-    const self = this;
-    let closure_0 = arg0;
-    return arr.filter((item) => self.isValid(closure_0, item));
-  }
-};
-let items = [entry];
-class MergingRefiner {
-  constructor() {
-    _classCallCheck(this, MergingRefiner);
-  }
-}
-const entry1 = {
-  key: "refine",
-  value: function refine(text, arg1) {
+  value: function refine(debug, arg1) {
     const self = this;
     if (arg1.length < 2) {
       return arg1;
@@ -36,40 +22,42 @@ const entry1 = {
       let first = arg1[0];
       let num = 1;
       let num2 = 1;
-      let tmp20 = first;
+      let tmp8 = first;
       if (1 < arg1.length) {
         do {
-          let tmp11;
+          let tmp4;
           let tmp = arg1[num];
-          let str = text.text;
-          let substr = str.substring(first.index + first.text.length, tmp.index);
-          if (self.shouldMergeResults(substr, first, tmp, text)) {
-            let closure_1 = tmp;
-            let mergeResultsResult = self.mergeResults(substr, tmp8, tmp, text);
-            let debugResult = text.debug(() => {
-              console.log("" + self.constructor.name + " merged " + first + " and " + closure_1 + " into " + mergeResultsResult);
-            });
-            tmp11 = mergeResultsResult;
-          } else {
+          if (tmp.index >= first.index + first.text.length) {
             let arr = items.push(first);
-            tmp11 = tmp;
+            tmp4 = tmp;
+          } else {
+            first = null;
+            let closure_1 = null;
+            if (tmp.text.length > first.text.length) {
+              first = tmp;
+              closure_1 = first;
+              tmp4 = tmp;
+            } else {
+              closure_1 = tmp;
+              tmp4 = first;
+            }
+            let debugResult = debug.debug(() => {
+              console.log("" + self.constructor.name + " remove " + closure_1 + " by " + first);
+            });
           }
           num = num2 + 1;
-          first = tmp11;
-          tmp20 = tmp11;
+          first = tmp4;
+          tmp8 = tmp4;
           num2 = num;
         } while (num < arg1.length);
       }
-      if (null != tmp20) {
-        items.push(tmp20);
+      if (null != tmp8) {
+        items.push(tmp8);
       }
       return items;
     }
   }
 };
-const items1 = [entry1];
-const Filter_export = _createClass(Filter, items);
-const MergingRefiner_export = _createClass(MergingRefiner, items1);
+let items = [entry];
 
-export { Filter_export as Filter };
-export { MergingRefiner_export as MergingRefiner };
+export default _createClass(OverlapRemovalRefiner, items);

@@ -1,17 +1,17 @@
-// Module ID: 14856
-// Function ID: 14857
+// Module ID: 13309
+// Function ID: 13310
 // Name: useVoicePanelDockLevelProps
-// Dependencies: [19, 5155, 2133, 5209, 6931, 14857, 1072, 14575, 504, 13048, 13024, 2]
+// Dependencies: [19, 4762, 2131, 4816, 6535, 13310, 1071, 12827, 504, 11009, 10985, 2]
 // Exports: useVoicePanelDockGlowLevelProps, useVoicePanelDockSpeakerLevelProps
 
-// Module 14856 (useVoicePanelDockLevelProps)
-import Constants from "Constants" /* 1072 */;
-import MediaEngineStore2 from "MediaEngineStore" /* 2133 */;
-import VoicePanelDockSlotStore from "VoicePanelDockSlotStore" /* 14857 */;
+// Module 13309 (useVoicePanelDockLevelProps)
+import Constants from "Constants" /* 1071 */;
+import MediaEngineStore2 from "MediaEngineStore" /* 2131 */;
+import VoicePanelDockSlotStore from "VoicePanelDockSlotStore" /* 13310 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
-import SpeakingStore from "SpeakingStore" /* 6931 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4816 */;
+import SpeakingStore from "SpeakingStore" /* 6535 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -33,13 +33,13 @@ export function useVoicePanelDockGlowLevelProps() {
   let voiceChannelId;
   let obj = react;
   const context = react.useContext(closure_9);
-  const obj2 = num2(14575);
+  const obj2 = num2(12827);
   const shouldAnimateSpeakerLevels = obj2.useShouldAnimateSpeakerLevels("VoicePanelDock");
   const items = [SelectedChannelStore, ChannelStore];
   const obj3 = num2(504);
   const stateFromStores = obj3.useStateFromStores(items, () => channel.getChannel(voiceChannelId.getVoiceChannelId()));
-  const obj4 = num2(13048);
-  const mute = obj4.createMuteHandler(floorDb(13024)(stateFromStores)).mute;
+  const obj4 = num2(11009);
+  const mute = obj4.createMuteHandler(floorDb(10985)(stateFromStores)).mute;
   const items1 = [MediaEngineStore, SpeakingStore];
   const obj5 = num2(504);
   const stateFromStoresObject = obj5.useStateFromStoresObject(items1, () => {

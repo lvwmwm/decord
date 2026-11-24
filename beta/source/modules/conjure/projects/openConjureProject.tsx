@@ -1,13 +1,13 @@
-// Module ID: 10551
-// Function ID: 10552
+// Module ID: 13789
+// Function ID: 13790
 // Name: openConjureProject
-// Dependencies: [1072, 5162, 1099, 2]
+// Dependencies: [1071, 4769, 1098, 2]
 // Exports: openConjureProject
 
-// Module 10551 (openConjureProject)
-import Constants from "Constants" /* 1072 */;
-import router_utils from "router_utils" /* 1099 */;
-import ChannelConstants from "ChannelConstants" /* 5162 */;
+// Module 13789 (openConjureProject)
+import Constants from "Constants" /* 1071 */;
+import router_utils from "router_utils" /* 1098 */;
+import ChannelConstants from "ChannelConstants" /* 4769 */;
 import size from "module_2" /* 2 */;
 
 const Routes = Constants.Routes;
@@ -16,12 +16,13 @@ const result = size.fileFinishedImporting("modules/conjure/projects/openConjureP
 
 export function openConjureProject(guildId, id) {
   let CHANNELResult;
+  const CONJURE_PROJECT = StaticChannelRoute.CONJURE_PROJECT;
   const transitionTo = router_utils.transitionTo;
   router_utils;
   if (null == id) {
-    CHANNELResult = Routes.CHANNEL(guildId, StaticChannelRoute.CONJURE);
+    CHANNELResult = Routes.CHANNEL(guildId, CONJURE_PROJECT);
   } else {
-    CHANNELResult = Routes.CHANNEL(guildId, StaticChannelRoute.CONJURE, id);
+    CHANNELResult = Routes.CHANNEL(guildId, CONJURE_PROJECT, id);
   }
   transitionTo(CHANNELResult);
 }

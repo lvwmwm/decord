@@ -1,13 +1,13 @@
-// Module ID: 6937
-// Function ID: 6938
+// Module ID: 6541
+// Function ID: 6542
 // Name: useGuildMemberDisplayRole
-// Dependencies: [5218, 5177, 5243, 504, 2]
+// Dependencies: [4825, 4784, 4850, 504, 2]
 // Exports: default
 
-// Module 6937 (useGuildMemberDisplayRole)
-import PermissionUtilsAll from "PermissionUtils" /* 5243 */;
-import GuildMemberStore from "GuildMemberStore" /* 5218 */;
-import GuildStore from "GuildStore" /* 5177 */;
+// Module 6541 (useGuildMemberDisplayRole)
+import PermissionUtilsAll from "PermissionUtils" /* 4850 */;
+import GuildMemberStore from "GuildMemberStore" /* 4825 */;
+import GuildStore from "GuildStore" /* 4784 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

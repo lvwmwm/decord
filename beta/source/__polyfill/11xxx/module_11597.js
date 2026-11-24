@@ -1,17 +1,19 @@
 // Module ID: 11597
 // Function ID: 11598
-// Dependencies: [41, 42, 93, 95, 98, 11598, 11432, 11436]
+// Dependencies: [41, 42, 93, 95, 98, 11415, 11584, 11442, 11422]
 
 // Module 11597
-import ReferenceWithTimezone from "ReferenceWithTimezone" /* 11432 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 11436 */;
-import _mod11598 from "module_11598" /* 11598 */;
+import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 11415 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 11422 */;
+import _mod11584 from "module_11584" /* 11584 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
+let tmp2;
+const _mod11442 = tmp2(11442);
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -27,14 +29,13 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-const regExp = new RegExp("(?:within|in|for)\\s*(?:(?:pi\u00F9 o meno|intorno|approssimativamente|verso|verso le)\\s*(?:~\\s*)?)?(" + _mod11598.TIME_UNITS_PATTERN + ")(?=\\W|$)", "i");
-const regExp1 = new RegExp("(?:(?:pi\u00F9 o meno|intorno|approssimativamente|verso|verso le)\\s*(?:~\\s*)?)?(" + _mod11598.TIME_UNITS_PATTERN + ")(?=\\W|$)", "i");
-class ENTimeUnitWithinFormatParser {
+const regExp = new RegExp("(?:(?:\\,|\\(|\\\uFF08)\\s*)?(?:il\\s*?)?(?:(questa|l'ultima|scorsa|prossima)\\s*)?(" + repeatedTimeunitPattern.matchAnyPattern(_mod11584.WEEKDAY_DICTIONARY) + ")(?:\\s*(?:\\,|\\)|\\\uFF09))?(?:\\s*(questa|l'ultima|scorsa|prossima)\\s*settimana)?(?=\\W|$)", "i");
+class ITWeekdayParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, ENTimeUnitWithinFormatParser);
-    const obj = _getPrototypeOf(ENTimeUnitWithinFormatParser);
+    _classCallCheck(this, ITWeekdayParser);
+    const obj = _getPrototypeOf(ITWeekdayParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
@@ -46,11 +47,11 @@ class ENTimeUnitWithinFormatParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(ENTimeUnitWithinFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(ITWeekdayParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
   key: "innerPattern",
-  value: function innerPattern(option) {
-    return option.option.forwardDate ? regExp1 : regExp;
+  value: function innerPattern() {
+    return regExp;
   }
 };
 const items = [
@@ -58,11 +59,33 @@ const items = [
   {
     key: "innerExtract",
     value: function innerExtract(reference, arg1) {
-      const parseDurationResult = _mod11598.parseDuration(arg1[1]);
-      const ParsingComponents = ReferenceWithTimezone.ParsingComponents;
-      return ParsingComponents.createRelativeFromReference(reference.reference, parseDurationResult);
+      const str = arg1[2];
+      const formatted = str.toLowerCase();
+      let str2 = arg1[1];
+      const tmp4 = _mod11584.WEEKDAY_DICTIONARY[formatted];
+      if (!str2) {
+        str2 = arg1[3];
+      }
+      if (!str2) {
+        str2 = "";
+      }
+      const formatted1 = str2.toLowerCase();
+      let str3 = "ultima";
+      if ("ultima" != formatted1) {
+        str3 = "ultima";
+        if ("scorsa" != formatted1) {
+          str3 = "prossima";
+          if ("prossima" != formatted1) {
+            str3 = null;
+            if ("questa" == formatted1) {
+              str3 = "questa";
+            }
+          }
+        }
+      }
+      return _mod11442.createParsingComponentsAtWeekday(reference.reference, tmp4, str3);
     }
   }
 ];
 
-export default _createClass(ENTimeUnitWithinFormatParser, items);
+export default _createClass(ITWeekdayParser, items);

@@ -1,19 +1,19 @@
-// Module ID: 18566
-// Function ID: 18567
+// Module ID: 17362
+// Function ID: 17363
 // Name: SafetyGuildSettingGuildSelect
-// Dependencies: [19, 6946, 17217, 18567, 9202, 5542, 18568, 2121, 18569, 1113, 12408, 2]
+// Dependencies: [19, 6550, 15985, 17363, 8712, 5127, 17364, 2119, 17365, 1112, 11937, 2]
 
-// Module 18566 (SafetyGuildSettingGuildSelect)
-import intl2 from "intl" /* 1113 */;
-import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
-import SettingsConstants from "SettingsConstants" /* 9202 */;
-import useDMPermissionsOverrideCount from "useDMPermissionsOverrideCount" /* 18569 */;
+// Module 17362 (SafetyGuildSettingGuildSelect)
+import intl2 from "intl" /* 1112 */;
+import asyncRequire from "asyncRequire" /* 2119 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
+import SettingsConstants from "SettingsConstants" /* 8712 */;
+import useDMPermissionsOverrideCount from "useDMPermissionsOverrideCount" /* 17365 */;
 import react from "react" /* 19 */;
-import SortedGuildStore from "SortedGuildStore" /* 6946 */;
-import UserSettingSearchStore from "UserSettingSearchStore" /* 17217 */;
-import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 18567 */;
-import SettingBuilders from "SettingBuilders" /* 12408 */;
+import SortedGuildStore from "SortedGuildStore" /* 6550 */;
+import UserSettingSearchStore from "UserSettingSearchStore" /* 15985 */;
+import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 17363 */;
+import SettingBuilders from "SettingBuilders" /* 11937 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -44,7 +44,7 @@ let obj = {
     const dMPermissionsOverrideCount = obj.useDMPermissionsOverrideCount();
     if (selectedGuildId === metroImportDefault) {
       if (0 !== dMPermissionsOverrideCount) {
-        const intl = tmp(1113).intl;
+        const intl = tmp(1112).intl;
         const obj2 = { count: dMPermissionsOverrideCount };
         return intl.format(intl2.t.eugFxh, obj2);
       }
@@ -53,7 +53,7 @@ let obj = {
   parent: MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   onPress: function onGuildSelectPress() {
     const obj = ActionSheetActionCreatorsDefault;
-    obj.openLazy(asyncRequire(18568, dependencyMap.paths), "SettingsPrivacyAndSafetyGuildSelectActionSheet");
+    obj.openLazy(asyncRequire(17364, dependencyMap.paths), "SettingsPrivacyAndSafetyGuildSelectActionSheet");
   }
 };
 const guildSelector = SettingBuilders.createGuildSelector(obj);

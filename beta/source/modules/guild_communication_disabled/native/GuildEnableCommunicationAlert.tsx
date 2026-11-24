@@ -1,21 +1,21 @@
-// Module ID: 14146
-// Function ID: 14147
+// Module ID: 12381
+// Function ID: 12382
 // Name: GuildEnableCommunicationAlert
-// Dependencies: [5, 32, 19, 17, 1388, 5220, 1072, 21, 5306, 9204, 5889, 1256, 14145, 6005, 1113, 6330, 5919, 6341, 10913, 2]
+// Dependencies: [5, 32, 19, 17, 1386, 4827, 1071, 21, 4913, 8714, 5474, 1255, 12380, 5595, 1112, 5932, 5504, 5943, 10543, 2]
 // Exports: default
 
-// Module 14146 (GuildEnableCommunicationAlert)
+// Module 12381 (GuildEnableCommunicationAlert)
 import react_native from "react-native" /* 17 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import CountDownDefault from "CountDown" /* 10913 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import CountDownDefault from "CountDown" /* 10543 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1388 */;
-import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 5220 */;
-import Constants from "Constants" /* 1072 */;
+import UserStore from "UserStore" /* 1386 */;
+import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 4827 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2, dependencyMap;
@@ -116,41 +116,41 @@ export default function GuildEnableCommunicationAlert(guildId) {
   const tmp2 = closure_12();
   dependencyMap = tmp2;
   const tmp3 = userId;
-  let closure_3 = obj(userId(9204)(userId, guildId), 1)[0];
-  userId(5889)(() => {
+  let closure_3 = obj(userId(8714)(userId, guildId), 1)[0];
+  userId(5474)(() => {
     obj = AnalyticsUtilsDefault;
     const obj2 = { type: metroImportDefault, guild_id: guildId, other_user_id: userId };
     obj.track(constants.OPEN_MODAL, obj2);
   });
   obj = {
-    title: intl.string(guildId(1113).t["+ZD3ou"]),
+    title: intl.string(guildId(1112).t["+ZD3ou"]),
     style: tmp2.wrapper,
-    cancelText: intl2.string(guildId(1113).t["ETE/oC"]),
+    cancelText: intl2.string(guildId(1112).t["ETE/oC"]),
     onClose,
     onCancel,
-    confirmText: intl3.string(tmp9(1113).t.qXtNtS),
+    confirmText: intl3.string(tmp9(1112).t.qXtNtS),
     onConfirm: function handleConfirmRemoveTimeout() {
       return obj(...arguments);
     },
     children: tmp11(tmp12, obj2)
   };
-  const tmp7 = userId(6330);
+  const tmp7 = userId(5932);
   const merged1 = Object.assign(merged);
-  intl = guildId(1113).intl;
-  intl2 = guildId(1113).intl;
+  intl = guildId(1112).intl;
+  intl2 = guildId(1112).intl;
   onClose = undefined;
   if (merged != null) {
     onClose = merged.onClose;
   }
-  intl3 = tmp9(1113).intl;
+  intl3 = tmp9(1112).intl;
   obj2 = { style: tmp2.body, children: items };
   let obj3 = { style: tmp2.description, variant: "body-sm/medium", children: format(prop, obj4) };
-  const Text = tmp9(5919).Text;
-  const intl4 = tmp9(1113).intl;
+  const Text = tmp9(5504).Text;
+  const intl4 = tmp9(1112).intl;
   format = intl4.format;
-  prop = tmp9(1113).t["t+abNU"];
+  prop = tmp9(1112).t["t+abNU"];
   const user = UserStore.getUser(userId);
-  const tmp3Result = tmp3(6341);
+  const tmp3Result = tmp3(5943);
   let str = tmp3Result.getName(guildId, null, user);
   tmp11 = closure_11;
   tmp12 = View;
@@ -172,11 +172,11 @@ export default function GuildEnableCommunicationAlert(guildId) {
     }
   };
   items = [tmp6(Text, obj3), ];
-  let obj5 = { style: items1, variant: "body-sm/medium", children: intl5.format(tmp9(1113).t.KtENkK, obj6) };
+  let obj5 = { style: items1, variant: "body-sm/medium", children: intl5.format(tmp9(1112).t.KtENkK, obj6) };
   items1 = [, ];
   ({ cta: arr2[0], description: arr2[1] } = tmp2);
-  const Text2 = tmp9(5919).Text;
-  intl5 = tmp9(1113).intl;
+  const Text2 = tmp9(5504).Text;
+  intl5 = tmp9(1112).intl;
   obj6 = { link };
   items[1] = closure_10(Text2, obj5);
   return closure_10(tmp7, obj);

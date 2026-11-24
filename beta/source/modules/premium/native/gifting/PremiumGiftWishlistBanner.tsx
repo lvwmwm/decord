@@ -1,24 +1,24 @@
-// Module ID: 11723
-// Function ID: 11724
+// Module ID: 9544
+// Function ID: 9545
 // Name: PremiumGiftWishlistBanner
-// Dependencies: [5, 19, 17, 7245, 1390, 1072, 1074, 8479, 21, 575, 5306, 10416, 9464, 11724, 11728, 7918, 7937, 1256, 8476, 11675, 11729, 5483, 6005, 1113, 8484, 11794, 5362, 5919, 11821, 11826, 2]
+// Dependencies: [5, 19, 17, 6848, 1388, 1071, 1073, 8069, 21, 575, 4913, 9545, 8982, 9584, 9588, 7520, 7539, 1255, 8067, 9479, 9589, 5090, 5595, 1112, 8074, 13906, 4969, 5504, 13932, 13937, 2]
 // Exports: PremiumGiftWishlistBanner
 
-// Module 11723 (PremiumGiftWishlistBanner)
+// Module 9544 (PremiumGiftWishlistBanner)
 import nativeDefault from "native" /* 575 */;
-import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import WishlistRecommendationRecord from "WishlistRecommendationRecord" /* 7245 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8476 */;
-import Constants2 from "Constants" /* 8479 */;
-import WishlistBannerUtils from "WishlistBannerUtils" /* 11728 */;
+import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1073 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import WishlistRecommendationRecord from "WishlistRecommendationRecord" /* 6848 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8067 */;
+import Constants2 from "Constants" /* 8069 */;
+import WishlistBannerUtils from "WishlistBannerUtils" /* 9588 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import PremiumConstants from "PremiumConstants" /* 1390 */;
-import Constants from "Constants" /* 1072 */;
+import PremiumConstants from "PremiumConstants" /* 1388 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let set, sku;

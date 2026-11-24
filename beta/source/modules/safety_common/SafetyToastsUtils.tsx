@@ -1,19 +1,19 @@
-// Module ID: 6906
-// Function ID: 6907
+// Module ID: 6510
+// Function ID: 6511
 // Name: SafetyToastsUtils
-// Dependencies: [5155, 1388, 6900, 6341, 5362, 1113, 3321, 2835, 2701, 2]
+// Dependencies: [4762, 1386, 6504, 5943, 4969, 1112, 3444, 2958, 2824, 2]
 // Exports: getSafetyToastTypeContent
 
-// Module 6906 (SafetyToastsUtils)
-import intl21 from "intl" /* 1113 */;
-import _modDef2701 from "module_2701" /* 2701 */;
-import _modDef2835 from "module_2835" /* 2835 */;
-import _modDef3321 from "module_3321" /* 3321 */;
-import UserUtilsDefault from "UserUtils" /* 5362 */;
-import NicknameUtilsDefault from "NicknameUtils" /* 6341 */;
-import Constants from "Constants" /* 6900 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import UserStore from "UserStore" /* 1388 */;
+// Module 6510 (SafetyToastsUtils)
+import intl21 from "intl" /* 1112 */;
+import _modDef2824 from "module_2824" /* 2824 */;
+import _modDef2958 from "module_2958" /* 2958 */;
+import _modDef3444 from "module_3444" /* 3444 */;
+import UserUtilsDefault from "UserUtils" /* 4969 */;
+import NicknameUtilsDefault from "NicknameUtils" /* 5943 */;
+import Constants from "Constants" /* 6504 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 
 const SafetyToastType = Constants.SafetyToastType;
@@ -70,13 +70,13 @@ export function getSafetyToastTypeContent(BLOCK_SUCCESS, id, channelId) {
     return intl13.string(intl21.t.c6kn6F);
   } else if (SafetyToastType.AGE_VERIFICATION_FAE_FAILED === BLOCK_SUCCESS) {
     const intl12 = intl21.intl;
-    return intl12.string(_modDef3321["9F2y52"]);
+    return intl12.string(_modDef3444["9F2y52"]);
   } else if (SafetyToastType.AGE_VERIFICATION_ID_FAILED === BLOCK_SUCCESS) {
     const intl11 = intl21.intl;
-    return intl11.string(_modDef3321["40UKek"]);
+    return intl11.string(_modDef3444["40UKek"]);
   } else if (SafetyToastType.AGE_VERIFICATION_UNDERAGE === BLOCK_SUCCESS) {
     const intl10 = intl21.intl;
-    return intl10.string(_modDef3321.XBGt7g);
+    return intl10.string(_modDef3444.XBGt7g);
   } else if (SafetyToastType.AGE_VERIFICATION_VERIFIED === BLOCK_SUCCESS) {
     const intl9 = intl21.intl;
     return intl9.string(intl21.t["7nKAXx"]);
@@ -85,7 +85,7 @@ export function getSafetyToastTypeContent(BLOCK_SUCCESS, id, channelId) {
     return intl8.string(intl21.t.zBpoc7);
   } else if (SafetyToastType.REPORT_TO_MOD_SUCCESS === BLOCK_SUCCESS) {
     const intl7 = intl21.intl;
-    return intl7.string(_modDef2835.iBypeZ);
+    return intl7.string(_modDef2958.iBypeZ);
   } else if (SafetyToastType.SAFETY_FEEDBACK_SUCCESS === BLOCK_SUCCESS) {
     const intl6 = intl21.intl;
     return intl6.string(intl21.t.TcFR5k);
@@ -94,13 +94,13 @@ export function getSafetyToastTypeContent(BLOCK_SUCCESS, id, channelId) {
     return intl5.string(intl21.t["susqq/"]);
   } else if (SafetyToastType.AGE_VERIFICATION_METHOD_UNAVAILABLE === BLOCK_SUCCESS) {
     const intl4 = intl21.intl;
-    return intl4.string(_modDef3321.vVwFCK);
+    return intl4.string(_modDef3444.vVwFCK);
   } else if (SafetyToastType.FAMILY_CENTER_TEEN_SETTINGS_SAVE_ERROR === BLOCK_SUCCESS) {
     const intl3 = intl21.intl;
-    return intl3.string(_modDef2701.fZG8IY);
+    return intl3.string(_modDef2824.fZG8IY);
   } else if (SafetyToastType.FAMILY_CENTER_TEEN_SETTINGS_LOAD_ERROR === BLOCK_SUCCESS) {
     const intl2 = intl21.intl;
-    return intl2.string(_modDef2701.onKDuP);
+    return intl2.string(_modDef2824.onKDuP);
   } else {
     const intl = intl21.intl;
     return intl.string(intl21.t["+c5xtT"]);

@@ -1,15 +1,15 @@
-// Module ID: 19347
-// Function ID: 19348
+// Module ID: 18149
+// Function ID: 18150
 // Name: SeparatorDot
-// Dependencies: [19, 17, 21, 5306, 575, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 2]
 // Exports: default
 
-// Module 19347 (SeparatorDot)
+// Module 18149 (SeparatorDot)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let size;

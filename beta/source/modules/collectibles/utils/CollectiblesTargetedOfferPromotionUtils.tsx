@@ -1,23 +1,22 @@
-// Module ID: 9452
-// Function ID: 9453
+// Module ID: 8970
+// Function ID: 8971
 // Name: CollectiblesTargetedOfferPromotionUtils
-// Dependencies: [9417, 7251, 8497, 8496, 9453, 1113, 2]
-// Exports: getTargetedOfferPromotionFlavorModalGradient, getTargetedOfferPromotionFlavorStyleOTPCheckout, getTargetedOfferPromotionForCollectiblesProduct, getTargetedOfferPromotionPurchaseCtaText, hasFiatExclusiveTargetedOfferPromotion, isCollectiblesTargetedOfferPromotion
+// Dependencies: [8928, 6854, 8087, 8086, 2]
+// Exports: getTargetedOfferPromotionFlavorModalGradient, getTargetedOfferPromotionFlavorStyleOTPCheckout, getTargetedOfferPromotionForCollectiblesProduct, hasFiatExclusiveTargetedOfferPromotion, isCollectiblesTargetedOfferPromotion
 
-// Module 9452 (CollectiblesTargetedOfferPromotionUtils)
-import StorefrontTypes from "StorefrontTypes" /* 7251 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 8496 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 8497 */;
-import StorefrontCollectiblesTypes from "StorefrontCollectiblesTypes" /* 9417 */;
-import CollectiblesPromotionDiscountUtils from "CollectiblesPromotionDiscountUtils" /* 9453 */;
+// Module 8970 (CollectiblesTargetedOfferPromotionUtils)
+import StorefrontTypes from "StorefrontTypes" /* 6854 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 8086 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 8087 */;
+import StorefrontCollectiblesTypes from "StorefrontCollectiblesTypes" /* 8928 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/collectibles/utils/CollectiblesTargetedOfferPromotionUtils.tsx");
 
-export function isCollectiblesTargetedOfferPromotion(tenantMetadata) {
+export function isCollectiblesTargetedOfferPromotion(collectiblesPromotionForProduct) {
   let type;
-  if (tenantMetadata != null) {
-    tenantMetadata = tenantMetadata.tenantMetadata;
+  if (collectiblesPromotionForProduct != null) {
+    const tenantMetadata = collectiblesPromotionForProduct.tenantMetadata;
     if (tenantMetadata != null) {
       const collectibles = tenantMetadata.collectibles;
       if (collectibles != null) {
@@ -96,42 +95,6 @@ export function getTargetedOfferPromotionForCollectiblesProduct(isFirstParty, re
     }
     return null;
   }
-}
-export function getTargetedOfferPromotionPurchaseCtaText(targetedOfferPromotionForCollectiblesProduct) {
-  let type;
-  if (targetedOfferPromotionForCollectiblesProduct != null) {
-    const tenantMetadata = targetedOfferPromotionForCollectiblesProduct.tenantMetadata;
-    if (tenantMetadata != null) {
-      const collectibles = tenantMetadata.collectibles;
-      if (collectibles != null) {
-        type = collectibles.type;
-      }
-    }
-  }
-  let tmp4 = null;
-  if (type === StorefrontCollectiblesTypes.StorefrontPromotionCollectiblesType.TARGETED_OFFER) {
-    let discount;
-    if (targetedOfferPromotionForCollectiblesProduct != null) {
-      const rewardConfig = targetedOfferPromotionForCollectiblesProduct.rewardConfig;
-      if (rewardConfig != null) {
-        discount = rewardConfig.discount;
-      }
-    }
-    tmp4 = null;
-    if (null != discount) {
-      let stringResult;
-      const tmp2Result = CollectiblesPromotionDiscountUtils;
-      if (100 === tmp2Result.getPromotionPercentOff(targetedOfferPromotionForCollectiblesProduct)) {
-        const intl2 = tmp2(1113).intl;
-        stringResult = intl2.string(tmp2(1113).t["302tKP"]);
-      } else {
-        const intl = tmp2(1113).intl;
-        stringResult = intl.string(tmp2(1113).t["7EGhnE"]);
-      }
-      tmp4 = stringResult;
-    }
-  }
-  return tmp4;
 }
 export function hasFiatExclusiveTargetedOfferPromotion(targetedOfferPromotionForCollectiblesProduct) {
   let type;

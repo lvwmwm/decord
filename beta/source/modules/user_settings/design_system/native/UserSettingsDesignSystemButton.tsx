@@ -1,36 +1,36 @@
-// Module ID: 18411
-// Function ID: 18412
+// Module ID: 17205
+// Function ID: 17206
 // Name: UserSettingsDesignSystemButton
-// Dependencies: [32, 19, 17, 1072, 1240, 21, 18412, 5926, 18413, 7988, 10570, 15925, 16478, 9173, 13764, 10995, 13765, 10605, 5306, 575, 1502, 5542, 18414, 2121, 6327, 5919, 11652, 15915, 15921, 15923, 15922, 15920, 15919, 6941, 5367, 1090, 5883, 7445, 10271, 8004, 2]
+// Dependencies: [32, 19, 17, 1071, 1239, 21, 17206, 5511, 17207, 7591, 10372, 14679, 15259, 8683, 15261, 10365, 15260, 9685, 4913, 575, 1500, 5127, 17208, 2119, 5929, 5504, 11637, 14669, 14675, 14677, 14676, 14674, 14673, 6545, 4974, 1089, 5468, 7047, 9659, 7607, 2]
 // Exports: default
 
-// Module 18411 (UserSettingsDesignSystemButton)
+// Module 17205 (UserSettingsDesignSystemButton)
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import LinearGradientDefault from "LinearGradient" /* 5883 */;
-import components_Button_Button from "components/Button/Button" /* 5926 */;
-import IconButton4 from "IconButton" /* 7988 */;
-import AssetRegistryDefault from "AssetRegistry" /* 9173 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 10605 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 10995 */;
-import AssetRegistryDefault5 from "AssetRegistry" /* 11652 */;
-import ToggleIconButton2 from "ToggleIconButton" /* 13764 */;
-import useToggleButtonProps from "useToggleButtonProps" /* 13765 */;
-import AssetRegistryDefault6 from "AssetRegistry" /* 15915 */;
-import AssetRegistryDefault7 from "AssetRegistry" /* 15919 */;
-import AssetRegistryDefault8 from "AssetRegistry" /* 15920 */;
-import AssetRegistryDefault9 from "AssetRegistry" /* 15921 */;
-import AssetRegistryDefault10 from "AssetRegistry" /* 15922 */;
-import AssetRegistryDefault11 from "AssetRegistry" /* 15923 */;
-import ImageButton2 from "ImageButton" /* 15925 */;
-import ToggleButton2 from "ToggleButton" /* 16478 */;
-import useDesignSystemSettingsStateDefault from "useDesignSystemSettingsState" /* 18412 */;
+import Constants from "Constants" /* 1071 */;
+import LinearGradientDefault from "LinearGradient" /* 5468 */;
+import components_Button_Button from "components/Button/Button" /* 5511 */;
+import IconButton4 from "IconButton" /* 7591 */;
+import AssetRegistryDefault from "AssetRegistry" /* 8683 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 9685 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 10365 */;
+import AssetRegistryDefault5 from "AssetRegistry" /* 11637 */;
+import AssetRegistryDefault6 from "AssetRegistry" /* 14669 */;
+import AssetRegistryDefault7 from "AssetRegistry" /* 14673 */;
+import AssetRegistryDefault8 from "AssetRegistry" /* 14674 */;
+import AssetRegistryDefault9 from "AssetRegistry" /* 14675 */;
+import AssetRegistryDefault10 from "AssetRegistry" /* 14676 */;
+import AssetRegistryDefault11 from "AssetRegistry" /* 14677 */;
+import ImageButton2 from "ImageButton" /* 14679 */;
+import ToggleButton2 from "ToggleButton" /* 15259 */;
+import useToggleButtonProps from "useToggleButtonProps" /* 15260 */;
+import ToggleIconButton2 from "ToggleIconButton" /* 15261 */;
+import useDesignSystemSettingsStateDefault from "useDesignSystemSettingsState" /* 17206 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ClientThemesConstants from "ClientThemesConstants" /* 1240 */;
+import ClientThemesConstants from "ClientThemesConstants" /* 1239 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -48,8 +48,8 @@ let obj4;
 let obj5;
 let tmp;
 let unpackModuleId;
-const AssetRegistryDefault2 = tmp(10570);
-const AssetRegistryDefault12 = tmp(18413);
+const AssetRegistryDefault4 = tmp(10372);
+const AssetRegistryDefault12 = tmp(17207);
 function ExampleButton(arg0) {
   let buttonScale;
   let buttonSize;
@@ -157,7 +157,7 @@ function ExampleIconButton(arg0) {
       grow: true,
       loading: tmp5,
       variant,
-      icon: AssetRegistryDefault2
+      icon: AssetRegistryDefault4
     };
     str2 = variant;
     if (variant == null) {
@@ -174,7 +174,7 @@ function ExampleIconButton(arg0) {
       loading: tmp5,
       variant,
       size: buttonSize,
-      icon: AssetRegistryDefault2
+      icon: AssetRegistryDefault4
     };
     str = variant;
     if (variant == null) {
@@ -265,7 +265,7 @@ function ExampleToggleIconButton(variant) {
   const obj = {
     accessibilityLabel: "" + variant + " notifications",
     icon: AssetRegistryDefault,
-    selectedIcon: AssetRegistryDefault4,
+    selectedIcon: AssetRegistryDefault3,
     pressed: first,
     onPress() {
       return closure_1(!first);
@@ -280,10 +280,10 @@ function ExampleCustomIconToggleButton() {
   let closure_1;
   let first;
   [first, closure_1] = react.useState(false);
-  const obj = { on: { variant: "destructive", accessibilityLabel: "Mute", icon: AssetRegistryDefault3 }, off: { variant: "secondary", accessibilityLabel: "Mute", icon: AssetRegistryDefault3 } };
+  const obj = { on: { variant: "destructive", accessibilityLabel: "Mute", icon: AssetRegistryDefault2 }, off: { variant: "secondary", accessibilityLabel: "Mute", icon: AssetRegistryDefault2 } };
   const useToggleIconButtonProps = useToggleButtonProps.useToggleIconButtonProps;
-  ({ variant: "destructive", accessibilityLabel: "Mute", icon: AssetRegistryDefault3 });
-  ({ variant: "secondary", accessibilityLabel: "Mute", icon: AssetRegistryDefault3 });
+  ({ variant: "destructive", accessibilityLabel: "Mute", icon: AssetRegistryDefault2 });
+  ({ variant: "secondary", accessibilityLabel: "Mute", icon: AssetRegistryDefault2 });
   const toggleIconButtonProps = useToggleIconButtonProps(obj, first);
   const obj4 = {
     onPress() {
@@ -432,7 +432,7 @@ export default function UserSettingsDesignSystemButton() {
   }, []);
   let obj2 = {
     headerRight() {
-      const obj = { onPress, icon: AssetRegistryDefault2, size: "sm", variant: "secondary", accessibilityLabel: "Settings" };
+      const obj = { onPress, icon: AssetRegistryDefault4, size: "sm", variant: "secondary", accessibilityLabel: "Settings" };
       const IconButton = IconButton4.IconButton;
       return authStore(IconButton, obj);
     }
@@ -720,7 +720,7 @@ export default function UserSettingsDesignSystemButton() {
   Stack29 = require("Stack/Stack").Stack;
   const obj71 = {
     variant: "secondary",
-    icon: AssetRegistryDefault2,
+    icon: AssetRegistryDefault4,
     label: "Supercalifragilisticexpialidocious",
     grow: true,
     onPress() {
@@ -731,7 +731,7 @@ export default function UserSettingsDesignSystemButton() {
   items26 = [closure_10(IconButton, obj71), , ];
   const obj72 = {
     variant: "secondary",
-    icon: AssetRegistryDefault2,
+    icon: AssetRegistryDefault4,
     label: "Supercalifragilisticexpialidocious",
     grow: true,
     onPress() {
@@ -742,7 +742,7 @@ export default function UserSettingsDesignSystemButton() {
   items26[1] = closure_10(IconButton2, obj72);
   const obj73 = {
     variant: "secondary",
-    icon: AssetRegistryDefault2,
+    icon: AssetRegistryDefault4,
     label: "Supercalifragilisticexpialidocious",
     grow: true,
     onPress() {
@@ -916,7 +916,7 @@ export default function UserSettingsDesignSystemButton() {
   items1[19] = closure_11(Stack48, obj125);
   items48 = [closure_10(closure_6, obj4), ];
   const obj127 = {
-    icon: AssetRegistryDefault2,
+    icon: AssetRegistryDefault4,
     onPress() {
 
     },

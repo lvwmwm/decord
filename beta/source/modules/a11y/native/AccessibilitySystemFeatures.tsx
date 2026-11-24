@@ -1,16 +1,16 @@
-// Module ID: 16889
-// Function ID: 16890
+// Module ID: 15643
+// Function ID: 15644
 // Name: AccessibilitySystemFeatures
-// Dependencies: [17, 5307, 1364, 16890, 11989, 1256, 16891, 2]
+// Dependencies: [17, 4914, 1362, 15644, 11754, 1255, 15645, 2]
 
-// Module 16889 (AccessibilitySystemFeatures)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import AccessibilityConstants from "AccessibilityConstants" /* 1364 */;
-import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11989 */;
-import AccessibilityPreferencesSharedValue from "AccessibilityPreferencesSharedValue" /* 16890 */;
-import AccessibilityActionCreators from "AccessibilityActionCreators" /* 16891 */;
+// Module 15643 (AccessibilitySystemFeatures)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import AccessibilityConstants from "AccessibilityConstants" /* 1362 */;
+import updateSharedValueIfChangedDefault from "updateSharedValueIfChanged" /* 11754 */;
+import AccessibilityPreferencesSharedValue from "AccessibilityPreferencesSharedValue" /* 15644 */;
+import AccessibilityActionCreators from "AccessibilityActionCreators" /* 15645 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5307 */;
+import AccessibilityStore from "AccessibilityStore" /* 4914 */;
 import size from "module_2" /* 2 */;
 
 let closure_8;

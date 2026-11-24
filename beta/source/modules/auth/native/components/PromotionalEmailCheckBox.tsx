@@ -1,15 +1,15 @@
-// Module ID: 18692
-// Function ID: 18693
+// Module ID: 17488
+// Function ID: 17489
 // Name: PromotionalEmailCheckBox
-// Dependencies: [19, 17, 6835, 21, 5306, 5368, 18693, 1113, 7734, 5919, 2]
+// Dependencies: [19, 17, 6426, 21, 4913, 4975, 17489, 1112, 7336, 5504, 2]
 // Exports: default
 
-// Module 18692 (PromotionalEmailCheckBox)
+// Module 17488 (PromotionalEmailCheckBox)
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import PromoEmailConsentStore from "PromoEmailConsentStore" /* 6835 */;
+import PromoEmailConsentStore from "PromoEmailConsentStore" /* 6426 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

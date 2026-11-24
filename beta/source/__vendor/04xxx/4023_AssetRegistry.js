@@ -1,10 +1,10 @@
 // Module ID: 4023
 // Function ID: 4024
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 4023 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9zbGF5ZXJfc3RvcmVmcm9udC9pbnRs", scales: [1], hash: "ae82bc69add6c94aa88d55227a8effbc", name: "sv-SE.messages.ae82bc69add6c94aa88d55227a8effbc.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9wYXJ0bmVyX3BlcmtzL3hib3gvZ2FtZV9wYXNzX3Blcmtz", scales: [1], hash: "8c12a4c1836a7bbfd94eeac8b7acb9f2", name: "zh-CN.messages.8c12a4c1836a7bbfd94eeac8b7acb9f2.compiled.messages", type: "jsona" });

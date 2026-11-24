@@ -1,10 +1,10 @@
-// Module ID: 6325
-// Function ID: 6326
+// Module ID: 5927
+// Function ID: 5928
 // Name: BackPressTracking
-// Dependencies: [19, 17, 6326, 2]
+// Dependencies: [19, 17, 5928, 2]
 // Exports: addBackPressListener, useTrackNavigationBackPress
 
-// Module 6325 (BackPressTracking)
+// Module 5927 (BackPressTracking)
 import react_native from "react-native" /* 17 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

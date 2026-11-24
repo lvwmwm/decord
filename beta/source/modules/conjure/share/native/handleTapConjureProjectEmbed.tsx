@@ -1,29 +1,27 @@
-// Module ID: 14104
-// Function ID: 14105
+// Module ID: 12282
+// Function ID: 12283
 // Name: handleTapConjureProjectEmbed
-// Dependencies: [5, 7017, 12441, 12444, 12759, 13783, 6004, 1113, 4131, 10516, 13778, 13792, 2121, 2]
+// Dependencies: [5, 6621, 11970, 11973, 10688, 12283, 5594, 1112, 4190, 9953, 12284, 12296, 2119, 2]
 // Exports: default
 
-// Module 14104 (handleTapConjureProjectEmbed)
-import ConjureProjectStore2 from "ConjureProjectStore" /* 7017 */;
-import conjureSharedProjectCoverTargetDefault from "conjureSharedProjectCoverTarget" /* 12444 */;
-import launchConjureSharedProjectDefault from "launchConjureSharedProject" /* 13783 */;
+// Module 12282 (handleTapConjureProjectEmbed)
+import ConjureProjectStore2 from "ConjureProjectStore" /* 6621 */;
+import conjureSharedProjectCoverTargetDefault from "conjureSharedProjectCoverTarget" /* 11973 */;
+import launchConjureSharedProjectDefault from "launchConjureSharedProject" /* 12283 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConjureSharedProjectStore from "ConjureSharedProjectStore" /* 12441 */;
+import ConjureSharedProjectStore from "ConjureSharedProjectStore" /* 11970 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let closure_4, project, status;
 
 let tmp;
-const openFrameDefault = tmp(12759);
-function runConjureSharedProjectCoverAction(applicationId, arg1, arg2) {
-  let channelId;
-  let guildId;
+const openFrameDefault = tmp(10688);
+function runConjureSharedProjectCoverAction(applicationId, arg1, channelId) {
   function launchOrReport() {
     return obj(...arguments);
   }
-  const tmp3 = conjureSharedProjectCoverTargetDefault(applicationId, arg1, arg2);
+  const tmp3 = conjureSharedProjectCoverTargetDefault(applicationId, arg1, channelId);
   if (null == tmp3) {
     return false;
   } else if ("open" === tmp3.type) {
@@ -31,10 +29,10 @@ function runConjureSharedProjectCoverAction(applicationId, arg1, arg2) {
     openFrameDefault(obj);
     return true;
   } else {
-    ({ guildId, channelId } = arg2);
-    let flag = null != guildId && null != channelId;
+    channelId = channelId.channelId;
+    let flag = null != channelId;
     if (flag) {
-      launchOrReport(applicationId, guildId, channelId);
+      launchOrReport(applicationId, tmp4, channelId);
       flag = true;
     }
     return flag;
@@ -144,11 +142,10 @@ obj = function _handleTapConjureProjectEmbed() {
               closure_4 = tmp;
               closure_0 = guildId;
               guildId = closure_2;
-              closure_2 = closure_3;
               project = undefined;
               status = status.getStatus(closure_0, guildId);
               let type;
-              const tmp37 = guildId;
+              const tmp32 = guildId;
               if (status != null) {
                 type = status.type;
               }
@@ -172,26 +169,28 @@ obj = function _handleTapConjureProjectEmbed() {
                 }
                 if (null != project) {
                   if (result) {
-                    c5 = 1;
-                    c6 = 1;
-                    const obj5 = { value: require("asyncRequire")(paths[11], paths.paths), done: false };
-                    return obj5;
+                    if ("remix" === closure_3) {
+                      c5 = 1;
+                      c6 = 1;
+                      const obj5 = { value: require("asyncRequire")(paths[11], paths.paths), done: false };
+                      return obj5;
+                    }
                   }
                 }
                 let type2;
                 if (status != null) {
                   type2 = status.type;
                 }
-                let tmp27 = "no_access" !== type2;
-                if (tmp27) {
+                let tmp20 = "no_access" !== type2;
+                if (tmp20) {
                   let type3;
                   if (status != null) {
                     type3 = status.type;
                   }
-                  tmp27 = "expired" !== type3;
+                  tmp20 = "expired" !== type3;
                 }
-                if (tmp27) {
-                  require("openConjureProjectAboutSheet")(closure_0, closure_2, tmp37);
+                if (tmp20) {
+                  require("openConjureProjectAboutSheet")(closure_0, closure_2, tmp32);
                 }
               }
             }
@@ -202,19 +201,13 @@ obj = function _handleTapConjureProjectEmbed() {
             c6 = 3;
             return { value, done: true };
           } else {
-            guildId = guildId.guildId;
-            let str = "remix";
-            const _default = value.default;
-            if ("install" === closure_2) {
-              str = "copy";
-            }
-            _default(project, guildId, str, closure_0);
+            value.default(project, guildId.guildId, closure_0);
           }
           c6 = 3;
           return { value: "HermesInternal", done: null };
-        } catch (tmp32) {
+        } catch (tmp27) {
           c6 = 3;
-          throw tmp32;
+          throw tmp27;
         }
       }
     })();

@@ -1,10 +1,10 @@
 // Module ID: 11204
 // Function ID: 11205
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 11204 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/custom_app_icons/MushroomIcon", width: 60, height: 60, scales: [2, 3], hash: "d0258153ad64bd0da42bc5243da496aa", name: "MushroomIcon", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 32, scales: [1, 2, 3], hash: "d51dcd36c49102cc28f65e2bcdf9f203", name: "ic_file_small_spreadsheet", type: "png" });

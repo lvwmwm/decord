@@ -1,31 +1,31 @@
-// Module ID: 19075
-// Function ID: 19076
+// Module ID: 17871
+// Function ID: 17872
 // Name: GuildsBarGuildFolder
-// Dependencies: [19, 5307, 7060, 5177, 5339, 6946, 19067, 19072, 19064, 21, 5306, 575, 5892, 504, 7720, 5929, 5303, 1090, 1655, 5367, 1708, 6010, 8036, 19076, 19079, 13789, 19086, 1113, 5544, 6907, 7722, 19069, 19087, 2]
+// Dependencies: [19, 4914, 6664, 4784, 4946, 6550, 17863, 17868, 17860, 21, 4913, 575, 5477, 504, 7322, 5514, 4910, 1089, 1653, 4974, 1706, 5600, 7639, 17872, 17875, 12293, 17882, 1112, 5129, 6511, 7324, 17865, 17883, 2]
 
-// Module 19075 (GuildsBarGuildFolder)
+// Module 17871 (GuildsBarGuildFolder)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
-import intl3 from "intl" /* 1113 */;
-import native from "native" /* 5367 */;
-import useToken from "useToken" /* 5892 */;
-import FastImageDefault from "FastImage" /* 6010 */;
-import SortedGuildStore2 from "SortedGuildStore" /* 6946 */;
-import NativeViewDefault from "NativeView" /* 7722 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8036 */;
-import ListUtils from "ListUtils" /* 13789 */;
-import GuildsBarFolderMenuItems from "GuildsBarFolderMenuItems" /* 19069 */;
+import utils_ColorUtils from "utils/ColorUtils" /* 1089 */;
+import intl3 from "intl" /* 1112 */;
+import native from "native" /* 4974 */;
+import useToken from "useToken" /* 5477 */;
+import FastImageDefault from "FastImage" /* 5600 */;
+import SortedGuildStore2 from "SortedGuildStore" /* 6550 */;
+import NativeViewDefault from "NativeView" /* 7324 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7639 */;
+import ListUtils from "ListUtils" /* 12293 */;
+import GuildsBarFolderMenuItems from "GuildsBarFolderMenuItems" /* 17865 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5307 */;
-import GuildReadStateStore from "GuildReadStateStore" /* 7060 */;
-import GuildStore from "GuildStore" /* 5177 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5339 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 19067 */;
-import GuildsBarConstants_mod from "guilds_bar/GuildsBarConstants" /* 19072 */;
-import GuildsBarConstants_mod2 from "GuildsBarConstants" /* 19064 */;
+import AccessibilityStore from "AccessibilityStore" /* 4914 */;
+import GuildReadStateStore from "GuildReadStateStore" /* 6664 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4946 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 17863 */;
+import GuildsBarConstants_mod from "guilds_bar/GuildsBarConstants" /* 17868 */;
+import GuildsBarConstants_mod2 from "GuildsBarConstants" /* 17860 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const SortedGuildStore = SortedGuildStore2;
@@ -42,9 +42,9 @@ let map1;
 let tmp;
 let tmp3;
 let unpackModuleId;
-const ColorUtils = tmp(5303);
-const GuildIcon = tmp(7720);
-const GuildIconDefault = tmp3(7720);
+const ColorUtils = tmp(4910);
+const GuildIcon = tmp(7322);
+const GuildIconDefault = tmp3(7322);
 function MiniGuildIcon(arg0) {
   let guildPreview3;
   let position;
@@ -231,7 +231,7 @@ function GuildFolderIcon(item) {
   if ("icon" === item.type) {
     const obj = { source: AssetRegistryDefault, style: item.tintStyle };
     const tmp5 = FastImageDefault;
-    tmp = closure_17(tmp5, obj);
+    tmp = authStore4(tmp5, obj);
   }
   return tmp;
 }
@@ -265,7 +265,7 @@ function renderGuildFolderContent(arg0, type, state, cleanUp) {
             tmp2 = null;
             if (null != tmp) {
               const obj = { guildId, selected: guildId === type.selectedGuildId, position: tmp };
-              tmp2 = closure_17(MiniGuildIcon, obj, guildId);
+              tmp2 = authStore4(MiniGuildIcon, obj, guildId);
             }
           }
           return tmp2;
@@ -650,8 +650,8 @@ const memoResult1 = react.memo(function GuildsBarGuildFolder(id) {
     const Fragment = react.Fragment;
     const items = [guildPreviewWrapper.guildPreviewWrapper, ];
     let tmp4;
-    const tmp = authStore4;
-    const tmp2 = closure_17;
+    const tmp = closure_18;
+    const tmp2 = authStore4;
     const tmp3 = NativeViewDefault;
     if (!expanded) {
       tmp4 = folderPreviewStyle;

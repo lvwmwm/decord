@@ -1,10 +1,10 @@
 // Module ID: 18278
 // Function ID: 18279
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 18278 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9pbnRs", scales: [1], hash: "c2ef4d902058cc5058baf9b7b6427397", name: "no.messages.c2ef4d902058cc5058baf9b7b6427397.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "3ef4b3974aa9916e2392a41f76914807", name: "ImagePlusIcon", type: "png" });

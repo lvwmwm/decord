@@ -1,24 +1,24 @@
-// Module ID: 15640
-// Function ID: 15641
+// Module ID: 14376
+// Function ID: 14377
 // Name: ChannelHeader
-// Dependencies: [19, 5155, 1072, 5162, 21, 1380, 5491, 12406, 1108, 5483, 563, 6828, 15641, 15642, 15643, 15648, 1113, 15649, 2]
+// Dependencies: [19, 4762, 1071, 4769, 21, 1378, 5098, 11935, 1107, 5090, 563, 6419, 14377, 14378, 14379, 14384, 1112, 14385, 2]
 // Exports: default, navigateToChannelDetails
 
-// Module 15640 (ChannelHeader)
+// Module 14376 (ChannelHeader)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1072 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
-import ChannelConstants from "ChannelConstants" /* 5162 */;
-import RootNavigationRef from "RootNavigationRef" /* 5483 */;
-import ChatInputUtils from "ChatInputUtils" /* 5491 */;
-import SwipeToMemberListUtils from "SwipeToMemberListUtils" /* 12406 */;
-import GuildRoleSubscriptionsChannelHeaderDefault from "GuildRoleSubscriptionsChannelHeader" /* 15641 */;
-import HomeChannelHeaderDefault from "HomeChannelHeader" /* 15642 */;
-import PrivateChannelHeaderDefault from "PrivateChannelHeader" /* 15643 */;
-import ForumChannelHeaderDefault from "ForumChannelHeader" /* 15648 */;
-import GuildChannelHeaderDefault from "GuildChannelHeader" /* 15649 */;
+import Constants from "Constants" /* 1071 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
+import ChannelConstants from "ChannelConstants" /* 4769 */;
+import RootNavigationRef from "RootNavigationRef" /* 5090 */;
+import ChatInputUtils from "ChatInputUtils" /* 5098 */;
+import SwipeToMemberListUtils from "SwipeToMemberListUtils" /* 11935 */;
+import GuildRoleSubscriptionsChannelHeaderDefault from "GuildRoleSubscriptionsChannelHeader" /* 14377 */;
+import HomeChannelHeaderDefault from "HomeChannelHeader" /* 14378 */;
+import PrivateChannelHeaderDefault from "PrivateChannelHeader" /* 14379 */;
+import ForumChannelHeaderDefault from "ForumChannelHeader" /* 14384 */;
+import GuildChannelHeaderDefault from "GuildChannelHeader" /* 14385 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
 import size from "module_2" /* 2 */;
 
 const ComponentActions = Constants.ComponentActions;
@@ -50,7 +50,7 @@ export default function ChannelHeader(channelId) {
   const items = [ChannelStore];
   const obj = channelId(563);
   const stateFromStores = obj.useStateFromStores(items, () => ChannelStore.getChannel(channelId));
-  const obj3 = channelId(6828);
+  const obj3 = channelId(6419);
   const isChannelContentGated = obj3.useIsChannelContentGated(stateFromStores);
   if (channelId === StaticChannelRoute.ROLE_SUBSCRIPTIONS) {
     tmp8Result = jsx(GuildRoleSubscriptionsChannelHeaderDefault, {});
@@ -77,8 +77,8 @@ export default function ChannelHeader(channelId) {
         }
         stringResult = undefined;
         if (!stateFromStores.isForumChannel()) {
-          const intl = tmp(1113).intl;
-          stringResult = intl.string(tmp(1113).t["L9fR+P"]);
+          const intl = tmp(1112).intl;
+          stringResult = intl.string(tmp(1112).t["L9fR+P"]);
         }
         tmp8Result = tmp8(tmp9Result, obj4);
       } else {
@@ -105,7 +105,7 @@ export function navigateToChannelDetails(channelId, screenIndex, source) {
   }
   const tmpResult3 = SwipeToMemberListUtils;
   if (tmpResult3.isSwipeToMemberListEnabledForChannel(channelId)) {
-    const ComponentDispatch = tmp(1108).ComponentDispatch;
+    const ComponentDispatch = tmp(1107).ComponentDispatch;
     const obj2 = { source, channelId, screenIndex };
     ComponentDispatch.dispatch(ComponentActions.SHOW_CHANNEL_DETAILS, obj2);
   } else {

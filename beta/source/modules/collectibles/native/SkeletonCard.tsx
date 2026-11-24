@@ -1,19 +1,19 @@
-// Module ID: 10455
-// Function ID: 10456
+// Module ID: 9895
+// Function ID: 9896
 // Name: SkeletonCard
-// Dependencies: [19, 21, 5306, 575, 10416, 1655, 5538, 2]
+// Dependencies: [19, 21, 4913, 575, 9545, 1653, 5123, 2]
 // Exports: default
 
-// Module 10455 (SkeletonCard)
+// Module 9895 (SkeletonCard)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import timing_timing from "timing/timing" /* 5538 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import timing_timing from "timing/timing" /* 5123 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
-const _modDef1655 = _mod1655;
+const _modDef1653 = _mod1653;
 let set;
 
 const jsx = Fragment.jsx;
@@ -32,30 +32,30 @@ export default function _default(width) {
   let tmp11;
   let COLLECTIBLES_SHOP_CARD_WIDTH = width.width;
   if (COLLECTIBLES_SHOP_CARD_WIDTH === undefined) {
-    COLLECTIBLES_SHOP_CARD_WIDTH = sharedValue(10416).COLLECTIBLES_SHOP_CARD_WIDTH;
+    COLLECTIBLES_SHOP_CARD_WIDTH = sharedValue(9545).COLLECTIBLES_SHOP_CARD_WIDTH;
   }
   let COLLECTIBLES_SHOP_CARD_HEIGHT = width.height;
   sharedValue = undefined;
   const style = width.style;
   const tmp3 = closure_5;
   if (COLLECTIBLES_SHOP_CARD_HEIGHT == null) {
-    COLLECTIBLES_SHOP_CARD_HEIGHT = sharedValue(10416).COLLECTIBLES_SHOP_CARD_HEIGHT;
+    COLLECTIBLES_SHOP_CARD_HEIGHT = sharedValue(9545).COLLECTIBLES_SHOP_CARD_HEIGHT;
   }
   const tmp3Result = tmp3(COLLECTIBLES_SHOP_CARD_WIDTH, COLLECTIBLES_SHOP_CARD_HEIGHT);
-  let obj = sharedValue(1655);
+  let obj = sharedValue(1653);
   sharedValue = obj.useSharedValue(0.3);
   const items = [sharedValue];
   const effect = react.useEffect(() => {
     set = sharedValue.set;
-    const withRepeat = _mod1655.withRepeat;
-    _mod1655;
+    const withRepeat = _mod1653.withRepeat;
+    _mod1653;
     const obj = timing_timing;
     const result = set(withRepeat(obj.withTiming(1, { duration: 650 }), -1, true));
   }, items);
   const items1 = [closure_6, sharedValue];
   let c0;
   [tmp10, tmp11] = items1;
-  const obj2 = sharedValue(1655);
+  const obj2 = sharedValue(1653);
   class SkeletonCardTsx1 {
     constructor() {
       const obj = { opacity: _undefined.get() };
@@ -68,5 +68,5 @@ export default function _default(width) {
   SkeletonCardTsx1.__initData = tmp10;
   const animatedStyle = obj2.useAnimatedStyle(SkeletonCardTsx1);
   const items3 = [tmp3Result.skeletonCard, style, animatedStyle];
-  return jsx(_modDef1655.View, { style: items3 });
+  return jsx(_modDef1653.View, { style: items3 });
 };

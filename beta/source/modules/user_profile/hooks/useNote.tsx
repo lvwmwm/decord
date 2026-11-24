@@ -1,15 +1,15 @@
-// Module ID: 15775
-// Function ID: 15776
+// Module ID: 14514
+// Function ID: 14515
 // Name: useNote
-// Dependencies: [5, 19, 15776, 1072, 504, 572, 1285, 2]
+// Dependencies: [5, 19, 14515, 1071, 504, 572, 1284, 2]
 // Exports: default
 
-// Module 15775 (useNote)
+// Module 14514 (useNote)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import Constants from "Constants" /* 1072 */;
+import Constants from "Constants" /* 1071 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import NoteStore from "NoteStore" /* 15776 */;
+import NoteStore from "NoteStore" /* 14515 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

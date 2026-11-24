@@ -1,11 +1,11 @@
-// Module ID: 12438
-// Function ID: 12439
+// Module ID: 11967
+// Function ID: 11968
 // Name: SocialLayerStorefrontMobileMultiSkuEmbedExperiment
-// Dependencies: [1452, 2]
+// Dependencies: [1450, 2]
 // Exports: getIsEligibleForSocialLayerStorefrontMobileMultiSkuEmbed
 
-// Module 12438 (SocialLayerStorefrontMobileMultiSkuEmbedExperiment)
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+// Module 11967 (SocialLayerStorefrontMobileMultiSkuEmbedExperiment)
+import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 
 const obj = { name: "2026-10-social-layer-storefront-mobile-multi-sku-embed", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };

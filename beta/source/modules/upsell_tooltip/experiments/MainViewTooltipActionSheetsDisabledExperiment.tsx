@@ -1,10 +1,10 @@
-// Module ID: 19852
-// Function ID: 19853
+// Module ID: 19103
+// Function ID: 19104
 // Name: MainViewTooltipActionSheetsDisabledExperiment
-// Dependencies: [1452, 2]
+// Dependencies: [1450, 2]
 
-// Module 19852 (MainViewTooltipActionSheetsDisabledExperiment)
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+// Module 19103 (MainViewTooltipActionSheetsDisabledExperiment)
+import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 
 const obj = { kind: "user", name: "2026-01-mobile-action-sheet-killswitch", defaultConfig: { disabled: false }, variations: { 0: { disabled: false }, 1: { disabled: true } } };

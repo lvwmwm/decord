@@ -1,30 +1,30 @@
-// Module ID: 16215
-// Function ID: 16216
+// Module ID: 14988
+// Function ID: 14989
 // Name: GuildMediaStateStore
-// Dependencies: [5154, 7029, 5160, 5159, 6810, 502, 5155, 5177, 5238, 5248, 5209, 6948, 5971, 1072, 1093, 5227, 16216, 8426, 11, 6818, 7864, 504, 558, 572, 2]
+// Dependencies: [4761, 6633, 4767, 4766, 6400, 502, 4762, 4784, 4845, 4855, 4816, 6552, 5561, 1071, 1092, 4834, 14989, 8017, 11, 6409, 7466, 504, 558, 572, 2]
 
-// Module 16215 (GuildMediaStateStore)
+// Module 14988 (GuildMediaStateStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import shallowEqualDefault from "shallowEqual" /* 558 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ChannelTypes from "ChannelTypes" /* 1093 */;
-import ChannelRecord from "ChannelRecord" /* 5159 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 5227 */;
-import BlockedUserUtils from "BlockedUserUtils" /* 16216 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5154 */;
-import GuildScheduledEventStore from "GuildScheduledEventStore" /* 7029 */;
-import StageInstanceStore from "StageInstanceStore" /* 5160 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6810 */;
+import ChannelTypes from "ChannelTypes" /* 1092 */;
+import ChannelRecord from "ChannelRecord" /* 4766 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4834 */;
+import BlockedUserUtils from "BlockedUserUtils" /* 14989 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4761 */;
+import GuildScheduledEventStore from "GuildScheduledEventStore" /* 6633 */;
+import StageInstanceStore from "StageInstanceStore" /* 4767 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6400 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import GuildStore from "GuildStore" /* 5177 */;
-import PermissionStore from "PermissionStore" /* 5238 */;
-import RelationshipStore from "RelationshipStore" /* 5248 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6948 */;
-import VoiceStateStore from "VoiceStateStore" /* 5971 */;
-import Constants from "Constants" /* 1072 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
+import RelationshipStore from "RelationshipStore" /* 4855 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4816 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6552 */;
+import VoiceStateStore from "VoiceStateStore" /* 5561 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -170,7 +170,7 @@ function computeGuildMediaState(id) {
     if (basicChannel != null) {
       type = basicChannel.type;
     }
-    let tmp6 = type !== tmp2(1093).ChannelTypes.GUILD_SPACE;
+    let tmp6 = type !== tmp2(1092).ChannelTypes.GUILD_SPACE;
     if (tmp6) {
       let tmp8 = 0 === closure_1.blockedOrIgnoredUserIds.size;
       if (!tmp8) {
@@ -257,7 +257,7 @@ function computeGuildMediaState(id) {
           _location = first.location;
         }
         let embeddedActivityLocationChannelId = getEmbeddedActivityLocationChannelId(_location);
-        let tmp29Result = tmp29(7864);
+        let tmp29Result = tmp29(7466);
         if (tmp29Result.isActivitiesInTextEnabled(ChannelStore.getChannel(embeddedActivityLocationChannelId))) {
           someResult2 = found.length > 0;
         } else {
@@ -270,7 +270,7 @@ function computeGuildMediaState(id) {
           });
         }
         let obj4 = { audio: flag2, video: flag, screenshare: someResult, liveStage: someResult1, activeEvent: null != tmp29Result2.getGuildActiveEvent(id), activity: someResult2, isCurrentUserConnected: false };
-        let tmp29Result2 = tmp29(8426);
+        let tmp29Result2 = tmp29(8017);
         return obj4;
       }
       continue;

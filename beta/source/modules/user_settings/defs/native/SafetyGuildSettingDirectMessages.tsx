@@ -1,21 +1,21 @@
-// Module ID: 18575
-// Function ID: 18576
+// Module ID: 17371
+// Function ID: 17372
 // Name: SafetyGuildSettingDirectMessages
-// Dependencies: [5177, 18567, 9202, 12409, 17348, 18570, 5131, 6258, 1113, 6330, 7813, 18576, 12408, 2]
+// Dependencies: [4784, 17363, 8712, 11938, 16116, 17366, 4738, 5860, 1112, 5932, 7415, 17372, 11937, 2]
 
-// Module 18575 (SafetyGuildSettingDirectMessages)
-import intl5 from "intl" /* 1113 */;
-import UserSettings from "UserSettings" /* 5131 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6258 */;
-import AlertDefault from "Alert" /* 6330 */;
-import SettingsConstants from "SettingsConstants" /* 9202 */;
-import SettingRendererConstants from "SettingRendererConstants" /* 12409 */;
-import useParentalControlSettings from "useParentalControlSettings" /* 17348 */;
-import DefultGuildsRestrictedSetting from "DefultGuildsRestrictedSetting" /* 18570 */;
-import useAllowFriendsFromMutualGuildsOnly from "useAllowFriendsFromMutualGuildsOnly" /* 18576 */;
-import GuildStore from "GuildStore" /* 5177 */;
-import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 18567 */;
-import SettingBuilders from "SettingBuilders" /* 12408 */;
+// Module 17371 (SafetyGuildSettingDirectMessages)
+import intl5 from "intl" /* 1112 */;
+import UserSettings from "UserSettings" /* 4738 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5860 */;
+import AlertDefault from "Alert" /* 5932 */;
+import SettingsConstants from "SettingsConstants" /* 8712 */;
+import SettingRendererConstants from "SettingRendererConstants" /* 11938 */;
+import useParentalControlSettings from "useParentalControlSettings" /* 16116 */;
+import DefultGuildsRestrictedSetting from "DefultGuildsRestrictedSetting" /* 17366 */;
+import useAllowFriendsFromMutualGuildsOnly from "useAllowFriendsFromMutualGuildsOnly" /* 17372 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import UserSettingsSafetySelectedGuildStore from "UserSettingsSafetySelectedGuildStore" /* 17363 */;
+import SettingBuilders from "SettingBuilders" /* 11937 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -48,9 +48,9 @@ let obj = {
     const allowFriendsFromMutualGuildsOnly = obj.useAllowFriendsFromMutualGuildsOnly();
     if (selectedGuildId === closure_6) {
       let string2Result;
-      const intl2 = tmp(1113).intl;
+      const intl2 = tmp(1112).intl;
       const string2 = intl2.string;
-      const t2 = tmp(1113).t;
+      const t2 = tmp(1112).t;
       if (allowFriendsFromMutualGuildsOnly) {
         string2Result = string2(t2.XXGmuB);
       } else {
@@ -58,9 +58,9 @@ let obj = {
       }
       stringResult = string2Result;
     } else {
-      const intl = tmp(1113).intl;
+      const intl = tmp(1112).intl;
       const string = intl.string;
-      const t = tmp(1113).t;
+      const t = tmp(1112).t;
       if (allowFriendsFromMutualGuildsOnly) {
         stringResult = string(t.F9WY3f);
       } else {
@@ -132,7 +132,7 @@ let obj = {
       } else {
         sanitizedRestrictedGuilds.add(tmp);
       }
-      let RestrictedGuildIds = tmp2(5131).RestrictedGuildIds;
+      let RestrictedGuildIds = tmp2(4738).RestrictedGuildIds;
       const _Array = Array;
       RestrictedGuildIds.updateSetting(Array.from(sanitizedRestrictedGuilds));
     }

@@ -1,10 +1,10 @@
-// Module ID: 8570
-// Function ID: 8571
+// Module ID: 8160
+// Function ID: 8161
 // Name: computeProfileFrameDimensions
-// Dependencies: [8571, 8568, 8569, 2]
+// Dependencies: [8161, 8158, 8159, 2]
 // Exports: computeProfileFrameDimensions
 
-// Module 8570 (computeProfileFrameDimensions)
+// Module 8160 (computeProfileFrameDimensions)
 import size from "module_2" /* 2 */;
 
 let layer;
@@ -13,7 +13,7 @@ const result = size.fileFinishedImporting("modules/collectibles/profile_frames/t
 
 export function computeProfileFrameDimensions(arr) {
   let innerWidth;
-  innerWidth = innerWidth(8571).DefaultProfileFrameDimensions.INNER_WIDTH;
+  innerWidth = innerWidth(8161).DefaultProfileFrameDimensions.INNER_WIDTH;
   const mapped = arr.map((dims) => Math.round(Math.max(0, (dims.dims.width - innerWidth) / 2)));
   let overflowHorizontal = 0;
   if (mapped.length > 0) {

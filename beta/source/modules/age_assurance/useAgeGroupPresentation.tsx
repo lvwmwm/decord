@@ -1,16 +1,16 @@
-// Module ID: 10812
-// Function ID: 10813
+// Module ID: 10526
+// Function ID: 10527
 // Name: useAgeGroupPresentation
-// Dependencies: [1072, 6820, 8190, 2188, 6823, 1113, 2]
+// Dependencies: [1071, 6411, 7793, 2187, 6414, 1112, 2]
 // Exports: handleOpenAgeGatedContentArticle, handleShowAgeVerification, useAgeGroupState, useAgeGroupValueLabel
 
-// Module 10812 (useAgeGroupPresentation)
-import Constants from "Constants" /* 1072 */;
-import intl4 from "intl" /* 1113 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6820 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6823 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8190 */;
+// Module 10526 (useAgeGroupPresentation)
+import Constants from "Constants" /* 1071 */;
+import intl4 from "intl" /* 1112 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2187 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6411 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6414 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7793 */;
 import size from "module_2" /* 2 */;
 
 const HelpdeskArticles = Constants.HelpdeskArticles;
@@ -58,13 +58,13 @@ export function useAgeGroupValueLabel() {
     tmp5 = tmp4;
   }
   if (tmp5.ADULT === UNVERIFIED) {
-    const intl3 = tmp(1113).intl;
+    const intl3 = tmp(1112).intl;
     return intl3.string(intl4.t.XxRj7f);
   } else if (tmp5.TEEN === UNVERIFIED) {
-    const intl2 = tmp(1113).intl;
+    const intl2 = tmp(1112).intl;
     return intl2.string(intl4.t.sK0dmH);
   } else if (tmp5.UNVERIFIED === UNVERIFIED) {
-    const intl = tmp(1113).intl;
+    const intl = tmp(1112).intl;
     return intl.string(intl4.t.lKDPGA);
   }
 }

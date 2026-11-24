@@ -1,10 +1,10 @@
 // Module ID: 15768
 // Function ID: 15769
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 15768 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "7f6039bf3e89b748bf345decabdfb1bd", name: "SoundboardSlashIcon", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 24, height: 24, scales: [2, 3], hash: "f6cc137da3a192935ccaaac37e4eb9a2", name: "ic_call_status_green_24px", type: "png" });

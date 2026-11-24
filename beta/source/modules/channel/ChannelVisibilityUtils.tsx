@@ -1,13 +1,13 @@
-// Module ID: 11020
-// Function ID: 11021
+// Module ID: 11108
+// Function ID: 11109
 // Name: ChannelVisibilityUtils
-// Dependencies: [7036, 5209, 5339, 2]
+// Dependencies: [6640, 4816, 4946, 2]
 // Exports: isChannelCurrentlyVisible
 
-// Module 11020 (ChannelVisibilityUtils)
-import ChannelSectionStore from "ChannelSectionStore" /* 7036 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5339 */;
+// Module 11108 (ChannelVisibilityUtils)
+import ChannelSectionStore from "ChannelSectionStore" /* 6640 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4816 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4946 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/channel/ChannelVisibilityUtils.tsx");

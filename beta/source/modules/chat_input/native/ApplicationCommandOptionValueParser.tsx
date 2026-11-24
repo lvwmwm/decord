@@ -1,25 +1,25 @@
-// Module ID: 13440
-// Function ID: 13441
+// Module ID: 12860
+// Function ID: 12861
 // Name: ApplicationCommandOptionValueParser
-// Dependencies: [32, 19, 7014, 5159, 5236, 5218, 5212, 5248, 1388, 6336, 12, 1255, 5944, 6952, 2119, 8786, 2]
+// Dependencies: [32, 19, 6618, 4766, 4843, 4825, 4819, 4855, 1386, 5938, 12, 1254, 5529, 6556, 2117, 8382, 2]
 // Exports: getRoles, parseOptionValuesForSend, useApplicationCommandOptionValueParser
 
-// Module 13440 (ApplicationCommandOptionValueParser)
+// Module 12860 (ApplicationCommandOptionValueParser)
 import _modDef12 from "module_12" /* 12 */;
-import GlobalUtils from "GlobalUtils" /* 1255 */;
-import Server from "Server" /* 2119 */;
-import ChannelRecord from "ChannelRecord" /* 5159 */;
-import useChannelName from "useChannelName" /* 5944 */;
-import MessageParser from "MessageParser" /* 8786 */;
+import GlobalUtils from "GlobalUtils" /* 1254 */;
+import Server from "Server" /* 2117 */;
+import ChannelRecord from "ChannelRecord" /* 4766 */;
+import useChannelName from "useChannelName" /* 5529 */;
+import MessageParser from "MessageParser" /* 8382 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 7014 */;
-import GuildChannelStore from "GuildChannelStore" /* 5236 */;
-import GuildMemberStore from "GuildMemberStore" /* 5218 */;
-import GuildRoleStore from "GuildRoleStore" /* 5212 */;
-import RelationshipStore from "RelationshipStore" /* 5248 */;
-import UserStore from "UserStore" /* 1388 */;
-import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 6336 */;
+import ActiveJoinedThreadsStore from "ActiveJoinedThreadsStore" /* 6618 */;
+import GuildChannelStore from "GuildChannelStore" /* 4843 */;
+import GuildMemberStore from "GuildMemberStore" /* 4825 */;
+import GuildRoleStore from "GuildRoleStore" /* 4819 */;
+import RelationshipStore from "RelationshipStore" /* 4855 */;
+import UserStore from "UserStore" /* 1386 */;
+import ChannelAutocompleteConstants from "ChannelAutocompleteConstants" /* 5938 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -28,7 +28,7 @@ let _require, dependencyMap;
 
 let closure_12;
 let map1;
-const f107421 = (id) => ({ id: id.id, text: id.name });
+const f102663 = (id) => ({ id: id.id, text: id.name });
 function getUsers(getGuildId) {
   let mapped;
   let user;
@@ -116,7 +116,7 @@ class ApplicationCommandOptionValueParser {
       let tmp17;
       let tmp7;
       let tmp8;
-      const f107426 = (text) => -text.text.length;
+      const f102668 = (text) => -text.text.length;
       const trimmed = text.trim();
       const tmp = obj;
       const arr2 = closure_2_15(obj.channel);
@@ -127,7 +127,7 @@ class ApplicationCommandOptionValueParser {
         sortedRoles = [];
       }
       const arr4 = closure_2_1(closure_2_2[10])(sortedRoles);
-      let closure_2 = arr4.map(f107421);
+      let closure_2 = arr4.map(f102663);
       let closure_3 = arr2.map((text) => {
         obj = { text: str.split("#")[0] };
         const merged = Object.assign(text);
@@ -140,7 +140,7 @@ class ApplicationCommandOptionValueParser {
           let firstResult = null;
           if (trimmed[0] === closure_2_12) {
             let closure_1 = str.substr(arr.length);
-            const sortByResult = obj.sortBy(f107426);
+            const sortByResult = obj.sortBy(f102668);
             const found = sortByResult.filter((text) => {
               const str = text.text;
               const formatted = closure_1.toLowerCase();
@@ -162,7 +162,7 @@ class ApplicationCommandOptionValueParser {
               let firstResult1 = null;
               if (trimmed[0] === closure_2_12) {
                 closure_1 = str.substr(arr.length);
-                const sortByResult1 = obj6.sortBy(f107426);
+                const sortByResult1 = obj6.sortBy(f102668);
                 const found1 = sortByResult1.filter((text) => {
                   const str = text.text;
                   const formatted = closure_1.toLowerCase();
@@ -224,7 +224,7 @@ class ApplicationCommandOptionValueParser {
           let firstResult = null;
           if (str[0] === arr) {
             let closure_1 = str.substr(arr.length);
-            const sortByResult = obj.sortBy(f107426);
+            const sortByResult = obj.sortBy(f102668);
             const found = sortByResult.filter((text) => {
               const str = text.text;
               const formatted = closure_1.toLowerCase();
@@ -260,7 +260,7 @@ class ApplicationCommandOptionValueParser {
           let firstResult = null;
           if (trimmed[0] === closure_2_13) {
             let closure_1 = trimmed.substr(arr7.length);
-            let sortByResult = obj8.sortBy(f107426);
+            let sortByResult = obj8.sortBy(f102668);
             let found = sortByResult.filter((text) => {
               const str = text.text;
               const formatted = closure_1.toLowerCase();
@@ -328,7 +328,7 @@ export function getRoles(guild_id) {
     sortedRoles = [];
   }
   const arr2 = _modDef12(sortedRoles);
-  return arr2.map(f107421);
+  return arr2.map(f102663);
 }
 export { getChannels };
 export { ApplicationCommandOptionValueParser };
@@ -380,7 +380,7 @@ export function useApplicationCommandOptionValueParser(channel) {
         let tmp17;
         let tmp7;
         let tmp8;
-        const f107426 = (text) => -text.text.length;
+        const f102668 = (text) => -text.text.length;
         const trimmed = text.trim();
         const tmp = obj;
         const arr2 = closure_2_15(obj.channel);
@@ -391,7 +391,7 @@ export function useApplicationCommandOptionValueParser(channel) {
           sortedRoles = [];
         }
         const arr4 = closure_2_1(closure_2_2[10])(sortedRoles);
-        let closure_2 = arr4.map(f107421);
+        let closure_2 = arr4.map(f102663);
         let closure_3 = arr2.map((text) => {
           obj = { text: str.split("#")[0] };
           const merged = Object.assign(text);
@@ -404,7 +404,7 @@ export function useApplicationCommandOptionValueParser(channel) {
             let firstResult = null;
             if (trimmed[0] === closure_2_12) {
               let closure_1 = str.substr(arr.length);
-              const sortByResult = obj.sortBy(f107426);
+              const sortByResult = obj.sortBy(f102668);
               const found = sortByResult.filter((text) => {
                 const str = text.text;
                 const formatted = closure_1.toLowerCase();
@@ -426,7 +426,7 @@ export function useApplicationCommandOptionValueParser(channel) {
                 let firstResult1 = null;
                 if (trimmed[0] === closure_2_12) {
                   closure_1 = str.substr(arr.length);
-                  const sortByResult1 = obj6.sortBy(f107426);
+                  const sortByResult1 = obj6.sortBy(f102668);
                   const found1 = sortByResult1.filter((text) => {
                     const str = text.text;
                     const formatted = closure_1.toLowerCase();
@@ -488,7 +488,7 @@ export function useApplicationCommandOptionValueParser(channel) {
             let firstResult = null;
             if (str[0] === arr) {
               let closure_1 = str.substr(arr.length);
-              const sortByResult = obj.sortBy(f107426);
+              const sortByResult = obj.sortBy(f102668);
               const found = sortByResult.filter((text) => {
                 const str = text.text;
                 const formatted = closure_1.toLowerCase();
@@ -524,7 +524,7 @@ export function useApplicationCommandOptionValueParser(channel) {
             let firstResult = null;
             if (trimmed[0] === closure_2_13) {
               let closure_1 = trimmed.substr(arr7.length);
-              let sortByResult = obj8.sortBy(f107426);
+              let sortByResult = obj8.sortBy(f102668);
               let found = sortByResult.filter((text) => {
                 const str = text.text;
                 const formatted = closure_1.toLowerCase();

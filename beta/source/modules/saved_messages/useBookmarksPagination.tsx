@@ -1,15 +1,15 @@
-// Module ID: 11913
-// Function ID: 11914
+// Module ID: 11688
+// Function ID: 11689
 // Name: useBookmarksPagination
-// Dependencies: [19, 11909, 1072, 11912, 504, 11911, 11905, 2]
+// Dependencies: [19, 11684, 1071, 11687, 504, 11686, 11680, 2]
 // Exports: default
 
-// Module 11913 (useBookmarksPagination)
-import Constants from "Constants" /* 1072 */;
-import SavedMessagesTypes from "SavedMessagesTypes" /* 11905 */;
-import SavedMessagesActions from "SavedMessagesActions" /* 11912 */;
+// Module 11688 (useBookmarksPagination)
+import Constants from "Constants" /* 1071 */;
+import SavedMessagesTypes from "SavedMessagesTypes" /* 11680 */;
+import SavedMessagesActions from "SavedMessagesActions" /* 11687 */;
 import react from "react" /* 19 */;
-import SavedMessagesStore from "SavedMessagesStore" /* 11909 */;
+import SavedMessagesStore from "SavedMessagesStore" /* 11684 */;
 import size from "module_2" /* 2 */;
 
 function loadMoreBookmarks() {

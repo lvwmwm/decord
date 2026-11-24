@@ -1,17 +1,17 @@
-// Module ID: 19200
-// Function ID: 19201
+// Module ID: 18002
+// Function ID: 18003
 // Name: SecureFramesCallVerificationBottomSheet
-// Dependencies: [19, 6061, 1072, 21, 504, 10630, 10230, 10643, 1113, 10627, 2]
+// Dependencies: [19, 5654, 1071, 21, 504, 9710, 9718, 9732, 1112, 9707, 2]
 // Exports: default
 
-// Module 19200 (SecureFramesCallVerificationBottomSheet)
+// Module 18002 (SecureFramesCallVerificationBottomSheet)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1072 */;
-import showShareActionSheet from "showShareActionSheet" /* 10230 */;
-import SecureFramesTracking from "SecureFramesTracking" /* 10630 */;
-import SecureFramesVerificationBottomSheetDefault from "SecureFramesVerificationBottomSheet" /* 10643 */;
+import Constants from "Constants" /* 1071 */;
+import SecureFramesTracking from "SecureFramesTracking" /* 9710 */;
+import showShareActionSheet from "showShareActionSheet" /* 9718 */;
+import SecureFramesVerificationBottomSheetDefault from "SecureFramesVerificationBottomSheet" /* 9732 */;
 import react from "react" /* 19 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 6061 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5654 */;
 import size from "module_2" /* 2 */;
 
 let secureFramesState;
@@ -43,12 +43,12 @@ export default function SecureFramesCallVerificationBottomSheet(channelId) {
     obj3.showShareActionSheet(obj4, AnalyticsSections.SECURE_FRAMES_STREAM_BOTTOM_SHEET);
   }, items1);
   SecureFramesVerificationBottomSheetDefault;
-  const intl = channelId(1113).intl;
-  const intl2 = channelId(1113).intl;
-  const intl3 = channelId(1113).intl;
+  const intl = channelId(1112).intl;
+  const intl2 = channelId(1112).intl;
+  const intl3 = channelId(1112).intl;
   const format = intl3.format;
   let obj3 = { helpArticle: obj4.getSecureFramesHelpdeskArticle() };
-  const wKxADe = channelId(1113).t.wKxADe;
-  obj4 = channelId(10627);
-  return <tmp3 title={intl.string(channelId(1113).t.cTQI5t)} subtitle={intl2.string(channelId(1113).t["MPp7+C"])} footer={format(wKxADe, obj3)} epochAuthenticator={stateFromStores} onShareClick={callback} />;
+  const wKxADe = channelId(1112).t.wKxADe;
+  obj4 = channelId(9707);
+  return <tmp3 title={intl.string(channelId(1112).t.cTQI5t)} subtitle={intl2.string(channelId(1112).t["MPp7+C"])} footer={format(wKxADe, obj3)} epochAuthenticator={stateFromStores} onShareClick={callback} />;
 };

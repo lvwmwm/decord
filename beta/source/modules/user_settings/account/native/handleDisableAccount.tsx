@@ -1,16 +1,16 @@
-// Module ID: 17340
-// Function ID: 17341
+// Module ID: 16108
+// Function ID: 16109
 // Name: handleDisableAccount
-// Dependencies: [5177, 1388, 1113, 7800, 17300, 6258, 2]
+// Dependencies: [4784, 1386, 1112, 7402, 16068, 5860, 2]
 // Exports: default
 
-// Module 17340 (handleDisableAccount)
-import intl5 from "intl" /* 1113 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6258 */;
-import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 7800 */;
-import showUserSettingsInputAlertDefault from "showUserSettingsInputAlert" /* 17300 */;
-import GuildStore from "GuildStore" /* 5177 */;
-import UserStore from "UserStore" /* 1388 */;
+// Module 16108 (handleDisableAccount)
+import intl5 from "intl" /* 1112 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5860 */;
+import UserSettingsAccountActionCreators from "UserSettingsAccountActionCreators" /* 7402 */;
+import showUserSettingsInputAlertDefault from "showUserSettingsInputAlert" /* 16068 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_settings/account/native/handleDisableAccount.tsx");
@@ -31,7 +31,7 @@ export default function handleDisableAccount() {
   const t = intl5.t;
   if (someResult) {
     const stringResult = string(t.vJiTOL);
-    const intl4 = tmp4(1113).intl;
+    const intl4 = tmp4(1112).intl;
     let obj = { title: stringResult, body: intl4.string(intl5.t.UyVVan) };
     const stringResult1 = intl4.string(intl5.t.UyVVan);
     const obj3 = AlertActionCreatorsDefault;
@@ -46,7 +46,7 @@ export default function handleDisableAccount() {
         const obj = UserSettingsAccountActionCreators;
         return obj.disableAccount(password, true);
       };
-      const intl3 = tmp4(1113).intl;
+      const intl3 = tmp4(1112).intl;
       const str3 = intl3.string(intl5.t["8lQ2rR"]);
       obj2.title = str3.toUpperCase();
       obj2.placeholder = formatted;
@@ -56,7 +56,7 @@ export default function handleDisableAccount() {
         const obj = UserSettingsAccountActionCreators;
         return obj.disableAccount(password, false);
       };
-      const intl2 = tmp4(1113).intl;
+      const intl2 = tmp4(1112).intl;
       const str2 = intl2.string(intl5.t.jf5GGb);
       obj2.title = str2.toUpperCase();
       obj2.placeholder = formatted;

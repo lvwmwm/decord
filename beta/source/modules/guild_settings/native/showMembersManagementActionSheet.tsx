@@ -1,13 +1,13 @@
-// Module ID: 19417
-// Function ID: 19418
+// Module ID: 18219
+// Function ID: 18220
 // Name: showMembersManagementActionSheet
-// Dependencies: [1388, 1113, 5542, 19418, 2121, 7282, 19419, 7948, 2]
+// Dependencies: [1386, 1112, 5127, 18220, 2119, 6887, 18221, 7550, 2]
 // Exports: default, getMembersManagementActions
 
-// Module 19417 (showMembersManagementActionSheet)
-import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
-import UserStore from "UserStore" /* 1388 */;
+// Module 18219 (showMembersManagementActionSheet)
+import asyncRequire from "asyncRequire" /* 2119 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
+import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/guild_settings/native/showMembersManagementActionSheet.tsx");
@@ -21,34 +21,34 @@ export default function showMembersManagementActionSheet(guild) {
   guild = guild.guild;
   ({ canPrune, selectedRoleId: importDefault, onFilterRoleId: dependencyMap } = guild);
   let obj = {
-    label: intl.string(guild(1113).t.pEasFX),
+    label: intl.string(guild(1112).t.pEasFX),
     onPress() {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { guild, selectedRoleId: importDefault, onFilterRoleId: dependencyMap };
-      obj.openLazy(asyncRequire(19418, dependencyMap.paths), "MembersFilter", obj2);
+      obj.openLazy(asyncRequire(18220, dependencyMap.paths), "MembersFilter", obj2);
     }
   };
-  intl = guild(1113).intl;
+  intl = guild(1112).intl;
   const items = [obj];
   if (canPrune == null) {
-    const tmpResult = guild(7282);
+    const tmpResult = guild(6887);
     canPrune = tmpResult.canPruneGuildMembers(guild, UserStore.getCurrentUser());
   }
   if (canPrune) {
     let obj2 = {
-      label: intl2.string(guild(1113).t["2mIlKQ"]),
+      label: intl2.string(guild(1112).t["2mIlKQ"]),
       onPress() {
           const obj = ActionSheetActionCreatorsDefault;
           const obj2 = { guild };
-          obj.openLazy(asyncRequire(19419, dependencyMap.paths), "MembersPrune", obj2);
+          obj.openLazy(asyncRequire(18221, dependencyMap.paths), "MembersPrune", obj2);
         },
       isDestructive: true
     };
     const push = items.push;
-    intl2 = tmp(1113).intl;
+    intl2 = tmp(1112).intl;
     push(obj2);
   }
-  const tmpResult2 = guild(7948);
+  const tmpResult2 = guild(7550);
   const result = tmpResult2.showSimpleActionSheet({ key: "GuildSettingsMembersMore", options: items, hasIcons: false });
 };
 export function getMembersManagementActions(guild) {
@@ -60,31 +60,31 @@ export function getMembersManagementActions(guild) {
   guild = guild.guild;
   ({ canPrune, selectedRoleId: importDefault, onFilterRoleId: dependencyMap } = guild);
   let obj = {
-    label: intl.string(guild(1113).t.pEasFX),
+    label: intl.string(guild(1112).t.pEasFX),
     action() {
       const obj = ActionSheetActionCreatorsDefault;
       const obj2 = { guild, selectedRoleId: importDefault, onFilterRoleId: dependencyMap };
-      obj.openLazy(asyncRequire(19418, dependencyMap.paths), "MembersFilter", obj2);
+      obj.openLazy(asyncRequire(18220, dependencyMap.paths), "MembersFilter", obj2);
     }
   };
-  intl = guild(1113).intl;
+  intl = guild(1112).intl;
   const items = [obj];
   if (canPrune == null) {
-    const tmpResult = guild(7282);
+    const tmpResult = guild(6887);
     canPrune = tmpResult.canPruneGuildMembers(guild, UserStore.getCurrentUser());
   }
   if (canPrune) {
     let obj2 = {
-      label: intl2.string(guild(1113).t["2mIlKQ"]),
+      label: intl2.string(guild(1112).t["2mIlKQ"]),
       action() {
           const obj = ActionSheetActionCreatorsDefault;
           const obj2 = { guild };
-          obj.openLazy(asyncRequire(19419, dependencyMap.paths), "MembersPrune", obj2);
+          obj.openLazy(asyncRequire(18221, dependencyMap.paths), "MembersPrune", obj2);
         },
       variant: "destructive"
     };
     const push = items.push;
-    intl2 = tmp(1113).intl;
+    intl2 = tmp(1112).intl;
     push(obj2);
   }
   return items;

@@ -1,21 +1,21 @@
-// Module ID: 13192
-// Function ID: 13193
+// Module ID: 18293
+// Function ID: 18294
 // Name: useConjureProjects
-// Dependencies: [32, 19, 2165, 7352, 5236, 5177, 5238, 5339, 7321, 7017, 7053, 7237, 504, 1452, 7260, 2]
+// Dependencies: [32, 19, 2164, 6956, 4843, 4784, 4845, 4946, 6925, 6621, 6657, 6839, 504, 1450, 6865, 2]
 // Exports: useConjureEligibleGuilds, useConjureForMeGuildId, useConjureProjects
 
-// Module 13192 (useConjureProjects)
-import ConjureUtils from "ConjureUtils" /* 7260 */;
+// Module 18293 (useConjureProjects)
+import ConjureUtils from "ConjureUtils" /* 6865 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 2165 */;
-import UserProfileStore from "UserProfileStore" /* 7352 */;
-import GuildChannelStore from "GuildChannelStore" /* 5236 */;
-import GuildStore from "GuildStore" /* 5177 */;
-import PermissionStore from "PermissionStore" /* 5238 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5339 */;
-import ConjureChatStore from "ConjureChatStore" /* 7321 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 7017 */;
+import ApplicationStore from "ApplicationStore" /* 2164 */;
+import UserProfileStore from "UserProfileStore" /* 6956 */;
+import GuildChannelStore from "GuildChannelStore" /* 4843 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4946 */;
+import ConjureChatStore from "ConjureChatStore" /* 6925 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6621 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -180,14 +180,14 @@ export function useConjureProjects(ConjureClarificationProjectPicker) {
   }, items2);
   return entries;
 }
-export function useConjureEligibleGuilds(ConjureClarificationEntityPicker) {
-  _require = ConjureClarificationEntityPicker;
+export function useConjureEligibleGuilds(ConjureProjectServerChange) {
+  _require = ConjureProjectServerChange;
   const items = [GuildStore, , ];
   const useStateFromStores = require("get initialized").useStateFromStores;
   require("get initialized");
   items[1] = require("ApexExperiment").ApexExperimentStore;
   items[2] = PermissionStore;
-  const items1 = [ConjureClarificationEntityPicker];
+  const items1 = [ConjureProjectServerChange];
   return useStateFromStores(items, () => {
     const values = Object.values(GuildStore.getGuilds());
     const found = values.filter((item) => {

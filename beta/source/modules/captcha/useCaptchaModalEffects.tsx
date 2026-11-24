@@ -1,12 +1,12 @@
-// Module ID: 20151
-// Function ID: 20152
+// Module ID: 19408
+// Function ID: 19409
 // Name: useCaptchaModalEffects
-// Dependencies: [19, 1072, 5889, 6759, 1256, 2]
+// Dependencies: [19, 1071, 5474, 6363, 1255, 2]
 // Exports: default
 
-// Module 20151 (useCaptchaModalEffects)
-import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+// Module 19408 (useCaptchaModalEffects)
+import Constants from "Constants" /* 1071 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ export default function useCaptchaModalEffects(arg0) {
     analyticsType = "Guild Join Captcha";
   }
   dependencyMap = react.useRef(true);
-  const tmp = analyticsType(5889)(() => {
+  const tmp = analyticsType(5474)(() => {
     let ref;
     return () => {
       if (ref.current) {

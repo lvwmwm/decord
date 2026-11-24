@@ -1,13 +1,13 @@
-// Module ID: 16954
-// Function ID: 16955
+// Module ID: 15709
+// Function ID: 15710
 // Name: networking
-// Dependencies: [6751, 1072, 1285, 1256, 2]
+// Dependencies: [6354, 1071, 1284, 1255, 2]
 
-// Module 16954 (networking)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import HTTPUtils from "HTTPUtils" /* 1285 */;
-import Constants2 from "Constants" /* 6751 */;
-import Constants from "Constants" /* 1072 */;
+// Module 15709 (networking)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import HTTPUtils from "HTTPUtils" /* 1284 */;
+import Constants2 from "Constants" /* 6354 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 let RPCCommands;

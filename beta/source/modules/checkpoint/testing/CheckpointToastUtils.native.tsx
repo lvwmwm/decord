@@ -1,23 +1,23 @@
-// Module ID: 19663
-// Function ID: 19664
+// Module ID: 14608
+// Function ID: 14609
 // Name: CheckpointToastUtils
-// Dependencies: [6005, 6004, 2]
+// Dependencies: [5595, 5594, 2]
 // Exports: showCheckpointTestingToast
 
-// Module 19663 (CheckpointToastUtils)
-import ToastUtils from "ToastUtils" /* 6004 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 6005 */;
+// Module 14608 (CheckpointToastUtils)
+import ToastUtils from "ToastUtils" /* 5594 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5595 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/checkpoint/testing/CheckpointToastUtils.native.tsx");
 
-export function showCheckpointTestingToast(text, failure) {
-  if ("success" === failure) {
-    const obj3 = { text };
+export function showCheckpointTestingToast(intl, success) {
+  if ("success" === success) {
+    const obj3 = { text: intl };
     const obj2 = ToastActionCreatorsDefault;
     obj2.open("CHECKPOINT_QA", obj3);
   } else {
     const obj = ToastUtils;
-    obj.presentError(text);
+    obj.presentError(intl);
   }
 }

@@ -1,8 +1,8 @@
-// Module ID: 18894
-// Function ID: 18895
+// Module ID: 17686
+// Function ID: 17687
 // Dependencies: [2]
 
-// Module 18894
+// Module 17686
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/premium/powerups/level_background.png.js");

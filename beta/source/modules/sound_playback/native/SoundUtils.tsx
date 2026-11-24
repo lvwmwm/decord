@@ -1,21 +1,21 @@
-// Module ID: 11037
-// Function ID: 11038
+// Module ID: 10887
+// Function ID: 10888
 // Name: sound_playback/SoundUtils
-// Dependencies: [5, 17, 3, 1627, 11038, 11039, 559, 1380, 2]
+// Dependencies: [5, 17, 3, 1625, 10888, 10889, 559, 1378, 2]
 
-// Module 11037 (sound_playback/SoundUtils)
+// Module 10887 (sound_playback/SoundUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
 import BackoffDefault from "Backoff" /* 559 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
-import _modDef11038 from "module_11038" /* 11038 */;
-import _modDef11039 from "module_11039" /* 11039 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
+import _modDef10888 from "module_10888" /* 10888 */;
+import _modDef10889 from "module_10889" /* 10889 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import "MetaQuestUtils";
-import MetaQuestUtils_mod from "MetaQuestUtils" /* 1627 */;
+import MetaQuestUtils_mod from "MetaQuestUtils" /* 1625 */;
 import size from "module_2" /* 2 */;
 
-let _self, c4, c5, closure_2;
+let c4, c5, closure_2;
 
 let MetaQuestUtils;
 const NativeModules = react_native.NativeModules;
@@ -126,7 +126,7 @@ let obj = { NOTIFICATION: "notification", VOICE: "voice", RING_TONE: "ring_tone"
 let obj3 = { call_calling: obj.VOICE, call_ringing: MetaQuestUtils.isMetaQuest() ? obj.MEDIA : obj.RING_TONE, call_ringing_halloween: MetaQuestUtils.isMetaQuest() ? obj.MEDIA : obj.RING_TONE, camera_on: null, camera_off: null, deafen: null, disconnect: null, mention1: null, mention2: null, mention3: null, message1: null, message2: null, message3: null, mute: null, ptt_start: null, ptt_stop: null, reconnect: null, stage_waiting: null, stream_ended: null, stream_started: null, stream_user_joined: null, stream_user_left: null, soundboard_sound: null, undeafen: null, unmute: null, user_join: null, user_leave: null, user_moved: null, vibing_wumpus: null, activity_end: null, activity_launch: null, activity_user_join: null, activity_user_left: null };
 MetaQuestUtils = MetaQuestUtils_mod;
 ({ VOICE: obj2.camera_on, VOICE: obj2.camera_off, VOICE: obj2.deafen, VOICE: obj2.disconnect, NOTIFICATION: obj2.mention1, NOTIFICATION: obj2.mention2, NOTIFICATION: obj2.mention3, NOTIFICATION: obj2.message1, NOTIFICATION: obj2.message2, NOTIFICATION: obj2.message3, VOICE: obj2.mute, VOICE: obj2.ptt_start, VOICE: obj2.ptt_stop, VOICE: obj2.reconnect, VOICE: obj2.stage_waiting, VOICE: obj2.stream_ended, VOICE: obj2.stream_started, VOICE: obj2.stream_user_joined, VOICE: obj2.stream_user_left, VOICE: obj2.soundboard_sound, VOICE: obj2.undeafen, VOICE: obj2.unmute, VOICE: obj2.user_join, VOICE: obj2.user_leave, VOICE: obj2.user_moved, MEDIA: obj2.vibing_wumpus, NOTIFICATION_NO_VIBRATION: obj2.activity_end, NOTIFICATION_NO_VIBRATION: obj2.activity_launch, NOTIFICATION_NO_VIBRATION: obj2.activity_user_join, NOTIFICATION_NO_VIBRATION: obj2.activity_user_left } = obj);
-let obj4 = { stage_waiting: _modDef11038, vibing_wumpus: _modDef11039 };
+let obj4 = { stage_waiting: _modDef10888, vibing_wumpus: _modDef10889 };
 const result = size.fileFinishedImporting("modules/sound_playback/native/SoundUtils.tsx");
 class tmp4 {
   constructor(arg0, arg1, _volume, outputChannel) {
@@ -171,33 +171,37 @@ class tmp4 {
       }
     });
   }
-  playWithListener() {
+  playWithListener(arg0) {
     const self = this;
+    let closure_1 = arg0;
     const sum = this.playbackRequest + 1;
     this.playbackRequest = sum;
     require = sum;
     const promise = new Promise((arg0, arg1) => {
-      let closure_1;
       let closure_0 = arg0;
-      _self = arg1;
-      const ensureSoundResult = _self.ensureSound();
+      closure_1 = arg1;
+      const ensureSoundResult = self.ensureSound();
       const nextPromise = ensureSoundResult.then((duration) => {
         if (null != duration) {
           if (require === self.playbackRequest) {
-            const tmp4 = null != duration.duration && 0 !== duration.duration;
-            if (!tmp4) {
-              closure_1("sound has no duration");
+            if (null != duration.duration) {
+              if (0 !== duration.duration) {
+                duration.play();
+                if (closure_1 != null) {
+                  tmp7();
+                }
+                let num2 = 1;
+                const obj = PlatformUtils;
+                if (obj.isIOS()) {
+                  num2 = 1000;
+                }
+                const _setTimeout = setTimeout;
+                const timerId = setTimeout(() => {
+                  closure_1_0(true);
+                }, duration.duration * num2);
+              }
             }
-            duration.play();
-            let num2 = 1;
-            const obj = PlatformUtils;
-            if (obj.isIOS()) {
-              num2 = 1000;
-            }
-            const _setTimeout = setTimeout;
-            const timerId = setTimeout(() => {
-              closure_1_0(true);
-            }, duration.duration * num2);
+            closure_1("sound has no duration");
           }
         }
         closure_0(false);

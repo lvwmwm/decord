@@ -1,63 +1,56 @@
 // Module ID: 5381
 // Function ID: 5382
-// Dependencies: [17, 5382, 5383]
-// Exports: isRuntimeAlive
+// Dependencies: [5382, 5383, 5384, 5443, 5444, 5445, 5446, 5450, 5451, 5404, 5452, 5453, 5448, 5447, 5454, 5405, 5455]
 
 // Module 5381
-import react_native from "react-native" /* 17 */;
-import _mod5382 from "module_5382" /* 5382 */;
-import ModuleNotFoundError from "ModuleNotFoundError" /* 5383 */;
+import ErrorMessages from "ErrorMessages" /* 5383 */;
+import FlashList from "FlashList" /* 5384 */;
+import _mod5404 from "module_5404" /* 5404 */;
+import react from "react" /* 5405 */;
+import _mod5443 from "module_5443" /* 5443 */;
+import RenderTargetOptions from "RenderTargetOptions" /* 5444 */;
+import react_nativeDefault from "react-native" /* 5445 */;
+import _mod5446 from "module_5446" /* 5446 */;
+import autoScroll from "autoScroll" /* 5447 */;
+import JSFPSMonitor from "JSFPSMonitor" /* 5448 */;
+import _mod5450 from "module_5450" /* 5450 */;
+import _mod5451 from "module_5451" /* 5451 */;
+import _mod5452 from "module_5452" /* 5452 */;
+import react2 from "react" /* 5453 */;
+import _modDef5454 from "module_5454" /* 5454 */;
+import LayoutCommitObserver from "LayoutCommitObserver" /* 5455 */;
+import react_native from "react-native" /* 5382 */;
 
-let installedNitro1;
-function getInstalledNitro() {
-  return global.NitroModulesProxy;
-}
-const TurboModuleRegistry = react_native.TurboModuleRegistry;
-const installedNitro = getInstalledNitro();
-if (null != installedNitro) {
-  installedNitro1 = installedNitro;
-  if (installedNitro.version !== _mod5382.version) {
-    const _Error2 = Error;
-    const version = installedNitro.version;
-    const _HermesInternal2 = HermesInternal;
-    const self5 = this;
-    const self6 = this;
-    const error = new Error("Nitro was installed twice: once with native version " + version + " and once with JS version " + _mod5382.version + ". This usually means react-native-nitro-modules exists multiple times in node_modules (e.g. in monorepos or double-linked setups).");
-    throw error;
-  }
+if (react_native.isNewArch()) {
+  exports.FlashList = FlashList.FlashList;
+  exports.FlashListRef = _mod5443.FlashListRef;
+  exports.FlashListProps = RenderTargetOptions.FlashListProps;
+  exports.ListRenderItem = RenderTargetOptions.ListRenderItem;
+  exports.ListRenderItemInfo = RenderTargetOptions.ListRenderItemInfo;
+  exports.RenderTarget = RenderTargetOptions.RenderTarget;
+  exports.RenderTargetOptions = RenderTargetOptions.RenderTargetOptions;
+  exports.AnimatedFlashList = react_nativeDefault;
+  exports.useBenchmark = _mod5446.useBenchmark;
+  exports.BenchmarkParams = _mod5446.BenchmarkParams;
+  exports.BenchmarkResult = _mod5446.BenchmarkResult;
+  exports.useDataMultiplier = _mod5450.useDataMultiplier;
+  exports.useFlatListBenchmark = _mod5451.useFlatListBenchmark;
+  exports.FlatListBenchmarkParams = _mod5451.FlatListBenchmarkParams;
+  exports.useLayoutState = _mod5404.useLayoutState;
+  exports.useRecyclingState = _mod5452.useRecyclingState;
+  exports.useMappingHelper = react2.useMappingHelper;
+  exports.JSFPSMonitor = JSFPSMonitor.JSFPSMonitor;
+  exports.JSFPSResult = JSFPSMonitor.JSFPSResult;
+  exports.autoScroll = autoScroll.autoScroll;
+  exports.Cancellable = autoScroll.Cancellable;
+  exports.ViewToken = _modDef5454;
+  exports.useFlashListContext = react.useFlashListContext;
+  exports.LayoutCommitObserver = LayoutCommitObserver.LayoutCommitObserver;
+  exports.LayoutCommitObserverProps = LayoutCommitObserver.LayoutCommitObserverProps;
 } else {
-  try {
-    const enforcing = TurboModuleRegistry.getEnforcing("NitroModules");
-    const installResult = enforcing.install();
-    if (null != installResult) {
-      const _Error = Error;
-      const _HermesInternal = HermesInternal;
-      const self = this;
-      const self2 = this;
-      const error1 = new Error("Failed to install Nitro: " + installResult);
-      throw error1;
-    } else {
-      installedNitro1 = getInstalledNitro();
-      if (null == installedNitro1) {
-        const _Error3 = Error;
-        const self7 = this;
-        const self8 = this;
-        const error2 = new Error("NitroModules was installed, but `global.NitroModulesProxy` was null!");
-        const self9 = this;
-        const self10 = this;
-        const moduleNotFoundError = new ModuleNotFoundError.ModuleNotFoundError(error2);
-        throw moduleNotFoundError;
-      }
-    }
-  } catch (tmp8) {
-    const self3 = this;
-    const self4 = this;
-    const moduleNotFoundError1 = new ModuleNotFoundError.ModuleNotFoundError(tmp8);
-    throw moduleNotFoundError1;
-  }
-}
-
-export const NitroModules = installedNitro1;
-export function isRuntimeAlive() {
-  return null != globalThis.__nitroJsiCache && null != globalThis.__nitroDispatcher;
+  const _Error = Error;
+  const self = this;
+  const self2 = this;
+  const error = new Error(ErrorMessages.ErrorMessages.flashListV2OnlySupportsNewArchitecture);
+  throw error;
 }

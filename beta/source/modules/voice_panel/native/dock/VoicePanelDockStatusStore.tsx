@@ -1,13 +1,13 @@
-// Module ID: 19206
-// Function ID: 19207
+// Module ID: 18008
+// Function ID: 18009
 // Name: VoicePanelDockStatusStore
-// Dependencies: [1388, 1258, 5221, 12, 2]
+// Dependencies: [1386, 1257, 4828, 12, 2]
 // Exports: initDockStatus, releaseDockStatus, setDockActiveSpeakers, setDockHasStreamers, showVoiceMoment, useDockHasStreamers, useDockSubject, useDockUserPlayingSoundboardId
 
-// Module 19206 (VoicePanelDockStatusStore)
-import _slicedToArray from "_slicedToArray" /* 5221 */;
-import UserStore from "UserStore" /* 1388 */;
-import module_1258 from "module_1258" /* 1258 */;
+// Module 18008 (VoicePanelDockStatusStore)
+import _slicedToArray from "_slicedToArray" /* 4828 */;
+import UserStore from "UserStore" /* 1386 */;
+import module_1257 from "module_1257" /* 1257 */;
 import module_12_mod from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -41,7 +41,7 @@ let closure_3 = { joined: 3000, left: 1500, streaming: 3000 };
 let c4 = null;
 let closure_5 = [];
 let c6 = null;
-let closure_7 = module_1258.createWithEqualityFn(() => {
+let closure_7 = module_1257.createWithEqualityFn(() => {
   const obj = { channelId: null, moment: null, speakerUserId: null, hasStreamers: false, playingSoundboardSounds: new Map() };
   new Map();
   return obj;

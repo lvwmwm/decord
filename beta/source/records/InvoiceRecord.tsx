@@ -1,12 +1,12 @@
-// Module ID: 2182
-// Function ID: 2183
+// Module ID: 2181
+// Function ID: 2182
 // Name: InvoiceRecord
-// Dependencies: [1408, 1072, 2183, 2]
+// Dependencies: [1406, 1071, 2182, 2]
 
-// Module 2182 (InvoiceRecord)
-import Constants from "Constants" /* 1072 */;
-import PremiumSubscriptionInvoiceItem from "PremiumSubscriptionInvoiceItem" /* 2183 */;
-import Record from "Record" /* 1408 */;
+// Module 2181 (InvoiceRecord)
+import Constants from "Constants" /* 1071 */;
+import PremiumSubscriptionInvoiceItem from "PremiumSubscriptionInvoiceItem" /* 2182 */;
+import Record from "Record" /* 1406 */;
 import size from "module_2" /* 2 */;
 
 let billing_facet, order_line_items;

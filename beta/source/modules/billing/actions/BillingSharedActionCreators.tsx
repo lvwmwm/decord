@@ -1,22 +1,22 @@
-// Module ID: 6758
-// Function ID: 6759
+// Module ID: 6361
+// Function ID: 6362
 // Name: BillingSharedActionCreators
-// Dependencies: [5, 2177, 1072, 1285, 5126, 572, 1113, 5118, 1256, 6747, 6759, 2]
+// Dependencies: [5, 2176, 1071, 1284, 6351, 572, 1112, 4726, 1255, 6349, 6362, 6363, 2]
 // Exports: createPaymentSource, dispatchConfirmationError, popupBridgeState, validatePaymentSourceBillingAddress
 
-// Module 6758 (BillingSharedActionCreators)
+// Module 6361 (BillingSharedActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import intl2 from "intl" /* 1113 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import HTTPUtils from "HTTPUtils" /* 1285 */;
-import BillingUtils from "BillingUtils" /* 5118 */;
-import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 6747 */;
+import intl2 from "intl" /* 1112 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import HTTPUtils from "HTTPUtils" /* 1284 */;
+import BillingUtils from "BillingUtils" /* 4726 */;
+import V6OrEarlierAPIError from "V6OrEarlierAPIError" /* 6349 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import PaymentSourceRecord from "PaymentSourceRecord" /* 2177 */;
-import Constants from "Constants" /* 1072 */;
+import PaymentSourceRecord from "PaymentSourceRecord" /* 2176 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
-let closure_7;
+let closure_7, message;
 
 let hasOwnProperty;
 let metroRequire;
@@ -221,7 +221,7 @@ obj = function _createPaymentSource() {
           } else if (2 === c9) {
             c8 = 0;
             message = closure_7;
-            if (message instanceof closure_134_0(closure_134_2[10]).CaptchaCancelError) {
+            if (message instanceof closure_134_0(closure_134_2[11]).CaptchaCancelError) {
               message = message.message;
               const self = this;
               const self2 = this;
@@ -272,29 +272,20 @@ obj = function _createPaymentSource() {
 };
 ({ AnalyticEvents: hasOwnProperty, Endpoints: metroRequire } = Constants);
 const set = new Set(["setup_intent_authentication_failure", "payment_intent_authentication_failure"]);
-let result = size.fileFinishedImporting("modules/billing/actions/BillingSharedActionCreators.tsx");
+const result = size.fileFinishedImporting("modules/billing/actions/BillingSharedActionCreators.tsx");
 
 export function validatePaymentSourceBillingAddress() {
   return obj(...arguments);
 }
-export function dispatchConfirmationError(error, captureException) {
-  let _String2;
-  let _String3;
-  let _String4;
+export function dispatchConfirmationError(error, arg1) {
   let billingError;
-  let code;
-  let code2;
-  let flag2;
-  let obj16;
-  let obj6;
+  let extra;
   let payment_method;
-  let str2;
-  let str3;
-  let str4;
-  let tmp12;
+  let reportResult;
+  let tags;
   let type;
-  obj = captureException;
-  if (captureException == null) {
+  obj = arg1;
+  if (null == arg1) {
     obj = {};
   }
   let defaultErrorMessage = obj.defaultErrorMessage;
@@ -302,160 +293,71 @@ export function dispatchConfirmationError(error, captureException) {
     const intl = intl2.intl;
     defaultErrorMessage = intl.string(intl2.t.khEaRI);
   }
-  let prop = obj.captureExceptionOptions;
-  if (undefined === prop) {
-    prop = {};
+  const captureException = obj.captureException;
+  const selectedElementType = obj.selectedElementType;
+  let tmp4 = null;
+  const tmp3 = undefined === captureException || captureException;
+  if (undefined !== selectedElementType) {
+    tmp4 = selectedElementType;
   }
-  let flag;
-  if (captureException != null) {
-    flag = captureException.captureException;
-  }
-  if (flag == null) {
-    flag = true;
-  }
-  const obj3 = BillingUtils;
-  if (obj3.isOfTypeStripeError(error)) {
+  ({ tags, extra } = obj);
+  const obj2 = BillingUtils;
+  if (obj2.isOfTypeStripeError(error)) {
     let combined = defaultErrorMessage;
     if (null != error.message) {
       const _HermesInternal = HermesInternal;
       combined = "" + defaultErrorMessage + ": " + error.message;
     }
-    const obj2 = { failure_message: combined, error_type: null, failure_code: null, failure_sub_code: null, payment_source_type: type };
-    ({ type: obj7.error_type, code: obj7.failure_code, decline_code: obj7.failure_sub_code, payment_method } = error);
-    type = undefined;
-    if (payment_method != null) {
-      type = payment_method.type;
-    }
-    let tmp17 = "card_error" === error.type || "validation_error" === error.type;
-    if (!tmp17) {
+    let tmp12 = "card_error" === error.type || "validation_error" === error.type;
+    if (!tmp12) {
       const hasItem = "invalid_request_error" === error.type && null != error.code && set.has(error.code);
-      tmp17 = hasItem;
+      tmp12 = hasItem;
     }
-    if (tmp17) {
-      const obj4 = { stacktrace: error.stack };
+    if (tmp12) {
+      const obj5 = { failure_message: combined, error_type: null, failure_code: null, failure_sub_code: null, payment_source_type: type, stacktrace: error.stack };
+      ({ type: obj3.error_type, code: obj3.failure_code, decline_code: obj3.failure_sub_code, payment_method } = error);
+      type = undefined;
       const track = AnalyticsUtilsDefault.track;
       const PAYMENT_SOURCE_CREATION_FAILED = hasOwnProperty.PAYMENT_SOURCE_CREATION_FAILED;
       AnalyticsUtilsDefault;
-      const merged = Object.assign(obj2);
+      if (payment_method != null) {
+        type = payment_method.type;
+      }
       const _Error = Error;
       const self3 = this;
       const self4 = this;
       error = new Error();
-      track(PAYMENT_SOURCE_CREATION_FAILED, obj4);
-      flag = false;
+      track(PAYMENT_SOURCE_CREATION_FAILED, obj5);
     }
-    obj6 = {};
     const self5 = this;
     const self6 = this;
-    billingError = new tmp3(6747).BillingError(combined);
-    flag2 = flag;
-    tmp12 = obj2;
+    billingError = new tmp5(6349).BillingError(combined);
   } else {
-    let str;
-    const _String = String;
-    if (error != null) {
-      str = error.type;
-    }
-    if (str == null) {
-      str = "unknown";
-    }
-    const obj8 = { raw_error_type: _String(str), raw_error_code: _String2(str2), raw_error_name: _String3(str3), raw_error_decline_code: _String4(str4) };
-    str2 = undefined;
-    _String2 = String;
-    if (error != null) {
-      str2 = error.code;
-    }
-    if (str2 == null) {
-      str2 = "unknown";
-    }
-    str3 = undefined;
-    _String3 = String;
-    if (error != null) {
-      str3 = error.name;
-    }
-    if (str3 == null) {
-      str3 = "unknown";
-    }
-    str4 = undefined;
-    _String4 = String;
-    if (error != null) {
-      str4 = error.decline_code;
-    }
-    if (str4 == null) {
-      str4 = "unknown";
-    }
-    let billingError1 = error;
+    billingError = error;
     if (!(error instanceof V6OrEarlierAPIError.BillingError)) {
-      let tmp7 = error;
-      const BillingError = tmp3(6747).BillingError;
+      let tmp8 = error;
+      const BillingError = tmp5(6349).BillingError;
       if (typeof error === "string") {
-        tmp7 = defaultErrorMessage;
+        tmp8 = defaultErrorMessage;
       }
       const self = this;
       const self2 = this;
-      billingError1 = new BillingError(tmp7);
-    }
-    const obj10 = { failure_message: null, status_code: null };
-    ({ message: obj5.failure_message, code: obj5.status_code } = billingError1);
-    const merged1 = Object.assign(obj8);
-    obj6 = obj8;
-    flag2 = flag;
-    tmp12 = obj10;
-    billingError = billingError1;
-    if (429 === billingError1.status) {
-      flag2 = false;
-      obj6 = obj8;
-      tmp12 = obj10;
-      billingError = billingError1;
+      billingError = new BillingError(tmp8);
     }
   }
-  const obj9 = DispatcherDefault;
-  obj9.dispatch({ type: "BILLING_PAYMENT_SOURCE_CREATE_FAIL", error: billingError });
-  let message = error;
-  const _Error2 = Error;
-  if (typeof error !== "string") {
-    message = billingError.message;
+  const obj4 = DispatcherDefault;
+  obj4.dispatch({ type: "BILLING_PAYMENT_SOURCE_CREATE_FAIL", error: billingError });
+  const obj6 = { site: "payment_method_confirmation", selectedElementType: tmp4, tags, extra };
+  const ClientBillingError = tmp5(6362).ClientBillingError;
+  if (tmp3) {
+    const obj9 = { failure_message: billingError.message };
+    reportResult = ClientBillingError.report(obj6, error, obj9);
+  } else {
+    const self7 = this;
+    const self8 = this;
+    reportResult = new ClientBillingError(obj6, error);
   }
-  const _Error21 = new _Error2(message);
-  if (flag2) {
-    let tmp41;
-    const obj11 = { extra: obj16 };
-    const merged2 = Object.assign(prop);
-    const obj12 = { fingerprint: null, tags: null };
-    const tmp3Result = BillingUtils;
-    if (tmp3Result.isOfTypeStripeError(error)) {
-      const items = ["billing-confirmation-error"];
-      ({ type: arr2[1], code } = error);
-      if (code == null) {
-        code = "unknown";
-      }
-      items[2] = code;
-      obj12.fingerprint = items;
-      const obj13 = { failure_code: code2 };
-      const merged3 = Object.assign(prop.tags);
-      ({ type: obj14.error_type, code: code2 } = error);
-      if (code2 == null) {
-        code2 = "unknown";
-      }
-      obj12.tags = obj13;
-      tmp41 = obj12;
-    } else {
-      const items1 = ["billing-confirmation-error", "non_stripe", "unknown" !== obj6.raw_error_type ? obj6.raw_error_type : obj6.raw_error_name];
-      obj12.fingerprint = items1;
-      const obj15 = {};
-      const merged4 = Object.assign(prop.tags);
-      const merged5 = Object.assign(obj6);
-      obj12.tags = obj15;
-      tmp41 = obj12;
-    }
-    const merged6 = Object.assign(tmp41);
-    obj16 = {};
-    const merged7 = Object.assign(tmp12);
-    const merged8 = Object.assign(prop.extra);
-    const tmp3Result2 = BillingUtils;
-    const result = tmp3Result2.captureBillingException(_Error21, obj11);
-  }
-  return _Error21;
+  return reportResult;
 }
 export function popupBridgeState() {
   return obj(...arguments);

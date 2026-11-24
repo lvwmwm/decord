@@ -1,13 +1,12 @@
-// Module ID: 5985
-// Function ID: 5986
+// Module ID: 5575
+// Function ID: 5576
 // Name: RegionalFeatureConfigUtils
-// Dependencies: [5986, 504, 5992, 2]
-// Exports: hasAgeGatedFeatures, hasTeenDefaults, isFeatureAgeGated, isSettingTeenByDefault, isTidaMediaTakedownRegion, shouldCollectAppStoreSignal, useHasAgeGatedFeatures, useHasTeenDefaults, useIsFeatureAgeGated, useIsSettingTeenByDefault, useIsTidaMediaTakedownRegion
+// Dependencies: [5576, 504, 2]
+// Exports: hasAgeGatedFeatures, hasTeenDefaults, isFeatureAgeGated, isSettingTeenByDefault, shouldCollectAppStoreSignal, useHasAgeGatedFeatures, useHasTeenDefaults, useIsFeatureAgeGated, useIsSettingTeenByDefault
 
-// Module 5985 (RegionalFeatureConfigUtils)
+// Module 5575 (RegionalFeatureConfigUtils)
 import get_initialized from "get initialized" /* 504 */;
-import MediaTakedownRegulation from "MediaTakedownRegulation" /* 5992 */;
-import RegionalFeatureConfigStore from "RegionalFeatureConfigStore" /* 5986 */;
+import RegionalFeatureConfigStore from "RegionalFeatureConfigStore" /* 5576 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -51,13 +50,4 @@ export function useHasTeenDefaults() {
 }
 export function shouldCollectAppStoreSignal() {
   return RegionalFeatureConfigStore.shouldCollectAppStoreSignal();
-}
-export function isTidaMediaTakedownRegion() {
-  return RegionalFeatureConfigStore.isMediaTakedownRegulation(MediaTakedownRegulation.MediaTakedownRegulation.TIDA);
-}
-export function useIsTidaMediaTakedownRegion() {
-  let mediaTakedownRegulation;
-  const items = [RegionalFeatureConfigStore];
-  const obj = get_initialized;
-  return obj.useStateFromStores(items, () => mediaTakedownRegulation.isMediaTakedownRegulation(require("MediaTakedownRegulation").MediaTakedownRegulation.TIDA));
 }

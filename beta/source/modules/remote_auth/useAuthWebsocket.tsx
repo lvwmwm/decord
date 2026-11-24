@@ -1,17 +1,17 @@
-// Module ID: 18698
-// Function ID: 18699
+// Module ID: 17494
+// Function ID: 17495
 // Name: useAuthWebsocket
-// Dependencies: [5, 32, 19, 1072, 3, 18697, 559, 7790, 16124, 18699, 1108, 1285, 6834, 18701, 2]
+// Dependencies: [5, 32, 19, 1071, 3, 17493, 559, 7392, 14897, 17495, 1107, 1284, 6425, 17497, 2]
 // Exports: useAuthWebsocket
 
-// Module 18698 (useAuthWebsocket)
+// Module 17494 (useAuthWebsocket)
 import LoggerDefault from "Logger" /* 3 */;
-import typing from "typing" /* 18697 */;
-import RemoteAuthCryptoDefault from "RemoteAuthCrypto" /* 18699 */;
+import typing from "typing" /* 17493 */;
+import RemoteAuthCryptoDefault from "RemoteAuthCrypto" /* 17495 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import Constants from "Constants" /* 1072 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

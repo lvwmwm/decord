@@ -1,26 +1,26 @@
-// Module ID: 16290
-// Function ID: 16291
+// Module ID: 15062
+// Function ID: 15063
 // Name: AddFriendModal
-// Dependencies: [32, 19, 17, 1388, 1072, 14997, 21, 5306, 6816, 575, 14999, 5889, 1256, 1380, 1505, 6838, 5362, 1113, 10230, 7427, 16291, 7493, 5919, 16292, 16293, 1630, 7490, 2]
+// Dependencies: [32, 19, 17, 1386, 1071, 13583, 21, 4913, 6407, 575, 13585, 5474, 1255, 1378, 1503, 6429, 4969, 1112, 9718, 7029, 15063, 7095, 5504, 15064, 15065, 1628, 7092, 2]
 // Exports: default
 
-// Module 16290 (AddFriendModal)
+// Module 15062 (AddFriendModal)
 import nativeDefault from "native" /* 575 */;
-import intl4 from "intl" /* 1113 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
-import NavigatorHeader from "NavigatorHeader" /* 7493 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 14997 */;
-import ContactSyncUtils from "ContactSyncUtils" /* 14999 */;
+import intl4 from "intl" /* 1112 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6429 */;
+import NavigatorHeader from "NavigatorHeader" /* 7095 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 13583 */;
+import ContactSyncUtils from "ContactSyncUtils" /* 13585 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1388 */;
-import Constants from "Constants" /* 1072 */;
+import UserStore from "UserStore" /* 1386 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
-import TextStyles from "TextStyles" /* 6816 */;
+import createStyles_mod from "createStyles" /* 4913 */;
+import TextStyles from "TextStyles" /* 6407 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

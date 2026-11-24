@@ -1,13 +1,13 @@
-// Module ID: 16603
-// Function ID: 16604
+// Module ID: 15390
+// Function ID: 15391
 // Name: ThemedIcon
-// Dependencies: [19, 21, 5892, 5928, 2]
+// Dependencies: [19, 21, 5477, 5513, 2]
 // Exports: default
 
-// Module 16603 (ThemedIcon)
+// Module 15390 (ThemedIcon)
 import Fragment from "Fragment" /* 21 */;
-import useToken from "useToken" /* 5892 */;
-import IconDefault from "Icon" /* 5928 */;
+import useToken from "useToken" /* 5477 */;
+import IconDefault from "Icon" /* 5513 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

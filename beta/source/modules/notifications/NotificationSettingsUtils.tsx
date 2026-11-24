@@ -1,15 +1,15 @@
-// Module ID: 16904
-// Function ID: 16905
+// Module ID: 15658
+// Function ID: 15659
 // Name: notifications/NotificationSettingsUtils
-// Dependencies: [32, 19, 16900, 16905, 16179, 504, 1452, 2]
+// Dependencies: [32, 19, 15654, 15659, 14950, 504, 1450, 2]
 // Exports: getAssignedNotifSettingsAndMappings, useIsDeclarativeSettingsUIAvailable, useNotifCategoryVisibility, useNotifSettingVisibility
 
-// Module 16904 (notifications/NotificationSettingsUtils)
-import DeclarativeNotificationSettingsRedesignExperiment from "DeclarativeNotificationSettingsRedesignExperiment" /* 16179 */;
-import NotificationSettingsExperiments from "NotificationSettingsExperiments" /* 16905 */;
+// Module 15658 (notifications/NotificationSettingsUtils)
+import DeclarativeNotificationSettingsRedesignExperiment from "DeclarativeNotificationSettingsRedesignExperiment" /* 14950 */;
+import NotificationSettingsExperiments from "NotificationSettingsExperiments" /* 15659 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import NotificationSettingsConstants from "NotificationSettingsConstants" /* 16900 */;
+import NotificationSettingsConstants from "NotificationSettingsConstants" /* 15654 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

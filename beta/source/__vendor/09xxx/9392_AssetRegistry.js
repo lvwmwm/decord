@@ -1,10 +1,10 @@
 // Module ID: 9392
 // Function ID: 9393
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 9392 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "7b7fda4b104811c7ab69187b97a7e04e", name: "ic_shield_24px", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/native/images/perks", width: 300, height: 175, scales: [2, 3], hash: "7e68c2960201e89a20761843ca26d40b", name: "super_reaction", type: "png" });

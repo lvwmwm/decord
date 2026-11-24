@@ -1,13 +1,13 @@
-// Module ID: 12664
-// Function ID: 12665
+// Module ID: 12159
+// Function ID: 12160
 // Name: useVoteReactors
-// Dependencies: [8862, 1072, 504, 5910, 1345, 2]
+// Dependencies: [8457, 1071, 504, 5495, 1343, 2]
 // Exports: default
 
-// Module 12664 (useVoteReactors)
-import Constants from "Constants" /* 1072 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 5910 */;
-import MessageReactionsStore from "MessageReactionsStore" /* 8862 */;
+// Module 12159 (useVoteReactors)
+import Constants from "Constants" /* 1071 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 5495 */;
+import MessageReactionsStore from "MessageReactionsStore" /* 8457 */;
 import size from "module_2" /* 2 */;
 
 let closure_4 = Constants.DEFAULT_NUM_REACTION_USERS;

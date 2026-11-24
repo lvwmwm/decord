@@ -1,10 +1,10 @@
 // Module ID: 3612
 // Function ID: 3613
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 3612 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/tenure_reward", scales: [1], hash: "4ce7db81a29e051a11be32b72852c173", name: "TenureReward.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9hcHBsaWNhdGlvbl93aWRnZXQ=", scales: [1], hash: "c668060205bfaed7486a7a74b4cdf925", name: "es-ES.messages.c668060205bfaed7486a7a74b4cdf925.compiled.messages", type: "jsona" });

@@ -1,68 +1,73 @@
-// Module ID: 12539
-// Function ID: 12540
+// Module ID: 12057
+// Function ID: 12058
 // Name: getInvitableGameOrganizationsFullState
-// Dependencies: [12540, 1113, 2565, 12541, 2]
+// Dependencies: [32, 12058, 1112, 2639, 2]
 // Exports: default, getGameOrganizationFullSubLabel, getInvitableGameOrganizationsFullSubLabel
 
-// Module 12539 (getInvitableGameOrganizationsFullState)
-import intl3 from "intl" /* 1113 */;
-import _modDef2565 from "module_2565" /* 2565 */;
-import isGameOrganizationFullDefault from "isGameOrganizationFull" /* 12540 */;
-import getGameOrganizationDisplayNounDefault from "getGameOrganizationDisplayNoun" /* 12541 */;
+// Module 12057 (getInvitableGameOrganizationsFullState)
+import intl3 from "intl" /* 1112 */;
+import _modDef2639 from "module_2639" /* 2639 */;
+import isGameOrganizationFullDefault from "isGameOrganizationFull" /* 12058 */;
+import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
-let closure_3 = { kind: "available" };
-let closure_4 = { kind: "all_full" };
+let closure_4 = { kind: "available" };
+let closure_5 = { kind: "all_full" };
 const result = size.fileFinishedImporting("modules/game_organization_invites/getInvitableGameOrganizationsFullState.tsx");
 
 export default function getInvitableGameOrganizationsFullState(arr) {
   if (null != arr) {
-    let tmp;
     if (0 !== arr.length) {
       if (arr.every((organization) => isGameOrganizationFullDefault(organization.organization))) {
-        let tmp2;
         if (1 === arr.length) {
-          tmp2 = { kind: "single_full", organization: arr[0].organization };
-          const obj = { kind: "single_full", organization: arr[0].organization };
+          const obj = { kind: "single_full", organization: null, displayNoun: null };
+          ({ organization: obj.organization, displayNoun: obj.displayNoun } = _slicedToArray(arr, 1)[0]);
+          return obj;
         } else {
-          tmp2 = closure_4;
+          return closure_5;
         }
-        tmp = tmp2;
       } else {
-        tmp = closure_3;
+        return closure_4;
       }
     }
-    return tmp;
   }
-  tmp = closure_3;
+  return closure_4;
 };
 export function getGameOrganizationFullSubLabel(data, stateFromStores) {
-  let tmp = stateFromStores;
+  let str = stateFromStores;
   const name = data.name;
   if (stateFromStores === undefined) {
-    tmp = null;
+    str = null;
   }
   const intl = intl3.intl;
   const formatToPlainString = intl.formatToPlainString;
-  const obj = { orgName: name, noun: getGameOrganizationDisplayNounDefault({ displayNoun: tmp, lowercase: true }) };
-  const xuM052 = _modDef2565.xuM052;
+  const obj = { orgName: name, displayNoun: str };
+  const xuM052 = _modDef2639.xuM052;
+  if (str == null) {
+    str = "other";
+  }
   return formatToPlainString(xuM052, obj);
 }
 export function getInvitableGameOrganizationsFullSubLabel(kind) {
-  let obj2;
   kind = kind.kind;
   if ("available" !== kind) {
     if ("single_full" === kind) {
+      let str2 = kind.displayNoun;
       const name = kind.organization.name;
+      if (str2 === undefined) {
+        str2 = null;
+      }
       const intl2 = intl3.intl;
       const formatToPlainString = intl2.formatToPlainString;
-      const obj = { orgName: name, noun: getGameOrganizationDisplayNounDefault(obj2) };
-      const xuM052 = _modDef2565.xuM052;
-      obj2 = { displayNoun: null, lowercase: true };
+      const obj = { orgName: name, displayNoun: str2 };
+      const xuM052 = _modDef2639.xuM052;
+      if (str2 == null) {
+        str2 = "other";
+      }
       return formatToPlainString(xuM052, obj);
     } else if ("all_full" === kind) {
       const intl = intl3.intl;
-      return intl.string(_modDef2565.bY80Jh);
+      return intl.string(_modDef2639.bY80Jh);
     }
   }
 }

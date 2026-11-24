@@ -1,12 +1,12 @@
-// Module ID: 10744
-// Function ID: 10745
+// Module ID: 13427
+// Function ID: 13428
 // Name: useGuildBoostPurchaseHandler
-// Dependencies: [5, 19, 1072, 3, 9713, 9684, 9716, 1256, 6259, 1113, 6942, 2]
+// Dependencies: [5, 19, 1071, 3, 9237, 9208, 9240, 1255, 5861, 1112, 6546, 2]
 // Exports: default
 
-// Module 10744 (useGuildBoostPurchaseHandler)
+// Module 13427 (useGuildBoostPurchaseHandler)
 import LoggerDefault from "Logger" /* 3 */;
-import Constants from "Constants" /* 1072 */;
+import Constants from "Constants" /* 1071 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

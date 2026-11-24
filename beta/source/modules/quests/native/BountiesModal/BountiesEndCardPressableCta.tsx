@@ -1,20 +1,20 @@
-// Module ID: 17590
-// Function ID: 17591
+// Module ID: 16362
+// Function ID: 16363
 // Name: BountiesEndCardPressableCta
-// Dependencies: [19, 17, 17591, 21, 5306, 575, 10168, 17587, 10146, 10170, 6961, 6959, 8834, 6010, 5919, 2]
+// Dependencies: [19, 17, 16363, 21, 4913, 575, 9996, 16358, 9972, 9998, 6565, 6563, 8430, 5600, 5504, 2]
 // Exports: default
 
-// Module 17590 (BountiesEndCardPressableCta)
+// Module 16362 (BountiesEndCardPressableCta)
 import nativeDefault from "native" /* 575 */;
-import QuestContent from "QuestContent" /* 6959 */;
-import AdCreativeType from "AdCreativeType" /* 6961 */;
-import AnalyticsTypes from "AnalyticsTypes" /* 8834 */;
-import QuestPlatformUtils from "QuestPlatformUtils" /* 10170 */;
-import BountyConstants from "BountyConstants" /* 17591 */;
+import QuestContent from "QuestContent" /* 6563 */;
+import AdCreativeType from "AdCreativeType" /* 6565 */;
+import AnalyticsTypes from "AnalyticsTypes" /* 8430 */;
+import QuestPlatformUtils from "QuestPlatformUtils" /* 9998 */;
+import BountyConstants from "BountyConstants" /* 16363 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;
@@ -47,10 +47,10 @@ export default function BountiesEndCardPressableCta(bounty) {
   let obj = bounty(getQuestImpressionId[6]);
   getQuestImpressionId = obj.useGetQuestImpressionId();
   let obj2 = bounty(getQuestImpressionId[7]);
-  const bountyCtaInfo = obj2.getBountyCtaInfo(bounty);
+  const advertiserCtaInfo = obj2.getAdvertiserCtaInfo(bounty);
   let scaledImageUrl;
-  if (null != bountyCtaInfo.iconImageUri) {
-    size = { assetUrl: bountyCtaInfo.iconImageUri, width: END_CARD_IMAGE_SIZE, height: END_CARD_IMAGE_SIZE };
+  if (null != advertiserCtaInfo.iconImageUri) {
+    size = { assetUrl: advertiserCtaInfo.iconImageUri, width: END_CARD_IMAGE_SIZE, height: END_CARD_IMAGE_SIZE };
     const tmp2Result = bounty(getQuestImpressionId[8]);
     scaledImageUrl = tmp2Result.getScaledImageUrl(size);
   }
@@ -69,12 +69,12 @@ export default function BountiesEndCardPressableCta(bounty) {
       const result = openAdGameLinkDirectly(obj, obj2);
     }, items);
   }
-  const obj3 = { onPress: callback, disabled: flag, hitSlop: 16, accessibilityRole: "button", accessibilityLabel: bountyCtaInfo.label, style: tmp.ctaContainer, children: items1 };
+  const obj3 = { onPress: callback, disabled: flag, hitSlop: 16, accessibilityRole: "button", accessibilityLabel: advertiserCtaInfo.label, style: tmp.ctaContainer, children: items1 };
   items1 = [, ];
   const obj4 = { source: { uri: scaledImageUrl }, style: tmp.image };
   items1[0] = closure_7(sourceQuestContent(getQuestImpressionId[13]), obj4);
   const obj5 = { style: tmp.info, children: closure_7(bounty(getQuestImpressionId[14]).Text, obj6) };
-  obj6 = { variant: "body-md/semibold", color: "text-strong", children: bountyCtaInfo.label };
+  obj6 = { variant: "body-md/semibold", color: "text-strong", children: advertiserCtaInfo.label };
   items1[1] = closure_7(closure_5, obj5);
   return tmp8(tmp9, obj3);
 };

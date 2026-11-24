@@ -1,10 +1,10 @@
-// Module ID: 6183
-// Function ID: 6184
+// Module ID: 5777
+// Function ID: 5778
 // Name: BrowserTransceiverPaddingRemovalExperiment
-// Dependencies: [1452, 2]
+// Dependencies: [1450, 2]
 
-// Module 6183 (BrowserTransceiverPaddingRemovalExperiment)
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+// Module 5777 (BrowserTransceiverPaddingRemovalExperiment)
+import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

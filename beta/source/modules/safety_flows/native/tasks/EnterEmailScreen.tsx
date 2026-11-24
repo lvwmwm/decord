@@ -1,14 +1,14 @@
-// Module ID: 20874
-// Function ID: 20875
+// Module ID: 20144
+// Function ID: 20145
 // Name: EnterEmailScreen
-// Dependencies: [32, 19, 21, 1502, 20875, 1113, 2997, 20866, 6327, 7619, 2]
+// Dependencies: [32, 19, 21, 1500, 20145, 1112, 3120, 20136, 5929, 7221, 2]
 // Exports: default
 
-// Module 20874 (EnterEmailScreen)
+// Module 20144 (EnterEmailScreen)
 import Fragment from "Fragment" /* 21 */;
-import _modDef2997 from "module_2997" /* 2997 */;
-import types from "types" /* 20866 */;
-import SafetyFlowTaskScreenDefault from "SafetyFlowTaskScreen" /* 20875 */;
+import _modDef3120 from "module_3120" /* 3120 */;
+import types from "types" /* 20136 */;
+import SafetyFlowTaskScreenDefault from "SafetyFlowTaskScreen" /* 20145 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -31,7 +31,7 @@ export default function EnterEmailScreen() {
   const intl = require("intl").intl;
   const intl2 = require("intl").intl;
   const Stack = require("Stack/Stack").Stack;
-  return <tmp4 title={intl.string(_modDef2997.bFbsV6)} action={intl2.string(_modDef2997.RRBNpv)} onAction={function onAction() {
+  return <tmp4 title={intl.string(_modDef3120.bFbsV6)} action={intl2.string(_modDef3120.RRBNpv)} onAction={function onAction() {
     closure_0.push(types.SafetyFlowScreens.VERIFY_EMAIL);
   }}>{null}</tmp4>;
 };

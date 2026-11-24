@@ -1,17 +1,17 @@
-// Module ID: 19269
-// Function ID: 19270
+// Module ID: 18071
+// Function ID: 18072
 // Name: ForYouRecentActivitySectionHeader
-// Dependencies: [19, 17, 21, 5306, 575, 5919, 1113, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 5504, 1112, 2]
 // Exports: ForYouRecentActivitySectionHeader
 
-// Module 19269 (ForYouRecentActivitySectionHeader)
+// Module 18071 (ForYouRecentActivitySectionHeader)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5919 */;
+import intl2 from "intl" /* 1112 */;
+import Text_Text from "Text/Text" /* 5504 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

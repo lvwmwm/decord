@@ -1,19 +1,19 @@
-// Module ID: 19127
-// Function ID: 19128
+// Module ID: 17927
+// Function ID: 17928
 // Name: GuildsBarItemUnavailableGuilds
-// Dependencies: [19, 17, 6947, 21, 5306, 575, 6258, 1113, 504, 6010, 19118, 2]
+// Dependencies: [19, 17, 6551, 21, 4913, 575, 5860, 1112, 504, 5600, 17914, 2]
 
-// Module 19127 (GuildsBarItemUnavailableGuilds)
+// Module 17927 (GuildsBarItemUnavailableGuilds)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import intl3 from "intl" /* 1113 */;
-import FastImageDefault from "FastImage" /* 6010 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6258 */;
-import AssetRegistryDefault from "AssetRegistry" /* 19118 */;
+import intl3 from "intl" /* 1112 */;
+import FastImageDefault from "FastImage" /* 5600 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5860 */;
+import AssetRegistryDefault from "AssetRegistry" /* 17914 */;
 import react from "react" /* 19 */;
-import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6947 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import GuildAvailabilityStore from "GuildAvailabilityStore" /* 6551 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let obj2;
@@ -34,11 +34,11 @@ const memoResult = react.memo(function GuildsBarItemUnavailableGuilds() {
   stateFromStores = obj.useStateFromStores(items, () => GuildAvailabilityStore.totalUnavailableGuilds);
   let tmp5 = null;
   if (stateFromStores > 0) {
-    let intl = tmp2(1113).intl;
+    let intl = tmp2(1112).intl;
     const obj3 = { count: stateFromStores };
     ({ style: tmp.unavailableGuildsIcon, source: AssetRegistryDefault });
     FastImageDefault;
-    tmp5 = <Pressable accessibilityRole="button" accessibilityLabel={intl.formatToPlainString(stateFromStores(1113).t["MEpX+2"], obj3)} onPress={function onPress() {
+    tmp5 = <Pressable accessibilityRole="button" accessibilityLabel={intl.formatToPlainString(stateFromStores(1112).t["MEpX+2"], obj3)} onPress={function onPress() {
       let intl;
       let intl2;
       let obj2;

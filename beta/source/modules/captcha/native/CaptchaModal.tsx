@@ -1,25 +1,25 @@
-// Module ID: 20150
-// Function ID: 20151
+// Module ID: 19407
+// Function ID: 19408
 // Name: CaptchaModal
-// Dependencies: [19, 17, 18652, 18653, 21, 5306, 7770, 1503, 20151, 5556, 6327, 20152, 5919, 1113, 5926, 6759, 20156, 18661, 2]
+// Dependencies: [19, 17, 17448, 17449, 21, 4913, 7372, 1501, 19408, 5141, 5929, 19409, 5504, 1112, 5511, 6363, 19413, 17457, 2]
 // Exports: default
 
-// Module 20150 (CaptchaModal)
-import intl4 from "intl" /* 1113 */;
-import Link from "Link" /* 1503 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5556 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import Stack_Stack from "Stack/Stack" /* 6327 */;
-import SharedCaptchaUtils from "SharedCaptchaUtils" /* 6759 */;
-import RegistrationUIStore from "RegistrationUIStore" /* 18652 */;
-import RegistrationUtils from "RegistrationUtils" /* 18661 */;
-import DisguiseSpotIllustration from "DisguiseSpotIllustration" /* 20152 */;
-import CaptchaUtilsDefault from "CaptchaUtils" /* 20156 */;
+// Module 19407 (CaptchaModal)
+import intl4 from "intl" /* 1112 */;
+import Link from "Link" /* 1501 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5141 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import Stack_Stack from "Stack/Stack" /* 5929 */;
+import SharedCaptchaUtils from "SharedCaptchaUtils" /* 6363 */;
+import RegistrationUIStore from "RegistrationUIStore" /* 17448 */;
+import RegistrationUtils from "RegistrationUtils" /* 17457 */;
+import DisguiseSpotIllustration from "DisguiseSpotIllustration" /* 19409 */;
+import CaptchaUtilsDefault from "CaptchaUtils" /* 19413 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import RegistrationConstants from "RegistrationConstants" /* 18653 */;
+import RegistrationConstants from "RegistrationConstants" /* 17449 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -56,7 +56,7 @@ export default function CaptchaModal(arg0) {
   ({ onCaptchaVerify: require, onReject } = arg0);
   ({ close: dependencyMap, sitekey: react, captchaService: closure_4, headerText, bodyText, rqdata: closure_5, rqtoken: closure_6, userflow: closure_7 } = arg0);
   let tmp = dependencyMap;
-  const tmp2 = closure_11(onReject(7770)());
+  const tmp2 = closure_11(onReject(7372)());
   let obj = Link;
   navigation = obj.useNavigation();
   const items = [navigation];
@@ -78,7 +78,7 @@ export default function CaptchaModal(arg0) {
     }
     return str;
   }, items);
-  let closure_9 = onReject(20151)({ onReject, analyticsType: memo });
+  let closure_9 = onReject(19408)({ onReject, analyticsType: memo });
   const effect = react.useEffect(() => {
     closure_4.dismiss();
   }, []);
@@ -89,15 +89,15 @@ export default function CaptchaModal(arg0) {
   const Text = Text_Text.Text;
   const tmp9 = closure_5;
   if (headerText == null) {
-    const intl = tmp3(1113).intl;
-    headerText = intl.string(tmp3(1113).t.FpoiHe);
+    const intl = tmp3(1112).intl;
+    headerText = intl.string(tmp3(1112).t.FpoiHe);
   }
   const items2 = [tmp7(Text, { variant: "heading-xl/semibold", accessibilityRole: "header", children: headerText }), ];
   let obj3 = { variant: "body-md/medium", color: "text-subtle", style: tmp2.description, children: bodyText };
-  const Text2 = tmp3(5919).Text;
+  const Text2 = tmp3(5504).Text;
   if (bodyText == null) {
-    const intl2 = tmp3(1113).intl;
-    bodyText = intl2.string(tmp3(1113).t["/CidxO"]);
+    const intl2 = tmp3(1112).intl;
+    bodyText = intl2.string(tmp3(1112).t["/CidxO"]);
   }
   let obj4 = { startHeight: 900, startExpanded: true, children: tmp8(Stack, obj2) };
   let obj5 = { children: items2 };
@@ -152,8 +152,8 @@ export default function CaptchaModal(arg0) {
     },
     text: intl3.string(intl4.t["cY+Oob"])
   };
-  const Button = tmp3(5926).Button;
-  intl3 = tmp3(1113).intl;
+  const Button = tmp3(5511).Button;
+  intl3 = tmp3(1112).intl;
   items1[2] = closure_9(Button, obj6);
   return closure_9(BottomSheet, obj4);
 };

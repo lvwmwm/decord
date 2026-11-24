@@ -1,14 +1,14 @@
-// Module ID: 15336
-// Function ID: 15337
+// Module ID: 14067
+// Function ID: 14068
 // Name: IconButton/IconButton
-// Dependencies: [19, 21, 5306, 575, 6951, 7428, 1187, 2]
+// Dependencies: [19, 21, 4913, 575, 6555, 7030, 1186, 2]
 
-// Module 15336 (IconButton/IconButton)
+// Module 14067 (IconButton/IconButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import LegacyTokens from "LegacyTokens" /* 6951 */;
+import LegacyTokens from "LegacyTokens" /* 6555 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -47,17 +47,17 @@ class SquareIconButton {
       }
     }, items);
     let tmp6;
-    const PressableOpacity = size(7428).PressableOpacity;
+    const PressableOpacity = size(7030).PressableOpacity;
     if (!accessibilityHidden) {
       tmp6 = accessibilityLabel;
     }
     const obj = { accessibilityRole: "button", accessibilityLabel: tmp6, accessibilityElementsHidden: accessibilityHidden, onPress, disabled, style: items1, children: tmp3(Icon, obj2) };
     items1 = [tmp.container, style, memo];
-    Icon = tmp4(1187).Icon;
+    Icon = tmp4(1186).Icon;
     if (size === obj.LARGE_40) {
-      REFRESH_SMALL_16 = tmp4(1187).Icon.Sizes.MEDIUM;
+      REFRESH_SMALL_16 = tmp4(1186).Icon.Sizes.MEDIUM;
     } else {
-      REFRESH_SMALL_16 = tmp4(1187).Icon.Sizes.REFRESH_SMALL_16;
+      REFRESH_SMALL_16 = tmp4(1186).Icon.Sizes.REFRESH_SMALL_16;
     }
     let icon = null;
     obj2 = { size: REFRESH_SMALL_16, style: items2, disableColor, source };

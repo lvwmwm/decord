@@ -1,14 +1,14 @@
-// Module ID: 20660
-// Function ID: 20661
+// Module ID: 19930
+// Function ID: 19931
 // Name: useGuildApplication
-// Dependencies: [5, 32, 19, 2165, 504, 7055, 6747, 2]
+// Dependencies: [5, 32, 19, 2164, 504, 6659, 6349, 2]
 // Exports: default
 
-// Module 20660 (useGuildApplication)
+// Module 19930 (useGuildApplication)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 2165 */;
+import ApplicationStore from "ApplicationStore" /* 2164 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

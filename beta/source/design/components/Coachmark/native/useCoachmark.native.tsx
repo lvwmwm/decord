@@ -1,12 +1,12 @@
-// Module ID: 9567
-// Function ID: 9568
+// Module ID: 9087
+// Function ID: 9088
 // Name: useCoachmark
-// Dependencies: [19, 21, 1269, 9426, 5908, 9568, 2]
+// Dependencies: [19, 21, 1268, 8942, 5493, 9088, 2]
 // Exports: useCoachmark
 
-// Module 9567 (useCoachmark)
+// Module 9087 (useCoachmark)
 import Fragment from "Fragment" /* 21 */;
-import AnimatedCoachmark2 from "AnimatedCoachmark" /* 9568 */;
+import AnimatedCoachmark2 from "AnimatedCoachmark" /* 9088 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

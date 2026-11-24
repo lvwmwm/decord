@@ -1,18 +1,18 @@
-// Module ID: 7230
-// Function ID: 7231
+// Module ID: 6834
+// Function ID: 6835
 // Name: GuildDiscoveryUtils
-// Dependencies: [5, 5239, 5526, 5177, 1072, 1099, 7231, 7262, 6907, 1256, 1285, 1490, 2]
+// Dependencies: [5, 4846, 5534, 4784, 1071, 1098, 6835, 6867, 6511, 1255, 1284, 1488, 2]
 // Exports: fetchPublicDiscoveryGuild, getDiscoverableGuild, startLurking, trackDiscoveryExited, trackGuildDiscoveryGetFeaturedGuildsFailed, trackGuildDiscoverySearchStart, trackGuildJoinClicked, trackSearchClosed, trackSearchFailed, trackSearchResultsViewed, trackSearchStarted
 
-// Module 7230 (GuildDiscoveryUtils)
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import HTTPUtils from "HTTPUtils" /* 1285 */;
-import _modDef1490 from "module_1490" /* 1490 */;
+// Module 6834 (GuildDiscoveryUtils)
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import HTTPUtils from "HTTPUtils" /* 1284 */;
+import _modDef1488 from "module_1488" /* 1488 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import LurkingStore from "LurkingStore" /* 5239 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5526 */;
-import GuildStore from "GuildStore" /* 5177 */;
-import Constants from "Constants" /* 1072 */;
+import LurkingStore from "LurkingStore" /* 4846 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5534 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 let guild_ids, joinedAt, lurkLocation, openChannel, page;
@@ -192,7 +192,7 @@ obj = function _getDiscoverableGuild() {
       const request = { url: constants.GUILD_DISCOVERY, query: obj7.stringify(obj4), oldFormErrors: true, rejectWithError: true };
       const get = HTTP.get;
       obj4 = { guild_ids };
-      obj7 = _modDef1490;
+      obj7 = _modDef1488;
       guild_ids = await get(request);
       const body = guild_ids.body;
       if (body != null) {
@@ -243,11 +243,11 @@ obj = function _fetchPublicDiscoveryGuild() {
         const uRL = new URL(body.seo.canonical_url);
         const pathname = uRL.pathname;
         slug = pathname.slice(9);
-        obj = { guild: body.data.guild, slug };
+        const obj7 = { guild: body.data.guild, slug };
         let c3 = 0;
         let c4 = 3;
-        const obj7 = { value: obj, done: true };
-        return obj7;
+        obj = { value: obj7, done: true };
+        return obj;
       }
     }
     return null;

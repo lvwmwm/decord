@@ -1,25 +1,25 @@
-// Module ID: 15206
-// Function ID: 15207
+// Module ID: 10151
+// Function ID: 10152
 // Name: MediaModalOverlayHeader
-// Dependencies: [19, 17, 10233, 21, 5306, 15203, 10204, 12636, 5482, 1655, 5538, 10237, 10238, 1113, 7549, 1187, 575, 5919, 15207, 9148, 1380, 15208, 7420, 2]
+// Dependencies: [19, 17, 9721, 21, 4913, 10148, 10032, 10152, 5089, 1653, 5123, 9725, 9726, 1112, 7151, 1186, 575, 5504, 10153, 8658, 1378, 10160, 7022, 2]
 // Exports: MediaModalOverlayHeader
 
-// Module 15206 (MediaModalOverlayHeader)
+// Module 10151 (MediaModalOverlayHeader)
 import nativeDefault from "native" /* 575 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import NavigationRouteUtils from "NavigationRouteUtils" /* 5482 */;
-import timing_timing from "timing/timing" /* 5538 */;
-import MediaShareActions from "MediaShareActions" /* 10204 */;
-import SharePreparingModalConstants from "SharePreparingModalConstants" /* 10233 */;
-import MediaViewerOverlayButtonDefault from "MediaViewerOverlayButton" /* 10238 */;
-import useShouldHideMediaOptionsDefault from "useShouldHideMediaOptions" /* 12636 */;
-import useOverlayLayoutDriver from "useOverlayLayoutDriver" /* 15203 */;
-import MediaViewerOverlayButtonFavoriteGIFDefault from "MediaViewerOverlayButtonFavoriteGIF" /* 15207 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import NavigationRouteUtils from "NavigationRouteUtils" /* 5089 */;
+import timing_timing from "timing/timing" /* 5123 */;
+import SharePreparingModalConstants from "SharePreparingModalConstants" /* 9721 */;
+import MediaViewerOverlayButtonDefault from "MediaViewerOverlayButton" /* 9726 */;
+import MediaShareActions from "MediaShareActions" /* 10032 */;
+import useOverlayLayoutDriver from "useOverlayLayoutDriver" /* 10148 */;
+import useShouldHideMediaOptionsDefault from "useShouldHideMediaOptions" /* 10152 */;
+import MediaViewerOverlayButtonFavoriteGIFDefault from "MediaViewerOverlayButtonFavoriteGIF" /* 10153 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -27,12 +27,12 @@ let closure_4;
 let metroImportDefault;
 let metroRequire;
 let tmp2;
-const intl2 = tmp2(1113);
-const native = tmp2(1187);
-const Text_Text = tmp2(5919);
-const XSmallIcon = tmp2(7549);
-const ContextMenu = tmp2(9148);
-const MediaModalOverlayHeaderWrapper2 = tmp2(10237);
+const intl2 = tmp2(1112);
+const native = tmp2(1186);
+const Text_Text = tmp2(5504);
+const XSmallIcon = tmp2(7151);
+const ContextMenu = tmp2(8658);
+const MediaModalOverlayHeaderWrapper2 = tmp2(9725);
 ({ StyleSheet: c3, View: closure_4 } = react_native);
 const SHARE_PREPARING_MODAL_KEY = SharePreparingModalConstants.SHARE_PREPARING_MODAL_KEY;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
@@ -79,8 +79,8 @@ export function MediaModalOverlayHeader(arg0) {
   const obj3 = NavigationRouteUtils;
   const isModalOpen = obj3.useIsModalOpen(SHARE_PREPARING_MODAL_KEY);
   const items = [closure_9, , ];
-  const useAnimatedStyle = _mod1655.useAnimatedStyle;
-  _mod1655;
+  const useAnimatedStyle = _mod1653.useAnimatedStyle;
+  _mod1653;
   items[1] = timing_timing.withTiming;
   items[2] = isModalOpen;
   let c0;
@@ -104,12 +104,12 @@ export function MediaModalOverlayHeader(arg0) {
   const animatedStyle = useAnimatedStyle(MediaModalOverlayHeaderTsx1);
   const obj4 = { style: items2, children: metroRequire(View2, obj6) };
   const obj5 = { bottom: undefined };
-  const View = tmp6(1655).View;
+  const View = tmp6(1653).View;
   let merged = Object.assign(absoluteFillObject.absoluteFillObject);
   items2 = [obj5, headerLayoutAnimation];
   obj6 = { style: animatedStyle, pointerEvents: str, children: metroImportDefault(MediaModalOverlayHeaderWrapper, obj7) };
   str = "box-none";
-  View2 = tmp6(1655).View;
+  View2 = tmp6(1653).View;
   if (isModalOpen) {
     str = "none";
   }

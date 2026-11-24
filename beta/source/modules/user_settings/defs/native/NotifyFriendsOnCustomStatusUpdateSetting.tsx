@@ -1,27 +1,27 @@
-// Module ID: 18610
-// Function ID: 18611
+// Module ID: 17406
+// Function ID: 17407
 // Name: NotifyFriendsOnCustomStatusUpdateSetting
-// Dependencies: [9202, 12408, 1113, 2869, 5131, 18611, 18612, 2]
+// Dependencies: [8712, 11937, 1112, 2992, 4738, 17407, 17408, 2]
 
-// Module 18610 (NotifyFriendsOnCustomStatusUpdateSetting)
-import intl2 from "intl" /* 1113 */;
-import _modDef2869 from "module_2869" /* 2869 */;
-import UserSettings from "UserSettings" /* 5131 */;
-import SettingsConstants from "SettingsConstants" /* 9202 */;
-import NotifyFriendsOnCustomStatusUpdateUtils from "NotifyFriendsOnCustomStatusUpdateUtils" /* 18611 */;
-import NotifyFriendsOnCustomStatusUpdateExperiment from "NotifyFriendsOnCustomStatusUpdateExperiment" /* 18612 */;
-import SettingBuilders from "SettingBuilders" /* 12408 */;
+// Module 17406 (NotifyFriendsOnCustomStatusUpdateSetting)
+import intl2 from "intl" /* 1112 */;
+import _modDef2992 from "module_2992" /* 2992 */;
+import UserSettings from "UserSettings" /* 4738 */;
+import SettingsConstants from "SettingsConstants" /* 8712 */;
+import NotifyFriendsOnCustomStatusUpdateUtils from "NotifyFriendsOnCustomStatusUpdateUtils" /* 17407 */;
+import NotifyFriendsOnCustomStatusUpdateExperiment from "NotifyFriendsOnCustomStatusUpdateExperiment" /* 17408 */;
+import SettingBuilders from "SettingBuilders" /* 11937 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 let obj = {
   useTitle() {
     const intl = intl2.intl;
-    return intl.string(_modDef2869.AOUyrx);
+    return intl.string(_modDef2992.AOUyrx);
   },
   useDescription() {
     const intl = intl2.intl;
-    return intl.string(_modDef2869.bZ094C);
+    return intl.string(_modDef2992.bZ094C);
   },
   parent: MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   useValue: UserSettings.NotifyFriendsOnCustomStatusUpdate.useSetting,

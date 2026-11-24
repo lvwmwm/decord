@@ -1,10 +1,10 @@
 // Module ID: 18980
 // Function ID: 18981
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 18980 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/main_tabs_v2/native/tabs/guilds/empty_states/images", width: 148, height: 107, scales: [2, 3, 4], hash: "0068bea3a7b26b1d06c599bf3096c534", name: "channels-empty", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/forum_channels", width: 343, height: 236, scales: [1], hash: "6e9bbbae1088530d5ab3c52a383f127c", name: "channel_settings_list_view_example_post", type: "png" });

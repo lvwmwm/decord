@@ -1,14 +1,15 @@
-// Module ID: 13123
-// Function ID: 13124
+// Module ID: 13743
+// Function ID: 13744
 // Name: RouteManager
-// Dependencies: [6790, 13124, 1072, 1099, 13125, 9792, 2]
+// Dependencies: [6394, 13744, 1071, 1098, 13745, 673, 2]
 
-// Module 13123 (RouteManager)
-import Constants from "Constants" /* 1072 */;
-import router_utils from "router_utils" /* 1099 */;
-import convertRouteToNavigation from "convertRouteToNavigation" /* 13125 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6790 */;
-import KeybindRouterStore from "KeybindRouterStore" /* 13124 */;
+// Module 13743 (RouteManager)
+import addSentryBreadcrumbDefault from "addSentryBreadcrumb" /* 673 */;
+import Constants from "Constants" /* 1071 */;
+import router_utils from "router_utils" /* 1098 */;
+import convertRouteToNavigation from "convertRouteToNavigation" /* 13745 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6394 */;
+import KeybindRouterStore from "KeybindRouterStore" /* 13744 */;
 import size from "module_2" /* 2 */;
 
 function handleConnectionChange() {
@@ -28,7 +29,7 @@ function handleRouteChange(pathname, REPLACE) {
       obj = convertRouteToNavigation;
       const tmp2 = require;
       if (!obj.convertRouteToNavigation(pathname)) {
-        const tmp2Result = tmp2(1099);
+        const tmp2Result = tmp2(1098);
         tmp2Result.replaceWith(Routes.ME);
       }
     }
@@ -107,12 +108,11 @@ class RouteManager {
         let pathname = obj2.getHistory().location.pathname;
         let tmp7Result = tmp7(location, REPLACE);
         if (null != tmp7Result) {
-          let tmp9Result = tmp9(9792);
           let obj3 = { message: "RouteManager.handleRouteChange: A route rewrite is replacing the current route", data: obj4 };
           obj4 = { replacePath: tmp7Result.path, previousPath: pathname };
-          let addBreadcrumbResult = tmp9Result.addBreadcrumb(obj3);
-          let tmp9Result2 = tmp9(1099);
-          let replaceWithResult = tmp9Result2.replaceWith(tmp7Result.path, tmp7Result.state);
+          let tmp14 = addSentryBreadcrumbDefault(obj3);
+          let tmp9Result = tmp9(1098);
+          let replaceWithResult = tmp9Result.replaceWith(tmp7Result.path, tmp7Result.state);
           obj.return();
           let flag = true;
           return true;
@@ -162,7 +162,7 @@ class RouteManager {
       const tmp3 = voiceRouteRewriter(_location, obj2.getHistory().action);
       const tmp = require;
       if (null != tmp3) {
-        const tmpResult = tmp(1099);
+        const tmpResult = tmp(1098);
         tmpResult.replaceWith(tmp3.path, tmp3.state);
       }
     }

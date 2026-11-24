@@ -1,17 +1,17 @@
-// Module ID: 7858
-// Function ID: 7859
+// Module ID: 7460
+// Function ID: 7461
 // Name: ParagraphField
-// Dependencies: [19, 17, 7281, 21, 5306, 7859, 5919, 1113, 2]
+// Dependencies: [19, 17, 6886, 21, 4913, 7461, 5504, 1112, 2]
 // Exports: default
 
-// Module 7858 (ParagraphField)
+// Module 7460 (ParagraphField)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import intl2 from "intl" /* 1113 */;
-import MemberVerificationConstants from "MemberVerificationConstants" /* 7281 */;
-import TextArea2 from "TextArea" /* 7859 */;
+import intl2 from "intl" /* 1112 */;
+import MemberVerificationConstants from "MemberVerificationConstants" /* 6886 */;
+import TextArea2 from "TextArea" /* 7461 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;
@@ -31,6 +31,6 @@ export default function ParagraphField(field) {
   if (str == null) {
     str = "";
   }
-  intl = tmp3(1113).intl;
+  intl = tmp3(1112).intl;
   return <tmp2 style={closure_5().container}>{null}</tmp2>;
 };

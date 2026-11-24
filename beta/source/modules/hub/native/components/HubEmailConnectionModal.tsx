@@ -1,22 +1,22 @@
-// Module ID: 15090
-// Function ID: 15091
+// Module ID: 13677
+// Function ID: 13678
 // Name: HubEmailConnectionModal
-// Dependencies: [19, 15082, 21, 5306, 5882, 7493, 15091, 1264, 15094, 15101, 15103, 15104, 15105, 15108, 7415, 1502, 5907, 15110, 7490, 1113, 2]
+// Dependencies: [19, 13669, 21, 4913, 5467, 7095, 13678, 1263, 13681, 13688, 13690, 13691, 13692, 13695, 7017, 1500, 5492, 13697, 7092, 1112, 2]
 // Exports: HubEmailConnectionScreen, default
 
-// Module 15090 (HubEmailConnectionModal)
+// Module 13677 (HubEmailConnectionModal)
 import Fragment from "Fragment" /* 21 */;
-import intl2 from "intl" /* 1113 */;
-import useNavigation from "useNavigation" /* 1502 */;
-import NavigatorConstants from "NavigatorConstants" /* 5882 */;
-import reactDefault from "react" /* 5907 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7415 */;
-import Navigator2 from "Navigator" /* 7490 */;
-import NavigatorHeader from "NavigatorHeader" /* 7493 */;
-import HubConstants from "HubConstants" /* 15082 */;
-import HubEmailConnectionModalActionCreatorsDefault from "HubEmailConnectionModalActionCreators" /* 15110 */;
+import intl2 from "intl" /* 1112 */;
+import useNavigation from "useNavigation" /* 1500 */;
+import NavigatorConstants from "NavigatorConstants" /* 5467 */;
+import reactDefault from "react" /* 5492 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7017 */;
+import Navigator2 from "Navigator" /* 7092 */;
+import NavigatorHeader from "NavigatorHeader" /* 7095 */;
+import HubConstants from "HubConstants" /* 13669 */;
+import HubEmailConnectionModalActionCreatorsDefault from "HubEmailConnectionModalActionCreators" /* 13697 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -106,7 +106,7 @@ export default function HubEmailConnectionModal(arg0) {
         return navigation(tmp, obj);
       }
     };
-    obj6[HubEmailConnectionSteps.VERIFY_EMAIL] = { impressionName: tmp9(1264).ImpressionNames.HUB_EMAIL_SIGNUP, impressionProperties, fullscreen: true, headerLeft: headerBackButton, headerTitle, render };
+    obj6[HubEmailConnectionSteps.VERIFY_EMAIL] = { impressionName: tmp9(1263).ImpressionNames.HUB_EMAIL_SIGNUP, impressionProperties, fullscreen: true, headerLeft: headerBackButton, headerTitle, render };
     obj6[HubEmailConnectionSteps.EMAIL_WAITLIST] = {
       fullscreen: true,
       headerTitle() {
@@ -165,7 +165,7 @@ export default function HubEmailConnectionModal(arg0) {
         return navigation(tmp, obj);
       }
     };
-    ({ impressionName: tmp9(1264).ImpressionNames.HUB_EMAIL_SIGNUP, impressionProperties, fullscreen: true, headerLeft: headerBackButton, headerTitle, render });
+    ({ impressionName: tmp9(1263).ImpressionNames.HUB_EMAIL_SIGNUP, impressionProperties, fullscreen: true, headerLeft: headerBackButton, headerTitle, render });
     return obj5;
   });
   ({ screens, initialRouteStack } = tmp);

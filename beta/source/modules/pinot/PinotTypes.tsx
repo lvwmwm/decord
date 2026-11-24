@@ -1,9 +1,9 @@
-// Module ID: 8168
-// Function ID: 8169
+// Module ID: 7771
+// Function ID: 7772
 // Name: PinotTypes
 // Dependencies: [2]
 
-// Module 8168 (PinotTypes)
+// Module 7771 (PinotTypes)
 import size from "module_2" /* 2 */;
 
 const obj = { CHANNEL_SUMMARIES: "channel_summaries", CHANNEL_MESSAGES: "channel_messages" };

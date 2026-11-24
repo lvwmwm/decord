@@ -1,15 +1,15 @@
-// Module ID: 17840
-// Function ID: 17841
+// Module ID: 16620
+// Function ID: 16621
 // Name: FormSeparator
-// Dependencies: [19, 17, 21, 5306, 575, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 2]
 // Exports: default
 
-// Module 17840 (FormSeparator)
+// Module 16620 (FormSeparator)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let size;

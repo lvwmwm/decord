@@ -1,19 +1,19 @@
-// Module ID: 13255
-// Function ID: 13256
+// Module ID: 18335
+// Function ID: 18336
 // Name: ConjureLinkedAppConnector
-// Dependencies: [19, 17, 5307, 21, 575, 5306, 504, 1655, 5538, 5541, 13256, 7963, 2]
+// Dependencies: [19, 17, 4914, 21, 575, 4913, 504, 1653, 5123, 5126, 18336, 7565, 2]
 // Exports: default
 
-// Module 13255 (ConjureLinkedAppConnector)
+// Module 18335 (ConjureLinkedAppConnector)
 import nativeDefault from "native" /* 575 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import timing_timing from "timing/timing" /* 5538 */;
-import timingPresets from "timingPresets" /* 5541 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import timing_timing from "timing/timing" /* 5123 */;
+import timingPresets from "timingPresets" /* 5126 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5307 */;
+import AccessibilityStore from "AccessibilityStore" /* 4914 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let set;
@@ -80,15 +80,15 @@ export default function ConjureLinkedAppConnector(flow) {
       const result = sharedValue.set(0);
       set = sharedValue.set;
       if ("both" === tmp) {
-        const withSequence = _mod1655.withSequence;
-        _mod1655;
+        const withSequence = _mod1653.withSequence;
+        _mod1653;
         const obj = timing_timing;
         const withTimingResult = obj.withTiming(1, timingPresets.timingSlow);
         const obj2 = timing_timing;
         withSequenceResult = withSequence(withTimingResult, obj2.withTiming(0, timingPresets.timingSlow));
       } else {
-        const withSequence2 = _mod1655.withSequence;
-        _mod1655;
+        const withSequence2 = _mod1653.withSequence;
+        _mod1653;
         const obj3 = timing_timing;
         const withTimingResult1 = obj3.withTiming(1, timingPresets.timingSlow);
         const obj4 = timing_timing;

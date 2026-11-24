@@ -1,12 +1,12 @@
-// Module ID: 10310
-// Function ID: 10311
+// Module ID: 9800
+// Function ID: 9801
 // Name: useGameProfileNavigation
-// Dependencies: [32, 19, 10311, 10286, 2]
+// Dependencies: [32, 19, 9801, 9774, 2]
 // Exports: default
 
-// Module 10310 (useGameProfileNavigation)
-import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 10286 */;
-import GameProfileNavTypes from "GameProfileNavTypes" /* 10311 */;
+// Module 9800 (useGameProfileNavigation)
+import GameProfileAnalyticUtils from "GameProfileAnalyticUtils" /* 9774 */;
+import GameProfileNavTypes from "GameProfileNavTypes" /* 9801 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import size from "module_2" /* 2 */;

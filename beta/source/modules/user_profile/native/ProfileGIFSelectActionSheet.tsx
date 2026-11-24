@@ -1,22 +1,21 @@
-// Module ID: 17081
-// Function ID: 17082
+// Module ID: 15846
+// Function ID: 15847
 // Name: ProfileGIFSelectActionSheet
-// Dependencies: [32, 5, 19, 17, 21, 5306, 575, 7802, 17071, 9401, 9399, 9398, 8541, 7808, 5542, 5556, 7913, 1113, 9436, 11337, 2]
+// Dependencies: [32, 5, 19, 17, 21, 4913, 575, 15833, 7404, 15834, 8912, 8910, 8909, 8131, 7410, 5127, 5141, 7515, 1112, 8952, 11352, 2]
 // Exports: default
 
-// Module 17081 (ProfileGIFSelectActionSheet)
+// Module 15846 (ProfileGIFSelectActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1113 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5556 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7913 */;
-import NitroWheelIcon from "NitroWheelIcon" /* 9436 */;
-import GIFPickerDefault from "GIFPicker" /* 11337 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5141 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7515 */;
+import GIFPickerDefault from "GIFPicker" /* 11352 */;
+import ProfileEditSheetNitroUpdatesExperiment from "ProfileEditSheetNitroUpdatesExperiment" /* 15833 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5;
@@ -24,6 +23,9 @@ let c4, c5;
 let metroImportAll;
 let metroImportDefault;
 let obj2;
+let tmp2;
+const intl3 = tmp2(1112);
+const NitroWheelIcon = tmp2(8952);
 const View = react_native.View;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let obj = { titleWrapper: { flex: 0 }, titleContainer: { justifyContent: "flex-start" }, gifPicker: obj2 };
@@ -35,8 +37,10 @@ let result = size.fileFinishedImporting("modules/user_profile/native/ProfileGIFS
 
 export default function ProfileGIFSelectActionSheet(arg0) {
   let intl;
+  let intl2;
   let items;
-  let obj7;
+  let obj11;
+  let obj5;
   ({ profileAssetType: require, selectionContext: importDefault, guildId: dependencyMap } = arg0);
   let obj = function _onPressGIF() {
     obj = _asyncToGenerator(async function(arg0, value) {
@@ -140,7 +144,7 @@ export default function ProfileGIFSelectActionSheet(arg0) {
                 const asDataURL = fileReader.readAsDataURL(closure_1_0);
               });
               const items = [promise, ];
-              const obj20 = src(closure_2[7]);
+              const obj20 = src(closure_2[8]);
               const fromBlobResult = obj20.fromBlob(closure_2);
               items[1] = fromBlobResult.catch(() => null);
               c4 = 3;
@@ -162,36 +166,36 @@ export default function ProfileGIFSelectActionSheet(arg0) {
             originalMd5 = closure_4[1];
             if (constants.AVATAR === closure_131_0) {
               const obj16 = { imageUri, description: obj5.generateAvatarDescription(), originalMd5 };
-              const createPendingImage = closure_0(closure_2[8]).createPendingImage;
-              const tmp22 = closure_0(closure_2[8]);
-              obj5 = closure_0(closure_2[9]);
+              const createPendingImage = closure_0(closure_2[9]).createPendingImage;
+              const tmp22 = closure_0(closure_2[9]);
+              obj5 = closure_0(closure_2[10]);
               avatar = createPendingImage(obj16);
               if (closure_131_1 === constants2.PROFILE_TRY_IT_OUT) {
-                const obj9 = closure_0(closure_2[10]);
+                const obj9 = closure_0(closure_2[11]);
                 obj9.setTryItOutAvatar(avatar);
               } else {
                 const obj17 = { guildId: closure_131_2, avatar };
-                const obj6 = closure_0(closure_2[11]);
+                const obj6 = closure_0(closure_2[12]);
                 obj6.setPendingChanges(obj17);
                 let str = "set";
-                const obj8 = closure_0(closure_2[12]);
+                const obj8 = closure_0(closure_2[13]);
                 let result = obj8.announcePendingAvatarChange("set");
               }
             } else if (constants.BANNER === tmp63) {
-              const obj18 = { assetOrigin: closure_0(closure_2[13]).AssetOriginTypes.NEW_ASSET, imageUri, description: "", originalAsset: "Array", originalMd5 };
-              const createPendingImage2 = closure_0(closure_2[8]).createPendingImage;
-              const tmp71 = closure_0(closure_2[8]);
+              const obj18 = { assetOrigin: closure_0(closure_2[14]).AssetOriginTypes.NEW_ASSET, imageUri, description: "", originalAsset: "Array", originalMd5 };
+              const createPendingImage2 = closure_0(closure_2[9]).createPendingImage;
+              const tmp71 = closure_0(closure_2[9]);
               banner = createPendingImage2(obj18);
               if (closure_131_1 === constants2.PROFILE_TRY_IT_OUT) {
-                obj3 = closure_0(closure_2[10]);
+                obj3 = closure_0(closure_2[11]);
                 obj3.setTryItOutBanner(banner);
               } else {
                 const obj19 = { guildId: closure_131_2, banner };
-                obj = closure_0(closure_2[11]);
+                obj = closure_0(closure_2[12]);
                 obj.setPendingChanges(obj19);
               }
             }
-            const obj10 = src(closure_2[14]);
+            const obj10 = src(closure_2[15]);
             obj10.hideActionSheet();
             c5 = 3;
             return { value: "HermesInternal", done: null };
@@ -205,23 +209,34 @@ export default function ProfileGIFSelectActionSheet(arg0) {
     return obj(...arguments);
   };
   const tmp = closure_9();
+  let tmp2 = require;
+  const tmp3 = dependencyMap;
+  obj = ProfileEditSheetNitroUpdatesExperiment;
+  const enabled = obj.useProfileEditSheetNitroUpdatesConfig("profile_gif_select_action_sheet_native").enabled;
   const ref = react.useRef(null);
-  obj = { ref, scrollable: true, startExpanded: true, children: items };
+  let obj2 = { ref, scrollable: true, startExpanded: true, children: items };
   const BottomSheet = Sheet_BottomSheet.BottomSheet;
-  obj3 = { title: intl.string(intl2.t["xsC+/y"]), trailing: closure_7(NitroWheelIcon.NitroWheelIcon, {}), titleWrapperStyle: null, titleContainerStyle: null };
   const BottomSheetTitleHeader = BottomSheetTitleHeader2.BottomSheetTitleHeader;
-  intl = intl2.intl;
-  ({ titleWrapper: obj2.titleWrapperStyle, titleContainer: obj2.titleContainerStyle } = tmp);
-  items = [closure_7(BottomSheetTitleHeader, obj3), ];
-  obj4 = { style: tmp.gifPicker, children: closure_7(GIFPickerDefault, obj7) };
-  obj7 = {
+  const tmp5 = closure_8;
+  if (enabled) {
+    obj4 = { title: intl2.string(intl3.t["6gUTsS"]) };
+    intl2 = intl3.intl;
+    obj5 = obj4;
+  } else {
+    obj5 = { title: intl.string(intl3.t["xsC+/y"]), trailing: tmp6(NitroWheelIcon.NitroWheelIcon, {}), titleWrapperStyle: null, titleContainerStyle: null };
+    intl = intl3.intl;
+    ({ titleWrapper: obj3.titleWrapperStyle, titleContainer: obj3.titleContainerStyle } = tmp);
+  }
+  items = [tmp6(BottomSheetTitleHeader, obj5), ];
+  let obj6 = { style: tmp.gifPicker, children: tmp6(GIFPickerDefault, obj11) };
+  obj11 = {
     bottomSheetRef: ref,
     onPressGIF(arg0) {
       return obj(...arguments);
     }
   };
-  items[1] = closure_7(View, obj4);
-  return closure_8(BottomSheet, obj);
+  items[1] = closure_7(View, obj6);
+  return tmp5(BottomSheet, obj2);
 };
 export const ProfileAssetType = obj3;
 export const GIFSelectionContext = obj4;

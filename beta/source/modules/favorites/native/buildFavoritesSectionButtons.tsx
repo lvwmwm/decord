@@ -1,11 +1,11 @@
-// Module ID: 10975
-// Function ID: 10976
+// Module ID: 11218
+// Function ID: 11219
 // Name: buildFavoritesSectionButtons
-// Dependencies: [5, 10944, 2121, 1113, 3679, 10183, 10181, 2]
+// Dependencies: [5, 11219, 2119, 1112, 3802, 10011, 10009, 2]
 // Exports: default
 
-// Module 10975 (buildFavoritesSectionButtons)
-import _modDef3679 from "module_3679" /* 3679 */;
+// Module 11218 (buildFavoritesSectionButtons)
+import _modDef3802 from "module_3802" /* 3802 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -134,8 +134,8 @@ export default function buildFavoritesSectionButtons(channelId) {
     let tmp3;
     if (channelId.isChannelInFavorites) {
       const obj2 = {
-        label: intl2.string(_modDef3679.TN4nAX),
-        IconComponent: channelId(10183).StarIcon,
+        label: intl2.string(_modDef3802.TN4nAX),
+        IconComponent: channelId(10011).StarIcon,
         isDestructive: true,
         onPress() {
               function removeChannelFromFavorites() {
@@ -144,14 +144,14 @@ export default function buildFavoritesSectionButtons(channelId) {
               return removeChannelFromFavorites(channelId);
             }
       };
-      intl2 = channelId(1113).intl;
+      intl2 = channelId(1112).intl;
       tmp3 = obj2;
     } else {
       tmp3 = null;
       if (!tmp) {
         obj = {
-          label: intl.string(_modDef3679.G9fGlP),
-          IconComponent: channelId(10181).StarOutlineIcon,
+          label: intl.string(_modDef3802.G9fGlP),
+          IconComponent: channelId(10009).StarOutlineIcon,
           onPress() {
                   function addChannelToFavorites() {
                     return closure_1_4(...arguments);
@@ -159,7 +159,7 @@ export default function buildFavoritesSectionButtons(channelId) {
                   return addChannelToFavorites(channelId);
                 }
         };
-        intl = channelId(1113).intl;
+        intl = channelId(1112).intl;
         tmp3 = obj;
       }
     }

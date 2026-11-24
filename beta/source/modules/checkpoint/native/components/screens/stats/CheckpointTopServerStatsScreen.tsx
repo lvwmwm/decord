@@ -1,30 +1,30 @@
-// Module ID: 14518
-// Function ID: 14519
+// Module ID: 12760
+// Function ID: 12761
 // Name: CheckpointTopServerStatsScreen
-// Dependencies: [17, 14255, 6367, 21, 5306, 575, 14487, 504, 6737, 1113, 3317, 14272, 14516, 7720, 5919, 14515, 10939, 14273, 14508, 14507, 14509, 2]
+// Dependencies: [17, 12128, 5969, 21, 4913, 575, 12727, 504, 6339, 1112, 3440, 12509, 12757, 7322, 12759, 12756, 12471, 12510, 12749, 12748, 12750, 2]
 // Exports: default
 
-// Module 14518 (CheckpointTopServerStatsScreen)
+// Module 12760 (CheckpointTopServerStatsScreen)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef3317 from "module_3317" /* 3317 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6737 */;
-import GuildIcon from "GuildIcon" /* 7720 */;
-import ServerIcon from "ServerIcon" /* 10939 */;
-import CheckpointScreenDefault from "CheckpointScreen" /* 14272 */;
-import CheckpointTextDefault from "CheckpointText" /* 14273 */;
-import useIsCheckpointWide from "useIsCheckpointWide" /* 14487 */;
-import CheckpointCountUpStatNumberDefault from "CheckpointCountUpStatNumber" /* 14507 */;
-import CheckpointNumberUtils from "CheckpointNumberUtils" /* 14508 */;
-import CheckpointEmphasisDefault from "CheckpointEmphasis" /* 14509 */;
-import CheckpointGuildStatsDefault from "CheckpointGuildStats" /* 14515 */;
-import CheckpointRankTagDefault from "CheckpointRankTag" /* 14516 */;
-import CheckpointStore from "CheckpointStore" /* 14255 */;
-import CheckpointConstants from "CheckpointConstants" /* 6367 */;
+import _modDef3440 from "module_3440" /* 3440 */;
+import CheckpointStatsUtils from "CheckpointStatsUtils" /* 6339 */;
+import GuildIcon from "GuildIcon" /* 7322 */;
+import ServerIcon from "ServerIcon" /* 12471 */;
+import CheckpointScreenDefault from "CheckpointScreen" /* 12509 */;
+import CheckpointTextDefault from "CheckpointText" /* 12510 */;
+import useIsCheckpointWide from "useIsCheckpointWide" /* 12727 */;
+import CheckpointCountUpStatNumberDefault from "CheckpointCountUpStatNumber" /* 12748 */;
+import CheckpointNumberUtils from "CheckpointNumberUtils" /* 12749 */;
+import CheckpointEmphasisDefault from "CheckpointEmphasis" /* 12750 */;
+import CheckpointGuildStatsDefault from "CheckpointGuildStats" /* 12756 */;
+import CheckpointRankTagDefault from "CheckpointRankTag" /* 12757 */;
+import CheckpointTruncatedTextDefault from "CheckpointTruncatedText" /* 12759 */;
+import CheckpointStore from "CheckpointStore" /* 12128 */;
+import CheckpointConstants from "CheckpointConstants" /* 5969 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 const GuildIconDefault = GuildIcon;
@@ -107,13 +107,13 @@ export default function CheckpointTopServerStatsScreen() {
     prop = stateFromStores.numDaysInteractedPercentile;
   }
   const checkpointTopPercent = getCheckpointTopPercent(prop);
-  const intl = tmp5(1113).intl;
+  const intl = tmp5(1112).intl;
   let formatToPlainStringResult;
-  const stringResult = intl.string(_modDef3317["M+a+t1"]);
+  const stringResult = intl.string(_modDef3440["M+a+t1"]);
   if (null != checkpointTopPercent) {
-    const intl2 = tmp5(1113).intl;
+    const intl2 = tmp5(1112).intl;
     const obj2 = { numDays: roundResult, percent: checkpointTopPercent };
-    formatToPlainStringResult = intl2.formatToPlainString(tmp2(3317).BRQODX, obj2);
+    formatToPlainStringResult = intl2.formatToPlainString(tmp2(3440).BRQODX, obj2);
   }
   const obj3 = { centered: tmp4, children: metroImportDefault(View, obj4) };
   const obj5 = { style: tmp4 ? tmp.wideSpotlightContainer : tmp.spotlightContainer, children: tmp14Result };
@@ -127,9 +127,9 @@ export default function CheckpointTopServerStatsScreen() {
     const obj8 = { guild: stateFromStores.guild, size: GuildIcon.GuildIconSizes.XXLARGE, style: tmp.guildIcon };
     const tmp2Result5 = GuildIconDefault;
     items2 = [metroRequire(tmp2Result5, obj8), ];
-    const obj10 = { variant: "heading-lg/medium", style: tmp.guildName, lineClamp: 1, ellipsizeMode: "tail", children: stateFromStores.guild.name };
+    const obj10 = { text: stateFromStores.guild.name, guildId: stateFromStores.guild.id, variant: "heading-lg/medium", style: tmp.guildName };
     const obj9 = { style: tmp.guildDetails, children: items3 };
-    items3 = [metroRequire(Text_Text.Text, obj10), ];
+    items3 = [metroRequire(CheckpointTruncatedTextDefault, obj10), ];
     let num2 = stateFromStores.numVoiceMinutes;
     const tmp2Result6 = CheckpointGuildStatsDefault;
     if (num2 == null) {
@@ -161,7 +161,7 @@ export default function CheckpointTopServerStatsScreen() {
   const obj17 = { variant: "heading-lg/medium", accessibilityLabel: formatToPlainStringResult, children: formatResult };
   const tmp2Result8 = CheckpointTextDefault;
   if (null != checkpointTopPercent) {
-    const intl4 = tmp5(1113).intl;
+    const intl4 = tmp5(1112).intl;
     const obj18 = {
       numDays: roundResult,
       percent: checkpointTopPercent,
@@ -170,11 +170,11 @@ export default function CheckpointTopServerStatsScreen() {
           return closure_1_6(CheckpointEmphasisDefault, obj, arg1);
         }
     };
-    formatResult = intl4.format(tmp2(3317).sIDTV1, obj18);
+    formatResult = intl4.format(tmp2(3440).sIDTV1, obj18);
   } else {
-    const intl3 = tmp5(1113).intl;
+    const intl3 = tmp5(1112).intl;
     const obj19 = { numDays: roundResult };
-    formatResult = intl3.format(tmp2(3317).nLCUQ4, obj19);
+    formatResult = intl3.format(tmp2(3440).nLCUQ4, obj19);
   }
   items6[2] = metroRequire(tmp2Result8, obj17);
   items4[1] = metroImportDefault(View, obj12);

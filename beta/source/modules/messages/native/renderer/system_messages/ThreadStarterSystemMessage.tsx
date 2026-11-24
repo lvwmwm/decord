@@ -1,20 +1,20 @@
-// Module ID: 9252
-// Function ID: 9253
+// Module ID: 8760
+// Function ID: 8761
 // Name: ThreadStarterSystemMessage
-// Dependencies: [8744, 1072, 38, 1113, 9192, 2]
+// Dependencies: [8339, 1071, 38, 1112, 8702, 2]
 // Exports: createThreadStarterSystemMessage
 
-// Module 9252 (ThreadStarterSystemMessage)
+// Module 8760 (ThreadStarterSystemMessage)
 import _modDef38 from "module_38" /* 38 */;
-import Constants from "Constants" /* 1072 */;
-import intl2 from "intl" /* 1113 */;
-import ReferencedMessageStore2 from "ReferencedMessageStore" /* 8744 */;
+import Constants from "Constants" /* 1071 */;
+import intl2 from "intl" /* 1112 */;
+import ReferencedMessageStore2 from "ReferencedMessageStore" /* 8339 */;
 import size from "module_2" /* 2 */;
 
 const ReferencedMessageStore = ReferencedMessageStore2;
 
 let tmp;
-const createCommonMessageDefault = tmp(9192);
+const createCommonMessageDefault = tmp(8702);
 const ReferencedMessageState = ReferencedMessageStore2.ReferencedMessageState;
 const MessageTypes = Constants.MessageTypes;
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/ThreadStarterSystemMessage.tsx");
@@ -32,9 +32,9 @@ export function createThreadStarterSystemMessage(message) {
     const intl = intl2.intl;
     const string = intl.string;
     if (messageByReference.state === tmp6.DELETED) {
-      OCs36J = tmp10(1113).t.mE3KJN;
+      OCs36J = tmp10(1112).t.mE3KJN;
     } else {
-      OCs36J = tmp10(1113).t.OCs36J;
+      OCs36J = tmp10(1112).t.OCs36J;
     }
     const obj = { content: string(OCs36J) };
     const merged = Object.assign(createCommonMessageDefault(message));

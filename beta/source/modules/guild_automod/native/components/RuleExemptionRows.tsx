@@ -1,19 +1,19 @@
-// Module ID: 20491
-// Function ID: 20492
+// Module ID: 19745
+// Function ID: 19746
 // Name: RuleExemptionRows
-// Dependencies: [19, 5155, 5212, 5248, 1388, 14168, 21, 1113, 504, 5944, 7746, 7443, 8173, 5542, 20492, 2121, 20439, 20494, 2]
+// Dependencies: [19, 4762, 4819, 4855, 1386, 12408, 21, 1112, 504, 5529, 7348, 7045, 7776, 5127, 19746, 2119, 19693, 19748, 2]
 // Exports: default
 
-// Module 20491 (RuleExemptionRows)
-import intl5 from "intl" /* 1113 */;
-import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
-import Constants from "Constants" /* 14168 */;
+// Module 19745 (RuleExemptionRows)
+import intl5 from "intl" /* 1112 */;
+import asyncRequire from "asyncRequire" /* 2119 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
+import Constants from "Constants" /* 12408 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import GuildRoleStore from "GuildRoleStore" /* 5212 */;
-import RelationshipStore from "RelationshipStore" /* 5248 */;
-import UserStore from "UserStore" /* 1388 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import GuildRoleStore from "GuildRoleStore" /* 4819 */;
+import RelationshipStore from "RelationshipStore" /* 4855 */;
+import UserStore from "UserStore" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -106,7 +106,7 @@ export default function RuleExemptionRows(rule) {
           return onChangeRule(obj);
         }
       };
-      obj.openLazy(asyncRequire(20492, dependencyMap.paths), "AutomodExemptRoles", obj2);
+      obj.openLazy(asyncRequire(19746, dependencyMap.paths), "AutomodExemptRoles", obj2);
     }
   };
   const TableRow = tmp2(tmp3[11]).TableRow;
@@ -133,7 +133,7 @@ export default function RuleExemptionRows(rule) {
               return onChangeRule(obj);
             }
           };
-          obj.openLazy(asyncRequire(20494, dependencyMap.paths), "AutomodExemptChannels", obj2);
+          obj.openLazy(asyncRequire(19748, dependencyMap.paths), "AutomodExemptChannels", obj2);
         }
     };
     const TableRow2 = tmp2(tmp3[11]).TableRow;

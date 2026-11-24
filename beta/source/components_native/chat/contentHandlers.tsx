@@ -1,18 +1,18 @@
-// Module ID: 12508
-// Function ID: 12509
+// Module ID: 12027
+// Function ID: 12028
 // Name: contentHandlers
-// Dependencies: [5, 12506, 9100, 7657, 6002, 12509, 12465, 8476, 7937, 5542, 12526, 2121, 11, 5131, 1113, 7943, 6004, 6258, 12576, 2]
+// Dependencies: [5, 10416, 8610, 7259, 5592, 12028, 10380, 8067, 7539, 5127, 12044, 2119, 11, 4738, 1112, 7545, 5594, 5860, 12102, 2]
 
-// Module 12508 (contentHandlers)
+// Module 12027 (contentHandlers)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
-import ToastUtils from "ToastUtils" /* 6004 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6258 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
-import ClipboardUtils from "ClipboardUtils" /* 7943 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8476 */;
-import showLongPressURLActionSheetDefault from "showLongPressURLActionSheet" /* 12506 */;
-import showEmojiActionSheetDefault from "showEmojiActionSheet" /* 12576 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
+import ToastUtils from "ToastUtils" /* 5594 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5860 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7539 */;
+import ClipboardUtils from "ClipboardUtils" /* 7545 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8067 */;
+import showLongPressURLActionSheetDefault from "showLongPressURLActionSheet" /* 10416 */;
+import showEmojiActionSheetDefault from "showEmojiActionSheet" /* 12102 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -49,7 +49,7 @@ let obj = {
     let roleId;
     let roleName;
     let userId;
-    let obj = parsedUserId(12465);
+    let obj = parsedUserId(10380);
     const nativeSyntheticEventData = obj.getNativeSyntheticEventData(nativeEvent);
     ({ userId, channelId, roleName, parsedUserId } = nativeSyntheticEventData);
     ({ roleId, guildId } = nativeSyntheticEventData);
@@ -64,7 +64,7 @@ let obj = {
         if (null != guildId) {
           const obj3 = { guildId, roleId, channelId };
           const obj7 = ActionSheetActionCreatorsDefault;
-          obj7.openLazy(parsedUserId(2121)(12526, dependencyMap.paths), "RoleMembersActionSheet", obj3);
+          obj7.openLazy(parsedUserId(2119)(12044, dependencyMap.paths), "RoleMembersActionSheet", obj3);
         }
       }
       if ("@everyone" === roleName) {
@@ -72,18 +72,18 @@ let obj = {
           const openLazy = ActionSheetActionCreatorsDefault.openLazy;
           const obj4 = { guildId, roleId: obj6.castGuildIdAsEveryoneGuildRoleId(guildId), channelId };
           ActionSheetActionCreatorsDefault;
-          const tmp12 = parsedUserId(2121)(12526, dependencyMap.paths);
+          const tmp12 = parsedUserId(2119)(12044, dependencyMap.paths);
           obj6 = SnowflakeUtilsDefault;
           openLazy(tmp12, "RoleMembersActionSheet", obj4);
         }
       }
       if (null == roleName) {
-        const DeveloperMode = tmp(5131).DeveloperMode;
+        const DeveloperMode = tmp(4738).DeveloperMode;
         if (DeveloperMode.getSetting()) {
           let obj9;
           if (null != parsedUserId) {
             const obj5 = {
-              secondaryConfirmText: intl.string(parsedUserId(1113).t["/AXYnE"]),
+              secondaryConfirmText: intl.string(parsedUserId(1112).t["/AXYnE"]),
               onConfirmSecondary() {
                         const obj = ClipboardUtils;
                         obj.copy(parsedUserId);
@@ -91,15 +91,15 @@ let obj = {
                         const result = obj2.presentCopiedToClipboard();
                       }
             };
-            intl = tmp(1113).intl;
+            intl = tmp(1112).intl;
             obj9 = obj5;
           }
-          const obj8 = { title: intl2.string(parsedUserId(1113).t.r0DLNm), body: intl3.string(parsedUserId(1113).t.Fqqbhg), confirmText: intl4.string(parsedUserId(1113).t.BddRzS), isDismissable: true };
+          const obj8 = { title: intl2.string(parsedUserId(1112).t.r0DLNm), body: intl3.string(parsedUserId(1112).t.Fqqbhg), confirmText: intl4.string(parsedUserId(1112).t.BddRzS), isDismissable: true };
           const show = AlertActionCreatorsDefault.show;
           AlertActionCreatorsDefault;
-          intl2 = tmp(1113).intl;
-          intl3 = tmp(1113).intl;
-          intl4 = tmp(1113).intl;
+          intl2 = tmp(1112).intl;
+          intl3 = tmp(1112).intl;
+          intl4 = tmp(1112).intl;
           const merged = Object.assign(obj9);
           show(obj8);
         }

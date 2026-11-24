@@ -1,14 +1,14 @@
-// Module ID: 17136
-// Function ID: 17137
+// Module ID: 15902
+// Function ID: 15903
 // Name: UserProfileTypingIndicatorEditButton
-// Dependencies: [32, 19, 1072, 5152, 21, 1502, 14581, 9560, 5139, 7918, 7937, 1113, 17101, 4133, 14594, 2]
+// Dependencies: [32, 19, 1071, 4759, 21, 1500, 12833, 9080, 4746, 7520, 7539, 1112, 15867, 4192, 12846, 2]
 // Exports: default
 
-// Module 17136 (UserProfileTypingIndicatorEditButton)
+// Module 15902 (UserProfileTypingIndicatorEditButton)
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1072 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
+import Constants from "Constants" /* 1071 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4759 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -24,19 +24,19 @@ export default function UserProfileTypingIndicatorEditButton(isTryItOut) {
   let closure_2;
   isTryItOut = isTryItOut.isTryItOut;
   let analyticsLocations;
-  let obj = isTryItOut(1502);
+  let obj = isTryItOut(1500);
   const nativeStackNavigation = obj.useNativeStackNavigation();
-  const obj2 = isTryItOut(14581);
+  const obj2 = isTryItOut(12833);
   const currentCustomTypingIndicatorConfig = obj2.useCurrentCustomTypingIndicatorConfig(isTryItOut);
-  const useSelectedDismissibleContent = isTryItOut(9560).useSelectedDismissibleContent;
+  const useSelectedDismissibleContent = isTryItOut(9080).useSelectedDismissibleContent;
   const items = [];
-  isTryItOut(9560);
-  items[0] = isTryItOut(5139).DismissibleContent.CUSTOM_TYPING_INDICATOR_MOBILE_NEW_BADGE_PROFILE_PAGE;
+  isTryItOut(9080);
+  items[0] = isTryItOut(4746).DismissibleContent.CUSTOM_TYPING_INDICATOR_MOBILE_NEW_BADGE_PROFILE_PAGE;
   const tmp6 = analyticsLocations(useSelectedDismissibleContent(items, { bypassAutoDismiss: true }), 2);
   dependencyMap = tmp8;
   const first = tmp6[0];
-  const tmp10 = nativeStackNavigation(7918);
-  const tmp11 = nativeStackNavigation(7937);
+  const tmp10 = nativeStackNavigation(7520);
+  const tmp11 = nativeStackNavigation(7539);
   analyticsLocations = tmp10(isTryItOut ? tmp11.CUSTOM_TYPING_INDICATOR_PROFILE_ROW_TRY_IT_OUT : tmp11.CUSTOM_TYPING_INDICATOR_PROFILE_ROW).analyticsLocations;
   const items1 = [nativeStackNavigation, isTryItOut, tmp6[1], analyticsLocations];
   const tmp12 = useCallback(() => {
@@ -50,13 +50,13 @@ export default function UserProfileTypingIndicatorEditButton(isTryItOut) {
     navigate(TYPING_INDICATOR, obj);
     closure_2(ContentDismissActionType.TAKE_ACTION);
   }, items1);
-  const intl = tmp(1113).intl;
+  const intl = tmp(1112).intl;
   const string = intl.string;
-  const tmpResult = isTryItOut(14581);
+  const tmpResult = isTryItOut(12833);
   const stringResult = string(tmpResult.getCustomTypingIndicatorSuggestionMessage(currentCustomTypingIndicatorConfig.typingSuggestion));
-  const UserProfileEditFormButton = tmp(17101).UserProfileEditFormButton;
-  const intl2 = tmp(1113).intl;
-  ({ showPremiumIcon: true, showNewBadge: first === isTryItOut(5139).DismissibleContent.CUSTOM_TYPING_INDICATOR_MOBILE_NEW_BADGE_PROFILE_PAGE });
-  const UserProfileEditFormLabelBadges = tmp(17101).UserProfileEditFormLabelBadges;
-  return <UserProfileEditFormButton label={intl2.string(nativeStackNavigation(4133)["pT+BVM"])} labelTrailing={null} leading={null} buttonText={stringResult} accessibilityValue={{ text: stringResult }} onPress={tmp12} />;
+  const UserProfileEditFormButton = tmp(15867).UserProfileEditFormButton;
+  const intl2 = tmp(1112).intl;
+  ({ showPremiumIcon: true, showNewBadge: first === isTryItOut(4746).DismissibleContent.CUSTOM_TYPING_INDICATOR_MOBILE_NEW_BADGE_PROFILE_PAGE });
+  const UserProfileEditFormLabelBadges = tmp(15867).UserProfileEditFormLabelBadges;
+  return <UserProfileEditFormButton label={intl2.string(nativeStackNavigation(4192)["pT+BVM"])} labelTrailing={null} leading={null} buttonText={stringResult} accessibilityValue={{ text: stringResult }} onPress={tmp12} />;
 };

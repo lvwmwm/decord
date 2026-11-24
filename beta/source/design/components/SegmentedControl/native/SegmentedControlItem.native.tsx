@@ -1,19 +1,19 @@
-// Module ID: 11252
-// Function ID: 11253
+// Module ID: 11279
+// Function ID: 11280
 // Name: SegmentedControlItem
-// Dependencies: [19, 17, 21, 5306, 575, 11253, 1655, 5929, 1380, 1113, 5919, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 10598, 1653, 5514, 1378, 1112, 5504, 2]
 // Exports: SegmentedControlItem
 
-// Module 11252 (SegmentedControlItem)
+// Module 11279 (SegmentedControlItem)
 import nativeDefault from "native" /* 575 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import spring_spring from "spring/spring" /* 5929 */;
-import useStateFromSharedValue from "useStateFromSharedValue" /* 11253 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import spring_spring from "spring/spring" /* 5514 */;
+import useStateFromSharedValue from "useStateFromSharedValue" /* 10598 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -72,8 +72,8 @@ export function SegmentedControlItem(index) {
   let obj = useStateFromSharedValue;
   const derivedStateFromSharedValue = obj.useDerivedStateFromSharedValue(activeIndex, (arg0) => ({ selected: arg0 === index }));
   const items = [closure_10, tmp2, pressed, index, activeIndex, , ];
-  const useAnimatedStyle = _mod1655.useAnimatedStyle;
-  _mod1655;
+  const useAnimatedStyle = _mod1653.useAnimatedStyle;
+  _mod1653;
   items[5] = spring_spring.withSpring;
   items[6] = closure_7;
   let c0;
@@ -111,15 +111,15 @@ export function SegmentedControlItem(index) {
   const tmp16 = _false;
   const tmp3Result = PlatformUtils;
   if (tmp3Result.isAndroid()) {
-    const intl = tmp3(1113).intl;
+    const intl = tmp3(1112).intl;
     const obj3 = { position: index + 1, tabCount: itemCount };
-    formatToPlainStringResult = intl.formatToPlainString(tmp3(1113).t["4EsQA1"], obj3);
+    formatToPlainStringResult = intl.formatToPlainString(tmp3(1112).t["4EsQA1"], obj3);
   }
   obj4 = { style: tmp.label, children: items3 };
   items3 = [icon, ];
   const obj5 = { animated: true, variant: "body-sm/semibold", style: animatedStyle, lineClamp: 1, maxFontSizeMultiplier: num2, children: label };
   num2 = undefined;
-  const Text = tmp3(5919).Text;
+  const Text = tmp3(5504).Text;
   tmp18 = metroRequire;
   tmp19 = React3;
   if ("experimental_Large" === variant) {

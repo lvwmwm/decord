@@ -1,20 +1,20 @@
-// Module ID: 15503
-// Function ID: 15504
+// Module ID: 14234
+// Function ID: 14235
 // Name: OrbCheckoutModal
-// Dependencies: [19, 1072, 1083, 21, 15504, 6327, 15506, 15508, 10139, 9714, 1256, 6838, 8208, 8210, 14081, 38, 1269, 15509, 1113, 7493, 12525, 2]
+// Dependencies: [19, 1071, 1082, 21, 14235, 5929, 14237, 14239, 9965, 9238, 1255, 6429, 7811, 7813, 12249, 38, 1268, 14240, 1112, 7095, 12043, 2]
 // Exports: default
 
-// Module 15503 (OrbCheckoutModal)
-import Constants2 from "Constants" /* 1083 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import Stack_Stack from "Stack/Stack" /* 6327 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
-import VirtualCurrencyUtils from "VirtualCurrencyUtils" /* 10139 */;
-import OrbCheckoutModalContext from "OrbCheckoutModalContext" /* 15504 */;
-import OrbCheckoutModalComponents from "OrbCheckoutModalComponents" /* 15506 */;
+// Module 14234 (OrbCheckoutModal)
+import Constants2 from "Constants" /* 1082 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import Stack_Stack from "Stack/Stack" /* 5929 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6429 */;
+import VirtualCurrencyUtils from "VirtualCurrencyUtils" /* 9965 */;
+import OrbCheckoutModalContext from "OrbCheckoutModalContext" /* 14235 */;
+import OrbCheckoutModalComponents from "OrbCheckoutModalComponents" /* 14237 */;
 import "react";
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 1072 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -40,12 +40,12 @@ function OrbCheckoutModalContent(orbBalance) {
   const tmp4 = authStore2;
   if (tmp5) {
     const obj2 = { error: orbCheckoutErrorMessage };
-    tmp5 = unpackModuleId(tmp(15506).OrbCheckoutErrorCard, obj2);
+    tmp5 = unpackModuleId(tmp(14237).OrbCheckoutErrorCard, obj2);
   }
   const items = [tmp5, , ];
   const obj3 = { skuId, orbPriceAmount };
   orbPriceAmount = undefined;
-  const OrbCheckoutOrderSummary = tmp(15506).OrbCheckoutOrderSummary;
+  const OrbCheckoutOrderSummary = tmp(14237).OrbCheckoutOrderSummary;
   if (orbProductContext != null) {
     orbPriceAmount = orbProductContext.orbPriceAmount;
   }

@@ -1,11 +1,11 @@
-// Module ID: 20355
-// Function ID: 20356
+// Module ID: 19608
+// Function ID: 19609
 // Name: InterestGuildsResource
-// Dependencies: [5, 19029, 2]
+// Dependencies: [5, 17821, 2]
 // Exports: interestGuildsKey
 
-// Module 20355 (InterestGuildsResource)
-import InterestGamePickerConstants from "InterestGamePickerConstants" /* 19029 */;
+// Module 19608 (InterestGuildsResource)
+import InterestGamePickerConstants from "InterestGamePickerConstants" /* 17821 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -111,8 +111,8 @@ class InterestGuildsResource {
     const listeners = this.listeners;
     listeners.clear();
   }
-  publish(snapshot) {
-    this.snapshot = snapshot;
+  publish(entryPoint) {
+    this.snapshot = entryPoint;
     const listeners = this.listeners;
     const item = listeners.forEach((fn) => fn());
   }

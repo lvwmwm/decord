@@ -1,27 +1,27 @@
-// Module ID: 8755
-// Function ID: 8756
+// Module ID: 8350
+// Function ID: 8351
 // Name: GuildBasicChannels
-// Dependencies: [32, 5, 6790, 5159, 502, 5155, 5218, 5212, 5177, 5238, 5156, 3, 5184, 8756, 11, 5225, 5243, 1084, 5247, 2]
+// Dependencies: [32, 5, 6394, 4766, 502, 4762, 4825, 4819, 4784, 4845, 4763, 3, 4791, 8351, 11, 4832, 4850, 1083, 4854, 2]
 
-// Module 8755 (GuildBasicChannels)
+// Module 8350 (GuildBasicChannels)
 import LoggerDefault from "Logger" /* 3 */;
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
-import ChannelStore2 from "ChannelStore" /* 5155 */;
-import ChannelRecord from "ChannelRecord" /* 5159 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 5184 */;
-import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 5225 */;
-import PermissionUtils from "PermissionUtils" /* 5243 */;
-import BasicPermissionUtilsDefault from "BasicPermissionUtils" /* 5247 */;
+import BigFlagUtilsAll from "BigFlagUtils" /* 1083 */;
+import ChannelStore2 from "ChannelStore" /* 4762 */;
+import ChannelRecord from "ChannelRecord" /* 4766 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 4791 */;
+import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 4832 */;
+import PermissionUtils from "PermissionUtils" /* 4850 */;
+import BasicPermissionUtilsDefault from "BasicPermissionUtils" /* 4854 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6790 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6394 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildMemberStore from "GuildMemberStore" /* 5218 */;
-import GuildRoleStore from "GuildRoleStore" /* 5212 */;
-import GuildStore from "GuildStore" /* 5177 */;
-import PermissionStore from "PermissionStore" /* 5238 */;
-import BasicChannelCacheStore from "BasicChannelCacheStore" /* 5156 */;
+import GuildMemberStore from "GuildMemberStore" /* 4825 */;
+import GuildRoleStore from "GuildRoleStore" /* 4819 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
+import BasicChannelCacheStore from "BasicChannelCacheStore" /* 4763 */;
 import size from "module_2" /* 2 */;
 
 const ChannelStore = ChannelStore2;
@@ -113,7 +113,7 @@ function haveSelfMemberPermissionInputsChanged(roles, member) {
         if (num2 == null) {
           num2 = 0;
         }
-        tmp7 = tmp13 != (num2 & tmp11(5243).PERMISSION_MEMBER_FLAGS_MASK);
+        tmp7 = tmp13 != (num2 & tmp11(4850).PERMISSION_MEMBER_FLAGS_MASK);
       }
       tmp2 = tmp7;
     }

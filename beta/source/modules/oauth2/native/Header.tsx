@@ -1,21 +1,21 @@
-// Module ID: 15972
-// Function ID: 15973
+// Module ID: 14726
+// Function ID: 14727
 // Name: Header
-// Dependencies: [19, 17, 1072, 21, 5306, 575, 1414, 1187, 5919, 10870, 1406, 1113, 2]
+// Dependencies: [19, 17, 1071, 21, 4913, 575, 1412, 1186, 5504, 10387, 1404, 1112, 2]
 // Exports: default
 
-// Module 15972 (Header)
+// Module 14726 (Header)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import native from "native" /* 1187 */;
-import FlagUtils from "FlagUtils" /* 1406 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import BotTagDefault from "BotTag" /* 10870 */;
+import Constants from "Constants" /* 1071 */;
+import native from "native" /* 1186 */;
+import FlagUtils from "FlagUtils" /* 1404 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import BotTagDefault from "BotTag" /* 10387 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -90,13 +90,13 @@ export default function Header(accountScopes) {
   }
   items3[1] = tmp8Result;
   items2[1] = metroRequire(View, obj11);
-  const Text = tmp9(5919).Text;
+  const Text = tmp9(5504).Text;
   if (accountScopes.length > 0) {
-    const intl2 = tmp9(1113).intl;
-    stringResult = intl2.string(tmp9(1113).t.jFbDnJ);
+    const intl2 = tmp9(1112).intl;
+    stringResult = intl2.string(tmp9(1112).t.jFbDnJ);
   } else {
-    const intl = tmp9(1113).intl;
-    stringResult = intl.string(tmp9(1113).t["X+Fdpo"]);
+    const intl = tmp9(1112).intl;
+    stringResult = intl.string(tmp9(1112).t["X+Fdpo"]);
   }
   items2[2] = hasOwnProperty(Text, { variant: "heading-sm/medium", color: "text-default", children: stringResult });
   return metroRequire(View, obj3);

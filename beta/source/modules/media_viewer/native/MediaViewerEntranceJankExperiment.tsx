@@ -1,11 +1,11 @@
-// Module ID: 15215
-// Function ID: 15216
+// Module ID: 10170
+// Function ID: 10171
 // Name: MediaViewerEntranceJankExperiment
-// Dependencies: [1452, 2]
+// Dependencies: [1450, 2]
 // Exports: useIsMediaViewerEntranceJankFixEnabled
 
-// Module 15215 (MediaViewerEntranceJankExperiment)
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+// Module 10170 (MediaViewerEntranceJankExperiment)
+import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

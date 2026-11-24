@@ -1,17 +1,17 @@
-// Module ID: 9234
-// Function ID: 9235
+// Module ID: 8742
+// Function ID: 8743
 // Name: UserPremiumGuildSubscriptionTierAchievedSystemMessage
-// Dependencies: [5155, 5177, 9232, 9233, 9188, 9190, 1113, 9235, 9192, 2]
+// Dependencies: [4762, 4784, 8740, 8741, 8698, 8700, 1112, 8743, 8702, 2]
 // Exports: createUserPremiumGuildSubscriptionTierAchievedSystemMessage
 
-// Module 9234 (UserPremiumGuildSubscriptionTierAchievedSystemMessage)
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 9188 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 9190 */;
-import UserPremiumGuildSubscriptionSystemMessage from "UserPremiumGuildSubscriptionSystemMessage" /* 9232 */;
-import getNumSubscriptionsPurchasedFromSystemMessageDefault from "getNumSubscriptionsPurchasedFromSystemMessage" /* 9233 */;
-import GuildBoostingUtils from "GuildBoostingUtils" /* 9235 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import GuildStore from "GuildStore" /* 5177 */;
+// Module 8742 (UserPremiumGuildSubscriptionTierAchievedSystemMessage)
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8698 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8700 */;
+import UserPremiumGuildSubscriptionSystemMessage from "UserPremiumGuildSubscriptionSystemMessage" /* 8740 */;
+import getNumSubscriptionsPurchasedFromSystemMessageDefault from "getNumSubscriptionsPurchasedFromSystemMessage" /* 8741 */;
+import GuildBoostingUtils from "GuildBoostingUtils" /* 8743 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import GuildStore from "GuildStore" /* 4784 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/UserPremiumGuildSubscriptionTierAchievedSystemMessage.tsx");
@@ -39,22 +39,22 @@ export function createUserPremiumGuildSubscriptionTierAchievedSystemMessage(mess
       const tmp16 = formatUsernameOnClickDefault(obj);
       const tmp11 = importDefault;
       if (tmp13 > 1) {
-        const intl2 = tmp14(1113).intl;
+        const intl2 = tmp14(1112).intl;
         const formatToParts2 = intl2.formatToParts;
         const obj2 = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: tmp16, guildName: guild.name, newTierName: tmp14Result.getTierName(TIER_1), numSubscriptions: tmp13 };
-        const GjNvr7 = tmp14(1113).t.GjNvr7;
+        const GjNvr7 = tmp14(1112).t.GjNvr7;
         tmp14Result = GuildBoostingUtils;
         formatToParts2Result = formatToParts2(GjNvr7, obj2);
       } else {
-        const intl = tmp14(1113).intl;
+        const intl = tmp14(1112).intl;
         const formatToParts = intl.formatToParts;
         const obj3 = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: tmp16, guildName: guild.name, newTierName: tmp14Result2.getTierName(TIER_1) };
-        const oAYAP7 = tmp14(1113).t.oAYAP7;
+        const oAYAP7 = tmp14(1112).t.oAYAP7;
         tmp14Result2 = GuildBoostingUtils;
         formatToParts2Result = formatToParts(oAYAP7, obj3);
       }
       const obj4 = { content: formatToParts2Result };
-      const merged = Object.assign(tmp11(9192)(message));
+      const merged = Object.assign(tmp11(8702)(message));
       return obj4;
     }
   }

@@ -1,10 +1,10 @@
 // Module ID: 2834
 // Function ID: 2835
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 2834 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/file_upload", scales: [1], hash: "b21c62c69f9c9a32bba1f84b5cff136f", name: "NitroFileUpload.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9wYXJlbnRfdG9vbHM=", scales: [1], hash: "13a8f1f71532e1eaf49b9930f3de8caa", name: "fr.messages.13a8f1f71532e1eaf49b9930f3de8caa.compiled.messages", type: "jsona" });

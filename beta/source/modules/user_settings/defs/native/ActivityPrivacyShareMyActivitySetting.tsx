@@ -1,25 +1,25 @@
-// Module ID: 18605
-// Function ID: 18606
+// Module ID: 17401
+// Function ID: 17402
 // Name: ActivityPrivacyShareMyActivitySetting
-// Dependencies: [9202, 12408, 1113, 2869, 5131, 2]
+// Dependencies: [8712, 11937, 1112, 2992, 4738, 2]
 
-// Module 18605 (ActivityPrivacyShareMyActivitySetting)
-import intl2 from "intl" /* 1113 */;
-import _modDef2869 from "module_2869" /* 2869 */;
-import UserSettings from "UserSettings" /* 5131 */;
-import SettingsConstants from "SettingsConstants" /* 9202 */;
-import SettingBuilders from "SettingBuilders" /* 12408 */;
+// Module 17401 (ActivityPrivacyShareMyActivitySetting)
+import intl2 from "intl" /* 1112 */;
+import _modDef2992 from "module_2992" /* 2992 */;
+import UserSettings from "UserSettings" /* 4738 */;
+import SettingsConstants from "SettingsConstants" /* 8712 */;
+import SettingBuilders from "SettingBuilders" /* 11937 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const obj = {
   useTitle() {
     const intl = intl2.intl;
-    return intl.string(_modDef2869.WhdCGP);
+    return intl.string(_modDef2992.WhdCGP);
   },
   useDescription() {
     const intl = intl2.intl;
-    return intl.string(_modDef2869.UQ9RHJ);
+    return intl.string(_modDef2992.UQ9RHJ);
   },
   parent: MobileUserSettings.CONTENT_AND_SOCIAL_DISCORD,
   useValue: UserSettings.ShowCurrentGame.useSetting,

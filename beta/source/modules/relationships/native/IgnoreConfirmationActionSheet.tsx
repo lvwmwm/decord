@@ -1,33 +1,33 @@
-// Module ID: 12056
-// Function ID: 12057
+// Module ID: 11815
+// Function ID: 11816
 // Name: IgnoreConfirmationActionSheet
-// Dependencies: [32, 19, 17, 5155, 1388, 8138, 12054, 1072, 21, 5306, 575, 8481, 1113, 6029, 7746, 7443, 1187, 1630, 7918, 7937, 504, 1256, 7350, 5556, 5560, 7634, 5919, 6341, 8557, 5542, 12055, 2121, 1264, 5926, 8137, 2188, 6002, 2]
+// Dependencies: [32, 19, 17, 4762, 1386, 7741, 11813, 1071, 21, 4913, 575, 8071, 1112, 5619, 7348, 7045, 1186, 1628, 7520, 7539, 504, 1255, 6954, 5141, 5145, 7236, 5504, 5943, 8147, 5127, 11814, 2119, 1263, 5511, 7740, 2187, 5592, 2]
 
-// Module 12056 (IgnoreConfirmationActionSheet)
+// Module 11815 (IgnoreConfirmationActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl9 from "intl" /* 1113 */;
-import native from "native" /* 1187 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
-import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
-import AssetRegistryDefault from "AssetRegistry" /* 6029 */;
-import UserActionCreators from "UserActionCreators" /* 7350 */;
-import TableRow2 from "TableRow" /* 7443 */;
-import TableRowGroup2 from "TableRowGroup" /* 7746 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
-import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 8137 */;
-import RelationshipConstants from "RelationshipConstants" /* 8138 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 8481 */;
+import intl9 from "intl" /* 1112 */;
+import native from "native" /* 1186 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1263 */;
+import asyncRequire from "asyncRequire" /* 2119 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
+import AssetRegistryDefault from "AssetRegistry" /* 5619 */;
+import UserActionCreators from "UserActionCreators" /* 6954 */;
+import TableRow2 from "TableRow" /* 7045 */;
+import TableRowGroup2 from "TableRowGroup" /* 7348 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7539 */;
+import RelationshipActionCreatorsDefault from "RelationshipActionCreators" /* 7740 */;
+import RelationshipConstants from "RelationshipConstants" /* 7741 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 8071 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import UserStore from "UserStore" /* 1388 */;
-import RestrictionConfirmationConstants from "RestrictionConfirmationConstants" /* 12054 */;
-import Constants from "Constants" /* 1072 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import UserStore from "UserStore" /* 1386 */;
+import RestrictionConfirmationConstants from "RestrictionConfirmationConstants" /* 11813 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -175,10 +175,10 @@ const memoResult = react.memo(function IgnoreConfirmationActionSheet(userId) {
   let tmp = closure_15();
   let tmp2 = _slicedToArray(react.useState(false), 2);
   [tmp3, c5] = tmp2;
-  const bottom = channelId(1630)().bottom;
+  const bottom = channelId(1628)().bottom;
   items = [];
-  const tmp6 = channelId(7918);
-  items[0] = channelId(7937).IGNORE_CONFIRMATION_ACTION_SHEET;
+  const tmp6 = channelId(7520);
+  items[0] = channelId(7539).IGNORE_CONFIRMATION_ACTION_SHEET;
   const analyticsLocations = tmp6(items).analyticsLocations;
   let obj = userId(504);
   const items1 = [UserStore];
@@ -210,75 +210,75 @@ const memoResult = react.memo(function IgnoreConfirmationActionSheet(userId) {
       obj.track(constants2.USER_REMEDIATION_ACTION, obj2);
     }
     let obj3 = { value: analyticsLocations, children: closure_13(BottomSheet, obj4) };
-    const AnalyticsLocationProvider = tmp7(7918).AnalyticsLocationProvider;
+    const AnalyticsLocationProvider = tmp7(7520).AnalyticsLocationProvider;
     obj4 = { onDismiss: handleClose, scrollable: true, startHeight: sum1 + channelId(575).space.PX_24, bodyStyles: obj5, children: closure_14(BottomSheetScrollView, obj8) };
-    BottomSheet = tmp7(5556).BottomSheet;
+    BottomSheet = tmp7(5141).BottomSheet;
     const sum = closure_10 + bottom;
     sum1 = sum + tmp4(575).space.PX_24;
     obj5 = { paddingBottom: channelId(575).space.PX_16 + bottom };
     const merged = Object.assign(tmp.container);
     const obj6 = { style: tmp.header, children: items7 };
     const obj7 = { style: tmp.avatarContainer, children: items6 };
-    BottomSheetScrollView = tmp7(5560).BottomSheetScrollView;
-    const Avatar = tmp7(1187).Avatar;
+    BottomSheetScrollView = tmp7(5145).BottomSheetScrollView;
+    const Avatar = tmp7(1186).Avatar;
     obj8 = { children: items8 };
-    const obj9 = { guildId: stateFromStores1, user: stateFromStores, animate: false, size: userId(1187).AvatarSizes.XLARGE, style: tmp.avatar };
+    const obj9 = { guildId: stateFromStores1, user: stateFromStores, animate: false, size: userId(1186).AvatarSizes.XLARGE, style: tmp.avatar };
     items6 = [closure_13(Avatar, obj9), ];
     const obj10 = { style: tmp.avatarIconContainer, children: closure_13(Icon, obj11) };
-    obj11 = { size: userId(1187).Icon.Sizes.MEDIUM, source: channelId(7634) };
-    Icon = tmp7(1187).Icon;
+    obj11 = { size: userId(1186).Icon.Sizes.MEDIUM, source: channelId(7236) };
+    Icon = tmp7(1186).Icon;
     items6[1] = closure_13(c5, obj10);
     items7 = [closure_14(c5, obj7), , ];
     const obj12 = { style: tmp.title, variant: "heading-xl/semibold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: format(prop, obj13) };
-    const Text = tmp7(5919).Text;
-    const intl = tmp7(1113).intl;
+    const Text = tmp7(5504).Text;
+    const intl = tmp7(1112).intl;
     format = intl.format;
     obj13 = { username: tmp4Result.getName(stateFromStores1, channelId, stateFromStores) };
-    prop = tmp7(1113).t["WrQD/Y"];
-    tmp4Result = channelId(6341);
+    prop = tmp7(1112).t["WrQD/Y"];
+    tmp4Result = channelId(5943);
     items7[1] = closure_13(Text, obj12);
-    const obj14 = { style: tmp.subTitle, variant: "heading-sm/medium", color: "text-default", accessibilityRole: "header", children: intl2.string(userId(1113).t.JKL1u1) };
-    const Text2 = tmp7(5919).Text;
-    intl2 = tmp7(1113).intl;
+    const obj14 = { style: tmp.subTitle, variant: "heading-sm/medium", color: "text-default", accessibilityRole: "header", children: intl2.string(userId(1112).t.JKL1u1) };
+    const Text2 = tmp7(5504).Text;
+    intl2 = tmp7(1112).intl;
     items7[2] = closure_13(Text2, obj14);
     items8 = [closure_14(c5, obj6), , , ];
     const obj15 = { style: tmp.tableContainer, children: closure_13(IgnoredInformationTable, {}) };
     items8[1] = closure_13(c5, obj15);
     const obj16 = { style: tmp.otherOptions, children: closure_13(TableRowGroup, obj17) };
-    obj17 = { title: intl3.string(userId(1113).t["1v01gh"]), hasIcons: true, children: closure_13(TableRow, obj18) };
-    TableRowGroup = tmp7(7746).TableRowGroup;
-    intl3 = tmp7(1113).intl;
+    obj17 = { title: intl3.string(userId(1112).t["1v01gh"]), hasIcons: true, children: closure_13(TableRow, obj18) };
+    TableRowGroup = tmp7(7348).TableRowGroup;
+    intl3 = tmp7(1112).intl;
     obj18 = {
       icon: closure_13(Icon2, obj19),
-      label: intl4.string(userId(1113).t.bwxY30),
+      label: intl4.string(userId(1112).t.bwxY30),
       variant: "danger",
       subLabel: closure_13(Text3, obj20),
-      accessibilityLabel: intl6.string(userId(1113).t["fZ+p9C"]),
+      accessibilityLabel: intl6.string(userId(1112).t["fZ+p9C"]),
       onPress() {
           const obj = AnalyticsUtilsDefault;
           const obj2 = { action: UserRemediationAction.GOTO_BLOCK, location: "user-profile-context-menu" };
           obj.track(unpackModuleId.USER_REMEDIATION_ACTION, obj2);
           const openLazy = ActionSheetActionCreatorsDefault.openLazy;
           ActionSheetActionCreatorsDefault;
-          const tmp3 = asyncRequire(12055, dependencyMap.paths);
+          const tmp3 = asyncRequire(11814, dependencyMap.paths);
           const obj3 = { userId, channelId, onBlock: dependencyMap, onIgnore: _slicedToArray, onSuccess: react, impressionName: discord_common_AnalyticsUtils.ImpressionNames.BLOCK_USER_CONFIRMATION };
           openLazy(tmp3, React4, obj3, "replaceTopSheet");
         },
       arrow: true
     };
-    TableRow = tmp7(7443).TableRow;
-    obj19 = { size: userId(1187).Icon.Sizes.MEDIUM, source: channelId(8557), color: tmp.destructiveIcon.color };
-    Icon2 = tmp7(1187).Icon;
-    intl4 = tmp7(1113).intl;
-    obj20 = { variant: "body-xs/medium", color: "text-feedback-critical", children: intl5.string(userId(1113).t.NTnf1T) };
-    Text3 = tmp7(5919).Text;
-    intl5 = tmp7(1113).intl;
-    intl6 = tmp7(1113).intl;
+    TableRow = tmp7(7045).TableRow;
+    obj19 = { size: userId(1186).Icon.Sizes.MEDIUM, source: channelId(8147), color: tmp.destructiveIcon.color };
+    Icon2 = tmp7(1186).Icon;
+    intl4 = tmp7(1112).intl;
+    obj20 = { variant: "body-xs/medium", color: "text-feedback-critical", children: intl5.string(userId(1112).t.NTnf1T) };
+    Text3 = tmp7(5504).Text;
+    intl5 = tmp7(1112).intl;
+    intl6 = tmp7(1112).intl;
     items8[2] = closure_13(c5, obj16);
     const obj21 = { style: tmp.button, children: items9 };
     const obj22 = {
       size: "lg",
-      text: intl7.string(userId(1113).t.ytCpKs),
+      text: intl7.string(userId(1112).t.ytCpKs),
       onPress() {
           const tmp = _undefined(true);
           let obj = RelationshipActionCreatorsDefault;
@@ -299,13 +299,13 @@ const memoResult = react.memo(function IgnoreConfirmationActionSheet(userId) {
       disabled: tmp3,
       loading: tmp3
     };
-    const Button = tmp7(5926).Button;
-    intl7 = tmp7(1113).intl;
+    const Button = tmp7(5511).Button;
+    intl7 = tmp7(1112).intl;
     items9 = [closure_13(Button, obj22), ];
-    const obj23 = { onPress: handleClose, style: obj24, variant: "body-sm/normal", color: "text-default", children: intl8.format(userId(1113).t.iX9qtL, obj25) };
+    const obj23 = { onPress: handleClose, style: obj24, variant: "body-sm/normal", color: "text-default", children: intl8.format(userId(1112).t.iX9qtL, obj25) };
     obj24 = { textAlign: "center", marginTop: channelId(575).space.PX_12, paddingBottom: channelId(575).space.PX_4 };
-    const Text4 = tmp7(5919).Text;
-    intl8 = tmp7(1113).intl;
+    const Text4 = tmp7(5504).Text;
+    intl8 = tmp7(1112).intl;
     obj25 = {
       articleLink: function handleHelpCenter() {
           const obj = channelId(dependencyMap[29]);

@@ -1,32 +1,26 @@
 // Module ID: 1675
 // Function ID: 1676
-// Dependencies: [1676, 1682, 1687, 1688, 1689, 1690, 1691, 1692, 1693]
+// Dependencies: [1676, 1677, 1678, 1679]
 
 // Module 1675
-import backgroundImage from "backgroundImage" /* 1676 */;
-import colors from "colors" /* 1682 */;
-import filter from "filter" /* 1687 */;
-import font from "font" /* 1688 */;
-import insets from "insets" /* 1689 */;
-import others from "others" /* 1690 */;
-import shadows from "shadows" /* 1691 */;
-import transform from "transform" /* 1692 */;
-import transformOrigin from "transformOrigin" /* 1693 */;
+import convertPropertyToArray from "convertPropertyToArray" /* 1676 */;
+import guards from "guards" /* 1677 */;
+import CSS_NUMBER_PATTERN from "CSS_NUMBER_PATTERN" /* 1678 */;
+import maybeAddSuffix from "maybeAddSuffix" /* 1679 */;
 
-
-export const processBackgroundImage = backgroundImage.processBackgroundImage;
-export const DynamicColorIOS = colors.DynamicColorIOS;
-export const PlatformColor = colors.PlatformColor;
-export const processColor = colors.processColor;
-export const processColorNumber = colors.processColorNumber;
-export const processColorsInProps = colors.processColorsInProps;
-export const processFilter = filter.processFilter;
-export const processFontWeight = font.processFontWeight;
-export const processInset = insets.processInset;
-export const processInsetBlock = insets.processInsetBlock;
-export const processInsetInline = insets.processInsetInline;
-export const processAspectRatio = others.processAspectRatio;
-export const processGap = others.processGap;
-export const processBoxShadow = shadows.processBoxShadow;
-export const processTransform = transform.processTransform;
-export const processTransformOrigin = transformOrigin.processTransformOrigin;
+for (const key10013 in convertPropertyToArray) {
+  exports[key10013] = convertPropertyToArray[key10013];
+  continue;
+}
+for (const key10017 in guards) {
+  exports[key10017] = guards[key10017];
+  continue;
+}
+for (const key10021 in CSS_NUMBER_PATTERN) {
+  exports[key10021] = CSS_NUMBER_PATTERN[key10021];
+  continue;
+}
+for (const key10025 in maybeAddSuffix) {
+  exports[key10025] = maybeAddSuffix[key10025];
+  continue;
+}

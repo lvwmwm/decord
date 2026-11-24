@@ -1,22 +1,21 @@
-// Module ID: 13321
-// Function ID: 13322
+// Module ID: 18300
+// Function ID: 18301
 // Name: useConjureMakePersonal
-// Dependencies: [5, 32, 19, 7017, 7329, 13208, 13318, 1113, 4131, 2]
-// Exports: canMakeConjureProjectPersonal, default
+// Dependencies: [5, 32, 19, 6621, 6933, 12394, 18294, 1112, 4190, 18295, 2]
+// Exports: default
 
-// Module 13321 (useConjureMakePersonal)
-import ConjureProjectStore2 from "ConjureProjectStore" /* 7017 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 7329 */;
-import conjureChangeRows from "conjureChangeRows" /* 13318 */;
+// Module 18300 (useConjureMakePersonal)
+import ConjureActionCreators from "ConjureActionCreators" /* 6933 */;
+import conjureChangeRows from "conjureChangeRows" /* 18294 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6621 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require, c3, c4;
 
-const isProjectOwner = ConjureProjectStore2.isProjectOwner;
 let result = size.fileFinishedImporting("modules/conjure/server_share/useConjureMakePersonal.tsx");
 
 export default function useConjureMakePersonal(id) {
@@ -58,7 +57,7 @@ export default function useConjureMakePersonal(id) {
     const obj = conjureChangeRows;
     return obj.conjureMakePersonalRows(id, target);
   }, items1);
-  const items2 = [appName, conjureRemoveTarget, id.id];
+  const items2 = [appName, conjureRemoveTarget, id];
   let obj3 = { appName, rows: memo, keptChannels: result, pending: first, error: first1, submit: callback };
   result = null;
   callback = obj.useCallback(conjureRemoveTarget(function*(arg0, value) {
@@ -122,6 +121,7 @@ export default function useConjureMakePersonal(id) {
           let TWYUzf;
           c2 = 0;
           closure_129_1(false);
+          tmp(c2[9])(closure_129_0, "removed");
           integrationStatus = integrationStatus.getIntegrationStatus(closure_129_0.id);
           let prop;
           if (integrationStatus != null) {
@@ -152,12 +152,8 @@ export default function useConjureMakePersonal(id) {
     }
   }), items2);
   if (null != target) {
-    const tmp6Result = tmp6(13208);
+    const tmp6Result = tmp6(12394);
     result = tmp6Result.conjureRemoveAppKeptChannels(target);
   }
   return obj3;
 };
-export function canMakeConjureProjectPersonal(project) {
-  const tmp = "guild" === project.install_scope && isProjectOwner(project);
-  return tmp;
-}

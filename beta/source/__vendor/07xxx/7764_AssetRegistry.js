@@ -1,10 +1,10 @@
 // Module ID: 7764
 // Function ID: 7765
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 7764 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 189, height: 225, scales: [2, 3], hash: "a6de2d9a12ce42b0ce36333de4aed4c3", name: "img_verify_email_sent", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "ef2e4520c6c90d142994f338601f4002", name: "WarningIcon", type: "png" });

@@ -1,10 +1,10 @@
 // Module ID: 4030
 // Function ID: 4031
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 4030 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/slayer_storefront/intl", scales: [1], hash: "c5ace346e7366b8aac2c5727cfa7c3f3", name: "BlackFridayGameExitPromo.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcw==", scales: [1], hash: "f2995a72d39fa92b53a790ae60ee901c", name: "de.messages.f2995a72d39fa92b53a790ae60ee901c.compiled.messages", type: "jsona" });

@@ -1,18 +1,18 @@
-// Module ID: 17457
-// Function ID: 17458
+// Module ID: 16225
+// Function ID: 16226
 // Name: FamilyCenterAvatarPair
-// Dependencies: [19, 17, 1388, 21, 5306, 575, 563, 1187, 2]
+// Dependencies: [19, 17, 1386, 21, 4913, 575, 563, 1186, 2]
 // Exports: default
 
-// Module 17457 (FamilyCenterAvatarPair)
+// Module 16225 (FamilyCenterAvatarPair)
 import react_native from "react-native" /* 17 */;
 import useStateFromStores from "useStateFromStores" /* 563 */;
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 1187 */;
+import native from "native" /* 1186 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1388 */;
+import UserStore from "UserStore" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -43,14 +43,14 @@ export default function FamilyCenterAvatarPair(otherUser) {
     if (undefined !== otherUser) {
       const obj2 = { style: tmp.avatars, children: items1 };
       const obj3 = { size: native.AvatarSizes.LARGE_48, user: stateFromStores, guildId: "Array", avatarDecoration: stateFromStores.avatarDecoration };
-      const Avatar = tmp2(1187).Avatar;
+      const Avatar = tmp2(1186).Avatar;
       items1 = [React3(Avatar, obj3), , ];
       const obj4 = { style: items2, size: native.Icon.Sizes.EXTRA_SMALL, source: iconSrc };
       items2 = [tmp.icon, iconStyles];
-      const Icon = tmp2(1187).Icon;
+      const Icon = tmp2(1186).Icon;
       items1[1] = React3(Icon, obj4);
       const obj5 = { size: native.AvatarSizes.LARGE_48, user: otherUser, guildId: "Array", avatarDecoration: otherUser.avatarDecoration };
-      const Avatar2 = tmp2(1187).Avatar;
+      const Avatar2 = tmp2(1186).Avatar;
       items1[2] = React3(Avatar2, obj5);
       tmp5 = hasOwnProperty(View, obj2);
     }

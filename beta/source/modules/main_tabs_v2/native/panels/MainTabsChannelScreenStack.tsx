@@ -1,39 +1,39 @@
-// Module ID: 19365
-// Function ID: 19366
+// Module ID: 18167
+// Function ID: 18168
 // Name: MainTabsChannelScreenStack
-// Dependencies: [32, 19, 17, 19366, 9052, 1072, 1083, 21, 5306, 1655, 1708, 19367, 19369, 5889, 5537, 5485, 5487, 19370, 5367, 6289, 19371, 12424, 19372, 1503, 18722, 5491, 12011, 5588, 5478, 18719, 19584, 18721, 572, 5492, 2]
+// Dependencies: [32, 19, 17, 18168, 8562, 1071, 1082, 21, 4913, 1653, 1706, 18169, 18171, 5474, 5122, 5092, 5094, 18172, 4974, 5891, 18173, 11953, 18174, 1501, 17518, 5098, 11770, 5173, 5085, 17515, 18845, 17517, 572, 5099, 2]
 
-// Module 19365 (MainTabsChannelScreenStack)
+// Module 18167 (MainTabsChannelScreenStack)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import Constants2 from "Constants" /* 1083 */;
-import Link from "Link" /* 1503 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import native from "native" /* 5367 */;
-import useChatLayoutDefault from "useChatLayout" /* 5485 */;
-import useBaseAppContainerDimensionsDefault from "useBaseAppContainerDimensions" /* 5487 */;
-import ChatInputUtils from "ChatInputUtils" /* 5491 */;
-import useThemeDefault from "useTheme" /* 5537 */;
-import react_native from "react-native" /* 9052 */;
-import MainTabsNavigatorPanelContextDefault from "MainTabsNavigatorPanelContext" /* 12011 */;
-import reactDefault from "react" /* 12424 */;
-import useChannelScreensFromNavigation from "useChannelScreensFromNavigation" /* 18719 */;
-import MainTabsBackgroundChat from "MainTabsBackgroundChat" /* 18721 */;
-import useMainTabsPanelsGestureDefault from "useMainTabsPanelsGesture" /* 18722 */;
-import VisibleChannelScreenStore from "VisibleChannelScreenStore" /* 19366 */;
-import navigationTTIEnabled from "navigationTTIEnabled" /* 19367 */;
-import HideCoveredChannelsExperimentDefault from "HideCoveredChannelsExperiment" /* 19369 */;
-import useMainTabsChannelScreenStyles from "useMainTabsChannelScreenStyles" /* 19370 */;
-import StandaloneChannelScreenDefault from "StandaloneChannelScreen" /* 19372 */;
+import Constants2 from "Constants" /* 1082 */;
+import Link from "Link" /* 1501 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import native from "native" /* 4974 */;
+import useChatLayoutDefault from "useChatLayout" /* 5092 */;
+import useBaseAppContainerDimensionsDefault from "useBaseAppContainerDimensions" /* 5094 */;
+import ChatInputUtils from "ChatInputUtils" /* 5098 */;
+import useThemeDefault from "useTheme" /* 5122 */;
+import react_native from "react-native" /* 8562 */;
+import MainTabsNavigatorPanelContextDefault from "MainTabsNavigatorPanelContext" /* 11770 */;
+import reactDefault from "react" /* 11953 */;
+import useChannelScreensFromNavigation from "useChannelScreensFromNavigation" /* 17515 */;
+import MainTabsBackgroundChat from "MainTabsBackgroundChat" /* 17517 */;
+import useMainTabsPanelsGestureDefault from "useMainTabsPanelsGesture" /* 17518 */;
+import VisibleChannelScreenStore from "VisibleChannelScreenStore" /* 18168 */;
+import navigationTTIEnabled from "navigationTTIEnabled" /* 18169 */;
+import HideCoveredChannelsExperimentDefault from "HideCoveredChannelsExperiment" /* 18171 */;
+import useMainTabsChannelScreenStyles from "useMainTabsChannelScreenStyles" /* 18172 */;
+import StandaloneChannelScreenDefault from "StandaloneChannelScreen" /* 18174 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
-import Constants from "Constants" /* 1072 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-const _modDef1655 = _mod1655;
+const _modDef1653 = _mod1653;
 let _require, importDefault, navigation, num;
 
 let c10;
@@ -48,12 +48,12 @@ let tmp4;
 let tmp5;
 let tmp6;
 let unpackModuleId;
-const _mod1708 = tmp4(1708);
-const LegacyBaseButton = tmp5(5588);
-const react2 = tmp6(6289);
-const MainTabsNavigatorPanelContext = tmp5(12011);
-const ChannelScreenFrameContainer = tmp5(19371);
-const ChannelScreenFrameContainerDefault = tmp(19371);
+const _mod1706 = tmp4(1706);
+const LegacyBaseButton = tmp5(5173);
+const react2 = tmp6(5891);
+const MainTabsNavigatorPanelContext = tmp5(11770);
+const ChannelScreenFrameContainer = tmp5(18173);
+const ChannelScreenFrameContainerDefault = tmp(18173);
 function EnabledChannelScreenNavigationTTIVisibility(children) {
   let alwaysVisible;
   let highestFullyRenderedScreenIndex;
@@ -100,7 +100,7 @@ function EnabledChannelScreenNavigationTTIVisibility(children) {
   let c4;
   let c5;
   [tmp7, tmp8, tmp9, tmp10, tmp11, tmp12, tmp13] = items;
-  const tmp6 = _mod1655;
+  const tmp6 = _mod1653;
   class MainTabsChannelScreenStackTsx1 {
     constructor() {
       let tmp = c0 && _undefined.get() <= c2;
@@ -117,7 +117,7 @@ function EnabledChannelScreenNavigationTTIVisibility(children) {
   MainTabsChannelScreenStackTsx1.__initData = tmp7;
   const items2 = [closure_17, , ];
   const useAnimatedReaction = tmp6.useAnimatedReaction;
-  items2[1] = _mod1708.scheduleOnRN;
+  items2[1] = _mod1706.scheduleOnRN;
   items2[2] = tmp3;
   c0 = undefined;
   c1 = undefined;
@@ -167,7 +167,7 @@ function useIsCompletelyCovered(index, highestFullyRenderedScreenIndex, translat
   let items = [closure_20, translateX];
   let c0;
   [tmp3, tmp4] = items;
-  const obj2 = require("module_1655");
+  const obj2 = require("module_1653");
   class MainTabsChannelScreenStackTsx3 {
     constructor() {
       return _undefined.get() > 0;
@@ -200,12 +200,12 @@ function useIsCompletelyCovered(index, highestFullyRenderedScreenIndex, translat
   MainTabsChannelScreenStackTsx4.__workletHash = 15152975546238;
   MainTabsChannelScreenStackTsx4.__initData = tmp5;
   const animatedReaction = obj2.useAnimatedReaction(MainTabsChannelScreenStackTsx3, MainTabsChannelScreenStackTsx4);
-  const tmp2Result = tmp2(5889);
+  const tmp2Result = tmp2(5474);
   const unmountEffect = tmp2Result.useUnmountEffect(() => {
     let tmp;
     let tmp2;
     let tmp3;
-    let obj = _mod1708;
+    let obj = _mod1706;
     const items = [closure_22, highestFullyRenderedScreenIndex, index];
     let c0;
     let c1;
@@ -231,7 +231,7 @@ function useIsCompletelyCovered(index, highestFullyRenderedScreenIndex, translat
   c1 = undefined;
   let c2;
   [tmp10, tmp11, tmp12, tmp13] = items4;
-  const tmp2Result2 = tmp2(1655);
+  const tmp2Result2 = tmp2(1653);
   class MainTabsChannelScreenStackTsx6 {
     constructor() {
       const tmp = c0 && _undefined.get() > c2;
@@ -278,11 +278,12 @@ let closure_25 = react.memo(function FirstChannelScreen(index) {
   let require;
   let showCreateThread;
   let str;
+  let subRouteId;
   let tmp14;
   let tmpResult;
   let transitionState;
   let translateX;
-  ({ guildId: require, channelId: importDefault, showCreateThread: dependencyMap, frame } = index);
+  ({ guildId: require, channelId: importDefault, subRouteId: dependencyMap, showCreateThread: _slicedToArray, frame } = index);
   index = index.index;
   ({ isDragging, translateX, containerWidth } = index);
   const isActive = index.isActive;
@@ -299,14 +300,14 @@ let closure_25 = react.memo(function FirstChannelScreen(index) {
   let obj = useMainTabsChannelScreenStyles;
   const items = [cleanup, transitionState];
   const mainTabsChannelScreenStyles = obj.useMainTabsChannelScreenStyles(isDragging, translateX, maxWidth, tmp5, parentFreezeValue);
-  const effect = index.useEffect(() => {
+  const effect = frame.useEffect(() => {
     if (transitionState === native.TransitionStates.YEETED) {
       cleanup();
     }
   }, items);
   const items1 = [mainTabsChannelScreenStyles, , ];
   let tmp10 = null;
-  const View = _modDef1655.View;
+  const View = _modDef1653.View;
   const tmp9 = closure_14;
   if (null != containerWidth) {
     let obj2 = { width: containerWidth };
@@ -345,7 +346,7 @@ let closure_25 = react.memo(function FirstChannelScreen(index) {
         tmp5 = width;
       }
       const obj = { value: tmp5, children: map1(StandaloneChannelScreenDefault, obj2) };
-      obj2 = { guildId: require, channelId: importDefault, isActive, isNavigationTTIVisible, showCreateThread: dependencyMap, isNavigationScreen: null == tmp4, frame, screenIndex: index };
+      obj2 = { guildId: require, channelId: importDefault, subRouteId: dependencyMap, isActive, isNavigationTTIVisible, showCreateThread: _slicedToArray, isNavigationScreen: null == tmp4, frame, screenIndex: index };
       return map1(Provider, obj);
     }
   };
@@ -374,6 +375,7 @@ let closure_28 = react.memo(function ChannelScreen(cleanup) {
   let parentFreezeValue;
   let require;
   let showCreateThread;
+  let subRouteId;
   let tmp11;
   let tmp12;
   let tmp13;
@@ -383,7 +385,7 @@ let closure_28 = react.memo(function ChannelScreen(cleanup) {
   let tmp23;
   let transitionState;
   let translateX;
-  ({ guildId: require, channelId: importDefault, showCreateThread: dependencyMap, transitionState } = cleanup);
+  ({ guildId: require, channelId: importDefault, subRouteId: dependencyMap, showCreateThread: _slicedToArray, transitionState } = cleanup);
   cleanup = cleanup.cleanup;
   const isActive = cleanup.isActive;
   ({ parentFreezeValue, index } = cleanup);
@@ -399,9 +401,9 @@ let closure_28 = react.memo(function ChannelScreen(cleanup) {
   const isChatBesideChannelList = useChatLayoutDefault().isChatBesideChannelList;
   let obj = Link;
   navigation = obj.useNavigation();
-  const ref = cleanup.useRef(false);
+  const ref = transitionState.useRef(false);
   const items = [cleanup, navigation];
-  const callback = cleanup.useCallback((arg0) => {
+  const callback = transitionState.useCallback((arg0) => {
     const tmp = arg0;
     if (!tmp) {
       if (ref.current) {
@@ -418,11 +420,11 @@ let closure_28 = react.memo(function ChannelScreen(cleanup) {
   ({ isDragging, translateX, maxWidth } = tmp8Result);
   ({ gesture, panelGestureContext, movePanel } = tmp8Result);
   const tmp10 = useIsCompletelyCovered(index, highestFullyRenderedScreenIndex, translateX);
-  const disallowGesture = cleanup.useContext(MainTabsNavigatorPanelContextDefault).disallowGesture;
+  const disallowGesture = transitionState.useContext(MainTabsNavigatorPanelContextDefault).disallowGesture;
   const items1 = [closure_26, translateX];
   let c0;
   [tmp11, tmp12] = items1;
-  const obj4 = _mod1655;
+  const obj4 = _mod1653;
   class MainTabsChannelScreenStackTsx7 {
     constructor() {
       return 0 === _undefined.get();
@@ -480,7 +482,7 @@ let closure_28 = react.memo(function ChannelScreen(cleanup) {
   Provider = MainTabsNavigatorPanelContext.MainTabsChannelScreenStackContext.Provider;
   const items6 = [mainTabsChannelScreenStyles, ];
   let onyxContainerStyles;
-  View = _modDef1655.View;
+  View = _modDef1653.View;
   tmp21 = closure_14;
   if (tmp3 === ThemeTypes.ONYX) {
     if (!isChatBesideChannelList) {
@@ -498,7 +500,7 @@ let closure_28 = react.memo(function ChannelScreen(cleanup) {
     index,
     isStackVisible: isNavigationTTIStackVisible,
     children(isNavigationTTIVisible) {
-      const obj = { guildId: require, channelId: importDefault, isActive, isNavigationTTIVisible, showCreateThread: dependencyMap, isNavigationScreen: true, frame: null, screenIndex: index };
+      const obj = { guildId: require, channelId: importDefault, subRouteId: dependencyMap, isActive, isNavigationTTIVisible, showCreateThread: _slicedToArray, isNavigationScreen: true, frame: null, screenIndex: index };
       return map1(StandaloneChannelScreenDefault, obj);
     }
   };
@@ -649,8 +651,8 @@ const memoResult = react.memo(function MainTabsChannelScreenStack(screens) {
     let tmp5;
     const NumberResult = Number(arg0);
     if (0 === NumberResult) {
-      const obj = { guildId: null, channelId: null, showCreateThread: showCreateThread2, focusChatPressableComponent, index: NumberResult, transitionState, cleanup, isDragging, translateX, isActive: tmp14, isNavigationTTIStackVisible: navigationTTIStackVisible, freeze: tmp18, containerWidth: firstScreenWidth, frame: firstScreenFrame, parentFreezeValue: sharedValue, maxWidth, highestFullyRenderedScreenIndex };
-      ({ guildId: obj.guildId, channelId: obj.channelId, showCreateThread: showCreateThread2 } = channelId);
+      const obj = { guildId: null, channelId: null, subRouteId: null, showCreateThread: showCreateThread2, focusChatPressableComponent, index: NumberResult, transitionState, cleanup, isDragging, translateX, isActive: tmp14, isNavigationTTIStackVisible: navigationTTIStackVisible, freeze: tmp18, containerWidth: firstScreenWidth, frame: firstScreenFrame, parentFreezeValue: sharedValue, maxWidth, highestFullyRenderedScreenIndex };
+      ({ guildId: obj.guildId, channelId: obj.channelId, subRouteId: obj.subRouteId, showCreateThread: showCreateThread2 } = channelId);
       if (showCreateThread2 == null) {
         showCreateThread2 = false;
       }
@@ -660,8 +662,8 @@ const memoResult = react.memo(function MainTabsChannelScreenStack(screens) {
       map1(closure_25, obj, arg0);
       return map1(MainTabsBackgroundChat.BackgroundChatPortal, obj2, arg0);
     } else {
-      const obj5 = { guildId: null, channelId: null, showCreateThread, index: NumberResult, transitionState, parentFreezeValue: sharedValue, cleanup, isActive: NumberResult === screens.length - 1, isNavigationTTIStackVisible: navigationTTIStackVisible, freeze: tmp5, highestFullyRenderedScreenIndex };
-      ({ guildId: obj3.guildId, channelId: obj3.channelId, showCreateThread } = channelId);
+      const obj5 = { guildId: null, channelId: null, subRouteId: null, showCreateThread, index: NumberResult, transitionState, parentFreezeValue: sharedValue, cleanup, isActive: NumberResult === screens.length - 1, isNavigationTTIStackVisible: navigationTTIStackVisible, freeze: tmp5, highestFullyRenderedScreenIndex };
+      ({ guildId: obj3.guildId, channelId: obj3.channelId, subRouteId: obj3.subRouteId, showCreateThread } = channelId);
       const tmp29 = map1;
       const tmp30 = closure_28;
       if (showCreateThread == null) {
@@ -704,7 +706,7 @@ const memoResult = react.memo(function MainTabsChannelScreenStack(screens) {
         let isChatLockedOpen = tmp.type !== useChannelScreensFromNavigation.ChannelScreenType.DEFAULT;
         const tmp7 = require;
         if (!isChatLockedOpen) {
-          const tmp7Result = tmp7(5485);
+          const tmp7Result = tmp7(5092);
           isChatLockedOpen = tmp7Result.getChatLayout().isChatLockedOpen;
         }
         if (!isChatLockedOpen) {

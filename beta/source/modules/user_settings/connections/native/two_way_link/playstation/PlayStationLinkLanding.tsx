@@ -1,17 +1,17 @@
-// Module ID: 7594
-// Function ID: 7595
+// Module ID: 7196
+// Function ID: 7197
 // Name: PlayStationLinkLanding
-// Dependencies: [19, 7593, 1072, 21, 5306, 1113, 7432, 7438, 1502, 2188, 7595, 7441, 2]
+// Dependencies: [19, 7195, 1071, 21, 4913, 1112, 7034, 7040, 1500, 2187, 7197, 7043, 2]
 // Exports: PlayStationLinkLanding
 
-// Module 7594 (PlayStationLinkLanding)
+// Module 7196 (PlayStationLinkLanding)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1072 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
-import PlayStationLinkConstants from "PlayStationLinkConstants" /* 7593 */;
-import _modDef7595 from "module_7595" /* 7595 */;
+import Constants from "Constants" /* 1071 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2187 */;
+import PlayStationLinkConstants from "PlayStationLinkConstants" /* 7195 */;
+import _modDef7197 from "module_7197" /* 7197 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -26,13 +26,13 @@ export function PlayStationLinkLanding(platformType) {
   navigation = undefined;
   platformType = platformType.platformType;
   const tmp = closure_7();
-  let obj = navigation(1502);
+  let obj = navigation(1500);
   navigation = obj.useNavigation();
   let obj2 = HelpdeskUtilsDefault;
   const articleURL = obj2.getArticleURL(HelpdeskArticles.PS_CONNECTION);
-  let intl = navigation(1113).intl;
+  let intl = navigation(1112).intl;
   let items = [navigation];
-  const formatResult = intl.format(navigation(1113).t.kqZQNe, { helpdeskArticleUrl: articleURL });
+  const formatResult = intl.format(navigation(1112).t.kqZQNe, { helpdeskArticleUrl: articleURL });
   const memo = react.useMemo(() => {
     let intl;
     let intl2;
@@ -50,11 +50,11 @@ export function PlayStationLinkLanding(platformType) {
     navigation.push(constants.PRE_CONNECT);
   }, items);
   const memo1 = react.useMemo(() => {
-    const obj = { uri: _modDef7595 };
+    const obj = { uri: _modDef7197 };
     return obj;
   }, []);
-  const TwoWayLinkLanding = navigation(7441).TwoWayLinkLanding;
-  let intl2 = navigation(1113).intl;
-  let intl3 = navigation(1113).intl;
-  return <TwoWayLinkLanding platformType={platformType} img={memo1} imgStyle={tmp.image} headerConnect={intl2.string(navigation(1113).t.xAWHOy)} headerReconnect={intl3.string(navigation(1113).t["ZJ/vBh"])} body={formatResult} onNext={callback} valueProps={memo} />;
+  const TwoWayLinkLanding = navigation(7043).TwoWayLinkLanding;
+  let intl2 = navigation(1112).intl;
+  let intl3 = navigation(1112).intl;
+  return <TwoWayLinkLanding platformType={platformType} img={memo1} imgStyle={tmp.image} headerConnect={intl2.string(navigation(1112).t.xAWHOy)} headerReconnect={intl3.string(navigation(1112).t["ZJ/vBh"])} body={formatResult} onNext={callback} valueProps={memo} />;
 }

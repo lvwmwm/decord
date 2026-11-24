@@ -1,13 +1,13 @@
-// Module ID: 5519
-// Function ID: 5520
+// Module ID: 13386
+// Function ID: 13387
 // Name: ServerThemeExperiment
-// Dependencies: [1072, 5520, 5531, 2]
+// Dependencies: [1071, 5853, 13387, 2]
 // Exports: getServerThemeEnabled, getServerThemeRollbackEnabled, resolveServerThemeConfig, useServerThemeEnabled, useServerThemeRollbackEnabled
 
-// Module 5519 (ServerThemeExperiment)
-import Constants from "Constants" /* 1072 */;
-import ServerThemeApexShadowExperiment2 from "ServerThemeApexShadowExperiment" /* 5531 */;
-import createExperiment from "module_5520" /* 5520 */;
+// Module 13386 (ServerThemeExperiment)
+import Constants from "Constants" /* 1071 */;
+import ServerThemeApexShadowExperiment2 from "ServerThemeApexShadowExperiment" /* 13387 */;
+import createExperiment from "module_5853" /* 5853 */;
 import size from "module_2" /* 2 */;
 
 let items;
@@ -32,14 +32,14 @@ export function resolveServerThemeConfig(inExperiment, gatesApex, arg2) {
   }
   return tmp;
 }
-export function getServerThemeEnabled(guildId, GuildPowerupsConstants) {
+export function getServerThemeEnabled(guildId, location) {
   let defaultConfig;
-  const obj = { guildId, location: GuildPowerupsConstants };
+  const obj = { guildId, location };
   let currentConfig = experiment.getCurrentConfig(obj, { autoTrackExposure: false });
   const tmp = experiment;
   if (null != guildId) {
     const ServerThemeApexShadowExperiment = ServerThemeApexShadowExperiment2.ServerThemeApexShadowExperiment;
-    const obj2 = { guildId, location: GuildPowerupsConstants };
+    const obj2 = { guildId, location };
     defaultConfig = ServerThemeApexShadowExperiment.getConfig(obj2);
   } else {
     defaultConfig = ServerThemeApexShadowExperiment2.ServerThemeApexShadowExperiment.definition.defaultConfig;
@@ -52,8 +52,8 @@ export function getServerThemeEnabled(guildId, GuildPowerupsConstants) {
   }
   return currentConfig.enabled;
 }
-export function useServerThemeEnabled(guildId, useGuildPowerupNewPerkMarketingVersion) {
-  const obj = { guildId, location: useGuildPowerupNewPerkMarketingVersion };
+export function useServerThemeEnabled(guildId, location) {
+  const obj = { guildId, location };
   const tmp = experiment;
   experiment = experiment.useExperiment(obj, { autoTrackExposure: false });
   const ServerThemeApexShadowExperiment = ServerThemeApexShadowExperiment2.ServerThemeApexShadowExperiment;
@@ -62,7 +62,7 @@ export function useServerThemeEnabled(guildId, useGuildPowerupNewPerkMarketingVe
   if (guildId == null) {
     tmp3 = EMPTY_STRING_SNOWFLAKE_ID;
   }
-  const obj2 = { guildId: tmp3, location: useGuildPowerupNewPerkMarketingVersion };
+  const obj2 = { guildId: tmp3, location };
   let defaultConfig = useConfig(obj2);
   if (!experiment.inExperiment) {
     if (null == guildId) {
@@ -72,14 +72,14 @@ export function useServerThemeEnabled(guildId, useGuildPowerupNewPerkMarketingVe
   }
   return experiment.enabled;
 }
-export function getServerThemeRollbackEnabled(guildId, GuildPowerupsManager) {
+export function getServerThemeRollbackEnabled(guildId, location) {
   let defaultConfig;
-  const obj = { guildId, location: GuildPowerupsManager };
+  const obj = { guildId, location };
   let currentConfig = experiment.getCurrentConfig(obj, { autoTrackExposure: false });
   const tmp = experiment;
   if (null != guildId) {
     const ServerThemeApexShadowExperiment = ServerThemeApexShadowExperiment2.ServerThemeApexShadowExperiment;
-    const obj2 = { guildId, location: GuildPowerupsManager };
+    const obj2 = { guildId, location };
     defaultConfig = ServerThemeApexShadowExperiment.getConfig(obj2);
   } else {
     defaultConfig = ServerThemeApexShadowExperiment2.ServerThemeApexShadowExperiment.definition.defaultConfig;
@@ -92,8 +92,8 @@ export function getServerThemeRollbackEnabled(guildId, GuildPowerupsManager) {
   }
   return currentConfig.rollbackEnabled;
 }
-export function useServerThemeRollbackEnabled(guildId, useGuildPowerupNewPerkMarketingVersion) {
-  const obj = { guildId, location: useGuildPowerupNewPerkMarketingVersion };
+export function useServerThemeRollbackEnabled(guildId, useMarketablePowerupPerks) {
+  const obj = { guildId, location: useMarketablePowerupPerks };
   const tmp = experiment;
   experiment = experiment.useExperiment(obj, { autoTrackExposure: false });
   const ServerThemeApexShadowExperiment = ServerThemeApexShadowExperiment2.ServerThemeApexShadowExperiment;
@@ -102,7 +102,7 @@ export function useServerThemeRollbackEnabled(guildId, useGuildPowerupNewPerkMar
   if (guildId == null) {
     tmp3 = EMPTY_STRING_SNOWFLAKE_ID;
   }
-  const obj2 = { guildId: tmp3, location: useGuildPowerupNewPerkMarketingVersion };
+  const obj2 = { guildId: tmp3, location: useMarketablePowerupPerks };
   let defaultConfig = useConfig(obj2);
   if (!experiment.inExperiment) {
     if (null == guildId) {

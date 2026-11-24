@@ -1,19 +1,19 @@
-// Module ID: 17835
-// Function ID: 17836
+// Module ID: 16615
+// Function ID: 16616
 // Name: GuildRoleSubscriptionsHooks
-// Dependencies: [5, 32, 19, 6790, 5231, 504, 7270, 7416, 17836, 17837, 13545, 1255, 2]
+// Dependencies: [5, 32, 19, 6394, 4838, 504, 6875, 7018, 16616, 16617, 13075, 1254, 2]
 // Exports: useArchiveSubscriptionListing, useCreateSubscriptionGroupListing, useDeleteSubscriptionGroupListing, useDeleteSubscriptionListing, useFetchListingsForSubscriptions, useFetchSubscriptionsSettings, useGroupListingsForGuild, usePublishSubscriptionListing, useSubscriptionGroupListing, useSubscriptionListing, useSubscriptionListingsForGroup, useSubscriptionListingsForGuild, useSubscriptionTrial, useSubscriptionTrialsForGroup, useSubscriptionTrialsForGuild, useSubscriptionsSettings, useUpdateSubscriptionGroupListing, useUpdateSubscriptionsSettings, useUpdateSubscriptionsTrial
 
-// Module 17835 (GuildRoleSubscriptionsHooks)
-import GlobalUtils from "GlobalUtils" /* 1255 */;
-import GuildRoleSubscriptionsStore2 from "GuildRoleSubscriptionsStore" /* 5231 */;
-import GuildRoleSubscriptionsActionCreatorsAll from "GuildRoleSubscriptionsActionCreators" /* 7270 */;
-import useRequestDefault from "useRequest" /* 13545 */;
-import subscriptionUtils from "subscriptionUtils" /* 17837 */;
+// Module 16615 (GuildRoleSubscriptionsHooks)
+import GlobalUtils from "GlobalUtils" /* 1254 */;
+import GuildRoleSubscriptionsStore2 from "GuildRoleSubscriptionsStore" /* 4838 */;
+import GuildRoleSubscriptionsActionCreatorsAll from "GuildRoleSubscriptionsActionCreators" /* 6875 */;
+import useRequestDefault from "useRequest" /* 13075 */;
+import subscriptionUtils from "subscriptionUtils" /* 16617 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6790 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6394 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

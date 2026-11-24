@@ -1,14 +1,14 @@
-// Module ID: 9549
-// Function ID: 9550
+// Module ID: 9069
+// Function ID: 9070
 // Name: TopEmojisUtils
-// Dependencies: [1388, 6969, 6971, 9550, 2]
+// Dependencies: [1386, 6573, 6575, 9070, 2]
 // Exports: maybeFetchTopEmojisByGuild
 
-// Module 9549 (TopEmojisUtils)
-import TopEmojisActionCreators from "TopEmojisActionCreators" /* 9550 */;
-import UserStore from "UserStore" /* 1388 */;
-import EmojiStore from "EmojiStore" /* 6969 */;
-import TopEmojiStore from "TopEmojiStore" /* 6971 */;
+// Module 9069 (TopEmojisUtils)
+import TopEmojisActionCreators from "TopEmojisActionCreators" /* 9070 */;
+import UserStore from "UserStore" /* 1386 */;
+import EmojiStore from "EmojiStore" /* 6573 */;
+import TopEmojiStore from "TopEmojiStore" /* 6575 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/emojis/top_emojis/TopEmojisUtils.tsx");

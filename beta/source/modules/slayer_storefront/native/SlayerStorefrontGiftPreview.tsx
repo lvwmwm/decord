@@ -1,18 +1,18 @@
-// Module ID: 12393
-// Function ID: 12394
+// Module ID: 11922
+// Function ID: 11923
 // Name: SlayerStorefrontGiftPreview
-// Dependencies: [19, 17, 21, 5306, 9515, 5919, 1113, 10833, 4031, 2]
+// Dependencies: [19, 17, 21, 4913, 9035, 5504, 1112, 11030, 4090, 2]
 // Exports: default
 
-// Module 12393 (SlayerStorefrontGiftPreview)
+// Module 11922 (SlayerStorefrontGiftPreview)
 import react_native from "react-native" /* 17 */;
-import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9515 */;
-import InfoBox from "InfoBox" /* 10833 */;
+import intl2 from "intl" /* 1112 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import SlayerStorefrontItemCardDefault from "SlayerStorefrontItemCard" /* 9035 */;
+import InfoBox from "InfoBox" /* 11030 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const InfoBoxDefault = InfoBox;
@@ -38,7 +38,7 @@ function WarningBox(application) {
     if (mobileAccountLinkingDisabled) {
       const formatToPlainString2 = intl.formatToPlainString;
       let name;
-      const BMMo2K = tmp4(4031).BMMo2K;
+      const BMMo2K = tmp4(4090).BMMo2K;
       if (application != null) {
         name = application.name;
       }
@@ -49,7 +49,7 @@ function WarningBox(application) {
       const formatToPlainString = intl.formatToPlainString;
       const obj3 = { skuName: sku.name, applicationName: name1 };
       name1 = undefined;
-      const prop = tmp7(1113).t["EgCl+Q"];
+      const prop = tmp7(1112).t["EgCl+Q"];
       if (application != null) {
         name1 = application.name;
       }

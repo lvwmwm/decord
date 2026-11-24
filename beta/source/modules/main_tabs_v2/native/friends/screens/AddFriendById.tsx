@@ -1,24 +1,24 @@
-// Module ID: 16292
-// Function ID: 16293
+// Module ID: 15064
+// Function ID: 15065
 // Name: AddFriendById
-// Dependencies: [32, 19, 17, 1072, 21, 5306, 575, 1113, 5919, 7626, 8141, 8137, 6004, 1256, 5315, 7859, 5926, 2]
+// Dependencies: [32, 19, 17, 1071, 21, 4913, 575, 1112, 5504, 7228, 7744, 7740, 5594, 1255, 4922, 7461, 5511, 2]
 // Exports: default
 
-// Module 16292 (AddFriendById)
+// Module 15064 (AddFriendById)
 import nativeDefault from "native" /* 575 */;
-import intl4 from "intl" /* 1113 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5315 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import ToastUtils from "ToastUtils" /* 6004 */;
-import TextField2 from "TextField" /* 7626 */;
-import FriendsUtils from "FriendsUtils" /* 8141 */;
+import intl4 from "intl" /* 1112 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4922 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import ToastUtils from "ToastUtils" /* 5594 */;
+import TextField2 from "TextField" /* 7228 */;
+import FriendsUtils from "FriendsUtils" /* 7744 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1072 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -116,7 +116,7 @@ function AddFriendByIdInput(arg0) {
   if (validationState.status === tmp4.ERROR) {
     a11yMessage = validationState.a11yMessage;
   }
-  intl3 = tmp10(1113).intl;
+  intl3 = tmp10(1112).intl;
   str2 = undefined;
   if (null != message) {
     str2 = "error";
@@ -369,16 +369,16 @@ export default function _default(arg0) {
   const length = str.trim().length;
   items5[0] = closure_9(AddFriendByIdInput, obj3);
   let obj4 = { style: tmp.friendMessageContainer, children: null };
-  let obj5 = { style: items6, variant: "body-sm/semibold", color: "text-muted", children: intl.string(sourcePage(1113).t.Yi6Mpu) };
+  let obj5 = { style: items6, variant: "body-sm/semibold", color: "text-muted", children: intl.string(sourcePage(1112).t.Yi6Mpu) };
   items6 = [, , ];
   ({ messageLabel: arr7[0], inputHeaderText: arr7[1] } = tmp);
   items6[2] = headerTextStyle;
-  const Text = sourcePage(5919).Text;
-  intl = sourcePage(1113).intl;
+  const Text = sourcePage(5504).Text;
+  intl = sourcePage(1112).intl;
   const items7 = [closure_9(Text, obj5), , ];
   const obj6 = { returnKeyType: "done", submitBehavior: "submit", value: first2, maxLength: 120, onSubmitEditing: handleSubmitEditing, onChange: callback1, status: str2 };
   str2 = undefined;
-  const TextArea = sourcePage(7859).TextArea;
+  const TextArea = sourcePage(7461).TextArea;
   const tmp19 = constants3;
   if (first1.field === constants3.MESSAGE) {
     if (first1.status === tmp4.ERROR) {
@@ -400,14 +400,14 @@ export default function _default(arg0) {
     items8 = [tmp13(tmp15, obj2), , ];
     const obj9 = { style: tmp.redesignGrow };
     items8[1] = tmp16(tmp15, obj9);
-    const obj10 = { size: "lg", text: intl3.string(sourcePage(1113).t["PMsq/b"]), disabled: length <= 0, onPress: handleSubmitEditing, loading: first1.status === tmp4.LOADING, grow: false };
-    const Button = tmp17(5926).Button;
-    intl3 = tmp17(1113).intl;
+    const obj10 = { size: "lg", text: intl3.string(sourcePage(1112).t["PMsq/b"]), disabled: length <= 0, onPress: handleSubmitEditing, loading: first1.status === tmp4.LOADING, grow: false };
+    const Button = tmp17(5511).Button;
+    intl3 = tmp17(1112).intl;
     items8[2] = tmp16(Button, obj10);
     return tmp13(tmp14, obj8);
   }
-  const obj11 = { style: tmp.messageFooterText, variant: "body-xs/medium", color: "text-muted", children: intl2.string(sourcePage(1113).t.UtfQNw) };
-  const Text2 = tmp17(5919).Text;
-  intl2 = tmp17(1113).intl;
+  const obj11 = { style: tmp.messageFooterText, variant: "body-xs/medium", color: "text-muted", children: intl2.string(sourcePage(1112).t.UtfQNw) };
+  const Text2 = tmp17(5504).Text;
+  intl2 = tmp17(1112).intl;
   tmp16Result = tmp16(Text2, obj11);
 };

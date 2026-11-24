@@ -1,97 +1,114 @@
-// Module ID: 9281
-// Function ID: 9282
+// Module ID: 8789
+// Function ID: 8790
 // Name: PollResultSystemMessage
-// Dependencies: [1391, 9188, 9190, 1113, 1414, 5252, 9282, 9192, 2]
+// Dependencies: [1389, 8698, 8700, 8790, 1112, 1412, 4859, 8791, 8831, 8702, 2]
 // Exports: createPollResultSystemMessage
 
-// Module 9281 (PollResultSystemMessage)
-import EmojiConstants from "EmojiConstants" /* 1391 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import UnicodeEmojisDefault from "UnicodeEmojis" /* 5252 */;
-import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 9188 */;
-import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 9190 */;
-import parsePollResultSystemMessageEmbedDefault from "parsePollResultSystemMessageEmbed" /* 9282 */;
+// Module 8789 (PollResultSystemMessage)
+import EmojiConstants from "EmojiConstants" /* 1389 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
+import UnicodeEmojisDefault from "UnicodeEmojis" /* 4859 */;
+import useAuthorWithProcessedColor from "useAuthorWithProcessedColor" /* 8698 */;
+import formatUsernameOnClickDefault from "formatUsernameOnClick" /* 8700 */;
+import PollTextUtils from "PollTextUtils" /* 8790 */;
+import MarkupParsers from "MarkupParsers" /* 8791 */;
+import parsePollResultSystemMessageEmbedDefault from "parsePollResultSystemMessageEmbed" /* 8831 */;
 import size from "module_2" /* 2 */;
 
 const EMOJI_URL_BASE_SIZE = EmojiConstants.EMOJI_URL_BASE_SIZE;
 const result = size.fileFinishedImporting("modules/messages/native/renderer/system_messages/PollResultSystemMessage.tsx");
 
 export function createPollResultSystemMessage(message) {
-  let obj10;
-  let obj11;
+  let formatToParts3Result;
+  let obj12;
+  let obj13;
   let obj4;
+  let obj5;
   let obj6;
-  let tmpResult;
-  let tmpResult3;
-  let tmpResult4;
+  let tmp2Result;
+  let tmp2Result3;
+  let tmp2Result4;
   const sadEmojiHook = () => closure_0;
-  const tmp3 = parsePollResultSystemMessageEmbedDefault(message.message.embeds[0]);
-  if (null == tmp3) {
-    return null;
-  } else if (null == message.message.messageReference) {
-    return null;
-  } else {
-    let formatToParts3Result;
-    message = message.message;
-    const roleStyle = message.roleStyle;
-    const obj14 = useAuthorWithProcessedColor;
-    const messageAuthorWithProcessedColor = obj14.getMessageAuthorWithProcessedColor(message);
-    const obj2 = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: formatUsernameOnClickDefault(obj4), title: tmp3.questionText, titleOnClick: obj6 };
-    obj4 = { message, author: messageAuthorWithProcessedColor, roleStyle };
-    obj6 = { action: "bindJumpToMessage", targetChannelId: message.messageReference.channel_id, targetMessageId: message.messageReference.message_id, medium: true };
-    if (0 === tmp3.totalVotes) {
-      const intl3 = tmp22(1113).intl;
-      const formatToParts3 = intl3.formatToParts;
-      const obj7 = { sadEmojiHook };
-      const v9dPxsm = tmp22(1113).t["9dPxsm"];
-      const merged = Object.assign(obj2);
-      let closure_0 = { type: "emoji", content: "frowning", surrogate: "\u{1F626}" };
-      formatToParts3Result = formatToParts3(v9dPxsm, obj7);
-    } else {
-      const _Math = Math;
-      const _HermesInternal = HermesInternal;
-      const combined = "" + Math.round(tmp3.victorAnswerVotes / tmp3.totalVotes * 100) + "%";
-      if (null == tmp3.victorAnswerId) {
-        const intl2 = tmp22(1113).intl;
-        const formatToParts2 = intl2.formatToParts;
-        const obj8 = { percentage: combined };
-        const dqftZ2 = tmp22(1113).t.dqftZ2;
-        const merged1 = Object.assign(obj2);
-        formatToParts3Result = formatToParts2(dqftZ2, obj8);
+  const tmp4 = parsePollResultSystemMessageEmbedDefault(message.message.embeds[0]);
+  let tmp5 = null;
+  if (null != tmp4) {
+    tmp5 = null;
+    if (null != message.message.messageReference) {
+      const obj = { content: formatToParts3Result };
+      const merged = Object.assign(tmp2(8702)(message));
+      message = message.message;
+      const roleStyle = message.roleStyle;
+      const obj2 = useAuthorWithProcessedColor;
+      const messageAuthorWithProcessedColor = obj2.getMessageAuthorWithProcessedColor(message);
+      const obj3 = { username: messageAuthorWithProcessedColor.nick, usernameOnClick: formatUsernameOnClickDefault(obj4), title: obj5.getPollPlainText(tmp4.questionText), titleOnClick: obj6 };
+      obj4 = { message, author: messageAuthorWithProcessedColor, roleStyle };
+      obj5 = PollTextUtils;
+      obj6 = { action: "bindJumpToMessage", targetChannelId: message.messageReference.channel_id, targetMessageId: message.messageReference.message_id, medium: true };
+      if (0 === tmp4.totalVotes) {
+        const intl3 = tmp8(1112).intl;
+        const formatToParts3 = intl3.formatToParts;
+        const obj7 = { sadEmojiHook };
+        const v9dPxsm = tmp8(1112).t["9dPxsm"];
+        const merged1 = Object.assign(obj3);
+        let closure_0 = { type: "emoji", content: "frowning", surrogate: "\u{1F626}" };
+        formatToParts3Result = formatToParts3(v9dPxsm, obj7);
       } else {
-        const items = [];
-        const victorEmoji = tmp3.victorEmoji;
-        if (null != victorEmoji) {
-          if (null != victorEmoji.id) {
-            ({ id: obj3.id, name: obj3.alt } = victorEmoji);
-            const push2 = items.push;
-            const obj9 = { id: null, type: "customEmoji", alt: null, src: tmpResult.getEmojiURL(obj10), frozenSrc: tmpResult3.getEmojiURL(obj11) };
-            obj10 = { id: null, animated: null, size: EMOJI_URL_BASE_SIZE };
-            ({ id: obj5.id, animated: obj5.animated } = victorEmoji);
-            obj11 = { id: victorEmoji.id, animated: false, size: EMOJI_URL_BASE_SIZE };
-            tmpResult = AvatarUtilsDefault;
-            tmpResult3 = AvatarUtilsDefault;
-            push2(obj9);
-          } else {
-            const push = items.push;
-            const obj = { type: "emoji", content: tmpResult4.convertSurrogateToName(victorEmoji.name, false), surrogate: victorEmoji.name };
-            tmpResult4 = UnicodeEmojisDefault;
-            push(obj);
+        const _Math = Math;
+        const _HermesInternal = HermesInternal;
+        const combined = "" + Math.round(tmp4.victorAnswerVotes / tmp4.totalVotes * 100) + "%";
+        if (null == tmp4.victorAnswerId) {
+          const intl2 = tmp8(1112).intl;
+          const formatToParts2 = intl2.formatToParts;
+          const obj8 = { percentage: combined };
+          const dqftZ2 = tmp8(1112).t.dqftZ2;
+          const merged2 = Object.assign(obj3);
+          formatToParts3Result = formatToParts2(dqftZ2, obj8);
+        } else {
+          const items = [];
+          const victorEmoji = tmp4.victorEmoji;
+          if (null != victorEmoji) {
+            if (null != victorEmoji.id) {
+              ({ id: obj9.id, name: obj9.alt } = victorEmoji);
+              const push2 = items.push;
+              const obj10 = { id: null, type: "customEmoji", alt: null, src: tmp2Result.getEmojiURL(obj12), frozenSrc: tmp2Result3.getEmojiURL(obj13) };
+              obj12 = { id: null, animated: null, size: EMOJI_URL_BASE_SIZE };
+              ({ id: obj11.id, animated: obj11.animated } = victorEmoji);
+              obj13 = { id: victorEmoji.id, animated: false, size: EMOJI_URL_BASE_SIZE };
+              tmp2Result = AvatarUtilsDefault;
+              tmp2Result3 = AvatarUtilsDefault;
+              push2(obj10);
+            } else {
+              const push = items.push;
+              const obj14 = { type: "emoji", content: tmp2Result4.convertSurrogateToName(victorEmoji.name, false), surrogate: victorEmoji.name };
+              tmp2Result4 = UnicodeEmojisDefault;
+              push(obj14);
+            }
+            items.push({ type: "text", content: " " });
           }
-          items.push({ type: "text", content: " " });
+          const tmp8Result = MarkupParsers;
+          const parsePollMarkupResult = tmp8Result.parsePollMarkup(tmp4.victorAnswerText, false);
+          if (null != parsePollMarkupResult) {
+            const push3 = items.push;
+            const _Array = Array;
+            let tmp15 = parsePollMarkupResult;
+            if (!Array.isArray(parsePollMarkupResult)) {
+              const items1 = [parsePollMarkupResult];
+              tmp15 = items1;
+            }
+            const items2 = [];
+            HermesBuiltin.arraySpread(items2, tmp15, 0);
+            HermesBuiltin.apply(push3, items2, items);
+          }
+          const intl = tmp8(1112).intl;
+          const formatToParts = intl.formatToParts;
+          const obj15 = { answerHook: sadEmojiHook, percentage: combined };
+          const zFwIxC = tmp8(1112).t.zFwIxC;
+          const merged3 = Object.assign(obj3);
+          formatToParts3Result = formatToParts(zFwIxC, obj15);
         }
-        const obj12 = { type: "text", content: tmp3.victorAnswerText };
-        items.push(obj12);
-        const intl = tmp22(1113).intl;
-        const formatToParts = intl.formatToParts;
-        const obj13 = { answerHook: sadEmojiHook, percentage: combined };
-        const zFwIxC = tmp22(1113).t.zFwIxC;
-        const merged2 = Object.assign(obj2);
-        formatToParts3Result = formatToParts(zFwIxC, obj13);
       }
+      tmp5 = obj;
     }
-    const obj16 = { content: formatToParts3Result };
-    const merged3 = Object.assign(tmp(9192)(message));
-    return obj16;
   }
+  return tmp5;
 }

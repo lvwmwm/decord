@@ -1,18 +1,18 @@
-// Module ID: 13745
-// Function ID: 13746
+// Module ID: 18594
+// Function ID: 18595
 // Name: useConjureSafetyAlertsChannelPick
-// Dependencies: [19, 5236, 5218, 5177, 7017, 1072, 1084, 504, 7351, 6907, 7260, 5243, 13573, 2]
+// Dependencies: [19, 4843, 4825, 4784, 6621, 1071, 1083, 504, 6955, 6511, 6865, 4850, 18422, 2]
 // Exports: default
 
-// Module 13745 (useConjureSafetyAlertsChannelPick)
-import Constants from "Constants" /* 1072 */;
-import ConjureClarification from "ConjureClarification" /* 13573 */;
+// Module 18594 (useConjureSafetyAlertsChannelPick)
+import Constants from "Constants" /* 1071 */;
+import ConjureClarification from "ConjureClarification" /* 18422 */;
 import react from "react" /* 19 */;
-import GuildChannelStore from "GuildChannelStore" /* 5236 */;
-import GuildMemberStore from "GuildMemberStore" /* 5218 */;
-import GuildStore from "GuildStore" /* 5177 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 7017 */;
-import BigFlagUtils from "BigFlagUtils" /* 1084 */;
+import GuildChannelStore from "GuildChannelStore" /* 4843 */;
+import GuildMemberStore from "GuildMemberStore" /* 4825 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6621 */;
+import BigFlagUtils from "BigFlagUtils" /* 1083 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

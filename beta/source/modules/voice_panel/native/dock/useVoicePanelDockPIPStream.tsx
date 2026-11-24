@@ -1,18 +1,18 @@
-// Module ID: 20063
-// Function ID: 20064
+// Module ID: 19320
+// Function ID: 19321
 // Name: useVoicePanelDockPIPStream
-// Dependencies: [7016, 6810, 502, 5155, 20064, 1072, 5973, 504, 6798, 2]
+// Dependencies: [6620, 6400, 502, 4762, 19321, 1071, 5563, 504, 6401, 2]
 // Exports: default
 
-// Module 20063 (useVoicePanelDockPIPStream)
-import Constants from "Constants" /* 1072 */;
-import CallConstants from "CallConstants" /* 5973 */;
-import StreamKeyUtils from "StreamKeyUtils" /* 6798 */;
-import ChannelRTCStore from "ChannelRTCStore" /* 7016 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6810 */;
+// Module 19320 (useVoicePanelDockPIPStream)
+import Constants from "Constants" /* 1071 */;
+import CallConstants from "CallConstants" /* 5563 */;
+import StreamKeyUtils from "StreamKeyUtils" /* 6401 */;
+import ChannelRTCStore from "ChannelRTCStore" /* 6620 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6400 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import VoicePanelDockPIPWatchPromptStore from "VoicePanelDockPIPWatchPromptStore" /* 20064 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import VoicePanelDockPIPWatchPromptStore from "VoicePanelDockPIPWatchPromptStore" /* 19321 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

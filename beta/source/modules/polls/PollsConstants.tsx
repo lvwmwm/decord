@@ -1,10 +1,10 @@
-// Module ID: 9011
-// Function ID: 9012
+// Module ID: 8521
+// Function ID: 8522
 // Name: PollsConstants
-// Dependencies: [1228, 2]
+// Dependencies: [1227, 2]
 
-// Module 9011 (PollsConstants)
-import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1228 */;
+// Module 8521 (PollsConstants)
+import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1227 */;
 import size from "module_2" /* 2 */;
 
 const items = [, ];

@@ -1,21 +1,21 @@
-// Module ID: 13261
-// Function ID: 13262
+// Module ID: 18341
+// Function ID: 18342
 // Name: ConjureEffortTiers
-// Dependencies: [109, 13262, 1113, 4131, 13263, 2]
+// Dependencies: [109, 18342, 1112, 4190, 18343, 2]
 // Exports: conjureCanPickModel, conjureCeilingSupportsFast, conjureNormalizeFast, conjurePickTierModel, conjureTierAvailable, conjureTierDescription, conjureTierLabel, conjureTierModel, conjureTierStopLabel, conjureWithTier
 
-// Module 13261 (ConjureEffortTiers)
-import _modDef4131 from "module_4131" /* 4131 */;
-import ConjureModelLabels from "ConjureModelLabels" /* 13262 */;
-import ConjureModelSettingsTypes from "ConjureModelSettingsTypes" /* 13263 */;
+// Module 18341 (ConjureEffortTiers)
+import _modDef4190 from "module_4190" /* 4190 */;
+import ConjureModelLabels from "ConjureModelLabels" /* 18342 */;
+import ConjureModelSettingsTypes from "ConjureModelSettingsTypes" /* 18343 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import size from "module_2" /* 2 */;
 
 let tmp2;
-const intl3 = tmp2(1113);
+const intl3 = tmp2(1112);
 let closure_3 = ["thinking"];
 let closure_4 = ["fast"];
-let obj = { simple: _modDef4131.Mqb8mc, balanced: _modDef4131.zCZfA6, complex: _modDef4131["8l2atm"] };
+let obj = { simple: _modDef4190.Mqb8mc, balanced: _modDef4190.zCZfA6, complex: _modDef4190["8l2atm"] };
 const CONJURE_MODEL_TIERS = ConjureModelSettingsTypes.CONJURE_MODEL_TIERS;
 const flatMapResult = CONJURE_MODEL_TIERS.flatMap((item, index) => {
   let items;
@@ -136,14 +136,14 @@ export function conjureTierStopLabel(value) {
   const modelTierMessageResult = obj.modelTierMessage(value);
   let stringResult = value;
   if (null != modelTierMessageResult) {
-    const intl = tmp(1113).intl;
+    const intl = tmp(1112).intl;
     stringResult = intl.string(modelTierMessageResult);
   }
   let combined = stringResult;
   if ("complex" === value) {
-    const intl2 = tmp(1113).intl;
+    const intl2 = tmp(1112).intl;
     const _HermesInternal = HermesInternal;
-    combined = "" + stringResult + ", " + intl2.string(_modDef4131["17yEQw"]);
+    combined = "" + stringResult + ", " + intl2.string(_modDef4190["17yEQw"]);
   }
   return combined;
 }

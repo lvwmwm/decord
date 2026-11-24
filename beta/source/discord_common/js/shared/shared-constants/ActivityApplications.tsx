@@ -1,9 +1,9 @@
-// Module ID: 2148
-// Function ID: 2149
+// Module ID: 2147
+// Function ID: 2148
 // Name: ActivityApplications
 // Dependencies: [2]
 
-// Module 2148 (ActivityApplications)
+// Module 2147 (ActivityApplications)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/ActivityApplications.tsx");

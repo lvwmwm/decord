@@ -1,23 +1,23 @@
-// Module ID: 6242
-// Function ID: 6243
+// Module ID: 5836
+// Function ID: 5837
 // Name: StreamQualityUtils
-// Dependencies: [19, 6243, 502, 5177, 6061, 1388, 1072, 6161, 1390, 6065, 1113, 504, 6244, 1256, 2]
+// Dependencies: [19, 5837, 502, 4784, 5654, 1386, 1071, 5754, 1388, 5658, 1112, 504, 5838, 1255, 2]
 // Exports: getFPSText, getMaxQuality, getPremiumRequirement, getResolutionText, isPremiumFPS, isPremiumRequirement, isPremiumResolution, trackStreamSettingsUpdate, useMaxQuality
 
-// Module 6242 (StreamQualityUtils)
-import Constants from "Constants" /* 1072 */;
-import intl3 from "intl" /* 1113 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import PremiumConstants from "PremiumConstants" /* 1390 */;
-import Constants2 from "Constants" /* 6065 */;
-import getReportedStreamResolutionDefault from "getReportedStreamResolution" /* 6244 */;
+// Module 5836 (StreamQualityUtils)
+import Constants from "Constants" /* 1071 */;
+import intl3 from "intl" /* 1112 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import PremiumConstants from "PremiumConstants" /* 1388 */;
+import Constants2 from "Constants" /* 5658 */;
+import getReportedStreamResolutionDefault from "getReportedStreamResolution" /* 5838 */;
 import react from "react" /* 19 */;
-import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 6243 */;
+import ApplicationStreamingSettingsStore from "ApplicationStreamingSettingsStore" /* 5837 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import GuildStore from "GuildStore" /* 5177 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 6061 */;
-import UserStore from "UserStore" /* 1388 */;
-import StreamSettingsConstants from "StreamSettingsConstants" /* 6161 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5654 */;
+import UserStore from "UserStore" /* 1386 */;
+import StreamSettingsConstants from "StreamSettingsConstants" /* 5754 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

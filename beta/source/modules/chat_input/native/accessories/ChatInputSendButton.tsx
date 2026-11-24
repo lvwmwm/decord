@@ -1,25 +1,25 @@
-// Module ID: 14662
-// Function ID: 14663
+// Module ID: 13117
+// Function ID: 13118
 // Name: ChatInputSendButton
-// Dependencies: [32, 19, 17, 5307, 8792, 13806, 21, 5306, 575, 5892, 13805, 14663, 13802, 6021, 1113, 504, 5367, 14668, 1655, 2]
+// Dependencies: [32, 19, 17, 4914, 8388, 12825, 21, 4913, 575, 5477, 13106, 13118, 13099, 5611, 1112, 504, 4974, 13123, 1653, 2]
 
-// Module 14662 (ChatInputSendButton)
+// Module 13117 (ChatInputSendButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1113 */;
-import _modDef1655 from "module_1655" /* 1655 */;
-import useToken from "useToken" /* 5892 */;
-import SendMessageIcon from "SendMessageIcon" /* 6021 */;
-import ChatInputActionButtonDefault from "ChatInputActionButton" /* 13802 */;
-import ChatInputActionButtonTransitionItemDefault from "ChatInputActionButtonTransitionItem" /* 13805 */;
-import ChatInputConstants from "ChatInputConstants" /* 13806 */;
-import useChatInputFloatingWidthDefault from "useChatInputFloatingWidth" /* 14668 */;
+import intl2 from "intl" /* 1112 */;
+import _modDef1653 from "module_1653" /* 1653 */;
+import useToken from "useToken" /* 5477 */;
+import SendMessageIcon from "SendMessageIcon" /* 5611 */;
+import ChatInputConstants from "ChatInputConstants" /* 12825 */;
+import ChatInputActionButtonDefault from "ChatInputActionButton" /* 13099 */;
+import ChatInputActionButtonTransitionItemDefault from "ChatInputActionButtonTransitionItem" /* 13106 */;
+import useChatInputFloatingWidthDefault from "useChatInputFloatingWidth" /* 13123 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5307 */;
-import SlowmodeStore from "SlowmodeStore" /* 8792 */;
-import createStyles from "createStyles" /* 5306 */;
+import AccessibilityStore from "AccessibilityStore" /* 4914 */;
+import SlowmodeStore from "SlowmodeStore" /* 8388 */;
+import createStyles from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -62,11 +62,11 @@ class ChatInputSendButton {
     react = undefined;
     canSendVoiceMessage = undefined;
     const ref = channel.ref;
-    let obj = channel(5892);
+    let obj = channel(5477);
     const token = obj.useToken(onSendMessage(575).modules.mobile.CHAT_INPUT_SEND_BUTTON_WIDTH);
-    const obj2 = channel(5892);
+    const obj2 = channel(5477);
     const token1 = obj2.useToken(onSendMessage(575).modules.mobile.CHAT_INPUT_SEND_BUTTON_HEIGHT);
-    const obj3 = channel(5892);
+    const obj3 = channel(5477);
     const token2 = obj3.useToken(onSendMessage(575).modules.mobile.CHAT_INPUT_ACTION_BUTTON_MARGIN);
     let items = [AccessibilityStore];
     const tmp7 = closure_11(token, token1);
@@ -110,17 +110,17 @@ class ChatInputSendButton {
       const tmp19 = canSendVoiceMessage;
       if (tmp19) {
         const obj8 = { disabled: stateFromStores1, channelId: channel.id };
-        tmp15Result = tmp15(tmp3(14663), obj8);
+        tmp15Result = tmp15(tmp3(13118), obj8);
       } else {
         ({ button: obj11.style, buttonActive: obj11.activeStyle, iconActive: obj11.activeIconStyle } = tmp7);
-        const obj9 = { active: true, style: null, activeStyle: null, activeIconStyle: null, IconComponent: channel(6021).SendMessageIcon, accessibilityLabel: intl.string(channel(1113).t.TXNS7S), onPress: onSendMessage, disabled: !tmp12 };
-        const tmp3Result = onSendMessage(13802);
-        intl = tmp(1113).intl;
+        const obj9 = { active: true, style: null, activeStyle: null, activeIconStyle: null, IconComponent: channel(5611).SendMessageIcon, accessibilityLabel: intl.string(channel(1112).t.TXNS7S), onPress: onSendMessage, disabled: !tmp12 };
+        const tmp3Result = onSendMessage(13099);
+        intl = tmp(1112).intl;
         tmp15Result = tmp15(tmp3Result, obj9);
       }
       return <tmp19 style={size}>{tmp15Result}</tmp19>;
     } else {
-      return <FloatingSlot buttonWidth={token} buttonHeight={token1} buttonMargin={token2} sendVoiceMessageEnabled={canSendVoiceMessage}>{jsx(channel(5367).TransitionGroup, { items: memo, renderItem: renderChatInputSendButton, getItemKey: getChatInputSendButtonItemKey })}</FloatingSlot>;
+      return <FloatingSlot buttonWidth={token} buttonHeight={token1} buttonMargin={token2} sendVoiceMessageEnabled={canSendVoiceMessage}>{jsx(channel(4974).TransitionGroup, { items: memo, renderItem: renderChatInputSendButton, getItemKey: getChatInputSendButtonItemKey })}</FloatingSlot>;
     }
   }
 }
@@ -136,7 +136,7 @@ function FloatingSlot(arg0) {
   const obj = { expanded: !sendVoiceMessageEnabled, collapsedWidth: buttonHeight + 2 * buttonMargin, expandedWidth: buttonWidth + 2 * buttonMargin };
   items[0] = { height: buttonHeight };
   items[1] = useChatInputFloatingWidthDefault(obj).animatedStyle;
-  return jsx(_modDef1655.View, { style: items, children });
+  return jsx(_modDef1653.View, { style: items, children });
 }
 let react = react_mod;
 const View = react_native.View;
@@ -173,12 +173,12 @@ let closure_12 = react.memo(function ChatInputSendButtonInner(type) {
   ChatInputActionButtonTransitionItemDefault;
   if (type === constants.BUTTON_SEND_VOICE_MESSAGE || type === constants.BUTTON_SEND_VOICE_MESSAGE_DISABLED) {
     const obj5 = { disabled: isOnCooldown, channelId };
-    tmp7Result = tmp7(tmp3(14663), obj5);
+    tmp7Result = tmp7(tmp3(13118), obj5);
   } else {
     ({ button: obj4.style, buttonActive: obj4.activeStyle, iconActive: obj4.activeIconStyle } = tmp5);
     const obj8 = { active: true, style: null, activeStyle: null, activeIconStyle: null, IconComponent: SendMessageIcon.SendMessageIcon, accessibilityLabel: intl.string(intl2.t.TXNS7S), onPress: onSendMessage, disabled: !sendEnabled };
     const tmp3Result2 = ChatInputActionButtonDefault;
-    intl = tmp(1113).intl;
+    intl = tmp(1112).intl;
     tmp7Result = tmp7(tmp3Result2, obj8);
   }
   return <tmp3Result cleanup={cleanup} state={state} withBounce={withBounce} bounceEnterDelayMs={num}>{tmp7Result}</tmp3Result>;

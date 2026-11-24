@@ -1,23 +1,25 @@
 // Module ID: 1754
 // Function ID: 1755
-// Dependencies: []
-// Exports: isShareable
+// Dependencies: [1710, 1717]
+// Exports: createSynchronizable
 
 // Module 1754
-let tmp2;
-const items = [{ code: "(function isShareable_Pnpm_isShareableTs1(value){return typeof value==='object'&&value!==null&&!!value.__shareableRef;})" }];
-[tmp2] = items;
-function isShareable(__shareableRef) {
-  __shareableRef = typeof __shareableRef === "object";
-  if (typeof __shareableRef === "object") {
-    __shareableRef = null !== __shareableRef;
-  }
-  if (__shareableRef) {
-    __shareableRef = __shareableRef.__shareableRef;
-  }
-  return __shareableRef;
-}
-isShareable.__workletHash = 12626032708700;
-isShareable.__initData = tmp2;
+import WorkletsModule2 from "WorkletsModule" /* 1710 */;
 
-export { isShareable };
+let tmp3;
+const registerCustomSerializable = tmp3(1717);
+
+export function createSynchronizable(__initData, fixedType) {
+  fixedType = undefined;
+  if (fixedType != null) {
+    fixedType = fixedType.fixedType;
+  }
+  const WorkletsModule = WorkletsModule2.WorkletsModule;
+  let serializable = __initData;
+  const createSynchronizable = WorkletsModule.createSynchronizable;
+  if (!fixedType) {
+    const tmp3Result = registerCustomSerializable;
+    serializable = tmp3Result.createSerializable(__initData);
+  }
+  return globalThis.__synchronizableUnpacker(createSynchronizable(serializable, fixedType), fixedType);
+}

@@ -1,17 +1,17 @@
-// Module ID: 1407
-// Function ID: 1408
+// Module ID: 1405
+// Function ID: 1406
 // Name: UserRecord
-// Dependencies: [1408, 1072, 1390, 1409, 1396, 1410, 1411, 1394, 1412, 1413, 1084, 11, 1414, 1406, 2110, 1401, 2106, 2111, 2]
+// Dependencies: [1406, 1071, 1388, 1407, 1394, 1408, 1409, 1392, 1410, 1411, 1083, 11, 1412, 1404, 2108, 1399, 2104, 2109, 2]
 
-// Module 1407 (UserRecord)
-import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
-import FlagUtils from "FlagUtils" /* 1406 */;
-import AvatarUtils from "AvatarUtils" /* 1414 */;
-import AvatarDecorationUtils from "AvatarDecorationUtils" /* 2106 */;
-import PremiumTypeUtils from "PremiumTypeUtils" /* 2110 */;
-import Record from "Record" /* 1408 */;
-import Constants from "Constants" /* 1072 */;
-import PremiumConstants from "PremiumConstants" /* 1390 */;
+// Module 1405 (UserRecord)
+import BigFlagUtilsAll from "BigFlagUtils" /* 1083 */;
+import FlagUtils from "FlagUtils" /* 1404 */;
+import AvatarUtils from "AvatarUtils" /* 1412 */;
+import AvatarDecorationUtils from "AvatarDecorationUtils" /* 2104 */;
+import PremiumTypeUtils from "PremiumTypeUtils" /* 2108 */;
+import Record from "Record" /* 1406 */;
+import Constants from "Constants" /* 1071 */;
+import PremiumConstants from "PremiumConstants" /* 1388 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -35,64 +35,64 @@ class UserRecord extends Record {
     let tmp;
     let tmp3;
     let username;
-    const tmp6 = new UserRecord(tmp5, tmp4, tmp3, tmp2, new.target, tmp, user, this, undefined);
-    _require = tmp6;
-    tmp6.hasFlag = function hasFlag() {
+    const tmp7 = new UserRecord(tmp6, tmp5, tmp4, tmp3, new.target, tmp2, this, undefined, tmp);
+    _require = tmp7;
+    tmp7.hasFlag = function hasFlag() {
       return false;
     };
-    tmp6.isStaff = function isStaff() {
+    tmp7.isStaff = function isStaff() {
       return false;
     };
-    tmp6.isStaffPersonal = function isStaffPersonal() {
+    tmp7.isStaffPersonal = function isStaffPersonal() {
       return false;
     };
-    tmp6.hasAnyStaffLevel = function hasAnyStaffLevel() {
+    tmp7.hasAnyStaffLevel = function hasAnyStaffLevel() {
       return false;
     };
     let premiumType = user.premium_type;
     if (premiumType == null) {
       premiumType = user.premiumType;
     }
-    ({ id: tmp6.id, username } = user);
+    ({ id: tmp7.id, username } = user);
     if (username == null) {
       username = "";
     }
-    tmp6.username = username;
+    tmp7.username = username;
     let discriminator = user.discriminator;
     if (discriminator == null) {
       discriminator = closure_5;
     }
-    tmp6.discriminator = discriminator;
+    tmp7.discriminator = discriminator;
     let avatar = user.avatar;
     if (avatar == null) {
       avatar = null;
     }
-    tmp6.avatar = avatar;
+    tmp7.avatar = avatar;
     let avatarDecorationData = user.avatar_decoration_data;
     if (avatarDecorationData == null) {
       avatarDecorationData = user.avatarDecorationData;
     }
-    tmp6.avatarDecoration = avatarDecorationData;
+    tmp7.avatarDecoration = avatarDecorationData;
     let email = user.email;
     if (email == null) {
       email = null;
     }
-    tmp6.email = email;
+    tmp7.email = email;
     let flag = user.verified;
     if (flag == null) {
       flag = false;
     }
-    tmp6.verified = flag;
+    tmp7.verified = flag;
     let flag2 = user.bot;
     if (flag2 == null) {
       flag2 = false;
     }
-    tmp6.bot = flag2;
+    tmp7.bot = flag2;
     let flag3 = user.system;
     if (flag3 == null) {
       flag3 = false;
     }
-    tmp6.system = flag3;
+    tmp7.system = flag3;
     let flag4 = user.mfa_enabled;
     if (flag4 == null) {
       flag4 = user.mfaEnabled;
@@ -100,27 +100,27 @@ class UserRecord extends Record {
     if (flag4 == null) {
       flag4 = false;
     }
-    tmp6.mfaEnabled = flag4;
+    tmp7.mfaEnabled = flag4;
     let flag5 = user.mobile;
     if (flag5 == null) {
       flag5 = false;
     }
-    tmp6.mobile = flag5;
+    tmp7.mobile = flag5;
     let flag6 = user.desktop;
     if (flag6 == null) {
       flag6 = false;
     }
-    tmp6.desktop = flag6;
-    let tmp9 = null;
+    tmp7.desktop = flag6;
+    let tmp10 = null;
     if (premiumType !== closure_6) {
-      tmp9 = premiumType;
+      tmp10 = premiumType;
     }
-    tmp6.premiumType = tmp9;
+    tmp7.premiumType = tmp10;
     let num = user.flags;
     if (num == null) {
       num = 0;
     }
-    tmp6.flags = num;
+    tmp7.flags = num;
     let num2 = user.public_flags;
     if (num2 == null) {
       num2 = user.publicFlags;
@@ -128,7 +128,7 @@ class UserRecord extends Record {
     if (num2 == null) {
       num2 = 0;
     }
-    tmp6.publicFlags = num2;
+    tmp7.publicFlags = num2;
     let num3 = user.purchased_flags;
     if (num3 == null) {
       num3 = user.purchasedFlags;
@@ -136,7 +136,7 @@ class UserRecord extends Record {
     if (num3 == null) {
       num3 = 0;
     }
-    tmp6.purchasedFlags = num3;
+    tmp7.purchasedFlags = num3;
     let num4 = user.premium_usage_flags;
     if (num4 == null) {
       num4 = user.premiumUsageFlags;
@@ -144,27 +144,27 @@ class UserRecord extends Record {
     if (num4 == null) {
       num4 = 0;
     }
-    tmp6.premiumUsageFlags = num4;
+    tmp7.premiumUsageFlags = num4;
     let phone = user.phone;
     if (phone == null) {
       phone = null;
     }
-    tmp6.phone = phone;
+    tmp7.phone = phone;
     let nsfwAllowed = user.nsfw_allowed;
     if (nsfwAllowed == null) {
       nsfwAllowed = user.nsfwAllowed;
     }
-    tmp6.nsfwAllowed = nsfwAllowed;
+    tmp7.nsfwAllowed = nsfwAllowed;
     let ageVerificationStatus = user.age_verification_status;
     if (ageVerificationStatus == null) {
       ageVerificationStatus = user.ageVerificationStatus;
     }
-    tmp6.ageVerificationStatus = ageVerificationStatus;
+    tmp7.ageVerificationStatus = ageVerificationStatus;
     let guildMemberAvatars = user.guildMemberAvatars;
     if (guildMemberAvatars == null) {
       guildMemberAvatars = {};
     }
-    tmp6.guildMemberAvatars = guildMemberAvatars;
+    tmp7.guildMemberAvatars = guildMemberAvatars;
     let flag7 = user.has_bounced_email;
     if (flag7 == null) {
       flag7 = user.hasBouncedEmail;
@@ -172,7 +172,7 @@ class UserRecord extends Record {
     if (flag7 == null) {
       flag7 = false;
     }
-    tmp6.hasBouncedEmail = flag7;
+    tmp7.hasBouncedEmail = flag7;
     let prop = user.personal_connection_id;
     if (prop == null) {
       prop = user.personalConnectionId;
@@ -180,13 +180,13 @@ class UserRecord extends Record {
     if (prop == null) {
       prop = null;
     }
-    tmp6.personalConnectionId = prop;
+    tmp7.personalConnectionId = prop;
     let globalName = user.global_name;
     if (globalName == null) {
       globalName = user.globalName;
     }
-    tmp6.globalName = globalName;
-    tmp6.banner = user.banner;
+    tmp7.globalName = globalName;
+    tmp7.banner = user.banner;
     let primary_guild = user.primary_guild;
     const ensureUserPrimaryGuild = require("PrimaryGuildUtils").ensureUserPrimaryGuild;
     require("PrimaryGuildUtils");
@@ -196,25 +196,25 @@ class UserRecord extends Record {
     if (primary_guild == null) {
       primary_guild = null;
     }
-    tmp6.primaryGuild = ensureUserPrimaryGuild(primary_guild);
-    ({ collectibles: tmp6.collectibles, displayNameStyles } = user);
+    tmp7.primaryGuild = ensureUserPrimaryGuild(primary_guild);
+    ({ collectibles: tmp7.collectibles, displayNameStyles } = user);
     if (displayNameStyles == null) {
-      const tmp12Result = require("DisplayNameStylesUtils");
-      displayNameStyles = tmp12Result.parseServerDisplayNameStyles(user.display_name_styles);
+      const tmp13Result = require("DisplayNameStylesUtils");
+      displayNameStyles = tmp13Result.parseServerDisplayNameStyles(user.display_name_styles);
     }
-    tmp6.displayNameStyles = displayNameStyles;
+    tmp7.displayNameStyles = displayNameStyles;
     let typingIndicatorStyle = user.typingIndicatorStyle;
     if (typingIndicatorStyle == null) {
-      const tmp12Result6 = require("CustomTypingIndicatorTypes");
-      typingIndicatorStyle = tmp12Result6.parseServerTypingIndicatorStyle(user.typing_indicator_style);
+      const tmp13Result6 = require("CustomTypingIndicatorTypes");
+      typingIndicatorStyle = tmp13Result6.parseServerTypingIndicatorStyle(user.typing_indicator_style);
     }
-    tmp6.typingIndicatorStyle = typingIndicatorStyle;
+    tmp7.typingIndicatorStyle = typingIndicatorStyle;
     let premiumState = user.premiumState;
     if (premiumState == null) {
-      const tmp12Result7 = require("PremiumStateUtils");
-      premiumState = tmp12Result7.parseServerPremiumState(user.premium_state);
+      const tmp13Result7 = require("PremiumStateUtils");
+      premiumState = tmp13Result7.parseServerPremiumState(user.premium_state);
     }
-    tmp6.premiumState = premiumState;
+    tmp7.premiumState = premiumState;
     const perks = user.perks;
     let activePerksBitmask;
     if (perks != null) {
@@ -223,17 +223,17 @@ class UserRecord extends Record {
     if (null != activePerksBitmask) {
       perks2 = user.perks;
     } else {
-      const tmp12Result8 = require("PerksStateUtils");
-      perks2 = tmp12Result8.parseServerPerks(user.perks);
+      const tmp13Result8 = require("PerksStateUtils");
+      perks2 = tmp13Result8.parseServerPerks(user.perks);
     }
-    tmp6.perks = perks2;
+    tmp7.perks = perks2;
     let restrictedSchedule = user.restricted_schedule;
     const ensureRestrictedScheduleRecord = require("FamilyCenterModels").ensureRestrictedScheduleRecord;
     require("FamilyCenterModels");
     if (restrictedSchedule == null) {
       restrictedSchedule = user.restrictedSchedule;
     }
-    tmp6.restrictedSchedule = ensureRestrictedScheduleRecord(restrictedSchedule);
+    tmp7.restrictedSchedule = ensureRestrictedScheduleRecord(restrictedSchedule);
     let appTransactionIds = user.appTransactionIds;
     if (appTransactionIds == null) {
       appTransactionIds = user.app_transaction_ids;
@@ -241,14 +241,15 @@ class UserRecord extends Record {
     if (appTransactionIds == null) {
       appTransactionIds = null;
     }
-    tmp6.appTransactionIds = appTransactionIds;
+    tmp7.appTransactionIds = appTransactionIds;
     let storeCountry = user.store_country;
     const parseStoreCountry = require("StoreCountryUtils").parseStoreCountry;
     require("StoreCountryUtils");
     if (storeCountry == null) {
       storeCountry = user.storeCountry;
     }
-    tmp6.storeCountry = parseStoreCountry(storeCountry);
+    tmp7.storeCountry = parseStoreCountry(storeCountry);
+    tmp7.labs = user.labs;
     let obj = {
       hasFlag: {
         writable: false,
@@ -303,16 +304,16 @@ class UserRecord extends Record {
         }
       }
     };
-    Object.defineProperties(tmp6, obj);
-    const globalName1 = tmp6.globalName;
+    Object.defineProperties(tmp7, obj);
+    const globalName1 = tmp7.globalName;
     let length;
     if (globalName1 != null) {
       length = globalName1.length;
     }
     if (0 === length) {
-      tmp6.globalName = null;
+      tmp7.globalName = null;
     }
-    return tmp6;
+    return tmp7;
   }
   hasVerifiedEmailOrPhone() {
     return true === this.verified || null != this.phone;
@@ -465,7 +466,7 @@ class UserRecord extends Record {
       if (premiumState != null) {
         premiumSource = premiumState.premiumSource;
       }
-      isPremiumResult = premiumSource === tmp(1401).PremiumSource.REVERSE_TRIAL;
+      isPremiumResult = premiumSource === tmp(1399).PremiumSource.REVERSE_TRIAL;
     }
     return isPremiumResult;
   }
@@ -479,7 +480,7 @@ class UserRecord extends Record {
       if (premiumState != null) {
         premiumSource = premiumState.premiumSource;
       }
-      isPremiumResult = premiumSource === tmp(1401).PremiumSource.SUBSCRIPTION_GROUP;
+      isPremiumResult = premiumSource === tmp(1399).PremiumSource.SUBSCRIPTION_GROUP;
     }
     return isPremiumResult;
   }
@@ -493,7 +494,7 @@ class UserRecord extends Record {
       if (premiumState != null) {
         prop = premiumState.premiumSubscriptionType;
       }
-      isPremiumResult = prop === tmp(1401).PremiumSubscriptionType.TIER_2;
+      isPremiumResult = prop === tmp(1399).PremiumSubscriptionType.TIER_2;
     }
     return isPremiumResult;
   }
@@ -507,14 +508,14 @@ class UserRecord extends Record {
       if (premiumState != null) {
         prop = premiumState.premiumSubscriptionType;
       }
-      let tmp6 = prop === tmp(1401).PremiumSubscriptionType.NONE_UNSPECIFIED;
+      let tmp6 = prop === tmp(1399).PremiumSubscriptionType.NONE_UNSPECIFIED;
       if (!tmp6) {
         const premiumState2 = self.premiumState;
         let prop1;
         if (premiumState2 != null) {
           prop1 = premiumState2.premiumSubscriptionType;
         }
-        tmp6 = prop1 === tmp(1401).PremiumSubscriptionType.BOOST_ONLY;
+        tmp6 = prop1 === tmp(1399).PremiumSubscriptionType.BOOST_ONLY;
       }
       isPremiumResult = tmp6;
     }
@@ -524,7 +525,7 @@ class UserRecord extends Record {
       if (premiumState3 != null) {
         premiumSource = premiumState3.premiumSource;
       }
-      isPremiumResult = premiumSource === tmp(1401).PremiumSource.FRACTIONAL_NITRO;
+      isPremiumResult = premiumSource === tmp(1399).PremiumSource.FRACTIONAL_NITRO;
     }
     return isPremiumResult;
   }
@@ -538,10 +539,10 @@ class UserRecord extends Record {
       if (premiumState != null) {
         premiumSource = premiumState.premiumSource;
       }
-      isPremiumResult = premiumSource === tmp(1401).PremiumSource.FRACTIONAL_NITRO;
+      isPremiumResult = premiumSource === tmp(1399).PremiumSource.FRACTIONAL_NITRO;
     }
     if (isPremiumResult) {
-      isPremiumResult = self.premiumState.premiumSubscriptionType !== tmp(1401).PremiumSubscriptionType.TIER_2;
+      isPremiumResult = self.premiumState.premiumSubscriptionType !== tmp(1399).PremiumSubscriptionType.TIER_2;
     }
     return isPremiumResult;
   }
@@ -555,7 +556,7 @@ class UserRecord extends Record {
       if (premiumState != null) {
         premiumSource = premiumState.premiumSource;
       }
-      isPremiumResult = premiumSource === tmp(1401).PremiumSource.FRACTIONAL_NITRO;
+      isPremiumResult = premiumSource === tmp(1399).PremiumSource.FRACTIONAL_NITRO;
     }
     return isPremiumResult;
   }

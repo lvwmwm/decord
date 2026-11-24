@@ -1,24 +1,24 @@
-// Module ID: 18706
-// Function ID: 18707
+// Module ID: 17502
+// Function ID: 17503
 // Name: AuthManager
-// Dependencies: [5, 17, 14827, 1072, 6892, 15025, 2123, 572, 5151, 8199, 18707, 1380, 14830, 8460, 15113, 18713, 15024, 7231, 8860, 2]
+// Dependencies: [5, 17, 13279, 1071, 6496, 13611, 2121, 572, 4758, 7802, 17503, 1378, 13282, 8051, 13700, 17509, 13610, 6835, 8455, 2]
 
-// Module 18706 (AuthManager)
+// Module 17502 (AuthManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import Constants from "Constants" /* 1072 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 6892 */;
-import transitionToGuild from "transitionToGuild" /* 7231 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8460 */;
-import SentMessageIntentsHandlerDefault from "SentMessageIntentsHandler" /* 8860 */;
-import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 14827 */;
-import NUFActionCreators from "NUFActionCreators" /* 15024 */;
-import NUFConstants from "NUFConstants" /* 15025 */;
-import nuf_NUFActionCreators from "nuf/NUFActionCreators" /* 15113 */;
-import MobileOnboardingFrictionExperimentDefault from "MobileOnboardingFrictionExperiment" /* 18713 */;
+import Constants from "Constants" /* 1071 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 6496 */;
+import transitionToGuild from "transitionToGuild" /* 6835 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8051 */;
+import SentMessageIntentsHandlerDefault from "SentMessageIntentsHandler" /* 8455 */;
+import PushNotificationPermissionStore from "PushNotificationPermissionStore" /* 13279 */;
+import NUFActionCreators from "NUFActionCreators" /* 13610 */;
+import NUFConstants from "NUFConstants" /* 13611 */;
+import nuf_NUFActionCreators from "nuf/NUFActionCreators" /* 13700 */;
+import MobileOnboardingFrictionExperimentDefault from "MobileOnboardingFrictionExperiment" /* 17509 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_native from "react-native" /* 17 */;
-import LifecycleManager from "LifecycleManager" /* 2123 */;
+import LifecycleManager from "LifecycleManager" /* 2121 */;
 import size from "module_2" /* 2 */;
 
 let DCDShortcutManager, LOGIN, c2;
@@ -26,7 +26,7 @@ let DCDShortcutManager, LOGIN, c2;
 let closure_4;
 let hasOwnProperty;
 let tmp;
-const PushNotificationActionCreators = tmp(14830);
+const PushNotificationActionCreators = tmp(13282);
 ({ NativeModules: closure_4, Keyboard: hasOwnProperty } = react_native);
 const PermissionStateType = PushNotificationPermissionStore.PermissionStateType;
 const ME = Constants.ME;

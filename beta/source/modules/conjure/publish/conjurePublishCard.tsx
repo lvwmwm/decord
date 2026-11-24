@@ -1,11 +1,11 @@
-// Module ID: 13570
-// Function ID: 13571
+// Module ID: 18419
+// Function ID: 18420
 // Name: conjurePublishCard
-// Dependencies: [4131, 2]
+// Dependencies: [4190, 2]
 // Exports: isConjurePublishCtaVisible, isPublishCardLive, livePublishCardMessageId, publishNoticeMessage, withLivePublishCard
 
-// Module 13570 (conjurePublishCard)
-import _modDef4131 from "module_4131" /* 4131 */;
+// Module 18419 (conjurePublishCard)
+import _modDef4190 from "module_4190" /* 4190 */;
 import size from "module_2" /* 2 */;
 
 const weakMap = new WeakMap();
@@ -25,22 +25,33 @@ export function isPublishCardLive(reason, newUiUnpublished) {
   return tmp;
 }
 export function isConjurePublishCtaVisible(publish, cta) {
-  let tmp = null != publish;
-  if (tmp) {
-    const status = publish.status;
-    let tmp2 = null != status;
-    if (tmp2) {
-      let tmp4;
-      if ("new_ui" === cta.reason) {
-        tmp4 = true === status.newUiUnpublished;
-      } else {
-        tmp4 = "not_live" === status.publishState;
-      }
-      tmp2 = tmp4;
-    }
-    tmp = tmp2;
+  let state;
+  if (publish != null) {
+    state = publish.state;
   }
-  return tmp;
+  let tmp2 = "action_needed" === state;
+  if (!tmp2) {
+    let state1;
+    if (publish != null) {
+      state1 = publish.state;
+    }
+    tmp2 = "publishing" === state1;
+  }
+  if (tmp2) {
+    const status = publish.status;
+    let tmp4 = null != status;
+    if (tmp4) {
+      let tmp6;
+      if ("new_ui" === cta.reason) {
+        tmp6 = true === status.newUiUnpublished;
+      } else {
+        tmp6 = "not_live" === status.publishState;
+      }
+      tmp4 = tmp6;
+    }
+    tmp2 = tmp4;
+  }
+  return tmp2;
 }
 export function livePublishCardMessageId(arg0, newUiUnpublished) {
   let diff = arg0.length - 1;
@@ -70,14 +81,14 @@ export function livePublishCardMessageId(arg0, newUiUnpublished) {
 export function publishNoticeMessage(notice, name, automod) {
   let KORRGl;
   if (true === notice.commands_failed) {
-    const tmp11 = _modDef4131;
+    const tmp11 = _modDef4190;
     KORRGl = tmp ? tmp11.ESu5eZ : tmp11["PrQg+B"];
   } else if (true === notice.channel_skipped) {
-    const tmp8 = _modDef4131;
+    const tmp8 = _modDef4190;
     KORRGl = tmp ? tmp8.ZnQW4S : tmp8.ev23Cw;
   } else {
     const update = notice.update;
-    const tmp4 = _modDef4131;
+    const tmp4 = _modDef4190;
     if (update) {
       KORRGl = tmp ? tmp4["LuS8a/"] : tmp4.gQzuLC;
     } else {

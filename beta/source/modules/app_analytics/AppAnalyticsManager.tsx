@@ -1,23 +1,23 @@
-// Module ID: 20181
-// Function ID: 20182
+// Module ID: 19438
+// Function ID: 19439
 // Name: AppAnalyticsManager
-// Dependencies: [2140, 2133, 6061, 7316, 6931, 6064, 1072, 1089, 7882, 5150, 6057, 6059, 19594, 6802, 2]
+// Dependencies: [2139, 2131, 5654, 6920, 6535, 5657, 1071, 1088, 7484, 4757, 5650, 5652, 18855, 6447, 2]
 
-// Module 20181 (AppAnalyticsManager)
-import Constants from "Constants" /* 1072 */;
-import DurationsDefault from "Durations" /* 1089 */;
-import Timers from "Timers" /* 5150 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6057 */;
-import ActivityTypes from "ActivityTypes" /* 6059 */;
-import RobloxSubgameUtils from "RobloxSubgameUtils" /* 6802 */;
-import getGamePlatformDefault from "getGamePlatform" /* 19594 */;
-import RunningGameStore from "RunningGameStore" /* 2140 */;
-import MediaEngineStore from "MediaEngineStore" /* 2133 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 6061 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 7316 */;
-import SpeakingStore from "SpeakingStore" /* 6931 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 6064 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;
+// Module 19438 (AppAnalyticsManager)
+import Constants from "Constants" /* 1071 */;
+import DurationsDefault from "Durations" /* 1088 */;
+import Timers from "Timers" /* 4757 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5650 */;
+import ActivityTypes from "ActivityTypes" /* 5652 */;
+import RobloxSubgameUtils from "RobloxSubgameUtils" /* 6447 */;
+import getGamePlatformDefault from "getGamePlatform" /* 18855 */;
+import RunningGameStore from "RunningGameStore" /* 2139 */;
+import MediaEngineStore from "MediaEngineStore" /* 2131 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5654 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 6920 */;
+import SpeakingStore from "SpeakingStore" /* 6535 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5657 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7484 */;
 import size from "module_2" /* 2 */;
 
 let map;

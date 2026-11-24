@@ -1,13 +1,13 @@
-// Module ID: 15205
-// Function ID: 15206
+// Module ID: 10150
+// Function ID: 10151
 // Name: useMediaItemSpoilerState
-// Dependencies: [32, 19, 8632, 1655, 5538, 1187, 1708, 2]
+// Dependencies: [32, 19, 8222, 1653, 5123, 1186, 1706, 2]
 // Exports: useMediaItemSpoilerState
 
-// Module 15205 (useMediaItemSpoilerState)
-import native from "native" /* 1187 */;
-import _mod1708 from "module_1708" /* 1708 */;
-import timing_timing from "timing/timing" /* 5538 */;
+// Module 10150 (useMediaItemSpoilerState)
+import native from "native" /* 1186 */;
+import _mod1706 from "module_1706" /* 1706 */;
+import timing_timing from "timing/timing" /* 5123 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -25,11 +25,11 @@ export function useMediaItemSpoilerState(index) {
   let tmp5;
   let tmp9;
   const tmp = mediaItemHasSpoiler;
-  let obj = mediaItemHasSpoiler(8632);
+  let obj = mediaItemHasSpoiler(8222);
   mediaItemHasSpoiler = obj.useMediaItemHasSpoiler(index);
   const tmp4 = sharedValue(react.useState(mediaItemHasSpoiler), 2);
   [tmp5, dependencyMap] = tmp4;
-  const tmp6 = mediaItemHasSpoiler(1655);
+  const tmp6 = mediaItemHasSpoiler(1653);
   let num = 0;
   const useSharedValue = tmp6.useSharedValue;
   const obj2 = react;
@@ -52,7 +52,7 @@ export function useMediaItemSpoilerState(index) {
     }
     const items = [closure_4, , , ];
     const obj = { duration: 200, easing: native.STANDARD_EASING };
-    items[1] = _mod1708.scheduleOnRN;
+    items[1] = _mod1706.scheduleOnRN;
     items[2] = dependencyMap;
     items[3] = mediaItemHasSpoiler;
     let c0;
@@ -80,7 +80,7 @@ export function useMediaItemSpoilerState(index) {
   useMediaItemSpoilerStateTsx2.__workletHash = 9056847135964;
   useMediaItemSpoilerStateTsx2.__initData = tmp9;
   const items3 = [tmp5, ];
-  const tmpResult = tmp(1655);
+  const tmpResult = tmp(1653);
   items3[1] = tmpResult.useAnimatedStyle(useMediaItemSpoilerStateTsx2);
   return items3;
 }

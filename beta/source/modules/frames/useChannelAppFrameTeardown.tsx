@@ -1,17 +1,17 @@
-// Module ID: 19445
-// Function ID: 19446
+// Module ID: 18706
+// Function ID: 18707
 // Name: useChannelAppFrameTeardown
-// Dependencies: [19, 5155, 5238, 7019, 7020, 1072, 504, 7349, 2]
+// Dependencies: [19, 4762, 4845, 6623, 6624, 1071, 504, 6953, 2]
 // Exports: default
 
-// Module 19445 (useChannelAppFrameTeardown)
-import Constants from "Constants" /* 1072 */;
-import FramesConstants from "FramesConstants" /* 7020 */;
-import leaveFrame from "leaveFrame" /* 7349 */;
+// Module 18706 (useChannelAppFrameTeardown)
+import Constants from "Constants" /* 1071 */;
+import FramesConstants from "FramesConstants" /* 6624 */;
+import leaveFrame from "leaveFrame" /* 6953 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import PermissionStore from "PermissionStore" /* 5238 */;
-import FramesStore from "FramesStore" /* 7019 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
+import FramesStore from "FramesStore" /* 6623 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

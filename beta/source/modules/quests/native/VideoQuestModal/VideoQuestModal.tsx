@@ -1,20 +1,20 @@
-// Module ID: 17733
-// Function ID: 17734
+// Module ID: 16510
+// Function ID: 16511
 // Name: VideoQuestModal
-// Dependencies: [32, 19, 17, 17700, 1072, 21, 5306, 575, 17734, 15272, 8825, 17701, 11253, 1655, 5929, 1630, 17735, 7415, 17738, 17765, 10128, 10131, 15266, 6957, 12525, 2]
+// Dependencies: [32, 19, 17, 16473, 1071, 21, 4913, 575, 16511, 13763, 8421, 16474, 10598, 1653, 5514, 1628, 16512, 7017, 16515, 16542, 9955, 9958, 13757, 6561, 12043, 2]
 
-// Module 17733 (VideoQuestModal)
+// Module 16510 (VideoQuestModal)
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import AnalyticsActions from "AnalyticsActions" /* 8825 */;
-import QuestUtils from "QuestUtils" /* 10128 */;
-import applyOrientationLock2 from "applyOrientationLock" /* 15272 */;
-import QuestDockConstants from "QuestDockConstants" /* 17700 */;
+import Constants from "Constants" /* 1071 */;
+import AnalyticsActions from "AnalyticsActions" /* 8421 */;
+import QuestUtils from "QuestUtils" /* 9955 */;
+import applyOrientationLock2 from "applyOrientationLock" /* 13763 */;
+import QuestDockConstants from "QuestDockConstants" /* 16473 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let set;

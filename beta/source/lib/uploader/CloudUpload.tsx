@@ -1,27 +1,27 @@
-// Module ID: 8873
-// Function ID: 8874
+// Module ID: 8468
+// Function ID: 8469
 // Name: CloudUpload
-// Dependencies: [109, 5, 32, 5922, 1194, 6200, 1072, 3, 1285, 8874, 8850, 8877, 1089, 559, 7801, 12, 1480, 8879, 8898, 7802, 8899, 8900, 8904, 1242, 8878, 8846, 8905, 8906, 2121, 8991, 1256, 2]
+// Dependencies: [109, 5, 32, 5507, 1193, 5794, 1071, 3, 1284, 8469, 8445, 8472, 1088, 559, 7403, 12, 1478, 8474, 8493, 7404, 8494, 8495, 8499, 1241, 8473, 8442, 8500, 8501, 2119, 1255, 2]
 
-// Module 8873 (CloudUpload)
+// Module 8468 (CloudUpload)
 import LoggerDefault from "Logger" /* 3 */;
 import BackoffDefault from "Backoff" /* 559 */;
-import DurationsDefault from "Durations" /* 1089 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import HTTPUtils from "HTTPUtils" /* 1285 */;
-import InlineUploaderDefault from "InlineUploader" /* 7801 */;
-import UploadPlatform from "UploadPlatform" /* 8850 */;
+import DurationsDefault from "Durations" /* 1088 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import HTTPUtils from "HTTPUtils" /* 1284 */;
+import InlineUploaderDefault from "InlineUploader" /* 7403 */;
+import UploadPlatform from "UploadPlatform" /* 8445 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import DevSettingsStore from "DevSettingsStore" /* 5922 */;
-import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1194 */;
-import NetworkStore from "NetworkStore" /* 6200 */;
-import Constants from "Constants" /* 1072 */;
-import Upload from "Upload" /* 8874 */;
+import DevSettingsStore from "DevSettingsStore" /* 5507 */;
+import UnsyncedUserSettingsStore from "UnsyncedUserSettingsStore" /* 1193 */;
+import NetworkStore from "NetworkStore" /* 5794 */;
+import Constants from "Constants" /* 1071 */;
+import Upload from "Upload" /* 8469 */;
 import size_mod from "module_2" /* 2 */;
 
-let c0, c5, c8, closure_6, createAttachmentURL;
+let c0, c5, c8, c9, createAttachmentURL;
 
 let c10;
 let unpackModuleId;
@@ -233,13 +233,13 @@ class CloudUpload extends Upload {
         if (typeof obj.origin === "string") {
           origin = obj.origin;
         } else {
-          origin = tmp11(8874).UploadOrigin[obj.origin];
+          origin = tmp11(8469).UploadOrigin[obj.origin];
         }
         uploadAnalytics.origin = origin;
       }
       const self3 = this;
       const self4 = this;
-      const defaultHttpClient = new tmp11(8877).DefaultHttpClient();
+      const defaultHttpClient = new tmp11(8472).DefaultHttpClient();
       obj._uploadHttpClient = defaultHttpClient;
       obj._libdiscoreEnabled = false;
       return obj;
@@ -1649,144 +1649,38 @@ class CloudUpload extends Upload {
     })();
   }
   static tryConvertToWebP(file, arg1, id) {
-    let closure_0 = file;
-    let closure_1 = arg1;
-    let closure_2 = id;
-    return (async function(arg0, value) {
-      let ConversionFailureReason;
-      let compressTimeMs;
-      let hashTimeMs;
-      let self;
-      let sizeAfter;
-      let sizeBefore;
-      let unknown_error;
-      let conversionFailureReason = tmp;
-      const obj9 = unknown_error(hashTimeMs[26]);
-      const imageAttachmentMezzanineV2Config = obj9.getImageAttachmentMezzanineV2Config({ location: "CloudUpload.maybeConvertToWebP" });
-      const tmp87 = unknown_error;
-      if (!imageAttachmentMezzanineV2Config.enabled) {
-        const _HermesInternal4 = HermesInternal;
-        logger.warn("webp conversion skipped for " + closure_2 + ": not enabled");
-        return null;
-      }
-      if (null == unknown_error) {
-        self = closure_2;
-        const _HermesInternal6 = HermesInternal;
-        logger.warn("webp conversion skipped for " + closure_2 + ": no file");
-        return null;
-      }
-      if (null != imageAttachmentMezzanineV2Config.maxFileSizeBytes) {
-        if (unknown_error.size > imageAttachmentMezzanineV2Config.maxFileSizeBytes) {
-          self = closure_2;
-          const _HermesInternal5 = HermesInternal;
-          logger.warn("webp conversion skipped for " + closure_2 + ": too big");
-          let c9 = 3;
-          return { value: null, done: true };
-        }
-      }
-      if (compressTimeMs()) {
-        return null;
-      }
-      const _performance2 = performance;
-      closure_2 = performance.now();
-      value = { compressTimeMs: 0 };
-      await tmp87(hashTimeMs[28])(hashTimeMs[27], hashTimeMs.paths);
-      if (1 === c8) {
-        let c7 = 0;
-        let closure_7 = closure_6;
-        const _HermesInternal3 = HermesInternal;
-        logger.warn("webp conversion failed for " + closure_133_2 + ":", closure_7);
-        self = ConversionFailureReason == null;
-        let UNKNOWN_ERROR;
-        const tmp55 = value;
-        if (!self) {
-          UNKNOWN_ERROR = ConversionFailureReason.UNKNOWN_ERROR;
-        }
-        unknown_error = UNKNOWN_ERROR;
-        if (UNKNOWN_ERROR == null) {
-          unknown_error = "unknown_error";
-        }
-        tmp55.conversionFailureReason = unknown_error;
-      } else if (2 === c8) {
+    return (async (arg0, value) => {
+      if (c0 === 2) {
+        c0 = 3;
+        throw new TypeError("Generator functions may not be called on executing generators");
+      } else if (tmp2 === 3) {
         if (arg0 === 1) {
-          c9 = 3;
           throw value;
         } else if (arg0 === 2) {
-          c7 = 0;
-          c9 = 3;
-          const obj5 = { value, done: true };
-          return obj5;
+          const obj2 = { value, done: true };
+          return obj2;
         } else {
-          const _self = value;
-          ConversionFailureReason = _self.ConversionFailureReason;
-          c8 = 3;
-          c9 = 1;
-          const obj6 = { value: _self.maybeConvertToWebP(closure_133_0), done: false };
-          return obj6;
+          return { value: "HermesInternal", done: null };
         }
-      } else if (arg0 === 1) {
-        c9 = 3;
-        throw value;
-      } else if (arg0 === 2) {
-        c7 = 0;
-        c9 = 3;
-        const obj7 = { value, done: true };
-        return obj7;
       } else {
-        unknown_error = value;
-        if (closure_133_1()) {
-          c7 = 0;
-          c9 = 3;
-          return { value: null, done: true };
-        } else {
-          if (unknown_error.success) {
-            if (null != unknown_error.convertedBlob) {
-              const compressionRatio = unknown_error.compressionRatio;
-              ({ sizeBefore, sizeAfter } = unknown_error);
-              const _HermesInternal2 = HermesInternal;
-              logger.log("webp conversion worked for " + closure_133_2 + ": " + sizeBefore + " -> " + sizeAfter + " bytes (" + compressionRatio.toFixed(2) + "x)");
-              const _File = File;
-              const items = [unknown_error.convertedBlob];
-              const obj = { type: "image/webp", lastModified: closure_133_0.lastModified };
-              self = this;
-              const self2 = this;
-              file = new File(items, closure_133_0.name, obj);
-              value.convertedFile = file;
-              value.convertedMimeType = "image/webp";
-              hashTimeMs = unknown_error.hashTimeMs;
-              const tmp39 = value;
-              if (hashTimeMs == null) {
-                hashTimeMs = undefined;
-              }
-              tmp39.hashTimeMs = hashTimeMs;
-            }
-            c7 = 0;
+        try {
+          c0 = 2;
+          if (arg0 === 1) {
+            c0 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c0 = 3;
+            const obj = { value, done: true };
+            return obj;
+          } else {
+            c0 = 3;
+            return { value: null, done: true };
           }
-          const reason = unknown_error.reason;
-          let UNKNOWN_ERROR2 = reason;
-          if (reason == null) {
-            UNKNOWN_ERROR2 = ConversionFailureReason.UNKNOWN_ERROR;
-          }
-          conversionFailureReason = UNKNOWN_ERROR2;
-          self = logger;
-          const _HermesInternal = HermesInternal;
-          logger.log("webp conversion skipped for " + closure_133_2 + ": " + conversionFailureReason);
-          value.conversionFailureReason = conversionFailureReason;
+        } catch (tmp3) {
+          c0 = 3;
+          throw tmp3;
         }
       }
-      const _Math = Math;
-      const _performance = performance;
-      closure_6 = Math.round(performance.now() - closure_2);
-      self = unknown_error == null;
-      const tmp60 = value;
-      if (!self) {
-        compressTimeMs = unknown_error.compressTimeMs;
-      }
-      if (compressTimeMs == null) {
-        compressTimeMs = closure_6;
-      }
-      tmp60.compressTimeMs = compressTimeMs;
-      return value;
     })();
   }
   static tryConvertToJpeg(arg0) {
@@ -1829,7 +1723,7 @@ class CloudUpload extends Upload {
                   c3 = 1;
                   c4 = 2;
                   c5 = 1;
-                  const obj4 = { value: require("asyncRequire")(paths[29], paths.paths), done: false };
+                  const obj4 = { value: require("asyncRequire")(paths[27], paths.paths), done: false };
                   return obj4;
                 }
               }

@@ -1,13 +1,13 @@
-// Module ID: 18087
-// Function ID: 18088
+// Module ID: 16866
+// Function ID: 16867
 // Name: DisplayMediaUploadsSetting
-// Dependencies: [9202, 12408, 1113, 5131, 2]
+// Dependencies: [8712, 11937, 1112, 4738, 2]
 
-// Module 18087 (DisplayMediaUploadsSetting)
-import intl2 from "intl" /* 1113 */;
-import UserSettings from "UserSettings" /* 5131 */;
-import SettingsConstants from "SettingsConstants" /* 9202 */;
-import SettingBuilders from "SettingBuilders" /* 12408 */;
+// Module 16866 (DisplayMediaUploadsSetting)
+import intl2 from "intl" /* 1112 */;
+import UserSettings from "UserSettings" /* 4738 */;
+import SettingsConstants from "SettingsConstants" /* 8712 */;
+import SettingBuilders from "SettingBuilders" /* 11937 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;

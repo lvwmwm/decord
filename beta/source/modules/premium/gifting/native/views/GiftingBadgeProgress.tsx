@@ -1,19 +1,19 @@
-// Module ID: 11818
-// Function ID: 11819
+// Module ID: 13929
+// Function ID: 13930
 // Name: GiftingBadgeProgress
-// Dependencies: [19, 17, 8547, 21, 5306, 575, 11678, 11680, 5919, 1113, 2797, 2]
+// Dependencies: [19, 17, 8137, 21, 4913, 575, 9482, 9484, 5504, 1112, 2920, 2]
 // Exports: default
 
-// Module 11818 (GiftingBadgeProgress)
+// Module 13929 (GiftingBadgeProgress)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef2797 from "module_2797" /* 2797 */;
-import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8547 */;
-import GiftingBadgesUtils from "GiftingBadgesUtils" /* 11678 */;
-import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 11680 */;
+import _modDef2920 from "module_2920" /* 2920 */;
+import BadgeDirectoryStore from "BadgeDirectoryStore" /* 8137 */;
+import GiftingBadgesUtils from "GiftingBadgesUtils" /* 9482 */;
+import GiftingBadgeIconDefault from "GiftingBadgeIcon" /* 9484 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -87,15 +87,15 @@ export default function GiftingBadgeProgress(currentTier) {
   const obj5 = { style: tmp.content, children: items1 };
   if (tmp14) {
     const obj6 = { variant: "body-md/semibold", children: title };
-    tmp14 = hasOwnProperty(tmp2(5919).Text, obj6);
+    tmp14 = hasOwnProperty(tmp2(5504).Text, obj6);
   }
   items1 = [tmp14, hasOwnProperty(GiftingBadgeProgressBar, { percent: num2 }), ];
   const obj7 = { style: tmp.labels, children: tmp16Result };
   tmp16Result = null != nextTier;
   if (tmp16Result) {
-    const obj8 = { variant: "body-xs/normal", color: "text-muted", children: intl.format(_modDef2797.iIpfQe, obj9) };
-    const Text = tmp2(5919).Text;
-    intl = tmp2(1113).intl;
+    const obj8 = { variant: "body-xs/normal", color: "text-muted", children: intl.format(_modDef2920.iIpfQe, obj9) };
+    const Text = tmp2(5504).Text;
+    intl = tmp2(1112).intl;
     obj9 = { count: progress, threshold: tmp6 };
     tmp16Result = tmp16(Text, obj8);
   }

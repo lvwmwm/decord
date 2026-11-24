@@ -1,24 +1,24 @@
-// Module ID: 8004
-// Function ID: 8005
+// Module ID: 7607
+// Function ID: 7608
 // Name: FloatingActionButton
-// Dependencies: [19, 21, 5306, 575, 5932, 1655, 5929, 7448, 2]
+// Dependencies: [19, 21, 4913, 575, 5517, 1653, 5514, 7050, 2]
 // Exports: FloatingActionButton
 
-// Module 8004 (FloatingActionButton)
+// Module 7607 (FloatingActionButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import spring_spring from "spring/spring" /* 5929 */;
-import ButtonConstants from "ButtonConstants" /* 5932 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import spring_spring from "spring/spring" /* 5514 */;
+import ButtonConstants from "ButtonConstants" /* 5517 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
-const _modDef1655 = _mod1655;
+const _modDef1653 = _mod1653;
 let rect, tmp;
 
 let tmp3;
-const BaseIconButton2 = tmp3(7448);
+const BaseIconButton2 = tmp3(7050);
 const jsx = Fragment.jsx;
 const styles = createStyles.createStyles(() => {
   let obj2;
@@ -51,8 +51,8 @@ export function FloatingActionButton(icon) {
   let tmp4 = dependencyMap;
   let tmp3 = require;
   const items = [closure_7, , , , , ];
-  const useAnimatedStyle = _mod1655.useAnimatedStyle;
-  _mod1655;
+  const useAnimatedStyle = _mod1653.useAnimatedStyle;
+  _mod1653;
   items[1] = spring_spring.withSpring;
   items[2] = positionBottom;
   items[3] = 16;
@@ -86,7 +86,7 @@ export function FloatingActionButton(icon) {
   FloatingActionButtonNativeTsx1.__workletHash = 14949608342118;
   FloatingActionButtonNativeTsx1.__initData = tmp6;
   const animatedStyle = useAnimatedStyle(FloatingActionButtonNativeTsx1);
-  const View = _modDef1655.View;
+  const View = _modDef1653.View;
   const BaseIconButton = BaseIconButton2.BaseIconButton;
   const merged1 = Object.assign(merged);
   let cloneElementResult = icon;

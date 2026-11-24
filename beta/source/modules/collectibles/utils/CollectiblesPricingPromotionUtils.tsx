@@ -1,26 +1,26 @@
-// Module ID: 9446
-// Function ID: 9447
+// Module ID: 8962
+// Function ID: 8963
 // Name: CollectiblesPricingPromotionUtils
-// Dependencies: [7250, 9415, 1388, 1072, 8496, 9447, 9448, 504, 2174, 2]
-// Exports: useCollectiblesPricingPromotionForProduct
+// Dependencies: [6853, 8926, 1386, 1071, 8086, 8963, 8965, 8964, 504, 2173, 2]
+// Exports: getPricingPromotionForCollectiblesProduct, useCollectiblesPricingPromotionForProduct
 
-// Module 9446 (CollectiblesPricingPromotionUtils)
-import Constants from "Constants" /* 1072 */;
-import CollectiblesPromoPriceUtils from "CollectiblesPromoPriceUtils" /* 9447 */;
-import SKUPricesStore from "SKUPricesStore" /* 7250 */;
-import StorefrontPromotionStore from "StorefrontPromotionStore" /* 9415 */;
-import UserStore from "UserStore" /* 1388 */;
+// Module 8962 (CollectiblesPricingPromotionUtils)
+import Constants from "Constants" /* 1071 */;
+import SKUPricesStore from "SKUPricesStore" /* 6853 */;
+import StorefrontPromotionStore from "StorefrontPromotionStore" /* 8926 */;
+import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 
-function getPricingPromotionForCollectiblesProduct(pricingPromotionIds) {
-  let hasShopDiscount;
+let closure_6 = Constants.COLLECTIBLES_APPLICATION_ID;
+const collectibles_pricing_promotion_eligibility = "collectibles_pricing_promotion_eligibility";
+const result = size.fileFinishedImporting("modules/collectibles/utils/CollectiblesPricingPromotionUtils.tsx");
+
+export function getPricingPromotionForCollectiblesProduct(arg0) {
   let now;
-  let product;
+  let pricingPromotionIds;
   let promotions;
-  let storefrontPrices;
-  pricingPromotionIds = pricingPromotionIds.pricingPromotionIds;
-  ({ promotions, now } = pricingPromotionIds);
-  ({ product, hasShopDiscount, storefrontPrices } = pricingPromotionIds);
+  ({ product: require, hasShopDiscount: importDefault, storefrontPrices: dependencyMap, pricingPromotionIds } = arg0);
+  ({ promotions, now } = arg0);
   if (now === undefined) {
     const _Date = Date;
     now = Date.now();
@@ -31,49 +31,59 @@ function getPricingPromotionForCollectiblesProduct(pricingPromotionIds) {
     if (0 !== pricingPromotionIds.length) {
       tmp2 = null;
       if (null != promotions) {
-        let obj = pricingPromotionIds(8496);
-        const obj2 = { product, hasShopDiscount };
-        const productFiatPrice = obj.getProductFiatPrice(obj2);
-        let tmp6 = null;
-        const obj4 = { storefrontPrices, nonPromoPrice: productFiatPrice };
-        const obj3 = pricingPromotionIds(9447);
-        if (null != obj3.getCollectiblesPromoPrice(obj4)) {
-          let found = promotions.find((id) => {
-            let hasItem = pricingPromotionIds.includes(id.id);
-            if (hasItem) {
-              const obj = CollectiblesPromoPriceUtils;
-              hasItem = obj.isStorefrontPromotionActive(id, now);
-            }
-            return hasItem;
-          });
-          if (found == null) {
-            found = null;
+        let found = promotions.find((id) => {
+          let hasItem = pricingPromotionIds.includes(id.id);
+          if (hasItem) {
+            const obj = collectiblesStorefrontPricingIntegrationEnabled(dependencyMap[5]);
+            hasItem = obj.isStorefrontPromotionActive(id, now);
           }
-          tmp6 = found;
+          if (hasItem) {
+            const obj3 = { product, hasShopDiscount };
+            const obj2 = collectiblesStorefrontPricingIntegrationEnabled(dependencyMap[4]);
+            const productFiatPrice = obj2.getProductFiatPrice(obj3);
+            const obj5 = { storefrontPrices, nonPromoPrice: productFiatPrice };
+            const obj4 = collectiblesStorefrontPricingIntegrationEnabled(dependencyMap[5]);
+            let tmp14 = null != obj4.getCollectiblesPromoPrice(obj5);
+            const obj6 = collectiblesStorefrontPricingIntegrationEnabled(dependencyMap[6]);
+            let isOrbsBackPromotionResult = obj6.isOrbsBackPromotion(id);
+            if (isOrbsBackPromotionResult) {
+              const obj7 = collectiblesStorefrontPricingIntegrationEnabled(dependencyMap[6]);
+              isOrbsBackPromotionResult = obj7.isSequencedOfferRewardAvailable(id);
+            }
+            if (!tmp14) {
+              tmp14 = isOrbsBackPromotionResult;
+            }
+            hasItem = tmp14;
+          }
+          return hasItem;
+        });
+        if (found == null) {
+          found = null;
         }
-        tmp2 = tmp6;
+        tmp2 = found;
       }
     }
   }
   return tmp2;
 }
-let closure_6 = Constants.COLLECTIBLES_APPLICATION_ID;
-const collectibles_pricing_promotion_eligibility = "collectibles_pricing_promotion_eligibility";
-const result = size.fileFinishedImporting("modules/collectibles/utils/CollectiblesPricingPromotionUtils.tsx");
-
-export { getPricingPromotionForCollectiblesProduct };
 export function useCollectiblesPricingPromotionForProduct(skuId) {
+  let closure_129_0;
+  let closure_129_1;
+  let closure_129_2;
   let collectiblesStorefrontPricingIntegrationEnabled;
   let currentUser;
+  let now;
+  let pricingPromotionIds;
+  let promotions;
   let promotionsForApplication;
-  let obj = collectiblesStorefrontPricingIntegrationEnabled(9448);
+  let obj = collectiblesStorefrontPricingIntegrationEnabled(8964);
   collectiblesStorefrontPricingIntegrationEnabled = obj.useCollectiblesStorefrontPricingIntegrationEnabled(collectibles_pricing_promotion_eligibility);
   skuId = undefined;
   const tmp3 = collectibles_pricing_promotion_eligibility;
   if (skuId != null) {
     skuId = skuId.skuId;
   }
-  const tmpResult = collectiblesStorefrontPricingIntegrationEnabled(9447);
+  const tmpResult = collectiblesStorefrontPricingIntegrationEnabled(8963);
   const collectiblesStorefrontPrices = tmpResult.useCollectiblesStorefrontPrices(skuId, tmp3);
   const items = [SKUPricesStore];
   const tmpResult4 = collectiblesStorefrontPricingIntegrationEnabled(504);
@@ -93,8 +103,53 @@ export function useCollectiblesPricingPromotionForProduct(skuId) {
   if (collectiblesStorefrontPricingIntegrationEnabled) {
     tmp11 = null;
     if (null != skuId) {
-      const obj2 = { product: skuId, hasShopDiscount: tmp10, storefrontPrices: collectiblesStorefrontPrices, pricingPromotionIds: stateFromStores, promotions: stateFromStores1 };
-      tmp11 = getPricingPromotionForCollectiblesProduct(obj2);
+      let obj2 = { product: skuId, hasShopDiscount: tmp10, storefrontPrices: collectiblesStorefrontPrices, pricingPromotionIds: stateFromStores, promotions: stateFromStores1 };
+      ({ product: closure_129_0, hasShopDiscount: closure_129_1, storefrontPrices: closure_129_2, pricingPromotionIds } = obj2);
+      ({ promotions, now } = obj2);
+      if (now === undefined) {
+        const _Date = Date;
+        now = Date.now();
+      }
+      let tmp13 = null;
+      if (null != pricingPromotionIds) {
+        tmp13 = null;
+        if (0 !== pricingPromotionIds.length) {
+          tmp13 = null;
+          if (null != promotions) {
+            let found = promotions.find((id) => {
+              let hasItem = pricingPromotionIds.includes(id.id);
+              if (hasItem) {
+                const obj = collectiblesStorefrontPricingIntegrationEnabled(dependencyMap[5]);
+                hasItem = obj.isStorefrontPromotionActive(id, now);
+              }
+              if (hasItem) {
+                const obj3 = { product, hasShopDiscount };
+                const obj2 = collectiblesStorefrontPricingIntegrationEnabled(dependencyMap[4]);
+                const productFiatPrice = obj2.getProductFiatPrice(obj3);
+                const obj5 = { storefrontPrices, nonPromoPrice: productFiatPrice };
+                const obj4 = collectiblesStorefrontPricingIntegrationEnabled(dependencyMap[5]);
+                let tmp14 = null != obj4.getCollectiblesPromoPrice(obj5);
+                const obj6 = collectiblesStorefrontPricingIntegrationEnabled(dependencyMap[6]);
+                let isOrbsBackPromotionResult = obj6.isOrbsBackPromotion(id);
+                if (isOrbsBackPromotionResult) {
+                  const obj7 = collectiblesStorefrontPricingIntegrationEnabled(dependencyMap[6]);
+                  isOrbsBackPromotionResult = obj7.isSequencedOfferRewardAvailable(id);
+                }
+                if (!tmp14) {
+                  tmp14 = isOrbsBackPromotionResult;
+                }
+                hasItem = tmp14;
+              }
+              return hasItem;
+            });
+            if (found == null) {
+              found = null;
+            }
+            tmp13 = found;
+          }
+        }
+      }
+      tmp11 = tmp13;
     }
   }
   return tmp11;

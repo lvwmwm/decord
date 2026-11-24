@@ -1,16 +1,16 @@
-// Module ID: 18133
-// Function ID: 18134
+// Module ID: 16912
+// Function ID: 16913
 // Name: CommunityActivityAlertsSetting
-// Dependencies: [11013, 9202, 1072, 504, 1113, 12408, 18134, 18115, 2]
+// Dependencies: [11101, 8712, 1071, 504, 1112, 11937, 16913, 16894, 2]
 
-// Module 18133 (CommunityActivityAlertsSetting)
+// Module 16912 (CommunityActivityAlertsSetting)
 import get_initialized from "get initialized" /* 504 */;
-import Constants from "Constants" /* 1072 */;
-import intl2 from "intl" /* 1113 */;
-import SettingsConstants from "SettingsConstants" /* 9202 */;
-import MobileNotifSettings from "MobileNotifSettings" /* 18115 */;
-import GuildIncidentsStore from "GuildIncidentsStore" /* 11013 */;
-import SettingBuilders_mod from "SettingBuilders" /* 12408 */;
+import Constants from "Constants" /* 1071 */;
+import intl2 from "intl" /* 1112 */;
+import SettingsConstants from "SettingsConstants" /* 8712 */;
+import MobileNotifSettings from "MobileNotifSettings" /* 16894 */;
+import GuildIncidentsStore from "GuildIncidentsStore" /* 11101 */;
+import SettingBuilders_mod from "SettingBuilders" /* 11937 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

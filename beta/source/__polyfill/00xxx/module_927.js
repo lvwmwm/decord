@@ -252,9 +252,9 @@ function makeDOMEventHandler(arg0) {
 }
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export function addClickKeypressInstrumentationHandler(arg0) {
+export function addClickKeypressInstrumentationHandler(errorCallback) {
   const obj = _mod681;
-  obj.addHandler("dom", arg0);
+  obj.addHandler("dom", errorCallback);
   const obj2 = _mod681;
   obj2.maybeInstrument("dom", instrumentDOM);
 }

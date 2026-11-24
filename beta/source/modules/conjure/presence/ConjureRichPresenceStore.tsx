@@ -1,26 +1,26 @@
-// Module ID: 7320
-// Function ID: 7321
+// Module ID: 6924
+// Function ID: 6925
 // Name: ConjureRichPresenceStore
-// Dependencies: [32, 5, 109, 502, 7041, 5209, 5339, 7321, 7327, 7017, 5162, 7328, 7236, 7322, 6059, 7329, 2121, 7053, 7365, 504, 572, 2]
+// Dependencies: [32, 5, 109, 502, 6645, 4816, 4946, 6925, 6931, 6621, 4769, 6932, 6838, 6926, 5652, 6933, 2119, 6657, 6967, 504, 572, 2]
 
-// Module 7320 (ConjureRichPresenceStore)
+// Module 6924 (ConjureRichPresenceStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ChannelConstants from "ChannelConstants" /* 5162 */;
-import ActivityTypes from "ActivityTypes" /* 6059 */;
-import ConjureGuildExperiment from "ConjureGuildExperiment" /* 7053 */;
-import conjureServerProject from "conjureServerProject" /* 7236 */;
-import conjurePresenceActivity from "conjurePresenceActivity" /* 7328 */;
+import ChannelConstants from "ChannelConstants" /* 4769 */;
+import ActivityTypes from "ActivityTypes" /* 5652 */;
+import ConjureGuildExperiment from "ConjureGuildExperiment" /* 6657 */;
+import conjureServerProject from "conjureServerProject" /* 6838 */;
+import conjurePresenceActivity from "conjurePresenceActivity" /* 6932 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import IdleStore from "IdleStore" /* 7041 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5339 */;
-import ConjureChatStore from "ConjureChatStore" /* 7321 */;
-import ConjurePagesStore from "ConjurePagesStore" /* 7327 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 7017 */;
+import IdleStore from "IdleStore" /* 6645 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4816 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4946 */;
+import ConjureChatStore from "ConjureChatStore" /* 6925 */;
+import ConjurePagesStore from "ConjurePagesStore" /* 6931 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6621 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -33,7 +33,7 @@ function updateActivity(withGracePeriod) {
   let obj8;
   let timeout;
   let timeout2;
-  const f93912 = () => {
+  const f89964 = () => {
     let found;
     let timeout = null;
     if (null != _null) {
@@ -51,7 +51,7 @@ function updateActivity(withGracePeriod) {
         timeout = null;
       }
       const _setTimeout = setTimeout;
-      timeout = setTimeout(f93912, closure_1_14);
+      timeout = setTimeout(f89964, closure_1_14);
       conjureRichPresenceStore.emitChange();
     }
   };
@@ -113,7 +113,7 @@ function updateActivity(withGracePeriod) {
         let selectedProjectId = null;
         if (null != guildId) {
           selectedProjectId = null;
-          if (SelectedChannelStore.getChannelId() === StaticChannelRoute.CONJURE) {
+          if (SelectedChannelStore.getChannelId() === StaticChannelRoute.CONJURE_PROJECT) {
             selectedProjectId = obj11.getSelectedProjectId(guildId);
           }
         }
@@ -185,9 +185,9 @@ function updateActivity(withGracePeriod) {
         tmp18 = null;
         const obj2 = conjureServerProject;
         const tmp19 = require;
-        if (null != obj2.conjureServerAppGuildId(project)) {
+        if (null != obj2.conjureServerProjectGuildId(project)) {
           const messages = ConjureChatStore.getMessages(tmp11);
-          const tmp19Result = tmp19(7322);
+          const tmp19Result = tmp19(6926);
           const findOpenTurnResult = tmp19Result.findOpenTurn(messages);
           tmp18 = null;
           if (null != findOpenTurnResult) {
@@ -276,7 +276,7 @@ function updateActivity(withGracePeriod) {
         timeout2 = null;
       }
       let _setTimeout = setTimeout;
-      timeout2 = setTimeout(f93912, c14);
+      timeout2 = setTimeout(f89964, c14);
       flag = true;
     }
   }

@@ -1,13 +1,13 @@
-// Module ID: 11682
-// Function ID: 11683
+// Module ID: 9493
+// Function ID: 9494
 // Name: usePremiumProductPricingString
-// Dependencies: [1390, 10956, 2174, 2]
+// Dependencies: [1388, 9494, 2173, 2]
 // Exports: default
 
-// Module 11682 (usePremiumProductPricingString)
-import PremiumConstants from "PremiumConstants" /* 1390 */;
-import PremiumUtils from "PremiumUtils" /* 2174 */;
-import usePremiumPlanPriceDefault from "usePremiumPlanPrice" /* 10956 */;
+// Module 9493 (usePremiumProductPricingString)
+import PremiumConstants from "PremiumConstants" /* 1388 */;
+import PremiumUtils from "PremiumUtils" /* 2173 */;
+import usePremiumPlanPriceDefault from "usePremiumPlanPrice" /* 9494 */;
 import size from "module_2" /* 2 */;
 
 const PRICE_PLACEHOLDER = PremiumConstants.PRICE_PLACEHOLDER;

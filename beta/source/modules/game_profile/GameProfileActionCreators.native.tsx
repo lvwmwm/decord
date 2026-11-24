@@ -1,13 +1,13 @@
-// Module ID: 10281
-// Function ID: 10282
+// Module ID: 9769
+// Function ID: 9770
 // Name: GameProfileActionCreators
-// Dependencies: [38, 5542, 10282, 2121, 572, 2]
+// Dependencies: [38, 5127, 9770, 2119, 572, 2]
 
-// Module 10281 (GameProfileActionCreators)
+// Module 9769 (GameProfileActionCreators)
 import _modDef38 from "module_38" /* 38 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import asyncRequire from "asyncRequire" /* 2119 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
 import size from "module_2" /* 2 */;
 
 let obj = {
@@ -24,7 +24,7 @@ let obj = {
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     ActionSheetActionCreatorsDefault;
     const obj = { gameId, source, sourceUserId };
-    const tmp4 = asyncRequire(10282, dependencyMap.paths);
+    const tmp4 = asyncRequire(9770, dependencyMap.paths);
     openLazy(tmp4, "game-profile-" + gameId, obj, stackingBehavior);
   },
   returnToGameProfile(gameId) {
@@ -35,7 +35,7 @@ let obj = {
     ({ source, initialScrollOffset, initialTab } = gameId);
     const openLazy = ActionSheetActionCreatorsDefault.openLazy;
     ActionSheetActionCreatorsDefault;
-    const tmp2 = asyncRequire(10282, dependencyMap.paths);
+    const tmp2 = asyncRequire(9770, dependencyMap.paths);
     openLazy(tmp2, "game-profile-" + gameId, { gameId, source, initialScrollOffset, initialTab });
   },
   setGameProfilePendingReturn(arg0) {

@@ -1,17 +1,17 @@
-// Module ID: 9112
-// Function ID: 9113
+// Module ID: 8622
+// Function ID: 8623
 // Name: ForumActionCreators
-// Dependencies: [5, 1072, 6258, 1113, 572, 1285, 8864, 9113, 9114, 9115, 8866, 2]
+// Dependencies: [5, 1071, 5860, 1112, 572, 1284, 8459, 8623, 8624, 8625, 8461, 2]
 
-// Module 9112 (ForumActionCreators)
+// Module 8622 (ForumActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import intl3 from "intl" /* 1113 */;
-import HTTPUtils from "HTTPUtils" /* 1285 */;
-import AnalyticsFeedItemSeenActionCreators from "AnalyticsFeedItemSeenActionCreators" /* 9113 */;
-import ForumChannelSeenManager from "ForumChannelSeenManager" /* 9114 */;
-import AnalyticsFeedItemSeenManager from "AnalyticsFeedItemSeenManager" /* 9115 */;
+import intl3 from "intl" /* 1112 */;
+import HTTPUtils from "HTTPUtils" /* 1284 */;
+import AnalyticsFeedItemSeenActionCreators from "AnalyticsFeedItemSeenActionCreators" /* 8623 */;
+import ForumChannelSeenManager from "ForumChannelSeenManager" /* 8624 */;
+import AnalyticsFeedItemSeenManager from "AnalyticsFeedItemSeenManager" /* 8625 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
-import Constants from "Constants" /* 1072 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 let c3, c4, errors, title;
@@ -112,9 +112,9 @@ body = {
     }
     tmpResult = HTTPUtils;
     let closure_0 = put(request);
-    const intl = tmp(1113).intl;
+    const intl = tmp(1112).intl;
     const stringResult = intl.string(intl3.t.T8sBLJ);
-    const intl2 = tmp(1113).intl;
+    const intl2 = tmp(1112).intl;
     withErrorHandling(() => closure_0, stringResult, intl2.string(intl3.t.imcb5u));
   },
   deleteForumTag(channelId, id) {

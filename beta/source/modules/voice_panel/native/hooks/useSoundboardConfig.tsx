@@ -1,15 +1,15 @@
-// Module ID: 19212
-// Function ID: 19213
+// Module ID: 18014
+// Function ID: 18015
 // Name: useSoundboardConfig
-// Dependencies: [19, 5155, 2133, 504, 19213, 13030, 1113, 2]
+// Dependencies: [19, 4762, 2131, 504, 18015, 10991, 1112, 2]
 // Exports: default
 
-// Module 19212 (useSoundboardConfig)
-import canChannelUseSoundboardDefault from "canChannelUseSoundboard" /* 13030 */;
-import soundboard_SoundboardActionCreators from "soundboard/SoundboardActionCreators" /* 19213 */;
+// Module 18014 (useSoundboardConfig)
+import canChannelUseSoundboardDefault from "canChannelUseSoundboard" /* 10991 */;
+import soundboard_SoundboardActionCreators from "soundboard/SoundboardActionCreators" /* 18015 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import MediaEngineStore from "MediaEngineStore" /* 2133 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import MediaEngineStore from "MediaEngineStore" /* 2131 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -22,7 +22,7 @@ export default function useSoundboardConfig(arg0, analyticsSource) {
   let closure_0;
   let deaf;
   let stringResult;
-  const f119462 = () => {
+  const f113483 = () => {
     const tmp = canChannelUseSoundboardDefault;
     return tmp(ChannelStore.getChannel(closure_0));
   };
@@ -59,12 +59,12 @@ export default function useSoundboardConfig(arg0, analyticsSource) {
         const result = showSoundboardSoundPickerActionSheet(obj);
       }
     }, items1);
-    const obj2 = { visible: flag, handlePress: callback, disabled: stateFromStores || !react.useMemo(f119462, items2), disabledAccessibilityHint: stringResult };
+    const obj2 = { visible: flag, handlePress: callback, disabled: stateFromStores || !react.useMemo(f113483, items2), disabledAccessibilityHint: stringResult };
     stringResult = undefined;
-    stateFromStores || !react.useMemo(f119462, items2);
+    stateFromStores || !react.useMemo(f113483, items2);
     if (stateFromStores) {
-      const intl = tmp(1113).intl;
-      stringResult = intl.string(tmp(1113).t.X1lQli);
+      const intl = tmp(1112).intl;
+      stringResult = intl.string(tmp(1112).t.X1lQli);
     }
     return obj2;
   }

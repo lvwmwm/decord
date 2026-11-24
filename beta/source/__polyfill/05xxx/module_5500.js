@@ -1,55 +1,216 @@
 // Module ID: 5500
 // Function ID: 5501
-// Dependencies: [19, 5501, 5502]
-// Exports: usePortal
+// Dependencies: [109, 41, 42, 93, 95, 98, 19, 17, 21, 5501, 5502]
 
 // Module 5500
-import ACTIONS from "ACTIONS" /* 5502 */;
+import Fragment from "Fragment" /* 21 */;
+import _mod5501 from "module_5501" /* 5501 */;
+import react_native from "react-native" /* 5502 */;
+import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
+import _classCallCheck from "_classCallCheck" /* 41 */;
+import _createClass from "_createClass" /* 42 */;
+import metroRequire from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 import react from "react" /* 19 */;
+import react_native2 from "react-native" /* 17 */;
 
-let dependencyMap;
+const _modDef5501 = _mod5501;
 
-let c2;
-let c3;
-({ useCallback: c2, useContext: c3 } = react);
+let c9;
+let metroImportAll;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
-export const usePortal = function() {
-  let closure_1;
-  let str = arg0;
-  if (arg0 === undefined) {
-    str = "root";
-  }
-  const tmp = closure_3(str(5501).PortalDispatchContext);
-  dependencyMap = tmp;
-  if (null === tmp) {
-    const _Error = Error;
-    const self = this;
-    const self2 = this;
-    const error = new Error("'PortalDispatchContext' cannot be null, please add 'PortalProvider' to the root component.");
-    throw error;
-  } else {
-    const tmp3 = closure_2(() => {
-      const obj = { type: ACTIONS.ACTIONS.REGISTER_HOST, hostName: str };
-      closure_1(obj);
-    }, []);
-    const tmp4 = closure_2(() => {
-      const obj = { type: ACTIONS.ACTIONS.DEREGISTER_HOST, hostName: str };
-      closure_1(obj);
-    }, []);
-    const tmp5 = closure_2((portalName, node) => {
-      const obj = { type: ACTIONS.ACTIONS.ADD_UPDATE_PORTAL, hostName: str, portalName, node };
-      closure_1(obj);
-    }, []);
-    let obj = {
-      registerHost: tmp3,
-      deregisterHost: tmp4,
-      addPortal: tmp5,
-      updatePortal: tmp5,
-      removePortal: closure_2((portalName) => {
-          const obj = { type: ACTIONS.ACTIONS.REMOVE_PORTAL, hostName: str, portalName };
-          closure_1(obj);
-        }, [])
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
     };
-    return obj;
+    return _isNativeReflectConstruct();
+  } catch (err) {
+  }
+}
+let closure_3 = ["style", "source", "autoPlay", "duration", "textFiltersAndroid", "textFiltersIOS", "resizeMode", "containerStyle"];
+({ View: metroImportAll, processColor: c9 } = react_native2);
+const jsx = Fragment.jsx;
+let obj = { source: "sa", progress: null, speed: true, loop: false, autoPlay: false, enableMergePathsAndroidForKitKatAndAbove: false, enableSafeModeAndroid: true, cacheComposition: false, useNativeLooping: "contain", resizeMode: null, colorFilters: [], textFiltersAndroid: [], textFiltersIOS: [] };
+class LottieView {
+  constructor(arg0) {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, LottieView);
+    const items = [arg0];
+    const obj = _getPrototypeOf(LottieView);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = metroRequire;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, items, tmp2(self).constructor);
+    } else {
+      constructResult = obj.apply(self, items);
+    }
+    const tmp3Result = tmp3(self, constructResult);
+    let closure_0 = tmp3Result;
+    tmp3Result.onAnimationFinish = (nativeEvent) => {
+      const props = closure_0.props;
+      const onAnimationFinish = props.onAnimationFinish;
+      if (onAnimationFinish != null) {
+        onAnimationFinish(nativeEvent.nativeEvent.isCancelled);
+      }
+    };
+    tmp3Result.onAnimationFailure = (nativeEvent) => {
+      const props = closure_0.props;
+      const onAnimationFailure = props.onAnimationFailure;
+      if (onAnimationFailure != null) {
+        onAnimationFailure(nativeEvent.nativeEvent.error);
+      }
+    };
+    tmp3Result.onAnimationLoaded = () => {
+      const props = closure_0.props;
+      const onAnimationLoaded = props.onAnimationLoaded;
+      if (onAnimationLoaded != null) {
+        onAnimationLoaded();
+      }
+    };
+    const play = tmp3Result.play;
+    tmp3Result.play = play.bind(tmp3Result);
+    const reset = tmp3Result.reset;
+    tmp3Result.reset = reset.bind(tmp3Result);
+    const pause = tmp3Result.pause;
+    tmp3Result.pause = pause.bind(tmp3Result);
+    const resume = tmp3Result.resume;
+    tmp3Result.resume = resume.bind(tmp3Result);
+    let onAnimationFinish = tmp3Result.onAnimationFinish;
+    tmp3Result.onAnimationFinish = onAnimationFinish.bind(tmp3Result);
+    const captureRef = tmp3Result.captureRef;
+    tmp3Result.captureRef = captureRef.bind(tmp3Result);
+    return tmp3Result;
+  }
+}
+_inherits(LottieView, react.PureComponent);
+const entry = {
+  key: "play",
+  value: function play(arg0, arg1) {
+    let num = arg0;
+    const Commands = _mod5501.Commands;
+    const play = Commands.play;
+    const lottieAnimationViewRef = this.lottieAnimationViewRef;
+    if (arg0 == null) {
+      num = -1;
+    }
+    let num2 = arg1;
+    if (arg1 == null) {
+      num2 = -1;
+    }
+    play(lottieAnimationViewRef, num, num2);
   }
 };
+let items = [
+  entry,
+  {
+    key: "reset",
+    value: function reset() {
+      const Commands = _mod5501.Commands;
+      Commands.reset(this.lottieAnimationViewRef);
+    }
+  },
+  {
+    key: "pause",
+    value: function pause() {
+      const Commands = _mod5501.Commands;
+      Commands.pause(this.lottieAnimationViewRef);
+    }
+  },
+  {
+    key: "resume",
+    value: function resume() {
+      const Commands = _mod5501.Commands;
+      Commands.resume(this.lottieAnimationViewRef);
+    }
+  },
+  {
+    key: "captureRef",
+    value: function captureRef(lottieAnimationViewRef) {
+      if (null !== lottieAnimationViewRef) {
+        const self = this;
+        this.lottieAnimationViewRef = lottieAnimationViewRef;
+        if (true === this.props.autoPlay) {
+          self.play();
+        }
+      }
+    }
+  },
+  {
+    key: "renderLottieView",
+    value: function renderLottieView() {
+      let autoPlay;
+      let containerStyle;
+      let duration;
+      let resizeMode;
+      let source;
+      let style;
+      let textFiltersAndroid;
+      let textFiltersIOS;
+      const self = this;
+      const props = this.props;
+      ({ source, duration, containerStyle } = props);
+      ({ style, autoPlay, textFiltersAndroid, textFiltersIOS, resizeMode } = props);
+      const tmp = _objectWithoutProperties(props, closure_3);
+      let obj = react_native;
+      const parsePossibleSourcesResult = obj.parsePossibleSources(source);
+      if (duration) {
+        if (parsePossibleSourcesResult.sourceJson) {
+          let speed;
+          if (source.fr) {
+            const _Math = Math;
+            speed = Math.round(source.op / source.fr * 1000 / duration);
+          }
+          const colorFilters = self.props.colorFilters;
+          let mapped;
+          if (colorFilters != null) {
+            mapped = colorFilters.map((color) => {
+              const obj = { color: closure_1_9(color.color) };
+              const merged = Object.assign(color);
+              return obj;
+            });
+          }
+          _modDef5501;
+          let merged = Object.assign(tmp);
+          ({ onAnimationFinish: obj2.onAnimationFinish, onAnimationFailure: obj2.onAnimationFailure, onAnimationLoaded: obj2.onAnimationLoaded } = self);
+          const merged1 = Object.assign(parsePossibleSourcesResult);
+          return <tmp9 ref={self.captureRef} colorFilters={mapped} textFiltersAndroid={textFiltersAndroid} textFiltersIOS={textFiltersIOS} speed={speed} style={style} autoPlay={autoPlay} resizeMode={resizeMode} />;
+        }
+      }
+      speed = self.props.speed;
+    }
+  },
+  {
+    key: "render",
+    value: function render() {
+      let containerStyle;
+      let renderLottieViewResult;
+      let source;
+      const self = this;
+      ({ source, containerStyle } = this.props);
+      if (null == source) {
+        const _console = console;
+        console.warn("LottieView needs `source` parameter, provided value for source:", source);
+        renderLottieViewResult = null;
+      } else if (containerStyle) {
+        renderLottieViewResult = <metroImportAll style={containerStyle} collapsable={false}>{self.renderLottieView()}</metroImportAll>;
+      } else {
+        renderLottieViewResult = self.renderLottieView();
+      }
+      return renderLottieViewResult;
+    }
+  }
+];
+const importDefaultResultResult = _createClass(LottieView, items);
+importDefaultResultResult.defaultProps = obj;
+const LottieView_export = importDefaultResultResult;
+
+export { LottieView_export as LottieView };

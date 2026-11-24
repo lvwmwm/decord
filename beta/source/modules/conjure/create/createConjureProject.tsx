@@ -1,15 +1,15 @@
-// Module ID: 13975
-// Function ID: 13976
+// Module ID: 18640
+// Function ID: 18641
 // Name: createConjureProject
-// Dependencies: [5, 7365, 7329, 13976, 2]
+// Dependencies: [5, 6967, 6933, 18641, 2]
 // Exports: default
 
-// Module 13975 (createConjureProject)
+// Module 18640 (createConjureProject)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 7365 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 6967 */;
 import size from "module_2" /* 2 */;
 
-let closure_1, closure_2, guild_id, templateId;
+let closure_1, guild_id, templateId;
 
 let c3;
 let closure_4;
@@ -19,10 +19,8 @@ let obj = function _createConjureProject() {
     let c5 = 0;
     const iter = (async (arg0, value) => {
       let c0;
+      let c1;
       let c2;
-      let c3;
-      let installScope;
-      let obj3;
       if (c5 === 2) {
         c5 = 3;
         throw new TypeError("Generator functions may not be called on executing generators");
@@ -45,18 +43,11 @@ let obj = function _createConjureProject() {
               c5 = 3;
               return { value, done: true };
             } else {
-              let closure_3 = tmp4;
-              closure_2 = tmp;
+              let closure_2 = tmp;
               guild_id = undefined;
-              installScope = undefined;
-              c2 = undefined;
+              c1 = undefined;
               templateId = undefined;
-              ({ guildId: c0, installScope } = closure_0);
-              const tmp17 = closure_0;
-              if (installScope === undefined) {
-                installScope = "user";
-              }
-              ({ modelSettings: c2, templateId: c3 } = tmp17);
+              ({ guildId: c0, modelSettings: c1, templateId: c2 } = closure_0);
               value = undefined;
               c4 = 1;
               c5 = 1;
@@ -70,11 +61,18 @@ let obj = function _createConjureProject() {
               c5 = 3;
               return { value, done: true };
             } else {
+              let obj6;
+              const createProject = closure_131_0(closure_131_1[2]).createProject;
+              closure_131_0(closure_131_1[2]);
+              if (null != guild_id) {
+                obj6 = { guild_id };
+                const obj5 = { guild_id };
+              } else {
+                obj6 = {};
+              }
               c4 = 2;
               c5 = 1;
-              const obj6 = { guild_id, install_scope: installScope };
-              const obj7 = { value: obj3.createProject(obj6), done: false };
-              obj3 = closure_131_0(closure_131_1[2]);
+              const obj7 = { value: createProject(obj6), done: false };
               return obj7;
             }
           } else if (arg0 === 1) {
@@ -86,19 +84,19 @@ let obj = function _createConjureProject() {
           } else {
             const obj9 = { templateId };
             closure_131_3(value, obj9);
-            closure_1 = c2;
-            const tmp28 = closure_131_4;
-            const tmp29 = value;
-            if (c2 == null) {
+            closure_1 = c1;
+            const tmp31 = closure_131_4;
+            const tmp32 = value;
+            if (c1 == null) {
               closure_1 = closure_131_0(closure_131_1[3]).CONJURE_DEFAULT_TIER_SETTINGS;
             }
-            tmp28(tmp29, closure_1);
+            tmp31(tmp32, closure_1);
             c5 = 3;
             return { value, done: true };
           }
-        } catch (tmp18) {
+        } catch (tmp21) {
           c5 = 3;
-          throw tmp18;
+          throw tmp21;
         }
       }
     })();

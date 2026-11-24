@@ -1,23 +1,23 @@
-// Module ID: 10146
-// Function ID: 10147
+// Module ID: 9972
+// Function ID: 9973
 // Name: AssetUtils
-// Dependencies: [6954, 1072, 10147, 10148, 10149, 10150, 10151, 8813, 10158, 10159, 6962, 1381, 2024, 2]
+// Dependencies: [6558, 1071, 9973, 9974, 9975, 9976, 9977, 8409, 9984, 9985, 6566, 1379, 2022, 2]
 // Exports: buildUrl, getDevicePixelScaledDimensions, getQuestAsset, getScaledFirstFrameImageUrl, getScaledImageUrl, resolveAdCreativeCdnUrl, resolveOptionalAdCreativeCdnUrl
 
-// Module 10146 (AssetUtils)
-import URLUtilsDefault from "URLUtils" /* 1381 */;
-import react_nativeDefault from "react-native" /* 2024 */;
-import FirstPartyQuestTaskTypes2 from "FirstPartyQuestTaskTypes" /* 6962 */;
-import QuestRewardTypes from "QuestRewardTypes" /* 8813 */;
-import _modDef10147 from "module_10147" /* 10147 */;
-import _modDef10148 from "module_10148" /* 10148 */;
-import _modDef10149 from "module_10149" /* 10149 */;
-import _modDef10150 from "module_10150" /* 10150 */;
-import QuestRewardUtils from "QuestRewardUtils" /* 10151 */;
-import _modDef10158 from "module_10158" /* 10158 */;
-import _modDef10159 from "module_10159" /* 10159 */;
-import QuestConstants from "QuestConstants" /* 6954 */;
-import Constants from "Constants" /* 1072 */;
+// Module 9972 (AssetUtils)
+import URLUtilsDefault from "URLUtils" /* 1379 */;
+import react_nativeDefault from "react-native" /* 2022 */;
+import FirstPartyQuestTaskTypes2 from "FirstPartyQuestTaskTypes" /* 6566 */;
+import QuestRewardTypes from "QuestRewardTypes" /* 8409 */;
+import _modDef9973 from "module_9973" /* 9973 */;
+import _modDef9974 from "module_9974" /* 9974 */;
+import _modDef9975 from "module_9975" /* 9975 */;
+import _modDef9976 from "module_9976" /* 9976 */;
+import QuestRewardUtils from "QuestRewardUtils" /* 9977 */;
+import _modDef9984 from "module_9984" /* 9984 */;
+import _modDef9985 from "module_9985" /* 9985 */;
+import QuestConstants from "QuestConstants" /* 6558 */;
+import Constants from "Constants" /* 1071 */;
 import size_mod from "module_2" /* 2 */;
 
 let TIER_1;
@@ -59,13 +59,13 @@ function resolveAsset(id, questBarHeroVideo, arg2) {
   hasItem = null != tmp15 && items.includes(tmp15);
   return obj;
 }
-function getMimetype(videoPreview) {
-  if (null == videoPreview) {
+function getMimetype(c0) {
+  if (null == c0) {
     return null;
   } else {
-    const startsWithResult = videoPreview.startsWith("blob:");
+    const startsWithResult = c0.startsWith("blob:");
     const obj = URLUtilsDefault;
-    const toURLSafeResult = obj.toURLSafe(videoPreview);
+    const toURLSafeResult = obj.toURLSafe(c0);
     if (startsWithResult) {
       let value;
       if (toURLSafeResult != null) {
@@ -88,7 +88,7 @@ function getMimetype(videoPreview) {
         }
       }
       if (formatted == null) {
-        const match = re7.exec(videoPreview);
+        const match = re7.exec(c0);
         let formatted1;
         if (match != null) {
           if (match[1] != null) {
@@ -226,7 +226,7 @@ let obj3 = { VIDEO: "url", THUMBNAIL: "thumbnail", CAPTION: "caption", TRANSCRIP
 let obj4 = { TIER_1: 1, [1]: "TIER_1", TIER_2: 2, [2]: "TIER_2", TIER_3: 3, [3]: "TIER_3", TIER_4: 4, [4]: "TIER_4" };
 let obj5 = { variant: obj2.VIDEO, property: obj3.VIDEO };
 let closure_11 = { [QuestAssetType.VIDEO_PLAYER_VIDEO]: obj5, [QuestAssetType.VIDEO_PLAYER_VIDEO_LOW_RES]: { variant: obj2.VIDEO_LOW_RES, property: obj3.VIDEO }, [QuestAssetType.VIDEO_PLAYER_VIDEO_HLS]: { variant: obj2.VIDEO_HLS, property: obj3.VIDEO }, [QuestAssetType.VIDEO_PLAYER_THUMBNAIL]: { variant: obj2.VIDEO, property: obj3.THUMBNAIL }, [QuestAssetType.VIDEO_PLAYER_CAPTION]: { variant: obj2.VIDEO, property: obj3.CAPTION }, [QuestAssetType.VIDEO_PLAYER_TRANSCRIPT]: { variant: obj2.VIDEO, property: obj3.TRANSCRIPT } };
-const obj11 = { [TIER_1]: _modDef10147, [TIER_2]: _modDef10148, [TIER_3]: _modDef10149, [TIER_4]: _modDef10150 };
+const obj11 = { [TIER_1]: _modDef9973, [TIER_2]: _modDef9974, [TIER_3]: _modDef9975, [TIER_4]: _modDef9976 };
 ({ TIER_1, TIER_2, TIER_3, TIER_4 } = obj4);
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/quests/lib/AssetUtils.tsx");
@@ -289,10 +289,10 @@ export function getQuestAsset(quest, GAME_TILE, DARK, flag, arg4) {
         obj5 = { url: tmp29, mimetype: "video/webm", isAnimated: true };
         const obj3 = { url: tmp29, mimetype: "video/webm", isAnimated: true };
       } else if (flag) {
-        obj5 = { url: _modDef10158, mimetype: "video/mp4", isAnimated: true };
-        const obj4 = { url: _modDef10158, mimetype: "video/mp4", isAnimated: true };
+        obj5 = { url: _modDef9984, mimetype: "video/mp4", isAnimated: true };
+        const obj4 = { url: _modDef9984, mimetype: "video/mp4", isAnimated: true };
       } else {
-        obj5 = { url: _modDef10159, mimetype: "video/webm", isAnimated: true };
+        obj5 = { url: _modDef9985, mimetype: "video/webm", isAnimated: true };
       }
       return obj5;
     } else {

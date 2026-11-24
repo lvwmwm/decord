@@ -1,15 +1,15 @@
-// Module ID: 16440
-// Function ID: 16441
+// Module ID: 15212
+// Function ID: 15213
 // Name: Easing/Easing
-// Dependencies: [1655, 2]
+// Dependencies: [1653, 2]
 
-// Module 16440 (Easing/Easing)
-import _mod1655 from "module_1655" /* 1655 */;
+// Module 15212 (Easing/Easing)
+import _mod1653 from "module_1653" /* 1653 */;
 import size from "module_2" /* 2 */;
 
-const Easing = _mod1655.Easing;
+const Easing = _mod1653.Easing;
 const bezierResult = Easing.bezier(0.4, 0, 0.2, 1);
-const Easing2 = _mod1655.Easing;
+const Easing2 = _mod1653.Easing;
 const bezierResult1 = Easing2.bezier(0, 0, 0.2, 1);
 const result = size.fileFinishedImporting("design/void/Easing/native/Easing.tsx");
 

@@ -1,13 +1,13 @@
-// Module ID: 5535
-// Function ID: 5536
+// Module ID: 5120
+// Function ID: 5121
 // Name: SavedCustomThemeStore
-// Dependencies: [1195, 1242, 504, 572, 2]
+// Dependencies: [1194, 1241, 504, 572, 2]
 
-// Module 5535 (SavedCustomThemeStore)
+// Module 5120 (SavedCustomThemeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import SentryUtilsDefault from "SentryUtils" /* 1242 */;
-import ThemeConstants from "ThemeConstants" /* 1195 */;
+import SentryUtilsDefault from "SentryUtils" /* 1241 */;
+import ThemeConstants from "ThemeConstants" /* 1194 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

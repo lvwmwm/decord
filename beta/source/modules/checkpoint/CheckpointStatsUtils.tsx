@@ -1,20 +1,20 @@
-// Module ID: 6737
-// Function ID: 6738
+// Module ID: 6339
+// Function ID: 6340
 // Name: CheckpointStatsUtils
-// Dependencies: [1407, 2153, 1113, 5169, 11, 2]
+// Dependencies: [1405, 2152, 1112, 4776, 11, 2]
 // Exports: formatCheckpointCompactNumber, formatCheckpointPeakHour, getCheckpointOdysseyCopies, getCheckpointTopPercent, getGuildAcronymCharacter, globalStatsFromServer, hasCheckpointEmojis, hasCheckpointGameDays, hasCheckpointGames, hasCheckpointGuilds, hasCheckpointMessages, hasCheckpointSidekick, hasCheckpointSquad, hasCheckpointVoiceMinutes, statsFromServer
 
-// Module 6737 (CheckpointStatsUtils)
+// Module 6339 (CheckpointStatsUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import StringUtils from "StringUtils" /* 2153 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 5169 */;
-import UserRecord from "UserRecord" /* 1407 */;
+import StringUtils from "StringUtils" /* 2152 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 4776 */;
+import UserRecord from "UserRecord" /* 1405 */;
 import size from "module_2" /* 2 */;
 
 let game, guild;
 
 let tmp;
-const intl = tmp(1113);
+const intl = tmp(1112);
 let closure_4 = { hour: "numeric", minute: "2-digit", numberingSystem: "latn" };
 const re5 = /^[A-Za-z.\s]+$/;
 const re6 = /\s/g;
@@ -81,7 +81,7 @@ export function formatCheckpointPeakHour(stateFromStores1) {
     const _Intl = Intl;
     const self = this;
     const self2 = this;
-    const dateTimeFormat1 = new Intl.DateTimeFormat(tmp15(1113).intl.currentLocale, tmp2);
+    const dateTimeFormat1 = new Intl.DateTimeFormat(tmp15(1112).intl.currentLocale, tmp2);
     const str2 = dateTimeFormat1.format(date);
     const obj2 = { value: str2.replace(re6, ""), label: str2 };
     return obj2;

@@ -1,28 +1,28 @@
-// Module ID: 6346
-// Function ID: 6347
+// Module ID: 5948
+// Function ID: 5949
 // Name: ChannelUtils
-// Dependencies: [5159, 5155, 5236, 5238, 5209, 6064, 1072, 1390, 5243, 1084, 2119, 6347, 6348, 1113, 5362, 6349, 11, 2, 6354]
+// Dependencies: [4766, 4762, 4843, 4845, 4816, 5657, 1071, 1388, 4850, 1083, 2117, 5949, 5950, 1112, 4969, 5951, 11, 2, 5956]
 // Exports: channelTypeString, computeSummarizedVoiceStates, computeSummarizedVoiceUsers, denyChannelAccessForNonPaidUsers, getBitrateLimit, getChannelAnalyticsPage, getChannelLinkToCopy, getChannelPermalink, getChannelThreadPermalink, getMentionIconType, getPrivateChannelUserTagsString, isAnyVoiceStateStage, isChannelFull, permissionOverwriteForRole, permissionOverwriteForUser, permissionOverwritesForAnnouncement, permissionOverwritesForRoles, previousTextChannelRouteForGuild
 
-// Module 6346 (ChannelUtils)
+// Module 5948 (ChannelUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
-import intl14 from "intl" /* 1113 */;
-import PremiumConstants from "PremiumConstants" /* 1390 */;
-import Server from "Server" /* 2119 */;
-import PermissionUtilsAll from "PermissionUtils" /* 5243 */;
-import UserUtilsDefault from "UserUtils" /* 5362 */;
-import ChannelListUtils from "ChannelListUtils" /* 6347 */;
-import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 6348 */;
-import MediaPostEmbedUtils from "MediaPostEmbedUtils" /* 6349 */;
-import sanitizeGuildTextChannelNameDefault from "sanitizeGuildTextChannelName" /* 6354 */;
-import ChannelRecord from "ChannelRecord" /* 5159 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import GuildChannelStore from "GuildChannelStore" /* 5236 */;
-import PermissionStore from "PermissionStore" /* 5238 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 6064 */;
-import Constants from "Constants" /* 1072 */;
+import BigFlagUtilsAll from "BigFlagUtils" /* 1083 */;
+import intl14 from "intl" /* 1112 */;
+import PremiumConstants from "PremiumConstants" /* 1388 */;
+import Server from "Server" /* 2117 */;
+import PermissionUtilsAll from "PermissionUtils" /* 4850 */;
+import UserUtilsDefault from "UserUtils" /* 4969 */;
+import ChannelListUtils from "ChannelListUtils" /* 5949 */;
+import useAudienceRequestToSpeakState from "useAudienceRequestToSpeakState" /* 5950 */;
+import MediaPostEmbedUtils from "MediaPostEmbedUtils" /* 5951 */;
+import sanitizeGuildTextChannelNameDefault from "sanitizeGuildTextChannelName" /* 5956 */;
+import ChannelRecord from "ChannelRecord" /* 4766 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import GuildChannelStore from "GuildChannelStore" /* 4843 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4816 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5657 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -195,7 +195,7 @@ export const sanitizeGuildTextChannelName = sanitizeGuildTextChannelNameDefault;
 export function getBitrateLimit(guild, channel) {
   let maxResult;
   if (channel.isGuildStageVoice()) {
-    maxResult = closure_17;
+    maxResult = authStore4;
   } else if (null == guild) {
     maxResult = authStore3;
   } else {
@@ -498,7 +498,7 @@ export function previousTextChannelRouteForGuild(id) {
       if (channel.type === ChannelTypes.GUILD_TEXT) {
         id = channel.id;
       }
-      return authStore4.CHANNEL(id, id);
+      return closure_18.CHANNEL(id, id);
     }
   }
   const defaultChannel = GuildChannelStore.getDefaultChannel(id);
@@ -513,7 +513,7 @@ export function getChannelPermalink(guild_id, id, id2, id3) {
     const _HermesInternal = HermesInternal;
     str = "?summaryId=" + id3;
   }
-  return "" + location.protocol + "//" + location.host + authStore4.CHANNEL(guild_id, id, id2) + str;
+  return "" + location.protocol + "//" + location.host + closure_18.CHANNEL(guild_id, id, id2) + str;
 }
 export function getChannelThreadPermalink(guildId, id, id2, result) {
   if (null != guildId) {
@@ -523,12 +523,12 @@ export function getChannelThreadPermalink(guildId, id, id2, result) {
         const _location = location;
         const _location2 = location;
         const _HermesInternal = HermesInternal;
-        combined = "" + protocol + "//" + host + authStore4.CHANNEL_THREAD_VIEW(guildId, id, id2, result);
+        combined = "" + protocol + "//" + host + closure_18.CHANNEL_THREAD_VIEW(guildId, id, id2, result);
       }
       return combined;
     }
   }
-  combined = "" + location.protocol + "//" + location.host + authStore4.CHANNEL(guildId, id, result) + "";
+  combined = "" + location.protocol + "//" + location.host + closure_18.CHANNEL(guildId, id, result) + "";
 }
 export function getChannelLinkToCopy(channel, channel1, arg2, arg3) {
   let combined1;
@@ -549,7 +549,7 @@ export function getChannelLinkToCopy(channel, channel1, arg2, arg3) {
             const _location4 = location;
             const host2 = location.host;
             const _HermesInternal2 = HermesInternal;
-            combined = "" + protocol2 + "//" + host2 + authStore4.CHANNEL_THREAD_VIEW(guildId, id, id2, result);
+            combined = "" + protocol2 + "//" + host2 + closure_18.CHANNEL_THREAD_VIEW(guildId, id, id2, result);
           }
           combined1 = combined;
         }
@@ -559,7 +559,7 @@ export function getChannelLinkToCopy(channel, channel1, arg2, arg3) {
       const _location6 = location;
       const host3 = location.host;
       const _HermesInternal3 = HermesInternal;
-      combined = "" + protocol3 + "//" + host3 + authStore4.CHANNEL(guildId, id, result) + "";
+      combined = "" + protocol3 + "//" + host3 + closure_18.CHANNEL(guildId, id, result) + "";
     }
     return combined1;
   }
@@ -568,7 +568,7 @@ export function getChannelLinkToCopy(channel, channel1, arg2, arg3) {
     const _location = location;
     const _location2 = location;
     const _HermesInternal = HermesInternal;
-    combined1 = "" + protocol + "//" + host + authStore4.CHANNEL(guildId, channel.id, arg2) + "";
+    combined1 = "" + protocol + "//" + host + closure_18.CHANNEL(guildId, channel.id, arg2) + "";
   }
 }
 export function getChannelAnalyticsPage(type) {

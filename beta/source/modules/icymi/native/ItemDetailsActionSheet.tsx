@@ -1,21 +1,21 @@
-// Module ID: 19295
-// Function ID: 19296
+// Module ID: 18097
+// Function ID: 18098
 // Name: ItemDetailsActionSheet
-// Dependencies: [19, 17, 5155, 5177, 10205, 21, 5306, 575, 504, 5944, 7495, 7720, 1187, 10216, 7951, 11898, 19296, 7746, 7443, 2]
+// Dependencies: [19, 17, 4762, 4784, 10033, 21, 4913, 575, 504, 5529, 7097, 7322, 1186, 10042, 7553, 11675, 18098, 7348, 7045, 2]
 // Exports: default
 
-// Module 19295 (ItemDetailsActionSheet)
+// Module 18097 (ItemDetailsActionSheet)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import useChannelNameDefault from "useChannelName" /* 5944 */;
-import useDesignToggleDefault from "useDesignToggle" /* 7495 */;
+import useChannelNameDefault from "useChannelName" /* 5529 */;
+import useDesignToggleDefault from "useDesignToggle" /* 7097 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import GuildStore from "GuildStore" /* 5177 */;
-import ICYMIStore from "ICYMIStore" /* 10205 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import ICYMIStore from "ICYMIStore" /* 10033 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -24,15 +24,15 @@ let metroImportDefault;
 let obj2;
 let tmp;
 let tmp5;
-const native = tmp(1187);
-const TableRow2 = tmp(7443);
-const GuildIcon = tmp(7720);
-const GuildIconDefault = tmp5(7720);
-const TableRowGroup2 = tmp(7746);
-const ActionSheet2 = tmp(7951);
-const ICYMIUtils = tmp(10216);
-const ActionSheetIconHeader2 = tmp(11898);
-const ICYMIContentSettingControl = tmp(19296);
+const native = tmp(1186);
+const TableRow2 = tmp(7045);
+const GuildIcon = tmp(7322);
+const GuildIconDefault = tmp5(7322);
+const TableRowGroup2 = tmp(7348);
+const ActionSheet2 = tmp(7553);
+const ICYMIUtils = tmp(10042);
+const ActionSheetIconHeader2 = tmp(11675);
+const ICYMIContentSettingControl = tmp(18098);
 const View = react_native.View;
 ({ jsx: metroImportDefault, Fragment: metroImportAll, jsxs: c9 } = Fragment);
 let obj = { divider: obj2 };

@@ -1,15 +1,15 @@
-// Module ID: 13070
-// Function ID: 13071
+// Module ID: 11048
+// Function ID: 11049
 // Name: SingleStream
-// Dependencies: [19, 11003, 21, 12789, 12797, 6056, 2]
+// Dependencies: [19, 10636, 21, 10719, 10727, 5649, 2]
 // Exports: default
 
-// Module 13070 (SingleStream)
+// Module 11048 (SingleStream)
 import Fragment from "Fragment" /* 21 */;
-import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 6056 */;
-import StreamTileDefault from "StreamTile" /* 12789 */;
+import ChannelRTCActionCreatorsDefault from "ChannelRTCActionCreators" /* 5649 */;
+import StreamTileDefault from "StreamTile" /* 10719 */;
 import react from "react" /* 19 */;
-import ChannelCallStore from "ChannelCallStore" /* 11003 */;
+import ChannelCallStore from "ChannelCallStore" /* 10636 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -22,7 +22,7 @@ export default function SingleStream(channel) {
   channel = channel.channel;
   let participant = channel.participant;
   StreamTileDefault;
-  return <tmp gestureEnabled resizeMode={channel(12797).ResizeMode.CONTAIN} onSingleTap={function onSingleTap() {
+  return <tmp gestureEnabled resizeMode={channel(10727).ResizeMode.CONTAIN} onSingleTap={function onSingleTap() {
     closure_1_3();
   }} onDoubleTap={function onDoubleTap() {
     React3();

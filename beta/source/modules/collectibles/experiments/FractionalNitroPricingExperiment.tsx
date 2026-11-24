@@ -1,12 +1,12 @@
-// Module ID: 10454
-// Function ID: 10455
+// Module ID: 9583
+// Function ID: 9584
 // Name: FractionalNitroPricingExperiment
-// Dependencies: [1452, 1075, 2]
+// Dependencies: [1450, 1074, 2]
 // Exports: FractionalNitroPricingExposure, isFractionalNitroPricingSku
 
-// Module 10454 (FractionalNitroPricingExperiment)
-import FractionalPremiumSKUs from "FractionalPremiumSKUs" /* 1075 */;
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+// Module 9583 (FractionalNitroPricingExperiment)
+import FractionalPremiumSKUs from "FractionalPremiumSKUs" /* 1074 */;
+import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 
 const apexExperiment = ApexExperiment.createApexExperiment({ name: "2026-10-fractional-nitro-pricing", kind: "user", defaultConfig: null, variations: { 0: null, 1: 2800, 2: 4200 } });

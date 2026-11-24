@@ -1,13 +1,13 @@
-// Module ID: 9664
-// Function ID: 9665
+// Module ID: 9185
+// Function ID: 9186
 // Name: collection_page_marketing_block
-// Dependencies: [32, 1197, 9630, 9640, 9632, 2]
+// Dependencies: [32, 1196, 9150, 9154, 9152, 2]
 
-// Module 9664 (collection_page_marketing_block)
-import _mod1197 from "module_1197" /* 1197 */;
-import localized_string from "localized_string" /* 9630 */;
-import cta_button from "cta_button" /* 9632 */;
-import theme_aware_asset from "theme_aware_asset" /* 9640 */;
+// Module 9185 (collection_page_marketing_block)
+import _mod1196 from "module_1196" /* 1196 */;
+import localized_string from "localized_string" /* 9150 */;
+import cta_button from "cta_button" /* 9152 */;
+import theme_aware_asset from "theme_aware_asset" /* 9154 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ const T2 = function T() {
 const T3 = function T() {
   return require("cta_button").CTAButton;
 };
-const MessageType = _mod1197.MessageType;
+const MessageType = _mod1196.MessageType;
 class CollectionPageMarketingBlock$Type extends MessageType {
   constructor() {
     const items = [, , , ];
@@ -43,9 +43,9 @@ class CollectionPageMarketingBlock$Type extends MessageType {
     const obj = { title: "" };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1197;
+      const tmpResult = _mod1196;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
@@ -91,7 +91,7 @@ class CollectionPageMarketingBlock$Type extends MessageType {
             let skipResult = pos.skip(tmp6);
             if (false !== onRead) {
               if (true === onRead) {
-                onRead = _mod1197.UnknownFieldHandler.onRead;
+                onRead = _mod1196.UnknownFieldHandler.onRead;
               }
               let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
             }
@@ -106,19 +106,19 @@ class CollectionPageMarketingBlock$Type extends MessageType {
       const LocalizedString = localized_string.LocalizedString;
       internalBinaryWrite = LocalizedString.internalBinaryWrite;
       titleLocalized = titleLocalized.titleLocalized;
-      const tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
+      const tagResult = tag.tag(1, _mod1196.WireType.LengthDelimited);
       const internalBinaryWriteResult = internalBinaryWrite(titleLocalized, tagResult.fork(), writeUnknownFields);
       const joined = internalBinaryWriteResult.join();
     }
     if ("" !== titleLocalized.title) {
-      const tagResult1 = tag.tag(2, _mod1197.WireType.LengthDelimited);
+      const tagResult1 = tag.tag(2, _mod1196.WireType.LengthDelimited);
       tagResult1.string(titleLocalized.title);
     }
     if (titleLocalized.art) {
       const ThemeAwareAsset = theme_aware_asset.ThemeAwareAsset;
       internalBinaryWrite2 = ThemeAwareAsset.internalBinaryWrite;
       const art = titleLocalized.art;
-      const tagResult2 = tag.tag(3, _mod1197.WireType.LengthDelimited);
+      const tagResult2 = tag.tag(3, _mod1196.WireType.LengthDelimited);
       const internalBinaryWrite2Result = internalBinaryWrite2(art, tagResult2.fork(), writeUnknownFields);
       const joined1 = internalBinaryWrite2Result.join();
     }
@@ -126,14 +126,14 @@ class CollectionPageMarketingBlock$Type extends MessageType {
       const CTAButton = cta_button.CTAButton;
       internalBinaryWrite3 = CTAButton.internalBinaryWrite;
       const button = titleLocalized.button;
-      const tagResult3 = tag.tag(4, _mod1197.WireType.LengthDelimited);
+      const tagResult3 = tag.tag(4, _mod1196.WireType.LengthDelimited);
       const internalBinaryWrite3Result = internalBinaryWrite3(button, tagResult3.fork(), writeUnknownFields);
       const joined2 = internalBinaryWrite3Result.join();
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+        onWrite = _mod1196.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, titleLocalized, tag);

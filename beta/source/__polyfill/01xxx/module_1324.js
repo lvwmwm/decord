@@ -4,4 +4,4 @@
 
 // Module 1324
 
-export default Math.pow;
+export default Math.round;

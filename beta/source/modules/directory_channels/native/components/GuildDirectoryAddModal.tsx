@@ -1,20 +1,20 @@
-// Module ID: 14708
-// Function ID: 14709
+// Module ID: 13163
+// Function ID: 13164
 // Name: GuildDirectoryAddModal
-// Dependencies: [19, 14709, 21, 5306, 5882, 1264, 7493, 14707, 14710, 14718, 14722, 14732, 7415, 5907, 7490, 1113, 2]
+// Dependencies: [19, 13164, 21, 4913, 5467, 1263, 7095, 13162, 13165, 13173, 13177, 13187, 7017, 5492, 7092, 1112, 2]
 // Exports: GuildDirectoryAddModalScreen, default
 
-// Module 14708 (GuildDirectoryAddModal)
+// Module 13163 (GuildDirectoryAddModal)
 import Fragment from "Fragment" /* 21 */;
-import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1264 */;
-import NavigatorConstants from "NavigatorConstants" /* 5882 */;
-import reactDefault from "react" /* 5907 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7415 */;
-import NavigatorHeader from "NavigatorHeader" /* 7493 */;
-import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 14707 */;
-import directory_channels_GuildDirectoryConstants from "directory_channels/GuildDirectoryConstants" /* 14709 */;
+import discord_common_AnalyticsUtils from "discord_common/AnalyticsUtils" /* 1263 */;
+import NavigatorConstants from "NavigatorConstants" /* 5467 */;
+import reactDefault from "react" /* 5492 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7017 */;
+import NavigatorHeader from "NavigatorHeader" /* 7095 */;
+import GuildDirectoryAddModalActionCreatorsDefault from "GuildDirectoryAddModalActionCreators" /* 13162 */;
+import directory_channels_GuildDirectoryConstants from "directory_channels/GuildDirectoryConstants" /* 13164 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

@@ -1,18 +1,20 @@
-// Module ID: 16243
-// Function ID: 16244
+// Module ID: 15016
+// Function ID: 15017
 // Name: EmailSettingsStore
 // Dependencies: [504, 572, 2]
 
-// Module 16243 (EmailSettingsStore)
+// Module 15016 (EmailSettingsStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
 
 function reset() {
   let c1 = null;
+  c2 = false;
 }
 let categories = {};
 let c1 = null;
+let c2 = false;
 const Store = get_initializedDefault.Store;
 class EmailSettingsStore extends Store {
   getEmailSettings() {
@@ -20,15 +22,27 @@ class EmailSettingsStore extends Store {
     return categories;
   }
 }
-const prototype = EmailSettingsStore.prototype;
+Object.defineProperty(EmailSettingsStore.prototype, "isFetching", {
+  get: function isFetching() {
+    return c2;
+  },
+  set: undefined
+});
 EmailSettingsStore.displayName = "EmailSettingsStore";
 categories = {
   CONNECTION_OPEN: reset,
   LOGOUT: reset,
+  EMAIL_SETTINGS_FETCH_START() {
+    c2 = true;
+  },
   EMAIL_SETTINGS_FETCH_SUCCESS: function handleFetchSuccess(settings) {
     let c1;
     let obj;
     ({ categories: obj, initialized: c1 } = settings.settings);
+    c2 = false;
+  },
+  EMAIL_SETTINGS_FETCH_FAILURE() {
+    c2 = false;
   },
   EMAIL_SETTINGS_UPDATE_SUCCESS: function handleUpdateSuccess(settings) {
 

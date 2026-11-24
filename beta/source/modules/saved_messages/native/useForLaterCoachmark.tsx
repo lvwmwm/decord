@@ -1,14 +1,14 @@
-// Module ID: 19239
-// Function ID: 19240
+// Module ID: 18041
+// Function ID: 18042
 // Name: useForLaterCoachmark
-// Dependencies: [32, 19, 5152, 21, 5139, 9560, 1113, 11939, 9567, 2]
+// Dependencies: [32, 19, 4759, 21, 4746, 9080, 1112, 11712, 9087, 2]
 // Exports: default
 
-// Module 19239 (useForLaterCoachmark)
+// Module 18041 (useForLaterCoachmark)
 import Fragment from "Fragment" /* 21 */;
-import intl3 from "intl" /* 1113 */;
-import dismissible_content from "dismissible_content" /* 5139 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
+import intl3 from "intl" /* 1112 */;
+import dismissible_content from "dismissible_content" /* 4746 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4759 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -23,7 +23,7 @@ const result = size.fileFinishedImporting("modules/saved_messages/native/useForL
 export default function useForLaterCoachmark(targetRef) {
   let closure_1;
   let first;
-  let obj = first(9560);
+  let obj = first(9080);
   const items = [closure_6];
   const tmp = _slicedToArray(obj.useSelectedDismissibleContent(items, { bypassAutoDismiss: true }), 2);
   first = tmp[0];
@@ -48,7 +48,7 @@ export default function useForLaterCoachmark(targetRef) {
     intl2 = intl3.intl;
     return obj;
   }, items1);
-  const obj2 = first(9567);
+  const obj2 = first(9087);
   const coachmark = obj2.useCoachmark(targetRef, memo);
   return tmp[1];
 };

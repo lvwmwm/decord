@@ -1,18 +1,18 @@
-// Module ID: 8547
-// Function ID: 8548
+// Module ID: 8137
+// Function ID: 8138
 // Name: BadgeDirectoryStore
-// Dependencies: [1388, 1089, 1456, 8548, 559, 8552, 504, 572, 2]
+// Dependencies: [1386, 1088, 1454, 8138, 559, 8142, 504, 572, 2]
 // Exports: getObtainedAtFromBadge, getSingleRequirementThreshold
 
-// Module 8547 (BadgeDirectoryStore)
+// Module 8137 (BadgeDirectoryStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import BackoffDefault from "Backoff" /* 559 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import DurationsDefault from "Durations" /* 1089 */;
-import LRUCacheDefault from "LRUCache" /* 1456 */;
-import BadgeIdResolution from "BadgeIdResolution" /* 8548 */;
-import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8552 */;
-import UserStore from "UserStore" /* 1388 */;
+import DurationsDefault from "Durations" /* 1088 */;
+import LRUCacheDefault from "LRUCache" /* 1454 */;
+import BadgeIdResolution from "BadgeIdResolution" /* 8138 */;
+import BadgeDirectoryActionCreators from "BadgeDirectoryActionCreators" /* 8142 */;
+import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 
 let map, map1, set;
@@ -98,29 +98,9 @@ class BadgeDirectoryStore extends Store {
     }
     return tmp5;
   }
-  getUnreadBadges(id) {
-    const badges = this.getBadges(id);
+  getUnreadBadges(userId) {
+    const badges = this.getBadges(userId);
     return badges.filter((has_updates) => true === has_updates.has_updates);
-  }
-  getUnreadBadgeCount(id) {
-    let tmp = id;
-    if (id == null) {
-      const currentUser = UserStore.getCurrentUser();
-      id = undefined;
-      if (currentUser != null) {
-        id = currentUser.id;
-      }
-      tmp = id;
-    }
-    let num = 0;
-    if (null != tmp) {
-      const self = this;
-      num = 0;
-      if (this.hasCatalogFor(tmp)) {
-        num = self.getUnreadBadges(tmp).length;
-      }
-    }
-    return num;
   }
   getBadgeById(GIFTING, displayedUserId) {
     let tmp = displayedUserId;
@@ -225,7 +205,7 @@ let obj = {
     let badges;
     let closure_129_0;
     let userId;
-    const f96283 = (badge_id) => {
+    const f92305 = (badge_id) => {
       const acks = _undefined.acks;
       const value = acks.get(badge_id.badge_id);
       let value2 = null;
@@ -260,10 +240,10 @@ let obj = {
       map1 = new Map();
     }
     c1 = peekResult;
-    peekResult.badges = new Map(badges.map(f96283));
+    peekResult.badges = new Map(badges.map(f92305));
     peekResult.catalogFetched = true;
     peekResult.fetchError = false;
-    new Map(badges.map(f96283));
+    new Map(badges.map(f92305));
     peekResult.fetchedAt = Date.now();
     const result = obj.set(userId, peekResult);
   },

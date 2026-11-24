@@ -1,17 +1,17 @@
-// Module ID: 5158
-// Function ID: 5159
+// Module ID: 4765
+// Function ID: 4766
 // Name: FavoriteStore
-// Dependencies: [1231, 5159, 5168, 1072, 1196, 12, 504, 572, 2]
+// Dependencies: [1230, 4766, 4775, 1071, 1195, 12, 504, 572, 2]
 
-// Module 5158 (FavoriteStore)
+// Module 4765 (FavoriteStore)
 import _mod12 from "module_12" /* 12 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
-import ChannelRecord from "ChannelRecord" /* 5159 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import FavoritesConstants from "FavoritesConstants" /* 5168 */;
-import Constants from "Constants" /* 1072 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1195 */;
+import ChannelRecord from "ChannelRecord" /* 4766 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1230 */;
+import FavoritesConstants from "FavoritesConstants" /* 4775 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 let FAVORITES_PRUNE_SCOPE_AUTO_ADDED;

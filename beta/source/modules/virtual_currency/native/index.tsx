@@ -1,13 +1,13 @@
-// Module ID: 10043
-// Function ID: 10044
+// Module ID: 9433
+// Function ID: 9434
 // Name: BalanceWidgetPill
-// Dependencies: [2, 10044, 10054, 10052, 10055]
+// Dependencies: [2, 9434, 9444, 9442, 9445]
 
-// Module 10043 (BalanceWidgetPill)
-import virtual_currency_BalanceWidgetPill from "virtual_currency/BalanceWidgetPill" /* 10044 */;
-import BalanceCounter from "BalanceCounter" /* 10052 */;
-import BalanceWidgetPillButton from "BalanceWidgetPillButton" /* 10054 */;
-import BalanceWidgetActionSheetDefault from "BalanceWidgetActionSheet" /* 10055 */;
+// Module 9433 (BalanceWidgetPill)
+import virtual_currency_BalanceWidgetPill from "virtual_currency/BalanceWidgetPill" /* 9434 */;
+import BalanceCounter from "BalanceCounter" /* 9442 */;
+import BalanceWidgetPillButton from "BalanceWidgetPillButton" /* 9444 */;
+import BalanceWidgetActionSheetDefault from "BalanceWidgetActionSheet" /* 9445 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/virtual_currency/native/index.tsx");

@@ -1,20 +1,20 @@
-// Module ID: 10631
-// Function ID: 10632
+// Module ID: 9711
+// Function ID: 9712
 // Name: SecureFramesPlatformUtils
-// Dependencies: [5155, 6061, 10628, 1072, 6838, 10632, 2121, 5542, 10642, 1113, 6259, 1187, 7262, 10645, 2]
+// Dependencies: [4762, 5654, 9708, 1071, 6429, 9712, 2119, 5127, 9731, 1112, 5861, 1186, 6867, 9734, 2]
 
-// Module 10631 (SecureFramesPlatformUtils)
-import intl3 from "intl" /* 1113 */;
-import native from "native" /* 1187 */;
-import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6259 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
-import safeTransitionToDefault from "safeTransitionTo" /* 7262 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 6061 */;
-import SecureFramesConstants from "SecureFramesConstants" /* 10628 */;
-import Constants from "Constants" /* 1072 */;
+// Module 9711 (SecureFramesPlatformUtils)
+import intl3 from "intl" /* 1112 */;
+import native from "native" /* 1186 */;
+import asyncRequire from "asyncRequire" /* 2119 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5861 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6429 */;
+import safeTransitionToDefault from "safeTransitionTo" /* 6867 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5654 */;
+import SecureFramesConstants from "SecureFramesConstants" /* 9708 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 let c9;
@@ -28,13 +28,13 @@ let obj = {
   openSecureFramesStreamVerification(streamKey, channelId) {
     const obj = ActionSheetActionCreatorsDefault;
     const obj2 = { streamKey, channelId };
-    obj.openLazy(asyncRequire(10642, dependencyMap.paths), metroRequire, obj2);
+    obj.openLazy(asyncRequire(9731, dependencyMap.paths), metroRequire, obj2);
   },
   openSecureFramesUserVerificationModal(id, id2, fn) {
     if (fn()) {
       const obj2 = { userId: id, channelId: id2 };
       const obj = ModalActionCreatorsDefault;
-      obj.pushLazy(asyncRequire(10632, dependencyMap.paths), obj2, metroImportDefault);
+      obj.pushLazy(asyncRequire(9712, dependencyMap.paths), obj2, metroImportDefault);
     }
   },
   openSecureFramesUpdateConfirmation(confirmText) {
@@ -82,7 +82,7 @@ let obj = {
         tmp7(React4.CHANNEL(guildId, channelId));
         const obj = { userId, channelId, guildId, fingerprint };
         const obj3 = ActionSheetActionCreatorsDefault;
-        obj3.openLazy(asyncRequire(10645, dependencyMap.paths), hasOwnProperty, obj);
+        obj3.openLazy(asyncRequire(9734, dependencyMap.paths), hasOwnProperty, obj);
       }
     }
     const obj2 = { title: intl.string(intl3.t["5ICxE6"]), body: intl2.string(intl3.t["v1eXp/"]) };

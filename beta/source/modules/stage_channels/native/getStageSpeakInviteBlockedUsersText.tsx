@@ -1,11 +1,11 @@
-// Module ID: 12926
-// Function ID: 12927
+// Module ID: 10866
+// Function ID: 10867
 // Name: getStageSpeakInviteBlockedUsersText
-// Dependencies: [1113, 2]
+// Dependencies: [1112, 2]
 // Exports: default
 
-// Module 12926 (getStageSpeakInviteBlockedUsersText)
-import intl4 from "intl" /* 1113 */;
+// Module 10866 (getStageSpeakInviteBlockedUsersText)
+import intl4 from "intl" /* 1112 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/stage_channels/native/getStageSpeakInviteBlockedUsersText.tsx");

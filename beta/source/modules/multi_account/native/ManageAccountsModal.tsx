@@ -1,30 +1,30 @@
-// Module ID: 19155
-// Function ID: 19156
+// Module ID: 17955
+// Function ID: 17956
 // Name: ManageAccountsModal
-// Dependencies: [32, 5, 19, 17, 502, 5363, 1388, 14831, 14832, 19156, 1072, 21, 9128, 5306, 575, 504, 1187, 6259, 1113, 14835, 7428, 17937, 18658, 1655, 5538, 6826, 1256, 7415, 19157, 18659, 14841, 19158, 7449, 8106, 13468, 7490, 9051, 10908, 18684, 6834, 7767, 18683, 2]
+// Dependencies: [32, 5, 19, 17, 502, 4970, 1386, 13283, 13284, 17956, 1071, 21, 8638, 4913, 575, 504, 1186, 5861, 1112, 13287, 7030, 16716, 17454, 1653, 5123, 6417, 1255, 7017, 17957, 17455, 13293, 17958, 7051, 7709, 13000, 7092, 8561, 10538, 17480, 6425, 7369, 17479, 2]
 
-// Module 19155 (ManageAccountsModal)
+// Module 17955 (ManageAccountsModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl5 from "intl" /* 1113 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 6259 */;
-import HeaderShared from "HeaderShared" /* 9051 */;
-import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10908 */;
-import MultiAccountStore from "MultiAccountStore" /* 14831 */;
-import MultiAccountActionCreatorsAll from "MultiAccountActionCreators" /* 14835 */;
-import ManageAccountsConstants from "ManageAccountsConstants" /* 19156 */;
+import intl5 from "intl" /* 1112 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import actions_AlertActionCreatorsDefault from "actions/AlertActionCreators" /* 5861 */;
+import HeaderShared from "HeaderShared" /* 8561 */;
+import getNavigationModalPresentationDefault from "getNavigationModalPresentation" /* 10538 */;
+import MultiAccountStore from "MultiAccountStore" /* 13283 */;
+import MultiAccountActionCreatorsAll from "MultiAccountActionCreators" /* 13287 */;
+import ManageAccountsConstants from "ManageAccountsConstants" /* 17956 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react_mod from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import StreamerModeStore from "StreamerModeStore" /* 5363 */;
-import UserStore from "UserStore" /* 1388 */;
-import Constants_mod from "Constants" /* 14832 */;
-import Constants_mod2 from "Constants" /* 1072 */;
+import StreamerModeStore from "StreamerModeStore" /* 4970 */;
+import UserStore from "UserStore" /* 1386 */;
+import Constants_mod from "Constants" /* 13284 */;
+import Constants_mod2 from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import NativeStackView from "NativeStackView" /* 9128 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import NativeStackView from "NativeStackView" /* 8638 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -130,7 +130,7 @@ function RemoveMultiAccountUserButton(user) {
     id = stateFromStores1.id;
   }
   if (id === user.id) {
-    return closure_18(tmp(1187).Spacer, { size: 21 });
+    return closure_18(tmp(1186).Spacer, { size: 21 });
   } else {
     let username = user.username;
     importDefault = username;
@@ -143,16 +143,16 @@ function RemoveMultiAccountUserButton(user) {
     }
     let obj3 = {
       accessibilityRole: "button",
-      accessibilityLabel: intl.string(tmp(1113).t.lSLMaU),
+      accessibilityLabel: intl.string(tmp(1112).t.lSLMaU),
       onPress: function handlePressRemove() {
           return obj(...arguments);
         },
       children: closure_18(CircleMinusIcon, obj4)
     };
-    const PressableOpacity = tmp(7428).PressableOpacity;
-    intl = tmp(1113).intl;
+    const PressableOpacity = tmp(7030).PressableOpacity;
+    intl = tmp(1112).intl;
     obj4 = { color: nativeDefault.colors.ICON_FEEDBACK_CRITICAL };
-    CircleMinusIcon = tmp(17937).CircleMinusIcon;
+    CircleMinusIcon = tmp(16716).CircleMinusIcon;
     return closure_18(PressableOpacity, obj3);
   }
 }
@@ -435,7 +435,7 @@ const memoResult = react.memo(function ManageAccountsModal(initialRouteName) {
     },
     children(navigation) {
       const obj = { isEditing, navigation: navigation.navigation };
-      return authStore4(ManageAccounts, obj);
+      return closure_18(ManageAccounts, obj);
     }
   };
   _slicedToArray(react.useState(false), 2);

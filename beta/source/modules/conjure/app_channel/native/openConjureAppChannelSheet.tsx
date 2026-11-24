@@ -1,12 +1,12 @@
-// Module ID: 15651
-// Function ID: 15652
+// Module ID: 14387
+// Function ID: 14388
 // Name: openConjureAppChannelSheet
-// Dependencies: [5542, 15652, 2121, 15653, 2]
+// Dependencies: [5127, 14388, 2119, 14389, 2]
 // Exports: closeConjureAppChannelMembersSheet, closeConjureAppChannelSheet, default, openConjureAppChannelMembersSheet
 
-// Module 15651 (openConjureAppChannelSheet)
-import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+// Module 14387 (openConjureAppChannelSheet)
+import asyncRequire from "asyncRequire" /* 2119 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
 import size from "module_2" /* 2 */;
 
 const ConjureAppChannelSheet = "ConjureAppChannelSheet";
@@ -16,7 +16,7 @@ const result = size.fileFinishedImporting("modules/conjure/app_channel/native/op
 export default function openConjureAppChannelSheet(channelId) {
   const obj = ActionSheetActionCreatorsDefault;
   const obj2 = { channelId };
-  obj.openLazy(asyncRequire(15653, dependencyMap.paths), ConjureAppChannelSheet, obj2);
+  obj.openLazy(asyncRequire(14389, dependencyMap.paths), ConjureAppChannelSheet, obj2);
 };
 export function closeConjureAppChannelSheet() {
   const obj = ActionSheetActionCreatorsDefault;
@@ -29,5 +29,5 @@ export function closeConjureAppChannelMembersSheet() {
 export function openConjureAppChannelMembersSheet(id) {
   const obj = ActionSheetActionCreatorsDefault;
   const obj2 = { channelId: id };
-  obj.openLazy(asyncRequire(15652, dependencyMap.paths), ConjureAppChannelMembersSheet, obj2);
+  obj.openLazy(asyncRequire(14388, dependencyMap.paths), ConjureAppChannelMembersSheet, obj2);
 }

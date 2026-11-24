@@ -1,21 +1,21 @@
-// Module ID: 17571
-// Function ID: 17572
+// Module ID: 16342
+// Function ID: 16343
 // Name: AdVideoPlayer
-// Dependencies: [32, 19, 17, 2120, 1072, 21, 575, 9731, 5306, 671, 17556, 1655, 5929, 5930, 5538, 5541, 1108, 504, 1380, 1242, 1630, 1113, 7428, 17572, 17574, 17576, 17578, 17579, 11095, 7606, 12318, 17580, 17581, 2]
+// Dependencies: [32, 19, 17, 2118, 1071, 21, 575, 9255, 4913, 671, 16327, 1653, 5514, 5515, 5123, 5126, 1107, 504, 1378, 1241, 1628, 1112, 7030, 16343, 16345, 16347, 16349, 16350, 10343, 7208, 11840, 16351, 16352, 2]
 
-// Module 17571 (AdVideoPlayer)
+// Module 16342 (AdVideoPlayer)
 import nativeDefault from "native" /* 575 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
-import media_playback_VideoDefault from "media_playback/Video" /* 9731 */;
-import AdsVideoTypes from "AdsVideoTypes" /* 17556 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1107 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
+import media_playback_VideoDefault from "media_playback/Video" /* 9255 */;
+import AdsVideoTypes from "AdsVideoTypes" /* 16327 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AppStateStore from "AppStateStore" /* 2120 */;
-import Constants from "Constants" /* 1072 */;
+import AppStateStore from "AppStateStore" /* 2118 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import module_671 from "module_671" /* 671 */;
 import size_mod from "module_2" /* 2 */;
 
@@ -722,7 +722,7 @@ const memoResult = react.memo(function AdVideoPlayer(initialProgress) {
     } else {
       const tmp2 = require;
       if (first2 !== AdsVideoTypes.PlayerState.LOADING) {
-        tmp2(1380);
+        tmp2(1378);
       }
       callback17(true);
     }

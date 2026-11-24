@@ -1,29 +1,29 @@
-// Module ID: 19066
-// Function ID: 19067
+// Module ID: 17862
+// Function ID: 17863
 // Name: useGuildsBarGesture
-// Dependencies: [5, 19, 17, 5177, 6946, 19067, 19064, 1655, 551, 5544, 5313, 12, 1242, 1113, 7847, 18746, 5892, 575, 5221, 10576, 1263, 6907, 6232, 9149, 1380, 1630, 5558, 19068, 19069, 9149, 17704, 5588, 1708, 2]
+// Dependencies: [5, 19, 17, 4784, 6550, 17863, 17860, 1653, 551, 5129, 4920, 12, 1241, 1112, 7449, 17542, 5477, 575, 4828, 10093, 1262, 6511, 5826, 8660, 1378, 1628, 5143, 17864, 17865, 8660, 16477, 5173, 1706, 2]
 // Exports: default
 
-// Module 19066 (useGuildsBarGesture)
+// Module 17862 (useGuildsBarGesture)
 import react_native from "react-native" /* 17 */;
-import intl15 from "intl" /* 1113 */;
-import SentryUtilsDefault from "SentryUtils" /* 1242 */;
-import react_native2 from "react-native" /* 1263 */;
-import _mod1708 from "module_1708" /* 1708 */;
-import shared from "shared" /* 5313 */;
-import HapticUtils from "HapticUtils" /* 5544 */;
-import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5558 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5588 */;
-import SortedGuildStore2 from "SortedGuildStore" /* 6946 */;
-import FastList from "FastList" /* 7847 */;
-import ContextMenuState from "ContextMenuState" /* 9149 */;
+import intl15 from "intl" /* 1112 */;
+import SentryUtilsDefault from "SentryUtils" /* 1241 */;
+import react_native2 from "react-native" /* 1262 */;
+import _mod1706 from "module_1706" /* 1706 */;
+import shared from "shared" /* 4920 */;
+import HapticUtils from "HapticUtils" /* 5129 */;
+import useIsScreenReaderEnabled from "useIsScreenReaderEnabled" /* 5143 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5173 */;
+import SortedGuildStore2 from "SortedGuildStore" /* 6550 */;
+import FastList from "FastList" /* 7449 */;
+import ContextMenuState from "ContextMenuState" /* 8660 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5177 */;
-import GuildsBarDnDStore from "GuildsBarDnDStore" /* 19067 */;
-import GuildsBarConstants from "GuildsBarConstants" /* 19064 */;
-import "module_1655";
-import module_1655_mod from "module_1655" /* 1655 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import GuildsBarDnDStore from "GuildsBarDnDStore" /* 17863 */;
+import GuildsBarConstants from "GuildsBarConstants" /* 17860 */;
+import "module_1653";
+import module_1653_mod from "module_1653" /* 1653 */;
 import debounce from "debounce" /* 551 */;
 import module_12_mod from "module_12" /* 12 */;
 import size_mod from "module_2" /* 2 */;
@@ -33,7 +33,7 @@ const SortedGuildStore = SortedGuildStore2;
 let _undefined, closure_1, closure_2, gesture, importDefault, set, set2;
 
 let c10;
-let module_1655;
+let module_1653;
 let unpackModuleId;
 function getDropIndex(dragNode, dragNode2, overState) {
   let tmp = dragNode2;
@@ -139,17 +139,17 @@ function triggerHapticsAndAnnouncementsIfNecessary(type) {
           if ("drop-into" === overState2) {
             let formatToPlainStringResult;
             if (overNode.type === GuildsNodeType.FOLDER) {
-              const intl6 = tmp18(1113).intl;
+              const intl6 = tmp18(1112).intl;
               const obj3 = { folderName: overNode.name };
-              formatToPlainStringResult = intl6.formatToPlainString(tmp18(1113).t.uLDoxR, obj3);
+              formatToPlainStringResult = intl6.formatToPlainString(tmp18(1112).t.uLDoxR, obj3);
             }
             formatToPlainStringResult1 = formatToPlainStringResult;
           } else if ("before" === overState2) {
             let tmp28;
-            const intl3 = tmp18(1113).intl;
+            const intl3 = tmp18(1112).intl;
             const formatToPlainString = intl3.formatToPlainString;
             const type2 = overNode.type;
-            const prop = tmp18(1113).t["A5aDw+"];
+            const prop = tmp18(1112).t["A5aDw+"];
             if (GuildsNodeType.GUILD === type2) {
               const guild1 = GuildStore.getGuild(overNode.id);
               let name5;
@@ -157,15 +157,15 @@ function triggerHapticsAndAnnouncementsIfNecessary(type) {
                 name5 = guild1.name;
               }
               if (name5 == null) {
-                const intl5 = tmp18(1113).intl;
-                name5 = intl5.string(tmp18(1113).t.fKYRlM);
+                const intl5 = tmp18(1112).intl;
+                name5 = intl5.string(tmp18(1112).t.fKYRlM);
               }
               tmp28 = name5;
             } else if (tmp27.FOLDER === type2) {
               let name2 = overNode.name;
               if (name2 == null) {
-                const intl4 = tmp18(1113).intl;
-                name2 = intl4.string(tmp18(1113).t.ebAnWE);
+                const intl4 = tmp18(1112).intl;
+                name2 = intl4.string(tmp18(1112).t.ebAnWE);
               }
               tmp28 = name2;
             }
@@ -173,10 +173,10 @@ function triggerHapticsAndAnnouncementsIfNecessary(type) {
             formatToPlainStringResult1 = formatToPlainString(prop, obj4);
           } else if ("after" === overState2) {
             let tmp21;
-            const intl14 = tmp18(1113).intl;
+            const intl14 = tmp18(1112).intl;
             const formatToPlainString3 = intl14.formatToPlainString;
             const type5 = overNode.type;
-            const w8FN92 = tmp18(1113).t.w8FN92;
+            const w8FN92 = tmp18(1112).t.w8FN92;
             if (GuildsNodeType.GUILD === type5) {
               const guild2 = GuildStore.getGuild(overNode.id);
               let name6;
@@ -184,15 +184,15 @@ function triggerHapticsAndAnnouncementsIfNecessary(type) {
                 name6 = guild2.name;
               }
               if (name6 == null) {
-                const intl2 = tmp18(1113).intl;
-                name6 = intl2.string(tmp18(1113).t.fKYRlM);
+                const intl2 = tmp18(1112).intl;
+                name6 = intl2.string(tmp18(1112).t.fKYRlM);
               }
               tmp21 = name6;
             } else if (tmp67.FOLDER === type5) {
               let name = overNode.name;
               if (name == null) {
-                const intl = tmp18(1113).intl;
-                name = intl.string(tmp18(1113).t.ebAnWE);
+                const intl = tmp18(1112).intl;
+                name = intl.string(tmp18(1112).t.ebAnWE);
               }
               tmp21 = name;
             }
@@ -204,10 +204,10 @@ function triggerHapticsAndAnnouncementsIfNecessary(type) {
           closure_16(formatToPlainStringResult1);
         }
       }
-      const intl7 = tmp18(1113).intl;
+      const intl7 = tmp18(1112).intl;
       const formatToPlainString2 = intl7.formatToPlainString;
       const type3 = overNode.type;
-      const qiQ0QI = tmp18(1113).t.qiQ0QI;
+      const qiQ0QI = tmp18(1112).t.qiQ0QI;
       if (GuildsNodeType.GUILD === type3) {
         const guild3 = GuildStore.getGuild(overNode.id);
         let name7;
@@ -215,15 +215,15 @@ function triggerHapticsAndAnnouncementsIfNecessary(type) {
           name7 = guild3.name;
         }
         if (name7 == null) {
-          const intl9 = tmp18(1113).intl;
-          name7 = intl9.string(tmp18(1113).t.fKYRlM);
+          const intl9 = tmp18(1112).intl;
+          name7 = intl9.string(tmp18(1112).t.fKYRlM);
         }
         tmp35 = name7;
       } else if (tmp34.FOLDER === type3) {
         let name3 = overNode.name;
         if (name3 == null) {
-          const intl8 = tmp18(1113).intl;
-          name3 = intl8.string(tmp18(1113).t.ebAnWE);
+          const intl8 = tmp18(1112).intl;
+          name3 = intl8.string(tmp18(1112).t.ebAnWE);
         }
         tmp35 = name3;
       }
@@ -268,7 +268,7 @@ function getItemAndNodeFromTouchEvent(arg0, arg1, fastListRef, map) {
     sectionItemFromPosition = current.getSectionItemFromPosition(bound, map);
   }
   if (sectionItemFromPosition == null) {
-    sectionItemFromPosition = { item: "ip", positionPercentage: false };
+    sectionItemFromPosition = { item: "disabled", positionPercentage: false };
   }
   const item = sectionItemFromPosition.item;
   let tmp6;
@@ -285,7 +285,7 @@ function getItemAndNodeFromTouchEvent(arg0, arg1, fastListRef, map) {
             if (null != element) {
               tmp7 = element;
             }
-          } else if (tmp10(7847).FastListItemTypes.ITEM === type) {
+          } else if (tmp10(7449).FastListItemTypes.ITEM === type) {
             if (element.type !== GuildsNodeType.ROOT) {
               let tmp13 = element;
               if (element.type !== GuildsNodeType.FOLDER) {
@@ -309,8 +309,8 @@ const Dimensions = react_native.Dimensions;
 const GuildsNodeType = SortedGuildStore2.GuildsNodeType;
 ({ FastListRenderSections: c10, useGuildWrapperSize: unpackModuleId } = GuildsBarConstants);
 let c12 = 160;
-let obj = { pan: module_1655.makeMutable(-1), itemMeasurements: module_1655.makeMutable([]), activeIndex: module_1655.makeMutable(-1) };
-module_1655 = module_1655_mod;
+let obj = { pan: module_1653.makeMutable(-1), itemMeasurements: module_1653.makeMutable([]), activeIndex: module_1653.makeMutable(-1) };
+module_1653 = module_1653_mod;
 let closure_15 = debounce(HapticUtils.triggerHapticFeedback, 16);
 let closure_16 = debounce((intl) => {
   const AccessibilityAnnouncer = shared.AccessibilityAnnouncer;
@@ -702,7 +702,7 @@ export default function useGuildsBarGesture() {
         const close = menu.requestClose(-1 === activeIndex.get());
       }
     }
-    setStateShallow({ dragSpecs: "ip", overSpecs: "r" });
+    setStateShallow({ dragSpecs: "Array", overSpecs: "channel" });
     const value = gestureState.get();
     if (null != value.mode) {
       const obj10 = { mode: null };
@@ -904,7 +904,7 @@ export default function useGuildsBarGesture() {
         id1 = node.id;
       }
       if (id !== id1) {
-        const ContextMenuStore = tmp66(9149).ContextMenuStore;
+        const ContextMenuStore = tmp66(8660).ContextMenuStore;
         if (null != ContextMenuStore.getState().menu) {
           const tmp66Result = ContextMenuState;
           tmp66Result.hideContextMenu();
@@ -1181,7 +1181,7 @@ export default function useGuildsBarGesture() {
     items[3] = dragRegion;
     const onTouchesDown = Gesture2.LongPress().onTouchesDown;
     Gesture2.LongPress();
-    items[4] = _mod1708.scheduleOnRN;
+    items[4] = _mod1706.scheduleOnRN;
     items[5] = callback1;
     [tmp5, tmp6, tmp7, tmp8, tmp9, tmp10] = items;
     function useGuildsBarGestureTsx2(changedTouches, fail) {
@@ -1227,7 +1227,7 @@ export default function useGuildsBarGesture() {
     const items4 = [closure_26, tmp4, , ];
     const onStart = onTouchesDownResult.onTouchesMove(useGuildsBarGestureTsx3).onStart;
     onTouchesDownResult.onTouchesMove(useGuildsBarGestureTsx3);
-    items4[2] = _mod1708.scheduleOnRN;
+    items4[2] = _mod1706.scheduleOnRN;
     items4[3] = callback2;
     [tmp14, tmp15, tmp16, tmp17] = items4;
     function useGuildsBarGestureTsx4(arg0) {
@@ -1245,7 +1245,7 @@ export default function useGuildsBarGesture() {
     const items6 = [closure_27, tmp4, , ];
     const onEnd = onStart(useGuildsBarGestureTsx4).onEnd;
     onStart(useGuildsBarGestureTsx4);
-    items6[2] = _mod1708.scheduleOnRN;
+    items6[2] = _mod1706.scheduleOnRN;
     items6[3] = callback;
     [tmp20, tmp21, tmp22, tmp23] = items6;
     function useGuildsBarGestureTsx5() {
@@ -1260,7 +1260,7 @@ export default function useGuildsBarGesture() {
     const items8 = [closure_28, tmp4, , ];
     const onTouchesCancelled = onEnd(useGuildsBarGestureTsx5).onTouchesCancelled;
     onEnd(useGuildsBarGestureTsx5);
-    items8[2] = _mod1708.scheduleOnRN;
+    items8[2] = _mod1706.scheduleOnRN;
     items8[3] = callback;
     [tmp25, tmp26, tmp27, tmp28] = items8;
     function useGuildsBarGestureTsx6() {
@@ -1285,7 +1285,7 @@ export default function useGuildsBarGesture() {
     let result1 = result.shouldCancelWhenOutside(false);
     const items10 = [closure_29, tmp4, dragDropInProgress, 10, , , ];
     const onTouchesMove = result1.onTouchesMove;
-    items10[4] = _mod1708.scheduleOnRN;
+    items10[4] = _mod1706.scheduleOnRN;
     items10[5] = callback3;
     items10[6] = callback4;
     [tmp33, tmp34, tmp35, tmp36, tmp37, tmp38, tmp39] = items10;
@@ -1334,7 +1334,7 @@ export default function useGuildsBarGesture() {
     const items12 = [closure_30, tmp4, listInsets, c12, windowSize, , , ];
     const onUpdate = onTouchesMove(useGuildsBarGestureTsx7).onUpdate;
     onTouchesMove(useGuildsBarGestureTsx7);
-    items12[5] = _mod1708.scheduleOnRN;
+    items12[5] = _mod1706.scheduleOnRN;
     items12[6] = callback4;
     items12[7] = callback3;
     let c3;
@@ -1378,7 +1378,7 @@ export default function useGuildsBarGesture() {
     const items14 = [closure_31, tmp4, , ];
     const onEnd2 = onUpdate(useGuildsBarGestureTsx8).onEnd;
     onUpdate(useGuildsBarGestureTsx8);
-    items14[2] = _mod1708.scheduleOnRN;
+    items14[2] = _mod1706.scheduleOnRN;
     items14[3] = callback;
     let c2;
     [tmp50, tmp51, tmp52, tmp53] = items14;
@@ -1399,7 +1399,7 @@ export default function useGuildsBarGesture() {
     const items16 = [closure_32, , ];
     const onTouchesCancelled2 = onEnd2(useGuildsBarGestureTsx9).onTouchesCancelled;
     onEnd2(useGuildsBarGestureTsx9);
-    items16[1] = _mod1708.scheduleOnRN;
+    items16[1] = _mod1706.scheduleOnRN;
     items16[2] = callback;
     let c0;
     let c1;

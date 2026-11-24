@@ -1,11 +1,11 @@
-// Module ID: 20344
-// Function ID: 20345
+// Module ID: 19597
+// Function ID: 19598
 // Name: SafetyFlowsExperiment
-// Dependencies: [1453, 2]
+// Dependencies: [1451, 2]
 // Exports: isEligibleForSafetyFlowsExperiment, useIsEligibleForSafetyFlowsExperiment
 
-// Module 20344 (SafetyFlowsExperiment)
-import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1453 */;
+// Module 19597 (SafetyFlowsExperiment)
+import apex_ApexExperimentDefault from "apex/ApexExperiment" /* 1451 */;
 import size from "module_2" /* 2 */;
 
 let obj = { name: "2026-04-safety-flows", kind: "user", defaultConfig: { enabled: false }, variations: { 0: { enabled: false }, 1: { enabled: true } } };

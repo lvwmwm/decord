@@ -1,18 +1,18 @@
-// Module ID: 17561
-// Function ID: 17562
+// Module ID: 16332
+// Function ID: 16333
 // Name: useBountyPauseAppStoreSheet
-// Dependencies: [19, 6954, 1072, 10141, 10168, 17559, 1108, 6959, 8834, 10170, 8825, 6961, 15246, 17556, 2]
+// Dependencies: [19, 6558, 1071, 9967, 9996, 16330, 1107, 6563, 8430, 9998, 8421, 6565, 10610, 16327, 2]
 // Exports: useBountyPauseAppStoreSheet
 
-// Module 17561 (useBountyPauseAppStoreSheet)
-import Constants from "Constants" /* 1072 */;
-import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1108 */;
-import QuestConstants from "QuestConstants" /* 6954 */;
-import AdCreativeType from "AdCreativeType" /* 6961 */;
-import AnalyticsActions from "AnalyticsActions" /* 8825 */;
-import trackAppStoreOverlaySurfaceClicked from "trackAppStoreOverlaySurfaceClicked" /* 15246 */;
-import AdsVideoTypes from "AdsVideoTypes" /* 17556 */;
-import QuestCustomAppStoreOverlayUtils from "QuestCustomAppStoreOverlayUtils" /* 17559 */;
+// Module 16332 (useBountyPauseAppStoreSheet)
+import Constants from "Constants" /* 1071 */;
+import ComponentDispatchUtils from "ComponentDispatchUtils" /* 1107 */;
+import QuestConstants from "QuestConstants" /* 6558 */;
+import AdCreativeType from "AdCreativeType" /* 6565 */;
+import AnalyticsActions from "AnalyticsActions" /* 8421 */;
+import trackAppStoreOverlaySurfaceClicked from "trackAppStoreOverlaySurfaceClicked" /* 10610 */;
+import AdsVideoTypes from "AdsVideoTypes" /* 16327 */;
+import QuestCustomAppStoreOverlayUtils from "QuestCustomAppStoreOverlayUtils" /* 16330 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -137,7 +137,7 @@ export function useBountyPauseAppStoreSheet(bounty) {
         const tmp3 = require;
         if (arg0 === AdsVideoTypes.PlaybackTriggerSource.USER_INTERACTION) {
           if (null != c5) {
-            if (tmp5 === tmp3(10141).BountiesMobileQuestBarCtrVariant.FIRST_TAP_APP_STORE_OVERLAY) {
+            if (tmp5 === tmp3(9967).BountiesMobileQuestBarCtrVariant.FIRST_TAP_APP_STORE_OVERLAY) {
               if (!ref.current) {
                 tmp9.current = true;
                 const promise = callback1();

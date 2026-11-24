@@ -1,15 +1,15 @@
-// Module ID: 14594
-// Function ID: 14595
+// Module ID: 12846
+// Function ID: 12847
 // Name: CustomTypingIndicatorGlyph
-// Dependencies: [19, 17, 21, 5306, 1410, 1187, 575, 14595, 2]
+// Dependencies: [19, 17, 21, 4913, 1408, 1186, 575, 12847, 2]
 // Exports: default
 
-// Module 14594 (CustomTypingIndicatorGlyph)
+// Module 12846 (CustomTypingIndicatorGlyph)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import CustomTypingIndicatorAnimatedEmojiDefault from "CustomTypingIndicatorAnimatedEmoji" /* 14595 */;
+import CustomTypingIndicatorAnimatedEmojiDefault from "CustomTypingIndicatorAnimatedEmoji" /* 12847 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -27,12 +27,12 @@ export default function CustomTypingIndicatorGlyph(config) {
   size = config.size;
   let emojisKey;
   const tmp = closure_5();
-  const obj = config(1410);
+  const obj = config(1408);
   dependencyMap = obj.getEffectiveCustomTypingIndicatorAnimation(config);
-  const obj2 = config(1410);
+  const obj2 = config(1408);
   if (obj2.hasCustomTypingIndicatorEmojis(config.emojis)) {
     let PX_4;
-    const tmp2Result = config(1410);
+    const tmp2Result = config(1408);
     emojisKey = tmp2Result.getCustomTypingIndicatorEmojisKey(config.emojis);
     const items = [tmp.emojiRow, ];
     const tmp5 = jsx;
@@ -48,6 +48,6 @@ export default function CustomTypingIndicatorGlyph(config) {
     emojis = config.emojis;
     return tmp5(tmp6, obj3);
   } else {
-    return jsx(config(1187).Ellipsis, {});
+    return jsx(config(1186).Ellipsis, {});
   }
 };

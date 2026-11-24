@@ -1,23 +1,23 @@
-// Module ID: 9524
-// Function ID: 9525
+// Module ID: 9044
+// Function ID: 9045
 // Name: BundleProductDetailsActionSheetPreview
-// Dependencies: [32, 19, 17, 1074, 21, 5306, 575, 9525, 5588, 1113, 9402, 8497, 9526, 5919, 2]
+// Dependencies: [32, 19, 17, 1073, 21, 4913, 575, 9045, 5173, 1112, 8913, 8087, 9046, 5504, 2]
 // Exports: default
 
-// Module 9524 (BundleProductDetailsActionSheetPreview)
+// Module 9044 (BundleProductDetailsActionSheetPreview)
 import nativeDefault from "native" /* 575 */;
-import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
-import intl2 from "intl" /* 1113 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5588 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 8497 */;
-import useShopProductItems from "useShopProductItems" /* 9402 */;
-import IndividualProductPreview from "IndividualProductPreview" /* 9526 */;
+import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1073 */;
+import intl2 from "intl" /* 1112 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5173 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 8087 */;
+import useShopProductItems from "useShopProductItems" /* 8913 */;
+import IndividualProductPreview from "IndividualProductPreview" /* 9046 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let c10;
@@ -208,8 +208,8 @@ export default function BundleProductDetailsActionSheetPreview(arg0) {
   const obj5 = { variant: "heading-xl/semibold", children: product.name };
   items4[0] = authStore2(Text_Text.Text, obj5);
   const obj6 = { variant: "body-sm/medium", color: "text-default", children: intl.formatToPlainString(intl2.t["/0Yndu"], obj7) };
-  const Text = tmp7(5919).Text;
-  intl = tmp7(1113).intl;
+  const Text = tmp7(5504).Text;
+  intl = tmp7(1112).intl;
   obj7 = { num: items.length };
   items4[1] = authStore2(Text, obj6);
   items5 = [map1(authStore, obj4), ];
@@ -217,12 +217,12 @@ export default function BundleProductDetailsActionSheetPreview(arg0) {
   items6 = [authStore2(closure_16, { items, bundledProducts, activeIndex: num, onSelect: tmp3, onTrackPress }), ];
   const items7 = [name, ];
   let tmp20Result = null != collectibleTypeLabel;
-  const Text2 = tmp7(5919).Text;
+  const Text2 = tmp7(5504).Text;
   const tmp20 = authStore2;
   if (tmp20Result) {
     const _HermesInternal = HermesInternal;
     const obj9 = { variant: "body-sm/medium", color: "text-muted", children: " - " + collectibleTypeLabel };
-    const Text3 = tmp7(5919).Text;
+    const Text3 = tmp7(5504).Text;
     tmp20Result = tmp20(Text3, obj9);
   }
   items7[1] = tmp20Result;

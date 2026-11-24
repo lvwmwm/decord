@@ -1,12 +1,12 @@
-// Module ID: 9117
-// Function ID: 9118
+// Module ID: 8627
+// Function ID: 8628
 // Name: useHandleJoinThreadVoice
-// Dependencies: [5, 5240, 7683, 7684, 2121, 8864, 6890, 2]
+// Dependencies: [5, 4847, 7285, 7286, 2119, 8459, 6494, 2]
 // Exports: default
 
-// Module 9117 (useHandleJoinThreadVoice)
+// Module 8627 (useHandleJoinThreadVoice)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 5240 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4847 */;
 import size from "module_2" /* 2 */;
 
 let c2;

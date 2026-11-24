@@ -1,22 +1,22 @@
-// Module ID: 12668
-// Function ID: 12669
+// Module ID: 12163
+// Function ID: 12164
 // Name: AppInteractionInfoActionSheet
-// Dependencies: [19, 1407, 5177, 1388, 21, 5306, 575, 7913, 1113, 7428, 7497, 5943, 504, 7350, 7443, 7720, 1187, 8476, 5556, 7746, 2]
+// Dependencies: [19, 1405, 4784, 1386, 21, 4913, 575, 7515, 1112, 7030, 7099, 5528, 504, 6954, 7045, 7322, 1186, 8067, 5141, 7348, 2]
 // Exports: default
 
-// Module 12668 (AppInteractionInfoActionSheet)
+// Module 12163 (AppInteractionInfoActionSheet)
 import nativeDefault from "native" /* 575 */;
-import intl4 from "intl" /* 1113 */;
-import UserActionCreators from "UserActionCreators" /* 7350 */;
-import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 7497 */;
-import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7913 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8476 */;
+import intl4 from "intl" /* 1112 */;
+import UserActionCreators from "UserActionCreators" /* 6954 */;
+import ArrowLargeLeftIcon from "ArrowLargeLeftIcon" /* 7099 */;
+import BottomSheetTitleHeader2 from "BottomSheetTitleHeader" /* 7515 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8067 */;
 import react_mod from "react" /* 19 */;
-import UserRecord from "UserRecord" /* 1407 */;
-import GuildStore from "GuildStore" /* 5177 */;
-import UserStore from "UserStore" /* 1388 */;
+import UserRecord from "UserRecord" /* 1405 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import UserStore from "UserStore" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -72,21 +72,21 @@ export default function AppInteractionInfoActionSheet(message) {
     tmpResult = null != onBack;
     if (tmpResult) {
       const obj2 = { accessibilityRole: "button", accessibilityLabel: intl2.string(intl4.t["13/7kX"]), onPress: tmp4, children: metroImportDefault(ArrowLargeLeftIcon.ArrowLargeLeftIcon, { size: "md" }) };
-      const PressableOpacity = tmp2(7428).PressableOpacity;
-      intl2 = tmp2(1113).intl;
+      const PressableOpacity = tmp2(7030).PressableOpacity;
+      intl2 = tmp2(1112).intl;
       tmpResult = tmp(PressableOpacity, obj2);
     }
     return metroImportDefault(BottomSheetTitleHeader, obj);
   }, items);
   if (interactionMetadata != null) {
     const tmp4 = message;
-    tmp3 = interactionMetadata.authorizing_integration_owners[message(undefined, 5943).ApplicationIntegrationType.USER_INSTALL];
+    tmp3 = interactionMetadata.authorizing_integration_owners[message(undefined, 5528).ApplicationIntegrationType.USER_INSTALL];
   }
   dependencyMap = tmp3;
   const interactionMetadata2 = message.interactionMetadata;
   let tmp6;
   if (interactionMetadata2 != null) {
-    tmp6 = interactionMetadata2.authorizing_integration_owners[message(undefined, 5943).ApplicationIntegrationType.GUILD_INSTALL];
+    tmp6 = interactionMetadata2.authorizing_integration_owners[message(undefined, 5528).ApplicationIntegrationType.GUILD_INSTALL];
   }
   react = tmp6;
   const interactionMetadata3 = message.interactionMetadata;
@@ -127,11 +127,11 @@ export default function AppInteractionInfoActionSheet(message) {
     tmp16 = tmp172;
   }
   if (null != stateFromStores1) {
-    const obj5 = { icon: closure_7(tmp26, obj6), label: stateFromStores1.name, subLabel: intl2.formatToPlainString(message(1113).t.ShLXXB, obj7) };
-    const TableRow2 = tmp10(7443).TableRow;
-    obj6 = { guild: stateFromStores1, size: message(7720).GuildIconSizes.SMALL_32 };
-    tmp26 = onBack(7720);
-    intl2 = tmp10(1113).intl;
+    const obj5 = { icon: closure_7(tmp26, obj6), label: stateFromStores1.name, subLabel: intl2.formatToPlainString(message(1112).t.ShLXXB, obj7) };
+    const TableRow2 = tmp10(7045).TableRow;
+    obj6 = { guild: stateFromStores1, size: message(7322).GuildIconSizes.SMALL_32 };
+    tmp26 = onBack(7322);
+    intl2 = tmp10(1112).intl;
     obj7 = { application: message.author.username };
     tmp23 = closure_7(TableRow2, obj5);
   } else {
@@ -140,42 +140,42 @@ export default function AppInteractionInfoActionSheet(message) {
       const obj8 = {
         icon: closure_7(Avatar, obj9),
         label: stateFromStores.username,
-        subLabel: intl.formatToPlainString(message(1113).t.ShLXXB, obj10),
+        subLabel: intl.formatToPlainString(message(1112).t.ShLXXB, obj10),
         onPress() {
               const obj = { userId: stateFromStores.id, channelId: message.channel_id };
               return showUserProfileActionSheetDefault(obj);
             },
         arrow: true
       };
-      const TableRow = tmp10(7443).TableRow;
-      obj9 = { user: stateFromStores, size: message(1187).AvatarSizes.REFRESH_MEDIUM_32, guildId };
-      Avatar = tmp10(1187).Avatar;
-      intl = tmp10(1113).intl;
+      const TableRow = tmp10(7045).TableRow;
+      obj9 = { user: stateFromStores, size: message(1186).AvatarSizes.REFRESH_MEDIUM_32, guildId };
+      Avatar = tmp10(1186).Avatar;
+      intl = tmp10(1112).intl;
       obj10 = { application: message.author.username };
       tmp23 = closure_7(TableRow, obj8);
     }
   }
   const obj11 = { header: memo, bodyStyles: tmp.body, children: tmp28(TableRowGroup, { hasIcons: true, children: items5 }) };
-  const BottomSheet = tmp10(5556).BottomSheet;
+  const BottomSheet = tmp10(5141).BottomSheet;
   items5 = [tmp23, ];
   let tmp27Result = null;
-  TableRowGroup = tmp10(7746).TableRowGroup;
+  TableRowGroup = tmp10(7348).TableRowGroup;
   tmp28 = closure_8;
   if (null != tmp16) {
     const obj12 = {
       icon: closure_7(Avatar2, obj13),
       label: tmp16.username,
-      subLabel: intl3.string(message(1113).t["04gxNg"]),
+      subLabel: intl3.string(message(1112).t["04gxNg"]),
       onPress() {
           const obj = { userId: id.id, channelId: message.channel_id };
           return showUserProfileActionSheetDefault(obj);
         },
       arrow: true
     };
-    const TableRow3 = tmp10(7443).TableRow;
-    obj13 = { user: tmp16, size: message(1187).AvatarSizes.REFRESH_MEDIUM_32, guildId };
-    Avatar2 = tmp10(1187).Avatar;
-    intl3 = tmp10(1113).intl;
+    const TableRow3 = tmp10(7045).TableRow;
+    obj13 = { user: tmp16, size: message(1186).AvatarSizes.REFRESH_MEDIUM_32, guildId };
+    Avatar2 = tmp10(1186).Avatar;
+    intl3 = tmp10(1112).intl;
     tmp27Result = tmp27(TableRow3, obj12);
   }
   items5[1] = tmp27Result;

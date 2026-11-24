@@ -1,18 +1,18 @@
-// Module ID: 19581
-// Function ID: 19582
+// Module ID: 18842
+// Function ID: 18843
 // Name: ChannelDetailsLinkedLobby
-// Dependencies: [19, 17, 1072, 21, 5306, 575, 7259, 5919, 1113, 2188, 2]
+// Dependencies: [19, 17, 1071, 21, 4913, 575, 6864, 5504, 1112, 2187, 2]
 // Exports: default
 
-// Module 19581 (ChannelDetailsLinkedLobby)
+// Module 18842 (ChannelDetailsLinkedLobby)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7259 */;
+import Constants from "Constants" /* 1071 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2187 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 6864 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -50,23 +50,23 @@ export default function ChannelDetailsLinkedLobby(channel) {
     let formatResult;
     const obj = { style: items, children: items2 };
     items = [tmp.container, containerStyle];
-    const Text = tmp2(5919).Text;
+    const Text = tmp2(5504).Text;
     const tmp11 = hasOwnProperty;
     if (null != getOrFetchApplication) {
-      const intl2 = tmp2(1113).intl;
+      const intl2 = tmp2(1112).intl;
       const obj2 = { applicationName: getOrFetchApplication.name };
-      formatResult = intl2.format(tmp2(1113).t.SgxMJs, obj2);
+      formatResult = intl2.format(tmp2(1112).t.SgxMJs, obj2);
     } else {
-      const intl = tmp2(1113).intl;
-      formatResult = intl.string(tmp2(1113).t.yQqVss);
+      const intl = tmp2(1112).intl;
+      formatResult = intl.string(tmp2(1112).t.yQqVss);
     }
     const obj3 = { variant: "body-sm/normal", color: "text-default", children: metroRequire(tmp11, obj4) };
     obj4 = { children: items1 };
     items1 = [formatResult, "  \u2022  ", ];
-    const intl3 = tmp2(1113).intl;
+    const intl3 = tmp2(1112).intl;
     const format = intl3.format;
     const obj5 = { helpdeskArticle: obj6.getArticleURL(HelpdeskArticles.LINKED_LOBBIES) };
-    const BPDKoA = tmp2(1113).t.BPDKoA;
+    const BPDKoA = tmp2(1112).t.BPDKoA;
     obj6 = HelpdeskUtilsDefault;
     items1[2] = format(BPDKoA, obj5);
     items2 = [metroImportDefault(Text, obj3), ];

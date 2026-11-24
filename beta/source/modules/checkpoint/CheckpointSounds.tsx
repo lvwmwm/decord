@@ -1,21 +1,22 @@
-// Module ID: 14294
-// Function ID: 14295
+// Module ID: 12529
+// Function ID: 12530
 // Name: CheckpointSounds
-// Dependencies: [14295, 14296, 14297, 14298, 14299, 6735, 2]
+// Dependencies: [12530, 12531, 12532, 12533, 12534, 12535, 6338, 2]
 // Exports: getCheckpointRouteSounds, scheduleCheckpointRouteSounds
 
-// Module 14294 (CheckpointSounds)
-import CheckpointNavigation from "CheckpointNavigation" /* 6735 */;
-import _modDef14295 from "module_14295" /* 14295 */;
-import _modDef14296 from "module_14296" /* 14296 */;
-import _modDef14297 from "module_14297" /* 14297 */;
-import _modDef14298 from "module_14298" /* 14298 */;
-import _modDef14299 from "module_14299" /* 14299 */;
+// Module 12529 (CheckpointSounds)
+import CheckpointNavigation from "CheckpointNavigation" /* 6338 */;
+import _modDef12530 from "module_12530" /* 12530 */;
+import _modDef12531 from "module_12531" /* 12531 */;
+import _modDef12532 from "module_12532" /* 12532 */;
+import _modDef12533 from "module_12533" /* 12533 */;
+import _modDef12534 from "module_12534" /* 12534 */;
+import _modDef12535 from "module_12535" /* 12535 */;
 import size from "module_2" /* 2 */;
 
 let source;
 
-let items = [_modDef14295, _modDef14296, _modDef14297, _modDef14298, _modDef14299];
+let items = [_modDef12530, _modDef12531, _modDef12532, _modDef12533, _modDef12534, _modDef12535];
 const result = size.fileFinishedImporting("modules/checkpoint/CheckpointSounds.tsx");
 
 export const CHECKPOINT_ROUTE_SOUNDS = items;
@@ -30,19 +31,21 @@ export function getCheckpointRouteSounds(arg0) {
   }
   if (previousRoute === CheckpointNavigation.CheckpointRoute.FINALIZE_CHARACTER) {
     if (route === CheckpointNavigation.CheckpointRoute.SUMMARY) {
-      return [];
+      const items = [{ source: _modDef12532, delayMs: 0 }];
+      const obj = { source: _modDef12532, delayMs: 0 };
+      return items;
     }
   }
-  const items = [];
+  const items1 = [];
   if (route === CheckpointNavigation.CheckpointRoute.INTRODUCTION) {
-    const push3 = items.push;
-    const obj = { source: _modDef14295, delayMs: 0 };
-    push3(obj);
-    const push4 = items.push;
-    const obj2 = { source: _modDef14296, delayMs: 2800 };
-    push4(obj2);
+    const push3 = items1.push;
+    const obj2 = { source: _modDef12530, delayMs: 0 };
+    push3(obj2);
+    const push4 = items1.push;
+    const obj3 = { source: _modDef12531, delayMs: 2800 };
+    push4(obj3);
   } else {
-    let tmp4 = previousRoute !== tmp(6735).CheckpointRoute.HOME;
+    let tmp4 = previousRoute !== tmp(6338).CheckpointRoute.HOME;
     if (tmp4) {
       const tmpResult = CheckpointNavigation;
       tmp4 = null == tmpResult.getCheckpointRoutePresentation(previousRoute).statsScreen;
@@ -50,15 +53,15 @@ export function getCheckpointRouteSounds(arg0) {
     if (tmp4) {
       const tmpResult4 = CheckpointNavigation;
       if (null != tmpResult4.getCheckpointRoutePresentation(route).statsScreen) {
-        const push2 = items.push;
-        const obj3 = { source: _modDef14297, delayMs: 0 };
-        push2(obj3);
+        const push2 = items1.push;
+        const obj4 = { source: _modDef12533, delayMs: 0 };
+        push2(obj4);
       }
     }
     const tmpResult5 = CheckpointNavigation;
     let tmp7 = null != tmpResult5.getCheckpointRoutePresentation(previousRoute).statsScreen;
     if (tmp7) {
-      let tmp8 = route !== tmp(6735).CheckpointRoute.HOME;
+      let tmp8 = route !== tmp(6338).CheckpointRoute.HOME;
       if (tmp8) {
         const tmpResult6 = CheckpointNavigation;
         tmp8 = null == tmpResult6.getCheckpointRoutePresentation(route).statsScreen;
@@ -66,12 +69,12 @@ export function getCheckpointRouteSounds(arg0) {
       tmp7 = tmp8;
     }
     if (tmp7) {
-      const push = items.push;
-      const obj4 = { source: _modDef14298, delayMs: 0 };
-      push(obj4);
+      const push = items1.push;
+      const obj5 = { source: _modDef12534, delayMs: 0 };
+      push(obj5);
     }
   }
-  return items;
+  return items1;
 }
 export function scheduleCheckpointRouteSounds(arr, arg1) {
   let closure_0 = arg1;

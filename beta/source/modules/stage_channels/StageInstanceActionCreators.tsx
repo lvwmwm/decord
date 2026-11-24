@@ -1,12 +1,12 @@
-// Module ID: 8441
-// Function ID: 8442
+// Module ID: 8032
+// Function ID: 8033
 // Name: StageInstanceActionCreators
-// Dependencies: [5, 1072, 1285, 2]
+// Dependencies: [5, 1071, 1284, 2]
 // Exports: endStageInstance, startStageInstance, updateStageInstance
 
-// Module 8441 (StageInstanceActionCreators)
-import Constants from "Constants" /* 1072 */;
-import HTTPUtils from "HTTPUtils" /* 1285 */;
+// Module 8032 (StageInstanceActionCreators)
+import Constants from "Constants" /* 1071 */;
+import HTTPUtils from "HTTPUtils" /* 1284 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

@@ -1,23 +1,23 @@
-// Module ID: 7483
-// Function ID: 7484
+// Module ID: 7085
+// Function ID: 7086
 // Name: XboxLinkEducation
-// Dependencies: [19, 17, 1072, 21, 5306, 7442, 2188, 7484, 6010, 5919, 1113, 7415, 5926, 2]
+// Dependencies: [19, 17, 1071, 21, 4913, 7044, 2187, 7086, 5600, 5504, 1112, 7017, 5511, 2]
 // Exports: default
 
-// Module 7483 (XboxLinkEducation)
+// Module 7085 (XboxLinkEducation)
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1072 */;
-import intl4 from "intl" /* 1113 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import components_Button_Button from "components/Button/Button" /* 5926 */;
-import FastImageDefault from "FastImage" /* 6010 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7415 */;
-import TwoWayLinkStyles from "TwoWayLinkStyles" /* 7442 */;
-import _modDef7484 from "module_7484" /* 7484 */;
+import Constants from "Constants" /* 1071 */;
+import intl4 from "intl" /* 1112 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2187 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import components_Button_Button from "components/Button/Button" /* 5511 */;
+import FastImageDefault from "FastImage" /* 5600 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7017 */;
+import TwoWayLinkStyles from "TwoWayLinkStyles" /* 7044 */;
+import _modDef7086 from "module_7086" /* 7086 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -46,7 +46,7 @@ export default function XboxLinkEducation(onClose) {
   const obj3 = { style: twoWayLinkStyles.container, children: items1 };
   const obj4 = { style: twoWayLinkStyles.content, children: items };
   const memo = react.useMemo(() => {
-    const obj = { uri: _modDef7484 };
+    const obj = { uri: _modDef7086 };
     return obj;
   }, []);
   items = [, , ];

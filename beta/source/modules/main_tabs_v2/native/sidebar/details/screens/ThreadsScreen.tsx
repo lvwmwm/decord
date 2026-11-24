@@ -1,20 +1,20 @@
-// Module ID: 19555
-// Function ID: 19556
+// Module ID: 18816
+// Function ID: 18817
 // Name: ThreadsScreen
-// Dependencies: [19, 17, 5155, 1072, 1112, 21, 5306, 575, 7287, 5903, 11843, 6053, 19556, 563, 1503, 2]
+// Dependencies: [19, 17, 4762, 1071, 1111, 21, 4913, 575, 6893, 5488, 11646, 5646, 18817, 563, 1501, 2]
 
-// Module 19555 (ThreadsScreen)
+// Module 18816 (ThreadsScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import ThreadConstants from "ThreadConstants" /* 1112 */;
-import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5903 */;
-import navigateToThreadCreation from "navigateToThreadCreation" /* 11843 */;
-import ThreadListDefault from "ThreadList" /* 19556 */;
+import Constants from "Constants" /* 1071 */;
+import ThreadConstants from "ThreadConstants" /* 1111 */;
+import useSafeAreaInsetsKeyboardAwareDefault from "useSafeAreaInsetsKeyboardAware" /* 5488 */;
+import navigateToThreadCreation from "navigateToThreadCreation" /* 11646 */;
+import ThreadListDefault from "ThreadList" /* 18817 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import createStyles from "createStyles" /* 5306 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -23,7 +23,7 @@ function ThreadsScreen(channel) {
   channel = channel.channel;
   const style = channel.style;
   const tmp = closure_9();
-  let obj = channel(7287);
+  let obj = channel(6893);
   const canStartThread = obj.useCanStartThread(channel);
   const items = [channel];
   const insets = useSafeAreaInsetsKeyboardAwareDefault({ includeKeyboardHeight: true }).insets;
@@ -75,7 +75,7 @@ const memoResult = react.memo(function SearchTabsThreadScreen(searchContext) {
 });
 const memoResult1 = react.memo(function ConnectedThreadsScreen() {
   let channelId;
-  const obj = channelId(1503);
+  const obj = channelId(1501);
   channelId = obj.useRoute().params.channelId;
   const items = [ChannelStore];
   const obj2 = channelId(563);

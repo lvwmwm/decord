@@ -1,12 +1,12 @@
-// Module ID: 13542
-// Function ID: 13543
+// Module ID: 13072
+// Function ID: 13073
 // Name: usePollDurationOptions
-// Dependencies: [9011, 1113, 2]
+// Dependencies: [8521, 1112, 2]
 // Exports: default
 
-// Module 13542 (usePollDurationOptions)
-import intl8 from "intl" /* 1113 */;
-import PollsConstants from "PollsConstants" /* 9011 */;
+// Module 13072 (usePollDurationOptions)
+import intl8 from "intl" /* 1112 */;
+import PollsConstants from "PollsConstants" /* 8521 */;
 import size from "module_2" /* 2 */;
 
 const PollDurations = PollsConstants.PollDurations;

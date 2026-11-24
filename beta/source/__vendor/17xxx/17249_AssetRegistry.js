@@ -1,10 +1,10 @@
 // Module ID: 17249
 // Function ID: 17250
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 17249 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/age_assurance/age_notice/native/images", width: 198, height: 132, scales: [2, 3], hash: "f08317e805d614c5dd09a300df6ccaab", name: "age-notice-spot", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "49797bf2e9feeabeb3ed3af5b9cf8473", name: "SparklesIcon", type: "png" });

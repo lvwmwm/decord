@@ -1,12 +1,12 @@
-// Module ID: 7057
-// Function ID: 7058
+// Module ID: 6661
+// Function ID: 6662
 // Name: ApplicationFlagUtils
-// Dependencies: [2143, 1084, 2]
+// Dependencies: [2142, 1083, 2]
 // Exports: hasApplicationFlag
 
-// Module 7057 (ApplicationFlagUtils)
-import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
-import ApplicationRecord from "ApplicationRecord" /* 2143 */;
+// Module 6661 (ApplicationFlagUtils)
+import BigFlagUtilsAll from "BigFlagUtils" /* 1083 */;
+import ApplicationRecord from "ApplicationRecord" /* 2142 */;
 import size from "module_2" /* 2 */;
 
 function getApplicationFlags(application) {

@@ -1,30 +1,30 @@
-// Module ID: 16937
-// Function ID: 16938
+// Module ID: 15691
+// Function ID: 15692
 // Name: channels
-// Dependencies: [32, 5, 5159, 5155, 5177, 5238, 6061, 5209, 6931, 5971, 6751, 1072, 16916, 5967, 7303, 13153, 16920, 12871, 16924, 7307, 7306, 12, 7297, 7022, 6925, 6346, 1099, 7660, 2]
+// Dependencies: [32, 5, 4766, 4762, 4784, 4845, 5654, 4816, 6535, 5561, 6354, 1071, 15670, 5557, 6909, 12308, 15674, 10804, 15678, 6913, 6912, 12, 6903, 6626, 6529, 5948, 1098, 7262, 2]
 
-// Module 16937 (channels)
-import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 7022 */;
-import isPostMessageSocketDefault from "isPostMessageSocket" /* 7297 */;
-import RPCErrorDefault from "RPCError" /* 7303 */;
-import botScopedAccess from "botScopedAccess" /* 7306 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 7307 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 7660 */;
-import RPCHelpers from "RPCHelpers" /* 12871 */;
-import guildVoice from "guildVoice" /* 16920 */;
+// Module 15691 (channels)
+import getChannelIdForEmbeddedSurfaceDefault from "getChannelIdForEmbeddedSurface" /* 6626 */;
+import isPostMessageSocketDefault from "isPostMessageSocket" /* 6903 */;
+import RPCErrorDefault from "RPCError" /* 6909 */;
+import botScopedAccess from "botScopedAccess" /* 6912 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 6913 */;
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 7262 */;
+import RPCHelpers from "RPCHelpers" /* 10804 */;
+import guildVoice from "guildVoice" /* 15674 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ChannelRecord from "ChannelRecord" /* 5159 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import GuildStore from "GuildStore" /* 5177 */;
-import PermissionStore from "PermissionStore" /* 5238 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 6061 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
-import SpeakingStore from "SpeakingStore" /* 6931 */;
-import VoiceStateStore from "VoiceStateStore" /* 5971 */;
-import Constants_mod from "Constants" /* 6751 */;
-import Constants_mod2 from "Constants" /* 1072 */;
-import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 16924 */;
+import ChannelRecord from "ChannelRecord" /* 4766 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5654 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4816 */;
+import SpeakingStore from "SpeakingStore" /* 6535 */;
+import VoiceStateStore from "VoiceStateStore" /* 5561 */;
+import Constants_mod from "Constants" /* 6354 */;
+import Constants_mod2 from "Constants" /* 1071 */;
+import CONTEXT_MENU_ICON_NAMES_mod from "CONTEXT_MENU_ICON_NAMES" /* 15678 */;
 import size from "module_2" /* 2 */;
 
 let c5, c6, speaking_available, state;
@@ -271,12 +271,12 @@ let obj4 = {
     const socket = args.socket;
     let guild;
     const botScopeOnly = args.botScopeOnly;
-    obj = socket(16920);
+    obj = socket(15674);
     if (obj.isGuildVoiceSocket(socket)) {
       const self3 = this;
       const self4 = this;
       const obj3 = { errorCode: constants3.INVALID_GUILD };
-      const tmp15 = new guild(7303)(obj3, "Invalid guild");
+      const tmp15 = new guild(6909)(obj3, "Invalid guild");
       throw tmp15;
     }
     const obj2 = guild(12);
@@ -292,7 +292,7 @@ let obj4 = {
           const self = this;
           const self2 = this;
           const obj4 = { errorCode: constants3.INVALID_GUILD };
-          const tmp3Result = tmp3(7303);
+          const tmp3Result = tmp3(6909);
           const tmp3Result1 = new tmp3Result(obj4, "Invalid guild id: " + guild_id);
           throw tmp3Result1;
         } else {
@@ -363,7 +363,7 @@ let obj6 = {
     socket = socket.socket;
     let tmp3;
     if (isPostMessageSocketDefault(socket)) {
-      tmp3 = tmp(7022)(socket.context.surface);
+      tmp3 = tmp(6626)(socket.context.surface);
     }
     const channel = ChannelStore.getChannel(tmp3);
     if (null == channel) {
@@ -393,7 +393,7 @@ let obj8 = {
   handler(args) {
     let server;
     let socket;
-    const f114322 = function(type) {
+    const f108295 = function(type) {
       if (null == type) {
         const _HermesInternal = HermesInternal;
         const self5 = this;
@@ -611,8 +611,8 @@ let obj8 = {
           const tmp = new channel_id(flag2[14])(obj, "Request to select voice channel timed out.");
           throw tmp;
         });
-        const then = catchPromise.then(f114322).then;
-        catchPromise.then(f114322);
+        const then = catchPromise.then(f108295).then;
+        catchPromise.then(f108295);
         let closure_0 = obj9(function*(arg0, value) {
           function validateUserAllowsJoiningVoice() {
             return closure_1_18(...arguments);
@@ -790,7 +790,7 @@ let obj12 = {
     }
     if (null == channel_id) {
       const tmp2 = socket;
-      obj = socket(1099);
+      obj = socket(1098);
       obj.transitionTo(constants.ME);
       nextPromise1 = null;
     } else {

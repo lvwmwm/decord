@@ -1,23 +1,23 @@
-// Module ID: 13738
-// Function ID: 13739
+// Module ID: 18589
+// Function ID: 18590
 // Name: ConjureImageOptions
-// Dependencies: [5, 32, 19, 17, 21, 5306, 575, 13232, 8079, 5919, 1113, 4131, 6010, 5368, 7445, 7734, 7748, 13736, 7988, 6030, 13739, 7994, 13230, 8627, 13741, 5926, 13188, 2]
+// Dependencies: [5, 32, 19, 17, 21, 4913, 575, 18318, 7682, 5504, 1112, 4190, 5600, 4975, 7047, 7336, 7350, 18587, 7591, 5620, 18590, 7597, 18316, 8217, 18591, 5511, 18277, 2]
 // Exports: default
 
-// Module 13738 (ConjureImageOptions)
+// Module 18589 (ConjureImageOptions)
 import nativeDefault from "native" /* 575 */;
-import _modDef4131 from "module_4131" /* 4131 */;
-import react_native from "react-native" /* 5368 */;
-import FastImageDefault from "FastImage" /* 6010 */;
-import openMediaModal from "openMediaModal" /* 8627 */;
-import useConjureAttachmentImage from "useConjureAttachmentImage" /* 13232 */;
-import ConjureImageOptions2 from "ConjureImageOptions" /* 13736 */;
+import _modDef4190 from "module_4190" /* 4190 */;
+import react_native from "react-native" /* 4975 */;
+import FastImageDefault from "FastImage" /* 5600 */;
+import openMediaModal from "openMediaModal" /* 8217 */;
+import useConjureAttachmentImage from "useConjureAttachmentImage" /* 18318 */;
+import ConjureImageOptions2 from "ConjureImageOptions" /* 18587 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -65,11 +65,11 @@ function ImageOptionPicture(onMeasured) {
   if (gone) {
     const obj3 = { style: tmp.broken, children: items1 };
     const obj4 = { size: "md", color: nativeDefault.colors.ICON_MUTED };
-    const ImageWarningIcon = tmp2(8079).ImageWarningIcon;
+    const ImageWarningIcon = tmp2(7682).ImageWarningIcon;
     items1 = [metroImportAll(ImageWarningIcon, obj4), ];
-    const obj5 = { variant: "body-xs/medium", color: "text-muted", style: tmp.brokenText, children: intl.string(_modDef4131.lhgD88) };
-    const Text = tmp2(5919).Text;
-    intl = tmp2(1113).intl;
+    const obj5 = { variant: "body-xs/medium", color: "text-muted", style: tmp.brokenText, children: intl.string(_modDef4190.lhgD88) };
+    const Text = tmp2(5504).Text;
+    intl = tmp2(1112).intl;
     items1[1] = metroImportAll(Text, obj5);
     obj2.children = React4(metroImportDefault, obj3);
     tmp10 = obj2;
@@ -148,8 +148,8 @@ function ImageOptionTile(option) {
   if (multi) {
     radioA11yNative = checkboxA11yNative;
   }
-  const intl = tmp2(1113).intl;
-  const stringResult = intl.string(_modDef4131["4/eeDD"]);
+  const intl = tmp2(1112).intl;
+  const stringResult = intl.string(_modDef4190["4/eeDD"]);
   if (null != galleryWidth) {
     rowTile = { width: galleryWidth };
     const obj3 = { width: galleryWidth };
@@ -169,7 +169,7 @@ function ImageOptionTile(option) {
     disabled: tmp11,
     accessibilityRole: null,
     accessibilityState: null,
-    accessibilityLabel: intl2.formatToPlainString(_modDef4131.AQbxhf, obj7),
+    accessibilityLabel: intl2.formatToPlainString(_modDef4190.AQbxhf, obj7),
     accessibilityActions: tmp12,
     onAccessibilityAction(nativeEvent) {
       nativeEvent = nativeEvent.nativeEvent;
@@ -185,16 +185,16 @@ function ImageOptionTile(option) {
     children: items4
   };
   tmp11 = disabled;
-  const Card = tmp2(7445).Card;
+  const Card = tmp2(7047).Card;
   if (disabled) {
     tmp11 = null == option.image;
   }
   ({ accessibilityRole: obj5.accessibilityRole, accessibilityState: obj5.accessibilityState } = radioA11yNative);
-  intl2 = tmp2(1113).intl;
+  intl2 = tmp2(1112).intl;
   obj7 = { answer: option.label };
   if (null != onRemove) {
-    const obj8 = { name: "remove", label: intl3.string(_modDef4131.HQEXJM) };
-    intl3 = tmp2(1113).intl;
+    const obj8 = { name: "remove", label: intl3.string(_modDef4190.HQEXJM) };
+    intl3 = tmp2(1112).intl;
     const items1 = [obj8];
     tmp12 = items1;
   } else if (null != option.image) {
@@ -222,10 +222,10 @@ function ImageOptionTile(option) {
     const obj13 = { style: tmp.indicator, children: tmp13Result };
     if (multi) {
       const obj14 = { checked: selected };
-      tmp13Result = tmp13(tmp2(7734).FormCheckbox, obj14);
+      tmp13Result = tmp13(tmp2(7336).FormCheckbox, obj14);
     } else {
       const obj15 = { selected };
-      tmp13Result = tmp13(tmp2(7748).FormRadio, obj15);
+      tmp13Result = tmp13(tmp2(7350).FormRadio, obj15);
     }
     tmp13Result3 = tmp13(tmp9, obj13);
   } else {
@@ -234,7 +234,7 @@ function ImageOptionTile(option) {
   items3[1] = tmp13Result3;
   items4 = [React4(metroImportDefault, obj10), ];
   const obj16 = { variant: "body-xs/normal", color: "text-muted", lineClamp: 1, style: tmp.caption, children: tmp2Result.imageOptionCaption(option) };
-  const Text = tmp2(5919).Text;
+  const Text = tmp2(5504).Text;
   tmp2Result = ConjureImageOptions2;
   items4[1] = tmp13(Text, obj16);
   items5 = [React4(Card, obj6), ];
@@ -247,17 +247,17 @@ function ImageOptionTile(option) {
       items6 = [tmp.view, ];
       items6[1] = { top: frameHeight - nativeDefault.space.PX_32 };
       const obj18 = { top: frameHeight - nativeDefault.space.PX_32 };
-      IconButton = tmp2(7988).IconButton;
+      IconButton = tmp2(7591).IconButton;
       if (null != onRemove) {
-        MaximizeIcon = tmp2(6030).TrashIcon;
+        MaximizeIcon = tmp2(5620).TrashIcon;
       } else {
-        MaximizeIcon = tmp2(13739).MaximizeIcon;
+        MaximizeIcon = tmp2(18590).MaximizeIcon;
       }
-      obj19 = { icon: tmp13(MaximizeIcon, { size: "xs" }), size: "sm", variant: "secondary-overlay", onPress: onRemove, accessibilityLabel: intl4.formatToPlainString(_modDef4131.JGjZMs, obj20) };
+      obj19 = { icon: tmp13(MaximizeIcon, { size: "xs" }), size: "sm", variant: "secondary-overlay", onPress: onRemove, accessibilityLabel: intl4.formatToPlainString(_modDef4190.JGjZMs, obj20) };
       if (null == onRemove) {
         onRemove = () => closure_1_3(option);
       }
-      intl4 = tmp2(1113).intl;
+      intl4 = tmp2(1112).intl;
       obj20 = { answer: option.label };
       tmp13Result4 = tmp13(tmp9, obj17);
     }

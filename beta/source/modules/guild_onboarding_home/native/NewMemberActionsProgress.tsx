@@ -1,21 +1,21 @@
-// Module ID: 18931
-// Function ID: 18932
+// Module ID: 17724
+// Function ID: 17725
 // Name: NewMemberActionsProgress
-// Dependencies: [19, 17, 5218, 7080, 9001, 5162, 5224, 21, 5306, 575, 5883, 563, 1406, 7428, 1099, 5919, 1113, 1187, 12975, 2]
+// Dependencies: [19, 17, 4825, 6684, 8511, 4769, 4831, 21, 4913, 575, 5468, 563, 1404, 7030, 1098, 5504, 1112, 1186, 10928, 2]
 // Exports: NewMemberActionsProgress
 
-// Module 18931 (NewMemberActionsProgress)
+// Module 17724 (NewMemberActionsProgress)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import ChannelConstants from "ChannelConstants" /* 5162 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 5224 */;
-import LinearGradientDefault from "LinearGradient" /* 5883 */;
+import ChannelConstants from "ChannelConstants" /* 4769 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4831 */;
+import LinearGradientDefault from "LinearGradient" /* 5468 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 5218 */;
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7080 */;
-import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 9001 */;
+import GuildMemberStore from "GuildMemberStore" /* 4825 */;
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 6684 */;
+import GuildOnboardingMemberActionStore from "GuildOnboardingMemberActionStore" /* 8511 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let c10;

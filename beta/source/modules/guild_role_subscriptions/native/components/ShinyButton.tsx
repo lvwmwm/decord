@@ -1,17 +1,17 @@
-// Module ID: 11264
-// Function ID: 11265
+// Module ID: 11289
+// Function ID: 11290
 // Name: ShinyButton
-// Dependencies: [19, 21, 5306, 575, 5927, 1187, 11265, 2]
+// Dependencies: [19, 21, 4913, 575, 5512, 1186, 11290, 2]
 // Exports: default
 
-// Module 11264 (ShinyButton)
+// Module 11289 (ShinyButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 1187 */;
-import BaseTextButton2 from "BaseTextButton" /* 5927 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11265 */;
+import native from "native" /* 1186 */;
+import BaseTextButton2 from "BaseTextButton" /* 5512 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11290 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let obj2;
@@ -43,7 +43,7 @@ export default function ShinyButton(style) {
   const BaseTextButton = BaseTextButton2.BaseTextButton;
   if (!loading) {
     const obj2 = { size: native.Icon.Sizes.REFRESH_SMALL_16, source: AssetRegistryDefault, style: items1 };
-    const Icon = tmp4(1187).Icon;
+    const Icon = tmp4(1186).Icon;
     items1 = [tmp2.sparkleIcon, ];
     if (disabled) {
       disabled = tmp2.disabled;

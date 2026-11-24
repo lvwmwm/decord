@@ -1,17 +1,17 @@
-// Module ID: 10673
-// Function ID: 10674
+// Module ID: 13809
+// Function ID: 13810
 // Name: GuildProfileCreateTagUpsell
-// Dependencies: [19, 17, 21, 5306, 10674, 10677, 5542, 10678, 7937, 5919, 1113, 2]
+// Dependencies: [19, 17, 21, 4913, 13810, 13812, 5127, 13813, 7539, 5504, 1112, 2]
 // Exports: default
 
-// Module 10673 (GuildProfileCreateTagUpsell)
+// Module 13809 (GuildProfileCreateTagUpsell)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
-import openGuildTagCreateFlowDefault from "openGuildTagCreateFlow" /* 10678 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7539 */;
+import openGuildTagCreateFlowDefault from "openGuildTagCreateFlow" /* 13813 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const Pressable = react_native.Pressable;
@@ -25,14 +25,14 @@ export default function GuildProfileCreateTagUpsell(guildId) {
   let creatableGuilds;
   let tmp2 = guildId;
   const tmp = closure_5();
-  let obj = guildId(10674);
-  const guildTagCreationUpsell = obj.useGuildTagCreationUpsell("GuildProfileCreateTagUpsell", creatableGuilds(10677));
+  let obj = guildId(13810);
+  const guildTagCreationUpsell = obj.useGuildTagCreationUpsell("GuildProfileCreateTagUpsell", creatableGuilds(13812));
   creatableGuilds = guildTagCreationUpsell.creatableGuilds;
   let tmp5 = null;
   if (guildTagCreationUpsell.isUpsellVisible) {
-    ({ variant: "body-md/medium", color: "text-muted", children: intl.string(tmp2(1113).t.J0YWRq) });
-    const Text = tmp2(5919).Text;
-    intl = tmp2(1113).intl;
+    ({ variant: "body-md/medium", color: "text-muted", children: intl.string(tmp2(1112).t.J0YWRq) });
+    const Text = tmp2(5504).Text;
+    intl = tmp2(1112).intl;
     tmp5 = <Pressable style={tmp.upsell} role="button" onPress={function handlePress() {
       const obj = ActionSheetActionCreatorsDefault;
       obj.hideActionSheet("GuildProfileActionSheet:" + guildId);

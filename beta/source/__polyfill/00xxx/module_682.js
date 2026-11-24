@@ -5,7 +5,7 @@
 
 // Module 682
 import TRACE_FLAG_NONE from "TRACE_FLAG_NONE" /* 683 */;
-import _mod687 from "module_687" /* 687 */;
+import DEBUG_BUILD from "DEBUG_BUILD" /* 687 */;
 import SPAN_STATUS_ERROR from "SPAN_STATUS_ERROR" /* 704 */;
 import _mod713 from "module_713" /* 713 */;
 import _mod715 from "module_715" /* 715 */;
@@ -25,7 +25,7 @@ export function registerSpanErrorInstrumentation() {
         rootSpan = tmpResult.getRootSpan(activeSpan);
       }
       if (rootSpan) {
-        if (_mod687.DEBUG_BUILD) {
+        if (DEBUG_BUILD.DEBUG_BUILD) {
           const debug = tmp(tmp2[2]).debug;
           const _HermesInternal = HermesInternal;
           debug.log("[Tracing] Root span: " + "internal_error" + " -> Global error occurred");

@@ -1,20 +1,20 @@
-// Module ID: 19610
-// Function ID: 19611
+// Module ID: 18871
+// Function ID: 18872
 // Name: IncomingRequestRow
-// Dependencies: [19, 5307, 2165, 10244, 1072, 21, 1655, 563, 1113, 5362, 18767, 14952, 10581, 19275, 19611, 2]
+// Dependencies: [19, 4914, 2164, 9646, 1071, 21, 1653, 563, 1112, 4969, 17563, 13538, 9661, 18077, 18872, 2]
 // Exports: ConnectedIncomingGameFriendRequestRow, IncomingFriendRequestRow
 
-// Module 19610 (IncomingRequestRow)
+// Module 18871 (IncomingRequestRow)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1072 */;
-import intl6 from "intl" /* 1113 */;
-import UserUtilsDefault from "UserUtils" /* 5362 */;
-import UserRowConstants from "UserRowConstants" /* 10244 */;
-import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 14952 */;
-import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 18767 */;
+import Constants from "Constants" /* 1071 */;
+import intl6 from "intl" /* 1112 */;
+import UserUtilsDefault from "UserUtils" /* 4969 */;
+import UserRowConstants from "UserRowConstants" /* 9646 */;
+import ApplicationIconAndNameDefault from "ApplicationIconAndName" /* 13538 */;
+import AddFriendsScreenUtils from "AddFriendsScreenUtils" /* 17563 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5307 */;
-import ApplicationStore from "ApplicationStore" /* 2165 */;
+import AccessibilityStore from "AccessibilityStore" /* 4914 */;
+import ApplicationStore from "ApplicationStore" /* 2164 */;
 import size from "module_2" /* 2 */;
 
 function IncomingRequestRow(user) {
@@ -116,21 +116,21 @@ function IncomingGameFriendRequestRow(arg0) {
   const merged = Object.assign(arg0, Object.assign({ user: 0, application: 0 }));
   const obj = UserUtilsDefault;
   const userTag = obj.useUserTag(user);
-  const intl = application(1113).intl;
-  const intl2 = application(1113).intl;
+  const intl = application(1112).intl;
+  const intl2 = application(1112).intl;
   const obj3 = {
     applicationNameHook() {
       return jsx(ApplicationIconAndNameDefault, { application, textVariant: "body-xs/medium", iconSize: 12 }, application.id);
     }
   };
-  const intl3 = application(1113).intl;
+  const intl3 = application(1112).intl;
   const obj4 = { name: userTag, applicationName: application.name };
-  const intl4 = application(1113).intl;
+  const intl4 = application(1112).intl;
   const obj5 = { name: userTag, applicationName: application.name };
-  const intl5 = application(1113).intl;
+  const intl5 = application(1112).intl;
   const obj6 = { name: userTag, applicationName: application.name };
   const merged1 = Object.assign(merged);
-  return <IncomingRequestRow user={user} applicationId={application.id} accessibilityLabel={intl.formatToPlainString(application(1113).t.u6lp4x, { name: userTag })} acceptedRequestLabel={intl2.format(application(1113).t.gRgJGR, obj3)} acceptedRequestAccessibilityLabel={intl3.formatToPlainString(application(1113).t.Ke6fRJ, obj4)} acceptRequestAccessibilityLabel={intl4.formatToPlainString(application(1113).t.kMUpdH, obj5)} ignoreRequestAccessibilityLabel={intl5.formatToPlainString(application(1113).t.d8Cw5e, obj6)} />;
+  return <IncomingRequestRow user={user} applicationId={application.id} accessibilityLabel={intl.formatToPlainString(application(1112).t.u6lp4x, { name: userTag })} acceptedRequestLabel={intl2.format(application(1112).t.gRgJGR, obj3)} acceptedRequestAccessibilityLabel={intl3.formatToPlainString(application(1112).t.Ke6fRJ, obj4)} acceptRequestAccessibilityLabel={intl4.formatToPlainString(application(1112).t.kMUpdH, obj5)} ignoreRequestAccessibilityLabel={intl5.formatToPlainString(application(1112).t.d8Cw5e, obj6)} />;
 }
 const UserRowModes = UserRowConstants.UserRowModes;
 const RelationshipTypes = Constants.RelationshipTypes;

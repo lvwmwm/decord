@@ -1,11 +1,10 @@
-// Module ID: 9790
-// Function ID: 9791
+// Module ID: 9314
+// Function ID: 9315
 // Name: ErrorUtils
-// Dependencies: [9791, 2]
-// Exports: getUnderlyingIOSError, serializeError
+// Dependencies: [2]
+// Exports: getUnderlyingIOSError
 
-// Module 9790 (ErrorUtils)
-import BAGGAGE_HEADER_NAME from "BAGGAGE_HEADER_NAME" /* 9791 */;
+// Module 9314 (ErrorUtils)
 import size from "module_2" /* 2 */;
 
 function getUnderlyingIOSExceptionRecursively(NSUnderlyingError) {
@@ -26,23 +25,4 @@ export function getUnderlyingIOSError(message) {
   } catch (err) {
     return null;
   }
-}
-export function serializeError(arg0) {
-  let error = arg0;
-  if (!Boolean(arg0)) {
-    const _Error = Error;
-    const self = this;
-    const self2 = this;
-    error = new Error("unknown error");
-  }
-  let error1 = error;
-  if (typeof error !== "object") {
-    const _Error2 = Error;
-    const _String = String;
-    const self3 = this;
-    const self4 = this;
-    error1 = new Error(String(error));
-  }
-  const obj = BAGGAGE_HEADER_NAME;
-  return stringify(obj.normalizeToSize(error1));
 }

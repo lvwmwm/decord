@@ -1,21 +1,21 @@
-// Module ID: 19867
-// Function ID: 19868
+// Module ID: 19116
+// Function ID: 19117
 // Name: LaunchPadWrapper
-// Dependencies: [32, 19, 17, 12404, 1072, 21, 5306, 575, 13123, 1108, 5482, 19868, 11253, 1256, 19865, 5544, 6322, 7416, 1655, 19869, 6318, 1113, 6289, 19871, 2]
+// Dependencies: [32, 19, 17, 11933, 1071, 21, 4913, 575, 13743, 1107, 5089, 19117, 10598, 1255, 19118, 5129, 5924, 7018, 1653, 19119, 5920, 1112, 5891, 19121, 2]
 // Exports: default
 
-// Module 19867 (LaunchPadWrapper)
+// Module 19116 (LaunchPadWrapper)
 import nativeDefault from "native" /* 575 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import HapticUtils from "HapticUtils" /* 5544 */;
-import LaunchPadConstants from "LaunchPadConstants" /* 12404 */;
-import LaunchPadPullTabCache from "LaunchPadPullTabCache" /* 19865 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import HapticUtils from "HapticUtils" /* 5129 */;
+import LaunchPadConstants from "LaunchPadConstants" /* 11933 */;
+import LaunchPadPullTabCache from "LaunchPadPullTabCache" /* 19118 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1072 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let c10;
@@ -57,6 +57,7 @@ export default function LaunchPadWrapper(launchPadType) {
   let obj4;
   let obj7;
   let str2;
+  let str3;
   let updaters;
   launchPadType = launchPadType.launchPadType;
   ({ gestureState, launchPadShown, launchPadSharedState, updaters } = launchPadType);
@@ -109,7 +110,7 @@ export default function LaunchPadWrapper(launchPadType) {
         const tmp5 = closure_3;
         if (tmp5) {
           const tmp2Result = HapticUtils;
-          const result1 = tmp2Result.triggerHapticFeedback(tmp2(5544).HapticFeedbackTypes.IMPACT_LIGHT);
+          const result1 = tmp2Result.triggerHapticFeedback(tmp2(5129).HapticFeedbackTypes.IMPACT_LIGHT);
         }
       }
     }
@@ -172,14 +173,14 @@ export default function LaunchPadWrapper(launchPadType) {
   items6[1] = tmp20Result;
   const obj6 = { style: launchPadStyles, pointerEvents: "none", children: closure_13(AccessibilityView, obj7) };
   const View2 = tmp5(tmp3[18]).View;
-  let str3 = "no";
   obj7 = { nativeID: "launch-pad", style: tmp.modalWrapper, onAccessibilityEscape: onPress, accessibilityViewIsModal: tmp7, children: items7 };
+  const obj8 = { accessibilityElementsHidden: !tmp7, importantForAccessibility: str3, accessibilityRole: "button", accessibilityLabel: intl.string(tmp2(isModalOpen[21]).t.WAI6xu), onPress, style: tmp.a11yDismiss };
+  str3 = "no";
   AccessibilityView = tmp2(tmp3[20]).AccessibilityView;
   const tmp23 = onPress;
   if (tmp7) {
     str3 = "yes";
   }
-  const obj8 = { importantForAccessibility: str3, accessibilityRole: "button", accessibilityLabel: intl.string(tmp2(isModalOpen[21]).t.WAI6xu), onPress, style: tmp.a11yDismiss };
   intl = tmp2(tmp3[21]).intl;
   items7 = [closure_12(tmp23, obj8), , ];
   const obj9 = { accessible: false, "aria-hidden": true, onPress, style: absoluteFill.absoluteFillObject };

@@ -1,13 +1,13 @@
-// Module ID: 15595
-// Function ID: 15596
+// Module ID: 14327
+// Function ID: 14328
 // Name: getApplicationFromMessage
-// Dependencies: [2143, 15592, 7291, 2]
+// Dependencies: [2142, 14324, 6897, 2]
 // Exports: getApplicationFromMessage
 
-// Module 15595 (getApplicationFromMessage)
-import SpotifyConstants from "SpotifyConstants" /* 7291 */;
-import SpotifyApplicationRecord from "SpotifyApplicationRecord" /* 15592 */;
-import ApplicationRecord from "ApplicationRecord" /* 2143 */;
+// Module 14327 (getApplicationFromMessage)
+import SpotifyConstants from "SpotifyConstants" /* 6897 */;
+import SpotifyApplicationRecord from "SpotifyApplicationRecord" /* 14324 */;
+import ApplicationRecord from "ApplicationRecord" /* 2142 */;
 import size from "module_2" /* 2 */;
 
 const SpotifyApplication = SpotifyApplicationRecord.SpotifyApplication;

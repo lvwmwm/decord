@@ -1,17 +1,17 @@
-// Module ID: 7605
-// Function ID: 7606
+// Module ID: 7207
+// Function ID: 7208
 // Name: CrunchyrollLinkLanding
-// Dependencies: [19, 7604, 1072, 21, 5306, 1113, 7606, 1502, 7441, 7608, 2188, 2]
+// Dependencies: [19, 7206, 1071, 21, 4913, 1112, 7208, 1500, 7043, 7210, 2187, 2]
 // Exports: default
 
-// Module 7605 (CrunchyrollLinkLanding)
+// Module 7207 (CrunchyrollLinkLanding)
 import Fragment from "Fragment" /* 21 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
-import CrunchyrollLinkConstants from "CrunchyrollLinkConstants" /* 7604 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7608 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2187 */;
+import CrunchyrollLinkConstants from "CrunchyrollLinkConstants" /* 7206 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7210 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 1072 */;
-import createStyles from "createStyles" /* 5306 */;
+import Constants from "Constants" /* 1071 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -26,7 +26,7 @@ const result = size.fileFinishedImporting("modules/user_settings/connections/nat
 
 export default function CrunchyrollLinkLanding() {
   const tmp = closure_8();
-  let obj = navigation(1502);
+  let obj = navigation(1500);
   navigation = obj.useNavigation();
   let items = [navigation];
   const memo = react.useMemo(() => {
@@ -39,9 +39,9 @@ export default function CrunchyrollLinkLanding() {
   const callback = react.useCallback(() => {
     navigation.push(constants.PRE_CONNECT);
   }, items);
-  const TwoWayLinkLanding = navigation(7441).TwoWayLinkLanding;
-  let intl = navigation(1113).intl;
-  const intl2 = navigation(1113).intl;
+  const TwoWayLinkLanding = navigation(7043).TwoWayLinkLanding;
+  let intl = navigation(1112).intl;
+  const intl2 = navigation(1112).intl;
   const obj3 = HelpdeskUtilsDefault;
-  return <TwoWayLinkLanding platformType={constants2.CRUNCHYROLL} img={AssetRegistryDefault} imgStyle={tmp.image} headerConnect={intl.string(navigation(1113).t["Da+3NJ"])} body={intl2.string(navigation(1113).t.MaPpPL)} learnMoreLink={obj3.getArticleURL(constants.CRUNCHYROLL_CONNECTION)} onNext={callback} valueProps={memo} />;
+  return <TwoWayLinkLanding platformType={constants2.CRUNCHYROLL} img={AssetRegistryDefault} imgStyle={tmp.image} headerConnect={intl.string(navigation(1112).t["Da+3NJ"])} body={intl2.string(navigation(1112).t.MaPpPL)} learnMoreLink={obj3.getArticleURL(constants.CRUNCHYROLL_CONNECTION)} onNext={callback} valueProps={memo} />;
 };

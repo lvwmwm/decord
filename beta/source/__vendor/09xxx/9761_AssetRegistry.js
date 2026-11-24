@@ -1,10 +1,10 @@
 // Module ID: 9761
 // Function ID: 9762
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 9761 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/virtual_currency/images/native", width: 576, height: 324, scales: [1], hash: "83d6f52e41f68a6a0f493020b6be93e9", name: "hero-orbs", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "2d4d5e1376e3dc7d0fa68688da698fba", name: "ic_community_guild_badge_light_24px", type: "png" });

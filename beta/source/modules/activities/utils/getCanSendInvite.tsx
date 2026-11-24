@@ -1,14 +1,14 @@
-// Module ID: 15598
-// Function ID: 15599
+// Module ID: 14330
+// Function ID: 14331
 // Name: getCanSendInvite
-// Dependencies: [1072, 12690, 8470, 12691, 12692, 12693, 2]
+// Dependencies: [1071, 12187, 8061, 12188, 12189, 12190, 2]
 // Exports: getCanSendInvite
 
-// Module 15598 (getCanSendInvite)
-import isInviteActiveDefault from "isInviteActive" /* 12690 */;
-import _slicedToArray from "_slicedToArray" /* 12691 */;
-import hasPartySize from "hasPartySize" /* 12692 */;
-import Constants from "Constants" /* 1072 */;
+// Module 14330 (getCanSendInvite)
+import isInviteActiveDefault from "isInviteActive" /* 12187 */;
+import _slicedToArray from "_slicedToArray" /* 12188 */;
+import hasPartySize from "hasPartySize" /* 12189 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -29,7 +29,7 @@ export function getCanSendInvite(applicationActivity, author, application1, id3)
       }
       if (type !== constants2.JOIN_REQUEST) {
         return false;
-      } else if (tmp11(8470)(applicationActivity, constants.JOIN)) {
+      } else if (tmp11(8061)(applicationActivity, constants.JOIN)) {
         const obj = _slicedToArray;
         const partySize = obj.getPartySize(applicationActivity);
         const obj2 = hasPartySize;
@@ -37,7 +37,7 @@ export function getCanSendInvite(applicationActivity, author, application1, id3)
         let isPartyFullResult = !hasPartySizeResult;
         const tmp5 = require;
         if (hasPartySizeResult) {
-          const tmp5Result = tmp5(12693);
+          const tmp5Result = tmp5(12190);
           isPartyFullResult = tmp5Result.isPartyFull(partySize);
         }
         return !isPartyFullResult;

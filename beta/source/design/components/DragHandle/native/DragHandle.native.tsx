@@ -1,16 +1,16 @@
-// Module ID: 7447
-// Function ID: 7448
+// Module ID: 7049
+// Function ID: 7050
 // Name: DragHandle
-// Dependencies: [19, 21, 5306, 12, 7448, 1113, 7449, 2]
+// Dependencies: [19, 21, 4913, 12, 7050, 1112, 7051, 2]
 // Exports: DragHandle
 
-// Module 7447 (DragHandle)
+// Module 7049 (DragHandle)
 import _mod12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
-import BaseIconButton2 from "BaseIconButton" /* 7448 */;
-import DragIcon from "DragIcon" /* 7449 */;
+import BaseIconButton2 from "BaseIconButton" /* 7050 */;
+import DragIcon from "DragIcon" /* 7051 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -67,8 +67,8 @@ export function DragHandle(variant) {
     str3 = "button";
   }
   if (accessibilityLabel == null) {
-    const intl = tmp7(1113).intl;
-    accessibilityLabel = intl.string(tmp7(1113).t["0dOFq+"]);
+    const intl = tmp7(1112).intl;
+    accessibilityLabel = intl.string(tmp7(1112).t["0dOFq+"]);
   }
   let str4 = "icon-only";
   if ("overlay" === str) {

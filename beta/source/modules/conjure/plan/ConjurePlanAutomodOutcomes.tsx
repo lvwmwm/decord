@@ -1,14 +1,14 @@
-// Module ID: 13731
-// Function ID: 13732
+// Module ID: 18582
+// Function ID: 18583
 // Name: ConjurePlanAutomodOutcomes
-// Dependencies: [5220, 1113, 4131, 6047, 2]
+// Dependencies: [4827, 1112, 4190, 5637, 2]
 // Exports: groupPlanAutomodExamples, planAutomodReasonText, renderPlanAutomodExampleContent
 
-// Module 13731 (ConjurePlanAutomodOutcomes)
-import intl7 from "intl" /* 1113 */;
-import _modDef4131 from "module_4131" /* 4131 */;
-import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 5220 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 6047 */;
+// Module 18582 (ConjurePlanAutomodOutcomes)
+import intl7 from "intl" /* 1112 */;
+import _modDef4190 from "module_4190" /* 4190 */;
+import GuildDisableCommunicationConstants from "GuildDisableCommunicationConstants" /* 4827 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 5637 */;
 import size from "module_2" /* 2 */;
 
 const getFriendlyDurationString = GuildDisableCommunicationConstants.getFriendlyDurationString;
@@ -16,28 +16,28 @@ let obj = {
   alert: {
     label() {
       const intl = intl7.intl;
-      return intl.string(_modDef4131.Vi4cjL);
+      return intl.string(_modDef4190.Vi4cjL);
     },
     blockedStyle: false
   },
   block: {
     label() {
       const intl = intl7.intl;
-      return intl.string(_modDef4131.YdnZ8q);
+      return intl.string(_modDef4190.YdnZ8q);
     },
     blockedStyle: true
   },
   timeout: {
     label() {
       const intl = intl7.intl;
-      return intl.string(_modDef4131.QGrx9O);
+      return intl.string(_modDef4190.QGrx9O);
     },
     blockedStyle: true
   },
   allow: {
     label() {
       const intl = intl7.intl;
-      return intl.string(_modDef4131.RGzFNK);
+      return intl.string(_modDef4190.RGzFNK);
     },
     blockedStyle: false
   }
@@ -46,21 +46,21 @@ let obj2 = {
   blocked: {
     label() {
       const intl = intl7.intl;
-      return intl.string(_modDef4131.YdnZ8q);
+      return intl.string(_modDef4190.YdnZ8q);
     },
     tone: "red"
   },
   alert: {
     label() {
       const intl = intl7.intl;
-      return intl.string(_modDef4131["8ockl9"]);
+      return intl.string(_modDef4190["8ockl9"]);
     },
     tone: "blurple"
   },
   allowed: {
     label() {
       const intl = intl7.intl;
-      return intl.string(_modDef4131.RGzFNK);
+      return intl.string(_modDef4190.RGzFNK);
     },
     tone: "green"
   }
@@ -93,25 +93,25 @@ export function planAutomodReasonText(example) {
       if (null == tmp6) {
         let formatToPlainStringResult;
         if (timeout_seconds % c6 === 0) {
-          const intl6 = tmp2(1113).intl;
+          const intl6 = tmp2(1112).intl;
           const obj2 = { weeks: timeout_seconds / tmp10 };
-          formatToPlainStringResult = intl6.formatToPlainString(tmp2(1113).t.EmoBD2, obj2);
+          formatToPlainStringResult = intl6.formatToPlainString(tmp2(1112).t.EmoBD2, obj2);
         } else if (timeout_seconds % 86400 === 0) {
-          const intl5 = tmp2(1113).intl;
+          const intl5 = tmp2(1112).intl;
           const obj3 = { days: timeout_seconds / 86400 };
-          formatToPlainStringResult = intl5.formatToPlainString(tmp2(1113).t["k2UNz+"], obj3);
+          formatToPlainStringResult = intl5.formatToPlainString(tmp2(1112).t["k2UNz+"], obj3);
         } else if (timeout_seconds % 3600 === 0) {
-          const intl4 = tmp2(1113).intl;
+          const intl4 = tmp2(1112).intl;
           const obj4 = { hours: timeout_seconds / 3600 };
-          formatToPlainStringResult = intl4.formatToPlainString(tmp2(1113).t.xCjYxK, obj4);
+          formatToPlainStringResult = intl4.formatToPlainString(tmp2(1112).t.xCjYxK, obj4);
         } else if (timeout_seconds % 60 === 0) {
-          const intl3 = tmp2(1113).intl;
+          const intl3 = tmp2(1112).intl;
           const obj5 = { mins: timeout_seconds / 60 };
-          formatToPlainStringResult = intl3.formatToPlainString(tmp2(1113).t.opVZ9q, obj5);
+          formatToPlainStringResult = intl3.formatToPlainString(tmp2(1112).t.opVZ9q, obj5);
         } else {
-          const intl2 = tmp2(1113).intl;
+          const intl2 = tmp2(1112).intl;
           const obj = { secs: timeout_seconds };
-          formatToPlainStringResult = intl2.formatToPlainString(tmp2(1113).t["4zv/jq"], obj);
+          formatToPlainStringResult = intl2.formatToPlainString(tmp2(1112).t["4zv/jq"], obj);
         }
         tmp6 = formatToPlainStringResult;
       }

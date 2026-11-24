@@ -1,15 +1,15 @@
-// Module ID: 15602
-// Function ID: 15603
+// Module ID: 14334
+// Function ID: 14335
 // Name: usePresenceActivityInviteCoverImageURL
-// Dependencies: [19, 15603, 2024, 7313, 504, 15604, 2]
+// Dependencies: [19, 14335, 2022, 6917, 504, 14336, 2]
 // Exports: getPresenceActivityInviteCoverImageURL, usePresenceActivityInviteCoverImageURL
 
-// Module 15602 (usePresenceActivityInviteCoverImageURL)
-import react_nativeDefault from "react-native" /* 2024 */;
-import ApplicationAssetUtils from "ApplicationAssetUtils" /* 7313 */;
-import MessageActivityInviteCoverImageActionCreatorsAll from "MessageActivityInviteCoverImageActionCreators" /* 15604 */;
+// Module 14334 (usePresenceActivityInviteCoverImageURL)
+import react_nativeDefault from "react-native" /* 2022 */;
+import ApplicationAssetUtils from "ApplicationAssetUtils" /* 6917 */;
+import MessageActivityInviteCoverImageActionCreatorsAll from "MessageActivityInviteCoverImageActionCreators" /* 14336 */;
 import react from "react" /* 19 */;
-import MessageActivityInviteCoverImageStore from "MessageActivityInviteCoverImageStore" /* 15603 */;
+import MessageActivityInviteCoverImageStore from "MessageActivityInviteCoverImageStore" /* 14335 */;
 import size from "module_2" /* 2 */;
 
 function _getPresenceActivityInviteCoverImageURL(messageId) {

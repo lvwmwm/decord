@@ -1,27 +1,27 @@
-// Module ID: 17629
-// Function ID: 17630
+// Module ID: 16401
+// Function ID: 16402
 // Name: HexagonCampaignSheet
-// Dependencies: [5, 32, 19, 17, 1193, 1388, 16847, 5331, 5557, 1240, 1083, 21, 1398, 1399, 10066, 5306, 575, 5336, 504, 7918, 7937, 15316, 5334, 7994, 1630, 2174, 5332, 17087, 6957, 17630, 6005, 1113, 5542, 17628, 4516, 5889, 10271, 5919, 17638, 5556, 7913, 17110, 5926, 17639, 7746, 7954, 17640, 2]
+// Dependencies: [5, 32, 19, 17, 1192, 1386, 15634, 4938, 5142, 1239, 1082, 21, 1396, 1397, 9456, 4913, 575, 4943, 9457, 504, 7520, 7539, 14047, 4941, 7597, 1628, 2173, 4939, 15852, 6561, 16402, 5595, 1112, 5127, 16400, 4597, 5474, 9659, 5504, 16410, 5141, 7515, 15876, 5511, 16411, 7348, 7556, 16412, 2]
 // Exports: default
 
-// Module 17629 (HexagonCampaignSheet)
+// Module 16401 (HexagonCampaignSheet)
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1083 */;
-import ClientThemesConstants from "ClientThemesConstants" /* 1240 */;
-import DisplayNameFont from "DisplayNameFont" /* 1398 */;
-import DisplayNameEffect from "DisplayNameEffect" /* 1399 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5557 */;
-import useDisplayNameStylesFont from "useDisplayNameStylesFont" /* 10066 */;
+import Constants from "Constants" /* 1082 */;
+import ClientThemesConstants from "ClientThemesConstants" /* 1239 */;
+import DisplayNameFont from "DisplayNameFont" /* 1396 */;
+import DisplayNameEffect from "DisplayNameEffect" /* 1397 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5142 */;
+import useDisplayNameStylesFont from "useDisplayNameStylesFont" /* 9456 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1193 */;
-import UserStore from "UserStore" /* 1388 */;
-import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 16847 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5331 */;
+import SelectivelySyncedUserSettingsStore from "SelectivelySyncedUserSettingsStore" /* 1192 */;
+import UserStore from "UserStore" /* 1386 */;
+import HexagonCampaignPersistedStore from "HexagonCampaignPersistedStore" /* 15634 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4938 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -122,15 +122,16 @@ export default function HexagonCampaignSheet() {
   let DISPLAY_NAME_STYLE;
   let DISPLAY_NAME_STYLE2;
   let TableRowGroup;
+  let Text;
   let analyticsLocations;
   let closure_7;
   let currentUser;
   let first1;
   let intl;
   let intl2;
-  let intl3;
   let intl4;
   let intl5;
+  let intl6;
   let items10;
   let items11;
   let items12;
@@ -139,30 +140,29 @@ export default function HexagonCampaignSheet() {
   let items8;
   let items9;
   let memo;
-  let obj10;
-  let obj14;
+  let obj11;
   let obj15;
-  let obj17;
+  let obj16;
   let obj18;
-  let obj20;
-  let obj22;
-  let obj25;
+  let obj19;
+  let obj21;
+  let obj23;
+  let obj26;
   let obj28;
   let obj29;
   let obj30;
-  let obj37;
   let obj38;
   let obj39;
-  let obj41;
+  let obj40;
+  let obj42;
   let onLayout;
   let ref;
   let result2;
   let stateFromStores;
-  let tmp17;
-  let tmp35;
-  let tmp42;
-  let tmp5Result3;
-  let tmp5Result4;
+  let tmp18;
+  let tmp39;
+  let tmp6Result3;
+  let tmp6Result4;
   let username;
   obj = function _handleSave() {
     let displayNameStyles;
@@ -208,8 +208,8 @@ export default function HexagonCampaignSheet() {
                   closure_2_7(true);
                   didApply = false;
                   analyticsLocations = 1;
-                  const obj5 = { selection, displayNameStyles, premiumType: tmp66.premiumType, isThemeSynced, analyticsLocations };
-                  const obj7 = closure_0(analyticsLocations[29]);
+                  obj5 = { selection, displayNameStyles, premiumType: tmp66.premiumType, isThemeSynced, analyticsLocations };
+                  const obj7 = closure_0(analyticsLocations[30]);
                   const result = obj7.applyHexagonCampaignPerks(obj5);
                   closure_2_9.current = result;
                   c3 = 2;
@@ -239,29 +239,29 @@ export default function HexagonCampaignSheet() {
             closure_129_7(false);
             const tmp12 = didApply;
             if (tmp12) {
-              const obj8 = { perks: values.filter((item) => closure_1_5[item]), content: closure_0(analyticsLocations[28]).QuestContent.AD_PERK_MODAL, sourceQuestContent: closure_0(analyticsLocations[28]).QuestContent.QUEST_HOME_MOBILE };
+              const obj8 = { perks: values.filter((item) => closure_1_5[item]), content: closure_0(analyticsLocations[29]).QuestContent.AD_PERK_MODAL, sourceQuestContent: closure_0(analyticsLocations[29]).QuestContent.QUEST_HOME_MOBILE };
               const _Object = Object;
-              const trackHexagonCampaignPerkAction = closure_0(analyticsLocations[27]).trackHexagonCampaignPerkAction;
-              const tmp26 = closure_0(analyticsLocations[27]);
+              const trackHexagonCampaignPerkAction = closure_0(analyticsLocations[28]).trackHexagonCampaignPerkAction;
+              const tmp26 = closure_0(analyticsLocations[28]);
               values = Object.values(result2);
               const result1 = trackHexagonCampaignPerkAction(obj8);
-              obj4 = tmp(analyticsLocations[32]);
-              obj4.hideActionSheet(closure_0(analyticsLocations[33]).HEXAGON_CAMPAIGN_SHEET_KEY);
+              const obj4 = tmp(analyticsLocations[33]);
+              obj4.hideActionSheet(closure_0(analyticsLocations[34]).HEXAGON_CAMPAIGN_SHEET_KEY);
               const _Object2 = Object;
               const values2 = Object.values(closure_129_5);
               const _Boolean = Boolean;
               if (values2.some(Boolean)) {
-                const obj9 = { text: intl2.string(tmp(analyticsLocations[34]).fX2UkH), variant: "success" };
-                const open2 = tmp(analyticsLocations[30]).open;
-                const tmp42 = tmp(analyticsLocations[30]);
-                intl2 = closure_0(analyticsLocations[31]).intl;
+                const obj9 = { text: intl2.string(tmp(analyticsLocations[35]).fX2UkH), variant: "success" };
+                const open2 = tmp(analyticsLocations[31]).open;
+                const tmp42 = tmp(analyticsLocations[31]);
+                intl2 = closure_0(analyticsLocations[32]).intl;
                 open2("HEXAGON_CAMPAIGN_THEME_EQUIPPED", obj9);
               }
             } else {
-              obj10 = { text: intl.string(closure_0(analyticsLocations[31]).t.F8FvUy) };
-              const open = tmp(analyticsLocations[30]).open;
-              const tmp16 = tmp(analyticsLocations[30]);
-              intl = closure_0(analyticsLocations[31]).intl;
+              const obj10 = { text: intl.string(closure_0(analyticsLocations[32]).t.F8FvUy) };
+              const open = tmp(analyticsLocations[31]).open;
+              const tmp16 = tmp(analyticsLocations[31]);
+              intl = closure_0(analyticsLocations[32]).intl;
               open("HEXAGON_CAMPAIGN_APPLY_ERROR", obj10);
             }
           }
@@ -283,59 +283,59 @@ export default function HexagonCampaignSheet() {
   let tmp2 = stateFromStores;
   const tmp3 = analyticsLocations;
   obj = stateFromStores(analyticsLocations[18]);
+  const displayNameFontsAvailable = obj.useDisplayNameFontsAvailable();
+  let obj2 = stateFromStores(analyticsLocations[19]);
   const items = [currentUser];
-  stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  let obj2 = stateFromStores(analyticsLocations[18]);
+  stateFromStores = obj2.useStateFromStores(items, () => currentUser.getCurrentUser());
+  let obj3 = stateFromStores(analyticsLocations[19]);
   const items1 = [closure_7];
-  importDefault = obj2.useStateFromStores(items1, () => closure_7.shouldSync("appearance"));
-  let tmp5 = importDefault;
-  const tmp6 = require("useAnalyticsLocations");
-  analyticsLocations = tmp6(require("AnalyticsLocation").QUEST_HOME_PAGE).analyticsLocations;
-  let obj3 = stateFromStores(analyticsLocations[21]);
-  const currentAppIcon = obj3.useCurrentAppIcon();
-  let obj4 = {};
-  let tmp8 = result2;
+  importDefault = obj3.useStateFromStores(items1, () => closure_7.shouldSync("appearance"));
+  const tmp7 = require("useAnalyticsLocations");
+  analyticsLocations = tmp7(require("AnalyticsLocation").QUEST_HOME_PAGE).analyticsLocations;
+  let obj4 = stateFromStores(analyticsLocations[22]);
+  const currentAppIcon = obj4.useCurrentAppIcon();
+  let obj5 = {};
   ({ CLIENT_THEME, CLIENT_THEME: CLIENT_THEME2 } = result2);
-  let obj5 = stateFromStores(analyticsLocations[17]);
-  obj4[CLIENT_THEME] = obj5.useHexagonCampaignPerkAvailability(CLIENT_THEME2, "HexagonCampaignSheet") === memo.SELECTABLE;
-  ({ DISPLAY_NAME_STYLE, DISPLAY_NAME_STYLE: DISPLAY_NAME_STYLE2 } = result2);
   let obj6 = stateFromStores(analyticsLocations[17]);
-  obj4[DISPLAY_NAME_STYLE] = obj6.useHexagonCampaignPerkAvailability(DISPLAY_NAME_STYLE2, "HexagonCampaignSheet") === memo.SELECTABLE;
-  ({ APP_ICON, APP_ICON: APP_ICON2 } = result2);
+  obj5[CLIENT_THEME] = obj6.useHexagonCampaignPerkAvailability(CLIENT_THEME2, "HexagonCampaignSheet") === memo.SELECTABLE;
+  ({ DISPLAY_NAME_STYLE, DISPLAY_NAME_STYLE: DISPLAY_NAME_STYLE2 } = result2);
   let obj7 = stateFromStores(analyticsLocations[17]);
-  obj4[APP_ICON] = obj7.useHexagonCampaignPerkAvailability(APP_ICON2, "HexagonCampaignSheet") === memo.SELECTABLE;
-  let obj8 = stateFromStores(analyticsLocations[18]);
+  obj5[DISPLAY_NAME_STYLE] = obj7.useHexagonCampaignPerkAvailability(DISPLAY_NAME_STYLE2, "HexagonCampaignSheet") === memo.SELECTABLE;
+  ({ APP_ICON, APP_ICON: APP_ICON2 } = result2);
+  let obj8 = stateFromStores(analyticsLocations[17]);
+  obj5[APP_ICON] = obj8.useHexagonCampaignPerkAvailability(APP_ICON2, "HexagonCampaignSheet") === memo.SELECTABLE;
+  let obj9 = stateFromStores(analyticsLocations[19]);
   const items2 = [closure_9];
-  const stateFromStores1 = obj8.useStateFromStores(items2, () => closure_9.hasAppliedPerk);
-  let obj9 = stateFromStores(analyticsLocations[18]);
+  const stateFromStores1 = obj9.useStateFromStores(items2, () => closure_9.hasAppliedPerk);
+  let obj10 = stateFromStores(analyticsLocations[19]);
   const items3 = [closure_9];
-  const stateFromStores2 = obj9.useStateFromStores(items3, () => closure_9.previousPerkValues);
+  const stateFromStores2 = obj10.useStateFromStores(items3, () => closure_9.previousPerkValues);
+  let tmp12 = stateFromStores(analyticsLocations[23]);
   let displayNameStyles;
-  const hasHexagonCampaignDisplayNameFont = stateFromStores(analyticsLocations[22]).hasHexagonCampaignDisplayNameFont;
-  const tmp11 = stateFromStores(analyticsLocations[22]);
+  const hasHexagonCampaignDisplayNameFont = tmp12.hasHexagonCampaignDisplayNameFont;
   if (stateFromStores != null) {
     displayNameStyles = stateFromStores.displayNameStyles;
   }
   let result = hasHexagonCampaignDisplayNameFont(displayNameStyles);
-  const tmp2Result = tmp2(tmp3[22]);
+  const tmp2Result = tmp2(tmp3[23]);
   let result1 = tmp2Result.isHexagonCampaignAppIcon(currentAppIcon);
-  const first = _slicedToArray(obj10.useState(stateFromStores1), 1)[0];
-  let tmp16 = _slicedToArray(obj10.useState({}), 2);
-  [tmp17, _slicedToArray] = tmp16;
-  obj10 = {};
-  let merged = Object.assign(obj4);
-  let merged1 = Object.assign(tmp17);
-  [first1, closure_7] = obj10.useState(false);
-  currentUser = obj10.useRef(false);
-  closure_9 = obj10.useRef(null);
-  const tmp22 = tmp5(tmp3[23])();
-  const height = tmp22.height;
+  const first = _slicedToArray(obj11.useState(stateFromStores1), 1)[0];
+  const tmp17 = _slicedToArray(obj11.useState({}), 2);
+  [tmp18, _slicedToArray] = tmp17;
+  obj11 = {};
+  let merged = Object.assign(obj5);
+  let merged1 = Object.assign(tmp18);
+  [first1, closure_7] = obj11.useState(false);
+  currentUser = obj11.useRef(false);
+  closure_9 = obj11.useRef(null);
+  const tmp23 = require("useMeasuredLayout")();
+  const height = tmp23.height;
   let num = 0;
-  ({ ref, onLayout } = tmp22);
+  ({ ref, onLayout } = tmp23);
   if (undefined !== height) {
     num = height;
   }
-  const sum = Math.max(tmp5(tmp3[24])().bottom, obj) + 4;
+  const sum = Math.max(tmp6(tmp3[25])().bottom, obj) + 4;
   let displayNameStyles1;
   if (stateFromStores != null) {
     displayNameStyles1 = stateFromStores.displayNameStyles;
@@ -343,25 +343,25 @@ export default function HexagonCampaignSheet() {
   if (displayNameStyles1 == null) {
     displayNameStyles1 = obj;
   }
-  const tmp5Result = tmp5(tmp3[25]);
-  result2 = tmp5Result.canUsePremiumProfileCustomization(stateFromStores);
-  let tmp26 = displayNameStyles1;
+  const tmp6Result = require("PremiumUtils");
+  result2 = tmp6Result.canUsePremiumProfileCustomization(stateFromStores);
+  let tmp27 = displayNameStyles1;
   if (result) {
     let displayNameStyles2;
-    const getHexagonCampaignRestoredDisplayNameStyles = tmp2(tmp3[22]).getHexagonCampaignRestoredDisplayNameStyles;
-    tmp2(tmp3[22]);
+    const getHexagonCampaignRestoredDisplayNameStyles = tmp2(tmp3[23]).getHexagonCampaignRestoredDisplayNameStyles;
+    tmp2(tmp3[23]);
     if (stateFromStores != null) {
       displayNameStyles2 = stateFromStores.displayNameStyles;
     }
-    const obj12 = { currentDisplayNameStyles: displayNameStyles2, previousDisplayNameStyles: stateFromStores2.displayNameStyles, canUsePremiumProfileCustomization: result2 };
-    let hexagonCampaignRestoredDisplayNameStyles = getHexagonCampaignRestoredDisplayNameStyles(obj12);
+    const obj13 = { currentDisplayNameStyles: displayNameStyles2, previousDisplayNameStyles: stateFromStores2.displayNameStyles, canUsePremiumProfileCustomization: result2 };
+    let hexagonCampaignRestoredDisplayNameStyles = getHexagonCampaignRestoredDisplayNameStyles(obj13);
     if (hexagonCampaignRestoredDisplayNameStyles == null) {
       hexagonCampaignRestoredDisplayNameStyles = obj;
     }
-    tmp26 = hexagonCampaignRestoredDisplayNameStyles;
+    tmp27 = hexagonCampaignRestoredDisplayNameStyles;
   }
   const items4 = [result2, displayNameStyles1];
-  memo = obj11.useMemo(() => {
+  memo = obj12.useMemo(() => {
     let tmp5;
     obj = {};
     if (result2) {
@@ -375,27 +375,27 @@ export default function HexagonCampaignSheet() {
     }
     return tmp5;
   }, items4);
-  if (obj10[tmp8.DISPLAY_NAME_STYLE]) {
-    tmp26 = memo;
+  if (obj11[result2.DISPLAY_NAME_STYLE]) {
+    tmp27 = memo;
   }
   let HEXAGON = currentAppIcon;
   if (result1) {
     let DEFAULT = stateFromStores2.appIconId;
     if (DEFAULT == null) {
-      DEFAULT = tmp2(tmp3[26]).FreemiumAppIconIds.DEFAULT;
+      DEFAULT = tmp2(tmp3[27]).FreemiumAppIconIds.DEFAULT;
     }
     HEXAGON = DEFAULT;
   }
-  if (obj10[tmp8.APP_ICON]) {
-    HEXAGON = tmp2(tmp3[26]).LimitedTimeAppIconIds.HEXAGON;
+  if (obj11[result2.APP_ICON]) {
+    HEXAGON = tmp2(tmp3[27]).LimitedTimeAppIconIds.HEXAGON;
   }
-  const effect = obj11.useEffect(() => {
-    obj = stateFromStores(analyticsLocations[27]);
-    const obj2 = { content: stateFromStores(analyticsLocations[28]).QuestContent.AD_PERK_MODAL, sourceQuestContent: stateFromStores(analyticsLocations[28]).QuestContent.QUEST_HOME_MOBILE };
+  const effect = obj12.useEffect(() => {
+    obj = stateFromStores(analyticsLocations[28]);
+    const obj2 = { content: stateFromStores(analyticsLocations[29]).QuestContent.AD_PERK_MODAL, sourceQuestContent: stateFromStores(analyticsLocations[29]).QuestContent.QUEST_HOME_MOBILE };
     const result = obj.trackHexagonCampaignContentViewed(obj2);
   }, []);
-  const tmp2Result4 = tmp2(tmp3[35]);
-  const unmountEffect = tmp2Result4.useUnmountEffect(obj4(function*(arg0, value) {
+  const tmp2Result4 = tmp2(tmp3[36]);
+  const unmountEffect = tmp2Result4.useUnmountEffect(obj5(function*(arg0, value) {
     let c2;
     let closure_0;
     let intl;
@@ -428,7 +428,7 @@ export default function HexagonCampaignSheet() {
             tmp = undefined;
             analyticsLocations = 1;
             c3 = 1;
-            obj4 = { value: ref.current, done: false };
+            const obj4 = { value: ref.current, done: false };
             return obj4;
           }
         } else {
@@ -438,7 +438,7 @@ export default function HexagonCampaignSheet() {
               throw value;
             } else if (arg0 === 2) {
               c3 = 3;
-              const obj5 = { value, done: true };
+              obj5 = { value, done: true };
               return obj5;
             } else {
               tmp = value;
@@ -458,10 +458,10 @@ export default function HexagonCampaignSheet() {
             const obj7 = { value, done: true };
             return obj7;
           } else if (!value) {
-            obj = { text: intl.string(tmp(analyticsLocations[31]).t.F8FvUy) };
-            const open = closure_1(analyticsLocations[30]).open;
-            const tmp8 = closure_1(analyticsLocations[30]);
-            intl = tmp(analyticsLocations[31]).intl;
+            obj = { text: intl.string(tmp(analyticsLocations[32]).t.F8FvUy) };
+            const open = closure_1(analyticsLocations[31]).open;
+            const tmp8 = closure_1(analyticsLocations[31]);
+            intl = tmp(analyticsLocations[32]).intl;
             open("HEXAGON_CAMPAIGN_APPLY_ERROR", obj);
           }
           c3 = 3;
@@ -476,41 +476,47 @@ export default function HexagonCampaignSheet() {
   if (null == stateFromStores) {
     return null;
   } else {
-    const obj13 = { perk: tmp8.CLIENT_THEME, label: intl2.string(tmp5(tmp3[34]).TTUKuI), icon: closure_15(first1, obj14) };
-    intl2 = tmp2(tmp3[31]).intl;
-    obj14 = { style: tmp.rowIcon, children: closure_15(tmp2(tmp3[36]).Gradient, obj15) };
-    const items5 = [obj13, , ];
-    obj15 = { gradient: HEXAGON_GRADIENT_PRESET, absolute: true };
-    const obj16 = { perk: tmp8.DISPLAY_NAME_STYLE, label: intl3.string(tmp2(tmp3[31]).t.NEzEws), icon: closure_15(first1, obj17) };
-    intl3 = tmp2(tmp3[31]).intl;
-    obj17 = { style: items6, children: closure_15(tmp2(tmp3[37]).Text, obj18) };
+    const obj14 = { perk: result2.CLIENT_THEME, label: intl5.string(require("module_4597").TTUKuI), icon: closure_15(first1, obj15) };
+    intl5 = tmp2(tmp3[32]).intl;
+    let tmp42 = closure_15;
+    obj15 = { style: tmp.rowIcon, children: closure_15(tmp2(tmp3[37]).Gradient, obj16) };
+    const items5 = [obj14, , ];
+    obj16 = { gradient: HEXAGON_GRADIENT_PRESET, absolute: true };
+    const obj17 = { perk: result2.DISPLAY_NAME_STYLE, label: intl6.string(tmp2(tmp3[32]).t.NEzEws), icon: tmp42(first1, obj18) };
+    intl6 = tmp2(tmp3[32]).intl;
+    obj18 = { style: items6, children: tmp42(Text, obj19) };
     items6 = [, ];
-    ({ rowIcon: arr11[0], fontRowIcon: arr11[1] } = tmp);
-    obj18 = { variant: "body-sm/semibold", color: "text-overlay-light", style: tmp.fontRowIconText, children: "Gg" };
-    items5[1] = obj16;
-    const obj19 = { perk: tmp8.APP_ICON, label: intl4.string(tmp2(tmp3[31]).t.RPh2ou), icon: closure_15(tmp5Result3, obj20) };
-    intl4 = tmp2(tmp3[31]).intl;
-    obj20 = { id: tmp2(tmp3[26]).LimitedTimeAppIconIds.HEXAGON, size: 32, style: tmp.rowIcon };
-    items5[2] = obj19;
-    tmp5Result3 = tmp5(tmp3[38]);
-    const obj21 = { header: closure_16(first1, obj22), footer: closure_15(first1, obj25), startExpanded: true, children: tmp42(first1, obj29) };
-    tmp42 = closure_16;
-    obj22 = { children: items7 };
-    const BottomSheet = tmp2(tmp3[39]).BottomSheet;
-    const obj23 = { title: intl5.string(tmp5(tmp3[34]).rZmLDm) };
-    const BottomSheetTitleHeader = tmp2(tmp3[40]).BottomSheetTitleHeader;
-    intl5 = tmp2(tmp3[31]).intl;
-    items7 = [closure_15(BottomSheetTitleHeader, obj23), ];
-    const obj24 = { style: tmp.badgeRow, children: closure_15(tmp5(tmp3[41]), {}) };
-    items7[1] = closure_15(first1, obj24);
-    obj25 = { style: items8, ref, onLayout, children: closure_15(Button, obj28) };
+    ({ rowIcon: arr13[0], fontRowIcon: arr13[1] } = tmp);
+    let fontRowIconText;
+    Text = tmp2(tmp3[38]).Text;
+    const tmp44 = HEXAGON_GRADIENT_PRESET;
+    if (displayNameFontsAvailable) {
+      fontRowIconText = tmp.fontRowIconText;
+    }
+    obj19 = { variant: "body-sm/semibold", color: "text-overlay-light", style: fontRowIconText, children: "Gg" };
+    items5[1] = obj17;
+    const obj20 = { perk: result2.APP_ICON, label: intl.string(tmp2(tmp3[32]).t.RPh2ou), icon: tmp42(tmp6Result3, obj21) };
+    intl = tmp2(tmp3[32]).intl;
+    obj21 = { id: tmp2(tmp3[27]).LimitedTimeAppIconIds.HEXAGON, size: 32, style: tmp.rowIcon };
+    items5[2] = obj20;
+    tmp6Result3 = require("AppIcon");
+    const obj22 = { header: closure_16(first1, obj23), footer: tmp42(first1, obj26), startExpanded: true, children: tmp36(first1, obj29) };
+    obj23 = { children: items7 };
+    const BottomSheet = tmp2(tmp3[40]).BottomSheet;
+    const obj24 = { title: intl2.string(require("module_4597").rZmLDm) };
+    const BottomSheetTitleHeader = tmp2(tmp3[41]).BottomSheetTitleHeader;
+    intl2 = tmp2(tmp3[32]).intl;
+    items7 = [tmp42(BottomSheetTitleHeader, obj24), ];
+    const obj25 = { style: tmp.badgeRow, children: tmp42(require("HexagonCampaignDaysLeftBadge"), {}) };
+    items7[1] = tmp42(first1, obj25);
+    obj26 = { style: items8, ref, onLayout, children: tmp42(Button, obj28) };
     items8 = [tmp.footer, ];
-    const obj26 = { paddingBottom: sum };
-    items8[1] = obj26;
-    Button = tmp2(tmp3[42]).Button;
-    const intl6 = tmp2(tmp3[31]).intl;
-    const string = intl6.string;
-    const t = tmp2(tmp3[31]).t;
+    const obj27 = { paddingBottom: sum };
+    items8[1] = obj27;
+    Button = tmp2(tmp3[43]).Button;
+    const intl3 = tmp2(tmp3[32]).intl;
+    const string = intl3.string;
+    const t = tmp2(tmp3[32]).t;
     obj28 = {
       size: "lg",
       grow: true,
@@ -523,36 +529,35 @@ export default function HexagonCampaignSheet() {
     };
     obj29 = { style: obj30, children: items12 };
     const _Math = Math;
-    let tmp42Result = obj10[tmp8.CLIENT_THEME];
+    let tmp36Result = obj11[tmp9.CLIENT_THEME];
     obj30 = { paddingBottom: Math.max(num - sum, 0) };
     const obj31 = { style: tmp.content, children: items11 };
     const obj32 = { style: tmp.card, children: items10 };
-    const tmp40 = HEXAGON_GRADIENT_PRESET;
-    if (tmp42Result) {
+    if (tmp36Result) {
       const obj33 = { children: items9 };
-      const obj34 = { gradient: tmp40, absolute: true, angleOverride: 143.48 };
-      items9 = [tmp38(tmp2(tmp3[36]).Gradient, obj34), ];
+      const obj34 = { gradient: tmp44, absolute: true, angleOverride: 143.48 };
+      items9 = [tmp42(tmp2(tmp3[37]).Gradient, obj34), ];
       const obj35 = { style: tmp.cardShade };
-      items9[1] = closure_15(first1, obj35);
-      tmp42Result = tmp42(closure_17, obj33);
+      items9[1] = tmp42(first1, obj35);
+      tmp36Result = tmp36(closure_17, obj33);
     }
-    items10 = [tmp42Result, ];
-    const obj36 = { style: tmp.previewArea, children: closure_15(tmp35, obj37) };
-    obj37 = { overlay: closure_15(tmp5(tmp3[38]), obj38), children: closure_15(tmp5Result4, obj39) };
-    obj38 = { id: HEXAGON, size, style: tmp.previewAppIcon };
-    obj39 = { user: stateFromStores, displayName: username, selectedFontId: null, selectedEffectId: null, selectedColors: null, hideNameplate: true, hideBadges: true, hidePronouns: true, hideGuildTag: true, tilted: true, chatMessage: intl.string(tmp5(tmp3[34])["U/irIt"]) };
+    items10 = [tmp36Result, ];
+    const obj36 = { style: tmp.previewArea, children: tmp42(tmp39, obj38) };
+    obj38 = { overlay: tmp42(require("AppIcon"), obj39), children: tmp42(tmp6Result4, obj40) };
+    obj39 = { id: HEXAGON, size, style: tmp.previewAppIcon };
+    obj40 = { user: stateFromStores, displayName: username, selectedFontId: null, selectedEffectId: null, selectedColors: null, hideNameplate: true, hideBadges: true, hidePronouns: true, hideGuildTag: true, tilted: true, chatMessage: intl4.string(require("module_4597")["U/irIt"]) };
     username = stateFromStores.globalName;
-    tmp35 = ScaledPreview;
-    tmp5Result4 = tmp5(tmp3[43]);
+    tmp39 = ScaledPreview;
+    tmp6Result4 = require("DisplayNameStylesEditPreview");
     if (username == null) {
       username = stateFromStores.username;
     }
-    ({ fontId: obj27.selectedFontId, effectId: obj27.selectedEffectId, colors: obj27.selectedColors } = tmp26);
-    intl = tmp2(tmp3[31]).intl;
-    items10[1] = closure_15(first1, obj36);
-    items11 = [tmp42(tmp39, obj32), ];
-    const obj40 = { style: tmp.rows, children: closure_15(TableRowGroup, obj41) };
-    obj41 = {
+    ({ fontId: obj37.selectedFontId, effectId: obj37.selectedEffectId, colors: obj37.selectedColors } = tmp27);
+    intl4 = tmp2(tmp3[32]).intl;
+    items10[1] = tmp42(first1, obj36);
+    items11 = [tmp36(tmp43, obj32), ];
+    const obj41 = { style: tmp.rows, children: tmp42(TableRowGroup, obj42) };
+    obj42 = {
       hasIcons: true,
       children: items5.map((perk) => {
           let icon;
@@ -563,7 +568,7 @@ export default function HexagonCampaignSheet() {
           obj = {
             icon,
             label,
-            value: obj10[perk],
+            value: obj11[perk],
             disabled: tmp2,
             onValueChange(arg0) {
               let closure_0 = arg0;
@@ -576,19 +581,19 @@ export default function HexagonCampaignSheet() {
             }
           };
           tmp2 = first1;
-          const TableSwitchRow = stateFromStores(analyticsLocations[45]).TableSwitchRow;
+          const TableSwitchRow = stateFromStores(analyticsLocations[46]).TableSwitchRow;
           const tmp = closure_1_15;
           if (!first1) {
-            tmp2 = !obj4[perk];
+            tmp2 = !obj5[perk];
           }
           return tmp(TableSwitchRow, obj, perk);
         })
     };
-    TableRowGroup = tmp2(tmp3[44]).TableRowGroup;
-    items11[1] = closure_15(first1, obj40);
-    items12 = [tmp42(tmp39, obj31), ];
-    const obj42 = { style: tmp.legal, children: closure_15(tmp5(tmp3[46]), { showLogo: true }) };
-    items12[1] = closure_15(first1, obj42);
-    return closure_15(BottomSheet, obj21);
+    TableRowGroup = tmp2(tmp3[45]).TableRowGroup;
+    items11[1] = tmp42(first1, obj41);
+    items12 = [tmp36(tmp43, obj31), ];
+    const obj43 = { style: tmp.legal, children: tmp42(require("HexagonCampaignThemeLegal"), { showLogo: true }) };
+    items12[1] = tmp42(first1, obj43);
+    return tmp42(BottomSheet, obj22);
   }
 };

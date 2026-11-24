@@ -1,17 +1,17 @@
-// Module ID: 11271
-// Function ID: 11272
+// Module ID: 11296
+// Function ID: 11297
 // Name: PremiumUpsellGradientBackground
-// Dependencies: [19, 17, 9435, 21, 5306, 5883, 1092, 2]
+// Dependencies: [19, 17, 8951, 21, 4913, 5468, 1091, 2]
 // Exports: PremiumUpsellGradientBackground
 
-// Module 11271 (PremiumUpsellGradientBackground)
+// Module 11296 (PremiumUpsellGradientBackground)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import ConstantsIOS from "ConstantsIOS" /* 1092 */;
-import LinearGradientDefault from "LinearGradient" /* 5883 */;
-import ColorConstants from "ColorConstants" /* 9435 */;
+import ConstantsIOS from "ConstantsIOS" /* 1091 */;
+import LinearGradientDefault from "LinearGradient" /* 5468 */;
+import ColorConstants from "ColorConstants" /* 8951 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

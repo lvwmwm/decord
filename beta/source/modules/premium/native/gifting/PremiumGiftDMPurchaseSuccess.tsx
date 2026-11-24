@@ -1,20 +1,20 @@
-// Module ID: 11840
-// Function ID: 11841
+// Module ID: 13948
+// Function ID: 13949
 // Name: PremiumGiftDMPurchaseSuccess
-// Dependencies: [19, 17, 21, 5306, 575, 11664, 1502, 11673, 11662, 5926, 1113, 2765, 11751, 5919, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 9468, 1500, 9466, 5511, 1112, 2888, 9616, 5504, 2]
 // Exports: PremiumGiftDMSuccessActions, default
 
-// Module 11840 (PremiumGiftDMPurchaseSuccess)
+// Module 13948 (PremiumGiftDMPurchaseSuccess)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl3 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import PremiumGiftModal from "PremiumGiftModal" /* 11662 */;
-import NativeGiftContext from "NativeGiftContext" /* 11664 */;
-import PremiumGiftBackgroundAnimationDefault from "PremiumGiftBackgroundAnimation" /* 11751 */;
+import intl3 from "intl" /* 1112 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import PremiumGiftModal from "PremiumGiftModal" /* 9466 */;
+import NativeGiftContext from "NativeGiftContext" /* 9468 */;
+import PremiumGiftBackgroundAnimationDefault from "PremiumGiftBackgroundAnimation" /* 9616 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -63,21 +63,17 @@ export function PremiumGiftDMSuccessActions() {
   const prePurchaseGiftingBadgeProgress = nativeGiftContext.prePurchaseGiftingBadgeProgress;
   const obj2 = onClose(navigation[6]);
   navigation = obj2.useNavigation();
-  const GiftingBadgeExperiment = onClose(navigation[7]).GiftingBadgeExperiment;
-  const enabled = GiftingBadgeExperiment.useConfig({ location: "PremiumGiftDMSuccessActions" }).enabled;
-  const items = [enabled, prePurchaseGiftingBadgeProgress, navigation, onClose];
-  const callback = enabled.useCallback(() => {
-    const tmp = enabled;
-    if (tmp) {
-      if (null != prePurchaseGiftingBadgeProgress) {
-        const obj = { currentProgress: tmp2 };
-        navigation.navigate(PremiumGiftModal.PremiumGiftScreens.GIFTING_BADGE, obj);
-      }
+  const items = [prePurchaseGiftingBadgeProgress, navigation, onClose];
+  const callback = react.useCallback(() => {
+    if (null != prePurchaseGiftingBadgeProgress) {
+      const obj = { currentProgress: tmp };
+      navigation.navigate(PremiumGiftModal.PremiumGiftScreens.GIFTING_BADGE, obj);
+    } else {
+      onClose();
     }
-    onClose();
   }, items);
-  const obj3 = { text: intl.string(prePurchaseGiftingBadgeProgress(navigation[11]).bGKjmg), variant: "primary", onPress: callback };
-  const Button = onClose(navigation[9]).Button;
-  intl = onClose(navigation[10]).intl;
+  const obj3 = { text: intl.string(prePurchaseGiftingBadgeProgress(navigation[10]).bGKjmg), variant: "primary", onPress: callback };
+  const Button = onClose(navigation[8]).Button;
+  intl = onClose(navigation[9]).intl;
   return closure_5(Button, obj3);
 }

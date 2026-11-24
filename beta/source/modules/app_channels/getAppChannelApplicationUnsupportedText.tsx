@@ -1,12 +1,12 @@
-// Module ID: 8153
-// Function ID: 8154
+// Module ID: 7756
+// Function ID: 7757
 // Name: getAppChannelApplicationUnsupportedText
-// Dependencies: [8154, 1113, 2]
+// Dependencies: [7757, 1112, 2]
 // Exports: default
 
-// Module 8153 (getAppChannelApplicationUnsupportedText)
-import intl4 from "intl" /* 1113 */;
-import GuildEmbeddedApplicationUnsupportedReason from "GuildEmbeddedApplicationUnsupportedReason" /* 8154 */;
+// Module 7756 (getAppChannelApplicationUnsupportedText)
+import intl4 from "intl" /* 1112 */;
+import GuildEmbeddedApplicationUnsupportedReason from "GuildEmbeddedApplicationUnsupportedReason" /* 7757 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/app_channels/getAppChannelApplicationUnsupportedText.tsx");
@@ -15,13 +15,13 @@ export default function getAppChannelApplicationUnsupportedText(supported) {
   if (!supported.supported) {
     const reason = supported.reason;
     if (GuildEmbeddedApplicationUnsupportedReason.GuildEmbeddedApplicationUnsupportedReason.REQUIRES_BOT === reason) {
-      const intl3 = tmp(1113).intl;
+      const intl3 = tmp(1112).intl;
       return intl3.string(intl4.t.V4y5nG);
     } else if (GuildEmbeddedApplicationUnsupportedReason.GuildEmbeddedApplicationUnsupportedReason.SURFACE_NOT_SUPPORTED === reason) {
-      const intl2 = tmp(1113).intl;
+      const intl2 = tmp(1112).intl;
       return intl2.string(intl4.t["iUWcU/"]);
     } else {
-      const intl = tmp(1113).intl;
+      const intl = tmp(1112).intl;
       return intl.string(intl4.t.GZa4J0);
     }
   }

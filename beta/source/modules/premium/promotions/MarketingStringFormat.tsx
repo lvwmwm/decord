@@ -1,13 +1,13 @@
-// Module ID: 9676
-// Function ID: 9677
+// Module ID: 9199
+// Function ID: 9200
 // Name: MarketingStringFormat
-// Dependencies: [3, 1115, 1113, 2]
+// Dependencies: [3, 1114, 1112, 2]
 // Exports: formatMarketingPlainString, formatMarketingString
 
-// Module 9676 (MarketingStringFormat)
+// Module 9199 (MarketingStringFormat)
 import LoggerDefault from "Logger" /* 3 */;
-import intl2 from "intl" /* 1113 */;
-import intl_util from "intl/util" /* 1115 */;
+import intl2 from "intl" /* 1112 */;
+import intl_util from "intl/util" /* 1114 */;
 import size from "module_2" /* 2 */;
 
 function formatWith(header, arg1, fn) {

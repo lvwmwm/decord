@@ -1,13 +1,13 @@
-// Module ID: 16997
-// Function ID: 16998
+// Module ID: 15756
+// Function ID: 15757
 // Name: voiceSettings
-// Dependencies: [6751, 1072, 7307, 12870, 2]
+// Dependencies: [6354, 1071, 6913, 10803, 2]
 
-// Module 16997 (voiceSettings)
-import Constants from "Constants" /* 1072 */;
-import Constants2 from "Constants" /* 6751 */;
-import OAuth2Scopes from "OAuth2Scopes" /* 7307 */;
-import NativeRPCHelpers from "NativeRPCHelpers" /* 12870 */;
+// Module 15756 (voiceSettings)
+import Constants from "Constants" /* 1071 */;
+import Constants2 from "Constants" /* 6354 */;
+import OAuth2Scopes from "OAuth2Scopes" /* 6913 */;
+import NativeRPCHelpers from "NativeRPCHelpers" /* 10803 */;
 import size from "module_2" /* 2 */;
 
 let obj3;

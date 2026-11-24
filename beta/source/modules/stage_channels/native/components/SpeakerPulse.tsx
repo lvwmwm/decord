@@ -1,18 +1,18 @@
-// Module ID: 16620
-// Function ID: 16621
+// Module ID: 15407
+// Function ID: 15408
 // Name: SpeakerPulse
-// Dependencies: [19, 17, 5307, 21, 5306, 575, 504, 1655, 5538, 2]
+// Dependencies: [19, 17, 4914, 21, 4913, 575, 504, 1653, 5123, 2]
 // Exports: default
 
-// Module 16620 (SpeakerPulse)
+// Module 15407 (SpeakerPulse)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import timing_timing from "timing/timing" /* 5538 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import timing_timing from "timing/timing" /* 5123 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5307 */;
+import AccessibilityStore from "AccessibilityStore" /* 4914 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -63,24 +63,24 @@ export default function SpeakerPulse(style) {
     if (stateFromStores) {
       const result = set(0);
       const result1 = sharedValue1.set(0);
-      const withRepeat = _mod1655.withRepeat;
-      _mod1655;
-      const withSequence = _mod1655.withSequence;
-      _mod1655;
-      const withDelay = _mod1655.withDelay;
-      _mod1655;
+      const withRepeat = _mod1653.withRepeat;
+      _mod1653;
+      const withSequence = _mod1653.withSequence;
+      _mod1653;
+      const withDelay = _mod1653.withDelay;
+      _mod1653;
       const obj2 = timing_timing;
       const withDelayResult = withDelay(100, obj2.withTiming(c9, { duration: 250 }));
-      const withDelay2 = _mod1655.withDelay;
-      _mod1655;
+      const withDelay2 = _mod1653.withDelay;
+      _mod1653;
       const obj3 = timing_timing;
       const withRepeatResult = withRepeat(withSequence(withDelayResult, withDelay2(250, obj3.withTiming(0, { duration: 500 }))), -1, false);
-      const withRepeat2 = _mod1655.withRepeat;
-      _mod1655;
-      const withSequence2 = _mod1655.withSequence;
-      _mod1655;
-      const withDelay3 = _mod1655.withDelay;
-      _mod1655;
+      const withRepeat2 = _mod1653.withRepeat;
+      _mod1653;
+      const withSequence2 = _mod1653.withSequence;
+      _mod1653;
+      const withDelay3 = _mod1653.withDelay;
+      _mod1653;
       const obj4 = timing_timing;
       const withDelay3Result = withDelay3(350, obj4.withTiming(c9, { duration: 250 }));
       const obj5 = timing_timing;

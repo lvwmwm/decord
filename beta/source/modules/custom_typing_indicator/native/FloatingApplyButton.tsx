@@ -1,17 +1,17 @@
-// Module ID: 18033
-// Function ID: 18034
+// Module ID: 16812
+// Function ID: 16813
 // Name: FloatingApplyButton
-// Dependencies: [19, 5307, 1626, 21, 504, 1630, 1655, 575, 5929, 5544, 5926, 2]
+// Dependencies: [19, 4914, 1624, 21, 504, 1628, 1653, 575, 5514, 5129, 5511, 2]
 // Exports: default
 
-// Module 18033 (FloatingApplyButton)
+// Module 16812 (FloatingApplyButton)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1626 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import HapticUtils from "HapticUtils" /* 5544 */;
+import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1624 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
+import HapticUtils from "HapticUtils" /* 5129 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5307 */;
+import AccessibilityStore from "AccessibilityStore" /* 4914 */;
 import size from "module_2" /* 2 */;
 
 let closure_5 = MediaKeyboardConstants.MEDIA_PICKER_SEND_BUTTON_SPRING;
@@ -44,7 +44,7 @@ export default function FloatingApplyButton(renderButton) {
   const items1 = [closure_7, visible];
   let c0;
   [tmp5, tmp6] = items1;
-  const obj2 = onPress(1655);
+  const obj2 = onPress(1653);
   class FloatingApplyButtonTsx1 {
     constructor() {
       let pointerEvents = "none";
@@ -60,11 +60,11 @@ export default function FloatingApplyButton(renderButton) {
   FloatingApplyButtonTsx1.__initData = tmp5;
   const animatedProps = obj2.useAnimatedProps(FloatingApplyButtonTsx1);
   const items3 = [closure_8, visible, , , , ];
-  const useAnimatedStyle = tmp(1655).useAnimatedStyle;
-  onPress(1655);
+  const useAnimatedStyle = tmp(1653).useAnimatedStyle;
+  onPress(1653);
   items3[2] = nativeDefault;
   items3[3] = stateFromStores;
-  items3[4] = onPress(5929).withSpring;
+  items3[4] = onPress(5514).withSpring;
   items3[5] = closure_5;
   c0 = undefined;
   let c1;
@@ -117,16 +117,16 @@ export default function FloatingApplyButton(renderButton) {
     const result = obj.triggerHapticFeedback(HapticUtils.HapticFeedbackTypes.IMPACT_MEDIUM);
     onPress();
   }, items5);
-  const View = tmp4(1655).View;
+  const View = tmp4(1653).View;
   let renderButtonResult;
-  const View2 = tmp4(1655).View;
+  const View2 = tmp4(1653).View;
   if (renderButton != null) {
     const obj5 = { text, disabled, onPress: callback };
     renderButtonResult = renderButton(obj5);
   }
   if (renderButtonResult == null) {
     const obj6 = { variant: "primary", size: "lg", disabled, onPress: callback, text, loading };
-    renderButtonResult = tmp17(tmp(5926).Button, obj6);
+    renderButtonResult = tmp17(tmp(5511).Button, obj6);
   }
   return <View style={animatedStyle}>{null}</View>;
 };

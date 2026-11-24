@@ -1,21 +1,21 @@
-// Module ID: 16343
-// Function ID: 16344
+// Module ID: 15115
+// Function ID: 15116
 // Name: ShareAttachments
-// Dependencies: [19, 17, 21, 1655, 5883, 1187, 5306, 575, 5538, 5303, 1113, 11124, 8879, 2]
+// Dependencies: [19, 17, 21, 1653, 5468, 1186, 4913, 575, 5123, 4910, 1112, 11193, 8474, 2]
 // Exports: default
 
-// Module 16343 (ShareAttachments)
+// Module 15115 (ShareAttachments)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 1187 */;
-import ColorUtils from "ColorUtils" /* 5303 */;
-import LinearGradientDefault from "LinearGradient" /* 5883 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 8879 */;
-import AttachmentPreviewDefault from "AttachmentPreview" /* 11124 */;
+import native from "native" /* 1186 */;
+import ColorUtils from "ColorUtils" /* 4910 */;
+import LinearGradientDefault from "LinearGradient" /* 5468 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 8474 */;
+import AttachmentPreviewDefault from "AttachmentPreview" /* 11193 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import module_1655 from "module_1655" /* 1655 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import module_1653 from "module_1653" /* 1653 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -30,7 +30,7 @@ let obj6;
 let obj7;
 const View = react_native.View;
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
-const LinearGradient = module_1655.createAnimatedComponent(LinearGradientDefault);
+const LinearGradient = module_1653.createAnimatedComponent(LinearGradientDefault);
 let obj = { duration: 300, easing: native.STANDARD_EASING };
 let createStyles = createStyles_mod;
 let obj2 = { containerRevamp: obj3, attachmentPreviewContentContainer: obj4, attachmentPreviewContentContainerRevamp: obj5, attachmentPreview: obj6, leftGradient: { width: 50, position: "absolute", left: 0, top: 0, bottom: 0, zIndex: 100 }, rightGradient: { width: 50, position: "absolute", right: 0, top: 0, bottom: 0, zIndex: 100 }, gradient: obj7 };
@@ -78,15 +78,15 @@ export default function ShareAttachments(arg0) {
   let sharedValue2;
   let tmp = closure_9();
   _require = tmp;
-  obj = require("module_1655");
+  obj = require("module_1653");
   const sharedValue = obj.useSharedValue(0);
-  const obj2 = require("module_1655");
+  const obj2 = require("module_1653");
   const sharedValue1 = obj2.useSharedValue(0);
-  let obj3 = require("module_1655");
+  let obj3 = require("module_1653");
   sharedValue2 = obj3.useSharedValue(0);
   const items = [closure_10, , , ];
-  const useAnimatedStyle = require("module_1655").useAnimatedStyle;
-  require("module_1655");
+  const useAnimatedStyle = require("module_1653").useAnimatedStyle;
+  require("module_1653");
   items[1] = require("timing/timing").withTiming;
   items[2] = sharedValue;
   items[3] = obj;
@@ -111,8 +111,8 @@ export default function ShareAttachments(arg0) {
   ShareAttachmentsTsx1.__initData = tmp9;
   const animatedStyle = useAnimatedStyle(ShareAttachmentsTsx1);
   const items2 = [closure_11, , , , , ];
-  const useAnimatedStyle2 = require("module_1655").useAnimatedStyle;
-  require("module_1655");
+  const useAnimatedStyle2 = require("module_1653").useAnimatedStyle;
+  require("module_1653");
   items2[1] = require("timing/timing").withTiming;
   items2[2] = sharedValue;
   items2[3] = sharedValue2;
@@ -147,7 +147,7 @@ export default function ShareAttachments(arg0) {
   c1 = undefined;
   c2 = undefined;
   [tmp22, tmp23, tmp24, tmp25] = items4;
-  const tmp2Result2 = require("module_1655");
+  const tmp2Result2 = require("module_1653");
   class ShareAttachmentsTsx3 {
     constructor(contentOffset) {
       const result = _undefined.set(contentOffset.contentOffset.x);

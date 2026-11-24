@@ -1,17 +1,17 @@
-// Module ID: 13483
-// Function ID: 13484
+// Module ID: 13016
+// Function ID: 13017
 // Name: BioMarkupUtils
-// Dependencies: [6333, 6334, 6048, 1456, 9216, 6047, 2070, 12, 2]
+// Dependencies: [5935, 5936, 5645, 1454, 8726, 5637, 2068, 12, 2]
 // Exports: getOrParseBioAST, parseBioReact, parseBioReactWithCachedAST
 
-// Module 13483 (BioMarkupUtils)
-import LRUCacheDefault from "LRUCache" /* 1456 */;
-import _modDef2070 from "module_2070" /* 2070 */;
-import MarkupReactRulesDefault from "MarkupReactRules" /* 6048 */;
-import MarkupRulesDefault from "MarkupRules" /* 6334 */;
-import combineMarkupRules_mod from "combineMarkupRules" /* 6333 */;
-import MarkupParser_mod from "MarkupParser" /* 9216 */;
-import MarkupUtils from "MarkupUtils" /* 6047 */;
+// Module 13016 (BioMarkupUtils)
+import LRUCacheDefault from "LRUCache" /* 1454 */;
+import _modDef2068 from "module_2068" /* 2068 */;
+import MarkupReactRulesDefault from "MarkupReactRules" /* 5645 */;
+import MarkupRulesDefault from "MarkupRules" /* 5936 */;
+import combineMarkupRules_mod from "combineMarkupRules" /* 5935 */;
+import MarkupParser from "markup/MarkupParser" /* 8726 */;
+import MarkupUtils_mod from "MarkupUtils" /* 5637 */;
 import module_12 from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -25,11 +25,11 @@ let c2 = importDefaultResultResult;
 let tmp4 = new LRUCacheDefault({ max: 2000 });
 let closure_3 = tmp4;
 let closure_4 = { allowGameMentions: true };
-let MarkupParser = MarkupParser_mod;
 let closure_5 = MarkupParser.reactParserFor(importDefaultResultResult);
+let MarkupUtils = MarkupUtils_mod;
 let closure_6 = MarkupUtils.astParserFor(importDefaultResultResult);
-MarkupParser = MarkupParser_mod;
-const reactParserFor = MarkupParser.reactParserFor;
+MarkupUtils = MarkupUtils_mod;
+const reactParserFor = MarkupUtils.reactParserFor;
 combineMarkupRules = combineMarkupRules_mod;
 const items1 = [module_12.omit(importDefaultResultResult, ["link", "url", "autolink", "customEmoji", "emoji", "commandMention"]), ];
 let obj = {
@@ -83,9 +83,9 @@ export function parseBioReactWithCachedAST(description, guildId) {
       const result = obj.set(combined, tmp5);
       value = tmp5;
     }
-    const reactFor = _modDef2070.reactFor;
-    _modDef2070;
-    const obj3 = _modDef2070;
+    const reactFor = _modDef2068.reactFor;
+    _modDef2068;
+    const obj3 = _modDef2068;
     return reactFor(obj3.ruleOutput(c2, "react"))(value);
   }
 }

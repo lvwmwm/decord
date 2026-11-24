@@ -1,12 +1,12 @@
-// Module ID: 12029
-// Function ID: 12030
+// Module ID: 10192
+// Function ID: 10193
 // Name: useUserIsTeen
-// Dependencies: [1388, 504, 2]
+// Dependencies: [1386, 504, 2]
 // Exports: useUserIsTeen
 
-// Module 12029 (useUserIsTeen)
+// Module 10192 (useUserIsTeen)
 import get_initialized from "get initialized" /* 504 */;
-import UserStore from "UserStore" /* 1388 */;
+import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 
 let currentUser;

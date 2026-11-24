@@ -4,31 +4,31 @@
 // Exports: dropUndefinedKeys, extractExceptionKeysForMessage, fill, getOriginalFunction, objectify
 
 // Module 686
-import _mod687 from "module_687" /* 687 */;
+import DEBUG_BUILD from "DEBUG_BUILD" /* 687 */;
 import _mod691 from "module_691" /* 691 */;
 
 let hasOwnProperty, map;
 
-function addNonEnumerableProperty(arg0, arg1, value) {
+function addNonEnumerableProperty(activeRootSpan, __sentry_may_have_lazy_routes__, host) {
   try {
     const _Object = Object;
-    const obj = { value, writable: true, configurable: true };
-    Object.defineProperty(arg0, arg1, obj);
+    const obj = { value: host, writable: true, configurable: true };
+    Object.defineProperty(activeRootSpan, __sentry_may_have_lazy_routes__, obj);
   } catch (err) {
     const tmp4 = require;
-    if (_mod687.DEBUG_BUILD) {
+    if (DEBUG_BUILD.DEBUG_BUILD) {
       const debug = tmp4(688).debug;
       const _HermesInternal = HermesInternal;
-      debug.log("Failed to add non-enumerable property \"" + arg1 + "\" to object", arg0);
+      debug.log("Failed to add non-enumerable property \"" + __sentry_may_have_lazy_routes__ + "\" to object", activeRootSpan);
     }
   }
 }
-function markFunctionWrapped(arg0, arg1) {
+function markFunctionWrapped(sentryWrapped, __sentry_wrapped__) {
   try {
-    const prototype = arg1.prototype || {};
-    arg1.prototype = prototype;
-    arg0.prototype = prototype;
-    addNonEnumerableProperty(arg0, "__sentry_original__", arg1);
+    const prototype = __sentry_wrapped__.prototype || {};
+    __sentry_wrapped__.prototype = prototype;
+    sentryWrapped.prototype = prototype;
+    addNonEnumerableProperty(sentryWrapped, "__sentry_original__", __sentry_wrapped__);
   } catch (err) {
   }
 }
@@ -105,17 +105,17 @@ function convertToPlainObject(type) {
     }
   }
 }
-function serializeEventTarget(arg0) {
+function serializeEventTarget(currentTarget) {
   try {
     let htmlTreeAsStringResult;
     const obj = _mod691;
     const tmp2 = require;
-    if (obj.isElement(arg0)) {
+    if (obj.isElement(currentTarget)) {
       const tmp2Result = tmp2(692);
-      htmlTreeAsStringResult = tmp2Result.htmlTreeAsString(arg0);
+      htmlTreeAsStringResult = tmp2Result.htmlTreeAsString(currentTarget);
     } else {
       const _Object = Object;
-      htmlTreeAsStringResult = toString.call(arg0);
+      htmlTreeAsStringResult = toString.call(currentTarget);
     }
     return htmlTreeAsStringResult;
   } catch (err) {
@@ -127,7 +127,7 @@ Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 export { addNonEnumerableProperty };
 export { convertToPlainObject };
 export function dropUndefinedKeys(obj) {
-  const f82326 = (item) => {
+  const f79034 = (item) => {
     obj = closure_1;
     let closure_0 = item;
     items = undefined;
@@ -145,7 +145,7 @@ export function dropUndefinedKeys(obj) {
           if (Array.isArray(item)) {
             items = [];
             let result = obj.set(item, items);
-            item = item.forEach(f82326);
+            item = item.forEach(f79034);
             value = items;
           } else {
             let constructor = item.constructor;
@@ -157,7 +157,7 @@ export function dropUndefinedKeys(obj) {
               let result1 = obj.set(item, obj2);
               let _Object2 = Object;
               let keys = Object.keys(item);
-              let item1 = keys.forEach(f82327);
+              let item1 = keys.forEach(f79035);
               value = obj2;
             }
           }
@@ -166,7 +166,7 @@ export function dropUndefinedKeys(obj) {
     }
     arr = push(value);
   };
-  const f82327 = (item) => {
+  const f79035 = (item) => {
     let arr = closure_1_0[item];
     if (undefined !== arr) {
       let obj2 = closure_1_1;
@@ -184,7 +184,7 @@ export function dropUndefinedKeys(obj) {
             if (Array.isArray(arr)) {
               let items = [];
               let result = obj2.set(arr, items);
-              item = arr.forEach(f82326);
+              item = arr.forEach(f79034);
               value = items;
             } else {
               let constructor = arr.constructor;
@@ -196,7 +196,7 @@ export function dropUndefinedKeys(obj) {
                 let result1 = obj2.set(arr, obj);
                 let _Object2 = Object;
                 let keys = Object.keys(arr);
-                let item1 = keys.forEach(f82327);
+                let item1 = keys.forEach(f79035);
                 value = obj;
               }
             }
@@ -220,7 +220,7 @@ export function dropUndefinedKeys(obj) {
         if (Array.isArray(obj)) {
           items = [];
           const result = map.set(obj, items);
-          const item = obj.forEach(f82326);
+          const item = obj.forEach(f79034);
           value = items;
         } else {
           const constructor = obj.constructor;
@@ -232,7 +232,7 @@ export function dropUndefinedKeys(obj) {
             const result1 = map.set(obj, obj);
             const _Object2 = Object;
             const keys = Object.keys(obj);
-            const item1 = keys.forEach(f82327);
+            const item1 = keys.forEach(f79035);
             value = obj;
           }
         }
@@ -241,8 +241,8 @@ export function dropUndefinedKeys(obj) {
   }
   return value;
 }
-export function extractExceptionKeysForMessage(arg0) {
-  const keys = Object.keys(convertToPlainObject(arg0));
+export function extractExceptionKeysForMessage(error) {
+  const keys = Object.keys(convertToPlainObject(error));
   const sorted = keys.sort();
   let str = "[object has no keys]";
   if (keys[0]) {
@@ -250,21 +250,21 @@ export function extractExceptionKeysForMessage(arg0) {
   }
   return str;
 }
-export function fill(arg0, arg1, fn) {
-  if (arg1 in arg0) {
-    if (typeof arg0[arg1] === "function") {
-      const tmp7 = fn(arg0[arg1]);
+export function fill(__sentry_wrapped__, arg1, fn) {
+  if (arg1 in __sentry_wrapped__) {
+    if (typeof __sentry_wrapped__[arg1] === "function") {
+      const tmp7 = fn(__sentry_wrapped__[arg1]);
       if (typeof tmp7 === "function") {
-        markFunctionWrapped(tmp7, arg0[arg1]);
+        markFunctionWrapped(tmp7, __sentry_wrapped__[arg1]);
       }
       try {
-        arg0[arg1] = tmp7;
+        __sentry_wrapped__[arg1] = tmp7;
       } catch (err) {
         const tmp2 = require;
-        if (_mod687.DEBUG_BUILD) {
+        if (DEBUG_BUILD.DEBUG_BUILD) {
           const debug = tmp2(688).debug;
           const _HermesInternal = HermesInternal;
-          debug.log("Failed to replace method \"" + arg1 + "\" in object", arg0);
+          debug.log("Failed to replace method \"" + arg1 + "\" in object", __sentry_wrapped__);
         }
       }
     }

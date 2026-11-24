@@ -1,13 +1,12 @@
 // Module ID: 11427
 // Function ID: 11428
-// Dependencies: [41, 42, 93, 95, 98, 11428, 11432, 11436]
+// Dependencies: [41, 42, 93, 95, 98, 11422]
 
 // Module 11427
-import _mod11428 from "module_11428" /* 11428 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 11436 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 11422 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
-import c3 from "_possibleConstructorReturn" /* 93 */;
+import map from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
@@ -26,61 +25,44 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-const regExp = new RegExp("(?:(?:within|in|for)\\s*)?(?:(?:about|around|roughly|approximately|just)\\s*(?:~\\s*)?)?(" + _mod11428.TIME_UNITS_PATTERN + ")(?=\\W|$)", "i");
-const regExp1 = new RegExp("(?:within|in|for)\\s*(?:(?:about|around|roughly|approximately|just)\\s*(?:~\\s*)?)?(" + _mod11428.TIME_UNITS_PATTERN + ")(?=\\W|$)", "i");
-const regExp2 = new RegExp("(?:within|in|for)\\s*(?:(?:about|around|roughly|approximately|just)\\s*(?:~\\s*)?)?(" + _mod11428.TIME_UNITS_NO_ABBR_PATTERN + ")(?=\\W|$)", "i");
-class ENTimeUnitWithinFormatParser {
-  constructor(strictMode) {
+const regExp = new RegExp("([0-9]|0[1-9]|1[012])/([0-9]{4})", "i");
+class ENSlashMonthFormatParser {
+  constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, ENTimeUnitWithinFormatParser);
-    const obj = _getPrototypeOf(ENTimeUnitWithinFormatParser);
+    _classCallCheck(this, ENSlashMonthFormatParser);
+    const obj = _getPrototypeOf(ENSlashMonthFormatParser);
     const tmp2 = _getPrototypeOf;
-    const tmp3 = c3;
+    const tmp3 = map;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
     } else {
-      constructResult = obj.apply(self, undefined);
+      constructResult = obj(...arguments);
     }
-    const tmp3Result = tmp3(self, constructResult);
-    tmp3Result.strictMode = strictMode;
-    return tmp3Result;
+    return tmp3(self, constructResult);
   }
 }
-_inherits(ENTimeUnitWithinFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(ENSlashMonthFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
   key: "innerPattern",
-  value: function innerPattern(option) {
-    let tmp2;
-    if (this.strictMode) {
-      tmp2 = regExp2;
-    } else {
-      tmp2 = option.option.forwardDate ? regExp : regExp1;
-    }
-    return tmp2;
+  value: function innerPattern() {
+    return regExp;
   }
 };
 const items = [
   entry,
   {
     key: "innerExtract",
-    value: function innerExtract(reference, arg1) {
-      const str = arg1[0];
-      if (str.match(/^for\s*the\s*\w+/)) {
-        return null;
-      } else {
-        const parseDurationResult = _mod11428.parseDuration(arg1[1]);
-        let relativeFromReference = null;
-        const tmp = require;
-        if (parseDurationResult) {
-          const ParsingComponents = tmp(11432).ParsingComponents;
-          relativeFromReference = ParsingComponents.createRelativeFromReference(reference.reference, parseDurationResult);
-        }
-        return relativeFromReference;
-      }
+    value: function innerExtract(createParsingComponents, arg1) {
+      const parsed = parseInt(arg1[2]);
+      const parsed1 = parseInt(arg1[1]);
+      const parsingComponents = createParsingComponents.createParsingComponents();
+      const implyResult = parsingComponents.imply("day", 1);
+      const obj = implyResult.assign("month", parsed1);
+      return obj.assign("year", parsed);
     }
   }
 ];
 
-export default _createClass(ENTimeUnitWithinFormatParser, items);
+export default _createClass(ENSlashMonthFormatParser, items);

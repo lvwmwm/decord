@@ -1,21 +1,21 @@
-// Module ID: 20428
-// Function ID: 20429
+// Module ID: 19682
+// Function ID: 19683
 // Name: VerificationModal
-// Dependencies: [5, 19, 17, 20429, 5149, 1388, 1072, 21, 5306, 1187, 20430, 1113, 5926, 1503, 1264, 7493, 7427, 8437, 7948, 6834, 20434, 7756, 7765, 7762, 7798, 7819, 7820, 7757, 20435, 7852, 7811, 504, 5542, 5491, 7490, 2]
+// Dependencies: [5, 19, 17, 19683, 4756, 1386, 1071, 21, 4913, 1186, 19684, 1112, 5511, 1501, 1263, 7095, 7029, 8028, 7550, 6425, 19688, 7358, 7367, 7364, 7400, 7421, 7422, 7359, 19689, 7454, 7413, 504, 5127, 5098, 7092, 2]
 // Exports: default
 
-// Module 20428 (VerificationModal)
+// Module 19682 (VerificationModal)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import Link from "Link" /* 1503 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+import Link from "Link" /* 1501 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import PhoneVerificationStore from "PhoneVerificationStore" /* 20429 */;
-import UserRequiredActionStore from "UserRequiredActionStore" /* 5149 */;
-import UserStore from "UserStore" /* 1388 */;
-import Constants from "Constants" /* 1072 */;
-import createStyles from "createStyles" /* 5306 */;
+import PhoneVerificationStore from "PhoneVerificationStore" /* 19683 */;
+import UserRequiredActionStore from "UserRequiredActionStore" /* 4756 */;
+import UserStore from "UserStore" /* 1386 */;
+import Constants from "Constants" /* 1071 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2;
@@ -26,11 +26,11 @@ function PhoneThenEmailInterstitial(navigation) {
   let intl3;
   navigation = navigation.navigation;
   const tmp = closure_12();
-  const EmptyState = navigation(1187).EmptyState;
-  const intl = navigation(1113).intl;
-  const intl2 = navigation(1113).intl;
+  const EmptyState = navigation(1186).EmptyState;
+  const intl = navigation(1112).intl;
+  const intl2 = navigation(1112).intl;
   ({
-    text: intl3.string(navigation(1113).t["3oK4qw"]),
+    text: intl3.string(navigation(1112).t["3oK4qw"]),
     onPress() {
       let ENTER_EMAIL;
       const currentUser = UserStore.getCurrentUser();
@@ -48,9 +48,9 @@ function PhoneThenEmailInterstitial(navigation) {
       dispatch(StackActions.push(ENTER_EMAIL));
     }
   });
-  const Button = navigation(5926).Button;
-  intl3 = navigation(1113).intl;
-  return <EmptyState Illustration={navigation(20430).VerifyPhone} title={intl.string(navigation(1113).t.KLnLIP)} body={intl2.string(navigation(1113).t.XGbCq3)}>{null}</EmptyState>;
+  const Button = navigation(5511).Button;
+  intl3 = navigation(1112).intl;
+  return <EmptyState Illustration={navigation(19684).VerifyPhone} title={intl.string(navigation(1112).t.KLnLIP)} body={intl2.string(navigation(1112).t.XGbCq3)}>{null}</EmptyState>;
 }
 const View = react_native.View;
 ({ UserRequiredActions: c9, VerificationModalScenes: c10 } = Constants);
@@ -82,8 +82,8 @@ export default function VerificationModal() {
     const obj2 = stateFromStores(dependencyMap[33]);
     obj2.dismissKeyboard();
   }, []);
-  const Navigator = stateFromStores(7490).Navigator;
-  let intl = stateFromStores(1113).intl;
+  const Navigator = stateFromStores(7092).Navigator;
+  let intl = stateFromStores(1112).intl;
   return <Navigator screens={react.useMemo(() => {
     let obj10;
     let obj13;
@@ -454,5 +454,5 @@ export default function VerificationModal() {
     obj[PHONE_THEN_EMAIL_INTERSTITIAL] = obj35;
     obj37 = stateFromStores(dependencyMap[15]);
     return obj;
-  }, [])} initialRouteStack={memo} headerBackTitle={intl.string(stateFromStores(1113).t["13/7kX"])} />;
+  }, [])} initialRouteStack={memo} headerBackTitle={intl.string(stateFromStores(1112).t["13/7kX"])} />;
 };

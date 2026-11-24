@@ -1,17 +1,17 @@
-// Module ID: 12378
-// Function ID: 12379
+// Module ID: 11905
+// Function ID: 11906
 // Name: GiftCodeStore
-// Dependencies: [11665, 502, 1072, 5150, 2169, 6745, 12379, 504, 572, 2]
+// Dependencies: [9469, 502, 1071, 4757, 2168, 6347, 11906, 504, 572, 2]
 
-// Module 12378 (GiftCodeStore)
+// Module 11905 (GiftCodeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import _modDef2169 from "module_2169" /* 2169 */;
-import GiftCodeUtils from "GiftCodeUtils" /* 6745 */;
-import GiftCodeActionCreatorsDefault from "GiftCodeActionCreators" /* 12379 */;
-import GiftCodeRecord from "GiftCodeRecord" /* 11665 */;
+import _modDef2168 from "module_2168" /* 2168 */;
+import GiftCodeUtils from "GiftCodeUtils" /* 6347 */;
+import GiftCodeActionCreatorsDefault from "GiftCodeActionCreators" /* 11906 */;
+import GiftCodeRecord from "GiftCodeRecord" /* 9469 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import Constants from "Constants" /* 1072 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -22,7 +22,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 function updateGiftCode(giftCode) {
-  const f104923 = () => {
+  const f100819 = () => {
     let closure_0 = code;
     const value = map.get(code);
     const obj = map;
@@ -30,7 +30,7 @@ function updateGiftCode(giftCode) {
       if (null != value.expiresAt) {
         const expiresAt = value.expiresAt;
         const valueOfResult = expiresAt.valueOf();
-        const obj3 = _modDef2169();
+        const obj3 = _modDef2168();
         const diff = valueOfResult - obj3.valueOf();
         if (diff <= 0) {
           obj.delete(code);
@@ -38,7 +38,7 @@ function updateGiftCode(giftCode) {
           giftCodeStore.emitChange();
         } else if (null != closure_9[code]) {
           const _Math = Math;
-          closure_9[code].start(Math.min(metroRequire, diff), f104923);
+          closure_9[code].start(Math.min(metroRequire, diff), f100819);
         }
       }
     }
@@ -59,14 +59,14 @@ function updateGiftCode(giftCode) {
     if (null != fromServer.expiresAt) {
       const self = this;
       const self2 = this;
-      const timeout = new code(5150).Timeout();
+      const timeout = new code(4757).Timeout();
       closure_9[code] = timeout;
       const value2 = obj2.get(code);
       if (null != value2) {
         if (null != value2.expiresAt) {
           let expiresAt = value2.expiresAt;
           let valueOfResult = expiresAt.valueOf();
-          const obj4 = _modDef2169();
+          const obj4 = _modDef2168();
           let diff = valueOfResult - obj4.valueOf();
           if (diff <= 0) {
             map.delete(code);
@@ -76,7 +76,7 @@ function updateGiftCode(giftCode) {
             let obj3 = tmp11[code];
             if (null != obj3) {
               let _Math = Math;
-              obj3.start(Math.min(closure_6, diff), f104923);
+              obj3.start(Math.min(closure_6, diff), f100819);
             }
           }
         }

@@ -1,18 +1,18 @@
-// Module ID: 10317
-// Function ID: 10318
+// Module ID: 9807
+// Function ID: 9808
 // Name: useGameProfileInvite
-// Dependencies: [5, 19, 2141, 5157, 6042, 1072, 10289, 504, 1089, 7660, 9533, 2]
+// Dependencies: [5, 19, 2140, 4764, 5632, 1071, 9779, 504, 1088, 7262, 9053, 2]
 // Exports: default, hasGameProfileDiscordWebsite, preloadGameProfileInvite
 
-// Module 10317 (useGameProfileInvite)
-import DurationsDefault from "Durations" /* 1089 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 7660 */;
+// Module 9807 (useGameProfileInvite)
+import DurationsDefault from "Durations" /* 1088 */;
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 7262 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GameStore from "GameStore" /* 2141 */;
-import GuildMembershipStore from "GuildMembershipStore" /* 5157 */;
-import InviteStore from "InviteStore" /* 6042 */;
-import Constants from "Constants" /* 1072 */;
+import GameStore from "GameStore" /* 2140 */;
+import GuildMembershipStore from "GuildMembershipStore" /* 4764 */;
+import InviteStore from "InviteStore" /* 5632 */;
+import Constants from "Constants" /* 1071 */;
 import get_initialized from "get initialized" /* 504 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ let _require, c3, c4, current;
 
 let QueryIds;
 let metroImportDefault;
-const f100162 = (category) => category.category === closure_1_0(closure_1_2[6]).ThirdPartyGameApplicationWebsiteCategory.DISCORD;
+const f95797 = (category) => category.category === closure_1_0(closure_1_2[6]).ThirdPartyGameApplicationWebsiteCategory.DISCORD;
 function isUsableGameProfileInvite(state) {
   let tmp = null != state && state.state !== metroImportDefault.RESOLVING;
   if (tmp) {
@@ -159,7 +159,7 @@ export default function useGameProfileInvite(websites, set) {
   if (websites != null) {
     websites = websites.websites;
     if (websites != null) {
-      found = websites.find(f100162);
+      found = websites.find(f95797);
     }
   }
   let arr;
@@ -247,7 +247,7 @@ export function preloadGameProfileInvite(arg0) {
     if (game != null) {
       const websites = game.websites;
       if (websites != null) {
-        found = websites.find(f100162);
+        found = websites.find(f95797);
       }
     }
     let arr;

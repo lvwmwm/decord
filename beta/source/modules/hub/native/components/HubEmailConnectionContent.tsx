@@ -1,23 +1,23 @@
-// Module ID: 15094
-// Function ID: 15095
+// Module ID: 13681
+// Function ID: 13682
 // Name: HubEmailConnectionContent
-// Dependencies: [5, 32, 19, 17, 5155, 15082, 1072, 21, 5306, 575, 5320, 1502, 5903, 5542, 15095, 2121, 15096, 6747, 1113, 5919, 15090, 15097, 7617, 1187, 5926, 2]
+// Dependencies: [5, 32, 19, 17, 4762, 13669, 1071, 21, 4913, 575, 4927, 1500, 5488, 5127, 13682, 2119, 13683, 6349, 1112, 5504, 13677, 13684, 7219, 1186, 5511, 2]
 // Exports: default
 
-// Module 15094 (HubEmailConnectionContent)
+// Module 13681 (HubEmailConnectionContent)
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import intl8 from "intl" /* 1113 */;
-import useNavigation from "useNavigation" /* 1502 */;
-import react2 from "react" /* 5320 */;
+import Constants from "Constants" /* 1071 */;
+import intl8 from "intl" /* 1112 */;
+import useNavigation from "useNavigation" /* 1500 */;
+import react2 from "react" /* 4927 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import HubConstants from "HubConstants" /* 15082 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import HubConstants from "HubConstants" /* 13669 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -30,11 +30,11 @@ let map1;
 let metroImportDefault;
 let metroRequire;
 let tmp;
-const native = tmp(1187);
-const Text_Text = tmp(5919);
-const components_Button_Button = tmp(5926);
-const HubEmailConnectionModal = tmp(15090);
-const InkQuillSpotIllustration = tmp(15097);
+const native = tmp(1186);
+const Text_Text = tmp(5504);
+const components_Button_Button = tmp(5511);
+const HubEmailConnectionModal = tmp(13677);
+const InkQuillSpotIllustration = tmp(13684);
 let react = react_mod;
 ({ View: metroRequire, ScrollView: metroImportDefault } = react_native);
 ({ HubEmailConnectionSteps: c9, INVITE_ROUTING_HUB_GUILD_ID: c10 } = HubConstants);
@@ -255,7 +255,7 @@ export default function HubEmailConnectionContent(arg0) {
   const first1 = tmp7[0];
   [obj2, c6] = value(react.useState(null), 2);
   const tmp9 = value(react.useState(null), 2);
-  const insets = invite(5903)().insets;
+  const insets = invite(5488)().insets;
   const ref = react.useRef(null);
   let intl = intl8.intl;
   const stringResult = intl.string(intl8.t.H1jCHH);
@@ -310,7 +310,7 @@ export default function HubEmailConnectionContent(arg0) {
   let obj10 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", style: tmp3.title, accessibilityRole: "header", children: formatToPlainStringResult };
   items2[1] = closure_12(Text_Text.Text, obj10);
   let obj11 = { style: tmp3.description, children: mapped };
-  const tmp20 = ref;
+  const tmp19 = ref;
   if (obj4.usesLearnMoreHook) {
     mapped = arr.map((item, index) => {
       let tmp = item;
@@ -323,7 +323,7 @@ export default function HubEmailConnectionContent(arg0) {
     });
   } else {
     let obj12 = { style: tmp3.descriptionText, variant: "body-sm/medium", color: "text-default", children: formatResult };
-    mapped = tmp18(Text_Text.Text, obj12);
+    mapped = tmp17(Text_Text.Text, obj12);
   }
   items2[2] = closure_12(c6, obj11);
   const obj13 = {
@@ -357,7 +357,7 @@ export default function HubEmailConnectionContent(arg0) {
       }, 100);
     }
   };
-  const tmp10Result = invite(7617);
+  const tmp10Result = invite(7219);
   intl4 = intl8.intl;
   intl5 = intl8.intl;
   intl6 = intl8.intl;
@@ -366,9 +366,9 @@ export default function HubEmailConnectionContent(arg0) {
   if (obj2 != null) {
     anyErrorMessage = obj2.getAnyErrorMessage();
   }
-  const obj15 = { children: closure_13(tmp20, obj6) };
+  const obj15 = { children: closure_13(tmp19, obj6) };
   items2[3] = closure_12(tmp10Result, obj13);
-  items3 = [tmp19(tmp21, obj8), , ];
+  items3 = [tmp18(tmp20, obj8), , ];
   const obj16 = { style: tmp3.growSpacing };
   items3[1] = closure_12(c6, obj16);
   const obj17 = { style: tmp3.buttonContainer, children: closure_12(Button, obj18) };

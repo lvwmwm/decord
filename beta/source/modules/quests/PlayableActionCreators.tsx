@@ -1,12 +1,13 @@
-// Module ID: 20896
-// Function ID: 20897
+// Module ID: 16602
+// Function ID: 16603
 // Name: PlayableActionCreators
-// Dependencies: [5, 1072, 8665, 8828, 8804, 1285, 572, 6748, 2]
-// Exports: claimPlayableReward
+// Dependencies: [5, 1071, 8255, 8424, 8400, 1284, 572, 6350, 2]
+// Exports: claimPlayableReward, completePlayableLaunch, recordPlayableLaunch
 
-// Module 20896 (PlayableActionCreators)
-import Constants from "Constants" /* 1072 */;
-import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 8665 */;
+// Module 16602 (PlayableActionCreators)
+import DispatcherDefault from "Dispatcher" /* 572 */;
+import Constants from "Constants" /* 1071 */;
+import SessionHeartbeatScheduler from "SessionHeartbeatScheduler" /* 8255 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -131,8 +132,21 @@ let obj = function _claimPlayableReward() {
   return obj(...arguments);
 };
 const Endpoints = Constants.Endpoints;
+let metroRequire = 0;
 const result = size.fileFinishedImporting("modules/quests/PlayableActionCreators.tsx");
 
 export function claimPlayableReward() {
   return obj(...arguments);
+}
+export function recordPlayableLaunch(questDockPlayable, impressionId) {
+  metroRequire = metroRequire + 1;
+  obj = DispatcherDefault;
+  const obj2 = { type: "PLAYABLE_LAUNCH", playable: questDockPlayable, launchId: metroRequire, impressionId };
+  obj.dispatch(obj2);
+  return metroRequire;
+}
+export function completePlayableLaunch(c0, success) {
+  obj = DispatcherDefault;
+  const obj2 = { type: "PLAYABLE_LAUNCH_COMPLETE", launchId: c0, success };
+  obj.dispatch(obj2);
 }

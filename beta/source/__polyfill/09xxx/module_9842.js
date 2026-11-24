@@ -1,236 +1,142 @@
 // Module ID: 9842
 // Function ID: 9843
-// Dependencies: [32, 9843, 9803, 9804, 9800]
-// Exports: normalizeUrlToBase
+// Dependencies: [9843, 9849, 9844, 9851, 9852]
+// Exports: createDomStream, parseDOM, parseDocument, parseFeed
 
 // Module 9842
-import _mod9800 from "module_9800" /* 9800 */;
-import _mod9803 from "module_9803" /* 9803 */;
-import _mod9804 from "module_9804" /* 9804 */;
-import memoBuilder from "memoBuilder" /* 9843 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
+import ElementType from "ElementType" /* 9851 */;
 
+const require = globalThis.__r;
 let hasOwnProperty;
 
-function normalize(arg0) {
-  let num = arg1;
-  if (arg1 === undefined) {
-    num = 100;
-  }
-  let num2 = arg2;
-  if (arg2 === undefined) {
-    num2 = Infinity;
-  }
-  try {
-    return visit("", arg0, num, num2);
-  } catch (tmp5) {
-    const _HermesInternal = HermesInternal;
-    const obj = { ERROR: "**non-serializable** (" + tmp5 + ")" };
-    return obj;
-  }
-}
-function visit(arg0, __sentry_skip_normalization__) {
-  function stringifyValue(arg0, _events) {
-    function getConstructorName(_events) {
-      const prototypeOf = Object.getPrototypeOf(_events);
-      let str = "null prototype";
-      if (prototypeOf) {
-        str = prototypeOf.constructor.name;
-      }
-      return str;
+const self = this;
+let tmp = this && self.__createBinding;
+if (!tmp) {
+  let tmp2 = globalThis;
+  let _Object = Object;
+  tmp = Object.create ? ((arg0, __esModule, arg2, arg3) => {
+    function get() {
+      return __esModule[closure_1];
     }
-    try {
-      let str = "domain";
-      if ("domain" === arg0) {
-        if (_events) {
-          if (typeof _events === "object") {
-            if (_events._events) {
-              return "[Domain]";
-            }
-          }
-        }
-      }
-      if ("domainEmitter" === arg0) {
-        return "[DomainEmitter]";
+    let closure_0 = __esModule;
+    let closure_1 = arg2;
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
+    }
+    let ownPropertyDescriptor = Object.getOwnPropertyDescriptor(__esModule, arg2);
+    let tmp3 = ownPropertyDescriptor;
+    if (tmp3) {
+      let tmp4;
+      if ("get" in ownPropertyDescriptor) {
+        tmp4 = !__esModule.__esModule;
       } else {
-        if (undefined !== global) {
-          if (_events === global) {
-            return "[Global]";
-          }
-        }
-        const _window = window;
-        if (typeof window !== "undefined") {
-          const _window2 = window;
-          if (_events === window) {
-            return "[Window]";
-          }
-        }
-        const _document = document;
-        if (typeof document !== "undefined") {
-          const _document2 = document;
-          if (_events === document) {
-            return "[Document]";
-          }
-        }
-        const obj = _mod9804;
-        if (obj.isVueViewModel(_events)) {
-          return "[VueViewModel]";
-        } else {
-          const tmp4Result = _mod9804;
-          if (tmp4Result.isSyntheticEvent(_events)) {
-            return "[SyntheticEvent]";
-          } else {
-            if (typeof _events === "number") {
-              const _Number = Number;
-              if (!Number.isFinite(_events)) {
-                const _HermesInternal = HermesInternal;
-                return "[" + _events + "]";
-              }
-            }
-            if (typeof _events === "function") {
-              const _HermesInternal4 = HermesInternal;
-              const tmp4Result2 = _mod9800;
-              return "[Function: " + tmp4Result2.getFunctionName(_events) + "]";
-            } else if (typeof _events === "symbol") {
-              const _String2 = String;
-              const _HermesInternal3 = HermesInternal;
-              return "[" + String(_events) + "]";
-            } else if (typeof _events === "bigint") {
-              const _String = String;
-              const _HermesInternal2 = HermesInternal;
-              return "[BigInt: " + String(_events) + "]";
-            } else {
-              let combined;
-              const _HermesInternal6 = HermesInternal;
-              const obj4 = /^HTML(\w*)Element$/;
-              const tmp9 = getConstructorName(_events);
-              if (obj4.test(tmp9)) {
-                combined = concat(tmp10, "]");
-              } else {
-                combined = concat(tmp10, "]");
-              }
-              return combined;
-            }
-          }
-        }
+        tmp4 = ownPropertyDescriptor.writable || ownPropertyDescriptor.configurable;
       }
-    } catch (tmp7) {
-      const _HermesInternal5 = HermesInternal;
-      return "**non-serializable** (" + tmp7 + ")";
+      tmp3 = !tmp4;
+    }
+    if (!tmp3) {
+      ownPropertyDescriptor = { enumerable: true, get };
+      const obj = { enumerable: true, get };
+    }
+    Object.defineProperty(arg0, tmp, ownPropertyDescriptor);
+  }) : ((arg0, arg1, arg2, arg3) => {
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
+    }
+    arg0[tmp] = arg1[arg2];
+  });
+}
+let closure_2 = tmp;
+let tmp3 = self && self.__setModuleDefault;
+if (!tmp3) {
+  let tmp4 = globalThis;
+  const _Object2 = Object;
+  tmp3 = Object.create ? ((arg0, value) => {
+    const obj = { enumerable: true, value };
+    Object.defineProperty(arg0, "default", obj);
+  }) : ((arg0, arg1) => {
+    arg0.default = arg1;
+  });
+}
+let closure_3 = tmp3;
+let tmp5 = self && self.__importStar || ((__esModule) => {
+  const tmp = __esModule;
+  if (tmp) {
+    if (__esModule.__esModule) {
+      return __esModule;
     }
   }
-  let num = arg2;
-  if (arg2 === undefined) {
-    num = Infinity;
-  }
-  let num2 = arg3;
-  if (arg3 === undefined) {
-    num2 = Infinity;
-  }
-  let memoBuilderResult = arg4;
-  if (arg4 === undefined) {
-    let obj = memoBuilder;
-    memoBuilderResult = obj.memoBuilder();
-  }
-  _slicedToArray(memoBuilderResult, 2);
-  if (null != __sentry_skip_normalization__) {
-    const items = ["boolean", "string"];
-    if (!items.includes(typeof __sentry_skip_normalization__)) {
-      if (typeof __sentry_skip_normalization__ === "number") {
-        let _Number = Number;
+  const obj = {};
+  if (null != __esModule) {
+    for (const key10009 in __esModule) {
+      let callResult = "default" !== key10009;
+      if (callResult) {
+        let _Object = Object;
+        hasOwnProperty = Object.prototype.hasOwnProperty;
+        callResult = hasOwnProperty.call(__esModule, key10009);
       }
-      let tmp9 = arg0;
-      let str = stringifyValue(arg0, __sentry_skip_normalization__);
-      if (str.startsWith("[object ")) {
-        if (__sentry_skip_normalization__.__sentry_skip_normalization__) {
-          return __sentry_skip_normalization__;
-        } else {
-          if (typeof __sentry_skip_normalization__.__sentry_override_normalization_depth__ === "number") {
-            num = __sentry_skip_normalization__.__sentry_override_normalization_depth__;
-          }
-          if (0 === num) {
-            return str.replace("object ", "");
-          } else if (tmp6(__sentry_skip_normalization__)) {
-            return "[Circular ~]";
-          } else {
-            if (__sentry_skip_normalization__) {
-              if (typeof __sentry_skip_normalization__.toJSON === "function") {
-                try {
-                  const tmp10 = visit;
-                  return visit("", __sentry_skip_normalization__.toJSON(), num - 1, num2, memoBuilderResult);
-                } catch (err) {
-                }
-              }
-            }
-            const _Array = Array;
-            const tmp14 = Array.isArray(__sentry_skip_normalization__) ? [] : {};
-            const obj2 = _mod9803;
-            const convertToPlainObjectResult = obj2.convertToPlainObject(__sentry_skip_normalization__);
-            const keys = Object.keys();
-            if (keys !== undefined) {
-              while (keys[tmp] !== undefined) {
-                let _Object = Object;
-                hasOwnProperty = Object.prototype.hasOwnProperty;
-                let tmp28 = tmp21;
-                if (!hasOwnProperty.call(convertToPlainObjectResult, tmp21)) {
-                  continue;
-                } else {
-                  if (tmp20 >= num2) {
-                    let str4 = "[MaxProperties ~]";
-                    tmp14[tmp21] = "[MaxProperties ~]";
-                    break;
-                  } else {
-                    tmp14[tmp21] = visit(tmp28, convertToPlainObjectResult[tmp21], num - 1, num2, tmp8);
-                    let num6 = tmp20 + 1;
-                    continue;
-                  }
-                  break;
-                }
-                break;
-              }
-            }
-            tmp7(__sentry_skip_normalization__);
-            return tmp14;
-          }
-        }
+      if (!callResult) {
+        continue;
       } else {
-        return str;
+        let tmp6 = closure_2(obj, __esModule, key10009);
+        continue;
       }
+      continue;
     }
   }
-  return __sentry_skip_normalization__;
+  closure_3(obj, __esModule);
+  return obj;
+});
+const fn = self && self.__importDefault || ((__esModule) => {
+  let tmp2;
+  const tmp = __esModule;
+  if (!tmp) {
+    tmp2 = { default: __esModule };
+    const obj = { default: __esModule };
+  } else {
+    tmp2 = __esModule;
+  }
+  return tmp2;
+});
+function parseDocument(arg0, fn) {
+  const domHandler = new require("DomHandler").DomHandler(undefined, fn);
+  const parser = new require("module_9843").Parser(domHandler, fn);
+  parser.end(arg0);
+  return domHandler.root;
 }
-function normalizeToSize(arg0) {
-  let num = arg1;
-  if (arg1 === undefined) {
-    num = 3;
-  }
-  let num2 = arg2;
-  if (arg2 === undefined) {
-    num2 = 102400;
-  }
-  let tmp = normalize(arg0, num);
-  const str = encodeURI(JSON.stringify(tmp));
-  if (~(-str.split(/%..|./).length) > num2) {
-    tmp = normalizeToSize(arg0, num - 1, num2);
-  }
-  return tmp;
+function parseDOM(arg0, fn) {
+  const domHandler = new require("DomHandler").DomHandler(undefined, fn);
+  const parser = new require("module_9843").Parser(domHandler, fn);
+  parser.end(arg0);
+  return domHandler.root.children;
 }
+let closure_5 = { xmlMode: true };
+const ElementType_export = tmp5(ElementType);
 
-export { normalize };
-export { normalizeToSize };
-export function normalizeUrlToBase(arg0, str) {
-  let str2 = arg0;
-  str = str.replace(/\\/g, "/");
-  const replaced = str.replace(/[|\\{}()[\]^$+*?.]/g, "\\$&");
-  try {
-    const _decodeURI = decodeURI;
-    str2 = decodeURI(arg0);
-  } catch (err) {
-  }
-  const str3 = str2.replace(/\\/g, "/");
-  const replace = str3.replace(/webpack:\/?/g, "").replace;
-  str3.replace(/webpack:\/?/g, "");
-  const regExp = new RegExp("(file://)?/*" + replaced + "/*", "ig");
-  return replace(regExp, "app:///");
+export const Parser = require("module_9843").Parser;
+export const DomHandler = require("DomHandler").DomHandler;
+export const DefaultHandler = require("DomHandler").DomHandler;
+export { parseDocument };
+export { parseDOM };
+export function createDomStream(arg0, fn, arg2) {
+  const domHandler = new require("DomHandler").DomHandler(arg0, fn, arg2);
+  const parser = new require("module_9843").Parser(domHandler, fn);
+  return parser;
 }
+export const Tokenizer = fn(require("QuoteType")).default;
+export { ElementType_export as ElementType };
+export const getFeed = require("module_9852").getFeed;
+export function parseFeed(arg0, fn) {
+  let tmp = fn;
+  if (undefined === fn) {
+    tmp = closure_5;
+  }
+  const getFeed = require("module_9852").getFeed;
+  const domHandler = new require("DomHandler").DomHandler(undefined, tmp);
+  const parser = new require("module_9843").Parser(domHandler, tmp);
+  parser.end(arg0);
+  return getFeed(domHandler.root.children);
+}
+export const DomUtils = tmp5(require("module_9852"));

@@ -1,15 +1,15 @@
-// Module ID: 19744
-// Function ID: 19745
+// Module ID: 18995
+// Function ID: 18996
 // Name: shouldExcludeSafeAreaForModalKey
-// Dependencies: [1072, 14261, 12767, 10233, 6890, 2]
+// Dependencies: [1071, 12498, 10696, 9721, 6494, 2]
 // Exports: shouldExcludeSafeAreaForModalKey
 
-// Module 19744 (shouldExcludeSafeAreaForModalKey)
-import Constants2 from "Constants" /* 1072 */;
-import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 6890 */;
-import SharePreparingModalConstants from "SharePreparingModalConstants" /* 10233 */;
-import CheckpointModalConstants from "CheckpointModalConstants" /* 14261 */;
-import Constants from "Constants" /* 12767 */;
+// Module 18995 (shouldExcludeSafeAreaForModalKey)
+import Constants2 from "Constants" /* 1071 */;
+import PrivateChannelCallUtils from "PrivateChannelCallUtils" /* 6494 */;
+import SharePreparingModalConstants from "SharePreparingModalConstants" /* 9721 */;
+import CheckpointModalConstants from "CheckpointModalConstants" /* 12498 */;
+import Constants from "Constants" /* 10696 */;
 import size from "module_2" /* 2 */;
 
 let CHECKPOINT_MODAL_KEY;

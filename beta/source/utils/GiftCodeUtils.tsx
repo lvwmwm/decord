@@ -1,23 +1,23 @@
-// Module ID: 6745
-// Function ID: 6746
+// Module ID: 6347
+// Function ID: 6348
 // Name: GiftCodeUtils
-// Dependencies: [5, 32, 6746, 1388, 1072, 1390, 5948, 6252, 6756, 1256, 5127, 6777, 1113, 6778, 1255, 504, 2174, 2]
+// Dependencies: [5, 32, 6348, 1386, 1071, 1388, 5538, 5848, 6359, 1255, 4734, 6381, 1112, 6382, 1254, 504, 2173, 2]
 // Exports: cleanCode, findGiftCodes, firstLibraryApplicationForGiftCode, getBodyText, getButtonText, getErrorMessage, getGiftCodeURL, getGiftExperience, getHeaderText, getStep, getSubscriptionGiftStartHeaderText, getSubscriptionGiftSuccessText, isGiftCodeEmbed, makeComboId, parseComboId, processGiftCodeInput, resolveGiftCode, shouldShowCustomGiftExperience, trackGiftCodeCopy, trackStep, useGetGiftCode
 
-// Module 6745 (GiftCodeUtils)
-import intl12 from "intl" /* 1113 */;
-import GlobalUtils from "GlobalUtils" /* 1255 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import PremiumUtils from "PremiumUtils" /* 2174 */;
-import shared_PlatformUtils from "shared/PlatformUtils" /* 6252 */;
-import getAnalyticsDataForSKUDefault from "getAnalyticsDataForSKU" /* 6777 */;
+// Module 6347 (GiftCodeUtils)
+import intl12 from "intl" /* 1112 */;
+import GlobalUtils from "GlobalUtils" /* 1254 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import PremiumUtils from "PremiumUtils" /* 2173 */;
+import shared_PlatformUtils from "shared/PlatformUtils" /* 5848 */;
+import getAnalyticsDataForSKUDefault from "getAnalyticsDataForSKU" /* 6381 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import PremiumPaymentModalStore from "PremiumPaymentModalStore" /* 6746 */;
-import UserStore from "UserStore" /* 1388 */;
-import Constants from "Constants" /* 1072 */;
-import PremiumConstants from "PremiumConstants" /* 1390 */;
-import RegexUtils from "RegexUtils" /* 5948 */;
+import PremiumPaymentModalStore from "PremiumPaymentModalStore" /* 6348 */;
+import UserStore from "UserStore" /* 1386 */;
+import Constants from "Constants" /* 1071 */;
+import PremiumConstants from "PremiumConstants" /* 1388 */;
+import RegexUtils from "RegexUtils" /* 5538 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -32,7 +32,7 @@ let map1;
 let metroImportAll;
 let metroImportDefault;
 let unpackModuleId;
-const f92576 = () => "[abcdefghjkmnpqrstuvwxyzABCDEFGHJKMNPQRSTUVWXYZ23456789]{" + c0 + "}";
+const f88626 = () => "[abcdefghjkmnpqrstuvwxyzABCDEFGHJKMNPQRSTUVWXYZ23456789]{" + c0 + "}";
 let obj = function _resolveGiftCode() {
   obj = _asyncToGenerator(async (gift_code) => {
     let closure_1 = arg1;
@@ -216,16 +216,16 @@ const items3 = [
 const regExp1 = new RegExp("(?: |^|https?://)(?:" + items3.join("|") + ")(/|(/)?\\?code=)([a-z0-9-]+)", "gi");
 const ArrayResult = Array(4);
 const fillResult = ArrayResult.fill(undefined);
-let mapped = fillResult.map(f92576);
+let mapped = fillResult.map(f88626);
 const items4 = [mapped.join("-?"), , , ];
 const ArrayResult1 = Array(6);
 const fillResult1 = ArrayResult1.fill(undefined);
-const mapped1 = fillResult1.map(f92576);
+const mapped1 = fillResult1.map(f88626);
 items4[1] = mapped1.join("-?");
 let c0 = 5;
 const ArrayResult2 = Array(3);
 const fillResult2 = ArrayResult2.fill(undefined);
-const mapped2 = fillResult2.map(f92576);
+const mapped2 = fillResult2.map(f88626);
 items4[2] = mapped2.join("-?");
 items4[3] = "[a-zA-Z]{4}-?[0-9a-zA-Z]{4}-?[a-zA-Z]{4}";
 const regExp2 = new RegExp("^(WUMP-?)?(" + items4.join("|") + ")$");
@@ -424,9 +424,9 @@ export function getHeaderText(arg0, isSubscription, name) {
     const intl = intl12.intl;
     if (isSubscription) {
       const obj2 = { skuName: name.name };
-      formatToPlainStringResult = intl.formatToPlainString(tmp3(1113).t["1C2BG/"], obj2);
+      formatToPlainStringResult = intl.formatToPlainString(tmp3(1112).t["1C2BG/"], obj2);
     } else {
-      formatToPlainStringResult = intl.string(tmp3(1113).t["+BNMcF"]);
+      formatToPlainStringResult = intl.string(tmp3(1112).t["+BNMcF"]);
     }
     return formatToPlainStringResult;
   } else {
@@ -436,9 +436,9 @@ export function getHeaderText(arg0, isSubscription, name) {
     const intl3 = intl12.intl;
     if (isSubscription2) {
       obj = { skuName: name.name };
-      formatToPlainStringResult1 = intl3.formatToPlainString(tmp10(1113).t["2VN4N9"], obj);
+      formatToPlainStringResult1 = intl3.formatToPlainString(tmp10(1112).t["2VN4N9"], obj);
     } else {
-      formatToPlainStringResult1 = intl3.string(tmp10(1113).t.RmamAI);
+      formatToPlainStringResult1 = intl3.string(tmp10(1112).t.RmamAI);
     }
     return formatToPlainStringResult1;
   }
@@ -604,9 +604,9 @@ export function getBodyText(arg0) {
         tmp17 = libraryApplication;
       }
     }
-    const intl4 = subscriptionPlan(1113).intl;
+    const intl4 = subscriptionPlan(1112).intl;
     const obj2 = { onGoToLibrary };
-    let formatResult = intl4.format(subscriptionPlan(1113).t["5zyz9y"], obj2);
+    let formatResult = intl4.format(subscriptionPlan(1112).t["5zyz9y"], obj2);
     if (null == tmp17) {
       let tmp22 = null;
       if (null != error) {
@@ -618,7 +618,7 @@ export function getBodyText(arg0) {
   } else if (constants3.SUCCESS === step) {
     let otherwiseResult;
     if (null != subscriptionPlan) {
-      const str = subscriptionPlan(6778);
+      const str = subscriptionPlan(6382);
       const match = str.match(subscriptionPlan);
       const obj3 = { interval: constants6.MONTH, premiumSubscriptionType: closure_13.TIER_2 };
       const obj4 = { interval: constants6.YEAR, premiumSubscriptionType: closure_13.TIER_2 };
@@ -649,9 +649,9 @@ export function getBodyText(arg0) {
         return intl.string(subscriptionPlan(dependencyMap[12]).t["5ayf7w"]);
       });
     } else {
-      const intl3 = subscriptionPlan(1113).intl;
+      const intl3 = subscriptionPlan(1112).intl;
       const obj7 = { skuName: sku.name };
-      otherwiseResult = intl3.formatToPlainString(subscriptionPlan(1113).t["3CPsbo"], obj7);
+      otherwiseResult = intl3.formatToPlainString(subscriptionPlan(1112).t["3CPsbo"], obj7);
     }
     return otherwiseResult;
   } else {
@@ -660,19 +660,19 @@ export function getBodyText(arg0) {
       let d8rUdy;
       let tmp5;
       if (subscriptionPlan.interval === constants6.MONTH) {
-        d8rUdy = subscriptionPlan(1113).t.P9eTKt;
+        d8rUdy = subscriptionPlan(1112).t.P9eTKt;
         tmp5 = subscriptionPlan;
       } else {
         tmp5 = subscriptionPlan;
-        d8rUdy = subscriptionPlan(1113).t.d8rUdy;
+        d8rUdy = subscriptionPlan(1112).t.d8rUdy;
       }
-      const intl2 = tmp5(1113).intl;
+      const intl2 = tmp5(1112).intl;
       const obj8 = { skuName: sku.name, intervalCount: subscriptionPlan.intervalCount };
       return intl2.format(d8rUdy, obj8);
     } else {
-      let intl = subscriptionPlan(1113).intl;
+      let intl = subscriptionPlan(1112).intl;
       obj = { skuName: sku.name };
-      return intl.formatToPlainString(subscriptionPlan(1113).t.l6Ea4Z, obj);
+      return intl.formatToPlainString(subscriptionPlan(1112).t.l6Ea4Z, obj);
     }
   }
 }

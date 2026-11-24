@@ -1,10 +1,10 @@
 // Module ID: 3028
 // Function ID: 3029
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 3028 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/safety_flows", scales: [1], hash: "f614c08c76b02de5adb2fd79d588a060", name: "SafetyFlows.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9ub3RpZmljYXRpb25zL3Byb2ZpbGVfdXBkYXRlcy9zZW5kZXI=", scales: [1], hash: "ee08e38cf8d0d70c5b598135036cb899", name: "de.messages.ee08e38cf8d0d70c5b598135036cb899.compiled.messages", type: "jsona" });

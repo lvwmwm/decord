@@ -1,18 +1,18 @@
-// Module ID: 15392
-// Function ID: 15393
+// Module ID: 14123
+// Function ID: 14124
 // Name: BoostingCountDownPill
-// Dependencies: [17, 21, 5306, 575, 5542, 15393, 2121, 1113, 5919, 2]
+// Dependencies: [17, 21, 4913, 575, 5127, 14124, 2119, 1112, 5504, 2]
 // Exports: default
 
-// Module 15392 (BoostingCountDownPill)
+// Module 14123 (BoostingCountDownPill)
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1113 */;
-import asyncRequire from "asyncRequire" /* 2121 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
-import Text_Text from "Text/Text" /* 5919 */;
+import intl2 from "intl" /* 1112 */;
+import asyncRequire from "asyncRequire" /* 2119 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
+import Text_Text from "Text/Text" /* 5504 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -26,7 +26,7 @@ function handlePress() {
   const openLazy = ActionSheetActionCreatorsDefault.openLazy;
   const obj = { aboutText: intl.string(intl2.t["07lzz7"]) };
   ActionSheetActionCreatorsDefault;
-  const tmp2 = asyncRequire(15393, dependencyMap.paths);
+  const tmp2 = asyncRequire(14124, dependencyMap.paths);
   intl = intl2.intl;
   openLazy(tmp2, "NitroCreditEducationActionSheet", obj);
 }
@@ -79,7 +79,7 @@ export default function BoostingCountDownPill(style) {
     prop = tmp.fpUnavailableTextNoCountdown;
   }
   obj6 = { variant: "body-md/normal", color: "interactive-text-active", style: prop, children: intl.string(intl2.t["5nrJDO"]) };
-  intl = tmp10(1113).intl;
+  intl = tmp10(1112).intl;
   items1[1] = hasOwnProperty(React3, obj5);
   return hasOwnProperty(tmp3, obj);
 };

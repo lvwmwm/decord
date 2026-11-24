@@ -1,17 +1,17 @@
-// Module ID: 8030
-// Function ID: 8031
+// Module ID: 7633
+// Function ID: 7634
 // Name: useManageResourcePermissions
-// Dependencies: [32, 19, 5238, 1388, 8029, 1083, 1084, 5169, 504, 2]
+// Dependencies: [32, 19, 4845, 1386, 7632, 1082, 1083, 4776, 504, 2]
 // Exports: attachChannelPermissions, getManageResourcePermissions, useManageResourcePermissions
 
-// Module 8030 (useManageResourcePermissions)
-import Constants from "Constants" /* 1083 */;
-import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
+// Module 7633 (useManageResourcePermissions)
+import Constants from "Constants" /* 1082 */;
+import BigFlagUtilsAll from "BigFlagUtils" /* 1083 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import PermissionStore from "PermissionStore" /* 5238 */;
-import UserStore from "UserStore" /* 1388 */;
-import PermissionsConstants from "PermissionsConstants" /* 8029 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
+import UserStore from "UserStore" /* 1386 */;
+import PermissionsConstants from "PermissionsConstants" /* 7632 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -149,7 +149,7 @@ export function useManageResourcePermissions(channel) {
   }
   return obj4;
 }
-export function getManageResourcePermissions(guild, c6, UserStore) {
+export function getManageResourcePermissions(guild, PermissionStore, UserStore) {
   let c0;
   let closure_4;
   let items2;
@@ -157,8 +157,8 @@ export function getManageResourcePermissions(guild, c6, UserStore) {
   let tmp10;
   let tmp5;
   let tmp9;
-  let obj = c6;
-  if (c6 === undefined) {
+  let obj = PermissionStore;
+  if (PermissionStore === undefined) {
     obj = PermissionStore;
   }
   let obj2 = UserStore;

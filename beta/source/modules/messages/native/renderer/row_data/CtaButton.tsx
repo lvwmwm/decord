@@ -1,16 +1,16 @@
-// Module ID: 15614
-// Function ID: 15615
+// Module ID: 14346
+// Function ID: 14347
 // Name: CtaButton
-// Dependencies: [8635, 14220, 6820, 1113, 14222, 3417, 2]
+// Dependencies: [8225, 12461, 6411, 1112, 12463, 3540, 2]
 // Exports: createCtaButtons
 
-// Module 15614 (CtaButton)
-import intl5 from "intl" /* 1113 */;
-import _modDef3417 from "module_3417" /* 3417 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6820 */;
-import CtaButtonUtils from "CtaButtonUtils" /* 14220 */;
-import AgeVerificationSystemNotificationUtils from "AgeVerificationSystemNotificationUtils" /* 14222 */;
-import ExplicitMediaStore from "ExplicitMediaStore" /* 8635 */;
+// Module 14346 (CtaButton)
+import intl5 from "intl" /* 1112 */;
+import _modDef3540 from "module_3540" /* 3540 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6411 */;
+import CtaButtonUtils from "CtaButtonUtils" /* 12461 */;
+import AgeVerificationSystemNotificationUtils from "AgeVerificationSystemNotificationUtils" /* 12463 */;
+import ExplicitMediaStore from "ExplicitMediaStore" /* 8225 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/messages/native/renderer/row_data/CtaButton.tsx");
@@ -30,35 +30,35 @@ export function createCtaButtons(id, channel_id, arg2) {
   const needsAgeVerificationResult = obj2.needsAgeVerification();
   if (CtaButtonUtils.CtaButtonType.MARK_AS_FALSE_POSITIVE === ctaButtonType) {
     const obj3 = { text: intl4.string(intl5.t["4q1Elf"]), textColor: null, backgroundColor: null, callback: prop };
-    intl4 = tmp(1113).intl;
+    intl4 = tmp(1112).intl;
     ({ reportFpTextColor: obj10.textColor, reportFpBackgroundColor: obj10.backgroundColor } = arg2);
     prop = undefined;
     if (ExplicitMediaStore.canSubmitFpReport(id)) {
-      prop = tmp(14220).CtaButtonType.MARK_AS_FALSE_POSITIVE;
+      prop = tmp(12461).CtaButtonType.MARK_AS_FALSE_POSITIVE;
     }
     return { ctaButton: obj3 };
   } else if (CtaButtonUtils.CtaButtonType.AGE_VERIFICATION_RETRY === ctaButtonType) {
-    const intl2 = tmp(1113).intl;
+    const intl2 = tmp(1112).intl;
     const string = intl2.string;
     const tmpResult = AgeVerificationSystemNotificationUtils;
     const result = tmpResult.isAgeVerificationMessageWithConfirmAgeCta(channel_id, id);
-    const t = tmp(1113).t;
+    const t = tmp(1112).t;
     ({ retryTextColor: obj6.textColor, retryBackgroundColor: obj6.backgroundColor } = arg2);
     const obj7 = { text: string(result ? t.DVywUB : t["/nicWo"]), textColor: null, backgroundColor: null, callback: prop1 };
     prop1 = undefined;
     if (needsAgeVerificationResult) {
-      prop1 = tmp(14220).CtaButtonType.AGE_VERIFICATION_RETRY;
+      prop1 = tmp(12461).CtaButtonType.AGE_VERIFICATION_RETRY;
     }
     const obj8 = { ctaButton: obj7, secondaryCtaButton: tmp7 };
     tmp7 = undefined;
     const tmpResult2 = AgeVerificationSystemNotificationUtils;
     if (tmpResult2.isAgeVerificationMessageWithManualReviewCta(channel_id, id)) {
-      const obj11 = { text: intl3.string(_modDef3417.Z61nkt), textColor: null, backgroundColor: null, callback: prop2 };
-      intl3 = tmp(1113).intl;
+      const obj11 = { text: intl3.string(_modDef3540.Z61nkt), textColor: null, backgroundColor: null, callback: prop2 };
+      intl3 = tmp(1112).intl;
       ({ reportFpTextColor: obj9.textColor, reportFpBackgroundColor: obj9.backgroundColor } = arg2);
       prop2 = undefined;
       if (needsAgeVerificationResult) {
-        prop2 = tmp(14220).CtaButtonType.AGE_VERIFICATION_MANUAL_REVIEW;
+        prop2 = tmp(12461).CtaButtonType.AGE_VERIFICATION_MANUAL_REVIEW;
       }
       tmp7 = obj11;
     }
@@ -66,7 +66,7 @@ export function createCtaButtons(id, channel_id, arg2) {
   } else if (CtaButtonUtils.CtaButtonType.CONNECT_TO_TEEN === ctaButtonType) {
     const obj18 = { ctaButton: obj19 };
     obj19 = { text: intl.string(intl5.t.n8a49k), textColor: null, backgroundColor: null, callback: CtaButtonUtils.CtaButtonType.CONNECT_TO_TEEN };
-    intl = tmp(1113).intl;
+    intl = tmp(1112).intl;
     ({ retryTextColor: obj4.textColor, retryBackgroundColor: obj4.backgroundColor } = arg2);
     return obj18;
   } else {

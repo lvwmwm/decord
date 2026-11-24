@@ -1,18 +1,18 @@
-// Module ID: 7586
-// Function ID: 7587
+// Module ID: 7188
+// Function ID: 7189
 // Name: PostponeRender
-// Dependencies: [32, 19, 17, 21, 5306, 575, 5889, 7587, 7588, 7474, 2]
+// Dependencies: [32, 19, 17, 21, 4913, 575, 5474, 7189, 7190, 7076, 2]
 // Exports: PostponeRender
 
-// Module 7586 (PostponeRender)
+// Module 7188 (PostponeRender)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import useMountEffectDefault from "useMountEffect" /* 5889 */;
-import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 7587 */;
+import useMountEffectDefault from "useMountEffect" /* 5474 */;
+import RunAfterInteractionsUtils from "RunAfterInteractionsUtils" /* 7189 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap, importDefault;
@@ -21,7 +21,7 @@ let StyleSheet;
 let hasOwnProperty;
 let obj2;
 let tmp4;
-const KeyboardAwareViewDefault = tmp4(7474);
+const KeyboardAwareViewDefault = tmp4(7076);
 ({ View: hasOwnProperty, StyleSheet } = react_native);
 const jsx = Fragment.jsx;
 let createStyles = createStyles_mod;
@@ -62,7 +62,7 @@ export function PostponeRender(children) {
     }
   });
   if (first) {
-    children = jsx(first(7588).SceneLoadingIndicator, {});
+    children = jsx(first(7190).SceneLoadingIndicator, {});
   }
   if (!ignoreKeyboard) {
     KeyboardAwareViewDefault;

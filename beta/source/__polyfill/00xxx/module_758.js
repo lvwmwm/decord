@@ -9,22 +9,22 @@ import _mod728 from "module_728" /* 728 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export function createCheckInEnvelope(arg0, trace, sdk, arg3, arg4) {
+export function createCheckInEnvelope(arg0, trace, sdkMetadata, tunnel, dsn) {
   let date;
   const obj = { sent_at: date.toISOString() };
-  sdk = undefined;
+  let sdk;
   date = new Date();
-  if (sdk != null) {
-    sdk = sdk.sdk;
+  if (sdkMetadata != null) {
+    sdk = sdkMetadata.sdk;
   }
   if (sdk) {
-    const obj2 = { name: sdk.sdk.name, version: sdk.sdk.version };
+    const obj2 = { name: sdkMetadata.sdk.name, version: sdkMetadata.sdk.version };
     obj.sdk = obj2;
   }
-  const tmp2 = arg3 && arg4;
+  const tmp2 = tunnel && dsn;
   if (tmp2) {
     const obj4 = _mod701;
-    obj.dsn = obj4.dsnToString(arg4);
+    obj.dsn = obj4.dsnToString(dsn);
   }
   const tmp5 = trace;
   if (tmp5) {

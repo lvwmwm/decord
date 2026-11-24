@@ -1,13 +1,13 @@
-// Module ID: 18324
-// Function ID: 18325
+// Module ID: 17107
+// Function ID: 17108
 // Name: OverridePremiumTypeActions
-// Dependencies: [1388, 572, 8851, 2]
+// Dependencies: [1386, 572, 8446, 2]
 // Exports: updateClientCreatedAtOverride, updateClientPremiumTypeOverride
 
-// Module 18324 (OverridePremiumTypeActions)
+// Module 17107 (OverridePremiumTypeActions)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import createMessage from "createMessage" /* 8851 */;
-import UserStore from "UserStore" /* 1388 */;
+import createMessage from "createMessage" /* 8446 */;
+import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/OverridePremiumTypeActions.tsx");

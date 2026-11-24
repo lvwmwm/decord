@@ -1,23 +1,23 @@
-// Module ID: 10416
-// Function ID: 10417
+// Module ID: 9545
+// Function ID: 9546
 // Name: CollectiblesShopCardV2
-// Dependencies: [19, 17, 1192, 8485, 1074, 21, 5306, 575, 10417, 8496, 10418, 9409, 9520, 9460, 1113, 6005, 7918, 10419, 9517, 504, 5313, 7428, 8497, 5919, 9433, 9437, 9439, 9436, 9442, 9455, 10421, 10432, 9420, 5542, 9407, 2174, 9518, 10451, 10452, 10454, 1269, 2]
+// Dependencies: [19, 17, 1191, 8075, 1073, 21, 4913, 575, 9546, 8086, 9547, 8920, 9040, 8978, 1112, 5595, 7520, 9548, 9037, 504, 4920, 7030, 8087, 5504, 8949, 8953, 8955, 8952, 8958, 8973, 9550, 9561, 8936, 5127, 8918, 2173, 9038, 9580, 9581, 9583, 1268, 2]
 
-// Module 10416 (CollectiblesShopCardV2)
+// Module 9545 (CollectiblesShopCardV2)
 import nativeDefault from "native" /* 575 */;
-import intl4 from "intl" /* 1113 */;
-import v1 from "v1" /* 1269 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 6005 */;
-import openProductDetailsActionSheet2 from "openProductDetailsActionSheet" /* 9407 */;
-import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 9420 */;
+import intl4 from "intl" /* 1112 */;
+import v1 from "v1" /* 1268 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5595 */;
+import openProductDetailsActionSheet2 from "openProductDetailsActionSheet" /* 8918 */;
+import CollectiblesAnalyticsContext from "CollectiblesAnalyticsContext" /* 8936 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ThemeStore from "ThemeStore" /* 1192 */;
-import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 8485 */;
-import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
+import ThemeStore from "ThemeStore" /* 1191 */;
+import CollectiblesCategoryStore from "CollectiblesCategoryStore" /* 8075 */;
+import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1073 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let PixelRatio;

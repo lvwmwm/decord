@@ -1,11 +1,11 @@
-// Module ID: 14427
-// Function ID: 14428
+// Module ID: 12666
+// Function ID: 12667
 // Dependencies: [2]
 
-// Module 14427
+// Module 12666
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_outfit_12_mech_ultraviolet.webp.js");
 
-export default "https://cdn.discordapp.com/assets/content/cfb396306bc31b1ae6323aefd8763e0872e2172dde2b5017f63c61fe7342252c.webp";
-export const metadata = { fileBytes: 31374 };
+export default "https://cdn.discordapp.com/assets/content/7a671dbf6449baba2ef4770e47af5c476d3dd9746da1057b98bc9cfee55dc913.webp";
+export const metadata = { fileBytes: 74142 };

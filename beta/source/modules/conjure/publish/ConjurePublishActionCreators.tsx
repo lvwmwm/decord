@@ -1,24 +1,24 @@
-// Module ID: 13160
-// Function ID: 13161
+// Module ID: 12317
+// Function ID: 12318
 // Name: ConjurePublishActionCreators
-// Dependencies: [5, 1388, 7017, 7377, 1072, 7383, 1285, 7329, 572, 7350, 12270, 7394, 13161, 2]
-// Exports: refreshPreviewApplication, refreshPublishedProject, trackPublishFailed, unpublishUserApp
+// Dependencies: [5, 1386, 6621, 6980, 1071, 6986, 1284, 6933, 572, 6954, 10336, 6996, 12318, 2]
+// Exports: refreshPreviewApplication, refreshPublishedProject, trackPublishFailed, unpublishLiveApp
 
-// Module 13160 (ConjurePublishActionCreators)
+// Module 12317 (ConjurePublishActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import Constants from "Constants" /* 1072 */;
-import ConjureActionCreators from "ConjureActionCreators" /* 7329 */;
-import ConjureAnalytics from "ConjureAnalytics" /* 7383 */;
-import ConjurePreviewActionCreators from "ConjurePreviewActionCreators" /* 7394 */;
-import ApplicationWidgetConfigActions from "ApplicationWidgetConfigActions" /* 12270 */;
-import conjureLiveRelaunch from "conjureLiveRelaunch" /* 13161 */;
+import Constants from "Constants" /* 1071 */;
+import ConjureActionCreators from "ConjureActionCreators" /* 6933 */;
+import ConjureAnalytics from "ConjureAnalytics" /* 6986 */;
+import ConjurePreviewActionCreators from "ConjurePreviewActionCreators" /* 6996 */;
+import ApplicationWidgetConfigActions from "ApplicationWidgetConfigActions" /* 10336 */;
+import conjureLiveRelaunch from "conjureLiveRelaunch" /* 12318 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserStore from "UserStore" /* 1388 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 7017 */;
-import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 7377 */;
+import UserStore from "UserStore" /* 1386 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6621 */;
+import ConjurePublishStatusStore from "ConjurePublishStatusStore" /* 6980 */;
 import size from "module_2" /* 2 */;
 
-let also_remove_preview_bot, closure_4, delete_channels, ok;
+let also_remove_preview_bot, c4, closure_4, delete_channels;
 
 function unpublishProject() {
   return obj(...arguments);
@@ -120,89 +120,98 @@ let obj = function _unpublishProject() {
   });
   return obj(...arguments);
 };
-obj = function _unpublishUserApp() {
-  obj = _asyncToGenerator(async (projectId) => {
+obj = function _unpublishLiveApp() {
+  obj = _asyncToGenerator(async (arg0, value) => {
     let closure_2;
-    let c3 = 0;
-    let c4 = 0;
-    return (async (arg0, value) => {
-      let promise2;
-      if (c4 === 2) {
-        c4 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp4 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          return { value, done: true };
-        } else {
-          return { value: "HermesInternal", done: null };
-        }
+    let promise2;
+    let closure_0 = arg0;
+    if (c4 === 2) {
+      c4 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp4 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
       } else {
-        try {
-          let tmp;
-          let id;
-          c4 = 2;
-          if (0 === c3) {
-            if (arg0 === 1) {
-              c4 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c4 = 3;
-              return { value, done: true };
-            } else {
-              ok = undefined;
-              tmp = undefined;
-              id = undefined;
-              c3 = 1;
-              c4 = 1;
-              const obj5 = { value: promise2.catch(() => null), done: false };
-              promise2 = unpublishProject(projectId, {});
-              return obj5;
-            }
-          } else if (arg0 === 1) {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      try {
+        let ok;
+        let tmp;
+        let id1;
+        let id;
+        c4 = 2;
+        if (0 === c3) {
+          if (arg0 === 1) {
             c4 = 3;
             throw value;
           } else if (arg0 === 2) {
             c4 = 3;
-            return { value, done: true };
+            const obj4 = { value, done: true };
+            return obj4;
           } else {
+            let obj5;
             ok = undefined;
-            if (ok != null) {
-              ok = ok.ok;
-            }
-            if (true !== ok) {
-              c4 = 3;
-              return { value: false, done: true };
+            tmp = undefined;
+            id1 = undefined;
+            id = closure_0.id;
+            if ("guild" === closure_0.install_scope) {
+              obj5 = { alsoRemovePreviewBot: false };
             } else {
-              tmp = closure_130_6.getPublishStatus(projectId);
-              if (null != tmp) {
-                const obj7 = { type: "CONJURE_PROJECT_PUBLISH_STATUS_UPDATE", projectId, publishState: "not_live", surface: tmp.surface, previewAppChannels: tmp.previewAppChannels, previewDevicePermissions: tmp.previewDevicePermissions };
-                obj = closure_130_1(closure_130_2[8]);
-                obj.dispatch(obj7);
-              }
-              const currentUser = closure_130_4.getCurrentUser();
-              id = undefined;
-              if (currentUser != null) {
-                id = currentUser.id;
-              }
-              if (null != id) {
-                const obj3 = closure_130_0(closure_130_2[9]);
-                const profile = obj3.fetchProfile(id);
-                profile.catch(() => {
-
-                });
-              }
-              c4 = 3;
-              return { value: true, done: true };
+              obj5 = {};
             }
+            c3 = 1;
+            c4 = 1;
+            const obj6 = { value: promise2.catch(() => null), done: false };
+            promise2 = unpublishProject(id, obj5);
+            return obj6;
           }
-        } catch (tmp30) {
+        } else if (arg0 === 1) {
           c4 = 3;
-          throw tmp30;
+          throw value;
+        } else if (arg0 === 2) {
+          c4 = 3;
+          const obj7 = { value, done: true };
+          return obj7;
+        } else {
+          ok = undefined;
+          if (ok != null) {
+            ok = ok.ok;
+          }
+          if (true !== ok) {
+            c4 = 3;
+            return { value: false, done: true };
+          } else {
+            tmp = closure_130_6.getPublishStatus(id);
+            if (null != tmp) {
+              const obj8 = { type: "CONJURE_PROJECT_PUBLISH_STATUS_UPDATE", projectId: id, publishState: "not_live", surface: tmp.surface, previewAppChannels: tmp.previewAppChannels, previewDevicePermissions: tmp.previewDevicePermissions };
+              obj = closure_130_1(closure_130_2[8]);
+              obj.dispatch(obj8);
+            }
+            const currentUser = closure_130_4.getCurrentUser();
+            id1 = undefined;
+            if (currentUser != null) {
+              id1 = currentUser.id;
+            }
+            if (null != id1) {
+              const obj3 = closure_130_0(closure_130_2[9]);
+              const profile = obj3.fetchProfile(id1);
+              profile.catch(() => {
+
+              });
+            }
+            c4 = 3;
+            return { value: true, done: true };
+          }
         }
+      } catch (tmp29) {
+        c4 = 3;
+        throw tmp29;
       }
-    })();
+    }
   });
   return obj(...arguments);
 };
@@ -476,7 +485,7 @@ export function trackPublishFailed(projectId, message, isPreview) {
   trackConjureErrored(projectId, obj);
 }
 export { unpublishProject };
-export function unpublishUserApp() {
+export function unpublishLiveApp() {
   return obj(...arguments);
 }
 export function refreshPublishedProject() {

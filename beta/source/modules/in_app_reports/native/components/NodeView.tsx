@@ -1,32 +1,32 @@
-// Module ID: 12070
-// Function ID: 12071
+// Module ID: 10183
+// Function ID: 10184
 // Name: NodeView
-// Dependencies: [32, 19, 17, 5922, 5155, 5238, 12071, 12069, 1072, 1083, 21, 5306, 575, 5907, 6331, 5919, 5303, 6027, 504, 12072, 12073, 1502, 5558, 6321, 12066, 12064, 6057, 12075, 12029, 9616, 7415, 12079, 12080, 12081, 12082, 12083, 12084, 12280, 12281, 12282, 12283, 12284, 12285, 12286, 12288, 12291, 12292, 12293, 12294, 12297, 12298, 12299, 12302, 2]
+// Dependencies: [32, 19, 17, 5507, 4762, 4845, 10184, 10182, 1071, 1082, 21, 4913, 575, 5492, 5933, 5504, 4910, 5617, 504, 10185, 10186, 1500, 5143, 5923, 10179, 10177, 5650, 10188, 10192, 9136, 7017, 10193, 10194, 10195, 10196, 10197, 10198, 10351, 10352, 10353, 10354, 10355, 10356, 10357, 10359, 10360, 10361, 10366, 10367, 10370, 10373, 10374, 10377, 2]
 // Exports: default
 
-// Module 12070 (NodeView)
+// Module 10183 (NodeView)
 import nativeDefault from "native" /* 575 */;
-import Constants2 from "Constants" /* 1083 */;
-import ColorUtils from "ColorUtils" /* 5303 */;
-import reactDefault from "react" /* 5907 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 6027 */;
-import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 6057 */;
-import CustomMarkupAll from "CustomMarkup" /* 6331 */;
-import MenuTypes from "MenuTypes" /* 12064 */;
-import InAppReportsConstants from "InAppReportsConstants" /* 12069 */;
-import MenuConstants from "MenuConstants" /* 12071 */;
-import InAppReportsOptionRowDefault from "InAppReportsOptionRow" /* 12072 */;
-import ArrowDefault from "Arrow" /* 12073 */;
+import Constants2 from "Constants" /* 1082 */;
+import ColorUtils from "ColorUtils" /* 4910 */;
+import reactDefault from "react" /* 5492 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5617 */;
+import AppAnalyticsUtilsDefault from "AppAnalyticsUtils" /* 5650 */;
+import CustomMarkupAll from "CustomMarkup" /* 5933 */;
+import MenuTypes from "MenuTypes" /* 10177 */;
+import InAppReportsConstants from "InAppReportsConstants" /* 10182 */;
+import MenuConstants from "MenuConstants" /* 10184 */;
+import InAppReportsOptionRowDefault from "InAppReportsOptionRow" /* 10185 */;
+import ArrowDefault from "Arrow" /* 10186 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import DevSettingsStore from "DevSettingsStore" /* 5922 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import PermissionStore from "PermissionStore" /* 5238 */;
-import Constants from "Constants" /* 1072 */;
+import DevSettingsStore from "DevSettingsStore" /* 5507 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -55,7 +55,7 @@ function HeaderView(node) {
     const obj = CustomMarkupAll;
     return obj.getParser();
   });
-  const tmp4 = closure_17;
+  const tmp4 = authStore4;
   const tmp5 = metroRequire;
   if (tmp6) {
     tmp6 = "" !== header;
@@ -107,7 +107,7 @@ function InfoView(node) {
     obj6 = { variant: "body-sm/normal", color: "interactive-text-active", includeFontPadding: true, children: tmp3(info) };
     Text = Text_Text.Text;
     items1[1] = authStore3(metroRequire, obj5);
-    tmp4 = closure_17(metroRequire, obj);
+    tmp4 = authStore4(metroRequire, obj);
   }
   return tmp4;
 }
@@ -137,7 +137,7 @@ function ChildItem(child) {
   }
   if (stateFromStores) {
     const obj3 = { style: tmp.debugText, variant: "body-xs/normal", color: "text-muted", children: report_type };
-    stateFromStores = tmp10(tmp6(5919).Text, obj3);
+    stateFromStores = tmp10(tmp6(5504).Text, obj3);
   }
   return closure_16(tmp11, obj2);
 }

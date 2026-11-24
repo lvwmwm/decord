@@ -1,17 +1,17 @@
-// Module ID: 5249
-// Function ID: 5250
+// Module ID: 4856
+// Function ID: 4857
 // Name: MessageRecord
-// Dependencies: [1408, 1072, 1406, 5250, 5942, 5910, 5943, 2]
+// Dependencies: [1406, 1071, 1404, 4857, 5527, 5495, 5528, 2]
 // Exports: ModeratorReport, isMessageComponentsV2
 
-// Module 5249 (MessageRecord)
-import FlagUtils from "FlagUtils" /* 1406 */;
-import ReactionUtils from "ReactionUtils" /* 5250 */;
-import MessageReactionsTypes from "MessageReactionsTypes" /* 5910 */;
-import isForwardMessageDefault from "isForwardMessage" /* 5942 */;
-import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5943 */;
-import Record from "Record" /* 1408 */;
-import Constants from "Constants" /* 1072 */;
+// Module 4856 (MessageRecord)
+import FlagUtils from "FlagUtils" /* 1404 */;
+import ReactionUtils from "ReactionUtils" /* 4857 */;
+import MessageReactionsTypes from "MessageReactionsTypes" /* 5495 */;
+import isForwardMessageDefault from "isForwardMessage" /* 5527 */;
+import ApplicationIntegrationType from "ApplicationIntegrationType" /* 5528 */;
+import Record from "Record" /* 1406 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

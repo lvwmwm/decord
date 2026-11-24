@@ -1,10 +1,10 @@
 // Module ID: 14120
 // Function ID: 14121
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 14120 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "2bf7738cbb1d2827663b492fedbd65fb", name: "MedalIcon", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/guild_boosting/tier_icons/colored", width: 24, height: 24, scales: [2, 3], hash: "81c4c8246b195a90d6f5bb90212bbc6a", name: "tier_3_32px", type: "png" });

@@ -1,12 +1,12 @@
-// Module ID: 10517
-// Function ID: 10518
+// Module ID: 9954
+// Function ID: 9955
 // Name: Tracking
-// Dependencies: [1072, 1256, 2]
+// Dependencies: [1071, 1255, 2]
 // Exports: trackYouTabAvatarPress, trackYouTabCustomStatusPress, trackYouTabEditProfilePress, trackYouTabNitroIconPress, trackYouTabSettingsIconPress
 
-// Module 10517 (Tracking)
-import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+// Module 9954 (Tracking)
+import Constants from "Constants" /* 1071 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;

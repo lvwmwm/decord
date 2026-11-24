@@ -1,21 +1,21 @@
-// Module ID: 12807
-// Function ID: 12808
+// Module ID: 10735
+// Function ID: 10736
 // Name: StreamQualityLiveIndicator
-// Dependencies: [19, 17, 1072, 1390, 6065, 21, 5306, 575, 12717, 11297, 7918, 1655, 5538, 1187, 6242, 12808, 1256, 9579, 10954, 2174, 7428, 6010, 11214, 2]
+// Dependencies: [19, 17, 1071, 1388, 5658, 21, 4913, 575, 10644, 10736, 7520, 1653, 5123, 1186, 5836, 10737, 1255, 9099, 10505, 2173, 7030, 5600, 10503, 2]
 // Exports: default
 
-// Module 12807 (StreamQualityLiveIndicator)
+// Module 10735 (StreamQualityLiveIndicator)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import Constants2 from "Constants" /* 6065 */;
-import openPremiumModalDefault from "openPremiumModal" /* 9579 */;
-import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10954 */;
+import Constants from "Constants" /* 1071 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import Constants2 from "Constants" /* 5658 */;
+import openPremiumModalDefault from "openPremiumModal" /* 9099 */;
+import PremiumFeaturesCards from "PremiumFeaturesCards" /* 10505 */;
 import react from "react" /* 19 */;
-import PremiumConstants from "PremiumConstants" /* 1390 */;
+import PremiumConstants from "PremiumConstants" /* 1388 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -101,8 +101,8 @@ export default function StreamQualityLiveIndicator(arg0) {
   analyticsLocations = require("useAnalyticsLocations")().analyticsLocations;
   const ref = analyticsLocations.useRef(false);
   let items = [closure_12, , , ];
-  const useAnimatedStyle = require("module_1655").useAnimatedStyle;
-  const tmp5 = require("module_1655");
+  const useAnimatedStyle = require("module_1653").useAnimatedStyle;
+  const tmp5 = require("module_1653");
   items[1] = require("timing/timing").withTiming;
   items[2] = reveal;
   items[3] = require("native").STANDARD_EASING;

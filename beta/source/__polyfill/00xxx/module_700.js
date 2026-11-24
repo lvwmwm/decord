@@ -6,15 +6,15 @@
 // Module 700
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export function parseSampleRate(flag) {
-  if (typeof flag === "boolean") {
+export function parseSampleRate(sampleRate) {
+  if (typeof sampleRate === "boolean") {
     const _Number = Number;
-    return Number(flag);
+    return Number(sampleRate);
   } else {
-    let parsed = flag;
-    if (typeof flag === "string") {
+    let parsed = sampleRate;
+    if (typeof sampleRate === "string") {
       const _parseFloat = parseFloat;
-      parsed = parseFloat(flag);
+      parsed = parseFloat(sampleRate);
     }
     let tmp;
     if (typeof parsed === "number") {

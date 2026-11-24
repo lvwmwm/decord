@@ -1,84 +1,91 @@
-// Module ID: 12115
-// Function ID: 12116
+// Module ID: 10238
+// Function ID: 10239
 // Name: UserProfileWidgetGameCommentInput
-// Dependencies: [32, 19, 502, 8479, 21, 8546, 7859, 12090, 1113, 7356, 2]
+// Dependencies: [32, 19, 502, 8069, 21, 8136, 10239, 7461, 10217, 1112, 6960, 2]
 // Exports: default
 
-// Module 12115 (UserProfileWidgetGameCommentInput)
+// Module 10238 (UserProfileWidgetGameCommentInput)
 import Fragment from "Fragment" /* 21 */;
-import intl3 from "intl" /* 1113 */;
-import GameWidgetLimits from "GameWidgetLimits" /* 7356 */;
-import TextArea2 from "TextArea" /* 7859 */;
-import Constants from "Constants" /* 8479 */;
-import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8546 */;
-import WidgetUtils from "WidgetUtils" /* 12090 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
+import Constants from "Constants" /* 8069 */;
+import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8136 */;
+import WidgetUtils from "WidgetUtils" /* 10217 */;
+import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
 
+const require = globalThis.__r;
+
+let _slicedToArray = _slicedToArray_mod;
 let react = react_mod;
-let closure_5 = Constants.TrackUserProfileEditActions;
-const jsx = Fragment.jsx;
+let closure_6 = Constants.TrackUserProfileEditActions;
+let jsx = Fragment.jsx;
 let result = size.fileFinishedImporting("modules/user_profile/native/UserProfileWidgetGameCommentInput.tsx");
 
 export default function UserProfileWidgetGameCommentInput(arg0) {
+  let _undefined;
+  let c7;
+  let c8;
   let closure_3;
+  let closure_4;
   let comment;
   let first;
+  let first1;
   let gameId;
-  ({ widgetType: require, gameId: dependencyMap, comment } = arg0);
+  let ref2;
+  let tmp3;
+  let tmp6;
   let value;
+  ({ widgetType: require, gameId: importDefault, comment } = arg0);
+  value = undefined;
+  _slicedToArray = undefined;
   react = undefined;
-  let closure_4;
-  closure_5 = undefined;
+  let ref;
+  jsx = undefined;
+  c8 = undefined;
   let obj = react;
   let str = comment;
   const useState = react.useState;
   if (comment == null) {
     str = "";
   }
-  let tmp = value(useState(str), 2);
-  value = tmp[0];
-  react = tmp3;
-  const tmp4 = value(obj.useState(comment), 2);
-  const tmp6 = tmp4[1];
-  closure_4 = tmp6;
-  const first1 = tmp4[0];
-  closure_5 = obj.useRef(null);
+  [value, tmp3] = useState(str);
+  _slicedToArray = tmp3;
+  [first1, tmp6] = obj.useState(comment);
+  react = tmp6;
+  obj.useRef(null);
+  ref = obj.useRef(null);
+  const context = obj.useContext(require("react"));
+  ({ focusedInputRef: c7, onInputFocus: c8 } = context);
   if (comment !== first1) {
     tmp6(comment);
     if (comment == null) {
       comment = "";
     }
-    tmp[1](comment);
+    tmp3(comment);
   }
-  const effect = obj.useEffect(() => {
-    let id;
-    let ref;
-    return () => {
-      let currentValue;
-      let initialValue;
-      const current = ref.current;
-      let tmp = null != current;
-      if (tmp) {
-        ({ currentValue, initialValue } = current);
-        const trimmed = currentValue.trim();
-        tmp = trimmed !== initialValue.trim();
-      }
-      if (tmp) {
-        const obj = { userId: id.getId(), action: ref.COMMENTARY_EDITED, widgetEdited: null, gameId: null };
-        const trackUserProfileEditAction = UserProfileAnalyticsUtils.trackUserProfileEditAction;
-        UserProfileAnalyticsUtils;
-        ({ widgetType: obj.widgetEdited, gameId: obj.gameId } = current);
-        const result = trackUserProfileEditAction(obj);
-      }
-    };
+  const effect = obj.useEffect(() => () => {
+    let currentValue;
+    let initialValue;
+    const current = ref.current;
+    let tmp = null != current;
+    if (tmp) {
+      ({ currentValue, initialValue } = current);
+      const trimmed = currentValue.trim();
+      tmp = trimmed !== initialValue.trim();
+    }
+    if (tmp) {
+      const obj = { userId: ref.getId(), action: ref.COMMENTARY_EDITED, widgetEdited: null, gameId: null };
+      const trackUserProfileEditAction = require("UserProfileAnalyticsUtils").trackUserProfileEditAction;
+      require("UserProfileAnalyticsUtils");
+      ({ widgetType: obj.widgetEdited, gameId: obj.gameId } = current);
+      const result = trackUserProfileEditAction(obj);
+    }
   }, []);
-  const TextArea = TextArea2.TextArea;
-  const intl = intl3.intl;
-  const intl2 = intl3.intl;
-  return <TextArea value={value} onChange={function handleChange(currentValue) {
+  const TextArea = require("TextArea").TextArea;
+  const intl = require("intl").intl;
+  const intl2 = require("intl").intl;
+  return <TextArea ref={ref} value={value} onChange={function handleChange(currentValue) {
     const trimmed = currentValue.trim();
     let tmp2;
     if ("" !== trimmed) {
@@ -86,35 +93,37 @@ export default function UserProfileWidgetGameCommentInput(arg0) {
     }
     closure_3(currentValue);
     closure_4(tmp2);
-    if (null != closure_5.current) {
-      closure_5.current.currentValue = currentValue;
+    if (null != ref.current) {
+      ref.current.currentValue = currentValue;
     }
     const obj = WidgetUtils;
-    const result = obj.updatePendingGameComment(require, dependencyMap, tmp2);
+    const result = obj.updatePendingGameComment(require, importDefault, tmp2);
   }} onFocus={function handleFocus() {
-    const obj = { widgetType: widgetEdited, gameId: dependencyMap, initialValue: currentValue, currentValue };
+    c7.current = ref.current;
+    _undefined();
+    const obj = { widgetType: widgetEdited, gameId: importDefault, initialValue: currentValue, currentValue };
     closure_5.current = obj;
     const obj2 = UserProfileAnalyticsUtils;
-    const obj3 = { userId: AuthenticationStore.getId(), action: closure_5.PRESS_ADD_COMMENTARY, widgetEdited };
+    const obj3 = { userId: AuthenticationStore.getId(), action: ref2.PRESS_ADD_COMMENTARY, widgetEdited };
     const result = obj2.trackUserProfileEditAction(obj3);
   }} onBlur={function handleBlur() {
     let currentValue;
     let initialValue;
-    const current = closure_5.current;
+    const current = ref.current;
     let tmp2 = null != current;
-    const tmp = closure_5;
+    const tmp = ref;
     if (tmp2) {
       ({ currentValue, initialValue } = current);
       const trimmed = currentValue.trim();
       tmp2 = trimmed !== initialValue.trim();
     }
     if (tmp2) {
-      const obj = { userId: AuthenticationStore.getId(), action: closure_5.COMMENTARY_EDITED, widgetEdited: null, gameId: null };
+      const obj = { userId: AuthenticationStore.getId(), action: ref2.COMMENTARY_EDITED, widgetEdited: null, gameId: null };
       const trackUserProfileEditAction = UserProfileAnalyticsUtils.trackUserProfileEditAction;
       UserProfileAnalyticsUtils;
       ({ widgetType: obj.widgetEdited, gameId: obj.gameId } = current);
       const result = trackUserProfileEditAction(obj);
     }
     tmp.current = null;
-  }} placeholder={intl.string(intl3.t.xKSfBT)} accessibilityLabel={intl2.string(intl3.t.JxKXeT)} maxLength={GameWidgetLimits.USER_WIDGET_GAME_COMMENT_MAX_LENGTH} />;
+  }} placeholder={intl.string(require("intl").t.xKSfBT)} accessibilityLabel={intl2.string(require("intl").t.JxKXeT)} maxLength={require("GameWidgetLimits").USER_WIDGET_GAME_COMMENT_MAX_LENGTH} />;
 };

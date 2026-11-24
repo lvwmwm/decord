@@ -1,12 +1,12 @@
-// Module ID: 13286
-// Function ID: 13287
+// Module ID: 18366
+// Function ID: 18367
 // Name: useUsesPreviewApp
-// Dependencies: [7017, 504, 7018, 2]
+// Dependencies: [6621, 504, 6622, 2]
 // Exports: default
 
-// Module 13286 (useUsesPreviewApp)
-import ConjureProjectTypes from "ConjureProjectTypes" /* 7018 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 7017 */;
+// Module 18366 (useUsesPreviewApp)
+import ConjureProjectTypes from "ConjureProjectTypes" /* 6622 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6621 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

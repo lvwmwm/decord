@@ -1,20 +1,20 @@
-// Module ID: 9464
-// Function ID: 9465
+// Module ID: 8982
+// Function ID: 8983
 // Name: useWishlistHooks
-// Dependencies: [32, 19, 7352, 502, 1388, 9465, 9466, 9471, 504, 9472, 12, 9473, 8483, 9474, 9484, 2]
+// Dependencies: [32, 19, 6956, 502, 1386, 8983, 8984, 8989, 504, 8990, 12, 8991, 8073, 8992, 9002, 2]
 // Exports: useCurrentUserWishlist, useFetchWishlistAndProfileInfoForUser, useFetchWishlists, useIsSkuInWishlist, useShouldShowWishlistInDMGifting
 
-// Module 9464 (useWishlistHooks)
+// Module 8982 (useWishlistHooks)
 import _mod12 from "module_12" /* 12 */;
 import react2 from "react" /* 19 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8483 */;
-import WishlistRecord from "WishlistRecord" /* 9466 */;
-import WishlistActionCreatorsDefault from "WishlistActionCreators" /* 9472 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8073 */;
+import WishlistRecord from "WishlistRecord" /* 8984 */;
+import WishlistActionCreatorsDefault from "WishlistActionCreators" /* 8990 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import UserProfileStore from "UserProfileStore" /* 7352 */;
+import UserProfileStore from "UserProfileStore" /* 6956 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import UserStore from "UserStore" /* 1388 */;
-import WishlistStore from "WishlistStore" /* 9465 */;
+import UserStore from "UserStore" /* 1386 */;
+import WishlistStore from "WishlistStore" /* 8983 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

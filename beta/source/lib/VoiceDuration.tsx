@@ -1,11 +1,11 @@
-// Module ID: 6246
-// Function ID: 6247
+// Module ID: 5840
+// Function ID: 5841
 // Name: VoiceDuration
-// Dependencies: [6069, 6103, 2]
+// Dependencies: [5662, 5696, 2]
 
-// Module 6246 (VoiceDuration)
-import TimeUtils from "TimeUtils" /* 6069 */;
-import discord_common_BaseConnectionEvent from "discord_common/BaseConnectionEvent" /* 6103 */;
+// Module 5840 (VoiceDuration)
+import TimeUtils from "TimeUtils" /* 5662 */;
+import discord_common_BaseConnectionEvent from "discord_common/BaseConnectionEvent" /* 5696 */;
 import size from "module_2" /* 2 */;
 
 let closure_2, closure_3;
@@ -47,6 +47,8 @@ class VoiceDuration {
     merged.noiseCancellation = durationEnabled;
     const durationEnabled1 = new TimeUtils.DurationEnabled(connection.getSpatialAudioEnabled(), merged.timestampProducer);
     merged.spatialAudio = durationEnabled1;
+    const durationEnabled2 = new TimeUtils.DurationEnabled(connection.getSpatialAudioActive(), merged.timestampProducer);
+    merged.spatialAudioActive = durationEnabled2;
     return merged;
   }
   start(flag, flag2) {
@@ -75,6 +77,8 @@ class VoiceDuration {
     noiseCancellation.reset();
     const spatialAudio = self.spatialAudio;
     spatialAudio.reset();
+    const spatialAudioActive = self.spatialAudioActive;
+    spatialAudioActive.reset();
     const timesUntilSpeakingDurationMilestonesMs = self.timesUntilSpeakingDurationMilestonesMs;
     timesUntilSpeakingDurationMilestonesMs.clear();
     const speakingMinimumChunks = self.speakingMinimumChunks;
@@ -228,6 +232,7 @@ class VoiceDuration {
     const listening2 = this.listening;
     const value = this.noiseCancellation.value;
     const value2 = this.spatialAudio.value;
+    const value3 = this.spatialAudioActive.value;
     const isRunningResult2 = muted.isRunning();
     const isRunningResult3 = deafened.isRunning();
     listening2.reset();
@@ -245,6 +250,8 @@ class VoiceDuration {
     noiseCancellation.reset();
     const spatialAudio = this.spatialAudio;
     spatialAudio.reset();
+    const spatialAudioActive = this.spatialAudioActive;
+    spatialAudioActive.reset();
     const timesUntilSpeakingDurationMilestonesMs = this.timesUntilSpeakingDurationMilestonesMs;
     timesUntilSpeakingDurationMilestonesMs.clear();
     const speakingMinimumChunks = this.speakingMinimumChunks;
@@ -280,12 +287,16 @@ class VoiceDuration {
     }
     self.noiseCancellation.value = value;
     self.spatialAudio.value = value2;
+    self.spatialAudioActive.value = value3;
   }
   setNoiseCancellationEnabled(value) {
     this.noiseCancellation.value = value;
   }
   setSpatialAudioEnabled(value) {
     this.spatialAudio.value = value;
+  }
+  setSpatialAudioActive(value) {
+    this.spatialAudioActive.value = value;
   }
   stop() {
     this.addSpeechChunk();
@@ -304,6 +315,7 @@ class VoiceDuration {
     muted.stop();
     this.noiseCancellation.value = false;
     this.spatialAudio.value = false;
+    this.spatialAudioActive.value = false;
     const speakingDurationMilestones = this.computeSpeakingDurationMilestones(lastStartTime, lastStartTime2, lastElapsed);
   }
   getDeprecatedDurationStats() {
@@ -339,6 +351,7 @@ class VoiceDuration {
     let elapsedResult5;
     let noiseCancellation;
     let spatialAudio;
+    let spatialAudioActive;
     const self = this;
     const lastStartTime = this.speaking.lastStartTime;
     const timestampProducer = this.timestampProducer;
@@ -347,7 +360,7 @@ class VoiceDuration {
       num = timestampProducer.now() - lastStartTime;
     }
     const speakingDurationMilestones = self.computeSpeakingDurationMilestones(self.connected.lastStartTime, self.speaking.lastStartTime, self.speaking.lastElapsed);
-    let obj = { duration_listening_ms: elapsedResult.asMilliseconds(), duration_speaking_ms: elapsedResult1.asMilliseconds(), duration_participation_ms: elapsedResult2.asMilliseconds(), duration_connected_ms: elapsedResult3.asMilliseconds(), duration_muted_ms: elapsedResult4.asMilliseconds(), duration_deafened_ms: elapsedResult5.asMilliseconds(), duration_noise_cancellation_enabled_ms: noiseCancellation.totalDuration(), duration_spatial_ms: spatialAudio.totalDuration(), speech_event_count: self.speechEventCount };
+    let obj = { duration_listening_ms: elapsedResult.asMilliseconds(), duration_speaking_ms: elapsedResult1.asMilliseconds(), duration_participation_ms: elapsedResult2.asMilliseconds(), duration_connected_ms: elapsedResult3.asMilliseconds(), duration_muted_ms: elapsedResult4.asMilliseconds(), duration_deafened_ms: elapsedResult5.asMilliseconds(), duration_noise_cancellation_enabled_ms: noiseCancellation.totalDuration(), duration_spatial_ms: spatialAudio.totalDuration(), duration_spatial_active_ms: spatialAudioActive.totalDuration(), speech_event_count: self.speechEventCount };
     const listening = self.listening;
     const speaking = self.speaking;
     elapsedResult = listening.elapsed();
@@ -361,6 +374,7 @@ class VoiceDuration {
     elapsedResult4 = muted.elapsed();
     noiseCancellation = self.noiseCancellation;
     spatialAudio = self.spatialAudio;
+    spatialAudioActive = self.spatialAudioActive;
     elapsedResult5 = deafened.elapsed();
     const found = closure_2.filter((item) => {
       const timesUntilSpeakingDurationMilestonesMs = self.timesUntilSpeakingDurationMilestonesMs;

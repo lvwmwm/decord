@@ -1,22 +1,22 @@
-// Module ID: 7706
-// Function ID: 7707
+// Module ID: 7308
+// Function ID: 7309
 // Name: MemberVerificationModal
-// Dependencies: [19, 17, 5218, 7707, 7708, 21, 1655, 1187, 5306, 575, 1630, 5537, 5313, 7709, 7711, 504, 5342, 6914, 7712, 7418, 7474, 7719, 7728, 7729, 7428, 1113, 7863, 2]
+// Dependencies: [19, 17, 4825, 7309, 7310, 21, 1653, 1186, 4913, 575, 1628, 5122, 4920, 7311, 7313, 504, 4949, 6518, 7314, 7020, 7076, 7321, 7330, 7331, 7030, 1112, 7465, 2]
 // Exports: default
 
-// Module 7706 (MemberVerificationModal)
+// Module 7308 (MemberVerificationModal)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 1187 */;
-import MemberVerificationTypes from "MemberVerificationTypes" /* 5342 */;
-import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 6914 */;
+import native from "native" /* 1186 */;
+import MemberVerificationTypes from "MemberVerificationTypes" /* 4949 */;
+import MemberVerificationAlertActionCreators from "MemberVerificationAlertActionCreators" /* 6518 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 5218 */;
-import MemberVerificationFormStore from "MemberVerificationFormStore" /* 7707 */;
-import MemberVerificationFormConstants from "MemberVerificationFormConstants" /* 7708 */;
+import GuildMemberStore from "GuildMemberStore" /* 4825 */;
+import MemberVerificationFormStore from "MemberVerificationFormStore" /* 7309 */;
+import MemberVerificationFormConstants from "MemberVerificationFormConstants" /* 7310 */;
 import Fragment from "Fragment" /* 21 */;
-import module_1655 from "module_1655" /* 1655 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import module_1653 from "module_1653" /* 1653 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let SHEET_RADIUS;
@@ -30,7 +30,7 @@ let obj4;
 const View = react_native.View;
 ({ SCROLL_EVENT_TIMER_MS: metroImportDefault, SHEET_RADIUS, useBannerHeight: metroImportAll } = MemberVerificationFormConstants);
 ({ jsx: c9, jsxs: c10 } = Fragment);
-let closure_11 = module_1655.createAnimatedComponent(native.Icon);
+let closure_11 = module_1653.createAnimatedComponent(native.Icon);
 let createStyles = createStyles_mod;
 let obj = { flex: { flex: 1 }, flexLoading: { flex: 1, alignItems: "center", justifyContent: "center" }, scrollContent: { flexGrow: 1 }, sheet: obj2, closeButtonContainer: { position: "absolute", right: 0 }, closeIconContainer: { position: "relative", marginTop: 10, marginRight: 20, width: 24, height: 24 }, closeIconOverBanner: obj3, closeIconAfterBanner: obj4, headerSeparator: { marginHorizontal: 16, marginVertical: 12 } };
 obj2 = { flexGrow: 1, marginTop: -SHEET_RADIUS, borderTopLeftRadius: SHEET_RADIUS, borderTopRightRadius: SHEET_RADIUS, backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER };

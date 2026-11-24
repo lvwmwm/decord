@@ -1,18 +1,18 @@
-// Module ID: 13217
-// Function ID: 13218
+// Module ID: 18307
+// Function ID: 18308
 // Name: conjureGuildPickerSources
-// Dependencies: [19, 5218, 5212, 1388, 504, 1255, 5362, 7075, 6907, 2]
+// Dependencies: [19, 4825, 4819, 1386, 504, 1254, 4969, 6679, 6511, 2]
 // Exports: conjureMemberUsername, useConjureGuildMemberUsers, useConjureGuildRoles, useConjureMemberRequests
 
-// Module 13217 (conjureGuildPickerSources)
-import GlobalUtils from "GlobalUtils" /* 1255 */;
-import UserUtils from "UserUtils" /* 5362 */;
-import GuildActionCreatorsDefault from "GuildActionCreators" /* 6907 */;
-import GuildUtilsDefault from "GuildUtils" /* 7075 */;
+// Module 18307 (conjureGuildPickerSources)
+import GlobalUtils from "GlobalUtils" /* 1254 */;
+import UserUtils from "UserUtils" /* 4969 */;
+import GuildActionCreatorsDefault from "GuildActionCreators" /* 6511 */;
+import GuildUtilsDefault from "GuildUtils" /* 6679 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 5218 */;
-import GuildRoleStore from "GuildRoleStore" /* 5212 */;
-import UserStore from "UserStore" /* 1388 */;
+import GuildMemberStore from "GuildMemberStore" /* 4825 */;
+import GuildRoleStore from "GuildRoleStore" /* 4819 */;
+import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

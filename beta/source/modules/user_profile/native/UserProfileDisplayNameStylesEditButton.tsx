@@ -1,24 +1,24 @@
-// Module ID: 17094
-// Function ID: 17095
+// Module ID: 15860
+// Function ID: 15861
 // Name: UserProfileDisplayNameStylesEditButton
-// Dependencies: [32, 19, 17, 1072, 5152, 21, 5306, 575, 1502, 9560, 5139, 8541, 6740, 10068, 1399, 17095, 1256, 1113, 17098, 1187, 15530, 10064, 17099, 17101, 3125, 17102, 2]
+// Dependencies: [32, 19, 17, 1071, 4759, 21, 4913, 575, 1500, 9080, 4746, 8131, 6342, 9460, 1397, 15861, 1255, 1112, 15864, 1186, 14262, 9454, 15865, 15867, 3248, 15868, 2]
 // Exports: default
 
-// Module 17094 (UserProfileDisplayNameStylesEditButton)
+// Module 15860 (UserProfileDisplayNameStylesEditButton)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import intl3 from "intl" /* 1113 */;
-import native from "native" /* 1187 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
-import AssetRegistryDefault from "AssetRegistry" /* 15530 */;
-import getDisplayNameStylesFontNameDefault from "getDisplayNameStylesFontName" /* 17098 */;
-import DisplayNameStylesColorSwatchDefault from "DisplayNameStylesColorSwatch" /* 17099 */;
+import intl3 from "intl" /* 1112 */;
+import native from "native" /* 1186 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4759 */;
+import AssetRegistryDefault from "AssetRegistry" /* 14262 */;
+import getDisplayNameStylesFontNameDefault from "getDisplayNameStylesFontName" /* 15864 */;
+import DisplayNameStylesColorSwatchDefault from "DisplayNameStylesColorSwatch" /* 15865 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 1072 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import Constants from "Constants" /* 1071 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;

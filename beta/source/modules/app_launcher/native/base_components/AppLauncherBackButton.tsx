@@ -1,13 +1,13 @@
-// Module ID: 13464
-// Function ID: 13465
+// Module ID: 12996
+// Function ID: 12997
 // Name: AppLauncherBackButton
-// Dependencies: [19, 21, 1503, 7988, 7498, 7550, 1113, 2]
+// Dependencies: [19, 21, 1501, 7591, 7100, 7152, 1112, 2]
 // Exports: default
 
-// Module 13464 (AppLauncherBackButton)
+// Module 12996 (AppLauncherBackButton)
 import Fragment from "Fragment" /* 21 */;
-import Link from "Link" /* 1503 */;
-import IconButton2 from "IconButton" /* 7988 */;
+import Link from "Link" /* 1501 */;
+import IconButton2 from "IconButton" /* 7591 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -22,9 +22,9 @@ export default function AppLauncherBackButton(onPress) {
   navigation = obj.useNavigation();
   const canGoBackResult = navigation.canGoBack();
   const IconButton = IconButton2.IconButton;
-  const intl = tmp(1113).intl;
+  const intl = tmp(1112).intl;
   const string = intl.string;
-  const t = tmp(1113).t;
-  return <IconButton size="sm" variant="secondary-overlay" icon={importDefault(canGoBackResult ? 7498 : 7550)} onPress={onPress} accessibilityLabel={string(canGoBackResult ? t["13/7kX"] : t.cpT0Cq)} maxFontSizeMultiplier={1.5} />;
+  const t = tmp(1112).t;
+  return <IconButton size="sm" variant="secondary-overlay" icon={importDefault(canGoBackResult ? 7100 : 7152)} onPress={onPress} accessibilityLabel={string(canGoBackResult ? t["13/7kX"] : t.cpT0Cq)} maxFontSizeMultiplier={1.5} />;
 };
 export const BACK_BUTTON_SIZE = 32;

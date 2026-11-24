@@ -1,14 +1,14 @@
-// Module ID: 20726
-// Function ID: 20727
+// Module ID: 19996
+// Function ID: 19997
 // Name: GuildSettingsRoleSubscriptionsGroupEdit
-// Dependencies: [5, 32, 19, 17, 1365, 21, 1502, 17835, 20727, 20660, 5903, 20728, 12, 7493, 7427, 1113, 6004, 575, 20730, 20734, 20739, 2]
+// Dependencies: [5, 32, 19, 17, 1363, 21, 1500, 16615, 19997, 19930, 5488, 19998, 12, 7095, 7029, 1112, 5594, 575, 20000, 20004, 20009, 2]
 // Exports: default
 
-// Module 20726 (GuildSettingsRoleSubscriptionsGroupEdit)
+// Module 19996 (GuildSettingsRoleSubscriptionsGroupEdit)
 import react_native from "react-native" /* 17 */;
-import ApplicationConstants from "ApplicationConstants" /* 1365 */;
-import ToastUtils from "ToastUtils" /* 6004 */;
-import GuildSettingsRoleSubscriptionContainerDefault from "GuildSettingsRoleSubscriptionContainer" /* 20739 */;
+import ApplicationConstants from "ApplicationConstants" /* 1363 */;
+import ToastUtils from "ToastUtils" /* 5594 */;
+import GuildSettingsRoleSubscriptionContainerDefault from "GuildSettingsRoleSubscriptionContainer" /* 20009 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -203,8 +203,8 @@ function GuildSettingsRoleSubscriptionsGroupEditInner(guildId) {
       ToastUtils;
       let anyErrorMessage = obj.getAnyErrorMessage();
       if (anyErrorMessage == null) {
-        const intl = tmp(1113).intl;
-        anyErrorMessage = intl.string(tmp(1113).t.ZUEGFn);
+        const intl = tmp(1112).intl;
+        anyErrorMessage = intl.string(tmp(1112).t.ZUEGFn);
       }
       presentError(anyErrorMessage);
     }

@@ -1,11 +1,11 @@
-// Module ID: 16927
-// Function ID: 16928
+// Module ID: 15681
+// Function ID: 15682
 // Name: discord_common/helpers
-// Dependencies: [1083, 2]
+// Dependencies: [1082, 2]
 // Exports: joiReqObj
 
-// Module 16927 (discord_common/helpers)
-import Constants from "Constants" /* 1083 */;
+// Module 15681 (discord_common/helpers)
+import Constants from "Constants" /* 1082 */;
 import size from "module_2" /* 2 */;
 
 let RPCCommands;

@@ -1,26 +1,26 @@
-// Module ID: 11397
-// Function ID: 11398
+// Module ID: 10677
+// Function ID: 10678
 // Name: executeCommand
-// Dependencies: [5, 6969, 2189, 5177, 8872, 1388, 9007, 1072, 5311, 5975, 572, 8864, 8724, 2119, 11398, 11400, 38, 11401, 6057, 9005, 11153, 5252, 1255, 8852, 11402, 6371, 9016, 11403, 11405, 7350, 8851, 8660, 8890, 8875, 8846, 1113, 9027, 2]
+// Dependencies: [5, 6573, 2188, 4784, 8467, 1386, 8517, 1071, 4918, 5565, 572, 8459, 8314, 2117, 10678, 10680, 38, 10681, 5650, 8515, 10453, 4859, 1254, 8447, 10549, 5973, 8526, 10630, 10682, 6954, 8446, 8250, 8485, 8470, 8442, 1112, 8537, 2]
 // Exports: default, retryCommandMessage
 
-// Module 11397 (executeCommand)
-import MessageConstants from "MessageConstants" /* 5311 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5975 */;
-import UploadUtils from "UploadUtils" /* 8846 */;
-import FileUtils from "FileUtils" /* 8875 */;
-import UploadLimits from "UploadLimits" /* 8890 */;
-import MessageQueue from "MessageQueue" /* 9016 */;
-import InteractionActionCreatorsAll from "InteractionActionCreators" /* 11402 */;
-import ApplicationCommandQueryApiAll from "ApplicationCommandQueryApi" /* 11405 */;
+// Module 10677 (executeCommand)
+import MessageConstants from "MessageConstants" /* 4918 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5565 */;
+import UploadUtils from "UploadUtils" /* 8442 */;
+import FileUtils from "FileUtils" /* 8470 */;
+import UploadLimits from "UploadLimits" /* 8485 */;
+import MessageQueue from "MessageQueue" /* 8526 */;
+import InteractionActionCreatorsAll from "InteractionActionCreators" /* 10549 */;
+import ApplicationCommandQueryApiAll from "ApplicationCommandQueryApi" /* 10682 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import EmojiStore from "EmojiStore" /* 6969 */;
-import LocaleStore from "LocaleStore" /* 2189 */;
-import GuildStore from "GuildStore" /* 5177 */;
-import UploadAttachmentStore from "UploadAttachmentStore" /* 8872 */;
-import UserStore from "UserStore" /* 1388 */;
-import ApplicationCommandStore from "ApplicationCommandStore" /* 9007 */;
-import Constants from "Constants" /* 1072 */;
+import EmojiStore from "EmojiStore" /* 6573 */;
+import LocaleStore from "LocaleStore" /* 2188 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import UploadAttachmentStore from "UploadAttachmentStore" /* 8467 */;
+import UserStore from "UserStore" /* 1386 */;
+import ApplicationCommandStore from "ApplicationCommandStore" /* 8517 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 const MessageQueueDefault = MessageQueue;
@@ -753,12 +753,12 @@ function enqueueCommandInteraction(interactionLifecycleOptions) {
     message = { applicationId, channelId: id, guildId: id1, data: tmp, nonce, attachments, maxSizeCallback, analytics_location: tmp2, sectionName: tmp3, source: tmp4 };
     nonce = interactionLifecycleOptions.nonce;
     if (nonce == null) {
-      const obj2 = onMessageSuccess(8852);
+      const obj2 = onMessageSuccess(8447);
       nonce = obj2.createNonce();
     }
     const obj4 = { messageId: null, onCreate: null, onSuccess: null, onFailure: null, data: obj5 };
     ({ messageId: obj3.messageId, onCreate: obj3.onCreate, onSuccess: obj3.onSuccess, onFailure: obj3.onFailure } = interactionLifecycleOptions);
-    obj5 = { interactionType: onMessageSuccess(6371).InteractionTypes.APPLICATION_COMMAND, applicationId, channelId: id };
+    obj5 = { interactionType: onMessageSuccess(5973).InteractionTypes.APPLICATION_COMMAND, applicationId, channelId: id };
     const addQueued = InteractionActionCreatorsAll.addQueued;
     const nonce2 = message.nonce;
     InteractionActionCreatorsAll;
@@ -796,9 +796,9 @@ function enqueueCommandInteraction(interactionLifecycleOptions) {
         });
       }
     }
-    const obj8 = { type: tmp11(9016).MessageDataType.COMMAND, message };
-    let enqueue = message(9016).enqueue;
-    message(9016);
+    const obj8 = { type: tmp11(8526).MessageDataType.COMMAND, message };
+    let enqueue = message(8526).enqueue;
+    message(8526);
     enqueue(obj8, (ok) => {
       let applicationId;
       let channelId;

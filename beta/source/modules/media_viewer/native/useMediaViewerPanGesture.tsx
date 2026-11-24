@@ -1,14 +1,14 @@
-// Module ID: 15232
-// Function ID: 15233
+// Module ID: 10590
+// Function ID: 10591
 // Name: useMediaViewerPanGesture
-// Dependencies: [19, 1655, 8630, 8629, 5929, 1708, 7790, 5588, 2]
+// Dependencies: [19, 1653, 8220, 8219, 5514, 1706, 7392, 5173, 2]
 // Exports: useMediaViewerPanGesture, useMediaViewerPanGestureConfig
 
-// Module 15232 (useMediaViewerPanGesture)
-import _mod1708 from "module_1708" /* 1708 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5588 */;
-import spring_spring from "spring/spring" /* 5929 */;
-import useVideoControls from "useVideoControls" /* 8630 */;
+// Module 10590 (useMediaViewerPanGesture)
+import _mod1706 from "module_1706" /* 1706 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5173 */;
+import spring_spring from "spring/spring" /* 5514 */;
+import useVideoControls from "useVideoControls" /* 8220 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -16,7 +16,7 @@ const require = globalThis.__r;
 let _require, dependencyMap, set;
 
 let tmp;
-const MediaViewerAnalyticsManager = tmp(8629);
+const MediaViewerAnalyticsManager = tmp(8219);
 let closure_4 = { damping: 15, mass: 1, stiffness: 250, overshootClamping: true };
 let closure_5 = { code: "(function useMediaViewerPanGestureTsx1(){let[scheduleOnRN,handleClose]=this.__closure;scheduleOnRN(handleClose);})" };
 let closure_6 = { code: "(function useMediaViewerPanGestureTsx2(){let[start,translatePos,isInteracting]=this.__closure;start.set({x:0,y:translatePos.get()});isInteracting.set(true);})" };
@@ -29,17 +29,17 @@ export function useMediaViewerPanGestureConfig(arg0, swipeVelocityThreshold, onC
   let closure_0;
   _require = arg0;
   dependencyMap = onClose;
-  let obj = require("module_1655");
+  let obj = require("module_1653");
   const sharedValue = obj.useSharedValue(false);
-  let obj2 = require("module_1655");
+  let obj2 = require("module_1653");
   const sharedValue1 = obj2.useSharedValue(false);
-  const obj3 = require("module_1655");
+  const obj3 = require("module_1653");
   const sharedValue2 = obj3.useSharedValue(0);
-  const obj4 = require("module_1655");
+  const obj4 = require("module_1653");
   const sharedValue3 = obj4.useSharedValue(0);
-  const obj5 = require("module_1655");
+  const obj5 = require("module_1653");
   const sharedValue4 = obj5.useSharedValue({ y: 0, x: 0 });
-  const obj6 = require("module_1655");
+  const obj6 = require("module_1653");
   const sharedValue5 = obj6.useSharedValue(true);
   let items = [onClose];
   const callback = sharedValue.useCallback(() => {
@@ -68,7 +68,7 @@ export function useMediaViewerPanGestureConfig(arg0, swipeVelocityThreshold, onC
     const withSpring = spring_spring.withSpring;
     const obj2 = { velocity: obj.get() };
     const merged = Object.assign(closure_4);
-    const items = [closure_5, _mod1708.scheduleOnRN, callback];
+    const items = [closure_5, _mod1706.scheduleOnRN, callback];
     let c0;
     let c1;
     [tmp7, tmp8, tmp9] = items;
@@ -162,7 +162,7 @@ export function useMediaViewerPanGesture(panGestureConfig, derivedValue) {
     const items6 = [closure_9, isInteracting, velocity, swipeVelocityThreshold, , , , , ];
     const onEnd = onUpdateResult.onTouchesDown(useMediaViewerPanGestureTsx4).onEnd;
     onUpdateResult.onTouchesDown(useMediaViewerPanGestureTsx4);
-    items6[4] = _mod1708.scheduleOnRN;
+    items6[4] = _mod1706.scheduleOnRN;
     items6[5] = closure_6;
     items6[6] = translatePos;
     items6[7] = spring_spring.withSpring;

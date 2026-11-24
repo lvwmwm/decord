@@ -1,22 +1,22 @@
-// Module ID: 15494
-// Function ID: 15495
+// Module ID: 14225
+// Function ID: 14226
 // Name: ShopNitroUpsellPromoSheet
-// Dependencies: [19, 1072, 21, 7918, 11170, 11260, 9037, 11279, 10713, 15495, 6941, 10074, 1113, 5926, 2]
+// Dependencies: [19, 1071, 21, 7520, 10459, 10949, 8547, 10950, 11225, 14226, 6545, 10952, 1112, 5511, 2]
 // Exports: default
 
-// Module 15494 (ShopNitroUpsellPromoSheet)
-import Constants from "Constants" /* 1072 */;
-import intl3 from "intl" /* 1113 */;
-import components_Button_Button from "components/Button/Button" /* 5926 */;
-import ButtonGroup2 from "ButtonGroup" /* 6941 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7918 */;
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 9037 */;
-import NitroUpsellButtonDefault from "NitroUpsellButton" /* 10074 */;
-import PromoSheet2 from "PromoSheet" /* 10713 */;
-import PremiumUpsellUtils from "PremiumUpsellUtils" /* 11170 */;
-import PremiumFeatureUpsellUtils from "PremiumFeatureUpsellUtils" /* 11260 */;
-import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 11279 */;
-import DiscountsMegaphoneSpotIllustration from "DiscountsMegaphoneSpotIllustration" /* 15495 */;
+// Module 14225 (ShopNitroUpsellPromoSheet)
+import Constants from "Constants" /* 1071 */;
+import intl3 from "intl" /* 1112 */;
+import components_Button_Button from "components/Button/Button" /* 5511 */;
+import ButtonGroup2 from "ButtonGroup" /* 6545 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7520 */;
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 8547 */;
+import PremiumUpsellUtils from "PremiumUpsellUtils" /* 10459 */;
+import PremiumFeatureUpsellUtils from "PremiumFeatureUpsellUtils" /* 10949 */;
+import usePremiumFeatureUpsellGetNitroDefault from "usePremiumFeatureUpsellGetNitro" /* 10950 */;
+import NitroUpsellButtonDefault from "NitroUpsellButton" /* 10952 */;
+import PromoSheet2 from "PromoSheet" /* 11225 */;
+import DiscountsMegaphoneSpotIllustration from "DiscountsMegaphoneSpotIllustration" /* 14226 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;

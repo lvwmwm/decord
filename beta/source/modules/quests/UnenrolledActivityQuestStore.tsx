@@ -1,9 +1,9 @@
-// Module ID: 19946
-// Function ID: 19947
+// Module ID: 19197
+// Function ID: 19198
 // Name: UnenrolledActivityQuestStore
 // Dependencies: [11, 504, 572, 2]
 
-// Module 19946 (UnenrolledActivityQuestStore)
+// Module 19197 (UnenrolledActivityQuestStore)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
@@ -52,7 +52,7 @@ UnenrolledActivityQuestStore.displayName = "UnenrolledActivityQuestStore";
 UnenrolledActivityQuestStore.persistKey = "UnenrolledActivityQuestStore";
 let obj = {
   UNENROLLED_ACTIVITY_QUEST_DISMISS: function handleDismissUnenrolledActivityQuest(questId) {
-    const f121741 = (item) => item.toString();
+    const f117113 = (item) => item.toString();
     if (_Set1.size >= 20) {
       const _Array = Array;
       const arr = Array.from(_Set1);
@@ -62,8 +62,8 @@ let obj = {
       const _Set = Set;
       const self = this;
       const self2 = this;
-      _Set1 = new Set(substr.map(f121741));
-      set = new Set(substr.map(f121741));
+      _Set1 = new Set(substr.map(f117113));
+      set = new Set(substr.map(f117113));
     }
     _Set1.add(questId.questId);
     return true;

@@ -1,10 +1,10 @@
-// Module ID: 19035
-// Function ID: 19036
+// Module ID: 17834
+// Function ID: 17835
 // Name: InterestPickerCompletion
 // Dependencies: [2]
 // Exports: getInterestPickerCompletion
 
-// Module 19035 (InterestPickerCompletion)
+// Module 17834 (InterestPickerCompletion)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/waterwheels/interest/InterestPickerCompletion.tsx");

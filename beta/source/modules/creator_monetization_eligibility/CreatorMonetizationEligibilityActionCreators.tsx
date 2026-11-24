@@ -1,13 +1,13 @@
-// Module ID: 20666
-// Function ID: 20667
+// Module ID: 19936
+// Function ID: 19937
 // Name: CreatorMonetizationEligibilityActionCreators
-// Dependencies: [5, 1072, 1365, 1285, 572, 7055, 2]
+// Dependencies: [5, 1071, 1363, 1284, 572, 6659, 2]
 // Exports: acceptCreatorMonetizationTerms, acceptCreatorMonetizationTermsV2, acceptNewTerms, acceptNewTermsDemonetized, createCreatorMonetizationEnableRequest, getCreatorMonetizationEligibility, getCreatorMonetizationOnboardingMarketing, ownershipTransferOnboard, removeMonetization
 
-// Module 20666 (CreatorMonetizationEligibilityActionCreators)
-import Constants from "Constants" /* 1072 */;
-import HTTPUtils from "HTTPUtils" /* 1285 */;
-import ApplicationConstants from "ApplicationConstants" /* 1365 */;
+// Module 19936 (CreatorMonetizationEligibilityActionCreators)
+import Constants from "Constants" /* 1071 */;
+import HTTPUtils from "HTTPUtils" /* 1284 */;
+import ApplicationConstants from "ApplicationConstants" /* 1363 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -15,7 +15,7 @@ let c3;
 
 let obj = function _createCreatorMonetizationEnableRequest() {
   obj = _asyncToGenerator(async (arg0, value) => {
-    let obj3;
+    let obj6;
     let closure_0 = arg0;
     if (c1 === 2) {
       c1 = 3;
@@ -38,17 +38,17 @@ let obj = function _createCreatorMonetizationEnableRequest() {
             throw value;
           } else if (arg0 === 2) {
             c1 = 3;
-            const obj4 = { value, done: true };
-            return obj4;
+            const obj3 = { value, done: true };
+            return obj3;
           } else {
             const HTTP = HTTPUtils.HTTP;
-            const obj5 = { url: Endpoints.CREATOR_MONETIZATION_ENABLE_REQUESTS(closure_0), rejectWithError: obj3.rejectWithMigratedError() };
+            const obj4 = { url: Endpoints.CREATOR_MONETIZATION_ENABLE_REQUESTS(closure_0), rejectWithError: obj6.rejectWithMigratedError() };
             const post = HTTP.post;
-            obj3 = HTTPUtils;
+            obj6 = HTTPUtils;
             c2 = 1;
             c1 = 1;
-            const obj6 = { value: post(obj5), done: false };
-            return obj6;
+            const obj5 = { value: post(obj4), done: false };
+            return obj5;
           }
         } else if (arg0 === 1) {
           c1 = 3;
@@ -61,9 +61,9 @@ let obj = function _createCreatorMonetizationEnableRequest() {
           c1 = 3;
           return { value: "HermesInternal", done: null };
         }
-      } catch (tmp8) {
+      } catch (tmp4) {
         c1 = 3;
-        throw tmp8;
+        throw tmp4;
       }
     }
   });
@@ -143,7 +143,7 @@ obj = function _acceptCreatorMonetizationTerms() {
 };
 obj = function _acceptCreatorMonetizationTermsV() {
   obj = _asyncToGenerator(async (arg0, value) => {
-    let obj3;
+    let obj6;
     let closure_0 = arg0;
     if (c1 === 2) {
       c1 = 3;
@@ -166,17 +166,17 @@ obj = function _acceptCreatorMonetizationTermsV() {
             throw value;
           } else if (arg0 === 2) {
             c1 = 3;
-            const obj4 = { value, done: true };
-            return obj4;
+            const obj3 = { value, done: true };
+            return obj3;
           } else {
             const HTTP = HTTPUtils.HTTP;
-            const obj5 = { url: Endpoints.CREATOR_MONETIZATION_ACCEPT_TERMS_V2(closure_0), rejectWithError: obj3.rejectWithMigratedError() };
+            const obj4 = { url: Endpoints.CREATOR_MONETIZATION_ACCEPT_TERMS_V2(closure_0), rejectWithError: obj6.rejectWithMigratedError() };
             const post = HTTP.post;
-            obj3 = HTTPUtils;
+            obj6 = HTTPUtils;
             c2 = 1;
             c1 = 1;
-            const obj6 = { value: post(obj5), done: false };
-            return obj6;
+            const obj5 = { value: post(obj4), done: false };
+            return obj5;
           }
         } else if (arg0 === 1) {
           c1 = 3;
@@ -189,9 +189,9 @@ obj = function _acceptCreatorMonetizationTermsV() {
           c1 = 3;
           return { value: "HermesInternal", done: null };
         }
-      } catch (tmp8) {
+      } catch (tmp4) {
         c1 = 3;
-        throw tmp8;
+        throw tmp4;
       }
     }
   });

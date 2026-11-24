@@ -1,15 +1,15 @@
-// Module ID: 11229
-// Function ID: 11230
+// Module ID: 11256
+// Function ID: 11257
 // Name: MentionGuardUtils
-// Dependencies: [32, 7315, 5238, 1072, 38, 8786, 2]
+// Dependencies: [32, 6919, 4845, 1071, 38, 8382, 2]
 
-// Module 11229 (MentionGuardUtils)
+// Module 11256 (MentionGuardUtils)
 import _modDef38 from "module_38" /* 38 */;
-import MessageParserDefault from "MessageParser" /* 8786 */;
+import MessageParserDefault from "MessageParser" /* 8382 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ChannelMemberStore from "ChannelMemberStore" /* 7315 */;
-import PermissionStore from "PermissionStore" /* 5238 */;
-import Constants from "Constants" /* 1072 */;
+import ChannelMemberStore from "ChannelMemberStore" /* 6919 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 let closure_1, dependencyMap, importDefault;

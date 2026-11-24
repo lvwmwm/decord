@@ -1,30 +1,30 @@
-// Module ID: 13391
-// Function ID: 13392
+// Module ID: 12925
+// Function ID: 12926
 // Name: useActivityShelfItem
-// Dependencies: [5, 5154, 2145, 1072, 5974, 1380, 12900, 13392, 13393, 2119, 7057, 12845, 12844, 7259, 5227, 7918, 12707, 12713, 12749, 2]
+// Dependencies: [5, 4761, 2144, 1071, 5564, 1378, 10834, 12926, 12927, 2117, 6661, 10776, 10775, 6864, 4834, 7520, 12199, 10779, 10626, 2]
 // Exports: default, getStaffReleasePhase
 
-// Module 13391 (useActivityShelfItem)
-import Constants from "Constants" /* 1072 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
-import Constants2 from "Constants" /* 2145 */;
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 5227 */;
-import getPlatformDefault from "getPlatform" /* 5974 */;
-import ApplicationFlagUtils from "ApplicationFlagUtils" /* 7057 */;
-import useGetOrFetchApplications from "useGetOrFetchApplications" /* 7259 */;
-import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7918 */;
-import leaveEmbeddedActivity from "leaveEmbeddedActivity" /* 12749 */;
-import useCurrentEmbeddedApplicationDefault from "useCurrentEmbeddedApplication" /* 12844 */;
-import useCurrentEmbeddedActivityDefault from "useCurrentEmbeddedActivity" /* 12845 */;
-import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 12900 */;
-import useEmbeddedAppsForChannelDefault from "useEmbeddedAppsForChannel" /* 13393 */;
+// Module 12925 (useActivityShelfItem)
+import Constants from "Constants" /* 1071 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
+import Constants2 from "Constants" /* 2144 */;
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4834 */;
+import getPlatformDefault from "getPlatform" /* 5564 */;
+import ApplicationFlagUtils from "ApplicationFlagUtils" /* 6661 */;
+import useGetOrFetchApplications from "useGetOrFetchApplications" /* 6864 */;
+import useAnalyticsLocationsDefault from "useAnalyticsLocations" /* 7520 */;
+import leaveEmbeddedActivity from "leaveEmbeddedActivity" /* 10626 */;
+import useCurrentEmbeddedApplicationDefault from "useCurrentEmbeddedApplication" /* 10775 */;
+import useCurrentEmbeddedActivityDefault from "useCurrentEmbeddedActivity" /* 10776 */;
+import useEmbeddedActivityBackgroundDefault from "useEmbeddedActivityBackground" /* 10834 */;
+import useEmbeddedAppsForChannelDefault from "useEmbeddedAppsForChannel" /* 12927 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5154 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4761 */;
 import size from "module_2" /* 2 */;
 
 let c2;
 
-const f107274 = (str) => str.toUpperCase();
+const f102792 = (str) => str.toUpperCase();
 function useActivityAction(applicationId) {
   let context;
   let fetchesApplication;
@@ -49,7 +49,7 @@ function useActivityAction(applicationId) {
     return START;
   } else {
     let JOIN;
-    const getEmbeddedActivityLocationChannelId = tmp6(5227).getEmbeddedActivityLocationChannelId;
+    const getEmbeddedActivityLocationChannelId = tmp6(4834).getEmbeddedActivityLocationChannelId;
     embeddedActivityLocationUtils;
     if (tmp4 != null) {
       const _location = tmp4.location;
@@ -316,7 +316,7 @@ export default function useActivityShelfItem(backgroundResolution) {
   const obj2 = { applicationId: application.id, size: num, names: assetNames, format: "webp" };
   const tmp8 = useEmbeddedActivityBackgroundDefault(obj2);
   if (null != activity.activity_preview_video_asset_id) {
-    tmp9 = tmp(13392)(application.id, activity.activity_preview_video_asset_id);
+    tmp9 = tmp(12926)(application.id, activity.activity_preview_video_asset_id);
   }
   let channel;
   const tmpResult = useEmbeddedAppsForChannelDefault;
@@ -339,7 +339,7 @@ export default function useActivityShelfItem(backgroundResolution) {
     let replaced;
     if (STAFF_RELEASE_PHASES.includes(str)) {
       const str4 = str.replace("_", " ");
-      replaced = str4.replace(/(^\w|\s\w)/g, f107274);
+      replaced = str4.replace(/(^\w|\s\w)/g, f102792);
     }
     tmp16 = replaced;
   } else {
@@ -349,7 +349,7 @@ export default function useActivityShelfItem(backgroundResolution) {
   if (tmp7) {
     NONE = tmp5.label_type;
   } else {
-    NONE = tmp4(2119).EmbeddedActivityLabelTypes.NONE;
+    NONE = tmp4(2117).EmbeddedActivityLabelTypes.NONE;
   }
   return obj5;
 };
@@ -366,7 +366,7 @@ export function getStaffReleasePhase(application, client_platform_config) {
   let replaced;
   if (STAFF_RELEASE_PHASES.includes(str)) {
     const str4 = str.replace("_", " ");
-    replaced = str4.replace(/(^\w|\s\w)/g, f107274);
+    replaced = str4.replace(/(^\w|\s\w)/g, f102792);
   }
   return replaced;
 }

@@ -1,19 +1,19 @@
-// Module ID: 17765
-// Function ID: 17766
+// Module ID: 16542
+// Function ID: 16543
 // Name: VideoQuestModalContentCompleted
-// Dependencies: [19, 17, 21, 5306, 575, 17739, 17734, 10146, 17763, 17730, 10020, 10131, 1655, 5929, 8829, 10230, 10156, 15272, 17701, 11253, 7994, 7415, 6327, 5919, 1113, 17755, 17756, 5926, 17725, 7428, 11095, 6957, 6010, 12289, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 16516, 16511, 9972, 16540, 16507, 9410, 9958, 1653, 5514, 8425, 9718, 9982, 13763, 16474, 10598, 7597, 7017, 5929, 5504, 1112, 16532, 16533, 5511, 16502, 7030, 10343, 6561, 5600, 10137, 2]
 
-// Module 17765 (VideoQuestModalContentCompleted)
+// Module 16542 (VideoQuestModalContentCompleted)
 import nativeDefault from "native" /* 575 */;
-import QuestTypes from "QuestTypes" /* 6957 */;
-import AssetUtils from "AssetUtils" /* 10146 */;
-import QuestCopyUtils from "QuestCopyUtils" /* 10156 */;
-import showShareActionSheet2 from "showShareActionSheet" /* 10230 */;
-import QuestProgressIndicator from "QuestProgressIndicator" /* 17739 */;
+import QuestTypes from "QuestTypes" /* 6561 */;
+import showShareActionSheet2 from "showShareActionSheet" /* 9718 */;
+import AssetUtils from "AssetUtils" /* 9972 */;
+import QuestCopyUtils from "QuestCopyUtils" /* 9982 */;
+import QuestProgressIndicator from "QuestProgressIndicator" /* 16516 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

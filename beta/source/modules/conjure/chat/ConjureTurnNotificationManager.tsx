@@ -1,26 +1,26 @@
-// Module ID: 20214
-// Function ID: 20215
+// Module ID: 19469
+// Function ID: 19470
 // Name: ConjureTurnNotificationManager
-// Dependencies: [8740, 1231, 11014, 5209, 5339, 7316, 7327, 7017, 1072, 5162, 7882, 7396, 5131, 7332, 11033, 7260, 13623, 2]
+// Dependencies: [8335, 1230, 11102, 4816, 4946, 6920, 6931, 6621, 1071, 4769, 7484, 6998, 4738, 6936, 10883, 6865, 18470, 2]
 
-// Module 20214 (ConjureTurnNotificationManager)
-import UserSettings from "UserSettings" /* 5131 */;
-import ChannelConstants from "ChannelConstants" /* 5162 */;
-import ConjureUtils from "ConjureUtils" /* 7260 */;
-import conjureProjectMute from "conjureProjectMute" /* 7332 */;
-import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 7396 */;
-import SoundUtils from "SoundUtils" /* 11033 */;
-import conjureMentions from "conjureMentions" /* 13623 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 8740 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import NotificationSettingsStore from "NotificationSettingsStore" /* 11014 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5339 */;
-import SelfPresenceStore from "SelfPresenceStore" /* 7316 */;
-import ConjurePagesStore from "ConjurePagesStore" /* 7327 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 7017 */;
-import Constants from "Constants" /* 1072 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;
+// Module 19469 (ConjureTurnNotificationManager)
+import UserSettings from "UserSettings" /* 4738 */;
+import ChannelConstants from "ChannelConstants" /* 4769 */;
+import ConjureUtils from "ConjureUtils" /* 6865 */;
+import conjureProjectMute from "conjureProjectMute" /* 6936 */;
+import ConjurePlatformUtilsDefault from "ConjurePlatformUtils" /* 6998 */;
+import SoundUtils from "SoundUtils" /* 10883 */;
+import conjureMentions from "conjureMentions" /* 18470 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 8335 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1230 */;
+import NotificationSettingsStore from "NotificationSettingsStore" /* 11102 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4816 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4946 */;
+import SelfPresenceStore from "SelfPresenceStore" /* 6920 */;
+import ConjurePagesStore from "ConjurePagesStore" /* 6931 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6621 */;
+import Constants from "Constants" /* 1071 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7484 */;
 import size from "module_2" /* 2 */;
 
 let closure_12;

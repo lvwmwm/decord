@@ -1,10 +1,10 @@
-// Module ID: 19870
-// Function ID: 19871
+// Module ID: 19120
+// Function ID: 19121
 // Name: useLaunchPadPullTabMinimized
-// Dependencies: [19, 17, 1655, 11950, 2]
+// Dependencies: [19, 17, 1653, 10854, 2]
 // Exports: default
 
-// Module 19870 (useLaunchPadPullTabMinimized)
+// Module 19120 (useLaunchPadPullTabMinimized)
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import size from "module_2" /* 2 */;
@@ -33,10 +33,10 @@ export default function useLaunchPadPullTabMinimized(arg0) {
   let tmp7;
   let tmp8;
   ({ launchPadSharedState, launchPadPullTabState } = arg0);
-  let obj = sharedValue(11950);
+  let obj = sharedValue(10854);
   sharedValue = undefined;
   const isVoicePanelFullscreen = obj.useIsVoicePanelFullscreen();
-  const obj2 = sharedValue(1655);
+  const obj2 = sharedValue(1653);
   sharedValue = obj2.useSharedValue(false);
   const items = [sharedValue];
   const effect = react.useEffect(() => {
@@ -81,6 +81,6 @@ export default function useLaunchPadPullTabMinimized(arg0) {
   useLaunchPadPullTabMinimizedTsx1.__closure = items2;
   useLaunchPadPullTabMinimizedTsx1.__workletHash = 11967190027017;
   useLaunchPadPullTabMinimizedTsx1.__initData = tmp4;
-  const obj3 = sharedValue(1655);
+  const obj3 = sharedValue(1653);
   return obj3.useDerivedValue(useLaunchPadPullTabMinimizedTsx1);
 };

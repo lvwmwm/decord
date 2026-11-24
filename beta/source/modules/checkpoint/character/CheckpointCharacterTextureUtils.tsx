@@ -1,14 +1,51 @@
-// Module ID: 14304
-// Function ID: 14305
+// Module ID: 12543
+// Function ID: 12544
 // Name: CheckpointCharacterTextureUtils
-// Dependencies: [2024, 14305, 2]
-// Exports: getCheckpointCharacterTextureRole, getCheckpointCharacterTextureScale, getCheckpointCharacterTextureUrl
+// Dependencies: [2022, 12544, 2]
+// Exports: getCheckpointCharacterAuraUrl, getCheckpointCharacterTextureRole, getCheckpointCharacterTextureScale
 
-// Module 14304 (CheckpointCharacterTextureUtils)
-import react_nativeDefault from "react-native" /* 2024 */;
-import CheckpointCharacterTextureAssets from "CheckpointCharacterTextureAssets" /* 14305 */;
+// Module 12543 (CheckpointCharacterTextureUtils)
+import react_nativeDefault from "react-native" /* 2022 */;
+import CheckpointCharacterTextureAssets from "CheckpointCharacterTextureAssets" /* 12544 */;
 import size from "module_2" /* 2 */;
 
+function getCheckpointCharacterTextureUrl(name, textureScale) {
+  let columns;
+  let height;
+  let rows;
+  let url;
+  let width;
+  let widthAt1x;
+  ({ url, width, height, widthAt1x } = CheckpointCharacterTextureAssets.CHECKPOINT_CHARACTER_TEXTURE_NAME_TO_ASSET[name]);
+  if (null == widthAt1x) {
+    return url;
+  } else {
+    const _Math4 = Math;
+    const result = 4096 / Math.max(width, height);
+    const _Math5 = Math;
+    const bound = Math.min(textureScale * widthAt1x / width, result);
+    let tmp = result >= 1;
+    if (1 <= result) {
+      const _Math = Math;
+      tmp = textureScale >= Math.round(width / widthAt1x);
+    }
+    if (bound < 1) {
+      if (!tmp) {
+        let tmp3 = closure_10[name];
+        if (tmp3 == null) {
+          tmp3 = closure_9;
+        }
+        ({ columns, rows } = tmp3);
+        const _Math2 = Math;
+        const _Math3 = Math;
+        const result1 = columns * Math.round(width / columns * bound);
+        const _HermesInternal = HermesInternal;
+        return "" + url + "?width=" + result1 + "&height=" + rows * Math.round(height / rows * bound);
+      }
+    }
+    return url;
+  }
+}
 const CheckpointCharacterTextureType = { SLOT: "slot", TRAIT: "trait", LAYOUT: "layout", ALWAYS: "always" };
 const re4 = /^tex_(aura|base_\d+|outfit)_/;
 const re5 = /^tex_(headwear|shoes|wearable|face)_(\d+)_/;
@@ -56,9 +93,9 @@ export function getCheckpointCharacterTextureRole(name) {
     }
   }
 }
-export function getCheckpointCharacterTextureScale(c3, height, arg2) {
-  let flag = arg2;
-  if (arg2 === undefined) {
+export function getCheckpointCharacterTextureScale(c4, height, stateFromStores) {
+  let flag = stateFromStores;
+  if (stateFromStores === undefined) {
     flag = false;
   }
   let closure_0;
@@ -66,7 +103,7 @@ export function getCheckpointCharacterTextureScale(c3, height, arg2) {
     return closure_12;
   } else {
     const _Math = Math;
-    const result = Math.max(c3, height) / 1440;
+    const result = Math.max(c4, height) / 1440;
     closure_0 = result * react_nativeDefault();
     let found = items.find((item) => item >= closure_0);
     if (found == null) {
@@ -75,32 +112,12 @@ export function getCheckpointCharacterTextureScale(c3, height, arg2) {
     return found;
   }
 }
-export function getCheckpointCharacterTextureUrl(name, textureScale) {
-  let columns;
-  let rows;
-  let url;
-  let width;
-  let widthAt1x;
-  ({ url, width, widthAt1x } = CheckpointCharacterTextureAssets.CHECKPOINT_CHARACTER_TEXTURE_NAME_TO_ASSET[name]);
-  if (null == widthAt1x) {
-    return url;
-  } else {
-    const result = textureScale * widthAt1x / width;
-    const _Math3 = Math;
-    if (result < 1) {
-      if (textureScale < Math.round(width / widthAt1x)) {
-        let tmp3 = closure_10[name];
-        if (tmp3 == null) {
-          tmp3 = closure_9;
-        }
-        ({ columns, rows } = tmp3);
-        const _Math = Math;
-        const _Math2 = Math;
-        const result1 = columns * Math.round(width / columns * result);
-        const _HermesInternal = HermesInternal;
-        return "" + url + "?width=" + result1 + "&height=" + rows * Math.round(tmp / rows * result);
-      }
-    }
-    return url;
+export { getCheckpointCharacterTextureUrl };
+export function getCheckpointCharacterAuraUrl(name, textureScale, flag) {
+  let num = 1;
+  const tmp = getCheckpointCharacterTextureUrl;
+  if (!flag) {
+    num = textureScale;
   }
+  return tmp(name, num);
 }

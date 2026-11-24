@@ -1,25 +1,25 @@
-// Module ID: 20741
-// Function ID: 20742
+// Module ID: 20011
+// Function ID: 20012
 // Name: GuildRoleSubscriptionTierArchiveOrDeleteActionSheet
-// Dependencies: [19, 17, 21, 5306, 575, 1630, 38, 20742, 5556, 5560, 5919, 1187, 5926, 5542, 1113, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 1628, 38, 20012, 5141, 5145, 5504, 1186, 5511, 5127, 1112, 2]
 // Exports: default
 
-// Module 20741 (GuildRoleSubscriptionTierArchiveOrDeleteActionSheet)
+// Module 20011 (GuildRoleSubscriptionTierArchiveOrDeleteActionSheet)
 import _modDef38 from "module_38" /* 38 */;
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1113 */;
-import native from "native" /* 1187 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5556 */;
-import BottomSheetModal from "BottomSheetModal" /* 5560 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import components_Button_Button from "components/Button/Button" /* 5926 */;
-import useArchiveOrDeleteDefault from "useArchiveOrDelete" /* 20742 */;
+import intl2 from "intl" /* 1112 */;
+import native from "native" /* 1186 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5141 */;
+import BottomSheetModal from "BottomSheetModal" /* 5145 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import components_Button_Button from "components/Button/Button" /* 5511 */;
+import useArchiveOrDeleteDefault from "useArchiveOrDelete" /* 20012 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -82,8 +82,8 @@ export default function GuildRoleSubscriptionTierArchiveOrDeleteActionSheet(grou
     children: hasOwnProperty(Text, obj6)
   };
   obj6 = { variant: "body-sm/semibold", color: "interactive-text-active", children: intl.string(intl2.t["ETE/oC"]) };
-  Text = tmp6(5919).Text;
-  intl = tmp6(1113).intl;
+  Text = tmp6(5504).Text;
+  intl = tmp6(1112).intl;
   items[6] = hasOwnProperty(_false, obj5);
   return hasOwnProperty(BottomSheet, obj4);
 };

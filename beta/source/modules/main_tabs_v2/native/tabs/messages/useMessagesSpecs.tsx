@@ -1,15 +1,15 @@
-// Module ID: 18750
-// Function ID: 18751
+// Module ID: 17546
+// Function ID: 17547
 // Name: useMessagesSpecs
-// Dependencies: [109, 19, 1072, 5934, 1630, 18751, 18754, 18765, 575, 2]
+// Dependencies: [109, 19, 1071, 5519, 1628, 17547, 17550, 17561, 575, 2]
 // Exports: default
 
-// Module 18750 (useMessagesSpecs)
+// Module 17546 (useMessagesSpecs)
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import MessagesHeader from "MessagesHeader" /* 18751 */;
-import MessagesItemChannel from "MessagesItemChannel" /* 18754 */;
-import MessagesItemSuggestedFriend from "MessagesItemSuggestedFriend" /* 18765 */;
+import Constants from "Constants" /* 1071 */;
+import MessagesHeader from "MessagesHeader" /* 17547 */;
+import MessagesItemChannel from "MessagesItemChannel" /* 17550 */;
+import MessagesItemSuggestedFriend from "MessagesItemSuggestedFriend" /* 17561 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -21,9 +21,9 @@ const result = size.fileFinishedImporting("modules/main_tabs_v2/native/tabs/mess
 export default function useMessagesSpecs() {
   let fontScale;
   let top;
-  let obj = fontScale(5934);
+  let obj = fontScale(5519);
   fontScale = obj.useFontScale();
-  top = top(1630)().top;
+  top = top(1628)().top;
   const items = [fontScale, top];
   return react.useMemo(() => {
     let obj4;

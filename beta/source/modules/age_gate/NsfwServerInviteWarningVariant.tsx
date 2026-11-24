@@ -1,15 +1,15 @@
-// Module ID: 10811
-// Function ID: 10812
+// Module ID: 10525
+// Function ID: 10526
 // Name: NsfwServerInviteWarningVariant
-// Dependencies: [1072, 6830, 1113, 10812, 6820, 10813, 2]
+// Dependencies: [1071, 6421, 1112, 10526, 6411, 10527, 2]
 // Exports: getNsfwServerInviteWarningAgeGroupForError, getNsfwServerInviteWarningVariant, useGatedAgeGroup
 
-// Module 10811 (NsfwServerInviteWarningVariant)
-import Constants from "Constants" /* 1072 */;
-import intl3 from "intl" /* 1113 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6820 */;
-import getAgeNoticeWarningDescriptions from "getAgeNoticeWarningDescriptions" /* 6830 */;
-import useAgeGroupPresentation from "useAgeGroupPresentation" /* 10812 */;
+// Module 10525 (NsfwServerInviteWarningVariant)
+import Constants from "Constants" /* 1071 */;
+import intl3 from "intl" /* 1112 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6411 */;
+import getAgeNoticeWarningDescriptions from "getAgeNoticeWarningDescriptions" /* 6421 */;
+import useAgeGroupPresentation from "useAgeGroupPresentation" /* 10526 */;
 import size from "module_2" /* 2 */;
 
 const AbortCodes = Constants.AbortCodes;
@@ -26,7 +26,7 @@ export function getNsfwServerInviteWarningVariant(arg0) {
   if (useAgeGroupPresentation.AgeGroupState.ADULT === arg0) {
     const obj3 = { description: tmp3, confirm: obj4, goBackIsPrimary: false };
     obj4 = { text: intl2.string(intl3.t.wVq7uo), joins: true };
-    intl2 = tmp(1113).intl;
+    intl2 = tmp(1112).intl;
     return obj3;
   } else if (useAgeGroupPresentation.AgeGroupState.TEEN === arg0) {
     return { description: tmp3, confirm: obj2, goBackIsPrimary: true };
@@ -61,7 +61,7 @@ export function getNsfwServerInviteWarningAgeGroupForError(arg0) {
     return null;
   }
   let tmp7 = null;
-  const tmp3Result = tmp3(10813);
+  const tmp3Result = tmp3(10527);
   if (tmp3Result.getIsInviteAcceptAgeGroupErrorsEnabled("invite_accept_error")) {
     tmp7 = UNVERIFIED;
   }

@@ -5,7 +5,7 @@
 
 // Module 755 (ServerRuntimeClient)
 import _mod682 from "module_682" /* 682 */;
-import _mod687 from "module_687" /* 687 */;
+import DEBUG_BUILD from "DEBUG_BUILD" /* 687 */;
 import uuid4 from "uuid4" /* 694 */;
 import _mod712 from "module_712" /* 712 */;
 import SyncPromise from "SyncPromise" /* 737 */;
@@ -173,7 +173,7 @@ let items = [
   },
   {
     key: "captureCheckIn",
-    value: function captureCheckIn(checkInId, arg1, arg2) {
+    value: function captureCheckIn(checkInId, arg1, currentScope) {
       let tmp11;
       let tmp12;
       if ("checkInId" in checkInId) {
@@ -197,8 +197,8 @@ let items = [
             obj5.monitor_config = obj8;
           }
           const obj4 = _getTraceInfoFromScope;
-          [tmp11, tmp12] = obj4._getTraceInfoFromScope(self, arg2);
-          _slicedToArray(obj4._getTraceInfoFromScope(self, arg2), 2);
+          [tmp11, tmp12] = obj4._getTraceInfoFromScope(self, currentScope);
+          _slicedToArray(obj4._getTraceInfoFromScope(self, currentScope), 2);
           if (tmp12) {
             const obj9 = { trace: tmp12 };
             obj5.contexts = obj9;
@@ -207,7 +207,7 @@ let items = [
           const tmp7Result = _mod758;
           const sdkMetadata = self.getSdkMetadata();
           const checkInEnvelope = createCheckInEnvelope(obj5, tmp11, sdkMetadata, tunnel, self.getDsn());
-          if (_mod687.DEBUG_BUILD) {
+          if (DEBUG_BUILD.DEBUG_BUILD) {
             const debug2 = tmp7(688).debug;
             debug2.log("Sending checkin:", checkInId.monitorSlug, checkInId.status);
           }
@@ -215,7 +215,7 @@ let items = [
           return checkInId;
         } else {
           const tmp = require;
-          if (_mod687.DEBUG_BUILD) {
+          if (DEBUG_BUILD.DEBUG_BUILD) {
             const debug = tmp(688).debug;
             debug.warn("SDK not enabled, will not capture check-in.");
           }

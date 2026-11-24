@@ -1,15 +1,15 @@
-// Module ID: 15840
-// Function ID: 15841
+// Module ID: 14585
+// Function ID: 14586
 // Name: useProfileNewContent
-// Dependencies: [9465, 1388, 7352, 15841, 15842, 504, 7364, 7363, 9464, 2]
+// Dependencies: [8983, 1386, 6956, 14586, 14587, 504, 6966, 6965, 8982, 2]
 // Exports: default
 
-// Module 15840 (useProfileNewContent)
-import ProfileReadStateUtils from "ProfileReadStateUtils" /* 7363 */;
-import ProfileReadStateSection from "ProfileReadStateSection" /* 7364 */;
-import WishlistStore from "WishlistStore" /* 9465 */;
-import UserStore from "UserStore" /* 1388 */;
-import UserProfileStore from "UserProfileStore" /* 7352 */;
+// Module 14585 (useProfileNewContent)
+import ProfileReadStateUtils from "ProfileReadStateUtils" /* 6965 */;
+import ProfileReadStateSection from "ProfileReadStateSection" /* 6966 */;
+import WishlistStore from "WishlistStore" /* 8983 */;
+import UserStore from "UserStore" /* 1386 */;
+import UserProfileStore from "UserProfileStore" /* 6956 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -42,18 +42,18 @@ export default function useProfileNewContent(id) {
         id1 = currentUser.id;
       }
       if (id !== id1) {
-        const firstWishlistId = UserProfileStore.getFirstWishlistId(tmp7.id);
+        const firstWishlistId = UserProfileStore.getFirstWishlistId(tmp8.id);
         if (null == firstWishlistId) {
           return null;
         } else {
-          const wishlistSettings = obj2.getWishlistSettings(tmp7.id, firstWishlistId);
-          profileReadStateSectionAckedAt = obj2.getProfileReadStateSectionAckedAt(tmp7.id, ProfileReadStateSection.ProfileReadStateSection.WISHLIST);
-          let tmp6 = null;
-          const obj = ProfileReadStateUtils;
-          if (obj.hasWishlistBeenUpdatedSinceAcked(wishlistSettings, profileReadStateSectionAckedAt)) {
-            tmp6 = firstWishlistId;
+          const wishlistSettings = obj.getWishlistSettings(tmp8.id, firstWishlistId);
+          profileReadStateSectionAckedAt = obj.getProfileReadStateSectionAckedAt(tmp8.id, ProfileReadStateSection.ProfileReadStateSection.WISHLIST);
+          let tmp7 = null;
+          const obj2 = ProfileReadStateUtils;
+          if (obj2.hasWishlistBeenUpdatedSinceAcked(wishlistSettings, profileReadStateSectionAckedAt)) {
+            tmp7 = firstWishlistId;
           }
-          return tmp6;
+          return tmp7;
         }
       }
     }

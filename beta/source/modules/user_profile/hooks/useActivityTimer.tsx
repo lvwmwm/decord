@@ -1,12 +1,12 @@
-// Module ID: 15743
-// Function ID: 15744
+// Module ID: 14412
+// Function ID: 14413
 // Name: useActivityTimer
-// Dependencies: [32, 19, 1089, 8419, 5150, 2]
+// Dependencies: [32, 19, 1088, 8010, 4757, 2]
 // Exports: default, formatTime, formatTimeForA11yLabel
 
-// Module 15743 (useActivityTimer)
-import DurationsDefault from "Durations" /* 1089 */;
-import utils from "utils" /* 8419 */;
+// Module 14412 (useActivityTimer)
+import DurationsDefault from "Durations" /* 1088 */;
+import utils from "utils" /* 8010 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -25,7 +25,7 @@ export default function useActivityTimer(start) {
   let first;
   importDefault = undefined;
   const end = start.end;
-  const interval = new first(5150).Interval();
+  const interval = new first(4757).Interval();
   first = _slicedToArray(closure_5(interval), 1)[0];
   [first1, importDefault] = closure_5(() => Date.now());
   const items = [first];
@@ -69,12 +69,12 @@ export function formatTime(result1) {
   }
   return combined;
 }
-export function formatTimeForA11yLabel(result1) {
-  const rounded = Math.floor(result1);
+export function formatTimeForA11yLabel(current) {
+  const rounded = Math.floor(current);
   const seconds = rounded % DurationsDefault.Seconds.MINUTE;
-  const rounded1 = Math.floor(result1 / DurationsDefault.Seconds.MINUTE);
+  const rounded1 = Math.floor(current / DurationsDefault.Seconds.MINUTE);
   const minutes = rounded1 % DurationsDefault.Seconds.MINUTE;
-  const hours = Math.floor(result1 / DurationsDefault.Seconds.HOUR);
+  const hours = Math.floor(current / DurationsDefault.Seconds.HOUR);
   const obj = utils;
   return obj.formatTimestampToA11yLabel({ hours, minutes, seconds });
 }

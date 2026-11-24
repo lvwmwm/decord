@@ -4,7 +4,7 @@
 // Dependencies: [751, 687, 688, 694, 752, 696]
 
 // Module 774 (eventFiltersIntegration)
-import _mod687 from "module_687" /* 687 */;
+import DEBUG_BUILD from "DEBUG_BUILD" /* 687 */;
 import CONSOLE_LEVELS from "CONSOLE_LEVELS" /* 688 */;
 import uuid4 from "uuid4" /* 694 */;
 import _mod696 from "module_696" /* 696 */;
@@ -102,7 +102,7 @@ function _getEventFilterUrl(exception) {
     }
     return tmp9;
   } catch (err) {
-    if (_mod687.DEBUG_BUILD) {
+    if (DEBUG_BUILD.DEBUG_BUILD) {
       const debug = tmp11(688).debug;
       const error = debug.error;
       const _HermesInternal = HermesInternal;
@@ -155,7 +155,7 @@ const defineIntegrationResult = module_751.defineIntegration(() => {
           flag5 = false;
           if (flag6) {
             flag5 = true;
-            if (_mod687.DEBUG_BUILD) {
+            if (DEBUG_BUILD.DEBUG_BUILD) {
               const debug5 = CONSOLE_LEVELS.debug;
               const warn5 = debug5.warn;
               const _HermesInternal5 = HermesInternal;
@@ -182,7 +182,7 @@ const defineIntegrationResult = module_751.defineIntegration(() => {
         }
         if (flag) {
           flag5 = true;
-          if (_mod687.DEBUG_BUILD) {
+          if (DEBUG_BUILD.DEBUG_BUILD) {
             const debug4 = CONSOLE_LEVELS.debug;
             const warn4 = debug4.warn;
             const _HermesInternal4 = HermesInternal;
@@ -220,7 +220,7 @@ const defineIntegrationResult = module_751.defineIntegration(() => {
           }
           if (flag2) {
             flag5 = true;
-            if (_mod687.DEBUG_BUILD) {
+            if (DEBUG_BUILD.DEBUG_BUILD) {
               const debug3 = CONSOLE_LEVELS.debug;
               const warn3 = debug3.warn;
               const _HermesInternal3 = HermesInternal;
@@ -246,7 +246,7 @@ const defineIntegrationResult = module_751.defineIntegration(() => {
             }
             if (flag3) {
               flag5 = true;
-              if (_mod687.DEBUG_BUILD) {
+              if (DEBUG_BUILD.DEBUG_BUILD) {
                 const debug2 = CONSOLE_LEVELS.debug;
                 const warn2 = debug2.warn;
                 const obj6 = uuid4;
@@ -274,7 +274,7 @@ const defineIntegrationResult = module_751.defineIntegration(() => {
               flag5 = false;
               if (!flag4) {
                 flag5 = true;
-                if (_mod687.DEBUG_BUILD) {
+                if (DEBUG_BUILD.DEBUG_BUILD) {
                   const debug = CONSOLE_LEVELS.debug;
                   const warn = debug.warn;
                   const obj5 = uuid4;

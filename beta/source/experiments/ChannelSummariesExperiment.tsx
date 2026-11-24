@@ -1,15 +1,15 @@
-// Module ID: 12002
-// Function ID: 12003
+// Module ID: 10421
+// Function ID: 10422
 // Name: ChannelSummariesExperiment
-// Dependencies: [5173, 5177, 1072, 5162, 5180, 563, 2]
+// Dependencies: [4780, 4784, 1071, 4769, 4787, 563, 2]
 // Exports: canGuildUseConversationSummaries, channelEligibleForSummaries, useChannelSummariesExperiment, useGuildEligibleForSummaries
 
-// Module 12002 (ChannelSummariesExperiment)
-import ChannelConstants from "ChannelConstants" /* 5162 */;
-import GuildRecord from "GuildRecord" /* 5173 */;
-import FavoritesUtils from "FavoritesUtils" /* 5180 */;
-import GuildStore from "GuildStore" /* 5177 */;
-import Constants from "Constants" /* 1072 */;
+// Module 10421 (ChannelSummariesExperiment)
+import ChannelConstants from "ChannelConstants" /* 4769 */;
+import GuildRecord from "GuildRecord" /* 4780 */;
+import FavoritesUtils from "FavoritesUtils" /* 4787 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

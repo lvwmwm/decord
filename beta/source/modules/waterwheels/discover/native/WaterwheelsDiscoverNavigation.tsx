@@ -1,20 +1,20 @@
-// Module ID: 19026
-// Function ID: 19027
+// Module ID: 17826
+// Function ID: 17827
 // Name: WaterwheelsDiscoverNavigation
-// Dependencies: [5339, 1072, 10215, 19027, 7231, 2]
+// Dependencies: [4946, 1071, 10041, 17827, 6835, 2]
 // Exports: leaveWaterwheelsDiscover, selectWaterwheelsDiscover, selectWaterwheelsDiscoverFromGuildsBar
 
-// Module 19026 (WaterwheelsDiscoverNavigation)
-import WaterwheelsDiscoverExperiment from "WaterwheelsDiscoverExperiment" /* 10215 */;
-import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 19027 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5339 */;
-import Constants from "Constants" /* 1072 */;
+// Module 17826 (WaterwheelsDiscoverNavigation)
+import WaterwheelsDiscoverExperiment from "WaterwheelsDiscoverExperiment" /* 10041 */;
+import transitionGuildsBarToGuildOrOpenSelectedChannelDefault from "transitionGuildsBarToGuildOrOpenSelectedChannel" /* 17827 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4946 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
 let hasOwnProperty;
 let tmp;
-const transitionToGuild = tmp(7231);
+const transitionToGuild = tmp(6835);
 ({ ME: closure_4, WATERWHEELS: hasOwnProperty } = Constants);
 const WaterwheelsDiscoverNavigation = "WaterwheelsDiscoverNavigation";
 const result = size.fileFinishedImporting("modules/waterwheels/discover/native/WaterwheelsDiscoverNavigation.tsx");

@@ -1,15 +1,15 @@
-// Module ID: 14085
-// Function ID: 14086
+// Module ID: 12253
+// Function ID: 12254
 // Name: useGameOrganizationJoinOutcome
-// Dependencies: [32, 19, 5177, 12369, 1113, 2565, 14074, 504, 12541, 7231, 2]
+// Dependencies: [32, 19, 4784, 11896, 1112, 2639, 12242, 504, 6835, 2]
 // Exports: default
 
-// Module 14085 (useGameOrganizationJoinOutcome)
-import transitionToGuild from "transitionToGuild" /* 7231 */;
+// Module 12253 (useGameOrganizationJoinOutcome)
+import transitionToGuild from "transitionToGuild" /* 6835 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5177 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 12369 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11896 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -20,6 +20,7 @@ let metroImportDefault;
 let metroRequire;
 ({ GameOrganizationInviteAcceptFailureReason: metroRequire, GameOrganizationInviteAcceptStatus: metroImportDefault, GameOrganizationLinkedGuildJoinStatus: metroImportAll } = GameOrganizationInviteConstants);
 const GameOrganizationJoinOutcomeCtaType = { GO_TO_SERVER: "GO_TO_SERVER", CLOSE: "CLOSE" };
+const obj2 = { SUCCESS: "SUCCESS", PENDING: "PENDING", ERROR: "ERROR" };
 const result = size.fileFinishedImporting("modules/game_organization_invites/useGameOrganizationJoinOutcome.tsx");
 
 export default function useGameOrganizationJoinOutcome(arg0, guildJoinStatus, action) {
@@ -27,27 +28,35 @@ export default function useGameOrganizationJoinOutcome(arg0, guildJoinStatus, ac
   let failureReason;
   let first;
   let flag;
-  let formatToPlainStringResult1;
+  let formatToPlainStringResult;
   let guildId;
-  let guildJoinStatus2;
   let intl;
   let intl10;
-  let intl11;
   let intl12;
+  let intl14;
+  let intl15;
+  let intl16;
+  let intl17;
+  let intl18;
+  let intl19;
   let intl2;
+  let intl20;
   let intl3;
   let intl4;
   let intl5;
   let intl6;
   let intl7;
   let intl8;
-  let obj10;
-  let obj12;
+  let intl9;
+  let obj14;
+  let obj15;
   let obj17;
-  let obj19;
-  let obj20;
+  let obj18;
   let obj22;
-  let obj8;
+  let obj24;
+  let obj25;
+  let obj27;
+  let obj7;
   let stateFromStores;
   _require = action;
   let tmp = guildId;
@@ -64,29 +73,36 @@ export default function useGameOrganizationJoinOutcome(arg0, guildJoinStatus, ac
     return tmp2;
   });
   [first, _slicedToArray] = flag.useState(false);
-  let tmp9 = null != guildJoinStatus;
-  const obj2 = flag;
-  if (tmp9) {
-    tmp9 = !stateFromStores;
+  let guildJoinStatus1;
+  if (guildJoinStatus != null) {
+    guildJoinStatus1 = guildJoinStatus.guildJoinStatus;
   }
-  if (tmp9) {
-    tmp9 = !first;
+  if (guildJoinStatus1 == null) {
+    guildJoinStatus1 = null;
   }
-  if (tmp9) {
-    guildJoinStatus = guildJoinStatus.guildJoinStatus;
+  let ALREADY_MEMBER = guildJoinStatus1;
+  if (stateFromStores) {
+    if (null == guildJoinStatus1) {
+      ALREADY_MEMBER = constants3.ALREADY_MEMBER;
+    } else {
+      ALREADY_MEMBER = guildJoinStatus1;
+    }
+  }
+  let tmp12 = null != guildJoinStatus && !stateFromStores && !first;
+  if (tmp12) {
     flag = false;
     if (guildJoinStatus.joinStatus === constants2.JOINED) {
-      if (constants3.NEW_MEMBER !== guildJoinStatus) {
-        if (constants3.ALREADY_MEMBER !== guildJoinStatus) {
+      if (constants3.NEW_MEMBER !== ALREADY_MEMBER) {
+        if (constants3.ALREADY_MEMBER !== ALREADY_MEMBER) {
           flag = false;
         }
       }
       flag = true;
     }
-    tmp9 = flag;
+    tmp12 = flag;
   }
-  flag = tmp9;
-  const items1 = [tmp9];
+  flag = tmp12;
+  const items1 = [tmp12];
   const effect = obj2.useEffect(() => {
     let closure_0;
     if (flag) {
@@ -95,26 +111,32 @@ export default function useGameOrganizationJoinOutcome(arg0, guildJoinStatus, ac
       return () => clearTimeout(closure_0);
     }
   }, items1);
-  let tmp13 = null;
+  let tmp16 = null;
   if (null != guildJoinStatus) {
-    let tmp18;
-    let obj23;
-    let displayNoun;
-    const tmpResult = tmp(tmp2[8]);
-    if (tmp3 != null) {
-      displayNoun = tmp3.displayNoun;
-    }
-    if (displayNoun == null) {
-      displayNoun = null;
-    }
-    const obj3 = { displayNoun, lowercase: true };
-    const tmpResultResult = tmpResult(obj3);
+    let tmp21;
+    let obj28;
+    const obj3 = { guildJoinStatus: ALREADY_MEMBER };
+    const merged = Object.assign(guildJoinStatus);
     let str;
     if (tmp3 != null) {
-      str = tmp3.organization.name;
+      str = tmp3.displayNoun;
     }
     if (str == null) {
-      str = "";
+      str = "other";
+    }
+    let str2;
+    if (tmp3 != null) {
+      str2 = tmp3.organization.name;
+    }
+    if (str2 == null) {
+      str2 = "";
+    }
+    let str3;
+    if (tmp3 != null) {
+      str3 = tmp3.linkedGuild.name;
+    }
+    if (str3 == null) {
+      str3 = "";
     }
     const character = guildJoinStatus.character;
     let name;
@@ -125,7 +147,7 @@ export default function useGameOrganizationJoinOutcome(arg0, guildJoinStatus, ac
       name = null;
     }
     if (stateFromStores) {
-      tmp18 = function handleGoToServer() {
+      tmp21 = function handleGoToServer() {
         let tmp2 = null != guildId;
         const tmp = guildId;
         if (tmp2) {
@@ -138,83 +160,116 @@ export default function useGameOrganizationJoinOutcome(arg0, guildJoinStatus, ac
         }
       };
     } else {
-      tmp18 = null;
+      tmp21 = null;
     }
-    ({ failureReason, guildJoinStatus: guildJoinStatus2 } = guildJoinStatus);
-    const obj4 = { type: obj.CLOSE, text: intl.string(require("intl").t.cpT0Cq), action };
-    const joinStatus = guildJoinStatus.joinStatus;
-    intl = tmp5(tmp2[4]).intl;
-    let tmp20 = obj4;
-    const tmp19 = obj;
-    if (null != tmp18) {
-      const obj5 = { type: tmp19.GO_TO_SERVER, text: intl2.string(tmp(tmp2[5]).H1wMHV), action: tmp18 };
-      intl2 = tmp5(tmp2[4]).intl;
-      tmp20 = obj5;
-    }
-    if (joinStatus === constants2.JOINED) {
-      const intl9 = tmp5(tmp2[4]).intl;
-      const obj6 = { noun: tmpResultResult };
-      const formatToPlainStringResult = intl9.formatToPlainString(tmp(tmp2[5])["w/spGp"], obj6);
-      if (constants3.NEW_MEMBER !== guildJoinStatus2) {
-        let obj11;
-        if (constants3.ALREADY_MEMBER !== guildJoinStatus2) {
-          if (constants3.PENDING_VERIFICATION === guildJoinStatus2) {
-            const obj7 = { title: formatToPlainStringResult, subtitle: intl12.formatToPlainString(tmp(tmp2[5])["9K7Jdt"], obj8), cta: tmp20 };
-            intl12 = tmp5(tmp2[4]).intl;
-            obj11 = obj7;
-            obj8 = { noun: tmpResultResult, orgName: str };
-          } else if (constants3.APPLICATION === guildJoinStatus2) {
-            const obj9 = { title: formatToPlainStringResult, subtitle: intl11.formatToPlainString(tmp(tmp2[5]).ODHuua, obj10), cta: obj4 };
-            intl11 = tmp5(tmp2[4]).intl;
-            obj11 = obj9;
-            obj10 = { noun: tmpResultResult, orgName: str };
+    ({ failureReason, guildJoinStatus } = obj3);
+    if (obj3.joinStatus === constants2.JOINED) {
+      let obj4 = { type: obj.CLOSE, text: intl8.string(tmp5(tmp2[4]).t.i4jeWR), action };
+      intl8 = tmp5(tmp2[4]).intl;
+      let tmp26 = obj4;
+      const tmp25 = obj;
+      if (null != tmp21) {
+        const obj5 = { type: tmp25.GO_TO_SERVER, text: intl9.string(tmp(tmp2[5]).H1wMHV), action: tmp21 };
+        intl9 = tmp5(tmp2[4]).intl;
+        tmp26 = obj5;
+      }
+      const obj6 = { key: "organization", status: flag.SUCCESS, title: intl10.formatToPlainString(tmp(tmp2[5]).qJafqt, obj7), subtitle: formatToPlainStringResult };
+      intl10 = tmp5(tmp2[4]).intl;
+      formatToPlainStringResult = null;
+      obj7 = { orgName: str2, displayNoun: str };
+      if (null != name) {
+        const intl11 = tmp5(tmp2[4]).intl;
+        const obj8 = { characterName: name };
+        formatToPlainStringResult = intl11.formatToPlainString(tmp(tmp2[5]).mvLVyz, obj8);
+      }
+      const obj9 = { title: intl12.string(tmp(tmp2[5]).i3axsB), rows: null, cta: null };
+      intl12 = tmp5(tmp2[4]).intl;
+      const items2 = [obj6, ];
+      const intl13 = tmp5(tmp2[4]).intl;
+      const obj10 = { guildName: str3 };
+      const formatToPlainStringResult1 = intl13.formatToPlainString(tmp(tmp2[5]).YoJwLe, obj10);
+      if (constants3.NEW_MEMBER !== guildJoinStatus) {
+        let obj13;
+        if (constants3.ALREADY_MEMBER !== guildJoinStatus) {
+          if (constants3.PENDING_VERIFICATION === guildJoinStatus) {
+            const obj11 = { key: "server", status: flag.PENDING, title: formatToPlainStringResult1, subtitle: intl15.string(tmp(tmp2[5]).MgcCQT) };
+            intl15 = tmp5(tmp2[4]).intl;
+            obj13 = obj11;
+          } else if (constants3.APPLICATION === guildJoinStatus) {
+            const obj12 = { key: "server", status: flag.PENDING, title: formatToPlainStringResult1, subtitle: intl14.string(tmp(tmp2[5])["mZ/VKS"]) };
+            intl14 = tmp5(tmp2[4]).intl;
+            obj13 = obj12;
           } else {
-            const FAILED = tmp23.FAILED;
-            obj11 = { title: formatToPlainStringResult, subtitle: intl10.formatToPlainString(tmp(tmp2[5]).Qo94hd, obj12), cta: obj4 };
-            intl10 = tmp5(tmp2[4]).intl;
-            obj12 = { noun: tmpResultResult, orgName: str };
+            const FAILED = tmp30.FAILED;
+            obj13 = { key: "server", status: flag.ERROR, title: intl19.formatToPlainString(tmp(tmp2[5])["4XMetY"], obj14), subtitle: intl20.formatToPlainString(tmp(tmp2[5]).FQoZBu, obj15) };
+            intl19 = tmp5(tmp2[4]).intl;
+            obj14 = { guildName: str3 };
+            intl20 = tmp5(tmp2[4]).intl;
+            obj15 = { guildName: str3 };
           }
         }
-        obj23 = obj11;
+        items2[1] = obj13;
+        obj9.rows = items2;
+        let flag2 = false;
+        if (constants2.JOINED === constants2.JOINED) {
+          if (constants3.NEW_MEMBER !== guildJoinStatus) {
+            if (constants3.ALREADY_MEMBER !== guildJoinStatus) {
+              flag2 = false;
+            }
+          }
+          flag2 = true;
+        }
+        if (flag2) {
+          obj4 = tmp26;
+        }
+        obj9.cta = obj4;
+        obj28 = obj9;
       }
-      const obj13 = { title: formatToPlainStringResult, subtitle: formatToPlainStringResult1, cta: tmp20 };
-      if (null != name) {
-        const intl14 = tmp5(tmp2[4]).intl;
-        const obj14 = { noun: tmpResultResult, orgName: str, characterName: name };
-        formatToPlainStringResult1 = intl14.formatToPlainString(tmp(tmp2[5]).PLA9Om, obj14);
-      } else {
-        const intl13 = tmp5(tmp2[4]).intl;
-        const obj15 = { noun: tmpResultResult, orgName: str };
-        formatToPlainStringResult1 = intl13.formatToPlainString(tmp(tmp2[5]).WF9Qgb, obj15);
-      }
-      obj11 = obj13;
-    } else if (constants.ALREADY_JOINED === failureReason) {
-      const obj16 = { title: intl8.formatToPlainString(tmp(tmp2[5])["1PMPYk"], obj17), cta: tmp20 };
-      intl8 = tmp5(tmp2[4]).intl;
-      obj23 = obj16;
-      obj17 = { noun: tmpResultResult };
-    } else if (constants.IN_ANOTHER_ORGANIZATION === failureReason) {
-      const obj18 = { title: intl6.formatToPlainString(tmp(tmp2[5]).vSlR1j, obj19), subtitle: intl7.formatToPlainString(tmp(tmp2[5]).kvDHqp, obj20), cta: obj4 };
-      intl6 = tmp5(tmp2[4]).intl;
-      obj19 = { noun: tmpResultResult };
-      intl7 = tmp5(tmp2[4]).intl;
-      obj23 = obj18;
-      obj20 = { noun: tmpResultResult };
-    } else if (constants.GUILD_FULL === failureReason) {
-      const obj21 = { title: intl4.formatToPlainString(tmp(tmp2[5])["/7Gy4g"], obj22), subtitle: intl5.string(tmp(tmp2[5])["8TGo9L"]), cta: obj4 };
-      intl4 = tmp5(tmp2[4]).intl;
-      obj22 = { noun: tmpResultResult };
-      intl5 = tmp5(tmp2[4]).intl;
-      obj23 = obj21;
+      const obj16 = { key: "server", status: flag.SUCCESS, title: intl16.formatToPlainString(tmp(tmp2[5])["Y2DU/l"], obj17), subtitle: intl17.formatToPlainString(tmp(tmp2[5])["316Vsz"], obj18) };
+      intl16 = tmp5(tmp2[4]).intl;
+      obj17 = { guildName: str3 };
+      intl17 = tmp5(tmp2[4]).intl;
+      obj13 = obj16;
+      obj18 = { displayNoun: str };
     } else {
-      const OTHER = tmp28.OTHER;
-      obj23 = { title: intl3.string(tmp(tmp2[5]).sXbaMb), cta: obj4 };
-      intl3 = tmp5(tmp2[4]).intl;
+      const obj19 = { type: obj.CLOSE, text: intl18.string(require("intl").t.cpT0Cq), action };
+      intl18 = tmp5(tmp2[4]).intl;
+      let tmp23 = obj19;
+      const tmp34 = obj;
+      if (null != tmp21) {
+        const obj20 = { type: tmp34.GO_TO_SERVER, text: intl.string(tmp(tmp2[5]).H1wMHV), action: tmp21 };
+        intl = tmp5(tmp2[4]).intl;
+        tmp23 = obj20;
+      }
+      if (constants.ALREADY_JOINED === failureReason) {
+        const obj21 = { title: intl7.formatToPlainString(tmp(tmp2[5])["1PMPYk"], obj22), cta: tmp23 };
+        intl7 = tmp5(tmp2[4]).intl;
+        obj28 = obj21;
+        obj22 = { displayNoun: str };
+      } else if (constants.IN_ANOTHER_ORGANIZATION === failureReason) {
+        const obj23 = { title: intl5.formatToPlainString(tmp(tmp2[5]).vSlR1j, obj24), subtitle: intl6.formatToPlainString(tmp(tmp2[5]).kvDHqp, obj25), cta: obj19 };
+        intl5 = tmp5(tmp2[4]).intl;
+        obj24 = { displayNoun: str };
+        intl6 = tmp5(tmp2[4]).intl;
+        obj28 = obj23;
+        obj25 = { displayNoun: str };
+      } else if (constants.GUILD_FULL === failureReason) {
+        const obj26 = { title: intl3.formatToPlainString(tmp(tmp2[5])["/7Gy4g"], obj27), subtitle: intl4.string(tmp(tmp2[5])["8TGo9L"]), cta: obj19 };
+        intl3 = tmp5(tmp2[4]).intl;
+        obj27 = { displayNoun: str };
+        intl4 = tmp5(tmp2[4]).intl;
+        obj28 = obj26;
+      } else {
+        const OTHER = tmp24.OTHER;
+        obj28 = { title: intl2.string(tmp(tmp2[5]).sXbaMb), cta: obj19 };
+        intl2 = tmp5(tmp2[4]).intl;
+      }
     }
-    const obj24 = { isWaitingForGuild: tmp9 };
-    const merged = Object.assign(obj23);
-    tmp13 = obj24;
+    const obj29 = { isWaitingForGuild: tmp12 };
+    const merged1 = Object.assign(obj28);
+    tmp16 = obj29;
   }
-  return tmp13;
+  return tmp16;
 };
 export { GameOrganizationJoinOutcomeCtaType };
+export const GameOrganizationJoinOutcomeRowStatus = obj2;

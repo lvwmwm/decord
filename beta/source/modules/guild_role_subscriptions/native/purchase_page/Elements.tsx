@@ -1,26 +1,26 @@
-// Module ID: 19386
-// Function ID: 19387
+// Module ID: 18188
+// Function ID: 18189
 // Name: Elements
-// Dependencies: [32, 19, 17, 2178, 1072, 21, 5306, 575, 5919, 1113, 7428, 1187, 19387, 9723, 17848, 563, 10957, 7253, 2]
+// Dependencies: [32, 19, 17, 2177, 1071, 21, 4913, 575, 5504, 1112, 7030, 1186, 18189, 9247, 16628, 563, 9495, 6856, 2]
 // Exports: ArrowButton, TruncatedText, useFormattedSubscriptionPlan
 
-// Module 19386 (Elements)
+// Module 18188 (Elements)
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import intl2 from "intl" /* 1113 */;
-import native from "native" /* 1187 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import Pressables from "Pressables" /* 7428 */;
-import NativePaymentHooksDefault from "NativePaymentHooks" /* 9723 */;
-import useStoreFrontPriceDefault from "useStoreFrontPrice" /* 10957 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17848 */;
-import AssetRegistryDefault from "AssetRegistry" /* 19387 */;
+import Constants from "Constants" /* 1071 */;
+import intl2 from "intl" /* 1112 */;
+import native from "native" /* 1186 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import Pressables from "Pressables" /* 7030 */;
+import NativePaymentHooksDefault from "NativePaymentHooks" /* 9247 */;
+import useStoreFrontPriceDefault from "useStoreFrontPrice" /* 9495 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16628 */;
+import AssetRegistryDefault from "AssetRegistry" /* 18189 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import SubscriptionPlanStore from "SubscriptionPlanStore" /* 2178 */;
+import SubscriptionPlanStore from "SubscriptionPlanStore" /* 2177 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -151,7 +151,7 @@ export function useFormattedSubscriptionPlan(listingId) {
   const tmp3 = _require;
   if (null != price) {
     const _HermesInternal = HermesInternal;
-    const tmp3Result = tmp3(7253);
+    const tmp3Result = tmp3(6856);
     str = "" + tmp3Result.formatPrice(price.amount, price.currency) + "/mo.";
   }
   return str;

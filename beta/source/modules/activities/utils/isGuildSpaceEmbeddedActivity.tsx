@@ -1,14 +1,14 @@
-// Module ID: 15991
-// Function ID: 15992
+// Module ID: 14759
+// Function ID: 14760
 // Name: isGuildSpaceEmbeddedActivity
-// Dependencies: [5155, 5154, 7472, 5227, 1093, 2]
+// Dependencies: [4762, 4761, 7074, 4834, 1092, 2]
 // Exports: default
 
-// Module 15991 (isGuildSpaceEmbeddedActivity)
-import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 5227 */;
-import ActivityGamePlatforms from "ActivityGamePlatforms" /* 7472 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5154 */;
+// Module 14759 (isGuildSpaceEmbeddedActivity)
+import embeddedActivityLocationUtils from "embeddedActivityLocationUtils" /* 4834 */;
+import ActivityGamePlatforms from "ActivityGamePlatforms" /* 7074 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4761 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/activities/utils/isGuildSpaceEmbeddedActivity.tsx");
@@ -32,7 +32,7 @@ export default function isGuildSpaceEmbeddedActivity(platform) {
         if (basicChannel != null) {
           type = basicChannel.type;
         }
-        tmp5 = type === tmp(1093).ChannelTypes.GUILD_SPACE;
+        tmp5 = type === tmp(1092).ChannelTypes.GUILD_SPACE;
       }
       return tmp5;
     }

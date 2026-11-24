@@ -1,17 +1,17 @@
-// Module ID: 17670
-// Function ID: 17671
+// Module ID: 16442
+// Function ID: 16443
 // Name: OrbsArcadeClaimRewardButton
-// Dependencies: [5, 19, 17649, 21, 6005, 1113, 504, 17656, 17655, 17671, 5926, 2]
+// Dependencies: [5, 19, 16421, 21, 5595, 1112, 504, 16422, 16428, 16443, 5511, 2]
 // Exports: default
 
-// Module 17670 (OrbsArcadeClaimRewardButton)
+// Module 16442 (OrbsArcadeClaimRewardButton)
 import Fragment from "Fragment" /* 21 */;
-import intl2 from "intl" /* 1113 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 6005 */;
-import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 17656 */;
+import intl2 from "intl" /* 1112 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5595 */;
+import OrbsArcadeRewardUtils from "OrbsArcadeRewardUtils" /* 16422 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import OrbsArcadeStore from "OrbsArcadeStore" /* 17649 */;
+import OrbsArcadeStore from "OrbsArcadeStore" /* 16421 */;
 import size_mod from "module_2" /* 2 */;
 
 let c2, c3, c4;
@@ -138,14 +138,14 @@ export default function OrbsArcadeClaimRewardButton(game) {
     }
   }), items4);
   let obj3 = { grow: true, size, variant: "primary", text: string(WK589K), loading: stateFromStores, onPress: callback };
-  const Button = game(5926).Button;
-  const intl = game(1113).intl;
+  const Button = game(5511).Button;
+  const intl = game(1112).intl;
   string = intl.string;
   const tmp6 = jsx;
   if (stateFromStores1 > 1) {
-    WK589K = tmp(1113).t.DCCcdz;
+    WK589K = tmp(1112).t.DCCcdz;
   } else {
-    WK589K = tmp(1113).t.WK589K;
+    WK589K = tmp(1112).t.WK589K;
   }
   return tmp6(Button, obj3);
 };

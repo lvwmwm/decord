@@ -1,10 +1,10 @@
 // Module ID: 11660
 // Function ID: 11661
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 11660 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/media_keyboard/native/images", width: 200, height: 80, scales: [2, 3], hash: "e341a934511095337dabafab8c60034b", name: "empty_photos", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 16, height: 16, scales: [2, 3], hash: "e71bfb9b43d4bbd3706e078113315f40", name: "ic_image", type: "png" });

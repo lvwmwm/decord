@@ -22,17 +22,17 @@ export const thirdPartyErrorFilterIntegration = module_751.defineIntegration((ar
       const options = on;
       on.on("beforeEnvelope", (arg0) => {
         let obj = options(closure_1_1[1]);
-        obj.forEachEnvelopeItem(arg0, (arg0, arg1) => {
+        obj.forEachEnvelopeItem(arg0, (exception, arg1) => {
           if ("event" === arg1) {
             const _Array = Array;
             let tmp3;
-            if (Array.isArray(arg0)) {
-              tmp3 = arg0[1];
+            if (Array.isArray(exception)) {
+              tmp3 = exception[1];
             }
             if (tmp3) {
               const obj = options(closure_1_1[2]);
               const result = obj.stripMetadataFromStackFrames(tmp3);
-              arg0[1] = tmp3;
+              exception[1] = tmp3;
             }
           }
         });

@@ -1,50 +1,106 @@
 // Module ID: 11537
 // Function ID: 11538
-// Dependencies: []
-// Exports: zhStringToNumber, zhStringToYear
+// Dependencies: [11453, 11411, 11418, 11420, 11528, 11529, 11531, 11532, 11533, 11534, 11535, 11536, 11451]
+// Exports: createCasualConfiguration, parse, parseDate
 
 // Module 11537
+import includeCommonConfiguration2 from "includeCommonConfiguration" /* 11451 */;
+import _mod11453 from "module_11453" /* 11453 */;
+import _mod11528 from "module_11528" /* 11528 */;
+import _mod11529 from "module_11529" /* 11529 */;
+import _mod11531 from "module_11531" /* 11531 */;
+import _mod11532 from "module_11532" /* 11532 */;
+import _mod11533 from "module_11533" /* 11533 */;
+import _mod11534 from "module_11534" /* 11534 */;
+import _mod11535 from "module_11535" /* 11535 */;
+import _mod11536 from "module_11536" /* 11536 */;
+import { Chrono } from "module_11411" /* 11411 */;
 
-export function zhStringToNumber(arg0) {
-  let num = 0;
-  let num2 = 0;
-  let num3 = 0;
-  if (0 < arg0.length) {
-    do {
-      let sum;
-      let tmp = arg0[num];
-      if ("\u5341" === tmp) {
-        let result;
-        if (0 === num2) {
-          result = exports.NUMBER[tmp];
-        } else {
-          result = num2 * exports.NUMBER[tmp];
-        }
-        sum = result;
-      } else {
-        sum = num2 + exports.NUMBER[tmp];
-      }
-      num = num + 1;
-      num2 = sum;
-      num3 = sum;
-    } while (num < arg0.length);
-  }
-  return num3;
+const require = globalThis.__r;
+
+function createConfiguration() {
+  let items;
+  let items1;
+  const obj = { parsers: items, refiners: items1 };
+  const includeCommonConfiguration = includeCommonConfiguration2.includeCommonConfiguration;
+  items = [new module_11529.default(), , , , ];
+  new module_11529.default();
+  items[1] = new module_11532.default();
+  new module_11532.default();
+  items[2] = new module_11534.default();
+  new module_11534.default();
+  items[3] = new module_11533.default();
+  new module_11533.default();
+  items[4] = new module_11531.default();
+  new module_11531.default();
+  items1 = [new module_11535.default(), ];
+  new module_11535.default();
+  items1[1] = new module_11536.default();
+  new module_11536.default();
+  const result = includeCommonConfiguration(obj);
+  const refiners = result.refiners;
+  result.refiners = refiners.filter((item) => !(item instanceof module_11453.default));
+  return result;
 }
-export function zhStringToYear(arg0) {
-  let length;
-  let num = 0;
-  let str = "";
-  let str2 = "";
-  if (0 < arg0.length) {
-    do {
-      str = `${exports.NUMBER[arg0[num]]}`;
-      num = num + 1;
-      str2 = str;
-      length = arg0.length;
-    } while (num < length);
+const fn = this && this.__importDefault || ((__esModule) => {
+  let tmp2;
+  const tmp = __esModule;
+  if (!tmp) {
+    tmp2 = { default: __esModule };
+    const obj = { default: __esModule };
+  } else {
+    tmp2 = __esModule;
   }
-  return parseInt(str2);
+  return tmp2;
+});
+function createCasualConfiguration() {
+  const tmp = createConfiguration();
+  const parsers = tmp.parsers;
+  const unshift = parsers.unshift;
+  const _default = new module_11528.default();
+  unshift(_default);
+  return tmp;
 }
-export const NUMBER = { "\u96f6": 0, "\u3007": 0, "\u4e00": 1, "\u4e8c": 2, "\u4e24": 2, "\u4e09": 3, "\u56db": 4, "\u4e94": 5, "\u516d": 6, "\u4e03": 7, "\u516b": 8, "\u4e5d": 9, "\u5341": 10 };
-export const WEEKDAY_OFFSET = { "\u5929": 0, "\u65e5": 0, "\u4e00": 1, "\u4e8c": 2, "\u4e09": 3, "\u56db": 4, "\u4e94": 5, "\u516d": 6 };
+const module_11453 = fn(_mod11453);
+const module_11528 = fn(_mod11528);
+const module_11529 = fn(_mod11529);
+const module_11531 = fn(_mod11531);
+const module_11532 = fn(_mod11532);
+const module_11533 = fn(_mod11533);
+const module_11534 = fn(_mod11534);
+const module_11535 = fn(_mod11535);
+const module_11536 = fn(_mod11536);
+const configuration = createConfiguration();
+let parsers = configuration.parsers;
+let unshift = parsers.unshift;
+let _default = new module_11528.default();
+unshift(_default);
+const chrono = new Chrono(configuration);
+const configuration1 = createConfiguration();
+const parsers1 = configuration1.parsers;
+const unshift2 = parsers1.unshift;
+const _default1 = new module_11528.default();
+unshift2(_default1);
+const chrono2 = new Chrono(configuration1);
+const chrono1 = new require("module_11411").Chrono(createConfiguration());
+const Chrono_export = require("module_11411").Chrono;
+
+export function parse(arg0, arg1, arg2) {
+  const casual = exports.casual;
+  return casual.parse(arg0, arg1, arg2);
+}
+export function parseDate(arg0, arg1, arg2) {
+  const casual = exports.casual;
+  return casual.parseDate(arg0, arg1, arg2);
+}
+export { createCasualConfiguration };
+export { createConfiguration };
+export { Chrono_export as Chrono };
+export const ParsingResult = require("ReferenceWithTimezone").ParsingResult;
+export const ParsingComponents = require("ReferenceWithTimezone").ParsingComponents;
+export const ReferenceWithTimezone = require("ReferenceWithTimezone").ReferenceWithTimezone;
+export const Meridiem = require("Meridiem").Meridiem;
+export const Weekday = require("Meridiem").Weekday;
+export const hant = chrono;
+export const casual = chrono2;
+export const strict = chrono1;

@@ -1,10 +1,10 @@
 // Module ID: 14158
 // Function ID: 14159
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 14158 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 184, height: 152, scales: [2, 3], hash: "55e19295e229a1848ac31993707c2b78", name: "img_ban", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/plan_selection", width: 64, height: 64, scales: [1], hash: "e56e37c53edc4951356b726ba43f79c4", name: "img_wumpus_nitro_classic_boost", type: "png" });

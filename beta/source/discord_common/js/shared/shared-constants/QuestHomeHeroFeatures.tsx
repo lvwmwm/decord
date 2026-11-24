@@ -1,9 +1,9 @@
-// Module ID: 5335
-// Function ID: 5336
+// Module ID: 4942
+// Function ID: 4943
 // Name: QuestHomeHeroFeatures
 // Dependencies: [2]
 
-// Module 5335 (QuestHomeHeroFeatures)
+// Module 4942 (QuestHomeHeroFeatures)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/shared/shared-constants/QuestHomeHeroFeatures.tsx");

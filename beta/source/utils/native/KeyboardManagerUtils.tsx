@@ -1,11 +1,11 @@
-// Module ID: 2020
-// Function ID: 2021
+// Module ID: 2018
+// Function ID: 2019
 // Name: KeyboardManagerUtils
-// Dependencies: [2021, 2]
+// Dependencies: [2019, 2]
 // Exports: clearCurrentFocusAndDismissKeyboard, dismissGlobalKeyboard, onKeyboardChanged
 
-// Module 2020 (KeyboardManagerUtils)
-import react_nativeDefault from "react-native" /* 2021 */;
+// Module 2018 (KeyboardManagerUtils)
+import react_nativeDefault from "react-native" /* 2019 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("utils/native/KeyboardManagerUtils.tsx");

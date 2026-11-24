@@ -1,17 +1,17 @@
-// Module ID: 19333
-// Function ID: 19334
+// Module ID: 18135
+// Function ID: 18136
 // Name: ICYMIMessageRowPreview
-// Dependencies: [19, 1072, 21, 9111, 5984, 9161, 5942, 5537, 5306, 575, 5131, 9159, 11065, 11069, 1113, 2]
+// Dependencies: [19, 1071, 21, 8621, 5574, 8671, 5527, 5122, 4913, 575, 4738, 8669, 10100, 10099, 1112, 2]
 
-// Module 19333 (ICYMIMessageRowPreview)
+// Module 18135 (ICYMIMessageRowPreview)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1072 */;
-import intl2 from "intl" /* 1113 */;
-import UserSettings from "UserSettings" /* 5131 */;
-import createStyles from "createStyles" /* 5306 */;
-import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 5984 */;
-import RowGeneratorDefault from "RowGenerator" /* 9159 */;
-import RowGeneratorTypes from "RowGeneratorTypes" /* 11069 */;
+import Constants from "Constants" /* 1071 */;
+import intl2 from "intl" /* 1112 */;
+import UserSettings from "UserSettings" /* 4738 */;
+import createStyles from "createStyles" /* 4913 */;
+import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 5574 */;
+import RowGeneratorDefault from "RowGenerator" /* 8669 */;
+import RowGeneratorTypes from "RowGeneratorTypes" /* 10099 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -29,7 +29,7 @@ function ICYMIMessageRowPreview(pointerEvents) {
   if (str === undefined) {
     str = "none";
   }
-  let tmp = messageOptions(5537)();
+  let tmp = messageOptions(5122)();
   let obj = createStyles;
   const obj2 = { seeMoreLabelColor: messageOptions(575).colors.TEXT_DEFAULT };
   dependencyMap = obj.createNativeStyleProperties(obj2)(tmp);
@@ -56,7 +56,7 @@ function ICYMIMessageRowPreview(pointerEvents) {
       arg0.contextType = RowGeneratorTypes.MessageContextType.SEARCH;
       if (null != require) {
         const obj = { numberOfLines: tmp3, expandable: false, seeMoreLabel: intl.string(intl2.t.qCozu3), seeMoreLabelColor: seeMoreLabelColor.seeMoreLabelColor };
-        intl = tmp(1113).intl;
+        intl = tmp(1112).intl;
         arg0.truncation = obj;
       }
     },
@@ -65,7 +65,7 @@ function ICYMIMessageRowPreview(pointerEvents) {
     messageSizeCacheRef,
     maxHeight
   };
-  return setting2(messageOptions(11065), obj3);
+  return setting2(messageOptions(10100), obj3);
 }
 const MessageEmbedTypes = Constants.MessageEmbedTypes;
 const jsx = Fragment.jsx;
@@ -162,10 +162,10 @@ const memoResult2 = react.memo(function MessageRowPreview(message) {
     }
     return obj;
   }, items);
-  const tmp3 = merged(5942)(message);
+  const tmp3 = merged(5527)(message);
   const merged1 = Object.assign(memo);
   const obj2 = { ignoreMentioned: true, renderReplies: false, renderThreadEmbeds: false, renderReactions: false, gifAutoPlay: true, animateEmoji: true, renderPolls: true, renderForumPostActions: false, renderAttachments: tmp3, renderEmbeds: tmp3, inlineEmbedMedia: tmp3 };
-  const merged2 = Object.assign(message(9161).DEFAULT_OPTIONS);
+  const merged2 = Object.assign(message(8671).DEFAULT_OPTIONS);
   const merged3 = Object.assign(messageOptions);
   return <ICYMIMessageRowPreview messageOptions={obj2} seeMoreLabel="..." />;
 });

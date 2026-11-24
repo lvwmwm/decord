@@ -1,156 +1,105 @@
 // Module ID: 9860
 // Function ID: 9861
-// Dependencies: [9861, 9841, 9862, 9821, 9825, 9797, 9854]
-// Exports: createTransport
+// Dependencies: [9849]
+// Exports: getAttributeValue, getChildren, getName, getParent, getSiblings, hasAttrib, nextElementSibling, prevElementSibling
 
 // Module 9860
-import _mod9821 from "module_9821" /* 9821 */;
-import _mod9825 from "module_9825" /* 9825 */;
-import _mod9841 from "module_9841" /* 9841 */;
-import _mod9854 from "module_9854" /* 9854 */;
-import _slicedToArray from "_slicedToArray" /* 9862 */;
+import DomHandler from "DomHandler" /* 9849 */;
 
-const require = globalThis.__r;
-let _require, dependencyMap;
+let hasOwnProperty;
 
 
-export const DEFAULT_TRANSPORT_BUFFER_SIZE = 64;
-export function createTransport(bufferSize, arg1) {
-  _require = bufferSize;
-  dependencyMap = arg1;
-  let promiseBuffer = arg2;
-  if (arg2 === undefined) {
-    let tmp2 = _require;
-    let tmp4 = require("module_9861");
-    let num = bufferSize.bufferSize;
-    const makePromiseBuffer = tmp4.makePromiseBuffer;
-    if (!num) {
-      num = 64;
+export function getChildren(children) {
+  return DomHandler.hasChildren(children) ? children.children : [];
+}
+export function getParent(parent) {
+  return parent.parent || null;
+}
+export function getSiblings(parent) {
+  let next;
+  let prev;
+  if (null != (parent.parent || null)) {
+    return DomHandler.hasChildren(parent.parent || null) ? (parent.parent || null).children : [];
+  } else {
+    const items = [parent];
+    ({ prev, next } = parent);
+    if (null != prev) {
+      do {
+        let arr = items.unshift(prev);
+        prev = prev.prev;
+      } while (null != prev);
     }
-    promiseBuffer = makePromiseBuffer(num);
+    if (null != next) {
+      do {
+        let arr3 = items.push(next);
+        next = next.next;
+      } while (null != next);
+    }
+    return items;
   }
-  let closure_3 = {};
-  let obj = {
-    send(arg0) {
-      const items = [];
-      let tmp = bufferSize;
-      const tmp2 = closure_1;
-      let obj = bufferSize(closure_1[1]);
-      obj.forEachEnvelopeItem(arg0, (arg0, arg1) => {
-        const obj = _mod9841;
-        const result = obj.envelopeItemTypeToDataCategory(arg1);
-        const obj2 = _slicedToArray;
-        if (obj2.isRateLimited(closure_3, result)) {
-          let tmp4;
-          if ("event" === arg1) {
-            const _Array = Array;
-            let tmp6;
-            if (Array.isArray(arg0)) {
-              tmp6 = arg0[1];
-            }
-            tmp4 = tmp6;
-          }
-          items.recordDroppedEvent("ratelimit_backoff", result, tmp4);
-        } else {
-          items.push(arg0);
-        }
-      });
-      if (0 === items.length) {
-        let tmpResult = tmp(tmp2[3]);
-        return tmpResult.resolvedSyncPromise({});
-      } else {
-        let tmpResult2 = tmp(tmp2[1]);
-        closure_1 = tmpResult2.createEnvelope(arg0[0], items);
-        function recordEnvelopeLoss(arg0) {
-
-        }
-        let tmp4 = recordEnvelopeLoss;
-        const addResult = recordEnvelopeLoss.add(() => {
-          let obj2;
-          let obj = { body: obj2.serializeEnvelope(closure_1) };
-          obj2 = _mod9841;
-          const promise = closure_1(obj);
-          return promise.then((statusCode) => {
-            let DEBUG_BUILD = undefined !== statusCode.statusCode;
-            if (DEBUG_BUILD) {
-              DEBUG_BUILD = statusCode.statusCode < 200 || statusCode.statusCode >= 300;
-              const tmp = statusCode.statusCode < 200 || statusCode.statusCode >= 300;
-            }
-            if (DEBUG_BUILD) {
-              DEBUG_BUILD = items(closure_1[4]).DEBUG_BUILD;
-            }
-            if (DEBUG_BUILD) {
-              const logger = items(closure_1[5]).logger;
-              const _HermesInternal = HermesInternal;
-              logger.warn("Sentry responded with status code " + statusCode.statusCode + " to sent event.");
-            }
-            const obj = items(closure_1[2]);
-            closure_3 = obj.updateRateLimits(closure_3, statusCode);
-            return statusCode;
-          }, (arg0) => {
-            let recordDroppedEvent;
-            if (typeof recordEnvelopeLoss === "function") {
-              let tmp = arg0;
-              const network_error = "network_error";
-              let obj = recordDroppedEvent(closure_1[1]);
-              let tmp4 = closure_1_1;
-              obj.forEachEnvelopeItem(closure_1_1, (arg0, arg1) => {
-                let tmp;
-                if ("event" === arg1) {
-                  const _Array = Array;
-                  let tmp4;
-                  if (Array.isArray(arg0)) {
-                    tmp4 = arg0[1];
-                  }
-                  tmp = tmp4;
-                }
-                recordDroppedEvent = recordDroppedEvent.recordDroppedEvent;
-                const obj = items(closure_3_1[1]);
-                recordDroppedEvent(network_error, obj.envelopeItemTypeToDataCategory(arg1), tmp);
-              });
-              throw arg0;
-            } else {
-              throw new TypeError("Trying to call a non-function");
-            }
-          });
-        });
-        return addResult.then((result) => result, (arg0) => {
-          if (arg0 instanceof _mod9854.SentryError) {
-            if (_mod9825.DEBUG_BUILD) {
-              const logger = tmp(9797).logger;
-              logger.error("Skipped sending event because buffer is full.");
-            }
-            if (typeof recordEnvelopeLoss === "function") {
-              const queue_overflow = "queue_overflow";
-              const tmpResult = _mod9841;
-              tmpResult.forEachEnvelopeItem(closure_1, (arg0, arg1) => {
-                let tmp;
-                if ("event" === arg1) {
-                  const _Array = Array;
-                  let tmp4;
-                  if (Array.isArray(arg0)) {
-                    tmp4 = arg0[1];
-                  }
-                  tmp = tmp4;
-                }
-                recordDroppedEvent = recordDroppedEvent.recordDroppedEvent;
-                const obj = items(closure_3_1[1]);
-                recordDroppedEvent(network_error, obj.envelopeItemTypeToDataCategory(arg1), tmp);
-              });
-              const tmpResult2 = _mod9821;
-              return tmpResult2.resolvedSyncPromise({});
-            } else {
-              throw new TypeError("Trying to call a non-function");
-            }
-          } else {
-            throw arg0;
-          }
-        });
-      }
-    },
-    flush(arg0) {
-      return promiseBuffer.drain(arg0);
+}
+export function getAttributeValue(attribs, arg1) {
+  attribs = attribs.attribs;
+  let tmp;
+  if (null !== attribs) {
+    if (undefined !== attribs) {
+      tmp = attribs[arg1];
     }
-  };
-  return obj;
+  }
+  return tmp;
+}
+export function hasAttrib(attribs, arg1) {
+  let callResult = null != attribs.attribs;
+  if (callResult) {
+    const _Object = Object;
+    hasOwnProperty = Object.prototype.hasOwnProperty;
+    callResult = hasOwnProperty.call(attribs.attribs, arg1);
+  }
+  if (callResult) {
+    callResult = null != attribs.attribs[arg1];
+  }
+  return callResult;
+}
+export function getName(name) {
+  return name.name;
+}
+export function nextElementSibling(next) {
+  next = next.next;
+  let tmp = next;
+  if (null !== next) {
+    let iter = next;
+    tmp = next;
+    if (!DomHandler.isTag(next)) {
+      const next2 = iter.next;
+      tmp = next2;
+      while (null !== next2) {
+        iter = next2;
+        tmp = next2;
+        if (DomHandler.isTag(next2)) {
+          break;
+        }
+      }
+    }
+  }
+  return tmp;
+}
+export function prevElementSibling(prev) {
+  prev = prev.prev;
+  let tmp = prev;
+  if (null !== prev) {
+    let tmp4 = prev;
+    tmp = prev;
+    if (!DomHandler.isTag(prev)) {
+      const prev2 = tmp4.prev;
+      tmp = prev2;
+      while (null !== prev2) {
+        tmp4 = prev2;
+        tmp = prev2;
+        if (DomHandler.isTag(prev2)) {
+          break;
+        }
+      }
+    }
+  }
+  return tmp;
 }

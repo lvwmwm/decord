@@ -1,19 +1,19 @@
-// Module ID: 20461
-// Function ID: 20462
+// Module ID: 19715
+// Function ID: 19716
 // Name: AutomodRuleUtils
-// Dependencies: [502, 20458, 14168, 1255, 20462, 20465, 1113, 9166, 8724, 2]
+// Dependencies: [502, 19712, 12408, 1254, 19716, 19719, 1112, 8676, 8314, 2]
 // Exports: actionTypeToName, createDefaultRule, eventTypeToName, getNewAutomodRuleMockId, getRulesFromTriggerTypeMap, isBackendPersistedRule, isRegexSupported, isRuleApplicationFilter, isRuleDefaultKeywordListFilter, isRuleKeywordFilter, isRuleMLSpamFilter, isRuleMentionSpamFilter, isRuleServerPolicyFilter, isRuleUserProfileFilter, isValidMentionSpamLimit, triggerTypeToName, validateKeywordsOrThrow, validateRegexPatternsOrThrow, validateRuleBeforeSaveOrThrow
 
-// Module 20461 (AutomodRuleUtils)
-import intl8 from "intl" /* 1113 */;
-import GlobalUtils from "GlobalUtils" /* 1255 */;
-import ApplicationCommandUtils from "ApplicationCommandUtils" /* 8724 */;
-import AutomodErrorUtils from "AutomodErrorUtils" /* 9166 */;
-import AutomodStore from "AutomodStore" /* 20458 */;
-import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 20462 */;
-import AutomodActionUtils from "AutomodActionUtils" /* 20465 */;
+// Module 19715 (AutomodRuleUtils)
+import intl8 from "intl" /* 1112 */;
+import GlobalUtils from "GlobalUtils" /* 1254 */;
+import ApplicationCommandUtils from "ApplicationCommandUtils" /* 8314 */;
+import AutomodErrorUtils from "AutomodErrorUtils" /* 8676 */;
+import AutomodStore from "AutomodStore" /* 19712 */;
+import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 19716 */;
+import AutomodActionUtils from "AutomodActionUtils" /* 19719 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import Constants from "Constants" /* 14168 */;
+import Constants from "Constants" /* 12408 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -27,14 +27,14 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let unpackModuleId;
-const f123112 = (keyword) => {
+const f118493 = (keyword) => {
   const InvalidKeywordError = AutomodErrorUtils.InvalidKeywordError;
   const intl = intl8.intl;
   const range = { keyword, max, min };
   const invalidKeywordError = new InvalidKeywordError(intl.formatToPlainString(intl8.t.rbRvGe, range));
   throw invalidKeywordError;
 };
-const f123113 = (regex) => {
+const f118494 = (regex) => {
   const InvalidRegexPatternError = AutomodErrorUtils.InvalidRegexPatternError;
   const intl = intl8.intl;
   const range = { regex, max: max2, min: min2 };
@@ -133,10 +133,10 @@ export function createDefaultRule(guildId, triggerType) {
   }
   if (isSnowflake(str)) {
     const _Error = Error;
-    const intl = tmp(1113).intl;
+    const intl = tmp(1112).intl;
     const self = this;
     const self2 = this;
-    const error = new Error(intl.string(tmp(1113).t["A/nX8D"]));
+    const error = new Error(intl.string(tmp(1112).t["A/nX8D"]));
     throw error;
   } else {
     const tmp8 = getRuleCountByTriggerType(guildId, triggerType);
@@ -157,7 +157,7 @@ export function validateKeywordsOrThrow(arr, limit) {
     const error = new Error(intl.formatToPlainString(intl8.t.mee4qd, obj));
     throw error;
   } else {
-    const item = arr.forEach(f123112);
+    const item = arr.forEach(f118493);
   }
 }
 export function validateRegexPatternsOrThrow(arr) {
@@ -170,7 +170,7 @@ export function validateRegexPatternsOrThrow(arr) {
     const error = new Error(intl.formatToPlainString(intl8.t.tDjhF1, obj));
     throw error;
   } else {
-    const item = arr.forEach(f123113);
+    const item = arr.forEach(f118494);
   }
 }
 export function isValidMentionSpamLimit(NumberResult) {
@@ -232,7 +232,7 @@ export function validateRuleBeforeSaveOrThrow(triggerType) {
       const error2 = new Error(intl5.formatToPlainString(intl8.t.mee4qd, obj2));
       throw error2;
     } else {
-      const item = keywordFilter.forEach(f123112);
+      const item = keywordFilter.forEach(f118493);
       if (regexPatterns.length > metroRequire) {
         const _Error4 = Error;
         const intl4 = intl8.intl;
@@ -242,7 +242,7 @@ export function validateRuleBeforeSaveOrThrow(triggerType) {
         const error3 = new Error(intl4.formatToPlainString(intl8.t.tDjhF1, obj3));
         throw error3;
       } else {
-        const item1 = regexPatterns.forEach(f123113);
+        const item1 = regexPatterns.forEach(f118494);
       }
     }
   }

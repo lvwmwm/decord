@@ -1,13 +1,13 @@
-// Module ID: 6896
-// Function ID: 6897
+// Module ID: 6500
+// Function ID: 6501
 // Name: StageChannelsConstants
-// Dependencies: [1072, 1113, 2188, 2]
+// Dependencies: [1071, 1112, 2187, 2]
 // Exports: getStagePublicInfoText
 
-// Module 6896 (StageChannelsConstants)
-import Constants from "Constants" /* 1072 */;
-import intl5 from "intl" /* 1113 */;
-import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2188 */;
+// Module 6500 (StageChannelsConstants)
+import Constants from "Constants" /* 1071 */;
+import intl5 from "intl" /* 1112 */;
+import HelpdeskUtilsDefault from "HelpdeskUtils" /* 2187 */;
 import size from "module_2" /* 2 */;
 
 const HelpdeskArticles = Constants.HelpdeskArticles;

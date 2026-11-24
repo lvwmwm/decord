@@ -1,0 +1,77 @@
+// Module ID: 1205
+// Function ID: 1206
+// Name: assert
+// Dependencies: []
+// Exports: assert, assertFloat32, assertInt32, assertNever, assertUInt32
+
+// Module 1205 (assert)
+
+export function assert(arg0, arg1) {
+  const tmp = arg0;
+  if (!tmp) {
+    const _Error = Error;
+    const self = this;
+    const self2 = this;
+    const error = new Error(arg1);
+    throw error;
+  }
+}
+export function assertNever(arg0, arg1) {
+  let text = arg1;
+  const _Error = Error;
+  if (null == arg1) {
+    text = `Unexpected object: ${arg0}`;
+  }
+  const _Error1 = new _Error(text);
+  throw _Error1;
+}
+export function assertInt32(NumberResult) {
+  if (typeof NumberResult !== "number") {
+    const _Error2 = Error;
+    const self3 = this;
+    const self4 = this;
+    const error = new Error("invalid int 32: " + typeof NumberResult);
+    throw error;
+  } else {
+    const _Number = Number;
+    const _Error = Error;
+    const self = this;
+    const self2 = this;
+    const error1 = new Error("invalid int 32: " + NumberResult);
+    throw error1;
+  }
+}
+export function assertUInt32(NumberResult) {
+  if (typeof NumberResult !== "number") {
+    const _Error2 = Error;
+    const self3 = this;
+    const self4 = this;
+    const error = new Error("invalid uint 32: " + typeof NumberResult);
+    throw error;
+  } else {
+    const _Number = Number;
+    const _Error = Error;
+    const self = this;
+    const self2 = this;
+    const error1 = new Error("invalid uint 32: " + NumberResult);
+    throw error1;
+  }
+}
+export function assertFloat32(scrollLength) {
+  if (typeof scrollLength !== "number") {
+    const _Error2 = Error;
+    const self3 = this;
+    const self4 = this;
+    const error = new Error("invalid float 32: " + typeof scrollLength);
+    throw error;
+  } else {
+    const _Number = Number;
+    if (Number.isFinite(scrollLength)) {
+      const _Error = Error;
+      const self = this;
+      const self2 = this;
+      const error1 = new Error("invalid float 32: " + scrollLength);
+      throw error1;
+    }
+  }
+}

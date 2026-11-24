@@ -1,12 +1,12 @@
-// Module ID: 20193
-// Function ID: 20194
+// Module ID: 19450
+// Function ID: 19451
 // Name: BlockedDomainManager
-// Dependencies: [7882, 1255, 1366, 2]
+// Dependencies: [7484, 1254, 1364, 2]
 
-// Module 20193 (BlockedDomainManager)
-import GlobalUtils from "GlobalUtils" /* 1255 */;
-import shim from "shim" /* 1366 */;
-import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7882 */;
+// Module 19450 (BlockedDomainManager)
+import GlobalUtils from "GlobalUtils" /* 1254 */;
+import shim from "shim" /* 1364 */;
+import AutomaticLifecycleManager from "AutomaticLifecycleManager" /* 7484 */;
 import size from "module_2" /* 2 */;
 
 class BlockedDomainManager extends AutomaticLifecycleManager {

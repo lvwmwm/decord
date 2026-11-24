@@ -1,25 +1,25 @@
-// Module ID: 15104
-// Function ID: 15105
+// Module ID: 13691
+// Function ID: 13692
 // Name: HubEmailConnectionGuildSelect
-// Dependencies: [5, 32, 19, 17, 15082, 21, 5306, 575, 8106, 7720, 5169, 5919, 1113, 1630, 5926, 1187, 1502, 7427, 7826, 15096, 6747, 15090, 7888, 2]
+// Dependencies: [5, 32, 19, 17, 13669, 21, 4913, 575, 7709, 7322, 4776, 5504, 1112, 1628, 5511, 1186, 1500, 7029, 7428, 13683, 6349, 13677, 7490, 2]
 // Exports: default
 
-// Module 15104 (HubEmailConnectionGuildSelect)
+// Module 13691 (HubEmailConnectionGuildSelect)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1113 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import GuildRecordUtils from "GuildRecordUtils" /* 5169 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import components_Button_Button from "components/Button/Button" /* 5926 */;
-import GuildIconDefault from "GuildIcon" /* 7720 */;
-import _mod8106 from "module_8106" /* 8106 */;
-import HubConstants from "HubConstants" /* 15082 */;
+import intl2 from "intl" /* 1112 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
+import GuildRecordUtils from "GuildRecordUtils" /* 4776 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import components_Button_Button from "components/Button/Button" /* 5511 */;
+import GuildIconDefault from "GuildIcon" /* 7322 */;
+import _mod7709 from "module_7709" /* 7709 */;
+import HubConstants from "HubConstants" /* 13669 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, closure_2, navigation;
@@ -31,7 +31,7 @@ let obj3;
 let obj4;
 let obj5;
 let tmp6;
-const native = tmp6(1187);
+const native = tmp6(1186);
 class HubEmailConnectionGuildSelectRow {
   constructor(guildInfo) {
     let fromGuildBasic;
@@ -43,8 +43,8 @@ class HubEmailConnectionGuildSelectRow {
     guildInfo = guildInfo.guildInfo;
     ({ signup, loading } = guildInfo);
     const tmp = closure_10();
-    const obj = { onPress: signup, disabled: loading, DEPRECATED_style: tmp.rowContainer, label: guildInfo.name, leading: metroImportAll(tmp2, obj2), trailing: metroImportAll(_mod8106.FormRow.Arrow, {}) };
-    const FormRow = _mod8106.FormRow;
+    const obj = { onPress: signup, disabled: loading, DEPRECATED_style: tmp.rowContainer, label: guildInfo.name, leading: metroImportAll(tmp2, obj2), trailing: metroImportAll(_mod7709.FormRow.Arrow, {}) };
+    const FormRow = _mod7709.FormRow;
     obj2 = { style: tmp.guildIcon, guild: fromGuildBasic(obj3) };
     obj3 = { features: [] };
     tmp2 = GuildIconDefault;

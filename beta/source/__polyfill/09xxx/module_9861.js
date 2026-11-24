@@ -1,83 +1,162 @@
 // Module ID: 9861
 // Function ID: 9862
-// Dependencies: [9821, 9854]
-// Exports: makePromiseBuffer
+// Dependencies: []
+// Exports: append, appendChild, prepend, prependChild, removeElement, replaceElement
 
 // Module 9861
-import _mod9821 from "module_9821" /* 9821 */;
 
-let diff;
-
-
-export function makePromiseBuffer(arg0) {
-  let closure_0 = arg0;
-  const items = [];
-  let obj = {
-    $: items,
-    add(fn) {
-      let promise;
-      const tmp2 = undefined === promise || items.length < tmp;
-      if (tmp2) {
-        promise = fn();
-        const arr = items;
-        if (-1 === items.indexOf(promise)) {
-          arr.push(promise);
-        }
-        const nextPromise = promise.then(() => {
-          const first = items.splice(items.indexOf(promise), 1)[0] || Promise.resolve(undefined);
-          return first;
-        });
-        nextPromise.then(null, () => {
-          const first = items.splice(items.indexOf(promise), 1)[0] || Promise.resolve(undefined);
-          return first.then(null, () => {
-
-          });
-        });
-        return promise;
-      } else {
-        const self = this;
-        const self2 = this;
-        const rejectedSyncPromise = closure_0(items[0]).rejectedSyncPromise;
-        const sentryError = new closure_0(items[1]).SentryError("Not adding Promise because buffer limit was reached.");
-        return rejectedSyncPromise(sentryError);
-      }
-    },
-    drain(arg0) {
-      let length;
-      closure_0 = arg0;
-      const syncPromise = new closure_0(items[0]).SyncPromise((fn, arg1) => {
-        let closure_3;
-        closure_0 = fn;
-        let closure_1 = arg1;
-        const arr = length;
-        if (length.length) {
-          const tmp = globalThis;
-          const _setTimeout = setTimeout;
-          let tmp2 = closure_0;
-          const timeout = setTimeout(() => {
-            const tmp2 = closure_0 && tmp > 0;
-            if (tmp2) {
-              closure_0(false);
-            }
-          }, closure_0);
-          const item = arr.forEach((item) => {
-            const obj = _mod9821;
-            const resolvedSyncPromiseResult = obj.resolvedSyncPromise(item);
-            resolvedSyncPromiseResult.then(() => {
-              diff = diff - 1;
-              if (!diff) {
-                const _clearTimeout = clearTimeout;
-                clearTimeout(closure_1_3);
-                fn(true);
-              }
-            }, closure_1);
-          });
-        } else {
-          return fn(true);
-        }
-      });
-      return syncPromise;
+export function removeElement(prev) {
+  if (prev.prev) {
+    prev.prev.next = prev.next;
+  }
+  if (prev.next) {
+    prev.next.prev = prev.prev;
+  }
+  if (prev.parent) {
+    const children = prev.parent.children;
+    const lastIndexOfResult = children.lastIndexOf(prev);
+    if (lastIndexOfResult >= 0) {
+      children.splice(lastIndexOfResult, 1);
     }
-  };
-  return obj;
+  }
+  prev.next = null;
+  prev.prev = null;
+  prev.parent = null;
+}
+export function replaceElement(prev, next) {
+  prev = prev.prev;
+  next.prev = prev;
+  if (prev) {
+    prev.next = next;
+  }
+  next = prev.next;
+  next.next = next;
+  if (next) {
+    next.prev = next;
+  }
+  const parent = prev.parent;
+  next.parent = parent;
+  if (parent) {
+    const children = parent.children;
+    children[children.lastIndexOf(prev)] = next;
+    prev.parent = null;
+  }
+}
+export function appendChild(element, node) {
+  if (node.prev) {
+    node.prev.next = node.next;
+  }
+  if (node.next) {
+    node.next.prev = node.prev;
+  }
+  if (node.parent) {
+    const children = node.parent.children;
+    const lastIndexOfResult = children.lastIndexOf(node);
+    if (lastIndexOfResult >= 0) {
+      children.splice(lastIndexOfResult, 1);
+    }
+  }
+  node.next = null;
+  node.prev = null;
+  node.parent = null;
+  node.next = null;
+  node.parent = element;
+  const children1 = element.children;
+  if (children1.push(node) > 1) {
+    element.children[element.children.length - 2].next = node;
+    node.prev = element.children[element.children.length - 2];
+  } else {
+    node.prev = null;
+  }
+}
+export function append(prev, prev2) {
+  let next;
+  let parent;
+  if (prev2.prev) {
+    prev2.prev.next = prev2.next;
+  }
+  if (prev2.next) {
+    prev2.next.prev = prev2.prev;
+  }
+  if (prev2.parent) {
+    const children = prev2.parent.children;
+    const lastIndexOfResult = children.lastIndexOf(prev2);
+    if (lastIndexOfResult >= 0) {
+      children.splice(lastIndexOfResult, 1);
+    }
+  }
+  prev2.next = null;
+  prev2.prev = null;
+  prev2.parent = null;
+  ({ parent, next } = prev);
+  prev2.next = next;
+  prev2.prev = prev;
+  prev.next = prev2;
+  prev2.parent = parent;
+  if (next) {
+    next.prev = prev2;
+    if (parent) {
+      const children1 = parent.children;
+      children1.splice(children1.lastIndexOf(next), 0, prev2);
+    }
+  } else if (parent) {
+    const children2 = parent.children;
+    children2.push(prev2);
+  }
+}
+export function prependChild(parent, prev) {
+  if (prev.prev) {
+    prev.prev.next = prev.next;
+  }
+  if (prev.next) {
+    prev.next.prev = prev.prev;
+  }
+  if (prev.parent) {
+    const children = prev.parent.children;
+    const lastIndexOfResult = children.lastIndexOf(prev);
+    if (lastIndexOfResult >= 0) {
+      children.splice(lastIndexOfResult, 1);
+    }
+  }
+  prev.next = null;
+  prev.prev = null;
+  prev.parent = parent;
+  prev.prev = null;
+  const children1 = parent.children;
+  if (1 !== children1.unshift(prev)) {
+    parent.children[1].prev = prev;
+    prev.next = parent.children[1];
+  } else {
+    prev.next = null;
+  }
+}
+export function prepend(parent, prev) {
+  if (prev.prev) {
+    prev.prev.next = prev.next;
+  }
+  if (prev.next) {
+    prev.next.prev = prev.prev;
+  }
+  if (prev.parent) {
+    const children = prev.parent.children;
+    const lastIndexOfResult = children.lastIndexOf(prev);
+    if (lastIndexOfResult >= 0) {
+      children.splice(lastIndexOfResult, 1);
+    }
+  }
+  prev.next = null;
+  prev.prev = null;
+  prev.parent = null;
+  parent = parent.parent;
+  if (parent) {
+    const children1 = parent.children;
+    children1.splice(children1.indexOf(parent), 0, prev);
+  }
+  if (parent.prev) {
+    parent.prev.next = prev;
+  }
+  prev.parent = parent;
+  prev.prev = parent.prev;
+  prev.next = parent;
+  parent.prev = prev;
 }

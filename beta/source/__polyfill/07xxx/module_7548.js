@@ -1,123 +1,146 @@
 // Module ID: 7548
 // Function ID: 7549
-// Dependencies: [32, 19, 17, 21, 1633, 7528, 7540, 7524, 7521, 7507, 1503]
-// Exports: Screen
+// Dependencies: [17, 7549]
 
 // Module 7548
-import react_native from "react-native" /* 7521 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
-import react from "react" /* 19 */;
-import react_native2 from "react-native" /* 17 */;
-import Fragment from "Fragment" /* 21 */;
+import _mod7549 from "module_7549" /* 7549 */;
+import react_native from "react-native" /* 17 */;
 
-let StyleSheet;
-let closure_4;
 let hasOwnProperty;
-let metroRequire;
-({ StyleSheet, View: closure_4 } = react_native2);
-({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
-const container = StyleSheet.create({ container: { flex: 1 }, content: { flex: 1 }, header: { zIndex: 1 }, absolute: { position: "absolute", top: 0, start: 0, end: 0 } });
 
-export function Screen(modal) {
-  let Provider;
-  let Provider2;
-  let children;
-  let headerStatusBarHeight;
-  let headerTransparent;
-  let items1;
-  let items4;
-  let obj6;
-  let obj7;
-  let obj9;
-  let route;
-  let style;
-  let tmp10;
-  let obj = modal(headerStatusBarHeight[4]);
-  const safeAreaInsets = obj.useSafeAreaInsets();
-  const context = react.useContext(modal(headerStatusBarHeight[5]).HeaderShownContext);
-  let num = react.useContext(modal(headerStatusBarHeight[6]).HeaderHeightContext);
-  modal = modal.modal;
-  let tmp5 = undefined !== modal;
-  const focused = modal.focused;
-  if (tmp5) {
-    tmp5 = modal;
-  }
-  modal = tmp5;
-  const headerShown = modal.headerShown;
-  let tmp6 = undefined === headerShown;
-  const header = modal.header;
-  if (!tmp6) {
-    tmp6 = headerShown;
-  }
-  ({ headerStatusBarHeight, headerTransparent } = modal);
-  if (undefined === headerStatusBarHeight) {
-    let num2 = 0;
-    if (!context) {
-      num2 = safeAreaInsets.top;
+const self = this;
+let tmp = this && self.__createBinding;
+if (!tmp) {
+  let _Object = Object;
+  tmp = Object.create ? ((arg0, arg1, arg2, arg3) => {
+    closure_0 = arg1;
+    closure_1 = arg2;
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
     }
-    headerStatusBarHeight = num2;
-  }
-  ({ route, navigation, children, style } = modal);
-  const tmpResult = modal(headerStatusBarHeight[7]);
-  const frameSize = tmpResult.useFrameSize((layout) => {
-    const obj = react_native;
-    return obj.getDefaultHeaderHeight(layout, modal, headerStatusBarHeight);
-  });
-  const ref = obj2.useRef(null);
-  const tmp9 = ref(react.useState(frameSize), 2);
-  [tmp10, react] = tmp9;
-  const items = [route.name];
-  const layoutEffect = obj2.useLayoutEffect(() => {
-    const current = ref.current;
-    if (current != null) {
-      current.measure((arg0, arg1, arg2, arg3) => {
-        closure_1_3(arg3);
-      });
-    }
-  }, items);
-  const obj3 = { "aria-hidden": !focused, style: items1, collapsable: false, children: items4 };
-  items1 = [container.container, style];
-  let tmp15Result = null;
-  const Background = tmp(tmp2[9]).Background;
-  const tmp12 = closure_6;
-  if (tmp6) {
-    const items2 = [container.header, ];
-    let tmp17 = null;
-    const obj4 = { route, navigation, children: closure_5(closure_4, obj6) };
-    const NavigationProvider = tmp(tmp2[10]).NavigationProvider;
-    if (headerTransparent) {
-      const items3 = [container.absolute, ];
-      const obj5 = { minHeight: tmp10 };
-      items3[1] = obj5;
-      tmp17 = items3;
-    }
-    items2[1] = tmp17;
-    obj6 = { style: items2, children: closure_5(closure_4, obj7) };
-    obj7 = {
-      ref,
-      pointerEvents: "box-none",
-      onLayout(nativeEvent) {
-          react(nativeEvent.nativeEvent.layout.height);
-        },
-      children: header
+    const obj = {
+      enumerable: true,
+      get() {
+        return closure_0[closure_1];
+      }
     };
-    tmp15Result = tmp15(NavigationProvider, obj4);
-  }
-  items4 = [tmp15Result, ];
-  let tmp20 = context;
-  const obj8 = { style: container.content, children: closure_5(Provider, obj9) };
-  Provider = tmp(tmp2[5]).HeaderShownContext.Provider;
-  const tmp19 = closure_4;
-  if (!context) {
-    tmp20 = false !== tmp6;
-  }
-  obj9 = { value: tmp20, children: closure_5(Provider2, { value: tmp10, children }) };
-  Provider2 = tmp(tmp2[6]).HeaderHeightContext.Provider;
-  if (!tmp6) {
-    if (num == null) {
-      num = 0;
+    Object.defineProperty(arg0, tmp, obj);
+  }) : ((arg0, arg1, arg2, arg3) => {
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
+    }
+    arg0[tmp] = arg1[arg2];
+  });
+}
+let closure_0 = tmp;
+let tmp3 = self && self.__setModuleDefault;
+if (!tmp3) {
+  const _Object2 = Object;
+  tmp3 = Object.create ? ((arg0, value) => {
+    const obj = { enumerable: true, value };
+    Object.defineProperty(arg0, "default", obj);
+  }) : ((arg0, arg1) => {
+    arg0.default = arg1;
+  });
+}
+let closure_1 = tmp3;
+let tmp5 = self && self.__importStar || ((__esModule) => {
+  const tmp = __esModule;
+  if (tmp) {
+    if (__esModule.__esModule) {
+      return __esModule;
     }
   }
-  items4[1] = closure_5(tmp19, obj8);
-  return tmp12(Background, obj3);
-}
+  const obj = {};
+  if (null != __esModule) {
+    for (const key10009 in __esModule) {
+      let callResult = "default" !== key10009;
+      if (callResult) {
+        let _Object = Object;
+        hasOwnProperty = Object.prototype.hasOwnProperty;
+        callResult = hasOwnProperty.call(__esModule, key10009);
+      }
+      if (!callResult) {
+        continue;
+      } else {
+        let tmp6 = closure_0(obj, __esModule, key10009);
+        continue;
+      }
+      continue;
+    }
+  }
+  closure_1(obj, __esModule);
+  return obj;
+});
+const module_7549 = tmp5(_mod7549);
+
+export const Clipboard = {
+  getString() {
+    const _default = module_7549.default;
+    return _default.getString();
+  },
+  getStrings() {
+    const _default = module_7549.default;
+    return _default.getStrings();
+  },
+  getImagePNG() {
+    const _default = module_7549.default;
+    return _default.getImagePNG();
+  },
+  getImageJPG() {
+    const _default = module_7549.default;
+    return _default.getImageJPG();
+  },
+  setImage(arg0) {
+    if ("ios" === react_native.Platform.OS) {
+      const _default = module_7549.default;
+      _default.setImage(arg0);
+    }
+  },
+  getImage() {
+    const _default = module_7549.default;
+    return _default.getImage();
+  },
+  setString(arg0) {
+    const _default = module_7549.default;
+    _default.setString(arg0);
+  },
+  setStrings(arg0) {
+    const _default = module_7549.default;
+    _default.setStrings(arg0);
+  },
+  hasString() {
+    const _default = module_7549.default;
+    return _default.hasString();
+  },
+  hasImage() {
+    const _default = module_7549.default;
+    return _default.hasImage();
+  },
+  hasURL() {
+    if ("ios" === react_native.Platform.OS) {
+      const _default = module_7549.default;
+      return _default.hasURL();
+    }
+  },
+  hasNumber() {
+    if ("ios" === react_native.Platform.OS) {
+      const _default = module_7549.default;
+      return _default.hasNumber();
+    }
+  },
+  hasWebURL() {
+    if ("ios" === react_native.Platform.OS) {
+      const _default = module_7549.default;
+      return _default.hasWebURL();
+    }
+  },
+  addListener(arg0) {
+    return module_7549.addListener(arg0);
+  },
+  removeAllListeners() {
+    module_7549.removeAllListeners();
+  }
+};

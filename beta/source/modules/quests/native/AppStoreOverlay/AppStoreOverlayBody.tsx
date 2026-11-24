@@ -1,23 +1,23 @@
-// Module ID: 10177
-// Function ID: 10178
+// Module ID: 10005
+// Function ID: 10006
 // Name: AppStoreOverlayBody
-// Dependencies: [19, 17, 1072, 5557, 21, 5306, 575, 8825, 6010, 5919, 10178, 1113, 10185, 15243, 1630, 5892, 671, 5883, 5926, 2]
+// Dependencies: [19, 17, 1071, 5142, 21, 4913, 575, 8421, 5600, 5504, 10006, 1112, 10013, 10607, 1628, 5477, 671, 5468, 5511, 2]
 // Exports: AppStoreOverlayBody, AppStoreOverlayFooter
 
-// Module 10177 (AppStoreOverlayBody)
+// Module 10005 (AppStoreOverlayBody)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _modDef671 from "module_671" /* 671 */;
-import Constants from "Constants" /* 1072 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5557 */;
-import FastImageDefault from "FastImage" /* 6010 */;
-import AnalyticsActions from "AnalyticsActions" /* 8825 */;
-import AppStoreOverlayStatsCarouselDefault from "AppStoreOverlayStatsCarousel" /* 10178 */;
-import AppStoreOverlayMediaCarouselDefault from "AppStoreOverlayMediaCarousel" /* 10185 */;
-import AppStoreOverlayAboutSectionDefault from "AppStoreOverlayAboutSection" /* 15243 */;
+import Constants from "Constants" /* 1071 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5142 */;
+import FastImageDefault from "FastImage" /* 5600 */;
+import AnalyticsActions from "AnalyticsActions" /* 8421 */;
+import AppStoreOverlayStatsCarouselDefault from "AppStoreOverlayStatsCarousel" /* 10006 */;
+import AppStoreOverlayMediaCarouselDefault from "AppStoreOverlayMediaCarousel" /* 10013 */;
+import AppStoreOverlayAboutSectionDefault from "AppStoreOverlayAboutSection" /* 10607 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let c9;
@@ -97,11 +97,11 @@ export function AppStoreOverlayBody(arg0) {
   const obj8 = { style: tmp.textBlock, children: items4 };
   items4 = [, ];
   const obj9 = { variant: "heading-xl/semibold", color: "mobile-text-heading-primary", accessibilityRole: "header", children: metadata.title };
-  items4[0] = closure_7(onOverlaySurfaceClick(5919).Text, obj9);
+  items4[0] = closure_7(onOverlaySurfaceClick(5504).Text, obj9);
   let tmp17Result = null != metadata.subtitle && "" !== metadata.subtitle;
   if (tmp17Result) {
     const obj10 = { variant: "body-sm/medium", color: "text-subtle", children: metadata.subtitle };
-    tmp17Result = tmp17(tmp18(5919).Text, obj10);
+    tmp17Result = tmp17(tmp18(5504).Text, obj10);
   }
   items4[1] = tmp17Result;
   items3[1] = closure_8(View, obj8);
@@ -114,9 +114,9 @@ export function AppStoreOverlayBody(arg0) {
   let tmp4Result = null != metadata.media && metadata.media.length > 0;
   if (tmp4Result) {
     const obj12 = { style: tmp.mediaSection, children: items5 };
-    const obj13 = { variant: "body-sm/semibold", color: "mobile-text-heading-primary", children: intl.string(onOverlaySurfaceClick(1113).t["EV1W/L"]) };
-    const Text = tmp18(5919).Text;
-    intl = tmp18(1113).intl;
+    const obj13 = { variant: "body-sm/semibold", color: "mobile-text-heading-primary", children: intl.string(onOverlaySurfaceClick(1112).t["EV1W/L"]) };
+    const Text = tmp18(5504).Text;
+    intl = tmp18(1112).intl;
     items5 = [closure_7(Text, obj13), ];
     const obj14 = { media: metadata.media, onGetGamePress: onMediaGetGamePress, onCarouselScroll };
     items5[1] = closure_7(AppStoreOverlayMediaCarouselDefault, obj14);
@@ -143,8 +143,8 @@ export function AppStoreOverlayFooter(arg0) {
   let token;
   ({ onInstallPress, onLayout } = arg0);
   const tmp = closure_10();
-  const bottom = token(1630)().bottom;
-  let obj = bottom(5892);
+  const bottom = token(1628)().bottom;
+  let obj = bottom(5477);
   token = obj.useToken(token(575).colors.MOBILE_ACTIONSHEET_BACKGROUND);
   let items = [token];
   const items1 = [bottom];
@@ -163,11 +163,11 @@ export function AppStoreOverlayFooter(arg0) {
   }, items1);
   items2 = [, ];
   const obj3 = { pointerEvents: "none", style: tmp.footerGradient, colors: memo, start: VerticalGradient.START, end: VerticalGradient.END };
-  items2[0] = closure_7(token(5883), obj3);
+  items2[0] = closure_7(token(5468), obj3);
   const obj4 = { style: memo1, children: closure_7(Button, obj5) };
-  obj5 = { size: "lg", text: intl.string(bottom(1113).t.lwQdjB), onPress: onInstallPress };
-  Button = bottom(5926).Button;
-  intl = bottom(1113).intl;
+  obj5 = { size: "lg", text: intl.string(bottom(1112).t.lwQdjB), onPress: onInstallPress };
+  Button = bottom(5511).Button;
+  intl = bottom(1112).intl;
   items2[1] = closure_7(View, obj4);
   return closure_8(View, obj2);
 }

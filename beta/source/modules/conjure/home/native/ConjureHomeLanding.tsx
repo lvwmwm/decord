@@ -1,23 +1,23 @@
-// Module ID: 13816
-// Function ID: 13817
+// Module ID: 18624
+// Function ID: 18625
 // Name: ConjureHomeLanding
-// Dependencies: [5, 32, 19, 17, 7321, 7365, 21, 575, 5306, 13817, 1502, 1630, 13131, 1655, 13973, 13192, 13798, 13974, 13975, 13741, 7329, 1503, 13141, 1113, 4131, 7333, 6005, 13977, 7459, 5919, 13978, 13793, 13980, 2]
+// Dependencies: [5, 32, 19, 17, 6925, 6967, 21, 575, 4913, 18625, 1500, 1628, 18235, 1653, 18638, 18293, 18621, 18639, 18640, 18591, 6933, 1501, 18240, 1112, 4190, 6937, 5595, 18642, 7061, 5504, 18643, 18619, 18645, 2]
 // Exports: default
 
-// Module 13816 (ConjureHomeLanding)
+// Module 18624 (ConjureHomeLanding)
 import nativeDefault from "native" /* 575 */;
-import ConjureConnectionStore from "ConjureConnectionStore" /* 7365 */;
-import ConjureHomeCarousel from "ConjureHomeCarousel" /* 13817 */;
+import ConjureConnectionStore from "ConjureConnectionStore" /* 6967 */;
+import ConjureHomeCarousel from "ConjureHomeCarousel" /* 18625 */;
 import _asyncToGenerator_mod from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ConjureChatStore from "ConjureChatStore" /* 7321 */;
+import ConjureChatStore from "ConjureChatStore" /* 6925 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
-let _require, c5, closure_0, closure_4, closure_5, navigation;
+let _require, closure_0, closure_4, navigation;
 
 let c10;
 let diff;
@@ -61,6 +61,7 @@ export default function ConjureHomeLanding(focusRequest) {
   let _undefined;
   let _undefined2;
   let c4;
+  let c5;
   let c6;
   let c7;
   let first;
@@ -80,18 +81,18 @@ export default function ConjureHomeLanding(focusRequest) {
   let tmp10;
   let tmp15;
   let tmp18;
+  let tmp22;
   let tmp24;
   let tmp26;
   let tmp8;
   let tmp9;
   focusRequest = focusRequest.focusRequest;
-  let forMeGuildId = focusRequest.forMeGuildId;
   if (focusRequest === undefined) {
     focusRequest = null;
   }
   navigation = undefined;
   first = undefined;
-  forMeGuildId = undefined;
+  let CONJURE_TARGET_USER;
   _asyncToGenerator = undefined;
   _slicedToArray = undefined;
   react = undefined;
@@ -101,13 +102,13 @@ export default function ConjureHomeLanding(focusRequest) {
   let closure_9;
   const tmp2 = closure_13();
   const tmp3 = navigation;
-  let tmp4 = forMeGuildId;
-  let obj = navigation(forMeGuildId[10]);
+  let tmp4 = CONJURE_TARGET_USER;
+  let obj = navigation(CONJURE_TARGET_USER[10]);
   navigation = obj.useNavigation();
   let tmp6 = first;
-  const bottom = first(forMeGuildId[11])().bottom;
-  let tmp7 = first(forMeGuildId[12])();
-  let obj2 = navigation(forMeGuildId[13]);
+  const bottom = first(CONJURE_TARGET_USER[11])().bottom;
+  let tmp7 = first(CONJURE_TARGET_USER[12])();
+  let obj2 = navigation(CONJURE_TARGET_USER[13]);
   const items = [closure_14, tmp7, bottom];
   let c0;
   let c1;
@@ -127,18 +128,18 @@ export default function ConjureHomeLanding(focusRequest) {
   [first, tmp15] = react.useState(tmp3(tmp4[14]).CONJURE_TARGET_USER);
   const tmp3Result = tmp3(tmp4[15]);
   const conjureEligibleGuilds = tmp3Result.useConjureEligibleGuilds("ConjureHomeLanding");
-  let CONJURE_TARGET_USER = first;
+  CONJURE_TARGET_USER = first;
   if (first !== tmp3(tmp4[14]).CONJURE_TARGET_USER) {
     CONJURE_TARGET_USER = first;
     if (!conjureEligibleGuilds.some((id) => id.id === first)) {
       CONJURE_TARGET_USER = tmp3(tmp4[14]).CONJURE_TARGET_USER;
     }
   }
-  let tmp16 = CONJURE_TARGET_USER;
-  if (CONJURE_TARGET_USER === tmp3(tmp4[14]).CONJURE_TARGET_USER) {
-    tmp16 = forMeGuildId;
+  let tmp16 = null;
+  if (CONJURE_TARGET_USER !== tmp3(tmp4[14]).CONJURE_TARGET_USER) {
+    tmp16 = CONJURE_TARGET_USER;
   }
-  forMeGuildId = tmp16;
+  CONJURE_TARGET_USER = tmp16;
   _asyncToGenerator = obj3.useRef(0);
   [tmp18, c4] = _slicedToArray(obj3.useState(true), 2);
   _slicedToArray(obj3.useState(true), 2);
@@ -149,9 +150,8 @@ export default function ConjureHomeLanding(focusRequest) {
     const layout = nativeEvent.nativeEvent.layout;
     ref.current = layout.y + layout.height;
   }, []);
-  const tmp12Result4 = _slicedToArray(obj3.useState(false), 2);
-  react = tmp12Result4[1];
-  const first1 = tmp12Result4[0];
+  [tmp22, c5] = _slicedToArray(obj3.useState(false), 2);
+  _slicedToArray(obj3.useState(false), 2);
   [tmp24, c6] = _slicedToArray(obj3.useState(null), 2);
   _slicedToArray(obj3.useState(null), 2);
   [tmp26, c7] = _slicedToArray(obj3.useState(null), 2);
@@ -180,12 +180,12 @@ export default function ConjureHomeLanding(focusRequest) {
     function whenFirstPromptShown(value) {
       closure_0 = value;
       const promise = new Promise((fn) => {
-        const f147074 = (role) => "user" === role.role;
+        const f141937 = (role) => "user" === role.role;
         closure_0 = fn;
         function check() {
           const messages = ref.getMessages(closure_0);
           const obj = ref;
-          if (messages.some(f147074)) {
+          if (messages.some(f141937)) {
             obj.removeChangeListener(check);
             const _clearTimeout = clearTimeout;
             clearTimeout(timerId);
@@ -200,7 +200,7 @@ export default function ConjureHomeLanding(focusRequest) {
         let obj = closure_1_8;
         closure_1_8.addChangeListener(check);
         let messages = closure_1_8.getMessages(closure_0);
-        if (messages.some(f147074)) {
+        if (messages.some(f141937)) {
           obj.removeChangeListener(check);
           let _clearTimeout = clearTimeout;
           clearTimeout(timerId);
@@ -249,13 +249,13 @@ export default function ConjureHomeLanding(focusRequest) {
               ref2.current = true;
               c5(true);
               c6(null);
-              const obj15 = closure_0(forMeGuildId[16]);
-              obj15.setComposerDraft(closure_0(forMeGuildId[17]).CONJURE_HOME_DRAFT_KEY, "");
+              const obj15 = closure_0(CONJURE_TARGET_USER[16]);
+              obj15.setComposerDraft(closure_0(CONJURE_TARGET_USER[17]).CONJURE_HOME_DRAFT_KEY, "");
               c5 = 2;
               const obj4 = { guildId: projectId, modelSettings: null };
               c6 = 3;
               c7 = 1;
-              const obj5 = { value: first(forMeGuildId[18])(obj4), done: false };
+              const obj5 = { value: first(CONJURE_TARGET_USER[18])(obj4), done: false };
               return obj5;
             }
           }
@@ -267,14 +267,14 @@ export default function ConjureHomeLanding(focusRequest) {
         } else if (2 === tmp4) {
           let stringResult;
           c5 = 1;
-          closure_5 = closure_4;
-          const obj11 = closure_0(forMeGuildId[16]);
-          obj11.setComposerDraft(closure_0(forMeGuildId[17]).CONJURE_HOME_DRAFT_KEY, closure_0);
+          let closure_5 = closure_4;
+          const obj11 = closure_0(CONJURE_TARGET_USER[16]);
+          obj11.setComposerDraft(closure_0(CONJURE_TARGET_USER[17]).CONJURE_HOME_DRAFT_KEY, closure_0);
           if (closure_5 instanceof ConjureHomeUploadError) {
-            const intl = closure_0(forMeGuildId[23]).intl;
-            stringResult = intl.string(first(forMeGuildId[24])["903H7m"]);
+            const intl = closure_0(CONJURE_TARGET_USER[23]).intl;
+            stringResult = intl.string(first(CONJURE_TARGET_USER[24])["903H7m"]);
           } else {
-            const obj12 = closure_0(forMeGuildId[25]);
+            const obj12 = closure_0(CONJURE_TARGET_USER[25]);
             stringResult = obj12.getConjureCreateErrorMessage(closure_5);
           }
           text = stringResult;
@@ -282,7 +282,7 @@ export default function ConjureHomeLanding(focusRequest) {
             c6(text);
           } else {
             const obj7 = { text, variant: "critical" };
-            const obj13 = first(forMeGuildId[26]);
+            const obj13 = first(CONJURE_TARGET_USER[26]);
             obj13.open("CONJURE_HOME_CREATE_FAILED", obj7);
           }
           c5 = 0;
@@ -324,7 +324,7 @@ export default function ConjureHomeLanding(focusRequest) {
             c6 = 8;
             c7 = 1;
             const obj10 = { value: obj6.deleteProject(projectId), done: false };
-            obj6 = closure_0(forMeGuildId[20]);
+            obj6 = closure_0(CONJURE_TARGET_USER[20]);
             return obj10;
           } else if (5 === tmp4) {
             if (arg0 === 1) {
@@ -342,8 +342,8 @@ export default function ConjureHomeLanding(focusRequest) {
               if (current) {
                 const dispatch = closure_0.dispatch;
                 const obj16 = { projectId, entryPoint: "create" };
-                const str = closure_0(forMeGuildId[21]).StackActions;
-                dispatch(str.replace(closure_0(forMeGuildId[22]).ConjureScreenScenes.CHAT, obj16));
+                const str = closure_0(CONJURE_TARGET_USER[21]).StackActions;
+                dispatch(str.replace(closure_0(CONJURE_TARGET_USER[22]).ConjureScreenScenes.CHAT, obj16));
               }
               c5 = 0;
               ref2.current = false;
@@ -458,7 +458,7 @@ export default function ConjureHomeLanding(focusRequest) {
     tmp31Result = tmp31(tmp3(tmp4[29]).Text, obj15);
   }
   items4[2] = tmp31Result;
-  let obj16 = { projectId: tmp3(tmp4[17]).CONJURE_HOME_DRAFT_KEY, canSend: true, running: false, onSendFiles: callback3, sending: first1, focusRequest, blurRequest: tmp26, placeholder: intl5.string(tmp6(tmp4[24]).Hy0OLY), stackedAccessory: tmp31(tmp6(tmp4[32]), { target: CONJURE_TARGET_USER, guilds: conjureEligibleGuilds, onChange: tmp15 }) };
+  let obj16 = { projectId: tmp3(tmp4[17]).CONJURE_HOME_DRAFT_KEY, canSend: true, running: false, onSendFiles: callback3, sending: tmp22, focusRequest, blurRequest: tmp26, placeholder: intl5.string(tmp6(tmp4[24]).Hy0OLY), stackedAccessory: tmp31(tmp6(tmp4[32]), { target: CONJURE_TARGET_USER, guilds: conjureEligibleGuilds, onChange: tmp15 }) };
   const tmp6Result = tmp6(tmp4[31]);
   intl5 = tmp3(tmp4[23]).intl;
   items4[3] = closure_10(tmp6Result, obj16);

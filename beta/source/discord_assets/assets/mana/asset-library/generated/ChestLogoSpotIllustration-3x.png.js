@@ -1,8 +1,8 @@
-// Module ID: 17689
-// Function ID: 17690
+// Module ID: 16461
+// Function ID: 16462
 // Dependencies: [2]
 
-// Module 17689
+// Module 16461
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/ChestLogoSpotIllustration-3x.png.js");

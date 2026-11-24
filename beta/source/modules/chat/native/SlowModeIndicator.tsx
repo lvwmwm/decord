@@ -1,16 +1,16 @@
-// Module ID: 14597
-// Function ID: 14598
+// Module ID: 12849
+// Function ID: 12850
 // Name: SlowModeIndicator
-// Dependencies: [32, 19, 8792, 21, 5306, 575, 504, 8793, 9426, 7428, 5919, 12557, 2]
+// Dependencies: [32, 19, 8388, 21, 4913, 575, 504, 8389, 8942, 7030, 5504, 12074, 2]
 
-// Module 14597 (SlowModeIndicator)
+// Module 12849 (SlowModeIndicator)
 import nativeDefault from "native" /* 575 */;
-import SlowmodeUtils from "SlowmodeUtils" /* 8793 */;
+import SlowmodeUtils from "SlowmodeUtils" /* 8389 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import SlowmodeStore from "SlowmodeStore" /* 8792 */;
+import SlowmodeStore from "SlowmodeStore" /* 8388 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;

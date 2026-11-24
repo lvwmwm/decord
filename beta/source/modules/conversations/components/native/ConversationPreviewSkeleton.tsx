@@ -1,18 +1,18 @@
-// Module ID: 9155
-// Function ID: 9156
+// Module ID: 8665
+// Function ID: 8666
 // Name: ConversationPreviewSkeleton
-// Dependencies: [19, 17, 5947, 21, 5306, 575, 1655, 5538, 2]
+// Dependencies: [19, 17, 5537, 21, 4913, 575, 1653, 5123, 2]
 // Exports: default
 
-// Module 9155 (ConversationPreviewSkeleton)
+// Module 8665 (ConversationPreviewSkeleton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import timing_timing from "timing/timing" /* 5538 */;
-import ConversationConstants from "ConversationConstants" /* 5947 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import timing_timing from "timing/timing" /* 5123 */;
+import ConversationConstants from "ConversationConstants" /* 5537 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -49,17 +49,17 @@ export default function ConversationPreviewSkeleton() {
   let tmp4;
   let tmp5;
   _require = closure_8();
-  let obj = require("module_1655");
+  let obj = require("module_1653");
   const sharedValue = obj.useSharedValue(0.4);
   let items = [sharedValue];
   const effect = react.useEffect(() => {
     set = sharedValue.set;
-    const withRepeat = _mod1655.withRepeat;
-    _mod1655;
+    const withRepeat = _mod1653.withRepeat;
+    _mod1653;
     const obj = timing_timing;
     const result = set(withRepeat(obj.withTiming(1, { duration: 700 }), -1, true));
   }, items);
-  let obj2 = require("module_1655");
+  let obj2 = require("module_1653");
   let items1 = [closure_9, sharedValue];
   let c0;
   [tmp4, tmp5] = items1;
@@ -98,6 +98,6 @@ export default function ConversationPreviewSkeleton() {
     })
   };
   obj4 = { length: closure_5 };
-  View = sharedValue(1655).View;
+  View = sharedValue(1653).View;
   return closure_6(View, obj3);
 };

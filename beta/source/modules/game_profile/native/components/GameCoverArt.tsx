@@ -1,19 +1,19 @@
-// Module ID: 10321
-// Function ID: 10322
+// Module ID: 9811
+// Function ID: 9812
 // Name: GameCoverArt
-// Dependencies: [19, 17, 21, 5306, 575, 10322, 1113, 6010, 5919, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 9812, 1112, 5600, 5504, 2]
 // Exports: default
 
-// Module 10321 (GameCoverArt)
+// Module 9811 (GameCoverArt)
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import FastImageDefault from "FastImage" /* 6010 */;
-import useGameArtworkDefault from "useGameArtwork" /* 10322 */;
+import intl2 from "intl" /* 1112 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import FastImageDefault from "FastImage" /* 5600 */;
+import useGameArtworkDefault from "useGameArtwork" /* 9812 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let StyleSheet;

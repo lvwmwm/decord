@@ -1,23 +1,23 @@
-// Module ID: 5522
-// Function ID: 5523
+// Module ID: 5530
+// Function ID: 5531
 // Name: ExperimentStore
-// Dependencies: [32, 502, 1071, 5523, 1072, 3, 1377, 1251, 1256, 5524, 510, 12, 572, 2]
+// Dependencies: [32, 502, 1070, 5531, 1071, 3, 1375, 1250, 1255, 5532, 510, 12, 572, 2]
 // Exports: registerExperiment
 
-// Module 5522 (ExperimentStore)
+// Module 5530 (ExperimentStore)
 import LoggerDefault from "Logger" /* 3 */;
 import _modDef12 from "module_12" /* 12 */;
 import Storage5 from "Storage" /* 510 */;
 import Dispatcher from "Dispatcher" /* 572 */;
-import _modDef1251 from "module_1251" /* 1251 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import BuildOverrideUtils from "BuildOverrideUtils" /* 1377 */;
-import GuildFilters from "GuildFilters" /* 5524 */;
+import _modDef1250 from "module_1250" /* 1250 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import BuildOverrideUtils from "BuildOverrideUtils" /* 1375 */;
+import GuildFilters from "GuildFilters" /* 5532 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1071 */;
-import ExperimentConstants from "ExperimentConstants" /* 5523 */;
-import Constants from "Constants" /* 1072 */;
+import MobileCacheSnapshotStore from "MobileCacheSnapshotStore" /* 1070 */;
+import ExperimentConstants from "ExperimentConstants" /* 5531 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 let closure_22, closure_23, positions;
@@ -31,7 +31,7 @@ let metroRequire;
 let tmp;
 function getHash(arg0) {
   if (undefined === closure_27[arg0]) {
-    obj = _modDef1251;
+    obj = _modDef1250;
     const v3Result = obj.v3(arg0);
     tmp[arg0] = v3Result;
     return v3Result;
@@ -85,7 +85,7 @@ function getTrackExposureExperimentHash(descriptor) {
     const combined = "" + descriptor.bucket + "|" + descriptor.revision;
     let tmp15 = closure_27[combined];
     if (undefined === tmp15) {
-      const obj2 = _modDef1251;
+      const obj2 = _modDef1250;
       const v3Result = obj2.v3(combined);
       tmp14[combined] = v3Result;
       tmp15 = v3Result;
@@ -96,7 +96,7 @@ function getTrackExposureExperimentHash(descriptor) {
     const combined1 = "" + descriptor.bucket + "|" + descriptor.revision + "|" + descriptor.guildId;
     let tmp8 = closure_27[combined1];
     if (undefined === tmp8) {
-      obj = _modDef1251;
+      obj = _modDef1250;
       const v3Result1 = obj.v3(combined1);
       tmp7[combined1] = v3Result1;
       tmp8 = v3Result1;
@@ -779,7 +779,7 @@ const guildExperimentOverrides = "guildExperimentOverrides";
 let tmp6 = new LoggerDefault("ExperimentStore");
 const logger = tmp6;
 const authStore3 = false;
-const trackedExposureExperiments = {};
+const authStore4 = {};
 const map = new Map();
 let closure_19 = {};
 let obj = { rawUserExperiments: [], rawGuildExperiments: [] };
@@ -932,7 +932,7 @@ class ExperimentStore extends MobileCacheSnapshotStore {
     }
     let tmp6 = closure_27[id];
     if (undefined === tmp6) {
-      obj = _modDef1251;
+      obj = _modDef1250;
       const v3Result = obj.v3(id);
       tmp5[id] = v3Result;
       tmp6 = v3Result;
@@ -989,7 +989,7 @@ class ExperimentStore extends MobileCacheSnapshotStore {
     let tmp3 = closure_27[name];
     const tmp = loadedUserExperiments;
     if (undefined === tmp3) {
-      obj = _modDef1251;
+      obj = _modDef1250;
       const v3Result = obj.v3(name);
       tmp2[name] = v3Result;
       tmp3 = v3Result;
@@ -1000,7 +1000,7 @@ class ExperimentStore extends MobileCacheSnapshotStore {
     let tmp3 = closure_27[id];
     const tmp = closure_22;
     if (undefined === tmp3) {
-      obj = _modDef1251;
+      obj = _modDef1250;
       const v3Result = obj.v3(id);
       tmp2[id] = v3Result;
       tmp3 = v3Result;
@@ -1056,7 +1056,7 @@ class ExperimentStore extends MobileCacheSnapshotStore {
       let tmp4 = closure_27[combined];
       const tmp = obj2;
       if (undefined === tmp4) {
-        obj = _modDef1251;
+        obj = _modDef1250;
         const v3Result = obj.v3(combined);
         tmp3[combined] = v3Result;
         tmp4 = v3Result;

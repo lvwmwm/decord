@@ -1,27 +1,27 @@
-// Module ID: 7329
-// Function ID: 7330
+// Module ID: 6933
+// Function ID: 6934
 // Name: ConjureActionCreators
-// Dependencies: [109, 5, 7015, 1388, 7330, 7017, 1072, 6949, 4, 572, 1285, 7331, 6069, 7333, 559, 7334, 7335, 7336, 7338, 7341, 7339, 5967, 7018, 7055, 7347, 7350, 7351, 2]
-// Exports: applyPublishedPreview, applyRemixPreview, clearGlobalChatProject, createProject, createRemix, deleteProjectInBackground, fetchApplicationChannels, fetchMissingConjureProjectNow, fetchProjectLimit, installConjureProjectForOwner, isConjureProjectUnavailable, loadMissingConjureProjects, makeConjureProjectPersonal, prefetchProject, refetchProjectsAfterReconnect, refreshPreviewApplication, selectGlobalChatProject, setGuildHints, setSelectedProjectForGuild, shareConjureProject, takePrefetchedRead, updateProjectSettings
+// Dependencies: [109, 5, 6619, 1386, 6934, 6621, 1071, 6553, 4, 572, 1284, 6935, 5662, 6937, 559, 6938, 6939, 6940, 6942, 6945, 6943, 5557, 6622, 6659, 6951, 6954, 6955, 2]
+// Exports: applyPublishedPreview, applyRemixPreview, clearGlobalChatProject, createProject, createRemix, deleteProjectInBackground, fetchApplicationChannels, fetchMissingConjureProjectNow, fetchProjectLimit, installConjureProjectForOwner, isConjureProjectUnavailable, loadMissingConjureProjects, makeConjureProjectPersonal, prefetchProject, refetchProjectsAfterReconnect, refreshPreviewApplication, selectGlobalChatProject, setConjureProjectServer, setSelectedProjectForGuild, takePrefetchedRead
 
-// Module 7329 (ConjureActionCreators)
+// Module 6933 (ConjureActionCreators)
 import logger_Logger from "logger/Logger" /* 4 */;
 import BackoffDefault from "Backoff" /* 559 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import Constants from "Constants" /* 1072 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5967 */;
-import ReadStateConstants from "ReadStateConstants" /* 6949 */;
-import conjureProjectSockets from "conjureProjectSockets" /* 7335 */;
-import ConjureWorkerTickets from "ConjureWorkerTickets" /* 7336 */;
-import prefetchConjurePreviewFrame from "prefetchConjurePreviewFrame" /* 7338 */;
-import conjurePreviewSurface from "conjurePreviewSurface" /* 7339 */;
-import createProxyTicket from "createProxyTicket" /* 7341 */;
+import Constants from "Constants" /* 1071 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5557 */;
+import ReadStateConstants from "ReadStateConstants" /* 6553 */;
+import conjureProjectSockets from "conjureProjectSockets" /* 6939 */;
+import ConjureWorkerTickets from "ConjureWorkerTickets" /* 6940 */;
+import prefetchConjurePreviewFrame from "prefetchConjurePreviewFrame" /* 6942 */;
+import conjurePreviewSurface from "conjurePreviewSurface" /* 6943 */;
+import createProxyTicket from "createProxyTicket" /* 6945 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import ReadStateStore from "ReadStateStore" /* 7015 */;
-import UserStore from "UserStore" /* 1388 */;
-import ConjureLastIntegrationStatusStore from "ConjureLastIntegrationStatusStore" /* 7330 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 7017 */;
+import ReadStateStore from "ReadStateStore" /* 6619 */;
+import UserStore from "UserStore" /* 1386 */;
+import ConjureLastIntegrationStatusStore from "ConjureLastIntegrationStatusStore" /* 6934 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6621 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -958,9 +958,6 @@ obj = function _postProject() {
   });
   return obj(...arguments);
 };
-function patchProject() {
-  return obj(...arguments);
-}
 obj = function _patchProject() {
   obj = _asyncToGenerator(async (value, body) => {
     let closure_2;
@@ -1102,11 +1099,17 @@ obj = function _refreshPreviewApplication() {
   });
   return obj(...arguments);
 };
+function updateProjectSettings() {
+  return obj(...arguments);
+}
 obj = function _updateProjectSettings() {
   obj = _asyncToGenerator(async (arg0, arg1) => {
     let c4;
     let c5;
     let prop;
+    function patchProject() {
+      return closure_1_50(...arguments);
+    }
     let closure_1 = arg1;
     let value = tmp;
     let closure_0 = closure_1;
@@ -1128,7 +1131,7 @@ obj = function _updateProjectSettings() {
       tmp17 = tmp20;
     }
     if (!tmp17) {
-      const promise = closure_131_52(preview_application_id);
+      const promise = closure_131_51(preview_application_id);
       promise.catch(() => {
 
       });
@@ -1137,11 +1140,10 @@ obj = function _updateProjectSettings() {
   });
   return obj(...arguments);
 };
-obj = function _shareConjureProject() {
+obj = function _setConjureProjectServer() {
   obj = _asyncToGenerator(async (arg0, value) => {
-    let obj4;
+    let closure_1;
     let closure_0 = arg0;
-    let closure_1 = value;
     if (c5 === 2) {
       c5 = 3;
       throw new TypeError("Generator functions may not be called on executing generators");
@@ -1156,8 +1158,7 @@ obj = function _shareConjureProject() {
       }
     } else {
       try {
-        let body;
-        let prop;
+        let preview_guild_id;
         c5 = 2;
         if (0 === c4) {
           if (arg0 === 1) {
@@ -1168,24 +1169,13 @@ obj = function _shareConjureProject() {
             const obj3 = { value, done: true };
             return obj3;
           } else {
-            closure_3 = tmp2;
-            let closure_2 = tmp;
-            body = undefined;
-            project = project.getProject(closure_0);
-            prop = undefined;
-            const tmp36 = closure_0;
-            const tmp37 = closure_1;
-            if (project != null) {
-              prop = project.preview_application_id;
-            }
-            const HTTP = require("HTTPUtils").HTTP;
-            const request = { url: "" + Endpoints.CONJURE_PROJECT(tmp36) + "/server", body: obj4, rejectWithError: true };
-            const put = HTTP.put;
-            const _HermesInternal = HermesInternal;
-            obj4 = { guild_id: tmp37, uses_preview_app: true };
+            closure_3 = tmp;
+            let closure_2 = tmp2;
+            preview_guild_id = undefined;
+            const obj4 = { guild_id: preview_guild_id, preview_guild_id };
             c4 = 1;
             c5 = 1;
-            const obj5 = { value: put(request), done: false };
+            const obj5 = { value: updateProjectSettings(closure_0, obj4), done: false };
             return obj5;
           }
         } else if (arg0 === 1) {
@@ -1196,21 +1186,17 @@ obj = function _shareConjureProject() {
           obj = { value, done: true };
           return obj;
         } else {
-          body = value.body;
-          const obj6 = { type: "CONJURE_PROJECT_UPDATE_SUCCESS", project: body };
-          const obj7 = closure_131_1(closure_131_2[9]);
-          obj7.dispatch(obj6);
-          closure_131_62(closure_0);
-          const tmp9 = null != prop && prop !== body.preview_application_id;
-          if (tmp9) {
-            closure_131_1(closure_131_2[24])(prop);
+          preview_guild_id = closure_131_42.get(closure_0);
+          if (null != preview_guild_id) {
+            preview_guild_id.applied = closure_131_43(closure_0);
           }
+          closure_131_62(closure_0);
           c5 = 3;
           return { value: "HermesInternal", done: null };
         }
-      } catch (tmp21) {
+      } catch (tmp25) {
         c5 = 3;
-        throw tmp21;
+        throw tmp25;
       }
     }
   });
@@ -1745,14 +1731,9 @@ export { fetchConjureApplication };
 export function refreshPreviewApplication() {
   return obj(...arguments);
 }
-export function updateProjectSettings() {
+export { updateProjectSettings };
+export function setConjureProjectServer() {
   return obj(...arguments);
-}
-export function shareConjureProject() {
-  return obj(...arguments);
-}
-export function setGuildHints(first2, arg1) {
-  return patchProject(first2, arg1);
 }
 export function fetchApplicationChannels() {
   return obj(...arguments);

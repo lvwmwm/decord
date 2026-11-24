@@ -1,17 +1,17 @@
-// Module ID: 7699
-// Function ID: 7700
+// Module ID: 7301
+// Function ID: 7302
 // Name: DesktopNativeUtils
-// Dependencies: [32, 5, 1072, 38, 5533, 1380, 510, 7700, 7701, 4, 7702, 7703, 1381, 1285, 6066, 2]
+// Dependencies: [32, 5, 1071, 38, 6391, 1378, 510, 7302, 7303, 4, 7304, 7305, 1379, 1284, 5659, 2]
 
-// Module 7699 (DesktopNativeUtils)
+// Module 7301 (DesktopNativeUtils)
 import logger_Logger from "logger/Logger" /* 4 */;
 import Storage3 from "Storage" /* 510 */;
-import Constants from "Constants" /* 1072 */;
-import flow_Client from "flow/Client" /* 5533 */;
-import discord_common_DiscordNative from "discord_common/DiscordNative" /* 6066 */;
-import DomainMigrationUtils from "DomainMigrationUtils" /* 7700 */;
-import GameDetectionDebugLevel from "GameDetectionDebugLevel" /* 7701 */;
-import IPCEvents from "IPCEvents" /* 7702 */;
+import Constants from "Constants" /* 1071 */;
+import discord_common_DiscordNative from "discord_common/DiscordNative" /* 5659 */;
+import flow_Client from "flow/Client" /* 6391 */;
+import DomainMigrationUtils from "DomainMigrationUtils" /* 7302 */;
+import GameDetectionDebugLevel from "GameDetectionDebugLevel" /* 7303 */;
+import IPCEvents from "IPCEvents" /* 7304 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
@@ -20,7 +20,7 @@ const require = globalThis.__r;
 let _require, c10, c9, closeResult, importDefault;
 
 let tmp2;
-const FileExtensionUtils = tmp2(7703);
+const FileExtensionUtils = tmp2(7305);
 function sanitizeFilename(str) {
   try {
     const _decodeURIComponent = decodeURIComponent;
@@ -448,15 +448,17 @@ let obj2 = {
       }
     }
   },
-  setObservedGamesCallback(mapped, normalizeCallback, arg2, arg3) {
+  setObservedGamesCallback(arr, arg1, arg2) {
     let sum;
-    let closure_0 = arg2;
+    let closure_0 = arg1;
     try {
       const self = this;
       closure_13 = {};
       importDefault = 0;
       const discordUtils = this.getDiscordUtils();
-      mapped = mapped.map((id) => {
+      let closure_2 = closure_13;
+      let tmp6 = null != arg2;
+      const mapped = arr.map((id) => {
         importDefault = importDefault + 1;
         if (null != id.id) {
           closure_13[importDefault] = id.id;
@@ -465,20 +467,20 @@ let obj2 = {
         const merged = Object.assign(id);
         return obj;
       });
-      let closure_2 = closure_13;
-      const tmp6 = null != arg3 && null != discordUtils.setProcessObserverUserId;
       if (tmp6) {
-        const result = discordUtils.setProcessObserverUserId(arg3);
+        tmp6 = null != discordUtils.setProcessObserverUserId;
       }
-      normalizeCallback = function normalizeCallback(arr) {
+      if (tmp6) {
+        const result = discordUtils.setProcessObserverUserId(arg2);
+      }
+      const result1 = discordUtils.setObservedGamesCallback2(mapped, function normalizeCallback(arr) {
         return closure_0(arr.map((item) => normalizeRunningGame(item, closure_1_2)));
-      };
-      if (normalizeCallback) {
-        if (null != discordUtils.setObservedGamesCallback2) {
-          const result1 = discordUtils.setObservedGamesCallback2(mapped, normalizeCallback);
-        }
+      });
+      if (discordUtils.setGameDetectionCallback != null) {
+        const result2 = setGameDetectionCallback(() => {
+
+        });
       }
-      const result2 = discordUtils.setObservedGamesCallback(mapped, normalizeCallback);
     } catch (err) {
     }
   },
@@ -523,16 +525,6 @@ let obj2 = {
       }
     });
     return promise;
-  },
-  setGameDetectionCallback(arg0) {
-    let closure_0 = arg0;
-    const discordUtils = this.getDiscordUtils();
-    if (discordUtils.setGameDetectionCallback != null) {
-      const result = setGameDetectionCallback((arr, arr2) => {
-        const mapped = arr.map((item) => closure_1_29(item));
-        return closure_0(mapped, arr2.map((item) => closure_1_29(item)));
-      });
-    }
   },
   setGameDetectionErrorCallback(arg0) {
     const discordUtils = this.getDiscordUtils();
@@ -1044,7 +1036,7 @@ let obj2 = {
     if (null != uri) {
       const tmp = require;
       if (require("PlatformUtils").isPlatformEmbedded) {
-        const tmpResult = tmp(7703);
+        const tmpResult = tmp(7305);
         const decideFileExtensionResult = tmpResult.decideFileExtension(uri, contentType);
         const hasItem = null == decideFileExtensionResult || set2.has(decideFileExtensionResult);
         return hasItem;
@@ -1052,8 +1044,8 @@ let obj2 = {
     }
     return false;
   },
-  saveImage(arg0, arg1, arg2) {
-    let closure_0 = arg0;
+  saveImage(value, arg1, arg2) {
+    let closure_0 = value;
     let closure_1 = arg1;
     let closure_2 = arg2;
     return (async (arg0, value) => {
@@ -1074,6 +1066,7 @@ let obj2 = {
       } else {
         let c8;
         try {
+          let closure_0;
           let png;
           let directory;
           let closure_3;

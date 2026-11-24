@@ -1,23 +1,23 @@
-// Module ID: 18603
-// Function ID: 18604
+// Module ID: 17399
+// Function ID: 17400
 // Name: ParentalControlsUseDataForQuestsSetting
-// Dependencies: [8740, 9202, 17349, 17353, 1113, 2701, 12408, 2]
+// Dependencies: [8335, 8712, 16117, 16121, 1112, 2824, 11937, 2]
 
-// Module 18603 (ParentalControlsUseDataForQuestsSetting)
-import intl2 from "intl" /* 1113 */;
-import _modDef2701 from "module_2701" /* 2701 */;
-import SettingsConstants from "SettingsConstants" /* 9202 */;
-import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 17349 */;
-import FamilyCenterSaveErrorUtils from "FamilyCenterSaveErrorUtils" /* 17353 */;
-import FamilyCenterStore from "FamilyCenterStore" /* 8740 */;
-import SettingBuilders from "SettingBuilders" /* 12408 */;
+// Module 17399 (ParentalControlsUseDataForQuestsSetting)
+import intl2 from "intl" /* 1112 */;
+import _modDef2824 from "module_2824" /* 2824 */;
+import SettingsConstants from "SettingsConstants" /* 8712 */;
+import ParentalControlledUserSettings from "ParentalControlledUserSettings" /* 16117 */;
+import FamilyCenterSaveErrorUtils from "FamilyCenterSaveErrorUtils" /* 16121 */;
+import FamilyCenterStore from "FamilyCenterStore" /* 8335 */;
+import SettingBuilders from "SettingBuilders" /* 11937 */;
 import size from "module_2" /* 2 */;
 
 const MobileUserSettings = SettingsConstants.MobileUserSettings;
 const obj = {
   useTitle: function useDataForQuestsSettingTitle() {
     const intl = intl2.intl;
-    return intl.string(_modDef2701.ZhaNu8);
+    return intl.string(_modDef2824.ZhaNu8);
   },
   parent: MobileUserSettings.FAMILY_CENTER_PARENTAL_CONTROLS_SETTINGS,
   useValue: function useDataToSupportQuestsSettingValue() {

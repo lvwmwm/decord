@@ -1,23 +1,23 @@
-// Module ID: 15069
-// Function ID: 15070
+// Module ID: 13655
+// Function ID: 13656
 // Name: InstantInviteRow
-// Dependencies: [19, 17, 5155, 8462, 5177, 14734, 1388, 12567, 8842, 21, 5306, 575, 504, 5944, 8463, 15070, 7428, 1187, 10930, 5362, 1113, 1414, 2153, 5919, 7443, 12569, 2]
+// Dependencies: [19, 17, 4762, 8053, 4784, 13189, 1386, 12084, 8438, 21, 4913, 575, 504, 5529, 8054, 13656, 7030, 1186, 10386, 4969, 1112, 1412, 2152, 5504, 7045, 12095, 2]
 
-// Module 15069 (InstantInviteRow)
+// Module 13655 (InstantInviteRow)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import InstantInviteUtils from "InstantInviteUtils" /* 8463 */;
-import Constants from "Constants" /* 8842 */;
-import InviteQueue from "InviteQueue" /* 15070 */;
+import InstantInviteUtils from "InstantInviteUtils" /* 8054 */;
+import Constants from "Constants" /* 8438 */;
+import InviteQueue from "InviteQueue" /* 13656 */;
 import react from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import CreateInviteModalStore from "CreateInviteModalStore" /* 8462 */;
-import GuildStore from "GuildStore" /* 5177 */;
-import InviteSuggestionsStore from "InviteSuggestionsStore" /* 14734 */;
-import UserStore from "UserStore" /* 1388 */;
-import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 12567 */;
-import createStyles from "createStyles" /* 5306 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import CreateInviteModalStore from "CreateInviteModalStore" /* 8053 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import InviteSuggestionsStore from "InviteSuggestionsStore" /* 13189 */;
+import UserStore from "UserStore" /* 1386 */;
+import InstantInviteSendStateStore from "InstantInviteSendStateStore" /* 12084 */;
+import createStyles from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 const InviteQueueDefault = InviteQueue;
@@ -49,7 +49,7 @@ const memoResult = react.memo(function InstantInviteRow(row) {
   ({ start, end } = row);
   const id = row.item.id;
   let tmp2 = row;
-  let tmp3 = onPressAvatar;
+  const tmp3 = onPressAvatar;
   let tmp = closure_13();
   let obj = row(onPressAvatar[12]);
   const items = [id];
@@ -136,7 +136,7 @@ const memoResult = react.memo(function InstantInviteRow(row) {
       }
       function handlePress() {
         let obj3;
-        let obj5;
+        let obj4;
         let obj6;
         const tmp = code;
         if (null != code) {
@@ -157,28 +157,28 @@ const memoResult = react.memo(function InstantInviteRow(row) {
               if (InstantInviteUtils.RowTypes.GROUP_DM === type) {
                 if (null != tmp) {
                   const obj2 = { inviteKey: tmp, type: InviteQueue.InvitePropertiesType.GROUP_DM, channel: ChannelStore.getChannel(id), location: "Invite Action Sheet", inviteAnalyticsMetadata: obj3 };
-                  const enqueue3 = InviteQueueDefault.enqueue;
+                  const enqueue2 = InviteQueueDefault.enqueue;
                   InviteQueueDefault;
                   obj3 = { suggestionData: InviteSuggestionsStore.getSelectedInviteMetadata(row), source: ChannelStore };
-                  enqueue3(obj2, handleSendState);
+                  enqueue2(obj2, handleSendState);
                 }
               } else if (InstantInviteUtils.RowTypes.CHANNEL === type) {
                 if (null != tmp) {
-                  const obj4 = { inviteKey: tmp, type: InviteQueue.InvitePropertiesType.CHANNEL, channel: ChannelStore.getChannel(id), location: "Invite Action Sheet", inviteAnalyticsMetadata: obj5 };
-                  const enqueue2 = InviteQueueDefault.enqueue;
+                  const obj = { inviteKey: tmp, type: InviteQueue.InvitePropertiesType.CHANNEL, channel: ChannelStore.getChannel(id), location: "Invite Action Sheet", inviteAnalyticsMetadata: obj4 };
+                  const enqueue = InviteQueueDefault.enqueue;
                   InviteQueueDefault;
-                  obj5 = { suggestionData: InviteSuggestionsStore.getSelectedInviteMetadata(row), source: ChannelStore };
-                  enqueue2(obj4, handleSendState);
+                  obj4 = { suggestionData: InviteSuggestionsStore.getSelectedInviteMetadata(row), source: ChannelStore };
+                  enqueue(obj, handleSendState);
                 }
               }
             }
           }
           if (null != tmp) {
-            const tmp3 = InviteQueueDefault;
-            const enqueue = tmp3.enqueue;
-            const obj = { inviteKey: tmp, type: InviteQueue.InvitePropertiesType.USER, user: UserStore.getUser(id), location: "Invite Action Sheet", inviteAnalyticsMetadata: obj6 };
+            const obj5 = { inviteKey: tmp, type: InviteQueue.InvitePropertiesType.USER, user: UserStore.getUser(id), location: "Invite Action Sheet", inviteAnalyticsMetadata: obj6 };
+            const enqueue3 = InviteQueueDefault.enqueue;
+            InviteQueueDefault;
             obj6 = { suggestionData: InviteSuggestionsStore.getSelectedInviteMetadata(row), source: ChannelStore };
-            enqueue(obj, handleSendState);
+            enqueue3(obj5, handleSendState);
           }
         }
       }

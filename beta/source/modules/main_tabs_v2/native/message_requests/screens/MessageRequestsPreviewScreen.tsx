@@ -1,15 +1,15 @@
-// Module ID: 19766
-// Function ID: 19767
+// Module ID: 19017
+// Function ID: 19018
 // Name: MessageRequestsPreviewScreen
-// Dependencies: [19, 7015, 1072, 21, 14873, 9069, 11010, 19767, 11976, 2]
+// Dependencies: [19, 6619, 1071, 21, 13326, 8579, 11098, 19018, 11741, 2]
 // Exports: default
 
-// Module 19766 (MessageRequestsPreviewScreen)
+// Module 19017 (MessageRequestsPreviewScreen)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1072 */;
-import MessageManagerDefault from "MessageManager" /* 9069 */;
+import Constants from "Constants" /* 1071 */;
+import MessageManagerDefault from "MessageManager" /* 8579 */;
 import react from "react" /* 19 */;
-import ReadStateStore from "ReadStateStore" /* 7015 */;
+import ReadStateStore from "ReadStateStore" /* 6619 */;
 import size from "module_2" /* 2 */;
 
 const ME = Constants.ME;
@@ -20,7 +20,7 @@ export default function MessageRequestsScreen(route) {
   let tmp5Result;
   const channelId = route.route.params.channelId;
   const ref = react.useRef(null);
-  let obj = channelId(14873);
+  let obj = channelId(13326);
   const items = [channelId];
   const isMessageRequestRestrictedViewer = obj.useIsMessageRequestRestrictedViewer();
   const effect = react.useEffect(() => {
@@ -28,13 +28,13 @@ export default function MessageRequestsScreen(route) {
     const obj2 = { channelId, messageId: ReadStateStore.lastMessageId(channelId) };
     const messages = obj.fetchMessages(obj2);
   }, items);
-  const ChannelContainer = channelId(11010).ChannelContainer;
+  const ChannelContainer = channelId(11098).ChannelContainer;
   if (isMessageRequestRestrictedViewer) {
     const obj3 = { channelId };
-    tmp5Result = tmp5(tmp7(19767), obj3);
+    tmp5Result = tmp5(tmp7(19018), obj3);
   } else {
     const obj4 = { guildId: tmp6, channelId, chatInputRef: ref, HACK_fixModalInteraction: true, screenIndex: "message-request" };
-    tmp5Result = tmp5(tmp7(11976), obj4);
+    tmp5Result = tmp5(tmp7(11741), obj4);
   }
   return <ChannelContainer guildId={ME} channelId={channelId}>{tmp5Result}</ChannelContainer>;
 };

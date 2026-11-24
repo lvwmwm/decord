@@ -1,20 +1,20 @@
-// Module ID: 7226
-// Function ID: 7227
+// Module ID: 6830
+// Function ID: 6831
 // Name: SoundboardActionCreators
-// Dependencies: [5, 6359, 6361, 1072, 1082, 1285, 7227, 572, 7228, 6748, 7229, 1256, 5136, 12, 6258, 1113, 7230, 2]
-// Exports: addFavoriteSound, deleteSound, fetchSoundGuildData, maybeFetchSoundboardSounds, playSoundLocally, removeFavoriteSound, reportSoundFinishedPlaying, reportSoundStartedPlaying, updateSound, updateUserSoundboardVolume, uploadSound
+// Dependencies: [5, 5961, 5963, 1071, 1081, 1284, 6831, 572, 6832, 6350, 6833, 1255, 4743, 12, 5860, 1112, 6834, 2]
+// Exports: addFavoriteSound, deleteSound, fetchSoundGuildData, maybeFetchSoundboardSounds, playSoundLocally, removeFavoriteSound, reportSoundFinishedPlaying, reportSoundStartedPlaying, stopSoundLocally, updateSound, updateUserSoundboardVolume, uploadSound
 
-// Module 7226 (SoundboardActionCreators)
+// Module 6830 (SoundboardActionCreators)
 import _modDef12 from "module_12" /* 12 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import intl3 from "intl" /* 1113 */;
-import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 5136 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6258 */;
-import SoundboardConstants from "SoundboardConstants" /* 6361 */;
+import intl3 from "intl" /* 1112 */;
+import UserSettingsProtoActionCreators from "UserSettingsProtoActionCreators" /* 4743 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5860 */;
+import SoundboardConstants from "SoundboardConstants" /* 5963 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SoundboardStore from "SoundboardStore" /* 6359 */;
-import Constants from "Constants" /* 1072 */;
-import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
+import SoundboardStore from "SoundboardStore" /* 5961 */;
+import Constants from "Constants" /* 1071 */;
+import UserSettingsConstants from "UserSettingsConstants" /* 1081 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -24,7 +24,7 @@ let c9;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-const f93544 = (arg0) => {
+const f89603 = (arg0) => {
   closure_0 = arg0;
   function onSoundboardActionCompleted() {
     const item = closure_0.forEach((item) => {
@@ -137,7 +137,7 @@ function _maybeFetchDefaultSounds() {
     let closure_0 = ["SOUNDBOARD_FETCH_DEFAULT_SOUNDS_SUCCESS", "SOUNDBOARD_FETCH_DEFAULT_SOUNDS_FAILURE"];
     const self = this;
     const self2 = this;
-    const promise = new Promise(f93544);
+    const promise = new Promise(f89603);
     _fetchDefaultSoundsFromApi();
     return promise;
   } else {
@@ -153,7 +153,7 @@ function _maybeFetchGuildSoundboardSounds() {
     _require = ["SOUNDBOARD_SOUNDS_RECEIVED"];
     const self = this;
     const self2 = this;
-    const promise = new Promise(f93544);
+    const promise = new Promise(f89603);
     const obj2 = DispatcherDefault;
     obj2.dispatch({ type: "GUILD_SOUNDBOARD_FETCH" });
     const obj4 = { type: "REQUEST_SOUNDBOARD_SOUNDS", guildIds: guildIdsToFetchSoundsFor };
@@ -556,7 +556,7 @@ export function addFavoriteSound(soundId) {
     obj = _modDef12;
     if (obj.size(soundIds.soundIds) >= metroImportAll) {
       const obj2 = { title: intl.string(intl3.t["+XYXtZ"]), body: intl2.formatToPlainString(intl3.t.JaIyFi, obj3) };
-      const show = tmp(6258).show;
+      const show = tmp(5860).show;
       AlertActionCreatorsDefault;
       intl = intl3.intl;
       intl2 = intl3.intl;
@@ -592,6 +592,11 @@ export function fetchSoundGuildData() {
 export function playSoundLocally(id, sound) {
   obj = DispatcherDefault;
   const obj2 = { type: "GUILD_SOUNDBOARD_SOUND_PLAY_LOCALLY", sound, channelId: id };
+  obj.dispatch(obj2);
+}
+export function stopSoundLocally(current) {
+  obj = DispatcherDefault;
+  const obj2 = { type: "GUILD_SOUNDBOARD_SOUND_STOP_LOCALLY", soundId: current };
   obj.dispatch(obj2);
 }
 export function reportSoundStartedPlaying(soundId, userId) {

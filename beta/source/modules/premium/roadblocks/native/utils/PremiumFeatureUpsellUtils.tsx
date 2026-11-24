@@ -1,15 +1,15 @@
-// Module ID: 11260
-// Function ID: 11261
+// Module ID: 10949
+// Function ID: 10950
 // Name: PremiumFeatureUpsellUtils
-// Dependencies: [1072, 7227, 9037, 1242, 1092, 2]
+// Dependencies: [1071, 6831, 8547, 1241, 1091, 2]
 // Exports: getAnalyticsPage, getUpsellType, isExpressionPickerUpsellFeature, isSoundboardSectionNitroLocked
 
-// Module 11260 (PremiumFeatureUpsellUtils)
-import Constants from "Constants" /* 1072 */;
-import ConstantsIOS from "ConstantsIOS" /* 1092 */;
-import SentryUtilsDefault from "SentryUtils" /* 1242 */;
-import SoundboardTypes from "SoundboardTypes" /* 7227 */;
-import EntitlementFeatureNames from "EntitlementFeatureNames" /* 9037 */;
+// Module 10949 (PremiumFeatureUpsellUtils)
+import Constants from "Constants" /* 1071 */;
+import ConstantsIOS from "ConstantsIOS" /* 1091 */;
+import SentryUtilsDefault from "SentryUtils" /* 1241 */;
+import SoundboardTypes from "SoundboardTypes" /* 6831 */;
+import EntitlementFeatureNames from "EntitlementFeatureNames" /* 8547 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticsPages = Constants.AnalyticsPages;
@@ -46,6 +46,8 @@ export function getAnalyticsPage(featureName) {
     return AnalyticsPages.PREMIUM_UPSELL_STREAM_HIGH_QUALITY;
   } else if (EntitlementFeatureNames.EntitlementFeatureNames.SHOP_MEMBER_PRICING === featureName) {
     return AnalyticsPages.PREMIUM_UPSELL_SHOP_MEMBER_PRICING;
+  } else if (EntitlementFeatureNames.EntitlementFeatureNames.PROFILE_PREMIUM_FEATURES === featureName) {
+    return AnalyticsPages.PREMIUM_UPSELL_PROFILE_CUSTOMIZATION;
   } else {
     const _HermesInternal = HermesInternal;
     const combined = "" + "getAnalyticsPage" + ":" + featureName;
@@ -82,6 +84,8 @@ export function getUpsellType(EMOJIS_EVERYWHERE) {
     return ConstantsIOS.UpsellTypes.STREAM_HIGH_QUALITY;
   } else if (EntitlementFeatureNames.EntitlementFeatureNames.SHOP_MEMBER_PRICING === EMOJIS_EVERYWHERE) {
     return ConstantsIOS.UpsellTypes.SHOP_MEMBER_PRICING;
+  } else if (EntitlementFeatureNames.EntitlementFeatureNames.PROFILE_PREMIUM_FEATURES === EMOJIS_EVERYWHERE) {
+    return ConstantsIOS.UpsellTypes.CUSTOM_PROFILES;
   } else {
     const _HermesInternal = HermesInternal;
     const combined = "" + "getUpsellType" + ":" + EMOJIS_EVERYWHERE;

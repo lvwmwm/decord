@@ -1,16 +1,16 @@
-// Module ID: 18320
-// Function ID: 18321
+// Module ID: 17103
+// Function ID: 17104
 // Name: PasskeyUpsellPromoSheet
-// Dependencies: [19, 1072, 5152, 21, 6010, 18321, 10713, 1113, 1380, 18322, 6941, 5926, 18319, 7775, 8604, 2]
+// Dependencies: [19, 1071, 4759, 21, 5600, 17104, 11225, 1112, 1378, 17105, 6545, 5511, 17102, 7377, 8194, 2]
 // Exports: default
 
-// Module 18320 (PasskeyUpsellPromoSheet)
-import Constants from "Constants" /* 1072 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
-import FastImageDefault from "FastImage" /* 6010 */;
-import NativeCeremoniesDefault from "NativeCeremonies" /* 7775 */;
-import PasskeyUpsellActionCreatorsDefault from "PasskeyUpsellActionCreators" /* 18319 */;
-import PasskeyUpsellManagerDefault from "PasskeyUpsellManager" /* 18322 */;
+// Module 17103 (PasskeyUpsellPromoSheet)
+import Constants from "Constants" /* 1071 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4759 */;
+import FastImageDefault from "FastImage" /* 5600 */;
+import NativeCeremoniesDefault from "NativeCeremonies" /* 7377 */;
+import PasskeyUpsellActionCreatorsDefault from "PasskeyUpsellActionCreators" /* 17102 */;
+import PasskeyUpsellManagerDefault from "PasskeyUpsellManager" /* 17105 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
@@ -62,7 +62,7 @@ export default function PasswordlessUpsellPromoSheet() {
     stringResult = string(t.d6uxJy);
   }
   obj4 = { children: items };
-  ButtonGroup = tmp4(6941).ButtonGroup;
+  ButtonGroup = tmp4(6545).ButtonGroup;
   const obj5 = {
     size: "lg",
     onPress: function registerPasskey() {
@@ -99,8 +99,8 @@ export default function PasswordlessUpsellPromoSheet() {
     },
     text: intl3.string(require("intl").t.NIFmCJ)
   };
-  const Button = tmp4(5926).Button;
-  intl3 = tmp4(1113).intl;
+  const Button = tmp4(5511).Button;
+  intl3 = tmp4(1112).intl;
   items = [tmp(Button, obj5), ];
   const obj6 = {
     size: "lg",
@@ -113,8 +113,8 @@ export default function PasswordlessUpsellPromoSheet() {
     },
     text: intl4.string(require("intl").t["7J6/nG"])
   };
-  const Button2 = tmp4(5926).Button;
-  intl4 = tmp4(1113).intl;
+  const Button2 = tmp4(5511).Button;
+  intl4 = tmp4(1112).intl;
   items[1] = tmp(Button2, obj6);
   return tmp(PromoSheet, obj2);
 };

@@ -1,15 +1,15 @@
-// Module ID: 14636
-// Function ID: 14637
+// Module ID: 12892
+// Function ID: 12893
 // Name: useNativeForumPostContent
-// Dependencies: [1072, 5306, 1113, 7062, 6782, 2]
+// Dependencies: [1071, 4913, 1112, 6666, 6386, 2]
 // Exports: default
 
-// Module 14636 (useNativeForumPostContent)
-import Constants from "Constants" /* 1072 */;
-import intl10 from "intl" /* 1113 */;
-import StickersUtils from "StickersUtils" /* 6782 */;
-import isSystemMessageDefault from "isSystemMessage" /* 7062 */;
-import createStyles from "createStyles" /* 5306 */;
+// Module 12892 (useNativeForumPostContent)
+import Constants from "Constants" /* 1071 */;
+import intl10 from "intl" /* 1112 */;
+import StickersUtils from "StickersUtils" /* 6386 */;
+import isSystemMessageDefault from "isSystemMessage" /* 6666 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const MessageFlags = Constants.MessageFlags;
@@ -73,28 +73,28 @@ export default function useNativeForumPostContent(arg0) {
               } else {
                 const obj5 = StickersUtils;
                 if (obj5.getMessageStickers(message).length > 0) {
-                  const intl5 = tmp27(1113).intl;
-                  stringResult = intl5.string(tmp27(1113).t["7K5Lma"]);
+                  const intl5 = tmp27(1112).intl;
+                  stringResult = intl5.string(tmp27(1112).t["7K5Lma"]);
                 } else {
                   if (null != message.interaction) {
                     if ("" === message.content) {
-                      const intl4 = tmp27(1113).intl;
-                      stringResult = intl4.string(tmp27(1113).t["2v7kfl"]);
+                      const intl4 = tmp27(1112).intl;
+                      stringResult = intl4.string(tmp27(1112).t["2v7kfl"]);
                     }
                   }
                   const tmp14 = MessageFlags;
                   if (message.hasFlag(MessageFlags.IS_VOICE_MESSAGE)) {
-                    const intl3 = tmp27(1113).intl;
-                    stringResult = intl3.string(tmp27(1113).t["6bhHrc"]);
+                    const intl3 = tmp27(1112).intl;
+                    stringResult = intl3.string(tmp27(1112).t["6bhHrc"]);
                   } else if (message.hasFlag(tmp14.IS_COMPONENTS_V2)) {
-                    const intl2 = tmp27(1113).intl;
-                    stringResult = intl2.string(tmp27(1113).t.Xxm5i3);
+                    const intl2 = tmp27(1112).intl;
+                    stringResult = intl2.string(tmp27(1112).t.Xxm5i3);
                   } else {
                     stringResult = null;
                     const tmp15 = message.embeds.length > 0 || message.attachments.length > 0;
                     if (tmp15) {
-                      const intl = tmp27(1113).intl;
-                      stringResult = intl.string(tmp27(1113).t.JAKsM8);
+                      const intl = tmp27(1112).intl;
+                      stringResult = intl.string(tmp27(1112).t.JAKsM8);
                     }
                   }
                 }

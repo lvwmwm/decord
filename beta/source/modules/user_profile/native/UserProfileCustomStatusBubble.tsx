@@ -1,29 +1,29 @@
-// Module ID: 9531
-// Function ID: 9532
+// Module ID: 9051
+// Function ID: 9052
 // Name: UserProfileCustomStatusBubble
-// Dependencies: [32, 19, 17, 7962, 1391, 1083, 21, 1380, 5306, 575, 8263, 5131, 6010, 1414, 5919, 7894, 5892, 8545, 9532, 6051, 5542, 9535, 7937, 1113, 7428, 13468, 2]
+// Dependencies: [32, 19, 17, 7564, 1389, 1082, 21, 1378, 4913, 575, 7865, 4738, 5600, 1412, 5504, 7496, 5477, 8135, 9052, 5643, 5127, 9055, 7539, 1112, 7030, 13000, 2]
 // Exports: default
 
-// Module 9531 (UserProfileCustomStatusBubble)
+// Module 9051 (UserProfileCustomStatusBubble)
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1083 */;
-import EmojiConstants from "EmojiConstants" /* 1391 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import UserSettings from "UserSettings" /* 5131 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import FastImageDefault from "FastImage" /* 6010 */;
-import EmojiDefault from "Emoji" /* 7894 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
-import Constants2 from "Constants" /* 7962 */;
-import inlineStyles from "inlineStyles" /* 8263 */;
-import CustomStatusUtils from "CustomStatusUtils" /* 9535 */;
+import Constants from "Constants" /* 1082 */;
+import EmojiConstants from "EmojiConstants" /* 1389 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
+import UserSettings from "UserSettings" /* 4738 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import FastImageDefault from "FastImage" /* 5600 */;
+import EmojiDefault from "Emoji" /* 7496 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7539 */;
+import Constants2 from "Constants" /* 7564 */;
+import inlineStyles from "inlineStyles" /* 7865 */;
+import CustomStatusUtils from "CustomStatusUtils" /* 9055 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

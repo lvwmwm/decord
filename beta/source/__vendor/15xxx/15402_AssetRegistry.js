@@ -1,10 +1,10 @@
 // Module ID: 15402
 // Function ID: 15403
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 15402 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/premium/guild_boosting/perks", width: 20, height: 20, scales: [2, 3], hash: "fb3286cfe401333b68936fe15653c8b9", name: "role", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/status", width: 16, height: 16, scales: [2, 3], hash: "89ef758cad16b0f89bf10bf57ab078db", name: "StatusDND", type: "png" });

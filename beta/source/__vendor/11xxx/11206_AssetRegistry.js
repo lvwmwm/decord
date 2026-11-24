@@ -1,10 +1,10 @@
 // Module ID: 11206
 // Function ID: 11207
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 11206 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_identity/images", width: 295, height: 190, scales: [2, 3], hash: "977038e35a08043eb799ac3c20093988", name: "guild_identity_education_dark", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 32, scales: [1, 2, 3], hash: "2650502107a79cae01df0fa151a7570a", name: "ic_file_small_video", type: "png" });

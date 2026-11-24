@@ -1,10 +1,10 @@
 // Module ID: 3865
 // Function ID: 3866
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 3865 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9wcmVtaXVtL2JmX2RlYWxz", scales: [1], hash: "0ef0a686e5b7951f641915ad68fe3179", name: "tr.messages.0ef0a686e5b7951f641915ad68fe3179.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/call_of_duty_3pp", scales: [1], hash: "11d34bfaf58dae63618b0f9e7cb2f98a", name: "CallOfDuty3PP.compiled.messages", type: "jsona" });

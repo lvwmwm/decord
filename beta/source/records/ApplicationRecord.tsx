@@ -1,18 +1,19 @@
-// Module ID: 2143
-// Function ID: 2144
+// Module ID: 2142
+// Function ID: 2143
 // Name: ApplicationRecord
-// Dependencies: [1408, 2144, 1407, 2145, 1365, 1084, 2149, 1414, 2150, 11, 2151, 2]
+// Dependencies: [1406, 2143, 1405, 2144, 1363, 1083, 2148, 1412, 2149, 11, 2150, 2]
+// Exports: createExecutable
 
-// Module 2143 (ApplicationRecord)
+// Module 2142 (ApplicationRecord)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
-import ApplicationConstants from "ApplicationConstants" /* 1365 */;
-import AvatarUtilsDefault from "AvatarUtils" /* 1414 */;
-import ApplicationOverlayMethodFlags from "ApplicationOverlayMethodFlags" /* 2150 */;
-import Record from "Record" /* 1408 */;
-import CompanyRecord from "CompanyRecord" /* 2144 */;
-import UserRecord from "UserRecord" /* 1407 */;
-import Constants from "Constants" /* 2145 */;
+import BigFlagUtilsAll from "BigFlagUtils" /* 1083 */;
+import ApplicationConstants from "ApplicationConstants" /* 1363 */;
+import AvatarUtilsDefault from "AvatarUtils" /* 1412 */;
+import ApplicationOverlayMethodFlags from "ApplicationOverlayMethodFlags" /* 2149 */;
+import Record from "Record" /* 1406 */;
+import CompanyRecord from "CompanyRecord" /* 2143 */;
+import UserRecord from "UserRecord" /* 1405 */;
+import Constants from "Constants" /* 2144 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -20,34 +21,14 @@ let application;
 
 let END_GAME_APPLICATION_ID;
 let POKER_NIGHT_APPLICATION_ID;
-function createExecutable(os) {
-  const obj = { os: os.os, name: os.name };
-  if (null != os.arguments) {
-    obj.arguments = os.arguments;
-  }
-  let isLauncher = os.is_launcher;
-  if (isLauncher == null) {
-    isLauncher = os.isLauncher;
-  }
-  if (null != isLauncher) {
-    obj.isLauncher = isLauncher;
-  }
-  return obj;
-}
 ({ END_GAME_APPLICATION_ID, POKER_NIGHT_APPLICATION_ID } = Constants);
 const ApplicationTypes = ApplicationConstants.ApplicationTypes;
 const metroImportDefault = { [POKER_NIGHT_APPLICATION_ID]: 7, [END_GAME_APPLICATION_ID]: 12 };
 class BasicApplicationRecord extends Record {
   constructor(isMonetized) {
     let is_monetized;
-    let thirdPartySkus;
     const tmp3 = new BasicApplicationRecord(tmp2, new.target, this, tmp, isMonetized, BasicApplicationRecord);
-    ({ id: tmp3.id, name: tmp3.name, icon: tmp3.icon, splash: tmp3.splash, primarySkuId: tmp3.primarySkuId, thirdPartySkus } = isMonetized);
-    if (thirdPartySkus == null) {
-      thirdPartySkus = [];
-    }
-    tmp3.thirdPartySkus = thirdPartySkus;
-    ({ description: tmp3.description, bot: tmp3.bot, coverImage: tmp3.coverImage, type: tmp3.type, is_monetized } = isMonetized);
+    ({ id: tmp3.id, name: tmp3.name, icon: tmp3.icon, splash: tmp3.splash, primarySkuId: tmp3.primarySkuId, description: tmp3.description, bot: tmp3.bot, coverImage: tmp3.coverImage, type: tmp3.type, is_monetized } = isMonetized);
     if (is_monetized == null) {
       is_monetized = isMonetized.isMonetized;
     }
@@ -100,7 +81,7 @@ class BasicApplicationRecord extends Record {
       const self2 = this;
       tmp3 = new UserRecord(bot.bot);
     }
-    ({ third_party_skus: obj.thirdPartySkus, role_connections_verification_url: obj.roleConnectionsVerificationUrl, parent_id: obj.parentId, connection_entrypoint_url: obj._connectionEntrypointUrl, content_classification: obj.contentClassification } = bot);
+    ({ role_connections_verification_url: obj.roleConnectionsVerificationUrl, parent_id: obj.parentId, connection_entrypoint_url: obj._connectionEntrypointUrl, content_classification: obj.contentClassification } = bot);
     num = bot.flags_new;
     deserialize = BigFlagUtilsAll.deserialize;
     BigFlagUtilsAll;
@@ -167,7 +148,7 @@ Object.defineProperty(BasicApplicationRecord.prototype, "connectionEntrypointUrl
 class ApplicationRecord extends BasicApplicationRecord {
   constructor(nextResult) {
     let embedded_activity_config;
-    let executables;
+    let hashes;
     let is_discoverable;
     let linked_games;
     let tags;
@@ -212,12 +193,7 @@ class ApplicationRecord extends BasicApplicationRecord {
       developers = [];
     }
     tmp2.developers = developers;
-    ({ storeListingSkuId: tmp2.storeListingSkuId, guildId: tmp2.guildId, guild: tmp2.guild, executables } = nextResult);
-    if (executables == null) {
-      executables = [];
-    }
-    tmp2.executables = executables.map(createExecutable);
-    let hashes = nextResult.hashes;
+    ({ storeListingSkuId: tmp2.storeListingSkuId, guildId: tmp2.guildId, guild: tmp2.guild, hashes } = nextResult);
     if (hashes == null) {
       hashes = [];
     }
@@ -317,7 +293,7 @@ class ApplicationRecord extends BasicApplicationRecord {
       const self2 = this;
       tmp3 = new UserRecord(bot.bot);
     }
-    ({ third_party_skus: obj.thirdPartySkus, role_connections_verification_url: obj.roleConnectionsVerificationUrl, overlay_warn: obj.overlayWarn, overlay_compatibility_hook: obj.overlayCompatibilityHook, overlay_methods } = bot);
+    ({ role_connections_verification_url: obj.roleConnectionsVerificationUrl, overlay_warn: obj.overlayWarn, overlay_compatibility_hook: obj.overlayCompatibilityHook, overlay_methods } = bot);
     if (overlay_methods == null) {
       overlay_methods = ApplicationOverlayMethodFlags.ApplicationOverlayMethodFlags.DEFAULT;
     }
@@ -424,7 +400,6 @@ class ApplicationRecord extends BasicApplicationRecord {
     let embeddedActivityConfig;
     let embeddedSurfaces;
     let eulaId;
-    let executables;
     let flags;
     let guild;
     let guildId;
@@ -454,7 +429,6 @@ class ApplicationRecord extends BasicApplicationRecord {
     let tags;
     let team;
     let termsOfServiceUrl;
-    let thirdPartySkus;
     let tmp5;
     let type;
     const self = this;
@@ -463,7 +437,7 @@ class ApplicationRecord extends BasicApplicationRecord {
     if (id == null) {
       id = self.id;
     }
-    let obj = { id, name, icon, splash, overlay, overlayWarn, overlayCompatibilityHook, overlayMethods, hook, aliases, publishers, developers, primarySkuId, storeListingSkuId, thirdPartySkus, guildId, guild, executables, hashes, description, eulaId, slug, coverImage, bot, flags, maxParticipants, tags, embeddedActivityConfig, embeddedSurfaces, type, team, roleConnectionsVerificationUrl, _connectionEntrypointUrl, integrationTypesConfig, isMonetized, storefront_available, termsOfServiceUrl, privacyPolicyUrl, isVerified, customInstallUrl, installParams, isDiscoverable, directoryEntry, categories, linkedGames: tmp5, deepLinkUri, applicationAccountLinkBenefitConfig, conjureProjectId, contentClassification, parentId };
+    let obj = { id, name, icon, splash, overlay, overlayWarn, overlayCompatibilityHook, overlayMethods, hook, aliases, publishers, developers, primarySkuId, storeListingSkuId, guildId, guild, hashes, description, eulaId, slug, coverImage, bot, flags, maxParticipants, tags, embeddedActivityConfig, embeddedSurfaces, type, team, roleConnectionsVerificationUrl, _connectionEntrypointUrl, integrationTypesConfig, isMonetized, storefront_available, termsOfServiceUrl, privacyPolicyUrl, isVerified, customInstallUrl, installParams, isDiscoverable, directoryEntry, categories, linkedGames: tmp5, deepLinkUri, applicationAccountLinkBenefitConfig, conjureProjectId, contentClassification, parentId };
     name = id.name;
     if (name == null) {
       name = self.name;
@@ -516,10 +490,6 @@ class ApplicationRecord extends BasicApplicationRecord {
     if (storeListingSkuId == null) {
       storeListingSkuId = self.storeListingSkuId;
     }
-    thirdPartySkus = id.thirdPartySkus;
-    if (thirdPartySkus == null) {
-      thirdPartySkus = self.thirdPartySkus;
-    }
     guildId = id.guildId;
     if (guildId == null) {
       guildId = self.guildId;
@@ -527,10 +497,6 @@ class ApplicationRecord extends BasicApplicationRecord {
     guild = id.guild;
     if (guild == null) {
       guild = self.guild;
-    }
-    executables = id.executables;
-    if (executables == null) {
-      executables = self.executables;
     }
     hashes = id.hashes;
     if (hashes == null) {
@@ -741,5 +707,18 @@ Object.defineProperty(prototype, "supportsOutOfProcessOverlay", {
 const result = size.fileFinishedImporting("records/ApplicationRecord.tsx");
 
 export default ApplicationRecord;
-export { createExecutable };
+export function createExecutable(os) {
+  const obj = { os: os.os, name: os.name };
+  if (null != os.arguments) {
+    obj.arguments = os.arguments;
+  }
+  let isLauncher = os.is_launcher;
+  if (isLauncher == null) {
+    isLauncher = os.isLauncher;
+  }
+  if (null != isLauncher) {
+    obj.isLauncher = isLauncher;
+  }
+  return obj;
+}
 export { BasicApplicationRecord };

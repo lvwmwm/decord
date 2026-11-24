@@ -1,17 +1,17 @@
-// Module ID: 20015
-// Function ID: 20016
+// Module ID: 19272
+// Function ID: 19273
 // Name: StreamVolumeMovedHint
-// Dependencies: [19, 17, 15765, 21, 5306, 575, 1655, 1113, 5315, 5919, 2]
+// Dependencies: [19, 17, 14504, 21, 4913, 575, 1653, 1112, 4922, 5504, 2]
 // Exports: default
 
-// Module 20015 (StreamVolumeMovedHint)
+// Module 19272 (StreamVolumeMovedHint)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5315 */;
-import StreamVolumeMovedStore2 from "StreamVolumeMovedStore" /* 15765 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4922 */;
+import StreamVolumeMovedStore2 from "StreamVolumeMovedStore" /* 14504 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const StreamVolumeMovedStore = StreamVolumeMovedStore2;
@@ -43,9 +43,9 @@ export default function StreamVolumeMovedHint(streamKey) {
   const longPressProgress = streamKey.longPressProgress;
   let tmp = closure_8();
   let items = [closure_9, , , ];
-  const useAnimatedStyle = streamKey(1655).useAnimatedStyle;
-  const tmp4 = streamKey(1655);
-  items[1] = streamKey(1655).interpolate;
+  const useAnimatedStyle = streamKey(1653).useAnimatedStyle;
+  const tmp4 = streamKey(1653);
+  items[1] = streamKey(1653).interpolate;
   items[2] = longPressProgress;
   items[3] = 0.9;
   let c0;
@@ -69,8 +69,8 @@ export default function StreamVolumeMovedHint(streamKey) {
   StreamVolumeMovedHintTsx1.__initData = tmp5;
   const animatedStyle = useAnimatedStyle(StreamVolumeMovedHintTsx1);
   state = StreamVolumeMovedStore.useState((hintStreamKey) => hintStreamKey.hintStreamKey === streamKey);
-  const intl = tmp2(1113).intl;
-  const stringResult = intl.string(streamKey(1113).t["6nKlgr"]);
+  const intl = tmp2(1112).intl;
+  const stringResult = intl.string(streamKey(1112).t["6nKlgr"]);
   dependencyMap = stringResult;
   const items2 = [streamKey];
   const effect = react.useEffect(() => () => closure_2_6(streamKey), items2);
@@ -86,7 +86,7 @@ export default function StreamVolumeMovedHint(streamKey) {
   if (state) {
     let obj2 = { style: items4, children: null };
     items4 = [tmp.pill, animatedStyle];
-    View = state(1655).View;
+    View = state(1653).View;
     tmp14 = <View style={tmp.container} pointerEvents="none">{null}</View>;
   }
   return tmp14;

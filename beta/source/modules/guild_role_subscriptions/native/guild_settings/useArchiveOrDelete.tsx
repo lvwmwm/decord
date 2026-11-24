@@ -1,13 +1,13 @@
-// Module ID: 20742
-// Function ID: 20743
+// Module ID: 20012
+// Function ID: 20013
 // Name: useArchiveOrDelete
-// Dependencies: [5, 32, 19, 17835, 17848, 1113, 6259, 1187, 38, 6004, 2]
+// Dependencies: [5, 32, 19, 16615, 16628, 1112, 5861, 1186, 38, 5594, 2]
 // Exports: default
 
-// Module 20742 (useArchiveOrDelete)
-import intl13 from "intl" /* 1113 */;
-import ToastUtilsAll from "ToastUtils" /* 6004 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17848 */;
+// Module 20012 (useArchiveOrDelete)
+import intl13 from "intl" /* 1112 */;
+import ToastUtilsAll from "ToastUtils" /* 5594 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16628 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
@@ -167,19 +167,19 @@ export default function useArchiveOrDelete(guildId, groupListingId, editStateId,
     let stringResult1;
     let closure_6;
     if (!tmp9) {
-      let intl = tmp(1113).intl;
+      let intl = tmp(1112).intl;
       let obj6 = { tierName: first };
-      formatToPlainStringResult = intl.formatToPlainString(tmp(1113).t.OuuIOY, obj6);
-      const intl2 = tmp(1113).intl;
-      stringResult = intl2.string(tmp(1113).t.RL0wjm);
-      const intl3 = tmp(1113).intl;
-      stringResult1 = intl3.string(tmp(1113).t["5/Jeg2"]);
-      const intl4 = tmp(1113).intl;
-      let closure_4 = intl4.string(tmp(1113).t.N5AIuE);
-      const intl5 = tmp(1113).intl;
-      _slicedToArray = intl5.string(tmp(1113).t.TEKiiP);
-      const intl6 = tmp(1113).intl;
-      closure_6 = intl6.string(tmp(1113).t["170XOL"]);
+      formatToPlainStringResult = intl.formatToPlainString(tmp(1112).t.OuuIOY, obj6);
+      const intl2 = tmp(1112).intl;
+      stringResult = intl2.string(tmp(1112).t.RL0wjm);
+      const intl3 = tmp(1112).intl;
+      stringResult1 = intl3.string(tmp(1112).t["5/Jeg2"]);
+      const intl4 = tmp(1112).intl;
+      let closure_4 = intl4.string(tmp(1112).t.N5AIuE);
+      const intl5 = tmp(1112).intl;
+      _slicedToArray = intl5.string(tmp(1112).t.TEKiiP);
+      const intl6 = tmp(1112).intl;
+      closure_6 = intl6.string(tmp(1112).t["170XOL"]);
     }
     const items = [error];
     closure_6(() => {
@@ -208,24 +208,24 @@ export default function useArchiveOrDelete(guildId, groupListingId, editStateId,
     };
     return obj7;
   }
-  const intl7 = tmp(1113).intl;
-  const formatToPlainStringResult1 = intl7.formatToPlainString(tmp(1113).t.x2qwWL, { tierName: first });
-  const intl8 = tmp(1113).intl;
-  const stringResult2 = intl8.string(tmp(1113).t.GMtG6p);
-  const intl9 = tmp(1113).intl;
+  const intl7 = tmp(1112).intl;
+  const formatToPlainStringResult1 = intl7.formatToPlainString(tmp(1112).t.x2qwWL, { tierName: first });
+  const intl8 = tmp(1112).intl;
+  const stringResult2 = intl8.string(tmp(1112).t.GMtG6p);
+  const intl9 = tmp(1112).intl;
   const string = intl9.string;
-  const t = tmp(1113).t;
+  const t = tmp(1112).t;
   if (tmp9) {
     stringResult3 = string(t.DHWKJS);
   } else {
     stringResult3 = string(t.Y4KjUN);
   }
-  const intl10 = tmp(1113).intl;
-  closure_4 = intl10.string(tmp(1113).t["4H6RLl"]);
-  const intl11 = tmp(1113).intl;
-  _slicedToArray = intl11.string(tmp(1113).t.uG6b1w);
-  const intl12 = tmp(1113).intl;
-  closure_6 = intl12.string(tmp(1113).t.JoCdPC);
+  const intl10 = tmp(1112).intl;
+  closure_4 = intl10.string(tmp(1112).t["4H6RLl"]);
+  const intl11 = tmp(1112).intl;
+  _slicedToArray = intl11.string(tmp(1112).t.uG6b1w);
+  const intl12 = tmp(1112).intl;
+  closure_6 = intl12.string(tmp(1112).t.JoCdPC);
   stringResult1 = stringResult3;
   stringResult = stringResult2;
   formatToPlainStringResult = formatToPlainStringResult1;

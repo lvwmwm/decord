@@ -1,12 +1,11 @@
 // Module ID: 11481
 // Function ID: 11482
-// Dependencies: [41, 42, 93, 95, 98, 11429, 11475, 11430, 11436]
+// Dependencies: [41, 42, 93, 95, 98, 11477, 11418, 11422]
 
 // Module 11481
-import repeatedTimeunitPattern from "repeatedTimeunitPattern" /* 11429 */;
-import findMostLikelyADYear from "findMostLikelyADYear" /* 11430 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 11436 */;
-import _mod11475 from "module_11475" /* 11475 */;
+import ReferenceWithTimezone from "ReferenceWithTimezone" /* 11418 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 11422 */;
+import _mod11477 from "module_11477" /* 11477 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
@@ -28,14 +27,12 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-const matchAnyPatternResult = repeatedTimeunitPattern.matchAnyPattern(_mod11475.MONTH_DICTIONARY);
-const regExp = new RegExp("(?:am\\s*?)?(?:den\\s*?)?([0-9]{1,2})\\.(?:\\s*(?:bis(?:\\s*(?:am|zum))?|\\-|\\\u2013|\\s)\\s*([0-9]{1,2})\\.?)?\\s*(" + matchAnyPatternResult + ")(?:(?:-|/|,?\\s*)(" + _mod11475.YEAR_PATTERN + "(?![^\\s]\\d)))?(?=\\W|$)", "i");
-class DEMonthNameLittleEndianParser {
+class FRTimeUnitWithinFormatParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, DEMonthNameLittleEndianParser);
-    const obj = _getPrototypeOf(DEMonthNameLittleEndianParser);
+    _classCallCheck(this, FRTimeUnitWithinFormatParser);
+    const obj = _getPrototypeOf(FRTimeUnitWithinFormatParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
@@ -47,10 +44,11 @@ class DEMonthNameLittleEndianParser {
     return tmp3(self, constructResult);
   }
 }
-_inherits(DEMonthNameLittleEndianParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(FRTimeUnitWithinFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
   key: "innerPattern",
   value: function innerPattern() {
+    const regExp = new RegExp("(?:dans|en|pour|pendant|de)\\s*(" + _mod11477.TIME_UNITS_PATTERN + ")(?=\\W|$)", "i");
     return regExp;
   }
 };
@@ -58,37 +56,12 @@ const items = [
   entry,
   {
     key: "innerExtract",
-    value: function innerExtract(createParsingResult, index) {
-      const parsingResult = createParsingResult.createParsingResult(index.index, index[0]);
-      const tmp4 = _mod11475.MONTH_DICTIONARY[index[3].toLowerCase(index[3])];
-      const parsed = parseInt(index[1]);
-      if (parsed > 31) {
-        index.index = index.index + index[1].length;
-        return null;
-      } else {
-        const start4 = parsingResult.start;
-        start4.assign("month", tmp4);
-        const start5 = parsingResult.start;
-        start5.assign("day", parsed);
-        if (index[4]) {
-          const start2 = parsingResult.start;
-          start2.assign("year", _mod11475.parseYear(index[4]));
-        } else {
-          const start = parsingResult.start;
-          start.imply("year", findMostLikelyADYear.findYearClosestToRef(createParsingResult.refDate, parsed, tmp4));
-        }
-        if (index[2]) {
-          const _parseInt = parseInt;
-          const start3 = parsingResult.start;
-          const parsed1 = parseInt(index[2]);
-          parsingResult.end = start3.clone();
-          const end = parsingResult.end;
-          end.assign("day", parsed1);
-        }
-        return parsingResult;
-      }
+    value: function innerExtract(reference, arg1) {
+      const parseDurationResult = _mod11477.parseDuration(arg1[1]);
+      const ParsingComponents = ReferenceWithTimezone.ParsingComponents;
+      return ParsingComponents.createRelativeFromReference(reference.reference, parseDurationResult);
     }
   }
 ];
 
-export default _createClass(DEMonthNameLittleEndianParser, items);
+export default _createClass(FRTimeUnitWithinFormatParser, items);

@@ -1,52 +1,71 @@
 // Module ID: 11463
 // Function ID: 11464
-// Dependencies: [41, 42, 11428]
+// Dependencies: [41, 42, 93, 95, 98, 11433]
 
 // Module 11463
-import _mod11428 from "module_11428" /* 11428 */;
+import _mod11433 from "module_11433" /* 11433 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
+import map from "_possibleConstructorReturn" /* 93 */;
+import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
+import _inherits from "_inherits" /* 98 */;
 
-let start;
+function _isNativeReflectConstruct() {
+  try {
+    const _Boolean = Boolean;
+    const _Reflect = Reflect;
+    const _Boolean2 = Boolean;
+    let closure_0 = !valueOf.call(Reflect.construct(Boolean, [], () => {
 
-const regExp = new RegExp("^\\s*(" + _mod11428.YEAR_PATTERN + ")", "i");
-class ENExtractYearSuffixRefiner {
-  constructor() {
-    _classCallCheck(this, ENExtractYearSuffixRefiner);
+    }));
+    _isNativeReflectConstruct = function _isNativeReflectConstruct() {
+      return closure_0;
+    };
+    return _isNativeReflectConstruct();
+  } catch (err) {
   }
 }
+let fn = this;
+if (this) {
+  fn = this.__importDefault;
+}
+if (!fn) {
+  fn = (__esModule) => {
+    let tmp2;
+    const tmp = __esModule;
+    if (!tmp) {
+      tmp2 = { default: __esModule };
+      const obj = { default: __esModule };
+    } else {
+      tmp2 = __esModule;
+    }
+    return tmp2;
+  };
+}
+class DEMergeDateRangeRefiner {
+  constructor() {
+    let constructResult;
+    const self = this;
+    _classCallCheck(this, DEMergeDateRangeRefiner);
+    const obj = _getPrototypeOf(DEMergeDateRangeRefiner);
+    const tmp2 = _getPrototypeOf;
+    const tmp3 = map;
+    if (_isNativeReflectConstruct()) {
+      const _Reflect = Reflect;
+      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+    } else {
+      constructResult = obj(...arguments);
+    }
+    return tmp3(self, constructResult);
+  }
+}
+_inherits(DEMergeDateRangeRefiner, fn(_mod11433).default);
 const entry = {
-  key: "refine",
-  value: function refine(arg0, arr) {
-    let text = arg0;
-    const item = arr.forEach((start) => {
-      text = start;
-      start = start.start;
-      if (start.isDateWithUnknownYear()) {
-        const str = text.text;
-        const match = regExp.exec(str.substring(start.index + start.text.length));
-        const obj = text;
-        if (match) {
-          const str2 = match[0];
-          if (str2.trim().length > 3) {
-            obj.debug(() => {
-              console.log("Extracting year: '" + match[0] + "' into : " + closure_0);
-            });
-            const parseYearResult = _mod11428.parseYear(match[1]);
-            if (null != start.end) {
-              const end = start.end;
-              end.assign("year", parseYearResult);
-            }
-            const start2 = start.start;
-            start2.assign("year", parseYearResult);
-            start.text = start.text + match[0];
-          }
-        }
-      }
-    });
-    return arr;
+  key: "patternBetween",
+  value: function patternBetween() {
+    return /^\s*(bis(?:\s*(?:am|zum))?|-)\s*$/i;
   }
 };
 const items = [entry];
 
-export default _createClass(ENExtractYearSuffixRefiner, items);
+export default _createClass(DEMergeDateRangeRefiner, items);

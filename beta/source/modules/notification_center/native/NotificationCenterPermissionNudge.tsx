@@ -1,21 +1,21 @@
-// Module ID: 19245
-// Function ID: 19246
+// Module ID: 18047
+// Function ID: 18048
 // Name: NotificationCenterPermissionNudge
-// Dependencies: [32, 19, 17, 1072, 5152, 14828, 21, 5306, 575, 1256, 10994, 5919, 1113, 5926, 14829, 7428, 7549, 18110, 9560, 5139, 2]
+// Dependencies: [32, 19, 17, 1071, 4759, 13280, 21, 4913, 575, 1255, 10364, 5504, 1112, 5511, 13281, 7030, 7151, 16889, 9080, 4746, 2]
 // Exports: default
 
-// Module 19245 (NotificationCenterPermissionNudge)
+// Module 18047 (NotificationCenterPermissionNudge)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
-import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 18110 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4759 */;
+import ContextualOptInNudgeHoldoutExperimentDefault from "ContextualOptInNudgeHoldoutExperiment" /* 16889 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 1072 */;
-import NotificationPermissionConstants from "NotificationPermissionConstants" /* 14828 */;
+import Constants from "Constants" /* 1071 */;
+import NotificationPermissionConstants from "NotificationPermissionConstants" /* 13280 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -58,23 +58,23 @@ function NotificationCenterBannerImpl(onDismiss) {
   let obj = { style: tmp.container, children: items };
   let obj2 = { style: tmp.iconContainer, children: closure_14(BellSlashIcon, obj3) };
   obj3 = { size: "md", color: nativeDefault.colors.ICON_STRONG };
-  BellSlashIcon = onDismiss(10994).BellSlashIcon;
+  BellSlashIcon = onDismiss(10364).BellSlashIcon;
   items = [closure_14(View, obj2), , ];
   const obj4 = { style: tmp.contentContainer, children: items1 };
-  const obj5 = { variant: "body-md/semibold", color: "text-default", children: intl.string(onDismiss(1113).t.G6YBna) };
-  const Text = onDismiss(5919).Text;
-  intl = onDismiss(1113).intl;
+  const obj5 = { variant: "body-md/semibold", color: "text-default", children: intl.string(onDismiss(1112).t.G6YBna) };
+  const Text = onDismiss(5504).Text;
+  intl = onDismiss(1112).intl;
   items1 = [closure_14(Text, obj5), , ];
-  const obj6 = { variant: "body-md/medium", color: "text-muted", style: obj7, children: intl2.string(onDismiss(1113).t["9CoPDE"]) };
+  const obj6 = { variant: "body-md/medium", color: "text-muted", style: obj7, children: intl2.string(onDismiss(1112).t["9CoPDE"]) };
   obj7 = { marginTop: nativeDefault.space.PX_4 };
-  const Text2 = onDismiss(5919).Text;
-  intl2 = onDismiss(1113).intl;
+  const Text2 = onDismiss(5504).Text;
+  intl2 = onDismiss(1112).intl;
   items1[1] = closure_14(Text2, obj6);
   const obj8 = { style: tmp.ctaButton, children: closure_14(Button, obj9) };
   obj9 = {
     variant: "primary",
     size: "md",
-    text: intl3.string(onDismiss(1113).t.a4bgO0),
+    text: intl3.string(onDismiss(1112).t.a4bgO0),
     onPress: function handlePress() {
       const obj = onDismiss(dependencyMap[14]);
       const pushNotificationPermission = obj.requestPushNotificationPermission(constants2.ALLOW_TO_REQUEST, constants3.NOTIFICATION_CENTER, closure_1_8);
@@ -83,8 +83,8 @@ function NotificationCenterBannerImpl(onDismiss) {
       obj2.track(constants.CONTEXTUAL_REMINDER_ACTION, obj3);
     }
   };
-  Button = onDismiss(5926).Button;
-  intl3 = onDismiss(1113).intl;
+  Button = onDismiss(5511).Button;
+  intl3 = onDismiss(1112).intl;
   items1[2] = closure_14(View, obj8);
   items[1] = closure_15(View, obj4);
   const obj10 = {
@@ -96,11 +96,11 @@ function NotificationCenterBannerImpl(onDismiss) {
     },
     hitSlop: 8,
     accessibilityRole: "button",
-    accessibilityLabel: intl4.string(onDismiss(1113).t.WAI6xu),
-    children: closure_14(onDismiss(7549).XSmallIcon, { size: "sm", color: "icon-strong" })
+    accessibilityLabel: intl4.string(onDismiss(1112).t.WAI6xu),
+    children: closure_14(onDismiss(7151).XSmallIcon, { size: "sm", color: "icon-strong" })
   };
-  const PressableHighlight = onDismiss(7428).PressableHighlight;
-  intl4 = onDismiss(1113).intl;
+  const PressableHighlight = onDismiss(7030).PressableHighlight;
+  intl4 = onDismiss(1112).intl;
   items[2] = closure_14(PressableHighlight, obj10);
   return closure_15(View, obj);
 }
@@ -132,7 +132,7 @@ export default function NotificationCenterPermissionNudge() {
   if (!inHoldout) {
     prop = null;
     if (canSeePushNotificationNudge) {
-      prop = tmp2(5139).DismissibleContent.NOTIFICATION_NUDGE_NOTIFICATION_CENTER_BANNER;
+      prop = tmp2(4746).DismissibleContent.NOTIFICATION_NUDGE_NOTIFICATION_CENTER_BANNER;
     }
   }
   const tmp6 = _slicedToArray(useSelectedTimeRecurringDismissibleContent(prop, { cooldownDurationMs: 604800000 }), 2);

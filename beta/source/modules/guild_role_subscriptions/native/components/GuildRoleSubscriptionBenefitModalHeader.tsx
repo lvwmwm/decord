@@ -1,22 +1,22 @@
-// Module ID: 20760
-// Function ID: 20761
+// Module ID: 20030
+// Function ID: 20031
 // Name: GuildRoleSubscriptionBenefitModalHeader
-// Dependencies: [32, 19, 17, 21, 5306, 575, 17848, 7415, 8451, 5919, 1113, 7493, 2]
+// Dependencies: [32, 19, 17, 21, 4913, 575, 16628, 7017, 8042, 5504, 1112, 7095, 2]
 // Exports: default
 
-// Module 20760 (GuildRoleSubscriptionBenefitModalHeader)
+// Module 20030 (GuildRoleSubscriptionBenefitModalHeader)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl3 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7415 */;
-import NavigatorHeader from "NavigatorHeader" /* 7493 */;
-import TouchableHitBoxDefault from "TouchableHitBox" /* 8451 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17848 */;
+import intl3 from "intl" /* 1112 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7017 */;
+import NavigatorHeader from "NavigatorHeader" /* 7095 */;
+import TouchableHitBoxDefault from "TouchableHitBox" /* 8042 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16628 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -71,7 +71,7 @@ export default function GuildRoleSubscriptionBenefitModalHeader(canSave) {
     str = "interactive-text-active";
   }
   obj7 = { variant: "body-md/medium", color: str, children: intl2.string(intl3.t["R3BPH+"]) };
-  intl2 = tmp5(1113).intl;
+  intl2 = tmp5(1112).intl;
   items1[2] = metroRequire(tmp8, obj6);
   return tmp4(SafeAreaPaddingView, obj2);
 };

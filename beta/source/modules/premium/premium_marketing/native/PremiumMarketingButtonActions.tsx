@@ -1,22 +1,25 @@
-// Module ID: 10016
-// Function ID: 10017
+// Module ID: 9406
+// Function ID: 9407
 // Name: PremiumMarketingButtonActions
-// Dependencies: [9623, 1390, 1072, 9632, 10017, 9590, 8580, 10019, 7937, 8484, 8604, 2]
+// Dependencies: [9143, 1388, 1071, 9152, 9407, 9110, 8170, 9409, 9465, 7539, 8074, 8194, 2]
 // Exports: getButtonActionHandler
 
-// Module 10016 (PremiumMarketingButtonActions)
-import PremiumConstants from "PremiumConstants" /* 1390 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
-import CollectiblesActionCreators from "CollectiblesActionCreators" /* 8484 */;
-import ProductIds from "ProductIds" /* 8580 */;
-import openUserSettings from "openUserSettings" /* 8604 */;
-import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 9590 */;
-import cta_button from "cta_button" /* 9632 */;
-import navigateToSocialLayerStorefrontDefault from "navigateToSocialLayerStorefront" /* 10017 */;
-import showMarketingMomentRewardScreen from "showMarketingMomentRewardScreen" /* 10019 */;
-import PromotionsStore from "PromotionsStore" /* 9623 */;
-import Constants from "Constants" /* 1072 */;
+// Module 9406 (PremiumMarketingButtonActions)
+import PremiumConstants from "PremiumConstants" /* 1388 */;
+import AnalyticsLocationDefault from "AnalyticsLocation" /* 7539 */;
+import CollectiblesActionCreators from "CollectiblesActionCreators" /* 8074 */;
+import ProductIds from "ProductIds" /* 8170 */;
+import openUserSettings from "openUserSettings" /* 8194 */;
+import openPremiumPlanSelectionActionSheetDefault from "openPremiumPlanSelectionActionSheet" /* 9110 */;
+import cta_button from "cta_button" /* 9152 */;
+import navigateToSocialLayerStorefrontDefault from "navigateToSocialLayerStorefront" /* 9407 */;
+import showMarketingMomentRewardScreen from "showMarketingMomentRewardScreen" /* 9409 */;
+import utils_openGiftModal from "utils/openGiftModal" /* 9465 */;
+import PromotionsStore from "PromotionsStore" /* 9143 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
+
+let TIER_2, constants;
 
 let hasOwnProperty;
 let metroImportAll;
@@ -26,17 +29,18 @@ const PremiumTypes = PremiumConstants.PremiumTypes;
 ({ AnalyticsSections: hasOwnProperty, AnalyticsObjects: metroRequire, AnalyticsObjectTypes: metroImportDefault, UserSettingsSections: metroImportAll } = Constants);
 let result = size.fileFinishedImporting("modules/premium/premium_marketing/native/PremiumMarketingButtonActions.tsx");
 
-export function getButtonActionHandler(arg0) {
-  let TIER_2;
+export function getButtonActionHandler(giftModalDestination) {
   let analyticsLocations;
   let buttonAction;
   let closure_5;
   let onPaymentDismiss;
   let onPaymentSuccess;
   let page;
-  ({ buttonAction, applicationId: require, shopCollectionId: importDefault, analyticsLocations: dependencyMap, analyticsPage: PromotionsStore, onPaymentSuccess: PremiumTypes, onPaymentDismiss: closure_5 } = arg0);
+  ({ buttonAction, applicationId: require, shopCollectionId: importDefault, analyticsLocations: dependencyMap, analyticsPage: PromotionsStore, onPaymentSuccess: PremiumTypes, onPaymentDismiss: closure_5 } = giftModalDestination);
+  constants = undefined;
   let tmp = require;
   const tmp2 = dependencyMap;
+  giftModalDestination = giftModalDestination.giftModalDestination;
   if (cta_button.ButtonAction.OPEN_SOCIAL_LAYER_STOREFRONT === buttonAction) {
     return () => {
       if (null != require) {
@@ -60,6 +64,20 @@ export function getButtonActionHandler(arg0) {
             const obj = { analyticsLocation: obj2, analyticsLocations: dependencyMap, onPaymentSuccess: PremiumTypes, onPaymentDismiss };
             obj2 = { page: PromotionsStore, section: hasOwnProperty.FOOTER, object: metroRequire.BUTTON_CTA, objectType: metroImportDefault.BUY };
             return openPremiumPlanSelectionActionSheetDefault(obj);
+          };
+        } else if (cta_button.ButtonAction.OPEN_GIFT_MODAL === buttonAction) {
+          constants = giftModalDestination === cta_button.GiftModalDestination.TIER_2;
+          return () => {
+            let obj2;
+            TIER_2 = undefined;
+            const openGiftModal = utils_openGiftModal.openGiftModal;
+            utils_openGiftModal;
+            if (constants) {
+              TIER_2 = PremiumTypes.TIER_2;
+            }
+            const obj = { premiumType: TIER_2, analyticsLocation: obj2, analyticsLocations: dependencyMap };
+            obj2 = { section: hasOwnProperty.FOOTER, object: metroRequire.BUTTON_CTA, objectType: constants ? metroImportDefault.TIER_2 : metroImportDefault.BUY };
+            return openGiftModal(obj);
           };
         } else if (cta_button.ButtonAction.OPEN_SHOP === buttonAction) {
           return () => {

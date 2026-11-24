@@ -2,16 +2,29 @@
 // Function ID: 1526
 // Name: react
 // Dependencies: [19]
-// Exports: useLazyValue
+// Exports: useKeyedChildListeners
 
 // Module 1525 (react)
 import react from "react" /* 19 */;
 
 
-export function useLazyValue(fn) {
-  const ref = react.useRef(undefined);
-  if (undefined === ref.current) {
-    ref.current = fn();
-  }
-  return ref.current;
+export function useKeyedChildListeners() {
+  let current = react.useRef(Object.assign(Object.create(null), { getState: {}, beforeRemove: {} })).current;
+  const items = [current];
+  const obj = {
+    keyedListeners: current,
+    addKeyedListener: react.useCallback((arg0, arg1, arg2) => {
+      let closure_0;
+      current = arg0;
+      let closure_1 = arg1;
+      let closure_2 = arg2;
+      current[arg0][arg1] = arg2;
+      return () => {
+        if (current[closure_0][closure_1] === closure_2) {
+          current[closure_0][tmp] = undefined;
+        }
+      };
+    }, items)
+  };
+  return obj;
 }

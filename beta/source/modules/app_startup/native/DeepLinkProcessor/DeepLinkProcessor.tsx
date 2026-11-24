@@ -1,10 +1,10 @@
-// Module ID: 20905
-// Function ID: 20906
+// Module ID: 20174
+// Function ID: 20175
 // Name: DeepLinkProcessor
-// Dependencies: [1380, 2]
+// Dependencies: [1378, 2]
 
-// Module 20905 (DeepLinkProcessor)
-import PlatformUtils from "PlatformUtils" /* 1380 */;
+// Module 20174 (DeepLinkProcessor)
+import PlatformUtils from "PlatformUtils" /* 1378 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/app_startup/native/DeepLinkProcessor/DeepLinkProcessor.tsx");

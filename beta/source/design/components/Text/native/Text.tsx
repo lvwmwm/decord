@@ -1,25 +1,25 @@
-// Module ID: 5919
-// Function ID: 5920
+// Module ID: 5504
+// Function ID: 5505
 // Name: Text/Text
-// Dependencies: [109, 19, 17, 1083, 21, 1655, 575, 12, 5920, 5921, 5306, 5923, 5924, 1360, 5925, 299, 2]
+// Dependencies: [109, 19, 17, 1082, 21, 1653, 575, 12, 5505, 5506, 4913, 5508, 5509, 1358, 5510, 299, 2]
 // Exports: Heading
 
-// Module 5919 (Text/Text)
+// Module 5504 (Text/Text)
 import _modDef12 from "module_12" /* 12 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1083 */;
-import utils_PlatformUtils from "utils/PlatformUtils" /* 1360 */;
-import TextVariants from "TextVariants" /* 5920 */;
-import PlainTextExperimentContext from "PlainTextExperimentContext" /* 5923 */;
-import PlainTextEligibility from "PlainTextEligibility" /* 5924 */;
-import _modDef5925 from "module_5925" /* 5925 */;
+import Constants from "Constants" /* 1082 */;
+import utils_PlatformUtils from "utils/PlatformUtils" /* 1358 */;
+import TextVariants from "TextVariants" /* 5505 */;
+import PlainTextExperimentContext from "PlainTextExperimentContext" /* 5508 */;
+import PlainTextEligibility from "PlainTextEligibility" /* 5509 */;
+import _modDef5510 from "module_5510" /* 5510 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import module_1655 from "module_1655" /* 1655 */;
-import useManaTextMigrationHighlight from "useManaTextMigrationHighlight" /* 5921 */;
-import createStyles from "createStyles" /* 5306 */;
+import module_1653 from "module_1653" /* 1653 */;
+import useManaTextMigrationHighlight from "useManaTextMigrationHighlight" /* 5506 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 class Text {
@@ -92,7 +92,7 @@ class Text {
       StringResult = undefined;
       tmp20 = _objectWithoutProperties(plainTextEligibility, closure_3);
       const tmp21 = jsx;
-      const tmp23 = _modDef5925;
+      const tmp23 = _modDef5510;
       if (null != fontWeight) {
         const _String = String;
         StringResult = String(fontWeight);
@@ -132,7 +132,7 @@ const Text2 = react_native.Text;
 let closure_7 = react_native.unstable_TextAncestorContext;
 const Fonts = Constants.Fonts;
 const jsx = Fragment.jsx;
-let closure_9 = module_1655.createAnimatedComponent(Text2);
+let closure_9 = module_1653.createAnimatedComponent(Text2);
 let items = [{ includeFontPadding: true }];
 let closure_11 = [];
 const keys = Object.keys(nativeDefault.colors);

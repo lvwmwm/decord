@@ -1,24 +1,24 @@
-// Module ID: 11082
-// Function ID: 11083
+// Module ID: 10362
+// Function ID: 10363
 // Name: MuteSettingsUtils
-// Dependencies: [5240, 5155, 5177, 5248, 6948, 1388, 1072, 1082, 1113, 5944, 8864, 7883, 7878, 11083, 2]
+// Dependencies: [4847, 4762, 4784, 4855, 6552, 1386, 1071, 1081, 1112, 5529, 8459, 7485, 7480, 10363, 2]
 // Exports: getMessageNotificationsText, getMuteOptions, getMuteSettingLabel, getMuteSettingSublabel, getMuteSettings, handleMuteSettingPress, handleUnmutePress
 
-// Module 11082 (MuteSettingsUtils)
-import UserSettingsConstants from "UserSettingsConstants" /* 1082 */;
-import intl7 from "intl" /* 1113 */;
-import useChannelName from "useChannelName" /* 5944 */;
-import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7878 */;
-import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7883 */;
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8864 */;
-import ChannelMuteUtilsAll from "ChannelMuteUtils" /* 11083 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 5240 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import GuildStore from "GuildStore" /* 5177 */;
-import RelationshipStore from "RelationshipStore" /* 5248 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6948 */;
-import UserStore from "UserStore" /* 1388 */;
-import Constants from "Constants" /* 1072 */;
+// Module 10362 (MuteSettingsUtils)
+import UserSettingsConstants from "UserSettingsConstants" /* 1081 */;
+import intl7 from "intl" /* 1112 */;
+import useChannelName from "useChannelName" /* 5529 */;
+import NotificationSettingsUtils from "NotificationSettingsUtils" /* 7480 */;
+import NotificationSettingsModalActionCreatorsDefault from "NotificationSettingsModalActionCreators" /* 7485 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8459 */;
+import ChannelMuteUtilsAll from "ChannelMuteUtils" /* 10363 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4847 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import RelationshipStore from "RelationshipStore" /* 4855 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6552 */;
+import UserStore from "UserStore" /* 1386 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 let c10;

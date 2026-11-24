@@ -1,14 +1,14 @@
-// Module ID: 5121
-// Function ID: 5122
+// Module ID: 4729
+// Function ID: 4730
 // Name: BraintreeStore
-// Dependencies: [1072, 1380, 1285, 504, 572, 2]
+// Dependencies: [1071, 1378, 1284, 504, 572, 2]
 
-// Module 5121 (BraintreeStore)
+// Module 4729 (BraintreeStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import HTTPUtils from "HTTPUtils" /* 1285 */;
-import Constants from "Constants" /* 1072 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
+import HTTPUtils from "HTTPUtils" /* 1284 */;
+import Constants from "Constants" /* 1071 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
 import size from "module_2" /* 2 */;
 
 let state;

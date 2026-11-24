@@ -1,34 +1,34 @@
-// Module ID: 14024
-// Function ID: 14025
+// Module ID: 18683
+// Function ID: 18684
 // Name: ConjureDebugGitSection
-// Dependencies: [32, 19, 17, 21, 5306, 575, 8072, 10901, 14025, 14027, 8457, 14029, 10939, 14031, 12990, 11073, 7930, 8160, 7629, 14033, 14035, 14037, 14019, 5919, 5368, 6264, 6327, 7734, 5926, 11095, 2]
+// Dependencies: [32, 19, 17, 21, 4913, 575, 7675, 11242, 13765, 18684, 8048, 18686, 12471, 18688, 10943, 11148, 7532, 7763, 7231, 17194, 17196, 18690, 18678, 5504, 4975, 5866, 5929, 7336, 5511, 10343, 2]
 // Exports: ConjureDebugGitSection, ConjureDebugRestartAgent
 
-// Module 14024 (ConjureDebugGitSection)
+// Module 18683 (ConjureDebugGitSection)
 import nativeDefault from "native" /* 575 */;
-import AlertModal from "AlertModal" /* 6264 */;
-import CircleXIcon from "CircleXIcon" /* 7629 */;
-import CircleCheckIcon from "CircleCheckIcon" /* 7930 */;
-import FolderIcon from "FolderIcon" /* 8072 */;
-import WarningIcon from "WarningIcon" /* 8160 */;
-import CalendarIcon from "CalendarIcon" /* 8457 */;
-import PencilIcon from "PencilIcon" /* 10901 */;
-import ServerIcon from "ServerIcon" /* 10939 */;
-import FileIcon from "FileIcon" /* 11073 */;
-import SpeedometerIcon from "SpeedometerIcon" /* 12990 */;
-import ConjureDebugPrimitives from "ConjureDebugPrimitives" /* 14019 */;
-import CloudIcon from "CloudIcon" /* 14025 */;
-import ListNumberedIcon from "ListNumberedIcon" /* 14027 */;
-import SaveIcon from "SaveIcon" /* 14029 */;
-import CloudDownloadIcon from "CloudDownloadIcon" /* 14031 */;
-import ArrowSmallUpIcon from "ArrowSmallUpIcon" /* 14033 */;
-import ArrowSmallDownIcon from "ArrowSmallDownIcon" /* 14035 */;
-import ConjureDebugGit from "ConjureDebugGit" /* 14037 */;
+import AlertModal from "AlertModal" /* 5866 */;
+import CircleXIcon from "CircleXIcon" /* 7231 */;
+import CircleCheckIcon from "CircleCheckIcon" /* 7532 */;
+import FolderIcon from "FolderIcon" /* 7675 */;
+import WarningIcon from "WarningIcon" /* 7763 */;
+import CalendarIcon from "CalendarIcon" /* 8048 */;
+import SpeedometerIcon from "SpeedometerIcon" /* 10943 */;
+import FileIcon from "FileIcon" /* 11148 */;
+import PencilIcon from "PencilIcon" /* 11242 */;
+import ServerIcon from "ServerIcon" /* 12471 */;
+import CloudIcon from "CloudIcon" /* 13765 */;
+import ArrowSmallUpIcon from "ArrowSmallUpIcon" /* 17194 */;
+import ArrowSmallDownIcon from "ArrowSmallDownIcon" /* 17196 */;
+import ConjureDebugPrimitives from "ConjureDebugPrimitives" /* 18678 */;
+import ListNumberedIcon from "ListNumberedIcon" /* 18684 */;
+import SaveIcon from "SaveIcon" /* 18686 */;
+import CloudDownloadIcon from "CloudDownloadIcon" /* 18688 */;
+import ConjureDebugGit from "ConjureDebugGit" /* 18690 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -46,7 +46,7 @@ let metroRequire;
 let obj2;
 let obj3;
 let tmp2;
-const Text_Text = tmp2(5919);
+const Text_Text = tmp2(5504);
 ({ Pressable: hasOwnProperty, View: metroRequire } = react_native);
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let createStyles = createStyles_mod;

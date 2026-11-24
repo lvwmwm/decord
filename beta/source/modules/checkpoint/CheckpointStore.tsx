@@ -1,16 +1,16 @@
-// Module ID: 14255
-// Function ID: 14256
+// Module ID: 12128
+// Function ID: 12129
 // Name: CheckpointStore
-// Dependencies: [1388, 2110, 6412, 6411, 14256, 14257, 6735, 504, 572, 2]
+// Dependencies: [1386, 2108, 6014, 6013, 12129, 12130, 6338, 504, 572, 2]
 
-// Module 14255 (CheckpointStore)
+// Module 12128 (CheckpointStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import PremiumTypeUtils from "PremiumTypeUtils" /* 2110 */;
-import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 6411 */;
-import CheckpointTrait from "CheckpointTrait" /* 6412 */;
-import CheckpointFlows from "CheckpointFlows" /* 14257 */;
-import UserStore from "UserStore" /* 1388 */;
+import PremiumTypeUtils from "PremiumTypeUtils" /* 2108 */;
+import CheckpointCharacterTraits from "CheckpointCharacterTraits" /* 6013 */;
+import CheckpointTrait from "CheckpointTrait" /* 6014 */;
+import CheckpointFlows from "CheckpointFlows" /* 12130 */;
+import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -251,10 +251,9 @@ let obj4 = {
   CHECKPOINT_COMPLETE_FAILED: function handleCompleteFailed() {
     c14 = false;
   },
-  CHECKPOINT_RESET_SUCCESS: function handleResetSuccess() {
-    let c9 = null;
-    let c13 = null;
+  CHECKPOINT_RESET_PROGRESS: function handleResetProgress() {
     obj.progress = null;
+    let c13 = null;
   },
   CHECKPOINT_SELECT_CHARACTER_TRAIT: function handleSelectCharacterTrait(trait) {
     let tmp = selectedCharacterTraits;
@@ -289,7 +288,7 @@ let obj4 = {
         if (progress != null) {
           stage1 = progress.stage;
         }
-        if (stage1 === tmp8(6735).CheckpointCharacterStage.SUMMARY) {
+        if (stage1 === tmp8(6338).CheckpointCharacterStage.SUMMARY) {
           return false;
         } else {
           let tmp3 = c13;

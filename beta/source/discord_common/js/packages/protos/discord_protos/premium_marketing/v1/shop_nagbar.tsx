@@ -1,13 +1,13 @@
-// Module ID: 9651
-// Function ID: 9652
+// Module ID: 9172
+// Function ID: 9173
 // Name: shop_nagbar
-// Dependencies: [32, 1197, 9632, 9631, 9630, 1227, 2]
+// Dependencies: [32, 1196, 9152, 9151, 9150, 1226, 2]
 
-// Module 9651 (shop_nagbar)
-import _mod1197 from "module_1197" /* 1197 */;
-import wrappers from "wrappers" /* 1227 */;
-import localized_string from "localized_string" /* 9630 */;
-import help_article from "help_article" /* 9631 */;
+// Module 9172 (shop_nagbar)
+import _mod1196 from "module_1196" /* 1196 */;
+import wrappers from "wrappers" /* 1226 */;
+import localized_string from "localized_string" /* 9150 */;
+import help_article from "help_article" /* 9151 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -31,117 +31,70 @@ const T5 = function T() {
 const T6 = function T() {
   return require("wrappers").UInt64Value;
 };
-const MessageType = _mod1197.MessageType;
+const T7 = function T() {
+  const items = ["discord_protos.premium_marketing.v1.GiftModalDestination", require("cta_button").GiftModalDestination, "GIFT_MODAL_DESTINATION_"];
+  return items;
+};
+const MessageType = _mod1196.MessageType;
 class ShopNagbar$Type extends MessageType {
   constructor() {
-    let items = [{ no: 1, name: "body", kind: "scalar", T: 9 }, { no: 2, name: "cta_label", kind: "scalar", T: 9 }, { no: 3, name: "cta_action", kind: "enum", T: T2 }, { no: 4, name: "deeplink_section", kind: "scalar", T: 9 }, { no: 5, name: "help_article", kind: "message", T: T3 }, { no: 6, name: "body_localized", kind: "message", T: T4 }, { no: 7, name: "cta_label_localized", kind: "message", T: T5 }, , ];
-    const obj = { no: 8, name: "navigable_storefront_application_id", kind: "message", T };
+    let items = [{ no: 1, name: "body", kind: "scalar", T: 9 }, { no: 2, name: "cta_label", kind: "scalar", T: 9 }, { no: 3, name: "cta_action", kind: "enum", T: T2 }, { no: 4, name: "deeplink_section", kind: "scalar", T: 9 }, { no: 5, name: "help_article", kind: "message", T: T3 }, { no: 6, name: "body_localized", kind: "message", T: T4 }, { no: 7, name: "cta_label_localized", kind: "message", T: T5 }, { no: 8, name: "navigable_storefront_application_id", kind: "message", T: T6 }, , ];
+    const obj = { no: 9, name: "shop_collection_id", kind: "message", T };
     class T {
       constructor() {
         return closure_1_0(closure_1_1[5]).UInt64Value;
       }
     }
-    items[7] = obj;
-    items[8] = { no: 9, name: "shop_collection_id", kind: "message", T: T6 };
+    items[8] = obj;
+    items[9] = { no: 10, name: "gift_modal_destination", kind: "enum", T: T7 };
     const tmp2 = new tmp("discord_protos.premium_marketing.v1.ShopNagbar", items, T);
     return tmp2;
   }
   create(partialSettings) {
-    const obj = { body: "", ctaLabel: "", ctaAction: 0, deeplinkSection: "" };
+    const obj = { body: "", ctaLabel: "", ctaAction: 0, deeplinkSection: "", giftModalDestination: 0 };
     const _Object = Object;
     const obj2 = { enumerable: false, value: this };
-    _Object.defineProperty(obj, _mod1197.MESSAGE_TYPE, obj2);
+    _Object.defineProperty(obj, _mod1196.MESSAGE_TYPE, obj2);
     if (undefined !== partialSettings) {
-      const tmpResult = _mod1197;
+      const tmpResult = _mod1196;
       const result = tmpResult.reflectionMergePartial(this, obj, partialSettings);
     }
     return obj;
   }
-  internalBinaryRead(pos, arg1, readUnknownField, arg3) {
-    let tmp5;
-    let tmp6;
+  internalBinaryRead(pos, arg1, arg2, arg3) {
     const self = this;
     let obj = arg3;
     if (arg3 == null) {
       obj = self.create();
     }
-    const sum = pos.pos + arg1;
-    if (pos.pos < sum) {
-      do {
-        let tmp4 = _slicedToArray(pos.tag(), 2);
-        [tmp5, tmp6] = tmp4;
-        if (1 === tmp5) {
-          obj.body = pos.string();
-        } else if (2 === tmp5) {
-          obj.ctaLabel = pos.string();
-        } else if (3 === tmp5) {
-          obj.ctaAction = pos.int32();
-        } else if (4 === tmp5) {
-          obj.deeplinkSection = pos.string();
-        } else if (5 === tmp5) {
-          let HelpArticle = help_article.HelpArticle;
-          obj.helpArticle = HelpArticle.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.helpArticle);
-        } else if (6 === tmp5) {
-          let LocalizedString2 = localized_string.LocalizedString;
-          obj.bodyLocalized = LocalizedString2.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.bodyLocalized);
-        } else if (7 === tmp5) {
-          let LocalizedString = localized_string.LocalizedString;
-          obj.ctaLabelLocalized = LocalizedString.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.ctaLabelLocalized);
-        } else if (8 === tmp5) {
-          let UInt64Value2 = wrappers.UInt64Value;
-          obj.navigableStorefrontApplicationId = UInt64Value2.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.navigableStorefrontApplicationId);
-        } else if (9 === tmp5) {
-          let UInt64Value = wrappers.UInt64Value;
-          obj.shopCollectionId = UInt64Value.internalBinaryRead(pos, pos.uint32(), readUnknownField, obj.shopCollectionId);
-        } else {
-          let onRead = readUnknownField.readUnknownField;
-          if ("throw" === onRead) {
-            let tmp15 = globalThis;
-            let _globalThis = globalThis;
-            let _HermesInternal = HermesInternal;
-            let str = ") for ";
-            let str2 = " (wire type ";
-            let str3 = "Unknown field ";
-            let self2 = this;
-            let self3 = this;
-            let error = new Error("Unknown field " + tmp5 + " (wire type " + tmp6 + ") for " + self.typeName);
-            throw error;
-          } else {
-            let skipResult = pos.skip(tmp6);
-            if (false !== onRead) {
-              if (true === onRead) {
-                onRead = _mod1197.UnknownFieldHandler.onRead;
-              }
-              let onReadResult = onRead(self.typeName, obj, tmp5, tmp6, skipResult);
-            }
-          }
-        }
-      } while (pos.pos < sum);
+    if (pos.pos < pos.pos + arg1) {
+      [r10019, r10020] = pos.tag();
+      _slicedToArray(pos.tag(), 2);
     }
     return obj;
   }
   internalBinaryWrite(body, tag, writeUnknownFields) {
     if ("" !== body.body) {
-      const tagResult = tag.tag(1, _mod1197.WireType.LengthDelimited);
+      const tagResult = tag.tag(1, _mod1196.WireType.LengthDelimited);
       tagResult.string(body.body);
     }
     if ("" !== body.ctaLabel) {
-      const tagResult1 = tag.tag(2, _mod1197.WireType.LengthDelimited);
+      const tagResult1 = tag.tag(2, _mod1196.WireType.LengthDelimited);
       tagResult1.string(body.ctaLabel);
     }
     if (0 !== body.ctaAction) {
-      const tagResult2 = tag.tag(3, _mod1197.WireType.Varint);
+      const tagResult2 = tag.tag(3, _mod1196.WireType.Varint);
       tagResult2.int32(body.ctaAction);
     }
     if ("" !== body.deeplinkSection) {
-      const tagResult3 = tag.tag(4, _mod1197.WireType.LengthDelimited);
+      const tagResult3 = tag.tag(4, _mod1196.WireType.LengthDelimited);
       tagResult3.string(body.deeplinkSection);
     }
     if (body.helpArticle) {
       const HelpArticle = help_article.HelpArticle;
       internalBinaryWrite = HelpArticle.internalBinaryWrite;
       const helpArticle = body.helpArticle;
-      const tagResult4 = tag.tag(5, _mod1197.WireType.LengthDelimited);
+      const tagResult4 = tag.tag(5, _mod1196.WireType.LengthDelimited);
       const internalBinaryWriteResult = internalBinaryWrite(helpArticle, tagResult4.fork(), writeUnknownFields);
       const joined = internalBinaryWriteResult.join();
     }
@@ -149,7 +102,7 @@ class ShopNagbar$Type extends MessageType {
       const LocalizedString = localized_string.LocalizedString;
       internalBinaryWrite2 = LocalizedString.internalBinaryWrite;
       const bodyLocalized = body.bodyLocalized;
-      const tagResult5 = tag.tag(6, _mod1197.WireType.LengthDelimited);
+      const tagResult5 = tag.tag(6, _mod1196.WireType.LengthDelimited);
       const internalBinaryWrite2Result = internalBinaryWrite2(bodyLocalized, tagResult5.fork(), writeUnknownFields);
       const joined1 = internalBinaryWrite2Result.join();
     }
@@ -157,7 +110,7 @@ class ShopNagbar$Type extends MessageType {
       const LocalizedString2 = localized_string.LocalizedString;
       internalBinaryWrite3 = LocalizedString2.internalBinaryWrite;
       const ctaLabelLocalized = body.ctaLabelLocalized;
-      const tagResult6 = tag.tag(7, _mod1197.WireType.LengthDelimited);
+      const tagResult6 = tag.tag(7, _mod1196.WireType.LengthDelimited);
       const internalBinaryWrite3Result = internalBinaryWrite3(ctaLabelLocalized, tagResult6.fork(), writeUnknownFields);
       const joined2 = internalBinaryWrite3Result.join();
     }
@@ -165,7 +118,7 @@ class ShopNagbar$Type extends MessageType {
       const UInt64Value = wrappers.UInt64Value;
       internalBinaryWrite4 = UInt64Value.internalBinaryWrite;
       const navigableStorefrontApplicationId = body.navigableStorefrontApplicationId;
-      const tagResult7 = tag.tag(8, _mod1197.WireType.LengthDelimited);
+      const tagResult7 = tag.tag(8, _mod1196.WireType.LengthDelimited);
       const internalBinaryWrite4Result = internalBinaryWrite4(navigableStorefrontApplicationId, tagResult7.fork(), writeUnknownFields);
       const joined3 = internalBinaryWrite4Result.join();
     }
@@ -173,14 +126,18 @@ class ShopNagbar$Type extends MessageType {
       const UInt64Value2 = wrappers.UInt64Value;
       internalBinaryWrite5 = UInt64Value2.internalBinaryWrite;
       const shopCollectionId = body.shopCollectionId;
-      const tagResult8 = tag.tag(9, _mod1197.WireType.LengthDelimited);
+      const tagResult8 = tag.tag(9, _mod1196.WireType.LengthDelimited);
       const internalBinaryWrite5Result = internalBinaryWrite5(shopCollectionId, tagResult8.fork(), writeUnknownFields);
       const joined4 = internalBinaryWrite5Result.join();
+    }
+    if (0 !== body.giftModalDestination) {
+      const tagResult9 = tag.tag(10, _mod1196.WireType.Varint);
+      tagResult9.int32(body.giftModalDestination);
     }
     let onWrite = writeUnknownFields.writeUnknownFields;
     if (false !== onWrite) {
       if (1 == onWrite) {
-        onWrite = _mod1197.UnknownFieldHandler.onWrite;
+        onWrite = _mod1196.UnknownFieldHandler.onWrite;
       }
       const self = this;
       onWrite(this.typeName, body, tag);
@@ -189,15 +146,15 @@ class ShopNagbar$Type extends MessageType {
   }
 }
 const prototype = ShopNagbar$Type.prototype;
-let items = [{ no: 1, name: "body", kind: "scalar", T: 9 }, { no: 2, name: "cta_label", kind: "scalar", T: 9 }, { no: 3, name: "cta_action", kind: "enum", T: T2 }, { no: 4, name: "deeplink_section", kind: "scalar", T: 9 }, { no: 5, name: "help_article", kind: "message", T: T3 }, { no: 6, name: "body_localized", kind: "message", T: T4 }, { no: 7, name: "cta_label_localized", kind: "message", T: T5 }, , ];
-let obj = { no: 8, name: "navigable_storefront_application_id", kind: "message", T };
+let items = [{ no: 1, name: "body", kind: "scalar", T: 9 }, { no: 2, name: "cta_label", kind: "scalar", T: 9 }, { no: 3, name: "cta_action", kind: "enum", T: T2 }, { no: 4, name: "deeplink_section", kind: "scalar", T: 9 }, { no: 5, name: "help_article", kind: "message", T: T3 }, { no: 6, name: "body_localized", kind: "message", T: T4 }, { no: 7, name: "cta_label_localized", kind: "message", T: T5 }, { no: 8, name: "navigable_storefront_application_id", kind: "message", T: T6 }, , ];
+let obj = { no: 9, name: "shop_collection_id", kind: "message", T };
 class T {
   constructor() {
     return require("wrappers").UInt64Value;
   }
 }
-items[7] = obj;
-items[8] = { no: 9, name: "shop_collection_id", kind: "message", T: T6 };
+items[8] = obj;
+items[9] = { no: 10, name: "gift_modal_destination", kind: "enum", T: T7 };
 const prototype1 = new prototype("discord_protos.premium_marketing.v1.ShopNagbar", items, tmp, T, ShopNagbar$Type, prototype, items);
 let result = size.fileFinishedImporting("../discord_common/js/packages/protos/discord_protos/premium_marketing/v1/shop_nagbar.tsx");
 

@@ -1,21 +1,21 @@
-// Module ID: 17789
-// Function ID: 17790
+// Module ID: 16566
+// Function ID: 16567
 // Name: QuestDockContentCollapsed
-// Dependencies: [19, 17, 6954, 17700, 21, 5306, 17701, 1655, 5929, 2]
+// Dependencies: [19, 17, 6558, 16473, 21, 4913, 16474, 1653, 5514, 2]
 
-// Module 17789 (QuestDockContentCollapsed)
+// Module 16566 (QuestDockContentCollapsed)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import spring_spring from "spring/spring" /* 5929 */;
-import QuestConstants from "QuestConstants" /* 6954 */;
-import QuestDockConstants from "QuestDockConstants" /* 17700 */;
-import QuestDockGestureContext from "QuestDockGestureContext" /* 17701 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import spring_spring from "spring/spring" /* 5514 */;
+import QuestConstants from "QuestConstants" /* 6558 */;
+import QuestDockConstants from "QuestDockConstants" /* 16473 */;
+import QuestDockGestureContext from "QuestDockGestureContext" /* 16474 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
-const _modDef1655 = _mod1655;
+const _modDef1653 = _mod1653;
 let num, pointerEvents;
 
 let obj2;
@@ -51,8 +51,8 @@ const memoResult = react.memo(function QuestDockContentCollapsed(hideOnExpand) {
   const tmp2 = closure_7();
   const activeQuestDockMode = react.useContext(QuestDockGestureContext.QuestDockGestureContext).activeQuestDockMode;
   const items = [closure_8, , , , , ];
-  const useAnimatedStyle = _mod1655.useAnimatedStyle;
-  _mod1655;
+  const useAnimatedStyle = _mod1653.useAnimatedStyle;
+  _mod1653;
   items[1] = spring_spring.withSpring;
   items[2] = activeQuestDockMode;
   items[3] = QuestDockMode;
@@ -89,7 +89,7 @@ const memoResult = react.memo(function QuestDockContentCollapsed(hideOnExpand) {
   c1 = undefined;
   c2 = undefined;
   [tmp14, tmp15, tmp16, tmp17] = items2;
-  const tmp3Result = _mod1655;
+  const tmp3Result = _mod1653;
   class QuestDockContentCollapsedTsx2 {
     constructor() {
       pointerEvents = "auto";
@@ -109,7 +109,7 @@ const memoResult = react.memo(function QuestDockContentCollapsed(hideOnExpand) {
   QuestDockContentCollapsedTsx2.__initData = tmp14;
   const animatedProps = tmp3Result.useAnimatedProps(QuestDockContentCollapsedTsx2);
   const items4 = [tmp2.questDockContentCollapsed, animatedStyle];
-  return jsx(_modDef1655.View, { style: items4, animatedProps, children });
+  return jsx(_modDef1653.View, { style: items4, animatedProps, children });
 });
 const result = size.fileFinishedImporting("modules/quests/native/QuestDock/QuestDockContentCollapsed.tsx");
 

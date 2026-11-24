@@ -1,23 +1,24 @@
-// Module ID: 1243
-// Function ID: 1244
+// Module ID: 1242
+// Function ID: 1243
 // Name: SentryInitUtils
-// Dependencies: [5, 17, 1072, 1083, 674, 3, 1244, 1099, 1256, 16586, 6761, 6766, 1373, 1242, 1379, 6762, 1380, 5263, 1627, 1374, 1359, 16587, 2]
+// Dependencies: [5, 17, 1071, 1082, 674, 3, 1243, 1098, 1255, 15373, 6365, 6370, 1371, 1241, 1254, 1377, 6366, 1378, 4870, 1625, 1372, 1357, 15374, 2]
 // Exports: initSentry
 
-// Module 1243 (SentryInitUtils)
+// Module 1242 (SentryInitUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import react_native from "react-native" /* 17 */;
-import Constants2 from "Constants" /* 1083 */;
-import router_utils from "router_utils" /* 1099 */;
-import SentryUtilsDefault from "SentryUtils" /* 1242 */;
-import TelemetryRingLifecycle from "TelemetryRingLifecycle" /* 1244 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import react_nativeAll from "react-native" /* 1379 */;
-import MetricEvents from "MetricEvents" /* 6766 */;
+import Constants2 from "Constants" /* 1082 */;
+import router_utils from "router_utils" /* 1098 */;
+import SentryUtilsDefault from "SentryUtils" /* 1241 */;
+import TelemetryRingLifecycle from "TelemetryRingLifecycle" /* 1243 */;
+import GlobalUtils from "GlobalUtils" /* 1254 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import react_nativeAll from "react-native" /* 1377 */;
+import MetricEvents from "MetricEvents" /* 6370 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants from "Constants" /* 1072 */;
+import Constants from "Constants" /* 1071 */;
 import registerSpanErrorInstrumentation_mod from "module_674" /* 674 */;
-import CommonSentryInitUtils from "CommonSentryInitUtils" /* 1373 */;
+import CommonSentryInitUtils from "CommonSentryInitUtils" /* 1371 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -33,7 +34,7 @@ let obj = function _maybeBackfillMissingBreadcrumbsFromTelemetryRing() {
     let c3 = 0;
     return (async function(arg0, value) {
       let raceResult;
-      const f140106 = (arg0, arg1) => {
+      const f135114 = (arg0, arg1) => {
         let closure_0 = arg1;
         return setTimeout(() => {
           const error = new Error("TelemetryRing breadcrumb timeout");
@@ -70,10 +71,10 @@ let obj = function _maybeBackfillMissingBreadcrumbsFromTelemetryRing() {
               items = [SentryTelemetry.snapshotForBreadcrumbs(), ];
               const self = this;
               const self2 = this;
-              items[1] = new Promise(f140106);
+              items[1] = new Promise(f135114);
               c2 = 1;
               c3 = 1;
-              const promise = new Promise(f140106);
+              const promise = new Promise(f135114);
               const obj4 = { value: raceResult.catch(() => null), done: false };
               raceResult = race(items);
               return obj4;
@@ -565,12 +566,12 @@ function trackCrash(event, hint, arg2) {
     tmp40 = 0 !== event_id2.length;
   }
   if (tmp40) {
-    const tmp26Result = tmp26(1242);
+    const tmp26Result = tmp26(1241);
     tmp26Result.markCrashHandled(event_id2);
   }
-  const AppCrashedReasons = tmp12(16586).AppCrashedReasons;
+  const AppCrashedReasons = tmp12(15373).AppCrashedReasons;
   const tmp42 = tmp4 ? AppCrashedReasons.UNHANDLED_NATIVE_ERROR : AppCrashedReasons.UNHANDLED_JS_ERROR;
-  const tmp27Result = tmp27(6761);
+  const tmp27Result = tmp27(6365);
   const increment = tmp27Result.increment;
   const obj6 = { name: MetricEvents.MetricEvents.APP_CRASHED, tags: items };
   items = ["reason:" + tmp42, ];
@@ -604,128 +605,133 @@ export const routingInstrumentation = registerSpanErrorInstrumentation;
 export function initSentry() {
   let beforeSend;
   let ignoreErrors;
-  const CrashReportingManager = NativeModules.CrashReportingManager;
-  if (CrashReportingManager != null) {
-    const isUserStaffForCrashReporting = CrashReportingManager.getIsUserStaffForCrashReporting((arg0) => {
-      let items1;
-      let closure_1_14 = arg0;
-      let tmp = dependencyMap;
-      obj = react_nativeAll;
-      constants = obj.getConstants();
-      const ReleaseChannel = constants.ReleaseChannel;
-      if (-1 === ReleaseChannel.indexOf("debug")) {
-        if (-1 === ReleaseChannel.indexOf("developer")) {
-          let SentryStaffDsn;
-          const isStable = require("ReleaseChannelUtils").isStable;
-          const obj2 = { releaseChannel: ReleaseChannel, isProductionChannel: isStable };
-          logger.verbose("Initialize", obj2);
-          const obj16 = require("PlatformUtils");
-          if (obj16.isAndroid()) {
+  obj = GlobalUtils;
+  if (!obj.isDiscordBackendDevelopment()) {
+    let tmp = NativeModules;
+    const CrashReportingManager = NativeModules.CrashReportingManager;
+    let tmp2 = null;
+    if (CrashReportingManager != null) {
+      const isUserStaffForCrashReporting = CrashReportingManager.getIsUserStaffForCrashReporting((arg0) => {
+        let items1;
+        let closure_1_14 = arg0;
+        let tmp = dependencyMap;
+        obj = react_nativeAll;
+        constants = obj.getConstants();
+        const ReleaseChannel = constants.ReleaseChannel;
+        if (-1 === ReleaseChannel.indexOf("debug")) {
+          if (-1 === ReleaseChannel.indexOf("developer")) {
+            let SentryStaffDsn;
+            const isStable = require("ReleaseChannelUtils").isStable;
+            const obj2 = { releaseChannel: ReleaseChannel, isProductionChannel: isStable };
+            logger.verbose("Initialize", obj2);
+            const obj16 = require("PlatformUtils");
+            if (obj16.isAndroid()) {
+              if (isStable) {
+                const tmp17Result = require("DeviceUtils");
+                const device = tmp17Result.getDevice();
+              }
+            }
+            c12 = 0.05;
+            const SentryDsn = constants.SentryDsn;
             if (isStable) {
-              const tmp17Result = require("DeviceUtils");
-              const device = tmp17Result.getDevice();
-            }
-          }
-          c12 = 0.05;
-          const SentryDsn = constants.SentryDsn;
-          if (isStable) {
-            SentryStaffDsn = SentryDsn;
-            const tmp17Result12 = require("MetaQuestUtils");
-            if (tmp17Result12.isMetaQuest()) {
-              c12 = 1;
-              c13 = 1;
               SentryStaffDsn = SentryDsn;
+              const tmp17Result12 = require("MetaQuestUtils");
+              if (tmp17Result12.isMetaQuest()) {
+                c12 = 1;
+                c13 = 1;
+                SentryStaffDsn = SentryDsn;
+              }
+            } else {
+              c12 = 1;
+              SentryStaffDsn = constants.SentryAlphaBetaDsn;
             }
-          } else {
-            c12 = 1;
-            SentryStaffDsn = constants.SentryAlphaBetaDsn;
-          }
-          if (arg0) {
-            SentryStaffDsn = constants.SentryStaffDsn;
-            c12 = 1;
-          }
-          const obj4 = require("SentryUtils");
-          const lastCrashReport = obj4.getLastCrashReport();
-          const nextPromise = lastCrashReport.then((result) => {
-            if (null != result) {
-              closure_1_19(result, { crash_event_source: "startup_reconcile" });
+            if (arg0) {
+              SentryStaffDsn = constants.SentryStaffDsn;
+              c12 = 1;
             }
-          });
-          nextPromise.catch((error) => {
-            logger.warn("Failed to replay pending crash report", error);
-          });
-          const init = require("module_674").init;
-          require("module_674");
-          let str2 = "ios";
-          const tmp17Result14 = require("PlatformUtils");
-          if (tmp17Result14.isAndroid()) {
-            str2 = "android";
-          }
-          const obj3 = {
-            tunnel: `/error-reporting-proxy/${str2}`,
-            autoInitializeNativeSdk: false,
-            beforeSend,
-            dist: "35510900000000",
-            dsn: SentryStaffDsn,
-            environment: ReleaseChannel,
-            tracesSampleRate: 0,
-            sampleRate: 1,
-            ignoreErrors,
-            release: "discord_android@355.9.0-1+355109",
-            tracePropagationTargets: items,
-            integrations: items1,
-            beforeBreadcrumb(data) {
-                  if (null == data.data) {
-                    data.data = {};
-                  }
-                  obj = closure_1_1(closure_1_3[19]);
-                  const currentMemoryUsageKB = obj.getCurrentMemoryUsageKB();
-                  const tmp = closure_1_1;
-                  const tmp2 = closure_1_3;
-                  if (null != currentMemoryUsageKB) {
-                    data.data.client_performance_memory = currentMemoryUsageKB;
-                  }
-                  const tmpResult = tmp(tmp2[19]);
-                  const currentCPUUsagePercent = tmpResult.getCurrentCPUUsagePercent();
-                  if (null != currentCPUUsagePercent) {
-                    data.data.client_performance_cpu = currentCPUUsagePercent;
-                  }
-                  return data;
-                }
-          };
-          items = [PRIMARY_DOMAIN];
-          items1 = [registerSpanErrorInstrumentation, , ];
-          const tmp17Result15 = require("module_674");
-          items1[1] = tmp17Result15.featureFlagsIntegration();
-          const obj5 = {
-            shouldCreateSpanForRequest(arg0) {
-                  let closure_0 = arg0;
-                  return !closure_1_9.some((item) => null != closure_0.match(item));
-                }
-          };
-          const tmp17Result16 = require("module_674");
-          items1[2] = tmp17Result16.reactNativeTracingIntegration(obj5);
-          init(obj3);
-          const tmp17Result17 = require("module_674");
-          tmp17Result17.setTag("buildNumber", "35510900000000");
-          const tmp17Result18 = require("module_674");
-          tmp17Result18.setTag("appVersion", constants.Version);
-          const _HermesInternal = HermesInternal;
-          const tmp17Result19 = require("module_674");
-          tmp17Result19.setTag("design_id", "" + require("DesignIds").DesignIds.DESIGN_TABS_IA);
-          const tmp17Result20 = require("ReactCompilerGating");
-          if (tmp17Result20.isReactCompilerBuild()) {
-            const setTag = require("module_674").setTag;
+            const obj4 = require("SentryUtils");
+            const lastCrashReport = obj4.getLastCrashReport();
+            const nextPromise = lastCrashReport.then((result) => {
+              if (null != result) {
+                closure_1_19(result, { crash_event_source: "startup_reconcile" });
+              }
+            });
+            nextPromise.catch((error) => {
+              logger.warn("Failed to replay pending crash report", error);
+            });
+            const init = require("module_674").init;
             require("module_674");
-            let str9 = "unoptimized";
-            const tmp17Result22 = require("ReactCompilerGating");
-            if (tmp17Result22.isReactCompilerEnabled()) {
-              str9 = "optimized";
+            let str2 = "ios";
+            const tmp17Result14 = require("PlatformUtils");
+            if (tmp17Result14.isAndroid()) {
+              str2 = "android";
             }
-            setTag("react_compiler", str9);
+            const obj3 = {
+              tunnel: `/error-reporting-proxy/${str2}`,
+              autoInitializeNativeSdk: false,
+              beforeSend,
+              dist: "35610800000000",
+              dsn: SentryStaffDsn,
+              environment: ReleaseChannel,
+              tracesSampleRate: 0,
+              sampleRate: 1,
+              ignoreErrors,
+              release: "discord_android@356.8.0-1+356108",
+              tracePropagationTargets: items,
+              integrations: items1,
+              beforeBreadcrumb(data) {
+                    if (null == data.data) {
+                      data.data = {};
+                    }
+                    obj = closure_1_1(closure_1_3[20]);
+                    const currentMemoryUsageKB = obj.getCurrentMemoryUsageKB();
+                    const tmp = closure_1_1;
+                    const tmp2 = closure_1_3;
+                    if (null != currentMemoryUsageKB) {
+                      data.data.client_performance_memory = currentMemoryUsageKB;
+                    }
+                    const tmpResult = tmp(tmp2[20]);
+                    const currentCPUUsagePercent = tmpResult.getCurrentCPUUsagePercent();
+                    if (null != currentCPUUsagePercent) {
+                      data.data.client_performance_cpu = currentCPUUsagePercent;
+                    }
+                    return data;
+                  }
+            };
+            items = [PRIMARY_DOMAIN];
+            items1 = [registerSpanErrorInstrumentation, , ];
+            const tmp17Result15 = require("module_674");
+            items1[1] = tmp17Result15.featureFlagsIntegration();
+            const obj5 = {
+              shouldCreateSpanForRequest(arg0) {
+                    let closure_0 = arg0;
+                    return !closure_1_9.some((item) => null != closure_0.match(item));
+                  }
+            };
+            const tmp17Result16 = require("module_674");
+            items1[2] = tmp17Result16.reactNativeTracingIntegration(obj5);
+            init(obj3);
+            const tmp17Result17 = require("module_674");
+            tmp17Result17.setTag("buildNumber", "35610800000000");
+            const tmp17Result18 = require("module_674");
+            tmp17Result18.setTag("appVersion", constants.Version);
+            const _HermesInternal = HermesInternal;
+            const tmp17Result19 = require("module_674");
+            tmp17Result19.setTag("design_id", "" + require("DesignIds").DesignIds.DESIGN_TABS_IA);
+            const tmp17Result20 = require("ReactCompilerGating");
+            if (tmp17Result20.isReactCompilerBuild()) {
+              const setTag = require("module_674").setTag;
+              require("module_674");
+              let str9 = "unoptimized";
+              const tmp17Result22 = require("ReactCompilerGating");
+              if (tmp17Result22.isReactCompilerEnabled()) {
+                str9 = "optimized";
+              }
+              setTag("react_compiler", str9);
+            }
           }
         }
-      }
-    });
+      });
+    }
   }
 }

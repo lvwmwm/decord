@@ -30,21 +30,20 @@ export function extractTraceparentData(str) {
     }
   }
 }
-export function generateSentryTraceHeader() {
-  let traceId = arg0;
-  if (arg0 === undefined) {
+export function generateSentryTraceHeader(traceId, propagationSpanId, sampled) {
+  if (traceId === undefined) {
     const obj = generateSpanId;
     traceId = obj.generateTraceId();
   }
-  let spanId = arg1;
-  if (arg1 === undefined) {
+  let spanId = propagationSpanId;
+  if (propagationSpanId === undefined) {
     const obj2 = generateSpanId;
     spanId = obj2.generateSpanId();
   }
   let str = "";
-  if (undefined !== arg2) {
+  if (undefined !== sampled) {
     let str2 = "-0";
-    if (arg2) {
+    if (sampled) {
       str2 = "-1";
     }
     str = str2;
@@ -68,12 +67,12 @@ export function generateTraceparentHeader(traceId, propagationSpanId2, sampled2)
   }
   return "00-" + traceId + "-" + spanId + "-" + str;
 }
-export function propagationContextFromHeaders(str, arg1) {
+export function propagationContextFromHeaders(sentryTrace, baggage) {
   let tmp4Result10;
   let tmp4Result9;
   let tmp;
-  if (str) {
-    const match = str.match(regExp);
+  if (sentryTrace) {
+    const match = sentryTrace.match(regExp);
     if (match) {
       let flag = true;
       if ("1" !== match[3]) {
@@ -86,7 +85,7 @@ export function propagationContextFromHeaders(str, arg1) {
     }
   }
   const obj2 = MAX_BAGGAGE_STRING_LENGTH;
-  let result = obj2.baggageHeaderToDynamicSamplingContext(arg1);
+  let result = obj2.baggageHeaderToDynamicSamplingContext(baggage);
   let traceId;
   if (tmp != null) {
     traceId = tmp.traceId;

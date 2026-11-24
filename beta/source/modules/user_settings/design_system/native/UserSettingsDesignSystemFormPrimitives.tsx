@@ -1,29 +1,29 @@
-// Module ID: 18464
-// Function ID: 18465
+// Module ID: 17260
+// Function ID: 17261
 // Name: UserSettingsDesignSystemFormPrimitives
-// Dependencies: [32, 19, 17, 1072, 21, 5306, 5919, 7745, 7747, 7746, 7954, 15968, 7733, 7443, 15763, 13020, 7432, 15762, 6327, 2]
+// Dependencies: [32, 19, 17, 1071, 21, 4913, 5504, 7347, 7349, 7348, 7556, 14722, 7335, 7045, 14502, 10981, 7034, 14501, 5929, 2]
 // Exports: default
 
-// Module 18464 (UserSettingsDesignSystemFormPrimitives)
+// Module 17260 (UserSettingsDesignSystemFormPrimitives)
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1072 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import Stack_Stack from "Stack/Stack" /* 6327 */;
-import VoiceNormalIcon from "VoiceNormalIcon" /* 7432 */;
-import TableRow2 from "TableRow" /* 7443 */;
-import TableCheckboxRow from "TableCheckboxRow" /* 7733 */;
-import TableRadioGroup2 from "TableRadioGroup" /* 7745 */;
-import TableRowGroup3 from "TableRowGroup" /* 7746 */;
-import TableRadioRow from "TableRadioRow" /* 7747 */;
-import TableSwitchRow5 from "TableSwitchRow" /* 7954 */;
-import VoiceXIcon from "VoiceXIcon" /* 13020 */;
-import TableSliderRow from "TableSliderRow" /* 15762 */;
-import Slider2 from "Slider" /* 15763 */;
-import Checkbox from "Checkbox" /* 15968 */;
+import Constants from "Constants" /* 1071 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import Stack_Stack from "Stack/Stack" /* 5929 */;
+import VoiceNormalIcon from "VoiceNormalIcon" /* 7034 */;
+import TableRow2 from "TableRow" /* 7045 */;
+import TableCheckboxRow from "TableCheckboxRow" /* 7335 */;
+import TableRadioGroup2 from "TableRadioGroup" /* 7347 */;
+import TableRowGroup3 from "TableRowGroup" /* 7348 */;
+import TableRadioRow from "TableRadioRow" /* 7349 */;
+import TableSwitchRow5 from "TableSwitchRow" /* 7556 */;
+import VoiceXIcon from "VoiceXIcon" /* 10981 */;
+import TableSliderRow from "TableSliderRow" /* 14501 */;
+import Slider2 from "Slider" /* 14502 */;
+import Checkbox from "Checkbox" /* 14722 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let metroImportAll;
@@ -51,24 +51,24 @@ function Switch() {
   let tmp4;
   let tmp6;
   let tmp8;
-  const f117640 = (arg0) => {
+  const f111652 = (arg0) => {
     _undefined(arg0);
   };
   [tmp2, closure_129_0] = _slicedToArray(react.useState(true), 2);
   const tmp = _slicedToArray(react.useState(true), 2);
-  const obj = { value: tmp2, onValueChange: react.useCallback(f117640, []) };
+  const obj = { value: tmp2, onValueChange: react.useCallback(f111652, []) };
   [tmp4, c0] = react.useState(false);
   _slicedToArray(react.useState(false), 2);
-  const obj2 = { value: tmp4, onValueChange: react.useCallback(f117640, []) };
+  const obj2 = { value: tmp4, onValueChange: react.useCallback(f111652, []) };
   [tmp6, c0] = react.useState(true);
   _slicedToArray(react.useState(true), 2);
   c0 = undefined;
-  const obj3 = { value: tmp6, onValueChange: react.useCallback(f117640, []) };
+  const obj3 = { value: tmp6, onValueChange: react.useCallback(f111652, []) };
   [tmp8, c0] = react.useState(false);
   _slicedToArray(react.useState(false), 2);
   const obj5 = { children: items };
   items = [, , , ];
-  const obj4 = { value: tmp8, onValueChange: react.useCallback(f117640, []) };
+  const obj4 = { value: tmp8, onValueChange: react.useCallback(f111652, []) };
   items[0] = metroRequire(Text_Text.Text, { variant: "heading-lg/semibold", children: "Switch" });
   items[1] = metroRequire(Text_Text.Text, { variant: "body-md/normal", children: "Toggle the state of a single setting on or off, immediately" });
   const obj6 = { title: "Emoji", hasIcons: false, children: metroRequire(TableSwitchRow, obj7) };

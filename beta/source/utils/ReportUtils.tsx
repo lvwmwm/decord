@@ -1,14 +1,14 @@
-// Module ID: 11161
-// Function ID: 11162
+// Module ID: 10175
+// Function ID: 10176
 // Name: ReportUtils
-// Dependencies: [5155, 5238, 1388, 1072, 2]
+// Dependencies: [4762, 4845, 1386, 1071, 2]
 // Exports: canDeleteAndReportMessage, canReportAndDeleteInChannel, canReportMessage, canReportUser
 
-// Module 11161 (ReportUtils)
-import ChannelStore from "ChannelStore" /* 5155 */;
-import PermissionStore from "PermissionStore" /* 5238 */;
-import UserStore from "UserStore" /* 1388 */;
-import Constants from "Constants" /* 1072 */;
+// Module 10175 (ReportUtils)
+import ChannelStore from "ChannelStore" /* 4762 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
+import UserStore from "UserStore" /* 1386 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 let c3;

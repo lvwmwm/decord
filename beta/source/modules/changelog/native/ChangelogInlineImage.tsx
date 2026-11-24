@@ -1,19 +1,19 @@
-// Module ID: 9356
-// Function ID: 9357
+// Module ID: 8803
+// Function ID: 8804
 // Name: ChangelogInlineImage
-// Dependencies: [32, 19, 17, 21, 5306, 575, 1496, 5131, 9354, 6010, 1113, 8621, 2]
+// Dependencies: [32, 19, 17, 21, 4913, 575, 1494, 4738, 8801, 5600, 1112, 8211, 2]
 // Exports: default
 
-// Module 9356 (ChangelogInlineImage)
+// Module 8803 (ChangelogInlineImage)
 import nativeDefault from "native" /* 575 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
-import UserSettings from "UserSettings" /* 5131 */;
-import ChangelogImageUtils from "ChangelogImageUtils" /* 9354 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
+import UserSettings from "UserSettings" /* 4738 */;
+import ChangelogImageUtils from "ChangelogImageUtils" /* 8801 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -24,8 +24,8 @@ let obj2;
 let obj3;
 let rect;
 let tmp2;
-const FastImageDefault = tmp2(6010);
-const GifTagDefault = tmp2(8621);
+const FastImageDefault = tmp2(5600);
+const GifTagDefault = tmp2(8211);
 ({ Pressable: hasOwnProperty, View: metroRequire } = react_native);
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let createStyles = createStyles_mod;
@@ -172,9 +172,9 @@ export default function ChangelogInlineImage(title) {
                 },
           children: items1
         };
-        const intl = tmp5(1113).intl;
+        const intl = tmp5(1112).intl;
         string = intl.string;
-        t = tmp5(1113).t;
+        t = tmp5(1112).t;
         items1 = [tmp19Result, ];
         let tmp19Result2 = null;
         const tmp27 = metroImportAll;

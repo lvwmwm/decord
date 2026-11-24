@@ -1,44 +1,31 @@
 // Module ID: 4671
 // Function ID: 4672
-// Dependencies: [2197]
+// Dependencies: []
 
 // Module 4671
-import buildLocalizeFn from "buildLocalizeFn" /* 2197 */;
-
-let obj;
 let obj3;
 let obj4;
 let obj5;
 let obj6;
 let obj7;
-if (!buildLocalizeFn) {
-  obj = { default: buildLocalizeFn };
-  const obj2 = { default: buildLocalizeFn };
-} else {
-  obj = buildLocalizeFn;
-}
-const date = {
-  ordinalNumber(arg0, arg1) {
-    return Number(arg0) + "-oji";
-  },
-  era: obj.default(obj3),
-  quarter: obj.default(obj4),
-  month: obj.default(obj5),
-  day: obj.default(obj6),
-  dayPeriod: obj.default(obj7)
-};
-obj3 = { values: { narrow: ["pr. Kr.", "po Kr."], abbreviated: ["pr. Kr.", "po Kr."], wide: ["prie\u0161 Krist\u0173", "po Kristaus"] }, defaultWidth: "wide" };
-obj4 = {
-  values: { narrow: ["1", "2", "3", "4"], abbreviated: ["I ketv.", "II ketv.", "III ketv.", "IV ketv."], wide: ["I ketvirtis", "II ketvirtis", "III ketvirtis", "IV ketvirtis"] },
-  defaultWidth: "wide",
-  formattingValues: { narrow: ["1", "2", "3", "4"], abbreviated: ["I k.", "II k.", "III k.", "IV k."], wide: ["I ketvirtis", "II ketvirtis", "III ketvirtis", "IV ketvirtis"] },
-  defaultFormattingWidth: "wide",
-  argumentCallback(arg0) {
-    return arg0 - 1;
+if (Intl.ListFormat) {
+  const _Intl = Intl;
+  if (typeof Intl.ListFormat.__addLocaleData === "function") {
+    const _Intl2 = Intl;
+    const obj2 = { data: obj3, locale: "es" };
+    obj3 = { conjunction: obj4, disjunction: obj5, unit: obj6 };
+    obj4 = { long: { end: "{0} y {1}", middle: "{0}, {1}", pair: "{0} y {1}", start: "{0}, {1}" }, narrow: { end: "{0} y {1}", middle: "{0}, {1}", pair: "{0} y {1}", start: "{0}, {1}" }, short: { end: "{0} y {1}", middle: "{0}, {1}", pair: "{0} y {1}", start: "{0}, {1}" } };
+    obj5 = { long: { end: "{0} o {1}", middle: "{0}, {1}", pair: "{0} o {1}", start: "{0}, {1}" }, narrow: { end: "{0} o {1}", middle: "{0}, {1}", pair: "{0} o {1}", start: "{0}, {1}" }, short: { end: "{0} o {1}", middle: "{0}, {1}", pair: "{0} o {1}", start: "{0}, {1}" } };
+    obj6 = { long: { end: "{0} y {1}", middle: "{0}, {1}", pair: "{0} y {1}", start: "{0}, {1}" }, narrow: { end: "{0} {1}", middle: "{0} {1}", pair: "{0} {1}", start: "{0} {1}" }, short: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0} y {1}", start: "{0}, {1}" } };
+    ListFormat.__addLocaleData(obj2);
   }
-};
-obj5 = { values: { narrow: ["S", "V", "K", "B", "G", "B", "L", "R", "R", "S", "L", "G"], abbreviated: ["saus.", "vas.", "kov.", "bal.", "geg.", "bir\u017E.", "liep.", "rugp.", "rugs.", "spal.", "lapkr.", "gruod."], wide: ["sausis", "vasaris", "kovas", "balandis", "gegu\u017E\u0117", "bir\u017Eelis", "liepa", "rugpj\u016Btis", "rugs\u0117jis", "spalis", "lapkritis", "gruodis"] }, defaultWidth: "wide", formattingValues: { narrow: ["S", "V", "K", "B", "G", "B", "L", "R", "R", "S", "L", "G"], abbreviated: ["saus.", "vas.", "kov.", "bal.", "geg.", "bir\u017E.", "liep.", "rugp.", "rugs.", "spal.", "lapkr.", "gruod."], wide: ["sausio", "vasario", "kovo", "baland\u017Eio", "gegu\u017E\u0117s", "bir\u017Eelio", "liepos", "rugpj\u016B\u010Dio", "rugs\u0117jo", "spalio", "lapkri\u010Dio", "gruod\u017Eio"] }, defaultFormattingWidth: "wide" };
-obj6 = { values: { narrow: ["S", "P", "A", "T", "K", "P", "\u0160"], short: ["Sk", "Pr", "An", "Tr", "Kt", "Pn", "\u0160t"], abbreviated: ["sk", "pr", "an", "tr", "kt", "pn", "\u0161t"], wide: ["sekmadienis", "pirmadienis", "antradienis", "tre\u010Diadienis", "ketvirtadienis", "penktadienis", "\u0161e\u0161tadienis"] }, defaultWidth: "wide", formattingValues: { narrow: ["S", "P", "A", "T", "K", "P", "\u0160"], short: ["Sk", "Pr", "An", "Tr", "Kt", "Pn", "\u0160t"], abbreviated: ["sk", "pr", "an", "tr", "kt", "pn", "\u0161t"], wide: ["sekmadien\u012F", "pirmadien\u012F", "antradien\u012F", "tre\u010Diadien\u012F", "ketvirtadien\u012F", "penktadien\u012F", "\u0161e\u0161tadien\u012F"] }, defaultFormattingWidth: "wide" };
-obj7 = { values: { narrow: { am: "pr. p.", pm: "pop.", midnight: "vidurnaktis", noon: "vidurdienis", morning: "rytas", afternoon: "diena", evening: "vakaras", night: "naktis" }, abbreviated: { am: "prie\u0161piet", pm: "popiet", midnight: "vidurnaktis", noon: "vidurdienis", morning: "rytas", afternoon: "diena", evening: "vakaras", night: "naktis" }, wide: { am: "prie\u0161piet", pm: "popiet", midnight: "vidurnaktis", noon: "vidurdienis", morning: "rytas", afternoon: "diena", evening: "vakaras", night: "naktis" } }, defaultWidth: "wide", formattingValues: { narrow: { am: "pr. p.", pm: "pop.", midnight: "vidurnaktis", noon: "perpiet", morning: "rytas", afternoon: "popiet\u0117", evening: "vakaras", night: "naktis" }, abbreviated: { am: "prie\u0161piet", pm: "popiet", midnight: "vidurnaktis", noon: "perpiet", morning: "rytas", afternoon: "popiet\u0117", evening: "vakaras", night: "naktis" }, wide: { am: "prie\u0161piet", pm: "popiet", midnight: "vidurnaktis", noon: "perpiet", morning: "rytas", afternoon: "popiet\u0117", evening: "vakaras", night: "naktis" } }, defaultFormattingWidth: "wide" };
-
-export default date;
+}
+let prop = globalThis.__FORMATJS_LISTFORMAT_DATA__;
+const _globalThis = globalThis;
+if (!prop) {
+  prop = [];
+}
+_globalThis.__FORMATJS_LISTFORMAT_DATA__ = prop;
+const obj = { data: obj7, locale: "es" };
+obj7 = { conjunction: { long: { end: "{0} y {1}", middle: "{0}, {1}", pair: "{0} y {1}", start: "{0}, {1}" }, narrow: { end: "{0} y {1}", middle: "{0}, {1}", pair: "{0} y {1}", start: "{0}, {1}" }, short: { end: "{0} y {1}", middle: "{0}, {1}", pair: "{0} y {1}", start: "{0}, {1}" } }, disjunction: { long: { end: "{0} o {1}", middle: "{0}, {1}", pair: "{0} o {1}", start: "{0}, {1}" }, narrow: { end: "{0} o {1}", middle: "{0}, {1}", pair: "{0} o {1}", start: "{0}, {1}" }, short: { end: "{0} o {1}", middle: "{0}, {1}", pair: "{0} o {1}", start: "{0}, {1}" } }, unit: { long: { end: "{0} y {1}", middle: "{0}, {1}", pair: "{0} y {1}", start: "{0}, {1}" }, narrow: { end: "{0} {1}", middle: "{0} {1}", pair: "{0} {1}", start: "{0} {1}" }, short: { end: "{0}, {1}", middle: "{0}, {1}", pair: "{0} y {1}", start: "{0}, {1}" } } };
+prop.push(obj);

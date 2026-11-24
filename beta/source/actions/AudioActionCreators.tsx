@@ -1,28 +1,28 @@
-// Module ID: 6215
-// Function ID: 6216
+// Module ID: 5809
+// Function ID: 5810
 // Name: AudioActionCreators
-// Dependencies: [5, 6216, 6219, 5155, 2133, 6061, 5209, 1388, 1072, 6220, 6065, 3, 1256, 551, 572, 6221, 6178, 6225, 6242, 2]
+// Dependencies: [5, 5810, 5813, 4762, 2131, 5654, 4816, 1386, 1071, 5814, 5658, 3, 1255, 551, 572, 5815, 5772, 5819, 5836, 2]
 
-// Module 6215 (AudioActionCreators)
+// Module 5809 (AudioActionCreators)
 import LoggerDefault from "Logger" /* 3 */;
 import debounceDefault from "debounce" /* 551 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import Constants2 from "Constants" /* 6065 */;
-import trackVoiceAndVideoSettingsUpdateDefault from "trackVoiceAndVideoSettingsUpdate" /* 6178 */;
-import Constants3 from "Constants" /* 6220 */;
-import AudioSettingsUtils from "AudioSettingsUtils" /* 6221 */;
-import applyBackgroundOption from "applyBackgroundOption" /* 6225 */;
-import StreamQualityUtils from "StreamQualityUtils" /* 6242 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import Constants2 from "Constants" /* 5658 */;
+import trackVoiceAndVideoSettingsUpdateDefault from "trackVoiceAndVideoSettingsUpdate" /* 5772 */;
+import Constants3 from "Constants" /* 5814 */;
+import AudioSettingsUtils from "AudioSettingsUtils" /* 5815 */;
+import applyBackgroundOption from "applyBackgroundOption" /* 5819 */;
+import StreamQualityUtils from "StreamQualityUtils" /* 5836 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import SpatialAudioStore from "SpatialAudioStore" /* 6216 */;
-import CertifiedDeviceStore from "CertifiedDeviceStore" /* 6219 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import MediaEngineStore from "MediaEngineStore" /* 2133 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 6061 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
-import UserStore from "UserStore" /* 1388 */;
-import Constants from "Constants" /* 1072 */;
+import SpatialAudioStore from "SpatialAudioStore" /* 5810 */;
+import CertifiedDeviceStore from "CertifiedDeviceStore" /* 5813 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import MediaEngineStore from "MediaEngineStore" /* 2131 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5654 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4816 */;
+import UserStore from "UserStore" /* 1386 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 let c1;
@@ -258,9 +258,9 @@ let obj2 = {
     obj2.dispatch(obj3);
     closure_16(userId, DEFAULT, snapVolumeToDefaultResult);
   },
-  setSpatialAudioOverrides(mergeResult) {
+  setSpatialAudioOverrides(mergeResult, CONJURE) {
     obj = DispatcherDefault;
-    const obj2 = { type: "AUDIO_SET_SPATIAL_AUDIO_OVERRIDES", overrides: mergeResult };
+    const obj2 = { type: "AUDIO_SET_SPATIAL_AUDIO_OVERRIDES", overrides: mergeResult, source: CONJURE };
     obj.dispatch(obj2);
   },
   setSpatialAudioEnabled(enabled) {
@@ -392,7 +392,7 @@ let obj2 = {
       }
       const obj4 = { volume, location_stack: tmp, voice_channel_type: type };
       type = undefined;
-      const track = tmp3(1256).track;
+      const track = tmp3(1255).track;
       const MEDIA_INPUT_VOLUME_CHANGED = constants2.MEDIA_INPUT_VOLUME_CHANGED;
       AnalyticsUtilsDefault;
       if (channel != null) {
@@ -416,7 +416,7 @@ let obj2 = {
       }
       const obj4 = { volume, location_stack: tmp, voice_channel_type: type };
       type = undefined;
-      const track = tmp3(1256).track;
+      const track = tmp3(1255).track;
       const MEDIA_OUTPUT_VOLUME_CHANGED = constants2.MEDIA_OUTPUT_VOLUME_CHANGED;
       AnalyticsUtilsDefault;
       if (channel != null) {

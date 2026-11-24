@@ -1,17 +1,17 @@
-// Module ID: 11780
-// Function ID: 11781
+// Module ID: 9645
+// Function ID: 9646
 // Name: UnifiedGiftModalRecipientSelectScreen
-// Dependencies: [19, 17, 10244, 21, 5306, 575, 1502, 11781, 11748, 2]
+// Dependencies: [19, 17, 9646, 21, 4913, 575, 1500, 9647, 9613, 2]
 // Exports: default
 
-// Module 11780 (UnifiedGiftModalRecipientSelectScreen)
+// Module 9645 (UnifiedGiftModalRecipientSelectScreen)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import UserRowConstants from "UserRowConstants" /* 10244 */;
-import UnifiedGiftModalTypes from "UnifiedGiftModalTypes" /* 11748 */;
+import UnifiedGiftModalTypes from "UnifiedGiftModalTypes" /* 9613 */;
+import UserRowConstants from "UserRowConstants" /* 9646 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
@@ -27,7 +27,7 @@ const result = size.fileFinishedImporting("modules/checkout/native/gifting/Unifi
 
 export default function UnifiedGiftModalRecipientSelectScreen(setRecipientUser) {
   setRecipientUser = setRecipientUser.setRecipientUser;
-  const obj = setRecipientUser(1502);
+  const obj = setRecipientUser(1500);
   importDefault = obj.useNavigation();
   return <View style={closure_6().container}>{null}</View>;
 };

@@ -1,18 +1,18 @@
-// Module ID: 18307
-// Function ID: 18308
+// Module ID: 17090
+// Function ID: 17091
 // Name: SelectScreen
-// Dependencies: [19, 17, 18304, 21, 5306, 5882, 8108, 7770, 1502, 7415, 5919, 1113, 2]
+// Dependencies: [19, 17, 17087, 21, 4913, 5467, 7711, 7372, 1500, 7017, 5504, 1112, 2]
 // Exports: default
 
-// Module 18307 (SelectScreen)
+// Module 17090 (SelectScreen)
 import react_native from "react-native" /* 17 */;
-import NavigatorConstants from "NavigatorConstants" /* 5882 */;
-import useWideAuthViewDefault from "useWideAuthView" /* 7770 */;
-import RowButton from "RowButton" /* 8108 */;
-import MFAConstants from "MFAConstants" /* 18304 */;
+import NavigatorConstants from "NavigatorConstants" /* 5467 */;
+import useWideAuthViewDefault from "useWideAuthView" /* 7372 */;
+import RowButton from "RowButton" /* 7711 */;
+import MFAConstants from "MFAConstants" /* 17087 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

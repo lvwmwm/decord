@@ -1,30 +1,24 @@
-// Module ID: 12122
-// Function ID: 12123
+// Module ID: 10245
+// Function ID: 10246
 // Name: UserProfileReorderActionSheet
-// Dependencies: [19, 17, 21, 5306, 575, 1630, 6321, 7951, 5560, 5919, 1113, 2]
+// Dependencies: [19, 21, 4913, 575, 1628, 5923, 7553, 5145, 5504, 1112, 2]
 // Exports: default
 
-// Module 12122 (UserProfileReorderActionSheet)
-import react_native from "react-native" /* 17 */;
+// Module 10245 (UserProfileReorderActionSheet)
 import nativeDefault from "native" /* 575 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
+let closure_4;
 let hasOwnProperty;
-let metroRequire;
 let obj2;
-let obj3;
-const View = react_native.View;
-({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
-let createStyles = createStyles_mod;
-let obj = { content: obj2, list: obj3 };
+({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
+let obj = { content: obj2 };
 obj2 = { gap: nativeDefault.space.PX_16, paddingTop: nativeDefault.space.PX_8 };
-createStyles = createStyles.createStyles;
-obj3 = { gap: nativeDefault.space.PX_16 };
-let closure_7 = createStyles(obj);
+let closure_6 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/user_profile/native/UserProfileReorderActionSheet.tsx");
 
 export default function UserProfileReorderActionSheet(returnFocusRef) {
@@ -37,27 +31,25 @@ export default function UserProfileReorderActionSheet(returnFocusRef) {
   let obj2;
   returnFocusRef = returnFocusRef.returnFocusRef;
   ({ dismissAccessibilityLabel, children } = returnFocusRef);
-  const tmp = closure_7();
   const items = [returnFocusRef];
+  const tmp = closure_6();
   const bottom = useSafeAreaInsetsDefault().bottom;
   const effect = react.useEffect(() => {
     let ref;
     return () => {
-      const obj = returnFocusRef(dependencyMap[6]);
+      const obj = returnFocusRef(dependencyMap[5]);
       const obj2 = { ref, delay: 100 };
       return obj.setAccessibilityFocus(obj2);
     };
   }, items);
-  let obj = { scrollable: true, startExpanded: true, dismissAccessibilityLabel, children: closure_6(BottomSheetScrollView, obj2) };
-  const ActionSheet = returnFocusRef(7951).ActionSheet;
+  let obj = { scrollable: true, startExpanded: true, dismissAccessibilityLabel, children: closure_5(BottomSheetScrollView, obj2) };
+  const ActionSheet = returnFocusRef(7553).ActionSheet;
   obj2 = { contentContainerStyle: items1, children: items2 };
   items1 = [tmp.content, { paddingBottom: bottom }];
-  BottomSheetScrollView = returnFocusRef(5560).BottomSheetScrollView;
-  const obj3 = { variant: "body-sm/medium", color: "text-subtle", children: intl.string(returnFocusRef(1113).t["S7X7/T"]) };
-  const Text = returnFocusRef(5919).Text;
-  intl = returnFocusRef(1113).intl;
-  items2 = [closure_5(Text, obj3), ];
-  const obj4 = { accessibilityRole: "list", style: tmp.list, children };
-  items2[1] = closure_5(View, obj4);
-  return closure_5(ActionSheet, obj);
+  BottomSheetScrollView = returnFocusRef(5145).BottomSheetScrollView;
+  const obj3 = { variant: "body-sm/medium", color: "text-subtle", children: intl.string(returnFocusRef(1112).t["S7X7/T"]) };
+  const Text = returnFocusRef(5504).Text;
+  intl = returnFocusRef(1112).intl;
+  items2 = [closure_4(Text, obj3), children];
+  return closure_4(ActionSheet, obj);
 };

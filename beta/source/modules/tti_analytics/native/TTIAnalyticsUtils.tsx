@@ -1,39 +1,40 @@
-// Module ID: 8678
-// Function ID: 8679
+// Module ID: 8268
+// Function ID: 8269
 // Name: TTIAnalyticsUtils
-// Dependencies: [32, 5, 8679, 5522, 1192, 502, 5155, 1362, 1072, 8775, 5162, 21, 5263, 6189, 1269, 1379, 3, 5483, 5482, 5489, 10, 1242, 1256, 8776, 8778, 9, 1089, 1374, 1380, 8779, 8780, 6259, 6330, 2121, 2]
+// Dependencies: [32, 5, 8269, 5530, 1191, 502, 4762, 1360, 1071, 8370, 4769, 21, 4870, 5783, 1268, 1377, 3, 5090, 5089, 5096, 10, 1241, 1255, 8371, 8373, 9, 1088, 8374, 1372, 1378, 8375, 8376, 5861, 5932, 2119, 2]
 // Exports: currentLoadId, getLastTrackedAppUiViewed2Properties, trackAppLaunchCompleted, trackAppOpened, trackAppUIViewed
 
-// Module 8678 (TTIAnalyticsUtils)
+// Module 8268 (TTIAnalyticsUtils)
 import LoggerDefault from "Logger" /* 3 */;
 import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1072 */;
-import SentryUtilsDefault from "SentryUtils" /* 1242 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import ChannelConstants from "ChannelConstants" /* 5162 */;
-import DeviceUtils from "DeviceUtils" /* 5263 */;
-import RootNavigationRef from "RootNavigationRef" /* 5483 */;
-import react_nativeDefault from "react-native" /* 5489 */;
-import getMediaPerformanceClassDefault from "getMediaPerformanceClass" /* 6189 */;
-import AcceptInviteConstants from "AcceptInviteConstants" /* 8775 */;
-import AppStartInfo2 from "AppStartInfo" /* 8776 */;
+import Constants from "Constants" /* 1071 */;
+import SentryUtilsDefault from "SentryUtils" /* 1241 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import ChannelConstants from "ChannelConstants" /* 4769 */;
+import DeviceUtils from "DeviceUtils" /* 4870 */;
+import RootNavigationRef from "RootNavigationRef" /* 5090 */;
+import react_nativeDefault from "react-native" /* 5096 */;
+import getMediaPerformanceClassDefault from "getMediaPerformanceClass" /* 5783 */;
+import AcceptInviteConstants from "AcceptInviteConstants" /* 8370 */;
+import AppStartInfo2 from "AppStartInfo" /* 8371 */;
+import DidBackgroundAppNativeExperimentDefault from "DidBackgroundAppNativeExperiment" /* 8374 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import CacheStore from "CacheStore" /* 8679 */;
-import ExperimentStore from "ExperimentStore" /* 5522 */;
-import ThemeStore from "ThemeStore" /* 1192 */;
+import CacheStore from "CacheStore" /* 8269 */;
+import ExperimentStore from "ExperimentStore" /* 5530 */;
+import ThemeStore from "ThemeStore" /* 1191 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1362 */;
-import v1 from "v1" /* 1269 */;
-import react_native from "react-native" /* 1379 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import DeveloperOptionsStore from "DeveloperOptionsStore" /* 1360 */;
+import v1 from "v1" /* 1268 */;
+import react_native from "react-native" /* 1377 */;
 import size from "module_2" /* 2 */;
 
 let c6, c7, c8;
 
 let tmp;
-const NavigationRouteUtils = tmp(5482);
+const NavigationRouteUtils = tmp(5089);
 function getDeviceMetadata() {
   let obj2;
   let obj3;
@@ -198,6 +199,84 @@ let obj = function _consumeAppOpenBadgeState() {
   });
   return obj(...arguments);
 };
+function getLastBackgroundedAt() {
+  return obj(...arguments);
+}
+obj = function _getLastBackgroundedAt() {
+  obj = _asyncToGenerator(async (arg0, value) => {
+    let obj3;
+    if (c5 === 2) {
+      c5 = 3;
+      throw new TypeError("Generator functions may not be called on executing generators");
+    } else if (tmp3 === 3) {
+      if (arg0 === 1) {
+        throw value;
+      } else if (arg0 === 2) {
+        const obj2 = { value, done: true };
+        return obj2;
+      } else {
+        return { value: "HermesInternal", done: null };
+      }
+    } else {
+      let c3;
+      try {
+        let closure_0;
+        c5 = 2;
+        if (0 === c4) {
+          if (arg0 === 1) {
+            c5 = 3;
+            throw value;
+          } else if (arg0 === 2) {
+            c5 = 3;
+            const obj4 = { value, done: true };
+            return obj4;
+          } else {
+            let closure_1 = tmp;
+            closure_0 = tmp4;
+            c3 = 1;
+            c4 = 2;
+            c5 = 1;
+            const obj5 = { value: obj3.getLastBackgroundedAt(), done: false };
+            obj3 = react_nativeDefault;
+            return obj5;
+          }
+        } else if (1 === c4) {
+          c3 = 0;
+          closure_0 = closure_2;
+          const tmp9 = c22;
+          if (!tmp9) {
+            c22 = true;
+            logger.warn("Failed to read last backgrounded time", closure_0);
+          }
+          c5 = 3;
+          return { value: null, done: true };
+        } else if (arg0 === 1) {
+          c5 = 3;
+          throw value;
+        } else if (arg0 === 2) {
+          c3 = 0;
+          c5 = 3;
+          const obj6 = { value, done: true };
+          return obj6;
+        } else {
+          c3 = 0;
+          c5 = 3;
+          obj = { value, done: true };
+          return obj;
+        }
+      } catch (tmp15) {
+        closure_2 = tmp15;
+        if (0 === c3) {
+          c5 = 3;
+          throw tmp15;
+        } else {
+          c4 = 1;
+        }
+      }
+    }
+  });
+  return obj(...arguments);
+};
 function sharedProperties(screen_name, has_cached_data, arg2) {
   let tmp;
   obj = { load_id, duration_ms_since_app_opened: Date.now() - arg2, screen_name, has_cached_data, manifest: tmp };
@@ -221,12 +300,12 @@ obj = function _trackAppUIViewedAsync() {
         timeout = setTimeout(() => {
           obj = closure_1_1(closure_1_2[25]);
           obj.setTTICallback(() => true);
-          closure_1_32();
-          c30 = null;
+          closure_1_35();
+          c33 = null;
         }, 15 * closure_1_1(closure_1_2[26]).Millis.SECOND);
         obj = closure_1_1(closure_1_2[25]);
         obj.setTTICallback(() => {
-          const tmp = closure_1_24();
+          const tmp = closure_1_25();
           let flag = false;
           if (null != tmp) {
             if (!set2.has(tmp)) {
@@ -254,11 +333,11 @@ obj = function _trackAppUIViewedAsync() {
           let flag2 = flag;
           if (flag2) {
             const _clearTimeout = clearTimeout;
-            clearTimeout(c30);
+            clearTimeout(c33);
             const _setTimeout = setTimeout;
             const timerId = setTimeout(() => {
-              closure_1_32();
-              c30 = null;
+              closure_1_35();
+              c33 = null;
             }, 1000);
             flag2 = true;
           }
@@ -331,7 +410,7 @@ obj = function _trackAppUIViewedAsync() {
             let _setTimeout = setTimeout;
             let timerId = setTimeout(() => {
               function logLegacyAppUiViewed() {
-                return closure_1_29(...arguments);
+                return closure_1_32(...arguments);
               }
               let str = closure_1_0;
               if (closure_1_0 == null) {
@@ -447,14 +526,15 @@ obj = function _trackAppUIViewed() {
   obj = _asyncToGenerator(async (arg0, value) => {
     let closure_2;
     let closure_3;
-    let obj11;
+    let didBackgroundApp;
+    let obj12;
     let result;
     let tmp2;
     function logToDevice(json) {
       obj = { logged_at: Date.now(), user_id: id.getId() };
       let merged = Object.assign(json);
       const timestamp = Date.now();
-      const arr = closure_34(obj);
+      const arr = closure_37(obj);
       const item = arr.forEach((item) => {
         obj = { type: "app_ui_viewed", batch_id };
         const merged = Object.assign(item);
@@ -463,7 +543,7 @@ obj = function _trackAppUIViewed() {
         obj2.logToDevice(json);
       });
       const batch_id = timestamp + 1;
-      const arr2 = closure_34(allExperimentAssignments.getAllExperimentAssignments());
+      const arr2 = closure_37(allExperimentAssignments.getAllExperimentAssignments());
       const item1 = arr2.forEach((item) => {
         obj = { batch_id, type: "experiments" };
         const merged = Object.assign(item);
@@ -484,8 +564,8 @@ obj = function _trackAppUIViewed() {
       if (arg0 === 1) {
         throw value;
       } else if (arg0 === 2) {
-        let obj2 = { value, done: true };
-        return obj2;
+        let obj3 = { value, done: true };
+        return obj3;
       } else {
         return { value: "HermesInternal", done: null };
       }
@@ -498,8 +578,10 @@ obj = function _trackAppUIViewed() {
         let appFirstVisibleTime;
         let extraProperties;
         let closure_7;
+        let id;
         let startup_cpu_usage_cumulative;
-        let obj16;
+        let closure_10;
+        let obj18;
         c6 = 2;
         if (0 === c5) {
           if (arg0 === 1) {
@@ -507,8 +589,8 @@ obj = function _trackAppUIViewed() {
             throw value;
           } else if (arg0 === 2) {
             c6 = 3;
-            const obj10 = { value, done: true };
-            return obj10;
+            const obj11 = { value, done: true };
+            return obj11;
           } else {
             let closure_4 = tmp2;
             screen_name = undefined;
@@ -519,20 +601,29 @@ obj = function _trackAppUIViewed() {
             appFirstVisibleTime = undefined;
             extraProperties = undefined;
             closure_7 = undefined;
+            id = undefined;
             startup_cpu_usage_cumulative = undefined;
-            obj16 = undefined;
-            const tmp92 = getRedesignScreenName();
-            let unknown_str = tmp92;
-            if (tmp92 == null) {
+            closure_10 = undefined;
+            obj18 = undefined;
+            const tmp111 = getRedesignScreenName();
+            let unknown_str = tmp111;
+            if (tmp111 == null) {
               unknown_str = "unknown";
             }
             screen_name = unknown_str;
+            const obj17 = DidBackgroundAppNativeExperimentDefault;
+            const useNative = obj17.getConfig({ location: "app_ui_viewed2" }).useNative;
             const AppStartInfo = AppStartInfo2.AppStartInfo;
-            const items = [AppStartInfo.getAppStartInfo(), consumeAppOpenBadgeState()];
+            const items = [AppStartInfo.getAppStartInfo(), consumeAppOpenBadgeState(), ];
+            let tmp87 = null;
+            if (useNative) {
+              tmp87 = getLastBackgroundedAt();
+            }
+            items[2] = tmp87;
             c5 = 1;
             c6 = 1;
-            const obj12 = { value: all(items), done: false };
-            return obj12;
+            const obj13 = { value: all(items), done: false };
+            return obj13;
           }
         } else if (1 === c5) {
           if (arg0 === 1) {
@@ -540,21 +631,22 @@ obj = function _trackAppUIViewed() {
             throw value;
           } else if (arg0 === 2) {
             c6 = 3;
-            const obj13 = { value, done: true };
-            return obj13;
+            const obj14 = { value, done: true };
+            return obj14;
           } else {
             closure_1 = value;
-            paths = closure_132_3(closure_1, 2);
+            paths = closure_132_3(closure_1, 3);
             tmp = paths[0];
             appCreatedTime = tmp.appCreatedTime;
             appFirstVisibleTime = tmp.appFirstVisibleTime;
             extraProperties = tmp.extraProperties;
             closure_7 = paths[1];
-            const obj20 = closure_132_1(closure_132_2[19]);
-            const allNativeTimestamps = obj20.getAllNativeTimestamps();
+            id = paths[2];
+            const obj22 = closure_132_1(closure_132_2[19]);
+            const allNativeTimestamps = obj22.getAllNativeTimestamps();
             c5 = 2;
             c6 = 1;
-            const obj14 = {
+            const obj15 = {
               value: allNativeTimestamps.then((nativeLogs) => {
                         c1(paths[20]).logGroups[0].nativeLogs = nativeLogs;
                         obj = c1(paths[25]);
@@ -562,7 +654,7 @@ obj = function _trackAppUIViewed() {
                       }),
               done: false
             };
-            return obj14;
+            return obj15;
           }
         } else if (2 === c5) {
           if (arg0 === 1) {
@@ -570,11 +662,11 @@ obj = function _trackAppUIViewed() {
             throw value;
           } else if (arg0 === 2) {
             c6 = 3;
-            const obj15 = { value, done: true };
-            return obj15;
+            const obj16 = { value, done: true };
+            return obj16;
           } else {
-            const obj19 = closure_132_1(closure_132_2[27]);
-            const cumulativeCPUUsage = obj19.getCumulativeCPUUsage();
+            const obj21 = closure_132_1(closure_132_2[28]);
+            const cumulativeCPUUsage = obj21.getCumulativeCPUUsage();
             let usage;
             if (cumulativeCPUUsage != null) {
               usage = cumulativeCPUUsage.usage;
@@ -584,7 +676,13 @@ obj = function _trackAppUIViewed() {
               c1 = null;
             }
             startup_cpu_usage_cumulative = c1;
-            obj16 = { load_id, screen_name, has_cached_data: closure_132_5.hasCache(), startup_cpu_usage_cumulative, theme: theme.theme, ios_using_anchored_scroller: result };
+            let tmp13 = null != id;
+            if (tmp13) {
+              let obj2 = closure_132_1(closure_132_2[25]);
+              tmp13 = id > obj2.getStartTime(appFirstVisibleTime);
+            }
+            closure_10 = tmp13;
+            obj18 = { did_background_app: didBackgroundApp, load_id, screen_name, has_cached_data: closure_132_5.hasCache(), startup_cpu_usage_cumulative, theme: theme.theme, ios_using_anchored_scroller: result };
             let merged = Object.assign(closure_132_16());
             paths = extraProperties;
             if (extraProperties == null) {
@@ -592,42 +690,43 @@ obj = function _trackAppUIViewed() {
             }
             const merged1 = Object.assign(paths);
             const merged2 = Object.assign(closure_7);
-            let obj3 = closure_132_1(closure_132_2[25]);
-            const merged3 = Object.assign(obj3.serializeTTITracker(appFirstVisibleTime));
+            const obj4 = closure_132_1(closure_132_2[25]);
+            const merged3 = Object.assign(obj4.serializeTTITracker(appFirstVisibleTime));
+            didBackgroundApp = closure_132_1(closure_132_2[25]).didBackgroundApp || closure_10;
             result = null;
-            const obj4 = closure_132_0(closure_132_2[28]);
-            if (obj4.isIOS()) {
-              const obj5 = closure_132_0(closure_132_2[29]);
-              result = obj5.isIOSAnchoredChatScrollerEnabled();
+            const obj5 = closure_132_0(closure_132_2[29]);
+            if (obj5.isIOS()) {
+              const obj6 = closure_132_0(closure_132_2[30]);
+              result = obj6.isIOSAnchoredChatScrollerEnabled();
             }
             let str = "Track app_ui_viewed2";
-            const obj6 = closure_132_1(closure_132_2[20]);
-            obj6.mark("\u2757", "Track app_ui_viewed2");
-            const obj7 = closure_132_1(closure_132_2[22]);
-            obj7.track(APP_UI_VIEWED2.APP_UI_VIEWED2, obj16, { logEventProperties: true });
-            const obj8 = closure_132_0(closure_132_2[30]);
-            const result1 = obj8.trackAndroidArtProfileSnapshot(load_id, closure_132_16());
-            let closure_31 = obj16;
+            const obj7 = closure_132_1(closure_132_2[20]);
+            obj7.mark("\u2757", "Track app_ui_viewed2");
+            const obj8 = closure_132_1(closure_132_2[22]);
+            obj8.track(APP_UI_VIEWED2.APP_UI_VIEWED2, obj18, { logEventProperties: true });
+            const obj9 = closure_132_0(closure_132_2[31]);
+            const result1 = obj9.trackAndroidArtProfileSnapshot(load_id, closure_132_16());
+            let closure_34 = obj18;
             if (alertStartupMetrics.alertStartupMetrics) {
-              const obj17 = {
+              const obj19 = {
                 importer() {
-                            const promise = unknown_str(paths[33])(paths[32], paths.paths);
+                            const promise = unknown_str(paths[34])(paths[33], paths.paths);
                             return promise.then((result) => {
                               let closure_0 = result.default;
                               return (arg0) => {
                                 let combined;
-                                const time_first_contentful_paint = closure_2_9.time_first_contentful_paint;
-                                const time_before_js_bundle_start = closure_2_9.time_before_js_bundle_start;
-                                const android_time_creation_to_create_main_activity = closure_2_9.android_time_creation_to_create_main_activity;
-                                const app_start_type = closure_2_9.app_start_type;
-                                let str = closure_2_9.app_launch_scenario;
+                                const time_first_contentful_paint = closure_2_11.time_first_contentful_paint;
+                                const time_before_js_bundle_start = closure_2_11.time_before_js_bundle_start;
+                                const android_time_creation_to_create_main_activity = closure_2_11.android_time_creation_to_create_main_activity;
+                                const app_start_type = closure_2_11.app_start_type;
+                                let str = closure_2_11.app_launch_scenario;
                                 const tmp = closure_3_14;
                                 const tmp2 = closure_0;
                                 if (str == null) {
                                   str = "-";
                                 }
                                 obj = { title: "App start times", body: combined.trimStart() };
-                                combined = "\nFirstContentfulPaint (TTI): " + time_first_contentful_paint + "ms\n  \u2022 App start \u2192 JS bundle start: " + time_before_js_bundle_start + "ms\n  \u2022 MainAppl. \u2192 MainActivity start: " + android_time_creation_to_create_main_activity + "ms\n    \u2022 Start type: " + app_start_type + "\n    \u2022 Launch scenario: " + str + "\n(legacy) Cached msg render: " + closure_2_9.time_display_messages_with_cache_end + "ms\n              ";
+                                combined = "\nFirstContentfulPaint (TTI): " + time_first_contentful_paint + "ms\n  \u2022 App start \u2192 JS bundle start: " + time_before_js_bundle_start + "ms\n  \u2022 MainAppl. \u2192 MainActivity start: " + android_time_creation_to_create_main_activity + "ms\n    \u2022 Start type: " + app_start_type + "\n    \u2022 Launch scenario: " + str + "\n(legacy) Cached msg render: " + closure_2_11.time_display_messages_with_cache_end + "ms\n              ";
                                 const merged = Object.assign(arg0);
                                 return tmp(tmp2, obj);
                               };
@@ -635,14 +734,14 @@ obj = function _trackAppUIViewed() {
                           },
                 isDismissable: false
               };
-              const obj9 = closure_132_1(closure_132_2[31]);
-              obj9.openLazy(obj17);
+              const obj10 = closure_132_1(closure_132_2[32]);
+              obj10.openLazy(obj19);
             }
             c5 = 3;
             c6 = 1;
-            const obj18 = { value: obj11.logToDeviceEnabled(), done: false };
-            obj11 = closure_132_1(closure_132_2[19]);
-            return obj18;
+            const obj20 = { value: obj12.logToDeviceEnabled(), done: false };
+            obj12 = closure_132_1(closure_132_2[19]);
+            return obj20;
           }
         } else if (arg0 === 1) {
           c6 = 3;
@@ -653,14 +752,14 @@ obj = function _trackAppUIViewed() {
           return obj;
         } else {
           if (value) {
-            logToDevice(obj16);
+            logToDevice(obj18);
           }
           c6 = 3;
           return { value: "HermesInternal", done: null };
         }
-      } catch (tmp71) {
+      } catch (tmp89) {
         c6 = 3;
-        throw tmp71;
+        throw tmp89;
       }
     }
   });
@@ -764,10 +863,11 @@ let c19 = false;
 let tmp2 = new LoggerDefault("TTIAnalytics");
 let closure_20 = tmp2;
 let c21 = false;
+let c22 = false;
 const set = new Set(["private_channel", "guild-forum", "guild-directory", "guild-text", "thread", "redesign-guilds", "redesign-messages"]);
 new Set(["friends_list", "guild-voice", "redesign-guild-voice", "unknown-channel", "redesign-unknown-channel", "channel-list", "other"]);
-let c30 = null;
-let c31 = null;
+let c33 = null;
+let c34 = null;
 let result = size.fileFinishedImporting("modules/tti_analytics/native/TTIAnalyticsUtils.tsx");
 
 export { getDeviceMetadata };
@@ -808,7 +908,7 @@ export function trackAppUIViewed(ModalScreen, arg1, hasCacheResult) {
   }
 }
 export function getLastTrackedAppUiViewed2Properties() {
-  return c31;
+  return c34;
 }
 export function trackAppLaunchCompleted(unknown, hasCacheResult) {
   function trackAppLaunchCompletedAsync() {

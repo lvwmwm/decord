@@ -1,16 +1,16 @@
-// Module ID: 20873
-// Function ID: 20874
+// Module ID: 20143
+// Function ID: 20144
 // Name: LogOutDisclaimer
-// Dependencies: [21, 16496, 5919, 1113, 2997, 6834, 2]
+// Dependencies: [21, 15284, 5504, 1112, 3120, 6425, 2]
 // Exports: default
 
-// Module 20873 (LogOutDisclaimer)
+// Module 20143 (LogOutDisclaimer)
 import Fragment from "Fragment" /* 21 */;
-import intl2 from "intl" /* 1113 */;
-import _modDef2997 from "module_2997" /* 2997 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6834 */;
-import ModalDisclaimer2 from "ModalDisclaimer" /* 16496 */;
+import intl2 from "intl" /* 1112 */;
+import _modDef3120 from "module_3120" /* 3120 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6425 */;
+import ModalDisclaimer2 from "ModalDisclaimer" /* 15284 */;
 import size from "module_2" /* 2 */;
 
 const jsx = Fragment.jsx;
@@ -19,7 +19,7 @@ const result = size.fileFinishedImporting("modules/safety_flows/native/LogOutDis
 export default function LogOutDisclaimer() {
   let intl;
   const ModalDisclaimer = ModalDisclaimer2.ModalDisclaimer;
-  ({ variant: "body-xs/medium", children: intl.format(_modDef2997["0DHxym"], obj3) });
+  ({ variant: "body-xs/medium", children: intl.format(_modDef3120["0DHxym"], obj3) });
   const Text = Text_Text.Text;
   intl = intl2.intl;
   return <ModalDisclaimer>{null}</ModalDisclaimer>;

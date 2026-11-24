@@ -1,12 +1,12 @@
-// Module ID: 5952
-// Function ID: 5953
+// Module ID: 5542
+// Function ID: 5543
 // Name: utils
-// Dependencies: [5953, 5955, 2]
+// Dependencies: [5543, 5545, 2]
 // Exports: isAgeRestrictedContentClassification
 
-// Module 5952 (utils)
-import ContentClassificationToAgeRestriction from "ContentClassificationToAgeRestriction" /* 5953 */;
-import AgeRestrictionStatus from "AgeRestrictionStatus" /* 5955 */;
+// Module 5542 (utils)
+import ContentClassificationToAgeRestriction from "ContentClassificationToAgeRestriction" /* 5543 */;
+import AgeRestrictionStatus from "AgeRestrictionStatus" /* 5545 */;
 import size from "module_2" /* 2 */;
 
 let result = size.fileFinishedImporting("modules/content_classification/utils.tsx");

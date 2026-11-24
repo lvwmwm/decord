@@ -1,21 +1,21 @@
-// Module ID: 20739
-// Function ID: 20740
+// Module ID: 20009
+// Function ID: 20010
 // Name: GuildSettingsRoleSubscriptionContainer
-// Dependencies: [19, 17, 5177, 1072, 21, 5306, 504, 20714, 13553, 20664, 1113, 17836, 20731, 2]
+// Dependencies: [19, 17, 4784, 1071, 21, 4913, 504, 19984, 13083, 19934, 1112, 16616, 20001, 2]
 // Exports: default
 
-// Module 20739 (GuildSettingsRoleSubscriptionContainer)
-import Constants from "Constants" /* 1072 */;
-import ErrorBlockDefault from "ErrorBlock" /* 13553 */;
-import GroupListingsFetchContext from "GroupListingsFetchContext" /* 17836 */;
-import WarningNoticeDefault from "WarningNotice" /* 20664 */;
-import useOnboardingMonetizationEnableFlowDefault from "useOnboardingMonetizationEnableFlow" /* 20714 */;
-import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 20731 */;
+// Module 20009 (GuildSettingsRoleSubscriptionContainer)
+import Constants from "Constants" /* 1071 */;
+import ErrorBlockDefault from "ErrorBlock" /* 13083 */;
+import GroupListingsFetchContext from "GroupListingsFetchContext" /* 16616 */;
+import WarningNoticeDefault from "WarningNotice" /* 19934 */;
+import useOnboardingMonetizationEnableFlowDefault from "useOnboardingMonetizationEnableFlow" /* 19984 */;
+import RoleSubscriptionSettingsDisabledContext from "RoleSubscriptionSettingsDisabledContext" /* 20001 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GuildStore from "GuildStore" /* 5177 */;
+import GuildStore from "GuildStore" /* 4784 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -54,28 +54,28 @@ function ApplicationRejectedNotice(guildId) {
     tmp14 = closure_7(tmp9Result, obj2);
   } else if (null != requestRejectedNoticeText) {
     const obj3 = { notice: requestRejectedNoticeText };
-    tmp14 = closure_7(tmp9(20664), obj3);
+    tmp14 = closure_7(tmp9(19934), obj3);
   } else if (tmp13) {
-    const obj4 = { notice: intl3.string(guildId(1113).t.MyJpJT) };
+    const obj4 = { notice: intl3.string(guildId(1112).t.MyJpJT) };
     const tmp9Result5 = WarningNoticeDefault;
-    intl3 = tmp2(1113).intl;
+    intl3 = tmp2(1112).intl;
     tmp14 = closure_7(tmp9Result5, obj4);
   } else if (null != reapplyNoticeText) {
-    const obj5 = { notice: reapplyNoticeText, ctaLabel: intl2.string(guildId(1113).t["YKw/NQ"]), onClick: tmp12, submitting: tmp11 };
+    const obj5 = { notice: reapplyNoticeText, ctaLabel: intl2.string(guildId(1112).t["YKw/NQ"]), onClick: tmp12, submitting: tmp11 };
     const tmp9Result6 = WarningNoticeDefault;
-    intl2 = tmp2(1113).intl;
+    intl2 = tmp2(1112).intl;
     tmp14 = closure_7(tmp9Result6, obj5);
   } else if (true === hasItem1) {
-    const obj6 = { notice: intl.string(guildId(1113).t.e2g9sW) };
+    const obj6 = { notice: intl.string(guildId(1112).t.e2g9sW) };
     const tmp9Result7 = WarningNoticeDefault;
-    intl = tmp2(1113).intl;
+    intl = tmp2(1112).intl;
     tmp14 = closure_7(tmp9Result7, obj6);
   } else {
     tmp14 = null;
     if (true === hasItem) {
-      const obj7 = { notice: intl4.string(guildId(1113).t.rxI9sl) };
+      const obj7 = { notice: intl4.string(guildId(1112).t.rxI9sl) };
       const tmp9Result8 = WarningNoticeDefault;
-      intl4 = tmp2(1113).intl;
+      intl4 = tmp2(1112).intl;
       tmp14 = closure_7(tmp9Result8, obj7);
     }
   }

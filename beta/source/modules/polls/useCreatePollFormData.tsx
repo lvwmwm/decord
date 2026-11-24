@@ -1,21 +1,21 @@
-// Module ID: 13544
-// Function ID: 13545
+// Module ID: 13074
+// Function ID: 13075
 // Name: useCreatePollFormData
-// Dependencies: [5, 32, 19, 9011, 8861, 13545, 12655, 13546, 13547, 13548, 1113, 12661, 2]
+// Dependencies: [5, 32, 19, 8521, 8456, 13075, 12150, 13076, 13077, 13078, 1112, 12156, 2]
 // Exports: default
 
-// Module 13544 (useCreatePollFormData)
-import intl3 from "intl" /* 1113 */;
-import PollsUtils from "PollsUtils" /* 8861 */;
-import PollsActionCreatorsDefault from "PollsActionCreators" /* 12655 */;
-import useRequestDefault from "useRequest" /* 13545 */;
-import PollUploadAttachmentActionCreatorsAll from "PollUploadAttachmentActionCreators" /* 13546 */;
-import PollAttachmentUtils from "PollAttachmentUtils" /* 13547 */;
-import PollTypes from "PollTypes" /* 13548 */;
+// Module 13074 (useCreatePollFormData)
+import intl3 from "intl" /* 1112 */;
+import PollsUtils from "PollsUtils" /* 8456 */;
+import PollsActionCreatorsDefault from "PollsActionCreators" /* 12150 */;
+import useRequestDefault from "useRequest" /* 13075 */;
+import PollUploadAttachmentActionCreatorsAll from "PollUploadAttachmentActionCreators" /* 13076 */;
+import PollAttachmentUtils from "PollAttachmentUtils" /* 13077 */;
+import PollTypes from "PollTypes" /* 13078 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import PollsConstants from "PollsConstants" /* 9011 */;
+import PollsConstants from "PollsConstants" /* 8521 */;
 import size from "module_2" /* 2 */;
 
 let c1, c5, c6, channel, closure_1, dependencyMap, importDefault;
@@ -24,7 +24,7 @@ let c9;
 let metroImportAll;
 let metroImportDefault;
 function createPollCreationImageForMedia(mediaURL, status) {
-  const obj = { mediaAttachmentState: obj2, emoji: "Array", stickerId: "alignItems" };
+  const obj = { mediaAttachmentState: obj2, emoji: "Array", stickerId: "add" };
   return obj;
 }
 let react = react_mod;
@@ -254,18 +254,18 @@ export default function useCreatePollCommonData(id, arg1, arg2, initialQuestion)
     const localCreationAnswerId = first[arg1].localCreationAnswerId;
     const objectURL = URL.createObjectURL(arg2);
     callback3(arg0, arg1);
-    const obj = { mediaAttachmentState: { status: PollTypes.PollMediaUploadAttachmentStatus.PREPARING, mediaURL: objectURL }, emoji: "Array", stickerId: "alignItems" };
+    const obj = { mediaAttachmentState: { status: PollTypes.PollMediaUploadAttachmentStatus.PREPARING, mediaURL: objectURL }, emoji: "Array", stickerId: "add" };
     ({ status: PollTypes.PollMediaUploadAttachmentStatus.PREPARING, mediaURL: objectURL });
     callback2(obj, arg1);
     const obj3 = PollUploadAttachmentActionCreatorsAll;
     const result = obj3.handlePollMediaAttachmentAdd(arg0, localCreationAnswerId, arg2);
-    const obj4 = { mediaAttachmentState: { status: PollTypes.PollMediaUploadAttachmentStatus.READY_TO_UPLOAD, mediaURL: objectURL }, emoji: "Array", stickerId: "alignItems" };
+    const obj4 = { mediaAttachmentState: { status: PollTypes.PollMediaUploadAttachmentStatus.READY_TO_UPLOAD, mediaURL: objectURL }, emoji: "Array", stickerId: "add" };
     ({ status: PollTypes.PollMediaUploadAttachmentStatus.READY_TO_UPLOAD, mediaURL: objectURL });
     callback2(obj4, arg1);
   }, items2);
   const callback6 = obj.useCallback((emoji, arg1) => {
     callback3(id, arg1);
-    const obj = { emoji, stickerId: "Array", mediaAttachmentState: "alignItems" };
+    const obj = { emoji, stickerId: "Array", mediaAttachmentState: "add" };
     callback2(obj, arg1);
   }, items3);
   const items4 = [tmp27];

@@ -1,22 +1,22 @@
-// Module ID: 8103
-// Function ID: 8104
+// Module ID: 7706
+// Function ID: 7707
 // Name: StageChannelUpsellCardStore
-// Dependencies: [5161, 1258, 510, 1263, 5221, 2]
+// Dependencies: [4768, 1257, 510, 1262, 4828, 2]
 // Exports: useStageChannelUpsellCardStore
 
-// Module 8103 (StageChannelUpsellCardStore)
+// Module 7706 (StageChannelUpsellCardStore)
 import Storage2 from "Storage" /* 510 */;
-import react_native from "react-native" /* 1263 */;
-import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 5161 */;
-import _slicedToArray from "_slicedToArray" /* 5221 */;
-import module_1258 from "module_1258" /* 1258 */;
+import react_native from "react-native" /* 1262 */;
+import GuildScheduledEventsConstants from "GuildScheduledEventsConstants" /* 4768 */;
+import _slicedToArray from "_slicedToArray" /* 4828 */;
+import module_1257 from "module_1257" /* 1257 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let _require;
 
 let closure_2 = GuildScheduledEventsConstants.GUILD_EVENT_STAGE_UPSELL_CARD_KEY;
-let closure_3 = module_1258.createWithEqualityFn((arg0) => {
+let closure_3 = module_1257.createWithEqualityFn((arg0) => {
   let Storage;
   let closure_0;
   _require = arg0;

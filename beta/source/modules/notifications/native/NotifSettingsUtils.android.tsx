@@ -1,21 +1,21 @@
-// Module ID: 16906
-// Function ID: 16907
+// Module ID: 15660
+// Function ID: 15661
 // Name: NotifSettingsUtils
-// Dependencies: [16900, 1113, 16904, 16907, 1242, 2]
+// Dependencies: [15654, 1112, 15658, 15661, 1241, 2]
 
-// Module 16906 (NotifSettingsUtils)
-import intl2 from "intl" /* 1113 */;
-import react_nativeDefault from "react-native" /* 16907 */;
-import NotificationSettingsConstants from "NotificationSettingsConstants" /* 16900 */;
+// Module 15660 (NotifSettingsUtils)
+import intl2 from "intl" /* 1112 */;
+import react_nativeDefault from "react-native" /* 15661 */;
+import NotificationSettingsConstants from "NotificationSettingsConstants" /* 15654 */;
 import size from "module_2" /* 2 */;
 
-let map, map1, map2, map3, set, set2;
+let map, map1, set, set2;
 
 let c3;
 let closure_4;
 let hasOwnProperty;
 let tmp2;
-const SentryUtilsDefault = tmp2(1242);
+const SentryUtilsDefault = tmp2(1241);
 function inferImportanceFromBehavior(visibility) {
   if (!("ringtone" in visibility)) {
     let HIGH;
@@ -89,11 +89,11 @@ function buildChannelsAndMapping() {
       ({ channelId: arr[0], importance: arr[1] } = item);
       return items;
     }));
-    map2 = new Map(set2.map((id) => {
+    const map2 = new Map(set2.map((id) => {
       items = [id.id, id];
       return items;
     }));
-    map3 = new Map();
+    const map3 = new Map();
     const map4 = new Map();
     const iter = set2[Symbol.iterator]();
     const nextResult = iter.next();

@@ -1,21 +1,21 @@
-// Module ID: 9557
-// Function ID: 9558
+// Module ID: 9077
+// Function ID: 9078
 // Name: useBurstToggleCoachmark
-// Dependencies: [32, 19, 17, 1388, 5152, 21, 5139, 5306, 575, 9558, 504, 2174, 9560, 1113, 9567, 2]
+// Dependencies: [32, 19, 17, 1386, 4759, 21, 4746, 4913, 575, 9078, 504, 2173, 9080, 1112, 9087, 2]
 // Exports: default
 
-// Module 9557 (useBurstToggleCoachmark)
+// Module 9077 (useBurstToggleCoachmark)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import intl3 from "intl" /* 1113 */;
-import dismissible_content from "dismissible_content" /* 5139 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
-import SuperReactionIcon2 from "SuperReactionIcon" /* 9558 */;
+import intl3 from "intl" /* 1112 */;
+import dismissible_content from "dismissible_content" /* 4746 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4759 */;
+import SuperReactionIcon2 from "SuperReactionIcon" /* 9078 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import UserStore from "UserStore" /* 1388 */;
-import createStyles from "createStyles" /* 5306 */;
+import UserStore from "UserStore" /* 1386 */;
+import createStyles from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let size;
@@ -41,14 +41,14 @@ export default function useBurstToggleCoachmark(targetRef) {
   let obj = first(504);
   const items = [UserStore];
   const stateFromStores = obj.useStateFromStores(items, () => currentUser.getCurrentUser());
-  const obj2 = first(2174);
+  const obj2 = first(2173);
   if (obj2.isPremium(stateFromStores)) {
     const items1 = [closure_9];
     items2 = items1;
   } else {
     items2 = [];
   }
-  const tmpResult = first(9560);
+  const tmpResult = first(9080);
   const tmp5 = _slicedToArray(tmpResult.useSelectedDismissibleContent(items2), 2);
   first = tmp5[0];
   let closure_1 = tmp7;
@@ -72,7 +72,7 @@ export default function useBurstToggleCoachmark(targetRef) {
     intl2 = intl3.intl;
     return obj;
   }, items3);
-  const tmpResult2 = first(9567);
+  const tmpResult2 = first(9087);
   const coachmark = tmpResult2.useCoachmark(targetRef, memo);
   return tmp5[1];
 };

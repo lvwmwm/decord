@@ -1,73 +1,65 @@
 // Module ID: 4720
 // Function ID: 4721
-// Dependencies: [2199, 2200]
+// Dependencies: [2168]
 
 // Module 4720
-import buildMatchFn from "buildMatchFn" /* 2199 */;
-import buildMatchPatternFn from "buildMatchPatternFn" /* 2200 */;
+import _mod2168 from "module_2168" /* 2168 */;
 
-let items;
-let items1;
-let items2;
-let items3;
-let items4;
-let items5;
-let obj;
-let obj10;
-let obj11;
-let obj12;
-let obj13;
-let obj14;
-let obj15;
-let obj3;
-let obj5;
-let obj6;
-let obj7;
-let obj8;
-let obj9;
-if (!buildMatchFn) {
-  obj = { default: buildMatchFn };
-  const obj2 = { default: buildMatchFn };
-} else {
-  obj = buildMatchFn;
+let split;
+let split2;
+function isPM(arg0) {
+  const obj = /^ch$/i;
+  return obj.test(arg0);
 }
-if (!buildMatchPatternFn) {
-  obj3 = { default: buildMatchPatternFn };
-  const obj4 = { default: buildMatchPatternFn };
-} else {
-  obj3 = buildMatchPatternFn;
+function meridiem(arg0, arg1, arg2) {
+  let str;
+  if (arg0 < 12) {
+    let str2 = "SA";
+    if (arg2) {
+      str2 = "sa";
+    }
+    str = str2;
+  } else {
+    str = "CH";
+    if (arg2) {
+      str = "ch";
+    }
+  }
+  return str;
 }
-const date = { ordinalNumber: obj3.default(obj5), era: obj.default(obj6), quarter: obj.default(obj8), month: obj.default(obj10), day: obj.default(obj12), dayPeriod: obj.default(obj14) };
-obj6 = { matchPatterns: { narrow: /^([bB]|[aA]|คศ)/i, abbreviated: /^([bB]\.?\s?[cC]\.?|b\.?\s?c\.?\s?e\.?|a\.?\s?d\.?|c\.?\s?e\.?|ค\.?ศ\.?)/i, wide: /^(ก่อนคริสตกาล|คริสต์ศักราช|คริสตกาล)/i }, defaultMatchWidth: "wide", parsePatterns: obj7, defaultParseWidth: "any" };
-obj7 = { any: items };
-items = [/^[bB]/i, /^(^[aA]|ค\.?ศ\.?|คริสตกาล|คริสต์ศักราช|)/i];
-obj8 = {
-  matchPatterns: { narrow: /^[1234]/i, abbreviated: /^q[1234]/i, wide: /^ไตรมาส(ที่)? ?[1234]/i },
-  defaultMatchWidth: "wide",
-  parsePatterns: obj9,
-  defaultParseWidth: "any",
-  valueCallback(arg0) {
-    return arg0 + 1;
+function ordinal(arg0) {
+  return arg0;
+}
+if (typeof exports === "object") {
+  if (undefined !== module) {
+    if (typeof require === "function") {
+      const _module = _mod2168;
+      let str = "th\u00E1ng 1_th\u00E1ng 2_th\u00E1ng 3_th\u00E1ng 4_th\u00E1ng 5_th\u00E1ng 6_th\u00E1ng 7_th\u00E1ng 8_th\u00E1ng 9_th\u00E1ng 10_th\u00E1ng 11_th\u00E1ng 12";
+      const split3 = "th\u00E1ng 1_th\u00E1ng 2_th\u00E1ng 3_th\u00E1ng 4_th\u00E1ng 5_th\u00E1ng 6_th\u00E1ng 7_th\u00E1ng 8_th\u00E1ng 9_th\u00E1ng 10_th\u00E1ng 11_th\u00E1ng 12".split;
+      let str2 = "_";
+      const defineLocale = _module.defineLocale;
+      const split4 = "Thg 01_Thg 02_Thg 03_Thg 04_Thg 05_Thg 06_Thg 07_Thg 08_Thg 09_Thg 10_Thg 11_Thg 12".split;
+      const split5 = "ch\u1EE7 nh\u1EADt_th\u1EE9 hai_th\u1EE9 ba_th\u1EE9 t\u01B0_th\u1EE9 n\u0103m_th\u1EE9 s\u00E1u_th\u1EE9 b\u1EA3y".split;
+      const split6 = "CN_T2_T3_T4_T5_T6_T7".split;
+      const split7 = "CN_T2_T3_T4_T5_T6_T7".split;
+      const obj2 = { months: "th\u00E1ng 1_th\u00E1ng 2_th\u00E1ng 3_th\u00E1ng 4_th\u00E1ng 5_th\u00E1ng 6_th\u00E1ng 7_th\u00E1ng 8_th\u00E1ng 9_th\u00E1ng 10_th\u00E1ng 11_th\u00E1ng 12".split("_"), monthsShort: "Thg 01_Thg 02_Thg 03_Thg 04_Thg 05_Thg 06_Thg 07_Thg 08_Thg 09_Thg 10_Thg 11_Thg 12".split("_"), monthsParseExact: true, weekdays: "ch\u1EE7 nh\u1EADt_th\u1EE9 hai_th\u1EE9 ba_th\u1EE9 t\u01B0_th\u1EE9 n\u0103m_th\u1EE9 s\u00E1u_th\u1EE9 b\u1EA3y".split("_"), weekdaysShort: "CN_T2_T3_T4_T5_T6_T7".split("_"), weekdaysMin: "CN_T2_T3_T4_T5_T6_T7".split("_"), weekdaysParseExact: true, meridiemParse: /sa|ch/i, isPM, meridiem, longDateFormat: { LT: "HH:mm", LTS: "HH:mm:ss", L: "DD/MM/YYYY", LL: "D MMMM [n\u0103m] YYYY", LLL: "D MMMM [n\u0103m] YYYY HH:mm", LLLL: "dddd, D MMMM [n\u0103m] YYYY HH:mm", l: "DD/M/YYYY", ll: "D MMM YYYY", lll: "D MMM YYYY HH:mm", llll: "ddd, D MMM YYYY HH:mm" }, calendar: { sameDay: "[H\u00F4m nay l\u00FAc] LT", nextDay: "[Ng\u00E0y mai l\u00FAc] LT", nextWeek: "dddd [tu\u1EA7n t\u1EDBi l\u00FAc] LT", lastDay: "[H\u00F4m qua l\u00FAc] LT", lastWeek: "dddd [tu\u1EA7n tr\u01B0\u1EDBc l\u00FAc] LT", sameElse: "L" }, relativeTime: { future: "%s t\u1EDBi", past: "%s tr\u01B0\u1EDBc", s: "v\u00E0i gi\u00E2y", ss: "%d gi\u00E2y", m: "m\u1ED9t ph\u00FAt", mm: "%d ph\u00FAt", h: "m\u1ED9t gi\u1EDD", hh: "%d gi\u1EDD", d: "m\u1ED9t ng\u00E0y", dd: "%d ng\u00E0y", w: "m\u1ED9t tu\u1EA7n", ww: "%d tu\u1EA7n", M: "m\u1ED9t th\u00E1ng", MM: "%d th\u00E1ng", y: "m\u1ED9t n\u0103m", yy: "%d n\u0103m" }, dayOfMonthOrdinalParse: /\d{1,2}/, ordinal, week: { dow: 1, doy: 4 } };
+      defineLocale("vi", obj2);
+    }
   }
-};
-obj9 = { any: items1 };
-items1 = [/(1|แรก|หนึ่ง)/i, /(2|สอง)/i, /(3|สาม)/i, /(4|สี่)/i];
-obj10 = { matchPatterns: { narrow: /^(ม\.?ค\.?|ก\.?พ\.?|มี\.?ค\.?|เม\.?ย\.?|พ\.?ค\.?|มิ\.?ย\.?|ก\.?ค\.?|ส\.?ค\.?|ก\.?ย\.?|ต\.?ค\.?|พ\.?ย\.?|ธ\.?ค\.?)/i, abbreviated: /^(ม\.?ค\.?|ก\.?พ\.?|มี\.?ค\.?|เม\.?ย\.?|พ\.?ค\.?|มิ\.?ย\.?|ก\.?ค\.?|ส\.?ค\.?|ก\.?ย\.?|ต\.?ค\.?|พ\.?ย\.?|ธ\.?ค\.?')/i, wide: /^(มกราคม|กุมภาพันธ์|มีนาคม|เมษายน|พฤษภาคม|มิถุนายน|กรกฎาคม|สิงหาคม|กันยายน|ตุลาคม|พฤศจิกายน|ธันวาคม)/i }, defaultMatchWidth: "wide", parsePatterns: obj11, defaultParseWidth: "any" };
-obj11 = { wide: items2, any: items3 };
-items2 = [/^มก/i, /^กุม/i, /^มี/i, /^เม/i, /^พฤษ/i, /^มิ/i, /^กรก/i, /^ส/i, /^กัน/i, /^ต/i, /^พฤศ/i, /^ธ/i];
-items3 = [/^ม\.?ค\.?/i, /^ก\.?พ\.?/i, /^มี\.?ค\.?/i, /^เม\.?ย\.?/i, /^พ\.?ค\.?/i, /^มิ\.?ย\.?/i, /^ก\.?ค\.?/i, /^ส\.?ค\.?/i, /^ก\.?ย\.?/i, /^ต\.?ค\.?/i, /^พ\.?ย\.?/i, /^ธ\.?ค\.?/i];
-obj12 = { matchPatterns: { narrow: /^(อา\.?|จ\.?|อ\.?|พฤ\.?|พ\.?|ศ\.?|ส\.?)/i, short: /^(อา\.?|จ\.?|อ\.?|พฤ\.?|พ\.?|ศ\.?|ส\.?)/i, abbreviated: /^(อา\.?|จ\.?|อ\.?|พฤ\.?|พ\.?|ศ\.?|ส\.?)/i, wide: /^(อาทิตย์|จันทร์|อังคาร|พุธ|พฤหัสบดี|ศุกร์|เสาร์)/i }, defaultMatchWidth: "wide", parsePatterns: obj13, defaultParseWidth: "any" };
-obj13 = { wide: items4, any: items5 };
-items4 = [/^อา/i, /^จั/i, /^อั/i, /^พุธ/i, /^พฤ/i, /^ศ/i, /^เส/i];
-items5 = [/^อา/i, /^จ/i, /^อ/i, /^พ(?!ฤ)/i, /^พฤ/i, /^ศ/i, /^ส/i];
-obj14 = { matchPatterns: { any: /^(ก่อนเที่ยง|หลังเที่ยง|เที่ยงคืน|เที่ยง|(ตอน.*?)?.*(เที่ยง|เช้า|บ่าย|เย็น|กลางคืน))/i }, defaultMatchWidth: "any", parsePatterns: obj15, defaultParseWidth: "any" };
-obj15 = { any: { am: /^ก่อนเที่ยง/i, pm: /^หลังเที่ยง/i, midnight: /^เที่ยงคืน/i, noon: /^เที่ยง/i, morning: /เช้า/i, afternoon: /บ่าย/i, evening: /เย็น/i, night: /กลางคืน/i } };
-obj5 = {
-  matchPattern: /^\d+/i,
-  parsePattern: /\d+/i,
-  valueCallback(match) {
-    return parseInt(match, 10);
+}
+if (typeof globalThis.define === "function") {
+  const define2 = globalThis.define;
+  if (globalThis.define.amd) {
+    globalThis.define(["../moment"], function n(defineLocale) {
+      let split;
+      let split2;
+      let obj = { months: "th\u00E1ng 1_th\u00E1ng 2_th\u00E1ng 3_th\u00E1ng 4_th\u00E1ng 5_th\u00E1ng 6_th\u00E1ng 7_th\u00E1ng 8_th\u00E1ng 9_th\u00E1ng 10_th\u00E1ng 11_th\u00E1ng 12".split("_"), monthsShort: "Thg 01_Thg 02_Thg 03_Thg 04_Thg 05_Thg 06_Thg 07_Thg 08_Thg 09_Thg 10_Thg 11_Thg 12".split("_"), monthsParseExact: true, weekdays: "ch\u1EE7 nh\u1EADt_th\u1EE9 hai_th\u1EE9 ba_th\u1EE9 t\u01B0_th\u1EE9 n\u0103m_th\u1EE9 s\u00E1u_th\u1EE9 b\u1EA3y".split("_"), weekdaysShort: "CN_T2_T3_T4_T5_T6_T7".split("_"), weekdaysMin: "CN_T2_T3_T4_T5_T6_T7".split("_"), weekdaysParseExact: true, meridiemParse: /sa|ch/i, isPM, meridiem, longDateFormat: { LT: "HH:mm", LTS: "HH:mm:ss", L: "DD/MM/YYYY", LL: "D MMMM [n\u0103m] YYYY", LLL: "D MMMM [n\u0103m] YYYY HH:mm", LLLL: "dddd, D MMMM [n\u0103m] YYYY HH:mm", l: "DD/M/YYYY", ll: "D MMM YYYY", lll: "D MMM YYYY HH:mm", llll: "ddd, D MMM YYYY HH:mm" }, calendar: { sameDay: "[H\u00F4m nay l\u00FAc] LT", nextDay: "[Ng\u00E0y mai l\u00FAc] LT", nextWeek: "dddd [tu\u1EA7n t\u1EDBi l\u00FAc] LT", lastDay: "[H\u00F4m qua l\u00FAc] LT", lastWeek: "dddd [tu\u1EA7n tr\u01B0\u1EDBc l\u00FAc] LT", sameElse: "L" }, relativeTime: { future: "%s t\u1EDBi", past: "%s tr\u01B0\u1EDBc", s: "v\u00E0i gi\u00E2y", ss: "%d gi\u00E2y", m: "m\u1ED9t ph\u00FAt", mm: "%d ph\u00FAt", h: "m\u1ED9t gi\u1EDD", hh: "%d gi\u1EDD", d: "m\u1ED9t ng\u00E0y", dd: "%d ng\u00E0y", w: "m\u1ED9t tu\u1EA7n", ww: "%d tu\u1EA7n", M: "m\u1ED9t th\u00E1ng", MM: "%d th\u00E1ng", y: "m\u1ED9t n\u0103m", yy: "%d n\u0103m" }, dayOfMonthOrdinalParse: /\d{1,2}/, ordinal, week: { dow: 1, doy: 4 } };
+      ({ split, split: split2 } = "CN_T2_T3_T4_T5_T6_T7");
+      return defineLocale.defineLocale("vi", obj);
+    });
   }
-};
-
-export default date;
+}
+const moment = this.moment;
+let obj = { months: "th\u00E1ng 1_th\u00E1ng 2_th\u00E1ng 3_th\u00E1ng 4_th\u00E1ng 5_th\u00E1ng 6_th\u00E1ng 7_th\u00E1ng 8_th\u00E1ng 9_th\u00E1ng 10_th\u00E1ng 11_th\u00E1ng 12".split("_"), monthsShort: "Thg 01_Thg 02_Thg 03_Thg 04_Thg 05_Thg 06_Thg 07_Thg 08_Thg 09_Thg 10_Thg 11_Thg 12".split("_"), monthsParseExact: true, weekdays: "ch\u1EE7 nh\u1EADt_th\u1EE9 hai_th\u1EE9 ba_th\u1EE9 t\u01B0_th\u1EE9 n\u0103m_th\u1EE9 s\u00E1u_th\u1EE9 b\u1EA3y".split("_"), weekdaysShort: "CN_T2_T3_T4_T5_T6_T7".split("_"), weekdaysMin: "CN_T2_T3_T4_T5_T6_T7".split("_"), weekdaysParseExact: true, meridiemParse: /sa|ch/i, isPM, meridiem, longDateFormat: { LT: "HH:mm", LTS: "HH:mm:ss", L: "DD/MM/YYYY", LL: "D MMMM [n\u0103m] YYYY", LLL: "D MMMM [n\u0103m] YYYY HH:mm", LLLL: "dddd, D MMMM [n\u0103m] YYYY HH:mm", l: "DD/M/YYYY", ll: "D MMM YYYY", lll: "D MMM YYYY HH:mm", llll: "ddd, D MMM YYYY HH:mm" }, calendar: { sameDay: "[H\u00F4m nay l\u00FAc] LT", nextDay: "[Ng\u00E0y mai l\u00FAc] LT", nextWeek: "dddd [tu\u1EA7n t\u1EDBi l\u00FAc] LT", lastDay: "[H\u00F4m qua l\u00FAc] LT", lastWeek: "dddd [tu\u1EA7n tr\u01B0\u1EDBc l\u00FAc] LT", sameElse: "L" }, relativeTime: { future: "%s t\u1EDBi", past: "%s tr\u01B0\u1EDBc", s: "v\u00E0i gi\u00E2y", ss: "%d gi\u00E2y", m: "m\u1ED9t ph\u00FAt", mm: "%d ph\u00FAt", h: "m\u1ED9t gi\u1EDD", hh: "%d gi\u1EDD", d: "m\u1ED9t ng\u00E0y", dd: "%d ng\u00E0y", w: "m\u1ED9t tu\u1EA7n", ww: "%d tu\u1EA7n", M: "m\u1ED9t th\u00E1ng", MM: "%d th\u00E1ng", y: "m\u1ED9t n\u0103m", yy: "%d n\u0103m" }, dayOfMonthOrdinalParse: /\d{1,2}/, ordinal, week: { dow: 1, doy: 4 } };
+({ split, split: split2 } = "CN_T2_T3_T4_T5_T6_T7");
+moment.defineLocale("vi", obj);

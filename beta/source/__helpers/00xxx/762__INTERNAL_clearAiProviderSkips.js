@@ -5,7 +5,7 @@
 // Exports: _INTERNAL_clearAiProviderSkips, _INTERNAL_shouldSkipAiProviderWrapping, _INTERNAL_skipAiProviderWrapping
 
 // Module 762 (_INTERNAL_clearAiProviderSkips)
-import _mod687 from "module_687" /* 687 */;
+import DEBUG_BUILD from "DEBUG_BUILD" /* 687 */;
 
 let tmp2;
 const CONSOLE_LEVELS = tmp2(688);
@@ -14,7 +14,7 @@ const set = new Set();
 
 export function _INTERNAL_clearAiProviderSkips() {
   set.clear();
-  if (_mod687.DEBUG_BUILD) {
+  if (DEBUG_BUILD.DEBUG_BUILD) {
     const debug = CONSOLE_LEVELS.debug;
     debug.log("Cleared AI provider skip registrations");
   }
@@ -27,7 +27,7 @@ export function _INTERNAL_skipAiProviderWrapping(arr) {
     set.add(item);
     const tmp2 = require;
     const tmp3 = dependencyMap;
-    if (_mod687.DEBUG_BUILD) {
+    if (DEBUG_BUILD.DEBUG_BUILD) {
       const debug = tmp2(tmp3[1]).debug;
       const _HermesInternal = HermesInternal;
       debug.log("AI provider \"" + item + "\" wrapping will be skipped");

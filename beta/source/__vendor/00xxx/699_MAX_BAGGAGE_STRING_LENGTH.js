@@ -5,14 +5,14 @@
 // Exports: baggageHeaderToDynamicSamplingContext, dynamicSamplingContextToSentryBaggageHeader, objectToBaggageHeader, parseBaggageHeader
 
 // Module 699 (MAX_BAGGAGE_STRING_LENGTH)
-import _mod687 from "module_687" /* 687 */;
+import DEBUG_BUILD from "DEBUG_BUILD" /* 687 */;
 import _mod691 from "module_691" /* 691 */;
 
-const f82349 = (acc, item) => {
+const f79057 = (acc, item) => {
   let closure_0 = acc;
   const parts = item.split(",");
-  const mapped = parts.map(f82350);
-  const entries = Object.entries(mapped.reduce(f82351, {}));
+  const mapped = parts.map(f79058);
+  const entries = Object.entries(mapped.reduce(f79059, {}));
   item = entries.forEach((item) => {
     let tmp;
     let tmp2;
@@ -21,7 +21,7 @@ const f82349 = (acc, item) => {
   });
   return acc;
 };
-const f82350 = (arr) => {
+const f79058 = (arr) => {
   let items;
   const index = arr.indexOf("=");
   if (-1 === index) {
@@ -38,7 +38,7 @@ const f82350 = (arr) => {
   }
   return items;
 };
-const f82351 = (acc, item) => {
+const f79059 = (acc, item) => {
   let tmp;
   let tmp2;
   [tmp, tmp2] = item;
@@ -48,7 +48,7 @@ const f82351 = (acc, item) => {
   }
   return acc;
 };
-const f82352 = (acc, item, index) => {
+const f79060 = (acc, item, index) => {
   let tmp;
   let tmp2;
   [tmp, tmp2] = item;
@@ -63,7 +63,7 @@ const f82352 = (acc, item, index) => {
     combined1 = acc;
     const tmp5 = require;
     const tmp6 = dependencyMap;
-    if (_mod687.DEBUG_BUILD) {
+    if (DEBUG_BUILD.DEBUG_BUILD) {
       const debug = tmp5(tmp6[2]).debug;
       const _HermesInternal2 = HermesInternal;
       debug.warn("Not adding key: " + tmp + " with val: " + tmp2 + " to baggage header due to exceeding baggage size limits.");
@@ -80,22 +80,22 @@ const re3 = tmp2;
 export const MAX_BAGGAGE_STRING_LENGTH = 8192;
 export const SENTRY_BAGGAGE_KEY_PREFIX = "sentry-";
 export const SENTRY_BAGGAGE_KEY_PREFIX_REGEX = tmp2;
-export function baggageHeaderToDynamicSamplingContext(arr) {
+export function baggageHeaderToDynamicSamplingContext(baggage) {
   let tmp;
-  if (arr) {
+  if (baggage) {
     const tmp2 = require;
     let tmp3 = dependencyMap;
     const obj = _mod691;
-    if (obj.isString(arr)) {
+    if (obj.isString(baggage)) {
       let reduced;
       const _Array2 = Array;
-      if (Array.isArray(arr)) {
-        reduced = arr.reduce(f82349, {});
+      if (Array.isArray(baggage)) {
+        reduced = baggage.reduce(f79057, {});
       } else {
         const str = ",";
-        let parts = arr.split(",");
-        let mapped = parts.map(f82350);
-        reduced = mapped.reduce(f82351, {});
+        let parts = baggage.split(",");
+        let mapped = parts.map(f79058);
+        reduced = mapped.reduce(f79059, {});
       }
       tmp = reduced;
     } else {
@@ -122,12 +122,12 @@ export function baggageHeaderToDynamicSamplingContext(arr) {
     return tmp9;
   }
 }
-export function dynamicSamplingContextToSentryBaggageHeader(arg0) {
-  const tmp = arg0;
+export function dynamicSamplingContextToSentryBaggageHeader(dynamicSamplingContextFromSpan) {
+  const tmp = dynamicSamplingContextFromSpan;
   if (tmp) {
     const tmp2 = globalThis;
     const _Object = Object;
-    const entries = Object.entries(arg0);
+    const entries = Object.entries(dynamicSamplingContextFromSpan);
     const reduced = entries.reduce((acc, item) => {
       let tmp;
       let tmp2;
@@ -143,7 +143,7 @@ export function dynamicSamplingContextToSentryBaggageHeader(arg0) {
     if (0 !== Object.keys(reduced).length) {
       const _Object3 = Object;
       const entries1 = Object.entries(reduced);
-      reduced1 = entries1.reduce(f82352, "");
+      reduced1 = entries1.reduce(f79060, "");
     }
     return reduced1;
   }
@@ -152,7 +152,7 @@ export function objectToBaggageHeader(arg0) {
   if (0 !== Object.keys(arg0).length) {
     const _Object = Object;
     const entries = Object.entries(arg0);
-    return entries.reduce(f82352, "");
+    return entries.reduce(f79060, "");
   }
 }
 export function parseBaggageHeader(arr) {
@@ -165,11 +165,11 @@ export function parseBaggageHeader(arr) {
     }
     const _Array2 = Array;
     if (Array.isArray(arr)) {
-      reduced = arr.reduce(f82349, {});
+      reduced = arr.reduce(f79057, {});
     } else {
       const parts = arr.split(",");
-      const mapped = parts.map(f82350);
-      reduced = mapped.reduce(f82351, {});
+      const mapped = parts.map(f79058);
+      reduced = mapped.reduce(f79059, {});
     }
     return reduced;
   }

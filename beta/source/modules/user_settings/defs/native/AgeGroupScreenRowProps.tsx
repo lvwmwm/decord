@@ -1,26 +1,26 @@
-// Module ID: 17257
-// Function ID: 17258
+// Module ID: 16025
+// Function ID: 16026
 // Name: AgeGroupScreenRowProps
-// Dependencies: [8190, 6823, 1113, 3321, 6820, 17211, 2]
+// Dependencies: [7793, 6414, 1112, 3444, 6411, 15979, 2]
 // Exports: useShowAccountStatusAgeGroupRow, useShowAssignedAdultAgeGroupRow
 
-// Module 17257 (AgeGroupScreenRowProps)
-import intl2 from "intl" /* 1113 */;
-import _modDef3321 from "module_3321" /* 3321 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6820 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6823 */;
-import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 8190 */;
-import AgeNoticeSettingsPredicate from "AgeNoticeSettingsPredicate" /* 17211 */;
+// Module 16025 (AgeGroupScreenRowProps)
+import intl2 from "intl" /* 1112 */;
+import _modDef3444 from "module_3444" /* 3444 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6411 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6414 */;
+import AgeVerificationActionCreatorsDefault from "AgeVerificationActionCreators" /* 7793 */;
+import AgeNoticeSettingsPredicate from "AgeNoticeSettingsPredicate" /* 15979 */;
 import size from "module_2" /* 2 */;
 
 let obj = {
   useTitle() {
     const intl = intl2.intl;
-    return intl.string(_modDef3321.SH6Tcv);
+    return intl.string(_modDef3444.SH6Tcv);
   },
   useDescription() {
     const intl = intl2.intl;
-    return intl.string(_modDef3321.rJiO86);
+    return intl.string(_modDef3444.rJiO86);
   },
   onPress: function onAgeGroupConfirmPress() {
     const obj = AgeVerificationActionCreatorsDefault;

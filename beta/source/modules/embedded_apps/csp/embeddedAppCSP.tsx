@@ -1,10 +1,10 @@
-// Module ID: 12886
-// Function ID: 12887
+// Module ID: 10820
+// Function ID: 10821
 // Name: embeddedAppCSP
 // Dependencies: [2]
 // Exports: deriveIframeCSPAttributeFromPolicy
 
-// Module 12886 (embeddedAppCSP)
+// Module 10820 (embeddedAppCSP)
 import size from "module_2" /* 2 */;
 
 let c0 = "object-src 'none'";

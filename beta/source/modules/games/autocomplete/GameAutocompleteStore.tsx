@@ -1,14 +1,14 @@
-// Module ID: 9378
-// Function ID: 9379
+// Module ID: 8825
+// Function ID: 8826
 // Name: GameAutocompleteStore
-// Dependencies: [1089, 1456, 504, 9379, 572, 2]
+// Dependencies: [1088, 1454, 504, 8826, 572, 2]
 
-// Module 9378 (GameAutocompleteStore)
+// Module 8825 (GameAutocompleteStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import DurationsDefault from "Durations" /* 1089 */;
-import LRUCacheDefault from "LRUCache" /* 1456 */;
-import GameAutocompleteUtils from "GameAutocompleteUtils" /* 9379 */;
+import DurationsDefault from "Durations" /* 1088 */;
+import LRUCacheDefault from "LRUCache" /* 1454 */;
+import GameAutocompleteUtils from "GameAutocompleteUtils" /* 8826 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -67,7 +67,7 @@ class GameAutocompleteStore extends Store {
       const hasItem = navigation.has(combined);
       let result1 = !hasItem && !set.has(combined);
       if (result1) {
-        const tmpResult = tmp(9379);
+        const tmpResult = tmp(8826);
         result1 = tmpResult.shouldSuppressAutocompleteFetch(result, (arg0) => navigation.peek("" + closure_0 + ":" + arg0));
       }
       return result1;

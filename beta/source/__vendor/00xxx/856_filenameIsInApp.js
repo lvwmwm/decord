@@ -9,16 +9,16 @@ import UNKNOWN_FUNCTION2 from "UNKNOWN_FUNCTION" /* 697 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export function filenameIsInApp(str) {
+export function filenameIsInApp(replaced) {
   let flag = arg1;
   if (arg1 === undefined) {
     flag = false;
   }
   if (!flag) {
-    flag = str && !str.startsWith("/") && !str.match(/^[A-Z]:/) && !str.startsWith(".") && !str.match(/^[a-zA-Z]([a-zA-Z0-9.\-+])*:\/\//);
-    const tmp = str && !str.startsWith("/") && !str.match(/^[A-Z]:/) && !str.startsWith(".") && !str.match(/^[a-zA-Z]([a-zA-Z0-9.\-+])*:\/\//);
+    flag = replaced && !replaced.startsWith("/") && !replaced.match(/^[A-Z]:/) && !replaced.startsWith(".") && !replaced.match(/^[a-zA-Z]([a-zA-Z0-9.\-+])*:\/\//);
+    const tmp = replaced && !replaced.startsWith("/") && !replaced.match(/^[A-Z]:/) && !replaced.startsWith(".") && !replaced.match(/^[a-zA-Z]([a-zA-Z0-9.\-+])*:\/\//);
   }
-  const tmp2 = !flag && undefined !== str && !str.includes("node_modules/");
+  const tmp2 = !flag && undefined !== replaced && !replaced.includes("node_modules/");
   return tmp2;
 }
 export function node(arg0) {

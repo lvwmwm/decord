@@ -1,17 +1,17 @@
-// Module ID: 13790
-// Function ID: 13791
+// Module ID: 12294
+// Function ID: 12295
 // Name: ConjureCreatorByline
-// Dependencies: [19, 21, 5306, 6327, 575, 1187, 5919, 13791, 2]
+// Dependencies: [19, 21, 4913, 5929, 575, 1186, 5504, 12295, 2]
 // Exports: default
 
-// Module 13790 (ConjureCreatorByline)
+// Module 12294 (ConjureCreatorByline)
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 1187 */;
-import Stack_Stack from "Stack/Stack" /* 6327 */;
-import conjureCreatorByline from "conjureCreatorByline" /* 13791 */;
+import native from "native" /* 1186 */;
+import Stack_Stack from "Stack/Stack" /* 5929 */;
+import conjureCreatorByline from "conjureCreatorByline" /* 12295 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -33,7 +33,7 @@ export default function ConjureCreatorByline(arg0) {
   const Avatar = native.Avatar;
   items = [_false(Avatar, obj2), ];
   const obj3 = { variant: "body-sm/normal", color: "text-muted", lineClamp: 1, style: tmp.text, children: tmp3Result.formatConjureCreatorByline(creator) };
-  const Text = tmp3(5919).Text;
+  const Text = tmp3(5504).Text;
   tmp3Result = conjureCreatorByline;
   items[1] = _false(Text, obj3);
   return React3(Stack, obj);

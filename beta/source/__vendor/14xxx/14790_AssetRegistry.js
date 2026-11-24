@@ -1,10 +1,10 @@
 // Module ID: 14790
 // Function ID: 14791
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 14790 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "fd49fb07fb819ce61e9240fd55fe1f4f", name: "ic_mute_channel_24px", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/guild_boosting/native/images", width: 18, height: 15, scales: [2, 3], hash: "dc018ce302b0357451a31422d7180d84", name: "sparkle_star_pointed", type: "png" });

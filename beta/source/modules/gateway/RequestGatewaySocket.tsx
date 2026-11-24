@@ -1,12 +1,12 @@
-// Module ID: 8858
-// Function ID: 8859
+// Module ID: 8453
+// Function ID: 8454
 // Name: RequestGatewaySocket
-// Dependencies: [5, 1072, 8676, 1256, 2]
+// Dependencies: [5, 1071, 8266, 1255, 2]
 // Exports: describeConnectionReasons, isRequested, recordStartHeadlessTask, startBridgeTo, withRequest
 
-// Module 8858 (RequestGatewaySocket)
-import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
+// Module 8453 (RequestGatewaySocket)
+import Constants from "Constants" /* 1071 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -148,7 +148,7 @@ export function startBridgeTo(arg0) {
     num = 0;
   }
   let result = obj.set(combined, num + 1);
-  let obj2 = combined(8676);
+  let obj2 = combined(8266);
   obj2.requestSafeIdleCallback(() => {
     if (map.has(combined)) {
       const _performance = performance;

@@ -1,10 +1,10 @@
 // Module ID: 2932
 // Function ID: 2933
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 2932 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/notifications/profile_updates/sender", scales: [1], hash: "7f05ad73b5da2adbe55e7968cf15ccf8", name: "NotifyFriendsOnProfileUpdate.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9wcmVtaXVtL2ZpbGVfdXBsb2Fk", scales: [1], hash: "520b33854e38761bc6d8fccbe66256a5", name: "en-GB.messages.520b33854e38761bc6d8fccbe66256a5.compiled.messages", type: "jsona" });

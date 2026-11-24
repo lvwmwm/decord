@@ -6,7 +6,7 @@
 
 // Module 794 (_INTERNAL_FLAG_BUFFER_SIZE)
 import TRACE_FLAG_NONE from "TRACE_FLAG_NONE" /* 683 */;
-import _mod687 from "module_687" /* 687 */;
+import DEBUG_BUILD from "DEBUG_BUILD" /* 687 */;
 import _mod712 from "module_712" /* 712 */;
 
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
@@ -75,7 +75,7 @@ export function _INTERNAL_insertFlagToScope(flagKey, value) {
   let closure_0 = flagKey;
   if (typeof value === "boolean") {
     if (values.length > num) {
-      if (_mod687.DEBUG_BUILD) {
+      if (DEBUG_BUILD.DEBUG_BUILD) {
         const debug = tmp(688).debug;
         const _HermesInternal = HermesInternal;
         debug.error("[Feature Flags] insertToFlagBuffer called on a buffer larger than maxSize=" + num);
@@ -98,7 +98,7 @@ export function _INTERNAL_insertToFlagBuffer(arr, flag, result, arg3) {
   if (typeof result === "boolean") {
     if (arr.length > arg3) {
       const tmp5 = require;
-      if (_mod687.DEBUG_BUILD) {
+      if (DEBUG_BUILD.DEBUG_BUILD) {
         const debug = tmp5(688).debug;
         const _HermesInternal = HermesInternal;
         debug.error("[Feature Flags] insertToFlagBuffer called on a buffer larger than maxSize=" + arg3);

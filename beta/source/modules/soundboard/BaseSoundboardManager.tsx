@@ -1,13 +1,13 @@
-// Module ID: 17024
-// Function ID: 17025
+// Module ID: 15784
+// Function ID: 15785
 // Name: BaseSoundboardManager
-// Dependencies: [502, 2133, 2123, 572, 2]
+// Dependencies: [502, 2131, 2121, 572, 2]
 
-// Module 17024 (BaseSoundboardManager)
+// Module 15784 (BaseSoundboardManager)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import MediaEngineStore from "MediaEngineStore" /* 2133 */;
-import LifecycleManager from "LifecycleManager" /* 2123 */;
+import MediaEngineStore from "MediaEngineStore" /* 2131 */;
+import LifecycleManager from "LifecycleManager" /* 2121 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
@@ -20,6 +20,9 @@ class BaseSoundboardManager extends LifecycleManager {
 
     };
     applyArgumentsResult._stopAndClearSounds = function _stopAndClearSounds() {
+
+    };
+    applyArgumentsResult._stopSound = function _stopSound() {
 
     };
     applyArgumentsResult._handleToggleSelfDeafened = function _handleToggleSelfDeafened() {
@@ -43,6 +46,9 @@ class BaseSoundboardManager extends LifecycleManager {
       sound = sound.sound;
       return importDefault._playSound(sound.soundId, sound.volume, AuthenticationStore.getId(), sound.channelId);
     };
+    applyArgumentsResult._handleSoundboardSoundStopLocally = function _handleSoundboardSoundStopLocally(soundId) {
+      importDefault._stopSound(soundId.soundId, AuthenticationStore.getId());
+    };
     applyArgumentsResult._handleVoiceChannelSelect = function _handleVoiceChannelSelect() {
       importDefault._stopAndClearSounds();
     };
@@ -54,9 +60,11 @@ class BaseSoundboardManager extends LifecycleManager {
     const obj2 = DispatcherDefault;
     const subscription1 = obj2.subscribe("GUILD_SOUNDBOARD_SOUND_PLAY_LOCALLY", this._handleSoundboardSoundPlayLocally);
     const obj3 = DispatcherDefault;
-    const subscription2 = obj3.subscribe("VOICE_CHANNEL_SELECT", this._handleVoiceChannelSelect);
+    const subscription2 = obj3.subscribe("GUILD_SOUNDBOARD_SOUND_STOP_LOCALLY", this._handleSoundboardSoundStopLocally);
     const obj4 = DispatcherDefault;
-    const subscription3 = obj4.subscribe("AUDIO_TOGGLE_SELF_DEAF", this._handleToggleSelfDeafened);
+    const subscription3 = obj4.subscribe("VOICE_CHANNEL_SELECT", this._handleVoiceChannelSelect);
+    const obj5 = DispatcherDefault;
+    const subscription4 = obj5.subscribe("AUDIO_TOGGLE_SELF_DEAF", this._handleToggleSelfDeafened);
   }
   _terminate() {
     const obj = DispatcherDefault;
@@ -64,9 +72,11 @@ class BaseSoundboardManager extends LifecycleManager {
     const obj2 = DispatcherDefault;
     obj2.unsubscribe("GUILD_SOUNDBOARD_SOUND_PLAY_LOCALLY", this._handleSoundboardSoundPlayLocally);
     const obj3 = DispatcherDefault;
-    obj3.unsubscribe("VOICE_CHANNEL_SELECT", this._handleVoiceChannelSelect);
+    obj3.unsubscribe("GUILD_SOUNDBOARD_SOUND_STOP_LOCALLY", this._handleSoundboardSoundStopLocally);
     const obj4 = DispatcherDefault;
-    obj4.unsubscribe("AUDIO_TOGGLE_SELF_DEAF", this._handleToggleSelfDeafened);
+    obj4.unsubscribe("VOICE_CHANNEL_SELECT", this._handleVoiceChannelSelect);
+    const obj5 = DispatcherDefault;
+    obj5.unsubscribe("AUDIO_TOGGLE_SELF_DEAF", this._handleToggleSelfDeafened);
   }
 }
 const prototype = BaseSoundboardManager.prototype;

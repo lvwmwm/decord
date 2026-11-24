@@ -1,16 +1,16 @@
-// Module ID: 10808
-// Function ID: 10809
+// Module ID: 10442
+// Function ID: 10443
 // Name: AgeRestrictedContentSettingsUtils
-// Dependencies: [1388, 5131, 6820, 10809, 5985, 6825, 2]
+// Dependencies: [1386, 4738, 6411, 10443, 5575, 6416, 2]
 // Exports: getViewNsfwCommandsOrDefault, getViewNsfwGuildsOrDefault, resolveNsfwTogglesWithDefaults, useViewNsfwCommandsOrDefault, useViewNsfwGuildsOrDefault
 
-// Module 10808 (AgeRestrictedContentSettingsUtils)
-import UserSettings from "UserSettings" /* 5131 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5985 */;
-import AgeVerificationUtils from "AgeVerificationUtils" /* 6820 */;
-import AgeGatedFeature from "AgeGatedFeature" /* 6825 */;
-import useNSFWAllowed from "useNSFWAllowed" /* 10809 */;
-import UserStore from "UserStore" /* 1388 */;
+// Module 10442 (AgeRestrictedContentSettingsUtils)
+import UserSettings from "UserSettings" /* 4738 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5575 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6411 */;
+import AgeGatedFeature from "AgeGatedFeature" /* 6416 */;
+import useNSFWAllowed from "useNSFWAllowed" /* 10443 */;
+import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/user_settings/content_and_social/AgeRestrictedContentSettingsUtils.tsx");

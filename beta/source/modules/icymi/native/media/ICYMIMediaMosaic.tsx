@@ -1,35 +1,35 @@
-// Module ID: 19334
-// Function ID: 19335
+// Module ID: 18136
+// Function ID: 18137
 // Name: ICYMIMediaMosaic
-// Dependencies: [32, 19, 17, 5307, 5155, 5248, 1388, 10205, 1072, 21, 5306, 575, 6351, 1092, 504, 9730, 1655, 5538, 19335, 6010, 5919, 1113, 7606, 8879, 7428, 10217, 13020, 7432, 19290, 8633, 10210, 1255, 12, 7874, 8627, 5944, 2]
+// Dependencies: [32, 19, 17, 4914, 4762, 4855, 1386, 10033, 1071, 21, 4913, 575, 5953, 1091, 504, 9254, 1653, 5123, 18137, 5600, 5504, 1112, 7208, 8474, 7030, 10043, 10981, 7034, 18092, 8223, 10037, 1254, 12, 7476, 8217, 5529, 2]
 // Exports: default
 
-// Module 19334 (ICYMIMediaMosaic)
+// Module 18136 (ICYMIMediaMosaic)
 import _mod12 from "module_12" /* 12 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import GlobalUtils from "GlobalUtils" /* 1255 */;
-import _modDef1655 from "module_1655" /* 1655 */;
-import FastImageDefault from "FastImage" /* 6010 */;
-import ReadStateActionCreators from "ReadStateActionCreators" /* 7874 */;
-import openMediaModal2 from "openMediaModal" /* 8627 */;
-import MediaSourceUtil from "MediaSourceUtil" /* 8633 */;
-import common_VideoDefault from "common/Video" /* 9730 */;
-import ICYMITypes from "ICYMITypes" /* 10210 */;
-import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 10217 */;
-import ICYMIContext from "ICYMIContext" /* 19290 */;
-import ThumbhashUtils from "ThumbhashUtils" /* 19335 */;
+import GlobalUtils from "GlobalUtils" /* 1254 */;
+import _modDef1653 from "module_1653" /* 1653 */;
+import FastImageDefault from "FastImage" /* 5600 */;
+import ReadStateActionCreators from "ReadStateActionCreators" /* 7476 */;
+import openMediaModal2 from "openMediaModal" /* 8217 */;
+import MediaSourceUtil from "MediaSourceUtil" /* 8223 */;
+import common_VideoDefault from "common/Video" /* 9254 */;
+import ICYMITypes from "ICYMITypes" /* 10037 */;
+import ICYMIActionCreatorsDefault from "ICYMIActionCreators" /* 10043 */;
+import ICYMIContext from "ICYMIContext" /* 18092 */;
+import ThumbhashUtils from "ThumbhashUtils" /* 18137 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5307 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import RelationshipStore from "RelationshipStore" /* 5248 */;
-import UserStore from "UserStore" /* 1388 */;
-import ICYMIStore from "ICYMIStore" /* 10205 */;
-import Constants from "Constants" /* 1072 */;
+import AccessibilityStore from "AccessibilityStore" /* 4914 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import RelationshipStore from "RelationshipStore" /* 4855 */;
+import UserStore from "UserStore" /* 1386 */;
+import ICYMIStore from "ICYMIStore" /* 10033 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -44,7 +44,7 @@ let hasOwnProperty;
 let map1;
 let metroRequire;
 let tmp4;
-const useChannelName = tmp4(5944);
+const useChannelName = tmp4(5529);
 function MediaMosaicVideo(source) {
   let autoplay;
   let height;
@@ -94,9 +94,9 @@ function MediaMosaicImage(source) {
   let obj = react;
   [first, importDefault] = react.useState(false);
   const items = [closure_20, , ];
-  const useAnimatedStyle = source(1655).useAnimatedStyle;
-  source(1655);
-  items[1] = source(5538).withTiming;
+  const useAnimatedStyle = source(1653).useAnimatedStyle;
+  source(1653);
+  items[1] = source(5123).withTiming;
   items[2] = first;
   let c0;
   let c1;
@@ -128,7 +128,7 @@ function MediaMosaicImage(source) {
   }, items2);
   let obj2 = { style: items3, children: closure_15(FastImageDefault, obj3) };
   items3 = [animatedStyle, tmp.thumbhashMedia];
-  const View = _modDef1655.View;
+  const View = _modDef1653.View;
   obj3 = { source: memo, style: items4 };
   items4 = [style, tmp.media, dimensions];
   const items5 = [closure_15(View, obj2), ];
@@ -421,8 +421,8 @@ function ThreeImages(arg0) {
   items2[0] = closure_15(Media, obj5);
   const obj6 = { handlePressMedia, initialIndex: 2, source: sources[2], dimensions: { width: widthOverride / 3, height: widthOverride / 3 } };
   items2[1] = closure_15(Media, obj6);
-  items1[1] = closure_17(metroRequire, obj4);
-  return closure_17(metroRequire, obj);
+  items1[1] = authStore4(metroRequire, obj4);
+  return authStore4(metroRequire, obj);
 }
 function FourImages(arg0) {
   let handlePressMedia;
@@ -453,7 +453,7 @@ function FourImages(arg0) {
   items1[0] = closure_15(Media, obj3);
   const obj4 = { handlePressMedia, initialIndex: 1, source: sources[1], dimensions: size };
   items1[1] = closure_15(Media, obj4);
-  items2 = [closure_17(metroRequire, obj2), ];
+  items2 = [authStore4(metroRequire, obj2), ];
   const obj5 = { style: items3, children: items4 };
   items3 = [, ];
   ({ imageRow: arr4[0], bottomRow: arr4[1] } = tmp);
@@ -462,8 +462,8 @@ function FourImages(arg0) {
   items4[0] = closure_15(Media, obj6);
   const obj7 = { handlePressMedia, initialIndex: 3, source: sources[3], dimensions: size };
   items4[1] = closure_15(Media, obj7);
-  items2[1] = closure_17(metroRequire, obj5);
-  return closure_17(metroRequire, obj);
+  items2[1] = authStore4(metroRequire, obj5);
+  return authStore4(metroRequire, obj);
 }
 function SingleImage(source) {
   let handlePressMedia;
@@ -595,7 +595,7 @@ let react = react_mod;
 ({ Pressable: hasOwnProperty, View: metroRequire } = react_native);
 ({ AnalyticsObjectTypes: closure_12, AnalyticsObjects: map1, AnalyticsPages: closure_14 } = Constants);
 ({ jsx: closure_15, Fragment: closure_16, jsxs: closure_17 } = Fragment);
-const authStore4 = createStyles.createStyles(() => {
+let closure_18 = createStyles.createStyles(() => {
   let rect;
   const obj = { media: { borderRadius: nativeDefault.radii.xs }, video: { backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH }, thumbhashMedia: { position: "absolute", top: 0, left: 0, zIndex: 1 }, container: { gap: 4 }, imagesContainer: { justifyContent: "center", gap: 4, width: "100%" }, imageRow: { flexDirection: "row", gap: 4 }, topRow: { overflow: "hidden", borderTopEndRadius: nativeDefault.radii.lg, borderTopStartRadius: nativeDefault.radii.lg }, bottomRow: { overflow: "hidden", borderBottomEndRadius: nativeDefault.radii.lg, borderBottomStartRadius: nativeDefault.radii.lg }, videoIcon: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOW, borderRadius: nativeDefault.radii.round, padding: 16 }, muteIcon: rect, spoilerText: { backgroundColor: nativeDefault.colors.SPOILER_HIDDEN_BACKGROUND, borderRadius: nativeDefault.radii.lg, paddingHorizontal: nativeDefault.space.PX_12, paddingVertical: 6 }, leftColumn: { overflow: "hidden", borderTopStartRadius: nativeDefault.radii.lg, borderBottomStartRadius: nativeDefault.radii.lg }, rightColumn: { overflow: "hidden", borderTopEndRadius: nativeDefault.radii.lg, borderBottomEndRadius: nativeDefault.radii.lg, gap: 4 }, singleImage: { overflow: "hidden", borderRadius: nativeDefault.radii.lg }, centerContainer: { position: "absolute", width: "100%", height: "100%", alignItems: "center", justifyContent: "center", zIndex: 2 }, absoluteContainer: { position: "absolute", width: "100%", height: "100%", zIndex: 2 }, iconBg: { backgroundColor: nativeDefault.colors.BACKGROUND_BASE_LOWER }, iconBgSelected: { backgroundColor: nativeDefault.colors.WHITE } };
   ({ borderRadius: nativeDefault.radii.xs });

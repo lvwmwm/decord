@@ -1,23 +1,23 @@
-// Module ID: 12118
-// Function ID: 12119
+// Module ID: 10242
+// Function ID: 10243
 // Name: UserProfileWidgetGameTags
-// Dependencies: [19, 17, 502, 8479, 21, 7638, 575, 6051, 5306, 5919, 1113, 7549, 12104, 12090, 5315, 8546, 6321, 12119, 2]
+// Dependencies: [19, 17, 502, 8069, 21, 7240, 575, 5643, 4913, 5504, 1112, 7151, 10200, 10217, 4922, 8136, 5923, 10243, 2]
 
-// Module 12118 (UserProfileWidgetGameTags)
+// Module 10242 (UserProfileWidgetGameTags)
 import nativeDefault from "native" /* 575 */;
-import intl3 from "intl" /* 1113 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5315 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import IconSize from "IconSize" /* 7638 */;
-import Constants from "Constants" /* 8479 */;
-import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8546 */;
-import WidgetUtils from "WidgetUtils" /* 12090 */;
-import openUserProfileAddTagActionSheetDefault from "openUserProfileAddTagActionSheet" /* 12119 */;
+import intl3 from "intl" /* 1112 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4922 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import IconSize from "IconSize" /* 7240 */;
+import Constants from "Constants" /* 8069 */;
+import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8136 */;
+import WidgetUtils from "WidgetUtils" /* 10217 */;
+import openUserProfileAddTagActionSheetDefault from "openUserProfileAddTagActionSheet" /* 10243 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -55,12 +55,12 @@ function GameTag(removeButtonRef) {
   const tmp5 = xs;
   if (tmp4Result) {
     const obj4 = { ref: removeButtonRef, onPress: onRemove, accessibilityRole: "button", accessibilityLabel: formatToPlainString(GCn1ne, obj5), hitSlop, children: metroImportAll(XSmallIcon, obj6) };
-    const intl = tmp8(1113).intl;
+    const intl = tmp8(1112).intl;
     formatToPlainString = intl.formatToPlainString;
     obj5 = { tag: metadata.getText() };
-    GCn1ne = tmp8(1113).t.GCn1ne;
+    GCn1ne = tmp8(1112).t.GCn1ne;
     obj6 = { size: tmp5, color: nativeDefault.colors.ICON_MUTED };
-    XSmallIcon = tmp8(7549).XSmallIcon;
+    XSmallIcon = tmp8(7151).XSmallIcon;
     tmp4Result = tmp4(React3, obj4);
   }
   items[2] = tmp4Result;

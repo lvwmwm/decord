@@ -1,24 +1,24 @@
-// Module ID: 11999
-// Function ID: 12000
+// Module ID: 10418
+// Function ID: 10419
 // Name: SummaryActionCreators
-// Dependencies: [5, 19, 6790, 5155, 12000, 1072, 1089, 572, 1285, 6747, 12, 12002, 563, 2]
+// Dependencies: [5, 19, 6394, 4762, 10419, 1071, 1088, 572, 1284, 6349, 12, 10421, 563, 2]
 // Exports: deleteSummary, fetchSummaries, setHighlightedSummary, setSelectedSummary, setSummaryFeedback, stopPolling, toggleTopicsBar, updateVisibleMessages, useChannelSummaries, useMaybeFetchChannelAffinitiesAndSummaries
 
-// Module 11999 (SummaryActionCreators)
+// Module 10418 (SummaryActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import Constants from "Constants" /* 1072 */;
-import DurationsDefault from "Durations" /* 1089 */;
-import HTTPUtils from "HTTPUtils" /* 1285 */;
+import Constants from "Constants" /* 1071 */;
+import DurationsDefault from "Durations" /* 1088 */;
+import HTTPUtils from "HTTPUtils" /* 1284 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GatewayConnectionStore from "GatewayConnectionStore" /* 6790 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import SummaryStore from "SummaryStore" /* 12000 */;
+import GatewayConnectionStore from "GatewayConnectionStore" /* 6394 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import SummaryStore from "SummaryStore" /* 10419 */;
 import size from "module_2" /* 2 */;
 
 let channel, closure_3;
 
-const f103738 = () => connected.isConnected();
+const f97674 = () => connected.isConnected();
 function fetchSummary() {
   return obj(...arguments);
 }
@@ -503,7 +503,7 @@ function useChannelSummaries(channelIds) {
   let memo;
   obj = channelIds(memo[12]);
   const items = [GatewayConnectionStore];
-  const stateFromStores = obj.useStateFromStores(items, f103738);
+  const stateFromStores = obj.useStateFromStores(items, f97674);
   const items1 = [channelIds];
   memo = react.useMemo(() => channelIds.join(","), items1);
   const items2 = [memo, stateFromStores];
@@ -717,7 +717,7 @@ export function useMaybeFetchChannelAffinitiesAndSummaries() {
   let memo;
   const items1 = [GatewayConnectionStore];
   obj = items(memo[12]);
-  const stateFromStores = obj.useStateFromStores(items1, f103738);
+  const stateFromStores = obj.useStateFromStores(items1, f97674);
   const items2 = [items];
   memo = react.useMemo(() => channelIds.join(","), items2);
   const items3 = [memo, stateFromStores];

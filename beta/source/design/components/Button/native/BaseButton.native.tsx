@@ -1,21 +1,21 @@
-// Module ID: 5935
-// Function ID: 5936
+// Module ID: 5520
+// Function ID: 5521
 // Name: Button/BaseButton
-// Dependencies: [109, 19, 17, 1072, 5936, 21, 5367, 5306, 5933, 1655, 1255, 1380, 2]
+// Dependencies: [109, 19, 17, 1071, 5521, 21, 4974, 4913, 5518, 1653, 1254, 1378, 2]
 // Exports: BaseButton
 
-// Module 5935 (Button/BaseButton)
+// Module 5520 (Button/BaseButton)
 import Fragment from "Fragment" /* 21 */;
-import Constants from "Constants" /* 1072 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
-import native from "native" /* 5367 */;
-import ButtonHooks from "ButtonHooks" /* 5933 */;
-import react_native from "react-native" /* 5936 */;
+import Constants from "Constants" /* 1071 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
+import native from "native" /* 4974 */;
+import ButtonHooks from "ButtonHooks" /* 5518 */;
+import react_native from "react-native" /* 5521 */;
 import _objectWithoutProperties from "_objectWithoutProperties" /* 109 */;
 import react from "react" /* 19 */;
 import react_native2 from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 5306 */;
-import module_1655_mod from "module_1655" /* 1655 */;
+import createStyles from "createStyles" /* 4913 */;
+import module_1653_mod from "module_1653" /* 1653 */;
 import size from "module_2" /* 2 */;
 
 let Pressable;
@@ -26,10 +26,10 @@ const ThemeTypes = Constants.ThemeTypes;
 const IOS_POINTER_STYLE = react_native.IOS_POINTER_STYLE;
 const jsx = Fragment.jsx;
 let closure_8 = createStyles.createStyles({ disabled: { opacity: 0.5 } });
-let module_1655 = module_1655_mod;
-let closure_9 = module_1655.createAnimatedComponent(Pressable);
-module_1655 = module_1655_mod;
-let closure_10 = module_1655.createAnimatedComponent(TouchableOpacity);
+let module_1653 = module_1653_mod;
+let closure_9 = module_1653.createAnimatedComponent(Pressable);
+module_1653 = module_1653_mod;
+let closure_10 = module_1653.createAnimatedComponent(TouchableOpacity);
 const result = size.fileFinishedImporting("design/components/Button/native/BaseButton.native.tsx");
 
 export function BaseButton(style) {
@@ -115,7 +115,7 @@ export function BaseButton(style) {
   }
   let tmp12 = children;
   if (null != DARK) {
-    tmp12 = jsx(tmp4(5367).ThemeContextProvider, { theme: DARK, children });
+    tmp12 = jsx(tmp4(4974).ThemeContextProvider, { theme: DARK, children });
   }
   const items1 = [style, , , ];
   if (flag) {
@@ -137,7 +137,7 @@ export function BaseButton(style) {
     let str3 = "";
     if (!accessibilityElementsHidden) {
       const items2 = [accessibilityLabel, accessibilityHint];
-      const found = items2.filter(tmp4(1255).isNotNullish);
+      const found = items2.filter(tmp4(1254).isNotNullish);
       str3 = found.join(", ");
     }
     const obj7 = {

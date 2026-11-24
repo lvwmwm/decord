@@ -1,15 +1,15 @@
-// Module ID: 8722
-// Function ID: 8723
+// Module ID: 8312
+// Function ID: 8313
 // Name: GuildMemberSafetySearch
-// Dependencies: [32, 8723, 6151, 11, 5225, 5244, 2]
+// Dependencies: [32, 8313, 5744, 11, 4832, 4851, 2]
 // Exports: getDefaultSearchState
 
-// Module 8722 (GuildMemberSafetySearch)
+// Module 8312 (GuildMemberSafetySearch)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 5225 */;
-import AutomodPermissionUtils from "AutomodPermissionUtils" /* 5244 */;
-import isEqualDefault from "isEqual" /* 6151 */;
-import GuildMemberSafetySearchUtils from "GuildMemberSafetySearchUtils" /* 8723 */;
+import CommunicationDisabledUtils from "CommunicationDisabledUtils" /* 4832 */;
+import AutomodPermissionUtils from "AutomodPermissionUtils" /* 4851 */;
+import isEqualDefault from "isEqual" /* 5744 */;
+import GuildMemberSafetySearchUtils from "GuildMemberSafetySearchUtils" /* 8313 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 
@@ -24,7 +24,7 @@ function hasStringMatch(str, str2) {
   }
   return hasItem;
 }
-let obj = { query: "", requireUnusualDmActivity: false, requireCommunicationDisabled: false, requireUnusualAccountActivity: false, requireUsernameQuarantined: false, selectedRoleIds: set, selectedJoinDateOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedAccountAgeOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedJoinSourceType: "alignItems", selectedSourceInviteCode: "text", selectedSort: "fileBytes" };
+let obj = { query: "", requireUnusualDmActivity: false, requireCommunicationDisabled: false, requireUnusualAccountActivity: false, requireUsernameQuarantined: false, selectedRoleIds: set, selectedJoinDateOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedAccountAgeOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedJoinSourceType: "add", selectedSourceInviteCode: "guild", selectedSort: "p" };
 set = new Set();
 let closure_4 = freeze(obj);
 const result = size.fileFinishedImporting("modules/guild_mod_dash_member_safety/GuildMemberSafetySearch.tsx");
@@ -32,16 +32,16 @@ class GuildMemberSafetySearch {
   constructor(guildId) {
     const obj2 = Object.create(new.target.prototype);
     obj2.guildId = guildId;
-    obj2._searchState = { query: "", requireUnusualDmActivity: false, requireCommunicationDisabled: false, requireUnusualAccountActivity: false, requireUsernameQuarantined: false, selectedRoleIds: new Set(), selectedJoinDateOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedAccountAgeOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedJoinSourceType: "alignItems", selectedSourceInviteCode: "text", selectedSort: "fileBytes" };
+    obj2._searchState = { query: "", requireUnusualDmActivity: false, requireCommunicationDisabled: false, requireUnusualAccountActivity: false, requireUsernameQuarantined: false, selectedRoleIds: new Set(), selectedJoinDateOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedAccountAgeOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedJoinSourceType: "add", selectedSourceInviteCode: "guild", selectedSort: "p" };
     obj2.hasDefaultQuery = true;
-    const obj = { query: "", requireUnusualDmActivity: false, requireCommunicationDisabled: false, requireUnusualAccountActivity: false, requireUsernameQuarantined: false, selectedRoleIds: new Set(), selectedJoinDateOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedAccountAgeOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedJoinSourceType: "alignItems", selectedSourceInviteCode: "text", selectedSort: "fileBytes" };
+    const obj = { query: "", requireUnusualDmActivity: false, requireCommunicationDisabled: false, requireUnusualAccountActivity: false, requireUsernameQuarantined: false, selectedRoleIds: new Set(), selectedJoinDateOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedAccountAgeOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedJoinSourceType: "add", selectedSourceInviteCode: "guild", selectedSort: "p" };
     new Set();
     return obj2;
   }
   reset() {
-    this._searchState = { query: "", requireUnusualDmActivity: false, requireCommunicationDisabled: false, requireUnusualAccountActivity: false, requireUsernameQuarantined: false, selectedRoleIds: new Set(), selectedJoinDateOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedAccountAgeOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedJoinSourceType: "alignItems", selectedSourceInviteCode: "text", selectedSort: "fileBytes" };
+    this._searchState = { query: "", requireUnusualDmActivity: false, requireCommunicationDisabled: false, requireUnusualAccountActivity: false, requireUsernameQuarantined: false, selectedRoleIds: new Set(), selectedJoinDateOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedAccountAgeOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedJoinSourceType: "add", selectedSourceInviteCode: "guild", selectedSort: "p" };
     this.hasDefaultQuery = true;
-    const obj = { query: "", requireUnusualDmActivity: false, requireCommunicationDisabled: false, requireUnusualAccountActivity: false, requireUsernameQuarantined: false, selectedRoleIds: new Set(), selectedJoinDateOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedAccountAgeOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedJoinSourceType: "alignItems", selectedSourceInviteCode: "text", selectedSort: "fileBytes" };
+    const obj = { query: "", requireUnusualDmActivity: false, requireCommunicationDisabled: false, requireUnusualAccountActivity: false, requireUsernameQuarantined: false, selectedRoleIds: new Set(), selectedJoinDateOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedAccountAgeOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedJoinSourceType: "add", selectedSourceInviteCode: "guild", selectedSort: "p" };
     new Set();
   }
   updateSearchState(arg0) {
@@ -59,7 +59,7 @@ class GuildMemberSafetySearch {
       const _Set = Set;
       const self2 = this;
       const self3 = this;
-      const obj = { query: "", requireUnusualDmActivity: false, requireCommunicationDisabled: false, requireUnusualAccountActivity: false, requireUsernameQuarantined: false, selectedRoleIds: set, selectedJoinDateOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedAccountAgeOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedJoinSourceType: "alignItems", selectedSourceInviteCode: "text", selectedSort: "fileBytes" };
+      const obj = { query: "", requireUnusualDmActivity: false, requireCommunicationDisabled: false, requireUnusualAccountActivity: false, requireUsernameQuarantined: false, selectedRoleIds: set, selectedJoinDateOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedAccountAgeOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedJoinSourceType: "add", selectedSourceInviteCode: "guild", selectedSort: "p" };
       self._searchState = obj;
       self.hasDefaultQuery = true;
       flag = true;
@@ -236,7 +236,7 @@ Object.defineProperty(GuildMemberSafetySearch.prototype, "requiresUsernameMatch"
 });
 
 export function getDefaultSearchState() {
-  const obj = { query: "", requireUnusualDmActivity: false, requireCommunicationDisabled: false, requireUnusualAccountActivity: false, requireUsernameQuarantined: false, selectedRoleIds: new Set(), selectedJoinDateOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedAccountAgeOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedJoinSourceType: "alignItems", selectedSourceInviteCode: "text", selectedSort: "fileBytes" };
+  const obj = { query: "", requireUnusualDmActivity: false, requireCommunicationDisabled: false, requireUnusualAccountActivity: false, requireUsernameQuarantined: false, selectedRoleIds: new Set(), selectedJoinDateOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedAccountAgeOption: { optionId: 0, afterDate: null, beforeDate: null }, selectedJoinSourceType: "add", selectedSourceInviteCode: "guild", selectedSort: "p" };
   new Set();
   return obj;
 }

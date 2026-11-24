@@ -1,13 +1,13 @@
-// Module ID: 1341
-// Function ID: 1342
+// Module ID: 1339
+// Function ID: 1340
 // Name: stringifyErrors
 // Dependencies: [2]
 
-// Module 1341 (stringifyErrors)
+// Module 1339 (stringifyErrors)
 import size from "module_2" /* 2 */;
 
 function stringifyErrors(body) {
-  const f84505 = (acc, message) => {
+  const f80834 = (acc, message) => {
     let tmp;
     if (typeof message === "function") {
       let tmp2 = message;
@@ -26,13 +26,13 @@ function stringifyErrors(body) {
           let tmp5 = globalThis;
           let _Array = Array;
           if (Array.isArray(message)) {
-            let reduced = message.reduce(f84505, []);
+            let reduced = message.reduce(f80834, []);
             let str3 = ", ";
             str = reduced.join(", ");
           } else if (typeof message === "object") {
             let _Object = Object;
             let keys = Object.keys(message);
-            let reduced1 = keys.reduce(f84506, []);
+            let reduced1 = keys.reduce(f80835, []);
             let str5 = ", ";
             str = reduced1.join(", ");
           }
@@ -45,7 +45,7 @@ function stringifyErrors(body) {
       throw new TypeError("Trying to call a non-function");
     }
   };
-  const f84506 = (arr, item) => {
+  const f80835 = (arr, item) => {
     arr = message[item];
     if (typeof closure_2_0 === "function") {
       let tmp = null;
@@ -64,7 +64,7 @@ function stringifyErrors(body) {
           let tmp3 = globalThis;
           let _Array = Array;
           if (Array.isArray(arr)) {
-            let reduced = arr.reduce(f84505, []);
+            let reduced = arr.reduce(f80834, []);
             let str4 = ", ";
             str3 = reduced.join(", ");
           } else {
@@ -72,7 +72,7 @@ function stringifyErrors(body) {
             if (typeof arr === "object") {
               let _Object = Object;
               let keys = Object.keys(arr);
-              let reduced1 = keys.reduce(f84506, []);
+              let reduced1 = keys.reduce(f80835, []);
               let str9 = ", ";
               str3 = reduced1.join(", ");
             }
@@ -112,12 +112,12 @@ function stringifyErrors(body) {
       }
       const _Array = Array;
       if (Array.isArray(body)) {
-        const reduced = body.reduce(f84505, []);
+        const reduced = body.reduce(f80834, []);
         str = reduced.join(", ");
       } else if (typeof body === "object") {
         const _Object = Object;
         const keys = Object.keys(body);
-        const reduced1 = keys.reduce(f84506, []);
+        const reduced1 = keys.reduce(f80835, []);
         str = reduced1.join(", ");
       }
     }

@@ -1,10 +1,10 @@
-// Module ID: 17346
-// Function ID: 17347
+// Module ID: 16114
+// Function ID: 16115
 // Name: AgeNoticeSettingsNoticesLazy
-// Dependencies: [2, 17347]
+// Dependencies: [2, 16115]
 
-// Module 17346 (AgeNoticeSettingsNoticesLazy)
-import AgeNoticeSettingsNotices from "AgeNoticeSettingsNotices" /* 17347 */;
+// Module 16114 (AgeNoticeSettingsNoticesLazy)
+import AgeNoticeSettingsNotices from "AgeNoticeSettingsNotices" /* 16115 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/age_assurance/age_notice/native/AgeNoticeSettingsNoticesLazy.tsx");

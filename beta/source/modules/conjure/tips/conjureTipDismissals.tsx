@@ -1,10 +1,10 @@
-// Module ID: 13606
-// Function ID: 13607
+// Module ID: 18453
+// Function ID: 18454
 // Name: conjureTipDismissals
 // Dependencies: [19, 510, 2]
 // Exports: dismissConjureTip, useConjureTipDismissalsVersion
 
-// Module 13606 (conjureTipDismissals)
+// Module 18453 (conjureTipDismissals)
 import Storage5 from "Storage" /* 510 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;

@@ -1,91 +1,92 @@
-// Module ID: 14084
-// Function ID: 14085
+// Module ID: 12252
+// Function ID: 12253
 // Name: GameOrganizationJoinOutcomeModal
-// Dependencies: [19, 12369, 21, 5306, 6838, 14074, 14085, 8208, 8210, 6327, 575, 14086, 5919, 14081, 5926, 7490, 7493, 12525, 2]
+// Dependencies: [19, 17, 11896, 21, 4913, 6429, 12253, 7811, 7813, 5929, 575, 12254, 5504, 12258, 12249, 5511, 7092, 7095, 12043, 2]
 // Exports: default
 
-// Module 14084 (GameOrganizationJoinOutcomeModal)
+// Module 12252 (GameOrganizationJoinOutcomeModal)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import components_Button_Button from "components/Button/Button" /* 5926 */;
-import Stack_Stack from "Stack/Stack" /* 6327 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
-import NavigatorHeader from "NavigatorHeader" /* 7493 */;
-import ModalScreen2 from "ModalScreen" /* 8208 */;
-import ModalContent2 from "ModalContent" /* 8210 */;
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 12369 */;
-import useResolvedGameOrganizationInviteDefault from "useResolvedGameOrganizationInvite" /* 14074 */;
-import useGameOrganizationJoinOutcomeDefault from "useGameOrganizationJoinOutcome" /* 14085 */;
-import GameOrganizationJoinSuccessGraphicDefault from "GameOrganizationJoinSuccessGraphic" /* 14086 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import components_Button_Button from "components/Button/Button" /* 5511 */;
+import Stack_Stack from "Stack/Stack" /* 5929 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6429 */;
+import NavigatorHeader from "NavigatorHeader" /* 7095 */;
+import ModalScreen2 from "ModalScreen" /* 7811 */;
+import ModalContent2 from "ModalContent" /* 7813 */;
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11896 */;
+import useGameOrganizationJoinOutcomeDefault from "useGameOrganizationJoinOutcome" /* 12253 */;
+import HighFiveSpotIllustration from "HighFiveSpotIllustration" /* 12254 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let importDefault;
 
-let closure_4;
 let hasOwnProperty;
+let metroRequire;
+let tmp2;
+const GameOrganizationJoinOutcomeChecklistDefault = tmp2(12258);
 function closeGameOrganizationJoinOutcomeModal() {
   const obj = ModalActionCreatorsDefault;
-  obj.popWithKey(closure_3);
+  obj.popWithKey(closure_4);
 }
 function GameOrganizationJoinOutcomeScreen(arg0) {
   let code;
   let cta;
+  let isWaitingForGuild;
   let items;
   let items1;
   let items2;
-  let obj17;
+  let obj9;
   let result;
-  let subtitle;
+  let rows;
   ({ code, result } = arg0);
-  const tmp = closure_7();
-  const tmp4 = useResolvedGameOrganizationInviteDefault(code);
-  ({ subtitle, cta } = useGameOrganizationJoinOutcomeDefault(code, result, closeGameOrganizationJoinOutcomeModal));
-  let tmp9Result = null;
-  useGameOrganizationJoinOutcomeDefault(code, result, closeGameOrganizationJoinOutcomeModal);
-  if (null != tmp4) {
-    const ModalScreen = ModalScreen2.ModalScreen;
-    const ModalContent = ModalContent2.ModalContent;
-    const obj = { spacing: nativeDefault.space.PX_48, children: items };
-    const Stack = Stack_Stack.Stack;
-    const obj2 = { character: result.character, organizationIconUrl: tmp4.organization.iconUrl };
-    items = [React3(GameOrganizationJoinSuccessGraphicDefault, obj2), ];
-    const obj3 = { spacing: nativeDefault.space.PX_8, children: items1 };
-    const Stack2 = Stack_Stack.Stack;
-    const obj4 = { variant: "heading-xl/semibold", style: tmp.text, accessibilityRole: "header", children: tmp6 };
-    items1 = [React3(Text_Text.Text, obj4), ];
-    let tmp11Result = null != subtitle;
-    if (tmp11Result) {
-      const obj5 = { variant: "body-md/normal", color: "text-muted", style: tmp.text, children: subtitle };
-      tmp11Result = tmp11(tmp10(5919).Text, obj5);
-    }
-    const obj6 = { children: items2 };
-    items1[1] = tmp11Result;
-    const obj7 = { children: hasOwnProperty(Stack, obj) };
-    items[1] = hasOwnProperty(Stack2, obj3);
-    items2 = [React3(ModalContent, obj7), ];
-    const obj8 = { children: React3(components_Button_Button.Button, obj17) };
-    const ModalFooter = tmp10(14081).ModalFooter;
-    obj17 = { text: null, size: "lg", onPress: null, disabled: tmp7 };
-    ({ text: obj9.text, action: obj9.onPress } = cta);
-    items2[1] = React3(ModalFooter, obj8);
-    tmp9Result = tmp9(ModalScreen, obj6);
+  const tmp = closure_8();
+  const tmp4 = useGameOrganizationJoinOutcomeDefault(code, result, closeGameOrganizationJoinOutcomeModal);
+  ({ rows, cta, isWaitingForGuild } = tmp4);
+  const title = tmp4.title;
+  const ModalScreen = ModalScreen2.ModalScreen;
+  const ModalContent = ModalContent2.ModalContent;
+  const obj = { spacing: nativeDefault.space.PX_48, children: items };
+  const Stack = Stack_Stack.Stack;
+  items = [, ];
+  const obj2 = { style: tmp.graphic, accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: hasOwnProperty(HighFiveSpotIllustration.HighFiveSpotIllustration, { height: 140 }) };
+  items[0] = hasOwnProperty(View, obj2);
+  const obj3 = { spacing: nativeDefault.space.PX_24, children: items1 };
+  const Stack2 = Stack_Stack.Stack;
+  items1 = [, ];
+  const obj4 = { variant: "heading-xl/semibold", style: tmp.text, accessibilityRole: "header", children: title };
+  items1[0] = hasOwnProperty(Text_Text.Text, obj4);
+  let tmp7Result = null;
+  if (null != rows) {
+    const obj5 = { rows };
+    tmp7Result = tmp7(GameOrganizationJoinOutcomeChecklistDefault, obj5);
   }
-  return tmp9Result;
+  const obj6 = { children: items2 };
+  items1[1] = tmp7Result;
+  const obj7 = { children: metroRequire(Stack, obj) };
+  items[1] = metroRequire(Stack2, obj3);
+  items2 = [hasOwnProperty(ModalContent, obj7), ];
+  const obj8 = { children: hasOwnProperty(components_Button_Button.Button, obj9) };
+  const ModalFooter = tmp6(12249).ModalFooter;
+  obj9 = { text: cta.text, size: "lg", onPress: cta.action, disabled: isWaitingForGuild, loading: isWaitingForGuild };
+  items2[1] = hasOwnProperty(ModalFooter, obj8);
+  return metroRequire(ModalScreen, obj6);
 }
-let closure_3 = GameOrganizationInviteConstants.GAME_ORGANIZATION_JOIN_OUTCOME_MODAL_KEY;
-({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
+const View = react_native.View;
+let closure_4 = GameOrganizationInviteConstants.GAME_ORGANIZATION_JOIN_OUTCOME_MODAL_KEY;
+({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 const constants = { OUTCOME: "OUTCOME" };
-let closure_7 = createStyles.createStyles({ text: { textAlign: "center" } });
+let closure_8 = createStyles.createStyles({ graphic: { alignItems: "center" }, text: { textAlign: "center" } });
 let result = size.fileFinishedImporting("modules/game_organization_invites/native/GameOrganizationJoinOutcomeModal.tsx");
 
 export default function GameOrganizationJoinOutcomeModal(code) {
   code = code.code;
   const result = code.result;
   importDefault = result;
-  let obj = code(7490);
+  let obj = code(7092);
   const items = [code, result];
   const navigatorScreens = obj.useNavigatorScreens(() => {
     let obj3;
@@ -98,7 +99,7 @@ export default function GameOrganizationJoinOutcomeModal(code) {
       },
       render() {
         const obj = { code, result };
-        return closure_2_4(GameOrganizationJoinOutcomeScreen, obj);
+        return closure_2_5(GameOrganizationJoinOutcomeScreen, obj);
       }
     };
     obj[OUTCOME] = obj2;
@@ -106,5 +107,5 @@ export default function GameOrganizationJoinOutcomeModal(code) {
     return obj;
   }, items);
   let obj2 = { screens: navigatorScreens, initialRouteName: constants.OUTCOME, gradientColor: "purple" };
-  return closure_4(code(12525).Modal, obj2);
+  return closure_5(code(12043).Modal, obj2);
 };

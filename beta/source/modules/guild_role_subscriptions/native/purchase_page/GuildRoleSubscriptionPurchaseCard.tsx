@@ -1,26 +1,26 @@
-// Module ID: 19391
-// Function ID: 19392
+// Module ID: 18193
+// Function ID: 18194
 // Name: GuildRoleSubscriptionPurchaseCard
-// Dependencies: [32, 19, 17, 21, 5306, 575, 1630, 17848, 19386, 5556, 5919, 1187, 19392, 5560, 1113, 17858, 2]
+// Dependencies: [32, 19, 17, 21, 4913, 575, 1628, 16628, 18188, 5141, 5504, 1186, 18194, 5145, 1112, 16638, 2]
 // Exports: default
 
-// Module 19391 (GuildRoleSubscriptionPurchaseCard)
+// Module 18193 (GuildRoleSubscriptionPurchaseCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1113 */;
-import native from "native" /* 1187 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5556 */;
-import BottomSheetModal from "BottomSheetModal" /* 5560 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17848 */;
-import GuildRoleSubscriptionCard from "GuildRoleSubscriptionCard" /* 17858 */;
-import Elements from "Elements" /* 19386 */;
-import SubscribeButtonDefault from "SubscribeButton" /* 19392 */;
+import intl2 from "intl" /* 1112 */;
+import native from "native" /* 1186 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
+import Sheet_BottomSheet from "Sheet/BottomSheet" /* 5141 */;
+import BottomSheetModal from "BottomSheetModal" /* 5145 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16628 */;
+import GuildRoleSubscriptionCard from "GuildRoleSubscriptionCard" /* 16638 */;
+import Elements from "Elements" /* 18188 */;
+import SubscribeButtonDefault from "SubscribeButton" /* 18194 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let metroImportDefault;

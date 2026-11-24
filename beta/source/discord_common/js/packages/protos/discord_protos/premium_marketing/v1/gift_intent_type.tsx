@@ -1,9 +1,9 @@
-// Module ID: 1393
-// Function ID: 1394
+// Module ID: 1391
+// Function ID: 1392
 // Name: gift_intent_type
 // Dependencies: [2]
 
-// Module 1393 (gift_intent_type)
+// Module 1391 (gift_intent_type)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_common/js/packages/protos/discord_protos/premium_marketing/v1/gift_intent_type.tsx");

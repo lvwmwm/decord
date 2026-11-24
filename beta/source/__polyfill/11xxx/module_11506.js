@@ -1,15 +1,19 @@
 // Module ID: 11506
 // Function ID: 11507
-// Dependencies: [41, 42, 93, 95, 98, 11448]
+// Dependencies: [41, 42, 93, 95, 98, 11439, 11422]
 
 // Module 11506
-import _mod11448 from "module_11448" /* 11448 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 11422 */;
+import now2 from "now" /* 11439 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import map from "_possibleConstructorReturn" /* 93 */;
 import _getPrototypeOf from "_getPrototypeOf" /* 95 */;
 import _inherits from "_inherits" /* 98 */;
 
+let hasOwnProperty;
+
+let self = this;
 function _isNativeReflectConstruct() {
   try {
     const _Boolean = Boolean;
@@ -25,12 +29,107 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class JPMergeWeekdayComponentRefiner {
+let self2 = this;
+if (this) {
+  self2 = self.__createBinding;
+}
+if (!self2) {
+  let tmp3 = globalThis;
+  let _Object = Object;
+  self2 = Object.create ? ((arg0, __esModule, arg2, arg3) => {
+    function get() {
+      return __esModule[closure_1];
+    }
+    let closure_0 = __esModule;
+    let closure_1 = arg2;
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
+    }
+    let ownPropertyDescriptor = Object.getOwnPropertyDescriptor(__esModule, arg2);
+    let tmp3 = ownPropertyDescriptor;
+    if (tmp3) {
+      let tmp4;
+      if ("get" in ownPropertyDescriptor) {
+        tmp4 = !__esModule.__esModule;
+      } else {
+        tmp4 = ownPropertyDescriptor.writable || ownPropertyDescriptor.configurable;
+      }
+      tmp3 = !tmp4;
+    }
+    if (!tmp3) {
+      ownPropertyDescriptor = { enumerable: true, get };
+      const obj = { enumerable: true, get };
+    }
+    Object.defineProperty(arg0, tmp, ownPropertyDescriptor);
+  }) : ((arg0, arg1, arg2, arg3) => {
+    let tmp = arg3;
+    if (undefined === arg3) {
+      tmp = arg2;
+    }
+    arg0[tmp] = arg1[arg2];
+  });
+}
+let tmp4 = self && self.__setModuleDefault;
+if (!tmp4) {
+  let tmp5 = globalThis;
+  const _Object2 = Object;
+  tmp4 = Object.create ? ((arg0, value) => {
+    const obj = { enumerable: true, value };
+    Object.defineProperty(arg0, "default", obj);
+  }) : ((arg0, arg1) => {
+    arg0.default = arg1;
+  });
+}
+let closure_6 = tmp4;
+let fn = self && self.__importStar;
+if (!fn) {
+  fn = function o(arg0) {
+    fn = Object.getOwnPropertyNames || ((obj) => {
+      const items = [];
+      for (const key10005 in obj) {
+        let _Object = Object;
+        hasOwnProperty = Object.prototype.hasOwnProperty;
+        if (!hasOwnProperty.call(obj, key10005)) {
+          continue;
+        } else {
+          items[items.length] = key10005;
+          continue;
+        }
+        continue;
+      }
+      return items;
+    });
+    return fn(arg0);
+  };
+  fn = (__esModule) => {
+    const tmp = __esModule;
+    if (tmp) {
+      if (__esModule.__esModule) {
+        return __esModule;
+      }
+    }
+    const obj = {};
+    if (null != __esModule) {
+      let num;
+      const arr = fn(__esModule);
+      for (let num = 0; num < arr.length; num = num + 1) {
+        if ("default" !== arr[num]) {
+          let tmp5 = self2(obj, __esModule, arr[num]);
+        }
+      }
+    }
+    closure_6(obj, __esModule);
+    return obj;
+  };
+}
+const now = fn(now2);
+class NLCasualDateParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, JPMergeWeekdayComponentRefiner);
-    const obj = _getPrototypeOf(JPMergeWeekdayComponentRefiner);
+    _classCallCheck(this, NLCasualDateParser);
+    const obj = _getPrototypeOf(NLCasualDateParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = map;
     if (_isNativeReflectConstruct()) {
@@ -42,44 +141,38 @@ class JPMergeWeekdayComponentRefiner {
     return tmp3(self, constructResult);
   }
 }
-_inherits(JPMergeWeekdayComponentRefiner, _mod11448.MergingRefiner);
+_inherits(NLCasualDateParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
-  key: "mergeResults",
-  value: function mergeResults(arg0, clone, text) {
-    const cloneResult = clone.clone();
-    cloneResult.text = clone.text + arg0 + text.text;
-    const start = cloneResult.start;
-    const start2 = text.start;
-    start.assign("weekday", start2.get("weekday"));
-    if (cloneResult.end) {
-      const end = cloneResult.end;
-      const start3 = text.start;
-      end.assign("weekday", start3.get("weekday"));
-    }
-    return cloneResult;
+  key: "innerPattern",
+  value: function innerPattern(arg0) {
+    return /(nu|vandaag|morgen|morgend|gisteren)(?=\W|$)/i;
   }
 };
-const items = [
+let items = [
   entry,
   {
-    key: "shouldMergeResults",
-    value: function shouldMergeResults(str, start, start2) {
-      start = start.start;
-      let isCertainResult = start.isCertain("day");
-      if (isCertainResult) {
-        start2 = start2.start;
-        isCertainResult = start2.isOnlyWeekdayComponent();
+    key: "innerExtract",
+    value: function innerExtract(reference, arg1) {
+      const str = arg1[0];
+      const formatted = str.toLowerCase();
+      if ("nu" === formatted) {
+        return now.now(reference.reference);
+      } else if ("vandaag" === formatted) {
+        return now.today(reference.reference);
+      } else {
+        if ("morgen" !== formatted) {
+          if ("morgend" !== formatted) {
+            if ("gisteren" === formatted) {
+              return now.yesterday(reference.reference);
+            } else {
+              return tmp2;
+            }
+          }
+        }
+        return now.tomorrow(reference.reference);
       }
-      if (isCertainResult) {
-        const start3 = start2.start;
-        isCertainResult = !start3.isCertain("hour");
-      }
-      if (isCertainResult) {
-        isCertainResult = null !== str.match(/^[,、の]?\s*$/);
-      }
-      return isCertainResult;
     }
   }
 ];
 
-export default _createClass(JPMergeWeekdayComponentRefiner, items);
+export default _createClass(NLCasualDateParser, items);

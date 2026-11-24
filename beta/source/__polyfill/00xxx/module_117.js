@@ -8,7 +8,7 @@ import get_BatchedBridge from "get BatchedBridge" /* 272 */;
 import _mod287 from "module_287" /* 287 */;
 import setUpDefaltReactNativeEnvironment from "setUpDefaltReactNativeEnvironment" /* 118 */;
 
-let _null, _null2, _null3, _null5, _require, closure_139, closure_304, context, context2, dependencyMap, isArray, items11, map1, set2, set3, str5;
+let _null, _null2, _null3, _null5, _require, closure_139, closure_304, context, context2, dependencyMap, isArray, items11, map1, set2, set3, set4, str5;
 
 let tmp;
 let tmp12;
@@ -5985,7 +5985,7 @@ function updateSuspenseListComponent(child, pendingProps, current2) {
           if ("together" === revealOrder) {
             memoizedState = pendingProps.memoizedState;
             if (null === memoizedState) {
-              pendingProps.memoizedState = { isBackwards: false, rendering: null, renderingStartTime: 0, last: null, tail: null, tailMode: "ip", treeForkCount: false };
+              pendingProps.memoizedState = { isBackwards: false, rendering: null, renderingStartTime: 0, last: null, tail: null, tailMode: "disabled", treeForkCount: false };
             } else {
               memoizedState.isBackwards = false;
               memoizedState.rendering = null;
@@ -12048,7 +12048,7 @@ function throwAndUnwindWorkLoop(current, memoizedState, value, c281) {
                 const self17 = this;
                 const self18 = this;
                 current.updateQueue = new Set(items2);
-                const set4 = new Set(items2);
+                set4 = new Set(items2);
               } else {
                 updateQueue2.add(cache);
               }

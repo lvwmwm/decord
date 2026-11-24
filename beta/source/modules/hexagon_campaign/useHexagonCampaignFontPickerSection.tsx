@@ -1,13 +1,13 @@
-// Module ID: 17964
-// Function ID: 17965
+// Module ID: 16743
+// Function ID: 16744
 // Name: useHexagonCampaignFontPickerSection
-// Dependencies: [19, 5331, 1397, 17961, 5336, 17087, 6957, 2]
+// Dependencies: [19, 4938, 1395, 16740, 4943, 15852, 6561, 2]
 // Exports: useHexagonCampaignFontPickerSection
 
-// Module 17964 (useHexagonCampaignFontPickerSection)
-import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1397 */;
+// Module 16743 (useHexagonCampaignFontPickerSection)
+import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1395 */;
 import react from "react" /* 19 */;
-import HexagonCampaignConstants from "HexagonCampaignConstants" /* 5331 */;
+import HexagonCampaignConstants from "HexagonCampaignConstants" /* 4938 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -27,9 +27,9 @@ export function useHexagonCampaignFontPickerSection(DisplayNameStylesFontPickerS
     flag = false;
   }
   let visibleFontOrder;
-  const obj2 = visibleFontOrder(17961);
+  const obj2 = visibleFontOrder(16740);
   visibleFontOrder = obj2.useVisibleFontOrder({ includeCampaignFonts: true });
-  const obj4 = visibleFontOrder(5336);
+  const obj4 = visibleFontOrder(4943);
   const hexagonCampaignPerkAvailability = obj4.useHexagonCampaignPerkAvailability(constants.DISPLAY_NAME_STYLE, DisplayNameStylesFontPickerSheet);
   let hasItem = hexagonCampaignPerkAvailability === constants2.SELECTABLE;
   if (!hasItem) {
@@ -44,11 +44,11 @@ export function useHexagonCampaignFontPickerSection(DisplayNameStylesFontPickerS
   if (hasItem) {
     hasItem = visibleFontOrder.includes(closure_3);
   }
-  const useTrackHexagonCampaignContentViewed = visibleFontOrder(17087).useTrackHexagonCampaignContentViewed;
-  visibleFontOrder(17087);
-  const DISPLAY_NAME_STYLES_SETTINGS = tmp(6957).QuestContent.DISPLAY_NAME_STYLES_SETTINGS;
+  const useTrackHexagonCampaignContentViewed = visibleFontOrder(15852).useTrackHexagonCampaignContentViewed;
+  visibleFontOrder(15852);
+  const DISPLAY_NAME_STYLES_SETTINGS = tmp(6561).QuestContent.DISPLAY_NAME_STYLES_SETTINGS;
   let tmp8 = hasItem;
-  const FONT_PICKER = tmp(17087).HexagonCampaignContentSurface.FONT_PICKER;
+  const FONT_PICKER = tmp(15852).HexagonCampaignContentSurface.FONT_PICKER;
   if (hasItem) {
     tmp8 = !isTryItOut;
   }

@@ -1,14 +1,14 @@
-// Module ID: 10705
-// Function ID: 10706
+// Module ID: 13396
+// Function ID: 13397
 // Name: useCanPurchaseBoosts
-// Dependencies: [1388, 1390, 8529, 504, 2]
+// Dependencies: [1386, 1388, 8119, 504, 2]
 // Exports: default
 
-// Module 10705 (useCanPurchaseBoosts)
+// Module 13396 (useCanPurchaseBoosts)
 import get_initialized from "get initialized" /* 504 */;
-import PremiumConstants from "PremiumConstants" /* 1390 */;
-import useFractionalPremiumInfoDefault from "useFractionalPremiumInfo" /* 8529 */;
-import UserStore from "UserStore" /* 1388 */;
+import PremiumConstants from "PremiumConstants" /* 1388 */;
+import useFractionalPremiumInfoDefault from "useFractionalPremiumInfo" /* 8119 */;
+import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 
 let currentUser;

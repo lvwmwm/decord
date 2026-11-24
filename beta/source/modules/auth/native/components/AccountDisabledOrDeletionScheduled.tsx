@@ -1,18 +1,18 @@
-// Module ID: 18684
-// Function ID: 18685
+// Module ID: 17480
+// Function ID: 17481
 // Name: AccountDisabledOrDeletionScheduled
-// Dependencies: [19, 17, 502, 1072, 21, 5306, 575, 1502, 504, 6834, 7770, 1113, 7792, 18685, 5919, 6941, 5926, 2]
+// Dependencies: [19, 17, 502, 1071, 21, 4913, 575, 1500, 504, 6425, 7372, 1112, 7394, 17481, 5504, 6545, 5511, 2]
 // Exports: default
 
-// Module 18684 (AccountDisabledOrDeletionScheduled)
+// Module 17480 (AccountDisabledOrDeletionScheduled)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6834 */;
+import Constants from "Constants" /* 1071 */;
+import AuthenticationActionCreatorsDefault from "AuthenticationActionCreators" /* 6425 */;
 import react from "react" /* 19 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let navigation;

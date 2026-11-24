@@ -1,15 +1,15 @@
-// Module ID: 18761
-// Function ID: 18762
+// Module ID: 17557
+// Function ID: 17558
 // Name: usePrivateChannelWave
-// Dependencies: [5, 32, 19, 1072, 5311, 14673, 1099, 8660, 6005, 1113, 18762, 2]
+// Dependencies: [5, 32, 19, 1071, 4918, 13128, 1098, 8250, 5595, 1112, 17558, 2]
 // Exports: default
 
-// Module 18761 (usePrivateChannelWave)
-import MessageConstants from "MessageConstants" /* 5311 */;
+// Module 17557 (usePrivateChannelWave)
+import MessageConstants from "MessageConstants" /* 4918 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 1072 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

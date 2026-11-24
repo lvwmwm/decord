@@ -1,24 +1,24 @@
-// Module ID: 15128
-// Function ID: 15129
+// Module ID: 13716
+// Function ID: 13717
 // Name: ThreadBrowserHooks
-// Dependencies: [32, 19, 15129, 5155, 5238, 7015, 7035, 8865, 5240, 1083, 9008, 504, 12, 1255, 11, 8864, 9112, 2]
+// Dependencies: [32, 19, 13717, 4762, 4845, 6619, 6639, 8460, 4847, 1082, 8518, 504, 12, 1254, 11, 8459, 8622, 2]
 // Exports: useActiveGuildThreads, useActiveThreadIds, useActiveThreads, useArchivedThreads, useTrackThreadBrowserTab
 
-// Module 15128 (ThreadBrowserHooks)
+// Module 13716 (ThreadBrowserHooks)
 import _modDef12 from "module_12" /* 12 */;
-import Constants from "Constants" /* 1083 */;
-import GlobalUtils from "GlobalUtils" /* 1255 */;
-import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8864 */;
-import ForumActionCreatorsDefault from "ForumActionCreators" /* 9112 */;
-import ReportToModChannelStore from "ReportToModChannelStore" /* 15129 */;
+import Constants from "Constants" /* 1082 */;
+import GlobalUtils from "GlobalUtils" /* 1254 */;
+import ThreadActionCreatorsDefault from "ThreadActionCreators" /* 8459 */;
+import ForumActionCreatorsDefault from "ForumActionCreators" /* 8622 */;
+import ReportToModChannelStore from "ReportToModChannelStore" /* 13717 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import PermissionStore from "PermissionStore" /* 5238 */;
-import ReadStateStore from "ReadStateStore" /* 7015 */;
-import ActiveThreadsStore from "ActiveThreadsStore" /* 7035 */;
-import ArchivedThreadsStore from "ArchivedThreadsStore" /* 8865 */;
-import JoinedThreadsStore from "JoinedThreadsStore" /* 5240 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
+import ReadStateStore from "ReadStateStore" /* 6619 */;
+import ActiveThreadsStore from "ActiveThreadsStore" /* 6639 */;
+import ArchivedThreadsStore from "ArchivedThreadsStore" /* 8460 */;
+import JoinedThreadsStore from "JoinedThreadsStore" /* 4847 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

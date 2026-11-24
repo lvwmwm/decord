@@ -1,19 +1,19 @@
-// Module ID: 12644
-// Function ID: 12645
+// Module ID: 12141
+// Function ID: 12142
 // Name: PublishModal
-// Dependencies: [32, 19, 17, 21, 5306, 6951, 12645, 1187, 1113, 2]
+// Dependencies: [32, 19, 17, 21, 4913, 6555, 12142, 1186, 1112, 2]
 // Exports: default
 
-// Module 12644 (PublishModal)
+// Module 12141 (PublishModal)
 import Fragment from "Fragment" /* 21 */;
-import intl2 from "intl" /* 1113 */;
-import native from "native" /* 1187 */;
-import LegacyTokens from "LegacyTokens" /* 6951 */;
-import useChannelFollowerStatsDefault from "useChannelFollowerStats" /* 12645 */;
+import intl2 from "intl" /* 1112 */;
+import native from "native" /* 1186 */;
+import LegacyTokens from "LegacyTokens" /* 6555 */;
+import useChannelFollowerStatsDefault from "useChannelFollowerStats" /* 12142 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;
@@ -52,7 +52,7 @@ export default function PublishModal(channelId) {
     if (tmp7) {
       const format = intl.format;
       let num2;
-      const GCGrNP = tmp11(1113).t.GCGrNP;
+      const GCGrNP = tmp11(1112).t.GCGrNP;
       if (first != null) {
         num2 = first.guildsFollowing;
       }

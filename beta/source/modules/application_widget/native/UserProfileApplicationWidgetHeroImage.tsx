@@ -1,18 +1,18 @@
-// Module ID: 12259
-// Function ID: 12260
+// Module ID: 10325
+// Function ID: 10326
 // Name: UserProfileApplicationWidgetHeroImage
-// Dependencies: [19, 17, 1072, 21, 5306, 7533, 5883, 6010, 2]
+// Dependencies: [19, 17, 1071, 21, 4913, 7135, 5468, 5600, 2]
 // Exports: default
 
-// Module 12259 (UserProfileApplicationWidgetHeroImage)
+// Module 10325 (UserProfileApplicationWidgetHeroImage)
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1072 */;
-import LinearGradientDefault from "LinearGradient" /* 5883 */;
-import FastImageDefault from "FastImage" /* 6010 */;
-import _modDef7533 from "module_7533" /* 7533 */;
+import Constants from "Constants" /* 1071 */;
+import LinearGradientDefault from "LinearGradient" /* 5468 */;
+import FastImageDefault from "FastImage" /* 5600 */;
+import _modDef7135 from "module_7135" /* 7135 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let closure_4;
@@ -26,6 +26,7 @@ let size = size_mod;
 let result = size.fileFinishedImporting("modules/application_widget/native/UserProfileApplicationWidgetHeroImage.tsx");
 
 export default function UserProfileApplicationWidgetHeroImage(arg0) {
+  let fillContainer;
   let height;
   let items;
   let items1;
@@ -34,32 +35,55 @@ export default function UserProfileApplicationWidgetHeroImage(arg0) {
   let obj5;
   let obj6;
   let result1;
-  let tmp12;
-  let tmp8Result;
+  let tmp10Result;
+  let tmp14;
   let width;
-  ({ media, width, height } = arg0);
+  ({ media, width, height, fillContainer } = arg0);
+  if (fillContainer === undefined) {
+    fillContainer = false;
+  }
   const tmp = closure_7();
-  let str;
+  if (fillContainer) {
+    fillContainer = media.width > 0;
+  }
+  if (fillContainer) {
+    fillContainer = media.height > 0;
+  }
+  let bound;
   if (null != width) {
     const _Math = Math;
-    str = Math.min(width, 212);
+    bound = Math.min(width, 212);
+  }
+  let str = bound;
+  if (fillContainer) {
+    str = bound;
+    if (null != bound) {
+      str = bound;
+      if (null != height) {
+        const _Math2 = Math;
+        str = Math.max(bound, height * media.width / media.height);
+      }
+    }
   }
   let result;
   if (null != str) {
     result = str * media.height / media.width;
   }
   let minResult = height;
-  if (null != result) {
-    let tmp6 = height;
-    const _Math2 = Math;
-    if (height == null) {
-      tmp6 = result;
+  if (!fillContainer) {
+    minResult = height;
+    if (null != result) {
+      let tmp8 = height;
+      const _Math3 = Math;
+      if (height == null) {
+        tmp8 = result;
+      }
+      minResult = min(tmp8, result);
     }
-    minResult = min(tmp6, result);
   }
-  let str2 = str;
-  const tmp10 = _modDef7533;
-  if (str == null) {
+  let str2 = bound;
+  const tmp12 = _modDef7135;
+  if (bound == null) {
     str2 = "100%";
   }
   size = { width: str2, maxWidth: 212, alignSelf: "flex-end", height: minResult, aspectRatio: result1, overflow: "hidden" };
@@ -67,21 +91,21 @@ export default function UserProfileApplicationWidgetHeroImage(arg0) {
   if (null == minResult) {
     result1 = media.width / media.height;
   }
-  const obj = { style: size, androidRenderingMode: "hardware", maskElement: hasOwnProperty(View, obj2), children: React3(tmp12, obj5) };
+  const obj = { style: size, androidRenderingMode: "hardware", maskElement: hasOwnProperty(View, obj2), children: React3(tmp14, obj5) };
   obj2 = { style: tmp.mask, children: items };
   items = [, ];
   const obj3 = { start: HorizontalGradient.START, end: HorizontalGradient.END, colors, style: tmp.gradient };
   items[0] = React3(LinearGradientDefault, obj3);
   const obj4 = { style: tmp.remainder };
   items[1] = React3(View, obj4);
-  obj5 = { style: tmp.imageClip, collapsable: false, children: React3(tmp8Result, obj6) };
+  obj5 = { style: tmp.imageClip, collapsable: false, children: React3(tmp10Result, obj6) };
   obj6 = { source: { uri: media.url }, style: items1, resizeMode: "cover" };
   items1 = [tmp.image, ];
-  tmp12 = View;
-  tmp8Result = FastImageDefault;
+  tmp10Result = FastImageDefault;
+  tmp14 = View;
   if (str == null) {
     str = "100%";
   }
   items1[1] = { width: str, height: result, aspectRatio: media.width / media.height };
-  return React3(tmp10, obj);
+  return React3(tmp12, obj);
 };

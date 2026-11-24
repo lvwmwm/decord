@@ -4,7 +4,7 @@
 // Dependencies: [32, 5, 41, 42, 741, 742, 701, 687, 688, 739, 744, 749, 694, 691, 709, 751, 727, 728, 722, 734, 712, 721, 752, 700, 695, 737, 753, 754, 723, 683, 710]
 
 // Module 740 (Client)
-import _mod687 from "module_687" /* 687 */;
+import DEBUG_BUILD2 from "DEBUG_BUILD" /* 687 */;
 import _mod691 from "module_691" /* 691 */;
 import uuid4 from "uuid4" /* 694 */;
 import _mod701 from "module_701" /* 701 */;
@@ -32,7 +32,7 @@ const _mod739 = tmp2(739);
 const DEFAULT_TRANSPORT_BUFFER_SIZE = tmp2(742);
 const _INTERNAL_captureLog = tmp2(744);
 const _INTERNAL_captureMetric = tmp2(749);
-const f82499 = (item) => {
+const f79207 = (item) => {
   if (Array.isArray(item)) {
     let num4;
     const first = item[0];
@@ -91,7 +91,7 @@ function estimateMetricSizeInBytes(name) {
     c0 = 0;
     const _Object = Object;
     const values = Object.values(attributes);
-    const item = values.forEach(f82499);
+    const item = values.forEach(f79207);
     num3 = c0;
   }
   return num + 8 + num3;
@@ -109,7 +109,7 @@ function estimateLogSizeInBytes(message) {
     closure_0 = 0;
     const _Object = Object;
     const values = Object.values(attributes);
-    const item = values.forEach(f82499);
+    const item = values.forEach(f79207);
     num3 = closure_0;
   }
   return num + num3;
@@ -126,12 +126,12 @@ class Client {
   constructor(_options) {
     let envelopeEndpointWithUrlEncodedAuth;
     let recordDroppedEvent;
-    const f82496 = () => {
+    const f79204 = () => {
       sum = 0;
       clearTimeout(closure_3);
       c5 = false;
     };
-    const f82497 = (arg0) => {
+    const f79205 = (arg0) => {
       sum = sum + closure_1(arg0);
       if (sum >= 800000) {
         closure_2(self);
@@ -146,7 +146,7 @@ class Client {
         }
       }
     };
-    const f82498 = () => {
+    const f79206 = () => {
       closure_2(self);
     };
     const self = this;
@@ -171,7 +171,7 @@ class Client {
     if (_options.dsn) {
       const tmp2Result = _mod701;
       self._dsn = tmp2Result.makeDsn(_options.dsn);
-    } else if (_mod687.DEBUG_BUILD) {
+    } else if (DEBUG_BUILD2.DEBUG_BUILD) {
       const debug = CONSOLE_LEVELS.debug;
       debug.warn("No DSN provided, client will not send events.");
     }
@@ -208,9 +208,9 @@ class Client {
       let c3;
       c4 = 0;
       c5 = false;
-      self.on("flushLogs", f82496);
-      self.on("afterCaptureLog", f82497);
-      self.on("flush", f82498);
+      self.on("flushLogs", f79204);
+      self.on("afterCaptureLog", f79205);
+      self.on("flush", f79206);
     }
     let flag2 = self._options.enableMetrics;
     if (flag2 == null) {
@@ -230,23 +230,23 @@ class Client {
       closure_3 = undefined;
       let sum = 0;
       c5 = false;
-      self.on("flushMetrics", f82496);
-      self.on("afterCaptureMetric", f82497);
-      self.on("flush", f82498);
+      self.on("flushMetrics", f79204);
+      self.on("afterCaptureMetric", f79205);
+      self.on("flush", f79206);
     }
   }
 }
 const entry = {
   key: "captureException",
-  value: function captureException(arg0, arg1, arg2) {
+  value: function captureException(originalException, arg1, arg2) {
     const self = this;
-    let closure_1 = arg0;
+    let closure_1 = originalException;
     let closure_2 = arg2;
     const obj = uuid4;
     const uuid4Result = obj.uuid4();
     const obj2 = uuid4;
-    if (obj2.checkOrSetAlreadyCaught(arg0)) {
-      if (_mod687.DEBUG_BUILD) {
+    if (obj2.checkOrSetAlreadyCaught(originalException)) {
+      if (DEBUG_BUILD2.DEBUG_BUILD) {
         const debug = tmp(688).debug;
         debug.log(c4);
       }
@@ -267,25 +267,25 @@ let items = [
   entry,
   {
     key: "captureMessage",
-    value: function captureMessage(arg0, arg1, arg2, arg3) {
+    value: function captureMessage(combined1, arg1, arg2, arg3) {
       let obj2;
       const self = this;
       let closure_1 = arg3;
       const obj = { event_id: obj2.uuid4() };
       obj2 = uuid4;
       const merged = Object.assign(arg2);
-      let StringResult = arg0;
+      let StringResult = combined1;
       const obj3 = _mod691;
-      if (!obj3.isParameterizedString(arg0)) {
+      if (!obj3.isParameterizedString(combined1)) {
         const _String = String;
-        StringResult = String(arg0);
+        StringResult = String(combined1);
       }
       const tmpResult = _mod691;
-      const isPrimitiveResult = tmpResult.isPrimitive(arg0);
+      const isPrimitiveResult = tmpResult.isPrimitive(combined1);
       if (isPrimitiveResult) {
         let eventFromMessageResult = self.eventFromMessage(StringResult, arg1, obj);
       } else {
-        eventFromMessageResult = self.eventFromException(arg0, obj);
+        eventFromMessageResult = self.eventFromException(combined1, obj);
       }
       let str = "error";
       const _process = self._process;
@@ -314,7 +314,7 @@ let items = [
       if (originalException) {
         const tmpResult = uuid4;
         if (tmpResult.checkOrSetAlreadyCaught(originalException.originalException)) {
-          if (_mod687.DEBUG_BUILD) {
+          if (DEBUG_BUILD2.DEBUG_BUILD) {
             const debug = tmp(688).debug;
             debug.log(c4);
           }
@@ -347,10 +347,10 @@ let items = [
   },
   {
     key: "captureSession",
-    value: function captureSession(arg0) {
-      this.sendSession(arg0);
+    value: function captureSession(attrs) {
+      this.sendSession(attrs);
       const obj = closeSession;
-      obj.updateSession(arg0, { init: false });
+      obj.updateSession(attrs, { init: false });
     }
   },
   {
@@ -478,18 +478,18 @@ items[12] = {
 };
 items[13] = {
   key: "getIntegrationByName",
-  value: function getIntegrationByName(arg0) {
-    return this._integrations[arg0];
+  value: function getIntegrationByName(MobileFeedback) {
+    return this._integrations[MobileFeedback];
   }
 };
 items[14] = {
   key: "addIntegration",
-  value: function addIntegration(arg0) {
-    const tmp = this._integrations[arg0.name];
+  value: function addIntegration(name) {
+    const tmp = this._integrations[name.name];
     const obj = _mod751;
-    obj.setupIntegration(this, arg0, this._integrations);
+    obj.setupIntegration(this, name, this._integrations);
     if (!tmp) {
-      const items = [arg0];
+      const items = [name];
       const tmp2Result = _mod751;
       const result = tmp2Result.afterSetupIntegrations(this, items);
     }
@@ -497,16 +497,16 @@ items[14] = {
 };
 items[15] = {
   key: "sendEvent",
-  value: function sendEvent(arg0) {
+  value: function sendEvent(type) {
     const self = this;
-    let closure_0 = arg0;
+    let closure_0 = type;
     let obj = arg1;
     if (arg1 === undefined) {
       obj = {};
     }
-    self.emit("beforeSendEvent", arg0, obj);
+    self.emit("beforeSendEvent", type, obj);
     const obj2 = _enhanceEventWithSdkInfo;
-    let eventEnvelope = obj2.createEventEnvelope(arg0, self._dsn, self._options._metadata, self._options.tunnel);
+    let eventEnvelope = obj2.createEventEnvelope(type, self._dsn, self._options._metadata, self._options.tunnel);
     const tmp3 = obj.attachments || [];
     for (const item10025 of tmp3) {
       let tmp6 = _mod728;
@@ -534,7 +534,7 @@ items[16] = {
       if (!tmp7.release) {
         if (!release) {
           const tmp8 = require;
-          if (_mod687.DEBUG_BUILD) {
+          if (DEBUG_BUILD2.DEBUG_BUILD) {
             const debug2 = tmp8(688).debug;
             debug2.warn(c5);
           }
@@ -547,7 +547,7 @@ items[16] = {
       if (!attrs.release) {
         if (!release) {
           const tmp3 = require;
-          if (_mod687.DEBUG_BUILD) {
+          if (DEBUG_BUILD2.DEBUG_BUILD) {
             const debug = tmp3(688).debug;
             debug.warn(c5);
           }
@@ -563,17 +563,17 @@ items[16] = {
 };
 items[17] = {
   key: "recordDroppedEvent",
-  value: function recordDroppedEvent(arg0, arg1) {
-    let num = arg2;
-    if (arg2 === undefined) {
+  value: function recordDroppedEvent(before_send, span, diff) {
+    let num = diff;
+    if (diff === undefined) {
       num = 1;
     }
     const self = this;
     if (this._options.sendClientReports) {
       const _HermesInternal = HermesInternal;
-      const combined = "" + arg0 + ":" + arg1;
+      const combined = "" + before_send + ":" + span;
       const tmp5 = require;
-      if (_mod687.DEBUG_BUILD) {
+      if (DEBUG_BUILD2.DEBUG_BUILD) {
         const debug = tmp5(688).debug;
         let str3 = "";
         const log = debug.log;
@@ -728,7 +728,7 @@ items[21] = {
 };
 items[22] = {
   key: "_updateSessionFromEvent",
-  value: function _updateSessionFromEvent(status, level) {
+  value: function _updateSessionFromEvent(session, level) {
     let flag = "fatal" === level.level;
     const exception = level.exception;
     let values;
@@ -755,8 +755,8 @@ items[22] = {
         break;
       }
     }
-    let tmp7 = "ok" === status.status;
-    let tmp8 = tmp7 && 0 === status.errors;
+    let tmp7 = "ok" === session.status;
+    let tmp8 = tmp7 && 0 === session.errors;
     if (!tmp8) {
       if (tmp7) {
         tmp7 = flag;
@@ -772,7 +772,7 @@ items[22] = {
       }
       const obj2 = { errors };
       const merged = Object.assign(obj);
-      errors = status.errors;
+      errors = session.errors;
       if (!errors) {
         const _Number = Number;
         if (!flag2) {
@@ -781,8 +781,8 @@ items[22] = {
         errors = _Number(flag2);
       }
       const self = this;
-      updateSession(status, obj2);
-      this.captureSession(status);
+      updateSession(session, obj2);
+      this.captureSession(session);
     }
   }
 };
@@ -866,11 +866,10 @@ items[24] = {
 };
 items[25] = {
   key: "_prepareEvent",
-  value: function _prepareEvent(type, integrations, arg2, setLastEventId) {
-    let closure_0;
+  value: function _prepareEvent(type, integrations, clone, setLastEventId) {
     const self = this;
     dependencyMap = integrations;
-    _require = arg2;
+    _require = clone;
     const options = this.getOptions();
     const keys = Object.keys(this._integrations);
     let tmp2 = !integrations.integrations;
@@ -894,7 +893,7 @@ items[25] = {
       setLastEventId(event_id);
     }
     let obj = require("applyClientOptions");
-    const prepareEventResult = obj.prepareEvent(options, type, integrations, arg2, self, setLastEventId);
+    const prepareEventResult = obj.prepareEvent(options, type, integrations, clone, self, setLastEventId);
     return prepareEventResult.then((contexts) => {
       let obj2;
       let obj3;
@@ -902,11 +901,11 @@ items[25] = {
         return contexts;
       } else {
         self.emit("postprocessEvent", contexts, integrations);
-        const obj = { trace: obj2.getTraceContextFromScope(closure_0) };
+        const obj = { trace: obj2.getTraceContextFromScope(clone) };
         obj2 = _mod712;
         const merged = Object.assign(contexts.contexts);
         contexts.contexts = obj;
-        const obj4 = { dynamicSamplingContext: obj3.getDynamicSamplingContextFromScope(self, closure_0) };
+        const obj4 = { dynamicSamplingContext: obj3.getDynamicSamplingContextFromScope(self, clone) };
         obj3 = freezeDscOnSpan;
         const merged1 = Object.assign(contexts.sdkProcessingMetadata);
         contexts.sdkProcessingMetadata = obj4;
@@ -917,24 +916,22 @@ items[25] = {
 };
 items[26] = {
   key: "_captureEvent",
-  value: function _captureEvent(type) {
+  value: function _captureEvent(type, arg1, currentScope, isolationScope) {
     let obj = arg1;
     if (arg1 === undefined) {
       obj = {};
     }
-    let currentScope = arg2;
-    if (arg2 === undefined) {
+    if (currentScope === undefined) {
       const tmp2 = require;
       const obj2 = _mod712;
       currentScope = obj2.getCurrentScope();
     }
-    let isolationScope = arg3;
-    if (arg3 === undefined) {
+    if (isolationScope === undefined) {
       let tmp6 = dependencyMap;
       const obj3 = _mod712;
       isolationScope = obj3.getIsolationScope();
     }
-    const tmp9 = _mod687.DEBUG_BUILD && undefined === type.type;
+    const tmp9 = DEBUG_BUILD2.DEBUG_BUILD && undefined === type.type;
     if (tmp9) {
       let debug = tmp7(688).debug;
       const log = debug.log;
@@ -945,7 +942,7 @@ items[26] = {
     }
     const _processEventResult = this._processEvent(type, obj, currentScope, isolationScope);
     return _processEventResult.then((event_id) => event_id.event_id, (message) => {
-      if (require("module_687").DEBUG_BUILD) {
+      if (require("DEBUG_BUILD").DEBUG_BUILD) {
         const tmp4 = message && typeof message === "object" && closure_1_7 in message;
         if (tmp4) {
           const debug2 = tmp(tmp2[8]).debug;
@@ -966,14 +963,12 @@ items[26] = {
 };
 items[27] = {
   key: "_processEvent",
-  value: function _processEvent(type, arg1, arg2, arg3) {
+  value: function _processEvent(type, arg1, currentScope, isolationScope) {
     let parseSampleRateResult;
     let str2;
     const self = this;
     dependencyMap = type;
     const data = arg1;
-    let session = arg2;
-    const session2 = arg3;
     const options = this.getOptions();
     const sampleRate = options.sampleRate;
     closure_6 = "transaction" === type.type;
@@ -1008,7 +1003,7 @@ items[27] = {
       }
       str2 = str;
     }
-    const _prepareEventResult = self._prepareEvent(type, arg1, arg2, arg3);
+    const _prepareEventResult = self._prepareEvent(type, arg1, currentScope, isolationScope);
     let nextPromise = _prepareEventResult.then((result) => {
       function processBeforeSend(self, options, sdkProcessingMetadata, arg3) {
         let beforeSend;
@@ -1174,7 +1169,7 @@ items[27] = {
         obj3[closure_7] = true;
         throw obj3;
       } else {
-        session = session.getSession() || session2.getSession();
+        const session = currentScope.getSession() || isolationScope.getSession();
         const tmp3 = closure_7 && session;
         if (tmp3) {
           const result = self._updateSessionFromEvent(session, sdkProcessingMetadata);
@@ -1230,9 +1225,9 @@ items[27] = {
 };
 items[28] = {
   key: "_process",
-  value: function _process(arg0, arg1) {
+  value: function _process(arg0, error) {
     const self = this;
-    let closure_0 = arg1;
+    let closure_0 = error;
     this._numProcessing = this._numProcessing + 1;
     const _promiseBuffer = this._promiseBuffer;
     const addResult = _promiseBuffer.add(arg0);
@@ -1243,7 +1238,7 @@ items[28] = {
       self._numProcessing = self._numProcessing - 1;
       const obj = self;
       if (arg0 === SENTRY_BUFFER_FULL_ERROR.SENTRY_BUFFER_FULL_ERROR) {
-        obj.recordDroppedEvent("queue_overflow", closure_0);
+        obj.recordDroppedEvent("queue_overflow", error);
       }
       return arg0;
     });
@@ -1266,7 +1261,7 @@ items[29] = {
 items[30] = {
   key: "_flushOutcomes",
   value: function _flushOutcomes() {
-    if (_mod687.DEBUG_BUILD) {
+    if (DEBUG_BUILD2.DEBUG_BUILD) {
       const debug = tmp(688).debug;
       debug.log("Flushing outcomes...");
     }
@@ -1292,7 +1287,7 @@ items[30] = {
         const debug3 = tmp(688).debug;
         debug3.log("No dsn provided, will not send outcomes");
       }
-    } else if (_mod687.DEBUG_BUILD) {
+    } else if (DEBUG_BUILD2.DEBUG_BUILD) {
       const debug2 = tmp(688).debug;
       debug2.log("No outcomes to send");
     }

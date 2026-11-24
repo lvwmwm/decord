@@ -1,14 +1,14 @@
-// Module ID: 10740
-// Function ID: 10741
+// Module ID: 13423
+// Function ID: 13424
 // Name: useCanGuildPowerupBeToggled
-// Dependencies: [19, 5513, 5514, 504, 10700, 1113, 2733, 2]
+// Dependencies: [19, 8331, 8332, 504, 13391, 1112, 2856, 2]
 // Exports: default
 
-// Module 10740 (useCanGuildPowerupBeToggled)
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5514 */;
-import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 10700 */;
+// Module 13423 (useCanGuildPowerupBeToggled)
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 8332 */;
+import usePowerupActiveStatusDefault from "usePowerupActiveStatus" /* 13391 */;
 import react from "react" /* 19 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 5513 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 8331 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -39,7 +39,7 @@ export default function useCanGuildPowerupBeToggled(arg0, arg1, arg2) {
     let unlockedPowerups;
     const tmp = stateFromStores;
     if (null == stateFromStores) {
-      return { disabled: true, reason: "Boolean" };
+      return { disabled: true, reason: "Array" };
     } else {
       if (closure_4.type !== constants.LEVEL_ACTIVATED) {
         if (closure_4.type !== tmp15.TIER_OVERRIDE_ACTIVATED) {
@@ -84,7 +84,7 @@ export default function useCanGuildPowerupBeToggled(arg0, arg1, arg2) {
           return obj;
         }
       }
-      return { disabled: true, reason: "Boolean" };
+      return { disabled: true, reason: "Array" };
     }
   }, items1);
 };

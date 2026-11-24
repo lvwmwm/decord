@@ -1,40 +1,40 @@
-// Module ID: 1117
-// Function ID: 1118
+// Module ID: 1116
+// Function ID: 1117
 // Name: AssetJsonUtils
-// Dependencies: [5, 17, 1118, 1120, 1121, 1122, 1123, 1124, 1125, 1126, 1127, 1128, 1129, 1130, 1131, 1132, 1133, 1134, 1135, 1136, 1137, 1138, 1139, 1140, 1141, 1142, 1143, 1144, 1145, 1146, 1147, 1148, 1149, 2]
+// Dependencies: [5, 17, 1117, 1119, 1120, 1121, 1122, 1123, 1124, 1125, 1126, 1127, 1128, 1129, 1130, 1131, 1132, 1133, 1134, 1135, 1136, 1137, 1138, 1139, 1140, 1141, 1142, 1143, 1144, 1145, 1146, 1147, 1148, 2]
 
-// Module 1117 (AssetJsonUtils)
+// Module 1116 (AssetJsonUtils)
 import react_native from "react-native" /* 17 */;
-import AssetRegistry from "AssetRegistry" /* 1118 */;
-import AssetRegistry2 from "AssetRegistry" /* 1120 */;
-import AssetRegistry3 from "AssetRegistry" /* 1121 */;
-import AssetRegistry4 from "AssetRegistry" /* 1122 */;
-import AssetRegistry5 from "AssetRegistry" /* 1123 */;
-import AssetRegistry6 from "AssetRegistry" /* 1124 */;
-import AssetRegistry7 from "AssetRegistry" /* 1125 */;
-import AssetRegistry8 from "AssetRegistry" /* 1126 */;
-import AssetRegistry9 from "AssetRegistry" /* 1127 */;
-import AssetRegistry10 from "AssetRegistry" /* 1128 */;
-import AssetRegistry11 from "AssetRegistry" /* 1129 */;
-import AssetRegistry12 from "AssetRegistry" /* 1130 */;
-import AssetRegistry13 from "AssetRegistry" /* 1131 */;
-import AssetRegistry14 from "AssetRegistry" /* 1132 */;
-import AssetRegistry15 from "AssetRegistry" /* 1133 */;
-import AssetRegistry16 from "AssetRegistry" /* 1134 */;
-import AssetRegistry17 from "AssetRegistry" /* 1135 */;
-import AssetRegistry18 from "AssetRegistry" /* 1136 */;
-import AssetRegistry19 from "AssetRegistry" /* 1137 */;
-import AssetRegistry20 from "AssetRegistry" /* 1138 */;
-import AssetRegistry21 from "AssetRegistry" /* 1139 */;
-import AssetRegistry22 from "AssetRegistry" /* 1140 */;
-import AssetRegistry23 from "AssetRegistry" /* 1141 */;
-import AssetRegistry24 from "AssetRegistry" /* 1142 */;
-import AssetRegistry25 from "AssetRegistry" /* 1143 */;
-import AssetRegistry26 from "AssetRegistry" /* 1144 */;
-import AssetRegistry27 from "AssetRegistry" /* 1145 */;
-import AssetRegistry28 from "AssetRegistry" /* 1146 */;
-import AssetRegistry29 from "AssetRegistry" /* 1147 */;
-import AssetRegistry30 from "AssetRegistry" /* 1148 */;
+import AssetRegistry2 from "AssetRegistry" /* 1117 */;
+import AssetRegistry3 from "AssetRegistry" /* 1119 */;
+import AssetRegistry4 from "AssetRegistry" /* 1120 */;
+import AssetRegistry5 from "AssetRegistry" /* 1121 */;
+import AssetRegistry6 from "AssetRegistry" /* 1122 */;
+import AssetRegistry7 from "AssetRegistry" /* 1123 */;
+import AssetRegistry8 from "AssetRegistry" /* 1124 */;
+import AssetRegistry9 from "AssetRegistry" /* 1125 */;
+import AssetRegistry10 from "AssetRegistry" /* 1126 */;
+import AssetRegistry11 from "AssetRegistry" /* 1127 */;
+import AssetRegistry12 from "AssetRegistry" /* 1128 */;
+import AssetRegistry13 from "AssetRegistry" /* 1129 */;
+import AssetRegistry14 from "AssetRegistry" /* 1130 */;
+import AssetRegistry15 from "AssetRegistry" /* 1131 */;
+import AssetRegistry16 from "AssetRegistry" /* 1132 */;
+import AssetRegistry17 from "AssetRegistry" /* 1133 */;
+import AssetRegistry18 from "AssetRegistry" /* 1134 */;
+import AssetRegistry19 from "AssetRegistry" /* 1135 */;
+import AssetRegistry20 from "AssetRegistry" /* 1136 */;
+import AssetRegistry21 from "AssetRegistry" /* 1137 */;
+import AssetRegistry22 from "AssetRegistry" /* 1138 */;
+import AssetRegistry23 from "AssetRegistry" /* 1139 */;
+import AssetRegistry24 from "AssetRegistry" /* 1140 */;
+import AssetRegistry25 from "AssetRegistry" /* 1141 */;
+import AssetRegistry26 from "AssetRegistry" /* 1142 */;
+import AssetRegistry27 from "AssetRegistry" /* 1143 */;
+import AssetRegistry28 from "AssetRegistry" /* 1144 */;
+import AssetRegistry29 from "AssetRegistry" /* 1145 */;
+import AssetRegistry30 from "AssetRegistry" /* 1146 */;
+import AssetRegistry31 from "AssetRegistry" /* 1147 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 
@@ -152,94 +152,94 @@ let jsonAssets = function _loadJsonAsset() {
 const Image = react_native.Image;
 jsonAssets = {
   i18n_bg() {
-    return loadJsonAsset(AssetRegistry);
-  },
-  i18n_cs() {
     return loadJsonAsset(AssetRegistry2);
   },
-  i18n_da() {
+  i18n_cs() {
     return loadJsonAsset(AssetRegistry3);
   },
-  i18n_de() {
+  i18n_da() {
     return loadJsonAsset(AssetRegistry4);
   },
-  i18n_el() {
+  i18n_de() {
     return loadJsonAsset(AssetRegistry5);
   },
-  i18n_enGB() {
+  i18n_el() {
     return loadJsonAsset(AssetRegistry6);
   },
-  i18n_esES() {
+  i18n_enGB() {
     return loadJsonAsset(AssetRegistry7);
   },
-  i18n_es419() {
+  i18n_esES() {
     return loadJsonAsset(AssetRegistry8);
   },
-  i18n_fi() {
+  i18n_es419() {
     return loadJsonAsset(AssetRegistry9);
   },
-  i18n_fr() {
+  i18n_fi() {
     return loadJsonAsset(AssetRegistry10);
   },
-  i18n_hr() {
+  i18n_fr() {
     return loadJsonAsset(AssetRegistry11);
   },
-  i18n_hu() {
+  i18n_hr() {
     return loadJsonAsset(AssetRegistry12);
   },
-  i18n_it() {
+  i18n_hu() {
     return loadJsonAsset(AssetRegistry13);
   },
-  i18n_ja() {
+  i18n_it() {
     return loadJsonAsset(AssetRegistry14);
   },
-  i18n_ko() {
+  i18n_ja() {
     return loadJsonAsset(AssetRegistry15);
   },
-  i18n_lt() {
+  i18n_ko() {
     return loadJsonAsset(AssetRegistry16);
   },
-  i18n_nl() {
+  i18n_lt() {
     return loadJsonAsset(AssetRegistry17);
   },
-  i18n_no() {
+  i18n_nl() {
     return loadJsonAsset(AssetRegistry18);
   },
-  i18n_pl() {
+  i18n_no() {
     return loadJsonAsset(AssetRegistry19);
   },
-  i18n_ptBR() {
+  i18n_pl() {
     return loadJsonAsset(AssetRegistry20);
   },
-  i18n_ro() {
+  i18n_ptBR() {
     return loadJsonAsset(AssetRegistry21);
   },
-  i18n_ru() {
+  i18n_ro() {
     return loadJsonAsset(AssetRegistry22);
   },
-  i18n_svSE() {
+  i18n_ru() {
     return loadJsonAsset(AssetRegistry23);
   },
-  i18n_th() {
+  i18n_svSE() {
     return loadJsonAsset(AssetRegistry24);
   },
-  i18n_tr() {
+  i18n_th() {
     return loadJsonAsset(AssetRegistry25);
   },
-  i18n_uk() {
+  i18n_tr() {
     return loadJsonAsset(AssetRegistry26);
   },
-  i18n_vi() {
+  i18n_uk() {
     return loadJsonAsset(AssetRegistry27);
   },
-  i18n_zhCN() {
+  i18n_vi() {
     return loadJsonAsset(AssetRegistry28);
   },
-  i18n_zhTW() {
+  i18n_zhCN() {
     return loadJsonAsset(AssetRegistry29);
   },
-  i18n_hi() {
+  i18n_zhTW() {
     return loadJsonAsset(AssetRegistry30);
+  },
+  i18n_hi() {
+    return loadJsonAsset(AssetRegistry31);
   }
 };
 let closure_5 = {};

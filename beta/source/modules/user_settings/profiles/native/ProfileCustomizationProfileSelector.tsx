@@ -1,19 +1,19 @@
-// Module ID: 17203
-// Function ID: 17204
+// Module ID: 15971
+// Function ID: 15972
 // Name: ProfileCustomizationProfileSelector
-// Dependencies: [19, 17, 17204, 21, 5306, 575, 7746, 7443, 1113, 7720, 11739, 10560, 6263, 5542, 17205, 2121, 2]
+// Dependencies: [19, 17, 15972, 21, 4913, 575, 7348, 7045, 1112, 7322, 9604, 12797, 5865, 5127, 15973, 2119, 2]
 // Exports: default
 
-// Module 17203 (ProfileCustomizationProfileSelector)
+// Module 15971 (ProfileCustomizationProfileSelector)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
-import react_nativeDefault from "react-native" /* 6263 */;
-import GuildIconDefault from "GuildIcon" /* 7720 */;
-import ProfileSelectorActionSheetConstants from "ProfileSelectorActionSheetConstants" /* 17204 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
+import react_nativeDefault from "react-native" /* 5865 */;
+import GuildIconDefault from "GuildIcon" /* 7322 */;
+import ProfileSelectorActionSheetConstants from "ProfileSelectorActionSheetConstants" /* 15972 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let id;
@@ -42,16 +42,16 @@ export default function ProfileCustomizationProfileSelector(guild) {
   guild = guild.guild;
   ({ onBeforeOpen: importDefault, onSelectMainProfile: dependencyMap, onSelectGuild: View } = guild);
   let obj = { style: closure_6().container, children: tmp(TableRowGroup, obj6) };
-  TableRowGroup = guild(7746).TableRowGroup;
+  TableRowGroup = guild(7348).TableRowGroup;
   let name;
-  const TableRow = guild(7443).TableRow;
+  const TableRow = guild(7045).TableRow;
   const tmp2 = View;
   if (guild != null) {
     name = guild.name;
   }
   if (name == null) {
-    const intl = tmp3(1113).intl;
-    name = intl.string(tmp3(1113).t["2p07FR"]);
+    const intl = tmp3(1112).intl;
+    name = intl.string(tmp3(1112).t["2p07FR"]);
   }
   let obj2 = {
     label: name,
@@ -59,7 +59,7 @@ export default function ProfileCustomizationProfileSelector(guild) {
     icon: tmpResult,
     trailing: tmp(ChevronSmallDownIcon, obj5),
     accessibilityLabel: formatToPlainString(u9XiCz, { profileName: name1 }),
-    accessibilityHint: intl4.string(guild(1113).t["5h07Mp"]),
+    accessibilityHint: intl4.string(guild(1112).t["5h07Mp"]),
     onPress: function handlePress() {
       let onSelectGuild;
       let onSelectMainProfile;
@@ -79,30 +79,30 @@ export default function ProfileCustomizationProfileSelector(guild) {
     }
   };
   if (null != guild) {
-    const obj3 = { guild, size: guild(7720).GuildIconSizes.XSMALL };
+    const obj3 = { guild, size: guild(7322).GuildIconSizes.XSMALL };
     const tmp10 = GuildIconDefault;
     tmpResult = tmp(tmp10, obj3);
     tmp8 = importDefault;
   } else {
     const obj4 = { size: "md", color: nativeDefault.colors.ICON_DEFAULT };
-    const ClydeIcon = tmp3(11739).ClydeIcon;
+    const ClydeIcon = tmp3(9604).ClydeIcon;
     tmpResult = tmp(ClydeIcon, obj4);
     tmp8 = importDefault;
   }
   obj5 = { size: "sm", color: tmp8(575).colors.ICON_SUBTLE };
-  ChevronSmallDownIcon = tmp3(10560).ChevronSmallDownIcon;
-  const intl2 = tmp3(1113).intl;
+  ChevronSmallDownIcon = tmp3(12797).ChevronSmallDownIcon;
+  const intl2 = tmp3(1112).intl;
   formatToPlainString = intl2.formatToPlainString;
   name1 = undefined;
-  u9XiCz = tmp3(1113).t.u9XiCz;
+  u9XiCz = tmp3(1112).t.u9XiCz;
   if (guild != null) {
     name1 = guild.name;
   }
   if (name1 == null) {
-    const intl3 = tmp3(1113).intl;
-    name1 = intl3.string(tmp3(1113).t["2p07FR"]);
+    const intl3 = tmp3(1112).intl;
+    name1 = intl3.string(tmp3(1112).t["2p07FR"]);
   }
   obj6 = { hasIcons: true, children: jsx(TableRow, obj2) };
-  intl4 = tmp3(1113).intl;
+  intl4 = tmp3(1112).intl;
   return jsx(tmp2, obj);
 };

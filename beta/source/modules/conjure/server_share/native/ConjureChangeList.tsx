@@ -1,25 +1,29 @@
-// Module ID: 13315
-// Function ID: 13316
+// Module ID: 18298
+// Function ID: 18299
 // Name: ConjureChangeList
-// Dependencies: [19, 17, 21, 12684, 8101, 13316, 8246, 7438, 7436, 10553, 5306, 575, 6327, 5919, 1113, 4131, 2]
+// Dependencies: [19, 17, 21, 12179, 7704, 17002, 7848, 7040, 10133, 7038, 12361, 12329, 12471, 10371, 4913, 575, 5929, 5504, 1112, 4190, 2]
 // Exports: default
 
-// Module 13315 (ConjureChangeList)
+// Module 18298 (ConjureChangeList)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _modDef4131 from "module_4131" /* 4131 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import Stack_Stack from "Stack/Stack" /* 6327 */;
-import GroupIcon from "GroupIcon" /* 7436 */;
-import GameControllerIcon from "GameControllerIcon" /* 7438 */;
-import AppsIcon from "AppsIcon" /* 8101 */;
-import IdCardIcon from "IdCardIcon" /* 8246 */;
-import UserIcon from "UserIcon" /* 10553 */;
-import RobotIcon from "RobotIcon" /* 12684 */;
-import BeakerIcon from "BeakerIcon" /* 13316 */;
+import _modDef4190 from "module_4190" /* 4190 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import Stack_Stack from "Stack/Stack" /* 5929 */;
+import GroupIcon from "GroupIcon" /* 7038 */;
+import GameControllerIcon from "GameControllerIcon" /* 7040 */;
+import AppsIcon from "AppsIcon" /* 7704 */;
+import IdCardIcon from "IdCardIcon" /* 7848 */;
+import ShieldIcon from "ShieldIcon" /* 10133 */;
+import SettingsIcon from "SettingsIcon" /* 10371 */;
+import RobotIcon from "RobotIcon" /* 12179 */;
+import MagicWandIcon from "MagicWandIcon" /* 12329 */;
+import UserIcon from "UserIcon" /* 12361 */;
+import ServerIcon from "ServerIcon" /* 12471 */;
+import BeakerIcon from "BeakerIcon" /* 17002 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -30,7 +34,7 @@ let hasOwnProperty;
 let obj3;
 const View = react_native.View;
 ({ jsx: closure_4, jsxs: hasOwnProperty } = Fragment);
-let obj = { bots: RobotIcon.RobotIcon, channels: AppsIcon.AppsIcon, test_app: BeakerIcon.BeakerIcon, profile_widget: IdCardIcon.IdCardIcon, overlay: GameControllerIcon.GameControllerIcon, collaboration: GroupIcon.GroupIcon, only_you: UserIcon.UserIcon };
+let obj = { bots: RobotIcon.RobotIcon, channels: AppsIcon.AppsIcon, test_app: BeakerIcon.BeakerIcon, profile_widget: IdCardIcon.IdCardIcon, overlay: GameControllerIcon.GameControllerIcon, automod: ShieldIcon.ShieldIcon, collaboration: GroupIcon.GroupIcon, only_you: UserIcon.UserIcon, location: MagicWandIcon.MagicWandIcon, server: ServerIcon.ServerIcon, settings: SettingsIcon.SettingsIcon };
 let obj2 = { box: obj3, rowText: { flex: 1 } };
 obj3 = { padding: nativeDefault.space.PX_12, borderRadius: nativeDefault.radii.sm, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_SUBTLE };
 let closure_7 = createStyles.createStyles(obj2);
@@ -47,7 +51,7 @@ export default function ConjureChangeList(rows) {
   _require = tmp;
   obj = { spacing: 8, children: items };
   let Stack = require("Stack/Stack").Stack;
-  let obj2 = { variant: "body-md/semibold", color: "text-strong", children: intl.string(_modDef4131["kG/2e8"]) };
+  let obj2 = { variant: "body-md/semibold", color: "text-strong", children: intl.string(_modDef4190["kG/2e8"]) };
   const Text = require("Text/Text").Text;
   intl = require("intl").intl;
   items = [closure_4(Text, obj2), ];

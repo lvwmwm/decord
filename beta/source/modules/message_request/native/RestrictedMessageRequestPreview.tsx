@@ -1,20 +1,20 @@
-// Module ID: 19767
-// Function ID: 19768
+// Module ID: 19018
+// Function ID: 19019
 // Name: RestrictedMessageRequestPreview
-// Dependencies: [32, 19, 17, 5155, 6362, 1388, 21, 5306, 575, 1630, 504, 14931, 19768, 19770, 14955, 14872, 2]
+// Dependencies: [32, 19, 17, 4762, 5964, 1386, 21, 4913, 575, 1628, 504, 13497, 19019, 19021, 13541, 13325, 2]
 // Exports: default
 
-// Module 19767 (RestrictedMessageRequestPreview)
+// Module 19018 (RestrictedMessageRequestPreview)
 import nativeDefault from "native" /* 575 */;
-import useIsEmptyMessageRequestChat from "useIsEmptyMessageRequestChat" /* 14931 */;
+import useIsEmptyMessageRequestChat from "useIsEmptyMessageRequestChat" /* 13497 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import MessageStore from "MessageStore" /* 6362 */;
-import UserStore from "UserStore" /* 1388 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import MessageStore from "MessageStore" /* 5964 */;
+import UserStore from "UserStore" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -57,7 +57,7 @@ export default function RestrictedMessageRequestPreview(channelId) {
   let first1;
   const tmp = closure_12();
   let obj = react;
-  const bottom = ref(1630)().bottom;
+  const bottom = ref(1628)().bottom;
   ref = react.useRef(null);
   dependencyMap = react.useRef(false);
   const tmp5 = first(react.useState(false), 2);
@@ -153,17 +153,17 @@ export default function RestrictedMessageRequestPreview(channelId) {
       }
       items8[1] = scrollContentEmpty;
       const obj6 = { channel: stateFromStores, user: stateFromStores1 };
-      items9 = [closure_10(tmp2(19768), obj6), , ];
+      items9 = [closure_10(tmp2(19019), obj6), , ];
       const obj7 = { channelId };
-      items9[1] = closure_10(ref(19770), obj7);
+      items9[1] = closure_10(ref(19021), obj7);
       let tmp19Result = null;
       if (isEmpty) {
         const obj8 = { style: tmp.emptyChat };
-        tmp19Result = tmp19(tmp2(14955), obj8);
+        tmp19Result = tmp19(tmp2(13541), obj8);
       }
       items9[2] = tmp19Result;
       items10 = [closure_11(tmp16, obj5), ];
-      const obj9 = { style: items11, children: closure_10(ref(14872), obj11) };
+      const obj9 = { style: items11, children: closure_10(ref(13325), obj11) };
       items11 = [tmp.footer, ];
       items11[1] = { paddingBottom: ref(575).space.PX_8 + bottom };
       const obj10 = { paddingBottom: ref(575).space.PX_8 + bottom };

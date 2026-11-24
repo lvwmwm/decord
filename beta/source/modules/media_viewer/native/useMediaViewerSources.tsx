@@ -1,11 +1,11 @@
-// Module ID: 8628
-// Function ID: 8629
+// Module ID: 8218
+// Function ID: 8219
 // Name: useMediaViewerSources
-// Dependencies: [5495, 2]
+// Dependencies: [5102, 2]
 // Exports: removeSpoiler, setMediaViewerSources, toggleSpoiler, updateMediaViewerSources
 
-// Module 8628 (useMediaViewerSources)
-import ZustandStore from "ZustandStore" /* 5495 */;
+// Module 8218 (useMediaViewerSources)
+import ZustandStore from "ZustandStore" /* 5102 */;
 import size from "module_2" /* 2 */;
 
 let set;

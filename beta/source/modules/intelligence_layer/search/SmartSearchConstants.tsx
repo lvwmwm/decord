@@ -1,10 +1,10 @@
-// Module ID: 14744
-// Function ID: 14745
+// Module ID: 13199
+// Function ID: 13200
 // Name: SmartSearchConstants
-// Dependencies: [1089, 2]
+// Dependencies: [1088, 2]
 
-// Module 14744 (SmartSearchConstants)
-import DurationsDefault from "Durations" /* 1089 */;
+// Module 13199 (SmartSearchConstants)
+import DurationsDefault from "Durations" /* 1088 */;
 import size from "module_2" /* 2 */;
 
 const MINUTE = DurationsDefault.Millis.MINUTE;

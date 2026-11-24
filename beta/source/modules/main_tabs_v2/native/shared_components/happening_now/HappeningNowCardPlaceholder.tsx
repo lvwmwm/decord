@@ -1,19 +1,19 @@
-// Module ID: 18795
-// Function ID: 18796
+// Module ID: 17591
+// Function ID: 17592
 // Name: HappeningNowCardPlaceholder
-// Dependencies: [19, 17, 17919, 21, 5306, 575, 1655, 1708, 5538, 17920, 2]
+// Dependencies: [19, 17, 16699, 21, 4913, 575, 1653, 1706, 5123, 16700, 2]
 // Exports: HappeningNowCardPlaceholder
 
-// Module 18795 (HappeningNowCardPlaceholder)
+// Module 17591 (HappeningNowCardPlaceholder)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import _mod1708 from "module_1708" /* 1708 */;
-import timing_timing from "timing/timing" /* 5538 */;
-import HappeningNowConstants from "HappeningNowConstants" /* 17919 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import _mod1706 from "module_1706" /* 1706 */;
+import timing_timing from "timing/timing" /* 5123 */;
+import HappeningNowConstants from "HappeningNowConstants" /* 16699 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -59,7 +59,7 @@ export function HappeningNowCardPlaceholder(panelVariant) {
   importDefault = 0.6;
   let sharedValue;
   const tmp2 = sharedValue;
-  let obj = require("module_1655");
+  let obj = require("module_1653");
   sharedValue = obj.useSharedValue(0.3);
   let items = [sharedValue, 1000, 0.6];
   const effect = react.useEffect(() => {
@@ -71,13 +71,13 @@ export function HappeningNowCardPlaceholder(panelVariant) {
     let tmp7;
     let tmp8;
     const items = [closure_8, sharedValue, , , , , ];
-    const scheduleOnUI = _mod1708.scheduleOnUI;
-    _mod1708;
-    items[2] = _mod1655.withRepeat;
+    const scheduleOnUI = _mod1706.scheduleOnUI;
+    _mod1706;
+    items[2] = _mod1653.withRepeat;
     items[3] = timing_timing.withTiming;
     items[4] = c1;
     items[5] = c0;
-    items[6] = _mod1655.Easing;
+    items[6] = _mod1653.Easing;
     c0 = undefined;
     c1 = undefined;
     let c2;
@@ -99,7 +99,7 @@ export function HappeningNowCardPlaceholder(panelVariant) {
     scheduleOnUI(HappeningNowCardPlaceholderTsx1);
   }, items);
   let items1 = [closure_9, sharedValue];
-  const obj2 = require("module_1655");
+  const obj2 = require("module_1653");
   _require = undefined;
   [tmp5, tmp6] = items1;
   class HappeningNowCardPlaceholderTsx2 {

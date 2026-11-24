@@ -1,24 +1,24 @@
-// Module ID: 18474
-// Function ID: 18475
+// Module ID: 17270
+// Function ID: 17271
 // Name: ProfileCustomizationTryItOutSettingScreen
-// Dependencies: [19, 17, 1388, 1072, 1397, 1390, 21, 5306, 575, 7918, 7937, 504, 10026, 9396, 8483, 8497, 17961, 9399, 1396, 1256, 17066, 2]
+// Dependencies: [19, 17, 1386, 1071, 1395, 1388, 21, 4913, 575, 7520, 7539, 504, 9416, 8907, 8073, 8087, 16740, 8910, 1394, 1255, 15828, 2]
 // Exports: default
 
-// Module 18474 (ProfileCustomizationTryItOutSettingScreen)
+// Module 17270 (ProfileCustomizationTryItOutSettingScreen)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import PremiumConstants from "PremiumConstants" /* 1390 */;
-import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1396 */;
-import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1397 */;
-import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8483 */;
-import CollectiblesUtils from "CollectiblesUtils" /* 8497 */;
-import UserProfileActionCreators from "UserProfileActionCreators" /* 9399 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import PremiumConstants from "PremiumConstants" /* 1388 */;
+import DisplayNameStylesUtils from "DisplayNameStylesUtils" /* 1394 */;
+import DisplayNameStylesConstants from "DisplayNameStylesConstants" /* 1395 */;
+import maybeFetchUserProfileDefault from "maybeFetchUserProfile" /* 8073 */;
+import CollectiblesUtils from "CollectiblesUtils" /* 8087 */;
+import UserProfileActionCreators from "UserProfileActionCreators" /* 8910 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import UserStore from "UserStore" /* 1388 */;
-import Constants from "Constants" /* 1072 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import UserStore from "UserStore" /* 1386 */;
+import Constants from "Constants" /* 1071 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;

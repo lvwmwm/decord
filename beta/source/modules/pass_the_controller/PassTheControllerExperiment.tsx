@@ -1,10 +1,10 @@
-// Module ID: 16117
-// Function ID: 16118
+// Module ID: 14890
+// Function ID: 14891
 // Name: PassTheControllerExperiment
-// Dependencies: [1452, 2]
+// Dependencies: [1450, 2]
 
-// Module 16117 (PassTheControllerExperiment)
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+// Module 14890 (PassTheControllerExperiment)
+import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

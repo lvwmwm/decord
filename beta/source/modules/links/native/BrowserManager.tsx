@@ -1,17 +1,17 @@
-// Module ID: 6034
-// Function ID: 6035
+// Module ID: 5624
+// Function ID: 5625
 // Name: BrowserManager
-// Dependencies: [5, 17, 1380, 6035, 6036, 560, 1092, 6002, 1255, 2]
+// Dependencies: [5, 17, 1378, 5625, 5626, 560, 1091, 5592, 1254, 2]
 // Exports: browserManagerClearWebsiteData, browserManagerCloseBrowser, browserManagerOpenUrl, browserManagerSelectBrowser, getBrowserManagerIsChromeInstalled, getBrowserManagerSelectedBrowser, getIsInAppBrowserOpen, openPlayStoreInlineInstall, subscribeToIsInAppBrowserOpen, useBrowserManagerIsChromeInstalled, useBrowserManagerSelectedBrowser, useBrowserManagerSupportsInAppBrowser, useIsInAppBrowserOpen
 
-// Module 6034 (BrowserManager)
+// Module 5624 (BrowserManager)
 import react_native from "react-native" /* 17 */;
-import ConstantsIOS from "ConstantsIOS" /* 1092 */;
-import LinkingDefault from "Linking" /* 6002 */;
-import react_native2 from "react-native" /* 6035 */;
-import react_nativeDefault2 from "react-native" /* 6036 */;
+import ConstantsIOS from "ConstantsIOS" /* 1091 */;
+import LinkingDefault from "Linking" /* 5592 */;
+import react_native2 from "react-native" /* 5625 */;
+import react_nativeDefault2 from "react-native" /* 5626 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import PlatformUtils from "PlatformUtils" /* 1380 */;
+import PlatformUtils from "PlatformUtils" /* 1378 */;
 import module_560 from "module_560" /* 560 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ let c0, c1, closure_7;
 
 let importDefaultResult;
 let tmp2;
-const GlobalUtils = tmp2(1255);
+const GlobalUtils = tmp2(1254);
 let obj = function _browserManagerClearWebsiteData() {
   obj = _asyncToGenerator(async (arg0, value) => {
     let obj3;

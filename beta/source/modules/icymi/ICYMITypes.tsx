@@ -1,11 +1,11 @@
-// Module ID: 10210
-// Function ID: 10211
+// Module ID: 10037
+// Function ID: 10038
 // Name: ICYMITypes
-// Dependencies: [1072, 2]
+// Dependencies: [1071, 2]
 // Exports: typeToString
 
-// Module 10210 (ICYMITypes)
-import Constants from "Constants" /* 1072 */;
+// Module 10037 (ICYMITypes)
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 let MessageEmbedTypes;

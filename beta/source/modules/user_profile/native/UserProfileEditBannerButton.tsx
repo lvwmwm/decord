@@ -1,23 +1,23 @@
-// Module ID: 17082
-// Function ID: 17083
+// Module ID: 15847
+// Function ID: 15848
 // Name: UserProfileEditBannerButton
-// Dependencies: [19, 17, 8479, 21, 5306, 575, 7918, 8545, 8546, 8476, 7428, 1113, 5919, 10901, 7994, 8593, 8612, 17083, 2]
+// Dependencies: [19, 17, 8069, 21, 4913, 575, 7520, 8135, 8136, 8067, 7030, 1112, 5504, 11242, 7597, 8183, 8202, 15848, 2]
 // Exports: default
 
-// Module 17082 (UserProfileEditBannerButton)
+// Module 15847 (UserProfileEditBannerButton)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Pressables from "Pressables" /* 7428 */;
-import useMeasuredLayoutDefault from "useMeasuredLayout" /* 7994 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8476 */;
-import Constants from "Constants" /* 8479 */;
-import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8546 */;
-import useUserProfileBannerHeightDefault from "useUserProfileBannerHeight" /* 8593 */;
-import UserProfileBannerDefault from "UserProfileBanner" /* 8612 */;
-import PencilIcon2 from "PencilIcon" /* 10901 */;
+import Pressables from "Pressables" /* 7030 */;
+import useMeasuredLayoutDefault from "useMeasuredLayout" /* 7597 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8067 */;
+import Constants from "Constants" /* 8069 */;
+import UserProfileAnalyticsUtils from "UserProfileAnalyticsUtils" /* 8136 */;
+import useUserProfileBannerHeightDefault from "useUserProfileBannerHeight" /* 8183 */;
+import UserProfileBannerDefault from "UserProfileBanner" /* 8202 */;
+import PencilIcon2 from "PencilIcon" /* 11242 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -25,7 +25,7 @@ let metroRequire;
 let rect;
 let size;
 let tmp2;
-const EditButtonDefault = tmp2(17083);
+const EditButtonDefault = tmp2(15848);
 function ProfilePreviewButton(userId) {
   let Text;
   let intl;

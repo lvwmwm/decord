@@ -1,16 +1,16 @@
-// Module ID: 17518
-// Function ID: 17519
+// Module ID: 16286
+// Function ID: 16287
 // Name: PremiumManageSubscriptionsSetting
-// Dependencies: [19, 1072, 9585, 9788, 10511, 1113, 12408, 17519, 2174, 17517, 2]
+// Dependencies: [19, 1071, 9105, 9312, 9947, 1112, 11937, 16287, 2173, 16285, 2]
 
-// Module 17518 (PremiumManageSubscriptionsSetting)
-import Constants from "Constants" /* 1072 */;
-import PremiumUtils from "PremiumUtils" /* 2174 */;
-import BlockedPaymentsCountryExperiment from "BlockedPaymentsCountryExperiment" /* 9585 */;
-import MapleSyrupExperiments from "MapleSyrupExperiments" /* 10511 */;
-import SubscriptionIcon from "SubscriptionIcon" /* 17519 */;
+// Module 16286 (PremiumManageSubscriptionsSetting)
+import Constants from "Constants" /* 1071 */;
+import PremiumUtils from "PremiumUtils" /* 2173 */;
+import BlockedPaymentsCountryExperiment from "BlockedPaymentsCountryExperiment" /* 9105 */;
+import MapleSyrupExperiments from "MapleSyrupExperiments" /* 9947 */;
+import SubscriptionIcon from "SubscriptionIcon" /* 16287 */;
 import react from "react" /* 19 */;
-import SettingBuilders from "SettingBuilders" /* 12408 */;
+import SettingBuilders from "SettingBuilders" /* 11937 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -22,14 +22,14 @@ let obj = {
     const obj = MapleSyrupExperiments;
     const mapleSyrup2Treatment = obj.useMapleSyrup2Treatment("useTitle");
     if ("A" === mapleSyrup2Treatment) {
-      const intl3 = tmp(1113).intl;
-      stringResult = intl3.string(tmp(1113).t.XFZr3P);
+      const intl3 = tmp(1112).intl;
+      stringResult = intl3.string(tmp(1112).t.XFZr3P);
     } else if ("B" === mapleSyrup2Treatment) {
-      const intl2 = tmp(1113).intl;
-      stringResult = intl2.string(tmp(1113).t.Gl5dnA);
+      const intl2 = tmp(1112).intl;
+      stringResult = intl2.string(tmp(1112).t.Gl5dnA);
     } else {
-      const intl = tmp(1113).intl;
-      stringResult = intl.string(tmp(1113).t["z5YcJ+"]);
+      const intl = tmp(1112).intl;
+      stringResult = intl.string(tmp(1112).t["z5YcJ+"]);
     }
     return stringResult;
   },

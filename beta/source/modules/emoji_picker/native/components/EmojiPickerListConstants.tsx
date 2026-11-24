@@ -1,10 +1,10 @@
-// Module ID: 9546
-// Function ID: 9547
+// Module ID: 9066
+// Function ID: 9067
 // Name: EmojiPickerListConstants
-// Dependencies: [1228, 2]
+// Dependencies: [1227, 2]
 
-// Module 9546 (EmojiPickerListConstants)
-import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1228 */;
+// Module 9066 (EmojiPickerListConstants)
+import ExpressionPickerConstants from "ExpressionPickerConstants" /* 1227 */;
 import size from "module_2" /* 2 */;
 
 const result = 2 * ExpressionPickerConstants.PADDING_VERTICAL;

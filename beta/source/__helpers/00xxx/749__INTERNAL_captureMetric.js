@@ -5,7 +5,7 @@
 // Exports: _INTERNAL_captureMetric, _INTERNAL_getMetricBuffer
 
 // Module 749 (_INTERNAL_captureMetric)
-import _mod687 from "module_687" /* 687 */;
+import DEBUG_BUILD from "DEBUG_BUILD" /* 687 */;
 import _mod689 from "module_689" /* 689 */;
 import browserPerformanceTimeOrigin from "browserPerformanceTimeOrigin" /* 702 */;
 import _getSpanForScope from "_getSpanForScope" /* 708 */;
@@ -16,15 +16,15 @@ import _slicedToArray2 from "_slicedToArray" /* 747 */;
 import _mod750 from "module_750" /* 750 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 
-const f82546 = () => {
+const f79254 = () => {
   const weakMap = new WeakMap();
   return weakMap;
 };
 function _INTERNAL_captureSerializedMetric(getOptions, arg1) {
   const obj = _mod689;
-  const globalSingleton = obj.getGlobalSingleton("clientToMetricBufferMap", f82546);
+  const globalSingleton = obj.getGlobalSingleton("clientToMetricBufferMap", f79254);
   const obj3 = _mod689;
-  const globalSingleton1 = obj3.getGlobalSingleton("clientToMetricBufferMap", f82546);
+  const globalSingleton1 = obj3.getGlobalSingleton("clientToMetricBufferMap", f79254);
   const value = globalSingleton1.get(getOptions);
   if (undefined === value) {
     const items = [arg1];
@@ -45,7 +45,7 @@ function _INTERNAL_flushMetricsBuffer(getOptions, value) {
   let items = value;
   if (value == null) {
     const obj = _mod689;
-    const globalSingleton = obj.getGlobalSingleton("clientToMetricBufferMap", f82546);
+    const globalSingleton = obj.getGlobalSingleton("clientToMetricBufferMap", f79254);
     items = globalSingleton.get(getOptions);
   }
   if (items == null) {
@@ -57,7 +57,7 @@ function _INTERNAL_flushMetricsBuffer(getOptions, value) {
     const obj3 = _mod750;
     const metricEnvelope = obj3.createMetricEnvelope(items, _metadata, tunnel, getOptions.getDsn());
     const obj4 = _mod689;
-    const globalSingleton1 = obj4.getGlobalSingleton("clientToMetricBufferMap", f82546);
+    const globalSingleton1 = obj4.getGlobalSingleton("clientToMetricBufferMap", f79254);
     const result = globalSingleton1.set(getOptions, []);
     getOptions.emit("flushMetrics");
     getOptions.sendEnvelope(metricEnvelope);
@@ -110,7 +110,7 @@ export function _INTERNAL_captureMetric(attributes, scope) {
       if (enableMetrics1 != null) {
         if (!enableMetrics1) {
           const tmp13 = require;
-          if (_mod687.DEBUG_BUILD) {
+          if (DEBUG_BUILD.DEBUG_BUILD) {
             const debug2 = tmp13(688).debug;
             debug2.warn("metrics option not enabled, metric will not be captured.");
           }
@@ -251,19 +251,19 @@ export function _INTERNAL_captureMetric(attributes, scope) {
       const merged2 = Object.assign(tmp17Result7.serializeAttributes(attributes));
       const tmp17Result8 = _slicedToArray2;
       const merged3 = Object.assign(tmp17Result8.serializeAttributes(beforeSendMetricResult.attributes, "skip-undefined"));
-      if (_mod687.DEBUG_BUILD) {
+      if (DEBUG_BUILD.DEBUG_BUILD) {
         const debug4 = tmp17(688).debug;
         debug4.log("[Metric]", obj6);
       }
       prop(client, obj6);
       client.emit("afterCaptureMetric", beforeSendMetricResult);
-    } else if (_mod687.DEBUG_BUILD) {
+    } else if (DEBUG_BUILD.DEBUG_BUILD) {
       const debug3 = tmp17(688).debug;
       debug3.log("`beforeSendMetric` returned `null`, will not send metric.");
     }
   } else {
     const tmp8 = require;
-    if (_mod687.DEBUG_BUILD) {
+    if (DEBUG_BUILD.DEBUG_BUILD) {
       const debug = tmp8(688).debug;
       debug.warn("No client available to capture metric.");
     }
@@ -273,6 +273,6 @@ export { _INTERNAL_captureSerializedMetric };
 export { _INTERNAL_flushMetricsBuffer };
 export function _INTERNAL_getMetricBuffer(arg0) {
   const obj = _mod689;
-  const globalSingleton = obj.getGlobalSingleton("clientToMetricBufferMap", f82546);
+  const globalSingleton = obj.getGlobalSingleton("clientToMetricBufferMap", f79254);
   return globalSingleton.get(arg0);
 }

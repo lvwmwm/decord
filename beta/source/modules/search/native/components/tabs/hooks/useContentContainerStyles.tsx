@@ -1,11 +1,11 @@
-// Module ID: 19538
-// Function ID: 19539
+// Module ID: 18799
+// Function ID: 18800
 // Name: useContentContainerStyles
-// Dependencies: [9066, 5306, 2]
+// Dependencies: [8576, 4913, 2]
 
-// Module 19538 (useContentContainerStyles)
-import SearchConstants from "SearchConstants" /* 9066 */;
-import createStyles from "createStyles" /* 5306 */;
+// Module 18799 (useContentContainerStyles)
+import SearchConstants from "SearchConstants" /* 8576 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let SEARCH_LIST_HORIZONTAL_PADDING;

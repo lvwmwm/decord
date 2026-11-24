@@ -1,13 +1,13 @@
-// Module ID: 1370
-// Function ID: 1371
+// Module ID: 1368
+// Function ID: 1369
 // Name: initLibdiscore
-// Dependencies: [5, 17, 1371, 2]
+// Dependencies: [5, 17, 1369, 2]
 // Exports: initLibdiscore, isLibdiscoreInitialized
 
-// Module 1370 (initLibdiscore)
+// Module 1368 (initLibdiscore)
 import react_native from "react-native" /* 17 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import timers_mod from "timers" /* 1371 */;
+import timers_mod from "timers" /* 1369 */;
 import size from "module_2" /* 2 */;
 
 let c0;

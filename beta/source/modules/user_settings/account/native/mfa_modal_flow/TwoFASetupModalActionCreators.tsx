@@ -1,11 +1,11 @@
-// Module ID: 17283
-// Function ID: 17284
+// Module ID: 16051
+// Function ID: 16052
 // Name: TwoFASetupModalActionCreators
-// Dependencies: [6838, 17284, 2121, 2]
+// Dependencies: [6429, 16052, 2119, 2]
 
-// Module 17283 (TwoFASetupModalActionCreators)
-import asyncRequire from "asyncRequire" /* 2121 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
+// Module 16051 (TwoFASetupModalActionCreators)
+import asyncRequire from "asyncRequire" /* 2119 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6429 */;
 import size from "module_2" /* 2 */;
 
 const TWO_FA_SETUP_MODAL_KEY = "TWO_FA_SETUP_MODAL_KEY";
@@ -13,7 +13,7 @@ let obj = {
   open(initialRouteName) {
     const obj = ModalActionCreatorsDefault;
     const obj2 = { initialRouteName };
-    obj.pushLazy(asyncRequire(17284, dependencyMap.paths), obj2, TWO_FA_SETUP_MODAL_KEY);
+    obj.pushLazy(asyncRequire(16052, dependencyMap.paths), obj2, TWO_FA_SETUP_MODAL_KEY);
   },
   close() {
     const obj = ModalActionCreatorsDefault;

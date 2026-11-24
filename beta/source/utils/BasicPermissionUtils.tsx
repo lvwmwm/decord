@@ -1,10 +1,10 @@
-// Module ID: 5247
-// Function ID: 5248
+// Module ID: 4854
+// Function ID: 4855
 // Name: BasicPermissionUtils
-// Dependencies: [1084, 2]
+// Dependencies: [1083, 2]
 
-// Module 5247 (BasicPermissionUtils)
-import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
+// Module 4854 (BasicPermissionUtils)
+import BigFlagUtilsAll from "BigFlagUtils" /* 1083 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("utils/BasicPermissionUtils.tsx");

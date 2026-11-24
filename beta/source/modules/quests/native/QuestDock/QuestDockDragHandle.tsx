@@ -1,20 +1,21 @@
-// Module ID: 17791
-// Function ID: 17792
+// Module ID: 16568
+// Function ID: 16569
 // Name: QuestDockDragHandle
-// Dependencies: [19, 17, 6954, 17700, 21, 5306, 17701, 1655, 5929, 17699, 5891, 1113, 2]
+// Dependencies: [19, 17, 6558, 16473, 21, 4913, 575, 16474, 1653, 5514, 16472, 5476, 1112, 2]
 
-// Module 17791 (QuestDockDragHandle)
-import _mod1655 from "module_1655" /* 1655 */;
-import QuestConstants from "QuestConstants" /* 6954 */;
-import QuestDockConstants from "QuestDockConstants" /* 17700 */;
-import QuestDockGestureContext from "QuestDockGestureContext" /* 17701 */;
+// Module 16568 (QuestDockDragHandle)
+import nativeDefault from "native" /* 575 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import QuestConstants from "QuestConstants" /* 6558 */;
+import QuestDockConstants from "QuestDockConstants" /* 16473 */;
+import QuestDockGestureContext from "QuestDockGestureContext" /* 16474 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
-const _modDef1655 = _mod1655;
+const _modDef1653 = _mod1653;
 let num, obj1, tmp4;
 
 let StyleSheet;
@@ -23,21 +24,23 @@ let metroImportAll;
 let metroImportDefault;
 let obj2;
 let obj3;
+let obj4;
 let tmp2;
-const intl2 = tmp2(1113);
-const ActionSheetHeaderBar2 = tmp2(5891);
-const spring_spring = tmp2(5929);
-const QuestDockUtils = tmp2(17699);
+const intl2 = tmp2(1112);
+const ActionSheetHeaderBar2 = tmp2(5476);
+const spring_spring = tmp2(5514);
+const QuestDockUtils = tmp2(16472);
 ({ StyleSheet, View: closure_4 } = react_native);
 const QuestDockMode = QuestConstants.QuestDockMode;
 let closure_6 = QuestDockConstants.QUEST_DOCK_MODE_CHANGE_PHYSICS;
 ({ jsx: metroImportDefault, jsxs: metroImportAll } = Fragment);
 let createStyles = createStyles_mod;
-let obj = { dragHandleWrapper: obj2, dragHandleOverlay: obj3 };
+let obj = { dragHandleWrapper: obj2, dragHandle: obj3, dragHandleOverlay: obj4 };
 obj2 = { bottom: undefined, zIndex: 4 };
 createStyles = createStyles.createStyles;
 const merged = Object.assign(StyleSheet.absoluteFillObject);
-obj3 = { bottom: undefined };
+obj3 = { alignSelf: "center", width: nativeDefault.modules.mobile.SHEET_HANDLE_WIDTH };
+obj4 = { bottom: undefined };
 const merged1 = Object.assign(StyleSheet.absoluteFillObject);
 let closure_9 = createStyles(obj);
 let closure_10 = { code: "(function QuestDockDragHandleTsx1(){let[activeQuestDockMode,QuestDockMode]=this.__closure;return{transform:[{translateY:activeQuestDockMode.get()!==QuestDockMode.CLOSED&&activeQuestDockMode.get()!==QuestDockMode.SOFT_DISMISSED?-4:0}]};})" };
@@ -50,6 +53,7 @@ const memoResult = react.memo(function QuestDockDragHandle(arg0) {
   let items6;
   let items7;
   let items8;
+  let items9;
   let obj3;
   let stringResult;
   let tmp12;
@@ -73,7 +77,7 @@ const memoResult = react.memo(function QuestDockDragHandle(arg0) {
   const tmp = closure_9();
   let tmp2 = require;
   const activeQuestDockMode = react.useContext(QuestDockGestureContext.QuestDockGestureContext).activeQuestDockMode;
-  let obj = _mod1655;
+  let obj = _mod1653;
   let items = [closure_10, activeQuestDockMode, ];
   items[2] = QuestDockMode;
   let c0;
@@ -102,8 +106,8 @@ const memoResult = react.memo(function QuestDockDragHandle(arg0) {
   QuestDockDragHandleTsx1.__initData = tmp5;
   const animatedStyle = obj.useAnimatedStyle(QuestDockDragHandleTsx1);
   const items2 = [closure_11, , , , , ];
-  const useAnimatedStyle = _mod1655.useAnimatedStyle;
-  _mod1655;
+  const useAnimatedStyle = _mod1653.useAnimatedStyle;
+  _mod1653;
   items2[1] = spring_spring.withSpring;
   items2[2] = "default" === variant;
   items2[3] = activeQuestDockMode;
@@ -138,8 +142,8 @@ const memoResult = react.memo(function QuestDockDragHandle(arg0) {
   QuestDockDragHandleTsx2.__initData = tmp12;
   const animatedStyle1 = useAnimatedStyle(QuestDockDragHandleTsx2);
   const items4 = [closure_12, , , , , ];
-  const useAnimatedStyle2 = _mod1655.useAnimatedStyle;
-  _mod1655;
+  const useAnimatedStyle2 = _mod1653.useAnimatedStyle;
+  _mod1653;
   items4[1] = spring_spring.withSpring;
   items4[2] = "default" === variant;
   items4[3] = activeQuestDockMode;
@@ -174,11 +178,12 @@ const memoResult = react.memo(function QuestDockDragHandle(arg0) {
   QuestDockDragHandleTsx3.__initData = tmp20;
   let obj2 = { style: tmp.dragHandleWrapper, children: tmp29(View, obj3) };
   const animatedStyle2 = useAnimatedStyle2(QuestDockDragHandleTsx3);
-  obj3 = { style: animatedStyle, layout: QuestDockUtils.dimensionsLayoutTransition, children: items7 };
-  View = _modDef1655.View;
-  const obj4 = { style: items6, children: metroImportDefault(ActionSheetHeaderBar, { variant: "overlay", accessibilityLabel: stringResult }) };
-  items6 = [tmp.dragHandleOverlay, animatedStyle2];
-  const View2 = _modDef1655.View;
+  obj3 = { style: items6, layout: QuestDockUtils.dimensionsLayoutTransition, children: items8 };
+  items6 = [tmp.dragHandle, animatedStyle];
+  View = _modDef1653.View;
+  const obj4 = { style: items7, children: metroImportDefault(ActionSheetHeaderBar, { variant: "overlay", accessibilityLabel: stringResult }) };
+  items7 = [tmp.dragHandleOverlay, animatedStyle2];
+  const View2 = _modDef1653.View;
   ActionSheetHeaderBar = ActionSheetHeaderBar2.ActionSheetHeaderBar;
   const intl = intl2.intl;
   const string = intl.string;
@@ -190,11 +195,11 @@ const memoResult = react.memo(function QuestDockDragHandle(arg0) {
   } else {
     stringResult = string(t.Yplnt6);
   }
-  items7 = [metroImportDefault(View2, obj4), ];
-  const obj5 = { style: items8, pointerEvents: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: metroImportDefault(ActionSheetHeaderBar2.ActionSheetHeaderBar, { variant: "default" }) };
-  items8 = [tmp.dragHandleOverlay, animatedStyle1];
-  const View3 = _modDef1655.View;
-  items7[1] = metroImportDefault(View3, obj5);
+  items8 = [metroImportDefault(View2, obj4), ];
+  const obj5 = { style: items9, pointerEvents: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: metroImportDefault(ActionSheetHeaderBar2.ActionSheetHeaderBar, { variant: "default" }) };
+  items9 = [tmp.dragHandleOverlay, animatedStyle1];
+  const View3 = _modDef1653.View;
+  items8[1] = metroImportDefault(View3, obj5);
   return metroImportDefault(tmp28, obj2);
 });
 const result = size.fileFinishedImporting("modules/quests/native/QuestDock/QuestDockDragHandle.tsx");

@@ -1,23 +1,54 @@
-// Module ID: 13727
-// Function ID: 13728
+// Module ID: 18573
+// Function ID: 18574
 // Name: conjurePlanExperienceSections
-// Dependencies: [4131, 13717, 1113, 13718, 2]
-// Exports: conjurePlanDisplayedSections, conjurePlanExperienceIsApp, conjurePlanFrameFeatures, conjurePlanRequirementGroups, conjurePlanRequirementsSectionId
+// Dependencies: [4190, 1112, 18564, 18574, 18565, 2]
+// Exports: conjurePlanDisplayedSections, conjurePlanExperienceIsApp, conjurePlanExperienceKindLabel, conjurePlanExperienceKindNote, conjurePlanFrameFeatures, conjurePlanRequirementGroups, conjurePlanRequirementsSectionId
 
-// Module 13727 (conjurePlanExperienceSections)
-import intl3 from "intl" /* 1113 */;
-import _modDef4131 from "module_4131" /* 4131 */;
-import conjurePlanFormat from "conjurePlanFormat" /* 13718 */;
+// Module 18573 (conjurePlanExperienceSections)
+import intl4 from "intl" /* 1112 */;
+import _modDef4190 from "module_4190" /* 4190 */;
+import conjurePlanFormat from "conjurePlanFormat" /* 18565 */;
+import PermissionSpecUtilsDefault from "PermissionSpecUtils" /* 18574 */;
 import size from "module_2" /* 2 */;
 
-let changes, names;
+let changes, set;
 
-let obj = { frame: _modDef4131.Z2bt4u, overlay_widget: _modDef4131["0mGHfU"], user_widget: _modDef4131.Jipr29, bot: _modDef4131.EbvC13, commands: _modDef4131.EbvC13, automod: _modDef4131.tiMvei };
+let obj3;
+let obj = { frame: _modDef4190.Z2bt4u, bot: _modDef4190.EbvC13, commands: _modDef4190.EbvC13, automod: _modDef4190.tiMvei };
+let obj2 = { user_widget: obj3, overlay_widget: { server: _modDef4190.nUcjJ1, personal: _modDef4190.RDpKqP } };
+obj3 = { server: _modDef4190.VlI3et, personal: _modDef4190.njJ4YL };
+({ server: _modDef4190.nUcjJ1, personal: _modDef4190.RDpKqP });
 const result = size.fileFinishedImporting("modules/conjure/plan/conjurePlanExperienceSections.tsx");
 
-export const CONJURE_PLAN_EXPERIENCE_KIND_LABELS = obj;
 export function conjurePlanExperienceIsApp(experience) {
   return "frame" === experience.kind && true !== experience.game;
+}
+export function conjurePlanExperienceKindLabel(experience, inServer) {
+  const tmp = "frame" === experience.kind && true !== experience.game;
+  if (tmp) {
+    const intl3 = intl4.intl;
+    return intl3.string(_modDef4190.BM4Ymz);
+  } else {
+    if ("user_widget" !== experience.kind) {
+      if ("overlay_widget" !== experience.kind) {
+        const intl = intl4.intl;
+        return intl.string(obj[experience.kind]);
+      }
+    }
+    const intl2 = intl4.intl;
+    return intl2.string(inServer ? obj2[experience.kind].server : obj2[experience.kind].personal);
+  }
+}
+export function conjurePlanExperienceKindNote(experience, inServer) {
+  let stringResult = null;
+  if (inServer) {
+    stringResult = null;
+    if (experience.kind in obj2) {
+      const intl = intl4.intl;
+      stringResult = intl.string(_modDef4190.UXJCSG);
+    }
+  }
+  return stringResult;
 }
 export function conjurePlanDisplayedSections(experiences, commandNames) {
   let closure_0 = commandNames;
@@ -25,7 +56,7 @@ export function conjurePlanDisplayedSections(experiences, commandNames) {
   const bullets = found.flatMap((changes) => {
     changes = changes.changes;
     return changes.filter((item) => {
-      const obj = closure_0(closure_2[1]);
+      obj = closure_0(closure_2[2]);
       return !obj.conjurePlanTextMentionsCommand(item, closure_1_0);
     });
   });
@@ -39,7 +70,7 @@ export function conjurePlanDisplayedSections(experiences, commandNames) {
         items = [];
       } else {
         items = [{ experience: kind, bullets }];
-        const obj2 = { experience: kind, bullets };
+        obj2 = { experience: kind, bullets };
       }
       items3 = items;
     } else if (kind === closure_2) {
@@ -50,7 +81,7 @@ export function conjurePlanDisplayedSections(experiences, commandNames) {
       items3 = items2;
     } else {
       items3 = [{ experience: kind, bullets: kind.changes }];
-      const obj = { experience: kind, bullets: kind.changes };
+      obj = { experience: kind, bullets: kind.changes };
     }
     return items3;
   });
@@ -73,16 +104,16 @@ export function conjurePlanFrameFeatures(usableInVoice) {
   let items1;
   let items4;
   if (usableInVoice.usableInVoice) {
-    const intl = intl3.intl;
-    const items = [intl.string(_modDef4131["4oGg2h"])];
+    const intl = intl4.intl;
+    const items = [intl.string(_modDef4190["4oGg2h"])];
     items1 = items;
   } else {
     items1 = [];
   }
   const items2 = [...items1];
   if (usableInVoice.launchableAnywhere) {
-    const intl2 = intl3.intl;
-    const items3 = [intl2.string(_modDef4131.BTGCfR)];
+    const intl2 = intl4.intl;
+    const items3 = [intl2.string(_modDef4190.BTGCfR)];
     items4 = items3;
   } else {
     items4 = [];
@@ -90,18 +121,37 @@ export function conjurePlanFrameFeatures(usableInVoice) {
   HermesBuiltin.arraySpread(items2, items4, tmp5);
   return items2;
 }
-export function conjurePlanRequirementGroups(proposal) {
-  let obj = { key: "permissions", caption: _modDef4131["2UbW6r"], names: proposal.bot_permissions };
-  let items = [obj, { key: "intents", caption: _modDef4131["7TKfpj"], names: proposal.privileged_intents }];
-  ({ key: "intents", caption: _modDef4131["7TKfpj"], names: proposal.privileged_intents });
-  return items.flatMap((names) => {
+export function conjurePlanRequirementGroups(proposal, guild) {
+  function label(arg0) {
+    obj = conjurePlanFormat;
+    return obj.conjurePlanPermissionLabel(arg0, guildPermissionSpecMap);
+  }
+  let guildPermissionSpecMap = null;
+  if (null != guild) {
+    const tmp2 = importDefault;
+    const tmp3 = dependencyMap;
+    obj = PermissionSpecUtilsDefault;
+    guildPermissionSpecMap = obj.getGuildPermissionSpecMap(guild);
+  }
+  let items = [{ key: "permissions", caption: _modDef4190["2UbW6r"], names: proposal.bot_permissions, label }, ];
+  ({ key: "permissions", caption: _modDef4190["2UbW6r"], names: proposal.bot_permissions, label });
+  items[1] = { key: "intents", caption: _modDef4190["7TKfpj"], names: proposal.privileged_intents, label: guildPermissionSpecMap(18565).formatConjurePlanRequirementLabel };
+  ({ key: "intents", caption: _modDef4190["7TKfpj"], names: proposal.privileged_intents, label: guildPermissionSpecMap(18565).formatConjurePlanRequirementLabel });
+  return items.flatMap(function(names) {
     let intl;
+    let items;
     names = names.names;
     if (null != names) {
       if (names.length > 0) {
-        const obj = { key: tmp, caption: intl.string(tmp2), labels: names.map(conjurePlanFormat.formatConjurePlanRequirementLabel) };
-        intl = intl3.intl;
-        const items = [obj];
+        obj = { key: tmp, caption: intl.string(tmp2), labels: items };
+        intl = guildPermissionSpecMap(dependencyMap[1]).intl;
+        const _Set = Set;
+        const self = this;
+        const self2 = this;
+        items = [];
+        set = new Set(names.map(tmp3));
+        HermesBuiltin.arraySpread(items, set, 0);
+        const items1 = [obj];
       }
       return [];
     }

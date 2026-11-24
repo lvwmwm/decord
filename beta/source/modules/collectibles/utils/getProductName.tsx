@@ -1,13 +1,13 @@
-// Module ID: 10445
-// Function ID: 10446
+// Module ID: 9574
+// Function ID: 9575
 // Name: getProductName
-// Dependencies: [2114, 1113, 8496, 2]
+// Dependencies: [2112, 1112, 8086, 2]
 // Exports: getCardProductName, getProductName, getProductNameAndTypeLabel, getPurchasedProductName
 
-// Module 10445 (getProductName)
-import intl6 from "intl" /* 1113 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 2114 */;
-import CollectiblesProductUtils from "CollectiblesProductUtils" /* 8496 */;
+// Module 9574 (getProductName)
+import intl6 from "intl" /* 1112 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 2112 */;
+import CollectiblesProductUtils from "CollectiblesProductUtils" /* 8086 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/collectibles/utils/getProductName.tsx");
@@ -20,10 +20,10 @@ export function getCardProductName(product) {
       if (null != product.baseVariantName) {
         let name;
         if (product.variantLabel !== tmp3) {
-          const intl = tmp(1113).intl;
+          const intl = tmp(1112).intl;
           const obj = { baseVariantName: null, variantLabel: null };
           ({ baseVariantName: obj.baseVariantName, variantLabel: obj.variantLabel } = product);
-          name = intl.formatToPlainString(tmp(1113).t.BZN5k2, obj);
+          name = intl.formatToPlainString(tmp(1112).t.BZN5k2, obj);
         }
         str = name;
       }
@@ -36,9 +36,9 @@ export function getCardProductName(product) {
     if (product.type === CollectiblesItemType.CollectiblesItemType.BUNDLE) {
       formatResult = str;
       if (product.items.length > 0) {
-        const intl2 = tmp5(1113).intl;
+        const intl2 = tmp5(1112).intl;
         const obj2 = { count: product.items.length, productName: str };
-        formatResult = intl2.format(tmp5(1113).t.UTc0ny, obj2);
+        formatResult = intl2.format(tmp5(1112).t.UTc0ny, obj2);
       }
     }
   }
@@ -53,10 +53,10 @@ export function getProductName(product) {
       if (null != product.baseVariantName) {
         let name;
         if (product.variantLabel !== tmp3) {
-          const intl = tmp(1113).intl;
+          const intl = tmp(1112).intl;
           const obj = { baseVariantName: null, variantLabel: null };
           ({ baseVariantName: obj.baseVariantName, variantLabel: obj.variantLabel } = product);
-          name = intl.formatToPlainString(tmp(1113).t.BZN5k2, obj);
+          name = intl.formatToPlainString(tmp(1112).t.BZN5k2, obj);
         }
         return name;
       }
@@ -72,10 +72,10 @@ export function getPurchasedProductName(baseVariantName) {
     if (null != baseVariantName.baseVariantName) {
       let name;
       if (baseVariantName.variantLabel !== tmp3) {
-        const intl = tmp(1113).intl;
+        const intl = tmp(1112).intl;
         const obj = { baseVariantName: null, variantLabel: null };
         ({ baseVariantName: obj.baseVariantName, variantLabel: obj.variantLabel } = baseVariantName);
-        name = intl.formatToPlainString(tmp(1113).t.BZN5k2, obj);
+        name = intl.formatToPlainString(tmp(1112).t.BZN5k2, obj);
       }
       return name;
     }
@@ -90,10 +90,10 @@ export function getProductNameAndTypeLabel(product) {
       if (null != product.baseVariantName) {
         let name;
         if (product.variantLabel !== tmp3) {
-          const intl = tmp(1113).intl;
+          const intl = tmp(1112).intl;
           const obj = { baseVariantName: null, variantLabel: null };
           ({ baseVariantName: obj.baseVariantName, variantLabel: obj.variantLabel } = product);
-          name = intl.formatToPlainString(tmp(1113).t.BZN5k2, obj);
+          name = intl.formatToPlainString(tmp(1112).t.BZN5k2, obj);
         }
         str = name;
       }
@@ -103,19 +103,19 @@ export function getProductNameAndTypeLabel(product) {
   const obj2 = CollectiblesProductUtils;
   const productType = obj2.getProductType(product);
   if (CollectiblesItemType.CollectiblesItemType.AVATAR_DECORATION === productType) {
-    const intl5 = tmp4(1113).intl;
+    const intl5 = tmp4(1112).intl;
     const obj3 = { product: str };
     return intl5.formatToPlainString(intl6.t.lvBzLi, obj3);
   } else if (CollectiblesItemType.CollectiblesItemType.PROFILE_EFFECT === productType) {
-    const intl4 = tmp4(1113).intl;
+    const intl4 = tmp4(1112).intl;
     const obj4 = { product: str };
     return intl4.formatToPlainString(intl6.t.eR7moP, obj4);
   } else if (CollectiblesItemType.CollectiblesItemType.NAMEPLATE === productType) {
-    const intl3 = tmp4(1113).intl;
+    const intl3 = tmp4(1112).intl;
     const obj5 = { product: str };
     return intl3.formatToPlainString(intl6.t.YFOwHj, obj5);
   } else if (CollectiblesItemType.CollectiblesItemType.PROFILE_FRAME === productType) {
-    const intl2 = tmp4(1113).intl;
+    const intl2 = tmp4(1112).intl;
     const obj6 = { product: str };
     return intl2.formatToPlainString(intl6.t.vov8LX, obj6);
   } else {

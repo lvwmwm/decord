@@ -1,15 +1,15 @@
-// Module ID: 1246
-// Function ID: 1247
+// Module ID: 1245
+// Function ID: 1246
 // Name: ApexExperimentStore
-// Dependencies: [32, 1247, 502, 1072, 572, 1252, 1256, 1377, 1387, 2]
+// Dependencies: [32, 1246, 502, 1071, 572, 1251, 1255, 1375, 1385, 2]
 
-// Module 1246 (ApexExperimentStore)
+// Module 1245 (ApexExperimentStore)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import Constants from "Constants" /* 1072 */;
-import BaseApexExperimentStore2 from "BaseApexExperimentStore" /* 1247 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import BuildOverrideUtils from "BuildOverrideUtils" /* 1377 */;
-import ApexLaunchLatch from "ApexLaunchLatch" /* 1387 */;
+import Constants from "Constants" /* 1071 */;
+import BaseApexExperimentStore2 from "BaseApexExperimentStore" /* 1246 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import BuildOverrideUtils from "BuildOverrideUtils" /* 1375 */;
+import ApexLaunchLatch from "ApexLaunchLatch" /* 1385 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
 import size from "module_2" /* 2 */;
@@ -31,7 +31,7 @@ class ApexExperimentStore extends BaseApexExperimentStore {
       },
       CONNECTION_OPEN_STATE_UPDATE(apexExperiments) {
         const result = closure_0.updateLaunchLatchUnits();
-        const result1 = closure_0.setExperimentAssignments(apexExperiments.apexExperiments);
+        const result1 = closure_0.setGatewayExperimentAssignments(apexExperiments.apexExperiments, undefined, AuthenticationStore.getId());
         const obj = closure_0;
         if (null != apexExperiments.apexExperiments) {
           const result2 = obj.drainLaunchLatchReceipts();
@@ -63,24 +63,29 @@ class ApexExperimentStore extends BaseApexExperimentStore {
         return closure_0.setExperimentsMetadata(experiments.experiments);
       },
       APEX_EXPERIMENTS_FETCH_START(unitId) {
-        return closure_0.handleFetchStart(unitId.unitId);
+        return closure_0.handleFetchStart(unitId.unitId, unitId.request);
       },
       APEX_EXPERIMENTS_FETCH_SUCCESS(unitId) {
         const result = closure_0.updateLaunchLatchUnits();
-        closure_0.handleFetchSuccess(unitId.unitId, unitId.experiments);
+        const handleFetchSuccessResult = closure_0.handleFetchSuccess(unitId.unitId, unitId.experiments, unitId.request);
+        let tmp3 = false !== handleFetchSuccessResult;
         const obj = closure_0;
-        if (null != unitId.experiments) {
+        if (tmp3) {
+          tmp3 = null != unitId.experiments;
+        }
+        if (tmp3) {
           const result1 = obj.drainLaunchLatchReceipts();
         }
+        return handleFetchSuccessResult;
       },
       APEX_EXPERIMENTS_FETCH_FAILURE(unitId) {
-        return closure_0.handleFetchFailure(unitId.unitId);
+        return closure_0.handleFetchFailure(unitId.unitId, unitId.request);
       },
       LOGOUT(isSwitchingAccount) {
         return closure_0.handleLogout(isSwitchingAccount.isSwitchingAccount);
       }
     };
-    const tmp3 = new tmp(tmp2, obj, require("Dispatcher").DispatchBand.Early, new.target, tmp, tmp2, obj, this, _require, undefined);
+    let tmp3 = new tmp(tmp2, obj, require("Dispatcher").DispatchBand.Early, new.target, tmp, tmp2, obj, this, _require, undefined);
     _require = tmp3;
     tmp3.registerExperiment(require("ApexLaunchLatchFlags").ApexLaunchLatchFlags);
     tmp3.track = () => {
@@ -100,6 +105,9 @@ class ApexExperimentStore extends BaseApexExperimentStore {
     const storedState = loadStoredState(version, obj.getBuildOverrideExperiments());
     const result = this.initializeLaunchLatch();
     const result1 = this.updateLaunchLatchUnits();
+  }
+  trackCommonTriggerPointExposures(arg0) {
+    const result = super.trackCommonTriggerPointExposures(arg0, AuthenticationStore.getId());
   }
   maybeEmitDebugExperimentEvent() {
     const self = this;
@@ -171,12 +179,12 @@ class ApexExperimentStore extends BaseApexExperimentStore {
     const self = this;
     const result = this.updateLaunchLatchUnits();
     guilds = guilds.guilds;
-    const result1 = this.setExperimentAssignments(guilds.apexExperiments, guilds.reduce((acc, experiments) => {
+    const result1 = this.setGatewayExperimentAssignments(guilds.apexExperiments, guilds.reduce((acc, experiments) => {
       if (null != experiments.experiments) {
         acc[experiments.id] = experiments.experiments;
       }
       return acc;
-    }, {}));
+    }, {}), guilds.user.id);
     if (null != guilds.apexExperiments) {
       const result2 = self.drainLaunchLatchReceipts();
     }

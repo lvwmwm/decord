@@ -1,20 +1,20 @@
-// Module ID: 19748
-// Function ID: 19749
+// Module ID: 18999
+// Function ID: 19000
 // Name: MessageRequestRowSenderDetails
-// Dependencies: [19, 17, 5248, 21, 5306, 1187, 575, 504, 5362, 19749, 1417, 5919, 1113, 19750, 19751, 2]
+// Dependencies: [19, 17, 4855, 21, 4913, 1186, 575, 504, 4969, 19000, 1415, 5504, 1112, 19001, 19002, 2]
 // Exports: default
 
-// Module 19748 (MessageRequestRowSenderDetails)
+// Module 18999 (MessageRequestRowSenderDetails)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 1187 */;
-import utils_AvatarUtilsDefault from "utils/AvatarUtils" /* 1417 */;
-import UserUtilsDefault from "UserUtils" /* 5362 */;
-import MessageRequestMutualServersDefault from "MessageRequestMutualServers" /* 19751 */;
+import native from "native" /* 1186 */;
+import utils_AvatarUtilsDefault from "utils/AvatarUtils" /* 1415 */;
+import UserUtilsDefault from "UserUtils" /* 4969 */;
+import MessageRequestMutualServersDefault from "MessageRequestMutualServers" /* 19002 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 5248 */;
+import RelationshipStore from "RelationshipStore" /* 4855 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -65,13 +65,13 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
     }
     return tmp2;
   });
-  const obj2 = otherUser(19749);
+  const obj2 = otherUser(19000);
   const messageRequestRelativeTimestampText = obj2.useMessageRequestRelativeTimestampText(channel);
   const random = Math.random();
   const obj3 = { style: tmp.avatarContainer, children: closure_5(Avatar, obj5) };
   const floorResult = floor(random * utils_AvatarUtilsDefault.DEFAULT_AVATARS.length);
   const tmp9 = utils_AvatarUtilsDefault.DEFAULT_AVATARS[floorResult];
-  Avatar = otherUser(1187).Avatar;
+  Avatar = otherUser(1186).Avatar;
   const tmp11 = closure_7;
   if (null != otherUser) {
     const obj4 = { avatarStyle: tmp.avatar, user: otherUser, guildId: "HermesInternal", disablePlaceholder: null, avatarDecoration };
@@ -87,10 +87,10 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
   const obj6 = { style: tmp.detailsContainer, children: items5 };
   const obj7 = { style: tmp.messageDetails, children: items4 };
   const obj8 = { lineClamp: 1, variant: "body-md/semibold", color: "mobile-text-heading-primary", style: tmp.usernameTextContainer, children: items2 };
-  const Text = tmp2(5919).Text;
+  const Text = tmp2(5504).Text;
   const obj9 = { variant: "body-md/semibold", color: "mobile-text-heading-primary", style: tmp.username, children: stringResult };
   stringResult = stateFromStores;
-  const Text2 = tmp2(5919).Text;
+  const Text2 = tmp2(5504).Text;
   if (stateFromStores == null) {
     let username;
     if (otherUser != null) {
@@ -99,38 +99,38 @@ export default function MessageRequestRowSenderDetails(isRestricted) {
     stringResult = username;
   }
   if (stringResult == null) {
-    const intl = tmp2(1113).intl;
-    stringResult = intl.string(tmp2(1113).t["30mdIx"]);
+    const intl = tmp2(1112).intl;
+    stringResult = intl.string(tmp2(1112).t["30mdIx"]);
   }
   items2 = [closure_5(Text2, obj9), ];
   let tmp10Result = null != stateFromStores;
   if (tmp10Result) {
     const obj10 = { variant: "body-md/medium", color: "text-muted", children: items3 };
-    const Text3 = tmp2(5919).Text;
+    const Text3 = tmp2(5504).Text;
     items3 = [" "];
-    const tmp2Result = tmp2(5362);
+    const tmp2Result = tmp2(4969);
     items3[1] = tmp2Result.getUserTag(otherUser);
     tmp10Result = tmp10(Text3, obj10);
   }
   items2[1] = tmp10Result;
   items4 = [closure_6(Text, obj8), , ];
   const obj11 = { style: tmp.timestampSeparator, variant: "body-xs/medium", color: "text-muted", children: "\u00B7" };
-  items4[1] = closure_5(tmp2(5919).Text, obj11);
-  items4[2] = closure_5(tmp2(5919).Text, { variant: "body-xs/semibold", color: "text-muted", children: messageRequestRelativeTimestampText });
+  items4[1] = closure_5(tmp2(5504).Text, obj11);
+  items4[2] = closure_5(tmp2(5504).Text, { variant: "body-xs/semibold", color: "text-muted", children: messageRequestRelativeTimestampText });
   items5 = [closure_6(View, obj7), , ];
   let tmp12Result = !flag;
   if (tmp12Result) {
     const obj12 = { style: tmp.messagePreview, channel };
-    tmp12Result = tmp12(tmp7(19750), obj12);
+    tmp12Result = tmp12(tmp7(19001), obj12);
   }
   items5[1] = tmp12Result;
   if (flag) {
     flag = null != otherUser;
   }
   if (flag) {
-    const obj13 = { style: tmp.messagePreview, userId: otherUser.id, suffix: intl2.string(tmp2(1113).t.hTltPn) };
+    const obj13 = { style: tmp.messagePreview, userId: otherUser.id, suffix: intl2.string(tmp2(1112).t.hTltPn) };
     const tmp7Result = MessageRequestMutualServersDefault;
-    intl2 = tmp2(1113).intl;
+    intl2 = tmp2(1112).intl;
     flag = tmp12(tmp7Result, obj13);
   }
   const obj14 = { children: items1 };

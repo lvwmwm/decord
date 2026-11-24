@@ -1,14 +1,14 @@
-// Module ID: 6830
-// Function ID: 6831
+// Module ID: 6421
+// Function ID: 6422
 // Name: getAgeNoticeWarningDescriptions
-// Dependencies: [6831, 1113, 6832, 3353, 2]
+// Dependencies: [6422, 1112, 6423, 3476, 2]
 // Exports: getAgeNoticeServerDescriptions, getAgeNoticeWarningDescriptions
 
-// Module 6830 (getAgeNoticeWarningDescriptions)
-import intl6 from "intl" /* 1113 */;
-import _modDef3353 from "module_3353" /* 3353 */;
-import AgeNoticeExperiment from "AgeNoticeExperiment" /* 6832 */;
-import AgeNoticeConstants from "AgeNoticeConstants" /* 6831 */;
+// Module 6421 (getAgeNoticeWarningDescriptions)
+import intl6 from "intl" /* 1112 */;
+import _modDef3476 from "module_3476" /* 3476 */;
+import AgeNoticeExperiment from "AgeNoticeExperiment" /* 6423 */;
+import AgeNoticeConstants from "AgeNoticeConstants" /* 6422 */;
 import size from "module_2" /* 2 */;
 
 let c3;
@@ -33,23 +33,23 @@ export function getAgeNoticeWarningDescriptions(tmp4Result, guildName) {
   if (obj.isAgeNoticeEnabled(tmp)) {
     let tmp7;
     const obj2 = { adult: null, teen: null, unverified: null };
-    const intl = tmp2(1113).intl;
+    const intl = tmp2(1112).intl;
     if (tmp4Result) {
       obj2.adult = intl.string(intl6.t.fp3xf5);
-      const intl4 = tmp2(1113).intl;
+      const intl4 = tmp2(1112).intl;
       obj2.teen = intl4.string(intl6.t.dqC1w2);
-      const intl5 = tmp2(1113).intl;
+      const intl5 = tmp2(1112).intl;
       obj2.unverified = intl5.string(intl6.t.qiLic6);
       tmp7 = obj2;
     } else {
       const obj3 = { guildName };
-      obj2.adult = intl.formatToPlainString(_modDef3353.iK0n30, obj3);
-      const intl2 = tmp2(1113).intl;
+      obj2.adult = intl.formatToPlainString(_modDef3476.iK0n30, obj3);
+      const intl2 = tmp2(1112).intl;
       const obj4 = { guildName };
-      obj2.teen = intl2.formatToPlainString(_modDef3353.ezJA0R, obj4);
-      const intl3 = tmp2(1113).intl;
+      obj2.teen = intl2.formatToPlainString(_modDef3476.ezJA0R, obj4);
+      const intl3 = tmp2(1112).intl;
       const obj5 = { guildName };
-      obj2.unverified = intl3.formatToPlainString(_modDef3353.h4HbnI, obj5);
+      obj2.unverified = intl3.formatToPlainString(_modDef3476.h4HbnI, obj5);
       tmp7 = obj2;
     }
     tmp4 = tmp7;

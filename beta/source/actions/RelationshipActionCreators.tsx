@@ -1,31 +1,31 @@
-// Module ID: 8137
-// Function ID: 8138
+// Module ID: 7740
+// Function ID: 7741
 // Name: RelationshipActionCreators
-// Dependencies: [32, 5, 5248, 1388, 1072, 8138, 6900, 7692, 6258, 6910, 1113, 8139, 8140, 8141, 6879, 6886, 1285, 5362, 5313, 6906, 572, 6905, 2]
+// Dependencies: [32, 5, 4855, 1386, 1071, 7741, 6504, 7294, 5860, 6514, 1112, 7742, 7743, 7744, 6483, 6490, 1284, 4969, 4920, 6510, 572, 6509, 2]
 
-// Module 8137 (RelationshipActionCreators)
+// Module 7740 (RelationshipActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import intl10 from "intl" /* 1113 */;
-import HTTPUtils from "HTTPUtils" /* 1285 */;
-import shared from "shared" /* 5313 */;
-import UserUtilsDefault from "UserUtils" /* 5362 */;
-import AlertActionCreatorsDefault from "AlertActionCreators" /* 6258 */;
-import QualtricsActionCreatorsDefault from "QualtricsActionCreators" /* 6879 */;
-import SurveyActionTypes from "SurveyActionTypes" /* 6886 */;
-import Constants2 from "Constants" /* 6900 */;
-import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 6905 */;
-import SafetyToastsUtils from "SafetyToastsUtils" /* 6906 */;
-import openQuarantineModeInfoModalDefault from "openQuarantineModeInfoModal" /* 6910 */;
-import ContextMenuActionCreators from "ContextMenuActionCreators" /* 7692 */;
-import RelationshipConstants from "RelationshipConstants" /* 8138 */;
-import ClaimAccountModalActionCreatorsAll from "ClaimAccountModalActionCreators" /* 8139 */;
-import UserLimitedAccessUtils from "UserLimitedAccessUtils" /* 8140 */;
-import FriendsUtils from "FriendsUtils" /* 8141 */;
+import intl10 from "intl" /* 1112 */;
+import HTTPUtils from "HTTPUtils" /* 1284 */;
+import shared from "shared" /* 4920 */;
+import UserUtilsDefault from "UserUtils" /* 4969 */;
+import AlertActionCreatorsDefault from "AlertActionCreators" /* 5860 */;
+import QualtricsActionCreatorsDefault from "QualtricsActionCreators" /* 6483 */;
+import SurveyActionTypes from "SurveyActionTypes" /* 6490 */;
+import Constants2 from "Constants" /* 6504 */;
+import SafetyToastsActionCreatorsDefault from "SafetyToastsActionCreators" /* 6509 */;
+import SafetyToastsUtils from "SafetyToastsUtils" /* 6510 */;
+import openQuarantineModeInfoModalDefault from "openQuarantineModeInfoModal" /* 6514 */;
+import ContextMenuActionCreators from "ContextMenuActionCreators" /* 7294 */;
+import RelationshipConstants from "RelationshipConstants" /* 7741 */;
+import ClaimAccountModalActionCreatorsAll from "ClaimAccountModalActionCreators" /* 7742 */;
+import UserLimitedAccessUtils from "UserLimitedAccessUtils" /* 7743 */;
+import FriendsUtils from "FriendsUtils" /* 7744 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import RelationshipStore from "RelationshipStore" /* 5248 */;
-import UserStore from "UserStore" /* 1388 */;
-import Constants from "Constants" /* 1072 */;
+import RelationshipStore from "RelationshipStore" /* 4855 */;
+import UserStore from "UserStore" /* 1386 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -97,12 +97,12 @@ function handleRelationshipAddError(error, SHOW_ALWAYS, userTag) {
               }
               humanizeAbortCodeResult = humanizeAbortCode(num, userTag);
             } else {
-              const intl = tmp19(1113).intl;
-              humanizeAbortCodeResult = intl.string(tmp19(1113).t.paDJBM);
+              const intl = tmp19(1112).intl;
+              humanizeAbortCodeResult = intl.string(tmp19(1112).t.paDJBM);
             }
             obj = { title: intl2.string(intl10.t["6moJ8s"]), body: humanizeAbortCodeResult, confirmText: intl3.string(intl10.t.BddRzS) };
-            intl2 = tmp19(1113).intl;
-            intl3 = tmp19(1113).intl;
+            intl2 = tmp19(1112).intl;
+            intl3 = tmp19(1112).intl;
             const tmp19Result2 = ContextMenuActionCreators;
             tmp19Result2.closeContextMenu();
             const obj3 = AlertActionCreatorsDefault;
@@ -251,12 +251,12 @@ let obj2 = {
     }
     dependencyMap = UserStore.getUser(userId);
     const relationshipType = RelationshipStore.getRelationshipType(userId);
-    const HTTP = type(1285).HTTP;
+    const HTTP = type(1284).HTTP;
     const request = { url: closure_8.USER_RELATIONSHIP(userId), body, context, oldFormErrors: true, rejectWithError: obj3.rejectWithMigratedError() };
     const put = HTTP.put;
     body = { type, from_friend_suggestion: fromFriendSuggestion, confirm_stranger_request: confirmStrangerRequest };
     const merged = Object.assign(captchaPayload);
-    obj3 = type(1285);
+    obj3 = type(1284);
     const putResult = put(request);
     const nextPromise = putResult.then(() => {
       if (type === constants.BLOCKED) {

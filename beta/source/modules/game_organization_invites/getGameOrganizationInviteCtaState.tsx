@@ -1,30 +1,28 @@
-// Module ID: 15588
-// Function ID: 15589
+// Module ID: 14320
+// Function ID: 14321
 // Name: getGameOrganizationInviteCtaState
-// Dependencies: [1113, 2565, 2]
+// Dependencies: [1112, 2639, 2]
 // Exports: default
 
-// Module 15588 (getGameOrganizationInviteCtaState)
-import intl6 from "intl" /* 1113 */;
-import _modDef2565 from "module_2565" /* 2565 */;
+// Module 14320 (getGameOrganizationInviteCtaState)
+import intl6 from "intl" /* 1112 */;
+import _modDef2639 from "module_2639" /* 2639 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/game_organization_invites/getGameOrganizationInviteCtaState.tsx");
 
-export default function getGameOrganizationInviteCtaState(noun) {
-  let intl;
+export default function getGameOrganizationInviteCtaState(displayNoun) {
   let intl2;
-  let intl3;
   let intl4;
   let intl5;
   let obj;
   let obj5;
   let obj7;
-  noun = noun.noun;
-  if (noun.accepted) {
+  let str = displayNoun.displayNoun;
+  if (displayNoun.accepted) {
     let obj3;
-    if (noun.canGoToGuild) {
-      const obj2 = { kind: "go_to_server", label: intl5.string(_modDef2565.H1wMHV), actionable: true };
+    if (displayNoun.canGoToGuild) {
+      const obj2 = { kind: "go_to_server", label: intl5.string(_modDef2639.H1wMHV), actionable: true };
       intl5 = intl6.intl;
       obj3 = obj2;
     } else {
@@ -33,18 +31,29 @@ export default function getGameOrganizationInviteCtaState(noun) {
     }
     obj = obj3;
   } else if (tmp2) {
-    const obj4 = { kind: "full", label: intl3.formatToPlainString(_modDef2565.rMimTG, obj5), actionable: false };
-    intl3 = intl6.intl;
+    const intl3 = intl6.intl;
+    const formatToPlainString2 = intl3.formatToPlainString;
+    const rMimTG = _modDef2639.rMimTG;
+    if (str == null) {
+      str = "other";
+    }
+    const obj4 = { kind: "full", label: formatToPlainString2(rMimTG, obj5), actionable: false };
     obj = obj4;
-    obj5 = { noun };
+    obj5 = { displayNoun: str };
   } else if (tmp) {
-    const obj6 = { kind: "awaiting", label: intl2.string(_modDef2565.OkMPbI), actionable: false };
+    const obj6 = { kind: "awaiting", label: intl2.string(_modDef2639.OkMPbI), actionable: false };
     intl2 = intl6.intl;
     obj = obj6;
   } else {
-    obj = { kind: "join", label: intl.formatToPlainString(_modDef2565["Cz/ZUM"], obj7), actionable: true };
-    intl = intl6.intl;
-    obj7 = { noun };
+    const intl = intl6.intl;
+    const formatToPlainString = intl.formatToPlainString;
+    let str2 = str;
+    const prop = _modDef2639["Cz/ZUM"];
+    if (str == null) {
+      str2 = "other";
+    }
+    obj = { kind: "join", label: formatToPlainString(prop, obj7), actionable: true };
+    obj7 = { displayNoun: str2 };
   }
   return obj;
 };

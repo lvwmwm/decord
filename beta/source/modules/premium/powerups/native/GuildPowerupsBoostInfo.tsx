@@ -1,18 +1,18 @@
-// Module ID: 10760
-// Function ID: 10761
+// Module ID: 13443
+// Function ID: 13444
 // Name: GuildPowerupsBoostInfo
-// Dependencies: [17, 5514, 21, 5306, 575, 10761, 9981, 5919, 2]
+// Dependencies: [17, 8332, 21, 4913, 575, 13444, 9370, 5504, 2]
 // Exports: default
 
-// Module 10760 (GuildPowerupsBoostInfo)
+// Module 13443 (GuildPowerupsBoostInfo)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import GuildPowerupsConstants from "GuildPowerupsConstants" /* 5514 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import BoostGemIcon2 from "BoostGemIcon" /* 9981 */;
-import getGuildPowerupsBoostInfoText from "getGuildPowerupsBoostInfoText" /* 10761 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import GuildPowerupsConstants from "GuildPowerupsConstants" /* 8332 */;
+import BoostGemIcon2 from "BoostGemIcon" /* 9370 */;
+import getGuildPowerupsBoostInfoText from "getGuildPowerupsBoostInfoText" /* 13444 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;
@@ -47,7 +47,7 @@ export default function GuildPowerupsBoostInfo(arg0) {
   }
   items = [hasOwnProperty(BoostGemIcon, { size: "sm", color: TEXT_MUTED }), ];
   let str = "text-subtle";
-  const Text = tmp2(5919).Text;
+  const Text = tmp2(5504).Text;
   if (type === tmp8.AVAILABLE) {
     str = "text-strong";
   }

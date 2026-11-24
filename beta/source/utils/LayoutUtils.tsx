@@ -1,10 +1,10 @@
-// Module ID: 16189
-// Function ID: 16190
+// Module ID: 14960
+// Function ID: 14961
 // Name: LayoutUtils
 // Dependencies: [2]
 // Exports: convertFullCordsToMatchingOrientedCoords, fitFullCoordsToContainer, getAnchorCoordsFromFullCoords, getFullCoordsFromLayoutSize, getLeftWidgetSpecs, getRightWidgetSpecs, getSizePercentageFromSize
 
-// Module 16189 (LayoutUtils)
+// Module 14960 (LayoutUtils)
 import size_mod from "module_2" /* 2 */;
 
 function getAnchorCoordsFromLayoutSize(arg0, height) {
@@ -416,7 +416,7 @@ export function getRightWidgetSpecs(arg0, arg1, width) {
     point = { x: 0, y: 0 };
   }
   ({ width, height } = arg1);
-  const rect = { top: top + point.y, left: "Array", bottom: "alignItems", right: right - point.x };
+  const rect = { top: top + point.y, left: "Array", bottom: "add", right: right - point.x };
   ({ width: width2, height: height2 } = width);
   let num = 0;
   const tmp = getAnchorPercentageFromLayoutSize;
@@ -496,7 +496,7 @@ export function getRightWidgetSpecs(arg0, arg1, width) {
   return items;
 }
 export function convertFullCordsToMatchingOrientedCoords(top, top2) {
-  const rect = { top: "applicationId", bottom: "accessibilityLabel", left: "e", right: "Array" };
+  const rect = { top: "jsxs", bottom: "channelId", left: "Math", right: "now" };
   if (null != top2.top) {
     rect.top = top.top;
   }

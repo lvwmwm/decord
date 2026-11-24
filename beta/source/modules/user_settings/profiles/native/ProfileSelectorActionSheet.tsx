@@ -1,24 +1,24 @@
-// Module ID: 17205
-// Function ID: 17206
+// Module ID: 15973
+// Function ID: 15974
 // Name: ProfileSelectorActionSheet
-// Dependencies: [32, 19, 17, 5177, 6946, 17204, 21, 5306, 575, 7747, 1113, 11739, 7720, 504, 6952, 5903, 6261, 5315, 5542, 5556, 7913, 7825, 5919, 7888, 2]
+// Dependencies: [32, 19, 17, 4784, 6550, 15972, 21, 4913, 575, 7349, 1112, 9604, 7322, 504, 6556, 5488, 5863, 4922, 5127, 5141, 7515, 7427, 5504, 7490, 2]
 // Exports: default
 
-// Module 17205 (ProfileSelectorActionSheet)
+// Module 15973 (ProfileSelectorActionSheet)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl5 from "intl" /* 1113 */;
-import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 5315 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
-import GuildIcon from "GuildIcon" /* 7720 */;
-import TableRadioRow2 from "TableRadioRow" /* 7747 */;
-import ProfileSelectorActionSheetConstants from "ProfileSelectorActionSheetConstants" /* 17204 */;
+import intl5 from "intl" /* 1112 */;
+import AccessibilityAnnouncer2 from "AccessibilityAnnouncer" /* 4922 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
+import GuildIcon from "GuildIcon" /* 7322 */;
+import TableRadioRow2 from "TableRadioRow" /* 7349 */;
+import ProfileSelectorActionSheetConstants from "ProfileSelectorActionSheetConstants" /* 15972 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5177 */;
-import SortedGuildStore from "SortedGuildStore" /* 6946 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import SortedGuildStore from "SortedGuildStore" /* 6550 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const GuildIconDefault = GuildIcon;
@@ -71,14 +71,14 @@ let closure_13 = react.memo(function ProfileOptionRow(option) {
     }
   };
   if ("main" === option.type) {
-    const intl = tmp2(1113).intl;
-    name = intl.string(tmp2(1113).t["2p07FR"]);
+    const intl = tmp2(1112).intl;
+    name = intl.string(tmp2(1112).t["2p07FR"]);
   } else {
     name = option.guild.name;
   }
   if ("main" === option.type) {
     const obj2 = { size: "md", color: nativeDefault.colors.ICON_DEFAULT };
-    const ClydeIcon = tmp2(11739).ClydeIcon;
+    const ClydeIcon = tmp2(9604).ClydeIcon;
     tmpResult = tmp(ClydeIcon, obj2);
   } else {
     const obj3 = { guild: option.guild, size: GuildIcon.GuildIconSizes.XSMALL };

@@ -1,551 +1,171 @@
-// Module ID: 14529
-// Function ID: 14530
+// Module ID: 12771
+// Function ID: 12772
 // Name: CheckpointFriendsStatsScreen
-// Dependencies: [5, 32, 19, 17, 5307, 1388, 14255, 6367, 21, 575, 5541, 1655, 1360, 5306, 1414, 504, 14530, 14531, 14272, 5362, 6735, 5443, 14273, 1113, 3317, 3285, 6008, 14514, 14508, 8069, 14481, 13050, 13131, 1496, 5486, 1644, 5538, 14532, 14262, 6004, 1187, 14253, 11661, 7937, 11817, 6021, 2]
+// Dependencies: [32, 19, 17, 4914, 12128, 5969, 12515, 21, 575, 4913, 12727, 504, 12772, 12773, 12509, 4969, 6338, 12774, 1653, 1494, 12776, 12510, 1112, 3440, 12541, 12777, 3408, 12778, 2]
 // Exports: default
 
-// Module 14529 (CheckpointFriendsStatsScreen)
+// Module 12771 (CheckpointFriendsStatsScreen)
+import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl10 from "intl" /* 1113 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import _modDef3285 from "module_3285" /* 3285 */;
-import _modDef3317 from "module_3317" /* 3317 */;
-import timingPresets from "timingPresets" /* 5541 */;
-import FriendsIcon from "FriendsIcon" /* 6008 */;
-import AnalyticsLocationDefault from "AnalyticsLocation" /* 7937 */;
-import ChatIcon from "ChatIcon" /* 8069 */;
-import utils_openGiftModal from "utils/openGiftModal" /* 11661 */;
-import MicrophoneIcon from "MicrophoneIcon" /* 13050 */;
-import Tracking from "Tracking" /* 14253 */;
-import CheckpointTextDefault from "CheckpointText" /* 14273 */;
-import CheckpointStatNumberDefault from "CheckpointStatNumber" /* 14481 */;
-import CheckpointNumberUtils from "CheckpointNumberUtils" /* 14508 */;
-import CheckpointDisplayTextDefault from "CheckpointDisplayText" /* 14514 */;
-import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
+import CheckpointConstants from "CheckpointConstants" /* 5969 */;
+import useIsCheckpointWide from "useIsCheckpointWide" /* 12727 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5307 */;
-import UserStore from "UserStore" /* 1388 */;
-import CheckpointStore from "CheckpointStore" /* 14255 */;
-import CheckpointConstants from "CheckpointConstants" /* 6367 */;
+import AccessibilityStore from "AccessibilityStore" /* 4914 */;
+import CheckpointStore from "CheckpointStore" /* 12128 */;
+import CheckpointTransitionConstants from "CheckpointTransitionConstants" /* 12515 */;
 import Fragment from "Fragment" /* 21 */;
-import PlatformUtils from "utils/PlatformUtils" /* 1360 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
-const require = globalThis.__r;
-let _require, closure_2, dependencyMap;
+let enter, exit;
 
-let Easing;
-let closure_14;
+let c10;
+let c9;
+let closure_12;
 let map1;
-let metroImportDefault;
-let metroRequire;
-let obj10;
-let obj11;
-let obj12;
-let obj13;
-let obj14;
+let metroImportAll;
+let obj2;
 let obj3;
+let obj4;
 let obj5;
-let obj6;
-let obj7;
-let obj8;
-let obj9;
 let rect;
-function FriendsHeader(title) {
-  let description;
-  let items;
-  let items1;
-  let items2;
-  let stringResult;
-  let titleAccessibilityLabel;
-  title = title.title;
-  ({ titleAccessibilityLabel, description } = title);
-  const tmp = closure_19();
-  const obj3 = { style: tmp.title, children: items };
-  items = [, ];
-  obj = { style: tmp.header, children: items2 };
-  obj2 = { style: tmp.heading, children: items1 };
-  const obj4 = { size: "refresh_sm", color: CHECKPOINT_PRIMARY };
-  items[0] = map1(FriendsIcon.FriendsIcon, obj4);
-  const obj5 = { isStepHeading: true, variant: "heading-sm/semibold", style: tmp.titleText, children: stringResult.toLocaleUpperCase() };
-  const tmp2 = CheckpointTextDefault;
-  const intl = intl10.intl;
-  stringResult = intl.string(_modDef3285.ZQakPR);
-  items[1] = map1(tmp2, obj5);
-  items1 = [gesture(metroImportDefault, obj3), ];
-  const obj6 = { accessibilityLabel: titleAccessibilityLabel, children: title.toLocaleUpperCase() };
-  const tmp3 = CheckpointDisplayTextDefault;
-  items1[1] = map1(tmp3, obj6);
-  items2 = [gesture(metroImportDefault, obj2), map1(CheckpointTextDefault, { variant: "heading-lg/medium", children: description })];
-  return gesture(metroImportDefault, obj);
-}
-function SidekickStats(sidekick) {
-  let intl2;
-  let items;
-  let items1;
-  let items2;
-  let obj6;
-  sidekick = sidekick.sidekick;
-  const tmp = closure_19();
-  const rounded = Math.round(sidekick.numMessagesSent);
-  const rounded1 = Math.round(sidekick.numVoiceMinutes);
-  obj = CheckpointNumberUtils;
-  const result = obj.formatCheckpointStatNumber(rounded);
-  obj2 = CheckpointNumberUtils;
-  const result1 = obj2.formatCheckpointStatNumber(rounded1);
-  const intl = intl10.intl;
-  const formatToPlainString = intl.formatToPlainString;
-  const obj3 = { duration: intl2.formatToPlainString(_modDef3317.x7PkHm, { minutes: rounded1 }) };
-  const lw35aH = _modDef3317.lw35aH;
-  intl2 = intl10.intl;
-  const obj4 = { style: tmp.stats, children: items1 };
-  const obj5 = { accessible: true, accessibilityLabel: obj6.formatCheckpointStatAccessibilityLabel("messages", rounded), style: tmp.stat, children: items };
-  const formatToPlainStringResult = formatToPlainString(lw35aH, obj3);
-  items = [, ];
-  obj6 = CheckpointNumberUtils;
-  const obj7 = { size: "md", color: CHECKPOINT_PRIMARY };
-  items[0] = map1(ChatIcon.ChatIcon, obj7);
-  items[1] = map1(CheckpointStatNumberDefault, { value: result });
-  items1 = [gesture(metroImportDefault, obj5), ];
-  const obj8 = { accessible: true, accessibilityLabel: formatToPlainStringResult, style: tmp.stat, children: items2 };
-  items2 = [, ];
-  const obj9 = { size: "md", color: CHECKPOINT_PRIMARY };
-  items2[0] = map1(MicrophoneIcon.MicrophoneIcon, obj9);
-  items2[1] = map1(CheckpointStatNumberDefault, { value: result1 });
-  items1[1] = gesture(metroImportDefault, obj8);
-  return gesture(metroImportDefault, obj4);
-}
-function SidekickMessageInput(user) {
-  let View;
-  let _undefined;
-  let c3;
-  let c4;
-  let disabled;
-  let intl2;
-  let intl3;
-  let items6;
-  let items7;
-  let obj12;
-  let obj14;
-  let obj15;
-  let obj7;
-  let stringResult;
-  let tmp18;
-  let tmp19;
-  let tmp20;
-  let tmp21;
-  let tmp23;
-  let tmp24;
-  let tmp25;
-  let tmp26;
-  let tmp27;
-  let tmp28;
-  let tmp29;
-  let tmp3;
-  let tmp37;
-  let tmp38;
-  let tmp5;
-  let tmp7;
-  let value;
-  user = user.user;
-  value = undefined;
-  c3 = undefined;
-  _slicedToArray = undefined;
-  let ref;
-  let closure_7;
-  obj = function _handleSend() {
-    let id;
-    obj = _asyncToGenerator(async (arg0, value) => {
-      let closure_0;
-      if (c4 === 2) {
-        c4 = 3;
-        throw new TypeError("Generator functions may not be called on executing generators");
-      } else if (tmp3 === 3) {
-        if (arg0 === 1) {
-          throw value;
-        } else if (arg0 === 2) {
-          const obj3 = { value, done: true };
-          return obj3;
-        } else {
-          return { value: "HermesInternal", done: null };
-        }
-      } else {
-        try {
-          c4 = 2;
-          if (0 === c1) {
-            if (arg0 === 1) {
-              c4 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c4 = 3;
-              const obj4 = { value, done: true };
-              return obj4;
-            } else {
-              const tmp30 = closure_2_7;
-              if (tmp30) {
-                _undefined(true);
-                c3 = 2;
-                c1 = 3;
-                c4 = 1;
-                const obj5 = { value: obj2.sendSidekickMessage(importDefault, id.id), done: false };
-                obj2 = tmp(closure_2[38]);
-                return obj5;
-              }
-            }
-          } else if (1 === c1) {
-            c3 = 0;
-            closure_128_4(false);
-            throw closure_2;
-          } else {
-            if (2 === c1) {
-              c3 = 1;
-              const presentError = tmp(closure_2[39]).presentError;
-              const tmp16 = tmp(closure_2[39]);
-              const intl = tmp(closure_2[23]).intl;
-              presentError(intl.string(tmp(closure_2[23]).t.fEptJP));
-            } else if (arg0 === 1) {
-              c4 = 3;
-              throw value;
-            } else if (arg0 === 2) {
-              c3 = 0;
-              closure_128_4(false);
-              c4 = 3;
-              obj = { value, done: true };
-              return obj;
-            } else {
-              closure_128_2(undefined);
-              closure_128_3(true);
-              c3 = 1;
-            }
-            c3 = 0;
-            closure_128_4(false);
-          }
-          c4 = 3;
-          return { value: "HermesInternal", done: null };
-        } catch (tmp37) {
-          closure_2 = tmp37;
-          if (0 === c3) {
-            c4 = 3;
-            throw tmp37;
-          } else if (1 === tmp39) {
-            c1 = 1;
-          } else {
-            c1 = 2;
-          }
-        }
-      }
-    });
-    return obj(...arguments);
-  };
-  const username = user.username;
-  let tmp = closure_19();
-  obj = ref;
-  [value, tmp3] = ref.useState(undefined);
-  dependencyMap = tmp3;
-  [tmp5, c3] = _slicedToArray(ref.useState(false), 2);
-  const tmp4 = _slicedToArray(ref.useState(false), 2);
-  [tmp7, c4] = _slicedToArray(ref.useState(false), 2);
-  const tmp6 = _slicedToArray(ref.useState(false), 2);
-  ref = ref.useRef(null);
-  obj2 = user(1655);
-  const sharedValue = obj2.useSharedValue(0);
-  const tmp13 = value(13131)();
-  let obj3 = user(1360);
-  const isIOSResult = obj3.isIOS();
-  size = value(1496)({ ignoreKeyboard: true });
-  const height = size.height;
-  const bound = Math.min(size.width, height);
-  let messageInputContainerLarge = bound > user(5486).WINDOW_SIZE_THRESHOLD_LARGE;
-  let obj4 = user(1655);
-  const sharedValue1 = obj4.useSharedValue(0);
-  let items = [closure_22, sharedValue1, , ];
-  const useKeyboardHandler = user(1644).useKeyboardHandler;
-  items[2] = user(5538).withTiming;
-  items[3] = obj;
-  let c0;
-  let c1;
-  let c2;
-  [tmp18, tmp19, tmp20, tmp21] = items;
-  let obj5 = { onStart: CheckpointFriendsStatsScreenTsx1 };
-  class CheckpointFriendsStatsScreenTsx1 {
-    constructor(height) {
-      const result = _undefined.set(_undefined2(height.height, c2));
-    }
-  }
-  const items1 = [tmp19, tmp20, tmp21];
-  CheckpointFriendsStatsScreenTsx1.__closure = items1;
-  CheckpointFriendsStatsScreenTsx1.__workletHash = 16087244587333;
-  CheckpointFriendsStatsScreenTsx1.__initData = tmp18;
-  useKeyboardHandler(obj5, []);
-  const items2 = [closure_23, isIOSResult, tmp13, sharedValue1, PX_16, height, sharedValue];
-  c0 = undefined;
-  c1 = undefined;
-  c2 = undefined;
-  c3 = undefined;
-  _slicedToArray = undefined;
-  let c5;
-  [tmp23, tmp24, tmp25, tmp26, tmp27, tmp28, tmp29] = items2;
-  const tmp9Result = user(1655);
-  class CheckpointFriendsStatsScreenTsx2 {
-    constructor() {
-      let items;
-      const tmp = c0;
-      if (tmp) {
-        value = _undefined.get();
-      } else {
-        value = _undefined2.get();
-      }
-      const sum = value + c3;
-      obj = { transform: items };
-      items = [{ translateY: -Math.max(0, sum - (c4 - _undefined3.get())) }];
-      ({ translateY: -Math.max(0, sum - (c4 - _undefined3.get())) });
-      return obj;
-    }
-  }
-  const items3 = [tmp24, tmp25, tmp26, tmp27, tmp28, tmp29];
-  CheckpointFriendsStatsScreenTsx2.__closure = items3;
-  CheckpointFriendsStatsScreenTsx2.__workletHash = 4013262097384;
-  CheckpointFriendsStatsScreenTsx2.__initData = tmp23;
-  const items4 = [sharedValue];
-  const animatedStyle = tmp9Result.useAnimatedStyle(CheckpointFriendsStatsScreenTsx2);
-  const callback = obj.useCallback(() => {
-    const current = ref.current;
-    if (current != null) {
-      current.measureInWindow((arg0, arg1, arg2, arg3) => sharedValue.set(arg1 + arg3));
-    }
-  }, items4);
-  let tmp33 = null != value;
-  const tmp32 = value(14532)(user.id);
-  if (tmp33) {
-    tmp33 = value.length > 0;
-  }
-  if (tmp33) {
-    tmp33 = value.length <= 250;
-  }
-  if (tmp33) {
-    tmp33 = !tmp5;
-  }
-  if (tmp33) {
-    tmp33 = !tmp7;
-  }
-  closure_7 = tmp33;
-  let tmp35Result = null;
-  if (tmp32) {
-    const obj6 = { ref, onLayout: callback, children: tmp37(View, obj7) };
-    tmp37 = closure_14;
-    const items5 = [tmp.messageInputContainer, , ];
-    View = tmp12(1655).View;
-    if (messageInputContainerLarge) {
-      messageInputContainerLarge = tmp.messageInputContainerLarge;
-    }
-    obj7 = { style: items5, children: items6 };
-    items5[1] = messageInputContainerLarge;
-    items5[2] = animatedStyle;
-    const obj8 = { multiline: true, onFocus: callback, onChangeText: tmp3, style: tmp.messageInput, value, maxLength: 250, editable: tmp38, placeholderTextColor: CHECKPOINT_WHITE, placeholder: stringResult, returnKeyType: "done", submitBehavior: "blurAndSubmit" };
-    tmp38 = !tmp5;
-    const TextInput = tmp9(1187).TextInput;
-    if (!tmp5) {
-      tmp38 = !tmp7;
-    }
-    const tmp39 = CHECKPOINT_WHITE;
-    let intl = tmp9(1113).intl;
-    if (tmp5) {
-      stringResult = intl.string(tmp9(1113).t.fjcCk5);
-    } else {
-      const obj9 = { name: username };
-      stringResult = intl.formatToPlainString(tmp9(1113).t["0ZQw/X"], obj9);
-    }
-    items6 = [tmp35(TextInput, obj8), ];
-    const obj10 = { style: tmp.messageInputActions, children: items7 };
-    const obj11 = {
-      onPress: function handleGift() {
-          let items;
-          obj = Tracking;
-          const result = obj.trackCheckpoint2026GiftCtaClicked(user.id);
-          obj2 = { recipientUserId: user.id, analyticsLocations: items };
-          const openGiftModal = utils_openGiftModal.openGiftModal;
-          items = [, ];
-          utils_openGiftModal;
-          items[0] = AnalyticsLocationDefault.CHECKPOINT;
-          items[1] = AnalyticsLocationDefault.CHECKPOINT_SIDEKICK;
-          openGiftModal(obj2);
-        },
-      accessibilityRole: "button",
-      accessibilityLabel: intl2.string(user(1113).t.Ve9Ge6),
-      children: closure_13(user(11817).GiftIcon, obj12)
-    };
-    intl2 = tmp9(1113).intl;
-    obj12 = { size: "refresh_sm", color: CHECKPOINT_PRIMARY };
-    items7 = [tmp35(sharedValue, obj11), ];
-    const obj13 = {
-      onPress: function handleSend() {
-          return obj(...arguments);
-        },
-      disabled: !tmp33,
-      style: disabled,
-      accessibilityRole: "button",
-      accessibilityLabel: intl3.string(user(1113).t.oeb1vg),
-      accessibilityState: obj14,
-      children: closure_13(user(6021).SendMessageIcon, obj15)
-    };
-    disabled = undefined;
-    const tmp41 = sharedValue;
-    const tmp42 = CHECKPOINT_PRIMARY;
-    if (!tmp33) {
-      disabled = tmp.disabled;
-    }
-    intl3 = tmp9(1113).intl;
-    obj14 = { disabled: !tmp33 };
-    obj15 = { size: "refresh_sm", color: tmp42 };
-    items7[1] = closure_13(tmp41, obj13);
-    items6[1] = tmp37(closure_7, obj10);
-    tmp35Result = tmp35(tmp36, obj6);
-  }
-  return tmp35Result;
-}
+let unpackModuleId;
 let _slicedToArray = _slicedToArray_mod;
-({ Pressable: metroRequire, View: metroImportDefault } = react_native);
-const CHECKPOINT_PRIMARY = CheckpointConstants.CHECKPOINT_PRIMARY;
-const CHECKPOINT_WHITE = CheckpointConstants.CHECKPOINT_WHITE;
-({ jsx: map1, jsxs: closure_14 } = Fragment);
-const PX_16 = nativeDefault.space.PX_16;
-let obj = { duration: timingPresets.timingStandardDuration, easing: Easing.bezier(0.2, 0, 0, 1) };
-Easing = _mod1655.Easing;
-let closure_17 = { "Avatar01/Stroke": "#000000", "Avatar01/Fill": CHECKPOINT_PRIMARY, "Avatar02/Stroke": "#000000", "Avatar02/Fill": CHECKPOINT_PRIMARY, "Avatar03/Stroke": "#000000", "Avatar03/Fill": CHECKPOINT_PRIMARY, "Avatar04/Stroke": "#000000", "Avatar04/Fill": CHECKPOINT_PRIMARY, "Avatar05/Stroke": "#000000", "Avatar05/Fill": CHECKPOINT_PRIMARY, ConnectorColor: CHECKPOINT_PRIMARY };
-let tmp5;
-if (PlatformUtils.isIOS()) {
-  let obj2 = { "unifont-17.0.03": obj3 };
-  obj3 = { source: { fileName: "ggsans-800-extrabold.ttf" } };
-  tmp5 = obj2;
-}
-obj2 = tmp5;
+const View = react_native.View;
+const CHECKPOINT_NAV_HEIGHT = CheckpointConstants.CHECKPOINT_NAV_HEIGHT;
+({ CHECKPOINT_FRIENDS_CONTENT_FADE_OUT: metroImportAll, CHECKPOINT_SIDEKICK_CONTENT_FADE_IN: c9, CHECKPOINT_FRIENDS_CONTENT_FADE_IN: c10 } = CheckpointTransitionConstants);
+({ jsx: unpackModuleId, jsxs: closure_12, Fragment: map1 } = Fragment);
+const PX_32 = nativeDefault.space.PX_32;
 let createStyles = createStyles_mod;
-let obj4 = { container: obj5, animation: rect, transition: { position: "absolute", top: 0, left: 0, right: 0, bottom: 0, justifyContent: "center" }, header: obj6, heading: obj7, title: obj8, titleText: { flexShrink: 1 }, sidekick: obj9, sidekickDetails: obj10, stats: obj11, stat: obj12, messageInputContainer: obj13, messageInputContainerLarge: { height: 128 }, messageInput: { flex: 1, alignSelf: "stretch", padding: 0, color: CHECKPOINT_PRIMARY, textAlignVertical: "top" }, messageInputActions: obj14, disabled: { opacity: 0.5 } };
-obj5 = { width: "100%", flexGrow: 1, justifyContent: "flex-end", paddingBottom: nativeDefault.space.PX_64 };
+let obj = { container: obj2, animation: rect, transition: { position: "absolute", top: 0, left: 0, right: 0, bottom: 0, justifyContent: "center" }, sidekick: obj3, sidekickDetails: obj4, wideContainer: obj5, wideScenePane: { width: "50%", alignSelf: "stretch", alignItems: "center", justifyContent: "center", paddingRight: PX_32 }, wideCopy: { width: "50%", paddingLeft: PX_32, paddingVertical: CHECKPOINT_NAV_HEIGHT }, wideTransition: { position: "absolute", top: 0, left: PX_32, right: 0, bottom: 0, justifyContent: "center" } };
+obj2 = { width: "100%", flexGrow: 1, justifyContent: "flex-end", paddingBottom: nativeDefault.space.PX_64 };
 createStyles = createStyles.createStyles;
 rect = { position: "absolute", left: -nativeDefault.space.PX_24, right: -nativeDefault.space.PX_24 };
-obj6 = { gap: nativeDefault.space.PX_12 };
-obj7 = { gap: nativeDefault.space.PX_8 };
-obj8 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_4 };
-obj9 = { gap: nativeDefault.space.PX_32 };
-obj10 = { gap: nativeDefault.space.PX_24 };
-obj11 = { flexDirection: "row", flexWrap: "wrap", columnGap: nativeDefault.space.PX_40, rowGap: nativeDefault.space.PX_8 };
-obj12 = { flexDirection: "row", alignItems: "center", gap: nativeDefault.space.PX_8 };
-obj13 = { height: 96, padding: nativeDefault.space.PX_12, gap: nativeDefault.space.PX_8, borderWidth: 2, borderColor: CHECKPOINT_PRIMARY, backgroundColor: nativeDefault.colors.BLACK };
-obj14 = { flexDirection: "row", justifyContent: "flex-end", gap: nativeDefault.space.PX_12 };
-let closure_19 = createStyles(obj4);
-let closure_22 = { code: "(function CheckpointFriendsStatsScreenTsx1(e){let[androidKeyboardHeight,withTiming,ANDROID_KEYBOARD_TIMING]=this.__closure;androidKeyboardHeight.set(withTiming(e.height,ANDROID_KEYBOARD_TIMING));})" };
-let closure_23 = { code: "(function CheckpointFriendsStatsScreenTsx2(){let[isIOSKeyboard,keyboardHeight,androidKeyboardHeight,MESSAGE_INPUT_KEYBOARD_GAP,windowHeight,containerBottom]=this.__closure;const height=isIOSKeyboard?keyboardHeight.get():androidKeyboardHeight.get();const overlap=height+MESSAGE_INPUT_KEYBOARD_GAP-(windowHeight-containerBottom.get());return{transform:[{translateY:-Math.max(0,overlap)}]};})" };
+obj3 = { gap: nativeDefault.space.PX_32 };
+obj4 = { gap: nativeDefault.space.PX_24 };
+obj5 = { flexDirection: "row", alignItems: "center", alignSelf: "center", width: "100%", maxWidth: useIsCheckpointWide.CHECKPOINT_WIDE_MAX_WIDTH };
+let closure_15 = createStyles(obj);
 let size = size_mod;
 let result = size.fileFinishedImporting("modules/checkpoint/native/components/screens/stats/CheckpointFriendsStatsScreen.tsx");
 
 export default function CheckpointFriendsStatsScreen(arg0) {
-  let CheckpointFriendsRive;
-  let closure_0;
-  let currentUser;
+  let animationState;
+  let c8;
+  let closure_3;
+  let closure_9;
   let intl;
   let intl2;
+  let intl3;
   let intl4;
   let intl5;
-  let intl8;
-  let items5;
-  let items6;
-  let items8;
+  let isTransitioning;
+  let items10;
+  let items11;
+  let items12;
+  let items13;
+  let items14;
+  let items15;
+  let items7;
   let items9;
-  let listFormat;
+  let obj12;
+  let obj17;
+  let obj20;
+  let obj21;
   let obj4;
-  let obj5;
-  let obj7;
   let onNextStep;
   let onPreviousStep;
   let route;
-  let str4;
-  let stringResult;
-  let stringResult1;
+  let showsSidekickPair;
+  let size1;
+  let tmp12;
   let tmp13;
-  let tmp14;
-  let tmp22Result10;
-  let useReducedMotion;
-  let userAvatarURL;
-  let userAvatarURL1;
-  let userAvatarURL2;
-  let userAvatarURL3;
-  let userAvatarURL4;
+  let tmp21;
+  let tmp22;
+  let tmp23Result10;
+  let tmp23Result14;
+  let tmp28;
+  let tmp2Result23;
+  let tmp2Result24;
+  let tmp36Result;
+  let tmp36Result7;
+  let tmp54;
+  let user1;
+  let user2;
+  let user3;
   ({ route, onNextStep, onPreviousStep } = arg0);
-  _require = undefined;
+  showsSidekickPair = undefined;
   let width;
   let height;
-  let tmp = closure_19();
-  const items = [CheckpointStore];
-  obj = require("get initialized");
+  _slicedToArray = undefined;
+  let sidekickMessageInputKeyboardOffset;
+  let animatedRef;
+  let current;
+  let ref;
+  exit = undefined;
+  enter = undefined;
+  let tmp = closure_15();
+  let obj = showsSidekickPair(height[11]);
+  const items = [ref];
   let stateFromStores = obj.useStateFromStores(items, () => {
-    const stats = CheckpointStore.stats;
+    const stats = ref.stats;
     let users;
     if (stats != null) {
       users = stats.users;
     }
     return users;
   });
-  const tmp4 = CheckpointStore;
+  const tmp4 = ref;
   if (stateFromStores == null) {
     stateFromStores = [];
   }
   const items1 = [tmp4];
-  const tmp2Result = require("get initialized");
+  const tmp2Result = showsSidekickPair(height[11]);
   const stateFromStores1 = tmp2Result.useStateFromStores(items1, () => {
-    const stats = CheckpointStore.stats;
+    const stats = ref.stats;
     let sidekick;
     if (stats != null) {
       sidekick = stats.sidekick;
     }
     return sidekick;
   });
-  const items2 = [UserStore];
-  const tmp2Result9 = require("get initialized");
-  const stateFromStores2 = tmp2Result9.useStateFromStores(items2, () => currentUser.getCurrentUser());
-  const items3 = [AccessibilityStore];
-  const tmp2Result10 = require("get initialized");
-  const stateFromStores3 = tmp2Result10.useStateFromStores(items3, () => useReducedMotion.useReducedMotion);
-  const tmp2Result11 = require("useFriendsAnimationState");
-  const friendsAnimationState = tmp2Result11.useFriendsAnimationState(route, stateFromStores3);
-  const tmp2Result12 = require("useSidekickLeave");
-  const sidekickLeave = tmp2Result12.useSidekickLeave(route, stateFromStores3, onNextStep, onPreviousStep);
-  const tmp10 = friendsAnimationState === require("useFriendsAnimationState").FriendsAnimationState.BEST || friendsAnimationState === require("useFriendsAnimationState").FriendsAnimationState.LEAVE;
-  _require = tmp10;
-  const tmp2Result13 = require("CheckpointScreen");
-  size = tmp2Result13.useCheckpointScreenFrame();
+  const items2 = [current];
+  const tmp2Result13 = showsSidekickPair(height[11]);
+  const stateFromStores2 = tmp2Result13.useStateFromStores(items2, () => current.useReducedMotion);
+  const tmp2Result14 = showsSidekickPair(height[12]);
+  const friendsAnimationState = tmp2Result14.useFriendsAnimationState(route, stateFromStores2);
+  ({ animationState, isTransitioning, showsSidekickPair } = friendsAnimationState);
+  const tmp2Result15 = showsSidekickPair(height[13]);
+  const sidekickLeave = tmp2Result15.useSidekickLeave(route, stateFromStores2, onNextStep, onPreviousStep);
+  const tmp2Result16 = showsSidekickPair(height[14]);
+  size = tmp2Result16.useCheckpointScreenFrame();
   width = size.width;
   height = size.height;
-  const items4 = [tmp10, height, width];
-  const memo = react.useMemo(() => {
+  const items3 = [showsSidekickPair, height, width];
+  const memo = sidekickMessageInputKeyboardOffset.useMemo(() => {
     let num = 0;
     const result = -height / 2;
     const tmp = height;
-    if (closure_0) {
+    if (showsSidekickPair) {
       num = nativeDefault.space.PX_48;
     }
     return { top: result - num, height: width + tmp };
-  }, items4);
-  [tmp13, tmp14] = stateFromStores;
+  }, items3);
+  [tmp12, tmp13] = stateFromStores;
   _slicedToArray(stateFromStores, 2);
-  const tmp2Result14 = require("UserUtils");
-  let str = tmp2Result14.useName(tmp13);
+  const tmp2Result17 = showsSidekickPair(height[15]);
+  let str = tmp2Result17.useName(tmp12);
   if (str == null) {
     str = "";
   }
-  const tmp2Result15 = require("UserUtils");
-  let str2 = tmp2Result15.useName(tmp14);
+  const tmp2Result18 = showsSidekickPair(height[15]);
+  let str2 = tmp2Result18.useName(tmp13);
   if (str2 == null) {
     str2 = "";
   }
-  const toLocaleUpperCaseResult = str.toLocaleUpperCase();
   let user;
-  const toLocaleUpperCaseResult1 = str2.toLocaleUpperCase();
-  const useName = require("UserUtils").useName;
-  require("UserUtils");
+  const useName = tmp2(tmp3[15]).useName;
+  showsSidekickPair(height[15]);
   if (stateFromStores1 != null) {
     user = stateFromStores1.user;
   }
@@ -553,123 +173,175 @@ export default function CheckpointFriendsStatsScreen(arg0) {
   if (str3 == null) {
     str3 = "";
   }
-  let tmp24Result = route === tmp2(tmp3[20]).CheckpointRoute.SIDEKICK || route === tmp2(tmp3[20]).CheckpointRoute.SIDEKICK_LEAVE;
-  if (stateFromStores.length < 2) {
-    let str5 = "twoFriends";
-    if (stateFromStores3) {
-      str5 = "twoFriends-reducedMotion";
+  let tmp16 = route === tmp2(tmp3[16]).CheckpointRoute.SIDEKICK || route === tmp2(tmp3[16]).CheckpointRoute.SIDEKICK_LEAVE;
+  _slicedToArray = tmp16;
+  const tmp2Result20 = showsSidekickPair(height[17]);
+  sidekickMessageInputKeyboardOffset = tmp2Result20.useSidekickMessageInputKeyboardOffset();
+  const tmp2Result21 = showsSidekickPair(height[18]);
+  animatedRef = tmp2Result21.useAnimatedRef();
+  const items4 = [tmp16, sidekickMessageInputKeyboardOffset, animatedRef];
+  const memo1 = obj7.useMemo(() => {
+    let tmp;
+    if (closure_3) {
+      tmp = { containerRef: animatedRef, bottomOffset: sidekickMessageInputKeyboardOffset };
+      const obj = { containerRef: animatedRef, bottomOffset: sidekickMessageInputKeyboardOffset };
     }
-    str4 = str5;
+    return tmp;
+  }, items4);
+  [tmp21, tmp22] = sidekickMessageInputKeyboardOffset.useState({ messageSent: false, isSending: false });
+  _slicedToArray(sidekickMessageInputKeyboardOffset.useState({ messageSent: false, isSending: false }), 2);
+  const tmp24 = width(height[10])();
+  current = tmp24;
+  const tmp2Result22 = showsSidekickPair(height[14]);
+  const checkpointScreenContentHeight = tmp2Result22.useCheckpointScreenContentHeight(true);
+  const width2 = width(tmp3[19])({ ignoreKeyboard: true }).width;
+  ref = obj7.useRef(null);
+  [tmp28, c8] = sidekickMessageInputKeyboardOffset.useState(null);
+  _slicedToArray(sidekickMessageInputKeyboardOffset.useState(null), 2);
+  enter = obj7.useRef(tmp24);
+  const items5 = [tmp24];
+  const layoutEffect = obj7.useLayoutEffect(() => {
+    closure_9.current = current;
+  }, items5);
+  const items6 = [tmp24];
+  const callback = obj7.useCallback(() => {
+    current = ref.current;
+    if (current != null) {
+      current.measureInWindow((x, y, width, height) => {
+        if (ref.current === current) {
+          const obj = { isWide: tmp, frame: size };
+          size = { x, y, width, height };
+          closure_1_8(obj);
+        }
+      });
+    }
+  }, items6);
+  let isWide;
+  if (tmp28 != null) {
+    isWide = tmp28.isWide;
+  }
+  let frame = null;
+  if (isWide === tmp24) {
+    frame = tmp28.frame;
+  }
+  let num = 0;
+  if (null != frame) {
+    const _Math = Math;
+    const _Math2 = Math;
+    num = Math.max(0, Math.min(frame.width - PX_32, checkpointScreenContentHeight));
+  }
+  const obj2 = { isStepHeading: true, variant: "heading-lg/medium", children: intl.string(width(height[23])["6RSp5q"]) };
+  const tmp23Result = width(height[21]);
+  intl = tmp2(tmp3[22]).intl;
+  const tmp38 = closure_11(tmp23Result, obj2);
+  const tmp23Result9 = width(height[24]);
+  const obj3 = { visible: route === showsSidekickPair(height[16]).CheckpointRoute.SQUAD && !isTransitioning, enter: enter2, exit, mountAfterDelay: true, children: closure_11(tmp23Result10, obj4) };
+  obj4 = { title: intl2.string(width(height[26]).OzY5Ns), titleAccessibilityLabel: tmp2Result23.getSquadTitleAccessibilityLabel(items7), description: intl3.string(width(height[23]).EqdLDd) };
+  tmp23Result10 = width(height[25]);
+  intl2 = tmp2(tmp3[22]).intl;
+  items7 = [str3, str, str2];
+  tmp2Result23 = showsSidekickPair(height[25]);
+  intl3 = tmp2(tmp3[22]).intl;
+  const items8 = [closure_11(tmp23Result9, obj3), ];
+  let tmp39Result = null != stateFromStores1;
+  const tmp40 = closure_13;
+  const tmp43 = exit;
+  if (tmp39Result) {
+    const tmp23Result11 = width(height[24]);
+    if (tmp16) {
+      tmp16 = !isTransitioning;
+    }
+    const obj5 = { visible: tmp16, enter, exit: tmp43, mountAfterDelay: true, style: tmp.sidekick, children: items10 };
+    const obj6 = { style: tmp.sidekickDetails, children: items9 };
+    const obj8 = { title: intl4.string(width(height[26])["+uwOHt"]), titleAccessibilityLabel: tmp2Result24.getSidekickTitleAccessibilityLabel(str3), description: intl5.string(width(height[23])["/ctmGw"]) };
+    const tmp23Result12 = width(height[25]);
+    intl4 = tmp2(tmp3[22]).intl;
+    tmp2Result24 = showsSidekickPair(height[25]);
+    intl5 = tmp2(tmp3[22]).intl;
+    items9 = [closure_11(tmp23Result12, obj8), ];
+    const obj9 = { sidekick: stateFromStores1 };
+    items9[1] = closure_11(width(height[27]), obj9);
+    items10 = [closure_12(animatedRef, obj6), ];
+    const obj10 = { user: stateFromStores1.user, username: str3, containerRef: animatedRef, state: tmp21, setState: tmp22 };
+    items10[1] = closure_11(width(height[17]), obj10);
+    tmp39Result = tmp39(tmp23Result11, obj5);
+  }
+  items8[1] = tmp39Result;
+  const tmp39Result2 = closure_12(tmp40, { children: items8 });
+  const tmp23Result13 = width(height[14]);
+  if (tmp24) {
+    const obj11 = { centered: true, keyboardInput: memo1, children: closure_12(animatedRef, obj12, "wide") };
+    obj12 = { style: items11, children: items12 };
+    items11 = [tmp.wideContainer, ];
+    const obj13 = { minHeight: checkpointScreenContentHeight };
+    items11[1] = obj13;
+    const obj14 = { ref, style: tmp.wideScenePane, onLayout: callback, pointerEvents: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: tmp36Result };
+    tmp36Result = null != frame && num > 0;
+    if (tmp36Result) {
+      const obj15 = { style: size1, children: closure_11(tmp23Result14, obj17) };
+      size1 = { width: num, height: num };
+      obj17 = { animationState, sidekickUser: user1, firstUser: tmp12, secondUser: tmp13, twoFriends: stateFromStores.length < 2, isReducedMotion: stateFromStores2, artboardFrame: { centerX: frame.x + (frame.width - PX_32) / 2, centerY: frame.y + frame.height / 2, size: num } };
+      user1 = undefined;
+      tmp23Result14 = width(height[20]);
+      if (stateFromStores1 != null) {
+        user1 = stateFromStores1.user;
+      }
+      tmp36Result = tmp36(tmp63, obj15);
+    }
+    items12 = [closure_11(animatedRef, obj14), ];
+    const obj18 = { style: tmp.wideCopy, children: items13 };
+    items13 = [tmp39Result2, ];
+    let tmp36Result5 = route === tmp2(tmp3[16]).CheckpointRoute.SQUAD_TRANSITION;
+    if (tmp36Result5) {
+      const obj19 = { style: tmp.wideTransition, children: tmp38 };
+      tmp36Result5 = tmp36(tmp63, obj19);
+    }
+    items13[1] = tmp36Result5;
+    items12[1] = closure_12(animatedRef, obj18);
+    obj20 = obj11;
   } else {
-    str4 = "threeFriends";
-    if (stateFromStores3) {
-      str4 = "threeFriends-reducedMotion";
+    obj20 = { keyboardInput: memo1, children: closure_12(animatedRef, obj21, "narrow") };
+    let tmp53;
+    obj21 = { style: tmp.container, children: items15 };
+    if (!tmp24 && width < width2) {
+      tmp53 = ref;
     }
-  }
-  obj2 = { style: tmp.container, children: items6 };
-  const obj3 = { style: items5, pointerEvents: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: closure_13(CheckpointFriendsRive, obj4) };
-  items5 = [tmp.animation, memo];
-  obj4 = { referencedAssets: obj2, defaultViewModelInstance: str4, dataBinding: obj5 };
-  obj5 = { AnimationState: friendsAnimationState, "Avatar01/img": userAvatarURL, "Avatar02/img": userAvatarURL1, "Avatar03/img": userAvatarURL2, "Avatar04/img": userAvatarURL3, "Avatar05/img": userAvatarURL4, "Avatar01/Username": str3.toLocaleUpperCase(), "Avatar02/Username": toLocaleUpperCaseResult1, "Avatar03/Username": toLocaleUpperCaseResult, "Avatar04/Username": str3.toLocaleUpperCase(), twoFriends: stateFromStores.length < 2 };
-  const tmp23 = width(height[18]);
-  CheckpointFriendsRive = tmp2(tmp3[21]).CheckpointFriendsRive;
-  const merged = Object.assign(closure_17);
-  let user1;
-  if (stateFromStores1 != null) {
-    user1 = stateFromStores1.user;
-  }
-  userAvatarURL = undefined;
-  if (null != user1) {
-    let num = 64;
-    const tmp22Result = width(height[14]);
-    userAvatarURL = tmp22Result.getUserAvatarURL(user1, false, 64, "png");
-  }
-  userAvatarURL1 = undefined;
-  if (null != tmp14) {
-    const tmp22Result6 = width(height[14]);
-    userAvatarURL1 = tmp22Result6.getUserAvatarURL(tmp14, false, 64, "png");
-  }
-  userAvatarURL2 = undefined;
-  if (null != tmp13) {
-    const tmp22Result7 = width(height[14]);
-    userAvatarURL2 = tmp22Result7.getUserAvatarURL(tmp13, false, 64, "png");
-  }
-  let user2;
-  if (stateFromStores1 != null) {
-    user2 = stateFromStores1.user;
-  }
-  userAvatarURL3 = undefined;
-  if (null != user2) {
-    const tmp22Result8 = width(height[14]);
-    userAvatarURL3 = tmp22Result8.getUserAvatarURL(user2, false, 64, "png");
-  }
-  userAvatarURL4 = undefined;
-  if (null != stateFromStores2) {
-    const tmp22Result9 = width(height[14]);
-    userAvatarURL4 = tmp22Result9.getUserAvatarURL(stateFromStores2, false, 64, "png");
-  }
-  items6 = [closure_13(closure_7, obj3), , , ];
-  let tmp21Result = route === tmp2(tmp3[20]).CheckpointRoute.SQUAD_TRANSITION;
-  if (tmp21Result) {
-    const obj6 = { style: tmp.transition, children: closure_13(tmp22Result10, obj7) };
-    obj7 = { isStepHeading: true, variant: "heading-lg/medium", children: intl.string(width(height[24])["6RSp5q"]) };
-    tmp22Result10 = width(height[22]);
-    intl = tmp2(tmp3[23]).intl;
-    tmp21Result = tmp21(tmp25, obj6);
-  }
-  items6[1] = tmp21Result;
-  let tmp21Result2 = route === tmp2(tmp3[20]).CheckpointRoute.SQUAD;
-  if (tmp21Result2) {
-    const obj8 = { title: intl2.string(width(height[25]).OzY5Ns), titleAccessibilityLabel: stringResult, description: intl4.string(width(height[24]).EqdLDd) };
-    intl2 = tmp2(tmp3[23]).intl;
-    const items7 = [str3, str, str2];
-    const found = items7.filter((item) => "" !== item.trim());
-    const tmp47 = FriendsHeader;
-    if (0 === found.length) {
-      const intl3 = tmp2(tmp3[23]).intl;
-      stringResult = intl3.string(tmp22(tmp3[25]).OzY5Ns);
+    const obj22 = { ref: tmp53, style: items14, onLayout: tmp54, pointerEvents: "none", accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: tmp36Result7 };
+    items14 = [tmp.animation, memo];
+    tmp54 = undefined;
+    if (!tmp24 && width < width2) {
+      tmp54 = callback;
+    }
+    if (!tmp24 && width < width2) {
+      let tmp36Result6 = null != frame;
+      if (tmp36Result6) {
+        const _Math3 = Math;
+        const obj24 = { animationState, sidekickUser: user2, firstUser: tmp12, secondUser: tmp13, twoFriends: stateFromStores.length < 2, isReducedMotion: stateFromStores2, artboardFrame: { centerX: frame.x + frame.width / 2, centerY: frame.y + frame.height / 2, size: Math.min(frame.width, frame.height) } };
+        user2 = undefined;
+        const tmp23Result15 = width(height[20]);
+        if (stateFromStores1 != null) {
+          user2 = stateFromStores1.user;
+        }
+        tmp36Result6 = tmp36(tmp23Result15, obj24);
+      }
+      tmp36Result7 = tmp36Result6;
     } else {
-      const intl9 = tmp2(tmp3[23]).intl;
-      const formatToPlainString = intl9.formatToPlainString;
-      const _Intl = Intl;
-      const obj9 = { names: listFormat.format(found) };
-      const XB99KC = tmp22(tmp3[24]).XB99KC;
-      const self = this;
-      const self2 = this;
-      listFormat = new Intl.ListFormat(tmp2(tmp3[23]).intl.currentLocale, { type: "conjunction" });
-      stringResult = formatToPlainString(XB99KC, obj9);
+      const obj25 = { animationState, sidekickUser: user3, firstUser: tmp12, secondUser: tmp13, twoFriends: stateFromStores.length < 2, isReducedMotion: stateFromStores2, artboardFrame: "disabled" };
+      user3 = undefined;
+      const tmp23Result16 = width(height[20]);
+      if (stateFromStores1 != null) {
+        user3 = stateFromStores1.user;
+      }
+      tmp36Result7 = tmp36(tmp23Result16, obj25);
     }
-    intl4 = tmp2(tmp3[23]).intl;
-    tmp21Result2 = tmp21(tmp47, obj8);
-  }
-  items6[2] = tmp21Result2;
-  if (tmp24Result) {
-    tmp24Result = null != stateFromStores1;
-  }
-  if (tmp24Result) {
-    const obj10 = { style: tmp.sidekick, children: items9 };
-    const obj11 = { style: tmp.sidekickDetails, children: items8 };
-    const obj12 = { title: intl5.string(width(height[25])["+uwOHt"]), titleAccessibilityLabel: stringResult1, description: intl8.string(width(height[24])["/ctmGw"]) };
-    intl5 = tmp2(tmp3[23]).intl;
-    const tmp49 = FriendsHeader;
-    if ("" === str3.trim()) {
-      const intl7 = tmp2(tmp3[23]).intl;
-      stringResult1 = intl7.string(tmp22(tmp3[25])["+uwOHt"]);
-    } else {
-      const intl6 = tmp2(tmp3[23]).intl;
-      const obj13 = { name: str3 };
-      stringResult1 = intl6.formatToPlainString(tmp22(tmp3[24]).xRtlbW, obj13);
+    items15 = [closure_11(animatedRef, obj22), , ];
+    let tmp36Result8 = route === tmp2(tmp3[16]).CheckpointRoute.SQUAD_TRANSITION;
+    if (tmp36Result8) {
+      const obj26 = { style: tmp.transition, children: tmp38 };
+      tmp36Result8 = tmp36(tmp52, obj26);
     }
-    intl8 = tmp2(tmp3[23]).intl;
-    items8 = [closure_13(tmp49, obj12), ];
-    const obj14 = { sidekick: stateFromStores1 };
-    items8[1] = closure_13(SidekickStats, obj14);
-    items9 = [closure_14(closure_7, obj11), ];
-    const obj15 = { user: stateFromStores1.user, username: str3 };
-    items9[1] = closure_13(SidekickMessageInput, obj15);
-    tmp24Result = tmp24(tmp25, obj10);
+    items15[1] = tmp36Result8;
+    items15[2] = tmp39Result2;
   }
-  items6[3] = tmp24Result;
-  const obj16 = { children: closure_14(closure_7, obj2) };
-  return closure_13(tmp23, obj16);
+  return closure_11(tmp23Result13, obj20);
 };

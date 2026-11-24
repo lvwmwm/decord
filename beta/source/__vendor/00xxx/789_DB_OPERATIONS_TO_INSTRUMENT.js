@@ -4,7 +4,7 @@
 // Dependencies: [32, 717, 730, 703, 704, 733, 691, 694, 772, 687, 688, 751]
 
 // Module 789 (DB_OPERATIONS_TO_INSTRUMENT)
-import _mod687 from "module_687" /* 687 */;
+import DEBUG_BUILD from "DEBUG_BUILD" /* 687 */;
 import continueTrace from "continueTrace" /* 730 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import _toArray from "_toArray" /* 717 */;
@@ -149,10 +149,10 @@ function apply(arg0, arg1, arg2) {
                                   }
                                   const obj3 = closure_3_0(closure_3_1[5]);
                                   obj3.captureException(error, (addEventProcessor) => {
-                                    addEventProcessor.addEventProcessor((arg0) => {
+                                    addEventProcessor.addEventProcessor((tmpResult) => {
                                       const obj = obj2(closure_1_1[7]);
-                                      const result = obj.addExceptionMechanism(arg0, { handled: false, type: "auto.db.supabase.postgres" });
-                                      return arg0;
+                                      const result = obj.addExceptionMechanism(tmpResult, { handled: false, type: "auto.db.supabase.postgres" });
+                                      return tmpResult;
                                     });
                                     addEventProcessor.setContext("supabase", obj2);
                                     return addEventProcessor;
@@ -443,7 +443,7 @@ function instrumentSupabaseClient(supabaseClient) {
     instrumentSupabaseAuthClient(supabaseClient);
   } else {
     const tmp2 = require;
-    if (_mod687.DEBUG_BUILD) {
+    if (DEBUG_BUILD.DEBUG_BUILD) {
       const debug = tmp2(688).debug;
       debug.warn("Supabase integration was not installed because no Supabase client was provided.");
     }
@@ -485,7 +485,7 @@ export const supabaseIntegration = module_751.defineIntegration((supabaseClient)
         } else {
           let tmp2 = require;
           let tmp3 = dependencyMap;
-          if (_mod687.DEBUG_BUILD) {
+          if (DEBUG_BUILD.DEBUG_BUILD) {
             let debug = tmp2(688).debug;
             let str = "Supabase integration was not installed because no Supabase client was provided.";
             debug.warn("Supabase integration was not installed because no Supabase client was provided.");

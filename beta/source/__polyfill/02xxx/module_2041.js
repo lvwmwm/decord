@@ -4,31 +4,18 @@
 
 // Module 2041
 const obj = {
-  locale: "cs",
+  locale: "de",
   pluralRuleFunction(arg0, arg1) {
-    let tmp2;
-    let tmp3;
-    const str = String(arg0);
-    const parts = str.split(".");
-    [tmp2, tmp3] = parts;
     let str2 = "other";
+    const str = String(arg0);
+    const tmp = str.split(".")[1];
     if (!arg1) {
-      let str3;
-      if (1 != arg0) {
-        if (tmp2 >= 2) {
-          let str4;
-          if (tmp2 <= 4) {
-            str4 = "few";
-          }
-          str3 = str4;
+      let str3 = "other";
+      if (1 == arg0) {
+        str3 = "other";
+        if (!tmp) {
+          str3 = "one";
         }
-        let str5 = "many";
-        if (!tmp3) {
-          str5 = "other";
-        }
-        str4 = str5;
-      } else {
-        str3 = "one";
       }
       str2 = str3;
     }
@@ -36,3 +23,8 @@ const obj = {
   }
 };
 globalThis.IntlMessageFormat.__addLocaleData(obj);
+globalThis.IntlMessageFormat.__addLocaleData({ locale: "de-AT", parentLocale: "de" });
+globalThis.IntlMessageFormat.__addLocaleData({ locale: "de-BE", parentLocale: "de" });
+globalThis.IntlMessageFormat.__addLocaleData({ locale: "de-CH", parentLocale: "de" });
+globalThis.IntlMessageFormat.__addLocaleData({ locale: "de-LI", parentLocale: "de" });
+globalThis.IntlMessageFormat.__addLocaleData({ locale: "de-LU", parentLocale: "de" });

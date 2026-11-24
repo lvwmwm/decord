@@ -1,15 +1,15 @@
-// Module ID: 17452
-// Function ID: 17453
+// Module ID: 16220
+// Function ID: 16221
 // Name: FamilyCenterEmpty
-// Dependencies: [19, 17, 21, 5306, 5919, 2]
+// Dependencies: [19, 17, 21, 4913, 5504, 2]
 // Exports: default
 
-// Module 17452 (FamilyCenterEmpty)
+// Module 16220 (FamilyCenterEmpty)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import Text_Text from "Text/Text" /* 5919 */;
+import Text_Text from "Text/Text" /* 5504 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const View = react_native.View;

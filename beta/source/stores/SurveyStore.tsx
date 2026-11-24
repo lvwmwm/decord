@@ -1,22 +1,22 @@
-// Module ID: 6880
-// Function ID: 6881
+// Module ID: 6484
+// Function ID: 6485
 // Name: SurveyStore
-// Dependencies: [5526, 5177, 5238, 5339, 1388, 1072, 1089, 6881, 1084, 510, 2169, 504, 572, 2]
+// Dependencies: [5534, 4784, 4845, 4946, 1386, 1071, 1088, 6485, 1083, 510, 2168, 504, 572, 2]
 
-// Module 6880 (SurveyStore)
+// Module 6484 (SurveyStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import Storage2 from "Storage" /* 510 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
-import DurationsDefault from "Durations" /* 1089 */;
-import _modDef2169 from "module_2169" /* 2169 */;
-import surveyFetch from "surveyFetch" /* 6881 */;
-import GuildMemberCountStore from "GuildMemberCountStore" /* 5526 */;
-import GuildStore from "GuildStore" /* 5177 */;
-import PermissionStore from "PermissionStore" /* 5238 */;
-import SelectedGuildStore from "SelectedGuildStore" /* 5339 */;
-import UserStore from "UserStore" /* 1388 */;
-import Constants from "Constants" /* 1072 */;
+import BigFlagUtilsAll from "BigFlagUtils" /* 1083 */;
+import DurationsDefault from "Durations" /* 1088 */;
+import _modDef2168 from "module_2168" /* 2168 */;
+import surveyFetch from "surveyFetch" /* 6485 */;
+import GuildMemberCountStore from "GuildMemberCountStore" /* 5534 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
+import SelectedGuildStore from "SelectedGuildStore" /* 4946 */;
+import UserStore from "UserStore" /* 1386 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 let closure_13, currentUser, guildId, guildsArray, memberCount;
@@ -181,7 +181,7 @@ function setSurvey(survey) {
   const value = Storage.get(unpackModuleId);
   let tmp9 = null == value;
   if (!tmp9) {
-    obj = _modDef2169();
+    obj = _modDef2168();
     tmp9 = obj.diff(value, "day") < 7;
   }
   let tmp11 = null;
@@ -593,6 +593,7 @@ const obj3 = {
   },
   LOGOUT: function handleLogout() {
     closure_13.hiddenSurveys = {};
+    c17 = null;
   },
   SURVEY_SEEN: function handleSurveySeen() {
     closure_13.lastSeen = Date.now();

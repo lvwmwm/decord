@@ -1,23 +1,23 @@
-// Module ID: 17633
-// Function ID: 17634
+// Module ID: 16405
+// Function ID: 16406
 // Name: UserSettingsAppearanceThemeUtils
-// Dependencies: [1238, 1192, 1195, 1072, 1390, 1241, 1196, 17634, 14558, 6232, 1239, 5366, 17635, 1256, 2]
+// Dependencies: [1237, 1191, 1194, 1071, 1388, 1240, 1195, 16406, 12808, 5826, 1238, 4973, 16407, 1255, 2]
 // Exports: disableSameAsDeviceTheme, enableSameAsDeviceTheme, getSyncedModeThemeIndex, getUserThemeIndex, handleSaveSyncedModeTheme, handleSaveTheme, trackClientThemeUpdated
 
-// Module 17633 (UserSettingsAppearanceThemeUtils)
-import Constants from "Constants" /* 1072 */;
-import ThemeConstants from "ThemeConstants" /* 1195 */;
-import ClientThemesUtils from "ClientThemesUtils" /* 1239 */;
-import ClientThemesTypes from "ClientThemesTypes" /* 1241 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import PremiumConstants from "PremiumConstants" /* 1390 */;
-import ThemeActionCreators from "ThemeActionCreators" /* 5366 */;
-import UserSettingsActionCreators from "UserSettingsActionCreators" /* 6232 */;
-import CustomThemeMobileActionCreators from "CustomThemeMobileActionCreators" /* 14558 */;
-import ClientThemesBackgroundActionCreators from "ClientThemesBackgroundActionCreators" /* 17634 */;
-import SameAsDeviceThemeUtils from "SameAsDeviceThemeUtils" /* 17635 */;
-import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1238 */;
-import ThemeStore from "ThemeStore" /* 1192 */;
+// Module 16405 (UserSettingsAppearanceThemeUtils)
+import Constants from "Constants" /* 1071 */;
+import ThemeConstants from "ThemeConstants" /* 1194 */;
+import ClientThemesUtils from "ClientThemesUtils" /* 1238 */;
+import ClientThemesTypes from "ClientThemesTypes" /* 1240 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import PremiumConstants from "PremiumConstants" /* 1388 */;
+import ThemeActionCreators from "ThemeActionCreators" /* 4973 */;
+import UserSettingsActionCreators from "UserSettingsActionCreators" /* 5826 */;
+import CustomThemeMobileActionCreators from "CustomThemeMobileActionCreators" /* 12808 */;
+import ClientThemesBackgroundActionCreators from "ClientThemesBackgroundActionCreators" /* 16406 */;
+import SameAsDeviceThemeUtils from "SameAsDeviceThemeUtils" /* 16407 */;
+import CustomThemeMobileStore from "CustomThemeMobileStore" /* 1237 */;
+import ThemeStore from "ThemeStore" /* 1191 */;
 import size from "module_2" /* 2 */;
 
 const SystemThemeState = ThemeConstants.SystemThemeState;
@@ -30,7 +30,7 @@ export function handleSaveTheme(found, analyticsLocations, isSynced) {
   if (found.type !== ClientThemesTypes.ClientThemeType.CUSTOM_BACKGROUND_GRADIENT) {
     let combined;
     if (found.type === ClientThemesTypes.ClientThemeType.BACKGROUND_GRADIENT_PRESET) {
-      combined = tmp(1196).BackgroundGradientPresetId[found.id];
+      combined = tmp(1195).BackgroundGradientPresetId[found.id];
     } else {
       const _HermesInternal = HermesInternal;
       combined = "default " + found.theme;
@@ -88,7 +88,7 @@ export function handleSaveSyncedModeTheme(hexagonCampaignClientThemeItem2, item1
     if (hexagonCampaignClientThemeItem2.type !== ClientThemesTypes.ClientThemeType.CUSTOM_BACKGROUND_GRADIENT) {
       let combined;
       if (hexagonCampaignClientThemeItem2.type === ClientThemesTypes.ClientThemeType.BACKGROUND_GRADIENT_PRESET) {
-        combined = tmp13(1196).BackgroundGradientPresetId[hexagonCampaignClientThemeItem2.id];
+        combined = tmp13(1195).BackgroundGradientPresetId[hexagonCampaignClientThemeItem2.id];
       } else {
         const _HermesInternal = HermesInternal;
         combined = "default " + hexagonCampaignClientThemeItem2.theme;

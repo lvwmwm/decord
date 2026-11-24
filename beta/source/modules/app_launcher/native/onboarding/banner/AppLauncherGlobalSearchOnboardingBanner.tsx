@@ -1,18 +1,18 @@
-// Module ID: 13450
-// Function ID: 13451
+// Module ID: 12982
+// Function ID: 12983
 // Name: AppLauncherGlobalSearchOnboardingBanner
-// Dependencies: [19, 17, 1501, 5152, 21, 5306, 575, 8101, 9569, 1113, 2]
+// Dependencies: [19, 17, 1499, 4759, 21, 4913, 575, 7704, 9089, 1112, 2]
 // Exports: default
 
-// Module 13450 (AppLauncherGlobalSearchOnboardingBanner)
+// Module 12982 (AppLauncherGlobalSearchOnboardingBanner)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1501 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
-import AppsIcon2 from "AppsIcon" /* 8101 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1499 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4759 */;
+import AppsIcon2 from "AppsIcon" /* 7704 */;
 import react from "react" /* 19 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -49,16 +49,16 @@ export default function GlobalSearchCoachmark(markAsDismissed) {
   }, items);
   let tmp3 = null;
   if (visible) {
-    const Coachmark = markAsDismissed(9569).Coachmark;
-    const intl = markAsDismissed(1113).intl;
-    const intl2 = markAsDismissed(1113).intl;
+    const Coachmark = markAsDismissed(9089).Coachmark;
+    const intl = markAsDismissed(1112).intl;
+    const intl2 = markAsDismissed(1112).intl;
     size = { x: 0, y: -40, width: diff, height: 40 };
     const size1 = { x: -140, y: -40, width: diff, height: windowDimensions.height };
     tmp3 = <Coachmark renderImgComponent={function appsIcon() {
       ({ style: appsIconImage.appsIconImage, color: nativeDefault.colors.INTERACTIVE_TEXT_ACTIVE });
       const AppsIcon = AppsIcon2.AppsIcon;
       return <View style={closure_2.appsIcon}>{null}</View>;
-    }} title={intl.string(markAsDismissed(1113).t.bCPN5y)} description={intl2.string(markAsDismissed(1113).t["0TBExc"])} onDismiss={function onDismiss() {
+    }} title={intl.string(markAsDismissed(1112).t.bCPN5y)} description={intl2.string(markAsDismissed(1112).t["0TBExc"])} onDismiss={function onDismiss() {
       const obj = { actionType: ContentDismissActionType.TAKE_ACTION };
       markAsDismissed(obj);
     }} targetMeasurements={size} surfaceMeasurements={size1} position="bottom" />;

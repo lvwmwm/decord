@@ -1,13 +1,13 @@
-// Module ID: 5220
-// Function ID: 5221
+// Module ID: 4827
+// Function ID: 4828
 // Name: GuildDisableCommunicationConstants
-// Dependencies: [1072, 1113, 2188, 2]
+// Dependencies: [1071, 1112, 2187, 2]
 // Exports: getDisableCommunicationDurationOptions
 
-// Module 5220 (GuildDisableCommunicationConstants)
-import Constants from "Constants" /* 1072 */;
-import intl7 from "intl" /* 1113 */;
-import HelpdeskUtils from "HelpdeskUtils" /* 2188 */;
+// Module 4827 (GuildDisableCommunicationConstants)
+import Constants from "Constants" /* 1071 */;
+import intl7 from "intl" /* 1112 */;
+import HelpdeskUtils from "HelpdeskUtils" /* 2187 */;
 import size from "module_2" /* 2 */;
 
 function getFriendlyDurationString(timeout_seconds) {

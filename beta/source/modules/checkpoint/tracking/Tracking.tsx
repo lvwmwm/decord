@@ -1,23 +1,23 @@
-// Module ID: 14253
-// Function ID: 14254
+// Module ID: 12126
+// Function ID: 12127
 // Name: Tracking
-// Dependencies: [1072, 1256, 6057, 14254, 2]
-// Exports: trackCheckpoint2026CardClicked, trackCheckpoint2026CardShared, trackCheckpoint2026CharacterChoiceSelected, trackCheckpoint2026Closed, trackCheckpoint2026Completed, trackCheckpoint2026GiftCtaClicked, trackCheckpoint2026MuteToggled, trackCheckpoint2026SidekickMessageSent, trackCheckpoint2026Started, trackCheckpoint2026StepViewed
+// Dependencies: [1071, 1255, 5650, 12127, 2]
+// Exports: trackCheckpoint2026CardClicked, trackCheckpoint2026CardSaveClicked, trackCheckpoint2026CardShareClicked, trackCheckpoint2026CardShared, trackCheckpoint2026CharacterChoiceSelected, trackCheckpoint2026CharacterSaveClicked, trackCheckpoint2026CharacterShareClicked, trackCheckpoint2026Closed, trackCheckpoint2026Completed, trackCheckpoint2026GiftCTAClicked, trackCheckpoint2026MuteToggled, trackCheckpoint2026SidekickMessageSent, trackCheckpoint2026Started, trackCheckpoint2026StepViewed
 
-// Module 14253 (Tracking)
-import Constants from "Constants" /* 1072 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6057 */;
-import CheckpointSessionAnalyticsManagerDefault from "CheckpointSessionAnalyticsManager" /* 14254 */;
+// Module 12126 (Tracking)
+import Constants from "Constants" /* 1071 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5650 */;
+import CheckpointSessionAnalyticsManagerDefault from "CheckpointSessionAnalyticsManager" /* 12127 */;
 import size from "module_2" /* 2 */;
 
 const AnalyticEvents = Constants.AnalyticEvents;
 const result = size.fileFinishedImporting("modules/checkpoint/tracking/Tracking.tsx");
 
-export function trackCheckpoint2026CardClicked(authorId, channel) {
+export function trackCheckpoint2026CardClicked(c1, channel) {
   const track = AnalyticsUtilsDefault.track;
   const CHECKPOINT_2026_CARD_CLICKED = AnalyticEvents.CHECKPOINT_2026_CARD_CLICKED;
-  const obj = { other_user_id: authorId };
+  const obj = { other_user_id: c1 };
   AnalyticsUtilsDefault;
   const obj2 = AppAnalyticsUtils;
   const merged = Object.assign(obj2.collectChannelAnalyticsMetadata(channel));
@@ -79,7 +79,7 @@ export function trackCheckpoint2026CharacterChoiceSelected(trait_type, option_id
   const merged = Object.assign(obj3.getAnalyticsProperties());
   track(CHECKPOINT_2026_CHARACTER_CHOICE_SELECTED, obj);
 }
-export function trackCheckpoint2026GiftCtaClicked(id) {
+export function trackCheckpoint2026GiftCTAClicked(id) {
   let obj2;
   const obj = { other_user_id: id, step_name: obj2.getStepName() };
   const track = AnalyticsUtilsDefault.track;
@@ -120,4 +120,22 @@ export function trackCheckpoint2026MuteToggled(isMuted) {
   const obj3 = CheckpointSessionAnalyticsManagerDefault;
   const merged = Object.assign(obj3.getAnalyticsProperties());
   track(CHECKPOINT_2026_MUTE_TOGGLED, obj);
+}
+export function trackCheckpoint2026CharacterSaveClicked() {
+  const obj = AnalyticsUtilsDefault;
+  obj.track(AnalyticEvents.CHECKPOINT_2026_CHARACTER_SAVE_CLICKED);
+}
+export function trackCheckpoint2026CharacterShareClicked() {
+  const obj = AnalyticsUtilsDefault;
+  obj.track(AnalyticEvents.CHECKPOINT_2026_CHARACTER_SHARE_CLICKED);
+}
+export function trackCheckpoint2026CardSaveClicked(checkpoint_card_type) {
+  const obj = AnalyticsUtilsDefault;
+  const obj2 = { checkpoint_card_type };
+  obj.track(AnalyticEvents.CHECKPOINT_2026_CARD_SAVE_CLICKED, obj2);
+}
+export function trackCheckpoint2026CardShareClicked(checkpoint_card_type) {
+  const obj = AnalyticsUtilsDefault;
+  const obj2 = { checkpoint_card_type };
+  obj.track(AnalyticEvents.CHECKPOINT_2026_CARD_SHARE_CLICKED, obj2);
 }

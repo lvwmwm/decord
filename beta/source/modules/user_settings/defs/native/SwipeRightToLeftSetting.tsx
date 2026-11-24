@@ -1,15 +1,15 @@
-// Module ID: 18101
-// Function ID: 18102
+// Module ID: 16880
+// Function ID: 16881
 // Name: SwipeRightToLeftSetting
-// Dependencies: [9202, 1072, 5131, 1196, 1113, 12408, 18102, 2]
+// Dependencies: [8712, 1071, 4738, 1195, 1112, 11937, 16881, 2]
 
-// Module 18101 (SwipeRightToLeftSetting)
-import Constants from "Constants" /* 1072 */;
-import intl3 from "intl" /* 1113 */;
-import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
-import UserSettings from "UserSettings" /* 5131 */;
-import SettingsConstants from "SettingsConstants" /* 9202 */;
-import SettingBuilders from "SettingBuilders" /* 12408 */;
+// Module 16880 (SwipeRightToLeftSetting)
+import Constants from "Constants" /* 1071 */;
+import intl3 from "intl" /* 1112 */;
+import preloaded_user_settings from "preloaded_user_settings" /* 1195 */;
+import UserSettings from "UserSettings" /* 4738 */;
+import SettingsConstants from "SettingsConstants" /* 8712 */;
+import SettingBuilders from "SettingBuilders" /* 11937 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -27,13 +27,13 @@ const obj = {
     const SwipeRightToLeftModeSetting = UserSettings.SwipeRightToLeftModeSetting;
     const setting = SwipeRightToLeftModeSetting.useSetting();
     if (setting === preloaded_user_settings.SwipeRightToLeftMode.SWIPE_RIGHT_TO_LEFT_REPLY) {
-      const intl2 = tmp(1113).intl;
-      stringResult = intl2.string(tmp(1113).t["3tYNDS"]);
+      const intl2 = tmp(1112).intl;
+      stringResult = intl2.string(tmp(1112).t["3tYNDS"]);
     } else {
       stringResult = null;
       if (setting === preloaded_user_settings.SwipeRightToLeftMode.SWIPE_RIGHT_TO_LEFT_CHANNEL_DETAILS) {
-        const intl = tmp(1113).intl;
-        stringResult = intl.string(tmp(1113).t["6eXLcJ"]);
+        const intl = tmp(1112).intl;
+        stringResult = intl.string(tmp(1112).t["6eXLcJ"]);
       }
     }
     return stringResult;

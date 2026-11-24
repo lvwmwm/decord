@@ -147,11 +147,11 @@ function normalizePath(str) {
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 const re0 = /^(\S+:\\|\/?)([\s\S]*?)((?:\.{1,2}|[^/\\]+?|)(\.[^./\\]*|))(?:[/\\]*)$/;
 
-export function basename(arr, arg1) {
-  let combined = arr;
-  if (arr.length > 1024) {
+export function basename(replaced, arg1) {
+  let combined = replaced;
+  if (replaced.length > 1024) {
     const _HermesInternal = HermesInternal;
-    combined = "<truncated>" + arr.slice(-1024);
+    combined = "<truncated>" + replaced.slice(-1024);
   }
   const match = re0.exec(combined);
   if (match) {
@@ -196,13 +196,13 @@ export function join() {
   return normalizePath(items.join("/"));
 }
 export { normalizePath };
-export function relative(arg0, arg1) {
+export function relative(root, replaced) {
   let items;
   let items1;
   let length;
-  const arr = resolve(arg0);
+  const arr = resolve(root);
   const str = arr.slice(1);
-  const arr2 = resolve(arg1);
+  const arr2 = resolve(replaced);
   const str2 = arr2.slice(1);
   const parts = str.split("/");
   let num = 0;

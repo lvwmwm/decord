@@ -1,10 +1,10 @@
-// Module ID: 8584
-// Function ID: 8585
+// Module ID: 8174
+// Function ID: 8175
 // Name: ProfileFrameConstants
-// Dependencies: [8567, 2]
+// Dependencies: [8157, 2]
 
-// Module 8584 (ProfileFrameConstants)
-import ProfileFrameLayerOrder from "ProfileFrameLayerOrder" /* 8567 */;
+// Module 8174 (ProfileFrameConstants)
+import ProfileFrameLayerOrder from "ProfileFrameLayerOrder" /* 8157 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/collectibles/profile_frames/native/ProfileFrameConstants.tsx");

@@ -1,12 +1,12 @@
-// Module ID: 8807
-// Function ID: 8808
+// Module ID: 8403
+// Function ID: 8404
 // Name: BountyStore
-// Dependencies: [6961, 504, 572, 2]
+// Dependencies: [6565, 504, 572, 2]
 
-// Module 8807 (BountyStore)
+// Module 8403 (BountyStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import AdCreativeType from "AdCreativeType" /* 6961 */;
+import AdCreativeType from "AdCreativeType" /* 6565 */;
 import size from "module_2" /* 2 */;
 
 function resetStateForDeliveredBounties(items) {
@@ -48,9 +48,6 @@ class BountyStore extends Store {
   }
   isClaimingBountyReward(arg0) {
     return set.has(arg0);
-  }
-  areAllBountiesCompleted() {
-    return bounties.every((id) => set.has(id.id));
   }
   getAdDecisionByPlacementAndAdCreativeId(questPlacementFromQuestContent, bountyId) {
     const value = map.get(questPlacementFromQuestContent);

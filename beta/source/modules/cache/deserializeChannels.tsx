@@ -1,11 +1,11 @@
-// Module ID: 5206
-// Function ID: 5207
+// Module ID: 4813
+// Function ID: 4814
 // Name: deserializeChannels
-// Dependencies: [32, 1084, 2]
+// Dependencies: [32, 1083, 2]
 // Exports: deserializeChannel, deserializeChannelEntries
 
-// Module 5206 (deserializeChannels)
-import BigFlagUtilsAll from "BigFlagUtils" /* 1084 */;
+// Module 4813 (deserializeChannels)
+import BigFlagUtilsAll from "BigFlagUtils" /* 1083 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import size from "module_2" /* 2 */;
 

@@ -1,20 +1,20 @@
-// Module ID: 14756
-// Function ID: 14757
+// Module ID: 13211
+// Function ID: 13212
 // Name: SearchQueryStore
-// Dependencies: [5155, 5248, 1388, 9066, 9065, 1072, 5944, 1113, 14749, 14757, 2161, 504, 572, 2]
+// Dependencies: [4762, 4855, 1386, 8576, 8575, 1071, 5529, 1112, 13204, 13212, 2160, 504, 572, 2]
 
-// Module 14756 (SearchQueryStore)
+// Module 13211 (SearchQueryStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import TrackingConstants from "TrackingConstants" /* 9065 */;
-import SearchUtils from "SearchUtils" /* 14749 */;
-import SearchQueryTagManagerDefault from "SearchQueryTagManager" /* 14757 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import RelationshipStore from "RelationshipStore" /* 5248 */;
-import UserStore from "UserStore" /* 1388 */;
-import SearchConstants from "SearchConstants" /* 9066 */;
-import Constants from "Constants" /* 1072 */;
-import FunctionUtils from "FunctionUtils" /* 2161 */;
+import TrackingConstants from "TrackingConstants" /* 8575 */;
+import SearchUtils from "SearchUtils" /* 13204 */;
+import SearchQueryTagManagerDefault from "SearchQueryTagManager" /* 13212 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import RelationshipStore from "RelationshipStore" /* 4855 */;
+import UserStore from "UserStore" /* 1386 */;
+import SearchConstants from "SearchConstants" /* 8576 */;
+import Constants from "Constants" /* 1071 */;
+import FunctionUtils from "FunctionUtils" /* 2160 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -193,19 +193,19 @@ class SearchQueryStateManager {
       let items1;
       let channelName;
       if (null != channel) {
-        const obj2 = obj(5944);
+        const obj2 = obj(5529);
         channelName = obj2.computeChannelName(channel, UserStore, RelationshipStore);
       }
       if (null == channelName) {
         items1 = [];
       } else {
         const obj3 = { type: constants.COMPLETE, searchTokenType: constants2.FILTER_IN, text: "" + stringResult + ": " + obj4.quoteChannelName(channelName), channelId: searchContext.channelId, location: SearchFilterAddLocations.CLIENT_AUTO_ADD };
-        const intl = obj(1113).intl;
+        const intl = obj(1112).intl;
         let _HermesInternal = HermesInternal;
         let str = ": ";
-        stringResult = intl.string(obj(1113).t.WNpFHa);
+        stringResult = intl.string(obj(1112).t.WNpFHa);
         items1 = [obj3];
-        obj4 = obj(14749);
+        obj4 = obj(13204);
       }
       items = items1;
     }

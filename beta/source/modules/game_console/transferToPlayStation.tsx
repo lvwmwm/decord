@@ -1,15 +1,15 @@
-// Module ID: 10824
-// Function ID: 10825
+// Module ID: 11021
+// Function ID: 11022
 // Name: transferToPlayStation
-// Dependencies: [5, 1072, 10825, 10821, 10828, 572, 1285, 10829, 2]
+// Dependencies: [5, 1071, 11022, 11018, 11025, 572, 1284, 11026, 2]
 // Exports: transferToPlayStation
 
-// Module 10824 (transferToPlayStation)
+// Module 11021 (transferToPlayStation)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import Constants from "Constants" /* 1072 */;
-import HTTPUtils from "HTTPUtils" /* 1285 */;
-import GameConsoleAlertUtilsDefault from "GameConsoleAlertUtils" /* 10825 */;
-import ConsoleCommands from "ConsoleCommands" /* 10829 */;
+import Constants from "Constants" /* 1071 */;
+import HTTPUtils from "HTTPUtils" /* 1284 */;
+import GameConsoleAlertUtilsDefault from "GameConsoleAlertUtils" /* 11022 */;
+import ConsoleCommands from "ConsoleCommands" /* 11026 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

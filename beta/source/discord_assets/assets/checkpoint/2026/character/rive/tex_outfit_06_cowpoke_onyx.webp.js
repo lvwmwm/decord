@@ -1,11 +1,11 @@
-// Module ID: 14397
-// Function ID: 14398
+// Module ID: 12636
+// Function ID: 12637
 // Dependencies: [2]
 
-// Module 14397
+// Module 12636
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_outfit_06_cowpoke_onyx.webp.js");
 
-export default "https://cdn.discordapp.com/assets/content/e5b483670bcb7a90f7f9deba1aed475278d29f78baf3dc6ef384082e7a643f22.webp";
-export const metadata = { fileBytes: 30030 };
+export default "https://cdn.discordapp.com/assets/content/dfcdf8fcab5f44c6c6333cb897894ed190d87176213b36a529a8acd2abac2517.webp";
+export const metadata = { fileBytes: 85708 };

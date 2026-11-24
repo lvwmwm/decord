@@ -1,10 +1,10 @@
 // Module ID: 7103
 // Function ID: 7104
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 7103 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 24, height: 24, scales: [1], hash: "2d01fd6a79903d212a518ef988c2dc7f", name: "img_account_sync_bluesky_white", type: "svg" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/../node_modules/.pnpm/@react-navigation+elements@2.9.34_shb2al3n4oohkkhnm35rfpv56i/node_modules/@react-navigation/elements/lib/module/assets", width: 24, height: 24, scales: [1, 2, 3, 4], hash: "dbc3af23c3cbbe45d326afc1d31c2e92", name: "back-icon", type: "png" });

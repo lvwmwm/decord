@@ -1,13 +1,13 @@
-// Module ID: 2165
-// Function ID: 2166
+// Module ID: 2164
+// Function ID: 2165
 // Name: ApplicationStore
-// Dependencies: [32, 2143, 504, 572, 2]
+// Dependencies: [32, 2142, 504, 572, 2]
 
-// Module 2165 (ApplicationStore)
+// Module 2164 (ApplicationStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import ApplicationRecord from "ApplicationRecord" /* 2143 */;
+import ApplicationRecord from "ApplicationRecord" /* 2142 */;
 import size from "module_2" /* 2 */;
 
 let attachments;
@@ -303,15 +303,26 @@ let obj = {
     return flag;
   },
   APPLICATIONS_FETCH_SUCCESS: function handleApplicationsFetchSuccess(isHydrated) {
+    let applications;
+    let unknownApplicationIds;
+    ({ applications, unknownApplicationIds } = isHydrated);
     isHydrated = isHydrated.isHydrated;
-    const iter = isHydrated.applications[Symbol.iterator]();
+    if (unknownApplicationIds == null) {
+      unknownApplicationIds = [];
+    }
+    const tmp = unknownApplicationIds[Symbol.iterator]();
+    while (tmp !== undefined) {
+      let result = map5.set(tmp2, false);
+      continue;
+    }
+    const iter = applications[Symbol.iterator]();
     const nextResult = iter.next();
     while (iter !== undefined) {
-      let tmp2 = nextResult;
+      let tmp6 = nextResult;
       if (true === isHydrated) {
-        let addResult = set.add(tmp2.id);
+        let addResult = set.add(tmp6.id);
       }
-      let tmp9 = addApplication(ApplicationRecord.createFromServer(tmp2));
+      let tmp13 = addApplication(ApplicationRecord.createFromServer(tmp6));
       continue;
     }
   },

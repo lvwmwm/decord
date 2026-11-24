@@ -1,14 +1,14 @@
-// Module ID: 14854
-// Function ID: 14855
+// Module ID: 13307
+// Function ID: 13308
 // Name: VoicePanelDockRim
-// Dependencies: [19, 17, 21, 5306, 5892, 575, 5303, 1655, 14855, 5883, 2]
+// Dependencies: [19, 17, 21, 4913, 5477, 575, 4910, 1653, 13308, 5468, 2]
 
-// Module 14854 (VoicePanelDockRim)
+// Module 13307 (VoicePanelDockRim)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const StyleSheet = react_native.StyleSheet;
@@ -21,7 +21,7 @@ const memoResult = react.memo(function VoicePanelDockRim(style) {
   let token;
   style = style.style;
   const tmp = closure_6();
-  let obj = token(5892);
+  let obj = token(5477);
   const tmp2 = token;
   token = obj.useToken(nativeDefault.colors.ICON_VOICE_SPEAKING);
   let items = [token];
@@ -33,9 +33,9 @@ const memoResult = react.memo(function VoicePanelDockRim(style) {
     });
   }, items);
   const items1 = [closure_7, ];
-  const useAnimatedStyle = token(1655).useAnimatedStyle;
-  token(1655);
-  items1[1] = token(14855).voicePanelDockRimOpacity;
+  const useAnimatedStyle = token(1653).useAnimatedStyle;
+  token(1653);
+  items1[1] = token(13308).voicePanelDockRimOpacity;
   let c0;
   [tmp8, tmp9] = items1;
   class VoicePanelDockRimTsx1 {
@@ -50,8 +50,8 @@ const memoResult = react.memo(function VoicePanelDockRim(style) {
   VoicePanelDockRimTsx1.__initData = tmp8;
   const animatedStyle = useAnimatedStyle(VoicePanelDockRimTsx1);
   const items3 = [tmp.rim, style, animatedStyle];
-  const View = tmp4(1655).View;
-  const VoicePanelDockRimLevel = tmp2(14855).VoicePanelDockRimLevel;
+  const View = tmp4(1653).View;
+  const VoicePanelDockRimLevel = tmp2(13308).VoicePanelDockRimLevel;
   return <View style={items3} pointerEvents="none">{null}</View>;
 });
 const result = size.fileFinishedImporting("modules/voice_panel/native/dock/VoicePanelDockRim.tsx");

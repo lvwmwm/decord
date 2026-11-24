@@ -1,11 +1,11 @@
-// Module ID: 12777
-// Function ID: 12778
+// Module ID: 10706
+// Function ID: 10707
 // Name: ActivityAnnouncement
-// Dependencies: [19, 21, 8263, 2]
+// Dependencies: [19, 21, 7865, 2]
 // Exports: default
 
-// Module 12777 (ActivityAnnouncement)
-import inlineStyles from "inlineStyles" /* 8263 */;
+// Module 10706 (ActivityAnnouncement)
+import inlineStyles from "inlineStyles" /* 7865 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
 import size_mod from "module_2" /* 2 */;

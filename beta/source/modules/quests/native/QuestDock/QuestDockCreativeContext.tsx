@@ -1,12 +1,12 @@
-// Module ID: 17729
-// Function ID: 17730
+// Module ID: 16506
+// Function ID: 16507
 // Name: QuestDockCreativeContext
-// Dependencies: [19, 21, 6961, 2]
+// Dependencies: [19, 21, 6565, 2]
 // Exports: QuestDockBountyProvider, QuestDockPlayableProvider, QuestDockQuestProvider, useBountyCreative, usePlayableCreative, useQuestCreative, useQuestDockBounty, useQuestDockCreative, useQuestDockPlayable, useQuestDockQuest
 
-// Module 17729 (QuestDockCreativeContext)
+// Module 16506 (QuestDockCreativeContext)
 import Fragment from "Fragment" /* 21 */;
-import AdCreativeType from "AdCreativeType" /* 6961 */;
+import AdCreativeType from "AdCreativeType" /* 6565 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

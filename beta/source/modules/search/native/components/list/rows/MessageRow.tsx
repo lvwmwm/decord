@@ -1,34 +1,34 @@
-// Module ID: 19504
-// Function ID: 19505
+// Module ID: 18765
+// Function ID: 18766
 // Name: MessageRow
-// Dependencies: [19, 17, 5307, 5158, 5155, 5177, 6948, 1072, 21, 5306, 575, 504, 8033, 5944, 1187, 5919, 11084, 11362, 10870, 5362, 7350, 19505, 11928, 19506, 6739, 9189, 6848, 19467, 1113, 11045, 5984, 2]
+// Dependencies: [19, 17, 4914, 4765, 4762, 4784, 6552, 1071, 21, 4913, 575, 504, 7636, 5529, 1186, 5504, 11157, 11373, 10387, 4969, 6954, 18766, 11701, 18767, 6341, 8699, 6439, 18728, 1112, 11125, 5574, 2]
 
-// Module 19504 (MessageRow)
+// Module 18765 (MessageRow)
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import intl2 from "intl" /* 1113 */;
-import native from "native" /* 1187 */;
-import UserUtilsDefault from "UserUtils" /* 5362 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import useChannelNameDefault from "useChannelName" /* 5944 */;
-import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 5984 */;
-import useMessageAuthorDefault from "useMessageAuthor" /* 6739 */;
-import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 9189 */;
-import BotTagDefault from "BotTag" /* 10870 */;
-import AssetRegistryDefault from "AssetRegistry" /* 11084 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11362 */;
-import SearchListRow2 from "SearchListRow" /* 19467 */;
-import useSearchMessageTimestamp from "useSearchMessageTimestamp" /* 19505 */;
+import Constants from "Constants" /* 1071 */;
+import intl2 from "intl" /* 1112 */;
+import native from "native" /* 1186 */;
+import UserUtilsDefault from "UserUtils" /* 4969 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import useChannelNameDefault from "useChannelName" /* 5529 */;
+import ChannelListLayoutTypes from "ChannelListLayoutTypes" /* 5574 */;
+import useMessageAuthorDefault from "useMessageAuthor" /* 6341 */;
+import enhanced_role_colors_EnhancedRoleColorUtils from "enhanced_role_colors/EnhancedRoleColorUtils" /* 8699 */;
+import BotTagDefault from "BotTag" /* 10387 */;
+import AssetRegistryDefault from "AssetRegistry" /* 11157 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11373 */;
+import SearchListRow2 from "SearchListRow" /* 18728 */;
+import useSearchMessageTimestamp from "useSearchMessageTimestamp" /* 18766 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5307 */;
-import FavoriteStore from "FavoriteStore" /* 5158 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import GuildStore from "GuildStore" /* 5177 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6948 */;
+import AccessibilityStore from "AccessibilityStore" /* 4914 */;
+import FavoriteStore from "FavoriteStore" /* 4765 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6552 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let Platform;
@@ -37,7 +37,7 @@ let closure_4;
 let obj2;
 let tmp5;
 let unpackModuleId;
-const PollBadgeDefault = tmp5(19506);
+const PollBadgeDefault = tmp5(18767);
 function GuildChannelMessageRowHeader(channel) {
   let isFavorite;
   let items1;
@@ -55,25 +55,25 @@ function GuildChannelMessageRowHeader(channel) {
     }
     return rulesChannelId;
   });
-  const obj2 = channel(8033);
+  const obj2 = channel(7636);
   const obj3 = { isRulesChannel: stateFromStores === channel.id };
   const channelIcon = obj2.getChannelIcon(channel, obj3);
   const obj4 = { style: tmp.header, children: items1 };
-  const obj5 = { source: channelIcon, size: channel(1187).Icon.Sizes.REFRESH_SMALL_16, style: tmp.channelIcon };
+  const obj5 = { source: channelIcon, size: channel(1186).Icon.Sizes.REFRESH_SMALL_16, style: tmp.channelIcon };
   const tmp7 = useChannelNameDefault(channel);
-  const Icon = channel(1187).Icon;
-  items1 = [closure_11(Icon, obj5), closure_11(channel(5919).Text, { lineClamp: 1, variant: "body-sm/semibold", color: "interactive-text-default", children: tmp7 }), , , ];
+  const Icon = channel(1186).Icon;
+  items1 = [closure_11(Icon, obj5), closure_11(channel(5504).Text, { lineClamp: 1, variant: "body-sm/semibold", color: "interactive-text-default", children: tmp7 }), , , ];
   const tmp8 = closure_12;
   const tmp9 = closure_4;
   if (muted) {
-    const obj6 = { source: AssetRegistryDefault, size: channel(1187).Icon.Sizes.EXTRA_SMALL, style: tmp.channelStatus };
-    const Icon2 = tmp2(1187).Icon;
+    const obj6 = { source: AssetRegistryDefault, size: channel(1186).Icon.Sizes.EXTRA_SMALL, style: tmp.channelStatus };
+    const Icon2 = tmp2(1186).Icon;
     muted = tmp10(Icon2, obj6);
   }
   items1[2] = muted;
   if (isFavorite) {
-    const obj7 = { source: AssetRegistryDefault2, size: channel(1187).Icon.Sizes.EXTRA_SMALL, style: tmp.channelStatus };
-    const Icon3 = tmp2(1187).Icon;
+    const obj7 = { source: AssetRegistryDefault2, size: channel(1186).Icon.Sizes.EXTRA_SMALL, style: tmp.channelStatus };
+    const Icon3 = tmp2(1186).Icon;
     isFavorite = tmp10(Icon3, obj7);
   }
   items1[3] = isFavorite;
@@ -118,38 +118,38 @@ function PrivateChannelMessageRowLabel(message) {
       });
     }
   }, items1);
-  let obj = message(19505);
+  let obj = message(18766);
   const searchMessageTimestamp = obj.useSearchMessageTimestamp(message, channel);
   const obj2 = { style: tmp.labelContainer, children: items3 };
   const obj3 = { style: tmp.authorRow, children: items2 };
   ({ timestamp, timestampAccessibilityLabel } = searchMessageTimestamp);
-  items2 = [closure_11(message(5919).Text, { lineClamp: 1, variant: "body-md/semibold", color: "interactive-text-active", children: memo }), , ];
+  items2 = [closure_11(message(5504).Text, { lineClamp: 1, variant: "body-md/semibold", color: "interactive-text-active", children: memo }), , ];
   if (muted) {
-    const obj4 = { source: channel(11084), size: message(1187).Icon.Sizes.EXTRA_SMALL, style: tmp.channelStatus };
-    const Icon = tmp4(1187).Icon;
+    const obj4 = { source: channel(11157), size: message(1186).Icon.Sizes.EXTRA_SMALL, style: tmp.channelStatus };
+    const Icon = tmp4(1186).Icon;
     muted = tmp9(Icon, obj4);
   }
   items2[1] = muted;
   let isSystemDMResult = channel.isSystemDM();
   if (isSystemDMResult) {
-    const obj5 = { type: channel(10870).Types.SYSTEM_DM, verified: true };
-    const tmp13 = channel(10870);
+    const obj5 = { type: channel(10387).Types.SYSTEM_DM, verified: true };
+    const tmp13 = channel(10387);
     isSystemDMResult = tmp9(tmp13, obj5);
   }
   items2[2] = isSystemDMResult;
   items3 = [closure_12(closure_4, obj3), , , ];
   const obj6 = { variant: "body-xs/medium", color: "interactive-text-active", lineClamp: 1, style: tmp.timestamp, accessibilityLabel: timestampAccessibilityLabel, children: timestamp };
-  items3[1] = closure_11(message(5919).Text, obj6);
+  items3[1] = closure_11(message(5504).Text, obj6);
   let tmp9Result = null;
   if (message.hasFlag(MessageFlags.SUPPRESS_NOTIFICATIONS)) {
     const obj7 = { size: "xs", style: tmp.suppressNotificationsIcon };
-    tmp9Result = tmp9(tmp4(11928).BellZIcon, obj7);
+    tmp9Result = tmp9(tmp4(11701).BellZIcon, obj7);
   }
   items3[2] = tmp9Result;
   let tmp9Result2 = null;
   if (message.isPoll()) {
     const obj8 = { style: tmp.pollBadge };
-    tmp9Result2 = tmp9(channel(19506), obj8);
+    tmp9Result2 = tmp9(channel(18767), obj8);
   }
   items3[3] = tmp9Result2;
   return closure_12(closure_4, obj2);
@@ -188,12 +188,12 @@ function GuildChannelMessageRowLabel(arg0) {
     }
     if (tmp18) {
       const obj5 = { size: "small", color: colorString, colors: colorStrings };
-      tmp18 = unpackModuleId(tmp2(1187).RoleDot, obj5);
+      tmp18 = unpackModuleId(tmp2(1186).RoleDot, obj5);
     }
     items1 = [tmp18, ];
     const obj6 = { variant: "body-sm/semibold", color: "interactive-text-active", lineClamp: 1, style: {}, gradientColors: tmp22, children: tmp7 };
     tmp22 = undefined;
-    const Text = tmp2(5919).Text;
+    const Text = tmp2(5504).Text;
     if (isRoleStyleAndRoleColorsEligibleForERC) {
       tmp22 = processColorStringsArray;
     }
@@ -204,7 +204,7 @@ function GuildChannelMessageRowLabel(arg0) {
     let tmp21Result = null;
     if (message.hasFlag(MessageFlags.SUPPRESS_NOTIFICATIONS)) {
       const obj8 = { size: "xs", style: tmp.suppressNotificationsIcon };
-      tmp21Result = tmp21(tmp2(11928).BellZIcon, obj8);
+      tmp21Result = tmp21(tmp2(11701).BellZIcon, obj8);
     }
     items2[2] = tmp21Result;
     let tmp21Result2 = null;
@@ -243,12 +243,12 @@ function MessageRowContent(message) {
   const SearchListRow = SearchListRow2.SearchListRow;
   if (isSpoilerHidden) {
     const obj2 = { variant: "body-sm/normal", color: "text-muted", style: tmp.spoilerText, children: intl.string(intl2.t["5uaI/7"]) };
-    const Text = tmp5(5919).Text;
-    intl = tmp5(1113).intl;
+    const Text = tmp5(5504).Text;
+    intl = tmp5(1112).intl;
     tmp4Result = tmp4(Text, obj2);
   } else {
     const obj3 = { message, channel, muted: false, layout: ChannelListLayoutTypes.ChannelListLayoutTypes.COZY, color: "interactive-text-default", lineClamp, messageSizeCacheRef };
-    const NativeMessageChannelRowPreview = tmp5(11045).NativeMessageChannelRowPreview;
+    const NativeMessageChannelRowPreview = tmp5(11125).NativeMessageChannelRowPreview;
     tmp4Result = tmp4(NativeMessageChannelRowPreview, obj3);
   }
   return unpackModuleId(SearchListRow, obj);
@@ -278,7 +278,7 @@ const memoResult = react.memo(function HeaderlessMessageRow(message) {
   const items2 = [UserGuildSettingsStore];
   const tmp2Result3 = message(504);
   const stateFromStores2 = tmp2Result3.useStateFromStores(items2, () => channelMuted.isChannelMuted(guild_id, message.channel_id));
-  message(6848);
+  message(6439);
   let tmp10 = null;
   if (null != stateFromStores) {
     const obj2 = { message, channel: stateFromStores, muted: stateFromStores2, isSpoilerHidden: tmp9, header: null };

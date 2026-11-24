@@ -1,11 +1,11 @@
-// Module ID: 14325
-// Function ID: 14326
+// Module ID: 12564
+// Function ID: 12565
 // Dependencies: [2]
 
-// Module 14325
+// Module 12564
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/checkpoint/2026/character/rive/tex_base_06_mighnight.webp.js");
 
-export default "https://cdn.discordapp.com/assets/content/b5437c9682f5c273d412a0d5700d18b01ce4fd8dd41b5a2eb94f1ac70def0493.webp";
-export const metadata = { fileBytes: 43164 };
+export default "https://cdn.discordapp.com/assets/content/47310f91aeacf2740fcaa93ec5909d4712a57fc8f74d25b2d386fedaf5165421.webp";
+export const metadata = { fileBytes: 119124 };

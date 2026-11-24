@@ -1,10 +1,10 @@
-// Module ID: 18298
-// Function ID: 18299
+// Module ID: 17081
+// Function ID: 17082
 // Name: useStateFromStoresPerformanceDebugging
 // Dependencies: [32, 4, 510, 2]
 // Exports: getUseStateFromStoresDebuggingEnabled, getUseStateFromStoresExecutionCountWarningThreshold, getUseStateFromStoresExecutionTimeWarningThresholdMs, getUseStateFromStoresExecutionWindowThresholdMs, getUseStateFromStoresHookInfo, getUseStateFromStoresSpecificHookFilter, setUseStateFromStoresDebuggingEnabled, setUseStateFromStoresExecutionCountWarningThreshold, setUseStateFromStoresExecutionTimeWarningThresholdMs, setUseStateFromStoresExecutionWindowThresholdMs, setUseStateFromStoresSpecificHookFilter, trackGetStateFromStoresPerformance
 
-// Module 18298 (useStateFromStoresPerformanceDebugging)
+// Module 17081 (useStateFromStoresPerformanceDebugging)
 import logger_Logger from "logger/Logger" /* 4 */;
 import Storage2 from "Storage" /* 510 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;

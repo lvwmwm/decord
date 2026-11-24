@@ -1,18 +1,18 @@
-// Module ID: 20745
-// Function ID: 20746
+// Module ID: 20015
+// Function ID: 20016
 // Name: GuildRoleSubscriptionTierCreationModal
-// Dependencies: [5, 32, 19, 20735, 17828, 21, 17848, 6004, 1113, 20746, 20731, 20747, 2]
+// Dependencies: [5, 32, 19, 20005, 16608, 21, 16628, 5594, 1112, 20016, 20001, 20017, 2]
 // Exports: default
 
-// Module 20745 (GuildRoleSubscriptionTierCreationModal)
+// Module 20015 (GuildRoleSubscriptionTierCreationModal)
 import Fragment from "Fragment" /* 21 */;
-import ToastUtils from "ToastUtils" /* 6004 */;
-import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 17848 */;
+import ToastUtils from "ToastUtils" /* 5594 */;
+import GuildRoleSubscriptionListingEditStateUtilsAll from "GuildRoleSubscriptionListingEditStateUtils" /* 16628 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import RoleTierEditStore from "RoleTierEditStore" /* 20735 */;
-import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 17828 */;
+import RoleTierEditStore from "RoleTierEditStore" /* 20005 */;
+import GuildRoleSubscriptionsConstants from "GuildRoleSubscriptionsConstants" /* 16608 */;
 import size from "module_2" /* 2 */;
 
 let c1, c2;
@@ -114,8 +114,8 @@ export default function GuildRoleSubscriptionTierCreationModal(guildId) {
       ToastUtils;
       let anyErrorMessage = obj.getAnyErrorMessage();
       if (anyErrorMessage == null) {
-        const intl = tmp(1113).intl;
-        anyErrorMessage = intl.string(tmp(1113).t.R0RpRX);
+        const intl = tmp(1112).intl;
+        anyErrorMessage = intl.string(tmp(1112).t.R0RpRX);
       }
       presentError(anyErrorMessage);
     }
@@ -125,9 +125,9 @@ export default function GuildRoleSubscriptionTierCreationModal(guildId) {
     ({ DETAILS: arr[0], CHANNEL_BENEFITS: arr[1], INTANGIBLE_BENEFITS: arr[2], DESIGN: arr[3], CONFIRMATION: arr[4] } = obj);
     return items;
   }, []);
-  const EditStateContextProvider = guildId(20746).EditStateContextProvider;
+  const EditStateContextProvider = guildId(20016).EditStateContextProvider;
   let obj3 = { guildId, children: null };
-  const RoleSubscriptionSettingsDisabledContextProvider = guildId(20731).RoleSubscriptionSettingsDisabledContextProvider;
+  const RoleSubscriptionSettingsDisabledContextProvider = guildId(20001).RoleSubscriptionSettingsDisabledContextProvider;
   let obj4 = {
     guildId,
     modalKey,

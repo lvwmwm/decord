@@ -12,7 +12,7 @@ import _mod738 from "module_738" /* 738 */;
 
 let data, integrations;
 
-const f82481 = (stacktrace) => {
+const f79189 = (stacktrace) => {
   stacktrace = stacktrace.stacktrace;
   if (stacktrace != null) {
     const frames = stacktrace.frames;
@@ -74,14 +74,14 @@ Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 let closure_3 = ["user", "level", "extra", "contexts", "tags", "fingerprint", "propagationContext"];
 
 export { applyClientOptions };
-export function applyDebugIds(exception, arg1) {
+export function applyDebugIds(exception, stackParser) {
   const obj = _mod738;
-  const filenameToDebugIdMap = obj.getFilenameToDebugIdMap(arg1);
+  const filenameToDebugIdMap = obj.getFilenameToDebugIdMap(stackParser);
   exception = exception.exception;
   if (exception != null) {
     const values = exception.values;
     if (values != null) {
-      const item = values.forEach(f82481);
+      const item = values.forEach(f79189);
     }
   }
 }
@@ -145,15 +145,15 @@ export function parseEventHintOrCaptureContext(captureContext) {
     return tmp5;
   }
 }
-export function prepareEvent(normalizeDepth, event_id, event_id2, clone, emit, isolationScope) {
+export function prepareEvent(options, event_id, event_id2, clone, self, setLastEventId) {
   let timestamp;
   let uuid4Result;
-  normalizeDepth = normalizeDepth.normalizeDepth;
+  const normalizeDepth = options.normalizeDepth;
   let num = 3;
   if (undefined !== normalizeDepth) {
     num = normalizeDepth;
   }
-  const normalizeMaxBreadth = normalizeDepth.normalizeMaxBreadth;
+  const normalizeMaxBreadth = options.normalizeMaxBreadth;
   let num2 = 1000;
   if (undefined !== normalizeMaxBreadth) {
     num2 = normalizeMaxBreadth;
@@ -174,10 +174,10 @@ export function prepareEvent(normalizeDepth, event_id, event_id2, clone, emit, i
   }
   integrations = event_id2.integrations;
   if (!integrations) {
-    const integrations1 = normalizeDepth.integrations;
+    const integrations1 = options.integrations;
     integrations = integrations1.map((name) => name.name);
   }
-  applyClientOptions(obj, normalizeDepth);
+  applyClientOptions(obj, options);
   if (integrations.length > 0) {
     obj.sdk = obj.sdk || {};
     let integrations2 = obj.sdk.integrations;
@@ -189,19 +189,19 @@ export function prepareEvent(normalizeDepth, event_id, event_id2, clone, emit, i
     HermesBuiltin.arraySpread(items, integrations, HermesBuiltin.arraySpread(items, integrations2, 0));
     sdk.integrations = items;
   }
-  const tmp14 = emit;
+  const tmp14 = self;
   if (tmp14) {
-    emit.emit("applyFrameMetadata", event_id);
+    self.emit("applyFrameMetadata", event_id);
   }
   if (undefined === event_id.type) {
-    const stackParser = normalizeDepth.stackParser;
+    const stackParser = options.stackParser;
     let obj4 = num(num2[6]);
     const filenameToDebugIdMap = obj4.getFilenameToDebugIdMap(stackParser);
     let exception = obj.exception;
     if (exception != null) {
       let values = exception.values;
       if (values != null) {
-        let item = values.forEach(f82481);
+        let item = values.forEach(f79189);
       }
     }
   }
@@ -212,7 +212,7 @@ export function prepareEvent(normalizeDepth, event_id, event_id2, clone, emit, i
     if (clone) {
       cloneResult = clone.clone();
     } else {
-      const self = this;
+      self = this;
       const self2 = this;
       cloneResult = new num(num2[8]).Scope();
     }
@@ -223,13 +223,13 @@ export function prepareEvent(normalizeDepth, event_id, event_id2, clone, emit, i
     let obj6 = num(num2[0]);
     const result = obj6.addExceptionMechanism(obj, event_id2.mechanism);
   }
-  if (emit) {
-    let eventProcessors = emit.getEventProcessors();
+  if (self) {
+    let eventProcessors = self.getEventProcessors();
   } else {
     eventProcessors = [];
   }
   const obj7 = num(num2[2]);
-  const combinedScopeData = obj7.getCombinedScopeData(isolationScope, tmp20);
+  const combinedScopeData = obj7.getCombinedScopeData(setLastEventId, tmp20);
   const items1 = [...combinedScopeData.attachments];
   if (items1.length) {
     event_id2.attachments = items1;

@@ -1,12 +1,12 @@
-// Module ID: 11063
-// Function ID: 11064
+// Module ID: 11143
+// Function ID: 11144
 // Name: useFormattedTimestamp
-// Dependencies: [32, 19, 1089, 2169, 9374, 2]
+// Dependencies: [32, 19, 1088, 2168, 8821, 2]
 // Exports: default
 
-// Module 11063 (useFormattedTimestamp)
-import DurationsDefault from "Durations" /* 1089 */;
-import _modDef2169 from "module_2169" /* 2169 */;
+// Module 11143 (useFormattedTimestamp)
+import DurationsDefault from "Durations" /* 1088 */;
+import _modDef2168 from "module_2168" /* 2168 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
@@ -17,7 +17,7 @@ let _require;
 function getTimestampUpdateInterval(parsed, timestamp) {
   let tmp = timestamp;
   if (timestamp === undefined) {
-    tmp = _modDef2169();
+    tmp = _modDef2168();
   }
   const absolute = Math.abs(parsed.diff(tmp));
   const obj = items1[Symbol.iterator]();

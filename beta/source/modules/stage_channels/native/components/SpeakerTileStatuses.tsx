@@ -1,21 +1,21 @@
-// Module ID: 13092
-// Function ID: 13093
+// Module ID: 11072
+// Function ID: 11073
 // Name: SpeakerTileStatuses
-// Dependencies: [19, 17, 2133, 5971, 6932, 21, 5306, 575, 504, 10597, 13052, 12838, 12839, 1187, 13093, 13094, 7634, 2]
+// Dependencies: [19, 17, 2131, 5561, 6536, 21, 4913, 575, 504, 9677, 11013, 10768, 10769, 1186, 11073, 11074, 7236, 2]
 // Exports: BlockedStatus, IgnoredStatus
 
-// Module 13092 (SpeakerTileStatuses)
+// Module 11072 (SpeakerTileStatuses)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 1187 */;
-import AssetRegistryDefault from "AssetRegistry" /* 7634 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13094 */;
+import native from "native" /* 1186 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7236 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11074 */;
 import react from "react" /* 19 */;
-import MediaEngineStore from "MediaEngineStore" /* 2133 */;
-import VoiceStateStore from "VoiceStateStore" /* 5971 */;
-import StageChannelRoleStore from "StageChannelRoleStore" /* 6932 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import MediaEngineStore from "MediaEngineStore" /* 2131 */;
+import VoiceStateStore from "VoiceStateStore" /* 5561 */;
+import StageChannelRoleStore from "StageChannelRoleStore" /* 6536 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let obj2;
@@ -41,13 +41,13 @@ const memoResult = react.memo(function VoiceStatus(userId) {
   const tmp = closure_8();
   const obj = userId(504);
   const stateFromStores = obj.useStateFromStores(items, () => MediaEngineStore.isLocalMute(userId), items1);
-  const withLocalSelfMuteDeaf = userId(10597).withLocalSelfMuteDeaf;
-  userId(10597);
+  const withLocalSelfMuteDeaf = userId(9677).withLocalSelfMuteDeaf;
+  userId(9677);
   const items2 = [VoiceStateStore];
   const items3 = [channelId, userId];
   const obj2 = userId(504);
   const stateFromStores1 = obj2.useStateFromStores(items2, () => VoiceStateStore.getVoiceStateForChannel(channelId, userId), items3);
-  const obj3 = userId(10597);
+  const obj3 = userId(9677);
   const result = withLocalSelfMuteDeaf(stateFromStores1, obj3.useLocalSelfMuteDeaf());
   let flag;
   if (result != null) {
@@ -64,23 +64,23 @@ const memoResult = react.memo(function VoiceStatus(userId) {
     flag2 = false;
   }
   if (stateFromStores) {
-    tmp7 = channelId(13052);
+    tmp7 = channelId(11013);
     flag3 = true;
   } else if (flag2) {
-    tmp7 = channelId(12838);
+    tmp7 = channelId(10768);
     flag3 = false;
   } else {
     flag3 = false;
     if (flag) {
-      tmp7 = channelId(12839);
+      tmp7 = channelId(10769);
       flag3 = false;
     }
   }
   let tmp11 = null;
   if (null != tmp7) {
     const items4 = [tmp.voiceStatusWrapper, style];
-    ({ source: tmp7, size: userId(1187).Icon.Sizes.SMALL, color: channelId(575).unsafe_rawColors.BLACK, disableColor: flag3 });
-    const Icon = tmp2(1187).Icon;
+    ({ source: tmp7, size: userId(1186).Icon.Sizes.SMALL, color: channelId(575).unsafe_rawColors.BLACK, disableColor: flag3 });
+    const Icon = tmp2(1186).Icon;
     tmp11 = <View style={items4}>{null}</View>;
   }
   return tmp11;
@@ -95,13 +95,13 @@ const memoResult1 = react.memo(function ModeratorStatus(userId) {
   const tmp = closure_8();
   const obj = userId(504);
   if (obj.useStateFromStores(items, () => StageChannelRoleStore.isModerator(userId, channelId), items1)) {
-    tmp4 = channelId(13093);
+    tmp4 = channelId(11073);
   }
   let tmp6 = null;
   if (null != tmp4) {
     const items2 = [tmp.moderatorStatusWrapper, style];
-    ({ source: tmp4, size: userId(1187).Icon.Sizes.SMALL, color: channelId(575).unsafe_rawColors.BLACK });
-    const Icon = tmp2(1187).Icon;
+    ({ source: tmp4, size: userId(1186).Icon.Sizes.SMALL, color: channelId(575).unsafe_rawColors.BLACK });
+    const Icon = tmp2(1186).Icon;
     tmp6 = <View style={items2}>{null}</View>;
   }
   return tmp6;

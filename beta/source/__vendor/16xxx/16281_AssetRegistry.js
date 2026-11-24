@@ -1,10 +1,10 @@
 // Module ID: 16281
 // Function ID: 16282
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 16281 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "5ad61954329ae43fee881a48ae602d3b", name: "ic_paperclip_24px", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons/user_profile", width: 24, height: 24, scales: [2, 3], hash: "50a11b05117d31e1ad224516819cbd87", name: "ic_clock", type: "png" });

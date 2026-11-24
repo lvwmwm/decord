@@ -1,30 +1,30 @@
-// Module ID: 19607
-// Function ID: 19608
+// Module ID: 18868
+// Function ID: 18869
 // Name: AddFriendsScreen
-// Dependencies: [32, 5, 19, 17, 8765, 5248, 1388, 15019, 1072, 14997, 21, 5306, 575, 14995, 7660, 6004, 1113, 8475, 14999, 1380, 7918, 7937, 7824, 19608, 5889, 1256, 8476, 563, 12, 5362, 18769, 7259, 10271, 15894, 7418, 10577, 7443, 6008, 8087, 19609, 19610, 19612, 19613, 2]
+// Dependencies: [32, 5, 19, 17, 8360, 4855, 1386, 13605, 1071, 13583, 21, 4913, 575, 13581, 7262, 5594, 1112, 8066, 13585, 1378, 7520, 7539, 7426, 18869, 5474, 1255, 8067, 563, 12, 4969, 17565, 6864, 9659, 14648, 7020, 9656, 7045, 5598, 7690, 18870, 18871, 18873, 18874, 2]
 // Exports: default
 
-// Module 19607 (AddFriendsScreen)
+// Module 18868 (AddFriendsScreen)
 import _modDef12 from "module_12" /* 12 */;
 import nativeDefault from "native" /* 575 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 7660 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8476 */;
-import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 14995 */;
-import ContactSyncConstants from "ContactSyncConstants" /* 14997 */;
-import FriendsScreenConstants from "FriendsScreenConstants" /* 15019 */;
-import IncomingRequestRow from "IncomingRequestRow" /* 19610 */;
-import ContactSuggestionRow2 from "ContactSuggestionRow" /* 19612 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import InstantInviteActionCreatorsDefault from "InstantInviteActionCreators" /* 7262 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8067 */;
+import ContactSyncModalActionCreators from "ContactSyncModalActionCreators" /* 13581 */;
+import ContactSyncConstants from "ContactSyncConstants" /* 13583 */;
+import FriendsScreenConstants from "FriendsScreenConstants" /* 13605 */;
+import IncomingRequestRow from "IncomingRequestRow" /* 18871 */;
+import ContactSuggestionRow2 from "ContactSuggestionRow" /* 18873 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import GameRelationshipStore from "GameRelationshipStore" /* 8765 */;
-import RelationshipStore from "RelationshipStore" /* 5248 */;
-import UserStore from "UserStore" /* 1388 */;
-import Constants from "Constants" /* 1072 */;
+import GameRelationshipStore from "GameRelationshipStore" /* 8360 */;
+import RelationshipStore from "RelationshipStore" /* 4855 */;
+import UserStore from "UserStore" /* 1386 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let c5, constants;
@@ -134,12 +134,12 @@ let props = function _handleShare() {
   return obj(...arguments);
 };
 function areHydratedGameFriendRequestRowStatesEqual(arr, arg1) {
-  const f120700 = (user, index) => user.user === closure_0[index].user && user.applicationId === closure_0[index].applicationId;
+  const f116096 = (user, index) => user.user === closure_0[index].user && user.applicationId === closure_0[index].applicationId;
   let closure_0 = arg1;
   let tmp = arr === arg1;
   if (!tmp) {
-    tmp = arr.length === arg1.length && arr.every(f120700);
-    const tmp2 = arr.length === arg1.length && arr.every(f120700);
+    tmp = arr.length === arg1.length && arr.every(f116096);
+    const tmp2 = arr.length === arg1.length && arr.every(f116096);
   }
   return tmp;
 }
@@ -645,7 +645,7 @@ export default function AddFriendsScreen(navigation) {
                   component() {
                           const obj = { accepted: c8.includes(user.id), user, start, end, onPress: onPress2, onDeclineIncomingRequest, onAcceptIncomingRequest };
                           const IncomingFriendRequestRow = IncomingRequestRow.IncomingFriendRequestRow;
-                          return onPress2(IncomingFriendRequestRow, obj);
+                          return authStore4(IncomingFriendRequestRow, obj);
                         }
                 };
               }
@@ -681,7 +681,7 @@ export default function AddFriendsScreen(navigation) {
                           let id;
                           const obj = { accepted: null != first1.find((userId) => userId.userId === id.id && userId.applicationId === tmp), applicationId, user, start, end, onPress: onPress2, onDeclineIncomingRequest, onAcceptIncomingRequest };
                           const ConnectedIncomingGameFriendRequestRow = IncomingRequestRow.ConnectedIncomingGameFriendRequestRow;
-                          return onPress2(ConnectedIncomingGameFriendRequestRow, obj);
+                          return authStore4(ConnectedIncomingGameFriendRequestRow, obj);
                         }
                 };
                 return obj7;
@@ -725,7 +725,7 @@ export default function AddFriendsScreen(navigation) {
                         }
                       };
                       const ContactSuggestionRow = ContactSuggestionRow2.ContactSuggestionRow;
-                      return onPress2(ContactSuggestionRow, obj);
+                      return authStore4(ContactSuggestionRow, obj);
                     }
               };
               return obj;

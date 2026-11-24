@@ -1,11 +1,11 @@
-// Module ID: 9482
-// Function ID: 9483
+// Module ID: 9000
+// Function ID: 9001
 // Name: useSlayerStorefrontDevApplicationIdOverride
-// Dependencies: [9483, 2]
+// Dependencies: [9001, 2]
 // Exports: useSlayerStorefrontDevApplicationIdOverride
 
-// Module 9482 (useSlayerStorefrontDevApplicationIdOverride)
-import useSlayerStorefrontDevOverrideStore from "useSlayerStorefrontDevOverrideStore" /* 9483 */;
+// Module 9000 (useSlayerStorefrontDevApplicationIdOverride)
+import useSlayerStorefrontDevOverrideStore from "useSlayerStorefrontDevOverrideStore" /* 9001 */;
 import size from "module_2" /* 2 */;
 
 let closure_0 = useSlayerStorefrontDevOverrideStore.useSlayerStorefrontDevOverrideStore;

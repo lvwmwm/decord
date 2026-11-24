@@ -1,16 +1,16 @@
-// Module ID: 11783
-// Function ID: 11784
+// Module ID: 9651
+// Function ID: 9652
 // Name: UserAffinitiesActionCreators
-// Dependencies: [6836, 8553, 1072, 572, 1285, 11784, 2]
+// Dependencies: [6427, 8143, 1071, 572, 1284, 9652, 2]
 // Exports: fetchUserAffinitiesV2, setDevToolsUserAffinityOverride
 
-// Module 11783 (UserAffinitiesActionCreators)
+// Module 9651 (UserAffinitiesActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import HTTPUtils from "HTTPUtils" /* 1285 */;
-import UserAffinitiesTypes from "UserAffinitiesTypes" /* 11784 */;
-import ConsentStore from "ConsentStore" /* 6836 */;
-import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 8553 */;
-import Constants from "Constants" /* 1072 */;
+import HTTPUtils from "HTTPUtils" /* 1284 */;
+import UserAffinitiesTypes from "UserAffinitiesTypes" /* 9652 */;
+import ConsentStore from "ConsentStore" /* 6427 */;
+import UserAffinitiesV2Store from "UserAffinitiesV2Store" /* 8143 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 let body;

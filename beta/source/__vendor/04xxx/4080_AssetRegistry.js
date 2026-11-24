@@ -1,10 +1,10 @@
 // Module ID: 4080
 // Function ID: 4081
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 4080 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9nYW1lX2ludml0ZV9jaGFubmVscw==", scales: [1], hash: "4a1d80c65b65fc567813e0c38bd867c1", name: "hu.messages.4a1d80c65b65fc567813e0c38bd867c1.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9zbGF5ZXJfc3RvcmVmcm9udC9pbnRs", scales: [1], hash: "09db25afa92161c3dd4581df60f92e4a", name: "ro.messages.09db25afa92161c3dd4581df60f92e4a.compiled.messages", type: "jsona" });

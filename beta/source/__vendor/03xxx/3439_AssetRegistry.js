@@ -1,10 +1,10 @@
 // Module ID: 3439
 // Function ID: 3440
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 3439 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9hZ2VfYXNzdXJhbmNl", scales: [1], hash: "002956967ef92997679f58df473e8861", name: "ro.messages.002956967ef92997679f58df473e8861.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/checkpoint", scales: [1], hash: "3c3fa8df0626d171296666f2bba2b57f", name: "Checkpoint.compiled.messages", type: "jsona" });

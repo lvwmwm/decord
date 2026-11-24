@@ -1,21 +1,21 @@
-// Module ID: 15077
-// Function ID: 15078
+// Module ID: 13664
+// Function ID: 13665
 // Name: AcceptInviteContainer
-// Dependencies: [5, 19, 5218, 5177, 6042, 1072, 5224, 21, 5306, 575, 1502, 504, 7493, 1406, 7865, 2121, 8841, 7989, 15078, 7660, 10805, 15079, 7415, 5367, 2]
+// Dependencies: [5, 19, 4825, 4784, 5632, 1071, 4831, 21, 4913, 575, 1500, 504, 7095, 1404, 7467, 2119, 8437, 7592, 13665, 7262, 10521, 13666, 7017, 4974, 2]
 // Exports: default
 
-// Module 15077 (AcceptInviteContainer)
+// Module 13664 (AcceptInviteContainer)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import GuildMemberConstants from "GuildMemberConstants" /* 5224 */;
-import NavigatorHeader from "NavigatorHeader" /* 7493 */;
+import Constants from "Constants" /* 1071 */;
+import GuildMemberConstants from "GuildMemberConstants" /* 4831 */;
+import NavigatorHeader from "NavigatorHeader" /* 7095 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import GuildMemberStore from "GuildMemberStore" /* 5218 */;
-import GuildStore from "GuildStore" /* 5177 */;
-import InviteStore from "InviteStore" /* 6042 */;
-import createStyles from "createStyles" /* 5306 */;
+import GuildMemberStore from "GuildMemberStore" /* 4825 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import InviteStore from "InviteStore" /* 5632 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let c1, c3, closure_2, closure_3, navigation;

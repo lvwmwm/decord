@@ -1,14 +1,14 @@
-// Module ID: 18319
-// Function ID: 18320
+// Module ID: 17102
+// Function ID: 17103
 // Name: PasskeyUpsellActionCreators
-// Dependencies: [5338, 5139, 5140, 5542, 18320, 2121, 2]
+// Dependencies: [4945, 4746, 4747, 5127, 17103, 2119, 2]
 
-// Module 18319 (PasskeyUpsellActionCreators)
-import asyncRequire from "asyncRequire" /* 2121 */;
-import dismissible_content from "dismissible_content" /* 5139 */;
-import DismissibleContentUtils from "DismissibleContentUtils" /* 5140 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5338 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
+// Module 17102 (PasskeyUpsellActionCreators)
+import asyncRequire from "asyncRequire" /* 2119 */;
+import dismissible_content from "dismissible_content" /* 4746 */;
+import DismissibleContentUtils from "DismissibleContentUtils" /* 4747 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4945 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
 import size from "module_2" /* 2 */;
 
 const PASSKEY_UPSELL_KEY = "PASSKEY_UPSELL_KEY";
@@ -18,13 +18,13 @@ let obj = {
     if (!obj.UNSAFE_isDismissibleContentDismissed(dismissible_content.DismissibleContent.PASSWORDLESS_UPSELL)) {
       const self = this;
       const tmpResult = DismissibleContentUtils;
-      const markDismissibleContentAsShown = tmpResult.requestMarkDismissibleContentAsShown(tmp(5139).DismissibleContent.PASSWORDLESS_UPSELL);
+      const markDismissibleContentAsShown = tmpResult.requestMarkDismissibleContentAsShown(tmp(4746).DismissibleContent.PASSWORDLESS_UPSELL);
       const result = this.openPasskeyUpsellPromoSheet();
     }
   },
   openPasskeyUpsellPromoSheet() {
     const obj = ActionSheetActionCreatorsDefault;
-    obj.openLazy(asyncRequire(18320, dependencyMap.paths), PASSKEY_UPSELL_KEY);
+    obj.openLazy(asyncRequire(17103, dependencyMap.paths), PASSKEY_UPSELL_KEY);
   },
   closePasskeyUpsellPromoSheet() {
     const obj = ActionSheetActionCreatorsDefault;

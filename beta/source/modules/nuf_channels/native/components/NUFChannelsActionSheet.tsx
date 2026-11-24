@@ -1,14 +1,14 @@
-// Module ID: 16080
-// Function ID: 16081
+// Module ID: 14848
+// Function ID: 14849
 // Name: NUFChannelsActionSheet
-// Dependencies: [19, 5152, 21, 5542, 5556, 16081, 16082, 1113, 2]
+// Dependencies: [19, 4759, 21, 5127, 5141, 14849, 14850, 1112, 2]
 // Exports: default
 
-// Module 16080 (NUFChannelsActionSheet)
+// Module 14848 (NUFChannelsActionSheet)
 import Fragment from "Fragment" /* 21 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
-import NUFTemplateV2Default from "NUFTemplateV2" /* 16081 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4759 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
+import NUFTemplateV2Default from "NUFTemplateV2" /* 14849 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -29,12 +29,12 @@ export default function NUFChannelsActionSheet(markAsDismissed) {
       tmp2(ContentDismissActionType.UNKNOWN);
     }
   }, items);
-  const BottomSheet = markAsDismissed(5556).BottomSheet;
-  ({ illustration: null, title: intl.string(markAsDismissed(1113).t.Ay9424), description: intl2.string(markAsDismissed(1113).t.mufH2P), CTALabel: intl3.string(markAsDismissed(1113).t.BddRzS), onCTAPress: callback });
+  const BottomSheet = markAsDismissed(5141).BottomSheet;
+  ({ illustration: null, title: intl.string(markAsDismissed(1112).t.Ay9424), description: intl2.string(markAsDismissed(1112).t.mufH2P), CTALabel: intl3.string(markAsDismissed(1112).t.BddRzS), onCTAPress: callback });
   const tmp2 = NUFTemplateV2Default;
-  intl = markAsDismissed(1113).intl;
-  intl2 = markAsDismissed(1113).intl;
-  intl3 = markAsDismissed(1113).intl;
+  intl = markAsDismissed(1112).intl;
+  intl2 = markAsDismissed(1112).intl;
+  intl3 = markAsDismissed(1112).intl;
   return <BottomSheet onDismiss={function onDismiss() {
     let tmpResult;
     if (markAsDismissed != null) {

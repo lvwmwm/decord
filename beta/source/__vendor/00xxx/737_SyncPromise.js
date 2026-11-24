@@ -178,8 +178,8 @@ export function rejectedSyncPromise(arg0) {
   });
   return tmp;
 }
-export function resolvedSyncPromise(arg0) {
-  let closure_0 = arg0;
+export function resolvedSyncPromise(tmpResult) {
+  let closure_0 = tmpResult;
   const tmp = new c3((fn) => {
     fn(closure_0);
   });

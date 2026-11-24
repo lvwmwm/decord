@@ -1,47 +1,47 @@
-// Module ID: 13489
-// Function ID: 13490
+// Module ID: 13022
+// Function ID: 13023
 // Name: AppLauncherCommandViewScreen
-// Dependencies: [5, 32, 19, 17, 5307, 11406, 5212, 1501, 1072, 1626, 21, 1655, 5883, 5306, 575, 13490, 504, 5538, 5541, 1708, 5544, 5303, 5927, 1113, 6021, 12580, 6057, 5903, 13492, 5975, 6826, 13385, 1263, 13439, 13494, 2119, 12700, 13440, 12765, 1496, 12015, 7475, 11635, 13495, 11636, 8879, 2020, 8874, 13496, 12581, 5560, 5919, 13497, 13498, 13530, 1187, 38, 13461, 11405, 8724, 11411, 11420, 13531, 13532, 13448, 13449, 2]
+// Dependencies: [5, 32, 19, 17, 4914, 10436, 4819, 1499, 1071, 1624, 21, 1653, 5468, 4913, 575, 13023, 504, 5123, 5126, 1706, 5129, 4910, 5512, 1112, 5611, 12106, 5650, 5488, 13025, 5565, 6417, 12919, 1262, 12896, 13027, 2117, 10674, 12860, 10694, 1494, 11773, 7077, 11620, 13028, 11621, 8474, 2018, 8469, 13029, 10676, 5145, 5504, 13030, 13031, 13064, 1186, 38, 12993, 10682, 8314, 10441, 10517, 13065, 13066, 12980, 12981, 2]
 // Exports: default
 
-// Module 13489 (AppLauncherCommandViewScreen)
+// Module 13022 (AppLauncherCommandViewScreen)
 import nativeDefault from "native" /* 575 */;
-import intl4 from "intl" /* 1113 */;
-import native from "native" /* 1187 */;
-import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1626 */;
-import LinearGradientDefault from "LinearGradient" /* 5883 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import BaseTextButton2 from "BaseTextButton" /* 5927 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5975 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6057 */;
-import utils_UploadUtils from "utils/UploadUtils" /* 8879 */;
-import MediaKeyboardUtils from "MediaKeyboardUtils" /* 11635 */;
-import showMediaKeyboardActionSheet from "showMediaKeyboardActionSheet" /* 11636 */;
-import AppLauncherContext from "AppLauncherContext" /* 12580 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 12581 */;
-import AppLauncherUtils from "AppLauncherUtils" /* 12700 */;
-import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 13385 */;
-import ApplicationCommandOptionValueParser from "ApplicationCommandOptionValueParser" /* 13440 */;
-import AssetRegistryDefault from "AssetRegistry" /* 13448 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 13449 */;
-import AppLauncherCommandViewHeader from "AppLauncherCommandViewHeader" /* 13490 */;
-import ApplicationCommandValidationUtils from "ApplicationCommandValidationUtils" /* 13492 */;
-import application_commands_ApplicationCommandValidationUtils from "application_commands/ApplicationCommandValidationUtils" /* 13494 */;
-import CommandOptionViewDefault from "CommandOptionView" /* 13497 */;
-import AssetRegistryDefault3 from "AssetRegistry" /* 13531 */;
-import AssetRegistryDefault4 from "AssetRegistry" /* 13532 */;
+import intl4 from "intl" /* 1112 */;
+import native from "native" /* 1186 */;
+import MediaKeyboardConstants from "MediaKeyboardConstants" /* 1624 */;
+import LinearGradientDefault from "LinearGradient" /* 5468 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import BaseTextButton2 from "BaseTextButton" /* 5512 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5565 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5650 */;
+import utils_UploadUtils from "utils/UploadUtils" /* 8474 */;
+import AppLauncherUtils from "AppLauncherUtils" /* 10674 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 10676 */;
+import MediaKeyboardUtils from "MediaKeyboardUtils" /* 11620 */;
+import showMediaKeyboardActionSheet from "showMediaKeyboardActionSheet" /* 11621 */;
+import AppLauncherContext from "AppLauncherContext" /* 12106 */;
+import ApplicationCommandOptionValueParser from "ApplicationCommandOptionValueParser" /* 12860 */;
+import AppLauncherNativeUtils from "AppLauncherNativeUtils" /* 12919 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12980 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 12981 */;
+import AppLauncherCommandViewHeader from "AppLauncherCommandViewHeader" /* 13023 */;
+import ApplicationCommandValidationUtils from "ApplicationCommandValidationUtils" /* 13025 */;
+import application_commands_ApplicationCommandValidationUtils from "application_commands/ApplicationCommandValidationUtils" /* 13027 */;
+import CommandOptionViewDefault from "CommandOptionView" /* 13030 */;
+import AssetRegistryDefault3 from "AssetRegistry" /* 13065 */;
+import AssetRegistryDefault4 from "AssetRegistry" /* 13066 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import AccessibilityStore from "AccessibilityStore" /* 5307 */;
-import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 11406 */;
-import GuildRoleStore from "GuildRoleStore" /* 5212 */;
-import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1501 */;
-import Constants from "Constants" /* 1072 */;
+import AccessibilityStore from "AccessibilityStore" /* 4914 */;
+import ApplicationCommandIndexStore from "ApplicationCommandIndexStore" /* 10436 */;
+import GuildRoleStore from "GuildRoleStore" /* 4819 */;
+import AppLauncherNativeConstants from "AppLauncherNativeConstants" /* 1499 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import module_1655 from "module_1655" /* 1655 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import module_1653 from "module_1653" /* 1653 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -115,15 +115,15 @@ function AppLauncherCommandViewFooter(onHeightChange) {
   [tmp8, c2] = _slicedToArray(react.useState(false), 2);
   const tmp7 = _slicedToArray(react.useState(false), 2);
   let items1 = [closure_26, stateFromStores, tmp8, , , , , , , , ];
-  const useAnimatedStyle = onHeightChange(1655).useAnimatedStyle;
-  const tmp9 = onHeightChange(1655);
-  items1[3] = onHeightChange(1655).withDelay;
-  items1[4] = onHeightChange(5538).withTiming;
-  items1[5] = onHeightChange(5541).timingStandard;
+  const useAnimatedStyle = onHeightChange(1653).useAnimatedStyle;
+  const tmp9 = onHeightChange(1653);
+  items1[3] = onHeightChange(1653).withDelay;
+  items1[4] = onHeightChange(5123).withTiming;
+  items1[5] = onHeightChange(5126).timingStandard;
   items1[6] = closure_25;
-  items1[7] = onHeightChange(1708).scheduleOnRN;
-  items1[8] = onHeightChange(5544).triggerHapticFeedback;
-  items1[9] = onHeightChange(5544).HapticFeedbackTypes;
+  items1[7] = onHeightChange(1706).scheduleOnRN;
+  items1[8] = onHeightChange(5129).triggerHapticFeedback;
+  items1[9] = onHeightChange(5129).HapticFeedbackTypes;
   items1[10] = isSending;
   let c0;
   let c1;
@@ -197,7 +197,7 @@ function AppLauncherCommandViewFooter(onHeightChange) {
   let items3 = [closure_27, footerStickyInsetBottom];
   c0 = undefined;
   [tmp22, tmp23] = items3;
-  const tmp4Result = tmp4(1655);
+  const tmp4Result = tmp4(1653);
   class AppLauncherCommandViewScreenTsx3 {
     constructor() {
       const obj = { bottom: -_undefined.get() };
@@ -225,9 +225,9 @@ function AppLauncherCommandViewFooter(onHeightChange) {
   const rect = { width: "100%", top: -12, left: tmp.footerContainer.paddingHorizontal, position: "absolute" };
   items6 = [rect, animatedStyle2];
   point = { x: 0, y: 12 / (first + 12) };
-  const View = module_1655.View;
+  const View = module_1653.View;
   items7 = [, ];
-  const tmp4Result2 = tmp4(5303);
+  const tmp4Result2 = tmp4(4910);
   items7[0] = tmp4Result2.hexWithOpacity(tmp.linearGradient.backgroundColor, 0);
   items7[1] = tmp.linearGradient.backgroundColor;
   items8 = [closure_20(LinearGradient, obj3), ];
@@ -241,16 +241,16 @@ function AppLauncherCommandViewFooter(onHeightChange) {
     },
     disabled: !enableSubmit,
     style: tmp.submitButton,
-    text: intl.string(tmp4(1113).t.TXNS7S),
+    text: intl.string(tmp4(1112).t.TXNS7S),
     icon: closure_20(View2, obj5),
     iconPosition: "end"
   };
-  const BaseTextButton = tmp4(5927).BaseTextButton;
-  intl = tmp4(1113).intl;
+  const BaseTextButton = tmp4(5512).BaseTextButton;
+  intl = tmp4(1112).intl;
   obj5 = { style: animatedStyle1, children: closure_20(SendMessageIcon, obj6) };
-  View2 = module_1655.View;
+  View2 = module_1653.View;
   obj6 = { style: { marginLeft: 8 }, color: nativeDefault.unsafe_rawColors.WHITE, size: "sm" };
-  SendMessageIcon = tmp4(6021).SendMessageIcon;
+  SendMessageIcon = tmp4(5611).SendMessageIcon;
   items8[1] = closure_20(BaseTextButton, obj4);
   return closure_21(View, obj2);
 }
@@ -679,7 +679,7 @@ function AppLauncherCommandViewInner(command) {
           id = rootCommand.id;
         }
         num = firstInvalidOption.type;
-        ApplicationCommandOptionType = tmp13(2119).ApplicationCommandOptionType;
+        ApplicationCommandOptionType = tmp13(2117).ApplicationCommandOptionType;
         if (num == null) {
           num = 3;
         }
@@ -949,7 +949,7 @@ function AppLauncherCommandViewInner(command) {
               }
             }
             const tmpResult2 = MediaKeyboardUtils;
-            const result2 = tmpResult2.addAttachmentForCommand(channelId, chatInputRef, result1, obj, tmp(8874).UploadOrigin.IMAGE_PICKER);
+            const result2 = tmpResult2.addAttachmentForCommand(channelId, chatInputRef, result1, obj, tmp(8469).UploadOrigin.IMAGE_PICKER);
           },
         onViewAll() {
             obj = { draftType: mediaKeyboardDraftType };
@@ -1555,7 +1555,7 @@ let react = react_mod;
 ({ AnalyticEvents: closure_16, NOOP: closure_17, VerticalGradient: closure_18 } = Constants);
 const MediaKeyboardTarget = MediaKeyboardConstants.MediaKeyboardTarget;
 ({ jsx: closure_20, jsxs: closure_21, Fragment: closure_22 } = Fragment);
-const LinearGradient = module_1655.createAnimatedComponent(LinearGradientDefault);
+const LinearGradient = module_1653.createAnimatedComponent(LinearGradientDefault);
 let createStyles = createStyles_mod;
 let obj = { container: obj2, optionsContainer: obj3, requiredOptionsContainer: { marginTop: 24, gap: 24 }, optionalOptionsContainer: {}, optionalOptionsChild: { marginBottom: 24 }, optionalOptionsFirstChild: { marginTop: 12 }, optionalOptionsLastChild: { marginBottom: 12 }, footerContainer: { position: "absolute", left: 0, bottom: 0, right: 0, paddingHorizontal: DEFAULT_CONTENT_PADDING }, submitButton: { flex: 1, overflow: "hidden" }, optionalOptionsSectionTitle: { marginTop: 36 }, optionalOptionList: { marginTop: 12 }, noRequiredOptionsCalloutContainer: obj4, noOptionCalloutContainer: obj5, emptyState: { backgroundColor: "transparent", justifyContent: "flex-start", paddingTop: 30 }, emptyStateContainer: obj6, failureStateButtonWrapper: { marginTop: 24, alignSelf: "center" }, failureStateButtonPill: obj7, commandNameContainer: { alignItems: "center", justifyContent: "center", textAlign: "center" }, linearGradient: obj8 };
 obj2 = { height: "100%", backgroundColor: nativeDefault.colors.MOBILE_KEYBOARD_PANEL_BACKGROUND };

@@ -1,16 +1,16 @@
-// Module ID: 15613
-// Function ID: 15614
+// Module ID: 14345
+// Function ID: 14346
 // Name: SafetySystemNotificationEmbed
-// Dependencies: [17, 1072, 8161, 8040, 8205, 8655, 15611, 15612, 2]
+// Dependencies: [17, 1071, 7764, 7643, 7808, 8245, 14343, 14344, 2]
 // Exports: createSafetySystemNotificationEmbed
 
-// Module 15613 (SafetySystemNotificationEmbed)
+// Module 14345 (SafetySystemNotificationEmbed)
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1072 */;
-import SafetyHubUtils from "SafetyHubUtils" /* 8205 */;
-import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8655 */;
-import SafetyWarningAgeUtils from "SafetyWarningAgeUtils" /* 15611 */;
-import SafetyWarningAgeTextExperiment from "SafetyWarningAgeTextExperiment" /* 15612 */;
+import Constants from "Constants" /* 1071 */;
+import SafetyHubUtils from "SafetyHubUtils" /* 7808 */;
+import renderer_EmbedUtils from "renderer/EmbedUtils" /* 8245 */;
+import SafetyWarningAgeUtils from "SafetyWarningAgeUtils" /* 14343 */;
+import SafetyWarningAgeTextExperiment from "SafetyWarningAgeTextExperiment" /* 14344 */;
 import size from "module_2" /* 2 */;
 
 const Image = react_native.Image;
@@ -66,7 +66,7 @@ export function createSafetySystemNotificationEmbed(message) {
             if (str == null) {
               str = "";
             }
-            const obj2 = { titleText: str, titleIcon: tmp6Result7.getAssetUriForEmbed(Image.resolveAssetSource(importDefault("danger" === parseMessageForPropsResult.icon ? 8161 : 8040))), subtitleText: formatSafetyWarningAge(daysAgo, tmp6Result10.getIsSafetyWarningAgeTextEnabled("safety_warning_system_message")), descriptionText: str4, primaryCtaText: text, primaryCtaType: type1, primaryCtaKey: key, secondaryCtaText: text1, secondaryCtaType: type2, secondaryCtaKey: key1, footerTheme: parseMessageForPropsResult.theme };
+            const obj2 = { titleText: str, titleIcon: tmp6Result7.getAssetUriForEmbed(Image.resolveAssetSource(importDefault("danger" === parseMessageForPropsResult.icon ? 7764 : 7643))), subtitleText: formatSafetyWarningAge(daysAgo, tmp6Result10.getIsSafetyWarningAgeTextEnabled("safety_warning_system_message")), descriptionText: str4, primaryCtaText: text, primaryCtaType: type1, primaryCtaKey: key, secondaryCtaText: text1, secondaryCtaType: type2, secondaryCtaKey: key1, footerTheme: parseMessageForPropsResult.theme };
             tmp6Result7 = renderer_EmbedUtils;
             formatSafetyWarningAge = SafetyWarningAgeUtils.formatSafetyWarningAge;
             SafetyWarningAgeUtils;

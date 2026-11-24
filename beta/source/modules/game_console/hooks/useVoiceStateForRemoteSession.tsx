@@ -1,14 +1,14 @@
-// Module ID: 10818
-// Function ID: 10819
+// Module ID: 10853
+// Function ID: 10854
 // Name: useVoiceStateForRemoteSession
-// Dependencies: [502, 5971, 6062, 504, 2]
+// Dependencies: [502, 5561, 5655, 504, 2]
 // Exports: default
 
-// Module 10818 (useVoiceStateForRemoteSession)
+// Module 10853 (useVoiceStateForRemoteSession)
 import get_initialized from "get initialized" /* 504 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import VoiceStateStore from "VoiceStateStore" /* 5971 */;
-import GameConsoleStore from "GameConsoleStore" /* 6062 */;
+import VoiceStateStore from "VoiceStateStore" /* 5561 */;
+import GameConsoleStore from "GameConsoleStore" /* 5655 */;
 import size from "module_2" /* 2 */;
 
 let id, voiceStateForSession;

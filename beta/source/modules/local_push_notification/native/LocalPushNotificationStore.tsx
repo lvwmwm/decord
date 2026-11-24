@@ -1,18 +1,18 @@
-// Module ID: 16221
-// Function ID: 16222
+// Module ID: 14994
+// Function ID: 14995
 // Name: LocalPushNotificationStore
-// Dependencies: [5177, 6927, 7397, 1072, 12922, 2169, 1113, 504, 572, 2]
+// Dependencies: [4784, 6531, 6999, 1071, 10861, 2168, 1112, 504, 572, 2]
 
-// Module 16221 (LocalPushNotificationStore)
+// Module 14994 (LocalPushNotificationStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import Constants2 from "Constants" /* 1072 */;
-import intl2 from "intl" /* 1113 */;
-import _modDef2169 from "module_2169" /* 2169 */;
-import PushNotificationDefault from "PushNotification" /* 12922 */;
-import GuildStore from "GuildStore" /* 5177 */;
-import GuildVerificationStore from "GuildVerificationStore" /* 6927 */;
-import Constants from "Constants" /* 7397 */;
+import Constants2 from "Constants" /* 1071 */;
+import intl2 from "intl" /* 1112 */;
+import _modDef2168 from "module_2168" /* 2168 */;
+import PushNotificationDefault from "PushNotification" /* 10861 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import GuildVerificationStore from "GuildVerificationStore" /* 6531 */;
+import Constants from "Constants" /* 6999 */;
 import size from "module_2" /* 2 */;
 
 let userInfo;
@@ -70,16 +70,16 @@ let obj = {
           let obj;
           const verificationLevel = guild.verificationLevel;
           if (VerificationLevels.MEDIUM === verificationLevel) {
-            obj = _modDef2169(check.accountDeadline);
+            obj = _modDef2168(check.accountDeadline);
           } else if (VerificationLevels.HIGH === verificationLevel) {
-            obj = _modDef2169(check.memberDeadline);
+            obj = _modDef2168(check.memberDeadline);
           }
           if (null != obj) {
-            if (!obj.isSameOrBefore(_modDef2169(), "minute")) {
+            if (!obj.isSameOrBefore(_modDef2168(), "minute")) {
               const obj2 = { type: hasOwnProperty.GUILD_VERIFICATION, guildId: guild.id };
               set.add(obj2);
               const obj3 = { userInfo: obj2, fireDate: obj.format(metroRequire), alertTitle: guild.name, alertBody: intl.string(intl2.t["hrDBa+"]), category: "local" };
-              const scheduleLocalNotification = tmp16(12922).scheduleLocalNotification;
+              const scheduleLocalNotification = tmp16(10861).scheduleLocalNotification;
               PushNotificationDefault;
               intl = intl2.intl;
               const result = scheduleLocalNotification(obj3);

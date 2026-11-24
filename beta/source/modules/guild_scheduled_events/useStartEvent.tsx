@@ -1,10 +1,10 @@
-// Module ID: 8439
-// Function ID: 8440
+// Module ID: 8030
+// Function ID: 8031
 // Name: useStartEvent
-// Dependencies: [5, 32, 19, 8440, 8442, 6747, 2]
+// Dependencies: [5, 32, 19, 8031, 8033, 6349, 2]
 // Exports: default
 
-// Module 8439 (useStartEvent)
+// Module 8030 (useStartEvent)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;

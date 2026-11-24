@@ -1,10 +1,10 @@
 // Module ID: 17907
 // Function ID: 17908
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 17907 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/avatars", width: 161, height: 160, scales: [1], hash: "a65b20898883190dcbc92bb129f3d9b7", name: "wumpus_1", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 24, height: 24, scales: [2, 3], hash: "a6bdad4cfb0f8a1449a3c7f935d8448d", name: "ic_guild_video_24px", type: "png" });

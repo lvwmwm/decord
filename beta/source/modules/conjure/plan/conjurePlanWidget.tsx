@@ -1,17 +1,17 @@
-// Module ID: 13719
-// Function ID: 13720
+// Module ID: 18566
+// Function ID: 18567
 // Name: conjurePlanWidget
-// Dependencies: [32, 19, 2189, 7017, 12149, 13720, 13721, 12251, 13230, 504, 2]
+// Dependencies: [32, 19, 2188, 6621, 10278, 18567, 18568, 10317, 18316, 504, 2]
 // Exports: useConjurePlanWidget
 
-// Module 13719 (conjurePlanWidget)
-import _mod12149 from "module_12149" /* 12149 */;
-import ApplicationAssetType from "ApplicationAssetType" /* 13720 */;
-import ApplicationAssetVisibility from "ApplicationAssetVisibility" /* 13721 */;
+// Module 18566 (conjurePlanWidget)
+import _mod10278 from "module_10278" /* 10278 */;
+import ApplicationAssetType from "ApplicationAssetType" /* 18567 */;
+import ApplicationAssetVisibility from "ApplicationAssetVisibility" /* 18568 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import LocaleStore from "LocaleStore" /* 2189 */;
-import ConjureProjectStore_mod from "ConjureProjectStore" /* 7017 */;
+import LocaleStore from "LocaleStore" /* 2188 */;
+import ConjureProjectStore_mod from "ConjureProjectStore" /* 6621 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -117,21 +117,21 @@ function sampleValues(surfaces, sample_data, arg2) {
     let tmp7 = first;
     if ("image" === obj.get(first)) {
       let _String = String;
-      let tmp15 = arg2[String(undefined, tmp8)];
-      if (null != tmp15) {
-        let obj3 = { type: _mod12149.ResolvedValueType.MEDIA, media: size };
-        size = { url: tmp16, width: v256, height: v256 };
+      let tmp13 = arg2[String(undefined, tmp8)];
+      if (null != tmp13) {
+        let obj3 = { type: _mod10278.ResolvedValueType.MEDIA, media: size };
+        size = { url: tmp14, width: v256, height: v256 };
         obj2[tmp7] = obj3;
       }
     } else {
       let obj5;
-      let tmp10 = tmp8;
       if (typeof tmp8 === "number") {
-        let obj4 = { type: _mod12149.ResolvedValueType.NUMBER, value: tmp8 };
-        let tmp11 = require;
+        let obj4 = { type: _mod10278.ResolvedValueType.NUMBER, value: tmp8 };
+        let tmp10 = dependencyMap;
+        let tmp11 = tmp8;
         obj5 = obj4;
       } else {
-        obj5 = { type: _mod12149.ResolvedValueType.STRING, value: tmp8 };
+        obj5 = { type: _mod10278.ResolvedValueType.STRING, value: tmp8 };
       }
       obj2[tmp7] = obj5;
     }

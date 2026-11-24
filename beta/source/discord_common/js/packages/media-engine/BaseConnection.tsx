@@ -1,16 +1,16 @@
-// Module ID: 6099
-// Function ID: 6100
+// Module ID: 5692
+// Function ID: 5693
 // Name: BaseConnection
-// Dependencies: [5, 6065, 6089, 6100, 6102, 6103, 6104, 6133, 2]
+// Dependencies: [5, 5658, 5682, 5693, 5695, 5696, 5697, 5726, 2]
 
-// Module 6099 (BaseConnection)
-import VideoQualityManager from "VideoQualityManager" /* 6100 */;
-import ConnectionEventFramerateReducer from "ConnectionEventFramerateReducer" /* 6102 */;
-import discord_common_BaseConnectionEvent from "discord_common/BaseConnectionEvent" /* 6103 */;
-import cloneDeepDefault from "cloneDeep" /* 6104 */;
+// Module 5692 (BaseConnection)
+import VideoQualityManager from "VideoQualityManager" /* 5693 */;
+import ConnectionEventFramerateReducer from "ConnectionEventFramerateReducer" /* 5695 */;
+import discord_common_BaseConnectionEvent from "discord_common/BaseConnectionEvent" /* 5696 */;
+import cloneDeepDefault from "cloneDeep" /* 5697 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import Constants from "Constants" /* 6065 */;
-import TypedEventEmitter from "TypedEventEmitter" /* 6089 */;
+import Constants from "Constants" /* 5658 */;
+import TypedEventEmitter from "TypedEventEmitter" /* 5682 */;
 import size_mod from "module_2" /* 2 */;
 
 let set;
@@ -23,7 +23,7 @@ let metroImportAll;
 let metroImportDefault;
 let metroRequire;
 let tmp13;
-const flatRestDefault = tmp13(6133);
+const flatRestDefault = tmp13(5726);
 ({ ConnectionStates: closure_4, DEFAULT_VOICE_BITRATE: hasOwnProperty, MediaTypes: metroRequire, ResolutionTypes: metroImportDefault, MediaEngineContextTypes: metroImportAll, VIDEO_QUALITY_FRAMERATE: c9, SIMULCAST_HQ_QUALITY: c10 } = Constants);
 let closure_11 = 0;
 class BaseConnection extends TypedEventEmitter {
@@ -44,6 +44,7 @@ class BaseConnection extends TypedEventEmitter {
     tmp4.videoSupported = false;
     tmp4.useElectronVideo = false;
     tmp4.spatialAudioEnabled = false;
+    tmp4.spatialAudioActive = false;
     tmp4.voiceBitrate = hasOwnProperty;
     tmp4.remoteSinkWantsMaxFramerate = remoteSinkWantsMaxFramerate;
     new Map();
@@ -383,6 +384,14 @@ class BaseConnection extends TypedEventEmitter {
     const self = this;
     const tmp = arg0 && self.context === metroImportAll.DEFAULT;
     self.spatialAudioEnabled = tmp;
+  }
+  getSpatialAudioActive() {
+    return this.spatialAudioActive;
+  }
+  setSpatialAudioActive(arg0) {
+    const self = this;
+    const tmp = arg0 && self.context === metroImportAll.DEFAULT;
+    self.spatialAudioActive = tmp;
   }
   setCalcMaxBitrateFunc(calcMaxBitrateFunc) {
     this.calcMaxBitrateFunc = calcMaxBitrateFunc;

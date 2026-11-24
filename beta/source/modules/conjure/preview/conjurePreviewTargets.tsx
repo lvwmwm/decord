@@ -1,15 +1,45 @@
-// Module ID: 13145
-// Function ID: 13146
+// Module ID: 18243
+// Function ID: 18244
 // Name: conjurePreviewTargets
-// Dependencies: [5967, 13138, 1113, 4131, 2]
-// Exports: activePreviewTarget, getPreviewTargetLabel, previewTargetKey, previewTargets, selectPreviewTarget
+// Dependencies: [5557, 12304, 1112, 4190, 18244, 2]
+// Exports: activePreviewTarget, getPreviewTabLabel, previewTargetKey, previewTargets, selectPreviewTarget
 
-// Module 13145 (conjurePreviewTargets)
-import intl5 from "intl" /* 1113 */;
-import _modDef4131 from "module_4131" /* 4131 */;
-import ConjurePreviewMode from "ConjurePreviewMode" /* 13138 */;
+// Module 18243 (conjurePreviewTargets)
+import intl5 from "intl" /* 1112 */;
+import _modDef4190 from "module_4190" /* 4190 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5557 */;
+import ConjurePreviewMode from "ConjurePreviewMode" /* 12304 */;
+import slugConjureChannelNameDefault from "slugConjureChannelName" /* 18244 */;
 import size from "module_2" /* 2 */;
 
+function getPreviewTargetLabel(mode) {
+  let obj2;
+  mode = mode.mode;
+  if ("frame" === mode) {
+    let previewFrameSurfaceLabel;
+    if (null == mode.appChannel) {
+      const obj3 = ConjurePreviewMode;
+      previewFrameSurfaceLabel = obj3.getPreviewFrameSurfaceLabel(mode.surface);
+    } else {
+      const intl4 = intl5.intl;
+      const formatToPlainString = intl4.formatToPlainString;
+      const obj = { surface: obj2.getPreviewFrameSurfaceLabel(mode.surface), channel: mode.appChannel };
+      const prop = _modDef4190["6xVl+N"];
+      obj2 = ConjurePreviewMode;
+      previewFrameSurfaceLabel = formatToPlainString(prop, obj);
+    }
+    return previewFrameSurfaceLabel;
+  } else if ("widget" === mode) {
+    const intl3 = intl5.intl;
+    return intl3.string(_modDef4190.y5GiL1);
+  } else if ("overlay" === mode) {
+    const intl2 = intl5.intl;
+    return intl2.string(_modDef4190["2940LX"]);
+  } else if ("bot" === mode) {
+    const intl = intl5.intl;
+    return intl.string(_modDef4190.tjpaGN);
+  }
+}
 const result = size.fileFinishedImporting("modules/conjure/preview/conjurePreviewTargets.tsx");
 
 export function previewTargets(modes, frameSurfaceOptions, stateFromStores3) {
@@ -76,32 +106,25 @@ export function activePreviewTarget(activeMode, frameSurface, appChannel) {
   }
   return tmp2;
 }
-export function getPreviewTargetLabel(mode) {
-  let obj2;
-  mode = mode.mode;
-  if ("frame" === mode) {
-    let previewFrameSurfaceLabel;
-    if (null == mode.appChannel) {
-      const obj3 = ConjurePreviewMode;
-      previewFrameSurfaceLabel = obj3.getPreviewFrameSurfaceLabel(mode.surface);
-    } else {
-      const intl4 = intl5.intl;
-      const formatToPlainString = intl4.formatToPlainString;
-      const obj = { surface: obj2.getPreviewFrameSurfaceLabel(mode.surface), channel: mode.appChannel };
-      const prop = _modDef4131["6xVl+N"];
-      obj2 = ConjurePreviewMode;
-      previewFrameSurfaceLabel = formatToPlainString(prop, obj);
-    }
-    return previewFrameSurfaceLabel;
-  } else if ("widget" === mode) {
-    const intl3 = intl5.intl;
-    return intl3.string(_modDef4131.y5GiL1);
-  } else if ("overlay" === mode) {
-    const intl2 = intl5.intl;
-    return intl2.string(_modDef4131["2940LX"]);
-  } else if ("bot" === mode) {
+export { getPreviewTargetLabel };
+export function getPreviewTabLabel(mode, arg1) {
+  if ("bot" === mode.mode) {
     const intl = intl5.intl;
-    return intl.string(_modDef4131.tjpaGN);
+    return intl.string(_modDef4190.gThNz6);
+  } else {
+    if ("frame" === mode.mode) {
+      if (mode.surface === EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL) {
+        let appChannel = mode.appChannel;
+        if (appChannel == null) {
+          appChannel = slugConjureChannelNameDefault(arg1);
+        }
+        if ("" !== appChannel) {
+          const _HermesInternal = HermesInternal;
+          return "#" + appChannel;
+        }
+      }
+    }
+    return getPreviewTargetLabel(mode);
   }
 }
 export function selectPreviewTarget(mode, fn, fn2, fn3) {

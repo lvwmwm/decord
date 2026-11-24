@@ -1,10 +1,10 @@
 // Module ID: 3934
 // Function ID: 3935
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 3934 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/partner_perks/xbox/partner_pass", scales: [1], hash: "af399233cf0437cbc649d89eb97e72fd", name: "XboxPartnerPass.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/bW9kdWxlcy9wcmVtaXVtL3Byb21vdGlvbnMvdGhpcmRfcGFydHk=", scales: [1], hash: "776764805d5750e19ef534095d9e3778", name: "de.messages.776764805d5750e19ef534095d9e3778.compiled.messages", type: "jsona" });

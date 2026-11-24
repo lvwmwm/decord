@@ -1,10 +1,10 @@
 // Module ID: 7209
 // Function ID: 7210
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 7209 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/platforms", width: 256, height: 256, scales: [1], hash: "18bf95267062a719213a10081e62b607", name: "img_amazon_music", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "1a98a09be102b24c083fe11e00ab3c2d", name: "PlayIcon", type: "png" });

@@ -1,12 +1,12 @@
-// Module ID: 14125
-// Function ID: 14126
+// Module ID: 12353
+// Function ID: 12354
 // Name: StringSelectActionComponentUtils
-// Dependencies: [12372, 2119, 2]
+// Dependencies: [11899, 2117, 2]
 // Exports: getInitialStringSelectOptions
 
-// Module 14125 (StringSelectActionComponentUtils)
-import Server from "Server" /* 2119 */;
-import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 12372 */;
+// Module 12353 (StringSelectActionComponentUtils)
+import Server from "Server" /* 2117 */;
+import LocalInteractionComponentStateStore from "LocalInteractionComponentStateStore" /* 11899 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/interaction_components/StringSelectActionComponentUtils.tsx");

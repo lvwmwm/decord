@@ -1,14 +1,14 @@
-// Module ID: 10649
-// Function ID: 10650
+// Module ID: 9738
+// Function ID: 9739
 // Name: useIsEmptyRTCConnection
-// Dependencies: [502, 6061, 6792, 504, 2]
+// Dependencies: [502, 5654, 6396, 504, 2]
 // Exports: useIsCallRTCConnectionEmpty, useIsStreamRTCConnectionEmpty
 
-// Module 10649 (useIsEmptyRTCConnection)
+// Module 9738 (useIsEmptyRTCConnection)
 import get_initialized from "get initialized" /* 504 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 6061 */;
-import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 6792 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5654 */;
+import StreamRTCConnectionStore from "StreamRTCConnectionStore" /* 6396 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

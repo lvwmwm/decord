@@ -1,16 +1,16 @@
-// Module ID: 19040
-// Function ID: 19041
+// Module ID: 17824
+// Function ID: 17825
 // Name: InterestPickerPerformance
 // Dependencies: [2]
 // Exports: recordLoadedCover, wasCoverPreviouslyLoaded
 
-// Module 19040 (InterestPickerPerformance)
+// Module 17824 (InterestPickerPerformance)
 import size from "module_2" /* 2 */;
 
 const set = new Set();
 let result = size.fileFinishedImporting("modules/waterwheels/interest/native/InterestPickerPerformance.tsx");
 class InterestCoverLoad {
-  constructor(coverURL) {
+  constructor(coverUrl) {
     let fn = arg1;
     if (arg1 === undefined) {
       fn = function s() {
@@ -18,10 +18,10 @@ class InterestCoverLoad {
       };
     }
     const merged = Object.assign({ settled: false });
-    merged.uri = coverURL;
+    merged.uri = coverUrl;
     merged.now = fn;
     merged.startedAt = fn();
-    const hasItem = null != coverURL && set.has(coverURL);
+    const hasItem = null != coverUrl && set.has(coverUrl);
     merged.previouslyLoaded = hasItem;
     return merged;
   }

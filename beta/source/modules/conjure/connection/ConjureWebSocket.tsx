@@ -1,9 +1,9 @@
-// Module ID: 13588
-// Function ID: 13589
+// Module ID: 14751
+// Function ID: 14752
 // Name: ConjureWebSocket
 // Dependencies: [2]
 
-// Module 13588 (ConjureWebSocket)
+// Module 14751 (ConjureWebSocket)
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/connection/ConjureWebSocket.tsx");
@@ -24,7 +24,7 @@ class ConjureWebSocket {
     let webSocket;
     ticket = ticket.ticket;
     this.close();
-    const obj = { ticket, debug: "on_demand" };
+    const obj = { ticket, debug: "on_demand", preview_add_bot_prompt: "1" };
     const str = url.replace(/^https:/i, "wss:");
     const replaced = str.replace(/^http:/i, "ws:");
     const _URLSearchParams = URLSearchParams;
@@ -479,6 +479,20 @@ class ConjureWebSocket {
         const socket = self.socket;
         const _JSON = JSON;
         socket.send(JSON.stringify(arg0));
+      }
+    }
+    const error = new Error("WebSocket not open");
+    throw error;
+  }
+  sendPreviewBotAnswer(id, added) {
+    const self = this;
+    if (null != this.socket) {
+      const _WebSocket = WebSocket;
+      if (self.socket.readyState === WebSocket.OPEN) {
+        const socket = self.socket;
+        const _JSON = JSON;
+        const obj = { type: "preview_bot_answer", id, answer: added };
+        socket.send(JSON.stringify(obj));
       }
     }
     const error = new Error("WebSocket not open");

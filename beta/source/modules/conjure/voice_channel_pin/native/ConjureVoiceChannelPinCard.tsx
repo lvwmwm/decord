@@ -1,25 +1,25 @@
-// Module ID: 13640
-// Function ID: 13641
+// Module ID: 18487
+// Function ID: 18488
 // Name: ConjureVoiceChannelPinCard
-// Dependencies: [19, 17, 5177, 5248, 1388, 21, 5306, 575, 13641, 5919, 1113, 4131, 13213, 8033, 7746, 7443, 5944, 7455, 5542, 11964, 5926, 2]
+// Dependencies: [19, 17, 4784, 4855, 1386, 21, 4913, 575, 18488, 5504, 1112, 4190, 18303, 7636, 7348, 7045, 5529, 7057, 5127, 11731, 5511, 2]
 // Exports: default
 
-// Module 13640 (ConjureVoiceChannelPinCard)
+// Module 18487 (ConjureVoiceChannelPinCard)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl7 from "intl" /* 1113 */;
-import _modDef4131 from "module_4131" /* 4131 */;
-import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5542 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 11964 */;
-import ConjureNativeCardSurfaceDefault from "ConjureNativeCardSurface" /* 13213 */;
-import useConjureVoiceChannelPin from "useConjureVoiceChannelPin" /* 13641 */;
+import intl7 from "intl" /* 1112 */;
+import _modDef4190 from "module_4190" /* 4190 */;
+import ActionSheetActionCreators from "ActionSheetActionCreators" /* 5127 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import ChannelPickerActionSheetDefault from "ChannelPickerActionSheet" /* 11731 */;
+import ConjureNativeCardSurfaceDefault from "ConjureNativeCardSurface" /* 18303 */;
+import useConjureVoiceChannelPin from "useConjureVoiceChannelPin" /* 18488 */;
 import react from "react" /* 19 */;
-import GuildStore from "GuildStore" /* 5177 */;
-import RelationshipStore from "RelationshipStore" /* 5248 */;
-import UserStore from "UserStore" /* 1388 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import RelationshipStore from "RelationshipStore" /* 4855 */;
+import UserStore from "UserStore" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -52,7 +52,7 @@ function ConjureVoiceChannelPinForm(projectId) {
   projectId = projectId.projectId;
   let tmp2 = channels;
   const tmp = closure_10();
-  let obj = channels(13641);
+  let obj = channels(18488);
   const conjureVoiceChannelPinForm = obj.useConjureVoiceChannelPinForm(projectId);
   ({ guildId, channels } = conjureVoiceChannelPinForm);
   const selected = conjureVoiceChannelPinForm.selected;
@@ -64,24 +64,24 @@ function ConjureVoiceChannelPinForm(projectId) {
   }
   let channelIconWithGuild = null;
   if (null != selected) {
-    const tmp2Result = tmp2(8033);
+    const tmp2Result = tmp2(7636);
     channelIconWithGuild = tmp2Result.getChannelIconWithGuild(selected, guild);
   }
-  let obj2 = { variant: "body-sm/normal", color: "text-default", children: intl.string(selected(4131)["1vVBAw"]) };
-  const Text = tmp2(5919).Text;
-  intl = tmp2(1113).intl;
+  let obj2 = { variant: "body-sm/normal", color: "text-default", children: intl.string(selected(4190)["1vVBAw"]) };
+  const Text = tmp2(5504).Text;
+  intl = tmp2(1112).intl;
   const items = [closure_7(Text, obj2), , , ];
   const tmp9 = closure_9;
   if (channels.length > 0) {
     let stringResult;
     let obj3 = { hasIcons: null != channelIconWithGuild, children: closure_7(TableRow, obj4) };
-    const TableRowGroup = tmp2(7746).TableRowGroup;
-    TableRow = tmp2(7443).TableRow;
+    const TableRowGroup = tmp2(7348).TableRowGroup;
+    TableRow = tmp2(7045).TableRow;
     if (null == selected) {
-      const intl3 = tmp2(1113).intl;
-      stringResult = intl3.string(tmp11(4131)["9+dfPT"]);
+      const intl3 = tmp2(1112).intl;
+      stringResult = intl3.string(tmp11(4190)["9+dfPT"]);
     } else {
-      const tmp2Result2 = tmp2(5944);
+      const tmp2Result2 = tmp2(5529);
       stringResult = tmp2Result2.computeChannelName(selected, UserStore, RelationshipStore);
     }
     obj4 = {
@@ -105,7 +105,7 @@ function ConjureVoiceChannelPinForm(projectId) {
               return closure_1_2(id.id);
             }
           };
-          obj3 = { title: intl.string(_modDef4131.peOi1H) };
+          obj3 = { title: intl.string(_modDef4190.peOi1H) };
           ActionSheetActionCreators;
           tmp2 = ChannelPickerActionSheetDefault;
           intl = intl7.intl;
@@ -115,35 +115,35 @@ function ConjureVoiceChannelPinForm(projectId) {
     tmp10Result = undefined;
     if (null != channelIconWithGuild) {
       const obj5 = { source: channelIconWithGuild };
-      tmp10Result = tmp10(tmp2(7455).TableRowIcon, obj5);
+      tmp10Result = tmp10(tmp2(7057).TableRowIcon, obj5);
     }
     tmp10Result4 = tmp10(TableRowGroup, obj3);
   } else {
-    const obj6 = { variant: "body-sm/normal", color: "text-muted", children: intl2.string(selected(4131).JVUsIY) };
-    const Text2 = tmp2(5919).Text;
-    intl2 = tmp2(1113).intl;
+    const obj6 = { variant: "body-sm/normal", color: "text-muted", children: intl2.string(selected(4190).JVUsIY) };
+    const Text2 = tmp2(5504).Text;
+    intl2 = tmp2(1112).intl;
     tmp10Result4 = tmp10(Text2, obj6);
   }
   items[1] = tmp10Result4;
   let tmp10Result5 = null;
   if (failed) {
-    const obj7 = { variant: "body-sm/normal", color: "text-feedback-critical", children: intl4.string(selected(4131).d7EeAm) };
-    const Text3 = tmp2(5919).Text;
-    intl4 = tmp2(1113).intl;
+    const obj7 = { variant: "body-sm/normal", color: "text-feedback-critical", children: intl4.string(selected(4190).d7EeAm) };
+    const Text3 = tmp2(5504).Text;
+    intl4 = tmp2(1112).intl;
     tmp10Result5 = tmp10(Text3, obj7);
   }
   items[2] = tmp10Result5;
   const obj8 = { style: tmp.actions, children: items1 };
-  const obj9 = { variant: "secondary", size: "sm", text: intl5.string(selected(4131).Iw0l8o), disabled: pinning, onPress: skip };
-  const Button = tmp2(5926).Button;
-  intl5 = tmp2(1113).intl;
+  const obj9 = { variant: "secondary", size: "sm", text: intl5.string(selected(4190).Iw0l8o), disabled: pinning, onPress: skip };
+  const Button = tmp2(5511).Button;
+  intl5 = tmp2(1112).intl;
   items1 = [closure_7(Button, obj9), ];
   let tmp10Result6 = null;
   const tmp18 = guild;
   if (channels.length > 0) {
-    const obj10 = { variant: "primary", size: "sm", text: intl6.string(selected(4131).FYI3qr), disabled: null == selected, loading: pinning, onPress: pin };
-    const Button2 = tmp2(5926).Button;
-    intl6 = tmp2(1113).intl;
+    const obj10 = { variant: "primary", size: "sm", text: intl6.string(selected(4190).FYI3qr), disabled: null == selected, loading: pinning, onPress: pin };
+    const Button2 = tmp2(5511).Button;
+    intl6 = tmp2(1112).intl;
     tmp10Result6 = tmp10(Button2, obj10);
   }
   const obj11 = { children: items };
@@ -173,7 +173,7 @@ export default function ConjureVoiceChannelPinCard(projectId) {
   const obj = useConjureVoiceChannelPin;
   const conjureVoiceChannelPinOutcome = obj.useConjureVoiceChannelPinOutcome(projectId);
   ({ outcome, pinnedName } = conjureVoiceChannelPinOutcome);
-  const obj2 = { variant: "body-xs/semibold", color: "text-muted", children: intl.string(_modDef4131.UGAfl9) };
+  const obj2 = { variant: "body-xs/semibold", color: "text-muted", children: intl.string(_modDef4190.UGAfl9) };
   const Text = Text_Text.Text;
   intl = intl7.intl;
   const tmp7 = metroImportDefault(Text, obj2);
@@ -183,19 +183,19 @@ export default function ConjureVoiceChannelPinCard(projectId) {
     let formatToPlainStringResult;
     const obj3 = { style: tmp.card, children: items };
     items = [tmp7, ];
-    const Text2 = tmp2(5919).Text;
+    const Text2 = tmp2(5504).Text;
     if ("pinned" === outcome.status) {
-      const intl3 = tmp2(1113).intl;
+      const intl3 = tmp2(1112).intl;
       const formatToPlainString = intl3.formatToPlainString;
-      const gKe6Lw = tmp6(4131).gKe6Lw;
+      const gKe6Lw = tmp6(4190).gKe6Lw;
       if (pinnedName == null) {
         pinnedName = "";
       }
       const obj4 = { channelName: pinnedName };
       formatToPlainStringResult = formatToPlainString(gKe6Lw, obj4);
     } else {
-      const intl2 = tmp2(1113).intl;
-      formatToPlainStringResult = intl2.string(tmp6(4131)["+kpQ3v"]);
+      const intl2 = tmp2(1112).intl;
+      formatToPlainStringResult = intl2.string(tmp6(4190)["+kpQ3v"]);
     }
     const obj5 = { variant: "body-sm/normal", color: "text-default", children: formatToPlainStringResult };
     items[1] = metroImportDefault(Text2, obj5);

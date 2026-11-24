@@ -1,16 +1,16 @@
-// Module ID: 10567
-// Function ID: 10568
+// Module ID: 13799
+// Function ID: 13800
 // Name: MobileShopButtonCoachmark
-// Dependencies: [19, 5152, 21, 5306, 575, 6010, 1113, 9567, 2]
+// Dependencies: [19, 4759, 21, 4913, 575, 5600, 1112, 9087, 2]
 // Exports: default
 
-// Module 10567 (MobileShopButtonCoachmark)
+// Module 13799 (MobileShopButtonCoachmark)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1113 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
+import intl2 from "intl" /* 1112 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4759 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let size;

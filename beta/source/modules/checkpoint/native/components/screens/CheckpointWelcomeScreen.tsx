@@ -1,27 +1,27 @@
-// Module ID: 14486
-// Function ID: 14487
+// Module ID: 12726
+// Function ID: 12727
 // Name: CheckpointWelcomeScreen
-// Dependencies: [17, 1388, 6367, 21, 575, 5306, 1496, 504, 5362, 1113, 3285, 14487, 14272, 14488, 14499, 3317, 14500, 2]
+// Dependencies: [17, 1386, 5969, 21, 575, 4913, 1494, 504, 4969, 1112, 3408, 12727, 12509, 12728, 12740, 3440, 12741, 2]
 // Exports: default
 
-// Module 14486 (CheckpointWelcomeScreen)
+// Module 12726 (CheckpointWelcomeScreen)
 import react_native from "react-native" /* 17 */;
 import get_initialized from "get initialized" /* 504 */;
 import nativeDefault from "native" /* 575 */;
-import intl4 from "intl" /* 1113 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
-import _modDef3285 from "module_3285" /* 3285 */;
-import _modDef3317 from "module_3317" /* 3317 */;
-import UserUtils from "UserUtils" /* 5362 */;
-import CheckpointScreen from "CheckpointScreen" /* 14272 */;
-import useIsCheckpointWideDefault from "useIsCheckpointWide" /* 14487 */;
-import CheckpointNavigationControls from "CheckpointNavigationControls" /* 14488 */;
-import TextWritingAnimation from "TextWritingAnimation" /* 14499 */;
-import CheckpointKnickKnacksDefault from "CheckpointKnickKnacks" /* 14500 */;
-import UserStore from "UserStore" /* 1388 */;
-import CheckpointConstants from "CheckpointConstants" /* 6367 */;
+import intl4 from "intl" /* 1112 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
+import _modDef3408 from "module_3408" /* 3408 */;
+import _modDef3440 from "module_3440" /* 3440 */;
+import UserUtils from "UserUtils" /* 4969 */;
+import CheckpointScreen from "CheckpointScreen" /* 12509 */;
+import useIsCheckpointWideDefault from "useIsCheckpointWide" /* 12727 */;
+import CheckpointNavigationControls from "CheckpointNavigationControls" /* 12728 */;
+import TextWritingAnimation from "TextWritingAnimation" /* 12740 */;
+import CheckpointKnickKnacksDefault from "CheckpointKnickKnacks" /* 12741 */;
+import UserStore from "UserStore" /* 1386 */;
+import CheckpointConstants from "CheckpointConstants" /* 5969 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const CheckpointScreenDefault = CheckpointScreen;
@@ -77,7 +77,7 @@ export default function CheckpointWelcomeScreen() {
   const obj2 = UserUtils;
   const name = obj2.useName(stateFromStores);
   const intl = intl4.intl;
-  const stringResult = intl.string(_modDef3285["CdU/PF"]);
+  const stringResult = intl.string(_modDef3408["CdU/PF"]);
   let str = "Check\u200Bpoint";
   if ("Checkpoint" !== stringResult) {
     str = stringResult;
@@ -99,9 +99,9 @@ export default function CheckpointWelcomeScreen() {
     ({ titleText: arr7[0], wideTitleText: arr7[1] } = tmp);
     items3 = [hasOwnProperty(TextWritingAnimationDefault, obj6), ];
     ({ wideSubtitle: obj19.style, wideSubtitleText: obj19.textStyle } = tmp);
-    const obj7 = { style: null, textStyle: null, text: intl3.formatToPlainString(_modDef3317.xhZ23b, obj8), delay: delay + TextWritingAnimation.DURATION, variant: "heading-xl/medium" };
+    const obj7 = { style: null, textStyle: null, text: intl3.formatToPlainString(_modDef3440.xhZ23b, obj8), delay: delay + TextWritingAnimation.DURATION, variant: "heading-xl/medium" };
     const tmp2Result4 = TextWritingAnimationDefault;
-    intl3 = tmp5(1113).intl;
+    intl3 = tmp5(1112).intl;
     obj8 = { username: name };
     items3[1] = hasOwnProperty(tmp2Result4, obj7);
     obj15 = obj3;
@@ -131,9 +131,9 @@ export default function CheckpointWelcomeScreen() {
     }
     obj15 = { children: hasOwnProperty(View, obj9) };
     items6 = [hasOwnProperty(tmp2Result5, obj14), , ];
-    const obj16 = { style: tmp.subtitle, text: intl2.formatToPlainString(_modDef3317.xhZ23b, obj17), delay: tmp17 + TextWritingAnimation.DURATION, variant: "heading-xl/medium" };
+    const obj16 = { style: tmp.subtitle, text: intl2.formatToPlainString(_modDef3440.xhZ23b, obj17), delay: tmp17 + TextWritingAnimation.DURATION, variant: "heading-xl/medium" };
     const tmp2Result6 = TextWritingAnimationDefault;
-    intl2 = tmp5(1113).intl;
+    intl2 = tmp5(1112).intl;
     obj17 = { username: name };
     items6[1] = hasOwnProperty(tmp2Result6, obj16);
     const obj18 = { style: tmp.knickKnacks };

@@ -1,41 +1,37 @@
-// Module ID: 14540
-// Function ID: 14541
+// Module ID: 12786
+// Function ID: 12787
 // Name: TraitPicker
-// Dependencies: [19, 17, 6367, 21, 5306, 14541, 575, 6734, 1113, 3317, 5919, 14273, 14543, 1496, 14539, 14545, 14262, 5486, 14546, 2]
-// Exports: default
+// Dependencies: [19, 17, 21, 4913, 12784, 575, 6336, 1112, 3440, 5504, 12510, 1494, 5093, 12787, 12789, 2]
+// Exports: default, useTraitOptionSize
 
-// Module 14540 (TraitPicker)
+// Module 12786 (TraitPicker)
+import react2 from "react" /* 19 */;
 import nativeDefault from "native" /* 575 */;
-import intl3 from "intl" /* 1113 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
-import _modDef3317 from "module_3317" /* 3317 */;
-import useWindowSizeClassifier from "useWindowSizeClassifier" /* 5486 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import CheckpointConstants from "CheckpointConstants" /* 6367 */;
-import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6734 */;
-import CheckpointActionCreators from "CheckpointActionCreators" /* 14262 */;
-import CheckpointTextDefault from "CheckpointText" /* 14273 */;
-import useTraitPickerOptions from "useTraitPickerOptions" /* 14539 */;
-import TraitOptionList from "TraitOptionList" /* 14541 */;
-import TraitOptionDetailsDefault from "TraitOptionDetails" /* 14543 */;
-import react2 from "react" /* 14545 */;
-import react from "react" /* 19 */;
+import intl3 from "intl" /* 1112 */;
+import _modDef3440 from "module_3440" /* 3440 */;
+import useWindowSizeClassifier from "useWindowSizeClassifier" /* 5093 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import CheckpointCustomizationUtils from "CheckpointCustomizationUtils" /* 6336 */;
+import CheckpointTextDefault from "CheckpointText" /* 12510 */;
+import TraitOptionList from "TraitOptionList" /* 12784 */;
+import TraitOptionDetailsDefault from "TraitOptionDetails" /* 12787 */;
+import useTraitPicker from "useTraitPicker" /* 12789 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
-let c9;
+const TraitOptionListDefault = TraitOptionList;
+
+let c3;
 let closure_4;
 let hasOwnProperty;
-let metroImportAll;
 let metroImportDefault;
+let metroRequire;
 let obj2;
 let obj3;
 let obj4;
 let obj5;
-let tmp;
-const TraitOptionListDefault = tmp(14541);
 function EarnedCountHeader(customizationOption) {
   let earnedCount;
   let intl2;
@@ -43,7 +39,7 @@ function EarnedCountHeader(customizationOption) {
   let totalCount;
   ({ earnedCount, totalCount } = customizationOption);
   customizationOption = customizationOption.customizationOption;
-  const tmp = closure_10();
+  const tmp = closure_9();
   let obj = CheckpointCustomizationUtils;
   const customizationOptionName = obj.getCustomizationOptionName(customizationOption);
   const intl = intl3.intl;
@@ -54,81 +50,98 @@ function EarnedCountHeader(customizationOption) {
       return arg0;
     }
   };
-  const combined = "" + customizationOptionName + ", " + intl.formatToPlainString(_modDef3317.Vfq58K, obj2);
-  const obj3 = { variant: "body-sm/medium", color: "text-default", style: tmp.earnedRow, accessibilityRole: "header", accessibilityLabel: combined, children: intl2.format(_modDef3317.Vfq58K, obj4) };
+  const combined = "" + customizationOptionName + ", " + intl.formatToPlainString(_modDef3440.Vfq58K, obj2);
+  const obj3 = { variant: "body-md/medium", color: "text-default", style: tmp.earnedRow, accessibilityRole: "header", accessibilityLabel: combined, children: intl2.format(_modDef3440.Vfq58K, obj4) };
   const Text = Text_Text.Text;
   intl2 = intl3.intl;
   obj4 = {
     earnedCount,
     totalCount,
     countHook(children, arg1) {
-      const obj = { variant: "mono-md/bold", children };
-      return closure_1_7(CheckpointTextDefault, obj, arg1);
+      const obj = { variant: "body-md/semibold", tabularNumbers: true, children };
+      return closure_1_5(CheckpointTextDefault, obj, arg1);
     }
   };
-  return metroImportDefault(Text, obj3);
+  return hasOwnProperty(Text, obj3);
 }
-function TraitPickerDetails(arg0) {
-  let asset;
-  let hideRarity;
-  ({ asset, hideRarity } = arg0);
-  const obj = { style: closure_10().details, children: metroImportDefault(TraitOptionDetailsDefault, { asset, hideRarity }) };
-  return metroImportDefault(hasOwnProperty, obj);
-}
-function TraitPickerPortrait(selectedAsset) {
-  let header;
-  let isRarityVisible;
-  let items;
-  let optionList;
-  selectedAsset = selectedAsset.selectedAsset;
-  ({ header, optionList, isRarityVisible } = selectedAsset);
-  const obj = { style: closure_10().container, children: items };
-  items = [header, optionList, ];
-  let tmp3 = null != selectedAsset;
-  const tmp = metroImportAll;
-  const tmp2 = hasOwnProperty;
-  if (tmp3) {
-    const obj2 = { asset: selectedAsset, hideRarity: !isRarityVisible };
-    tmp3 = metroImportDefault(TraitPickerDetails, obj2);
+class TraitPickerDetails {
+  constructor(option) {
+    let customizationOption;
+    let obj2;
+    let obj3;
+    let title;
+    let titleAccessibilityLabel;
+    let tmp7;
+    option = option.option;
+    ({ customizationOption, title, titleAccessibilityLabel } = option);
+    let tmp2 = null;
+    if (null != option) {
+      const obj = { style: tmp.details, children: hasOwnProperty(tmp7, obj2) };
+      obj2 = { option, hideRarity: !obj3.getIsTraitRarityVisible(customizationOption), title, titleAccessibilityLabel };
+      tmp7 = TraitOptionDetailsDefault;
+      obj3 = CheckpointCustomizationUtils;
+      tmp2 = hasOwnProperty(React3, obj);
+    }
+    return tmp2;
   }
-  items[2] = tmp3;
-  return tmp(tmp2, obj);
 }
-function TraitPickerLandscape(selectedAsset) {
-  let header;
-  let isRarityVisible;
-  let items;
-  let items1;
-  let optionList;
-  selectedAsset = selectedAsset.selectedAsset;
-  ({ header, optionList, isRarityVisible } = selectedAsset);
-  const tmp = closure_10();
-  const obj = { alwaysBounceVertical: false, contentContainerStyle: tmp.landscapeScrollContent, children: items };
-  items = [, , , , , ];
-  const obj2 = { style: tmp.landscapeGap };
-  items[0] = metroImportDefault(hasOwnProperty, obj2);
-  items[1] = header;
-  const obj3 = { style: tmp.landscapeGap };
-  items[2] = metroImportDefault(hasOwnProperty, obj3);
-  let tmp2Result = null != selectedAsset;
-  const tmp3 = React3;
-  if (tmp2Result) {
-    const obj4 = { children: items1 };
-    const obj5 = { asset: selectedAsset, hideRarity: !isRarityVisible };
-    items1 = [metroImportDefault(TraitPickerDetails, obj5), ];
+class TraitPickerOptionList {
+  constructor(customizationOption) {
+    customizationOption = customizationOption.customizationOption;
+    const merged = Object.assign(customizationOption, Object.assign({ customizationOption: 0 }));
+    TraitOptionListDefault;
+    const merged1 = Object.assign(merged);
+    const obj2 = CheckpointCustomizationUtils;
+    return <tmp2 key={customizationOption} customizationOption={customizationOption} hideRarity={!obj2.getIsTraitRarityVisible(customizationOption)} />;
+  }
+}
+class TraitPickerPortrait {
+  constructor(arg0) {
+    let details;
+    let header;
+    let items;
+    let optionList;
+    ({ header, optionList, details } = arg0);
+    const obj = { style: closure_9().container, children: items };
+    items = [header, optionList, details];
+    return metroRequire(React3, obj);
+  }
+}
+class TraitPickerLandscape {
+  constructor(details) {
+    let header;
+    let items;
+    let items1;
+    let optionList;
+    details = details.details;
+    ({ header, optionList } = details);
+    const tmp = closure_9();
+    const obj = { alwaysBounceVertical: false, contentContainerStyle: tmp.landscapeScrollContent, children: items };
+    items = [, , , , , ];
+    const obj2 = { style: tmp.landscapeGap };
+    items[0] = hasOwnProperty(React3, obj2);
+    items[1] = header;
+    const obj3 = { style: tmp.landscapeGap };
+    items[2] = hasOwnProperty(React3, obj3);
+    let tmp2Result = null != details;
+    const tmp3 = _false;
+    if (tmp2Result) {
+      const obj4 = { children: items1 };
+      items1 = [details, ];
+      const obj5 = { style: tmp.landscapeGap };
+      items1[1] = hasOwnProperty(React3, obj5);
+      tmp2Result = tmp2(metroImportDefault, obj4);
+    }
+    items[3] = tmp2Result;
+    items[4] = optionList;
     const obj6 = { style: tmp.landscapeGap };
-    items1[1] = metroImportDefault(hasOwnProperty, obj6);
-    tmp2Result = tmp2(React4, obj4);
+    items[5] = hasOwnProperty(React3, obj6);
+    return metroRequire(tmp3, obj);
   }
-  items[3] = tmp2Result;
-  items[4] = optionList;
-  const obj7 = { style: tmp.landscapeGap };
-  items[5] = metroImportDefault(hasOwnProperty, obj7);
-  return metroImportAll(tmp3, obj);
 }
-({ ScrollView: closure_4, View: hasOwnProperty } = react_native);
-const rarityOrder = CheckpointConstants.CHECKPOINT_RARITY_ORDER_MOBILE;
-({ jsx: metroImportDefault, jsxs: metroImportAll, Fragment: c9 } = Fragment);
+({ ScrollView: c3, View: closure_4 } = react_native);
+({ jsx: hasOwnProperty, jsxs: metroRequire, Fragment: metroImportDefault } = Fragment);
+const createElement = react2.createElement;
 let createStyles = createStyles_mod;
 let obj = { container: obj2, earnedRow: obj3, landscapeGap: obj4, details: obj5, landscapeScrollContent: { flexGrow: 1, justifyContent: "center" } };
 obj2 = { gap: TraitOptionList.TRAIT_OPTION_SPACING };
@@ -136,76 +149,45 @@ createStyles = createStyles.createStyles;
 obj3 = { paddingHorizontal: TraitOptionList.CONTENT_INSET };
 obj4 = { flexGrow: 1, minHeight: nativeDefault.space.PX_8, maxHeight: nativeDefault.space.PX_16 };
 obj5 = { paddingHorizontal: TraitOptionList.CONTENT_INSET };
-let closure_10 = createStyles(obj);
+const React4 = createStyles(obj);
 const result = size.fileFinishedImporting("modules/checkpoint/native/components/customization/TraitPicker.tsx");
 
-export default function TraitPicker(selectedOptionId) {
+export default function TraitPicker(onSelectOption) {
   let customizationOption;
   let disabled;
-  let earnedCount;
-  let isCurrentTraitBlocked;
-  let isFinalizeRoute;
   let isLandscape;
-  let obj9;
-  let onSelectFinalizeOption;
-  let onSelectOption;
-  let optionIds;
-  let savedOptionId;
-  let tmp11;
-  let tmp8Result;
-  let totalCount;
-  ({ customizationOption, disabled } = selectedOptionId);
-  ({ isFinalizeRoute, isCurrentTraitBlocked } = selectedOptionId);
-  if (disabled === undefined) {
-    disabled = false;
-  }
-  selectedOptionId = selectedOptionId.selectedOptionId;
-  ({ isLandscape, optionIds, savedOptionId } = selectedOptionId);
-  if (isLandscape === undefined) {
-    isLandscape = false;
-  }
-  ({ onSelectOption, onSelectFinalizeOption } = selectedOptionId);
-  let tmp = importDefault;
-  const height = useWindowDimensionsDefault().height;
-  const obj = CheckpointCustomizationUtils;
-  const isTraitRarityVisible = obj.getIsTraitRarityVisible(customizationOption);
-  const obj2 = useTraitPickerOptions;
-  const obj3 = { customizationOption, optionIds, savedOptionId, rarityOrder };
-  const traitPickerOptions = obj2.useTraitPickerOptions(obj3);
-  const availableTraitOptions = traitPickerOptions.availableTraitOptions;
-  ({ totalCount, earnedCount } = traitPickerOptions);
-  const obj4 = react2;
-  const obj5 = { availableTraitOptions, selectedOptionId, onSelectOption: CheckpointActionCreators.selectCharacterTrait, isPaused: disabled };
-  const autoSelectTraitOption = obj4.useAutoSelectTraitOption(obj5);
-  const items = [availableTraitOptions, selectedOptionId];
+  let obj3;
+  let obj4;
+  let obj5;
+  ({ customizationOption, disabled, isLandscape } = onSelectOption);
+  onSelectOption = onSelectOption.onSelectOption;
+  const obj = useTraitPicker;
+  const traitPicker = obj.useTraitPicker({ customizationOption, disabled, onSelectOption });
   let str = "md";
-  const memo = react.useMemo(() => {
-    let found = availableTraitOptions.find((optionId) => optionId.optionId === selectedOptionId);
-    const tmp = availableTraitOptions;
-    if (found == null) {
-      found = tmp[0];
-    }
-    return found;
-  }, items);
   if (isLandscape) {
     str = "md";
-    if (height <= useWindowSizeClassifier.WINDOW_SIZE_THRESHOLD_LARGE) {
+    if (tmp4 <= useWindowSizeClassifier.WINDOW_SIZE_THRESHOLD_LARGE) {
       str = "sm";
     }
   }
-  if (isFinalizeRoute) {
-    const obj6 = { activeCustomizationOption: customizationOption, onSelectOption: onSelectFinalizeOption, isCurrentTraitBlocked, disabled };
-    tmp8Result = tmp8(tmp3(14546).FinalizeTraitTabs, obj6);
-    tmp11 = tmp8;
-  } else {
-    const obj7 = { customizationOption, earnedCount, totalCount };
-    tmp8Result = tmp8(EarnedCountHeader, obj7);
-    tmp11 = tmp8;
-  }
-  const obj8 = { header: tmp8Result, optionList: tmp11(TraitOptionListDefault, obj9, customizationOption), selectedAsset: memo, isRarityVisible: isTraitRarityVisible };
-  const obj10 = {};
-  obj9 = { customizationOption, size: str, options: availableTraitOptions, selectedOptionId, disabled, hideRarity: !isTraitRarityVisible, onSelectOption };
-  const tmp12 = isLandscape ? TraitPickerLandscape : TraitPickerPortrait;
-  const merged = Object.assign(obj8);
-  return tmp11(tmp12, obj10);
+  const obj2 = { header: hasOwnProperty(EarnedCountHeader, obj3), optionList: hasOwnProperty(TraitPickerOptionList, obj4), details: hasOwnProperty(TraitPickerDetails, obj5) };
+  obj3 = { customizationOption, earnedCount: traitPicker.earnedCount, totalCount: traitPicker.totalCount };
+  obj4 = { customizationOption, size: str, options: traitPicker.traitOptions, selectedOptionId: traitPicker.selectedOptionId, disabled, onSelectOption: traitPicker.onSelectOption };
+  obj5 = { customizationOption, option: traitPicker.selectedOption };
+  const tmp6 = isLandscape ? TraitPickerLandscape : TraitPickerPortrait;
+  return hasOwnProperty(tmp6, obj2);
 };
+export function useTraitOptionSize(isLandscape) {
+  let str = "md";
+  if (isLandscape) {
+    str = "md";
+    if (tmp2 <= useWindowSizeClassifier.WINDOW_SIZE_THRESHOLD_LARGE) {
+      str = "sm";
+    }
+  }
+  return str;
+}
+export { TraitPickerDetails };
+export { TraitPickerOptionList };
+export { TraitPickerPortrait };
+export { TraitPickerLandscape };

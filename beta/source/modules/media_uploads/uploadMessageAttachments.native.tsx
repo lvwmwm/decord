@@ -1,12 +1,12 @@
-// Module ID: 9020
-// Function ID: 9021
+// Module ID: 8530
+// Function ID: 8531
 // Name: uploadMessageAttachments
-// Dependencies: [5, 9021, 9022, 6364, 572, 2]
+// Dependencies: [5, 8531, 8532, 5966, 572, 2]
 // Exports: uploadMessageAttachments
 
-// Module 9020 (uploadMessageAttachments)
+// Module 8530 (uploadMessageAttachments)
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UploadStore from "UploadStore" /* 9021 */;
+import UploadStore from "UploadStore" /* 8531 */;
 import size from "module_2" /* 2 */;
 
 let c5, id;

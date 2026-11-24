@@ -1,20 +1,20 @@
-// Module ID: 18368
-// Function ID: 18369
+// Module ID: 17150
+// Function ID: 17151
 // Name: TextDisplayComponent
-// Dependencies: [32, 19, 5307, 5155, 5209, 8657, 21, 8658, 38, 6047, 8646, 504, 5131, 12422, 18369, 12588, 12508, 2]
+// Dependencies: [32, 19, 4914, 4762, 4816, 8247, 21, 8248, 38, 5637, 8236, 504, 4738, 11951, 17151, 10435, 12027, 2]
 // Exports: default
 
-// Module 18368 (TextDisplayComponent)
+// Module 17150 (TextDisplayComponent)
 import Fragment from "Fragment" /* 21 */;
-import MarkupUtilsDefault from "MarkupUtils" /* 6047 */;
-import renderMessageMarkup from "renderMessageMarkup" /* 8646 */;
-import InteractionComponentConstants from "InteractionComponentConstants" /* 8657 */;
-import handleMessagesTapLink from "handleMessagesTapLink" /* 12588 */;
+import MarkupUtilsDefault from "MarkupUtils" /* 5637 */;
+import renderMessageMarkup from "renderMessageMarkup" /* 8236 */;
+import InteractionComponentConstants from "InteractionComponentConstants" /* 8247 */;
+import handleMessagesTapLink from "handleMessagesTapLink" /* 10435 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5307 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import SelectedChannelStore from "SelectedChannelStore" /* 5209 */;
+import AccessibilityStore from "AccessibilityStore" /* 4914 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import SelectedChannelStore from "SelectedChannelStore" /* 4816 */;
 import size from "module_2" /* 2 */;
 
 let closure_8 = InteractionComponentConstants.TEXT_DISPLAY_COMPONENT_MARKDOWN_RENDER_OPTIONS;
@@ -25,7 +25,7 @@ export default function TextDisplayComponent(type) {
   let renderOptions;
   let tmp6;
   let tmp7;
-  const f117361 = () => {
+  const f111366 = () => {
     const items = [, ];
     ({ roleStyle: arr[0], alwaysShowLinkDecorations: arr[1] } = AccessibilityStore);
     return items;
@@ -51,8 +51,8 @@ export default function TextDisplayComponent(type) {
   }, items);
   let obj2 = type(content[11]);
   const items1 = [AccessibilityStore];
-  [tmp6, tmp7] = channelId(obj2.useStateFromStoresArray(items1, f117361), 2);
-  channelId(obj2.useStateFromStoresArray(items1, f117361), 2);
+  [tmp6, tmp7] = channelId(obj2.useStateFromStoresArray(items1, f111366), 2);
+  channelId(obj2.useStateFromStoresArray(items1, f111366), 2);
   const AnimateEmoji = type(content[12]).AnimateEmoji;
   const setting = AnimateEmoji.useSetting();
   let obj3 = type(content[11]);

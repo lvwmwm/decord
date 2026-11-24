@@ -1,13 +1,13 @@
-// Module ID: 7377
-// Function ID: 7378
+// Module ID: 6980
+// Function ID: 6981
 // Name: ConjurePublishStatusStore
-// Dependencies: [7017, 504, 558, 572, 2]
+// Dependencies: [6621, 504, 558, 572, 2]
 
-// Module 7377 (ConjurePublishStatusStore)
+// Module 6980 (ConjurePublishStatusStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import shallowEqual from "shallowEqual" /* 558 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 7017 */;
+import ConjureProjectStore from "ConjureProjectStore" /* 6621 */;
 import size from "module_2" /* 2 */;
 
 const map = new Map();
@@ -67,6 +67,7 @@ class ConjurePublishStatusStore extends Store {
 }
 const prototype = ConjurePublishStatusStore.prototype;
 let closure_11 = [];
+let closure_12 = [];
 let obj = {
   LOGOUT: function handleLogout() {
     const obj = map;
@@ -135,35 +136,39 @@ let obj = {
     }
     return flag ? undefined : false;
   },
-  CONJURE_PROJECT_PUBLISH_STATUS_UPDATE: function handleProjectPublishStatusUpdate(publishedRevision) {
+  CONJURE_PROJECT_PUBLISH_STATUS_UPDATE: function handleProjectPublishStatusUpdate(previewDevicePermissions) {
+    let newAppChannels;
     let newUiUnpublished;
     let patchNotesSent;
     let previewAppChannels;
-    let previewDevicePermissions;
     let projectId;
     let publishState;
     let surface;
-    ({ projectId, publishState, surface, previewAppChannels, previewDevicePermissions } = publishedRevision);
+    ({ projectId, publishState, surface, previewAppChannels, newAppChannels } = previewDevicePermissions);
+    if (newAppChannels === undefined) {
+      newAppChannels = closure_12;
+    }
+    previewDevicePermissions = previewDevicePermissions.previewDevicePermissions;
     if (previewDevicePermissions === undefined) {
       previewDevicePermissions = closure_11;
     }
-    publishedRevision = publishedRevision.publishedRevision;
+    let publishedRevision = previewDevicePermissions.publishedRevision;
     if (publishedRevision === undefined) {
       publishedRevision = null;
     }
-    let publishedAt = publishedRevision.publishedAt;
+    let publishedAt = previewDevicePermissions.publishedAt;
     if (publishedAt === undefined) {
       publishedAt = null;
     }
-    let flag = publishedRevision.publishing;
+    let flag = previewDevicePermissions.publishing;
     if (flag === undefined) {
       flag = false;
     }
-    ({ patchNotesSent, newUiUnpublished } = publishedRevision);
+    ({ patchNotesSent, newUiUnpublished } = previewDevicePermissions);
     if (newUiUnpublished === undefined) {
       newUiUnpublished = false;
     }
-    let flag2 = publishedRevision.safetyHold;
+    let flag2 = previewDevicePermissions.safetyHold;
     if (flag2 === undefined) {
       flag2 = false;
     }
@@ -208,24 +213,32 @@ let obj = {
             if (value.surface === surface) {
               const obj2 = shallowEqual;
               if (obj2.areArraysShallowEqual(value.previewAppChannels, previewAppChannels)) {
-                let previewDevicePermissions2 = value.previewDevicePermissions;
-                const areArraysShallowEqual = tmp18(558).areArraysShallowEqual;
+                let newAppChannels2 = value.newAppChannels;
+                const areArraysShallowEqual = shallowEqual.areArraysShallowEqual;
                 shallowEqual;
-                if (previewDevicePermissions2 == null) {
-                  previewDevicePermissions2 = closure_11;
+                if (newAppChannels2 == null) {
+                  newAppChannels2 = closure_12;
                 }
-                if (areArraysShallowEqual(previewDevicePermissions2, previewDevicePermissions)) {
-                  if (value.publishedRevision === publishedRevision) {
-                    if (value.publishedAt === publishedAt) {
-                      if (value.publishing === flag) {
-                        if (value.patchNotesSent === patchNotesSent) {
-                          if (value.newUiUnpublished === newUiUnpublished) {
-                            let flag3 = value.safetyHold;
-                            if (flag3 == null) {
-                              flag3 = false;
-                            }
-                            if (flag3 === flag2) {
-                              return false;
+                if (areArraysShallowEqual(newAppChannels2, newAppChannels)) {
+                  let previewDevicePermissions2 = value.previewDevicePermissions;
+                  const areArraysShallowEqual2 = shallowEqual.areArraysShallowEqual;
+                  shallowEqual;
+                  if (previewDevicePermissions2 == null) {
+                    previewDevicePermissions2 = closure_11;
+                  }
+                  if (areArraysShallowEqual2(previewDevicePermissions2, previewDevicePermissions)) {
+                    if (value.publishedRevision === publishedRevision) {
+                      if (value.publishedAt === publishedAt) {
+                        if (value.publishing === flag) {
+                          if (value.patchNotesSent === patchNotesSent) {
+                            if (value.newUiUnpublished === newUiUnpublished) {
+                              let flag3 = value.safetyHold;
+                              if (flag3 == null) {
+                                flag3 = false;
+                              }
+                              if (flag3 === flag2) {
+                                return false;
+                              }
                             }
                           }
                         }
@@ -239,7 +252,7 @@ let obj = {
         }
       }
     }
-    const result = obj.set(projectId, { publishState, surface, previewAppChannels, previewDevicePermissions, publishedRevision, publishedAt, publishing: flag, patchNotesSent, newUiUnpublished, safetyHold: flag2 });
+    const result = obj.set(projectId, { publishState, surface, previewAppChannels, newAppChannels, previewDevicePermissions, publishedRevision, publishedAt, publishing: flag, patchNotesSent, newUiUnpublished, safetyHold: flag2 });
   },
   CONJURE_PROJECT_PUBLISH_START: function handleProjectPublishStart(projectId) {
     projectId = projectId.projectId;

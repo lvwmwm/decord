@@ -1,14 +1,14 @@
-// Module ID: 13156
-// Function ID: 13157
+// Module ID: 12311
+// Function ID: 12312
 // Name: openConjureDevicePermissionPrompt
-// Dependencies: [6264, 13155, 1113, 4131, 2]
+// Dependencies: [5866, 12310, 1112, 4190, 2]
 // Exports: default
 
-// Module 13156 (openConjureDevicePermissionPrompt)
-import intl3 from "intl" /* 1113 */;
-import _modDef4131 from "module_4131" /* 4131 */;
-import AlertModal from "AlertModal" /* 6264 */;
-import conjureDevicePermissions from "conjureDevicePermissions" /* 13155 */;
+// Module 12311 (openConjureDevicePermissionPrompt)
+import intl3 from "intl" /* 1112 */;
+import _modDef4190 from "module_4190" /* 4190 */;
+import AlertModal from "AlertModal" /* 5866 */;
+import conjureDevicePermissions from "conjureDevicePermissions" /* 12310 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/conjure/device_permissions/openConjureDevicePermissionPrompt.native.tsx");
@@ -25,8 +25,8 @@ export default function _default(arg0) {
       key: "conjure-device-permission",
       title: obj2.getConjureDevicePermissionPromptTitle(require),
       content: mapped.join("\n"),
-      confirmText: intl.string(_modDef4131.xbsXd9),
-      cancelText: intl2.string(_modDef4131.rDyl56),
+      confirmText: intl.string(_modDef4190.xbsXd9),
+      cancelText: intl2.string(_modDef4190.rDyl56),
       variant: "primary",
       onConfirm() {
         return closure_0(true);

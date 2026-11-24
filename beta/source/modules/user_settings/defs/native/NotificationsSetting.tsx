@@ -1,14 +1,14 @@
-// Module ID: 18107
-// Function ID: 18108
+// Module ID: 16886
+// Function ID: 16887
 // Name: NotificationsSetting
-// Dependencies: [1072, 12408, 1113, 10996, 16904, 18108, 2]
+// Dependencies: [1071, 11937, 1112, 11239, 15658, 16887, 2]
 
-// Module 18107 (NotificationsSetting)
-import Constants from "Constants" /* 1072 */;
-import intl2 from "intl" /* 1113 */;
-import BellIcon from "BellIcon" /* 10996 */;
-import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 16904 */;
-import SettingBuilders from "SettingBuilders" /* 12408 */;
+// Module 16886 (NotificationsSetting)
+import Constants from "Constants" /* 1071 */;
+import intl2 from "intl" /* 1112 */;
+import BellIcon from "BellIcon" /* 11239 */;
+import notifications_NotificationSettingsUtils from "notifications/NotificationSettingsUtils" /* 15658 */;
+import SettingBuilders from "SettingBuilders" /* 11937 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

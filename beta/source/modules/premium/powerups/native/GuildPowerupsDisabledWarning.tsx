@@ -1,16 +1,16 @@
-// Module ID: 10752
-// Function ID: 10753
+// Module ID: 13435
+// Function ID: 13436
 // Name: GuildPowerupsDisabledWarning
-// Dependencies: [17, 21, 5306, 575, 8160, 5919, 2]
+// Dependencies: [17, 21, 4913, 575, 7763, 5504, 2]
 // Exports: default
 
-// Module 10752 (GuildPowerupsDisabledWarning)
+// Module 13435 (GuildPowerupsDisabledWarning)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import WarningIcon2 from "WarningIcon" /* 8160 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import WarningIcon2 from "WarningIcon" /* 7763 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let closure_4;

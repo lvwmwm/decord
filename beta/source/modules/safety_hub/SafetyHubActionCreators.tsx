@@ -1,17 +1,17 @@
-// Module ID: 14185
-// Function ID: 14186
+// Module ID: 12426
+// Function ID: 12427
 // Name: SafetyHubActionCreators
-// Dependencies: [5, 502, 8231, 8206, 1072, 572, 1285, 6351, 8205, 2]
+// Dependencies: [5, 502, 7835, 7809, 1071, 572, 1284, 5953, 7808, 2]
 // Exports: getSafetyHubDataForClassification, requestReview, requestSuspendedUserAgeVerification, resetAgeCheckStatus
 
-// Module 14185 (SafetyHubActionCreators)
+// Module 12426 (SafetyHubActionCreators)
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import Constants from "Constants" /* 1072 */;
-import HTTPUtils from "HTTPUtils" /* 1285 */;
+import Constants from "Constants" /* 1071 */;
+import HTTPUtils from "HTTPUtils" /* 1284 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import SafetyHubStore from "SafetyHubStore" /* 8231 */;
-import SafetyHubConstants from "SafetyHubConstants" /* 8206 */;
+import SafetyHubStore from "SafetyHubStore" /* 7835 */;
+import SafetyHubConstants from "SafetyHubConstants" /* 7809 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -20,7 +20,7 @@ let c0, c3, c4, signal, suspendedUserToken, user_input;
 let metroImportAll;
 let metroImportDefault;
 let metroRequire;
-const f109244 = (filename) => {
+const f102184 = (filename) => {
   filename = filename.filename;
   obj = closure_1_0(closure_1_2[7]);
   let isImageFileResult = obj.isImageFile(filename);
@@ -130,7 +130,7 @@ let obj = function _getSafetyHubData() {
                     let items;
                     const first = flagged_content.flagged_content[0];
                     const attachments = first.attachments;
-                    first.attachments = attachments.filter(f109244);
+                    first.attachments = attachments.filter(f102184);
                     let tmp2 = closure_1_0;
                     obj = closure_1_0(closure_1_2[8]);
                     if (obj.isFlaggedContentEmpty(first)) {
@@ -282,7 +282,7 @@ obj = function _getSafetyHubDataForClassification() {
                       let items;
                       const first = found.flagged_content[0];
                       const attachments = first.attachments;
-                      first.attachments = attachments.filter(f109244);
+                      first.attachments = attachments.filter(f102184);
                       const obj3 = closure_2_0(closure_2_2[8]);
                       if (obj3.isFlaggedContentEmpty(first)) {
                         items = [];

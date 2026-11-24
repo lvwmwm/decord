@@ -1,19 +1,19 @@
-// Module ID: 13138
-// Function ID: 13139
+// Module ID: 12304
+// Function ID: 12305
 // Name: ConjurePreviewMode
-// Dependencies: [5967, 4131, 1113, 2]
+// Dependencies: [5557, 4190, 1112, 2]
 // Exports: getPreviewFrameSurfaceLabel
 
-// Module 13138 (ConjurePreviewMode)
-import intl2 from "intl" /* 1113 */;
-import _modDef4131 from "module_4131" /* 4131 */;
-import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5967 */;
+// Module 12304 (ConjurePreviewMode)
+import intl2 from "intl" /* 1112 */;
+import _modDef4190 from "module_4190" /* 4190 */;
+import EmbeddedSurfaceType from "EmbeddedSurfaceType" /* 5557 */;
 import size from "module_2" /* 2 */;
 
 const obj = {};
-obj[EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL] = _modDef4131.xI4N6Q;
-obj[EmbeddedSurfaceType.EmbeddedSurfaceType.VOICE_CHANNEL] = _modDef4131.oWMDh6;
-obj[EmbeddedSurfaceType.EmbeddedSurfaceType.MAIN] = _modDef4131["0ICBnS"];
+obj[EmbeddedSurfaceType.EmbeddedSurfaceType.APP_CHANNEL] = _modDef4190.xI4N6Q;
+obj[EmbeddedSurfaceType.EmbeddedSurfaceType.VOICE_CHANNEL] = _modDef4190.oWMDh6;
+obj[EmbeddedSurfaceType.EmbeddedSurfaceType.MAIN] = _modDef4190["0ICBnS"];
 const result = size.fileFinishedImporting("modules/conjure/preview/ConjurePreviewMode.tsx");
 
 export const CONJURE_PREVIEW_MODE_ORDER = ["frame", "widget", "overlay", "bot"];

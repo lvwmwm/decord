@@ -1,23 +1,23 @@
-// Module ID: 20017
-// Function ID: 20018
+// Module ID: 19274
+// Function ID: 19275
 // Name: VoicePanelUserSheet
-// Dependencies: [19, 17, 5155, 5248, 1388, 1072, 21, 5306, 575, 7918, 7937, 15684, 8545, 504, 14532, 5131, 5985, 15683, 8476, 1113, 15693, 8134, 1655, 9148, 7420, 6341, 15758, 20016, 9516, 5556, 1187, 6010, 5919, 15706, 15761, 2]
+// Dependencies: [19, 17, 4762, 4855, 1386, 1071, 21, 4913, 575, 7520, 7539, 14424, 8135, 504, 12775, 4738, 14423, 8067, 1112, 14433, 7737, 1653, 8658, 7022, 5943, 14497, 19273, 9036, 5141, 1186, 5600, 5504, 14446, 14500, 2]
 // Exports: default
 
-// Module 20017 (VoicePanelUserSheet)
+// Module 19274 (VoicePanelUserSheet)
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 8134 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8476 */;
-import UserProfileActivity from "UserProfileActivity" /* 15706 */;
-import VoicePanelUserActionCreators from "VoicePanelUserActionCreators" /* 20016 */;
+import Constants from "Constants" /* 1071 */;
+import ChannelActionCreatorsDefault from "ChannelActionCreators" /* 7737 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8067 */;
+import UserProfileActivity from "UserProfileActivity" /* 14446 */;
+import VoicePanelUserActionCreators from "VoicePanelUserActionCreators" /* 19273 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import RelationshipStore from "RelationshipStore" /* 5248 */;
-import UserStore from "UserStore" /* 1388 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import RelationshipStore from "RelationshipStore" /* 4855 */;
+import UserStore from "UserStore" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap;
@@ -34,11 +34,11 @@ function OverflowMenu(userId) {
   let intl;
   let intl2;
   let isIgnored;
+  let obj13;
   let obj14;
   let obj15;
-  let obj16;
   let relationshipType;
-  let tmp22;
+  let tmp21;
   userId = userId.userId;
   const channelId = userId.channelId;
   const guildId = userId.guildId;
@@ -70,11 +70,9 @@ function OverflowMenu(userId) {
   const tmp11 = channelId(analyticsLocations[14])(userId, guildId);
   const DeveloperMode = userId(analyticsLocations[15]).DeveloperMode;
   const setting = DeveloperMode.useSetting();
-  const obj4 = userId(analyticsLocations[16]);
-  const isTidaMediaTakedownRegion = obj4.useIsTidaMediaTakedownRegion();
   const items2 = [userId, channelId, context, analyticsLocations];
-  const obj5 = userId(analyticsLocations[17]);
-  const result = obj5.isIarUserReportingEnabled("VoicePanelUserSheet - Mobile");
+  const obj4 = userId(analyticsLocations[16]);
+  const result = obj4.isIarUserReportingEnabled("VoicePanelUserSheet - Mobile");
   const showUserProfile = context.useCallback((showGuildProfile) => {
     const obj = { showGuildProfile, userId, channelId, sourceAnalyticsLocations: analyticsLocations, ignoreBlockedSpeedBump: true };
     const tmp = showUserProfileActionSheetDefault;
@@ -85,35 +83,35 @@ function OverflowMenu(userId) {
     return null;
   } else {
     let items7;
-    const obj6 = { user: stateFromStores, channelId, location: newestAnalyticsLocation, analyticsLocations, trackUserProfileAction, showUserProfile };
+    const obj5 = { user: stateFromStores, channelId, location: newestAnalyticsLocation, analyticsLocations, trackUserProfileAction, showUserProfile };
     const items3 = [];
     const items4 = [];
     const push3 = items3.push;
-    const obj7 = {
-      label: intl2.string(userId(analyticsLocations[19]).t.GISTta),
+    const obj6 = {
+      label: intl2.string(userId(analyticsLocations[18]).t.GISTta),
       action() {
           const obj = { action: "PRESS_VIEW_MAIN_PROFILE", analyticsLocations };
           trackUserProfileAction(obj);
           callback(false);
         }
     };
-    intl2 = tmp7(tmp2[19]).intl;
-    push3(obj7);
+    intl2 = tmp7(tmp2[18]).intl;
+    push3(obj6);
     if (currentUserId !== userId) {
-      const obj8 = { isIgnored, isBlocked: relationshipType === BLOCKED };
-      const tmp7Result = userId(analyticsLocations[20]);
-      const ignoreMenuItem = tmp7Result.getIgnoreMenuItem(obj6, obj8);
+      const obj7 = { isIgnored, isBlocked: relationshipType === BLOCKED };
+      const tmp7Result = userId(analyticsLocations[19]);
+      const ignoreMenuItem = tmp7Result.getIgnoreMenuItem(obj5, obj7);
       if (null != ignoreMenuItem) {
         items4.push(ignoreMenuItem);
       }
       const push = items4.push;
-      const obj9 = { isBlocked: relationshipType === BLOCKED };
-      const tmp7Result4 = userId(analyticsLocations[20]);
-      push(tmp7Result4.getBlockMenuItem(obj6, obj9));
+      const obj8 = { isBlocked: relationshipType === BLOCKED };
+      const tmp7Result4 = userId(analyticsLocations[19]);
+      push(tmp7Result4.getBlockMenuItem(obj5, obj8));
       if (relationshipType !== BLOCKED) {
-        const obj10 = { isInIarUserReportingExperiment: result, guildId, reportEntrypoint: "VoicePanelUserSheet" };
-        const tmp7Result5 = userId(analyticsLocations[20]);
-        const reportMenuItem = tmp7Result5.getReportMenuItem(obj6, obj10);
+        const obj9 = { isInIarUserReportingExperiment: result, guildId, reportEntrypoint: "VoicePanelUserSheet" };
+        const tmp7Result5 = userId(analyticsLocations[19]);
+        const reportMenuItem = tmp7Result5.getReportMenuItem(obj5, obj9);
         if (null != reportMenuItem) {
           items4.push(reportMenuItem);
         }
@@ -121,12 +119,12 @@ function OverflowMenu(userId) {
     }
     if (setting) {
       const push2 = items3.push;
-      const obj11 = { isTidaRegion: isTidaMediaTakedownRegion, avatarGuildId: guildId };
-      const tmp7Result6 = userId(analyticsLocations[20]);
-      push2(tmp7Result6.getDeveloperCopyMenuItem(obj6, obj11));
+      const obj10 = { avatarGuildId: guildId };
+      const tmp7Result6 = userId(analyticsLocations[19]);
+      push2(tmp7Result6.getDeveloperCopyMenuItem(obj5, obj10));
     }
-    const obj12 = {
-      label: intl.string(userId(analyticsLocations[19]).t.oeb1vg),
+    const obj11 = {
+      label: intl.string(userId(analyticsLocations[18]).t.oeb1vg),
       action() {
           const obj = { action: "SEND_MESSAGE", analyticsLocations };
           trackUserProfileAction(obj);
@@ -135,36 +133,36 @@ function OverflowMenu(userId) {
           obj2.openPrivateChannel(obj3);
         }
     };
-    intl = tmp7(tmp2[19]).intl;
-    const items5 = [obj12];
-    const obj13 = { value: analyticsLocations, children: closure_10(tmp22, obj14) };
-    obj14 = { ref, children: closure_10(View, obj15) };
+    intl = tmp7(tmp2[18]).intl;
+    const items5 = [obj11];
+    const obj12 = { value: analyticsLocations, children: closure_10(tmp21, obj13) };
+    obj13 = { ref, children: closure_10(View, obj14) };
     const AnalyticsLocationProvider = tmp7(tmp2[9]).AnalyticsLocationProvider;
-    obj15 = { style: tmp6, children: closure_10(ContextMenu, obj16) };
-    View = tmp(tmp2[22]).View;
-    ContextMenu = tmp7(tmp2[23]).ContextMenu;
-    tmp22 = trackUserProfileAction;
+    obj14 = { style: tmp6, children: closure_10(ContextMenu, obj15) };
+    View = tmp(tmp2[21]).View;
+    ContextMenu = tmp7(tmp2[22]).ContextMenu;
+    tmp21 = trackUserProfileAction;
     if (tmp11) {
       const items6 = [items5, items3, items4];
       items7 = items6;
     } else {
       items7 = [items3, items4];
     }
-    obj16 = {
+    obj15 = {
       items: items7,
       children(ref) {
           let MoreHorizontalIcon;
           let intl;
           let obj2;
-          const obj = { ref: ref.ref, accessibilityLabel: intl.string(userId(analyticsLocations[19]).t["+zofAD"]), children: closure_1_10(MoreHorizontalIcon, obj2) };
+          const obj = { ref: ref.ref, accessibilityLabel: intl.string(userId(analyticsLocations[18]).t["+zofAD"]), children: closure_1_10(MoreHorizontalIcon, obj2) };
           const merged = Object.assign(Object.assign(ref, Object.assign({ ref: 0 })));
-          intl = userId(analyticsLocations[19]).intl;
+          intl = userId(analyticsLocations[18]).intl;
           obj2 = { size: "sm", color: channelId(analyticsLocations[8]).colors.WHITE };
-          MoreHorizontalIcon = userId(analyticsLocations[24]).MoreHorizontalIcon;
+          MoreHorizontalIcon = userId(analyticsLocations[23]).MoreHorizontalIcon;
           return closure_1_10(stateFromStores, obj);
         }
     };
-    return closure_10(AnalyticsLocationProvider, obj13);
+    return closure_10(AnalyticsLocationProvider, obj12);
   }
 }
 ({ View: closure_4, Pressable: hasOwnProperty } = react_native);
@@ -200,9 +198,9 @@ export default function VoicePanelUserSheet(userId) {
   const items2 = [UserStore];
   const obj4 = channelId(504);
   const stateFromStores2 = obj4.useStateFromStores(items2, () => currentUser.getCurrentUser());
-  const obj5 = channelId(6341);
+  const obj5 = channelId(5943);
   const name = obj5.useName(guildId, channelId, stateFromStores);
-  const live = userId(15758)(userId).live;
+  const live = userId(14497)(userId).live;
   let closure_5 = tmp8;
   const items3 = [null == stateFromStores || null == stateFromStores1 || null == stateFromStores2];
   const effect = stateFromStores.useEffect(() => {
@@ -219,27 +217,27 @@ export default function VoicePanelUserSheet(userId) {
         let tmp11Result;
         const avatarURL = stateFromStores.getAvatarURL(guildId, 48, false);
         if (null != avatarURL) {
-          const tmp2Result = channelId(9516);
+          const tmp2Result = channelId(9036);
           cachedSourceFromURI = tmp2Result.getCachedSourceFromURI(avatarURL);
         }
         const avatarDecoration = stateFromStores.avatarDecoration;
         const obj2 = { style: tmp.wrapper, children: items6 };
         const obj6 = { style: tmp.header, children: items5 };
         const obj7 = { style: tmp.user, children: items4 };
-        const BottomSheet = tmp2(5556).BottomSheet;
+        const BottomSheet = tmp2(5141).BottomSheet;
         if (null != avatarDecoration) {
-          const obj8 = { source: cachedSourceFromURI, size: channelId(1187).AvatarSizes.LARGE_48, avatarDecoration };
-          const Avatar = tmp2(1187).Avatar;
+          const obj8 = { source: cachedSourceFromURI, size: channelId(1186).AvatarSizes.LARGE_48, avatarDecoration };
+          const Avatar = tmp2(1186).Avatar;
           tmp11Result = tmp11(Avatar, obj8);
         } else {
           size = { source: cachedSourceFromURI, resizeMode: "stretch", width: 48, height: 48, style: tmp.avatar };
-          const tmp7Result = userId(6010);
+          const tmp7Result = userId(5600);
           tmp11Result = tmp11(tmp7Result, size);
         }
         items4 = [tmp11Result, ];
         const obj10 = { variant: "body-md/semibold", style: tmp.username, lineClamp: 1, children: name };
         const obj9 = { children: closure_11(stateFromStores2, obj2) };
-        items4[1] = closure_10(channelId(5919).Text, obj10);
+        items4[1] = closure_10(channelId(5504).Text, obj10);
         items5 = [closure_11(stateFromStores2, obj7), ];
         const obj11 = { userId: stateFromStores.id, currentUserId: stateFromStores2.id, channelId, guildId };
         items5[1] = closure_10(OverflowMenu, obj11);
@@ -258,7 +256,7 @@ export default function VoicePanelUserSheet(userId) {
 
         ];
         const obj12 = { user: stateFromStores, channel: stateFromStores1, currentUser: stateFromStores2, style: tmp.card };
-        items6[2] = closure_10(userId(15761), obj12);
+        items6[2] = closure_10(userId(14500), obj12);
         return closure_10(BottomSheet, obj9);
       }
     }

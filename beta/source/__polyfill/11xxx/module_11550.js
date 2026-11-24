@@ -1,9 +1,9 @@
 // Module ID: 11550
 // Function ID: 11551
-// Dependencies: [41, 42, 93, 95, 98, 11450]
+// Dependencies: [41, 42, 93, 95, 98, 11433]
 
 // Module 11550
-import _mod11450 from "module_11450" /* 11450 */;
+import _mod11433 from "module_11433" /* 11433 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import map from "_possibleConstructorReturn" /* 93 */;
@@ -42,12 +42,12 @@ if (!fn) {
     return tmp2;
   };
 }
-class ZHHantMergeDateTimeRefiner {
+class RUMergeDateRangeRefiner {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, ZHHantMergeDateTimeRefiner);
-    const obj = _getPrototypeOf(ZHHantMergeDateTimeRefiner);
+    _classCallCheck(this, RUMergeDateRangeRefiner);
+    const obj = _getPrototypeOf(RUMergeDateRangeRefiner);
     const tmp2 = _getPrototypeOf;
     const tmp3 = map;
     if (_isNativeReflectConstruct()) {
@@ -59,13 +59,13 @@ class ZHHantMergeDateTimeRefiner {
     return tmp3(self, constructResult);
   }
 }
-_inherits(ZHHantMergeDateTimeRefiner, fn(_mod11450).default);
+_inherits(RUMergeDateRangeRefiner, fn(_mod11433).default);
 const entry = {
   key: "patternBetween",
   value: function patternBetween() {
-    return /^\s*$/i;
+    return /^\s*(и до|и по|до|по|-)\s*$/i;
   }
 };
 const items = [entry];
 
-export default _createClass(ZHHantMergeDateTimeRefiner, items);
+export default _createClass(RUMergeDateRangeRefiner, items);

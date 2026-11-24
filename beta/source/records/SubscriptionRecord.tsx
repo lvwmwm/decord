@@ -1,17 +1,17 @@
-// Module ID: 2180
-// Function ID: 2181
+// Module ID: 2179
+// Function ID: 2180
 // Name: SubscriptionRecord
-// Dependencies: [1408, 2181, 2182, 1072, 2184, 1390, 2185, 38, 1380, 2186, 2110, 2]
+// Dependencies: [1406, 2180, 2181, 1071, 2183, 1388, 2184, 38, 1378, 2185, 2108, 2]
 
-// Module 2180 (SubscriptionRecord)
-import PremiumTypeUtils from "PremiumTypeUtils" /* 2110 */;
-import PremiumSubscription from "PremiumSubscription" /* 2185 */;
-import Record from "Record" /* 1408 */;
-import GooglePlayPriceChangeRecord from "GooglePlayPriceChangeRecord" /* 2181 */;
-import InvoiceRecord from "InvoiceRecord" /* 2182 */;
-import Constants from "Constants" /* 1072 */;
-import BillingConstants from "BillingConstants" /* 2184 */;
-import PremiumConstants from "PremiumConstants" /* 1390 */;
+// Module 2179 (SubscriptionRecord)
+import PremiumTypeUtils from "PremiumTypeUtils" /* 2108 */;
+import PremiumSubscription from "PremiumSubscription" /* 2184 */;
+import Record from "Record" /* 1406 */;
+import GooglePlayPriceChangeRecord from "GooglePlayPriceChangeRecord" /* 2180 */;
+import InvoiceRecord from "InvoiceRecord" /* 2181 */;
+import Constants from "Constants" /* 1071 */;
+import BillingConstants from "BillingConstants" /* 2183 */;
+import PremiumConstants from "PremiumConstants" /* 1388 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -38,7 +38,7 @@ class SubscriptionRecord extends Record {
     let tmp10;
     let tmp9;
     const tmp7 = new SubscriptionRecord(tmp6, tmp5, tmp4, tmp3, tmp2, tmp);
-    ({ id: tmp7.id, type: tmp7.type, items: tmp7.items, createdAt: tmp7.createdAt, canceledAt: tmp7.canceledAt, currentPeriodStart: tmp7.currentPeriodStart, currentPeriodEnd: tmp7.currentPeriodEnd, status: tmp7.status, paymentSourceId: tmp7.paymentSourceId, paymentGateway: tmp7.paymentGateway, paymentGatewayPlanId: tmp7.paymentGatewayPlanId, paymentGatewaySubscriptionId: tmp7.paymentGatewaySubscriptionId, trialId: tmp7.trialId, trialEndsAt: tmp7.trialEndsAt, renewalMutations: tmp7.renewalMutations, currency: tmp7.currency, pauseEndsAt: tmp7.pauseEndsAt, pauseReason: tmp7.pauseReason, metadata: tmp7.metadata, latestInvoice: tmp7.latestInvoice, useStorekitResubscribe: tmp7.useStorekitResubscribe, price: tmp7.price, userId: tmp7.userId, streakStartedAt: tmp7.streakStartedAt, eligiblePaymentGateways: tmp7.eligiblePaymentGateways, priceChange: tmp7.priceChange } = type);
+    ({ id: tmp7.id, type: tmp7.type, items: tmp7.items, createdAt: tmp7.createdAt, canceledAt: tmp7.canceledAt, currentPeriodStart: tmp7.currentPeriodStart, currentPeriodEnd: tmp7.currentPeriodEnd, status: tmp7.status, paymentSourceId: tmp7.paymentSourceId, paymentGateway: tmp7.paymentGateway, paymentGatewayPlanId: tmp7.paymentGatewayPlanId, paymentGatewaySubscriptionId: tmp7.paymentGatewaySubscriptionId, trialId: tmp7.trialId, trialEndsAt: tmp7.trialEndsAt, renewalMutations: tmp7.renewalMutations, currency: tmp7.currency, pauseEndsAt: tmp7.pauseEndsAt, pauseReason: tmp7.pauseReason, metadata: tmp7.metadata, latestInvoice: tmp7.latestInvoice, useStorekitResubscribe: tmp7.useStorekitResubscribe, price: tmp7.price, userId: tmp7.userId, streakStartedAt: tmp7.streakStartedAt, eligiblePaymentGateways: tmp7.eligiblePaymentGateways, priceChange: tmp7.priceChange, giftSubscription: tmp7.giftSubscription } = type);
     const renewalMutations = tmp7.renewalMutations;
     let planId = type.items[0].planId;
     let planId2 = null;
@@ -51,7 +51,7 @@ class SubscriptionRecord extends Record {
       tmp10 = basePlanIdForSubscriptionItems;
       const tmp12 = require;
       if (null != renewalMutations) {
-        const tmp12Result = tmp12(2185);
+        const tmp12Result = tmp12(2184);
         const basePlanIdForSubscriptionItems1 = tmp12Result.getBasePlanIdForSubscriptionItems(renewalMutations.items, interval, intervalCount);
         planId2 = basePlanIdForSubscriptionItems1;
         tmp9 = basePlanIdForSubscriptionItems1;
@@ -83,13 +83,15 @@ class SubscriptionRecord extends Record {
     let date4;
     let date5;
     let date6;
+    let date7;
     let fromServer;
     let items;
     let items1;
     let obj4;
     let prop;
+    let tmp16;
     let tmp8;
-    const obj = { id: id.id, type: id.type, createdAt: new Date(id.created_at), canceledAt: date1, currentPeriodStart: new Date(id.current_period_start), currentPeriodEnd: new Date(id.current_period_end), status: null, paymentSourceId: null, paymentGateway: null, paymentGatewayPlanId: null, paymentGatewaySubscriptionId: null, trialId: null, trialEndsAt: date4, items: items.map(createSubscriptionItemFromServer), renewalMutations: tmp8, streakStartedAt: date5, currency: id.currency, pauseEndsAt: date6, pauseReason: null, metadata: null, useStorekitResubscribe: null, price: null, userId: null, eligiblePaymentGateways: prop, priceChange: fromServer };
+    const obj = { id: id.id, type: id.type, createdAt: new Date(id.created_at), canceledAt: date1, currentPeriodStart: new Date(id.current_period_start), currentPeriodEnd: new Date(id.current_period_end), status: null, paymentSourceId: null, paymentGateway: null, paymentGatewayPlanId: null, paymentGatewaySubscriptionId: null, trialId: null, trialEndsAt: date4, items: items.map(createSubscriptionItemFromServer), renewalMutations: tmp8, streakStartedAt: date5, currency: id.currency, pauseEndsAt: date6, pauseReason: null, metadata: null, useStorekitResubscribe: null, price: null, userId: null, eligiblePaymentGateways: prop, priceChange: fromServer, giftSubscription: tmp16 };
     date1 = null;
     new Date(id.created_at);
     const tmp = SubscriptionRecord;
@@ -146,6 +148,18 @@ class SubscriptionRecord extends Record {
     fromServer = null;
     if (null != id.price_change) {
       fromServer = GooglePlayPriceChangeRecord.createFromServer(id.price_change);
+    }
+    const gift_subscription = id.gift_subscription;
+    tmp16 = gift_subscription;
+    if (null != gift_subscription) {
+      const obj9 = { id: null, status: null, recipientUserId: null, acceptanceExpiresAt: date7, initialGiftCode: null, initialEntitlementId: null };
+      ({ id: obj5.id, status: obj5.status, recipient_user_id: obj5.recipientUserId } = gift_subscription);
+      const _Date5 = Date;
+      const self9 = this;
+      const self10 = this;
+      ({ initial_gift_code: obj5.initialGiftCode, initial_entitlement_id: obj5.initialEntitlementId } = gift_subscription);
+      tmp16 = obj9;
+      date7 = new Date(gift_subscription.acceptance_expires_at);
     }
     return new tmp(obj);
   }

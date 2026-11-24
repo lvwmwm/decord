@@ -1,19 +1,19 @@
-// Module ID: 9306
-// Function ID: 9307
+// Module ID: 8855
+// Function ID: 8856
 // Name: ReferralProgramUtils
-// Dependencies: [1231, 9293, 5152, 1089, 1113, 5338, 5139, 11, 5140, 9307, 504, 2]
+// Dependencies: [1230, 8842, 4759, 1088, 1112, 4945, 4746, 11, 4747, 8856, 504, 2]
 // Exports: getReferralTrialOfferExpirationCopy, isReferralProgramBadgeAcknowledged, markReferralProgramBadgeAcknowledged, markReferralProgramEntrypointBadgeAcknowledged, markReferralProgramPopoverSeen, useIsReferralProgramBadgeShowable, useIsReferralProgramEntrypointBadgeAcknowledged, useIsReferralProgramPopoverShowable
 
-// Module 9306 (ReferralProgramUtils)
+// Module 8855 (ReferralProgramUtils)
 import SnowflakeUtilsDefault from "SnowflakeUtils" /* 11 */;
-import DurationsDefault from "Durations" /* 1089 */;
-import intl4 from "intl" /* 1113 */;
-import dismissible_content from "dismissible_content" /* 5139 */;
-import DismissibleContentUtils from "DismissibleContentUtils" /* 5140 */;
-import DismissibleContentConstants from "DismissibleContentConstants" /* 5152 */;
-import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 5338 */;
-import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1231 */;
-import ReferralTrialStore from "ReferralTrialStore" /* 9293 */;
+import DurationsDefault from "Durations" /* 1088 */;
+import intl4 from "intl" /* 1112 */;
+import dismissible_content from "dismissible_content" /* 4746 */;
+import DismissibleContentUtils from "DismissibleContentUtils" /* 4747 */;
+import DismissibleContentConstants from "DismissibleContentConstants" /* 4759 */;
+import DismissibleContentUnsafeUtils from "DismissibleContentUnsafeUtils" /* 4945 */;
+import UserSettingsProtoStore from "UserSettingsProtoStore" /* 1230 */;
+import ReferralTrialStore from "ReferralTrialStore" /* 8842 */;
 import size from "module_2" /* 2 */;
 
 const ContentDismissActionType = DismissibleContentConstants.ContentDismissActionType;
@@ -97,7 +97,7 @@ export function markReferralProgramPopoverSeen(promotionId) {
 }
 export function useIsReferralProgramPopoverShowable() {
   let stateFromStores1;
-  let obj = stateFromStores1(9307);
+  let obj = stateFromStores1(8856);
   let isEligibleSenderForReferralProgram = obj.useIsEligibleSenderForReferralProgram(false);
   const items = [ReferralTrialStore];
   const obj2 = stateFromStores1(504);

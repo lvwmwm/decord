@@ -1,35 +1,35 @@
-// Module ID: 16093
-// Function ID: 16094
+// Module ID: 14861
+// Function ID: 14862
 // Name: VoiceMemberList
-// Dependencies: [32, 5, 19, 17, 5154, 1407, 6810, 5238, 1388, 6064, 1072, 1191, 5557, 1083, 21, 5306, 16089, 12973, 504, 8106, 15336, 1113, 10982, 12542, 8460, 5919, 11297, 7918, 2020, 6925, 12713, 6890, 16094, 16095, 1496, 16102, 5482, 12, 5542, 8476, 5367, 16103, 7847, 2]
+// Dependencies: [32, 5, 19, 17, 4761, 1405, 6400, 4845, 1386, 5657, 1071, 1190, 5142, 1082, 21, 4913, 14857, 10926, 504, 7709, 14067, 1112, 11055, 12059, 8051, 5504, 10736, 7520, 2018, 6529, 10779, 6494, 14862, 14863, 1494, 14870, 5089, 12, 5127, 8067, 4974, 14871, 7449, 2]
 // Exports: default
 
-// Module 16093 (VoiceMemberList)
-import Constants2 from "Constants" /* 1083 */;
-import FormConstants from "FormConstants" /* 1191 */;
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
-import ActionSheetConstants from "ActionSheetConstants" /* 5557 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import _mod8106 from "module_8106" /* 8106 */;
-import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8460 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8476 */;
-import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 12542 */;
-import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 12973 */;
-import GuildEventVoiceBannerDefault from "GuildEventVoiceBanner" /* 16089 */;
-import VoiceMemberUser from "VoiceMemberUser" /* 16095 */;
+// Module 14861 (VoiceMemberList)
+import Constants2 from "Constants" /* 1082 */;
+import FormConstants from "FormConstants" /* 1190 */;
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
+import ActionSheetConstants from "ActionSheetConstants" /* 5142 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import _mod7709 from "module_7709" /* 7709 */;
+import instant_invite_InstantInviteUtils from "instant_invite/InstantInviteUtils" /* 8051 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8067 */;
+import useIsVoiceChannelFullDefault from "useIsVoiceChannelFull" /* 10926 */;
+import openGroupDMAddMembersDefault from "openGroupDMAddMembers" /* 12059 */;
+import GuildEventVoiceBannerDefault from "GuildEventVoiceBanner" /* 14857 */;
+import VoiceMemberUser from "VoiceMemberUser" /* 14863 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 5154 */;
-import UserRecord from "UserRecord" /* 1407 */;
-import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6810 */;
-import PermissionStore from "PermissionStore" /* 5238 */;
-import UserStore from "UserStore" /* 1388 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 6064 */;
-import Constants from "Constants" /* 1072 */;
+import EmbeddedActivitiesStore from "EmbeddedActivitiesStore" /* 4761 */;
+import UserRecord from "UserRecord" /* 1405 */;
+import ApplicationStreamingStore from "ApplicationStreamingStore" /* 6400 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
+import UserStore from "UserStore" /* 1386 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5657 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment_mod from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -45,10 +45,10 @@ let closure_23;
 let metroImportAll;
 let metroImportDefault;
 let tmp;
-const AssetRegistryDefault = tmp(10982);
+const AssetRegistryDefault = tmp(11055);
 function ItemSeparator() {
   const obj = { style: closure_24().rowFormDivider };
-  return closure_21(_mod8106.FormDivider, obj);
+  return closure_21(_mod7709.FormDivider, obj);
 }
 function VoiceMemberListSectionHeader(title) {
   let Text;
@@ -217,7 +217,7 @@ let closure_26 = react.memo(function Footer(channel) {
       items = [closure_21(ItemSeparator, {}), ];
       let obj2 = {
         leading: closure_21(CircularIconButton, obj3),
-        label: intl2.string(tmp4(1113).t["6Qgrev"]),
+        label: intl2.string(tmp4(1112).t["6Qgrev"]),
         onPress() {
               if (channel.isPrivate()) {
                 openGroupDMAddMembersDefault(channel.id, constants.CHANNEL_CALL);
@@ -228,11 +228,11 @@ let closure_26 = react.memo(function Footer(channel) {
               }
             }
       };
-      const FormRow = tmp4(8106).FormRow;
-      obj3 = { accessibilityLabel: intl.string(channel(1113).t["6Qgrev"]), accessibilityHidden: true, source: AssetRegistryDefault, size: channel(15336).CircularIconButton.Sizes.MEDIUM_32 };
-      CircularIconButton = tmp4(15336).CircularIconButton;
-      intl = tmp4(1113).intl;
-      intl2 = tmp4(1113).intl;
+      const FormRow = tmp4(7709).FormRow;
+      obj3 = { accessibilityLabel: intl.string(channel(1112).t["6Qgrev"]), accessibilityHidden: true, source: AssetRegistryDefault, size: channel(14067).CircularIconButton.Sizes.MEDIUM_32 };
+      CircularIconButton = tmp4(14067).CircularIconButton;
+      intl = tmp4(1112).intl;
+      intl2 = tmp4(1112).intl;
       items[1] = closure_21(FormRow, obj2);
       tmp7 = closure_22(Fragment, obj);
     }
@@ -255,7 +255,7 @@ export default function VoiceMemberList(channel) {
   let obj6;
   let reduced;
   let tmp25Result2;
-  const f112794 = (user) => stateFromStoresArray.includes(user.user.id);
+  const f106752 = (user) => stateFromStoresArray.includes(user.user.id);
   channel = channel.channel;
   let flag = channel.isActionSheet;
   if (flag === undefined) {
@@ -329,8 +329,8 @@ export default function VoiceMemberList(channel) {
           str = "";
         }
         const tmp3Result = flag(tmp4[37]);
-        [arr10, arr11] = _slicedToArray(tmp3Result.partition(stateFromStores, f112794), 2);
-        const tmp15 = _slicedToArray(tmp3Result.partition(stateFromStores, f112794), 2);
+        [arr10, arr11] = _slicedToArray(tmp3Result.partition(stateFromStores, f106752), 2);
+        const tmp15 = _slicedToArray(tmp3Result.partition(stateFromStores, f106752), 2);
         if (arr10.length > 0) {
           const push = items5.push;
           const obj5 = { type: constants4.SPECTATING, title: intl.formatToPlainString(channel(tmp4[21]).t.Fb0eT9, obj6), data: arr10 };
@@ -400,7 +400,7 @@ export default function VoiceMemberList(channel) {
                     const obj2 = { children: items };
                     items = [callback1(obj), ];
                     const obj3 = { style: rowFormDivider.rowFormDivider };
-                    items[1] = closure_21(_mod8106.FormDivider, obj3);
+                    items[1] = closure_21(_mod7709.FormDivider, obj3);
                     return authStore5(sidebars, obj2);
                   }
                 },
@@ -419,7 +419,7 @@ export default function VoiceMemberList(channel) {
                       let result;
                       const tmp = undefined !== items5[arg0].data[arg1].url && undefined !== items5[arg0].data[arg1].applicationId;
                       if (tmp) {
-                        const tmp9Result = tmp9(16094);
+                        const tmp9Result = tmp9(14862);
                         result = tmp9Result.calculateActivityRowHeight(tmp8);
                       } else {
                         const voiceState = tmp7.voiceState;

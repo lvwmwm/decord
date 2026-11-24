@@ -4,7 +4,7 @@
 // Dependencies: [41, 42, 693, 695, 708, 709, 691, 702, 696, 710, 694, 687, 688]
 
 // Module 707 (Scope)
-import _mod687 from "module_687" /* 687 */;
+import DEBUG_BUILD from "DEBUG_BUILD" /* 687 */;
 import _mod691 from "module_691" /* 691 */;
 import generateSpanId from "generateSpanId" /* 693 */;
 import uuid4 from "uuid4" /* 694 */;
@@ -112,8 +112,8 @@ let items = [
   },
   {
     key: "setLastEventId",
-    value: function setLastEventId(_lastEventId) {
-      this._lastEventId = _lastEventId;
+    value: function setLastEventId(event_id) {
+      this._lastEventId = event_id;
     }
   },
   {
@@ -147,7 +147,7 @@ let items = [
     key: "setUser",
     value: function setUser(user) {
       const self = this;
-      const tmp = user || { email: "applicationId", id: "accessibilityLabel", ip_address: "e", username: "Array" };
+      const tmp = user || { email: "jsxs", id: "channelId", ip_address: "Math", username: "now" };
       this._user = tmp;
       if (this._session) {
         const obj2 = { user };
@@ -211,9 +211,9 @@ let items = [
   },
   {
     key: "removeAttribute",
-    value: function removeAttribute(crossorigin) {
+    value: function removeAttribute(key10005) {
       const self = this;
-      if (crossorigin in this._attributes) {
+      if (key10005 in this._attributes) {
         delete self._attributes[tmp];
         const result = self._notifyScopeListeners();
       }
@@ -252,16 +252,16 @@ let items = [
   },
   {
     key: "setLevel",
-    value: function setLevel(_level) {
-      this._level = _level;
+    value: function setLevel(fatal) {
+      this._level = fatal;
       const result = this._notifyScopeListeners();
       return this;
     }
   },
   {
     key: "setTransactionName",
-    value: function setTransactionName(_transactionName) {
-      this._transactionName = _transactionName;
+    value: function setTransactionName(name) {
+      this._transactionName = name;
       const result = this._notifyScopeListeners();
       return this;
     }
@@ -513,7 +513,7 @@ let items = [
         return event_id;
       } else {
         const tmp4 = require;
-        if (_mod687.DEBUG_BUILD) {
+        if (DEBUG_BUILD.DEBUG_BUILD) {
           const debug = tmp4(688).debug;
           debug.warn("No client configured on scope - will not capture exception!");
         }
@@ -552,7 +552,7 @@ let items = [
         return event_id;
       } else {
         const tmp4 = require;
-        if (_mod687.DEBUG_BUILD) {
+        if (DEBUG_BUILD.DEBUG_BUILD) {
           const debug = tmp4(688).debug;
           debug.warn("No client configured on scope - will not capture message!");
         }
@@ -580,7 +580,7 @@ let items = [
         captureEvent(arg0, obj2, self);
       } else {
         const tmp4 = require;
-        if (_mod687.DEBUG_BUILD) {
+        if (DEBUG_BUILD.DEBUG_BUILD) {
           const debug = tmp4(688).debug;
           debug.warn("No client configured on scope - will not capture event!");
         }

@@ -1,11 +1,11 @@
-// Module ID: 13299
-// Function ID: 13300
+// Module ID: 14353
+// Function ID: 14354
 // Name: useFrameBySurface
-// Dependencies: [7019, 504, 2]
+// Dependencies: [6623, 504, 2]
 // Exports: default
 
-// Module 13299 (useFrameBySurface)
-import FramesStore from "FramesStore" /* 7019 */;
+// Module 14353 (useFrameBySurface)
+import FramesStore from "FramesStore" /* 6623 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

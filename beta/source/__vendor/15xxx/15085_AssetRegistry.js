@@ -1,10 +1,10 @@
 // Module ID: 15085
 // Function ID: 15086
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 15085 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 121, height: 80, scales: [1, 2], hash: "03d3616a833b9606b61838a277c7b0cf", name: "link_expired", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/build_overrides/native/images", width: 60, height: 46, scales: [2, 3], hash: "cca9165d24749fb9aec98d0d9c04f23f", name: "code-illustration-light", type: "png" });

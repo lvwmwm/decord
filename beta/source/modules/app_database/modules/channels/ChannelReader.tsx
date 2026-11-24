@@ -1,11 +1,11 @@
-// Module ID: 5205
-// Function ID: 5206
+// Module ID: 4812
+// Function ID: 4813
 // Name: ChannelReader
-// Dependencies: [5, 3, 5184, 2]
+// Dependencies: [5, 3, 4791, 2]
 
-// Module 5205 (ChannelReader)
+// Module 4812 (ChannelReader)
 import LoggerDefault from "Logger" /* 3 */;
-import DatabaseDaosDefault from "DatabaseDaos" /* 5184 */;
+import DatabaseDaosDefault from "DatabaseDaos" /* 4791 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

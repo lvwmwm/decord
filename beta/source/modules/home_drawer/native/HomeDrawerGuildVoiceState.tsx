@@ -1,28 +1,28 @@
-// Module ID: 19099
-// Function ID: 19100
+// Module ID: 17895
+// Function ID: 17896
 // Name: HomeDrawerGuildVoiceState
-// Dependencies: [19, 17, 5236, 5248, 6948, 6064, 1072, 21, 5306, 575, 15747, 1187, 5919, 1113, 13103, 6010, 5883, 19098, 504, 12, 16216, 2]
+// Dependencies: [19, 17, 4843, 4855, 6552, 5657, 1071, 21, 4913, 575, 14486, 1186, 5504, 1112, 11084, 5600, 5468, 17894, 504, 12, 14989, 2]
 // Exports: GuildVoiceState, useVoiceUsers
 
-// Module 19099 (HomeDrawerGuildVoiceState)
+// Module 17895 (HomeDrawerGuildVoiceState)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
-import intl2 from "intl" /* 1113 */;
-import native from "native" /* 1187 */;
-import GuildChannelStore2 from "GuildChannelStore" /* 5236 */;
-import LinearGradientDefault from "LinearGradient" /* 5883 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import FastImageDefault from "FastImage" /* 6010 */;
-import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 13103 */;
-import AvatarPile2 from "AvatarPile" /* 15747 */;
+import Constants from "Constants" /* 1071 */;
+import intl2 from "intl" /* 1112 */;
+import native from "native" /* 1186 */;
+import GuildChannelStore2 from "GuildChannelStore" /* 4843 */;
+import LinearGradientDefault from "LinearGradient" /* 5468 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import FastImageDefault from "FastImage" /* 5600 */;
+import useFetchStreamPreviewDefault from "useFetchStreamPreview" /* 11084 */;
+import AvatarPile2 from "AvatarPile" /* 14486 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 5248 */;
-import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6948 */;
-import SortedVoiceStateStore from "SortedVoiceStateStore" /* 6064 */;
+import RelationshipStore from "RelationshipStore" /* 4855 */;
+import UserGuildSettingsStore from "UserGuildSettingsStore" /* 6552 */;
+import SortedVoiceStateStore from "SortedVoiceStateStore" /* 5657 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 const require = globalThis.__r;

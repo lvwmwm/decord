@@ -1,11 +1,12 @@
 // Module ID: 11480
 // Function ID: 11481
-// Dependencies: [41, 42, 93, 95, 98, 11435, 11434, 11436]
+// Dependencies: [41, 42, 93, 95, 98, 11477, 11417, 11418, 11422]
 
 // Module 11480
-import Meridiem from "Meridiem" /* 11434 */;
-import assignSimilarDate from "assignSimilarDate" /* 11435 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 11436 */;
+import EmptyDuration from "EmptyDuration" /* 11417 */;
+import ReferenceWithTimezone from "ReferenceWithTimezone" /* 11418 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 11422 */;
+import _mod11477 from "module_11477" /* 11477 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
@@ -27,94 +28,42 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-class DECasualTimeParser {
+class FRTimeUnitAgoFormatParser {
   constructor() {
     let constructResult;
     const self = this;
-    _classCallCheck(this, DECasualTimeParser);
-    const obj = _getPrototypeOf(DECasualTimeParser);
+    _classCallCheck(this, FRTimeUnitAgoFormatParser);
+    const obj = _getPrototypeOf(FRTimeUnitAgoFormatParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
       const _Reflect = Reflect;
-      constructResult = Reflect.construct(obj, arguments, tmp2(self).constructor);
+      constructResult = Reflect.construct(obj, [], tmp2(self).constructor);
     } else {
-      constructResult = obj(...arguments);
+      constructResult = obj.apply(self, undefined);
     }
     return tmp3(self, constructResult);
   }
 }
-_inherits(DECasualTimeParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(FRTimeUnitAgoFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
   key: "innerPattern",
-  value: function innerPattern(arg0) {
-    return /(diesen)?\s*(morgen|vormittag|mittags?|nachmittag|abend|nacht|mitternacht)(?=\W|$)/i;
+  value: function innerPattern() {
+    const regExp = new RegExp("il y a\\s*(" + _mod11477.TIME_UNITS_PATTERN + ")(?=(?:\\W|$))", "i");
+    return regExp;
   }
 };
 const items = [
   entry,
   {
     key: "innerExtract",
-    value: function innerExtract(refDate, arg1) {
-      refDate = refDate.refDate;
-      const str = arg1[2];
-      const formatted = str.toLowerCase();
-      const parsingComponents = refDate.createParsingComponents();
-      assignSimilarDate.implySimilarTime(parsingComponents, refDate);
-      return DECasualTimeParser.extractTimeComponents(parsingComponents, formatted);
+    value: function innerExtract(reference, arg1) {
+      const parseDurationResult = _mod11477.parseDuration(arg1[1]);
+      const reverseDurationResult = EmptyDuration.reverseDuration(parseDurationResult);
+      const ParsingComponents = ReferenceWithTimezone.ParsingComponents;
+      return ParsingComponents.createRelativeFromReference(reference.reference, reverseDurationResult);
     }
   }
 ];
-const entry1 = {
-  key: "extractTimeComponents",
-  value: function extractTimeComponents(nowResult, formatted) {
-    if ("morgen" === formatted) {
-      nowResult.imply("hour", 6);
-      nowResult.imply("minute", 0);
-      nowResult.imply("second", 0);
-      nowResult.imply("meridiem", Meridiem.Meridiem.AM);
-    } else if ("vormittag" === formatted) {
-      nowResult.imply("hour", 9);
-      nowResult.imply("minute", 0);
-      nowResult.imply("second", 0);
-      nowResult.imply("meridiem", Meridiem.Meridiem.AM);
-    } else {
-      if ("mittag" !== formatted) {
-        if ("mittags" !== formatted) {
-          if ("nachmittag" === formatted) {
-            nowResult.imply("hour", 15);
-            nowResult.imply("minute", 0);
-            nowResult.imply("second", 0);
-            nowResult.imply("meridiem", Meridiem.Meridiem.PM);
-          } else if ("abend" === formatted) {
-            nowResult.imply("hour", 18);
-            nowResult.imply("minute", 0);
-            nowResult.imply("second", 0);
-            nowResult.imply("meridiem", Meridiem.Meridiem.PM);
-          } else if ("nacht" === formatted) {
-            nowResult.imply("hour", 22);
-            nowResult.imply("minute", 0);
-            nowResult.imply("second", 0);
-            nowResult.imply("meridiem", Meridiem.Meridiem.PM);
-          } else if ("mitternacht" === formatted) {
-            if (nowResult.get("hour") > 1) {
-              nowResult.addDurationAsImplied({ day: 1 });
-            }
-            nowResult.imply("hour", 0);
-            nowResult.imply("minute", 0);
-            nowResult.imply("second", 0);
-            nowResult.imply("meridiem", Meridiem.Meridiem.AM);
-          }
-        }
-      }
-      nowResult.imply("hour", 12);
-      nowResult.imply("minute", 0);
-      nowResult.imply("second", 0);
-      nowResult.imply("meridiem", Meridiem.Meridiem.AM);
-    }
-    return nowResult;
-  }
-};
-const items1 = [entry1];
 
-export default _createClass(DECasualTimeParser, items, items1);
+export default _createClass(FRTimeUnitAgoFormatParser, items);

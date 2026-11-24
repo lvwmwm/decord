@@ -1,21 +1,21 @@
-// Module ID: 20115
-// Function ID: 20116
+// Module ID: 19372
+// Function ID: 19373
 // Name: VoicePanelControlsDrawer
-// Dependencies: [32, 19, 17, 11985, 21, 5306, 575, 7416, 6289, 14678, 11984, 1655, 14679, 5929, 11333, 1708, 20116, 20128, 18726, 20112, 2]
+// Dependencies: [32, 19, 17, 11750, 21, 4913, 575, 7018, 5891, 13133, 11749, 1653, 13134, 5514, 10656, 1706, 19373, 19385, 17522, 19369, 2]
 
-// Module 20115 (VoicePanelControlsDrawer)
+// Module 19372 (VoicePanelControlsDrawer)
 import nativeDefault from "native" /* 575 */;
-import react2 from "react" /* 6289 */;
-import useRefValueDefault from "useRefValue" /* 7416 */;
-import VoicePanelChatViewDefault from "VoicePanelChatView" /* 14678 */;
-import VoicePanelVoiceControlsDefault from "VoicePanelVoiceControls" /* 20116 */;
-import VoicePanelControlsAppLauncherDefault from "VoicePanelControlsAppLauncher" /* 20128 */;
+import react2 from "react" /* 5891 */;
+import useRefValueDefault from "useRefValue" /* 7018 */;
+import VoicePanelChatViewDefault from "VoicePanelChatView" /* 13133 */;
+import VoicePanelVoiceControlsDefault from "VoicePanelVoiceControls" /* 19373 */;
+import VoicePanelControlsAppLauncherDefault from "VoicePanelControlsAppLauncher" /* 19385 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import VoicePanelConstants from "VoicePanelConstants" /* 11985 */;
+import VoicePanelConstants from "VoicePanelConstants" /* 11750 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let c10;
@@ -113,7 +113,7 @@ const memoResult1 = react.memo(function VoicePanelControlsDrawer(openTab) {
   let obj = react;
   let tmp = openTab;
   let tmp2 = dependencyMap;
-  const context = react.useContext(openTab(11984));
+  const context = react.useContext(openTab(11749));
   const mode = context.mode;
   ({ channelId, windowDimensions, safeArea } = context);
   const tmp4 = closure_11();
@@ -124,12 +124,12 @@ const memoResult1 = react.memo(function VoicePanelControlsDrawer(openTab) {
     tmp7(false);
   }
   let items = [closure_14, , , , , , , ];
-  const useAnimatedStyle = gestureSpecs(1655).useAnimatedStyle;
-  const tmp11 = gestureSpecs(1655);
-  items[1] = gestureSpecs(14679).getControlsDrawerOpenWidth;
+  const useAnimatedStyle = gestureSpecs(1653).useAnimatedStyle;
+  const tmp11 = gestureSpecs(1653);
+  items[1] = gestureSpecs(13134).getControlsDrawerOpenWidth;
   items[2] = windowDimensions;
   items[3] = safeArea;
-  items[4] = gestureSpecs(5929).withSpring;
+  items[4] = gestureSpecs(5514).withSpring;
   items[5] = wrapperSpecs;
   items[6] = 200;
   items[7] = closure_7;
@@ -165,7 +165,7 @@ const memoResult1 = react.memo(function VoicePanelControlsDrawer(openTab) {
   c0 = undefined;
   c1 = undefined;
   [tmp22, tmp23, tmp24] = items2;
-  const tmp10Result = gestureSpecs(1655);
+  const tmp10Result = gestureSpecs(1653);
   class VoicePanelControlsDrawerTsx2 {
     constructor() {
       const items = [_undefined.get().drawerMode, _undefined2.get()];
@@ -178,9 +178,9 @@ const memoResult1 = react.memo(function VoicePanelControlsDrawer(openTab) {
   VoicePanelControlsDrawerTsx2.__initData = tmp22;
   const items4 = [closure_16, , , , ];
   const useAnimatedReaction = tmp10Result.useAnimatedReaction;
-  items4[1] = gestureSpecs(11333).cheapWorkletArrayShallowEqual;
+  items4[1] = gestureSpecs(10656).cheapWorkletArrayShallowEqual;
   items4[2] = closure_8;
-  items4[3] = gestureSpecs(1708).scheduleOnRN;
+  items4[3] = gestureSpecs(1706).scheduleOnRN;
   items4[4] = tmp7;
   c0 = undefined;
   c1 = undefined;
@@ -225,13 +225,13 @@ const memoResult1 = react.memo(function VoicePanelControlsDrawer(openTab) {
   }, items7);
   const obj2 = { style: items8, children: items9 };
   items8 = [tmp4.drawer, animatedStyle];
-  const View = tmp(1655).View;
+  const View = tmp(1653).View;
   let tmp34 = null;
-  const tmp10Result2 = gestureSpecs(18726);
+  const tmp10Result2 = gestureSpecs(17522);
   const tmp33 = closure_10;
   if (tmp10Result2.isJankScreenReportingEnabled()) {
     const obj3 = { channelId, tab, wrapperSpecs, mode };
-    tmp34 = closure_9(tmp(20112), obj3);
+    tmp34 = closure_9(tmp(19369), obj3);
   }
   items9 = [tmp34, , , ];
   const obj4 = { shown: !tmp6 && "chat" === tab, renderContent: renderChat };

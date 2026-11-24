@@ -1,58 +1,104 @@
 // Module ID: 4707
 // Function ID: 4708
-// Dependencies: [2197]
+// Dependencies: [2168]
 
 // Module 4707
-import buildLocalizeFn from "buildLocalizeFn" /* 2197 */;
+import _mod2168 from "module_2168" /* 2168 */;
 
-let obj;
-let obj3;
-let obj4;
-let obj5;
-let obj6;
-let obj7;
-if (!buildLocalizeFn) {
-  obj = { default: buildLocalizeFn };
-  const obj2 = { default: buildLocalizeFn };
-} else {
-  obj = buildLocalizeFn;
-}
-const date = {
-  ordinalNumber(arg0, unit) {
-    unit = undefined;
-    const NumberResult = Number(arg0);
-    if (null != unit) {
-      unit = unit.unit;
-    }
-    let str = "-\u0435";
-    if ("date" !== unit) {
-      if ("week" !== unit) {
-        let str4;
-        if ("minute" !== unit) {
-          str4 = "-\u0439";
+const fn = function t(moment) {
+  let items;
+  let split;
+  let split2;
+  const obj = {
+    eras: items,
+    eraYearOrdinalRegex: /(元|\d+)年/,
+    eraYearOrdinalParse(match, match2) {
+      let num = 1;
+      if ("\u5143" !== match[1]) {
+        let tmp2 = match[1];
+        const _parseInt = parseInt;
+        if (!tmp2) {
+          tmp2 = match;
         }
-        str = str4;
+        num = _parseInt(tmp2, 10);
       }
-      str4 = "-\u044F";
+      return num;
+    },
+    months: "1\u6708_2\u6708_3\u6708_4\u6708_5\u6708_6\u6708_7\u6708_8\u6708_9\u6708_10\u6708_11\u6708_12\u6708".split("_"),
+    monthsShort: "1\u6708_2\u6708_3\u6708_4\u6708_5\u6708_6\u6708_7\u6708_8\u6708_9\u6708_10\u6708_11\u6708_12\u6708".split("_"),
+    weekdays: "\u65E5\u66DC\u65E5_\u6708\u66DC\u65E5_\u706B\u66DC\u65E5_\u6C34\u66DC\u65E5_\u6728\u66DC\u65E5_\u91D1\u66DC\u65E5_\u571F\u66DC\u65E5".split("_"),
+    weekdaysShort: "\u65E5_\u6708_\u706B_\u6C34_\u6728_\u91D1_\u571F".split("_"),
+    weekdaysMin: "\u65E5_\u6708_\u706B_\u6C34_\u6728_\u91D1_\u571F".split("_"),
+    longDateFormat: { LT: "HH:mm", LTS: "HH:mm:ss", L: "YYYY/MM/DD", LL: "YYYY\u5E74M\u6708D\u65E5", LLL: "YYYY\u5E74M\u6708D\u65E5 HH:mm", LLLL: "YYYY\u5E74M\u6708D\u65E5 dddd HH:mm", l: "YYYY/MM/DD", ll: "YYYY\u5E74M\u6708D\u65E5", lll: "YYYY\u5E74M\u6708D\u65E5 HH:mm", llll: "YYYY\u5E74M\u6708D\u65E5(ddd) HH:mm" },
+    meridiemParse: /午前|午後/i,
+    isPM(arg0) {
+      return "\u5348\u5F8C" === arg0;
+    },
+    meridiem(arg0, arg1, arg2) {
+      let str = "\u5348\u5F8C";
+      if (arg0 < 12) {
+        str = "\u5348\u524D";
+      }
+      return str;
+    },
+    calendar: {
+      sameDay: "[\u4ECA\u65E5] LT",
+      nextDay: "[\u660E\u65E5] LT",
+      nextWeek(week) {
+        let str = "dddd LT";
+        const weekResult = week.week();
+        if (weekResult !== this.week()) {
+          str = "[\u6765\u9031]dddd LT";
+        }
+        return str;
+      },
+      lastDay: "[\u6628\u65E5] LT",
+      lastWeek(week) {
+        let str = "dddd LT";
+        const weekResult = this.week();
+        if (weekResult !== week.week()) {
+          str = "[\u5148\u9031]dddd LT";
+        }
+        return str;
+      },
+      sameElse: "L"
+    },
+    dayOfMonthOrdinalParse: /\d{1,2}日/,
+    ordinal(arg0, arg1) {
+      if ("y" === arg1) {
+        let str5 = "\u5143\u5E74";
+        if (1 !== arg0) {
+          str5 = `${arg0}年`;
+        }
+        return str5;
+      } else {
+        if ("d" !== arg1) {
+          if ("D" !== arg1) {
+            if ("DDD" !== arg1) {
+              return arg0;
+            }
+          }
+        }
+        return arg0 + "\u65E5";
+      }
+    },
+    relativeTime: { future: "%s\u5F8C", past: "%s\u524D", s: "\u6570\u79D2", ss: "%d\u79D2", m: "1\u5206", mm: "%d\u5206", h: "1\u6642\u9593", hh: "%d\u6642\u9593", d: "1\u65E5", dd: "%d\u65E5", M: "1\u30F6\u6708", MM: "%d\u30F6\u6708", y: "1\u5E74", yy: "%d\u5E74" }
+  };
+  items = [{ since: "2019-05-01", offset: 1, name: "\u4EE4\u548C", narrow: "\u32FF", abbr: "R" }, { since: "1989-01-08", until: "2019-04-30", offset: 1, name: "\u5E73\u6210", narrow: "\u337B", abbr: "H" }, { since: "1926-12-25", until: "1989-01-07", offset: 1, name: "\u662D\u548C", narrow: "\u337C", abbr: "S" }, { since: "1912-07-30", until: "1926-12-24", offset: 1, name: "\u5927\u6B63", narrow: "\u337D", abbr: "T" }, { since: "1873-01-01", until: "1912-07-29", offset: 6, name: "\u660E\u6CBB", narrow: "\u337E", abbr: "M" }, { since: "0001-01-01", until: "1873-12-31", offset: 1, name: "\u897F\u66A6", narrow: "AD", abbr: "AD" }, { since: "0000-12-31", until: -Infinity, offset: 1, name: "\u7D00\u5143\u524D", narrow: "BC", abbr: "BC" }];
+  ({ split, split: split2 } = "\u65E5_\u6708_\u706B_\u6C34_\u6728_\u91D1_\u571F");
+  return moment.defineLocale("ja", obj);
+};
+if (typeof exports === "object") {
+  if (undefined !== module) {
+    if (typeof require === "function") {
+      fn(_mod2168);
     }
-    return NumberResult + str;
-  },
-  era: obj.default(obj3),
-  quarter: obj.default(obj4),
-  month: obj.default(obj5),
-  day: obj.default(obj6),
-  dayPeriod: obj.default(obj7)
-};
-obj3 = { values: { narrow: ["\u0434\u043E \u043D.\u044D.", "\u043D.\u044D."], abbreviated: ["\u0434\u043E \u043D. \u044D.", "\u043D. \u044D."], wide: ["\u0434\u043E \u043D\u0430\u0448\u0435\u0439 \u044D\u0440\u044B", "\u043D\u0430\u0448\u0435\u0439 \u044D\u0440\u044B"] }, defaultWidth: "wide" };
-obj4 = {
-  values: { narrow: ["1", "2", "3", "4"], abbreviated: ["1-\u0439 \u043A\u0432.", "2-\u0439 \u043A\u0432.", "3-\u0439 \u043A\u0432.", "4-\u0439 \u043A\u0432."], wide: ["1-\u0439 \u043A\u0432\u0430\u0440\u0442\u0430\u043B", "2-\u0439 \u043A\u0432\u0430\u0440\u0442\u0430\u043B", "3-\u0439 \u043A\u0432\u0430\u0440\u0442\u0430\u043B", "4-\u0439 \u043A\u0432\u0430\u0440\u0442\u0430\u043B"] },
-  defaultWidth: "wide",
-  argumentCallback(arg0) {
-    return arg0 - 1;
   }
-};
-obj5 = { values: { narrow: ["\u042F", "\u0424", "\u041C", "\u0410", "\u041C", "\u0418", "\u0418", "\u0410", "\u0421", "\u041E", "\u041D", "\u0414"], abbreviated: ["\u044F\u043D\u0432.", "\u0444\u0435\u0432.", "\u043C\u0430\u0440\u0442", "\u0430\u043F\u0440.", "\u043C\u0430\u0439", "\u0438\u044E\u043D\u044C", "\u0438\u044E\u043B\u044C", "\u0430\u0432\u0433.", "\u0441\u0435\u043D\u0442.", "\u043E\u043A\u0442.", "\u043D\u043E\u044F\u0431.", "\u0434\u0435\u043A."], wide: ["\u044F\u043D\u0432\u0430\u0440\u044C", "\u0444\u0435\u0432\u0440\u0430\u043B\u044C", "\u043C\u0430\u0440\u0442", "\u0430\u043F\u0440\u0435\u043B\u044C", "\u043C\u0430\u0439", "\u0438\u044E\u043D\u044C", "\u0438\u044E\u043B\u044C", "\u0430\u0432\u0433\u0443\u0441\u0442", "\u0441\u0435\u043D\u0442\u044F\u0431\u0440\u044C", "\u043E\u043A\u0442\u044F\u0431\u0440\u044C", "\u043D\u043E\u044F\u0431\u0440\u044C", "\u0434\u0435\u043A\u0430\u0431\u0440\u044C"] }, defaultWidth: "wide", formattingValues: { narrow: ["\u042F", "\u0424", "\u041C", "\u0410", "\u041C", "\u0418", "\u0418", "\u0410", "\u0421", "\u041E", "\u041D", "\u0414"], abbreviated: ["\u044F\u043D\u0432.", "\u0444\u0435\u0432.", "\u043C\u0430\u0440.", "\u0430\u043F\u0440.", "\u043C\u0430\u044F", "\u0438\u044E\u043D.", "\u0438\u044E\u043B.", "\u0430\u0432\u0433.", "\u0441\u0435\u043D\u0442.", "\u043E\u043A\u0442.", "\u043D\u043E\u044F\u0431.", "\u0434\u0435\u043A."], wide: ["\u044F\u043D\u0432\u0430\u0440\u044F", "\u0444\u0435\u0432\u0440\u0430\u043B\u044F", "\u043C\u0430\u0440\u0442\u0430", "\u0430\u043F\u0440\u0435\u043B\u044F", "\u043C\u0430\u044F", "\u0438\u044E\u043D\u044F", "\u0438\u044E\u043B\u044F", "\u0430\u0432\u0433\u0443\u0441\u0442\u0430", "\u0441\u0435\u043D\u0442\u044F\u0431\u0440\u044F", "\u043E\u043A\u0442\u044F\u0431\u0440\u044F", "\u043D\u043E\u044F\u0431\u0440\u044F", "\u0434\u0435\u043A\u0430\u0431\u0440\u044F"] }, defaultFormattingWidth: "wide" };
-obj6 = { values: { narrow: ["\u0412", "\u041F", "\u0412", "\u0421", "\u0427", "\u041F", "\u0421"], short: ["\u0432\u0441", "\u043F\u043D", "\u0432\u0442", "\u0441\u0440", "\u0447\u0442", "\u043F\u0442", "\u0441\u0431"], abbreviated: ["\u0432\u0441\u043A", "\u043F\u043D\u0434", "\u0432\u0442\u0440", "\u0441\u0440\u0434", "\u0447\u0442\u0432", "\u043F\u0442\u043D", "\u0441\u0443\u0431"], wide: ["\u0432\u043E\u0441\u043A\u0440\u0435\u0441\u0435\u043D\u044C\u0435", "\u043F\u043E\u043D\u0435\u0434\u0435\u043B\u044C\u043D\u0438\u043A", "\u0432\u0442\u043E\u0440\u043D\u0438\u043A", "\u0441\u0440\u0435\u0434\u0430", "\u0447\u0435\u0442\u0432\u0435\u0440\u0433", "\u043F\u044F\u0442\u043D\u0438\u0446\u0430", "\u0441\u0443\u0431\u0431\u043E\u0442\u0430"] }, defaultWidth: "wide" };
-obj7 = { values: { narrow: { am: "\u0414\u041F", pm: "\u041F\u041F", midnight: "\u043F\u043E\u043B\u043D.", noon: "\u043F\u043E\u043B\u0434.", morning: "\u0443\u0442\u0440\u043E", afternoon: "\u0434\u0435\u043D\u044C", evening: "\u0432\u0435\u0447.", night: "\u043D\u043E\u0447\u044C" }, abbreviated: { am: "\u0414\u041F", pm: "\u041F\u041F", midnight: "\u043F\u043E\u043B\u043D.", noon: "\u043F\u043E\u043B\u0434.", morning: "\u0443\u0442\u0440\u043E", afternoon: "\u0434\u0435\u043D\u044C", evening: "\u0432\u0435\u0447.", night: "\u043D\u043E\u0447\u044C" }, wide: { am: "\u0414\u041F", pm: "\u041F\u041F", midnight: "\u043F\u043E\u043B\u043D\u043E\u0447\u044C", noon: "\u043F\u043E\u043B\u0434\u0435\u043D\u044C", morning: "\u0443\u0442\u0440\u043E", afternoon: "\u0434\u0435\u043D\u044C", evening: "\u0432\u0435\u0447\u0435\u0440", night: "\u043D\u043E\u0447\u044C" } }, defaultWidth: "any", formattingValues: { narrow: { am: "\u0414\u041F", pm: "\u041F\u041F", midnight: "\u043F\u043E\u043B\u043D.", noon: "\u043F\u043E\u043B\u0434.", morning: "\u0443\u0442\u0440\u0430", afternoon: "\u0434\u043D\u044F", evening: "\u0432\u0435\u0447.", night: "\u043D\u043E\u0447\u0438" }, abbreviated: { am: "\u0414\u041F", pm: "\u041F\u041F", midnight: "\u043F\u043E\u043B\u043D.", noon: "\u043F\u043E\u043B\u0434.", morning: "\u0443\u0442\u0440\u0430", afternoon: "\u0434\u043D\u044F", evening: "\u0432\u0435\u0447.", night: "\u043D\u043E\u0447\u0438" }, wide: { am: "\u0414\u041F", pm: "\u041F\u041F", midnight: "\u043F\u043E\u043B\u043D\u043E\u0447\u044C", noon: "\u043F\u043E\u043B\u0434\u0435\u043D\u044C", morning: "\u0443\u0442\u0440\u0430", afternoon: "\u0434\u043D\u044F", evening: "\u0432\u0435\u0447\u0435\u0440\u0430", night: "\u043D\u043E\u0447\u0438" } }, defaultFormattingWidth: "wide" };
-
-export default date;
+}
+if (typeof globalThis.define === "function") {
+  const define2 = globalThis.define;
+  if (globalThis.define.amd) {
+    globalThis.define(["../moment"], fn);
+  }
+}
+fn(this.moment);

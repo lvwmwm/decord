@@ -1,16 +1,16 @@
-// Module ID: 14718
-// Function ID: 14719
+// Module ID: 13173
+// Function ID: 13174
 // Name: GuildDirectoryCreateOrAddDescription
-// Dependencies: [5, 19, 17, 21, 5306, 14719, 5169, 14720, 14707, 14708, 5919, 1113, 14716, 2]
+// Dependencies: [5, 19, 17, 21, 4913, 13174, 4776, 13175, 13162, 13163, 5504, 1112, 13171, 2]
 // Exports: default
 
-// Module 14718 (GuildDirectoryCreateOrAddDescription)
-import GuildDirectoryEditDescriptionTemplateDefault from "GuildDirectoryEditDescriptionTemplate" /* 14716 */;
+// Module 13173 (GuildDirectoryCreateOrAddDescription)
+import GuildDirectoryEditDescriptionTemplateDefault from "GuildDirectoryEditDescriptionTemplate" /* 13171 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let closure_3, guild;
@@ -120,25 +120,25 @@ export default function GuildDirectoryCreateOrAddDescription(directoryChannelId)
   obj = { children: closure_7(closure_5, obj2) };
   obj2 = { style: tmp.container, keyboardShouldPersistTaps: "handled", children: items1 };
   const obj3 = { style: tmp.header, children: items };
-  const GuildDirectoryAddModalScreen = directoryChannelId(14708).GuildDirectoryAddModalScreen;
-  const obj4 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.string(directoryChannelId(1113).t["5bQcoa"]) };
-  const Text = directoryChannelId(5919).Text;
-  intl = directoryChannelId(1113).intl;
+  const GuildDirectoryAddModalScreen = directoryChannelId(13163).GuildDirectoryAddModalScreen;
+  const obj4 = { style: tmp.title, accessibilityRole: "header", variant: "heading-xl/semibold", color: "mobile-text-heading-primary", children: intl.string(directoryChannelId(1112).t["5bQcoa"]) };
+  const Text = directoryChannelId(5504).Text;
+  intl = directoryChannelId(1112).intl;
   items = [closure_6(Text, obj4), ];
-  let obj5 = { style: tmp.description, variant: "body-sm/medium", color: "text-default", children: intl2.string(directoryChannelId(1113).t.Ie60Wc) };
-  const Text2 = directoryChannelId(5919).Text;
-  intl2 = directoryChannelId(1113).intl;
+  let obj5 = { style: tmp.description, variant: "body-sm/medium", color: "text-default", children: intl2.string(directoryChannelId(1112).t.Ie60Wc) };
+  const Text2 = directoryChannelId(5504).Text;
+  intl2 = directoryChannelId(1112).intl;
   items[1] = closure_6(Text2, obj5);
   items1 = [closure_7(obj, obj3), ];
   let obj6 = {
     onSubmit(arg0, arg1) {
       return obj(...arguments);
     },
-    buttonLabel: intl3.string(directoryChannelId(1113).t.H9jxS1),
+    buttonLabel: intl3.string(directoryChannelId(1112).t.H9jxS1),
     directoryChannelId
   };
   const tmp2 = GuildDirectoryEditDescriptionTemplateDefault;
-  intl3 = directoryChannelId(1113).intl;
+  intl3 = directoryChannelId(1112).intl;
   items1[1] = closure_6(tmp2, obj6);
   return closure_6(GuildDirectoryAddModalScreen, obj);
 };

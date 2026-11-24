@@ -1,31 +1,24 @@
-// Module ID: 14534
-// Function ID: 14535
+// Module ID: 12780
+// Function ID: 12781
 // Name: CheckpointRecapCard
-// Dependencies: [19, 17, 21, 575, 14481, 5306, 14268, 6391, 6733, 14281, 2]
+// Dependencies: [19, 17, 21, 575, 12506, 5993, 6335, 12518, 12522, 2]
 // Exports: default
 
-// Module 14534 (CheckpointRecapCard)
+// Module 12780 (CheckpointRecapCard)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import CheckpointCharacterAccessibilityUtils from "CheckpointCharacterAccessibilityUtils" /* 6733 */;
-import CheckpointStepHeaderRefContextDefault from "CheckpointStepHeaderRefContext" /* 14268 */;
-import CheckpointCardFrameDefault from "CheckpointCardFrame" /* 14281 */;
+import CheckpointCharacterAccessibilityUtils from "CheckpointCharacterAccessibilityUtils" /* 6335 */;
+import CheckpointStepHeaderRefContextDefault from "CheckpointStepHeaderRefContext" /* 12506 */;
 import react from "react" /* 19 */;
-import CheckpointStatNumber from "CheckpointStatNumber" /* 14481 */;
-import createStyles from "createStyles" /* 5306 */;
 import size from "module_2" /* 2 */;
 
-let items;
-let rect1;
+let tmp;
+const CheckpointCardFrameDefault = tmp(12518);
+const CheckpointShareCardYearDefault = tmp(12522);
 const View = react_native.View;
 const jsx = Fragment.jsx;
 const rect = { size: 240, top: nativeDefault.space.PX_16, left: -20 };
-const checkpointStatNumberWidth = CheckpointStatNumber.getCheckpointStatNumberWidth(2026, 64);
-let obj = { year: rect1 };
-rect1 = { position: "absolute", left: 178 - checkpointStatNumberWidth / 2, top: 22.5, transform: items };
-items = [{ rotate: "90deg" }];
-let closure_7 = createStyles.createStyles(obj);
 const result = size.fileFinishedImporting("modules/checkpoint/native/components/CheckpointRecapCard.tsx");
 
 export default function CheckpointRecapCard(character) {
@@ -42,7 +35,7 @@ export default function CheckpointRecapCard(character) {
     flag = false;
   }
   let obj = react;
-  const tmp = closure_7();
+  const tmp = importDefault;
   let bound = maxScale;
   const context = react.useContext(CheckpointStepHeaderRefContextDefault);
   if (null != maxHeight) {
@@ -50,10 +43,10 @@ export default function CheckpointRecapCard(character) {
     const _Math2 = Math;
     bound = Math.min(Math.max(maxHeight / 268, 0.75), maxScale);
   }
-  const obj2 = character(6391);
+  const obj2 = character(5993);
   const characterCardColorPalette = obj2.getCharacterCardColorPalette(character);
   const items = [character];
-  const obj3 = character(6391);
+  const obj3 = character(5993);
   const primaryBackgroundColor = obj3.getCardColors(characterCardColorPalette).primaryBackgroundColor;
   const memo = obj.useMemo(() => {
     let checkpointCharacterAccessibilityLabel = null;
@@ -63,19 +56,23 @@ export default function CheckpointRecapCard(character) {
     }
     return checkpointCharacterAccessibilityLabel;
   }, items);
+  ({ path: character(12522).YEAR_PATH, x: 200 - character(12522).YEAR_WIDTH, color: primaryBackgroundColor });
   CheckpointCardFrameDefault;
-  const tmp12 = <tmp2Result character={character} cardColorPalette={characterCardColorPalette} canvasWidth={200} canvasHeight={268} scale={bound} clydeSize={28} characterLayout={rect}>{null}</tmp2Result>;
-  const tmp11 = View;
-  const tmp9 = jsx;
+  CheckpointShareCardYearDefault;
+  const tmp11 = <tmpResult character={character} cardColorPalette={characterCardColorPalette} canvasWidth={200} canvasHeight={268} scale={bound} clydeSize={28} characterLayout={rect}>{null}</tmpResult>;
+  const tmp12 = View;
+  const tmp8 = jsx;
   if (null == memo) {
-    obj7 = { accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: tmp12 };
-    const obj6 = { accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: tmp12 };
+    obj7 = { accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: tmp11 };
+    const obj6 = { accessibilityElementsHidden: true, importantForAccessibility: "no-hide-descendants", children: tmp11 };
   } else {
     let tmp13;
     if (flag) {
       tmp13 = context;
     }
-    obj7 = { ref: tmp13, accessible: true, accessibilityRole: "image", accessibilityLabel: memo, children: tmp12 };
+    obj7 = { ref: tmp13, accessible: true, accessibilityRole: "image", accessibilityLabel: memo, children: tmp11 };
   }
-  return tmp9(tmp11, obj7);
+  return tmp8(tmp12, obj7);
 };
+export const CARD_WIDTH = 200;
+export const CARD_HEIGHT = 268;

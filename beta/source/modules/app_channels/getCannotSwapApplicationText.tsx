@@ -1,12 +1,12 @@
-// Module ID: 19676
-// Function ID: 19677
+// Module ID: 18932
+// Function ID: 18933
 // Name: getCannotSwapApplicationText
-// Dependencies: [2189, 5238, 5245, 1113, 7413, 2]
+// Dependencies: [2188, 4845, 4852, 1112, 7015, 2]
 // Exports: default
 
-// Module 19676 (getCannotSwapApplicationText)
-import LocaleStore from "LocaleStore" /* 2189 */;
-import PermissionStore from "PermissionStore" /* 5238 */;
+// Module 18932 (getCannotSwapApplicationText)
+import LocaleStore from "LocaleStore" /* 2188 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -24,10 +24,10 @@ export default function getCannotSwapApplicationText(arg0) {
     const self = this;
     const self2 = this;
     const listFormat = new Intl.ListFormat(LocaleStore.locale);
-    const intl = tmp(1113).intl;
+    const intl = tmp(1112).intl;
     const formatToPlainString = intl.formatToPlainString;
     const obj = { permissions: listFormat.format(found.map(require("permissions").getPermissionName)), count: found.length };
-    const na1rJc = tmp(1113).t.na1rJc;
+    const na1rJc = tmp(1112).t.na1rJc;
     return formatToPlainString(na1rJc, obj);
   }
 };

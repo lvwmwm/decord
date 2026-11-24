@@ -1,11 +1,11 @@
-// Module ID: 7072
-// Function ID: 7073
+// Module ID: 6676
+// Function ID: 6677
 // Name: utils/AutocompleteUtils
-// Dependencies: [1072, 1113, 2]
+// Dependencies: [1071, 1112, 2]
 
-// Module 7072 (utils/AutocompleteUtils)
-import Constants from "Constants" /* 1072 */;
-import intl2 from "intl" /* 1113 */;
+// Module 6676 (utils/AutocompleteUtils)
+import Constants from "Constants" /* 1071 */;
+import intl2 from "intl" /* 1112 */;
 import size from "module_2" /* 2 */;
 
 const AutoCompleteResultTypes = Constants.AutoCompleteResultTypes;

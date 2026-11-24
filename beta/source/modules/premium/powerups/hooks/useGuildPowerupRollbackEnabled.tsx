@@ -1,19 +1,19 @@
-// Module ID: 10696
-// Function ID: 10697
+// Module ID: 13385
+// Function ID: 13386
 // Name: useGuildPowerupRollbackEnabled
-// Dependencies: [5517, 5519, 2]
+// Dependencies: [8001, 13386, 2]
 // Exports: default, isGuildPowerupRollbackEnabled, isGuildPowerupRollbackEnabledForSku
 
-// Module 10696 (useGuildPowerupRollbackEnabled)
-import Powerups from "Powerups" /* 5517 */;
-import ServerThemeExperiment from "ServerThemeExperiment" /* 5519 */;
+// Module 13385 (useGuildPowerupRollbackEnabled)
+import Powerups from "Powerups" /* 8001 */;
+import ServerThemeExperiment from "ServerThemeExperiment" /* 13386 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupRollbackEnabled.tsx");
 
-export default function useGuildPowerupRollbackEnabled(guildId, skuId, useGuildPowerupNewPerkMarketingVersion) {
+export default function useGuildPowerupRollbackEnabled(guildId, skuId, useMarketablePowerupPerks) {
   const obj = ServerThemeExperiment;
-  const serverThemeRollbackEnabled = obj.useServerThemeRollbackEnabled(guildId, useGuildPowerupNewPerkMarketingVersion);
+  const serverThemeRollbackEnabled = obj.useServerThemeRollbackEnabled(guildId, useMarketablePowerupPerks);
   const tmp2 = skuId.skuId === Powerups.GUILD_POWERUP_GUILD_THEME_SKU_ID && serverThemeRollbackEnabled;
   return tmp2;
 };

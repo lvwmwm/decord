@@ -1,23 +1,23 @@
-// Module ID: 17777
-// Function ID: 17778
+// Module ID: 16554
+// Function ID: 16555
 // Name: SettingsQuestPreviewScreen
-// Dependencies: [32, 19, 17, 8808, 1192, 21, 575, 5306, 1503, 504, 17778, 17780, 1113, 7994, 7983, 10133, 572, 17781, 11251, 14946, 17784, 2]
+// Dependencies: [32, 19, 17, 8404, 1191, 21, 575, 4913, 1501, 504, 16555, 16557, 1112, 7597, 7586, 9959, 572, 16558, 11278, 13534, 16561, 2]
 // Exports: default
 
-// Module 17777 (SettingsQuestPreviewScreen)
+// Module 16554 (SettingsQuestPreviewScreen)
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import nativeDefault from "native" /* 575 */;
-import intl5 from "intl" /* 1113 */;
-import QuestActionCreators from "QuestActionCreators" /* 10133 */;
-import QuestCardPreview from "QuestCardPreview" /* 17778 */;
-import QuestEmbedPreview from "QuestEmbedPreview" /* 17780 */;
+import intl5 from "intl" /* 1112 */;
+import QuestActionCreators from "QuestActionCreators" /* 9959 */;
+import QuestCardPreview from "QuestCardPreview" /* 16555 */;
+import QuestEmbedPreview from "QuestEmbedPreview" /* 16557 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import QuestStore from "QuestStore" /* 8808 */;
-import ThemeStore from "ThemeStore" /* 1192 */;
+import QuestStore from "QuestStore" /* 8404 */;
+import ThemeStore from "ThemeStore" /* 1191 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -152,13 +152,13 @@ export default function SettingsQuestPreviewScreen() {
     }
     const items1 = [obj, , , ];
     const obj3 = { id: "bar", label: intl2.string(intl5.t.uL4oBf), page: callback2() };
-    intl2 = tmp(1113).intl;
+    intl2 = tmp(1112).intl;
     items1[1] = obj3;
     const obj4 = { id: "card", label: intl3.string(intl5.t.MAvIf1), page: callback() };
-    intl3 = tmp(1113).intl;
+    intl3 = tmp(1112).intl;
     items1[2] = obj4;
     const obj5 = { id: "embed", label: intl4.string(intl5.t.AswoU2), page: callback1() };
-    intl4 = tmp(1113).intl;
+    intl4 = tmp(1112).intl;
     items1[3] = obj5;
     return items1;
   }, items5);

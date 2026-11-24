@@ -1,10 +1,10 @@
-// Module ID: 12388
-// Function ID: 12389
+// Module ID: 11915
+// Function ID: 11916
 // Name: CheckoutError
-// Dependencies: [12389, 2]
+// Dependencies: [11916, 2]
 
-// Module 12388 (CheckoutError)
-import RevenueError2 from "RevenueError" /* 12389 */;
+// Module 11915 (CheckoutError)
+import RevenueError2 from "RevenueError" /* 11916 */;
 import size from "module_2" /* 2 */;
 
 const RevenueError = RevenueError2.RevenueError;

@@ -1,23 +1,23 @@
-// Module ID: 14129
-// Function ID: 14130
+// Module ID: 12364
+// Function ID: 12365
 // Name: NativeSearchableSelectActionComponentUtils
-// Dependencies: [5155, 5212, 5177, 1388, 1072, 6374, 1255, 1417, 7942, 8174, 1090, 575, 11625, 8033, 2]
+// Dependencies: [4762, 4819, 4784, 1386, 1071, 5976, 1254, 1415, 7544, 7777, 1089, 575, 11611, 7636, 2]
 // Exports: getChannelIconData, transformSearchableSelectOptions
 
-// Module 14129 (NativeSearchableSelectActionComponentUtils)
+// Module 12364 (NativeSearchableSelectActionComponentUtils)
 import nativeDefault from "native" /* 575 */;
-import utils_ColorUtils from "utils/ColorUtils" /* 1090 */;
-import utils_AvatarUtils from "utils/AvatarUtils" /* 1417 */;
-import InteractionComponentTypes from "InteractionComponentTypes" /* 6374 */;
-import RoleIconUtils from "RoleIconUtils" /* 7942 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8033 */;
-import AssetRegistryDefault from "AssetRegistry" /* 8174 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 11625 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import GuildRoleStore from "GuildRoleStore" /* 5212 */;
-import GuildStore from "GuildStore" /* 5177 */;
-import UserStore from "UserStore" /* 1388 */;
-import Constants from "Constants" /* 1072 */;
+import utils_ColorUtils from "utils/ColorUtils" /* 1089 */;
+import utils_AvatarUtils from "utils/AvatarUtils" /* 1415 */;
+import InteractionComponentTypes from "InteractionComponentTypes" /* 5976 */;
+import RoleIconUtils from "RoleIconUtils" /* 7544 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 7636 */;
+import AssetRegistryDefault from "AssetRegistry" /* 7777 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 11611 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import GuildRoleStore from "GuildRoleStore" /* 4819 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import UserStore from "UserStore" /* 1386 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

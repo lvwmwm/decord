@@ -1,18 +1,18 @@
-// Module ID: 19209
-// Function ID: 19210
+// Module ID: 18011
+// Function ID: 18012
 // Name: VoicePanelDockBadgedIcon
-// Dependencies: [19, 17, 12009, 21, 1187, 19110, 5306, 5367, 5538, 1708, 1655, 9503, 2]
+// Dependencies: [19, 17, 11768, 21, 1186, 17906, 4913, 4974, 5123, 1706, 1653, 9023, 2]
 // Exports: default
 
-// Module 19209 (VoicePanelDockBadgedIcon)
+// Module 18011 (VoicePanelDockBadgedIcon)
 import react_native from "react-native" /* 17 */;
-import native from "native" /* 1187 */;
-import native2 from "native" /* 5367 */;
+import native from "native" /* 1186 */;
+import native2 from "native" /* 4974 */;
 import react from "react" /* 19 */;
-import VoicePanelDockConstants from "VoicePanelDockConstants" /* 12009 */;
+import VoicePanelDockConstants from "VoicePanelDockConstants" /* 11768 */;
 import Fragment from "Fragment" /* 21 */;
-import GuildsBarActivityIndicator from "GuildsBarActivityIndicator" /* 19110 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import GuildsBarActivityIndicator from "GuildsBarActivityIndicator" /* 17906 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let set, set2, tmp2;
@@ -25,8 +25,8 @@ let metroRequire;
 let obj2;
 let size;
 let tmp;
-const _mod1708 = tmp(1708);
-const timing_timing = tmp(5538);
+const _mod1706 = tmp(1706);
+const timing_timing = tmp(5123);
 function StreamBadge(progress) {
   let items1;
   let tmp3Result;
@@ -46,7 +46,7 @@ function StreamBadge(progress) {
       const items = [closure_14, , ];
       const withTiming = timing_timing.withTiming;
       const tmpResult = timing_timing;
-      items[1] = _mod1708.scheduleOnRN;
+      items[1] = _mod1706.scheduleOnRN;
       items[2] = cleanUp;
       let c0;
       let c1;
@@ -134,19 +134,19 @@ export default function VoicePanelDockBadgedIcon(streaming) {
   const children = streaming.children;
   const tmp = closure_13();
   let num = 0;
-  const useSharedValue = sharedValue(1655).useSharedValue;
-  const tmp4 = sharedValue(1655);
+  const useSharedValue = sharedValue(1653).useSharedValue;
+  const tmp4 = sharedValue(1653);
   if (streaming) {
     num = 1;
   }
   sharedValue = useSharedValue(num);
   let items = [closure_16, , , , , ];
-  const useAnimatedStyle = tmp2(1655).useAnimatedStyle;
-  sharedValue(1655);
-  items[1] = sharedValue(1655).interpolate;
+  const useAnimatedStyle = tmp2(1653).useAnimatedStyle;
+  sharedValue(1653);
+  items[1] = sharedValue(1653).interpolate;
   items[2] = sharedValue;
   items[3] = 0.7;
-  items[4] = sharedValue(1655).Extrapolation;
+  items[4] = sharedValue(1653).Extrapolation;
   items[5] = 0.8;
   let c0;
   let c1;
@@ -173,14 +173,14 @@ export default function VoicePanelDockBadgedIcon(streaming) {
   VoicePanelDockBadgedIconTsx2.__initData = tmp7;
   animatedStyle = useAnimatedStyle(VoicePanelDockBadgedIconTsx2);
   const items2 = [closure_17, sharedValue, , , , , , , , , ];
-  const useAnimatedProps = tmp2(1655).useAnimatedProps;
-  sharedValue(1655);
-  items2[2] = sharedValue(1655).interpolate;
+  const useAnimatedProps = tmp2(1653).useAnimatedProps;
+  sharedValue(1653);
+  items2[2] = sharedValue(1653).interpolate;
   items2[3] = 0.7;
-  items2[4] = sharedValue(1655).Extrapolation;
+  items2[4] = sharedValue(1653).Extrapolation;
   items2[5] = 0.8;
   items2[6] = sum2;
-  items2[7] = sharedValue(9503).CutoutShape;
+  items2[7] = sharedValue(9023).CutoutShape;
   items2[8] = closure_10;
   items2[9] = closure_11;
   items2[10] = closure_9;
@@ -225,8 +225,8 @@ export default function VoicePanelDockBadgedIcon(streaming) {
     return hasOwnProperty(StreamBadge, obj, arg0);
   }, items4);
   let obj = { style: tmp.clip, animatedProps, children };
-  const items5 = [closure_5(tmp2(9503).ClipViewAnimated, obj), ];
-  const TransitionItem = tmp2(5367).TransitionItem;
+  const items5 = [closure_5(tmp2(9023).ClipViewAnimated, obj), ];
+  const TransitionItem = tmp2(4974).TransitionItem;
   let obj2 = { children: items5 };
   items5[1] = closure_5(TransitionItem, { item: streaming, renderItem: callback });
   return closure_7(RoundedRect, obj2);

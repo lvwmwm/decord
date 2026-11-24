@@ -1,23 +1,23 @@
-// Module ID: 19909
-// Function ID: 19910
+// Module ID: 19160
+// Function ID: 19161
 // Name: ExternalPipViewVideo
-// Dependencies: [32, 19, 17, 5155, 1388, 21, 5306, 575, 6027, 5919, 1113, 504, 7027, 19910, 5883, 1187, 6187, 6171, 5892, 19911, 12805, 19912, 2]
+// Dependencies: [32, 19, 17, 4762, 1386, 21, 4913, 575, 5617, 5504, 1112, 504, 6631, 19161, 5468, 1186, 5781, 5765, 5477, 19162, 10733, 19163, 2]
 
-// Module 19909 (ExternalPipViewVideo)
+// Module 19160 (ExternalPipViewVideo)
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1113 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import CircleInformationIcon from "CircleInformationIcon" /* 6027 */;
-import ExternalPipDefault from "ExternalPip" /* 6171 */;
-import VideoActionCreators from "VideoActionCreators" /* 19911 */;
-import useExternalPipParticipantDefault from "useExternalPipParticipant" /* 19912 */;
+import intl2 from "intl" /* 1112 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import CircleInformationIcon from "CircleInformationIcon" /* 5617 */;
+import ExternalPipDefault from "ExternalPip" /* 5765 */;
+import VideoActionCreators from "VideoActionCreators" /* 19162 */;
+import useExternalPipParticipantDefault from "useExternalPipParticipant" /* 19163 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import UserStore from "UserStore" /* 1388 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import UserStore from "UserStore" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let dependencyMap, importDefault;
@@ -73,11 +73,11 @@ function ExternalPipViewVideoUser(userId) {
     }
     return guild_id;
   });
-  const obj4 = userId(7027);
+  const obj4 = userId(6631);
   const avatarDecoration = obj4.useAvatarDecoration(stateFromStores, stateFromStores1);
   const obj2 = { userId, guildId: stateFromStores1, avatarURI: avatarURL, location: "ExternalPipViewVideo-native" };
   avatarURL = undefined;
-  const tmp7 = channelId(19910);
+  const tmp7 = channelId(19161);
   const tmp6 = channelId;
   if (stateFromStores != null) {
     avatarURL = stateFromStores.getAvatarURL(stateFromStores1, 80, false);
@@ -99,13 +99,13 @@ function ExternalPipViewVideoUser(userId) {
   const tmp11 = closure_7;
   if (null != gradientStops) {
     const obj6 = { colors: gradientStops, start, end, style: StyleSheet.absoluteFill, pointerEvents: "none" };
-    tmp12 = closure_11(tmp6(5883), obj6);
+    tmp12 = closure_11(tmp6(5468), obj6);
   }
   items3 = [tmp12, ];
   let tmp17 = null;
   if (null != stateFromStores) {
-    const obj7 = { user: stateFromStores, avatarDecoration, guildId: stateFromStores1, size: userId(1187).AvatarSizes.XXLARGE, speaking };
-    const Avatar = tmp2(1187).Avatar;
+    const obj7 = { user: stateFromStores, avatarDecoration, guildId: stateFromStores1, size: userId(1186).AvatarSizes.XXLARGE, speaking };
+    const Avatar = tmp2(1186).Avatar;
     tmp17 = closure_11(Avatar, obj7);
   }
   items3[1] = tmp17;
@@ -121,7 +121,7 @@ function ExternalPipViewVideoStream(streamId) {
   let video;
   streamId = streamId.streamId;
   const userId = streamId.userId;
-  let obj = streamId(6187);
+  let obj = streamId(5781);
   let c1 = 300;
   first = undefined;
   closure_3 = undefined;
@@ -165,7 +165,7 @@ function ExternalPipViewVideoStream(streamId) {
     items[1] = { opacity: num };
     return items;
   }, items3);
-  const obj2 = streamId(5892);
+  const obj2 = streamId(5477);
   const token = obj2.useToken(first(575).colors.TEXT_FEEDBACK_INFO);
   const value = closure_8.get();
   _slicedToArray = value;
@@ -180,7 +180,7 @@ function ExternalPipViewVideoStream(streamId) {
       obj.updateVideoSize(tmp, size, 1);
     }
   }, items4);
-  const children = [closure_11(first(12805), { useSurfaceDirectRenderer: surfaceDirectRendererExperiment, style: memo, streamId, onReady: callback, onLayout: callback1 }), ];
+  const children = [closure_11(first(10733), { useSurfaceDirectRenderer: surfaceDirectRendererExperiment, style: memo, streamId, onReady: callback, onLayout: callback1 }), ];
   let tmp16Result = null;
   const tmp14 = closure_12;
   const tmp15 = closure_13;

@@ -1,26 +1,26 @@
-// Module ID: 14843
-// Function ID: 14844
+// Module ID: 13295
+// Function ID: 13296
 // Name: EmojiSuggestionBarLarge
-// Dependencies: [19, 17, 9546, 21, 5306, 575, 7994, 14844, 1655, 11274, 11298, 5367, 2]
+// Dependencies: [19, 17, 9066, 21, 4913, 575, 7597, 13296, 1653, 11299, 11318, 4974, 2]
 // Exports: EmojiSuggestionBarLarge
 
-// Module 14843 (EmojiSuggestionBarLarge)
+// Module 13295 (EmojiSuggestionBarLarge)
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import native from "native" /* 5367 */;
-import useMeasuredLayoutDefault from "useMeasuredLayout" /* 7994 */;
-import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9546 */;
-import EmojiPickerListRow from "EmojiPickerListRow" /* 11274 */;
-import EmojiSuggestionBarUtils from "EmojiSuggestionBarUtils" /* 14844 */;
+import native from "native" /* 4974 */;
+import useMeasuredLayoutDefault from "useMeasuredLayout" /* 7597 */;
+import EmojiPickerListConstants from "EmojiPickerListConstants" /* 9066 */;
+import EmojiPickerListRow from "EmojiPickerListRow" /* 11299 */;
+import EmojiSuggestionBarUtils from "EmojiSuggestionBarUtils" /* 13296 */;
 import react from "react" /* 19 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size_mod from "module_2" /* 2 */;
 
 let tmp;
 let tmp8;
-const _mod1655 = tmp8(1655);
-const _modDef1655 = tmp(1655);
+const _mod1653 = tmp8(1653);
+const _modDef1653 = tmp(1653);
 function EmojiSuggestionBarLargeAnimated(arg0) {
   let _undefined;
   let cleanUp;
@@ -64,7 +64,7 @@ function EmojiSuggestionBarLargeAnimated(arg0) {
   const items = [closure_8, suggestionBarHeight];
   let c0;
   [tmp10, tmp11] = items;
-  const tmp8Result2 = _mod1655;
+  const tmp8Result2 = _mod1653;
   class EmojiSuggestionBarLargeTsx1 {
     constructor() {
       const obj = { height: _undefined.get() };
@@ -103,14 +103,14 @@ function EmojiSuggestionBarLargeAnimated(arg0) {
         if (locked) {
           openEmojiActionSheet = dependencyMap;
         } else {
-          openEmojiActionSheet = tmp8(11298).openEmojiActionSheet;
+          openEmojiActionSheet = tmp8(11318).openEmojiActionSheet;
         }
         const tmp8Result = EmojiSuggestionBarUtils;
         return tmp7(EmojiEntranceAnimation, obj2, tmp8Result.getEmojiEntranceKey(tmp, index));
       }
     })
   };
-  View = _modDef1655.View;
+  View = _modDef1653.View;
   return <View style={items2}>{null}</View>;
 }
 function renderEmojiSuggestionBarLargeItem(arg0, arg1, transitionState, cleanUp) {

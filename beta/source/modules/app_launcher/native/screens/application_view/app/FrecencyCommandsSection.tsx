@@ -1,20 +1,20 @@
-// Module ID: 13485
-// Function ID: 13486
+// Module ID: 13018
+// Function ID: 13019
 // Name: FrecencyCommandsSection
-// Dependencies: [19, 17, 1072, 21, 5306, 13462, 13486, 6057, 12581, 5919, 1113, 5975, 2]
+// Dependencies: [19, 17, 1071, 21, 4913, 12994, 13019, 5650, 10676, 5504, 1112, 5565, 2]
 // Exports: default
 
-// Module 13485 (FrecencyCommandsSection)
+// Module 13018 (FrecencyCommandsSection)
 import react_native from "react-native" /* 17 */;
-import Constants from "Constants" /* 1072 */;
-import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5975 */;
-import AppAnalyticsUtils from "AppAnalyticsUtils" /* 6057 */;
-import AppLauncherTypes from "AppLauncherTypes" /* 12581 */;
-import AppDetailContent from "AppDetailContent" /* 13462 */;
-import useFilterAndSortToOnlyFrecentCommandsDefault from "useFilterAndSortToOnlyFrecentCommands" /* 13486 */;
+import Constants from "Constants" /* 1071 */;
+import ApplicationCommandTypes from "ApplicationCommandTypes" /* 5565 */;
+import AppAnalyticsUtils from "AppAnalyticsUtils" /* 5650 */;
+import AppLauncherTypes from "AppLauncherTypes" /* 10676 */;
+import AppDetailContent from "AppDetailContent" /* 12994 */;
+import useFilterAndSortToOnlyFrecentCommandsDefault from "useFilterAndSortToOnlyFrecentCommands" /* 13019 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let metroImportDefault;
@@ -57,9 +57,9 @@ export default function FrecencyCommandsSection(context) {
   if (0 !== arr.length) {
     let obj = { style: tmp.container, children: items1 };
     const obj2 = { style: tmp.header, children: arr(Heading, obj3) };
-    obj3 = { variant: "body-md/medium", color: "text-default", children: intl.string(context(1113).t.acSE0h) };
-    Heading = context(5919).Heading;
-    intl = context(1113).intl;
+    obj3 = { variant: "body-md/medium", color: "text-default", children: intl.string(context(1112).t.acSE0h) };
+    Heading = context(5504).Heading;
+    intl = context(1112).intl;
     items1 = [
       arr(View, obj2),
       arr.map((command, index) => {

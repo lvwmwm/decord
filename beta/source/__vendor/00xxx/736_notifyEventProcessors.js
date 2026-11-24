@@ -5,26 +5,26 @@
 // Exports: notifyEventProcessors
 
 // Module 736 (notifyEventProcessors)
-import _mod687 from "module_687" /* 687 */;
+import DEBUG_BUILD3 from "DEBUG_BUILD" /* 687 */;
 import _mod691 from "module_691" /* 691 */;
 import SyncPromise from "SyncPromise" /* 737 */;
 
 const require = globalThis.__r;
-let _require, closure_0, closure_1, dependencyMap;
+let _require, closure_0, dependencyMap;
 
-function _notifyEventProcessors(tmp15Result, arg1, arg2, arg3) {
+function _notifyEventProcessors(tmp15Result, event_id2, items2, arg3) {
   let closure_2;
-  const f82486 = (result) => {
+  const f79194 = (result) => {
     const sum = closure_2 + 1;
     let tmp5 = result;
     if (tmp5) {
       tmp5 = result;
-      if (closure_1[sum]) {
+      if (items2[sum]) {
         let nextPromise;
         const obj = {};
         const merged = Object.assign(result);
-        const tmp4Result = closure_1[sum](obj, closure_0);
-        const DEBUG_BUILD = _mod687.DEBUG_BUILD && null === tmp4Result;
+        const tmp4Result = items2[sum](obj, closure_0);
+        const DEBUG_BUILD = DEBUG_BUILD3.DEBUG_BUILD && null === tmp4Result;
         if (DEBUG_BUILD) {
           const debug = tmp9(688).debug;
           let str = tmp4.id;
@@ -37,19 +37,19 @@ function _notifyEventProcessors(tmp15Result, arg1, arg2, arg3) {
         }
         const tmp9Result = _mod691;
         if (tmp9Result.isThenable(tmp4Result)) {
-          nextPromise = tmp4Result.then(f82486);
+          nextPromise = tmp4Result.then(f79194);
         } else {
           const sum1 = sum + 1;
           closure_0 = tmp;
-          closure_1 = tmp2;
+          items2 = tmp2;
           nextPromise = tmp4Result;
           if (nextPromise) {
             nextPromise = tmp4Result;
-            if (closure_1[sum1]) {
+            if (items2[sum1]) {
               let nextPromise1;
               const obj2 = {};
               const merged1 = Object.assign(tmp4Result);
-              const tmp15Result = closure_1[sum1](obj2, closure_0);
+              const tmp15Result = items2[sum1](obj2, closure_0);
               const DEBUG_BUILD2 = tmp9(687).DEBUG_BUILD && null === tmp15Result;
               if (DEBUG_BUILD2) {
                 const debug2 = tmp9(688).debug;
@@ -63,7 +63,7 @@ function _notifyEventProcessors(tmp15Result, arg1, arg2, arg3) {
               }
               const tmp9Result2 = _mod691;
               if (tmp9Result2.isThenable(tmp15Result)) {
-                nextPromise1 = tmp15Result.then(f82486);
+                nextPromise1 = tmp15Result.then(f79194);
               } else {
                 nextPromise1 = _notifyEventProcessors(tmp15Result, tmp, tmp2, sum1 + 1);
               }
@@ -76,19 +76,19 @@ function _notifyEventProcessors(tmp15Result, arg1, arg2, arg3) {
     }
     return tmp5;
   };
-  _require = arg1;
-  dependencyMap = arg2;
+  _require = event_id2;
+  dependencyMap = items2;
   _notifyEventProcessors = arg3;
-  const tmp = arg2[arg3];
+  const tmp = items2[arg3];
   if (tmp15Result) {
     if (tmp) {
       let nextPromise;
       let obj = {};
       const tmp2 = obj;
       let merged = Object.assign(tmp15Result);
-      const tmpResult = tmp(obj, arg1);
+      const tmpResult = tmp(obj, event_id2);
       let tmp5 = _require;
-      let DEBUG_BUILD = require("module_687").DEBUG_BUILD;
+      let DEBUG_BUILD = require("DEBUG_BUILD").DEBUG_BUILD;
       if (DEBUG_BUILD) {
         DEBUG_BUILD = null === tmpResult;
       }
@@ -104,9 +104,9 @@ function _notifyEventProcessors(tmp15Result, arg1, arg2, arg3) {
       }
       const tmp5Result = tmp5(691);
       if (tmp5Result.isThenable(tmpResult)) {
-        nextPromise = tmpResult.then(f82486);
+        nextPromise = tmpResult.then(f79194);
       } else {
-        nextPromise = _notifyEventProcessors(tmpResult, arg1, arg2, arg3 + 1);
+        nextPromise = _notifyEventProcessors(tmpResult, event_id2, items2, arg3 + 1);
       }
       return nextPromise;
     }
@@ -115,14 +115,14 @@ function _notifyEventProcessors(tmp15Result, arg1, arg2, arg3) {
 }
 Object.defineProperty(exports, Symbol.toStringTag, { value: "Module" });
 
-export function notifyEventProcessors(arg0, tmp15Result, arg2) {
+export function notifyEventProcessors(items2, tmp15Result, event_id2) {
   let num = arg3;
   if (arg3 === undefined) {
     num = 0;
   }
   try {
     let resolvedSyncPromiseResult;
-    const tmp6 = _notifyEventProcessors(tmp15Result, arg2, arg0, num);
+    const tmp6 = _notifyEventProcessors(tmp15Result, event_id2, items2, num);
     const obj = _mod691;
     const tmp7 = tmp6;
     const tmp9 = require;

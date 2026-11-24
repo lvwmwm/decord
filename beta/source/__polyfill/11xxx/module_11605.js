@@ -1,12 +1,10 @@
 // Module ID: 11605
 // Function ID: 11606
-// Dependencies: [41, 42, 93, 95, 98, 11598, 11431, 11432, 11436]
+// Dependencies: [41, 42, 93, 95, 98, 11603, 11417, 11418, 11422]
 
 // Module 11605
-import EmptyDuration from "EmptyDuration" /* 11431 */;
-import ReferenceWithTimezone from "ReferenceWithTimezone" /* 11432 */;
-import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 11436 */;
-import _mod11598 from "module_11598" /* 11598 */;
+import AbstractParserWithWordBoundaryChecking from "AbstractParserWithWordBoundaryChecking" /* 11422 */;
+import _mod11603 from "module_11603" /* 11603 */;
 import _classCallCheck from "_classCallCheck" /* 41 */;
 import _createClass from "_createClass" /* 42 */;
 import c3 from "_possibleConstructorReturn" /* 93 */;
@@ -28,14 +26,18 @@ function _isNativeReflectConstruct() {
   } catch (err) {
   }
 }
-const regExp = new RegExp("(" + _mod11598.TIME_UNITS_PATTERN + ")\\s{0,5}(?:fa|prima|precedente)(?=(?:\\W|$))", "i");
-const regExp1 = new RegExp("(" + _mod11598.TIME_UNITS_PATTERN + ")\\s{0,5}fa(?=(?:\\W|$))", "i");
-class ENTimeUnitAgoFormatParser {
-  constructor(strictMode) {
+const regExp = new RegExp("(denna|den h\u00E4r|f\u00F6rra|passerade|n\u00E4sta|kommande|efter|\\+|-)\\s*(" + _mod11603.TIME_UNITS_PATTERN + ")(?=\\W|$)", "i");
+const regExp1 = new RegExp("(denna|den h\u00E4r|f\u00F6rra|passerade|n\u00E4sta|kommande|efter|\\+|-)\\s*(" + _mod11603.TIME_UNITS_NO_ABBR_PATTERN + ")(?=\\W|$)", "i");
+class SVTimeUnitCasualRelativeFormatParser {
+  constructor() {
     let constructResult;
+    let flag = arg0;
+    if (arg0 === undefined) {
+      flag = true;
+    }
     const self = this;
-    _classCallCheck(this, ENTimeUnitAgoFormatParser);
-    const obj = _getPrototypeOf(ENTimeUnitAgoFormatParser);
+    _classCallCheck(this, SVTimeUnitCasualRelativeFormatParser);
+    const obj = _getPrototypeOf(SVTimeUnitCasualRelativeFormatParser);
     const tmp2 = _getPrototypeOf;
     const tmp3 = c3;
     if (_isNativeReflectConstruct()) {
@@ -45,15 +47,15 @@ class ENTimeUnitAgoFormatParser {
       constructResult = obj.apply(self, undefined);
     }
     const tmp3Result = tmp3(self, constructResult);
-    tmp3Result.strictMode = strictMode;
+    tmp3Result.allowAbbreviations = flag;
     return tmp3Result;
   }
 }
-_inherits(ENTimeUnitAgoFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
+_inherits(SVTimeUnitCasualRelativeFormatParser, AbstractParserWithWordBoundaryChecking.AbstractParserWithWordBoundaryChecking);
 const entry = {
   key: "innerPattern",
   value: function innerPattern() {
-    return this.strictMode ? regExp1 : regExp;
+    return this.allowAbbreviations ? regExp : regExp1;
   }
 };
 const items = [
@@ -61,12 +63,24 @@ const items = [
   {
     key: "innerExtract",
     value: function innerExtract(reference, arg1) {
-      const parseDurationResult = _mod11598.parseDuration(arg1[1]);
-      const reverseDurationResult = EmptyDuration.reverseDuration(parseDurationResult);
-      const ParsingComponents = ReferenceWithTimezone.ParsingComponents;
-      return ParsingComponents.createRelativeFromReference(reference.reference, reverseDurationResult);
+      const str = arg1[1];
+      const formatted = str.toLowerCase();
+      const parseDurationResult = _mod11603.parseDuration(arg1[2]);
+      if (parseDurationResult) {
+        if ("f\u00F6rra" !== formatted) {
+          let reverseDurationResult;
+          if ("passerade" !== formatted) {
+            reverseDurationResult = parseDurationResult;
+          }
+          const ParsingComponents = tmp2(11418).ParsingComponents;
+          return ParsingComponents.createRelativeFromReference(reference.reference, reverseDurationResult);
+        }
+        reverseDurationResult = tmp2(11417).reverseDuration(parseDurationResult);
+      } else {
+        return null;
+      }
     }
   }
 ];
 
-export default _createClass(ENTimeUnitAgoFormatParser, items);
+export default _createClass(SVTimeUnitCasualRelativeFormatParser, items);

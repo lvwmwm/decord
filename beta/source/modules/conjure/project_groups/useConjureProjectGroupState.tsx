@@ -1,15 +1,15 @@
-// Module ID: 10555
-// Function ID: 10556
+// Module ID: 13791
+// Function ID: 13792
 // Name: useConjureProjectGroupState
-// Dependencies: [32, 19, 10556, 504, 10558, 10559, 2]
+// Dependencies: [32, 19, 13792, 504, 13794, 13795, 2]
 // Exports: useConjureProjectGroupActivity, useConjureProjectGroupCollapsed
 
-// Module 10555 (useConjureProjectGroupState)
-import conjureRailActivity2 from "conjureRailActivity" /* 10558 */;
-import ConjureProjectGroupsActionCreators from "ConjureProjectGroupsActionCreators" /* 10559 */;
+// Module 13791 (useConjureProjectGroupState)
+import conjureRailActivity2 from "conjureRailActivity" /* 13794 */;
+import ConjureProjectGroupsActionCreators from "ConjureProjectGroupsActionCreators" /* 13795 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react_mod from "react" /* 19 */;
-import ConjureProjectGroupsCollapseStore from "ConjureProjectGroupsCollapseStore" /* 10556 */;
+import ConjureProjectGroupsCollapseStore from "ConjureProjectGroupsCollapseStore" /* 13792 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

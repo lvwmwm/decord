@@ -1,18 +1,18 @@
-// Module ID: 14479
-// Function ID: 14480
+// Module ID: 12719
+// Function ID: 12720
 // Name: CheckpointIntroScreen
-// Dependencies: [32, 19, 17, 5307, 6367, 21, 575, 5306, 1630, 14480, 504, 1655, 5538, 14272, 1496, 14481, 14482, 14273, 1113, 3317, 2]
+// Dependencies: [32, 19, 17, 4914, 5969, 21, 575, 4913, 1628, 12720, 504, 1653, 5123, 12509, 1494, 12721, 12722, 12510, 1112, 3440, 2]
 // Exports: default
 
-// Module 14479 (CheckpointIntroScreen)
+// Module 12719 (CheckpointIntroScreen)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AccessibilityStore from "AccessibilityStore" /* 5307 */;
-import CheckpointConstants from "CheckpointConstants" /* 6367 */;
+import AccessibilityStore from "AccessibilityStore" /* 4914 */;
+import CheckpointConstants from "CheckpointConstants" /* 5969 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -62,7 +62,7 @@ export default function CheckpointIntroScreen(onCharacterBottomInsetChange) {
   let tmp18;
   let tmp19;
   let useReducedMotion;
-  const f109444 = () => useReducedMotion.useReducedMotion;
+  const f102399 = () => useReducedMotion.useReducedMotion;
   const _require = onCharacterBottomInsetChange.onCharacterBottomInsetChange;
   let landscapeContainer;
   let ref;
@@ -78,16 +78,16 @@ export default function CheckpointIntroScreen(onCharacterBottomInsetChange) {
   const tmp8 = landscapeContainer(ref[9])();
   let obj = require("get initialized");
   let items = [AccessibilityStore];
-  [tmp11, c3] = react.useState(obj.useStateFromStores(items, f109444));
-  _slicedToArray(react.useState(obj.useStateFromStores(items, f109444)), 2);
+  [tmp11, c3] = react.useState(obj.useStateFromStores(items, f102399));
+  _slicedToArray(react.useState(obj.useStateFromStores(items, f102399)), 2);
   const effect = react.useEffect(() => {
     const timeout = setTimeout(() => closure_1_3(true), closure_1_9);
     return () => clearTimeout(closure_0);
   }, []);
   const items1 = [closure_15, closure_8, , , , ];
-  const useAnimatedStyle = require("module_1655").useAnimatedStyle;
-  require("module_1655");
-  items1[2] = require("module_1655").Easing;
+  const useAnimatedStyle = require("module_1653").useAnimatedStyle;
+  require("module_1653");
+  items1[2] = require("module_1653").Easing;
   items1[3] = require("timing/timing").withTiming;
   items1[4] = tmp11;
   items1[5] = PX_12;

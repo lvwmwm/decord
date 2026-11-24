@@ -1,17 +1,17 @@
-// Module ID: 11964
-// Function ID: 11965
+// Module ID: 11731
+// Function ID: 11732
 // Name: ChannelPickerActionSheet
-// Dependencies: [19, 5248, 1388, 21, 1630, 7952, 5542, 7913, 7747, 7455, 11965, 7951, 5560, 7745, 8033, 5944, 2]
+// Dependencies: [19, 4855, 1386, 21, 1628, 7554, 5127, 7515, 7349, 7057, 11732, 7553, 5145, 7347, 7636, 5529, 2]
 // Exports: default
 
-// Module 11964 (ChannelPickerActionSheet)
-import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5542 */;
-import useChannelName from "useChannelName" /* 5944 */;
-import TableRadioRow2 from "TableRadioRow" /* 7747 */;
-import utils_ChannelUtils from "utils/ChannelUtils" /* 8033 */;
+// Module 11731 (ChannelPickerActionSheet)
+import ActionSheetActionCreatorsDefault from "ActionSheetActionCreators" /* 5127 */;
+import useChannelName from "useChannelName" /* 5529 */;
+import TableRadioRow2 from "TableRadioRow" /* 7349 */;
+import utils_ChannelUtils from "utils/ChannelUtils" /* 7636 */;
 import react from "react" /* 19 */;
-import RelationshipStore from "RelationshipStore" /* 5248 */;
-import UserStore from "UserStore" /* 1388 */;
+import RelationshipStore from "RelationshipStore" /* 4855 */;
+import UserStore from "UserStore" /* 1386 */;
 import Fragment from "Fragment" /* 21 */;
 import size from "module_2" /* 2 */;
 
@@ -21,7 +21,7 @@ let _require;
 let hasOwnProperty;
 let metroRequire;
 let tmp;
-const TableRowIcon2 = tmp(7455);
+const TableRowIcon2 = tmp(7057);
 ({ jsx: hasOwnProperty, jsxs: metroRequire } = Fragment);
 const result = size.fileFinishedImporting("modules/channel/native/ChannelPickerActionSheet.tsx");
 

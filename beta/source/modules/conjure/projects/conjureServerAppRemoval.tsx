@@ -1,30 +1,30 @@
-// Module ID: 14154
-// Function ID: 14155
+// Module ID: 12389
+// Function ID: 12390
 // Name: conjureServerAppRemoval
-// Dependencies: [5, 19, 2165, 5236, 5218, 5177, 5238, 5248, 1388, 1072, 7351, 5944, 504, 12, 6907, 7260, 7055, 2]
+// Dependencies: [5, 19, 2164, 4843, 4825, 4784, 4845, 4855, 1386, 1071, 6955, 5529, 504, 12, 6511, 6865, 6659, 2]
 // Exports: conjureDeleteAppChannelItems, loadConjureServerApp, useConjureServerApp
 
-// Module 14154 (conjureServerAppRemoval)
-import Constants from "Constants" /* 1072 */;
-import GuildChannelStore2 from "GuildChannelStore" /* 5236 */;
-import ApplicationActionCreators from "ApplicationActionCreators" /* 7055 */;
-import ConjureUtils from "ConjureUtils" /* 7260 */;
-import conjureAppInServer from "conjureAppInServer" /* 7351 */;
+// Module 12389 (conjureServerAppRemoval)
+import Constants from "Constants" /* 1071 */;
+import GuildChannelStore2 from "GuildChannelStore" /* 4843 */;
+import ApplicationActionCreators from "ApplicationActionCreators" /* 6659 */;
+import ConjureUtils from "ConjureUtils" /* 6865 */;
+import conjureAppInServer from "conjureAppInServer" /* 6955 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ApplicationStore from "ApplicationStore" /* 2165 */;
-import GuildMemberStore from "GuildMemberStore" /* 5218 */;
-import GuildStore from "GuildStore" /* 5177 */;
-import PermissionStore from "PermissionStore" /* 5238 */;
-import RelationshipStore from "RelationshipStore" /* 5248 */;
-import UserStore from "UserStore" /* 1388 */;
+import ApplicationStore from "ApplicationStore" /* 2164 */;
+import GuildMemberStore from "GuildMemberStore" /* 4825 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
+import RelationshipStore from "RelationshipStore" /* 4855 */;
+import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 const GuildChannelStore = GuildChannelStore2;
 let _require, c1, c2, c4, set, user;
 
-const f109154 = () => {
+const f102075 = () => {
 
 };
 function conjureApplicationIdForBot(userId) {
@@ -41,7 +41,7 @@ function readConjureServerApp(arg0, arg1) {
   let obj4;
   let tmp22;
   let tmp31;
-  const f109152 = (item) => {
+  const f102073 = (item) => {
     obj = guild(conjureProjectId[11]);
     return obj.computeChannelName(item, user, RelationshipStore);
   };
@@ -147,7 +147,7 @@ function readConjureServerApp(arg0, arg1) {
           });
         }
         ({ id: obj2.guildId, name: obj2.guildName } = guild);
-        const obj3 = { projectId: conjureProjectId, guildId: null, guildName: null, targetAppName: application.name, targetIsPreview: endsWithResult, deletableChannelNames: found3.map(f109152), keptChannelNames: found4.map(f109152), previewApp: tmp22, rest: tmp31 };
+        const obj3 = { projectId: conjureProjectId, guildId: null, guildName: null, targetAppName: application.name, targetIsPreview: endsWithResult, deletableChannelNames: found3.map(f102073), keptChannelNames: found4.map(f102073), previewApp: tmp22, rest: tmp31 };
         found3 = items.filter(canDeleteChannel);
         found4 = items.filter((item) => !PermissionStore.can(constants.MANAGE_CHANNELS, item));
         tmp22 = null;
@@ -272,7 +272,7 @@ function fetchMissingApplication(item10010) {
   if (!tmp) {
     const obj2 = ApplicationActionCreators;
     const application = obj2.fetchApplication(item10010);
-    application.catch(f109154);
+    application.catch(f102075);
   }
 }
 function loadMissingApplication() {
@@ -370,7 +370,7 @@ export function useConjureServerApp(guildId, applicationId) {
       if (!tmp2) {
         const obj2 = ApplicationActionCreators;
         application = obj2.fetchApplication(tmp);
-        application.catch(f109154);
+        application.catch(f102075);
       }
     }
   }, items2);

@@ -1,10 +1,10 @@
-// Module ID: 8124
-// Function ID: 8125
+// Module ID: 7727
+// Function ID: 7728
 // Name: AppChannelExperiment
-// Dependencies: [1452, 2]
+// Dependencies: [1450, 2]
 
-// Module 8124 (AppChannelExperiment)
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+// Module 7727 (AppChannelExperiment)
+import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 
 let obj2;

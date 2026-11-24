@@ -1,16 +1,16 @@
-// Module ID: 15101
-// Function ID: 15102
+// Module ID: 13688
+// Function ID: 13689
 // Name: HubEmailConnectionWaitlist
-// Dependencies: [19, 17, 1072, 21, 5306, 575, 1502, 7427, 1113, 6010, 15102, 1187, 5919, 5926, 2]
+// Dependencies: [19, 17, 1071, 21, 4913, 575, 1500, 7029, 1112, 5600, 13689, 1186, 5504, 5511, 2]
 // Exports: default
 
-// Module 15101 (HubEmailConnectionWaitlist)
+// Module 13688 (HubEmailConnectionWaitlist)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
+import Constants from "Constants" /* 1071 */;
 import react from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -36,7 +36,7 @@ export default function HubEmailConnectionWaitlist(onClose) {
   onClose = onClose.onClose;
   const school = onClose.school;
   const tmp = closure_7();
-  let obj = onClose(1502);
+  let obj = onClose(1500);
   navigation = obj.useNavigation();
   const items = [navigation, onClose];
   const layoutEffect = react.useLayoutEffect(() => {
@@ -53,21 +53,21 @@ export default function HubEmailConnectionWaitlist(onClose) {
     navigation.setOptions(obj);
   }, items);
   const obj2 = { style: tmp.container, children: items1 };
-  const obj3 = { source: navigation(15102), style: tmp.header };
-  const tmp4 = navigation(6010);
+  const obj3 = { source: navigation(13689), style: tmp.header };
+  const tmp4 = navigation(5600);
   items1 = [closure_5(tmp4, obj3), , , ];
-  const obj4 = { style: tmp.title, accessibilityRole: "header", children: intl.string(onClose(1113).t.OaloU5) };
-  const LegacyText = onClose(1187).LegacyText;
-  intl = onClose(1113).intl;
+  const obj4 = { style: tmp.title, accessibilityRole: "header", children: intl.string(onClose(1112).t.OaloU5) };
+  const LegacyText = onClose(1186).LegacyText;
+  intl = onClose(1112).intl;
   items1[1] = closure_5(LegacyText, obj4);
-  const obj5 = { style: tmp.description, variant: "body-sm/medium", color: "text-default", children: intl2.format(onClose(1113).t.Rs7MXJ, { school }) };
-  const Text = onClose(5919).Text;
-  intl2 = onClose(1113).intl;
+  const obj5 = { style: tmp.description, variant: "body-sm/medium", color: "text-default", children: intl2.format(onClose(1112).t.Rs7MXJ, { school }) };
+  const Text = onClose(5504).Text;
+  intl2 = onClose(1112).intl;
   items1[2] = closure_5(Text, obj5);
   const obj6 = { style: tmp.redesignButton, children: closure_5(Button, obj7) };
-  obj7 = { size: "lg", text: intl3.string(onClose(1113).t.i4jeWR), onPress: onClose };
-  Button = onClose(5926).Button;
-  intl3 = onClose(1113).intl;
+  obj7 = { size: "lg", text: intl3.string(onClose(1112).t.i4jeWR), onPress: onClose };
+  Button = onClose(5511).Button;
+  intl3 = onClose(1112).intl;
   items1[3] = closure_5(View, obj6);
   return closure_6(View, obj2);
 };

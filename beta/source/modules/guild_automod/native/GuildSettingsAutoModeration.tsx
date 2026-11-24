@@ -1,20 +1,20 @@
-// Module ID: 20457
-// Function ID: 20458
+// Module ID: 19711
+// Function ID: 19712
 // Name: GuildSettingsAutoModeration
-// Dependencies: [32, 19, 20458, 20460, 1072, 21, 5306, 575, 20462, 1113, 1502, 20467, 20475, 8106, 6327, 5919, 2188, 7418, 7746, 5902, 2]
+// Dependencies: [32, 19, 19712, 19714, 1071, 21, 4913, 575, 19716, 1112, 1500, 19721, 19729, 7709, 5929, 5504, 2187, 7020, 7348, 5487, 2]
 // Exports: default
 
-// Module 20457 (GuildSettingsAutoModeration)
+// Module 19711 (GuildSettingsAutoModeration)
 import nativeDefault from "native" /* 575 */;
-import TableRowGroup2 from "TableRowGroup" /* 7746 */;
-import GuildSettingsAutomodRuleStore from "GuildSettingsAutomodRuleStore" /* 20460 */;
-import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 20462 */;
+import TableRowGroup2 from "TableRowGroup" /* 7348 */;
+import GuildSettingsAutomodRuleStore from "GuildSettingsAutomodRuleStore" /* 19714 */;
+import AutomodTriggerConfigs from "AutomodTriggerConfigs" /* 19716 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
-import AutomodStore from "AutomodStore" /* 20458 */;
-import Constants from "Constants" /* 1072 */;
+import AutomodStore from "AutomodStore" /* 19712 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -182,11 +182,11 @@ export default function GuildSettingsAutoModeration(guildId) {
         const TableRowGroup = TableRowGroup2.TableRowGroup;
         const tmp5 = React4;
         if (AutomodTriggerConfigs.AutomodTriggerCategory.MEMBERS === tmp) {
-          const intl2 = tmp6(1113).intl;
-          stringResult = intl2.string(tmp6(1113).t.sx4E5v);
+          const intl2 = tmp6(1112).intl;
+          stringResult = intl2.string(tmp6(1112).t.sx4E5v);
         } else if (AutomodTriggerConfigs.AutomodTriggerCategory.CONTENT === tmp) {
-          const intl = tmp6(1113).intl;
-          stringResult = intl.string(tmp6(1113).t.fphZb0);
+          const intl = tmp6(1112).intl;
+          stringResult = intl.string(tmp6(1112).t.fphZb0);
         }
         const obj = { title: stringResult, hasIcons: true, children: arr.map(renderTriggerType) };
         tmp5Result = tmp5(TableRowGroup, obj, tmp);

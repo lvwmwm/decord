@@ -1,37 +1,24 @@
-// Module ID: 15810
-// Function ID: 15811
+// Module ID: 14550
+// Function ID: 14551
 // Name: useConjureServerWidgetOffers
-// Dependencies: [5, 19, 12266, 5177, 1388, 7017, 559, 7018, 12270, 1285, 504, 1452, 7260, 7329, 12121, 7357, 15811, 15812, 2]
+// Dependencies: [5, 19, 10332, 4784, 1386, 14549, 559, 10336, 1284, 504, 1450, 6865, 14551, 10213, 6961, 14552, 14553, 2]
 // Exports: default
 
-// Module 15810 (useConjureServerWidgetOffers)
+// Module 14550 (useConjureServerWidgetOffers)
 import BackoffDefault from "Backoff" /* 559 */;
-import ConjureProjectTypes from "ConjureProjectTypes" /* 7018 */;
-import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 7357 */;
-import useAddableWidgets from "useAddableWidgets" /* 15812 */;
+import UserProfileApplicationWidgetTypes from "UserProfileApplicationWidgetTypes" /* 6961 */;
+import useAddableWidgets from "useAddableWidgets" /* 14553 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import react from "react" /* 19 */;
-import ApplicationWidgetConfigStore from "ApplicationWidgetConfigStore" /* 12266 */;
-import GuildStore from "GuildStore" /* 5177 */;
-import UserStore from "UserStore" /* 1388 */;
-import ConjureProjectStore from "ConjureProjectStore" /* 7017 */;
+import ApplicationWidgetConfigStore from "ApplicationWidgetConfigStore" /* 10332 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import UserStore from "UserStore" /* 1386 */;
+import ConjureServerWidgetStore from "ConjureServerWidgetStore" /* 14549 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
 let c11, c12, c5, c6, closure_10, importDefault, set;
 
-function offersServerWidget(install_scope) {
-  let tmp = "guild" === install_scope.install_scope;
-  if (tmp) {
-    const supported_surfaces = install_scope.supported_surfaces;
-    let hasItem;
-    if (supported_surfaces != null) {
-      hasItem = supported_surfaces.includes(ConjureProjectTypes.ConjureSupportedSurface.PROFILE_WIDGET);
-    }
-    tmp = true === hasItem;
-  }
-  return tmp;
-}
 let obj = function _loadWidgetConfigs() {
   obj = _asyncToGenerator(async (arg0, value) => {
     let closure_0 = arg0;
@@ -111,19 +98,19 @@ let obj = function _loadWidgetConfigs() {
                         c5 = 2;
                         c6 = 1;
                         const obj6 = { value: obj8.fetchWidgetConfigs(c3), done: false };
-                        obj8 = closure_0(closure_2[8]);
+                        obj8 = closure_0(closure_2[7]);
                         return obj6;
                       }
                     }
                   } else if (1 === c5) {
                     c4 = 0;
                     value2 = closure_3;
-                    if (value2 instanceof closure_0(closure_2[9]).HTTPResponseError) {
+                    if (value2 instanceof closure_0(closure_2[8]).HTTPResponseError) {
                       if (429 === value2.status) {
                         const retryAfter = value2.retryAfter;
                         closure_0 = retryAfter;
                         if (retryAfter == null) {
-                          closure_0 = closure_0(closure_2[9]).DEFAULT_RATE_LIMIT_RETRY_AFTER_SECS;
+                          closure_0 = closure_0(closure_2[8]).DEFAULT_RATE_LIMIT_RETRY_AFTER_SECS;
                         }
                         const self = this;
                         const self2 = this;
@@ -166,7 +153,7 @@ let obj = function _loadWidgetConfigs() {
                         c5 = 5;
                         c6 = 1;
                         const obj12 = { value: obj2.fetchWidgetConfigs(closure_130_3), done: false };
-                        obj2 = closure_0(closure_2[8]);
+                        obj2 = closure_0(closure_2[7]);
                         return obj12;
                       }
                     } else if (4 === c5) {
@@ -326,95 +313,82 @@ export default function useConjureServerWidgetOffers() {
   let allConfigsByApplication;
   let closure_1;
   let currentUser;
+  let stateFromStores2;
   let stateFromStores4;
-  let stateFromStoresArray;
-  let tmp = stateFromStoresArray;
+  let tmp = stateFromStores2;
   const tmp2 = stateFromStores4;
-  let tmp3 = stateFromStoresArray(stateFromStores4[10]);
+  let tmp3 = stateFromStores2(stateFromStores4[9]);
   let items = [GuildStore, ];
   const useStateFromStores = tmp3.useStateFromStores;
   let tmp4 = GuildStore;
-  items[1] = stateFromStoresArray(stateFromStores4[11]).ApexExperimentStore;
+  items[1] = stateFromStores2(stateFromStores4[10]).ApexExperimentStore;
   const stateFromStores = useStateFromStores(items, () => {
-    obj = stateFromStoresArray(stateFromStores4[12]);
+    obj = stateFromStores2(stateFromStores4[11]);
     return obj.hasEligibleConjureGuild(GuildStore.getGuildsArray(), "useConjureServerWidgetOffers");
   });
-  obj = stateFromStoresArray(stateFromStores4[10]);
-  let items1 = [ConjureProjectStore];
-  const stateFromStores1 = obj.useStateFromStores(items1, () => ConjureProjectStore.getSharedWithMeProjectsFetchState());
-  const items2 = [ConjureProjectStore];
-  const obj2 = stateFromStoresArray(stateFromStores4[10]);
-  const stateFromStores2 = obj2.useStateFromStores(items2, () => {
-    const projectsFetchState = ConjureProjectStore.getProjectsFetchState();
-    let type;
-    if (projectsFetchState != null) {
-      type = projectsFetchState.type;
-    }
-    return "loading" === type;
-  });
-  let obj3 = react;
-  const items3 = [stateFromStores, stateFromStores1, stateFromStores2];
+  obj = stateFromStores2(stateFromStores4[9]);
+  let items1 = [ConjureServerWidgetStore];
+  const stateFromStores1 = obj.useStateFromStores(items1, () => ConjureServerWidgetStore.getFetchState());
+  const items2 = [stateFromStores, stateFromStores1];
   const effect = react.useEffect(() => {
     if ("success" === stateFromStores1) {
       closure_2_9.succeed();
     }
-    const tmp4 = stateFromStores && !stateFromStores2;
+    const tmp4 = stateFromStores;
     if (tmp4) {
       if ("unattempted" === stateFromStores1) {
-        obj = stateFromStoresArray(stateFromStores4[13]);
-        obj.listProjects();
+        obj = stateFromStores2(stateFromStores4[12]);
+        const conjureServerProfileWidgets = obj.fetchConjureServerProfileWidgets();
       } else {
         const pending = "error" !== tmp || closure_2_9.pending;
         if (!pending) {
           closure_2_9.fail(() => {
-            obj = stateFromStores(stateFromStores2[13]);
-            return obj.listProjects();
+            obj = stateFromStores(closure_1_2[12]);
+            return obj.fetchConjureServerProfileWidgets();
           });
         }
       }
     }
-  }, items3);
-  const items4 = [ConjureProjectStore];
-  const obj4 = stateFromStoresArray(stateFromStores4[10]);
-  stateFromStoresArray = obj4.useStateFromStoresArray(items4, () => {
-    const items = [...closure_1_8.getOwnedProjects(), ...closure_1_8.getSharedWithMeProjects()];
-    return items.filter(offersServerWidget);
-  });
-  const items5 = [stateFromStoresArray];
+  }, items2);
+  let obj3 = stateFromStores2(stateFromStores4[9]);
+  const items3 = [ConjureServerWidgetStore];
+  stateFromStores2 = obj3.useStateFromStores(items3, () => ConjureServerWidgetStore.getProjects());
+  const items4 = [stateFromStores2];
   const effect1 = react.useEffect(() => {
     function loadWidgetConfigs() {
-      return closure_1_11(...arguments);
+      return closure_1_10(...arguments);
     }
     let c0 = false;
-    loadWidgetConfigs(stateFromStoresArray.map((application_id) => application_id.application_id), () => c0);
+    loadWidgetConfigs(stateFromStores2.map((application_id) => application_id.application_id), () => c0);
     return () => {
       c0 = true;
     };
-  }, items5);
-  const items6 = [UserStore];
-  const obj5 = stateFromStoresArray(stateFromStores4[10]);
-  const stateFromStores3 = obj5.useStateFromStores(items6, () => currentUser.getCurrentUser());
+  }, items4);
+  const items5 = [UserStore];
+  const obj4 = stateFromStores2(stateFromStores4[9]);
+  const stateFromStores3 = obj4.useStateFromStores(items5, () => currentUser.getCurrentUser());
   let id;
-  let tmp12 = require("useUserProfileWidgets");
+  let tmp11 = require("useUserProfileWidgets");
+  const obj2 = react;
   if (stateFromStores3 != null) {
     id = stateFromStores3.id;
   }
-  const tmp12Result = tmp12(id);
-  importDefault = tmp12Result;
-  const items7 = [ApplicationWidgetConfigStore];
-  const tmpResult = tmp(tmp2[10]);
-  stateFromStores4 = tmpResult.useStateFromStores(items7, () => allConfigsByApplication.getAllConfigsByApplication());
-  const items8 = [tmp4];
-  const tmpResult2 = tmp(tmp2[10]);
-  const stateFromStores5 = tmpResult2.useStateFromStores(items8, () => GuildStore.getGuilds());
-  const items9 = [stateFromStoresArray, stateFromStores4, stateFromStores5, tmp12Result];
-  return obj3.useMemo(function() {
-    const found = closure_1.filter((item) => item instanceof stateFromStoresArray(stateFromStores4[15]).ApplicationWidget);
+  const tmp11Result = tmp11(id);
+  importDefault = tmp11Result;
+  const items6 = [ApplicationWidgetConfigStore];
+  const tmpResult = tmp(tmp2[9]);
+  stateFromStores4 = tmpResult.useStateFromStores(items6, () => allConfigsByApplication.getAllConfigsByApplication());
+  const items7 = [tmp4];
+  const tmpResult2 = tmp(tmp2[9]);
+  const stateFromStores5 = tmpResult2.useStateFromStores(items7, () => GuildStore.getGuilds());
+  const items8 = [stateFromStores2, stateFromStores4, stateFromStores5, tmp11Result];
+  return obj2.useMemo(function() {
+    const found = closure_1.filter((item) => item instanceof stateFromStores2(stateFromStores4[14]).ApplicationWidget);
     let self = this;
     const set1 = new Set(found.map((applicationId) => applicationId.applicationId));
     map = new Map();
-    const tmp = stateFromStoresArray;
-    const iter = stateFromStoresArray[Symbol.iterator]();
+    const tmp = stateFromStores2;
+    const iter = stateFromStores2[Symbol.iterator]();
     const nextResult = iter.next();
     while (iter !== undefined) {
       let application_id = nextResult.application_id;
@@ -423,7 +397,7 @@ export default function useConjureServerWidgetOffers() {
       let arr2 = stateFromStores4[application_id];
       let found1;
       if (arr2 != null) {
-        found1 = arr2.find((status) => status.status === stateFromStoresArray(stateFromStores4[16]).ApplicationWidgetConfigStatus.PUBLISHED);
+        found1 = arr2.find((status) => status.status === stateFromStores2(stateFromStores4[15]).ApplicationWidgetConfigStatus.PUBLISHED);
       }
       let tmp6 = found1;
       let result = null != guild_id;
@@ -472,5 +446,5 @@ export default function useConjureServerWidgetOffers() {
       }
       return obj;
     });
-  }, items9);
+  }, items8);
 };

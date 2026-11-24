@@ -1,10 +1,10 @@
 // Module ID: 17011
 // Function ID: 17012
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 17011 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native", width: 24, height: 24, scales: [2, 3], hash: "d63daceced7ceb0d84c7aba817626689", name: "ic_call_status_yellow_24px", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "84a1e2a3b13ea7ae45e68f1bb8755810", name: "TreehouseIcon", type: "png" });

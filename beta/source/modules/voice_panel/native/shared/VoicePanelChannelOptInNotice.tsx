@@ -1,11 +1,11 @@
-// Module ID: 19202
-// Function ID: 19203
+// Module ID: 18004
+// Function ID: 18005
 // Name: VoicePanelChannelOptInNotice
-// Dependencies: [19, 21, 7877, 7722, 7443, 1113, 7455, 16279, 2]
+// Dependencies: [19, 21, 7479, 7324, 7045, 1112, 7057, 15052, 2]
 
-// Module 19202 (VoicePanelChannelOptInNotice)
+// Module 18004 (VoicePanelChannelOptInNotice)
 import Fragment from "Fragment" /* 21 */;
-import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 7877 */;
+import OptInChannelsActionCreators from "OptInChannelsActionCreators" /* 7479 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -22,13 +22,13 @@ const memoResult = react.memo(function VoicePanelChannelOptInNotice(channel) {
     const obj2 = { section: analyticsSection };
     obj.setOptInChannel(channel.guild_id, channel.id, true, obj2);
   }, items);
-  let obj2 = { label: intl.string(channel(1113).t["9mysCh"]), subLabel: intl2.string(channel(1113).t.PDUCIN), icon: null, onPress: callback, start: true, end: true, arrow: true };
-  analyticsSection(7722);
-  const TableRow = channel(7443).TableRow;
-  intl = channel(1113).intl;
-  intl2 = channel(1113).intl;
-  ({ IconComponent: channel(16279).ChannelListMagnifyingGlassIcon });
-  const TableRowIcon = channel(7455).TableRowIcon;
+  let obj2 = { label: intl.string(channel(1112).t["9mysCh"]), subLabel: intl2.string(channel(1112).t.PDUCIN), icon: null, onPress: callback, start: true, end: true, arrow: true };
+  analyticsSection(7324);
+  const TableRow = channel(7045).TableRow;
+  intl = channel(1112).intl;
+  intl2 = channel(1112).intl;
+  ({ IconComponent: channel(15052).ChannelListMagnifyingGlassIcon });
+  const TableRowIcon = channel(7057).TableRowIcon;
   return <tmp2 style={style}>{null}</tmp2>;
 });
 const result = size.fileFinishedImporting("modules/voice_panel/native/shared/VoicePanelChannelOptInNotice.tsx");

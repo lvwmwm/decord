@@ -1,114 +1,79 @@
-// Module ID: 13163
-// Function ID: 13164
+// Module ID: 18250
+// Function ID: 18251
 // Name: useConjurePublishButton
-// Dependencies: [32, 19, 1113, 4131, 13164, 2]
+// Dependencies: [19, 12305, 1112, 4190, 2]
 // Exports: default
 
-// Module 13163 (useConjurePublishButton)
-import intl3 from "intl" /* 1113 */;
-import _modDef4131 from "module_4131" /* 4131 */;
-import useConjurePublishActionDefault from "useConjurePublishAction" /* 13164 */;
-import _slicedToArray from "_slicedToArray" /* 32 */;
+// Module 18250 (useConjurePublishButton)
+import intl4 from "intl" /* 1112 */;
+import useConjurePublishActionDefault from "useConjurePublishAction" /* 12305 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
-function publishButtonText(upToDate, arg1) {
-  let tmp = arg1;
-  if (null == arg1) {
-    let label;
-    if (null == upToDate) {
-      const intl2 = intl3.intl;
-      label = intl2.string(_modDef4131["120EFN"]);
-    } else {
-      const tmp2 = null != upToDate && upToDate.upToDate && "publish" === upToDate.action && !upToDate.awaitingApproval;
-      if (tmp2) {
-        if (!upToDate.publishing) {
-          const intl = intl3.intl;
-          label = intl.string(_modDef4131.kAfbEN);
-        }
-      }
-      label = upToDate.label;
-    }
-    tmp = label;
-  }
-  return tmp;
-}
 const result = size.fileFinishedImporting("modules/conjure/publish/useConjurePublishButton.tsx");
 
 export default function useConjurePublishButton(arg0, arg1, arg2, arg3) {
-  let closure_129_3;
-  let str2;
-  let tmp13;
-  let tmp2;
+  let str3;
+  let str4;
+  let stringResult;
+  let stringResult1;
+  let tmp11;
   let closure_0 = arg1;
   let closure_1 = arg2;
   let closure_2 = arg3;
-  let obj = react;
-  let tmp = _slicedToArray(react.useState(null), 2);
-  [tmp2, closure_129_3] = tmp;
-  let closure_4 = react.useRef(null);
-  const callback = react.useCallback(() => {
-    if (null != ref.current) {
-      const _clearTimeout = clearTimeout;
-      clearTimeout(ref.current);
+  const items = [arg1, arg3, arg2];
+  const memo = react.useMemo(() => ({ guildId, platform, busy }), items);
+  const tmp4 = useConjurePublishActionDefault(arg0, memo);
+  let str;
+  if (tmp4 != null) {
+    str = tmp4.state;
+  }
+  if (str == null) {
+    str = "hidden";
+  }
+  const obj = { publishOptions: memo, publish: tmp4, state: str, variant: str3, text: stringResult, indicator: str4, hint: stringResult1, pendingChanges: tmp11 };
+  str3 = "primary";
+  if ("up_to_date" === str || "auto_synced" === str) {
+    str3 = "secondary";
+  }
+  if ("up_to_date" === str || "auto_synced" === str) {
+    const intl2 = intl4.intl;
+    stringResult = intl2.string(tmp2(4190).kAfbEN);
+  } else {
+    stringResult = undefined;
+    if (tmp4 != null) {
+      stringResult = tmp4.label;
     }
-    ref.current = null;
-  }, []);
-  const items = [callback];
-  const effect = react.useEffect(() => callback, items);
-  const items1 = [arg3, callback];
-  const memo = react.useMemo(() => {
-    const obj = {
-      showConfirmation(intl) {
-        callback();
-        closure_1_3(intl);
-        ref.current = setTimeout(() => {
-          closure_1_4.current = null;
-          closure_1_3(null);
-        }, 1500);
+    if (stringResult == null) {
+      const intl = intl4.intl;
+      stringResult = intl.string(tmp2(4190)["120EFN"]);
+    }
+  }
+  str4 = "publishing";
+  if ("publishing" !== str) {
+    let str6 = null;
+    if ("action_needed" === str) {
+      str6 = "unpublished";
+    }
+    str4 = str6;
+  }
+  stringResult1 = null;
+  if ("auto_synced" === str) {
+    const intl3 = intl4.intl;
+    stringResult1 = intl3.string(tmp2(4190).W4LzCY);
+  }
+  tmp11 = null != tmp4;
+  if (tmp11) {
+    let isUpdate = tmp4.isUpdate;
+    if (!isUpdate) {
+      const status = tmp4.status;
+      let publishState;
+      if (status != null) {
+        publishState = status.publishState;
       }
-    };
-    const merged = Object.assign(closure_2);
-    return obj;
-  }, items1);
-  const items2 = [arg1, memo, arg2];
-  const memo1 = react.useMemo(() => ({ guildId, platform: memo, busy }), items2);
-  const tmp7 = useConjurePublishActionDefault(arg0, memo1);
-  let publishing;
-  if (tmp7 != null) {
-    publishing = tmp7.publishing;
-  }
-  let closure_7 = tmp9;
-  const items3 = [true === publishing, callback];
-  const effect1 = obj.useEffect(() => {
-    const tmp = closure_7;
-    if (tmp) {
-      callback();
-      closure_1_3(null);
+      isUpdate = "not_live" === publishState;
     }
-  }, items3);
-  let tmp11 = null;
-  if (true !== publishing) {
-    tmp11 = tmp2;
+    tmp11 = isUpdate;
   }
-  const obj2 = { publishOptions: memo1, publish: tmp7, publishing: true === publishing, confirmation: tmp11, variant: str2, text: publishButtonText(tmp7, tmp11), label: publishButtonText(tmp7, null), indicator: tmp13 };
-  str2 = "primary";
-  const tmp12 = null != tmp7 && tmp7.upToDate && "publish" === tmp7.action && !tmp7.awaitingApproval;
-  if (tmp12) {
-    str2 = "secondary";
-  }
-  tmp13 = null;
-  if (null != tmp7) {
-    let str3 = "publishing";
-    if (!tmp7.publishing) {
-      let tmp15 = "unpublished";
-      const tmp14 = null != tmp7 && tmp7.upToDate && "publish" === tmp7.action && !tmp7.awaitingApproval;
-      if (tmp14) {
-        tmp15 = null;
-      }
-      str3 = tmp15;
-    }
-    tmp13 = str3;
-  }
-  return obj2;
+  return obj;
 };

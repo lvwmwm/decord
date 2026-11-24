@@ -1,23 +1,23 @@
-// Module ID: 9526
-// Function ID: 9527
+// Module ID: 9046
+// Function ID: 9047
 // Name: IndividualProductPreview
-// Dependencies: [19, 17, 1074, 21, 5306, 575, 5883, 9409, 9527, 10062, 15485, 15486, 2114, 1075, 15487, 15490, 2]
+// Dependencies: [19, 17, 1073, 21, 4913, 575, 5468, 8920, 9047, 9452, 14216, 14217, 2112, 1074, 14218, 14221, 2]
 // Exports: IndividualProductPreview
 
-// Module 9526 (IndividualProductPreview)
+// Module 9046 (IndividualProductPreview)
 import nativeDefault from "native" /* 575 */;
-import CollectiblesItemType from "CollectiblesItemType" /* 2114 */;
-import LinearGradientDefault from "LinearGradient" /* 5883 */;
-import useCurrentUser from "useCurrentUser" /* 9409 */;
-import ProfileEffectUserPreviewDefault from "ProfileEffectUserPreview" /* 9527 */;
-import ProfileFrameUserPreviewDefault from "ProfileFrameUserPreview" /* 10062 */;
-import AvatarDecorationProductPreviewDefault from "AvatarDecorationProductPreview" /* 15485 */;
-import NameplateProductPreviewDefault from "NameplateProductPreview" /* 15486 */;
+import CollectiblesItemType from "CollectiblesItemType" /* 2112 */;
+import LinearGradientDefault from "LinearGradient" /* 5468 */;
+import useCurrentUser from "useCurrentUser" /* 8920 */;
+import ProfileEffectUserPreviewDefault from "ProfileEffectUserPreview" /* 9047 */;
+import ProfileFrameUserPreviewDefault from "ProfileFrameUserPreview" /* 9452 */;
+import AvatarDecorationProductPreviewDefault from "AvatarDecorationProductPreview" /* 14216 */;
+import NameplateProductPreviewDefault from "NameplateProductPreview" /* 14217 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1074 */;
+import CollectiblesShopConstants from "CollectiblesShopConstants" /* 1073 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let StyleSheet;
@@ -149,13 +149,13 @@ export function IndividualProductPreview(arg0) {
     return metroImportDefault(AvatarDecorationPreview, obj);
   } else if (CollectiblesItemType.CollectiblesItemType.EXTERNAL_SKU === type) {
     let tmp5;
-    const ALL = tmp(1075).FractionalPremiumSKUsSets.ALL;
+    const ALL = tmp(1074).FractionalPremiumSKUsSets.ALL;
     if (ALL.has(product.skuId)) {
-      tmp5 = metroImportDefault(tmp(15487).FractionalNitroPreview, {});
+      tmp5 = metroImportDefault(tmp(14218).FractionalNitroPreview, {});
     } else {
       tmp5 = null;
       if (product.skuId === hasOwnProperty.ORB_PROFILE_BADGE) {
-        tmp5 = metroImportDefault(tmp(15490).OrbBadgePreview, {});
+        tmp5 = metroImportDefault(tmp(14221).OrbBadgePreview, {});
       }
     }
     return tmp5;

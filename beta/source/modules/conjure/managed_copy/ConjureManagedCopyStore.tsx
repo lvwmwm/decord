@@ -1,9 +1,9 @@
-// Module ID: 7374
-// Function ID: 7375
+// Module ID: 6976
+// Function ID: 6977
 // Name: ConjureManagedCopyStore
 // Dependencies: [504, 572, 2]
 
-// Module 7374 (ConjureManagedCopyStore)
+// Module 6976 (ConjureManagedCopyStore)
 import get_initializedDefault from "get initialized" /* 504 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
 import size from "module_2" /* 2 */;
@@ -71,12 +71,15 @@ let obj = {
     }
     const result = set(projectId, obj);
   },
-  CONJURE_DOWNSTREAM_UPDATES_SET: function handleDownstreamUpdatesSet(event) {
+  CONJURE_DOWNSTREAM_UPDATES_SET: function handleDownstreamUpdatesSet(arg0) {
     let error;
-    event = event.event;
+    let event;
+    let projectId;
+    ({ projectId, event } = arg0);
+    map.delete(projectId);
+    map1.delete(projectId);
     const obj = { enabled: event.enabled, pending: false, error };
     error = event.error;
-    const projectId = event.projectId;
     set = map2.set;
     if (error == null) {
       error = null;

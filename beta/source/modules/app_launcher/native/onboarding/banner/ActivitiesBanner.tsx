@@ -1,19 +1,19 @@
-// Module ID: 13383
-// Function ID: 13384
+// Module ID: 12917
+// Function ID: 12918
 // Name: ActivitiesBanner
-// Dependencies: [32, 19, 21, 13372, 13384, 13395, 1113, 2]
+// Dependencies: [32, 19, 21, 12906, 12918, 12929, 1112, 2]
 // Exports: default
 
-// Module 13383 (ActivitiesBanner)
+// Module 12917 (ActivitiesBanner)
 import Fragment from "Fragment" /* 21 */;
-import intl2 from "intl" /* 1113 */;
-import useActivityApplications from "useActivityApplications" /* 13372 */;
+import intl2 from "intl" /* 1112 */;
+import useActivityApplications from "useActivityApplications" /* 12906 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
 let tmp7;
-const BannerBaseDefault = tmp7(13395);
+const BannerBaseDefault = tmp7(12929);
 const jsx = Fragment.jsx;
 const result = size.fileFinishedImporting("modules/app_launcher/native/onboarding/banner/ActivitiesBanner.tsx");
 
@@ -34,7 +34,7 @@ export default function ActivitiesBanner(context) {
     if (null != tmp5) {
       const obj3 = { image: tmp8, text: intl.formatToPlainString(intl2.t.zHMWuV, obj4) };
       const tmp7Result = BannerBaseDefault;
-      intl = tmp(1113).intl;
+      intl = tmp(1112).intl;
       obj4 = { activityName: tmp4.name };
       tmp6Result = tmp6(tmp7Result, obj3);
     }

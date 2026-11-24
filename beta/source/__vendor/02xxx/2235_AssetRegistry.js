@@ -1,10 +1,10 @@
 // Module ID: 2235
 // Function ID: 2236
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 2235 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/download_apps", scales: [1], hash: "be9275894c73751881c1dcb597f10f76", name: "MetaQuestAppUpsell.compiled.messages", type: "jsona" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/.cache/intl/ZGVzaWdu", scales: [1], hash: "d9daf084b24d87c0b5f11033500e1a28", name: "hr.messages.d9daf084b24d87c0b5f11033500e1a28.compiled.messages", type: "jsona" });

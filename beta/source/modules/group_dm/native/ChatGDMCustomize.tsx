@@ -1,18 +1,18 @@
-// Module ID: 10909
-// Function ID: 10910
+// Module ID: 10539
+// Function ID: 10540
 // Name: ChatGDMCustomize
-// Dependencies: [5, 32, 19, 17, 5155, 1072, 21, 5306, 575, 5903, 504, 5944, 5907, 1414, 10910, 8134, 1113, 6005, 10911, 7428, 5919, 7619, 5926, 10913, 2]
+// Dependencies: [5, 32, 19, 17, 4762, 1071, 21, 4913, 575, 5488, 504, 5529, 5492, 1412, 10540, 7737, 1112, 5595, 10541, 7030, 5504, 7221, 5511, 10543, 2]
 
-// Module 10909 (ChatGDMCustomize)
+// Module 10539 (ChatGDMCustomize)
 import nativeDefault from "native" /* 575 */;
-import Constants from "Constants" /* 1072 */;
+import Constants from "Constants" /* 1071 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let c4, c5, maxLength;

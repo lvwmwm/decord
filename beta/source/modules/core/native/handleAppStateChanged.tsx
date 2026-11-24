@@ -1,22 +1,22 @@
-// Module ID: 20908
-// Function ID: 20909
+// Module ID: 20177
+// Function ID: 20178
 // Name: handleAppStateChanged
-// Dependencies: [502, 2120, 1072, 3, 10, 572, 6061, 20907, 8678, 5366, 9, 1256, 2]
+// Dependencies: [502, 2118, 1071, 3, 10, 572, 5654, 20176, 8268, 4973, 9, 1255, 2]
 // Exports: default
 
-// Module 20908 (handleAppStateChanged)
+// Module 20177 (handleAppStateChanged)
 import LoggerDefault from "Logger" /* 3 */;
 import TTITrackerDefault from "TTITracker" /* 9 */;
 import AppStartPerformanceDefault from "AppStartPerformance" /* 10 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1256 */;
-import ThemeActionCreators from "ThemeActionCreators" /* 5366 */;
-import RTCConnectionStore from "RTCConnectionStore" /* 6061 */;
-import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 8678 */;
-import BundleUpdaterActionCreatorsDefault from "BundleUpdaterActionCreators" /* 20907 */;
+import AnalyticsUtilsDefault from "AnalyticsUtils" /* 1255 */;
+import ThemeActionCreators from "ThemeActionCreators" /* 4973 */;
+import RTCConnectionStore from "RTCConnectionStore" /* 5654 */;
+import TTIAnalyticsUtils from "TTIAnalyticsUtils" /* 8268 */;
+import BundleUpdaterActionCreatorsDefault from "BundleUpdaterActionCreators" /* 20176 */;
 import AuthenticationStore from "AuthenticationStore" /* 502 */;
-import AppStateStore from "AppStateStore" /* 2120 */;
-import Constants from "Constants" /* 1072 */;
+import AppStateStore from "AppStateStore" /* 2118 */;
+import Constants from "Constants" /* 1071 */;
 import size from "module_2" /* 2 */;
 
 let hasOwnProperty;

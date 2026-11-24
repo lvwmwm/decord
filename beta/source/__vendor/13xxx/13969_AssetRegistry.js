@@ -1,10 +1,10 @@
 // Module ID: 13969
 // Function ID: 13970
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 13969 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/conjure/home/images", width: 640, height: 360, scales: [1], hash: "4e5bae29363ccb3adb92755885f5263f", name: "conjure-home-spoilers-automod", type: "svg" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/modules/premium/tiered_tenure_badging/native/images", width: 59.666666666666664, height: 59.666666666666664, scales: [3], hash: "315f9d4a63f13d92e18da6b9eb40f70a", name: "asset_gold_badge_small", type: "webp" });

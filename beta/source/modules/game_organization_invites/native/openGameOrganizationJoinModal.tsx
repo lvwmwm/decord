@@ -1,12 +1,12 @@
-// Module ID: 14067
-// Function ID: 14068
+// Module ID: 12235
+// Function ID: 12236
 // Name: openGameOrganizationJoinModal
-// Dependencies: [5, 12369, 14068, 14072, 6838, 14075, 2121, 2]
+// Dependencies: [5, 11896, 12236, 12240, 6429, 12243, 2119, 2]
 // Exports: default
 
-// Module 14067 (openGameOrganizationJoinModal)
-import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 12369 */;
-import checkGameOrganizationJoinEligibilityDefault from "checkGameOrganizationJoinEligibility" /* 14068 */;
+// Module 12235 (openGameOrganizationJoinModal)
+import GameOrganizationInviteConstants from "GameOrganizationInviteConstants" /* 11896 */;
+import checkGameOrganizationJoinEligibilityDefault from "checkGameOrganizationJoinEligibility" /* 12236 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
 import size from "module_2" /* 2 */;
 

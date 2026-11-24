@@ -1,14 +1,16 @@
-// Module ID: 13784
-// Function ID: 13785
+// Module ID: 12289
+// Function ID: 12290
 // Name: useConjureSharedProjectAppChannel
-// Dependencies: [19, 5155, 5238, 12445, 504, 12446, 2]
+// Dependencies: [19, 4762, 4784, 4845, 504, 11974, 11975, 2]
 // Exports: default
 
-// Module 13784 (useConjureSharedProjectAppChannel)
-import ChannelStore2 from "ChannelStore" /* 5155 */;
-import findLoadedAppChannelDefault from "findLoadedAppChannel" /* 12446 */;
+// Module 12289 (useConjureSharedProjectAppChannel)
+import ChannelStore2 from "ChannelStore" /* 4762 */;
+import conjureSharedProjectHome from "conjureSharedProjectHome" /* 11974 */;
+import findLoadedAppChannelDefault from "findLoadedAppChannel" /* 11975 */;
 import react from "react" /* 19 */;
-import PermissionStore from "PermissionStore" /* 5238 */;
+import GuildStore from "GuildStore" /* 4784 */;
+import PermissionStore from "PermissionStore" /* 4845 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -18,47 +20,44 @@ let _require;
 const ChannelLoader = ChannelStore2.ChannelLoader;
 const result = size.fileFinishedImporting("modules/conjure/share/useConjureSharedProjectAppChannel.tsx");
 
-export default function useConjureSharedProjectAppChannel(arg0, install_scope, arg2) {
-  let channelId;
+export default function useConjureSharedProjectAppChannel(arg0, arg1, channelId) {
   let closure_0;
-  let guildId;
   _require = arg0;
-  ({ guildId, channelId } = arg2);
-  guildId = undefined;
-  let stateFromStores;
+  let closure_1 = arg1;
+  channelId = channelId.channelId;
   let stateFromStores1;
   let ref;
-  let tmp = null;
-  if (null != install_scope) {
-    tmp = null;
-    if (null != channelId) {
-      let tmp2 = _require;
-      const tmp3 = guildId;
-      let obj = require("conjureSharedProjectHome");
-      tmp = null;
-      if (obj.isSharedProjectHomeServer(install_scope, guildId)) {
-        tmp = guildId;
+  let obj = require("get initialized");
+  let items = [ref];
+  const items1 = [arg1, channelId];
+  const stateFromStores = obj.useStateFromStores(items, () => {
+    let sharedProjectHomeGuildId = null;
+    if (null != closure_1) {
+      sharedProjectHomeGuildId = null;
+      if (null != channelId) {
+        const obj = conjureSharedProjectHome;
+        sharedProjectHomeGuildId = obj.getSharedProjectHomeGuildId(tmp);
       }
     }
-  }
-  guildId = tmp;
-  let items = [stateFromStores1];
-  const items1 = [tmp];
+    return sharedProjectHomeGuildId;
+  }, items1);
+  const items2 = [stateFromStores1];
+  const items3 = [stateFromStores];
   const obj2 = require("get initialized");
-  stateFromStores = obj2.useStateFromStores(items, () => {
-    let tmp2 = null == guildId;
+  stateFromStores1 = obj2.useStateFromStores(items2, () => {
+    let tmp2 = null == stateFromStores;
     if (!tmp2) {
       const _Object = Object;
       tmp2 = Object.keys(ChannelStore.getMutableGuildChannelsForGuild(tmp)).length > 0;
     }
     return tmp2;
-  }, items1);
-  const items2 = [stateFromStores1, PermissionStore];
-  const items3 = [tmp, arg0, channelId];
+  }, items3);
+  const items4 = [stateFromStores1, PermissionStore];
+  const items5 = [stateFromStores, arg0, channelId];
   const obj3 = require("get initialized");
-  stateFromStores1 = obj3.useStateFromStores(items2, () => {
+  const stateFromStores2 = obj3.useStateFromStores(items4, () => {
     let tmp2 = null;
-    if (null != guildId) {
+    if (null != stateFromStores) {
       tmp2 = null;
       if (null != channelId) {
         const tmp7 = findLoadedAppChannelDefault(tmp, closure_0, tmp3);
@@ -73,27 +72,27 @@ export default function useConjureSharedProjectAppChannel(arg0, install_scope, a
       }
     }
     return tmp2;
-  }, items3);
+  }, items5);
   ref = stateFromStores.useRef(null);
-  const items4 = [tmp, stateFromStores];
+  const items6 = [stateFromStores, stateFromStores1];
   const effect = stateFromStores.useEffect(() => {
-    const tmp2 = null == guildId || stateFromStores || ref.current === tmp;
+    const tmp2 = null == stateFromStores || stateFromStores1 || ref.current === tmp;
     if (!tmp2) {
-      ref.current = guildId;
-      const items = [guildId];
+      ref.current = stateFromStores;
+      const items = [stateFromStores];
       const guildIds = ChannelLoader.loadGuildIds(items);
     }
-  }, items4);
-  const items5 = [tmp, stateFromStores1];
+  }, items6);
+  const items7 = [stateFromStores, stateFromStores2];
   return stateFromStores.useMemo(() => {
     let tmp2 = null;
-    if (null != guildId) {
+    if (null != stateFromStores) {
       tmp2 = null;
-      if (null != stateFromStores1) {
+      if (null != stateFromStores2) {
         tmp2 = { guildId: tmp, channelId: tmp3 };
         const obj = { guildId: tmp, channelId: tmp3 };
       }
     }
     return tmp2;
-  }, items5);
+  }, items7);
 };

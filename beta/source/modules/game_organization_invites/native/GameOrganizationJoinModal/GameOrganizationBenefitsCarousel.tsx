@@ -1,143 +1,158 @@
-// Module ID: 14098
-// Function ID: 14099
+// Module ID: 12262
+// Function ID: 12263
 // Name: GameOrganizationBenefitsCarousel
-// Dependencies: [32, 19, 17, 21, 575, 5306, 7445, 6327, 6010, 5919, 1496, 14099, 11215, 1113, 1187, 2]
+// Dependencies: [32, 19, 17, 21, 575, 12263, 12267, 12271, 4913, 7047, 5929, 5504, 10504, 12275, 1186, 1494, 2]
 // Exports: default
 
-// Module 14098 (GameOrganizationBenefitsCarousel)
+// Module 12262 (GameOrganizationBenefitsCarousel)
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl2 from "intl" /* 1113 */;
-import useWindowDimensionsDefault from "useWindowDimensions" /* 1496 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import Card_Card from "Card/Card" /* 7445 */;
-import GameOrganizationBenefits from "GameOrganizationBenefits" /* 14099 */;
+import useWindowDimensionsDefault from "useWindowDimensions" /* 1494 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import Card_Card from "Card/Card" /* 7047 */;
+import GuildRolesAbstractUI from "GuildRolesAbstractUI" /* 12263 */;
+import GuildChatAbstractUI from "GuildChatAbstractUI" /* 12267 */;
+import GuildInviteAbstractUI from "GuildInviteAbstractUI" /* 12271 */;
+import GameOrganizationBenefits from "GameOrganizationBenefits" /* 12275 */;
 import _slicedToArray_mod from "_slicedToArray" /* 32 */;
-import react from "react" /* 19 */;
+import react_mod from "react" /* 19 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
-const require = globalThis.__r;
 let dependencyMap;
 
 let metroImportDefault;
 let metroRequire;
-let obj2;
-let obj3;
-let tmp2;
-let tmp6;
-const FastImageDefault = tmp6(6010);
-const CarouselDefault = tmp2(11215);
-function BenefitCard(arg0) {
+function BenefitCard(isLast) {
+  let Illustration;
   let Stack;
-  let img;
-  let isLast;
   let items1;
   let obj2;
-  let obj4;
   let text;
-  let tmp2Result;
-  let tmp5;
-  let width;
-  ({ img, isLast } = arg0);
-  ({ text, width } = arg0);
-  const tmp = closure_9();
-  const items = [tmp.card, { width }, ];
+  isLast = isLast.isLast;
+  ({ text, Illustration } = isLast);
+  const tmp = closure_11(isLast.cardWidth);
+  const items = [tmp.card, ];
   let cardSpacing = !isLast;
   const Card = Card_Card.Card;
   if (!isLast) {
     cardSpacing = tmp.cardSpacing;
   }
-  items[2] = cardSpacing;
-  const obj = { style: items, children: tmp5(Stack, obj2) };
+  items[1] = cardSpacing;
+  obj = { border: "none", radius: 12, style: items, children: metroImportDefault(Stack, obj2) };
   obj2 = { spacing: nativeDefault.space.PX_24, children: items1 };
-  Stack = tmp3(6327).Stack;
-  tmp5 = metroImportDefault;
-  if (null != img) {
-    const obj3 = { source: obj4, style: tmp.benefitImage, resizeMode: "cover", accessible: false };
-    obj4 = { uri: img };
-    tmp2Result = tmp2(FastImageDefault, obj3);
-  } else {
-    const obj5 = { style: tmp.benefitImage };
-    tmp2Result = tmp2(View, obj5);
-  }
-  items1 = [tmp2Result, metroRequire(Text_Text.Text, { variant: "body-sm/medium", color: "text-subtle", children: text })];
+  Stack = tmp3(5929).Stack;
+  items1 = [metroRequire(Illustration, { width: "100%", accessible: false }), metroRequire(Text_Text.Text, { variant: "body-sm/medium", color: "text-subtle", children: text })];
   return metroRequire(Card, obj);
 }
+function BenefitsCarousel(cardWidth) {
+  let _undefined;
+  let _undefined2;
+  let c2;
+  let c3;
+  let c4;
+  let closure_5;
+  let first;
+  let obj2;
+  let prop;
+  let tmp13;
+  let tmp4;
+  let tmp6;
+  cardWidth = cardWidth.cardWidth;
+  const displayNoun = cardWidth.displayNoun;
+  _slicedToArray = undefined;
+  react = undefined;
+  closure_5 = undefined;
+  const sum = cardWidth + PX_12;
+  dependencyMap = sum;
+  const tmp2 = closure_11(cardWidth);
+  [tmp4, c3] = _slicedToArray(react.useState(0), 2);
+  const tmp3 = _slicedToArray(react.useState(0), 2);
+  [tmp6, c4] = _slicedToArray(react.useState(0), 2);
+  const tmp5 = _slicedToArray(react.useState(0), 2);
+  [first, closure_5] = react.useState(0);
+  obj = { style: tmp2.carouselContainer, children: closure_6(tmp13, obj2) };
+  obj2 = {
+    style: tmp2.carousel,
+    width: sum,
+    pageIndictor: false,
+    scrollViewProps: {
+      contentContainerStyle: tmp2.carouselContent,
+      onLayout(nativeEvent) {
+        return _undefined2(nativeEvent.nativeEvent.layout.width);
+      },
+      onContentSizeChange(arg0) {
+        return closure_5(arg0);
+      },
+      onScroll: function handleScroll(nativeEvent) {
+        nativeEvent = nativeEvent.nativeEvent;
+        const contentOffset = nativeEvent.contentOffset;
+        const diff = nativeEvent.contentSize.width - nativeEvent.layoutMeasurement.width;
+        if (diff > 0) {
+          let diff1;
+          if (contentOffset.x >= diff - 1) {
+            diff1 = GameOrganizationBenefits.GAME_ORGANIZATION_BENEFITS.length - 1;
+          }
+          const _Math = Math;
+          const _Math2 = Math;
+          const bound = Math.max(diff1, 0);
+          _undefined(min(bound, GameOrganizationBenefits.GAME_ORGANIZATION_BENEFITS.length - 1));
+        }
+        diff1 = Math.round(contentOffset.x / c2);
+      },
+      scrollEventThrottle: 16,
+      snapToInterval: sum,
+      snapToAlignment: "start",
+      decelerationRate: "fast"
+    },
+    children: prop.map((key, index) => {
+      obj = { cardWidth, text: key.getText(displayNoun), Illustration: obj[key.key], isLast: index === GameOrganizationBenefits.GAME_ORGANIZATION_BENEFITS.length - 1 };
+      return metroRequire(BenefitCard, obj, key.key);
+    })
+  };
+  tmp13 = displayNoun(10504);
+  prop = cardWidth(12275).GAME_ORGANIZATION_BENEFITS;
+  const children = [closure_6(closure_5, obj), ];
+  let tmp11Result = null;
+  const tmp10 = closure_5;
+  const tmp11 = closure_6;
+  const tmp9 = closure_7;
+  if (cardWidth(12275).GAME_ORGANIZATION_BENEFITS.length > 1) {
+    tmp11Result = null;
+    if (tmp6 > 0) {
+      tmp11Result = null;
+      if (first > tmp6) {
+        const obj3 = { containerStyle: tmp2.pagination, numberOfItems: cardWidth(12275).GAME_ORGANIZATION_BENEFITS.length, currentIndex: tmp4 };
+        const CarouselPagination = tmp14(1186).CarouselPagination;
+        tmp11Result = tmp11(CarouselPagination, obj3);
+      }
+    }
+  }
+  children[1] = tmp11Result;
+  return tmp9(tmp10, { children });
+}
 let _slicedToArray = _slicedToArray_mod;
+let react = react_mod;
 const View = react_native.View;
 ({ jsx: metroRequire, jsxs: metroImportDefault } = Fragment);
 const PX_16 = nativeDefault.space.PX_16;
 const PX_12 = nativeDefault.space.PX_12;
-let createStyles = createStyles_mod;
-let obj = { carouselContainer: { marginHorizontal: -PX_16 }, carousel: { alignItems: "stretch" }, carouselContent: { paddingHorizontal: PX_16 }, card: obj2, cardSpacing: { marginRight: PX_12 }, benefitImage: obj3, pagination: { paddingBottom: 0 } };
-obj2 = { padding: nativeDefault.space.PX_16, paddingBottom: nativeDefault.space.PX_32 };
-createStyles = createStyles.createStyles;
-obj3 = { width: "100%", aspectRatio: 1.7, borderRadius: nativeDefault.radii.lg, overflow: "hidden", backgroundColor: nativeDefault.colors.BACKGROUND_SURFACE_HIGH };
-let closure_9 = createStyles(obj);
+let obj = { "auto-sync": GuildRolesAbstractUI.GuildRolesAbstractUI, "linked-channel": GuildChatAbstractUI.GuildChatAbstractUI, "guild-invite": GuildInviteAbstractUI.GuildInviteAbstractUI };
+let closure_11 = createStyles.createStyles((width) => {
+  let obj2;
+  let obj4;
+  obj = { carouselContainer: obj2, carousel: { alignItems: "stretch" }, carouselContent: { paddingHorizontal: PX_16 }, card: { padding: nativeDefault.space.PX_16, width, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED }, cardSpacing: obj4, pagination: { paddingBottom: 0 } };
+  obj2 = { marginHorizontal: -PX_16 };
+  obj4 = { marginRight: PX_12 };
+  ({ padding: nativeDefault.space.PX_16, width, backgroundColor: nativeDefault.colors.BACKGROUND_MOD_MUTED });
+  return obj;
+});
 const result = size.fileFinishedImporting("modules/game_organization_invites/native/GameOrganizationJoinModal/GameOrganizationBenefitsCarousel.tsx");
 
-export default function GameOrganizationBenefitsCarousel() {
-  let closure_1;
-  let first;
-  let obj3;
-  let prop;
-  let tmp2Result;
-  let tmp5;
-  const tmp = closure_9();
-  let obj = react;
-  let width = useWindowDimensionsDefault({ ignoreKeyboard: true }).width;
-  [tmp5, require] = react.useState(null);
-  _slicedToArray(react.useState(null), 2);
-  [first, importDefault] = react.useState(0);
-  const _Math = Math;
-  const roundResult = round(0.75 * tmp5);
-  dependencyMap = roundResult;
-  const sum = roundResult + PX_12;
-  _slicedToArray = sum;
-  const items = [roundResult];
-  const items1 = [sum];
-  const callback = obj.useCallback((nativeEvent) => {
-    const width = nativeEvent.nativeEvent.layout.width;
-    if (Math.round(0.75 * width) !== dependencyMap) {
-      closure_1(0);
-    }
-    require(width);
-  }, items);
-  const obj2 = { style: tmp.carouselContainer, onLayout: callback, children: closure_6(tmp2Result, obj3, roundResult) };
-  const callback1 = obj.useCallback((nativeEvent) => {
-    const bound = Math.max(Math.round(nativeEvent.nativeEvent.contentOffset.x / _slicedToArray), 0);
-    closure_1(min(bound, GameOrganizationBenefits.GAME_ORGANIZATION_BENEFITS.length - 1));
-  }, items1);
-  obj3 = {
-    style: tmp.carousel,
-    width: sum,
-    pageIndictor: false,
-    scrollViewProps: { contentContainerStyle: tmp.carouselContent, onScroll: callback1, scrollEventThrottle: 16, snapToInterval: sum, snapToAlignment: "start", decelerationRate: "fast" },
-    children: prop.map((item, index) => {
-      let img;
-      let intl;
-      let key;
-      let message;
-      const obj = { text: intl.string(message), img, width: dependencyMap, isLast: index === GameOrganizationBenefits.GAME_ORGANIZATION_BENEFITS.length - 1 };
-      ({ key, message, img } = item);
-      intl = intl2.intl;
-      return metroRequire(BenefitCard, obj, key);
-    })
-  };
-  tmp2Result = CarouselDefault;
-  prop = GameOrganizationBenefits.GAME_ORGANIZATION_BENEFITS;
-  const children = [closure_6(View, obj2), ];
-  let tmp14Result = null;
-  const tmp12 = closure_7;
-  const tmp13 = View;
-  const tmp14 = closure_6;
-  if (GameOrganizationBenefits.GAME_ORGANIZATION_BENEFITS.length > 1) {
-    const obj4 = { containerStyle: tmp.pagination, numberOfItems: GameOrganizationBenefits.GAME_ORGANIZATION_BENEFITS.length, currentIndex: first };
-    const CarouselPagination = tmp16(1187).CarouselPagination;
-    tmp14Result = tmp14(CarouselPagination, obj4);
-  }
-  children[1] = tmp14Result;
-  return tmp12(tmp13, { children });
+export default function GameOrganizationBenefitsCarousel(displayNoun) {
+  displayNoun = displayNoun.displayNoun;
+  const width = useWindowDimensionsDefault().width;
+  obj = { cardWidth: Math.min(0.75 * width, 400), displayNoun };
+  return metroRequire(BenefitsCarousel, obj, width);
 };

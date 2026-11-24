@@ -1,10 +1,10 @@
 // Module ID: 10477
 // Function ID: 10478
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 10477 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "856ae0fb80fb3c5e7cc40888f4bebb2b", name: "YoutubeNeutralIcon", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/custom_app_icons/MatteLightIcon", width: 60, height: 60, scales: [2, 3], hash: "766fd7e004517bb3fbea8bf5121a6049", name: "MatteLightIcon", type: "png" });

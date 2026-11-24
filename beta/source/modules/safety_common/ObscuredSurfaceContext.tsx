@@ -1,10 +1,10 @@
-// Module ID: 10314
-// Function ID: 10315
+// Module ID: 9804
+// Function ID: 9805
 // Name: ObscuredSurfaceContext
 // Dependencies: [19, 2]
 // Exports: useObscuredSurface
 
-// Module 10314 (ObscuredSurfaceContext)
+// Module 9804 (ObscuredSurfaceContext)
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

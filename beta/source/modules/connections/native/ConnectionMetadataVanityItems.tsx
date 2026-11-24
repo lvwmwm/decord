@@ -1,24 +1,24 @@
-// Module ID: 12496
-// Function ID: 12497
+// Module ID: 12018
+// Function ID: 12019
 // Name: ConnectionMetadataVanityItems
-// Dependencies: [19, 17, 7423, 21, 5306, 575, 1113, 12497, 12498, 12, 2027, 5919, 1187, 7467, 2]
+// Dependencies: [19, 17, 7025, 21, 4913, 575, 1112, 12019, 12020, 12, 2025, 5504, 1186, 7069, 2]
 // Exports: generateBlueskyMetadataItems, generateEbayMetadataItems, generateLetterboxdMetadataItems, generatePaypalMetadataItems, generateRedditMetadataItems, generateRoleConnectionMetadataItems, generateSteamMetadataItems, generateTikTokMetadataItems, generateTwitterMetadataItems
 
-// Module 12496 (ConnectionMetadataVanityItems)
+// Module 12018 (ConnectionMetadataVanityItems)
 import _modDef12 from "module_12" /* 12 */;
 import react_native from "react-native" /* 17 */;
 import nativeDefault from "native" /* 575 */;
-import intl5 from "intl" /* 1113 */;
-import native from "native" /* 1187 */;
-import NumberUtils from "NumberUtils" /* 2027 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import ConnectionsUtils from "ConnectionsUtils" /* 7467 */;
-import AssetRegistryDefault from "AssetRegistry" /* 12497 */;
-import AssetRegistryDefault2 from "AssetRegistry" /* 12498 */;
+import intl5 from "intl" /* 1112 */;
+import native from "native" /* 1186 */;
+import NumberUtils from "NumberUtils" /* 2025 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import ConnectionsUtils from "ConnectionsUtils" /* 7069 */;
+import AssetRegistryDefault from "AssetRegistry" /* 12019 */;
+import AssetRegistryDefault2 from "AssetRegistry" /* 12020 */;
 import react from "react" /* 19 */;
-import Constants from "Constants" /* 7423 */;
+import Constants from "Constants" /* 7025 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let application_metadata;
@@ -58,11 +58,11 @@ function VanityMetric(arg0) {
   }
   const sum = result + str;
   if (typeof label === "string") {
-    const intl = tmp2(1113).intl;
+    const intl = tmp2(1112).intl;
     const obj2 = { name: label, value: sum };
-    formatResult = intl.format(tmp2(1113).t.HLoinF, obj2);
+    formatResult = intl.format(tmp2(1112).t.HLoinF, obj2);
   } else {
-    const intl2 = tmp2(1113).intl;
+    const intl2 = tmp2(1112).intl;
     const obj3 = { count, value: sum };
     formatResult = intl2.format(label, obj3);
   }

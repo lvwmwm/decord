@@ -1,14 +1,14 @@
-// Module ID: 9125
-// Function ID: 9126
+// Module ID: 8635
+// Function ID: 8636
 // Name: PaperIcon
-// Dependencies: [19, 21, 575, 6009, 9126, 2]
+// Dependencies: [19, 21, 575, 5599, 8636, 2]
 // Exports: PaperIcon
 
-// Module 9125 (PaperIcon)
+// Module 8635 (PaperIcon)
 import Fragment from "Fragment" /* 21 */;
 import nativeDefault from "native" /* 575 */;
-import BaseIconImage2 from "BaseIconImage" /* 6009 */;
-import AssetRegistry from "AssetRegistry" /* 9126 */;
+import BaseIconImage2 from "BaseIconImage" /* 5599 */;
+import AssetRegistry from "AssetRegistry" /* 8636 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 

@@ -1,21 +1,21 @@
-// Module ID: 20738
-// Function ID: 20739
+// Module ID: 20008
+// Function ID: 20009
 // Name: GuildRoleSubscriptionTierEditStep
-// Dependencies: [19, 17, 21, 5306, 575, 7415, 5919, 17840, 1113, 1630, 5926, 1502, 2]
+// Dependencies: [19, 17, 21, 4913, 575, 7017, 5504, 16620, 1112, 1628, 5511, 1500, 2]
 // Exports: default
 
-// Module 20738 (GuildRoleSubscriptionTierEditStep)
+// Module 20008 (GuildRoleSubscriptionTierEditStep)
 import nativeDefault from "native" /* 575 */;
-import intl3 from "intl" /* 1113 */;
-import useNavigation from "useNavigation" /* 1502 */;
-import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1630 */;
-import Text_Text from "Text/Text" /* 5919 */;
-import common_SafeAreaView from "common/SafeAreaView" /* 7415 */;
-import FormSeparatorDefault from "FormSeparator" /* 17840 */;
+import intl3 from "intl" /* 1112 */;
+import useNavigation from "useNavigation" /* 1500 */;
+import useSafeAreaInsetsDefault from "useSafeAreaInsets" /* 1628 */;
+import Text_Text from "Text/Text" /* 5504 */;
+import common_SafeAreaView from "common/SafeAreaView" /* 7017 */;
+import FormSeparatorDefault from "FormSeparator" /* 16620 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles_mod from "createStyles" /* 5306 */;
+import createStyles_mod from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let navigation;
@@ -67,7 +67,7 @@ function Footer(arg0) {
     stringResult = intl.string(intl3.t["bm6P5/"]);
     tmp5 = require;
   }
-  const obj = { style: items, children: metroRequire(tmp5(5926).Button, obj3) };
+  const obj = { style: items, children: metroRequire(tmp5(5511).Button, obj3) };
   items = [tmp.footerContainer, { paddingBottom: useSafeAreaInsetsDefault().bottom }];
   ({ paddingBottom: useSafeAreaInsetsDefault().bottom });
   obj3 = { loading: submitting, disabled: !canProceedToNextStep, text: stringResult, onPress: onProceed };

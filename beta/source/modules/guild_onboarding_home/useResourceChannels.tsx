@@ -1,12 +1,12 @@
-// Module ID: 19403
-// Function ID: 19404
+// Module ID: 18205
+// Function ID: 18206
 // Name: useResourceChannels
-// Dependencies: [5155, 7080, 563, 2]
+// Dependencies: [4762, 6684, 563, 2]
 // Exports: default
 
-// Module 19403 (useResourceChannels)
-import ChannelStore from "ChannelStore" /* 5155 */;
-import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 7080 */;
+// Module 18205 (useResourceChannels)
+import ChannelStore from "ChannelStore" /* 4762 */;
+import GuildOnboardingHomeSettingsStore from "GuildOnboardingHomeSettingsStore" /* 6684 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;

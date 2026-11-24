@@ -1,27 +1,27 @@
-// Module ID: 10632
-// Function ID: 10633
+// Module ID: 9712
+// Function ID: 9713
 // Name: SecureFramesUserVerificationModal
-// Dependencies: [19, 17, 5155, 1388, 10628, 1072, 1191, 21, 5306, 575, 504, 6341, 10633, 10635, 10608, 10636, 10627, 6838, 6005, 1113, 10637, 10630, 10230, 7918, 8476, 10638, 7415, 7428, 7497, 5919, 6327, 10639, 10641, 7459, 5926, 2]
+// Dependencies: [19, 17, 4762, 1386, 9708, 1071, 1190, 21, 4913, 575, 504, 5943, 9713, 9715, 9688, 9716, 9707, 6429, 5595, 1112, 9717, 9710, 9718, 7520, 8067, 9727, 7017, 7030, 7099, 5504, 5929, 9728, 9730, 7061, 5511, 2]
 // Exports: default
 
-// Module 10632 (SecureFramesUserVerificationModal)
+// Module 9712 (SecureFramesUserVerificationModal)
 import nativeDefault from "native" /* 575 */;
-import intl8 from "intl" /* 1113 */;
-import FormConstants from "FormConstants" /* 1191 */;
-import ToastActionCreatorsDefault from "ToastActionCreators" /* 6005 */;
-import ModalActionCreatorsDefault from "ModalActionCreators" /* 6838 */;
-import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8476 */;
-import showShareActionSheet from "showShareActionSheet" /* 10230 */;
-import SecureFramesUtils from "SecureFramesUtils" /* 10627 */;
-import SecureFramesTracking from "SecureFramesTracking" /* 10630 */;
+import intl8 from "intl" /* 1112 */;
+import FormConstants from "FormConstants" /* 1190 */;
+import ToastActionCreatorsDefault from "ToastActionCreators" /* 5595 */;
+import ModalActionCreatorsDefault from "ModalActionCreators" /* 6429 */;
+import showUserProfileActionSheetDefault from "showUserProfileActionSheet" /* 8067 */;
+import SecureFramesUtils from "SecureFramesUtils" /* 9707 */;
+import SecureFramesTracking from "SecureFramesTracking" /* 9710 */;
+import showShareActionSheet from "showShareActionSheet" /* 9718 */;
 import react from "react" /* 19 */;
 import react_native from "react-native" /* 17 */;
-import ChannelStore from "ChannelStore" /* 5155 */;
-import UserStore from "UserStore" /* 1388 */;
-import SecureFramesConstants from "SecureFramesConstants" /* 10628 */;
-import Constants from "Constants" /* 1072 */;
+import ChannelStore from "ChannelStore" /* 4762 */;
+import UserStore from "UserStore" /* 1386 */;
+import SecureFramesConstants from "SecureFramesConstants" /* 9708 */;
+import Constants from "Constants" /* 1071 */;
 import Fragment from "Fragment" /* 21 */;
-import createStyles from "createStyles" /* 5306 */;
+import createStyles from "createStyles" /* 4913 */;
 import size from "module_2" /* 2 */;
 
 let c10;

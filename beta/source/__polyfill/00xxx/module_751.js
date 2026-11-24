@@ -4,22 +4,20 @@
 // Exports: addIntegration, afterSetupIntegrations, defineIntegration, getIntegrationsToSetup, setupIntegrations
 
 // Module 751
-import _mod687 from "module_687" /* 687 */;
+import DEBUG_BUILD from "DEBUG_BUILD" /* 687 */;
 import _mod712 from "module_712" /* 712 */;
 
-let integrations;
-
-function setupIntegration(on, name, arg2) {
+function setupIntegration(on, name, _integrations) {
   let closure_0 = on;
-  if (arg2[name.name]) {
+  if (_integrations[name.name]) {
     const tmp10 = require;
-    if (_mod687.DEBUG_BUILD) {
+    if (DEBUG_BUILD.DEBUG_BUILD) {
       const debug2 = tmp10(688).debug;
       const _HermesInternal2 = HermesInternal;
       debug2.log("Integration skipped because it was already installed: " + name.name);
     }
   } else {
-    arg2[name.name] = name;
+    _integrations[name.name] = name;
     const arr = items;
     const tmp = items.includes(name.name) || typeof name.setupOnce !== "function";
     if (!tmp) {
@@ -43,7 +41,7 @@ function setupIntegration(on, name, arg2) {
       on.addEventProcessor(Object.assign((arg0, arg1) => closure_2(arg0, arg1, closure_0), obj));
     }
     const tmp6 = require;
-    if (_mod687.DEBUG_BUILD) {
+    if (DEBUG_BUILD.DEBUG_BUILD) {
       const debug = tmp6(688).debug;
       const _HermesInternal = HermesInternal;
       debug.log("Integration installed: " + name.name);
@@ -58,14 +56,14 @@ export function addIntegration(name) {
   const client = obj.getClient();
   if (client) {
     client.addIntegration(name);
-  } else if (_mod687.DEBUG_BUILD) {
+  } else if (DEBUG_BUILD.DEBUG_BUILD) {
     const debug = tmp(688).debug;
     const _HermesInternal = HermesInternal;
     debug.warn("Cannot add integration \"" + name.name + "\" because no SDK Client is available.");
   }
 }
-export function afterSetupIntegrations(arg0, arg1) {
-  const iter = arg1[Symbol.iterator]();
+export function afterSetupIntegrations(arg0, integrations) {
+  const iter = integrations[Symbol.iterator]();
   const nextResult = iter.next();
   while (iter !== undefined) {
     let obj = nextResult;
@@ -125,10 +123,10 @@ export function getIntegrationsToSetup(defaultIntegrations) {
 }
 export const installedIntegrations = items;
 export { setupIntegration };
-export function setupIntegrations(arg0, arr) {
+export function setupIntegrations(arg0, integrations) {
   let closure_0 = arg0;
   const obj = {};
-  const item = arr.forEach((item) => {
+  const item = integrations.forEach((item) => {
     const tmp = item;
     if (tmp) {
       setupIntegration(closure_0, item, obj);

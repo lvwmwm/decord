@@ -1,10 +1,10 @@
-// Module ID: 9410
-// Function ID: 9411
+// Module ID: 8921
+// Function ID: 8922
 // Name: ACOMExperiments
-// Dependencies: [1452, 2]
+// Dependencies: [1450, 2]
 
-// Module 9410 (ACOMExperiments)
-import ApexExperiment_mod from "ApexExperiment" /* 1452 */;
+// Module 8921 (ACOMExperiments)
+import ApexExperiment_mod from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 
 let obj10;

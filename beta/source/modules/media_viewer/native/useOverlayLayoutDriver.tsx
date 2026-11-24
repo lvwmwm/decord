@@ -1,13 +1,13 @@
-// Module ID: 15203
-// Function ID: 15204
+// Module ID: 10148
+// Function ID: 10149
 // Name: useOverlayLayoutDriver
-// Dependencies: [19, 1655, 10195, 5538, 1187, 2]
+// Dependencies: [19, 1653, 10023, 5123, 1186, 2]
 // Exports: useFooterLayoutAnimation, useHeaderLayoutAnimation, useOverlayLayoutDriver
 
-// Module 15203 (useOverlayLayoutDriver)
-import native from "native" /* 1187 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import timing_timing from "timing/timing" /* 5538 */;
+// Module 10148 (useOverlayLayoutDriver)
+import native from "native" /* 1186 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import timing_timing from "timing/timing" /* 5123 */;
 import react from "react" /* 19 */;
 import size from "module_2" /* 2 */;
 
@@ -19,9 +19,9 @@ let result = size.fileFinishedImporting("modules/media_viewer/native/useOverlayL
 
 export function useOverlayLayoutDriver() {
   let sharedValue;
-  let obj = sharedValue(1655);
+  let obj = sharedValue(1653);
   sharedValue = obj.useSharedValue(0);
-  let obj2 = sharedValue(10195);
+  let obj2 = sharedValue(10023);
   const mediaViewerDimensions = obj2.useMediaViewerDimensions();
   const items = [sharedValue, , ];
   ({ height: arr[1], width: arr[2] } = mediaViewerDimensions);
@@ -38,9 +38,9 @@ export function useHeaderLayoutAnimation(animationDriver) {
   let tmp3;
   let tmp4;
   let items = [closure_3, , ];
-  const useAnimatedStyle = _mod1655.useAnimatedStyle;
-  _mod1655;
-  items[1] = _mod1655.interpolate;
+  const useAnimatedStyle = _mod1653.useAnimatedStyle;
+  _mod1653;
+  items[1] = _mod1653.interpolate;
   items[2] = animationDriver;
   let c0;
   let c1;
@@ -63,9 +63,9 @@ export function useFooterLayoutAnimation(overlayLayoutDriver) {
   let tmp3;
   let tmp4;
   let items = [closure_4, , ];
-  const useAnimatedStyle = _mod1655.useAnimatedStyle;
-  _mod1655;
-  items[1] = _mod1655.interpolate;
+  const useAnimatedStyle = _mod1653.useAnimatedStyle;
+  _mod1653;
+  items[1] = _mod1653.interpolate;
   items[2] = overlayLayoutDriver;
   let c0;
   let c1;

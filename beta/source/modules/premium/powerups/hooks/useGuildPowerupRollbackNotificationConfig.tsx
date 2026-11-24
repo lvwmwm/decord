@@ -1,15 +1,15 @@
-// Module ID: 10697
-// Function ID: 10698
+// Module ID: 13388
+// Function ID: 13389
 // Name: useGuildPowerupRollbackNotificationConfig
-// Dependencies: [5513, 10698, 5139, 1113, 2733, 504, 5517, 10699, 2]
+// Dependencies: [8331, 13389, 4746, 1112, 2856, 504, 8001, 13390, 2]
 // Exports: default, getGuildThemeRollbackNotificationConfig
 
-// Module 10697 (useGuildPowerupRollbackNotificationConfig)
-import intl3 from "intl" /* 1113 */;
-import _modDef2733 from "module_2733" /* 2733 */;
-import dismissible_content from "dismissible_content" /* 5139 */;
-import getGuildPowerupFormattedDateStringDefault from "getGuildPowerupFormattedDateString" /* 10698 */;
-import GuildPowerupsStore from "GuildPowerupsStore" /* 5513 */;
+// Module 13388 (useGuildPowerupRollbackNotificationConfig)
+import intl3 from "intl" /* 1112 */;
+import _modDef2856 from "module_2856" /* 2856 */;
+import dismissible_content from "dismissible_content" /* 4746 */;
+import getGuildPowerupFormattedDateStringDefault from "getGuildPowerupFormattedDateString" /* 13389 */;
+import GuildPowerupsStore from "GuildPowerupsStore" /* 8331 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
@@ -17,7 +17,7 @@ let _require;
 
 const result = size.fileFinishedImporting("modules/premium/powerups/hooks/useGuildPowerupRollbackNotificationConfig.tsx");
 
-export default function useGuildPowerupRollbackNotificationConfig(guildId, useGuildPowerupNewPerkMarketingVersion) {
+export default function useGuildPowerupRollbackNotificationConfig(guildId, useMarketablePowerupPerks) {
   let intl;
   let intl2;
   let obj3;
@@ -32,7 +32,7 @@ export default function useGuildPowerupRollbackNotificationConfig(guildId, useGu
   }
   let tmp5 = null;
   const tmpResult = require("guildTheme");
-  if (tmpResult.useShouldShowGuildThemeRollback(guildId, useGuildPowerupNewPerkMarketingVersion)) {
+  if (tmpResult.useShouldShowGuildThemeRollback(guildId, useMarketablePowerupPerks)) {
     let storeRemovalDate;
     if (tmp4 != null) {
       storeRemovalDate = tmp4.storeRemovalDate;
@@ -42,10 +42,10 @@ export default function useGuildPowerupRollbackNotificationConfig(guildId, useGu
       tmp6 = null;
       if (null != storeRemovalDate) {
         const tmp8 = getGuildPowerupFormattedDateStringDefault(storeRemovalDate);
-        const obj2 = { dismissibleContent: require("dismissible_content").DismissibleContent.GUILD_THEME_POWERUP_ROLLBACK_NOTIFICATION, title: intl.formatToPlainString(_modDef2733["6e2ry1"], obj3), description: intl2.formatToPlainString(_modDef2733.jd8fki, obj4) };
-        intl = tmp(1113).intl;
+        const obj2 = { dismissibleContent: require("dismissible_content").DismissibleContent.GUILD_THEME_POWERUP_ROLLBACK_NOTIFICATION, title: intl.formatToPlainString(_modDef2856["6e2ry1"], obj3), description: intl2.formatToPlainString(_modDef2856.jd8fki, obj4) };
+        intl = tmp(1112).intl;
         obj3 = { dateString: tmp8 };
-        intl2 = tmp(1113).intl;
+        intl2 = tmp(1112).intl;
         obj4 = { startDate: tmp8, endDate: tmp8, perkName: null, boostCount: null };
         ({ title: obj5.perkName, cost: obj5.boostCount } = tmp4);
         tmp6 = obj2;
@@ -66,7 +66,7 @@ export function getGuildThemeRollbackNotificationConfig(storeRemovalDate) {
   if (null != storeRemovalDate) {
     if (null != storeRemovalDate) {
       const tmp3 = getGuildPowerupFormattedDateStringDefault(storeRemovalDate);
-      const obj = { dismissibleContent: dismissible_content.DismissibleContent.GUILD_THEME_POWERUP_ROLLBACK_NOTIFICATION, title: intl.formatToPlainString(_modDef2733["6e2ry1"], obj2), description: intl2.formatToPlainString(_modDef2733.jd8fki, obj5) };
+      const obj = { dismissibleContent: dismissible_content.DismissibleContent.GUILD_THEME_POWERUP_ROLLBACK_NOTIFICATION, title: intl.formatToPlainString(_modDef2856["6e2ry1"], obj2), description: intl2.formatToPlainString(_modDef2856.jd8fki, obj5) };
       intl = intl3.intl;
       obj2 = { dateString: tmp3 };
       intl2 = intl3.intl;

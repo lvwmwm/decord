@@ -1,15 +1,15 @@
-// Module ID: 13115
-// Function ID: 13116
+// Module ID: 13735
+// Function ID: 13736
 // Name: PanGestureAnimations
-// Dependencies: [1187, 5929, 5538, 1655, 5588, 2]
+// Dependencies: [1186, 5514, 5123, 1653, 5173, 2]
 // Exports: default
 
-// Module 13115 (PanGestureAnimations)
-import native from "native" /* 1187 */;
-import _mod1655 from "module_1655" /* 1655 */;
-import timing_timing from "timing/timing" /* 5538 */;
-import LegacyBaseButton from "LegacyBaseButton" /* 5588 */;
-import spring_spring from "spring/spring" /* 5929 */;
+// Module 13735 (PanGestureAnimations)
+import native from "native" /* 1186 */;
+import _mod1653 from "module_1653" /* 1653 */;
+import timing_timing from "timing/timing" /* 5123 */;
+import LegacyBaseButton from "LegacyBaseButton" /* 5173 */;
+import spring_spring from "spring/spring" /* 5514 */;
 import size from "module_2" /* 2 */;
 
 let _Math, flag, obj1, obj3, obj5, result1, result2, set, sum, tmp10Result, tmp4Result, tmp9Result, translationX, velocityX;
@@ -192,9 +192,9 @@ export default function usePanGesture(swipeVelocityThreshold) {
     vertical = true;
   }
   const isGestureInProgress = swipeVelocityThreshold.isGestureInProgress;
-  let obj = _mod1655;
+  let obj = _mod1653;
   const sharedValue = obj.useSharedValue(0);
-  let obj2 = _mod1655;
+  let obj2 = _mod1653;
   const sharedValue1 = obj2.useSharedValue(0);
   const Gesture = LegacyBaseButton.Gesture;
   const items = [closure_5, sharedValue, translate, sharedValue1, isGestureInProgress, onStart];

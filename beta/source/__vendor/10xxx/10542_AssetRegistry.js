@@ -1,10 +1,10 @@
 // Module ID: 10542
 // Function ID: 10543
 // Name: AssetRegistry
-// Dependencies: [1119]
+// Dependencies: [1118]
 
 // Module 10542 (AssetRegistry)
-import AssetRegistry from "AssetRegistry" /* 1119 */;
+import AssetRegistry from "AssetRegistry" /* 1118 */;
 
 
-export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/design/components/Icon/native/redesign/generated/images", width: 24, height: 24, scales: [2, 3], hash: "cad1976e6067251c70a97ab450e89981", name: "PinUprightSlashIcon", type: "png" });
+export default AssetRegistry.registerAsset({ __packager_asset: true, httpServerLocation: "/assets/images/native/icons", width: 40, height: 40, scales: [1, 2, 3], hash: "55227139f1f67d25c138599e308898b1", name: "ic_upload_image_40px", type: "png" });

@@ -1,16 +1,17 @@
-// Module ID: 8641
-// Function ID: 8642
+// Module ID: 8231
+// Function ID: 8232
 // Name: SensitiveMediaExplicitRedactionSettingsUtils
-// Dependencies: [1388, 5133, 1196, 5985, 5993, 5131, 8642, 2]
+// Dependencies: [1386, 4740, 1195, 5575, 5583, 6411, 4738, 8232, 2]
 // Exports: getExplicitContentSettingOrDefault, resolveSettingWithDefaultsForTeen, shouldRedactMessageMediaForForum, updateExplicitContentSetting
 
-// Module 8641 (SensitiveMediaExplicitRedactionSettingsUtils)
-import preloaded_user_settings from "preloaded_user_settings" /* 1196 */;
-import UserSettings from "UserSettings" /* 5131 */;
-import DMSafetyConstants from "DMSafetyConstants" /* 5133 */;
-import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5985 */;
-import SettingsDefaultFeature from "SettingsDefaultFeature" /* 5993 */;
-import UserStore from "UserStore" /* 1388 */;
+// Module 8231 (SensitiveMediaExplicitRedactionSettingsUtils)
+import preloaded_user_settings from "preloaded_user_settings" /* 1195 */;
+import UserSettings from "UserSettings" /* 4738 */;
+import DMSafetyConstants from "DMSafetyConstants" /* 4740 */;
+import RegionalFeatureConfigUtils from "RegionalFeatureConfigUtils" /* 5575 */;
+import SettingsDefaultFeature from "SettingsDefaultFeature" /* 5583 */;
+import AgeVerificationUtils from "AgeVerificationUtils" /* 6411 */;
+import UserStore from "UserStore" /* 1386 */;
 import size from "module_2" /* 2 */;
 
 function resolveExplicitContentSettingWithDefaults(isFriend) {
@@ -33,6 +34,32 @@ function resolveExplicitContentSettingWithDefaults(isFriend) {
   const currentUser = UserStore.getCurrentUser();
   obj = RegionalFeatureConfigUtils;
   if (obj.isSettingTeenByDefault(SettingsDefaultFeature.SettingsDefaultFeature.SENSITIVE_CONTENT)) {
+    let BLUR;
+    const tmp4Result = AgeVerificationUtils;
+    if (!tmp4Result.isVerifiedAdult()) {
+      let flag2 = isDm;
+      if (isDm === undefined) {
+        flag2 = false;
+      }
+      let flag3 = flag;
+      if (flag === undefined) {
+        flag3 = false;
+      }
+      if (flag2) {
+        if (!flag3) {
+          BLUR = tmp4(1195).ExplicitContentRedaction.BLOCK;
+        }
+      }
+      BLUR = tmp4(1195).ExplicitContentRedaction.BLUR;
+    }
+    return BLUR;
+  }
+  let nsfwAllowed;
+  if (currentUser != null) {
+    nsfwAllowed = currentUser.nsfwAllowed;
+  }
+  if (false === nsfwAllowed) {
+    let BLUR2;
     if (isDm === undefined) {
       isDm = false;
     }
@@ -40,65 +67,41 @@ function resolveExplicitContentSettingWithDefaults(isFriend) {
       flag = false;
     }
     if (isDm) {
-      let BLUR2;
-      if (!flag) {
-        BLUR2 = tmp4(1196).ExplicitContentRedaction.BLOCK;
-      }
-      SHOW = BLUR2;
-    }
-    BLUR2 = tmp4(1196).ExplicitContentRedaction.BLUR;
-  } else {
-    let nsfwAllowed;
-    if (currentUser != null) {
-      nsfwAllowed = currentUser.nsfwAllowed;
-    }
-    if (false === nsfwAllowed) {
-      let BLUR;
-      let flag5 = isDm;
-      if (isDm === undefined) {
-        flag5 = false;
-      }
-      let flag6 = flag;
-      if (flag === undefined) {
-        flag6 = false;
-      }
-      if (flag5) {
-        let tmp12;
-        const ExplicitContentFilter2 = tmp4(5131).ExplicitContentFilter;
-        const setting1 = ExplicitContentFilter2.getSetting();
-        if (flag6) {
-          tmp12 = obj3[setting1];
-        } else {
-          tmp12 = obj4[setting1];
-        }
-        BLUR = tmp12;
+      let tmp12;
+      const ExplicitContentFilter2 = tmp4(4738).ExplicitContentFilter;
+      const setting1 = ExplicitContentFilter2.getSetting();
+      if (flag) {
+        tmp12 = obj3[setting1];
       } else {
-        BLUR = tmp4(1196).ExplicitContentRedaction.BLUR;
+        tmp12 = obj4[setting1];
       }
-      SHOW = BLUR;
+      BLUR2 = tmp12;
     } else {
-      let flag3 = isDm;
-      if (isDm === undefined) {
-        flag3 = false;
-      }
-      let flag4 = flag;
-      if (flag === undefined) {
-        flag4 = false;
-      }
-      if (flag3) {
-        const ExplicitContentFilter = tmp4(5131).ExplicitContentFilter;
-        const setting2 = ExplicitContentFilter.getSetting();
-        if (flag4) {
-          SHOW = obj[setting2];
-        } else {
-          SHOW = obj2[setting2];
-        }
+      BLUR2 = tmp4(1195).ExplicitContentRedaction.BLUR;
+    }
+    SHOW = BLUR2;
+  } else {
+    let flag4 = isDm;
+    if (isDm === undefined) {
+      flag4 = false;
+    }
+    let flag5 = flag;
+    if (flag === undefined) {
+      flag5 = false;
+    }
+    if (flag4) {
+      const ExplicitContentFilter = tmp4(4738).ExplicitContentFilter;
+      const setting2 = ExplicitContentFilter.getSetting();
+      if (flag5) {
+        SHOW = obj[setting2];
       } else {
-        SHOW = tmp4(1196).ExplicitContentRedaction.SHOW;
+        SHOW = obj2[setting2];
       }
+    } else {
+      SHOW = tmp4(1195).ExplicitContentRedaction.SHOW;
     }
   }
-  return SHOW;
+  BLUR = SHOW;
 }
 const ExplicitContentFilterTypes = DMSafetyConstants.ExplicitContentFilterTypes;
 let obj = {};
@@ -157,7 +160,7 @@ export function resolveSettingWithDefaultsForTeen(isDm) {
   }
   if (flag) {
     let tmp5;
-    const ExplicitContentFilter = tmp(5131).ExplicitContentFilter;
+    const ExplicitContentFilter = tmp(4738).ExplicitContentFilter;
     const setting = ExplicitContentFilter.getSetting();
     if (flag2) {
       tmp5 = obj3[setting];
@@ -242,7 +245,7 @@ export function shouldRedactMessageMediaForForum() {
     }
     obj3 = { setting: prop2, isDm: true, isFriend: true };
     resolveExplicitContentSettingWithDefaults(obj3);
-    const tmp7Result = tmp7(8642);
+    const tmp7Result = tmp7(8232);
     return tmp7Result.getShouldObscureForSetting(tmp10Result);
   }
 }

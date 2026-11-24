@@ -1,10 +1,10 @@
-// Module ID: 5531
-// Function ID: 5532
+// Module ID: 13387
+// Function ID: 13388
 // Name: ServerThemeApexShadowExperiment
-// Dependencies: [1452, 2]
+// Dependencies: [1450, 2]
 
-// Module 5531 (ServerThemeApexShadowExperiment)
-import ApexExperiment from "ApexExperiment" /* 1452 */;
+// Module 13387 (ServerThemeApexShadowExperiment)
+import ApexExperiment from "ApexExperiment" /* 1450 */;
 import size from "module_2" /* 2 */;
 
 const obj = { kind: "guild", name: "2026-06-server-theme-apex-shadow", defaultConfig: { enabled: false, inExperiment: false, gatesApex: false, rollbackEnabled: false }, variations: { 0: { enabled: false, inExperiment: true, gatesApex: false, rollbackEnabled: false }, 1: { enabled: true, inExperiment: true, gatesApex: false, rollbackEnabled: false }, 2: { enabled: false, inExperiment: true, gatesApex: true, rollbackEnabled: false }, 3: { enabled: true, inExperiment: true, gatesApex: true, rollbackEnabled: false }, 4: { enabled: true, inExperiment: true, gatesApex: true, rollbackEnabled: true } } };

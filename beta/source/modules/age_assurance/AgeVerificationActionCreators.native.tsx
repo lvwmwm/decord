@@ -1,27 +1,27 @@
-// Module ID: 8190
-// Function ID: 8191
+// Module ID: 7793
+// Function ID: 7794
 // Name: AgeVerificationActionCreators
-// Dependencies: [5, 1388, 6822, 8191, 6892, 6900, 21, 8192, 6838, 8202, 2121, 6905, 8225, 8226, 1627, 6260, 8227, 1401, 1380, 8228, 8229, 6820, 5985, 572, 8230, 8236, 8243, 8388, 8389, 6002, 6823, 8400, 8401, 8402, 2]
+// Dependencies: [5, 1386, 6413, 7794, 6496, 6504, 21, 7795, 6429, 7805, 2119, 6509, 7828, 7829, 1625, 5862, 7830, 1399, 1378, 7831, 7832, 572, 7833, 7845, 5592, 6414, 7990, 7991, 7992, 2]
 
-// Module 8190 (AgeVerificationActionCreators)
+// Module 7793 (AgeVerificationActionCreators)
 import Fragment from "Fragment" /* 21 */;
 import DispatcherDefault from "Dispatcher" /* 572 */;
-import LinkingDefault from "Linking" /* 6002 */;
-import useAlertStore from "useAlertStore" /* 6260 */;
-import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6823 */;
-import NativePermissionConstants from "NativePermissionConstants" /* 6892 */;
-import Constants from "Constants" /* 6900 */;
-import AgeVerificationIncodeWebViewConstants from "AgeVerificationIncodeWebViewConstants" /* 8191 */;
-import ManualReviewDecidedTeenAlertModalDefault from "ManualReviewDecidedTeenAlertModal" /* 8400 */;
-import ManualReviewPendingAlertModalDefault from "ManualReviewPendingAlertModal" /* 8401 */;
-import ManualReviewFallbackAlertModalDefault from "ManualReviewFallbackAlertModal" /* 8402 */;
+import LinkingDefault from "Linking" /* 5592 */;
+import useAlertStore from "useAlertStore" /* 5862 */;
+import AgeVerificationAnalyticsUtils from "AgeVerificationAnalyticsUtils" /* 6414 */;
+import NativePermissionConstants from "NativePermissionConstants" /* 6496 */;
+import Constants from "Constants" /* 6504 */;
+import AgeVerificationIncodeWebViewConstants from "AgeVerificationIncodeWebViewConstants" /* 7794 */;
+import ManualReviewDecidedTeenAlertModalDefault from "ManualReviewDecidedTeenAlertModal" /* 7990 */;
+import ManualReviewPendingAlertModalDefault from "ManualReviewPendingAlertModal" /* 7991 */;
+import ManualReviewFallbackAlertModalDefault from "ManualReviewFallbackAlertModal" /* 7992 */;
 import _asyncToGenerator from "_asyncToGenerator" /* 5 */;
-import UserStore_mod from "UserStore" /* 1388 */;
-import AgeVerificationConstants from "AgeVerificationConstants" /* 6822 */;
+import UserStore from "UserStore" /* 1386 */;
+import AgeVerificationConstants from "AgeVerificationConstants" /* 6413 */;
 import size from "module_2" /* 2 */;
 
 const require = globalThis.__r;
-let _require, _undefined, c3, c4, dependencyMap;
+let _require, c3, c4;
 
 let c10;
 let c9;
@@ -283,7 +283,6 @@ function showManualReviewFallbackModal(AUTOMATED_UNDERAGE_APPEALS, arg1) {
     });
   }
 }
-let UserStore = UserStore_mod;
 ({ AGE_VERIFICATION_MODAL_KEY: hasOwnProperty, AGE_VERIFICATION_GET_STARTED_MODAL_KEY: metroRequire, AGE_VERIFICATION_QUEST_UNSUPPORTED_ALERT_KEY: metroImportDefault, MANUAL_REVIEW_DECIDED_TEEN_ALERT_KEY: metroImportAll, MANUAL_REVIEW_FALLBACK_ALERT_KEY: c9, MANUAL_REVIEW_PENDING_ALERT_KEY: c10, VerificationVendorName: unpackModuleId } = AgeVerificationConstants);
 let closure_12 = AgeVerificationIncodeWebViewConstants.AGE_VERIFICATION_INCODE_PATH;
 const NativePermissionTypes = NativePermissionConstants.NativePermissionTypes;
@@ -293,30 +292,21 @@ let c18 = false;
 let obj = {
   showAgeVerification,
   showAgeVerificationGetStartedModal(entryPoint) {
-    let closure_4;
     entryPoint = entryPoint.entryPoint;
     let onClose = entryPoint.onClose;
-    dependencyMap = undefined;
     let prop;
-    UserStore = undefined;
     let tmp = entryPoint;
-    const tmp2 = dependencyMap;
-    let obj = entryPoint(1627);
+    const tmp2 = prop;
+    let obj = entryPoint(prop[14]);
     if (obj.isMetaQuest()) {
-      const tmp19 = closure_7;
-      const tmpResult = tmp(6260);
-      tmpResult.openAlert(closure_7, jsx(onClose(8227), {}), onClose);
+      const tmpResult = tmp(tmp2[15]);
+      tmpResult.openAlert(closure_7, jsx(onClose(tmp2[16]), {}), onClose);
     } else {
-      const tmpResult6 = tmp(6820);
-      let isAgeVerifiedResult = tmpResult6.isAgeVerified();
-      if (isAgeVerifiedResult) {
-        const tmpResult7 = tmp(5985);
-        isAgeVerifiedResult = tmpResult7.hasAgeGatedFeatures();
-      }
-      dependencyMap = isAgeVerifiedResult;
-      const tmpResult8 = tmp(8228);
-      if (tmpResult8.isAgeVerificationIncodeEnabled(entryPoint)) {
+      const tmpResult2 = tmp(tmp2[19]);
+      if (tmpResult2.isAgeVerificationIncodeEnabled(entryPoint)) {
+        let tmp5 = UserStore;
         const currentUser = UserStore.getCurrentUser();
+        let tmp7 = null;
         prop = undefined;
         if (currentUser != null) {
           prop = currentUser.ageVerificationStatus;
@@ -329,8 +319,10 @@ let obj = {
             onClose();
           }
         }
-        const obj8 = onClose(572);
-        obj8.dispatch({ type: "INITIATE_AGE_VERIFICATION" });
+        let tmp9 = onClose;
+        let obj3 = onClose(tmp2[21]);
+        obj3.dispatch({ type: "INITIATE_AGE_VERIFICATION" });
+        let tmp11 = openIncodeAgeVerificationModal;
         let obj2 = {
           onClose: handleClose,
           onComplete() {
@@ -338,117 +330,96 @@ let obj = {
               }
         };
         let num = 0;
-        const tmp14 = onClose;
         if (!openIncodeAgeVerificationModal(obj2)) {
-          let obj3 = { type: "CLOSE_AGE_VERIFICATION_MODAL", status: prop };
-          const tmp14Result = tmp14(572);
-          tmp14Result.dispatch(obj3);
+          let obj4 = { type: "CLOSE_AGE_VERIFICATION_MODAL", status: prop };
+          const tmp9Result = tmp9(tmp2[21]);
+          tmp9Result.dispatch(obj4);
           if (onClose != null) {
             onClose();
           }
         }
       } else {
-        const tmpResult9 = tmp(8230);
-        if (tmpResult9.isExpressiveModalV2Enabled(entryPoint)) {
-          let tmp8 = prop;
-          let tmp9 = prop(function*(arg0, value) {
-            let c2;
-            let closure_0;
-            let closure_1;
-            let v3;
-            if (prop === 2) {
-              prop = 3;
-              const str = "Generator functions may not be called on executing generators";
-              throw new TypeError("Generator functions may not be called on executing generators");
-            } else if (tmp2 === 3) {
-              if (arg0 === 1) {
-                throw value;
-              } else if (arg0 === 2) {
-                const obj2 = { value, done: true };
-                return obj2;
-              } else {
-                return { value: "HermesInternal", done: null };
-              }
+        let tmp3 = _asyncToGenerator;
+        let tmp4 = (async (arg0, value) => {
+          let c2;
+          let closure_0;
+          let closure_1;
+          let v3;
+          if (c3 === 2) {
+            c3 = 3;
+            const str = "Generator functions may not be called on executing generators";
+            throw new TypeError("Generator functions may not be called on executing generators");
+          } else if (tmp2 === 3) {
+            if (arg0 === 1) {
+              throw value;
+            } else if (arg0 === 2) {
+              const obj2 = { value, done: true };
+              return obj2;
             } else {
-              try {
-                prop = 2;
-                const tmp3 = _undefined;
-                if (0 === _undefined) {
-                  if (arg0 === 1) {
-                    prop = 3;
-                    throw value;
-                  } else if (arg0 === 2) {
-                    prop = 3;
-                    const obj4 = { value, done: true };
-                    return obj4;
-                  } else {
-                    onClose = tmp3;
-                    entryPoint = tmp3;
-                    const obj3 = entryPoint(_undefined[25]);
-                    _undefined = 1;
-                    prop = 1;
-                    const obj5 = { value: obj3.shouldShowManualReviewFallback(entryPoint), done: false };
-                    return obj5;
-                  }
-                } else if (arg0 === 1) {
-                  prop = 3;
+              return { value: "HermesInternal", done: null };
+            }
+          } else {
+            try {
+              c3 = 2;
+              const tmp3 = prop;
+              if (0 === prop) {
+                if (arg0 === 1) {
+                  c3 = 3;
                   throw value;
                 } else if (arg0 === 2) {
-                  prop = 3;
-                  const obj6 = { value, done: true };
-                  return obj6;
+                  c3 = 3;
+                  const obj4 = { value, done: true };
+                  return obj4;
                 } else {
-                  if (value) {
-                    showManualReviewFallbackModal(closure_129_0, closure_129_1);
-                  } else {
-                    let obj = onClose(_undefined[8]);
-                    obj.pushLazy(prop(function*() {
-                      let c1;
-                      let tmp;
-                      yield tmp(c2[10])(c2[26], c2.paths);
-                      tmp = arg1.default;
-                      return () => {
-                        const obj = {
-                          entryPoint,
-                          onClose() {
-                            let tmp;
-                            if (closure_1_1 != null) {
-                              tmp = closure_1_1();
-                            }
-                            return tmp;
-                          }
-                        };
-                        return closure_3_15(closure_1_0, obj);
-                      };
-                    }), {}, closure_1_6);
-                  }
-                  prop = 3;
-                  return { value: "HermesInternal", done: null };
+                  onClose = tmp3;
+                  entryPoint = tmp3;
+                  const obj3 = entryPoint(prop[22]);
+                  prop = 1;
+                  c3 = 1;
+                  const obj5 = { value: obj3.shouldShowManualReviewFallback(entryPoint), done: false };
+                  return obj5;
                 }
-              } catch (tmp19) {
-                prop = 3;
-                throw tmp19;
+              } else if (arg0 === 1) {
+                c3 = 3;
+                throw value;
+              } else if (arg0 === 2) {
+                c3 = 3;
+                const obj6 = { value, done: true };
+                return obj6;
+              } else {
+                if (value) {
+                  showManualReviewFallbackModal(closure_129_0, closure_129_1);
+                } else {
+                  let obj = onClose(prop[8]);
+                  obj.pushLazy(c3(async () => {
+                    let c1;
+                    let tmp;
+                    await tmp(c2[10])(c2[23], c2.paths);
+                    tmp = arg1.default;
+                    return () => {
+                      const obj = {
+                        entryPoint,
+                        onClose() {
+                          let tmp;
+                          if (closure_1_1 != null) {
+                            tmp = closure_1_1();
+                          }
+                          return tmp;
+                        }
+                      };
+                      return closure_3_15(closure_1_0, obj);
+                    };
+                  }), {}, closure_1_6);
+                }
+                c3 = 3;
+                return { value: "HermesInternal", done: null };
               }
+            } catch (tmp19) {
+              c3 = 3;
+              throw tmp19;
             }
-          })();
-        } else {
-          const tmpResult10 = tmp(8388);
-          UserStore = tmpResult10.isAgeVerificationExpressiveModalEverywhereEnabled(entryPoint);
-          let tmp4 = onClose;
-          let tmp5 = prop;
-          let tmp6 = closure_6;
-          const obj7 = onClose(6838);
-          obj7.pushLazy(prop(function*() {
-            let c1;
-            let closure_0;
-            let paths;
-            let tmp;
-            let useEmbeddedMethods;
-            yield tmp(c2[10])(c2[28], c2.paths);
-            tmp = arg1.default;
-            return () => <closure_1_0 entryPoint={entryPoint} isRetry={isRetry} useEmbeddedMethods={useEmbeddedMethods} />;
-          }), {}, closure_6);
-        }
+          }
+        })();
       }
     }
   },

@@ -1,8 +1,8 @@
-// Module ID: 10884
-// Function ID: 10885
+// Module ID: 13834
+// Function ID: 13835
 // Dependencies: [2]
 
-// Module 10884
+// Module 13834
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("../discord_assets/assets/mana/asset-library/generated/StreakTrophyBadge-3x.png.js");

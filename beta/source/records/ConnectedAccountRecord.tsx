@@ -1,10 +1,10 @@
-// Module ID: 7086
-// Function ID: 7087
+// Module ID: 6690
+// Function ID: 6691
 // Name: ConnectedAccountRecord
-// Dependencies: [1408, 2]
+// Dependencies: [1406, 2]
 
-// Module 7086 (ConnectedAccountRecord)
-import Record from "Record" /* 1408 */;
+// Module 6690 (ConnectedAccountRecord)
+import Record from "Record" /* 1406 */;
 import size from "module_2" /* 2 */;
 
 const result = size.fileFinishedImporting("records/ConnectedAccountRecord.tsx");

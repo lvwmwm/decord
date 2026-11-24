@@ -1,16 +1,16 @@
-// Module ID: 16570
-// Function ID: 16571
+// Module ID: 15357
+// Function ID: 15358
 // Name: KeyboardUtils
-// Dependencies: [32, 8707, 1380, 12, 16571, 16572, 16573, 1255, 2]
+// Dependencies: [32, 8297, 1378, 12, 15358, 15359, 15360, 1254, 2]
 // Exports: areKeyCombosEqual, codeToKey, getEnv, getRawCodeFromKey, isKeyboardActivatedMouseEvent, toBrowserEvents, toCombo, toKeyNames, toString
 
-// Module 16570 (KeyboardUtils)
-import GlobalUtils from "GlobalUtils" /* 1255 */;
-import keyCodeDefault from "keyCode" /* 16571 */;
-import KeyboardLayoutMapUtils from "KeyboardLayoutMapUtils" /* 16572 */;
+// Module 15357 (KeyboardUtils)
+import GlobalUtils from "GlobalUtils" /* 1254 */;
+import keyCodeDefault from "keyCode" /* 15358 */;
+import KeyboardLayoutMapUtils from "KeyboardLayoutMapUtils" /* 15359 */;
 import _slicedToArray from "_slicedToArray" /* 32 */;
-import KeyboardConstants from "KeyboardConstants" /* 8707 */;
-import PlatformUtils_mod from "PlatformUtils" /* 1380 */;
+import KeyboardConstants from "KeyboardConstants" /* 8297 */;
+import PlatformUtils_mod from "PlatformUtils" /* 1378 */;
 import module_12_mod from "module_12" /* 12 */;
 import size from "module_2" /* 2 */;
 
@@ -43,7 +43,7 @@ function _codeToKey(items1) {
   }
   return tmp14;
 }
-const f113719 = (item) => {
+const f107743 = (item) => {
   let combined;
   let items1;
   let tmp;
@@ -353,7 +353,7 @@ function codeToKey(items1) {
   }
 }
 function toKeyNames(arr) {
-  const mapped = arr.map(f113719);
+  const mapped = arr.map(f107743);
   return mapped.filter(GlobalUtils.isNotNullish);
 }
 const frozen2 = Object.freeze(invertResult2);
@@ -454,18 +454,18 @@ export function toCombo(shortcut) {
     let MACOS;
     let tmp2 = KEYBOARD_KEY;
     let tmp3 = dependencyMap;
-    let obj = KEYBOARD_KEY(1380);
+    let obj = KEYBOARD_KEY(1378);
     if (obj.isLinux()) {
       let tmp6 = KeyboardEnvs;
       MACOS = KeyboardEnvs.LINUX;
     } else {
-      const tmp2Result = tmp2(1380);
+      const tmp2Result = tmp2(1378);
       if (tmp2Result.isMac()) {
         const tmp5 = KeyboardEnvs;
         MACOS = KeyboardEnvs.MACOS;
       } else {
         let tmp4 = KeyboardEnvs;
-        const tmp2Result2 = tmp2(1380);
+        const tmp2Result2 = tmp2(1378);
         MACOS = tmp2Result2.isWindows() ? tmp4.WINDOWS : tmp4.BROWSER;
       }
     }
@@ -478,7 +478,7 @@ export function toCombo(shortcut) {
   }
   let str = shortcut.replace(/numpad plus/i, "");
   const str2 = str.replace(/NUMPAD \+/i, "numpad plus");
-  const str3 = str2.replace(/mod/i, KEYBOARD_KEY(16573).modKey);
+  const str3 = str2.replace(/mod/i, KEYBOARD_KEY(15360).modKey);
   const parts = str3.split("+");
   const mapped = parts.map((item) => {
     const str = item.trim();
@@ -518,7 +518,7 @@ export function toString(arr) {
   if (arg1 === undefined) {
     flag = false;
   }
-  const mapped = arr.map(f113719);
+  const mapped = arr.map(f107743);
   const found = mapped.filter(GlobalUtils.isNotNullish);
   if (flag) {
     const tmp2 = global;
